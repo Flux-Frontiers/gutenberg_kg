@@ -1,0 +1,7 @@
+*.lance filter=lfs diff=lfs merge=lfs -text
+*.sqlite filter=lfs diff=lfs merge=lfs -text
+*.txn filter=lfs diff=lfs merge=lfs -text
+*.manifest filter=lfs diff=lfs merge=lfs -text
+*.lance !text !filter !merge !diff
+*.txn !text !filter !merge !diff
+*.manifest !text !filter !merge !diff
