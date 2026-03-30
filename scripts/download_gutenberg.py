@@ -70,7 +70,13 @@ NS = {
 # Common heading patterns found in Gutenberg texts, ordered by specificity.
 # Each tuple: (compiled regex, markdown heading level, group index for title)
 HEADING_PATTERNS = [
-    # VOLUME / BOOK level (h2)
+    # "THE FIRST BOOK" / "THE SECOND BOOK" (ordinal, e.g. Meditations)
+    (re.compile(
+        r"^THE\s+(?:FIRST|SECOND|THIRD|FOURTH|FIFTH|SIXTH|SEVENTH|EIGHTH|"
+        r"NINTH|TENTH|ELEVENTH|TWELFTH|THIRTEENTH)\s+BOOK$",
+        re.IGNORECASE,
+    ), 2),
+    # VOLUME / BOOK / PART + numeral (h2)
     (re.compile(
         r"^(?:VOLUME|BOOK|PART)\s+"
         r"(?:THE\s+)?"
@@ -79,22 +85,27 @@ HEADING_PATTERNS = [
         r"(?:\.?\s*[-—:.]?\s*(.+))?$",
         re.IGNORECASE,
     ), 2),
+    # "Book the First--Recalled to Life" (Dickens style)
+    (re.compile(
+        r"^Book\s+the\s+\w+[-—].+$",
+        re.IGNORECASE,
+    ), 2),
     # ACT (for plays, h2)
     (re.compile(
         r"^ACT\s+(?:[IVXLCDM]+|\d+)"
         r"(?:\.?\s*[-—:.]?\s*(.+))?$",
         re.IGNORECASE,
     ), 2),
-    # CHAPTER level (h2)
+    # CHAPTER level (h2) — "CHAPTER I.", "CHAPTER XIV", "CHAPTER 3"
     (re.compile(
-        r"^CHAPTER\s+(?:[IVXLCDM]+|\d+)"
-        r"(?:\.?\s*[-—:.]?\s*(.+))?$",
+        r"^CHAPTER\s+(?:[IVXLCDM]+|\d+)\.?"
+        r"(?:\s*[-—:.]?\s*(.+))?$",
         re.IGNORECASE,
     ), 2),
-    # "Chapter 1" style with lowercase
+    # "Chapter 1" style Title Case
     (re.compile(
-        r"^Chapter\s+(?:[IVXLCDM]+|\d+)"
-        r"(?:\.?\s*[-—:.]?\s*(.+))?$",
+        r"^Chapter\s+(?:[IVXLCDM]+|\d+)\.?"
+        r"(?:\s*[-—:.]?\s*(.+))?$",
     ), 2),
     # SCENE (for plays, h3)
     (re.compile(
@@ -102,23 +113,48 @@ HEADING_PATTERNS = [
         r"(?:\.?\s*[-—:.]?\s*(.+))?$",
         re.IGNORECASE,
     ), 3),
-    # LETTER I / LETTER 1 (epistolary novels like Frankenstein)
+    # LETTER I / LETTER 1 / "Letter 1" (epistolary novels)
     (re.compile(
-        r"^LETTER\s+(?:[IVXLCDM]+|\d+)"
+        r"^Letter\s+(?:[IVXLCDM]+|\d+)"
         r"(?:\.?\s*[-—:.]?\s*(.+))?$",
         re.IGNORECASE,
     ), 2),
-    # Roman numeral standalone heading: "I.", "II.", "XIV." etc.
-    # Must have a period or be followed by a short title — not a full sentence.
-    # Requires the period to distinguish "I." from "I think..."
+    # Bible book headings: "The First Book of Moses: Called Genesis",
+    # "The Book of Joshua", "The Gospel According to Saint Matthew", etc.
     (re.compile(
-        r"^([IVXLCDM]{1,6})\.\s*[-—:.]?\s*(.{0,60})$",
+        r"^The\s+(?:First|Second|Third|Fourth|Fifth)\s+Book\s+of\s+.+$",
     ), 2),
-    # Standalone ALL-CAPS heading (at least 3 chars, not a normal sentence)
+    (re.compile(
+        r"^The\s+(?:Book\s+of|Gospel\s+According|Epistle|General\s+Epistle|"
+        r"Revelation|Acts|Song|Lamentations)\s+.+$",
+    ), 2),
+    # Testament dividers (Bible)
+    (re.compile(
+        r"^The\s+(?:Old|New)\s+Testament.*$",
+    ), 2),
+    # STAVE I / STAVE 1 (A Christmas Carol)
+    (re.compile(
+        r"^STAVE\s+(?:[IVXLCDM]+|\d+)"
+        r"(?:\.?\s*[-—:.]?\s*(.+))?$",
+        re.IGNORECASE,
+    ), 2),
+    # "I. A SCANDAL IN BOHEMIA" — Roman numeral + period + ALL CAPS TITLE
+    (re.compile(
+        r"^([IVXLCDM]{1,6})\.\s+([A-Z][A-Z\s\-',:]{2,60})$",
+    ), 2),
+    # Roman numeral standalone: "I.", "II.", "XIV." (section breaks within stories)
+    # Must have a period to distinguish "I." from "I think..."
+    (re.compile(
+        r"^([IVXLCDM]{1,6})\.\s*$",
+    ), 3),
+    # Standalone ALL-CAPS heading (at least 3 chars, max ~60, not a sentence)
     (re.compile(
         r"^([A-Z][A-Z\s\-',:]{2,60})$",
     ), 3),
 ]
+
+# Illustration markers to clean up
+ILLUSTRATION_RE = re.compile(r"\[Illustration[^\]]*\]")
 
 # Lines to skip when they appear right after the start marker
 FRONT_MATTER_SKIP = re.compile(
@@ -325,30 +361,41 @@ def _is_heading(line: str) -> tuple[int, str] | None:
     if not stripped or len(stripped) > 120:
         return None
 
+    # Reference the last two patterns by index for special handling
+    all_caps_pattern = HEADING_PATTERNS[-1][0]
+    roman_standalone_pattern = HEADING_PATTERNS[-2][0]
+    roman_titled_pattern = HEADING_PATTERNS[-3][0]
+
     for pattern, level in HEADING_PATTERNS:
         m = pattern.match(stripped)
-        if m:
-            # For the all-caps pattern, reject lines that look like normal text
-            if pattern == HEADING_PATTERNS[-1][0]:
-                # Must be short and not look like a paragraph fragment
-                if len(stripped) > 60 or stripped.endswith(",") or stripped.endswith(";"):
-                    continue
-                # Reject if it looks like a sentence (has too many words)
-                words = stripped.split()
-                if len(words) > 8:
-                    continue
-            # For roman numeral pattern, must be standalone (short line)
-            if pattern == HEADING_PATTERNS[-2][0]:
-                roman = m.group(1)
-                # Validate it's actually a roman numeral
-                if not re.match(r"^[IVXLCDM]+$", roman):
-                    continue
-                title_part = m.group(2).strip() if m.group(2) else ""
-                heading = f"{roman}. {title_part}".strip().rstrip(".")
-                return (level, heading)
+        if not m:
+            continue
 
-            heading = stripped
+        # ALL-CAPS standalone: reject sentence-like lines
+        if pattern is all_caps_pattern:
+            if len(stripped) > 60 or stripped.endswith(",") or stripped.endswith(";"):
+                continue
+            words = stripped.split()
+            if len(words) > 8:
+                continue
+
+        # Bare roman numeral "IV." — sub-section divider
+        if pattern is roman_standalone_pattern:
+            roman = m.group(1)
+            if not re.match(r"^[IVXLCDM]+$", roman):
+                continue
+            return (level, f"{roman}.")
+
+        # "I. A SCANDAL IN BOHEMIA" — roman + titled
+        if pattern is roman_titled_pattern:
+            roman = m.group(1)
+            if not re.match(r"^[IVXLCDM]+$", roman):
+                continue
+            title_part = m.group(2).strip() if m.lastindex and m.lastindex >= 2 else ""
+            heading = f"{roman}. {title_part}".strip()
             return (level, heading)
+
+        return (level, stripped)
     return None
 
 
@@ -461,33 +508,60 @@ def text_to_markdown(text: str, meta: dict) -> str:
             i += 1
             continue
 
+        # Strip illustration markers
+        stripped = ILLUSTRATION_RE.sub("", stripped).strip()
+        if not stripped:
+            if not prev_blank:
+                md_lines.append("")
+            prev_blank = True
+            i += 1
+            continue
+
         # Check for heading
         heading = _is_heading(stripped)
         if heading and prev_blank:
             level, heading_text = heading
 
-            # Look ahead: if the next non-blank line is also short and
-            # looks like a subtitle, combine them
-            subtitle = ""
+            # Look ahead for subtitle / multi-line chapter title:
+            # "CHAPTER I." followed by "HOW MANY KINDS OF..." on next line(s)
+            subtitle_lines = []
             j = i + 1
+            # Skip blank lines between heading and potential subtitle
             while j < total and not lines[j].strip():
                 j += 1
-            if j < total and j == i + 2:  # exactly one blank line gap
+            if j < total:
                 next_line = lines[j].strip()
-                if (next_line and len(next_line) < 80
-                        and not _is_heading(next_line)
-                        and not next_line[0].islower()):
-                    # Could be a chapter subtitle — include it
-                    subtitle = next_line
+                next_line_clean = ILLUSTRATION_RE.sub("", next_line).strip()
+                # Multi-line ALL CAPS title continuation (e.g. The Prince)
+                # But NOT bare roman numerals like "I." — those are sub-sections
+                is_bare_roman = bool(re.match(r"^[IVXLCDM]+\.\s*$", next_line_clean))
+                if (next_line_clean and next_line_clean.isupper()
+                        and heading_text.isupper()
+                        and len(next_line_clean) < 100
+                        and not is_bare_roman):
+                    subtitle_lines.append(next_line_clean)
+                    k = j + 1
+                    while k < total and lines[k].strip() and lines[k].strip().isupper():
+                        subtitle_lines.append(lines[k].strip())
+                        k += 1
+                    heading_text = heading_text + " " + " ".join(subtitle_lines)
+                    j = k
+                # Short, Title-Case subtitle (not a paragraph start)
+                # Must be very short (< 50 chars) and look like a title
+                elif (next_line_clean and len(next_line_clean) < 50
+                        and not _is_heading(next_line_clean)
+                        and not next_line_clean[0].islower()
+                        and next_line_clean[0].isupper()
+                        and not next_line_clean[-1] in ".!?;,"):
+                    subtitle_lines.append(next_line_clean)
+                    j = j + 1
 
             md_lines.append(f"{'#' * level} {heading_text}")
-            if subtitle:
+            if subtitle_lines and not subtitle_lines[0].isupper():
                 md_lines.append("")
-                md_lines.append(f"*{subtitle}*")
-                i = j + 1
-            else:
-                i += 1
+                md_lines.append(f"*{subtitle_lines[0]}*")
             md_lines.append("")
+            i = j if subtitle_lines else i + 1
             prev_blank = True
             prev_was_heading = True
             continue
