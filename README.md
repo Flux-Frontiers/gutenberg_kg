@@ -1,4 +1,4 @@
-# Great Books
+# GutenbergKG
 
 A curated corpus of public-domain literature from [Project Gutenberg](https://www.gutenberg.org/), structured for knowledge-graph construction with [DocKG](https://github.com/Flux-Frontiers/doc_kg) and [DiaryKG](https://github.com/Flux-Frontiers/diary_kg).
 
