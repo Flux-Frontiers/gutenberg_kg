@@ -1,24 +1,87 @@
 # Project Gutenberg Book Catalog
 # Format: <ebook_id>[\t<title_override>]
 # Lines starting with # are comments.
-# Titles are auto-detected from Gutenberg metadata if omitted.
 #
 # Find ebook IDs: python scripts/download_gutenberg.py search --author "Author Name"
 #
-# Books already in the repo (raw HTML):
+# Books already downloaded:
 # 2680	Meditations
-# 2009	The Federalist Papers
+# 1404	The Federalist Papers
 # 10	The King James Bible
 # 2591	Grimms Fairy Tales
-#
-# Classic literature to download:
-1342	Pride and Prejudice
-84	Frankenstein
-1661	The Adventures of Sherlock Holmes
-174	The Picture of Dorian Gray
-1952	The Yellow Wallpaper
-11	Alices Adventures in Wonderland
-1232	The Prince
-76	Adventures of Huckleberry Finn
-98	A Tale of Two Cities
-1080	A Modest Proposal
+# 1342	Pride and Prejudice
+# 84	Frankenstein
+# 1661	The Adventures of Sherlock Holmes
+# 174	The Picture of Dorian Gray
+# 1952	The Yellow Wallpaper
+# 11	Alices Adventures in Wonderland
+# 1232	The Prince
+# 76	Adventures of Huckleberry Finn
+# 98	A Tale of Two Cities
+# 1080	A Modest Proposal
+
+# Ancient & Classical
+1727	The Odyssey
+6130	The Iliad
+228	The Aeneid
+1497	The Republic
+1004	The Divine Comedy
+27673	Oedipus King of Thebes
+
+# Shakespeare
+1524	Hamlet
+1513	Romeo and Juliet
+1533	Macbeth
+1514	A Midsummer Nights Dream
+
+# English Literature
+1260	Jane Eyre
+768	Wuthering Heights
+1400	Great Expectations
+145	Middlemarch
+161	Sense and Sensibility
+158	Emma
+43	The Strange Case of Dr Jekyll and Mr Hyde
+120	Treasure Island
+521	Robinson Crusoe
+829	Gullivers Travels
+345	Dracula
+219	Heart of Darkness
+35	The Time Machine
+36	The War of the Worlds
+
+# American Literature
+2701	Moby Dick
+33	The Scarlet Letter
+205	Walden
+1322	Leaves of Grass
+215	The Call of the Wild
+73	The Red Badge of Courage
+203	Uncle Toms Cabin
+
+# French Literature
+135	Les Miserables
+1184	The Count of Monte Cristo
+1257	The Three Musketeers
+2413	Madame Bovary
+164	Twenty Thousand Leagues Under the Sea
+19942	Candide
+
+# Russian Literature
+2554	Crime and Punishment
+28054	The Brothers Karamazov
+1399	Anna Karenina
+2600	War and Peace
+2638	The Idiot
+1081	Dead Souls
+
+# Philosophy & Non-Fiction
+1228	On the Origin of Species
+147	Common Sense
+3207	Leviathan
+1998	Thus Spake Zarathustra
+4363	Beyond Good and Evil
+3300	The Wealth of Nations
+
+# Spanish
+996	Don Quixote
