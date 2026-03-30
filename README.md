@@ -7,7 +7,8 @@ A curated corpus of public-domain literature from [Project Gutenberg](https://ww
 ```
 project_gutenberg/
 ├── <Book Title>/
-│   └── <slug>.txt           # Full plain-text content
+│   ├── <slug>.md            # Full text with Markdown heading hierarchy
+│   └── reference.md         # Metadata: author, subjects, summary, source
 ├── scripts/
 │   ├── download_gutenberg.py   # Download & convert script
 │   └── catalog.txt             # Batch download catalog
@@ -15,7 +16,7 @@ project_gutenberg/
 └── README.md
 ```
 
-Each book lives in its own directory named after its title. The `.txt` files contain the cleaned plain text with Project Gutenberg boilerplate stripped.
+Each book lives in its own directory named after its title. The `.md` files use proper heading structure (`##` for chapters/books, `###` for scenes/sub-sections) so that DocKG can build a richly structured knowledge graph with section hierarchy, semantic chunks, and cross-document similarity.
 
 ## Quick Start
 
@@ -39,7 +40,8 @@ This fetches *Pride and Prejudice* from Gutenberg, strips boilerplate, converts 
 
 ```
 Pride and Prejudice/
-└── pride_and_prejudice.txt
+├── pride_and_prejudice.md
+└── reference.md
 ```
 
 ### Batch download from catalog
@@ -57,7 +59,7 @@ The catalog file is tab-separated (`<gutenberg_id>\t<optional_title_override>`).
 3. **Strips** Project Gutenberg header/footer boilerplate
 4. **Detects structure** — chapters, books, parts, volumes, acts, scenes, letters, and section breaks from common Gutenberg formatting patterns
 5. **Converts to Markdown** with proper heading hierarchy (`#` title, `##` chapters, `###` sub-sections)
-6. **Writes the output** as a clean `.txt` file
+6. **Writes** a structured `.md` file and a `reference.md` with metadata
 
 ### Supported heading patterns
 
