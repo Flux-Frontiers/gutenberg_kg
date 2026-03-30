@@ -103,7 +103,7 @@ DocKG will parse the text into a section hierarchy, chunk it semantically, compu
 | Meditations | Marcus Aurelius | 2680 |
 | Pride and Prejudice | Jane Austen | 1342 |
 | The Adventures of Sherlock Holmes | Arthur Conan Doyle | 1661 |
-| The Federalist Papers | Hamilton, Madison, Jay | 2009 |
+| The Federalist Papers | Hamilton, Madison, Jay | 1404 |
 | The King James Bible | — | 10 |
 | The Picture of Dorian Gray | Oscar Wilde | 174 |
 | The Prince | Niccolò Machiavelli | 1232 |
