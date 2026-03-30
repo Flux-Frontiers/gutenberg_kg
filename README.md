@@ -94,20 +94,70 @@ DocKG will parse the text into a section hierarchy, chunk it semantically, compu
 
 | Title | Author | Gutenberg ID |
 |---|---|---|
+| A Midsummer Night's Dream | William Shakespeare | 1514 |
 | A Modest Proposal | Jonathan Swift | 1080 |
 | A Tale of Two Cities | Charles Dickens | 98 |
 | Adventures of Huckleberry Finn | Mark Twain | 76 |
 | Alices Adventures in Wonderland | Lewis Carroll | 11 |
+| Anna Karenina | Leo Tolstoy | 1399 |
+| Beyond Good and Evil | Friedrich Nietzsche | 4363 |
+| Candide | Voltaire | 19942 |
+| Common Sense | Thomas Paine | 147 |
+| Crime and Punishment | Fyodor Dostoevsky | 2554 |
+| Dead Souls | Nikolai Gogol | 1081 |
+| Don Quixote | Miguel de Cervantes | 996 |
+| Dracula | Bram Stoker | 345 |
+| Emma | Jane Austen | 158 |
 | Frankenstein | Mary Shelley | 84 |
+| Great Expectations | Charles Dickens | 1400 |
 | Grimms Fairy Tales | Brothers Grimm | 2591 |
+| Gulliver's Travels | Jonathan Swift | 829 |
+| Hamlet | William Shakespeare | 1524 |
+| Heart of Darkness | Joseph Conrad | 219 |
+| Jane Eyre | Charlotte Brontë | 1260 |
+| Leaves of Grass | Walt Whitman | 1322 |
+| Les Misérables | Victor Hugo | 135 |
+| Leviathan | Thomas Hobbes | 3207 |
+| Macbeth | William Shakespeare | 1533 |
+| Madame Bovary | Gustave Flaubert | 2413 |
 | Meditations | Marcus Aurelius | 2680 |
+| Middlemarch | George Eliot | 145 |
+| Moby Dick | Herman Melville | 2701 |
+| Oedipus King of Thebes | Sophocles | 27673 |
+| On the Origin of Species | Charles Darwin | 1228 |
 | Pride and Prejudice | Jane Austen | 1342 |
+| Robinson Crusoe | Daniel Defoe | 521 |
+| Romeo and Juliet | William Shakespeare | 1513 |
+| Sense and Sensibility | Jane Austen | 161 |
+| The Aeneid | Virgil | 228 |
 | The Adventures of Sherlock Holmes | Arthur Conan Doyle | 1661 |
+| The Brothers Karamazov | Fyodor Dostoevsky | 28054 |
+| The Call of the Wild | Jack London | 215 |
+| The Count of Monte Cristo | Alexandre Dumas | 1184 |
+| The Divine Comedy | Dante Alighieri | 1004 |
 | The Federalist Papers | Hamilton, Madison, Jay | 1404 |
+| The Idiot | Fyodor Dostoevsky | 2638 |
+| The Iliad | Homer | 6130 |
 | The King James Bible | — | 10 |
+| The Odyssey | Homer | 1727 |
 | The Picture of Dorian Gray | Oscar Wilde | 174 |
 | The Prince | Niccolò Machiavelli | 1232 |
+| The Red Badge of Courage | Stephen Crane | 73 |
+| The Republic | Plato | 1497 |
+| The Scarlet Letter | Nathaniel Hawthorne | 33 |
+| The Strange Case of Dr Jekyll and Mr Hyde | Robert Louis Stevenson | 43 |
+| The Three Musketeers | Alexandre Dumas | 1257 |
+| The Time Machine | H.G. Wells | 35 |
+| The War of the Worlds | H.G. Wells | 36 |
+| The Wealth of Nations | Adam Smith | 3300 |
 | The Yellow Wallpaper | Charlotte Perkins Gilman | 1952 |
+| Thus Spake Zarathustra | Friedrich Nietzsche | 1998 |
+| Treasure Island | Robert Louis Stevenson | 120 |
+| Twenty Thousand Leagues Under the Sea | Jules Verne | 164 |
+| Uncle Tom's Cabin | Harriet Beecher Stowe | 203 |
+| Walden | Henry David Thoreau | 205 |
+| War and Peace | Leo Tolstoy | 2600 |
+| Wuthering Heights | Emily Brontë | 768 |
 
 ## License
 
