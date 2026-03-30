@@ -1,16 +1,17 @@
 # Project Gutenberg Book Catalog
-# Format: <ebook_id>\t<title>
+# Format: <ebook_id>[\t<title_override>]
 # Lines starting with # are comments.
+# Titles are auto-detected from Gutenberg metadata if omitted.
 #
-# Find ebook IDs at https://www.gutenberg.org/
+# Find ebook IDs: python scripts/download_gutenberg.py search --author "Author Name"
 #
-# Books already in the repo:
+# Books already in the repo (raw HTML):
 # 2680	Meditations
 # 2009	The Federalist Papers
-# 10	The Bible (King James Version)
+# 10	The King James Bible
 # 2591	Grimms Fairy Tales
 #
-# Additional books to download:
+# Classic literature to download:
 1342	Pride and Prejudice
 84	Frankenstein
 1661	The Adventures of Sherlock Holmes
