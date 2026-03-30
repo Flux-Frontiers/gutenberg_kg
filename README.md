@@ -1,21 +1,22 @@
 # Great Books
 
-A curated corpus of public-domain literature from [Project Gutenberg](https://www.gutenberg.org/), structured as Markdown for knowledge-graph construction with [DocKG](https://github.com/Flux-Frontiers/doc_kg) and [DiaryKG](https://github.com/Flux-Frontiers/diary_kg).
+A curated corpus of public-domain literature from [Project Gutenberg](https://www.gutenberg.org/), structured for knowledge-graph construction with [DocKG](https://github.com/Flux-Frontiers/doc_kg) and [DiaryKG](https://github.com/Flux-Frontiers/diary_kg).
 
 ## Repository Structure
 
 ```
-great_books/
+project_gutenberg/
 ├── <Book Title>/
 │   ├── <slug>.md            # Full text with Markdown heading hierarchy
 │   └── reference.md         # Metadata: author, subjects, summary, source
 ├── scripts/
 │   ├── download_gutenberg.py   # Download & convert script
 │   └── catalog.txt             # Batch download catalog
+├── magna_carta.html            # Magna Carta (raw HTML source)
 └── README.md
 ```
 
-Each book lives in its own directory. The `.md` files use proper heading structure (`##` for chapters/books, `###` for scenes/sub-sections) so that DocKG can build a richly structured knowledge graph with section hierarchy, semantic chunks, and cross-document similarity.
+Each book lives in its own directory named after its title. The `.md` files use proper heading structure (`##` for chapters/books, `###` for scenes/sub-sections) so that DocKG can build a richly structured knowledge graph with section hierarchy, semantic chunks, and cross-document similarity.
 
 ## Quick Start
 
@@ -58,7 +59,7 @@ The catalog file is tab-separated (`<gutenberg_id>\t<optional_title_override>`).
 3. **Strips** Project Gutenberg header/footer boilerplate
 4. **Detects structure** — chapters, books, parts, volumes, acts, scenes, letters, and section breaks from common Gutenberg formatting patterns
 5. **Converts to Markdown** with proper heading hierarchy (`#` title, `##` chapters, `###` sub-sections)
-6. **Writes a reference file** with source metadata, subjects, and summary
+6. **Writes** a structured `.md` file and a `reference.md` with metadata
 
 ### Supported heading patterns
 
@@ -87,7 +88,7 @@ dockg build .
 dockg query "What themes appear in Meditations?"
 ```
 
-DocKG will parse the Markdown headings into a section hierarchy, chunk the text semantically, compute embeddings, and build a queryable knowledge graph in SQLite + LanceDB.
+DocKG will parse the text into a section hierarchy, chunk it semantically, compute embeddings, and build a queryable knowledge graph in SQLite + LanceDB.
 
 ## Books in the Corpus
 
