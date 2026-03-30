@@ -1,24 +1,15 @@
 # Project Gutenberg Book Catalog
-# Format: <ebook_id>[\t<title_override>]
-# Lines starting with # are comments.
+# Format: <ebook_id>[\t<title_override>[\t<genre_override>]]
+#
+# Genre is auto-detected from section headers below.
+# To override: add a third tab-separated column with the genre directory name.
+#
+# Genre directories:
+#   ancient-classical, shakespeare, english-literature, american-literature,
+#   french-literature, russian-literature, philosophy, spanish
 #
 # Find ebook IDs: python scripts/download_gutenberg.py search --author "Author Name"
-#
-# Books already downloaded:
-# 2680	Meditations
-# 1404	The Federalist Papers
-# 10	The King James Bible
-# 2591	Grimms Fairy Tales
-# 1342	Pride and Prejudice
-# 84	Frankenstein
-# 1661	The Adventures of Sherlock Holmes
-# 174	The Picture of Dorian Gray
-# 1952	The Yellow Wallpaper
-# 11	Alices Adventures in Wonderland
-# 1232	The Prince
-# 76	Adventures of Huckleberry Finn
-# 98	A Tale of Two Cities
-# 1080	A Modest Proposal
+# Download all:  python scripts/download_gutenberg.py catalog scripts/catalog.txt
 
 # Ancient & Classical
 1727	The Odyssey
@@ -27,6 +18,8 @@
 1497	The Republic
 1004	The Divine Comedy
 27673	Oedipus King of Thebes
+2680	Meditations
+10	The Bible
 
 # Shakespeare
 1524	Hamlet
@@ -41,23 +34,33 @@
 145	Middlemarch
 161	Sense and Sensibility
 158	Emma
-43	The Strange Case of Dr Jekyll and Mr Hyde
-120	Treasure Island
-521	Robinson Crusoe
-829	Gullivers Travels
+1342	Pride and Prejudice
+84	Frankenstein
 345	Dracula
 219	Heart of Darkness
 35	The Time Machine
 36	The War of the Worlds
+120	Treasure Island
+521	Robinson Crusoe
+829	Gullivers Travels
+43	The Strange Case of Dr Jekyll and Mr Hyde
+1661	The Adventures of Sherlock Holmes
+174	The Picture of Dorian Gray
+11	Alices Adventures in Wonderland
+98	A Tale of Two Cities
+1080	A Modest Proposal
+2591	Grimms Fairy Tales
 
 # American Literature
 2701	Moby Dick
 33	The Scarlet Letter
 205	Walden
 1322	Leaves of Grass
+76	Adventures of Huckleberry Finn
 215	The Call of the Wild
 73	The Red Badge of Courage
 203	Uncle Toms Cabin
+1952	The Yellow Wallpaper
 
 # French Literature
 135	Les Miserables
@@ -82,6 +85,8 @@
 1998	Thus Spake Zarathustra
 4363	Beyond Good and Evil
 3300	The Wealth of Nations
+1404	The Federalist Papers
+1232	The Prince
 
 # Spanish
 996	Don Quixote
