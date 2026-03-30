@@ -1,0 +1,23 @@
+# Project Gutenberg Book Catalog
+# Format: <ebook_id>\t<title>
+# Lines starting with # are comments.
+#
+# Find ebook IDs at https://www.gutenberg.org/
+#
+# Books already in the repo:
+# 2680	Meditations
+# 2009	The Federalist Papers
+# 10	The Bible (King James Version)
+# 2591	Grimms Fairy Tales
+#
+# Additional books to download:
+1342	Pride and Prejudice
+84	Frankenstein
+1661	The Adventures of Sherlock Holmes
+174	The Picture of Dorian Gray
+1952	The Yellow Wallpaper
+11	Alices Adventures in Wonderland
+1232	The Prince
+76	Adventures of Huckleberry Finn
+98	A Tale of Two Cities
+1080	A Modest Proposal
