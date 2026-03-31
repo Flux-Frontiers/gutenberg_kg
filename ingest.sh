@@ -1,22 +1,33 @@
 #!/usr/bin/env bash
-# ingest.sh — Build a DocKG for each genre directory and register them all
-# under a "gutenberg" corpus in KGRAG.
+# ingest.sh — Build a per-book DocKG for every book in every genre, register
+# each as "gutenberg-<genre>-<book-slug>" and add it to two corpora:
+#   - gutenberg-<genre>   (genre-level queries)
+#   - gutenberg-all       (full library federation)
 #
 # Usage (from the gutenberg_kg repo root):
 #   bash ingest.sh [--wipe]
 #
 # Prerequisites:
-#   pip install kg-rag   OR   use the KGRAG repo with poetry run kgrag
-#   kgrag corpus create gutenberg --desc "Project Gutenberg library"
+#   pip install kg-rag   OR   poetry run kgrag (from the kgrag repo)
 #
-# Each genre directory gets its own .dockg/ (SQLite + LanceDB), registered as
-# "gutenberg-<genre>" and added to the "gutenberg" corpus.
+# Each book directory gets its own .dockg/ (SQLite + LanceDB).
+# Query examples:
+#   kgrag query "your question" --kind doc
+#   kgrag corpus query gutenberg-shakespeare "to be or not to be"
+#   kgrag corpus query gutenberg-all "hubris and fate"
 
 set -euo pipefail
 
 REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-WIPE="${1:-}"
-CORPUS="gutenberg"
+WIPE=""
+DRY_RUN=""
+
+for ARG in "$@"; do
+    case "$ARG" in
+        --wipe)     WIPE="--wipe" ;;
+        --dry-run)  DRY_RUN="1" ;;
+    esac
+done
 
 GENRES=(
     ancient-classical
@@ -29,82 +40,86 @@ GENRES=(
     spanish
 )
 
-echo "=== GutenbergKG Ingest ==="
+echo "=== GutenbergKG Ingest (per-book) ==="
 echo "Repo: $REPO_ROOT"
 [[ "$WIPE" == "--wipe" ]] && echo "Mode: WIPE + rebuild"
+[[ -n "$DRY_RUN" ]] && echo "Mode: DRY RUN (no changes)"
 echo ""
 
-# Ensure corpus exists
-if ! kgrag corpus info "$CORPUS" &>/dev/null 2>&1; then
-    echo "Creating corpus '$CORPUS'..."
-    kgrag corpus create "$CORPUS" --desc "Project Gutenberg library"
+if ! command -v kgrag &>/dev/null; then
+    echo "ERROR: kgrag not found — install kg-rag first"
+    exit 1
 fi
+
+# slugify: lowercase, replace spaces/special chars with hyphens
+slugify() {
+    echo "$1" | tr '[:upper:]' '[:lower:]' | sed 's/[^a-z0-9]/-/g' | sed 's/-\+/-/g' | sed 's/^-\|-$//g'
+}
+
+# Ensure top-level corpora exist (idempotent)
+echo "--- Ensuring corpora exist ---"
+for GENRE in "${GENRES[@]}"; do
+    if [[ -n "$DRY_RUN" ]]; then
+        echo "  [dry] kgrag corpus create gutenberg-$GENRE"
+    else
+        kgrag corpus create "gutenberg-$GENRE" 2>/dev/null && echo "  [+] corpus: gutenberg-$GENRE" || echo "  [=] exists: gutenberg-$GENRE"
+    fi
+done
+if [[ -n "$DRY_RUN" ]]; then
+    echo "  [dry] kgrag corpus create gutenberg-all"
+else
+    kgrag corpus create "gutenberg-all" 2>/dev/null && echo "  [+] corpus: gutenberg-all" || echo "  [=] exists: gutenberg-all"
+fi
+echo ""
+
+TOTAL_OK=0
+TOTAL_FAIL=0
 
 for GENRE in "${GENRES[@]}"; do
     GENRE_DIR="$REPO_ROOT/$GENRE"
-    KG_NAME="gutenberg-$GENRE"
+    GENRE_CORPUS="gutenberg-$GENRE"
 
-    echo "--- $GENRE ---"
+    echo "=== $GENRE ==="
 
     if [[ ! -d "$GENRE_DIR" ]]; then
-        echo "  [!] Directory not found: $GENRE_DIR - skipping"
+        echo "  [!] Directory not found: $GENRE_DIR — skipping"
         echo ""
         continue
     fi
 
-    MD_COUNT=$(find "$GENRE_DIR" -name "*.md" ! -name "README.md" | wc -l)
-    if [[ "$MD_COUNT" -eq 0 ]]; then
-        echo "  [!] No .md files found - skipping"
-        echo ""
-        continue
-    fi
+    while IFS= read -r -d '' BOOK_DIR; do
+        BOOK_NAME="$(basename "$BOOK_DIR")"
+        BOOK_SLUG="$(slugify "$BOOK_NAME")"
+        KG_NAME="gutenberg-${GENRE}-${BOOK_SLUG}"
 
-    echo "  [.] $MD_COUNT .md files"
+        echo "  --- $BOOK_NAME ---"
 
-    # Wipe existing .dockg if requested
-    if [[ "$WIPE" == "--wipe" ]] && [[ -d "$GENRE_DIR/.dockg" ]]; then
-        rm -rf "$GENRE_DIR/.dockg"
-        echo "  [.] Wiped existing .dockg"
-    fi
+        INIT_ARGS=(kgrag init "$BOOK_DIR" --layer doc --name "$KG_NAME" --corpus "$GENRE_CORPUS")
+        [[ "$WIPE" == "--wipe" ]] && INIT_ARGS+=(--wipe)
 
-    # Build DocKG
-    if ! command -v dockg &>/dev/null; then
-        echo "  [!] dockg not found - skipping build (install doc-kg first)"
-        echo ""
-        continue
-    fi
+        if [[ -n "$DRY_RUN" ]]; then
+            echo "    [dry] ${INIT_ARGS[*]}"
+            echo "    [dry] kgrag corpus add gutenberg-all ${KG_NAME}-doc"
+            (( TOTAL_OK++ )) || true
+        elif "${INIT_ARGS[@]}"; then
+            echo "    [+] Registered: $KG_NAME"
+            kgrag corpus add "gutenberg-all" "${KG_NAME}-doc" 2>/dev/null && echo "    [+] Added to gutenberg-all" || true
+            (( TOTAL_OK++ )) || true
+        else
+            echo "    [x] Failed: $KG_NAME"
+            (( TOTAL_FAIL++ )) || true
+        fi
 
-    echo "  [.] Building DocKG..."
-    if dockg build --repo "$GENRE_DIR"; then
-        echo "  [+] DocKG built"
-    else
-        echo "  [x] dockg build failed"
-        echo ""
-        continue
-    fi
-
-    # Register with kgrag
-    SQLITE="$GENRE_DIR/.dockg/graph.sqlite"
-    LANCEDB="$GENRE_DIR/.dockg/lancedb"
-    ARGS=(kgrag register "$KG_NAME" doc "$GENRE_DIR")
-    [[ -f "$SQLITE" ]]  && ARGS+=(--sqlite  "$SQLITE")
-    [[ -d "$LANCEDB" ]] && ARGS+=(--lancedb "$LANCEDB")
-
-    if "${ARGS[@]}" 2>&1; then
-        echo "  [+] Registered: $KG_NAME"
-    else
-        echo "  [!] Already registered (continuing)"
-    fi
-
-    # Add to corpus
-    kgrag corpus add "$CORPUS" "$KG_NAME" 2>&1 && echo "  [+] Added to corpus: $CORPUS" || true
+    done < <(find "$GENRE_DIR" -mindepth 1 -maxdepth 1 -type d -print0 | sort -z)
 
     echo ""
 done
 
 echo "=== Done ==="
+echo "  OK: $TOTAL_OK  Failed: $TOTAL_FAIL"
 echo ""
-echo "Query your library:"
-echo "  kgrag corpus query gutenberg \"your question\""
-echo "  kgrag synthesize \"your question\" --corpus gutenberg"
-echo "  kgrag viz"
+echo "Query your Gutenberg library:"
+echo "  kgrag query \"your question\" --kind doc"
+echo "  kgrag corpus query gutenberg-shakespeare \"ambition and power\""
+echo "  kgrag corpus query gutenberg-all \"the nature of justice\""
+echo "  kgrag list"
