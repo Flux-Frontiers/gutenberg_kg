@@ -26,3 +26,8 @@ Desktop.ini
 # SQLite transient files (WAL/SHM are runtime-only, can exceed GitHub's 100MB limit)
 *.sqlite-wal
 *.sqlite-shm
+
+# LanceDB transient files (runtime-only; _transactions/ pruned on compaction, _versions/ rewritten)
+**/.dockg/lancedb/**/_transactions/
+**/.dockg/lancedb/**/_versions/
+**/.dockg/lancedb/**/data/
