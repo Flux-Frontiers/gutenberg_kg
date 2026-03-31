@@ -22,3 +22,7 @@ Desktop.ini
 /.dockg/
 /.codekg/
 /.ftreekg/
+
+# SQLite transient files (WAL/SHM are runtime-only, can exceed GitHub's 100MB limit)
+*.sqlite-wal
+*.sqlite-shm
