@@ -1,26 +1,81 @@
+[![Python](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/)
+[![License: Public Domain](https://img.shields.io/badge/texts-Public%20Domain-green.svg)](https://www.gutenberg.org/)
+[![Books](https://img.shields.io/badge/corpus-64%20books-orange.svg)](https://github.com/Flux-Frontiers/gutenberg_kg)
+[![DocKG](https://img.shields.io/badge/DocKG-ready-blue.svg)](https://github.com/Flux-Frontiers/doc_kg)
+[![KGRAG](https://img.shields.io/badge/KGRAG-integrated-purple.svg)](https://github.com/Flux-Frontiers/KGRAG)
+
+<p align="center">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Project_Gutenberg_logo.png/320px-Project_Gutenberg_logo.png" alt="Project Gutenberg" width="200"/>
+</p>
+
 # GutenbergKG
 
-A curated corpus of public-domain literature from [Project Gutenberg](https://www.gutenberg.org/), structured for knowledge-graph construction with [DocKG](https://github.com/Flux-Frontiers/doc_kg) and [DiaryKG](https://github.com/Flux-Frontiers/diary_kg).
+**GutenbergKG** — A curated corpus of 64 public-domain masterworks from [Project Gutenberg](https://www.gutenberg.org/), structured for knowledge-graph construction with [DocKG](https://github.com/Flux-Frontiers/doc_kg) and the [KGRAG](https://github.com/Flux-Frontiers/KGRAG) federated query framework.
+
+*Author: Eric G. Suchanek, PhD*  
+*Flux-Frontiers, Liberty TWP, OH*
+
+---
+
+## Overview
+
+GutenbergKG transforms the raw texts of great literature, philosophy, and science into **queryable knowledge graphs** — enabling semantic search, thematic analysis, and cross-work discovery powered by [DocKG](https://github.com/Flux-Frontiers/doc_kg) and [KGRAG](https://github.com/Flux-Frontiers/KGRAG).
+
+Each book is:
+
+- **Downloaded** from Project Gutenberg and stripped of boilerplate
+- **Converted to structured Markdown** with heading hierarchy (`##` chapters, `###` scenes/sub-sections)
+- **Organized by genre** into thematic subcorpora for targeted or broad querying
+- **DocKG-indexed** into SQLite + LanceDB for hybrid semantic + structural retrieval
+
+The result: 64 of history's most important works, instantly searchable as a unified knowledge graph — or as independently queryable genre corpora.
+
+---
+
+## Corpus at a Glance
+
+| Genre | Books |
+|-------|-------|
+| English Literature | 22 |
+| Philosophy | 8 |
+| Ancient & Classical | 8 |
+| American Literature | 9 |
+| Russian Literature | 6 |
+| French Literature | 6 |
+| Shakespeare | 4 |
+| Spanish Literature | 1 |
+| **Total** | **64** |
+
+---
 
 ## Repository Structure
 
 ```
-project_gutenberg/
-├── <Book Title>/
-│   ├── <slug>.md            # Full text with Markdown heading hierarchy
-│   └── reference.md         # Metadata: author, subjects, summary, source
+gutenberg_kg/
+├── english-literature/          # 22 English novels, novellas & stories
+│   ├── <Book Title>/
+│   │   ├── <slug>.md            # Full text with Markdown heading hierarchy
+│   │   └── reference.md         # Author, subjects, summary, Gutenberg ID
+│   └── ...
+├── philosophy/                  # 8 philosophical works
+├── ancient-classical/           # 8 works from antiquity
+├── american-literature/         # 9 American classics
+├── russian-literature/          # 6 Russian masterworks
+├── french-literature/           # 6 French classics
+├── shakespeare/                 # 4 Shakespeare plays
+├── spanish/                     # Don Quixote
 ├── scripts/
-│   ├── download_gutenberg.py   # Download & convert script
-│   └── catalog.txt             # Batch download catalog
-├── magna_carta.html            # Magna Carta (raw HTML source)
-└── README.md
+│   ├── download_gutenberg.py    # Download & convert script
+│   └── catalog.txt              # Batch download catalog
+├── ingest.py                    # DocKG ingest helper
+└── ingest.sh                    # Shell ingest runner
 ```
 
-Each book lives in its own directory named after its title. The `.md` files use proper heading structure (`##` for chapters/books, `###` for scenes/sub-sections) so that DocKG can build a richly structured knowledge graph with section hierarchy, semantic chunks, and cross-document similarity.
+---
 
 ## Quick Start
 
-No dependencies beyond Python 3.10+ standard library.
+No dependencies beyond Python 3.10+ standard library for downloading.
 
 ### Search for books
 
@@ -52,7 +107,50 @@ python scripts/download_gutenberg.py catalog scripts/catalog.txt
 
 The catalog file is tab-separated (`<gutenberg_id>\t<optional_title_override>`). Edit `scripts/catalog.txt` to add books.
 
-## What the Script Does
+---
+
+## Building Knowledge Graphs
+
+Once books are downloaded, build DocKG indices with:
+
+```bash
+# Build from the full corpus
+dockg build .
+
+# Build from a single genre subcorpus
+dockg build english-literature/
+
+# Build from a single book
+dockg build "english-literature/Pride and Prejudice/"
+```
+
+DocKG parses text into a section hierarchy, chunks it semantically, computes embeddings, and builds a queryable knowledge graph in SQLite + LanceDB.
+
+### Query the corpus
+
+```bash
+# Thematic search
+dockg query "What themes appear in Meditations?"
+
+# Cross-work discovery
+dockg query "characters who seek revenge"
+
+# Philosophical analysis
+dockg query "social contract and natural law"
+```
+
+### Register with KGRAG
+
+To query across literature, code, and other knowledge sources simultaneously:
+
+```bash
+kgrag register . --type doc --name gutenberg-corpus
+kgrag query "stoic philosophy and virtue"
+```
+
+---
+
+## What the Ingestion Script Does
 
 1. **Fetches metadata** from Gutenberg's OPDS feed (title, author, subjects, summary, language)
 2. **Downloads** the plain-text UTF-8 version
@@ -63,102 +161,134 @@ The catalog file is tab-separated (`<gutenberg_id>\t<optional_title_override>`).
 
 ### Supported heading patterns
 
-| Pattern | Example | Level |
+| Pattern | Example | Heading level |
 |---|---|---|
 | Chapter | `CHAPTER XIV.`, `Chapter 3` | `##` |
-| Book/Volume/Part | `BOOK THE FIRST`, `VOLUME II`, `PART III` | `##` |
+| Book / Volume / Part | `BOOK THE FIRST`, `VOLUME II`, `PART III` | `##` |
 | Letter | `Letter 4` | `##` |
 | Act / Scene | `ACT III`, `SCENE II` | `##` / `###` |
 | Titled section | `I. A SCANDAL IN BOHEMIA` | `##` |
 | Sub-section break | `III.` | `###` |
 | Multi-line title | `CHAPTER I.` + title on next line | merged into `##` |
 
-## Building Knowledge Graphs
-
-Once books are downloaded, point DocKG at the repo:
-
-```bash
-# Build a graph from a single book
-dockg build "Pride and Prejudice/"
-
-# Build from the entire corpus
-dockg build .
-
-# Query the graph
-dockg query "What themes appear in Meditations?"
-```
-
-DocKG will parse the text into a section hierarchy, chunk it semantically, compute embeddings, and build a queryable knowledge graph in SQLite + LanceDB.
+---
 
 ## Books in the Corpus
 
+### English Literature (22)
+
 | Title | Author | Gutenberg ID |
 |---|---|---|
-| A Midsummer Night's Dream | William Shakespeare | 1514 |
 | A Modest Proposal | Jonathan Swift | 1080 |
 | A Tale of Two Cities | Charles Dickens | 98 |
-| Adventures of Huckleberry Finn | Mark Twain | 76 |
-| Alices Adventures in Wonderland | Lewis Carroll | 11 |
-| Anna Karenina | Leo Tolstoy | 1399 |
-| Beyond Good and Evil | Friedrich Nietzsche | 4363 |
-| Candide | Voltaire | 19942 |
-| Common Sense | Thomas Paine | 147 |
-| Crime and Punishment | Fyodor Dostoevsky | 2554 |
-| Dead Souls | Nikolai Gogol | 1081 |
-| Don Quixote | Miguel de Cervantes | 996 |
+| Alice's Adventures in Wonderland | Lewis Carroll | 11 |
 | Dracula | Bram Stoker | 345 |
 | Emma | Jane Austen | 158 |
 | Frankenstein | Mary Shelley | 84 |
 | Great Expectations | Charles Dickens | 1400 |
-| Grimms Fairy Tales | Brothers Grimm | 2591 |
+| Grimms' Fairy Tales | Brothers Grimm | 2591 |
 | Gulliver's Travels | Jonathan Swift | 829 |
-| Hamlet | William Shakespeare | 1524 |
 | Heart of Darkness | Joseph Conrad | 219 |
 | Jane Eyre | Charlotte Brontë | 1260 |
-| Leaves of Grass | Walt Whitman | 1322 |
-| Les Misérables | Victor Hugo | 135 |
-| Leviathan | Thomas Hobbes | 3207 |
-| Macbeth | William Shakespeare | 1533 |
-| Madame Bovary | Gustave Flaubert | 2413 |
-| Meditations | Marcus Aurelius | 2680 |
 | Middlemarch | George Eliot | 145 |
-| Moby Dick | Herman Melville | 2701 |
-| Oedipus King of Thebes | Sophocles | 27673 |
-| On the Origin of Species | Charles Darwin | 1228 |
 | Pride and Prejudice | Jane Austen | 1342 |
 | Robinson Crusoe | Daniel Defoe | 521 |
-| Romeo and Juliet | William Shakespeare | 1513 |
 | Sense and Sensibility | Jane Austen | 161 |
-| The Aeneid | Virgil | 228 |
 | The Adventures of Sherlock Holmes | Arthur Conan Doyle | 1661 |
-| The Brothers Karamazov | Fyodor Dostoevsky | 28054 |
-| The Call of the Wild | Jack London | 215 |
-| The Count of Monte Cristo | Alexandre Dumas | 1184 |
-| The Divine Comedy | Dante Alighieri | 1004 |
-| The Federalist Papers | Hamilton, Madison, Jay | 1404 |
-| The Idiot | Fyodor Dostoevsky | 2638 |
-| The Iliad | Homer | 6130 |
-| The King James Bible | — | 10 |
-| The Odyssey | Homer | 1727 |
 | The Picture of Dorian Gray | Oscar Wilde | 174 |
-| The Prince | Niccolò Machiavelli | 1232 |
-| The Red Badge of Courage | Stephen Crane | 73 |
-| The Republic | Plato | 1497 |
-| The Scarlet Letter | Nathaniel Hawthorne | 33 |
 | The Strange Case of Dr Jekyll and Mr Hyde | Robert Louis Stevenson | 43 |
-| The Three Musketeers | Alexandre Dumas | 1257 |
 | The Time Machine | H.G. Wells | 35 |
 | The War of the Worlds | H.G. Wells | 36 |
-| The Wealth of Nations | Adam Smith | 3300 |
-| The Yellow Wallpaper | Charlotte Perkins Gilman | 1952 |
-| Thus Spake Zarathustra | Friedrich Nietzsche | 1998 |
 | Treasure Island | Robert Louis Stevenson | 120 |
-| Twenty Thousand Leagues Under the Sea | Jules Verne | 164 |
+| Wuthering Heights | Emily Brontë | 768 |
+
+### Philosophy (8)
+
+| Title | Author | Gutenberg ID |
+|---|---|---|
+| Beyond Good and Evil | Friedrich Nietzsche | 4363 |
+| Common Sense | Thomas Paine | 147 |
+| Leviathan | Thomas Hobbes | 3207 |
+| On the Origin of Species | Charles Darwin | 1228 |
+| The Federalist Papers | Hamilton, Madison, Jay | 1404 |
+| The Prince | Niccolò Machiavelli | 1232 |
+| The Wealth of Nations | Adam Smith | 3300 |
+| Thus Spake Zarathustra | Friedrich Nietzsche | 1998 |
+
+### Ancient & Classical (8)
+
+| Title | Author | Gutenberg ID |
+|---|---|---|
+| Meditations | Marcus Aurelius | 2680 |
+| Oedipus King of Thebes | Sophocles | 27673 |
+| The Aeneid | Virgil | 228 |
+| The Bible (King James) | — | 10 |
+| The Divine Comedy | Dante Alighieri | 1004 |
+| The Iliad | Homer | 6130 |
+| The Odyssey | Homer | 1727 |
+| The Republic | Plato | 1497 |
+
+### American Literature (9)
+
+| Title | Author | Gutenberg ID |
+|---|---|---|
+| Adventures of Huckleberry Finn | Mark Twain | 76 |
+| Leaves of Grass | Walt Whitman | 1322 |
+| Moby Dick | Herman Melville | 2701 |
+| The Call of the Wild | Jack London | 215 |
+| The Red Badge of Courage | Stephen Crane | 73 |
+| The Scarlet Letter | Nathaniel Hawthorne | 33 |
+| The Yellow Wallpaper | Charlotte Perkins Gilman | 1952 |
 | Uncle Tom's Cabin | Harriet Beecher Stowe | 203 |
 | Walden | Henry David Thoreau | 205 |
+
+### Russian Literature (6)
+
+| Title | Author | Gutenberg ID |
+|---|---|---|
+| Anna Karenina | Leo Tolstoy | 1399 |
+| Crime and Punishment | Fyodor Dostoevsky | 2554 |
+| Dead Souls | Nikolai Gogol | 1081 |
+| The Brothers Karamazov | Fyodor Dostoevsky | 28054 |
+| The Idiot | Fyodor Dostoevsky | 2638 |
 | War and Peace | Leo Tolstoy | 2600 |
-| Wuthering Heights | Emily Brontë | 768 |
+
+### French Literature (6)
+
+| Title | Author | Gutenberg ID |
+|---|---|---|
+| Candide | Voltaire | 19942 |
+| Les Misérables | Victor Hugo | 135 |
+| Madame Bovary | Gustave Flaubert | 2413 |
+| The Count of Monte Cristo | Alexandre Dumas | 1184 |
+| The Three Musketeers | Alexandre Dumas | 1257 |
+| Twenty Thousand Leagues Under the Sea | Jules Verne | 164 |
+
+### Shakespeare (4)
+
+| Title | Author | Gutenberg ID |
+|---|---|---|
+| A Midsummer Night's Dream | William Shakespeare | 1514 |
+| Hamlet | William Shakespeare | 1524 |
+| Macbeth | William Shakespeare | 1533 |
+| Romeo and Juliet | William Shakespeare | 1513 |
+
+### Spanish Literature (1)
+
+| Title | Author | Gutenberg ID |
+|---|---|---|
+| Don Quixote | Miguel de Cervantes | 996 |
+
+---
+
+## Related Projects
+
+- **[KGRAG](https://github.com/Flux-Frontiers/KGRAG)** — Federated knowledge graph orchestration and query layer
+- **[DocKG](https://github.com/Flux-Frontiers/doc_kg)** — Semantic document knowledge graph (powers this corpus)
+- **[CodeKG](https://github.com/Flux-Frontiers/code_kg)** — Structural knowledge graph for Python codebases
+
+---
 
 ## License
 
-The texts in this repository are public domain via Project Gutenberg. The download script and tooling are part of the [Flux Frontiers](https://github.com/Flux-Frontiers) project.
+The texts in this repository are **public domain** via [Project Gutenberg](https://www.gutenberg.org/). The download scripts and tooling are part of the [Flux Frontiers](https://github.com/Flux-Frontiers) project and are released under the [Elastic License 2.0](https://www.elastic.co/licensing/elastic-license).
