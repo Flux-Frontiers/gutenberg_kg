@@ -64,11 +64,10 @@ gutenberg_kg/
 ├── french-literature/           # 6 French classics
 ├── shakespeare/                 # 4 Shakespeare plays
 ├── spanish/                     # Don Quixote
-├── scripts/
-│   ├── download_gutenberg.py    # Download & convert script
-│   └── catalog.txt              # Batch download catalog
-├── ingest.py                    # DocKG ingest helper
-└── ingest.sh                    # Shell ingest runner
+└── scripts/
+    ├── ingest.py                # DocKG build + KGRAG registration + git push
+    ├── download_gutenberg.py    # Download & convert script
+    └── catalog.txt              # Batch download catalog
 ```
 
 ---
@@ -111,20 +110,71 @@ The catalog file is tab-separated (`<gutenberg_id>\t<optional_title_override>`).
 
 ## Building Knowledge Graphs
 
-Once books are downloaded, build DocKG indices with:
+`scripts/ingest.py` is the single entry point for building DocKG indices,
+registering each book with KGRAG, and optionally committing + pushing changes
+to git — all in per-genre batches to avoid large monolithic commits.
+
+### List available genres
 
 ```bash
-# Build from the full corpus
-dockg build .
-
-# Build from a single genre subcorpus
-dockg build english-literature/
-
-# Build from a single book
-dockg build "english-literature/Pride and Prejudice/"
+python scripts/ingest.py --list-genres
 ```
 
-DocKG parses text into a section hierarchy, chunks it semantically, computes embeddings, and builds a queryable knowledge graph in SQLite + LanceDB.
+### Ingest all genres
+
+```bash
+python scripts/ingest.py
+```
+
+### Ingest one or more specific genres
+
+```bash
+python scripts/ingest.py --genre american-literature
+python scripts/ingest.py --genre shakespeare --genre philosophy
+```
+
+### Ingest and push each genre as it finishes
+
+```bash
+python scripts/ingest.py --push
+python scripts/ingest.py --genre russian-literature --push
+```
+
+Each genre gets its own `git commit` + `git push` immediately after its books
+are processed, keeping individual pushes small regardless of corpus size.
+
+### Force a full rebuild
+
+```bash
+python scripts/ingest.py --force-build
+python scripts/ingest.py --force-build --genre english-literature
+```
+
+### Preview without making changes
+
+```bash
+python scripts/ingest.py --dry-run
+python scripts/ingest.py --dry-run --push
+```
+
+### Full option reference
+
+| Flag | Description |
+|------|-------------|
+| `--list-genres` | Print all known genres and exit |
+| `--genre GENRE` | Process only this genre (repeatable) |
+| `--force-build` | Rebuild even if `.dockg` already exists |
+| `--force-register` | Re-register even if already in KGRAG registry |
+| `--push` | `git add` + `git commit` + `git push` after each genre |
+| `--dry-run` | Print actions without executing anything |
+| `--registry PATH` | Override the KGRAG registry path |
+
+### What ingest does, per book
+
+1. Runs `dockg build` to build a SQLite + LanceDB knowledge graph under `<book>/.dockg/`
+2. Registers the resulting KG with KGRAG under the name `gutenberg-<genre>-<slug>-doc`
+3. Adds it to the genre corpus (`gutenberg-<genre>`) and the top-level corpus (`gutenberg-all`)
+4. With `--push`: stages `<genre>/`, commits, and pushes once all books in the genre are done
 
 ### Query the corpus
 
@@ -139,13 +189,12 @@ dockg query "characters who seek revenge"
 dockg query "social contract and natural law"
 ```
 
-### Register with KGRAG
-
-To query across literature, code, and other knowledge sources simultaneously:
+### Federated query with KGRAG
 
 ```bash
-kgrag register . --type doc --name gutenberg-corpus
 kgrag query "stoic philosophy and virtue"
+kgrag corpus query gutenberg-all "the nature of justice"
+kgrag corpus query gutenberg-philosophy "free will and determinism"
 ```
 
 ---
