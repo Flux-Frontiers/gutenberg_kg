@@ -27,6 +27,7 @@ from __future__ import annotations
 import argparse
 import platform
 import re
+import shutil
 import socket
 import subprocess
 import sys
@@ -156,6 +157,19 @@ def ensure_corpus(
     print(f"  [+] corpus: {name}")
 
 
+def is_sqlite_valid(path: Path) -> bool:
+    """Return True if path is a readable, non-corrupt SQLite database."""
+    import sqlite3
+    if not path.exists() or path.stat().st_size < 100:
+        return False
+    try:
+        with sqlite3.connect(path) as con:
+            con.execute("SELECT COUNT(*) FROM nodes")
+        return True
+    except Exception:
+        return False
+
+
 def build_dockg(book_dir: Path, dry_run: bool = False) -> bool:
     """Run dockg build on book_dir. Returns True on success."""
     cmd = ["dockg", "build", "--repo", str(book_dir)]
@@ -281,11 +295,26 @@ def process_book(
     t0 = time.perf_counter()
 
     # --- Build ---
+    dockg_dir = book_dir / ".dockg"
     already_built = dockg_sqlite.exists()
+
+    # Auto-wipe if sqlite exists but is corrupt or empty
+    if already_built and not is_sqlite_valid(dockg_sqlite):
+        print("    [!] corrupt/empty graph.sqlite — wiping and rebuilding")
+        if not opts.dry_run:
+            shutil.rmtree(dockg_dir)
+        already_built = False
+
     if already_built and not opts.force_build:
         print("    [=] already built, skipping dockg build")
         status = "skipped"
     else:
+        if already_built and opts.force_build:
+            if not opts.dry_run:
+                shutil.rmtree(dockg_dir)
+                print("    [~] wiped .dockg")
+            else:
+                print("    [dry] rm -rf .dockg")
         label = "rebuilding" if already_built else "building"
         print(f"    [.] {label} DocKG...")
         if not build_dockg(book_dir, dry_run=opts.dry_run):

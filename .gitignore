@@ -27,7 +27,5 @@ Desktop.ini
 *.sqlite-wal
 *.sqlite-shm
 
-# LanceDB transient files (runtime-only; _transactions/ pruned on compaction, _versions/ rewritten)
-**/.dockg/lancedb/**/_transactions/
-**/.dockg/lancedb/**/_versions/
-**/.dockg/lancedb/**/data/
+# LanceDB — entire vector index is local-only; rebuild with `dockg build` after clone
+**/.dockg/lancedb/
