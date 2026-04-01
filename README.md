@@ -1,8 +1,10 @@
-[![Python](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/)
+[![Python](https://img.shields.io/badge/python-3.12%2B-blue.svg)](https://www.python.org/)
 [![License: Public Domain](https://img.shields.io/badge/texts-Public%20Domain-green.svg)](https://www.gutenberg.org/)
-[![Books](https://img.shields.io/badge/corpus-64%20books-orange.svg)](https://github.com/Flux-Frontiers/gutenberg_kg)
+[![Books](https://img.shields.io/badge/corpus-78%20books-orange.svg)](https://github.com/Flux-Frontiers/gutenberg_kg)
 [![DocKG](https://img.shields.io/badge/DocKG-ready-blue.svg)](https://github.com/Flux-Frontiers/doc_kg)
 [![KGRAG](https://img.shields.io/badge/KGRAG-integrated-purple.svg)](https://github.com/Flux-Frontiers/KGRAG)
+[![Nodes](https://img.shields.io/badge/nodes-445K-green.svg)](https://github.com/Flux-Frontiers/gutenberg_kg)
+[![Edges](https://img.shields.io/badge/edges-4.5M-green.svg)](https://github.com/Flux-Frontiers/gutenberg_kg)
 
 <p align="center">
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Project_Gutenberg_logo.png/320px-Project_Gutenberg_logo.png" alt="Project Gutenberg" width="200"/>
@@ -10,7 +12,9 @@
 
 # GutenbergKG
 
-**GutenbergKG** — A curated corpus of 64 public-domain masterworks from [Project Gutenberg](https://www.gutenberg.org/), structured for knowledge-graph construction with [DocKG](https://github.com/Flux-Frontiers/doc_kg) and the [KGRAG](https://github.com/Flux-Frontiers/KGRAG) federated query framework.
+**GutenbergKG** — A curated corpus of 78 public-domain masterworks from [Project Gutenberg](https://www.gutenberg.org/), structured for knowledge-graph construction with [DocKG](https://github.com/Flux-Frontiers/doc_kg) and the [KGRAG](https://github.com/Flux-Frontiers/KGRAG) federated query framework.
+
+The corpus spans 9 genres, 445,486 nodes, and 4,525,716 edges — queryable as independent genre corpora or as a unified `gutenberg-all` knowledge graph.
 
 *Author: Eric G. Suchanek, PhD*  
 *Flux-Frontiers, Liberty TWP, OH*
@@ -34,17 +38,18 @@ The result: 64 of history's most important works, instantly searchable as a unif
 
 ## Corpus at a Glance
 
-| Genre | Books |
-|-------|-------|
-| English Literature | 22 |
-| Philosophy | 8 |
-| Ancient & Classical | 8 |
-| American Literature | 9 |
-| Russian Literature | 6 |
-| French Literature | 6 |
-| Shakespeare | 4 |
-| Spanish Literature | 1 |
-| **Total** | **64** |
+| Genre | Books | Nodes | Edges |
+|-------|------:|------:|------:|
+| English Literature | 22 | 93,147 | 893,364 |
+| Russian Literature | 6 | 66,343 | 709,346 |
+| Ancient & Classical | 8 | 49,351 | 596,246 |
+| French Literature | 6 | 58,073 | 672,205 |
+| Philosophy | 8 | 58,265 | 506,407 |
+| Science Fiction | 14 | 59,075 | 589,989 |
+| American Literature | 9 | 43,473 | 364,627 |
+| Shakespeare | 4 | 6,277 | 81,237 |
+| Spanish Literature | 1 | 11,482 | 112,295 |
+| **Total** | **78** | **445,486** | **4,525,716** |
 
 ---
 
@@ -74,7 +79,28 @@ gutenberg_kg/
 
 ## Quick Start
 
-No dependencies beyond Python 3.10+ standard library for downloading.
+### Install the CLI
+
+```bash
+git clone https://github.com/Flux-Frontiers/gutenberg_kg
+cd gutenberg_kg
+poetry install
+gutenkg --help
+```
+
+### After cloning — rebuild LanceDB indices
+
+LanceDB vector indices are not committed to git (too large). Rebuild from the committed `graph.sqlite` files:
+
+```bash
+gutenkg rebuild-lancedb
+```
+
+> See [CHEATSHEET.md](CHEATSHEET.md) for the full command reference.
+
+---
+
+No dependencies beyond Python 3.12+ standard library for downloading.
 
 ### Search for books
 
@@ -327,6 +353,25 @@ kgrag corpus query gutenberg-philosophy "free will and determinism"
 | Title | Author | Gutenberg ID |
 |---|---|---|
 | Don Quixote | Miguel de Cervantes | 996 |
+
+### Science Fiction (14)
+
+| Title | Author | Gutenberg ID |
+|---|---|---|
+| Frankenstein | Mary Shelley | 84 |
+| The Invisible Man | H.G. Wells | 5230 |
+| The Island of Doctor Moreau | H.G. Wells | 1658 |
+| The First Men in the Moon | H.G. Wells | 18857 |
+| A Princess of Mars | Edgar Rice Burroughs | 10662 |
+| The Gods of Mars | Edgar Rice Burroughs | 364 |
+| At the Earth's Core | Edgar Rice Burroughs | 62 |
+| Flatland | Edwin Abbott | 11 |
+| The Lost World | Arthur Conan Doyle | 29808 |
+| The Call of Cthulhu | H.P. Lovecraft | 68283 |
+| At the Mountains of Madness | H.P. Lovecraft | 31469 |
+| The Shadow over Innsmouth | H.P. Lovecraft | 70652 |
+| Herbert West: Reanimator | H.P. Lovecraft | 665 |
+| The Dunwich Horror | H.P. Lovecraft | 50133 |
 
 ---
 
