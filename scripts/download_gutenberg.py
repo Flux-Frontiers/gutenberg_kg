@@ -5,6 +5,7 @@ Commands:
     download  - Download a book by Gutenberg ID
     search    - Search Gutenberg catalog by author, title, or keyword
     catalog   - Download multiple books from a catalog file
+    survey    - Scan repo and show download/ingest status by genre
 
 Usage:
     # Search for books by an author
@@ -25,10 +26,28 @@ Usage:
     # Download multiple books from a catalog file
     python scripts/download_gutenberg.py catalog scripts/catalog.txt
 
+    # Survey what's downloaded
+    python scripts/download_gutenberg.py survey
+    python scripts/download_gutenberg.py survey --genre science-fiction
+
+    # Download into a genre subdirectory
+    python scripts/download_gutenberg.py download 1342 --genre english-literature
+
+    # Re-download even if already present
+    python scripts/download_gutenberg.py download 1342 --force
+
+    # Dry run
+    python scripts/download_gutenberg.py download 1342 --dry-run
+    python scripts/download_gutenberg.py catalog scripts/catalog.txt --dry-run
+
 Output structure (per book):
-    <Title>/
-        <slug>.md          # Structured Markdown with chapter headings
-        reference.md       # Gutenberg metadata, subjects, and source info
+    <Title>/                          # ungrouped (no --genre)
+        <slug>.md                     # Structured Markdown with chapter headings
+        reference.md                  # Gutenberg metadata, subjects, and source info
+
+    <genre>/<Title>/                  # when --genre is given
+        <slug>.md
+        reference.md
 
 The Markdown output preserves chapter/section structure with proper headings,
 making it directly compatible with DocKG's `dockg build` and DiaryKG's
@@ -55,6 +74,19 @@ GUTENBERG_SEARCH_URL = "https://www.gutenberg.org/ebooks/search.opds/"
 GUTENBERG_PAGE_URL = "https://www.gutenberg.org/ebooks/{ebook_id}"
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+# Known genre directory names (mirrors ingest.py, plus science-fiction)
+ALL_GENRES = [
+    "ancient-classical",
+    "shakespeare",
+    "english-literature",
+    "american-literature",
+    "french-literature",
+    "russian-literature",
+    "philosophy",
+    "spanish",
+    "science-fiction",
+]
 
 START_MARKER = re.compile(r"\*\*\* ?START OF THE PROJECT GUTENBERG EBOOK .+? \*\*\*")
 END_MARKER = re.compile(r"\*\*\* ?END OF THE PROJECT GUTENBERG EBOOK .+? \*\*\*")
@@ -647,19 +679,50 @@ def write_reference(book_dir: str, meta: dict) -> str:
 # Download Orchestration
 # ---------------------------------------------------------------------------
 
-def download_book(ebook_id: int, title: str | None = None) -> str:
-    """Download a book, convert to Markdown, and save with reference."""
-    # Fetch metadata
+def download_book(
+    ebook_id: int,
+    title: str | None = None,
+    genre: str | None = None,
+    force: bool = False,
+    dry_run: bool = False,
+) -> str:
+    """Download a book, convert to Markdown, and save with reference.
+
+    :param ebook_id: Project Gutenberg numeric book ID.
+    :param title: Optional title override (auto-detected from metadata if omitted).
+    :param genre: Optional genre subdirectory name (one of ALL_GENRES). When
+        provided the book is written to ``REPO_ROOT/<genre>/<Title>/``; when
+        omitted, it is written to ``REPO_ROOT/<Title>/`` as before.
+    :param force: Re-download even when the Markdown file already exists.
+    :param dry_run: Print what would be done without writing any files.
+    :returns: Absolute path to the primary Markdown file.
+    """
+    # Fetch metadata (needed for the title before we can check idempotence)
     print(f"  Fetching metadata for Gutenberg #{ebook_id}...")
     meta = fetch_metadata(ebook_id)
     title = title or meta.get("title") or f"Book_{ebook_id}"
     meta["title"] = title
 
-    book_dir = os.path.join(REPO_ROOT, title)
-    os.makedirs(book_dir, exist_ok=True)
+    # Resolve output directory
+    if genre:
+        book_dir = os.path.join(REPO_ROOT, genre, title)
+    else:
+        book_dir = os.path.join(REPO_ROOT, title)
 
     slug = slugify(title)
     out_path = os.path.join(book_dir, f"{slug}.md")
+
+    # Idempotence check
+    if not force and os.path.exists(out_path):
+        print(f"  [=] already downloaded: {title} — skipping")
+        return out_path
+
+    if dry_run:
+        dest = os.path.join(genre, title) if genre else title
+        print(f"  [dry] would download: {title} (Gutenberg #{ebook_id}) → {dest}/")
+        return out_path
+
+    os.makedirs(book_dir, exist_ok=True)
 
     # Download plain text
     print(f"  Downloading: {title} (Gutenberg #{ebook_id})")
@@ -702,6 +765,77 @@ def parse_catalog(catalog_path: str) -> list[tuple[int, str | None]]:
             title = parts[1].strip() if len(parts) >= 2 else None
             entries.append((ebook_id, title))
     return entries
+
+
+# ---------------------------------------------------------------------------
+# Survey helpers
+# ---------------------------------------------------------------------------
+
+def _survey_book_dir(book_dir: str, title: str) -> dict:
+    """Return a status dict for a single book directory."""
+    slug = slugify(title)
+    has_md = os.path.exists(os.path.join(book_dir, f"{slug}.md"))
+    has_ref = os.path.exists(os.path.join(book_dir, "reference.md"))
+    has_kg = os.path.exists(os.path.join(book_dir, ".dockg", "graph.sqlite"))
+    return {"title": title, "md": has_md, "ref": has_ref, "kg": has_kg}
+
+
+def _check_mark(value: bool) -> str:
+    return "✓" if value else "✗"
+
+
+def survey_repo(genre_filter: str | None = None) -> None:
+    """Print a survey table of downloaded books organized by genre.
+
+    :param genre_filter: When provided, only the matching genre is shown.
+    """
+    genres_to_show = [genre_filter] if genre_filter else ALL_GENRES
+    genre_set = set(ALL_GENRES)
+
+    for genre in genres_to_show:
+        genre_dir = os.path.join(REPO_ROOT, genre)
+        books = []
+        if os.path.isdir(genre_dir):
+            for entry in sorted(os.scandir(genre_dir), key=lambda e: e.name):
+                if entry.is_dir() and not entry.name.startswith("."):
+                    books.append(_survey_book_dir(entry.path, entry.name))
+
+        count = len(books)
+        print(f"\n=== {genre} ({count} book{'s' if count != 1 else ''}) ===")
+        if not books:
+            print("  (none)")
+        else:
+            for b in books:
+                title_col = b["title"][:50].ljust(50)
+                print(
+                    f"  {title_col}"
+                    f"  md={_check_mark(b['md'])}"
+                    f"  ref={_check_mark(b['ref'])}"
+                    f"  kg={_check_mark(b['kg'])}"
+                )
+
+    # Ungrouped books (top-level dirs that aren't genre dirs and don't start with '.')
+    if not genre_filter:
+        ungrouped = []
+        for entry in sorted(os.scandir(REPO_ROOT), key=lambda e: e.name):
+            if (
+                entry.is_dir()
+                and not entry.name.startswith(".")
+                and entry.name not in genre_set
+            ):
+                ungrouped.append(_survey_book_dir(entry.path, entry.name))
+
+        if ungrouped:
+            count = len(ungrouped)
+            print(f"\n=== (ungrouped) ({count} book{'s' if count != 1 else ''}) ===")
+            for b in ungrouped:
+                title_col = b["title"][:50].ljust(50)
+                print(
+                    f"  {title_col}"
+                    f"  md={_check_mark(b['md'])}"
+                    f"  ref={_check_mark(b['ref'])}"
+                    f"  kg={_check_mark(b['kg'])}"
+                )
 
 
 # ---------------------------------------------------------------------------
@@ -753,10 +887,29 @@ def cmd_search(args):
 
 def cmd_download(args):
     """Handle the 'download' subcommand."""
-    print(f"Downloading Gutenberg #{args.ebook_id}...")
+    genre = getattr(args, "genre", None)
+    force = getattr(args, "force", False)
+    dry_run = getattr(args, "dry_run", False)
+
+    if genre and genre not in ALL_GENRES:
+        print(f"ERROR: unknown genre {genre!r}. Known genres: {', '.join(ALL_GENRES)}", file=sys.stderr)
+        sys.exit(1)
+
+    if dry_run:
+        print(f"[dry] Would download Gutenberg #{args.ebook_id}...")
+    else:
+        print(f"Downloading Gutenberg #{args.ebook_id}...")
+
     try:
-        path = download_book(args.ebook_id, title=args.title)
-        print(f"\nDone. Book saved to: {path}")
+        path = download_book(
+            args.ebook_id,
+            title=args.title,
+            genre=genre,
+            force=force,
+            dry_run=dry_run,
+        )
+        if not dry_run:
+            print(f"\nDone. Book saved to: {path}")
     except Exception as exc:
         print(f"ERROR: {exc}", file=sys.stderr)
         sys.exit(1)
@@ -764,23 +917,53 @@ def cmd_download(args):
 
 def cmd_catalog(args):
     """Handle the 'catalog' subcommand."""
+    genre = getattr(args, "genre", None)
+    force = getattr(args, "force", False)
+    dry_run = getattr(args, "dry_run", False)
+
+    if genre and genre not in ALL_GENRES:
+        print(f"ERROR: unknown genre {genre!r}. Known genres: {', '.join(ALL_GENRES)}", file=sys.stderr)
+        sys.exit(1)
+
     entries = parse_catalog(args.catalog_file)
     if not entries:
         print("No valid entries found in catalog file.")
         sys.exit(1)
 
-    print(f"Catalog loaded: {len(entries)} book(s)\n")
+    if dry_run:
+        print(f"[dry] Catalog loaded: {len(entries)} book(s)\n")
+    else:
+        print(f"Catalog loaded: {len(entries)} book(s)\n")
+
     downloaded = []
 
     for ebook_id, title in entries:
         try:
-            path = download_book(ebook_id, title=title)
+            path = download_book(
+                ebook_id,
+                title=title,
+                genre=genre,
+                force=force,
+                dry_run=dry_run,
+            )
             downloaded.append(path)
         except Exception as exc:
             print(f"  ERROR downloading #{ebook_id}: {exc}", file=sys.stderr)
         print()
 
-    print(f"Done. {len(downloaded)}/{len(entries)} book(s) downloaded.")
+    if dry_run:
+        print(f"[dry] {len(downloaded)}/{len(entries)} book(s) would be downloaded.")
+    else:
+        print(f"Done. {len(downloaded)}/{len(entries)} book(s) downloaded.")
+
+
+def cmd_survey(args):
+    """Handle the 'survey' subcommand."""
+    genre_filter = getattr(args, "genre", None)
+    if genre_filter and genre_filter not in ALL_GENRES:
+        print(f"ERROR: unknown genre {genre_filter!r}. Known genres: {', '.join(ALL_GENRES)}", file=sys.stderr)
+        sys.exit(1)
+    survey_repo(genre_filter=genre_filter)
 
 
 def main():
@@ -804,12 +987,59 @@ def main():
     sp_download = subparsers.add_parser("download", help="Download a book by Gutenberg ID")
     sp_download.add_argument("ebook_id", type=int, help="Project Gutenberg ebook ID")
     sp_download.add_argument("--title", help="Override book title (auto-detected if omitted)")
+    sp_download.add_argument(
+        "--genre",
+        choices=ALL_GENRES,
+        metavar="GENRE",
+        help=f"Place book in genre subdirectory. One of: {', '.join(ALL_GENRES)}",
+    )
+    sp_download.add_argument(
+        "--force",
+        action="store_true",
+        help="Re-download even if the book is already present",
+    )
+    sp_download.add_argument(
+        "--dry-run",
+        action="store_true",
+        dest="dry_run",
+        help="Print what would be downloaded without fetching anything",
+    )
     sp_download.set_defaults(func=cmd_download)
 
     # --- catalog ---
     sp_catalog = subparsers.add_parser("catalog", help="Download books from a catalog file")
     sp_catalog.add_argument("catalog_file", help="Path to catalog file (tab-separated: ID\\tTitle)")
+    sp_catalog.add_argument(
+        "--genre",
+        choices=ALL_GENRES,
+        metavar="GENRE",
+        help=f"Place all books in genre subdirectory. One of: {', '.join(ALL_GENRES)}",
+    )
+    sp_catalog.add_argument(
+        "--force",
+        action="store_true",
+        help="Re-download even if books are already present",
+    )
+    sp_catalog.add_argument(
+        "--dry-run",
+        action="store_true",
+        dest="dry_run",
+        help="Print what would be downloaded without fetching anything",
+    )
     sp_catalog.set_defaults(func=cmd_catalog)
+
+    # --- survey ---
+    sp_survey = subparsers.add_parser(
+        "survey",
+        help="Show download and ingest status for all books, organized by genre",
+    )
+    sp_survey.add_argument(
+        "--genre",
+        choices=ALL_GENRES,
+        metavar="GENRE",
+        help=f"Limit survey to a specific genre. One of: {', '.join(ALL_GENRES)}",
+    )
+    sp_survey.set_defaults(func=cmd_survey)
 
     args = parser.parse_args()
     if not args.command:

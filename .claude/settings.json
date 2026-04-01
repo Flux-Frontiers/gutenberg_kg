@@ -1,7 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "Bash(git rm:*)"
+      "Bash(git rm:*)",
+      "Bash(chmod +x /Users/egs/repos/gutenberg_kg/scripts/rebuild_lancedb.sh)"
     ]
   }
 }
