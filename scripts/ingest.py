@@ -55,6 +55,7 @@ ALL_GENRES = [
     "russian-literature",
     "philosophy",
     "spanish",
+    "science-fiction",
 ]
 
 TOP_CORPUS = "gutenberg-all"
@@ -445,6 +446,99 @@ def print_summary(
     print()
 
 
+def save_summary(
+    genre_summaries: list[GenreSummary],
+    opts: IngestOptions,
+    registry_path: Path,
+    wall_start: datetime,
+    wall_elapsed: float,
+) -> Path:
+    """Write a Markdown ingest report to reports/ and return its path."""
+    reports_dir = REPO_ROOT / "reports"
+    reports_dir.mkdir(exist_ok=True)
+
+    ts = wall_start.strftime("%Y-%m-%d_%H%M%S")
+    report_path = reports_dir / f"ingest_{ts}.md"
+
+    total_built   = sum(g.built   for g in genre_summaries)
+    total_skipped = sum(g.skipped for g in genre_summaries)
+    total_failed  = sum(g.failed  for g in genre_summaries)
+    total_books   = sum(g.total   for g in genre_summaries)
+    total_nodes   = sum(g.nodes   for g in genre_summaries)
+    total_edges   = sum(g.edges   for g in genre_summaries)
+
+    if opts.dry_run:
+        status = "DRY RUN — no changes made"
+    elif total_failed == 0:
+        status = "SUCCESS — all books ingested"
+    else:
+        status = f"PARTIAL — {total_failed} book(s) failed"
+
+    flags = " ".join(f for f in [
+        "--force-build"    if opts.force_build    else "",
+        "--force-register" if opts.force_register else "",
+        "--push"           if opts.push           else "",
+        "--dry-run"        if opts.dry_run         else "",
+    ] if f) or "(none)"
+
+    lines = [
+        "# Gutenberg KG Ingest Report",
+        "",
+        f"**Date:** {wall_start.strftime('%Y-%m-%d %H:%M:%S UTC')}  ",
+        f"**Elapsed:** {fmt_duration(wall_elapsed)}  ",
+        f"**Host:** {socket.gethostname()} / {platform.system()} {platform.release()} / {platform.machine()}  ",
+        f"**Python:** {sys.version.split()[0]}  ",
+        f"**Registry:** `{registry_path}`  ",
+        f"**Flags:** `{flags}`  ",
+        f"**Status:** {status}",
+        "",
+        "## Totals",
+        "",
+        "| Metric | Value |",
+        "|--------|-------|",
+        f"| Genres processed | {len(genre_summaries)} |",
+        f"| Books total | {total_books} |",
+        f"| Built / rebuilt | {total_built} |",
+        f"| Skipped (up-to-date) | {total_skipped} |",
+        f"| Failed | {total_failed} |",
+        f"| Total nodes | {total_nodes:,} |",
+        f"| Total edges | {total_edges:,} |",
+        "",
+        "## Per-Genre Breakdown",
+        "",
+        "| Genre | Books | Built | Skipped | Failed | Nodes | Edges | Time |",
+        "|-------|------:|------:|--------:|-------:|------:|------:|------|",
+    ]
+
+    for g in genre_summaries:
+        lines.append(
+            f"| {g.genre} | {g.total} | {g.built} | {g.skipped} | {g.failed} "
+            f"| {g.nodes:,} | {g.edges:,} | {fmt_duration(g.elapsed)} |"
+        )
+
+    # Per-genre book detail
+    lines += ["", "## Book Detail", ""]
+    for g in genre_summaries:
+        lines += [f"### {g.genre}", "", "| Book | Status | Nodes | Edges | Time |",
+                  "|------|--------|------:|------:|------|"]
+        for r in g.results:
+            icon = "✓" if r.status == "built" else ("=" if r.status == "skipped" else "✗")
+            lines.append(
+                f"| {r.name} | {icon} {r.status} | {r.nodes:,} | {r.edges:,} | {fmt_duration(r.elapsed)} |"
+            )
+        lines.append("")
+
+    all_failed = [r for g in genre_summaries for r in g.results if r.status == "failed"]
+    if all_failed:
+        lines += ["## Failed Books", ""]
+        for r in all_failed:
+            lines.append(f"- `{r.genre}/{r.name}`")
+        lines += ["", "_Re-run with `--force-build` to retry._", ""]
+
+    report_path.write_text("\n".join(lines), encoding="utf-8")
+    return report_path
+
+
 # ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
@@ -585,6 +679,9 @@ def main() -> int:
 
     wall_elapsed = time.perf_counter() - wall_t0
     print_summary(genre_summaries, opts, registry_path, wall_start, wall_elapsed)
+
+    report_path = save_summary(genre_summaries, opts, registry_path, wall_start, wall_elapsed)
+    print(f"  Report saved: {report_path}\n")
 
     return 1 if any(g.failed for g in genre_summaries) else 0
 

@@ -1,0 +1,57 @@
+# GutenbergKG — CLI for Project Gutenberg knowledge graphs
+#
+# Provides the `gutenkg` command for downloading, ingesting, and querying
+# the Project Gutenberg corpus via DocKG and KGRAG.
+#
+# Author: Eric G. Suchanek, PhD
+#
+
+[build-system]
+requires = ["poetry-core>=2.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "gutenberg-kg"
+version = "0.1.0"
+description = "CLI for downloading, ingesting, and querying Project Gutenberg knowledge graphs"
+authors = ["Eric G. Suchanek, PhD <suchanek@mac.com>"]
+license = "Elastic-2.0"
+readme = "README.md"
+homepage = "https://github.com/Flux-Frontiers/gutenberg_kg"
+repository = "https://github.com/Flux-Frontiers/gutenberg_kg"
+keywords = ["knowledge-graph", "gutenberg", "dockg", "kgrag", "nlp"]
+packages = [{ include = "gutenberg_kg", from = "src" }]
+
+[tool.poetry.dependencies]
+python = ">=3.12,<3.14"
+click = ">=8.1.0"
+kg-rag = { git = "https://github.com/Flux-Frontiers/KGRAG.git" }
+doc-kg = { git = "https://github.com/Flux-Frontiers/doc_kg.git" }
+
+[tool.poetry.group.dev.dependencies]
+pytest = ">=8.0.0"
+ruff = ">=0.4.0"
+mypy = ">=1.10.0"
+
+[tool.poetry.scripts]
+gutenkg = "gutenberg_kg.cli.main:cli"
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP"]
+ignore = ["E501"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = false
+ignore_missing_imports = true
+
+[tool.dockg]
+exclude = [
+    ".dockg", ".codekg", ".git", ".venv", "venv",
+    "__pycache__", ".mypy_cache", ".pytest_cache", "dist", "reports",
+    "src",
+]

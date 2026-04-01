@@ -2,10 +2,11 @@
 """Download books from Project Gutenberg as structured Markdown.
 
 Commands:
-    download  - Download a book by Gutenberg ID
-    search    - Search Gutenberg catalog by author, title, or keyword
-    catalog   - Download multiple books from a catalog file
-    survey    - Scan repo and show download/ingest status by genre
+    download     - Download a book by Gutenberg ID
+    search       - Search Gutenberg catalog by author, title, or keyword
+    catalog      - Download multiple books from a catalog file
+    fetch-genre  - Search, select, and download a full genre in one step
+    survey       - Scan repo and show download/ingest status by genre
 
 Usage:
     # Search for books by an author
@@ -39,6 +40,12 @@ Usage:
     # Dry run
     python scripts/download_gutenberg.py download 1342 --dry-run
     python scripts/download_gutenberg.py catalog scripts/catalog.txt --dry-run
+
+    # Fetch an entire genre interactively (search → confirm → download → report)
+    python scripts/download_gutenberg.py fetch-genre science-fiction
+    python scripts/download_gutenberg.py fetch-genre science-fiction --query "dystopia"
+    python scripts/download_gutenberg.py fetch-genre science-fiction --yes   # no prompts
+    python scripts/download_gutenberg.py fetch-genre science-fiction --dry-run
 
 Output structure (per book):
     <Title>/                          # ungrouped (no --genre)
@@ -957,6 +964,141 @@ def cmd_catalog(args):
         print(f"Done. {len(downloaded)}/{len(entries)} book(s) downloaded.")
 
 
+def cmd_fetch_genre(args):
+    """Handle the 'fetch-genre' subcommand.
+
+    Searches Gutenberg for books matching the genre keyword, filters out books
+    already downloaded, lets the user confirm each one (or takes all with
+    --yes), downloads them into the genre directory, and writes a Markdown
+    report to reports/fetch_genre_<genre>_<timestamp>.md.
+    """
+    import datetime
+
+    genre = args.genre
+    query = args.query or genre.replace("-", " ")
+    max_results = args.max_results
+    dry_run = args.dry_run
+    yes = args.yes
+    force = args.force
+
+    genre_dir = os.path.join(REPO_ROOT, genre)
+    already_present = set()
+    if os.path.isdir(genre_dir):
+        already_present = {
+            e.name for e in os.scandir(genre_dir)
+            if e.is_dir() and not e.name.startswith(".")
+        }
+
+    print(f"Searching Gutenberg for: {query!r} (max {max_results} results)\n")
+    results = search_gutenberg(query, max_results=max_results)
+    if not results:
+        print("No results found.")
+        return
+
+    # Display results with already-present marker
+    print(f"{'':>2}{'ID':>6}  {'Title':<50} {'Author':<30} {'Status'}")
+    print("-" * 100)
+    for r in results:
+        title = r["title"][:48]
+        author = (r["author"] or "—")[:28]
+        status = "[already downloaded]" if r["title"] in already_present else ""
+        print(f"  {r['ebook_id']:>6}  {title:<50} {author:<30} {status}")
+    print()
+
+    # Determine which to download
+    to_download = []
+    for r in results:
+        if r["title"] in already_present and not force:
+            continue
+        if yes or dry_run:
+            to_download.append(r)
+        else:
+            try:
+                ans = input(f"  Download {r['title']!r} (#{r['ebook_id']})? [Y/n/q] ").strip().lower()
+            except (EOFError, KeyboardInterrupt):
+                print("\n  Aborted.")
+                break
+            if ans == "q":
+                print("  Aborted.")
+                break
+            if ans in ("", "y"):
+                to_download.append(r)
+
+    if not to_download:
+        print("Nothing to download.")
+        return
+
+    print(f"\n{'[dry] ' if dry_run else ''}Downloading {len(to_download)} book(s) into {genre}/\n")
+
+    report_rows = []
+    downloaded = 0
+    failed = 0
+
+    for r in to_download:
+        ebook_id = r["ebook_id"]
+        title = r["title"]
+        try:
+            path = download_book(ebook_id, genre=genre, force=force, dry_run=dry_run)
+            status = "dry-run" if dry_run else "downloaded"
+            downloaded += 1
+        except Exception as exc:
+            print(f"  ERROR #{ebook_id}: {exc}", file=sys.stderr)
+            path = ""
+            status = f"failed: {exc}"
+            failed += 1
+        report_rows.append({
+            "id": ebook_id,
+            "title": title,
+            "author": r.get("author", ""),
+            "status": status,
+            "path": path,
+        })
+        print()
+
+    # Write report
+    reports_dir = os.path.join(REPO_ROOT, "reports")
+    os.makedirs(reports_dir, exist_ok=True)
+    ts = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d_%H%M%S")
+    report_path = os.path.join(reports_dir, f"fetch_genre_{genre}_{ts}.md")
+
+    lines = [
+        f"# Fetch-Genre Report: {genre}",
+        "",
+        f"**Date:** {datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%d %H:%M:%S UTC')}  ",
+        f"**Query:** `{query}`  ",
+        f"**Genre:** `{genre}`  ",
+        f"**Dry run:** {'yes' if dry_run else 'no'}  ",
+        f"**Downloaded:** {downloaded}  ",
+        f"**Failed:** {failed}  ",
+        "",
+        "## Results",
+        "",
+        "| ID | Title | Author | Status |",
+        "|----|-------|--------|--------|",
+    ]
+    for row in report_rows:
+        lines.append(f"| {row['id']} | {row['title']} | {row['author']} | {row['status']} |")
+
+    lines += [
+        "",
+        "## Already Present (skipped)",
+        "",
+    ]
+    skipped = [t for t in already_present]
+    if skipped:
+        for t in sorted(skipped):
+            lines.append(f"- {t}")
+    else:
+        lines.append("_(none)_")
+    lines.append("")
+
+    with open(report_path, "w", encoding="utf-8") as f:
+        f.write("\n".join(lines))
+
+    print(f"{'[dry] ' if dry_run else ''}Done. {downloaded} downloaded, {failed} failed.")
+    print(f"Report saved: {report_path}")
+
+
 def cmd_survey(args):
     """Handle the 'survey' subcommand."""
     genre_filter = getattr(args, "genre", None)
@@ -1027,6 +1169,46 @@ def main():
         help="Print what would be downloaded without fetching anything",
     )
     sp_catalog.set_defaults(func=cmd_catalog)
+
+    # --- fetch-genre ---
+    sp_fetch = subparsers.add_parser(
+        "fetch-genre",
+        help="Search, select, and download books into a genre directory in one step",
+    )
+    sp_fetch.add_argument(
+        "genre",
+        choices=ALL_GENRES,
+        metavar="GENRE",
+        help=f"Target genre directory. One of: {', '.join(ALL_GENRES)}",
+    )
+    sp_fetch.add_argument(
+        "--query",
+        default=None,
+        help="Search query (default: genre name)",
+    )
+    sp_fetch.add_argument(
+        "--max-results", "-n",
+        type=int,
+        default=25,
+        help="Max search results to show (default: 25)",
+    )
+    sp_fetch.add_argument(
+        "--yes", "-y",
+        action="store_true",
+        help="Download all results without prompting",
+    )
+    sp_fetch.add_argument(
+        "--force",
+        action="store_true",
+        help="Re-download books already present",
+    )
+    sp_fetch.add_argument(
+        "--dry-run",
+        action="store_true",
+        dest="dry_run",
+        help="Show what would be downloaded without fetching",
+    )
+    sp_fetch.set_defaults(func=cmd_fetch_genre)
 
     # --- survey ---
     sp_survey = subparsers.add_parser(

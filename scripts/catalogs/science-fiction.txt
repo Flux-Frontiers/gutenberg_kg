@@ -1,0 +1,28 @@
+# Science Fiction — curated Gutenberg catalog
+# Format: <gutenberg_id>[TAB<title>]
+# Download: python scripts/download_gutenberg.py catalog scripts/catalogs/science-fiction.txt --genre science-fiction
+#
+# Note: The Time Machine (35), War of the Worlds (36), Jekyll & Hyde (43) are
+# already in english-literature — excluded here to avoid duplication.
+#
+# Note: Asimov and Bradbury are still in copyright — not on Gutenberg.
+
+# --- Classics ---
+84	Frankenstein
+5230	The Invisible Man
+1658	The Island of Doctor Moreau
+18857	The First Men in the Moon
+10662	A Princess of Mars
+11	Flatland
+29808	The Lost World
+
+# --- H.P. Lovecraft ---
+68283	The Call of Cthulhu
+31469	At the Mountains of Madness
+70652	The Shadow over Innsmouth
+665	Herbert West: Reanimator
+50133	The Dunwich Horror
+
+# --- Edgar Rice Burroughs ---
+62	At the Earth's Core
+364	The Gods of Mars
