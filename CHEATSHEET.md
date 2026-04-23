@@ -157,6 +157,30 @@ Reports are auto-saved to `reports/ingest_YYYY-MM-DD_HHMMSS.md` after every run.
 
 ---
 
+## Author Index
+
+Every `reference.md` carries author provenance (Born / Died / Wikipedia /
+Gutenberg agent ID). `corpus/authors/` aggregates those per-book facts into
+one page per author.
+
+```bash
+# Rebuild corpus/authors/ from existing reference.md files
+python scripts/build_author_index.py
+
+# Also re-fetch RDF and patch reference.md files missing provenance
+python scripts/build_author_index.py --refresh
+
+# Preview
+python scripts/build_author_index.py --dry-run
+python scripts/build_author_index.py --refresh --dry-run
+```
+
+New downloads already land with full provenance in `reference.md` — use
+`--refresh` only for books that predate the RDF fetch or had a transient
+network failure.
+
+---
+
 ## After Cloning (Rebuild LanceDB)
 
 LanceDB vector indices are not committed to git. After cloning, rebuild them:
@@ -179,12 +203,14 @@ Pushes are handled automatically by `gutenkg ingest --push` (one commit per genr
 For manual pushes:
 
 ```bash
-git add science-fiction/
-git commit -m "chore(dockg): add science-fiction DocKG indices"
+git add corpus/science-fiction/
+git commit -m "chore: add science-fiction books"
 git push
 ```
 
-Only `graph.sqlite` is committed (via LFS for large files). LanceDB dirs are gitignored.
+Only source Markdown and `reference.md` files are tracked. Knowledge-graph
+artifacts (`.dockg/graph.sqlite` and `.dockg/lancedb/`) are gitignored — they
+are regenerable from the source text via `gutenkg ingest --force-build`.
 
 ---
 
@@ -201,6 +227,9 @@ gutenkg download survey --genre science-fiction
 
 # 3. Build DocKGs and push
 gutenkg ingest --genre science-fiction --push
+
+# 4. Refresh the author index so the new authors appear
+python scripts/build_author_index.py
 ```
 
 ### Rebuild a broken genre
@@ -227,29 +256,34 @@ gutenkg download survey
 
 ```
 gutenberg_kg/
-├── <genre>/
-│   └── <Book Title>/
-│       ├── <slug>.md                       # Full text (Markdown)
-│       ├── reference.md                    # Gutenberg metadata
-│       └── .dockg/
-│           ├── graph.sqlite                # DocKG graph (committed via LFS)
-│           └── lancedb/                    # Vector index (local only, gitignored)
+├── corpus/
+│   ├── <genre>/                            # ancient-classical, shakespeare, …
+│   │   └── <Book Title>/
+│   │       ├── <slug>.md                   # Full text (Markdown)
+│   │       ├── reference.md                # Author provenance + Gutenberg metadata
+│   │       └── .dockg/                     # Built by ingest (gitignored)
+│   │           ├── graph.sqlite            # DocKG graph
+│   │           └── lancedb/                # Vector index
+│   └── authors/                            # Built by build_author_index.py
+│       ├── index.md                        # Master alphabetical author table
+│       └── <author_slug>/author.md         # Born, died, Wikipedia, works
 ├── src/gutenberg_kg/
 │   └── cli/
 │       ├── main.py                         # gutenkg CLI entry point
-│       ├── options.py                      # Shared Click options
+│       ├── options.py                      # REPO_ROOT, CORPUS_ROOT, ALL_GENRES
 │       ├── cmd_download.py                 # gutenkg download *
 │       ├── cmd_ingest.py                   # gutenkg ingest
 │       └── cmd_rebuild.py                  # gutenkg rebuild-lancedb
 ├── scripts/
 │   ├── ingest.py                           # Ingest engine (called by CLI)
-│   ├── download_gutenberg.py              # Download engine (called by CLI)
+│   ├── download_gutenberg.py               # Download engine (called by CLI)
+│   ├── build_author_index.py               # Author-corpus post-processor
 │   ├── rebuild_lancedb.sh                  # Shell fallback for LanceDB rebuild
-│   └── catalogs/
-│       └── science-fiction.txt             # Curated book catalog
+│   └── catalogs/                           # Per-genre batch download catalogs
+│       └── science-fiction.txt
 ├── reports/
-│   └── ingest_YYYY-MM-DD_HHMMSS.md        # Auto-saved ingest reports
+│   └── ingest_YYYY-MM-DD_HHMMSS.md         # Auto-saved ingest reports
+├── DOWNLOAD_PIPELINE.md                    # End-to-end download-pipeline reference
 ├── pyproject.toml                          # Poetry package (gutenkg entry point)
-├── .gitignore                              # Excludes lancedb/, __pycache__, etc.
-└── .gitattributes                          # LFS tracking for graph.sqlite
+└── .gitignore                              # Excludes .dockg/, __pycache__, etc.
 ```
