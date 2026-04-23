@@ -37,3 +37,4 @@ dist/
 
 # LanceDB — entire vector index is local-only; rebuild with `dockg build` after clone
 **/.dockg/lancedb/
+**/.dockg/lancedb-bench*/
