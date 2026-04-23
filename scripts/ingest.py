@@ -45,6 +45,7 @@ from kg_rag.registry import KGRegistry, default_registry_path
 # ---------------------------------------------------------------------------
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
+CORPUS_ROOT = REPO_ROOT / "corpus"
 
 ALL_GENRES = [
     "ancient-classical",
@@ -646,7 +647,7 @@ def main() -> int:
 
         # Process books
         for genre in genres:
-            genre_dir = REPO_ROOT / genre
+            genre_dir = CORPUS_ROOT / genre
             if not genre_dir.is_dir():
                 print(f"[!] Genre directory not found: {genre_dir} — skipping\n")
                 continue

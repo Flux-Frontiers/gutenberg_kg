@@ -849,7 +849,7 @@ referencing = ">=0.31.0"
 
 [[package]]
 name = "kg-rag"
-version = "0.4.1"
+version = "0.5.1"
 description = "Orchestration layer for the KGRAG(tm) components."
 optional = false
 python-versions = ">=3.12,<3.14"
@@ -883,7 +883,7 @@ viz3d = ["PyQt5 (>=5.15.0)", "markdown (>=3.6)", "param (>=2.0.0)", "pyvista[jup
 type = "git"
 url = "https://github.com/Flux-Frontiers/KGRAG.git"
 reference = "HEAD"
-resolved_reference = "2080aa01331298d824e4516b14a5233c21149e35"
+resolved_reference = "f4d610cc8faf2aa9cc01efa744e30851e99128fc"
 
 [[package]]
 name = "kg-snapshot"
