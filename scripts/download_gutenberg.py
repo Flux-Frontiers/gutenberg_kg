@@ -81,6 +81,7 @@ GUTENBERG_SEARCH_URL = "https://www.gutenberg.org/ebooks/search.opds/"
 GUTENBERG_PAGE_URL = "https://www.gutenberg.org/ebooks/{ebook_id}"
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+CORPUS_ROOT = os.path.join(REPO_ROOT, "corpus")
 
 # Known genre directory names (mirrors ingest.py, plus science-fiction)
 ALL_GENRES = [
@@ -712,9 +713,9 @@ def download_book(
 
     # Resolve output directory
     if genre:
-        book_dir = os.path.join(REPO_ROOT, genre, title)
+        book_dir = os.path.join(CORPUS_ROOT, genre, title)
     else:
-        book_dir = os.path.join(REPO_ROOT, title)
+        book_dir = os.path.join(CORPUS_ROOT, title)
 
     slug = slugify(title)
     out_path = os.path.join(book_dir, f"{slug}.md")
@@ -800,7 +801,7 @@ def survey_repo(genre_filter: str | None = None) -> None:
     genre_set = set(ALL_GENRES)
 
     for genre in genres_to_show:
-        genre_dir = os.path.join(REPO_ROOT, genre)
+        genre_dir = os.path.join(CORPUS_ROOT, genre)
         books = []
         if os.path.isdir(genre_dir):
             for entry in sorted(os.scandir(genre_dir), key=lambda e: e.name):
@@ -821,10 +822,10 @@ def survey_repo(genre_filter: str | None = None) -> None:
                     f"  kg={_check_mark(b['kg'])}"
                 )
 
-    # Ungrouped books (top-level dirs that aren't genre dirs and don't start with '.')
+    # Ungrouped books (corpus-level dirs that aren't genre dirs and don't start with '.')
     if not genre_filter:
         ungrouped = []
-        for entry in sorted(os.scandir(REPO_ROOT), key=lambda e: e.name):
+        for entry in sorted(os.scandir(CORPUS_ROOT), key=lambda e: e.name):
             if (
                 entry.is_dir()
                 and not entry.name.startswith(".")

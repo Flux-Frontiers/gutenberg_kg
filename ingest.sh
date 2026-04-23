@@ -38,6 +38,7 @@ GENRES=(
     russian-literature
     philosophy
     spanish
+    science-fiction
 )
 
 echo "=== GutenbergKG Ingest (per-book) ==="

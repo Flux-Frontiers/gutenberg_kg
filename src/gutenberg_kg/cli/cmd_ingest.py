@@ -7,7 +7,7 @@ from pathlib import Path
 import click
 
 from gutenberg_kg.cli.main import cli
-from gutenberg_kg.cli.options import ALL_GENRES, REPO_ROOT
+from gutenberg_kg.cli.options import ALL_GENRES, CORPUS_ROOT
 
 # ---------------------------------------------------------------------------
 # Lazy script import helper
@@ -123,7 +123,7 @@ def ingest(genre, force_build, force_register, push, dry_run, registry):
         click.echo("")
 
         for g in genres:
-            genre_dir = REPO_ROOT / g
+            genre_dir = CORPUS_ROOT / g
             if not genre_dir.is_dir():
                 click.echo(f"[!] Genre directory not found: {genre_dir} — skipping\n")
                 continue
