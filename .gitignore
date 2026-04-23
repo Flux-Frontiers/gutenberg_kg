@@ -26,11 +26,12 @@ dist/
 # Jupyter
 .ipynb_checkpoints/
 
-# Repo-root KG databases only (book-level .dockg/ etc. are tracked as built artifacts)
+# KG databases — all regenerable build artifacts, not tracked in git
 /.dockg/
 /.codekg/
 /.ftreekg/
 /.agentkg/
+**/.dockg/graph.sqlite
 
 # SQLite transient files (WAL/SHM are runtime-only, can exceed GitHub's 100MB limit)
 *.sqlite-wal
