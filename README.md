@@ -57,23 +57,32 @@ The result: 78 of history's most important works, instantly searchable as a unif
 
 ```
 gutenberg_kg/
-├── english-literature/          # 22 English novels, novellas & stories
-│   ├── <Book Title>/
-│   │   ├── <slug>.md            # Full text with Markdown heading hierarchy
-│   │   └── reference.md         # Author, subjects, summary, Gutenberg ID
-│   └── ...
-├── philosophy/                  # 8 philosophical works
-├── ancient-classical/           # 8 works from antiquity
-├── american-literature/         # 9 American classics
-├── russian-literature/          # 6 Russian masterworks
-├── french-literature/           # 6 French classics
-├── shakespeare/                 # 4 Shakespeare plays
-├── spanish/                     # Don Quixote
+├── corpus/                              # all books + author index live here
+│   ├── english-literature/              # 22 English novels, novellas & stories
+│   │   ├── <Book Title>/
+│   │   │   ├── <slug>.md                # Full text with Markdown heading hierarchy
+│   │   │   └── reference.md             # Author provenance + Gutenberg metadata
+│   │   └── ...
+│   ├── philosophy/                      # 8 philosophical works
+│   ├── ancient-classical/               # 8 works from antiquity
+│   ├── american-literature/             # 9 American classics
+│   ├── russian-literature/              # 6 Russian masterworks
+│   ├── french-literature/               # 6 French classics
+│   ├── shakespeare/                     # 4 Shakespeare plays
+│   ├── spanish/                         # Don Quixote
+│   ├── science-fiction/                 # 14 works of early SF and weird fiction
+│   └── authors/                         # Per-author pages (built from reference.md)
+│       ├── index.md                     # Master alphabetical table
+│       └── <author_slug>/author.md      # Born, died, Wikipedia, works in corpus
 └── scripts/
-    ├── ingest.py                # DocKG build + KGRAG registration + git push
-    ├── download_gutenberg.py    # Download & convert script
-    └── catalog.txt              # Batch download catalog
+    ├── ingest.py                        # DocKG build + KGRAG registration + git push
+    ├── download_gutenberg.py            # Download & convert script
+    ├── build_author_index.py            # Rebuild corpus/authors/ from reference.md files
+    └── catalogs/                        # Per-genre batch download catalogs
 ```
+
+See [`DOWNLOAD_PIPELINE.md`](DOWNLOAD_PIPELINE.md) for the full technical
+reference on how raw Gutenberg texts become structured Markdown.
 
 ---
 
@@ -114,13 +123,15 @@ python scripts/download_gutenberg.py search "science fiction"
 ### Download a book
 
 ```bash
-python scripts/download_gutenberg.py download 1342
+gutenkg download book 1342 --genre english-literature
+# script equivalent
+python scripts/download_gutenberg.py download 1342 --genre english-literature
 ```
 
 This fetches *Pride and Prejudice* from Gutenberg, strips boilerplate, converts chapter structure to Markdown headings, and saves:
 
 ```
-Pride and Prejudice/
+corpus/english-literature/Pride and Prejudice/
 ├── pride_and_prejudice.md
 └── reference.md
 ```
@@ -128,10 +139,12 @@ Pride and Prejudice/
 ### Batch download from catalog
 
 ```bash
-python scripts/download_gutenberg.py catalog scripts/catalog.txt
+gutenkg download catalog scripts/catalogs/science-fiction.txt --genre science-fiction
+# script equivalent
+python scripts/download_gutenberg.py catalog scripts/catalogs/science-fiction.txt --genre science-fiction
 ```
 
-The catalog file is tab-separated (`<gutenberg_id>\t<optional_title_override>`). Edit `scripts/catalog.txt` to add books.
+Catalog format: one book per line, `<gutenberg_id>[TAB<optional title>[TAB<optional genre>]]`. Lines starting with `#` are comments. Per-genre catalogs live in [`scripts/catalogs/`](scripts/catalogs/).
 
 ---
 
@@ -228,14 +241,22 @@ kgrag corpus query gutenberg-philosophy "free will and determinism"
 
 ---
 
-## What the Ingestion Script Does
+## What the Download Script Does
 
-1. **Fetches metadata** from Gutenberg's OPDS feed (title, author, subjects, summary, language)
-2. **Downloads** the plain-text UTF-8 version
-3. **Strips** Project Gutenberg header/footer boilerplate
-4. **Detects structure** — chapters, books, parts, volumes, acts, scenes, letters, and section breaks from common Gutenberg formatting patterns
-5. **Converts to Markdown** with proper heading hierarchy (`#` title, `##` chapters, `###` sub-sections)
-6. **Writes** a structured `.md` file and a `reference.md` with metadata
+1. **Fetches OPDS metadata** — title, author name, subjects, summary, language, rights
+2. **Enriches with RDF provenance** — author birth year, death year, Wikipedia URL, Gutenberg agent ID (pulled from `pg<id>.rdf`)
+3. **Downloads** the plain-text UTF-8 version
+4. **Strips** Project Gutenberg header/footer boilerplate
+5. **Detects structure** — chapters, books, parts, volumes, acts, scenes, letters, and section breaks from common Gutenberg formatting patterns
+6. **Converts to Markdown** with proper heading hierarchy (`#` title, `##` chapters, `###` sub-sections)
+7. **Writes** a structured `.md` file and a `reference.md` with full author provenance and Gutenberg metadata
+
+After a batch of downloads, run `python scripts/build_author_index.py` to
+(re)generate `corpus/authors/` with per-author pages aggregated across every
+book in the corpus. Use `--refresh` to also backfill provenance for any
+`reference.md` files that predate the RDF enrichment.
+
+Full technical reference: [`DOWNLOAD_PIPELINE.md`](DOWNLOAD_PIPELINE.md).
 
 ### Supported heading patterns
 
