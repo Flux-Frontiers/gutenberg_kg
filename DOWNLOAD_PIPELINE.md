@@ -48,7 +48,7 @@ KGRAG registration) is described in [`README.md`](README.md).
                                          │
                                          ▼
      ┌─────────────────────────────────────────────────────────────────┐
-     │ build_author_index.py                                            │
+     │ gutenkg authors  (gutenberg_kg.authors.build)                    │
      │   ├─ parse every corpus/*/*/reference.md                        │
      │   ├─ [--refresh] re-fetch RDF for books missing provenance       │
      │   │             and patch their reference.md in place            │
@@ -68,12 +68,12 @@ KGRAG registration) is described in [`README.md`](README.md).
 | `gutenkg download search "<query>" [--author A] [--title T]` | Gutenberg catalog search |
 | `gutenkg download fetch-genre <G>` | Search + confirm + download, whole genre |
 | `gutenkg download survey [--genre G]` | Show what's downloaded/indexed |
-| `python scripts/build_author_index.py [--refresh]` | Rebuild author pages |
+| `gutenkg authors [--refresh] [--dry-run]` | Rebuild author pages |
 
-The `gutenkg` CLI is a thin Click wrapper around the two engine scripts:
+The `gutenkg` CLI is a thin Click wrapper around:
 
-- [`scripts/download_gutenberg.py`](scripts/download_gutenberg.py) — download engine
-- [`scripts/build_author_index.py`](scripts/build_author_index.py) — author-corpus post-processor
+- [`scripts/download_gutenberg.py`](scripts/download_gutenberg.py) — download engine (used by `gutenkg download *`)
+- [`src/gutenberg_kg/authors.py`](src/gutenberg_kg/authors.py) — author-corpus logic (used by `gutenkg authors`)
 
 ---
 
@@ -234,7 +234,7 @@ corpus/
 │       └── .dockg/                  # created later by ingest (gitignored)
 │           ├── graph.sqlite
 │           └── lancedb/
-└── authors/                         # built by build_author_index.py
+└── authors/                         # built by `gutenkg authors`
     ├── index.md                     # master alphabetical table
     ├── jane_austen/
     │   └── author.md
@@ -252,8 +252,9 @@ inside the dir is slugified.)
 
 ## 7. Author Index Build
 
-[`scripts/build_author_index.py`](scripts/build_author_index.py) is a
-standalone post-processor. It does not fetch anything on its own unless
+`gutenkg authors` (implemented in
+[`src/gutenberg_kg/authors.py`](src/gutenberg_kg/authors.py)) is a
+post-processor. It does not fetch anything on its own unless
 `--refresh` is set.
 
 Steps (in order):
@@ -262,8 +263,8 @@ Steps (in order):
 2. **Parse** — `parse_reference(path)` extracts title, ebook_id, genre,
    author, author_birth, author_death, author_url, author_agent_id by regex
 3. **Refresh** (only with `--refresh`) — for any book whose reference.md has
-   no Born/Died fields, call `_dg._fetch_rdf_author(ebook_id)` and call
-   `patch_reference()` to insert the missing lines after `**Name**:`
+   no Born/Died fields, call `download_gutenberg._fetch_rdf_author(ebook_id)`
+   and `patch_reference()` to insert the missing lines after `**Name**:`
 4. **Group** — books are grouped by the `author` string (the OPDS-reversed
    display name) via a `defaultdict(list)`
 5. **Write per-author pages** — `corpus/authors/<slug>/author.md` with
@@ -284,7 +285,7 @@ For any book whose `reference.md` predates the RDF fetch (or if a refresh has
 been skipped by network failure), run:
 
 ```bash
-python scripts/build_author_index.py --refresh
+gutenkg authors --refresh
 ```
 
 This:
@@ -322,7 +323,7 @@ gutenkg download search --author "Herman Melville"
 gutenkg download book 2701 --genre american-literature
 
 # 3. (optional) refresh the author index if you care about the author page
-python scripts/build_author_index.py
+gutenkg authors
 ```
 
 The book dir `corpus/american-literature/Moby Dick/` appears immediately with
@@ -334,8 +335,9 @@ downloads.
 ## 11. Related Files
 
 - [`scripts/download_gutenberg.py`](scripts/download_gutenberg.py) — download engine
-- [`scripts/build_author_index.py`](scripts/build_author_index.py) — author-corpus builder
+- [`src/gutenberg_kg/authors.py`](src/gutenberg_kg/authors.py) — author-corpus builder (exposed as `gutenkg authors`)
 - [`src/gutenberg_kg/cli/cmd_download.py`](src/gutenberg_kg/cli/cmd_download.py) — `gutenkg download *` Click subcommands
+- [`src/gutenberg_kg/cli/cmd_authors.py`](src/gutenberg_kg/cli/cmd_authors.py) — `gutenkg authors` Click subcommand
 - [`src/gutenberg_kg/cli/options.py`](src/gutenberg_kg/cli/options.py) — `REPO_ROOT`, `CORPUS_ROOT`, `ALL_GENRES`
 - [`scripts/catalogs/`](scripts/catalogs/) — batch download catalogs
 - [`README.md`](README.md) — corpus contents + ingest pipeline
