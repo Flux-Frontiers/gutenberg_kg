@@ -9,6 +9,10 @@
 ## Author
 
 - **Name**: Mary Wollstonecraft Shelley
+- **Born**: 1797
+- **Died**: 1851
+- **Wikipedia**: https://en.wikipedia.org/wiki/Mary_Wollstonecraft_Shelley
+- **Gutenberg Agent ID**: 61
 
 - **Gutenberg Published**: 1993-10-01
 

@@ -9,6 +9,10 @@
 ## Author
 
 - **Name**: Charlotte Brontë
+- **Born**: 1816
+- **Died**: 1855
+- **Wikipedia**: https://en.wikipedia.org/wiki/Charlotte_Brontë
+- **Gutenberg Agent ID**: 408
 
 - **Gutenberg Published**: 1998-03-01
 

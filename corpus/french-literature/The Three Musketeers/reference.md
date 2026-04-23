@@ -9,6 +9,10 @@
 ## Author
 
 - **Name**: Auguste Maquet
+- **Born**: 1802
+- **Died**: 1870
+- **Wikipedia**: https://en.wikipedia.org/wiki/Alexandre_Dumas,_père
+- **Gutenberg Agent ID**: 492
 
 - **Gutenberg Published**: 1998-03-01
 

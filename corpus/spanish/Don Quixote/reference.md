@@ -9,6 +9,10 @@
 ## Author
 
 - **Name**: Miguel de Cervantes Saavedra
+- **Born**: 1547
+- **Died**: 1616
+- **Wikipedia**: http://en.wikipedia.org/wiki/Miguel_de_Cervantes
+- **Gutenberg Agent ID**: 505
 
 - **Gutenberg Published**: 2004-07-27
 

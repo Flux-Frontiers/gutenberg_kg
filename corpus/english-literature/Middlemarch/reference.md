@@ -9,6 +9,10 @@
 ## Author
 
 - **Name**: George Eliot
+- **Born**: 1819
+- **Died**: 1880
+- **Wikipedia**: https://en.wikipedia.org/wiki/George_Eliot
+- **Gutenberg Agent ID**: 90
 
 - **Gutenberg Published**: 1994-07-01
 

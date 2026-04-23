@@ -9,6 +9,10 @@
 ## Author
 
 - **Name**: Homer
+- **Born**: -750
+- **Died**: -650
+- **Wikipedia**: https://en.wikipedia.org/wiki/Homer
+- **Gutenberg Agent ID**: 705
 
 - **Gutenberg Published**: 2004-07-01
 

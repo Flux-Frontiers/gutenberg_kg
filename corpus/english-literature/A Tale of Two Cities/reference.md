@@ -9,6 +9,10 @@
 ## Author
 
 - **Name**: Charles Dickens
+- **Born**: 1812
+- **Died**: 1870
+- **Wikipedia**: https://en.wikipedia.org/wiki/Charles_Dickens
+- **Gutenberg Agent ID**: 37
 
 - **Gutenberg Published**: 1994-01-01
 

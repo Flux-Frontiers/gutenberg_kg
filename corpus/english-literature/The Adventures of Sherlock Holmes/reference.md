@@ -9,6 +9,10 @@
 ## Author
 
 - **Name**: Arthur Conan Doyle
+- **Born**: 1859
+- **Died**: 1930
+- **Wikipedia**: https://en.wikipedia.org/wiki/Arthur_Conan_Doyle
+- **Gutenberg Agent ID**: 69
 
 - **Gutenberg Published**: 1999-03-01
 

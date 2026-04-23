@@ -9,6 +9,10 @@
 ## Author
 
 - **Name**: Friedrich Wilhelm Nietzsche
+- **Born**: 1844
+- **Died**: 1900
+- **Wikipedia**: https://en.wikipedia.org/wiki/Friedrich_Nietzsche
+- **Gutenberg Agent ID**: 779
 
 - **Gutenberg Published**: 2003-08-01
 

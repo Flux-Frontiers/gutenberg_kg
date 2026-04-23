@@ -9,6 +9,10 @@
 ## Author
 
 - **Name**: Jane Austen
+- **Born**: 1775
+- **Died**: 1817
+- **Wikipedia**: https://en.wikipedia.org/wiki/Jane_Austen
+- **Gutenberg Agent ID**: 68
 
 - **Gutenberg Published**: 1994-08-01
 

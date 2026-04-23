@@ -9,6 +9,10 @@
 ## Author
 
 - **Name**: Lewis Carroll
+- **Born**: 1832
+- **Died**: 1898
+- **Wikipedia**: https://en.wikipedia.org/wiki/Lewis_Carroll
+- **Gutenberg Agent ID**: 7
 
 - **Gutenberg Published**: 2008-06-27
 

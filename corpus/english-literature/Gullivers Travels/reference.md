@@ -9,6 +9,10 @@
 ## Author
 
 - **Name**: Jonathan Swift
+- **Born**: 1667
+- **Died**: 1745
+- **Wikipedia**: https://en.wikipedia.org/wiki/Jonathan_Swift
+- **Gutenberg Agent ID**: 326
 
 - **Gutenberg Published**: 1997-02-01
 

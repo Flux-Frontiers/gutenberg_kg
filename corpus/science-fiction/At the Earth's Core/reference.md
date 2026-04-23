@@ -9,6 +9,10 @@
 ## Author
 
 - **Name**: Edgar Rice Burroughs
+- **Born**: 1875
+- **Died**: 1950
+- **Wikipedia**: https://en.wikipedia.org/wiki/Edgar_Rice_Burroughs
+- **Gutenberg Agent ID**: 48
 
 - **Gutenberg Published**: 1993-04-01
 

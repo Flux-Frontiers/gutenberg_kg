@@ -9,6 +9,10 @@
 ## Author
 
 - **Name**: Emily Brontë
+- **Born**: 1818
+- **Died**: 1848
+- **Wikipedia**: https://en.wikipedia.org/wiki/Emily_Brontë
+- **Gutenberg Agent ID**: 405
 
 - **Gutenberg Published**: 1996-12-01
 

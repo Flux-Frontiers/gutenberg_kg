@@ -9,6 +9,10 @@
 ## Author
 
 - **Name**: Joseph Conrad
+- **Born**: 1857
+- **Died**: 1924
+- **Wikipedia**: https://en.wikipedia.org/wiki/Joseph_Conrad
+- **Gutenberg Agent ID**: 125
 
 - **Gutenberg Published**: 2006-01-09
 

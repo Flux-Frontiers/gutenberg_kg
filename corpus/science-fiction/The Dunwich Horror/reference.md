@@ -9,6 +9,10 @@
 ## Author
 
 - **Name**: H. P. (Howard Phillips) Lovecraft
+- **Born**: 1890
+- **Died**: 1937
+- **Wikipedia**: https://en.wikipedia.org/wiki/H._P._Lovecraft
+- **Gutenberg Agent ID**: 34724
 
 - **Gutenberg Published**: 2015-10-04
 

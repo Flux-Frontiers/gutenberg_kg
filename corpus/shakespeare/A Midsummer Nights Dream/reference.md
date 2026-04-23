@@ -9,6 +9,10 @@
 ## Author
 
 - **Name**: William Shakespeare
+- **Born**: 1564
+- **Died**: 1616
+- **Wikipedia**: https://en.wikipedia.org/wiki/William_Shakespeare
+- **Gutenberg Agent ID**: 65
 
 - **Gutenberg Published**: 1998-11-01
 

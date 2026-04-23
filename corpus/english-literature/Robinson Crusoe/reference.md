@@ -9,6 +9,9 @@
 ## Author
 
 - **Name**: Daniel Defoe
+- **Died**: 1731
+- **Wikipedia**: https://en.wikipedia.org/wiki/Daniel_Defoe
+- **Gutenberg Agent ID**: 204
 
 - **Gutenberg Published**: 1996-05-01
 

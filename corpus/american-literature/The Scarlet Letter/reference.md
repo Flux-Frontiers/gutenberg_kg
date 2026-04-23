@@ -9,6 +9,10 @@
 ## Author
 
 - **Name**: Nathaniel Hawthorne
+- **Born**: 1804
+- **Died**: 1864
+- **Wikipedia**: https://en.wikipedia.org/wiki/Nathaniel_Hawthorne
+- **Gutenberg Agent ID**: 28
 
 - **Gutenberg Published**: 1992-06-01
 

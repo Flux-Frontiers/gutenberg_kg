@@ -9,6 +9,10 @@
 ## Author
 
 - **Name**: Thomas Hobbes
+- **Born**: 1588
+- **Died**: 1679
+- **Wikipedia**: https://en.wikipedia.org/wiki/Thomas_Hobbes
+- **Gutenberg Agent ID**: 1133
 
 - **Gutenberg Published**: 2002-05-01
 

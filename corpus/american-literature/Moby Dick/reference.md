@@ -9,6 +9,10 @@
 ## Author
 
 - **Name**: Herman Melville
+- **Born**: 1819
+- **Died**: 1891
+- **Wikipedia**: https://en.wikipedia.org/wiki/Herman_Melville
+- **Gutenberg Agent ID**: 9
 
 - **Gutenberg Published**: 2001-07-01
 

@@ -9,6 +9,10 @@
 ## Author
 
 - **Name**: Sophocles
+- **Born**: -496
+- **Died**: -406
+- **Wikipedia**: https://en.wikipedia.org/wiki/Sophocles
+- **Gutenberg Agent ID**: 26
 
 - **Gutenberg Published**: 2008-12-31
 

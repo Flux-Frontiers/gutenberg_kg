@@ -9,6 +9,10 @@
 ## Author
 
 - **Name**: Walt Whitman
+- **Born**: 1819
+- **Died**: 1892
+- **Wikipedia**: https://en.wikipedia.org/wiki/Walt_Whitman
+- **Gutenberg Agent ID**: 600
 
 - **Gutenberg Published**: 1998-05-01
 

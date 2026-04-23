@@ -9,6 +9,10 @@
 ## Author
 
 - **Name**: Charles Darwin
+- **Born**: 1809
+- **Died**: 1882
+- **Wikipedia**: https://en.wikipedia.org/wiki/Charles_Darwin
+- **Gutenberg Agent ID**: 485
 
 - **Gutenberg Published**: 1998-03-01
 

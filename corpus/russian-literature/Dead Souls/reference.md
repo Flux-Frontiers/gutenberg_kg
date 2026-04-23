@@ -9,6 +9,10 @@
 ## Author
 
 - **Name**: Nikolai Vasilevich Gogol
+- **Born**: 1809
+- **Died**: 1852
+- **Wikipedia**: https://en.wikipedia.org/wiki/Nikolai_Gogol
+- **Gutenberg Agent ID**: 531
 
 - **Gutenberg Published**: 1997-10-01
 

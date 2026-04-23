@@ -9,6 +9,8 @@
 ## Author
 
 - **Name**: Noah Webster
+- **Wikipedia**: https://en.wikipedia.org/wiki/Project_Gutenberg
+- **Gutenberg Agent ID**: 114
 
 - **Gutenberg Published**: 1996-09-01
 

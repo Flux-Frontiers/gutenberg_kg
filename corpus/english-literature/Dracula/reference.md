@@ -9,6 +9,10 @@
 ## Author
 
 - **Name**: Bram Stoker
+- **Born**: 1847
+- **Died**: 1912
+- **Wikipedia**: https://en.wikipedia.org/wiki/Bram_Stoker
+- **Gutenberg Agent ID**: 190
 
 - **Gutenberg Published**: 1995-10-01
 

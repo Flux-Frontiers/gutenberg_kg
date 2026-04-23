@@ -9,6 +9,10 @@
 ## Author
 
 - **Name**: Robert Louis Stevenson
+- **Born**: 1850
+- **Died**: 1894
+- **Wikipedia**: https://en.wikipedia.org/wiki/Robert_Louis_Stevenson
+- **Gutenberg Agent ID**: 35
 
 - **Gutenberg Published**: 2008-06-27
 

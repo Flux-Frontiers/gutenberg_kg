@@ -9,6 +9,10 @@
 ## Author
 
 - **Name**: Stephen Crane
+- **Born**: 1871
+- **Died**: 1900
+- **Wikipedia**: https://en.wikipedia.org/wiki/Stephen_Crane
+- **Gutenberg Agent ID**: 55
 
 - **Gutenberg Published**: 1993-07-01
 

@@ -9,6 +9,10 @@
 ## Author
 
 - **Name**: Virgil
+- **Born**: -70
+- **Died**: -19
+- **Wikipedia**: https://en.wikipedia.org/wiki/Virgil
+- **Gutenberg Agent ID**: 129
 
 - **Gutenberg Published**: 1995-03-01
 

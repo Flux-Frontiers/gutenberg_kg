@@ -9,6 +9,10 @@
 ## Author
 
 - **Name**: H. G. (Herbert George) Wells
+- **Born**: 1866
+- **Died**: 1946
+- **Wikipedia**: https://en.wikipedia.org/wiki/H._G._Wells
+- **Gutenberg Agent ID**: 30
 
 - **Gutenberg Published**: 2004-10-02
 

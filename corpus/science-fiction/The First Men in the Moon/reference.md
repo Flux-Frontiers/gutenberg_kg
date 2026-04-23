@@ -9,6 +9,10 @@
 ## Author
 
 - **Name**: Jules Verne
+- **Born**: 1828
+- **Died**: 1905
+- **Wikipedia**: https://en.wikipedia.org/wiki/Jules_Verne
+- **Gutenberg Agent ID**: 60
 
 - **Gutenberg Published**: 2006-07-18
 

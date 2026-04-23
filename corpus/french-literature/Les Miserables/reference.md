@@ -9,6 +9,10 @@
 ## Author
 
 - **Name**: Victor Hugo
+- **Born**: 1802
+- **Died**: 1885
+- **Wikipedia**: https://en.wikipedia.org/wiki/Victor_Hugo
+- **Gutenberg Agent ID**: 85
 
 - **Gutenberg Published**: 2008-06-22
 

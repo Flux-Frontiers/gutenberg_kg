@@ -9,6 +9,10 @@
 ## Author
 
 - **Name**: Voltaire
+- **Born**: 1694
+- **Died**: 1778
+- **Wikipedia**: https://en.wikipedia.org/wiki/Voltaire
+- **Gutenberg Agent ID**: 913
 
 - **Gutenberg Published**: 2006-11-27
 

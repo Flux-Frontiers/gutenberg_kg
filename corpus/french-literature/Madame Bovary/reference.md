@@ -9,6 +9,10 @@
 ## Author
 
 - **Name**: Gustave Flaubert
+- **Born**: 1821
+- **Died**: 1880
+- **Wikipedia**: https://en.wikipedia.org/wiki/Gustave_Flaubert
+- **Gutenberg Agent ID**: 574
 
 - **Gutenberg Published**: 2006-02-26
 

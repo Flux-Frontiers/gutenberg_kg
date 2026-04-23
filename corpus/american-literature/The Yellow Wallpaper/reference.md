@@ -9,6 +9,10 @@
 ## Author
 
 - **Name**: Charlotte Perkins Gilman
+- **Born**: 1860
+- **Died**: 1935
+- **Wikipedia**: https://en.wikipedia.org/wiki/Charlotte_Perkins_Gilman
+- **Gutenberg Agent ID**: 27
 
 - **Gutenberg Published**: 1999-11-01
 

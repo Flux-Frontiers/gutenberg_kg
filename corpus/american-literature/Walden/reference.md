@@ -9,6 +9,10 @@
 ## Author
 
 - **Name**: Henry David Thoreau
+- **Born**: 1817
+- **Died**: 1862
+- **Wikipedia**: https://en.wikipedia.org/wiki/Henry_David_Thoreau
+- **Gutenberg Agent ID**: 54
 
 - **Gutenberg Published**: 1995-01-01
 

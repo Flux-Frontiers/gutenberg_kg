@@ -9,6 +9,10 @@
 ## Author
 
 - **Name**: Niccolò Machiavelli
+- **Born**: 1469
+- **Died**: 1527
+- **Wikipedia**: https://en.wikipedia.org/wiki/Niccolò_Machiavelli
+- **Gutenberg Agent ID**: 563
 
 - **Gutenberg Published**: 2006-02-11
 

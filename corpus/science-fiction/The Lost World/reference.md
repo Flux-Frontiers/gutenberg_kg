@@ -9,6 +9,10 @@
 ## Author
 
 - **Name**: Robert Herrick
+- **Born**: 1868
+- **Died**: 1938
+- **Wikipedia**: https://en.wikipedia.org/wiki/Robert_Herrick_(novelist)
+- **Gutenberg Agent ID**: 2657
 
 - **Gutenberg Published**: 2009-08-26
 

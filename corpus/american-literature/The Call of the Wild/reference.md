@@ -9,6 +9,10 @@
 ## Author
 
 - **Name**: Jack London
+- **Born**: 1876
+- **Died**: 1916
+- **Wikipedia**: https://en.wikipedia.org/wiki/Jack_London
+- **Gutenberg Agent ID**: 120
 
 - **Gutenberg Published**: 2008-07-02
 

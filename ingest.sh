@@ -77,7 +77,7 @@ TOTAL_OK=0
 TOTAL_FAIL=0
 
 for GENRE in "${GENRES[@]}"; do
-    GENRE_DIR="$REPO_ROOT/$GENRE"
+    GENRE_DIR="$REPO_ROOT/corpus/$GENRE"
     GENRE_CORPUS="gutenberg-$GENRE"
 
     echo "=== $GENRE ==="

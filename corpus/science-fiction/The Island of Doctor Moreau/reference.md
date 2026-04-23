@@ -9,6 +9,10 @@
 ## Author
 
 - **Name**: Plato
+- **Born**: -428
+- **Died**: -348
+- **Wikipedia**: https://en.wikipedia.org/wiki/Plato
+- **Gutenberg Agent ID**: 93
 
 - **Gutenberg Published**: 1999-03-01
 

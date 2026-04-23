@@ -9,6 +9,10 @@
 ## Author
 
 - **Name**: Harriet Beecher Stowe
+- **Born**: 1811
+- **Died**: 1896
+- **Wikipedia**: https://en.wikipedia.org/wiki/Harriet_Beecher_Stowe
+- **Gutenberg Agent ID**: 115
 
 - **Gutenberg Published**: 2006-01-13
 

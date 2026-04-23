@@ -9,6 +9,10 @@
 ## Author
 
 - **Name**: Fyodor Dostoyevsky
+- **Born**: 1821
+- **Died**: 1881
+- **Wikipedia**: https://en.wikipedia.org/wiki/Fyodor_Dostoevsky
+- **Gutenberg Agent ID**: 314
 
 - **Gutenberg Published**: 2001-05-01
 

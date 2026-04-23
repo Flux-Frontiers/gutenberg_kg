@@ -9,6 +9,10 @@
 ## Author
 
 - **Name**: Emperor of Rome Marcus Aurelius
+- **Born**: 121
+- **Died**: 180
+- **Wikipedia**: https://en.wikipedia.org/wiki/Marcus_Aurelius
+- **Gutenberg Agent ID**: 998
 
 - **Gutenberg Published**: 2001-06-01
 

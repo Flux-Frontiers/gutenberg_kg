@@ -9,6 +9,10 @@
 ## Author
 
 - **Name**: Adam Smith
+- **Born**: 1723
+- **Died**: 1790
+- **Wikipedia**: https://en.wikipedia.org/wiki/Adam_Smith
+- **Gutenberg Agent ID**: 1158
 
 - **Gutenberg Published**: 2002-06-01
 

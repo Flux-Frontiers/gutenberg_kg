@@ -9,6 +9,10 @@
 ## Author
 
 - **Name**: Mark Twain
+- **Born**: 1835
+- **Died**: 1910
+- **Wikipedia**: https://en.wikipedia.org/wiki/Mark_Twain
+- **Gutenberg Agent ID**: 53
 
 - **Gutenberg Published**: 2004-06-29
 

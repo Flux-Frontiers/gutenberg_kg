@@ -9,6 +9,10 @@
 ## Author
 
 - **Name**: Thomas Paine
+- **Born**: 1737
+- **Died**: 1809
+- **Wikipedia**: https://en.wikipedia.org/wiki/Thomas_Paine
+- **Gutenberg Agent ID**: 91
 
 - **Gutenberg Published**: 1994-07-01
 

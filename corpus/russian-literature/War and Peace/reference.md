@@ -9,6 +9,10 @@
 ## Author
 
 - **Name**: Leo, graf Tolstoy
+- **Born**: 1828
+- **Died**: 1910
+- **Wikipedia**: https://en.wikipedia.org/wiki/Leo_Tolstoy
+- **Gutenberg Agent ID**: 136
 
 - **Gutenberg Published**: 2001-04-01
 
