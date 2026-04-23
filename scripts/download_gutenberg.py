@@ -77,10 +77,12 @@ import xml.etree.ElementTree as ET
 
 GUTENBERG_TXT_URL = "https://www.gutenberg.org/cache/epub/{ebook_id}/pg{ebook_id}.txt"
 GUTENBERG_OPDS_URL = "https://www.gutenberg.org/ebooks/{ebook_id}.opds"
+GUTENBERG_RDF_URL = "https://www.gutenberg.org/cache/epub/{ebook_id}/pg{ebook_id}.rdf"
 GUTENBERG_SEARCH_URL = "https://www.gutenberg.org/ebooks/search.opds/"
 GUTENBERG_PAGE_URL = "https://www.gutenberg.org/ebooks/{ebook_id}"
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+CORPUS_ROOT = os.path.join(REPO_ROOT, "corpus")
 
 # Known genre directory names (mirrors ingest.py, plus science-fiction)
 ALL_GENRES = [
@@ -105,6 +107,14 @@ NS = {
     "opds": "http://opds-spec.org/2010/catalog",
     "xhtml": "http://www.w3.org/1999/xhtml",
 }
+
+# Namespaces used in Gutenberg RDF catalog files
+RDF_NS = {
+    "rdf":     "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "pgterms": "http://www.gutenberg.org/2009/pgterms/",
+}
+_RDF_ABOUT = "{http://www.w3.org/1999/02/22-rdf-syntax-ns#}about"
+_RDF_RESOURCE = "{http://www.w3.org/1999/02/22-rdf-syntax-ns#}resource"
 
 # Common heading patterns found in Gutenberg texts, ordered by specificity.
 # Each tuple: (compiled regex, markdown heading level, group index for title)
@@ -300,7 +310,53 @@ def fetch_metadata(ebook_id: int) -> dict:
                     meta["note"] = text[len("Note:"):].strip()
 
     meta["gutenberg_url"] = GUTENBERG_PAGE_URL.format(ebook_id=ebook_id)
+
+    # Enrich with author provenance from the RDF catalog (birth/death/Wikipedia)
+    meta.update(_fetch_rdf_author(ebook_id))
+
     return meta
+
+
+def _fetch_rdf_author(ebook_id: int) -> dict:
+    """Fetch author birth/death/Wikipedia from the Gutenberg RDF catalog.
+
+    Returns a (possibly empty) dict with keys:
+    ``author_birth``, ``author_death``, ``author_url``, ``author_agent_id``.
+    Failures are silently swallowed so the caller's download still succeeds.
+    """
+    url = GUTENBERG_RDF_URL.format(ebook_id=ebook_id)
+    try:
+        xml_text = fetch_url(url)
+        root = ET.fromstring(xml_text)
+    except Exception:
+        return {}
+
+    agent = root.find(".//pgterms:agent", RDF_NS)
+    if agent is None:
+        return {}
+
+    result = {}
+
+    about = agent.get(_RDF_ABOUT, "")
+    m = re.search(r"/agents/(\d+)$", about)
+    if m:
+        result["author_agent_id"] = int(m.group(1))
+
+    birth = agent.find("pgterms:birthdate", RDF_NS)
+    if birth is not None and birth.text:
+        result["author_birth"] = birth.text.strip()
+
+    death = agent.find("pgterms:deathdate", RDF_NS)
+    if death is not None and death.text:
+        result["author_death"] = death.text.strip()
+
+    for webpage in agent.findall("pgterms:webpage", RDF_NS):
+        href = webpage.get(_RDF_RESOURCE, "")
+        if "wikipedia.org" in href:
+            result["author_url"] = href
+            break
+
+    return result
 
 
 def search_gutenberg(query: str, max_results: int = 25) -> list[dict]:
@@ -635,12 +691,17 @@ def write_reference(book_dir: str, meta: dict) -> str:
     ]
 
     if meta.get("author"):
-        lines += [
-            "## Author",
-            "",
-            f"- **Name**: {meta['author']}",
-            "",
-        ]
+        lines += ["## Author", ""]
+        lines.append(f"- **Name**: {meta['author']}")
+        if meta.get("author_birth"):
+            lines.append(f"- **Born**: {meta['author_birth']}")
+        if meta.get("author_death"):
+            lines.append(f"- **Died**: {meta['author_death']}")
+        if meta.get("author_url"):
+            lines.append(f"- **Wikipedia**: {meta['author_url']}")
+        if meta.get("author_agent_id"):
+            lines.append(f"- **Gutenberg Agent ID**: {meta['author_agent_id']}")
+        lines.append("")
 
     if meta.get("published"):
         lines += [f"- **Gutenberg Published**: {meta['published']}", ""]
@@ -712,9 +773,9 @@ def download_book(
 
     # Resolve output directory
     if genre:
-        book_dir = os.path.join(REPO_ROOT, genre, title)
+        book_dir = os.path.join(CORPUS_ROOT, genre, title)
     else:
-        book_dir = os.path.join(REPO_ROOT, title)
+        book_dir = os.path.join(CORPUS_ROOT, title)
 
     slug = slugify(title)
     out_path = os.path.join(book_dir, f"{slug}.md")
@@ -800,7 +861,7 @@ def survey_repo(genre_filter: str | None = None) -> None:
     genre_set = set(ALL_GENRES)
 
     for genre in genres_to_show:
-        genre_dir = os.path.join(REPO_ROOT, genre)
+        genre_dir = os.path.join(CORPUS_ROOT, genre)
         books = []
         if os.path.isdir(genre_dir):
             for entry in sorted(os.scandir(genre_dir), key=lambda e: e.name):
@@ -821,10 +882,10 @@ def survey_repo(genre_filter: str | None = None) -> None:
                     f"  kg={_check_mark(b['kg'])}"
                 )
 
-    # Ungrouped books (top-level dirs that aren't genre dirs and don't start with '.')
+    # Ungrouped books (corpus-level dirs that aren't genre dirs and don't start with '.')
     if not genre_filter:
         ungrouped = []
-        for entry in sorted(os.scandir(REPO_ROOT), key=lambda e: e.name):
+        for entry in sorted(os.scandir(CORPUS_ROOT), key=lambda e: e.name):
             if (
                 entry.is_dir()
                 and not entry.name.startswith(".")

@@ -25,6 +25,7 @@ ALL_GENRES = [
 #   .parents[2] = src/
 #   .parents[3] = repo root
 REPO_ROOT = Path(__file__).resolve().parents[3]
+CORPUS_ROOT = REPO_ROOT / "corpus"
 
 
 # ---------------------------------------------------------------------------
