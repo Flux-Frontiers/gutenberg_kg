@@ -32,7 +32,7 @@ Each book is:
 - **Organized by genre** into thematic subcorpora for targeted or broad querying
 - **DocKG-indexed** into SQLite + LanceDB for hybrid semantic + structural retrieval
 
-The result: 64 of history's most important works, instantly searchable as a unified knowledge graph — or as independently queryable genre corpora.
+The result: 78 of history's most important works, instantly searchable as a unified knowledge graph — or as independently queryable genre corpora.
 
 ---
 
@@ -88,12 +88,13 @@ poetry install
 gutenkg --help
 ```
 
-### After cloning — rebuild LanceDB indices
+### After cloning — rebuild knowledge graph indices
 
-LanceDB vector indices are not committed to git (too large). Rebuild from the committed `graph.sqlite` files:
+Knowledge graph indices (`graph.sqlite` + LanceDB vectors) are regenerable build artifacts and are not committed to git. Rebuild everything from the source Markdown files:
 
 ```bash
-gutenkg rebuild-lancedb
+gutenkg ingest --force-build              # all genres
+gutenkg ingest --force-build --genre shakespeare  # one genre
 ```
 
 > See [CHEATSHEET.md](CHEATSHEET.md) for the full command reference.
@@ -167,7 +168,9 @@ python scripts/ingest.py --genre russian-literature --push
 ```
 
 Each genre gets its own `git commit` + `git push` immediately after its books
-are processed, keeping individual pushes small regardless of corpus size.
+are processed, keeping individual pushes small regardless of corpus size. Commits
+contain only the source Markdown and metadata files — knowledge graph indices are
+local-only build artifacts and are not committed.
 
 ### Force a full rebuild
 
@@ -200,7 +203,7 @@ python scripts/ingest.py --dry-run --push
 1. Runs `dockg build` to build a SQLite + LanceDB knowledge graph under `<book>/.dockg/`
 2. Registers the resulting KG with KGRAG under the name `gutenberg-<genre>-<slug>-doc`
 3. Adds it to the genre corpus (`gutenberg-<genre>`) and the top-level corpus (`gutenberg-all`)
-4. With `--push`: stages `<genre>/`, commits, and pushes once all books in the genre are done
+4. With `--push`: stages `<genre>/` (text + metadata only), commits, and pushes once all books in the genre are done
 
 ### Query the corpus
 
