@@ -30,6 +30,7 @@ dist/
 /.dockg/
 /.codekg/
 /.ftreekg/
+/.agentkg/
 
 # SQLite transient files (WAL/SHM are runtime-only, can exceed GitHub's 100MB limit)
 *.sqlite-wal
