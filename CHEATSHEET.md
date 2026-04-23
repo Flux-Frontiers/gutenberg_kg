@@ -165,14 +165,14 @@ one page per author.
 
 ```bash
 # Rebuild corpus/authors/ from existing reference.md files
-python scripts/build_author_index.py
+gutenkg authors
 
 # Also re-fetch RDF and patch reference.md files missing provenance
-python scripts/build_author_index.py --refresh
+gutenkg authors --refresh
 
 # Preview
-python scripts/build_author_index.py --dry-run
-python scripts/build_author_index.py --refresh --dry-run
+gutenkg authors --dry-run
+gutenkg authors --refresh --dry-run
 ```
 
 New downloads already land with full provenance in `reference.md` — use
@@ -229,7 +229,7 @@ gutenkg download survey --genre science-fiction
 gutenkg ingest --genre science-fiction --push
 
 # 4. Refresh the author index so the new authors appear
-python scripts/build_author_index.py
+gutenkg authors
 ```
 
 ### Rebuild a broken genre
@@ -264,20 +264,21 @@ gutenberg_kg/
 │   │       └── .dockg/                     # Built by ingest (gitignored)
 │   │           ├── graph.sqlite            # DocKG graph
 │   │           └── lancedb/                # Vector index
-│   └── authors/                            # Built by build_author_index.py
+│   └── authors/                            # Built by `gutenkg authors`
 │       ├── index.md                        # Master alphabetical author table
 │       └── <author_slug>/author.md         # Born, died, Wikipedia, works
 ├── src/gutenberg_kg/
+│   ├── authors.py                          # Author-index logic (gutenkg authors)
 │   └── cli/
 │       ├── main.py                         # gutenkg CLI entry point
 │       ├── options.py                      # REPO_ROOT, CORPUS_ROOT, ALL_GENRES
+│       ├── cmd_authors.py                  # gutenkg authors
 │       ├── cmd_download.py                 # gutenkg download *
 │       ├── cmd_ingest.py                   # gutenkg ingest
 │       └── cmd_rebuild.py                  # gutenkg rebuild-lancedb
 ├── scripts/
 │   ├── ingest.py                           # Ingest engine (called by CLI)
 │   ├── download_gutenberg.py               # Download engine (called by CLI)
-│   ├── build_author_index.py               # Author-corpus post-processor
 │   ├── rebuild_lancedb.sh                  # Shell fallback for LanceDB rebuild
 │   └── catalogs/                           # Per-genre batch download catalogs
 │       └── science-fiction.txt

@@ -74,10 +74,12 @@ gutenberg_kg/
 │   └── authors/                         # Per-author pages (built from reference.md)
 │       ├── index.md                     # Master alphabetical table
 │       └── <author_slug>/author.md      # Born, died, Wikipedia, works in corpus
+├── src/gutenberg_kg/
+│   ├── authors.py                       # Author-index logic (invoked by `gutenkg authors`)
+│   └── cli/                             # Click command modules
 └── scripts/
     ├── ingest.py                        # DocKG build + KGRAG registration + git push
     ├── download_gutenberg.py            # Download & convert script
-    ├── build_author_index.py            # Rebuild corpus/authors/ from reference.md files
     └── catalogs/                        # Per-genre batch download catalogs
 ```
 
@@ -251,9 +253,9 @@ kgrag corpus query gutenberg-philosophy "free will and determinism"
 6. **Converts to Markdown** with proper heading hierarchy (`#` title, `##` chapters, `###` sub-sections)
 7. **Writes** a structured `.md` file and a `reference.md` with full author provenance and Gutenberg metadata
 
-After a batch of downloads, run `python scripts/build_author_index.py` to
-(re)generate `corpus/authors/` with per-author pages aggregated across every
-book in the corpus. Use `--refresh` to also backfill provenance for any
+After a batch of downloads, run `gutenkg authors` to (re)generate
+`corpus/authors/` with per-author pages aggregated across every book in the
+corpus. Use `gutenkg authors --refresh` to also backfill provenance for any
 `reference.md` files that predate the RDF enrichment.
 
 Full technical reference: [`DOWNLOAD_PIPELINE.md`](DOWNLOAD_PIPELINE.md).
