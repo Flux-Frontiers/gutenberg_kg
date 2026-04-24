@@ -5,6 +5,7 @@
 [![KGRAG](https://img.shields.io/badge/KGRAG-integrated-purple.svg)](https://github.com/Flux-Frontiers/KGRAG)
 [![Nodes](https://img.shields.io/badge/nodes-445K-green.svg)](https://github.com/Flux-Frontiers/gutenberg_kg)
 [![Edges](https://img.shields.io/badge/edges-4.5M-green.svg)](https://github.com/Flux-Frontiers/gutenberg_kg)
+[![DOI](https://zenodo.org/badge/1194808988.svg)](https://zenodo.org/badge/latestdoi/1194808988)
 
 <p align="center">
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Project_Gutenberg_logo.png/320px-Project_Gutenberg_logo.png" alt="Project Gutenberg" width="200"/>

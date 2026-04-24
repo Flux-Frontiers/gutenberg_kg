@@ -1,0 +1,28 @@
+cff-version: "1.2.0"
+message: "If you use this software, please cite it using the metadata below."
+type: software
+title: "GutenbergKG: Project Gutenberg Knowledge Graph"
+abstract: >
+  GutenbergKG provides a CLI for downloading, ingesting, and querying Project
+  Gutenberg texts as a semantic knowledge graph. It builds a structured,
+  queryable representation of public-domain literary corpora, enabling
+  semantic search, entity extraction, and MCP-based AI integration over
+  classic literature.
+authors:
+  - family-names: Suchanek
+    given-names: "Eric G."
+    name-suffix: PhD
+    email: suchanek@flux_frontiers.com
+    orcid: "https://orcid.org/0009-0009-0891-1507"
+    affiliation: "Flux-Frontiers"
+version: "0.1.0"
+license: "Elastic-2.0"
+repository-code: "https://github.com/Flux-Frontiers/gutenberg_kg"
+url: "https://github.com/Flux-Frontiers/gutenberg_kg"
+keywords:
+  - knowledge-graph
+  - project-gutenberg
+  - public-domain
+  - literature
+  - semantic-search
+  - mcp
