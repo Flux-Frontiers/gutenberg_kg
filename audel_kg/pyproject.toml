@@ -1,0 +1,45 @@
+# AudelKG — CLI for Internet Archive / Audel technical knowledge graphs
+#
+# Mirrors gutenberg_kg architecture; sources from archive.org instead of
+# Project Gutenberg. Produces the same corpus/<genre>/<Title>/{slug.md,
+# reference.md} structure, fully compatible with DocKG and KGRAG.
+
+[build-system]
+requires = ["poetry-core>=2.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "audel-kg"
+version = "0.1.0"
+description = "CLI for downloading and ingesting Internet Archive technical manuals as knowledge graphs"
+authors = ["Eric G. Suchanek, PhD <suchanek@mac.com>"]
+license = "Elastic-2.0"
+packages = [{ include = "audel_kg", from = "src" }]
+
+[tool.poetry.dependencies]
+python   = ">=3.12,<3.14"
+click    = ">=8.1.0"
+kg-rag   = { git = "https://github.com/Flux-Frontiers/KGRAG.git" }
+doc-kg   = { git = "https://github.com/Flux-Frontiers/doc_kg.git" }
+
+[tool.poetry.group.dev.dependencies]
+pytest = ">=8.0.0"
+ruff   = ">=0.4.0"
+
+[tool.poetry.scripts]
+audelkg = "audel_kg.cli.main:cli"
+
+[tool.ruff]
+line-length    = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP"]
+ignore = ["E501"]
+
+[tool.dockg]
+exclude = [
+    ".dockg", ".codekg", ".git", ".venv", "venv",
+    "__pycache__", ".mypy_cache", ".pytest_cache", "dist", "reports",
+    "src",
+]

@@ -1,0 +1,56 @@
+# Audel Electric — Internet Archive catalog
+# Format: <ia_identifier>[TAB<title>]
+#
+# BEFORE DOWNLOADING: verify identifiers with the search command:
+#   python scripts/download_ia.py search "audels electricians plumbers guide"
+#   python scripts/download_ia.py search "audels practical electricity anderson"
+#
+# Then download the full catalog:
+#   python scripts/download_ia.py catalog scripts/catalogs/audel-electric.txt --genre audel-electric
+#
+# Or download one at a time to verify output before committing:
+#   python scripts/download_ia.py download <identifier> --genre audel-electric
+#
+# Preference: latest pre-1940 edition where multiple editions exist.
+# Each volume is treated as a separate book.
+
+# ---------------------------------------------------------------------------
+# Audels Electricians and Plumbers Guide (Theo. Audel & Co., 1928, 4 vols)
+# Edwin P. Anderson
+# Search: "audels electricians plumbers guide"
+# ---------------------------------------------------------------------------
+audelselectriciansguide01ande	Audels Electricians and Plumbers Guide Vol. 1
+audelselectriciansguide02ande	Audels Electricians and Plumbers Guide Vol. 2
+audelselectriciansguide03ande	Audels Electricians and Plumbers Guide Vol. 3
+audelselectriciansguide04ande	Audels Electricians and Plumbers Guide Vol. 4
+
+# ---------------------------------------------------------------------------
+# Audels New Practical Reference for Electricians
+# Search: "audels new practical reference electricians"
+# ---------------------------------------------------------------------------
+# audelsnewpractical00ande	Audels New Practical Reference for Electricians
+
+# ---------------------------------------------------------------------------
+# Audels Practical Electricity (Edwin P. Anderson)
+# Search: "audels practical electricity anderson"
+# ---------------------------------------------------------------------------
+# audelspracticalelec00ande	Audels Practical Electricity
+
+# ---------------------------------------------------------------------------
+# Audels Questions and Answers for Electricians Examinations
+# Search: "audels questions answers electricians examinations"
+# ---------------------------------------------------------------------------
+# audelsquestionsand00ande	Audels Questions and Answers for Electricians Examinations
+
+# ---------------------------------------------------------------------------
+# Notes
+# ---------------------------------------------------------------------------
+# - Commented-out lines (# prefix) are not downloaded.
+#   Uncomment after verifying the identifier via the search command.
+#
+# - IA identifiers for Audel items often follow patterns:
+#     audels<topic><volume>ande  (Anderson as author)
+#     audels<topic>00            (no author suffix)
+#
+# - To list all files available for an identifier before downloading:
+#     curl -s "https://archive.org/metadata/<identifier>/files" | python -m json.tool
