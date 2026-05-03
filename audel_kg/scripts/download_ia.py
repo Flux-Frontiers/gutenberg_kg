@@ -105,7 +105,7 @@ HEADING_PATTERNS = [
         r"(?:\s*[-—:.]?\s*(.+))?$",
         re.IGNORECASE,
     ), 2),
-    # Standalone ALL-CAPS heading: 3–60 chars, only uppercase letters/spaces/basic punct
+    # Standalone ALL-CAPS heading: 3-60 chars, only uppercase letters/spaces/basic punct
     # e.g. "DIRECT CURRENTS", "OHM'S LAW AND ITS APPLICATIONS"
     (re.compile(r"^([A-Z][A-Z\s\-\',:]{2,59})$"), 3),
     # Q&A format: "Ques. <question text>" — each question becomes an h4 graph node
@@ -123,12 +123,12 @@ FIGURE_RE = re.compile(
 )
 
 # Index section detection (strip from here to EOF when near end of doc)
-INDEX_HEADING_RE = re.compile(r"^\s*INDEX\s*$", re.IGNORECASE)
+INDEX_HEADING_RE = re.compile(r"^\s*INDEX\s*$", re.IGNORECASE | re.MULTILINE)
 
 # Table of contents heading detection
 TOC_HEADING_RE = re.compile(
     r"^\s*(?:TABLE\s+OF\s+)?CONTENTS\.?\s*$",
-    re.IGNORECASE,
+    re.IGNORECASE | re.MULTILINE,
 )
 
 
@@ -298,8 +298,9 @@ def clean_ocr(text: str) -> str:
     1. Normalize unicode ligatures and common smart-quote variants
     2. Join hyphenated line-breaks (OCR word-wrap artifact)
     3. Strip bare page-number lines
-    4. Remove running headers/footers (lines that repeat 4+ times)
-    5. Strip the back-of-book index section
+    4. Strip the back-of-book index section (must happen before running-header
+       removal so the threshold is measured against the original body length)
+    5. Remove running headers/footers (lines that repeat 4+ times)
     6. Remove figure/illustration markers
     7. Collapse excessive blank lines
     """
@@ -307,31 +308,32 @@ def clean_ocr(text: str) -> str:
     for ligature, replacement in LIGATURES.items():
         text = text.replace(ligature, replacement)
     text = (text
-            .replace("’", "'")   # right single quote
-            .replace("‘", "'")   # left single quote
-            .replace("“", '"')   # left double quote
-            .replace("”", '"')   # right double quote
-            .replace("­", ""))   # soft hyphen (remove entirely)
+            .replace("\u2019", "'")   # right single quote
+            .replace("\u2018", "'")   # left single quote
+            .replace("\u201c", '"')   # left double quote
+            .replace("\u201d", '"')   # right double quote
+            .replace("\u00ad", ""))   # soft hyphen (remove entirely)
 
-    # 2. Join hyphenated line-breaks: "mag-\nnetism" → "magnetism"
+    # 2. Join hyphenated line-breaks: "mag-\nnetism" -> "magnetism"
     text = re.sub(r"(\w)-\n(\w)", r"\1\2", text)
 
-    # 3. Bare page-number lines (1–4 digit number alone on a line)
+    # 3. Bare page-number lines (1-4 digit number alone on a line)
     text = re.sub(r"^\s*\d{1,4}\s*$", "", text, flags=re.MULTILINE)
 
-    # 4. Running headers / footers
-    lines = text.split("\n")
-    running = _detect_running_headers(lines)
-    if running:
-        lines = [ln for ln in lines if ln.strip() not in running]
-        text = "\n".join(lines)
-
-    # 5. Strip the index section if it starts in the last 30% of the document
+    # 4. Strip the index section before running-header removal so the 70%
+    #    threshold is measured against the full (uncollapsed) body.
     last_index_match: re.Match | None = None
     for m in INDEX_HEADING_RE.finditer(text):
         last_index_match = m
     if last_index_match and last_index_match.start() > len(text) * 0.70:
         text = text[: last_index_match.start()].rstrip() + "\n"
+
+    # 5. Running headers / footers
+    lines = text.split("\n")
+    running = _detect_running_headers(lines)
+    if running:
+        lines = [ln for ln in lines if ln.strip() not in running]
+        text = "\n".join(lines)
 
     # 6. Figure / illustration markers
     text = FIGURE_RE.sub("", text)
@@ -343,7 +345,7 @@ def clean_ocr(text: str) -> str:
 
 
 # ---------------------------------------------------------------------------
-# Text → Markdown Conversion
+# Text -> Markdown Conversion
 # ---------------------------------------------------------------------------
 
 def _is_heading(line: str) -> tuple[int, str] | None:
@@ -385,19 +387,30 @@ def _is_heading(line: str) -> tuple[int, str] | None:
     return None
 
 
+_STRUCTURAL_HEADING_RE = re.compile(
+    r"^(?:CHAPTER|PART|SECTION|DIVISION)\s+", re.IGNORECASE
+)
+# TOC entries end with dots + page number: "Chapter I — Topic....... 15"
+_TOC_ENTRY_RE = re.compile(r"[\.\s]{3,}\d+\s*$")
+
 def _find_toc_range(lines: list[str]) -> range:
     """Detect a table-of-contents block near the top and return its line range."""
     for i, line in enumerate(lines[:300]):
         if TOC_HEADING_RE.match(line.strip()):
-            # TOC ends at 3+ consecutive blank lines or 400 lines later
             blank_run = 0
             for j in range(i + 1, min(i + 400, len(lines))):
-                if not lines[j].strip():
+                stripped = lines[j].strip()
+                if not stripped:
                     blank_run += 1
-                    if blank_run >= 3:
+                    if blank_run >= 2:
                         return range(i, j)
                 else:
                     blank_run = 0
+                    # End TOC at a structural heading that is NOT itself a TOC entry.
+                    # TOC entries contain trailing dots + page number ("Chapter I....... 15").
+                    if (_STRUCTURAL_HEADING_RE.match(stripped) and
+                            not _TOC_ENTRY_RE.search(stripped)):
+                        return range(i, j)
             return range(i, min(i + 400, len(lines)))
     return range(0)
 
