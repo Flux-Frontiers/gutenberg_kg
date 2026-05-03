@@ -1,0 +1,37 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+dist/
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# KG databases — regenerable build artifacts, not tracked in git
+**/.dockg/graph.sqlite
+**/.dockg/lancedb/
+
+# SQLite transient files (WAL/SHM are runtime-only)
+*.sqlite-wal
+*.sqlite-shm
+
+# Ingest reports (auto-generated)
+reports/
