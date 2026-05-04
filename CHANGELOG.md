@@ -18,6 +18,40 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ---
 
+## [1.0.1] - 2026-05-04
+
+### Added
+
+- **Epictetus** added to the `ancient-classical` genre — *A Selection from the
+  Discourses of Epictetus with the Encheiridion* (Gutenberg #10661). Brings the
+  Stoic shelf alongside Marcus Aurelius's *Meditations* to two works.
+
+### Changed
+
+- **Full corpus re-indexed** with the new BAAI/bge-small-en-v1.5 embedder.
+  Updated corpus stats: **79 books, 448,139 nodes, 4,836,993 edges** (was
+  78 books, 445,486 nodes, 4,525,716 edges).
+- **Bumped DocKG dependency to 0.13.0** for the bounded SIMILAR_TO graph.
+  See "Fixed" below.
+
+### Fixed
+
+- **SIMILAR_TO edge explosion** — under the new embedder, the previous
+  threshold-only logic in DocKG produced ~12.4M edges (up from 4.5M) due to
+  formulaic prose corpora (Burroughs, Lovecraft, long Russian novels) saturating
+  the 0.85 cosine threshold. Patched DocKG to enforce a per-chunk top-k cap
+  (default k=5) on SIMILAR_TO edges; corpus now sits at 4.84M edges with bounded
+  out-degree, signal-rich similarity links, and ~14% faster ingest. The fix
+  required:
+  - Implementing the documented-but-dead `similar_k` parameter in
+    `doc_kg/index.py:_discover_similar_edges` (was previously labelled
+    "unused — kept for API compatibility")
+  - Exposing `--similar-k` and `--similar-threshold` flags on `dockg build`
+  - Canonicalizing edges to `(min(src,dst), max(src,dst))` so the SQLite
+    `(src, rel, dst)` PRIMARY KEY dedupes cross-batch under per-row top-k
+
+---
+
 ## [1.0.0] - 2026-05-04
 
 ### Added

@@ -7,8 +7,8 @@ abstract: >
   named for the press that democratized books, built to do the same for
   structured knowledge. It ingests texts from Project Gutenberg, the Internet
   Archive, and local file corpora, and produces queryable knowledge graphs via
-  DocKG and KGRAG. The current corpus spans 78 public-domain masterworks across
-  9 genres (445,486 nodes, 4,525,716 edges), queryable as independent genre
+  DocKG and KGRAG. The current corpus spans 79 public-domain masterworks across
+  9 genres (448,139 nodes, 4,836,993 edges), queryable as independent genre
   corpora or as a unified gutenberg-all knowledge graph.
 authors:
   - family-names: Suchanek
@@ -17,7 +17,7 @@ authors:
     orcid: "https://orcid.org/0009-0009-0891-1507"
     email: suchanek@mac.com
     affiliation: "Flux-Frontiers"
-version: "1.0.0"
+version: "1.0.1"
 date-released: "2026-05-04"
 license: "Elastic-2.0"
 license-url: "https://www.elastic.co/licensing/elastic-license"

@@ -15,6 +15,7 @@
 | [Edgar Rice Burroughs](edgar_rice_burroughs/author.md) | 1875 | 1950 | 2 |
 | [Emily Brontë](emily_brontë/author.md) | 1818 | 1848 | 1 |
 | [Emperor of Rome Marcus Aurelius](emperor_of_rome_marcus_aurelius/author.md) | 121 | 180 | 1 |
+| [Epictetus](epictetus/author.md) | 55 | 135 | 1 |
 | [Friedrich Wilhelm Nietzsche](friedrich_wilhelm_nietzsche/author.md) | 1844 | 1900 | 2 |
 | [Fyodor Dostoyevsky](fyodor_dostoyevsky/author.md) | 1821 | 1881 | 3 |
 | [George Eliot](george_eliot/author.md) | 1819 | 1880 | 1 |
