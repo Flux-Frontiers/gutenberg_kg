@@ -62,7 +62,6 @@ processing pipelines.
 """
 
 import argparse
-import html
 import os
 import re
 import sys
@@ -110,7 +109,7 @@ NS = {
 
 # Namespaces used in Gutenberg RDF catalog files
 RDF_NS = {
-    "rdf":     "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "pgterms": "http://www.gutenberg.org/2009/pgterms/",
 }
 _RDF_ABOUT = "{http://www.w3.org/1999/02/22-rdf-syntax-ns#}about"
@@ -120,86 +119,131 @@ _RDF_RESOURCE = "{http://www.w3.org/1999/02/22-rdf-syntax-ns#}resource"
 # Each tuple: (compiled regex, markdown heading level, group index for title)
 HEADING_PATTERNS = [
     # "THE FIRST BOOK" / "THE SECOND BOOK" (ordinal, e.g. Meditations)
-    (re.compile(
-        r"^THE\s+(?:FIRST|SECOND|THIRD|FOURTH|FIFTH|SIXTH|SEVENTH|EIGHTH|"
-        r"NINTH|TENTH|ELEVENTH|TWELFTH|THIRTEENTH)\s+BOOK$",
-        re.IGNORECASE,
-    ), 2),
+    (
+        re.compile(
+            r"^THE\s+(?:FIRST|SECOND|THIRD|FOURTH|FIFTH|SIXTH|SEVENTH|EIGHTH|"
+            r"NINTH|TENTH|ELEVENTH|TWELFTH|THIRTEENTH)\s+BOOK$",
+            re.IGNORECASE,
+        ),
+        2,
+    ),
     # VOLUME / BOOK / PART + numeral (h2)
-    (re.compile(
-        r"^(?:VOLUME|BOOK|PART)\s+"
-        r"(?:THE\s+)?"
-        r"(?:[IVXLCDM]+|FIRST|SECOND|THIRD|FOURTH|FIFTH|SIXTH|SEVENTH|EIGHTH|"
-        r"NINTH|TENTH|ELEVENTH|TWELFTH|\d+)"
-        r"(?:\.?\s*[-—:.]?\s*(.+))?$",
-        re.IGNORECASE,
-    ), 2),
+    (
+        re.compile(
+            r"^(?:VOLUME|BOOK|PART)\s+"
+            r"(?:THE\s+)?"
+            r"(?:[IVXLCDM]+|FIRST|SECOND|THIRD|FOURTH|FIFTH|SIXTH|SEVENTH|EIGHTH|"
+            r"NINTH|TENTH|ELEVENTH|TWELFTH|\d+)"
+            r"(?:\.?\s*[-—:.]?\s*(.+))?$",
+            re.IGNORECASE,
+        ),
+        2,
+    ),
     # "Book the First--Recalled to Life" (Dickens style)
-    (re.compile(
-        r"^Book\s+the\s+\w+[-—].+$",
-        re.IGNORECASE,
-    ), 2),
+    (
+        re.compile(
+            r"^Book\s+the\s+\w+[-—].+$",
+            re.IGNORECASE,
+        ),
+        2,
+    ),
     # ACT (for plays, h2)
-    (re.compile(
-        r"^ACT\s+(?:[IVXLCDM]+|\d+)"
-        r"(?:\.?\s*[-—:.]?\s*(.+))?$",
-        re.IGNORECASE,
-    ), 2),
+    (
+        re.compile(
+            r"^ACT\s+(?:[IVXLCDM]+|\d+)"
+            r"(?:\.?\s*[-—:.]?\s*(.+))?$",
+            re.IGNORECASE,
+        ),
+        2,
+    ),
     # CHAPTER level (h2) — "CHAPTER I.", "CHAPTER XIV", "CHAPTER 3"
-    (re.compile(
-        r"^CHAPTER\s+(?:[IVXLCDM]+|\d+)\.?"
-        r"(?:\s*[-—:.]?\s*(.+))?$",
-        re.IGNORECASE,
-    ), 2),
+    (
+        re.compile(
+            r"^CHAPTER\s+(?:[IVXLCDM]+|\d+)\.?"
+            r"(?:\s*[-—:.]?\s*(.+))?$",
+            re.IGNORECASE,
+        ),
+        2,
+    ),
     # "Chapter 1" style Title Case
-    (re.compile(
-        r"^Chapter\s+(?:[IVXLCDM]+|\d+)\.?"
-        r"(?:\s*[-—:.]?\s*(.+))?$",
-    ), 2),
+    (
+        re.compile(
+            r"^Chapter\s+(?:[IVXLCDM]+|\d+)\.?"
+            r"(?:\s*[-—:.]?\s*(.+))?$",
+        ),
+        2,
+    ),
     # SCENE (for plays, h3)
-    (re.compile(
-        r"^SCENE\s+(?:[IVXLCDM]+|\d+)"
-        r"(?:\.?\s*[-—:.]?\s*(.+))?$",
-        re.IGNORECASE,
-    ), 3),
+    (
+        re.compile(
+            r"^SCENE\s+(?:[IVXLCDM]+|\d+)"
+            r"(?:\.?\s*[-—:.]?\s*(.+))?$",
+            re.IGNORECASE,
+        ),
+        3,
+    ),
     # LETTER I / LETTER 1 / "Letter 1" (epistolary novels)
-    (re.compile(
-        r"^Letter\s+(?:[IVXLCDM]+|\d+)"
-        r"(?:\.?\s*[-—:.]?\s*(.+))?$",
-        re.IGNORECASE,
-    ), 2),
+    (
+        re.compile(
+            r"^Letter\s+(?:[IVXLCDM]+|\d+)"
+            r"(?:\.?\s*[-—:.]?\s*(.+))?$",
+            re.IGNORECASE,
+        ),
+        2,
+    ),
     # Bible book headings: "The First Book of Moses: Called Genesis",
     # "The Book of Joshua", "The Gospel According to Saint Matthew", etc.
-    (re.compile(
-        r"^The\s+(?:First|Second|Third|Fourth|Fifth)\s+Book\s+of\s+.+$",
-    ), 2),
-    (re.compile(
-        r"^The\s+(?:Book\s+of|Gospel\s+According|Epistle|General\s+Epistle|"
-        r"Revelation|Acts|Song|Lamentations)\s+.+$",
-    ), 2),
+    (
+        re.compile(
+            r"^The\s+(?:First|Second|Third|Fourth|Fifth)\s+Book\s+of\s+.+$",
+        ),
+        2,
+    ),
+    (
+        re.compile(
+            r"^The\s+(?:Book\s+of|Gospel\s+According|Epistle|General\s+Epistle|"
+            r"Revelation|Acts|Song|Lamentations)\s+.+$",
+        ),
+        2,
+    ),
     # Testament dividers (Bible)
-    (re.compile(
-        r"^The\s+(?:Old|New)\s+Testament.*$",
-    ), 2),
+    (
+        re.compile(
+            r"^The\s+(?:Old|New)\s+Testament.*$",
+        ),
+        2,
+    ),
     # STAVE I / STAVE 1 (A Christmas Carol)
-    (re.compile(
-        r"^STAVE\s+(?:[IVXLCDM]+|\d+)"
-        r"(?:\.?\s*[-—:.]?\s*(.+))?$",
-        re.IGNORECASE,
-    ), 2),
+    (
+        re.compile(
+            r"^STAVE\s+(?:[IVXLCDM]+|\d+)"
+            r"(?:\.?\s*[-—:.]?\s*(.+))?$",
+            re.IGNORECASE,
+        ),
+        2,
+    ),
     # "I. A SCANDAL IN BOHEMIA" — Roman numeral + period + ALL CAPS TITLE
-    (re.compile(
-        r"^([IVXLCDM]{1,6})\.\s+([A-Z][A-Z\s\-',:]{2,60})$",
-    ), 2),
+    (
+        re.compile(
+            r"^([IVXLCDM]{1,6})\.\s+([A-Z][A-Z\s\-',:]{2,60})$",
+        ),
+        2,
+    ),
     # Roman numeral standalone: "I.", "II.", "XIV." (section breaks within stories)
     # Must have a period to distinguish "I." from "I think..."
-    (re.compile(
-        r"^([IVXLCDM]{1,6})\.\s*$",
-    ), 3),
+    (
+        re.compile(
+            r"^([IVXLCDM]{1,6})\.\s*$",
+        ),
+        3,
+    ),
     # Standalone ALL-CAPS heading (at least 3 chars, max ~60, not a sentence)
-    (re.compile(
-        r"^([A-Z][A-Z\s\-',:]{2,60})$",
-    ), 3),
+    (
+        re.compile(
+            r"^([A-Z][A-Z\s\-',:]{2,60})$",
+        ),
+        3,
+    ),
 ]
 
 # Illustration markers to clean up
@@ -219,6 +263,7 @@ FRONT_MATTER_SKIP = re.compile(
 # Utilities
 # ---------------------------------------------------------------------------
 
+
 def slugify(title: str) -> str:
     """Convert a title to a filesystem-friendly slug."""
     slug = title.lower().strip()
@@ -237,7 +282,7 @@ def fetch_url(url: str, retries: int = 3, backoff: float = 2.0) -> str:
         except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError) as exc:
             if attempt == retries - 1:
                 raise
-            wait = backoff * (2 ** attempt)
+            wait = backoff * (2**attempt)
             print(f"  Retry {attempt + 1}/{retries} after error: {exc}  (waiting {wait:.0f}s)")
             time.sleep(wait)
     return ""
@@ -246,6 +291,7 @@ def fetch_url(url: str, retries: int = 3, backoff: float = 2.0) -> str:
 # ---------------------------------------------------------------------------
 # Gutenberg OPDS Metadata
 # ---------------------------------------------------------------------------
+
 
 def fetch_metadata(ebook_id: int) -> dict:
     """Fetch book metadata from the Gutenberg OPDS feed."""
@@ -305,9 +351,9 @@ def fetch_metadata(ebook_id: int) -> dict:
             for p in div.findall("xhtml:p", NS):
                 text = "".join(p.itertext()).strip()
                 if text.startswith("Summary:"):
-                    meta["summary"] = text[len("Summary:"):].strip()
+                    meta["summary"] = text[len("Summary:") :].strip()
                 elif text.startswith("Note:"):
-                    meta["note"] = text[len("Note:"):].strip()
+                    meta["note"] = text[len("Note:") :].strip()
 
     meta["gutenberg_url"] = GUTENBERG_PAGE_URL.format(ebook_id=ebook_id)
 
@@ -387,7 +433,11 @@ def search_gutenberg(query: str, max_results: int = 25) -> list[dict]:
 
         ebook_id = int(m.group(1))
         title_el = entry.find("atom:title", NS)
-        title = title_el.text.strip() if title_el is not None and title_el.text else f"Unknown (#{ebook_id})"
+        title = (
+            title_el.text.strip()
+            if title_el is not None and title_el.text
+            else f"Unknown (#{ebook_id})"
+        )
 
         # In search results, author is in <content type="text">, not <author>
         author = ""
@@ -411,12 +461,14 @@ def search_gutenberg(query: str, max_results: int = 25) -> list[dict]:
             if term:
                 subjects.append(term)
 
-        results.append({
-            "ebook_id": ebook_id,
-            "title": title,
-            "author": author,
-            "subjects": subjects,
-        })
+        results.append(
+            {
+                "ebook_id": ebook_id,
+                "title": title,
+                "author": author,
+                "subjects": subjects,
+            }
+        )
 
         if len(results) >= max_results:
             break
@@ -428,17 +480,18 @@ def search_gutenberg(query: str, max_results: int = 25) -> list[dict]:
 # Boilerplate Stripping
 # ---------------------------------------------------------------------------
 
+
 def strip_boilerplate(text: str) -> str:
     """Remove Project Gutenberg header and footer boilerplate."""
     start = START_MARKER.search(text)
     end = END_MARKER.search(text)
 
     if start:
-        text = text[start.end():]
+        text = text[start.end() :]
     if end:
         end2 = END_MARKER.search(text)
         if end2:
-            text = text[:end2.start()]
+            text = text[: end2.start()]
 
     return text.strip() + "\n"
 
@@ -446,6 +499,7 @@ def strip_boilerplate(text: str) -> str:
 # ---------------------------------------------------------------------------
 # Text → Markdown Conversion
 # ---------------------------------------------------------------------------
+
 
 def _is_heading(line: str) -> tuple[int, str] | None:
     """Check if a line is a structural heading.
@@ -580,8 +634,6 @@ def text_to_markdown(text: str, meta: dict) -> str:
     md_lines.append("")
 
     prev_blank = True
-    prev_was_heading = False
-    in_paragraph = False
 
     i = start_idx
     while i < total:
@@ -598,8 +650,6 @@ def text_to_markdown(text: str, meta: dict) -> str:
             if not prev_blank:
                 md_lines.append("")
             prev_blank = True
-            prev_was_heading = False
-            in_paragraph = False
             i += 1
             continue
 
@@ -630,10 +680,13 @@ def text_to_markdown(text: str, meta: dict) -> str:
                 # Multi-line ALL CAPS title continuation (e.g. The Prince)
                 # But NOT bare roman numerals like "I." — those are sub-sections
                 is_bare_roman = bool(re.match(r"^[IVXLCDM]+\.\s*$", next_line_clean))
-                if (next_line_clean and next_line_clean.isupper()
-                        and heading_text.isupper()
-                        and len(next_line_clean) < 100
-                        and not is_bare_roman):
+                if (
+                    next_line_clean
+                    and next_line_clean.isupper()
+                    and heading_text.isupper()
+                    and len(next_line_clean) < 100
+                    and not is_bare_roman
+                ):
                     subtitle_lines.append(next_line_clean)
                     k = j + 1
                     while k < total and lines[k].strip() and lines[k].strip().isupper():
@@ -643,11 +696,14 @@ def text_to_markdown(text: str, meta: dict) -> str:
                     j = k
                 # Short, Title-Case subtitle (not a paragraph start)
                 # Must be very short (< 50 chars) and look like a title
-                elif (next_line_clean and len(next_line_clean) < 50
-                        and not _is_heading(next_line_clean)
-                        and not next_line_clean[0].islower()
-                        and next_line_clean[0].isupper()
-                        and not next_line_clean[-1] in ".!?;,"):
+                elif (
+                    next_line_clean
+                    and len(next_line_clean) < 50
+                    and not _is_heading(next_line_clean)
+                    and not next_line_clean[0].islower()
+                    and next_line_clean[0].isupper()
+                    and next_line_clean[-1] not in ".!?;,"
+                ):
                     subtitle_lines.append(next_line_clean)
                     j = j + 1
 
@@ -658,14 +714,11 @@ def text_to_markdown(text: str, meta: dict) -> str:
             md_lines.append("")
             i = j if subtitle_lines else i + 1
             prev_blank = True
-            prev_was_heading = True
             continue
 
         # Normal text line
         md_lines.append(stripped)
         prev_blank = False
-        prev_was_heading = False
-        in_paragraph = True
         i += 1
 
     return "\n".join(md_lines).strip() + "\n"
@@ -674,6 +727,7 @@ def text_to_markdown(text: str, meta: dict) -> str:
 # ---------------------------------------------------------------------------
 # Reference File Generation
 # ---------------------------------------------------------------------------
+
 
 def write_reference(book_dir: str, meta: dict) -> str:
     """Write a reference.md file with Gutenberg metadata."""
@@ -747,6 +801,7 @@ def write_reference(book_dir: str, meta: dict) -> str:
 # Download Orchestration
 # ---------------------------------------------------------------------------
 
+
 def download_book(
     ebook_id: int,
     title: str | None = None,
@@ -819,7 +874,7 @@ def download_book(
 def parse_catalog(catalog_path: str) -> list[tuple[int, str | None]]:
     """Parse a catalog file. Each line: <ebook_id>[\\t<title>]"""
     entries = []
-    with open(catalog_path, "r", encoding="utf-8") as f:
+    with open(catalog_path, encoding="utf-8") as f:
         for line_num, line in enumerate(f, 1):
             line = line.strip()
             if not line or line.startswith("#"):
@@ -838,6 +893,7 @@ def parse_catalog(catalog_path: str) -> list[tuple[int, str | None]]:
 # ---------------------------------------------------------------------------
 # Survey helpers
 # ---------------------------------------------------------------------------
+
 
 def _survey_book_dir(book_dir: str, title: str) -> dict:
     """Return a status dict for a single book directory."""
@@ -886,11 +942,7 @@ def survey_repo(genre_filter: str | None = None) -> None:
     if not genre_filter:
         ungrouped = []
         for entry in sorted(os.scandir(CORPUS_ROOT), key=lambda e: e.name):
-            if (
-                entry.is_dir()
-                and not entry.name.startswith(".")
-                and entry.name not in genre_set
-            ):
+            if entry.is_dir() and not entry.name.startswith(".") and entry.name not in genre_set:
                 ungrouped.append(_survey_book_dir(entry.path, entry.name))
 
         if ungrouped:
@@ -909,6 +961,7 @@ def survey_repo(genre_filter: str | None = None) -> None:
 # ---------------------------------------------------------------------------
 # CLI
 # ---------------------------------------------------------------------------
+
 
 def cmd_search(args):
     """Handle the 'search' subcommand."""
@@ -949,8 +1002,10 @@ def cmd_search(args):
         if subjects:
             print(f"{'':>8}Subjects: {subjects}")
 
-    print(f"\n{len(results)} result(s). Download with: "
-          f"python scripts/download_gutenberg.py download <ID>")
+    print(
+        f"\n{len(results)} result(s). Download with: "
+        f"python scripts/download_gutenberg.py download <ID>"
+    )
 
 
 def cmd_download(args):
@@ -960,7 +1015,10 @@ def cmd_download(args):
     dry_run = getattr(args, "dry_run", False)
 
     if genre and genre not in ALL_GENRES:
-        print(f"ERROR: unknown genre {genre!r}. Known genres: {', '.join(ALL_GENRES)}", file=sys.stderr)
+        print(
+            f"ERROR: unknown genre {genre!r}. Known genres: {', '.join(ALL_GENRES)}",
+            file=sys.stderr,
+        )
         sys.exit(1)
 
     if dry_run:
@@ -990,7 +1048,10 @@ def cmd_catalog(args):
     dry_run = getattr(args, "dry_run", False)
 
     if genre and genre not in ALL_GENRES:
-        print(f"ERROR: unknown genre {genre!r}. Known genres: {', '.join(ALL_GENRES)}", file=sys.stderr)
+        print(
+            f"ERROR: unknown genre {genre!r}. Known genres: {', '.join(ALL_GENRES)}",
+            file=sys.stderr,
+        )
         sys.exit(1)
 
     entries = parse_catalog(args.catalog_file)
@@ -1046,8 +1107,7 @@ def cmd_fetch_genre(args):
     already_present = set()
     if os.path.isdir(genre_dir):
         already_present = {
-            e.name for e in os.scandir(genre_dir)
-            if e.is_dir() and not e.name.startswith(".")
+            e.name for e in os.scandir(genre_dir) if e.is_dir() and not e.name.startswith(".")
         }
 
     print(f"Searching Gutenberg for: {query!r} (max {max_results} results)\n")
@@ -1075,7 +1135,9 @@ def cmd_fetch_genre(args):
             to_download.append(r)
         else:
             try:
-                ans = input(f"  Download {r['title']!r} (#{r['ebook_id']})? [Y/n/q] ").strip().lower()
+                ans = (
+                    input(f"  Download {r['title']!r} (#{r['ebook_id']})? [Y/n/q] ").strip().lower()
+                )
             except (EOFError, KeyboardInterrupt):
                 print("\n  Aborted.")
                 break
@@ -1107,25 +1169,27 @@ def cmd_fetch_genre(args):
             path = ""
             status = f"failed: {exc}"
             failed += 1
-        report_rows.append({
-            "id": ebook_id,
-            "title": title,
-            "author": r.get("author", ""),
-            "status": status,
-            "path": path,
-        })
+        report_rows.append(
+            {
+                "id": ebook_id,
+                "title": title,
+                "author": r.get("author", ""),
+                "status": status,
+                "path": path,
+            }
+        )
         print()
 
     # Write report
     reports_dir = os.path.join(REPO_ROOT, "reports")
     os.makedirs(reports_dir, exist_ok=True)
-    ts = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d_%H%M%S")
+    ts = datetime.datetime.now(datetime.UTC).strftime("%Y-%m-%d_%H%M%S")
     report_path = os.path.join(reports_dir, f"fetch_genre_{genre}_{ts}.md")
 
     lines = [
         f"# Fetch-Genre Report: {genre}",
         "",
-        f"**Date:** {datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%d %H:%M:%S UTC')}  ",
+        f"**Date:** {datetime.datetime.now(datetime.UTC).strftime('%Y-%m-%d %H:%M:%S UTC')}  ",
         f"**Query:** `{query}`  ",
         f"**Genre:** `{genre}`  ",
         f"**Dry run:** {'yes' if dry_run else 'no'}  ",
@@ -1164,7 +1228,10 @@ def cmd_survey(args):
     """Handle the 'survey' subcommand."""
     genre_filter = getattr(args, "genre", None)
     if genre_filter and genre_filter not in ALL_GENRES:
-        print(f"ERROR: unknown genre {genre_filter!r}. Known genres: {', '.join(ALL_GENRES)}", file=sys.stderr)
+        print(
+            f"ERROR: unknown genre {genre_filter!r}. Known genres: {', '.join(ALL_GENRES)}",
+            file=sys.stderr,
+        )
         sys.exit(1)
     survey_repo(genre_filter=genre_filter)
 
@@ -1183,7 +1250,9 @@ def main():
     sp_search.add_argument("--title", "-t", help="Filter by title keyword")
     sp_search.add_argument("--subject", "-s", help="Filter by subject/topic")
     sp_search.add_argument("--language", "-l", help="Filter by language (e.g. 'en', 'fr')")
-    sp_search.add_argument("--max-results", "-n", type=int, default=25, help="Max results (default: 25)")
+    sp_search.add_argument(
+        "--max-results", "-n", type=int, default=25, help="Max results (default: 25)"
+    )
     sp_search.set_defaults(func=cmd_search)
 
     # --- download ---
@@ -1248,13 +1317,15 @@ def main():
         help="Search query (default: genre name)",
     )
     sp_fetch.add_argument(
-        "--max-results", "-n",
+        "--max-results",
+        "-n",
         type=int,
         default=25,
         help="Max search results to show (default: 25)",
     )
     sp_fetch.add_argument(
-        "--yes", "-y",
+        "--yes",
+        "-y",
         action="store_true",
         help="Download all results without prompting",
     )

@@ -3,6 +3,7 @@
 Entry point for callers: :func:`build`. The CLI wrapper lives at
 ``gutenberg_kg.cli.cmd_authors`` and exposes this as ``gutenkg authors``.
 """
+
 from __future__ import annotations
 
 import re
@@ -20,18 +21,21 @@ AUTHORS_DIR = CORPUS_ROOT / "authors"
 # RDF fetcher — lazy import of scripts/download_gutenberg.py
 # ---------------------------------------------------------------------------
 
+
 def _dg():
     """Lazy-import ``download_gutenberg`` from ``scripts/`` for RDF fetching."""
     scripts = str(REPO_ROOT / "scripts")
     if scripts not in sys.path:
         sys.path.insert(0, scripts)
     import download_gutenberg as _mod  # noqa: PLC0415
+
     return _mod
 
 
 # ---------------------------------------------------------------------------
 # reference.md parser
 # ---------------------------------------------------------------------------
+
 
 def _field(pattern: str, text: str) -> str | None:
     m = re.search(pattern, text, re.MULTILINE)
@@ -50,10 +54,10 @@ def parse_reference(path: Path) -> dict:
     # Genre is the grandparent dir name (corpus/<genre>/<book>/reference.md)
     meta["genre"] = path.parent.parent.name
 
-    meta["author"]       = _field(r"\*\*Name\*\*:\s*(.+)$", text)
+    meta["author"] = _field(r"\*\*Name\*\*:\s*(.+)$", text)
     meta["author_birth"] = _field(r"\*\*Born\*\*:\s*(.+)$", text)
     meta["author_death"] = _field(r"\*\*Died\*\*:\s*(.+)$", text)
-    meta["author_url"]   = _field(r"\*\*Wikipedia\*\*:\s*(.+)$", text)
+    meta["author_url"] = _field(r"\*\*Wikipedia\*\*:\s*(.+)$", text)
     aid = _field(r"\*\*Gutenberg Agent ID\*\*:\s*(\d+)", text)
     meta["author_agent_id"] = int(aid) if aid else None
 
@@ -63,6 +67,7 @@ def parse_reference(path: Path) -> dict:
 # ---------------------------------------------------------------------------
 # reference.md patcher
 # ---------------------------------------------------------------------------
+
 
 def patch_reference(path: Path, extra: dict, dry_run: bool = False) -> bool:
     """Insert missing Born/Died/Wikipedia/AgentID into the ``## Author`` section.
@@ -105,6 +110,7 @@ def patch_reference(path: Path, extra: dict, dry_run: bool = False) -> bool:
 # Author page + index writers
 # ---------------------------------------------------------------------------
 
+
 def _slugify(name: str) -> str:
     slug = name.lower().strip()
     slug = re.sub(r"[^\w\s-]", "", slug)
@@ -122,14 +128,14 @@ def write_author_page(
     out_dir = AUTHORS_DIR / slug
     out_path = out_dir / "author.md"
 
-    births = {b["author_birth"]    for b in books if b.get("author_birth")}
-    deaths = {b["author_death"]    for b in books if b.get("author_death")}
-    urls   = {b["author_url"]      for b in books if b.get("author_url")}
+    births = {b["author_birth"] for b in books if b.get("author_birth")}
+    deaths = {b["author_death"] for b in books if b.get("author_death")}
+    urls = {b["author_url"] for b in books if b.get("author_url")}
     agents = {b["author_agent_id"] for b in books if b.get("author_agent_id")}
 
     birth = next(iter(births), None)
     death = next(iter(deaths), None)
-    url   = next(iter(urls), None)
+    url = next(iter(urls), None)
     agent = next(iter(agents), None)
 
     lines = [f"# {author}", ""]
@@ -171,7 +177,7 @@ def write_index(authors_books: dict[str, list[dict]], dry_run: bool = False) -> 
         books = authors_books[author]
         birth = next((b["author_birth"] for b in books if b.get("author_birth")), "—")
         death = next((b["author_death"] for b in books if b.get("author_death")), "—")
-        slug  = _slugify(author)
+        slug = _slugify(author)
         lines.append(f"| [{author}]({slug}/author.md) | {birth} | {death} | {len(books)} |")
     lines.append("")
 
@@ -185,6 +191,7 @@ def write_index(authors_books: dict[str, list[dict]], dry_run: bool = False) -> 
 # ---------------------------------------------------------------------------
 # Orchestrator
 # ---------------------------------------------------------------------------
+
 
 def build(refresh: bool = False, dry_run: bool = False) -> int:
     """Rebuild ``corpus/authors/`` from all ``reference.md`` files.
@@ -207,7 +214,8 @@ def build(refresh: bool = False, dry_run: bool = False) -> int:
     if refresh:
         dg = _dg()
         needs_refresh = [
-            m for m in metas
+            m
+            for m in metas
             if m.get("ebook_id") and not m.get("author_birth") and not m.get("author_death")
         ]
         print(f"--- Refreshing metadata ({len(needs_refresh)} books missing provenance) ---")

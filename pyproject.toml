@@ -1,57 +1,180 @@
-# GutenbergKG — CLI for Project Gutenberg knowledge graphs
-#
-# Provides the `gutenkg` command for downloading, ingesting, and querying
-# the Project Gutenberg corpus via DocKG and KGRAG.
+# pyproject.toml — gutenberg-kg package configuration (PEP 621)
 #
 # Author: Eric G. Suchanek, PhD
+# Last Revision: 2026-05-03
 #
+# Build system : Poetry 2.x with PEP 621 [project] table
+#
+# Quick install (pip)
+# -------------------
+#   pip install -e ".[dev]"             core + dev tools (pytest, ruff, mypy, etc.)
+#   pip install -e ".[kgdeps]"          core + KG integrations (doc-kg, kg-rag)
+#   pip install -e ".[all]"             everything above
+#   pip install -e "."                  core runtime only
+#
+# Quick install (poetry)
+# ----------------------
+#   poetry install --all-extras         everything
+#   poetry install --extras "dev"       core + dev tools only
+#   poetry install --extras "kgdeps"    core + KG integrations only
+#   poetry install                      core runtime only
+#
+# First-time setup
+# ----------------
+#   python -m venv .venv
+#   source .venv/bin/activate       # Windows: .venv\Scripts\activate
+#   pip install -e ".[dev]"
+#
+# Run tests
+# ---------
+#   pytest                          uses pytest.ini (testpaths = tests/)
+#   pytest -m "not slow"            skip slow tests
+#   pytest --cov=gutenberg_kg       with coverage
+#
+# Build KG indices (after code changes)
+# --------------------------------------
+#   codekg build --repo .
 
 [build-system]
 requires = ["poetry-core>=2.0.0"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
-name = "gutenberg-kg"
-version = "0.1.0"
-description = "CLI for downloading, ingesting, and querying Project Gutenberg knowledge graphs"
-authors = ["Eric G. Suchanek, PhD <suchanek@mac.com>"]
-license = "Elastic-2.0"
-readme = "README.md"
-homepage = "https://github.com/Flux-Frontiers/gutenberg_kg"
-repository = "https://github.com/Flux-Frontiers/gutenberg_kg"
-keywords = ["knowledge-graph", "gutenberg", "dockg", "kgrag", "nlp"]
 packages = [{ include = "gutenberg_kg", from = "src" }]
 
-[tool.poetry.dependencies]
-python = ">=3.12,<3.14"
-click = ">=8.1.0"
-kg-rag = { git = "https://github.com/Flux-Frontiers/KGRAG.git" }
-doc-kg = { git = "https://github.com/Flux-Frontiers/doc_kg.git" }
-
 [tool.poetry.group.dev.dependencies]
-pytest = ">=8.0.0"
-ruff = ">=0.4.0"
-mypy = ">=1.10.0"
+detect-secrets = ">=1.5.0"
+mypy           = ">=1.10.0"
+pdoc           = ">=14.0.0"
+pillow         = ">=10.0.0"
+pre-commit     = ">=4.5.1"
+pylint         = ">=4.0.5"
+pytest         = ">=8.0.0"
+pytest-cov     = ">=5.0.0"
+ruff           = ">=0.4.0"
+scipy          = ">=1.13.0"
+vtracer        = ">=0.6.0"
 
-[tool.poetry.scripts]
+# ---------------------------------------------------------------------------
+# PEP 621 project metadata
+# ---------------------------------------------------------------------------
+[project]
+name = "gutenberg-kg"
+version = "1.0.0"
+description = "The Knowledge Press — universal ingestion engine for digitized text corpora"
+readme = "README.md"
+license = "Elastic-2.0"
+authors = [
+    { name = "Eric G. Suchanek, PhD", email = "suchanek@mac.com" }
+]
+keywords = ["knowledge-graph", "gutenberg", "internet-archive", "dockg", "kgrag", "nlp", "knowledge-press"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+]
+requires-python = ">=3.12,<3.14"
+dependencies = [
+    "click>=8.1.0,<9",
+]
+
+[project.optional-dependencies]
+dev = [
+    "detect-secrets>=1.5.0",
+    "mypy>=1.10.0",
+    "pdoc>=14.0.0",
+    "pillow>=10.0.0",
+    "pre-commit>=4.5.1",
+    "pylint>=4.0.5",
+    "pytest>=8.0.0",
+    "pytest-cov>=5.0.0",
+    "ruff>=0.4.0",
+    "scipy>=1.13.0",
+    "vtracer>=0.6.0",
+]
+# doc-kg is on PyPI; kg-rag is not yet — install manually: pip install git+https://github.com/Flux-Frontiers/KGRAG.git
+kgdeps = [
+    "doc-kg>=0.12.0",
+    "kg-rag @ git+https://github.com/Flux-Frontiers/KGRAG.git",
+]
+all = [
+    "detect-secrets>=1.5.0",
+    "doc-kg>=0.12.0",
+    "kg-rag @ git+https://github.com/Flux-Frontiers/KGRAG.git",
+    "mypy>=1.10.0",
+    "pdoc>=14.0.0",
+    "pillow>=10.0.0",
+    "pre-commit>=4.5.1",
+    "pylint>=4.0.5",
+    "pytest>=8.0.0",
+    "pytest-cov>=5.0.0",
+    "ruff>=0.4.0",
+    "scipy>=1.13.0",
+    "vtracer>=0.6.0",
+]
+
+[project.urls]
+Homepage   = "https://github.com/Flux-Frontiers/gutenberg_kg"
+Repository = "https://github.com/Flux-Frontiers/gutenberg_kg"
+
+[project.scripts]
 gutenkg = "gutenberg_kg.cli.main:cli"
 
+# ---------------------------------------------------------------------------
+# Tool configuration
+# ---------------------------------------------------------------------------
 [tool.ruff]
-line-length = 100
+line-length    = 100
 target-version = "py312"
+exclude        = [".claude"]
 
 [tool.ruff.lint]
 select = ["E", "F", "W", "I", "UP"]
 ignore = ["E501"]
 
 [tool.mypy]
-python_version = "3.12"
-strict = false
+python_version         = "3.12"
+strict                 = false
 ignore_missing_imports = true
+mypy_path              = "src"
+explicit_package_bases = true
+
+[tool.pytest.ini_options]
+testpaths  = ["tests"]
+addopts    = "-v --tb=short"
+pythonpath = ["src"]
+
+[tool.pylint.messages_control]
+disable = ["all"]
+enable = [
+    "broad-exception-caught",   # W0718
+    "cell-var-from-loop",       # W0640
+    "undefined-variable",       # E0602
+    # cyclic-import (R0401) omitted: Click command registration causes benign cycles
+    # import-outside-toplevel (C0415) omitted: lazy script imports are intentional
+]
+
+# ---------------------------------------------------------------------------
+# CodeKG / DocKG index configuration
+# ---------------------------------------------------------------------------
+[tool.pycodekg]
+include = ["src"]
 
 [tool.dockg]
 exclude = [
-    ".dockg", ".codekg", ".git", ".venv", "venv",
-    "__pycache__", ".mypy_cache", ".pytest_cache", "dist", "reports",
-    "src",
+    ".dockg", ".pycodekg", ".git", ".mypy_cache", ".pytest_cache", ".venv",
+    "__pycache__", "bundles", "dist", "src", "venv",
+]
+
+# ---------------------------------------------------------------------------
+# Poe tasks
+# ---------------------------------------------------------------------------
+[tool.poe.tasks.docs]
+help     = "Generate project documentation and user guide PDFs"
+sequence = [
+    { shell = "cd src && pdoc --o ../docs --logo ./logo.png gutenberg_kg" },
 ]

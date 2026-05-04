@@ -10,6 +10,47 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added
 
+### Changed
+
+### Removed
+
+### Fixed
+
+---
+
+## [1.0.0] - 2026-05-04
+
+### Added
+
+- **Brand assets** — `assets/gutenberg_logo.png` (RGBA master with real transparency),
+  `assets/gutenberg_logo.svg` (true vector via vtracer), and size variants:
+  `assets/logos/logo_{32,64,128,256,512}.png` for embedding,
+  `assets/badges/badge_{20,40,80,200}.png` for shields and inline badges.
+- **`scripts/process_logo.py`** — automated logo pipeline. Removes baked-in
+  checkerboard background, produces real RGBA alpha with edge-feathered anti-alias,
+  generates all logo/badge size variants, and exports SVG via `vtracer`. CLI flags
+  for tuning background threshold and feather radius.
+- **Test suite** — `tests/test_authors.py`, `tests/test_cli.py`, `tests/test_options.py`,
+  `tests/test_version.py` (65 tests, all passing).
+- **CI workflow** — `.github/workflows/ci.yml` runs lint + tests on push/PR.
+- **GitHub issue templates** — `.github/ISSUE_TEMPLATE/bug_report.md` and
+  `feature_request.md`.
+- **Pre-commit hooks** — `.pre-commit-config.yaml` + `.secrets.baseline` for
+  ruff, mypy, and detect-secrets enforcement.
+- **`.vscode/settings.json`** — pytest configured against the project venv interpreter.
+- **README citation section** — BibTeX + APA blocks; centered logo header; refined
+  badges (Python 3.12 | 3.13, Elastic-2.0 code, Public Domain texts, v1.0.0,
+  corpus stats, DocKG, KGRAG).
+- **Dev dependencies** — `pillow`, `scipy`, `vtracer` added for logo processing.
+- **Internet Archive ingestion** — `gutenkg ia` CLI group with `search`, `download`,
+  `catalog`, and `survey` subcommands. Fetches books from archive.org, converts OCR
+  text to structured Markdown (same pipeline as Gutenberg), and deposits under `corpus/`.
+- **`scripts/download_ia.py`** — promoted from `audel_kg/` sub-project into the main
+  scripts directory as a first-class source alongside `download_gutenberg.py`.
+- **`src/gutenberg_kg/cli/cmd_ia.py`** — Click command group for IA operations.
+- **`ALL_IA_GENRES`** in `cli/options.py` — separate genre registry for IA-sourced corpora
+  (`audel-electric` initial entry).
+- **`HANDOFF_IA.md`** — architecture handoff document for the IA integration work.
 - **`gutenkg` CLI** — full Click-based command-line interface (`src/gutenberg_kg/`),
   matching the code_kg/doc_kg package pattern. Entry point: `gutenkg`.
   - `gutenkg ingest` — build DocKG indices, register with KGRAG, push per-genre
@@ -28,7 +69,7 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   - Wipe `.dockg` before `--force-build` to avoid stale state errors
 - **`scripts/download_gutenberg.py`** — major upgrade:
   - `survey` subcommand — scan repo, show `md/ref/kg` status per book by genre
-  - `fetch-genre` subcommand — search → confirm → download → report in one step
+  - `fetch-genre` subcommand — search, confirm, download, report in one step
   - `--genre` flag on `download` and `catalog` — route books into genre subdirectories
   - `--force` flag — re-download even if already present
   - `--dry-run` flag on `download`, `catalog`, `fetch-genre`
@@ -46,11 +87,31 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Changed
 
+- **`CITATION.cff`** — bumped to version 1.0.0, dated 2026-05-04. Title updated to
+  "GutenbergKG: The Knowledge Press"; abstract expanded to cover Internet Archive
+  and corpus stats; added `references` block linking DocKG and KGRAG; corrected
+  contact email; added explicit `license` field.
+- **Re-framed as "The Knowledge Press"** — GutenbergKG is now positioned as a universal
+  ingestion engine for digitized text corpora, not a Gutenberg-specific tool. Name is
+  unchanged; the metaphor is now explicit: any public domain text source feeds the same
+  pipeline.
+- **`pyproject.toml`** description updated to "The Knowledge Press -- universal ingestion
+  engine for digitized text corpora"; classifier promoted from Alpha to Production/Stable.
+- **`gutenkg` CLI help text** updated to reflect the Knowledge Press framing.
+- **README.md** — lead paragraph and overview updated for the broader scope; Project
+  Gutenberg logo image removed (no affiliation); "Public Domain" badge link changed from
+  gutenberg.org to the repo (no implied endorsement).
+- **License section** now explicitly states GutenbergKG has no affiliation with or
+  endorsement from Project Gutenberg or the Internet Archive.
 - LanceDB vector indices are now **local-only** (gitignored). Only `graph.sqlite`
-  is committed, keeping push sizes manageable. Rebuild with `gutenkg rebuild-lancedb`
-  after cloning.
+  is committed. Rebuild with `gutenkg rebuild-lancedb` after cloning.
 - Git push strategy changed from single monolithic push to **per-genre batched commits**
   via `gutenkg ingest --push`.
+
+### Removed
+
+- **`MANIFESTO.md`** — content consolidated into `README.md` ("Knowledge Press"
+  framing).
 
 ### Fixed
 

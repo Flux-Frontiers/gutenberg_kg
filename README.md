@@ -1,23 +1,26 @@
-[![Python](https://img.shields.io/badge/python-3.12%2B-blue.svg)](https://www.python.org/)
-[![License: Public Domain](https://img.shields.io/badge/texts-Public%20Domain-green.svg)](https://www.gutenberg.org/)
-[![Books](https://img.shields.io/badge/corpus-78%20books-orange.svg)](https://github.com/Flux-Frontiers/gutenberg_kg)
-[![DocKG](https://img.shields.io/badge/DocKG-ready-blue.svg)](https://github.com/Flux-Frontiers/doc_kg)
-[![KGRAG](https://img.shields.io/badge/KGRAG-integrated-purple.svg)](https://github.com/Flux-Frontiers/KGRAG)
-[![Nodes](https://img.shields.io/badge/nodes-445K-green.svg)](https://github.com/Flux-Frontiers/gutenberg_kg)
-[![Edges](https://img.shields.io/badge/edges-4.5M-green.svg)](https://github.com/Flux-Frontiers/gutenberg_kg)
-[![DOI](https://zenodo.org/badge/1194808988.svg)](https://zenodo.org/badge/latestdoi/1194808988)
-
 <p align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Project_Gutenberg_logo.png/320px-Project_Gutenberg_logo.png" alt="Project Gutenberg" width="200"/>
+  <img src="assets/gutenberg_logo.png" alt="GutenbergKG — The Knowledge Press" width="220"/>
 </p>
 
-# GutenbergKG
+<p align="center">
+  <a href="https://www.python.org/"><img src="https://img.shields.io/badge/python-3.12%20|%203.13-blue.svg" alt="Python"/></a>
+  <a href="https://www.elastic.co/licensing/elastic-license"><img src="https://img.shields.io/badge/code-Elastic--2.0-lightgrey.svg" alt="Code License"/></a>
+  <a href="https://www.gutenberg.org/"><img src="https://img.shields.io/badge/texts-Public%20Domain-green.svg" alt="Texts License"/></a>
+  <img src="https://img.shields.io/badge/version-1.0.0-blue.svg" alt="Version"/>
+  <img src="https://img.shields.io/badge/corpus-78%20books-orange.svg" alt="Corpus"/>
+  <img src="https://img.shields.io/badge/nodes-445K-green.svg" alt="Nodes"/>
+  <img src="https://img.shields.io/badge/edges-4.5M-green.svg" alt="Edges"/>
+  <a href="https://github.com/Flux-Frontiers/doc_kg"><img src="https://img.shields.io/badge/DocKG-ready-blue.svg" alt="DocKG"/></a>
+  <a href="https://github.com/Flux-Frontiers/KGRAG"><img src="https://img.shields.io/badge/KGRAG-integrated-purple.svg" alt="KGRAG"/></a>
+</p>
 
-**GutenbergKG** — A curated corpus of 78 public-domain masterworks from [Project Gutenberg](https://www.gutenberg.org/), structured for knowledge-graph construction with [DocKG](https://github.com/Flux-Frontiers/doc_kg) and the [KGRAG](https://github.com/Flux-Frontiers/KGRAG) federated query framework.
+# GutenbergKG — The Knowledge Press
 
-The corpus spans 9 genres, 445,486 nodes, and 4,525,716 edges — queryable as independent genre corpora or as a unified `gutenberg-all` knowledge graph.
+**GutenbergKG** is a universal ingestion engine for digitized text corpora — named for the press that democratized books, built to do the same for structured knowledge. It ingests from [Project Gutenberg](https://www.gutenberg.org/), the [Internet Archive](https://archive.org/), and local file corpora, and produces queryable knowledge graphs via [DocKG](https://github.com/Flux-Frontiers/doc_kg) and [KGRAG](https://github.com/Flux-Frontiers/KGRAG).
 
-*Author: Eric G. Suchanek, PhD*  
+The current corpus spans 78 public-domain masterworks across 9 genres — 445,486 nodes, 4,525,716 edges — queryable as independent genre corpora or as a unified `gutenberg-all` knowledge graph.
+
+*Author: Eric G. Suchanek, PhD*
 *Flux-Frontiers, Liberty TWP, OH*
 
 ---
@@ -410,6 +413,32 @@ Full technical reference: [`DOWNLOAD_PIPELINE.md`](DOWNLOAD_PIPELINE.md).
 
 ---
 
+## Citation
+
+If you use GutenbergKG in your research, please cite it. GitHub's **Cite this repository** button (top-right of the repo page) will generate APA or BibTeX automatically from [`CITATION.cff`](CITATION.cff).
+
+**BibTeX:**
+
+```bibtex
+@software{suchanek2026gutenbergkg,
+  author       = {Suchanek, Eric G.},
+  title        = {{GutenbergKG}: The Knowledge Press},
+  year         = {2026},
+  version      = {1.0.0},
+  publisher    = {Flux-Frontiers},
+  url          = {https://github.com/Flux-Frontiers/gutenberg_kg},
+  note         = {Universal ingestion engine for digitized text corpora;
+                  78 public-domain masterworks across 9 genres as queryable
+                  knowledge graphs via DocKG and KGRAG}
+}
+```
+
+**APA:**
+
+> Suchanek, E. G. (2026). *GutenbergKG: The Knowledge Press* (Version 1.0.0) [Software]. Flux-Frontiers. https://github.com/Flux-Frontiers/gutenberg_kg
+
+---
+
 ## License
 
-The texts in this repository are **public domain** via [Project Gutenberg](https://www.gutenberg.org/). The download scripts and tooling are part of the [Flux Frontiers](https://github.com/Flux-Frontiers) project and are released under the [Elastic License 2.0](https://www.elastic.co/licensing/elastic-license).
+The texts in this repository are **public domain**. They were sourced from [Project Gutenberg](https://www.gutenberg.org/) and the [Internet Archive](https://archive.org/); GutenbergKG is an independent project with no affiliation with or endorsement from either organization. The download scripts and tooling are part of the [Flux Frontiers](https://github.com/Flux-Frontiers) project and are released under the [Elastic License 2.0](https://www.elastic.co/licensing/elastic-license).

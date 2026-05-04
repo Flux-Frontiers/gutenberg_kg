@@ -1,17 +1,19 @@
 """Ingest subcommands — build DocKG indices and register with KGRAG."""
+
 import sys
 import time
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from pathlib import Path
 
 import click
 
 from gutenberg_kg.cli.main import cli
-from gutenberg_kg.cli.options import ALL_GENRES, CORPUS_ROOT
+from gutenberg_kg.cli.options import ALL_GENRES, CORPUS_ROOT, REPO_ROOT
 
 # ---------------------------------------------------------------------------
 # Lazy script import helper
 # ---------------------------------------------------------------------------
+
 
 def _ingest_mod():
     """Import ingest from the scripts directory on first use."""
@@ -19,12 +21,14 @@ def _ingest_mod():
     if scripts_dir not in sys.path:
         sys.path.insert(0, scripts_dir)
     import ingest as _mod  # noqa: PLC0415
+
     return _mod
 
 
 # ---------------------------------------------------------------------------
 # Commands
 # ---------------------------------------------------------------------------
+
 
 @cli.command("ingest")
 @click.option(
@@ -83,9 +87,7 @@ def ingest(genre, force_build, force_register, push, dry_run, registry):
 
     unknown = [g for g in genres if g not in ALL_GENRES]
     if unknown:
-        click.echo(
-            f"ERROR: unknown genre(s): {', '.join(unknown)}", err=True
-        )
+        click.echo(f"ERROR: unknown genre(s): {', '.join(unknown)}", err=True)
         click.echo(f"Valid genres: {', '.join(ALL_GENRES)}", err=True)
         raise SystemExit(1)
 
@@ -100,12 +102,13 @@ def ingest(genre, force_build, force_register, push, dry_run, registry):
         click.echo("[DRY RUN — no changes will be made]\n")
 
     genre_summaries = []
-    wall_start = datetime.now(timezone.utc)
+    wall_start = datetime.now(UTC)
     wall_t0 = time.perf_counter()
 
-    with KGRegistry(db_path=registry_path) as kg_reg, \
-         CorpusRegistry(db_path=registry_path) as corp_reg:
-
+    with (
+        KGRegistry(db_path=registry_path) as kg_reg,
+        CorpusRegistry(db_path=registry_path) as corp_reg,
+    ):
         click.echo("--- Ensuring corpora ---")
         for g in genres:
             ig.ensure_corpus(
@@ -129,8 +132,7 @@ def ingest(genre, force_build, force_register, push, dry_run, registry):
                 continue
 
             book_dirs = sorted(
-                p for p in genre_dir.iterdir()
-                if p.is_dir() and not p.name.startswith(".")
+                p for p in genre_dir.iterdir() if p.is_dir() and not p.name.startswith(".")
             )
             if not book_dirs:
                 click.echo(f"[!] No book directories in {genre_dir} — skipping\n")
@@ -157,9 +159,7 @@ def ingest(genre, force_build, force_register, push, dry_run, registry):
     wall_elapsed = time.perf_counter() - wall_t0
     ig.print_summary(genre_summaries, opts, registry_path, wall_start, wall_elapsed)
 
-    report_path = ig.save_summary(
-        genre_summaries, opts, registry_path, wall_start, wall_elapsed
-    )
+    report_path = ig.save_summary(genre_summaries, opts, registry_path, wall_start, wall_elapsed)
     click.echo(f"  Report saved: {report_path}\n")
 
     if any(g.failed for g in genre_summaries):

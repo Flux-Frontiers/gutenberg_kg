@@ -1,4 +1,5 @@
 """Rebuild subcommands — reconstruct LanceDB vector indices from graph.sqlite."""
+
 import subprocess
 
 import click
@@ -40,8 +41,7 @@ def rebuild_lancedb(genre):
         click.echo(f"--- {g} ---")
 
         book_dirs = sorted(
-            p for p in genre_dir.iterdir()
-            if p.is_dir() and not p.name.startswith(".")
+            p for p in genre_dir.iterdir() if p.is_dir() and not p.name.startswith(".")
         )
 
         for book_dir in book_dirs:
