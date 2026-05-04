@@ -33,7 +33,7 @@ import subprocess
 import sys
 import time
 from dataclasses import dataclass, field
-from datetime import date, datetime, timezone
+from datetime import UTC, date, datetime
 from pathlib import Path
 
 from kg_rag.corpus_registry import CorpusRegistry
@@ -80,9 +80,10 @@ class IngestOptions:
 @dataclass
 class BookResult:
     """Timing and outcome for one book."""
+
     name: str
     genre: str
-    status: str        # 'built' | 'skipped' | 'failed'
+    status: str  # 'built' | 'skipped' | 'failed'
     elapsed: float = 0.0
     nodes: int = 0
     edges: int = 0
@@ -91,6 +92,7 @@ class BookResult:
 @dataclass
 class GenreSummary:
     """Aggregated results for one genre."""
+
     genre: str
     results: list[BookResult] = field(default_factory=list)
 
@@ -127,6 +129,7 @@ class GenreSummary:
 # Helpers
 # ---------------------------------------------------------------------------
 
+
 def slugify(s: str) -> str:
     """Lowercase and replace non-alphanumeric runs with hyphens."""
     return re.sub(r"-+", "-", re.sub(r"[^a-z0-9]", "-", s.lower())).strip("-")
@@ -162,6 +165,7 @@ def ensure_corpus(
 def is_sqlite_valid(path: Path) -> bool:
     """Return True if path is a readable, non-corrupt SQLite database."""
     import sqlite3
+
     if not path.exists() or path.stat().st_size < 100:
         return False
     try:
@@ -248,11 +252,18 @@ def git_commit_push_genre(genre_dir: Path, genre: str, dry_run: bool = False) ->
         print(f"  [=] {genre}: nothing to commit, skipping push")
         return
 
-    n_files = int(subprocess.check_output(
-        ["git", "diff", "--cached", "--name-only"],
-        cwd=REPO_ROOT,
-        text=True,
-    ).strip().count("\n")) + 1
+    n_files = (
+        int(
+            subprocess.check_output(
+                ["git", "diff", "--cached", "--name-only"],
+                cwd=REPO_ROOT,
+                text=True,
+            )
+            .strip()
+            .count("\n")
+        )
+        + 1
+    )
 
     msg = f"chore(dockg): rebuild {genre} DocKG indices ({n_files} files)"
     subprocess.run(["git", "commit", "-m", msg], check=True, cwd=REPO_ROOT)
@@ -263,6 +274,7 @@ def git_commit_push_genre(genre_dir: Path, genre: str, dry_run: bool = False) ->
 def _sqlite_counts(book_dir: Path) -> tuple[int, int]:
     """Return (node_count, edge_count) from the book's graph.sqlite, or (0, 0)."""
     import sqlite3
+
     db = book_dir / ".dockg" / "graph.sqlite"
     if not db.exists():
         return 0, 0
@@ -278,6 +290,7 @@ def _sqlite_counts(book_dir: Path) -> tuple[int, int]:
 # ---------------------------------------------------------------------------
 # Core per-book logic
 # ---------------------------------------------------------------------------
+
 
 def process_book(
     book_dir: Path,
@@ -344,7 +357,9 @@ def process_book(
     elapsed = time.perf_counter() - t0
     nodes, edges = _sqlite_counts(book_dir)
     print(f"    [✓] {fmt_duration(elapsed)}  nodes={nodes:,}  edges={edges:,}")
-    return BookResult(name=book_name, genre=genre, status=status, elapsed=elapsed, nodes=nodes, edges=edges)
+    return BookResult(
+        name=book_name, genre=genre, status=status, elapsed=elapsed, nodes=nodes, edges=edges
+    )
 
 
 # ---------------------------------------------------------------------------
@@ -352,6 +367,7 @@ def process_book(
 # ---------------------------------------------------------------------------
 
 W = 74  # box width
+
 
 def _row(label: str, value: str) -> str:
     return f"  {label:<28}  {value}"
@@ -366,14 +382,14 @@ def print_summary(
 ) -> None:
     """Print a rich job summary to stdout."""
     thick = "═" * W
-    thin  = "─" * W
+    thin = "─" * W
 
-    total_built   = sum(g.built   for g in genre_summaries)
+    total_built = sum(g.built for g in genre_summaries)
     total_skipped = sum(g.skipped for g in genre_summaries)
-    total_failed  = sum(g.failed  for g in genre_summaries)
-    total_books   = sum(g.total   for g in genre_summaries)
-    total_nodes   = sum(g.nodes   for g in genre_summaries)
-    total_edges   = sum(g.edges   for g in genre_summaries)
+    total_failed = sum(g.failed for g in genre_summaries)
+    total_books = sum(g.total for g in genre_summaries)
+    total_nodes = sum(g.nodes for g in genre_summaries)
+    total_edges = sum(g.edges for g in genre_summaries)
 
     if opts.dry_run:
         status_icon, status_text = "⚪", "DRY RUN — no changes made"
@@ -382,12 +398,19 @@ def print_summary(
     else:
         status_icon, status_text = "⚠️ ", f"PARTIAL — {total_failed} book(s) failed"
 
-    flags = " ".join(f for f in [
-        "--force-build"    if opts.force_build    else "",
-        "--force-register" if opts.force_register else "",
-        "--push"           if opts.push           else "",
-        "--dry-run"        if opts.dry_run         else "",
-    ] if f) or "(none)"
+    flags = (
+        " ".join(
+            f
+            for f in [
+                "--force-build" if opts.force_build else "",
+                "--force-register" if opts.force_register else "",
+                "--push" if opts.push else "",
+                "--dry-run" if opts.dry_run else "",
+            ]
+            if f
+        )
+        or "(none)"
+    )
 
     print()
     print("╔" + thick + "╗")
@@ -398,7 +421,9 @@ def print_summary(
     print(f"║{_row('Started', wall_start.strftime('%Y-%m-%d  %H:%M:%S UTC')):<{W}}║")
     print(f"║{_row('Elapsed', fmt_duration(wall_elapsed)):<{W}}║")
     print(f"║{_row('Host', socket.gethostname()):<{W}}║")
-    print(f"║{_row('Platform', f'{platform.system()} {platform.release()}  /  {platform.machine()}'):<{W}}║")
+    print(
+        f"║{_row('Platform', f'{platform.system()} {platform.release()}  /  {platform.machine()}'):<{W}}║"
+    )
     print(f"║{_row('Python', sys.version.split()[0]):<{W}}║")
     print(f"║{_row('Registry', str(registry_path)):<{W}}║")
     print(f"║{_row('Flags', flags):<{W}}║")
@@ -421,7 +446,9 @@ def print_summary(
     print("╠" + thin + "╣")
     print(f"║  {'Per-Genre Breakdown':<{W - 2}}║")
     print("╠" + thin + "╣")
-    print(f"║  {'Genre':<22}{'Books':>6}{'Built':>7}{'Skip':>6}{'Fail':>6}{'Nodes':>8}{'Edges':>8}{'Time':>8}  ║")
+    print(
+        f"║  {'Genre':<22}{'Books':>6}{'Built':>7}{'Skip':>6}{'Fail':>6}{'Nodes':>8}{'Edges':>8}{'Time':>8}  ║"
+    )
     print(f"║  {'─' * 68}  ║")
     for g in genre_summaries:
         fail_flag = " !" if g.failed else ""
@@ -461,12 +488,12 @@ def save_summary(
     ts = wall_start.strftime("%Y-%m-%d_%H%M%S")
     report_path = reports_dir / f"ingest_{ts}.md"
 
-    total_built   = sum(g.built   for g in genre_summaries)
+    total_built = sum(g.built for g in genre_summaries)
     total_skipped = sum(g.skipped for g in genre_summaries)
-    total_failed  = sum(g.failed  for g in genre_summaries)
-    total_books   = sum(g.total   for g in genre_summaries)
-    total_nodes   = sum(g.nodes   for g in genre_summaries)
-    total_edges   = sum(g.edges   for g in genre_summaries)
+    total_failed = sum(g.failed for g in genre_summaries)
+    total_books = sum(g.total for g in genre_summaries)
+    total_nodes = sum(g.nodes for g in genre_summaries)
+    total_edges = sum(g.edges for g in genre_summaries)
 
     if opts.dry_run:
         status = "DRY RUN — no changes made"
@@ -475,12 +502,19 @@ def save_summary(
     else:
         status = f"PARTIAL — {total_failed} book(s) failed"
 
-    flags = " ".join(f for f in [
-        "--force-build"    if opts.force_build    else "",
-        "--force-register" if opts.force_register else "",
-        "--push"           if opts.push           else "",
-        "--dry-run"        if opts.dry_run         else "",
-    ] if f) or "(none)"
+    flags = (
+        " ".join(
+            f
+            for f in [
+                "--force-build" if opts.force_build else "",
+                "--force-register" if opts.force_register else "",
+                "--push" if opts.push else "",
+                "--dry-run" if opts.dry_run else "",
+            ]
+            if f
+        )
+        or "(none)"
+    )
 
     lines = [
         "# Gutenberg KG Ingest Report",
@@ -520,8 +554,12 @@ def save_summary(
     # Per-genre book detail
     lines += ["", "## Book Detail", ""]
     for g in genre_summaries:
-        lines += [f"### {g.genre}", "", "| Book | Status | Nodes | Edges | Time |",
-                  "|------|--------|------:|------:|------|"]
+        lines += [
+            f"### {g.genre}",
+            "",
+            "| Book | Status | Nodes | Edges | Time |",
+            "|------|--------|------:|------:|------|",
+        ]
         for r in g.results:
             icon = "✓" if r.status == "built" else ("=" if r.status == "skipped" else "✗")
             lines.append(
@@ -543,6 +581,7 @@ def save_summary(
 # ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
+
 
 def parse_args() -> argparse.Namespace:
     """Parse command-line arguments."""
@@ -622,12 +661,13 @@ def main() -> int:
         print("[DRY RUN — no changes will be made]\n")
 
     genre_summaries: list[GenreSummary] = []
-    wall_start = datetime.now(timezone.utc)
+    wall_start = datetime.now(UTC)
     wall_t0 = time.perf_counter()
 
-    with KGRegistry(db_path=registry_path) as kg_reg, \
-         CorpusRegistry(db_path=registry_path) as corp_reg:
-
+    with (
+        KGRegistry(db_path=registry_path) as kg_reg,
+        CorpusRegistry(db_path=registry_path) as corp_reg,
+    ):
         # Ensure all needed corpora exist up front
         print("--- Ensuring corpora ---")
         for genre in genres:
@@ -653,8 +693,7 @@ def main() -> int:
                 continue
 
             book_dirs = sorted(
-                p for p in genre_dir.iterdir()
-                if p.is_dir() and not p.name.startswith(".")
+                p for p in genre_dir.iterdir() if p.is_dir() and not p.name.startswith(".")
             )
             if not book_dirs:
                 print(f"[!] No book directories in {genre_dir} — skipping\n")

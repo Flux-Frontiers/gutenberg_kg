@@ -1,4 +1,5 @@
 """Shared Click options and constants for the GutenbergKG CLI."""
+
 from pathlib import Path
 
 import click
@@ -19,6 +20,10 @@ ALL_GENRES = [
     "science-fiction",
 ]
 
+ALL_IA_GENRES = [
+    "audel-electric",
+]
+
 # src/gutenberg_kg/cli/options.py
 #   .parents[0] = src/gutenberg_kg/cli/
 #   .parents[1] = src/gutenberg_kg/
@@ -31,6 +36,7 @@ CORPUS_ROOT = REPO_ROOT / "corpus"
 # ---------------------------------------------------------------------------
 # Reusable option factories
 # ---------------------------------------------------------------------------
+
 
 def genre_option(multiple: bool = False):
     """Return a --genre Click option decorator.

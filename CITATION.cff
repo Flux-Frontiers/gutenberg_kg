@@ -1,28 +1,51 @@
 cff-version: "1.2.0"
-message: "If you use this software, please cite it using the metadata below."
+message: "If you use GutenbergKG in your research, please cite it using the metadata below."
 type: software
-title: "GutenbergKG: Project Gutenberg Knowledge Graph"
+title: "GutenbergKG: The Knowledge Press"
 abstract: >
-  GutenbergKG provides a CLI for downloading, ingesting, and querying Project
-  Gutenberg texts as a semantic knowledge graph. It builds a structured,
-  queryable representation of public-domain literary corpora, enabling
-  semantic search, entity extraction, and MCP-based AI integration over
-  classic literature.
+  GutenbergKG is a universal ingestion engine for digitized text corpora —
+  named for the press that democratized books, built to do the same for
+  structured knowledge. It ingests texts from Project Gutenberg, the Internet
+  Archive, and local file corpora, and produces queryable knowledge graphs via
+  DocKG and KGRAG. The current corpus spans 78 public-domain masterworks across
+  9 genres (445,486 nodes, 4,525,716 edges), queryable as independent genre
+  corpora or as a unified gutenberg-all knowledge graph.
 authors:
   - family-names: Suchanek
     given-names: "Eric G."
-    name-suffix: PhD
-    email: suchanek@flux_frontiers.com
+    name-suffix: "PhD"
     orcid: "https://orcid.org/0009-0009-0891-1507"
+    email: suchanek@mac.com
     affiliation: "Flux-Frontiers"
-version: "0.1.0"
+version: "1.0.0"
+date-released: "2026-05-04"
 license: "Elastic-2.0"
+license-url: "https://www.elastic.co/licensing/elastic-license"
 repository-code: "https://github.com/Flux-Frontiers/gutenberg_kg"
 url: "https://github.com/Flux-Frontiers/gutenberg_kg"
 keywords:
   - knowledge-graph
   - project-gutenberg
+  - internet-archive
   - public-domain
   - literature
   - semantic-search
-  - mcp
+  - dockg
+  - kgrag
+  - nlp
+  - knowledge-press
+references:
+  - type: software
+    title: "DocKG: Semantic Document Knowledge Graph"
+    repository-code: "https://github.com/Flux-Frontiers/doc_kg"
+    authors:
+      - family-names: Suchanek
+        given-names: "Eric G."
+        name-suffix: "PhD"
+  - type: software
+    title: "KGRAG: Federated Knowledge Graph Retrieval"
+    repository-code: "https://github.com/Flux-Frontiers/KGRAG"
+    authors:
+      - family-names: Suchanek
+        given-names: "Eric G."
+        name-suffix: "PhD"

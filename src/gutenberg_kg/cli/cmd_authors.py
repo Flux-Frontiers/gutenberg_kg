@@ -1,4 +1,5 @@
 """Authors subcommand — rebuild the per-author provenance index."""
+
 import click
 
 from gutenberg_kg import authors
@@ -11,7 +12,7 @@ from gutenberg_kg.cli.main import cli
     is_flag=True,
     default=False,
     help="Re-fetch Gutenberg RDF for books missing Born/Died and patch "
-         "their reference.md files in place before rebuilding the index.",
+    "their reference.md files in place before rebuilding the index.",
 )
 @click.option(
     "--dry-run",

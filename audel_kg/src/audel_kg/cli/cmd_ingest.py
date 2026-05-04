@@ -14,17 +14,18 @@ from ingest import ALL_GENRES  # noqa: E402
 
 @click.command("ingest")
 @click.option(
-    "--genre", "genres",
+    "--genre",
+    "genres",
     multiple=True,
     type=click.Choice(ALL_GENRES),
     help="Genre(s) to process (default: all)",
 )
-@click.option("--force-build",    is_flag=True, help="Rebuild even if .dockg exists")
+@click.option("--force-build", is_flag=True, help="Rebuild even if .dockg exists")
 @click.option("--force-register", is_flag=True, help="Re-register even if already registered")
-@click.option("--push",           is_flag=True, help="git commit + push after each genre")
-@click.option("--dry-run",        is_flag=True, help="Print actions without executing")
-@click.option("--registry",       default=None, metavar="PATH", help="Override registry path")
-@click.option("--list-genres",    is_flag=True, help="Print all genres and exit")
+@click.option("--push", is_flag=True, help="git commit + push after each genre")
+@click.option("--dry-run", is_flag=True, help="Print actions without executing")
+@click.option("--registry", default=None, metavar="PATH", help="Override registry path")
+@click.option("--list-genres", is_flag=True, help="Print all genres and exit")
 def ingest(
     genres: tuple[str, ...],
     force_build: bool,
@@ -56,6 +57,7 @@ def ingest(
     sys.argv = argv
     try:
         from ingest import main
+
         sys.exit(main())
     finally:
         sys.argv = old_argv

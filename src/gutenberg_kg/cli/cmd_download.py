@@ -1,4 +1,5 @@
 """Download subcommands — fetch books from Project Gutenberg."""
+
 import sys
 
 import click
@@ -10,18 +11,21 @@ from gutenberg_kg.cli.options import ALL_GENRES, REPO_ROOT
 # Lazy script import helper
 # ---------------------------------------------------------------------------
 
+
 def _dg():
     """Import download_gutenberg from the scripts directory on first use."""
     scripts_dir = str(REPO_ROOT / "scripts")
     if scripts_dir not in sys.path:
         sys.path.insert(0, scripts_dir)
     import download_gutenberg as _mod  # noqa: PLC0415
+
     return _mod
 
 
 # ---------------------------------------------------------------------------
 # Group
 # ---------------------------------------------------------------------------
+
 
 @cli.group("download")
 def download_group():
@@ -32,6 +36,7 @@ def download_group():
 # ---------------------------------------------------------------------------
 # Subcommands
 # ---------------------------------------------------------------------------
+
 
 @download_group.command("book")
 @click.argument("ebook_id", type=int)

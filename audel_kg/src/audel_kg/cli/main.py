@@ -3,7 +3,7 @@
 import click
 
 from .cmd_download import download
-from .cmd_ingest   import ingest
+from .cmd_ingest import ingest
 
 
 @click.group()

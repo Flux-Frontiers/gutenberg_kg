@@ -41,10 +41,10 @@ if _SRC.is_dir() and str(_SRC) not in sys.path:
 
 from doc_kg.kg import DocKG  # noqa: E402
 
-
 # ---------------------------------------------------------------------------
 # Query suite
 # ---------------------------------------------------------------------------
+
 
 @dataclass(frozen=True)
 class QueryCase:
@@ -68,27 +68,37 @@ DEFAULT_QUERIES: list[QueryCase] = [
     QueryCase(
         name="justice and morality",
         text="what does the text say about justice and moral responsibility",
-        k=8, hop=1, max_nodes=15,
+        k=8,
+        hop=1,
+        max_nodes=15,
     ),
     QueryCase(
         name="revenge and obsession",
         text="revenge obsession and the consequences of hatred",
-        k=8, hop=1, max_nodes=15,
+        k=8,
+        hop=1,
+        max_nodes=15,
     ),
     QueryCase(
         name="love and social class",
         text="love across social class and marriage in society",
-        k=8, hop=1, max_nodes=15,
+        k=8,
+        hop=1,
+        max_nodes=15,
     ),
     QueryCase(
         name="fate and hubris",
         text="hubris fate and the downfall of heroes",
-        k=8, hop=1, max_nodes=15,
+        k=8,
+        hop=1,
+        max_nodes=15,
     ),
     QueryCase(
         name="identity and freedom",
         text="personal identity freedom and self-determination",
-        k=8, hop=1, max_nodes=15,
+        k=8,
+        hop=1,
+        max_nodes=15,
     ),
 ]
 
@@ -116,6 +126,7 @@ DEFAULT_MODELS: list[str] = [
 # Helpers
 # ---------------------------------------------------------------------------
 
+
 def _slugify(s: str) -> str:
     return re.sub(r"[^a-zA-Z0-9._-]+", "_", s).strip("_")
 
@@ -141,6 +152,7 @@ def _node_metrics(nodes: list[dict], top_n: int) -> dict:
 # ---------------------------------------------------------------------------
 # Core benchmark
 # ---------------------------------------------------------------------------
+
 
 def _benchmark_book(
     book_dir: Path,
@@ -202,28 +214,32 @@ def _benchmark_book(
             top_nodes = []
             for rank, node in enumerate(qr.nodes[:top_n], start=1):
                 rel = node.get("relevance") or {}
-                top_nodes.append({
-                    "rank": rank,
-                    "id": node.get("id", ""),
-                    "kind": node.get("kind", ""),
-                    "name": node.get("name") or node.get("title") or node.get("id", ""),
-                    "text_preview": (node.get("text") or "")[:120],
-                    "score": float(rel.get("score", 0.0)),
-                    "dist": float(rel.get("dist", 0.0)),
-                    "hop": int(rel.get("hop", 0)),
-                    "semantic_boost": float(rel.get("semantic_boost", 0.0)),
-                })
+                top_nodes.append(
+                    {
+                        "rank": rank,
+                        "id": node.get("id", ""),
+                        "kind": node.get("kind", ""),
+                        "name": node.get("name") or node.get("title") or node.get("id", ""),
+                        "text_preview": (node.get("text") or "")[:120],
+                        "score": float(rel.get("score", 0.0)),
+                        "dist": float(rel.get("dist", 0.0)),
+                        "hop": int(rel.get("hop", 0)),
+                        "semantic_boost": float(rel.get("semantic_boost", 0.0)),
+                    }
+                )
 
-            model_result["queries"].append({
-                "name": qc.name,
-                "query": qc.text,
-                "k": qc.k,
-                "hop": qc.hop,
-                "max_nodes": qc.max_nodes,
-                "seconds": q_s,
-                "summary": _node_metrics(qr.nodes, top_n),
-                "top_nodes": top_nodes,
-            })
+            model_result["queries"].append(
+                {
+                    "name": qc.name,
+                    "query": qc.text,
+                    "k": qc.k,
+                    "hop": qc.hop,
+                    "max_nodes": qc.max_nodes,
+                    "seconds": q_s,
+                    "summary": _node_metrics(qr.nodes, top_n),
+                    "top_nodes": top_nodes,
+                }
+            )
 
         book_result["models"].append(model_result)
 
@@ -259,6 +275,7 @@ def _run_benchmark(
 # Markdown rendering
 # ---------------------------------------------------------------------------
 
+
 def _to_markdown(report: dict) -> str:
     lines: list[str] = [
         "# DocKG Embedder Benchmark Report",
@@ -280,13 +297,8 @@ def _to_markdown(report: dict) -> str:
 
         for book in report["books"]:
             for mr in book["models"]:
-                scores_by_query = {
-                    qr["name"]: qr["summary"]["mean_score"]
-                    for qr in mr["queries"]
-                }
-                cols = " | ".join(
-                    f"{scores_by_query.get(qn, 0.0):.3f}" for qn in query_names
-                )
+                scores_by_query = {qr["name"]: qr["summary"]["mean_score"] for qr in mr["queries"]}
+                cols = " | ".join(f"{scores_by_query.get(qn, 0.0):.3f}" for qn in query_names)
                 lines.append(f"| `{mr['model']}` | {book['book']} | {cols} |")
 
         lines.append("")
@@ -307,7 +319,7 @@ def _to_markdown(report: dict) -> str:
                 s = qr["summary"]
                 lines += [
                     f"#### Query: *{qr['query']}*",
-                    f"- k={qr['k']}, hop={qr['hop']}, {qr['seconds']*1000:.0f}ms",
+                    f"- k={qr['k']}, hop={qr['hop']}, {qr['seconds'] * 1000:.0f}ms",
                     f"- mean_score={s['mean_score']:.4f}  mean_dist={s['mean_dist']:.4f}"
                     f"  returned={s['returned']}",
                     "",
@@ -329,18 +341,25 @@ def _to_markdown(report: dict) -> str:
 # CLI
 # ---------------------------------------------------------------------------
 
+
 def _parse_args() -> argparse.Namespace:
-    p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    p = argparse.ArgumentParser(
+        description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter
+    )
     p.add_argument(
-        "--books", nargs="+", metavar="REL_PATH",
+        "--books",
+        nargs="+",
+        metavar="REL_PATH",
         help="Relative paths from repo root to book directories (e.g. 'american-literature/Huck Finn').",
     )
     p.add_argument(
-        "--genre", metavar="NAME",
+        "--genre",
+        metavar="NAME",
         help="Run on every book in a genre directory (e.g. 'american-literature').",
     )
     p.add_argument(
-        "--sample", action="store_true",
+        "--sample",
+        action="store_true",
         help="Run on the built-in one-per-genre sample set.",
     )
     p.add_argument(
@@ -349,15 +368,19 @@ def _parse_args() -> argparse.Namespace:
         help="Comma-separated model ids (default: all-mpnet-base-v2, bge-small, MiniLM-L6).",
     )
     p.add_argument(
-        "--top-n", type=int, default=5,
+        "--top-n",
+        type=int,
+        default=5,
         help="Top nodes to capture per query (default: 5).",
     )
     p.add_argument(
-        "--out-json", default="",
+        "--out-json",
+        default="",
         help="Output JSON path (default: analysis/embedder_benchmark_<ts>.json).",
     )
     p.add_argument(
-        "--out-md", default="",
+        "--out-md",
+        default="",
         help="Output Markdown path (default: analysis/embedder_benchmark_<ts>.md).",
     )
     return p.parse_args()
@@ -399,10 +422,12 @@ def main() -> int:
     analysis_dir = REPO_ROOT / "analysis"
     analysis_dir.mkdir(exist_ok=True)
 
-    out_json = Path(args.out_json) if args.out_json else analysis_dir / f"embedder_benchmark_{ts}.json"
+    out_json = (
+        Path(args.out_json) if args.out_json else analysis_dir / f"embedder_benchmark_{ts}.json"
+    )
     out_md = Path(args.out_md) if args.out_md else analysis_dir / f"embedder_benchmark_{ts}.md"
 
-    print(f"DocKG Embedder Benchmark")
+    print("DocKG Embedder Benchmark")
     print(f"  Books:  {len(valid)}")
     print(f"  Models: {models}")
     print(f"  Queries: {len(DEFAULT_QUERIES)}")

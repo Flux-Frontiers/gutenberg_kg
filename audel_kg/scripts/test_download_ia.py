@@ -6,7 +6,7 @@ import textwrap
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
-from download_ia import clean_ocr, text_to_markdown, _is_heading, slugify
+from download_ia import _is_heading, clean_ocr, slugify, text_to_markdown
 
 
 def test_slugify() -> None:
@@ -71,8 +71,7 @@ def test_index_strip() -> None:
 def test_running_headers() -> None:
     header = "AUDELS ELECTRICIANS GUIDE"
     body = "\n".join(
-        header + "\n" + f"Unique text about topic {i} in electrical engineering."
-        for i in range(50)
+        header + "\n" + f"Unique text about topic {i} in electrical engineering." for i in range(50)
     )
     result = clean_ocr(body)
     occurrences = sum(1 for ln in result.split("\n") if ln.strip() == header)
@@ -158,16 +157,16 @@ def test_markdown_conversion() -> None:
     md = text_to_markdown(sample, meta)
 
     checks = {
-        "title h1":             "# Audels Electricians and Plumbers Guide",
-        "CHAPTER I h2":         "## CHAPTER I",
-        "CHAPTER II h2":        "## CHAPTER II",
-        "DIRECT CURRENTS h3":   "### DIRECT CURRENTS",
-        "ALTERNATING h3":       "### ALTERNATING CURRENTS",
-        "first Ques h4":        "#### Ques. What is an electric current?",
-        "second Ques h4":       "#### Ques. What are the units",
-        "answer body text":     "Ans. An electric current is a flow",
+        "title h1": "# Audels Electricians and Plumbers Guide",
+        "CHAPTER I h2": "## CHAPTER I",
+        "CHAPTER II h2": "## CHAPTER II",
+        "DIRECT CURRENTS h3": "### DIRECT CURRENTS",
+        "ALTERNATING h3": "### ALTERNATING CURRENTS",
+        "first Ques h4": "#### Ques. What is an electric current?",
+        "second Ques h4": "#### Ques. What are the units",
+        "answer body text": "Ans. An electric current is a flow",
         "publisher front matter": "*Theo. Audel and Co., 1928*",
-        "series front matter":  "*Audels Electricians and Plumbers Guide, Vol. 1*",
+        "series front matter": "*Audels Electricians and Plumbers Guide, Vol. 1*",
     }
     failures = []
     for label, expected in checks.items():

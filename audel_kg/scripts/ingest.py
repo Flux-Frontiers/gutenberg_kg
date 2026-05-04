@@ -33,7 +33,7 @@ import subprocess
 import sys
 import time
 from dataclasses import dataclass, field
-from datetime import date, datetime, timezone
+from datetime import UTC, date, datetime
 from pathlib import Path
 
 from kg_rag.corpus_registry import CorpusRegistry
@@ -44,63 +44,78 @@ from kg_rag.registry import KGRegistry, default_registry_path
 # Constants
 # ---------------------------------------------------------------------------
 
-REPO_ROOT   = Path(__file__).resolve().parent.parent
+REPO_ROOT = Path(__file__).resolve().parent.parent
 CORPUS_ROOT = REPO_ROOT / "corpus"
 
 ALL_GENRES = [
     "audel-electric",
 ]
 
-TOP_CORPUS    = "ia-all"
-CORPUS_PREFIX = "ia"   # KG names: ia-<genre>-<slug>-doc
+TOP_CORPUS = "ia-all"
+CORPUS_PREFIX = "ia"  # KG names: ia-<genre>-<slug>-doc
 
 
 # ---------------------------------------------------------------------------
 # Options / result containers
 # ---------------------------------------------------------------------------
 
+
 @dataclass
 class IngestOptions:
-    force_build:    bool = False
+    force_build: bool = False
     force_register: bool = False
-    dry_run:        bool = False
-    push:           bool = False
+    dry_run: bool = False
+    push: bool = False
 
 
 @dataclass
 class BookResult:
-    name:    str
-    genre:   str
-    status:  str       # 'built' | 'skipped' | 'failed'
+    name: str
+    genre: str
+    status: str  # 'built' | 'skipped' | 'failed'
     elapsed: float = 0.0
-    nodes:   int   = 0
-    edges:   int   = 0
+    nodes: int = 0
+    edges: int = 0
 
 
 @dataclass
 class GenreSummary:
-    genre:   str
+    genre: str
     results: list[BookResult] = field(default_factory=list)
 
     @property
-    def built(self)   -> int: return sum(1 for r in self.results if r.status == "built")
+    def built(self) -> int:
+        return sum(1 for r in self.results if r.status == "built")
+
     @property
-    def skipped(self) -> int: return sum(1 for r in self.results if r.status == "skipped")
+    def skipped(self) -> int:
+        return sum(1 for r in self.results if r.status == "skipped")
+
     @property
-    def failed(self)  -> int: return sum(1 for r in self.results if r.status == "failed")
+    def failed(self) -> int:
+        return sum(1 for r in self.results if r.status == "failed")
+
     @property
-    def total(self)   -> int: return len(self.results)
+    def total(self) -> int:
+        return len(self.results)
+
     @property
-    def elapsed(self) -> float: return sum(r.elapsed for r in self.results)
+    def elapsed(self) -> float:
+        return sum(r.elapsed for r in self.results)
+
     @property
-    def nodes(self)   -> int: return sum(r.nodes for r in self.results)
+    def nodes(self) -> int:
+        return sum(r.nodes for r in self.results)
+
     @property
-    def edges(self)   -> int: return sum(r.edges for r in self.results)
+    def edges(self) -> int:
+        return sum(r.edges for r in self.results)
 
 
 # ---------------------------------------------------------------------------
 # Helpers
 # ---------------------------------------------------------------------------
+
 
 def slugify(s: str) -> str:
     """Lowercase and replace non-alphanumeric runs with hyphens."""
@@ -134,6 +149,7 @@ def ensure_corpus(
 
 def is_sqlite_valid(path: Path) -> bool:
     import sqlite3
+
     if not path.exists() or path.stat().st_size < 100:
         return False
     try:
@@ -162,14 +178,14 @@ def register_book(
     book_dir: Path,
     dry_run: bool = False,
 ) -> KGEntry | None:
-    sqlite  = book_dir / ".dockg" / "graph.sqlite"
+    sqlite = book_dir / ".dockg" / "graph.sqlite"
     lancedb = book_dir / ".dockg" / "lancedb"
     entry = KGEntry(
         name=name,
         kind=KGKind.from_str("doc"),
         repo_path=book_dir,
         venv_path=book_dir / ".venv",
-        sqlite_path=sqlite  if sqlite.exists()  else None,
+        sqlite_path=sqlite if sqlite.exists() else None,
         lancedb_path=lancedb if lancedb.exists() else None,
         tags=[date.today().isoformat()],
     )
@@ -203,15 +219,24 @@ def git_commit_push_genre(genre_dir: Path, genre: str, dry_run: bool = False) ->
     subprocess.run(["git", "add", str(genre_dir) + "/"], check=True, cwd=REPO_ROOT)
     result = subprocess.run(
         ["git", "diff", "--cached", "--quiet"],
-        check=False, cwd=REPO_ROOT,
+        check=False,
+        cwd=REPO_ROOT,
     )
     if result.returncode == 0:
         print(f"  [=] {genre}: nothing to commit, skipping push")
         return
-    n = int(subprocess.check_output(
-        ["git", "diff", "--cached", "--name-only"],
-        cwd=REPO_ROOT, text=True,
-    ).strip().count("\n")) + 1
+    n = (
+        int(
+            subprocess.check_output(
+                ["git", "diff", "--cached", "--name-only"],
+                cwd=REPO_ROOT,
+                text=True,
+            )
+            .strip()
+            .count("\n")
+        )
+        + 1
+    )
     msg = f"chore(dockg): rebuild {genre} DocKG indices ({n} files)"
     subprocess.run(["git", "commit", "-m", msg], check=True, cwd=REPO_ROOT)
     subprocess.run(["git", "push"], check=True, cwd=REPO_ROOT)
@@ -220,6 +245,7 @@ def git_commit_push_genre(genre_dir: Path, genre: str, dry_run: bool = False) ->
 
 def _sqlite_counts(book_dir: Path) -> tuple[int, int]:
     import sqlite3
+
     db = book_dir / ".dockg" / "graph.sqlite"
     if not db.exists():
         return 0, 0
@@ -236,6 +262,7 @@ def _sqlite_counts(book_dir: Path) -> tuple[int, int]:
 # Core per-book logic
 # ---------------------------------------------------------------------------
 
+
 def process_book(
     book_dir: Path,
     genre: str,
@@ -243,9 +270,9 @@ def process_book(
     corp_reg: CorpusRegistry,
     opts: IngestOptions,
 ) -> BookResult:
-    book_name    = book_dir.name
-    slug         = slugify(book_name)
-    kg_name      = f"{CORPUS_PREFIX}-{genre}-{slug}-doc"
+    book_name = book_dir.name
+    slug = slugify(book_name)
+    kg_name = f"{CORPUS_PREFIX}-{genre}-{slug}-doc"
     genre_corpus = f"{CORPUS_PREFIX}-{genre}"
     dockg_sqlite = book_dir / ".dockg" / "graph.sqlite"
 
@@ -253,7 +280,7 @@ def process_book(
     t0 = time.perf_counter()
 
     # --- Build ---
-    dockg_dir    = book_dir / ".dockg"
+    dockg_dir = book_dir / ".dockg"
     already_built = dockg_sqlite.exists()
 
     if already_built and not is_sqlite_valid(dockg_sqlite):
@@ -294,14 +321,18 @@ def process_book(
 
     if entry is not None:
         add_to_corpus(corp_reg, genre_corpus, entry, dry_run=opts.dry_run)
-        add_to_corpus(corp_reg, TOP_CORPUS,   entry, dry_run=opts.dry_run)
+        add_to_corpus(corp_reg, TOP_CORPUS, entry, dry_run=opts.dry_run)
 
     elapsed = time.perf_counter() - t0
     nodes, edges = _sqlite_counts(book_dir)
     print(f"    [✓] {fmt_duration(elapsed)}  nodes={nodes:,}  edges={edges:,}")
     return BookResult(
-        name=book_name, genre=genre, status=status,
-        elapsed=elapsed, nodes=nodes, edges=edges,
+        name=book_name,
+        genre=genre,
+        status=status,
+        elapsed=elapsed,
+        nodes=nodes,
+        edges=edges,
     )
 
 
@@ -310,6 +341,7 @@ def process_book(
 # ---------------------------------------------------------------------------
 
 W = 74
+
 
 def _row(label: str, value: str) -> str:
     return f"  {label:<28}  {value}"
@@ -323,14 +355,14 @@ def print_summary(
     wall_elapsed: float,
 ) -> None:
     thick = "═" * W
-    thin  = "─" * W
+    thin = "─" * W
 
-    total_built   = sum(g.built   for g in genre_summaries)
+    total_built = sum(g.built for g in genre_summaries)
     total_skipped = sum(g.skipped for g in genre_summaries)
-    total_failed  = sum(g.failed  for g in genre_summaries)
-    total_books   = sum(g.total   for g in genre_summaries)
-    total_nodes   = sum(g.nodes   for g in genre_summaries)
-    total_edges   = sum(g.edges   for g in genre_summaries)
+    total_failed = sum(g.failed for g in genre_summaries)
+    total_books = sum(g.total for g in genre_summaries)
+    total_nodes = sum(g.nodes for g in genre_summaries)
+    total_edges = sum(g.edges for g in genre_summaries)
 
     if opts.dry_run:
         status_icon, status_text = "⚪", "DRY RUN — no changes made"
@@ -339,43 +371,54 @@ def print_summary(
     else:
         status_icon, status_text = "⚠️ ", f"PARTIAL — {total_failed} book(s) failed"
 
-    flags = " ".join(f for f in [
-        "--force-build"    if opts.force_build    else "",
-        "--force-register" if opts.force_register else "",
-        "--push"           if opts.push           else "",
-        "--dry-run"        if opts.dry_run         else "",
-    ] if f) or "(none)"
+    flags = (
+        " ".join(
+            f
+            for f in [
+                "--force-build" if opts.force_build else "",
+                "--force-register" if opts.force_register else "",
+                "--push" if opts.push else "",
+                "--dry-run" if opts.dry_run else "",
+            ]
+            if f
+        )
+        or "(none)"
+    )
 
     print()
     print("╔" + thick + "╗")
     print(f"║  {'Audel KG Ingest  —  Job Summary':<{W - 2}}║")
     print("╠" + thick + "╣")
     print(f"║{'':{W}}║")
-    print(f"║{_row('Started',  wall_start.strftime('%Y-%m-%d  %H:%M:%S UTC')):<{W}}║")
-    print(f"║{_row('Elapsed',  fmt_duration(wall_elapsed)):<{W}}║")
-    print(f"║{_row('Host',     socket.gethostname()):<{W}}║")
-    print(f"║{_row('Platform', f'{platform.system()} {platform.release()}  /  {platform.machine()}'):<{W}}║")
-    print(f"║{_row('Python',   sys.version.split()[0]):<{W}}║")
+    print(f"║{_row('Started', wall_start.strftime('%Y-%m-%d  %H:%M:%S UTC')):<{W}}║")
+    print(f"║{_row('Elapsed', fmt_duration(wall_elapsed)):<{W}}║")
+    print(f"║{_row('Host', socket.gethostname()):<{W}}║")
+    print(
+        f"║{_row('Platform', f'{platform.system()} {platform.release()}  /  {platform.machine()}'):<{W}}║"
+    )
+    print(f"║{_row('Python', sys.version.split()[0]):<{W}}║")
     print(f"║{_row('Registry', str(registry_path)):<{W}}║")
-    print(f"║{_row('Flags',    flags):<{W}}║")
+    print(f"║{_row('Flags', flags):<{W}}║")
     print(f"║{'':{W}}║")
     print("╠" + thin + "╣")
     print(f"║  {'Totals':<{W - 2}}║")
     print("╠" + thin + "╣")
     print(f"║{'':{W}}║")
-    print(f"║{_row('Genres processed',      str(len(genre_summaries))):<{W}}║")
-    print(f"║{_row('Books total',           str(total_books)):<{W}}║")
-    print(f"║{_row('Built / rebuilt',       str(total_built)):<{W}}║")
-    print(f"║{_row('Skipped (up-to-date)',  str(total_skipped)):<{W}}║")
-    print(f"║{_row('Failed',               str(total_failed)):<{W}}║")
-    print(f"║{_row('Total nodes',           f'{total_nodes:,}'):<{W}}║")
-    print(f"║{_row('Total edges',           f'{total_edges:,}'):<{W}}║")
+    print(f"║{_row('Genres processed', str(len(genre_summaries))):<{W}}║")
+    print(f"║{_row('Books total', str(total_books)):<{W}}║")
+    print(f"║{_row('Built / rebuilt', str(total_built)):<{W}}║")
+    print(f"║{_row('Skipped (up-to-date)', str(total_skipped)):<{W}}║")
+    print(f"║{_row('Failed', str(total_failed)):<{W}}║")
+    print(f"║{_row('Total nodes', f'{total_nodes:,}'):<{W}}║")
+    print(f"║{_row('Total edges', f'{total_edges:,}'):<{W}}║")
     print(f"║{_row('Status', f'{status_icon}  {status_text}'):<{W}}║")
     print(f"║{'':{W}}║")
     print("╠" + thin + "╣")
     print(f"║  {'Per-Genre Breakdown':<{W - 2}}║")
     print("╠" + thin + "╣")
-    print(f"║  {'Genre':<22}{'Books':>6}{'Built':>7}{'Skip':>6}{'Fail':>6}{'Nodes':>8}{'Edges':>8}{'Time':>8}  ║")
+    print(
+        f"║  {'Genre':<22}{'Books':>6}{'Built':>7}{'Skip':>6}{'Fail':>6}{'Nodes':>8}{'Edges':>8}{'Time':>8}  ║"
+    )
     print(f"║  {'─' * 68}  ║")
     for g in genre_summaries:
         fail_flag = " !" if g.failed else ""
@@ -413,12 +456,12 @@ def save_summary(
     ts = wall_start.strftime("%Y-%m-%d_%H%M%S")
     report_path = reports_dir / f"ingest_{ts}.md"
 
-    total_built   = sum(g.built   for g in genre_summaries)
+    total_built = sum(g.built for g in genre_summaries)
     total_skipped = sum(g.skipped for g in genre_summaries)
-    total_failed  = sum(g.failed  for g in genre_summaries)
-    total_books   = sum(g.total   for g in genre_summaries)
-    total_nodes   = sum(g.nodes   for g in genre_summaries)
-    total_edges   = sum(g.edges   for g in genre_summaries)
+    total_failed = sum(g.failed for g in genre_summaries)
+    total_books = sum(g.total for g in genre_summaries)
+    total_nodes = sum(g.nodes for g in genre_summaries)
+    total_edges = sum(g.edges for g in genre_summaries)
 
     if opts.dry_run:
         status = "DRY RUN — no changes made"
@@ -427,12 +470,19 @@ def save_summary(
     else:
         status = f"PARTIAL — {total_failed} book(s) failed"
 
-    flags = " ".join(f for f in [
-        "--force-build"    if opts.force_build    else "",
-        "--force-register" if opts.force_register else "",
-        "--push"           if opts.push           else "",
-        "--dry-run"        if opts.dry_run         else "",
-    ] if f) or "(none)"
+    flags = (
+        " ".join(
+            f
+            for f in [
+                "--force-build" if opts.force_build else "",
+                "--force-register" if opts.force_register else "",
+                "--push" if opts.push else "",
+                "--dry-run" if opts.dry_run else "",
+            ]
+            if f
+        )
+        or "(none)"
+    )
 
     lines = [
         "# Audel KG Ingest Report",
@@ -470,7 +520,8 @@ def save_summary(
     lines += ["", "## Book Detail", ""]
     for g in genre_summaries:
         lines += [
-            f"### {g.genre}", "",
+            f"### {g.genre}",
+            "",
             "| Book | Status | Nodes | Edges | Time |",
             "|------|--------|------:|------:|------|",
         ]
@@ -496,6 +547,7 @@ def save_summary(
 # Main
 # ---------------------------------------------------------------------------
 
+
 def parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(
         description="Build, register, and corpus-add per-book DocKGs for audel_kg.",
@@ -504,14 +556,19 @@ def parse_args() -> argparse.Namespace:
     )
     p.add_argument("--list-genres", action="store_true", help="Print all genres and exit")
     p.add_argument(
-        "--genre", dest="genres", action="append", metavar="GENRE",
+        "--genre",
+        dest="genres",
+        action="append",
+        metavar="GENRE",
         help="Process only this genre (repeatable; default: all)",
     )
-    p.add_argument("--force-build",    action="store_true", help="Rebuild even if .dockg exists")
-    p.add_argument("--force-register", action="store_true", help="Re-register even if already registered")
-    p.add_argument("--dry-run",        action="store_true", help="Print actions without executing")
-    p.add_argument("--push",           action="store_true", help="git add + commit + push per genre")
-    p.add_argument("--registry",       metavar="PATH", default=None, help="Override registry path")
+    p.add_argument("--force-build", action="store_true", help="Rebuild even if .dockg exists")
+    p.add_argument(
+        "--force-register", action="store_true", help="Re-register even if already registered"
+    )
+    p.add_argument("--dry-run", action="store_true", help="Print actions without executing")
+    p.add_argument("--push", action="store_true", help="git add + commit + push per genre")
+    p.add_argument("--registry", metavar="PATH", default=None, help="Override registry path")
     return p.parse_args()
 
 
@@ -544,12 +601,13 @@ def main() -> int:
         print("[DRY RUN — no changes will be made]\n")
 
     genre_summaries: list[GenreSummary] = []
-    wall_start = datetime.now(timezone.utc)
-    wall_t0    = time.perf_counter()
+    wall_start = datetime.now(UTC)
+    wall_t0 = time.perf_counter()
 
-    with KGRegistry(db_path=registry_path) as kg_reg, \
-         CorpusRegistry(db_path=registry_path) as corp_reg:
-
+    with (
+        KGRegistry(db_path=registry_path) as kg_reg,
+        CorpusRegistry(db_path=registry_path) as corp_reg,
+    ):
         print("--- Ensuring corpora ---")
         for genre in genres:
             ensure_corpus(
@@ -559,7 +617,8 @@ def main() -> int:
                 dry_run=opts.dry_run,
             )
         ensure_corpus(
-            corp_reg, TOP_CORPUS,
+            corp_reg,
+            TOP_CORPUS,
             description="Internet Archive — complete library",
             dry_run=opts.dry_run,
         )
@@ -572,8 +631,7 @@ def main() -> int:
                 continue
 
             book_dirs = sorted(
-                p for p in genre_dir.iterdir()
-                if p.is_dir() and not p.name.startswith(".")
+                p for p in genre_dir.iterdir() if p.is_dir() and not p.name.startswith(".")
             )
             if not book_dirs:
                 print(f"[!] No book directories in {genre_dir} — skipping\n")
