@@ -6,10 +6,10 @@
   <a href="https://www.python.org/"><img src="https://img.shields.io/badge/python-3.12%20|%203.13-blue.svg" alt="Python"/></a>
   <a href="https://www.elastic.co/licensing/elastic-license"><img src="https://img.shields.io/badge/code-Elastic--2.0-lightgrey.svg" alt="Code License"/></a>
   <a href="https://www.gutenberg.org/"><img src="https://img.shields.io/badge/texts-Public%20Domain-green.svg" alt="Texts License"/></a>
-  <img src="https://img.shields.io/badge/version-1.0.0-blue.svg" alt="Version"/>
-  <img src="https://img.shields.io/badge/corpus-78%20books-orange.svg" alt="Corpus"/>
-  <img src="https://img.shields.io/badge/nodes-445K-green.svg" alt="Nodes"/>
-  <img src="https://img.shields.io/badge/edges-4.5M-green.svg" alt="Edges"/>
+  <img src="https://img.shields.io/badge/version-1.0.1-blue.svg" alt="Version"/>
+  <img src="https://img.shields.io/badge/corpus-79%20books-orange.svg" alt="Corpus"/>
+  <img src="https://img.shields.io/badge/nodes-448K-green.svg" alt="Nodes"/>
+  <img src="https://img.shields.io/badge/edges-4.8M-green.svg" alt="Edges"/>
   <a href="https://github.com/Flux-Frontiers/doc_kg"><img src="https://img.shields.io/badge/DocKG-ready-blue.svg" alt="DocKG"/></a>
   <a href="https://github.com/Flux-Frontiers/KGRAG"><img src="https://img.shields.io/badge/KGRAG-integrated-purple.svg" alt="KGRAG"/></a>
 </p>
@@ -18,7 +18,7 @@
 
 **GutenbergKG** is a universal ingestion engine for digitized text corpora — named for the press that democratized books, built to do the same for structured knowledge. It ingests from [Project Gutenberg](https://www.gutenberg.org/), the [Internet Archive](https://archive.org/), and local file corpora, and produces queryable knowledge graphs via [DocKG](https://github.com/Flux-Frontiers/doc_kg) and [KGRAG](https://github.com/Flux-Frontiers/KGRAG).
 
-The current corpus spans 78 public-domain masterworks across 9 genres — 445,486 nodes, 4,525,716 edges — queryable as independent genre corpora or as a unified `gutenberg-all` knowledge graph.
+The current corpus spans 79 public-domain masterworks across 9 genres — 448,139 nodes, 4,836,993 edges — queryable as independent genre corpora or as a unified `gutenberg-all` knowledge graph.
 
 *Author: Eric G. Suchanek, PhD*
 *Flux-Frontiers, Liberty TWP, OH*
@@ -36,7 +36,7 @@ Each book is:
 - **Organized by genre** into thematic subcorpora for targeted or broad querying
 - **DocKG-indexed** into SQLite + LanceDB for hybrid semantic + structural retrieval
 
-The result: 78 of history's most important works, instantly searchable as a unified knowledge graph — or as independently queryable genre corpora.
+The result: 79 of history's most important works, instantly searchable as a unified knowledge graph — or as independently queryable genre corpora.
 
 ---
 
@@ -44,16 +44,16 @@ The result: 78 of history's most important works, instantly searchable as a unif
 
 | Genre | Books | Nodes | Edges |
 |-------|------:|------:|------:|
-| English Literature | 22 | 93,147 | 893,364 |
-| Russian Literature | 6 | 66,343 | 709,346 |
-| Ancient & Classical | 8 | 49,351 | 596,246 |
-| French Literature | 6 | 58,073 | 672,205 |
-| Philosophy | 8 | 58,265 | 506,407 |
-| Science Fiction | 14 | 59,075 | 589,989 |
-| American Literature | 9 | 43,473 | 364,627 |
-| Shakespeare | 4 | 6,277 | 81,237 |
-| Spanish Literature | 1 | 11,482 | 112,295 |
-| **Total** | **78** | **445,486** | **4,525,716** |
+| English Literature | 22 | 93,263 | 966,163 |
+| Russian Literature | 6 | 66,343 | 761,002 |
+| French Literature | 6 | 58,009 | 704,701 |
+| Ancient & Classical | 9 | 51,895 | 646,165 |
+| Science Fiction | 14 | 59,079 | 620,127 |
+| Philosophy | 8 | 58,341 | 536,916 |
+| American Literature | 9 | 43,512 | 397,378 |
+| Spanish Literature | 1 | 11,438 | 121,414 |
+| Shakespeare | 4 | 6,259 | 83,127 |
+| **Total** | **79** | **448,139** | **4,836,993** |
 
 ---
 
@@ -320,10 +320,11 @@ Full technical reference: [`DOWNLOAD_PIPELINE.md`](DOWNLOAD_PIPELINE.md).
 | The Wealth of Nations | Adam Smith | 3300 |
 | Thus Spake Zarathustra | Friedrich Nietzsche | 1998 |
 
-### Ancient & Classical (8)
+### Ancient & Classical (9)
 
 | Title | Author | Gutenberg ID |
 |---|---|---|
+| A Selection from the Discourses of Epictetus with the Encheiridion | Epictetus | 10661 |
 | Meditations | Marcus Aurelius | 2680 |
 | Oedipus King of Thebes | Sophocles | 27673 |
 | The Aeneid | Virgil | 228 |
@@ -424,18 +425,18 @@ If you use GutenbergKG in your research, please cite it. GitHub's **Cite this re
   author       = {Suchanek, Eric G.},
   title        = {{GutenbergKG}: The Knowledge Press},
   year         = {2026},
-  version      = {1.0.0},
+  version      = {1.0.1},
   publisher    = {Flux-Frontiers},
   url          = {https://github.com/Flux-Frontiers/gutenberg_kg},
   note         = {Universal ingestion engine for digitized text corpora;
-                  78 public-domain masterworks across 9 genres as queryable
+                  79 public-domain masterworks across 9 genres as queryable
                   knowledge graphs via DocKG and KGRAG}
 }
 ```
 
 **APA:**
 
-> Suchanek, E. G. (2026). *GutenbergKG: The Knowledge Press* (Version 1.0.0) [Software]. Flux-Frontiers. https://github.com/Flux-Frontiers/gutenberg_kg
+> Suchanek, E. G. (2026). *GutenbergKG: The Knowledge Press* (Version 1.0.1) [Software]. Flux-Frontiers. https://github.com/Flux-Frontiers/gutenberg_kg
 
 ---
 
