@@ -4,25 +4,11 @@ from pathlib import Path
 
 import click
 
-# ---------------------------------------------------------------------------
-# Constants
-# ---------------------------------------------------------------------------
+from gutenberg_kg.genres import ALL_GENRES, GUTENBERG_GENRES, IA_GENRES
 
-ALL_GENRES = [
-    "ancient-classical",
-    "shakespeare",
-    "english-literature",
-    "american-literature",
-    "french-literature",
-    "russian-literature",
-    "philosophy",
-    "spanish",
-    "science-fiction",
-]
-
-ALL_IA_GENRES = [
-    "audel-electric",
-]
+# Re-export under the names the CLI modules expect
+ALL_GUTENBERG_GENRES = GUTENBERG_GENRES
+ALL_IA_GENRES = IA_GENRES
 
 # src/gutenberg_kg/cli/options.py
 #   .parents[0] = src/gutenberg_kg/cli/

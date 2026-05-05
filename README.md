@@ -160,10 +160,16 @@ Catalog format: one book per line, `<gutenberg_id>[TAB<optional title>[TAB<optio
 registering each book with KGRAG, and optionally committing + pushing changes
 to git — all in per-genre batches to avoid large monolithic commits.
 
-### List available genres
+### Manage genres
+
+Genres are stored in [`corpus/genres.json`](corpus/genres.json) — the single
+source of truth. Seed it once, then add new genres without touching any code.
 
 ```bash
-python scripts/ingest.py --list-genres
+gutenkg genres init                              # create corpus/genres.json from defaults
+gutenkg genres list                              # show all registered genres
+gutenkg genres add medieval-literature --source gutenberg   # add a new genre
+gutenkg genres add my-ia-collection --source ia             # Internet Archive genre
 ```
 
 ### Ingest all genres
@@ -209,7 +215,6 @@ python scripts/ingest.py --dry-run --push
 
 | Flag | Description |
 |------|-------------|
-| `--list-genres` | Print all known genres and exit |
 | `--genre GENRE` | Process only this genre (repeatable) |
 | `--force-build` | Rebuild even if `.dockg` already exists |
 | `--force-register` | Re-register even if already in KGRAG registry |

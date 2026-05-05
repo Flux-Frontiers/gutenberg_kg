@@ -17,11 +17,44 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   - Ingested as three DocKGs: 11,105 combined nodes, 151,966 combined edges
   - `ancient-classical` corpus now at 12 books, 63,000 nodes, 798,131 edges
 
+- **`audel-electric` genre** — three Audel electric library volumes downloaded
+  from Internet Archive and ingested as DocKGs:
+  - *Audels Electric Library Vol 1* (IA: `audels-electric-library-vol-1`, 1929) — Fundamental Principles and Rules of Electricity, Magnetism, Armature Winding
+  - *Audels Electric Library Vol 2* (IA: `audels-electric-library-vol-2`, 1929) — Dynamos, DC Motors, Construction, Installation, Maintenance
+  - *Audels New Electric Library Vol VIII* (IA: `audelsnewelectri008004mbp`, 1962)
+  - Ingested: 22,922 nodes, 168,745 edges across 3 books in 44.8s
+
+- **`src/gutenberg_kg/genres.py`** — centralized genre registry backed by
+  `corpus/genres.json`. Loads the JSON at import time with built-in defaults as
+  fallback; exposes `GUTENBERG_GENRES`, `IA_GENRES`, and `ALL_GENRES`. Provides
+  `seed_registry()` and `add_genre()` helpers consumed by the CLI.
+
+- **`gutenkg genres` command group** (`src/gutenberg_kg/cli/cmd_genres.py`) —
+  manage the genre registry without editing code:
+  - `gutenkg genres init` — seed `corpus/genres.json` from built-in defaults
+    (`--force` to overwrite)
+  - `gutenkg genres list` — print all registered genres grouped by source
+  - `gutenkg genres add <name> --source gutenberg|ia` — append a genre to the
+    registry (auto-inits the file if absent)
+
+- **`corpus/genres.json`** — committed registry file seeded with all current
+  genres; now the single file to edit when adding a genre.
+
 ### Changed
 
-### Removed
+- **Genre lists decoupled from module constants** — `gutenberg.py`, `ia.py`,
+  `ingest.py`, and `cli/options.py` all previously contained their own hardcoded
+  genre lists (diverging over time). Each now imports from `genres.py`.
+
+- **Documentation updated** — `CHEATSHEET.md`, `README.md`, and
+  `DOWNLOAD_PIPELINE.md` updated to document the `gutenkg genres` workflow,
+  the `corpus/genres.json` registry, and the new file-layout entries.
 
 ### Fixed
+
+- **Internet Archive search API** — `mediatype=texts` is no longer accepted as a
+  standalone query parameter by the IA Solr API. Moved it into the Solr query
+  string as `AND mediatype:texts`; searches now return results correctly.
 
 ---
 

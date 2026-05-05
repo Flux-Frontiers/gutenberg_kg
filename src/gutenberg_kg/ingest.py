@@ -40,24 +40,14 @@ from kg_rag.corpus_registry import CorpusRegistry
 from kg_rag.primitives import CorpusEntry, KGEntry, KGKind
 from kg_rag.registry import KGRegistry, default_registry_path
 
+from gutenberg_kg.genres import ALL_GENRES
+
 # ---------------------------------------------------------------------------
 # Constants
 # ---------------------------------------------------------------------------
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 CORPUS_ROOT = REPO_ROOT / "corpus"
-
-ALL_GENRES = [
-    "ancient-classical",
-    "shakespeare",
-    "english-literature",
-    "american-literature",
-    "french-literature",
-    "russian-literature",
-    "philosophy",
-    "spanish",
-    "science-fiction",
-]
 
 TOP_CORPUS = "gutenberg-all"
 

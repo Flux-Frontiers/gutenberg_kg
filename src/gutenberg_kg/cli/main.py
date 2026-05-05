@@ -16,6 +16,7 @@ def cli():
 from gutenberg_kg.cli import (  # noqa: E402, F401
     cmd_authors,
     cmd_download,
+    cmd_genres,
     cmd_ia,
     cmd_ingest,
     cmd_rebuild,

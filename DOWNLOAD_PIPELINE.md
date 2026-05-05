@@ -332,8 +332,30 @@ downloads.
 
 ---
 
-## 11. Related Files
+## 11. Genre Registry
 
+Genres live in [`corpus/genres.json`](corpus/genres.json) — the single source of
+truth. The file is split into `"gutenberg"` and `"ia"` source lists.
+[`src/gutenberg_kg/genres.py`](src/gutenberg_kg/genres.py) loads it at import
+time and exports `GUTENBERG_GENRES`, `IA_GENRES`, and `ALL_GENRES`.
+
+To add a genre without touching any Python:
+
+```bash
+gutenkg genres init                              # one-time seed (creates genres.json)
+gutenkg genres add medieval-literature --source gutenberg
+gutenkg genres list                              # verify
+```
+
+`genres add` creates `genres.json` automatically if it doesn't exist.
+
+---
+
+## 12. Related Files
+
+- [`corpus/genres.json`](corpus/genres.json) — genre registry (single source of truth)
+- [`src/gutenberg_kg/genres.py`](src/gutenberg_kg/genres.py) — loads registry; exports `ALL_GENRES` etc.
+- [`src/gutenberg_kg/cli/cmd_genres.py`](src/gutenberg_kg/cli/cmd_genres.py) — `gutenkg genres init/list/add`
 - [`scripts/download_gutenberg.py`](scripts/download_gutenberg.py) — download engine
 - [`src/gutenberg_kg/authors.py`](src/gutenberg_kg/authors.py) — author-corpus builder (exposed as `gutenkg authors`)
 - [`src/gutenberg_kg/cli/cmd_download.py`](src/gutenberg_kg/cli/cmd_download.py) — `gutenkg download *` Click subcommands

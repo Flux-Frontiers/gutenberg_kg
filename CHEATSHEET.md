@@ -20,14 +20,16 @@ gutenkg --help
 
 ## Genres
 
+Genres are stored in `corpus/genres.json`. Add new genres without touching code.
+
 ```bash
-gutenkg list-genres
-# python scripts/ingest.py --list-genres
+gutenkg genres init                              # seed corpus/genres.json (first time)
+gutenkg genres list                              # show registered genres
+gutenkg genres add medieval-lit --source gutenberg   # add a Gutenberg genre
+gutenkg genres add my-ia-collection --source ia      # add an Internet Archive genre
 ```
 
-Current genres: `ancient-classical`, `shakespeare`, `english-literature`,
-`american-literature`, `french-literature`, `russian-literature`,
-`philosophy`, `spanish`, `science-fiction`
+`genres add` auto-initializes the file if it doesn't exist yet.
 
 ---
 
@@ -219,16 +221,19 @@ are regenerable from the source text via `gutenkg ingest --force-build`.
 ### Add a new genre from scratch
 
 ```bash
-# 1. Download via catalog (fastest)
+# 1. Register the genre (no code changes needed)
+gutenkg genres add science-fiction --source gutenberg
+
+# 2. Download via catalog (fastest)
 gutenkg download catalog scripts/catalogs/science-fiction.txt --genre science-fiction
 
-# 2. Survey what you have
+# 3. Survey what you have
 gutenkg download survey --genre science-fiction
 
-# 3. Build DocKGs and push
+# 4. Build DocKGs and push
 gutenkg ingest --genre science-fiction --push
 
-# 4. Refresh the author index so the new authors appear
+# 5. Refresh the author index so the new authors appear
 gutenkg authors
 ```
 
@@ -257,6 +262,7 @@ gutenkg download survey
 ```
 gutenberg_kg/
 ├── corpus/
+│   ├── genres.json                         # Genre registry — edit here to add genres
 │   ├── <genre>/                            # ancient-classical, shakespeare, …
 │   │   └── <Book Title>/
 │   │       ├── <slug>.md                   # Full text (Markdown)
@@ -268,12 +274,14 @@ gutenberg_kg/
 │       ├── index.md                        # Master alphabetical author table
 │       └── <author_slug>/author.md         # Born, died, Wikipedia, works
 ├── src/gutenberg_kg/
+│   ├── genres.py                           # Loads corpus/genres.json; exposes ALL_GENRES etc.
 │   ├── authors.py                          # Author-index logic (gutenkg authors)
 │   └── cli/
 │       ├── main.py                         # gutenkg CLI entry point
 │       ├── options.py                      # REPO_ROOT, CORPUS_ROOT, ALL_GENRES
 │       ├── cmd_authors.py                  # gutenkg authors
 │       ├── cmd_download.py                 # gutenkg download *
+│       ├── cmd_genres.py                   # gutenkg genres init/list/add
 │       ├── cmd_ingest.py                   # gutenkg ingest
 │       └── cmd_rebuild.py                  # gutenkg rebuild-lancedb
 ├── scripts/

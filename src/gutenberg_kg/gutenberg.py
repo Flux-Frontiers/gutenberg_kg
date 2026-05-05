@@ -71,6 +71,8 @@ import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
 
+from gutenberg_kg.genres import GUTENBERG_GENRES as ALL_GENRES
+
 # ---------------------------------------------------------------------------
 # Constants
 # ---------------------------------------------------------------------------
@@ -83,19 +85,6 @@ GUTENBERG_PAGE_URL = "https://www.gutenberg.org/ebooks/{ebook_id}"
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 CORPUS_ROOT = os.path.join(REPO_ROOT, "corpus")
-
-# Known genre directory names (mirrors ingest.py, plus science-fiction)
-ALL_GENRES = [
-    "ancient-classical",
-    "shakespeare",
-    "english-literature",
-    "american-literature",
-    "french-literature",
-    "russian-literature",
-    "philosophy",
-    "spanish",
-    "science-fiction",
-]
 
 START_MARKER = re.compile(r"\*\*\* ?START OF THE PROJECT GUTENBERG EBOOK .+? \*\*\*")
 END_MARKER = re.compile(r"\*\*\* ?END OF THE PROJECT GUTENBERG EBOOK .+? \*\*\*")

@@ -53,6 +53,8 @@ import urllib.request
 from collections import Counter
 from pathlib import Path
 
+from gutenberg_kg.genres import IA_GENRES as ALL_GENRES
+
 # ---------------------------------------------------------------------------
 # Constants
 # ---------------------------------------------------------------------------
@@ -65,7 +67,6 @@ IA_DETAILS_URL = "https://archive.org/details/{identifier}"
 REPO_ROOT = Path(__file__).resolve().parents[2]
 CORPUS_ROOT = REPO_ROOT / "corpus"
 
-ALL_GENRES = ["audel-electric"]
 
 # Unicode ligature normalization: OCR commonly mis-encodes these
 LIGATURES: dict[str, str] = {
@@ -676,8 +677,7 @@ def search_ia(query: str, max_results: int = 25) -> list[dict]:
     """Search Internet Archive texts. Returns list of result dicts."""
     params = urllib.parse.urlencode(
         {
-            "q": query,
-            "mediatype": "texts",
+            "q": f"({query}) AND mediatype:texts",
             "output": "json",
             "rows": str(max_results),
             "fl[]": ["identifier", "title", "creator", "date", "publisher"],
