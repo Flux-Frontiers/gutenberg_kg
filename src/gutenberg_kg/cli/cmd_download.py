@@ -1,41 +1,16 @@
 """Download subcommands — fetch books from Project Gutenberg."""
 
-import sys
-
 import click
 
+from gutenberg_kg import gutenberg as _dg
 from gutenberg_kg.cli.main import cli
-from gutenberg_kg.cli.options import ALL_GENRES, REPO_ROOT
-
-# ---------------------------------------------------------------------------
-# Lazy script import helper
-# ---------------------------------------------------------------------------
-
-
-def _dg():
-    """Import download_gutenberg from the scripts directory on first use."""
-    scripts_dir = str(REPO_ROOT / "scripts")
-    if scripts_dir not in sys.path:
-        sys.path.insert(0, scripts_dir)
-    import download_gutenberg as _mod  # noqa: PLC0415
-
-    return _mod
-
-
-# ---------------------------------------------------------------------------
-# Group
-# ---------------------------------------------------------------------------
+from gutenberg_kg.cli.options import ALL_GENRES
 
 
 @cli.group("download")
 def download_group():
     """Download books from Project Gutenberg."""
     pass
-
-
-# ---------------------------------------------------------------------------
-# Subcommands
-# ---------------------------------------------------------------------------
 
 
 @download_group.command("book")
@@ -58,20 +33,17 @@ def download_book(ebook_id, genre, title, force, dry_run):
     :param force: Re-download even if already present.
     :param dry_run: Print what would be done without actually doing it.
     """
-    dg = _dg()
-
-    # Build a minimal args namespace matching cmd_download expectations
-    class _Args:
-        pass
-
-    args = _Args()
-    args.ebook_id = ebook_id
-    args.genre = genre
-    args.title = title
-    args.force = force
-    args.dry_run = dry_run
-
-    dg.cmd_download(args)
+    if dry_run:
+        click.echo(f"[dry] Would download Gutenberg #{ebook_id}...")
+    else:
+        click.echo(f"Downloading Gutenberg #{ebook_id}...")
+    try:
+        path = _dg.download_book(ebook_id, title=title, genre=genre, force=force, dry_run=dry_run)
+        if not dry_run:
+            click.echo(f"\nDone. Book saved to: {path}")
+    except Exception as exc:
+        click.echo(f"ERROR: {exc}", err=True)
+        raise SystemExit(1)
 
 
 @download_group.command("catalog")
@@ -92,18 +64,7 @@ def download_catalog(catalog_file, genre, force, dry_run):
     :param force: Re-download even if already present.
     :param dry_run: Print what would be done without actually doing it.
     """
-    dg = _dg()
-
-    class _Args:
-        pass
-
-    args = _Args()
-    args.catalog_file = catalog_file
-    args.genre = genre
-    args.force = force
-    args.dry_run = dry_run
-
-    dg.cmd_catalog(args)
+    _dg.run_catalog(catalog_file, genre=genre, force=force, dry_run=dry_run)
 
 
 @download_group.command("search")
@@ -124,18 +85,7 @@ def download_search(query, author, title, max_results):
     :param title: Filter by title keyword.
     :param max_results: Maximum results to display.
     """
-    dg = _dg()
-
-    class _Args:
-        pass
-
-    args = _Args()
-    args.query = query
-    args.author = author
-    args.title = title
-    args.max_results = max_results
-
-    dg.cmd_search(args)
+    _dg.run_search(query=query, author=author, title=title, max_results=max_results)
 
 
 @download_group.command("fetch-genre")
@@ -160,20 +110,9 @@ def fetch_genre(genre, query, max_results, yes, force, dry_run):
     :param force: Re-download even if already present.
     :param dry_run: Print what would be done without actually doing it.
     """
-    dg = _dg()
-
-    class _Args:
-        pass
-
-    args = _Args()
-    args.genre = genre
-    args.query = query
-    args.max_results = max_results
-    args.yes = yes
-    args.force = force
-    args.dry_run = dry_run
-
-    dg.cmd_fetch_genre(args)
+    _dg.run_fetch_genre(
+        genre, query=query, max_results=max_results, yes=yes, force=force, dry_run=dry_run
+    )
 
 
 @download_group.command("survey")
@@ -188,12 +127,4 @@ def survey(genre):
 
     :param genre: Optional genre filter.
     """
-    dg = _dg()
-
-    class _Args:
-        pass
-
-    args = _Args()
-    args.genre = genre
-
-    dg.cmd_survey(args)
+    _dg.run_survey(genre)

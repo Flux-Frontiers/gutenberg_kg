@@ -1,33 +1,14 @@
 """Ingest subcommands — build DocKG indices and register with KGRAG."""
 
-import sys
 import time
 from datetime import UTC, datetime
 from pathlib import Path
 
 import click
 
+from gutenberg_kg import ingest as ig
 from gutenberg_kg.cli.main import cli
-from gutenberg_kg.cli.options import ALL_GENRES, CORPUS_ROOT, REPO_ROOT
-
-# ---------------------------------------------------------------------------
-# Lazy script import helper
-# ---------------------------------------------------------------------------
-
-
-def _ingest_mod():
-    """Import ingest from the scripts directory on first use."""
-    scripts_dir = str(REPO_ROOT / "scripts")
-    if scripts_dir not in sys.path:
-        sys.path.insert(0, scripts_dir)
-    import ingest as _mod  # noqa: PLC0415
-
-    return _mod
-
-
-# ---------------------------------------------------------------------------
-# Commands
-# ---------------------------------------------------------------------------
+from gutenberg_kg.cli.options import ALL_GENRES, CORPUS_ROOT
 
 
 @cli.command("ingest")
@@ -79,8 +60,6 @@ def ingest(genre, force_build, force_register, push, dry_run, registry):
     """
     from kg_rag.corpus_registry import CorpusRegistry
     from kg_rag.registry import KGRegistry, default_registry_path
-
-    ig = _ingest_mod()
 
     genres = list(genre) if genre else ALL_GENRES
     registry_path = Path(registry).resolve() if registry else default_registry_path()
