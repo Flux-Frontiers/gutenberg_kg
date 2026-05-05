@@ -1,4 +1,11 @@
-"""CLI smoke tests — command registration and help output."""
+"""CLI smoke tests — command registration and help output.
+
+Requires kg_rag (not available in CI) — skipped automatically when absent.
+"""
+
+import pytest
+
+pytest.importorskip("kg_rag", reason="kg_rag not installed — integration test skipped")
 
 from click.testing import CliRunner
 

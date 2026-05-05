@@ -1,4 +1,7 @@
-"""Unit tests for gutenberg_kg.ingest — pure helpers and data classes."""
+"""Unit tests for gutenberg_kg.ingest — pure helpers and data classes.
+
+Requires kg_rag (not available in CI) — skipped automatically when absent.
+"""
 
 from __future__ import annotations
 
@@ -6,6 +9,8 @@ import sqlite3
 from pathlib import Path
 
 import pytest
+
+pytest.importorskip("kg_rag", reason="kg_rag not installed — integration test skipped")
 
 from gutenberg_kg.ingest import (
     BookResult,
