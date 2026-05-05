@@ -360,7 +360,7 @@ def process_book(
 # Summary printer
 # ---------------------------------------------------------------------------
 
-W = 74  # box width
+W = 80  # box width
 
 
 def _row(label: str, value: str) -> str:
@@ -441,14 +441,14 @@ def print_summary(
     print(f"║  {'Per-Genre Breakdown':<{W - 2}}║")
     print("╠" + thin + "╣")
     print(
-        f"║  {'Genre':<22}{'Books':>6}{'Built':>7}{'Skip':>6}{'Fail':>6}{'Nodes':>8}{'Edges':>8}{'Time':>8}  ║"
+        f"║  {'Genre':<22}{'Books':>6}{'Built':>7}{'Skip':>6}{'Fail':>6}{'Nodes':>10}{'Edges':>10}{'Time':>8}  ║"
     )
-    print(f"║  {'─' * 68}  ║")
+    print(f"║  {'─' * 76}  ║")
     for g in genre_summaries:
         fail_flag = " !" if g.failed else ""
         print(
             f"║  {g.genre:<22}{g.total:>6}{g.built:>7}{g.skipped:>6}{g.failed:>6}"
-            f"{g.nodes:>8,}{g.edges:>8,}{fmt_duration(g.elapsed):>8}{fail_flag:<3}║"
+            f"{g.nodes:>10,}{g.edges:>10,}{fmt_duration(g.elapsed):>8}{fail_flag:<3}║"
         )
     print(f"║{'':{W}}║")
 

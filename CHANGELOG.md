@@ -71,9 +71,7 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - **`scripts/push.sh`** — covered by `gutenkg ingest --push`; contained a
   hardcoded genre list that would have drifted from `corpus/genres.json`.
 
----
-
-### Added (from previous unreleased)
+### Added (corpus & genre registry)
 
 - **Aristophanes** added to the `ancient-classical` genre — three new texts:
   - *The Frogs* (Gutenberg #7998, 77.8 KB standalone)

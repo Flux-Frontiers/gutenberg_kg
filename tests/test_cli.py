@@ -32,7 +32,9 @@ def test_version_exits_zero():
 
 def test_version_output_contains_version_string():
     result = CliRunner().invoke(cli, ["--version"])
-    assert "gutenberg-kg" in result.output or "0." in result.output
+    import re
+
+    assert "gutenberg-kg" in result.output or re.search(r"\d+\.\d+", result.output)
 
 
 def test_authors_help():
