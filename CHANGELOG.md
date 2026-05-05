@@ -10,6 +10,13 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added
 
+- **Aristophanes** added to the `ancient-classical` genre — three new texts:
+  - *The Frogs* (Gutenberg #7998, 77.8 KB standalone)
+  - *The Eleven Comedies, Volume 1* (Gutenberg #8688, 499.6 KB — includes *The Wasps*, *The Acharnians*, *The Knights*, *The Clouds*, *Peace*, *The Birds*)
+  - *The Eleven Comedies, Volume 2* (Gutenberg #8689, 585.6 KB — includes *Lysistrata*, *Thesmophoriazusae*, *The Frogs* alt. translation, *Ecclesiazusae*, *Plutus*)
+  - Ingested as three DocKGs: 11,105 combined nodes, 151,966 combined edges
+  - `ancient-classical` corpus now at 12 books, 63,000 nodes, 798,131 edges
+
 ### Changed
 
 ### Removed
