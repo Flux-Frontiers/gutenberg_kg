@@ -1,0 +1,16 @@
+{
+  "gutenberg": [
+    "ancient-classical",
+    "shakespeare",
+    "english-literature",
+    "american-literature",
+    "french-literature",
+    "russian-literature",
+    "philosophy",
+    "spanish",
+    "science-fiction"
+  ],
+  "ia": [
+    "audel-electric"
+  ]
+}
