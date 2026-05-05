@@ -60,7 +60,7 @@ vtracer        = ">=0.6.0"
 # ---------------------------------------------------------------------------
 [project]
 name = "gutenberg-kg"
-version = "1.0.1"
+version = "1.1.0"
 description = "The Knowledge Press — universal ingestion engine for digitized text corpora"
 readme = "README.md"
 license = "Elastic-2.0"
