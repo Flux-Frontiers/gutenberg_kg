@@ -24,7 +24,6 @@ Examples:
 
 from __future__ import annotations
 
-import argparse
 import platform
 import re
 import shutil
@@ -39,8 +38,6 @@ from pathlib import Path
 from kg_rag.corpus_registry import CorpusRegistry
 from kg_rag.primitives import CorpusEntry, KGEntry, KGKind
 from kg_rag.registry import KGRegistry, default_registry_path
-
-from gutenberg_kg.genres import ALL_GENRES
 
 # ---------------------------------------------------------------------------
 # Constants
@@ -88,30 +85,37 @@ class GenreSummary:
 
     @property
     def built(self) -> int:
+        """Number of books successfully built in this genre."""
         return sum(1 for r in self.results if r.status == "built")
 
     @property
     def skipped(self) -> int:
+        """Number of books skipped (already up-to-date)."""
         return sum(1 for r in self.results if r.status == "skipped")
 
     @property
     def failed(self) -> int:
+        """Number of books that failed to build."""
         return sum(1 for r in self.results if r.status == "failed")
 
     @property
     def total(self) -> int:
+        """Total books processed in this genre."""
         return len(self.results)
 
     @property
     def elapsed(self) -> float:
+        """Total wall-clock seconds across all books in this genre."""
         return sum(r.elapsed for r in self.results)
 
     @property
     def nodes(self) -> int:
+        """Total DocKG nodes across all books in this genre."""
         return sum(r.nodes for r in self.results)
 
     @property
     def edges(self) -> int:
+        """Total DocKG edges across all books in this genre."""
         return sum(r.edges for r in self.results)
 
 
@@ -568,87 +572,20 @@ def save_summary(
     return report_path
 
 
-# ---------------------------------------------------------------------------
-# Main
-# ---------------------------------------------------------------------------
+def run_ingest(
+    genres: list[str],
+    opts: IngestOptions,
+    registry: str | Path | None = None,
+) -> int:
+    """Orchestrate DocKG builds, KGRAG registration, and corpus membership.
 
-
-def parse_args() -> argparse.Namespace:
-    """Parse command-line arguments."""
-    p = argparse.ArgumentParser(
-        description="Build, register, and corpus-add per-book DocKGs for gutenberg_kg.",
-        formatter_class=argparse.RawDescriptionHelpFormatter,
-        epilog=__doc__,
-    )
-    p.add_argument(
-        "--list-genres",
-        action="store_true",
-        help="Print all known genres and exit",
-    )
-    p.add_argument(
-        "--genre",
-        dest="genres",
-        action="append",
-        metavar="GENRE",
-        help="Process only this genre (repeatable; default: all)",
-    )
-    p.add_argument(
-        "--force-build",
-        action="store_true",
-        help="Rebuild even if .dockg already exists",
-    )
-    p.add_argument(
-        "--force-register",
-        action="store_true",
-        help="Re-register even if already in registry",
-    )
-    p.add_argument(
-        "--dry-run",
-        action="store_true",
-        help="Print actions without executing",
-    )
-    p.add_argument(
-        "--push",
-        action="store_true",
-        help="git add + commit + push after each genre completes",
-    )
-    p.add_argument(
-        "--registry",
-        metavar="PATH",
-        default=None,
-        help="Override registry path",
-    )
-    return p.parse_args()
-
-
-def main() -> int:
-    """Entry point."""
-    args = parse_args()
-
-    if args.list_genres:
-        print("Known genres:")
-        for g in ALL_GENRES:
-            print(f"  {g}")
-        return 0
-
-    genres = args.genres or ALL_GENRES
-    registry_path = Path(args.registry).resolve() if args.registry else default_registry_path()
-
-    unknown = [g for g in genres if g not in ALL_GENRES]
-    if unknown:
-        print(f"ERROR: unknown genre(s): {', '.join(unknown)}", file=sys.stderr)
-        print(f"Valid genres: {', '.join(ALL_GENRES)}", file=sys.stderr)
-        return 1
-
-    opts = IngestOptions(
-        force_build=args.force_build,
-        force_register=args.force_register,
-        dry_run=args.dry_run,
-        push=args.push,
-    )
-
-    if opts.dry_run:
-        print("[DRY RUN — no changes will be made]\n")
+    :param genres: Genre names to process (already validated against ALL_GENRES).
+    :param opts: Ingest option flags.
+    :param registry: Override path to the KGRAG registry database; ``None``
+        uses the default location returned by ``default_registry_path()``.
+    :return: 0 on full success, 1 if any book failed.
+    """
+    registry_path = Path(registry).resolve() if registry else default_registry_path()
 
     genre_summaries: list[GenreSummary] = []
     wall_start = datetime.now(UTC)
@@ -658,7 +595,6 @@ def main() -> int:
         KGRegistry(db_path=registry_path) as kg_reg,
         CorpusRegistry(db_path=registry_path) as corp_reg,
     ):
-        # Ensure all needed corpora exist up front
         print("--- Ensuring corpora ---")
         for genre in genres:
             ensure_corpus(
@@ -675,7 +611,6 @@ def main() -> int:
         )
         print()
 
-        # Process books
         for genre in genres:
             genre_dir = CORPUS_ROOT / genre
             if not genre_dir.is_dir():
@@ -714,7 +649,3 @@ def main() -> int:
     print(f"  Report saved: {report_path}\n")
 
     return 1 if any(g.failed for g in genre_summaries) else 0
-
-
-if __name__ == "__main__":
-    sys.exit(main())

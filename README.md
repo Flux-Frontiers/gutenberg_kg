@@ -82,8 +82,8 @@ gutenberg_kg/
 │   ├── authors.py                       # Author-index logic (invoked by `gutenkg authors`)
 │   └── cli/                             # Click command modules
 └── scripts/
-    ├── ingest.py                        # DocKG build + KGRAG registration + git push
-    ├── download_gutenberg.py            # Download & convert script
+    ├── process_logo.py                  # Logo transparency + variant generator
+    ├── benchmark_embedders.py           # Embedder benchmarking utility
     └── catalogs/                        # Per-genre batch download catalogs
 ```
 
@@ -121,17 +121,16 @@ No dependencies beyond Python 3.12+ standard library for downloading.
 ### Search for books
 
 ```bash
-python scripts/download_gutenberg.py search --author "Jane Austen"
-python scripts/download_gutenberg.py search --title "Republic"
-python scripts/download_gutenberg.py search "science fiction"
+gutenkg download search --author "Jane Austen"
+gutenkg download search --title "Republic"
+gutenkg download search "science fiction"
+gutenkg download search --subject "dystopia" --language en
 ```
 
 ### Download a book
 
 ```bash
 gutenkg download book 1342 --genre english-literature
-# script equivalent
-python scripts/download_gutenberg.py download 1342 --genre english-literature
 ```
 
 This fetches *Pride and Prejudice* from Gutenberg, strips boilerplate, converts chapter structure to Markdown headings, and saves:
@@ -146,8 +145,6 @@ corpus/english-literature/Pride and Prejudice/
 
 ```bash
 gutenkg download catalog scripts/catalogs/science-fiction.txt --genre science-fiction
-# script equivalent
-python scripts/download_gutenberg.py catalog scripts/catalogs/science-fiction.txt --genre science-fiction
 ```
 
 Catalog format: one book per line, `<gutenberg_id>[TAB<optional title>[TAB<optional genre>]]`. Lines starting with `#` are comments. Per-genre catalogs live in [`scripts/catalogs/`](scripts/catalogs/).
@@ -156,9 +153,9 @@ Catalog format: one book per line, `<gutenberg_id>[TAB<optional title>[TAB<optio
 
 ## Building Knowledge Graphs
 
-`scripts/ingest.py` is the single entry point for building DocKG indices,
-registering each book with KGRAG, and optionally committing + pushing changes
-to git — all in per-genre batches to avoid large monolithic commits.
+`gutenkg ingest` builds DocKG indices, registers each book with KGRAG,
+and optionally commits + pushes changes to git — all in per-genre batches
+to avoid large monolithic commits.
 
 ### Manage genres
 
@@ -175,21 +172,21 @@ gutenkg genres add my-ia-collection --source ia             # Internet Archive g
 ### Ingest all genres
 
 ```bash
-python scripts/ingest.py
+gutenkg ingest
 ```
 
 ### Ingest one or more specific genres
 
 ```bash
-python scripts/ingest.py --genre american-literature
-python scripts/ingest.py --genre shakespeare --genre philosophy
+gutenkg ingest --genre american-literature
+gutenkg ingest --genre shakespeare --genre philosophy
 ```
 
 ### Ingest and push each genre as it finishes
 
 ```bash
-python scripts/ingest.py --push
-python scripts/ingest.py --genre russian-literature --push
+gutenkg ingest --push
+gutenkg ingest --genre russian-literature --push
 ```
 
 Each genre gets its own `git commit` + `git push` immediately after its books
@@ -200,15 +197,15 @@ local-only build artifacts and are not committed.
 ### Force a full rebuild
 
 ```bash
-python scripts/ingest.py --force-build
-python scripts/ingest.py --force-build --genre english-literature
+gutenkg ingest --force-build
+gutenkg ingest --force-build --genre english-literature
 ```
 
 ### Preview without making changes
 
 ```bash
-python scripts/ingest.py --dry-run
-python scripts/ingest.py --dry-run --push
+gutenkg ingest --dry-run
+gutenkg ingest --dry-run --push
 ```
 
 ### Full option reference

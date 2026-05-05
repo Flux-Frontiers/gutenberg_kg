@@ -65,14 +65,15 @@ KGRAG registration) is described in [`README.md`](README.md).
 |---|---|
 | `gutenkg download book <id> [--genre G]` | Single book |
 | `gutenkg download catalog <file> [--genre G]` | Batch from a catalog file |
-| `gutenkg download search "<query>" [--author A] [--title T]` | Gutenberg catalog search |
+| `gutenkg download search "<query>" [--author A] [--title T] [--subject S] [--language L]` | Gutenberg catalog search |
 | `gutenkg download fetch-genre <G>` | Search + confirm + download, whole genre |
 | `gutenkg download survey [--genre G]` | Show what's downloaded/indexed |
 | `gutenkg authors [--refresh] [--dry-run]` | Rebuild author pages |
 
-The `gutenkg` CLI is a thin Click wrapper around:
+The `gutenkg` CLI is the authoritative interface. Scripts are thin wrappers that delegate to it:
 
-- [`scripts/download_gutenberg.py`](scripts/download_gutenberg.py) — download engine (used by `gutenkg download *`)
+- [`src/gutenberg_kg/gutenberg.py`](src/gutenberg_kg/gutenberg.py) — download library (`download_book`, `run_search`, `run_catalog`, `run_fetch_genre`, `run_survey`)
+- [`src/gutenberg_kg/cli/cmd_download.py`](src/gutenberg_kg/cli/cmd_download.py) — Click subcommands (`gutenkg download *`)
 - [`src/gutenberg_kg/authors.py`](src/gutenberg_kg/authors.py) — author-corpus logic (used by `gutenkg authors`)
 
 ---
@@ -89,7 +90,7 @@ Every book pulls from up to three Gutenberg endpoints:
 | **Search** | `https://www.gutenberg.org/ebooks/search.opds/?query=…` | Used only by `download search` / `fetch-genre` |
 
 All four live in module-level constants at the top of
-[`download_gutenberg.py`](scripts/download_gutenberg.py).
+[`src/gutenberg_kg/gutenberg.py`](src/gutenberg_kg/gutenberg.py).
 
 ---
 
@@ -356,7 +357,7 @@ gutenkg genres list                              # verify
 - [`corpus/genres.json`](corpus/genres.json) — genre registry (single source of truth)
 - [`src/gutenberg_kg/genres.py`](src/gutenberg_kg/genres.py) — loads registry; exports `ALL_GENRES` etc.
 - [`src/gutenberg_kg/cli/cmd_genres.py`](src/gutenberg_kg/cli/cmd_genres.py) — `gutenkg genres init/list/add`
-- [`scripts/download_gutenberg.py`](scripts/download_gutenberg.py) — download engine
+- [`src/gutenberg_kg/cli/cmd_download.py`](src/gutenberg_kg/cli/cmd_download.py) — `gutenkg download *` Click subcommands
 - [`src/gutenberg_kg/authors.py`](src/gutenberg_kg/authors.py) — author-corpus builder (exposed as `gutenkg authors`)
 - [`src/gutenberg_kg/cli/cmd_download.py`](src/gutenberg_kg/cli/cmd_download.py) — `gutenkg download *` Click subcommands
 - [`src/gutenberg_kg/cli/cmd_authors.py`](src/gutenberg_kg/cli/cmd_authors.py) — `gutenkg authors` Click subcommand

@@ -35,7 +35,7 @@ def ia_search(query, max_results):
 @click.option(
     "--genre",
     type=click.Choice(ALL_IA_GENRES),
-    required=True,
+    default=None,
     help="Genre subdirectory to place the book in.",
 )
 @click.option("--title", default=None, help="Override the book title.")

@@ -2,8 +2,7 @@
 
 Quick reference for downloading, ingesting, and managing the corpus.
 
-**Preferred:** use the `gutenkg` CLI (after `poetry install`).
-Script equivalents (`python scripts/...`) are shown for reference.
+Use the `gutenkg` CLI (after `poetry install`).
 
 ---
 
@@ -52,9 +51,6 @@ gutenkg download search --subject "dystopia" --max-results 10
 gutenkg download book 84 --genre science-fiction
 gutenkg download book 84 --genre science-fiction --dry-run
 gutenkg download book 84 --genre science-fiction --force
-
-# script equivalent
-python scripts/download_gutenberg.py download 84 --genre science-fiction
 ```
 
 ### Batch download from catalog
@@ -65,9 +61,6 @@ Pre-built genre catalogs live in `scripts/catalogs/`. Preferred over search.
 gutenkg download catalog scripts/catalogs/science-fiction.txt --genre science-fiction
 gutenkg download catalog scripts/catalogs/science-fiction.txt --genre science-fiction --dry-run
 gutenkg download catalog scripts/catalogs/science-fiction.txt --genre science-fiction --force
-
-# script equivalent
-python scripts/download_gutenberg.py catalog scripts/catalogs/science-fiction.txt --genre science-fiction
 ```
 
 Catalog format: one book per line, `<gutenberg_id>[TAB<optional title>]`. Lines starting with `#` are comments.
@@ -86,9 +79,6 @@ gutenkg download fetch-genre science-fiction --yes
 
 # Preview only
 gutenkg download fetch-genre science-fiction --dry-run
-
-# script equivalent
-python scripts/download_gutenberg.py fetch-genre science-fiction --yes
 ```
 
 Reports saved to `reports/fetch_genre_<genre>_<timestamp>.md`.
@@ -98,9 +88,6 @@ Reports saved to `reports/fetch_genre_<genre>_<timestamp>.md`.
 ```bash
 gutenkg download survey
 gutenkg download survey --genre science-fiction
-
-# script equivalent
-python scripts/download_gutenberg.py survey --genre science-fiction
 ```
 
 Output shows `md=✓/✗  ref=✓/✗  kg=✓/✗` per book.
@@ -113,7 +100,6 @@ Output shows `md=✓/✗  ref=✓/✗  kg=✓/✗` per book.
 
 ```bash
 gutenkg ingest
-# python scripts/ingest.py
 ```
 
 ### Build specific genre(s)
@@ -121,9 +107,6 @@ gutenkg ingest
 ```bash
 gutenkg ingest --genre science-fiction
 gutenkg ingest --genre shakespeare --genre philosophy
-
-# script equivalent
-python scripts/ingest.py --genre science-fiction
 ```
 
 ### Force rebuild (wipes existing .dockg first)
@@ -191,10 +174,6 @@ LanceDB vector indices are not committed to git. After cloning, rebuild them:
 gutenkg rebuild-lancedb
 gutenkg rebuild-lancedb --genre science-fiction
 gutenkg rebuild-lancedb --genre shakespeare --genre philosophy
-
-# script equivalent
-bash scripts/rebuild_lancedb.sh
-bash scripts/rebuild_lancedb.sh science-fiction
 ```
 
 ---
@@ -285,9 +264,8 @@ gutenberg_kg/
 │       ├── cmd_ingest.py                   # gutenkg ingest
 │       └── cmd_rebuild.py                  # gutenkg rebuild-lancedb
 ├── scripts/
-│   ├── ingest.py                           # Ingest engine (called by CLI)
-│   ├── download_gutenberg.py               # Download engine (called by CLI)
-│   ├── rebuild_lancedb.sh                  # Shell fallback for LanceDB rebuild
+│   ├── process_logo.py                     # Logo transparency + variant generator
+│   ├── benchmark_embedders.py              # Embedder benchmarking utility
 │   └── catalogs/                           # Per-genre batch download catalogs
 │       └── science-fiction.txt
 ├── reports/

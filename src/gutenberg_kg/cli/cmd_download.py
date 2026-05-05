@@ -71,21 +71,32 @@ def download_catalog(catalog_file, genre, force, dry_run):
 @click.argument("query", default="")
 @click.option("--author", default=None, help="Filter by author name.")
 @click.option("--title", default=None, help="Filter by title keyword.")
+@click.option("--subject", default=None, help="Filter by subject/topic.")
+@click.option("--language", default=None, help="Filter by language code (e.g. en, fr).")
 @click.option(
     "--max-results",
     default=25,
     show_default=True,
     help="Maximum number of results to display.",
 )
-def download_search(query, author, title, max_results):
+def download_search(query, author, title, subject, language, max_results):
     """Search the Project Gutenberg catalog.
 
     :param query: General keyword query.
     :param author: Filter by author name.
     :param title: Filter by title keyword.
+    :param subject: Filter by subject/topic.
+    :param language: Filter by language code.
     :param max_results: Maximum results to display.
     """
-    _dg.run_search(query=query, author=author, title=title, max_results=max_results)
+    _dg.run_search(
+        query=query,
+        author=author,
+        title=title,
+        subject=subject,
+        language=language,
+        max_results=max_results,
+    )
 
 
 @download_group.command("fetch-genre")

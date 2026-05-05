@@ -1,48 +1,21 @@
-#!/usr/bin/env python3
 """Download books from Internet Archive as structured Markdown.
 
-Commands:
-    search    - Search IA catalog by query
-    download  - Download a book by IA identifier
-    catalog   - Download multiple books from a catalog file
-    survey    - Show download/ingest status for the corpus
+Public API (used by the Click CLI in gutenberg_kg.cli.cmd_ia):
+    download_book()       — fetch one item by IA identifier
+    run_catalog()         — download all items from a catalog file
+    run_survey()          — scan corpus and print download/ingest status
+    search_ia()           — search the IA full-text search API
+    format_search_results() — print search results as a table
 
-Usage:
-    # Search for Audel manuals
-    python scripts/download_ia.py search "audel electric"
-    python scripts/download_ia.py search "audels electricians plumbers guide"
-
-    # Download a single item by IA identifier
-    python scripts/download_ia.py download audelselectriciansguide01ande --genre audel-electric
-
-    # Download with explicit title override
-    python scripts/download_ia.py download someidentifier --title "My Title" --genre audel-electric
-
-    # Download multiple books from a catalog file
-    python scripts/download_ia.py catalog scripts/catalogs/audel-electric.txt --genre audel-electric
-
-    # Survey what has been downloaded and ingested
-    python scripts/download_ia.py survey
-    python scripts/download_ia.py survey --genre audel-electric
-
-    # Dry run (print actions without writing)
-    python scripts/download_ia.py download someidentifier --genre audel-electric --dry-run
-
-    # Force re-download even if already present
-    python scripts/download_ia.py download someidentifier --genre audel-electric --force
+Entry point:
+    gutenkg ia <subcommand> [options]
 
 Output structure (per book):
     corpus/<genre>/<Title>/
-        <slug>.md        - Structured Markdown with section headings
-        reference.md     - Internet Archive metadata sidecar
-
-The Markdown output detects chapter/section headings, elevates Q&A pairs
-(Ques./Ans. format) to h4 nodes, and cleans common OCR artifacts from
-scanned DjVu text layers — making it directly compatible with DocKG's
-`dockg build` and KGRAG's corpus ingestion pipelines.
+        <slug>.md        — structured Markdown with section headings
+        reference.md     — Internet Archive metadata sidecar
 """
 
-import argparse
 import json
 import re
 import sys
@@ -819,96 +792,3 @@ def run_survey(genre: str | None = None) -> int:
 
     print(f"\nTotals — md: {total_md}  ref: {total_ref}  kg: {total_kg}")
     return 0
-
-
-# ---------------------------------------------------------------------------
-# argparse adapters (used only by main() below)
-# ---------------------------------------------------------------------------
-
-
-def cmd_search(args: argparse.Namespace) -> int:
-    query = " ".join(args.query) if isinstance(args.query, list) else args.query
-    _n = getattr(args, "n", None)
-    max_results: int = _n if isinstance(_n, int) else int(getattr(args, "max_results", 25))
-    print(f"Searching Internet Archive: {query!r}\n")
-    try:
-        results = search_ia(query, max_results=max_results)
-    except Exception as exc:  # pylint: disable=broad-exception-caught
-        print(f"Search failed: {exc}", file=sys.stderr)
-        return 1
-    format_search_results(results)
-    return 0
-
-
-def cmd_download(args: argparse.Namespace) -> int:
-    result = download_book(
-        identifier=args.identifier,
-        title=args.title,
-        genre=args.genre,
-        force=args.force,
-        dry_run=args.dry_run,
-    )
-    return 0 if result else 1
-
-
-def cmd_catalog(args: argparse.Namespace) -> int:
-    return run_catalog(args.catalog, genre=args.genre, force=args.force, dry_run=args.dry_run)
-
-
-def cmd_survey(args: argparse.Namespace) -> int:
-    return run_survey(args.genre)
-
-
-# ---------------------------------------------------------------------------
-# CLI
-# ---------------------------------------------------------------------------
-
-
-def build_parser() -> argparse.ArgumentParser:
-    p = argparse.ArgumentParser(
-        description="Download Internet Archive books as structured Markdown.",
-        formatter_class=argparse.RawDescriptionHelpFormatter,
-        epilog=__doc__,
-    )
-    sub = p.add_subparsers(dest="command", required=True)
-
-    # search
-    sp = sub.add_parser("search", help="Search Internet Archive for texts")
-    sp.add_argument("query", nargs="+", help="Search terms")
-    sp.add_argument("-n", type=int, default=25, metavar="N", help="Max results (default 25)")
-
-    # download
-    sp = sub.add_parser("download", help="Download a single IA item by identifier")
-    sp.add_argument("identifier", help="Internet Archive identifier")
-    sp.add_argument("--title", help="Override the book title (affects directory name)")
-    sp.add_argument("--genre", choices=ALL_GENRES, help="Genre subdirectory")
-    sp.add_argument("--force", action="store_true", help="Re-download if already exists")
-    sp.add_argument("--dry-run", action="store_true", help="Print actions without writing files")
-
-    # catalog
-    sp = sub.add_parser("catalog", help="Download all items from a catalog file")
-    sp.add_argument("catalog", help="Path to catalog .txt file (tab-separated id [title])")
-    sp.add_argument("--genre", choices=ALL_GENRES, help="Genre for all items")
-    sp.add_argument("--force", action="store_true")
-    sp.add_argument("--dry-run", action="store_true")
-
-    # survey
-    sp = sub.add_parser("survey", help="Show download/ingest status for corpus")
-    sp.add_argument("--genre", choices=ALL_GENRES, help="Filter to one genre")
-
-    return p
-
-
-def main() -> int:
-    args = build_parser().parse_args()
-    dispatch = {
-        "search": cmd_search,
-        "download": cmd_download,
-        "catalog": cmd_catalog,
-        "survey": cmd_survey,
-    }
-    return dispatch[args.command](args)
-
-
-if __name__ == "__main__":
-    sys.exit(main())
