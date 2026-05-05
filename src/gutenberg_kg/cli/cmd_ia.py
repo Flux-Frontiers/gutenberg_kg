@@ -1,21 +1,10 @@
 """Internet Archive subcommands — fetch books from archive.org."""
 
-import sys
-
 import click
 
+from gutenberg_kg import ia
 from gutenberg_kg.cli.main import cli
-from gutenberg_kg.cli.options import ALL_IA_GENRES, REPO_ROOT
-
-
-def _ia():
-    """Import download_ia from the scripts directory on first use."""
-    scripts_dir = str(REPO_ROOT / "scripts")
-    if scripts_dir not in sys.path:
-        sys.path.insert(0, scripts_dir)
-    import download_ia as _mod  # noqa: PLC0415
-
-    return _mod
+from gutenberg_kg.cli.options import ALL_IA_GENRES
 
 
 @cli.group("ia")
@@ -33,16 +22,12 @@ def ia_search(query, max_results):
     :param query: Keyword query sent to the IA full-text search API.
     :param max_results: Maximum number of results to display.
     """
-    ia = _ia()
-
-    class _Args:
-        pass
-
-    args = _Args()
-    args.query = query
-    args.max_results = max_results
-
-    ia.cmd_search(args)
+    try:
+        results = ia.search_ia(query, max_results=max_results)
+    except Exception as exc:
+        click.echo(f"Search failed: {exc}", err=True)
+        raise SystemExit(1)
+    ia.format_search_results(results)
 
 
 @ia_group.command("download")
@@ -50,7 +35,7 @@ def ia_search(query, max_results):
 @click.option(
     "--genre",
     type=click.Choice(ALL_IA_GENRES),
-    required=True,
+    default=None,
     help="Genre subdirectory to place the book in.",
 )
 @click.option("--title", default=None, help="Override the book title.")
@@ -65,19 +50,9 @@ def ia_download(identifier, genre, title, force, dry_run):
     :param force: Re-download even if already present.
     :param dry_run: Print what would be done without actually doing it.
     """
-    ia = _ia()
-
-    class _Args:
-        pass
-
-    args = _Args()
-    args.identifier = identifier
-    args.genre = genre
-    args.title = title
-    args.force = force
-    args.dry_run = dry_run
-
-    ia.cmd_download(args)
+    result = ia.download_book(identifier, title=title, genre=genre, force=force, dry_run=dry_run)
+    if result is None:
+        raise SystemExit(1)
 
 
 @ia_group.command("catalog")
@@ -98,18 +73,9 @@ def ia_catalog(catalog_file, genre, force, dry_run):
     :param force: Re-download even if already present.
     :param dry_run: Print what would be done without actually doing it.
     """
-    ia = _ia()
-
-    class _Args:
-        pass
-
-    args = _Args()
-    args.catalog_file = catalog_file
-    args.genre = genre
-    args.force = force
-    args.dry_run = dry_run
-
-    ia.cmd_catalog(args)
+    rc = ia.run_catalog(catalog_file, genre=genre, force=force, dry_run=dry_run)
+    if rc != 0:
+        raise SystemExit(rc)
 
 
 @ia_group.command("survey")
@@ -124,12 +90,4 @@ def ia_survey(genre):
 
     :param genre: Optional genre filter.
     """
-    ia = _ia()
-
-    class _Args:
-        pass
-
-    args = _Args()
-    args.genre = genre
-
-    ia.cmd_survey(args)
+    ia.run_survey(genre)

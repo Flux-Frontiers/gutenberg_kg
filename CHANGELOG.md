@@ -8,7 +8,72 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+---
+
+## [1.1.0] - 2026-05-05
+
 ### Added
+
+- **`src/gutenberg_kg/ingest.py` — `run_ingest()` orchestrator** — centralised
+  genre-loop, corpus setup, registry management, and summary printing into a
+  single public function. `cmd_ingest.py` now calls `ig.run_ingest()` in three
+  lines instead of duplicating ~80 lines of logic.
+
+- **`gutenkg download search` — `--subject` and `--language` options** — two
+  arguments present in the old argparse layer were missing from the Click CLI.
+  Added to `cmd_download.py` and wired through to `gutenberg.run_search()`.
+
+- **Test suite** — four new test modules covering the full library API:
+  - `tests/test_gutenberg.py` — 17 tests (metadata fetch, boilerplate strip,
+    heading detection, `text_to_markdown`, slugify, idempotence, catalog parsing)
+  - `tests/test_ia.py` — 19 tests (search, download, `_coerce_str`,
+    `find_text_file`, `write_reference`, `fetch_url` retry)
+  - `tests/test_ingest.py` — 9 tests (`run_ingest`, `IngestOptions`,
+    `GenreSummary`, `ensure_corpus`, `is_sqlite_valid`)
+  - `tests/test_genres.py` — 5 tests (registry load/save, `add_genre`,
+    `seed_registry`, fallback defaults)
+
+- **`analysis/gutenberg_kg_analysis_20260505.md`** — PyCodeKG structural
+  analysis of the post-refactor codebase (1731 nodes, 1411 edges, 15 modules,
+  A/100 quality grade, 93% docstring coverage).
+
+### Changed
+
+- **`src/gutenberg_kg/gutenberg.py`** — removed `import argparse`, five
+  `cmd_*` adapter functions, `main()`, and the `if __name__` block (~200 lines).
+  Module is now a pure download library; entry point is `gutenkg download`.
+
+- **`src/gutenberg_kg/ia.py`** — same treatment as `gutenberg.py`: removed
+  argparse layer, `build_parser()`, `main()`, and `if __name__` (~90 lines).
+  Entry point is `gutenkg ia`.
+
+- **`src/gutenberg_kg/cli/cmd_ingest.py`** — collapsed from ~140 lines to ~30.
+  Removed duplicated genre loop, corpus setup, and summary printing; delegates
+  entirely to `ig.run_ingest()`.
+
+- **`src/gutenberg_kg/cli/cmd_ia.py`** — `ia download --genre` changed from
+  `required=True` to `default=None` to match what `ia.download_book()` already
+  accepted.
+
+- **Docs updated** — `README.md`, `CHEATSHEET.md`, and `DOWNLOAD_PIPELINE.md`
+  updated to remove all script-equivalent blocks and reflect the CLI-only
+  interface.
+
+### Removed
+
+- **`scripts/download_gutenberg.py`** — thin wrapper around the old argparse
+  `gutenberg.main()`; superseded by `gutenkg download`.
+- **`scripts/download_ia.py`** — thin wrapper around `ia.main()`; superseded
+  by `gutenkg ia`.
+- **`scripts/ingest.py`** — was already broken (called `ingest.main()` which
+  never existed); superseded by `gutenkg ingest`.
+- **`scripts/rebuild_lancedb.sh`** — covered by `gutenkg rebuild-lancedb`.
+- **`scripts/push.sh`** — covered by `gutenkg ingest --push`; contained a
+  hardcoded genre list that would have drifted from `corpus/genres.json`.
+
+---
+
+### Added (from previous unreleased)
 
 - **Aristophanes** added to the `ancient-classical` genre — three new texts:
   - *The Frogs* (Gutenberg #7998, 77.8 KB standalone)
@@ -17,11 +82,44 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   - Ingested as three DocKGs: 11,105 combined nodes, 151,966 combined edges
   - `ancient-classical` corpus now at 12 books, 63,000 nodes, 798,131 edges
 
+- **`audel-electric` genre** — three Audel electric library volumes downloaded
+  from Internet Archive and ingested as DocKGs:
+  - *Audels Electric Library Vol 1* (IA: `audels-electric-library-vol-1`, 1929) — Fundamental Principles and Rules of Electricity, Magnetism, Armature Winding
+  - *Audels Electric Library Vol 2* (IA: `audels-electric-library-vol-2`, 1929) — Dynamos, DC Motors, Construction, Installation, Maintenance
+  - *Audels New Electric Library Vol VIII* (IA: `audelsnewelectri008004mbp`, 1962)
+  - Ingested: 22,922 nodes, 168,745 edges across 3 books in 44.8s
+
+- **`src/gutenberg_kg/genres.py`** — centralized genre registry backed by
+  `corpus/genres.json`. Loads the JSON at import time with built-in defaults as
+  fallback; exposes `GUTENBERG_GENRES`, `IA_GENRES`, and `ALL_GENRES`. Provides
+  `seed_registry()` and `add_genre()` helpers consumed by the CLI.
+
+- **`gutenkg genres` command group** (`src/gutenberg_kg/cli/cmd_genres.py`) —
+  manage the genre registry without editing code:
+  - `gutenkg genres init` — seed `corpus/genres.json` from built-in defaults
+    (`--force` to overwrite)
+  - `gutenkg genres list` — print all registered genres grouped by source
+  - `gutenkg genres add <name> --source gutenberg|ia` — append a genre to the
+    registry (auto-inits the file if absent)
+
+- **`corpus/genres.json`** — committed registry file seeded with all current
+  genres; now the single file to edit when adding a genre.
+
 ### Changed
 
-### Removed
+- **Genre lists decoupled from module constants** — `gutenberg.py`, `ia.py`,
+  `ingest.py`, and `cli/options.py` all previously contained their own hardcoded
+  genre lists (diverging over time). Each now imports from `genres.py`.
+
+- **Documentation updated** — `CHEATSHEET.md`, `README.md`, and
+  `DOWNLOAD_PIPELINE.md` updated to document the `gutenkg genres` workflow,
+  the `corpus/genres.json` registry, and the new file-layout entries.
 
 ### Fixed
+
+- **Internet Archive search API** — `mediatype=texts` is no longer accepted as a
+  standalone query parameter by the IA Solr API. Moved it into the Solr query
+  string as `AND mediatype:texts`; searches now return results correctly.
 
 ---
 

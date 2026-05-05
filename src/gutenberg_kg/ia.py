@@ -1,48 +1,21 @@
-#!/usr/bin/env python3
 """Download books from Internet Archive as structured Markdown.
 
-Commands:
-    search    - Search IA catalog by query
-    download  - Download a book by IA identifier
-    catalog   - Download multiple books from a catalog file
-    survey    - Show download/ingest status for the corpus
+Public API (used by the Click CLI in gutenberg_kg.cli.cmd_ia):
+    download_book()       — fetch one item by IA identifier
+    run_catalog()         — download all items from a catalog file
+    run_survey()          — scan corpus and print download/ingest status
+    search_ia()           — search the IA full-text search API
+    format_search_results() — print search results as a table
 
-Usage:
-    # Search for Audel manuals
-    python scripts/download_ia.py search "audel electric"
-    python scripts/download_ia.py search "audels electricians plumbers guide"
-
-    # Download a single item by IA identifier
-    python scripts/download_ia.py download audelselectriciansguide01ande --genre audel-electric
-
-    # Download with explicit title override
-    python scripts/download_ia.py download someidentifier --title "My Title" --genre audel-electric
-
-    # Download multiple books from a catalog file
-    python scripts/download_ia.py catalog scripts/catalogs/audel-electric.txt --genre audel-electric
-
-    # Survey what has been downloaded and ingested
-    python scripts/download_ia.py survey
-    python scripts/download_ia.py survey --genre audel-electric
-
-    # Dry run (print actions without writing)
-    python scripts/download_ia.py download someidentifier --genre audel-electric --dry-run
-
-    # Force re-download even if already present
-    python scripts/download_ia.py download someidentifier --genre audel-electric --force
+Entry point:
+    gutenkg ia <subcommand> [options]
 
 Output structure (per book):
     corpus/<genre>/<Title>/
-        <slug>.md        - Structured Markdown with section headings
-        reference.md     - Internet Archive metadata sidecar
-
-The Markdown output detects chapter/section headings, elevates Q&A pairs
-(Ques./Ans. format) to h4 nodes, and cleans common OCR artifacts from
-scanned DjVu text layers — making it directly compatible with DocKG's
-`dockg build` and KGRAG's corpus ingestion pipelines.
+        <slug>.md        — structured Markdown with section headings
+        reference.md     — Internet Archive metadata sidecar
 """
 
-import argparse
 import json
 import re
 import sys
@@ -53,6 +26,8 @@ import urllib.request
 from collections import Counter
 from pathlib import Path
 
+from gutenberg_kg.genres import IA_GENRES as ALL_GENRES
+
 # ---------------------------------------------------------------------------
 # Constants
 # ---------------------------------------------------------------------------
@@ -62,10 +37,9 @@ IA_SEARCH_URL = "https://archive.org/advancedsearch.php"
 IA_DOWNLOAD_URL = "https://archive.org/download/{identifier}/{filename}"
 IA_DETAILS_URL = "https://archive.org/details/{identifier}"
 
-REPO_ROOT = Path(__file__).resolve().parent.parent
+REPO_ROOT = Path(__file__).resolve().parents[2]
 CORPUS_ROOT = REPO_ROOT / "corpus"
 
-ALL_GENRES = ["audel-electric"]
 
 # Unicode ligature normalization: OCR commonly mis-encodes these
 LIGATURES: dict[str, str] = {
@@ -279,7 +253,7 @@ def fetch_text(identifier: str, files: list[dict]) -> str | None:
     print(f"  Downloading {fmt}: {filename}")
     try:
         return fetch_url(url)
-    except Exception as exc:
+    except Exception as exc:  # pylint: disable=broad-exception-caught
         print(f"  [!] Download failed: {exc}")
         return None
 
@@ -624,7 +598,7 @@ def download_book(
     print(f"  Fetching metadata for {identifier!r}...")
     try:
         meta = fetch_ia_metadata(identifier)
-    except Exception as exc:
+    except Exception as exc:  # pylint: disable=broad-exception-caught
         print(f"  [!] Metadata fetch failed: {exc}")
         return None
 
@@ -676,8 +650,7 @@ def search_ia(query: str, max_results: int = 25) -> list[dict]:
     """Search Internet Archive texts. Returns list of result dicts."""
     params = urllib.parse.urlencode(
         {
-            "q": query,
-            "mediatype": "texts",
+            "q": f"({query}) AND mediatype:texts",
             "output": "json",
             "rows": str(max_results),
             "fl[]": ["identifier", "title", "creator", "date", "publisher"],
@@ -709,45 +682,38 @@ def search_ia(query: str, max_results: int = 25) -> list[dict]:
 
 
 # ---------------------------------------------------------------------------
-# Commands
+# Public API (called directly by CLI and other package code)
 # ---------------------------------------------------------------------------
 
 
-def cmd_search(args: argparse.Namespace) -> int:
-    query = " ".join(args.query)
-    print(f"Searching Internet Archive: {query!r}\n")
-    try:
-        results = search_ia(query, max_results=args.n)
-    except Exception as exc:
-        print(f"Search failed: {exc}", file=sys.stderr)
-        return 1
-
+def format_search_results(results: list[dict]) -> None:
+    """Print IA search results as a formatted table."""
     if not results:
         print("No results.")
-        return 0
-
+        return
     id_w = max(len(r["identifier"]) for r in results) + 2
     print(f"{'Identifier':<{id_w}} {'Year':<6} Title")
     print("-" * (id_w + 60))
     for r in results:
         print(f"{r['identifier']:<{id_w}} {r['date']:<6} {r['title']}")
     print(f"\n{len(results)} result(s).")
-    return 0
 
 
-def cmd_download(args: argparse.Namespace) -> int:
-    result = download_book(
-        identifier=args.identifier,
-        title=args.title,
-        genre=args.genre,
-        force=args.force,
-        dry_run=args.dry_run,
-    )
-    return 0 if result else 1
+def run_catalog(
+    catalog_file: str,
+    genre: str | None = None,
+    force: bool = False,
+    dry_run: bool = False,
+) -> int:
+    """Download all items from a catalog file.
 
-
-def cmd_catalog(args: argparse.Namespace) -> int:
-    catalog_path = Path(args.catalog)
+    :param catalog_file: Path to a tab-separated catalog file (identifier [title]).
+    :param genre: Genre subdirectory for all items.
+    :param force: Re-download even if already present.
+    :param dry_run: Print actions without writing files.
+    :return: 0 on full success, 1 if any item failed.
+    """
+    catalog_path = Path(catalog_file)
     if not catalog_path.exists():
         print(f"ERROR: catalog not found: {catalog_path}", file=sys.stderr)
         return 1
@@ -774,13 +740,13 @@ def cmd_catalog(args: argparse.Namespace) -> int:
         result = download_book(
             identifier=identifier,
             title=title,
-            genre=args.genre,
-            force=args.force,
-            dry_run=args.dry_run,
+            genre=genre,
+            force=force,
+            dry_run=dry_run,
         )
         if result is None:
             failures += 1
-        if not args.dry_run:
+        if not dry_run:
             time.sleep(1.5)  # polite delay between IA requests
         print()
 
@@ -789,88 +755,40 @@ def cmd_catalog(args: argparse.Namespace) -> int:
     return 0 if failures == 0 else 1
 
 
-def cmd_survey(args: argparse.Namespace) -> int:
-    genres = [args.genre] if args.genre else ALL_GENRES
+def run_survey(genre: str | None = None) -> int:
+    """Scan the IA corpus and print download/ingest status.
+
+    :param genre: Optional genre filter; default scans all IA genres.
+    :return: Always 0.
+    """
+    genres = [genre] if genre else ALL_GENRES
 
     total_md = total_ref = total_kg = 0
-    for genre in genres:
-        genre_dir = CORPUS_ROOT / genre
+    for g in genres:
+        genre_dir = CORPUS_ROOT / g
         if not genre_dir.is_dir():
-            print(f"  {genre}: (no directory)")
+            print(f"  {g}: (no directory)")
             continue
 
         book_dirs = sorted(
             p for p in genre_dir.iterdir() if p.is_dir() and not p.name.startswith(".")
         )
-        print(f"\n=== {genre} ({len(book_dirs)} books) ===")
+        print(f"\n=== {g} ({len(book_dirs)} books) ===")
         print(f"  {'Book':<50} {'MD':>3} {'REF':>4} {'KG':>4}")
         print(f"  {'-' * 62}")
         for bd in book_dirs:
             has_md = any(f for f in bd.glob("*.md") if f.name != "reference.md")
             has_ref = (bd / "reference.md").exists()
             has_kg = (bd / ".dockg" / "graph.sqlite").exists()
-            md_m = "✓" if has_md else "-"
-            ref_m = "✓" if has_ref else "-"
-            kg_m = "✓" if has_kg else "-"
             total_md += int(has_md)
             total_ref += int(has_ref)
             total_kg += int(has_kg)
-            print(f"  {bd.name:<50} {md_m:>3} {ref_m:>4} {kg_m:>4}")
+            print(
+                f"  {bd.name:<50}"
+                f" {'✓' if has_md else '-':>3}"
+                f" {'✓' if has_ref else '-':>4}"
+                f" {'✓' if has_kg else '-':>4}"
+            )
 
     print(f"\nTotals — md: {total_md}  ref: {total_ref}  kg: {total_kg}")
     return 0
-
-
-# ---------------------------------------------------------------------------
-# CLI
-# ---------------------------------------------------------------------------
-
-
-def build_parser() -> argparse.ArgumentParser:
-    p = argparse.ArgumentParser(
-        description="Download Internet Archive books as structured Markdown.",
-        formatter_class=argparse.RawDescriptionHelpFormatter,
-        epilog=__doc__,
-    )
-    sub = p.add_subparsers(dest="command", required=True)
-
-    # search
-    sp = sub.add_parser("search", help="Search Internet Archive for texts")
-    sp.add_argument("query", nargs="+", help="Search terms")
-    sp.add_argument("-n", type=int, default=25, metavar="N", help="Max results (default 25)")
-
-    # download
-    sp = sub.add_parser("download", help="Download a single IA item by identifier")
-    sp.add_argument("identifier", help="Internet Archive identifier")
-    sp.add_argument("--title", help="Override the book title (affects directory name)")
-    sp.add_argument("--genre", choices=ALL_GENRES, help="Genre subdirectory")
-    sp.add_argument("--force", action="store_true", help="Re-download if already exists")
-    sp.add_argument("--dry-run", action="store_true", help="Print actions without writing files")
-
-    # catalog
-    sp = sub.add_parser("catalog", help="Download all items from a catalog file")
-    sp.add_argument("catalog", help="Path to catalog .txt file (tab-separated id [title])")
-    sp.add_argument("--genre", choices=ALL_GENRES, help="Genre for all items")
-    sp.add_argument("--force", action="store_true")
-    sp.add_argument("--dry-run", action="store_true")
-
-    # survey
-    sp = sub.add_parser("survey", help="Show download/ingest status for corpus")
-    sp.add_argument("--genre", choices=ALL_GENRES, help="Filter to one genre")
-
-    return p
-
-
-def main() -> int:
-    args = build_parser().parse_args()
-    dispatch = {
-        "search": cmd_search,
-        "download": cmd_download,
-        "catalog": cmd_catalog,
-        "survey": cmd_survey,
-    }
-    return dispatch[args.command](args)
-
-
-if __name__ == "__main__":
-    sys.exit(main())
