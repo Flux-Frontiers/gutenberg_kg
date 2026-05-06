@@ -8,8 +8,8 @@
   <a href="https://www.gutenberg.org/"><img src="https://img.shields.io/badge/texts-Public%20Domain-green.svg" alt="Texts License"/></a>
   <img src="https://img.shields.io/badge/version-1.1.0-blue.svg" alt="Version"/>
   <img src="https://img.shields.io/badge/corpus-175%20books-orange.svg" alt="Corpus"/>
-  <img src="https://img.shields.io/badge/nodes-856K-green.svg" alt="Nodes"/>
-  <img src="https://img.shields.io/badge/edges-16.6M-green.svg" alt="Edges"/>
+  <img src="https://img.shields.io/badge/nodes-850K-green.svg" alt="Nodes"/>
+  <img src="https://img.shields.io/badge/edges-16.9M-green.svg" alt="Edges"/>
   <a href="https://github.com/Flux-Frontiers/doc_kg"><img src="https://img.shields.io/badge/DocKG-ready-blue.svg" alt="DocKG"/></a>
   <a href="https://github.com/Flux-Frontiers/KGRAG"><img src="https://img.shields.io/badge/KGRAG-integrated-purple.svg" alt="KGRAG"/></a>
   <a href="https://doi.org/10.5281/zenodo.20045390"><img src="https://zenodo.org/badge/1194808988.svg" alt="DOI"/></a>
@@ -21,7 +21,7 @@
 
 It transforms the world's great public-domain literature, philosophy, and sacred texts into **queryable knowledge graphs** — enabling semantic search, thematic analysis, and cross-work discovery at a scale and depth that keyword search cannot touch. Ask *what themes connect Dostoevsky and Dante*, trace the evolution of the social contract from Rousseau to Thoreau, or find every passage in the corpus that grapples with revenge — and get semantically grounded answers drawn from the source texts themselves.
 
-The corpus currently spans **175 public-domain masterworks across 13 genres** — 856,242 nodes, 16,563,910 edges — built and fully indexed on an Apple M5 Max in under 10 minutes.
+The corpus currently spans **175 public-domain masterworks across 13 genres** — 850,208 nodes, 16,920,494 edges — built and fully indexed on an Apple M5 Max in under 10 minutes.
 
 *Author: Eric G. Suchanek, PhD · Flux-Frontiers, Liberty TWP, OH*
 
@@ -53,19 +53,19 @@ The result: every work is independently queryable as its own knowledge graph, gr
 | Genre | Books | Nodes | Edges |
 |-------|------:|------:|------:|
 | English Literature | 37 | 187,049 | 2,062,293 |
-| Ancient & Classical | 22 | 134,200 | 2,187,293 |
+| Ancient & Classical | 21 | 120,703 | 2,409,568 |
 | Philosophy | 25 | 108,923 | 1,161,328 |
 | Russian Literature | 13 | 90,276 | 2,760,956 |
 | American Literature | 23 | 90,494 | 859,696 |
 | French Literature | 12 | 89,627 | 3,264,872 |
 | Science Fiction | 19 | 70,670 | 958,530 |
 | World Literature | 5 | 14,898 | 1,577,512 |
-| Sacred Texts | 6 | 16,362 | 748,731 |
+| Sacred Texts | 7 | 23,825 | 883,040 |
 | German Literature | 5 | 13,124 | 609,413 |
 | Audel Electric (IA) | 3 | 22,922 | 168,745 |
 | Spanish Literature | 1 | 11,438 | 121,414 |
 | Shakespeare | 4 | 6,259 | 83,127 |
-| **Total** | **175** | **856,242** | **16,563,910** |
+| **Total** | **175** | **850,208** | **16,920,494** |
 
 The full book list, organized by genre, is in the [Books in the Corpus](#books-in-the-corpus) section below. Planned additions are tracked in [`docs/CORPUS_WISHLIST.md`](docs/CORPUS_WISHLIST.md).
 
@@ -212,7 +212,7 @@ Digital humanities centers, computational linguistics labs, library science prog
 | Thus Spake Zarathustra | Friedrich Nietzsche |
 | Utilitarianism | John Stuart Mill |
 
-### Ancient & Classical (23)
+### Ancient & Classical (21)
 
 | Title | Author |
 |---|---|
@@ -228,7 +228,6 @@ Digital humanities centers, computational linguistics labs, library science prog
 | Oresteia | Aeschylus |
 | Parallel Lives | Plutarch |
 | The Aeneid | Virgil |
-| The Bible (King James Version) | — |
 | The Birds | Aristophanes |
 | The Clouds | Aristophanes |
 | The Consolation of Philosophy | Boethius |
@@ -325,12 +324,13 @@ Digital humanities centers, computational linguistics labs, library science prog
 | The Warlord of Mars | Edgar Rice Burroughs |
 | When the World Screamed | Arthur Conan Doyle |
 
-### Sacred Texts (6)
+### Sacred Texts (7)
 
 | Title | Tradition |
 |---|---|
 | The Analects of Confucius | Confucian |
 | The Bhagavad Gita | Hindu |
+| The Bible (King James Version) | Christian |
 | The Quran (Yusuf Ali translation) | Islamic |
 | Tao Te Ching | Taoist |
 | The Torah / Tanakh (JPS 1917) | Jewish |

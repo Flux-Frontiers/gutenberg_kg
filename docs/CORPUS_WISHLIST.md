@@ -8,6 +8,7 @@ Format: `- [ ] Title — Author (Gutenberg ID #NNNNN | IA)` — check the box wh
 
 ## Sacred Texts *(verse-type — drives doc_kg verse heading work)*
 
+- [x] The Bible — King James Version (#10)
 - [x] Quran — Yusuf Ali translation (#2800)
 - [x] The Torah / Tanakh — JPS 1917 translation (#1097)
 - [x] Bhagavad Gita — Edwin Arnold verse translation (#2388)
