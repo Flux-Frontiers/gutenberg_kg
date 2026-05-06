@@ -20,4 +20,5 @@ from gutenberg_kg.cli import (  # noqa: E402, F401
     cmd_ia,
     cmd_ingest,
     cmd_rebuild,
+    cmd_viz3d,
 )

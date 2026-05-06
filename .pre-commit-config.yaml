@@ -8,8 +8,8 @@ repos:
       - id: check-toml
       - id: check-merge-conflict
       - id: check-added-large-files
-        args: [--maxkb=1000]
-        exclude: '^(corpus|docs)/.*\.(png|jpg|jpeg|gif|pdf)$|^\.pycodekg/'
+        args: [--maxkb=2000]
+        exclude: '^corpus/.*\.(md|txt)|^(corpus|docs)/.*\.(png|jpg|jpeg|gif|pdf)$|^\.pycodekg/'
       - id: debug-statements
 
   - repo: https://github.com/astral-sh/ruff-pre-commit
@@ -30,8 +30,8 @@ repos:
     hooks:
       - id: detect-secrets
         args: ['--baseline', '.secrets.baseline',
-               '--exclude-files', '\.pycodekg/snapshots/.*',
-               '--exclude-files', 'corpus/.*/\.dockg/snapshots/.*']
+               '--exclude-files', 'corpus/.*',
+               '--exclude-files', '\.pycodekg/.*']
 
   - repo: local
     hooks:

@@ -7,9 +7,9 @@
   <a href="https://www.elastic.co/licensing/elastic-license"><img src="https://img.shields.io/badge/code-Elastic--2.0-lightgrey.svg" alt="Code License"/></a>
   <a href="https://www.gutenberg.org/"><img src="https://img.shields.io/badge/texts-Public%20Domain-green.svg" alt="Texts License"/></a>
   <img src="https://img.shields.io/badge/version-1.1.0-blue.svg" alt="Version"/>
-  <img src="https://img.shields.io/badge/corpus-79%20books-orange.svg" alt="Corpus"/>
-  <img src="https://img.shields.io/badge/nodes-448K-green.svg" alt="Nodes"/>
-  <img src="https://img.shields.io/badge/edges-4.8M-green.svg" alt="Edges"/>
+  <img src="https://img.shields.io/badge/corpus-175%20books-orange.svg" alt="Corpus"/>
+  <img src="https://img.shields.io/badge/nodes-856K-green.svg" alt="Nodes"/>
+  <img src="https://img.shields.io/badge/edges-16.6M-green.svg" alt="Edges"/>
   <a href="https://github.com/Flux-Frontiers/doc_kg"><img src="https://img.shields.io/badge/DocKG-ready-blue.svg" alt="DocKG"/></a>
   <a href="https://github.com/Flux-Frontiers/KGRAG"><img src="https://img.shields.io/badge/KGRAG-integrated-purple.svg" alt="KGRAG"/></a>
   <a href="https://doi.org/10.5281/zenodo.20045390"><img src="https://zenodo.org/badge/1194808988.svg" alt="DOI"/></a>
@@ -17,27 +17,34 @@
 
 # GutenbergKG — The Knowledge Press
 
-**GutenbergKG** is a universal ingestion engine for digitized text corpora — named for the press that democratized books, built to do the same for structured knowledge. It ingests from [Project Gutenberg](https://www.gutenberg.org/), the [Internet Archive](https://archive.org/), and local file corpora, and produces queryable knowledge graphs via [DocKG](https://github.com/Flux-Frontiers/doc_kg) and [KGRAG](https://github.com/Flux-Frontiers/KGRAG).
+**GutenbergKG** is a universal ingestion engine for digitized text corpora — named for the press that democratized books, built to do the same for structured knowledge.
 
-The current corpus spans 79 public-domain masterworks across 9 genres — 448,139 nodes, 4,836,993 edges — queryable as independent genre corpora or as a unified `gutenberg-all` knowledge graph.
+It transforms the world's great public-domain literature, philosophy, and sacred texts into **queryable knowledge graphs** — enabling semantic search, thematic analysis, and cross-work discovery at a scale and depth that keyword search cannot touch. Ask *what themes connect Dostoevsky and Dante*, trace the evolution of the social contract from Rousseau to Thoreau, or find every passage in the corpus that grapples with revenge — and get semantically grounded answers drawn from the source texts themselves.
 
-*Author: Eric G. Suchanek, PhD*
-*Flux-Frontiers, Liberty TWP, OH*
+The corpus currently spans **175 public-domain masterworks across 13 genres** — 856,242 nodes, 16,563,910 edges — built and fully indexed on an Apple M5 Max in under 10 minutes.
+
+*Author: Eric G. Suchanek, PhD · Flux-Frontiers, Liberty TWP, OH*
 
 ---
 
-## Overview
+## What It Does
 
-GutenbergKG transforms the raw texts of great literature, philosophy, and science into **queryable knowledge graphs** — enabling semantic search, thematic analysis, and cross-work discovery powered by [DocKG](https://github.com/Flux-Frontiers/doc_kg) and [KGRAG](https://github.com/Flux-Frontiers/KGRAG).
+GutenbergKG ingests text from three sources:
 
-Each book is:
+- **[Project Gutenberg](https://www.gutenberg.org/)** — the canonical source for public-domain literature. Full OPDS + RDF metadata enrichment: author birth/death, Wikipedia links, subjects, rights.
+- **[Internet Archive](https://archive.org/)** — for works not on Gutenberg, including technical reference volumes (Audel Guides, early science texts). OCR plain-text with configurable curation preprocessing.
+- **Local corpora** — any directory of `.md` or `.txt` files can be ingested as a genre.
 
-- **Downloaded** from Project Gutenberg and stripped of boilerplate
-- **Converted to structured Markdown** with heading hierarchy (`##` chapters, `###` scenes/sub-sections)
-- **Organized by genre** into thematic subcorpora for targeted or broad querying
-- **DocKG-indexed** into SQLite + LanceDB for hybrid semantic + structural retrieval
+Each text is:
 
-The result: 79 of history's most important works, instantly searchable as a unified knowledge graph — or as independently queryable genre corpora.
+1. **Stripped** of boilerplate (Project Gutenberg headers/footers, OCR artifacts)
+2. **Structured** — chapters, parts, acts, scenes, letters, verses detected and converted to Markdown heading hierarchy
+3. **Indexed** by [DocKG](https://github.com/Flux-Frontiers/doc_kg) into a hybrid SQLite + LanceDB knowledge graph
+4. **Registered** with [KGRAG](https://github.com/Flux-Frontiers/KGRAG) for federated cross-corpus query
+
+The result: every work is independently queryable as its own knowledge graph, grouped into genre corpora for thematic search, and unified into `gutenberg-all` for corpus-wide discovery.
+
+**No LLM is required to query the corpus.** The graph and vector index answer semantic queries on their own. A small local LLM (Ollama, llama.cpp, MLX) can optionally be connected for synthesis — summarizing results, comparing passages, or generating thematic essays — but the retrieval layer stands alone.
 
 ---
 
@@ -45,57 +52,26 @@ The result: 79 of history's most important works, instantly searchable as a unif
 
 | Genre | Books | Nodes | Edges |
 |-------|------:|------:|------:|
-| English Literature | 22 | 93,263 | 966,163 |
-| Russian Literature | 6 | 66,343 | 761,002 |
-| French Literature | 6 | 58,009 | 704,701 |
-| Ancient & Classical | 9 | 51,895 | 646,165 |
-| Science Fiction | 14 | 59,079 | 620,127 |
-| Philosophy | 8 | 58,341 | 536,916 |
-| American Literature | 9 | 43,512 | 397,378 |
+| English Literature | 37 | 187,049 | 2,062,293 |
+| Ancient & Classical | 22 | 134,200 | 2,187,293 |
+| Philosophy | 25 | 108,923 | 1,161,328 |
+| Russian Literature | 13 | 90,276 | 2,760,956 |
+| American Literature | 23 | 90,494 | 859,696 |
+| French Literature | 12 | 89,627 | 3,264,872 |
+| Science Fiction | 19 | 70,670 | 958,530 |
+| World Literature | 5 | 14,898 | 1,577,512 |
+| Sacred Texts | 6 | 16,362 | 748,731 |
+| German Literature | 5 | 13,124 | 609,413 |
+| Audel Electric (IA) | 3 | 22,922 | 168,745 |
 | Spanish Literature | 1 | 11,438 | 121,414 |
 | Shakespeare | 4 | 6,259 | 83,127 |
-| **Total** | **79** | **448,139** | **4,836,993** |
+| **Total** | **175** | **856,242** | **16,563,910** |
 
----
-
-## Repository Structure
-
-```
-gutenberg_kg/
-├── corpus/                              # all books + author index live here
-│   ├── english-literature/              # 22 English novels, novellas & stories
-│   │   ├── <Book Title>/
-│   │   │   ├── <slug>.md                # Full text with Markdown heading hierarchy
-│   │   │   └── reference.md             # Author provenance + Gutenberg metadata
-│   │   └── ...
-│   ├── philosophy/                      # 8 philosophical works
-│   ├── ancient-classical/               # 8 works from antiquity
-│   ├── american-literature/             # 9 American classics
-│   ├── russian-literature/              # 6 Russian masterworks
-│   ├── french-literature/               # 6 French classics
-│   ├── shakespeare/                     # 4 Shakespeare plays
-│   ├── spanish/                         # Don Quixote
-│   ├── science-fiction/                 # 14 works of early SF and weird fiction
-│   └── authors/                         # Per-author pages (built from reference.md)
-│       ├── index.md                     # Master alphabetical table
-│       └── <author_slug>/author.md      # Born, died, Wikipedia, works in corpus
-├── src/gutenberg_kg/
-│   ├── authors.py                       # Author-index logic (invoked by `gutenkg authors`)
-│   └── cli/                             # Click command modules
-└── scripts/
-    ├── process_logo.py                  # Logo transparency + variant generator
-    ├── benchmark_embedders.py           # Embedder benchmarking utility
-    └── catalogs/                        # Per-genre batch download catalogs
-```
-
-See [`DOWNLOAD_PIPELINE.md`](DOWNLOAD_PIPELINE.md) for the full technical
-reference on how raw Gutenberg texts become structured Markdown.
+The full book list, organized by genre, is in the [Books in the Corpus](#books-in-the-corpus) section below. Planned additions are tracked in [`docs/CORPUS_WISHLIST.md`](docs/CORPUS_WISHLIST.md).
 
 ---
 
 ## Quick Start
-
-### Install the CLI
 
 ```bash
 git clone https://github.com/Flux-Frontiers/gutenberg_kg
@@ -104,308 +80,304 @@ poetry install
 gutenkg --help
 ```
 
-### After cloning — rebuild knowledge graph indices
-
-Knowledge graph indices (`graph.sqlite` + LanceDB vectors) are regenerable build artifacts and are not committed to git. Rebuild everything from the source Markdown files:
-
-```bash
-gutenkg ingest --force-build              # all genres
-gutenkg ingest --force-build --genre shakespeare  # one genre
-```
-
-> See [CHEATSHEET.md](CHEATSHEET.md) for the full command reference.
-
----
-
-No dependencies beyond Python 3.12+ standard library for downloading.
-
-### Search for books
-
-```bash
-gutenkg download search --author "Jane Austen"
-gutenkg download search --title "Republic"
-gutenkg download search "science fiction"
-gutenkg download search --subject "dystopia" --language en
-```
-
-### Download a book
-
-```bash
-gutenkg download book 1342 --genre english-literature
-```
-
-This fetches *Pride and Prejudice* from Gutenberg, strips boilerplate, converts chapter structure to Markdown headings, and saves:
-
-```
-corpus/english-literature/Pride and Prejudice/
-├── pride_and_prejudice.md
-└── reference.md
-```
-
-### Batch download from catalog
-
-```bash
-gutenkg download catalog scripts/catalogs/science-fiction.txt --genre science-fiction
-```
-
-Catalog format: one book per line, `<gutenberg_id>[TAB<optional title>[TAB<optional genre>]]`. Lines starting with `#` are comments. Per-genre catalogs live in [`scripts/catalogs/`](scripts/catalogs/).
-
----
-
-## Building Knowledge Graphs
-
-`gutenkg ingest` builds DocKG indices, registers each book with KGRAG,
-and optionally commits + pushes changes to git — all in per-genre batches
-to avoid large monolithic commits.
-
-### Manage genres
-
-Genres are stored in [`corpus/genres.json`](corpus/genres.json) — the single
-source of truth. Seed it once, then add new genres without touching any code.
-
-```bash
-gutenkg genres init                              # create corpus/genres.json from defaults
-gutenkg genres list                              # show all registered genres
-gutenkg genres add medieval-literature --source gutenberg   # add a new genre
-gutenkg genres add my-ia-collection --source ia             # Internet Archive genre
-```
-
-### Ingest all genres
-
-```bash
-gutenkg ingest
-```
-
-### Ingest one or more specific genres
-
-```bash
-gutenkg ingest --genre american-literature
-gutenkg ingest --genre shakespeare --genre philosophy
-```
-
-### Ingest and push each genre as it finishes
-
-```bash
-gutenkg ingest --push
-gutenkg ingest --genre russian-literature --push
-```
-
-Each genre gets its own `git commit` + `git push` immediately after its books
-are processed, keeping individual pushes small regardless of corpus size. Commits
-contain only the source Markdown and metadata files — knowledge graph indices are
-local-only build artifacts and are not committed.
-
-### Force a full rebuild
+After cloning, rebuild the knowledge graph indices from the source Markdown (not committed to git — they're local build artifacts):
 
 ```bash
 gutenkg ingest --force-build
-gutenkg ingest --force-build --genre english-literature
 ```
 
-### Preview without making changes
+> **Expect 30–45 minutes** for a full rebuild on Apple Silicon (Apple M5 Max: ~30 min, Mac mini M4: ~45 min). Individual genres take 30 seconds to 5 minutes. Grab a coffee — or two.
+
+For the full command reference — downloading, ingesting, genre management, batch workflows — see [`docs/CHEATSHEET.md`](docs/CHEATSHEET.md). For the technical pipeline internals, see [`docs/DOWNLOAD_PIPELINE.md`](docs/DOWNLOAD_PIPELINE.md).
+
+---
+
+## Querying the Corpus
+
+Once indexed, the full corpus is queryable via [DocKG](https://github.com/Flux-Frontiers/doc_kg) and [KGRAG](https://github.com/Flux-Frontiers/KGRAG):
 
 ```bash
-gutenkg ingest --dry-run
-gutenkg ingest --dry-run --push
-```
+# Semantic search within a genre
+dockg query "characters who seek revenge" --corpus gutenberg-russian-literature
 
-### Full option reference
+# Cross-work thematic analysis
+kgrag corpus query gutenberg-philosophy "free will and moral responsibility"
 
-| Flag | Description |
-|------|-------------|
-| `--genre GENRE` | Process only this genre (repeatable) |
-| `--force-build` | Rebuild even if `.dockg` already exists |
-| `--force-register` | Re-register even if already in KGRAG registry |
-| `--push` | `git add` + `git commit` + `git push` after each genre |
-| `--dry-run` | Print actions without executing anything |
-| `--registry PATH` | Override the KGRAG registry path |
-
-### What ingest does, per book
-
-1. Runs `dockg build` to build a SQLite + LanceDB knowledge graph under `<book>/.dockg/`
-2. Registers the resulting KG with KGRAG under the name `gutenberg-<genre>-<slug>-doc`
-3. Adds it to the genre corpus (`gutenberg-<genre>`) and the top-level corpus (`gutenberg-all`)
-4. With `--push`: stages `<genre>/` (text + metadata only), commits, and pushes once all books in the genre are done
-
-### Query the corpus
-
-```bash
-# Thematic search
-dockg query "What themes appear in Meditations?"
-
-# Cross-work discovery
-dockg query "characters who seek revenge"
-
-# Philosophical analysis
-dockg query "social contract and natural law"
-```
-
-### Federated query with KGRAG
-
-```bash
-kgrag query "stoic philosophy and virtue"
+# Full corpus discovery
 kgrag corpus query gutenberg-all "the nature of justice"
-kgrag corpus query gutenberg-philosophy "free will and determinism"
+
+# Genre-specific
+kgrag corpus query gutenberg-sacred-texts "forgiveness and redemption"
 ```
 
 ---
 
-## What the Download Script Does
+## Strategic Partners & Sponsors Wanted
 
-1. **Fetches OPDS metadata** — title, author name, subjects, summary, language, rights
-2. **Enriches with RDF provenance** — author birth year, death year, Wikipedia URL, Gutenberg agent ID (pulled from `pg<id>.rdf`)
-3. **Downloads** the plain-text UTF-8 version
-4. **Strips** Project Gutenberg header/footer boilerplate
-5. **Detects structure** — chapters, books, parts, volumes, acts, scenes, letters, and section breaks from common Gutenberg formatting patterns
-6. **Converts to Markdown** with proper heading hierarchy (`#` title, `##` chapters, `###` sub-sections)
-7. **Writes** a structured `.md` file and a `reference.md` with full author provenance and Gutenberg metadata
+GutenbergKG is one node in a larger initiative — the **Tree of Knowledge** — a federated network of domain knowledge graphs unified by [KGRAG](https://github.com/Flux-Frontiers/KGRAG). The goal: a persistent, publicly queryable graph of humanity's written heritage, queryable without an LLM, composable with one.
 
-After a batch of downloads, run `gutenkg authors` to (re)generate
-`corpus/authors/` with per-author pages aggregated across every book in the
-corpus. Use `gutenkg authors --refresh` to also backfill provenance for any
-`reference.md` files that predate the RDF enrichment.
+This is not a call for open contributions. We are seeking **targeted partners** who bring infrastructure, institutional reach, or commercial interest to the table.
 
-Full technical reference: [`DOWNLOAD_PIPELINE.md`](DOWNLOAD_PIPELINE.md).
+### Hosting & Infrastructure Sponsors
 
-### Supported heading patterns
+The corpus SQLite + LanceDB indices are modest in size but need persistent, reliable hosting to serve researchers and developers. We are looking for sponsors willing to provide compute and storage in exchange for prominent attribution, early access to new corpora, and co-branding on the public instance.
 
-| Pattern | Example | Heading level |
-|---|---|---|
-| Chapter | `CHAPTER XIV.`, `Chapter 3` | `##` |
-| Book / Volume / Part | `BOOK THE FIRST`, `VOLUME II`, `PART III` | `##` |
-| Letter | `Letter 4` | `##` |
-| Act / Scene | `ACT III`, `SCENE II` | `##` / `###` |
-| Titled section | `I. A SCANDAL IN BOHEMIA` | `##` |
-| Sub-section break | `III.` | `###` |
-| Multi-line title | `CHAPTER I.` + title on next line | merged into `##` |
+### Licensing Partners
+
+[KGRAG](https://github.com/Flux-Frontiers/KGRAG) and [DocKG](https://github.com/Flux-Frontiers/doc_kg) are the infrastructure that powers this corpus — and every other knowledge graph in the Tree of Knowledge ecosystem. Organizations building AI-assisted research tools, enterprise knowledge management, or domain-specific retrieval systems can license the stack for internal or commercial deployment.
+
+### Research Collaborators
+
+Digital humanities centers, computational linguistics labs, library science programs, and AI research groups with aligned missions. We are particularly interested in partners who can extend the corpus into non-English languages, underrepresented traditions, or specialized technical domains.
+
+### Why now
+
+175 works, 16 million edges, production-ready pipeline. The architecture is federated by design — new corpora slot in without touching the existing graph. The ingestion tooling is fast and fully automated. The query layer is proven. This is the inflection point before the graph becomes too large for any single team to steer.
+
+**To discuss a partnership:** [suchanek@flux-frontiers.com](mailto:suchanek@flux-frontiers.com)
 
 ---
 
 ## Books in the Corpus
 
-### English Literature (22)
+### English Literature (37)
 
-| Title | Author | Gutenberg ID |
-|---|---|---|
-| A Modest Proposal | Jonathan Swift | 1080 |
-| A Tale of Two Cities | Charles Dickens | 98 |
-| Alice's Adventures in Wonderland | Lewis Carroll | 11 |
-| Dracula | Bram Stoker | 345 |
-| Emma | Jane Austen | 158 |
-| Frankenstein | Mary Shelley | 84 |
-| Great Expectations | Charles Dickens | 1400 |
-| Grimms' Fairy Tales | Brothers Grimm | 2591 |
-| Gulliver's Travels | Jonathan Swift | 829 |
-| Heart of Darkness | Joseph Conrad | 219 |
-| Jane Eyre | Charlotte Brontë | 1260 |
-| Middlemarch | George Eliot | 145 |
-| Pride and Prejudice | Jane Austen | 1342 |
-| Robinson Crusoe | Daniel Defoe | 521 |
-| Sense and Sensibility | Jane Austen | 161 |
-| The Adventures of Sherlock Holmes | Arthur Conan Doyle | 1661 |
-| The Picture of Dorian Gray | Oscar Wilde | 174 |
-| The Strange Case of Dr Jekyll and Mr Hyde | Robert Louis Stevenson | 43 |
-| The Time Machine | H.G. Wells | 35 |
-| The War of the Worlds | H.G. Wells | 36 |
-| Treasure Island | Robert Louis Stevenson | 120 |
-| Wuthering Heights | Emily Brontë | 768 |
+| Title | Author |
+|---|---|
+| A Modest Proposal | Jonathan Swift |
+| A Room with a View | E.M. Forster |
+| A Tale of Two Cities | Charles Dickens |
+| Alice's Adventures in Wonderland | Lewis Carroll |
+| Bleak House | Charles Dickens |
+| Cranford | Elizabeth Gaskell |
+| David Copperfield | Charles Dickens |
+| Dracula | Bram Stoker |
+| Emma | Jane Austen |
+| Far from the Madding Crowd | Thomas Hardy |
+| Frankenstein | Mary Shelley |
+| Great Expectations | Charles Dickens |
+| Grimms' Fairy Tales | Brothers Grimm |
+| Gulliver's Travels | Jonathan Swift |
+| Heart of Darkness | Joseph Conrad |
+| Howards End | E.M. Forster |
+| Jane Eyre | Charlotte Brontë |
+| Kim | Rudyard Kipling |
+| Middlemarch | George Eliot |
+| North and South | Elizabeth Gaskell |
+| Pride and Prejudice | Jane Austen |
+| Robinson Crusoe | Daniel Defoe |
+| Sense and Sensibility | Jane Austen |
+| Tess of the d'Urbervilles | Thomas Hardy |
+| The Adventures of Sherlock Holmes | Arthur Conan Doyle |
+| The Jungle Book | Rudyard Kipling |
+| The Man Who Was Thursday | G.K. Chesterton |
+| The Mayor of Casterbridge | Thomas Hardy |
+| The Picture of Dorian Gray | Oscar Wilde |
+| The Portrait of a Lady | Henry James |
+| The Strange Case of Dr Jekyll and Mr Hyde | Robert Louis Stevenson |
+| The Time Machine | H.G. Wells |
+| The Turn of the Screw | Henry James |
+| The War of the Worlds | H.G. Wells |
+| Treasure Island | Robert Louis Stevenson |
+| Vanity Fair | William Makepeace Thackeray |
+| Wuthering Heights | Emily Brontë |
 
-### Philosophy (8)
+### Philosophy (25)
 
-| Title | Author | Gutenberg ID |
-|---|---|---|
-| Beyond Good and Evil | Friedrich Nietzsche | 4363 |
-| Common Sense | Thomas Paine | 147 |
-| Leviathan | Thomas Hobbes | 3207 |
-| On the Origin of Species | Charles Darwin | 1228 |
-| The Federalist Papers | Hamilton, Madison, Jay | 1404 |
-| The Prince | Niccolò Machiavelli | 1232 |
-| The Wealth of Nations | Adam Smith | 3300 |
-| Thus Spake Zarathustra | Friedrich Nietzsche | 1998 |
+| Title | Author |
+|---|---|
+| A Vindication of the Rights of Woman | Mary Wollstonecraft |
+| Apology | Plato |
+| Beyond Good and Evil | Friedrich Nietzsche |
+| Common Sense | Thomas Paine |
+| Critique of Pure Reason | Immanuel Kant |
+| Discourse on Method | René Descartes |
+| Essays — First and Second Series | Ralph Waldo Emerson |
+| Groundwork of the Metaphysics of Morals | Immanuel Kant |
+| Leviathan | Thomas Hobbes |
+| Nicomachean Ethics | Aristotle |
+| On Liberty | John Stuart Mill |
+| On the Duty of Civil Disobedience | Henry David Thoreau |
+| On the Origin of Species | Charles Darwin |
+| Phaedo | Plato |
+| Poetics | Aristotle |
+| Politics | Aristotle |
+| The Art of War | Sun Tzu |
+| The Federalist Papers | Hamilton, Madison, Jay |
+| The Prince | Niccolò Machiavelli |
+| The Problems of Philosophy | Bertrand Russell |
+| The Social Contract | Jean-Jacques Rousseau |
+| The Symposium | Plato |
+| The Wealth of Nations | Adam Smith |
+| Thus Spake Zarathustra | Friedrich Nietzsche |
+| Utilitarianism | John Stuart Mill |
 
-### Ancient & Classical (9)
+### Ancient & Classical (23)
 
-| Title | Author | Gutenberg ID |
-|---|---|---|
-| A Selection from the Discourses of Epictetus with the Encheiridion | Epictetus | 10661 |
-| Meditations | Marcus Aurelius | 2680 |
-| Oedipus King of Thebes | Sophocles | 27673 |
-| The Aeneid | Virgil | 228 |
-| The Bible (King James) | — | 10 |
-| The Divine Comedy | Dante Alighieri | 1004 |
-| The Iliad | Homer | 6130 |
-| The Odyssey | Homer | 1727 |
-| The Republic | Plato | 1497 |
+| Title | Author |
+|---|---|
+| A Selection from the Discourses of Epictetus | Epictetus |
+| Histories | Herodotus |
+| History of the Peloponnesian War | Thucydides |
+| Medea | Euripides |
+| Meditations | Marcus Aurelius |
+| Metamorphoses | Ovid |
+| Oedipus King of Thebes | Sophocles |
+| On Duties (De Officiis) | Cicero |
+| On the Nature of Things | Lucretius |
+| Oresteia | Aeschylus |
+| Parallel Lives | Plutarch |
+| The Aeneid | Virgil |
+| The Bible (King James Version) | — |
+| The Birds | Aristophanes |
+| The Clouds | Aristophanes |
+| The Consolation of Philosophy | Boethius |
+| The Eleven Comedies Vol. I & II | Aristophanes |
+| The Frogs | Aristophanes |
+| The Iliad | Homer |
+| The Odyssey | Homer |
+| The Republic | Plato |
 
-### American Literature (9)
+### American Literature (23)
 
-| Title | Author | Gutenberg ID |
-|---|---|---|
-| Adventures of Huckleberry Finn | Mark Twain | 76 |
-| Leaves of Grass | Walt Whitman | 1322 |
-| Moby Dick | Herman Melville | 2701 |
-| The Call of the Wild | Jack London | 215 |
-| The Red Badge of Courage | Stephen Crane | 73 |
-| The Scarlet Letter | Nathaniel Hawthorne | 33 |
-| The Yellow Wallpaper | Charlotte Perkins Gilman | 1952 |
-| Uncle Tom's Cabin | Harriet Beecher Stowe | 203 |
-| Walden | Henry David Thoreau | 205 |
+| Title | Author |
+|---|---|
+| Adventures of Huckleberry Finn | Mark Twain |
+| Leaves of Grass | Walt Whitman |
+| Moby Dick | Herman Melville |
+| My Ántonia | Willa Cather |
+| Narrative of the Life of Frederick Douglass | Frederick Douglass |
+| O Pioneers! | Willa Cather |
+| Tales of Mystery and Imagination | Edgar Allan Poe |
+| The Age of Innocence | Edith Wharton |
+| The Awakening | Kate Chopin |
+| The Call of the Wild | Jack London |
+| The House of Mirth | Edith Wharton |
+| The Jungle | Upton Sinclair |
+| The Legend of Sleepy Hollow | Washington Irving |
+| The Raven and Other Poems | Edgar Allan Poe |
+| The Red Badge of Courage | Stephen Crane |
+| The Scarlet Letter | Nathaniel Hawthorne |
+| The Sea-Wolf | Jack London |
+| The Souls of Black Folk | W.E.B. Du Bois |
+| The Yellow Wallpaper | Charlotte Perkins Gilman |
+| Uncle Tom's Cabin | Harriet Beecher Stowe |
+| Up From Slavery | Booker T. Washington |
+| Walden | Henry David Thoreau |
+| White Fang | Jack London |
 
-### Russian Literature (6)
+### Russian Literature (13)
 
-| Title | Author | Gutenberg ID |
-|---|---|---|
-| Anna Karenina | Leo Tolstoy | 1399 |
-| Crime and Punishment | Fyodor Dostoevsky | 2554 |
-| Dead Souls | Nikolai Gogol | 1081 |
-| The Brothers Karamazov | Fyodor Dostoevsky | 28054 |
-| The Idiot | Fyodor Dostoevsky | 2638 |
-| War and Peace | Leo Tolstoy | 2600 |
+| Title | Author |
+|---|---|
+| Anna Karenina | Leo Tolstoy |
+| Childhood, Boyhood, Youth | Leo Tolstoy |
+| Crime and Punishment | Fyodor Dostoevsky |
+| Dead Souls | Nikolai Gogol |
+| Fathers and Sons | Ivan Turgenev |
+| Notes from Underground | Fyodor Dostoevsky |
+| Oblomov | Ivan Goncharov |
+| On the Eve | Ivan Turgenev |
+| The Brothers Karamazov | Fyodor Dostoevsky |
+| The Idiot | Fyodor Dostoevsky |
+| The Overcoat | Nikolai Gogol |
+| The Possessed (Demons) | Fyodor Dostoevsky |
+| War and Peace | Leo Tolstoy |
 
-### French Literature (6)
+### French Literature (12)
 
-| Title | Author | Gutenberg ID |
-|---|---|---|
-| Candide | Voltaire | 19942 |
-| Les Misérables | Victor Hugo | 135 |
-| Madame Bovary | Gustave Flaubert | 2413 |
-| The Count of Monte Cristo | Alexandre Dumas | 1184 |
-| The Three Musketeers | Alexandre Dumas | 1257 |
-| Twenty Thousand Leagues Under the Sea | Jules Verne | 164 |
+| Title | Author |
+|---|---|
+| Around the World in Eighty Days | Jules Verne |
+| Candide | Voltaire |
+| From the Earth to the Moon | Jules Verne |
+| Germinal | Émile Zola |
+| Journey to the Center of the Earth | Jules Verne |
+| Les Misérables | Victor Hugo |
+| Madame Bovary | Gustave Flaubert |
+| Nana | Émile Zola |
+| The Count of Monte Cristo | Alexandre Dumas |
+| The Hunchback of Notre-Dame | Victor Hugo |
+| The Three Musketeers | Alexandre Dumas |
+| Twenty Thousand Leagues Under the Sea | Jules Verne |
+
+### Science Fiction (19)
+
+| Title | Author |
+|---|---|
+| A Journey to Other Worlds | John Jacob Astor |
+| A Princess of Mars | Edgar Rice Burroughs |
+| At the Earth's Core | Edgar Rice Burroughs |
+| At the Mountains of Madness | H.P. Lovecraft |
+| Flatland | Edwin Abbott |
+| Frankenstein | Mary Shelley |
+| Herbert West: Reanimator | H.P. Lovecraft |
+| Pellucidar | Edgar Rice Burroughs |
+| The Call of Cthulhu | H.P. Lovecraft |
+| The Dunwich Horror | H.P. Lovecraft |
+| The First Men in the Moon | H.G. Wells |
+| The Food of the Gods | H.G. Wells |
+| The Gods of Mars | Edgar Rice Burroughs |
+| The Invisible Man | H.G. Wells |
+| The Island of Doctor Moreau | H.G. Wells |
+| The Lost World | Arthur Conan Doyle |
+| The Shadow over Innsmouth | H.P. Lovecraft |
+| The Warlord of Mars | Edgar Rice Burroughs |
+| When the World Screamed | Arthur Conan Doyle |
+
+### Sacred Texts (6)
+
+| Title | Tradition |
+|---|---|
+| The Analects of Confucius | Confucian |
+| The Bhagavad Gita | Hindu |
+| The Quran (Yusuf Ali translation) | Islamic |
+| Tao Te Ching | Taoist |
+| The Torah / Tanakh (JPS 1917) | Jewish |
+| The Upanishads (Max Müller) | Hindu |
+
+### German Literature (5)
+
+| Title | Author |
+|---|---|
+| Faust Part I | Johann Wolfgang von Goethe |
+| Faust Part II | Johann Wolfgang von Goethe |
+| Siddhartha | Hermann Hesse |
+| The Metamorphosis | Franz Kafka |
+| The Trial | Franz Kafka |
+
+### World Literature (5)
+
+| Title | Author/Tradition |
+|---|---|
+| Gitanjali | Rabindranath Tagore |
+| One Thousand and One Nights | Arabian tradition |
+| The Divine Comedy: Inferno | Dante Alighieri |
+| The Divine Comedy: Purgatorio | Dante Alighieri |
+| The Divine Comedy: Paradiso | Dante Alighieri |
 
 ### Shakespeare (4)
 
-| Title | Author | Gutenberg ID |
-|---|---|---|
-| A Midsummer Night's Dream | William Shakespeare | 1514 |
-| Hamlet | William Shakespeare | 1524 |
-| Macbeth | William Shakespeare | 1533 |
-| Romeo and Juliet | William Shakespeare | 1513 |
+| Title |
+|---|
+| A Midsummer Night's Dream |
+| Hamlet |
+| Macbeth |
+| Romeo and Juliet |
 
 ### Spanish Literature (1)
 
-| Title | Author | Gutenberg ID |
-|---|---|---|
-| Don Quixote | Miguel de Cervantes | 996 |
+| Title | Author |
+|---|---|
+| Don Quixote | Miguel de Cervantes |
 
-### Science Fiction (14)
+### Technical Reference — Internet Archive (3)
 
-| Title | Author | Gutenberg ID |
-|---|---|---|
-| Frankenstein | Mary Shelley | 84 |
-| The Invisible Man | H.G. Wells | 5230 |
-| The Island of Doctor Moreau | H.G. Wells | 1658 |
-| The First Men in the Moon | H.G. Wells | 18857 |
-| A Princess of Mars | Edgar Rice Burroughs | 10662 |
-| The Gods of Mars | Edgar Rice Burroughs | 364 |
-| At the Earth's Core | Edgar Rice Burroughs | 62 |
-| Flatland | Edwin Abbott | 11 |
-| The Lost World | Arthur Conan Doyle | 29808 |
-| The Call of Cthulhu | H.P. Lovecraft | 68283 |
-| At the Mountains of Madness | H.P. Lovecraft | 31469 |
-| The Shadow over Innsmouth | H.P. Lovecraft | 70652 |
-| Herbert West: Reanimator | H.P. Lovecraft | 665 |
-| The Dunwich Horror | H.P. Lovecraft | 50133 |
+| Title | Source |
+|---|---|
+| Audels Practical Electricity | Internet Archive |
+| Audels Electric Motors Guide | Internet Archive |
+| Audels Radiomans Guide | Internet Archive |
 
 ---
 
@@ -413,7 +385,7 @@ Full technical reference: [`DOWNLOAD_PIPELINE.md`](DOWNLOAD_PIPELINE.md).
 
 - **[KGRAG](https://github.com/Flux-Frontiers/KGRAG)** — Federated knowledge graph orchestration and query layer
 - **[DocKG](https://github.com/Flux-Frontiers/doc_kg)** — Semantic document knowledge graph (powers this corpus)
-- **[CodeKG](https://github.com/Flux-Frontiers/code_kg)** — Structural knowledge graph for Python codebases
+- **[PyCodeKG](https://github.com/Flux-Frontiers/pycode_kg)** — Structural knowledge graph for Python codebases
 
 ---
 
@@ -433,7 +405,7 @@ If you use GutenbergKG in your research, please cite it. GitHub's **Cite this re
   doi          = {10.5281/zenodo.20045390},
   url          = {https://github.com/Flux-Frontiers/gutenberg_kg},
   note         = {Universal ingestion engine for digitized text corpora;
-                  79 public-domain masterworks across 9 genres as queryable
+                  175 public-domain masterworks across 13 genres as queryable
                   knowledge graphs via DocKG and KGRAG}
 }
 ```

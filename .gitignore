@@ -252,4 +252,7 @@ commit.txt
 assets/*-1024x1024.png
 assets/*-xl-*.png
 assets/code_kg_arch_*.png
-commit.txt
+
+# Generated visualization exports
+*_forest_3d.html
+*.pyvista.html

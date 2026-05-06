@@ -1,0 +1,19 @@
+# French Literature — curated Gutenberg catalog (wishlist additions)
+# Format: <gutenberg_id>[TAB<title>]
+# Download: gutenkg download catalog scripts/catalogs/french-literature.txt --genre french-literature
+#
+# Already in corpus: Candide (#19942), Les Misérables (#135), Madame Bovary (#2413),
+# Count of Monte Cristo (#1184), Three Musketeers (#1257),
+# Twenty Thousand Leagues (#164)
+
+# --- Verne (additional) ---
+3748	Journey to the Center of the Earth (Verne)
+103	Around the World in Eighty Days (Verne)
+83	From the Earth to the Moon (Verne)
+
+# --- Hugo (additional) ---
+2610	The Hunchback of Notre-Dame (Hugo)
+
+# --- Zola ---
+5765	Germinal (Zola)
+5250	Nana (Zola)

@@ -1,0 +1,11 @@
+# World Literature — curated Gutenberg catalog (new genre)
+# Format: <gutenberg_id>[TAB<title>]
+# Download: gutenkg download catalog scripts/catalogs/world-literature.txt --genre world-literature
+#
+# Note: Dante's Inferno (#1004) is in ancient-classical; Purgatorio and Paradiso
+# added here to complete the Divine Comedy — consider moving all three to this genre.
+
+128	One Thousand and One Nights (Lane translation)
+8799	The Divine Comedy: Purgatorio (Dante)
+8800	The Divine Comedy: Paradiso (Dante)
+7164	Gitanjali (Tagore)

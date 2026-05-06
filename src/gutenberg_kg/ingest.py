@@ -82,6 +82,7 @@ class GenreSummary:
 
     genre: str
     results: list[BookResult] = field(default_factory=list)
+    wall_elapsed: float = 0.0
 
     @property
     def built(self) -> int:
@@ -448,7 +449,7 @@ def print_summary(
         fail_flag = " !" if g.failed else ""
         print(
             f"║  {g.genre:<22}{g.total:>6}{g.built:>7}{g.skipped:>6}{g.failed:>6}"
-            f"{g.nodes:>10,}{g.edges:>10,}{fmt_duration(g.elapsed):>8}{fail_flag:<3}║"
+            f"{g.nodes:>10,}{g.edges:>10,}{fmt_duration(g.wall_elapsed):>8}{fail_flag:<3}║"
         )
     print(f"║{'':{W}}║")
 
@@ -542,7 +543,7 @@ def save_summary(
     for g in genre_summaries:
         lines.append(
             f"| {g.genre} | {g.total} | {g.built} | {g.skipped} | {g.failed} "
-            f"| {g.nodes:,} | {g.edges:,} | {fmt_duration(g.elapsed)} |"
+            f"| {g.nodes:,} | {g.edges:,} | {fmt_duration(g.wall_elapsed)} |"
         )
 
     # Per-genre book detail
@@ -626,6 +627,7 @@ def run_ingest(
 
             print(f"=== {genre} ({len(book_dirs)} books) ===")
             genre_summary = GenreSummary(genre=genre)
+            genre_t0 = time.perf_counter()
             for book_dir in book_dirs:
                 result = process_book(
                     book_dir=book_dir,
@@ -635,6 +637,7 @@ def run_ingest(
                     opts=opts,
                 )
                 genre_summary.results.append(result)
+            genre_summary.wall_elapsed = time.perf_counter() - genre_t0
 
             genre_summaries.append(genre_summary)
 

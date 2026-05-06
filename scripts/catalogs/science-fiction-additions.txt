@@ -1,0 +1,15 @@
+# Science Fiction — wishlist additions (existing catalog: science-fiction.txt)
+# Format: <gutenberg_id>[TAB<title>]
+# Download: gutenkg download catalog scripts/catalogs/science-fiction-additions.txt --genre science-fiction
+#
+# Note: Poe's Tales (#2147) are also in american-literature — ingest into whichever
+# genre you want as primary; KGRAG can query both.
+# Already in corpus via science-fiction.txt: Frankenstein, Invisible Man,
+# Island of Doctor Moreau, First Men in Moon, Princess of Mars, Flatland,
+# Lost World, Lovecraft x5, At Earth's Core, Gods of Mars, Burroughs x2
+
+1635	The Food of the Gods (Wells)
+2038	When the World Screamed (Doyle)
+3935	A Journey to Other Worlds (Astor)
+4358	Pellucidar (Burroughs)
+1538	The Warlord of Mars (Burroughs)

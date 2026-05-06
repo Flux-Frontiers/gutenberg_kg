@@ -1,0 +1,15 @@
+# Russian & Eastern European Literature — curated Gutenberg catalog (wishlist additions)
+# Format: <gutenberg_id>[TAB<title>]
+# Download: gutenkg download catalog scripts/catalogs/russian-literature.txt --genre russian-literature
+#
+# Already in corpus: Anna Karenina (#1399), Crime and Punishment (#2554),
+# Dead Souls (#1081), Brothers Karamazov (#28054), The Idiot (#2638),
+# War and Peace (#2600)
+
+30723	Fathers and Sons (Turgenev)
+11571	On the Eve (Turgenev)
+1022	The Overcoat (Gogol)
+24738	Oblomov (Goncharov)
+8117	The Possessed / Demons (Dostoevsky)
+600	Notes from Underground (Dostoevsky)
+2450	Childhood, Boyhood, Youth (Tolstoy)

@@ -1,0 +1,19 @@
+# Ancient & Classical — curated Gutenberg catalog (wishlist additions)
+# Format: <gutenberg_id>[TAB<title>]
+# Download: gutenkg download catalog scripts/catalogs/ancient-classical.txt --genre ancient-classical
+#
+# Already in corpus: Epictetus (#10661), Meditations/Marcus Aurelius (#2680),
+# Oedipus (#27673), The Aeneid (#228), Bible KJV (#10), Divine Comedy (#1004),
+# Iliad (#6130), Odyssey (#1727), The Republic (#1497)
+
+2707	Histories (Herodotus)
+7142	History of the Peloponnesian War (Thucydides)
+674	Parallel Lives (Plutarch)
+21765	Metamorphoses (Ovid)
+2562	The Clouds (Aristophanes)
+3013	The Birds (Aristophanes)
+8714	Oresteia (Aeschylus)
+35	Medea (Euripides)
+47001	On Duties / De Officiis (Cicero)
+785	On the Nature of Things (Lucretius)
+14328	The Consolation of Philosophy (Boethius)

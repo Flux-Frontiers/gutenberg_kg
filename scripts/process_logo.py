@@ -71,7 +71,7 @@ def remove_background(arr: np.ndarray, bg_thresh: int, feather: int) -> np.ndarr
     h, w = arr.shape[:2]
     gray = arr[:, :, :3].mean(axis=2)
 
-    # Connected-component flood fill from image corners
+    # Pass 1: corner-connected flood fill (exterior background)
     bright = gray > bg_thresh
     labeled, _ = ndimage.label(bright)
     corner_labels = {
@@ -81,6 +81,20 @@ def remove_background(arr: np.ndarray, bg_thresh: int, feather: int) -> np.ndarr
         labeled[h - 1, w - 1],
     } - {0}
     bg_mask = np.isin(labeled, list(corner_labels))
+
+    # Pass 2: enclosed bright regions (letter counters — e, b, g, d, P, etc.)
+    # Any bright component that doesn't touch the image border is an interior hole.
+    interior_bright = bright & ~bg_mask
+    interior_labeled, n_interior = ndimage.label(interior_bright)
+    for i in range(1, n_interior + 1):
+        component = interior_labeled == i
+        if not (
+            component[0, :].any()
+            or component[-1, :].any()
+            or component[:, 0].any()
+            or component[:, -1].any()
+        ):
+            bg_mask |= component
 
     dist_into_fg = ndimage.distance_transform_edt(~bg_mask)
 

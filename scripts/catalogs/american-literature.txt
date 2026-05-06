@@ -1,0 +1,28 @@
+# American Literature — curated Gutenberg catalog (wishlist additions)
+# Format: <gutenberg_id>[TAB<title>]
+# Download: gutenkg download catalog scripts/catalogs/american-literature.txt --genre american-literature
+#
+# Already in corpus: Huckleberry Finn (#76), Leaves of Grass (#1322),
+# Moby Dick (#2701), The Call of the Wild (#215), The Red Badge of Courage (#73),
+# The Scarlet Letter (#33), The Yellow Wallpaper (#1952),
+# Uncle Tom's Cabin (#203), Walden (#205)
+
+# --- Essential gaps ---
+23	Narrative of the Life of Frederick Douglass (Douglass)
+408	The Souls of Black Folk (Du Bois)
+2376	Up From Slavery (Washington)
+
+# --- Poe ---
+2147	Tales of Mystery and Imagination (Poe)
+17192	The Raven and Other Poems (Poe)
+
+# --- Fiction ---
+910	White Fang (London)
+1608	The Sea-Wolf (London)
+160	The Awakening (Chopin)
+284	The House of Mirth (Wharton)
+541	The Age of Innocence (Wharton)
+41	The Legend of Sleepy Hollow (Irving)
+140	The Jungle (Sinclair)
+242	My Antonia (Cather)
+24	O Pioneers! (Cather)

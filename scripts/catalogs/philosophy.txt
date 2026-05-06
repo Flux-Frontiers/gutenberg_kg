@@ -1,0 +1,32 @@
+# Philosophy — curated Gutenberg catalog (wishlist additions)
+# Format: <gutenberg_id>[TAB<title>]
+# Download: gutenkg download catalog scripts/catalogs/philosophy.txt --genre philosophy
+#
+# Already in corpus: Beyond Good and Evil (#4363), Common Sense (#147),
+# Leviathan (#3207), On the Origin of Species (#1228), The Federalist Papers (#1404),
+# The Prince (#1232), The Wealth of Nations (#3300), Thus Spake Zarathustra (#1998)
+
+# --- Aristotle ---
+8438	Nicomachean Ethics (Aristotle)
+6762	Politics (Aristotle)
+1974	Poetics (Aristotle)
+
+# --- Plato dialogues ---
+1600	The Symposium (Plato)
+1656	Apology (Plato)
+1658	Phaedo (Plato)
+
+# --- Enlightenment ---
+4280	Critique of Pure Reason (Kant)
+5682	Groundwork of the Metaphysics of Morals (Kant)
+59	Meditations on First Philosophy (Descartes)
+34901	On Liberty (Mill)
+11224	Utilitarianism (Mill)
+46333	The Social Contract (Rousseau)
+
+# --- Other ---
+132	The Art of War (Sun Tzu)
+2944	Essays — First and Second Series (Emerson)
+5827	The Problems of Philosophy (Russell)
+3420	A Vindication of the Rights of Woman (Wollstonecraft)
+71	On the Duty of Civil Disobedience (Thoreau)

@@ -1,0 +1,43 @@
+# English Literature — curated Gutenberg catalog (wishlist additions)
+# Format: <gutenberg_id>[TAB<title>]
+# Download: gutenkg download catalog scripts/catalogs/english-literature.txt --genre english-literature
+#
+# Already in corpus: Modest Proposal (#1080), Tale of Two Cities (#98),
+# Alice (#11), Dracula (#345), Emma (#158), Frankenstein (#84),
+# Great Expectations (#1400), Grimms' Fairy Tales (#2591), Gulliver's Travels (#829),
+# Heart of Darkness (#219), Jane Eyre (#1260), Middlemarch (#145),
+# Pride and Prejudice (#1342), Robinson Crusoe (#521), Sense and Sensibility (#161),
+# Sherlock Holmes (#1661), Dorian Gray (#174), Jekyll & Hyde (#43),
+# The Time Machine (#35), War of the Worlds (#36), Treasure Island (#120),
+# Wuthering Heights (#768)
+
+# --- Hardy ---
+110	Tess of the d'Urbervilles (Hardy)
+107	Far from the Madding Crowd (Hardy)
+143	The Mayor of Casterbridge (Hardy)
+
+# --- Kipling ---
+2226	Kim (Kipling)
+236	The Jungle Book (Kipling)
+
+# --- Forster ---
+2641	A Room with a View (Forster)
+5765	Howards End (Forster)
+
+# --- James ---
+209	The Turn of the Screw (Henry James)
+432	The Portrait of a Lady (Henry James)
+
+# --- Dickens (additional) ---
+766	David Copperfield (Dickens)
+1023	Bleak House (Dickens)
+
+# --- Thackeray ---
+599	Vanity Fair (Thackeray)
+
+# --- Gaskell ---
+394	Cranford (Gaskell)
+4276	North and South (Gaskell)
+
+# --- Chesterton ---
+1695	The Man Who Was Thursday (Chesterton)

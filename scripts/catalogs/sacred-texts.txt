@@ -1,0 +1,13 @@
+# Sacred Texts — curated Gutenberg catalog
+# Format: <gutenberg_id>[TAB<title>]
+# Download: gutenkg download catalog scripts/catalogs/sacred-texts.txt --genre sacred-texts
+#
+# Note: verse/chapter-verse structure — drives doc_kg verse heading pattern work.
+# The Bible (KJV, #10) is already in ancient-classical — excluded here.
+
+2800	The Quran (Yusuf Ali translation)
+1097	The Torah / Tanakh (JPS 1917 translation)
+2388	The Bhagavad Gita (Edwin Arnold verse translation)
+216	Tao Te Ching (James Legge translation)
+3283	The Upanishads (Max Müller translation)
+4094	The Analects of Confucius (James Legge translation)
