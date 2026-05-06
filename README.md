@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/gutenberg_logo.png" alt="GutenbergKG — The Knowledge Press" width="220"/>
+  <img src="assets/logos/logo_512.png" alt="GutenbergKG — The Knowledge Press" width="400"/>
 </p>
 
 <p align="center">
@@ -12,6 +12,7 @@
   <img src="https://img.shields.io/badge/edges-4.8M-green.svg" alt="Edges"/>
   <a href="https://github.com/Flux-Frontiers/doc_kg"><img src="https://img.shields.io/badge/DocKG-ready-blue.svg" alt="DocKG"/></a>
   <a href="https://github.com/Flux-Frontiers/KGRAG"><img src="https://img.shields.io/badge/KGRAG-integrated-purple.svg" alt="KGRAG"/></a>
+  <a href="https://doi.org/10.5281/zenodo.20045390"><img src="https://zenodo.org/badge/1194808988.svg" alt="DOI"/></a>
 </p>
 
 # GutenbergKG — The Knowledge Press
@@ -427,8 +428,9 @@ If you use GutenbergKG in your research, please cite it. GitHub's **Cite this re
   author       = {Suchanek, Eric G.},
   title        = {{GutenbergKG}: The Knowledge Press},
   year         = {2026},
-  version      = {1.0.1},
+  version      = {1.1.0},
   publisher    = {Flux-Frontiers},
+  doi          = {10.5281/zenodo.20045390},
   url          = {https://github.com/Flux-Frontiers/gutenberg_kg},
   note         = {Universal ingestion engine for digitized text corpora;
                   79 public-domain masterworks across 9 genres as queryable
@@ -438,7 +440,7 @@ If you use GutenbergKG in your research, please cite it. GitHub's **Cite this re
 
 **APA:**
 
-> Suchanek, E. G. (2026). *GutenbergKG: The Knowledge Press* (Version 1.0.1) [Software]. Flux-Frontiers. https://github.com/Flux-Frontiers/gutenberg_kg
+> Suchanek, E. G. (2026). *GutenbergKG: The Knowledge Press* (Version 1.1.0) [Software]. Flux-Frontiers. https://doi.org/10.5281/zenodo.20045390
 
 ---
 

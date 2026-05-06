@@ -1,0 +1,44 @@
+cff-version: "1.2.0"
+message: "If you use this software, please cite it using the metadata below."
+type: software
+title: "GutenbergKG: The Knowledge Press"
+abstract: >
+  GutenbergKG is a universal ingestion engine for digitized text corpora.
+  It downloads public-domain works from Project Gutenberg and the Internet
+  Archive, converts them to structured Markdown, and indexes them as
+  queryable knowledge graphs via DocKG and KGRAG. The current corpus spans
+  79 works across 9 genres — 448,139 nodes, 4,836,993 edges — queryable as
+  independent genre corpora or as a unified knowledge graph.
+authors:
+  - family-names: Suchanek
+    given-names: "Eric G., PhD"
+    orcid: "https://orcid.org/0009-0009-0891-1507"
+    email: suchanek@flux-frontiers.com
+    affiliation: "Flux-Frontiers"
+version: "1.1.0"
+date-released: "2026-05-05"
+doi: "10.5281/zenodo.20045390"
+license-url: "https://www.elastic.co/licensing/elastic-license"
+repository-code: "https://github.com/Flux-Frontiers/gutenberg_kg"
+url: "https://github.com/Flux-Frontiers/gutenberg_kg"
+keywords:
+  - knowledge-graph
+  - natural-language-processing
+  - project-gutenberg
+  - internet-archive
+  - semantic-search
+  - lancedb
+  - public-domain
+references:
+  - type: software
+    title: "DocKG: Semantic Document Knowledge Graph"
+    authors:
+      - family-names: Suchanek
+        given-names: "Eric G., PhD"
+    repository-code: "https://github.com/Flux-Frontiers/doc_kg"
+  - type: software
+    title: "KGRAG: Federated Knowledge Graph RAG"
+    authors:
+      - family-names: Suchanek
+        given-names: "Eric G., PhD"
+    repository-code: "https://github.com/Flux-Frontiers/KGRAG"
