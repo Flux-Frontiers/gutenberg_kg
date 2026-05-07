@@ -2,154 +2,55 @@
 
 from __future__ import annotations
 
-import importlib.metadata
 import json
-import platform
 import re
-import socket
-import sqlite3
-from datetime import UTC, datetime
 from pathlib import Path
 
 import click
 
 from gutenberg_kg.cli.main import cli
 from gutenberg_kg.cli.options import CORPUS_ROOT, REPO_ROOT
-
-# ---------------------------------------------------------------------------
-# Registry helpers
-# ---------------------------------------------------------------------------
+from gutenberg_kg.corpus import (
+    GENRE_LABELS,
+    collect_genre_stats,
+    corpus_status,
+)
+from gutenberg_kg.corpus import (
+    _sqlite_counts as _corpus_sqlite_counts,
+)
 
 _REGISTRY_DEFAULT = Path.home() / ".kgrag" / "registry.sqlite"
 
-# Maps corpus slug → display label (order determines table row order)
-_GENRE_LABELS: dict[str, str] = {
-    "gutenberg-english-literature": "English Literature",
-    "gutenberg-ancient-classical": "Ancient & Classical",
-    "gutenberg-philosophy": "Philosophy",
-    "gutenberg-russian-literature": "Russian Literature",
-    "gutenberg-american-literature": "American Literature",
-    "gutenberg-french-literature": "French Literature",
-    "gutenberg-science-fiction": "Science Fiction",
-    "gutenberg-world-literature": "World Literature",
-    "gutenberg-sacred-texts": "Sacred Texts",
-    "gutenberg-german-literature": "German Literature",
-    "gutenberg-spanish": "Spanish Literature",
-    "gutenberg-shakespeare": "Shakespeare",
-    "gutenberg-audel-electric": "Technical Reference (IA)",
-}
+# Aliases and thin wrappers kept here so tests can import them from this module.
+_GENRE_LABELS: dict[str, str] = GENRE_LABELS
 
 
-def _genre_corpus_name(genre_slug: str) -> str:
-    return f"gutenberg-{genre_slug}"
+def _genre_corpus_name(slug: str) -> str:
+    """Return the gutenberg corpus name for a genre slug."""
+    if slug.startswith("gutenberg-"):
+        return slug
+    return f"gutenberg-{slug}"
 
 
-def _count_book_dirs(genre_dir: Path) -> int:
-    if not genre_dir.is_dir():
+def _count_book_dirs(directory: Path) -> int:
+    """Count non-hidden subdirectories in *directory*."""
+    if not directory.is_dir():
         return 0
-    return sum(1 for p in genre_dir.iterdir() if p.is_dir() and not p.name.startswith("."))
+    return sum(1 for p in directory.iterdir() if p.is_dir() and not p.name.startswith("."))
 
 
-def _count_authors() -> int:
-    authors_dir = CORPUS_ROOT / "authors"
-    if not authors_dir.is_dir():
-        return 0
-    return sum(1 for p in authors_dir.iterdir() if p.is_dir())
+def _collect_genre_stats(registry_path: Path) -> list[dict]:
+    """Aggregate per-genre stats from the KGRAG registry."""
+    return collect_genre_stats(registry_path)
 
 
 def _sqlite_counts(path: str | None) -> tuple[int, int]:
     """Return (nodes, edges) from a graph.sqlite, or (0, 0) on any error."""
-    if not path:
-        return 0, 0
-    try:
-        with sqlite3.connect(path) as con:
-            nodes = con.execute("SELECT COUNT(*) FROM nodes").fetchone()[0]
-            edges = con.execute("SELECT COUNT(*) FROM edges").fetchone()[0]
-        return nodes, edges
-    except Exception:  # pylint: disable=broad-exception-caught
-        return 0, 0
-
-
-def _collect_genre_stats(registry_path: Path) -> list[dict]:
-    """Aggregate per-genre stats from the KGRAG registry.
-
-    Returns a list of dicts with keys: corpus, label, books, nodes, edges.
-    Only corpora whose sqlite files exist on disk are counted.
-    """
-    results = []
-    try:
-        reg = sqlite3.connect(str(registry_path))
-    except Exception as exc:  # pylint: disable=broad-exception-caught
-        raise click.ClickException(f"Cannot open registry {registry_path}: {exc}") from exc
-
-    # Build id → sqlite_path lookup once
-    kg_map: dict[str, str | None] = {}
-    for row in reg.execute("SELECT id, sqlite_path FROM kg_entries"):
-        kg_map[row[0]] = row[1]
-
-    for corpus_key, label in _GENRE_LABELS.items():
-        row = reg.execute("SELECT kg_ids FROM corpora WHERE name = ?", (corpus_key,)).fetchone()
-        if row is None:
-            results.append(
-                {"corpus": corpus_key, "label": label, "books": 0, "nodes": 0, "edges": 0}
-            )
-            continue
-
-        kg_ids: list[str] = json.loads(row[0])
-        total_nodes = total_edges = 0
-        live_books = 0
-        for kid in kg_ids:
-            sqlite_path = kg_map.get(kid)
-            if sqlite_path and Path(sqlite_path).exists():
-                n, e = _sqlite_counts(sqlite_path)
-                total_nodes += n
-                total_edges += e
-                live_books += 1
-
-        results.append(
-            {
-                "corpus": corpus_key,
-                "label": label,
-                "books": live_books,
-                "nodes": total_nodes,
-                "edges": total_edges,
-            }
-        )
-
-    reg.close()
-    return results
-
-
-def _git_branch(repo_root: Path) -> str:
-    import subprocess
-
-    try:
-        return subprocess.check_output(
-            ["git", "rev-parse", "--abbrev-ref", "HEAD"],
-            cwd=repo_root,
-            text=True,
-            stderr=subprocess.DEVNULL,
-        ).strip()
-    except Exception:  # pylint: disable=broad-exception-caught
-        return "unknown"
-
-
-def _git_commit(repo_root: Path) -> str:
-    import subprocess
-
-    try:
-        return subprocess.check_output(
-            ["git", "rev-parse", "--short", "HEAD"],
-            cwd=repo_root,
-            text=True,
-            stderr=subprocess.DEVNULL,
-        ).strip()
-    except Exception:  # pylint: disable=broad-exception-caught
-        return "unknown"
+    return _corpus_sqlite_counts(path)
 
 
 # ---------------------------------------------------------------------------
-# README badge update
+# README badge helpers (CLI/presentation concern — stays here)
 # ---------------------------------------------------------------------------
 
 _BADGE_PATTERNS = {
@@ -215,47 +116,29 @@ def status(as_json: bool, update_readme: bool, registry: str | None) -> None:
     if not registry_path.exists():
         raise click.ClickException(f"Registry not found: {registry_path}")
 
-    genre_stats = _collect_genre_stats(registry_path)
-
-    total_books = sum(g["books"] for g in genre_stats)
-    total_nodes = sum(g["nodes"] for g in genre_stats)
-    total_edges = sum(g["edges"] for g in genre_stats)
-    total_authors = _count_authors()
-    version = importlib.metadata.version("gutenberg-kg")
-    timestamp = datetime.now(UTC).isoformat(timespec="seconds")
-    branch = _git_branch(REPO_ROOT)
-    commit = _git_commit(REPO_ROOT)
+    result = corpus_status(registry_path, REPO_ROOT, CORPUS_ROOT)
+    totals = result["totals"]
 
     if as_json:
-        payload = {
-            "kind": "corpus_status",
-            "timestamp": timestamp,
-            "version": version,
-            "branch": branch,
-            "commit": commit,
-            "host": socket.gethostname(),
-            "platform": platform.platform(),
-            "totals": {
-                "books": total_books,
-                "authors": total_authors,
-                "nodes": total_nodes,
-                "edges": total_edges,
-            },
-            "genres": genre_stats,
-        }
-        click.echo(json.dumps(payload, indent=2))
+        click.echo(json.dumps(result, indent=2))
     else:
         _print_rich_table(
-            genre_stats, total_books, total_nodes, total_edges, total_authors, version
+            result["genres"],
+            totals["books"],
+            totals["nodes"],
+            totals["edges"],
+            totals["authors"],
+            result["version"],
         )
 
     if update_readme:
         readme = REPO_ROOT / "README.md"
-        changed = _update_readme_badges(readme, total_books, total_nodes, total_edges)
+        changed = _update_readme_badges(readme, totals["books"], totals["nodes"], totals["edges"])
         if changed:
             click.echo(
-                f"\n[✓] README.md badges updated ({total_books} books, "
-                f"{_fmt_badge_nodes(total_nodes)} nodes, {_fmt_badge_nodes(total_edges)} edges)"
+                f"\n[✓] README.md badges updated ({totals['books']} books, "
+                f"{_fmt_badge_nodes(totals['nodes'])} nodes, "
+                f"{_fmt_badge_nodes(totals['edges'])} edges)"
             )
         else:
             click.echo("\n[=] README.md badges already up-to-date")
@@ -270,8 +153,8 @@ def _print_rich_table(
     version: str,
 ) -> None:
     try:
-        from rich.console import Console
-        from rich.table import Table
+        from rich.console import Console  # pylint: disable=import-outside-toplevel
+        from rich.table import Table  # pylint: disable=import-outside-toplevel
 
         console = Console()
         table = Table(title=f"GutenbergKG Corpus Status  v{version}", show_footer=True)
@@ -282,18 +165,12 @@ def _print_rich_table(
         table.add_column("Edges", justify="right", footer=f"{total_edges:,}")
 
         for g in genre_stats:
-            table.add_row(
-                g["label"],
-                str(g["books"]),
-                f"{g['nodes']:,}",
-                f"{g['edges']:,}",
-            )
+            table.add_row(g["label"], str(g["books"]), f"{g['nodes']:,}", f"{g['edges']:,}")
 
         console.print(table)
         console.print(f"  Authors: {total_authors}  |  Registry: {_REGISTRY_DEFAULT}")
 
     except ImportError:
-        # Fallback: plain text
         header = f"{'Genre':<32} {'Books':>6} {'Nodes':>10} {'Edges':>12}"
         sep = "-" * len(header)
         click.echo(f"\nGutenbergKG Corpus Status  v{version}")

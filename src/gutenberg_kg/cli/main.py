@@ -23,4 +23,5 @@ from gutenberg_kg.cli import (  # noqa: E402, F401
     cmd_snapshot,
     cmd_status,
     cmd_viz3d,
+    cmd_viz_timeline,
 )

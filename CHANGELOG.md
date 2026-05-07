@@ -10,6 +10,54 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added
 
+- **`src/gutenberg_kg/corpus.py`** — new library module that extracts all
+  corpus data logic from the CLI layer into a path-parameterised public API.
+  Provides `collect_genre_stats`, `corpus_status`, `snapshot_build`,
+  `snapshot_save`, `snapshot_list`, `snapshot_show`, `snapshot_diff`, plus
+  internal helpers `_sqlite_counts`, `_count_authors`, `_git_info`, and the
+  canonical `GENRE_LABELS` mapping. All functions accept explicit path
+  arguments so they can be called from CLI, tests, or adapter code without
+  depending on package-level constants.
+
+- **`gutenkg viz-timeline`** — interactive Plotly corpus growth chart built
+  from saved snapshots. Two modes via `--type`:
+  - `2d` (default): 2×2 subplot grid — Books / Authors / Nodes / Edges over
+    time, with hover tooltips showing version and commit.
+  - `3d`: normalized multi-metric scatter stacked by metric; all four series
+    rendered in one scene for cross-metric trend comparison.
+  Requires the new `viz` extra (`pip install gutenberg-kg[viz]`). Emits an
+  ASCII growth summary table before showing the chart.
+
+- **`viz` optional-dependency group** — `plotly>=5.0.0` for the `viz-timeline`
+  command. Install with `pip install -e ".[viz]"` or
+  `poetry install --extras "viz"`. Included in `all`.
+
+### Changed
+
+- **`cmd_status.py` refactored** — delegates all data collection to
+  `corpus.corpus_status()`; module now contains only Click command wiring,
+  Rich table rendering, and README badge patching. Thin wrapper aliases
+  (`_collect_genre_stats`, `_count_book_dirs`, `_genre_corpus_name`,
+  `_sqlite_counts`, `_GENRE_LABELS`) kept for test-import compatibility.
+
+- **`cmd_snapshot.py` refactored** — delegates snapshot I/O to
+  `corpus.snapshot_save/list/show/diff()`; `_SNAPSHOTS_DIR` renamed to
+  `SNAPSHOTS_DIR` (public) so tests can monkeypatch it. Thin wrappers
+  (`_snapshot_filename`, `_load_snapshot`, `_list_snapshots`) retained for
+  test-import compatibility.
+
+- **`pyproject.toml`** — `all` extra reorganized with `# dev / # kgdeps /
+  # viz / # viz3d` section comments; `viz` and `viz3d` install lines added
+  to the Quick Install header.
+
+### Fixed
+
+- **`tests/test_cmd_status.py` and `tests/test_cmd_snapshot.py` import
+  errors** — after the corpus refactor the tests could not import private
+  helpers (`_collect_genre_stats`, `_list_snapshots`, etc.) that had moved
+  to `corpus.py`. Re-exposed as thin wrappers in the respective CLI modules;
+  both test files now collect and pass cleanly (83 tests, 0 failures).
+
 - **`gutenkg status`** — new CLI command that reads live corpus statistics
   directly from the KGRAG registry SQLite without requiring a rebuild.
   Displays a Rich table (with plain-text fallback) of per-genre book,

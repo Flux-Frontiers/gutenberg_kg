@@ -9,14 +9,18 @@
 # -------------------
 #   pip install -e ".[dev]"             core + dev tools (pytest, ruff, mypy, etc.)
 #   pip install -e ".[kgdeps]"          core + KG integrations (doc-kg, kg-rag)
-#   pip install -e ".[all]"             everything above
+#   pip install -e ".[viz]"             core + 2-D timeline visualisation (plotly)
+#   pip install -e ".[viz3d]"           core + 3-D visualisation (pyvista, PyQt5, pycode-kg)
+#   pip install -e ".[all]"             dev + kgdeps + viz + viz3d (everything)
 #   pip install -e "."                  core runtime only
 #
 # Quick install (poetry)
 # ----------------------
-#   poetry install --all-extras         everything
+#   poetry install --all-extras         everything (dev + kgdeps + viz3d)
 #   poetry install --extras "dev"       core + dev tools only
 #   poetry install --extras "kgdeps"    core + KG integrations only
+#   poetry install --extras "viz"       core + 2-D timeline visualisation only
+#   poetry install --extras "viz3d"     core + 3-D visualisation only
 #   poetry install                      core runtime only
 #
 # First-time setup
@@ -103,6 +107,9 @@ kgdeps = [
     "doc-kg>=0.12.0",
     "kg-rag @ git+https://github.com/Flux-Frontiers/KGRAG.git",
 ]
+viz = [
+    "plotly>=5.0.0",
+]
 viz3d = [
     "markdown>=3.6",
     "param>=2.0.0",
@@ -112,25 +119,30 @@ viz3d = [
     "pycode-kg @ git+https://github.com/Flux-Frontiers/pycode_kg.git",
 ]
 all = [
+    # dev
     "detect-secrets>=1.5.0",
-    "doc-kg>=0.12.0",
-    "kg-rag @ git+https://github.com/Flux-Frontiers/KGRAG.git",
-    "markdown>=3.6",
     "mypy>=1.10.0",
-    "param>=2.0.0",
     "pdoc>=14.0.0",
     "pillow>=10.0.0",
     "pre-commit>=4.5.1",
     "pylint>=4.0.5",
-    "PyQt5>=5.15.0",
-    "pycode-kg @ git+https://github.com/Flux-Frontiers/pycode_kg.git",
     "pytest>=8.0.0",
     "pytest-cov>=5.0.0",
-    "pyvista[jupyter]>=0.44.0",
-    "pyvistaqt>=0.11.0",
     "ruff>=0.4.0",
     "scipy>=1.13.0",
     "vtracer>=0.6.0",
+    # kgdeps
+    "doc-kg>=0.12.0",
+    "kg-rag @ git+https://github.com/Flux-Frontiers/KGRAG.git",
+    # viz
+    "plotly>=5.0.0",
+    # viz3d
+    "markdown>=3.6",
+    "param>=2.0.0",
+    "PyQt5>=5.15.0",
+    "pyvista[jupyter]>=0.44.0",
+    "pyvistaqt>=0.11.0",
+    "pycode-kg @ git+https://github.com/Flux-Frontiers/pycode_kg.git",
 ]
 
 [project.urls]
