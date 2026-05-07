@@ -10,6 +10,56 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added
 
+- **`gutenkg status`** — new CLI command that reads live corpus statistics
+  directly from the KGRAG registry SQLite without requiring a rebuild.
+  Displays a Rich table (with plain-text fallback) of per-genre book,
+  node, and edge counts. Options: `--json` (machine-readable output),
+  `--update-readme` (patches corpus/node/edge badge URLs in `README.md`
+  automatically), `--registry` (override registry path).
+
+- **`gutenkg snapshot` subcommand group** — point-in-time corpus metrics
+  snapshots stored in `corpus/.snapshots/` (gitignored). Four subcommands:
+  - `snapshot save` — capture current stats; writes timestamped JSON keyed
+    by version, branch, and commit. `--output` overrides path; `--print`
+    also emits JSON to stdout.
+  - `snapshot list` — tabular listing of all saved snapshots.
+  - `snapshot show [SNAPSHOT]` — print full JSON for a snapshot (defaults
+    to the most recent); accepts a timestamp prefix for selection.
+  - `snapshot diff [A] [B]` — compare two snapshots showing Δ books/nodes/
+    edges at the total and per-genre level (defaults to last two).
+
+- **`tests/test_cmd_status.py`** — 42 tests covering all pure helpers
+  (`_genre_corpus_name`, `_count_book_dirs`, `_sqlite_counts`,
+  `_fmt_badge_nodes`, `_update_readme_badges`, `_collect_genre_stats`) and
+  CLI integration (help, missing registry, `--json` payload shape and
+  totals, author count, `--update-readme` side effect).
+
+- **`tests/test_cmd_snapshot.py`** — 41 tests covering all pure helpers
+  (`_snapshot_filename`, `_load_snapshot`, `_list_snapshots`) and CLI
+  integration (all four subcommands, error paths, round-trip save→list
+  and save→diff flows). Uses `monkeypatch` to redirect `SNAPSHOTS_DIR`
+  and `CORPUS_ROOT` to `tmp_path` for isolation.
+
+- **`corpus/.snapshots/` gitignored** — snapshot files live alongside
+  `.dockg/` directories but are excluded from version control.
+
+### Changed
+
+- **Corpus stats updated: 178 → 181 books** — README.md badges, prose
+  counts, and `docs/CORPUS.md` header updated; per-genre node/edge counts
+  refreshed (878,403 nodes, 17,564,366 edges after re-index).
+
+### Fixed
+
+- **Circular import in `cmd_snapshot.py`** — `_collect_genre_stats` was
+  imported from `cmd_status` at module level; `main.py` imports both
+  modules at startup, creating a load-order cycle. Fixed by lazily
+  importing `_collect_genre_stats` inside `_build_snapshot()` and
+  defining `_REGISTRY_DEFAULT` locally in `cmd_snapshot.py`.
+
+- **Unused `rich.text.Text` import removed** from `cmd_status.py`
+  `_print_rich_table()` (flagged by ruff F401).
+
 - **Corpus expanded to 178 books** — five new Stoic texts added to
   `ancient-classical` and one new Nietzsche work to `philosophy`:
   - *Minor Dialogues, Together With the Dialogue on Clemency* — Seneca

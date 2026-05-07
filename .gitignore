@@ -234,6 +234,9 @@ __marimo__/
 # Also ignore .dockg/ nested under subdirectories (e.g. docs/.dockg/)
 **/.dockg/
 
+# Corpus snapshots (point-in-time metrics captures)
+corpus/.snapshots/
+
 .agentkg/
 
 # Local MCP configuration (contains absolute paths)

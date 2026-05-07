@@ -1,6 +1,6 @@
 # Books in the Corpus
 
-178 public-domain masterworks across 13 genres. Planned additions are tracked in [`CORPUS_WISHLIST.md`](CORPUS_WISHLIST.md).
+181 public-domain texts across 13 genres. Planned additions are tracked in [`CORPUS_WISHLIST.md`](CORPUS_WISHLIST.md).
 
 ### English Literature (37)
 
