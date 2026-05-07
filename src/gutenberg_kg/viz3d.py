@@ -102,6 +102,20 @@ KIND_SIZE: dict[str, float] = {
 TRUNK_COLOR = "#8B4513"  # saddle brown
 BRANCH_COLOR = "#556B2F"  # dark olive green
 
+# 10-color genre palette — dark-bg friendly, colour-blind safe
+GENRE_PALETTE: list[str] = [
+    "#E74C3C",  # crimson
+    "#3498DB",  # azure
+    "#2ECC71",  # emerald
+    "#F39C12",  # amber
+    "#9B59B6",  # purple
+    "#1ABC9C",  # teal
+    "#E67E22",  # orange
+    "#E91E63",  # rose
+    "#00BCD4",  # cyan
+    "#CDDC39",  # lime
+]
+
 # Edge colours
 REL_COLOR: dict[str, str] = {
     "CONTAINS": "#555555",
@@ -250,11 +264,12 @@ class ForestLayout(Layout3D):
 
     def __init__(
         self,
-        grove_inner_radius: float = 40.0,
-        grove_outer_radius: float = 120.0,
+        grove_inner_radius: float = 80.0,
+        grove_outer_radius: float = 240.0,
         book_inner_radius: float = 5.0,
         book_outer_radius: float = 18.0,
-        trunk_scale: float = 6.0,
+        trunk_scale: float = 4.0,
+        max_trunk_height: float = 45.0,
         branch_radius: float = 5.0,
         leaf_radius: float = 1.5,
         canopy_lift: float = 4.0,
@@ -264,6 +279,7 @@ class ForestLayout(Layout3D):
         self.book_inner_radius = book_inner_radius
         self.book_outer_radius = book_outer_radius
         self.trunk_scale = trunk_scale
+        self.max_trunk_height = max_trunk_height
         self.branch_radius = branch_radius
         self.leaf_radius = leaf_radius
         self.canopy_lift = canopy_lift
@@ -271,6 +287,10 @@ class ForestLayout(Layout3D):
         # Set during compute() so render helpers can read them
         self.trunk_positions: dict[str, np.ndarray] = {}  # doc_node_id → XYZ base
         self.trunk_heights: dict[str, float] = {}  # doc_node_id → height
+        self.trunk_genres: dict[str, str] = {}  # doc_node_id → genre
+        self.genre_color_map: dict[str, str] = {}  # genre → hex color
+        # (trunk_axis_pt, section_tip_pt) for every section — drawn as branch lines
+        self.branch_lines: list[tuple[np.ndarray, np.ndarray]] = []
 
     def compute(
         self,
@@ -284,6 +304,9 @@ class ForestLayout(Layout3D):
         :param edges: All edges across all loaded books.
         :return: Mapping from node ID to ``[x, y, z]`` position.
         """
+        # Reset per-compute state
+        self.branch_lines = []
+
         # Build containment hierarchy
         children: dict[str, list[str]] = defaultdict(list)
         for e in edges:
@@ -325,6 +348,9 @@ class ForestLayout(Layout3D):
         genre_center_map: dict[str, np.ndarray] = {
             g: np.array(p) for g, p in zip(genre_list, grove_centers)
         }
+        self.genre_color_map = {
+            g: GENRE_PALETTE[i % len(GENRE_PALETTE)] for i, g in enumerate(genre_list)
+        }
 
         # For each genre, place books in a medium annulus around the grove centre
         for genre, grove_center in genre_center_map.items():
@@ -343,9 +369,12 @@ class ForestLayout(Layout3D):
                 bx, by = float(book_xy[0]), float(book_xy[1])
                 book_nodes = books_nodes[slug]
 
-                # Count chunks to determine trunk height
+                # Count chunks to determine trunk height; cap so no book dominates
                 n_chunks = sum(1 for n in book_nodes if n.kind == "chunk")
-                trunk_height = self.trunk_scale * max(1.0, np.log2(1 + n_chunks))
+                trunk_height = min(
+                    self.trunk_scale * max(1.0, np.log2(1 + n_chunks)),
+                    self.max_trunk_height,
+                )
                 trunk_apex = np.array([bx, by, trunk_height])
 
                 # Find document nodes (trunk base)
@@ -354,31 +383,40 @@ class ForestLayout(Layout3D):
                     positions[doc.id] = np.array([bx, by, 0.0])
                     self.trunk_positions[doc.id] = np.array([bx, by, 0.0])
                     self.trunk_heights[doc.id] = trunk_height
+                    self.trunk_genres[doc.id] = genre
 
-                # Section nodes → Fibonacci upper hemisphere around trunk apex
+                # Section nodes — spiral up the trunk (B: real tree branching)
                 section_nodes = [n for n in book_nodes if n.kind == "section"]
                 n_sections = len(section_nodes)
+                golden_angle = np.pi * (3.0 - np.sqrt(5.0))  # ≈ 137.5°
+                branch_length = 0.0  # reused by canopy cloud below
                 if n_sections:
-                    branch_r = self.branch_radius + np.sqrt(n_sections) * 0.6
-                    # Upper hemisphere: use fibonacci_sphere then keep only Z > apex
-                    raw_pts = fibonacci_sphere(n_sections * 2, radius=branch_r, center=trunk_apex)
-                    upper_pts = [p for p in raw_pts if p[2] >= trunk_apex[2]]
-                    # Top up if not enough upper-hemisphere points
-                    if len(upper_pts) < n_sections:
-                        upper_pts = raw_pts[:n_sections]
-                    sec_positions = upper_pts[:n_sections]
-                    for sec, sec_pos in zip(section_nodes, sec_positions):
-                        positions[sec.id] = np.array(sec_pos)
+                    branch_length = self.branch_radius + np.sqrt(n_sections) * 0.5
+                    for i, sec in enumerate(section_nodes):
+                        t = i / max(n_sections - 1, 1)
+                        z = trunk_height * (0.30 + 0.65 * t)
+                        angle = i * golden_angle
+                        radius = branch_length * (1.0 - (z / trunk_height) * 0.4)
+                        sec_pos = np.array(
+                            [
+                                bx + radius * np.cos(angle),
+                                by + radius * np.sin(angle),
+                                z,
+                            ]
+                        )
+                        positions[sec.id] = sec_pos
+                        # Branch line: point on trunk axis at section's Z → section tip
+                        self.branch_lines.append((np.array([bx, by, z]), sec_pos))
 
-                # Chunk nodes → Fibonacci sphere around their parent section
-                # Build section → chunk mapping from CONTAINS edges
+                # Chunk nodes — upper-hemisphere cone above each branch tip
                 sec_chunks: dict[str, list[str]] = {
                     n.id: children.get(n.id, []) for n in section_nodes
                 }
                 for sec in section_nodes:
-                    sec_pos = positions.get(sec.id)
-                    if sec_pos is None:
+                    _pos = positions.get(sec.id)
+                    if _pos is None:
                         continue
+                    sec_pos = _pos
                     chunk_ids = [
                         cid
                         for cid in sec_chunks.get(sec.id, [])
@@ -388,8 +426,17 @@ class ForestLayout(Layout3D):
                     if not n_c:
                         continue
                     leaf_r = self.leaf_radius + np.sqrt(n_c) * 0.12
-                    leaf_pts = fibonacci_sphere(n_c, radius=leaf_r, center=sec_pos)
-                    for cid, cpos in zip(chunk_ids, leaf_pts):
+                    raw_pts = fibonacci_sphere(n_c * 3, radius=leaf_r, center=sec_pos)
+                    upper_pts = [p for p in raw_pts if p[2] >= float(sec_pos[2])]
+                    if len(upper_pts) < n_c:
+                        # Reflect insufficient points above branch Z
+                        upper_pts = [
+                            np.array(
+                                [p[0], p[1], float(sec_pos[2]) + abs(p[2] - float(sec_pos[2]))]
+                            )
+                            for p in raw_pts[:n_c]
+                        ]
+                    for cid, cpos in zip(chunk_ids, upper_pts[:n_c]):
                         positions[cid] = np.array(cpos)
 
                 # Chunks without a section parent (connected directly to document)
@@ -403,10 +450,13 @@ class ForestLayout(Layout3D):
                         and cid not in positions
                     )
                 if doc_chunk_ids:
-                    orphan_pts = fibonacci_sphere(
-                        len(doc_chunk_ids), radius=self.leaf_radius, center=trunk_apex
+                    raw_pts = fibonacci_sphere(
+                        len(doc_chunk_ids) * 2, radius=self.leaf_radius, center=trunk_apex
                     )
-                    for cid, cpos in zip(doc_chunk_ids, orphan_pts):
+                    upper_pts = [p for p in raw_pts if p[2] >= float(trunk_apex[2])]
+                    if len(upper_pts) < len(doc_chunk_ids):
+                        upper_pts = raw_pts[: len(doc_chunk_ids)]
+                    for cid, cpos in zip(doc_chunk_ids, upper_pts[: len(doc_chunk_ids)]):
                         positions[cid] = np.array(cpos)
 
                 # Entity / topic / keyword → loose cloud above canopy
@@ -418,7 +468,7 @@ class ForestLayout(Layout3D):
                     if n.kind in ("entity", "topic", "keyword") and n.id not in positions
                 ]
                 if floaters:
-                    cloud_r = branch_r * 1.1 if n_sections else self.branch_radius
+                    cloud_r = branch_length * 1.1 if n_sections else self.branch_radius
                     cloud_pts = fibonacci_sphere(
                         len(floaters), radius=cloud_r, center=canopy_center
                     )
@@ -481,6 +531,26 @@ def _make_node_mesh(kind: str, center: np.ndarray, size: float, lod: str) -> pv.
         return pv.Icosahedron(radius=size * 0.8, center=center)
     # high — full icosahedra for everything
     return pv.Icosahedron(radius=size, center=center)
+
+
+def _glyph_proto(kind: str, size: float, lod: str) -> pv.PolyData:
+    """Return a glyph prototype mesh centred at the origin for *kind* nodes.
+
+    Used with ``pv.PolyData.glyph()`` so all nodes of one kind are rendered
+    in a single VTK draw call instead of one mesh per node.
+
+    :param kind: Node kind string.
+    :param size: Node radius.
+    :param lod: LOD tier — ``"high"``, ``"low"``, or ``"points"``.
+    :return: PyVista PolyData centred at origin.
+    """
+    if lod == "points":
+        return pv.Tetrahedron(radius=size * 0.5)
+    if lod == "low":
+        if kind in ("chunk", "entity", "keyword", "topic"):
+            return pv.Octahedron(radius=size * 0.8)
+        return pv.Icosahedron(radius=size * 0.8)
+    return pv.Icosahedron(radius=size)
 
 
 def _text_to_markdown(text: str | None) -> str:
@@ -569,8 +639,8 @@ def create_forest_visualization(
     plotter.enable_anti_aliasing("msaa")
     plotter.set_background("#1a1a2e", top="#16213e")  # type: ignore[arg-type]  # night forest sky
 
-    # Ground plane
-    ground = pv.Plane(center=(0, 0, -0.2), direction=(0, 0, 1), i_size=600, j_size=600)
+    # Ground plane — sized for 2× grove spacing
+    ground = pv.Plane(center=(0, 0, -0.2), direction=(0, 0, 1), i_size=1000, j_size=1000)
     plotter.add_mesh(ground, color="#2d4a1e", opacity=1.0, name="ground")
 
     # -- Compute layout
@@ -578,69 +648,98 @@ def create_forest_visualization(
     layout._book_genre_map = viz._book_genre_map  # type: ignore[attr-defined]
     all_positions = layout.compute(viz.all_nodes, viz.all_edges)
 
-    # -- Draw trunk cylinders (visual, separate from node meshes)
+    # -- Draw trunk cylinders — single merged mesh with genre_idx scalar (A)
+    # One add_mesh call regardless of genre count keeps actor/texture count low.
     viz.status = "Drawing trunks..."
     QApplication.processEvents()
-    trunk_block = pv.MultiBlock()
+    _trunk_meshes: list[pv.PolyData] = []
+    _genre_list_ord = sorted(layout.genre_color_map.keys())
+    _genre_to_idx: dict[str, float] = {g: float(i) for i, g in enumerate(_genre_list_ord)}
     for doc_id, base in layout.trunk_positions.items():
         height = layout.trunk_heights.get(doc_id, 8.0)
-        trunk = pv.Cylinder(
+        genre = layout.trunk_genres.get(doc_id, "unknown")
+        cyl = pv.Cylinder(
             center=(base[0], base[1], height / 2),
             direction=(0, 0, 1),
             radius=0.4,
             height=height,
             resolution=12,
         )
-        trunk_block.append(trunk)
-    if trunk_block.n_blocks:
-        plotter.add_mesh(trunk_block, color=TRUNK_COLOR, smooth_shading=True, name="trunks")
+        cyl.cell_data["genre_idx"] = np.full(cyl.n_cells, _genre_to_idx.get(genre, 0.0))
+        _trunk_meshes.append(cyl)
+    if _trunk_meshes:
+        from matplotlib.colors import ListedColormap  # pyvista dependency, always present
+
+        _combined_trunks = pv.merge(_trunk_meshes)
+        _genre_colors = [layout.genre_color_map.get(g, TRUNK_COLOR) for g in _genre_list_ord]
+        _trunk_cmap = ListedColormap(_genre_colors)
+        _n_genres = max(1, len(_genre_list_ord))
+        plotter.add_mesh(
+            _combined_trunks,
+            scalars="genre_idx",
+            cmap=_trunk_cmap,
+            clim=[-0.5, _n_genres - 0.5],
+            show_scalar_bar=False,
+            name="trunks",
+        )
+
+    # -- Branch lines: trunk-axis point → section tip (flat numpy, zero per-line objects)
+    if layout.branch_lines:
+        _n_bl = len(layout.branch_lines)
+        _bl_pts = np.empty((_n_bl * 2, 3), dtype=float)
+        _bl_pts[0::2] = [bl[0] for bl in layout.branch_lines]
+        _bl_pts[1::2] = [bl[1] for bl in layout.branch_lines]
+        _bl_cells = np.empty(_n_bl * 3, dtype=np.intp)
+        _bl_cells[0::3] = 2
+        _bl_cells[1::3] = np.arange(0, _n_bl * 2, 2)
+        _bl_cells[2::3] = np.arange(1, _n_bl * 2 + 1, 2)
+        _branch_mesh = pv.PolyData()
+        _branch_mesh.points = _bl_pts
+        _branch_mesh.lines = _bl_cells
+        plotter.add_mesh(
+            _branch_mesh, color=BRANCH_COLOR, line_width=2.0, opacity=0.85, name="branches"
+        )
 
     # -- LOD tier
     n_visible = len(nodes)
     lod = "high" if n_visible <= LOD_HIGH else "low" if n_visible <= LOD_LOW else "points"
 
-    # -- Build per-kind MultiBlocks
-    kind_blocks: dict[str, pv.MultiBlock] = {k: pv.MultiBlock() for k in KIND_SIZE}
-    actor_to_node: dict[str, dict] = {}
-    kind_counters: dict[str, int] = {k: 0 for k in KIND_SIZE}
+    # -- Glyph rendering: O(kinds) Python work, not O(nodes)
+    # Bucket positions and metadata by kind in one pass, then glyph each kind.
+    kind_pts: dict[str, list[np.ndarray]] = {k: [] for k in KIND_SIZE}
+    kind_meta: dict[str, list] = {k: [] for k in KIND_SIZE}
+    node_id_set: set[str] = set()
 
-    node_id_set = {n.id for n in nodes}
-    total_nodes = len(nodes)
-
-    for idx, node in enumerate(nodes):
+    for node in nodes:
         pos = all_positions.get(node.id)
         if pos is None:
             continue
         kind = node.kind if node.kind in KIND_SIZE else "chunk"
-        mesh = _make_node_mesh(kind, pos, KIND_SIZE[kind], lod)
-        kind_blocks[kind].append(mesh)
+        kind_pts[kind].append(pos)
+        kind_meta[kind].append(node)
+        node_id_set.add(node.id)
 
-        mesh_id = f"{kind}_{kind_counters[kind]}"
-        kind_counters[kind] += 1
-        actor_to_node[mesh_id] = {
-            "kind": kind,
-            "id": node.id,
-            "name": node.name,
-            "docstring": node.docstring,
-            "position": pos,
-            "mesh": mesh,
-        }
+    actor_to_node: dict[str, dict] = {}
+    viz.status = "Rendering nodes..."
+    QApplication.processEvents()
 
-        if idx % max(1, total_nodes // 10) == 0 or idx == total_nodes - 1:
-            pct = int((idx + 1) / total_nodes * 100)
-            bar = "█" * (pct // 10) + "░" * ((100 - pct) // 10)
-            viz.status = f"Rendering nodes | {bar} {pct}%"
-            QApplication.processEvents()
-
-    for kind, block in kind_blocks.items():
-        if block.n_blocks > 0:
-            plotter.add_mesh(
-                block,
-                color=KIND_COLOR[kind],
-                show_edges=False,
-                smooth_shading=(kind in ("section", "document")),
-                name=f"{kind}_nodes",
-            )
+    for kind in KIND_SIZE:
+        pts = kind_pts[kind]
+        if not pts:
+            continue
+        arr = np.array(pts, dtype=float)
+        cloud = pv.PolyData(arr)
+        proto = _glyph_proto(kind, KIND_SIZE[kind], lod)
+        glyphed = cloud.glyph(geom=proto, orient=False, scale=False)
+        plotter.add_mesh(glyphed, color=KIND_COLOR[kind], show_edges=False, name=f"{kind}_nodes")
+        for i, (node, pos) in enumerate(zip(kind_meta[kind], pts)):
+            actor_to_node[f"{kind}_{i}"] = {
+                "kind": kind,
+                "id": node.id,
+                "name": node.name,
+                "docstring": node.docstring,
+                "position": np.asarray(pos, float),
+            }
 
     # -- Edge rendering (CONTAINS structural lines + optional SIMILAR_TO arcs)
     viz.status = "Rendering edges..."
@@ -733,7 +832,7 @@ class GutenbergForestVisualizer(param.Parameterized):
     show_entities: bool = param.Boolean(default=False, doc="Render entity / topic nodes")
 
     # Edge visibility
-    show_contains: bool = param.Boolean(default=True, doc="CONTAINS structural edges")
+    show_contains: bool = param.Boolean(default=False, doc="CONTAINS structural edges")
     show_similar: bool = param.Boolean(default=False, doc="SIMILAR_TO semantic edges")
     show_next: bool = param.Boolean(default=False, doc="NEXT sequential edges")
 
@@ -1009,7 +1108,7 @@ class ForestMainWindow(QMainWindow):
 
         ctrl.addWidget(self._h2("Edge Visibility"))
         self.cb_contains = QCheckBox("CONTAINS (structure)")
-        self.cb_contains.setChecked(self.visualizer.show_contains)
+        self.cb_contains.setChecked(False)
         self.cb_similar = QCheckBox("SIMILAR_TO (semantic)")
         self.cb_similar.setChecked(self.visualizer.show_similar)
         self.cb_next = QCheckBox("NEXT (sequence)")
@@ -1097,6 +1196,7 @@ class ForestMainWindow(QMainWindow):
         )
         if hasattr(self.vtk_plotter, "picker"):
             self.vtk_plotter.picker.SetTolerance(0.005)
+            self.vtk_plotter.picker.SetPickFromList(0)
 
     def _connect_signals(self) -> None:
         self.corpus_input.editingFinished.connect(self._on_corpus_path_edited)
@@ -1176,24 +1276,31 @@ class ForestMainWindow(QMainWindow):
             self._current_popup.close()
             self._current_popup = None
         if actor is None:
-            self.update_status_display("No object picked.")
+            self.update_status_display("Right-click a node sphere or trunk to inspect.")
             return
         if not hasattr(self.vtk_plotter, "picked_point") or self.vtk_plotter.picked_point is None:
+            self.update_status_display("No pick point — zoom in and right-click closer to a node.")
             return
 
         picked_point = np.asarray(self.vtk_plotter.picked_point, float)
 
-        # Identify kind from actor name
-        picked_kind = None
+        # Identify actor name and map to a node kind
+        picked_kind: str | None = None
         for name, act in self.plotter.actors.items():
-            if act == actor:
+            if act != actor:
+                continue
+            if name == "trunks":
+                # Trunk click → find nearest document node (shows book info)
+                picked_kind = "document"
+            else:
                 for kind in KIND_SIZE:
                     if name == f"{kind}_nodes":
                         picked_kind = kind
                         break
-                break
+            break
 
         if picked_kind is None:
+            self.update_status_display("Click on a node sphere or trunk cylinder.")
             return
 
         # Find closest node of that kind
@@ -1207,10 +1314,14 @@ class ForestMainWindow(QMainWindow):
                 best_id = mesh_id
 
         if best_id is None:
+            self.update_status_display(f"No {picked_kind} node near pick point.")
             return
 
         elem = self.visualizer.actor_to_node[best_id]
-        self._highlight_mesh(elem["mesh"])
+        # Build highlight mesh at the picked node position (no per-node mesh stored)
+        pos = np.asarray(elem["position"], float)
+        highlight = _make_node_mesh(elem["kind"], pos, KIND_SIZE[elem["kind"]] * 1.5, "high")
+        self._highlight_mesh(highlight)
 
         kind_label = elem["kind"].capitalize()
         raw_name = elem["name"]
@@ -1218,6 +1329,7 @@ class ForestMainWindow(QMainWindow):
         text = elem.get("docstring") or f"**{raw_name}**\n\n_{kind_label} node._"
         self._current_popup = TextPopup(title, text, self, on_close_callback=self._on_popup_close)
         self._current_popup.show()
+        self.update_status_display(f"Picked: {title} (dist {best_dist:.1f})")
 
     def _highlight_mesh(self, mesh) -> None:
         self._clear_highlight()

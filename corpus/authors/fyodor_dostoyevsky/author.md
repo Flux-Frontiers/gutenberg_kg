@@ -10,5 +10,6 @@
 | Title | Genre |
 |-------|-------|
 | Crime and Punishment | russian-literature |
+| Notes from Underground (Dostoevsky) | russian-literature |
 | The Brothers Karamazov | russian-literature |
 | The Idiot | russian-literature |

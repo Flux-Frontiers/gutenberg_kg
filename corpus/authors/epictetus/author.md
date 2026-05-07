@@ -10,3 +10,5 @@
 | Title | Genre |
 |-------|-------|
 | A Selection from the Discourses of Epictetus with the Encheiridion | ancient-classical |
+| The Golden Sayings of Epictetus, with the Hymn of Cleanthes | ancient-classical |
+| The Teaching of Epictetus | ancient-classical |

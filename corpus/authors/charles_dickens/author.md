@@ -10,4 +10,6 @@
 | Title | Genre |
 |-------|-------|
 | A Tale of Two Cities | english-literature |
+| Bleak House (Dickens) | english-literature |
+| David Copperfield (Dickens) | english-literature |
 | Great Expectations | english-literature |

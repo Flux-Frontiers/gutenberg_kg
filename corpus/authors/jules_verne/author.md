@@ -9,5 +9,8 @@
 
 | Title | Genre |
 |-------|-------|
+| Around the World in Eighty Days (Verne) | french-literature |
+| From the Earth to the Moon (Verne) | french-literature |
+| Journey to the Center of the Earth (Verne) | french-literature |
 | The First Men in the Moon | science-fiction |
 | Twenty Thousand Leagues Under the Sea | french-literature |

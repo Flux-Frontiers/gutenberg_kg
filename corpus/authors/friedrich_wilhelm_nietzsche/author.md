@@ -10,4 +10,5 @@
 | Title | Genre |
 |-------|-------|
 | Beyond Good and Evil | philosophy |
+| The Twilight of the Idols; or, How to Philosophize with the Hammer. The Antichrist | philosophy |
 | Thus Spake Zarathustra | philosophy |

@@ -9,6 +9,7 @@
 
 | Title | Genre |
 |-------|-------|
+| Medea (Euripides) | ancient-classical |
 | The Invisible Man | science-fiction |
 | The Time Machine | english-literature |
 | The War of the Worlds | english-literature |

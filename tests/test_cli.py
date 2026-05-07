@@ -21,7 +21,7 @@ def test_help_exits_zero():
 def test_help_shows_top_level_commands():
     result = CliRunner().invoke(cli, ["--help"])
     assert result.exit_code == 0
-    for cmd in ("authors", "download", "ia", "ingest", "list-genres", "rebuild-lancedb"):
+    for cmd in ("authors", "download", "ia", "ingest", "list-genres", "rebuild-indices"):
         assert cmd in result.output, f"expected '{cmd}' in help output"
 
 
@@ -100,7 +100,7 @@ def test_list_genres_shows_all_genres():
         assert genre in result.output, f"expected genre '{genre}' in list-genres output"
 
 
-def test_rebuild_lancedb_help():
-    result = CliRunner().invoke(cli, ["rebuild-lancedb", "--help"])
+def test_rebuild_indices_help():
+    result = CliRunner().invoke(cli, ["rebuild-indices", "--help"])
     assert result.exit_code == 0
     assert "--genre" in result.output

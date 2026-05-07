@@ -233,8 +233,8 @@ corpus/
 │       ├── <slug>.md                # full text with Markdown heading tree
 │       ├── reference.md             # author provenance + Gutenberg metadata
 │       └── .dockg/                  # created later by ingest (gitignored)
-│           ├── graph.sqlite
-│           └── lancedb/
+│           ├── graph.sqlite            # Graph database
+│           └── lancedb/                # Vector index (gitignored)
 └── authors/                         # built by `gutenkg authors`
     ├── index.md                     # master alphabetical table
     ├── jane_austen/

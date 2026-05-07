@@ -1,4 +1,4 @@
-"""Rebuild subcommands — reconstruct LanceDB vector indices from graph.sqlite."""
+"""Rebuild subcommands — reconstruct knowledge graph indices after cloning."""
 
 import subprocess
 
@@ -8,24 +8,24 @@ from gutenberg_kg.cli.main import cli
 from gutenberg_kg.cli.options import ALL_GENRES, REPO_ROOT
 
 
-@cli.command("rebuild-lancedb")
+@cli.command("rebuild-indices")
 @click.option(
     "--genre",
     type=click.Choice(ALL_GENRES),
     multiple=True,
     help="Genre to rebuild (repeatable; default: all).",
 )
-def rebuild_lancedb(genre):
-    """Rebuild LanceDB vector indices from graph.sqlite after cloning.
+def rebuild_indices(genre):
+    """Rebuild knowledge graph indices after cloning.
 
-    LanceDB files are not committed to git. Run this once after cloning to
-    reconstruct vector indices from the committed graph.sqlite databases.
+    Graph indices are not committed to git. Run this once after cloning to
+    reconstruct them from the committed graph databases.
 
     :param genre: Tuple of genres to rebuild (empty = all genres).
     """
     genres = list(genre) if genre else ALL_GENRES
 
-    click.echo("=== Gutenberg KG — LanceDB rebuild ===")
+    click.echo("=== Gutenberg KG — index rebuild ===")
     click.echo(f"Genres: {' '.join(genres)}")
     click.echo("")
 
@@ -49,14 +49,14 @@ def rebuild_lancedb(genre):
             sqlite = book_dir / ".dockg" / "graph.sqlite"
             lancedb = book_dir / ".dockg" / "lancedb"
 
-            # Skip if sqlite not yet present (book not yet ingested)
+            # Skip if graph db not yet present (book not yet ingested)
             if not sqlite.exists():
-                click.echo(f"  [{book_name}] no graph.sqlite — skipping")
+                click.echo(f"  [{book_name}] not yet ingested — skipping")
                 continue
 
-            # Skip if lancedb already exists
+            # Skip if vector index already exists
             if lancedb.is_dir():
-                click.echo(f"  [{book_name}] lancedb already exists — skipping")
+                click.echo(f"  [{book_name}] indices already exist — skipping")
                 continue
 
             click.echo(f"  [{book_name}] rebuilding...")

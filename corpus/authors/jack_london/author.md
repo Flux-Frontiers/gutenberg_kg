@@ -10,3 +10,4 @@
 | Title | Genre |
 |-------|-------|
 | The Call of the Wild | american-literature |
+| White Fang (London) | american-literature |

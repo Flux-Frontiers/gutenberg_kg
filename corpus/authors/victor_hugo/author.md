@@ -10,3 +10,4 @@
 | Title | Genre |
 |-------|-------|
 | Les Miserables | french-literature |
+| The Hunchback of Notre-Dame (Hugo) | french-literature |

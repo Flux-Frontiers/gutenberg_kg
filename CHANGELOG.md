@@ -8,6 +8,133 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Added
+
+- **Corpus expanded to 178 books** — five new Stoic texts added to
+  `ancient-classical` and one new Nietzsche work to `philosophy`:
+  - *Minor Dialogues, Together With the Dialogue on Clemency* — Seneca
+    (Stewart trans.; includes *Of Providence*, *Of Constancy*, *Of Anger*,
+    *Of Clemency*)
+  - *The Golden Sayings of Epictetus, with the Hymn of Cleanthes* — Epictetus
+  - *The Meditations of the Emperor Marcus Aurelius Antoninus* — Marcus Aurelius
+    (Long trans.)
+  - *The Teaching of Epictetus* — Epictetus
+  - *Thoughts of Marcus Aurelius Antoninus* — Marcus Aurelius
+  - *The Twilight of the Idols; or, How to Philosophize with the Hammer.
+    The Antichrist* — Friedrich Nietzsche
+  - Corpus now at 944,384 nodes and 18,443,197 edges
+
+- **`docs/CORPUS.md`** — dedicated 249-line corpus listing (178 books × 13 genres)
+  extracted from `README.md` so the master README stays lean; README now links
+  to it.
+
+- **`scripts/provenance_verifier.py`** — mechanized 8-word substring verifier
+  for the frontier-model provenance experiment. Takes the first 8 words of each
+  quoted passage, normalises case and punctuation, and checks against the
+  committed corpus files; produces VERIFIED / HALLUCINATED / UNVERIFIABLE
+  verdicts.
+
+- **`HANDOFF.md`** — task handoff document describing the provenance verifier
+  work item, input files, and expected output format.
+
+- **`.claude/skills/gutenkg/`** — Claude Code skill definition for the gutenkg
+  CLI (`SKILL.md` + `references/commands.md`), enabling AI-assisted corpus
+  management and ingest workflows directly in the IDE.
+
+- **New author profiles** — 40+ author metadata files added under
+  `corpus/authors/` for newly ingested and back-filled authors (Seneca,
+  Epictetus, Aeschylus, Aristophanes, Aristotle, Herodotus, Thucydides,
+  Ovid, Plutarch, Boethius, Kant, Rousseau, Descartes, Mill, Emerson,
+  Wollstonecraft, and more).
+
+- **`viz3d.py` — `GENRE_PALETTE`** — 10-color dark-background-friendly,
+  colour-blind-safe genre palette for tree trunk colouring.
+
+- **`viz3d.py` — `_glyph_proto()`** — prototype mesh factory for
+  `pv.PolyData.glyph()` batch rendering; replaces the per-node
+  `_make_node_mesh()` loop in the main render path.
+
+- **`viz3d.py` — `ForestLayout.branch_lines`** — list of `(axis_pt, tip_pt)`
+  tuples populated during `compute()`; drawn as a single flat numpy polydata
+  with zero per-line Python objects.
+
+- **`viz3d.py` — `ForestLayout.trunk_genres` / `genre_color_map`** — per-trunk
+  genre label and genre→hex-colour mapping for the merged-trunk draw call.
+
+- **`viz3d.py` — `ForestLayout.max_trunk_height`** — cap (default 45 units) so
+  no single large book dominates the grove silhouette.
+
+- **Two new ingest reports** — `reports/ingest_2026-05-07_014830.md` and
+  `reports/ingest_2026-05-07_020626.md` capturing the Stoic corpus expansion
+  runs.
+
+### Changed
+
+- **`gutenkg rebuild-lancedb` → `gutenkg rebuild-indices`** — command and all
+  associated help text renamed to a technology-neutral term; `cmd_rebuild.py`
+  function renamed from `rebuild_lancedb` to `rebuild_indices`.  Docs and tests
+  updated accordingly.
+
+- **`viz3d.py` — ForestLayout grove radii doubled** — `grove_inner_radius`
+  default 40 → 80, `grove_outer_radius` 120 → 240; `trunk_scale` 6 → 4.  Gives
+  178-book groves room to breathe without overlap.
+
+- **`viz3d.py` — section nodes spiral up trunk (golden-angle branching)**
+  — replaces the Fibonacci upper-hemisphere approach: sections are placed along
+  the trunk height at a golden-angle offset, producing a real tree branching
+  pattern. Trunk-axis → section-tip lines are recorded as `branch_lines` and
+  drawn as a single line mesh.
+
+- **`viz3d.py` — glyph rendering replaces per-node mesh loop** — node
+  rendering is now O(kinds) Python work rather than O(nodes): positions are
+  bucketed per kind, then `pv.PolyData.glyph()` creates one merged mesh per
+  kind in a single VTK draw call.  Eliminates the progress-bar loop and
+  associated `QApplication.processEvents()` calls during mesh building.
+
+- **`viz3d.py` — genre-colored trunks via merged mesh + `ListedColormap`**
+  — all trunk cylinders are merged into a single `pv.PolyData` with a
+  `genre_idx` cell scalar; a `ListedColormap` maps indices to genre colours.
+  Result: one `add_mesh` call for all trunks regardless of genre count.
+
+- **`viz3d.py` — chunk canopy uses upper-hemisphere cone** — orphan chunks and
+  section-child chunks are now placed in the upper hemisphere above their parent
+  Z level; reflected if insufficient upper-hemisphere points are available from
+  the Fibonacci sample.
+
+- **`viz3d.py` — CONTAINS edges hidden by default** — `show_contains` param
+  default changed `True` → `False`; the control panel checkbox initialised
+  accordingly. Reduces visual noise on first load.
+
+- **`viz3d.py` — ground plane enlarged** — `i_size` / `j_size` 600 → 1000 to
+  match the doubled grove radii.
+
+- **`viz3d.py` — pick handler improved** — trunk clicks navigate to the nearest
+  document node (showing book info); status bar messages added for every pick
+  outcome; `picker.SetPickFromList(0)` set to enable actor-list picking.
+
+- **`README.md`** — corpus stats updated (175 → 178 books, 850K → 944K nodes,
+  16.9M → 18.4M edges); corpus book listing moved to `docs/CORPUS.md`; `kgrag
+  synthesize` example added to the query section; "Audel Electric (IA)" genre
+  renamed to "Technical Reference (IA)"; DOI badge switched to canonical
+  `zenodo.org/badge/doi/` form.
+
+- **`docs/CHEATSHEET.md`** — updated for `rebuild-indices` command; `.dockg/`
+  layout comment clarified.
+
+- **`docs/DOWNLOAD_PIPELINE.md`** — `.dockg/` layout comments clarified
+  (graph.sqlite → "Graph database"; lancedb → "Vector index (gitignored)").
+
+- **Multiple author profiles updated** — Darwin, Dickens, Dante Alighieri,
+  Marcus Aurelius, Epictetus, Nietzsche, Dostoevsky, H.G. Wells, Thoreau,
+  Jack London, Jules Verne, Tolstoy, Plato, Victor Hugo, Shakespeare author
+  files updated to reflect new works or corrected metadata.
+
+### Fixed
+
+- **`tests/test_cli.py`** — `test_rebuild_lancedb_help` renamed to
+  `test_rebuild_indices_help`; command string updated from `rebuild-lancedb`
+  to `rebuild-indices` throughout.
+
 ---
 
 ## [1.1.0] - 2026-05-05

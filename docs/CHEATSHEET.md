@@ -168,14 +168,14 @@ network failure.
 
 ---
 
-## After Cloning (Rebuild LanceDB)
+## After Cloning (Rebuild Indices)
 
-LanceDB vector indices are not committed to git. After cloning, rebuild them:
+Knowledge graph indices are not committed to git. After cloning, rebuild them:
 
 ```bash
-gutenkg rebuild-lancedb
-gutenkg rebuild-lancedb --genre science-fiction
-gutenkg rebuild-lancedb --genre shakespeare --genre philosophy
+gutenkg rebuild-indices
+gutenkg rebuild-indices --genre science-fiction
+gutenkg rebuild-indices --genre shakespeare --genre philosophy
 ```
 
 ---
@@ -291,8 +291,8 @@ gutenberg_kg/
 │   │       ├── <slug>.md                   # Full text (Markdown)
 │   │       ├── reference.md                # Author provenance + Gutenberg metadata
 │   │       └── .dockg/                     # Built by ingest (gitignored)
-│   │           ├── graph.sqlite            # DocKG graph
-│   │           └── lancedb/                # Vector index
+│   │           ├── graph.sqlite            # Graph database
+│   │           └── lancedb/                # Vector index (gitignored)
 │   └── authors/                            # Built by `gutenkg authors`
 │       ├── index.md                        # Master alphabetical author table
 │       └── <author_slug>/author.md         # Born, died, Wikipedia, works
@@ -306,7 +306,7 @@ gutenberg_kg/
 │       ├── cmd_download.py                 # gutenkg download *
 │       ├── cmd_genres.py                   # gutenkg genres init/list/add
 │       ├── cmd_ingest.py                   # gutenkg ingest
-│       └── cmd_rebuild.py                  # gutenkg rebuild-lancedb
+│       └── cmd_rebuild.py                  # gutenkg rebuild-indices
 ├── scripts/
 │   ├── process_logo.py                     # Logo transparency + variant generator
 │   ├── benchmark_embedders.py              # Embedder benchmarking utility

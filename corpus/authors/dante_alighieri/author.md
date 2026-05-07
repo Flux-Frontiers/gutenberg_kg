@@ -9,4 +9,6 @@
 
 | Title | Genre |
 |-------|-------|
-| The Divine Comedy | ancient-classical |
+| The Divine Comedy | world-literature |
+| The Divine Comedy: Paradiso (Dante) | world-literature |
+| The Divine Comedy: Purgatorio (Dante) | world-literature |

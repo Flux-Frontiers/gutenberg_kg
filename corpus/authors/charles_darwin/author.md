@@ -9,4 +9,6 @@
 
 | Title | Genre |
 |-------|-------|
+| Germinal (Zola) | french-literature |
+| Howards End (Forster) | english-literature |
 | On the Origin of Species | philosophy |
