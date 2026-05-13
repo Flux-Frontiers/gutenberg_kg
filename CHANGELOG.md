@@ -8,6 +8,10 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+---
+
+## [1.2.0] - 2026-05-12
+
 ### Added
 
 - **`src/gutenberg_kg/corpus.py`** — new library module that extracts all
