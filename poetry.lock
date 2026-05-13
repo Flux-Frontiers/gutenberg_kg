@@ -3341,6 +3341,33 @@ files = [
 markers = {main = "extra == \"dev\" or extra == \"all\""}
 
 [[package]]
+name = "narwhals"
+version = "2.21.0"
+description = "Extremely lightweight compatibility layer between dataframe libraries"
+optional = true
+python-versions = ">=3.9"
+groups = ["main"]
+markers = "extra == \"viz\" or extra == \"all\""
+files = [
+    {file = "narwhals-2.21.0-py3-none-any.whl", hash = "sha256:1e6617d0fca68ae1fda29e5397c4eaacd3ffc9fffe6bcd6ded0c690475e853be"},
+    {file = "narwhals-2.21.0.tar.gz", hash = "sha256:7c6e7f50528e62b7a967dd864d7e117d2955d38d4f730653ce46a9861358e2dc"},
+]
+
+[package.extras]
+cudf = ["cudf-cu12 (>=24.10.0)"]
+dask = ["dask[dataframe] (>=2024.8)"]
+duckdb = ["duckdb (>=1.1)"]
+ibis = ["ibis-framework (>=6.0.0)", "packaging", "pyarrow-hotfix", "rich"]
+modin = ["modin"]
+pandas = ["pandas (>=1.1.3)"]
+polars = ["polars (>=0.20.4)"]
+pyarrow = ["pyarrow (>=13.0.0)"]
+pyspark = ["pyspark (>=3.5.0)"]
+pyspark-connect = ["pyspark[connect] (>=3.5.0)"]
+sql = ["duckdb (>=1.1)", "sqlparse"]
+sqlframe = ["sqlframe (>=3.22.0,!=3.39.3)"]
+
+[[package]]
 name = "nbclient"
 version = "0.10.4"
 description = "A client library for executing notebooks. Formerly nbconvert's ExecutePreprocessor."
@@ -3835,7 +3862,7 @@ files = [
     {file = "packaging-26.2-py3-none-any.whl", hash = "sha256:5fc45236b9446107ff2415ce77c807cee2862cb6fac22b8a73826d0693b0980e"},
     {file = "packaging-26.2.tar.gz", hash = "sha256:ff452ff5a3e828ce110190feff1178bb1f2ea2281fa2075aadb987c2fb221661"},
 ]
-markers = {main = "extra == \"dev\" or extra == \"all\" or extra == \"kgdeps\" or extra == \"viz3d\""}
+markers = {main = "extra == \"dev\" or extra == \"all\" or extra == \"kgdeps\" or extra == \"viz3d\" or extra == \"viz\""}
 
 [[package]]
 name = "pandas"
@@ -4167,6 +4194,31 @@ files = [
     {file = "platformdirs-4.9.6.tar.gz", hash = "sha256:3bfa75b0ad0db84096ae777218481852c0ebc6c727b3168c1b9e0118e458cf0a"},
 ]
 markers = {main = "extra == \"dev\" or extra == \"all\" or extra == \"viz3d\""}
+
+[[package]]
+name = "plotly"
+version = "6.7.0"
+description = "An open-source interactive data visualization library for Python"
+optional = true
+python-versions = ">=3.8"
+groups = ["main"]
+markers = "extra == \"viz\" or extra == \"all\""
+files = [
+    {file = "plotly-6.7.0-py3-none-any.whl", hash = "sha256:ac8aca1c25c663a59b5b9140a549264a5badde2e057d79b8c772ae2920e32ff0"},
+    {file = "plotly-6.7.0.tar.gz", hash = "sha256:45eea0ff27e2a23ccd62776f77eb43aa1ca03df4192b76036e380bb479b892c6"},
+]
+
+[package.dependencies]
+narwhals = ">=1.15.1"
+packaging = "*"
+
+[package.extras]
+dev = ["anywidget", "build", "colorcet", "fiona (<=1.9.6) ; python_version <= \"3.8\"", "geopandas", "inflect", "jupyterlab", "kaleido (>=1.1.0)", "numpy (>=1.22)", "orjson", "pandas", "pdfrw", "pillow", "plotly-geo", "polars[timezone]", "pyarrow", "pyshp", "pytest", "pytz", "requests", "ruff (==0.11.12)", "scikit-image", "scipy", "shapely", "statsmodels", "vaex ; python_version <= \"3.9\"", "xarray"]
+dev-build = ["build", "jupyterlab", "pytest", "requests", "ruff (==0.11.12)"]
+dev-core = ["pytest", "requests", "ruff (==0.11.12)"]
+dev-optional = ["anywidget", "build", "colorcet", "fiona (<=1.9.6) ; python_version <= \"3.8\"", "geopandas", "inflect", "jupyterlab", "kaleido (>=1.1.0)", "numpy (>=1.22)", "orjson", "pandas", "pdfrw", "pillow", "plotly-geo", "polars[timezone]", "pyarrow", "pyshp", "pytest", "pytz", "requests", "ruff (==0.11.12)", "scikit-image", "scipy", "shapely", "statsmodels", "vaex ; python_version <= \"3.9\"", "xarray"]
+express = ["numpy (>=1.22)"]
+kaleido = ["kaleido (>=1.1.0)"]
 
 [[package]]
 name = "pluggy"
@@ -7395,12 +7447,13 @@ multidict = ">=4.0"
 propcache = ">=0.2.1"
 
 [extras]
-all = ["PyQt5", "detect-secrets", "doc-kg", "kg-rag", "markdown", "mypy", "param", "pdoc", "pillow", "pre-commit", "pycode-kg", "pylint", "pytest", "pytest-cov", "pyvista", "pyvistaqt", "ruff", "scipy", "vtracer"]
+all = ["PyQt5", "detect-secrets", "doc-kg", "kg-rag", "markdown", "mypy", "param", "pdoc", "pillow", "plotly", "pre-commit", "pycode-kg", "pylint", "pytest", "pytest-cov", "pyvista", "pyvistaqt", "ruff", "scipy", "vtracer"]
 dev = ["detect-secrets", "mypy", "pdoc", "pillow", "pre-commit", "pylint", "pytest", "pytest-cov", "ruff", "scipy", "vtracer"]
 kgdeps = ["doc-kg", "kg-rag"]
+viz = ["plotly"]
 viz3d = ["PyQt5", "markdown", "param", "pycode-kg", "pyvista", "pyvistaqt"]
 
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.12,<3.14"
-content-hash = "7d6c852e75ac42d90ff95c959ae130e8cf022b8fc91244911d3416352be637e1"
+content-hash = "841d43b4cacf0964cb895b42be37c9b75b52c2f4c0ccb929a70297045959f5d4"

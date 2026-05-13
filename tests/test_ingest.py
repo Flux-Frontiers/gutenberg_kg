@@ -16,6 +16,7 @@ from gutenberg_kg.ingest import (
     BookResult,
     GenreSummary,
     IngestOptions,
+    build_dockg,
     fmt_duration,
     is_sqlite_valid,
     slugify,
@@ -204,6 +205,84 @@ def test_genre_summary_empty():
     assert gs.elapsed == 0.0
     assert gs.nodes == 0
     assert gs.edges == 0
+
+
+# ---------------------------------------------------------------------------
+# build_dockg
+# ---------------------------------------------------------------------------
+
+
+def test_build_dockg_dry_run_returns_true(tmp_path: Path):
+    assert build_dockg(tmp_path, dry_run=True) is True
+
+
+def test_build_dockg_dry_run_ignores_embedder(tmp_path: Path):
+    # Embedder should be irrelevant when dry_run=True — no DocKG instantiation.
+    assert build_dockg(tmp_path, dry_run=True, embedder=object()) is True
+
+
+def test_build_dockg_exception_returns_false(tmp_path: Path, monkeypatch):
+    import sys
+    import types
+
+    fake_mod = types.ModuleType("doc_kg.kg")
+
+    class _FailDocKG:
+        def __init__(self, *a, **kw):
+            raise RuntimeError("simulated build failure")
+
+    fake_mod.DocKG = _FailDocKG
+    monkeypatch.setitem(sys.modules, "doc_kg.kg", fake_mod)
+    assert build_dockg(tmp_path, dry_run=False) is False
+
+
+def test_build_dockg_passes_embedder_to_dockg(tmp_path: Path, monkeypatch):
+    import sys
+    import types
+
+    received: dict = {}
+    fake_mod = types.ModuleType("doc_kg.kg")
+
+    class _FakeDocKG:
+        def __init__(self, path, embedder=None):
+            received["embedder"] = embedder
+
+        def build(self, wipe=False):
+            pass
+
+        def close(self):
+            pass
+
+    fake_mod.DocKG = _FakeDocKG
+    monkeypatch.setitem(sys.modules, "doc_kg.kg", fake_mod)
+
+    sentinel = object()
+    assert build_dockg(tmp_path, dry_run=False, embedder=sentinel) is True
+    assert received["embedder"] is sentinel
+
+
+def test_build_dockg_none_embedder_accepted(tmp_path: Path, monkeypatch):
+    import sys
+    import types
+
+    received: dict = {}
+    fake_mod = types.ModuleType("doc_kg.kg")
+
+    class _FakeDocKG:
+        def __init__(self, path, embedder=None):
+            received["embedder"] = embedder
+
+        def build(self, wipe=False):
+            pass
+
+        def close(self):
+            pass
+
+    fake_mod.DocKG = _FakeDocKG
+    monkeypatch.setitem(sys.modules, "doc_kg.kg", fake_mod)
+
+    assert build_dockg(tmp_path, dry_run=False, embedder=None) is True
+    assert received["embedder"] is None
 
 
 # ---------------------------------------------------------------------------
