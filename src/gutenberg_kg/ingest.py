@@ -171,17 +171,25 @@ def is_sqlite_valid(path: Path) -> bool:
         return False
 
 
-def build_dockg(book_dir: Path, dry_run: bool = False) -> bool:
-    """Run dockg build on book_dir. Returns True on success."""
-    cmd = ["dockg", "build", "--repo", str(book_dir)]
+def build_dockg(
+    book_dir: Path,
+    dry_run: bool = False,
+    embedder=None,
+) -> bool:
+    """Build DocKG for book_dir in-process, reusing a shared embedder if provided."""
     if dry_run:
-        print(f"    [dry] {' '.join(cmd)}")
+        print(f"    [dry] dockg build --repo {book_dir}")
         return True
-    result = subprocess.run(cmd, check=False, text=True)
-    if result.returncode != 0:
-        print(f"    [x] dockg build failed (exit {result.returncode})")
+    try:
+        from doc_kg.kg import DocKG  # pylint: disable=import-outside-toplevel
+
+        kg = DocKG(book_dir, embedder=embedder)
+        kg.build(wipe=True)
+        kg.close()
+        return True
+    except Exception as exc:  # pylint: disable=broad-exception-caught
+        print(f"    [x] dockg build failed: {exc}")
         return False
-    return True
 
 
 def register_book(
@@ -293,6 +301,7 @@ def process_book(
     kg_reg: KGRegistry,
     corp_reg: CorpusRegistry,
     opts: IngestOptions,
+    embedder=None,
 ) -> BookResult:
     """Process one book directory. Returns a BookResult with timing and graph stats."""
     book_name = book_dir.name
@@ -327,7 +336,7 @@ def process_book(
                 print("    [dry] rm -rf .dockg")
         label = "rebuilding" if already_built else "building"
         print(f"    [.] {label} DocKG...")
-        if not build_dockg(book_dir, dry_run=opts.dry_run):
+        if not build_dockg(book_dir, dry_run=opts.dry_run, embedder=embedder):
             elapsed = time.perf_counter() - t0
             return BookResult(name=book_name, genre=genre, status="failed", elapsed=elapsed)
         status = "built"
@@ -628,6 +637,14 @@ def run_ingest(
             print(f"=== {genre} ({len(book_dirs)} books) ===")
             genre_summary = GenreSummary(genre=genre)
             genre_t0 = time.perf_counter()
+
+            from doc_kg.index import (
+                SentenceTransformerEmbedder,  # type: ignore[import-untyped]  # pylint: disable=import-outside-toplevel
+            )
+
+            shared_embedder = SentenceTransformerEmbedder()
+            print(f"  [embedder] {shared_embedder!r}")
+
             for book_dir in book_dirs:
                 result = process_book(
                     book_dir=book_dir,
@@ -635,6 +652,7 @@ def run_ingest(
                     kg_reg=kg_reg,
                     corp_reg=corp_reg,
                     opts=opts,
+                    embedder=shared_embedder,
                 )
                 genre_summary.results.append(result)
             genre_summary.wall_elapsed = time.perf_counter() - genre_t0
