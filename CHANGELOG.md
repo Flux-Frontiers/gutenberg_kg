@@ -10,6 +10,24 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ---
 
+## [1.2.1] - 2026-05-13
+
+### Changed
+
+- **`gutenkg rebuild-indices`** — rewritten to delegate to `ingest.run_ingest()`
+  instead of shelling out to `dockg build`. Now honours the same `IngestOptions`
+  pipeline as `gutenkg ingest`, adds `--force-build` flag, and skips books whose
+  `.dockg/` already exists unless `--force-build` is passed. Removes the old
+  `subprocess` + manual loop implementation (~60 lines → ~10 lines).
+
+- **`.claude/skills/gutenkg/`** — Claude Code skill updated to v1.2.1 coverage:
+  adds `ia` command group (download/catalog/search/survey), `snapshot` subcommands,
+  `status`, `viz3d`, `viz-timeline`, `list-genres`, and `rebuild-indices --force-build`
+  to both SKILL.md and references/commands.md. Standard batch workflow now includes
+  `snapshot save` step. IA catalog file format documented. Pitfalls section expanded.
+
+---
+
 ## [1.2.0] - 2026-05-12
 
 ### Added
