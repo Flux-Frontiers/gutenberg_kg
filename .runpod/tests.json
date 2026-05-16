@@ -1,0 +1,25 @@
+[
+  {
+    "name": "stoic-virtue-query",
+    "input": {
+      "query": "stoic virtue and the examined life",
+      "k": 4
+    }
+  },
+  {
+    "name": "redemption-literature-query",
+    "input": {
+      "query": "redemption and moral transformation in 19th century literature",
+      "k": 4,
+      "semantic_floor": 0.2
+    }
+  },
+  {
+    "name": "nature-of-justice-query",
+    "input": {
+      "query": "the nature of justice and the good life",
+      "k": 6,
+      "min_score": 0.1
+    }
+  }
+]

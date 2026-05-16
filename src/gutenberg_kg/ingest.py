@@ -383,6 +383,7 @@ def print_summary(
     registry_path: Path,
     wall_start: datetime,
     wall_elapsed: float,
+    embed_model: str = "",
 ) -> None:
     """Print a rich job summary to stdout."""
     thick = "═" * W
@@ -430,6 +431,8 @@ def print_summary(
     )
     print(f"║{_row('Python', sys.version.split()[0]):<{W}}║")
     print(f"║{_row('Registry', str(registry_path)):<{W}}║")
+    if embed_model:
+        print(f"║{_row('Embedder', embed_model):<{W}}║")
     print(f"║{_row('Flags', flags):<{W}}║")
     print(f"║{'':{W}}║")
 
@@ -484,6 +487,7 @@ def save_summary(
     registry_path: Path,
     wall_start: datetime,
     wall_elapsed: float,
+    embed_model: str = "",
 ) -> Path:
     """Write a Markdown ingest report to reports/ and return its path."""
     reports_dir = REPO_ROOT / "reports"
@@ -528,6 +532,7 @@ def save_summary(
         f"**Host:** {socket.gethostname()} / {platform.system()} {platform.release()} / {platform.machine()}  ",
         f"**Python:** {sys.version.split()[0]}  ",
         f"**Registry:** `{registry_path}`  ",
+        f"**Embedder:** `{embed_model}`  " if embed_model else "",
         f"**Flags:** `{flags}`  ",
         f"**Status:** {status}",
         "",
@@ -600,6 +605,7 @@ def run_ingest(
     genre_summaries: list[GenreSummary] = []
     wall_start = datetime.now(UTC)
     wall_t0 = time.perf_counter()
+    embed_model_name: str = ""
 
     with (
         KGRegistry(db_path=registry_path) as kg_reg,
@@ -643,6 +649,8 @@ def run_ingest(
             )
 
             shared_embedder = SentenceTransformerEmbedder()
+            if not embed_model_name:
+                embed_model_name = shared_embedder.model_name
             print(f"  [embedder] {shared_embedder!r}")
 
             for book_dir in book_dirs:
@@ -664,9 +672,11 @@ def run_ingest(
             print()
 
     wall_elapsed = time.perf_counter() - wall_t0
-    print_summary(genre_summaries, opts, registry_path, wall_start, wall_elapsed)
+    print_summary(genre_summaries, opts, registry_path, wall_start, wall_elapsed, embed_model_name)
 
-    report_path = save_summary(genre_summaries, opts, registry_path, wall_start, wall_elapsed)
+    report_path = save_summary(
+        genre_summaries, opts, registry_path, wall_start, wall_elapsed, embed_model_name
+    )
     print(f"  Report saved: {report_path}\n")
 
     return 1 if any(g.failed for g in genre_summaries) else 0

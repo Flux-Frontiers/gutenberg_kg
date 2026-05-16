@@ -1,0 +1,40 @@
+{
+  "name": "GutenbergKG Semantic Search",
+  "description": "Serverless semantic search over the Project Gutenberg literary corpus. Powered by GutenbergKG + DocKG with BAAI/bge-small-en-v1.5 embeddings. Optionally synthesizes answers via a vLLM endpoint.",
+  "version": "1.2.1",
+  "category": "NLP",
+  "config": {
+    "runsyncMaxExecutionTimeout": 60,
+    "containerDiskInGb": 5,
+    "volumeInGb": 10,
+    "volumeMountPath": "/workspace",
+    "ports": "",
+    "env": [
+      {
+        "key": "KG_VOLUME",
+        "value": "/workspace",
+        "isPublic": true
+      },
+      {
+        "key": "EMBED_MODEL",
+        "value": "BAAI/bge-small-en-v1.5",
+        "isPublic": true
+      },
+      {
+        "key": "RUNPOD_API_KEY",
+        "value": "",
+        "isSecret": true
+      },
+      {
+        "key": "VLLM_ENDPOINT_URL",
+        "value": "",
+        "isPublic": true
+      },
+      {
+        "key": "VLLM_MODEL",
+        "value": "Qwen/Qwen3-8B-Instruct",
+        "isPublic": true
+      }
+    ]
+  }
+}

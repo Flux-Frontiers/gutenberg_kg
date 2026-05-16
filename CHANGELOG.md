@@ -10,6 +10,42 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ---
 
+## [1.2.2] - 2026-05-16
+
+### Added
+
+- **`runpod/`** — RunPod serverless deployment package for GutenbergKG semantic
+  search. Includes `handler.py` (RunPod serverless handler with KGRAG
+  orchestration), `Dockerfile` (bakes `BAAI/bge-small-en-v1.5` into the image
+  for cold-start-free embedding), `build_image.sh` (builds local wheels +
+  Docker image), `build_kg.py` (remote index builder for RunPod dev pods),
+  `push_indices.sh` (rsyncs local indices to Network Volume), `test_local.py`
+  (local smoke test without Docker), and `test_input.json` (RunPod local worker
+  test payload).
+
+- **`.runpod/hub.json`** — RunPod Hub endpoint metadata for the GutenbergKG
+  semantic search worker (name, description, env var schema, resource config).
+
+- **`.runpod/tests.json`** — RunPod Hub automated test cases (stoic virtue,
+  redemption in literature, nature of justice).
+
+- **`reports/ingest_2026-05-15_234014.md`** — full ingest report from the
+  384-dim index rebuild across all 203 Gutenberg books.
+
+### Changed
+
+- **`ingest.py` — embedder surfaced in job summary** — both the terminal box
+  and the saved Markdown report now include an `Embedder:` row showing the
+  sentence-transformer model used (e.g. `BAAI/bge-small-en-v1.5`). Captured
+  from the first genre's shared embedder; `print_summary` and `save_summary`
+  accept a new optional `embed_model` parameter.
+
+- **`pyproject.toml`** — pinned `transformers>=5.8.1` to resolve
+  `huggingface-hub 1.x` compatibility; `transformers 5.8.0` incorrectly
+  rejected `huggingface-hub>=1.0` at import time.
+
+---
+
 ## [1.2.1] - 2026-05-13
 
 ### Changed

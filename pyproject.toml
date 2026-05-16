@@ -194,8 +194,7 @@ include = ["src"]
 
 [tool.dockg]
 exclude = [
-    ".dockg", ".pycodekg", ".git", ".mypy_cache", ".pytest_cache", ".venv",
-    "__pycache__", "bundles", "dist", "src", "venv",
+    "corpus", "bundles", "dist", "src", "venv",
 ]
 
 # ---------------------------------------------------------------------------
