@@ -8,6 +8,21 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Added
+
+- **`gutenkg re-register`** — new CLI command (`cmd_reregister.py` + `run_reregister()` in
+  `ingest.py`) that re-registers all built books in the KGRAG registry with the correct
+  `kind=gutenberg` without rebuilding DocKGs. Idempotent and safe to run on any machine,
+  including fresh clones where the registry is empty. Accepts `--genre`, `--dry-run`, and
+  `--registry` flags. Skips books that are already correctly tagged and books with no built
+  `.dockg/graph.sqlite`.
+
+### Fixed
+
+- **`ingest.py` `register_book`** — changed `KGKind.from_str("doc")` to `KGKind.GUTENBERG`
+  so all new ingest runs register books with the correct kind. Previously all 203 Gutenberg
+  books were registered as `kind=doc` instead of `kind=gutenberg`.
+
 ---
 
 ## [1.2.2] - 2026-05-16

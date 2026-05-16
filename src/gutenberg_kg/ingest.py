@@ -680,3 +680,75 @@ def run_ingest(
     print(f"  Report saved: {report_path}\n")
 
     return 1 if any(g.failed for g in genre_summaries) else 0
+
+
+def run_reregister(
+    genres: list[str],
+    registry: str | Path | None = None,
+    dry_run: bool = False,
+) -> int:
+    """Re-register all built books from disk with the current KGKind without rebuilding DocKGs.
+
+    Walks each genre directory, finds book dirs that have a built .dockg/graph.sqlite,
+    and calls register_book for each one. Idempotent — safe to run on any machine to
+    fix stale kind values or populate a fresh registry after cloning.
+
+    :param genres: Genre names to process.
+    :param registry: Override path to the KGRAG registry database.
+    :param dry_run: Print actions without writing to the registry.
+    :return: 0 on success.
+    """
+    registry_path = Path(registry).resolve() if registry else default_registry_path()
+    total = updated = skipped = 0
+
+    print(f"Registry: {registry_path}")
+    print()
+
+    with (
+        KGRegistry(db_path=registry_path) as kg_reg,
+        CorpusRegistry(db_path=registry_path) as corp_reg,
+    ):
+        for genre in genres:
+            genre_dir = CORPUS_ROOT / genre
+            if not genre_dir.is_dir():
+                print(f"[!] {genre}: directory not found — skipping")
+                continue
+
+            book_dirs = sorted(
+                p for p in genre_dir.iterdir() if p.is_dir() and not p.name.startswith(".")
+            )
+            genre_corpus = f"gutenberg-{genre}"
+            ensure_corpus(corp_reg, genre_corpus, dry_run=dry_run)
+            ensure_corpus(corp_reg, TOP_CORPUS, dry_run=dry_run)
+
+            print(f"=== {genre} ({len(book_dirs)} books) ===")
+            for book_dir in book_dirs:
+                sqlite = book_dir / ".dockg" / "graph.sqlite"
+                if not sqlite.exists():
+                    print(f"  [{book_dir.name}] no .dockg — skipping")
+                    skipped += 1
+                    continue
+
+                slug = slugify(book_dir.name)
+                kg_name = f"gutenberg-{genre}-{slug}-doc"
+                total += 1
+
+                existing = kg_reg.get(kg_name)
+                from kg_rag.primitives import KGKind  # pylint: disable=import-outside-toplevel
+
+                if existing is not None and existing.kind == KGKind.GUTENBERG:
+                    print(f"  [{book_dir.name}] already gutenberg — ok")
+                    continue
+
+                verb = "re-registering" if existing else "registering"
+                print(f"  [{book_dir.name}] {verb} as gutenberg")
+                entry = register_book(kg_reg, kg_name, book_dir, dry_run=dry_run)
+                if entry:
+                    add_to_corpus(corp_reg, genre_corpus, entry, dry_run=dry_run)
+                    add_to_corpus(corp_reg, TOP_CORPUS, entry, dry_run=dry_run)
+                updated += 1
+
+            print()
+
+    print(f"Done — {updated} registered/updated, {skipped} skipped (no .dockg), {total} total")
+    return 0
