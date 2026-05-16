@@ -206,7 +206,7 @@ def register_book(
     lancedb = book_dir / ".dockg" / "lancedb"
     entry = KGEntry(
         name=name,
-        kind=KGKind.from_str("doc"),
+        kind=KGKind.GUTENBERG,
         repo_path=book_dir,
         venv_path=book_dir / ".venv",
         sqlite_path=sqlite if sqlite.exists() else None,
