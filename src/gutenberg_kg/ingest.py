@@ -176,7 +176,11 @@ def build_dockg(
     dry_run: bool = False,
     embedder=None,
 ) -> bool:
-    """Build DocKG for book_dir in-process, reusing a shared embedder if provided."""
+    """Build DocKG for book_dir in-process, reusing a shared embedder if provided.
+
+    Mirrors the three-step pipeline used by ``dockg build``:
+    corpus → SQLite, SQLite → JSON embedding cache, cache → LanceDB.
+    """
     if dry_run:
         print(f"    [dry] dockg build --repo {book_dir}")
         return True
@@ -184,8 +188,12 @@ def build_dockg(
         from doc_kg.kg import DocKG  # pylint: disable=import-outside-toplevel
 
         kg = DocKG(book_dir, embedder=embedder)
-        kg.build(wipe=True)
+        kg.build_graph(wipe=True)
+        cache_path = kg.db_path.parent / "embeddings.json"
+        kg.build_embeddings(out=cache_path, n_workers=4)
+        kg.build_index_from_cache(cache_path, wipe=True)
         kg.close()
+        cache_path.unlink(missing_ok=True)
         return True
     except Exception as exc:  # pylint: disable=broad-exception-caught
         print(f"    [x] dockg build failed: {exc}")

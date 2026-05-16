@@ -1251,15 +1251,15 @@ markers = {main = "extra == \"dev\" or extra == \"all\""}
 
 [[package]]
 name = "doc-kg"
-version = "0.14.0"
+version = "0.15.0"
 description = "A tool to build a semantically searchable knowledge graph from markdown and text documents"
 optional = true
 python-versions = "<3.14,>=3.12"
 groups = ["main"]
 markers = "extra == \"kgdeps\" or extra == \"all\""
 files = [
-    {file = "doc_kg-0.14.0-py3-none-any.whl", hash = "sha256:3c02d8b974bda750dc1fe94194cffc5e0a68925422edbf8dc3c2deeb8d5946ab"},
-    {file = "doc_kg-0.14.0.tar.gz", hash = "sha256:d8f15c8def0828776f2a5f5a38816e2c697372bc5ba8d392e4a65893a37a69d6"},
+    {file = "doc_kg-0.15.0-py3-none-any.whl", hash = "sha256:7e8c83e2bf794997d333e48b3aaa8e299953a8b050788e1b4c391cd1a9b94b33"},
+    {file = "doc_kg-0.15.0.tar.gz", hash = "sha256:147ca7bc49ff440f2861ecb68a2048b7afeb5b518d653857d5cd37926c0ad6ec"},
 ]
 
 [package.dependencies]

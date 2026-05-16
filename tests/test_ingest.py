@@ -246,8 +246,15 @@ def test_build_dockg_passes_embedder_to_dockg(tmp_path: Path, monkeypatch):
     class _FakeDocKG:
         def __init__(self, path, embedder=None):
             received["embedder"] = embedder
+            self.db_path = path / ".dockg" / "graph.sqlite"
 
-        def build(self, wipe=False):
+        def build_graph(self, wipe=False):
+            pass
+
+        def build_embeddings(self, out=None, n_workers=None):
+            return out
+
+        def build_index_from_cache(self, cache_path, wipe=False):
             pass
 
         def close(self):
@@ -271,8 +278,15 @@ def test_build_dockg_none_embedder_accepted(tmp_path: Path, monkeypatch):
     class _FakeDocKG:
         def __init__(self, path, embedder=None):
             received["embedder"] = embedder
+            self.db_path = path / ".dockg" / "graph.sqlite"
 
-        def build(self, wipe=False):
+        def build_graph(self, wipe=False):
+            pass
+
+        def build_embeddings(self, out=None, n_workers=None):
+            return out
+
+        def build_index_from_cache(self, cache_path, wipe=False):
             pass
 
         def close(self):
