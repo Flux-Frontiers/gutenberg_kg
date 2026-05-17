@@ -10,9 +10,33 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added
 
+- **Multi-format diary parser** — `parser.py` refactored into `BaseDiaryParser`
+  (shared state machine + bracket-depth tracking + flush logic) plus three
+  format-specific subclasses: `PepysParser` (ALL-CAPS `MONTH YEAR` section
+  headers, existing Pepys/default behaviour), `EvelynParser` (day-first with
+  inline year: `29th December, 1659.`, handles `3d`/`22d` ordinal variants),
+  and `BoswellParser` (weekday-prefixed, year anchored at construction time:
+  `Sunday, 15th August`).  `get_parser(fmt)` factory selects by name; the
+  module-level `parse()` remains for backward compatibility.
+
+- **`.diary_format` convention** — each book directory may contain a plain-text
+  `.diary_format` file naming its parser (e.g. `evelyn`, `boswell`).  The
+  diary pipeline reads it at ingest time and defaults to `pepys` if absent.
+  Format files added for both Evelyn volumes and the Hebrides journal.
+
 ### Changed
 
+- **`pipeline.py`** — `_run()` now calls `_read_format(book_dir)` and routes
+  to `get_parser(fmt).parse(md_file)` instead of the bare `parse()` function.
+
+- **`diaries.txt` catalog** — D'Arblay volumes removed; format comments added
+  documenting the `pepys` / `evelyn` / `boswell` identifiers.
+
 ### Removed
+
+- **Madame D'Arblay corpus** (3 volumes) — removed from catalog and corpus
+  pending a parser for the `SECT. N (YYYY.)` + prose-letter format that those
+  texts use.  Can be re-added once a `DarblaParser` is implemented.
 
 ### Fixed
 

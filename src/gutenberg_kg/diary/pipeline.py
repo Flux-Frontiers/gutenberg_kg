@@ -35,6 +35,15 @@ from pathlib import Path
 DIARY_DIR_NAME = ".diary"
 DIARY_KG_DIR_NAME = ".diarykg"
 PSV_FILE_NAME = ".diary_source.psv"
+FORMAT_FILE_NAME = ".diary_format"
+
+
+def _read_format(book_dir: Path) -> str:
+    """Read the diary format from ``.diary_format`` in book_dir (default: pepys)."""
+    fmt_file = book_dir / FORMAT_FILE_NAME
+    if fmt_file.exists():
+        return fmt_file.read_text(encoding="utf-8").strip()
+    return "pepys"
 
 
 def run_diary_pipeline(
@@ -73,7 +82,7 @@ def _run(book_dir: Path, embedder) -> bool:
     )
     from doc_kg.kg import DocKG  # pylint: disable=import-outside-toplevel
 
-    from .parser import parse, write_psv  # pylint: disable=import-outside-toplevel
+    from .parser import get_parser, write_psv  # pylint: disable=import-outside-toplevel
 
     # ── 1. Find the main diary markdown ────────────────────────────────────
     md_files = [f for f in book_dir.iterdir() if f.suffix == ".md" and f.name != "reference.md"]
@@ -84,7 +93,8 @@ def _run(book_dir: Path, embedder) -> bool:
     # ── 2. Parse → PSV ─────────────────────────────────────────────────────
     psv_path = book_dir / PSV_FILE_NAME
     print(f"    [diary] parsing {md_file.name}...")
-    count = write_psv(parse(md_file), psv_path)
+    fmt = _read_format(book_dir)
+    count = write_psv(get_parser(fmt).parse(md_file), psv_path)
     if count == 0:
         raise ValueError(f"No dated entries parsed from {md_file}")
     print(f"    [diary] {count:,} entries → {psv_path.name}")
