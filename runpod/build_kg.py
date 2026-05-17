@@ -307,11 +307,19 @@ def build_gutenbergkg(
         step(f"Genre: {genre}")
 
         if not skip_download:
-            step("Downloading …")
-            run(
-                [gutenkg, "download", "fetch-genre", genre, "--max-results", "200", "--yes"],
-                cwd=gutenberg_src,
-            )
+            catalog = gutenberg_src / "scripts" / "catalogs" / f"{genre}.txt"
+            if catalog.exists():
+                step(f"Downloading from catalog ({catalog.name}) …")
+                run(
+                    [gutenkg, "download", "catalog", str(catalog), "--genre", genre],
+                    cwd=gutenberg_src,
+                )
+            else:
+                step("Downloading via fetch-genre (no catalog found) …")
+                run(
+                    [gutenkg, "download", "fetch-genre", genre, "--max-results", "200", "--yes"],
+                    cwd=gutenberg_src,
+                )
 
         step("Ingesting (building DocKG) …")
         run(
