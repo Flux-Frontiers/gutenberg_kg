@@ -1,4 +1,4 @@
-"""Tests for gutenberg_kg.cli.cmd_snapshot — pure helpers and CLI."""
+"""Tests for gutenberg_kg.cli.cmd_snapshot — GutenbergSnapshotManager + CLI."""
 
 from __future__ import annotations
 
@@ -7,16 +7,8 @@ import sqlite3
 from pathlib import Path
 
 import pytest
-
-pytest.importorskip("kg_rag", reason="kg_rag not installed — integration test skipped")
-
 from click.testing import CliRunner
 
-from gutenberg_kg.cli.cmd_snapshot import (
-    _list_snapshots,
-    _load_snapshot,
-    _snapshot_filename,
-)
 from gutenberg_kg.cli.main import cli
 
 # ---------------------------------------------------------------------------
@@ -26,7 +18,7 @@ from gutenberg_kg.cli.main import cli
 
 @pytest.fixture()
 def fake_registry(tmp_path: Path) -> Path:
-    """Minimal KGRAG registry with one live book in english-literature."""
+    """Minimal KGRAG registry with one live book (5 nodes, 3 edges)."""
     db = tmp_path / "book1.sqlite"
     with sqlite3.connect(db) as con:
         con.execute("CREATE TABLE nodes (id INTEGER PRIMARY KEY)")
@@ -46,145 +38,62 @@ def fake_registry(tmp_path: Path) -> Path:
     return reg
 
 
-@pytest.fixture()
-def snap_dir(tmp_path: Path) -> Path:
-    d = tmp_path / ".snapshots"
-    d.mkdir()
-    return d
-
-
-def _write_snapshot(
-    directory: Path, timestamp: str, books: int = 10, version: str = "1.0.0"
+def _write_managed_snapshot(
+    snapshots_dir: Path,
+    key: str,
+    timestamp: str,
+    *,
+    books: int = 10,
+    nodes: int = 1000,
+    edges: int = 2000,
+    version: str = "1.0.0",
+    branch: str = "develop",
 ) -> Path:
-    """Write a minimal snapshot JSON file and return its path."""
-    safe = timestamp.replace(":", "-").replace("+", "").split(".")[0]
-    snap = {
-        "kind": "corpus_snapshot",
-        "schema_version": 1,
-        "timestamp": timestamp,
-        "version": version,
-        "branch": "develop",
-        "commit": "abc1234",
-        "commit_full": "abc1234abc1234abc1234",
-        "totals": {
-            "books": books,
-            "authors": 5,
-            "nodes": books * 100,
-            "edges": books * 200,
-        },
+    """Write a snapshot in SnapshotManager format and update manifest."""
+    metrics = {
+        "total_nodes": nodes,
+        "total_edges": edges,
+        "total_books": books,
+        "total_authors": 5,
         "genres": [],
     }
-    path = directory / f"snapshot-{safe}.json"
-    path.write_text(json.dumps(snap, indent=2) + "\n", encoding="utf-8")
-    return path
-
-
-# ---------------------------------------------------------------------------
-# _snapshot_filename
-# ---------------------------------------------------------------------------
-
-
-def test_snapshot_filename_starts_with_prefix():
-    assert _snapshot_filename("2026-05-06T14:30:00+00:00").startswith("snapshot-")
-
-
-def test_snapshot_filename_ends_with_json():
-    assert _snapshot_filename("2026-05-06T14:30:00+00:00").endswith(".json")
-
-
-def test_snapshot_filename_no_colons():
-    assert ":" not in _snapshot_filename("2026-05-06T14:30:00+00:00")
-
-
-def test_snapshot_filename_no_plus():
-    assert "+" not in _snapshot_filename("2026-05-06T14:30:00+00:00")
-
-
-def test_snapshot_filename_no_fractional_seconds():
-    name = _snapshot_filename("2026-05-06T12:00:00.123456+00:00")
-    assert ".123456" not in name
-
-
-def test_snapshot_filename_deterministic():
-    ts = "2026-05-06T10:00:00+00:00"
-    assert _snapshot_filename(ts) == _snapshot_filename(ts)
-
-
-# ---------------------------------------------------------------------------
-# _load_snapshot
-# ---------------------------------------------------------------------------
-
-
-def test_load_snapshot_returns_dict(tmp_path: Path):
-    snap = {"kind": "corpus_snapshot", "totals": {"books": 5}}
-    f = tmp_path / "snap.json"
-    f.write_text(json.dumps(snap), encoding="utf-8")
-    assert _load_snapshot(f) == snap
-
-
-def test_load_snapshot_preserves_nested_keys(tmp_path: Path):
-    snap = {
-        "kind": "corpus_snapshot",
-        "timestamp": "2026-05-06T00:00:00+00:00",
-        "version": "1.2.3",
-        "totals": {"books": 100, "nodes": 5000, "edges": 10000},
-        "genres": [{"corpus": "gutenberg-shakespeare", "books": 37}],
+    snap_data = {
+        "key": key,
+        "branch": branch,
+        "timestamp": timestamp,
+        "version": version,
+        "metrics": metrics,
+        "hotspots": [],
+        "issues": [],
+        "vs_previous": None,
+        "vs_baseline": None,
     }
-    f = tmp_path / "snap.json"
-    f.write_text(json.dumps(snap), encoding="utf-8")
-    assert _load_snapshot(f) == snap
+    snap_file = snapshots_dir / f"{key}.json"
+    snap_file.write_text(json.dumps(snap_data, indent=2) + "\n", encoding="utf-8")
+
+    manifest_path = snapshots_dir / "manifest.json"
+    if manifest_path.exists():
+        manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    else:
+        manifest = {"format": "1.0", "last_update": "", "snapshots": []}
+
+    manifest["snapshots"].append(
+        {
+            "key": key,
+            "branch": branch,
+            "timestamp": timestamp,
+            "version": version,
+            "file": snap_file.name,
+            "metrics": metrics,
+            "deltas": {"vs_previous": None, "vs_baseline": None},
+        }
+    )
+    manifest_path.write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8")
+    return snap_file
 
 
 # ---------------------------------------------------------------------------
-# _list_snapshots
-# ---------------------------------------------------------------------------
-
-
-def test_list_snapshots_no_dir(monkeypatch):
-    import gutenberg_kg.cli.cmd_snapshot as mod
-
-    monkeypatch.setattr(mod, "SNAPSHOTS_DIR", Path("/tmp/definitely_no_snapshots_xyz_abc"))
-    assert _list_snapshots() == []
-
-
-def test_list_snapshots_empty_dir(snap_dir: Path, monkeypatch):
-    import gutenberg_kg.cli.cmd_snapshot as mod
-
-    monkeypatch.setattr(mod, "SNAPSHOTS_DIR", snap_dir)
-    assert _list_snapshots() == []
-
-
-def test_list_snapshots_returns_two(snap_dir: Path, monkeypatch):
-    import gutenberg_kg.cli.cmd_snapshot as mod
-
-    monkeypatch.setattr(mod, "SNAPSHOTS_DIR", snap_dir)
-    _write_snapshot(snap_dir, "2026-05-01T00:00:00+00:00")
-    _write_snapshot(snap_dir, "2026-05-06T00:00:00+00:00")
-    assert len(_list_snapshots()) == 2
-
-
-def test_list_snapshots_sorted_ascending(snap_dir: Path, monkeypatch):
-    import gutenberg_kg.cli.cmd_snapshot as mod
-
-    monkeypatch.setattr(mod, "SNAPSHOTS_DIR", snap_dir)
-    _write_snapshot(snap_dir, "2026-05-06T00:00:00+00:00")
-    _write_snapshot(snap_dir, "2026-05-01T00:00:00+00:00")
-    paths = _list_snapshots()
-    assert paths[0].name < paths[1].name
-
-
-def test_list_snapshots_ignores_non_matching(snap_dir: Path, monkeypatch):
-    import gutenberg_kg.cli.cmd_snapshot as mod
-
-    monkeypatch.setattr(mod, "SNAPSHOTS_DIR", snap_dir)
-    _write_snapshot(snap_dir, "2026-05-01T00:00:00+00:00")
-    (snap_dir / "other.json").write_text("{}")
-    (snap_dir / "unrelated.txt").write_text("x")
-    assert len(_list_snapshots()) == 1
-
-
-# ---------------------------------------------------------------------------
-# CLI: snapshot group and subcommand help
+# CLI: snapshot group / subcommand help
 # ---------------------------------------------------------------------------
 
 
@@ -193,22 +102,24 @@ def test_snapshot_group_help_exit_zero():
     assert result.exit_code == 0
 
 
-def test_snapshot_group_shows_subcommands():
+def test_snapshot_group_shows_all_subcommands():
     result = CliRunner().invoke(cli, ["snapshot", "--help"])
-    for sub in ("save", "list", "show", "diff"):
+    for sub in ("save", "list", "show", "diff", "prune"):
         assert sub in result.output, f"expected subcommand {sub!r} in snapshot --help"
 
 
 def test_snapshot_save_help():
     result = CliRunner().invoke(cli, ["snapshot", "save", "--help"])
     assert result.exit_code == 0
-    for flag in ("--registry", "--output", "--print"):
+    for flag in ("--registry", "--snapshots-dir", "--force", "--json"):
         assert flag in result.output
 
 
 def test_snapshot_list_help():
     result = CliRunner().invoke(cli, ["snapshot", "list", "--help"])
     assert result.exit_code == 0
+    for flag in ("--snapshots-dir", "--limit", "--branch", "--json"):
+        assert flag in result.output
 
 
 def test_snapshot_show_help():
@@ -221,47 +132,86 @@ def test_snapshot_diff_help():
     assert result.exit_code == 0
 
 
+def test_snapshot_prune_help():
+    result = CliRunner().invoke(cli, ["snapshot", "prune", "--help"])
+    assert result.exit_code == 0
+    assert "--dry-run" in result.output
+
+
 # ---------------------------------------------------------------------------
 # CLI: snapshot list
 # ---------------------------------------------------------------------------
 
 
-def test_snapshot_list_no_snapshots_message(snap_dir: Path, monkeypatch):
-    import gutenberg_kg.cli.cmd_snapshot as mod
-
-    monkeypatch.setattr(mod, "SNAPSHOTS_DIR", snap_dir)
-    result = CliRunner().invoke(cli, ["snapshot", "list"])
+def test_snapshot_list_no_snapshots_message(tmp_path: Path):
+    snap_dir = tmp_path / ".snapshots"
+    snap_dir.mkdir()
+    result = CliRunner().invoke(cli, ["snapshot", "list", "--snapshots-dir", str(snap_dir)])
     assert result.exit_code == 0
     assert "No snapshots" in result.output
 
 
-def test_snapshot_list_shows_timestamp(snap_dir: Path, monkeypatch):
-    import gutenberg_kg.cli.cmd_snapshot as mod
-
-    monkeypatch.setattr(mod, "SNAPSHOTS_DIR", snap_dir)
-    _write_snapshot(snap_dir, "2026-05-01T00:00:00+00:00", books=42)
-    result = CliRunner().invoke(cli, ["snapshot", "list"])
+def test_snapshot_list_shows_timestamp(tmp_path: Path):
+    snap_dir = tmp_path / ".snapshots"
+    snap_dir.mkdir()
+    _write_managed_snapshot(snap_dir, "abc001", "2026-05-01T00:00:00+00:00", books=42)
+    result = CliRunner().invoke(cli, ["snapshot", "list", "--snapshots-dir", str(snap_dir)])
     assert result.exit_code == 0
     assert "2026-05-01" in result.output
 
 
-def test_snapshot_list_shows_book_count(snap_dir: Path, monkeypatch):
-    import gutenberg_kg.cli.cmd_snapshot as mod
-
-    monkeypatch.setattr(mod, "SNAPSHOTS_DIR", snap_dir)
-    _write_snapshot(snap_dir, "2026-05-01T00:00:00+00:00", books=42)
-    result = CliRunner().invoke(cli, ["snapshot", "list"])
+def test_snapshot_list_shows_book_count(tmp_path: Path):
+    snap_dir = tmp_path / ".snapshots"
+    snap_dir.mkdir()
+    _write_managed_snapshot(snap_dir, "abc001", "2026-05-01T00:00:00+00:00", books=42)
+    result = CliRunner().invoke(cli, ["snapshot", "list", "--snapshots-dir", str(snap_dir)])
     assert "42" in result.output
 
 
-def test_snapshot_list_shows_multiple(snap_dir: Path, monkeypatch):
-    import gutenberg_kg.cli.cmd_snapshot as mod
-
-    monkeypatch.setattr(mod, "SNAPSHOTS_DIR", snap_dir)
-    _write_snapshot(snap_dir, "2026-05-01T00:00:00+00:00")
-    _write_snapshot(snap_dir, "2026-05-06T00:00:00+00:00")
-    result = CliRunner().invoke(cli, ["snapshot", "list"])
+def test_snapshot_list_shows_multiple(tmp_path: Path):
+    snap_dir = tmp_path / ".snapshots"
+    snap_dir.mkdir()
+    _write_managed_snapshot(snap_dir, "abc001", "2026-05-01T00:00:00+00:00")
+    _write_managed_snapshot(snap_dir, "abc002", "2026-05-06T00:00:00+00:00")
+    result = CliRunner().invoke(cli, ["snapshot", "list", "--snapshots-dir", str(snap_dir)])
     assert result.output.count("2026-05-") == 2
+
+
+def test_snapshot_list_reverse_chronological(tmp_path: Path):
+    snap_dir = tmp_path / ".snapshots"
+    snap_dir.mkdir()
+    _write_managed_snapshot(snap_dir, "abc001", "2026-05-01T00:00:00+00:00")
+    _write_managed_snapshot(snap_dir, "abc002", "2026-05-06T00:00:00+00:00")
+    result = CliRunner().invoke(cli, ["snapshot", "list", "--snapshots-dir", str(snap_dir)])
+    idx1 = result.output.index("2026-05-06")
+    idx2 = result.output.index("2026-05-01")
+    assert idx1 < idx2, "newest snapshot should appear first"
+
+
+def test_snapshot_list_limit(tmp_path: Path):
+    snap_dir = tmp_path / ".snapshots"
+    snap_dir.mkdir()
+    for i, ts in enumerate(
+        ["2026-05-01T00:00:00+00:00", "2026-05-02T00:00:00+00:00", "2026-05-03T00:00:00+00:00"]
+    ):
+        _write_managed_snapshot(snap_dir, f"abc{i:03d}", ts)
+    result = CliRunner().invoke(
+        cli, ["snapshot", "list", "--snapshots-dir", str(snap_dir), "--limit", "2"]
+    )
+    assert result.output.count("2026-05-") == 2
+
+
+def test_snapshot_list_json_output(tmp_path: Path):
+    snap_dir = tmp_path / ".snapshots"
+    snap_dir.mkdir()
+    _write_managed_snapshot(snap_dir, "abc001", "2026-05-01T00:00:00+00:00", books=7)
+    result = CliRunner().invoke(
+        cli, ["snapshot", "list", "--snapshots-dir", str(snap_dir), "--json"]
+    )
+    assert result.exit_code == 0
+    data = json.loads(result.output)
+    assert isinstance(data, list)
+    assert data[0]["metrics"]["total_books"] == 7
 
 
 # ---------------------------------------------------------------------------
@@ -269,58 +219,57 @@ def test_snapshot_list_shows_multiple(snap_dir: Path, monkeypatch):
 # ---------------------------------------------------------------------------
 
 
-def test_snapshot_show_no_snapshots_error(snap_dir: Path, monkeypatch):
-    import gutenberg_kg.cli.cmd_snapshot as mod
-
-    monkeypatch.setattr(mod, "SNAPSHOTS_DIR", snap_dir)
-    result = CliRunner().invoke(cli, ["snapshot", "show"])
+def test_snapshot_show_no_snapshots_error(tmp_path: Path):
+    snap_dir = tmp_path / ".snapshots"
+    snap_dir.mkdir()
+    result = CliRunner().invoke(cli, ["snapshot", "show", "--snapshots-dir", str(snap_dir)])
     assert result.exit_code != 0
     assert "No snapshots" in result.output
 
 
-def test_snapshot_show_no_match_error(snap_dir: Path, monkeypatch):
-    import gutenberg_kg.cli.cmd_snapshot as mod
-
-    monkeypatch.setattr(mod, "SNAPSHOTS_DIR", snap_dir)
-    _write_snapshot(snap_dir, "2026-05-01T00:00:00+00:00")
-    result = CliRunner().invoke(cli, ["snapshot", "show", "nonexistent"])
+def test_snapshot_show_not_found_error(tmp_path: Path):
+    snap_dir = tmp_path / ".snapshots"
+    snap_dir.mkdir()
+    _write_managed_snapshot(snap_dir, "abc001", "2026-05-01T00:00:00+00:00")
+    result = CliRunner().invoke(
+        cli, ["snapshot", "show", "deadbeef", "--snapshots-dir", str(snap_dir)]
+    )
     assert result.exit_code != 0
-    assert "No snapshot matching" in result.output
+    assert "not found" in result.output.lower()
 
 
-def test_snapshot_show_default_is_most_recent(snap_dir: Path, monkeypatch):
-    import gutenberg_kg.cli.cmd_snapshot as mod
-
-    monkeypatch.setattr(mod, "SNAPSHOTS_DIR", snap_dir)
-    _write_snapshot(snap_dir, "2026-05-01T00:00:00+00:00", version="1.0.0")
-    _write_snapshot(snap_dir, "2026-05-06T00:00:00+00:00", version="1.1.0")
-    result = CliRunner().invoke(cli, ["snapshot", "show"])
+def test_snapshot_show_latest_default(tmp_path: Path):
+    snap_dir = tmp_path / ".snapshots"
+    snap_dir.mkdir()
+    _write_managed_snapshot(snap_dir, "abc001", "2026-05-01T00:00:00+00:00", version="1.0.0")
+    _write_managed_snapshot(snap_dir, "abc002", "2026-05-06T00:00:00+00:00", version="1.1.0")
+    result = CliRunner().invoke(cli, ["snapshot", "show", "--snapshots-dir", str(snap_dir)])
     assert result.exit_code == 0
-    data = json.loads(result.output)
-    assert data["version"] == "1.1.0"
+    assert "1.1.0" in result.output
 
 
-def test_snapshot_show_by_prefix(snap_dir: Path, monkeypatch):
-    import gutenberg_kg.cli.cmd_snapshot as mod
-
-    monkeypatch.setattr(mod, "SNAPSHOTS_DIR", snap_dir)
-    _write_snapshot(snap_dir, "2026-05-01T00:00:00+00:00", version="1.0.0")
-    _write_snapshot(snap_dir, "2026-05-06T00:00:00+00:00", version="1.1.0")
-    result = CliRunner().invoke(cli, ["snapshot", "show", "2026-05-01"])
+def test_snapshot_show_by_key(tmp_path: Path):
+    snap_dir = tmp_path / ".snapshots"
+    snap_dir.mkdir()
+    _write_managed_snapshot(snap_dir, "abc001", "2026-05-01T00:00:00+00:00", version="1.0.0")
+    _write_managed_snapshot(snap_dir, "abc002", "2026-05-06T00:00:00+00:00", version="1.1.0")
+    result = CliRunner().invoke(
+        cli, ["snapshot", "show", "abc001", "--snapshots-dir", str(snap_dir)]
+    )
     assert result.exit_code == 0
-    data = json.loads(result.output)
-    assert data["version"] == "1.0.0"
+    assert "1.0.0" in result.output
 
 
-def test_snapshot_show_output_is_valid_json(snap_dir: Path, monkeypatch):
-    import gutenberg_kg.cli.cmd_snapshot as mod
-
-    monkeypatch.setattr(mod, "SNAPSHOTS_DIR", snap_dir)
-    _write_snapshot(snap_dir, "2026-05-01T00:00:00+00:00")
-    result = CliRunner().invoke(cli, ["snapshot", "show"])
+def test_snapshot_show_displays_metrics(tmp_path: Path):
+    snap_dir = tmp_path / ".snapshots"
+    snap_dir.mkdir()
+    _write_managed_snapshot(snap_dir, "abc001", "2026-05-01T00:00:00+00:00", books=99)
+    result = CliRunner().invoke(cli, ["snapshot", "show", "--snapshots-dir", str(snap_dir)])
     assert result.exit_code == 0
-    data = json.loads(result.output)
-    assert data["kind"] == "corpus_snapshot"
+    assert "99" in result.output
+    assert "Books:" in result.output
+    assert "Nodes:" in result.output
+    assert "Edges:" in result.output
 
 
 # ---------------------------------------------------------------------------
@@ -328,65 +277,127 @@ def test_snapshot_show_output_is_valid_json(snap_dir: Path, monkeypatch):
 # ---------------------------------------------------------------------------
 
 
-def test_snapshot_diff_too_few_error(snap_dir: Path, monkeypatch):
-    import gutenberg_kg.cli.cmd_snapshot as mod
-
-    monkeypatch.setattr(mod, "SNAPSHOTS_DIR", snap_dir)
-    _write_snapshot(snap_dir, "2026-05-01T00:00:00+00:00")
-    result = CliRunner().invoke(cli, ["snapshot", "diff"])
+def test_snapshot_diff_too_few_error(tmp_path: Path):
+    snap_dir = tmp_path / ".snapshots"
+    snap_dir.mkdir()
+    _write_managed_snapshot(snap_dir, "abc001", "2026-05-01T00:00:00+00:00")
+    result = CliRunner().invoke(cli, ["snapshot", "diff", "--snapshots-dir", str(snap_dir)])
     assert result.exit_code != 0
     assert "two snapshots" in result.output.lower()
 
 
-def test_snapshot_diff_shows_book_delta(snap_dir: Path, monkeypatch):
-    import gutenberg_kg.cli.cmd_snapshot as mod
+def test_snapshot_diff_default_is_last_two(tmp_path: Path):
+    snap_dir = tmp_path / ".snapshots"
+    snap_dir.mkdir()
+    _write_managed_snapshot(snap_dir, "abc001", "2026-05-01T00:00:00+00:00")
+    _write_managed_snapshot(snap_dir, "abc002", "2026-05-06T00:00:00+00:00")
+    result = CliRunner().invoke(cli, ["snapshot", "diff", "--snapshots-dir", str(snap_dir)])
+    assert result.exit_code == 0
+    assert "abc001" in result.output
+    assert "abc002" in result.output
 
-    monkeypatch.setattr(mod, "SNAPSHOTS_DIR", snap_dir)
-    _write_snapshot(snap_dir, "2026-05-01T00:00:00+00:00", books=10)
-    _write_snapshot(snap_dir, "2026-05-06T00:00:00+00:00", books=20)
-    result = CliRunner().invoke(cli, ["snapshot", "diff"])
+
+def test_snapshot_diff_shows_book_and_node_lines(tmp_path: Path):
+    snap_dir = tmp_path / ".snapshots"
+    snap_dir.mkdir()
+    _write_managed_snapshot(snap_dir, "abc001", "2026-05-01T00:00:00+00:00", books=10, nodes=100)
+    _write_managed_snapshot(snap_dir, "abc002", "2026-05-06T00:00:00+00:00", books=20, nodes=200)
+    result = CliRunner().invoke(cli, ["snapshot", "diff", "--snapshots-dir", str(snap_dir)])
     assert result.exit_code == 0
     assert "Books:" in result.output
-    assert "+10" in result.output
-
-
-def test_snapshot_diff_default_is_last_two(snap_dir: Path, monkeypatch):
-    import gutenberg_kg.cli.cmd_snapshot as mod
-
-    monkeypatch.setattr(mod, "SNAPSHOTS_DIR", snap_dir)
-    _write_snapshot(snap_dir, "2026-05-01T00:00:00+00:00")
-    _write_snapshot(snap_dir, "2026-05-06T00:00:00+00:00")
-    result = CliRunner().invoke(cli, ["snapshot", "diff"])
-    assert result.exit_code == 0
-    # Both timestamps in header lines
-    assert "2026-05-01" in result.output
-    assert "2026-05-06" in result.output
-
-
-def test_snapshot_diff_named_args(snap_dir: Path, monkeypatch):
-    import gutenberg_kg.cli.cmd_snapshot as mod
-
-    monkeypatch.setattr(mod, "SNAPSHOTS_DIR", snap_dir)
-    _write_snapshot(snap_dir, "2026-05-01T00:00:00+00:00", books=5)
-    _write_snapshot(snap_dir, "2026-05-06T00:00:00+00:00", books=15)
-    result = CliRunner().invoke(cli, ["snapshot", "diff", "2026-05-01", "2026-05-06"])
-    assert result.exit_code == 0
-    assert "+10" in result.output
-
-
-def test_snapshot_diff_shows_node_and_edge_lines(snap_dir: Path, monkeypatch):
-    import gutenberg_kg.cli.cmd_snapshot as mod
-
-    monkeypatch.setattr(mod, "SNAPSHOTS_DIR", snap_dir)
-    _write_snapshot(snap_dir, "2026-05-01T00:00:00+00:00", books=10)
-    _write_snapshot(snap_dir, "2026-05-06T00:00:00+00:00", books=20)
-    result = CliRunner().invoke(cli, ["snapshot", "diff"])
     assert "Nodes:" in result.output
     assert "Edges:" in result.output
 
 
+def test_snapshot_diff_shows_positive_delta(tmp_path: Path):
+    snap_dir = tmp_path / ".snapshots"
+    snap_dir.mkdir()
+    _write_managed_snapshot(snap_dir, "abc001", "2026-05-01T00:00:00+00:00", books=10)
+    _write_managed_snapshot(snap_dir, "abc002", "2026-05-06T00:00:00+00:00", books=20)
+    result = CliRunner().invoke(cli, ["snapshot", "diff", "--snapshots-dir", str(snap_dir)])
+    assert "+10" in result.output
+
+
+def test_snapshot_diff_explicit_keys(tmp_path: Path):
+    snap_dir = tmp_path / ".snapshots"
+    snap_dir.mkdir()
+    _write_managed_snapshot(snap_dir, "abc001", "2026-05-01T00:00:00+00:00", books=5)
+    _write_managed_snapshot(snap_dir, "abc002", "2026-05-06T00:00:00+00:00", books=15)
+    result = CliRunner().invoke(
+        cli, ["snapshot", "diff", "abc001", "abc002", "--snapshots-dir", str(snap_dir)]
+    )
+    assert result.exit_code == 0
+    assert "+10" in result.output
+
+
+def test_snapshot_diff_json_output(tmp_path: Path):
+    snap_dir = tmp_path / ".snapshots"
+    snap_dir.mkdir()
+    _write_managed_snapshot(snap_dir, "abc001", "2026-05-01T00:00:00+00:00", books=10)
+    _write_managed_snapshot(snap_dir, "abc002", "2026-05-06T00:00:00+00:00", books=20)
+    result = CliRunner().invoke(
+        cli, ["snapshot", "diff", "--snapshots-dir", str(snap_dir), "--json"]
+    )
+    assert result.exit_code == 0
+    data = json.loads(result.output)
+    assert "a" in data and "b" in data and "delta" in data
+
+
 # ---------------------------------------------------------------------------
-# CLI: snapshot save
+# CLI: snapshot prune
+# ---------------------------------------------------------------------------
+
+
+def test_snapshot_prune_nothing_to_prune(tmp_path: Path):
+    snap_dir = tmp_path / ".snapshots"
+    snap_dir.mkdir()
+    _write_managed_snapshot(snap_dir, "abc001", "2026-05-01T00:00:00+00:00", books=10)
+    _write_managed_snapshot(snap_dir, "abc002", "2026-05-06T00:00:00+00:00", books=20)
+    result = CliRunner().invoke(cli, ["snapshot", "prune", "--snapshots-dir", str(snap_dir)])
+    assert result.exit_code == 0
+    assert "Nothing to prune" in result.output
+
+
+def test_snapshot_prune_removes_metric_duplicate(tmp_path: Path):
+    snap_dir = tmp_path / ".snapshots"
+    snap_dir.mkdir()
+    # Three snapshots with identical metrics — the interior one is pruned.
+    _write_managed_snapshot(snap_dir, "abc001", "2026-05-01T00:00:00+00:00", books=10)
+    _write_managed_snapshot(snap_dir, "abc002", "2026-05-06T00:00:00+00:00", books=10)
+    _write_managed_snapshot(snap_dir, "abc003", "2026-05-07T00:00:00+00:00", books=10)
+    result = CliRunner().invoke(cli, ["snapshot", "prune", "--snapshots-dir", str(snap_dir)])
+    assert result.exit_code == 0
+    assert "1 item" in result.output
+
+
+def test_snapshot_prune_dry_run_does_not_delete(tmp_path: Path):
+    snap_dir = tmp_path / ".snapshots"
+    snap_dir.mkdir()
+    _write_managed_snapshot(snap_dir, "abc001", "2026-05-01T00:00:00+00:00", books=10)
+    _write_managed_snapshot(snap_dir, "abc002", "2026-05-06T00:00:00+00:00", books=10)
+    _write_managed_snapshot(snap_dir, "abc003", "2026-05-07T00:00:00+00:00", books=10)
+    result = CliRunner().invoke(
+        cli, ["snapshot", "prune", "--snapshots-dir", str(snap_dir), "--dry-run"]
+    )
+    assert result.exit_code == 0
+    assert "[dry-run]" in result.output
+    # File should still exist
+    assert (snap_dir / "abc002.json").exists()
+
+
+def test_snapshot_prune_removes_orphaned_file(tmp_path: Path):
+    snap_dir = tmp_path / ".snapshots"
+    snap_dir.mkdir()
+    _write_managed_snapshot(snap_dir, "abc001", "2026-05-01T00:00:00+00:00", books=10)
+    # Orphaned file not in manifest
+    (snap_dir / "orphan.json").write_text("{}", encoding="utf-8")
+    result = CliRunner().invoke(cli, ["snapshot", "prune", "--snapshots-dir", str(snap_dir)])
+    assert result.exit_code == 0
+    assert not (snap_dir / "orphan.json").exists()
+
+
+# ---------------------------------------------------------------------------
+# CLI: snapshot save (requires fake_registry)
 # ---------------------------------------------------------------------------
 
 
@@ -398,23 +409,17 @@ def test_snapshot_save_missing_registry(tmp_path: Path):
             "save",
             "--registry",
             str(tmp_path / "no_registry.sqlite"),
-            "--output",
-            str(tmp_path / "out.json"),
+            "--snapshots-dir",
+            str(tmp_path / ".snapshots"),
         ],
     )
     assert result.exit_code != 0
     assert "Registry not found" in result.output
 
 
-def test_snapshot_save_writes_file(fake_registry: Path, monkeypatch, tmp_path: Path):
-    import gutenberg_kg.cli.cmd_snapshot as mod
-    import gutenberg_kg.cli.cmd_status as status_mod
-
-    monkeypatch.setattr(mod, "CORPUS_ROOT", tmp_path)
-    monkeypatch.setattr(status_mod, "CORPUS_ROOT", tmp_path)
+def test_snapshot_save_writes_snapshot_file(fake_registry: Path, tmp_path: Path):
+    snap_dir = tmp_path / ".snapshots"
     (tmp_path / "authors").mkdir()
-    out = tmp_path / "snap.json"
-
     result = CliRunner().invoke(
         cli,
         [
@@ -422,23 +427,22 @@ def test_snapshot_save_writes_file(fake_registry: Path, monkeypatch, tmp_path: P
             "save",
             "--registry",
             str(fake_registry),
-            "--output",
-            str(out),
+            "--snapshots-dir",
+            str(snap_dir),
+            "--corpus-root",
+            str(tmp_path),
         ],
     )
     assert result.exit_code == 0, result.output
-    assert out.exists()
+    assert snap_dir.exists()
+    jsons = list(snap_dir.glob("*.json"))
+    # At least the snapshot file (and manifest)
+    assert any(f.name != "manifest.json" for f in jsons)
 
 
-def test_snapshot_save_output_is_valid_snapshot(fake_registry: Path, monkeypatch, tmp_path: Path):
-    import gutenberg_kg.cli.cmd_snapshot as mod
-    import gutenberg_kg.cli.cmd_status as status_mod
-
-    monkeypatch.setattr(mod, "CORPUS_ROOT", tmp_path)
-    monkeypatch.setattr(status_mod, "CORPUS_ROOT", tmp_path)
+def test_snapshot_save_creates_manifest(fake_registry: Path, tmp_path: Path):
+    snap_dir = tmp_path / ".snapshots"
     (tmp_path / "authors").mkdir()
-    out = tmp_path / "snap.json"
-
     CliRunner().invoke(
         cli,
         [
@@ -446,26 +450,18 @@ def test_snapshot_save_output_is_valid_snapshot(fake_registry: Path, monkeypatch
             "save",
             "--registry",
             str(fake_registry),
-            "--output",
-            str(out),
+            "--snapshots-dir",
+            str(snap_dir),
+            "--corpus-root",
+            str(tmp_path),
         ],
     )
-    data = json.loads(out.read_text())
-    assert data["kind"] == "corpus_snapshot"
-    assert data["schema_version"] == 1
-    assert "totals" in data
-    assert "genres" in data
+    assert (snap_dir / "manifest.json").exists()
 
 
-def test_snapshot_save_correct_book_count(fake_registry: Path, monkeypatch, tmp_path: Path):
-    import gutenberg_kg.cli.cmd_snapshot as mod
-    import gutenberg_kg.cli.cmd_status as status_mod
-
-    monkeypatch.setattr(mod, "CORPUS_ROOT", tmp_path)
-    monkeypatch.setattr(status_mod, "CORPUS_ROOT", tmp_path)
+def test_snapshot_save_snapshot_has_correct_book_count(fake_registry: Path, tmp_path: Path):
+    snap_dir = tmp_path / ".snapshots"
     (tmp_path / "authors").mkdir()
-    out = tmp_path / "snap.json"
-
     CliRunner().invoke(
         cli,
         [
@@ -473,23 +469,20 @@ def test_snapshot_save_correct_book_count(fake_registry: Path, monkeypatch, tmp_
             "save",
             "--registry",
             str(fake_registry),
-            "--output",
-            str(out),
+            "--snapshots-dir",
+            str(snap_dir),
+            "--corpus-root",
+            str(tmp_path),
         ],
     )
-    data = json.loads(out.read_text())
-    assert data["totals"]["books"] == 1
+    snaps = [f for f in snap_dir.glob("*.json") if f.name != "manifest.json"]
+    data = json.loads(snaps[0].read_text(encoding="utf-8"))
+    assert data["metrics"]["total_books"] == 1
 
 
-def test_snapshot_save_print_flag_emits_json(fake_registry: Path, monkeypatch, tmp_path: Path):
-    import gutenberg_kg.cli.cmd_snapshot as mod
-    import gutenberg_kg.cli.cmd_status as status_mod
-
-    monkeypatch.setattr(mod, "CORPUS_ROOT", tmp_path)
-    monkeypatch.setattr(status_mod, "CORPUS_ROOT", tmp_path)
+def test_snapshot_save_success_message(fake_registry: Path, tmp_path: Path):
+    snap_dir = tmp_path / ".snapshots"
     (tmp_path / "authors").mkdir()
-    out = tmp_path / "snap.json"
-
     result = CliRunner().invoke(
         cli,
         [
@@ -497,25 +490,19 @@ def test_snapshot_save_print_flag_emits_json(fake_registry: Path, monkeypatch, t
             "save",
             "--registry",
             str(fake_registry),
-            "--output",
-            str(out),
-            "--print",
+            "--snapshots-dir",
+            str(snap_dir),
+            "--corpus-root",
+            str(tmp_path),
         ],
     )
     assert result.exit_code == 0, result.output
-    assert '"kind"' in result.output
-    assert '"corpus_snapshot"' in result.output
+    assert "[✓]" in result.output or "Snapshot saved" in result.output
 
 
-def test_snapshot_save_success_message(fake_registry: Path, monkeypatch, tmp_path: Path):
-    import gutenberg_kg.cli.cmd_snapshot as mod
-    import gutenberg_kg.cli.cmd_status as status_mod
-
-    monkeypatch.setattr(mod, "CORPUS_ROOT", tmp_path)
-    monkeypatch.setattr(status_mod, "CORPUS_ROOT", tmp_path)
+def test_snapshot_save_json_flag(fake_registry: Path, tmp_path: Path):
+    snap_dir = tmp_path / ".snapshots"
     (tmp_path / "authors").mkdir()
-    out = tmp_path / "snap.json"
-
     result = CliRunner().invoke(
         cli,
         [
@@ -523,11 +510,15 @@ def test_snapshot_save_success_message(fake_registry: Path, monkeypatch, tmp_pat
             "save",
             "--registry",
             str(fake_registry),
-            "--output",
-            str(out),
+            "--snapshots-dir",
+            str(snap_dir),
+            "--corpus-root",
+            str(tmp_path),
+            "--json",
         ],
     )
-    assert "snap.json" in result.output
+    assert result.exit_code == 0, result.output
+    assert '"key"' in result.output
 
 
 # ---------------------------------------------------------------------------
@@ -535,22 +526,11 @@ def test_snapshot_save_success_message(fake_registry: Path, monkeypatch, tmp_pat
 # ---------------------------------------------------------------------------
 
 
-def test_round_trip_save_then_list(fake_registry: Path, monkeypatch, tmp_path: Path):
-    import gutenberg_kg.cli.cmd_snapshot as mod
-    import gutenberg_kg.cli.cmd_status as status_mod
-
+def test_round_trip_save_list(fake_registry: Path, tmp_path: Path):
     snap_dir = tmp_path / ".snapshots"
-    snap_dir.mkdir()
-    monkeypatch.setattr(mod, "CORPUS_ROOT", tmp_path)
-    monkeypatch.setattr(mod, "SNAPSHOTS_DIR", snap_dir)
-    monkeypatch.setattr(status_mod, "CORPUS_ROOT", tmp_path)
     (tmp_path / "authors").mkdir()
 
-    # Save two snapshots via --output to control filenames
-    out1 = snap_dir / "snapshot-2026-05-01T00-00-00.json"
-    out2 = snap_dir / "snapshot-2026-05-06T00-00-00.json"
-
-    for out in (out1, out2):
+    for _ in range(2):
         r = CliRunner().invoke(
             cli,
             [
@@ -558,44 +538,37 @@ def test_round_trip_save_then_list(fake_registry: Path, monkeypatch, tmp_path: P
                 "save",
                 "--registry",
                 str(fake_registry),
-                "--output",
-                str(out),
+                "--snapshots-dir",
+                str(snap_dir),
+                "--corpus-root",
+                str(tmp_path),
+                "--force",
             ],
         )
         assert r.exit_code == 0, r.output
 
-    list_result = CliRunner().invoke(cli, ["snapshot", "list"])
+    list_result = CliRunner().invoke(cli, ["snapshot", "list", "--snapshots-dir", str(snap_dir)])
     assert list_result.exit_code == 0
     assert "No snapshots" not in list_result.output
 
 
-def test_round_trip_save_then_diff(fake_registry: Path, monkeypatch, tmp_path: Path):
-    import gutenberg_kg.cli.cmd_snapshot as mod
-    import gutenberg_kg.cli.cmd_status as status_mod
-
+def test_round_trip_save_show(fake_registry: Path, tmp_path: Path):
     snap_dir = tmp_path / ".snapshots"
-    snap_dir.mkdir()
-    monkeypatch.setattr(mod, "CORPUS_ROOT", tmp_path)
-    monkeypatch.setattr(mod, "SNAPSHOTS_DIR", snap_dir)
-    monkeypatch.setattr(status_mod, "CORPUS_ROOT", tmp_path)
     (tmp_path / "authors").mkdir()
 
-    out1 = snap_dir / "snapshot-2026-05-01T00-00-00.json"
-    out2 = snap_dir / "snapshot-2026-05-06T00-00-00.json"
-    for out in (out1, out2):
-        r = CliRunner().invoke(
-            cli,
-            [
-                "snapshot",
-                "save",
-                "--registry",
-                str(fake_registry),
-                "--output",
-                str(out),
-            ],
-        )
-        assert r.exit_code == 0, r.output
-
-    diff_result = CliRunner().invoke(cli, ["snapshot", "diff"])
-    assert diff_result.exit_code == 0
-    assert "Books:" in diff_result.output
+    CliRunner().invoke(
+        cli,
+        [
+            "snapshot",
+            "save",
+            "--registry",
+            str(fake_registry),
+            "--snapshots-dir",
+            str(snap_dir),
+            "--corpus-root",
+            str(tmp_path),
+        ],
+    )
+    show_result = CliRunner().invoke(cli, ["snapshot", "show", "--snapshots-dir", str(snap_dir)])
+    assert show_result.exit_code == 0
+    assert "Books:" in show_result.output

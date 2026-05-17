@@ -16,6 +16,8 @@ from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any
 
+from kg_utils.snapshots import SnapshotManager as _BaseSnapshotManager
+
 # Maps corpus slug → display label (order determines table row order).
 GENRE_LABELS: dict[str, str] = {
     "gutenberg-english-literature": "English Literature",
@@ -370,3 +372,106 @@ def snapshot_diff(
         },
         "changed_genres": changed,
     }
+
+
+# ---------------------------------------------------------------------------
+# GutenbergSnapshotManager — manifest-based temporal snapshots
+# ---------------------------------------------------------------------------
+
+
+class GutenbergSnapshotManager(_BaseSnapshotManager):
+    """Corpus-aware snapshot manager backed by ``kg_utils.snapshots.SnapshotManager``.
+
+    Snapshots are keyed by git tree hash, stored as ``<key>.json`` alongside a
+    ``manifest.json`` index in ``snapshots_dir``.  Use :meth:`capture` to build
+    a snapshot from the live corpus, then :meth:`save_snapshot` to persist it.
+
+    :param snapshots_dir: Directory where snapshot JSON files are stored.
+    :param registry_path: KGRAG registry SQLite path.
+    :param repo_root: Repository root (for git metadata).
+    :param corpus_root: Corpus data root (contains ``authors/`` etc.).
+    """
+
+    def __init__(
+        self,
+        snapshots_dir: Path | str,
+        *,
+        registry_path: Path,
+        repo_root: Path,
+        corpus_root: Path,
+    ) -> None:
+        super().__init__(snapshots_dir, package_name="gutenberg-kg")
+        self.registry_path = registry_path
+        self.repo_root = repo_root
+        self.corpus_root = corpus_root
+
+    def capture(  # type: ignore[override]
+        self,
+        version: str | None = None,
+        branch: str | None = None,
+        tree_hash: str = "",
+    ) -> Any:
+        """Build a corpus snapshot from the live registry.
+
+        :param version: Version string; auto-detected from package if None.
+        :param branch: Git branch name; auto-detected if None.
+        :param tree_hash: Git tree hash; auto-detected if not provided.
+        :return: New ``Snapshot`` instance (not yet persisted).
+        """
+        genre_stats = collect_genre_stats(self.registry_path)
+        metrics: dict[str, Any] = {
+            "total_nodes": sum(g["nodes"] for g in genre_stats),
+            "total_edges": sum(g["edges"] for g in genre_stats),
+            "total_books": sum(g["books"] for g in genre_stats),
+            "total_authors": _count_authors(self.corpus_root),
+            "genres": genre_stats,
+        }
+        return super().capture(
+            version=version,
+            branch=branch,
+            graph_stats_dict=metrics,
+            tree_hash=tree_hash,
+        )
+
+    def save_snapshot(self, snapshot: Any, *, force: bool = False) -> Any:  # type: ignore[override]
+        """Persist snapshot, guarding against degenerate (zero-book) state.
+
+        :param snapshot: Snapshot to persist.
+        :param force: If True, always create a new history entry.
+        :raises ValueError: If the snapshot has 0 books.
+        """
+        m = snapshot.metrics if isinstance(snapshot.metrics, dict) else {}
+        if m.get("total_books", 0) == 0:
+            raise ValueError(
+                "Refusing to save snapshot with 0 books. "
+                "Ensure the corpus has ingested books before capturing a snapshot."
+            )
+        return super().save_snapshot(snapshot, force=force)
+
+    def _compute_delta_from_metrics(
+        self, new_m: dict[str, Any], old_m: dict[str, Any]
+    ) -> dict[str, Any]:
+        """Compute corpus delta including books and authors.
+
+        :param new_m: Newer metrics dict.
+        :param old_m: Older metrics dict.
+        :return: Delta dict with nodes, edges, books, authors.
+        """
+        return {
+            "nodes": new_m.get("total_nodes", 0) - old_m.get("total_nodes", 0),
+            "edges": new_m.get("total_edges", 0) - old_m.get("total_edges", 0),
+            "books": new_m.get("total_books", 0) - old_m.get("total_books", 0),
+            "authors": new_m.get("total_authors", 0) - old_m.get("total_authors", 0),
+        }
+
+    def _metrics_changed(self, new_metrics: dict[str, Any], old_metrics: dict[str, Any]) -> bool:
+        """Return True if any corpus metric changed.
+
+        :param new_metrics: Newer metrics dict.
+        :param old_metrics: Older metrics dict.
+        """
+        return (
+            new_metrics.get("total_nodes", 0) != old_metrics.get("total_nodes", 0)
+            or new_metrics.get("total_books", 0) != old_metrics.get("total_books", 0)
+            or new_metrics.get("total_authors", 0) != old_metrics.get("total_authors", 0)
+        )
