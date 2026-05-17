@@ -211,15 +211,17 @@ def register_book(
     name: str,
     book_dir: Path,
     dry_run: bool = False,
+    db_subdir: str = ".dockg",
 ) -> KGEntry | None:
-    """
-    Register a book DocKG. Returns the KGEntry (new or existing).
-    Returns None on dry-run or failure.
+    """Register a book KG. Returns the KGEntry (new or existing).
+
+    :param db_subdir: Hidden directory under *book_dir* that holds the KG
+        index (default ``.dockg``; use ``.diarykg`` for diary-pipeline books).
     """
     from kg_rag.primitives import KGEntry, KGKind  # pylint: disable=import-outside-toplevel
 
-    sqlite = book_dir / ".dockg" / "graph.sqlite"
-    lancedb = book_dir / ".dockg" / "lancedb"
+    sqlite = book_dir / db_subdir / "graph.sqlite"
+    lancedb = book_dir / db_subdir / "lancedb"
     entry = KGEntry(
         name=name,
         kind=KGKind.GUTENBERG,
@@ -290,11 +292,11 @@ def git_commit_push_genre(genre_dir: Path, genre: str, dry_run: bool = False) ->
     print(f"  [↑] {genre}: pushed {n_files} file(s)")
 
 
-def _sqlite_counts(book_dir: Path) -> tuple[int, int]:
+def _sqlite_counts(book_dir: Path, db_subdir: str = ".dockg") -> tuple[int, int]:
     """Return (node_count, edge_count) from the book's graph.sqlite, or (0, 0)."""
     import sqlite3
 
-    db = book_dir / ".dockg" / "graph.sqlite"
+    db = book_dir / db_subdir / "graph.sqlite"
     if not db.exists():
         return 0, 0
     try:
@@ -320,24 +322,31 @@ def process_book(
     embedder=None,
 ) -> BookResult:
     """Process one book directory. Returns a BookResult with timing and graph stats."""
+    from gutenberg_kg.genres import get_pipeline  # pylint: disable=import-outside-toplevel
+
     book_name = book_dir.name
     slug = slugify(book_name)
     kg_name = f"gutenberg-{genre}-{slug}-doc"
     genre_corpus = f"gutenberg-{genre}"
-    dockg_sqlite = book_dir / ".dockg" / "graph.sqlite"
+
+    pipeline = get_pipeline(genre)
+    db_subdir = ".diarykg" if pipeline == "diary" else ".dockg"
+    kg_sqlite = book_dir / db_subdir / "graph.sqlite"
 
     print(f"  [{book_name}]")
+    if pipeline:
+        print(f"    [pipeline] {pipeline}")
     t0 = time.perf_counter()
 
     # --- Build ---
-    dockg_dir = book_dir / ".dockg"
-    already_built = dockg_sqlite.exists()
+    kg_dir = book_dir / db_subdir
+    already_built = kg_sqlite.exists()
 
     # Auto-wipe if sqlite exists but is corrupt or empty
-    if already_built and not is_sqlite_valid(dockg_sqlite):
+    if already_built and not is_sqlite_valid(kg_sqlite):
         print("    [!] corrupt/empty graph.sqlite — wiping and rebuilding")
         if not opts.dry_run:
-            shutil.rmtree(dockg_dir)
+            shutil.rmtree(kg_dir)
         already_built = False
 
     if already_built and not opts.force_build:
@@ -346,13 +355,24 @@ def process_book(
     else:
         if already_built and opts.force_build:
             if not opts.dry_run:
-                shutil.rmtree(dockg_dir)
-                print("    [~] wiped .dockg")
+                shutil.rmtree(kg_dir)
+                print(f"    [~] wiped {kg_dir.relative_to(book_dir)}")
             else:
-                print("    [dry] rm -rf .dockg")
+                print(f"    [dry] rm -rf {kg_dir.relative_to(book_dir)}")
+
         label = "rebuilding" if already_built else "building"
         print(f"    [.] {label} DocKG...")
-        if not build_dockg(book_dir, dry_run=opts.dry_run, embedder=embedder):
+
+        if pipeline == "diary":
+            from gutenberg_kg.diary.pipeline import (  # pylint: disable=import-outside-toplevel
+                run_diary_pipeline,
+            )
+
+            ok = run_diary_pipeline(book_dir, dry_run=opts.dry_run, embedder=embedder)
+        else:
+            ok = build_dockg(book_dir, dry_run=opts.dry_run, embedder=embedder)
+
+        if not ok:
             elapsed = time.perf_counter() - t0
             return BookResult(name=book_name, genre=genre, status="failed", elapsed=elapsed)
         status = "built"
@@ -365,7 +385,7 @@ def process_book(
     else:
         verb = "re-registering" if existing else "registering"
         print(f"    [.] {verb}: {kg_name}")
-        entry = register_book(kg_reg, kg_name, book_dir, dry_run=opts.dry_run)
+        entry = register_book(kg_reg, kg_name, book_dir, dry_run=opts.dry_run, db_subdir=db_subdir)
         if entry is None and not opts.dry_run:
             elapsed = time.perf_counter() - t0
             return BookResult(name=book_name, genre=genre, status="failed", elapsed=elapsed)
@@ -375,7 +395,7 @@ def process_book(
         add_to_corpus(corp_reg, TOP_CORPUS, entry, dry_run=opts.dry_run)
 
     elapsed = time.perf_counter() - t0
-    nodes, edges = _sqlite_counts(book_dir)
+    nodes, edges = _sqlite_counts(book_dir, db_subdir)
     print(f"    [✓] {fmt_duration(elapsed)}  nodes={nodes:,}  edges={edges:,}")
     return BookResult(
         name=book_name, genre=genre, status=status, elapsed=elapsed, nodes=nodes, edges=edges
@@ -749,11 +769,16 @@ def run_reregister(
             ensure_corpus(corp_reg, genre_corpus, dry_run=dry_run)
             ensure_corpus(corp_reg, TOP_CORPUS, dry_run=dry_run)
 
+            from gutenberg_kg.genres import get_pipeline  # pylint: disable=import-outside-toplevel
+
+            pipeline = get_pipeline(genre)
+            db_subdir = ".diarykg" if pipeline == "diary" else ".dockg"
+
             print(f"=== {genre} ({len(book_dirs)} books) ===")
             for book_dir in book_dirs:
-                sqlite = book_dir / ".dockg" / "graph.sqlite"
+                sqlite = book_dir / db_subdir / "graph.sqlite"
                 if not sqlite.exists():
-                    print(f"  [{book_dir.name}] no .dockg — skipping")
+                    print(f"  [{book_dir.name}] no {db_subdir} — skipping")
                     skipped += 1
                     continue
 
@@ -770,7 +795,9 @@ def run_reregister(
 
                 verb = "re-registering" if existing else "registering"
                 print(f"  [{book_dir.name}] {verb} as gutenberg")
-                entry = register_book(kg_reg, kg_name, book_dir, dry_run=dry_run)
+                entry = register_book(
+                    kg_reg, kg_name, book_dir, dry_run=dry_run, db_subdir=db_subdir
+                )
                 if entry:
                     add_to_corpus(corp_reg, genre_corpus, entry, dry_run=dry_run)
                     add_to_corpus(corp_reg, TOP_CORPUS, entry, dry_run=dry_run)
@@ -778,5 +805,5 @@ def run_reregister(
 
             print()
 
-    print(f"Done — {updated} registered/updated, {skipped} skipped (no .dockg), {total} total")
+    print(f"Done — {updated} registered/updated, {skipped} skipped (no KG index), {total} total")
     return 0

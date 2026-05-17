@@ -31,13 +31,13 @@ _DEFAULTS: dict[str, list[str]] = {
 }
 
 
-def _load() -> dict[str, list[str]]:
+def _load() -> dict:
     if _REGISTRY_PATH.exists():
         return json.loads(_REGISTRY_PATH.read_text(encoding="utf-8"))
     return {k: list(v) for k, v in _DEFAULTS.items()}
 
 
-def _save(data: dict[str, list[str]]) -> None:
+def _save(data: dict) -> None:
     _REGISTRY_PATH.parent.mkdir(parents=True, exist_ok=True)
     _REGISTRY_PATH.write_text(json.dumps(data, indent=2) + "\n", encoding="utf-8")
 
@@ -78,3 +78,16 @@ _registry = _load()
 GUTENBERG_GENRES: list[str] = _registry.get("gutenberg", list(_DEFAULTS["gutenberg"]))
 IA_GENRES: list[str] = _registry.get("ia", list(_DEFAULTS["ia"]))
 ALL_GENRES: list[str] = GUTENBERG_GENRES + IA_GENRES
+
+# Maps genre slug → pipeline name for genres that need non-standard ingest.
+# Populated from the optional "pipelines" key in corpus/genres.json.
+PIPELINE_GENRES: dict[str, str] = _registry.get("pipelines", {})
+
+
+def get_pipeline(genre: str) -> str | None:
+    """Return the pipeline name for *genre*, or ``None`` for standard dockg.
+
+    :param genre: Genre slug (e.g. ``"diaries"``).
+    :return: Pipeline identifier such as ``"diary"``, or ``None``.
+    """
+    return PIPELINE_GENRES.get(genre)

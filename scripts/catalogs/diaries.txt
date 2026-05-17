@@ -1,0 +1,22 @@
+# Diaries — curated Gutenberg catalog
+# Format: <gutenberg_id>[TAB<title>]
+# Download: gutenkg download catalog scripts/catalogs/diaries.txt --genre diaries
+# Pipeline: diary (temporally-grounded via DiaryTransformer)
+#
+# Already in corpus: Diary of Samuel Pepys (#4200)
+#
+# All works are public domain on Project Gutenberg (pre-1928 or US PD)
+
+# ── John Evelyn (1640–1706) — Pepys' great contemporary ──────────────────────
+41218	The Diary of John Evelyn — Volume 1
+42081	The Diary of John Evelyn — Volume 2
+
+# ── Fanny Burney / Madame D'Arblay (1752–1840) ───────────────────────────────
+# Court diarist, witnessed the French Revolution; vivid social history
+5826	The Diary and Letters of Madame D'Arblay — Volume 1
+6042	The Diary and Letters of Madame D'Arblay — Volume 2
+6457	The Diary and Letters of Madame D'Arblay — Volume 3
+
+# ── James Boswell (1740–1795) ─────────────────────────────────────────────────
+# Journal of a Tour to the Hebrides (diary form, 1773)
+6018	The Journal of a Tour to the Hebrides with Samuel Johnson

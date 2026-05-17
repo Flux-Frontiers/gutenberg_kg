@@ -11,9 +11,13 @@
     "science-fiction",
     "sacred-texts",
     "german-literature",
-    "world-literature"
+    "world-literature",
+    "diaries"
   ],
   "ia": [
     "audel-electric"
-  ]
+  ],
+  "pipelines": {
+    "diaries": "diary"
+  }
 }

@@ -234,6 +234,12 @@ __marimo__/
 # Also ignore .dockg/ nested under subdirectories (e.g. docs/.dockg/)
 **/.dockg/
 
+# Diary pipeline output directories
+**/.diary/
+**/.diarykg/
+*.pkl
+*.psv
+
 # Corpus snapshots (point-in-time metrics captures)
 corpus/.snapshots/
 
