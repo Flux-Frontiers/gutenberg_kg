@@ -10,6 +10,18 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added
 
+### Changed
+
+### Removed
+
+### Fixed
+
+---
+
+## [1.3.0] - 2026-05-16
+
+### Added
+
 - **`gutenkg snapshot prune`** — new subcommand that removes vestigial snapshots carrying
   no new metric information. Cleans three categories: metric-duplicates (interior snapshots
   with identical metrics), broken entries (manifest entries whose JSON file is missing), and
