@@ -4,6 +4,10 @@ Provides path-parametrised functions for building corpus status reports and
 snapshot dicts.  All functions accept explicit path arguments so they can be
 called from any context — CLI, tests, or kgrag adapters — without depending
 on package-level path constants.
+
+Author: Eric G. Suchanek, PhD
+Last Revision: 2026-05-16 21:49:44
+License: Elastic 2.0
 """
 
 from __future__ import annotations
@@ -108,7 +112,13 @@ def collect_genre_stats(registry_path: Path) -> list[dict[str, Any]]:
         row = reg.execute("SELECT kg_ids FROM corpora WHERE name = ?", (corpus_key,)).fetchone()
         if row is None:
             results.append(
-                {"corpus": corpus_key, "label": label, "books": 0, "nodes": 0, "edges": 0}
+                {
+                    "corpus": corpus_key,
+                    "label": label,
+                    "books": 0,
+                    "nodes": 0,
+                    "edges": 0,
+                }
             )
             continue
 
