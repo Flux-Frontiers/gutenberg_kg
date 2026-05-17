@@ -84,6 +84,7 @@ classifiers = [
 requires-python = ">=3.12,<3.14"
 dependencies = [
     "click>=8.1.0,<9",
+    "kgmodule-utils>=0.2.4",
 ]
 
 [project.optional-dependencies]

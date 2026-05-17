@@ -2287,10 +2287,9 @@ resolved_reference = "f6232ddd33525c52ad948a74108bb924e860a063"
 name = "kgmodule-utils"
 version = "0.2.4"
 description = "Shared types and snapshot infrastructure for the KGModule SDK"
-optional = true
+optional = false
 python-versions = "<3.14,>=3.12"
 groups = ["main"]
-markers = "extra == \"kgdeps\" or extra == \"all\" or extra == \"viz3d\""
 files = [
     {file = "kgmodule_utils-0.2.4-py3-none-any.whl", hash = "sha256:cf1b36c930709f8437403336a09173e810ec2627e59449a403f3b192f36a53dc"},
     {file = "kgmodule_utils-0.2.4.tar.gz", hash = "sha256:ec9fc77fec00335e7e271bd86da98f753e0598fdd8927c104e4be9be703b3a1b"},
@@ -7285,4 +7284,4 @@ viz3d = ["PyQt5", "markdown", "param", "pycode-kg", "pyvista", "pyvistaqt"]
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.12,<3.14"
-content-hash = "841d43b4cacf0964cb895b42be37c9b75b52c2f4c0ccb929a70297045959f5d4"
+content-hash = "58d7a7e2ac1cc9175898a98a31fb2b2b0a66024800aacd013ef48465b5567f05"
