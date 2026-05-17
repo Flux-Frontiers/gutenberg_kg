@@ -34,10 +34,14 @@ import time
 from dataclasses import dataclass, field
 from datetime import UTC, date, datetime
 from pathlib import Path
+from typing import TYPE_CHECKING
 
-from kg_rag.corpus_registry import CorpusRegistry
-from kg_rag.primitives import CorpusEntry, KGEntry, KGKind
-from kg_rag.registry import KGRegistry, default_registry_path
+# kg_rag is an optional kgdeps extra — import lazily inside functions so the
+# module can be imported in environments where it isn't installed (e.g. CI).
+if TYPE_CHECKING:
+    from kg_rag.corpus_registry import CorpusRegistry
+    from kg_rag.primitives import KGEntry
+    from kg_rag.registry import KGRegistry
 
 # ---------------------------------------------------------------------------
 # Constants
@@ -148,6 +152,8 @@ def ensure_corpus(
     dry_run: bool = False,
 ) -> None:
     """Create corpus if it doesn't exist (idempotent)."""
+    from kg_rag.primitives import CorpusEntry  # pylint: disable=import-outside-toplevel
+
     if corp_reg.get(name) is not None:
         return
     if dry_run:
@@ -210,6 +216,8 @@ def register_book(
     Register a book DocKG. Returns the KGEntry (new or existing).
     Returns None on dry-run or failure.
     """
+    from kg_rag.primitives import KGEntry, KGKind  # pylint: disable=import-outside-toplevel
+
     sqlite = book_dir / ".dockg" / "graph.sqlite"
     lancedb = book_dir / ".dockg" / "lancedb"
     entry = KGEntry(
@@ -608,6 +616,12 @@ def run_ingest(
         uses the default location returned by ``default_registry_path()``.
     :return: 0 on full success, 1 if any book failed.
     """
+    from kg_rag.corpus_registry import CorpusRegistry  # pylint: disable=import-outside-toplevel
+    from kg_rag.registry import (  # pylint: disable=import-outside-toplevel
+        KGRegistry,
+        default_registry_path,
+    )
+
     registry_path = Path(registry).resolve() if registry else default_registry_path()
 
     genre_summaries: list[GenreSummary] = []
@@ -706,6 +720,12 @@ def run_reregister(
     :param dry_run: Print actions without writing to the registry.
     :return: 0 on success.
     """
+    from kg_rag.corpus_registry import CorpusRegistry  # pylint: disable=import-outside-toplevel
+    from kg_rag.registry import (  # pylint: disable=import-outside-toplevel
+        KGRegistry,
+        default_registry_path,
+    )
+
     registry_path = Path(registry).resolve() if registry else default_registry_path()
     total = updated = skipped = 0
 
@@ -741,9 +761,9 @@ def run_reregister(
                 kg_name = f"gutenberg-{genre}-{slug}-doc"
                 total += 1
 
-                existing = kg_reg.get(kg_name)
                 from kg_rag.primitives import KGKind  # pylint: disable=import-outside-toplevel
 
+                existing = kg_reg.get(kg_name)
                 if existing is not None and existing.kind == KGKind.GUTENBERG:
                     print(f"  [{book_dir.name}] already gutenberg — ok")
                     continue
