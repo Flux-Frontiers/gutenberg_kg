@@ -10,3 +10,4 @@
 | Title | Genre |
 |-------|-------|
 | The Man Who Was Thursday (Chesterton) | english-literature |
+| The Man Who Was Thursday: A Nightmare | philosophy |

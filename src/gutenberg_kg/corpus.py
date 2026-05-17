@@ -22,22 +22,9 @@ from typing import Any
 
 from kg_utils.snapshots import SnapshotManager as _BaseSnapshotManager
 
-# Maps corpus slug → display label (order determines table row order).
-GENRE_LABELS: dict[str, str] = {
-    "gutenberg-english-literature": "English Literature",
-    "gutenberg-ancient-classical": "Ancient & Classical",
-    "gutenberg-philosophy": "Philosophy",
-    "gutenberg-russian-literature": "Russian Literature",
-    "gutenberg-american-literature": "American Literature",
-    "gutenberg-french-literature": "French Literature",
-    "gutenberg-science-fiction": "Science Fiction",
-    "gutenberg-world-literature": "World Literature",
-    "gutenberg-sacred-texts": "Sacred Texts",
-    "gutenberg-german-literature": "German Literature",
-    "gutenberg-spanish": "Spanish Literature",
-    "gutenberg-shakespeare": "Shakespeare",
-    "gutenberg-audel-electric": "Technical Reference (IA)",
-}
+# Genre display labels — derived from corpus/genres.json via genres.py.
+# Add new genres to genres.json; override display names in genres.json "labels".
+from gutenberg_kg.genres import GENRE_LABELS  # noqa: E402  pylint: disable=wrong-import-position
 
 # ---------------------------------------------------------------------------
 # Internal helpers

@@ -32,6 +32,18 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - **`diaries.txt` catalog** — D'Arblay volumes removed; format comments added
   documenting the `pepys` / `evelyn` / `boswell` identifiers.
 
+- **`GENRE_LABELS` derived from `genres.json`** — removed the hardcoded dict
+  from `corpus.py`; `genres.py` now builds `GENRE_LABELS` dynamically from
+  `ALL_GENRES` + an optional `"labels"` override key in `corpus/genres.json`.
+  Any genre added via `gutenkg genres add` automatically appears in
+  `gutenkg status` with no code changes.  Display-name overrides for
+  `ancient-classical`, `spanish`, and `audel-electric` moved into `genres.json`.
+
+- **Author index updated** — `corpus/authors/` rebuilt after diary corpus
+  additions; Boswell, Evelyn, and Pepys author pages added along with several
+  other new entries (Diogenes Laërtius, Hegel, Locke, Ruskin, Augustine,
+  Vātsyāyana, Westermarck, Dexter).
+
 ### Removed
 
 - **Madame D'Arblay corpus** (3 volumes) — removed from catalog and corpus
@@ -39,6 +51,10 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   texts use.  Can be re-added once a `DarblaParser` is implemented.
 
 ### Fixed
+
+- **`authors.py` `--refresh`** — fixed `ModuleNotFoundError` caused by a stale
+  reference to `scripts/download_gutenberg.py` (long-since removed).  Now
+  imports `gutenberg_kg.gutenberg` directly.
 
 ---
 

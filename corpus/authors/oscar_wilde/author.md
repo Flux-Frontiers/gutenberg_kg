@@ -10,3 +10,4 @@
 | Title | Genre |
 |-------|-------|
 | The Picture of Dorian Gray | english-literature |
+| The Picture of Dorian Gray | philosophy |

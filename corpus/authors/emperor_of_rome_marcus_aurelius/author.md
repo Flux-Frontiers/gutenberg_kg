@@ -10,5 +10,6 @@
 | Title | Genre |
 |-------|-------|
 | Meditations | ancient-classical |
+| Meditations | philosophy |
 | The Meditations of the Emperor Marcus Aurelius Antoninus | ancient-classical |
 | Thoughts of Marcus Aurelius Antoninus | ancient-classical |

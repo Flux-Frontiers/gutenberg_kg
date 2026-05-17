@@ -23,25 +23,28 @@
 | [Charlotte Perkins Gilman](charlotte_perkins_gilman/author.md) | 1860 | 1935 | 1 |
 | [Daniel Defoe](daniel_defoe/author.md) | — | 1731 | 1 |
 | [Dante Alighieri](dante_alighieri/author.md) | 1265 | 1321 | 3 |
+| [Diogenes Laertius](diogenes_laertius/author.md) | — | — | 1 |
 | [E. M. (Edward Morgan) Forster](e_m_edward_morgan_forster/author.md) | 1879 | 1970 | 1 |
 | [Edgar Allan Poe](edgar_allan_poe/author.md) | 1809 | 1849 | 2 |
 | [Edgar Rice Burroughs](edgar_rice_burroughs/author.md) | 1875 | 1950 | 2 |
 | [Edith Wharton](edith_wharton/author.md) | 1862 | 1937 | 2 |
+| [Edward Westermarck](edward_westermarck/author.md) | 1862 | 1939 | 1 |
 | [Elizabeth Cleghorn Gaskell](elizabeth_cleghorn_gaskell/author.md) | 1810 | 1865 | 2 |
 | [Emily Brontë](emily_brontë/author.md) | 1818 | 1848 | 1 |
-| [Emperor of Rome Marcus Aurelius](emperor_of_rome_marcus_aurelius/author.md) | 121 | 180 | 3 |
-| [Epictetus](epictetus/author.md) | 55 | 135 | 3 |
+| [Emperor of Rome Marcus Aurelius](emperor_of_rome_marcus_aurelius/author.md) | 121 | 180 | 4 |
+| [Epictetus](epictetus/author.md) | 55 | 135 | 4 |
 | [Franz Kafka](franz_kafka/author.md) | 1883 | 1924 | 2 |
 | [Frederick Douglass](frederick_douglass/author.md) | 1818 | 1895 | 1 |
-| [Friedrich Wilhelm Nietzsche](friedrich_wilhelm_nietzsche/author.md) | 1844 | 1900 | 3 |
+| [Friedrich Wilhelm Nietzsche](friedrich_wilhelm_nietzsche/author.md) | 1844 | 1900 | 6 |
 | [Fyodor Dostoyevsky](fyodor_dostoyevsky/author.md) | 1821 | 1881 | 4 |
-| [G. K. (Gilbert Keith) Chesterton](g_k_gilbert_keith_chesterton/author.md) | 1874 | 1936 | 1 |
+| [G. K. (Gilbert Keith) Chesterton](g_k_gilbert_keith_chesterton/author.md) | 1874 | 1936 | 2 |
+| [Georg Wilhelm Friedrich Hegel](georg_wilhelm_friedrich_hegel/author.md) | 1770 | 1831 | 1 |
 | [George Eliot](george_eliot/author.md) | 1819 | 1880 | 1 |
 | [Gustave Flaubert](gustave_flaubert/author.md) | 1821 | 1880 | 1 |
 | [H. G. (Herbert George) Wells](h_g_herbert_george_wells/author.md) | 1866 | 1946 | 4 |
 | [H. P. (Howard Phillips) Lovecraft](h_p_howard_phillips_lovecraft/author.md) | 1890 | 1937 | 4 |
 | [Harriet Beecher Stowe](harriet_beecher_stowe/author.md) | 1811 | 1896 | 1 |
-| [Henry David Thoreau](henry_david_thoreau/author.md) | 1817 | 1862 | 3 |
+| [Henry David Thoreau](henry_david_thoreau/author.md) | 1817 | 1862 | 4 |
 | [Henry James](henry_james/author.md) | 1843 | 1916 | 2 |
 | [Herman Melville](herman_melville/author.md) | 1819 | 1891 | 1 |
 | [Hermann Hesse](hermann_hesse/author.md) | 1877 | 1962 | 1 |
@@ -50,12 +53,16 @@
 | [Immanuel Kant](immanuel_kant/author.md) | 1724 | 1804 | 2 |
 | [Ivan Sergeevich Turgenev](ivan_sergeevich_turgenev/author.md) | 1818 | 1883 | 1 |
 | [Jack London](jack_london/author.md) | 1876 | 1916 | 2 |
+| [James Boswell](james_boswell/author.md) | 1740 | 1795 | 1 |
 | [James Legge](james_legge/author.md) | 1815 | 1897 | 1 |
 | [James Madison](james_madison/author.md) | 1757 | 1804 | 1 |
 | [Jane Austen](jane_austen/author.md) | 1775 | 1817 | 3 |
 | [Jean-Jacques Rousseau](jean_jacques_rousseau/author.md) | 1712 | 1778 | 1 |
 | [Johann Wolfgang von Goethe](johann_wolfgang_von_goethe/author.md) | 1749 | 1832 | 1 |
-| [John Stuart Mill](john_stuart_mill/author.md) | 1806 | 1873 | 2 |
+| [John Evelyn](john_evelyn/author.md) | 1620 | 1706 | 2 |
+| [John Locke](john_locke/author.md) | 1632 | 1704 | 1 |
+| [John Ruskin](john_ruskin/author.md) | 1819 | 1900 | 1 |
+| [John Stuart Mill](john_stuart_mill/author.md) | 1806 | 1873 | 3 |
 | [Jonathan Swift](jonathan_swift/author.md) | 1667 | 1745 | 2 |
 | [Joseph Conrad](joseph_conrad/author.md) | 1857 | 1924 | 1 |
 | [Jules Verne](jules_verne/author.md) | 1828 | 1905 | 5 |
@@ -73,16 +80,17 @@
 | [Niccolò Machiavelli](niccolò_machiavelli/author.md) | 1469 | 1527 | 1 |
 | [Nikolai Vasilevich Gogol](nikolai_vasilevich_gogol/author.md) | 1809 | 1852 | 1 |
 | [Noah Webster](noah_webster/author.md) | — | — | 1 |
-| [Oscar Wilde](oscar_wilde/author.md) | 1854 | 1900 | 1 |
+| [Oscar Wilde](oscar_wilde/author.md) | 1854 | 1900 | 2 |
 | [Ovid](ovid/author.md) | -43 | 17 | 1 |
-| [Plato](plato/author.md) | -428 | -348 | 6 |
-| [Plutarch](plutarch/author.md) | 46 | 119 | 1 |
+| [Plato](plato/author.md) | -428 | -348 | 8 |
+| [Plutarch](plutarch/author.md) | 46 | 119 | 2 |
 | [Rabindranath Tagore](rabindranath_tagore/author.md) | 1861 | 1941 | 1 |
 | [Ralph Waldo Emerson](ralph_waldo_emerson/author.md) | 1803 | 1882 | 1 |
 | [René Descartes](rené_descartes/author.md) | 1596 | 1650 | 1 |
 | [Robert Herrick](robert_herrick/author.md) | 1868 | 1938 | 1 |
 | [Robert Louis Stevenson](robert_louis_stevenson/author.md) | 1850 | 1894 | 2 |
 | [Rudyard Kipling](rudyard_kipling/author.md) | 1865 | 1936 | 2 |
+| [Samuel Pepys](samuel_pepys/author.md) | 1633 | 1703 | 1 |
 | [Samuel White, Sir Baker](samuel_white_sir_baker/author.md) | 1821 | 1893 | 1 |
 | [Sophocles](sophocles/author.md) | -496 | -406 | 1 |
 | [Stephen Crane](stephen_crane/author.md) | 1871 | 1900 | 1 |
@@ -90,8 +98,10 @@
 | [Thomas Hobbes](thomas_hobbes/author.md) | 1588 | 1679 | 1 |
 | [Thomas Paine](thomas_paine/author.md) | 1737 | 1809 | 1 |
 | [Thucydides](thucydides/author.md) | -460 | -395 | 1 |
+| [Timothy Dexter](timothy_dexter/author.md) | 1747 | 1806 | 1 |
 | [Titus Lucretius Carus](titus_lucretius_carus/author.md) | -95 | -55 | 1 |
 | [Upton Sinclair](upton_sinclair/author.md) | 1878 | 1968 | 1 |
+| [Vatsyayana](vatsyayana/author.md) | — | — | 1 |
 | [Victor Hugo](victor_hugo/author.md) | 1802 | 1885 | 2 |
 | [Virgil](virgil/author.md) | -70 | -19 | 1 |
 | [Voltaire](voltaire/author.md) | 1694 | 1778 | 1 |
@@ -104,4 +114,5 @@
 | [William Makepeace Thackeray](william_makepeace_thackeray/author.md) | 1811 | 1863 | 1 |
 | [William Shakespeare](william_shakespeare/author.md) | 1564 | 1616 | 5 |
 | [active 6th century B.C. Sunzi](active_6th_century_bc_sunzi/author.md) | — | — | 1 |
+| [of Hippo, Saint Augustine](of_hippo_saint_augustine/author.md) | 354 | 430 | 2 |
 | [Émile Zola](émile_zola/author.md) | 1840 | 1902 | 1 |

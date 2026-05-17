@@ -80,8 +80,21 @@ IA_GENRES: list[str] = _registry.get("ia", list(_DEFAULTS["ia"]))
 ALL_GENRES: list[str] = GUTENBERG_GENRES + IA_GENRES
 
 # Maps genre slug → pipeline name for genres that need non-standard ingest.
-# Populated from the optional "pipelines" key in corpus/genres.json.
 PIPELINE_GENRES: dict[str, str] = _registry.get("pipelines", {})
+
+# Maps corpus slug → display label for the status table.
+# Auto-derived from ALL_GENRES; overridden by the optional "labels" key in genres.json.
+_label_overrides: dict[str, str] = _registry.get("labels", {})
+
+
+def _slug_to_label(slug: str) -> str:
+    return _label_overrides.get(slug, slug.replace("-", " ").title())
+
+
+# Keyed as "gutenberg-<slug>" to match corpus registry naming.
+GENRE_LABELS: dict[str, str] = {
+    f"gutenberg-{slug}": _slug_to_label(slug) for slug in GUTENBERG_GENRES
+} | {f"gutenberg-{slug}": _slug_to_label(slug) for slug in IA_GENRES}
 
 
 def get_pipeline(genre: str) -> str | None:

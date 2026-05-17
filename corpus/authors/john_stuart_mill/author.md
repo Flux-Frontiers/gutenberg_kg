@@ -9,5 +9,6 @@
 
 | Title | Genre |
 |-------|-------|
+| On Liberty | philosophy |
 | On Liberty (Mill) | philosophy |
 | Utilitarianism (Mill) | philosophy |

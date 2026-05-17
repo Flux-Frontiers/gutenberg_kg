@@ -7,7 +7,6 @@ Entry point for callers: :func:`build`. The CLI wrapper lives at
 from __future__ import annotations
 
 import re
-import sys
 import time
 from collections import defaultdict
 from pathlib import Path
@@ -23,11 +22,8 @@ AUTHORS_DIR = CORPUS_ROOT / "authors"
 
 
 def _dg():
-    """Lazy-import ``download_gutenberg`` from ``scripts/`` for RDF fetching."""
-    scripts = str(REPO_ROOT / "scripts")
-    if scripts not in sys.path:
-        sys.path.insert(0, scripts)
-    import download_gutenberg as _mod  # noqa: PLC0415
+    """Lazy-import gutenberg module for RDF fetching (used by --refresh)."""
+    import gutenberg_kg.gutenberg as _mod  # noqa: PLC0415
 
     return _mod
 
