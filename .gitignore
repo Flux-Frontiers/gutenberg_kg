@@ -259,3 +259,9 @@ assets/code_kg_arch_*.png
 # Generated visualization exports
 *_forest_3d.html
 *.pyvista.html
+
+# Diary pipeline generated artifacts (all reproducible via gutenkg ingest)
+entry_*.md
+.diary_source.psv
+.diary_source_chunks.pkl
+**/.diarykg/
