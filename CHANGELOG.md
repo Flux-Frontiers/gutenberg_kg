@@ -10,6 +10,18 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added
 
+- **42 corpus texts across 5 new genres** — biography, drama, letters,
+  natural-history, and travel. Each title is stored as a Markdown-converted
+  `.md` file plus a `reference.md` metadata stub.
+
+  | Genre | Count | Notable titles |
+  |---|---|---|
+  | `biography` | 11 | Franklin, Douglass, Rousseau, Augustine, Grant Vol. 1, Henry Adams, Boswell's Johnson |
+  | `drama` | 11 | Ibsen (3), Marlowe (2), Shaw (2), Chekhov (2), Wilde, Webster |
+  | `letters` | 7 | Byron, Keats, Pliny, Chesterfield, Voltaire, Montagu |
+  | `natural-history` | 7 | Darwin × 3 (Origin, Descent, Beagle), Huxley, Faraday, Wallace |
+  | `travel` | 6 | Twain, Marco Polo, Isabella Bird, Mungo Park, Dana, Melville |
+
 ### Changed
 
 ### Removed
