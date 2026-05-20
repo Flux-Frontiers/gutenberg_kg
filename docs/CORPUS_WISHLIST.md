@@ -4,6 +4,8 @@ Checklist of high-priority additions. Work in cross-genre batches — downloads 
 
 Format: `- [ ] Title — Author (Gutenberg ID #NNNNN | IA)` — check the box when downloaded + ingested.
 
+> **Internet Archive:** The entire IA corpus is not yet represented here. The `gutenkg ia` command handles IA downloads separately from Gutenberg. IA is the right source for: technical manuals (Audel, trade catalogues), out-of-print scientific monographs, periodicals, and government documents not on Gutenberg. An IA-focused wishlist section should be built out as a separate planning effort — see `gutenkg ia survey` for discovery.
+
 ---
 
 ## Sacred Texts *(verse-type — drives doc_kg verse heading work)*
@@ -159,6 +161,99 @@ Format: `- [ ] Title — Author (Gutenberg ID #NNNNN | IA)` — check the box wh
 - [ ] Audels Engineers and Mechanics Guide (IA: multiple volumes)
 
 > **Curation note:** IA plain-text dumps have OCR garbage before the first real chapter heading and scattered artifact lines throughout. Strategy: strip everything before the first `CHAPTER` / `PART` match, then run a noise-filter pass on short garbled lines. Candidate for a dedicated `--source ia --curate` preprocessing flag in the download pipeline.
+
+---
+
+## Letters & Correspondence *(new genre — `gutenkg genres add letters`)*
+
+Epistolary works as a distinct genre from diaries; letter collections reveal
+personality and social context in ways essays cannot.  Wide date range: Pliny
+(1st c. AD) → Keats (1820).
+
+- [ ] Letters on England — Voltaire (#2586)
+- [ ] Letters to His Son — Lord Chesterfield (#3352)
+- [ ] Letters — Pliny the Younger (#2811)
+- [ ] Letters of John Keats to His Family and Friends (#35698)
+- [ ] Turkish Embassy Letters — Lady Mary Wortley Montagu (#16287)
+- [ ] Letters of Charles Lamb (#1633)
+- [ ] Letters and Journals of Lord Byron (#19190)
+
+---
+
+## Biography & Autobiography *(new genre — `gutenkg genres add biography`)*
+
+First-person life narratives and major literary biographies; overlaps with
+diaries but distinct in retrospective authorial voice.
+
+- [ ] Autobiography — Benjamin Franklin (#148)
+- [ ] Autobiography of John Stuart Mill (#7223)
+- [ ] Autobiography — Benvenuto Cellini (#4028)
+- [ ] Life of Samuel Johnson — James Boswell (#1564)
+- [ ] Personal Memoirs — Ulysses S. Grant (#4367)
+- [ ] The Education of Henry Adams (#2044)
+- [ ] Confessions — Jean-Jacques Rousseau (#3913)
+- [ ] Confessions — Saint Augustine (#3296) *(also fits Sacred Texts)*
+- [ ] Narrative of the Life of Frederick Douglass (#23) *(also in american-literature)*
+- [ ] Up From Slavery — Booker T. Washington (#2376) *(also in american-literature)*
+- [ ] Incidents in the Life of a Slave Girl — Harriet Jacobs (#11030)
+
+---
+
+## Natural History & Science *(new genre — `gutenkg genres add natural-history`)*
+
+Pre-modern science writing; Darwin's prose is literary, Faraday's lectures are
+canonical, Wallace rivals Darwin.  All pre-1928 on Gutenberg.
+
+- [ ] On the Origin of Species — Charles Darwin (#1228)
+- [ ] The Descent of Man — Charles Darwin (#2300)
+- [ ] The Voyage of the Beagle — Charles Darwin (#944)
+- [ ] Autobiography — Charles Darwin (#2010)
+- [ ] The Malay Archipelago — Alfred Russel Wallace (#2530)
+- [ ] Man's Place in Nature — Thomas H. Huxley (#2931)
+- [ ] The Chemical History of a Candle — Michael Faraday (#14474)
+- [ ] Principles of Geology (abridged) — Charles Lyell — *verify ID*
+- [ ] Kosmos Vol. I — Alexander von Humboldt — *verify ID / IA*
+
+---
+
+## Travel Writing *(new genre — `gutenkg genres add travel`)*
+
+Narrative journeys that shaped how the world was understood; blends with
+Natural History (Darwin, Wallace) but includes purely geographic/cultural works.
+
+- [ ] The Travels of Marco Polo (#12410)
+- [ ] A Lady's Life in the Rocky Mountains — Isabella Bird (#2172)
+- [ ] Travels in the Interior Districts of Africa — Mungo Park (#4191)
+- [ ] Two Years Before the Mast — Richard Henry Dana Jr. (#507)
+- [ ] The Innocents Abroad — Mark Twain (#3176)
+- [ ] Typee — Herman Melville (#1900)
+- [ ] Voyages of Discovery — Captain James Cook — *verify best Gutenberg edition*
+
+---
+
+## Drama *(non-Shakespeare; new genre — `gutenkg genres add drama`)*
+
+Shakespeare has its own genre; this covers the rest of the Western dramatic
+canon: Greek tragedy (many already in Ancient & Classical), Jacobean, and
+modern European.
+
+### Already in Ancient & Classical (no re-ingest needed):
+- [x] Medea — Euripides (#35)
+- [x] Oresteia — Aeschylus (#8714)
+- [x] The Clouds / The Birds — Aristophanes
+
+### To add under `drama`:
+- [ ] Doctor Faustus — Christopher Marlowe (#779)
+- [ ] Tamburlaine the Great — Christopher Marlowe (#1094)
+- [ ] The Duchess of Malfi — John Webster (#2232)
+- [ ] A Doll's House — Henrik Ibsen (#2542)
+- [ ] Hedda Gabler — Henrik Ibsen (#4093)
+- [ ] Pygmalion — George Bernard Shaw (#3825)
+- [ ] Major Barbara — George Bernard Shaw (#3175)
+- [ ] The Cherry Orchard — Anton Chekhov (#7984)
+- [ ] The Seagull — Anton Chekhov (#7986)
+- [ ] The Importance of Being Earnest — Oscar Wilde (#844)
+- [ ] The Playboy of the Western World — J.M. Synge (#5765) *(verify ID)*
 
 ---
 

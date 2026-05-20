@@ -1,0 +1,30 @@
+# Drama (non-Shakespeare) — curated Gutenberg catalog
+# Format: <gutenberg_id>[TAB<title>]
+# Download: gutenkg download catalog scripts/catalogs/drama.txt --genre drama
+# Pipeline: standard (dockg)
+#
+# The Western dramatic canon outside Shakespeare (which has its own genre).
+# Greek tragedy is partially covered in ancient-classical; this adds
+# Jacobean, 18th-century, and modern European drama.
+#
+# Note: Aristophanes and Euripides are already in ancient-classical;
+# listed here as reference only — do not re-ingest.
+# Already in ancient-classical (skip): Medea (#35), Oresteia (#8714),
+#   The Clouds (#2562), The Birds (#3013)
+
+# ── Jacobean & Elizabethan ────────────────────────────────────────────────────
+779	Doctor Faustus — Christopher Marlowe
+1094	Tamburlaine the Great — Christopher Marlowe
+2232	The Duchess of Malfi — John Webster
+
+# ── 19th Century European ─────────────────────────────────────────────────────
+2542	A Doll's House — Henrik Ibsen
+4093	Hedda Gabler — Henrik Ibsen
+2046	The Master Builder — Henrik Ibsen
+
+# ── Late 19th / Early 20th Century ───────────────────────────────────────────
+3825	Pygmalion — George Bernard Shaw
+3175	Major Barbara — George Bernard Shaw
+844	The Importance of Being Earnest — Oscar Wilde
+7984	The Cherry Orchard — Anton Chekhov
+7986	The Seagull — Anton Chekhov

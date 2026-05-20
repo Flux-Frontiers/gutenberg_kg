@@ -1,0 +1,21 @@
+# Natural History & Science — curated Gutenberg catalog
+# Format: <gutenberg_id>[TAB<title>]
+# Download: gutenkg download catalog scripts/catalogs/natural-history.txt --genre natural-history
+# Pipeline: standard (dockg)
+#
+# Pre-modern science writing where the prose is genuinely literary.
+# Darwin's three major works + autobiography; Wallace as Darwin's parallel;
+# Huxley and Faraday as the great Victorian science communicators.
+
+# ── Charles Darwin ────────────────────────────────────────────────────────────
+1228	On the Origin of Species — Charles Darwin
+2300	The Descent of Man — Charles Darwin
+944	The Voyage of the Beagle — Charles Darwin
+2010	Autobiography of Charles Darwin
+
+# ── Alfred Russel Wallace ─────────────────────────────────────────────────────
+2530	The Malay Archipelago — Alfred Russel Wallace
+
+# ── Victorian Science Communicators ───────────────────────────────────────────
+2931	Man's Place in Nature — Thomas H. Huxley
+14474	The Chemical History of a Candle — Michael Faraday

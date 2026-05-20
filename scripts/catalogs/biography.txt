@@ -1,0 +1,30 @@
+# Biography & Autobiography — curated Gutenberg catalog
+# Format: <gutenberg_id>[TAB<title>]
+# Download: gutenkg download catalog scripts/catalogs/biography.txt --genre biography
+# Pipeline: standard (dockg)
+#
+# First-person life narratives and major literary biographies.
+# Retrospective authorial voice distinguishes these from diaries.
+#
+# Note: Douglass (#23) and Washington (#2376) are also in american-literature;
+# ingesting under biography adds them to the biography KG as well.
+
+# ── Classical ────────────────────────────────────────────────────────────────
+# Rousseau and Augustine are confessional autobiography
+3913	Confessions — Jean-Jacques Rousseau
+3296	Confessions — Saint Augustine
+
+# ── Renaissance ──────────────────────────────────────────────────────────────
+4028	Autobiography of Benvenuto Cellini
+
+# ── 18th–19th Century ────────────────────────────────────────────────────────
+148	Autobiography of Benjamin Franklin
+1564	The Life of Samuel Johnson — James Boswell
+7223	Autobiography of John Stuart Mill
+
+# ── American ─────────────────────────────────────────────────────────────────
+23	Narrative of the Life of Frederick Douglass
+11030	Incidents in the Life of a Slave Girl — Harriet Jacobs
+2376	Up From Slavery — Booker T. Washington
+4367	Personal Memoirs of Ulysses S. Grant — Volume 1
+2044	The Education of Henry Adams
