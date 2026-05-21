@@ -248,13 +248,13 @@ def test_build_dockg_passes_embedder_to_dockg(tmp_path: Path, monkeypatch):
             received["embedder"] = embedder
             self.db_path = path / ".dockg" / "graph.sqlite"
 
-        def build_graph(self, wipe=False):
+        def build_graph(self, wipe=False, quiet=False):
             pass
 
-        def build_embeddings(self, out=None, n_workers=None):
+        def build_embeddings(self, out=None, n_workers=None, quiet=False):
             return out
 
-        def build_index_from_cache(self, cache_path, wipe=False):
+        def build_index_from_cache(self, cache_path, wipe=False, quiet=False):
             pass
 
         def close(self):
@@ -280,13 +280,13 @@ def test_build_dockg_none_embedder_accepted(tmp_path: Path, monkeypatch):
             received["embedder"] = embedder
             self.db_path = path / ".dockg" / "graph.sqlite"
 
-        def build_graph(self, wipe=False):
+        def build_graph(self, wipe=False, quiet=False):
             pass
 
-        def build_embeddings(self, out=None, n_workers=None):
+        def build_embeddings(self, out=None, n_workers=None, quiet=False):
             return out
 
-        def build_index_from_cache(self, cache_path, wipe=False):
+        def build_index_from_cache(self, cache_path, wipe=False, quiet=False):
             pass
 
         def close(self):

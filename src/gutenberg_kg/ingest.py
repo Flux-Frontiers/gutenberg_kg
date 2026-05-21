@@ -24,17 +24,36 @@ Examples:
 
 from __future__ import annotations
 
+import os
 import platform
 import re
+import select
 import shutil
 import socket
 import subprocess
 import sys
+import threading
 import time
+from collections import deque
 from dataclasses import dataclass, field
 from datetime import UTC, date, datetime
 from pathlib import Path
 from typing import TYPE_CHECKING
+
+from rich.console import Console as RichConsole
+from rich.layout import Layout
+from rich.live import Live
+from rich.panel import Panel
+from rich.progress import (
+    BarColumn,
+    MofNCompleteColumn,
+    Progress,
+    SpinnerColumn,
+    TextColumn,
+    TimeElapsedColumn,
+    TimeRemainingColumn,
+)
+from rich.text import Text
 
 # kg_rag is an optional kgdeps extra — import lazily inside functions so the
 # module can be imported in environments where it isn't installed (e.g. CI).
@@ -66,6 +85,7 @@ class IngestOptions:
     force_register: bool = False
     dry_run: bool = False
     push: bool = False
+    quiet: bool = False
 
 
 @dataclass
@@ -181,6 +201,7 @@ def build_dockg(
     book_dir: Path,
     dry_run: bool = False,
     embedder=None,
+    quiet: bool = False,
 ) -> bool:
     """Build DocKG for book_dir in-process, reusing a shared embedder if provided.
 
@@ -194,10 +215,10 @@ def build_dockg(
         from doc_kg.kg import DocKG  # pylint: disable=import-outside-toplevel
 
         kg = DocKG(book_dir, embedder=embedder)
-        kg.build_graph(wipe=True)
+        kg.build_graph(wipe=True, quiet=quiet)
         cache_path = kg.db_path.parent / "embeddings.json"
-        kg.build_embeddings(out=cache_path, n_workers=4)
-        kg.build_index_from_cache(cache_path, wipe=True)
+        kg.build_embeddings(out=cache_path, n_workers=4, quiet=quiet)
+        kg.build_index_from_cache(cache_path, wipe=True, quiet=quiet)
         kg.close()
         cache_path.unlink(missing_ok=True)
         return True
@@ -307,6 +328,115 @@ def _sqlite_counts(book_dir: Path) -> tuple[int, int]:
 
 
 # ---------------------------------------------------------------------------
+# Two-pane Rich display — OS-level stdout capture + progress layout
+# ---------------------------------------------------------------------------
+
+_ANSI_RE = re.compile(r"\x1b(?:\[[0-9;?]*[A-Za-z]|\([ABCDHfsu]|[=>)(])|[\r]")
+
+
+class _LogCapture:
+    """Redirect fd 1 (stdout) to a pipe and keep the last *maxlines* plain-text lines.
+
+    Uses ``os.dup2`` so ALL stdout writes are captured — including Rich Console()
+    instances in doc_kg that hold a reference to the original ``sys.stdout`` file
+    object.  The Live display must be created with ``Console(stderr=True)`` to
+    avoid being captured itself.
+    """
+
+    def __init__(self, maxlines: int = 24) -> None:
+        self._lines: deque[str] = deque(maxlen=maxlines)
+        self._lock = threading.Lock()
+        self._partial = ""
+        self._pipe_r = self._pipe_w = -1
+        self._orig_fd = -1
+        self._orig_stdout = sys.stdout
+        self._thread: threading.Thread | None = None
+
+    def start(self) -> None:
+        self._pipe_r, self._pipe_w = os.pipe()
+        self._orig_fd = os.dup(1)
+        os.dup2(self._pipe_w, 1)
+        # Replace Python-level sys.stdout with a line-buffered wrapper on the pipe
+        self._orig_stdout = sys.stdout
+        sys.stdout = open(1, "w", closefd=False, buffering=1)  # noqa: WPS515
+        self._thread = threading.Thread(target=self._read_loop, daemon=True)
+        self._thread.start()
+
+    def stop(self) -> None:
+        if self._orig_fd == -1:
+            return
+        sys.stdout.flush()
+        sys.stdout = self._orig_stdout
+        os.dup2(self._orig_fd, 1)  # restore real stdout
+        os.close(self._orig_fd)
+        os.close(self._pipe_w)  # EOF → reader thread exits
+        if self._thread:
+            self._thread.join(timeout=2.0)
+        if self._pipe_r != -1:
+            os.close(self._pipe_r)
+        self._orig_fd = self._pipe_r = self._pipe_w = -1
+
+    def _read_loop(self) -> None:
+        try:
+            while True:
+                ready, _, _ = select.select([self._pipe_r], [], [], 0.05)
+                if ready:
+                    chunk = os.read(self._pipe_r, 8192)
+                    if not chunk:
+                        break
+                    text = self._partial + _ANSI_RE.sub("", chunk.decode("utf-8", errors="replace"))
+                    *lines, self._partial = text.split("\n")
+                    with self._lock:
+                        for line in lines:
+                            stripped = line.rstrip()
+                            if stripped:
+                                self._lines.append(stripped)
+        except Exception:  # pylint: disable=broad-exception-caught
+            pass
+
+    def render(self) -> str:
+        with self._lock:
+            return "\n".join(self._lines)
+
+
+class _LiveLog:
+    """Rich renderable that pulls the latest captured lines on every render cycle."""
+
+    def __init__(self, capture: _LogCapture, title: str = "Build output") -> None:
+        self._cap = capture
+        self._title = title
+
+    def __rich__(self) -> Panel:
+        return Panel(
+            Text(self._cap.render(), no_wrap=True, overflow="fold"),
+            title=self._title,
+            border_style="dim",
+        )
+
+
+def _make_progress() -> Progress:
+    return Progress(
+        SpinnerColumn(style="bold yellow"),
+        TextColumn("[bold yellow]{task.description}", markup=True),
+        BarColumn(bar_width=None, style="yellow", complete_style="bold yellow"),
+        MofNCompleteColumn(),
+        TimeElapsedColumn(),
+        TimeRemainingColumn(),
+        expand=True,
+        console=RichConsole(stderr=True),
+    )
+
+
+def _build_layout(progress: Progress, log: _LogCapture) -> Layout:
+    layout = Layout()
+    layout.split_column(
+        Layout(progress, name="top", size=3),
+        Layout(_LiveLog(log), name="bottom"),
+    )
+    return layout
+
+
+# ---------------------------------------------------------------------------
 # Core per-book logic
 # ---------------------------------------------------------------------------
 
@@ -352,7 +482,7 @@ def process_book(
                 print("    [dry] rm -rf .dockg")
         label = "rebuilding" if already_built else "building"
         print(f"    [.] {label} DocKG...")
-        if not build_dockg(book_dir, dry_run=opts.dry_run, embedder=embedder):
+        if not build_dockg(book_dir, dry_run=opts.dry_run, embedder=embedder, quiet=opts.quiet):
             elapsed = time.perf_counter() - t0
             return BookResult(name=book_name, genre=genre, status="failed", elapsed=elapsed)
         status = "built"
@@ -413,11 +543,11 @@ def print_summary(
     total_edges = sum(g.edges for g in genre_summaries)
 
     if opts.dry_run:
-        status_icon, status_text = "⚪", "DRY RUN — no changes made"
+        status_icon, status_text = "[~]", "DRY RUN — no changes made"
     elif total_failed == 0:
-        status_icon, status_text = "✅", "SUCCESS — all books ingested"
+        status_icon, status_text = "[ok]", "SUCCESS — all books ingested"
     else:
-        status_icon, status_text = "⚠️ ", f"PARTIAL — {total_failed} book(s) failed"
+        status_icon, status_text = "[!]", f"PARTIAL — {total_failed} book(s) failed"
 
     flags = (
         " ".join(
@@ -624,74 +754,100 @@ def run_ingest(
 
     registry_path = Path(registry).resolve() if registry else default_registry_path()
 
+    # Pre-count total books so the progress bar has an accurate total.
+    def _book_dirs(genre: str) -> list[Path]:
+        d = CORPUS_ROOT / genre
+        if not d.is_dir():
+            return []
+        return sorted(p for p in d.iterdir() if p.is_dir() and not p.name.startswith("."))
+
+    total_books = sum(len(_book_dirs(g)) for g in genres)
+
     genre_summaries: list[GenreSummary] = []
     wall_start = datetime.now(UTC)
     wall_t0 = time.perf_counter()
     embed_model_name: str = ""
 
-    with (
-        KGRegistry(db_path=registry_path) as kg_reg,
-        CorpusRegistry(db_path=registry_path) as corp_reg,
-    ):
-        print("--- Ensuring corpora ---")
-        for genre in genres:
+    log = _LogCapture(maxlines=24)
+    progress = _make_progress()
+    layout = _build_layout(progress, log)
+    stderr_console = RichConsole(stderr=True)
+    live = Live(layout, console=stderr_console, refresh_per_second=4)
+
+    log.start()
+    live.start()
+    try:
+        task = progress.add_task("starting…", total=total_books)
+
+        with (
+            KGRegistry(db_path=registry_path) as kg_reg,
+            CorpusRegistry(db_path=registry_path) as corp_reg,
+        ):
+            print("--- Ensuring corpora ---")
+            for genre in genres:
+                ensure_corpus(
+                    corp_reg,
+                    f"gutenberg-{genre}",
+                    description=f"Project Gutenberg — {genre}",
+                    dry_run=opts.dry_run,
+                )
             ensure_corpus(
                 corp_reg,
-                f"gutenberg-{genre}",
-                description=f"Project Gutenberg — {genre}",
+                TOP_CORPUS,
+                description="Project Gutenberg — complete library",
                 dry_run=opts.dry_run,
             )
-        ensure_corpus(
-            corp_reg,
-            TOP_CORPUS,
-            description="Project Gutenberg — complete library",
-            dry_run=opts.dry_run,
-        )
-        print()
-
-        for genre in genres:
-            genre_dir = CORPUS_ROOT / genre
-            if not genre_dir.is_dir():
-                print(f"[!] Genre directory not found: {genre_dir} — skipping\n")
-                continue
-
-            book_dirs = sorted(
-                p for p in genre_dir.iterdir() if p.is_dir() and not p.name.startswith(".")
-            )
-            if not book_dirs:
-                print(f"[!] No book directories in {genre_dir} — skipping\n")
-                continue
-
-            print(f"=== {genre} ({len(book_dirs)} books) ===")
-            genre_summary = GenreSummary(genre=genre)
-            genre_t0 = time.perf_counter()
-
-            from doc_kg.index import (
-                SentenceTransformerEmbedder,  # type: ignore[import-untyped]  # pylint: disable=import-outside-toplevel
-            )
-
-            shared_embedder = SentenceTransformerEmbedder()
-            if not embed_model_name:
-                embed_model_name = shared_embedder.model_name
-            print(f"  [embedder] {shared_embedder!r}")
-
-            for book_dir in book_dirs:
-                result = process_book(
-                    book_dir=book_dir,
-                    genre=genre,
-                    kg_reg=kg_reg,
-                    corp_reg=corp_reg,
-                    opts=opts,
-                    embedder=shared_embedder,
-                )
-                genre_summary.results.append(result)
-            genre_summary.wall_elapsed = time.perf_counter() - genre_t0
-
-            genre_summaries.append(genre_summary)
-
-            if opts.push:
-                git_commit_push_genre(genre_dir, genre, dry_run=opts.dry_run)
             print()
+
+            for genre in genres:
+                genre_dir = CORPUS_ROOT / genre
+                book_dirs = _book_dirs(genre)
+                if not genre_dir.is_dir():
+                    print(f"[!] Genre directory not found: {genre_dir} — skipping\n")
+                    continue
+                if not book_dirs:
+                    print(f"[!] No book directories in {genre_dir} — skipping\n")
+                    continue
+
+                print(f"=== {genre} ({len(book_dirs)} books) ===")
+                genre_summary = GenreSummary(genre=genre)
+                genre_t0 = time.perf_counter()
+
+                from doc_kg.index import (
+                    SentenceTransformerEmbedder,  # type: ignore[import-untyped]  # pylint: disable=import-outside-toplevel
+                )
+
+                shared_embedder = SentenceTransformerEmbedder()
+                if not embed_model_name:
+                    embed_model_name = shared_embedder.model_name
+                print(f"  [embedder] {shared_embedder!r}")
+
+                for book_dir in book_dirs:
+                    progress.update(
+                        task,
+                        description=f"[bold]{genre}[/bold] › {book_dir.name[:45]}",
+                    )
+                    result = process_book(
+                        book_dir=book_dir,
+                        genre=genre,
+                        kg_reg=kg_reg,
+                        corp_reg=corp_reg,
+                        opts=opts,
+                        embedder=shared_embedder,
+                    )
+                    genre_summary.results.append(result)
+                    progress.advance(task)
+
+                genre_summary.wall_elapsed = time.perf_counter() - genre_t0
+                genre_summaries.append(genre_summary)
+
+                if opts.push:
+                    git_commit_push_genre(genre_dir, genre, dry_run=opts.dry_run)
+                print()
+
+    finally:
+        live.stop()
+        log.stop()
 
     wall_elapsed = time.perf_counter() - wall_t0
     print_summary(genre_summaries, opts, registry_path, wall_start, wall_elapsed, embed_model_name)

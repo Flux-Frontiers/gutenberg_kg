@@ -22,7 +22,22 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   | `natural-history` | 7 | Darwin × 3 (Origin, Descent, Beagle), Huxley, Faraday, Wallace |
   | `travel` | 6 | Twain, Marco Polo, Isabella Bird, Mungo Park, Dana, Melville |
 
+- **Two-pane Rich display for `gutenkg ingest`** — progress bar (top) and live
+  scrolling build log (bottom) replace flat terminal output during corpus builds.
+  Uses OS-level `os.dup2` stdout redirect so all output — including Rich `Console()`
+  instances inside doc_kg — is captured into the log panel. The progress bar uses a
+  yellow colour scheme for accessibility. Refreshes at 4 Hz.
+
+- **`--quiet` flag for `gutenkg ingest`** — suppresses per-book DocKG build output
+  (parsing, embedding, and indexing progress bars) while keeping the two-pane overall
+  display. Wired through `IngestOptions`, `build_dockg()`, and all three `DocKG` build
+  phases (`build_graph`, `build_embeddings`, `build_index_from_cache`).
+
 ### Changed
+
+- **`gutenkg ingest` status icons** — replaced double-width Unicode emoji (`✅`, `⚪`,
+  `⚠️`) in the job summary box with ASCII tokens (`[ok]`, `[~]`, `[!]`) to prevent
+  column misalignment in fixed-width terminal output.
 
 ### Removed
 

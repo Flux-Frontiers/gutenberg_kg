@@ -44,7 +44,13 @@ from gutenberg_kg.cli.options import ALL_GENRES
     metavar="PATH",
     help="Override the KGRAG registry path.",
 )
-def ingest(genre, force_build, force_register, push, dry_run, registry):
+@click.option(
+    "--quiet",
+    is_flag=True,
+    default=False,
+    help="Suppress per-book DocKG build output.",
+)
+def ingest(genre, force_build, force_register, push, dry_run, registry, quiet):
     """Build DocKG indices, register with KGRAG, and optionally push to git.
 
     :param genre: Tuple of genres to process (empty = all genres).
@@ -53,6 +59,7 @@ def ingest(genre, force_build, force_register, push, dry_run, registry):
     :param push: Push to git after each genre completes.
     :param dry_run: Print what would be done without executing.
     :param registry: Override the KGRAG registry path.
+    :param quiet: Suppress per-book DocKG build output.
     """
     genres = list(genre) if genre else ALL_GENRES
     opts = ig.IngestOptions(
@@ -60,6 +67,7 @@ def ingest(genre, force_build, force_register, push, dry_run, registry):
         force_register=force_register,
         dry_run=dry_run,
         push=push,
+        quiet=quiet,
     )
     if opts.dry_run:
         click.echo("[DRY RUN — no changes will be made]\n")
