@@ -2,8 +2,8 @@
 
 ## Source
 
-- **Project Gutenberg ID**: 364
-- **URL**: https://www.gutenberg.org/ebooks/364
+- **Project Gutenberg ID**: 64
+- **URL**: https://www.gutenberg.org/ebooks/64
 - **Rights**: Public domain in the USA.
 
 ## Author
@@ -14,7 +14,7 @@
 - **Wikipedia**: https://en.wikipedia.org/wiki/Edgar_Rice_Burroughs
 - **Gutenberg Agent ID**: 48
 
-- **Gutenberg Published**: 1995-11-01
+- **Gutenberg Published**: 1993-05-01
 
 ## Language
 
@@ -22,18 +22,18 @@
 
 ## Subjects
 
-- Fantasy fiction
-- Impostors and imposture -- Fiction
-- Adventure stories
-- Kings and rulers -- Fiction
-- Mistaken identity -- Fiction
+- Science fiction
+- Mars (Planet) -- Fiction
+- Life on other planets -- Fiction
+- Carter, John (Fictitious character) -- Fiction
+- Dejah Thoris (Fictitious character) -- Fiction
 - PS
 - Text
 
 ## Summary
 
-"The Mad King" by Edgar Rice Burroughs is a Ruritanian romance originally published in 1914-1915. Young American Barney Custer travels to the fictional European kingdom of Lutha, unaware he's the exact double of the newly escaped King Leopold. Mistaken for royalty, Barney becomes entangled in royal intrigue, falls for the king's promised bride Princess Emma, and must impersonate the monarch to save the throne from a scheming prince. Set against the outbreak of World War I, this adventure follows Barney through diplomatic danger, narrow escapes, and battles that will determine Lutha's fate. (This is an automatically generated summary.)
+"The Gods of Mars" by Edgar Rice Burroughs is a science fantasy novel first published as a serial in 1913. John Carter returns to Mars after ten years, only to materialize in the Valley Dor—the Martian afterlife from which no one may leave. There he discovers a dark truth: the supposed gods of Mars are frauds who enslave and devour pilgrims seeking paradise. Carter must fight through layers of deception, rescue his beloved Dejah Thoris, and lead a massive fleet against false deities to expose the lies that have deceived an entire world. (This is an automatically generated summary.)
 
 ## Notes
 
-Wikipedia page about this book: https://en.wikipedia.org/wiki/The_Mad_King
+Wikipedia page about this book: https://en.wikipedia.org/wiki/The_Gods_of_Mars

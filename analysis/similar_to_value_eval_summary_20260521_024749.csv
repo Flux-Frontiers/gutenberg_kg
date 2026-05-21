@@ -1,0 +1,4 @@
+condition,n_queries,mean_recall_at_k,mean_mrr_at_k,mean_ndcg_at_k,mean_query_seconds,mean_build_seconds,mean_similar_edges
+none,36,0.12037,0.229971,0.128307,0.027785,0.399645,0.0
+8,36,0.134259,0.236705,0.135529,0.024983,3.860342,2850.833333
+15,36,0.134259,0.236915,0.135642,0.023641,3.854058,3894.416667

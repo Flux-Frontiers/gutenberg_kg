@@ -1,0 +1,37 @@
+condition,genre,size_tier,book_name,book_relpath,build_seconds,similar_edges
+none,biography,short,Autobiography of Benjamin Franklin,corpus/biography/Autobiography of Benjamin Franklin,0.678885,0
+8,biography,short,Autobiography of Benjamin Franklin,corpus/biography/Autobiography of Benjamin Franklin,2.10132,2012
+15,biography,short,Autobiography of Benjamin Franklin,corpus/biography/Autobiography of Benjamin Franklin,2.079569,2713
+none,biography,medium,Confessions — Saint Augustine,corpus/biography/Confessions — Saint Augustine,0.359507,0
+8,biography,medium,Confessions — Saint Augustine,corpus/biography/Confessions — Saint Augustine,3.583036,2910
+15,biography,medium,Confessions — Saint Augustine,corpus/biography/Confessions — Saint Augustine,3.640386,3984
+none,biography,long,The Life of Samuel Johnson — James Boswell,corpus/biography/The Life of Samuel Johnson — James Boswell,0.823481,0
+8,biography,long,The Life of Samuel Johnson — James Boswell,corpus/biography/The Life of Samuel Johnson — James Boswell,10.41196,5348
+15,biography,long,The Life of Samuel Johnson — James Boswell,corpus/biography/The Life of Samuel Johnson — James Boswell,10.464074,7499
+none,philosophy,short,Groundwork of the Metaphysics of Morals (Kant),corpus/philosophy/Groundwork of the Metaphysics of Morals (Kant),0.108612,0
+8,philosophy,short,Groundwork of the Metaphysics of Morals (Kant),corpus/philosophy/Groundwork of the Metaphysics of Morals (Kant),0.76907,1072
+15,philosophy,short,Groundwork of the Metaphysics of Morals (Kant),corpus/philosophy/Groundwork of the Metaphysics of Morals (Kant),0.761688,1438
+none,philosophy,medium,Meditations,corpus/philosophy/Meditations,0.278731,0
+8,philosophy,medium,Meditations,corpus/philosophy/Meditations,2.255565,556
+15,philosophy,medium,Meditations,corpus/philosophy/Meditations,2.236408,691
+none,philosophy,long,The Federalist Papers,corpus/philosophy/The Federalist Papers,0.697869,0
+8,philosophy,long,The Federalist Papers,corpus/philosophy/The Federalist Papers,9.422126,5211
+15,philosophy,long,The Federalist Papers,corpus/philosophy/The Federalist Papers,9.448276,7105
+none,science-fiction,short,The Lost World,corpus/science-fiction/The Lost World,0.253925,0
+8,science-fiction,short,The Lost World,corpus/science-fiction/The Lost World,2.324891,1822
+15,science-fiction,short,The Lost World,corpus/science-fiction/The Lost World,2.312203,2531
+none,science-fiction,medium,Pellucidar (Burroughs),corpus/science-fiction/Pellucidar (Burroughs),0.237443,0
+8,science-fiction,medium,Pellucidar (Burroughs),corpus/science-fiction/Pellucidar (Burroughs),1.530153,1519
+15,science-fiction,medium,Pellucidar (Burroughs),corpus/science-fiction/Pellucidar (Burroughs),1.504415,1936
+none,science-fiction,long,The Gods of Mars,corpus/science-fiction/The Gods of Mars,0.290635,0
+8,science-fiction,long,The Gods of Mars,corpus/science-fiction/The Gods of Mars,2.461141,2423
+15,science-fiction,long,The Gods of Mars,corpus/science-fiction/The Gods of Mars,2.375464,3270
+none,english-literature,short,The Jungle Book (Kipling),corpus/english-literature/The Jungle Book (Kipling),0.232736,0
+8,english-literature,short,The Jungle Book (Kipling),corpus/english-literature/The Jungle Book (Kipling),1.481522,1659
+15,english-literature,short,The Jungle Book (Kipling),corpus/english-literature/The Jungle Book (Kipling),1.456312,2310
+none,english-literature,medium,Robinson Crusoe,corpus/english-literature/Robinson Crusoe,0.313366,0
+8,english-literature,medium,Robinson Crusoe,corpus/english-literature/Robinson Crusoe,3.289186,3581
+15,english-literature,medium,Robinson Crusoe,corpus/english-literature/Robinson Crusoe,3.280545,4941
+none,english-literature,long,North and South (Gaskell),corpus/english-literature/North and South (Gaskell),0.520549,0
+8,english-literature,long,North and South (Gaskell),corpus/english-literature/North and South (Gaskell),6.69413,6097
+15,english-literature,long,North and South (Gaskell),corpus/english-literature/North and South (Gaskell),6.689361,8315

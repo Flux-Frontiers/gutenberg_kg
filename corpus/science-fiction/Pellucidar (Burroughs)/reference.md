@@ -2,19 +2,19 @@
 
 ## Source
 
-- **Project Gutenberg ID**: 4358
-- **URL**: https://www.gutenberg.org/ebooks/4358
+- **Project Gutenberg ID**: 605
+- **URL**: https://www.gutenberg.org/ebooks/605
 - **Rights**: Public domain in the USA.
 
 ## Author
 
-- **Name**: L. Frank (Lyman Frank) Baum
-- **Born**: 1856
-- **Died**: 1919
-- **Wikipedia**: https://en.wikipedia.org/wiki/L._Frank_Baum
-- **Gutenberg Agent ID**: 42
+- **Name**: Edgar Rice Burroughs
+- **Born**: 1875
+- **Died**: 1950
+- **Wikipedia**: https://en.wikipedia.org/wiki/Edgar_Rice_Burroughs
+- **Gutenberg Agent ID**: 48
 
-- **Gutenberg Published**: 2003-08-01
+- **Gutenberg Published**: 1996-07-01
 
 ## Language
 
@@ -22,19 +22,12 @@
 
 ## Subjects
 
-- Fantasy literature
-- Sea stories
-- Voyages, Imaginary
-- Fairies -- Juvenile fiction
-- Mermaids -- Juvenile fiction
-- Sea monsters -- Juvenile fiction
-- PZ
+- Science fiction
+- Adventure stories
+- Earth (Planet) -- Core -- Fiction
+- PS
 - Text
 
 ## Summary
 
-"The Sea Fairies" by L. Frank Baum is a children's fantasy novel published in 1911. Young Trot and her loyal companion Cap'n Bill are transformed into mermaids and journey into an underwater world of benevolent sea fairies. There they encounter Queen Aquarine's magical realm and face the villainous Zog the Magician, who enslaves sailors with his sea devils. Intended as the first in a new series, the book introduced characters who would later find their way into Baum's beloved Oz stories. (This is an automatically generated summary.)
-
-## Notes
-
-Wikipedia page about this book: https://en.wikipedia.org/wiki/The_Sea_Fairies
+"Pellucidar" by Edgar Rice Burroughs is a fantasy novel written during the early 20th century. The story revolves around David Innes, who embarks on a journey to the inner world of Pellucidar, a strange realm that exists at the core of the Earth, where time and societal norms differ greatly from the outer world. This fantastical setting features prehistoric creatures and primitive tribes, and serves as a backdrop for adventures filled with danger, intrigue, and the relentless struggle between different races.  The opening of "Pellucidar" sets the stage for an exciting expedition following a letter that piques David's curiosity regarding the mysterious inner world. After experiencing a strange discovery in the Sahara desert, David feels compelled to revisit Pellucidar, which he had previously explored. As he prepares for his journey, he reflects on his past adventures and the friends he left behind, including Dian the Beautiful, hinting at the emotional stakes involved. The first chapter introduces the labyrinthine landscapes of Pellucidar and the challenges David faces as he navigates through an unfamiliar environment filled with both threats and wonders. The stage is set for an epic quest fueled by love and friendship, as he searches for his beloved Dian amidst the primal chaos of this unique world. (This is an automatically generated summary.)

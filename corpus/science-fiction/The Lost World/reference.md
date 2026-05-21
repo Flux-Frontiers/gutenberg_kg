@@ -2,19 +2,19 @@
 
 ## Source
 
-- **Project Gutenberg ID**: 29808
-- **URL**: https://www.gutenberg.org/ebooks/29808
+- **Project Gutenberg ID**: 139
+- **URL**: https://www.gutenberg.org/ebooks/139
 - **Rights**: Public domain in the USA.
 
 ## Author
 
-- **Name**: Robert Herrick
-- **Born**: 1868
-- **Died**: 1938
-- **Wikipedia**: https://en.wikipedia.org/wiki/Robert_Herrick_(novelist)
-- **Gutenberg Agent ID**: 2657
+- **Name**: Arthur Conan Doyle
+- **Born**: 1859
+- **Died**: 1930
+- **Wikipedia**: https://en.wikipedia.org/wiki/Arthur_Conan_Doyle
+- **Gutenberg Agent ID**: 69
 
-- **Gutenberg Published**: 2009-08-26
+- **Gutenberg Published**: 1994-06-01
 
 ## Language
 
@@ -22,10 +22,18 @@
 
 ## Subjects
 
-- Fiction
-- PS
+- Challenger, Professor (Fictitious character) -- Fiction
+- Fantasy fiction
+- South America -- Fiction
+- Prehistoric peoples -- Fiction
+- Dinosaurs -- Fiction
+- PR
 - Text
 
 ## Summary
 
-"The Man Who Wins" by Robert Herrick is a novel written in the late 19th century. The story revolves around the Ellwell family and their complex relationships, tracing their decline from respectable New England lineage to a life plagued by scandal and addiction. The reader is introduced to various family members, particularly John Ellwell, whose reckless choices lead to the family's downfall, contrasted with his sister Leonora, who navigates the challenges posed by their diminished status in society.  At the start of the novel, the reader gets a vivid description of the Ellwell family history and their estate known as the Four Corners in Middleton. The narrative explores the generational shifts within the family, particularly focusing on John Ellwell's morally questionable lifestyle and his father's attempts to maintain the family’s reputation. Through scenes of camaraderie among college students and descriptions of familial dynamics, the opening sets the stage for a deeper exploration of themes such as social status, moral decay, and the consequences of familial legacy. The introduction of young characters like Roper Thornton suggests a potential intertwining of lives that may challenge the family’s troubled legacy. (This is an automatically generated summary.)
+"The Lost World" by Arthur Conan Doyle is an adventure and science fiction novel published in 1912. When journalist Edward Malone seeks a dangerous assignment to prove himself, he joins the formidable Professor Challenger on an expedition to a remote South American plateau. There, the team encounters living dinosaurs, prehistoric creatures, and hostile ape-men in a hidden world lost to time. Stranded by treachery and facing unknown dangers, the explorers must survive in this extraordinary land where ancient life still thrives. (This is an automatically generated summary.)
+
+## Notes
+
+Wikipedia page about this book: https://en.wikipedia.org/wiki/The_Lost_World_(Doyle_novel)

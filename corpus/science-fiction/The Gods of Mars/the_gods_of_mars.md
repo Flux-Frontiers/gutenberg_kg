@@ -4,10550 +4,9147 @@
 
 ---
 
-The Mad King
+The Gods of Mars
 
 by Edgar Rice Burroughs
 
-## PART I
-
-### I. A RUNAWAY HORSE
-
-All Lustadt was in an uproar. The mad king had escaped. Little knots of
-excited men stood upon the street corners listening to each latest
-rumor concerning this most absorbing occurrence. Before the palace a
-great crowd surged to and fro, awaiting they knew not what.
-
-For ten years no man of them had set eyes upon the face of the boy-king
-who had been hastened to the grim castle of Blentz upon the death of
-the old king, his father.
-
-There had been murmurings then when the lad’s uncle, Peter of Blentz,
-had announced to the people of Lutha the sudden mental affliction which
-had fallen upon his nephew, and more murmurings for a time after the
-announcement that Peter of Blentz had been appointed Regent during the
-lifetime of the young King Leopold, “or until God, in His infinite
-mercy, shall see fit to restore to us in full mental vigor our beloved
-monarch.”
-
-But ten years is a long time. The boy-king had become but a vague
-memory to the subjects who could recall him at all.
-
-There were many, of course, in the capital city, Lustadt, who still
-retained a mental picture of the handsome boy who had ridden out nearly
-every morning from the palace gates beside the tall, martial figure of
-the old king, his father, for a canter across the broad plain which
-lies at the foot of the mountain town of Lustadt; but even these had
-long since given up hope that their young king would ever ascend his
-throne, or even that they should see him alive again.
-
-Peter of Blentz had not proved a good or kind ruler. Taxes had doubled
-during his regency. Executives and judiciary, following the example of
-their chief, had become tyrannical and corrupt. For ten years there had
-been small joy in Lutha.
-
-There had been whispered rumors off and on that the young king was dead
-these many years, but not even in whispers did the men of Lutha dare
-voice the name of him whom they believed had caused his death. For
-lesser things they had seen their friends and neighbors thrown into the
-hitherto long-unused dungeons of the royal castle.
-
-And now came the rumor that Leopold of Lutha had escaped the Castle of
-Blentz and was roaming somewhere in the wild mountains or ravines upon
-the opposite side of the plain of Lustadt.
-
-Peter of Blentz was filled with rage and, possibly, fear as well.
-
-“I tell you, Coblich,” he cried, addressing his dark-visaged minister
-of war, “there’s more than coincidence in this matter. Someone has
-betrayed us. That he should have escaped upon the very eve of the
-arrival at Blentz of the new physician is most suspicious. None but
-you, Coblich, had knowledge of the part that Dr. Stein was destined to
-play in this matter,” concluded Prince Peter pointedly.
-
-Coblich looked the Regent full in the eye.
-
-“Your highness wrongs not only my loyalty, but my intelligence,” he
-said quietly, “by even so much as intimating that I have any guilty
-knowledge of Leopold’s escape. With Leopold upon the throne of Lutha,
-where, think you, my prince, would old Coblich be?”
-
-Peter smiled.
-
-“You are right, Coblich,” he said. “I know that you would not be such a
-fool; but whom, then, have we to thank?”
-
-“The walls have ears, prince,” replied Coblich, “and we have not always
-been as careful as we should in discussing the matter. Something may
-have come to the ears of old Von der Tann. I don’t for a moment doubt
-but that he has his spies among the palace servants, or even the guard.
-You know the old fox has always made it a point to curry favor with the
-common soldiers. When he was minister of war he treated them better
-than he did his officers.”
-
-“It seems strange, Coblich, that so shrewd a man as you should have
-been unable to discover some irregularity in the political life of
-Prince Ludwig von der Tann before now,” said the prince querulously.
-“He is the greatest menace to our peace and sovereignty. With Von der
-Tann out of the way there would be none powerful enough to question our
-right to the throne of Lutha—after poor Leopold passes away.”
-
-“You forget that Leopold has escaped,” suggested Coblich, “and that
-there is no immediate prospect of his passing away.”
-
-“He must be retaken at once, Coblich!” cried Prince Peter of Blentz.
-“He is a dangerous maniac, and we must make this fact plain to the
-people—this and a thorough description of him. A handsome reward for
-his safe return to Blentz might not be out of the way, Coblich.”
-
-“It shall be done, your highness,” replied Coblich. “And about Von der
-Tann? You have never spoken to me quite so—ah—er—pointedly before. He
-hunts a great deal in the Old Forest. It might be possible—in fact, it
-has happened, before—there are many accidents in hunting, are there
-not, your highness?”
-
-“There are, Coblich,” replied the prince, “and if Leopold is able he
-will make straight for the Tann, so that there may be two hunting
-together in a day or so, Coblich.”
-
-“I understand, your highness,” replied the minister. “With your
-permission, I shall go at once and dispatch troops to search the forest
-for Leopold. Captain Maenck will command them.”
-
-“Good, Coblich! Maenck is a most intelligent and loyal officer. We must
-reward him well. A baronetcy, at least, if he handles this matter
-well,” said Peter. “It might not be a bad plan to hint at as much to
-him, Coblich.”
-
-And so it happened that shortly thereafter Captain Ernst Maenck, in
-command of a troop of the Royal Horse Guards of Lutha, set out toward
-the Old Forest, which lies beyond the mountains that are visible upon
-the other side of the plain stretching out before Lustadt. At the same
-time other troopers rode in many directions along the highways and
-byways of Lutha, tacking placards upon trees and fence posts and beside
-the doors of every little rural post office.
-
-The placard told of the escape of the mad king, offering a large reward
-for his safe return to Blentz.
-
-It was the last paragraph especially which caused a young man, the
-following day in the little hamlet of Tafelberg, to whistle as he
-carefully read it over.
-
-“I am glad that I am not the mad king of Lutha,” he said as he paid the
-storekeeper for the gasoline he had just purchased and stepped into the
-gray roadster for whose greedy maw it was destined.
-
-“Why, mein Herr?” asked the man.
-
-“This notice practically gives immunity to whoever shoots down the
-king,” replied the traveler. “Worse still, it gives such an account of
-the maniacal ferocity of the fugitive as to warrant anyone in shooting
-him on sight.”
-
-As the young man spoke the storekeeper had examined his face closely
-for the first time. A shrewd look came into the man’s ordinarily stolid
-countenance. He leaned forward quite close to the other’s ear.
-
-“We of Lutha,” he whispered, “love our ‘mad king’—no reward could be
-offered that would tempt us to betray him. Even in self-protection we
-would not kill him, we of the mountains who remember him as a boy and
-loved his father and his grandfather, before him.
-
-“But there are the scum of the low country in the army these days, who
-would do anything for money, and it is these that the king must guard
-against. I could not help but note that mein Herr spoke too perfect
-German for a foreigner. Were I in mein Herr’s place, I should speak
-mostly the English, and, too, I should shave off the ‘full,
-reddish-brown beard.’”
-
-Whereupon the storekeeper turned hastily back into his shop, leaving
-Barney Custer of Beatrice, Nebraska, U.S.A., to wonder if all the
-inhabitants of Lutha were afflicted with a mental disorder similar to
-that of the unfortunate ruler.
-
-“I don’t wonder,” soliloquized the young man, “that he advised me to
-shave off this ridiculous crop of alfalfa. Hang election bets, anyway;
-if things had gone half right I shouldn’t have had to wear this badge
-of idiocy. And to think that it’s got to be for a whole month longer! A
-year’s a mighty long while at best, but a year in company with a full
-set of red whiskers is an eternity.”
-
-The road out of Tafelberg wound upward among tall trees toward the pass
-that would lead him across the next valley on his way to the Old
-Forest, where he hoped to find some excellent shooting. All his life
-Barney had promised himself that some day he should visit his mother’s
-native land, and now that he was here he found it as wild and beautiful
-as she had said it would be.
-
-Neither his mother nor his father had ever returned to the little
-country since the day, thirty years before, that the big American had
-literally stolen his bride away, escaping across the border but a scant
-half-hour ahead of the pursuing troop of Luthanian cavalry. Barney had
-often wondered why it was that neither of them would ever speak of
-those days, or of the early life of his mother, Victoria Rubinroth,
-though of the beauties of her native land Mrs. Custer never tired of
-talking.
-
-Barney Custer was thinking of these things as his machine wound up the
-picturesque road. Just before him was a long, heavy grade, and as he
-took it with open muffler the chugging of his motor drowned the sound
-of pounding hoof beats rapidly approaching behind him.
-
-It was not until he topped the grade that he heard anything unusual,
-and at the same instant a girl on horseback tore past him. The speed of
-the animal would have been enough to have told him that it was beyond
-the control of its frail rider, even without the added testimony of the
-broken bit that dangled beneath the tensely outstretched chin.
-
-Foam flecked the beast’s neck and shoulders. It was evident that the
-horse had been running for some distance, yet its speed was still that
-of the thoroughly frightened runaway.
-
-The road at the point where the animal had passed Custer was cut from
-the hillside. At the left an embankment rose steeply to a height of ten
-or fifteen feet. On the right there was a drop of a hundred feet or
-more into a wooded ravine. Ahead, the road apparently ran quite
-straight and smooth for a considerable distance.
-
-Barney Custer knew that so long as the road ran straight the girl might
-be safe enough, for she was evidently an excellent horsewoman; but he
-also knew that if there should be a sharp turn to the left ahead, the
-horse in his blind fright would in all probability dash headlong into
-the ravine below him.
-
-There was but a single thing that the man might attempt if he were to
-save the girl from the almost certain death which seemed in store for
-her, since he knew that sooner or later the road would turn, as all
-mountain roads do. The chances that he must take, if he failed, could
-only hasten the girl’s end. There was no alternative except to sit
-supinely by and see the fear-crazed horse carry its rider into
-eternity, and Barney Custer was not the sort for that role.
-
-Scarcely had the beast come abreast of him than his foot leaped to the
-accelerator. Like a frightened deer the gray roadster sprang forward in
-pursuit. The road was narrow. Two machines could not have passed upon
-it. Barney took the outside that he might hold the horse away from the
-dangerous ravine.
-
-At the sound of the whirring thing behind him the animal cast an
-affrighted glance in its direction, and with a little squeal of terror
-redoubled its frantic efforts to escape. The girl, too, looked back
-over her shoulder. Her face was very white, but her eyes were steady
-and brave.
-
-Barney Custer smiled up at her in encouragement, and the girl smiled
-back at him.
-
-“She’s sure a game one,” thought Barney.
-
-Now she was calling to him. At first he could not catch her words above
-the pounding of the horse’s hoofs and the noise of his motor. Presently
-he understood.
-
-“Stop!” she cried. “Stop or you will be killed. The road turns to the
-left just ahead. You’ll go into the ravine at that speed.”
-
-The front wheel of the roadster was at the horse’s right flank. Barney
-stepped upon the accelerator a little harder. There was barely room
-between the horse and the edge of the road for the four wheels of the
-roadster, and Barney must be very careful not to touch the horse. The
-thought of that and what it would mean to the girl sent a cold shudder
-through Barney Custer’s athletic frame.
-
-The man cast a glance to his right. His machine drove from the left
-side, and he could not see the road at all over the right hand door.
-The sight of tree tops waving beneath him was all that was visible.
-Just ahead the road’s edge rushed swiftly beneath the right-hand
-fender; the wheels on that side must have been on the very verge of the
-embankment.
-
-Now he was abreast the girl. Just ahead he could see where the road
-disappeared around a corner of the bluff at the dangerous curve the
-girl had warned him against.
-
-Custer leaned far out over the side of his car. The lunging of the
-horse in his stride, and the swaying of the leaping car carried him
-first close to the girl and then away again. With his right hand he
-held the car between the frantic horse and the edge of the embankment.
-His left hand, outstretched, was almost at the girl’s waist. The turn
-was just before them.
-
-“Jump!” cried Barney.
-
-The girl fell backward from her mount, turning to grasp Custer’s arm as
-it closed about her. At the same instant Barney closed the throttle,
-and threw all the weight of his body upon the foot brake.
-
-The gray roadster swerved toward the embankment as the hind wheels
-skidded on the loose surface gravel. They were at the turn. The horse
-was just abreast the bumper. There was one chance in a thousand of
-making the turn were the running beast out of the way. There was still
-a chance if he turned ahead of them. If he did not turn—Barney hated to
-think of what must follow.
-
-But it was all over in a second. The horse bolted straight ahead.
-Barney swerved the roadster to the turn. It caught the animal full in
-the side. There was a sickening lurch as the hind wheels slid over the
-embankment, and then the man shoved the girl from the running board to
-the road, and horse, man and roadster went over into the ravine.
-
-A moment before a tall young man with a reddish-brown beard had stood
-at the turn of the road listening intently to the sound of the hurrying
-hoof beats and the purring of the racing motor car approaching from the
-distance. In his eyes lurked the look of the hunted. For a moment he
-stood in evident indecision, but just before the runaway horse and the
-pursuing machine came into view he slipped over the edge of the road to
-slink into the underbrush far down toward the bottom of the ravine.
-
-When Barney pushed the girl from the running board she fell heavily to
-the road, rolling over several times, but in an instant she scrambled
-to her feet, hardly the worse for the tumble other than a few
-scratches.
-
-Quickly she ran to the edge of the embankment, a look of immense relief
-coming to her soft, brown eyes as she saw her rescuer scrambling up the
-precipitous side of the ravine toward her.
-
-“You are not killed?” she cried in German. “It is a miracle!”
-
-“Not even bruised,” reassured Barney. “But you? You must have had a
-nasty fall.”
-
-“I am not hurt at all,” she replied. “But for you I should be lying
-dead, or terribly maimed down there at the bottom of that awful ravine
-at this very moment. It’s awful.” She drew her shoulders upward in a
-little shudder of horror. “But how did you escape? Even now I can
-scarce believe it possible.”
-
-“I’m quite sure I don’t know how I did escape,” said Barney, clambering
-over the rim of the road to her side. “That I had nothing to do with it
-I am positive. It was just luck. I simply dropped out onto that bush
-down there.”
-
-They were standing side by side, now peering down into the ravine where
-the car was visible, bottom side up against a tree, near the base of
-the declivity. The horse’s head could be seen protruding from beneath
-the wreckage.
-
-“I’d better go down and put him out of his misery,” said Barney, “if he
-is not already dead.”
-
-“I think he is quite dead,” said the girl. “I have not seen him move.”
-
-Just then a little puff of smoke arose from the machine, followed by a
-tongue of yellow flame. Barney had already started toward the horse.
-
-“Please don’t go,” begged the girl. “I am sure that he is quite dead,
-and it wouldn’t be safe for you down there now. The gasoline tank may
-explode any minute.”
-
-Barney stopped.
-
-“Yes, he is dead all right,” he said, “but all my belongings are down
-there. My guns, six-shooters and all my ammunition. And,” he added
-ruefully, “I’ve heard so much about the brigands that infest these
-mountains.”
-
-The girl laughed.
-
-“Those stories are really exaggerated,” she said. “I was born in Lutha,
-and except for a few months each year have always lived here, and
-though I ride much I have never seen a brigand. You need not be
-afraid.”
-
-Barney Custer looked up at her quickly, and then he grinned. His only
-fear had been that he would not meet brigands, for Mr. Bernard Custer,
-Jr., was young and the spirit of Romance and Adventure breathed strong
-within him.
-
-“Why do you smile?” asked the girl.
-
-“At our dilemma,” evaded Barney. “Have you paused to consider our
-situation?”
-
-The girl smiled, too.
-
-“It is most unconventional,” she said. “On foot and alone in the
-mountains, far from home, and we do not even know each other’s name.”
-
-“Pardon me,” cried Barney, bowing low. “Permit me to introduce myself.
-I am,” and then to the spirits of Romance and Adventure was added a
-third, the spirit of Deviltry, “I am the mad king of Lutha.”
-
-### II. OVER THE PRECIPICE
-
-The effect of his words upon the girl were quite different from what he
-had expected. An American girl would have laughed, knowing that he but
-joked. This girl did not laugh. Instead her face went white, and she
-clutched her bosom with her two hands. Her brown eyes peered
-searchingly into the face of the man.
-
-“Leopold!” she cried in a suppressed voice. “Oh, your majesty, thank
-God that you are free—and sane!”
-
-Before he could prevent it the girl had seized his hand and pressed it
-to her lips.
-
-Here was a pretty muddle! Barney Custer swore at himself inwardly for a
-boorish fool. What in the world had ever prompted him to speak those
-ridiculous words! And now how was he to unsay them without mortifying
-this beautiful girl who had just kissed his hand?
-
-She would never forgive that—he was sure of it.
-
-There was but one thing to do, however, and that was to make a clean
-breast of it. Somehow, he managed to stumble through his explanation of
-what had prompted him, and when he had finished he saw that the girl
-was smiling indulgently at him.
-
-“It shall be Mr. Bernard Custer if you wish it so,” she said; “but your
-majesty need fear nothing from Emma von der Tann. Your secret is as
-safe with me as with yourself, as the name of Von der Tann must assure
-you.”
-
-She looked to see the expression of relief and pleasure that her
-father’s name should have brought to the face of Leopold of Lutha, but
-when he gave no indication that he had ever before heard the name she
-sighed and looked puzzled.
-
-“Perhaps,” she thought, “he doubts me. Or can it be possible that,
-after all, his poor mind is gone?”
-
-“I wish,” said Barney in a tone of entreaty, “that you would forgive
-and forget my foolish words, and then let me accompany you to the end
-of your journey.”
-
-“Whither were you bound when I became the means of wrecking your motor
-car?” asked the girl.
-
-“To the Old Forest,” replied Barney.
-
-Now she was positive that she was indeed with the mad king of Lutha,
-but she had no fear of him, for since childhood she had heard her
-father scout the idea that Leopold was mad. For what other purpose
-would he hasten toward the Old Forest than to take refuge in her
-father’s castle upon the banks of the Tann at the forest’s verge?
-
-“Thither was I bound also,” she said, “and if you would come there
-quickly and in safety I can show you a short path across the mountains
-that my father taught me years ago. It touches the main road but once
-or twice, and much of the way passes through dense woods and
-undergrowth where an army might hide.”
-
-“Hadn’t we better find the nearest town,” suggested Barney, “where I
-can obtain some sort of conveyance to take you home?”
-
-“It would not be safe,” said the girl. “Peter of Blentz will have
-troops out scouring all Lutha about Blentz and the Old Forest until the
-king is captured.”
-
-Barney Custer shook his head despairingly.
-
-“Won’t you please believe that I am but a plain American?” he begged.
-
-Upon the bole of a large wayside tree a fresh, new placard stared them
-in the face. Emma von der Tann pointed at one of the paragraphs.
-
-“Gray eyes, brown hair, and a full reddish-brown beard,” she read. “No
-matter who you may be,” she said, “you are safer off the highways of
-Lutha than on them until you can find and use a razor.”
-
-“But I cannot shave until the fifth of November,” said Barney.
-
-Again the girl looked quickly into his eyes and again in her mind rose
-the question that had hovered there once before. Was he indeed, after
-all, quite sane?
-
-“Then please come with me the safest way to my father’s,” she urged.
-“He will know what is best to do.”
-
-“He cannot make me shave,” insisted Barney.
-
-“Why do you wish not to shave?” asked the girl.
-
-“It is a matter of my honor,” he replied. “I had my choice of wearing a
-green wastebasket bonnet trimmed with red roses for six months, or a
-beard for twelve. If I shave off the beard before the fifth of November
-I shall be without honor in the sight of all men or else I shall have
-to wear the green bonnet. The beard is bad enough, but the bonnet—ugh!”
-
-Emma von der Tann was now quite assured that the poor fellow was indeed
-quite demented, but she had seen no indications of violence as yet,
-though when that too might develop there was no telling. However, he
-was to her Leopold of Lutha, and her father’s house had been loyal to
-him or his ancestors for three hundred years.
-
-If she must sacrifice her life in the attempt, nevertheless still must
-she do all within her power to save her king from recapture and to lead
-him in safety to the castle upon the Tann.
-
-“Come,” she said; “we waste time here. Let us make haste, for the way
-is long. At best we cannot reach Tann by dark.”
-
-“I will do anything you wish,” replied Barney, “but I shall never
-forgive myself for having caused you the long and tedious journey that
-lies before us. It would be perfectly safe to go to the nearest town
-and secure a rig.”
-
-Emma von der Tann had heard that it was always well to humor maniacs
-and she thought of it now. She would put the scheme to the test.
-
-“The reason that I fear to have you go to the village,” she said, “is
-that I am quite sure they would catch you and shave off your beard.”
-
-Barney started to laugh, but when he saw the deep seriousness of the
-girl’s eyes he changed his mind. Then he recalled her rather peculiar
-insistence that he was a king, and it suddenly occurred to him that he
-had been foolish not to have guessed the truth before.
-
-“That is so,” he agreed; “I guess we had better do as you say,” for he
-had determined that the best way to handle her would be to humor her—he
-had always heard that that was the proper method for handling the
-mentally defective. “Where is the—er—ah—sanatorium?” he blurted out at
-last.
-
-“The what?” she asked. “There is no sanatorium near here, your majesty,
-unless you refer to the Castle of Blentz.”
-
-“Is there no asylum for the insane near by?”
-
-“None that I know of, your majesty.”
-
-For a while they moved on in silence, each wondering what the other
-might do next.
-
-Barney had evolved a plan. He would try and ascertain the location of
-the institution from which the girl had escaped and then as gently as
-possible lead her back to it. It was not safe for as beautiful a woman
-as she to be roaming through the forest in any such manner as this. He
-wondered what in the world the authorities at the asylum had been
-thinking of to permit her to ride out alone in the first place.
-
-“From where did you ride today?” he blurted out suddenly.
-
-“From Tann.”
-
-“That is where we are going now?”
-
-“Yes, your majesty.”
-
-Barney drew a breath of relief. The way had become suddenly difficult
-and he took the girl’s arm to help her down a rather steep place. At
-the bottom of the ravine there was a little brook.
-
-“There used to be a fallen log across it here,” said the girl. “How in
-the world am I ever to get across, your majesty?”
-
-“If you call me that again, I shall begin to believe that I am a king,”
-he humored her, “and then, being a king, I presume that it wouldn’t be
-proper for me to carry you across, or would it? Never really having
-been a king, I do not know.”
-
-“I think,” replied the girl, “that it would be eminently proper.”
-
-She had difficulty in keeping in mind the fact that this handsome,
-smiling young man was a dangerous maniac, though it was easy to believe
-that he was the king. In fact, he looked much as she had always
-pictured Leopold as looking. She had known him as a boy, and there were
-many paintings and photographs of his ancestors in her father’s castle.
-She saw much resemblance between these and the young man.
-
-The brook was very narrow, and the girl thought that it took the young
-man an unreasonably long time to carry her across, though she was
-forced to admit that she was far from uncomfortable in the strong arms
-that bore her so easily.
-
-“Why, what are you doing?” she cried presently. “You are not crossing
-the stream at all. You are walking right up the middle of it!”
-
-She saw his face flush, and then he turned laughing eyes upon her.
-
-“I am looking for a safe landing,” he said.
-
-Emma von der Tann did not know whether to be frightened or amused. As
-her eyes met the clear, gray ones of the man she could not believe that
-insanity lurked behind that laughing, level gaze of her carrier. She
-found herself continually forgetting that the man was mad. He had
-turned toward the bank now, and a couple of steps carried them to the
-low sward that fringed the little brooklet. Here he lowered her to the
-ground.
-
-“Your majesty is very strong,” she said. “I should not have expected it
-after the years of confinement you have suffered.”
-
-“Yes,” he said, realizing that he must humor her—it was difficult to
-remember that this lovely girl was insane. “Let me see, now just what
-was I in prison for? I do not seem to be able to recall it. In
-Nebraska, they used to hang men for horse stealing; so I am sure it
-must have been something else not quite so bad. Do you happen to know?”
-
-“When the king, your father, died you were thirteen years old,” the
-girl explained, hoping to reawaken the sleeping mind, “and then your
-uncle, Prince Peter of Blentz, announced that the shock of your
-father’s death had unbalanced your mind. He shut you up in Blentz then,
-where you have been for ten years, and he has ruled as regent. Now, my
-father says, he has recently discovered a plot to take your life so
-that Peter may become king. But I suppose you learned of that, and
-because of it you escaped!”
-
-“This Peter person is all-powerful in Lutha?” he asked.
-
-“He controls the army,” the girl replied.
-
-“And you really believe that I am the mad king Leopold?”
-
-“You are the king,” she said in a convincing manner.
-
-“You are a very brave young lady,” he said earnestly. “If all the mad
-king’s subjects were as loyal as you, and as brave, he would not have
-languished for ten years behind the walls of Blentz.”
-
-“I am a Von der Tann,” she said proudly, as though that was explanation
-sufficient to account for any bravery or loyalty.
-
-“Even a Von der Tann might, without dishonor, hesitate to accompany a
-mad man through the woods,” he replied, “especially if she happened to
-be a very—a very—” He halted, flushing.
-
-“A very what, your majesty?” asked the girl.
-
-“A very young woman,” he ended lamely.
-
-Emma von der Tann knew that he had not intended saying that at all.
-Being a woman, she knew precisely what he had meant to say, and she
-discovered that she would very much have liked to hear him say it.
-
-“Suppose,” said Barney, “that Peter’s soldiers run across us—what
-then?”
-
-“They will take you back to Blentz, your majesty.”
-
-“And you?”
-
-“I do not think that they will dare lay hands on me, though it is
-possible that Peter might do so. He hates my father even more now than
-he did when the old king lived.”
-
-“I wish,” said Mr. Custer, “that I had gone down after my guns. Why
-didn’t you tell me, in the first place, that I was a king, and that I
-might get you in trouble if you were found with me? Why, they may even
-take me for an emperor or a mikado—who knows? And then look at all the
-trouble we’d be in.”
-
-Which was Barney’s way of humoring a maniac.
-
-“And they might even shave off your beautiful beard.”
-
-Which was the girl’s way.
-
-“Do you think that you would like me better in the green wastebasket
-hat with the red roses?” asked Barney.
-
-A very sad look came into the girl’s eyes. It was pitiful to think that
-this big, handsome young man, for whose return to the throne all Lutha
-had prayed for ten long years, was only a silly half-wit. What might he
-not have accomplished for his people had this terrible misfortune not
-overtaken him! In every other way he seemed fitted to be the savior of
-his country. If she could but make him remember!
-
-“Your majesty,” she said, “do you not recall the time that your father
-came upon a state visit to my father’s castle? You were a little boy
-then. He brought you with him. I was a little girl, and we played
-together. You would not let me call you ‘highness,’ but insisted that I
-should always call you Leopold. When I forgot you would accuse me of
-lese-majeste, and sentence me to—to punishment.”
-
-“What was the punishment?” asked Barney, noticing her hesitation and
-wishing to encourage her in the pretty turn her dementia had taken.
-
-Again the girl hesitated; she hated to say it, but if it would help to
-recall the past to that poor, dimmed mind, it was her duty.
-
-“Every time I called you ‘highness’ you made me give you a—a kiss,” she
-almost whispered.
-
-“I hope,” said Barney, “that you will be guilty of lese-majeste often.”
-
-“We were little children then, your majesty,” the girl reminded him.
-
-Had he thought her of sound mind Mr. Custer might have taken advantage
-of his royal prerogatives on the spot, for the girl’s lips were most
-tempting; but when he remembered the poor, weak mind, tears almost came
-to his eyes, and there sprang to his heart a great desire to protect
-and guard this unfortunate child.
-
-“And when I was Crown Prince what were you, way back there in the
-beautiful days of our childhood?” asked Barney.
-
-“Why, I was what I still am, your majesty,” replied the girl. “Princess
-Emma von der Tann.”
-
-So the poor child, besides thinking him a king, thought herself a
-princess! She certainly was mad. Well, he would humor her.
-
-“Then I should call you ‘your highness,’ shouldn’t I?” he asked.
-
-“You always called me Emma when we were children.”
-
-“Very well, then, you shall be Emma and I Leopold. Is it a bargain?”
-
-“The king’s will is law,” she said.
-
-They had come to a very steep hillside, up which the half-obliterated
-trail zigzagged toward the crest of a flat-topped hill. Barney went
-ahead, taking the girl’s hand in his to help her, and thus they came to
-the top, to stand hand in hand, breathing heavily after the stiff
-climb.
-
-The girl’s hair had come loose about her temples and a lock was blowing
-over her face. Her cheeks were very red and her eyes bright. Barney
-thought he had never looked upon a lovelier picture. He smiled down
-into her eyes and she smiled back at him.
-
-“I wished, back there a way,” he said, “that that little brook had been
-as wide as the ocean—now I wish that this little hill had been as high
-as Mont Blanc.”
-
-“You like to climb?” she asked.
-
-“I should like to climb forever—with you,” he said seriously.
-
-She looked up at him quickly. A reply was on her lips, but she never
-uttered it, for at that moment a ruffian in picturesque rags leaped out
-from behind a near-by bush, confronting them with leveled revolver. He
-was so close that the muzzle of the weapon almost touched Barney’s
-face. In that the fellow made his mistake.
-
-“You see,” said Barney unexcitedly, “that I was right about the
-brigands after all. What do you want, my man?”
-
-The man’s eyes had suddenly gone wide. He stared with open mouth at the
-young fellow before him. Then a cunning look came into his eyes.
-
-“I want you, your majesty,” he said.
-
-“Godfrey!” exclaimed Barney. “Did the whole bunch escape?”
-
-“Quick!” growled the man. “Hold up your hands. The notice made it plain
-that you would be worth as much dead as alive, and I have no mind to
-lose you, so do not tempt me to kill you.”
-
-Barney’s hands went up, but not in the way that the brigand had
-expected. Instead, one of them seized his weapon and shoved it aside,
-while with the other Custer planted a blow between his eyes and sent
-him reeling backward. The two men closed, fighting for possession of
-the gun. In the scrimmage it was exploded, but a moment later the
-American succeeded in wresting it from his adversary and hurled it into
-the ravine.
-
-Striking at one another, the two surged backward and forward at the
-very edge of the hill, each searching for the other’s throat. The girl
-stood by, watching the battle with wide, frightened eyes. If she could
-only do something to aid the king!
-
-She saw a loose stone lying at a little distance from the fighters and
-hastened to procure it. If she could strike the brigand a single good
-blow on the side of the head, Leopold might easily overpower him. When
-she had gathered up the rock and turned back toward the two she saw
-that the man she thought to be the king was not much in the way of
-needing outside assistance. She could not but marvel at the strength
-and dexterity of this poor fellow who had spent almost half his life
-penned within the four walls of a prison. It must be, she thought, the
-superhuman strength with which maniacs are always credited.
-
-Nevertheless, she hurried toward them with her weapon; but just before
-she reached them the brigand made a last mad effort to free himself
-from the fingers that had found his throat. He lunged backward,
-dragging the other with him. His foot struck upon the root of a tree,
-and together the two toppled over into the ravine.
-
-As the girl hastened toward the spot where the two had disappeared, she
-was startled to see three troopers of the palace cavalry headed by an
-officer break through the trees at a short distance from where the
-battle had waged. The four men ran rapidly toward her.
-
-“What has happened here?” shouted the officer to Emma von der Tann; and
-then, as he came closer: “Gott! Can it be possible that it is your
-highness?”
-
-The girl paid no attention to the officer. Instead, she hurried down
-the steep embankment toward the underbrush into which the two men had
-fallen. There was no sound from below, and no movement in the bushes to
-indicate that a moment before two desperately battling human beings had
-dropped among them.
-
-The soldiers were close upon the girl’s heels, but it was she who first
-reached the two quiet figures that lay side by side upon the stony
-ground halfway down the hillside.
-
-When the officer stopped beside her she was sitting on the ground
-holding the head of one of the combatants in her lap.
-
-A little stream of blood trickled from a wound in the forehead. The
-officer stooped closer.
-
-“He is dead?” he asked.
-
-“The king is dead,” replied the Princess Emma von der Tann, a little
-sob in her voice.
-
-“The king!” exclaimed the officer; and then, as he bent lower over the
-white face: “Leopold!”
-
-The girl nodded.
-
-“We were searching for him,” said the officer, “when we heard the
-shot.” Then, arising, he removed his cap, saying in a very low voice:
-“The king is dead. Long live the king!”
-
-### III. AN ANGRY KING
-
-The soldiers stood behind their officer. None of them had ever seen
-Leopold of Lutha—he had been but a name to them—they cared nothing for
-him; but in the presence of death they were awed by the majesty of the
-king they had never known.
-
-The hands of Emma von der Tann were chafing the wrists of the man whose
-head rested in her lap.
-
-“Leopold!” she whispered. “Leopold, come back! Mad king you may have
-been, but still you were king of Lutha—my father’s king—my king.”
-
-The girl nearly cried out in shocked astonishment as she saw the eyes
-of the dead king open. But Emma von der Tann was quick-witted. She knew
-for what purpose the soldiers from the palace were scouring the
-country.
-
-Had she not thought the king dead she would have cut out her tongue
-rather than reveal his identity to these soldiers of his great enemy.
-Now she saw that Leopold lived, and she must undo the harm she had
-innocently wrought. She bent lower over Barney’s face, trying to hide
-it from the soldiers.
-
-“Go away, please!” she called to them. “Leave me with my dead king. You
-are Peter’s men. You do not care for Leopold, living or dead. Go back
-to your new king and tell him that this poor young man can never more
-stand between him and the throne.”
-
-The officer hesitated.
-
-“We shall have to take the king’s body with us, your highness,” he
-said.
-
-The officer evidently becoming suspicious, came closer, and as he did
-so Barney Custer sat up.
-
-“Go away!” cried the girl, for she saw that the king was attempting to
-speak. “My father’s people will carry Leopold of Lutha in state to the
-capital of his kingdom.”
-
-“What’s all this row about?” he asked. “Can’t you let a dead king alone
-if the young lady asks you to? What kind of a short sport are you,
-anyway? Run along, now, and tie yourself outside.”
-
-The officer smiled, a trifle maliciously perhaps.
-
-“Ah,” he said, “I am very glad indeed that you are not dead, your
-majesty.”
-
-Barney Custer turned his incredulous eyes upon the lieutenant.
-
-“Et tu, Brute?” he cried in anguished accents, letting his head fall
-back into the girl’s lap. He found it very comfortable there indeed.
-
-The officer smiled and shook his head. Then he tapped his forehead
-meaningly.
-
-“I did not know,” he said to the girl, “that he was so bad. But come—it
-is some distance to Blentz, and the afternoon is already well spent.
-Your highness will accompany us.”
-
-“I?” cried the girl. “You certainly cannot be serious.”
-
-“And why not, your highness?” asked the officer. “We had strict orders
-to arrest not only the king, but any companions who may have been
-involved in his escape.”
-
-“I had nothing whatever to do with his escape,” said the girl, “though
-I should have been only too glad to have aided him had the opportunity
-presented.”
-
-“King Peter may think differently,” replied the man.
-
-“The Regent, you mean?” the girl corrected him haughtily.
-
-The officer shrugged his shoulders.
-
-“Regent or King, he is ruler of Lutha nevertheless, and he would take
-away my commission were I to tell him that I had found a Von der Tann
-in company with the king and had permitted her to escape. Your blood
-convicts your highness.”
-
-“You are going to take me to Blentz and confine me there?” asked the
-girl in a very small voice and with wide incredulous eyes. “You would
-not dare thus to humiliate a Von der Tann?”
-
-“I am very sorry,” said the officer, “but I am a soldier, and soldiers
-must obey their superiors. My orders are strict. You may be thankful,”
-he added, “that it was not Maenck who discovered you.”
-
-At the mention of the name the girl shuddered.
-
-“In so far as it is in my power your highness and his majesty will be
-accorded every consideration of dignity and courtesy while under my
-escort. You need not entertain any fear of me,” he concluded.
-
-Barney Custer, during this, to him, remarkable dialogue, had risen to
-his feet, and assisted the girl in rising. Now he turned and spoke to
-the officer.
-
-“This farce,” he said, “has gone quite far enough. If it is a joke it
-is becoming a very sorry one. I am not a king. I am an American—Bernard
-Custer, of Beatrice, Nebraska, U.S.A. Look at me. Look at me closely.
-Do I look like a king?”
-
-“Every inch, your majesty,” replied the officer.
-
-Barney looked at the man aghast.
-
-“Well, I am not a king,” he said at last, “and if you go to arresting
-me and throwing me into one of your musty old dungeons you will find
-that I am a whole lot more important than most kings. I’m an American
-citizen.”
-
-“Yes, your majesty,” replied the officer, a trifle impatiently. “But we
-waste time in idle discussion. Will your majesty be so good as to
-accompany me without resistance?”
-
-“If you will first escort this young lady to a place of safety,”
-replied Barney.
-
-“She will be quite safe at Blentz,” said the lieutenant.
-
-Barney turned to look at the girl, a question in his eyes. Before them
-stood the soldiers with drawn revolvers, and now at the summit of the
-hill a dozen more appeared in command of a sergeant. They were two
-against nearly a score, and Barney Custer was unarmed.
-
-The girl shook her head.
-
-“There, is no alternative, I am afraid, your majesty,” she said.
-
-Barney wheeled toward the officer.
-
-“Very well, lieutenant,” he said, “we will accompany you.”
-
-The party turned back up the hillside, leaving the dead bandit where he
-lay—the fellow’s neck had been broken by the fall. A short distance
-from where the man had confronted them the two prisoners were brought
-to the main road where they saw still other troopers, and with them the
-horses of those who had gone into the forest on foot.
-
-Barney and the girl were mounted on two of the animals, the soldiers
-who had ridden them clambering up behind two of their comrades. A
-moment later the troop set out along the road which leads to Blentz.
-
-The prisoners rode near the center of the column, surrounded by
-troopers. For a time they were both silent. Barney was wondering if he
-had accidentally tumbled into the private grounds of Lutha’s largest
-madhouse, or if, in reality, these people mistook him for the young
-king—it seemed incredible.
-
-It had commenced slowly to dawn upon him that perhaps the girl was not
-crazy after all. Had not the officer addressed her as “your highness”?
-Now that he thought upon it he recalled that she did have quite a
-haughty and regal way with her at times, especially so when she had
-addressed the officer.
-
-Of course she might be mad, after all, and possibly the bandit, too,
-but it seemed unbelievable that the officer was mad and his entire
-troop of cavalry should be composed of maniacs, yet they all persisted
-in speaking and acting as though he were indeed the mad king of Lutha
-and the young girl at his side a princess.
-
-From pitying the girl he had come to feel a little bit in awe of her.
-To the best of his knowledge he had never before associated with a real
-princess. When he recalled that he had treated her as he would an
-ordinary mortal, and that he had thought her demented, and had tried to
-humor her mad whims, he felt very foolish indeed.
-
-Presently he turned a sheepish glance in her direction, to find her
-looking at him. He saw her flush slightly as his eyes met hers.
-
-“Can your highness ever forgive me?” he asked.
-
-“Forgive you!” she cried in astonishment. “For what, your majesty?”
-
-“For thinking you insane, and for getting you into this horrible
-predicament,” he replied. “But especially for thinking you insane.”
-
-“Did you think me mad?” she asked in wide-eyed astonishment.
-
-“When you insisted that I was a king, yes,” he replied. “But now I
-begin to believe that it must be I who am mad, after all, or else I
-bear a remarkable resemblance to Leopold of Lutha.”
-
-“You do, your majesty,” replied the girl.
-
-Barney saw it was useless to attempt to convince them and so he decided
-to give up for the time.
-
-“Have me king, if you will,” he said, “but please do not call me ‘your
-majesty’ any more. It gets on my nerves.”
-
-“Your will is law—Leopold,” replied the girl, hesitating prettily
-before the familiar name, “but do not forget your part of the compact.”
-
-He smiled at her. A princess wasn’t half so terrible after all.
-
-“And your will shall be my law, Emma,” he said.
-
-It was almost dark when they came to Blentz. The castle lay far up on
-the side of a steep hill above the town. It was an ancient pile, but
-had been maintained in an excellent state of repair. As Barney Custer
-looked up at the grim towers and mighty, buttressed walls his heart
-sank. It had taken the mad king ten years to make his escape from that
-gloomy and forbidding pile!
-
-“Poor child,” he murmured, thinking of the girl.
-
-Before the barbican the party was halted by the guard. An officer with
-a lantern stepped out upon the lowered portcullis. The lieutenant who
-had captured them rode forward to meet him.
-
-“A detachment of the Royal Horse Guards escorting His Majesty the King,
-who is returning to Blentz,” he said in reply to the officer’s sharp
-challenge.
-
-“The king!” exclaimed the officer. “You have found him?” and he
-advanced with raised lantern searching for the monarch.
-
-“At last,” whispered Barney to the girl at his side, “I shall be
-vindicated. This man, at least, who is stationed at Blentz must know
-his king by sight.”
-
-The officer came quite close, holding his lantern until the rays fell
-full in Barney’s face. He scrutinized the young man for a moment. There
-was neither humility nor respect in his manner, so that the American
-was sure that the fellow had discovered the imposture.
-
-From the bottom of his heart he hoped so. Then the officer swung the
-lantern until its light shone upon the girl.
-
-“And who’s the wench with him?” he asked the officer who had found
-them.
-
-The man was standing close beside Barney’s horse, and the words were
-scarce out of his month when the American slipped from his saddle to
-the portcullis and struck the officer full in the face.
-
-“She is the Princess von der Tann, you boor,” said Barney, “and let
-that help you remember it in future.”
-
-The officer scrambled to his feet, white with rage. Whipping out his
-sword he rushed at Barney.
-
-“You shall die for that, you half-wit,” he cried.
-
-Lieutenant Butzow, he of the Royal Horse, rushed forward to prevent the
-assault and Emma von der Tann sprang from her saddle and threw herself
-in front of Barney.
-
-Butzow grasped the other officer’s arm.
-
-“Are you mad, Schonau?” he cried. “Would you kill the king?”
-
-The fellow tugged to escape the grasp of Butzow. He was crazed with
-anger.
-
-“Why not?” he bellowed. “You were a fool not to have done it yourself.
-Maenck will do it and get a baronetcy. It will mean a captaincy for me
-at least. Let me at him—no man can strike Karl Schonau and live.”
-
-“The king is unarmed,” cried Emma von der Tann. “Would you murder him
-in cold blood?”
-
-“He shall not murder him at all, your highness,” said Lieutenant Butzow
-quietly. “Give me your sword, Lieutenant Schonau. I place you under
-arrest. What you have just said will not please the Regent when it is
-reported to him. You should keep your head better when you are angry.”
-
-“It is the truth,” growled Schonau, regretting that his anger had led
-him into a disclosure of the plot against the king’s life, but like
-most weak characters fearing to admit himself in error even more than
-he feared the consequences of his rash words.
-
-“Do you intend taking my sword?” asked Schonau suddenly, turning toward
-Lieutenant Butzow standing beside him.
-
-“We will forget the whole occurrence, lieutenant,” replied Butzow, “if
-you will promise not to harm his majesty, or offer him or the Princess
-von der Tann further humiliation. Their position is sufficiently
-unpleasant without our adding to the degradation of it.”
-
-“Very well,” grumbled Schonau. “Pass on into the courtyard.”
-
-Barney and the girl remounted and the little cavalcade moved forward
-through the ballium and the great gate into the court beyond.
-
-“Did you notice,” said Barney to the princess, “that even he believes
-me to be the king? I cannot fathom it.”
-
-Within the castle they were met by a number of servants and soldiers.
-An officer escorted them to the great hall, and presently a dark
-visaged captain of cavalry entered and approached them. Butzow saluted.
-
-“His Majesty, the King,” he announced, “has returned to Blentz. In
-accordance with the commands of the Regent I deliver his august person
-into your safe keeping, Captain Maenck.”
-
-Maenck nodded. He was looking at Barney with evident curiosity.
-
-“Where did you find him?” he asked Butzow.
-
-He made no pretense of according to Barney the faintest indication of
-the respect that is supposed to be due to those of royal blood. Barney
-commenced to hope that he had finally come upon one who would know that
-he was not king.
-
-Butzow recounted the details of the finding of the king. As he spoke,
-Maenck’s eyes, restless and furtive, seemed to be appraising the
-personal charms of the girl who stood just back of Barney.
-
-The American did not like the appearance of the officer, but he saw
-that he was evidently supreme at Blentz, and he determined to appeal to
-him in the hope that the man might believe his story and untangle the
-ridiculous muddle that a chance resemblance to a fugitive monarch had
-thrown him and the girl into.
-
-“Captain,” said Barney, stepping closer to the officer, “there has been
-a mistake in identity here. I am not the king. I am an American
-traveling for pleasure in Lutha. The fact that I have gray eyes and
-wear a full reddish-brown beard is my only offense. You are doubtless
-familiar with the king’s appearance and so you at least have already
-seen that I am not his majesty.
-
-“Not being the king, there is no cause to detain me longer, and as I am
-not a fugitive and never have been, this young lady has been guilty of
-no misdemeanor or crime in being in my company. Therefore she too
-should be released. In the name of justice and common decency I am sure
-that you will liberate us both at once and furnish the Princess von der
-Tann, at least, with a proper escort to her home.”
-
-Maenck listened in silence until Barney had finished, a half smile upon
-his thick lips.
-
-“I am commencing to believe that you are not so crazy as we have all
-thought,” he said. “Certainly,” and he let his eyes rest upon Emma von
-der Tann, “you are not mentally deficient in so far as your judgment of
-a good-looking woman is concerned. I could not have made a better
-selection myself.
-
-“As for my familiarity with your appearance, you know as well as I that
-I have never seen you before. But that is not necessary—you conform
-perfectly to the printed description of you with which the kingdom is
-flooded. Were that not enough, the fact that you were discovered with
-old Von der Tann’s daughter is sufficient to remove the least doubt as
-to your identity.”
-
-“You are governor of Blentz,” cried Barney, “and yet you say that you
-have never seen the king?”
-
-“Certainly,” replied Maenck. “After you escaped the entire personnel of
-the garrison here was changed, even the old servants to a man were
-withdrawn and others substituted. You will have difficulty in again
-escaping, for those who aided you before are no longer here.”
-
-“There is no man in the castle of Blentz who has ever seen the king?”
-asked Barney.
-
-“None who has seen him before tonight,” replied Maenck. “But were we in
-doubt we have the word of the Princess Emma that you are Leopold. Did
-she not admit it to you, Butzow?”
-
-“When she thought his majesty dead she admitted it,” replied Butzow.
-
-“We gain nothing by discussing the matter,” said Maenck shortly. “You
-are Leopold of Lutha. Prince Peter says that you are mad. All that
-concerns me is that you do not escape again, and you may rest assured
-that while Ernst Maenck is governor of Blentz you shall not escape and
-go at large again.
-
-“Are the royal apartments in readiness for his majesty, Dr. Stein?” he
-concluded, turning toward a rat-faced little man with bushy whiskers,
-who stood just behind him.
-
-The query was propounded in an ironical tone, and with a manner that
-made no pretense of concealing the contempt of the speaker for the man
-he thought the king.
-
-The eyes of the Princess Emma were blazing as she caught the scant
-respect in Maenck’s manner. She looked quickly toward Barney to see if
-he intended rebuking the man for his impertinence. She saw that the
-king evidently intended overlooking Maenck’s attitude. But Emma von der
-Tann was of a different mind.
-
-She had seen Maenck several times at social functions in the capital.
-He had even tried to win a place in her favor, but she had always
-disliked him, even before the nasty stories of his past life had become
-common gossip, and within the year she had won his hatred by definitely
-indicating to him that he was persona non grata, in so far as she was
-concerned. Now she turned upon him, her eyes flashing with indignation.
-
-“Do you forget, sir, that you address the king?” she cried. “That you
-are without honor I have heard men say, and I may truly believe it now
-that I have seen what manner of man you are. The most lowly-bred boor
-in all Lutha would not be so ungenerous as to take advantage of his
-king’s helplessness to heap indignities upon him.
-
-“Leopold of Lutha shall come into his own some day, and my dearest hope
-is that his first act may be to mete out to such as you the punishment
-you deserve.”
-
-Maenck paled in anger. His fingers twitched nervously, but he
-controlled his temper remarkably well, biding his time for revenge.
-
-“Take the king to his apartments, Stein,” he commanded curtly, “and
-you, Lieutenant Butzow, accompany them with a guard, nor leave until
-you see that he is safely confined. You may return here afterward for
-my further instructions. In the meantime I wish to examine the king’s
-mistress.”
-
-For a moment tense silence reigned in the apartment after Maenck had
-delivered his wanton insult.
-
-Emma von der Tann, her little chin high in the air, stood straight and
-haughty, nor was there any sign in her expression to indicate that she
-had heard the man’s words.
-
-Barney was the first to take cognizance of them.
-
-“You cur!” he cried, and took a step toward Maenck. “You’re going to
-eat that, word for word.”
-
-Maenck stepped back, his hand upon his sword. Butzow laid a hand upon
-Barney’s arm.
-
-“Don’t, your majesty,” he implored, “it will but make your position
-more unpleasant, nor will it add to the safety of the Princess von der
-Tann for you to strike him now.”
-
-Barney shook himself free from Butzow, and before either Stein or the
-lieutenant could prevent had sprung upon Maenck.
-
-The latter had not been quick enough with his sword, so that Barney had
-struck him twice, heavily in the face before the officer was able to
-draw. Butzow had sprung to the king’s side, and was attempting to
-interpose himself between Maenck and the American. In a moment more the
-sword of the infuriated captain would be in the king’s heart. Barney
-turned the first thrust with his forearm.
-
-“Stop!” cried Butzow to Maenck. “Are you mad, that you would kill the
-king?”
-
-Maenck lunged again, viciously, at the unprotected body of his
-antagonist.
-
-“Die, you pig of an idiot!” he screamed.
-
-Butzow saw that the man really meant to murder Leopold. He seized
-Barney by the shoulder and whirled him backward. At the same instant
-his own sword leaped from his scabbard, and now Maenck found himself
-facing grim steel in the hand of a master swordsman.
-
-The governor of Blentz drew back from the touch of that sharp point.
-
-“What do you mean?” he cried. “This is mutiny.”
-
-“When I received my commission,” replied Butzow, quietly, “I swore to
-protect the person of the king with my life, and while I live no man
-shall affront Leopold of Lutha in my presence, or threaten his safety
-else he accounts to me for his act. Return your sword, Captain Maenck,
-nor ever again draw it against the king while I be near.”
-
-Slowly Maenck sheathed his weapon. Black hatred for Butzow and the man
-he was protecting smoldered in his eyes.
-
-“If he wishes peace,” said Barney, “let him apologize to the princess.”
-
-“You had better apologize, captain,” counseled Butzow, “for if the king
-should command me to do so I should have to compel you to,” and the
-lieutenant half drew his sword once more.
-
-There was something in Butzow’s voice that warned Maenck that his
-subordinate would like nothing better than the king’s command to run
-him through.
-
-He well knew the fame of Butzow’s sword arm, and having no stomach for
-an encounter with it he grumbled an apology.
-
-“And don’t let it occur again,” warned Barney.
-
-“Come,” said Dr. Stein, “your majesty should be in your apartments,
-away from all excitement, if we are to effect a cure, so that you may
-return to your throne quickly.”
-
-Butzow formed the soldiers about the American, and the party moved
-silently out of the great hall, leaving Captain Maenck and Princess
-Emma von der Tann its only occupants.
-
-Barney cast a troubled glance toward Maenck, and half hesitated.
-
-“I am sorry, your majesty,” said Butzow in a low voice, “but you must
-accompany us. In this the governor of Blentz is well within his
-authority, and I must obey him.”
-
-“Heaven help her!” murmured Barney.
-
-“The governor will not dare harm her,” said Butzow. “Your majesty need
-entertain no apprehension.”
-
-“I wouldn’t trust him,” replied the American. “I know his kind.”
-
-### IV. BARNEY FINDS A FRIEND
-
-After the party had left the room Maenck stood looking at the princess
-for several seconds. A cunning expression supplanted the anger that had
-shown so plainly upon his face but a moment before. The girl had moved
-to one side of the apartment and was pretending an interest in a large
-tapestry that covered the wall at that point. Maenck watched her with
-greedy eyes. Presently he spoke.
-
-“Let us be friends,” he said. “You shall be my guest at Blentz for a
-long time. I doubt if Peter will care to release you soon, for he has
-no love for your father—and it will be easier for both if we establish
-pleasant relations from the beginning. What do you say?”
-
-“I shall not be at Blentz long,” she replied, not even looking in
-Maenck’s direction, “though while I am it shall be as a prisoner and
-not as a guest. It is incredible that one could believe me willing to
-pose as the guest of a traitor, even were he less impossible than the
-notorious and infamous Captain Maenck.”
-
-Maenck smiled. He was one of those who rather pride themselves upon the
-possession of racy reputations. He walked across the room to a bell
-cord which he pulled. Then he turned toward the girl again.
-
-“I have given you an opportunity,” he said, “to lighten the burdens of
-your captivity. I hoped that you would be sensible and accept my
-advances of friendship voluntarily,” and he emphasized the word
-“voluntarily,” “but—”
-
-He shrugged his shoulders.
-
-A servant had entered the apartment in response to Maenck’s summons.
-
-“Show the Princess von der Tann to her apartments,” he commanded with a
-sinister tone.
-
-The man, who was in the livery of Peter of Blentz, bowed, and with a
-deferential sign to the girl led the way from the room. Emma von der
-Tann followed her guide up a winding stairway which spiraled within a
-tower at the end of a long passage. On the second floor of the castle
-the servant led her to a large and beautifully furnished suite of three
-rooms—a bedroom, dressing-room and boudoir. After showing her the rooms
-that were to be hers the servant left her alone.
-
-As soon as he had gone the Princess von der Tann took another turn
-through the suite, looking to the doors and windows to ascertain how
-securely she might barricade herself against unwelcome visitors.
-
-She found that the three rooms lay in an angle of the old, moss-covered
-castle wall.
-
-The bedroom and dressing-room were connected by a doorway, and each in
-turn had another door opening into the boudoir. The only connection
-with the corridor without was through a single doorway from the
-boudoir. This door was equipped with a massive bolt, which, when she
-had shot it, gave her a feeling of immense relief and security. The
-windows were all too high above the court on one side and the moat upon
-the other to cause her the slightest apprehension of danger from the
-outside.
-
-The girl found the boudoir not only beautiful, but extremely
-comfortable and cozy. A huge log-fire blazed upon the hearth, and,
-though it was summer, its warmth was most welcome, for the night was
-chill. Across the room from the fireplace a full length oil of a former
-Blentz princess looked down in arrogance upon the unwilling occupant of
-the room. It seemed to the girl that there was an expression of
-annoyance upon the painted countenance that another, and an enemy of
-her house, should be making free with her belongings. She wondered a
-little, too, that this huge oil should have been hung in a lady’s
-boudoir. It seemed singularly out of place.
-
-“If she would but smile,” thought Emma von der Tann, “she would detract
-less from the otherwise pleasant surroundings, but I suppose she serves
-her purpose in some way, whatever it may be.”
-
-There were papers, magazines and books upon the center table and more
-books upon a low tier of shelves on either side of the fireplace. The
-girl tried to amuse herself by reading, but she found her thoughts
-continually reverting to the unhappy situation of the king, and her
-eyes momentarily wandered to the cold and repellent face of the Blentz
-princess.
-
-Finally she wheeled a great armchair near the fireplace, and with her
-back toward the portrait made a final attempt to submerge her unhappy
-thoughts in a current periodical.
-
-When Barney and his escort reached the apartments that had been
-occupied by the king of Lutha before his escape, Butzow and the
-soldiers left him in company with Dr. Stein and an old servant, whom
-the doctor introduced as his new personal attendant.
-
-“Your majesty will find him a very attentive and faithful servant,”
-said Stein. “He will remain with you and administer your medicine at
-proper intervals.”
-
-“Medicine?” ejaculated Barney. “What in the world do I need of
-medicine? There is nothing the matter with me.”
-
-Stein smiled indulgently.
-
-“Ah, your majesty,” he said, “if you could but realize the sad
-affliction that clouds your life! You may never sit upon your throne
-until the last trace of this sinister mental disorder is eradicated, so
-take your medicine voluntarily, or otherwise Joseph will be compelled
-to administer it by force. Remember, sire, that only through this
-treatment will you be able to leave Blentz.”
-
-After Stein had left the room Joseph bolted the door behind him. Then
-he came to where Barney stood in the center of the apartment, and
-dropping to his knees took the young man’s hand in his and kissed it.
-
-“God has been good indeed, your majesty,” he whispered. “It was He who
-made it possible for old Joseph to deceive them and find his way to
-your side.”
-
-“Who are you, my man?” asked Barney.
-
-“I am from Tann,” whispered the old man, in a very low voice. “His
-highness, the prince, found the means to obtain service for me with the
-new retinue that has replaced the old which permitted your majesty’s
-escape. There was another from Tann among the former servants here.
-
-“It was through his efforts that you escaped before, you will recall. I
-have seen Fritz and learned from him the way, so that if your majesty
-does not recall it it will make no difference, for I know it well,
-having been over it three times already since I came here, to be sure
-that when the time came that they should recapture you I might lead you
-out quickly before they could slay you.”
-
-“You really think that they intend murdering me?”
-
-“There is no doubt about it, your majesty,” replied the old man. “This
-very bottle”—Joseph touched the phial which Stein had left upon the
-table—“contains the means whereby, through my hands, you were to be
-slowly poisoned.”
-
-“Do you know what it is?”
-
-“Bichloride of mercury, your majesty. One dose would have been
-sufficient, and after a few days—perhaps a week—you would have died in
-great agony.”
-
-Barney shuddered.
-
-“But I am not the king, Joseph,” said the young man, “so even had they
-succeeded in killing me it would have profited them nothing.”
-
-Joseph shook his head sadly.
-
-“Your majesty will pardon the presumption of one who loves him,” he
-said, “if he makes so bold as to suggest that your majesty must not
-again deny that he is king. That only tends to corroborate the
-contention of Prince Peter that your majesty is not—er, just sane, and
-so, incompetent to rule Lutha. But we of Tann know differently, and
-with the help of the good God we will place your majesty upon the
-throne which Peter has kept from you all these years.”
-
-Barney sighed. They were determined that he should be king whether he
-would or no. He had often thought he would like to be a king; but now
-the realization of his boyish dreaming which seemed so imminent bade
-fair to be almost anything than pleasant.
-
-Barney suddenly realized that the old fellow was talking. He was
-explaining how they might escape. It seemed that a secret passage led
-from this very chamber to the vaults beneath the castle and from there
-through a narrow tunnel below the moat to a cave in the hillside far
-beyond the structure.
-
-“They will not return again tonight to see your majesty,” said Joseph,
-“and so we had best make haste to leave at once. I have a rope and
-swords in readiness. We shall need the rope to make our way down the
-hillside, but let us hope that we shall not need the swords.”
-
-“I cannot leave Blentz,” said Barney, “unless the Princess Emma goes
-with us.”
-
-“The Princess Emma!” cried the old man. “What Princess Emma?”
-
-“Princess von der Tann,” replied Barney. “Did you not know that she was
-captured with me!”
-
-The old man was visibly affected by the knowledge that his young
-mistress was a prisoner within the walls of Blentz. He seemed torn by
-conflicting emotions—his duty toward his king and his love for the
-daughter of his old master. So it was that he seemed much relieved when
-he found that Barney insisted upon saving the girl before any thought
-of their own escape should be taken into consideration.
-
-“My first duty, your majesty,” said Joseph, “is to bring you safely out
-of the hands of your enemies, but if you command me to try to bring
-your betrothed with us I am sure that his highness, Prince Ludwig,
-would be the last to censure me for deviating thus from his
-instructions, for if he loves another more than he loves his king it is
-his daughter, the beautiful Princess Emma.”
-
-“What do you mean, Joseph,” asked Barney, “by referring to the princess
-as my betrothed? I never saw her before today.”
-
-“It has slipped your majesty’s mind,” said the old man sadly; “but you
-and my young mistress were betrothed many years ago while you were yet
-but children. It was the old king’s wish that you wed the daughter of
-his best friend and most loyal subject.”
-
-Here was a pretty pass, indeed, thought Barney. It was sufficiently
-embarrassing to be mistaken for the king, but to be thrown into this
-false position in company with a beautiful young woman to whom the king
-was engaged to be married, and who, with the others, thought him to be
-the king, was quite the last word in impossible positions.
-
-Following this knowledge there came to Barney the first pangs of regret
-that he was not really the king, and then the realization, so sudden
-that it almost took his breath away, that the girl was very beautiful
-and very much to be desired. He had not thought about the matter until
-her utter impossibility was forced upon him.
-
-It was decided that Joseph should leave the king’s apartment at once
-and discover in what part of the castle Emma von der Tann was
-imprisoned. Their further plans were to depend upon the information
-gained by the old man during his tour of investigation of the castle.
-
-In the interval of his absence Barney paced the length of his prison
-time and time again. He thought the fellow would never return. Perhaps
-he had been detected in the act of spying, and was himself a prisoner
-in some other part of the castle! The thought came to Barney like a
-blow in the face, for he realized that then he would be entirely at the
-mercy of his captors, and that there would be none to champion the
-cause of the Princess von der Tann.
-
-When his nervous tension had about reached the breaking point there
-came a sound of stealthy movement just outside the door of his room.
-Barney halted close to the massive panels. He heard a key fitted
-quietly and then the lock grated as it turned.
-
-Barney thought that they had surely detected Joseph’s duplicity and had
-come to make short work of the king before other traitors arose in
-their midst entirely to frustrate their plans. The young American
-stepped to the wall behind the door that he might be out of sight of
-whoever entered. Should it prove other than Joseph, might the Lord help
-them! The clenched fists, square-set chin, and gleaming gray eyes of
-the prisoner presaged no good for any incoming enemy.
-
-Slowly the door swung open and a man entered the room. Barney breathed
-a deep sigh of relief—it was Joseph.
-
-“Well?” cried the young man from behind him, and Joseph started as
-though Peter of Blentz himself had laid an accusing finger upon his
-shoulder. “What news?”
-
-“Your majesty,” gasped Joseph, “how you did startle me! I found the
-apartments of the princess, sire. There is a bare chance that we may
-succeed in rescuing her, but a very bare one, indeed.
-
-“We must traverse a main corridor of the castle to reach her suite, and
-then return by the same way. It will be a miracle if we are not
-discovered; but the worst of it is that next to her apartments, and
-between them and your majesty’s, are the apartments of Captain Maenck.
-
-“He is sure to be there and officers and servants may be coming and
-going throughout the entire night, for the man is a convivial fellow,
-sitting at cards and drink until sunrise nearly every day.”
-
-“And when we have brought the princess in safety to my quarters,” asked
-Barney, “what then? How shall we conduct her from the castle? You have
-not told me that as yet.”
-
-The old man explained then the plan of escape. It seemed that one of
-the two huge tile panels that flanked the fireplace on either side was
-in reality a door hiding the entrance to a shaft that rose from the
-vaults beneath the castle to the roof. At each floor there was a
-similar secret door concealing the mouth of the passage. From the
-vaults a corridor led through another secret panel to the tunnel that
-wound downward to the cave in the hillside.
-
-“Beyond that we shall find horses, your majesty,” concluded the old
-man. “They have been hidden in the woods since I came to Blentz. Each
-day I go there to water and feed them.”
-
-During the servant’s explanation Barney had been casting about in his
-mind for some means of rescuing the princess without so great risk of
-detection, and as the plan of the secret passageway became clear to him
-he thought that he saw a way to accomplish the thing with comparative
-safety in so far as detection was concerned.
-
-“Who occupies the floor above us, Joseph?” he asked.
-
-“It is vacant,” replied the old man.
-
-“Good! Come, show me the entrance to the shaft,” directed Barney.
-
-“You will go without attempting to succor the Princess Emma?” exclaimed
-the old fellow in ill-concealed chagrin.
-
-“Far from it,” replied Barney. “Bring your rope and the swords. I think
-we are going to find the rescuing of the Princess Emma the easiest part
-of our adventure.”
-
-The old man shook his head, but went to another room of the suite, from
-which he presently emerged with a stout rope about fifty feet in length
-and two swords. As he buckled one of the weapons to Barney his eyes
-fell upon the American’s seal ring that encircled the third finger of
-his left hand.
-
-“The Royal Ring of Lutha!” exclaimed Joseph. “Where is it, your
-majesty? What has become of the Royal Ring of the Kings of Lutha?”
-
-“I’m sure I don’t know, Joseph,” replied the young man. “Should I be
-wearing a royal ring?”
-
-“The profaning miscreants!” cried Joseph. “They have dared to filch
-from you the great ring that has been handed down from king to king for
-three hundred years. When did they take it from you?”
-
-“I have never seen it, Joseph,” replied the young man, “and possibly
-this fact may assure you where all else has failed that I am no true
-king of Lutha, after all.”
-
-“Ah, no, your majesty,” replied the old servitor; “it but makes
-assurance doubly sure as to your true identity, for the fact that you
-have not the ring is positive proof that you are king and that they
-have sought to hide the fact by removing the insignia of your divine
-right to rule in Lutha.”
-
-Barney could not but smile at the old fellow’s remarkable logic. He saw
-that nothing short of a miracle would ever convince Joseph that he was
-not the real monarch, and so, as matters of greater importance were to
-the fore, he would have allowed the subject to drop had not the man
-attempted to recall to the impoverished memory of his king a
-recollection of the historic and venerated relic of the dead monarchs
-of Lutha.
-
-“Do you not remember, sir,” he asked, “the great ruby that glared,
-blood-red from its center, and the four sets of golden wings that
-formed the setting? From the blood of Charlemagne was the ruby made, so
-history tells us, and the setting represented the protecting wings of
-the power of the kings of Lutha spread to the four points of the
-compass. Now your majesty must recall the royal ring, I am sure.”
-
-Barney only shook his head, much to Joseph’s evident sorrow.
-
-“Never mind the ring, Joseph,” said the young man. “Bring your rope and
-lead me to the floor above.”
-
-“The floor above? But, your majesty, we cannot reach the vaults and
-tunnel by going upward!”
-
-“You forget, Joseph, that we are going to fetch the Princess Emma
-first.”
-
-“But she is not on the floor above us, sire; she is upon the same floor
-as we are,” insisted the old man, hesitating.
-
-“Joseph, who do you think I am?” asked Barney.
-
-“You are the king, my lord,” replied the old man.
-
-“Then do as your king commands,” said the American sharply.
-
-Joseph turned with dubious mutterings and approached the tiled panel at
-the left of the fireplace. Here he fumbled about for a moment until his
-fingers found the hidden catch that held the cunningly devised door in
-place. An instant later the panel swung inward before his touch, and
-standing to one side, the old fellow bowed low as he ushered Barney
-into the Stygian darkness of the space beyond their vision.
-
-Joseph halted the young man just within the doorway, cautioning him
-against the danger of falling into the shaft, then he closed the panel,
-and a moment later had found the lantern he had hidden there and
-lighted it. The rays disclosed to the American the rough masonry of the
-interior of a narrow, well-built shaft. A rude ladder standing upon a
-narrow ledge beside him extended upward to lose itself in the shadows
-above. At its foot the top of another ladder was visible protruding
-through the opening from the floor beneath.
-
-No sooner had Joseph’s lantern shown him the way than Barney was
-ascending the ladder toward the floor above. At the next landing he
-waited for the old man.
-
-Joseph put out the light and placed the lantern where they could easily
-find it upon their return. Then he cautiously slipped the catch that
-held the panel in place and slowly opened the door until a narrow line
-of lesser darkness showed from without.
-
-For a moment they stood in silence listening for any sound from the
-chamber beyond, but as nothing occurred to indicate that the apartment
-was occupied the old man opened the portal a trifle further, and
-finally far enough to permit his body to pass through. Barney followed
-him. They found themselves in a large, empty chamber, identical in size
-and shape with that which they had just quitted upon the floor below.
-
-From this the two passed into the corridor beyond, and thence to the
-apartments at the far end of the wing, directly over those occupied by
-Emma von der Tann.
-
-Barney hastened to a window overlooking the moat. By leaning far out he
-could see the light from the princess’s chamber shining upon the sill.
-He wished that the light was not there, for the window was in plain
-view of the guard on the lookout upon the barbican.
-
-Suddenly he caught the sound of voices from the chamber beneath. For an
-instant he listened, and then, catching a few words of the dialogue, he
-turned hurriedly toward his companion.
-
-“The rope, Joseph! And for God’s sake be quick about it.”
-
-### V. THE ESCAPE
-
-For half an hour the Princess von der Tann succeeded admirably in
-immersing herself in the periodical, to the exclusion of her unhappy
-thoughts and the depressing influence of the austere countenance of the
-Blentz Princess hanging upon the wall behind her.
-
-But presently she became unaccountably nervous. At the slightest sound
-from the palace-life on the floor below she would start up with a
-tremor of excitement. Once she heard footsteps in the corridor before
-her door, but they passed on, and she thought she discerned the click
-of a latch a short distance further on along the passageway.
-
-Again she attempted to gather up the thread of the article she had been
-reading, but she was unsuccessful. A stealthy scratching brought her
-round quickly, staring in the direction of the great portrait. The girl
-would have sworn that she had heard a noise within her chamber. She
-shuddered at the thought that it might have come from that painted
-thing upon the wall.
-
-What was the matter with her? Was she losing all control of herself to
-be frightened like a little child by ghostly noises?
-
-She tried to return to her reading, but for the life of her she could
-not keep her eyes off the silent, painted woman who stared and stared
-and stared in cold, threatening silence upon this ancient enemy of her
-house.
-
-Presently the girl’s eyes went wide in horror. She could feel the scalp
-upon her head contract with fright. Her terror-filled gaze was frozen
-upon that awful figure that loomed so large and sinister above her, for
-the thing had moved! She had seen it with her own eyes. There could be
-no mistake—no hallucination of overwrought nerves about it. The Blentz
-Princess was moving slowly toward her!
-
-Like one in a trance the girl rose from her chair, her eyes glued upon
-the awful apparition that seemed creeping upon her. Slowly she withdrew
-toward the opposite side of the chamber. As the painting moved more
-quickly the truth flashed upon her—it was mounted on a door.
-
-The crack of the door widened and beyond it the girl saw dimly, eyes
-fastened upon her. With difficulty she restrained a shriek. The portal
-swung wide and a man in uniform stepped into the room.
-
-It was Maenck.
-
-Emma von der Tann gazed in unveiled abhorrence upon the leering face of
-the governor of Blentz.
-
-“What means this intrusion?” cried the girl.
-
-“What would you have here?”
-
-“You,” replied Maenck.
-
-The girl crimsoned.
-
-Maenck regarded her sneeringly.
-
-“You coward!” she cried. “Leave my apartments at once. Not even Peter
-of Blentz would countenance such abhorrent treatment of a prisoner.”
-
-“You do not know Peter, my dear,” responded Maenck. “But you need not
-fear. You shall be my wife. Peter has promised me a baronetcy for the
-capture of Leopold, and before I am done I shall be made a prince, of
-that you may rest assured, so you see I am not so bad a match after
-all.”
-
-He crossed over toward her and would have laid a rough hand upon her
-arm.
-
-The girl sprang away from him, running to the opposite side of the
-library table at which she had been reading. Maenck started to pursue
-her, when she seized a heavy, copper bowl that stood upon the table and
-hurled it full in his face. The missile struck him a glancing blow, but
-the edge laid open the flesh of one cheek almost to the jaw bone.
-
-With a cry of pain and rage Captain Ernst Maenck leaped across the
-table full upon the young girl. With vicious, murderous fingers he
-seized upon her fair throat, shaking her as a terrier might shake a
-rat. Futilely the girl struck at the hate-contorted features so close
-to hers.
-
-“Stop!” she cried. “You are killing me.”
-
-The fingers released their hold.
-
-“No,” muttered the man, and dragged the princess roughly across the
-room.
-
-Half a dozen steps he had taken when there came a sudden crash of
-breaking glass from the window across the chamber. Both turned in
-astonishment to see the figure of a man leap into the room, carrying
-the shattered crystal and the casement with him. In one hand was a
-naked sword.
-
-“The king!” cried Emma von der Tann.
-
-“The devil!” muttered Maenck, as, dropping the girl, he scurried toward
-the great painting from behind which he had found ingress to the
-chambers of the princess.
-
-Maenck was a coward, and he had seen murder in the eyes of the man
-rushing upon him. With a bound he reached the picture which still stood
-swung wide into the room.
-
-Barney was close behind him, but fear lent wings to the governor of
-Blentz, so that he was able to dart into the passage behind the picture
-and slam the door behind him a moment before the infuriated man was
-upon him.
-
-The American clawed at the edge of the massive frame, but all to no
-avail. Then he raised his sword and slashed the canvas, hoping to find
-a way into the place beyond, but mighty oaken panels barred his further
-progress. With a whispered oath he turned back toward the girl.
-
-“Thank Heaven that I was in time, Emma,” he cried.
-
-“Oh, Leopold, my king, but at what a price,” replied the girl. “He will
-return now with others and kill you. He is furious—so furious that he
-scarce knows what he does.”
-
-“He seemed to know what he was doing when he ran for that hole in the
-wall,” replied Barney with a grin. “But come, it won’t pay to let them
-find us should they return.”
-
-Together they hastened to the window beyond which the girl could see a
-rope dangling from above. The sight of it partially solved the riddle
-of the king’s almost uncanny presence upon her window sill in the very
-nick of time.
-
-Below, the lights in the watch tower at the outer gate were plainly
-visible, and the twinkling of them reminded Barney of the danger of
-detection from that quarter. Quickly he recrossed the apartment to the
-wall-switch that operated the recently installed electric lights, and
-an instant later the chamber was in total darkness.
-
-Once more at the girl’s side Barney drew in one end of the rope and
-made it fast about her body below her arms, leaving a sufficient length
-terminating in a small loop to permit her to support herself more
-comfortably with one foot within the noose. Then he stepped to the
-outer sill, and reaching down assisted her to his side.
-
-Far below them the moonlight played upon the sluggish waters of the
-moat. In the distance twinkled the lights of the village of Blentz.
-From the courtyard and the palace came faintly the sound of voices, and
-the movement of men. A horse whinnied from the stables.
-
-Barney turned his eyes upward. He could see the head and shoulders of
-Joseph leaning from the window of the chamber directly above them.
-
-“Hoist away, Joseph!” whispered the American, and to the girl: “Be
-brave. Shut your eyes and trust to Joseph and—and—”
-
-“And my king,” finished the girl for him.
-
-His arm was about her shoulders, supporting her upon the narrow sill.
-His cheek so close to hers that once he felt the soft velvet of it
-brush his own. Involuntarily his arm tightened about the supple body.
-
-“My princess!” he murmured, and as he turned his face toward hers their
-lips almost touched.
-
-Joseph was pulling upon the rope from above. They could feel it tighten
-beneath the girl’s arms. Impulsively Barney Custer drew the sweet lips
-closer to his own. There was no resistance.
-
-“I love you,” he whispered. The words were smothered as their lips met.
-
-Joseph, above, wondered at the great weight of the Princess Emma von
-der Tann.
-
-“I love you, Leopold, forever,” whispered the girl, and then as
-Joseph’s Herculean tugging seemed likely to drag them both from the
-narrow sill, Barney lifted the girl upward with one hand while he clung
-to the window frame with the other. The distance to the sill above was
-short, and a moment later Joseph had grasped the princess’s hand and
-was helping her over the ledge into the room beyond.
-
-At the same instant there came a sudden commotion from the interior of
-the room in the window of which Barney still stood waiting for Joseph
-to remove the rope from about the princess and lower it for him. Barney
-heard the heavy feet of men, the clank of arms, and muttered oaths as
-the searchers stumbled against the furniture.
-
-Presently one of them found the switch and instantly the room was
-flooded with light, which revealed to the American a dozen Luthanian
-troopers headed by the murderous Maenck.
-
-Barney looked anxiously aloft. Would Joseph never lower that rope!
-Within the room the men were searching. He could hear Maenck directing
-them. Only a thin portiere screened him from their view. It was but a
-matter of seconds before they would investigate the window through
-which Maenck knew the king had found ingress.
-
-Yes! It had come.
-
-“Look to the window,” commanded Maenck. “He may have gone as he came.”
-
-Two of the soldiers crossed the room toward the casement. From above
-Joseph was lowering the rope; but it was too late. The men would be at
-the window before he could clamber out of their reach.
-
-“Hoist away!” he whispered to Joseph. “Quick now, my man, and make your
-escape with the Princess von der Tann. It is the king’s command.”
-
-Already the soldiers were at the window. At the sound of his voice they
-tore aside the draperies; at the same instant the pseudo-king turned
-and leaped out into the blackness of the night.
-
-There were exclamations of surprise and rage from the soldiers—a
-woman’s scream. Then from far below came a dull splash as the body of
-Bernard Custer struck the surface of the moat.
-
-Maenck, leaning from the window, heard the scream and the splash, and
-jumped to the conclusion that both the king and the princess had
-attempted to make their escape in this harebrained way. Immediately all
-the resources at his command were put to the task of searching the moat
-and the adjacent woods.
-
-He was sure that one or both of the prisoners would be stunned by
-impact with the surface of the water, and then drowned before they
-regained consciousness, but he did not know Bernard Custer, nor the
-facility and almost uncanny ease with which that young man could
-negotiate a high dive into shallow water.
-
-Nor did he know that upon the floor above him one Joseph was hastening
-along a dark corridor toward a secret panel in another apartment, and
-that with him was the Princess Emma bound for liberty and safety far
-from the frowning walls of Blentz.
-
-As Barney’s head emerged above the surface of the moat he shook it
-vigorously to free his eyes from water, and then struck out for the
-further bank.
-
-Long before his pursuers had reached the courtyard and alarmed the
-watch at the barbican, the American had crawled out upon dry land and
-hastened across the broad clearing to the patch of stunted trees that
-grew lower down upon the steep hillside before the castle.
-
-He shrank from the thought of leaving Blentz without knowing positively
-that Joseph had made good the escape of himself and the princess, but
-he finally argued that even if they had been retaken, he could serve
-her best by hastening to her father and fetching the only succor that
-might prevail against the strength of Blentz—armed men in sufficient
-force to storm the ancient fortress.
-
-He had scarcely entered the wood when he heard the sound of the
-searchers at the moat, and saw the rays of their lanterns flitting
-hither and thither as they moved back and forth along the bank.
-
-Then the young man turned his face from the castle and set forth across
-the unfamiliar country in the direction of the Old Forest and the
-castle Von der Tann.
-
-The memory of the warm lips that had so recently been pressed to his
-urged him on in the service of the wondrous girl who had come so
-suddenly into his life, bringing to him the realization of a love that
-he knew must alter, for happiness or for sorrow, all the balance of his
-existence, even unto death.
-
-He dreaded the day of reckoning when, at last, she must learn that he
-was no king. He did not have the temerity to hope that her courage
-would be equal to the great sacrifice which the acknowledgment of her
-love for one not of noble blood must entail; but he could not believe
-that she would cease to love him when she learned the truth.
-
-So the future looked black and cheerless to Barney Custer as he trudged
-along the rocky, moonlit way. The only bright spot was the realization
-that for a while at least he might be serving the one woman in all the
-world.
-
-All the balance of the long night the young man traversed valley and
-mountain, holding due south in the direction he supposed the Old Forest
-to lie. He passed many a little farm tucked away in the hollow of a
-hillside, and quaint hamlets, and now and then the ruins of an ancient
-feudal stronghold, but no great forest of black oaks loomed before him
-to apprise him of the nearness of his goal, nor did he dare to ask the
-correct route at any of the homes he passed.
-
-His fatal likeness to the description of the mad king of Lutha warned
-him from intercourse with the men of Lutha until he might know which
-were friends and which enemies of the hapless monarch.
-
-Dawn found him still upon his way, but with the determination fully
-crystallized to hail the first man he met and ask the way to Tann. He
-still avoided the main traveled roads, but from time to time he
-paralleled them close enough that he might have ample opportunity to
-hail the first passerby.
-
-The road was becoming more and more mountainous and difficult. There
-were fewer homes and no hamlets, and now he began to despair entirely
-of meeting any who could give him direction unless he turned and
-retraced his steps to the nearest farm.
-
-Directly before him the narrow trail he had been following for the past
-few miles wound sharply about the shoulder of a protruding cliff. He
-would see what lay beyond the turn—perhaps he would find the Old Forest
-there, after all.
-
-But instead he found something very different, though in its way quite
-as interesting, for as he rounded the rugged bluff he came face to face
-with two evil-looking fellows astride stocky, rough-coated ponies.
-
-At sight of him they drew in their mounts and eyed him suspiciously.
-Nor was there great cause for wonderment in that, for the American
-presented aught but a respectable appearance. His khaki motoring suit,
-soaked from immersion in the moat, had but partially dried upon him.
-Mud from the banks of the stagnant pool caked his legs to the knees,
-almost hiding his once tan puttees. More mud streaked his jacket front
-and stained its sleeves to the elbows. He was bare-headed, for his cap
-had remained in the moat at Blentz, and his disheveled hair was tousled
-upon his head, while his full beard had dried into a weird and tangled
-fringe about his face. At his side still hung the sword that Joseph had
-buckled there, and it was this that caused the two men the greatest
-suspicion of this strange looking character.
-
-They continued to eye Barney in silence, every now and then casting
-apprehensive glances beyond him, as though expecting others of his kind
-to appear in the trail at his back. And that is precisely what they did
-fear, for the sword at Barney’s side had convinced them that he must be
-an officer of the army, and they looked to see his command following in
-his wake.
-
-The young man saluted them pleasantly, asking the direction to the Old
-Forest. They thought it strange that a soldier of Lutha should not know
-his own way about his native land, and so judged that his question was
-but a blind to deceive them.
-
-“Why do you not ask your own men the way?” parried one of the fellows.
-
-“I have no men, I am alone,” replied Barney. “I am a stranger in Lutha
-and have lost my way.”
-
-He who had spoken before pointed to the sword at Barney’s side.
-
-“Strangers traveling in Lutha do not wear swords,” he said. “You are an
-officer. Why should you desire to conceal the fact from two honest
-farmers? We have done nothing. Let us go our way.”
-
-Barney looked his astonishment at this reply.
-
-“Most certainly, go your way, my friends,” he said laughing. “I would
-not delay you if I could; but before you go please be good enough to
-tell me how to reach the Old Forest and the ancient castle of the
-Prince von der Tann.”
-
-For a moment the two men whispered together, then the spokesman turned
-to Barney.
-
-“We will lead you upon the right road. Come,” and the two turned their
-horses, one of them starting slowly back up the trail while the other
-remained waiting for Barney to pass him.
-
-The American, suspecting nothing, voiced his thanks, and set out after
-him who had gone before. As he passed the fellow who waited the latter
-moved in behind him, so that Barney walked between the two.
-Occasionally the rider at his back turned in his saddle to scan the
-trail behind, as though still fearful that Barney had been lying to
-them and that he would discover a company of soldiers charging down
-upon them.
-
-The trail became more and more difficult as they advanced, until Barney
-wondered how the little horses clung to the steep mountainside, where
-he himself had difficulty in walking without using his hand to keep
-from falling.
-
-Twice the American attempted to break through the taciturnity of his
-guides, but his advances were met with nothing more than sultry grunts
-or silence, and presently a suspicion began to obtrude itself among his
-thoughts that possibly these “honest farmers” were something more
-sinister than they represented themselves to be.
-
-A malign and threatening atmosphere seemed to surround them. Even the
-cat-like movement of their silent mounts breathed a sinister secrecy,
-and now, for the first time, Barney noticed the short, ugly looking
-carbines that were slung in boots at their saddle-horns. Then, prompted
-to further investigation, he dropped back beside the man who had been
-riding behind him, and as he did so he saw beneath the fellow’s cloak
-the butts of two villainous-looking pistols.
-
-As Barney dropped back beside him the man turned his mount across the
-narrow trail, and reining him in motioned Barney ahead.
-
-“I have changed my mind,” said the American, “about going to the Old
-Forest.”
-
-He had determined that he might as well have the thing out now as
-later, and discover at once how he stood with these two, and whether or
-not his suspicions of them were well grounded.
-
-The man ahead had halted at the sound of Barney’s voice, and swung
-about in the saddle.
-
-“What’s the trouble?” he asked.
-
-“He don’t want to go to the Old Forest,” explained his companion, and
-for the first time Barney saw one of them grin. It was not at all a
-pleasant grin, nor reassuring.
-
-“He don’t, eh?” growled the other. “Well, he ain’t goin’, is he? Who
-ever said he was?”
-
-And then he, too, laughed.
-
-“I’m going back the way I came,” said Barney, starting around the horse
-that blocked his way.
-
-“No, you ain’t,” said the horseman. “You’re goin’ with us.”
-
-And Barney found himself gazing down the muzzle of one of the wicked
-looking pistols.
-
-For a moment he stood in silence, debating mentally the wisdom of
-attempting to rush the fellow, and then, with a shake of his head, he
-turned back up the trail between his captors.
-
-“Yes,” he said, “on second thought I have decided to go with you. Your
-logic is most convincing.”
-
-### VI. A KING’S RANSOM
-
-For another mile the two brigands conducted their captor along the
-mountainside, then they turned into a narrow ravine near the summit of
-the hills—a deep, rocky, wooded ravine into whose black shadows it
-seemed the sun might never penetrate.
-
-A winding path led crookedly among the pines that grew thickly in this
-sheltered hollow, until presently, after half an hour of rough going,
-they came upon a small natural clearing, rock-bound and impregnable.
-
-As they filed from the wood Barney saw a score of villainous fellows
-clustered about a camp fire where they seemed engaged in cooking their
-noonday meal. Bits of meat were roasting upon iron skewers, and a great
-iron pot boiled vigorously at one side of the blaze.
-
-At the sound of their approach the men sprang to their feet in alarm,
-and as many weapons as there were men leaped to view; but when they saw
-Barney’s companions they returned their pistols to their holsters, and
-at sight of Barney they pressed forward to inspect the prisoner.
-
-“Who have we here?” shouted a big blond giant, who affected extremely
-gaudy colors in his selection of wearing apparel, and whose pistols and
-knife had their grips heavily ornamented with pearl and silver.
-
-“A stranger in Lutha he calls himself,” replied one of Barney’s
-captors. “But from the sword I take it he is one of old Peter’s
-wolfhounds.”
-
-“Well, he’s found the wolves at any rate,” replied the giant, with a
-wide grin at his witticism. “And if Yellow Franz is the particular wolf
-you’re after, my friend, why here I am,” he concluded, addressing the
-American with a leer.
-
-“I’m after no one,” replied Barney. “I tell you I’m a stranger, and I
-lost my way in your infernal mountains. All I wish is to be set upon
-the right road to Tann, and if you will do that for me you shall be
-well paid for your trouble.”
-
-The giant, Yellow Franz, had come quite close to Barney and was
-inspecting him with an expression of considerable interest. Presently
-he drew a soiled and much-folded paper from his breast. Upon one side
-was a printed notice, and at the corners bits were torn away as though
-the paper had once been tacked upon wood, and then torn down without
-removing the tacks.
-
-At sight of it Barney’s heart sank. The look of the thing was all too
-familiar. Before the yellow one had commenced to read aloud from it
-Barney had repeated to himself the words he knew were coming.
-
-“‘Gray eyes,’” read the brigand, “‘brown hair, and a full,
-reddish-brown beard.’ Herman and Friedrich, my dear children, you have
-stumbled upon the richest haul in all Lutha. Down upon your
-marrow-bones, you swine, and rub your low-born noses in the dirt before
-your king.”
-
-The others looked their surprise.
-
-“The king?” one cried.
-
-“Behold!” cried Yellow Franz. “Leopold of Lutha!”
-
-He waved a ham-like hand toward Barney.
-
-Among the rough men was a young smooth-faced boy, and now with wide
-eyes he pressed forward to get a nearer view of the wonderful person of
-a king.
-
-“Take a good look at him, Rudolph,” cried Yellow Franz. “It is the
-first and will probably be the last time you will ever see a king.
-Kings seldom visit the court of their fellow monarch, Yellow Franz of
-the Black Mountains.
-
-“Come, my children, remove his majesty’s sword, lest he fall and stick
-himself upon it, and then prepare the royal chamber, seeing to it that
-it be made so comfortable that Leopold will remain with us a long time.
-Rudolph, fetch food and water for his majesty, and see to it that the
-silver plates and the golden goblets are well scoured and polished up.”
-
-They conducted Barney to a miserable lean-to shack at one side of the
-clearing, and for a while the motley crew loitered about bandying
-coarse jests at the expense of the “king.” The boy, Rudolph, brought
-food and water, he alone of them all evincing the slightest respect or
-awe for the royalty of their unwilling guest.
-
-After a time the men tired of the sport of king-baiting, for Barney
-showed neither rancor nor outraged majesty at their keenest thrusts,
-instead, often joining in the laugh with them at his own expense. They
-thought it odd that the king should hold his dignity in so low esteem,
-but that he was king they never doubted, attributing his denials to a
-disposition to deceive them, and rob them of the “king’s ransom” they
-had already commenced to consider as their own.
-
-Shortly after Barney arrived at the rendezvous he saw a messenger
-dispatched by Yellow Franz, and from the repeated gestures toward
-himself that had accompanied the giant’s instructions to his emissary,
-Barney was positive that the man’s errand had to do with him.
-
-After the men had left his prison, leaving the boy standing awkwardly
-in wide-eyed contemplation of his august charge, the American ventured
-to open a conversation with his youthful keeper.
-
-“Aren’t you rather young to be starting in the bandit business,
-Rudolph?” asked Barney, who had taken a fancy to the youth.
-
-“I do not want to be a bandit, your majesty,” whispered the lad; “but
-my father owes Yellow Franz a great sum of money, and as he could not
-pay the debt Yellow Franz stole me from my home and says that he will
-keep me until my father pays him, and that if he does not pay he will
-make a bandit of me, and that then some day I shall be caught and
-hanged until I am dead.”
-
-“Can’t you escape?” asked the young man. “It would seem to me that
-there would be many opportunities for you to get away undetected.”
-
-“There are, but I dare not. Yellow Franz says that if I run away he
-will be sure to come across me some day again and that then he will
-kill me.”
-
-Barney laughed.
-
-“He is just talking, my boy,” he said. “He thinks that by frightening
-you he will be able to keep you from running away.”
-
-“Your majesty does not know him,” whispered the youth, shuddering. “He
-is the wickedest man in all the world. Nothing would please him more
-than killing me, and he would have done it long since but for two
-things. One is that I have made myself useful about his camp, doing
-chores and the like, and the other is that were he to kill me he knows
-that my father would never pay him.”
-
-“How much does your father owe him?”
-
-“Five hundred marks, your majesty,” replied Rudolph. “Two hundred of
-this amount is the original debt, and the balance Yellow Franz has
-added since he captured me, so that it is really ransom money. But my
-father is a poor man, so that it will take a long time before he can
-accumulate so large a sum.
-
-“You would really like to go home again, Rudolph?”
-
-“Oh, very much, your majesty, if I only dared.” Barney was silent for
-some time, thinking. Possibly he could effect his own escape with the
-connivance of Rudolph, and at the same time free the boy. The paltry
-ransom he could pay out of his own pocket and send to Yellow Franz
-later, so that the youth need not fear the brigand’s revenge. It was
-worth thinking about, at any rate.
-
-“How long do you imagine they will keep me, Rudolph?” he asked after a
-time.
-
-“Yellow Franz has already sent Herman to Lustadt with a message for
-Prince Peter, telling him that you are being held for ransom, and
-demanding the payment of a huge sum for your release. Day after
-tomorrow or the next day he should return with Prince Peter’s reply.
-
-“If it is favorable, arrangements will be made to turn you over to
-Prince Peter’s agents, who will have to come to some distant meeting
-place with the money. A week, perhaps, it will take, maybe longer.”
-
-It was the second day before Herman returned from Lustadt. He rode in
-just at dark, his pony lathered from hard going.
-
-Barney and the boy saw him coming, and the youth ran forward with the
-others to learn the news that he had brought; but Yellow Franz and his
-messenger withdrew to a hut which the brigand chief reserved for his
-own use, nor would he permit any beside the messenger to accompany him
-to hear the report.
-
-For half an hour Barney sat alone waiting for word from Yellow Franz
-that arrangements had been consummated for his release, and then out of
-the darkness came Rudolph, wide-eyed and trembling.
-
-“Oh, my king?” he whispered. “What shall we do? Peter has refused to
-ransom you alive, but he has offered a great sum for unquestioned proof
-of your death. Already he has caused a proclamation to be issued
-stating that you have been killed by bandits after escaping from
-Blentz, and ordering a period of national mourning. In three weeks he
-is to be crowned king of Lutha.”
-
-“When do they intend terminating my existence?” queried Barney.
-
-There was a smile upon his lips, for even now he could scarce believe
-that in the twentieth century there could be any such medieval plotting
-against a king’s life, and yet, on second thought, had he not ample
-proof of the lengths to which Peter of Blentz was willing to go to
-obtain the crown of Lutha!
-
-“I do not know, your majesty,” replied Rudolph, “when they will do it;
-but soon, doubtless, since the sooner it is done the sooner they can
-collect their pay.”
-
-Further conversation was interrupted by the sound of footsteps without,
-and an instant later Yellow Franz entered the squalid apartment and the
-dim circle of light which flickered feebly from the smoky lantern that
-hung suspended from the rafters.
-
-He stopped just within the doorway and stood eyeing the American with
-an ugly grin upon his vicious face. Then his eyes fell upon the
-trembling Rudolph.
-
-“Get out of here, you!” he growled. “I’ve got private business with
-this king. And see that you don’t come nosing round either, or I’ll
-slit that soft throat for you.”
-
-Rudolph slipped past the burly ruffian, barely dodging a brutal blow
-aimed at him by the giant, and escaped into the darkness without.
-
-“And now for you, my fine fellow,” said the brigand, turning toward
-Barney. “Peter says you ain’t worth nothing to him—alive, but that your
-dead body will fetch us a hundred thousand marks.”
-
-“Rather cheap for a king, isn’t it?” was Barney’s only comment.
-
-“That’s what Herman tells him,” replied Yellow Franz. “But he’s a close
-one, Peter is, and so it was that or nothing.”
-
-“When are you going to pull off this little—er—ah—royal demise?” asked
-Barney.
-
-“If you mean when am I going to kill you,” replied the bandit, “why,
-there ain’t no particular rush about it. I’m a tender-hearted chap, I
-am. I never should have been in this business at all, but here I be,
-and as there ain’t nobody that can do a better job of the kind than me,
-or do it so painlessly, why I just got to do it myself, and that’s all
-there is to it. But, as I says, there ain’t no great rush. If you want
-to pray, why, go ahead and pray. I’ll wait for you.”
-
-“I don’t remember,” said Barney, “when I have met so generous a party
-as you, my friend. Your self-sacrificing magnanimity quite overpowers
-me. It reminds me of another unloved Robin Hood whom I once met. It was
-in front of Burket’s coal-yard on Ella Street, back in dear old
-Beatrice, at some unchristian hour of the night.
-
-“After he had relieved me of a dollar and forty cents he remarked: ‘I
-gotta good mind to kick yer slats in fer not havin’ more of de cush on
-yeh; but I’m feelin’ so good about de last guy I stuck up I’ll let
-youse off dis time.’”
-
-“I do not know what you are talking about,” replied Yellow Franz; “but
-if you want to pray you’d better hurry up about it.”
-
-He drew his pistol from its holster on the belt at his hips.
-
-Now Barney Custer had no mind to give up the ghost without a struggle;
-but just how he was to overcome the great beast who confronted him with
-menacing pistol was, to say the least, not precisely plain. He wished
-the man would come a little nearer where he might have some chance to
-close with him before the fellow could fire. To gain time the American
-assumed a prayerful attitude, but kept one eye on the bandit.
-
-Presently Yellow Franz showed indications of impatience. He fingered
-the trigger of his weapon, and then slowly raised it on a line with
-Barney’s chest.
-
-“Hadn’t you better come closer?” asked the young man. “You might miss
-at that distance, or just wound me.”
-
-Yellow Franz grinned.
-
-“I don’t miss,” he said, and then: “You’re certainly a game one. If it
-wasn’t for the hundred thousand marks, I’d be hanged if I’d kill you.”
-
-“The chances are that you will be if you do,” said Barney, “so wouldn’t
-you rather take one hundred and fifty thousand marks and let me make my
-escape?”
-
-Yellow Franz looked at the speaker a moment through narrowed lids.
-
-“Where would you find any one willing to pay that amount for a crazy
-king?” he asked.
-
-“I have told you that I am not the king,” said Barney. “I am an
-American with a father who would gladly pay that amount on my safe
-delivery to any American consul.”
-
-Yellow Franz shook his head and tapped his brow significantly.
-
-“Even if you was what you are dreaming, it wouldn’t pay me,” he said.
-
-“I’ll make it two hundred thousand,” said Barney.
-
-“No—it’s a waste of time talking about it. It’s worth more than money
-to me to know that I’ll always have this thing on Peter, and that when
-he’s king he won’t dare bother me for fear I’ll publish the details of
-this little deal. Come, you must be through praying by this time. I
-can’t wait around here all night.” Again Yellow Franz raised his pistol
-toward Barney’s heart.
-
-Before the brigand could pull the trigger, or Barney hurl himself upon
-his would-be assassin, there was a flash and a loud report from the
-open window of the shack.
-
-With a groan Yellow Franz crumpled to the dirt floor, and
-simultaneously Barney was upon him and had wrested the pistol from his
-hand; but the precaution was unnecessary for Yellow Franz would never
-again press finger to trigger. He was dead even before Barney reached
-his side.
-
-In possession of the weapon, the American turned toward the window from
-which had come the rescuing shot, and as he did so he saw the boy,
-Rudolph, clambering over the sill, white-faced and trembling. In his
-hand was a smoking carbine, and on his brow great beads of cold sweat.
-
-“God forgive me!” murmured the youth. “I have killed a man.”
-
-“You have killed a dangerous wild beast, Rudolph,” said Barney, “and
-both God and your fellow man will thank and reward you.”
-
-“I am glad that I killed him, though,” went on the boy, “for he would
-have killed you, my king, had I not done so. Gladly would I go to the
-gallows to save my king.”
-
-“You are a brave lad, Rudolph,” said Barney, “and if ever I get out of
-the pretty pickle I’m in you’ll be well rewarded for your loyalty to
-Leopold of Lutha. After all,” thought the young man, “being a kind has
-its redeeming features, for if the boy had not thought me his monarch
-he would never have risked the vengeance of the bloodthirsty brigands
-in this attempt to save me.”
-
-“Hasten, your majesty,” whispered the boy, tugging at the sleeve of
-Barney’s jacket. “There is no time to be lost. We must be far away from
-here when the others discover that Yellow Franz has been killed.”
-
-Barney stooped above the dead man, and removing his belt and cartridges
-transferred them to his own person. Then blowing out the lantern the
-two slipped out into the darkness of the night.
-
-About the camp fire of the brigands the entire pack was congregated.
-They were talking together in low voices, ever and anon glancing
-expectantly toward the shack to which their chief had gone to dispatch
-the king. It is not every day that a king is murdered, and even these
-hardened cut-throats felt the spell of awe at the thought of what they
-believed the sharp report they had heard from the shack portended.
-
-Keeping well to the far side of the clearing, Rudolph led Barney around
-the group of men and safely into the wood below them. From this point
-the boy followed the trail which Barney and his captors had traversed
-two days previously, until he came to a diverging ravine that led
-steeply up through the mountains upon their right hand.
-
-In the distance behind them they suddenly heard, faintly, the shouting
-of men.
-
-“They have discovered Yellow Franz,” whispered the boy, shuddering.
-
-“Then they’ll be after us directly,” said Barney.
-
-“Yes, your majesty,” replied Rudolph, “but in the darkness they will
-not see that we have turned up this ravine, and so they will ride on
-down the other. I have chosen this way because their horses cannot
-follow us here, and thus we shall be under no great disadvantage. It
-may be, however, that we shall have to hide in the mountains for a
-while, since there will be no place of safety for us between here and
-Lustadt until after the edge of their anger is dulled.”
-
-And such proved to be the case, for try as they would they found it
-impossible to reach Lustadt without detection by the brigands who
-patrolled every highway and byway from their rugged mountains to the
-capital of Lutha.
-
-For nearly three weeks Barney and the boy hid in caves or dense
-underbrush by day, and by night sought some avenue which would lead
-them past the vigilant sentries that patrolled the ways to freedom.
-
-Often they were wet by rains, nor were they ever in the warm sunlight
-for a sufficient length of time to become thoroughly dry and
-comfortable. Of food they had little, and of the poorest quality.
-
-They dared not light a fire for warmth or cooking, and their light was
-so miserable that, but for the boy’s pitiful terror at the thought of
-being recaptured by the bandits, Barney would long since have made a
-break for Lustadt, depending upon their arms and ammunition to carry
-them safely through were they discovered by their enemies.
-
-Rudolph had contracted a severe cold the first night, and now, it
-having settled upon his lungs, he had developed a persistent and
-aggravating cough that caused Barney not a little apprehension. When,
-after nearly three weeks of suffering and privation, it became clear
-that the boy’s lungs were affected, the American decided to take
-matters into his own hands and attempt to reach Lustadt and a good
-doctor; but before he had an opportunity to put his plan into execution
-the entire matter was removed from his jurisdiction.
-
-It happened like this: After a particularly fatiguing and uncomfortable
-night spent in attempting to elude the sentinels who blocked their way
-from the mountains, daylight found them near a little spring, and here
-they decided to rest for an hour before resuming their way.
-
-The little pool lay not far from a clump of heavy bushes which would
-offer them excellent shelter, as it was Barney’s intention to go into
-hiding as soon as they had quenched their thirst at the spring.
-
-Rudolph was coughing pitifully, his slender frame wracked by the
-convulsion of each new attack. Barney had placed an arm about the boy
-to support him, for the paroxysms always left him very weak.
-
-The young man’s heart went out to the poor boy, and pangs of regret
-filled his mind as he realized that the child’s pathetic condition was
-the direct result of his self-sacrificing attempt to save his king.
-Barney felt much like a murderer and a thief, and dreaded the time when
-the boy should be brought to a realization of his mistake.
-
-He had come to feel a warm affection for the loyal little lad, who had
-suffered so uncomplainingly and whose every thought had been for the
-safety and comfort of his king.
-
-Today, thought Barney, I’ll take this child through to Lustadt even if
-every ragged brigand in Lutha lies between us and the capital; but even
-as he spoke a sudden crashing of underbrush behind caused him to wheel
-about, and there, not twenty paces from them, stood two of Yellow
-Franz’s cutthroats.
-
-At sight of Barney and the lad they gave voice to a shout of triumph,
-and raising their carbines fired point-blank at the two fugitives.
-
-But Barney had been equally as quick with his own weapon, and at the
-moment that they fired he grasped Rudolph and dragged him backward to a
-great boulder behind which their bodies might be protected from the
-fire of their enemies.
-
-Both the bullets of the bandits’ first volley had been directed at
-Barney, for it was upon his head that the great price rested. They had
-missed him by a narrow margin, due, perhaps, to the fact that the
-mounts of the brigands had been prancing in alarm at the unexpected
-sight of the two strangers at the very moment that their riders
-attempted to take aim and fire.
-
-But now they had ridden back into the brush and dismounted, and after
-hiding their ponies they came creeping out upon their bellies upon
-opposite sides of Barney’s shelter.
-
-The American saw that it would be an easy thing for them to pick him
-off if he remained where he was, and so with a word to Rudolph he
-sprang up and the boy with him. Each delivered a quick shot at the
-bandit nearest him, and then together they broke for the bushes in
-which the brigand’s mounts were hidden.
-
-Two shots answered theirs. Rudolph, who was ahead of Barney, stumbled
-and threw up his hands. He would have fallen had not the American
-thrown a strong arm about him.
-
-“I’m shot, your majesty,” murmured the boy, his head dropping against
-Barney’s breast.
-
-With the lad grasped close to him, the young man turned at the edge of
-the brush to meet the charge of the two ruffians. The wounding of the
-youth had delayed them just enough to preclude their making this
-temporary refuge in safety.
-
-As Barney turned both the men fired simultaneously, and both missed.
-The American raised his revolver, and with the flash of it the foremost
-brigand came to a sudden stop. An expression of bewilderment crossed
-his features. He extended his arms straight before him, the revolver
-slipped from his grasp, and then like a dying top he pivoted once
-drunkenly and collapsed upon the turf.
-
-At the instant of his fall his companion and the American fired
-point-blank at one another.
-
-Barney felt a burning sensation in his shoulder, but it was forgotten
-for the moment in the relief that came to him as he saw the second
-rascal sprawl headlong upon his face. Then he turned his attention to
-the limp little figure that hung across his left arm.
-
-Gently Barney laid the boy upon the sward, and fetching water from the
-pool bathed his face and forced a few drops between the white lips. The
-cooling draft revived the wounded child, but brought on a paroxysm of
-coughing. When this had subsided Rudolph raised his eyes to those of
-the man bending above him.
-
-“Thank God, your majesty is unharmed,” he whispered. “Now I can die in
-peace.”
-
-The white lids drooped lower, and with a tired sigh the boy lay quiet.
-Tears came to the young man’s eyes as he let the limp body gently to
-the ground.
-
-“Brave little heart,” he murmured, “you gave up your life in the
-service of your king as truly as though you had not been all mistaken
-in the object of your veneration, and if it lies within the power of
-Barney Custer you shall not have died in vain.”
-
-### VII. THE REAL LEOPOLD
-
-Two hours later a horseman pushed his way between tumbled and tangled
-briers along the bottom of a deep ravine.
-
-He was hatless, and his stained and ragged khaki betokened much
-exposure to the elements and hard and continued usage. At his
-saddle-bow a carbine swung in its boot, and upon either hip was
-strapped a long revolver. Ammunition in plenty filled the cross belts
-that he had looped about his shoulders.
-
-Grim and warlike as were his trappings, no less grim was the set of his
-strong jaw or the glint of his gray eyes, nor did the patch of brown
-stain that had soaked through the left shoulder of his jacket tend to
-lessen the martial atmosphere which surrounded him. Fortunate it was
-for the brigands of the late Yellow Franz that none of them chanced in
-the path of Barney Custer that day.
-
-For nearly two hours the man had ridden downward out of the high hills
-in search of a dwelling at which he might ask the way to Tann; but as
-yet he had passed but a single house, and that a long untenanted ruin.
-He was wondering what had become of all the inhabitants of Lutha when
-his horse came to a sudden halt before an obstacle which entirely
-blocked the narrow trail at the bottom of the ravine.
-
-As the horseman’s eyes fell upon the thing they went wide in
-astonishment, for it was no less than the charred remnants of the once
-beautiful gray roadster that had brought him into this twentieth
-century land of medieval adventure and intrigue. Barney saw that the
-machine had been lifted from where it had fallen across the horse of
-the Princess von der Tann, for the animal’s decaying carcass now lay
-entirely clear of it; but why this should have been done, or by whom,
-the young man could not imagine.
-
-A glance aloft showed him the road far above him, from which he, the
-horse and the roadster had catapulted; and with the sight of it there
-flashed to his mind the fair face of the young girl in whose service
-the thing had happened. Barney wondered if Joseph had been successful
-in returning her to Tann, and he wondered, too, if she mourned for the
-man she had thought king—if she would be very angry should she ever
-learn the truth.
-
-Then there came to the American’s mind the figure of the shopkeeper of
-Tafelberg, and the fellow’s evident loyalty to the mad king he had
-never seen. Here was one who might aid him, thought Barney. He would
-have the will, at least, and with the thought the young man turned his
-pony’s head diagonally up the steep ravine side.
-
-It was a tough and dangerous struggle to the road above, but at last by
-dint of strenuous efforts on the part of the sturdy little beast the
-two finally scrambled over the edge of the road and stood once more
-upon level footing.
-
-After breathing his mount for a few minutes Barney swung himself into
-the saddle again and set off toward Tafelberg. He met no one upon the
-road, nor within the outskirts of the village, and so he came to the
-door of the shop he sought without attracting attention.
-
-Swinging to the ground he tied the pony to one of the supporting
-columns of the porch-roof and a moment later had stepped within the
-shop.
-
-From a back room the shopkeeper presently emerged, and when he saw who
-it was that stood before him his eyes went wide in consternation.
-
-“In the name of all the saints, your majesty,” cried the old fellow,
-“what has happened? How comes it that you are out of the hospital, and
-travel-stained as though from a long, hard ride? I cannot understand
-it, sire.”
-
-“Hospital?” queried the young man. “What do you mean, my good fellow? I
-have been in no hospital.”
-
-“You were there only last evening when I inquired after you of the
-doctor,” insisted the shopkeeper, “nor did any there yet suspect your
-true identity.”
-
-“Last evening I was hiding far up in the mountains from Yellow Franz’s
-band of cutthroats,” replied Barney. “Tell me what manner of riddle you
-are propounding.”
-
-Then a sudden light of understanding flashed through Barney’s mind.
-
-“Man!” he exclaimed. “Tell me—you have found the true king? He is at a
-hospital in Tafelberg?”
-
-“Yes, your majesty, I have found the true king, and it is so that he
-was at the Tafelberg sanatorium last evening. It was beside the
-remnants of your wrecked automobile that two of the men of Tafelberg
-found you.
-
-“One leg was pinioned beneath the machine which was on fire when they
-discovered you. They brought you to my shop, which is the first on the
-road into town, and not guessing your true identity they took my word
-for it that you were an old acquaintance of mine and without more ado
-turned you over to my care.”
-
-Barney scratched his head in puzzled bewilderment. He began to doubt if
-he were in truth himself, or, after all, Leopold of Lutha. As no one
-but himself could, by the wildest stretch of imagination, have been in
-such a position, he was almost forced to the conclusion that all that
-had passed since the instant that his car shot over the edge of the
-road into the ravine had been but the hallucinations of a fever-excited
-brain, and that for the past three weeks he had been lying in a
-hospital cot instead of experiencing the strange and inexplicable
-adventures that he had believed to have befallen him.
-
-But yet the more he thought of it the more ridiculous such a conclusion
-appeared, for it did not in the least explain the pony tethered
-without, which he plainly could see from where he stood within the
-shop, nor did it satisfactorily account for the blotch of blood upon
-his shoulder from a wound so fresh that the stain still was damp; nor
-for the sword which Joseph had buckled about his waist within Blentz’s
-forbidding walls; nor for the arms and ammunition he had taken from the
-dead brigands—all of which he had before him as tangible evidence of
-the rationality of the past few weeks.
-
-“My friend,” said Barney at last, “I cannot wonder that you have
-mistaken me for the king, since all those I have met within Lutha have
-leaped to the same error, though not one among them made the slightest
-pretense of ever having seen his majesty. A ridiculous beard started
-the trouble, and later a series of happenings, no one of which was
-particularly remarkable in itself, aggravated it, until but a moment
-since I myself was almost upon the point of believing that I am the
-king.
-
-“But, my dear Herr Kramer, I am not the king; and when you have
-accompanied me to the hospital and seen that your patient still is
-there, you may be willing to admit that there is some justification for
-doubt as to my royalty.”
-
-The old man shook his head.
-
-“I am not so sure of that,” he said, “for he who lies at the hospital,
-providing you are not he, or he you, maintains as sturdily as do you
-that he is not Leopold. If one of you, whichever be king—providing that
-you are not one and the same, and that I be not the only maniac in the
-sad muddle—if one of you would but trust my loyalty and love for the
-true king and admit your identity, then I might be of some real service
-to that one of you who is really Leopold. Herr Gott! My words are as
-mixed as my poor brain.”
-
-“If you will listen to me, Herr Kramer,” said Barney, “and believe what
-I tell you, I shall be able to unscramble your ideas in so far as they
-pertain to me and my identity. As to the man you say was found beneath
-my car, and who now lies in the sanatorium of Tafelberg, I cannot say
-until I have seen and talked with him. He may be the king and he may
-not; but if he insists that he is not, I shall be the last to wish a
-kingship upon him. I know from sad experience the hardships and burdens
-that the thing entails.”
-
-Then Barney narrated carefully and in detail the principal events of
-his life, from his birth in Beatrice to his coming to Lutha upon
-pleasure. He showed Herr Kramer his watch with his monogram upon it,
-his seal ring, and inside the pocket of his coat the label of his
-tailor, with his own name written beneath it and the date that the
-garment had been ordered.
-
-When he had completed his narrative the old man shook his head.
-
-“I cannot understand it,” he said; “and yet I am almost forced to
-believe that you are not the king.”
-
-“Direct me to the sanatorium,” suggested Barney, “and if it be within
-the range of possibility I shall learn whether the man who lies there
-is Leopold or another, and if he be the king I shall serve him as
-loyally as you would have served me. Together we may assist him to gain
-the safety of Tann and the protection of old Prince Ludwig.”
-
-“If you are not the king,” said Kramer suspiciously, “why should you be
-so interested in aiding Leopold? You may even be an enemy. How can I
-know?”
-
-“You cannot know, my good friend,” replied Barney. “But had I been an
-enemy, how much more easily might I have encompassed my designs,
-whatever they might have been, had I encouraged you to believe that I
-was king. The fact that I did not, must assure you that I have no
-ulterior designs against Leopold.”
-
-This line of reasoning proved quite convincing to the old shopkeeper,
-and at last he consented to lead Barney to the sanatorium. Together
-they traversed the quiet village streets to the outskirts of the town,
-where in large, park-like grounds the well-known sanatorium of
-Tafelberg is situated in quiet surroundings. It is an institution for
-the treatment of nervous diseases to which patients are brought from
-all parts of Europe, and is doubtless Lutha’s principal claim upon the
-attention of the outer world.
-
-As the two crossed the gardens which lay between the gate and the main
-entrance and mounted the broad steps leading to the veranda an old
-servant opened the door, and recognizing Herr Kramer, nodded pleasantly
-to him.
-
-“Your patient seems much brighter this morning, Herr Kramer,” he said,
-“and has been asking to be allowed to sit up.”
-
-“He is still here, then?” questioned the shopkeeper with a sigh that
-might have indicated either relief or resignation.
-
-“Why, certainly. You did not expect that he had entirely recovered
-overnight, did you?”
-
-“No,” replied Herr Kramer, “not exactly. In fact, I did not know what I
-should expect.”
-
-As the two passed him on their way to the room in which the patient
-lay, the servant eyed Herr Kramer in surprise, as though wondering what
-had occurred to his mentality since he had seen him the previous day.
-He paid no attention to Barney other than to bow to him as he passed,
-but there was another who did—an attendant standing in the hallway
-through which the two men walked toward the private room where one of
-them expected to find the real mad king of Lutha.
-
-He was a dark-visaged fellow, sallow and small-eyed; and as his glance
-rested upon the features of the American a puzzled expression crossed
-his face. He let his gaze follow the two as they moved on up the
-corridor until they turned in at the door of the room they sought, then
-he followed them, entering an apartment next to that in which Herr
-Kramer’s patient lay.
-
-As Barney and the shopkeeper entered the small, whitewashed room, the
-former saw upon the narrow iron cot the figure of a man of about his
-own height. The face that turned toward them as they entered was
-covered by a full, reddish-brown beard, and the eyes that looked up at
-them in troubled surprise were gray. Beyond these Barney could see no
-likenesses to himself; yet they were sufficient, he realized, to have
-deceived any who might have compared one solely to the printed
-description of the other.
-
-At the doorway Kramer halted, motioning Barney within.
-
-“It will be better if you talk with him alone,” he said. “I am sure
-that before both of us he will admit nothing.”
-
-Barney nodded, and the shopkeeper of Tafelberg withdrew and closed the
-door behind him. The American approached the bedside with a cheery
-“Good morning.”
-
-The man returned the salutation with a slight inclination of his head.
-There was a questioning look in his eyes; but dominating that was a
-pitiful, hunted expression that touched the American’s heart.
-
-The man’s left hand lay upon the coverlet. Barney glanced at the third
-finger. About it was a plain gold band. There was no royal ring of the
-kings of Lutha in evidence, yet that was no indication that the man was
-not Leopold; for were he the king and desirous of concealing his
-identity, his first act would be to remove every symbol of his
-kingship.
-
-Barney took the hand in his.
-
-“They tell me that you are well on the road to recovery,” he said. “I
-am very glad that it is so.”
-
-“Who are you?” asked the man.
-
-“I am Bernard Custer, an American. You were found beneath my car at the
-bottom of a ravine. I feel that I owe you full reparation for the
-injuries you received, though it is beyond me how you happened to be
-found under the machine. Unless I am truly mad, I was the only occupant
-of the roadster when it plunged over the embankment.”
-
-“It is very simple,” replied the man upon the cot. “I chanced to be at
-the bottom of the ravine at the time and the car fell upon me.”
-
-“What were you doing at the bottom of the ravine?” asked Barney quite
-suddenly, after the manner of one who administers a third degree.
-
-The man started and flushed with suspicion.
-
-“That is my own affair,” he said.
-
-He tried to disengage his hand from Barney’s, and as he did so the
-American felt something within the fingers of the other. For an instant
-his own fingers tightened upon those that lay within them, so that as
-the others were withdrawn his index finger pressed close upon the thing
-that had aroused his curiosity.
-
-It was a large setting turned inward upon the third finger of the left
-hand. The gold band that Barney had seen was but the opposite side of
-the same ring.
-
-A quick look of comprehension came to Barney’s eyes. The man upon the
-cot evidently noted it and rightly interpreted its cause, for, having
-freed his hand, he now slipped it quickly beneath the coverlet.
-
-“I have passed through a series of rather remarkable adventures since I
-came to Lutha,” said Barney apparently quite irrelevantly, after the
-two had remained silent for a moment. “Shortly after my car fell upon
-you I was mistaken for the fugitive King Leopold by the young lady
-whose horse fell into the ravine with my car. She is a most loyal
-supporter of the king, being none other than the Princess Emma von der
-Tann. From her I learned to espouse the cause of Leopold.”
-
-Step by step Barney took the man through the adventures that had
-befallen him during the past three weeks, closing with the story of the
-death of the boy, Rudolph.
-
-“Above his dead body I swore to serve Leopold of Lutha as loyally as
-the poor, mistaken child had served me, your majesty,” and Barney
-looked straight into the eyes of him who lay upon the little iron cot.
-
-For a moment the man held his eyes upon those of the American, but
-finally, under the latter’s steady gaze, they dropped and wandered.
-
-“Why do you address me as ‘your majesty’?” he asked irritably.
-
-“With my forefinger I felt the ruby and the four wings of the setting
-of the royal ring of the kings of Lutha upon the third finger of your
-left hand,” replied Barney.
-
-The king started up upon his elbow, his eyes wild with apprehension.
-
-“It is not so,” he cried. “It is a lie! I am not the king.”
-
-“Hush!” admonished Barney. “You have nothing to fear from me. There are
-good friends and loyal subjects in plenty to serve and protect your
-majesty, and place you upon the throne that has been stolen from you. I
-have sworn to serve you. The old shopkeeper, Herr Kramer, who brought
-me here, is an honest, loyal old soul. He would die for you, your
-majesty. Trust us. Let us help you. Tomorrow, Kramer tells me, Peter of
-Blentz is to have himself crowned as king in the cathedral at Lustadt.
-
-“Will you sit supinely by and see another rob you of your kingdom, and
-then continue to rob and throttle your subjects as he has been doing
-for the past ten years? No, you will not. Even if you do not want the
-crown, you were born to the duties and obligations it entails, and for
-the sake of your people you must assume them now.”
-
-“How am I to know that you are not another of the creatures of that
-fiend of Blentz?” cried the king. “How am I to know that you will not
-drag me back to the terrors of that awful castle, and to the poisonous
-potions of the new physician Peter has employed to assassinate me? I
-can trust none.
-
-“Go away and leave me. I do not want to be king. I wish only to go away
-as far from Lutha as I can get and pass the balance of my life in peace
-and security. Peter may have the crown. He is welcome to it, for all of
-me. All I ask is my life and my liberty.”
-
-Barney saw that while the king was evidently of sound mind, his was not
-one of those iron characters and courageous hearts that would willingly
-fight to the death for his own rights and the rights and happiness of
-his people. Perhaps the long years of bitter disappointment and misery,
-the tedious hours of imprisonment, and the constant haunting fears for
-his life had reduced him to this pitiable condition.
-
-Whatever the cause, Barney Custer was determined to overcome the man’s
-aversion to assuming the duties which were rightly his, for in his
-memory were the words of Emma von der Tann, in which she had made plain
-to him the fate that would doubtless befall her father and his house
-were Peter of Blentz to become king of Lutha. Then, too, there was the
-life of the little peasant boy. Was that to be given up uselessly for a
-king with so mean a spirit that he would not take a scepter when it was
-forced upon him?
-
-And the people of Lutha? Were they to be further and continually robbed
-and downtrodden beneath the heel of Peter’s scoundrelly officials
-because their true king chose to evade the responsibilities that were
-his by birth?
-
-For half an hour Barney pleaded and argued with the king, until he
-infused in the weak character of the young man a part of his own
-tireless enthusiasm and courage. Leopold commenced to take heart and
-see things in a brighter and more engaging light. Finally he became
-quite excited about the prospects, and at last Barney obtained a
-willing promise from him that he would consent to being placed upon his
-throne and would go to Lustadt at any time that Barney should come for
-him with a force from the retainers of Prince Ludwig von der Tann.
-
-“Let us hope,” cried the king, “that the luck of the reigning house of
-Lutha has been at last restored. Not since my aunt, the Princess
-Victoria, ran away with a foreigner has good fortune shone upon my
-house. It was when my father was still a young man—before he had yet
-come to the throne—and though his reign was marked with great peace and
-prosperity for the people of Lutha, his own private fortunes were most
-unhappy.
-
-“My mother died at my birth, and the last days of my father’s life were
-filled with suffering from the cancer that was slowly killing him. Let
-us pray, Herr Custer, that you have brought new life to the fortunes of
-my house.”
-
-“Amen, your majesty,” said Barney. “And now I’ll be off for Tann—there
-must not be a moment lost if we are to bring you to Lustadt in time for
-the coronation. Herr Kramer will watch over you, but as none here
-guesses your true identity you are safer here than anywhere else in
-Lutha. Good-bye, your majesty. Be of good heart. We’ll have you on the
-road to Lustadt and the throne tomorrow morning.”
-
-After Barney Custer had closed the door of the king’s chamber behind
-him and hurried down the corridor, the door of the room next the king’s
-opened quietly and a dark-visaged fellow, sallow and small-eyed,
-emerged. Upon his lips was a smile of cunning satisfaction, as he
-hastened to the office of the medical director and obtained a leave of
-absence for twenty-four hours.
-
-### VIII. THE CORONATION DAY
-
-Toward dusk of the day upon which the mad king of Lutha had been found,
-a dust-covered horseman reined in before the great gate of the castle
-of Prince Ludwig von der Tann. The unsettled political conditions which
-overhung the little kingdom of Lutha were evident in the return to
-medievalism which the raised portcullis and the armed guard upon the
-barbican of the ancient feudal fortress revealed. Not for a hundred
-years before had these things been done other than as a part of the
-ceremonials of a fete day, or in honor of visiting royalty.
-
-At the challenge from the gate Barney replied that he bore a message
-for the prince. Slowly the portcullis sank into position across the
-moat and an officer advanced to meet the rider.
-
-“The prince has ridden to Lustadt with a large retinue,” he said, “to
-attend the coronation of Peter of Blentz tomorrow.”
-
-“Prince Ludwig von der Tann has gone to attend the coronation of
-Peter!” cried Barney in amazement. “Has the Princess Emma returned from
-her captivity in the castle of Blentz?”
-
-“She is with her father now, having returned nearly three weeks ago,”
-replied the officer, “and Peter has disclaimed responsibility for the
-outrage, promising that those responsible shall be punished. He has
-convinced Prince Ludwig that Leopold is dead, and for the sake of
-Lutha—to save her from civil strife—my prince has patched a truce with
-Peter; though unless I mistake the character of the latter and the
-temper of the former it will be short-lived.
-
-“To demonstrate to the people,” continued the officer, “that Prince
-Ludwig and Peter are good friends, the great Von der Tann will attend
-the coronation, but that he takes little stock in the sincerity of the
-Prince of Blentz would be apparent could the latter have a peep beneath
-the cloaks and look into the loyal hearts of the men of Tann who rode
-down to Lustadt today.”
-
-Barney did not wait to hear more. He was glad that in the gathering
-dusk the officer had not seen his face plainly enough to mistake him
-for the king. With a parting, “Then I must ride to Lustadt with my
-message for the prince,” he wheeled his tired mount and trotted down
-the steep trail from Tann toward the highway which leads to the
-capital.
-
-All night Barney rode. Three times he wandered from the way and was
-forced to stop at farmhouses to inquire the proper direction; but
-darkness hid his features from the sleepy eyes of those who answered
-his summons, and daylight found him still forging ahead in the
-direction of the capital of Lutha.
-
-The American was sunk in unhappy meditation as his weary little mount
-plodded slowly along the dusty road. For hours the man had not been
-able to urge the beast out of a walk. The loss of time consequent upon
-his having followed wrong roads during the night and the exhaustion of
-the pony which retarded his speed to what seemed little better than a
-snail’s pace seemed to assure the failure of his mission, for at best
-he could not reach Lustadt before noon.
-
-There was no possibility of bringing Leopold to his capital in time for
-the coronation, and but a bare possibility that Prince Ludwig would
-accept the word of an entire stranger that Leopold lived, for the
-acknowledgment of such a condition by the old prince could result in
-nothing less than an immediate resort to arms by the two factions. It
-was certain that Peter would be infinitely more anxious to proceed with
-his coronation should it be rumored that Leopold lived, and equally
-certain that Prince Ludwig would interpose every obstacle, even to
-armed resistance, to prevent the consummation of the ceremony.
-
-Yet there seemed to Barney no other alternative than to place before
-the king’s one powerful friend the information that he had. It would
-then rest with Ludwig to do what he thought advisable.
-
-An hour from Lustadt the road wound through a dense forest, whose
-pleasant shade was a grateful relief to both horse and rider from the
-hot sun beneath which they had been journeying the greater part of the
-morning. Barney was still lost in thought, his eyes bent forward, when
-at a sudden turning of the road he came face to face with a troop of
-horse that were entering the main highway at this point from an
-unfrequented byroad.
-
-At sight of them the American instinctively wheeled his mount in an
-effort to escape, but at a command from an officer a half dozen
-troopers spurred after him, their fresh horses soon overtaking his
-jaded pony.
-
-For a moment Barney contemplated resistance, for these were troopers of
-the Royal Horse, the body which was now Peter’s most effective personal
-tool; but even as his hand slipped to the butt of one of the revolvers
-at his hip, the young man saw the foolish futility of such a course,
-and with a shrug and a smile he drew rein and turned to face the
-advancing soldiers.
-
-As he did so the officer rode up, and at sight of Barney’s face gave an
-exclamation of astonishment. The officer was Butzow.
-
-“Well met, your majesty,” he cried saluting. “We are riding to the
-coronation. We shall be just in time.”
-
-“To see Peter of Blentz rob Leopold of a crown,” said the American in a
-disgusted tone.
-
-“To see Leopold of Lutha come into his own, your majesty. Long live the
-king!” cried the officer.
-
-Barney thought the man either poking fun at him because he was not the
-king, or, thinking he was Leopold, taking a mean advantage of his
-helplessness to bait him. Yet this last suspicion seemed unfair to
-Butzow, who at Blentz had given ample evidence that he was a gentleman,
-and of far different caliber from Maenck and the others who served
-Peter.
-
-If he could but convince the man that he was no king and thus gain his
-liberty long enough to reach Prince Ludwig’s ear, his mission would
-have been served in so far as it lay in his power to serve it. For some
-minutes Barney expended his best eloquence and logic upon the cavalry
-officer in an effort to convince him that he was not Leopold.
-
-The king had given the American his great ring to safeguard for him
-until it should be less dangerous for Leopold to wear it, and for fear
-that at the last moment someone within the sanatorium might recognize
-it and bear word to Peter of the king’s whereabouts. Barney had worn it
-turned in upon the third finger of his left hand, and now he slipped it
-surreptitiously into his breeches pocket lest Butzow should see it and
-by it be convinced that Barney was indeed Leopold.
-
-“Never mind who you are,” cried Butzow, thinking to humor the king’s
-strange obsession. “You look enough like Leopold to be his twin, and
-you must help us save Lutha from Peter of Blentz.”
-
-The American showed in his expression the surprise he felt at these
-words from an officer of the prince regent.
-
-“You wonder at my change of heart?” asked Butzow.
-
-“How can I do otherwise?”
-
-“I cannot blame you,” said the officer. “Yet I think that when you know
-the truth you will see that I have done only that which I believed to
-be the duty of a patriotic officer and a true gentleman.”
-
-They had rejoined the troop by this time, and the entire company was
-once more headed toward Lustadt. Butzow had commanded one of the
-troopers to exchange horses with Barney, bringing the jaded animal into
-the city slowly, and now freshly mounted the American was making better
-time toward his destination. His spirits rose, and as they galloped
-along the highway, he listened with renewed interest to the story which
-Lieutenant Butzow narrated in detail.
-
-It seemed that Butzow had been absent from Lutha for a number of years
-as military attache to the Luthanian legation at a foreign court. He
-had known nothing of the true condition at home until his return, when
-he saw such scoundrels as Coblich, Maenck, and Stein high in the favor
-of the prince regent. For some time before the events that had
-transpired after he had brought Barney and the Princess Emma to Blentz
-he had commenced to have his doubts as to the true patriotism of Peter
-of Blentz; and when he had learned through the unguarded words of
-Schonau that there was a real foundation for the rumor that the regent
-had plotted the assassination of the king his suspicions had
-crystallized into knowledge, and he had sworn to serve his king before
-all others—were he sane or mad. From this loyalty he could not be
-shaken.
-
-“And what do you intend doing now?” asked Barney.
-
-“I intend placing you upon the throne of your ancestors, sire,” replied
-Butzow; “nor will Peter of Blentz dare the wrath of the people by
-attempting to interpose any obstacle. When he sees Leopold of Lutha
-ride into the capital of his kingdom at the head of even so small a
-force as ours he will know that the end of his own power is at hand,
-for he is not such a fool that he does not perfectly realize that he is
-the most cordially hated man in all Lutha, and that only those attend
-upon him who hope to profit through his success or who fear his evil
-nature.”
-
-“If Peter is crowned today,” asked Barney, “will it prevent Leopold
-regaining his throne?”
-
-“It is difficult to say,” replied Butzow; “but the chances are that the
-throne would be lost to him forever. To regain it he would have to
-plunge Lutha into a bitter civil war, for once Peter is proclaimed king
-he will have the law upon his side, and with the resources of the State
-behind him—the treasury and the army—he will feel in no mood to
-relinquish the scepter without a struggle. I doubt much that you will
-ever sit upon your throne, sire, unless you do so within the very next
-hour.”
-
-For some time Barney rode in silence. He saw that only by a master
-stroke could the crown be saved for the true king. Was it worth it? The
-man was happier without a crown. Barney had come to believe that no man
-lived who could be happy in possession of one. Then there came before
-his mind’s eye the delicate, patrician face of Emma von der Tann.
-
-Would Peter of Blentz be true to his new promises to the house of Von
-der Tann? Barney doubted it. He recalled all that it might mean of
-danger and suffering to the girl whose kisses he still felt upon his
-lips as though it had been but now that hers had placed them there. He
-recalled the limp little body of the boy, Rudolph, and the Spartan
-loyalty with which the little fellow had given his life in the service
-of the man he had thought king. The pitiful figure of the fear-haunted
-man upon the iron cot at Tafelberg rose before him and cried for
-vengeance.
-
-To this man was the woman he loved betrothed! He knew that he might
-never wed the Princess Emma. Even were she not promised to another, the
-iron shackles of convention and age-old customs must forever separate
-her from an untitled American. But if he couldn’t have her he still
-could serve her!
-
-“For her sake,” he muttered.
-
-“Did your majesty speak?” asked Butzow.
-
-“Yes, lieutenant. We urge greater haste, for if we are to be crowned
-today we have no time to lose.”
-
-Butzow smiled a relieved smile. The king had at last regained his
-senses!
-
-Within the ancient cathedral at Lustadt a great and gorgeously attired
-assemblage had congregated. All the nobles of Lutha were gathered there
-with their wives, their children, and their retainers. There were the
-newer nobility of the lowlands—many whose patents dated but since the
-regency of Peter—and there were the proud nobility of the highlands—the
-old nobility of which Prince Ludwig von der Tann was the chief.
-
-It was noticeable that though a truce had been made between Ludwig and
-Peter, yet the former chancellor of the kingdom did not stand upon the
-chancel with the other dignitaries of the State and court.
-
-Few there were who knew that he had been invited to occupy a place of
-honor there, and had replied that he would take no active part in the
-making of any king in Lutha whose veins did not pulse to the flow of
-the blood of the house in whose service he had grown gray.
-
-Close packed were the retainers of the old prince so that their great
-number was scarcely noticeable, though quite so was the fact that they
-kept their cloaks on, presenting a somber appearance in the midst of
-all the glitter of gold and gleam of jewels that surrounded them—a
-grim, business-like appearance that cast a chill upon Peter of Blentz
-as his eyes scanned the multitude of faces below him.
-
-He would have shown his indignation at this seeming affront had he
-dared; but until the crown was safely upon his head and the royal
-scepter in his hand Peter had no mind to do aught that might jeopardize
-the attainment of the power he had sought for the past ten years.
-
-The solemn ceremony was all but completed; the Bishop of Lustadt had
-received the great golden crown from the purple cushion upon which it
-had been borne at the head of the procession which accompanied Peter up
-the broad center aisle of the cathedral. He had raised it above the
-head of the prince regent, and was repeating the solemn words which
-precede the placing of the golden circlet upon the man’s brow. In
-another moment Peter of Blentz would be proclaimed the king of Lutha.
-
-By her father’s side stood Emma von der Tann. Upon her haughty,
-high-bred face there was no sign of the emotions which ran riot within
-her fair bosom. In the act that she was witnessing she saw the eventual
-ruin of her father’s house. That Peter would long want for an excuse to
-break and humble his ancient enemy she did not believe; but this was
-not the only cause for the sorrow that overwhelmed her.
-
-Her most poignant grief, like that of her father, was for the dead
-king, Leopold; but to the sorrow of the loyal subject was added the
-grief of the loving woman, bereft. Close to her heart she hugged the
-memory of the brief hours spent with the man whom she had been taught
-since childhood to look upon as her future husband, but for whom the
-all-consuming fires of love had only been fanned to life within her
-since that moment, now three weeks gone, that he had crushed her to his
-breast to cover her lips with kisses for the short moment ere he
-sacrificed his life to save her from a fate worse than death.
-
-Before her stood the Nemesis of her dead king. The last act of the
-hideous crime against the man she had loved was nearing its close. As
-the crown, poised over the head of Peter of Blentz, sank slowly
-downward the girl felt that she could scarce restrain her desire to
-shriek aloud a protest against the wicked act—the crowning of a
-murderer king of her beloved Lutha.
-
-A glance at the old man at her side showed her the stern, commanding
-features of her sire molded in an expression of haughty dignity; only
-the slight movement of the muscles of the strong jaw revealed the
-tensity of the hidden emotions of the stern old warrior. He was meeting
-disappointment and defeat as a Von der Tann should—brave to the end.
-
-The crown had all but touched the head of Peter of Blentz when a sudden
-commotion at the back of the cathedral caused the bishop to look up in
-ill-concealed annoyance. At the sight that met his eyes his hands
-halted in mid-air.
-
-The great audience turned as one toward the doors at the end of the
-long central aisle. There, through the wide-swung portals, they saw
-mounted men forcing their way into the cathedral. The great horses
-shouldered aside the foot-soldiers that attempted to bar their way, and
-twenty troopers of the Royal Horse thundered to the very foot of the
-chancel steps.
-
-At their head rode Lieutenant Butzow and a tall young man in soiled and
-tattered khaki, whose gray eyes and full reddish-brown beard brought an
-exclamation from Captain Maenck who commanded the guard about Peter of
-Blentz.
-
-“Mein Gott—the king!” cried Maenck, and at the words Peter went white.
-
-In open-mouthed astonishment the spectators saw the hurrying troopers
-and heard Butzow’s “The king! The king! Make way for Leopold, King of
-Lutha!”
-
-And a girl saw, and as she saw her heart leaped to her mouth. Her small
-hand gripped the sleeve of her father’s coat. “The king, father,” she
-cried. “It is the king.”
-
-Old Von der Tann, the light of a new hope firing his eyes, threw aside
-his cloak and leaped to the chancel steps beside Butzow and the others
-who were mounting them. Behind him a hundred cloaks dropped from the
-shoulders of his fighting men, exposing not silks and satins and fine
-velvet, but the coarse tan of khaki, and grim cartridge belts well
-filled, and stern revolvers slung to well-worn service belts.
-
-As Butzow and Barney stepped upon the chancel Peter of Blentz leaped
-forward. “What mad treason is this?” he fairly screamed.
-
-“The days of treason are now past, prince,” replied Butzow meaningly.
-“Here is not treason, but Leopold of Lutha come to claim his crown
-which he inherited from his father.”
-
-“It is a plot,” cried Peter, “to place an impostor upon the throne!
-This man is not the king.”
-
-For a moment there was silence. The people had not taken sides as yet.
-They awaited a leader. Old Von der Tann scrutinized the American
-closely.
-
-“How may we know that you are Leopold?” he asked. “For ten years we
-have not seen our king.”
-
-“The governor of Blentz has already acknowledged his identity,” cried
-Butzow. “Maenck was the first to proclaim the presence of the putative
-king.”
-
-At that someone near the chancel cried: “Long live Leopold, king of
-Lutha!” and at the words the whole assemblage raised their voices in a
-tumultuous: “Long live the king!”
-
-Peter of Blentz turned toward Maenck. “The guard!” he cried. “Arrest
-those traitors, and restore order in the cathedral. Let the coronation
-proceed.”
-
-Maenck took a step toward Barney and Butzow, when old Prince von der
-Tann interposed his giant frame with grim resolve.
-
-“Hold!” He spoke in a low, stern voice that brought the cowardly Maenck
-to a sudden halt.
-
-The men of Tann had pressed eagerly forward until they stood, with
-bared swords, a solid rank of fighting men in grim semicircle behind
-their chief. There were cries from different parts of the cathedral of:
-“Crown Leopold, our true king! Down with Peter! Down with the
-assassin!”
-
-“Enough of this,” cried Peter. “Clear the cathedral!”
-
-He drew his own sword, and with half a hundred loyal retainers at his
-back pressed forward to clear the chancel. There was a brief fight,
-from which Barney, much to his disgust, was barred by the mighty figure
-of the old prince and the stalwart sword-arm of Butzow. He did get one
-crack at Maenck, and had the satisfaction of seeing blood spurt from a
-flesh wound across the fellow’s cheek.
-
-“That for the Princess Emma,” he called to the governor of Blentz, and
-then men crowded between them and he did not see the captain again
-during the battle.
-
-When Peter saw that more than half of the palace guard were shouting
-for Leopold, and fighting side by side with the men of Tann, he
-realized the futility of further armed resistance at this time. Slowly
-he withdrew, and at last the fighting ceased and some semblance of
-order was restored within the cathedral.
-
-Fearfully, the bishop emerged from hiding, his robes disheveled and his
-miter askew. Butzow grasped him none too reverently by the arm and
-dragged him before Barney. The crown of Lutha dangled in the priest’s
-palsied hands.
-
-“Crown the king!” cried the lieutenant. “Crown Leopold, king of Lutha!”
-
-A mad roar of acclaim greeted this demand, and again from all parts of
-the cathedral rose the same wild cry. But in the lull that followed
-there were some who demanded proof of the tattered young man who stood
-before them and claimed that he was king.
-
-“Let Prince Ludwig speak!” cried a dozen voices.
-
-“Yes, Prince Ludwig! Prince Ludwig!” took up the throng.
-
-Prince Ludwig von der Tann turned toward the bearded young man. Silence
-fell upon the crowded cathedral. Peter of Blentz stood awaiting the
-outcome, ready to demand the crown upon the first indication of
-wavering belief in the man he knew was not Leopold.
-
-“How may we know that you are really Leopold?” again asked Ludwig of
-Barney.
-
-The American raised his left hand, upon the third finger of which
-gleamed the great ruby of the royal ring of the kings of Lutha. Even
-Peter of Blentz started back in surprise as his eyes fell upon the
-ring.
-
-Where had the man come upon it?
-
-Prince von der Tann dropped to one knee before Mr. Bernard Custer of
-Beatrice, Nebraska, U.S.A., and lifted that gentleman’s hand to his
-lips, and as the people of Lutha saw the act they went mad with joy.
-
-Slowly Prince Ludwig rose and addressed the bishop. “Leopold, the
-rightful heir to the throne of Lutha, is here. Let the coronation
-proceed.”
-
-The quiet of the sepulcher fell upon the assemblage as the holy man
-raised the crown above the head of the king. Barney saw from the corner
-of his eye the sea of faces upturned toward him. He saw the relief and
-happiness upon the stern countenance of the old prince.
-
-He hated to dash all their new found joy by the announcement that he
-was not the king. He could not do that, for the moment he did Peter
-would step forward and demand that his own coronation continue. How was
-he to save the throne for Leopold?
-
-Among the faces beneath him he suddenly descried that of a beautiful
-young girl whose eyes, filled with the tears of a great happiness and a
-greater love, were upturned to his. To reveal his true identity would
-lose him this girl forever. None save Peter knew that he was not the
-king. All save Peter would hail him gladly as Leopold of Lutha. How
-easily he might win a throne and the woman he loved by a moment of
-seeming passive compliance.
-
-The temptation was great, and then he recalled the boy, lying dead for
-his king in the desolate mountains, and the pathetic light in the eyes
-of the sorrowful man at Tafelberg, and the great trust and confidence
-in the heart of the woman who had shown that she loved him.
-
-Slowly Barney Custer raised his palm toward the bishop in a gesture of
-restraint.
-
-“There are those who doubt that I am king,” he said. “In these
-circumstances there should be no coronation in Lutha until all doubts
-are allayed and all may unite in accepting without question the royal
-right of the true Leopold to the crown of his father. Let the
-coronation wait, then, until another day, and all will be well.”
-
-“It must take place before noon of the fifth day of November, or not
-until a year later,” said Prince Ludwig. “In the meantime the Prince
-Regent must continue to rule. For the sake of Lutha the coronation must
-take place today, your majesty.”
-
-“What is the date?” asked Barney.
-
-“The third, sire.”
-
-“Let the coronation wait until the fifth.”
-
-“But your majesty,” interposed Von der Tann, “all may be lost in two
-days.”
-
-“It is the king’s command,” said Barney quietly.
-
-“But Peter of Blentz will rule for these two days, and in that time
-with the army at his command there is no telling what he may
-accomplish,” insisted the old man.
-
-“Peter of Blentz shall not rule Lutha for two days, or two minutes,”
-replied Barney. “We shall rule. Lieutenant Butzow, you may place Prince
-Peter, Coblich, Maenck, and Stein under arrest. We charge them with
-treason against their king, and conspiring to assassinate their
-rightful monarch.”
-
-Butzow smiled as he turned with his troopers at his back to execute
-this most welcome of commissions; but in a moment he was again at
-Barney’s side.
-
-“They have fled, your majesty,” he said. “Shall I ride to Blentz after
-them?”
-
-“Let them go,” replied the American, and then, with his retinue about
-him the new king of Lutha passed down the broad aisle of the cathedral
-of Lustadt and took his way to the royal palace between ranks of
-saluting soldiery backed by cheering thousands.
-
-### IX. THE KING’S GUESTS
-
-Once within the palace Barney sought the seclusion of a small room off
-the audience chamber. Here he summoned Butzow.
-
-“Lieutenant,” said the American, “for the sake of a woman, a dead child
-and an unhappy king I have become dictator of Lutha for forty-eight
-hours; but at noon upon the fifth this farce must cease. Then we must
-place the true Leopold upon the throne, or a new dictator must replace
-me.
-
-“In vain I have tried to convince you that I am not the king, and today
-in the cathedral so great was the temptation to take advantage of the
-odd train of circumstances that had placed a crown within my reach that
-I all but surrendered to it—not for the crown of gold, Butzow, but for
-an infinitely more sacred diadem which belongs to him to whom by right
-of birth and lineage, belongs the crown of Lutha. I do not ask you to
-understand—it is not necessary—but this you must know and believe: that
-I am not Leopold, and that the true Leopold lies in hiding in the
-sanatorium at Tafelberg, from which you and I, Butzow, must fetch him
-to Lustadt before noon on the fifth.”
-
-“But, sire—” commenced Butzow, when Barney raised his hand.
-
-“Enough of that, Butzow!” he cried almost irritably. “I am sick of
-being ‘sired’ and ‘majestied’—my name is Custer. Call me that when
-others are not present. Believe what you will, but ride with me in
-secrecy to Tafelberg tonight, and together we shall bring back Leopold
-of Lutha. Then we may call Prince Ludwig into our confidence, and none
-need ever know of the substitution.
-
-“I doubt if many had a sufficiently close view of me today to realize
-the trick that I have played upon them, and if they note a difference
-they will attribute it to the change in apparel, for we shall see to it
-that the king is fittingly garbed before we exhibit him to his
-subjects, while hereafter I shall continue in khaki, which becomes me
-better than ermine.”
-
-Butzow shook his head.
-
-“King or dictator,” he said, “it is all the same, and I must obey
-whatever commands you see fit to give, and so I will ride to Tafelberg
-tonight, though what we shall find there I cannot imagine, unless there
-are two Leopolds of Lutha. But shall we also find another royal ring
-upon the finger of this other king?”
-
-Barney smiled. “You’re a typical hard-headed Dutchman, Butzow,” he
-said.
-
-The lieutenant drew himself up haughtily. “I am not a Dutchman, your
-majesty. I am a Luthanian.”
-
-Barney laughed. “Whatever else you may be, Butzow, you’re a brick,” he
-said, laying his hand upon the other’s arm.
-
-Butzow looked at him narrowly.
-
-“From your speech,” he said, “and the occasional Americanisms into
-which you fall I might believe that you were other than the king but
-for the ring.”
-
-“It is my commission from the king,” replied Barney. “Leopold placed it
-upon my finger in token of his royal authority to act in his behalf.
-Tonight, then Butzow, you and I shall ride to Tafelberg. Have three
-good horses. We must lead one for the king.”
-
-Butzow saluted and left the apartment. For an hour or two the American
-was busy with tailors whom he had ordered sent to the palace to measure
-him for the numerous garments of a royal wardrobe, for he knew the king
-to be near enough his own size that he might easily wear clothes that
-had been fitted to Barney; and it was part of his plan to have
-everything in readiness for the substitution which was to take place
-the morning of the coronation.
-
-Then there were foreign dignitaries, and the heads of numerous domestic
-and civic delegations to be given audience. Old Von der Tann stood
-close behind Barney prompting him upon the royal duties that had fallen
-so suddenly upon his shoulders, and none thought it strange that he was
-unfamiliar with the craft of kingship, for was it not common knowledge
-that he had been kept a close prisoner in Blentz since boyhood, nor
-been given any coaching for the duties Peter of Blentz never intended
-he should perform?
-
-After it was all over Prince Ludwig’s grim and leathery face relaxed
-into a smile of satisfaction.
-
-“None who witnessed the conduct of your first audience, sire,” he said,
-“could for a moment doubt your royal lineage—if ever a man was born to
-kingship, your majesty, it be you.”
-
-Barney smiled, a bit ruefully, however, for in his mind’s eye he saw a
-future moment when the proud old Prince von der Tann would know the
-truth of the imposture that had been played upon him, and the young man
-foresaw that he would have a rather unpleasant half-hour.
-
-At a little distance from them Barney saw Emma von der Tann surrounded
-by a group of officials and palace officers. Since he had come to
-Lustadt that day he had had no word with her, and now he crossed toward
-her, amused as the throng parted to form an aisle for him, the men
-saluting and the women curtsying low.
-
-He took both of the girl’s hands in his, and, drawing one through his
-arm, took advantage of the prerogatives of kingship to lead her away
-from the throng of courtiers.
-
-“I thought that I should never be done with all the tiresome business
-which seems to devolve upon kings,” he said, laughing. “All the while
-that I should have been bending my royal intellect to matters of state,
-I was wondering just how a king might find a way to see the woman he
-loves without interruptions from the horde that dogs his footsteps.”
-
-“You seem to have found a way, Leopold,” she whispered, pressing his
-arm close to her. “Kings usually do.”
-
-“It is not because I am a king that I found a way, Emma,” he replied.
-“It is because I am an American.”
-
-She looked up at him with an expression of pleading in her eyes.
-
-“Why do you persist?” she cried. “You have come into your own, and
-there is no longer aught to fear from Peter or any other. To me at
-least, it is most unkind still to deny your identity.”
-
-“I wonder,” said Barney, “if your love could withstand the knowledge
-that I am not the king.”
-
-“It is the MAN I love, Leopold,” the girl replied.
-
-“You think so now,” he said, “but wait until the test comes, and when
-it does, remember that I have always done my best to undeceive you. I
-know that you are not for such as I, my princess, and when I have
-returned your true king to you all that I shall ask is that you be
-happy with him.”
-
-“I shall always be happy with my king,” she whispered, and the look
-that she gave him made Barney Custer curse the fate that had failed to
-make him a king by birth.
-
-An hour later darkness had fallen upon the little city of Lustadt, and
-from a small gateway in the rear of the palace grounds two horsemen
-rode out into the ill-paved street and turned their mounts’ heads
-toward the north. At the side of one trotted a led horse.
-
-As they passed beneath the glare of an arc-light before a cafe at the
-side of the public square, a diner sitting at a table upon the walk
-spied the tall figure and the bearded face of him who rode a few feet
-in advance of his companion. Leaping to his feet the man waved his
-napkin above his head.
-
-“Long live the king!” he cried. “God save Leopold of Lutha!”
-
-And amid the din of cheering that followed, Barney Custer of Beatrice
-and Lieutenant Butzow of the Royal Horse rode out into the night upon
-the road to Tafelberg.
-
-When Peter of Blentz had escaped from the cathedral he had hastily
-mounted with a handful of his followers and hurried out of Lustadt
-along the road toward his formidable fortress at Blentz. Half way upon
-the journey he had met a dusty and travel-stained horseman hastening
-toward the capital city that Peter and his lieutenants had just left.
-
-At sight of the prince regent the fellow reined in and saluted.
-
-“May I have a word in private with your highness?” he asked. “I have
-news of the greatest importance for your ears alone.”
-
-Peter drew to one side with the man.
-
-“Well,” he asked, “and what news have you for Peter of Blentz?”
-
-The man leaned from his horse close to Peter’s ear.
-
-“The king is in Tafelberg, your highness,” he said.
-
-“The king is dead,” snapped Peter. “There is an impostor in the palace
-at Lustadt. But the real Leopold of Lutha was slain by Yellow Franz’s
-band of brigands weeks ago.”
-
-“I heard the man at Tafelberg tell another that he was the king,”
-insisted the fellow. “Through the keyhole of his room I saw him take a
-great ring from his finger—a ring with a mighty ruby set in its
-center—and give it to the other. Both were bearded men with gray
-eyes—either might have passed for the king by the description upon the
-placards that have covered Lutha for the past month. At first he denied
-his identity, but when the other had convinced him that he sought only
-the king’s welfare he at last admitted that he was Leopold.”
-
-“Where is he now?” cried Peter.
-
-“He is still in the sanatorium at Tafelberg. In room twenty-seven. The
-other promised to return for him and take him to Lustadt, but when I
-left Tafelberg he had not yet done so, and if you hasten you may reach
-there before they take him away, and if there be any reward for my
-loyalty to you, prince, my name is Ferrath.”
-
-“Ride with us and if you have told the truth, fellow, there shall be a
-reward and if not—then there shall be deserts,” and Peter of Blentz
-wheeled his horse and with his company galloped on toward Tafelberg.
-
-As he rode he talked with his lieutenants Coblich, Maenck, and Stein,
-and among them it was decided that it would be best that Peter stop at
-Blentz for the night while the others rode on to Tafelberg.
-
-“Do not bring Leopold to Blentz,” directed Peter, “for if it be he who
-lies at Tafelberg and they find him gone it will be toward Blentz that
-they will first look. Take him—”
-
-The Regent leaned from his saddle so that his mouth was close to the
-ear of Coblich, that none of the troopers might hear.
-
-Coblich nodded his head.
-
-“And, Coblich, the fewer that ride to Tafelberg tonight the surer the
-success of the mission. Take Maenck, Stein and one other with you. I
-shall keep this man with me, for it may prove but a plot to lure me to
-Tafelberg.”
-
-Peter scowled at the now frightened hospital attendant.
-
-“Tomorrow I shall be riding through the lowlands, Coblich, and so you
-may not find means to communicate with me, but before noon of the fifth
-have word at your town house in Lustadt for me of the success of your
-venture.”
-
-They had reached the point now where the road to Tafelberg branches
-from that to Blentz, and the four who were to fetch the king wheeled
-their horses into the left-hand fork and cantered off upon their
-mission.
-
-The direct road between Lustadt and Tafelberg is but little more than
-half the distance of that which Coblich and his companions had to
-traverse because of the wide detour they had made by riding almost to
-Blentz first, and so it was that when they cantered into the little
-mountain town near midnight Barney Custer and Lieutenant Butzow were
-but a mile or two behind them.
-
-Had the latter had even the faintest of suspicions that the identity of
-the hiding place of the king might come to the knowledge of Peter of
-Blentz they could have reached Tafelberg ahead of Coblich and his
-party, but all unsuspecting they rode slowly to conserve the energy of
-their mounts for the return trip.
-
-In silence the two men approached the grounds surrounding the
-sanatorium. In the soft dirt of the road the hoofs of their mounts made
-no sound, and the shadows of the trees that border the front of the
-enclosure hid them from the view of the trooper who held four riderless
-horses in a little patch of moonlight that broke through the opening in
-the trees at the main gate of the institution.
-
-Barney was the first to see the animals and the man.
-
-“S-s-st,” he hissed, reining in his horse.
-
-Butzow drew alongside the American.
-
-“What can it mean?” asked Barney. “That fellow is a trooper, but I
-cannot make out his uniform.”
-
-“Wait here,” said Butzow, and slipping from his horse he crept closer
-to the man, hugging the dense shadows close to the trees.
-
-Barney reined in nearer the low wall. From his saddle he could see the
-grounds beyond through the branches of a tree. As he looked his
-attention was suddenly riveted upon a sight that sent his heart into
-his throat.
-
-Three men were dragging a struggling, half-naked figure down the gravel
-walk from the sanatorium toward the gate. One kept a hand clapped
-across the mouth of the prisoner, who struck and fought his assailants
-with all the frenzy of despair.
-
-Barney leaped from his saddle and ran headlong after Butzow. The
-lieutenant had reached the gate but an instant ahead of him when the
-trooper, turning suddenly at some slight sound of the officer’s foot
-upon the ground, detected the man creeping upon him. In an instant the
-fellow had whipped out a revolver, and raising it fired point-blank at
-Butzow’s chest; but in the same instant a figure shot out of the
-shadows beside him, and with the report of the revolver a heavy fist
-caught the trooper on the side of the chin, crumpling him to the ground
-as if he were dead.
-
-The blow had been in time to deflect the muzzle of the firearm, and the
-bullet whistled harmlessly past the lieutenant.
-
-“Your majesty!” exclaimed Butzow excitedly. “Go back. He might have
-killed you.”
-
-Barney leaped to the other’s side and grasping him by the shoulders
-wheeled him about so that he faced the gate.
-
-“There, Butzow,” he cried, “there is your king, and from the looks of
-it he never needed a loyal subject more than he does this moment.
-Come!” Without waiting to see if the other followed him, Barney Custer
-leaped through the gate full in the faces of the astonished trio that
-was dragging Leopold of Lutha from his sanctuary.
-
-At sight of the American the king gave a muffled cry of relief, and
-then Barney was upon those who held him. A stinging uppercut lifted
-Coblich clear of the ground to drop him, dazed and bewildered, at the
-foot of the monarch he had outraged. Maenck drew a revolver only to
-have it struck from his hand by the sword of Butzow, who had followed
-closely upon the American’s heels.
-
-Barney, seizing the king by the arm, started on a run for the gateway.
-In his wake came Butzow with a drawn sword beating back Stein, who was
-armed with a cavalry saber, and Maenck who had now drawn his own sword.
-
-The American saw that the two were pressing Butzow much too closely for
-safety and that Coblich had now recovered from the effects of the blow
-and was in pursuit, drawing his saber as he ran. Barney thrust the king
-behind him and turned to face the enemy, at Butzow’s side.
-
-The three men rushed upon the two who stood between them and their
-prey. The moonlight was now full in the faces of Butzow and the
-American. For the first time Maenck and the others saw who it was that
-had interrupted them.
-
-“The impostor!” cried the governor of Blentz. “The false king!”
-
-Imbued with temporary courage by the knowledge that his side had the
-advantage of superior numbers he launched himself full upon the
-American. To his surprise he met a sword-arm that none might have
-expected in an American, for Barney Custer had been a pupil of the
-redoubtable Colonel Monstery, who was, as Barney was wont to say, “one
-of the thanwhomest of fencing masters.”
-
-Quickly Maenck fell back to give place to Stein, but not before the
-American’s point had found him twice to leave him streaming blood from
-two deep flesh wounds.
-
-Neither of those who fought in the service of the king saw the
-trembling, weak-kneed figure, which had stood behind them, turn and
-scurry through the gateway, leaving the men who battled for him to
-their fate.
-
-The trooper whom Barney had felled had regained consciousness and as he
-came to his feet rubbing his swollen jaw he saw a disheveled,
-half-dressed figure running toward him from the sanatorium grounds. The
-fellow was no fool, and knowing the purpose of the expedition as he did
-he was quick to jump to the conclusion that this fleeing
-personification of abject terror was Leopold of Lutha; and so it was
-that as the king emerged from the gateway in search of freedom he ran
-straight into the widespread arms of the trooper.
-
-Maenck and Coblich had seen the king’s break for liberty, and the
-latter maneuvered to get himself between Butzow and the open gate that
-he might follow after the fleeing monarch.
-
-At the same instant Maenck, seeing that Stein was being worsted by the
-American, rushed in upon the latter, and thus relieved, the rat-faced
-doctor was enabled to swing a heavy cut at Barney which struck him a
-glancing blow upon the head, sending him stunned and bleeding to the
-sward.
-
-Coblich and the governor of Blentz hastened toward the gate, pausing
-for an instant to overwhelm Butzow. In the fierce scrimmage that
-followed the lieutenant was overthrown, though not before his sword had
-passed through the heart of the rat-faced one. Deserting their fallen
-comrade the two dashed through the gate, where to their immense relief
-they found Leopold safe in the hands of the trooper.
-
-An instant later the precious trio, with Leopold upon the horse of the
-late Dr. Stein, were galloping swiftly into the darkness of the wood
-that lies at the outskirts of Tafelberg.
-
-When Barney regained consciousness he found himself upon a cot within
-the sanatorium. Close beside him lay Butzow, and above them stood an
-interne and several nurses. No sooner had the American regained his
-scattered wits than he leaped to the floor. The interne and the nurses
-tried to force him back upon the cot, thinking that he was in the
-throes of a delirium, and it required his best efforts to convince them
-that he was quite rational.
-
-During the melee Butzow regained consciousness; his wound being as
-superficial as that of the American, the two men were soon donning
-their clothing, and, half-dressed, rushing toward the outer gate.
-
-The interne had told them that when he had reached the scene of the
-conflict in company with the gardener he had found them and another
-lying upon the sward.
-
-Their companion, he said, was quite dead.
-
-“That must have been Stein,” said Butzow. “And the others had escaped
-with the king!”
-
-“The king?” cried the interne.
-
-“Yes, the king, man—Leopold of Lutha. Did you not know that he who has
-lain here for three weeks was the king?” replied Butzow.
-
-The interne accompanied them to the gate and beyond, but everywhere was
-silence. The king was gone.
-
-### X. ON THE BATTLEFIELD
-
-All that night and the following day Barney Custer and his aide rode in
-search of the missing king.
-
-They came to Blentz, and there Butzow rode boldly into the great court,
-admitted by virtue of the fact that the guard upon the gate knew him
-only as an officer of the royal guard whom they believed still loyal to
-Peter of Blentz.
-
-The lieutenant learned that the king was not there, nor had he been
-since his escape. He also learned that Peter was abroad in the lowland
-recruiting followers to aid him forcibly to regain the crown of Lutha.
-
-The lieutenant did not wait to hear more, but, hurrying from the
-castle, rode to Barney where the latter had remained in hiding in the
-wood below the moat—the same wood through which he had stumbled a few
-weeks previously after his escape from the stagnant waters of the moat.
-
-“The king is not here,” said Butzow to him, as soon as the former
-reached his side. “Peter is recruiting an army to aid him in seizing
-the palace at Lustadt, and king or no king, we must ride for the
-capital in time to check that move. Thank God,” he added, “that we
-shall have a king to place upon the throne of Lutha at noon tomorrow in
-spite of all that Peter can do.”
-
-“What do you mean?” asked Barney. “Have you any clue to the whereabouts
-of Leopold?”
-
-“I saw the man at Tafelberg whom you say is king,” replied Butzow. “I
-saw him tremble and whimper in the face of danger. I saw him run when
-he might have seized something, even a stone, and fought at the sides
-of the men who were come to rescue him. And I saw you there also.
-
-“The truth and the falsity of this whole strange business is beyond me,
-but this I know: if you are not the king today I pray God that the
-other may not find his way to Lustadt before noon tomorrow, for by then
-a brave man will sit upon the throne of Lutha, your majesty.”
-
-Barney laid his hand upon the shoulder of the other.
-
-“It cannot be, my friend,” he said. “There is more than a throne at
-stake for me, but to win them both I could not do the thing you
-suggest. If Leopold of Lutha lives he must be crowned tomorrow.”
-
-“And if he does not live?” asked Butzow.
-
-Barney Custer shrugged his shoulders.
-
-It was dusk when the two entered the palace grounds in Lustadt. The
-sight of Barney threw the servants and functionaries of the royal
-household into wild excitement and confusion. Men ran hither and
-thither bearing the glad tidings that the king had returned.
-
-Old von der Tann was announced within ten minutes after Barney reached
-his apartments. He urged upon the American the necessity for greater
-caution in the future.
-
-“Your majesty’s life is never safe while Peter of Blentz is abroad in
-Lutha,” cried he.
-
-“It was to save your king from Peter that we rode from Lustadt last
-night,” replied Barney, but the old prince did not catch the double
-meaning of the words.
-
-While they talked a young officer of cavalry begged an audience. He had
-important news for the king, he said. From him Barney learned that
-Peter of Blentz had succeeded in recruiting a fair-sized army in the
-lowlands. Two regiments of government infantry and a squadron of
-cavalry had united forces with him, for there were those who still
-accepted him as regent, believing his contention that the true king was
-dead, and that he whose coronation was to be attempted was but the
-puppet of old Von der Tann.
-
-The morning of November 5 broke clear and cold. The old town of Lustadt
-was awakened with a start at daybreak by the booming of cannon. Mounted
-messengers galloped hither and thither through the steep, winding
-streets. Troops, foot and horse, moved at the double from the barracks
-along the King’s Road to the fortifications which guard the entrance to
-the city at the foot of Margaretha Street.
-
-Upon the heights above the town Barney Custer and the old Prince von
-der Tann stood surrounded by officers and aides watching the advance of
-a skirmish line up the slopes toward Lustadt. Behind, the thin line
-columns of troops were marching under cover of two batteries of field
-artillery that Peter of Blentz had placed upon a wooden knoll to the
-southeast of the city.
-
-The guns upon the single fort that, overlooking the broad valley,
-guarded the entire southern exposure of the city were answering the
-fire of Prince Peter’s artillery, while several machine guns had been
-placed to sweep the slope up which the skirmish line was advancing.
-
-The trees that masked the enemy’s pieces extended upward along the
-ridge and the eastern edge of the city. Barney saw that a force of men
-might easily reach a commanding position from that direction and enter
-Lustadt almost in rear of the fortifications. Below him a squadron of
-the Royal Horse were just emerging from their stables, taking their way
-toward the plain to join in a concerted movement against the troops
-that were advancing toward the fort.
-
-He turned to an aide de camp standing just behind him.
-
-“Intercept that squadron and direct the major to move due east along
-the King’s Road to the grove,” he commanded. “We will join him there.”
-
-And as the officer spurred down the steep and narrow street the
-American, followed by Von der Tann and his staff, wheeled and galloped
-eastward.
-
-Ten minutes later the party entered the wood at the edge of town, where
-the squadron soon joined them. Von der Tann was mystified at the
-purpose of this change in the position of the general staff, since from
-the wood they could see nothing of the battle waging upon the slope.
-During his brief intercourse with the man he thought king he had quite
-forgotten that there had been any question as to the young man’s
-sanity, for he had given no indication of possessing aught but a
-well-balanced mind. Now, however, he commenced to have misgivings, if
-not of his sanity, then as to his judgment at least.
-
-“I fear, your majesty,” he ventured, “that we are putting ourselves too
-much out of touch with the main body of the army. We can neither see
-nor accomplish anything from this position.”
-
-“We were too far away to accomplish much upon the top of that
-mountain,” replied Barney, “but we’re going to commence doing things
-now. You will please to ride back along the King’s Road and take direct
-command of the troops mobilized near the fort.
-
-“Direct the artillery to redouble their fire upon the enemy’s battery
-for five minutes, and then to cease firing into the wood entirely. At
-the same instant you may order a cautious advance against the troops
-advancing up the slope.
-
-“When you see us emerge upon the west side of the grove where the
-enemy’s guns are now, you may order a charge, and we will take them
-simultaneously upon their right flank with a cavalry charge.”
-
-“But, your majesty,” exclaimed Von der Tann dubiously, “where will you
-be in the mean time?”
-
-“We shall be with the major’s squadron, and when you see us emerging
-from the grove, you will know that we have taken Peter’s guns and that
-everything is over except the shouting.”
-
-“You are not going to accompany the charge!” cried the old prince.
-
-“We are going to lead it,” and the pseudo-king of Lutha wheeled his
-mount as though to indicate that the time for talking was past.
-
-With a signal to the major commanding the squadron of Royal Horse, he
-moved eastward into the wood. Prince Ludwig hesitated a moment as
-though to question further the wisdom of the move, but finally with a
-shake of his head he trotted off in the direction of the fort.
-
-Five minutes later the enemy were delighted to note that the fire upon
-their concealed battery had suddenly ceased.
-
-Then Peter saw a force of foot-soldiers deploy from the city and
-advance slowly in line of skirmishers down the slope to meet his own
-firing line.
-
-Immediately he did what Barney had expected that he would—turned the
-fire of his artillery toward the southwest, directly away from the
-point from which the American and the crack squadron were advancing.
-
-So it came that the cavalrymen crept through the woods upon the rear of
-the guns, unseen; the noise of their advance was drowned by the
-detonation of the cannon.
-
-The first that the artillerymen knew of the enemy in their rear was a
-shout of warning from one of the powder-men at a caisson, who had
-caught a glimpse of the grim line advancing through the trees at his
-rear.
-
-Instantly an effort was made to wheel several of the pieces about and
-train them upon the advancing horsemen; but even had there been time, a
-shout that rose from several of Peter’s artillerymen as the Royal Horse
-broke into full view would doubtless have prevented the maneuver, for
-at sight of the tall, bearded, young man who galloped in front of the
-now charging cavalrymen there rose a shout of “The king! The king!”
-
-With the force of an avalanche the Royal Horse rode through those two
-batteries of field artillery; and in the thick of the fight that
-followed rode the American, a smile upon his face, for in his ears rang
-the wild shouts of his troopers: “For the king! For the king!”
-
-In the moment that the enemy made their first determined stand a bullet
-brought down the great bay upon which Barney rode. A dozen of Peter’s
-men rushed forward to seize the man stumbling to his feet. As many more
-of the Royal Horse closed around him, and there, for five minutes, was
-waged as fierce a battle for possession of a king as was ever fought.
-
-But already many of the artillerymen had deserted the guns that had not
-yet been attacked, for the magic name of king had turned their blood to
-water. Fifty or more raised a white flag and surrendered without
-striking a blow, and when, at last, Barney and his little bodyguard
-fought their way through those who surrounded them they found the
-balance of the field already won.
-
-Upon the slope below the city the loyal troops were advancing upon the
-enemy. Old Prince Ludwig paced back and forth behind them, apparently
-oblivious to the rain of bullets about him. Every moment he turned his
-eyes toward the wooded ridge from which there now belched an almost
-continuous fusillade of shells upon the advancing royalists.
-
-Quite suddenly the cannonading ceased and the old man halted in his
-tracks, his gaze riveted upon the wood. For several minutes he saw no
-sign of what was transpiring behind that screen of sere and yellow
-autumn leaves, and then a man came running out, and after him another
-and another.
-
-The prince raised his field glasses to his eyes. He almost cried aloud
-in his relief—the uniforms of the fugitives were those of artillerymen,
-and only cavalry had accompanied the king. A moment later there
-appeared in the center of his lenses a tall figure with a full beard.
-He rode, swinging his saber above his head, and behind him at full
-gallop came a squadron of the Royal Horse.
-
-Old von der Tann could restrain himself no longer.
-
-“The king! The king!” he cried to those about him, pointing in the
-direction of the wood.
-
-The officers gathered there and the soldiery before him heard and took
-up the cry, and then from the old man’s lips came the command,
-“Charge!” and a thousand men tore down the slopes of Lustadt upon the
-forces of Peter of Blentz, while from the east the king charged their
-right flank at the head of the Royal Horse.
-
-Peter of Blentz saw that the day was lost, for the troops upon the
-right were crumpling before the false king while he and his cavalrymen
-were yet a half mile distant. Before the retreat could become a rout
-the prince regent ordered his forces to fall back slowly upon a suburb
-that lies in the valley below the city.
-
-Once safely there he raised a white flag, asking a conference with
-Prince Ludwig.
-
-“Your majesty,” said the old man, “what answer shall we send the
-traitor who even now ignores the presence of his king?”
-
-“Treat with him,” replied the American. “He may be honest enough in his
-belief that I am an impostor.”
-
-Von der Tann shrugged his shoulders, but did as Barney bid, and for
-half an hour the young man waited with Butzow while Von der Tann and
-Peter met halfway between the forces for their conference.
-
-A dozen members of the most powerful of the older nobility accompanied
-Ludwig. When they returned their faces were a picture of puzzled
-bewilderment. With them were several officers, soldiers and civilians
-from Peter’s contingency.
-
-“What said he?” asked Barney.
-
-“He said, your majesty,” replied Von der Tann, “that he is confident
-you are not the king, and that these men he has sent with me knew the
-king well at Blentz. As proof that you are not the king he has offered
-the evidence of your own denials—made not only to his officers and
-soldiers, but to the man who is now your loyal lieutenant, Butzow, and
-to the Princess Emma von der Tann, my daughter.
-
-“He insists that he is fighting for the welfare of Lutha, while we are
-traitors, attempting to seat an impostor upon the throne of the dead
-Leopold. I will admit that we are at a loss, your majesty, to know
-where lies the truth and where the falsity in this matter.
-
-“We seek only to serve our country and our king but there are those
-among us who, to be entirely frank, are not yet convinced that you are
-Leopold. The result of the conference may not, then, meet with the
-hearty approval of your majesty.”
-
-“What was the result?” asked Barney.
-
-“It was decided that all hostilities cease, and that Prince Peter be
-given an opportunity to establish the validity of his claim that your
-majesty is an impostor. If he is able to do so to the entire
-satisfaction of a majority of the old nobility, we have agreed to
-support him in a return to his regency.”
-
-For a moment there was deep silence. Many of the nobles stood with
-averted faces and eyes upon the ground.
-
-The American, a half-smile upon his face, turned toward the men of
-Peter who had come to denounce him. He knew what their verdict would
-be. He knew that if he were to save the throne for Leopold he must hold
-it at any cost until Leopold should be found.
-
-Troopers were scouring the country about Lustadt as far as Blentz in
-search of Maenck and Coblich. Could they locate these two and arrest
-them “with all found in their company,” as his order read, he felt sure
-that he would be able to deliver the missing king to his subjects in
-time for the coronation at noon.
-
-Barney looked straight into the eyes of old Von der Tann.
-
-“You have given us the opinion of others, Prince Ludwig,” he said. “Now
-you may tell us your own views of the matter.”
-
-“I shall have to abide by the decision of the majority,” replied the
-old man. “But I have seen your majesty under fire, and if you are not
-the king, for Lutha’s sake you ought to be.”
-
-“He is not Leopold,” said one of the officers who had accompanied the
-prince from Peter’s camp. “I was governor of Blentz for three years and
-as familiar with the king’s face as with that of my own brother.”
-
-“No,” cried several of the others, “this man is not the king.”
-
-Several of the nobles drew away from Barney. Others looked at him
-questioningly.
-
-Butzow stepped close to his side, and it was noticeable that the
-troopers, and even the officers, of the Royal Horse which Barney had
-led in the charge upon the two batteries in the wood, pressed a little
-closer to the American. This fact did not escape Butzow’s notice.
-
-“If you are content to take the word of the servants of a traitor and a
-would-be regicide,” he cried, “I am not. There has been no proof
-advanced that this man is not the king. In so far as I am concerned he
-is the king, nor ever do I expect to serve another more worthy of the
-title.
-
-“If Peter of Blentz has real proof—not the testimony of his own
-faction—that Leopold of Lutha is dead, let him bring it forward before
-noon today, for at noon we shall crown a king in the cathedral at
-Lustadt, and I for one pray to God that it may be he who has led us in
-battle today.”
-
-A shout of applause rose from the Royal Horse, and from the
-foot-soldiers who had seen the king charge across the plain, scattering
-the enemy before him.
-
-Barney, appreciating the advantage in the sudden turn affairs had taken
-following Butzow’s words, swung to his saddle.
-
-“Until Peter of Blentz brings to Lustadt one with a better claim to the
-throne,” he said, “we shall continue to rule Lutha, nor shall other
-than Leopold be crowned her king. We approve of the amnesty you have
-granted, Prince Ludwig, and Peter of Blentz is free to enter Lustadt,
-as he will, so long as he does not plot against the true king.
-
-“Major,” he added, turning to the commander of the squadron at his
-back, “we are returning to the palace. Your squadron will escort us,
-remaining on guard there about the grounds. Prince Ludwig, you will see
-that machine guns are placed about the palace and commanding the
-approaches to the cathedral.”
-
-With a nod to the cavalry major he wheeled his horse and trotted up the
-slope toward Lustadt.
-
-With a grim smile Prince Ludwig von der Tann mounted his horse and rode
-toward the fort. At his side were several of the nobles of Lutha. They
-looked at him in astonishment.
-
-“You are doing his bidding, although you do not know that he is the
-true king?” asked one of them.
-
-“Were he an impostor,” replied the old man, “he would have insisted by
-word of mouth that he is king. But not once has he said that he is
-Leopold. Instead, he has proved his kingship by his acts.”
-
-### XI. A TIMELY INTERVENTION
-
-Nine o’clock found Barney Custer pacing up and down his apartments in
-the palace. No clue as to the whereabouts of Coblich, Maenck or the
-king had been discovered. One by one his troopers had returned to
-Butzow empty-handed, and as much at a loss as to the hiding-place of
-their quarry as when they had set out upon their search.
-
-Peter of Blentz and his retainers had entered the city and already had
-commenced to gather at the cathedral.
-
-Peter, at the residence of Coblich, had succeeded in gathering about
-him many of the older nobility whom he pledged to support him in case
-he could prove to them that the man who occupied the royal palace was
-not Leopold of Lutha.
-
-They agreed to support him in his regency if he produced proof that the
-true Leopold was dead, and Peter of Blentz waited with growing anxiety
-the coming of Coblich with word that he had the king in custody. Peter
-was staking all on a single daring move which he had decided to make in
-his game of intrigue.
-
-As Barney paced within the palace, waiting for word that Leopold had
-been found, Peter of Blentz was filled with equal apprehension as he,
-too, waited for the same tidings. At last he heard the pound of hoofs
-upon the pavement without and a moment later Coblich, his clothing
-streaked with dirt, blood caked upon his face from a wound across the
-forehead, rushed into the presence of the prince regent.
-
-Peter drew him hurriedly into a small study on the first floor.
-
-“Well?” he whispered, as the two faced each other.
-
-“We have him,” replied Coblich. “But we had the devil’s own time
-getting him. Stein was killed and Maenck and I both wounded, and all
-morning we have spent the time hiding from troopers who seemed to be
-searching for us. Only fifteen minutes since did we reach the
-hiding-place that you instructed us to use. But we have him, your
-highness, and he is in such a state of cowardly terror that he is ready
-to agree to anything, if you will but spare his life and set him free
-across the border.”
-
-“It is too late for that now, Coblich,” replied Peter. “There is but
-one way that Leopold of Lutha can serve me now, and that is—dead. Were
-his corpse to be carried into the cathedral of Lustadt before noon
-today, and were those who fetched it to swear that the king was killed
-by the impostor after being dragged from the hospital at Tafelberg
-where you and Maenck had located him, and from which you were
-attempting to rescue him, I believe that the people would tear our
-enemies to pieces. What say you, Coblich?”
-
-The other stared at Peter of Blentz for several seconds while the
-atrocity of his chief’s plan filtered through his brain.
-
-“My God!” he exclaimed at last. “You mean that you wish me to murder
-Leopold with my own hands?”
-
-“You put it too crudely, my dear Coblich,” replied the other.
-
-“I cannot do it,” muttered Coblich. “I have never killed a man in my
-life. I am getting old. No, I could never do it. I should not sleep
-nights.”
-
-“If it is not done, Coblich, and Leopold comes into his own,” said
-Peter slowly, “you will be caught and hanged higher than Haman. And if
-you do not do it, and the impostor is crowned today, then you will be
-either hanged officially or knifed unofficially, and without any choice
-in the matter whatsoever. Nothing, Coblich, but the dead body of the
-true Leopold can save your neck. You have your choice, therefore, of
-letting him live to prove your treason, or letting him die and becoming
-chancellor of Lutha.”
-
-Slowly Coblich turned toward the door. “You are right,” he said, “but
-may God have mercy on my soul. I never thought that I should have to do
-it with my own hands.”
-
-So saying he left the room and a moment later Peter of Blentz smiled as
-he heard the pounding of a horse’s hoofs upon the pavement without.
-
-Then the Regent entered the room he had recently quitted and spoke to
-the nobles of Lutha who were gathered there.
-
-“Coblich has found the body of the murdered king,” he said. “I have
-directed him to bring it to the cathedral. He came upon the impostor
-and his confederate, Lieutenant Butzow, as they were bearing the corpse
-from the hospital at Tafelberg where the king has lain unknown since
-the rumor was spread by Von der Tann that he had been killed by
-bandits.
-
-“He was not killed until last evening, my lords, and you shall see
-today the fresh wounds upon him. When the time comes that we can
-present this grisly evidence of the guilt of the impostor and those who
-uphold him, I shall expect you all to stand at my side, as you have
-promised.”
-
-With one accord the noblemen pledged anew their allegiance to Peter of
-Blentz if he could produce one-quarter of the evidence he claimed to
-possess.
-
-“All that we wish to know positively is,” said one, “that the man who
-bears the title of king today is really Leopold of Lutha, or that he is
-not. If not then he stands convicted of treason, and we shall know how
-to conduct ourselves.”
-
-Together the party rode to the cathedral, the majority of the older
-nobility now openly espousing the cause of the Regent.
-
-At the palace Barney was about distracted. Butzow was urging him to
-take the crown whether he was Leopold or not, for the young lieutenant
-saw no hope for Lutha, if either the scoundrelly Regent or the cowardly
-man whom Barney had assured him was the true king should come into
-power.
-
-It was eleven o’clock. In another hour Barney knew that he must have
-found some new solution of his dilemma, for there seemed little
-probability that the king would be located in the brief interval that
-remained before the coronation. He wondered what they did to people who
-stole thrones. For a time he figured his chances of reaching the border
-ahead of the enraged populace. All had depended upon the finding of the
-king, and he had been so sure that it could be accomplished in time,
-for Coblich and Maenck had had but a few hours in which to conceal the
-monarch before the search was well under way.
-
-Armed with the king’s warrants, his troopers had ridden through the
-country, searching houses, and questioning all whom they met. Patrols
-had guarded every road that the fugitives might take either to Lustadt,
-Blentz, or the border; but no king had been found and no trace of his
-abductors.
-
-Prince von der Tann, Barney was convinced, was on the point of
-deserting him, and going over to the other side. It was true that the
-old man had carried out his instructions relative to the placing of the
-machine guns; but they might be used as well against him, where they
-stood, as for him.
-
-From his window he could see the broad avenue which passes before the
-royal palace of Lutha. It was crowded with throngs moving toward the
-cathedral. Presently there came a knock upon the closed door of his
-chamber.
-
-At his “Enter” a functionary announced: “His Royal Highness Ludwig,
-Prince von der Tann!”
-
-The old man was much perturbed at the rumors he had heard relative to
-the assassination of the true Leopold. Soldier-like, he blurted out his
-suspicions and his ultimatum.
-
-“None but the royal blood of Rubinroth may reign in Lutha while there
-be a Rubinroth left to reign and old Von der Tann lives,” he cried in
-conclusion.
-
-At the name “Rubinroth” Barney started. It was his mother’s name.
-Suddenly the truth flashed upon him. He understood now the reticence of
-both his father and mother relative to her early life.
-
-“Prince Ludwig,” said the young man earnestly, “I have only the good of
-Lutha in my heart. For three weeks I have labored and risked death a
-hundred times to place the legitimate heir to the crown of Lutha upon
-his throne. I—”
-
-He hesitated, not knowing just how to commence the confession he was
-determined to make, though he was positive that it would place Peter of
-Blentz upon the throne, since the old prince had promised to support
-the Regent could it be proved that Barney was an impostor.
-
-“I,” he started again, and then there came an interruption at the door.
-
-“A messenger, your majesty,” announced the doorman, “who says that he
-must have audience at once upon a matter of life and death to the
-king.”
-
-“We will see him in the ante-chamber,” replied Barney, moving toward
-the door. “Await us here, Prince Ludwig.”
-
-A moment later he re-entered the apartment. There was an expression of
-renewed hope upon his face.
-
-“As we were about to remark, my dear prince,” he said, “I swear that
-the royal blood of the Rubinroths flows in my veins, and as God is my
-judge, none other than the true Leopold of Lutha shall be crowned
-today. And now we must prepare for the coronation. If there be trouble
-in the cathedral, Prince Ludwig, we look to your sword in protection of
-the king.”
-
-“When I am with you, sire,” said Von der Tann, “I know that you are
-king. When I saw how you led the troops in battle, I prayed that there
-could be no mistake. God give that I am right. But God help you if you
-are playing with old Ludwig von der Tann.”
-
-When the old man had left the apartment Barney summoned an aide and
-sent for Butzow. Then he hurried to the bath that adjoined the
-apartment, and when the lieutenant of horse was announced Barney called
-through a soapy lather for his confederate to enter.
-
-“What are you doing, sire?” cried Butzow in amazement.
-
-“Cut out the ‘sire,’ old man,” shouted Barney Custer of Beatrice. “this
-is the fifth of November and I am shaving off this alfalfa. The king is
-found!”
-
-“What?” cried Butzow, and upon his face there was little to indicate
-the rejoicing that a loyal subject of Leopold of Lutha should have felt
-at that announcement.
-
-“There is a man in the next room,” went on Barney, “who can lead us to
-the spot where Coblich and Maenck guard the king. Get him in here.”
-
-Butzow hastened to comply with the American’s instructions, and a
-moment later returned to the apartment with the old shopkeeper of
-Tafelberg.
-
-As Barney shaved he issued directions to the two. Within the room to
-the east, he said, there were the king’s coronation robes, and in a
-smaller dressingroom beyond they would find a long gray cloak.
-
-They were to wrap all these in a bundle which the old shopkeeper was to
-carry.
-
-“And, Butzow,” added Barney, “look to my revolvers and your own, and
-lay my sword out as well. The chances are that we shall have to use
-them before we are ten minutes older.”
-
-In an incredibly short space of time the young man emerged from the
-bath, his luxuriant beard gone forever, he hoped. Butzow looked at him
-with a smile.
-
-“I must say that the beard did not add greatly to your majesty’s good
-looks,” he said.
-
-“Never mind the bouquets, old man,” cried Barney, cramming his arms
-into the sleeves of his khaki jacket and buckling sword and revolver
-about him, as he hurried toward a small door that opened upon the
-opposite side of the apartment to that through which his visitors had
-been conducted.
-
-Together the three hastened through a narrow, little-used corridor and
-down a flight of well-worn stone steps to a door that let upon the rear
-court of the palace.
-
-There were grooms and servants there, and soldiers too, who saluted
-Butzow, according the old shopkeeper and the smooth-faced young
-stranger only cursory glances. It was evident that without his beard it
-was not likely that Barney would be again mistaken for the king.
-
-At the stables Butzow requisitioned three horses, and soon the trio was
-galloping through a little-frequented street toward the northern, hilly
-environs of Lustadt. They rode in silence until they came to an old
-stone building, whose boarded windows and general appearance of
-dilapidation proclaimed its long tenantless condition. Rank weeds, now
-rustling dry and yellow in the November wind, choked what once might
-have been a luxuriant garden. A stone wall, which had at one time
-entirely surrounded the grounds, had been almost completely removed
-from the front to serve as foundation stone for a smaller edifice
-farther down the mountainside.
-
-The horsemen avoided this break in the wall, coming up instead upon the
-rear side where their approach was wholly screened from the building by
-the wall upon that exposure.
-
-Close in they dismounted, and leaving the animals in charge of the
-shopkeeper of Tafelberg, Barney and Butzow hastened toward a small
-postern-gate which swung, groaning, upon a single rusted hinge. Each
-felt that there was no time for caution or stratagem. Instead all
-depended upon the very boldness and rashness of their attack, and so as
-they came through into the courtyard the two dashed headlong for the
-building.
-
-Chance accomplished for them what no amount of careful execution might
-have done, and they came within the ruin unnoticed by the four who
-occupied the old, darkened library.
-
-Possibly the fact that one of the men had himself just entered and was
-excitedly talking to the others may have drowned the noisy approach of
-the two. However that may be, it is a fact that Barney and the cavalry
-officer came to the very door of the library unheard.
-
-There they halted, listening. Coblich was speaking.
-
-“The Regent commands it, Maenck,” he was saying. “It is the only thing
-that can save our necks. He said that you had better be the one to do
-it, since it was your carelessness that permitted the fellow to escape
-from Blentz.”
-
-Huddled in a far corner of the room was an abject figure trembling in
-terror. At the words of Coblich it staggered to its feet. It was the
-king.
-
-“Have pity—have pity!” he cried. “Do not kill me, and I will go away
-where none will ever know that I live. You can tell Peter that I am
-dead. Tell him anything, only spare my life. Oh, why did I ever listen
-to the cursed fool who tempted me to think of regaining the crown that
-has brought me only misery and suffering—the crown that has now placed
-the sentence of death upon me.”
-
-“Why not let him go?” suggested the trooper, who up to this time had
-not spoken. “If we don’t kill him, we can’t be hanged for his murder.”
-
-“Don’t be too sure of that,” exclaimed Maenck. “If he goes away and
-never returns, what proof can we offer that we did not kill him, should
-we be charged with the crime? And if we let him go, and later he
-returns and gains his throne, he will see that we are hanged anyway for
-treason.
-
-“The safest thing to do is to put him where he at least cannot come
-back to threaten us, and having done so upon the orders of Peter, let
-the king’s blood be upon Peter’s head. I, at least, shall obey my
-master, and let you two bear witness that I did the thing with my own
-hand.” So saying he drew his sword and crossed toward the king.
-
-But Captain Ernst Maenck never reached his sovereign.
-
-As the terrified shriek of the sorry monarch rang through the interior
-of the desolate ruin another sound mingled with it, half-drowning the
-piercing wail of terror.
-
-It was the sharp crack of a revolver, and even as it spoke Maenck
-lunged awkwardly forward, stumbled, and collapsed at Leopold’s feet.
-With a moan the king shrank back from the grisly thing that touched his
-boot, and then two men were in the center of the room, and things were
-happening with a rapidity that was bewildering.
-
-About all that he could afterward recall with any distinctness was the
-terrified face of Coblich, as he rushed past him toward a door in the
-opposite side of the room, and the horrid leer upon the face of the
-dead trooper, who foolishly, had made a move to draw his revolver.
-
-Within the cathedral at Lustadt excitement was at fever heat. It lacked
-but two minutes of noon, and as yet no king had come to claim the
-crown. Rumors were running riot through the close-packed audience.
-
-One man had heard the king’s chamberlain report to Prince von der Tann
-that the master of ceremonies had found the king’s apartments vacant
-when he had gone to urge the monarch to hasten his preparations for the
-coronation.
-
-Another had seen Butzow and two strangers galloping north through the
-city. A third told of a little old man who had come to the king with an
-urgent message.
-
-Peter of Blentz and Prince Ludwig were talking in whispers at the foot
-of the chancel steps. Peter ascended the steps and facing the
-assemblage raised a silencing hand.
-
-“He who claimed to be Leopold of Lutha,” he said, “was but a mad
-adventurer. He would have seized the throne of the Rubinroths had his
-nerve not failed him at the last moment. He has fled. The true king is
-dead. Now I, Prince Regent of Lutha, declare the throne vacant, and
-announce myself king!”
-
-There were a few scattered cheers and some hissing. A score of the
-nobles rose as though to protest, but before any could take a step the
-attention of all was directed toward the sorry figure of a white-faced
-man who scurried up the broad center aisle.
-
-It was Coblich.
-
-He ran to Peter’s side, and though he attempted to speak in a whisper,
-so out of breath, and so filled with hysterical terror was he that his
-words came out in gasps that were audible to many of those who stood
-near by.
-
-“Maenck is dead,” he cried. “The impostor has stolen the king.”
-
-Peter of Blentz went white as his lieutenant. Von der Tann heard and
-demanded an explanation.
-
-“You said that Leopold was dead,” he said accusingly.
-
-Peter regained his self-control quickly.
-
-“Coblich is excited,” he explained. “He means that the impostor has
-stolen the body of the king that Coblich and Maenck had discovered and
-were bringing to Lustadt.”
-
-Von der Tann looked troubled.
-
-He knew not what to make of the series of wild tales that had come to
-his ears within the past hour. He had hoped that the young man whom he
-had last seen in the king’s apartments was the true Leopold. He would
-have been glad to have served such a one, but there had been many
-inexplicable occurrences which tended to cast a doubt upon the man’s
-claims—and yet, had he ever claimed to be the king? It suddenly
-occurred to the old prince that he had not. On the contrary he had
-repeatedly stated to Prince Ludwig’s daughter and to Lieutenant Butzow
-that he was not Leopold.
-
-It seemed that they had all been so anxious to believe him king that
-they had forced the false position upon him, and now if he had indeed
-committed the atrocity that Coblich charged against him, who could
-wonder? With less provocation men had before attempted to seize thrones
-by more dastardly means.
-
-Peter of Blentz was speaking.
-
-“Let the coronation proceed,” he cried, “that Lutha may have a true
-king to frustrate the plans of the impostor and the traitors who had
-supported him.”
-
-He cast a meaning glance at Prince von der Tann.
-
-There were many cries for Peter of Blentz. “Let’s have done with
-treason, and place upon the throne of Lutha one whom we know to be both
-a Luthanian and sane. Down with the mad king! Down with the impostor!”
-
-Peter turned to ascend the chancel steps.
-
-Von der Tann still hesitated. Below him upon one side of the aisle were
-massed his own retainers. Opposite them were the men of the Regent, and
-dividing the two the parallel ranks of Horse Guards stretched from the
-chancel down the broad aisle to the great doors. These were strongly
-for the impostor, if impostor he was, who had led them to victory over
-the men of the Blentz faction.
-
-Von der Tann knew that they would fight to the last ditch for their
-hero should he come to claim the crown. Yet how would they fight—to
-which side would they cleave, were he to attempt to frustrate the
-design of the Regent to seize the throne of Lutha?
-
-Already Peter of Blentz had approached the bishop, who, eager to
-propitiate whoever seemed most likely to become king, gave the signal
-for the procession that was to mark the solemn bearing of the crown of
-Lutha up the aisle to the chancel.
-
-Outside the cathedral there was the sudden blare of trumpets. The great
-doors swung violently open, and the entire throng were upon their feet
-in an instant as a trooper of the Royal Horse shouted: “The king! The
-king! Make way for Leopold of Lutha!”
-
-### XII. THE GRATITUDE OF A KING
-
-At the cry silence fell upon the throng. Every head was turned toward
-the great doors through which the head of a procession was just
-visible. It was a grim looking procession—the head of it, at least.
-
-There were four khaki-clad trumpeters from the Royal Horse Guards, the
-gay and resplendent uniforms which they should have donned today
-conspicuous for their absence. From their brazen bugles sounded another
-loud fanfare, and then they separated, two upon each side of the aisle,
-and between them marched three men.
-
-One was tall, with gray eyes and had a reddish-brown beard. He was
-fully clothed in the coronation robes of Leopold. Upon his either hand
-walked the others—Lieutenant Butzow and a gray-eyed, smooth-faced,
-square-jawed stranger.
-
-Behind them marched the balance of the Royal Horse Guards that were not
-already on duty within the cathedral. As the eyes of the multitude fell
-upon the man in the coronation robes there were cries of: “The king!
-Impostor!” and “Von der Tann’s puppet!”
-
-“Denounce him!” whispered one of Peter’s henchmen in his master’s ear.
-
-The Regent moved closer to the aisle, that he might meet the impostor
-at the foot of the chancel steps. The procession was moving steadily up
-the aisle.
-
-Among the clan of Von der Tann a young girl with wide eyes was bending
-forward that she might have a better look at the face of the king. As
-he came opposite her her eyes filled with horror, and then she saw the
-eyes of the smooth-faced stranger at the king’s side. They were brave,
-laughing eyes, and as they looked straight into her own the truth
-flashed upon her, and the girl gave a gasp of dismay as she realized
-that the king of Lutha and the king of her heart were not one and the
-same.
-
-At last the head of the procession was almost at the foot of the
-chancel steps. There were murmurs of: “It is not the king,” and “Who is
-this new impostor?”
-
-Leopold’s eyes were searching the faces of the close-packed nobility
-about the chancel. At last they fell upon the face of Peter. The young
-man halted not two paces from the Regent. The man went white as the
-king’s eyes bored straight into his miserable soul.
-
-“Peter of Blentz,” cried the young man, “as God is your judge, tell the
-truth today. Who am I?”
-
-The legs of the Prince Regent trembled. He sank upon his knees, raising
-his hands in supplication toward the other. “Have pity on me, your
-majesty, have pity!” he cried.
-
-“Who am I, man?” insisted the king.
-
-“You are Leopold Rubinroth, sire, by the grace of God, king of Lutha,”
-cried the frightened man. “Have mercy on an old man, your majesty.”
-
-“Wait! Am I mad? Was I ever mad?”
-
-“As God is my judge, sire, no!” replied Peter of Blentz.
-
-Leopold turned to Butzow.
-
-“Remove the traitor from our presence,” he commanded, and at a word
-from the lieutenant a dozen guardsmen seized the trembling man and
-hustled him from the cathedral amid hisses and execrations.
-
-Following the coronation the king was closeted in his private audience
-chamber in the palace with Prince Ludwig.
-
-“I cannot understand what has happened, even now, your majesty,” the
-old man was saying. “That you are the true Leopold is all that I am
-positive of, for the discomfiture of Prince Peter evidenced that fact
-all too plainly. But who the impostor was who ruled Lutha in your name
-for two days, disappearing as miraculously as he came, I cannot guess.
-
-“But for another miracle which preserved you for us in the nick of time
-he might now be wearing the crown of Lutha in your stead. Having Peter
-of Blentz safely in custody our next immediate task should be to hunt
-down the impostor and bring him to justice also; though”—and the old
-prince sighed—“he was indeed a brave man, and a noble figure of a king
-as he led your troops to battle.”
-
-The king had been smiling as Von der Tann first spoke of the
-“impostor,” but at the old man’s praise of the other’s bravery a slight
-flush tinged his cheek, and the shadow of a scowl crossed his brow.
-
-“Wait,” he said, “we shall not have to look far for your ‘impostor,’”
-and summoning an aide he dispatched him for “Lieutenant Butzow and Mr.
-Custer.”
-
-A moment later the two entered the audience chamber. Barney found that
-Leopold the king, surrounded by comforts and safety, was a very
-different person from Leopold the fugitive. The weak face now wore an
-expression of arrogance, though the king spoke most graciously to the
-American.
-
-“Here, Von der Tann,” said Leopold, “is your ‘impostor.’ But for him I
-should doubtless be dead by now, or once again a prisoner at Blentz.”
-
-Barney and Butzow found it necessary to repeat their stories several
-times before the old man could fully grasp all that had transpired
-beneath his very nose without his being aware of scarce a single detail
-of it.
-
-When he was finally convinced that they were telling the truth, he
-extended his hand to the American.
-
-“I knelt to you once, young man,” he said, “and kissed your hand. I
-should be filled with bitterness and rage toward you. On the contrary,
-I find that I am proud to have served in the retinue of such an
-impostor as you, for you upheld the prestige of the house of Rubinroth
-upon the battlefield, and though you might have had a crown, you
-refused it and brought the true king into his own.”
-
-Leopold sat tapping his foot upon the carpet. It was all very well if
-he, the king, chose to praise the American, but there was no need for
-old von der Tann to slop over so. The king did not like it. As a matter
-of fact, he found himself becoming very jealous of the man who had
-placed him upon his throne.
-
-“There is only one thing that I can harbor against you,” continued
-Prince Ludwig, “and that is that in a single instance you deceived me,
-for an hour before the coronation you told me that you were a
-Rubinroth.”
-
-“I told you, prince,” corrected Barney, “that the royal blood of
-Rubinroth flowed in my veins, and so it does. I am the son of the
-runaway Princess Victoria of Lutha.”
-
-Both Leopold and Ludwig looked their surprise, and to the king’s eyes
-came a sudden look of fear. With the royal blood in his veins, what was
-there to prevent this popular hero from some day striving for the
-throne he had once refused? Leopold knew that the minds of men were
-wont to change most unaccountably.
-
-“Butzow,” he said suddenly to the lieutenant of horse, “how many do you
-imagine know positively that he who has ruled Lutha for the past two
-days and he who was crowned in the cathedral this noon are not one and
-the same?”
-
-“Only a few besides those who are in this room, your majesty,” replied
-Butzow. “Peter and Coblich have known it from the first, and then there
-is Kramer, the loyal old shopkeeper of Tafelberg, who followed Coblich
-and Maenck all night and half a day as they dragged the king to the
-hiding-place where we found him. Other than these there may be those
-who guess the truth, but there are none who know.”
-
-For a moment the king sat in thought. Then he rose and commenced pacing
-back and forth the length of the apartment.
-
-“Why should they ever know?” he said at last, halting before the three
-men who had been standing watching him. “For the sake of Lutha they
-should never know that another than the true king sat upon the throne
-even for an hour.”
-
-He was thinking of the comparison that might be drawn between the
-heroic figure of the American and his own colorless part in the events
-which had led up to his coronation. In his heart of hearts he felt that
-old Von der Tann rather regretted that the American had not been the
-king, and he hated the old man accordingly, and was commencing to hate
-the American as well.
-
-Prince Ludwig stood looking at the carpet after the king had spoken.
-His judgment told him that the king’s suggestion was a wise one; but he
-was sorry and ashamed that it had come from Leopold. Butzow’s lips
-almost showed the contempt that he felt for the ingratitude of his
-king.
-
-Barney Custer was the first to speak.
-
-“I think his majesty is quite right,” he said, “and tonight I can leave
-the palace after dark and cross the border some time tomorrow evening.
-The people need never know the truth.”
-
-Leopold looked relieved.
-
-“We must reward you, Mr. Custer,” he said. “Name that which it lies
-within our power to grant you and it shall be yours.”
-
-Barney thought of the girl he loved; but he did not mention her name,
-for he knew that she was not for him now.
-
-“There is nothing, your majesty,” he said.
-
-“A money reward,” Leopold started to suggest, and then Barney Custer
-lost his temper.
-
-A flush mounted to his face, his chin went up, and there came to his
-lips bitter words of sarcasm. With an effort, however, he held his
-tongue, and, turning his back upon the king, his broad shoulders
-proclaiming the contempt he felt, he walked slowly out of the room.
-
-Von der Tann and Butzow and Leopold of Lutha stood in silence as the
-American passed out of sight beyond the portal.
-
-The manner of his going had been an affront to the king, and the young
-ruler had gone red with anger.
-
-“Butzow,” he cried, “bring the fellow back; he shall be taught a lesson
-in the deference that is due kings.”
-
-Butzow hesitated. “He has risked his life a dozen times for your
-majesty,” said the lieutenant.
-
-Leopold flushed.
-
-“Do not humiliate him, sire,” advised Von der Tann. “He has earned a
-greater reward at your hands than that.”
-
-The king resumed his pacing for a moment, coming to a halt once more
-before the two.
-
-“We shall take no notice of his insolence,” he said, “and that shall be
-our royal reward for his services. More than he deserves, we dare say,
-at that.”
-
-As Barney hastened through the palace on his way to his new quarters to
-obtain his arms and order his horse saddled, he came suddenly upon a
-girlish figure gazing sadly from a window upon the drear November
-world—her heart as sad as the day.
-
-At the sound of his footstep she turned, and as her eyes met the gray
-ones of the man she stood poised as though of half a mind to fly. For a
-moment neither spoke.
-
-“Can your highness forgive?” he asked.
-
-For answer the girl buried her face in her hands and dropped upon the
-cushioned window seat before her. The American came close and knelt at
-her side.
-
-“Don’t,” he begged as he saw her shoulders rise to the sudden sobbing
-that racked her slender frame. “Don’t!”
-
-He thought that she wept from mortification that she had given her
-kisses to another than the king.
-
-“None knows,” he continued, “what has passed between us. None but you
-and I need ever know. I tried to make you understand that I was not
-Leopold; but you would not believe. It is not my fault that I loved
-you. It is not my fault that I shall always love you. Tell me that you
-forgive me my part in the chain of strange circumstances that deceived
-you into an acknowledgment of a love that you intended for another.
-Forgive me, Emma!”
-
-Down the corridor behind them a tall figure approached on silent,
-noiseless feet. At sight of the two at the window seat it halted. It
-was the king.
-
-The girl looked up suddenly into the eyes of the American bending so
-close above her.
-
-“I can never forgive you,” she cried, “for not being the king, for I am
-betrothed to him—and I love you!”
-
-Before she could prevent him, Barney Custer had taken her in his arms,
-and though at first she made a pretense of attempting to escape, at
-last she lay quite still. Her arms found their way about the man’s
-neck, and her lips returned the kisses that his were showering upon her
-upturned mouth.
-
-Presently her glance wandered above the shoulder of the American, and
-of a sudden her eyes filled with terror, and, with a little gasp of
-consternation, she struggled to free herself.
-
-“Let me go!” she whispered. “Let me go—the king!”
-
-Barney sprang to his feet and, turning, faced Leopold. The king had
-gone quite white.
-
-“Failing to rob me of my crown,” he cried in a trembling voice, “you
-now seek to rob me of my betrothed! Go to your father at once, and as
-for you—you shall learn what it means for you thus to meddle in the
-affairs of kings.”
-
-Barney saw the terrible position in which his love had placed the
-Princess Emma. His only thought now was for her. Bowing low before her
-he spoke so that the king might hear, yet as though his words were for
-her ears alone.
-
-“Your highness knows the truth, now,” he said, “and that after all I am
-not the king. I can only ask that you will forgive me the deception.
-Now go to your father as the king commands.”
-
-Slowly the girl turned away. Her heart was torn between love for this
-man, and her duty toward the other to whom she had been betrothed in
-childhood. The hereditary instinct of obedience to her sovereign was
-strong within her, and the bonds of custom and society held her in
-their relentless shackles. With a sob she passed up the corridor,
-curtsying to the king as she passed him.
-
-When she had gone Leopold turned to the American. There was an evil
-look in the little gray eyes of the monarch.
-
-“You may go your way,” he said coldly. “We shall give you forty-eight
-hours to leave Lutha. Should you ever return your life shall be the
-forfeit.”
-
-The American kept back the hot words that were ready upon the end of
-his tongue. For her sake he must bow to fate. With a slight inclination
-of his head toward Leopold he wheeled and resumed his way toward his
-quarters.
-
-Half an hour later as he was about to descend to the courtyard where a
-trooper of the Royal Horse held his waiting mount, Butzow burst
-suddenly into his room.
-
-“For God’s sake,” cried the lieutenant, “get out of this. The king has
-changed his mind, and there is an officer of the guard on his way here
-now with a file of soldiers to place you under arrest. Leopold swears
-that he will hang you for treason. Princess Emma has spurned him, and
-he is wild with rage.”
-
-The dismal November twilight had given place to bleak night as two men
-cantered from the palace courtyard and turned their horses’ heads
-northward toward Lutha’s nearest boundary. All night they rode,
-stopping at daylight before a distant farm to feed and water their
-mounts and snatch a mouthful for themselves. Then onward once again
-they pressed in their mad flight.
-
-Now that day had come they caught occasional glimpses of a body of
-horsemen far behind them, but the border was near, and their start such
-that there was no danger of their being overtaken.
-
-“For the thousandth time, Butzow,” said one of the men, “will you turn
-back before it is too late?”
-
-But the other only shook his head obstinately, and so they came to the
-great granite monument which marks the boundary between Lutha and her
-powerful neighbor upon the north.
-
-Barney held out his hand. “Good-bye, old man,” he said. “If I’ve
-learned the ingratitude of kings here in Lutha, I have found something
-that more than compensates me—the friendship of a brave man. Now hurry
-back and tell them that I escaped across the border just as I was about
-to fall into your hands and they will think that you have been pursuing
-me instead of aiding in my escape across the border.”
-
-But again Butzow shook his head.
-
-“I have fought shoulder to shoulder with you, my friend,” he said. “I
-have called you king, and after that I could never serve the coward who
-sits now upon the throne of Lutha. I have made up my mind during this
-long ride from Lustadt, and I have come to the decision that I should
-prefer to raise corn in Nebraska with you rather than serve in the
-court of an ingrate.”
-
-“Well, you are an obstinate Dutchman, after all,” replied the American
-with a smile, placing his hand affectionately upon the shoulder of his
-comrade.
-
-There was a clatter of horses’ hoofs upon the gravel of the road behind
-them.
-
-The two men put spurs to their mounts, and Barney Custer galloped
-across the northern boundary of Lutha just ahead of a troop of
-Luthanian cavalry, as had his father thirty years before; but a royal
-princess had accompanied the father—only a soldier accompanied the son.
-
-## PART II
-
-### I. BARNEY RETURNS TO LUTHA
-
-“What’s the matter, Vic?” asked Barney Custer of his sister. “You look
-peeved.”
-
-“I am peeved,” replied the girl, smiling. “I am terribly peeved. I
-don’t want to play bridge this afternoon. I want to go motoring with
-Lieutenant Butzow. This is his last day with us.”
-
-“Yes. I know it is, and I hate to think of it,” replied Barney; “but
-why in the world do you have to play bridge if you don’t want to?”
-
-“I promised Margaret that I’d go. They’re short one, and she’s coming
-after me in her car.”
-
-“Where are you going to play—at the champion lady bridge player’s on
-Fourth Street?” asked Barney, grinning.
-
-His sister answered with a nod and a smile. “Where you brought down the
-wrath of the lady champion upon your head the other night when you were
-letting your mind wander across to Lutha and the Old Forest, instead of
-paying attention to the game,” she added.
-
-“Well, cheer up, Vic,” cried her brother. “Bert’ll probably set fire to
-the car, the way he did to their first one, and then you won’t have to
-go.”
-
-“Oh, yes, I would; Margaret would send him after me in that
-awful-looking, unwashed Ford runabout of his,” answered the girl.
-
-“And then you WOULD go,” said Barney.
-
-“You bet I would,” laughed Victoria. “I’d go in a wheelbarrow with
-Bert.”
-
-But she didn’t have to; and after she had driven off with her chum,
-Barney and Butzow strolled down through the little city of Beatrice to
-the corn mill in which the former was interested.
-
-“I’m mighty sorry that you have to leave us, Butzow,” said Barney’s
-partner. “It’s bad enough to lose you, but I’m afraid it will mean the
-loss of Barney, too. He’s been hunting for some excuse to get back to
-Lutha, and with you there and a war in sight I’m afraid nothing can
-hold him.”
-
-“I don’t know but that it may be just as well for my friends here that
-I leave,” said Butzow seriously. “I did not tell you, Barney, all there
-is in this letter”—he tapped his breastpocket, where the
-foreign-looking envelope reposed with its contents.
-
-Custer looked at him inquiringly.
-
-“Besides saying that war between Austria and Serbia seems unavoidable
-and that Lutha doubtless will be drawn into it, my informant warns me
-that Leopold had sent emissaries to America to search for you, Barney,
-and myself. What his purpose may be my friend does not know, but he
-warns us to be upon our guard. Von der Tann wants me to return to
-Lutha. He has promised to protect me, and with the country in danger
-there is nothing else for me to do. I must go.”
-
-“I wish I could go with you,” said Barney. “If it wasn’t for this
-dinged old mill I would; but Bert wants to go away this summer, and as
-I have been away most of the time for the past two years, it’s up to me
-to stay.”
-
-As the three men talked the afternoon wore on. Heavy clouds gathered in
-the sky; a storm was brewing. Outside, a man, skulking behind a box car
-on the siding, watched the entrance through which the three had gone.
-He watched the workmen, and as quitting time came and he saw them
-leaving for their homes he moved more restlessly, transferring the
-package which he held from one hand to another many times, yet always
-gingerly.
-
-At last all had left. The man started from behind the box car, only to
-jump back as the watchman appeared around the end of one of the
-buildings. He watched the guardian of the property make his rounds; he
-saw him enter his office, and then he crept forward toward the
-building, holding his queer package in his right hand.
-
-In the office the watchman came upon the three friends. At sight of him
-they looked at one another in surprise.
-
-“Why, what time is it?” exclaimed Custer, and as he looked at his watch
-he rose with a laugh. “Late to dinner again,” he cried. “Come on, we’ll
-go out this other way.” And with a cheery good night to the watchman
-Barney and his friends hastened from the building.
-
-Upon the opposite side the stranger approached the doorway to the mill.
-The rain was falling in blinding sheets. Ominously the thunder roared.
-Vivid flashes of lightning shot the heavens. The watchman, coming
-suddenly from the doorway, his hat brim pulled low over his eyes,
-passed within a couple of paces of the stranger without seeing him.
-
-Five minutes later there was a blinding glare accompanied by a
-deafening roar. It was as though nature had marshaled all her forces in
-one mighty, devastating effort. At the same instant the walls of the
-great mill burst asunder, a nebulous mass of burning gas shot
-heavenward, and then the flames settled down to complete the
-destruction of the ruin.
-
-It was the following morning that Victoria and Barney Custer, with
-Lieutenant Butzow and Custer’s partner, stood contemplating the
-smoldering wreckage.
-
-“And to think,” said Barney, “that yesterday this muss was the largest
-corn mill west of anywhere. I guess we can both take vacations now,
-Bert.”
-
-“Who would have thought that a single bolt of lightning could have
-resulted in such havoc?” mused Victoria.
-
-“Who would?” agreed Lieutenant Butzow, and then, with a sudden
-narrowing of his eyes and a quick glance at Barney, “if it WAS
-lightning.”
-
-The American looked at the Luthanian. “You think—” he started.
-
-“I don’t dare think,” replied Butzow, “because of the fear of what this
-may mean to you and Miss Victoria if it was not lightning that
-destroyed the mill. I shouldn’t have spoken of it but that it may urge
-you to greater caution, which I cannot but think is most necessary
-since the warning I received from Lutha.”
-
-“Why should Leopold seek to harm me now?” asked Barney. “It has been
-almost two years since you and I placed him upon his throne, only to be
-rewarded with threats and hatred. In that time neither of us has
-returned to Lutha nor in any way conspired against the king. I cannot
-fathom his motives.”
-
-“There is the Princess Emma von der Tann,” Butzow reminded him. “She
-still repulses him. He may think that, with you removed definitely and
-permanently, all will then be plain sailing for him in that direction.
-Evidently he does not know the princess.”
-
-An hour later they were all bidding Butzow good-bye at the station.
-Victoria Custer was genuinely grieved to see him go, for she liked this
-soldierly young officer of the Royal Horse Guards immensely.
-
-“You must come back to America soon,” she urged.
-
-He looked down at her from the steps of the moving train. There was
-something in his expression that she had never seen there before.
-
-“I want to come back soon,” he answered, “to—to Beatrice,” and he
-flushed and smiled at his own stumbling tongue.
-
-For about a week Barney Custer moped disconsolately, principally about
-the ruins of the corn mill. He was in everyone’s way and accomplished
-nothing.
-
-“I was never intended for a captain of industry,” he confided to his
-partner for the hundredth time. “I wish some excuse would pop up to
-which I might hang a reason for beating it to Europe. There’s something
-doing there. Nearly everybody has declared war upon everybody else, and
-here I am stagnating in peace. I’d even welcome a tornado.”
-
-His excuse was to come sooner than he imagined. That night, after the
-other members of his family had retired, Barney sat smoking within a
-screened porch off the living-room. His thoughts were upon a trim
-little figure in riding togs, as he had first seen it nearly two years
-before, clinging desperately to a runaway horse upon the narrow
-mountain road above Tafelberg.
-
-He lived that thrilling experience through again as he had many times
-before. He even smiled as he recalled the series of events that had
-resulted from his resemblance to the mad king of Lutha.
-
-They had come to a culmination at the time when the king, whom Barney
-had placed upon a throne at the risk of his own life, discovered that
-his savior loved the girl to whom the king had been betrothed since
-childhood and that the girl returned the American’s love even after she
-knew that he had but played the part of a king.
-
-Barney’s cigar, forgotten, had long since died out. Not even its former
-fitful glow proclaimed his presence upon the porch, whose black shadows
-completely enveloped him. Before him stretched a wide acreage of lawn,
-tree dotted at the side of the house. Bushes hid the stone wall that
-marked the boundary of the Custer grounds and extended here and there
-out upon the sward among the trees. The night was moonless but clear. A
-faint light pervaded the scene.
-
-Barney sat staring straight ahead, but his gaze did not stop upon the
-familiar objects of the foreground. Instead it spanned two continents
-and an ocean to rest upon the little spot of woodland and rugged
-mountain and lowland that is Lutha. It was with an effort that the man
-suddenly focused his attention upon that which lay directly before him.
-A shadow among the trees had moved!
-
-Barney Custer sat perfectly still, but now he was suddenly alert and
-watchful. Again the shadow moved where no shadow should be moving. It
-crossed from the shade of one tree to another. Barney came cautiously
-to his feet. Silently he entered the house, running quickly to a side
-door that opened upon the grounds. As he drew it back its hinges gave
-forth no sound. Barney looked toward the spot where he had seen the
-shadow. Again he saw it scuttle hurriedly beneath another tree nearer
-the house. This time there was no doubt. It was a man!
-
-Directly before the door where Barney stood was a pergola, ivy-covered.
-Behind this he slid, and, running its length, came out among the trees
-behind the night prowler. Now he saw him distinctly. The fellow was
-bearded, and in his right hand he carried a package. Instantly Barney
-recalled Butzow’s comment upon the destruction of the mill—“if it WAS
-lightning!”
-
-Cold sweat broke from every pore of his body. His mother and father
-were there in the house, and Vic—all sleeping peacefully. He ran
-quickly toward the menacing figure, and as he did so he saw the other
-halt behind a great tree and strike a match. In the glow of the flame
-he saw it touch close to the package that the fellow held, and then he
-was upon him.
-
-There was a brief and terrific struggle. The stranger hurled the
-package toward the house. Barney caught him by the throat, beating him
-heavily in the face; and then, realizing what the package was, he
-hurled the fellow from him, and sprang toward the hissing and
-sputtering missile where it lay close to the foundation wall of the
-house, though in the instant of his close contact with the man he had
-recognized through the disguising beard the features of Captain Ernst
-Maenck, the principal tool of Peter of Blentz.
-
-Quick though Barney was to reach the bomb and extinguish the fuse,
-Maenck had disappeared before he returned to search for him; and,
-though he roused the gardener and chauffeur and took turns with them in
-standing guard the balance of the night, the would-be assassin did not
-return.
-
-There was no question in Barney Custer’s mind as to whom the bomb was
-intended for. That Maenck had hurled it toward the house after Barney
-had seized him was merely the result of accident and the man’s desire
-to get the death-dealing missile as far from himself as possible before
-it exploded. That it would have wrecked the house in the hope of
-reaching him, had he not fortunately interfered, was too evident to the
-American to be questioned.
-
-And so he decided before the night was spent to put himself as far from
-his family as possible, lest some future attempt upon his life might
-endanger theirs. Then, too, righteous anger and a desire for revenge
-prompted his decision. He would run Maenck to earth and have an
-accounting with him. It was evident that his life would not be worth a
-farthing so long as the fellow was at liberty.
-
-Before dawn he swore the gardener and chauffeur to silence, and at
-breakfast announced his intention of leaving that day for New York to
-seek a commission as correspondent with an old classmate, who owned the
-New York Evening National. At the hotel Barney inquired of the
-proprietor relative to a bearded stranger, but the man had had no one
-of that description registered. Chance, however, gave him a clue. His
-roadster was in a repair shop, and as he stopped in to get it he
-overheard a conversation that told him all he wanted to know. As he
-stood talking with the foreman a dust-covered automobile pulled into
-the garage.
-
-“Hello, Bill,” called the foreman to the driver. “Where you been so
-early?”
-
-“Took a guy to Lincoln,” replied the other. “He was in an awful hurry.
-I bet we broke all the records for that stretch of road this morning—I
-never knew the old boat had it in her.”
-
-“Who was it?” asked Barney.
-
-“I dunno,” replied the driver. “Talked like a furriner, and looked the
-part. Bushy black beard. Said he was a German army officer, an’ had to
-beat it back on account of the war. Seemed to me like he was mighty
-anxious to get back there an’ be killed.”
-
-Barney waited to hear no more. He did not even go home to say good-bye
-to his family. Instead he leaped into his gray roadster—a later model
-of the one he had lost in Lutha—and the last that Beatrice, Nebraska,
-saw of him was a whirling cloud of dust as he raced north out of town
-toward Lincoln.
-
-He was five minutes too late into the capital city to catch the
-eastbound limited that Maenck must have taken; but he caught the next
-through train for Chicago, and the second day thereafter found him in
-New York. There he had little difficulty in obtaining the desired
-credentials from his newspaper friend, especially since Barney offered
-to pay all his own expenses and donate to the paper anything he found
-time to write.
-
-Passenger steamers were still sailing, though irregularly, and after
-scanning the passenger-lists of three he found the name he sought.
-“Captain Ernst Maenck, Lutha.” So he had not been mistaken, after all.
-It was Maenck he had apprehended on his father’s grounds. Evidently the
-man had little fear of being followed, for he had made no effort to
-hide his identity in booking passage for Europe.
-
-The steamer he had caught had sailed that very morning. Barney was not
-so sorry, after all, for he had had time during his trip from Beatrice
-to do considerable thinking, and had found it rather difficult to
-determine just what to do should he have overtaken Maenck in the United
-States. He couldn’t kill the man in cold blood, justly as he may have
-deserved the fate, and the thought of causing his arrest and dragging
-his own name into the publicity of court proceedings was little less
-distasteful to him.
-
-Furthermore, the pursuit of Maenck now gave Barney a legitimate excuse
-for returning to Lutha, or at least to the close neighborhood of the
-little kingdom, where he might await the outcome of events and be ready
-to give his services in the cause of the house of Von der Tann should
-they be required.
-
-By going directly to Italy and entering Austria from that country
-Barney managed to arrive within the boundaries of the dual monarchy
-with comparatively few delays. Nor did he encounter any considerable
-bodies of troops until he reached the little town of Burgova, which
-lies not far from the Serbian frontier. Beyond this point his
-credentials would not carry him. The emperor’s officers were polite,
-but firm. No newspaper correspondents could be permitted nearer the
-front than Burgova.
-
-There was nothing to be done, therefore, but wait until some propitious
-event gave him the opportunity to approach more closely the Serbian
-boundary and Lutha. In the meantime he would communicate with Butzow,
-who might be able to obtain passes for him to some village nearer the
-Luthanian frontier, when it should be an easy matter to cross through
-to Serbia. He was sure the Serbian authorities would object less
-strenuously to his presence.
-
-The inn at which he applied for accommodations was already overrun by
-officers, but the proprietor, with scant apologies for a civilian,
-offered him a little box of a room in the attic. The place was scarce
-more than a closet, and for that Barney was in a way thankful since the
-limited space could accommodate but a single cot, thus insuring him the
-privacy that a larger chamber would have precluded.
-
-He was very tired after his long and comfortless land journey, so after
-an early dinner he went immediately to his room and to bed. How long he
-slept he did not know, but some time during the night he was awakened
-by the sound of voices apparently close to his ear.
-
-For a moment he thought the speakers must be in his own room, so
-distinctly did he overhear each word of their conversation; but
-presently he discovered that they were upon the opposite side of a thin
-partition in an adjoining room. But half awake, and with the sole idea
-of getting back to sleep again as quickly as possible, Barney paid only
-the slightest attention to the meaning of the words that fell upon his
-ears, until, like a bomb, a sentence broke through his sleepy
-faculties, banishing Morpheus upon the instant.
-
-“It will take but little now to turn Leopold against Von der Tann.” The
-speaker evidently was an Austrian. “Already I have half convinced him
-that the old man aspires to the throne. Leopold fears the loyalty of
-his army, which is for Von der Tann body and soul. He knows that Von
-der Tann is strongly anti-Austrian, and I have made it plain to him
-that if he allows his kingdom to take sides with Serbia he will have no
-kingdom when the war is over—it will be a part of Austria.
-
-“It was with greater difficulty, however, my dear Peter, that I
-convinced him that you, Von Coblich, and Captain Maenck were his most
-loyal friends. He fears you yet, but, nevertheless, he has pardoned you
-all. Do not forget when you return to your dear Lutha that you owe your
-repatriation to Count Zellerndorf of Austria.”
-
-“You may be assured that we shall never forget,” replied another voice
-that Barney recognized at once as belonging to Prince Peter of Blentz,
-the one time regent of Lutha.
-
-“It is not for myself,” continued Count Zellerndorf, “that I crave your
-gratitude, but for my emperor. You may do much to win his undying
-gratitude, while for yourselves you may win to almost any height with
-the friendship of Austria behind you. I am sure that should any
-accident, which God forfend, deprive Lutha of her king, none would make
-a more welcome successor in the eyes of Austria than our good friend
-Peter.”
-
-Barney could almost see the smile of satisfaction upon the thin lips of
-Peter of Blentz as this broad hint fell from the lips of the Austrian
-diplomat—a hint that seemed to the American little short of the death
-sentence of Leopold, King of Lutha.
-
-“We owed you much before, count,” said Peter. “But for you we should
-have been hanged a year ago—without your aid we should never have been
-able to escape from the fortress of Lustadt or cross the border into
-Austria-Hungary. I am sorry that Maenck failed in his mission, for had
-he not we would have had concrete evidence to present to the king that
-we are indeed his loyal supporters. It would have dispelled at once
-such fears and doubts as he may still entertain of our fealty.”
-
-“Yes, I, too, am sorry,” agreed Zellerndorf. “I can assure you that the
-news we hoped Captain Maenck would bring from America would have gone a
-long way toward restoring you to the confidence and good graces of the
-king.”
-
-“I did my best,” came another voice that caused Barney’s eyes to go
-wide in astonishment, for it was none other than the voice of Maenck
-himself. “Twice I risked hanging to get him and only came away after I
-had been recognized.”
-
-“It is too bad,” sighed Zellerndorf; “though it may not be without its
-advantages after all, for now we still have this second bugbear to
-frighten Leopold with. So long, of course, as the American lives there
-is always the chance that he may return and seek to gain the throne.
-The fact that his mother was a Rubinroth princess might make it easy
-for Von der Tann to place him upon the throne without much opposition,
-and if he married the old man’s daughter it is easy to conceive that
-the prince might favor such a move. At any rate, it should not be
-difficult to persuade Leopold of the possibility of such a thing.
-
-“Under the circumstances Leopold is almost convinced that his only hope
-of salvation lies in cementing friendly relations with the most
-powerful of Von der Tann’s enemies, of which you three gentlemen stand
-preeminently in the foreground, and of assuring to himself the support
-of Austria. And now, gentlemen,” he went on after a pause, “good night.
-I have handed Prince Peter the necessary military passes to carry you
-safely through our lines, and tomorrow you may be in Blentz if you
-wish.”
-
-### II. CONDEMNED TO DEATH
-
-For some time Barney Custer lay there in the dark revolving in his mind
-all that he had overheard through the partition—the thin partition
-which alone lay between himself and three men who would be only too
-glad to embrace the first opportunity to destroy him. But his fears
-were not for himself so much as for the daughter of old Von der Tann,
-and for all that might befall that princely house were these three
-unhung rascals to gain Lutha and have their way with the weak and
-cowardly king who reigned there.
-
-If he could but reach Von der Tann’s ear and through him the king
-before the conspirators came to Lutha! But how might he accomplish it?
-Count Zellerndorf’s parting words to the three had shown that military
-passes were necessary to enable one to reach Lutha.
-
-His papers were practically worthless even inside the lines. That they
-would carry him through the lines he had not the slightest hope. There
-were two things to be accomplished if possible. One was to cross the
-frontier into Lutha; and the other, which of course was quite out of
-the question, was to prevent Peter of Blentz, Von Coblich, and Maenck
-from doing so. But was that altogether impossible?
-
-The idea that followed that question came so suddenly that it brought
-Barney Custer out onto the floor in a bound, to don his clothes and
-sneak into the hall outside his room with the stealth of a professional
-second-story man.
-
-To the right of his own door was the door to the apartment in which the
-three conspirators slept. At least, Barney hoped they slept. He bent
-close to the keyhole and listened. From within came no sound other than
-the regular breathing of the inmates. It had been at least half an hour
-since the American had heard the conversation cease. A glance through
-the keyhole showed no light within the room. Stealthily Barney turned
-the knob. Had they bolted the door? He felt the tumbler move to the
-pressure—soundlessly. Then he pushed gently inward. The door swung.
-
-A moment later he stood in the room. Dimly he could see two beds—a
-large one and a smaller. Peter of Blentz would be alone upon the
-smaller bed, his henchmen sleeping together in the larger. Barney crept
-toward the lone sleeper. At the bedside he fumbled in the dark groping
-for the man’s clothing—for the coat, in the breastpocket of which he
-hoped to find the military pass that might carry him safely out of
-Austria-Hungary and into Lutha. On the foot of the bed he found some
-garments. Gingerly he felt them over, seeking the coat.
-
-At last he found it. His fingers, steady even under the nervous tension
-of this unaccustomed labor, discovered the inner pocket and the folded
-paper. There were several of them; Barney took them all.
-
-So far he made no noise. None of the sleepers had stirred. Now he took
-a step toward the doorway and—kicked a shoe that lay in his path. The
-slight noise in that quiet room sounded to Barney’s ears like the fall
-of a brick wall. Peter of Blentz stirred, turning in his sleep. Behind
-him Barney heard one of the men in the other bed move. He turned his
-head in that direction. Either Maenck or Coblich was sitting up peering
-through the darkness.
-
-“Is that you, Prince Peter?” The voice was Maenck’s.
-
-“What’s the matter?” persisted Maenck.
-
-“I’m going for a drink of water,” replied the American, and stepped
-toward the door.
-
-Behind him Peter of Blentz sat up in bed.
-
-“That you, Maenck?” he called.
-
-Instantly Maenck was out of bed, for the first voice had come from the
-vicinity of the doorway; both could not be Peter’s.
-
-“Quick!” he cried; “there’s someone in our room.”
-
-Barney leaped for the doorway, and upon his heels came the three
-conspirators. Maenck was closest to him—so close that Barney was forced
-to turn at the top of the stairs. In the darkness he was just conscious
-of the form of the man who was almost upon him. Then he swung a vicious
-blow for the other’s face—a blow that landed, for there was a cry of
-pain and anger as Maenck stumbled back into the arms of the two behind
-him. From below came the sound of footsteps hurrying up the stairs to
-the accompaniment of a clanking saber. Barney’s retreat was cut off.
-
-Turning, he dodged into his own room before the enemy could locate him
-or even extricate themselves from the confusion of Maenck’s sudden
-collision with the other two. But what could Barney gain by the slight
-delay that would be immediately followed by his apprehension?
-
-He didn’t know. All that he was sure of was that there had been no
-other place to go than this little room. As he entered the first thing
-that his eyes fell upon was the small square window. Here at least was
-some slight encouragement.
-
-He ran toward it. The lower sash was raised. As the door behind him
-opened to admit Peter of Blentz and his companions, Barney slipped
-through into the night, hanging by his hands from the sill without.
-What lay beneath or how far the drop he could not guess, but that
-certain death menaced him from above he knew from the conversation he
-had overheard earlier in the evening.
-
-For an instant he hung suspended. He heard the men groping about the
-room. Evidently they were in some fear of the unknown assailant they
-sought, for they did not move about with undue rashness. Presently one
-of them struck a light—Barney could see its flare lighten the window
-casing for an instant.
-
-“The room is empty,” came a voice from above him.
-
-“Look to the window!” cried Peter of Blentz, and then Barney Custer let
-go his hold upon the sill and dropped into the blackness below.
-
-His fall was a short one, for the window had been directly over a low
-shed at the side of the inn. Upon the roof of this the American landed,
-and from there he dropped to the courtyard without mishap. Glancing up,
-he saw the heads of three men peering from the window of the room he
-had just quitted.
-
-“There he is!” cried one, and instantly the three turned back into the
-room. As Barney fled from the courtyard he heard the rattle of hasty
-footsteps upon the rickety stairway of the inn.
-
-Choosing an alley rather than a street in which he might run upon
-soldiers at any moment, he moved quickly yet cautiously away from the
-inn. Behind him he could hear the voices of many men. They were raised
-to a high pitch by excitement. It was clear to Barney that there were
-many more than the original three—Prince Peter had, in all probability,
-enlisted the aid of the military.
-
-Could he but reach the frontier with his stolen passes he would be
-comparatively safe, for the rugged mountains of Lutha offered many
-places of concealment, and, too, there were few Luthanians who did not
-hate Peter of Blentz most cordially—among the men of the mountains at
-least. Once there he could defy a dozen Blentz princes for the little
-time that would be required to carry him into Serbia and comparative
-safety.
-
-As he approached a cross street a couple of squares from the inn he
-found it necessary to pass beneath a street lamp. For a moment he
-paused in the shadows of the alley listening. Hearing nothing moving in
-the street, Barney was about to make a swift spring for the shadows
-upon the opposite side when it occurred to him that it might be safer
-to make assurance doubly sure by having a look up and down the street
-before emerging into the light.
-
-It was just as well that he did, for as he thrust his head around the
-corner of the building the first thing that his eyes fell upon was the
-figure of an Austrian sentry, scarcely three paces from him. The
-soldier was standing in a listening attitude, his head half turned away
-from the American. The sounds coming from the direction of the inn were
-apparently what had attracted his attention.
-
-Behind him, Barney was sure he heard evidences of pursuit. Before him
-was certain detection should he attempt to cross the street. On either
-hand rose the walls of buildings. That he was trapped there seemed
-little doubt.
-
-He continued to stand motionless, watching the Austrian soldier. Should
-the fellow turn toward him, he had but to withdraw his head within the
-shadow of the building that hid his body. Possibly the man might turn
-and take his beat in the opposite direction. In which case Barney was
-sure he could dodge across the street, undetected.
-
-Already the vague threat of pursuit from the direction of the inn had
-developed into a certainty—he could hear men moving toward him through
-the alley from the rear. Would the sentry never move! Evidently not,
-until he heard the others coming through the alley. Then he would turn,
-and the devil would be to pay for the American.
-
-Barney was about hopeless. He had been in the war zone long enough to
-know that it might prove a very disagreeable matter to be caught
-sneaking through back alleys at night. There was a single chance—a sort
-of forlorn hope—and that was to risk fate and make a dash beneath the
-sentry’s nose for the opposite alley mouth.
-
-“Well, here goes,” thought Barney. He had heard that many of the
-Austrians were excellent shots. Visions of Beatrice, Nebraska, swarmed
-his memory. They were pleasant visions, made doubly alluring by the
-thought that the realities of them might never again be for him.
-
-He turned once more toward the sounds of pursuit—the men upon his track
-could not be over a square away—there was not an instant to be lost.
-And then from above him, upon the opposite side of the alley, came a
-low: “S-s-t!”
-
-Barney looked up. Very dimly he could see the dark outline of a window
-some dozen feet from the pavement, and framed within it the lighter
-blotch that might have been a human face. Again came the challenging:
-“S-s-t!” Yes, there was someone above, signaling to him.
-
-“S-s-t!” replied Barney. He knew that he had been discovered, and could
-think of no better plan for throwing the discoverer off his guard than
-to reply.
-
-Then a soft voice floated down to him—a woman’s voice!
-
-“Is that you?” The tongue was Serbian. Barney could understand it,
-though he spoke it but indifferently.
-
-“Yes,” he replied truthfully.
-
-“Thank Heaven!” came the voice from above. “I have been watching you,
-and thought you one of the Austrian pigs. Quick! They are coming—I can
-hear them;” and at the same instant Barney saw something drop from the
-window to the ground. He crossed the alley quickly, and could have
-shouted in relief for what he found there—the end of a knotted rope
-dangling from above.
-
-His pursuers were almost upon him when he seized the rude ladder to
-clamber upward. At the window’s ledge a firm, young hand reached out
-and, seizing his own, almost dragged him through the window. He turned
-to look back into the alley. He had been just in time; the Austrian
-sentry, alarmed by the sound of approaching footsteps down the alley,
-had stepped into view. He stood there now with leveled rifle, a
-challenge upon his lips. From the advancing party came a satisfactory
-reply.
-
-At the same instant the girl beside him in the Stygian blackness of the
-room threw her arms about Barney’s neck and drew his face down to hers.
-
-“Oh, Stefan,” she whispered, “what a narrow escape! It makes me tremble
-to think of it. They would have shot you, my Stefan!”
-
-The American put an arm about the girl’s shoulders, and raised one hand
-to her cheek—it might have been in caress, but it wasn’t. It was to
-smother the cry of alarm he anticipated would follow the discovery that
-he was not “Stefan.” He bent his lips close to her ear.
-
-“Do not make an outcry,” he whispered in very poor Serbian. “I am not
-Stefan; but I am a friend.”
-
-The exclamation of surprise or fright that he had expected was not
-forthcoming. The girl lowered her arms from about his neck.
-
-“Who are you?” she asked in a low whisper.
-
-“I am an American war correspondent,” replied Barney, “but if the
-Austrians get hold of me now it will be mighty difficult to convince
-them that I am not a spy.” And then a sudden determination came to him
-to trust his fate to this unknown girl, whose face, even, he had never
-seen. “I am entirely at your mercy,” he said. “There are Austrian
-soldiers in the street below. You have but to call to them to send me
-before the firing squad—or, you can let me remain here until I can find
-an opportunity to get away in safety. I am trying to reach Serbia.”
-
-“Why do you wish to reach Serbia?” asked the girl suspiciously.
-
-“I have discovered too many enemies in Austria tonight to make it safe
-for me to remain,” he replied, “and, further, my original intention was
-to report the war from the Serbian side.”
-
-The girl hesitated for a while, evidently in thought.
-
-“They are moving on,” suggested Barney. “If you are going to give me up
-you’d better do it at once.”
-
-“I’m not going to give you up,” replied the girl. “I’m going to keep
-you prisoner until Stefan returns—he will know best what to do with
-you. Now you must come with me and be locked up. Do not try to escape—I
-have a revolver in my hand,” and to give her prisoner physical proof of
-the weapon he could not see she thrust the muzzle against his side.
-
-“I’ll take your word for the gun,” said Barney, “if you’ll just turn it
-in the other direction. Go ahead—I’ll follow you.”
-
-“No, you won’t,” replied the girl. “You’ll go first; but before that
-you’ll raise your hands above your head. I want to search you.”
-
-Barney did as he was bid and a moment later felt deft fingers running
-over his clothing in search of concealed weapons. Satisfied at last
-that he was unarmed, the girl directed him to precede her, guiding his
-steps from behind with a hand upon his arm. Occasionally he felt the
-muzzle of her revolver touch his body. It was a most unpleasant
-sensation.
-
-They crossed the room to a door which his captor directed him to open,
-and after they had passed through and she had closed it behind them the
-girl struck a match and lit a candle which stood upon a little bracket
-on the partition wall. The dim light of the tallow dip showed Barney
-that he was in a narrow hall from which several doors opened into
-different rooms. At one end of the hall a stairway led to the floor
-below, while at the opposite end another flight disappeared into the
-darkness above.
-
-“This way,” said the girl, motioning toward the stairs that led upward.
-
-Barney had turned toward her as she struck the match, obtaining an
-excellent view of her features. They were clear-cut and regular. Her
-eyes were large and very dark. Dark also was her hair, which was piled
-in great heaps upon her finely shaped head. Altogether the face was one
-not easily to be forgotten. Barney could scarce have told whether the
-girl was beautiful or not, but that she was striking there could be no
-doubt.
-
-He preceded her up the stairway to a door at the top. At her direction
-he turned the knob and entered a small room in which was a cot, an
-ancient dresser and a single chair.
-
-“You will remain here,” she said, “until Stefan returns. Stefan will
-know what to do with you.” Then she left him, taking the light with
-her, and Barney heard a key turn in the lock of the door after she had
-closed it. Presently her footfalls died out as she descended to the
-lower floors.
-
-“Anyhow,” thought the American, “this is better than the Austrians. I
-don’t know what Stefan will do with me, but I have a rather vivid idea
-of what the Austrians would have done to me if they’d caught me
-sneaking through the alleys of Burgova at midnight.”
-
-Throwing himself on the cot Barney was soon asleep, for though his
-predicament was one that, under ordinary circumstances might have made
-sleep impossible, yet he had so long been without the boon of slumber
-that tired nature would no longer be denied.
-
-When he awoke it was broad daylight. The sun was pouring in through a
-skylight in the ceiling of his tiny chamber. Aside from this there were
-no windows in the room. The sound of voices came to him with an uncanny
-distinctness that made it seem that the speakers must be in this very
-chamber, but a glance about the blank walls convinced him that he was
-alone.
-
-Presently he espied a small opening in the wall at the head of his cot.
-He rose and examined it. The voices appeared to be coming from it. In
-fact, they were. The opening was at the top of a narrow shaft that
-seemed to lead to the basement of the structure—apparently once the
-shaft of a dumb-waiter or a chute for refuse or soiled clothes.
-
-Barney put his ear close to it. The voices that came from below were
-those of a man and a woman. He heard every word distinctly.
-
-“We must search the house, fraulein,” came in the deep voice of a man.
-
-“Whom do you seek?” inquired a woman’s voice. Barney recognized it as
-the voice of his captor.
-
-“A Serbian spy, Stefan Drontoff,” replied the man. “Do you know him?”
-
-There was a considerable pause on the girl’s part before she answered,
-and then her reply was in such a low voice that Barney could barely
-hear it.
-
-“I do not know him,” she said. “There are several men who lodge here.
-What may this Stefan Drontoff look like?”
-
-“I have never seen him,” replied the officer; “but by arresting all the
-men in the house we must get this Stefan also, if he is here.”
-
-“Oh!” cried the girl, a new note in her voice, “I guess I know now whom
-you mean. There is one man here I have heard them call Stefan, though
-for the moment I had forgotten it. He is in the small attic-room at the
-head of the stairs. Here is a key that will fit the lock. Yes, I am
-sure that he is Stefan. You will find him there, and it should be easy
-to take him, for I know that he is unarmed. He told me so last night
-when he came in.”
-
-“The devil!” muttered Barney Custer; but whether he referred to his
-predicament or to the girl it would be impossible to tell. Already the
-sound of heavy boots on the stairs announced the coming of men—several
-of them. Barney heard the rattle of accouterments—the clank of a
-scabbard—the scraping of gun butts against the walls. The Austrians
-were coming!
-
-He looked about. There was no way of escape except the door and the
-skylight, and the door was impossible.
-
-Quickly he tilted the cot against the door, wedging its legs against a
-crack in the floor—that would stop them for a minute or two. Then he
-wheeled the dresser beneath the skylight and, placing the chair on top
-of it, scrambled to the seat of the latter. His head was at the height
-of the skylight. To force the skylight from its frame required but a
-moment. A key entered the lock of the door from the opposite side and
-turned. He knew that someone without was pushing. Then he heard an oath
-and heavy battering upon the panels. A moment later he had drawn
-himself through the skylight and stood upon the roof of the building.
-Before him stretched a series of uneven roofs to the end of the street.
-Barney did not hesitate. He started on a rapid trot toward the
-adjoining roof. From that he clambered to a higher one beyond.
-
-On he went, now leaping narrow courts, now dropping to low sheds and
-again clambering to the heights of the higher buildings, until he had
-come almost to the end of the row. Suddenly, behind him he heard a
-hoarse shout, followed by the report of a rifle. With a whir, a bullet
-flew a few inches above his head. He had gained the last roof—a large,
-level roof—and at the shot he turned to see how near to him were his
-pursuers.
-
-Fatal turn!
-
-Scarce had he taken his eyes from the path ahead than his foot fell
-upon a glass skylight, and with a loud crash he plunged through amid a
-shower of broken glass.
-
-His fall was a short one. Directly beneath the skylight was a bed, and
-on the bed a fat Austrian infantry captain. Barney lit upon the pit of
-the captain’s stomach. With a howl of pain the officer catapulted
-Barney to the floor. There were three other beds in the room, and in
-each bed one or two other officers. Before the American could regain
-his feet they were all sitting on him—all except the infantry captain.
-He lay shrieking and cursing in a painful attempt to regain his breath,
-every atom of which Barney had knocked out of him.
-
-The officers sitting on Barney alternately beat him and questioned him,
-interspersing their interrogations with lurid profanity.
-
-“If you will get off of me,” at last shouted the American, “I shall be
-glad to explain—and apologize.”
-
-They let him up, scowling ferociously. He had promised to explain, but
-now that he was confronted by the immediate necessity of an explanation
-that would prove at all satisfactory as to how he happened to be
-wandering around the rooftops of Burgova, he discovered that his powers
-of invention were entirely inadequate. The need for explaining,
-however, was suddenly removed. A shadow fell upon them from above, and
-as they glanced up Barney saw the figure of an officer surrounded by
-several soldiers looking down upon him.
-
-“Ah, you have him!” cried the newcomer in evident satisfaction. “It is
-well. Hold him until we descend.”
-
-A moment later he and his escort had dropped through the broken
-skylight to the floor beside them.
-
-“Who is the mad man?” cried the captain who had broken Barney’s fall.
-“The assassin! He tried to murder me.”
-
-“I cannot doubt it,” replied the officer who had just descended, “for
-the fellow is no other than Stefan Drontoff, the famous Serbian spy!”
-
-“Himmel!” ejaculated the officers in chorus. “You have done a good
-day’s work, lieutenant.”
-
-“The firing squad will do a better work in a few minutes,” replied the
-lieutenant, with a grim pointedness that took Barney’s breath away.
-
-### III. BEFORE THE FIRING SQUAD
-
-They marched Barney before the staff where he urged his American
-nationality, pointing to his credentials and passes in support of his
-contention.
-
-The general before whom he had been brought shrugged his shoulders.
-“They are all Americans as soon as they are caught,” he said; “but why
-did you not claim to be Prince Peter of Blentz? You have his passes as
-well. How can you expect us to believe your story when you have in your
-possession passes for different men?
-
-“We have every respect for our friends the Americans. I would even
-stretch a point rather than chance harming an American; but you will
-admit that the evidence is all against you. You were found in the very
-building where Drontoff was known to stay while in Burgova. The young
-woman whose mother keeps the place directed our officer to your room,
-and you tried to escape, which I do not think that an innocent American
-would have done.
-
-“However, as I have said, I will go to almost any length rather than
-chance a mistake in the case of one who from his appearance might pass
-more readily for an American than a Serbian. I have sent for Prince
-Peter of Blentz. If you can satisfactorily explain to him how you
-chance to be in possession of military passes bearing his name I shall
-be very glad to give you the benefit of every other doubt.”
-
-Peter of Blentz. Send for Peter of Blentz! Barney wondered just what
-kind of a sensation it was to stand facing a firing squad. He hoped
-that his knees wouldn’t tremble—they felt a trifle weak even now. There
-was a chance that the man might not recall his face, but a very slight
-chance. It had been his remarkable likeness to Leopold of Lutha that
-had resulted in the snatching of a crown from Prince Peter’s head.
-
-Likely indeed that he would ever forget his, Barney’s, face, though he
-had seen it but once without the red beard that had so added to
-Barney’s likeness to the king. But Maenck would be along, of course,
-and Maenck would have no doubts—he had seen Barney too recently in
-Beatrice to fail to recognize him now.
-
-Several men were entering the room where Barney stood before the
-general and his staff. A glance revealed to the prisoner that Peter of
-Blentz had come, and with him Von Coblich and Maenck. At the same
-instant Peter’s eyes met Barney’s, and the former, white and wide-eyed
-came almost to a dead halt, grasping hurriedly at the arm of Maenck who
-walked beside him.
-
-“My God!” was all that Barney heard him say, but he spoke a name that
-the American did not hear. Maenck also looked his surprise, but his
-expression was suddenly changed to one of malevolent cunning and
-gratification. He turned toward Prince Peter with a few low-whispered
-words. A look of relief crossed the face of the Blentz prince.
-
-“You appear to know the gentleman,” said the general who had been
-conducting Barney’s examination. “He has been arrested as a Serbian
-spy, and military passes in your name were found upon his person
-together with the papers of an American newspaper correspondent, which
-he claims to be. He is charged with being Stefan Drontoff, whom we long
-have been anxious to apprehend. Do you chance to know anything about
-him, Prince Peter?”
-
-“Yes,” replied Peter of Blentz, “I know him well by sight. He entered
-my room last night and stole the military passes from my coat—we all
-saw him and pursued him, but he got away in the dark. There can be no
-doubt but that he is the Serbian spy.”
-
-“He insists that he is Bernard Custer, an American,” urged the general,
-who, it seemed to Barney, was anxious to make no mistake, and to give
-the prisoner every reasonable chance—a state of mind that rather
-surprised him in a European military chieftain, all of whom appeared to
-share the popular obsession regarding the prevalence of spies.
-
-“Pardon me, general,” interrupted Maenck. “I am well acquainted with
-Mr. Custer, who spent some time in Lutha a couple of years ago. This
-man is not he.”
-
-“That is sufficient, gentlemen, I thank you,” said the general. He did
-not again look at the prisoner, but turned to a lieutenant who stood
-near-by. “You may remove the prisoner,” he directed. “He will be
-destroyed with the others—here is the order,” and he handed the
-subaltern a printed form upon which many names were filled in and at
-the bottom of which the general had just signed his own. It had
-evidently been waiting the outcome of the examination of Stefan
-Drontoff.
-
-Surrounded by soldiers, Barney Custer walked from the presence of the
-military court. It was to him as though he moved in a strange world of
-dreams. He saw the look of satisfaction upon the face of Peter of
-Blentz as he passed him, and the open sneer of Maenck. As yet he did
-not fully realize what it all meant—that he was marching to his death!
-For the last time he was looking upon the faces of his fellow men; for
-the last time he had seen the sun rise, never again to see it set.
-
-He was to be “destroyed.” He had heard that expression used many times
-in connection with useless horses, or vicious dogs. Mechanically he
-drew a cigarette from his pocket and lighted it. There was no bravado
-in the act. On the contrary it was done almost unconsciously. The
-soldiers marched him through the streets of Burgova. The men were
-entirely impassive—even so early in the war they had become accustomed
-to this grim duty. The young officer who commanded them was more
-nervous than the prisoner—it was his first detail with a firing squad.
-He looked wonderingly at Barney, expecting momentarily to see the man
-collapse, or at least show some sign of terror at his close impending
-fate; but the American walked silently toward his death, puffing
-leisurely at his cigarette.
-
-At last, after what seemed a long time, his guard turned in at a large
-gateway in a brick wall surrounding a factory. As they entered Barney
-saw twenty or thirty men in civilian dress, guarded by a dozen
-infantrymen. They were standing before the wall of a low brick
-building. Barney noticed that there were no windows in the wall. It
-suddenly occurred to him that there was something peculiarly grim and
-sinister in the appearance of the dead, blank surface of
-weather-stained brick. For the first time since he had faced the
-military court he awakened to a full realization of what it all meant
-to him—he was going to be lined up against that ominous brick wall with
-these other men—they were going to shoot them.
-
-A momentary madness seized him. He looked about upon the other
-prisoners and guards. A sudden break for liberty might give him
-temporary respite. He could seize a rifle from the nearest soldier, and
-at least have the satisfaction of selling his life dearly. As he looked
-he saw more soldiers entering the factory yard.
-
-A sudden apathy overwhelmed him. What was the use? He could not escape.
-Why should he wish to kill these soldiers? It was not they who were
-responsible for his plight—they were but obeying orders. The close
-presence of death made life seem very desirable. These men, too,
-desired life. Why should he take it from them uselessly? At best he
-might kill one or two, but in the end he would be killed as surely as
-though he took his place before the brick wall with the others.
-
-He noticed now that these others evinced no inclination to contest
-their fates. Why should he, then? Doubtless many of them were as
-innocent as he, and all loved life as well. He saw that several were
-weeping silently. Others stood with bowed heads gazing at the
-hard-packed earth of the factory yard. Ah, what visions were their eyes
-beholding for the last time! What memories of happy firesides! What
-dear, loved faces were limned upon that sordid clay!
-
-His reveries were interrupted by the hoarse voice of a sergeant,
-breaking rudely in upon the silence and the dumb terror. The fellow was
-herding the prisoners into position. When he was done Barney found
-himself in the front rank of the little, hopeless band. Opposite them,
-at a few paces, stood the firing squad, their gun butts resting upon
-the ground.
-
-The young lieutenant stood at one side. He issued some instructions in
-a low tone, then he raised his voice.
-
-“Ready!” he commanded. Fascinated by the horror of it, Barney watched
-the rifles raised smartly to the soldiers’ hips—the movement was as
-precise as though the men were upon parade. Every bolt clicked in
-unison with its fellows.
-
-“Aim!” the pieces leaped to the hollows of the men’s shoulders. The
-leveled barrels were upon a line with the breasts of the condemned. A
-man at Barney’s right moaned. Another sobbed.
-
-“Fire!” There was the hideous roar of the volley. Barney Custer
-crumpled forward to the ground, and three bodies fell upon his. A
-moment later there was a second volley—all had not fallen at the first.
-Then the soldiers came among the bodies, searching for signs of life;
-but evidently the two volleys had done their work. The sergeant formed
-his men in line. The lieutenant marched them away. Only silence
-remained on guard above the pitiful dead in the factory yard.
-
-The day wore on and still the stiffening corpses lay where they had
-fallen. Twilight came and then darkness. A head appeared above the top
-of the wall that had enclosed the grounds. Eyes peered through the
-night and keen ears listened for any sign of life within. At last,
-evidently satisfied that the place was deserted, a man crawled over the
-summit of the wall and dropped to the ground within. Here again he
-paused, peering and listening.
-
-What strange business had he here among the dead that demanded such
-caution in its pursuit? Presently he advanced toward the pile of
-corpses. Quickly he tore open coats and searched pockets. He ran his
-fingers along the fingers of the dead. Two rings had rewarded his
-search and he was busy with a third that encircled the finger of a body
-that lay beneath three others. It would not come off. He pulled and
-tugged, and then he drew a knife from his pocket.
-
-But he did not sever the digit. Instead he shrank back with a muffled
-scream of terror. The corpse that he would have mutilated had staggered
-suddenly to its feet, flinging the dead bodies to one side as it rose.
-
-“You fiend!” broke from the lips of the dead man, and the ghoul turned
-and fled, gibbering in his fright.
-
-The tramp of soldiers in the street beyond ceased suddenly at the sound
-from within the factory yard. It was a detail of the guard marching to
-the relief of sentries. A moment later the gates swung open and a score
-of soldiers entered. They saw a figure dodging toward the wall a dozen
-paces from them, but they did not see the other that ran swiftly around
-the corner of the factory.
-
-This other was Barney Custer of Beatrice. When the command to fire had
-been given to the squad of riflemen, a single bullet had creased the
-top of his head, stunning him. All day he had lain there unconscious.
-It had been the tugging of the ghoul at his ring that had roused him to
-life at last.
-
-Behind him, as he scurried around the end of the factory building, he
-heard the scattering fire of half a dozen rifles, followed by a
-scream—the fleeing hyena had been hit. Barney crouched in the shadow of
-a pile of junk. He heard the voices of soldiers as they gathered about
-the wounded man, questioning him, and a moment later the imperious
-tones of an officer issuing instructions to his men to search the yard.
-That he must be discovered seemed a certainty to the American. He
-crouched further back in the shadows close to the wall, stepping with
-the utmost caution.
-
-Presently to his chagrin his foot touched the metal cover of a manhole;
-there was a resultant rattling that smote upon Barney’s ears and nerves
-with all the hideous clatter of a boiler shop. He halted, petrified,
-for an instant. He was no coward, but after being so near death, life
-had never looked more inviting, and he knew that to be discovered meant
-certain extinction this time.
-
-The soldiers were circling the building. Already he could hear them
-nearing his position. In another moment they would round the corner of
-the building and be upon him. For an instant he contemplated a bold
-rush for the fence. In fact, he had gathered himself for the leaping
-start and the quick sprint across the open under the noses of the
-soldiers who still remained beside the dying ghoul, when his mind
-suddenly reverted to the manhole beneath his feet. Here lay a hiding
-place, at least until the soldiers had departed.
-
-Barney stooped and raised the heavy lid, sliding it to one side. How
-deep was the black chasm beneath he could not even guess. Doubtless it
-led into a coal bunker, or it might open over a pit of great depth.
-There was no way to discover other than to plumb the abyss with his
-body. Above was death—below, a chance of safety.
-
-The soldiers were quite close when Barney lowered himself through the
-manhole. Clinging with his fingers to the upper edge his feet still
-swung in space. How far beneath was the bottom? He heard the scraping
-of the heavy shoes of the searchers close above him, and then he closed
-his eyes, released the grasp of his fingers, and dropped.
-
-### IV. A RACE TO LUTHA
-
-Barney’s fall was not more than four or five feet. He found himself
-upon a slippery floor of masonry over which two or three inches of
-water ran sluggishly. Above him he heard the soldiers pass the open
-manhole. It was evident that in the darkness they had missed it.
-
-For a few minutes the fugitive remained motionless, then, hearing no
-sounds from above he started to grope about his retreat. Upon two sides
-were blank, circular walls, upon the other two circular openings about
-four feet in diameter. It was through these openings that the tiny
-stream of water trickled.
-
-Barney came to the conclusion that he had dropped into a sewer. To get
-out the way he had entered appeared impossible. He could not leap
-upward from the slimy, concave bottom the distance he had dropped. To
-follow the sewer upward would lead him nowhere nearer escape. There
-remained no hope but to follow the trickling stream downward toward the
-river, into which his judgment told him the entire sewer system of the
-city must lead.
-
-Stooping, he entered the ill-smelling circular conduit, groping his way
-slowly along. As he went the water deepened. It was half way to his
-knees when he plunged unexpectedly into another tube running at right
-angles to the first. The bottom of this tube was lower than that of the
-one which emptied into it, so that Barney now found himself in a
-swiftly running stream of filth that reached above his knees. Downward
-he followed this flood—faster now for the fear of the deadly gases
-which might overpower him before he could reach the river.
-
-The water deepened gradually as he went on. At last he reached a point
-where, with his head scraping against the roof of the sewer, his chin
-was just above the surface of the stream. A few more steps would be all
-that he could take in this direction without drowning. Could he retrace
-his way against the swift current? He did not know. He was weakened
-from the effects of his wound, from lack of food and from the exertions
-of the past hour. Well, he would go on as far as he could. The river
-lay ahead of him somewhere. Behind was only the hostile city.
-
-He took another step. His foot found no support. He surged backward in
-an attempt to regain his footing, but the power of the flood was too
-much for him. He was swept forward to plunge into water that surged
-above his head as he sank. An instant later he had regained the surface
-and as his head emerged he opened his eyes.
-
-He looked up into a starlit heaven! He had reached the mouth of the
-sewer and was in the river. For a moment he lay still, floating upon
-his back to rest. Above him he heard the tread of a sentry along the
-river front, and the sound of men’s voices.
-
-The sweet, fresh air, the star-shot void above, acted as a powerful
-tonic to his shattered hopes and overwrought nerves. He lay inhaling
-great lungsful of pure, invigorating air. He listened to the voices of
-the Austrian soldiery above him. All the buoyancy of his inherent
-Americanism returned to him.
-
-“This is no place for a minister’s son,” he murmured, and turning over
-struck out for the opposite shore. The river was not wide, and Barney
-was soon nearing the bank along which he could see occasional camp
-fires. Here, too, were Austrians. He dropped down-stream below these,
-and at last approached the shore where a wood grew close to the water’s
-edge. The bank here was steep, and the American had some difficulty in
-finding a place where he could clamber up the precipitous wall of rock.
-But finally he was successful, finding himself in a little clump of
-bushes on the river’s brim. Here he lay resting and listening—always
-listening. It seemed to Barney that his ears ached with the constant
-strain of unflagging duty that his very existence demanded of them.
-
-Hearing nothing, he crawled at last from his hiding place with the
-purpose of making his way toward the south and to the frontier as
-rapidly as possible. He could hope only to travel by night, and he
-guessed that this night must be nearly spent. Stooping, he moved
-cautiously away from the river. Through the shadows of the wood he made
-his way for perhaps a hundred yards when he was suddenly confronted by
-a figure that stepped from behind the bole of a tree.
-
-“Halt! Who goes there?” came the challenge.
-
-Barney’s heart stood still. With all his care he had run straight into
-the arms of an Austrian sentry. To run would be to be shot. To advance
-would mean capture, and that too would mean death.
-
-For the barest fraction of an instant he hesitated, and then his quick
-American wits came to his aid. Feigning intoxication he answered the
-challenge in dubious Austrian that he hoped his maudlin tongue would
-excuse.
-
-“Friend,” he answered thickly. “Friend with a drink—have one?” And he
-staggered drunkenly forward, banking all upon the credulity and thirst
-of the soldier who confronted him with fixed bayonet.
-
-That the sentry was both credulous and thirsty was evidenced by the
-fact that he let Barney come within reach of his gun. Instantly the
-drunken Austrian was transformed into a very sober and active engine of
-destruction. Seizing the barrel of the piece Barney jerked it to one
-side and toward him, and at the same instant he leaped for the throat
-of the sentry.
-
-So quickly was this accomplished that the Austrian had time only for a
-single cry, and that was choked in his windpipe by the steel fingers of
-the American. Together both men fell heavily to the ground, Barney
-retaining his hold upon the other’s throat.
-
-Striking and clutching at one another they fought in silence for a
-couple of minutes, then the soldier’s struggles began to weaken. He
-squirmed and gasped for breath. His mouth opened and his tongue
-protruded. His eyes started from their sockets. Barney closed his
-fingers more tightly upon the bearded throat. He rained heavy blows
-upon the upturned face. The beating fists of his adversary waved wildly
-now—the blows that reached Barney were pitifully weak. Presently they
-ceased. The man struggled violently for an instant, twitched
-spasmodically and lay still.
-
-Barney clung to him for several minutes longer, until there was not the
-slightest indication of remaining life. The perpetration of the deed
-sickened him; but he knew that his act was warranted, for it had been
-either his life or the other’s. He dragged the body back to the bushes
-in which he had been hiding. There he stripped off the Austrian
-uniform, put his own clothes upon the corpse and rolled it into the
-river.
-
-Dressed as an Austrian private, Barney Custer shouldered the dead
-soldier’s gun and walked boldly through the wood to the south.
-Momentarily he expected to run upon other soldiers, but though he kept
-straight on his way for hours he encountered none. The thin line of
-sentries along the river had been posted only to double the preventive
-measures that had been taken to keep Serbian spies either from entering
-or leaving the city.
-
-Toward dawn, at the darkest period of the night, Barney saw lights
-ahead of him. Apparently he was approaching a village. He went more
-cautiously now, but all his care did not prevent him from running for
-the second time that night almost into the arms of a sentry. This time,
-however, Barney saw the soldier before he himself was discovered. It
-was upon the edge of the town, in an orchard, that the sentinel was
-posted. Barney, approaching through the trees, darting from one to
-another, was within a few paces of the man before he saw him.
-
-The American remained quietly in the shadow of a tree waiting for an
-opportunity to escape, but before it came he heard the approach of a
-small body of troops. They were coming from the village directly toward
-the orchard. They passed the sentry and marched within a dozen feet of
-the tree behind which Barney was hiding.
-
-As they came opposite him he slipped around the tree to the opposite
-side. The sentry had resumed his pacing, and was now out of sight
-momentarily among the trees further on. He could not see the American,
-but there were others who could. They came in the shape of a
-non-commissioned officer and a detachment of the guard to relieve the
-sentry. Barney almost bumped into them as he rounded the tree. There
-was no escape—the non-commissioned officer was within two feet of him
-when Barney discovered him. “What are you doing here?” shouted the
-sergeant with an oath. “Your post is there,” and he pointed toward the
-position where Barney had seen the sentry.
-
-At first Barney could scarce believe his ears. In the darkness the
-sergeant had mistaken him for the sentinel! Could he carry it out? And
-if so might it not lead him into worse predicament? No, Barney decided,
-nothing could be worse. To be caught masquerading in the uniform of an
-Austrian soldier within the Austrian lines was to plumb the uttermost
-depth of guilt—nothing that he might do now could make his position
-worse.
-
-He faced the sergeant, snapping his piece to present, hoping that this
-was the proper thing to do. Then he stumbled through a brief excuse.
-The officer in command of the troops that had just passed had demanded
-the way of him, and he had but stepped a few paces from his post to
-point out the road to his superior.
-
-The sergeant grunted and ordered him to fall in. Another man took his
-place on duty. They were far from the enemy and discipline was lax, so
-the thing was accomplished which under other circumstances would have
-been well nigh impossible. A moment later Barney found himself marching
-back toward the village, to all intents and purposes an Austrian
-private.
-
-Before a low, windowless shed that had been converted into barracks for
-the guard, the detail was dismissed. The men broke ranks and sought
-their blankets within the shed, tired from their lonely vigil upon
-sentry duty.
-
-Barney loitered until the last. All the others had entered. He dared
-not, for he knew that any moment the sentry upon the post from which he
-had been taken would appear upon the scene, after discovering another
-of his comrades. He was certain to inquire of the sergeant. They would
-be puzzled, of course, and, being soldiers, they would be suspicious.
-There would be an investigation, which would start in the barracks of
-the guard. That neighborhood would at once become a most unhealthy spot
-for Barney Custer, of Beatrice, Nebraska.
-
-When the last of the soldiers had entered the shed Barney glanced
-quickly about. No one appeared to notice him. He walked directly past
-the doorway to the end of the building. Around this he found a yard,
-deeply shadowed. He entered it, crossed it, and passed out into an
-alley beyond. At the first cross-street his way was blocked by the
-sight of another sentry—the world seemed composed entirely of Austrian
-sentries. Barney wondered if the entire Austrian army was kept
-perpetually upon sentry duty; he had scarce been able to turn without
-bumping into one.
-
-He turned back into the alley and at last found a crooked passageway
-between buildings that he hoped might lead him to a spot where there
-was no sentry, and from which he could find his way out of the village
-toward the south. The passage, after devious windings, led into a
-large, open court, but when Barney attempted to leave the court upon
-the opposite side he found the ubiquitous sentries upon guard there.
-
-Evidently there would be no escape while the Austrians remained in the
-town. There was nothing to do, therefore, but hide until the happy
-moment of their departure arrived. He returned to the courtyard, and
-after a short search discovered a shed in one corner that had evidently
-been used to stable a horse, for there was straw at one end of it and a
-stall in the other. Barney sat down upon the straw to wait
-developments. Tired nature would be denied no longer. His eyes closed,
-his head drooped upon his breast. In three minutes from the time he
-entered the shed he was stretched full length upon the straw, fast
-asleep.
-
-The chugging of a motor awakened him. It was broad daylight. Many
-sounds came from the courtyard without. It did not take Barney long to
-gather his scattered wits—in an instant he was wide awake. He glanced
-about. He was the only occupant of the shed. Rising, he approached a
-small window that looked out upon the court. All was life and movement.
-A dozen military cars either stood about or moved in and out of the
-wide gates at the opposite end of the enclosure. Officers and soldiers
-moved briskly through a doorway that led into a large building that
-flanked the court upon one side. While Barney slept the headquarters of
-an Austrian army corps had moved in and taken possession of the
-building, the back of which abutted upon the court where lay his modest
-little shed.
-
-Barney took it all in at a single glance, but his eyes hung long and
-greedily upon the great, high-powered machines that chugged or purred
-about him.
-
-Gad! If he could but be behind the wheel of such a car for an hour! The
-frontier could not be over fifty miles to the south, of that he was
-quite positive; and what would fifty miles be to one of those machines?
-
-Barney sighed as a great, gray-painted car whizzed into the courtyard
-and pulled up before the doorway. Two officers jumped out and ran up
-the steps. The driver, a young man in a uniform not unlike that which
-Barney wore, drew the car around to the end of the courtyard close
-beside Barney’s shed. Here he left it and entered the building into
-which his passengers had gone. By reaching through the window Barney
-could have touched the fender of the machine. A few seconds’ start in
-that and it would take more than an Austrian army corps to stop him
-this side of the border. Thus mused Barney, knowing already that the
-mad scheme that had been born within his brain would be put to action
-before he was many minutes older.
-
-There were many soldiers on guard about the courtyard. The greatest
-danger lay in arousing the suspicions of one of these should he chance
-to see Barney emerge from the shed and enter the car.
-
-“The proper thing,” thought Barney, “is to come from the building into
-which everyone seems to pass, and the only way to be seen coming out of
-it is to get into it; but how the devil am I to get into it?”
-
-The longer he thought the more convinced he became that utter
-recklessness and boldness would be his only salvation. Briskly he
-walked from the shed out into the courtyard beneath the eyes of the
-sentries, the officers, the soldiers, and the military drivers. He
-moved straight among them toward the doorway of the headquarters as
-though bent upon important business—which, indeed, he was. At least it
-was quite the most important business to Barney Custer that that young
-gentleman could recall having ventured upon for some time.
-
-No one paid the slightest attention to him. He had left his gun in the
-shed for he noticed that only the men on guard carried them. Without an
-instant’s hesitation he ran briskly up the short flight of steps and
-entered the headquarters building. Inside was another sentry who barred
-his way questioningly. Evidently one must state one’s business to this
-person before going farther. Barney, without any loss of time or
-composure, stepped up to the guard.
-
-“Has General Kampf passed in this morning?” he asked blithely. Barney
-had never heard of any “General Kampf,” nor had the sentry, since there
-was no such person in the Austrian army. But he did know, however, that
-there were altogether too many generals for any one soldier to know the
-names of them all.
-
-“I do not know the general by sight,” replied the sentry.
-
-Here was a pretty mess, indeed. Doubtless the sergeant would know a
-great deal more than would be good for Barney Custer. The young man
-looked toward the door through which he had just entered. His sole
-object in coming into the spider’s parlor had been to make it possible
-for him to come out again in full view of all the guards and officers
-and military chauffeurs, that their suspicions might not be aroused
-when he put his contemplated coup to the test.
-
-He glanced toward the door. Machines were whizzing in and out of the
-courtyard. Officers on foot were passing and repassing. The sentry in
-the hallway was on the point of calling his sergeant.
-
-“Ah!” cried Barney. “There is the general now,” and without waiting to
-cast even a parting glance at the guard he stepped quickly through the
-doorway and ran down the steps into the courtyard. Looking neither to
-right nor to left, and with a convincing air of self-confidence and
-important business, he walked directly to the big, gray machine that
-stood beside the little shed at the end of the courtyard.
-
-To crank it and leap to the driver’s seat required but a moment. The
-big car moved smoothly forward. A turn of the steering wheel brought it
-around headed toward the wide gates. Barney shifted to second speed,
-stepped on the accelerator and the cut-out simultaneously, and with a
-noise like the rattle of a machine gun, shot out of the courtyard.
-
-None who saw his departure could have guessed from the manner of it
-that the young man at the wheel of the gray car was stealing the
-machine or that his life depended upon escape without detection. It was
-the very boldness of his act that crowned it with success.
-
-Once in the street Barney turned toward the south. Cars were passing up
-and down in both directions, usually at high speed. Their numbers
-protected the fugitive. Momentarily he expected to be halted; but he
-passed out of the village without mishap and reached a country road
-which, except for a lane down its center along which automobiles were
-moving, was blocked with troops marching southward. Through this
-soldier-walled lane Barney drove for half an hour.
-
-From a great distance, toward the southeast, he could hear the boom of
-cannon and the bursting of shells. Presently the road forked. The
-troops were moving along the road on the left toward the distant battle
-line. Not a man or machine was turning into the right fork, the road
-toward the south that Barney wished to take.
-
-Could he successfully pass through the marching soldiers at his right?
-Among all those officers there surely would be one who would question
-the purpose and destination of this private soldier who drove alone in
-the direction of the nearby frontier.
-
-The moment had come when he must stake everything on his ability to
-gain the open road beyond the plodding mass of troops. Diminishing the
-speed of the car Barney turned it in toward the marching men at the
-same time sounding his horn loudly. An infantry captain, marching
-beside his company, was directly in front of the car. He looked up at
-the American. Barney saluted and pointed toward the right-hand fork.
-
-The captain turned and shouted a command to his men. Those who had not
-passed in front of the car halted. Barney shot through the little lane
-they had opened, which immediately closed up behind him. He was
-through! He was upon the open road! Ahead, as far as he could see,
-there was no sign of any living creature to bar his way, and the
-frontier could not be more than twenty-five miles away.
-
-### V. THE TRAITOR KING
-
-In his castle at Lustadt, Leopold of Lutha paced nervously back and
-forth between his great desk and the window that overlooked the royal
-gardens. Upon the opposite side of the desk stood an old man—a tall,
-straight, old man with the bearing of a soldier and the head of a lion.
-His keen, gray eyes were upon the king, and sorrow was written upon his
-face. He was Ludwig von der Tann, chancellor of the kingdom of Lutha.
-
-At last the king stopped his pacing and faced the old man, though he
-could not meet those eagle eyes squarely, try as he would. It was his
-inability to do so, possibly, that added to his anger. Weak himself, he
-feared this strong man and envied him his strength, which, in a weak
-nature, is but a step from hatred. There evidently had been a long
-pause in their conversation, yet the king’s next words took up the
-thread of their argument where it had broken.
-
-“You speak as though I had no right to do it,” he snapped. “One might
-think that you were the king from the manner with which you upbraid and
-reproach me. I tell you, Prince von der Tann, that I shall stand it no
-longer.”
-
-The king approached the desk and pounded heavily upon its polished
-surface with his fist. The physical act of violence imparted to him a
-certain substitute for the moral courage which he lacked.
-
-“I will tell you, sir, that I am king. It was not necessary that I
-consult you or any other man before pardoning Prince Peter and his
-associates. I have investigated the matter thoroughly and I am
-convinced that they have been taught a sufficient lesson and that
-hereafter they will be my most loyal subjects.”
-
-He hesitated. “Their presence here,” he added, “may prove an antidote
-to the ambitions of others who lately have taken it upon themselves to
-rule Lutha for me.”
-
-There was no mistaking the king’s meaning, but Prince Ludwig did not
-show by any change of expression that the shot had struck him in a
-vulnerable spot; nor, upon the other hand, did he ignore the
-insinuation. There was only sorrow in his voice when he replied.
-
-“Sire,” he said, “for some time I have been aware of the activity of
-those who would like to see Peter of Blentz returned to favor with your
-majesty. I have warned you, only to see that my motives were always
-misconstrued. There is a greater power at work, your majesty, than any
-of us—greater than Lutha itself. One that will stop at nothing in order
-to gain its ends. It cares naught for Peter of Blentz, naught for me,
-naught for you. It cares only for Lutha. For strategic purposes it must
-have Lutha. It will trample you under foot to gain its end, and then it
-will cast Peter of Blentz aside. You have insinuated, sire, that I am
-ambitious. I am. I am ambitious to maintain the integrity and freedom
-of Lutha.
-
-“For three hundred years the Von der Tanns have labored and fought for
-the welfare of Lutha. It was a Von der Tann that put the first
-Rubinroth king upon the throne of Lutha. To the last they were loyal to
-the former dynasty while that dynasty was loyal to Lutha. Only when the
-king attempted to sell the freedom of his people to a powerful neighbor
-did the Von der Tanns rise against him.
-
-“Sire! the Von der Tanns have always been loyal to the house of
-Rubinroth. And but a single thing rises superior within their breasts
-to that loyalty, and that is their loyalty to Lutha.” He paused for an
-instant before concluding. “And I, sire, am a Von der Tann.”
-
-There could be no mistaking the old man’s meaning. So long as Leopold
-was loyal to his people and their interests Ludwig von der Tann would
-be loyal to Leopold. The king was cowed. He was very much afraid of
-this grim old warrior. He chafed beneath his censure.
-
-“You are always scolding me,” he cried irritably. “I am getting tired
-of it. And now you threaten me. Do you call that loyalty? Do you call
-it loyalty to refuse to compel your daughter to keep her plighted
-troth? If you wish to prove your loyalty command the Princess Emma to
-fulfil the promise you made my father—command her to wed me at once.”
-
-Von der Tann looked the king straight in the eyes.
-
-“I cannot do that,” he said. “She has told me that she will kill
-herself rather than wed with your majesty. She is all I have left,
-sire. What good would be accomplished by robbing me of her if you could
-not gain her by the act? Win her confidence and love, sire. It may be
-done. Thus only may happiness result to you and to her.”
-
-“You see,” exclaimed the king, “what your loyalty amounts to! I believe
-that you are saving her for the impostor—I have heard as much hinted at
-before this. Nor do I doubt that she would gladly connive with the
-fellow if she thought there was a chance of his seizing the throne.”
-
-Von der Tann paled. For the first time righteous indignation and anger
-got the better of him. He took a step toward the king.
-
-“Stop!” he commanded. “No man, not even my king, may speak such words
-to a Von der Tann.”
-
-In an antechamber just outside the room a man sat near the door that
-led into the apartment where the king and his chancellor quarreled. He
-had been straining his ears to catch the conversation which he could
-hear rising and falling in the adjoining chamber, but till now he had
-been unsuccessful. Then came Prince Ludwig’s last words booming loudly
-through the paneled door, and the man smiled. He was Count Zellerndorf,
-the Austrian minister to Lutha.
-
-The king’s outraged majesty goaded him to an angry retort.
-
-“You forget yourself, Prince von der Tann,” he cried. “Leave our
-presence. When we again desire to be insulted we shall send for you.”
-
-As the chancellor passed into the antechamber Count Zellerndorf rose
-and greeted him warmly, almost effusively. Von der Tann returned his
-salutations with courtesy but with no answering warmth. Then he passed
-on out of the palace.
-
-“The old fox must have heard,” he mused as he mounted his horse and
-turned his face toward Tann and the Old Forest.
-
-When Count Zellerndorf of Austria entered the presence of Leopold of
-Lutha he found that young ruler much disturbed. He had resumed his
-restless pacing between desk and window, and as the Austrian entered he
-scarce paused to receive his salutation. Count Zellerndorf was a
-frequent visitor at the palace. There were few formalities between this
-astute diplomat and the young king; those had passed gradually away as
-their acquaintance and friendship ripened.
-
-“Prince Ludwig appeared angry when he passed through the antechamber,”
-ventured Zellerndorf. “Evidently your majesty found cause to rebuke
-him.”
-
-The king nodded and looked narrowly at the Austrian. “The Prince von
-der Tann insinuated that Austria’s only wish in connection with Lutha
-is to seize her,” he said.
-
-Zellerndorf raised his hands in well-simulated horror.
-
-“Your majesty!” he exclaimed. “It cannot be that the prince has gone to
-such lengths to turn you against your best friend, my emperor. If he
-has I can only attribute it to his own ambitions. I have hesitated to
-speak to you of this matter, your majesty, but now that the honor of my
-own ruler is questioned I must defend him.
-
-“Bear with me then, should what I have to say wound you. I well know
-the confidence which the house of Von der Tann has enjoyed for
-centuries in Lutha; but I must brave your wrath in the interest of
-right. I must tell you that it is common gossip in Vienna that Von der
-Tann aspires to the throne of Lutha either for himself or for his
-daughter through the American impostor who once sat upon your throne
-for a few days. And let me tell you more.
-
-“The American will never again menace you—he was arrested in Burgova as
-a spy and executed. He is dead; but not so are Von der Tann’s
-ambitions. When he learns that he no longer may rely upon the strain of
-the Rubinroth blood that flowed in the veins of the American from his
-royal mother, the runaway Princess Victoria, there will remain to him
-only the other alternative of seizing the throne for himself. He is a
-very ambitious man, your majesty. Already he has caused it to become
-current gossip that he is the real power behind the throne of
-Lutha—that your majesty is but a figure-head, the puppet of Von der
-Tann.”
-
-Zellerndorf paused. He saw the flush of shame and anger that suffused
-the king’s face, and then he shot the bolt that he had come to fire,
-but which he had not dared to hope would find its target so denuded of
-defense.
-
-“Your majesty,” he whispered, coming quite close to the king, “all
-Lutha is inclined to believe that you fear Prince von der Tann. Only a
-few of us know the truth to be the contrary. For the sake of your
-prestige you must take some step to counteract this belief and stamp it
-out for good and all. I have planned a way—hear it.
-
-“Von der Tann’s hatred of Peter of Blentz is well known. No man in
-Lutha believes that he would permit you to have any intercourse with
-Peter. I have brought from Blentz an invitation to your majesty to
-honor the Blentz prince with your presence as a guest for the ensuing
-week. Accept it, your majesty.
-
-“Nothing could more conclusively prove to the most skeptical that you
-are still the king, and that Von der Tann, nor any other, may not dare
-to dictate to you. It will be the most splendid stroke of statesmanship
-that you could achieve at the present moment.”
-
-For an instant the king stood in thought. He still feared Peter of
-Blentz as the devil is reputed to fear holy water, though for converse
-reasons. Yet he was very angry with Von der Tann. It would indeed be an
-excellent way to teach the presumptuous chancellor his place.
-
-Leopold almost smiled as he thought of the chagrin with which Prince
-Ludwig would receive the news that he had gone to Blentz as the guest
-of Peter. It was the last impetus that was required by his weak,
-vindictive nature to press it to a decision.
-
-“Very well,” he said, “I will go tomorrow.”
-
-It was late the following day that Prince von der Tann received in his
-castle in the Old Forest word that an Austrian army had crossed the
-Luthanian frontier—the neutrality of Lutha had been violated. The old
-chancellor set out immediately for Lustadt. At the palace he sought an
-interview with the king only to learn that Leopold had departed earlier
-in the day to visit Peter of Blentz.
-
-There was but one thing to do and that was to follow the king to
-Blentz. Some action must be taken immediately—it would never do to let
-this breach of treaty pass unnoticed.
-
-The Serbian minister who had sent word to the chancellor of the
-invasion by the Austrian troops was closeted with him for an hour after
-his arrival at the palace. It was clear to both these men that the hand
-of Zellerndorf was plainly in evidence in both the important moves that
-had occurred in Lutha within the past twenty-four hours—the luring of
-the king to Blentz and the entrance of Austrian soldiery into Lutha.
-
-Following his interview with the Serbian minister Von der Tann rode
-toward Blentz with only his staff in attendance. It was long past
-midnight when the lights of the town appeared directly ahead of the
-little party. They rode at a trot along the road which passes through
-the village to wind upward again toward the ancient feudal castle that
-looks down from its hilltop upon the town.
-
-At the edge of the village Von der Tann was thunderstruck by a
-challenge from a sentry posted in the road, nor was his dismay lessened
-when he discovered that the man was an Austrian.
-
-“What is the meaning of this?” he cried angrily. “What are Austrian
-soldiers doing barring the roads of Lutha to the chancellor of Lutha?”
-
-The sentry called an officer. The latter was extremely suave. He
-regretted the incident, but his orders were most positive—no one could
-be permitted to pass through the lines without an order from the
-general commanding. He would go at once to the general and see if he
-could procure the necessary order. Would the prince be so good as to
-await his return? Von der Tann turned on the young officer, his face
-purpling with rage.
-
-“I will pass nowhere within the boundaries of Lutha,” he said, “upon
-the order of an Austrian. You may tell your general that my only regret
-is that I have not with me tonight the necessary force to pass through
-his lines to my king—another time I shall not be so handicapped,” and
-Ludwig, Prince von der Tann, wheeled his mount and spurred away in the
-direction of Lustadt, at his heels an extremely angry and revengeful
-staff.
-
-### VI. A TRAP IS SPRUNG
-
-Long before Prince von der Tann reached Lustadt he had come to the
-conclusion that Leopold was in virtue a prisoner in Blentz. To prove
-his conclusion he directed one of his staff to return to Blentz and
-attempt to have audience with the king.
-
-“Risk anything,” he instructed the officer to whom he had entrusted the
-mission. “Submit, if necessary, to the humiliation of seeking an
-Austrian pass through the lines to the castle. See the king at any cost
-and deliver this message to him and to him alone and secretly. Tell him
-my fears, and that if I do not have word from him within twenty-four
-hours I shall assume that he is indeed a prisoner.
-
-“I shall then direct the mobilization of the army and take such steps
-as seem fit to rescue him and drive the invaders from the soil of
-Lutha. If you do not return I shall understand that you are held
-prisoner by the Austrians and that my worst fears have been realized.”
-
-But Prince Ludwig was one who believed in being forehanded and so it
-happened that the orders for the mobilization of the army of Lutha were
-issued within fifteen minutes of his return to Lustadt. It would do no
-harm, thought the old man, with a grim smile, to get things well under
-way a day ahead of time. This accomplished, he summoned the Serbian
-minister, with what purpose and to what effect became historically
-evident several days later. When, after twenty-four hours’ absence, his
-aide had not returned from Blentz, the chancellor had no regrets for
-his forehandedness.
-
-In the castle of Peter of Blentz the king of Lutha was being
-entertained royally. He was told nothing of the attempt of his
-chancellor to see him, nor did he know that a messenger from Prince von
-der Tann was being held a prisoner in the camp of the Austrians in the
-village. He was surrounded by the creatures of Prince Peter and by
-Peter’s staunch allies, the Austrian minister and the Austrian officers
-attached to the expeditionary force occupying the town. They told him
-that they had positive information that the Serbians already had
-crossed the frontier into Lutha, and that the presence of the Austrian
-troops was purely for the protection of Lutha.
-
-It was not until the morning following the rebuff of Prince von der
-Tann that Peter of Blentz, Count Zellerndorf and Maenck heard of the
-occurrence. They were chagrined by the accident, for they were not
-ready to deliver their final stroke. The young officer of the guard
-had, of course, but followed his instructions—who would have thought
-that old Von der Tann would come to Blentz! That he suspected their
-motives seemed apparent, and now that his rebuff at the gates had
-aroused his ire and, doubtless, crystallized his suspicions, they might
-find in him a very ugly obstacle to the fruition of their plans.
-
-With Von der Tann actively opposed to them, the value of having the
-king upon their side would be greatly minimized. The people and the
-army had every confidence in the old chancellor. Even if he opposed the
-king there was reason to believe that they might still side with him.
-
-“What is to be done?” asked Zellerndorf. “Is there no way either to win
-or force Von der Tann to acquiescence?”
-
-“I think we can accomplish it,” said Prince Peter, after a moment of
-thought. “Let us see Leopold. His mind has been prepared to receive
-almost gratefully any insinuations against the loyalty of Von der Tann.
-With proper evidence the king may easily be persuaded to order the
-chancellor’s arrest—possibly his execution as well.”
-
-So they saw the king, only to meet a stubborn refusal upon the part of
-Leopold to accede to their suggestions. He still was madly in love with
-Von der Tann’s daughter, and he knew that a blow delivered at her
-father would only tend to increase her bitterness toward him. The
-conspirators were nonplussed.
-
-They had looked for a comparatively easy road to the consummation of
-their desires. What in the world could be the cause of the king’s
-stubborn desire to protect the man they knew he feared, hated, and
-mistrusted with all the energy of his suspicious nature? It was the
-king himself who answered their unspoken question.
-
-“I cannot believe in the disloyalty of Prince Ludwig,” he said, “nor
-could I, even if I desired it, take such drastic steps as you suggest.
-Some day the Princess Emma, his daughter, will be my queen.”
-
-Count Zellerndorf was the first to grasp the possibilities that lay in
-the suggestion the king’s words carried.
-
-“Your majesty,” he cried, “there is a way to unite all factions in
-Lutha. It would be better to insure the loyalty of Von der Tann through
-bonds of kinship than to antagonize him. Marry the Princess Emma at
-once.
-
-“Wait, your majesty,” he added, as Leopold raised an objecting hand. “I
-am well informed as to the strange obstinacy of the princess, but for
-the welfare of the state—yes, for the sake of your very throne,
-sire—you should exert your royal prerogatives and command the Princess
-Emma to carry out the terms of your betrothal.”
-
-“What do you mean, Zellerndorf?” asked the king.
-
-“I mean, sire, that we should bring the princess here and compel her to
-marry you.”
-
-Leopold shook his head. “You do not know her,” he said. “You do not
-know the Von der Tann nature—one cannot force a Von der Tann.”
-
-“Pardon, sire,” urged Zellerndorf, “but I think it can be accomplished.
-If the Princess Emma knew that your majesty believed her father to be a
-traitor—that the order for his arrest and execution but awaited your
-signature—I doubt not that she would gladly become queen of Lutha, with
-her father’s life and liberty as a wedding gift.”
-
-For several minutes no one spoke after Count Zellerndorf had ceased.
-Leopold sat looking at the toe of his boot. Peter of Blentz, Maenck,
-and the Austrian watched him intently. The possibilities of the plan
-were sinking deep into the minds of all four. At last the king rose. He
-was mumbling to himself as though unconscious of the presence of the
+### FOREWORD
+
+Twelve years had passed since I had laid the body of my great-uncle,
+Captain John Carter, of Virginia, away from the sight of men in that
+strange mausoleum in the old cemetery at Richmond.
+
+Often had I pondered on the odd instructions he had left me governing
+the construction of his mighty tomb, and especially those parts which
+directed that he be laid in an _open_ casket and that the ponderous
+mechanism which controlled the bolts of the vault’s huge door be
+accessible _only from the inside_.
+
+Twelve years had passed since I had read the remarkable manuscript of
+this remarkable man; this man who remembered no childhood and who could
+not even offer a vague guess as to his age; who was always young and
+yet who had dandled my grandfather’s great-grandfather upon his knee;
+this man who had spent ten years upon the planet Mars; who had fought
+for the green men of Barsoom and fought against them; who had fought
+for and against the red men and who had won the ever beautiful Dejah
+Thoris, Princess of Helium, for his wife, and for nearly ten years had
+been a prince of the house of Tardos Mors, Jeddak of Helium.
+
+Twelve years had passed since his body had been found upon the bluff
+before his cottage overlooking the Hudson, and oft-times during these
+long years I had wondered if John Carter were really dead, or if he
+again roamed the dead sea bottoms of that dying planet; if he had
+returned to Barsoom to find that he had opened the frowning portals of
+the mighty atmosphere plant in time to save the countless millions who
+were dying of asphyxiation on that far-gone day that had seen him
+hurtled ruthlessly through forty-eight million miles of space back to
+Earth once more. I had wondered if he had found his black-haired
+Princess and the slender son he had dreamed was with her in the royal
+gardens of Tardos Mors, awaiting his return.
+
+Or, had he found that he had been too late, and thus gone back to a
+living death upon a dead world? Or was he really dead after all, never
+to return either to his mother Earth or his beloved Mars?
+
+Thus was I lost in useless speculation one sultry August evening when
+old Ben, my body servant, handed me a telegram. Tearing it open I read:
+
+‘Meet me to-morrow hotel Raleigh Richmond.
+
+‘JOHN CARTER’
+
+Early the next morning I took the first train for Richmond and within
+two hours was being ushered into the room occupied by John Carter.
+
+As I entered he rose to greet me, his old-time cordial smile of welcome
+lighting his handsome face. Apparently he had not aged a minute, but
+was still the straight, clean-limbed fighting-man of thirty. His keen
+grey eyes were undimmed, and the only lines upon his face were the
+lines of iron character and determination that always had been there
+since first I remembered him, nearly thirty-five years before.
+
+“Well, nephew,” he greeted me, “do you feel as though you were seeing a
+ghost, or suffering from the effects of too many of Uncle Ben’s
+juleps?”
+
+“Juleps, I reckon,” I replied, “for I certainly feel mighty good; but
+maybe it’s just the sight of you again that affects me. You have been
+back to Mars? Tell me. And Dejah Thoris? You found her well and
+awaiting you?”
+
+“Yes, I have been to Barsoom again, and—but it’s a long story, too long
+to tell in the limited time I have before I must return. I have learned
+the secret, nephew, and I may traverse the trackless void at my will,
+coming and going between the countless planets as I list; but my heart
+is always in Barsoom, and while it is there in the keeping of my
+Martian Princess, I doubt that I shall ever again leave the dying world
+that is my life.
+
+“I have come now because my affection for you prompted me to see you
+once more before you pass over for ever into that other life that I
+shall never know, and which though I have died thrice and shall die
+again to-night, as you know death, I am as unable to fathom as are you.
+
+“Even the wise and mysterious therns of Barsoom, that ancient cult
+which for countless ages has been credited with holding the secret of
+life and death in their impregnable fastnesses upon the hither slopes
+of the Mountains of Otz, are as ignorant as we. I have proved it,
+though I near lost my life in the doing of it; but you shall read it
+all in the notes I have been making during the last three months that I
+have been back upon Earth.”
+
+He patted a swelling portfolio that lay on the table at his elbow.
+
+“I know that you are interested and that you believe, and I know that
+the world, too, is interested, though they will not believe for many
+years; yes, for many ages, since they cannot understand. Earth men have
+not yet progressed to a point where they can comprehend the things that
+I have written in those notes.
+
+“Give them what you wish of it, what you think will not harm them, but
+do not feel aggrieved if they laugh at you.”
+
+That night I walked down to the cemetery with him. At the door of his
+vault he turned and pressed my hand.
+
+“Good-bye, nephew,” he said. “I may never see you again, for I doubt
+that I can ever bring myself to leave my wife and boy while they live,
+and the span of life upon Barsoom is often more than a thousand years.”
+
+He entered the vault. The great door swung slowly to. The ponderous
+bolts grated into place. The lock clicked. I have never seen Captain
+John Carter, of Virginia, since.
+
+But here is the story of his return to Mars on that other occasion, as
+I have gleaned it from the great mass of notes which he left for me
+upon the table of his room in the hotel at Richmond.
+
+There is much which I have left out; much which I have not dared to
+tell; but you will find the story of his second search for Dejah
+Thoris, Princess of Helium, even more remarkable than was his first
+manuscript which I gave to an unbelieving world a short time since and
+through which we followed the fighting Virginian across dead sea
+bottoms under the moons of Mars.
+
+E. R. B.
+
+## CHAPTER I THE PLANT MEN
+
+As I stood upon the bluff before my cottage on that clear cold night in
+the early part of March, 1886, the noble Hudson flowing like the grey
+and silent spectre of a dead river below me, I felt again the strange,
+compelling influence of the mighty god of war, my beloved Mars, which
+for ten long and lonesome years I had implored with outstretched arms
+to carry me back to my lost love.
+
+Not since that other March night in 1866, when I had stood without that
+Arizona cave in which my still and lifeless body lay wrapped in the
+similitude of earthly death had I felt the irresistible attraction of
+the god of my profession.
+
+With arms outstretched toward the red eye of the great star I stood
+praying for a return of that strange power which twice had drawn me
+through the immensity of space, praying as I had prayed on a thousand
+nights before during the long ten years that I had waited and hoped.
+
+Suddenly a qualm of nausea swept over me, my senses swam, my knees gave
+beneath me and I pitched headlong to the ground upon the very verge of
+the dizzy bluff.
+
+Instantly my brain cleared and there swept back across the threshold of
+my memory the vivid picture of the horrors of that ghostly Arizona
+cave; again, as on that far-gone night, my muscles refused to respond
+to my will and again, as though even here upon the banks of the placid
+Hudson, I could hear the awful moans and rustling of the fearsome thing
+which had lurked and threatened me from the dark recesses of the cave,
+I made the same mighty and superhuman effort to break the bonds of the
+strange anaesthesia which held me, and again came the sharp click as of
+the sudden parting of a taut wire, and I stood naked and free beside
+the staring, lifeless thing that had so recently pulsed with the warm,
+red life-blood of John Carter.
+
+With scarcely a parting glance I turned my eyes again toward Mars,
+lifted my hands toward his lurid rays, and waited.
+
+Nor did I have long to wait; for scarce had I turned ere I shot with
+the rapidity of thought into the awful void before me. There was the
+same instant of unthinkable cold and utter darkness that I had
+experienced twenty years before, and then I opened my eyes in another
+world, beneath the burning rays of a hot sun, which beat through a tiny
+opening in the dome of the mighty forest in which I lay.
+
+The scene that met my eyes was so un-Martian that my heart sprang to my
+throat as the sudden fear swept through me that I had been aimlessly
+tossed upon some strange planet by a cruel fate.
+
+Why not? What guide had I through the trackless waste of interplanetary
+space? What assurance that I might not as well be hurtled to some
+far-distant star of another solar system, as to Mars?
+
+I lay upon a close-cropped sward of red grasslike vegetation, and about
+me stretched a grove of strange and beautiful trees, covered with huge
+and gorgeous blossoms and filled with brilliant, voiceless birds. I
+call them birds since they were winged, but mortal eye ne’er rested on
+such odd, unearthly shapes.
+
+The vegetation was similar to that which covers the lawns of the red
+Martians of the great waterways, but the trees and birds were unlike
+anything that I had ever seen upon Mars, and then through the further
+trees I could see that most un-Martian of all sights—an open sea, its
+blue waters shimmering beneath the brazen sun.
+
+As I rose to investigate further I experienced the same ridiculous
+catastrophe that had met my first attempt to walk under Martian
+conditions. The lesser attraction of this smaller planet and the
+reduced air pressure of its greatly rarefied atmosphere, afforded so
+little resistance to my earthly muscles that the ordinary exertion of
+the mere act of rising sent me several feet into the air and
+precipitated me upon my face in the soft and brilliant grass of this
+strange world.
+
+This experience, however, gave me some slightly increased assurance
+that, after all, I might indeed be in some, to me, unknown corner of
+Mars, and this was very possible since during my ten years’ residence
+upon the planet I had explored but a comparatively tiny area of its
+vast expanse.
+
+I arose again, laughing at my forgetfulness, and soon had mastered once
+more the art of attuning my earthly sinews to these changed conditions.
+
+As I walked slowly down the imperceptible slope toward the sea I could
+not help but note the park-like appearance of the sward and trees. The
+grass was as close-cropped and carpet-like as some old English lawn and
+the trees themselves showed evidence of careful pruning to a uniform
+height of about fifteen feet from the ground, so that as one turned his
+glance in any direction the forest had the appearance at a little
+distance of a vast, high-ceiled chamber.
+
+All these evidences of careful and systematic cultivation convinced me
+that I had been fortunate enough to make my entry into Mars on this
+second occasion through the domain of a civilized people and that when
+I should find them I would be accorded the courtesy and protection that
+my rank as a Prince of the house of Tardos Mors entitled me to.
+
+The trees of the forest attracted my deep admiration as I proceeded
+toward the sea. Their great stems, some of them fully a hundred feet in
+diameter, attested their prodigious height, which I could only guess
+at, since at no point could I penetrate their dense foliage above me to
+more than sixty or eighty feet.
+
+As far aloft as I could see the stems and branches and twigs were as
+smooth and as highly polished as the newest of American-made pianos.
+The wood of some of the trees was as black as ebony, while their
+nearest neighbours might perhaps gleam in the subdued light of the
+forest as clear and white as the finest china, or, again, they were
+azure, scarlet, yellow, or deepest purple.
+
+And in the same way was the foliage as gay and variegated as the stems,
+while the blooms that clustered thick upon them may not be described in
+any earthly tongue, and indeed might challenge the language of the
+gods.
+
+As I neared the confines of the forest I beheld before me and between
+the grove and the open sea, a broad expanse of meadow land, and as I
+was about to emerge from the shadows of the trees a sight met my eyes
+that banished all romantic and poetic reflection upon the beauties of
+the strange landscape.
+
+To my left the sea extended as far as the eye could reach, before me
+only a vague, dim line indicated its further shore, while at my right a
+mighty river, broad, placid, and majestic, flowed between scarlet banks
+to empty into the quiet sea before me.
+
+At a little distance up the river rose mighty perpendicular bluffs,
+from the very base of which the great river seemed to rise.
+
+But it was not these inspiring and magnificent evidences of Nature’s
+grandeur that took my immediate attention from the beauties of the
+forest. It was the sight of a score of figures moving slowly about the
+meadow near the bank of the mighty river.
+
+Odd, grotesque shapes they were; unlike anything that I had ever seen
+upon Mars, and yet, at a distance, most manlike in appearance. The
+larger specimens appeared to be about ten or twelve feet in height when
+they stood erect, and to be proportioned as to torso and lower
+extremities precisely as is earthly man.
+
+Their arms, however, were very short, and from where I stood seemed as
+though fashioned much after the manner of an elephant’s trunk, in that
+they moved in sinuous and snakelike undulations, as though entirely
+without bony structure, or if there were bones it seemed that they must
+be vertebral in nature.
+
+As I watched them from behind the stem of a huge tree, one of the
+creatures moved slowly in my direction, engaged in the occupation that
+seemed to be the principal business of each of them, and which
+consisted in running their oddly shaped hands over the surface of the
+sward, for what purpose I could not determine.
+
+As he approached quite close to me I obtained an excellent view of him,
+and though I was later to become better acquainted with his kind, I may
+say that that single cursory examination of this awful travesty on
+Nature would have proved quite sufficient to my desires had I been a
+free agent. The fastest flier of the Heliumetic Navy could not quickly
+enough have carried me far from this hideous creature.
+
+Its hairless body was a strange and ghoulish blue, except for a broad
+band of white which encircled its protruding, single eye: an eye that
+was all dead white—pupil, iris, and ball.
+
+Its nose was a ragged, inflamed, circular hole in the centre of its
+blank face; a hole that resembled more closely nothing that I could
+think of other than a fresh bullet wound which has not yet commenced to
+bleed.
+
+Below this repulsive orifice the face was quite blank to the chin, for
+the thing had no mouth that I could discover.
+
+The head, with the exception of the face, was covered by a tangled mass
+of jet-black hair some eight or ten inches in length. Each hair was
+about the bigness of a large angleworm, and as the thing moved the
+muscles of its scalp this awful head-covering seemed to writhe and
+wriggle and crawl about the fearsome face as though indeed each
+separate hair was endowed with independent life.
+
+The body and the legs were as symmetrically human as Nature could have
+fashioned them, and the feet, too, were human in shape, but of
+monstrous proportions. From heel to toe they were fully three feet
+long, and very flat and very broad.
+
+As it came quite close to me I discovered that its strange movements,
+running its odd hands over the surface of the turf, were the result of
+its peculiar method of feeding, which consists in cropping off the
+tender vegetation with its razorlike talons and sucking it up from its
+two mouths, which lie one in the palm of each hand, through its
+arm-like throats.
+
+In addition to the features which I have already described, the beast
+was equipped with a massive tail about six feet in length, quite round
+where it joined the body, but tapering to a flat, thin blade toward the
+end, which trailed at right angles to the ground.
+
+By far the most remarkable feature of this most remarkable creature,
+however, were the two tiny replicas of it, each about six inches in
+length, which dangled, one on either side, from its armpits. They were
+suspended by a small stem which seemed to grow from the exact tops of
+their heads to where it connected them with the body of the adult.
+
+Whether they were the young, or merely portions of a composite
+creature, I did not know.
+
+As I had been scrutinizing this weird monstrosity the balance of the
+herd had fed quite close to me and I now saw that while many had the
+smaller specimens dangling from them, not all were thus equipped, and I
+further noted that the little ones varied in size from what appeared to
+be but tiny unopened buds an inch in diameter through various stages of
+development to the full-fledged and perfectly formed creature of ten to
+twelve inches in length.
+
+Feeding with the herd were many of the little fellows not much larger
+than those which remained attached to their parents, and from the young
+of that size the herd graded up to the immense adults.
+
+Fearsome-looking as they were, I did not know whether to fear them or
+not, for they did not seem to be particularly well equipped for
+fighting, and I was on the point of stepping from my hiding-place and
+revealing myself to them to note the effect upon them of the sight of a
+man when my rash resolve was, fortunately for me, nipped in the bud by
+a strange shrieking wail, which seemed to come from the direction of
+the bluffs at my right.
+
+Naked and unarmed, as I was, my end would have been both speedy and
+horrible at the hands of these cruel creatures had I had time to put my
+resolve into execution, but at the moment of the shriek each member of
+the herd turned in the direction from which the sound seemed to come,
+and at the same instant every particular snake-like hair upon their
+heads rose stiffly perpendicular as if each had been a sentient
+organism looking or listening for the source or meaning of the wail.
+And indeed the latter proved to be the truth, for this strange growth
+upon the craniums of the plant men of Barsoom represents the thousand
+ears of these hideous creatures, the last remnant of the strange race
+which sprang from the original Tree of Life.
+
+Instantly every eye turned toward one member of the herd, a large
+fellow who evidently was the leader. A strange purring sound issued
+from the mouth in the palm of one of his hands, and at the same time he
+started rapidly toward the bluff, followed by the entire herd.
+
+Their speed and method of locomotion were both remarkable, springing as
+they did in great leaps of twenty or thirty feet, much after the manner
+of a kangaroo.
+
+They were rapidly disappearing when it occurred to me to follow them,
+and so, hurling caution to the winds, I sprang across the meadow in
+their wake with leaps and bounds even more prodigious than their own,
+for the muscles of an athletic Earth man produce remarkable results
+when pitted against the lesser gravity and air pressure of Mars.
+
+Their way led directly towards the apparent source of the river at the
+base of the cliffs, and as I neared this point I found the meadow
+dotted with huge boulders that the ravages of time had evidently
+dislodged from the towering crags above.
+
+For this reason I came quite close to the cause of the disturbance
+before the scene broke upon my horrified gaze. As I topped a great
+boulder I saw the herd of plant men surrounding a little group of
+perhaps five or six green men and women of Barsoom.
+
+That I was indeed upon Mars I now had no doubt, for here were members
+of the wild hordes that people the dead sea bottoms and deserted cities
+of that dying planet.
+
+Here were the great males towering in all the majesty of their imposing
+height; here were the gleaming white tusks protruding from their
+massive lower jaws to a point near the centre of their foreheads, the
+laterally placed, protruding eyes with which they could look forward or
+backward, or to either side without turning their heads, here the
+strange antennae-like ears rising from the tops of their foreheads; and
+the additional pair of arms extending from midway between the shoulders
+and the hips.
+
+Even without the glossy green hide and the metal ornaments which
+denoted the tribes to which they belonged, I would have known them on
+the instant for what they were, for where else in all the universe is
+their like duplicated?
+
+There were two men and four females in the party and their ornaments
+denoted them as members of different hordes, a fact which tended to
+puzzle me infinitely, since the various hordes of green men of Barsoom
+are eternally at deadly war with one another, and never, except on that
+single historic instance when the great Tars Tarkas of Thark gathered a
+hundred and fifty thousand green warriors from several hordes to march
+upon the doomed city of Zodanga to rescue Dejah Thoris, Princess of
+Helium, from the clutches of Than Kosis, had I seen green Martians of
+different hordes associated in other than mortal combat.
+
+But now they stood back to back, facing, in wide-eyed amazement, the
+very evidently hostile demonstrations of a common enemy.
+
+Both men and women were armed with long-swords and daggers, but no
+firearms were in evidence, else it had been short shrift for the
+gruesome plant men of Barsoom.
+
+Presently the leader of the plant men charged the little party, and his
+method of attack was as remarkable as it was effective, and by its very
+strangeness was the more potent, since in the science of the green
+warriors there was no defence for this singular manner of attack, the
+like of which it soon was evident to me they were as unfamiliar with as
+they were with the monstrosities which confronted them.
+
+The plant man charged to within a dozen feet of the party and then,
+with a bound, rose as though to pass directly above their heads. His
+powerful tail was raised high to one side, and as he passed close above
+them he brought it down in one terrific sweep that crushed a green
+warrior’s skull as though it had been an eggshell.
+
+The balance of the frightful herd was now circling rapidly and with
+bewildering speed about the little knot of victims. Their prodigious
+bounds and the shrill, screeching purr of their uncanny mouths were
+well calculated to confuse and terrorize their prey, so that as two of
+them leaped simultaneously from either side, the mighty sweep of those
+awful tails met with no resistance and two more green Martians went
+down to an ignoble death.
+
+There were now but one warrior and two females left, and it seemed that
+it could be but a matter of seconds ere these, also, lay dead upon the
+scarlet sward.
+
+But as two more of the plant men charged, the warrior, who was now
+prepared by the experiences of the past few minutes, swung his mighty
+long-sword aloft and met the hurtling bulk with a clean cut that clove
+one of the plant men from chin to groin.
+
+The other, however, dealt a single blow with his cruel tail that laid
+both of the females crushed corpses upon the ground.
+
+As the green warrior saw the last of his companions go down and at the
+same time perceived that the entire herd was charging him in a body, he
+rushed boldly to meet them, swinging his long-sword in the terrific
+manner that I had so often seen the men of his kind wield it in their
+ferocious and almost continual warfare among their own race.
+
+Cutting and hewing to right and left, he laid an open path straight
+through the advancing plant men, and then commenced a mad race for the
+forest, in the shelter of which he evidently hoped that he might find a
+haven of refuge.
+
+He had turned for that portion of the forest which abutted on the
+cliffs, and thus the mad race was taking the entire party farther and
+farther from the boulder where I lay concealed.
+
+As I had watched the noble fight which the great warrior had put up
+against such enormous odds my heart had swelled in admiration for him,
+and acting as I am wont to do, more upon impulse than after mature
+deliberation, I instantly sprang from my sheltering rock and bounded
+quickly toward the bodies of the dead green Martians, a well-defined
+plan of action already formed.
+
+Half a dozen great leaps brought me to the spot, and another instant
+saw me again in my stride in quick pursuit of the hideous monsters that
+were rapidly gaining on the fleeing warrior, but this time I grasped a
+mighty long-sword in my hand and in my heart was the old blood lust of
+the fighting man, and a red mist swam before my eyes and I felt my lips
+respond to my heart in the old smile that has ever marked me in the
+midst of the joy of battle.
+
+Swift as I was I was none too soon, for the green warrior had been
+overtaken ere he had made half the distance to the forest, and now he
+stood with his back to a boulder, while the herd, temporarily balked,
+hissed and screeched about him.
+
+With their single eyes in the centre of their heads and every eye
+turned upon their prey, they did not note my soundless approach, so
+that I was upon them with my great long-sword and four of them lay dead
+ere they knew that I was among them.
+
+For an instant they recoiled before my terrific onslaught, and in that
+instant the green warrior rose to the occasion and, springing to my
+side, laid to the right and left of him as I had never seen but one
+other warrior do, with great circling strokes that formed a figure
+eight about him and that never stopped until none stood living to
+oppose him, his keen blade passing through flesh and bone and metal as
+though each had been alike thin air.
+
+As we bent to the slaughter, far above us rose that shrill, weird cry
+which I had heard once before, and which had called the herd to the
+attack upon their victims. Again and again it rose, but we were too
+much engaged with the fierce and powerful creatures about us to attempt
+to search out even with our eyes the author of the horrid notes.
+
+Great tails lashed in frenzied anger about us, razor-like talons cut
+our limbs and bodies, and a green and sticky syrup, such as oozes from
+a crushed caterpillar, smeared us from head to foot, for every cut and
+thrust of our longswords brought spurts of this stuff upon us from the
+severed arteries of the plant men, through which it courses in its
+sluggish viscidity in lieu of blood.
+
+Once I felt the great weight of one of the monsters upon my back and as
+keen talons sank into my flesh I experienced the frightful sensation of
+moist lips sucking the lifeblood from the wounds to which the claws
+still clung.
+
+I was very much engaged with a ferocious fellow who was endeavouring to
+reach my throat from in front, while two more, one on either side, were
+lashing viciously at me with their tails.
+
+The green warrior was much put to it to hold his own, and I felt that
+the unequal struggle could last but a moment longer when the huge
+fellow discovered my plight, and tearing himself from those that
+surrounded him, he raked the assailant from my back with a single sweep
+of his blade, and thus relieved I had little difficulty with the
 others.
 
-“She is a stubborn jade,” he mumbled. “It would be an excellent lesson
-for her. She needs to be taught that I am her king,” and then as though
-his conscience required a sop, “I shall be very good to her. Afterward
-she will be happy.” He turned toward Zellerndorf. “You think it can be
-done?”
-
-“Most assuredly, your majesty. We shall take immediate steps to fetch
-the Princess Emma to Blentz,” and the Austrian rose and backed from the
-apartment lest the king change his mind. Prince Peter and Maenck
-followed him.
-
-Princess Emma von der Tann sat in her boudoir in her father’s castle in
-the Old Forest. Except for servants, she was alone in the fortress, for
-Prince von der Tann was in Lustadt. Her mind was occupied with memories
-of the young American who had entered her life under such strange
-circumstances two years before—memories that had been awakened by the
-return of Lieutenant Otto Butzow to Lutha. He had come directly to her
-father and had been attached to the prince’s personal staff.
-
-From him she had heard a great deal about Barney Custer, and the old
-interest, never a moment forgotten during these two years, was
-reawakened to all its former intensity.
-
-Butzow had accompanied Prince Ludwig to Lustadt, but Princess Emma
-would not go with them. For two years she had not entered the capital,
-and much of that period had been spent in Paris. Only within the past
-fortnight had she returned to Lutha.
-
-In the middle of the morning her reveries were interrupted by the
-entrance of a servant bearing a message. She had to read it twice
-before she could realize its purport; though it was plainly worded—the
-shock of it had stunned her. It was dated at Lustadt and signed by one
-of the palace functionaries:
-
-Prince von der Tann has suffered a slight stroke. Do not be alarmed,
-but come at once. The two troopers who bear this message will act as
-your escort.
-
-It required but a few minutes for the girl to change to her riding
-clothes, and when she ran down into the court she found her horse
-awaiting her in the hands of her groom, while close by two mounted
-troopers raised their hands to their helmets in salute.
-
-A moment later the three clattered over the drawbridge and along the
-road that leads toward Lustadt. The escort rode a short distance behind
-the girl, and they were hard put to it to hold the mad pace which she
-set them.
-
-A few miles from Tann the road forks. One branch leads toward the
-capital and the other winds over the hills in the direction of Blentz.
-The fork occurs within the boundaries of the Old Forest. Great trees
-overhang the winding road, casting a twilight shade even at high noon.
-It is a lonely spot, far from any habitation.
-
-As the Princess Emma approached the fork she reined in her mount, for
-across the road to Lustadt a dozen horsemen barred her way. At first
-she thought nothing of it, turning her horse’s head to the righthand
-side of the road to pass the party, all of whom were in uniform; but as
-she did so one of the men reined directly in her path. The act was
-obviously intentional.
-
-The girl looked quickly up into the man’s face, and her own went white.
-He who stopped her way was Captain Ernst Maenck. She had not seen the
-man for two years, but she had good cause to remember him as the
-governor of the castle of Blentz and the man who had attempted to take
-advantage of her helplessness when she had been a prisoner in Prince
-Peter’s fortress. Now she looked straight into the fellow’s eyes.
-
-“Let me pass, please,” she said coldly.
-
-“I am sorry,” replied Maenck with an evil smile; “but the king’s orders
-are that you accompany me to Blentz—the king is there.”
-
-For answer the girl drove her spur into her mount’s side. The animal
-leaped forward, striking Maenck’s horse on the shoulder and half
-turning him aside, but the man clutched at the girl’s bridle-rein, and,
-seizing it, brought her to a stop.
-
-“You may as well come voluntarily, for come you must,” he said. “It
-will be easier for you.”
-
-“I shall not come voluntarily,” she replied. “If you take me to Blentz
-you will have to take me by force, and if my king is not sufficiently a
-gentleman to demand an accounting of you, I am at least more fortunate
-in the possession of a father who will.”
-
-“Your father will scarce wish to question the acts of his king,” said
-Maenck—“his king and the husband of his daughter.”
-
-“What do you mean?” she cried.
-
-“That before you are many hours older, your highness, you will be queen
-of Lutha.”
-
-The Princess Emma turned toward her tardy escort that had just arrived
-upon the scene.
-
-“This person has stopped me,” she said, “and will not permit me to
-continue toward Lustadt. Make a way for me; you are armed!”
-
-Maenck smiled. “Both of them are my men,” he explained.
-
-The girl saw it all now—the whole scheme to lure her to Blentz. Even
-then, though, she could not believe the king had been one of the
-conspirators of the plot.
-
-Weak as he was he was still a Rubinroth, and it was difficult for a Von
-der Tann to believe in the duplicity of a member of the house they had
-served so loyally for centuries. With bowed head the princess turned
-her horse into the road that led toward Blentz. Half the troopers
-preceded her, the balance following behind.
-
-Maenck wondered at the promptness of her surrender.
-
-“To be a queen—ah! that was the great temptation,” he thought but he
-did not know what was passing in the girl’s mind. She had seen that
-escape for the moment was impossible, and so had decided to bide her
-time until a more propitious chance should come. In silence she rode
-among her captors. The thought of being brought to Blentz alive was
-unbearable.
-
-Somewhere along the road there would be an opportunity to escape. Her
-horse was fleet; with a short start he could easily outdistance these
-heavier cavalry animals and as a last resort she could—she must—find
-some way to end her life, rather than to be dragged to the altar beside
-Leopold of Lutha.
-
-Since childhood Emma von der Tann had ridden these hilly roads. She
-knew every lane and bypath for miles around. She knew the short cuts,
-the gullies and ravines. She knew where one might, with a good jumper,
-save a wide detour, and as she rode toward Blentz she passed in review
-through her mind each of the many spots where a sudden break for
-liberty might have the best chance to succeed.
-
-And at last she hit upon the place where a quick turn would take her
-from the main road into the roughest sort of going for one not familiar
-with the trail. Maenck and his soldiers had already partially relaxed
-their vigilance. The officer had come to the conclusion that his
-prisoner was resigned to her fate and that, after all, the fate of
-being forced to be queen did not appear so dark to her.
-
-They had wound up a wooded hill and were half way up to the summit. The
-princess was riding close to the right-hand side of the road. Quite
-suddenly, and before a hand could be raised to stay her, she wheeled
-her mount between two trees, struck home her spur, and was gone into
-the wood upon the steep hillside.
-
-With an oath, Maenck cried to his men to be after her. He himself
-spurred into the forest at the point where the girl had disappeared. So
-sudden had been her break for liberty and so quickly had the foliage
-swallowed her that there was something almost uncanny in it.
-
-A hundred yards from the road the trees were further apart, and through
-them the pursuers caught a glimpse of their quarry. The girl was riding
-like mad along the rough, uneven hillside. Her mount, surefooted as a
-chamois, seemed in his element. But two of the horses of her pursuers
-were as swift, and under the cruel spurs of their riders were closing
-up on their fugitive. The girl urged her horse to greater speed, yet
-still the two behind closed in.
-
-A hundred yards ahead lay a deep and narrow gully, hid by bushes that
-grew rankly along its verge. Straight toward this the Princess Emma von
-der Tann rode. Behind her came her pursuers—two quite close and the
-others trailing farther in the rear. The girl reined in a trifle,
-letting the troopers that were closest to her gain until they were but
-a few strides behind, then she put spur to her horse and drove him at
-topmost speed straight toward the gully. At the bushes she spoke a low
-word in his backlaid ears, raised him quickly with the bit, leaning
-forward as he rose in air. Like a bird that animal took the bushes and
-the gully beyond, while close behind him crashed the two luckless
-troopers.
-
-Emma von der Tann cast a single backward glance over her shoulder, as
-her horse regained his stride upon the opposite side of the gully, to
-see her two foremost pursuers plunging headlong into it. Then she shook
-free her reins and gave her mount his head along a narrow trail that
-both had followed many times before.
-
-Behind her, Maenck and the balance of his men came to a sudden stop at
-the edge of the gully. Below them one of the troopers was struggling to
-his feet. The other lay very still beneath his motionless horse. With
-an angry oath Maenck directed one of his men to remain and help the two
-who had plunged over the brink, then with the others he rode along the
-gully searching for a crossing.
-
-Before they found one their captive was a mile ahead of them, and,
-barring accident, quite beyond recapture. She was making for a highway
-that would lead her to Lustadt. Ordinarily she had been wont to bear a
-little to the north-east at this point and strike back into the road
-that she had just left; but today she feared to do so lest she be cut
-off before she gained the north and south highroad which the other road
-crossed a little farther on.
-
-To her right was a small farm across which she had never ridden, for
-she always had made it a point never to trespass upon fenced grounds.
-On the opposite side of the farm was a wood, and somewhere beyond that
-a small stream which the highroad crossed upon a little bridge. It was
-all new country to her, but it must be ventured.
-
-She took the fence at the edge of the clearing and then reined in a
-moment to look behind her. A mile away she saw the head and shoulders
-of a horseman above some low bushes—the pursuers had found a way
-through the gully.
-
-Turning once more to her flight the girl rode rapidly across the fields
-toward the wood. Here she found a high wire fence so close to thickly
-growing trees upon the opposite side that she dared not attempt to jump
-it—there was no point at which she would not have been raked from the
-saddle by overhanging boughs. Slipping to the ground she attacked the
-barrier with her bare hands, attempting to tear away the staples that
-held the wire in place. For several minutes she surged and tugged upon
-the unyielding metal strand. An occasional backward glance revealed to
-her horrified eyes the rapid approach of her enemies. One of them was
-far in advance of the others—in another moment he would be upon her.
-
-With redoubled fury she turned again to the fence. A superhuman effort
-brought away a staple. One wire was down and an instant later two more.
-Standing with one foot upon the wires to keep them from tangling about
-her horse’s legs, she pulled her mount across into the wood. The
-foremost horseman was close upon her as she finally succeeded in urging
-the animal across the fallen wires.
-
-The girl sprang to her horse’s side just as the man reached the fence.
-The wires, released from her weight, sprang up breast high against his
-horse. He leaped from the saddle the instant that the girl was swinging
-into her own. Then the fellow jumped the fence and caught her bridle.
-
-She struck at him with her whip, lashing him across the head and face,
-but he clung tightly, dragged hither and thither by the frightened
-horse, until at last he managed to reach the girl’s arm and drag her to
-the ground.
-
-Almost at the same instant a man, unkempt and disheveled, sprang from
-behind a tree and with a single blow stretched the trooper unconscious
-upon the ground.
-
-### VII. BARNEY TO THE RESCUE
-
-As Barney Custer raced along the Austrian highroad toward the frontier
-and Lutha, his spirits rose to a pitch of buoyancy to which they had
-been strangers for the past several days. For the first time in many
-hours it seemed possible to Barney to entertain reasonable hopes of
-escape from the extremely dangerous predicament into which he had
-gotten himself.
-
-He was even humming a gay little tune as he drove into a tiny hamlet
-through which the road wound. No sign of military appeared to fill him
-with apprehension. He was very hungry and the odor of cooking fell
-gratefully upon his nostrils. He drew up before the single inn, and
-presently, washed and brushed, was sitting before the first meal he had
-seen for two days. In the enjoyment of the food he almost forgot the
-dangers he had passed through, or that other dangers might be lying in
-wait for him at his elbow.
-
-From the landlord he learned that the frontier lay but three miles to
-the south of the hamlet. Three miles! Three miles to Lutha! What if
-there was a price upon his head in that kingdom? It was HER home. It
-had been his mother’s birthplace. He loved it.
-
-Further, he must enter there and reach the ear of old Prince von der
-Tann. Once more he must save the king who had shown such scant
-gratitude upon another occasion.
-
-For Leopold, Barney Custer did not give the snap of his fingers; but
-what Leopold, the king, stood for in the lives and sentiments of the
-Luthanians—of the Von der Tanns—was very dear to the American because
-it was dear to a trim, young girl and to a rugged, leonine, old man, of
-both of whom Barney was inordinately fond. And possibly, too, it was
-dear to him because of the royal blood his mother had bequeathed him.
-
-His meal disposed of to the last morsel, and paid for, Barney entered
-the stolen car and resumed his journey toward Lutha. That he could
-remain there he knew to be impossible, but in delivering his news to
-Prince Ludwig he might have an opportunity to see the Princess Emma
-once again—it would be worth risking his life for, of that he was
-perfectly satisfied. And then he could go across into Serbia with the
-new credentials that he had no doubt Prince von der Tann would furnish
-him for the asking to replace those the Austrians had confiscated.
-
-At the frontier Barney was halted by an Austrian customs officer; but
-when the latter recognized the military car and the Austrian uniform of
-the driver he waved him through without comment. Upon the other side
-the American expected possible difficulty with the Luthanian customs
-officer, but to his surprise he found the little building deserted, and
-none to bar his way. At last he was in Lutha—by noon on the following
-day he should be at Tann.
-
-To reach the Old Forest by the best roads it was necessary to bear a
-little to the southeast, passing through Tafelberg and striking the
-north and south highway between that point and Lustadt, to which he
-could hold until reaching the east and west road that runs through both
-Tann and Blentz on its way across the kingdom.
-
-The temptation to stop for a few minutes in Tafelberg for a visit with
-his old friend Herr Kramer was strong, but fear that he might be
-recognized by others, who would not guard his secret so well as the
-shopkeeper of Tafelberg would, decided him to keep on his way. So he
-flew through the familiar main street of the quaint old village at a
-speed that was little, if any less, than fifty miles an hour.
-
-On he raced toward the south, his speed often necessarily diminished
-upon the winding mountain roads, but for the most part clinging to a
-reckless mileage that caused the few natives he encountered to flee to
-the safety of the bordering fields, there to stand in open-mouthed awe.
-
-Halfway between Tafelberg and the crossroad into which he purposed
-turning to the west toward Tann there is an S-curve where the bases of
-two small hills meet. The road here is narrow and treacherous—fifteen
-miles an hour is almost a reckless speed at which to travel around the
-curves of the S. Beyond are open fields upon either side of the road.
-
-Barney took the turns carefully and had just emerged into the last leg
-of the S when he saw, to his consternation, a half-dozen Austrian
-infantrymen lolling beside the road. An officer stood near them talking
-with a sergeant. To turn back in that narrow road was impossible. He
-could only go ahead and trust to his uniform and the military car to
-carry him safely through. Before he reached the group of soldiers the
-fields upon either hand came into view. They were dotted with tents,
-wagons, motor-vans and artillery. What did it mean? What was this
-Austrian army doing in Lutha?
-
-Already the officer had seen him. This was doubtless an outpost,
-however clumsily placed it might be for strategic purposes. To pass it
-was Barney’s only hope. He had passed through one Austrian army—why not
-another? He approached the outpost at a moderate rate of speed—to tear
-toward it at the rate his heart desired would be to awaken not
-suspicion only but positive conviction that his purposes and motives
-were ulterior.
-
-The officer stepped toward the road as though to halt him. Barney
-pretended to be fussing with some refractory piece of controlling
-mechanism beneath the cowl—apparently he did not see the officer. He
-was just opposite him when the latter shouted to him. Barney
-straightened up quickly and saluted, but did not stop.
-
-“Halt!” cried the officer.
-
-Barney pointed down the road in the direction in which he was headed.
-
-“Halt!” repeated the officer, running to the car.
-
-Barney glanced ahead. Two hundred yards farther on was another
-post—beyond that he saw no soldiers. He turned and shouted a volley of
-intentionally unintelligible jargon at the officer, continuing to point
-ahead of him.
-
-He hoped to confuse the man for the few seconds necessary for him to
-reach the last post. If the soldiers there saw that he had been
-permitted to pass through the first they doubtless would not hinder his
-further passage. That they were watching him Barney could see.
-
-He had passed the officer now. There was no necessity for dalliance. He
-pressed the accelerator down a trifle. The car moved forward at
-increased speed. A final angry shout broke from the officer behind him,
-followed by a quick command. Barney did not have to wait long to learn
-the tenor of the order, for almost immediately a shot sounded from
-behind and a bullet whirred above his head. Another shot and another
-followed.
-
-Barney was pressing the accelerator downward to the limit. The car
-responded nobly—there was no sputtering, no choking. Just a rapid rush
-of increasing momentum as the machine gained headway by leaps and
-bounds.
-
-The bullets were ripping the air all about him. Just ahead the second
-outpost stood directly in the center of the road. There were three
-soldiers and they were taking deliberate aim, as carefully as though
-upon the rifle range. It seemed to Barney that they couldn’t miss him.
-He swerved the car suddenly from one side of the road to the other. At
-the rate that it was going the move was fraught with but little less
-danger than the supine facing of the leveled guns ahead.
-
-The three rifles spoke almost simultaneously. The glass of the
-windshield shattered in Barney’s face. There was a hole in the
-left-hand front fender that had not been there before.
-
-“Rotten shooting,” commented Barney Custer, of Beatrice.
-
-The soldiers still stood in the center of the road firing at the
-swaying car as, lurching from side to side, it bore down upon them.
-Barney sounded the raucous military horn; but the soldiers seemed
-unconscious of their danger—they still stood there pumping lead toward
-the onrushing Juggernaut. At the last instant they attempted to rush
-from its path; but they were too late.
-
-At over sixty miles an hour the huge, gray monster bore down upon them.
-One of them fell beneath the wheels—the two others were thrown high in
-air as the bumper struck them. The body of the man who had fallen
-beneath the wheels threw the car half way across the road—only iron
-nerve and strong arms held it from the ditch upon the opposite side.
-
-Barney Custer had never been nearer death than at that moment—not even
-when he faced the firing squad before the factory wall in Burgova. He
-had done that without a tremor—he had heard the bullets of the outpost
-whistling about his head a moment before, with a smile upon his lips—he
-had faced the leveled rifles of the three he had ridden down and he had
-not quailed. But now, his machine in the center of the road again, he
-shook like a leaf, still in the grip of the sickening nausea of that
-awful moment when the mighty, insensate monster beneath him had reeled
-drunkenly in its mad flight, swerving toward the ditch and destruction.
-
-For a few minutes he held to his rapid pace before he looked around,
-and then it was to see two cars climbing into the road from the
-encampment in the field and heading toward him in pursuit. Barney
-grinned. Once more he was master of his nerves. They’d have a merry
-chase, he thought, and again he accelerated the speed of the car. Once
-before he had had it up to seventy-five miles, and for a moment, when
-he had had no opportunity to even glance at the speedometer, much
-higher. Now he was to find the maximum limit of the possibilities of
-the brave car he had come to look upon with real affection.
-
-The road ahead was comparatively straight and level. Behind him came
-the enemy. Barney watched the road rushing rapidly out of sight beneath
-the gray fenders. He glanced occasionally at the speedometer.
-Seventy-five miles an hour. Seventy-seven! “Going some,” murmured
-Barney as he saw the needle vibrate up to eighty. Gradually he nursed
-her up and up to greater speed.
-
-Eighty-five! The trees were racing by him in an indistinct blur of
-green. The fences were thin, wavering lines—the road a white-gray
-ribbon, ironed by the terrific speed to smooth unwrinkledness. He could
-not take his eyes from the business of steering to glance behind; but
-presently there broke faintly through the whir of the wind beating
-against his ears the faint report of a gun. He was being fired upon
-again. He pressed down still further upon the accelerator. The car
-answered to the pressure. The needle rose steadily until it reached
-ninety miles an hour—and topped it.
-
-Then from somewhere in the radiator hose a hissing and a spurt of
-steam. Barney was dumbfounded. He had filled the cooling system at the
-inn where he had eaten. It had been working perfectly before and since.
-What could have happened? There could be but a single explanation. A
-bullet from the gun of one of the three men who had attempted to stop
-him at the second outpost had penetrated the radiator, and had slowly
-drained it.
-
-Barney knew that the end was near, since the usefulness of the car in
-furthering his escape was over. At the speed he was going it would be
-but a short time before the superheated pistons expanding in their
-cylinders would tear the motor to pieces. Barney felt that he would be
-lucky if he himself were not killed when it happened.
-
-He reduced his speed and glanced behind. His pursuers had not gained
-upon him, but they still were coming. A bend in the road shut them from
-his view. A little way ahead the road crossed over a river upon a
-wooden bridge. On the opposite side and to the right of the road was a
-wood. It seemed to offer the most likely possibilities of concealment
-in the vicinity. If he could but throw his pursuers off the trail for a
-while he might succeed in escaping through the wood, eventually
-reaching Tann on foot. He had a rather hazy idea of the exact direction
-of the town and castle, but that he could find them eventually he was
-sure.
-
-The sight of the river and the bridge he was nearing suggested a plan,
-and the ominous grating of the overheated motor warned him that
-whatever he was to do he must do at once. As he neared the bridge he
-reduced the speed of the car to fifteen miles an hour, and set the hand
-throttle to hold it there. Still gripping the steering wheel with one
-hand, he climbed over the left-hand door to the running board. As the
-front wheels of the car ran up onto the bridge Barney gave the steering
-wheel a sudden turn to the right, and jumped.
-
-The car veered toward the wooden handrail, there was a splintering of
-stanchions, as, with a crash, the big machine plunged through them
-headforemost into the river. Without waiting to give even a glance at
-his handiwork Barney Custer ran across the bridge, leaped the fence
-upon the right-hand side and plunged into the shelter of the wood.
-
-Then he turned to look back up the road in the direction from which his
-pursuers were coming. They were not in sight—they had not seen his
-ruse. The water in the river was of sufficient depth to completely
-cover the car—no sign of it appeared above the surface.
-
-Barney turned into the wood smiling. His scheme had worked well. The
-occupants of the two cars following him might not note the broken
-handrail, or, if they did, might not connect it with Barney in any way.
-In this event they would continue in the direction of Lustadt,
-wondering what in the world had become of their quarry. Or, if they
-guessed that his car had gone over into the river, they would doubtless
-believe that its driver had gone with it. In either event Barney would
-be given ample time to find his way to Tann.
-
-He wished that he might find other clothes, since if he were dressed
-otherwise there would be no reason to imagine that his pursuers would
-recognize him should they come upon him. None of them could possibly
-have gained a sufficiently good look at his features to recognize them
-again.
-
-The Austrian uniform, however, would convict him, or at least lay him
-under suspicion, and in Barney’s present case, suspicion was as good as
-conviction were he to fall into the hands of the Austrians. The garb
-had served its purpose well in aiding in his escape from Austria, but
-now it was more of a menace than an asset.
-
-For a week Barney Custer wandered through the woods and mountains of
-Lutha. He did not dare approach or question any human being. Several
-times he had seen Austrian cavalry that seemed to be scouring the
-country for some purpose that the American could easily believe was
-closely connected with himself. At least he did not feel disposed to
-stop them, as they cantered past his hiding place, to inquire the
-nature of their business.
-
-Such farmhouses as he came upon he gave a wide berth except at night,
-and then he only approached them stealthily for such provender as he
-might filch. Before the week was up he had become an expert chicken
-thief, being able to rob a roost as quietly as the most finished
-carpetbagger on the sunny side of Mason and Dixon’s line.
-
-A careless housewife, leaving her lord and master’s rough shirt and
-trousers hanging upon the line overnight, had made possible for Barney
-the coveted change in raiment. Now he was barged as a Luthanian
-peasant. He was hatless, since the lady had failed to hang out her
-mate’s woolen cap, and Barney had not dared retain a single vestige of
-the damning Austrian uniform.
-
-What the peasant woman thought when she discovered the empty line the
-following morning Barney could only guess, but he was morally certain
-that her grief was more than tempered by the gold piece he had wrapped
-in a bit of cloth torn from the soldier’s coat he had worn, which he
-pinned on the line where the shirt and pants had been.
-
-It was somewhere near noon upon the seventh day that Barney skirting a
-little stream, followed through the concealing shade of a forest toward
-the west. In his peasant dress he now felt safer to approach a
-farmhouse and inquire his way to Tann, for he had come a sufficient
-distance from the spot where he had stolen his new clothes to hope that
-they would not be recognized or that the news of their theft had not
-preceded him.
-
-As he walked he heard the sound of the feet of a horse galloping over a
-dry field—muffled, rapid thud approaching closer upon his right hand.
-Barney remained motionless. He was sure that the rider would not enter
-the wood which, with its low-hanging boughs and thick underbrush, was
-ill adapted to equestrianism.
-
-Closer and closer came the sound until it ceased suddenly scarce a
-hundred yards from where the American hid. He waited in silence to
-discover what would happen next. Would the rider enter the wood on
-foot? What was his purpose? Was it another Austrian who had by some
-miracle discovered the whereabouts of the fugitive? Barney could scarce
-believe it possible.
-
-Presently he heard another horse approaching at the same mad gallop. He
-heard the sound of rapid, almost frantic efforts of some nature where
-the first horse had come to a stop. He heard a voice urging the animal
-forward—pleading, threatening. A woman’s voice. Barney’s excitement
-became intense in sympathy with the subdued excitement of the woman
-whom he could not as yet see.
-
-A moment later the second rider came to a stop at the same point at
-which the first had reined in. A man’s voice rose roughly. “Halt!” it
-cried. “In the name of the king, halt!” The American could no longer
-resist the temptation to see what was going on so close to him “in the
-name of the king.”
-
-He advanced from behind his tree until he saw the two figures—a man’s
-and a woman’s. Some bushes intervened—he could not get a clear view of
-them, yet there was something about the figure of the woman, whose back
-was toward him as she struggled to mount her frightened horse, that
-caused him to leap rapidly toward her. He rounded a tree a few paces
-from her just as the man—a trooper in the uniform of the house of
-Blentz—caught her arm and dragged her from the saddle. At the same
-instant Barney recognized the girl—it was Princess Emma.
-
-Before either the trooper or the princess were aware of his presence he
-had leaped to the man’s side and dealt him a blow that stretched him at
-full length upon the ground—stunned.
-
-### VIII. AN ADVENTUROUS DAY
-
-For an instant the two stood looking at one another. The girl’s eyes
-were wide with incredulity, with hope, with fear. She was the first to
-break the silence.
-
-“Who are you?” she breathed in a half whisper.
-
-“I don’t wonder that you ask,” returned the man. “I must look like a
-scarecrow. I’m Barney Custer. Don’t you remember me now? Who did you
-think I was?”
-
-The girl took a step toward him. Her eyes lighted with relief.
-
-“Captain Maenck told me that you were dead,” she said, “that you had
-been shot as a spy in Austria, and then there is that uncanny
-resemblance to the king—since he has shaved his beard it is infinitely
-more remarkable. I thought you might be he. He has been at Blentz and I
-knew that it was quite possible that he had discovered treachery upon
-the part of Prince Peter. In which case he might have escaped in
-disguise. I really wasn’t sure that you were not he until you spoke.”
-
-Barney stooped and removed the bandoleer of cartridges from the fallen
-trooper, as well as his revolver and carbine. Then he took the girl’s
-hand and together they turned into the wood. Behind them came the sound
-of pursuit. They heard the loud words of Maenck as he ordered his three
-remaining men into the wood on foot. As he advanced, Barney looked to
-the magazine of his carbine and the cylinder of his revolver.
-
-“Why were they pursuing you?” he asked.
-
-“They were taking me to Blentz to force me to wed Leopold,” she
-replied. “They told me that my father’s life depended upon my
-consenting; but I should not have done so. The honor of my house is
-more precious than the life of any of its members. I escaped them a few
-miles back, and they were following to overtake me.”
-
-A noise behind them caused Barney to turn. One of the troopers had come
-into view. He carried his carbine in his hands and at sight of the man
-with the fugitive girl he raised it to his shoulder; but as the
-American turned toward him his eyes went wide and his jaw dropped.
-
-Instantly Barney knew that the fellow had noted his resemblance to the
-king. Barney’s body was concealed from the view of the other by a bush
-which grew between them, so the man saw only the face of the American.
-The fellow turned and shouted to Maenck: “The king is with her.”
-
-“Nonsense,” came the reply from farther back in the wood. “If there is
-a man with her and he will not surrender, shoot him.” At the words
-Barney and the girl turned once more to their flight. From behind came
-the command to halt—“Halt! or I fire.” Just ahead Barney saw the river.
-
-They were sure to be taken there if he was unable to gain the time
-necessary to make good a crossing. Upon the opposite side was a
-continuation of the wood. Behind them the leading trooper was crashing
-through the underbrush in renewed pursuit. He came in sight of them
-again, just as they reached the river bank. Once more his carbine was
-leveled. Barney pushed the girl to her knees behind a bush. Then he
-wheeled and fired, so quickly that the man with the already leveled gun
-had no time to anticipate his act.
-
-With a cry the fellow threw his hands above his head, staggered forward
-and plunged full length upon his face. Barney gathered the princess in
-his arms and plunged into the shallow stream. The girl held his carbine
-as he stumbled over the rocky bottom. The water deepened rapidly—the
-opposite shore seemed a long way off and behind there were three more
-enemies in hot pursuit.
-
-Under ordinary circumstances Barney could have found it in his heart to
-wish the little Luthanian river as broad as the Mississippi, for only
-under such circumstances as these could he ever hope to hold the
-Princess Emma in his arms. Two years before she had told him that she
-loved him; but at the same time she had given him to understand that
-their love was hopeless. She might refuse to wed the king; but that she
-should ever wed another while the king lived was impossible, unless
-Leopold saw fit to release her from her betrothal to him and sanction
-her marriage to another. That he ever would do this was to those who
-knew him not even remotely possible.
-
-He loved Emma von der Tann and he hated Barney Custer—hated him with a
-jealous hatred that was almost fanatic in its intensity. And even that
-the Princess Emma von der Tann would wed him were she free to wed was a
-question that was not at all clear in the mind of Barney Custer. He
-knew something of the traditions of this noble family—of the pride of
-caste, of the fetish of blood that inexorably dictated the ordering of
-their lives.
-
-The girl had just said that the honor of her house was more precious
-than the life of any of its members. How much more precious would it be
-to her than her own material happiness! Barney Custer sighed and
-struggled through the swirling waters that were now above his hips. If
-he pressed the lithe form closer to him than necessity demanded, who
-may blame him?
-
-The girl, whose face was toward the bank they had just quitted, gave no
-evidence of displeasure if she noted the fierce pressure of his
-muscles. Her eyes were riveted upon the wood behind. Presently a man
-emerged. He called to them in a loud and threatening tone.
-
-Barney redoubled his Herculean efforts to gain the opposite bank. He
-was in midstream now and the water had risen to his waist. The girl saw
-Maenck and the other trooper emerge from the underbrush beside the
-first. Maenck was crazed with anger. He shook his fist and screamed
-aloud his threatening commands to halt, and then, of a sudden, gave an
-order to one of the men at his side. Immediately the fellow raised his
-carbine and fired at the escaping couple.
-
-The bullet struck the water behind them. At the sound of the report the
-girl raised the gun she held and leveled it at the group behind her.
-She pulled the trigger. There was a sharp report, and one of the
-troopers fell. Then she fired again, quickly, and again and again. She
-did not score another hit, but she had the satisfaction of seeing
-Maenck and the last of his troopers dodge back to the safety of
-protecting trees.
-
-“The cowards!” muttered Barney as the enemy’s shot announced his
-sinister intention; “they might have hit your highness.”
-
-The girl did not reply until she had ceased firing.
-
-“Captain Maenck is notoriously a coward,” she said. “He is hiding
-behind a tree now with one of his men—I hit the other.”
-
-“You hit one of them!” exclaimed Barney enthusiastically.
-
-“Yes,” said the girl. “I have shot a man. I often wondered what the
-sensation must be to have done such a thing. I should feel terribly,
-but I don’t. They were firing at you, trying to shoot you in the back
-while you were defenseless. I am not sorry—I cannot be; but I only wish
-that it had been Captain Maenck.”
-
-In a short time Barney reached the bank and, helping the girl up,
-climbed to her side. A couple of shots followed them as they left the
-river, but did not fall dangerously near. Barney took the carbine and
-replied, then both of them disappeared into the wood.
-
-For the balance of the day they tramped on in the direction of Lustadt,
-making but little progress owing to the fear of apprehension. They did
-not dare utilize the high road, for they were still too close to
-Blentz. Their only hope lay in reaching the protection of Prince von
-der Tann before they should be recaptured by the king’s emissaries. At
-dusk they came to the outskirts of a town. Here they hid until darkness
-settled, for Barney had determined to enter the place after dark and
-hire horses.
-
-The American marveled at the bravery and endurance of the girl. He had
-always supposed that a princess was so carefully guarded from fatigue
-and privation all her life that the least exertion would prove her
-undoing; but no hardy peasant girl could have endured more bravely the
-hardships and dangers through which the Princess Emma had passed since
-the sun rose that morning.
-
-At last darkness came, and with it they approached and entered the
-village. They kept to unlighted side streets until they met a villager,
-of whom they inquired their way to some private house where they might
-obtain refreshments. The fellow scrutinized them with evident
-suspicion.
-
-“There is an inn yonder,” he said, pointing toward the main street.
-“You can obtain food there. Why should respectable folk want to go
-elsewhere than to the public inn? And if you are afraid to go there you
-must have very good reasons for not wanting to be seen, and—” he
-stopped short as though assailed by an idea. “Wait,” he cried,
-excitedly, “I will go and see if I can find a place for you. Wait right
-here,” and off he ran toward the inn.
-
-“I don’t like the looks of that,” said Barney, after the man had left
-them. “He’s gone to report us to someone. Come, we’d better get out of
-here before he comes back.”
-
-The two turned up a side street away from the inn. They had gone but a
-short distance when they heard the sound of voices and the thud of
-horses’ feet behind them. The horses were coming at a walk and with
-them were several men on foot. Barney took the princess’ hand and drew
-her up a hedge bordered driveway that led into private grounds. In the
-shadows of the hedge they waited for the party behind them to pass. It
-might be no one searching for them, but it was just as well to be on
-the safe side—they were still near Blentz. Before the men reached their
-hiding place a motor car followed and caught up with them, and as the
-party came opposite the driveway Barney and the princess overheard a
-portion of their conversation.
-
-“Some of you go back and search the street behind the inn—they may not
-have come this way.” The speaker was in the motor car. “We will follow
-along this road for a bit and then turn into the Lustadt highway. If
-you don’t find them go back along the road toward Tann.”
-
-In her excitement the Princess Emma had not noticed that Barney Custer
-still held her hand in his. Now he pressed it. “It is Maenck’s voice,”
-he whispered. “Every road will be guarded.”
-
-For a moment he was silent, thinking. The searching party had passed
-on. They could still hear the purring of the motor as Maenck’s car
-moved slowly up the street.
-
-“This is a driveway,” murmured Barney. “People who build driveways into
-their grounds usually have something to drive. Whatever it is it should
-be at the other end of the driveway. Let’s see if it will carry two.”
-
-Still in the shadow of the hedge they moved cautiously toward the upper
-end of the private road until presently they saw a building looming in
-their path.
-
-“A garage?” whispered Barney.
-
-“Or a barn,” suggested the princess.
-
-“In either event it should contain something that can go,” returned the
-American. “Let us hope that it can go like—like—ah—the wind.”
-
-“And carry two,” supplemented the princess.
-
-“Wait here,” said Barney. “If I get caught, run. Whatever happens you
-mustn’t be caught.”
-
-Princess Emma dropped back close to the hedge and Barney approached the
-building, which proved to be a private garage. The doors were locked,
-as also were the three windows. Barney passed entirely around the
-structure halting at last upon the darkest side. Here was a window.
-Barney tried to loosen the catch with the blade of his pocket knife,
-but it wouldn’t unfasten. His endeavors resulted only in snapping short
-the blade of his knife. For a moment he stood contemplating the
-baffling window. He dared not break the glass for fear of arousing the
-inmates of the house which, though he could not see it, might be close
-at hand.
-
-Presently he recalled a scene he had witnessed on State Street in
-Chicago several years before—a crowd standing before the window of a
-jeweler’s shop inspecting a neat little hole that a thief had cut in
-the glass with a diamond and through which he had inserted his hand and
-brought forth several hundred dollars worth of loot. But Barney Custer
-wore no diamond—he would as soon have worn a celluloid collar. But
-women wore diamonds. Doubtless the Princess Emma had one. He ran
-quickly to her side.
-
-“Have you a diamond ring?” he whispered.
-
-“Gracious!” she exclaimed, “you are progressing rapidly,” and slipped a
-solitaire from her finger to his hand.
-
-“Thanks,” said Barney. “I need the practice; but wait and you’ll see
-that a diamond may be infinitely more valuable than even the broker
-claims,” and he was gone again into the shadows of the garage. Here
-upon the window pane he scratched a rough deep circle, close to the
-catch. A quick blow sent the glass clattering to the floor within. For
-a minute Barney stood listening for any sign that the noise had
-attracted attention, but hearing nothing he ran his hand through the
-hole that he had made and unlatched the frame. A moment later he had
-crawled within.
-
-Before him, in the darkness, stood a roadster. He ran his hand over the
-pedals and levers, breathing a sigh of relief as his touch revealed the
-familiar control of a standard make. Then he went to the double doors.
-They opened easily and silently.
-
-Once outside he hastened to the side of the waiting girl.
-
-“It’s a machine,” he whispered. “We must both be in it when it leaves
-the garage—it’s the through express for Lustadt and makes no stops for
-passengers or freight.”
-
-He led her back to the garage and helped her into the seat beside him.
-As silently as possible he ran the machine into the driveway. A hundred
-yards to the left, half hidden by intervening trees and shrubbery, rose
-the dark bulk of a house. A subdued light shone through the drawn
-blinds of several windows—the only sign of life about the premises
-until the car had cleared the garage and was moving slowly down the
-driveway. Then a door opened in the house letting out a flood of light
-in which the figure of a man was silhouetted. A voice broke the
-silence.
-
-“Who are you? What are you doing there? Come back!”
-
-The man in the doorway called excitedly, “Friedrich! Come! Come
-quickly! Someone is stealing the automobile,” and the speaker came
-running toward the driveway at top speed. Behind him came Friedrich.
-Both were shouting, waving their arms and threatening. Their combined
-din might have aroused the dead.
-
-Barney sought speed—silence now was useless. He turned to the left into
-the street away from the center of the town. In this direction had gone
-the automobile with Maenck, but by taking the first righthand turn
-Barney hoped to elude the captain. In a moment Friedrich and the other
-were hopelessly distanced. It was with a sigh of relief that the
-American turned the car into the dark shadows beneath the overarching
-trees of the first cross street.
-
-He was running without lights along an unknown way; and beside him was
-the most precious burden that Barney Custer might ever expect to carry.
-Under these circumstances his speed was greatly reduced from what he
-would have wished, but at that he was forced to accept grave risks. The
-road might end abruptly at the brink of a ravine—it might swerve
-perilously close to a stone quarry—or plunge headlong into a pond or
-river. Barney shuddered at the possibilities; but nothing of the sort
-happened. The street ran straight out of the town into a country road,
-rather heavy with sand. In the open the possibilities of speed were
-increased, for the night, though moonless, was clear, and the road
-visible for some distance ahead.
-
-The fugitives were congratulating themselves upon the excellent chance
-they now had to reach Lustadt. There was only Maenck and his companion
-ahead of them in the other car, and as there were several roads by
-which one might reach the main highway the chances were fair that
-Prince Peter’s aide would miss them completely.
-
-Already escape seemed assured when the pounding of horses’ hoofs upon
-the roadway behind them arose to blast their new found hope. Barney
-increased the speed of the car. It leaped ahead in response to his
-foot; but the road was heavy, and the sides of the ruts gripping the
-tires retarded the speed. For a mile they held the lead of the
-galloping horsemen. The shouts of their pursuers fell clearly upon
-their ears, and the Princess Emma, turning in her seat, could easily
-see the four who followed. At last the car began to draw away—the
-distance between it and the riders grew gradually greater.
-
-“I believe we are going to make it,” whispered the girl, her voice
-tense with excitement. “If you could only go a little faster, Mr.
-Custer, I’m sure that we will.”
-
-“She’s reached her limit in this sand,” replied the man, “and there’s a
-grade just ahead—we may find better going beyond, but they’re bound to
-gain on us before we reach the top.”
-
-The girl strained her eyes into the night before them. On the right of
-the road stood an ancient ruin—grim and forbidding. As her eyes rested
-upon it she gave a little exclamation of relief.
-
-“I know where we are now,” she cried. “The hill ahead is sandy, and
-there is a quarter of a mile of sand beyond, but then we strike the
-Lustadt highway, and if we can reach it ahead of them their horses will
-have to go ninety miles an hour to catch us—provided this car possesses
-any such speed possibilities.”
-
-“If it can go forty we are safe enough,” replied Barney; “but we’ll
-give it a chance to go as fast as it can—the farther we are from the
-vicinity of Blentz the safer I shall feel for the welfare of your
-highness.”
-
-A shot rang behind them, and a bullet whistled high above their heads.
-The princess seized the carbine that rested on the seat between them.
-
-“Shall I?” she asked, turning its muzzle back over the lowered top.
-
-“Better not,” answered the man. “They are only trying to frighten us
-into surrendering—that shot was much too high to have been aimed at
-us—they are shooting over our heads purposely. If they deliberately
-attempt to pot us later, then go for them, but to do it now would only
-draw their fire upon us. I doubt if they wish to harm your highness,
-but they certainly would fire to hit in self-defense.”
-
-The girl lowered the firearm. “I am becoming perfectly bloodthirsty,”
-she said, “but it makes me furious to be hunted like a wild animal in
-my native land, and by the command of my king, at that. And to think
-that you who placed him upon his throne, you who have risked your life
-many times for him, will find no protection at his hands should you be
-captured is maddening. Ach, Gott, if I were a man!”
-
-“I thank God that you are not, your highness,” returned Barney
-fervently.
-
-Gently she laid her hand upon his where it gripped the steering wheel.
-
-“No,” she said, “I was wrong—I do not need to be a man while there
-still be such men as you, my friend; but I would that I were not the
-unhappy woman whom Fate had bound to an ingrate king—to a miserable
-coward!”
-
-They had reached the grade at last, and the motor was straining to the
-Herculean task imposed upon it.
-
-Grinding and grating in second speed the car toiled upward through the
-clinging sand. The pace was snail-like. Behind, the horsemen were
-gaining rapidly. The labored breathing of their mounts was audible even
-above the noise of the motor, so close were they. The top of the ascent
-lay but a few yards ahead, and the pursuers were but a few yards
-behind.
-
-“Halt!” came from behind, and then a shot. The ping of the bullet and
-the scream of the ricochet warned the man and the girl that those
-behind them were becoming desperate—the bullet had struck one of the
-rear fenders. Without again asking assent the princess turned and,
-kneeling upon the cushion of the seat, fired at the nearest horseman.
-The horse stumbled and plunged to his knees. Another, just behind, ran
-upon him, and the two rolled over together with their riders. Two more
-shots were fired by the remaining horsemen and answered by the girl in
-the automobile, and then the car topped the hill, shot into high, and
-with renewed speed forged into the last quarter-mile of heavy going
-toward the good road ahead; but now the grade was slightly downward and
-all the advantage was upon the side of the fugitives.
-
-However, their margin would be but scant when they reached the highway,
-for behind them the remaining troopers were spurring their jaded horses
-to a final spurt of speed. At last the white ribbon of the main road
-became visible. To the right they saw the headlights of a machine. It
-was Maenck probably, doubtless attracted their way by the shooting.
-
-But the machine was a mile away and could not possibly reach the
-intersection of the two roads before they had turned to the left toward
-Lustadt. Then the incident would resolve itself into a simple test of
-speed between the two cars—and the ability and nerve of the drivers.
-Barney hadn’t the slightest doubt now as to the outcome. His borrowed
-car was a good one, in good condition. And in the matter of driving he
-rather prided himself that he needn’t take his hat off to anyone when
-it came to ability and nerve.
-
-They were only about fifty feet from the highway. The girl touched his
-hand again. “We’re safe,” she cried, her voice vibrant with excitement,
-“we’re safe at last.” From beneath the bonnet, as though in answer to
-her statement, came a sickly, sucking sputter. The momentum of the car
-diminished. The throbbing of the engine ceased. They sat in silence as
-the machine coasted toward the highway and came to a dead stop, with
-its front wheels upon the road to safety. The girl turned toward Barney
-with an exclamation of surprise and interrogation.
-
-“The jig’s up,” he groaned; “we’re out of gasoline!”
-
-### IX. THE CAPTURE
-
-The capture of Princess Emma von der Tann and Barney Custer was a
-relatively simple matter. Open fields spread in all directions about
-the crossroads at which their car had come to its humiliating stop.
-There was no cover. To have sought escape by flight, thus in the open,
-would have been to expose the princess to the fire of the troopers.
-Barney could not do this. He preferred to surrender and trust to chance
-to open the way to escape later.
-
-When Captain Ernst Maenck drove up he found the prisoners disarmed,
-standing beside the now-useless car. He alighted from his own machine
-and with a low bow saluted the princess, an ironical smile upon his
-thin lips. Then he turned his attention toward her companion.
-
-“Who are you?” he demanded gruffly. In the darkness he failed to
-recognize the American whom he thought dead in Austria.
-
-“A servant of the house of Von der Tann,” replied Barney.
-
-“You deserve shooting,” growled the officer, “but we’ll leave that to
-Prince Peter and the king. When I tell them the trouble you have caused
-us—well, God help you.”
-
-The journey to Blentz was a short one. They had been much nearer that
-grim fortress than either had guessed. At the outskirts of the town
-they were challenged by Austrian sentries, through which Maenck passed
-with ease after the sentinel had summoned an officer. From this man
-Maenck received the password that would carry them through the line of
-outposts between the town and the castle—“Slankamen.” Barney, who
-overheard the word, made a mental note of it.
-
-At last they reached the dreary castle of Peter of Blentz. In the
-courtyard Austrian soldiers mingled with the men of the bodyguard of
-the king of Lutha. Within, the king’s officers fraternized with the
-officers of the emperor. Maenck led his prisoners to the great hall
-which was filled with officers and officials of both Austria and Lutha.
-
-The king was not there. Maenck learned that he had retired to his
-apartments a few minutes earlier in company with Prince Peter of Blentz
-and Von Coblich. He sent a servant to announce his return with the
-Princess von der Tann and a man who had attempted to prevent her being
-brought to Blentz.
-
-Barney had, as far as possible, kept his face averted from Maenck since
-they had entered the lighted castle. He hoped to escape recognition,
-for he knew that if his identity were guessed it might go hard with the
-princess. As for himself, it might go even harder, but of that he gave
-scarcely a thought—the safety of the princess was paramount.
-
-After a few minutes of waiting the servant returned with the king’s
-command to fetch the prisoners to his apartments. The face of the
-Princess Emma was haggard. For the first time Barney saw signs of fear
-upon her countenance. With leaden steps they accompanied their guard up
-the winding stairway to the tower rooms that had been furnished for the
-king. They were the same in which Emma von der Tann had been imprisoned
-two years before.
-
-On either side of the doorway stood a soldier of the king’s bodyguard.
-As Captain Maenck approached they saluted. A servant opened the door
-and they passed into the room. Before them were Peter of Blentz and Von
-Coblich standing beside a table at which Leopold of Lutha was sitting.
-The eyes of the three men were upon the doorway as the little party
-entered. The king’s face was flushed with wine. He rose as his eyes
-rested upon the face of the princess.
-
-“Greetings, your highness,” he cried with an attempt at cordiality.
-
-The girl looked straight into his eyes, coldly, and then bent her knee
-in formal curtsy. The king was about to speak again when his eyes
-wandered to the face of the American. Instantly his own went white and
-then scarlet. The eyes of Peter of Blentz followed those of the king,
-widening in astonishment as they rested upon the features of Barney
-Custer.
-
-“You told me he was dead,” shouted the king. “What is the meaning of
-this, Captain Maenck?”
-
-Maenck looked at his male prisoner and staggered back as though struck
-between the eyes.
-
-“Mein Gott,” he exclaimed, “the impostor!”
-
-“You told me he was dead,” repeated the king accusingly.
-
-“As God is my judge, your majesty,” cried Peter of Blentz, “this man
-was shot by an Austrian firing squad in Burgova over a week ago.”
-
-“Sire,” exclaimed Maenck, “this is the first sight I have had of the
-prisoners except in the darkness of the night; until this instant I had
-not the remotest suspicion of his identity. He told me that he was a
-servant of the house of Von der Tann.”
-
-“I told you the truth, then,” interjected Barney.
-
-“Silence, you ingrate!” cried the king.
-
-“Ingrate?” repeated Barney. “You have the effrontery to call me an
-ingrate? You miserable puppy.”
-
-A silence, menacing in its intensity, fell upon the little assemblage.
-The king trembled. His rage choked him. The others looked as though
-they scarce could believe the testimony of their own ears. All there,
-with the possible exception of the king, knew that he deserved even
-more degrading appellations; but they were Europeans, and to Europeans
-a king is a king—that they can never forget. It had been the inherent
-suggestion of kingship that had bent the knee of the Princess Emma
-before the man she despised.
-
-But to the American a king was only what he made himself. In this
-instance he was not even a man in the estimation of Barney Custer.
-Maenck took a step toward the prisoner—a menacing step, for his hand
-had gone to his sword. Barney met him with a level look from between
-narrowed lids. Maenck hesitated, for he was a great coward. Peter of
-Blentz spoke:
-
-“Sire,” he said, “the fellow knows that he is already as good as dead,
-and so in his bravado he dares affront you. He has been convicted of
-spying by the Austrians. He is still a spy. It is unnecessary to repeat
-the formality of a trial.”
-
-Leopold at last found his voice, though it trembled and broke as he
-spoke.
-
-“Carry out the sentence of the Austrian court in the morning,” he said.
-“A volley now might arouse the garrison in the town and be
-misconstrued.”
-
-Maenck ordered Barney escorted from the apartment, then he turned
-toward the king.
-
-“And the other prisoner, sire?” he inquired.
-
-“There is no other prisoner,” he said. “Her highness, the Princess von
-der Tann, is a guest of Prince Peter. She will be escorted to her
-apartment at once.”
-
-“Her highness, the Princess von der Tann, is not a guest of Prince
-Peter.” The girl’s voice was low and cold. “If Mr. Custer is a
-prisoner, her highness, too, is a prisoner. If he is to be shot, she
-demands a like fate. To die by the side of a MAN would be infinitely
-preferable to living by the side of your majesty.”
-
-Once again Leopold of Lutha reddened. For a moment he paced the room
-angrily to hide his emotion. Then he turned once to Maenck.
-
-“Escort the prisoner to the north tower,” he commanded, “and this
-insolent girl to the chambers next to ours. Tomorrow we shall talk with
-her again.”
-
-Outside the room Barney turned for a last look at the princess as he
-was being led in one direction and she in another. A smile of
-encouragement was on his lips and cold hopelessness in his heart. She
-answered the smile and her lips formed a silent “good-bye.” They formed
-something else, too—three words which he was sure he could not have
-mistaken, and then they parted, he for the death chamber and she for
-what fate she could but guess.
-
-As his guard halted before a door at the far end of a long corridor
-Barney Custer sensed a sudden familiarity in his surroundings. He was
-conscious of that sensation which is common to all of us—of having
-lived through a scene at some former time, to each minutest detail.
-
-As the door opened and he was pushed into the room he realized that
-there was excellent foundation for the impression—he immediately
-recognized the apartment as the same in which he had once before been
-imprisoned. At that time he had been mistaken for the mad king who had
-escaped from the clutches of Peter of Blentz. The same king was now
-visiting as a guest the fortress in which he had spent ten bitter years
-as a prisoner.
-
-“Say your prayers, my friend,” admonished Maenck, as he was about to
-leave him alone, “for at dawn you die—and this time the firing squad
-will make a better job of it.”
-
-Barney did not answer him, and the captain departed, locking the door
-after him and leaving two men on guard in the corridor. Alone, Barney
-looked about the room. It was in no wise changed since his former visit
-to it. He recalled the incidents of the hour of his imprisonment here,
-thought of old Joseph who had aided his escape, looked at the paneled
-fireplace, whose secret, it was evident, not even the master of Blentz
-was familiar with—and grinned.
-
-“‘For at dawn you die!’” he repeated to himself, still smiling broadly.
-Then he crossed quickly to the fireplace, running his fingers along the
-edge of one of the large tiled panels that hid the entrance to the
-well-like shaft that rose from the cellars beneath to the towers above
-and which opened through similar concealed exits upon each floor. If
-the floor above should be untenanted he might be able to reach it as he
-and Joseph had done two years ago when they opened the secret panel in
-the fireplace and climbed a hidden ladder to the room overhead; and
-then by vacant corridors reached the far end of the castle above the
-suite in which the princess had been confined and near which Barney had
-every reason to believe she was now imprisoned.
-
-Carefully Barney’s fingers traversed the edges of the panel. No hidden
-latch rewarded his search. Again and again he examined the perfectly
-fitted joints until he was convinced either that there was no latch
-there or that it was hid beyond possibility of discovery. With each
-succeeding minute the American’s heart and hopes sank lower and lower.
-Two years had elapsed since he had seen the secret portal swing to the
-touch of Joseph’s fingers. One may forget much in two years; but that
-he was at work upon the right panel Barney was positive. However, it
-would do no harm to examine its mate which resembled it in minutest
-detail.
-
-Almost indifferently Barney turned his attention to the other panel. He
-ran his fingers over it, his eyes following them. What was that? A
-finger-print? Upon the left side half way up a tiny smudge was visible.
-Barney examined it more carefully. A round, white figure of the
-conventional design that was burned into the tile bore the telltale
-smudge.
-
-Otherwise it differed apparently in no way from the numerous other
-round, white figures that were repeated many times in the scheme of
-decoration. Barney placed his thumb exactly over the mark that another
-thumb had left there and pushed. The figure sank into the panel beneath
-the pressure. Barney pushed harder, breathless with suspense. The panel
-swung in at his effort. The American could have whooped with delight.
-
-A moment more and he stood upon the opposite side of the secret door in
-utter darkness, for he had quickly closed it after him. To strike a
-match was but the matter of a moment. The wavering light revealed the
-top of the ladder that led downward and the foot of another leading
-aloft. He struck still more matches in search of the rope. It was not
-there, but his quest revealed the fact that the well at this point was
-much larger than he had imagined—it broadened into a small chamber.
-
-The light of many matches finally led him to the discovery of a
-passageway directly behind the fireplace. It was narrow, and after
-spanning the chimney descended by a few rough steps to a slightly lower
-level. It led toward the opposite end of the castle. Could it be
-possible that it connected directly with the apartments in the farther
-tower—in the tower where the king was and the Princess Emma? Barney
-could scarce hope for any such good luck, but at least it was worth
-investigating—it must lead somewhere.
-
-He followed it warily, feeling his way with hands and feet and
-occasionally striking a match. It was evident that the corridor lay in
-the thick wall of the castle, midway between the bottoms of the windows
-of the second floor and the tops of those upon the first—this would
-account for the slightly lower level of the passage from the floor of
-the second story.
-
-Barney had traversed some distance in the darkness along the forgotten
-corridor when the sound of voices came to him from beyond the wall at
-his right. He stopped, motionless, pressing his ear against the side
-wall. As he did so he became aware of the fact that at this point the
-wall was of wood—a large panel of hardwood. Now he could hear even the
-words of the speaker upon the opposite side.
-
-“Fetch her here, captain, and I will talk with her alone.” The voice
-was the king’s. “And, captain, you might remove the guard from before
-the door temporarily. I shall not require them, nor do I wish them to
-overhear my conversation with the princess.”
-
-Barney could hear the officer acknowledge the commands of the king, and
-then he heard a door close. The man had gone to fetch the princess. The
-American struck a match and examined the panel before him. It reached
-to the top of the passageway and was some three feet in width.
-
-At one side were three hinges, and at the other an ancient spring lock.
-For an instant Barney stood in indecision. What should he do? His entry
-into the apartments of the king would result in alarming the entire
-fortress. Were he sure the king was alone it might be accomplished.
-Should he enter now or wait until the Princess Emma had been brought to
-the king?
-
-With the question came the answer—a bold and daring scheme. His fingers
-sought the lock. Very gently, he unlatched it and pushed outward upon
-the panel. Suddenly the great doorway gave beneath his touch. It opened
-a crack letting a flood of light into his dark cell that almost blinded
-him.
-
-For a moment he could see nothing, and then out of the glaring blur
-grew the figure of a man sitting at a table—with his back toward the
-panel.
-
-It was the king, and he was alone. Noiselessly Barney Custer entered
-the apartment, closing the panel after him. At his back now was the
-great oil painting of the Blentz princess that had hid the secret
-entrance to the room. He crossed the thick rugs until he stood behind
-the king. Then he clapped one hand over the mouth of the monarch of
-Lutha and threw the other arm about his neck.
-
-“Make the slightest outcry and I shall kill you,” he whispered in the
-ear of the terrified man.
-
-Across the room Barney saw a revolver lying upon a small table. He
-raised the king to his feet and, turning his back toward the weapon
-dragged him across the apartment until the table was within easy reach.
-Then he snatched up the revolver and swung the king around into a chair
-facing him, the muzzle of the gun pressed against his face.
-
-“Silence,” he whispered.
-
-The king, white and trembling, gasped as his eyes fell upon the face of
-the American.
-
-“You?” His voice was barely audible.
-
-“Take off your clothes—every stitch of them—and if any one asks for
-admittance, deny them. Quick, now,” as the king hesitated. “My life is
-forfeited unless I can escape. If I am apprehended I shall see that you
-pay for my recapture with your life—if any one enters this room without
-my sanction they will enter it to find a dead king upon the floor; do
-you understand?”
-
-The king made no reply other than to commence divesting himself of his
-clothing. Barney followed his example, but not before he had crossed to
-the door that opened into the main corridor and shot the bolt upon the
-inside. When both men had removed their clothing Barney pointed to the
-little pile of soiled peasant garb that he had worn.
-
-“Put those on,” he commanded.
-
-The king hesitated, drawing back in disgust. Barney paused, half-way
-into the royal union suit, and leveled the revolver at Leopold. The
-king picked up one of the garments gingerly between the tips of his
-thumb and finger.
-
-“Hurry!” admonished the American, drawing the silk half-hose of the
-ruler of Lutha over his foot. “If you don’t hurry,” he added, “someone
-may interrupt us, and you know what the result would be—to you.”
-
-Scowling, Leopold donned the rough garments. Barney, fully clothed in
-the uniform the king had been wearing, stepped across the apartment to
-where the king’s sword and helmet lay upon the side table that had also
-borne the revolver. He placed the helmet upon his head and buckled the
-sword-belt about his waist, then he faced the king, behind whom was a
-cheval glass. In it Barney saw his image. The king was looking at the
-American, his eyes wide and his jaw dropped. Barney did not wonder at
-his consternation. He himself was dumbfounded by the likeness which he
-bore to the king. It was positively uncanny. He approached Leopold.
-
-“Remove your rings,” he said, holding out his hand. The king did as he
-was bid, and Barney slipped the two baubles upon his fingers. One of
-them was the royal ring of the kings of Lutha.
-
-The American now blindfolded the king and led him toward the panel
-which had given him ingress to the room. Through it the two men passed,
-Barney closing the panel after them. Then he conducted the king back
-along the dark passageway to the room which the American had but
-recently quitted. At the back of the panel which led into his former
-prison Barney halted and listened. No sound came from beyond the
-partition. Gently Barney opened the secret door a trifle—just enough to
-permit him a quick survey of the interior of the apartment. It was
-empty. A smile crossed his face as he thought of the difficulty Leopold
-might encounter the following morning in convincing his jailers that he
-was not the American.
-
-Then he recalled his reflection in the cheval glass and frowned. Could
-Leopold convince them? He doubted it—and what then? The American was
-sentenced to be shot at dawn. They would shoot the king instead. Then
-there would be none to whom to return the kingship. What would he do
-with it? The temptation was great. Again a throne lay within his
-grasp—a throne and the woman he loved. None might ever know unless he
-chose to tell—his resemblance to Leopold was too perfect. It defied
-detection.
-
-With an exclamation of impatience he wheeled about and dragged the
-frightened monarch back to the room from which he had stolen him. As he
-entered he heard a knock at the door.
-
-“Do not disturb me now,” he called. “Come again in half an hour.”
-
-“But it is Her Highness, Princess Emma, sire,” came a voice from beyond
-the door. “You summoned her.”
-
-“She may return to her apartments,” replied Barney.
-
-All the time he kept his revolver leveled at the king, from his eyes he
-had removed the blind after they had entered the apartment. He crossed
-to the table where the king had been sitting when he surprised him,
-motioning the ragged ruler to follow and be seated.
-
-“Take that pen,” he said, “and write a full pardon for Mr. Bernard
-Custer, and an order requiring that he be furnished with money and set
-at liberty at dawn.”
-
-The king did as he was bid. For a moment the American stood looking at
-him before he spoke again.
-
-“You do not deserve what I am going to do for you,” he said. “And Lutha
-deserves a better king than the one my act will give her; but I am
-neither a thief nor a murderer, and so I must forbear leaving you to
-your just deserts and return your throne to you. I shall do so after I
-have insured my own safety and done what I can for Lutha—what you are
-too little a man and king to do yourself.
-
-“So soon as they liberate you in the morning, make the best of your way
-to Brosnov, on the Serbian frontier. Await me there. When I can, I
-shall come. Again we may exchange clothing and you can return to
-Lustadt. I shall cross over into Siberia out of your reach, for I know
-you too well to believe that any sense of honor or gratitude would
-prevent you signing my death-warrant at the first opportunity. Now,
-come!”
-
-Once again Barney led the blindfolded king through the dark corridor to
-the room in the opposite tower—to the prison of the American. At the
-open panel he shoved him into the apartment. Then he drew the door
-quietly to, leaving the king upon the inside, and retraced his steps to
-the royal apartments. Crossing to the center table, he touched an
-electric button. A moment later an officer knocked at the door, which,
-in the meantime, Barney had unbolted.
-
-“Enter!” said the American. He stood with his back toward the door
-until he heard it close behind the officer. When he turned he was
-apparently examining his revolver. If the officer suspected his
-identity, it was just as well to be prepared. Slowly he raised his eyes
-to the newcomer, who stood stiffly at salute. The officer looked him
-full in the face.
-
-“I answered your majesty’s summons,” said the man.
-
-“Oh, yes!” returned the American. “You may fetch the Princess Emma.”
-
-The officer saluted once more and backed out of the apartment. Barney
-walked to the table and sat down. A tin box of cigarettes lay beside
-the lamp. Barney lighted one of them. The king had good taste in the
-selection of tobacco, he thought. Well, a man must need have some
-redeeming characteristics.
-
-Outside, in the corridor, he heard voices, and again the knock at the
-door. He bade them enter. As the door opened Emma von der Tann, her
-head thrown back and a flush of anger on her face, entered the room.
-Behind her was the officer who had been despatched to bring her. Barney
-nodded to the latter.
-
-“You may go,” he said. He drew a chair from the table and asked the
-princess to be seated. She ignored his request.
-
-“What do you wish of me?” she asked. She was looking straight into his
-eyes. The officer had withdrawn and closed the door after him. They
-were alone, with nothing to fear; yet she did not recognize him.
-
-“You are the king,” she continued in cold, level tones, “but if you are
-also a gentleman, you will at once order me returned to my father at
-Lustadt, and with me the man to whom you owe so much. I do not expect
-it of you, but I wish to give you the chance.
-
-“I shall not go without him. I am betrothed to you; but until tonight I
-should rather have died than wed you. Now I am ready to compromise. If
-you will set Mr. Custer at liberty in Serbia and return me unharmed to
-my father, I will fulfill my part of our betrothal.”
-
-Barney Custer looked straight into the girl’s face for a long moment. A
-half smile played upon his lips at the thought of her surprise when she
-learned the truth, when suddenly it dawned upon him that she and he
-were both much safer if no one, not even her loyal self, guessed that
-he was other than the king. It is not difficult to live a part, but
-often it is difficult to act one. Some little word or look, were she to
-know that he was Barney Custer, might betray them; no, it was better to
-leave her in ignorance, though his conscience pricked him for the
-disloyalty that his act implied.
-
-It seemed a poor return for her courage and loyalty to him that her
-statement to the man she thought king had revealed. He marveled that a
-Von der Tann could have spoken those words—a Von der Tann who but the
-day before had refused to save her father’s life at the loss of the
-family honor. It seemed incredible to the American that he had won such
-love from such a woman. Again came the mighty temptation to keep the
-crown and the girl both; but with a straightening of his broad
-shoulders he threw it from him.
-
-She was promised to the king, and while he masqueraded in the king’s
-clothes, he at least would act the part that a king should. He drew a
-folded paper from his inside pocket and handed it to the girl.
-
-“Here is the American’s pardon,” he said, “drawn up and signed by the
-king’s own hand.”
-
-She opened it and, glancing through it hurriedly, looked up at the man
-before her with a questioning expression in her eyes.
-
-“You came, then,” she said, “to a realization of the enormity of your
-ingratitude?”
-
-The man shrugged.
-
-“He will never die at my command,” he said.
-
-“I thank your majesty,” she said simply. “As a Von der Tann, I have
-tried to believe that a Rubinroth could not be guilty of such baseness.
-And now, tell me what your answer is to my proposition.”
-
-“We shall return to Lustadt tonight,” he replied. “I fear the purpose
-of Prince Peter. In fact, it may be difficult—even impossible—for us to
-leave Blentz; but we can at least make the attempt.”
-
-“Can we not take Mr. Custer with us?” she asked. “Prince Peter may
-disregard your majesty’s commands and, after you are gone, have him
-shot. Do not forget that he kept the crown from Peter of Blentz—it is
-certain that Prince Peter will never forget it.”
-
-“I give you my word, your highness, that I know positively that if I
-leave Blentz tonight Prince Peter will not have Mr. Custer shot in the
-morning, and it will so greatly jeopardize his own plans if we attempt
-to release the prisoner that in all probability we ourselves will be
-unable to escape.”
-
-She looked at him thoughtfully for a moment.
-
-“You give me your word that he will be safe?” she asked.
-
-“My royal word,” he replied.
-
-“Very well, let us leave at once.”
-
-Barney touched the bell once more, and presently an officer of the
-Blentz faction answered the summons. As the man closed the door and
-approached, saluting, Barney stepped close to him.
-
-“We are leaving for Tann tonight,” he said, “at once. You will conduct
-us from the castle and procure horses for us. All the time I shall walk
-at your elbow, and in my hand I shall carry this,” and he displayed the
-king’s revolver. “At the first indication of defection upon your part I
-shall kill you. Do you perfectly understand me?”
-
-“But, your majesty,” exclaimed the officer, “why is it necessary that
-you leave thus surreptitiously? May not the king go and come in his own
-kingdom as he desires? Let me announce your wishes to Prince Peter that
-he may furnish you with a proper escort. Doubtless he will wish to
-accompany you himself, sire.”
-
-“You will do precisely what I say without further comment,” snapped
-Barney. “Now get a—” He had been about to say: “Now get a move on you,”
-when it occurred to him that this was not precisely the sort of
-language that kings were supposed to use to their inferiors. So he
-changed it. “Now get a couple of horses for her highness and myself, as
-well as your own, for you will accompany us to Tann.”
-
-The officer looked at the weapon in the king’s hand. He measured the
-distance between himself and the king. He well knew the reputed
-cowardice of Leopold. Could he make the leap and strike up the king’s
-hand before the timorous monarch found even the courage of the cornered
-rat to fire at him? Then his eyes sought the face of the king,
-searching for the signs of nervous terror that would make his conquest
-an easy one; but what he saw in the eyes that bored straight into his
-brought his own to the floor at the king’s feet.
-
-What new force animated Leopold of Lutha? Those were not the eyes of a
-coward. No fear was reflected in their steely glitter. The officer
-mumbled an apology, saluted, and turned toward the door. At his elbow
-walked the impostor; a cavalry cape that had belonged to the king now
-covered his shoulders and hid the weapon that pressed its hard warning
-now and again into the short-ribs of the Blentz officer. Just behind
-the American came the Princess Emma von der Tann.
-
-The three passed through the deserted corridors of the sleeping castle,
-taking a route at Barney’s suggestion that led them to the stable
-courtyard without necessitating traversing the main corridors or the
-great hall or the guardroom, in all of which there still were Austrian
-and Blentz soldiers, whose duties or pleasures had kept them from their
-blankets.
-
-At the stables a sleepy groom answered the summons of the officer, whom
-Barney had warned not to divulge the identity of himself or the
-princess. He left the princess in the shadows outside the building.
-After what seemed an eternity to the American, three horses were led
-into the courtyard, saddled, and bridled. The party mounted and
-approached the gates. Here, Barney knew, might be encountered the most
-serious obstacle in their path. He rode close to the side of their
-unwilling conductor. Leaning forward in his saddle, he whispered in the
-man’s ear.
-
-“Failure to pass us through the gates,” he said, “will be the signal
-for your death.”
-
-The man reined in his mount and turned toward the American.
-
-“I doubt if they will pass even me without a written order from Prince
-Peter,” he said. “If they refuse, you must reveal your identity. The
-guard is composed of Luthanians—I doubt if they will dare refuse your
-majesty.”
-
-Then they rode on up to the gates. A soldier stepped from the sentry
-box and challenged them.
-
-“Lower the drawbridge,” ordered the officer. “It is Captain Krantzwort
-on a mission for the king.”
-
-The soldier approached, raising a lantern, which he had brought from
-the sentry box, and inspected the captain’s face. He seemed ill at
-ease. In the light of the lantern, the American saw that he was scarce
-more than a boy—doubtless a recruit. He saw the expression of fear and
-awe with which he regarded the officer, and it occurred to him that the
-effect of the king’s presence upon him would be absolutely
-overpowering. Still the soldier hesitated.
-
-“My orders are very strict, sir,” he said. “I am to let no one leave
-without a written order from Prince Peter. If the sergeant or the
-lieutenant were here they would know what to do; but they are both at
-the castle—only two other soldiers are at the gates with me. Wait, and
-I will send one of them for the lieutenant.”
-
-“No,” interposed the American. “You will send for no one, my man. Come
-closer—look at my face.”
-
-The soldier approached, holding his lantern above his head. As its
-feeble rays fell upon the face and uniform of the man on horseback, the
-sentry gave a little gasp of astonishment.
-
-“Now, lower the drawbridge,” said Barney Custer, “it is your king’s
-command.”
-
-Quickly the fellow hastened to obey the order. The chains creaked and
-the windlass groaned as the heavy planking sank to place across the
-moat.
-
-As Barney passed the soldier he handed him the pardon Leopold had
-written for the American.
-
-“Give this to your lieutenant,” he said, “and tell him to hand it to
-Prince Peter before dawn tomorrow. Do not fail.”
-
-A moment later the three were riding down the winding road toward
-Blentz. Barney had no further need of the officer who rode with them.
-He would be glad to be rid of him, for he anticipated that the fellow
-might find ample opportunity to betray them as they passed through the
-Austrian lines, which they must do to reach Lustadt.
-
-He had told the captain that they were going to Tann in order that,
-should the man find opportunity to institute pursuit, he might be
-thrown off the track. The Austrian sentries were no great distance
-ahead when Barney ordered a halt.
-
-“Dismount,” he directed the captain, leaping to the ground himself at
-the same time. “Put your hands behind your back.”
-
-The officer did as he was bid, and Barney bound his wrists securely
-with a strap and buckle that he had removed from the cantle of his
-saddle as he rode. Then he led him off the road among some weeds and
-compelled him to lie down, after which he bound his ankles together and
-stuffed a gag in his mouth, securing it in place with a bit of stick
-and the chinstrap from the man’s helmet. The threat of the revolver
-kept Captain Krantzwort silent and obedient throughout the hasty
-operations.
-
-“Good-bye, captain,” whispered Barney, “and let me suggest that you
-devote the time until your discovery and release in pondering the value
-of winning your king’s confidence in the future. Had you chosen your
-associates more carefully in the past, this need not have occurred.”
-
-Barney unsaddled the captain’s horse and turned him loose, then he
-remounted and, with the princess at his side, rode down toward Blentz.
-
-### X. A NEW KING IN LUTHA
-
-As the two riders approached the edge of the village of Blentz a sentry
-barred their way. To his challenge the American replied that they were
-“friends from the castle.”
-
-“Advance,” directed the sentry, “and give the countersign.”
-
-Barney rode to the fellow’s side, and leaning from the saddle whispered
-in his ear the word “Slankamen.”
-
-Would it pass them out as it had passed Maenck in? Barney scarcely
-breathed as he awaited the result of his experiment. The soldier
-brought his rifle to present and directed them to pass. With a sigh of
-relief that was almost audible the two rode into the village and the
-Austrian lines.
-
-Once within they met with no further obstacle until they reached the
-last line of sentries upon the far side of the town. It was with more
-confidence that Barney gave the countersign here, nor was he surprised
-that the soldier passed them readily; and now they were upon the
-highroad to Lustadt, with nothing more to bar their way.
-
-For hours they rode on in silence. Barney wanted to talk with his
-companion, but as king he found nothing to say to her. The girl’s mind
-was filled with morbid reflections of the past few hours and dumb
-terror for the future. She would keep her promise to the king; but
-after—life would not be worth the living; why should she live? She
-glanced at the man beside her in the light of the coming dawn. Ah, why
-was he so like her American in outward appearances only? Their own
-mothers could scarce have distinguished them, and yet in character no
-two men could have differed more widely. The man turned to her.
-
-“We are almost there,” he said. “You must be very tired.”
-
-The words reflected a consideration that had never been a
-characteristic of Leopold. The girl began to wonder if there might not
-possibly be a vein of nobility in the man, after all, that she had
-never discovered. Since she had entered his apartments at Blentz he had
-been in every way a different man from the Leopold she had known of
-old. The boldness of his escape from Blentz supposed a courage that the
-king had never given the slightest indication of in the past. Could it
-be that he was making a genuine effort to become a man—to win her
-respect?
-
-They were approaching Lustadt as the sun rose. A troop of horse was
-just emerging from the north gate. As it neared them they saw that the
-cavalrymen wore the uniforms of the Royal Horse Guard. At their head
-rode a lieutenant. As his eyes fell upon the face of the princess and
-her companion, he brought his troopers to a halt, and, with incredulity
-plain upon his countenance, advanced to meet them, his hand raised in
-salute to the king. It was Butzow.
-
-Now Barney was sure that he would be recognized. For two years he and
-the Luthanian officer had been inseparable. Surely Butzow would
-penetrate his disguise. He returned his friend’s salute, looked him
-full in the eyes, and asked where he was riding.
-
-“To Blentz, your majesty,” replied Butzow, “to demand an audience. I
-bear important word from Prince von der Tann. He has learned the
-Austrians are moving an entire army corps into Lutha, together with
-siege howitzers. Serbia has demanded that all Austrian troops be
-withdrawn from Luthanian territory at once, and has offered to assist
-your majesty in maintaining your neutrality by force, if necessary.”
-
-As Butzow spoke his eyes were often upon the Princess Emma, and it was
-quite evident that he was much puzzled to account for her presence with
-the king. She was supposed to be at Tann, and Butzow knew well enough
-her estimate of Leopold to know that she would not be in his company of
-her own volition. His expression as he addressed the man he supposed to
-be his king was far from deferential. Barney could scarce repress a
-smile.
-
-“We will ride at once to the palace,” he said. “At the gate you may
-instruct one of your sergeants to telephone to Prince von der Tann that
-the king is returning and will grant him audience immediately. You and
-your detachment will act as our escort.”
-
-Butzow saluted and turned to his troopers, giving the necessary
-commands that brought them about in the wake of the pseudo-king. Once
-again Barney Custer, of Beatrice, rode into Lustadt as king of Lutha.
-The few people upon the streets turned to look at him as he passed, but
-there was little demonstration of love or enthusiasm.
-
-Leopold had awakened no emotions of this sort in the hearts of his
-subjects. Some there were who still remembered the gallant actions of
-their ruler on the field of battle when his forces had defeated those
-of the regent, upon that other occasion when this same American had sat
-upon the throne of Lutha for two days and had led the little army to
-victory; but since then the true king had been with them daily in his
-true colors. Arrogance, haughtiness, and petty tyranny had marked his
-reign. Taxes had gone even higher than under the corrupt influence of
-the Blentz regime. The king’s days were spent in bed; his nights in
-dissipation. Old Ludwig von der Tann seemed Lutha’s only friend at
-court. Him the people loved and trusted.
-
-It was the old chancellor who met them as they entered the palace—the
-Princess Emma, Lieutenant Butzow, and the false king. As the old man’s
-eyes fell upon his daughter, he gave an exclamation of surprise and of
-incredulity. He looked from her to the American.
-
-“What is the meaning of this, your majesty?” he cried in a voice hoarse
-with emotion. “What does her highness in your company?”
-
-There was neither fear nor respect in Prince Ludwig’s tone—only anger.
-He was demanding an accounting from Leopold, the man; not from Leopold,
-the king. Barney raised his hand.
-
-“Wait,” he said, “before you judge. The princess was brought to Blentz
-by Prince Peter. She will tell you that I have aided her to escape and
-that I have accorded her only such treatment as a woman has a right to
-expect from a king.”
-
-The girl inclined her head.
-
-“His majesty has been most kind,” she said. “He has treated me with
-every consideration and respect, and I am convinced that he was not a
-willing party to my arrest and forcible detention at Blentz; or,” she
-added, “if he was, he regretted his action later and has made full
-reparation by bringing me to Lustadt.”
-
-Prince von der Tann found difficulty in hiding his surprise at this
-evidence of chivalry in the cowardly king. But for his daughter’s
-testimony he could not have believed it possible that it lay within the
-nature of Leopold of Lutha to have done what he had done within the
-past few hours.
-
-He bowed low before the man who wore the king’s uniform. The American
-extended his hand, and Von der Tann, taking it in his own, raised it to
-his lips.
-
-“And now,” said Barney briskly, “let us go to my apartments and get to
-work. Your highness”—and he turned toward the Princess Emma—“must be
-greatly fatigued. Lieutenant Butzow, you will see that a suite is
-prepared for her highness. Afterward you may call upon Count
-Zellerndorf, whom I understand returned to Lustadt yesterday, and
-notify him that I will receive him in an hour. Inform the Serbian
-minister that I desire his presence at the palace immediately. Lose no
-time, lieutenant, and be sure to impress upon the Serbian minister that
-immediately means immediately.”
-
-Butzow saluted and the Princess Emma curtsied, as the king turned and,
-slipping his arm through that of Prince Ludwig, walked away in the
-direction of the royal apartments. Once at the king’s desk Barney
-turned toward the chancellor. In his mind was the determination to save
-Lutha if Lutha could be saved. He had been forced to place the king in
-a position where he would be helpless, though that he would have been
-equally as helpless upon his throne the American did not doubt for an
-instant. However, the course of events had placed within his hands the
-power to serve not only Lutha but the house of Von der Tann as well. He
-would do in the king’s place what the king should have done if the king
-had been a man.
-
-“Now, Prince Ludwig,” he said, “tell me just what conditions we must
-face. Remember that I have been at Blentz and that there the King of
-Lutha is not apt to learn all that transpires in Lustadt.”
-
-“Sire,” replied the chancellor, “we face a grave crisis. Not only is
-there within Lutha the small force of Austrian troops that surround
-Blentz, but now an entire army corps has crossed the border.
-Unquestionably they are marching on Lustadt. The emperor is going to
-take no chances. He sent the first force into Lutha to compel Serbian
-intervention and draw Serbian troops from the Austro-Serbian battle
-line. Serbia has withheld her forces at my request, but she will not
-withhold them for long. We must make a declaration at once. If we
-declare against Austria we are faced by the menace of the Austrian
-troops already within our boundaries, but we shall have Serbia to help
-us.
-
-“A Serbian army corps is on the frontier at this moment awaiting word
-from Lutha. If it is adverse to Austria that army corps will cross the
-border and march to our assistance. If it is favorable to Austria it
-will none the less cross into Lutha, but as enemies instead of allies.
-Serbia has acted honorably toward Lutha. She has not violated our
-neutrality. She has no desire to increase her possessions in this
+Once together, we stood almost back to back against the great boulder,
+and thus the creatures were prevented from soaring above us to deliver
+their deadly blows, and as we were easily their match while they
+remained upon the ground, we were making great headway in dispatching
+what remained of them when our attention was again attracted by the
+shrill wail of the caller above our heads.
+
+This time I glanced up, and far above us upon a little natural balcony
+on the face of the cliff stood a strange figure of a man shrieking out
+his shrill signal, the while he waved one hand in the direction of the
+river’s mouth as though beckoning to some one there, and with the other
+pointed and gesticulated toward us.
+
+A glance in the direction toward which he was looking was sufficient to
+apprise me of his aims and at the same time to fill me with the dread
+of dire apprehension, for, streaming in from all directions across the
+meadow, from out of the forest, and from the far distance of the flat
+land across the river, I could see converging upon us a hundred
+different lines of wildly leaping creatures such as we were now engaged
+with, and with them some strange new monsters which ran with great
+swiftness, now erect and now upon all fours.
+
+“It will be a great death,” I said to my companion. “Look!”
+
+As he shot a quick glance in the direction I indicated he smiled.
+
+“We may at least die fighting and as great warriors should, John
+Carter,” he replied.
+
+We had just finished the last of our immediate antagonists as he spoke,
+and I turned in surprised wonderment at the sound of my name.
+
+And there before my astonished eyes I beheld the greatest of the green
+men of Barsoom; their shrewdest statesman, their mightiest general, my
+great and good friend, Tars Tarkas, Jeddak of Thark.
+
+## CHAPTER II A FOREST BATTLE
+
+Tars Tarkas and I found no time for an exchange of experiences as we
+stood there before the great boulder surrounded by the corpses of our
+grotesque assailants, for from all directions down the broad valley was
+streaming a perfect torrent of terrifying creatures in response to the
+weird call of the strange figure far above us.
+
+“Come,” cried Tars Tarkas, “we must make for the cliffs. There lies our
+only hope of even temporary escape; there we may find a cave or a
+narrow ledge which two may defend for ever against this motley, unarmed
+horde.”
+
+Together we raced across the scarlet sward, I timing my speed that I
+might not outdistance my slower companion. We had, perhaps, three
+hundred yards to cover between our boulder and the cliffs, and then to
+search out a suitable shelter for our stand against the terrifying
+things that were pursuing us.
+
+They were rapidly overhauling us when Tars Tarkas cried to me to hasten
+ahead and discover, if possible, the sanctuary we sought. The
+suggestion was a good one, for thus many valuable minutes might be
+saved to us, and, throwing every ounce of my earthly muscles into the
+effort, I cleared the remaining distance between myself and the cliffs
+in great leaps and bounds that put me at their base in a moment.
+
+The cliffs rose perpendicular directly from the almost level sward of
+the valley. There was no accumulation of fallen debris, forming a more
+or less rough ascent to them, as is the case with nearly all other
+cliffs I have ever seen. The scattered boulders that had fallen from
+above and lay upon or partly buried in the turf, were the only
+indication that any disintegration of the massive, towering pile of
+rocks ever had taken place.
+
+My first cursory inspection of the face of the cliffs filled my heart
+with forebodings, since nowhere could I discern, except where the weird
+herald stood still shrieking his shrill summons, the faintest
+indication of even a bare foothold upon the lofty escarpment.
+
+To my right the bottom of the cliff was lost in the dense foliage of
+the forest, which terminated at its very foot, rearing its gorgeous
+foliage fully a thousand feet against its stern and forbidding
+neighbour.
+
+To the left the cliff ran, apparently unbroken, across the head of the
+broad valley, to be lost in the outlines of what appeared to be a range
+of mighty mountains that skirted and confined the valley in every
 direction.
 
-“On the other hand, Austria has violated her treaty with us. She has
-marched troops into our country and occupied the town of Blentz.
-Constantly in the past she has incited internal discord. She is openly
-championing the Blentz cause, which at last I trust your majesty has
-discovered is inimical to your interests.
-
-“If Austria is victorious in her war with Serbia, she will find some
-pretext to hold Lutha whether Lutha takes her stand either for or
-against her. And most certainly is this true if it occurs that Austrian
-troops are still within the boundaries of Lutha when peace is
-negotiated. Not only our honor but our very existence demands that
-there be no Austrian troops in Lutha at the close of this war. If we
-cannot force them across the border we can at least make such an effort
-as will win us the respect of the world and a voice in the peace
-negotiations.
-
-“If we must bow to the surrender of our national integrity, let us do
-so only after we have exhausted every resource of the country in our
-country’s defense. In the past your majesty has not appeared to realize
-the menace of your most powerful neighbor. I beg of you, sire, to trust
-me. Believe that I have only the interests of Lutha at heart, and let
-us work together for the salvation of our country and your majesty’s
-throne.”
-
-Barney laid his hand upon the old man’s shoulder. It seemed a shame to
-carry the deception further, but the American well knew that only so
-could he accomplish aught for Lutha or the Von der Tanns. Once the old
-chancellor suspected the truth as to his identity he would be the first
-to denounce him.
-
-“I think that you and I can work together, Prince Ludwig,” he said. “I
-have sent for the Serbian and Austrian ministers. The former should be
-here immediately.”
-
-Nor did they have long to wait before the tall Slav was announced.
-Barney lost no time in getting down to business. He asked no questions.
-What Von der Tann had told him, what he had seen with his own eyes
-since he had entered Lutha, and what he had overheard in the inn at
-Burgova was sufficient evidence that the fate of Lutha hung upon the
-prompt and energetic decisions of the man who sat upon Lutha’s throne
-for the next few days.
-
-Had Leopold been the present incumbent Lutha would have been lost, for
-that he would play directly into the hands of Austria was not to be
-questioned. Were Von der Tann to seize the reins of government a state
-of revolution would exist that would divide the state into two bitter
-factions, weaken its defense, and give Austria what she most desired—a
-plausible pretext for intervention.
-
-Lutha’s only hope lay in united defense of her liberties under the
-leadership of the one man whom all acknowledged king—Leopold. Very
-well, Barney Custer, of Beatrice, would be Leopold for a few days,
-since the real Leopold had proven himself incompetent to meet the
-emergency.
-
-General Petko, the Serbian minister to Lutha, brought to the audience
-the memory of a series of unpleasant encounters with the king. Leopold
-had never exerted himself to hide his pro-Austrian sentiments. Austria
-was a powerful country—Serbia, a relatively weak neighbor. Leopold,
-being a royal snob, had courted the favor of the emperor and turned up
-his nose at Serbia. The general was prepared for a repetition of the
-veiled affronts that Leopold delighted in according him; but this time
-he brought with him a reply that for two years he had been living in
-the hope of some day being able to deliver to the young monarch he so
-cordially despised.
-
-It was an ultimatum from his government—an ultimatum couched in terms
-from which all diplomatic suavity had been stripped. If Barney Custer,
-of Beatrice, could have read it he would have smiled, for in plain
-American it might have been described as announcing to Leopold
-precisely “where he got off.” But Barney did not have the opportunity
-to read it, since that ultimatum was never delivered.
-
-Barney took the wind all out of it by his first words. “Your excellency
-may wonder why it is that we have summoned you at such an early hour,”
-he said.
-
-General Petko inclined his head in deferential acknowledgment of the
-truth of the inference.
-
-“It is because we have learned from our chancellor,” continued the
-American, “that Serbia has mobilized an entire army corps upon the
-Luthanian frontier. Am I correctly informed?”
-
-General Petko squared his shoulders and bowed in assent. At the same
-time he reached into his breast-pocket for the ultimatum.
-
-“Good!” exclaimed Barney, and then he leaned close to the ear of the
-Serbian. “How long will it take to move that army corps to Lustadt?”
-
-General Petko gasped and returned the ultimatum to his pocket.
-
-“Sire!” he cried, his face lighting with incredulity. “You mean—”
-
-“I mean,” said the American, “that if Serbia will loan Lutha an army
-corps until the Austrians have evacuated Luthanian territory, Lutha
-will loan Serbia an army corps until such time as peace is declared
-between Serbia and Austria. Other than this neither government will
-incur any obligations to the other.
-
-“We may not need your help, but it will do us no harm to have them well
-on the way toward Lustadt as quickly as possible. Count Zellerndorf
-will be here in a few minutes. We shall, through him, give Austria
-twenty-four hours to withdraw all her troops beyond our frontiers. The
-army of Lutha is mobilized before Lustadt. It is not a large army, but
-with the help of Serbia it should be able to drive the Austrians from
-the country, provided they do not leave of their own accord.”
-
-General Petko smiled. So did the American and the chancellor. Each knew
-that Austria would not withdraw her army from Lutha.
-
-“With your majesty’s permission I will withdraw,” said the Serbian,
-“and transmit Lutha’s proposition to my government; but I may say that
-your majesty need have no apprehension but that a Serbian army corps
-will be crossing into Lutha before noon today.”
-
-“And now, Prince Ludwig,” said the American after the Serbian had bowed
-himself out of the apartment, “I suggest that you take immediate steps
-to entrench a strong force north of Lustadt along the road to Blentz.”
-
-Von der Tann smiled as he replied. “It is already done, sire,” he said.
-
-“But I passed in along the road this morning,” said Barney, “and saw
-nothing of such preparations.”
-
-“The trenches and the soldiers were there, nevertheless, sire,” replied
-the old man, “only a little gap was left on either side of the highway
-that those who came and went might not suspect our plans and carry word
-of them to the Austrians. A few hours will complete the link across the
-road.”
-
-“Good! Let it be completed at once. Here is Count Zellerndorf now,” as
-the minister was announced.
-
-Von der Tann bowed himself out as the Austrian entered the king’s
-presence. For the first time in two years the chancellor felt that the
-destiny of Lutha was safe in the hands of her king. What had caused the
-metamorphosis in Leopold he could not guess. He did not seem to be the
-same man that had whined and growled at their last audience a week
-before.
-
-The Austrian minister entered the king’s presence with an expression of
-ill-concealed surprise upon his face. Two days before he had left
-Leopold safely ensconced at Blentz, where he was to have remained
-indefinitely. He glanced hurriedly about the room in search of Prince
-Peter or another of the conspirators who should have been with the
-king. He saw no one. The king was speaking. The Austrian’s eyes went
-wider, not only at the words, but at the tone of voice.
-
-“Count Zellerndorf,” said the American, “you were doubtless aware of
-the embarrassment under which the king of Lutha was compelled at Blentz
-to witness the entry of a foreign army within his domain. But we are
-not now at Blentz. We have summoned you that you may receive from us,
-and transmit to your emperor, the expression of our surprise and dismay
-at the unwarranted violation of Luthanian neutrality.”
-
-“But, your majesty—” interrupted the Austrian.
-
-“But nothing, your excellency,” snapped the American. “The moment for
-diplomacy is passed; the time for action has come. You will oblige us
-by transmitting to your government at once a request that every
-Austrian soldier now in Lutha be withdrawn by noon tomorrow.”
-
-Zellerndorf looked his astonishment.
-
-“Are you mad, sire?” he cried. “It will mean war!”
-
-“It is what Austria has been looking for,” snapped the American, “and
-what people look for they usually get, especially if they chance to be
-looking for trouble. When can you expect a reply from Vienna?”
-
-“By noon, your majesty,” replied the Austrian, “but are you
-irretrievably bound to your present policy? Remember the power of
-Austria, sire. Think of your throne. Think—”
-
-“We have thought of everything,” interrupted Barney. “A throne means
-less to us than you may imagine, count; but the honor of Lutha means a
-great deal.”
-
-### XI. THE BATTLE
-
-At five o’clock that afternoon the sidewalks bordering Margaretha
-Street were crowded with promenaders. The little tables before the
-cafes were filled. Nearly everyone spoke of the great war and of the
-peril which menaced Lutha. Upon many a lip was open disgust at the
-supine attitude of Leopold of Lutha in the face of an Austrian invasion
-of his country. Discontent was open. It was ripening to something worse
-for Leopold than an Austrian invasion.
-
-Presently a sergeant of the Royal Horse Guards cantered down the street
-from the palace. He stopped here and there, and, dismounting, tacked
-placards in conspicuous places. At the notice, and in each instance
-cheers and shouting followed the sergeant as he rode on to the next
-stop.
-
-Now, at each point men and women were gathered, eagerly awaiting an
-explanation of the jubilation farther up the street. Those whom the
-sergeant passed called to him for an explanation, and not receiving it,
-followed in a quickly growing mob that filled Margaretha Street from
-wall to wall. When he dismounted he had almost to fight his way to the
-post or door upon which he was to tack the next placard. The crowd
-surged about him in its anxiety to read what the placard bore, and
-then, between the cheering and yelling, those in the front passed back
-to the crowd the tidings that filled them with so great rejoicing.
-
-“Leopold has declared war on Austria!” “The king calls for volunteers!”
-“Long live the king!”
-
-The battle of Lustadt has passed into history. Outside of the little
-kingdom of Lutha it received but passing notice by the world at large,
-whose attention was riveted upon the great conflicts along the banks of
-the Meuse, the Marne, and the Aisne. But in Lutha! Ah, it will be told
-and retold, handed down from mouth to mouth and from generation to
-generation to the end of time.
-
-How the cavalry that the king sent north toward Blentz met the
-advancing Austrian army. How, fighting, they fell back upon the
-infantry which lay, a thin line that stretched east and west across the
-north of Lustadt, in its first line of trenches. A pitifully weak line
-it was, numerically, in comparison with the forces of the invaders; but
-it stood its ground heroically, and from the heights to the north of
-the city the fire from the forts helped to hold the enemy in check for
-many hours.
-
-And then the enemy succeeded in bringing up their heavy artillery to
-the ridge that lies three miles north of the forts. Shells were
-bursting in the trenches, the forts, and the city. To the south a
-stream of terror-stricken refugees was pouring out of Lustadt along the
-King’s Road. Rich and poor, animated by a common impulse, filled the
-narrow street that led to the city’s southern gate. Carts drawn by
-dogs, laden donkeys, French limousines, victorias, wheelbarrows—every
-conceivable wheeled vehicle and beast of burden—were jammed in a
-seemingly inextricable tangle in the mad rush for safety.
-
-Rumor passed back and forth through the fleeing thousands. Now came
-word that Fort No. 2 had been silenced by the Austrian guns.
-Immediately followed news that the Luthanian line was falling back upon
-the city. Fear turned to panic. Men fought to outdistance their
-neighbors.
-
-A shell burst upon a roof-top in an adjoining square.
-
-Women fainted and were trampled. Hoarse shouts of anger mingled with
-screams of terror, and then into the midst of it from Margaretha Street
-rode a man on horseback. Behind him were a score of officers. A
-trumpeter raised his instrument to his lips, and above the din of the
-fleeing multitude rose the sharp, triple call that announces the coming
-of the king. The mob halted and turned.
-
-Looking down upon them from his saddle was Leopold of Lutha. His palm
-was raised for silence and there was a smile upon his lips. Quite
-suddenly, and as by a miracle, fear left them. They made a line for him
-and his staff to ride through. One of the officers turned in his saddle
-to address a civilian friend in an automobile.
-
-“His majesty is riding to the firing line,” he said and he raised his
-voice that many might hear. Quickly the word passed from mouth to
-mouth, and as Barney Custer, of Beatrice, passed along Margaretha
-Street he was followed by a mad din of cheering that drowned the
-booming of the distant cannon and the bursting of the shells above the
-city.
-
-The balance of the day the pseudo-king rode back and forth along his
-lines. Three of his staff were killed and two horses were shot from
-beneath him, but from the moment that he appeared the Luthanian line
-ceased to waver or fall back. The advanced trenches that they had
-abandoned to the Austrians they took again at the point of the bayonet.
-Charge after charge they repulsed, and all the time there hovered above
-the enemy Lutha’s sole aeroplane, watching, watching, ever watching for
-the coming of the allies. Somewhere to the northeast the Serbians were
-advancing toward Lustadt. Would they come in time?
-
-It was five o’clock in the morning of the second day, and though the
-Luthanian line still held, Barney Custer knew that it could not hold
-for long. The Austrian artillery fire, which had been rather wild the
-preceding day, had now become of deadly accuracy. Each bursting shell
-filled some part of the trenches with dead and wounded, and though
-their places were taken by fresh men from the reserve, there would soon
-be no reserve left to call upon.
-
-At his left, in the rear, the American had massed the bulk of his
-reserves, and at the foot of the heights north of the city and just
-below the forts the major portion of the cavalry was drawn up in the
-shelter of a little ravine. Barney’s eyes were fixed upon the soaring
-aeroplane.
-
-In his hand was his watch. He would wait another fifteen minutes, and
-if by then the signal had not come that the Serbians were approaching,
-he would strike the blow that he had decided upon. From time to time he
-glanced at his watch.
-
-The fifteen minutes had almost elapsed when there fluttered from the
-tiny monoplane a paper parachute. It dropped for several hundred feet
-before it spread to the air pressure and floated more gently toward the
-earth and a moment later there burst from its basket a puff of white
-smoke. Two more parachutes followed the first and two more puffs of
-smoke. Then the machine darted rapidly off toward the northeast.
-
-Barney turned to Prince von der Tann with a smile. “They are none too
-soon,” he said.
-
-The old prince bowed in acquiescence. He had been very happy for two
-days. Lutha might be defeated now, but she could never be subdued. She
-had a king at last—a real king. Gott! How he had changed. It reminded
-Prince von der Tann of the day he had ridden beside the impostor two
-years before in the battle with the forces of Peter of Blentz. Many
-times he had caught himself scrutinizing the face of the monarch,
-searching for some proof that after all he was not Leopold.
-
-“Direct the commanders of forts three and four to concentrate their
-fire on the enemy’s guns directly north of Fort No. 3,” Barney directed
-an aide. “Simultaneously let the cavalry and Colonel Kazov’s infantry
-make a determined assault on the Austrian trenches.”
-
-Then he turned his horse toward the left of his line, where, a little
-to the rear, lay the fresh troops that he had been holding in readiness
-against this very moment. As he galloped across the plain, his staff at
-his heels, shrapnel burst about them. Von der Tann spurred to his side.
-
-“Sire,” he cried, “it is unnecessary that you take such grave risks.
-Your staff is ready and willing to perform such service that you may be
-preserved to your people and your throne.”
-
-“I believe the men fight better when they think their king is watching
-them,” said the American simply.
-
-“I know it, sire,” replied Von der Tann, “but even so, Lutha could ill
-afford to lose you now. I thank God, your majesty, that I have lived to
-see this day—to see the last of the Rubinroths upholding the glorious
-traditions of the Rubinroth blood.”
-
-Barney led the reserves slowly through the wood to the rear of the
-extreme left of his line. The attack upon the Austrian right center
-appeared to be meeting with much greater success than the American
-dared to hope for. Already, through his glasses, he could see
-indications that the enemy was concentrating a larger force at this
-point to repulse the vicious assaults of the Luthanians. To do this
-they must be drawing from their reserves back of other portions of
-their line.
-
-It was what Barney had desired. The three bombs from the aeroplane had
-told him that the Serbians had been sighted three miles away. Already
-they were engaging the Austrians. He could hear the rattle of rifles
-and quick-firers and the roar of cannon far to the northeast. And now
-he gave the word to the commander of the reserve.
-
-At a rapid trot the men moved forward behind the extreme left end of
-the Luthanian left wing. They were almost upon the Austrians before
-they emerged from the shelter of the wood, and then with hoarse shouts
-and leveled bayonets they charged the enemy’s position. The fight there
-was the bloodiest of the two long days. Back and forth the tide of
-battle surged. In the thick of it rode the false king encouraging his
-men to greater effort. Slowly at last they bore the Austrians from
-their trenches. Back and back they bore them until retreat became a
-rout. The Austrian right was crumpled back upon its center!
-
-Here the enemy made a determined stand; but just before dark a great
-shouting arose from the heights to their left, where the bulk of their
-artillery was stationed. Both the Luthanian and Austrian troops engaged
-in the plain saw Austrian infantry and artillery running down the
-slopes in disorderly rout. Upon their heads came a cheering line of
-soldiers firing as they ran, and above them waved the battleflag of
-Serbia.
-
-A mighty shout rose from the Luthanian ranks—an answering groan from
-the throats of the Austrians. Hemmed in between the two lines of
-allies, the Austrians were helpless. Their artillery was captured,
-retreat cut off. There was but a single alternative to massacre—the
-white flag.
-
-A few regiments between Lustadt and Blentz, but nearer the latter town,
-escaped back into Austria, the balance Barney arranged with the Serbian
-minister to have taken back to Serbia as prisoners of war. The
-Luthanian army corps that the American had promised the Serbs was to be
-utilized along the Austrian frontier to prevent the passage of Austrian
-troops into Serbia through Lutha.
-
-The return to Lustadt after the battle was made through cheering troops
-and along streets choked with joy-mad citizenry. The name of the
-soldier-king was upon every tongue. Men went wild with enthusiasm as
-the tall figure rode slowly through the crowd toward the palace.
-
-Von der Tann, grim and martial, found his lids damp with the moisture
-of a great happiness. Even now with all the proofs of reality about
-him, it seemed impossible that this scene could be aught but the
-ephemeral vapors of a dream—that Leopold of Lutha, the coward, the
-craven, could have become in a single day the heroic figure that had
-loomed so large upon the battlefield of Lustadt—the simple, modest
-gentleman who received the plaudits of his subjects with bowed head and
-humble mien.
-
-As Barney Custer rode up Margaretha Street toward the royal palace of
-the kings of Lutha, a dust-covered horseman in the uniform of an
-officer of the Horse Guards entered Lustadt from the south. It was the
-young aide of Prince von der Tann’s staff, who had been sent to Blentz
-nearly a week earlier with a message for the king, and who had been
-captured and held by the Austrians.
-
-During the battle before Lustadt all the Austrian troops had been
-withdrawn from Blentz and hurried to the front. It was then that the
-aide had been transferred to the castle, from which he had escaped
-early that morning. To reach Lustadt he had been compelled to circle
-the Austrian position, coming to Lustadt from the south.
-
-Once within the city he rode straight to the palace, flung himself from
-his jaded mount, and entered the left wing of the building—the wing in
-which the private apartments of the chancellor were located.
-
-Here he inquired for the Princess Emma, learning with evident relief
-that she was there. A moment later, white with dust, his face streamed
-with sweat, he was ushered into her presence.
-
-“Your highness,” he blurted, “the king’s commands have been
-disregarded—the American is to be shot tomorrow. I have just escaped
-from Blentz. Peter is furious. He realizes that whether the Austrians
-win or lose, his standing with the king is gone forever.
-
-“In a fit of rage he has ordered that Mr. Custer be sacrificed to his
-desire for revenge, in the hope that it will insure for him the favor
-of the Austrians. Something must be done at once if he is to be saved.”
-
-For a moment the girl swayed as though about to fall. The young officer
-stepped quickly to support her, but before he reached her side she had
-regained complete mastery of herself. From the street without there
-rose the blare of trumpets and the cheering of the populace.
-
-Through senses numb with the cold of anguish the meaning of the tumult
-slowly filtered to her brain—the king had come. He was returning from
-the battlefield, covered with honors and flushed with glory—the man who
-was to be her husband; but there was no rejoicing in the heart of the
-Princess Emma.
-
-Instead, there was a dull ache and impotent rebellion at the injustice
-of the thing—that Leopold should be reaping these great rewards, while
-he who had made it possible for him to be a king at all was to die on
-the morrow because of what he had done to place the Rubinroth upon his
-throne.
-
-“Perhaps Lieutenant Butzow might find a way,” suggested the officer.
-“He or your father; they are both fond of Mr. Custer.”
-
-“Yes,” said the girl dully, “see Lieutenant Butzow—he would do the
-most.”
-
-The officer bowed and hastened from the apartment in search of Butzow.
-The girl approached the window and stood there for a long time, looking
-out at the surging multitude that pressed around the palace gates,
-filling Margaretha Street with a solid mass of happy faces.
-
-They cheered the king, the chancellor, the army; but most often they
-cheered the king. From a despised monarch Leopold had risen in a single
-bound to the position of a national idol.
-
-Repeatedly he was called to the balcony over the grand entrance that
-the people might feast their eyes on him. The princess wondered how
-long it was before she herself would be forced to offer her
-congratulations and, perchance, suffer his caresses. She shivered and
-cringed at the thought, and then there came a knock upon the door, and
-in answer to her permission it opened, and the king stood upon the
-threshold alone.
-
-At a glance the man took in the pain and sorrow mirrored upon the
-girl’s face. He stepped quickly across the room toward her.
-
-“What is it?” he asked. “What is the matter?”
-
-For a moment he had forgotten the part that he had been playing—forgot
-that the Princess Emma was ignorant of his identity. He had come to her
-to share with her the happiness of the hour—the glory of the victorious
-arms of Lutha. For a time he had almost forgotten that he was not the
-king, and now he was forgetting that he was not Barney Custer to the
-girl who stood before him with misery and hopelessness writ so large
-upon her countenance.
-
-For a brief instant the girl did not reply. She was weighing the
-problematical value of an attempt to enlist the king in the cause of
-the American. Leopold had shown a spark of magnanimity when he had
-written a pardon for Mr. Custer; might he not rise again above his
-petty jealousy and save the American’s life? It was a forlorn hope to
-the woman who knew the true Leopold so well; but it was a hope.
-
-“What is the matter?” the king repeated.
-
-“I have just received word that Prince Peter has ignored your commands,
-sire,” replied the girl, “and that Mr. Custer is to be shot tomorrow.”
-
-Barney’s eyes went wide with incredulity. Here was a pretty pass,
-indeed! The princess came close to him and seized his arm.
-
-“You promised, sire,” she said, “that he would not be harmed—you gave
-your royal word. You can save him. You have an army at your command. Do
-not forget that he once saved you.”
-
-The note of appeal in her voice and the sorrow in her eyes gave Barney
-Custer a twinge of compunction. The necessity for longer concealing his
-identity in so far as the salvation of Lutha was concerned seemed past;
-but the American had intended to carry the deception to the end.
-
-He had given the matter much thought, but he could find no grounds for
-belief that Emma von der Tann would be any happier in the knowledge
-that her future husband had had nothing to do with the victory of his
-army. If she was doomed to a life at his side, why not permit her the
-grain of comfort that she might derive from the memory of her husband’s
-achievements upon the battlefield of Lustadt? Why rob her of that
-little?
-
-But now, face to face with her, and with the evidence of her suffering
-so plain before him, Barney’s intentions wavered. Like most fighting
-men, he was tender in his dealings with women. And now the last straw
-came in the form of a single tiny tear that trickled down the girl’s
-cheek. He seized the hand that lay upon his arm.
-
-“Your highness,” he said, “do not grieve for the American. He is not
-worth it. He has deceived you. He is not at Blentz.”
-
-The girl drew her hand from his and straightened to her full height.
-
-“What do you mean, sire?” she exclaimed. “Mr. Custer would not deceive
-me even if he had an opportunity—which he has not had. But if he is not
-at Blentz, where is he?”
-
-Barney bowed his head and looked at the floor.
-
-“He is here, your highness, asking your forgiveness,” he said.
-
-There was a puzzled expression upon the girl’s face as she looked at
-the man before her. She did not understand. Why should she? Barney drew
-a diamond ring from his little finger and held it out to her.
-
-“You gave it to me to cut a hole in the window of the garage where I
-stole the automobile,” he said. “I forgot to return it. Now do you know
-who I am?”
-
-Emma von der Tann’s eyes showed her incredulity; then, act by act, she
-recalled all that this man had said and done since they had escaped
-from Blentz that had been so unlike the king she knew.
-
-“When did you assume the king’s identity?” she asked.
-
-Barney told her all that had transpired in the king’s apartments at
-Blentz before she had been conducted to the king’s presence.
-
-“And Leopold is there now?” she asked.
-
-“He is there,” replied Barney, “and he is to be shot in the morning.”
-
-“Gott!” exclaimed the girl. “What are we to do?”
-
-“There is but one thing to do,” replied the American, “and that is for
-Butzow and me to ride to Blentz as fast as horses will carry us and
-rescue the king.”
-
-“And then?” asked the girl, a shadow crossing her face.
-
-“And then Barney Custer will have to beat it for the boundary,” he
-replied with a sorry smile.
-
-She came quite close to him, laying her hands upon his shoulders.
-
-“I cannot give you up now,” she said simply. “I have tried to be loyal
-to Leopold and the promise that my father made his king when I was only
-a little girl; but since I thought that you were to be shot, I have
-wished a thousand times that I had gone with you to America two years
-ago. Take me with you now, Barney. We can send Lieutenant Butzow to
-rescue the king, and before he has returned we can be safe across the
-Serbian frontier.”
-
-The American shook his head.
-
-“I got the king into this mess and I must get him out,” he said. “He
-may deserve to be shot, but it is up to me to prevent it, if I can. And
-there is your father to consider. If Butzow rides to Blentz and rescues
-the king, it may be difficult to get him back to Lustadt without the
-truth of his identity and mine becoming known. With me there, the
-change can be effected easily, and not even Butzow need know what has
-happened.
-
-“If the people should guess that it was not Leopold who won the battle
-of Lustadt there might be the devil to pay, and your father would go
-down along with the throne. No, I must stay until Leopold is safe in
-Lustadt. But there is a hope for us. I may be able to wrest from
-Leopold his sanction of our marriage. I shall not hesitate to use
-threats to get it, and I rather imagine that he will be in such a
-terror-stricken condition that he will assent to any terms for his
-release from Blentz. If he gives me such a paper, Emma, will you marry
-me?”
-
-Perhaps there never had been a stranger proposal than this; but to
-neither did it seem strange. For two years each had known the love of
-the other. The girl’s betrothal to the king had prevented an avowal of
-their love while Barney posed in his own identity. Now they merely
-accepted the conditions that had existed for two years as though a
-matter of fact which had been often discussed between them.
-
-“Of course I’ll marry you,” said the princess. “Why in the world would
-I want you to take me to America otherwise?”
-
-As Barney Custer took her in his arms he was happier than he had ever
-before been in all his life, and so, too, was the Princess Emma von der
-Tann.
-
-### XII. LEOPOLD WAITS FOR DAWN
-
-After the American had shoved him through the secret doorway into the
-tower room of the castle of Blentz, Leopold had stood for several
-minutes waiting for the next command from his captor. Presently,
-hearing no sound other than that of his own breathing, the king
-ventured to speak. He asked the American what he purposed doing with
-him next.
-
-There was no reply. For another minute the king listened intently; then
-he raised his hands and removed the bandage from his eyes. He looked
-about him. The room was vacant except for himself. He recognized it as
-the one in which he had spent ten years of his life as a prisoner. He
-shuddered. What had become of the American? He approached the door and
-listened. Beyond the panels he could hear the two soldiers on guard
-there conversing. He called to them.
-
-“What do you want?” shouted one of the men through the closed door.
-
-“I want Prince Peter!” yelled the king. “Send him at once!”
-
-The soldiers laughed.
-
-“He wants Prince Peter,” they mocked. “Wouldn’t you rather have us send
-the king to you?” they asked.
-
-“I am the king!” yelled Leopold. “I am the king! Open the door, pigs,
-or it will go hard with you! I shall have you both shot in the morning
-if you do not open the door and fetch Prince Peter.”
-
-“Ah!” exclaimed one of the soldiers. “Then there will be three of us
-shot together.”
-
-Leopold went white. He had not connected the sentence of the American
-with himself; but now, quite vividly, he realized what it might mean to
-him if he failed before dawn to convince someone that he was not the
-American. Peter would not be awake at so early an hour, and if he had
-no better success with others than he was having with these soldiers,
-it was possible that he might be led out and shot before his identity
-was discovered. The thing was preposterous. The king’s knees became
-suddenly quite weak. They shook, and his legs gave beneath his weight
-so that he had to lean against the back of a chair to keep from
-falling.
-
-Once more he turned to the soldiers. This time he pleaded with them,
-begging them to carry word to Prince Peter that a terrible mistake had
-been made, and that it was the king and not the American who was
-confined in the death chamber. But the soldiers only laughed at him,
-and finally threatened to come in and beat him if he again interrupted
-their conversation.
-
-It was a white and shaken prisoner that the officer of the guard found
-when he entered the room at dawn. The man before him, his face streaked
-with tears of terror and self-pity, fell upon his knees before him,
-beseeching him to carry word to Peter of Blentz, that he was the king.
-The officer drew away with a gesture of disgust.
-
-“I might well believe from your actions that you are Leopold,” he said;
-“for, by Heaven, you do not act as I have always imagined the American
-would act in the face of danger. He has a reputation for bravery that
-would suffer could his admirers see him now.”
-
-“But I am not the American,” pleaded the king. “I tell you that the
-American came to my apartments last night, overpowered me, forced me to
-change clothing with him, and then led me back here.”
-
-A sudden inspiration came to the king with the memory of all that had
-transpired during that humiliating encounter with the American.
-
-“I signed a pardon for him!” he cried. “He forced me to do so. If you
-think I am the American, you cannot kill me now, for there is a pardon
-signed by the king, and an order for the American’s immediate release.
-Where is it? Do not tell me that Prince Peter did not receive it.”
-
-“He received it,” replied the officer, “and I am here to acquaint you
-with the fact, but Prince Peter said nothing about your release. All he
-told me was that you were not to be shot this morning,” and the man
-emphasized the last two words.
-
-Leopold of Lutha spent two awful days a prisoner at Blentz, not knowing
-at what moment Prince Peter might see fit to carry out the verdict of
-the Austrian court martial. He could convince no one that he was the
-king. Peter would not even grant him an audience. Upon the evening of
-the third day, word came that the Austrians had been defeated before
-Lustadt, and those that were not prisoners were retreating through
-Blentz toward the Austrian frontier.
-
-The news filtered to Leopold’s prison room through the servant who
-brought him his scant and rough fare. The king was utterly disheartened
-before this word reached him. For the moment he seemed to see a ray of
-hope, for, since the impostor had been victorious, he would be in a
-position to force Peter of Blentz to give up the true king.
-
-There was the chance that the American, flushed with success and power,
-might elect to hold the crown he had seized. Who would guess the
-transfer that had been effected, or, guessing, would dare voice his
-suspicions in the face of the power and popularity that Leopold knew
-such a victory as the impostor had won must have given him in the
-hearts and minds of the people of Lutha? Still, there was a bare
-possibility that the American would be as good as his word, and return
-the crown as he had promised. Though he hated to admit it, the king had
-every reason to believe that the impostor was a man of honor, whose
-bare word was as good as another’s bond.
-
-He was commencing, under this line of reasoning, to achieve a certain
-hopeful content when the door to his prison opened and Peter of Blentz,
-black and scowling, entered. At his elbow was Captain Ernst Maenck.
-
-“Leopold has defeated the Austrians,” announced the former. “Until you
-returned to Lutha he considered the Austrians his best friends. I do
-not know how you could have reached or influenced him. It is to learn
-how you accomplished it that I am here. The fact that he signed your
-pardon indicates that his attitude toward you changed suddenly—almost
-within an hour. There is something at the bottom of it all, and that
-something I must know.”
-
-“I am Leopold!” cried the king. “Don’t you recognize me, Prince Peter?
-Look at me! Maenck must know me. It was I who wrote and signed the
-American’s pardon—at the point of the American’s revolver. He forced me
-to exchange clothing with him, and then he brought me here to this room
-and left me.”
-
-The two men looked at the speaker and smiled.
-
-“You bank too strongly, my friend,” said Peter of Blentz, “upon your
-resemblance to the king of Lutha. I will admit that it is strong, but
-not so strong as to convince me of the truth of so improbable a story.
-How in the world could the American have brought you through the
-castle, from one end to the other, unseen? There was a guard before the
-king’s door and another before this. No, Herr Custer, you will have to
-concoct a more plausible tale.
-
-“No,” and Peter of Blentz scowled savagely, as though to impress upon
-his listener the importance of his next utterance, “there were more
-than you and the king involved in his sudden departure from Blentz and
-in his hasty change of policy toward Austria. To be quite candid, it
-seems to me that it may be necessary to my future welfare—vitally
-necessary, I may say—to know precisely how all this occurred, and just
-what influence you have over Leopold of Lutha. Who was it that acted as
-the go-between in the king’s negotiations with you, or rather, yours
-with the king? And what argument did you bring to bear to force Leopold
-to the action he took?”
-
-“I have told you all that I know about the matter,” whined the king.
-“The American appeared suddenly in my apartment. When he brought me
-here he first blindfolded me. I have no idea by what route we traveled
-through the castle, and unless your guards outside this door were
-bribed they can tell you more about how we got in here than I
-can—provided we entered through that doorway,” and the king pointed to
-the door which had just opened to admit his two visitors.
-
-“Oh, pshaw!” exclaimed Maenck. “There is but one door to this room—if
-the king came in here at all, he came through that door.”
-
-“Enough!” cried Peter of Blentz. “I shall not be trifled with longer. I
-shall give you until tomorrow morning to make a full explanation of the
-truth and to form some plan whereby you may utilize once more whatever
-influence you had over Leopold to the end that he grant to myself and
-my associates his royal assurance that our lives and property will be
-safe in Lutha.”
-
-“But I tell you it is impossible,” wailed the king.
-
-“I think not,” sneered Prince Peter, “especially when I tell you that
-if you do not accede to my wishes the order of the Austrian military
-court that sentenced you to death at Burgova will be carried out in the
-morning.”
-
-With his final words the two men turned and left the room. Behind them,
-upon the floor, inarticulate with terror, knelt Leopold of Lutha, his
-hands outstretched in supplication.
-
-The long night wore its weary way to dawn at last. The sleepless man,
-alternately tossing upon his bed and pacing the floor, looked fearfully
-from time to time at the window through which the lightening of the sky
-would proclaim the coming day and his last hour on earth. His windows
-faced the west. At the foot of the hill beneath the castle nestled the
-village of Blentz, once more enveloped in peaceful silence since the
-Austrians were gone.
-
-An unmistakable lessening of the darkness in the east had just
-announced the proximity of day, when the king heard a clatter of
-horses’ hoofs upon the road before the castle. The sound ceased at the
-gates and a loud voice broke out upon the stillness of the dying night
-demanding entrance “in the name of the king.”
-
-New hope burst aflame in the breast of the condemned man. The impostor
-had not forsaken him. Leopold ran to the window, leaning far out. He
-heard the voices of the sentries in the barbican as they conversed with
-the newcomers. Then silence came, broken only by the rapid footsteps of
-a soldier hastening from the gate to the castle. His hobnail shoes
-pounding upon the cobbles of the courtyard echoed among the angles of
-the lofty walls. When he had entered the castle the silence became
-oppressive. For five minutes there was no sound other than the pawing
-of the horses outside the barbican and the subdued conversation of
-their riders.
-
-Presently the soldier emerged from the castle. With him was an officer.
-The two went to the barbican. Again there was a parley between the
-horsemen and the guard. Leopold could hear the officer demanding terms.
-He would lower the drawbridge and admit them upon conditions.
-
-One of these the king overheard—it concerned an assurance of full
-pardon for Peter of Blentz and the garrison; and again Leopold heard
-the officer addressing someone as “your majesty.”
-
-Ah, the impostor was there in person. Ach, Gott! How Leopold of Lutha
-hated him, and yet, in the hands of this American lay not only his
-throne but his very life as well.
-
-Evidently the negotiations proved unsuccessful for after a time the
-party wheeled their horses from the gate and rode back toward Blentz.
-As the sound of the iron-shod hoofs diminished in the distance, with
-them diminished the hopes of the king.
-
-When they ceased entirely his hopes were at an end, to be supplanted by
-renewed terror at the turning of the knob of his prison door as it
-swung open to admit Maenck and a squad of soldiers.
-
-“Come!” ordered the captain. “The king has refused to intercede in your
-behalf. When he returns with his army he will find your body at the
-foot of the west wall in the courtyard.”
-
-With an ear-piercing shriek that rang through the grim old castle,
-Leopold of Lutha flung his arms above his head and lunged forward upon
-his face. Roughly the soldiers seized the unconscious man and dragged
-him from the room.
-
-Along the corridor they hauled him and down the winding stairs within
-the north tower to the narrow slit of a door that opened upon the
-courtyard. To the foot of the west wall they brought him, tossing him
-brutally to the stone flagging. Here one of the soldiers brought a
-flagon of water and dashed it in the face of the king. The cold douche
-returned Leopold to a consciousness of the nearness of his impending
-fate.
-
-He saw the little squad of soldiers before him. He saw the cold, gray
-wall behind, and, above, the cold, gray sky of early dawn. The dismal
-men leaning upon their shadowy guns seemed unearthly specters in the
-weird light of the hour that is neither God’s day nor devil’s night.
-With difficulty two of them dragged Leopold to his feet.
-
-Then the dismal men formed in line before him at the opposite side of
-the courtyard. Maenck stood to the left of them. He was giving
-commands. They fell upon the doomed man’s ears with all the cruelty of
-physical blows. Tears coursed down his white cheeks. With incoherent
-mumblings he begged for his life. Leopold, King of Lutha, trembling in
-the face of death!
-
-### XIII. THE TWO KINGS
-
-Twenty troopers had ridden with Lieutenant Butzow and the false king
-from Lustadt to Blentz. During the long, hard ride there had been
-little or no conversation between the American and his friend, for
-Butzow was still unsuspicious of the true identity of the man who posed
-as the ruler of Lutha. The lieutenant was all anxiety to reach Blentz
-and rescue the American he thought imprisoned there and in danger of
-being shot.
-
-At the gate they were refused admittance unless the king would accept
-conditions. Barney refused—there was another way to gain entrance to
-Blentz that not even the master of Blentz knew. Butzow urged him to
-accede to anything to save the life of the American. He recalled all
-that the latter had done in the service of Lutha and Leopold. Barney
-leaned close to the other’s ear.
-
-“If they have not already shot him,” he whispered, “we shall save the
-prisoner yet. Let them think that we give up and are returning to
-Lustadt. Then follow me.”
-
-Slowly the little cavalcade rode down from the castle of Blentz toward
-the village. Just out of sight of the grim pile where the road wound
-down into a ravine Barney turned his horse’s head up the narrow defile.
-In single file Butzow and the troopers followed until the rank
-undergrowth precluded farther advance. Here the American directed that
-they dismount, and, leaving the horses in charge of three troopers, set
-out once more with the balance of the company on foot.
-
-It was with difficulty that the men forced their way through the
-bushes, but they had not gone far when their leader stopped before a
-sheer wall of earth and stone, covered with densely growing shrubbery.
-Here he groped in the dim light, feeling his way with his hands before
-him, while at his heels came his followers. At last he separated a wall
-of bushes and disappeared within the aperture his hands had made. One
-by one his men followed, finding themselves in inky darkness, but upon
-a smooth stone floor and with stone walls close upon either hand. Those
-who lifted their hands above their heads discovered an arched stone
-ceiling close above them.
-
-Along this buried corridor the “king” led them, for though he had never
-traversed it himself the Princess Emma had, and from her he had
-received minute directions. Occasionally he struck a match, and
-presently in the fitful glare of one of these he and those directly
-behind him saw the foot of a ladder that disappeared in the Stygian
-darkness above.
-
-“Follow me up this, very quietly,” he said to those behind him. “Up to
-the third landing.”
-
-They did as he bid them. At the third landing Barney felt for the latch
-he knew was there—he was on familiar ground now. Finding it he pushed
-open the door it held in place, and through a tiny crack surveyed the
-room beyond. It was vacant. The American threw the door wide and
-stepped within. Directly behind him was Butzow, his eyes wide in
-wonderment. After him filed the troopers until seventeen of them stood
-behind their lieutenant and the “king.”
-
-Through the window overlooking the courtyard came a piteous wailing.
-Barney ran to the casement and looked out. Butzow was at his side.
-
-“_Himmel!_” ejaculated the Luthanian. “They are about to shoot him.
-Quick, your majesty,” and without waiting to see if he were followed
-the lieutenant raced for the door of the apartment. Close behind him
-came the American and the seventeen.
-
-It took but a moment to reach the stairway down which the rescuers
-tumbled pell-mell.
-
-Maenck was giving his commands to the firing squad with fiendish
-deliberation and delay. He seemed to enjoy dragging out the agony that
-the condemned man suffered. But it was this very cruelty that caused
-Maenck’s undoing and saved the life of Leopold of Lutha. Just before he
-gave the word to fire Maenck paused and laughed aloud at the pitiable
-figure trembling and whining against the stone wall before him, and
-during that pause a commotion arose at the tower doorway behind the
-firing squad.
-
-Maenck turned to discover the cause of the interruption, and as he
-turned he saw the figure of the king leaping toward him with leveled
-revolver. At the king’s back a company of troopers of the Royal Horse
-Guard was pouring into the courtyard.
-
-Maenck snatched his own revolver from his hip and fired point-blank at
-the “king.” The firing squad had turned at the sound of assault from
-the rear. Some of them discharged their pieces at the advancing
-troopers. Butzow gave a command and seventeen carbines poured their
-deadly hail into the ranks of the Blentz retainers. At Maenck’s shot
-the “king” staggered and fell to the pavement.
-
-Maenck leaped across his prostrate form, yelling to his men “Shoot the
-American.” Then he was lost to Barney’s sight in the hand-to-hand
-scrimmage that was taking place. The American tried to regain his feet,
-but the shock of the wound in his breast had apparently paralyzed him
-for the moment. A Blentz soldier was running toward the prisoner
-standing open-mouthed against the wall. The fellow’s rifle was raised
-to his hip—his intention was only too obvious.
-
-Barney drew himself painfully and slowly to one elbow. The man was
-rapidly nearing the true Leopold. In another moment he would shoot. The
-American raised his revolver and, taking careful aim, fired. The
-soldier shrieked, covered his face with his hands, spun around once,
-and dropped at the king’s feet.
-
-The troopers under Butzow were forcing the men of Blentz toward the far
-end of the courtyard. Two of the Blentz faction were standing a little
-apart, backing slowly away and at the same time deliberately firing at
-the king. Barney seemed the only one who noticed them. Once again he
-raised his revolver and fired. One of the men sat down suddenly, looked
-vacantly about him, and then rolled over upon his side. The other fired
-once more at the king and the same instant Barney fired at the soldier.
-Soldier and king—would-be assassin and his victim—fell simultaneously.
-Barney grimaced. The wound in his breast was painful. He had done his
-best to save the king. It was no fault of his that he had failed. It
-was a long way to Beatrice. He wondered if Emma von der Tann would be
-on the station platform, awaiting him—then he swooned.
-
-Butzow and his seventeen had it all their own way in the courtyard and
-castle of Blentz. After the first resistance the soldiery of Peter fled
-to the guardroom. Butzow followed them, and there they laid down their
-arms. Then the lieutenant returned to the courtyard to look for the
-king and Barney Custer. He found them both, and both were wounded. He
-had them carried to the royal apartments in the north tower. When
-Barney regained consciousness he found the scowling portrait of the
-Blentz princess frowning down upon him. He lay upon a great bed where
-the soldiers, thinking him king, had placed him. Opposite him, against
-the farther wall, the real king lay upon a cot. Butzow was working over
-him.
-
-“Not so bad, after all, Barney,” the lieutenant was saying. “Only a
-flesh wound in the calf of the leg.”
-
-The king made no reply. He was afraid to declare his identity. First he
-must learn the intentions of the impostor. He only closed his eyes
-wearily. Presently he asked a question.
-
-“Is he badly wounded?” and he indicated the figure upon the great bed.
-
-Butzow turned and crossed to where the American lay. He saw that the
-latter’s eyes were open and that he was conscious.
-
-“How does your majesty feel?” he asked. There was more respect in his
-tone than ever before. One of the Blentz soldiers had told him how the
-“king,” after being wounded by Maenck, had raised himself upon his
-elbow and saved the prisoner’s life by shooting three of his
-assailants.
-
-“I thought I was done for,” answered Barney Custer, “but I rather guess
-the bullet struck only a glancing blow. It couldn’t have entered my
-lungs, for I neither cough nor spit blood. To tell you the truth, I
-feel surprisingly fit. How’s the prisoner?”
-
-“Only a flesh wound in the calf of his left leg, sire,” replied Butzow.
-
-“I am glad,” was Barney’s only comment. He didn’t want to be king of
-Lutha; but he had foreseen that with the death of the king his
-imposture might be forced upon him for life.
-
-After Butzow and one of the troopers had washed and dressed the wounds
-of both men Barney asked them to leave the room.
-
-“I wish to sleep,” he said. “If I require you I will ring.”
-
-Saluting, the two backed from the apartment. Just as they were passing
-through the doorway the American called out to Butzow.
-
-“You have Peter of Blentz and Maenck in custody?” he asked.
-
-“I regret having to report to your majesty,” replied the officer, “that
-both must have escaped. A thorough search of the entire castle has
-failed to reveal them.”
-
-Barney scowled. He had hoped to place these two conspirators once and
-for all where they would never again threaten the peace of the throne
-of Lutha—in hell. For a moment he lay in thought. Then he addressed the
-officer again.
-
-“Leave your force here,” he said, “to guard us. Ride, yourself, to
-Lustadt and inform Prince von der Tann that it is the king’s desire
-that every effort be made to capture these two men. Have them brought
-to Lustadt immediately they are apprehended. Bring them dead or alive.”
-
-Again Butzow saluted and prepared to leave the room.
-
-“Wait,” said Barney. “Convey our greetings to the Princess von der
-Tann, and inform her that my wound is of small importance, as is also
-that of the—Mr. Custer. You may go, lieutenant.”
-
-When they were alone Barney turned toward the king. The other lay upon
-his side glaring at the American. When he caught the latter’s eyes upon
-him he spoke.
-
-“What do you intend doing with me?” he said. “Are you going to keep
-your word and return my identity?”
-
-“I have promised,” replied Barney, “and what I promise I always
-perform.”
-
-“Then exchange clothing with me at once,” cried the king, half rising
-from his cot.
-
-“Not so fast, my friend,” rejoined the American. “There are a few
-trifling details to be arranged before we resume our proper
-personalities.”
-
-“Do you realize that you should be hanged for what you have done?”
-snarled the king. “You assaulted me, stole my clothing, left me here to
-be shot by Peter, and sat upon my throne in Lustadt while I lay a
-prisoner condemned to death.”
-
-“And do you realize,” replied Barney, “that by so doing I saved your
-foolish little throne for you; that I drove the invaders from your
-dominions; that I have unmasked your enemies, and that I have once
-again proven to you that the Prince von der Tann is your best friend
-and most loyal supporter?”
-
-“You laid your plebeian hands upon me,” cried the king, raising his
-voice. “You humiliated me, and you shall suffer for it.”
-
-Barney Custer eyed the king for a long moment before he spoke again. It
-was difficult to believe that the man was so devoid of gratitude, and
-so blind as not to see that even the rough treatment that he had
-received at the American’s hands was as nothing by comparison with the
-service that the American had done him. Apparently Leopold had already
-forgotten that three times Barney Custer had saved his life in the
-courtyard below. From the man’s demeanor, now that his life was no
-longer at stake, Barney caught an inkling of what his attitude might be
-when once again he was returned to the despotic power of his kingship.
-
-“It is futile to reason with you,” he said. “There is only one way to
-handle such as you. At present I hold the power to coerce you, and I
-shall continue to hold that power until I am safely out of your
-two-by-four kingdom. If you do as I say you shall have your throne back
-again. If you refuse, why by Heaven you shall never have it. I’ll stay
-king of Lutha myself.”
-
-“What are your terms?” asked the king.
-
-“That Prince Peter of Blentz, Captain Ernst Maenck, and old Von Coblich
-be tried, convicted, and hanged for high treason,” replied the
-American.
-
-“That is easy,” said the king. “I should do so anyway immediately I
-resumed my throne. Now get up and give me my clothes. Take this cot and
-I will take the bed. None will know of the exchange.”
-
-“Again you are too fast,” answered Barney. “There is another
-condition.”
-
-“Well?”
-
-“You must promise upon your royal honor that Ludwig, Prince von der
-Tann, remain chancellor of Lutha during your life or his.”
-
-“Very well,” assented the king. “I promise,” and again he half rose
-from his cot.
-
-“Hold on a minute,” admonished the American; “there is yet one more
-condition of which I have not made mention.”
-
-“What, another?” exclaimed Leopold testily. “How much do you want for
-returning to me what you have stolen?”
-
-“So far I have asked for nothing for myself,” replied Barney. “Now I am
-coming to that part of the agreement. The Princess Emma von der Tann is
-betrothed to you. She does not love you. She has honored me with her
-affection, but she will not wed until she has been formally released
-from her promise to wed Leopold of Lutha. The king must sign such a
-release and also a sanction of her marriage to Barney Custer, of
-Beatrice. Do you understand what I want?”
-
-The king went livid. He came to his feet beside the cot. For the
-moment, his wound was forgotten. He tottered toward the impostor.
-
-“You scoundrel!” he screamed. “You scoundrel! You have stolen my
-identity and my throne and now you wish to steal the woman who loves
-me.”
-
-“Don’t get excited, Leo,” warned the American, “and don’t talk so loud.
-The Princess doesn’t love you, and you know it as well as I. She will
-never marry you. If you want your dinky throne back you’ll have to do
-as I desire; that is, sign the release and the sanction.
-
-“Now let’s don’t have any heroics about it. You have the proposition.
-Now I am going to sleep. In the meantime you may think it over. If the
-papers are not ready when it comes time for us to leave, and from the
-way I feel now I rather think I shall be ready to mount a horse by
-morning, I shall ride back to Lustadt as king of Lutha, and I shall
-marry her highness into the bargain, and you may go hang!
-
-“How the devil you will earn a living with that king job taken away
-from you I don’t know. You’re a long way from New York, and in the
-present state of carnage in Europe I rather doubt that there are many
-headwaiters jobs open this side of the American metropolis, and I can’t
-for the moment think of anything else at which you would shine—with all
-due respect to some excellent headwaiters I have known.”
-
-For some time the king remained silent. He was thinking. He realized
-that it lay in the power of the American to do precisely what he had
-threatened to do. No one would doubt his identity. Even Peter of Blentz
-had not recognized the real king despite Leopold’s repeated and
-hysterical claims.
-
-Lieutenant Butzow, the American’s best friend, had no more suspected
-the exchange of identities. Von der Tann, too, must have been deceived.
-Everyone had been deceived. There was no hope that the people, who
-really saw so little of their king, would guess the deception that was
-being played upon them. Leopold groaned. Barney opened his eyes and
-turned toward him.
-
-“What’s the matter?” he asked.
-
-“I will sign the release and the sanction of her highness’ marriage to
-you,” said the king.
-
-“Good!” exclaimed the American. “You will then go at once to Brosnov as
-originally planned. I will return to Lustadt and get her highness, and
-we will immediately leave Lutha via Brosnov. There you and I will
-effect a change of raiment, and you will ride back to Lustadt with the
-small guard that accompanies her highness and me to the frontier.”
-
-“Why do you not remain in Lustadt?” asked the king. “You could as well
-be married there as elsewhere.”
-
-“Because I don’t trust your majesty,” replied the American. “It must be
-done precisely as I say or not at all. Are you agreeable?”
-
-The king assented with a grumpy nod.
-
-“Then get up and write as I dictate,” said Barney. Leopold of Lutha did
-as he was bid. The result was two short, crisply worded documents. At
-the bottom of each was the signature of Leopold of Lutha. Barney took
-the two papers and carefully tucked them beneath his pillow.
-
-“Now let’s sleep,” he said. “It is getting late and we both need the
-rest. In the morning we have long rides ahead of us. Good night.”
-
-The king did not respond. In a short time Barney was fast asleep. The
-light still burned.
-
-### XIV. “THE KING’S WILL IS LAW”
-
-The Blentz princess frowned down upon the king and impostor impartially
-from her great gilt frame. It must have been close to midnight that the
-painting moved—just a fraction of an inch. Then it remained motionless
-for a time. Again it moved. This time it revealed a narrow crack at its
-edge. In the crack an eye shone.
-
-One of the sleepers moved. He opened his eyes. Stealthily he raised
-himself on his elbow and gazed at the other across the apartment. He
-listened intently. The regular breathing of the sleeper proclaimed the
-soundness of his slumber. Gingerly the man placed one foot upon the
-floor. The eye glued to the crack at the edge of the great, gilt frame
-of the Blentz princess remained fastened upon him. He let his other
-foot slip to the floor beside the first. Carefully he raised himself
-until he stood erect upon the floor. Then, on tiptoe he started across
-the room.
-
-The eye in the dark followed him. The man reached the side of the
-sleeper. Bending over he listened intently to the other’s breathing.
-Satisfied that slumber was profound he stepped quickly to a wardrobe in
-which a soldier had hung the clothing of both the king and the
-American. He took down the uniform of the former, casting from time to
-time apprehensive glances toward the sleeper. The latter did not stir,
-and the other passed to the little dressing-room adjoining.
-
-A few minutes later he reentered the apartment fully clothed and
-wearing the accouterments of Leopold of Lutha. In his hand was a drawn
-sword. Silently and swiftly he crossed to the side of the sleeping man.
-The eye at the crack beside the gilded frame pressed closer to the
-aperture. The sword was raised above the body of the slumberer—its
-point hovered above his heart. The face of the man who wielded it was
-hard with firm resolve.
-
-His muscles tensed to drive home the blade, but something held his
-hand. His face paled. His shoulders contracted with a little shudder,
-and he turned toward the door of the apartment, almost running across
-the floor in his anxiety to escape. The eye in the dark maintained its
-unblinking vigilance.
-
-With his hand upon the knob a sudden thought stayed the fugitive’s
-flight. He glanced quickly back at the sleeper—he had not moved. Then
-the man who wore the uniform of the king of Lutha recrossed the
-apartment to the bed, reached beneath one of the pillows and withdrew
-two neatly folded official-looking documents. These he placed in the
-breastpocket of his uniform. A moment later he was walking down the
-spiral stairway to the main floor of the castle.
-
-In the guardroom the troopers of the Royal Horse who were not on guard
-were stretched in slumber. Only a corporal remained awake. As the man
-entered the guardroom the corporal glanced up, and as his eyes fell
-upon the newcomer, he sprang to his feet, saluting.
-
-“Turn out the guard!” he cried. “Turn out the guard for his majesty,
-the king!”
-
-The sleeping soldiers, but half awake, scrambled to their feet, their
-muscles reacting to the command that their brains but half perceived.
-They snatched their guns from the racks and formed a line behind the
-corporal. The king raised his fingers to the vizor of his helmet in
-acknowledgment of their salute.
-
-“Saddle up quietly, corporal,” he said. “We shall ride to Lustadt
-tonight.”
-
-The non-commissioned officer saluted. “And an extra horse for Herr
-Custer?” he said.
-
-The king shook his head. “The man died of his wound about an hour ago,”
-he said. “While you are saddling up I shall arrange with some of the
-Blentz servants for his burial—now hurry!”
-
-The corporal marched his troopers from the guardroom toward the
-stables. The man in the king’s clothes touched a bell which was
-obviously a servant call. He waited impatiently a reply to his summons,
-tapping his finger-tips against the sword-scabbard that was belted to
-his side. At last a sleepy-eyed man responded—a man who had grown gray
-in the service of Peter of Blentz. At sight of the king he opened his
-eyes in astonishment, pulled his foretop, and bowed uneasily.
-
-“Come closer,” whispered the king. The man did so, and the king spoke
-in his ear earnestly, but in scarce audible tones. The eyes of the
-listener narrowed to mere slits—of avarice and cunning, cruelly cold
-and calculating. The speaker searched through the pockets of the king’s
-clothes that covered him. At last he withdrew a roll of bills. The
-amount must have been a large one, but he did not stop to count it. He
-held the money under the eyes of the servant. The fellow’s claw-like
-fingers reached for the tempting wealth. He nodded his head
-affirmatively.
-
-“You may trust me, sire,” he whispered.
-
-The king slipped the money into the other’s palm. “And as much more,”
-he said, “when I receive proof that my wishes have been fulfilled.”
-
-“Thank you, sire,” said the servant.
-
-The king looked steadily into the other’s face before he spoke again.
-
-“And if you fail me,” he said, “may God have mercy on your soul.” Then
-he wheeled and left the guardroom, walking out into the courtyard where
-the soldiers were busy saddling their mounts.
-
-A few minutes later the party clattered over the drawbridge and down
-the road toward Blentz and Lustadt. From a window of the apartments of
-Peter of Blentz a man watched them depart. When they passed across a
-strip of moonlit road, and he had counted them, he smiled with relief.
-
-A moment later he entered a panel beside the huge fireplace in the west
-wall and disappeared. There he struck a match, found a candle and
-lighted it. Walking a few steps he came to a figure sleeping upon a
-pile of clothing. He stooped and shook the sleeper by the shoulder.
-
-“Wake up!” he cried in a subdued voice. “Wake up, Prince Peter; I have
-good news for you.”
-
-The other opened his eyes, stretched, and at last sat up.
-
-“What is it, Maenck?” he asked querulously.
-
-“Great news, my prince,” replied the other.
-
-“While you have been sleeping many things have transpired within the
-walls of your castle. The king’s troopers have departed; but that is a
-small matter compared with the other. Here, behind the portrait of your
-great-grandmother, I have listened and watched all night. I opened the
-secret door a fraction of an inch—just enough to permit me to look into
-the apartment where the king and the American lay wounded. They had
-been talking as I opened the door, but after that they ceased—the king
-falling asleep at once—the American feigning slumber. For a long time I
-watched, but nothing happened until near midnight. Then the American
-arose and donned the king’s clothes.
-
-“He approached Leopold with drawn sword, but when he would have thrust
-it through the heart of the sleeping man his nerve failed him. Then he
-stole some papers from the room and left. Just now he has ridden out
-toward Lustadt with the men of the Royal Horse who captured the castle
-yesterday.”
-
-Before Maenck was half-way through his narrative, Peter of Blentz was
-wide awake and all attention. His eyes glowed with suddenly aroused
-interest.
-
-“Somewhere in this, prince,” concluded Maenck, “there must lie the seed
-of fortune for you and me.”
-
-Peter nodded. “Yes,” he mused, “there must.”
-
-For a time both men were buried in thought. Suddenly Maenck snapped his
-fingers. “I have it!” he cried. He bent toward Prince Peter’s ear and
-whispered his plan. When he was done the Blentz prince grasped his
-hand.
-
-“Just the thing, Maenck!” he cried. “Just the thing. Leopold will never
-again listen to idle gossip directed against our loyalty. If I know
-him—and who should know him better—he will heap honors upon you, my
-Maenck; and as for me, he will at least forgive me and take me back
-into his confidence. Lose no time now, my friend. We are free now to go
-and come, since the king’s soldiers have been withdrawn.”
-
-In the garden back of the castle an old man was busy digging a hole. It
-was a long, narrow hole, and, when it was completed, nearly four feet
-deep. It looked like a grave. When he had finished the old man hobbled
-to a shed that leaned against the south wall. Here were boards, tools,
-and a bench. It was the castle workshop. The old man selected a number
-of rough pine boards. These he measured and sawed, fitted and nailed,
-working all the balance of the night. By dawn, he had a long, narrow
-box, just a trifle smaller than the hole he had dug in the garden. The
-box resembled a crude coffin. When it was quite finished, including a
-cover, he dragged it out into the garden and set it upon two boards
-that spanned the hole, so that it rested precisely over the excavation.
-
-All these precautions methodically made, he returned to the castle. In
-a little storeroom he searched for and found an ax. With his thumb he
-felt of the edge—for an ax it was marvelously sharp. The old fellow
-grinned and shook his head, as one who appreciates in anticipation the
-consummation of a good joke. Then he crept noiselessly through the
-castle’s corridors and up the spiral stairway in the north tower. In
-one hand was the sharp ax.
-
-The moment Lieutenant Butzow had reached Lustadt he had gone directly
-to Prince von der Tann; but the moment his message had been delivered
-to the chancellor he sought out the chancellor’s daughter, to tell her
-all that had occurred at Blentz.
-
-“I saw but little of Mr. Custer,” he said. “He was very quiet. I think
-all that he has been through has unnerved him. He was slightly wounded
-in the left leg. The king was wounded in the breast. His majesty
-conducted himself in a most valiant and generous manner. Wounded, he
-lay upon his stomach in the courtyard of the castle and defended Mr.
-Custer, who was, of course, unarmed. The king shot three of Prince
-Peter’s soldiers who were attempting to assassinate Mr. Custer.”
-
-Emma von der Tann smiled. It was evident that Lieutenant Butzow had not
-discovered the deception that had been practiced upon him in common
-with all Lutha—she being the only exception. It seemed incredible that
-this good friend of the American had not seen in the heroism of the man
-who wore the king’s clothes the attributes and ear-marks of Barney
-Custer. She glowed with pride at the narration of his heroism, though
-she suffered with him because of his wound.
-
-It was not yet noon when the detachment of the Royal Horse arrived in
-Lustadt from Blentz. At their head rode one whom all upon the streets
-of the capital greeted enthusiastically as king. The party rode
-directly to the royal palace, and the king retired immediately to his
-apartments. A half hour later an officer of the king’s household
-knocked upon the door of the Princess Emma von der Tann’s boudoir. In
-accord with her summons he entered, saluted respectfully, and handed
-her a note.
-
-It was written upon the personal stationery of Leopold of Lutha. The
-girl read and reread it. For some time she could not seem to grasp the
-enormity of the thing that had overwhelmed her—the daring of the action
-that the message explained. The note was short and to the point, and
-was signed only with initials.
-
-### DEAREST EMMA:
-
-The king died of his wounds just before midnight. I shall keep the
-throne. There is no other way. None knows and none must ever know the
-truth. Your father alone may suspect; but if we are married at once our
-alliance will cement him and his faction to us. Send word by the bearer
-that you agree with the wisdom of my plan, and that we may be wed at
-once—this afternoon, in fact.
-The people may wonder for a few days at the strange haste, but my
-answer shall be that I am going to the front with my troops. The
-son and many of the high officials of the Kaiser have already
-established the precedent, marrying hurriedly upon the eve of their
-departure for the front.
-With every assurance of my undying love, believe me,
-
-Yours,
-B. C.
-
-The girl walked slowly across the room to her writing table. The
-officer stood in respectful silence awaiting the answer that the king
-had told him to bring. The princess sat down before the carved bit of
-furniture. Mechanically she drew a piece of note paper from a drawer.
-Many times she dipped her pen in the ink before she could determine
-what reply to send. Ages of ingrained royalistic principles were
-shocked and shattered by the enormity of the thing the man she loved
-had asked of her, and yet cold reason told her that it was the only
-way.
-
-Lutha would be lost should the truth be known—that the king was dead,
-for there was no heir of closer blood connection with the royal house
-than Prince Peter of Blentz, whose great-grandmother had been a
-Rubinroth princess. Slowly, at last, she wrote as follows:
-
-### SIRE:
-
-The king’s will is law.
-
-EMMA.
-
-That was all. Placing the note in an envelope she sealed it and handed
-it to the officer, who bowed and left the room.
-
-A half hour later officers of the Royal Horse were riding through the
-streets of Lustadt. Some announced to the people upon the streets the
-coming marriage of the king and princess. Others rode to the houses of
-the nobility with the king’s command that they be present at the
-ceremony in the old cathedral at four o’clock that afternoon.
-
-Never had there been such bustling about the royal palace or in the
-palaces of the nobles of Lutha. The buzz and hum of excited
-conversation filled the whole town. That the choice of the king met the
-approval of his subjects was more than evident. Upon every lip was
-praise and love of the Princess Emma von der Tann. The future of Lutha
-seemed assured with a king who could fight joined in marriage to a
-daughter of the warrior line of Von der Tann.
-
-The princess was busy up to the last minute. She had not seen her
-future husband since his return from Blentz, for he, too, had been
-busy. Twice he had sent word to her, but on both occasions had
-regretted that he could not come personally because of the pressure of
-state matters and the preparations for the ceremony that was to take
-place in the cathedral in so short a time.
-
-At last the hour arrived. The cathedral was filled to overflowing.
-After the custom of Lutha, the bride had walked alone up the broad
-center aisle to the foot of the chancel. Guardsmen lining the way on
-either hand stood rigidly at salute until she stopped at the end of the
-soft, rose-strewn carpet and turned to await the coming of the king.
-
-Presently the doors at the opposite end of the cathedral opened. There
-was a fanfare of trumpets, and up the center aisle toward the waiting
-girl walked the royal groom. It seemed ages to the princess since she
-had seen her lover. Her eyes devoured him as he approached her. She
-noticed that he limped, and wondered; but for a moment the fact carried
-no special suggestion to her brain.
-
-The people had risen as the king entered. Again, the pieces of the
-guardsmen had snapped to present; but silence, intense and utter,
-reigned over the vast assembly. The only movement was the measured
-stride of the king as he advanced to claim his bride.
-
-At the head of each line of guardsmen, nearest the chancel and upon
-either side of the bridal party, the ranks were formed of commissioned
-officers. Butzow was among them. He, too, out of the corner of his eye
-watched the advancing figure. Suddenly he noted the limp, and gave a
-little involuntary gasp. He looked at the Princess Emma, and saw her
-eyes suddenly widen with consternation.
-
-Slowly at first, and then in a sudden tidal wave of memory, Butzow’s
-story of the fight in the courtyard at Blentz came back to her.
-
-“I saw but little of Mr. Custer,” he had said. “He was slightly wounded
-in the left leg. The king was wounded in the breast.” But Lieutenant
-Butzow had not known the true identity of either.
-
-The real Leopold it was who had been wounded in the left leg, and the
-man who was approaching her up the broad cathedral aisle was limping
-noticeably—and favoring his left leg. The man to whom she was to be
-married was not Barney Custer—he was Leopold of Lutha!
-
-A hundred mad schemes rioted through her brain. The wedding must not go
-on! But how was she to avert it? The king was within a few paces of her
-now. There was a smile upon his lips, and in that smile she saw the
-final confirmation of her fears. When Leopold of Lutha smiled his upper
-lip curved just a trifle into a shadow of a sneer. It was a trivial
-characteristic that Barney Custer did not share in common with the
-king.
-
-Half mad with terror, the girl seized upon the only subterfuge which
-seemed at all likely to succeed. It would, at least, give her a slight
-reprieve—a little time in which to think, and possibly find an avenue
-from her predicament.
-
-She staggered forward a step, clapped her two hands above her heart,
-and reeled as though to fall. Butzow, who had been watching her
-narrowly, sprang forward and caught her in his arms, where she lay limp
-with closed eyes as though in a dead faint. The king ran forward. The
-people craned their necks. A sudden burst of exclamations rose
-throughout the cathedral, and then Lieutenant Butzow, shouldering his
-way past the chancel, carried the Princess Emma to a little anteroom
-off the east transept. Behind him walked the king, the bishop, and
-Prince Ludwig.
-
-### XV. MAENCK BLUNDERS
-
-After a hurried breakfast Peter of Blentz and Captain Ernst Maenck left
-the castle of Blentz. Prince Peter rode north toward the frontier,
-Austria, and safety, Captain Maenck rode south toward Lustadt. Neither
-knew that general orders had been issued to soldiery and gendarmerie of
-Lutha to capture them dead or alive. So Prince Peter rode carelessly;
-but Captain Maenck, because of the nature of his business and the
-proximity of enemies about Lustadt, proceeded with circumspection.
-
-Prince Peter was arrested at Tafelberg, and, though he stormed and
-raged and threatened, he was immediately packed off under heavy guard
-back toward Lustadt.
-
-Captain Ernst Maenck was more fortunate. He reached the capital of
-Lutha in safety, though he had to hide on several occasions from
-detachments of troops moving toward the north. Once within the city he
-rode rapidly to the house of a friend. Here he learned that which set
-him into a fine state of excitement and profanity. The king and the
-Princess Emma von der Tann were to be wed that very afternoon! It
-lacked but half an hour to four o’clock.
-
-Maenck grabbed his cap and dashed from the house before his astonished
-friend could ask a single question. He hurried straight toward the
-cathedral. The king had just arrived, and entered when Maenck came up,
-breathless. The guard at the doorway did not recognize him. If they had
-they would have arrested him. Instead they contented themselves with
-refusing him admission, and when he insisted they threatened him with
-arrest.
-
-To be arrested now would be to ruin his fine plan, so he turned and
-walked away. At the first cross street he turned up the side of the
-cathedral. The grounds were walled up on this side, and he sought in
-vain for entrance. At the rear he discovered a limousine standing in
-the alley where its chauffeur had left it after depositing his
-passengers at the front door of the cathedral. The top of the limousine
-was but a foot or two below the top of the wall.
-
-Maenck clambered to the hood of the machine, and from there to the top.
-A moment later he dropped to the earth inside the cathedral grounds.
-Before him were many windows. Most of them were too high for him to
-reach, and the others that he tried at first were securely fastened.
-Passing around the end of the building, he at last discovered one that
-was open—it led into the east transept.
-
-Maenck crawled through. He was within the building that held the man he
-sought. He found himself in a small room—evidently a dressing-room.
-There were two doors leading from it. He approached one and listened.
-He heard the tones of subdued conversation beyond.
-
-Very cautiously he opened the door a crack. He could not believe the
-good fortune that was revealed before him. On a couch lay the Princess
-Emma von der Tann. Beside her her father. At the door was Lieutenant
-Butzow. The bishop and a doctor were talking at the head of the couch.
-Pacing up and down the room, resplendent in the marriage robes of a
-king of Lutha, was the man he sought.
-
-Maenck drew his revolver. He broke the barrel, and saw that there was a
-good cartridge in each chamber of the cylinder. He closed it quietly.
-Then he threw open the door, stepped into the room, took deliberate
-aim, and fired.
-
-The old man with the ax moved cautiously along the corridor upon the
-second floor of the Castle of Blentz until he came to a certain door.
-Gently he turned the knob and pushed the door inward. Holding the ax
-behind his back, he entered. In his pocket was a great roll of money,
-and there was to be an equal amount waiting him at Lustadt when his
-mission had been fulfilled.
-
-Once within the room, he looked quickly about him. Upon a great bed lay
-the figure of a man asleep. His face was turned toward the opposite
-wall away from the side of the bed nearer the menacing figure of the
-old servant. On tiptoe the man with the ax approached. The neck of his
-victim lay uncovered before him. He swung the ax behind him. A single
-blow, as mighty as his ancient muscles could deliver, would suffice.
-
-Barney Custer opened his eyes. Directly opposite him upon the wall was
-a dark-toned photogravure of a hunting scene. It tilted slightly
-forward upon its wire support. As Barney’s eyes opened it chanced that
-they were directed straight upon the shiny glass of the picture. The
-light from the window struck the glass in such a way as to transform it
-into a mirror. The American’s eyes were glued with horror upon the
-reflection that he saw there—an old man swinging a huge ax down upon
-his head.
-
-It is an open question as to which of the two was the most surprised at
-the cat-like swiftness of the movement that carried Barney Custer out
-of that bed and landed him in temporary safety upon the opposite side.
-
-With a snarl the old man ran around the foot of the bed to corner his
-prey between the bed and the wall. He was swinging the ax as though to
-hurl it. So close was he that Barney guessed it would be difficult for
-him to miss his mark. The least he could expect would be a frightful
-wound. To have attempted to escape would have necessitated turning his
-back to his adversary, inviting instant death. To grapple with a man
-thus armed appeared an equally hopeless alternative.
-
-Shoulder-high beside him hung the photogravure that had already saved
-his life once. Why not again? He snatched it from its hangings, lifted
-it above his head in both hands, and hurled it at the head of the old
-man. The glass shattered full upon the ancient’s crown, the man’s head
-went through the picture, and the frame settled over his shoulders. At
-the same instant Barney Custer leaped across the bed, seized a light
-chair, and turned to face his foe upon more even terms.
-
-The old man did not pause to remove the frame from about his neck.
-Blood trickled down his forehead and cheeks from deep gashes that the
-broken glass had made. Now he was in a berserker rage.
-
-As he charged again he uttered a peculiar whistling noise from between
-his set teeth. To the American it sounded like the hissing of a snake,
-and as he would have met a snake he met the venomous attack of the old
+Perhaps a thousand feet from me the river broke, as it seemed, directly
+from the base of the cliffs, and as there seemed not the remotest
+chance for escape in that direction I turned my attention again toward
+the forest.
+
+The cliffs towered above me a good five thousand feet. The sun was not
+quite upon them and they loomed a dull yellow in their own shade. Here
+and there they were broken with streaks and patches of dusky red,
+green, and occasional areas of white quartz.
+
+Altogether they were very beautiful, but I fear that I did not regard
+them with a particularly appreciative eye on this, my first inspection
+of them.
+
+Just then I was absorbed in them only as a medium of escape, and so, as
+my gaze ran quickly, time and again, over their vast expanse in search
+of some cranny or crevice, I came suddenly to loathe them as the
+prisoner must loathe the cruel and impregnable walls of his dungeon.
+
+Tars Tarkas was approaching me rapidly, and still more rapidly came the
+awful horde at his heels.
+
+It seemed the forest now or nothing, and I was just on the point of
+motioning Tars Tarkas to follow me in that direction when the sun
+passed the cliff’s zenith, and as the bright rays touched the dull
+surface it burst out into a million scintillant lights of burnished
+gold, of flaming red, of soft greens, and gleaming whites—a more
+gorgeous and inspiring spectacle human eye has never rested upon.
+
+The face of the entire cliff was, as later inspection conclusively
+proved, so shot with veins and patches of solid gold as to quite
+present the appearance of a solid wall of that precious metal except
+where it was broken by outcroppings of ruby, emerald, and diamond
+boulders—a faint and alluring indication of the vast and unguessable
+riches which lay deeply buried behind the magnificent surface.
+
+But what caught my most interested attention at the moment that the
+sun’s rays set the cliff’s face a-shimmer, was the several black spots
+which now appeared quite plainly in evidence high across the gorgeous
+wall close to the forest’s top, and extending apparently below and
+behind the branches.
+
+Almost immediately I recognised them for what they were, the dark
+openings of caves entering the solid walls—possible avenues of escape
+or temporary shelter, could we but reach them.
+
+There was but a single way, and that led through the mighty, towering
+trees upon our right. That I could scale them I knew full well, but
+Tars Tarkas, with his mighty bulk and enormous weight, would find it a
+task possibly quite beyond his prowess or his skill, for Martians are
+at best but poor climbers. Upon the entire surface of that ancient
+planet I never before had seen a hill or mountain that exceeded four
+thousand feet in height above the dead sea bottoms, and as the ascent
+was usually gradual, nearly to their summits they presented but few
+opportunities for the practice of climbing. Nor would the Martians have
+embraced even such opportunities as might present themselves, for they
+could always find a circuitous route about the base of any eminence,
+and these roads they preferred and followed in preference to the
+shorter but more arduous ways.
+
+However, there was nothing else to consider than an attempt to scale
+the trees contiguous to the cliff in an effort to reach the caves
+above.
+
+The Thark grasped the possibilities and the difficulties of the plan at
+once, but there was no alternative, and so we set out rapidly for the
+trees nearest the cliff.
+
+Our relentless pursuers were now close to us, so close that it seemed
+that it would be an utter impossibility for the Jeddak of Thark to
+reach the forest in advance of them, nor was there any considerable
+will in the efforts that Tars Tarkas made, for the green men of Barsoom
+do not relish flight, nor ever before had I seen one fleeing from death
+in whatsoever form it might have confronted him. But that Tars Tarkas
+was the bravest of the brave he had proven thousands of times; yes,
+tens of thousands in countless mortal combats with men and beasts. And
+so I knew that there was another reason than fear of death behind his
+flight, as he knew that a greater power than pride or honour spurred me
+to escape these fierce destroyers. In my case it was love—love of the
+divine Dejah Thoris; and the cause of the Thark’s great and sudden love
+of life I could not fathom, for it is oftener that they seek death than
+life—these strange, cruel, loveless, unhappy people.
+
+At length, however, we reached the shadows of the forest, while right
+behind us sprang the swiftest of our pursuers—a giant plant man with
+claws outreaching to fasten his bloodsucking mouths upon us.
+
+He was, I should say, a hundred yards in advance of his closest
+companion, and so I called to Tars Tarkas to ascend a great tree that
+brushed the cliff’s face while I dispatched the fellow, thus giving the
+less agile Thark an opportunity to reach the higher branches before the
+entire horde should be upon us and every vestige of escape cut off.
+
+But I had reckoned without a just appreciation either of the cunning of
+my immediate antagonist or the swiftness with which his fellows were
+covering the distance which had separated them from me.
+
+As I raised my long-sword to deal the creature its death thrust it
+halted in its charge and, as my sword cut harmlessly through the empty
+air, the great tail of the thing swept with the power of a grizzly’s
+arm across the sward and carried me bodily from my feet to the ground.
+In an instant the brute was upon me, but ere it could fasten its
+hideous mouths into my breast and throat I grasped a writhing tentacle
+in either hand.
+
+The plant man was well muscled, heavy, and powerful but my earthly
+sinews and greater agility, in conjunction with the deathly strangle
+hold I had upon him, would have given me, I think, an eventual victory
+had we had time to discuss the merits of our relative prowess
+uninterrupted. But as we strained and struggled about the tree into
+which Tars Tarkas was clambering with infinite difficulty, I suddenly
+caught a glimpse over the shoulder of my antagonist of the great swarm
+of pursuers that now were fairly upon me.
+
+Now, at last, I saw the nature of the other monsters who had come with
+the plant men in response to the weird calling of the man upon the
+cliff’s face. They were that most dreaded of Martian creatures—great
+white apes of Barsoom.
+
+My former experiences upon Mars had familiarized me thoroughly with
+them and their methods, and I may say that of all the fearsome and
+terrible, weird and grotesque inhabitants of that strange world, it is
+the white apes that come nearest to familiarizing me with the sensation
+of fear.
+
+I think that the cause of this feeling which these apes engender within
+me is due to their remarkable resemblance in form to our Earth men,
+which gives them a human appearance that is most uncanny when coupled
+with their enormous size.
+
+They stand fifteen feet in height and walk erect upon their hind feet.
+Like the green Martians, they have an intermediary set of arms midway
+between their upper and lower limbs. Their eyes are very close set, but
+do not protrude as do those of the green men of Mars; their ears are
+high set, but more laterally located than are the green men’s, while
+their snouts and teeth are much like those of our African gorilla. Upon
+their heads grows an enormous shock of bristly hair.
+
+It was into the eyes of such as these and the terrible plant men that I
+gazed above the shoulder of my foe, and then, in a mighty wave of
+snarling, snapping, screaming, purring rage, they swept over me—and of
+all the sounds that assailed my ears as I went down beneath them, to me
+the most hideous was the horrid purring of the plant men.
+
+Instantly a score of cruel fangs and keen talons were sunk into my
+flesh; cold, sucking lips fastened themselves upon my arteries. I
+struggled to free myself, and even though weighed down by these immense
+bodies, I succeeded in struggling to my feet, where, still grasping my
+long-sword, and shortening my grip upon it until I could use it as a
+dagger, I wrought such havoc among them that at one time I stood for an
+instant free.
+
+What it has taken minutes to write occurred in but a few seconds, but
+during that time Tars Tarkas had seen my plight and had dropped from
+the lower branches, which he had reached with such infinite labour, and
+as I flung the last of my immediate antagonists from me the great Thark
+leaped to my side, and again we fought, back to back, as we had done a
+hundred times before.
+
+Time and again the ferocious apes sprang in to close with us, and time
+and again we beat them back with our swords. The great tails of the
+plant men lashed with tremendous power about us as they charged from
+various directions or sprang with the agility of greyhounds above our
+heads; but every attack met a gleaming blade in sword hands that had
+been reputed for twenty years the best that Mars ever had known; for
+Tars Tarkas and John Carter were names that the fighting men of the
+world of warriors loved best to speak.
+
+But even the two best swords in a world of fighters can avail not for
+ever against overwhelming numbers of fierce and savage brutes that know
+not what defeat means until cold steel teaches their hearts no longer
+to beat, and so, step by step, we were forced back. At length we stood
+against the giant tree that we had chosen for our ascent, and then, as
+charge after charge hurled its weight upon us, we gave back again and
+again, until we had been forced half-way around the huge base of the
+colossal trunk.
+
+Tars Tarkas was in the lead, and suddenly I heard a little cry of
+exultation from him.
+
+“Here is shelter for one at least, John Carter,” he said, and, glancing
+down, I saw an opening in the base of the tree about three feet in
+diameter.
+
+“In with you, Tars Tarkas,” I cried, but he would not go; saying that
+his bulk was too great for the little aperture, while I might slip in
+easily.
+
+“We shall both die if we remain without, John Carter; here is a slight
+chance for one of us. Take it and you may live to avenge me, it is
+useless for me to attempt to worm my way into so small an opening with
+this horde of demons besetting us on all sides.”
+
+“Then we shall die together, Tars Tarkas,” I replied, “for I shall not
+go first. Let me defend the opening while you get in, then my smaller
+stature will permit me to slip in with you before they can prevent.”
+
+We still were fighting furiously as we talked in broken sentences,
+punctured with vicious cuts and thrusts at our swarming enemy.
+
+At length he yielded, for it seemed the only way in which either of us
+might be saved from the ever-increasing numbers of our assailants, who
+were still swarming upon us from all directions across the broad
+valley.
+
+“It was ever your way, John Carter, to think last of your own life,” he
+said; “but still more your way to command the lives and actions of
+others, even to the greatest of Jeddaks who rule upon Barsoom.”
+
+There was a grim smile upon his cruel, hard face, as he, the greatest
+Jeddak of them all, turned to obey the dictates of a creature of
+another world—of a man whose stature was less than half his own.
+
+“If you fail, John Carter,” he said, “know that the cruel and heartless
+Thark, to whom you taught the meaning of friendship, will come out to
+die beside you.”
+
+“As you will, my friend,” I replied; “but quickly now, head first,
+while I cover your retreat.”
+
+He hesitated a little at that word, for never before in his whole life
+of continual strife had he turned his back upon aught than a dead or
+defeated enemy.
+
+“Haste, Tars Tarkas,” I urged, “or we shall both go down to profitless
+defeat; I cannot hold them for ever alone.”
+
+As he dropped to the ground to force his way into the tree, the whole
+howling pack of hideous devils hurled themselves upon me. To right and
+left flew my shimmering blade, now green with the sticky juice of a
+plant man, now red with the crimson blood of a great white ape; but
+always flying from one opponent to another, hesitating but the barest
+fraction of a second to drink the lifeblood in the centre of some
+savage heart.
+
+And thus I fought as I never had fought before, against such frightful
+odds that I cannot realize even now that human muscles could have
+withstood that awful onslaught, that terrific weight of hurtling tons
+of ferocious, battling flesh.
+
+With the fear that we would escape them, the creatures redoubled their
+efforts to pull me down, and though the ground about me was piled high
+with their dead and dying comrades, they succeeded at last in
+overwhelming me, and I went down beneath them for the second time that
+day, and once again felt those awful sucking lips against my flesh.
+
+But scarce had I fallen ere I felt powerful hands grip my ankles, and
+in another second I was being drawn within the shelter of the tree’s
+interior. For a moment it was a tug of war between Tars Tarkas and a
+great plant man, who clung tenaciously to my breast, but presently I
+got the point of my long-sword beneath him and with a mighty thrust
+pierced his vitals.
+
+Torn and bleeding from many cruel wounds, I lay panting upon the ground
+within the hollow of the tree, while Tars Tarkas defended the opening
+from the furious mob without.
+
+For an hour they howled about the tree, but after a few attempts to
+reach us they confined their efforts to terrorizing shrieks and
+screams, to horrid growling on the part of the great white apes, and
+the fearsome and indescribable purring by the plant men.
+
+At length, all but a score, who had apparently been left to prevent our
+escape, had left us, and our adventure seemed destined to result in a
+siege, the only outcome of which could be our death by starvation; for
+even should we be able to slip out after dark, whither in this unknown
+and hostile valley could we hope to turn our steps toward possible
+escape?
+
+As the attacks of our enemies ceased and our eyes became accustomed to
+the semi-darkness of the interior of our strange retreat, I took the
+opportunity to explore our shelter.
+
+The tree was hollow to an extent of about fifty feet in diameter, and
+from its flat, hard floor I judged that it had often been used to
+domicile others before our occupancy. As I raised my eyes toward its
+roof to note the height I saw far above me a faint glow of light.
+
+There was an opening above. If we could but reach it we might still
+hope to make the shelter of the cliff caves. My eyes had now become
+quite used to the subdued light of the interior, and as I pursued my
+investigation I presently came upon a rough ladder at the far side of
+the cave.
+
+Quickly I mounted it, only to find that it connected at the top with
+the lower of a series of horizontal wooden bars that spanned the now
+narrow and shaft-like interior of the tree’s stem. These bars were set
+one above another about three feet apart, and formed a perfect ladder
+as far above me as I could see.
+
+Dropping to the floor once more, I detailed my discovery to Tars
+Tarkas, who suggested that I explore aloft as far as I could go in
+safety while he guarded the entrance against a possible attack.
+
+As I hastened above to explore the strange shaft I found that the
+ladder of horizontal bars mounted always as far above me as my eyes
+could reach, and as I ascended, the light from above grew brighter and
+brighter.
+
+For fully five hundred feet I continued to climb, until at length I
+reached the opening in the stem which admitted the light. It was of
+about the same diameter as the entrance at the foot of the tree, and
+opened directly upon a large flat limb, the well worn surface of which
+testified to its long continued use as an avenue for some creature to
+and from this remarkable shaft.
+
+I did not venture out upon the limb for fear that I might be discovered
+and our retreat in this direction cut off; but instead hurried to
+retrace my steps to Tars Tarkas.
+
+I soon reached him and presently we were both ascending the long ladder
+toward the opening above.
+
+Tars Tarkas went in advance and as I reached the first of the
+horizontal bars I drew the ladder up after me and, handing it to him,
+he carried it a hundred feet further aloft, where he wedged it safely
+between one of the bars and the side of the shaft. In like manner I
+dislodged the lower bars as I passed them, so that we soon had the
+interior of the tree denuded of all possible means of ascent for a
+distance of a hundred feet from the base; thus precluding possible
+pursuit and attack from the rear.
+
+As we were to learn later, this precaution saved us from dire
+predicament, and was eventually the means of our salvation.
+
+When we reached the opening at the top Tars Tarkas drew to one side
+that I might pass out and investigate, as, owing to my lesser weight
+and greater agility, I was better fitted for the perilous threading of
+this dizzy, hanging pathway.
+
+The limb upon which I found myself ascended at a slight angle toward
+the cliff, and as I followed it I found that it terminated a few feet
+above a narrow ledge which protruded from the cliff’s face at the
+entrance to a narrow cave.
+
+As I approached the slightly more slender extremity of the branch it
+bent beneath my weight until, as I balanced perilously upon its outer
+tip, it swayed gently on a level with the ledge at a distance of a
+couple of feet.
+
+Five hundred feet below me lay the vivid scarlet carpet of the valley;
+nearly five thousand feet above towered the mighty, gleaming face of
+the gorgeous cliffs.
+
+The cave that I faced was not one of those that I had seen from the
+ground, and which lay much higher, possibly a thousand feet. But so far
+as I might know it was as good for our purpose as another, and so I
+returned to the tree for Tars Tarkas.
+
+Together we wormed our way along the waving pathway, but when we
+reached the end of the branch we found that our combined weight so
+depressed the limb that the cave’s mouth was now too far above us to be
+reached.
+
+We finally agreed that Tars Tarkas should return along the branch,
+leaving his longest leather harness strap with me, and that when the
+limb had risen to a height that would permit me to enter the cave I was
+to do so, and on Tars Tarkas’ return I could then lower the strap and
+haul him up to the safety of the ledge.
+
+This we did without mishap and soon found ourselves together upon the
+verge of a dizzy little balcony, with a magnificent view of the valley
+spreading out below us.
+
+As far as the eye could reach gorgeous forest and crimson sward skirted
+a silent sea, and about all towered the brilliant monster guardian
+cliffs. Once we thought we discerned a gilded minaret gleaming in the
+sun amidst the waving tops of far-distant trees, but we soon abandoned
+the idea in the belief that it was but an hallucination born of our
+great desire to discover the haunts of civilized men in this beautiful,
+yet forbidding, spot.
+
+Below us upon the river’s bank the great white apes were devouring the
+last remnants of Tars Tarkas’ former companions, while great herds of
+plant men grazed in ever-widening circles about the sward which they
+kept as close clipped as the smoothest of lawns.
+
+Knowing that attack from the tree was now improbable, we determined to
+explore the cave, which we had every reason to believe was but a
+continuation of the path we had already traversed, leading the gods
+alone knew where, but quite evidently away from this valley of grim
+ferocity.
+
+As we advanced we found a well-proportioned tunnel cut from the solid
+cliff. Its walls rose some twenty feet above the floor, which was about
+five feet in width. The roof was arched. We had no means of making a
+light, and so groped our way slowly into the ever-increasing darkness,
+Tars Tarkas keeping in touch with one wall while I felt along the
+other, while, to prevent our wandering into diverging branches and
+becoming separated or lost in some intricate and labyrinthine maze, we
+clasped hands.
+
+How far we traversed the tunnel in this manner I do not know, but
+presently we came to an obstruction which blocked our further progress.
+It seemed more like a partition than a sudden ending of the cave, for
+it was constructed not of the material of the cliff, but of something
+which felt like very hard wood.
+
+Silently I groped over its surface with my hands, and presently was
+rewarded by the feel of the button which as commonly denotes a door on
+Mars as does a door knob on Earth.
+
+Gently pressing it, I had the satisfaction of feeling the door slowly
+give before me, and in another instant we were looking into a dimly
+lighted apartment, which, so far as we could see, was unoccupied.
+
+Without more ado I swung the door wide open and, followed by the huge
+Thark, stepped into the chamber. As we stood for a moment in silence
+gazing about the room a slight noise behind caused me to turn quickly,
+when, to my astonishment, I saw the door close with a sharp click as
+though by an unseen hand.
+
+Instantly I sprang toward it to wrench it open again, for something in
+the uncanny movement of the thing and the tense and almost palpable
+silence of the chamber seemed to portend a lurking evil lying hidden in
+this rock-bound chamber within the bowels of the Golden Cliffs.
+
+My fingers clawed futilely at the unyielding portal, while my eyes
+sought in vain for a duplicate of the button which had given us
+ingress.
+
+And then, from unseen lips, a cruel and mocking peal of laughter rang
+through the desolate place.
+
+## CHAPTER III THE CHAMBER OF MYSTERY
+
+For moments after that awful laugh had ceased reverberating through the
+rocky room, Tars Tarkas and I stood in tense and expectant silence. But
+no further sound broke the stillness, nor within the range of our
+vision did aught move.
+
+At length Tars Tarkas laughed softly, after the manner of his strange
+kind when in the presence of the horrible or terrifying. It is not an
+hysterical laugh, but rather the genuine expression of the pleasure
+they derive from the things that move Earth men to loathing or to
+tears.
+
+Often and again have I seen them roll upon the ground in mad fits of
+uncontrollable mirth when witnessing the death agonies of women and
+little children beneath the torture of that hellish green Martian
+fete—the Great Games.
+
+I looked up at the Thark, a smile upon my own lips, for here in truth
+was greater need for a smiling face than a trembling chin.
+
+“What do you make of it all?” I asked. “Where in the deuce are we?”
+
+He looked at me in surprise.
+
+“Where are we?” he repeated. “Do you tell me, John Carter, that you
+know not where you be?”
+
+“That I am upon Barsoom is all that I can guess, and but for you and
+the great white apes I should not even guess that, for the sights I
+have seen this day are as unlike the things of my beloved Barsoom as I
+knew it ten long years ago as they are unlike the world of my birth.
+
+“No, Tars Tarkas, I know not where we be.”
+
+“Where have you been since you opened the mighty portals of the
+atmosphere plant years ago, after the keeper had died and the engines
+stopped and all Barsoom was dying, that had not already died, of
+asphyxiation? Your body even was never found, though the men of a whole
+world sought after it for years, though the Jeddak of Helium and his
+granddaughter, your princess, offered such fabulous rewards that even
+princes of royal blood joined in the search.
+
+“There was but one conclusion to reach when all efforts to locate you
+had failed, and that, that you had taken the long, last pilgrimage down
+the mysterious River Iss, to await in the Valley Dor upon the shores of
+the Lost Sea of Korus the beautiful Dejah Thoris, your princess.
+
+“Why you had gone none could guess, for your princess still lived—”
+
+“Thank God,” I interrupted him. “I did not dare to ask you, for I
+feared I might have been too late to save her—she was very low when I
+left her in the royal gardens of Tardos Mors that long-gone night; so
+very low that I scarcely hoped even then to reach the atmosphere plant
+ere her dear spirit had fled from me for ever. And she lives yet?”
+
+“She lives, John Carter.”
+
+“You have not told me where we are,” I reminded him.
+
+“We are where I expected to find you, John Carter—and another. Many
+years ago you heard the story of the woman who taught me the thing that
+green Martians are reared to hate, the woman who taught me to love. You
+know the cruel tortures and the awful death her love won for her at the
+hands of the beast, Tal Hajus.
+
+“She, I thought, awaited me by the Lost Sea of Korus.
+
+“You know that it was left for a man from another world, for yourself,
+John Carter, to teach this cruel Thark what friendship is; and you, I
+thought, also roamed the care-free Valley Dor.
+
+“Thus were the two I most longed for at the end of the long pilgrimage
+I must take some day, and so as the time had elapsed which Dejah Thoris
+had hoped might bring you once more to her side, for she has always
+tried to believe that you had but temporarily returned to your own
+planet, I at last gave way to my great yearning and a month since I
+started upon the journey, the end of which you have this day witnessed.
+Do you understand now where you be, John Carter?”
+
+“And that was the River Iss, emptying into the Lost Sea of Korus in the
+Valley Dor?” I asked.
+
+“This is the valley of love and peace and rest to which every
+Barsoomian since time immemorial has longed to pilgrimage at the end of
+a life of hate and strife and bloodshed,” he replied. “This, John
+Carter, is Heaven.”
+
+His tone was cold and ironical; its bitterness but reflecting the
+terrible disappointment he had suffered. Such a fearful
+disillusionment, such a blasting of life-long hopes and aspirations,
+such an uprooting of age-old tradition might have excused a vastly
+greater demonstration on the part of the Thark.
+
+I laid my hand upon his shoulder.
+
+“I am sorry,” I said, nor did there seem aught else to say.
+
+“Think, John Carter, of the countless billions of Barsoomians who have
+taken the voluntary pilgrimage down this cruel river since the
+beginning of time, only to fall into the ferocious clutches of the
+terrible creatures that to-day assailed us.
+
+“There is an ancient legend that once a red man returned from the banks
+of the Lost Sea of Korus, returned from the Valley Dor, back through
+the mysterious River Iss, and the legend has it that he narrated a
+fearful blasphemy of horrid brutes that inhabited a valley of wondrous
+loveliness, brutes that pounced upon each Barsoomian as he terminated
+his pilgrimage and devoured him upon the banks of the Lost Sea where he
+had looked to find love and peace and happiness; but the ancients
+killed the blasphemer, as tradition has ordained that any shall be
+killed who return from the bosom of the River of Mystery.
+
+“But now we know that it was no blasphemy, that the legend is a true
+one, and that the man told only of what he saw; but what does it profit
+us, John Carter, since even should we escape, we also would be treated
+as blasphemers? We are between the wild thoat of certainty and the mad
+zitidar of fact—we can escape neither.”
+
+“As Earth men say, we are between the devil and the deep sea, Tars
+Tarkas,” I replied, nor could I help but smile at our dilemma.
+
+“There is naught that we can do but take things as they come, and at
+least have the satisfaction of knowing that whoever slays us eventually
+will have far greater numbers of their own dead to count than they will
+get in return. White ape or plant man, green Barsoomian or red man,
+whosoever it shall be that takes the last toll from us will know that
+it is costly in lives to wipe out John Carter, Prince of the House of
+Tardos Mors, and Tars Tarkas, Jeddak of Thark, at the same time.”
+
+I could not help but laugh at his grim humour, and he joined in with me
+in one of those rare laughs of real enjoyment which was one of the
+attributes of this fierce Tharkian chief which marked him from the
+others of his kind.
+
+“But about yourself, John Carter,” he cried at last. “If you have not
+been here all these years where indeed have you been, and how is it
+that I find you here to-day?”
+
+“I have been back to Earth,” I replied. “For ten long Earth years I
+have been praying and hoping for the day that would carry me once more
+to this grim old planet of yours, for which, with all its cruel and
+terrible customs, I feel a bond of sympathy and love even greater than
+for the world that gave me birth.
+
+“For ten years have I been enduring a living death of uncertainty and
+doubt as to whether Dejah Thoris lived, and now that for the first time
+in all these years my prayers have been answered and my doubt relieved
+I find myself, through a cruel whim of fate, hurled into the one tiny
+spot of all Barsoom from which there is apparently no escape, and if
+there were, at a price which would put out for ever the last flickering
+hope which I may cling to of seeing my princess again in this life—and
+you have seen to-day with what pitiful futility man yearns toward a
+material hereafter.
+
+“Only a bare half-hour before I saw you battling with the plant men I
+was standing in the moonlight upon the banks of a broad river that taps
+the eastern shore of Earth’s most blessed land. I have answered you, my
+friend. Do you believe?”
+
+“I believe,” replied Tars Tarkas, “though I cannot understand.”
+
+As we talked I had been searching the interior of the chamber with my
+eyes. It was, perhaps, two hundred feet in length and half as broad,
+with what appeared to be a doorway in the centre of the wall directly
+opposite that through which we had entered.
+
+The apartment was hewn from the material of the cliff, showing mostly
+dull gold in the dim light which a single minute radium illuminator in
+the centre of the roof diffused throughout its great dimensions. Here
+and there polished surfaces of ruby, emerald, and diamond patched the
+golden walls and ceiling. The floor was of another material, very hard,
+and worn by much use to the smoothness of glass. Aside from the two
+doors I could discern no sign of other aperture, and as one we knew to
+be locked against us I approached the other.
+
+As I extended my hand to search for the controlling button, that cruel
+and mocking laugh rang out once more, so close to me this time that I
+involuntarily shrank back, tightening my grip upon the hilt of my great
+sword.
+
+And then from the far corner of the great chamber a hollow voice
+chanted: “There is no hope, there is no hope; the dead return not, the
+dead return not; nor is there any resurrection. Hope not, for there is
+no hope.”
+
+Though our eyes instantly turned toward the spot from which the voice
+seemed to emanate, there was no one in sight, and I must admit that
+cold shivers played along my spine and the short hairs at the base of
+my head stiffened and rose up, as do those upon a hound’s neck when in
+the night his eyes see those uncanny things which are hidden from the
+sight of man.
+
+Quickly I walked toward the mournful voice, but it had ceased ere I
+reached the further wall, and then from the other end of the chamber
+came another voice, shrill and piercing:
+
+“Fools! Fools!” it shrieked. “Thinkest thou to defeat the eternal laws
+of life and death? Wouldst cheat the mysterious Issus, Goddess of
+Death, of her just dues? Did not her mighty messenger, the ancient Iss,
+bear you upon her leaden bosom at your own behest to the Valley Dor?
+
+“Thinkest thou, O fools, that Issus wilt give up her own? Thinkest thou
+to escape from whence in all the countless ages but a single soul has
+fled?
+
+“Go back the way thou camest, to the merciful maws of the children of
+the Tree of Life or the gleaming fangs of the great white apes, for
+there lies speedy surcease from suffering; but insist in your rash
+purpose to thread the mazes of the Golden Cliffs of the Mountains of
+Otz, past the ramparts of the impregnable fortresses of the Holy
+Therns, and upon your way Death in its most frightful form will
+overtake you—a death so horrible that even the Holy Therns themselves,
+who conceived both Life and Death, avert their eyes from its
+fiendishness and close their ears against the hideous shrieks of its
+victims.
+
+“Go back, O fools, the way thou camest.”
+
+And then the awful laugh broke out from another part of the chamber.
+
+“Most uncanny,” I remarked, turning to Tars Tarkas.
+
+“What shall we do?” he asked. “We cannot fight empty air; I would
+almost sooner return and face foes into whose flesh I may feel my blade
+bite and know that I am selling my carcass dearly before I go down to
+that eternal oblivion which is evidently the fairest and most desirable
+eternity that mortal man has the right to hope for.”
+
+“If, as you say, we cannot fight empty air, Tars Tarkas,” I replied,
+“neither, on the other hand, can empty air fight us. I, who have faced
+and conquered in my time thousands of sinewy warriors and tempered
+blades, shall not be turned back by wind; nor no more shall you,
+Thark.”
+
+“But unseen voices may emanate from unseen and unseeable creatures who
+wield invisible blades,” answered the green warrior.
+
+“Rot, Tars Tarkas,” I cried, “those voices come from beings as real as
+you or as I. In their veins flows lifeblood that may be let as easily
+as ours, and the fact that they remain invisible to us is the best
+proof to my mind that they are mortal; nor overly courageous mortals at
+that. Think you, Tars Tarkas, that John Carter will fly at the first
+shriek of a cowardly foe who dare not come out into the open and face a
+good blade?”
+
+I had spoken in a loud voice that there might be no question that our
+would-be terrorizers should hear me, for I was tiring of this
+nerve-racking fiasco. It had occurred to me, too, that the whole
+business was but a plan to frighten us back into the valley of death
+from which we had escaped, that we might be quickly disposed of by the
+savage creatures there.
+
+For a long period there was silence, then of a sudden a soft, stealthy
+sound behind me caused me to turn suddenly to behold a great
+many-legged banth creeping sinuously upon me.
+
+The banth is a fierce beast of prey that roams the low hills
+surrounding the dead seas of ancient Mars. Like nearly all Martian
+animals it is almost hairless, having only a great bristly mane about
+its thick neck.
+
+Its long, lithe body is supported by ten powerful legs, its enormous
+jaws are equipped, like those of the calot, or Martian hound, with
+several rows of long needle-like fangs; its mouth reaches to a point
+far back of its tiny ears, while its enormous, protruding eyes of green
+add the last touch of terror to its awful aspect.
+
+As it crept toward me it lashed its powerful tail against its yellow
+sides, and when it saw that it was discovered it emitted the terrifying
+roar which often freezes its prey into momentary paralysis in the
+instant that it makes its spring.
+
+And so it launched its great bulk toward me, but its mighty voice had
+held no paralysing terrors for me, and it met cold steel instead of the
+tender flesh its cruel jaws gaped so widely to engulf.
+
+An instant later I drew my blade from the still heart of this great
+Barsoomian lion, and turning toward Tars Tarkas was surprised to see
+him facing a similar monster.
+
+No sooner had he dispatched his than I, turning, as though drawn by the
+instinct of my guardian subconscious mind, beheld another of the savage
+denizens of the Martian wilds leaping across the chamber toward me.
+
+From then on for the better part of an hour one hideous creature after
+another was launched upon us, springing apparently from the empty air
+about us.
+
+Tars Tarkas was satisfied; here was something tangible that he could
+cut and slash with his great blade, while I, for my part, may say that
+the diversion was a marked improvement over the uncanny voices from
+unseen lips.
+
+That there was nothing supernatural about our new foes was well
+evidenced by their howls of rage and pain as they felt the sharp steel
+at their vitals, and the very real blood which flowed from their
+severed arteries as they died the real death.
+
+I noticed during the period of this new persecution that the beasts
+appeared only when our backs were turned; we never saw one really
+materialize from thin air, nor did I for an instant sufficiently lose
+my excellent reasoning faculties to be once deluded into the belief
+that the beasts came into the room other than through some concealed
+and well-contrived doorway.
+
+Among the ornaments of Tars Tarkas’ leather harness, which is the only
+manner of clothing worn by Martians other than silk capes and robes of
+silk and fur for protection from the cold after dark, was a small
+mirror, about the bigness of a lady’s hand glass, which hung midway
+between his shoulders and his waist against his broad back.
+
+Once as he stood looking down at a newly fallen antagonist my eyes
+happened to fall upon this mirror and in its shiny surface I saw
+pictured a sight that caused me to whisper:
+
+“Move not, Tars Tarkas! Move not a muscle!”
+
+He did not ask why, but stood like a graven image while my eyes watched
+the strange thing that meant so much to us.
+
+What I saw was the quick movement of a section of the wall behind me.
+It was turning upon pivots, and with it a section of the floor directly
+in front of it was turning. It was as though you placed a visiting-card
+upon end on a silver dollar that you had laid flat upon a table, so
+that the edge of the card perfectly bisected the surface of the coin.
+
+The card might represent the section of the wall that turned and the
+silver dollar the section of the floor. Both were so nicely fitted into
+the adjacent portions of the floor and wall that no crack had been
+noticeable in the dim light of the chamber.
+
+As the turn was half completed a great beast was revealed sitting upon
+its haunches upon that part of the revolving floor that had been on the
+opposite side before the wall commenced to move; when the section
+stopped, the beast was facing toward me on our side of the partition—it
+was very simple.
+
+But what had interested me most was the sight that the half-turned
+section had presented through the opening that it had made. A great
+chamber, well lighted, in which were several men and women chained to
+the wall, and in front of them, evidently directing and operating the
+movement of the secret doorway, a wicked-faced man, neither red as are
+the red men of Mars, nor green as are the green men, but white, like
+myself, with a great mass of flowing yellow hair.
+
+The prisoners behind him were red Martians. Chained with them were a
+number of fierce beasts, such as had been turned upon us, and others
+equally as ferocious.
+
+As I turned to meet my new foe it was with a heart considerably
+lightened.
+
+“Watch the wall at your end of the chamber, Tars Tarkas,” I cautioned,
+“it is through secret doorways in the wall that the brutes are loosed
+upon us.” I was very close to him and spoke in a low whisper that my
+knowledge of their secret might not be disclosed to our tormentors.
+
+As long as we remained each facing an opposite end of the apartment no
+further attacks were made upon us, so it was quite clear to me that the
+partitions were in some way pierced that our actions might be observed
+from without.
+
+At length a plan of action occurred to me, and backing quite close to
+Tars Tarkas I unfolded my scheme in a low whisper, keeping my eyes
+still glued upon my end of the room.
+
+The great Thark grunted his assent to my proposition when I had done,
+and in accordance with my plan commenced backing toward the wall which
+I faced while I advanced slowly ahead of him.
+
+When we had reached a point some ten feet from the secret doorway I
+halted my companion, and cautioning him to remain absolutely motionless
+until I gave the prearranged signal I quickly turned my back to the
+door through which I could almost feel the burning and baleful eyes of
+our would be executioner.
+
+Instantly my own eyes sought the mirror upon Tars Tarkas’ back and in
+another second I was closely watching the section of the wall which had
+been disgorging its savage terrors upon us.
+
+I had not long to wait, for presently the golden surface commenced to
+move rapidly. Scarcely had it started than I gave the signal to Tars
+Tarkas, simultaneously springing for the receding half of the pivoting
+door. In like manner the Thark wheeled and leaped for the opening being
+made by the inswinging section.
+
+A single bound carried me completely through into the adjoining room
+and brought me face to face with the fellow whose cruel face I had seen
+before. He was about my own height and well muscled and in every
+outward detail moulded precisely as are Earth men.
+
+At his side hung a long-sword, a short-sword, a dagger, and one of the
+destructive radium revolvers that are common upon Mars.
+
+The fact that I was armed only with a long-sword, and so according to
+the laws and ethics of battle everywhere upon Barsoom should only have
+been met with a similar or lesser weapon, seemed to have no effect upon
+the moral sense of my enemy, for he whipped out his revolver ere I
+scarce had touched the floor by his side, but an uppercut from my
+long-sword sent it flying from his grasp before he could discharge it.
+
+Instantly he drew his long-sword, and thus evenly armed we set to in
+earnest for one of the closest battles I ever have fought.
+
+The fellow was a marvellous swordsman and evidently in practice, while
+I had not gripped the hilt of a sword for ten long years before that
+morning.
+
+But it did not take me long to fall easily into my fighting stride, so
+that in a few minutes the man began to realize that he had at last met
+his match.
+
+His face became livid with rage as he found my guard impregnable, while
+blood flowed from a dozen minor wounds upon his face and body.
+
+“Who are you, white man?” he hissed. “That you are no Barsoomian from
+the outer world is evident from your colour. And you are not of us.”
+
+His last statement was almost a question.
+
+“What if I were from the Temple of Issus?” I hazarded on a wild guess.
+
+“Fate forfend!” he exclaimed, his face going white under the blood that
+now nearly covered it.
+
+I did not know how to follow up my lead, but I carefully laid the idea
+away for future use should circumstances require it. His answer
+indicated that for all he KNEW I might be from the Temple of Issus and
+in it were men like unto myself, and either this man feared the inmates
+of the temple or else he held their persons or their power in such
+reverence that he trembled to think of the harm and indignities he had
+heaped upon one of them.
+
+But my present business with him was of a different nature than that
+which requires any considerable abstract reasoning; it was to get my
+sword between his ribs, and this I succeeded in doing within the next
+few seconds, nor was I an instant too soon.
+
+The chained prisoners had been watching the combat in tense silence;
+not a sound had fallen in the room other than the clashing of our
+contending blades, the soft shuffling of our naked feet and the few
+whispered words we had hissed at each other through clenched teeth the
+while we continued our mortal duel.
+
+But as the body of my antagonist sank an inert mass to the floor a cry
+of warning broke from one of the female prisoners.
+
+“Turn! Turn! Behind you!” she shrieked, and as I wheeled at the first
+note of her shrill cry I found myself facing a second man of the same
+race as he who lay at my feet.
+
+The fellow had crept stealthily from a dark corridor and was almost
+upon me with raised sword ere I saw him. Tars Tarkas was nowhere in
+sight and the secret panel in the wall, through which I had come, was
+closed.
+
+How I wished that he were by my side now! I had fought almost
+continuously for many hours; I had passed through such experiences and
+adventures as must sap the vitality of man, and with all this I had not
+eaten for nearly twenty-four hours, nor slept.
+
+I was fagged out, and for the first time in years felt a question as to
+my ability to cope with an antagonist; but there was naught else for it
+than to engage my man, and that as quickly and ferociously as lay in
+me, for my only salvation was to rush him off his feet by the
+impetuosity of my attack—I could not hope to win a long-drawn-out
+battle.
+
+But the fellow was evidently of another mind, for he backed and parried
+and parried and sidestepped until I was almost completely fagged from
+the exertion of attempting to finish him.
+
+He was a more adroit swordsman, if possible, than my previous foe, and
+I must admit that he led me a pretty chase and in the end came near to
+making a sorry fool of me—and a dead one into the bargain.
+
+I could feel myself growing weaker and weaker, until at length objects
+commenced to blur before my eyes and I staggered and blundered about
+more asleep than awake, and then it was that he worked his pretty
+little coup that came near to losing me my life.
+
+He had backed me around so that I stood in front of the corpse of his
+fellow, and then he rushed me suddenly so that I was forced back upon
+it, and as my heel struck it the impetus of my body flung me backward
+across the dead man.
+
+My head struck the hard pavement with a resounding whack, and to that
+alone I owe my life, for it cleared my brain and the pain roused my
+temper, so that I was equal for the moment to tearing my enemy to
+pieces with my bare hands, and I verily believe that I should have
+attempted it had not my right hand, in the act of raising my body from
+the ground, come in contact with a bit of cold metal.
+
+As the eyes of the layman so is the hand of the fighting man when it
+comes in contact with an implement of his vocation, and thus I did not
+need to look or reason to know that the dead man’s revolver, lying
+where it had fallen when I struck it from his grasp, was at my
+disposal.
+
+The fellow whose ruse had put me down was springing toward me, the
+point of his gleaming blade directed straight at my heart, and as he
+came there rang from his lips the cruel and mocking peal of laughter
+that I had heard within the Chamber of Mystery.
+
+And so he died, his thin lips curled in the snarl of his hateful laugh,
+and a bullet from the revolver of his dead companion bursting in his
+heart.
+
+His body, borne by the impetus of his headlong rush, plunged upon me.
+The hilt of his sword must have struck my head, for with the impact of
+the corpse I lost consciousness.
+
+## CHAPTER IV THUVIA
+
+It was the sound of conflict that aroused me once more to the realities
+of life. For a moment I could neither place my surroundings nor locate
+the sounds which had aroused me. And then from beyond the blank wall
+beside which I lay I heard the shuffling of feet, the snarling of grim
+beasts, the clank of metal accoutrements, and the heavy breathing of a
 man.
 
-When the short battle was over the Blentz servitor lay unconscious upon
-the floor, while above him leaned the American, uninjured, ripping long
-strips from a sheet torn from the bed, twisting them into rope-like
-strands and, with them, binding the wrists and ankles of his defeated
-foe. Finally he stuffed a gag between the toothless gums.
+As I rose to my feet I glanced hurriedly about the chamber in which I
+had just encountered such a warm reception. The prisoners and the
+savage brutes rested in their chains by the opposite wall eyeing me
+with varying expressions of curiosity, sullen rage, surprise, and hope.
 
-Running to the wardrobe, he discovered that the king’s uniform was
-gone. That, with the witness of the empty bed, told him the whole
-story. The American smiled. “More nerve than I gave him credit for,” he
-mused, as he walked back to his bed and reached under the pillow for
-the two papers he had forced the king to sign. They, too, were gone.
-Slowly Barney Custer realized his plight, as there filtered through his
-mind a suggestion of the possibilities of the trick that had been
-played upon him.
+The latter emotion seemed plainly evident upon the handsome and
+intelligent face of the young red Martian woman whose cry of warning
+had been instrumental in saving my life.
 
-Why should Leopold wish these papers? Of course, he might merely have
-taken them that he might destroy them; but something told Barney Custer
-that such was not the case. And something, too, told him whither the
-king had ridden and what he would do there when he arrived.
+She was the perfect type of that remarkably beautiful race whose
+outward appearance is identical with the more god-like races of Earth
+men, except that this higher race of Martians is of a light reddish
+copper colour. As she was entirely unadorned I could not even guess her
+station in life, though it was evident that she was either a prisoner
+or slave in her present environment.
 
-He ran back to the wardrobe. In it hung the peasant attire that he had
-stolen from the line of the careless house frau, and later wished upon
-his majesty the king. Barney grinned as he recalled the royal disgust
-with which Leopold had fingered the soiled garments. He scarce blamed
-him. Looking further toward the back of the wardrobe, the American
-discovered other clothing.
+It was several seconds before the sounds upon the opposite side of the
+partition jolted my slowly returning faculties into a realization of
+their probable import, and then of a sudden I grasped the fact that
+they were caused by Tars Tarkas in what was evidently a desperate
+struggle with wild beasts or savage men.
 
-He dragged it all out upon the floor. There was an old shooting jacket,
-several pairs of trousers and breeches, and a hunting coat. In a drawer
-at the bottom of the wardrobe he found many old shoes, puttees, and
-boots.
+With a cry of encouragement I threw my weight against the secret door,
+but as well have assayed the down-hurling of the cliffs themselves.
+Then I sought feverishly for the secret of the revolving panel, but my
+search was fruitless, and I was about to raise my longsword against the
+sullen gold when the young woman prisoner called out to me.
 
-From this miscellany he selected riding breeches, a pair of boots, and
-the red hunting coat as the only articles that fitted his rather large
-frame. Hastily he dressed, and, taking the ax the old man had brought
-to the room as the only weapon available, he walked boldly into the
-corridor, down the spiral stairway and into the guardroom.
+“Save thy sword, O Mighty Warrior, for thou shalt need it more where it
+will avail to some purpose—shatter it not against senseless metal which
+yields better to the lightest finger touch of one who knows its
+secret.”
 
-Barney Custer was prepared to fight. He was desperate. He could have
-slunk from the Castle of Blentz as he had entered it—through the secret
-passageway to the ravine; but to attempt to reach Lustadt on foot was
-not at all compatible with the urgent haste that he felt necessary. He
-must have a horse, and a horse he would have if he had to fight his way
-through a Blentz army.
+“Know you the secret of it then?” I asked.
 
-But there were no armed retainers left at Blentz. The guardroom was
-vacant; but there were arms there and ammunition. Barney commandeered a
-sword and a revolver, then he walked into the courtyard and crossed to
-the stables. The way took him by the garden. In it he saw a coffin-like
-box resting upon planks above a grave-like excavation. Barney
-investigated. The box was empty. Once again he grinned. “It is not
-always wise,” he mused, “to count your corpses before they’re dead.
-What a lot of work the old man might have spared himself if he’d only
-caught his cadaver first—or at least tried to.”
+“Yes; release me and I will give you entrance to the other horror
+chamber, if you wish. The keys to my fetters are upon the first dead of
+thy foemen. But why would you return to face again the fierce banth, or
+whatever other form of destruction they have loosed within that awful
+trap?”
 
-Passing on by his own grave, he came to the stables. A groom was
-currying a strong, clean-limbed hunter haltered in the doorway. The man
-looked up as Barney approached him. A puzzled expression entered the
-fellow’s eyes. He was a young man—a stupid-looking lout. It was evident
-that he half recognized the face of the newcomer as one he had seen
-before. Barney nodded to him.
+“Because my friend fights there alone,” I answered, as I hastily sought
+and found the keys upon the carcass of the dead custodian of this grim
+chamber of horrors.
 
-“Never mind finishing,” he said. “I am in a hurry. You may saddle him
-at once.” The voice was authoritative—it brooked no demur. The groom
-touched his forehead, dropped the currycomb and brush, and turned back
-into the stable to fetch saddle and bridle.
+There were many keys upon the oval ring, but the fair Martian maid
+quickly selected that which sprung the great lock at her waist, and
+freed she hurried toward the secret panel.
 
-Five minutes later Barney was riding toward the gate. The portcullis
-was raised—the drawbridge spanned the moat—no guard was there to bar
-his way. The sunlight flooded the green valley, stretching lazily below
-him in the soft warmth of a mellow autumn morning. Behind him he had
-left the brooding shadows of the grim old fortress—the cold, cruel,
-depressing stronghold of intrigue, treason, and sudden death.
+Again she sought out a key upon the ring. This time a slender,
+needle-like affair which she inserted in an almost invisible hole in
+the wall. Instantly the door swung upon its pivot, and the contiguous
+section of the floor upon which I was standing carried me with it into
+the chamber where Tars Tarkas fought.
 
-He threw back his shoulders and filled his lungs with the sweet, pure
-air of freedom. He was a new man. The wound in his breast was
-forgotten. Lightly he touched his spurs to the hunter’s sides. Tossing
-his head and curveting, the animal broke into a long, easy trot. Where
-the road dipped into the ravine and down through the village to the
-valley the rider drew his restless mount into a walk; but, once in the
-valley, he let him out. Barney took the short road to Lustadt. It would
-cut ten miles off the distance that the main wagonroad covered, and it
-was a good road for a horseman. It should bring him to Lustadt by one
-o’clock or a little after. The road wound through the hills to the east
-of the main highway, and was scarcely more than a trail where it
-crossed the Ru River upon a narrow bridge that spanned the deep
-mountain gorge that walls the Ru for ten miles through the hills.
+The great Thark stood with his back against an angle of the walls,
+while facing him in a semi-circle a half-dozen huge monsters crouched
+waiting for an opening. Their blood-streaked heads and shoulders
+testified to the cause of their wariness as well as to the
+swordsmanship of the green warrior whose glossy hide bore the same mute
+but eloquent witness to the ferocity of the attacks that he had so far
+withstood.
 
-When Barney reached the river his hopes sank. The bridge was
-gone—dynamited by the Austrians in their retreat. The nearest bridge
-was at the crossing of the main highway over ten miles to the
-southwest. There, too, the river might be forded even if the Austrians
-had destroyed that bridge also; but here or elsewhere in the hills
-there could be no fording—the banks of the Ru were perpendicular
-cliffs.
+Sharp talons and cruel fangs had torn leg, arm, and breast literally to
+ribbons. So weak was he from continued exertion and loss of blood that
+but for the supporting wall I doubt that he even could have stood
+erect. But with the tenacity and indomitable courage of his kind he
+still faced his cruel and relentless foes—the personification of that
+ancient proverb of his tribe: “Leave to a Thark his head and one hand
+and he may yet conquer.”
 
-The misfortune would add nearly twenty miles to his journey—he could
-not now hope to reach Lustadt before late in the afternoon. Turning his
-horse back along the trail he had come, he retraced his way until he
-reached a narrow bridle path that led toward the southwest. The trail
-was rough and indistinct, yet he pushed forward, even more rapidly than
-safety might have suggested. The noble beast beneath him was all
-loyalty and ambition.
+As he saw me enter, a grim smile touched those grim lips of his, but
+whether the smile signified relief or merely amusement at the sight of
+my own bloody and dishevelled condition I do not know.
 
-“Take it easy, old boy,” whispered Barney into the slim, pointed ears
-that moved ceaselessly backward and forward, “you’ll get your chance
-when we strike the highway, never fear.”
+As I was about to spring into the conflict with my sharp long-sword I
+felt a gentle hand upon my shoulder and turning found, to my surprise,
+that the young woman had followed me into the chamber.
 
-And he did.
+“Wait,” she whispered, “leave them to me,” and pushing me advanced, all
+defenceless and unarmed, upon the snarling banths.
 
-So unexpected had been Maenck’s entrance into the room in the east
-transept, so sudden his attack, that it was all over before a hand
-could be raised to stay him. At the report of his revolver the king
-sank to the floor. At almost the same instant Lieutenant Butzow whipped
-a revolver from beneath his tunic and fired at the assassin. Maenck
-staggered forward and stumbled across the body of the king. Butzow was
-upon him instantly, wresting the revolver from his fingers. Prince
-Ludwig ran to the king’s side and, kneeling there, raised Leopold’s
-head in his arms. The bishop and the doctor bent over the limp form.
-The Princess Emma stood a little apart. She had leaped from the couch
-where she had been lying. Her eyes were wide in horror. Her palms
-pressed to her cheeks.
+When quite close to them she spoke a single Martian word in low but
+peremptory tones. Like lightning the great beasts wheeled upon her, and
+I looked to see her torn to pieces before I could reach her side, but
+instead the creatures slunk to her feet like puppies that expect a
+merited whipping.
 
-It was upon this scene that a hatless, dust-covered man in a red
-hunting coat burst through the door that had admitted Maenck. The man
-had seen and recognized the conspirator as he climbed to the top of the
-limousine and dropped within the cathedral grounds, and he had followed
-close upon his heels.
+Again she spoke to them, but in tones so low I could not catch the
+words, and then she started toward the opposite side of the chamber
+with the six mighty monsters trailing at heel. One by one she sent them
+through the secret panel into the room beyond, and when the last had
+passed from the chamber where we stood in wide-eyed amazement she
+turned and smiled at us and then herself passed through, leaving us
+alone.
 
-No one seemed to note his entrance. All ears were turned toward the
-doctor, who was speaking.
+For a moment neither of us spoke. Then Tars Tarkas said:
 
-“The king is dead,” he said.
+“I heard the fighting beyond the partition through which you passed,
+but I did not fear for you, John Carter, until I heard the report of a
+revolver shot. I knew that there lived no man upon all Barsoom who
+could face you with naked steel and live, but the shot stripped the
+last vestige of hope from me, since you I knew to be without firearms.
+Tell me of it.”
 
-Maenck raised himself upon an elbow. He spoke feebly.
+I did as he bade, and then together we sought the secret panel through
+which I had just entered the apartment—the one at the opposite end of
+the room from that through which the girl had led her savage
+companions.
 
-“You fools,” he cried. “That man was not the king. I saw him steal the
-king’s clothes at Blentz and I followed him here. He is the
-American—the impostor.” Then his eyes, circling the faces about him to
-note the results of his announcements, fell upon the face of the man in
-the red hunting coat. Amazement and wonder were in his face. Slowly he
-raised his finger and pointed.
+To our disappointment the panel eluded our every effort to negotiate
+its secret lock. We felt that once beyond it we might look with some
+little hope of success for a passage to the outside world.
 
-“There is the king,” he said.
+The fact that the prisoners within were securely chained led us to
+believe that surely there must be an avenue of escape from the terrible
+creatures which inhabited this unspeakable place.
 
-Every eye turned in the direction he indicated. Exclamations of
-surprise and incredulity burst from every lip. The old chancellor
-looked from the man in the red hunting coat to the still form of the
-man upon the floor in the blood-spattered marriage garments of a king
-of Lutha. He let the king’s head gently down upon the carpet, and then
-he rose to his feet and faced the man in the red hunting coat.
+Again and again we turned from one door to another, from the baffling
+golden panel at one end of the chamber to its mate at the other—equally
+baffling.
 
-“Who are you?” he demanded.
+When we had about given up all hope one of the panels turned silently
+toward us, and the young woman who had led away the banths stood once
+more beside us.
 
-Before Barney could speak Lieutenant Butzow spoke.
+“Who are you?” she asked, “and what your mission, that you have the
+temerity to attempt to escape from the Valley Dor and the death you
+have chosen?”
 
-“He is the king, your highness,” he said. “I rode with him to Blentz to
-free Mr. Custer. Both were wounded in the courtyard in the fight that
-took place there. I helped to dress their wounds. The king was wounded
-in the breast—Mr. Custer in the left leg.”
+“I have chosen no death, maiden,” I replied. “I am not of Barsoom, nor
+have I taken yet the voluntary pilgrimage upon the River Iss. My friend
+here is Jeddak of all the Tharks, and though he has not yet expressed a
+desire to return to the living world, I am taking him with me from the
+living lie that hath lured him to this frightful place.
 
-Prince von der Tann looked puzzled. Again he turned his eyes
-questioningly toward the newcomer.
+“I am of another world. I am John Carter, Prince of the House of Tardos
+Mors, Jeddak of Helium. Perchance some faint rumour of me may have
+leaked within the confines of your hellish abode.”
 
-“Is this the truth?” he asked.
+She smiled.
 
-Barney looked toward the Princess Emma. In her eyes he could read the
-relief that the sight of him alive had brought her. Since she had
-recognized the king she had believed that Barney was dead. The
-temptation was great—he dreaded losing her, and he feared he would lose
-her when her father learned the truth of the deception that had been
-practiced upon him. He might lose even more—men had lost their heads
-for tampering with the affairs of kings.
+“Yes,” she replied, “naught that passes in the world we have left is
+unknown here. I have heard of you, many years ago. The therns have
+ofttimes wondered whither you had flown, since you had neither taken
+the pilgrimage, nor could be found upon the face of Barsoom.”
 
-“Well?” persisted the chancellor.
+“Tell me,” I said, “and who be you, and why a prisoner, yet with power
+over the ferocious beasts of the place that denotes familiarity and
+authority far beyond that which might be expected of a prisoner or a
+slave?”
 
-“Lieutenant Butzow is partially correct—he honestly believes that he is
-entirely so,” replied the American. “He did ride with me from Lustadt
-to Blentz to save the man who lies dead here at your feet. The
-lieutenant thought that he was riding with his king, just as your
-highness thought that he was riding with his king during the battle of
-Lustadt. You were both wrong—you were riding with Mr. Bernard Custer,
-of Beatrice. I am he. I have no apologies to make. What I did I would
-do again. I did it for Lutha and for the woman I love. She knows and
-the king knew that I intended restoring his identity to him with no one
-the wiser for the interchange that had taken place. The king upset my
-plans by stealing back his identity while I slept, with the result that
-you see before you upon the floor. He has died as he had
-lived—futilely.”
+“Slave I am,” she answered. “For fifteen years a slave in this terrible
+place, and now that they have tired of me and become fearful of the
+power which my knowledge of their ways has given me I am but recently
+condemned to die the death.”
 
-As he spoke the Princess Emma had crossed the room toward him. Now she
-stood at his side, her hand in his. Tense silence reigned in the
-apartment. The old chancellor stood with bowed head, buried in thought.
-All eyes were upon him except those of the doctor, who had turned his
-attention from the dead king to the wounded assassin. Butzow stood
-looking at Barney Custer in open relief and admiration. He had been
-trying to vindicate his friend in his own mind ever since he had
-discovered, as he believed, that Barney had tricked Leopold after the
-latter had saved his life at Blentz and ridden to Lustadt in the king’s
-guise. Now that he knew the whole truth he realized how stupid he had
-been not to guess that the man who had led the victorious Luthanian
-army before Lustadt could not have been the cowardly Leopold.
+She shuddered.
 
-Presently the chancellor broke the silence.
+“What death?” I asked.
 
-“You say that Leopold of Lutha lived futilely. You are right; but when
-you say that he has died futilely, you are, I believe, wrong. Living,
-he gave us a poor weakling. Dying, he leaves the throne to a brave man,
-in whose veins flows the blood of the Rubinroths, hereditary rulers of
-Lutha.
+“The Holy Therns eat human flesh,” she answered me; “but only that
+which has died beneath the sucking lips of a plant man—flesh from which
+the defiling blood of life has been drawn. And to this cruel end I have
+been condemned. It was to be within a few hours, had your advent not
+caused an interruption of their plans.”
 
-“You are the only rightful successor to the throne of Lutha,” he
-argued, “other than Peter of Blentz. Your mother’s marriage to a
-foreigner did not bar the succession of her offspring. Aside from the
-fact that Peter of Blentz is out of the question, is the more important
-fact that your line is closer to the throne than his. He knew it, and
-this knowledge was the real basis of his hatred of you.”
+“Was it then Holy Therns who felt the weight of John Carter’s hand?” I
+asked.
 
-As the old chancellor ceased speaking he drew his sword and raised it
-on high above his head.
+“Oh, no; those whom you laid low are lesser therns; but of the same
+cruel and hateful race. The Holy Therns abide upon the outer slopes of
+these grim hills, facing the broad world from which they harvest their
+victims and their spoils.
 
-“The king is dead,” he said. “Long live the king!”
+“Labyrinthine passages connect these caves with the luxurious palaces
+of the Holy Therns, and through them pass upon their many duties the
+lesser therns, and hordes of slaves, and prisoners, and fierce beasts;
+the grim inhabitants of this sunless world.
 
-### XVI. KING OF LUTHA
+“There be within this vast network of winding passages and countless
+chambers men, women, and beasts who, born within its dim and gruesome
+underworld, have never seen the light of day—nor ever shall.
 
-Barney Custer, of Beatrice, had no desire to be king of Lutha. He lost
-no time in saying so. All that he wanted of Lutha was the girl he had
-found there, as his father before him had found the girl of his choice.
-Von der Tann pleaded with him.
+“They are kept to do the bidding of the race of therns; to furnish at
+once their sport and their sustenance.
 
-“Twice have I fought under you, sire,” he urged. “Twice, and only twice
-since the old king died, have I felt that the future of Lutha was safe
-in the hands of her ruler, and both these times it was you who sat upon
-the throne. Do not desert us now. Let me live to see Lutha once more
-happy, with a true Rubinroth upon the throne and my daughter at his
-side.”
+“Now and again some hapless pilgrim, drifting out upon the silent sea
+from the cold Iss, escapes the plant men and the great white apes that
+guard the Temple of Issus and falls into the remorseless clutches of
+the therns; or, as was my misfortune, is coveted by the Holy Thern who
+chances to be upon watch in the balcony above the river where it issues
+from the bowels of the mountains through the cliffs of gold to empty
+into the Lost Sea of Korus.
 
-Butzow added his pleas to those of the old chancellor. The American
-hesitated.
+“All who reach the Valley Dor are, by custom, the rightful prey of the
+plant men and the apes, while their arms and ornaments become the
+portion of the therns; but if one escapes the terrible denizens of the
+valley for even a few hours the therns may claim such a one as their
+own. And again the Holy Thern on watch, should he see a victim he
+covets, often tramples upon the rights of the unreasoning brutes of the
+valley and takes his prize by foul means if he cannot gain it by fair.
 
-“Let us leave it to the representatives of the people and to the house
-of nobles,” he suggested.
+“It is said that occasionally some deluded victim of Barsoomian
+superstition will so far escape the clutches of the countless enemies
+that beset his path from the moment that he emerges from the
+subterranean passage through which the Iss flows for a thousand miles
+before it enters the Valley Dor as to reach the very walls of the
+Temple of Issus; but what fate awaits one there not even the Holy
+Therns may guess, for who has passed within those gilded walls never
+has returned to unfold the mysteries they have held since the beginning
+of time.
 
-The chancellor of Lutha explained the situation to both houses. Their
-reply was unanimous. He carried it to the American, who awaited the
-decision of Lutha in the royal apartments of the palace. With him was
-the Princess Emma von der Tann.
+“The Temple of Issus is to the therns what the Valley Dor is imagined
+by the peoples of the outer world to be to them; it is the ultimate
+haven of peace, refuge, and happiness to which they pass after this
+life and wherein an eternity of eternities is spent amidst the delights
+of the flesh which appeal most strongly to this race of mental giants
+and moral pygmies.”
 
-“The people of Lutha will have no other king, sire,” said the old man.
+“The Temple of Issus is, I take it, a heaven within a heaven,” I said.
+“Let us hope that there it will be meted to the therns as they have
+meted it here unto others.”
 
-Barney turned toward the girl.
+“Who knows?” the girl murmured.
 
-“There is no other way, my lord king,” she said with grave dignity.
-“With her blood your mother bequeathed you a duty which you may not
-shirk. It is not for you or for me to choose. God chose for you when
-you were born.”
+“The therns, I judge from what you have said, are no less mortal than
+we; and yet have I always heard them spoken of with the utmost awe and
+reverence by the people of Barsoom, as one might speak of the gods
+themselves.”
 
-Barney Custer took her hand in his and raised it to his lips.
+“The therns are mortal,” she replied. “They die from the same causes as
+you or I might: those who do not live their allotted span of life, one
+thousand years, when by the authority of custom they may take their way
+in happiness through the long tunnel that leads to Issus.
 
-“Let the King of Lutha,” he said, “be the first to salute Lutha’s
-queen.”
+“Those who die before are supposed to spend the balance of their
+allotted time in the image of a plant man, and it is for this reason
+that the plant men are held sacred by the therns, since they believe
+that each of these hideous creatures was formerly a thern.”
 
-And so Barney Custer, of Beatrice, was crowned King of Lutha, and Emma
-became his queen. Maenck died of his wound on the floor of the little
-room in the east transept of the cathedral of Lustadt beside the body
-of the king he had slain. Prince Peter of Blentz was tried by the
-highest court of Lutha on the charge of treason; he was found guilty
-and hanged. Von Coblich committed suicide on the eve of his arrest.
-Lieutenant Otto Butzow was ennobled and given the confiscated estates
-of the Blentz prince. He became a general in the army of Lutha, and was
-sent to the front in command of the army corps that guarded the
-northern frontier of the little kingdom.
+“And should a plant man die?” I asked.
+
+“Should he die before the expiration of the thousand years from the
+birth of the thern whose immortality abides within him then the soul
+passes into a great white ape, but should the ape die short of the
+exact hour that terminates the thousand years the soul is for ever lost
+and passes for all eternity into the carcass of the slimy and fearsome
+silians whose wriggling thousands seethe the silent sea beneath the
+hurtling moons when the sun has gone and strange shapes walk through
+the Valley Dor.”
+
+“We sent several Holy Therns to the silians to-day, then,” said Tars
+Tarkas, laughing.
+
+“And so will your death be the more terrible when it comes,” said the
+maiden. “And come it will—you cannot escape.”
+
+“One has escaped, centuries ago,” I reminded her, “and what has been
+done may be done again.”
+
+“It is useless even to try,” she answered hopelessly.
+
+“But try we shall,” I cried, “and you shall go with us, if you wish.”
+
+“To be put to death by mine own people, and render my memory a disgrace
+to my family and my nation? A Prince of the House of Tardos Mors should
+know better than to suggest such a thing.”
+
+Tars Tarkas listened in silence, but I could feel his eyes riveted upon
+me and I knew that he awaited my answer as one might listen to the
+reading of his sentence by the foreman of a jury.
+
+What I advised the girl to do would seal our fate as well, since if I
+bowed to the inevitable decree of age-old superstition we must all
+remain and meet our fate in some horrible form within this awful abode
+of horror and cruelty.
+
+“We have the right to escape if we can,” I answered. “Our own moral
+senses will not be offended if we succeed, for we know that the fabled
+life of love and peace in the blessed Valley of Dor is a rank and
+wicked deception. We know that the valley is not sacred; we know that
+the Holy Therns are not holy; that they are a race of cruel and
+heartless mortals, knowing no more of the real life to come than we do.
+
+“Not only is it our right to bend every effort to escape—it is a solemn
+duty from which we should not shrink even though we know that we should
+be reviled and tortured by our own peoples when we returned to them.
+
+“Only thus may we carry the truth to those without, and though the
+likelihood of our narrative being given credence is, I grant you,
+remote, so wedded are mortals to their stupid infatuation for
+impossible superstitions, we should be craven cowards indeed were we to
+shirk the plain duty which confronts us.
+
+“Again there is a chance that with the weight of the testimony of
+several of us the truth of our statements may be accepted, and at least
+a compromise effected which will result in the dispatching of an
+expedition of investigation to this hideous mockery of heaven.”
+
+Both the girl and the green warrior stood silent in thought for some
+moments. The former it was who eventually broke the silence.
+
+“Never had I considered the matter in that light before,” she said.
+“Indeed would I give my life a thousand times if I could but save a
+single soul from the awful life that I have led in this cruel place.
+Yes, you are right, and I will go with you as far as we can go; but I
+doubt that we ever shall escape.”
+
+I turned an inquiring glance toward the Thark.
+
+“To the gates of Issus, or to the bottom of Korus,” spoke the green
+warrior; “to the snows to the north or to the snows to the south, Tars
+Tarkas follows where John Carter leads. I have spoken.”
+
+“Come, then,” I cried, “we must make the start, for we could not be
+further from escape than we now are in the heart of this mountain and
+within the four walls of this chamber of death.”
+
+“Come, then,” said the girl, “but do not flatter yourself that you can
+find no worse place than this within the territory of the therns.”
+
+So saying she swung the secret panel that separated us from the
+apartment in which I had found her, and we stepped through once more
+into the presence of the other prisoners.
+
+There were in all ten red Martians, men and women, and when we had
+briefly explained our plan they decided to join forces with us, though
+it was evident that it was with some considerable misgivings that they
+thus tempted fate by opposing an ancient superstition, even though each
+knew through cruel experience the fallacy of its entire fabric.
+
+Thuvia, the girl whom I had first freed, soon had the others at
+liberty. Tars Tarkas and I stripped the bodies of the two therns of
+their weapons, which included swords, daggers, and two revolvers of the
+curious and deadly type manufactured by the red Martians.
+
+We distributed the weapons as far as they would go among our followers,
+giving the firearms to two of the women; Thuvia being one so armed.
+
+With the latter as our guide we set off rapidly but cautiously through
+a maze of passages, crossing great chambers hewn from the solid metal
+of the cliff, following winding corridors, ascending steep inclines,
+and now and again concealing ourselves in dark recesses at the sound of
+approaching footsteps.
+
+Our destination, Thuvia said, was a distant storeroom where arms and
+ammunition in plenty might be found. From there she was to lead us to
+the summit of the cliffs, from where it would require both wondrous wit
+and mighty fighting to win our way through the very heart of the
+stronghold of the Holy Therns to the world without.
+
+“And even then, O Prince,” she cried, “the arm of the Holy Thern is
+long. It reaches to every nation of Barsoom. His secret temples are
+hidden in the heart of every community. Wherever we go should we escape
+we shall find that word of our coming has preceded us, and death awaits
+us before we may pollute the air with our blasphemies.”
+
+We had proceeded for possibly an hour without serious interruption, and
+Thuvia had just whispered to me that we were approaching our first
+destination, when on entering a great chamber we came upon a man,
+evidently a thern.
+
+He wore in addition to his leathern trappings and jewelled ornaments a
+great circlet of gold about his brow in the exact centre of which was
+set an immense stone, the exact counterpart of that which I had seen
+upon the breast of the little old man at the atmosphere plant nearly
+twenty years before.
+
+It is the one priceless jewel of Barsoom. Only two are known to exist,
+and these were worn as the insignia of their rank and position by the
+two old men in whose charge was placed the operation of the great
+engines which pump the artificial atmosphere to all parts of Mars from
+the huge atmosphere plant, the secret to whose mighty portals placed in
+my possession the ability to save from immediate extinction the life of
+a whole world.
+
+The stone worn by the thern who confronted us was of about the same
+size as that which I had seen before; an inch in diameter I should say.
+It scintillated nine different and distinct rays; the seven primary
+colours of our earthly prism and the two rays which are unknown upon
+Earth, but whose wondrous beauty is indescribable.
+
+As the thern saw us his eyes narrowed to two nasty slits.
+
+“Stop!” he cried. “What means this, Thuvia?”
+
+For answer the girl raised her revolver and fired point-blank at him.
+Without a sound he sank to the earth, dead.
+
+“Beast!” she hissed. “After all these years I am at last revenged.”
+
+Then as she turned toward me, evidently with a word of explanation on
+her lips, her eyes suddenly widened as they rested upon me, and with a
+little exclamation she started toward me.
+
+“O Prince,” she cried, “Fate is indeed kind to us. The way is still
+difficult, but through this vile thing upon the floor we may yet win to
+the outer world. Notest thou not the remarkable resemblance between
+this Holy Thern and thyself?”
+
+The man was indeed of my precise stature, nor were his eyes and
+features unlike mine; but his hair was a mass of flowing yellow locks,
+like those of the two I had killed, while mine is black and close
+cropped.
+
+“What of the resemblance?” I asked the girl Thuvia. “Do you wish me
+with my black, short hair to pose as a yellow-haired priest of this
+infernal cult?”
+
+She smiled, and for answer approached the body of the man she had
+slain, and kneeling beside it removed the circlet of gold from the
+forehead, and then to my utter amazement lifted the entire scalp bodily
+from the corpse’s head.
+
+Rising, she advanced to my side and placing the yellow wig over my
+black hair, crowned me with the golden circlet set with the magnificent
+gem.
+
+“Now don his harness, Prince,” she said, “and you may pass where you
+will in the realms of the therns, for Sator Throg was a Holy Thern of
+the Tenth Cycle, and mighty among his kind.”
+
+As I stooped to the dead man to do her bidding I noted that not a hair
+grew upon his head, which was quite as bald as an egg.
+
+“They are all thus from birth,” explained Thuvia noting my surprise.
+“The race from which they sprang were crowned with a luxuriant growth
+of golden hair, but for many ages the present race has been entirely
+bald. The wig, however, has come to be a part of their apparel, and so
+important a part do they consider it that it is cause for the deepest
+disgrace were a thern to appear in public without it.”
+
+In another moment I stood garbed in the habiliments of a Holy Thern.
+
+At Thuvia’s suggestion two of the released prisoners bore the body of
+the dead thern upon their shoulders with us as we continued our journey
+toward the storeroom, which we reached without further mishap.
+
+Here the keys which Thuvia bore from the dead thern of the prison vault
+were the means of giving us immediate entrance to the chamber, and very
+quickly we were thoroughly outfitted with arms and ammunition.
+
+By this time I was so thoroughly fagged out that I could go no further,
+so I threw myself upon the floor, bidding Tars Tarkas to do likewise,
+and cautioning two of the released prisoners to keep careful watch.
+
+In an instant I was asleep.
+
+## CHAPTER V CORRIDORS OF PERIL
+
+How long I slept upon the floor of the storeroom I do not know, but it
+must have been many hours.
+
+I was awakened with a start by cries of alarm, and scarce were my eyes
+opened, nor had I yet sufficiently collected my wits to quite realize
+where I was, when a fusillade of shots rang out, reverberating through
+the subterranean corridors in a series of deafening echoes.
+
+In an instant I was upon my feet. A dozen lesser therns confronted us
+from a large doorway at the opposite end of the storeroom from which we
+had entered. About me lay the bodies of my companions, with the
+exception of Thuvia and Tars Tarkas, who, like myself, had been asleep
+upon the floor and thus escaped the first raking fire.
+
+As I gained my feet the therns lowered their wicked rifles, their faces
+distorted in mingled chagrin, consternation, and alarm.
+
+Instantly I rose to the occasion.
+
+“What means this?” I cried in tones of fierce anger. “Is Sator Throg to
+be murdered by his own vassals?”
+
+“Have mercy, O Master of the Tenth Cycle!” cried one of the fellows,
+while the others edged toward the doorway as though to attempt a
+surreptitious escape from the presence of the mighty one.
+
+“Ask them their mission here,” whispered Thuvia at my elbow.
+
+“What do you here, fellows?” I cried.
+
+“Two from the outer world are at large within the dominions of the
+therns. We sought them at the command of the Father of Therns. One was
+white with black hair, the other a huge green warrior,” and here the
+fellow cast a suspicious glance toward Tars Tarkas.
+
+“Here, then, is one of them,” spoke Thuvia, indicating the Thark, “and
+if you will look upon this dead man by the door perhaps you will
+recognize the other. It was left for Sator Throg and his poor slaves to
+accomplish what the lesser therns of the guard were unable to do—we
+have killed one and captured the other; for this had Sator Throg given
+us our liberty. And now in your stupidity have you come and killed all
+but myself, and like to have killed the mighty Sator Throg himself.”
+
+The men looked very sheepish and very scared.
+
+“Had they not better throw these bodies to the plant men and then
+return to their quarters, O Mighty One?” asked Thuvia of me.
+
+“Yes; do as Thuvia bids you,” I said.
+
+As the men picked up the bodies I noticed that the one who stooped to
+gather up the late Sator Throg started as his closer scrutiny fell upon
+the upturned face, and then the fellow stole a furtive, sneaking glance
+in my direction from the corner of his eye.
+
+That he suspicioned something of the truth I could have sworn; but that
+it was only a suspicion which he did not dare voice was evidenced by
+his silence.
+
+Again, as he bore the body from the room, he shot a quick but searching
+glance toward me, and then his eyes fell once more upon the bald and
+shiny dome of the dead man in his arms. The last fleeting glimpse that
+I obtained of his profile as he passed from my sight without the
+chamber revealed a cunning smile of triumph upon his lips.
+
+Only Tars Tarkas, Thuvia, and I were left. The fatal marksmanship of
+the therns had snatched from our companions whatever slender chance
+they had of gaining the perilous freedom of the world without.
+
+So soon as the last of the gruesome procession had disappeared the girl
+urged us to take up our flight once more.
+
+She, too, had noted the questioning attitude of the thern who had borne
+Sator Throg away.
+
+“It bodes no good for us, O Prince,” she said. “For even though this
+fellow dared not chance accusing you in error, there be those above
+with power sufficient to demand a closer scrutiny, and that, Prince,
+would indeed prove fatal.”
+
+I shrugged my shoulders. It seemed that in any event the outcome of our
+plight must end in death. I was refreshed from my sleep, but still weak
+from loss of blood. My wounds were painful. No medicinal aid seemed
+possible. How I longed for the almost miraculous healing power of the
+strange salves and lotions of the green Martian women. In an hour they
+would have had me as new.
+
+I was discouraged. Never had a feeling of such utter hopelessness come
+over me in the face of danger. Then the long flowing, yellow locks of
+the Holy Thern, caught by some vagrant draught, blew about my face.
+
+Might they not still open the way of freedom? If we acted in time,
+might we not even yet escape before the general alarm was sounded? We
+could at least try.
+
+“What will the fellow do first, Thuvia?” I asked. “How long will it be
+before they may return for us?”
+
+“He will go directly to the Father of Therns, old Matai Shang. He may
+have to wait for an audience, but since he is very high among the
+lesser therns, in fact as a thorian among them, it will not be long
+that Matai Shang will keep him waiting.
+
+“Then if the Father of Therns puts credence in his story, another hour
+will see the galleries and chambers, the courts and gardens, filled
+with searchers.”
+
+“What we do then must be done within an hour. What is the best way,
+Thuvia, the shortest way out of this celestial Hades?”
+
+“Straight to the top of the cliffs, Prince,” she replied, “and then
+through the gardens to the inner courts. From there our way will lie
+within the temples of the therns and across them to the outer court.
+Then the ramparts—O Prince, it is hopeless. Ten thousand warriors could
+not hew a way to liberty from out this awful place.
+
+“Since the beginning of time, little by little, stone by stone, have
+the therns been ever adding to the defences of their stronghold. A
+continuous line of impregnable fortifications circles the outer slopes
+of the Mountains of Otz.
+
+“Within the temples that lie behind the ramparts a million fighting-men
+are ever ready. The courts and gardens are filled with slaves, with
+women and with children.
+
+“None could go a stone’s throw without detection.”
+
+“If there is no other way, Thuvia, why dwell upon the difficulties of
+this. We must face them.”
+
+“Can we not better make the attempt after dark?” asked Tars Tarkas.
+“There would seem to be no chance by day.”
+
+“There would be a little better chance by night, but even then the
+ramparts are well guarded; possibly better than by day. There are fewer
+abroad in the courts and gardens, though,” said Thuvia.
+
+“What is the hour?” I asked.
+
+“It was midnight when you released me from my chains,” said Thuvia.
+“Two hours later we reached the storeroom. There you slept for fourteen
+hours. It must now be nearly sundown again. Come, we will go to some
+nearby window in the cliff and make sure.”
+
+So saying, she led the way through winding corridors until at a sudden
+turn we came upon an opening which overlooked the Valley Dor.
+
+At our right the sun was setting, a huge red orb, below the western
+range of Otz. A little below us stood the Holy Thern on watch upon his
+balcony. His scarlet robe of office was pulled tightly about him in
+anticipation of the cold that comes so suddenly with darkness as the
+sun sets. So rare is the atmosphere of Mars that it absorbs very little
+heat from the sun. During the daylight hours it is always extremely
+hot; at night it is intensely cold. Nor does the thin atmosphere
+refract the sun’s rays or diffuse its light as upon Earth. There is no
+twilight on Mars. When the great orb of day disappears beneath the
+horizon the effect is precisely as that of the extinguishing of a
+single lamp within a chamber. From brilliant light you are plunged
+without warning into utter darkness. Then the moons come; the
+mysterious, magic moons of Mars, hurtling like monster meteors low
+across the face of the planet.
+
+The declining sun lighted brilliantly the eastern banks of Korus, the
+crimson sward, the gorgeous forest. Beneath the trees we saw feeding
+many herds of plant men. The adults stood aloft upon their toes and
+their mighty tails, their talons pruning every available leaf and twig.
+It was then that I understood the careful trimming of the trees which
+had led me to form the mistaken idea when first I opened my eyes upon
+the grove that it was the playground of a civilized people.
+
+As we watched, our eyes wandered to the rolling Iss, which issued from
+the base of the cliffs beneath us. Presently there emerged from the
+mountain a canoe laden with lost souls from the outer world. There were
+a dozen of them. All were of the highly civilized and cultured race of
+red men who are dominant on Mars.
+
+The eyes of the herald upon the balcony beneath us fell upon the doomed
+party as soon as did ours. He raised his head and leaning far out over
+the low rail that rimmed his dizzy perch, voiced the shrill, weird wail
+that called the demons of this hellish place to the attack.
+
+For an instant the brutes stood with stiffly erected ears, then they
+poured from the grove toward the river’s bank, covering the distance
+with great, ungainly leaps.
+
+The party had landed and was standing on the sward as the awful horde
+came in sight. There was a brief and futile effort of defence. Then
+silence as the huge, repulsive shapes covered the bodies of their
+victims and scores of sucking mouths fastened themselves to the flesh
+of their prey.
+
+I turned away in disgust.
+
+“Their part is soon over,” said Thuvia. “The great white apes get the
+flesh when the plant men have drained the arteries. Look, they are
+coming now.”
+
+As I turned my eyes in the direction the girl indicated, I saw a dozen
+of the great white monsters running across the valley toward the river
+bank. Then the sun went down and darkness that could almost be felt
+engulfed us.
+
+Thuvia lost no time in leading us toward the corridor which winds back
+and forth up through the cliffs toward the surface thousands of feet
+above the level on which we had been.
+
+Twice great banths, wandering loose through the galleries, blocked our
+progress, but in each instance Thuvia spoke a low word of command and
+the snarling beasts slunk sullenly away.
+
+“If you can dissolve all our obstacles as easily as you master these
+fierce brutes I can see no difficulties in our way,” I said to the
+girl, smiling. “How do you do it?”
+
+She laughed, and then shuddered.
+
+“I do not quite know,” she said. “When first I came here I angered
+Sator Throg, because I repulsed him. He ordered me to be thrown into
+one of the great pits in the inner gardens. It was filled with banths.
+In my own country I had been accustomed to command. Something in my
+voice, I do not know what, cowed the beasts as they sprang to attack
+me.
+
+“Instead of tearing me to pieces, as Sator Throg had desired, they
+fawned at my feet. So greatly were Sator Throg and his friends amused
+by the sight that they kept me to train and handle the terrible
+creatures. I know them all by name. There are many of them wandering
+through these lower regions. They are the scavengers. Many prisoners
+die here in their chains. The banths solve the problem of sanitation,
+at least in this respect.
+
+“In the gardens and temples above they are kept in pits. The therns
+fear them. It is because of the banths that they seldom venture below
+ground except as their duties call them.”
+
+An idea occurred to me, suggested by what Thuvia had just said.
+
+“Why not take a number of banths and set them loose before us above
+ground?” I asked.
+
+Thuvia laughed.
+
+“It would distract attention from us, I am sure,” she said.
+
+She commenced calling in a low singsong voice that was half purr. She
+continued this as we wound our tedious way through the maze of
+subterranean passages and chambers.
+
+Presently soft, padded feet sounded close behind us, and as I turned I
+saw a pair of great, green eyes shining in the dark shadows at our
+rear. From a diverging tunnel a sinuous, tawny form crept stealthily
+toward us.
+
+Low growls and angry snarls assailed our ears on every side as we
+hastened on and one by one the ferocious creatures answered the call of
+their mistress.
+
+She spoke a word to each as it joined us. Like well-schooled terriers,
+they paced the corridors with us, but I could not help but note the
+lathering jowls, nor the hungry expressions with which they eyed Tars
+Tarkas and myself.
+
+Soon we were entirely surrounded by some fifty of the brutes. Two
+walked close on either side of Thuvia, as guards might walk. The sleek
+sides of others now and then touched my own naked limbs. It was a
+strange experience; the almost noiseless passage of naked human feet
+and padded paws; the golden walls splashed with precious stones; the
+dim light cast by the tiny radium bulbs set at considerable distances
+along the roof; the huge, maned beasts of prey crowding with low growls
+about us; the mighty green warrior towering high above us all; myself
+crowned with the priceless diadem of a Holy Thern; and leading the
+procession the beautiful girl, Thuvia.
+
+I shall not soon forget it.
+
+Presently we approached a great chamber more brightly lighted than the
+corridors. Thuvia halted us. Quietly she stole toward the entrance and
+glanced within. Then she motioned us to follow her.
+
+The room was filled with specimens of the strange beings that inhabit
+this underworld; a heterogeneous collection of hybrids—the offspring of
+the prisoners from the outside world; red and green Martians and the
+white race of therns.
+
+Constant confinement below ground had wrought odd freaks upon their
+skins. They more resemble corpses than living beings. Many are
+deformed, others maimed, while the majority, Thuvia explained, are
+sightless.
+
+As they lay sprawled about the floor, sometimes overlapping one
+another, again in heaps of several bodies, they suggested instantly to
+me the grotesque illustrations that I had seen in copies of Dante’s
+_Inferno_, and what more fitting comparison? Was this not indeed a
+veritable hell, peopled by lost souls, dead and damned beyond all hope?
+
+Picking our way carefully we threaded a winding path across the
+chamber, the great banths sniffing hungrily at the tempting prey spread
+before them in such tantalizing and defenceless profusion.
+
+Several times we passed the entrances to other chambers similarly
+peopled, and twice again we were compelled to cross directly through
+them. In others were chained prisoners and beasts.
+
+“Why is it that we see no therns?” I asked of Thuvia.
+
+“They seldom traverse the underworld at night, for then it is that the
+great banths prowl the dim corridors seeking their prey. The therns
+fear the awful denizens of this cruel and hopeless world that they have
+fostered and allowed to grow beneath their feet. The prisoners even
+sometimes turn upon them and rend them. The thern can never tell from
+what dark shadow an assassin may spring upon his back.
+
+“By day it is different. Then the corridors and chambers are filled
+with guards passing to and fro; slaves from the temples above come by
+hundreds to the granaries and storerooms. All is life then. You did not
+see it because I led you not in the beaten tracks, but through
+roundabout passages seldom used. Yet it is possible that we may meet a
+thern even yet. They do occasionally find it necessary to come here
+after the sun has set. Because of this I have moved with such great
+caution.”
+
+But we reached the upper galleries without detection and presently
+Thuvia halted us at the foot of a short, steep ascent.
+
+“Above us,” she said, “is a doorway which opens on to the inner
+gardens. I have brought you thus far. From here on for four miles to
+the outer ramparts our way will be beset by countless dangers. Guards
+patrol the courts, the temples, the gardens. Every inch of the ramparts
+themselves is beneath the eye of a sentry.”
+
+I could not understand the necessity for such an enormous force of
+armed men about a spot so surrounded by mystery and superstition that
+not a soul upon Barsoom would have dared to approach it even had they
+known its exact location. I questioned Thuvia, asking her what enemies
+the therns could fear in their impregnable fortress.
+
+We had reached the doorway now and Thuvia was opening it.
+
+“They fear the black pirates of Barsoom, O Prince,” she said, “from
+whom may our first ancestors preserve us.”
+
+The door swung open; the smell of growing things greeted my nostrils;
+the cool night air blew against my cheek. The great banths sniffed the
+unfamiliar odours, and then with a rush they broke past us with low
+growls, swarming across the gardens beneath the lurid light of the
+nearer moon.
+
+Suddenly a great cry arose from the roofs of the temples; a cry of
+alarm and warning that, taken up from point to point, ran off to the
+east and to the west, from temple, court, and rampart, until it sounded
+as a dim echo in the distance.
+
+The great Thark’s long-sword leaped from its scabbard; Thuvia shrank
+shuddering to my side.
+
+## CHAPTER VI THE BLACK PIRATES OF BARSOOM
+
+“What is it?” I asked of the girl.
+
+For answer she pointed to the sky.
+
+I looked, and there, above us, I saw shadowy bodies flitting hither and
+thither high over temple, court, and garden.
+
+Almost immediately flashes of light broke from these strange objects.
+There was a roar of musketry, and then answering flashes and roars from
+temple and rampart.
+
+“The black pirates of Barsoom, O Prince,” said Thuvia.
+
+In great circles the air craft of the marauders swept lower and lower
+toward the defending forces of the therns.
+
+Volley after volley they vomited upon the temple guards; volley on
+volley crashed through the thin air toward the fleeting and illusive
+fliers.
+
+As the pirates swooped closer toward the ground, thern soldiery poured
+from the temples into the gardens and courts. The sight of them in the
+open brought a score of fliers darting toward us from all directions.
+
+The therns fired upon them through shields affixed to their rifles, but
+on, steadily on, came the grim, black craft. They were small fliers for
+the most part, built for two to three men. A few larger ones there
+were, but these kept high aloft dropping bombs upon the temples from
+their keel batteries.
+
+At length, with a concerted rush, evidently in response to a signal of
+command, the pirates in our immediate vicinity dashed recklessly to the
+ground in the very midst of the thern soldiery.
+
+Scarcely waiting for their craft to touch, the creatures manning them
+leaped among the therns with the fury of demons. Such fighting! Never
+had I witnessed its like before. I had thought the green Martians the
+most ferocious warriors in the universe, but the awful abandon with
+which the black pirates threw themselves upon their foes transcended
+everything I ever before had seen.
+
+Beneath the brilliant light of Mars’ two glorious moons the whole scene
+presented itself in vivid distinctness. The golden-haired,
+white-skinned therns battling with desperate courage in hand-to-hand
+conflict with their ebony-skinned foemen.
+
+Here a little knot of struggling warriors trampled a bed of gorgeous
+pimalia; there the curved sword of a black man found the heart of a
+thern and left its dead foeman at the foot of a wondrous statue carved
+from a living ruby; yonder a dozen therns pressed a single pirate back
+upon a bench of emerald, upon whose iridescent surface a strangely
+beautiful Barsoomian design was traced out in inlaid diamonds.
+
+A little to one side stood Thuvia, the Thark, and I. The tide of battle
+had not reached us, but the fighters from time to time swung close
+enough that we might distinctly note them.
+
+The black pirates interested me immensely. I had heard vague rumours,
+little more than legends they were, during my former life on Mars; but
+never had I seen them, nor talked with one who had.
+
+They were popularly supposed to inhabit the lesser moon, from which
+they descended upon Barsoom at long intervals. Where they visited they
+wrought the most horrible atrocities, and when they left carried away
+with them firearms and ammunition, and young girls as prisoners. These
+latter, the rumour had it, they sacrificed to some terrible god in an
+orgy which ended in the eating of their victims.
+
+I had an excellent opportunity to examine them, as the strife
+occasionally brought now one and now another close to where I stood.
+They were large men, possibly six feet and over in height. Their
+features were clear cut and handsome in the extreme; their eyes were
+well set and large, though a slight narrowness lent them a crafty
+appearance; the iris, as well as I could determine by moonlight, was of
+extreme blackness, while the eyeball itself was quite white and clear.
+The physical structure of their bodies seemed identical with those of
+the therns, the red men, and my own. Only in the colour of their skin
+did they differ materially from us; that is of the appearance of
+polished ebony, and odd as it may seem for a Southerner to say it, adds
+to rather than detracts from their marvellous beauty.
+
+But if their bodies are divine, their hearts, apparently, are quite the
+reverse. Never did I witness such a malign lust for blood as these
+demons of the outer air evinced in their mad battle with the therns.
+
+All about us in the garden lay their sinister craft, which the therns
+for some reason, then unaccountable to me, made no effort to injure.
+Now and again a black warrior would rush from a nearby temple bearing a
+young woman in his arms. Straight for his flier he would leap while
+those of his comrades who fought near by would rush to cover his
+escape.
+
+The therns on their side would hasten to rescue the girl, and in an
+instant the two would be swallowed in the vortex of a maelstrom of
+yelling devils, hacking and hewing at one another, like fiends
+incarnate.
+
+But always, it seemed, were the black pirates of Barsoom victorious,
+and the girl, brought miraculously unharmed through the conflict, borne
+away into the outer darkness upon the deck of a swift flier.
+
+Fighting similar to that which surrounded us could be heard in both
+directions as far as sound carried, and Thuvia told me that the attacks
+of the black pirates were usually made simultaneously along the entire
+ribbon-like domain of the therns, which circles the Valley Dor on the
+outer slopes of the Mountains of Otz.
+
+As the fighting receded from our position for a moment, Thuvia turned
+toward me with a question.
+
+“Do you understand now, O Prince,” she said, “why a million warriors
+guard the domains of the Holy Therns by day and by night?”
+
+“The scene you are witnessing now is but a repetition of what I have
+seen enacted a score of times during the fifteen years I have been a
+prisoner here. From time immemorial the black pirates of Barsoom have
+preyed upon the Holy Therns.
+
+“Yet they never carry their expeditions to a point, as one might
+readily believe it was in their power to do, where the extermination of
+the race of therns is threatened. It is as though they but utilized the
+race as playthings, with which they satisfy their ferocious lust for
+fighting; and from whom they collect toll in arms and ammunition and in
+prisoners.”
+
+“Why don’t they jump in and destroy these fliers?” I asked. “That would
+soon put a stop to the attacks, or at least the blacks would scarce be
+so bold. Why, see how perfectly unguarded they leave their craft, as
+though they were lying safe in their own hangars at home.”
+
+“The therns do not dare. They tried it once, ages ago, but the next
+night and for a whole moon thereafter a thousand great black
+battleships circled the Mountains of Otz, pouring tons of projectiles
+upon the temples, the gardens, and the courts, until every thern who
+was not killed was driven for safety into the subterranean galleries.
+
+“The therns know that they live at all only by the sufferance of the
+black men. They were near to extermination that once and they will not
+venture risking it again.”
+
+As she ceased talking a new element was instilled into the conflict. It
+came from a source equally unlooked for by either thern or pirate. The
+great banths which we had liberated in the garden had evidently been
+awed at first by the sound of the battle, the yelling of the warriors
+and the loud report of rifle and bomb.
+
+But now they must have become angered by the continuous noise and
+excited by the smell of new blood, for all of a sudden a great form
+shot from a clump of low shrubbery into the midst of a struggling mass
+of humanity. A horrid scream of bestial rage broke from the banth as he
+felt warm flesh beneath his powerful talons.
+
+As though his cry was but a signal to the others, the entire great pack
+hurled themselves among the fighters. Panic reigned in an instant.
+Thern and black man turned alike against the common enemy, for the
+banths showed no partiality toward either.
+
+The awful beasts bore down a hundred men by the mere weight of their
+great bodies as they hurled themselves into the thick of the fight.
+Leaping and clawing, they mowed down the warriors with their powerful
+paws, turning for an instant to rend their victims with frightful
+fangs.
+
+The scene was fascinating in its terribleness, but suddenly it came to
+me that we were wasting valuable time watching this conflict, which in
+itself might prove a means of our escape.
+
+The therns were so engaged with their terrible assailants that now, if
+ever, escape should be comparatively easy. I turned to search for an
+opening through the contending hordes. If we could but reach the
+ramparts we might find that the pirates somewhere had thinned the
+guarding forces and left a way open to us to the world without.
+
+As my eyes wandered about the garden, the sight of the hundreds of air
+craft lying unguarded around us suggested the simplest avenue to
+freedom. Why it had not occurred to me before! I was thoroughly
+familiar with the mechanism of every known make of flier on Barsoom.
+For nine years I had sailed and fought with the navy of Helium. I had
+raced through space on the tiny one-man air scout and I had commanded
+the greatest battleship that ever had floated in the thin air of dying
+Mars.
+
+To think, with me, is to act. Grasping Thuvia by the arm, I whispered
+to Tars Tarkas to follow me. Quickly we glided toward a small flier
+which lay furthest from the battling warriors. Another instant found us
+huddled on the tiny deck. My hand was on the starting lever. I pressed
+my thumb upon the button which controls the ray of repulsion, that
+splendid discovery of the Martians which permits them to navigate the
+thin atmosphere of their planet in huge ships that dwarf the
+dreadnoughts of our earthly navies into pitiful insignificance.
+
+The craft swayed slightly but she did not move. Then a new cry of
+warning broke upon our ears. Turning, I saw a dozen black pirates
+dashing toward us from the melee. We had been discovered. With shrieks
+of rage the demons sprang for us. With frenzied insistence I continued
+to press the little button which should have sent us racing out into
+space, but still the vessel refused to budge. Then it came to me—the
+reason that she would not rise.
+
+We had stumbled upon a two-man flier. Its ray tanks were charged only
+with sufficient repulsive energy to lift two ordinary men. The Thark’s
+great weight was anchoring us to our doom.
+
+The blacks were nearly upon us. There was not an instant to be lost in
+hesitation or doubt.
+
+I pressed the button far in and locked it. Then I set the lever at high
+speed and as the blacks came yelling upon us I slipped from the craft’s
+deck and with drawn long-sword met the attack.
+
+At the same moment a girl’s shriek rang out behind me and an instant
+later, as the blacks fell upon me. I heard far above my head, and
+faintly, in Thuvia’s voice: “My Prince, O my Prince; I would rather
+remain and die with—” But the rest was lost in the noise of my
+assailants.
+
+I knew though that my ruse had worked and that temporarily at least
+Thuvia and Tars Tarkas were safe, and the means of escape was theirs.
+
+For a moment it seemed that I could not withstand the weight of numbers
+that confronted me, but again, as on so many other occasions when I had
+been called upon to face fearful odds upon this planet of warriors and
+fierce beasts, I found that my earthly strength so far transcended that
+of my opponents that the odds were not so greatly against me as they
+appeared.
+
+My seething blade wove a net of death about me. For an instant the
+blacks pressed close to reach me with their shorter swords, but
+presently they gave back, and the esteem in which they suddenly had
+learned to hold my sword arm was writ large upon each countenance.
+
+I knew though that it was but a question of minutes before their
+greater numbers would wear me down, or get around my guard. I must go
+down eventually to certain death before them. I shuddered at the
+thought of it, dying thus in this terrible place where no word of my
+end ever could reach my Dejah Thoris. Dying at the hands of nameless
+black men in the gardens of the cruel therns.
+
+Then my old-time spirit reasserted itself. The fighting blood of my
+Virginian sires coursed hot through my veins. The fierce blood lust and
+the joy of battle surged over me. The fighting smile that has brought
+consternation to a thousand foemen touched my lips. I put the thought
+of death out of my mind, and fell upon my antagonists with fury that
+those who escaped will remember to their dying day.
+
+That others would press to the support of those who faced me I knew, so
+even as I fought I kept my wits at work, searching for an avenue of
+escape.
+
+It came from an unexpected quarter out of the black night behind me. I
+had just disarmed a huge fellow who had given me a desperate struggle,
+and for a moment the blacks stood back for a breathing spell.
+
+They eyed me with malignant fury, yet withal there was a touch of
+respect in their demeanour.
+
+“Thern,” said one, “you fight like a Dator. But for your detestable
+yellow hair and your white skin you would be an honour to the First
+Born of Barsoom.”
+
+“I am no thern,” I said, and was about to explain that I was from
+another world, thinking that by patching a truce with these fellows and
+fighting with them against the therns I might enlist their aid in
+regaining my liberty. But just at that moment a heavy object smote me a
+resounding whack between my shoulders that nearly felled me to the
+ground.
+
+As I turned to meet this new enemy an object passed over my shoulder,
+striking one of my assailants squarely in the face and knocking him
+senseless to the sward. At the same instant I saw that the thing that
+had struck us was the trailing anchor of a rather fair-sized air
+vessel; possibly a ten man cruiser.
+
+The ship was floating slowly above us, not more than fifty feet over
+our heads. Instantly the one chance for escape that it offered
+presented itself to me. The vessel was slowly rising and now the anchor
+was beyond the blacks who faced me and several feet above their heads.
+
+With a bound that left them gaping in wide-eyed astonishment I sprang
+completely over them. A second leap carried me just high enough to
+grasp the now rapidly receding anchor.
+
+But I was successful, and there I hung by one hand, dragging through
+the branches of the higher vegetation of the gardens, while my late
+foemen shrieked and howled beneath me.
+
+Presently the vessel veered toward the west and then swung gracefully
+to the south. In another instant I was carried beyond the crest of the
+Golden Cliffs, out over the Valley Dor, where, six thousand feet below
+me, the Lost Sea of Korus lay shimmering in the moonlight.
+
+Carefully I climbed to a sitting posture across the anchor’s arms. I
+wondered if by chance the vessel might be deserted. I hoped so. Or
+possibly it might belong to a friendly people, and have wandered by
+accident almost within the clutches of the pirates and the therns. The
+fact that it was retreating from the scene of battle lent colour to
+this hypothesis.
+
+But I decided to know positively, and at once, so, with the greatest
+caution, I commenced to climb slowly up the anchor chain toward the
+deck above me.
+
+One hand had just reached for the vessel’s rail and found it when a
+fierce black face was thrust over the side and eyes filled with
+triumphant hate looked into mine.
+
+## CHAPTER VII A FAIR GODDESS
+
+For an instant the black pirate and I remained motionless, glaring into
+each other’s eyes. Then a grim smile curled the handsome lips above me,
+as an ebony hand came slowly in sight from above the edge of the deck
+and the cold, hollow eye of a revolver sought the centre of my
+forehead.
+
+The cold, hollow eye of a revolver sought the centre of
+my forehead.
+
+Simultaneously my free hand shot out for the black throat, just within
+reach, and the ebony finger tightened on the trigger. The pirate’s
+hissing, “Die, cursed thern,” was half choked in his windpipe by my
+clutching fingers. The hammer fell with a futile click upon an empty
+chamber.
+
+Before he could fire again I had pulled him so far over the edge of the
+deck that he was forced to drop his firearm and clutch the rail with
+both hands.
+
+My grasp upon his throat effectually prevented any outcry, and so we
+struggled in grim silence; he to tear away from my hold, I to drag him
+over to his death.
+
+His face was taking on a livid hue, his eyes were bulging from their
+sockets. It was evident to him that he soon must die unless he tore
+loose from the steel fingers that were choking the life from him. With
+a final effort he threw himself further back upon the deck, at the same
+instant releasing his hold upon the rail to tear frantically with both
+hands at my fingers in an effort to drag them from his throat.
+
+That little second was all that I awaited. With one mighty downward
+surge I swept him clear of the deck. His falling body came near to
+tearing me from the frail hold that my single free hand had upon the
+anchor chain and plunging me with him to the waters of the sea below.
+
+I did not relinquish my grasp upon him, however, for I knew that a
+single shriek from those lips as he hurtled to his death in the silent
+waters of the sea would bring his comrades from above to avenge him.
+
+Instead I held grimly to him, choking, ever choking, while his frantic
+struggles dragged me lower and lower toward the end of the chain.
+
+Gradually his contortions became spasmodic, lessening by degrees until
+they ceased entirely. Then I released my hold upon him and in an
+instant he was swallowed by the black shadows far below.
+
+Again I climbed to the ship’s rail. This time I succeeded in raising my
+eyes to the level of the deck, where I could take a careful survey of
+the conditions immediately confronting me.
+
+The nearer moon had passed below the horizon, but the clear effulgence
+of the further satellite bathed the deck of the cruiser, bringing into
+sharp relief the bodies of six or eight black men sprawled about in
+sleep.
+
+Huddled close to the base of a rapid fire gun was a young white girl,
+securely bound. Her eyes were widespread in an expression of horrified
+anticipation and fixed directly upon me as I came in sight above the
+edge of the deck.
+
+Unutterable relief instantly filled them as if they fell upon the
+mystic jewel which sparkled in the centre of my stolen headpiece. She
+did not speak. Instead her eyes warned me to beware the sleeping
+figures that surrounded her.
+
+Noiselessly I gained the deck. The girl nodded to me to approach her.
+As I bent low she whispered to me to release her.
+
+“I can aid you,” she said, “and you will need all the aid available
+when they awaken.”
+
+“Some of them will awake in Korus,” I replied smiling.
+
+She caught the meaning of my words, and the cruelty of her answering
+smile horrified me. One is not astonished by cruelty in a hideous face,
+but when it touches the features of a goddess whose fine-chiselled
+lineaments might more fittingly portray love and beauty, the contrast
+is appalling.
+
+Quickly I released her.
+
+“Give me a revolver,” she whispered. “I can use that upon those your
+sword does not silence in time.”
+
+I did as she bid. Then I turned toward the distasteful work that lay
+before me. This was no time for fine compunctions, nor for a chivalry
+that these cruel demons would neither appreciate nor reciprocate.
+
+Stealthily I approached the nearest sleeper. When he awoke he was well
+on his journey to the bosom of Korus. His piercing shriek as
+consciousness returned to him came faintly up to us from the black
+depths beneath.
+
+The second awoke as I touched him, and, though I succeeded in hurling
+him from the cruiser’s deck, his wild cry of alarm brought the
+remaining pirates to their feet. There were five of them.
+
+As they arose the girl’s revolver spoke in sharp staccato and one sank
+back to the deck again to rise no more.
+
+The others rushed madly upon me with drawn swords. The girl evidently
+dared not fire for fear of wounding me, but I saw her sneak stealthily
+and cat-like toward the flank of the attackers. Then they were on me.
+
+For a few minutes I experienced some of the hottest fighting I had ever
+passed through. The quarters were too small for foot work. It was stand
+your ground and give and take. At first I took considerably more than I
+gave, but presently I got beneath one fellow’s guard and had the
+satisfaction of seeing him collapse upon the deck.
+
+The others redoubled their efforts. The crashing of their blades upon
+mine raised a terrific din that might have been heard for miles through
+the silent night. Sparks flew as steel smote steel, and then there was
+the dull and sickening sound of a shoulder bone parting beneath the
+keen edge of my Martian sword.
+
+Three now faced me, but the girl was working her way to a point that
+would soon permit her to reduce the number by one at least. Then things
+happened with such amazing rapidity that I can scarce comprehend even
+now all that took place in that brief instant.
+
+The three rushed me with the evident purpose of forcing me back the few
+steps that would carry my body over the rail into the void below. At
+the same instant the girl fired and my sword arm made two moves. One
+man dropped with a bullet in his brain; a sword flew clattering across
+the deck and dropped over the edge beyond as I disarmed one of my
+opponents and the third went down with my blade buried to the hilt in
+his breast and three feet of it protruding from his back, and falling
+wrenched the sword from my grasp.
+
+Disarmed myself, I now faced my remaining foeman, whose own sword lay
+somewhere thousands of feet below us, lost in the Lost Sea.
+
+The new conditions seemed to please my adversary, for a smile of
+satisfaction bared his gleaming teeth as he rushed at me bare-handed.
+The great muscles which rolled beneath his glossy black hide evidently
+assured him that here was easy prey, not worth the trouble of drawing
+the dagger from his harness.
+
+I let him come almost upon me. Then I ducked beneath his outstretched
+arms, at the same time sidestepping to the right. Pivoting on my left
+toe, I swung a terrific right to his jaw, and, like a felled ox, he
+dropped in his tracks.
+
+A low, silvery laugh rang out behind me.
+
+“You are no thern,” said the sweet voice of my companion, “for all your
+golden locks or the harness of Sator Throg. Never lived there upon all
+Barsoom before one who could fight as you have fought this night. Who
+are you?”
+
+“I am John Carter, Prince of the House of Tardos Mors, Jeddak of
+Helium,” I replied. “And whom,” I added, “has the honour of serving
+been accorded me?”
+
+She hesitated a moment before speaking. Then she asked:
+
+“You are no thern. Are you an enemy of the therns?”
+
+“I have been in the territory of the therns for a day and a half.
+During that entire time my life has been in constant danger. I have
+been harassed and persecuted. Armed men and fierce beasts have been set
+upon me. I had no quarrel with the therns before, but can you wonder
+that I feel no great love for them now? I have spoken.”
+
+She looked at me intently for several minutes before she replied. It
+was as though she were attempting to read my inmost soul, to judge my
+character and my standards of chivalry in that long-drawn, searching
+gaze.
+
+Apparently the inventory satisfied her.
+
+“I am Phaidor, daughter of Matai Shang, Holy Hekkador of the Holy
+Therns, Father of Therns, Master of Life and Death upon Barsoom,
+Brother of Issus, Prince of Life Eternal.”
+
+At that moment I noticed that the black I had dropped with my fist was
+commencing to show signs of returning consciousness. I sprang to his
+side. Stripping his harness from him I securely bound his hands behind
+his back, and after similarly fastening his feet tied him to a heavy
+gun carriage.
+
+“Why not the simpler way?” asked Phaidor.
+
+“I do not understand. What ‘simpler way’?” I replied.
+
+With a slight shrug of her lovely shoulders she made a gesture with her
+hands personating the casting of something over the craft’s side.
+
+“I am no murderer,” I said. “I kill in self-defence only.”
+
+She looked at me narrowly. Then she puckered those divine brows of
+hers, and shook her head. She could not comprehend.
+
+Well, neither had my own Dejah Thoris been able to understand what to
+her had seemed a foolish and dangerous policy toward enemies. Upon
+Barsoom, quarter is neither asked nor given, and each dead man means so
+much more of the waning resources of this dying planet to be divided
+amongst those who survive.
+
+But there seemed a subtle difference here between the manner in which
+this girl contemplated the dispatching of an enemy and the
+tender-hearted regret of my own princess for the stern necessity which
+demanded it.
+
+I think that Phaidor regretted the thrill that the spectacle would have
+afforded her rather than the fact that my decision left another enemy
+alive to threaten us.
+
+The man had now regained full possession of his faculties, and was
+regarding us intently from where he lay bound upon the deck. He was a
+handsome fellow, clean limbed and powerful, with an intelligent face
+and features of such exquisite chiselling that Adonis himself might
+have envied him.
+
+The vessel, unguided, had been moving slowly across the valley; but now
+I thought it time to take the helm and direct her course. Only in a
+very general way could I guess the location of the Valley Dor. That it
+was far south of the equator was evident from the constellations, but I
+was not sufficiently a Martian astronomer to come much closer than a
+rough guess without the splendid charts and delicate instruments with
+which, as an officer in the Heliumite Navy, I had formerly reckoned the
+positions of the vessels on which I sailed.
+
+That a northerly course would quickest lead me toward the more settled
+portions of the planet immediately decided the direction that I should
+steer. Beneath my hand the cruiser swung gracefully about. Then the
+button which controlled the repulsive rays sent us soaring far out into
+space. With speed lever pulled to the last notch, we raced toward the
+north as we rose ever farther and farther above that terrible valley of
+death.
+
+As we passed at a dizzy height over the narrow domains of the therns
+the flash of powder far below bore mute witness to the ferocity of the
+battle that still raged along that cruel frontier. No sound of conflict
+reached our ears, for in the rarefied atmosphere of our great altitude
+no sound wave could penetrate; they were dissipated in thin air far
+below us.
+
+It became intensely cold. Breathing was difficult. The girl, Phaidor,
+and the black pirate kept their eyes glued upon me. At length the girl
+spoke.
+
+“Unconsciousness comes quickly at this altitude,” she said quietly.
+“Unless you are inviting death for us all you had best drop, and that
+quickly.”
+
+There was no fear in her voice. It was as one might say: “You had
+better carry an umbrella. It is going to rain.”
+
+I dropped the vessel quickly to a lower level. Nor was I a moment too
+soon. The girl had swooned.
+
+The black, too, was unconscious, while I, myself, retained my senses, I
+think, only by sheer will. The one on whom all responsibility rests is
+apt to endure the most.
+
+We were swinging along low above the foothills of the Otz. It was
+comparatively warm and there was plenty of air for our starved lungs,
+so I was not surprised to see the black open his eyes, and a moment
+later the girl also.
+
+“It was a close call,” she said.
+
+“It has taught me two things though,” I replied.
+
+“What?”
+
+“That even Phaidor, daughter of the Master of Life and Death, is
+mortal,” I said smiling.
+
+“There is immortality only in Issus,” she replied. “And Issus is for
+the race of therns alone. Thus am I immortal.”
+
+I caught a fleeting grin passing across the features of the black as he
+heard her words. I did not then understand why he smiled. Later I was
+to learn, and she, too, in a most horrible manner.
+
+“If the other thing you have just learned,” she continued, “has led to
+as erroneous deductions as the first you are little richer in knowledge
+than you were before.”
+
+“The other,” I replied, “is that our dusky friend here does not hail
+from the nearer moon—he was like to have died at a few thousand feet
+above Barsoom. Had we continued the five thousand miles that lie
+between Thuria and the planet he would have been but the frozen memory
+of a man.”
+
+Phaidor looked at the black in evident astonishment.
+
+“If you are not of Thuria, then where?” she asked.
+
+He shrugged his shoulders and turned his eyes elsewhere, but did not
+reply.
+
+The girl stamped her little foot in a peremptory manner.
+
+“The daughter of Matai Shang is not accustomed to having her queries
+remain unanswered,” she said. “One of the lesser breed should feel
+honoured that a member of the holy race that was born to inherit life
+eternal should deign even to notice him.”
+
+Again the black smiled that wicked, knowing smile.
+
+“Xodar, Dator of the First Born of Barsoom, is accustomed to give
+commands, not to receive them,” replied the black pirate. Then, turning
+to me, “What are your intentions concerning me?”
+
+“I intend taking you both back to Helium,” I said. “No harm will come
+to you. You will find the red men of Helium a kindly and magnanimous
+race, but if they listen to me there will be no more voluntary
+pilgrimages down the river Iss, and the impossible belief that they
+have cherished for ages will be shattered into a thousand pieces.”
+
+“Are you of Helium?” he asked.
+
+“I am a Prince of the House of Tardos Mors, Jeddak of Helium,” I
+replied, “but I am not of Barsoom. I am of another world.”
+
+Xodar looked at me intently for a few moments.
+
+“I can well believe that you are not of Barsoom,” he said at length.
+“None of this world could have bested eight of the First Born
+single-handed. But how is it that you wear the golden hair and the
+jewelled circlet of a Holy Thern?” He emphasized the word holy with a
+touch of irony.
+
+“I had forgotten them,” I said. “They are the spoils of conquest,” and
+with a sweep of my hand I removed the disguise from my head.
+
+When the black’s eyes fell on my close-cropped black hair they opened
+in astonishment. Evidently he had looked for the bald pate of a thern.
+
+“You are indeed of another world,” he said, a touch of awe in his
+voice. “With the skin of a thern, the black hair of a First Born and
+the muscles of a dozen Dators it was no disgrace even for Xodar to
+acknowledge your supremacy. A thing he could never do were you a
+Barsoomian,” he added.
+
+“You are travelling several laps ahead of me, my friend,” I
+interrupted. “I glean that your name is Xodar, but whom, pray, are the
+First Born, and what a Dator, and why, if you were conquered by a
+Barsoomian, could you not acknowledge it?”
+
+“The First Born of Barsoom,” he explained, “are the race of black men
+of which I am a Dator, or, as the lesser Barsoomians would say, Prince.
+My race is the oldest on the planet. We trace our lineage, unbroken,
+direct to the Tree of Life which flourished in the centre of the Valley
+Dor twenty-three million years ago.
+
+“For countless ages the fruit of this tree underwent the gradual
+changes of evolution, passing by degrees from true plant life to a
+combination of plant and animal. In the first stages the fruit of the
+tree possessed only the power of independent muscular action, while the
+stem remained attached to the parent plant; later a brain developed in
+the fruit, so that hanging there by their long stems they thought and
+moved as individuals.
+
+“Then, with the development of perceptions came a comparison of them;
+judgments were reached and compared, and thus reason and the power to
+reason were born upon Barsoom.
+
+“Ages passed. Many forms of life came and went upon the Tree of Life,
+but still all were attached to the parent plant by stems of varying
+lengths. At length the fruit tree consisted in tiny plant men, such as
+we now see reproduced in such huge dimensions in the Valley Dor, but
+still hanging to the limbs and branches of the tree by the stems which
+grew from the tops of their heads.
+
+“The buds from which the plant men blossomed resembled large nuts about
+a foot in diameter, divided by double partition walls into four
+sections. In one section grew the plant man, in another a
+sixteen-legged worm, in the third the progenitor of the white ape and
+in the fourth the primaeval black man of Barsoom.
+
+“When the bud burst the plant man remained dangling at the end of his
+stem, but the three other sections fell to the ground, where the
+efforts of their imprisoned occupants to escape sent them hopping about
+in all directions.
+
+“Thus as time went on, all Barsoom was covered with these imprisoned
+creatures. For countless ages they lived their long lives within their
+hard shells, hopping and skipping about the broad planet; falling into
+rivers, lakes, and seas, to be still further spread about the surface
+of the new world.
+
+“Countless billions died before the first black man broke through his
+prison walls into the light of day. Prompted by curiosity, he broke
+open other shells and the peopling of Barsoom commenced.
+
+“The pure strain of the blood of this first black man has remained
+untainted by admixture with other creatures in the race of which I am a
+member; but from the sixteen-legged worm, the first ape and renegade
+black man has sprung every other form of animal life upon Barsoom.
+
+“The therns,” and he smiled maliciously as he spoke, “are but the
+result of ages of evolution from the pure white ape of antiquity. They
+are a lower order still. There is but one race of true and immortal
+humans on Barsoom. It is the race of black men.
+
+“The Tree of Life is dead, but before it died the plant men learned to
+detach themselves from it and roam the face of Barsoom with the other
+children of the First Parent.
+
+“Now their bisexuality permits them to reproduce themselves after the
+manner of true plants, but otherwise they have progressed but little in
+all the ages of their existence. Their actions and movements are
+largely matters of instinct and not guided to any great extent by
+reason, since the brain of a plant man is but a trifle larger than the
+end of your smallest finger. They live upon vegetation and the blood of
+animals, and their brain is just large enough to direct their movements
+in the direction of food, and to translate the food sensations which
+are carried to it from their eyes and ears. They have no sense of
+self-preservation and so are entirely without fear in the face of
+danger. That is why they are such terrible antagonists in combat.”
+
+I wondered why the black man took such pains to discourse thus at
+length to enemies upon the genesis of life Barsoomian. It seemed a
+strangely inopportune moment for a proud member of a proud race to
+unbend in casual conversation with a captor. Especially in view of the
+fact that the black still lay securely bound upon the deck.
+
+It was the faintest straying of his eye beyond me for the barest
+fraction of a second that explained his motive for thus dragging out my
+interest in his truly absorbing story.
+
+He lay a little forward of where I stood at the levers, and thus he
+faced the stern of the vessel as he addressed me. It was at the end of
+his description of the plant men that I caught his eye fixed
+momentarily upon something behind me.
+
+Nor could I be mistaken in the swift gleam of triumph that brightened
+those dark orbs for an instant.
+
+Some time before I had reduced our speed, for we had left the Valley
+Dor many miles astern, and I felt comparatively safe.
+
+I turned an apprehensive glance behind me, and the sight that I saw
+froze the new-born hope of freedom that had been springing up within
+me.
+
+A great battleship, forging silent and unlighted through the dark
+night, loomed close astern.
+
+## CHAPTER VIII THE DEPTHS OF OMEAN
+
+Now I realized why the black pirate had kept me engrossed with his
+strange tale. For miles he had sensed the approach of succour, and but
+for that single tell-tale glance the battleship would have been
+directly above us in another moment, and the boarding party which was
+doubtless even now swinging in their harness from the ship’s keel,
+would have swarmed our deck, placing my rising hope of escape in sudden
+and total eclipse.
+
+I was too old a hand in aerial warfare to be at a loss now for the
+right manoeuvre. Simultaneously I reversed the engines and dropped the
+little vessel a sheer hundred feet.
+
+Above my head I could see the dangling forms of the boarding party as
+the battleship raced over us. Then I rose at a sharp angle, throwing my
+speed lever to its last notch.
+
+Like a bolt from a crossbow my splendid craft shot its steel prow
+straight at the whirring propellers of the giant above us. If I could
+but touch them the huge bulk would be disabled for hours and escape
+once more possible.
+
+At the same instant the sun shot above the horizon, disclosing a
+hundred grim, black faces peering over the stern of the battleship upon
+us.
+
+At sight of us a shout of rage went up from a hundred throats. Orders
+were shouted, but it was too late to save the giant propellers, and
+with a crash we rammed them.
+
+Instantly with the shock of impact I reversed my engine, but my prow
+was wedged in the hole it had made in the battleship’s stern. Only a
+second I hung there before tearing away, but that second was amply long
+to swarm my deck with black devils.
+
+There was no fight. In the first place there was no room to fight. We
+were simply submerged by numbers. Then as swords menaced me a command
+from Xodar stayed the hands of his fellows.
+
+“Secure them,” he said, “but do not injure them.”
+
+Several of the pirates already had released Xodar. He now personally
+attended to my disarming and saw that I was properly bound. At least he
+thought that the binding was secure. It would have been had I been a
+Martian, but I had to smile at the puny strands that confined my
+wrists. When the time came I could snap them as they had been cotton
+string.
+
+The girl they bound also, and then they fastened us together. In the
+meantime they had brought our craft alongside the disabled battleship,
+and soon we were transported to the latter’s deck.
+
+Fully a thousand black men manned the great engine of destruction. Her
+decks were crowded with them as they pressed forward as far as
+discipline would permit to get a glimpse of their captives.
+
+The girl’s beauty elicited many brutal comments and vulgar jests. It
+was evident that these self-thought supermen were far inferior to the
+red men of Barsoom in refinement and in chivalry.
+
+My close-cropped black hair and thern complexion were the subjects of
+much comment. When Xodar told his fellow nobles of my fighting ability
+and strange origin they crowded about me with numerous questions.
+
+The fact that I wore the harness and metal of a thern who had been
+killed by a member of my party convinced them that I was an enemy of
+their hereditary foes, and placed me on a better footing in their
+estimation.
+
+Without exception the blacks were handsome men, and well built. The
+officers were conspicuous through the wondrous magnificence of their
+resplendent trappings. Many harnesses were so encrusted with gold,
+platinum, silver and precious stones as to entirely hide the leather
+beneath.
+
+The harness of the commanding officer was a solid mass of diamonds.
+Against the ebony background of his skin they blazed out with a
+peculiarly accentuated effulgence. The whole scene was enchanting. The
+handsome men; the barbaric splendour of the accoutrements; the polished
+skeel wood of the deck; the gloriously grained sorapus of the cabins,
+inlaid with priceless jewels and precious metals in intricate and
+beautiful design; the burnished gold of hand rails; the shining metal
+of the guns.
+
+Phaidor and I were taken below decks, where, still fast bound, we were
+thrown into a small compartment which contained a single port-hole. As
+our escort left us they barred the door behind them.
+
+We could hear the men working on the broken propellers, and from the
+port-hole we could see that the vessel was drifting lazily toward the
+south.
+
+For some time neither of us spoke. Each was occupied with his own
+thoughts. For my part I was wondering as to the fate of Tars Tarkas and
+the girl, Thuvia.
+
+Even if they succeeded in eluding pursuit they must eventually fall
+into the hands of either red men or green, and as fugitives from the
+Valley Dor they could look for but little else than a swift and
+terrible death.
+
+How I wished that I might have accompanied them. It seemed to me that I
+could not fail to impress upon the intelligent red men of Barsoom the
+wicked deception that a cruel and senseless superstition had foisted
+upon them.
+
+Tardos Mors would believe me. Of that I was positive. And that he would
+have the courage of his convictions my knowledge of his character
+assured me. Dejah Thoris would believe me. Not a doubt as to that
+entered my head. Then there were a thousand of my red and green warrior
+friends whom I knew would face eternal damnation gladly for my sake.
+Like Tars Tarkas, where I led they would follow.
+
+My only danger lay in that should I ever escape the black pirates it
+might be to fall into the hands of unfriendly red or green men. Then it
+would mean short shrift for me.
+
+Well, there seemed little to worry about on that score, for the
+likelihood of my ever escaping the blacks was extremely remote.
+
+The girl and I were linked together by a rope which permitted us to
+move only about three or four feet from each other. When we had entered
+the compartment we had seated ourselves upon a low bench beneath the
+porthole. The bench was the only furniture of the room. It was of
+sorapus wood. The floor, ceiling and walls were of carborundum
+aluminum, a light, impenetrable composition extensively utilized in the
+construction of Martian fighting ships.
+
+As I had sat meditating upon the future my eyes had been riveted upon
+the port-hole which was just level with them as I sat. Suddenly I
+looked toward Phaidor. She was regarding me with a strange expression I
+had not before seen upon her face. She was very beautiful then.
+
+Instantly her white lids veiled her eyes, and I thought I discovered a
+delicate flush tingeing her cheek. Evidently she was embarrassed at
+having been detected in the act of staring at a lesser creature, I
+thought.
+
+“Do you find the study of the lower orders interesting?” I asked,
+laughing.
+
+She looked up again with a nervous but relieved little laugh.
+
+“Oh very,” she said, “especially when they have such excellent
+profiles.”
+
+It was my turn to flush, but I did not. I felt that she was poking fun
+at me, and I admired a brave heart that could look for humour on the
+road to death, and so I laughed with her.
+
+“Do you know where we are going?” she said.
+
+“To solve the mystery of the eternal hereafter, I imagine,” I replied.
+
+“I am going to a worse fate than that,” she said, with a little
+shudder.
+
+“What do you mean?”
+
+“I can only guess,” she replied, “since no thern damsel of all the
+millions that have been stolen away by black pirates during the ages
+they have raided our domains has ever returned to narrate her
+experiences among them. That they never take a man prisoner lends
+strength to the belief that the fate of the girls they steal is worse
+than death.”
+
+“Is it not a just retribution?” I could not help but ask.
+
+“What do you mean?”
+
+“Do not the therns themselves do likewise with the poor creatures who
+take the voluntary pilgrimage down the River of Mystery? Was not Thuvia
+for fifteen years a plaything and a slave? Is it less than just that
+you should suffer as you have caused others to suffer?”
+
+“You do not understand,” she replied. “We therns are a holy race. It is
+an honour to a lesser creature to be a slave among us. Did we not
+occasionally save a few of the lower orders that stupidly float down an
+unknown river to an unknown end all would become the prey of the plant
+men and the apes.”
+
+“But do you not by every means encourage the superstition among those
+of the outside world?” I argued. “That is the wickedest of your deeds.
+Can you tell me why you foster the cruel deception?”
+
+“All life on Barsoom,” she said, “is created solely for the support of
+the race of therns. How else could we live did the outer world not
+furnish our labour and our food? Think you that a thern would demean
+himself by labour?”
+
+“It is true then that you eat human flesh?” I asked in horror.
+
+She looked at me in pitying commiseration for my ignorance.
+
+“Truly we eat the flesh of the lower orders. Do not you also?”
+
+“The flesh of beasts, yes,” I replied, “but not the flesh of man.”
+
+“As man may eat of the flesh of beasts, so may gods eat of the flesh of
+man. The Holy Therns are the gods of Barsoom.”
+
+I was disgusted and I imagine that I showed it.
+
+“You are an unbeliever now,” she continued gently, “but should we be
+fortunate enough to escape the clutches of the black pirates and come
+again to the court of Matai Shang I think that we shall find an
+argument to convince you of the error of your ways. And—,” she
+hesitated, “perhaps we shall find a way to keep you as—as—one of us.”
+
+Again her eyes dropped to the floor, and a faint colour suffused her
+cheek. I could not understand her meaning; nor did I for a long time.
+Dejah Thoris was wont to say that in some things I was a veritable
+simpleton, and I guess that she was right.
+
+“I fear that I would ill requite your father’s hospitality,” I
+answered, “since the first thing that I should do were I a thern would
+be to set an armed guard at the mouth of the River Iss to escort the
+poor deluded voyagers back to the outer world. Also should I devote my
+life to the extermination of the hideous plant men and their horrible
+companions, the great white apes.”
+
+She looked at me really horror struck.
+
+“No, no,” she cried, “you must not say such terribly sacrilegious
+things—you must not even think them. Should they ever guess that you
+entertained such frightful thoughts, should we chance to regain the
+temples of the therns, they would mete out a frightful death to you.
+Not even my—my—” Again she flushed, and started over. “Not even I could
+save you.”
+
+I said no more. Evidently it was useless. She was even more steeped in
+superstition than the Martians of the outer world. They only worshipped
+a beautiful hope for a life of love and peace and happiness in the
+hereafter. The therns worshipped the hideous plant men and the apes, or
+at least they reverenced them as the abodes of the departed spirits of
+their own dead.
+
+At this point the door of our prison opened to admit Xodar.
+
+He smiled pleasantly at me, and when he smiled his expression was
+kindly—anything but cruel or vindictive.
+
+“Since you cannot escape under any circumstances,” he said, “I cannot
+see the necessity for keeping you confined below. I will cut your bonds
+and you may come on deck. You will witness something very interesting,
+and as you never shall return to the outer world it will do no harm to
+permit you to see it. You will see what no other than the First Born
+and their slaves know the existence of—the subterranean entrance to the
+Holy Land, to the real heaven of Barsoom.
+
+“It will be an excellent lesson for this daughter of the therns,” he
+added, “for she shall see the Temple of Issus, and Issus, perchance,
+shall embrace her.”
+
+Phaidor’s head went high.
+
+“What blasphemy is this, dog of a pirate?” she cried. “Issus would wipe
+out your entire breed an’ you ever came within sight of her temple.”
+
+“You have much to learn, thern,” replied Xodar, with an ugly smile,
+“nor do I envy you the manner in which you will learn it.”
+
+As we came on deck I saw to my surprise that the vessel was passing
+over a great field of snow and ice. As far as the eye could reach in
+any direction naught else was visible.
+
+There could be but one solution to the mystery. We were above the south
+polar ice cap. Only at the poles of Mars is there ice or snow upon the
+planet. No sign of life appeared below us. Evidently we were too far
+south even for the great fur-bearing animals which the Martians so
+delight in hunting.
+
+Xodar was at my side as I stood looking out over the ship’s rail.
+
+“What course?” I asked him.
+
+“A little west of south,” he replied. “You will see the Otz Valley
+directly. We shall skirt it for a few hundred miles.”
+
+“The Otz Valley!” I exclaimed; “but, man, is not there where lie the
+domains of the therns from which I but just escaped?”
+
+“Yes,” answered Xodar. “You crossed this ice field last night in the
+long chase that you led us. The Otz Valley lies in a mighty depression
+at the south pole. It is sunk thousands of feet below the level of the
+surrounding country, like a great round bowl. A hundred miles from its
+northern boundary rise the Otz Mountains which circle the inner Valley
+of Dor, in the exact centre of which lies the Lost Sea of Korus. On the
+shore of this sea stands the Golden Temple of Issus in the Land of the
+First Born. It is there that we are bound.”
+
+As I looked I commenced to realize why it was that in all the ages only
+one had escaped from the Valley Dor. My only wonder was that even the
+one had been successful. To cross this frozen, wind-swept waste of
+bleak ice alone and on foot would be impossible.
+
+“Only by air boat could the journey be made,” I finished aloud.
+
+“It was thus that one did escape the therns in bygone times; but none
+has ever escaped the First Born,” said Xodar, with a touch of pride in
+his voice.
+
+We had now reached the southernmost extremity of the great ice barrier.
+It ended abruptly in a sheer wall thousands of feet high at the base of
+which stretched a level valley, broken here and there by low rolling
+hills and little clumps of forest, and with tiny rivers formed by the
+melting of the ice barrier at its base.
+
+Once we passed far above what seemed to be a deep canyon-like rift
+stretching from the ice wall on the north across the valley as far as
+the eye could reach. “That is the bed of the River Iss,” said Xodar.
+“It runs far beneath the ice field, and below the level of the Valley
+Otz, but its canyon is open here.”
+
+Presently I descried what I took to be a village, and pointing it out
+to Xodar asked him what it might be.
+
+“It is a village of lost souls,” he answered, laughing. “This strip
+between the ice barrier and the mountains is considered neutral ground.
+Some turn off from their voluntary pilgrimage down the Iss, and,
+scaling the awful walls of its canyon below us, stop in the valley.
+Also a slave now and then escapes from the therns and makes his way
+hither.
+
+“They do not attempt to recapture such, since there is no escape from
+this outer valley, and as a matter of fact they fear the patrolling
+cruisers of the First Born too much to venture from their own domains.
+
+“The poor creatures of this outer valley are not molested by us since
+they have nothing that we desire, nor are they numerically strong
+enough to give us an interesting fight—so we too leave them alone.
+
+“There are several villages of them, but they have increased in numbers
+but little in many years since they are always warring among
+themselves.”
+
+Now we swung a little north of west, leaving the valley of lost souls,
+and shortly I discerned over our starboard bow what appeared to be a
+black mountain rising from the desolate waste of ice. It was not high
+and seemed to have a flat top.
+
+Xodar had left us to attend to some duty on the vessel, and Phaidor and
+I stood alone beside the rail. The girl had not once spoken since we
+had been brought to the deck.
+
+“Is what he has been telling me true?” I asked her.
+
+“In part, yes,” she answered. “That about the outer valley is true, but
+what he says of the location of the Temple of Issus in the centre of
+his country is false. If it is not false—” she hesitated. “Oh it cannot
+be true, it cannot be true. For if it were true then for countless ages
+have my people gone to torture and ignominious death at the hands of
+their cruel enemies, instead of to the beautiful Life Eternal that we
+have been taught to believe Issus holds for us.”
+
+“As the lesser Barsoomians of the outer world have been lured by you to
+the terrible Valley Dor, so may it be that the therns themselves have
+been lured by the First Born to an equally horrid fate,” I suggested.
+“It would be a stern and awful retribution, Phaidor; but a just one.”
+
+“I cannot believe it,” she said.
+
+“We shall see,” I answered, and then we fell silent again for we were
+rapidly approaching the black mountains, which in some indefinable way
+seemed linked with the answer to our problem.
+
+As we neared the dark, truncated cone the vessel’s speed was diminished
+until we barely moved. Then we topped the crest of the mountain and
+below us I saw yawning the mouth of a huge circular well, the bottom of
+which was lost in inky blackness.
+
+The diameter of this enormous pit was fully a thousand feet. The walls
+were smooth and appeared to be composed of a black, basaltic rock.
+
+For a moment the vessel hovered motionless directly above the centre of
+the gaping void, then slowly she began to settle into the black chasm.
+Lower and lower she sank until as darkness enveloped us her lights were
+thrown on and in the dim halo of her own radiance the monster
+battleship dropped on and on down into what seemed to me must be the
+very bowels of Barsoom.
+
+For quite half an hour we descended and then the shaft terminated
+abruptly in the dome of a mighty subterranean world. Below us rose and
+fell the billows of a buried sea. A phosphorescent radiance illuminated
+the scene. Thousands of ships dotted the bosom of the ocean. Little
+islands rose here and there to support the strange and colourless
+vegetation of this strange world.
+
+Slowly and with majestic grace the battleship dropped until she rested
+on the water. Her great propellers had been drawn and housed during our
+descent of the shaft and in their place had been run out the smaller
+but more powerful water propellers. As these commenced to revolve the
+ship took up its journey once more, riding the new element as buoyantly
+and as safely as she had the air.
+
+Phaidor and I were dumbfounded. Neither had either heard or dreamed
+that such a world existed beneath the surface of Barsoom.
+
+Nearly all the vessels we saw were war craft. There were a few lighters
+and barges, but none of the great merchantmen such as ply the upper air
+between the cities of the outer world.
+
+“Here is the harbour of the navy of the First Born,” said a voice
+behind us, and turning we saw Xodar watching us with an amused smile on
+his lips.
+
+“This sea,” he continued, “is larger than Korus. It receives the waters
+of the lesser sea above it. To keep it from filling above a certain
+level we have four great pumping stations that force the oversupply
+back into the reservoirs far north from which the red men draw the
+water which irrigates their farm lands.”
+
+A new light burst on me with this explanation. The red men had always
+considered it a miracle that caused great columns of water to spurt
+from the solid rock of their reservoir sides to increase the supply of
+the precious liquid which is so scarce in the outer world of Mars.
+
+Never had their learned men been able to fathom the secret of the
+source of this enormous volume of water. As ages passed they had simply
+come to accept it as a matter of course and ceased to question its
+origin.
+
+We passed several islands on which were strangely shaped circular
+buildings, apparently roofless, and pierced midway between the ground
+and their tops with small, heavily barred windows. They bore the
+earmarks of prisons, which were further accentuated by the armed guards
+who squatted on low benches without, or patrolled the short beach
+lines.
+
+Few of these islets contained over an acre of ground, but presently we
+sighted a much larger one directly ahead. This proved to be our
+destination, and the great ship was soon made fast against the steep
+shore.
+
+Xodar signalled us to follow him and with a half-dozen officers and men
+we left the battleship and approached a large oval structure a couple
+of hundred yards from the shore.
+
+“You shall soon see Issus,” said Xodar to Phaidor. “The few prisoners
+we take are presented to her. Occasionally she selects slaves from
+among them to replenish the ranks of her handmaidens. None serves Issus
+above a single year,” and there was a grim smile on the black’s lips
+that lent a cruel and sinister meaning to his simple statement.
+
+Phaidor, though loath to believe that Issus was allied to such as
+these, had commenced to entertain doubts and fears. She clung very
+closely to me, no longer the proud daughter of the Master of Life and
+Death upon Barsoom, but a young and frightened girl in the power of
+relentless enemies.
+
+The building which we now entered was entirely roofless. In its centre
+was a long tank of water, set below the level of the floor like the
+swimming pool of a natatorium. Near one side of the pool floated an
+odd-looking black object. Whether it were some strange monster of these
+buried waters, or a queer raft, I could not at once perceive.
+
+We were soon to know, however, for as we reached the edge of the pool
+directly above the thing, Xodar cried out a few words in a strange
+tongue. Immediately a hatch cover was raised from the surface of the
+object, and a black seaman sprang from the bowels of the strange craft.
+
+Xodar addressed the seaman.
+
+“Transmit to your officer,” he said, “the commands of Dator Xodar. Say
+to him that Dator Xodar, with officers and men, escorting two
+prisoners, would be transported to the gardens of Issus beside the
+Golden Temple.”
+
+“Blessed be the shell of thy first ancestor, most noble Dator,” replied
+the man. “It shall be done even as thou sayest,” and raising both
+hands, palms backward, above his head after the manner of salute which
+is common to all races of Barsoom, he disappeared once more into the
+entrails of his ship.
+
+A moment later an officer resplendent in the gorgeous trappings of his
+rank appeared on deck and welcomed Xodar to the vessel, and in the
+latter’s wake we filed aboard and below.
+
+The cabin in which we found ourselves extended entirely across the
+ship, having port-holes on either side below the water line. No sooner
+were all below than a number of commands were given, in accordance with
+which the hatch was closed and secured, and the vessel commenced to
+vibrate to the rhythmic purr of its machinery.
+
+“Where can we be going in such a tiny pool of water?” asked Phaidor.
+
+“Not up,” I replied, “for I noticed particularly that while the
+building is roofless it is covered with a strong metal grating.”
+
+“Then where?” she asked again.
+
+“From the appearance of the craft I judge we are going down,” I
+replied.
+
+Phaidor shuddered. For such long ages have the waters of Barsoom’s seas
+been a thing of tradition only that even this daughter of the therns,
+born as she had been within sight of Mars’ only remaining sea, had the
+same terror of deep water as is a common attribute of all Martians.
+
+Presently the sensation of sinking became very apparent. We were going
+down swiftly. Now we could hear the water rushing past the port-holes,
+and in the dim light that filtered through them to the water beyond the
+swirling eddies were plainly visible.
+
+Phaidor grasped my arm.
+
+“Save me!” she whispered. “Save me and your every wish shall be
+granted. Anything within the power of the Holy Therns to give will be
+yours. Phaidor—” she stumbled a little here, and then in a very low
+voice, “Phaidor already is yours.”
+
+I felt very sorry for the poor child, and placed my hand over hers
+where it rested on my arm. I presume my motive was misunderstood, for
+with a swift glance about the apartment to assure herself that we were
+alone, she threw both her arms about my neck and dragged my face down
+to hers.
+
+## CHAPTER IX ISSUS, GODDESS OF LIFE ETERNAL
+
+The confession of love which the girl’s fright had wrung from her
+touched me deeply; but it humiliated me as well, since I felt that in
+some thoughtless word or act I had given her reason to believe that I
+reciprocated her affection.
+
+Never have I been much of a ladies’ man, being more concerned with
+fighting and kindred arts which have ever seemed to me more befitting a
+man than mooning over a scented glove four sizes too small for him, or
+kissing a dead flower that has begun to smell like a cabbage. So I was
+quite at a loss as to what to do or say. A thousand times rather face
+the wild hordes of the dead sea bottoms than meet the eyes of this
+beautiful young girl and tell her the thing that I must tell her.
+
+But there was nothing else to be done, and so I did it. Very clumsily
+too, I fear.
+
+Gently I unclasped her hands from about my neck, and still holding them
+in mine I told her the story of my love for Dejah Thoris. That of all
+the women of two worlds that I had known and admired during my long
+life she alone had I loved.
+
+The tale did not seem to please her. Like a tigress she sprang,
+panting, to her feet. Her beautiful face was distorted in an expression
+of horrible malevolence. Her eyes fairly blazed into mine.
+
+“Dog,” she hissed. “Dog of a blasphemer! Think you that Phaidor,
+daughter of Matai Shang, supplicates? She commands. What to her is your
+puny outer world passion for the vile creature you chose in your other
+life?
+
+“Phaidor has glorified you with her love, and you have spurned her. Ten
+thousand unthinkably atrocious deaths could not atone for the affront
+that you have put upon me. The thing that you call Dejah Thoris shall
+die the most horrible of them all. You have sealed the warrant for her
+doom.
+
+“And you! You shall be the meanest slave in the service of the goddess
+you have attempted to humiliate. Tortures and ignominies shall be
+heaped upon you until you grovel at my feet asking the boon of death.
+
+“In my gracious generosity I shall at length grant your prayer, and
+from the high balcony of the Golden Cliffs I shall watch the great
+white apes tear you asunder.”
+
+She had it all fixed up. The whole lovely programme from start to
+finish. It amazed me to think that one so divinely beautiful could at
+the same time be so fiendishly vindictive. It occurred to me, however,
+that she had overlooked one little factor in her revenge, and so,
+without any intent to add to her discomfiture, but rather to permit her
+to rearrange her plans along more practical lines, I pointed to the
+nearest port-hole.
+
+Evidently she had entirely forgotten her surroundings and her present
+circumstances, for a single glance at the dark, swirling waters without
+sent her crumpled upon a low bench, where with her face buried in her
+arms she sobbed more like a very unhappy little girl than a proud and
+all-powerful goddess.
+
+Down, down we continued to sink until the heavy glass of the port-holes
+became noticeably warm from the heat of the water without. Evidently we
+were very far beneath the surface crust of Mars.
+
+Presently our downward motion ceased, and I could hear the propellers
+swirling through the water at our stern and forcing us ahead at high
+speed. It was very dark down there, but the light from our port-holes,
+and the reflection from what must have been a powerful searchlight on
+the submarine’s nose showed that we were forging through a narrow
+passage, rock-lined, and tube-like.
+
+After a few minutes the propellers ceased their whirring. We came to a
+full stop, and then commenced to rise swiftly toward the surface. Soon
+the light from without increased and we came to a stop.
+
+Xodar entered the cabin with his men.
+
+“Come,” he said, and we followed him through the hatchway which had
+been opened by one of the seamen.
+
+We found ourselves in a small subterranean vault, in the centre of
+which was the pool in which lay our submarine, floating as we had first
+seen her with only her black back showing.
+
+Around the edge of the pool was a level platform, and then the walls of
+the cave rose perpendicularly for a few feet to arch toward the centre
+of the low roof. The walls about the ledge were pierced with a number
+of entrances to dimly lighted passageways.
+
+Toward one of these our captors led us, and after a short walk halted
+before a steel cage which lay at the bottom of a shaft rising above us
+as far as one could see.
+
+The cage proved to be one of the common types of elevator cars that I
+had seen in other parts of Barsoom. They are operated by means of
+enormous magnets which are suspended at the top of the shaft. By an
+electrical device the volume of magnetism generated is regulated and
+the speed of the car varied.
+
+In long stretches they move at a sickening speed, especially on the
+upward trip, since the small force of gravity inherent to Mars results
+in very little opposition to the powerful force above.
+
+Scarcely had the door of the car closed behind us than we were slowing
+up to stop at the landing above, so rapid was our ascent of the long
+shaft.
+
+When we emerged from the little building which houses the upper
+terminus of the elevator, we found ourselves in the midst of a
+veritable fairyland of beauty. The combined languages of Earth men hold
+no words to convey to the mind the gorgeous beauties of the scene.
+
+One may speak of scarlet sward and ivory-stemmed trees decked with
+brilliant purple blooms; of winding walks paved with crushed rubies,
+with emerald, with turquoise, even with diamonds themselves; of a
+magnificent temple of burnished gold, hand-wrought with marvellous
+designs; but where are the words to describe the glorious colours that
+are unknown to earthly eyes? where the mind or the imagination that can
+grasp the gorgeous scintillations of unheard-of rays as they emanate
+from the thousand nameless jewels of Barsoom?
+
+Even my eyes, for long years accustomed to the barbaric splendours of a
+Martian Jeddak’s court, were amazed at the glory of the scene.
+
+Phaidor’s eyes were wide in amazement.
+
+“The Temple of Issus,” she whispered, half to herself.
+
+Xodar watched us with his grim smile, partly of amusement and partly
+malicious gloating.
+
+The gardens swarmed with brilliantly trapped black men and women. Among
+them moved red and white females serving their every want. The places
+of the outer world and the temples of the therns had been robbed of
+their princesses and goddesses that the blacks might have their slaves.
+
+Through this scene we moved toward the temple. At the main entrance we
+were halted by a cordon of armed guards. Xodar spoke a few words to an
+officer who came forward to question us. Together they entered the
+temple, where they remained for some time.
+
+When they returned it was to announce that Issus desired to look upon
+the daughter of Matai Shang, and the strange creature from another
+world who had been a Prince of Helium.
+
+Slowly we moved through endless corridors of unthinkable beauty;
+through magnificent apartments, and noble halls. At length we were
+halted in a spacious chamber in the centre of the temple. One of the
+officers who had accompanied us advanced to a large door in the further
+end of the chamber. Here he must have made some sort of signal for
+immediately the door opened and another richly trapped courtier
+emerged.
+
+We were then led up to the door, where we were directed to get down on
+our hands and knees with our backs toward the room we were to enter.
+The doors were swung open and after being cautioned not to turn our
+heads under penalty of instant death we were commanded to back into the
+presence of Issus.
+
+Never have I been in so humiliating a position in my life, and only my
+love for Dejah Thoris and the hope which still clung to me that I might
+again see her kept me from rising to face the goddess of the First Born
+and go down to my death like a gentleman, facing my foes and with their
+blood mingling with mine.
+
+After we had crawled in this disgusting fashion for a matter of a
+couple of hundred feet we were halted by our escort.
+
+“Let them rise,” said a voice behind us; a thin, wavering voice, yet
+one that had evidently been accustomed to command for many years.
+
+“Rise,” said our escort, “but do not face toward Issus.”
+
+“The woman pleases me,” said the thin, wavering voice again after a few
+moments of silence. “She shall serve me the allotted time. The man you
+may return to the Isle of Shador which lies against the northern shore
+of the Sea of Omean. Let the woman turn and look upon Issus, knowing
+that those of the lower orders who gaze upon the holy vision of her
+radiant face survive the blinding glory but a single year.”
+
+I watched Phaidor from the corner of my eye. She paled to a ghastly
+hue. Slowly, very slowly she turned, as though drawn by some invisible
+yet irresistible force. She was standing quite close to me, so close
+that her bare arm touched mine as she finally faced Issus, Goddess of
+Life Eternal.
+
+I could not see the girl’s face as her eyes rested for the first time
+on the Supreme Deity of Mars, but felt the shudder that ran through her
+in the trembling flesh of the arm that touched mine.
+
+“It must be dazzling loveliness indeed,” thought I, “to cause such
+emotion in the breast of so radiant a beauty as Phaidor, daughter of
+Matai Shang.”
+
+“Let the woman remain. Remove the man. Go.” Thus spoke Issus, and the
+heavy hand of the officer fell upon my shoulder. In accordance with his
+instructions I dropped to my hands and knees once more and crawled from
+the Presence. It had been my first audience with deity, but I am free
+to confess that I was not greatly impressed—other than with the
+ridiculous figure I cut scrambling about on my marrow bones.
+
+Once without the chamber the doors closed behind us and I was bid to
+rise. Xodar joined me and together we slowly retraced our steps toward
+the gardens.
+
+“You spared my life when you easily might have taken it,” he said after
+we had proceeded some little way in silence, “and I would aid you if I
+might. I can help to make your life here more bearable, but your fate
+is inevitable. You may never hope to return to the outer world.”
+
+“What will be my fate?” I asked.
+
+“That will depend largely upon Issus. So long as she does not send for
+you and reveal her face to you, you may live on for years in as mild a
+form of bondage as I can arrange for you.”
+
+“Why should she send for me?” I asked.
+
+“The men of the lower orders she often uses for various purposes of
+amusement. Such a fighter as you, for example, would render fine sport
+in the monthly rites of the temple. There are men pitted against men,
+and against beasts for the edification of Issus and the replenishment
+of her larder.”
+
+“She eats human flesh?” I asked. Not in horror, however, for since my
+recently acquired knowledge of the Holy Therns I was prepared for
+anything in this still less accessible heaven, where all was evidently
+dictated by a single omnipotence; where ages of narrow fanaticism and
+self-worship had eradicated all the broader humanitarian instincts that
+the race might once have possessed.
+
+They were a people drunk with power and success, looking upon the other
+inhabitants of Mars as we look upon the beasts of the field and the
+forest. Why then should they not eat of the flesh of the lower orders
+whose lives and characters they no more understood than do we the
+inmost thoughts and sensibilities of the cattle we slaughter for our
+earthly tables.
+
+“She eats only the flesh of the best bred of the Holy Therns and the
+red Barsoomians. The flesh of the others goes to our boards. The
+animals are eaten by the slaves. She also eats other dainties.”
+
+I did not understand then that there lay any special significance in
+his reference to other dainties. I thought the limit of ghoulishness
+already had been reached in the recitation of Issus’ menu. I still had
+much to learn as to the depths of cruelty and bestiality to which
+omnipotence may drag its possessor.
+
+We had about reached the last of the many chambers and corridors which
+led to the gardens when an officer overtook us.
+
+“Issus would look again upon this man,” he said. “The girl has told her
+that he is of wondrous beauty and of such prowess that alone he slew
+seven of the First Born, and with his bare hands took Xodar captive,
+binding him with his own harness.”
+
+Xodar looked uncomfortable. Evidently he did not relish the thought
+that Issus had learned of his inglorious defeat.
+
+Without a word he turned and we followed the officer once again to the
+closed doors before the audience chamber of Issus, Goddess of Life
+Eternal.
+
+Here the ceremony of entrance was repeated. Again Issus bid me rise.
+For several minutes all was silent as the tomb. The eyes of deity were
+appraising me.
+
+Presently the thin wavering voice broke the stillness, repeating in a
+singsong drone the words which for countless ages had sealed the doom
+of numberless victims.
+
+“Let the man turn and look upon Issus, knowing that those of the lower
+orders who gaze upon the holy vision of her radiant face survive the
+blinding glory but a single year.”
+
+I turned as I had been bid, expecting such a treat as only the
+revealment of divine glory to mortal eyes might produce. What I saw was
+a solid phalanx of armed men between myself and a dais supporting a
+great bench of carved sorapus wood. On this bench, or throne, squatted
+a female black. She was evidently very old. Not a hair remained upon
+her wrinkled skull. With the exception of two yellow fangs she was
+entirely toothless. On either side of her thin, hawk-like nose her eyes
+burned from the depths of horribly sunken sockets. The skin of her face
+was seamed and creased with a million deepcut furrows. Her body was as
+wrinkled as her face, and as repulsive.
+
+Emaciated arms and legs attached to a torso which seemed to be mostly
+distorted abdomen completed the “holy vision of her radiant beauty.”
+
+Surrounding her were a number of female slaves, among them Phaidor,
+white and trembling.
+
+“This is the man who slew seven of the First Born and, bare-handed,
+bound Dator Xodar with his own harness?” asked Issus.
+
+“Most glorious vision of divine loveliness, it is,” replied the officer
+who stood at my side.
+
+“Produce Dator Xodar,” she commanded.
+
+Xodar was brought from the adjoining room.
+
+Issus glared at him, a baleful light in her hideous eyes.
+
+“And such as you are a Dator of the First Born?” she squealed. “For the
+disgrace you have brought upon the Immortal Race you shall be degraded
+to a rank below the lowest. No longer be you a Dator, but for evermore
+a slave of slaves, to fetch and carry for the lower orders that serve
+in the gardens of Issus. Remove his harness. Cowards and slaves wear no
+trappings.”
+
+Xodar stood stiffly erect. Not a muscle twitched, nor a tremor shook
+his giant frame as a soldier of the guard roughly stripped his gorgeous
+trappings from him.
+
+“Begone,” screamed the infuriated little old woman. “Begone, but
+instead of the light of the gardens of Issus let you serve as a slave
+of this slave who conquered you in the prison on the Isle of Shador in
+the Sea of Omean. Take him away out of the sight of my divine eyes.”
+
+Slowly and with high held head the proud Xodar turned and stalked from
+the chamber. Issus rose and turned to leave the room by another exit.
+
+Turning to me, she said: “You shall be returned to Shador for the
+present. Later Issus will see the manner of your fighting. Go.” Then
+she disappeared, followed by her retinue. Only Phaidor lagged behind,
+and as I started to follow my guard toward the gardens, the girl came
+running after me.
+
+“Oh, do not leave me in this terrible place,” she begged. “Forgive the
+things I said to you, my Prince. I did not mean them. Only take me away
+with you. Let me share your imprisonment on Shador.” Her words were an
+almost incoherent volley of thoughts, so rapidly she spoke. “You did
+not understand the honour that I did you. Among the therns there is no
+marriage or giving in marriage, as among the lower orders of the outer
+world. We might have lived together for ever in love and happiness. We
+have both looked upon Issus and in a year we die. Let us live that year
+at least together in what measure of joy remains for the doomed.”
+
+“If it was difficult for me to understand you, Phaidor,” I replied,
+“can you not understand that possibly it is equally difficult for you
+to understand the motives, the customs and the social laws that guide
+me? I do not wish to hurt you, nor to seem to undervalue the honour
+which you have done me, but the thing you desire may not be. Regardless
+of the foolish belief of the peoples of the outer world, or of Holy
+Thern, or ebon First Born, I am not dead. While I live my heart beats
+for but one woman—the incomparable Dejah Thoris, Princess of Helium.
+When death overtakes me my heart shall have ceased to beat; but what
+comes after that I know not. And in that I am as wise as Matai Shang,
+Master of Life and Death upon Barsoom; or Issus, Goddess of Life
+Eternal.”
+
+Phaidor stood looking at me intently for a moment. No anger showed in
+her eyes this time, only a pathetic expression of hopeless sorrow.
+
+“I do not understand,” she said, and turning walked slowly in the
+direction of the door through which Issus and her retinue had passed. A
+moment later she had passed from my sight.
+
+## CHAPTER X THE PRISON ISLE OF SHADOR
+
+In the outer gardens to which the guard now escorted me, I found Xodar
+surrounded by a crowd of noble blacks. They were reviling and cursing
+him. The men slapped his face. The women spat upon him.
+
+When I appeared they turned their attentions toward me.
+
+“Ah,” cried one, “so this is the creature who overcame the great Xodar
+bare-handed. Let us see how it was done.”
+
+“Let him bind Thurid,” suggested a beautiful woman, laughing. “Thurid
+is a noble Dator. Let Thurid show the dog what it means to face a real
+man.”
+
+“Yes, Thurid! Thurid!” cried a dozen voices.
+
+“Here he is now,” exclaimed another, and turning in the direction
+indicated I saw a huge black weighed down with resplendent ornaments
+and arms advancing with noble and gallant bearing toward us.
+
+“What now?” he cried. “What would you of Thurid?”
+
+Quickly a dozen voices explained.
+
+Thurid turned toward Xodar, his eyes narrowing to two nasty slits.
+
+“Calot!” he hissed. “Ever did I think you carried the heart of a sorak
+in your putrid breast. Often have you bested me in the secret councils
+of Issus, but now in the field of war where men are truly gauged your
+scabby heart hath revealed its sores to all the world. Calot, I spurn
+you with my foot,” and with the words he turned to kick Xodar.
+
+My blood was up. For minutes it had been boiling at the cowardly
+treatment they had been according this once powerful comrade because he
+had fallen from the favour of Issus. I had no love for Xodar, but I
+cannot stand the sight of cowardly injustice and persecution without
+seeing red as through a haze of bloody mist, and doing things on the
+impulse of the moment that I presume I never should do after mature
+deliberation.
+
+I was standing close beside Xodar as Thurid swung his foot for the
+cowardly kick. The degraded Dator stood erect and motionless as a
+carven image. He was prepared to take whatever his former comrades had
+to offer in the way of insults and reproaches, and take them in manly
+silence and stoicism.
+
+But as Thurid’s foot swung so did mine, and I caught him a painful blow
+upon the shin bone that saved Xodar from this added ignominy.
+
+For a moment there was tense silence, then Thurid, with a roar of rage
+sprang for my throat; just as Xodar had upon the deck of the cruiser.
+The results were identical. I ducked beneath his outstretched arms, and
+as he lunged past me planted a terrific right on the side of his jaw.
+
+The big fellow spun around like a top, his knees gave beneath him and
+he crumpled to the ground at my feet.
+
+The blacks gazed in astonishment, first at the still form of the proud
+Dator lying there in the ruby dust of the pathway, then at me as though
+they could not believe that such a thing could be.
+
+“You asked me to bind Thurid,” I cried; “behold!” And then I stooped
+beside the prostrate form, tore the harness from it, and bound the
+fellow’s arms and legs securely.
+
+“As you have done to Xodar, now do you likewise to Thurid. Take him
+before Issus, bound in his own harness, that she may see with her own
+eyes that there be one among you now who is greater than the First
+Born.”
+
+“Who are you?” whispered the woman who had first suggested that I
+attempt to bind Thurid.
+
+“I am a citizen of two worlds; Captain John Carter of Virginia, Prince
+of the House of Tardos Mors, Jeddak of Helium. Take this man to your
+goddess, as I have said, and tell her, too, that as I have done to
+Xodar and Thurid, so also can I do to the mightiest of her Dators. With
+naked hands, with long-sword or with short-sword, I challenge the
+flower of her fighting-men to combat.”
+
+“Come,” said the officer who was guarding me back to Shador; “my orders
+are imperative; there is to be no delay. Xodar, come you also.”
+
+There was little of disrespect in the tone that the man used in
+addressing either Xodar or myself. It was evident that he felt less
+contempt for the former Dator since he had witnessed the ease with
+which I disposed of the powerful Thurid.
+
+That his respect for me was greater than it should have been for a
+slave was quite apparent from the fact that during the balance of the
+return journey he walked or stood always behind me, a drawn short-sword
+in his hand.
+
+The return to the Sea of Omean was uneventful. We dropped down the
+awful shaft in the same car that had brought us to the surface. There
+we entered the submarine, taking the long dive to the tunnel far
+beneath the upper world. Then through the tunnel and up again to the
+pool from which we had had our first introduction to the wonderful
+passageway from Omean to the Temple of Issus.
+
+From the island of the submarine we were transported on a small cruiser
+to the distant Isle of Shador. Here we found a small stone prison and a
+guard of half a dozen blacks. There was no ceremony wasted in
+completing our incarceration. One of the blacks opened the door of the
+prison with a huge key, we walked in, the door closed behind us, the
+lock grated, and with the sound there swept over me again that terrible
+feeling of hopelessness that I had felt in the Chamber of Mystery in
+the Golden Cliffs beneath the gardens of the Holy Therns.
+
+Then Tars Tarkas had been with me, but now I was utterly alone in so
+far as friendly companionship was concerned. I fell to wondering about
+the fate of the great Thark, and of his beautiful companion, the girl,
+Thuvia. Even should they by some miracle have escaped and been received
+and spared by a friendly nation, what hope had I of the succour which I
+knew they would gladly extend if it lay in their power.
+
+They could not guess my whereabouts or my fate, for none on all Barsoom
+even dream of such a place as this. Nor would it have advantaged me any
+had they known the exact location of my prison, for who could hope to
+penetrate to this buried sea in the face of the mighty navy of the
+First Born? No: my case was hopeless.
+
+Well, I would make the best of it, and, rising, I swept aside the
+brooding despair that had been endeavouring to claim me. With the idea
+of exploring my prison, I started to look around.
+
+Xodar sat, with bowed head, upon a low stone bench near the centre of
+the room in which we were. He had not spoken since Issus had degraded
+him.
+
+The building was roofless, the walls rising to a height of about thirty
+feet. Half-way up were a couple of small, heavily barred windows. The
+prison was divided into several rooms by partitions twenty feet high.
+There was no one in the room which we occupied, but two doors which led
+to other rooms were opened. I entered one of these rooms, but found it
+vacant. Thus I continued through several of the chambers until in the
+last one I found a young red Martian boy sleeping upon the stone bench
+which constituted the only furniture of any of the prison cells.
+
+Evidently he was the only other prisoner. As he slept I leaned over and
+looked at him. There was something strangely familiar about his face,
+and yet I could not place him.
+
+His features were very regular and, like the proportions of his
+graceful limbs and body, beautiful in the extreme. He was very light in
+colour for a red man, but in other respects he seemed a typical
+specimen of this handsome race.
+
+I did not awaken him, for sleep in prison is such a priceless boon that
+I have seen men transformed into raging brutes when robbed by one of
+their fellow-prisoners of a few precious moments of it.
+
+Returning to my own cell, I found Xodar still sitting in the same
+position in which I had left him.
+
+“Man,” I cried, “it will profit you nothing to mope thus. It were no
+disgrace to be bested by John Carter. You have seen that in the ease
+with which I accounted for Thurid. You knew it before when on the
+cruiser’s deck you saw me slay three of your comrades.”
+
+“I would that you had dispatched me at the same time,” he said.
+
+“Come, come!” I cried. “There is hope yet. Neither of us is dead. We
+are great fighters. Why not win to freedom?”
+
+He looked at me in amazement.
+
+“You know not of what you speak,” he replied. “Issus is omnipotent.
+Issus is omniscient. She hears now the words you speak. She knows the
+thoughts you think. It is sacrilege even to dream of breaking her
+commands.”
+
+“Rot, Xodar,” I ejaculated impatiently.
+
+He sprang to his feet in horror.
+
+“The curse of Issus will fall upon you,” he cried. “In another instant
+you will be smitten down, writhing to your death in horrible agony.”
+
+“Do you believe that, Xodar?” I asked.
+
+“Of course; who would dare doubt?”
+
+“I doubt; yes, and further, I deny,” I said. “Why, Xodar, you tell me
+that she even knows my thoughts. The red men have all had that power
+for ages. And another wonderful power. They can shut their minds so
+that none may read their thoughts. I learned the first secret years
+ago; the other I never had to learn, since upon all Barsoom is none who
+can read what passes in the secret chambers of my brain.
+
+“Your goddess cannot read my thoughts; nor can she read yours when you
+are out of sight, unless you will it. Had she been able to read mine, I
+am afraid that her pride would have suffered a rather severe shock when
+I turned at her command to ‘gaze upon the holy vision of her radiant
+face.’”
+
+“What do you mean?” he whispered in an affrighted voice, so low that I
+could scarcely hear him.
+
+“I mean that I thought her the most repulsive and vilely hideous
+creature my eyes ever had rested upon.”
+
+For a moment he eyed me in horror-stricken amazement, and then with a
+cry of “Blasphemer” he sprang upon me.
+
+I did not wish to strike him again, nor was it necessary, since he was
+unarmed and therefore quite harmless to me.
+
+As he came I grasped his left wrist with my left hand, and, swinging my
+right arm about his left shoulder, caught him beneath the chin with my
+elbow and bore him backward across my thigh.
+
+There he hung helpless for a moment, glaring up at me in impotent rage.
+
+“Xodar,” I said, “let us be friends. For a year, possibly, we may be
+forced to live together in the narrow confines of this tiny room. I am
+sorry to have offended you, but I could not dream that one who had
+suffered from the cruel injustice of Issus still could believe her
+divine.
+
+“I will say a few more words, Xodar, with no intent to wound your
+feelings further, but rather that you may give thought to the fact that
+while we live we are still more the arbiters of our own fate than is
+any god.
+
+“Issus, you see, has not struck me dead, nor is she rescuing her
+faithful Xodar from the clutches of the unbeliever who defamed her fair
+beauty. No, Xodar, your Issus is a mortal old woman. Once out of her
+clutches and she cannot harm you.
+
+“With your knowledge of this strange land, and my knowledge of the
+outer world, two such fighting-men as you and I should be able to win
+our way to freedom. Even though we died in the attempt, would not our
+memories be fairer than as though we remained in servile fear to be
+butchered by a cruel and unjust tyrant—call her goddess or mortal, as
+you will.”
+
+As I finished I raised Xodar to his feet and released him. He did not
+renew the attack upon me, nor did he speak. Instead, he walked toward
+the bench, and, sinking down upon it, remained lost in deep thought for
+hours.
+
+A long time afterward I heard a soft sound at the doorway leading to
+one of the other apartments, and, looking up, beheld the red Martian
+youth gazing intently at us.
+
+“Kaor,” I cried, after the red Martian manner of greeting.
+
+“Kaor,” he replied. “What do you here?”
+
+“I await my death, I presume,” I replied with a wry smile.
+
+He too smiled, a brave and winning smile.
+
+“I also,” he said. “Mine will come soon. I looked upon the radiant
+beauty of Issus nearly a year since. It has always been a source of
+keen wonder to me that I did not drop dead at the first sight of that
+hideous countenance. And her belly! By my first ancestor, but never was
+there so grotesque a figure in all the universe. That they should call
+such a one Goddess of Life Eternal, Goddess of Death, Mother of the
+Nearer Moon, and fifty other equally impossible titles, is quite beyond
+me.”
+
+“How came you here?” I asked.
+
+“It is very simple. I was flying a one-man air scout far to the south
+when the brilliant idea occurred to me that I should like to search for
+the Lost Sea of Korus which tradition places near to the south pole. I
+must have inherited from my father a wild lust for adventure, as well
+as a hollow where my bump of reverence should be.
+
+“I had reached the area of eternal ice when my port propeller jammed,
+and I dropped to the ground to make repairs. Before I knew it the air
+was black with fliers, and a hundred of these First Born devils were
+leaping to the ground all about me.
+
+“With drawn swords they made for me, but before I went down beneath
+them they had tasted of the steel of my father’s sword, and I had given
+such an account of myself as I know would have pleased my sire had he
+lived to witness it.”
+
+“Your father is dead?” I asked.
+
+“He died before the shell broke to let me step out into a world that
+has been very good to me. But for the sorrow that I had never the
+honour to know my father, I have been very happy. My only sorrow now is
+that my mother must mourn me as she has for ten long years mourned my
+father.”
+
+“Who was your father?” I asked.
+
+He was about to reply when the outer door of our prison opened and a
+burly guard entered and ordered him to his own quarters for the night,
+locking the door after him as he passed through into the further
+chamber.
+
+“It is Issus’ wish that you two be confined in the same room,” said the
+guard when he had returned to our cell. “This cowardly slave of a slave
+is to serve you well,” he said to me, indicating Xodar with a wave of
+his hand. “If he does not, you are to beat him into submission. It is
+Issus’ wish that you heap upon him every indignity and degradation of
+which you can conceive.”
+
+With these words he left us.
+
+Xodar still sat with his face buried in his hands. I walked to his side
+and placed my hand upon his shoulder.
+
+“Xodar,” I said, “you have heard the commands of Issus, but you need
+not fear that I shall attempt to put them into execution. You are a
+brave man, Xodar. It is your own affair if you wish to be persecuted
+and humiliated; but were I you I should assert my manhood and defy my
+enemies.”
+
+“I have been thinking very hard, John Carter,” he said, “of all the new
+ideas you gave me a few hours since. Little by little I have been
+piecing together the things that you said which sounded blasphemous to
+me then with the things that I have seen in my past life and dared not
+even think about for fear of bringing down upon me the wrath of Issus.
+
+“I believe now that she is a fraud; no more divine than you or I. More
+I am willing to concede—that the First Born are no holier than the Holy
+Therns, nor the Holy Therns more holy than the red men.
+
+“The whole fabric of our religion is based on superstitious belief in
+lies that have been foisted upon us for ages by those directly above
+us, to whose personal profit and aggrandizement it was to have us
+continue to believe as they wished us to believe.
+
+“I am ready to cast off the ties that have bound me. I am ready to defy
+Issus herself; but what will it avail us? Be the First Born gods or
+mortals, they are a powerful race, and we are as fast in their clutches
+as though we were already dead. There is no escape.”
+
+“I have escaped from bad plights in the past, my friend,” I replied;
+“nor while life is in me shall I despair of escaping from the Isle of
+Shador and the Sea of Omean.”
+
+“But we cannot escape even from the four walls of our prison,” urged
+Xodar. “Test this flint-like surface,” he cried, smiting the solid rock
+that confined us. “And look upon this polished surface; none could
+cling to it to reach the top.”
+
+I smiled.
+
+“That is the least of our troubles, Xodar,” I replied. “I will
+guarantee to scale the wall and take you with me, if you will help with
+your knowledge of the customs here to appoint the best time for the
+attempt, and guide me to the shaft that lets from the dome of this
+abysmal sea to the light of God’s pure air above.”
+
+“Night time is the best and offers the only slender chance we have, for
+then men sleep, and only a dozing watch nods in the tops of the
+battleships. No watch is kept upon the cruisers and smaller craft. The
+watchers upon the larger vessels see to all about them. It is night
+now.”
+
+“But,” I exclaimed, “it is not dark! How can it be night, then?”
+
+He smiled.
+
+“You forget,” he said, “that we are far below ground. The light of the
+sun never penetrates here. There are no moons and no stars reflected in
+the bosom of Omean. The phosphorescent light you now see pervading this
+great subterranean vault emanates from the rocks that form its dome; it
+is always thus upon Omean, just as the billows are always as you see
+them—rolling, ever rolling over a windless sea.
+
+“At the appointed hour of night upon the world above, the men whose
+duties hold them here sleep, but the light is ever the same.”
+
+“It will make escape more difficult,” I said, and then I shrugged my
+shoulders; for what, pray, is the pleasure of doing an easy thing?
+
+“Let us sleep on it to-night,” said Xodar. “A plan may come with our
+awakening.”
+
+So we threw ourselves upon the hard stone floor of our prison and slept
+the sleep of tired men.
+
+## CHAPTER XI WHEN HELL BROKE LOOSE
+
+Early the next morning Xodar and I commenced work upon our plans for
+escape. First I had him sketch upon the stone floor of our cell as
+accurate a map of the south polar regions as was possible with the
+crude instruments at our disposal—a buckle from my harness, and the
+sharp edge of the wondrous gem I had taken from Sator Throg.
+
+From this I computed the general direction of Helium and the distance
+at which it lay from the opening which led to Omean.
+
+Then I had him draw a map of Omean, indicating plainly the position of
+Shador and of the opening in the dome which led to the outer world.
+
+These I studied until they were indelibly imprinted in my memory. From
+Xodar I learned the duties and customs of the guards who patrolled
+Shador. It seemed that during the hours set aside for sleep only one
+man was on duty at a time. He paced a beat that passed around the
+prison, at a distance of about a hundred feet from the building.
+
+The pace of the sentries, Xodar said, was very slow, requiring nearly
+ten minutes to make a single round. This meant that for practically
+five minutes at a time each side of the prison was unguarded as the
+sentry pursued his snail-like pace upon the opposite side.
+
+“This information you ask,” said Xodar, “will be all very valuable
+_after_ we get out, but nothing that you have asked has any bearing on
+that first and most important consideration.”
+
+“We will get out all right,” I replied, laughing. “Leave that to me.”
+
+“When shall we make the attempt?” he asked.
+
+“The first night that finds a small craft moored near the shore of
+Shador,” I replied.
+
+“But how will you know that any craft is moored near Shador? The
+windows are far beyond our reach.”
+
+“Not so, friend Xodar; look!”
+
+With a bound I sprang to the bars of the window opposite us, and took a
+quick survey of the scene without.
+
+Several small craft and two large battleships lay within a hundred
+yards of Shador.
+
+“To-night,” I thought, and was just about to voice my decision to
+Xodar, when, without warning, the door of our prison opened and a guard
+stepped in.
+
+If the fellow saw me there our chances of escape might quickly go
+glimmering, for I knew that they would put me in irons if they had the
+slightest conception of the wonderful agility which my earthly muscles
+gave me upon Mars.
+
+The man had entered and was standing facing the centre of the room, so
+that his back was toward me. Five feet above me was the top of a
+partition wall separating our cell from the next.
+
+There was my only chance to escape detection. If the fellow turned, I
+was lost; nor could I have dropped to the floor undetected, since he
+was so nearly below me that I would have struck him had I done so.
+
+“Where is the white man?” cried the guard of Xodar. “Issus commands his
+presence.” He started to turn to see if I were in another part of the
+cell.
+
+I scrambled up the iron grating of the window until I could catch a
+good footing on the sill with one foot; then I let go my hold and
+sprang for the partition top.
+
+“What was that?” I heard the deep voice of the black bellow as my metal
+grated against the stone wall as I slipped over. Then I dropped lightly
+to the floor of the cell beyond.
+
+“Where is the white slave?” again cried the guard.
+
+“I know not,” replied Xodar. “He was here even as you entered. I am not
+his keeper—go find him.”
+
+The black grumbled something that I could not understand, and then I
+heard him unlocking the door into one of the other cells on the further
+side. Listening intently, I caught the sound as the door closed behind
+him. Then I sprang once more to the top of the partition and dropped
+into my own cell beside the astonished Xodar.
+
+“Do you see now how we will escape?” I asked him in a whisper.
+
+“I see how you may,” he replied, “but I am no wiser than before as to
+how I am to pass these walls. Certain it is that I cannot bounce over
+them as you do.”
+
+We heard the guard moving about from cell to cell, and finally, his
+rounds completed, he again entered ours. When his eyes fell upon me
+they fairly bulged from his head.
+
+“By the shell of my first ancestor!” he roared. “Where have you been?”
+
+“I have been in prison since you put me here yesterday,” I answered. “I
+was in this room when you entered. You had better look to your
+eyesight.”
+
+He glared at me in mingled rage and relief.
+
+“Come,” he said. “Issus commands your presence.”
+
+He conducted me outside the prison, leaving Xodar behind. There we
+found several other guards, and with them the red Martian youth who
+occupied another cell upon Shador.
+
+The journey I had taken to the Temple of Issus on the preceding day was
+repeated. The guards kept the red boy and myself separated, so that we
+had no opportunity to continue the conversation that had been
+interrupted the previous night.
+
+The youth’s face had haunted me. Where had I seen him before. There was
+something strangely familiar in every line of him; in his carriage, his
+manner of speaking, his gestures. I could have sworn that I knew him,
+and yet I knew too that I had never seen him before.
+
+When we reached the gardens of Issus we were led away from the temple
+instead of toward it. The way wound through enchanted parks to a mighty
+wall that towered a hundred feet in air.
+
+Massive gates gave egress upon a small plain, surrounded by the same
+gorgeous forests that I had seen at the foot of the Golden Cliffs.
+
+Crowds of blacks were strolling in the same direction that our guards
+were leading us, and with them mingled my old friends the plant men and
+great white apes.
+
+The brutal beasts moved among the crowd as pet dogs might. If they were
+in the way the blacks pushed them roughly to one side, or whacked them
+with the flat of a sword, and the animals slunk away as in great fear.
+
+Presently we came upon our destination, a great amphitheatre situated
+at the further edge of the plain, and about half a mile beyond the
+garden walls.
+
+Through a massive arched gateway the blacks poured in to take their
+seats, while our guards led us to a smaller entrance near one end of
+the structure.
+
+Through this we passed into an enclosure beneath the seats, where we
+found a number of other prisoners herded together under guard. Some of
+them were in irons, but for the most part they seemed sufficiently awed
+by the presence of their guards to preclude any possibility of
+attempted escape.
+
+During the trip from Shador I had had no opportunity to talk with my
+fellow-prisoner, but now that we were safely within the barred paddock
+our guards abated their watchfulness, with the result that I found
+myself able to approach the red Martian youth for whom I felt such a
+strange attraction.
+
+“What is the object of this assembly?” I asked him. “Are we to fight
+for the edification of the First Born, or is it something worse than
+that?”
+
+“It is a part of the monthly rites of Issus,” he replied, “in which
+black men wash the sins from their souls in the blood of men from the
+outer world. If, perchance, the black is killed, it is evidence of his
+disloyalty to Issus—the unpardonable sin. If he lives through the
+contest he is held acquitted of the charge that forced the sentence of
+the rites, as it is called, upon him.
+
+“The forms of combat vary. A number of us may be pitted together
+against an equal number, or twice the number of blacks; or singly we
+may be sent forth to face wild beasts, or some famous black warrior.”
+
+“And if we are victorious,” I asked, “what then—freedom?”
+
+He laughed.
+
+“Freedom, forsooth. The only freedom for us death. None who enters the
+domains of the First Born ever leave. If we prove able fighters we are
+permitted to fight often. If we are not mighty fighters—” He shrugged
+his shoulders. “Sooner or later we die in the arena.”
+
+“And you have fought often?” I asked.
+
+“Very often,” he replied. “It is my only pleasure. Some hundred black
+devils have I accounted for during nearly a year of the rites of Issus.
+My mother would be very proud could she only know how well I have
+maintained the traditions of my father’s prowess.”
+
+“Your father must have been a mighty warrior!” I said. “I have known
+most of the warriors of Barsoom in my time; doubtless I knew him. Who
+was he?”
+
+“My father was—”
+
+“Come, calots!” cried the rough voice of a guard. “To the slaughter
+with you,” and roughly we were hustled to the steep incline that led to
+the chambers far below which let out upon the arena.
+
+The amphitheatre, like all I had ever seen upon Barsoom, was built in a
+large excavation. Only the highest seats, which formed the low wall
+surrounding the pit, were above the level of the ground. The arena
+itself was far below the surface.
+
+Just beneath the lowest tier of seats was a series of barred cages on a
+level with the surface of the arena. Into these we were herded. But,
+unfortunately, my youthful friend was not of those who occupied a cage
+with me.
+
+Directly opposite my cage was the throne of Issus. Here the horrid
+creature squatted, surrounded by a hundred slave maidens sparkling in
+jewelled trappings. Brilliant cloths of many hues and strange patterns
+formed the soft cushion covering of the dais upon which they reclined
+about her.
+
+On four sides of the throne and several feet below it stood three solid
+ranks of heavily armed soldiery, elbow to elbow. In front of these were
+the high dignitaries of this mock heaven—gleaming blacks bedecked with
+precious stones, upon their foreheads the insignia of their rank set in
+circles of gold.
+
+On both sides of the throne stretched a solid mass of humanity from top
+to bottom of the amphitheatre. There were as many women as men, and
+each was clothed in the wondrously wrought harness of his station and
+his house. With each black was from one to three slaves, drawn from the
+domains of the therns and from the outer world. The blacks are all
+“noble.” There is no peasantry among the First Born. Even the lowest
+soldier is a god, and has his slaves to wait upon him.
+
+The First Born do no work. The men fight—that is a sacred privilege and
+duty; to fight and die for Issus. The women do nothing, absolutely
+nothing. Slaves wash them, slaves dress them, slaves feed them. There
+are some, even, who have slaves that talk for them, and I saw one who
+sat during the rites with closed eyes while a slave narrated to her the
+events that were transpiring within the arena.
+
+The first event of the day was the Tribute to Issus. It marked the end
+of those poor unfortunates who had looked upon the divine glory of the
+goddess a full year before. There were ten of them—splendid beauties
+from the proud courts of mighty Jeddaks and from the temples of the
+Holy Therns. For a year they had served in the retinue of Issus; to-day
+they were to pay the price of this divine preferment with their lives;
+tomorrow they would grace the tables of the court functionaries.
+
+A huge black entered the arena with the young women. Carefully he
+inspected them, felt of their limbs and poked them in the ribs.
+Presently he selected one of their number whom he led before the throne
+of Issus. He addressed some words to the goddess which I could not
+hear. Issus nodded her head. The black raised his hands above his head
+in token of salute, grasped the girl by the wrist, and dragged her from
+the arena through a small doorway below the throne.
+
+“Issus will dine well to-night,” said a prisoner beside me.
+
+“What do you mean?” I asked.
+
+“That was her dinner that old Thabis is taking to the kitchens. Didst
+not note how carefully he selected the plumpest and tenderest of the
+lot?”
+
+I growled out my curses on the monster sitting opposite us on the
+gorgeous throne.
+
+“Fume not,” admonished my companion; “you will see far worse than that
+if you live even a month among the First Born.”
+
+I turned again in time to see the gate of a nearby cage thrown open and
+three monstrous white apes spring into the arena. The girls shrank in a
+frightened group in the centre of the enclosure.
+
+One was on her knees with imploring hands outstretched toward Issus;
+but the hideous deity only leaned further forward in keener
+anticipation of the entertainment to come. At length the apes spied the
+huddled knot of terror-stricken maidens and with demoniacal shrieks of
+bestial frenzy, charged upon them.
+
+A wave of mad fury surged over me. The cruel cowardliness of the
+power-drunk creature whose malignant mind conceived such frightful
+forms of torture stirred to their uttermost depths my resentment and my
+manhood. The blood-red haze that presaged death to my foes swam before
+my eyes.
+
+The guard lolled before the unbarred gate of the cage which confined
+me. What need of bars, indeed, to keep those poor victims from rushing
+into the arena which the edict of the gods had appointed as their death
+place!
+
+A single blow sent the black unconscious to the ground. Snatching up
+his long-sword, I sprang into the arena. The apes were almost upon the
+maidens, but a couple of mighty bounds were all my earthly muscles
+required to carry me to the centre of the sand-strewn floor.
+
+For an instant silence reigned in the great amphitheatre, then a wild
+shout arose from the cages of the doomed. My long-sword circled
+whirring through the air, and a great ape sprawled, headless, at the
+feet of the fainting girls.
+
+The other apes turned now upon me, and as I stood facing them a sullen
+roar from the audience answered the wild cheers from the cages. From
+the tail of my eye I saw a score of guards rushing across the
+glistening sand toward me. Then a figure broke from one of the cages
+behind them. It was the youth whose personality so fascinated me.
+
+He paused a moment before the cages, with upraised sword.
+
+“Come, men of the outer world!” he shouted. “Let us make our deaths
+worth while, and at the back of this unknown warrior turn this day’s
+Tribute to Issus into an orgy of revenge that will echo through the
+ages and cause black skins to blanch at each repetition of the rites of
+Issus. Come! The racks without your cages are filled with blades.”
+
+Without waiting to note the outcome of his plea, he turned and bounded
+toward me. From every cage that harboured red men a thunderous shout
+went up in answer to his exhortation. The inner guards went down
+beneath howling mobs, and the cages vomited forth their inmates hot
+with the lust to kill.
+
+The racks that stood without were stripped of the swords with which the
+prisoners were to have been armed to enter their allotted combats, and
+a swarm of determined warriors sped to our support.
+
+The great apes, towering in all their fifteen feet of height, had gone
+down before my sword while the charging guards were still some distance
+away. Close behind them pursued the youth. At my back were the young
+girls, and as it was in their service that I fought, I remained
+standing there to meet my inevitable death, but with the determination
+to give such an account of myself as would long be remembered in the
+land of the First Born.
+
+I noted the marvellous speed of the young red man as he raced after the
+guards. Never had I seen such speed in any Martian. His leaps and
+bounds were little short of those which my earthly muscles had produced
+to create such awe and respect on the part of the green Martians into
+whose hands I had fallen on that long-gone day that had seen my first
+advent upon Mars.
+
+The guards had not reached me when he fell upon them from the rear, and
+as they turned, thinking from the fierceness of his onslaught that a
+dozen were attacking them, I rushed them from my side.
+
+In the rapid fighting that followed I had little chance to note aught
+else than the movements of my immediate adversaries, but now and again
+I caught a fleeting glimpse of a purring sword and a lightly springing
+figure of sinewy steel that filled my heart with a strange yearning and
+a mighty but unaccountable pride.
+
+On the handsome face of the boy a grim smile played, and ever and anon
+he threw a taunting challenge to the foes that faced him. In this and
+other ways his manner of fighting was similar to that which had always
+marked me on the field of combat.
+
+Perhaps it was this vague likeness which made me love the boy, while
+the awful havoc that his sword played amongst the blacks filled my soul
+with a tremendous respect for him.
+
+For my part, I was fighting as I had fought a thousand times before—now
+sidestepping a wicked thrust, now stepping quickly in to let my sword’s
+point drink deep in a foeman’s heart, before it buried itself in the
+throat of his companion.
+
+We were having a merry time of it, we two, when a great body of Issus’
+own guards were ordered into the arena. On they came with fierce cries,
+while from every side the armed prisoners swarmed upon them.
+
+For half an hour it was as though all hell had broken loose. In the
+walled confines of the arena we fought in an inextricable mass—howling,
+cursing, blood-streaked demons; and ever the sword of the young red man
+flashed beside me.
+
+Slowly and by repeated commands I had succeeded in drawing the
+prisoners into a rough formation about us, so that at last we fought
+formed into a rude circle in the centre of which were the doomed maids.
+
+Many had gone down on both sides, but by far the greater havoc had been
+wrought in the ranks of the guards of Issus. I could see messengers
+running swiftly through the audience, and as they passed the nobles
+there unsheathed their swords and sprang into the arena. They were
+going to annihilate us by force of numbers—that was quite evidently
+their plan.
+
+I caught a glimpse of Issus leaning far forward upon her throne, her
+hideous countenance distorted in a horrid grimace of hate and rage, in
+which I thought I could distinguish an expression of fear. It was that
+face that inspired me to the thing that followed.
+
+Quickly I ordered fifty of the prisoners to drop back behind us and
+form a new circle about the maidens.
+
+“Remain and protect them until I return,” I commanded.
+
+Then, turning to those who formed the outer line, I cried, “Down with
+Issus! Follow me to the throne; we will reap vengeance where vengeance
+is deserved.”
+
+The youth at my side was the first to take up the cry of “Down with
+Issus!” and then at my back and from all sides rose a hoarse shout, “To
+the throne! To the throne!”
+
+As one man we moved, an irresistible fighting mass, over the bodies of
+dead and dying foes toward the gorgeous throne of the Martian deity.
+Hordes of the doughtiest fighting-men of the First Born poured from the
+audience to check our progress. We mowed them down before us as they
+had been paper men.
+
+“To the seats, some of you!” I cried as we approached the arena’s
+barrier wall. “Ten of us can take the throne,” for I had seen that
+Issus’ guards had for the most part entered the fray within the arena.
+
+On both sides of me the prisoners broke to left and right for the
+seats, vaulting the low wall with dripping swords lusting for the
+crowded victims who awaited them.
+
+In another moment the entire amphitheatre was filled with the shrieks
+of the dying and the wounded, mingled with the clash of arms and
+triumphant shouts of the victors.
+
+Side by side the young red man and I, with perhaps a dozen others,
+fought our way to the foot of the throne. The remaining guards,
+reinforced by the high dignitaries and nobles of the First Born, closed
+in between us and Issus, who sat leaning far forward upon her carved
+sorapus bench, now screaming high-pitched commands to her following,
+now hurling blighting curses upon those who sought to desecrate her
+godhood.
+
+The frightened slaves about her trembled in wide-eyed expectancy,
+knowing not whether to pray for our victory or our defeat. Several
+among them, proud daughters no doubt of some of Barsoom’s noblest
+warriors, snatched swords from the hands of the fallen and fell upon
+the guards of Issus, but they were soon cut down; glorious martyrs to a
+hopeless cause.
+
+The men with us fought well, but never since Tars Tarkas and I fought
+out that long, hot afternoon shoulder to shoulder against the hordes of
+Warhoon in the dead sea bottom before Thark, had I seen two men fight
+to such good purpose and with such unconquerable ferocity as the young
+red man and I fought that day before the throne of Issus, Goddess of
+Death, and of Life Eternal.
+
+Man by man those who stood between us and the carven sorapus wood bench
+went down before our blades. Others swarmed in to fill the breach, but
+inch by inch, foot by foot we won nearer and nearer to our goal.
+
+Presently a cry went up from a section of the stands near by—“Rise
+slaves!” “Rise slaves!” it rose and fell until it swelled to a mighty
+volume of sound that swept in great billows around the entire
+amphitheatre.
+
+For an instant, as though by common assent, we ceased our fighting to
+look for the meaning of this new note nor did it take but a moment to
+translate its significance. In all parts of the structure the female
+slaves were falling upon their masters with whatever weapon came first
+to hand. A dagger snatched from the harness of her mistress was waved
+aloft by some fair slave, its shimmering blade crimson with the
+lifeblood of its owner; swords plucked from the bodies of the dead
+about them; heavy ornaments which could be turned into bludgeons—such
+were the implements with which these fair women wreaked the long-pent
+vengeance which at best could but partially recompense them for the
+unspeakable cruelties and indignities which their black masters had
+heaped upon them. And those who could find no other weapons used their
+strong fingers and their gleaming teeth.
+
+It was at once a sight to make one shudder and to cheer; but in a brief
+second we were engaged once more in our own battle with only the
+unquenchable battle cry of the women to remind us that they still
+fought—“Rise slaves!” “Rise slaves!”
+
+Only a single thin rank of men now stood between us and Issus. Her face
+was blue with terror. Foam flecked her lips. She seemed too paralysed
+with fear to move. Only the youth and I fought now. The others all had
+fallen, and I was like to have gone down too from a nasty long-sword
+cut had not a hand reached out from behind my adversary and clutched
+his elbow as the blade was falling upon me. The youth sprang to my side
+and ran his sword through the fellow before he could recover to deliver
+another blow.
+
+I should have died even then but for that as my sword was tight wedged
+in the breastbone of a Dator of the First Born. As the fellow went down
+I snatched his sword from him and over his prostrate body looked into
+the eyes of the one whose quick hand had saved me from the first cut of
+his sword—it was Phaidor, daughter of Matai Shang.
+
+“Fly, my Prince!” she cried. “It is useless to fight them longer. All
+within the arena are dead. All who charged the throne are dead but you
+and this youth. Only among the seats are there left any of your
+fighting-men, and they and the slave women are fast being cut down.
+Listen! You can scarce hear the battle-cry of the women now for nearly
+all are dead. For each one of you there are ten thousand blacks within
+the domains of the First Born. Break for the open and the sea of Korus.
+With your mighty sword arm you may yet win to the Golden Cliffs and the
+templed gardens of the Holy Therns. There tell your story to Matai
+Shang, my father. He will keep you, and together you may find a way to
+rescue me. Fly while there is yet a bare chance for flight.”
+
+But that was not my mission, nor could I see much to be preferred in
+the cruel hospitality of the Holy Therns to that of the First Born.
+
+“Down with Issus!” I shouted, and together the boy and I took up the
+fight once more. Two blacks went down with our swords in their vitals,
+and we stood face to face with Issus. As my sword went up to end her
+horrid career her paralysis left her, and with an ear-piercing shriek
+she turned to flee. Directly behind her a black gulf suddenly yawned in
+the flooring of the dais. She sprang for the opening with the youth and
+I close at her heels. Her scattered guard rallied at her cry and rushed
+for us. A blow fell upon the head of the youth. He staggered and would
+have fallen, but I caught him in my left arm and turned to face an
+infuriated mob of religious fanatics crazed by the affront I had put
+upon their goddess, just as Issus disappeared into the black depths
+beneath me.
+
+## CHAPTER XII DOOMED TO DIE
+
+For an instant I stood there before they fell upon me, but the first
+rush of them forced me back a step or two. My foot felt for the floor
+but found only empty space. I had backed into the pit which had
+received Issus. For a second I toppled there upon the brink. Then I too
+with the boy still tightly clutched in my arms pitched backward into
+the black abyss.
+
+We struck a polished chute, the opening above us closed as magically as
+it had opened, and we shot down, unharmed, into a dimly lighted
+apartment far below the arena.
+
+As I rose to my feet the first thing I saw was the malignant
+countenance of Issus glaring at me through the heavy bars of a grated
+door at one side of the chamber.
+
+“Rash mortal!” she shrilled. “You shall pay the awful penalty for your
+blasphemy in this secret cell. Here you shall lie alone and in darkness
+with the carcass of your accomplice festering in its rottenness by your
+side, until crazed by loneliness and hunger you feed upon the crawling
+maggots that were once a man.”
+
+That was all. In another instant she was gone, and the dim light which
+had filled the cell faded into Cimmerian blackness.
+
+“Pleasant old lady,” said a voice at my side.
+
+“Who speaks?” I asked.
+
+“’Tis I, your companion, who has had the honour this day of fighting
+shoulder to shoulder with the greatest warrior that ever wore metal
+upon Barsoom.”
+
+“I thank God that you are not dead,” I said. “I feared for that nasty
+cut upon your head.”
+
+“It but stunned me,” he replied. “A mere scratch.”
+
+“Maybe it were as well had it been final,” I said. “We seem to be in a
+pretty fix here with a splendid chance of dying of starvation and
+thirst.”
+
+“Where are we?”
+
+“Beneath the arena,” I replied. “We tumbled down the shaft that
+swallowed Issus as she was almost at our mercy.”
+
+He laughed a low laugh of pleasure and relief, and then reaching out
+through the inky blackness he sought my shoulder and pulled my ear
+close to his mouth.
+
+“Nothing could be better,” he whispered. “There are secrets within the
+secrets of Issus of which Issus herself does not dream.”
+
+“What do you mean?”
+
+“I laboured with the other slaves a year since in the remodelling of
+these subterranean galleries, and at that time we found below these an
+ancient system of corridors and chambers that had been sealed up for
+ages. The blacks in charge of the work explored them, taking several of
+us along to do whatever work there might be occasion for. I know the
+entire system perfectly.
+
+“There are miles of corridors honeycombing the ground beneath the
+gardens and the temple itself, and there is one passage that leads down
+to and connects with the lower regions that open on the water shaft
+that gives passage to Omean.
+
+“If we can reach the submarine undetected we may yet make the sea in
+which there are many islands where the blacks never go. There we may
+live for a time, and who knows what may transpire to aid us to escape?”
+
+He had spoken all in a low whisper, evidently fearing spying ears even
+here, and so I answered him in the same subdued tone.
+
+“Lead back to Shador, my friend,” I whispered. “Xodar, the black, is
+there. We were to attempt our escape together, so I cannot desert him.”
+
+“No,” said the boy, “one cannot desert a friend. It were better to be
+recaptured ourselves than that.”
+
+Then he commenced groping his way about the floor of the dark chamber
+searching for the trap that led to the corridors beneath. At length he
+summoned me by a low, “S-s-t,” and I crept toward the sound of his
+voice to find him kneeling on the brink of an opening in the floor.
+
+“There is a drop here of about ten feet,” he whispered. “Hang by your
+hands and you will alight safely on a level floor of soft sand.”
+
+Very quietly I lowered myself from the inky cell above into the inky
+pit below. So utterly dark was it that we could not see our hands at an
+inch from our noses. Never, I think, have I known such complete absence
+of light as existed in the pits of Issus.
+
+For an instant I hung in mid air. There is a strange sensation
+connected with an experience of that nature which is quite difficult to
+describe. When the feet tread empty air and the distance below is
+shrouded in darkness there is a feeling akin to panic at the thought of
+releasing the hold and taking the plunge into unknown depths.
+
+Although the boy had told me that it was but ten feet to the floor
+below I experienced the same thrills as though I were hanging above a
+bottomless pit. Then I released my hold and dropped—four feet to a soft
+cushion of sand.
+
+The boy followed me.
+
+“Raise me to your shoulders,” he said, “and I will replace the trap.”
+
+This done he took me by the hand, leading me very slowly, with much
+feeling about and frequent halts to assure himself that he did not
+stray into wrong passageways.
+
+Presently we commenced the descent of a very steep incline.
+
+“It will not be long,” he said, “before we shall have light. At the
+lower levels we meet the same stratum of phosphorescent rock that
+illuminates Omean.”
+
+Never shall I forget that trip through the pits of Issus. While it was
+devoid of important incidents yet it was filled for me with a strange
+charm of excitement and adventure which I think must have hinged
+principally on the unguessable antiquity of these long-forgotten
+corridors. The things which the Stygian darkness hid from my objective
+eye could not have been half so wonderful as the pictures which my
+imagination wrought as it conjured to life again the ancient peoples of
+this dying world and set them once more to the labours, the intrigues,
+the mysteries and the cruelties which they had practised to make their
+last stand against the swarming hordes of the dead sea bottoms that had
+driven them step by step to the uttermost pinnacle of the world where
+they were now intrenched behind an impenetrable barrier of
+superstition.
+
+In addition to the green men there had been three principal races upon
+Barsoom. The blacks, the whites, and a race of yellow men. As the
+waters of the planet dried and the seas receded, all other resources
+dwindled until life upon the planet became a constant battle for
+survival.
+
+The various races had made war upon one another for ages, and the three
+higher types had easily bested the green savages of the water places of
+the world, but now that the receding seas necessitated constant
+abandonment of their fortified cities and forced upon them a more or
+less nomadic life in which they became separated into smaller
+communities they soon fell prey to the fierce hordes of green men. The
+result was a partial amalgamation of the blacks, whites and yellows,
+the result of which is shown in the present splendid race of red men.
+
+I had always supposed that all traces of the original races had
+disappeared from the face of Mars, yet within the past four days I had
+found both whites and blacks in great multitudes. Could it be possible
+that in some far-off corner of the planet there still existed a remnant
+of the ancient race of yellow men?
+
+My reveries were broken in upon by a low exclamation from the boy.
+
+“At last, the lighted way,” he cried, and looking up I beheld at a long
+distance before us a dim radiance.
+
+As we advanced the light increased until presently we emerged into
+well-lighted passageways. From then on our progress was rapid until we
+came suddenly to the end of a corridor that let directly upon the ledge
+surrounding the pool of the submarine.
+
+The craft lay at her moorings with uncovered hatch. Raising his finger
+to his lips and then tapping his sword in a significant manner, the
+youth crept noiselessly toward the vessel. I was close at his heels.
+
+Silently we dropped to the deserted deck, and on hands and knees
+crawled toward the hatchway. A stealthy glance below revealed no guard
+in sight, and so with the quickness and the soundlessness of cats we
+dropped together into the main cabin of the submarine. Even here was no
+sign of life. Quickly we covered and secured the hatch.
+
+Then the boy stepped into the pilot house, touched a button and the
+boat sank amid swirling waters toward the bottom of the shaft. Even
+then there was no scurrying of feet as we had expected, and while the
+boy remained to direct the boat I slid from cabin to cabin in futile
+search for some member of the crew. The craft was entirely deserted.
+Such good fortune seemed almost unbelievable.
+
+When I returned to the pilot house to report the good news to my
+companion he handed me a paper.
+
+“This may explain the absence of the crew,” he said.
+
+It was a radio-aerial message to the commander of the submarine:
+
+“The slaves have risen. Come with what men you have and those that you
+can gather on the way. Too late to get aid from Omean. They are
+massacring all within the amphitheatre. Issus is threatened. Haste.
+
+“ZITHAD”
+
+“Zithad is Dator of the guards of Issus,” explained the youth. “We gave
+them a bad scare—one that they will not soon forget.”
+
+“Let us hope that it is but the beginning of the end of Issus,” I said.
+
+“Only our first ancestor knows,” he replied.
+
+We reached the submarine pool in Omean without incident. Here we
+debated the wisdom of sinking the craft before leaving her, but finally
+decided that it would add nothing to our chances for escape. There were
+plenty of blacks on Omean to thwart us were we apprehended; however
+many more might come from the temples and gardens of Issus would not in
+any way decrease our chances.
+
+We were now in a quandary as to how to pass the guards who patrolled
+the island about the pool. At last I hit upon a plan.
+
+“What is the name or title of the officer in charge of these guards?” I
+asked the boy.
+
+“A fellow named Torith was on duty when we entered this morning,” he
+replied.
+
+“Good. And what is the name of the commander of the submarine?”
+
+“Yersted.”
+
+I found a dispatch blank in the cabin and wrote the following order:
+
+“Dator Torith: Return these two slaves at once to Shador.
+
+“YERSTED”
+
+“That will be the simpler way to return,” I said, smiling, as I handed
+the forged order to the boy. “Come, we shall see now how well it
+works.”
+
+“But our swords!” he exclaimed. “What shall we say to explain them?”
+
+“Since we cannot explain them we shall have to leave them behind us,” I
+replied.
+
+“Is it not the extreme of rashness to thus put ourselves again,
+unarmed, in the power of the First Born?”
+
+“It is the only way,” I answered. “You may trust me to find a way out
+of the prison of Shador, and I think, once out, that we shall find no
+great difficulty in arming ourselves once more in a country which
+abounds so plentifully in armed men.”
+
+“As you say,” he replied with a smile and shrug. “I could not follow
+another leader who inspired greater confidence than you. Come, let us
+put your ruse to the test.”
+
+Boldly we emerged from the hatchway of the craft, leaving our swords
+behind us, and strode to the main exit which led to the sentry’s post
+and the office of the Dator of the guard.
+
+At sight of us the members of the guard sprang forward in surprise, and
+with levelled rifles halted us. I held out the message to one of them.
+He took it and seeing to whom it was addressed turned and handed it to
+Torith who was emerging from his office to learn the cause of the
+commotion.
+
+The black read the order, and for a moment eyed us with evident
+suspicion.
+
+“Where is Dator Yersted?” he asked, and my heart sank within me, as I
+cursed myself for a stupid fool in not having sunk the submarine to
+make good the lie that I must tell.
+
+“His orders were to return immediately to the temple landing,” I
+replied.
+
+Torith took a half step toward the entrance to the pool as though to
+corroborate my story. For that instant everything hung in the balance,
+for had he done so and found the empty submarine still lying at her
+wharf the whole weak fabric of my concoction would have tumbled about
+our heads; but evidently he decided the message must be genuine, nor
+indeed was there any good reason to doubt it since it would scarce have
+seemed credible to him that two slaves would voluntarily have given
+themselves into custody in any such manner as this. It was the very
+boldness of the plan which rendered it successful.
+
+“Were you connected with the rising of the slaves?” asked Torith. “We
+have just had meagre reports of some such event.”
+
+“All were involved,” I replied. “But it amounted to little. The guards
+quickly overcame and killed the majority of us.”
+
+He seemed satisfied with this reply. “Take them to Shador,” he ordered,
+turning to one of his subordinates. We entered a small boat lying
+beside the island, and in a few minutes were disembarking upon Shador.
+Here we were returned to our respective cells; I with Xodar, the boy by
+himself; and behind locked doors we were again prisoners of the First
+Born.
+
+## CHAPTER XIII A BREAK FOR LIBERTY
+
+Xodar listened in incredulous astonishment to my narration of the
+events which had transpired within the arena at the rites of Issus. He
+could scarce conceive, even though he had already professed his doubt
+as to the deity of Issus, that one could threaten her with sword in
+hand and not be blasted into a thousand fragments by the mere fury of
+her divine wrath.
+
+“It is the final proof,” he said, at last. “No more is needed to
+completely shatter the last remnant of my superstitious belief in the
+divinity of Issus. She is only a wicked old woman, wielding a mighty
+power for evil through machinations that have kept her own people and
+all Barsoom in religious ignorance for ages.”
+
+“She is still all-powerful here, however,” I replied. “So it behooves
+us to leave at the first moment that appears at all propitious.”
+
+“I hope that you may find a propitious moment,” he said, with a laugh,
+“for it is certain that in all my life I have never seen one in which a
+prisoner of the First Born might escape.”
+
+“To-night will do as well as any,” I replied.
+
+“It will soon be night,” said Xodar. “How may I aid in the adventure?”
+
+“Can you swim?” I asked him.
+
+“No slimy silian that haunts the depths of Korus is more at home in
+water than is Xodar,” he replied.
+
+“Good. The red one in all probability cannot swim,” I said, “since
+there is scarce enough water in all their domains to float the tiniest
+craft. One of us therefore will have to support him through the sea to
+the craft we select. I had hoped that we might make the entire distance
+below the surface, but I fear that the red youth could not thus perform
+the trip. Even the bravest of the brave among them are terrorized at
+the mere thought of deep water, for it has been ages since their
+forebears saw a lake, a river or a sea.”
+
+“The red one is to accompany us?” asked Xodar.
+
+“Yes.”
+
+“It is well. Three swords are better than two. Especially when the
+third is as mighty as this fellow’s. I have seen him battle in the
+arena at the rites of Issus many times. Never, until I saw you fight,
+had I seen one who seemed unconquerable even in the face of great odds.
+One might think you two master and pupil, or father and son. Come to
+recall his face there is a resemblance between you. It is very marked
+when you fight—there is the same grim smile, the same maddening
+contempt for your adversary apparent in every movement of your bodies
+and in every changing expression of your faces.”
+
+“Be that as it may, Xodar, he is a great fighter. I think that we will
+make a trio difficult to overcome, and if my friend Tars Tarkas, Jeddak
+of Thark, were but one of us we could fight our way from one end of
+Barsoom to the other even though the whole world were pitted against
+us.”
+
+“It will be,” said Xodar, “when they find from whence you have come.
+That is but one of the superstitions which Issus has foisted upon a
+credulous humanity. She works through the Holy Therns who are as
+ignorant of her real self as are the Barsoomians of the outer world.
+Her decrees are borne to the therns written in blood upon a strange
+parchment. The poor deluded fools think that they are receiving the
+revelations of a goddess through some supernatural agency, since they
+find these messages upon their guarded altars to which none could have
+access without detection. I myself have borne these messages for Issus
+for many years. There is a long tunnel from the temple of Issus to the
+principal temple of Matai Shang. It was dug ages ago by the slaves of
+the First Born in such utter secrecy that no thern ever guessed its
+existence.
+
+“The therns for their part have temples dotted about the entire
+civilized world. Here priests whom the people never see communicate the
+doctrine of the Mysterious River Iss, the Valley Dor, and the Lost Sea
+of Korus to persuade the poor deluded creatures to take the voluntary
+pilgrimage that swells the wealth of the Holy Therns and adds to the
+numbers of their slaves.
+
+“Thus the therns are used as the principal means for collecting the
+wealth and labour that the First Born wrest from them as they need it.
+Occasionally the First Born themselves make raids upon the outer world.
+It is then that they capture many females of the royal houses of the
+red men, and take the newest in battleships and the trained artisans
+who build them, that they may copy what they cannot create.
+
+“We are a non-productive race, priding ourselves upon our
+non-productiveness. It is criminal for a First Born to labour or
+invent. That is the work of the lower orders, who live merely that the
+First Born may enjoy long lives of luxury and idleness. With us
+fighting is all that counts; were it not for that there would be more
+of the First Born than all the creatures of Barsoom could support, for
+in so far as I know none of us ever dies a natural death. Our females
+would live for ever but for the fact that we tire of them and remove
+them to make place for others. Issus alone of all is protected against
+death. She has lived for countless ages.”
+
+“Would not the other Barsoomians live for ever but for the doctrine of
+the voluntary pilgrimage which drags them to the bosom of Iss at or
+before their thousandth year?” I asked him.
+
+“I feel now that there is no doubt but that they are precisely the same
+species of creature as the First Born, and I hope that I shall live to
+fight for them in atonement of the sins I have committed against them
+through the ignorance born of generations of false teaching.”
+
+As he ceased speaking a weird call rang out across the waters of Omean.
+I had heard it at the same time the previous evening and knew that it
+marked the ending of the day, when the men of Omean spread their silks
+upon the deck of battleship and cruiser and fall into the dreamless
+sleep of Mars.
+
+Our guard entered to inspect us for the last time before the new day
+broke upon the world above. His duty was soon performed and the heavy
+door of our prison closed behind him—we were alone for the night.
+
+I gave him time to return to his quarters, as Xodar said he probably
+would do, then I sprang to the grated window and surveyed the nearby
+waters. At a little distance from the island, a quarter of a mile
+perhaps, lay a monster battleship, while between her and the shore were
+a number of smaller cruisers and one-man scouts. Upon the battleship
+alone was there a watch. I could see him plainly in the upper works of
+the ship, and as I watched I saw him spread his sleeping silks upon the
+tiny platform in which he was stationed. Soon he threw himself at full
+length upon his couch. The discipline on Omean was lax indeed. But it
+is not to be wondered at since no enemy guessed the existence upon
+Barsoom of such a fleet, or even of the First Born, or the Sea of
+Omean. Why indeed should they maintain a watch?
+
+Presently I dropped to the floor again and talked with Xodar,
+describing the various craft I had seen.
+
+“There is one there,” he said, “my personal property, built to carry
+five men, that is the swiftest of the swift. If we can board her we can
+at least make a memorable run for liberty,” and then he went on to
+describe to me the equipment of the boat; her engines, and all that
+went to make her the flier that she was.
+
+In his explanation I recognized a trick of gearing that Kantos Kan had
+taught me that time we sailed under false names in the navy of Zodanga
+beneath Sab Than, the Prince. And I knew then that the First Born had
+stolen it from the ships of Helium, for only they are thus geared. And
+I knew too that Xodar spoke the truth when he lauded the speed of his
+little craft, for nothing that cleaves the thin air of Mars can
+approximate the speed of the ships of Helium.
+
+We decided to wait for an hour at least until all the stragglers had
+sought their silks. In the meantime I was to fetch the red youth to our
+cell so that we would be in readiness to make our rash break for
+freedom together.
+
+I sprang to the top of our partition wall and pulled myself up on to
+it. There I found a flat surface about a foot in width and along this I
+walked until I came to the cell in which I saw the boy sitting upon his
+bench. He had been leaning back against the wall looking up at the
+glowing dome above Omean, and when he spied me balancing upon the
+partition wall above him his eyes opened wide in astonishment. Then a
+wide grin of appreciative understanding spread across his countenance.
+
+As I stooped to drop to the floor beside him he motioned me to wait,
+and coming close below me whispered: “Catch my hand; I can almost leap
+to the top of that wall myself. I have tried it many times, and each
+day I come a little closer. Some day I should have been able to make
+it.”
+
+I lay upon my belly across the wall and reached my hand far down toward
+him. With a little run from the centre of the cell he sprang up until I
+grasped his outstretched hand, and thus I pulled him to the wall’s top
+beside me.
+
+“You are the first jumper I ever saw among the red men of Barsoom,” I
+said.
+
+He smiled. “It is not strange. I will tell you why when we have more
+time.”
+
+Together we returned to the cell in which Xodar sat; descending to talk
+with him until the hour had passed.
+
+There we made our plans for the immediate future, binding ourselves by
+a solemn oath to fight to the death for one another against whatsoever
+enemies should confront us, for we knew that even should we succeed in
+escaping the First Born we might still have a whole world against
+us—the power of religious superstition is mighty.
+
+It was agreed that I should navigate the craft after we had reached
+her, and that if we made the outer world in safety we should attempt to
+reach Helium without a stop.
+
+“Why Helium?” asked the red youth.
+
+“I am a prince of Helium,” I replied.
+
+He gave me a peculiar look, but said nothing further on the subject. I
+wondered at the time what the significance of his expression might be,
+but in the press of other matters it soon left my mind, nor did I have
+occasion to think of it again until later.
+
+“Come,” I said at length, “now is as good a time as any. Let us go.”
+
+Another moment found me at the top of the partition wall again with the
+boy beside me. Unbuckling my harness I snapped it together with a
+single long strap which I lowered to the waiting Xodar below. He
+grasped the end and was soon sitting beside us.
+
+“How simple,” he laughed.
+
+“The balance should be even simpler,” I replied. Then I raised myself
+to the top of the outer wall of the prison, just so that I could peer
+over and locate the passing sentry. For a matter of five minutes I
+waited and then he came in sight on his slow and snail-like beat about
+the structure.
+
+I watched him until he had made the turn at the end of the building
+which carried him out of sight of the side of the prison that was to
+witness our dash for freedom. The moment his form disappeared I grasped
+Xodar and drew him to the top of the wall. Placing one end of my
+harness strap in his hands I lowered him quickly to the ground below.
+Then the boy grasped the strap and slid down to Xodar’s side.
+
+In accordance with our arrangement they did not wait for me, but walked
+slowly toward the water, a matter of a hundred yards, directly past the
+guard-house filled with sleeping soldiers.
+
+They had taken scarce a dozen steps when I too dropped to the ground
+and followed them leisurely toward the shore. As I passed the
+guard-house the thought of all the good blades lying there gave me
+pause, for if ever men were to have need of swords it was my companions
+and I on the perilous trip upon which we were about to embark.
+
+I glanced toward Xodar and the youth and saw that they had slipped over
+the edge of the dock into the water. In accordance with our plan they
+were to remain there clinging to the metal rings which studded the
+concrete-like substance of the dock at the water’s level, with only
+their mouths and noses above the surface of the sea, until I should
+join them.
+
+The lure of the swords within the guard-house was strong upon me, and I
+hesitated a moment, half inclined to risk the attempt to take the few
+we needed. That he who hesitates is lost proved itself a true aphorism
+in this instance, for another moment saw me creeping stealthily toward
+the door of the guard-house.
+
+Gently I pressed it open a crack; enough to discover a dozen blacks
+stretched upon their silks in profound slumber. At the far side of the
+room a rack held the swords and firearms of the men. Warily I pushed
+the door a trifle wider to admit my body. A hinge gave out a resentful
+groan. One of the men stirred, and my heart stood still. I cursed
+myself for a fool to have thus jeopardized our chances for escape; but
+there was nothing for it now but to see the adventure through.
+
+With a spring as swift and as noiseless as a tiger’s I lit beside the
+guardsman who had moved. My hands hovered about his throat awaiting the
+moment that his eyes should open. For what seemed an eternity to my
+overwrought nerves I remained poised thus. Then the fellow turned again
+upon his side and resumed the even respiration of deep slumber.
+
+Carefully I picked my way between and over the soldiers until I had
+gained the rack at the far side of the room. Here I turned to survey
+the sleeping men. All were quiet. Their regular breathing rose and fell
+in a soothing rhythm that seemed to me the sweetest music I ever had
+heard.
+
+Gingerly I drew a long-sword from the rack. The scraping of the
+scabbard against its holder as I withdrew it sounded like the filing of
+cast iron with a great rasp, and I looked to see the room immediately
+filled with alarmed and attacking guardsmen. But none stirred.
+
+The second sword I withdrew noiselessly, but the third clanked in its
+scabbard with a frightful din. I knew that it must awaken some of the
+men at least, and was on the point of forestalling their attack by a
+rapid charge for the doorway, when again, to my intense surprise, not a
+black moved. Either they were wondrous heavy sleepers or else the
+noises that I made were really much less than they seemed to me.
+
+I was about to leave the rack when my attention was attracted by the
+revolvers. I knew that I could not carry more than one away with me,
+for I was already too heavily laden to move quietly with any degree of
+safety or speed. As I took one of them from its pin my eye fell for the
+first time on an open window beside the rack. Ah, here was a splendid
+means of escape, for it let directly upon the dock, not twenty feet
+from the water’s edge.
+
+And as I congratulated myself, I heard the door opposite me open, and
+there looking me full in the face stood the officer of the guard. He
+evidently took in the situation at a glance and appreciated the gravity
+of it as quickly as I, for our revolvers came up simultaneously and the
+sounds of the two reports were as one as we touched the buttons on the
+grips that exploded the cartridges.
+
+I felt the wind of his bullet as it whizzed past my ear, and at the
+same instant I saw him crumple to the ground. Where I hit him I do not
+know, nor if I killed him, for scarce had he started to collapse when I
+was through the window at my rear. In another second the waters of
+Omean closed above my head, and the three of us were making for the
+little flier a hundred yards away.
+
+Xodar was burdened with the boy, and I with the three long-swords. The
+revolver I had dropped, so that while we were both strong swimmers it
+seemed to me that we moved at a snail’s pace through the water. I was
+swimming entirely beneath the surface, but Xodar was compelled to rise
+often to let the youth breathe, so it was a wonder that we were not
+discovered long before we were.
+
+In fact we reached the boat’s side and were all aboard before the watch
+upon the battleship, aroused by the shots, detected us. Then an alarm
+gun bellowed from a ship’s bow, its deep boom reverberating in
+deafening tones beneath the rocky dome of Omean.
+
+Instantly the sleeping thousands were awake. The decks of a thousand
+monster craft teemed with fighting-men, for an alarm on Omean was a
+thing of rare occurrence.
+
+We cast away before the sound of the first gun had died, and another
+second saw us rising swiftly from the surface of the sea. I lay at full
+length along the deck with the levers and buttons of control before me.
+Xodar and the boy were stretched directly behind me, prone also that we
+might offer as little resistance to the air as possible.
+
+“Rise high,” whispered Xodar. “They dare not fire their heavy guns
+toward the dome—the fragments of the shells would drop back among their
+own craft. If we are high enough our keel plates will protect us from
+rifle fire.”
+
+I did as he bade. Below us we could see the men leaping into the water
+by hundreds, and striking out for the small cruisers and one-man fliers
+that lay moored about the big ships. The larger craft were getting
+under way, following us rapidly, but not rising from the water.
+
+“A little to your right,” cried Xodar, for there are no points of
+compass upon Omean where every direction is due north.
+
+The pandemonium that had broken out below us was deafening. Rifles
+cracked, officers shouted orders, men yelled directions to one another
+from the water and from the decks of myriad boats, while through all
+ran the purr of countless propellers cutting water and air.
+
+I had not dared pull my speed lever to the highest for fear of
+overrunning the mouth of the shaft that passed from Omean’s dome to the
+world above, but even so we were hitting a clip that I doubt has ever
+been equalled on the windless sea.
+
+The smaller fliers were commencing to rise toward us when Xodar
+shouted: “The shaft! The shaft! Dead ahead,” and I saw the opening,
+black and yawning in the glowing dome of this underworld.
+
+A ten-man cruiser was rising directly in front to cut off our escape.
+It was the only vessel that stood in our way, but at the rate that it
+was traveling it would come between us and the shaft in plenty of time
+to thwart our plans.
+
+It was rising at an angle of about forty-five degrees dead ahead of us,
+with the evident intention of combing us with grappling hooks from
+above as it skimmed low over our deck.
+
+There was but one forlorn hope for us, and I took it. It was useless to
+try to pass over her, for that would have allowed her to force us
+against the rocky dome above, and we were already too near that as it
+was. To have attempted to dive below her would have put us entirely at
+her mercy, and precisely where she wanted us. On either side a hundred
+other menacing craft were hastening toward us. The alternative was
+filled with risk—in fact it was all risk, with but a slender chance of
+success.
+
+As we neared the cruiser I rose as though to pass above her, so that
+she would do just what she did do, rise at a steeper angle to force me
+still higher. Then as we were almost upon her I yelled to my companions
+to hold tight, and throwing the little vessel into her highest speed I
+deflected her bows at the same instant until we were running
+horizontally and at terrific velocity straight for the cruiser’s keel.
+
+Her commander may have seen my intentions then, but it was too late.
+Almost at the instant of impact I turned my bows upward, and then with
+a shattering jolt we were in collision. What I had hoped for happened.
+The cruiser, already tilted at a perilous angle, was carried completely
+over backward by the impact of my smaller vessel. Her crew fell
+twisting and screaming through the air to the water far below, while
+the cruiser, her propellers still madly churning, dived swiftly
+headforemost after them to the bottom of the Sea of Omean.
+
+The collision crushed our steel bows, and notwithstanding every effort
+on our part came near to hurling us from the deck. As it was we landed
+in a wildly clutching heap at the very extremity of the flier, where
+Xodar and I succeeded in grasping the hand-rail, but the boy would have
+plunged overboard had I not fortunately grasped his ankle as he was
+already partially over.
+
+Unguided, our vessel careened wildly in its mad flight, rising ever
+nearer the rocks above. It took but an instant, however, for me to
+regain the levers, and with the roof barely fifty feet above I turned
+her nose once more into the horizontal plane and headed her again for
+the black mouth of the shaft.
+
+The collision had retarded our progress and now a hundred swift scouts
+were close upon us. Xodar had told me that ascending the shaft by
+virtue of our repulsive rays alone would give our enemies their best
+chance to overtake us, since our propellers would be idle and in rising
+we would be outclassed by many of our pursuers. The swifter craft are
+seldom equipped with large buoyancy tanks, since the added bulk of them
+tends to reduce a vessel’s speed.
+
+As many boats were now quite close to us it was inevitable that we
+would be quickly overhauled in the shaft, and captured or killed in
+short order.
+
+To me there always seems a way to gain the opposite side of an
+obstacle. If one cannot pass over it, or below it, or around it, why
+then there is but a single alternative left, and that is to pass
+through it. I could not get around the fact that many of these other
+boats could rise faster than ours by the fact of their greater
+buoyancy, but I was none the less determined to reach the outer world
+far in advance of them or die a death of my own choosing in event of
+failure.
+
+“Reverse?” screamed Xodar, behind me. “For the love of your first
+ancestor, reverse. We are at the shaft.”
+
+“Hold tight!” I screamed in reply. “Grasp the boy and hold tight—we are
+going straight up the shaft.”
+
+The words were scarce out of my mouth as we swept beneath the
+pitch-black opening. I threw the bow hard up, dragged the speed lever
+to its last notch, and clutching a stanchion with one hand and the
+steering-wheel with the other hung on like grim death and consigned my
+soul to its author.
+
+I heard a little exclamation of surprise from Xodar, followed by a grim
+laugh. The boy laughed too and said something which I could not catch
+for the whistling of the wind of our awful speed.
+
+I looked above my head, hoping to catch the gleam of stars by which I
+could direct our course and hold the hurtling thing that bore us true
+to the centre of the shaft. To have touched the side at the speed we
+were making would doubtless have resulted in instant death for us all.
+But not a star showed above—only utter and impenetrable darkness.
+
+Then I glanced below me, and there I saw a rapidly diminishing circle
+of light—the mouth of the opening above the phosphorescent radiance of
+Omean. By this I steered, endeavouring to keep the circle of light
+below me ever perfect. At best it was but a slender cord that held us
+from destruction, and I think that I steered that night more by
+intuition and blind faith than by skill or reason.
+
+We were not long in the shaft, and possibly the very fact of our
+enormous speed saved us, for evidently we started in the right
+direction and so quickly were we out again that we had no time to alter
+our course. Omean lies perhaps two miles below the surface crust of
+Mars. Our speed must have approximated two hundred miles an hour, for
+Martian fliers are swift, so that at most we were in the shaft not over
+forty seconds.
+
+We must have been out of it for some seconds before I realised that we
+had accomplished the impossible. Black darkness enshrouded all about
+us. There were neither moons nor stars. Never before had I seen such a
+thing upon Mars, and for the moment I was nonplussed. Then the
+explanation came to me. It was summer at the south pole. The ice cap
+was melting and those meteoric phenomena, clouds, unknown upon the
+greater part of Barsoom, were shutting out the light of heaven from
+this portion of the planet.
+
+Fortunate indeed it was for us, nor did it take me long to grasp the
+opportunity for escape which this happy condition offered us. Keeping
+the boat’s nose at a stiff angle I raced her for the impenetrable
+curtain which Nature had hung above this dying world to shut us out
+from the sight of our pursuing enemies.
+
+We plunged through the cold damp fog without diminishing our speed, and
+in a moment emerged into the glorious light of the two moons and the
+million stars. I dropped into a horizontal course and headed due north.
+Our enemies were a good half-hour behind us with no conception of our
+direction. We had performed the miraculous and come through a thousand
+dangers unscathed—we had escaped from the land of the First Born. No
+other prisoners in all the ages of Barsoom had done this thing, and now
+as I looked back upon it it did not seem to have been so difficult
+after all.
+
+I said as much to Xodar, over my shoulder.
+
+“It is very wonderful, nevertheless,” he replied. “No one else could
+have accomplished it but John Carter.”
+
+At the sound of that name the boy jumped to his feet.
+
+“John Carter!” he cried. “John Carter! Why, man, John Carter, Prince of
+Helium, has been dead for years. I am his son.”
+
+## CHAPTER XIV THE EYES IN THE DARK
+
+My son! I could not believe my ears. Slowly I rose and faced the
+handsome youth. Now that I looked at him closely I commenced to see why
+his face and personality had attracted me so strongly. There was much
+of his mother’s incomparable beauty in his clear-cut features, but it
+was strongly masculine beauty, and his grey eyes and the expression of
+them were mine.
+
+The boy stood facing me, half hope and half uncertainty in his look.
+
+“Tell me of your mother,” I said. “Tell me all you can of the years
+that I have been robbed by a relentless fate of her dear
+companionship.”
+
+With a cry of pleasure he sprang toward me and threw his arms about my
+neck, and for a brief moment as I held my boy close to me the tears
+welled to my eyes and I was like to have choked after the manner of
+some maudlin fool—but I do not regret it, nor am I ashamed. A long life
+has taught me that a man may seem weak where women and children are
+concerned and yet be anything but a weakling in the sterner avenues of
+life.
+
+“Your stature, your manner, the terrible ferocity of your
+swordsmanship,” said the boy, “are as my mother has described them to
+me a thousand times—but even with such evidence I could scarce credit
+the truth of what seemed so improbable to me, however much I desired it
+to be true. Do you know what thing it was that convinced me more than
+all the others?”
+
+“What, my boy?” I asked.
+
+“Your first words to me—they were of my mother. None else but the man
+who loved her as she has told me my father did would have thought first
+of her.”
+
+“For long years, my son, I can scarce recall a moment that the radiant
+vision of your mother’s face has not been ever before me. Tell me of
+her.”
+
+“Those who have known her longest say that she has not changed, unless
+it be to grow more beautiful—were that possible. Only, when she thinks
+I am not about to see her, her face grows very sad, and, oh, so
+wistful. She thinks ever of you, my father, and all Helium mourns with
+her and for her. Her grandfather’s people love her. They loved you
+also, and fairly worship your memory as the saviour of Barsoom.
+
+“Each year that brings its anniversary of the day that saw you racing
+across a near dead world to unlock the secret of that awful portal
+behind which lay the mighty power of life for countless millions a
+great festival is held in your honour; but there are tears mingled with
+the thanksgiving—tears of real regret that the author of the happiness
+is not with them to share the joy of living he died to give them. Upon
+all Barsoom there is no greater name than John Carter.”
+
+“And by what name has your mother called you, my boy?” I asked.
+
+“The people of Helium asked that I be named with my father’s name, but
+my mother said no, that you and she had chosen a name for me together,
+and that your wish must be honoured before all others, so the name that
+she called me is the one that you desired, a combination of hers and
+yours—Carthoris.”
+
+Xodar had been at the wheel as I talked with my son, and now he called
+me.
+
+“She is dropping badly by the head, John Carter,” he said. “So long as
+we were rising at a stiff angle it was not noticeable, but now that I
+am trying to keep a horizontal course it is different. The wound in her
+bow has opened one of her forward ray tanks.”
+
+It was true, and after I had examined the damage I found it a much
+graver matter than I had anticipated. Not only was the forced angle at
+which we were compelled to maintain the bow in order to keep a
+horizontal course greatly impeding our speed, but at the rate that we
+were losing our repulsive rays from the forward tanks it was but a
+question of an hour or more when we would be floating stern up and
+helpless.
+
+We had slightly reduced our speed with the dawning of a sense of
+security, but now I took the helm once more and pulled the noble little
+engine wide open, so that again we raced north at terrific velocity. In
+the meantime Carthoris and Xodar with tools in hand were puttering with
+the great rent in the bow in a hopeless endeavour to stem the tide of
+escaping rays.
+
+It was still dark when we passed the northern boundary of the ice cap
+and the area of clouds. Below us lay a typical Martian landscape.
+Rolling ochre sea bottom of long dead seas, low surrounding hills, with
+here and there the grim and silent cities of the dead past; great piles
+of mighty architecture tenanted only by age-old memories of a once
+powerful race, and by the great white apes of Barsoom.
+
+It was becoming more and more difficult to maintain our little vessel
+in a horizontal position. Lower and lower sagged the bow until it
+became necessary to stop the engine to prevent our flight terminating
+in a swift dive to the ground.
+
+As the sun rose and the light of a new day swept away the darkness of
+night our craft gave a final spasmodic plunge, turned half upon her
+side, and then with deck tilting at a sickening angle swung in a slow
+circle, her bow dropping further below her stern each moment.
+
+To hand-rail and stanchion we clung, and finally as we saw the end
+approaching, snapped the buckles of our harness to the rings at her
+sides. In another moment the deck reared at an angle of ninety degrees
+and we hung in our leather with feet dangling a thousand yards above
+the ground.
+
+I was swinging quite close to the controlling devices, so I reached out
+to the lever that directed the rays of repulsion. The boat responded to
+the touch, and very gently we began to sink toward the ground.
+
+It was fully half an hour before we touched. Directly north of us rose
+a rather lofty range of hills, toward which we decided to make our way,
+since they afforded greater opportunity for concealment from the
+pursuers we were confident might stumble in this direction.
+
+An hour later found us in the time-rounded gullies of the hills, amid
+the beautiful flowering plants that abound in the arid waste places of
+Barsoom. There we found numbers of huge milk-giving shrubs—that strange
+plant which serves in great part as food and drink for the wild hordes
+of green men. It was indeed a boon to us, for we all were nearly
+famished.
+
+Beneath a cluster of these which afforded perfect concealment from
+wandering air scouts, we lay down to sleep—for me the first time in
+many hours. This was the beginning of my fifth day upon Barsoom since I
+had found myself suddenly translated from my cottage on the Hudson to
+Dor, the valley beautiful, the valley hideous. In all this time I had
+slept but twice, though once the clock around within the storehouse of
+the therns.
+
+It was mid-afternoon when I was awakened by some one seizing my hand
+and covering it with kisses. With a start I opened my eyes to look into
+the beautiful face of Thuvia.
+
+“My Prince! My Prince!” she cried, in an ecstasy of happiness. “’Tis
+you whom I had mourned as dead. My ancestors have been good to me; I
+have not lived in vain.”
+
+The girl’s voice awoke Xodar and Carthoris. The boy gazed upon the
+woman in surprise, but she did not seem to realize the presence of
+another than I. She would have thrown her arms about my neck and
+smothered me with caresses, had I not gently but firmly disengaged
+myself.
+
+“Come, come, Thuvia,” I said soothingly; “you are overwrought by the
+danger and hardships you have passed through. You forget yourself, as
+you forget that I am the husband of the Princess of Helium.”
+
+“I forget nothing, my Prince,” she replied. “You have spoken no word of
+love to me, nor do I expect that you ever shall; but nothing can
+prevent me loving you. I would not take the place of Dejah Thoris. My
+greatest ambition is to serve you, my Prince, for ever as your slave.
+No greater boon could I ask, no greater honour could I crave, no
+greater happiness could I hope.”
+
+As I have before said, I am no ladies’ man, and I must admit that I
+seldom have felt so uncomfortable and embarrassed as I did that moment.
+While I was quite familiar with the Martian custom which allows female
+slaves to Martian men, whose high and chivalrous honour is always ample
+protection for every woman in his household, yet I had never myself
+chosen other than men as my body servants.
+
+“And I ever return to Helium, Thuvia,” I said, “you shall go with me,
+but as an honoured equal, and not as a slave. There you shall find
+plenty of handsome young nobles who would face Issus herself to win a
+smile from you, and we shall have you married in short order to one of
+the best of them. Forget your foolish gratitude-begotten infatuation,
+which your innocence has mistaken for love. I like your friendship
+better, Thuvia.”
+
+“You are my master; it shall be as you say,” she replied simply, but
+there was a note of sadness in her voice.
+
+“How came you here, Thuvia?” I asked. “And where is Tars Tarkas?”
+
+“The great Thark, I fear, is dead,” she replied sadly. “He was a mighty
+fighter, but a multitude of green warriors of another horde than his
+overwhelmed him. The last that I saw of him they were bearing him,
+wounded and bleeding, to the deserted city from which they had sallied
+to attack us.”
+
+“You are not sure that he is dead, then?” I asked. “And where is this
+city of which you speak?”
+
+“It is just beyond this range of hills. The vessel in which you so
+nobly resigned a place that we might find escape defied our small skill
+in navigation, with the result that we drifted aimlessly about for two
+days. Then we decided to abandon the craft and attempt to make our way
+on foot to the nearest waterway. Yesterday we crossed these hills and
+came upon the dead city beyond. We had passed within its streets and
+were walking toward the central portion, when at an intersecting avenue
+we saw a body of green warriors approaching.
+
+“Tars Tarkas was in advance, and they saw him, but me they did not see.
+The Thark sprang back to my side and forced me into an adjacent
+doorway, where he told me to remain in hiding until I could escape,
+making my way to Helium if possible.
+
+“‘There will be no escape for me now,’ he said, ‘for these be the
+Warhoon of the South. When they have seen my metal it will be to the
+death.’
+
+“Then he stepped out to meet them. Ah, my Prince, such fighting! For an
+hour they swarmed about him, until the Warhoon dead formed a hill where
+he had stood; but at last they overwhelmed him, those behind pushing
+the foremost upon him until there remained no space to swing his great
+sword. Then he stumbled and went down and they rolled over him like a
+huge wave. When they carried him away toward the heart of the city, he
+was dead, I think, for I did not see him move.”
+
+“Before we go farther we must be sure,” I said. “I cannot leave Tars
+Tarkas alive among the Warhoons. To-night I shall enter the city and
+make sure.”
+
+“And I shall go with you,” spoke Carthoris.
+
+“And I,” said Xodar.
+
+“Neither one of you shall go,” I replied. “It is work that requires
+stealth and strategy, not force. One man alone may succeed where more
+would invite disaster. I shall go alone. If I need your help, I will
+return for you.”
+
+They did not like it, but both were good soldiers, and it had been
+agreed that I should command. The sun already was low, so that I did
+not have long to wait before the sudden darkness of Barsoom engulfed
+us.
+
+With a parting word of instructions to Carthoris and Xodar, in case I
+should not return, I bade them all farewell and set forth at a rapid
+dogtrot toward the city.
+
+As I emerged from the hills the nearer moon was winging its wild flight
+through the heavens, its bright beams turning to burnished silver the
+barbaric splendour of the ancient metropolis. The city had been built
+upon the gently rolling foothills that in the dim and distant past had
+sloped down to meet the sea. It was due to this fact that I had no
+difficulty in entering the streets unobserved.
+
+The green hordes that use these deserted cities seldom occupy more than
+a few squares about the central plaza, and as they come and go always
+across the dead sea bottoms that the cities face, it is usually a
+matter of comparative ease to enter from the hillside.
+
+Once within the streets, I kept close in the dense shadows of the
+walls. At intersections I halted a moment to make sure that none was in
+sight before I sprang quickly to the shadows of the opposite side. Thus
+I made the journey to the vicinity of the plaza without detection. As I
+approached the purlieus of the inhabited portion of the city I was made
+aware of the proximity of the warriors’ quarters by the squealing and
+grunting of the thoats and zitidars corralled within the hollow
+courtyards formed by the buildings surrounding each square.
+
+These old familiar sounds that are so distinctive of green Martian life
+sent a thrill of pleasure surging through me. It was as one might feel
+on coming home after a long absence. It was amid such sounds that I had
+first courted the incomparable Dejah Thoris in the age-old marble halls
+of the dead city of Korad.
+
+As I stood in the shadows at the far corner of the first square which
+housed members of the horde, I saw warriors emerging from several of
+the buildings. They all went in the same direction, toward a great
+building which stood in the centre of the plaza. My knowledge of green
+Martian customs convinced me that this was either the quarters of the
+principal chieftain or contained the audience chamber wherein the
+Jeddak met his jeds and lesser chieftains. In either event, it was
+evident that something was afoot which might have a bearing on the
+recent capture of Tars Tarkas.
+
+To reach this building, which I now felt it imperative that I do, I
+must needs traverse the entire length of one square and cross a broad
+avenue and a portion of the plaza. From the noises of the animals which
+came from every courtyard about me, I knew that there were many people
+in the surrounding buildings—probably several communities of the great
+horde of the Warhoons of the South.
+
+To pass undetected among all these people was in itself a difficult
+task, but if I was to find and rescue the great Thark I must expect
+even more formidable obstacles before success could be mine. I had
+entered the city from the south and now stood on the corner of the
+avenue through which I had passed and the first intersecting avenue
+south of the plaza. The buildings upon the south side of this square
+did not appear to be inhabited, as I could see no lights, and so I
+decided to gain the inner courtyard through one of them.
+
+Nothing occurred to interrupt my progress through the deserted pile I
+chose, and I came into the inner court close to the rear walls of the
+east buildings without detection. Within the court a great herd of
+thoats and zitidars moved restlessly about, cropping the moss-like
+ochre vegetation which overgrows practically the entire uncultivated
+area of Mars. What breeze there was came from the north-west, so there
+was little danger that the beasts would scent me. Had they, their
+squealing and grunting would have grown to such a volume as to attract
+the attention of the warriors within the buildings.
+
+Close to the east wall, beneath the overhanging balconies of the second
+floors, I crept in dense shadows the full length of the courtyard,
+until I came to the buildings at the north end. These were lighted for
+about three floors up, but above the third floor all was dark.
+
+To pass through the lighted rooms was, of course, out of the question,
+since they swarmed with green Martian men and women. My only path lay
+through the upper floors, and to gain these it was necessary to scale
+the face of the wall. The reaching of the balcony of the second floor
+was a matter of easy accomplishment—an agile leap gave my hands a grasp
+upon the stone hand-rail above. In another instant I had drawn myself
+up on the balcony.
+
+Here through the open windows I saw the green folk squatting upon their
+sleeping silks and furs, grunting an occasional monosyllable, which, in
+connection with their wondrous telepathic powers, is ample for their
+conversational requirements. As I drew closer to listen to their words
+a warrior entered the room from the hall beyond.
+
+“Come, Tan Gama,” he cried, “we are to take the Thark before Kab Kadja.
+Bring another with you.”
+
+The warrior addressed arose and, beckoning to a fellow squatting near,
+the three turned and left the apartment.
+
+If I could but follow them the chance might come to free Tars Tarkas at
+once. At least I would learn the location of his prison.
+
+At my right was a door leading from the balcony into the building. It
+was at the end of an unlighted hall, and on the impulse of the moment I
+stepped within. The hall was broad and led straight through to the
+front of the building. On either side were the doorways of the various
+apartments which lined it.
+
+I had no more than entered the corridor than I saw the three warriors
+at the other end—those whom I had just seen leaving the apartment. Then
+a turn to the right took them from my sight again. Quickly I hastened
+along the hallway in pursuit. My gait was reckless, but I felt that
+Fate had been kind indeed to throw such an opportunity within my grasp,
+and I could not afford to allow it to elude me now.
+
+At the far end of the corridor I found a spiral stairway leading to the
+floors above and below. The three had evidently left the floor by this
+avenue. That they had gone down and not up I was sure from my knowledge
+of these ancient buildings and the methods of the Warhoons.
+
+I myself had once been a prisoner of the cruel hordes of northern
+Warhoon, and the memory of the underground dungeon in which I lay still
+is vivid in my memory. And so I felt certain that Tars Tarkas lay in
+the dark pits beneath some nearby building, and that in that direction
+I should find the trail of the three warriors leading to his cell.
+
+Nor was I wrong. At the bottom of the runway, or rather at the landing
+on the floor below, I saw that the shaft descended into the pits
+beneath, and as I glanced down the flickering light of a torch revealed
+the presence of the three I was trailing.
+
+Down they went toward the pits beneath the structure, and at a safe
+distance behind I followed the flicker of their torch. The way led
+through a maze of tortuous corridors, unlighted save for the wavering
+light they carried. We had gone perhaps a hundred yards when the party
+turned abruptly through a doorway at their right. I hastened on as
+rapidly as I dared through the darkness until I reached the point at
+which they had left the corridor. There, through an open door, I saw
+them removing the chains that secured the great Thark, Tars Tarkas, to
+the wall.
+
+Hustling him roughly between them, they came immediately from the
+chamber, so quickly in fact that I was near to being apprehended. But I
+managed to run along the corridor in the direction I had been going in
+my pursuit of them far enough to be without the radius of their meagre
+light as they emerged from the cell.
+
+I had naturally assumed that they would return with Tars Tarkas the
+same way that they had come, which would have carried them away from
+me; but, to my chagrin, they wheeled directly in my direction as they
+left the room. There was nothing for me but to hasten on in advance and
+keep out of the light of their torch. I dared not attempt to halt in
+the darkness of any of the many intersecting corridors, for I knew
+nothing of the direction they might take. Chance was as likely as not
+to carry me into the very corridor they might choose to enter.
+
+The sensation of moving rapidly through these dark passages was far
+from reassuring. I knew not at what moment I might plunge headlong into
+some terrible pit or meet with some of the ghoulish creatures that
+inhabit these lower worlds beneath the dead cities of dying Mars. There
+filtered to me a faint radiance from the torch of the men behind—just
+enough to permit me to trace the direction of the winding passageways
+directly before me, and so keep me from dashing myself against the
+walls at the turns.
+
+Presently I came to a place where five corridors diverged from a common
+point. I had hastened along one of them for some little distance when
+suddenly the faint light of the torch disappeared from behind me. I
+paused to listen for sounds of the party behind me, but the silence was
+as utter as the silence of the tomb.
+
+Quickly I realized that the warriors had taken one of the other
+corridors with their prisoner, and so I hastened back with a feeling of
+considerable relief to take up a much safer and more desirable position
+behind them. It was much slower work returning, however, than it had
+been coming, for now the darkness was as utter as the silence.
+
+It was necessary to feel every foot of the way back with my hand
+against the side wall, that I might not pass the spot where the five
+roads radiated. After what seemed an eternity to me, I reached the
+place and recognized it by groping across the entrances to the several
+corridors until I had counted five of them. In not one, however, showed
+the faintest sign of light.
+
+I listened intently, but the naked feet of the green men sent back no
+guiding echoes, though presently I thought I detected the clank of side
+arms in the far distance of the middle corridor. Up this, then, I
+hastened, searching for the light, and stopping to listen occasionally
+for a repetition of the sound; but soon I was forced to admit that I
+must have been following a blind lead, as only darkness and silence
+rewarded my efforts.
+
+Again I retraced my steps toward the parting of the ways, when to my
+surprise I came upon the entrance to three diverging corridors, any one
+of which I might have traversed in my hasty dash after the false clue I
+had been following. Here was a pretty fix, indeed! Once back at the
+point where the five passageways met, I might wait with some assurance
+for the return of the warriors with Tars Tarkas. My knowledge of their
+customs lent colour to the belief that he was but being escorted to the
+audience chamber to have sentence passed upon him. I had not the
+slightest doubt but that they would preserve so doughty a warrior as
+the great Thark for the rare sport he would furnish at the Great Games.
+
+But unless I could find my way back to that point the chances were most
+excellent that I would wander for days through the awful blackness,
+until, overcome by thirst and hunger, I lay down to die, or—What was
+that!
+
+A faint shuffling sounded behind me, and as I cast a hasty glance over
+my shoulder my blood froze in my veins for the thing I saw there. It
+was not so much fear of the present danger as it was the horrifying
+memories it recalled of that time I near went mad over the corpse of
+the man I had killed in the dungeons of the Warhoons, when blazing eyes
+came out of the dark recesses and dragged the thing that had been a man
+from my clutches and I heard it scraping over the stone of my prison as
+they bore it away to their terrible feast.
+
+And now in these black pits of the other Warhoons I looked into those
+same fiery eyes, blazing at me through the terrible darkness, revealing
+no sign of the beast behind them. I think that the most fearsome
+attribute of these awesome creatures is their silence and the fact that
+one never sees them—nothing but those baleful eyes glaring unblinkingly
+out of the dark void behind.
+
+Grasping my long-sword tightly in my hand, I backed slowly along the
+corridor away from the thing that watched me, but ever as I retreated
+the eyes advanced, nor was there any sound, not even the sound of
+breathing, except the occasional shuffling sound as of the dragging of
+a dead limb, that had first attracted my attention.
+
+On and on I went, but I could not escape my sinister pursuer. Suddenly
+I heard the shuffling noise at my right, and, looking, saw another pair
+of eyes, evidently approaching from an intersecting corridor. As I
+started to renew my slow retreat I heard the noise repeated behind me,
+and then before I could turn I heard it again at my left.
+
+The things were all about me. They had me surrounded at the
+intersection of two corridors. Retreat was cut off in all directions,
+unless I chose to charge one of the beasts. Even then I had no doubt
+but that the others would hurl themselves upon my back. I could not
+even guess the size or nature of the weird creatures. That they were of
+goodly proportions I guessed from the fact that the eyes were on a
+level with my own.
+
+Why is it that darkness so magnifies our dangers? By day I would have
+charged the great banth itself, had I thought it necessary, but hemmed
+in by the darkness of these silent pits I hesitated before a pair of
+eyes.
+
+Soon I saw that the matter shortly would be taken entirely from my
+hands, for the eyes at my right were moving slowly nearer me, as were
+those at my left and those behind and before me. Gradually they were
+closing in upon me—but still that awful stealthy silence!
+
+For what seemed hours the eyes approached gradually closer and closer,
+until I felt that I should go mad for the horror of it. I had been
+constantly turning this way and that to prevent any sudden rush from
+behind, until I was fairly worn out. At length I could endure it no
+longer, and, taking a fresh grasp upon my long-sword, I turned suddenly
+and charged down upon one of my tormentors.
+
+As I was almost upon it the thing retreated before me, but a sound from
+behind caused me to wheel in time to see three pairs of eyes rushing at
+me from the rear. With a cry of rage I turned to meet the cowardly
+beasts, but as I advanced they retreated as had their fellow. Another
+glance over my shoulder discovered the first eyes sneaking on me again.
+And again I charged, only to see the eyes retreat before me and hear
+the muffled rush of the three at my back.
+
+Thus we continued, the eyes always a little closer in the end than they
+had been before, until I thought that I should go mad with the terrible
+strain of the ordeal. That they were waiting to spring upon my back
+seemed evident, and that it would not be long before they succeeded was
+equally apparent, for I could not endure the wear of this repeated
+charge and countercharge indefinitely. In fact, I could feel myself
+weakening from the mental and physical strain I had been undergoing.
+
+At that moment I caught another glimpse from the corner of my eye of
+the single pair of eyes at my back making a sudden rush upon me. I
+turned to meet the charge; there was a quick rush of the three from the
+other direction; but I determined to pursue the single pair until I
+should have at least settled my account with one of the beasts and thus
+be relieved of the strain of meeting attacks from both directions.
+
+There was no sound in the corridor, only that of my own breathing, yet
+I knew that those three uncanny creatures were almost upon me. The eyes
+in front were not retreating so rapidly now; I was almost within sword
+reach of them. I raised my sword arm to deal the blow that should free
+me, and then I felt a heavy body upon my back. A cold, moist, slimy
+something fastened itself upon my throat. I stumbled and went down.
+
+## CHAPTER XV FLIGHT AND PURSUIT
+
+I could not have been unconscious more than a few seconds, and yet I
+know that I was unconscious, for the next thing I realized was that a
+growing radiance was illuminating the corridor about me and the eyes
+were gone.
+
+I was unharmed except for a slight bruise upon my forehead where it had
+struck the stone flagging as I fell.
+
+I sprang to my feet to ascertain the cause of the light. It came from a
+torch in the hand of one of a party of four green warriors, who were
+coming rapidly down the corridor toward me. They had not yet seen me,
+and so I lost no time in slipping into the first intersecting corridor
+that I could find. This time, however, I did not advance so far away
+from the main corridor as on the other occasion that had resulted in my
+losing Tars Tarkas and his guards.
+
+The party came rapidly toward the opening of the passageway in which I
+crouched against the wall. As they passed by I breathed a sigh of
+relief. I had not been discovered, and, best of all, the party was the
+same that I had followed into the pits. It consisted of Tars Tarkas and
+his three guards.
+
+I fell in behind them and soon we were at the cell in which the great
+Thark had been chained. Two of the warriors remained without while the
+man with the keys entered with the Thark to fasten his irons upon him
+once more. The two outside started to stroll slowly in the direction of
+the spiral runway which led to the floors above, and in a moment were
+lost to view beyond a turn in the corridor.
+
+The torch had been stuck in a socket beside the door, so that its rays
+illuminated both the corridor and the cell at the same time. As I saw
+the two warriors disappear I approached the entrance to the cell, with
+a well-defined plan already formulated.
+
+While I disliked the thought of carrying out the thing that I had
+decided upon, there seemed no alternative if Tars Tarkas and I were to
+go back together to my little camp in the hills.
+
+Keeping near the wall, I came quite close to the door to Tars Tarkas’
+cell, and there I stood with my longsword above my head, grasped with
+both hands, that I might bring it down in one quick cut upon the skull
+of the jailer as he emerged.
+
+I dislike to dwell upon what followed after I heard the footsteps of
+the man as he approached the doorway. It is enough that within another
+minute or two, Tars Tarkas, wearing the metal of a Warhoon chief, was
+hurrying down the corridor toward the spiral runway, bearing the
+Warhoon’s torch to light his way. A dozen paces behind him followed
+John Carter, Prince of Helium.
+
+The two companions of the man who lay now beside the door of the cell
+that had been Tars Tarkas’ had just started to ascend the runway as the
+Thark came in view.
+
+“Why so long, Tan Gama?” cried one of the men.
+
+“I had trouble with a lock,” replied Tars Tarkas. “And now I find that
+I have left my short-sword in the Thark’s cell. Go you on, I’ll return
+and fetch it.”
+
+“As you will, Tan Gama,” replied he who had before spoken. “We shall
+see you above directly.”
+
+“Yes,” replied Tars Tarkas, and turned as though to retrace his steps
+to the cell, but he only waited until the two had disappeared at the
+floor above. Then I joined him, we extinguished the torch, and together
+we crept toward the spiral incline that led to the upper floors of the
+building.
+
+At the first floor we found that the hallway ran but halfway through,
+necessitating the crossing of a rear room full of green folk, ere we
+could reach the inner courtyard, so there was but one thing left for us
+to do, and that was to gain the second floor and the hallway through
+which I had traversed the length of the building.
+
+Cautiously we ascended. We could hear the sounds of conversation coming
+from the room above, but the hall still was unlighted, nor was any one
+in sight as we gained the top of the runway. Together we threaded the
+long hall and reached the balcony overlooking the courtyard, without
+being detected.
+
+At our right was the window letting into the room in which I had seen
+Tan Gama and the other warriors as they started to Tars Tarkas’ cell
+earlier in the evening. His companions had returned here, and we now
+overheard a portion of their conversation.
+
+“What can be detaining Tan Gama?” asked one.
+
+“He certainly could not be all this time fetching his shortsword from
+the Thark’s cell,” spoke another.
+
+“His short-sword?” asked a woman. “What mean you?”
+
+“Tan Gama left his short-sword in the Thark’s cell,” explained the
+first speaker, “and left us at the runway, to return and get it.”
+
+“Tan Gama wore no short-sword this night,” said the woman. “It was
+broken in to-day’s battle with the Thark, and Tan Gama gave it to me to
+repair. See, I have it here,” and as she spoke she drew Tan Gama’s
+short-sword from beneath her sleeping silks and furs.
+
+The warriors sprang to their feet.
+
+“There is something amiss here,” cried one.
+
+“’Tis even what I myself thought when Tan Gama left us at the runway,”
+said another. “Methought then that his voice sounded strangely.”
+
+“Come! let us hasten to the pits.”
+
+We waited to hear no more. Slinging my harness into a long single
+strap, I lowered Tars Tarkas to the courtyard beneath, and an instant
+later dropped to his side.
+
+We had spoken scarcely a dozen words since I had felled Tan Gama at the
+cell door and seen in the torch’s light the expression of utter
+bewilderment upon the great Thark’s face.
+
+“By this time,” he had said, “I should have learned to wonder at
+nothing which John Carter accomplishes.” That was all. He did not need
+to tell me that he appreciated the friendship which had prompted me to
+risk my life to rescue him, nor did he need to say that he was glad to
+see me.
+
+This fierce green warrior had been the first to greet me that day, now
+twenty years gone, which had witnessed my first advent upon Mars. He
+had met me with levelled spear and cruel hatred in his heart as he
+charged down upon me, bending low at the side of his mighty thoat as I
+stood beside the incubator of his horde upon the dead sea bottom beyond
+Korad. And now among the inhabitants of two worlds I counted none a
+better friend than Tars Tarkas, Jeddak of the Tharks.
+
+As we reached the courtyard we stood in the shadows beneath the balcony
+for a moment to discuss our plans.
+
+“There be five now in the party, Tars Tarkas,” I said; “Thuvia, Xodar,
+Carthoris, and ourselves. We shall need five thoats to bear us.”
+
+“Carthoris!” he cried. “Your son?”
+
+“Yes. I found him in the prison of Shador, on the Sea of Omean, in the
+land of the First Born.”
+
+“I know not any of these places, John Carter. Be they upon Barsoom?”
+
+“Upon and below, my friend; but wait until we shall have made good our
+escape, and you shall hear the strangest narrative that ever a
+Barsoomian of the outer world gave ear to. Now we must steal our thoats
+and be well away to the north before these fellows discover how we have
+tricked them.”
+
+In safety we reached the great gates at the far end of the courtyard,
+through which it was necessary to take our thoats to the avenue beyond.
+It is no easy matter to handle five of these great, fierce beasts,
+which by nature are as wild and ferocious as their masters and held in
+subjection by cruelty and brute force alone.
+
+As we approached them they sniffed our unfamiliar scent and with
+squeals of rage circled about us. Their long, massive necks upreared
+raised their great, gaping mouths high above our heads. They are
+fearsome appearing brutes at best, but when they are aroused they are
+fully as dangerous as they look. The thoat stands a good ten feet at
+the shoulder. His hide is sleek and hairless, and of a dark slate
+colour on back and sides, shading down his eight legs to a vivid yellow
+at the huge, padded, nailless feet; the belly is pure white. A broad,
+flat tail, larger at the tip than at the root, completes the picture of
+this ferocious green Martian mount—a fit war steed for these warlike
+people.
+
+As the thoats are guided by telepathic means alone, there is no need
+for rein or bridle, and so our object now was to find two that would
+obey our unspoken commands. As they charged about us we succeeded in
+mastering them sufficiently to prevent any concerted attack upon us,
+but the din of their squealing was certain to bring investigating
+warriors into the courtyard were it to continue much longer.
+
+At length I was successful in reaching the side of one great brute, and
+ere he knew what I was about I was firmly seated astride his glossy
+back. A moment later Tars Tarkas had caught and mounted another, and
+then between us we herded three or four more toward the great gates.
+
+Tars Tarkas rode ahead and, leaning down to the latch, threw the
+barriers open, while I held the loose thoats from breaking back to the
+herd. Then together we rode through into the avenue with our stolen
+mounts and, without waiting to close the gates, hurried off toward the
+southern boundary of the city.
+
+Thus far our escape had been little short of marvellous, nor did our
+good fortune desert us, for we passed the outer purlieus of the dead
+city and came to our camp without hearing even the faintest sound of
+pursuit.
+
+Here a low whistle, the prearranged signal, apprised the balance of our
+party that I was returning, and we were met by the three with every
+manifestation of enthusiastic rejoicing.
+
+But little time was wasted in narration of our adventure. Tars Tarkas
+and Carthoris exchanged the dignified and formal greetings common upon
+Barsoom, but I could tell intuitively that the Thark loved my boy and
+that Carthoris reciprocated his affection.
+
+Xodar and the green Jeddak were formally presented to each other. Then
+Thuvia was lifted to the least fractious thoat, Xodar and Carthoris
+mounted two others, and we set out at a rapid pace toward the east. At
+the far extremity of the city we circled toward the north, and under
+the glorious rays of the two moons we sped noiselessly across the dead
+sea bottom, away from the Warhoons and the First Born, but to what new
+dangers and adventures we knew not.
+
+Toward noon of the following day we halted to rest our mounts and
+ourselves. The beasts we hobbled, that they might move slowly about
+cropping the ochre moss-like vegetation which constitutes both food and
+drink for them on the march. Thuvia volunteered to remain on watch
+while the balance of the party slept for an hour.
+
+It seemed to me that I had but closed my eyes when I felt her hand upon
+my shoulder and heard her soft voice warning me of a new danger.
+
+“Arise, O Prince,” she whispered. “There be that behind us which has
+the appearance of a great body of pursuers.”
+
+The girl stood pointing in the direction from whence we had come, and
+as I arose and looked, I, too, thought that I could detect a thin dark
+line on the far horizon. I awoke the others. Tars Tarkas, whose giant
+stature towered high above the rest of us, could see the farthest.
+
+“It is a great body of mounted men,” he said, “and they are travelling
+at high speed.”
+
+There was no time to be lost. We sprang to our hobbled thoats, freed
+them, and mounted. Then we turned our faces once more toward the north
+and took our flight again at the highest speed of our slowest beast.
+
+For the balance of the day and all the following night we raced across
+that ochre wilderness with the pursuers at our back ever gaining upon
+us. Slowly but surely they were lessening the distance between us. Just
+before dark they had been close enough for us to plainly distinguish
+that they were green Martians, and all during the long night we
+distinctly heard the clanking of their accoutrements behind us.
+
+As the sun rose on the second day of our flight it disclosed the
+pursuing horde not a half-mile in our rear. As they saw us a fiendish
+shout of triumph rose from their ranks.
+
+Several miles in advance lay a range of hills—the farther shore of the
+dead sea we had been crossing. Could we but reach these hills our
+chances of escape would be greatly enhanced, but Thuvia’s mount,
+although carrying the lightest burden, already was showing signs of
+exhaustion. I was riding beside her when suddenly her animal staggered
+and lurched against mine. I saw that he was going down, but ere he fell
+I snatched the girl from his back and swung her to a place upon my own
+thoat, behind me, where she clung with her arms about me.
+
+This double burden soon proved too much for my already overtaxed beast,
+and thus our speed was terribly diminished, for the others would
+proceed no faster than the slowest of us could go. In that little party
+there was not one who would desert another; yet we were of different
+countries, different colours, different races, different religions—and
+one of us was of a different world.
+
+We were quite close to the hills, but the Warhoons were gaining so
+rapidly that we had given up all hope of reaching them in time. Thuvia
+and I were in the rear, for our beast was lagging more and more.
+Suddenly I felt the girl’s warm lips press a kiss upon my shoulder.
+“For thy sake, O my Prince,” she murmured. Then her arms slipped from
+about my waist and she was gone.
+
+I turned and saw that she had deliberately slipped to the ground in the
+very path of the cruel demons who pursued us, thinking that by
+lightening the burden of my mount it might thus be enabled to bear me
+to the safety of the hills. Poor child! She should have known John
+Carter better than that.
+
+Turning my thoat, I urged him after her, hoping to reach her side and
+bear her on again in our hopeless flight. Carthoris must have glanced
+behind him at about the same time and taken in the situation, for by
+the time I had reached Thuvia’s side he was there also, and, springing
+from his mount, he threw her upon its back and, turning the animal’s
+head toward the hills, gave the beast a sharp crack across the rump
+with the flat of his sword. Then he attempted to do the same with mine.
+
+The brave boy’s act of chivalrous self-sacrifice filled me with pride,
+nor did I care that it had wrested from us our last frail chance for
+escape. The Warhoons were now close upon us. Tars Tarkas and Xodar had
+discovered our absence and were charging rapidly to our support.
+Everything pointed toward a splendid ending of my second journey to
+Barsoom. I hated to go out without having seen my divine Princess, and
+held her in my arms once again; but if it were not writ upon the book
+of Fate that such was to be, then would I take the most that was coming
+to me, and in these last few moments that were to be vouchsafed me
+before I passed over into that unguessed future I could at least give
+such an account of myself in my chosen vocation as would leave the
+Warhoons of the South food for discourse for the next twenty
+generations.
+
+As Carthoris was not mounted, I slipped from the back of my own mount
+and took my place at his side to meet the charge of the howling devils
+bearing down upon us. A moment later Tars Tarkas and Xodar ranged
+themselves on either hand, turning their thoats loose that we might all
+be on an equal footing.
+
+The Warhoons were perhaps a hundred yards from us when a loud explosion
+sounded from above and behind us, and almost at the same instant a
+shell burst in their advancing ranks. At once all was confusion. A
+hundred warriors toppled to the ground. Riderless thoats plunged hither
+and thither among the dead and dying. Dismounted warriors were trampled
+underfoot in the stampede which followed. All semblance of order had
+left the ranks of the green men, and as they looked far above our heads
+to trace the origin of this unexpected attack, disorder turned to
+retreat and retreat to a wild panic. In another moment they were racing
+as madly away from us as they had before been charging down upon us.
+
+We turned to look in the direction from whence the first report had
+come, and there we saw, just clearing the tops of the nearer hills, a
+great battleship swinging majestically through the air. Her bow gun
+spoke again even as we looked, and another shell burst among the
+fleeing Warhoons.
+
+As she drew nearer I could not repress a wild cry of elation, for upon
+her bows I saw the device of Helium.
+
+## CHAPTER XVI UNDER ARREST
+
+As Carthoris, Xodar, Tars Tarkas, and I stood gazing at the magnificent
+vessel which meant so much to all of us, we saw a second and then a
+third top the summit of the hills and glide gracefully after their
+sister.
+
+Now a score of one-man air scouts were launching from the upper decks
+of the nearer vessel, and in a moment more were speeding in long, swift
+dives to the ground about us.
+
+In another instant we were surrounded by armed sailors, and an officer
+had stepped forward to address us, when his eyes fell upon Carthoris.
+With an exclamation of surprised pleasure he sprang forward, and,
+placing his hands upon the boy’s shoulder, called him by name.
+
+“Carthoris, my Prince,” he cried, “Kaor! Kaor! Hor Vastus greets the
+son of Dejah Thoris, Princess of Helium, and of her husband, John
+Carter. Where have you been, O my Prince? All Helium has been plunged
+in sorrow. Terrible have been the calamities that have befallen your
+great-grandsire’s mighty nation since the fatal day that saw you leave
+our midst.”
+
+“Grieve not, my good Hor Vastus,” cried Carthoris, “since I bring not
+back myself alone to cheer my mother’s heart and the hearts of my
+beloved people, but also one whom all Barsoom loved best—her greatest
+warrior and her saviour—John Carter, Prince of Helium!”
+
+Hor Vastus turned in the direction indicated by Carthoris, and as his
+eyes fell upon me he was like to have collapsed from sheer surprise.
+
+“John Carter!” he exclaimed, and then a sudden troubled look came into
+his eyes. “My Prince,” he started, “where hast thou—” and then he
+stopped, but I knew the question that his lips dared not frame. The
+loyal fellow would not be the one to force from mine a confession of
+the terrible truth that I had returned from the bosom of the Iss, the
+River of Mystery, back from the shore of the Lost Sea of Korus, and the
+Valley Dor.
+
+“Ah, my Prince,” he continued, as though no thought had interrupted his
+greeting, “that you are back is sufficient, and let Hor Vastus’ sword
+have the high honour of being first at thy feet.” With these words the
+noble fellow unbuckled his scabbard and flung his sword upon the ground
+before me.
+
+Could you know the customs and the character of red Martians you would
+appreciate the depth of meaning that that simple act conveyed to me and
+to all about us who witnessed it. The thing was equivalent to saying,
+“My sword, my body, my life, my soul are yours to do with as you wish.
+Until death and after death I look to you alone for authority for my
+every act. Be you right or wrong, your word shall be my only truth.
+Whoso raises his hand against you must answer to my sword.”
+
+It is the oath of fealty that men occasionally pay to a Jeddak whose
+high character and chivalrous acts have inspired the enthusiastic love
+of his followers. Never had I known this high tribute paid to a lesser
+mortal. There was but one response possible. I stooped and lifted the
+sword from the ground, raised the hilt to my lips, and then, stepping
+to Hor Vastus, I buckled the weapon upon him with my own hands.
+
+“Hor Vastus,” I said, placing my hand upon his shoulder, “you know best
+the promptings of your own heart. That I shall need your sword I have
+little doubt, but accept from John Carter upon his sacred honour the
+assurance that he will never call upon you to draw this sword other
+than in the cause of truth, justice, and righteousness.”
+
+“That I knew, my Prince,” he replied, “ere ever I threw my beloved
+blade at thy feet.”
+
+As we spoke other fliers came and went between the ground and the
+battleship, and presently a larger boat was launched from above, one
+capable of carrying a dozen persons, perhaps, and dropped lightly near
+us. As she touched, an officer sprang from her deck to the ground, and,
+advancing to Hor Vastus, saluted.
+
+“Kantos Kan desires that this party whom we have rescued be brought
+immediately to the deck of the _Xavarian_,” he said.
+
+As we approached the little craft I looked about for the members of my
+party and for the first time noticed that Thuvia was not among them.
+Questioning elicited the fact that none had seen her since Carthoris
+had sent her thoat galloping madly toward the hills, in the hope of
+carrying her out of harm’s way.
+
+Immediately Hor Vastus dispatched a dozen air scouts in as many
+directions to search for her. It could not be possible that she had
+gone far since we had last seen her. We others stepped to the deck of
+the craft that had been sent to fetch us, and a moment later were upon
+the _Xavarian_.
+
+The first man to greet me was Kantos Kan himself. My old friend had won
+to the highest place in the navy of Helium, but he was still to me the
+same brave comrade who had shared with me the privations of a Warhoon
+dungeon, the terrible atrocities of the Great Games, and later the
+dangers of our search for Dejah Thoris within the hostile city of
+Zodanga.
+
+Then I had been an unknown wanderer upon a strange planet, and he a
+simple padwar in the navy of Helium. To-day he commanded all Helium’s
+great terrors of the skies, and I was a Prince of the House of Tardos
+Mors, Jeddak of Helium.
+
+He did not ask me where I had been. Like Hor Vastus, he too dreaded the
+truth and would not be the one to wrest a statement from me. That it
+must come some time he well knew, but until it came he seemed satisfied
+to but know that I was with him once more. He greeted Carthoris and
+Tars Tarkas with the keenest delight, but he asked neither where he had
+been. He could scarcely keep his hands off the boy.
+
+“You do not know, John Carter,” he said to me, “how we of Helium love
+this son of yours. It is as though all the great love we bore his noble
+father and his poor mother had been centred in him. When it became
+known that he was lost, ten million people wept.”
+
+“What mean you, Kantos Kan,” I whispered, “by ‘his poor mother’?” for
+the words had seemed to carry a sinister meaning which I could not
+fathom.
+
+He drew me to one side.
+
+“For a year,” he said, “Ever since Carthoris disappeared, Dejah Thoris
+has grieved and mourned for her lost boy. The blow of years ago, when
+you did not return from the atmosphere plant, was lessened to some
+extent by the duties of motherhood, for your son broke his white shell
+that very night.”
+
+“That she suffered terribly then, all Helium knew, for did not all
+Helium suffer with her the loss of her lord! But with the boy gone
+there was nothing left, and after expedition upon expedition returned
+with the same hopeless tale of no clue as to his whereabouts, our
+beloved Princess drooped lower and lower, until all who saw her felt
+that it could be but a matter of days ere she went to join her loved
+ones within the precincts of the Valley Dor.
+
+“As a last resort, Mors Kajak, her father, and Tardos Mors, her
+grandfather, took command of two mighty expeditions, and a month ago
+sailed away to explore every inch of ground in the northern hemisphere
+of Barsoom. For two weeks no word has come back from them, but rumours
+were rife that they had met with a terrible disaster and that all were
+dead.
+
+“About this time Zat Arras renewed his importunities for her hand in
+marriage. He has been for ever after her since you disappeared. She
+hated him and feared him, but with both her father and grandfather
+gone, Zat Arras was very powerful, for he is still Jed of Zodanga, to
+which position, you will remember, Tardos Mors appointed him after you
+had refused the honour.
+
+“He had a secret audience with her six days ago. What took place none
+knows, but the next day Dejah Thoris had disappeared, and with her had
+gone a dozen of her household guard and body servants, including Sola
+the green woman—Tars Tarkas’ daughter, you recall. No word left they of
+their intentions, but it is always thus with those who go upon the
+voluntary pilgrimage from which none returns. We cannot think aught
+than that Dejah Thoris has sought the icy bosom of Iss, and that her
+devoted servants have chosen to accompany her.
+
+“Zat Arras was at Helium when she disappeared. He commands this fleet
+which has been searching for her since. No trace of her have we found,
+and I fear that it be a futile quest.”
+
+While we talked, Hor Vastus’ fliers were returning to the _Xavarian_.
+Not one, however, had discovered a trace of Thuvia. I was much
+depressed over the news of Dejah Thoris’ disappearance, and now there
+was added the further burden of apprehension concerning the fate of
+this girl whom I believed to be the daughter of some proud Barsoomian
+house, and it had been my intention to make every effort to return her
+to her people.
+
+I was about to ask Kantos Kan to prosecute a further search for her
+when a flier from the flagship of the fleet arrived at the _Xavarian_
+with an officer bearing a message to Kantos Kan from Arras.
+
+My friend read the dispatch and then turned to me.
+
+“Zat Arras commands me to bring our ‘prisoners’ before him. There is
+naught else to do. He is supreme in Helium, yet it would be far more in
+keeping with chivalry and good taste were he to come hither and greet
+the saviour of Barsoom with the honours that are his due.”
+
+“You know full well, my friend,” I said, smiling, “that Zat Arras has
+good cause to hate me. Nothing would please him better than to
+humiliate me and then to kill me. Now that he has so excellent an
+excuse, let us go and see if he has the courage to take advantage of
+it.”
+
+Summoning Carthoris, Tars Tarkas, and Xodar, we entered the small flier
+with Kantos Kan and Zat Arras’ officer, and in a moment were stepping
+to the deck of Zat Arras’ flagship.
+
+As we approached the Jed of Zodanga no sign of greeting or recognition
+crossed his face; not even to Carthoris did he vouchsafe a friendly
+word. His attitude was cold, haughty, and uncompromising.
+
+“Kaor, Zat Arras,” I said in greeting, but he did not respond.
+
+“Why were these prisoners not disarmed?” he asked to Kantos Kan.
+
+“They are not prisoners, Zat Arras,” replied the officer.
+
+“Two of them are of Helium’s noblest family. Tars Tarkas, Jeddak of
+Thark, is Tardos Mors’ best beloved ally. The other is a friend and
+companion of the Prince of Helium—that is enough for me to know.”
+
+“It is not enough for me, however,” retorted Zat Arras. “More must I
+hear from those who have taken the pilgrimage than their names. Where
+have you been, John Carter?”
+
+“I have just come from the Valley Dor and the Land of the First Born,
+Zat Arras,” I replied.
+
+“Ah!” he exclaimed in evident pleasure, “you do not deny it, then? You
+have returned from the bosom of Iss?”
+
+“I have come back from a land of false hope, from a valley of torture
+and death; with my companions I have escaped from the hideous clutches
+of lying fiends. I have come back to the Barsoom that I saved from a
+painless death to again save her, but this time from death in its most
+frightful form.”
+
+“Cease, blasphemer!” cried Zat Arras. “Hope not to save thy cowardly
+carcass by inventing horrid lies to—” But he got no further. One does
+not call John Carter “coward” and “liar” thus lightly, and Zat Arras
+should have known it. Before a hand could be raised to stop me, I was
+at his side and one hand grasped his throat.
+
+“Come I from heaven or hell, Zat Arras, you will find me still the same
+John Carter that I have always been; nor did ever man call me such
+names and live—without apologizing.” And with that I commenced to bend
+him back across my knee and tighten my grip upon his throat.
+
+“Seize him!” cried Zat Arras, and a dozen officers sprang forward to
+assist him.
+
+Kantos Kan came close and whispered to me.
+
+“Desist, I beg of you. It will but involve us all, for I cannot see
+these men lay hands upon you without aiding you. My officers and men
+will join me and we shall have a mutiny then that may lead to the
+revolution. For the sake of Tardos Mors and Helium, desist.”
+
+At his words I released Zat Arras and, turning my back upon him, walked
+toward the ship’s rail.
+
+“Come, Kantos Kan,” I said, “the Prince of Helium would return to the
+_Xavarian_.”
+
+None interfered. Zat Arras stood white and trembling amidst his
+officers. Some there were who looked upon him with scorn and drew
+toward me, while one, a man long in the service and confidence of
+Tardos Mors, spoke to me in a low tone as I passed him.
+
+“You may count my metal among your fighting-men, John Carter,” he said.
+
+I thanked him and passed on. In silence we embarked, and shortly after
+stepped once more upon the deck of the _Xavarian_. Fifteen minutes
+later we received orders from the flagship to proceed toward Helium.
+
+Our journey thither was uneventful. Carthoris and I were wrapped in the
+gloomiest of thoughts. Kantos Kan was sombre in contemplation of the
+further calamity that might fall upon Helium should Zat Arras attempt
+to follow the age-old precedent that allotted a terrible death to
+fugitives from the Valley Dor. Tars Tarkas grieved for the loss of his
+daughter. Xodar alone was care-free—a fugitive and outlaw, he could be
+no worse off in Helium than elsewhere.
+
+“Let us hope that we may at least go out with good red blood upon our
+blades,” he said. It was a simple wish and one most likely to be
+gratified.
+
+Among the officers of the _Xavarian_ I thought I could discern division
+into factions ere we had reached Helium. There were those who gathered
+about Carthoris and myself whenever the opportunity presented, while
+about an equal number held aloof from us. They offered us only the most
+courteous treatment, but were evidently bound by their superstitious
+belief in the doctrine of Dor and Iss and Korus. I could not blame
+them, for I knew how strong a hold a creed, however ridiculous it may
+be, may gain upon an otherwise intelligent people.
+
+By returning from Dor we had committed a sacrilege; by recounting our
+adventures there, and stating the facts as they existed we had outraged
+the religion of their fathers. We were blasphemers—lying heretics. Even
+those who still clung to us from personal love and loyalty I think did
+so in the face of the fact that at heart they questioned our
+veracity—it is very hard to accept a new religion for an old, no matter
+how alluring the promises of the new may be; but to reject the old as a
+tissue of falsehoods without being offered anything in its stead is
+indeed a most difficult thing to ask of any people.
+
+Kantos Kan would not talk of our experiences among the therns and the
+First Born.
+
+“It is enough,” he said, “that I jeopardize my life here and hereafter
+by countenancing you at all—do not ask me to add still further to my
+sins by listening to what I have always been taught was the rankest
+heresy.”
+
+I knew that sooner or later the time must come when our friends and
+enemies would be forced to declare themselves openly. When we reached
+Helium there must be an accounting, and if Tardos Mors had not returned
+I feared that the enmity of Zat Arras might weigh heavily against us,
+for he represented the government of Helium. To take sides against him
+were equivalent to treason. The majority of the troops would doubtless
+follow the lead of their officers, and I knew that many of the highest
+and most powerful men of both land and air forces would cleave to John
+Carter in the face of god, man, or devil.
+
+On the other hand, the majority of the populace unquestionably would
+demand that we pay the penalty of our sacrilege. The outlook seemed
+dark from whatever angle I viewed it, but my mind was so torn with
+anguish at the thought of Dejah Thoris that I realize now that I gave
+the terrible question of Helium’s plight but scant attention at that
+time.
+
+There was always before me, day and night, a horrible nightmare of the
+frightful scenes through which I knew my Princess might even then be
+passing—the horrid plant men—the ferocious white apes. At times I would
+cover my face with my hands in a vain effort to shut out the fearful
+thing from my mind.
+
+It was in the forenoon that we arrived above the mile-high scarlet
+tower which marks greater Helium from her twin city. As we descended in
+great circles toward the navy docks a mighty multitude could be seen
+surging in the streets beneath. Helium had been notified by
+radio-aerogram of our approach.
+
+From the deck of the _Xavarian_ we four, Carthoris, Tars Tarkas, Xodar,
+and I, were transferred to a lesser flier to be transported to quarters
+within the Temple of Reward. It is here that Martian justice is meted
+to benefactor and malefactor. Here the hero is decorated. Here the
+felon is condemned. We were taken into the temple from the landing
+stage upon the roof, so that we did not pass among the people at all,
+as is customary. Always before I had seen prisoners of note, or
+returned wanderers of eminence, paraded from the Gate of Jeddaks to the
+Temple of Reward up the broad Avenue of Ancestors through dense crowds
+of jeering or cheering citizens.
+
+I knew that Zat Arras dared not trust the people near to us, for he
+feared that their love for Carthoris and myself might break into a
+demonstration which would wipe out their superstitious horror of the
+crime we were to be charged with. What his plans were I could only
+guess, but that they were sinister was evidenced by the fact that only
+his most trusted servitors accompanied us upon the flier to the Temple
+of Reward.
+
+We were lodged in a room upon the south side of the temple, overlooking
+the Avenue of Ancestors down which we could see the full length to the
+Gate of Jeddaks, five miles away. The people in the temple plaza and in
+the streets for a distance of a full mile were standing as close packed
+as it was possible for them to get. They were very orderly—there were
+neither scoffs nor plaudits, and when they saw us at the window above
+them there were many who buried their faces in their arms and wept.
+
+Late in the afternoon a messenger arrived from Zat Arras to inform us
+that we would be tried by an impartial body of nobles in the great hall
+of the temple at the 1st zode[1] on the following day, or about 8:40
+A.M. Earth time.
+
+[1] Wherever Captain Carter has used Martian measurements of time,
+distance, weight, and the like I have translated them into as nearly
+their equivalent in earthly values as is possible. His notes contain
+many Martian tables, and a great volume of scientific data, but since
+the International Astronomic Society is at present engaged in
+classifying, investigating, and verifying this vast fund of remarkable
+and valuable information, I have felt that it will add nothing to the
+interest of Captain Carter’s story or to the sum total of human
+knowledge to maintain a strict adherence to the original manuscript in
+these matters, while it might readily confuse the reader and detract
+from the interest of the history. For those who may be interested,
+however, I will explain that the Martian day is a trifle over 24 hours
+37 minutes duration (Earth time). This the Martians divide into ten
+equal parts, commencing the day at about 6 A.M. Earth time. The zodes
+are divided into fifty shorter periods, each of which in turn is
+composed of 200 brief periods of time, about equivalent to the earthly
+second. The Barsoomian Table of Time as here given is but a part of
+the full table appearing in Captain Carter’s notes.
+
+TABLE 200 tals . . . . . . . . . 	1 xat 50 xats . . . . . . . . .
+1 zode 10 zodes . . . . . . . . . 	1 revolution of Mars upon its
+axis.
+
+## CHAPTER XVII THE DEATH SENTENCE
+
+A few moments before the appointed time on the following morning a
+strong guard of Zat Arras’ officers appeared at our quarters to conduct
+us to the great hall of the temple.
+
+In twos we entered the chamber and marched down the broad Aisle of
+Hope, as it is called, to the platform in the centre of the hall.
+Before and behind us marched armed guards, while three solid ranks of
+Zodangan soldiery lined either side of the aisle from the entrance to
+the rostrum.
+
+As we reached the raised enclosure I saw our judges. As is the custom
+upon Barsoom there were thirty-one, supposedly selected by lot from men
+of the noble class, for nobles were on trial. But to my amazement I saw
+no single friendly face among them. Practically all were Zodangans, and
+it was I to whom Zodanga owed her defeat at the hands of the green
+hordes and her subsequent vassalage to Helium. There could be little
+justice here for John Carter, or his son, or for the great Thark who
+had commanded the savage tribesmen who overran Zodanga’s broad avenues,
+looting, burning, and murdering.
+
+About us the vast circular coliseum was packed to its full capacity.
+All classes were represented—all ages, and both sexes. As we entered
+the hall the hum of subdued conversation ceased until as we halted upon
+the platform, or Throne of Righteousness, the silence of death
+enveloped the ten thousand spectators.
+
+The judges were seated in a great circle about the periphery of the
+circular platform. We were assigned seats with our backs toward a small
+platform in the exact centre of the larger one. This placed us facing
+the judges and the audience. Upon the smaller platform each would take
+his place while his case was being heard.
+
+Zat Arras himself sat in the golden chair of the presiding magistrate.
+As we were seated and our guards retired to the foot of the stairway
+leading to the platform, he arose and called my name.
+
+“John Carter,” he cried, “take your place upon the Pedestal of Truth to
+be judged impartially according to your acts and here to know the
+reward you have earned thereby.” Then turning to and fro toward the
+audience he narrated the acts upon the value of which my reward was to
+be determined.
+
+“Know you, O judges and people of Helium,” he said, “that John Carter,
+one time Prince of Helium, has returned by his own statement from the
+Valley Dor and even from the Temple of Issus itself. That, in the
+presence of many men of Helium he has blasphemed against the Sacred
+Iss, and against the Valley Dor, and the Lost Sea of Korus, and the
+Holy Therns themselves, and even against Issus, Goddess of Death, and
+of Life Eternal. And know you further by witness of thine own eyes that
+see him here now upon the Pedestal of Truth that he has indeed returned
+from these sacred precincts in the face of our ancient customs, and in
+violation of the sanctity of our ancient religion.
+
+“He who be once dead may not live again. He who attempts it must be
+made dead for ever. Judges, your duty lies plain before you—here can be
+no testimony in contravention of truth. What reward shall be meted to
+John Carter in accordance with the acts he has committed?”
+
+“Death!” shouted one of the judges.
+
+And then a man sprang to his feet in the audience, and raising his hand
+on high, cried: “Justice! Justice! Justice!” It was Kantos Kan, and as
+all eyes turned toward him he leaped past the Zodangan soldiery and
+sprang upon the platform.
+
+“What manner of justice be this?” he cried to Zat Arras. “The defendant
+has not been heard, nor has he had an opportunity to call others in his
+behalf. In the name of the people of Helium I demand fair and impartial
+treatment for the Prince of Helium.”
+
+A great cry arose from the audience then: “Justice! Justice! Justice!”
+and Zat Arras dared not deny them.
+
+“Speak, then,” he snarled, turning to me; “but blaspheme not against
+the things that are sacred upon Barsoom.”
+
+“Men of Helium,” I cried, turning to the spectators, and speaking over
+the heads of my judges, “how can John Carter expect justice from the
+men of Zodanga? He cannot nor does he ask it. It is to the men of
+Helium that he states his case; nor does he appeal for mercy to any. It
+is not in his own cause that he speaks now—it is in thine. In the cause
+of your wives and daughters, and of wives and daughters yet unborn. It
+is to save them from the unthinkably atrocious indignities that I have
+seen heaped upon the fair women of Barsoom in the place men call the
+Temple of Issus. It is to save them from the sucking embrace of the
+plant men, from the fangs of the great white apes of Dor, from the
+cruel lust of the Holy Therns, from all that the cold, dead Iss carries
+them to from homes of love and life and happiness.
+
+“Sits there no man here who does not know the history of John Carter.
+How he came among you from another world and rose from a prisoner among
+the green men, through torture and persecution, to a place high among
+the highest of Barsoom. Nor ever did you know John Carter to lie in his
+own behalf, or to say aught that might harm the people of Barsoom, or
+to speak lightly of the strange religion which he respected without
+understanding.
+
+“There be no man here, or elsewhere upon Barsoom to-day who does not
+owe his life directly to a single act of mine, in which I sacrificed
+myself and the happiness of my Princess that you might live. And so,
+men of Helium, I think that I have the right to demand that I be heard,
+that I be believed, and that you let me serve you and save you from the
+false hereafter of Dor and Issus as I saved you from the real death
+that other day.
+
+“It is to you of Helium that I speak now. When I am done let the men of
+Zodanga have their will with me. Zat Arras has taken my sword from me,
+so the men of Zodanga no longer fear me. Will you listen?”
+
+“Speak, John Carter, Prince of Helium,” cried a great noble from the
+audience, and the multitude echoed his permission, until the building
+rocked with the noise of their demonstration.
+
+Zat Arras knew better than to interfere with such a sentiment as was
+expressed that day in the Temple of Reward, and so for two hours I
+talked with the people of Helium.
+
+But when I had finished, Zat Arras arose and, turning to the judges,
+said in a low tone: “My nobles, you have heard John Carter’s plea;
+every opportunity has been given him to prove his innocence if he be
+not guilty; but instead he has but utilized the time in further
+blasphemy. What, gentlemen, is your verdict?”
+
+“Death to the blasphemer!” cried one, springing to his feet, and in an
+instant the entire thirty-one judges were on their feet with upraised
+swords in token of the unanimity of their verdict.
+
+If the people did not hear Zat Arras’ charge, they certainly did hear
+the verdict of the tribunal. A sullen murmur rose louder and louder
+about the packed coliseum, and then Kantos Kan, who had not left the
+platform since first he had taken his place near me, raised his hand
+for silence. When he could be heard he spoke to the people in a cool
+and level voice.
+
+“You have heard the fate that the men of Zodanga would mete to Helium’s
+noblest hero. It may be the duty of the men of Helium to accept the
+verdict as final. Let each man act according to his own heart. Here is
+the answer of Kantos Kan, head of the navy of Helium, to Zat Arras and
+his judges,” and with that he unbuckled his scabbard and threw his
+sword at my feet.
+
+In an instant soldiers and citizens, officers and nobles were crowding
+past the soldiers of Zodanga and forcing their way to the Throne of
+Righteousness. A hundred men surged up on the platform, and a hundred
+blades rattled and clanked to the floor at my feet. Zat Arras and his
+officers were furious, but they were helpless. One by one I raised the
+swords to my lips and buckled them again upon their owners.
+
+“Come,” said Kantos Kan, “we will escort John Carter and his party to
+his own palace,” and they formed about us and started toward the stairs
+leading to the Aisle of Hope.
+
+“Stop!” cried Zat Arras. “Soldiers of Helium, let no prisoner leave the
+Throne of Righteousness.”
+
+The soldiery from Zodanga were the only organized body of Heliumetic
+troops within the temple, so Zat Arras was confident that his orders
+would be obeyed, but I do not think that he looked for the opposition
+that was raised the moment the soldiers advanced toward the throne.
+
+From every quarter of the coliseum swords flashed and men rushed
+threateningly upon the Zodangans. Some one raised a cry: “Tardos Mors
+is dead—a thousand years to John Carter, Jeddak of Helium.” As I heard
+that and saw the ugly attitude of the men of Helium toward the soldiers
+of Zat Arras, I knew that only a miracle could avert a clash that would
+end in civil war.
+
+“Hold!” I cried, leaping to the Pedestal of Truth once more. “Let no
+man move till I am done. A single sword thrust here to-day may plunge
+Helium into a bitter and bloody war the results of which none can
+foresee. It will turn brother against brother and father against son.
+No man’s life is worth that sacrifice. Rather would I submit to the
+biased judgment of Zat Arras than be the cause of civil strife in
+Helium.
+
+“Let us each give in a point to the other, and let this entire matter
+rest until Tardos Mors returns, or Mors Kajak, his son. If neither be
+back at the end of a year a second trial may be held—the thing has a
+precedent.” And then turning to Zat Arras, I said in a low voice:
+“Unless you be a bigger fool than I take you to be, you will grasp the
+chance I am offering you ere it is too late. Once that multitude of
+swords below is drawn against your soldiery no man upon Barsoom—not
+even Tardos Mors himself—can avert the consequences. What say you?
+Speak quickly.”
+
+The Jed of Zodangan Helium raised his voice to the angry sea beneath
+us.
+
+“Stay your hands, men of Helium,” he shouted, his voice trembling with
+rage. “The sentence of the court is passed, but the day of retribution
+has not been set. I, Zat Arras, Jed of Zodanga, appreciating the royal
+connections of the prisoner and his past services to Helium and
+Barsoom, grant a respite of one year, or until the return of Mors
+Kajak, or Tardos Mors to Helium. Disperse quietly to your houses. Go.”
+
+No one moved. Instead, they stood in tense silence with their eyes
+fastened upon me, as though waiting for a signal to attack.
+
+“Clear the temple,” commanded Zat Arras, in a low tone to one of his
+officers.
+
+Fearing the result of an attempt to carry out this order by force, I
+stepped to the edge of the platform and, pointing toward the main
+entrance, bid them pass out. As one man they turned at my request and
+filed, silent and threatening, past the soldiers of Zat Arras, Jed of
+Zodanga, who stood scowling in impotent rage.
+
+Kantos Kan with the others who had sworn allegiance to me still stood
+upon the Throne of Righteousness with me.
+
+“Come,” said Kantos Kan to me, “we will escort you to your palace, my
+Prince. Come, Carthoris and Xodar. Come, Tars Tarkas.” And with a
+haughty sneer for Zat Arras upon his handsome lips, he turned and
+strode to the throne steps and up the Aisle of Hope. We four and the
+hundred loyal ones followed behind him, nor was a hand raised to stay
+us, though glowering eyes followed our triumphal march through the
+temple.
+
+In the avenues we found a press of people, but they opened a pathway
+for us, and many were the swords that were flung at my feet as I passed
+through the city of Helium toward my palace upon the outskirts. Here my
+old slaves fell upon their knees and kissed my hands as I greeted them.
+They cared not where I had been. It was enough that I had returned to
+them.
+
+“Ah, master,” cried one, “if our divine Princess were but here this
+would be a day indeed.”
+
+Tears came to my eyes, so that I was forced to turn away that I might
+hide my emotions. Carthoris wept openly as the slaves pressed about him
+with expressions of affection, and words of sorrow for our common loss.
+It was now that Tars Tarkas for the first time learned that his
+daughter, Sola, had accompanied Dejah Thoris upon the last long
+pilgrimage. I had not had the heart to tell him what Kantos Kan had
+told me. With the stoicism of the green Martian he showed no sign of
+suffering, yet I knew that his grief was as poignant as my own. In
+marked contrast to his kind, he had in well-developed form the kindlier
+human characteristics of love, friendship, and charity.
+
+It was a sad and sombre party that sat at the feast of welcome in the
+great dining hall of the palace of the Prince of Helium that day. We
+were over a hundred strong, not counting the members of my little
+court, for Dejah Thoris and I had maintained a household consistent
+with our royal rank.
+
+The board, according to red Martian custom, was triangular, for there
+were three in our family. Carthoris and I presided in the centre of our
+sides of the table—midway of the third side Dejah Thoris’ high-backed,
+carven chair stood vacant except for her gorgeous wedding trappings and
+jewels which were draped upon it. Behind stood a slave as in the days
+when his mistress had occupied her place at the board, ready to do her
+bidding. It was the way upon Barsoom, so I endured the anguish of it,
+though it wrung my heart to see that silent chair where should have
+been my laughing and vivacious Princess keeping the great hall ringing
+with her merry gaiety.
+
+At my right sat Kantos Kan, while to the right of Dejah Thoris’ empty
+place Tars Tarkas sat in a huge chair before a raised section of the
+board which years ago I had had constructed to meet the requirements of
+his mighty bulk. The place of honour at a Martian board is always at
+the hostess’s right, and this place was ever reserved by Dejah Thoris
+for the great Thark upon the occasions that he was in Helium.
+
+Hor Vastus sat in the seat of honour upon Carthoris’ side of the table.
+There was little general conversation. It was a quiet and saddened
+party. The loss of Dejah Thoris was still fresh in the minds of all,
+and to this was added fear for the safety of Tardos Mors and Mors
+Kajak, as well as doubt and uncertainty as to the fate of Helium,
+should it prove true that she was permanently deprived of her great
+Jeddak.
+
+Suddenly our attention was attracted by the sound of distant shouting,
+as of many people raising their voices at once, but whether in anger or
+rejoicing, we could not tell. Nearer and nearer came the tumult. A
+slave rushed into the dining hall to cry that a great concourse of
+people was swarming through the palace gates. A second burst upon the
+heels of the first alternately laughing and shrieking as a madman.
+
+“Dejah Thoris is found!” he cried. “A messenger from Dejah Thoris!”
+
+I waited to hear no more. The great windows of the dining hall
+overlooked the avenue leading to the main gates—they were upon the
+opposite side of the hall from me with the table intervening. I did not
+waste time in circling the great board—with a single leap I cleared
+table and diners and sprang upon the balcony beyond. Thirty feet below
+lay the scarlet sward of the lawn and beyond were many people crowding
+about a great thoat which bore a rider headed toward the palace. I
+vaulted to the ground below and ran swiftly toward the advancing party.
+
+As I came near to them I saw that the figure on the thoat was Sola.
+
+“Where is the Princess of Helium?” I cried.
+
+The green girl slid from her mighty mount and ran toward me.
+
+“O my Prince! My Prince!” she cried. “She is gone for ever. Even now
+she may be a captive upon the lesser moon. The black pirates of Barsoom
+have stolen her.”
+
+## CHAPTER XVIII SOLA’S STORY
+
+Once within the palace, I drew Sola to the dining hall, and, when she
+had greeted her father after the formal manner of the green men, she
+told the story of the pilgrimage and capture of Dejah Thoris.
+
+“Seven days ago, after her audience with Zat Arras, Dejah Thoris
+attempted to slip from the palace in the dead of night. Although I had
+not heard the outcome of her interview with Zat Arras I knew that
+something had occurred then to cause her the keenest mental agony, and
+when I discovered her creeping from the palace I did not need to be
+told her destination.
+
+“Hastily arousing a dozen of her most faithful guards, I explained my
+fears to them, and as one they enlisted with me to follow our beloved
+Princess in her wanderings, even to the Sacred Iss and the Valley Dor.
+We came upon her but a short distance from the palace. With her was
+faithful Woola the hound, but none other. When we overtook her she
+feigned anger, and ordered us back to the palace, but for once we
+disobeyed her, and when she found that we would not let her go upon the
+last long pilgrimage alone, she wept and embraced us, and together we
+went out into the night toward the south.
+
+“The following day we came upon a herd of small thoats, and thereafter
+we were mounted and made good time. We travelled very fast and very far
+due south until the morning of the fifth day we sighted a great fleet
+of battleships sailing north. They saw us before we could seek shelter,
+and soon we were surrounded by a horde of black men. The Princess’s
+guard fought nobly to the end, but they were soon overcome and slain.
+Only Dejah Thoris and I were spared.
+
+“When she realized that she was in the clutches of the black pirates,
+she attempted to take her own life, but one of the blacks tore her
+dagger from her, and then they bound us both so that we could not use
+our hands.
+
+“The fleet continued north after capturing us. There were about twenty
+large battleships in all, besides a number of small swift cruisers.
+That evening one of the smaller cruisers that had been far in advance
+of the fleet returned with a prisoner—a young red woman whom they had
+picked up in a range of hills under the very noses, they said, of a
+fleet of three red Martian battleships.
+
+“From scraps of conversation which we overheard it was evident that the
+black pirates were searching for a party of fugitives that had escaped
+them several days prior. That they considered the capture of the young
+woman important was evident from the long and earnest interview the
+commander of the fleet held with her when she was brought to him. Later
+she was bound and placed in the compartment with Dejah Thoris and
+myself.
+
+“The new captive was a very beautiful girl. She told Dejah Thoris that
+many years ago she had taken the voluntary pilgrimage from the court of
+her father, the Jeddak of Ptarth. She was Thuvia, the Princess of
+Ptarth. And then she asked Dejah Thoris who she might be, and when she
+heard she fell upon her knees and kissed Dejah Thoris’ fettered hands,
+and told her that that very morning she had been with John Carter,
+Prince of Helium, and Carthoris, her son.
+
+“Dejah Thoris could not believe her at first, but finally when the girl
+had narrated all the strange adventures that had befallen her since she
+had met John Carter, and told her of the things John Carter, and
+Carthoris, and Xodar had narrated of their adventures in the Land of
+the First Born, Dejah Thoris knew that it could be none other than the
+Prince of Helium; ‘For who,’ she said, ‘upon all Barsoom other than
+John Carter could have done the deeds you tell of.’ And when Thuvia
+told Dejah Thoris of her love for John Carter, and his loyalty and
+devotion to the Princess of his choice, Dejah Thoris broke down and
+wept—cursing Zat Arras and the cruel fate that had driven her from
+Helium but a few brief days before the return of her beloved lord.
+
+“‘I do not blame you for loving him, Thuvia,’ she said; ‘and that your
+affection for him is pure and sincere I can well believe from the
+candour of your avowal of it to me.’
+
+“The fleet continued north nearly to Helium, but last night they
+evidently realized that John Carter had indeed escaped them and so they
+turned toward the south once more. Shortly thereafter a guard entered
+our compartment and dragged me to the deck.
+
+“‘There is no place in the Land of the First Born for a green one,’ he
+said, and with that he gave me a terrific shove that carried me
+toppling from the deck of the battleship. Evidently this seemed to him
+the easiest way of ridding the vessel of my presence and killing me at
+the same time.
+
+“But a kind fate intervened, and by a miracle I escaped with but slight
+bruises. The ship was moving slowly at the time, and as I lunged
+overboard into the darkness beneath I shuddered at the awful plunge I
+thought awaited me, for all day the fleet had sailed thousands of feet
+above the ground; but to my utter surprise I struck upon a soft mass of
+vegetation not twenty feet from the deck of the ship. In fact, the keel
+of the vessel must have been grazing the surface of the ground at the
+time.
+
+“I lay all night where I had fallen and the next morning brought an
+explanation of the fortunate coincidence that had saved me from a
+terrible death. As the sun rose I saw a vast panorama of sea bottom and
+distant hills lying far below me. I was upon the highest peak of a
+lofty range. The fleet in the darkness of the preceding night had
+barely grazed the crest of the hills, and in the brief span that they
+hovered close to the surface the black guard had pitched me, as he
+supposed, to my death.
+
+“A few miles west of me was a great waterway. When I reached it I found
+to my delight that it belonged to Helium. Here a thoat was procured for
+me—the rest you know.”
+
+For many minutes none spoke. Dejah Thoris in the clutches of the First
+Born! I shuddered at the thought, but of a sudden the old fire of
+unconquerable self-confidence surged through me. I sprang to my feet,
+and with back-thrown shoulders and upraised sword took a solemn vow to
+reach, rescue, and revenge my Princess.
+
+A hundred swords leaped from a hundred scabbards, and a hundred
+fighting-men sprang to the table-top and pledged me their lives and
+fortunes to the expedition. Already my plans were formulated. I thanked
+each loyal friend, and leaving Carthoris to entertain them, withdrew to
+my own audience chamber with Kantos Kan, Tars Tarkas, Xodar, and Hor
+Vastus.
+
+Here we discussed the details of our expedition until long after dark.
+Xodar was positive that Issus would choose both Dejah Thoris and Thuvia
+to serve her for a year.
+
+“For that length of time at least they will be comparatively safe,” he
+said, “and we will at least know where to look for them.”
+
+In the matter of equipping a fleet to enter Omean the details were left
+to Kantos Kan and Xodar. The former agreed to take such vessels as we
+required into dock as rapidly as possible, where Xodar would direct
+their equipment with water propellers.
+
+For many years the black had been in charge of the refitting of
+captured battleships that they might navigate Omean, and so was
+familiar with the construction of the propellers, housings, and the
+auxiliary gearing required.
+
+It was estimated that it would require six months to complete our
+preparations in view of the fact that the utmost secrecy must be
+maintained to keep the project from the ears of Zat Arras. Kantos Kan
+was confident now that the man’s ambitions were fully aroused and that
+nothing short of the title of Jeddak of Helium would satisfy him.
+
+“I doubt,” he said, “if he would even welcome Dejah Thoris’ return, for
+it would mean another nearer the throne than he. With you and Carthoris
+out of the way there would be little to prevent him from assuming the
+title of Jeddak, and you may rest assured that so long as he is supreme
+here there is no safety for either of you.”
+
+“There is a way,” cried Hor Vastus, “to thwart him effectually and for
+ever.”
+
+“What?” I asked.
+
+He smiled.
+
+“I shall whisper it here, but some day I shall stand upon the dome of
+the Temple of Reward and shout it to cheering multitudes below.”
+
+“What do you mean?” asked Kantos Kan.
+
+“John Carter, Jeddak of Helium,” said Hor Vastus in a low voice.
+
+The eyes of my companions lighted, and grim smiles of pleasure and
+anticipation overspread their faces, as each eye turned toward me
+questioningly. But I shook my head.
+
+“No, my friends,” I said, smiling, “I thank you, but it cannot be. Not
+yet, at least. When we know that Tardos Mors and Mors Kajak are gone to
+return no more; if I be here, then I shall join you all to see that the
+people of Helium are permitted to choose fairly their next Jeddak. Whom
+they choose may count upon the loyalty of my sword, nor shall I seek
+the honour for myself. Until then Tardos Mors is Jeddak of Helium, and
+Zat Arras is his representative.”
+
+“As you will, John Carter,” said Hor Vastus, “but—What was that?” he
+whispered, pointing toward the window overlooking the gardens.
+
+The words were scarce out of his mouth ere he had sprung to the balcony
+without.
+
+“There he goes!” he cried excitedly. “The guards! Below there! The
+guards!”
+
+We were close behind him, and all saw the figure of a man run quickly
+across a little piece of sward and disappear in the shrubbery beyond.
+
+“He was on the balcony when I first saw him,” cried Hor Vastus. “Quick!
+Let us follow him!”
+
+Together we ran to the gardens, but even though we scoured the grounds
+with the entire guard for hours, no trace could we find of the night
+marauder.
+
+“What do you make of it, Kantos Kan?” asked Tars Tarkas.
+
+“A spy sent by Zat Arras,” he replied. “It was ever his way.”
+
+“He will have something interesting to report to his master then,”
+laughed Hor Vastus.
+
+“I hope he heard only our references to a new Jeddak,” I said. “If he
+overheard our plans to rescue Dejah Thoris, it will mean civil war, for
+he will attempt to thwart us, and in that I will not be thwarted. There
+would I turn against Tardos Mors himself, were it necessary. If it
+throws all Helium into a bloody conflict, I shall go on with these
+plans to save my Princess. Nothing shall stay me now short of death,
+and should I die, my friends, will you take oath to prosecute the
+search for her and bring her back in safety to her grandfather’s
+court?”
+
+Upon the hilt of his sword each of them swore to do as I had asked.
+
+It was agreed that the battleships that were to be remodelled should be
+ordered to Hastor, another Heliumetic city, far to the south-west.
+Kantos Kan thought that the docks there, in addition to their regular
+work, would accommodate at least six battleships at a time. As he was
+commander-in-chief of the navy, it would be a simple matter for him to
+order the vessels there as they could be handled, and thereafter keep
+the remodelled fleet in remote parts of the empire until we should be
+ready to assemble it for the dash upon Omean.
+
+It was late that night before our conference broke up, but each man
+there had his particular duties outlined, and the details of the entire
+plan had been mapped out.
+
+Kantos Kan and Xodar were to attend to the remodelling of the ships.
+Tars Tarkas was to get into communication with Thark and learn the
+sentiments of his people toward his return from Dor. If favourable, he
+was to repair immediately to Thark and devote his time to the
+assembling of a great horde of green warriors whom it was our plan to
+send in transports directly to the Valley Dor and the Temple of Issus,
+while the fleet entered Omean and destroyed the vessels of the First
+Born.
+
+Upon Hor Vastus devolved the delicate mission of organising a secret
+force of fighting-men sworn to follow John Carter wherever he might
+lead. As we estimated that it would require over a million men to man
+the thousand great battleships we intended to use on Omean and the
+transports for the green men as well as the ships that were to convoy
+the transports, it was no trifling job that Hor Vastus had before him.
+
+After they had left I bid Carthoris good-night, for I was very tired,
+and going to my own apartments, bathed and lay down upon my sleeping
+silks and furs for the first good night’s sleep I had had an
+opportunity to look forward to since I had returned to Barsoom. But
+even now I was to be disappointed.
+
+How long I slept I do not know. When I awoke suddenly it was to find a
+half-dozen powerful men upon me, a gag already in my mouth, and a
+moment later my arms and legs securely bound. So quickly had they
+worked and to such good purpose, that I was utterly beyond the power to
+resist them by the time I was fully awake.
+
+Never a word spoke they, and the gag effectually prevented me speaking.
+Silently they lifted me and bore me toward the door of my chamber. As
+they passed the window through which the farther moon was casting its
+brilliant beams, I saw that each of the party had his face swathed in
+layers of silk—I could not recognize one of them.
+
+When they had come into the corridor with me, they turned toward a
+secret panel in the wall which led to the passage that terminated in
+the pits beneath the palace. That any knew of this panel outside my own
+household, I was doubtful. Yet the leader of the band did not hesitate
+a moment. He stepped directly to the panel, touched the concealed
+button, and as the door swung open he stood aside while his companions
+entered with me. Then he closed the panel behind him and followed us.
+
+Down through the passageways to the pits we went. The leader rapped
+upon it with the hilt of his sword—three quick, sharp blows, a pause,
+then three more, another pause, and then two. A second later the wall
+swung in, and I was pushed within a brilliantly lighted chamber in
+which sat three richly trapped men.
+
+One of them turned toward me with a sardonic smile upon his thin, cruel
+lips—it was Zat Arras.
+
+## CHAPTER XIX BLACK DESPAIR
+
+“Ah,” said Zat Arras, “to what kindly circumstance am I indebted for
+the pleasure of this unexpected visit from the Prince of Helium?”
+
+While he was speaking, one of my guards had removed the gag from my
+mouth, but I made no reply to Zat Arras: simply standing there in
+silence with level gaze fixed upon the Jed of Zodanga. And I doubt not
+that my expression was coloured by the contempt I felt for the man.
+
+The eyes of those within the chamber were fixed first upon me and then
+upon Zat Arras, until finally a flush of anger crept slowly over his
+face.
+
+“You may go,” he said to those who had brought me, and when only his
+two companions and ourselves were left in the chamber, he spoke to me
+again in a voice of ice—very slowly and deliberately, with many pauses,
+as though he would choose his words cautiously.
+
+“John Carter,” he said, “by the edict of custom, by the law of our
+religion, and by the verdict of an impartial court, you are condemned
+to die. The people cannot save you—I alone may accomplish that. You are
+absolutely in my power to do with as I wish—I may kill you, or I may
+free you, and should I elect to kill you, none would be the wiser.
+
+“Should you go free in Helium for a year, in accordance with the
+conditions of your reprieve, there is little fear that the people would
+ever insist upon the execution of the sentence imposed upon you.
+
+“You may go free within two minutes, upon one condition. Tardos Mors
+will never return to Helium. Neither will Mors Kajak, nor Dejah Thoris.
+Helium must select a new Jeddak within the year. Zat Arras would be
+Jeddak of Helium. Say that you will espouse my cause. This is the price
+of your freedom. I am done.”
+
+I knew it was within the scope of Zat Arras’ cruel heart to destroy me,
+and if I were dead I could see little reason to doubt that he might
+easily become Jeddak of Helium. Free, I could prosecute the search for
+Dejah Thoris. Were I dead, my brave comrades might not be able to carry
+out our plans. So, by refusing to accede to his request, it was quite
+probable that not only would I not prevent him from becoming Jeddak of
+Helium, but that I would be the means of sealing Dejah Thoris’ fate—of
+consigning her, through my refusal, to the horrors of the arena of
+Issus.
+
+For a moment I was perplexed, but for a moment only. The proud daughter
+of a thousand Jeddaks would choose death to a dishonorable alliance
+such as this, nor could John Carter do less for Helium than his
+Princess would do.
+
+Then I turned to Zat Arras.
+
+“There can be no alliance,” I said, “between a traitor to Helium and a
+prince of the House of Tardos Mors. I do not believe, Zat Arras, that
+the great Jeddak is dead.”
+
+Zat Arras shrugged his shoulders.
+
+“It will not be long, John Carter,” he said, “that your opinions will
+be of interest even to yourself, so make the best of them while you
+can. Zat Arras will permit you in due time to reflect further upon the
+magnanimous offer he has made you. Into the silence and darkness of the
+pits you will enter upon your reflection this night with the knowledge
+that should you fail within a reasonable time to agree to the
+alternative which has been offered you, never shall you emerge from the
+darkness and the silence again. Nor shall you know at what minute the
+hand will reach out through the darkness and the silence with the keen
+dagger that shall rob you of your last chance to win again the warmth
+and the freedom and joyousness of the outer world.”
+
+Zat Arras clapped his hands as he ceased speaking. The guards returned.
+
+Zat Arras waved his hand in my direction.
+
+“To the pits,” he said. That was all. Four men accompanied me from the
+chamber, and with a radium hand-light to illumine the way, escorted me
+through seemingly interminable tunnels, down, ever down beneath the
+city of Helium.
+
+At length they halted within a fair-sized chamber. There were rings set
+in the rocky walls. To them chains were fastened, and at the ends of
+many of the chains were human skeletons. One of these they kicked
+aside, and, unlocking the huge padlock that had held a chain about what
+had once been a human ankle, they snapped the iron band about my own
+leg. Then they left me, taking the light with them.
+
+Utter darkness prevailed. For a few minutes I could hear the clanking
+of accoutrements, but even this grew fainter and fainter, until at last
+the silence was as complete as the darkness. I was alone with my
+gruesome companions—with the bones of dead men whose fate was likely
+but the index of my own.
+
+How long I stood listening in the darkness I do not know, but the
+silence was unbroken, and at last I sunk to the hard floor of my
+prison, where, leaning my head against the stony wall, I slept.
+
+It must have been several hours later that I awakened to find a young
+man standing before me. In one hand he bore a light, in the other a
+receptacle containing a gruel-like mixture—the common prison fare of
+Barsoom.
+
+“Zat Arras sends you greetings,” said the young man, “and commands me
+to inform you that though he is fully advised of the plot to make you
+Jeddak of Helium, he is, however, not inclined to withdraw the offer
+which he has made you. To gain your freedom you have but to request me
+to advise Zat Arras that you accept the terms of his proposition.”
+
+I but shook my head. The youth said no more, and, after placing the
+food upon the floor at my side, returned up the corridor, taking the
+light with him.
+
+Twice a day for many days this youth came to my cell with food, and
+ever the same greetings from Zat Arras. For a long time I tried to
+engage him in conversation upon other matters, but he would not talk,
+and so, at length, I desisted.
+
+For months I sought to devise methods to inform Carthoris of my
+whereabouts. For months I scraped and scraped upon a single link of the
+massive chain which held me, hoping eventually to wear it through, that
+I might follow the youth back through the winding tunnels to a point
+where I could make a break for liberty.
+
+I was beside myself with anxiety for knowledge of the progress of the
+expedition which was to rescue Dejah Thoris. I felt that Carthoris
+would not let the matter drop, were he free to act, but in so far as I
+knew, he also might be a prisoner in Zat Arras’ pits.
+
+That Zat Arras’ spy had overheard our conversation relative to the
+selection of a new Jeddak, I knew, and scarcely a half-dozen minutes
+prior we had discussed the details of the plan to rescue Dejah Thoris.
+The chances were that that matter, too, was well known to him.
+Carthoris, Kantos Kan, Tars Tarkas, Hor Vastus, and Xodar might even
+now be the victims of Zat Arras’ assassins, or else his prisoners.
+
+I determined to make at least one more effort to learn something, and
+to this end I adopted strategy when next the youth came to my cell. I
+had noticed that he was a handsome fellow, about the size and age of
+Carthoris. And I had also noticed that his shabby trappings but illy
+comported with his dignified and noble bearing.
+
+It was with these observations as a basis that I opened my negotiations
+with him upon his next subsequent visit.
+
+“You have been very kind to me during my imprisonment here,” I said to
+him, “and as I feel that I have at best but a very short time to live,
+I wish, ere it is too late, to furnish substantial testimony of my
+appreciation of all that you have done to render my imprisonment
+bearable.
+
+“Promptly you have brought my food each day, seeing that it was pure
+and of sufficient quantity. Never by word or deed have you attempted to
+take advantage of my defenceless condition to insult or torture me. You
+have been uniformly courteous and considerate—it is this more than any
+other thing which prompts my feeling of gratitude and my desire to give
+you some slight token of it.
+
+“In the guard-room of my palace are many fine trappings. Go thou there
+and select the harness which most pleases you—it shall be yours. All I
+ask is that you wear it, that I may know that my wish has been
+realized. Tell me that you will do it.”
+
+The boy’s eyes had lighted with pleasure as I spoke, and I saw him
+glance from his rusty trappings to the magnificence of my own. For a
+moment he stood in thought before he spoke, and for that moment my
+heart fairly ceased beating—so much for me there was which hung upon
+the substance of his answer.
+
+“And I went to the palace of the Prince of Helium with any such demand,
+they would laugh at me and, into the bargain, would more than likely
+throw me headforemost into the avenue. No, it cannot be, though I thank
+you for the offer. Why, if Zat Arras even dreamed that I contemplated
+such a thing he would have my heart cut out of me.”
+
+“There can be no harm in it, my boy,” I urged. “By night you may go to
+my palace with a note from me to Carthoris, my son. You may read the
+note before you deliver it, that you may know that it contains nothing
+harmful to Zat Arras. My son will be discreet, and so none but us three
+need know. It is very simple, and such a harmless act that it could be
+condemned by no one.”
+
+Again he stood silently in deep thought.
+
+“And there is a jewelled short-sword which I took from the body of a
+northern Jeddak. When you get the harness, see that Carthoris gives you
+that also. With it and the harness which you may select there will be
+no more handsomely accoutred warrior in all Zodanga.
+
+“Bring writing materials when you come next to my cell, and within a
+few hours we shall see you garbed in a style befitting your birth and
+carriage.”
+
+Still in thought, and without speaking, he turned and left me. I could
+not guess what his decision might be, and for hours I sat fretting over
+the outcome of the matter.
+
+If he accepted a message to Carthoris it would mean to me that
+Carthoris still lived and was free. If the youth returned wearing the
+harness and the sword, I would know that Carthoris had received my note
+and that he knew that I still lived. That the bearer of the note was a
+Zodangan would be sufficient to explain to Carthoris that I was a
+prisoner of Zat Arras.
+
+It was with feelings of excited expectancy which I could scarce hide
+that I heard the youth’s approach upon the occasion of his next regular
+visit. I did not speak beyond my accustomed greeting of him. As he
+placed the food upon the floor by my side he also deposited writing
+materials at the same time.
+
+My heart fairly bounded for joy. I had won my point. For a moment I
+looked at the materials in feigned surprise, but soon I permitted an
+expression of dawning comprehension to come into my face, and then,
+picking them up, I penned a brief order to Carthoris to deliver to
+Parthak a harness of his selection and the short-sword which I
+described. That was all. But it meant everything to me and to
+Carthoris.
+
+I laid the note open upon the floor. Parthak picked it up and, without
+a word, left me.
+
+As nearly as I could estimate, I had at this time been in the pits for
+three hundred days. If anything was to be done to save Dejah Thoris it
+must be done quickly, for, were she not already dead, her end must soon
+come, since those whom Issus chose lived but a single year.
+
+The next time I heard approaching footsteps I could scarce await to see
+if Parthak wore the harness and the sword, but judge, if you can, my
+chagrin and disappointment when I saw that he who bore my food was not
+Parthak.
+
+“What has become of Parthak?” I asked, but the fellow would not answer,
+and as soon as he had deposited my food, turned and retraced his steps
+to the world above.
+
+Days came and went, and still my new jailer continued his duties, nor
+would he ever speak a word to me, either in reply to the simplest
+question or of his own initiative.
+
+I could only speculate on the cause of Parthak’s removal, but that it
+was connected in some way directly with the note I had given him was
+most apparent to me. After all my rejoicing, I was no better off than
+before, for now I did not even know that Carthoris lived, for if
+Parthak had wished to raise himself in the estimation of Zat Arras he
+would have permitted me to go on precisely as I did, so that he could
+carry my note to his master, in proof of his own loyalty and devotion.
+
+Thirty days had passed since I had given the youth the note. Three
+hundred and thirty days had passed since my incarceration. As closely
+as I could figure, there remained a bare thirty days ere Dejah Thoris
+would be ordered to the arena for the rites of Issus.
+
+As the terrible picture forced itself vividly across my imagination, I
+buried my face in my arms, and only with the greatest difficulty was it
+that I repressed the tears that welled to my eyes despite my every
+effort. To think of that beautiful creature torn and rended by the
+cruel fangs of the hideous white apes! It was unthinkable. Such a
+horrid fact could not be; and yet my reason told me that within thirty
+days my incomparable Princess would be fought over in the arena of the
+First Born by those very wild beasts; that her bleeding corpse would be
+dragged through the dirt and the dust, until at last a part of it would
+be rescued to be served as food upon the tables of the black nobles.
+
+I think that I should have gone crazy but for the sound of my
+approaching jailer. It distracted my attention from the terrible
+thoughts that had been occupying my entire mind. Now a new and grim
+determination came to me. I would make one super-human effort to
+escape. Kill my jailer by a ruse, and trust to fate to lead me to the
+outer world in safety.
+
+With the thought came instant action. I threw myself upon the floor of
+my cell close by the wall, in a strained and distorted posture, as
+though I were dead after a struggle or convulsions. When he should
+stoop over me I had but to grasp his throat with one hand and strike
+him a terrific blow with the slack of my chain, which I gripped firmly
+in my right hand for the purpose.
+
+Nearer and nearer came the doomed man. Now I heard him halt before me.
+There was a muttered exclamation, and then a step as he came to my
+side. I felt him kneel beside me. My grip tightened upon the chain. He
+leaned close to me. I must open my eyes to find his throat, grasp it,
+and strike one mighty final blow all at the same instant.
+
+The thing worked just as I had planned. So brief was the interval
+between the opening of my eyes and the fall of the chain that I could
+not check it, though in that minute interval I recognized the face so
+close to mine as that of my son, Carthoris.
+
+God! What cruel and malign fate had worked to such a frightful end!
+What devious chain of circumstances had led my boy to my side at this
+one particular minute of our lives when I could strike him down and
+kill him, in ignorance of his identity! A benign though tardy
+Providence blurred my vision and my mind as I sank into unconsciousness
+across the lifeless body of my only son.
+
+When I regained consciousness it was to feel a cool, firm hand pressed
+upon my forehead. For an instant I did not open my eyes. I was
+endeavouring to gather the loose ends of many thoughts and memories
+which flitted elusively through my tired and overwrought brain.
+
+At length came the cruel recollection of the thing that I had done in
+my last conscious act, and then I dared not to open my eyes for fear of
+what I should see lying beside me. I wondered who it could be who
+ministered to me. Carthoris must have had a companion whom I had not
+seen. Well, I must face the inevitable some time, so why not now, and
+with a sigh I opened my eyes.
+
+Leaning over me was Carthoris, a great bruise upon his forehead where
+the chain had struck, but alive, thank God, alive! There was no one
+with him. Reaching out my arms, I took my boy within them, and if ever
+there arose from any planet a fervent prayer of gratitude, it was there
+beneath the crust of dying Mars as I thanked the Eternal Mystery for my
+son’s life.
+
+The brief instant in which I had seen and recognized Carthoris before
+the chain fell must have been ample to check the force of the blow. He
+told me that he had lain unconscious for a time—how long he did not
+know.
+
+“How came you here at all?” I asked, mystified that he had found me
+without a guide.
+
+“It was by your wit in apprising me of your existence and imprisonment
+through the youth, Parthak. Until he came for his harness and his
+sword, we had thought you dead. When I had read your note I did as you
+had bid, giving Parthak his choice of the harnesses in the guardroom,
+and later bringing the jewelled short-sword to him; but the minute that
+I had fulfilled the promise you evidently had made him, my obligation
+to him ceased. Then I commenced to question him, but he would give me
+no information as to your whereabouts. He was intensely loyal to Zat
+Arras.
+
+“Finally I gave him a fair choice between freedom and the pits beneath
+the palace—the price of freedom to be full information as to where you
+were imprisoned and directions which would lead us to you; but still he
+maintained his stubborn partisanship. Despairing, I had him removed to
+the pits, where he still is.
+
+“No threats of torture or death, no bribes, however fabulous, would
+move him. His only reply to all our importunities was that whenever
+Parthak died, were it to-morrow or a thousand years hence, no man could
+truly say, ‘A traitor is gone to his deserts.’
+
+“Finally, Xodar, who is a fiend for subtle craftiness, evolved a plan
+whereby we might worm the information from him. And so I caused Hor
+Vastus to be harnessed in the metal of a Zodangan soldier and chained
+in Parthak’s cell beside him. For fifteen days the noble Hor Vastus has
+languished in the darkness of the pits, but not in vain. Little by
+little he won the confidence and friendship of the Zodangan, until only
+to-day Parthak, thinking that he was speaking not only to a countryman,
+but to a dear friend, revealed to Hor Vastus the exact cell in which
+you lay.
+
+“It took me but a short time to locate the plans of the pits of Helium
+among the official papers. To come to you, though, was a trifle more
+difficult matter. As you know, while all the pits beneath the city are
+connected, there are but single entrances from those beneath each
+section and its neighbour, and that at the upper level just underneath
+the ground.
+
+“Of course, these openings which lead from contiguous pits to those
+beneath government buildings are always guarded, and so, while I easily
+came to the entrance to the pits beneath the palace which Zat Arras is
+occupying, I found there a Zodangan soldier on guard. There I left him
+when I had gone by, but his soul was no longer with him.
+
+“And here I am, just in time to be nearly killed by you,” he ended,
+laughing.
+
+As he talked Carthoris had been working at the lock which held my
+fetters, and now, with an exclamation of pleasure, he dropped the end
+of the chain to the floor, and I stood up once more, freed from the
+galling irons I had chafed in for almost a year.
+
+He had brought a long-sword and a dagger for me, and thus armed we set
+out upon the return journey to my palace.
+
+At the point where we left the pits of Zat Arras we found the body of
+the guard Carthoris had slain. It had not yet been discovered, and, in
+order to still further delay search and mystify the jed’s people, we
+carried the body with us for a short distance, hiding it in a tiny cell
+off the main corridor of the pits beneath an adjoining estate.
+
+Some half-hour later we came to the pits beneath our own palace, and
+soon thereafter emerged into the audience chamber itself, where we
+found Kantos Kan, Tars Tarkas, Hor Vastus, and Xodar awaiting us most
+impatiently.
+
+No time was lost in fruitless recounting of my imprisonment. What I
+desired to know was how well the plans we had laid nearly a year ago
+had been carried out.
+
+“It has taken much longer than we had expected,” replied Kantos Kan.
+“The fact that we were compelled to maintain utter secrecy has
+handicapped us terribly. Zat Arras’ spies are everywhere. Yet, to the
+best of my knowledge, no word of our real plans has reached the
+villain’s ear.
+
+“To-night there lies about the great docks at Hastor a fleet of a
+thousand of the mightiest battleships that ever sailed above Barsoom,
+and each equipped to navigate the air of Omean and the waters of Omean
+itself. Upon each battleship there are five ten-man cruisers, and ten
+five-man scouts, and a hundred one-man scouts; in all, one hundred and
+sixteen thousand craft fitted with both air and water propellers.
+
+“At Thark lie the transports for the green warriors of Tars Tarkas,
+nine hundred large troopships, and with them their convoys. Seven days
+ago all was in readiness, but we waited in the hope that by so doing
+your rescue might be encompassed in time for you to command the
+expedition. It is well we waited, my Prince.”
+
+“How is it, Tars Tarkas,” I asked, “that the men of Thark take not the
+accustomed action against one who returns from the bosom of Iss?”
+
+“They sent a council of fifty chieftains to talk with me here,” replied
+the Thark. “We are a just people, and when I had told them the entire
+story they were as one man in agreeing that their action toward me
+would be guided by the action of Helium toward John Carter. In the
+meantime, at their request, I was to resume my throne as Jeddak of
+Thark, that I might negotiate with neighboring hordes for warriors to
+compose the land forces of the expedition. I have done that which I
+agreed. Two hundred and fifty thousand fighting men, gathered from the
+ice cap at the north to the ice cap at the south, and representing a
+thousand different communities, from a hundred wild and warlike hordes,
+fill the great city of Thark to-night. They are ready to sail for the
+Land of the First Born when I give the word and fight there until I bid
+them stop. All they ask is the loot they take and transportation to
+their own territories when the fighting and the looting are over. I am
+done.”
+
+“And thou, Hor Vastus,” I asked, “what has been thy success?”
+
+“A million veteran fighting-men from Helium’s thin waterways man the
+battleships, the transports, and the convoys,” he replied. “Each is
+sworn to loyalty and secrecy, nor were enough recruited from a single
+district to cause suspicion.”
+
+“Good!” I cried. “Each has done his duty, and now, Kantos Kan, may we
+not repair at once to Hastor and get under way before to-morrow’s sun?”
+
+“We should lose no time, Prince,” replied Kantos Kan. “Already the
+people of Hastor are questioning the purpose of so great a fleet fully
+manned with fighting-men. I wonder much that word of it has not before
+reached Zat Arras. A cruiser awaits above at your own dock; let us
+leave at—” A fusillade of shots from the palace gardens just without
+cut short his further words.
+
+Together we rushed to the balcony in time to see a dozen members of my
+palace guard disappear in the shadows of some distant shrubbery as in
+pursuit of one who fled. Directly beneath us upon the scarlet sward a
+handful of guardsmen were stooping above a still and prostrate form.
+
+While we watched they lifted the figure in their arms and at my command
+bore it to the audience chamber where we had been in council. When they
+stretched the body at our feet we saw that it was that of a red man in
+the prime of life—his metal was plain, such as common soldiers wear, or
+those who wish to conceal their identity.
+
+“Another of Zat Arras’ spies,” said Hor Vastus.
+
+“So it would seem,” I replied, and then to the guard: “You may remove
+the body.”
+
+“Wait!” said Xodar. “If you will, Prince, ask that a cloth and a little
+thoat oil be brought.”
+
+I nodded to one of the soldiers, who left the chamber, returning
+presently with the things that Xodar had requested. The black kneeled
+beside the body and, dipping a corner of the cloth in the thoat oil,
+rubbed for a moment on the dead face before him. Then he turned to me
+with a smile, pointing to his work. I looked and saw that where Xodar
+had applied the thoat oil the face was white, as white as mine, and
+then Xodar seized the black hair of the corpse and with a sudden wrench
+tore it all away, revealing a hairless pate beneath.
+
+Guardsmen and nobles pressed close about the silent witness upon the
+marble floor. Many were the exclamations of astonishment and
+questioning wonder as Xodar’s acts confirmed the suspicion which he had
+held.
+
+“A thern!” whispered Tars Tarkas.
+
+“Worse than that, I fear,” replied Xodar. “But let us see.”
+
+With that he drew his dagger and cut open a locked pouch which had
+dangled from the thern’s harness, and from it he brought forth a
+circlet of gold set with a large gem—it was the mate to that which I
+had taken from Sator Throg.
+
+“He was a Holy Thern,” said Xodar. “Fortunate indeed it is for us that
+he did not escape.”
+
+The officer of the guard entered the chamber at this juncture.
+
+“My Prince,” he said, “I have to report that this fellow’s companion
+escaped us. I think that it was with the connivance of one or more of
+the men at the gate. I have ordered them all under arrest.”
+
+Xodar handed him the thoat oil and cloth.
+
+“With this you may discover the spy among you,” he said.
+
+I at once ordered a secret search within the city, for every Martian
+noble maintains a secret service of his own.
+
+A half-hour later the officer of the guard came again to report. This
+time it was to confirm our worst fears—half the guards at the gate that
+night had been therns disguised as red men.
+
+“Come!” I cried. “We must lose no time. On to Hastor at once. Should
+the therns attempt to check us at the southern verge of the ice cap it
+may result in the wrecking of all our plans and the total destruction
+of the expedition.”
+
+Ten minutes later we were speeding through the night toward Hastor,
+prepared to strike the first blow for the preservation of Dejah Thoris.
+
+## CHAPTER XX THE AIR BATTLE
+
+Two hours after leaving my palace at Helium, or about midnight, Kantos
+Kan, Xodar, and I arrived at Hastor. Carthoris, Tars Tarkas, and Hor
+Vastus had gone directly to Thark upon another cruiser.
+
+The transports were to get under way immediately and move slowly south.
+The fleet of battleships would overtake them on the morning of the
+second day.
+
+At Hastor we found all in readiness, and so perfectly had Kantos Kan
+planned every detail of the campaign that within ten minutes of our
+arrival the first of the fleet had soared aloft from its dock, and
+thereafter, at the rate of one a second, the great ships floated
+gracefully out into the night to form a long, thin line which stretched
+for miles toward the south.
+
+It was not until after we had entered the cabin of Kantos Kan that I
+thought to ask the date, for up to now I was not positive how long I
+had lain in the pits of Zat Arras. When Kantos Kan told me, I realized
+with a pang of dismay that I had misreckoned the time while I lay in
+the utter darkness of my cell. Three hundred and sixty-five days had
+passed—it was too late to save Dejah Thoris.
+
+The expedition was no longer one of rescue but of revenge. I did not
+remind Kantos Kan of the terrible fact that ere we could hope to enter
+the Temple of Issus, the Princess of Helium would be no more. In so far
+as I knew she might be already dead, for I did not know the exact date
+on which she first viewed Issus.
+
+What now the value of burdening my friends with my added personal
+sorrows—they had shared quite enough of them with me in the past.
+Hereafter I would keep my grief to myself, and so I said nothing to any
+other of the fact that we were too late. The expedition could yet do
+much if it could but teach the people of Barsoom the facts of the cruel
+deception that had been worked upon them for countless ages, and thus
+save thousands each year from the horrid fate that awaited them at the
+conclusion of the voluntary pilgrimage.
+
+If it could open to the red men the fair Valley Dor it would have
+accomplished much, and in the Land of Lost Souls between the Mountains
+of Otz and the ice barrier were many broad acres that needed no
+irrigation to bear rich harvests.
+
+Here at the bottom of a dying world was the only naturally productive
+area upon its surface. Here alone were dews and rains, here alone was
+an open sea, here was water in plenty; and all this was but the
+stamping ground of fierce brutes and from its beauteous and fertile
+expanse the wicked remnants of two once mighty races barred all the
+other millions of Barsoom. Could I but succeed in once breaking down
+the barrier of religious superstition which had kept the red races from
+this El Dorado it would be a fitting memorial to the immortal virtues
+of my Princess—I should have again served Barsoom and Dejah Thoris’
+martyrdom would not have been in vain.
+
+On the morning of the second day we raised the great fleet of
+transports and their consorts at the first flood of dawn, and soon were
+near enough to exchange signals. I may mention here that
+radio-aerograms are seldom if ever used in war time, or for the
+transmission of secret dispatches at any time, for as often as one
+nation discovers a new cipher, or invents a new instrument for wireless
+purposes its neighbours bend every effort until they are able to
+intercept and translate the messages. For so long a time has this gone
+on that practically every possibility of wireless communication has
+been exhausted and no nation dares transmit dispatches of importance in
+this way.
+
+Tars Tarkas reported all well with the transports. The battleships
+passed through to take an advanced position, and the combined fleets
+moved slowly over the ice cap, hugging the surface closely to prevent
+detection by the therns whose land we were approaching.
+
+Far in advance of all a thin line of one-man air scouts protected us
+from surprise, and on either side they flanked us, while a smaller
+number brought up the rear some twenty miles behind the transports. In
+this formation we had progressed toward the entrance to Omean for
+several hours when one of our scouts returned from the front to report
+that the cone-like summit of the entrance was in sight. At almost the
+same instant another scout from the left flank came racing toward the
+flagship.
+
+His very speed bespoke the importance of his information. Kantos Kan
+and I awaited him upon the little forward deck which corresponds with
+the bridge of earthly battleships. Scarcely had his tiny flier come to
+rest upon the broad landing-deck of the flagship ere he was bounding up
+the stairway to the deck where we stood.
+
+“A great fleet of battleships south-south-east, my Prince,” he cried.
+“There must be several thousands and they are bearing down directly
+upon us.”
+
+“The thern spies were not in the palace of John Carter for nothing,”
+said Kantos Kan to me. “Your orders, Prince.”
+
+“Dispatch ten battleships to guard the entrance to Omean, with orders
+to let no hostile enter or leave the shaft. That will bottle up the
+great fleet of the First Born.
+
+“Form the balance of the battleships into a great V with the apex
+pointing directly south-south-east. Order the transports, surrounded by
+their convoys, to follow closely in the wake of the battleships until
+the point of the V has entered the enemies’ line, then the V must open
+outward at the apex, the battleships of each leg engage the enemy
+fiercely and drive him back to form a lane through his line into which
+the transports with their convoys must race at top speed that they may
+gain a position above the temples and gardens of the therns.
+
+“Here let them land and teach the Holy Therns such a lesson in
+ferocious warfare as they will not forget for countless ages. It had
+not been my intention to be distracted from the main issue of the
+campaign, but we must settle this attack with the therns once and for
+all, or there will be no peace for us while our fleet remains near Dor,
+and our chances of ever returning to the outer world will be greatly
+minimized.”
+
+Kantos Kan saluted and turned to deliver my instructions to his waiting
+aides. In an incredibly short space of time the formation of the
+battleships changed in accordance with my commands, the ten that were
+to guard the way to Omean were speeding toward their destination, and
+the troopships and convoys were closing up in preparation for the spurt
+through the lane.
+
+The order of full speed ahead was given, the fleet sprang through the
+air like coursing greyhounds, and in another moment the ships of the
+enemy were in full view. They formed a ragged line as far as the eye
+could reach in either direction and about three ships deep. So sudden
+was our onslaught that they had no time to prepare for it. It was as
+unexpected as lightning from a clear sky.
+
+Every phase of my plan worked splendidly. Our huge ships mowed their
+way entirely through the line of thern battlecraft; then the V opened
+up and a broad lane appeared through which the transports leaped toward
+the temples of the therns which could now be plainly seen glistening in
+the sunlight. By the time the therns had rallied from the attack a
+hundred thousand green warriors were already pouring through their
+courts and gardens, while a hundred and fifty thousand others leaned
+from low swinging transports to direct their almost uncanny
+marksmanship upon the thern soldiery that manned the ramparts, or
+attempted to defend the temples.
+
+Now the two great fleets closed in a titanic struggle far above the
+fiendish din of battle in the gorgeous gardens of the therns. Slowly
+the two lines of Helium’s battleships joined their ends, and then
+commenced the circling within the line of the enemy which is so marked
+a characteristic of Barsoomian naval warfare.
+
+Around and around in each other’s tracks moved the ships under Kantos
+Kan, until at length they formed nearly a perfect circle. By this time
+they were moving at high speed so that they presented a difficult
+target for the enemy. Broadside after broadside they delivered as each
+vessel came in line with the ships of the therns. The latter attempted
+to rush in and break up the formation, but it was like stopping a buzz
+saw with the bare hand.
+
+From my position on the deck beside Kantos Kan I saw ship after ship of
+the enemy take the awful, sickening dive which proclaims its total
+destruction. Slowly we manoeuvered our circle of death until we hung
+above the gardens where our green warriors were engaged. The order was
+passed down for them to embark. Then they rose slowly to a position
+within the centre of the circle.
+
+In the meantime the therns’ fire had practically ceased. They had had
+enough of us and were only too glad to let us go on our way in peace.
+But our escape was not to be encompassed with such ease, for scarcely
+had we gotten under way once more in the direction of the entrance to
+Omean than we saw far to the north a great black line topping the
+horizon. It could be nothing other than a fleet of war.
+
+Whose or whither bound, we could not even conjecture. When they had
+come close enough to make us out at all, Kantos Kan’s operator received
+a radio-aerogram, which he immediately handed to my companion. He read
+the thing and handed it to me.
+
+“Kantos Kan:” it read. “Surrender, in the name of the Jeddak of Helium,
+for you cannot escape,” and it was signed, “Zat Arras.”
+
+The therns must have caught and translated the message almost as soon
+as did we, for they immediately renewed hostilities when they realized
+that we were soon to be set upon by other enemies.
+
+Before Zat Arras had approached near enough to fire a shot we were
+again hotly engaged with the thern fleet, and as soon as he drew near
+he too commenced to pour a terrific fusillade of heavy shot into us.
+Ship after ship reeled and staggered into uselessness beneath the
+pitiless fire that we were undergoing.
+
+The thing could not last much longer. I ordered the transports to
+descend again into the gardens of the therns.
+
+“Wreak your vengeance to the utmost,” was my message to the green
+allies, “for by night there will be none left to avenge your wrongs.”
+
+Presently I saw the ten battleships that had been ordered to hold the
+shaft of Omean. They were returning at full speed, firing their stern
+batteries almost continuously. There could be but one explanation. They
+were being pursued by another hostile fleet. Well, the situation could
+be no worse. The expedition already was doomed. No man that had
+embarked upon it would return across that dreary ice cap. How I wished
+that I might face Zat Arras with my longsword for just an instant
+before I died! It was he who had caused our failure.
+
+As I watched the oncoming ten I saw their pursuers race swiftly into
+sight. It was another great fleet; for a moment I could not believe my
+eyes, but finally I was forced to admit that the most fatal calamity
+had overtaken the expedition, for the fleet I saw was none other than
+the fleet of the First Born, that should have been safely bottled up in
+Omean. What a series of misfortunes and disasters! What awful fate
+hovered over me, that I should have been so terribly thwarted at every
+angle of my search for my lost love! Could it be possible that the
+curse of Issus was upon me! That there was, indeed, some malign
+divinity in that hideous carcass! I would not believe it, and, throwing
+back my shoulders, I ran to the deck below to join my men in repelling
+boarders from one of the thern craft that had grappled us broadside. In
+the wild lust of hand-to-hand combat my old dauntless hopefulness
+returned. And as thern after thern went down beneath my blade, I could
+almost feel that we should win success in the end, even from apparent
+failure.
+
+My presence among the men so greatly inspirited them that they fell
+upon the luckless whites with such terrible ferocity that within a few
+moments we had turned the tables upon them and a second later as we
+swarmed their own decks I had the satisfaction of seeing their
+commander take the long leap from the bows of his vessel in token of
+surrender and defeat.
+
+Then I joined Kantos Kan. He had been watching what had taken place on
+the deck below, and it seemed to have given him a new thought.
+Immediately he passed an order to one of his officers, and presently
+the colours of the Prince of Helium broke from every point of the
+flagship. A great cheer arose from the men of our own ship, a cheer
+that was taken up by every other vessel of our expedition as they in
+turn broke my colours from their upper works.
+
+Then Kantos Kan sprang his coup. A signal legible to every sailor of
+all the fleets engaged in that fierce struggle was strung aloft upon
+the flagship.
+
+“Men of Helium for the Prince of Helium against all his enemies,” it
+read. Presently my colours broke from one of Zat Arras’ ships. Then
+from another and another. On some we could see fierce battles waging
+between the Zodangan soldiery and the Heliumetic crews, but eventually
+the colours of the Prince of Helium floated above every ship that had
+followed Zat Arras upon our trail—only his flagship flew them not.
+
+Zat Arras had brought five thousand ships. The sky was black with the
+three enormous fleets. It was Helium against the field now, and the
+fight had settled to countless individual duels. There could be little
+or no manoeuvering of fleets in that crowded, fire-split sky.
+
+Zat Arras’ flagship was close to my own. I could see the thin features
+of the man from where I stood. His Zodangan crew was pouring broadside
+after broadside into us and we were returning their fire with equal
+ferocity. Closer and closer came the two vessels until but a few yards
+intervened. Grapplers and boarders lined the contiguous rails of each.
+We were preparing for the death struggle with our hated enemy.
+
+There was but a yard between the two mighty ships as the first
+grappling irons were hurled. I rushed to the deck to be with my men as
+they boarded. Just as the vessels came together with a slight shock, I
+forced my way through the lines and was the first to spring to the deck
+of Zat Arras’ ship. After me poured a yelling, cheering, cursing throng
+of Helium’s best fighting-men. Nothing could withstand them in the
+fever of battle lust which enthralled them.
+
+Down went the Zodangans before that surging tide of war, and as my men
+cleared the lower decks I sprang to the forward deck where stood Zat
+Arras.
+
+“You are my prisoner, Zat Arras,” I cried. “Yield and you shall have
+quarter.”
+
+For a moment I could not tell whether he contemplated acceding to my
+demand or facing me with drawn sword. For an instant he stood
+hesitating, and then throwing down his arms he turned and rushed to the
+opposite side of the deck. Before I could overtake him he had sprung to
+the rail and hurled himself headforemost into the awful depths below.
+
+And thus came Zat Arras, Jed of Zodanga, to his end.
+
+On and on went that strange battle. The therns and blacks had not
+combined against us. Wherever thern ship met ship of the First Born was
+a battle royal, and in this I thought I saw our salvation. Wherever
+messages could be passed between us that could not be intercepted by
+our enemies I passed the word that all our vessels were to withdraw
+from the fight as rapidly as possible, taking a position to the west
+and south of the combatants. I also sent an air scout to the fighting
+green men in the gardens below to re-embark, and to the transports to
+join us.
+
+My commanders were further instructed that when engaged with an enemy
+to draw him as rapidly as possible toward a ship of his hereditary
+foeman, and by careful manoeuvring to force the two to engage, thus
+leaving himself free to withdraw. This stratagem worked to perfection,
+and just before the sun went down I had the satisfaction of seeing all
+that was left of my once mighty fleet gathered nearly twenty miles
+southwest of the still terrific battle between the blacks and whites.
+
+I now transferred Xodar to another battleship and sent him with all the
+transports and five thousand battleships directly overhead to the
+Temple of Issus. Carthoris and I, with Kantos Kan, took the remaining
+ships and headed for the entrance to Omean.
+
+Our plan now was to attempt to make a combined assault upon Issus at
+dawn of the following day. Tars Tarkas with his green warriors and Hor
+Vastus with the red men, guided by Xodar, were to land within the
+garden of Issus or the surrounding plains; while Carthoris, Kantos Kan,
+and I were to lead our smaller force from the sea of Omean through the
+pits beneath the temple, which Carthoris knew so well.
+
+I now learned for the first time the cause of my ten ships’ retreat
+from the mouth of the shaft. It seemed that when they had come upon the
+shaft the navy of the First Born were already issuing from its mouth.
+Fully twenty vessels had emerged, and though they gave battle
+immediately in an effort to stem the tide that rolled from the black
+pit, the odds against them were too great and they were forced to flee.
+
+With great caution we approached the shaft, under cover of darkness. At
+a distance of several miles I caused the fleet to be halted, and from
+there Carthoris went ahead alone upon a one-man flier to reconnoitre.
+In perhaps half an hour he returned to report that there was no sign of
+a patrol boat or of the enemy in any form, and so we moved swiftly and
+noiselessly forward once more toward Omean.
+
+At the mouth of the shaft we stopped again for a moment for all the
+vessels to reach their previously appointed stations, then with the
+flagship I dropped quickly into the black depths, while one by one the
+other vessels followed me in quick succession.
+
+We had decided to stake all on the chance that we would be able to
+reach the temple by the subterranean way and so we left no guard of
+vessels at the shaft’s mouth. Nor would it have profited us any to have
+done so, for we did not have sufficient force all told to have
+withstood the vast navy of the First Born had they returned to engage
+us.
+
+For the safety of our entrance upon Omean we depended largely upon the
+very boldness of it, believing that it would be some little time before
+the First Born on guard there would realize that it was an enemy and
+not their own returning fleet that was entering the vault of the buried
+sea.
+
+And such proved to be the case. In fact, four hundred of my fleet of
+five hundred rested safely upon the bosom of Omean before the first
+shot was fired. The battle was short and hot, but there could have been
+but one outcome, for the First Born in the carelessness of fancied
+security had left but a handful of ancient and obsolete hulks to guard
+their mighty harbour.
+
+It was at Carthoris’ suggestion that we landed our prisoners under
+guard upon a couple of the larger islands, and then towed the ships of
+the First Born to the shaft, where we managed to wedge a number of them
+securely in the interior of the great well. Then we turned on the
+buoyance rays in the balance of them and let them rise by themselves to
+further block the passage to Omean as they came into contact with the
+vessels already lodged there.
+
+We now felt that it would be some time at least before the returning
+First Born could reach the surface of Omean, and that we would have
+ample opportunity to make for the subterranean passages which lead to
+Issus. One of the first steps I took was to hasten personally with a
+good-sized force to the island of the submarine, which I took without
+resistance on the part of the small guard there.
+
+I found the submarine in its pool, and at once placed a strong guard
+upon it and the island, where I remained to wait the coming of
+Carthoris and the others.
+
+Among the prisoners was Yersted, commander of the submarine. He
+recognized me from the three trips that I had taken with him during my
+captivity among the First Born.
+
+“How does it seem,” I asked him, “to have the tables turned? To be
+prisoner of your erstwhile captive?”
+
+He smiled, a very grim smile pregnant with hidden meaning.
+
+“It will not be for long, John Carter,” he replied. “We have been
+expecting you and we are prepared.”
+
+“So it would appear,” I answered, “for you were all ready to become my
+prisoners with scarce a blow struck on either side.”
+
+“The fleet must have missed you,” he said, “but it will return to
+Omean, and then that will be a very different matter—for John Carter.”
+
+“I do not know that the fleet has missed me as yet,” I said, but of
+course he did not grasp my meaning, and only looked puzzled.
+
+“Many prisoners travel to Issus in your grim craft, Yersted?” I asked.
+
+“Very many,” he assented.
+
+“Might you remember one whom men called Dejah Thoris?”
+
+“Well, indeed, for her great beauty, and then, too, for the fact that
+she was wife to the first mortal that ever escaped from Issus through
+all the countless ages of her godhood. And the way that Issus remembers
+her best as the wife of one and the mother of another who raised their
+hands against the Goddess of Life Eternal.”
+
+I shuddered for fear of the cowardly revenge that I knew Issus might
+have taken upon the innocent Dejah Thoris for the sacrilege of her son
+and her husband.
+
+“And where is Dejah Thoris now?” I asked, knowing that he would say the
+words I most dreaded, but yet I loved her so that I could not refrain
+from hearing even the worst about her fate so that it fell from the
+lips of one who had seen her but recently. It was to me as though it
+brought her closer to me.
+
+“Yesterday the monthly rites of Issus were held,” replied Yersted, “and
+I saw her then sitting in her accustomed place at the foot of Issus.”
+
+“What,” I cried, “she is not dead, then?”
+
+“Why, no,” replied the black, “it has been no year since she gazed upon
+the divine glory of the radiant face of—”
+
+“No year?” I interrupted.
+
+“Why, no,” insisted Yersted. “It cannot have been upward of three
+hundred and seventy or eighty days.”
+
+A great light burst upon me. How stupid I had been! I could scarcely
+retain an outward exhibition of my great joy. Why had I forgotten the
+great difference in the length of Martian and Earthly years! The ten
+Earth years I had spent upon Barsoom had encompassed but five years and
+ninety-six days of Martian time, whose days are forty-one minutes
+longer than ours, and whose years number six hundred and eighty-seven
+days.
+
+I am in time! I am in time! The words surged through my brain again and
+again, until at last I must have voiced them audibly, for Yersted shook
+his head.
+
+“In time to save your Princess?” he asked, and then without waiting for
+my reply, “No, John Carter, Issus will not give up her own. She knows
+that you are coming, and ere ever a vandal foot is set within the
+precincts of the Temple of Issus, if such a calamity should befall,
+Dejah Thoris will be put away for ever from the last faint hope of
+rescue.”
+
+“You mean that she will be killed merely to thwart me?” I asked.
+
+“Not that, other than as a last resort,” he replied. “Hast ever heard
+of the Temple of the Sun? It is there that they will put her. It lies
+far within the inner court of the Temple of Issus, a little temple that
+raises a thin spire far above the spires and minarets of the great
+temple that surrounds it. Beneath it, in the ground, there lies the
+main body of the temple consisting in six hundred and eighty-seven
+circular chambers, one below another. To each chamber a single corridor
+leads through solid rock from the pits of Issus.
+
+“As the entire Temple of the Sun revolves once with each revolution of
+Barsoom about the sun, but once each year does the entrance to each
+separate chamber come opposite the mouth of the corridor which forms
+its only link to the world without.
+
+“Here Issus puts those who displease her, but whom she does not care to
+execute forthwith. Or to punish a noble of the First Born she may cause
+him to be placed within a chamber of the Temple of the Sun for a year.
+Ofttimes she imprisons an executioner with the condemned, that death
+may come in a certain horrible form upon a given day, or again but
+enough food is deposited in the chamber to sustain life but the number
+of days that Issus has allotted for mental anguish.
+
+“Thus will Dejah Thoris die, and her fate will be sealed by the first
+alien foot that crosses the threshold of Issus.”
+
+So I was to be thwarted in the end, although I had performed the
+miraculous and come within a few short moments of my divine Princess,
+yet was I as far from her as when I stood upon the banks of the Hudson
+forty-eight million miles away.
+
+## CHAPTER XXI THROUGH FLOOD AND FLAME
+
+Yersted’s information convinced me that there was no time to be lost. I
+must reach the Temple of Issus secretly before the forces under Tars
+Tarkas assaulted at dawn. Once within its hated walls I was positive
+that I could overcome the guards of Issus and bear away my Princess,
+for at my back I would have a force ample for the occasion.
+
+No sooner had Carthoris and the others joined me than we commenced the
+transportation of our men through the submerged passage to the mouth of
+the gangways which lead from the submarine pool at the temple end of
+the watery tunnel to the pits of Issus.
+
+Many trips were required, but at last all stood safely together again
+at the beginning of the end of our quest. Five thousand strong we were,
+all seasoned fighting-men of the most warlike race of the red men of
+Barsoom.
+
+As Carthoris alone knew the hidden ways of the tunnels we could not
+divide the party and attack the temple at several points at once as
+would have been most desirable, and so it was decided that he lead us
+all as quickly as possible to a point near the temple’s centre.
+
+As we were about to leave the pool and enter the corridor, an officer
+called my attention to the waters upon which the submarine floated. At
+first they seemed to be merely agitated as from the movement of some
+great body beneath the surface, and I at once conjectured that another
+submarine was rising to the surface in pursuit of us; but presently it
+became apparent that the level of the waters was rising, not with
+extreme rapidity, but very surely, and that soon they would overflow
+the sides of the pool and submerge the floor of the chamber.
+
+For a moment I did not fully grasp the terrible import of the slowly
+rising water. It was Carthoris who realized the full meaning of the
+thing—its cause and the reason for it.
+
+“Haste!” he cried. “If we delay, we all are lost. The pumps of Omean
+have been stopped. They would drown us like rats in a trap. We must
+reach the upper levels of the pits in advance of the flood or we shall
+never reach them. Come.”
+
+“Lead the way, Carthoris,” I cried. “We will follow.”
+
+At my command, the youth leaped into one of the corridors, and in
+column of twos the soldiers followed him in good order, each company
+entering the corridor only at the command of its dwar, or captain.
+
+Before the last company filed from the chamber the water was ankle
+deep, and that the men were nervous was quite evident. Entirely
+unaccustomed to water except in quantities sufficient for drinking and
+bathing purposes the red Martians instinctively shrank from it in such
+formidable depths and menacing activity. That they were undaunted while
+it swirled and eddied about their ankles, spoke well for their bravery
+and their discipline.
+
+I was the last to leave the chamber of the submarine, and as I followed
+the rear of the column toward the corridor, I moved through water to my
+knees. The corridor, too, was flooded to the same depth, for its floor
+was on a level with the floor of the chamber from which it led, nor was
+there any perceptible rise for many yards.
+
+The march of the troops through the corridor was as rapid as was
+consistent with the number of men that moved through so narrow a
+passage, but it was not ample to permit us to gain appreciably on the
+pursuing tide. As the level of the passage rose, so, too, did the
+waters rise until it soon became apparent to me, who brought up the
+rear, that they were gaining rapidly upon us. I could understand the
+reason for this, as with the narrowing expanse of Omean as the waters
+rose toward the apex of its dome, the rapidity of its rise would
+increase in inverse ratio to the ever-lessening space to be filled.
+
+Long ere the last of the column could hope to reach the upper pits
+which lay above the danger point I was convinced that the waters would
+surge after us in overwhelming volume, and that fully half the
+expedition would be snuffed out.
+
+As I cast about for some means of saving as many as possible of the
+doomed men, I saw a diverging corridor which seemed to rise at a steep
+angle at my right. The waters were now swirling about my waist. The men
+directly before me were quickly becoming panic-stricken. Something must
+be done at once or they would rush forward upon their fellows in a mad
+stampede that would result in trampling down hundreds beneath the flood
+and eventually clogging the passage beyond any hope of retreat for
+those in advance.
+
+Raising my voice to its utmost, I shouted my command to the dwars ahead
+of me.
+
+“Call back the last twenty-five utans,” I shouted. “Here seems a way of
+escape. Turn back and follow me.”
+
+My orders were obeyed by nearer thirty utans, so that some three
+thousand men came about and hastened into the teeth of the flood to
+reach the corridor up which I directed them.
+
+As the first dwar passed in with his utan I cautioned him to listen
+closely for my commands, and under no circumstances to venture into the
+open, or leave the pits for the temple proper until I should have come
+up with him, “or you know that I died before I could reach you.”
+
+The officer saluted and left me. The men filed rapidly past me and
+entered the diverging corridor which I hoped would lead to safety. The
+water rose breast high. Men stumbled, floundered, and went down. Many I
+grasped and set upon their feet again, but alone the work was greater
+than I could cope with. Soldiers were being swept beneath the boiling
+torrent, never to rise. At length the dwar of the 10th utan took a
+stand beside me. He was a valorous soldier, Gur Tus by name, and
+together we kept the now thoroughly frightened troops in the semblance
+of order and rescued many that would have drowned otherwise.
+
+Djor Kantos, son of Kantos Kan, and a padwar of the fifth utan joined
+us when his utan reached the opening through which the men were
+fleeing. Thereafter not a man was lost of all the hundreds that
+remained to pass from the main corridor to the branch.
+
+As the last utan was filing past us the waters had risen until they
+surged about our necks, but we clasped hands and stood our ground until
+the last man had passed to the comparative safety of the new
+passageway. Here we found an immediate and steep ascent, so that within
+a hundred yards we had reached a point above the waters.
+
+For a few minutes we continued rapidly up the steep grade, which I
+hoped would soon bring us quickly to the upper pits that let into the
+Temple of Issus. But I was to meet with a cruel disappointment.
+
+Suddenly I heard a cry of “fire” far ahead, followed almost at once by
+cries of terror and the loud commands of dwars and padwars who were
+evidently attempting to direct their men away from some grave danger.
+At last the report came back to us. “They have fired the pits ahead.”
+“We are hemmed in by flames in front and flood behind.” “Help, John
+Carter; we are suffocating,” and then there swept back upon us at the
+rear a wave of dense smoke that sent us, stumbling and blinded, into a
+choking retreat.
+
+There was naught to do other than seek a new avenue of escape. The fire
+and smoke were to be feared a thousand times over the water, and so I
+seized upon the first gallery which led out of and up from the
+suffocating smoke that was engulfing us.
+
+Again I stood to one side while the soldiers hastened through on the
+new way. Some two thousand must have passed at a rapid run, when the
+stream ceased, but I was not sure that all had been rescued who had not
+passed the point of origin of the flames, and so to assure myself that
+no poor devil was left behind to die a horrible death, unsuccoured, I
+ran quickly up the gallery in the direction of the flames which I could
+now see burning with a dull glow far ahead.
+
+It was hot and stifling work, but at last I reached a point where the
+fire lit up the corridor sufficiently for me to see that no soldier of
+Helium lay between me and the conflagration—what was in it or upon the
+far side I could not know, nor could any man have passed through that
+seething hell of chemicals and lived to learn.
+
+Having satisfied my sense of duty, I turned and ran rapidly back to the
+corridor through which my men had passed. To my horror, however, I
+found that my retreat in this direction had been blocked—across the
+mouth of the corridor stood a massive steel grating that had evidently
+been lowered from its resting-place above for the purpose of
+effectually cutting off my escape.
+
+That our principal movements were known to the First Born I could not
+have doubted, in view of the attack of the fleet upon us the day
+before, nor could the stopping of the pumps of Omean at the
+psychological moment have been due to chance, nor the starting of a
+chemical combustion within the one corridor through which we were
+advancing upon the Temple of Issus been due to aught than
+well-calculated design.
+
+And now the dropping of the steel gate to pen me effectually between
+fire and flood seemed to indicate that invisible eyes were upon us at
+every moment. What chance had I, then, to rescue Dejah Thoris were I to
+be compelled to fight foes who never showed themselves. A thousand
+times I berated myself for being drawn into such a trap as I might have
+known these pits easily could be. Now I saw that it would have been
+much better to have kept our force intact and made a concerted attack
+upon the temple from the valley side, trusting to chance and our great
+fighting ability to have overwhelmed the First Born and compelled the
+safe delivery of Dejah Thoris to me.
+
+The smoke from the fire was forcing me further and further back down
+the corridor toward the waters which I could hear surging through the
+darkness. With my men had gone the last torch, nor was this corridor
+lighted by the radiance of phosphorescent rock as were those of the
+lower levels. It was this fact that assured me that I was not far from
+the upper pits which lie directly beneath the temple.
+
+Finally I felt the lapping waters about my feet. The smoke was thick
+behind me. My suffering was intense. There seemed but one thing to do,
+and that to choose the easier death which confronted me, and so I moved
+on down the corridor until the cold waters of Omean closed about me,
+and I swam on through utter blackness toward—what?
+
+The instinct of self-preservation is strong even when one, unafraid and
+in the possession of his highest reasoning faculties, knows that
+death—positive and unalterable—lies just ahead. And so I swam slowly
+on, waiting for my head to touch the top of the corridor, which would
+mean that I had reached the limit of my flight and the point where I
+must sink for ever to an unmarked grave.
+
+But to my surprise I ran against a blank wall before I reached a point
+where the waters came to the roof of the corridor. Could I be mistaken?
+I felt around. No, I had come to the main corridor, and still there was
+a breathing space between the surface of the water and the rocky
+ceiling above. And then I turned up the main corridor in the direction
+that Carthoris and the head of the column had passed a half-hour
+before. On and on I swam, my heart growing lighter at every stroke, for
+I knew that I was approaching closer and closer to the point where
+there would be no chance that the waters ahead could be deeper than
+they were about me. I was positive that I must soon feel the solid
+floor beneath my feet again and that once more my chance would come to
+reach the Temple of Issus and the side of the fair prisoner who
+languished there.
+
+But even as hope was at its highest I felt the sudden shock of contact
+as my head struck the rocks above. The worst, then, had come to me. I
+had reached one of those rare places where a Martian tunnel dips
+suddenly to a lower level. Somewhere beyond I knew that it rose again,
+but of what value was that to me, since I did not know how great the
+distance that it maintained a level entirely beneath the surface of the
+water!
+
+There was but a single forlorn hope, and I took it. Filling my lungs
+with air, I dived beneath the surface and swam through the inky, icy
+blackness on and on along the submerged gallery. Time and time again I
+rose with upstretched hand, only to feel the disappointing rocks close
+above me.
+
+Not for much longer would my lungs withstand the strain upon them. I
+felt that I must soon succumb, nor was there any retreating now that I
+had gone this far. I knew positively that I could never endure to
+retrace my path now to the point from which I had felt the waters close
+above my head. Death stared me in the face, nor ever can I recall a
+time that I so distinctly felt the icy breath from his dead lips upon
+my brow.
+
+One more frantic effort I made with my fast ebbing strength. Weakly I
+rose for the last time—my tortured lungs gasped for the breath that
+would fill them with a strange and numbing element, but instead I felt
+the revivifying breath of life-giving air surge through my starving
+nostrils into my dying lungs. I was saved.
+
+A few more strokes brought me to a point where my feet touched the
+floor, and soon thereafter I was above the water level entirely, and
+racing like mad along the corridor searching for the first doorway that
+would lead me to Issus. If I could not have Dejah Thoris again I was at
+least determined to avenge her death, nor would any life satisfy me
+other than that of the fiend incarnate who was the cause of such
+immeasurable suffering upon Barsoom.
+
+Sooner than I had expected I came to what appeared to me to be a sudden
+exit into the temple above. It was at the right side of the corridor,
+which ran on, probably, to other entrances to the pile above.
+
+To me one point was as good as another. What knew I where any of them
+led! And so without waiting to be again discovered and thwarted, I ran
+quickly up the short, steep incline and pushed open the doorway at its
+end.
+
+The portal swung slowly in, and before it could be slammed against me I
+sprang into the chamber beyond. Although not yet dawn, the room was
+brilliantly lighted. Its sole occupant lay prone upon a low couch at
+the further side, apparently in sleep. From the hangings and sumptuous
+furniture of the room I judged it to be a living-room of some
+priestess, possibly of Issus herself.
+
+At the thought the blood tingled through my veins. What, indeed, if
+fortune had been kind enough to place the hideous creature alone and
+unguarded in my hands. With her as hostage I could force acquiescence
+to my every demand. Cautiously I approached the recumbent figure, on
+noiseless feet. Closer and closer I came to it, but I had crossed but
+little more than half the chamber when the figure stirred, and, as I
+sprang, rose and faced me.
+
+At first an expression of terror overspread the features of the woman
+who confronted me—then startled incredulity—hope—thanksgiving.
+
+My heart pounded within my breast as I advanced toward her—tears came
+to my eyes—and the words that would have poured forth in a perfect
+torrent choked in my throat as I opened my arms and took into them once
+more the woman I loved—Dejah Thoris, Princess of Helium.
+
+## CHAPTER XXII VICTORY AND DEFEAT
+
+“John Carter, John Carter,” she sobbed, with her dear head upon my
+shoulder; “even now I can scarce believe the witness of my own eyes.
+When the girl, Thuvia, told me that you had returned to Barsoom, I
+listened, but I could not understand, for it seemed that such happiness
+would be impossible for one who had suffered so in silent loneliness
+for all these long years. At last, when I realized that it was truth,
+and then came to know the awful place in which I was held prisoner, I
+learned to doubt that even you could reach me here.
+
+“As the days passed, and moon after moon went by without bringing even
+the faintest rumour of you, I resigned myself to my fate. And now that
+you have come, scarce can I believe it. For an hour I have heard the
+sounds of conflict within the palace. I knew not what they meant, but I
+have hoped against hope that it might be the men of Helium headed by my
+Prince.
+
+“And tell me, what of Carthoris, our son?”
+
+“He was with me less than an hour since, Dejah Thoris,” I replied. “It
+must have been he whose men you have heard battling within the
+precincts of the temple.
+
+“Where is Issus?” I asked suddenly.
+
+Dejah Thoris shrugged her shoulders.
+
+“She sent me under guard to this room just before the fighting began
+within the temple halls. She said that she would send for me later. She
+seemed very angry and somewhat fearful. Never have I seen her act in so
+uncertain and almost terrified a manner. Now I know that it must have
+been because she had learned that John Carter, Prince of Helium, was
+approaching to demand an accounting of her for the imprisonment of his
+Princess.”
+
+The sounds of conflict, the clash of arms, the shouting and the
+hurrying of many feet came to us from various parts of the temple. I
+knew that I was needed there, but I dared not leave Dejah Thoris, nor
+dared I take her with me into the turmoil and danger of battle.
+
+At last I bethought me of the pits from which I had just emerged. Why
+not secrete her there until I could return and fetch her away in safety
+and for ever from this awful place. I explained my plan to her.
+
+For a moment she clung more closely to me.
+
+“I cannot bear to be parted from you now, even for a moment, John
+Carter,” she said. “I shudder at the thought of being alone again where
+that terrible creature might discover me. You do not know her. None can
+imagine her ferocious cruelty who has not witnessed her daily acts for
+over half a year. It has taken me nearly all this time to realize even
+the things that I have seen with my own eyes.”
+
+“I shall not leave you, then, my Princess,” I replied.
+
+She was silent for a moment, then she drew my face to hers and kissed
+me.
+
+“Go, John Carter,” she said. “Our son is there, and the soldiers of
+Helium, fighting for the Princess of Helium. Where they are you should
+be. I must not think of myself now, but of them and of my husband’s
+duty. I may not stand in the way of that. Hide me in the pits, and go.”
+
+I led her to the door through which I had entered the chamber from
+below. There I pressed her dear form to me, and then, though it tore my
+heart to do it, and filled me only with the blackest shadows of
+terrible foreboding, I guided her across the threshold, kissed her once
+again, and closed the door upon her.
+
+Without hesitating longer, I hurried from the chamber in the direction
+of the greatest tumult. Scarce half a dozen chambers had I traversed
+before I came upon the theatre of a fierce struggle. The blacks were
+massed at the entrance to a great chamber where they were attempting to
+block the further progress of a body of red men toward the inner sacred
+precincts of the temple.
+
+Coming from within as I did, I found myself behind the blacks, and,
+without waiting to even calculate their numbers or the foolhardiness of
+my venture, I charged swiftly across the chamber and fell upon them
+from the rear with my keen long-sword.
+
+As I struck the first blow I cried aloud, “For Helium!” And then I
+rained cut after cut upon the surprised warriors, while the reds
+without took heart at the sound of my voice, and with shouts of “John
+Carter! John Carter!” redoubled their efforts so effectually that
+before the blacks could recover from their temporary demoralization
+their ranks were broken and the red men had burst into the chamber.
+
+The fight within that room, had it had but a competent chronicler,
+would go down in the annals of Barsoom as a historic memorial to the
+grim ferocity of her warlike people. Five hundred men fought there that
+day, the black men against the red. No man asked quarter or gave it. As
+though by common assent they fought, as though to determine once and
+for all their right to live, in accordance with the law of the survival
+of the fittest.
+
+I think we all knew that upon the outcome of this battle would hinge
+for ever the relative positions of these two races upon Barsoom. It was
+a battle between the old and the new, but not for once did I question
+the outcome of it. With Carthoris at my side I fought for the red men
+of Barsoom and for their total emancipation from the throttling bondage
+of a hideous superstition.
+
+Back and forth across the room we surged, until the floor was ankle
+deep in blood, and dead men lay so thickly there that half the time we
+stood upon their bodies as we fought. As we swung toward the great
+windows which overlooked the gardens of Issus a sight met my gaze which
+sent a wave of exultation over me.
+
+“Look!” I cried. “Men of the First Born, look!”
+
+For an instant the fighting ceased, and with one accord every eye
+turned in the direction I had indicated, and the sight they saw was one
+no man of the First Born had ever imagined could be.
+
+Across the gardens, from side to side, stood a wavering line of black
+warriors, while beyond them and forcing them ever back was a great
+horde of green warriors astride their mighty thoats. And as we watched,
+one, fiercer and more grimly terrible than his fellows, rode forward
+from the rear, and as he came he shouted some fierce command to his
+terrible legion.
+
+It was Tars Tarkas, Jeddak of Thark, and as he couched his great
+forty-foot metal-shod lance we saw his warriors do likewise. Then it
+was that we interpreted his command. Twenty yards now separated the
+green men from the black line. Another word from the great Thark, and
+with a wild and terrifying battle-cry the green warriors charged. For a
+moment the black line held, but only for a moment—then the fearsome
+beasts that bore equally terrible riders passed completely through it.
+
+After them came utan upon utan of red men. The green horde broke to
+surround the temple. The red men charged for the interior, and then we
+turned to continue our interrupted battle; but our foes had vanished.
+
+My first thought was of Dejah Thoris. Calling to Carthoris that I had
+found his mother, I started on a run toward the chamber where I had
+left her, with my boy close beside me. After us came those of our
+little force who had survived the bloody conflict.
+
+The moment I entered the room I saw that some one had been there since
+I had left. A silk lay upon the floor. It had not been there before.
+There were also a dagger and several metal ornaments strewn about as
+though torn from their wearer in a struggle. But worst of all, the door
+leading to the pits where I had hidden my Princess was ajar.
+
+With a bound I was before it, and, thrusting it open, rushed within.
+Dejah Thoris had vanished. I called her name aloud again and again, but
+there was no response. I think in that instant I hovered upon the verge
+of insanity. I do not recall what I said or did, but I know that for an
+instant I was seized with the rage of a maniac.
+
+“Issus!” I cried. “Issus! Where is Issus? Search the temple for her,
+but let no man harm her but John Carter. Carthoris, where are the
+apartments of Issus?”
+
+“This way,” cried the boy, and, without waiting to know that I had
+heard him, he dashed off at breakneck speed, further into the bowels of
+the temple. As fast as he went, however, I was still beside him, urging
+him on to greater speed.
+
+At last we came to a great carved door, and through this Carthoris
+dashed, a foot ahead of me. Within, we came upon such a scene as I had
+witnessed within the temple once before—the throne of Issus, with the
+reclining slaves, and about it the ranks of soldiery.
+
+We did not even give the men a chance to draw, so quickly were we upon
+them. With a single cut I struck down two in the front rank. And then
+by the mere weight and momentum of my body, I rushed completely through
+the two remaining ranks and sprang upon the dais beside the carved
+sorapus throne.
+
+The repulsive creature, squatting there in terror, attempted to escape
+me and leap into a trap behind her. But this time I was not to be
+outwitted by any such petty subterfuge. Before she had half arisen I
+had grasped her by the arm, and then, as I saw the guard starting to
+make a concerted rush upon me from all sides, I whipped out my dagger
+and, holding it close to that vile breast, ordered them to halt.
+
+“Back!” I cried to them. “Back! The first black foot that is planted
+upon this platform sends my dagger into Issus’ heart.”
+
+For an instant they hesitated. Then an officer ordered them back, while
+from the outer corridor there swept into the throne room at the heels
+of my little party of survivors a full thousand red men under Kantos
+Kan, Hor Vastus, and Xodar.
+
+“Where is Dejah Thoris?” I cried to the thing within my hands.
+
+For a moment her eyes roved wildly about the scene beneath her. I think
+that it took a moment for the true condition to make any impression
+upon her—she could not at first realize that the temple had fallen
+before the assault of men of the outer world. When she did, there must
+have come, too, a terrible realization of what it meant to her—the loss
+of power—humiliation—the exposure of the fraud and imposture which she
+had for so long played upon her own people.
+
+There was just one thing needed to complete the reality of the picture
+she was seeing, and that was added by the highest noble of her
+realm—the high priest of her religion—the prime minister of her
+government.
+
+“Issus, Goddess of Death, and of Life Eternal,” he cried, “arise in the
+might of thy righteous wrath and with one single wave of thy omnipotent
+hand strike dead thy blasphemers! Let not one escape. Issus, thy people
+depend upon thee. Daughter of the Lesser Moon, thou only art
+all-powerful. Thou only canst save thy people. I am done. We await thy
+will. Strike!”
+
+And then it was that she went mad. A screaming, gibbering maniac
+writhed in my grasp. It bit and clawed and scratched in impotent fury.
+And then it laughed a weird and terrible laughter that froze the blood.
+The slave girls upon the dais shrieked and cowered away. And the thing
+jumped at them and gnashed its teeth and then spat upon them from
+frothing lips. God, but it was a horrid sight.
+
+Finally, I shook the thing, hoping to recall it for a moment to
+rationality.
+
+“Where is Dejah Thoris?” I cried again.
+
+The awful creature in my grasp mumbled inarticulately for a moment,
+then a sudden gleam of cunning shot into those hideous, close-set eyes.
+
+“Dejah Thoris? Dejah Thoris?” and then that shrill, unearthly laugh
+pierced our ears once more.
+
+“Yes, Dejah Thoris—I know. And Thuvia, and Phaidor, daughter of Matai
+Shang. They each love John Carter. Ha-ah! but it is droll. Together for
+a year they will meditate within the Temple of the Sun, but ere the
+year is quite gone there will be no more food for them. Ho-oh! what
+divine entertainment,” and she licked the froth from her cruel lips.
+“There will be no more food—except each other. Ha-ah! Ha-ah!”
+
+The horror of the suggestion nearly paralysed me. To this awful fate
+the creature within my power had condemned my Princess. I trembled in
+the ferocity of my rage. As a terrier shakes a rat I shook Issus,
+Goddess of Life Eternal.
+
+“Countermand your orders!” I cried. “Recall the condemned. Haste, or
+you die!”
+
+“It is too late. Ha-ah! Ha-ah!” and then she commenced her gibbering
+and shrieking again.
+
+Almost of its own volition, my dagger flew up above that putrid heart.
+But something stayed my hand, and I am now glad that it did. It were a
+terrible thing to have struck down a woman with one’s own hand. But a
+fitter fate occurred to me for this false deity.
+
+“First Born,” I cried, turning to those who stood within the chamber,
+“you have seen to-day the impotency of Issus—the gods are impotent.
+Issus is no god. She is a cruel and wicked old woman, who has deceived
+and played upon you for ages. Take her. John Carter, Prince of Helium,
+would not contaminate his hand with her blood,” and with that I pushed
+the raving beast, whom a short half-hour before a whole world had
+worshipped as divine, from the platform of her throne into the waiting
+clutches of her betrayed and vengeful people.
+
+Spying Xodar among the officers of the red men, I called him to lead me
+quickly to the Temple of the Sun, and, without waiting to learn what
+fate the First Born would wreak upon their goddess, I rushed from the
+chamber with Xodar, Carthoris, Hor Vastus, Kantos Kan, and a score of
+other red nobles.
+
+The black led us rapidly through the inner chambers of the temple,
+until we stood within the central court—a great circular space paved
+with a transparent marble of exquisite whiteness. Before us rose a
+golden temple wrought in the most wondrous and fanciful designs, inlaid
+with diamond, ruby, sapphire, turquoise, emerald, and the thousand
+nameless gems of Mars, which far transcend in loveliness and purity of
+ray the most priceless stones of Earth.
+
+“This way,” cried Xodar, leading us toward the entrance to a tunnel
+which opened in the courtyard beside the temple. Just as we were on the
+point of descending we heard a deep-toned roar burst from the Temple of
+Issus, which we had but just quitted, and then a red man, Djor Kantos,
+padwar of the fifth utan, broke from a nearby gate, crying to us to
+return.
+
+“The blacks have fired the temple,” he cried. “In a thousand places it
+is burning now. Haste to the outer gardens, or you are lost.”
+
+As he spoke we saw smoke pouring from a dozen windows looking out upon
+the courtyard of the Temple of the Sun, and far above the highest
+minaret of Issus hung an ever-growing pall of smoke.
+
+“Go back! Go back!” I cried to those who had accompanied me. “The way!
+Xodar; point the way and leave me. I shall reach my Princess yet.”
+
+“Follow me, John Carter,” replied Xodar, and without waiting for my
+reply he dashed down into the tunnel at our feet. At his heels I ran
+down through a half-dozen tiers of galleries, until at last he led me
+along a level floor at the end of which I discerned a lighted chamber.
+
+Massive bars blocked our further progress, but beyond I saw her—my
+incomparable Princess, and with her were Thuvia and Phaidor. When she
+saw me she rushed toward the bars that separated us. Already the
+chamber had turned upon its slow way so far that but a portion of the
+opening in the temple wall was opposite the barred end of the corridor.
+Slowly the interval was closing. In a short time there would be but a
+tiny crack, and then even that would be closed, and for a long
+Barsoomian year the chamber would slowly revolve until once more for a
+brief day the aperture in its wall would pass the corridor’s end.
+
+But in the meantime what horrible things would go on within that
+chamber!
+
+“Xodar!” I cried. “Can no power stop this awful revolving thing? Is
+there none who holds the secret of these terrible bars?”
+
+“None, I fear, whom we could fetch in time, though I shall go and make
+the attempt. Wait for me here.”
+
+After he had left I stood and talked with Dejah Thoris, and she
+stretched her dear hand through those cruel bars that I might hold it
+until the last moment.
+
+Thuvia and Phaidor came close also, but when Thuvia saw that we would
+be alone she withdrew to the further side of the chamber. Not so the
+daughter of Matai Shang.
+
+“John Carter,” she said, “this be the last time that you shall see any
+of us. Tell me that you love me, that I may die happy.”
+
+“I love only the Princess of Helium,” I replied quietly. “I am sorry,
+Phaidor, but it is as I have told you from the beginning.”
+
+She bit her lip and turned away, but not before I saw the black and
+ugly scowl she turned upon Dejah Thoris. Thereafter she stood a little
+way apart, but not so far as I should have desired, for I had many
+little confidences to impart to my long-lost love.
+
+For a few minutes we stood thus talking in low tones. Ever smaller and
+smaller grew the opening. In a short time now it would be too small
+even to permit the slender form of my Princess to pass. Oh, why did not
+Xodar haste. Above we could hear the faint echoes of a great tumult. It
+was the multitude of black and red and green men fighting their way
+through the fire from the burning Temple of Issus.
+
+A draught from above brought the fumes of smoke to our nostrils. As we
+stood waiting for Xodar the smoke became thicker and thicker. Presently
+we heard shouting at the far end of the corridor, and hurrying feet.
+
+“Come back, John Carter, come back!” cried a voice, “even the pits are
+burning.”
+
+In a moment a dozen men broke through the now blinding smoke to my
+side. There was Carthoris, and Kantos Kan, and Hor Vastus, and Xodar,
+with a few more who had followed me to the temple court.
+
+“There is no hope, John Carter,” cried Xodar. “The keeper of the keys
+is dead and his keys are not upon his carcass. Our only hope is to
+quench this conflagration and trust to fate that a year will find your
+Princess alive and well. I have brought sufficient food to last them.
+When this crack closes no smoke can reach them, and if we hasten to
+extinguish the flames I believe they will be safe.”
+
+“Go, then, yourself and take these others with you,” I replied. “I
+shall remain here beside my Princess until a merciful death releases me
+from my anguish. I care not to live.”
+
+As I spoke Xodar had been tossing a great number of tiny cans within
+the prison cell. The remaining crack was not over an inch in width a
+moment later. Dejah Thoris stood as close to it as she could,
+whispering words of hope and courage to me, and urging me to save
+myself.
+
+Suddenly beyond her I saw the beautiful face of Phaidor contorted into
+an expression of malign hatred. As my eyes met hers she spoke.
+
+“Think not, John Carter, that you may so lightly cast aside the love of
+Phaidor, daughter of Matai Shang. Nor ever hope to hold thy Dejah
+Thoris in thy arms again. Wait you the long, long year; but know that
+when the waiting is over it shall be Phaidor’s arms which shall welcome
+you—not those of the Princess of Helium. Behold, she dies!”
+
+And as she finished speaking I saw her raise a dagger on high, and then
+I saw another figure. It was Thuvia’s. As the dagger fell toward the
+unprotected breast of my love, Thuvia was almost between them. A
+blinding gust of smoke blotted out the tragedy within that fearsome
+cell—a shriek rang out, a single shriek, as the dagger fell.
+
+The smoke cleared away, but we stood gazing upon a blank wall. The last
+crevice had closed, and for a long year that hideous chamber would
+retain its secret from the eyes of men.
+
+They urged me to leave.
+
+“In a moment it will be too late,” cried Xodar. “There is, in fact, but
+a bare chance that we can come through to the outer garden alive even
+now. I have ordered the pumps started, and in five minutes the pits
+will be flooded. If we would not drown like rats in a trap we must
+hasten above and make a dash for safety through the burning temple.”
+
+“Go,” I urged them. “Let me die here beside my Princess—there is no
+hope or happiness elsewhere for me. When they carry her dear body from
+that terrible place a year hence let them find the body of her lord
+awaiting her.”
+
+Of what happened after that I have only a confused recollection. It
+seems as though I struggled with many men, and then that I was picked
+bodily from the ground and borne away. I do not know. I have never
+asked, nor has any other who was there that day intruded on my sorrow
+or recalled to my mind the occurrences which they know could but at
+best reopen the terrible wound within my heart.
+
+Ah! If I could but know one thing, what a burden of suspense would be
+lifted from my shoulders! But whether the assassin’s dagger reached one
+fair bosom or another, only time will divulge.

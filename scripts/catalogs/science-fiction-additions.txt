@@ -11,5 +11,5 @@
 1635	The Food of the Gods (Wells)
 2038	When the World Screamed (Doyle)
 3935	A Journey to Other Worlds (Astor)
-4358	Pellucidar (Burroughs)
+605	Pellucidar (Burroughs)
 1538	The Warlord of Mars (Burroughs)

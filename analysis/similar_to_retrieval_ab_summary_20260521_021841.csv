@@ -1,0 +1,45 @@
+genre,size_tier,book_name,book_relpath,cap,mode,n_queries,mean_query_seconds,mean_returned_nodes,mean_unique_node_ratio,mean_unique_file_ratio,mean_similar_edge_fraction
+biography,short,Autobiography of Benjamin Franklin,corpus/biography/Autobiography of Benjamin Franklin,8,with_similar,3,0.014561,15.0,1.0,0.066667,0.103704
+biography,short,Autobiography of Benjamin Franklin,corpus/biography/Autobiography of Benjamin Franklin,8,without_similar,3,0.043633,15.0,1.0,0.066667,0.103704
+biography,short,Autobiography of Benjamin Franklin,corpus/biography/Autobiography of Benjamin Franklin,15,with_similar,3,0.017162,15.0,1.0,0.066667,0.127946
+biography,short,Autobiography of Benjamin Franklin,corpus/biography/Autobiography of Benjamin Franklin,15,without_similar,3,0.019657,15.0,1.0,0.066667,0.127946
+biography,medium,Confessions — Saint Augustine,corpus/biography/Confessions — Saint Augustine,8,with_similar,3,0.01608,15.0,1.0,0.066667,0.0
+biography,medium,Confessions — Saint Augustine,corpus/biography/Confessions — Saint Augustine,8,without_similar,3,0.022914,15.0,1.0,0.066667,0.0
+biography,medium,Confessions — Saint Augustine,corpus/biography/Confessions — Saint Augustine,15,with_similar,3,0.017092,15.0,1.0,0.066667,0.0
+biography,medium,Confessions — Saint Augustine,corpus/biography/Confessions — Saint Augustine,15,without_similar,3,0.021526,15.0,1.0,0.066667,0.0
+english-literature,long,North and South (Gaskell),corpus/english-literature/North and South (Gaskell),8,with_similar,3,0.026887,15.0,1.0,0.066667,0.1
+english-literature,long,North and South (Gaskell),corpus/english-literature/North and South (Gaskell),8,without_similar,3,0.031027,15.0,1.0,0.066667,0.1
+english-literature,long,North and South (Gaskell),corpus/english-literature/North and South (Gaskell),15,with_similar,3,0.028402,15.0,1.0,0.066667,0.1
+english-literature,long,North and South (Gaskell),corpus/english-literature/North and South (Gaskell),15,without_similar,3,0.030449,15.0,1.0,0.066667,0.1
+english-literature,medium,Robinson Crusoe,corpus/english-literature/Robinson Crusoe,8,with_similar,3,0.015262,15.0,1.0,0.066667,0.027778
+english-literature,medium,Robinson Crusoe,corpus/english-literature/Robinson Crusoe,8,without_similar,3,0.02067,15.0,1.0,0.066667,0.027778
+english-literature,medium,Robinson Crusoe,corpus/english-literature/Robinson Crusoe,15,with_similar,3,0.015851,15.0,1.0,0.066667,0.0
+english-literature,medium,Robinson Crusoe,corpus/english-literature/Robinson Crusoe,15,without_similar,3,0.020061,15.0,1.0,0.066667,0.0
+english-literature,short,The Jungle Book (Kipling),corpus/english-literature/The Jungle Book (Kipling),8,with_similar,3,0.012341,14.0,1.0,0.072222,0.066667
+english-literature,short,The Jungle Book (Kipling),corpus/english-literature/The Jungle Book (Kipling),8,without_similar,3,0.018118,14.0,1.0,0.072222,0.066667
+english-literature,short,The Jungle Book (Kipling),corpus/english-literature/The Jungle Book (Kipling),15,with_similar,3,0.013249,14.0,1.0,0.072222,0.066667
+english-literature,short,The Jungle Book (Kipling),corpus/english-literature/The Jungle Book (Kipling),15,without_similar,3,0.017885,14.0,1.0,0.072222,0.066667
+philosophy,short,Groundwork of the Metaphysics of Morals (Kant),corpus/philosophy/Groundwork of the Metaphysics of Morals (Kant),8,with_similar,3,0.010666,15.0,1.0,0.066667,0.150427
+philosophy,short,Groundwork of the Metaphysics of Morals (Kant),corpus/philosophy/Groundwork of the Metaphysics of Morals (Kant),8,without_similar,3,0.015642,15.0,1.0,0.066667,0.150427
+philosophy,short,Groundwork of the Metaphysics of Morals (Kant),corpus/philosophy/Groundwork of the Metaphysics of Morals (Kant),15,with_similar,3,0.01022,15.0,1.0,0.066667,0.168742
+philosophy,short,Groundwork of the Metaphysics of Morals (Kant),corpus/philosophy/Groundwork of the Metaphysics of Morals (Kant),15,without_similar,3,0.01357,15.0,1.0,0.066667,0.168742
+philosophy,medium,Meditations,corpus/philosophy/Meditations,8,with_similar,3,0.013386,15.0,1.0,0.066667,0.0
+philosophy,medium,Meditations,corpus/philosophy/Meditations,8,without_similar,3,0.018211,15.0,1.0,0.066667,0.0
+philosophy,medium,Meditations,corpus/philosophy/Meditations,15,with_similar,3,0.012657,15.0,1.0,0.066667,0.0
+philosophy,medium,Meditations,corpus/philosophy/Meditations,15,without_similar,3,0.01842,15.0,1.0,0.066667,0.0
+philosophy,long,The Federalist Papers,corpus/philosophy/The Federalist Papers,8,with_similar,3,0.026483,15.0,1.0,0.088889,0.130435
+philosophy,long,The Federalist Papers,corpus/philosophy/The Federalist Papers,8,without_similar,3,0.032074,15.0,1.0,0.088889,0.130435
+philosophy,long,The Federalist Papers,corpus/philosophy/The Federalist Papers,15,with_similar,3,0.027432,15.0,1.0,0.088889,0.130435
+philosophy,long,The Federalist Papers,corpus/philosophy/The Federalist Papers,15,without_similar,3,0.030295,15.0,1.0,0.088889,0.130435
+science-fiction,medium,Pellucidar (Burroughs),corpus/science-fiction/Pellucidar (Burroughs),8,with_similar,3,0.011113,15.0,1.0,0.066667,0.0
+science-fiction,medium,Pellucidar (Burroughs),corpus/science-fiction/Pellucidar (Burroughs),8,without_similar,3,0.018703,15.0,1.0,0.066667,0.0
+science-fiction,medium,Pellucidar (Burroughs),corpus/science-fiction/Pellucidar (Burroughs),15,with_similar,3,0.0115,15.0,1.0,0.066667,0.0
+science-fiction,medium,Pellucidar (Burroughs),corpus/science-fiction/Pellucidar (Burroughs),15,without_similar,3,0.01464,15.0,1.0,0.066667,0.0
+science-fiction,long,The Gods of Mars,corpus/science-fiction/The Gods of Mars,8,with_similar,3,0.016327,15.0,1.0,0.088889,0.0625
+science-fiction,long,The Gods of Mars,corpus/science-fiction/The Gods of Mars,8,without_similar,3,0.021929,15.0,1.0,0.088889,0.0625
+science-fiction,long,The Gods of Mars,corpus/science-fiction/The Gods of Mars,15,with_similar,3,0.017313,15.0,1.0,0.088889,0.099537
+science-fiction,long,The Gods of Mars,corpus/science-fiction/The Gods of Mars,15,without_similar,3,0.020897,15.0,1.0,0.088889,0.099537
+science-fiction,short,The Lost World,corpus/science-fiction/The Lost World,8,with_similar,3,0.009698,15.0,1.0,0.088889,0.062678
+science-fiction,short,The Lost World,corpus/science-fiction/The Lost World,8,without_similar,3,0.015663,15.0,1.0,0.088889,0.058974
+science-fiction,short,The Lost World,corpus/science-fiction/The Lost World,15,with_similar,3,0.011363,15.0,1.0,0.088889,0.092308
+science-fiction,short,The Lost World,corpus/science-fiction/The Lost World,15,without_similar,3,0.01527,15.0,1.0,0.088889,0.058974

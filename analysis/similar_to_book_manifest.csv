@@ -1,0 +1,13 @@
+genre,book_name,book_relpath,markdown_file,size_bytes,line_count,size_tier,notes
+biography,Autobiography of Benjamin Franklin,corpus/biography/Autobiography of Benjamin Franklin,autobiography_of_benjamin_franklin.md,378104,6203,short,
+biography,Confessions — Saint Augustine,corpus/biography/Confessions — Saint Augustine,confessions_saint_augustine.md,602820,9288,medium,
+biography,The Life of Samuel Johnson — James Boswell,corpus/biography/The Life of Samuel Johnson — James Boswell,the_life_of_samuel_johnson_james_boswell.md,1215630,20694,long,
+philosophy,Groundwork of the Metaphysics of Morals (Kant),corpus/philosophy/Groundwork of the Metaphysics of Morals (Kant),groundwork_of_the_metaphysics_of_morals_kant.md,176366,2943,short,
+philosophy,Meditations,corpus/philosophy/Meditations,meditations.md,398464,6745,medium,
+philosophy,The Federalist Papers,corpus/philosophy/The Federalist Papers,the_federalist_papers.md,1148317,19109,long,
+science-fiction,The Lost World,corpus/science-fiction/The Lost World,the_lost_world.md,100978,2084,short,
+science-fiction,Pellucidar (Burroughs),corpus/science-fiction/Pellucidar (Burroughs),pellucidar_burroughs.md,233677,5216,medium,
+science-fiction,The Gods of Mars,corpus/science-fiction/The Gods of Mars,the_gods_of_mars.md,522379,10554,long,
+english-literature,The Jungle Book (Kipling),corpus/english-literature/The Jungle Book (Kipling),the_jungle_book_kipling.md,276640,5320,short,
+english-literature,Robinson Crusoe,corpus/english-literature/Robinson Crusoe,robinson_crusoe.md,623201,10041,medium,
+english-literature,North and South (Gaskell),corpus/english-literature/North and South (Gaskell),north_and_south_gaskell.md,1012962,18783,long,
