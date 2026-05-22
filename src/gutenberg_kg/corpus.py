@@ -22,21 +22,23 @@ from typing import Any
 
 from kg_utils.snapshots import SnapshotManager as _BaseSnapshotManager
 
-# Maps corpus slug → display label (order determines table row order).
+from gutenberg_kg import genres as _gr
+
+# Slugs whose display labels can't be derived by simple hyphen→space+title-case.
+_LABEL_OVERRIDES: dict[str, str] = {
+    "ancient-classical": "Ancient & Classical",
+    "spanish": "Spanish Literature",
+    "audel-electric": "Technical Reference (IA)",
+}
+
+
+def _slug_to_label(slug: str) -> str:
+    return _LABEL_OVERRIDES.get(slug, slug.replace("-", " ").title())
+
+
+# Built dynamically from corpus/genres.json via genres._load() — no hardcoding.
 GENRE_LABELS: dict[str, str] = {
-    "gutenberg-english-literature": "English Literature",
-    "gutenberg-ancient-classical": "Ancient & Classical",
-    "gutenberg-philosophy": "Philosophy",
-    "gutenberg-russian-literature": "Russian Literature",
-    "gutenberg-american-literature": "American Literature",
-    "gutenberg-french-literature": "French Literature",
-    "gutenberg-science-fiction": "Science Fiction",
-    "gutenberg-world-literature": "World Literature",
-    "gutenberg-sacred-texts": "Sacred Texts",
-    "gutenberg-german-literature": "German Literature",
-    "gutenberg-spanish": "Spanish Literature",
-    "gutenberg-shakespeare": "Shakespeare",
-    "gutenberg-audel-electric": "Technical Reference (IA)",
+    f"gutenberg-{slug}": _slug_to_label(slug) for slug in _gr.ALL_GENRES
 }
 
 # ---------------------------------------------------------------------------

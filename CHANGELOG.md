@@ -43,6 +43,24 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Fixed
 
+- **`gutenkg status` / `snapshot save` under-reporting corpus** — `GENRE_LABELS`
+  in `corpus.py` was a hardcoded dict missing all 5 new genres; both commands
+  silently reported 203 books / 1,017,563 nodes / 4,427,515 edges instead of the
+  correct 245 / 1,236,169 / 5,321,000. Fixed by making `GENRE_LABELS` dynamic:
+  it is now built from `genres.ALL_GENRES` (sourced from `corpus/genres.json`),
+  so new genres registered via `gutenkg genres add` are automatically visible
+  to `status` and `snapshot` without any code change.
+
+- **Three wrong Gutenberg IDs in `science-fiction` catalogs** — wrong texts were
+  being downloaded and indexed:
+  - *The Lost World*: `29808` → `139`
+  - *The Gods of Mars*: `364` → `64`
+  - *Pellucidar*: `4358` → `605`
+
+- **RunPod build pod prefers curated catalog files** — `runpod/build_kg.py` now
+  checks for `scripts/catalogs/<genre>.txt` before falling back to
+  `fetch-genre --max-results 200`, so pod corpora match the local curated set.
+
 ---
 
 ## [1.3.0] - 2026-05-16
