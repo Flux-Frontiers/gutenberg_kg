@@ -2635,10 +2635,9 @@ testing = ["coverage", "pyyaml"]
 name = "markdown-it-py"
 version = "4.2.0"
 description = "Python port of markdown-it. Markdown parsing, done right!"
-optional = true
+optional = false
 python-versions = ">=3.10"
 groups = ["main"]
-markers = "extra == \"kgdeps\" or extra == \"all\" or extra == \"viz3d\""
 files = [
     {file = "markdown_it_py-4.2.0-py3-none-any.whl", hash = "sha256:9f7ebbcd14fe59494226453aed97c1070d83f8d24b6fc3a3bcf9a38092641c4a"},
     {file = "markdown_it_py-4.2.0.tar.gz", hash = "sha256:04a21681d6fbb623de53f6f364d352309d4094dd4194040a10fd51833e418d49"},
@@ -2925,10 +2924,9 @@ ws = ["websockets (>=15.0.1)"]
 name = "mdurl"
 version = "0.1.2"
 description = "Markdown URL utilities"
-optional = true
+optional = false
 python-versions = ">=3.7"
 groups = ["main"]
-markers = "extra == \"kgdeps\" or extra == \"all\" or extra == \"viz3d\""
 files = [
     {file = "mdurl-0.1.2-py3-none-any.whl", hash = "sha256:84008a41e51615a49fc9966191ff91509e3c40b939176e643fd50a5c2196b8f8"},
     {file = "mdurl-0.1.2.tar.gz", hash = "sha256:bb413d29f5eea38f31dd4754dd7377d4465116fb207585f97bf925588687c1ba"},
@@ -4789,7 +4787,6 @@ files = [
     {file = "pygments-2.20.0-py3-none-any.whl", hash = "sha256:81a9e26dd42fd28a23a2d169d86d7ac03b46e2f8b59ed4698fb4785f946d0176"},
     {file = "pygments-2.20.0.tar.gz", hash = "sha256:6757cd03768053ff99f3039c1a36d6c0aa0b263438fcab17520b30a303a82b5f"},
 ]
-markers = {main = "extra == \"dev\" or extra == \"all\" or extra == \"kgdeps\" or extra == \"viz3d\""}
 
 [package.extras]
 windows-terminal = ["colorama (>=0.4.6)"]
@@ -5659,10 +5656,9 @@ testing = ["pytest (>=8.3.5)"]
 name = "rich"
 version = "14.3.4"
 description = "Render rich text, tables, progress bars, syntax highlighting, markdown and more to the terminal"
-optional = true
+optional = false
 python-versions = ">=3.8.0"
 groups = ["main"]
-markers = "extra == \"kgdeps\" or extra == \"all\" or extra == \"viz3d\""
 files = [
     {file = "rich-14.3.4-py3-none-any.whl", hash = "sha256:07e7adb4690f68864777b1450859253bed81a99a31ac321ac1817b2313558952"},
     {file = "rich-14.3.4.tar.gz", hash = "sha256:817e02727f2b25b40ef56f5aa2217f400c8489f79ca8f46ea2b70dd5e14558a9"},
@@ -7284,4 +7280,4 @@ viz3d = ["PyQt5", "markdown", "param", "pycode-kg", "pyvista", "pyvistaqt"]
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.12,<3.14"
-content-hash = "58d7a7e2ac1cc9175898a98a31fb2b2b0a66024800aacd013ef48465b5567f05"
+content-hash = "2647da56891e53d1ed4f149d9cc4e90c055336520684c7b89c838ffb139a45f6"

@@ -10,6 +10,27 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added
 
+- **`gutenkg build-corpus` — consolidated single-index builder** — new subcommand
+  that walks the entire `corpus/` tree once and writes a *single* DocKG
+  (`graph.sqlite` + `lancedb` + `catalog.json`) to the gitignored
+  `bundles/<name>/.dockg/`, rather than the per-book federated indices that
+  `ingest` builds. This is the artifact intended for a standalone "pull-and-run"
+  Docker image.
+  - `--genre` (repeatable) builds a subset (`gutenberg-<genre>`); default is all
+    18 genres (`gutenberg-all`). `--output` overrides the bundle name.
+  - The walk stays rooted at `corpus/` (subset selection is done via directory
+    exclude), so every node's `file_path` stays genre-prefixed — **genre is
+    recoverable at query time with no schema change**. `authors/`, `diaries/`,
+    and DocKG `SKIP_DIRS` are pruned.
+  - A `catalog.json` sidecar maps `<genre>/<book>` → author, title, Gutenberg ID,
+    and author dates (parsed from each book's `reference.md` via
+    `authors.parse_reference`), letting a handler join author/title onto a hit by
+    its `file_path` prefix. Front-matter is already tagged `content_type='reference'`
+    for query-time filtering.
+  - `--similar-k` (default 8) caps SIMILAR_TO out-edges per chunk; `--no-similar`
+    disables discovery — preventing the unbounded edge blow-up of an unconfigured
+    corpus-wide build. `--workers`, `--dry-run`, and `--quiet` round out the flags.
+
 - **42 corpus texts across 5 new genres** — biography, drama, letters,
   natural-history, and travel. Each title is stored as a Markdown-converted
   `.md` file plus a `reference.md` metadata stub.
@@ -39,7 +60,17 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   `⚠️`) in the job summary box with ASCII tokens (`[ok]`, `[~]`, `[!]`) to prevent
   column misalignment in fixed-width terminal output.
 
+- **`rich` promoted to a core dependency** — `rich>=13.0.0` added to
+  `[project.dependencies]`. It was already imported by `gutenkg ingest`'s two-pane
+  display but only present transitively.
+
+- **README refreshed to v1.4.0** — version badge, corpus totals (245 books /
+  18 genres / 1.24M nodes / 5.32M edges), the per-genre table, and the citation
+  metadata updated to reflect the expanded corpus.
+
 ### Removed
+
+- **`handoff.md`** — removed stale top-level handoff notes.
 
 ### Fixed
 
