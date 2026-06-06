@@ -24,7 +24,7 @@ def ia_search(query, max_results):
     """
     try:
         results = ia.search_ia(query, max_results=max_results)
-    except Exception as exc:
+    except Exception as exc:  # noqa: BLE001
         click.echo(f"Search failed: {exc}", err=True)
         raise SystemExit(1)
     ia.format_search_results(results)

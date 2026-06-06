@@ -41,7 +41,7 @@ def download_book(ebook_id, genre, title, force, dry_run):
         path = _dg.download_book(ebook_id, title=title, genre=genre, force=force, dry_run=dry_run)
         if not dry_run:
             click.echo(f"\nDone. Book saved to: {path}")
-    except Exception as exc:
+    except Exception as exc:  # noqa: BLE001
         click.echo(f"ERROR: {exc}", err=True)
         raise SystemExit(1)
 

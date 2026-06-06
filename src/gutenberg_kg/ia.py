@@ -253,7 +253,7 @@ def fetch_text(identifier: str, files: list[dict]) -> str | None:
     print(f"  Downloading {fmt}: {filename}")
     try:
         return fetch_url(url)
-    except Exception as exc:  # pylint: disable=broad-exception-caught
+    except Exception as exc:  # noqa: BLE001
         print(f"  [!] Download failed: {exc}")
         return None
 
@@ -598,7 +598,7 @@ def download_book(
     print(f"  Fetching metadata for {identifier!r}...")
     try:
         meta = fetch_ia_metadata(identifier)
-    except Exception as exc:  # pylint: disable=broad-exception-caught
+    except Exception as exc:  # noqa: BLE001
         print(f"  [!] Metadata fetch failed: {exc}")
         return None
 

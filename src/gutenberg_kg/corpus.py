@@ -55,7 +55,7 @@ def _sqlite_counts(path: str | None) -> tuple[int, int]:
             nodes = con.execute("SELECT COUNT(*) FROM nodes").fetchone()[0]
             edges = con.execute("SELECT COUNT(*) FROM edges").fetchone()[0]
         return nodes, edges
-    except Exception:  # pylint: disable=broad-exception-caught
+    except Exception:  # noqa: BLE001
         return 0, 0
 
 
@@ -75,7 +75,7 @@ def _git_info(repo_root: Path) -> dict[str, str]:
             return subprocess.check_output(
                 list(args), cwd=repo_root, text=True, stderr=subprocess.DEVNULL
             ).strip()
-        except Exception:  # pylint: disable=broad-exception-caught
+        except Exception:  # noqa: BLE001
             return "unknown"
 
     return {
@@ -103,7 +103,7 @@ def collect_genre_stats(registry_path: Path) -> list[dict[str, Any]]:
     results: list[dict[str, Any]] = []
     try:
         reg = sqlite3.connect(str(registry_path))
-    except Exception as exc:  # pylint: disable=broad-exception-caught
+    except Exception as exc:  # noqa: BLE001
         raise OSError(f"Cannot open registry {registry_path}: {exc}") from exc
 
     kg_map: dict[str, str | None] = {}
@@ -161,15 +161,15 @@ def corpus_status(
     :return: Dict with ``kind``, ``timestamp``, ``version``, ``branch``,
         ``commit``, ``host``, ``platform``, ``totals``, and ``genres``.
     """
-    import platform  # pylint: disable=import-outside-toplevel
-    import socket  # pylint: disable=import-outside-toplevel
+    import platform
+    import socket
 
     genre_stats = collect_genre_stats(registry_path)
     git = _git_info(repo_root)
 
     try:
         version = importlib.metadata.version("gutenberg-kg")
-    except Exception:  # pylint: disable=broad-exception-caught
+    except Exception:  # noqa: BLE001
         version = "unknown"
 
     return {
@@ -207,7 +207,7 @@ def snapshot_build(
 
     try:
         version = importlib.metadata.version("gutenberg-kg")
-    except Exception:  # pylint: disable=broad-exception-caught
+    except Exception:  # noqa: BLE001
         version = "unknown"
 
     return {
@@ -270,7 +270,7 @@ def snapshot_list(snapshots_dir: Path) -> list[dict[str, Any]]:
     for p in sorted(snapshots_dir.glob("snapshot-*.json")):
         try:
             result.append(json.loads(p.read_text(encoding="utf-8")))
-        except Exception:  # pylint: disable=broad-exception-caught
+        except Exception:  # noqa: BLE001
             pass
     return result
 
@@ -297,7 +297,7 @@ def snapshot_show(snapshots_dir: Path, snapshot: str | None = None) -> dict[str,
         path = paths[-1]
     try:
         return json.loads(path.read_text(encoding="utf-8"))
-    except Exception:  # pylint: disable=broad-exception-caught
+    except Exception:  # noqa: BLE001
         return {}
 
 
@@ -324,14 +324,14 @@ def snapshot_diff(
         if name is None:
             try:
                 return json.loads(fallback.read_text(encoding="utf-8"))
-            except Exception:  # pylint: disable=broad-exception-caught
+            except Exception:  # noqa: BLE001
                 return {}
         matches = [p for p in paths if name in p.name]
         if not matches:
             return {}
         try:
             return json.loads(matches[-1].read_text(encoding="utf-8"))
-        except Exception:  # pylint: disable=broad-exception-caught
+        except Exception:  # noqa: BLE001
             return {}
 
     snap_a = _resolve(a, paths[-2])

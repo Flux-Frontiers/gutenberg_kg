@@ -172,7 +172,7 @@ def ensure_corpus(
     dry_run: bool = False,
 ) -> None:
     """Create corpus if it doesn't exist (idempotent)."""
-    from kg_rag.primitives import CorpusEntry  # pylint: disable=import-outside-toplevel
+    from kg_rag.primitives import CorpusEntry
 
     if corp_reg.get(name) is not None:
         return
@@ -193,7 +193,7 @@ def is_sqlite_valid(path: Path) -> bool:
         with sqlite3.connect(path) as con:
             con.execute("SELECT COUNT(*) FROM nodes")
         return True
-    except Exception:  # pylint: disable=broad-exception-caught
+    except Exception:  # noqa: BLE001
         return False
 
 
@@ -212,7 +212,7 @@ def build_dockg(
         print(f"    [dry] dockg build --repo {book_dir}")
         return True
     try:
-        from doc_kg.kg import DocKG  # pylint: disable=import-outside-toplevel
+        from doc_kg.kg import DocKG
 
         kg = DocKG(book_dir, embedder=embedder)
         kg.build_graph(wipe=True, quiet=quiet)
@@ -222,7 +222,7 @@ def build_dockg(
         kg.close()
         cache_path.unlink(missing_ok=True)
         return True
-    except Exception as exc:  # pylint: disable=broad-exception-caught
+    except Exception as exc:  # noqa: BLE001
         print(f"    [x] dockg build failed: {exc}")
         return False
 
@@ -237,7 +237,7 @@ def register_book(
     Register a book DocKG. Returns the KGEntry (new or existing).
     Returns None on dry-run or failure.
     """
-    from kg_rag.primitives import KGEntry, KGKind  # pylint: disable=import-outside-toplevel
+    from kg_rag.primitives import KGEntry, KGKind
 
     sqlite = book_dir / ".dockg" / "graph.sqlite"
     lancedb = book_dir / ".dockg" / "lancedb"
@@ -323,7 +323,7 @@ def _sqlite_counts(book_dir: Path) -> tuple[int, int]:
             nodes = con.execute("SELECT COUNT(*) FROM nodes").fetchone()[0]
             edges = con.execute("SELECT COUNT(*) FROM edges").fetchone()[0]
         return nodes, edges
-    except Exception:  # pylint: disable=broad-exception-caught
+    except Exception:  # noqa: BLE001
         return 0, 0
 
 
@@ -391,7 +391,7 @@ class _LogCapture:
                             stripped = line.rstrip()
                             if stripped:
                                 self._lines.append(stripped)
-        except Exception:  # pylint: disable=broad-exception-caught
+        except Exception:  # noqa: BLE001
             pass
 
     def render(self) -> str:
@@ -746,8 +746,8 @@ def run_ingest(
         uses the default location returned by ``default_registry_path()``.
     :return: 0 on full success, 1 if any book failed.
     """
-    from kg_rag.corpus_registry import CorpusRegistry  # pylint: disable=import-outside-toplevel
-    from kg_rag.registry import (  # pylint: disable=import-outside-toplevel
+    from kg_rag.corpus_registry import CorpusRegistry
+    from kg_rag.registry import (
         KGRegistry,
         default_registry_path,
     )
@@ -814,7 +814,7 @@ def run_ingest(
                 genre_t0 = time.perf_counter()
 
                 from doc_kg.index import (
-                    SentenceTransformerEmbedder,  # type: ignore[import-untyped]  # pylint: disable=import-outside-toplevel
+                    SentenceTransformerEmbedder,  # type: ignore[import-untyped]
                 )
 
                 shared_embedder = SentenceTransformerEmbedder()
@@ -876,8 +876,8 @@ def run_reregister(
     :param dry_run: Print actions without writing to the registry.
     :return: 0 on success.
     """
-    from kg_rag.corpus_registry import CorpusRegistry  # pylint: disable=import-outside-toplevel
-    from kg_rag.registry import (  # pylint: disable=import-outside-toplevel
+    from kg_rag.corpus_registry import CorpusRegistry
+    from kg_rag.registry import (
         KGRegistry,
         default_registry_path,
     )
@@ -917,7 +917,7 @@ def run_reregister(
                 kg_name = f"gutenberg-{genre}-{slug}-doc"
                 total += 1
 
-                from kg_rag.primitives import KGKind  # pylint: disable=import-outside-toplevel
+                from kg_rag.primitives import KGKind
 
                 existing = kg_reg.get(kg_name)
                 if existing is not None and existing.kind == KGKind.GUTENBERG:

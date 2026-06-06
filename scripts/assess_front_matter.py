@@ -229,7 +229,7 @@ def count_dockg_chunks(
         con.close()
         return total, boundary_idx
 
-    except Exception:
+    except Exception:  # noqa: BLE001
         return None, None
 
 
@@ -293,7 +293,7 @@ def scan_corpus() -> list[BookResult]:
             md = max(mds, key=lambda p: p.stat().st_size)
             try:
                 results.append(analyse_book(md, genre))
-            except Exception as e:
+            except Exception as e:  # noqa: BLE001
                 print(f"  WARN: {genre}/{book_dir.name} — {e}", file=sys.stderr)
 
     return results

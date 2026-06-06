@@ -16,8 +16,6 @@ Requires: pyvista, pyvistaqt, PyQt5, param, numpy
 Author: Eric G. Suchanek, PhD
 """
 
-# pylint: disable=C0301,C0116,C0115,W0613,E0611,C0415
-
 from __future__ import annotations
 
 import atexit
@@ -937,7 +935,7 @@ class GutenbergForestVisualizer(param.Parameterized):
                     self.all_edges.extend(edges)
                     self._book_genre_map[meta.slug] = genre
                     loaded += 1
-                except Exception as exc:  # pylint: disable=broad-exception-caught
+                except Exception as exc:  # noqa: BLE001
                     logger.warning("Failed to load %s: %s", meta.title, exc)
 
         self.status = (
@@ -1350,7 +1348,7 @@ class ForestMainWindow(QMainWindow):
         if self._current_picked_actor:
             try:
                 self.plotter.remove_actor(self._current_picked_actor, reset_camera=False)
-            except Exception:  # pylint: disable=broad-exception-caught
+            except Exception:  # noqa: BLE001
                 pass
             self._current_picked_actor = None
 
@@ -1442,7 +1440,7 @@ class ForestMainWindow(QMainWindow):
         if self._current_popup and hasattr(self._current_popup, "isVisible"):
             try:
                 self._current_popup.close()
-            except Exception:  # pylint: disable=broad-exception-caught
+            except Exception:  # noqa: BLE001
                 pass
         if self.plotter:
             try:
@@ -1451,7 +1449,7 @@ class ForestMainWindow(QMainWindow):
                 self.visualizer.plotter = None
                 self.plotter = None
                 self.vtk_plotter = None
-            except Exception:  # pylint: disable=broad-exception-caught
+            except Exception:  # noqa: BLE001
                 pass
         gc.collect()
 
@@ -1460,7 +1458,7 @@ class ForestMainWindow(QMainWindow):
             warnings.simplefilter("ignore")
             try:
                 self.cleanup()
-            except Exception:  # pylint: disable=broad-exception-caught
+            except Exception:  # noqa: BLE001
                 pass
         event.accept()
 

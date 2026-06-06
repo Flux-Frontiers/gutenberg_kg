@@ -153,8 +153,8 @@ def _print_rich_table(
     version: str,
 ) -> None:
     try:
-        from rich.console import Console  # pylint: disable=import-outside-toplevel
-        from rich.table import Table  # pylint: disable=import-outside-toplevel
+        from rich.console import Console
+        from rich.table import Table
 
         console = Console()
         table = Table(title=f"GutenbergKG Corpus Status  v{version}", show_footer=True)

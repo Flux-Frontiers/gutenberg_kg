@@ -52,7 +52,6 @@ mypy           = ">=1.10.0"
 pdoc           = ">=14.0.0"
 pillow         = ">=10.0.0"
 pre-commit     = ">=4.5.1"
-pylint         = ">=4.0.5"
 pytest         = ">=8.0.0"
 pytest-cov     = ">=5.0.0"
 ruff           = ">=0.4.0"
@@ -95,18 +94,17 @@ dev = [
     "pdoc>=14.0.0",
     "pillow>=10.0.0",
     "pre-commit>=4.5.1",
-    "pylint>=4.0.5",
     "pytest>=8.0.0",
     "pytest-cov>=5.0.0",
     "ruff>=0.4.0",
     "scipy>=1.13.0",
     "vtracer>=0.6.0",
 ]
-# doc-kg is on PyPI; kg-rag and pycode-kg are not yet — install manually:
+# doc-kg is on PyPI; kg-rag and pycode-kg are GitHub-only — install manually:
 #   pip install git+https://github.com/Flux-Frontiers/KGRAG.git
 #   pip install git+https://github.com/Flux-Frontiers/pycode_kg.git
 kgdeps = [
-    "doc-kg>=0.12.0",
+    "doc-kg>=0.15.4",
     "kg-rag @ git+https://github.com/Flux-Frontiers/KGRAG.git",
 ]
 viz = [
@@ -118,7 +116,7 @@ viz3d = [
     "PyQt5>=5.15.0",
     "pyvista[jupyter]>=0.44.0",
     "pyvistaqt>=0.11.0",
-    "pycode-kg @ git+https://github.com/Flux-Frontiers/pycode_kg.git",
+    "pycode-kg>=0.19.3",
 ]
 all = [
     # dev
@@ -127,14 +125,13 @@ all = [
     "pdoc>=14.0.0",
     "pillow>=10.0.0",
     "pre-commit>=4.5.1",
-    "pylint>=4.0.5",
     "pytest>=8.0.0",
     "pytest-cov>=5.0.0",
     "ruff>=0.4.0",
     "scipy>=1.13.0",
     "vtracer>=0.6.0",
     # kgdeps
-    "doc-kg>=0.12.0",
+    "doc-kg>=0.15.4",
     "kg-rag @ git+https://github.com/Flux-Frontiers/KGRAG.git",
     # viz
     "plotly>=5.0.0",
@@ -144,7 +141,7 @@ all = [
     "PyQt5>=5.15.0",
     "pyvista[jupyter]>=0.44.0",
     "pyvistaqt>=0.11.0",
-    "pycode-kg @ git+https://github.com/Flux-Frontiers/pycode_kg.git",
+    "pycode-kg>=0.19.3",
 ]
 
 [project.urls]
@@ -163,7 +160,10 @@ target-version = "py312"
 exclude        = [".claude"]
 
 [tool.ruff.lint]
-select = ["E", "F", "W", "I", "UP"]
+# BLE = flake8-blind-except (replaces pylint broad-exception-caught);
+# B023 = bugbear function-uses-loop-variable (replaces pylint cell-var-from-loop).
+# pyflakes F821 already covers pylint undefined-variable.
+select = ["E", "F", "W", "I", "UP", "BLE", "B023"]
 ignore = ["E501"]
 
 [tool.mypy]
@@ -177,16 +177,6 @@ explicit_package_bases = true
 testpaths  = ["tests"]
 addopts    = "-v --tb=short"
 pythonpath = ["src"]
-
-[tool.pylint.messages_control]
-disable = ["all"]
-enable = [
-    "broad-exception-caught",   # W0718
-    "cell-var-from-loop",       # W0640
-    "undefined-variable",       # E0602
-    # cyclic-import (R0401) omitted: Click command registration causes benign cycles
-    # import-outside-toplevel (C0415) omitted: lazy script imports are intentional
-]
 
 # ---------------------------------------------------------------------------
 # CodeKG / DocKG index configuration

@@ -108,7 +108,7 @@ def _du(path: Path) -> str:
             ["du", "-sh", str(path)], capture_output=True, text=True, check=False
         ).stdout
         return out.split()[0] if out else "?"
-    except Exception:
+    except Exception:  # noqa: BLE001
         return "?"
 
 

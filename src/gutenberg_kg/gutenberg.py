@@ -318,7 +318,7 @@ def _fetch_rdf_author(ebook_id: int) -> dict:
     try:
         xml_text = fetch_url(url)
         root = ET.fromstring(xml_text)
-    except Exception:  # pylint: disable=broad-exception-caught
+    except Exception:  # noqa: BLE001
         return {}
 
     agent = root.find(".//pgterms:agent", RDF_NS)
@@ -989,7 +989,7 @@ def run_catalog(
         try:
             download_book(ebook_id, title=title, genre=genre, force=force, dry_run=dry_run)
             succeeded += 1
-        except Exception as exc:  # pylint: disable=broad-exception-caught
+        except Exception as exc:  # noqa: BLE001
             print(f"  ERROR downloading #{ebook_id}: {exc}", file=sys.stderr)
         print()
 
@@ -1076,7 +1076,7 @@ def run_fetch_genre(
             download_book(ebook_id, genre=genre, force=force, dry_run=dry_run)
             status = "dry-run" if dry_run else "downloaded"
             downloaded += 1
-        except Exception as exc:  # pylint: disable=broad-exception-caught
+        except Exception as exc:  # noqa: BLE001
             print(f"  ERROR #{ebook_id}: {exc}", file=sys.stderr)
             status = f"failed: {exc}"
             failed += 1

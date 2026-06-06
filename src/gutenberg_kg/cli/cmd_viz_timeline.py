@@ -52,7 +52,7 @@ def viz_timeline(snapshots: str, chart_type: str) -> None:
             f"plotly is not installed. Install viz dependencies with:\n  {_VIZ_EXTRA}"
         )
 
-    from gutenberg_kg.viz_timeline import (  # pylint: disable=import-outside-toplevel
+    from gutenberg_kg.viz_timeline import (
         create_3d_timeline_figure,
         create_timeline_figure,
         display_timeline_summary,
