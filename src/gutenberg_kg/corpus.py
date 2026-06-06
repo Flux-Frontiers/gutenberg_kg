@@ -417,17 +417,25 @@ class GutenbergSnapshotManager(_BaseSnapshotManager):
         self.repo_root = repo_root
         self.corpus_root = corpus_root
 
-    def capture(  # type: ignore[override]
+    def capture(
         self,
         version: str | None = None,
         branch: str | None = None,
+        graph_stats_dict: dict[str, Any] | None = None,
         tree_hash: str = "",
+        hotspots: list[dict[str, Any]] | None = None,
+        issues: list[str] | None = None,
+        **extra_metrics: Any,
     ) -> Any:
         """Build a corpus snapshot from the live registry.
 
         :param version: Version string; auto-detected from package if None.
         :param branch: Git branch name; auto-detected if None.
+        :param graph_stats_dict: Ignored; corpus metrics are computed from the registry.
         :param tree_hash: Git tree hash; auto-detected if not provided.
+        :param hotspots: Unused; accepted for LSP compatibility.
+        :param issues: Unused; accepted for LSP compatibility.
+        :param extra_metrics: Passed through to the base ``capture`` call.
         :return: New ``Snapshot`` instance (not yet persisted).
         """
         genre_stats = collect_genre_stats(self.registry_path)
@@ -443,6 +451,7 @@ class GutenbergSnapshotManager(_BaseSnapshotManager):
             branch=branch,
             graph_stats_dict=metrics,
             tree_hash=tree_hash,
+            **extra_metrics,
         )
 
     def save_snapshot(self, snapshot: Any, *, force: bool = False) -> Any:  # type: ignore[override]

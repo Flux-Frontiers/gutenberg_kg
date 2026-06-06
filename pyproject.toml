@@ -48,7 +48,7 @@ packages = [{ include = "gutenberg_kg", from = "src" }]
 
 [tool.poetry.group.dev.dependencies]
 detect-secrets = ">=1.5.0"
-mypy           = ">=1.10.0"
+ty             = ">=0.0.41"
 pdoc           = ">=14.0.0"
 pillow         = ">=10.0.0"
 pre-commit     = ">=4.5.1"
@@ -90,7 +90,7 @@ dependencies = [
 [project.optional-dependencies]
 dev = [
     "detect-secrets>=1.5.0",
-    "mypy>=1.10.0",
+    "ty>=0.0.41",
     "pdoc>=14.0.0",
     "pillow>=10.0.0",
     "pre-commit>=4.5.1",
@@ -121,7 +121,7 @@ viz3d = [
 all = [
     # dev
     "detect-secrets>=1.5.0",
-    "mypy>=1.10.0",
+    "ty>=0.0.41",
     "pdoc>=14.0.0",
     "pillow>=10.0.0",
     "pre-commit>=4.5.1",
@@ -166,12 +166,12 @@ exclude        = [".claude"]
 select = ["E", "F", "W", "I", "UP", "BLE", "B023"]
 ignore = ["E501"]
 
-[tool.mypy]
-python_version         = "3.12"
-strict                 = false
-ignore_missing_imports = true
-mypy_path              = "src"
-explicit_package_bases = true
+[tool.ty.environment]
+python-version = "3.12"
+root = ["src"]
+
+[tool.ty.rules]
+unresolved-import = "ignore"
 
 [tool.pytest.ini_options]
 testpaths  = ["tests"]

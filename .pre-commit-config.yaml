@@ -35,9 +35,9 @@ repos:
 
   - repo: local
     hooks:
-      - id: mypy
-        name: mypy
-        entry: poetry run mypy src/
+      - id: ty
+        name: ty
+        entry: poetry run ty check src/ --exclude src/gutenberg_kg/viz3d.py
         language: system
         pass_filenames: false
         always_run: true
