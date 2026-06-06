@@ -64,15 +64,58 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   `[project.dependencies]`. It was already imported by `gutenkg ingest`'s two-pane
   display but only present transitively.
 
+- **`doc-kg` minimum version raised to 0.15.5** — 0.15.5 is the first release
+  that exposes `similar_max_degree` through `DocKG.build_index_from_cache` and
+  `DocKG.build_index`; earlier versions silently drop the cap.
+
 - **README refreshed to v1.4.0** — version badge, corpus totals (245 books /
   18 genres / 1.24M nodes / 5.32M edges), the per-genre table, and the citation
   metadata updated to reflect the expanded corpus.
+
+### Added
+
+- **Standalone Docker image** (`docker/`) — self-contained RunPod/Docker worker
+  that bakes the pre-built `bundles/gutenberg-all/` corpus into the image so it
+  starts without any network access or corpus build step at runtime.
+  - `docker/Dockerfile` — extends `egsuchanek/kgrag-worker` with `doc-kg`,
+    `diary-kg`, pre-downloaded `BAAI/bge-small-en-v1.5`, and `HF_HUB_OFFLINE=1`
+    so HuggingFace is never reached at inference time.
+  - `docker/handler.py` — RunPod/FastAPI handler that registers the consolidated
+    DocKG (245 books) and 4 DiaryKG indices on startup; routes `/runsync` and
+    `/runsync/query` with optional synthesis via an OpenAI-compatible endpoint.
+  - `docker/chat.py` — Streamlit chat UI (The Knowledge Press) wired to the
+    worker; genre-filter sidebar, suggested queries, result cards with relevance
+    scores, and optional LLM synthesis.
+  - `docker/docker-compose.yml` — `gutenberg-worker` service plus optional
+    `--profile chat` for the Streamlit UI.
+  - `docker/.env.example` — template for `HANDLER_SECRET`, `VLLM_ENDPOINT_URL`,
+    `VLLM_MODEL`, and `VLLM_API_KEY`.
+  - `Makefile` — `build-corpus / build / run / chat / stop / query / logs`
+    targets for the full build-then-run workflow.
+
+- **`gutenberg-diaries` in `GENRE_LABELS`** — diaries are registered as a KG
+  corpus but are not in `genres.json` / `ALL_GENRES` (they are built by
+  DiaryKG, not the standard Gutenberg pipeline).  Adding the label explicitly
+  means `gutenkg status` and snapshot commands show the diary corpus correctly.
 
 ### Removed
 
 - **`handoff.md`** — removed stale top-level handoff notes.
 
 ### Fixed
+
+- **SIMILAR_TO edge hub-chunk explosion** — `similar_max_degree` was silently
+  dropped before reaching the BLAS matmul in `_discover_similar_edges` because
+  neither `DocKG.build_index_from_cache` nor `DocKG.build_index` accepted the
+  parameter.  Result: uncapped edges produced hub chunks with degree 100+
+  (max observed: 111 in Pride and Prejudice), inflating `_semantic_rank_boost`
+  to 88× and drowning topical/entity signals.  Fix: wired `similar_max_degree`
+  through the full `kg.py` API chain; `gutenkg ingest` now defaults to 8 (the
+  evaluated cap); `build-corpus` inherits the same default via
+  `BuildCorpusOptions.similar_max_degree`.  Re-evaluated on 12 books / 34
+  labeled queries: nDCG +10.3%, MRR +3.4%, Recall +17.7% vs no-SIMILAR baseline
+  (previous memory entry of +5.6% was measured against the uncapped bug).
+  Requires `doc-kg>=0.15.5`.
 
 - **`gutenkg status` / `snapshot save` under-reporting corpus** — `GENRE_LABELS`
   in `corpus.py` was a hardcoded dict missing all 5 new genres; both commands

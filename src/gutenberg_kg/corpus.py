@@ -40,6 +40,9 @@ def _slug_to_label(slug: str) -> str:
 GENRE_LABELS: dict[str, str] = {
     f"gutenberg-{slug}": _slug_to_label(slug) for slug in _gr.ALL_GENRES
 }
+# Diaries are processed by DiaryKG (not the standard Gutenberg ingest pipeline)
+# so "diaries" is not in genres.json / ALL_GENRES, but the corpus IS registered.
+GENRE_LABELS["gutenberg-diaries"] = "Diaries"
 
 # ---------------------------------------------------------------------------
 # Internal helpers

@@ -86,6 +86,7 @@ class BuildCorpusOptions:
 
     output: str | None = None  # output bundle name; default derived from genres
     similar_k: int = DEFAULT_SIMILAR_K
+    similar_max_degree: int = DEFAULT_SIMILAR_K  # hard per-node degree cap
     discover_similar: bool = True
     n_workers: int = 4
     wipe: bool = True
@@ -355,6 +356,7 @@ def run_build_corpus(genres: list[str], opts: BuildCorpusOptions) -> int:
             wipe=opts.wipe,
             discover_similar=opts.discover_similar,
             similar_k=opts.similar_k,
+            similar_max_degree=opts.similar_max_degree,
             quiet=opts.quiet,
         )
         kg_all.close()

@@ -1,0 +1,48 @@
+# corpus-gutenberg — local dev compose
+#
+# Usage (fast path — bundle already baked into image):
+#   docker compose up
+#
+# Query (worker only):
+#   curl -s -X POST http://localhost:8000/runsync \
+#     -H "Content-Type: application/json" \
+#     -d '{"input":{"query":"What is justice according to Plato?","corpus":"philosophy","k":5}}' | jq .
+#
+# Chat UI (requires --profile chat):
+#   docker compose --profile chat up
+
+services:
+  gutenberg-worker:
+    image: corpus-gutenberg:latest
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    command: python handler.py --rp_serve_api --rp_api_host 0.0.0.0
+    ports:
+      - "8000:8000"
+    environment:
+      GUTENBERG_ROOT: /workspace/gutenberg
+      EMBED_MODEL: BAAI/bge-small-en-v1.5
+      HANDLER_SECRET: ${HANDLER_SECRET:-}
+      # Synthesis via a host LLM server (optional — omit to disable).
+      # Defaults target oMLX on :8080; see docker/.env.example.
+      VLLM_ENDPOINT_URL: ${VLLM_ENDPOINT_URL:-http://host.docker.internal:8080}
+      VLLM_MODEL: ${VLLM_MODEL:-Qwen3-8B-MLX-4bit}
+      VLLM_API_KEY: ${VLLM_API_KEY:-}
+    restart: unless-stopped
+
+  # Optional Streamlit chat UI — launch with:  docker compose --profile chat up
+  gutenberg-chat:
+    image: corpus-gutenberg:latest
+    command: >
+      streamlit run /app/chat.py
+      --server.port 8501
+      --server.address 0.0.0.0
+    ports:
+      - "8501:8501"
+    environment:
+      KGRAG_ENDPOINT: http://gutenberg-worker:8000
+    depends_on:
+      - gutenberg-worker
+    profiles:
+      - chat

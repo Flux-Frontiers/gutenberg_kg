@@ -1,0 +1,73 @@
+{
+  "format": "1.0",
+  "last_update": "2026-06-06T01:27:01.932024+00:00",
+  "snapshots": [
+    {
+      "key": "e7d8a8023f69b4d7de199d6b44978fb01c73c723",
+      "branch": "main",
+      "timestamp": "2026-06-06T01:27:01.931600+00:00",
+      "version": "0.19.2",
+      "file": "e7d8a8023f69b4d7de199d6b44978fb01c73c723.json",
+      "metrics": {
+        "db_path": ".pycodekg/graph.sqlite",
+        "total_nodes": 3868,
+        "meaningful_nodes": 250,
+        "total_edges": 3254,
+        "node_counts": {
+          "class": 12,
+          "function": 154,
+          "method": 59,
+          "module": 25,
+          "symbol": 3618
+        },
+        "edge_counts": {
+          "ATTR_ACCESS": 1051,
+          "CALLS": 1390,
+          "CONTAINS": 225,
+          "IMPORTS": 202,
+          "INHERITS": 5,
+          "RESOLVES_TO": 381
+        },
+        "module_count": 25,
+        "class_count": 12,
+        "function_count": 154,
+        "method_count": 59,
+        "docstring_coverage": 0.7559999999999999,
+        "snapshot_count": 0,
+        "critical_issues": 3,
+        "complexity_median": 3,
+        "module_node_counts": {
+          "src/gutenberg_kg/__init__.py": 2,
+          "src/gutenberg_kg/authors.py": 134,
+          "src/gutenberg_kg/build_corpus.py": 128,
+          "src/gutenberg_kg/cli/__init__.py": 1,
+          "src/gutenberg_kg/cli/cmd_authors.py": 6,
+          "src/gutenberg_kg/cli/cmd_build_corpus.py": 30,
+          "src/gutenberg_kg/cli/cmd_download.py": 43,
+          "src/gutenberg_kg/cli/cmd_genres.py": 29,
+          "src/gutenberg_kg/cli/cmd_ia.py": 33,
+          "src/gutenberg_kg/cli/cmd_ingest.py": 23,
+          "src/gutenberg_kg/cli/cmd_rebuild.py": 12,
+          "src/gutenberg_kg/cli/cmd_reregister.py": 13,
+          "src/gutenberg_kg/cli/cmd_snapshot.py": 185,
+          "src/gutenberg_kg/cli/cmd_status.py": 74,
+          "src/gutenberg_kg/cli/cmd_viz3d.py": 8,
+          "src/gutenberg_kg/cli/cmd_viz_timeline.py": 22,
+          "src/gutenberg_kg/cli/main.py": 2,
+          "src/gutenberg_kg/cli/options.py": 29,
+          "src/gutenberg_kg/corpus.py": 197,
+          "src/gutenberg_kg/genres.py": 36,
+          "src/gutenberg_kg/gutenberg.py": 419,
+          "src/gutenberg_kg/ia.py": 324,
+          "src/gutenberg_kg/ingest.py": 474,
+          "src/gutenberg_kg/viz3d.py": 801,
+          "src/gutenberg_kg/viz_timeline.py": 89
+        }
+      },
+      "deltas": {
+        "vs_previous": null,
+        "vs_baseline": null
+      }
+    }
+  ]
+}

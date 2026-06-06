@@ -85,6 +85,7 @@ dependencies = [
     "click>=8.1.0,<9",
     "kgmodule-utils>=0.2.4",
     "rich>=13.0.0",
+    "doc-kg (>=0.15.5)",
 ]
 
 [project.optional-dependencies]
