@@ -106,6 +106,30 @@ _KG_SQLITE: dict[str, Path] = {}
 # Populated at startup: "<genre>/<book>" → {title, author, genre, ...}
 _catalog: dict[str, dict] = {}
 
+# Static metadata for diary KGs (not in catalog.json, which covers prose/verse only).
+_DIARY_META: dict[str, dict] = {
+    "pepys-complete": {
+        "author": "Samuel Pepys",
+        "title": "The Diary of Samuel Pepys — Complete",
+        "genre": "diaries",
+    },
+    "evelyn-volume-1": {
+        "author": "John Evelyn",
+        "title": "The Diary of John Evelyn — Volume 1",
+        "genre": "diaries",
+    },
+    "evelyn-volume-2": {
+        "author": "John Evelyn",
+        "title": "The Diary of John Evelyn — Volume 2",
+        "genre": "diaries",
+    },
+    "johnson": {
+        "author": "James Boswell",
+        "title": "The Journal of a Tour to the Hebrides with Samuel Johnson",
+        "genre": "diaries",
+    },
+}
+
 
 # ---------------------------------------------------------------------------
 # Startup
@@ -163,10 +187,12 @@ def _bootstrap_registry():
                 .strip()
                 .replace(" ", "-")
             )
+            # The .diarykg/ databases use DocKG schema (not DiaryKG native schema),
+            # so register as GUTENBERG kind to use the DocKG adapter.
             entry = KGEntry(
                 id=str(uuid.uuid4()),
                 name=slug,
-                kind=KGKind.DIARY,
+                kind=KGKind.GUTENBERG,
                 repo_path=diary_dir,
                 venv_path=Path("/usr"),
                 sqlite_path=sqlite,
@@ -276,6 +302,12 @@ def _enrich_catalog(hits: list[dict]) -> None:
             h["genre"] = meta.get("genre") or parts[0]
             h["title"] = meta.get("title") or parts[1]
             h["author"] = meta.get("author")
+        # Diary hits have no genre/book prefix in source_path — fall back to static map.
+        diary = _DIARY_META.get(h.get("kg_name", ""))
+        if diary and not h.get("author"):
+            h["genre"] = diary["genre"]
+            h["title"] = diary["title"]
+            h["author"] = diary["author"]
 
 
 # ---------------------------------------------------------------------------
@@ -389,10 +421,15 @@ def handler(job: dict) -> dict:
     kind_filter = None
     genre_filter: str | None = None
 
+    # Diary KGs are registered as KGKind.GUTENBERG (DocKG schema); filter by
+    # kg_name post-query rather than by kind.
+    diary_filter = False
+
     if corpus == "gutenberg":
         kind_filter = [KGKind.GUTENBERG]
     elif corpus == "diary":
-        kind_filter = [KGKind.DIARY]
+        kind_filter = [KGKind.GUTENBERG]
+        diary_filter = True
     elif corpus in _ALL_GENRES:
         kind_filter = [KGKind.GUTENBERG]
         genre_filter = corpus
@@ -404,8 +441,8 @@ def handler(job: dict) -> dict:
             )
         }
 
-    # Over-request when genre-filtering so post-filter still has enough hits.
-    query_k = k * 4 if genre_filter else k
+    # Over-request when post-filtering so we keep enough hits after exclusion.
+    query_k = k * 6 if (genre_filter or diary_filter) else k
 
     result = _kgrag.query(
         query,
@@ -421,6 +458,9 @@ def handler(job: dict) -> dict:
 
     if genre_filter:
         hits = [h for h in hits if h.get("genre") == genre_filter][:k]
+    elif diary_filter:
+        # Keep only hits from the diary KGs (exclude the main "gutenberg" dockg).
+        hits = [h for h in hits if h.get("kg_name") != "gutenberg"][:k]
 
     synthesis = _synthesize(query, hits, model) if synthesize else None
 

@@ -70,9 +70,10 @@ DEFAULT_SIMILAR_K = 8
 # Per-genre default chunk strategy.  Genres not listed here get "semantic".
 # "verse" fires the VerseChunker which respects chapter:verse numbering and
 # also auto-detects verse format (>10% of lines match ^\d+:\d+\s).
-GENRE_STRATEGY: dict[str, str] = {
-    "sacred-texts": "verse",
-}
+# sacred-texts is NOT listed here: only the KJV Bible uses N:M verse format,
+# and it lives in ancient-classical. The other sacred texts are prose translations
+# that auto-detection correctly leaves as "semantic".
+GENRE_STRATEGY: dict[str, str] = {}
 
 
 # ---------------------------------------------------------------------------

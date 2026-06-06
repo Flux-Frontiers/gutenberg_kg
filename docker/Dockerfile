@@ -27,8 +27,9 @@ WORKDIR /app
 
 # doc-kg: DocKG index + query API
 # diary-kg: DiaryKG temporal index + query API
+# streamlit + httpx: chat UI dependencies
 # watchdog: faster Streamlit file-watching via native OS events (vs. polling)
-RUN pip install --no-cache-dir doc-kg diary-kg watchdog
+RUN pip install --no-cache-dir doc-kg diary-kg streamlit httpx watchdog
 
 # Pre-download the embedding model during build so the container never reaches
 # HuggingFace at runtime (network may be unavailable or restricted on RunPod).

@@ -1,4 +1,4 @@
-# The Quran (Yusuf Ali translation)
+# The Quran (Rodwell translation)
 
 **Unknown**
 

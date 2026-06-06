@@ -68,6 +68,19 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   that exposes `similar_max_degree` through `DocKG.build_index_from_cache` and
   `DocKG.build_index`; earlier versions silently drop the cap.
 
+- **`docker/handler.py` diary filter** — `corpus=diary` routing added.
+  Queries with `corpus=diary` filter results to diary KGs (excluding the main
+  `gutenberg` DocKG), with 6× query expansion matching the existing
+  `genre_filter` behaviour. Diary result cards now include the diary slug from
+  a `_DIARY_META` lookup so the client can display the source diary title.
+
+- **`GENRE_STRATEGY` cleared for sacred-texts** — removed `{"sacred-texts":
+  "verse"}` from `build_corpus.py`. Only the KJV Bible (ID 10) uses `N:M`
+  chapter:verse format; `VerseChunker` auto-detects it via the >10%-line heuristic.
+  All other sacred texts (Quran, Dhammapada, Bhagavad Gita, Tao Te Ching,
+  Upanishads, Analects) are prose translations with no verse markers and should use
+  semantic chunking. Forcing verse strategy on them produced malformed chunks.
+
 - **README refreshed to v1.4.0** — version badge, corpus totals (245 books /
   18 genres / 1.24M nodes / 5.32M edges), the per-genre table, and the citation
   metadata updated to reflect the expanded corpus.
@@ -92,6 +105,28 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
     `VLLM_MODEL`, and `VLLM_API_KEY`.
   - `Makefile` — `build-corpus / build / run / chat / stop / query / logs`
     targets for the full build-then-run workflow.
+
+- **`gutenkg build-diaries` — diary DocKG index builder** — new subcommand
+  (`src/gutenberg_kg/build_diaries.py` + `cli/cmd_build_diaries.py`) that
+  builds `.diarykg/` DocKG indices for diary corpora under `corpus/diaries/`.
+  Prerequisites the `gutenkg build-corpus` bundle stage, which copies these
+  indices verbatim.
+  - `--diary NAME` (repeatable) builds a subset; default is all discovered
+    diary directories. Must match an exact subdirectory name under
+    `corpus/diaries/`.
+  - Build flags fixed to match the Docker image: `sentence_group` chunking,
+    `--no-similar` (chronologically dense entries produce SIMILAR_TO noise),
+    `BAAI/bge-small-en-v1.5` embedding model.
+  - Skips diaries with an existing `.diarykg/graph.sqlite`; use `--force` to
+    rebuild. `--workers`, `--dry-run`, and `--quiet` match the `ingest` flags.
+
+- **`docs/DIARY_INGEST_HANDOFF.md`** — comprehensive diary ingestion reference
+  documenting the `.diary/` chunk format (YAML frontmatter with `timestamp`,
+  `category`, `topics`), concrete `dockg build` commands for all four diaries
+  (Pepys, Evelyn Vol 1 & 2, Boswell Hebrides), expected node/edge counts, how
+  `bundle_diaries()` picks up indices, handler slug derivation, and a
+  troubleshooting table. Serves as the handoff document for Docker build agents
+  that need to pre-build diary indices from scratch.
 
 - **`gutenberg-diaries` in `GENRE_LABELS`** — diaries are registered as a KG
   corpus but are not in `genres.json` / `ALL_GENRES` (they are built by
@@ -134,6 +169,24 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - **RunPod build pod prefers curated catalog files** — `runpod/build_kg.py` now
   checks for `scripts/catalogs/<genre>.txt` before falling back to
   `fetch-genre --max-results 200`, so pod corpora match the local curated set.
+
+- **Sacred-texts catalog corrections** — two corpus entries were wrong and one
+  needed a translator label fix:
+  - ID 1097 (labelled "Torah / Tanakh") actually downloaded *Mrs. Warren's
+    Profession* by George Bernard Shaw — a catalog ID collision. Replaced with
+    Dhammapada (ID 2017, F. Max Müller translation), the canonical Buddhist
+    wisdom text.
+  - ID 2800 (labelled "Quran — Yusuf Ali translation") is the Rodwell
+    translation; label corrected to "The Quran (Rodwell translation)".
+  - Both corpus folders deleted and re-downloaded with correct content and
+    labels; `scripts/catalogs/sacred-texts.txt` updated accordingly.
+  - `scripts/catalogs/ancient-classical.txt` comment clarified: Bible KJV (#10)
+    lives in sacred-texts, not ancient-classical.
+
+- **`docker/chat` profile missing Python dependencies** — `make chat` failed
+  with `exec: "streamlit": executable file not found` because `streamlit` and
+  `httpx` (imported by `chat.py`) were absent from the Dockerfile pip install
+  line. Both added; image must be rebuilt with `make build`.
 
 ---
 
