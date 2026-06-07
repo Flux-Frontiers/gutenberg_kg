@@ -10,6 +10,23 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added
 
+- **`scripts/bench_synthesis.py` — synthesis latency benchmark** — standalone script
+  that hits the RunPod handler's `/runsync` endpoint with `synthesize=true` and
+  reports per-query `search_ms`, `synthesis_ms`, and wall-clock time with aggregate
+  stats (avg/min/max) and answer length.
+
+- **`IMAGE_STEPS` env var — configurable image inference steps** — replaces the
+  hardcoded default of 4 steps in `docker/handler.py`, `docker/image_server.py`,
+  and `docker/chat.py`. Propagated through `docker-compose.yml` (`IMAGE_STEPS: ${IMAGE_STEPS:-4}`)
+  on both the worker and chat services. Documented in `.env.example` and `.env`.
+  - `image_server.py`: `ImageGenRequest` gains `num_inference_steps` field; passed
+    to `image_gen.generate()`, falling back to `GUTENKG_IMAGE_STEPS`.
+  - `chat.py`: reads `IMAGE_STEPS` and forwards `num_inference_steps` in every
+    `/v1/images/generations` POST to the image server.
+  - `handler.py`: `IMAGE_STEPS` module-level constant used as default in `_imagine`.
+
+### Added
+
 - **`gutenkg imagine` — corpus-grounded image generation CLI** — new subcommand
   (`src/gutenberg_kg/cli/cmd_imagine.py`) that generates images from a text prompt
   or from corpus content retrieved via DocKG / DiaryKG.

@@ -73,6 +73,7 @@ VLLM_MODEL = os.environ.get("VLLM_MODEL", "Qwen3-8B-MLX-4bit")
 SYNTH_MAX_K = int(os.environ.get("SYNTH_MAX_K", "12"))
 EMBED_MODEL = os.environ.get("EMBED_MODEL", "BAAI/bge-small-en-v1.5")
 IMAGE_ENDPOINT = os.environ.get("IMAGE_ENDPOINT", "")  # base URL of mflux-serve
+IMAGE_STEPS = int(os.environ.get("IMAGE_STEPS", "4"))
 HANDLER_SECRET = os.environ.get("HANDLER_SECRET", "")
 
 _DOCKG_SQLITE = GUTENBERG_ROOT / ".dockg" / "graph.sqlite"
@@ -437,7 +438,7 @@ def _imagine(inp: dict) -> dict:
         return {"error": "imagine requires a non-empty 'prompt'"}
 
     aspect = inp.get("aspect_ratio", "3:2")
-    steps = int(inp.get("steps", 4))
+    steps = int(inp.get("steps", IMAGE_STEPS))
     seed = inp.get("seed")
 
     width, height = _ASPECT_SIZES.get(aspect, _ASPECT_SIZES["3:2"])

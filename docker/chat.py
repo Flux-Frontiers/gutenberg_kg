@@ -45,6 +45,7 @@ _IN_DOCKER = os.path.exists("/.dockerenv")
 _HOST = "host.docker.internal" if _IN_DOCKER else "localhost"
 _DEFAULT_IMAGE_SERVER = os.environ.get("GUTENKG_IMAGE_ENDPOINT", f"http://{_HOST}:8090")
 _DEFAULT_IMAGE_MODEL = os.environ.get("GUTENKG_IMAGE_MODEL", "flux2-klein-4b")
+_DEFAULT_IMAGE_STEPS = int(os.environ.get("IMAGE_STEPS", "4"))
 _DEFAULT_VLM_ENDPOINT = os.environ.get("GUTENKG_VLM_ENDPOINT", f"http://{_HOST}:8080/v1")
 
 _ASPECT_SIZES: dict[str, str] = {
@@ -415,6 +416,7 @@ def _render_assistant_turn(result: dict, idx: int = 0) -> None:
                             "prompt": prompt,
                             "n": 1,
                             "size": _ASPECT_SIZES.get(aspect, "1536x1024"),
+                            "num_inference_steps": _DEFAULT_IMAGE_STEPS,
                         },
                         timeout=httpx.Timeout(connect=5.0, read=300.0, write=10.0, pool=5.0),
                     )

@@ -40,6 +40,7 @@ from gutenberg_kg import image_gen
 app = FastAPI(title="GutenbergKG image server")
 
 _MODEL_NAME = os.environ.get("GUTENKG_IMAGE_MODEL", image_gen._DEFAULT_MODEL)
+_DEFAULT_STEPS = int(os.environ.get("GUTENKG_IMAGE_STEPS", "4"))
 
 # Pre-load the model at startup so the first request isn't slow.
 print(f"[startup] loading model {_MODEL_NAME} ...")
@@ -53,6 +54,7 @@ class ImageGenRequest(BaseModel):
     n: int = 1
     size: str = "1536x1024"
     quality: str | None = None
+    num_inference_steps: int | None = None
     seed: int | None = None
     response_format: str = "b64_json"
 
@@ -92,6 +94,7 @@ async def generate_image(req: ImageGenRequest):
             aspect_ratio=aspect,
             seed=req.seed,
             model_name=_MODEL_NAME,
+            steps=req.num_inference_steps or _DEFAULT_STEPS,
         ),
     )
 

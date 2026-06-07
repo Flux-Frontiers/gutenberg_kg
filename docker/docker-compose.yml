@@ -29,6 +29,7 @@ services:
       VLLM_ENDPOINT_URL: ${VLLM_ENDPOINT_URL:-http://host.docker.internal:8080}
       VLLM_MODEL: ${VLLM_MODEL:-Qwen3-8B-MLX-4bit}
       VLLM_API_KEY: ${VLLM_API_KEY:-}
+      IMAGE_STEPS: ${IMAGE_STEPS:-4}
     restart: unless-stopped
 
   # Optional Streamlit chat UI — launch with:  docker compose --profile chat up
@@ -44,6 +45,7 @@ services:
       KGRAG_ENDPOINT: http://gutenberg-worker:8000
       # mflux-server runs on the host Mac; host.docker.internal bridges to it.
       GUTENKG_IMAGE_ENDPOINT: ${GUTENKG_IMAGE_ENDPOINT:-http://host.docker.internal:8090}
+      IMAGE_STEPS: ${IMAGE_STEPS:-4}
     depends_on:
       - gutenberg-worker
     profiles:
