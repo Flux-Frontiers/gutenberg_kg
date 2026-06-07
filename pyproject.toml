@@ -7,7 +7,7 @@
 #
 # Quick install (pip)
 # -------------------
-#   pip install -e ".[dev]"             core + dev tools (pytest, ruff, mypy, etc.)
+#   pip install -e ".[dev]"             core + dev tools (pytest, ruff, ty, etc.)
 #   pip install -e ".[kgdeps]"          core + KG integrations (doc-kg, kg-rag)
 #   pip install -e ".[viz]"             core + 2-D timeline visualisation (plotly)
 #   pip install -e ".[viz3d]"           core + 3-D visualisation (pyvista, PyQt5, pycode-kg)
