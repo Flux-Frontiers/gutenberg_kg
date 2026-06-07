@@ -3,8 +3,9 @@
 # Download: gutenkg download catalog scripts/catalogs/ancient-classical.txt --genre ancient-classical
 #
 # Already in corpus: Epictetus (#10661), Meditations/Marcus Aurelius (#2680),
-# Oedipus (#27673), The Aeneid (#228), Bible KJV (#10), Divine Comedy (#1004),
+# Oedipus (#27673), The Aeneid (#228), Divine Comedy (#1004),
 # Iliad (#6130), Odyssey (#1727), The Republic (#1497)
+# Bible KJV (#10) is in sacred-texts, not here.
 
 2707	Histories (Herodotus)
 7142	History of the Peloponnesian War (Thucydides)

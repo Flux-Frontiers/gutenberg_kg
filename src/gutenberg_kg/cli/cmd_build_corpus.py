@@ -81,6 +81,12 @@ def _parse_strategy(ctx, param, value):  # noqa: ARG001
     ),
 )
 @click.option(
+    "--diaries-only",
+    is_flag=True,
+    default=False,
+    help="Skip phases 1-3; re-bundle diary indices into an existing bundle only.",
+)
+@click.option(
     "--dry-run",
     is_flag=True,
     default=False,
@@ -92,7 +98,9 @@ def _parse_strategy(ctx, param, value):  # noqa: ARG001
     default=False,
     help="Suppress per-stage DocKG progress output.",
 )
-def build_corpus(genre, output, similar_k, no_similar, workers, strategy, dry_run, quiet):
+def build_corpus(
+    genre, output, similar_k, no_similar, workers, strategy, diaries_only, dry_run, quiet
+):
     """Build one consolidated DocKG over the whole corpus (or chosen genres).
 
     Writes a single graph.sqlite + lancedb index to ``bundles/<name>/.dockg/`` —
@@ -110,6 +118,7 @@ def build_corpus(genre, output, similar_k, no_similar, workers, strategy, dry_ru
     :param no_similar: Disable SIMILAR_TO discovery.
     :param workers: Embedding worker processes.
     :param strategy: Dict of genre→strategy overrides (parsed from CLI).
+    :param diaries_only: Skip phases 1-3 and only re-bundle diary indices.
     :param dry_run: Print the plan without building.
     :param quiet: Suppress per-stage progress output.
     """
@@ -120,6 +129,7 @@ def build_corpus(genre, output, similar_k, no_similar, workers, strategy, dry_ru
         discover_similar=not no_similar,
         n_workers=workers,
         strategy_overrides=strategy,
+        diaries_only=diaries_only,
         dry_run=dry_run,
         quiet=quiet,
     )

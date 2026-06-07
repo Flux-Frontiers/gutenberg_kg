@@ -117,25 +117,44 @@ All genres in a strategy group are processed together in one DocKG pass.
 
 ## Stage 5 — Diary Bundle  `[4/4]`
 
-```
-  DiaryKG indices are NOT re-ingested through DocKG.
-  Temporal structure and YAML timestamps are preserved by copying verbatim.
+DiaryKG indices are built by `make build-diaries` **before** `make build-corpus` runs.
+Each diary goes through the full four-step DiaryKG pipeline:
 
+| Step | What runs |
+|---|---|
+| 1 | `DiaryTransformer.ingest_to_corpus()` — pre-built offline; `.diary/` already exists |
+| 2 | `DocKG.build()` via `DiaryKG.rebuild_index()` — sentence_group, no SIMILAR_TO |
+| 3 | `DiaryKG._inject_topic_edges()` — writes `HAS_TOPIC` edges from frontmatter classifier scores |
+| 4 | `DiaryKG._enrich_metadata()` — adds `timestamp`, `category`, `context`, `diary_source_file` columns |
+
+`bundle_diaries()` copies the completed `.diarykg/` indices verbatim (`symlinks=True` preserves
+the `.diarykg/corpus -> ../.diary` symlink; if the target is absent in the bundle the symlink is
+dangling but query-time reads only hit SQLite + LanceDB, so this is safe).
+
+```
   corpus/diaries/
-    The Diary of Samuel Pepys — Complete/.diarykg/   ──┐
-    The Diary of John Evelyn — Volume 1/.diarykg/    ──┤  shutil.copytree
-    The Diary of John Evelyn — Volume 2/.diarykg/    ──┤  ──────────────▶
-    The Journal of a Tour to the Hebrides/.diarykg/  ──┘
+    The Diary of Samuel Pepys — Complete/.diarykg/              ──┐
+    The Diary of John Evelyn — Volume 1/.diarykg/               ──┤  shutil.copytree
+    The Diary of John Evelyn — Volume 2/.diarykg/               ──┤  (symlinks=True)
+    The Journal of a Tour to the Hebrides with Samuel Johnson/.diarykg/  ──┘
 
   bundles/gutenberg-all/diaries/
-    pepys-complete/.diarykg/
-    evelyn-vol1/.diarykg/
-    evelyn-vol2/.diarykg/
-    boswell-hebrides/.diarykg/
+    The Diary of Samuel Pepys — Complete/.diarykg/
+    The Diary of John Evelyn — Volume 1/.diarykg/
+    The Diary of John Evelyn — Volume 2/.diarykg/
+    The Journal of a Tour to the Hebrides with Samuel Johnson/.diarykg/
 ```
 
-DiaryKG nodes carry: `date`, `year`, `month`, `entry_index`, `location` — queryable as a
-temporal dimension alongside the main semantic index.
+DiaryKG chunk nodes carry these extra SQLite columns (added by Step 4):
+
+| Column | Example |
+|---|---|
+| `timestamp` | `1660-02-15T00:00` |
+| `category` | `work` |
+| `context` | `Office` |
+| `diary_source_file` | `the_diary_of_samuel_pepys_complete.md` |
+
+Step 3 also writes `HAS_TOPIC` edges with classifier confidence scores into the graph.
 
 ---
 
@@ -174,13 +193,31 @@ the `file_path` prefix — no extra node fields required.
   │   └── catalog.json          84 KB    (241 books · author/title/ID)
   │
   └── diaries/
-      ├── pepys-complete/.diarykg/
-      ├── evelyn-vol1/.diarykg/
-      ├── evelyn-vol2/.diarykg/
-      └── boswell-hebrides/.diarykg/
+      ├── The Diary of Samuel Pepys — Complete/.diarykg/
+      ├── The Diary of John Evelyn — Volume 1/.diarykg/
+      ├── The Diary of John Evelyn — Volume 2/.diarykg/
+      └── The Journal of a Tour to the Hebrides with Samuel Johnson/.diarykg/
 
   Total: 6,508.9 MB  ·  Build time: 23m 18s  ·  4 embed workers
 ```
+
+---
+
+## Build Workflow
+
+Full sequence from clean checkout to running container:
+
+```
+make build-diaries   # DiaryKG pipeline (Steps 2+3+4) for each diary under corpus/diaries/
+make build-corpus    # DocKG prose index + copy diary indices -> bundles/gutenberg-all/
+make build           # docker build — COPYs bundles/gutenberg-all/ into image
+make run             # docker compose up — worker on http://localhost:8000
+```
+
+`make build-corpus` depends on `make build-diaries` in the Makefile, so running
+`make build-corpus` alone is sufficient for steps 1-2.  **Never run `make build`
+before `make build-corpus` completes** — the Dockerfile COPYs from `bundles/gutenberg-all/`
+and will bake in a stale or empty bundle if that directory is missing or outdated.
 
 ---
 
@@ -233,4 +270,4 @@ the `file_path` prefix — no extra node fields required.
 
 ---
 
-*Generated from `gutenkg build-corpus` · doc-kg 0.15.4 · BAAI/bge-small-en-v1.5*
+*Generated from `gutenkg build-corpus` · doc-kg 0.15.5 · diary-kg 0.92.6 · BAAI/bge-small-en-v1.5*

@@ -218,7 +218,7 @@ def build_dockg(
         kg.build_graph(wipe=True, quiet=quiet)
         cache_path = kg.db_path.parent / "embeddings.json"
         kg.build_embeddings(out=cache_path, n_workers=4, quiet=quiet)
-        kg.build_index_from_cache(cache_path, wipe=True, quiet=quiet)
+        kg.build_index_from_cache(cache_path, wipe=True, similar_max_degree=8, quiet=quiet)
         kg.close()
         cache_path.unlink(missing_ok=True)
         return True

@@ -2,11 +2,12 @@
 # Format: <gutenberg_id>[TAB<title>]
 # Download: gutenkg download catalog scripts/catalogs/sacred-texts.txt --genre sacred-texts
 #
-# Note: verse/chapter-verse structure — drives doc_kg verse heading pattern work.
-# The Bible (KJV, #10) is already in ancient-classical — excluded here.
+# Note: KJV Bible (#10) is already in this genre (downloaded separately) — not listed here.
+# It is the only text with N:M verse format; VerseChunker auto-detects it.
+# All other texts are prose translations — semantic chunking is correct for them.
 
-2800	The Quran (Yusuf Ali translation)
-1097	The Torah / Tanakh (JPS 1917 translation)
+2800	The Quran (Rodwell translation)
+2017	Dhammapada (F. Max Müller translation)
 2388	The Bhagavad Gita (Edwin Arnold verse translation)
 216	Tao Te Ching (James Legge translation)
 3283	The Upanishads (Max Müller translation)

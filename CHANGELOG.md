@@ -10,6 +10,87 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added
 
+- **`gutenkg imagine` — corpus-grounded image generation CLI** — new subcommand
+  (`src/gutenberg_kg/cli/cmd_imagine.py`) that generates images from a text prompt
+  or from corpus content retrieved via DocKG / DiaryKG.
+  - `gutenkg imagine "prompt"` — direct text-to-image via local FLUX.2-Klein (MLX).
+  - `gutenkg imagine --query "great fire" --book pepys` — retrieves relevant diary
+    chunks, rewrites them into a visual scene description via a local VLM (OpenAI-
+    compatible, default Qwen3), then generates the image.
+  - `--ratio` (default `3:2`), `--seed`, `--steps` (default 4), `--output`, and
+    `--open/--no-open` flags round out the options.
+  - `--corpus-only` dumps retrieved corpus text without generating; `--no-vlm` skips
+    the rewrite step (corpus text passed directly to FLUX).
+  - Falls back to the prose `bundles/gutenberg-all/.dockg` bundle if no diary KG
+    matches the query.
+
+- **`src/gutenberg_kg/image_gen.py` — image generation library** — module wrapping
+  FLUX.2-Klein (mflux / MLX) with three call paths:
+  - `generate()` — local generation on Apple Silicon; caches the loaded model
+    between calls.
+  - `generate_via_server()` — HTTP client for a running `mflux-serve` instance;
+    requires only `httpx` + `pillow`, safe from Linux containers.
+  - `generate_auto()` — resolves server URL from `GUTENKG_IMAGE_ENDPOINT` env var
+    and falls back to local generation.
+  - `vlm_rewrite()` — rewrites historical corpus text into a visual image-generation
+    prompt via an OpenAI-compatible local VLM; strips `<think>` blocks before
+    returning the cleaned prompt.
+  - Controlled via `GUTENKG_IMAGE_MODEL`, `GUTENKG_IMAGE_STEPS`, and
+    `GUTENKG_IMAGE_ENDPOINT` environment variables.
+
+- **`src/gutenberg_kg/mcp_server.py` — GutenbergKG MCP server** — FastMCP server
+  (`gutenkg-mcp` entry point) exposing two tools for Claude Code / Cursor:
+  - `generate_image(prompt, aspect_ratio, seed, steps)` — direct text-to-image.
+  - `corpus_imagine(query, book, extra_prompt, aspect_ratio, seed, steps)` — corpus
+    retrieval + VLM rewrite + image generation in one MCP call.
+  Auto-compresses output to JPEG if the PNG exceeds the 5 MB MCP transport limit.
+
+- **`docker/image_server.py` — in-process FLUX image generation server** — thin
+  FastAPI wrapper around `image_gen.generate()` that pre-loads the Flux2Klein model
+  at startup and keeps it resident between requests. Exposes
+  `GET /v1/models` and `POST /v1/images/generations` (OpenAI Images API shape).
+  Runs on `:8090` by default; configured via `GUTENKG_IMAGE_MODEL`,
+  `GUTENKG_IMAGE_STEPS`, `MFLUX_SERVER_HOST`, and `MFLUX_SERVER_PORT`.
+
+- **`.mcp.json` — project MCP configuration** — declares the `gutenkg` and
+  `paperbanana` MCP servers for Claude Code / Cursor; wires `GUTENKG_IMAGE_MODEL`,
+  `GUTENKG_IMAGE_STEPS`, VLM provider, and image provider environment variables so
+  both servers pick up the correct local endpoints without further user config.
+
+- **`imagine` optional-dependency group** — `mflux>=0.9.0`, `fastmcp>=2.0`, and
+  `structlog>=24.0` grouped under `[project.optional-dependencies] imagine`; install
+  with `pip install -e ".[imagine]"` or `poetry install --extras "imagine"`. Added
+  to `all`.
+
+### Changed
+
+- **`diary-kg` promoted to a core dependency** — `diary-kg>=0.92.6` added to
+  `[project.dependencies]`; was previously only in the `kgdeps` extra. Also added
+  to `kgdeps` and `all` extras for completeness.
+
+- **`gutenkg-mcp` entry point added** — `pyproject.toml` now registers
+  `gutenkg-mcp = "gutenberg_kg.mcp_server:main"` alongside `gutenkg`.
+
+- **`tool.pycodekg.include` extended** — `docker` directory added to the PyCodeKG
+  source-scan list so `image_server.py` and other Docker utilities are indexed in
+  the code KG.
+
+- **Makefile — image server and `up` targets** — added `IMAGE_SERVER = http://localhost:8090`
+  variable, `image-server` target (starts `docker/image_server.py` on `:8090`), and
+  `up` target (starts worker + image server + chat UI together). Workflow comment
+  block updated to list all entry points.
+
+- **Docker stack updated for image generation** — `docker/Dockerfile`,
+  `docker/handler.py`, `docker/chat.py`, and `docker/docker-compose.yml` updated to
+  wire the image server into the standalone deployment stack and route image
+  generation requests through the handler.
+
+- **Documentation refreshed** — `docs/CHEATSHEET.md`, `docs/DIARY_INGEST_HANDOFF.md`,
+  `docs/ingestion-pipeline.md`, and `README.md` updated to document the `imagine`
+  command, MCP server setup, and image server workflow.
+
+### Added
+
 - **`gutenkg build-corpus` — consolidated single-index builder** — new subcommand
   that walks the entire `corpus/` tree once and writes a *single* DocKG
   (`graph.sqlite` + `lancedb` + `catalog.json`) to the gitignored
@@ -64,15 +145,93 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   `[project.dependencies]`. It was already imported by `gutenkg ingest`'s two-pane
   display but only present transitively.
 
+- **`doc-kg` minimum version raised to 0.15.5** — 0.15.5 is the first release
+  that exposes `similar_max_degree` through `DocKG.build_index_from_cache` and
+  `DocKG.build_index`; earlier versions silently drop the cap.
+
+- **`docker/handler.py` diary filter** — `corpus=diary` routing added.
+  Queries with `corpus=diary` filter results to diary KGs (excluding the main
+  `gutenberg` DocKG), with 6× query expansion matching the existing
+  `genre_filter` behaviour. Diary result cards now include the diary slug from
+  a `_DIARY_META` lookup so the client can display the source diary title.
+
+- **`GENRE_STRATEGY` cleared for sacred-texts** — removed `{"sacred-texts":
+  "verse"}` from `build_corpus.py`. Only the KJV Bible (ID 10) uses `N:M`
+  chapter:verse format; `VerseChunker` auto-detects it via the >10%-line heuristic.
+  All other sacred texts (Quran, Dhammapada, Bhagavad Gita, Tao Te Ching,
+  Upanishads, Analects) are prose translations with no verse markers and should use
+  semantic chunking. Forcing verse strategy on them produced malformed chunks.
+
 - **README refreshed to v1.4.0** — version badge, corpus totals (245 books /
   18 genres / 1.24M nodes / 5.32M edges), the per-genre table, and the citation
   metadata updated to reflect the expanded corpus.
+
+### Added
+
+- **Standalone Docker image** (`docker/`) — self-contained RunPod/Docker worker
+  that bakes the pre-built `bundles/gutenberg-all/` corpus into the image so it
+  starts without any network access or corpus build step at runtime.
+  - `docker/Dockerfile` — extends `egsuchanek/kgrag-worker` with `doc-kg`,
+    `diary-kg`, pre-downloaded `BAAI/bge-small-en-v1.5`, and `HF_HUB_OFFLINE=1`
+    so HuggingFace is never reached at inference time.
+  - `docker/handler.py` — RunPod/FastAPI handler that registers the consolidated
+    DocKG (245 books) and 4 DiaryKG indices on startup; routes `/runsync` and
+    `/runsync/query` with optional synthesis via an OpenAI-compatible endpoint.
+  - `docker/chat.py` — Streamlit chat UI (The Knowledge Press) wired to the
+    worker; genre-filter sidebar, suggested queries, result cards with relevance
+    scores, and optional LLM synthesis.
+  - `docker/docker-compose.yml` — `gutenberg-worker` service plus optional
+    `--profile chat` for the Streamlit UI.
+  - `docker/.env.example` — template for `HANDLER_SECRET`, `VLLM_ENDPOINT_URL`,
+    `VLLM_MODEL`, and `VLLM_API_KEY`.
+  - `Makefile` — `build-corpus / build / run / chat / stop / query / logs`
+    targets for the full build-then-run workflow.
+
+- **`gutenkg build-diaries` — diary DocKG index builder** — new subcommand
+  (`src/gutenberg_kg/build_diaries.py` + `cli/cmd_build_diaries.py`) that
+  builds `.diarykg/` DocKG indices for diary corpora under `corpus/diaries/`.
+  Prerequisites the `gutenkg build-corpus` bundle stage, which copies these
+  indices verbatim.
+  - `--diary NAME` (repeatable) builds a subset; default is all discovered
+    diary directories. Must match an exact subdirectory name under
+    `corpus/diaries/`.
+  - Build flags fixed to match the Docker image: `sentence_group` chunking,
+    `--no-similar` (chronologically dense entries produce SIMILAR_TO noise),
+    `BAAI/bge-small-en-v1.5` embedding model.
+  - Skips diaries with an existing `.diarykg/graph.sqlite`; use `--force` to
+    rebuild. `--workers`, `--dry-run`, and `--quiet` match the `ingest` flags.
+
+- **`docs/DIARY_INGEST_HANDOFF.md`** — comprehensive diary ingestion reference
+  documenting the `.diary/` chunk format (YAML frontmatter with `timestamp`,
+  `category`, `topics`), concrete `dockg build` commands for all four diaries
+  (Pepys, Evelyn Vol 1 & 2, Boswell Hebrides), expected node/edge counts, how
+  `bundle_diaries()` picks up indices, handler slug derivation, and a
+  troubleshooting table. Serves as the handoff document for Docker build agents
+  that need to pre-build diary indices from scratch.
+
+- **`gutenberg-diaries` in `GENRE_LABELS`** — diaries are registered as a KG
+  corpus but are not in `genres.json` / `ALL_GENRES` (they are built by
+  DiaryKG, not the standard Gutenberg pipeline).  Adding the label explicitly
+  means `gutenkg status` and snapshot commands show the diary corpus correctly.
 
 ### Removed
 
 - **`handoff.md`** — removed stale top-level handoff notes.
 
 ### Fixed
+
+- **SIMILAR_TO edge hub-chunk explosion** — `similar_max_degree` was silently
+  dropped before reaching the BLAS matmul in `_discover_similar_edges` because
+  neither `DocKG.build_index_from_cache` nor `DocKG.build_index` accepted the
+  parameter.  Result: uncapped edges produced hub chunks with degree 100+
+  (max observed: 111 in Pride and Prejudice), inflating `_semantic_rank_boost`
+  to 88× and drowning topical/entity signals.  Fix: wired `similar_max_degree`
+  through the full `kg.py` API chain; `gutenkg ingest` now defaults to 8 (the
+  evaluated cap); `build-corpus` inherits the same default via
+  `BuildCorpusOptions.similar_max_degree`.  Re-evaluated on 12 books / 34
+  labeled queries: nDCG +10.3%, MRR +3.4%, Recall +17.7% vs no-SIMILAR baseline
+  (previous memory entry of +5.6% was measured against the uncapped bug).
+  Requires `doc-kg>=0.15.5`.
 
 - **`gutenkg status` / `snapshot save` under-reporting corpus** — `GENRE_LABELS`
   in `corpus.py` was a hardcoded dict missing all 5 new genres; both commands
@@ -91,6 +250,24 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - **RunPod build pod prefers curated catalog files** — `runpod/build_kg.py` now
   checks for `scripts/catalogs/<genre>.txt` before falling back to
   `fetch-genre --max-results 200`, so pod corpora match the local curated set.
+
+- **Sacred-texts catalog corrections** — two corpus entries were wrong and one
+  needed a translator label fix:
+  - ID 1097 (labelled "Torah / Tanakh") actually downloaded *Mrs. Warren's
+    Profession* by George Bernard Shaw — a catalog ID collision. Replaced with
+    Dhammapada (ID 2017, F. Max Müller translation), the canonical Buddhist
+    wisdom text.
+  - ID 2800 (labelled "Quran — Yusuf Ali translation") is the Rodwell
+    translation; label corrected to "The Quran (Rodwell translation)".
+  - Both corpus folders deleted and re-downloaded with correct content and
+    labels; `scripts/catalogs/sacred-texts.txt` updated accordingly.
+  - `scripts/catalogs/ancient-classical.txt` comment clarified: Bible KJV (#10)
+    lives in sacred-texts, not ancient-classical.
+
+- **`docker/chat` profile missing Python dependencies** — `make chat` failed
+  with `exec: "streamlit": executable file not found` because `streamlit` and
+  `httpx` (imported by `chat.py`) were absent from the Dockerfile pip install
+  line. Both added; image must be rebuilt with `make build`.
 
 ---
 

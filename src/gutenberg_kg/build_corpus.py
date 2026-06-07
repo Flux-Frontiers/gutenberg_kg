@@ -37,6 +37,10 @@ Output layout::
 
 ``bundles/`` is gitignored and already in ``[tool.dockg].exclude``, so the
 consolidated index is never re-ingested by a stray repo-root ``dockg build``.
+
+Author: Eric G. Suchanek, PhD
+Last Revision: 2026-06-06 19:13:24
+License: Elastic 2.0
 """
 
 from __future__ import annotations
@@ -70,9 +74,10 @@ DEFAULT_SIMILAR_K = 8
 # Per-genre default chunk strategy.  Genres not listed here get "semantic".
 # "verse" fires the VerseChunker which respects chapter:verse numbering and
 # also auto-detects verse format (>10% of lines match ^\d+:\d+\s).
-GENRE_STRATEGY: dict[str, str] = {
-    "sacred-texts": "verse",
-}
+# sacred-texts is NOT listed here: only the KJV Bible uses N:M verse format,
+# and it lives in ancient-classical. The other sacred texts are prose translations
+# that auto-detection correctly leaves as "semantic".
+GENRE_STRATEGY: dict[str, str] = {}
 
 
 # ---------------------------------------------------------------------------
@@ -86,11 +91,13 @@ class BuildCorpusOptions:
 
     output: str | None = None  # output bundle name; default derived from genres
     similar_k: int = DEFAULT_SIMILAR_K
+    similar_max_degree: int = DEFAULT_SIMILAR_K  # hard per-node degree cap
     discover_similar: bool = True
     n_workers: int = 4
     wipe: bool = True
     dry_run: bool = False
     quiet: bool = False
+    diaries_only: bool = False  # skip phases 1-3; re-bundle diary indices only
     # Per-genre chunk strategy overrides (merged on top of GENRE_STRATEGY).
     # Keys are genre names; values are DocKG strategy strings: "semantic",
     # "sentence_group", "fixed", or "verse".
@@ -208,7 +215,9 @@ def bundle_diaries(out_dir: Path) -> int:
             continue
         dest = bundle_diaries_dir / diary_dir.name / ".diarykg"
         dest.parent.mkdir(parents=True, exist_ok=True)
-        shutil.copytree(str(diarykg_dir), str(dest), dirs_exist_ok=True)
+        if dest.exists() or dest.is_symlink():
+            shutil.rmtree(dest)
+        shutil.copytree(str(diarykg_dir), str(dest), symlinks=True)
         n += 1
     return n
 
@@ -285,6 +294,19 @@ def run_build_corpus(genres: list[str], opts: BuildCorpusOptions) -> int:
         print(f"    {strategy:16s} : {', '.join(sorted(sg_genres))}")
     print()
 
+    if opts.diaries_only:
+        print("[diaries-only] skipping phases 1-3; re-bundling diary indices …")
+        try:
+            n_diaries = bundle_diaries(out_dir)
+        except Exception as exc:  # noqa: BLE001
+            print(f"[x] bundle_diaries failed: {exc}")
+            return 1
+        if n_diaries:
+            print(f"  copied {n_diaries} diary index(es) → bundles/{name}/diaries/")
+        else:
+            print("  (no .diarykg indices found under corpus/diaries/)")
+        return 0
+
     if opts.dry_run:
         print("[dry-run] phase 1: build graph — sequential per strategy group:")
         for strategy, sg_genres in sorted(strategy_groups.items()):
@@ -355,6 +377,7 @@ def run_build_corpus(genres: list[str], opts: BuildCorpusOptions) -> int:
             wipe=opts.wipe,
             discover_similar=opts.discover_similar,
             similar_k=opts.similar_k,
+            similar_max_degree=opts.similar_max_degree,
             quiet=opts.quiet,
         )
         kg_all.close()

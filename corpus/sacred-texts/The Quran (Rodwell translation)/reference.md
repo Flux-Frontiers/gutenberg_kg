@@ -1,4 +1,4 @@
-# Reference: The Quran (Yusuf Ali translation)
+# Reference: The Quran (Rodwell translation)
 
 ## Source
 

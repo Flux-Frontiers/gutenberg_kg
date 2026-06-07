@@ -254,7 +254,7 @@ def test_build_dockg_passes_embedder_to_dockg(tmp_path: Path, monkeypatch):
         def build_embeddings(self, out=None, n_workers=None, quiet=False):
             return out
 
-        def build_index_from_cache(self, cache_path, wipe=False, quiet=False):
+        def build_index_from_cache(self, cache_path, wipe=False, similar_max_degree=0, quiet=False):
             pass
 
         def close(self):
@@ -286,7 +286,7 @@ def test_build_dockg_none_embedder_accepted(tmp_path: Path, monkeypatch):
         def build_embeddings(self, out=None, n_workers=None, quiet=False):
             return out
 
-        def build_index_from_cache(self, cache_path, wipe=False, quiet=False):
+        def build_index_from_cache(self, cache_path, wipe=False, similar_max_degree=0, quiet=False):
             pass
 
         def close(self):
