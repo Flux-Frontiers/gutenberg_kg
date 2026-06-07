@@ -53,6 +53,7 @@ from __future__ import annotations
 import json
 import os
 import sqlite3
+import time
 import uuid
 from collections import defaultdict
 from datetime import UTC, datetime
@@ -511,6 +512,8 @@ def handler(job: dict) -> dict:
             )
         }
 
+    t0_search = time.perf_counter()
+
     if corpus == "diary":
         # Query only the diary KGs via the "diaries" corpus — avoids dilution
         # from the 696K-node main dockg when searching for diary-specific content.
@@ -544,7 +547,16 @@ def handler(job: dict) -> dict:
     elif corpus == "diary":
         hits = hits[:k]
 
-    synthesis = _synthesize(query, hits, model) if synthesize else None
+    search_ms = (time.perf_counter() - t0_search) * 1000
+    print(f"[query] {len(hits)} matching results found in {search_ms:.0f}ms")
+
+    synthesis = None
+    synthesis_ms: float | None = None
+    if synthesize:
+        t0_synth = time.perf_counter()
+        synthesis = _synthesize(query, hits, model)
+        synthesis_ms = (time.perf_counter() - t0_synth) * 1000
+        print(f"[query] synthesis returned in {synthesis_ms:.0f}ms")
 
     return {
         "query": query,
@@ -552,7 +564,9 @@ def handler(job: dict) -> dict:
         "total_hits": len(hits),
         "kgs_queried": result.kgs_queried,
         "hits": hits,
+        "search_ms": round(search_ms),
         "synthesis": synthesis,
+        "synthesis_ms": round(synthesis_ms) if synthesis_ms is not None else None,
         "model": (model or VLLM_MODEL) if synthesize else None,
     }
 
