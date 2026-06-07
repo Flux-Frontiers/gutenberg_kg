@@ -10,6 +10,98 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added
 
+- **`docker/image_gen.py` — standalone image generation module in Docker** — new
+  file copied directly into `/app/image_gen.py` inside the container (no
+  `gutenberg_kg` package import required). Provides four entry points:
+  - `generate()` — local Flux2Klein generation on Apple Silicon via mflux.
+  - `generate_via_server()` — HTTP client for a running mflux-serve instance;
+    requires only `httpx` + `pillow`, safe from Linux containers.
+  - `generate_auto()` — resolves server URL from `IMAGE_ENDPOINT` env var,
+    falls back to local generation.
+  - `vlm_rewrite()` — rewrites historical corpus text into a visual image-generation
+    prompt via an OpenAI-compatible VLM; strips `<think>` blocks before returning.
+
+- **RunPod handler: `corpus` routing** — `handler()` now accepts a `corpus` field
+  (`all`, `gutenberg`, or any registered genre slug). Genre queries apply 6× query
+  expansion and post-filter by genre tag from the enriched catalog, matching the
+  docker handler behavior.
+
+- **RunPod handler: `op=models` operation** — pass `{"input": {"op": "models"}}`
+  to list models available at the configured vLLM endpoint without running a query.
+
+- **RunPod handler: `HANDLER_SECRET` authentication** — optional shared secret; when
+  `HANDLER_SECRET` is set, all requests must include `{"secret": "<value>"}`.
+
+- **RunPod handler: `_attach_content()` and `_enrich_catalog()`** — post-processing
+  pipeline attaches full node text from SQLite (by `node_id`) and joins
+  author/title/genre from `catalog.json` onto each hit before synthesis.
+
+- **RunPod handler: `_load_catalog()`** — loads `catalog.json` sidecar at startup
+  for O(1) metadata enrichment on every request.
+
+- **RunPod handler: `SYNTH_MAX_K` env var** — caps passages fed to synthesis
+  (default 12), preventing context-window overflows for large `k` queries.
+
+- **RunPod handler: timing fields in response** — `search_ms` and `synthesis_ms`
+  added to every response payload.
+
+- **Chat UI: global resolution control** — sidebar "Image" section with a
+  Preview / Standard / Full selector (replacing the per-result inline aspect-ratio
+  selectbox). Each tier maps six aspect ratios to pixel dimensions
+  (Preview ~768 px wide, Standard ~1152 px wide, Full ~1536 px wide).
+
+- **Chat UI: timing display** — `search_ms`, `synthesis_ms`, VLM rewrite latency,
+  and image generation latency are shown in captions so pipeline bottlenecks are
+  immediately visible.
+
+- **`.env.example`: oMLX and Ollama setup instructions** — rewritten with
+  step-by-step sections for the two recommended local LLM backends (oMLX on Apple
+  Silicon and Ollama cross-platform), including port notes and API-key guidance.
+
+### Changed
+
+- **`docker/Dockerfile`** — `COPY docker/image_gen.py /app/image_gen.py` added so
+  the standalone module is available at `/app/image_gen.py` inside the container.
+  `chat.py` and `image_server.py` both import it via a `sys.path` insert rather
+  than the `gutenberg_kg` package.
+
+- **`IMAGE_ENDPOINT` env var standardised** — renamed from `GUTENKG_IMAGE_ENDPOINT`
+  across `docker/chat.py`, `docker/docker-compose.yml`, `docker/handler.py`, and
+  the `.env.example`. `IMAGE_STEPS` (not `GUTENKG_IMAGE_STEPS`) is now the
+  canonical name in `image_server.py` as well.
+
+- **`docker-compose.yml`: `extra_hosts` added** — `host.docker.internal:host-gateway`
+  added to both `gutenberg-worker` and `gutenberg-chat` services so host services
+  (oMLX on :8080, mflux-serve on :8090) are reachable from inside the container on
+  Linux Docker hosts.
+
+- **Default synthesis model updated** — `Qwen3-8B-MLX-4bit` → `Qwen3-4B-Instruct-2507-MLX-8bit`
+  in `docker/handler.py`, `docker/docker-compose.yml`, and `docker/.env.example`.
+
+- **RunPod handler `_synthesize()` reworked** — uses full node content instead of
+  summaries; builds richer context headers (genre | author | title); applies
+  `SYNTH_MAX_K` cap; supports per-request `model` override; disables thinking mode
+  (`think: false`, `enable_thinking: false`); strips `<think>` blocks from output;
+  uses `VLLM_API_KEY` (falling back to `RUNPOD_API_KEY`); returns `None` on error
+  instead of raising.
+
+- **RunPod handler: `RUNPOD_API_KEY` → `VLLM_API_KEY`** — module-level constant
+  renamed; legacy `RUNPOD_API_KEY` env var retained as fallback for backward compat.
+
+- **`runpod/test_local.py`** — `_add_sibling_src_to_path()` helper auto-discovers
+  sibling `kgrag/src` trees so the smoke test works outside Docker. Added
+  `op=models` and invalid-corpus test cases. Import error surfaces a clear message
+  with `pip install` hints.
+
+### Fixed
+
+- **Chat UI `_query_worker()` error parsing** — error responses from the worker may
+  carry `{"error": "<json-string>"}` or `{"error": {...}}`. Parser now handles both
+  forms (JSON-decode string first, then fall through to dict extraction), preventing
+  an `AttributeError: 'str' object has no attribute 'get'` crash on worker errors.
+
+### Added
+
 - **`scripts/bench_synthesis.py` — synthesis latency benchmark** — standalone script
   that hits the RunPod handler's `/runsync` endpoint with `synthesize=true` and
   reports per-query `search_ms`, `synthesis_ms`, and wall-clock time with aggregate

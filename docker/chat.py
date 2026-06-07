@@ -17,11 +17,57 @@ from __future__ import annotations
 
 import html
 import io
+import json
 import os
+import sys
 from pathlib import Path
+
+sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
 
 import httpx
 import streamlit as st
+
+_IN_DOCKER = os.path.exists("/.dockerenv")
+_HOST = "host.docker.internal" if _IN_DOCKER else "localhost"
+
+_DEFAULT_WORKER = os.environ.get("KGRAG_ENDPOINT", "http://localhost:8000")
+_DEFAULT_IMAGE_SERVER = os.environ.get("IMAGE_ENDPOINT", f"http://{_HOST}:8090")
+_DEFAULT_IMAGE_MODEL = os.environ.get("GUTENKG_IMAGE_MODEL", "flux2-klein-4b")
+_DEFAULT_VLM_ENDPOINT = os.environ.get("GUTENKG_VLM_ENDPOINT", f"http://{_HOST}:8080/v1")
+_DEFAULT_IMAGE_STEPS = int(os.environ.get("IMAGE_STEPS", "4"))
+
+_RESOLUTION_SIZES: dict[str, dict[str, str]] = {
+    "Preview": {
+        "3:2": "768x512",
+        "16:9": "768x432",
+        "1:1": "512x512",
+        "4:3": "680x512",
+        "9:16": "432x768",
+        "2:3": "512x768",
+    },
+    "Standard": {
+        "3:2": "1152x768",
+        "16:9": "1152x648",
+        "1:1": "768x768",
+        "4:3": "1024x768",
+        "9:16": "648x1152",
+        "2:3": "768x1152",
+    },
+    "Full": {
+        "3:2": "1536x1024",
+        "16:9": "1536x864",
+        "1:1": "1024x1024",
+        "4:3": "1365x1024",
+        "9:16": "864x1536",
+        "2:3": "1024x1536",
+    },
+}
+
+_RESOLUTION_LABELS: dict[str, str] = {
+    "Preview": "Preview  (768 × 512)",
+    "Standard": "Standard  (1152 × 768)",
+    "Full": "Full  (1536 × 1024)",
+}
 
 # ---------------------------------------------------------------------------
 # Page config
@@ -37,25 +83,6 @@ st.set_page_config(
 # ---------------------------------------------------------------------------
 # Constants
 # ---------------------------------------------------------------------------
-
-_DEFAULT_WORKER = os.environ.get("KGRAG_ENDPOINT", "http://localhost:8000")
-
-# When running inside Docker on macOS, host services are at host.docker.internal, not localhost.
-_IN_DOCKER = os.path.exists("/.dockerenv")
-_HOST = "host.docker.internal" if _IN_DOCKER else "localhost"
-_DEFAULT_IMAGE_SERVER = os.environ.get("GUTENKG_IMAGE_ENDPOINT", f"http://{_HOST}:8090")
-_DEFAULT_IMAGE_MODEL = os.environ.get("GUTENKG_IMAGE_MODEL", "flux2-klein-4b")
-_DEFAULT_IMAGE_STEPS = int(os.environ.get("IMAGE_STEPS", "4"))
-_DEFAULT_VLM_ENDPOINT = os.environ.get("GUTENKG_VLM_ENDPOINT", f"http://{_HOST}:8080/v1")
-
-_ASPECT_SIZES: dict[str, str] = {
-    "3:2": "1536x1024",
-    "16:9": "1536x864",
-    "1:1": "1024x1024",
-    "4:3": "1365x1024",
-    "9:16": "864x1536",
-    "2:3": "1024x1536",
-}
 
 _KG_KIND_COLOR: dict[str, str] = {
     "gutenberg": "#2E86AB",  # steel blue — prose/verse
@@ -171,7 +198,6 @@ def _render_hit_card(hit: dict) -> None:
     content = hit.get("content") or hit.get("summary") or ""
     preview, truncated = _preview(content, 220)
 
-    # Author/title for DocKG hits; diary name for DiaryKG hits.
     author = hit.get("author") or ""
     title = hit.get("title") or ""
     genre = hit.get("genre") or ""
@@ -266,10 +292,22 @@ def _query_worker(
     data = resp.json()
 
     if data.get("status") == "FAILED" or "error_type" in data:
-        err = data.get("error", data)
-        raise WorkerError(f"{err.get('error_type', 'Unknown')}: {err.get('error_message', err)}")
+        error_data = data.get("error", data)
+        if isinstance(error_data, str):
+            try:
+                error_data = json.loads(error_data)
+            except (ValueError, TypeError):
+                raise WorkerError(error_data) from None
+        if isinstance(error_data, dict):
+            err_type = error_data.get("error_type", "Unknown")
+            err_msg = error_data.get("error_message", str(error_data))
+            raise WorkerError(f"{err_type}: {err_msg}")
+        raise WorkerError(str(error_data))
 
-    return data.get("output", data)
+    out = data.get("output", data)
+    if isinstance(out, dict) and isinstance(out.get("error"), str):
+        raise WorkerError(out["error"])
+    return out
 
 
 @st.cache_data(ttl=60, show_spinner=False)
@@ -328,12 +366,11 @@ def _build_image_prompt(result: dict) -> str:
 
 
 def _open_image(path: Path) -> None:
-    """Render *path* inline with st.image and show the file path as a caption."""
     st.image(str(path), use_container_width=True)
     st.caption(f"📁 {path}")
 
 
-def _render_assistant_turn(result: dict, idx: int = 0) -> None:
+def _render_assistant_turn(result: dict, idx: int = 0, resolution: str = "Preview") -> None:
     hits = result.get("hits", [])
     synthesis = result.get("synthesis")
     synthesis_error = result.get("synthesis_error")
@@ -354,11 +391,16 @@ def _render_assistant_turn(result: dict, idx: int = 0) -> None:
     else:
         st.info("Answer generation off — see source passages below.")
 
-    st.caption(
+    _parts = [
         f"📊 {result.get('total_hits', len(hits))} passages · {result.get('kgs_queried', 0)} KGs queried"
-    )
+    ]
+    if result.get("search_ms") is not None:
+        _parts.append(f"search {result['search_ms']:,} ms")
+    if result.get("synthesis_ms") is not None:
+        _parts.append(f"synthesis {result['synthesis_ms']:,} ms")
+    st.caption(" · ".join(_parts))
 
-    save_col, aspect_col, render_col = st.columns([3, 2, 3], vertical_alignment="bottom")
+    save_col, render_col = st.columns([3, 3], vertical_alignment="bottom")
     with save_col:
         st.download_button(
             "💾 Save result",
@@ -366,13 +408,6 @@ def _render_assistant_turn(result: dict, idx: int = 0) -> None:
             file_name=f"gutenberg_result_{idx}.md",
             mime="text/markdown",
             key=f"dl_{idx}",
-        )
-    with aspect_col:
-        aspect = st.selectbox(
-            "Ratio",
-            options=["3:2", "16:9", "1:1", "4:3", "9:16", "2:3"],
-            label_visibility="collapsed",
-            key=f"aspect_{idx}",
         )
     with render_col:
         render_clicked = st.button(
@@ -389,13 +424,17 @@ def _render_assistant_turn(result: dict, idx: int = 0) -> None:
         prompt = _build_image_prompt(result)
         with st.spinner("Rewriting via VLM…"):
             try:
-                from gutenberg_kg.image_gen import vlm_rewrite
+                from image_gen import vlm_rewrite
 
+                t0_vlm = time.perf_counter()
                 prompt, vlm_error = vlm_rewrite(prompt, base_url=_DEFAULT_VLM_ENDPOINT)
+                vlm_ms = round((time.perf_counter() - t0_vlm) * 1000)
                 if vlm_error:
                     st.warning(f"VLM rewrite failed — sending raw corpus text. ({vlm_error})")
                 else:
-                    st.caption(f"🎨 Prompt: {prompt[:160]}{'…' if len(prompt) > 160 else ''}")
+                    st.caption(
+                        f"🎨 Prompt: {prompt[:160]}{'…' if len(prompt) > 160 else ''} · VLM {vlm_ms:,} ms"
+                    )
             except Exception as exc:  # noqa: BLE001
                 st.warning(f"VLM rewrite error: {exc}")
 
@@ -409,33 +448,39 @@ def _render_assistant_turn(result: dict, idx: int = 0) -> None:
 
                     from PIL import Image as PILImage
 
+                    size = _RESOLUTION_SIZES.get(resolution, _RESOLUTION_SIZES["Preview"]).get(
+                        "3:2", "768x512"
+                    )
+                    t0_img = time.perf_counter()
                     resp = httpx.post(
                         server.rstrip("/") + "/v1/images/generations",
                         json={
                             "model": _DEFAULT_IMAGE_MODEL,
                             "prompt": prompt,
                             "n": 1,
-                            "size": _ASPECT_SIZES.get(aspect, "1536x1024"),
+                            "size": size,
                             "num_inference_steps": _DEFAULT_IMAGE_STEPS,
                         },
                         timeout=httpx.Timeout(connect=5.0, read=300.0, write=10.0, pool=5.0),
                     )
                     resp.raise_for_status()
+                    img_ms = round((time.perf_counter() - t0_img) * 1000)
                     b64 = resp.json()["data"][0]["b64_json"]
-                    pil = PILImage.open(io.BytesIO(base64.b64decode(b64)))
-                    pil.save(str(out_path))
+                    PILImage.open(io.BytesIO(base64.b64decode(b64))).save(str(out_path))
                     _open_image(out_path)
+                    st.caption(f"🖼️ {_DEFAULT_IMAGE_MODEL} · {resolution} · {size} · {img_ms:,} ms")
                 except httpx.HTTPStatusError as exc:
-                    body = exc.response.text[:400]
-                    st.error(f"Image server HTTP {exc.response.status_code}: {body}")
+                    st.error(
+                        f"Image server HTTP {exc.response.status_code}: {exc.response.text[:400]}"
+                    )
                 except Exception as exc:  # noqa: BLE001
                     st.error(f"Image server error: {exc}")
         else:
             with st.spinner("Generating locally — ~20 s on Apple Silicon…"):
                 try:
-                    from gutenberg_kg import image_gen
+                    import image_gen
 
-                    pil = image_gen.generate(prompt, aspect_ratio=aspect)
+                    pil = image_gen.generate(prompt, aspect_ratio="3:2")
                     pil.save(str(out_path))
                     _open_image(out_path)
                 except ImportError:
@@ -461,7 +506,6 @@ def _render_sidebar() -> dict:
     st.sidebar.markdown("---")
     st.sidebar.subheader("📖 Corpus")
 
-    # Filter out separators for the actual corpus value
     corpus_options = [g for g in _ALL_GENRES if not g.startswith("—")]
     corpus = st.sidebar.selectbox(
         "Scope",
@@ -515,6 +559,16 @@ def _render_sidebar() -> dict:
             st.rerun()
 
     st.sidebar.markdown("---")
+    st.sidebar.subheader("🖼️ Image")
+    resolution = st.sidebar.selectbox(
+        "Resolution",
+        options=list(_RESOLUTION_LABELS.keys()),
+        format_func=lambda r: _RESOLUTION_LABELS[r],
+        index=0,
+        help="Smaller = faster generation",
+    )
+
+    st.sidebar.markdown("---")
     st.sidebar.subheader("💡 Try asking")
     for genre, q in _SUGGESTED_QUERIES:
         label = f"[{genre}] {q}"
@@ -536,6 +590,7 @@ def _render_sidebar() -> dict:
         "semantic_floor": semantic_floor,
         "synthesize": synthesize,
         "model": model,
+        "resolution": resolution,
     }
 
 
@@ -584,9 +639,8 @@ def main() -> None:
                 label = f"`[{corpus_tag}]` " if corpus_tag and corpus_tag != "all" else ""
                 st.markdown(label + msg["content"])
             else:
-                _render_assistant_turn(msg["result"], idx=i)
+                _render_assistant_turn(msg["result"], idx=i, resolution=cfg["resolution"])
 
-    # Handle suggested-query button clicks (they set pending_query + pending_corpus).
     prompt = st.chat_input("Ask about any text in the corpus…")
     if not prompt and st.session_state.pending_query:
         prompt = st.session_state.pending_query
@@ -645,7 +699,9 @@ def main() -> None:
                 st.session_state.messages.pop()
                 st.stop()
 
-            _render_assistant_turn(result, idx=len(st.session_state.messages))
+            _render_assistant_turn(
+                result, idx=len(st.session_state.messages), resolution=cfg["resolution"]
+            )
 
         st.session_state.messages.append(
             {
@@ -655,6 +711,7 @@ def main() -> None:
                 "result": result,
             }
         )
+        st.rerun()
 
 
 if __name__ == "__main__":

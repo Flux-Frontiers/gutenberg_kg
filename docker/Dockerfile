@@ -59,8 +59,9 @@ ENV TRANSFORMERS_OFFLINE=1
 # Lives at:      bundles/gutenberg-all/   (gitignored — build locally first)
 COPY bundles/gutenberg-all/ /workspace/gutenberg/
 
-COPY docker/handler.py /app/handler.py
-COPY docker/chat.py /app/chat.py
+COPY docker/handler.py   /app/handler.py
+COPY docker/chat.py      /app/chat.py
+COPY docker/image_gen.py /app/image_gen.py
 
 ENV GUTENBERG_ROOT=/workspace/gutenberg
 ENV EMBED_MODEL=BAAI/bge-small-en-v1.5
