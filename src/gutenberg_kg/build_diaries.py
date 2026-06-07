@@ -1,9 +1,9 @@
 """
-build_diaries.py — Build .diarykg/ DocKG indices for diary corpora.
+build_diaries.py - Build .diarykg/ DocKG indices for diary corpora.
 
 Each diary lives under corpus/diaries/<name>/ with pre-chunked entries in
 .diary/ and the DocKG index written to .diarykg/.  This is a prerequisite for
-bundle_diaries() in build_corpus.py — it copies the indices but does not build
+bundle_diaries() in build_corpus.py - it copies the indices but does not build
 them.
 
 Chunk strategy and flags match docs/DIARY_INGEST_HANDOFF.md:
@@ -61,6 +61,59 @@ class BuildDiariesOptions:
 # ---------------------------------------------------------------------------
 
 
+def _strip_frontmatter(text: str) -> str:
+    """Return diary chunk text with YAML frontmatter and [Topics:] tag removed.
+
+    DiaryTransformer writes chunk files with a YAML header (---...---) and an
+    optional [Topics: ...] tag.  DocKG stores the full file text verbatim, so
+    chunk nodes in SQLite contain this header noise before the actual prose.
+
+    Handles both closing-delimiter variants seen in the wild:
+      format A  ---\\n\\n[Topics: ...]\\n\\nProse   (topics on own line)
+      format B  --- [Topics: ...] Prose              (topics inline on closing ---)
+    """
+    if not text.startswith("---"):
+        return text
+    end = text.find("\n---", 3)
+    if end == -1:
+        return text
+    after = text[end + 4 :].lstrip()
+    if after.startswith("[Topics:"):
+        close = after.find("]")
+        after = (
+            after[close + 1 :].lstrip() if close != -1 else after[after.find("\n") + 1 :].lstrip()
+        )
+    return after
+
+
+def _clean_chunk_texts(sqlite_path: Path) -> int:
+    """Strip YAML frontmatter from chunk node texts in a diary graph.sqlite.
+
+    :param sqlite_path: Path to the .diarykg/graph.sqlite file.
+    :return: Number of chunk rows updated.
+    """
+    if not sqlite_path.exists():
+        return 0
+    updated = 0
+    try:
+        with sqlite3.connect(sqlite_path) as con:
+            rows = con.execute(
+                "SELECT id, text FROM nodes WHERE kind='chunk' AND text LIKE '---%'"
+            ).fetchall()
+            changes = [
+                (_strip_frontmatter(text), node_id)
+                for node_id, text in rows
+                if _strip_frontmatter(text) != text
+            ]
+            if changes:
+                con.executemany("UPDATE nodes SET text=? WHERE id=?", changes)
+                con.commit()
+            updated = len(changes)
+    except Exception:  # noqa: BLE001
+        pass
+    return updated
+
+
 def _sqlite_counts(sqlite_path: Path) -> tuple[int, int]:
     """Return (node_count, edge_count) from graph.sqlite, or (0, 0)."""
     if not sqlite_path.exists():
@@ -97,13 +150,15 @@ def list_diary_dirs(names: list[str] | None = None) -> list[Path]:
 def build_diary_index(
     diary_dir: Path,
     opts: BuildDiariesOptions,
-    embedder=None,
 ) -> DiaryBuildResult:
-    """Build (or rebuild) the .diarykg/ DocKG index for one diary.
+    """Build (or rebuild) the .diarykg/ DiaryKG index for one diary.
+
+    Creates a symlink ``.diarykg/corpus -> ../.diary`` so DiaryKG finds its
+    pre-chunked corpus, then calls ``DiaryKG.rebuild_index()`` which runs Steps
+    2 (DocKG build), 3 (_inject_topic_edges), and 4 (_enrich_metadata).
 
     :param diary_dir: Root directory of the diary (e.g. corpus/diaries/Pepys/).
     :param opts: Build option flags.
-    :param embedder: Shared SentenceTransformerEmbedder instance (reused across diaries).
     :return: DiaryBuildResult with timing and graph stats.
     """
     import shutil
@@ -112,7 +167,6 @@ def build_diary_index(
     diary_chunks_dir = diary_dir / ".diary"
     diarykg_dir = diary_dir / ".diarykg"
     sqlite_path = diarykg_dir / "graph.sqlite"
-    lancedb_path = diarykg_dir / "lancedb"
 
     t0 = time.perf_counter()
 
@@ -150,36 +204,25 @@ def build_diary_index(
 
     diarykg_dir.mkdir(parents=True, exist_ok=True)
 
+    # Symlink .diarykg/corpus → ../.diary so DiaryKG finds its pre-chunked corpus.
+    corpus_link = diarykg_dir / "corpus"
+    if not corpus_link.exists():
+        corpus_link.symlink_to(diary_chunks_dir.resolve())
+
     try:
-        from doc_kg.index import SentenceTransformerEmbedder
-        from doc_kg.kg import DocKG
+        from diary_kg.kg import DiaryKG
     except ImportError as exc:
         return DiaryBuildResult(
             name=name,
             status="failed",
             elapsed=time.perf_counter() - t0,
-            message=f"doc_kg not installed: {exc}",
+            message=f"diary-kg not installed: {exc}",
         )
 
     try:
-        if embedder is None:
-            embedder = SentenceTransformerEmbedder(DIARY_EMBED_MODEL)
-
-        kg = DocKG(
-            corpus_root=diary_chunks_dir,
-            db_path=sqlite_path,
-            lancedb_dir=lancedb_path,
-            embedder=embedder,
-            chunk_strategy=DIARY_CHUNK_STRATEGY,
-        )
-        kg.build_graph(wipe=True, quiet=opts.quiet)
-
-        cache_path = diarykg_dir / "embeddings.json"
-        kg.build_embeddings(out=cache_path, n_workers=opts.n_workers, quiet=opts.quiet)
-        kg.build_index_from_cache(cache_path, wipe=True, discover_similar=False, quiet=opts.quiet)
-        kg.close()
-        cache_path.unlink(missing_ok=True)
-
+        kg = DiaryKG(root=diary_dir, model=DIARY_EMBED_MODEL)
+        kg.rebuild_index()
+        _clean_chunk_texts(sqlite_path)
     except Exception as exc:  # noqa: BLE001
         return DiaryBuildResult(
             name=name,
@@ -227,7 +270,6 @@ def run_build_diaries(
     print(f"  embed model   : {DIARY_EMBED_MODEL}")
     print("  SIMILAR_TO    : disabled")
     print(f"  force rebuild : {opts.force}")
-    print(f"  embed workers : {opts.n_workers}")
     if opts.dry_run:
         print("  mode          : DRY RUN")
     print()
@@ -235,24 +277,12 @@ def run_build_diaries(
     results: list[DiaryBuildResult] = []
     t_total = time.perf_counter()
 
-    # Share one embedder across all diary builds to avoid reloading the model.
-    shared_embedder = None
-    if not opts.dry_run:
-        try:
-            from doc_kg.index import SentenceTransformerEmbedder
-
-            shared_embedder = SentenceTransformerEmbedder(DIARY_EMBED_MODEL)
-            print(f"  [embedder] {shared_embedder!r}\n")
-        except ImportError as exc:
-            print(f"[x] doc_kg not installed: {exc}")
-            return 1
-
     for diary_dir in diary_dirs:
         name = diary_dir.name
         chunk_count = sum(1 for _ in (diary_dir / ".diary").glob("entry_*.md"))
         print(f"[{name}]  ({chunk_count:,} chunk files)")
 
-        result = build_diary_index(diary_dir, opts, embedder=shared_embedder)
+        result = build_diary_index(diary_dir, opts)
         results.append(result)
 
         icon = {"built": "[+]", "skipped": "[=]", "failed": "[x]"}.get(result.status, "[ ]")

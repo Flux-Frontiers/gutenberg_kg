@@ -5,10 +5,13 @@
 #   - a Gutenberg-specific handler that registers all KG kinds on startup
 #
 # Build workflow:
-#   1. gutenkg build-corpus          — build bundles/gutenberg-all/ locally
-#   2. make build                    — docker build (COPYs bundle into image)
-#   3. make run                      — docker compose up
+#   1. make build-diaries  — rebuild DiaryKG indices in corpus/diaries/*/
+#   2. make build-corpus   — bundle DocKG + diary indices -> bundles/gutenberg-all/
+#   3. make build          — docker build (COPYs bundle into image)
+#   4. make run            — docker compose up
 #
+# Steps 1-2 must complete before step 3.  build-corpus depends on build-diaries
+# in the Makefile, so `make build-corpus` runs both automatically.
 # The bundle must exist at bundles/gutenberg-all/ before building.
 # Layout baked into the image at /workspace/gutenberg/:
 #   .dockg/
@@ -29,7 +32,11 @@ WORKDIR /app
 # diary-kg: DiaryKG temporal index + query API
 # streamlit + httpx: chat UI dependencies
 # watchdog: faster Streamlit file-watching via native OS events (vs. polling)
-RUN pip install --no-cache-dir doc-kg diary-kg streamlit httpx watchdog
+RUN pip install --no-cache-dir doc-kg diary-kg streamlit httpx watchdog openai
+
+# Inject image_gen.py into the already-installed gutenberg_kg package.
+COPY src/gutenberg_kg/image_gen.py /tmp/image_gen.py
+RUN python -c "import os, shutil, gutenberg_kg; shutil.copy('/tmp/image_gen.py', os.path.join(os.path.dirname(gutenberg_kg.__file__), 'image_gen.py'))"
 
 # Pre-download the embedding model during build so the container never reaches
 # HuggingFace at runtime (network may be unavailable or restricted on RunPod).

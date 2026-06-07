@@ -1,296 +1,316 @@
-# Diary Ingestion Handoff
+# Diary Ingestion Handoff — Option 3: Full DiaryKG Pipeline
 
 **For:** gutenberg_kg Docker build agent
-**Topic:** How to build `.diarykg/` indices from diary chunk corpora
+**Topic:** Replace `dockg build`-only diary indexing with the full DiaryKG pipeline
 **Date:** 2026-06-06
+**Status:** Implemented 2026-06-06
+**Supersedes:** Earlier handoff describing Option 1 (`dockg build` only)
 
 ---
 
-## What this document covers
+## Why this change
 
-The `gutenkg build-corpus` command (which drives the Docker image build) calls
-`bundle_diaries()` as its final stage. That function **copies** existing
-`.diarykg/` indices verbatim — it does **not** build them. If you are starting
-from scratch (no pre-built `.diarykg/` directories), you must build them first
-using `dockg build`. This document explains exactly how.
+The current `build_diaries.py` runs only Step 2 of the DiaryKG pipeline (`dockg build`
+with `sentence_group`). It misses:
+
+- **Step 3** — `_inject_topic_edges()`: reads the DiaryTransformer's pre-computed
+  `topics: name:score,…` frontmatter and writes `HAS_TOPIC` edges with classifier
+  confidence into SQLite. Without this, topic nodes come from DocKG's weaker keyword
+  matcher, not the diary-aware classifier.
+- **Step 4** — `_enrich_metadata()`: writes `timestamp`, `category`, `context`, and
+  `diary_source_file` as first-class SQLite columns on every chunk node. Without this,
+  temporal data is only in the chunk text — not queryable as a structured field.
+
+In addition, the handler currently registers diaries as `KGKind.GUTENBERG`, so queries
+go through the generic DocKG adapter. Registering as `KGKind.DIARY` routes them through
+`DiaryKGAdapter` which surfaces `timestamp`, `source_file`, and category metadata on
+every hit — enabling temporal-aware retrieval.
 
 ---
 
-## Diary corpus layout
+## Key structural insight
 
-Diaries live under `corpus/diaries/`, each in its own named directory:
+The `.diary/` subdirectory in each diary corpus directory is **structurally identical**
+to the `.diarykg/corpus/` directory that `DiaryTransformer.ingest_to_corpus()` produces.
+The YAML frontmatter fields match exactly:
 
 ```
-corpus/diaries/
-  The Diary of Samuel Pepys — Complete/
-    .diary/                       ← pre-chunked entry markdown files
-      entry_0000_chunk_0.md
-      entry_0000_chunk_1.md
-      entry_0001_chunk_0.md
-      …  (8,423 files for Pepys)
-    .diarykg/                     ← DocKG index (build output)
-      graph.sqlite                  (45,506 nodes · 310,205 edges)
-      lancedb/                      (vector index)
-
-  The Diary of John Evelyn — Volume 1/
-    .diary/   (1,790 files)
-    .diarykg/ (13,010 nodes · 46,403 edges)
-
-  The Diary of John Evelyn — Volume 2/
-    .diary/   (1,776 files)
-    .diarykg/ (10,844 nodes · 44,925 edges)
-
-  The Journal of a Tour to the Hebrides with Samuel Johnson/
-    .diary/   (1,743 files)
-    .diarykg/ (10,413 nodes · 40,379 edges)
-```
-
----
-
-## Chunk file format (`.diary/entry_NNNN_chunk_N.md`)
-
-Each file is a standalone Markdown document with YAML frontmatter:
-
-```markdown
----
 source_file: the_diary_of_samuel_pepys_complete.md
-entry_index: 1
+entry_index: 42
 chunk_index: 0
-timestamp: 1660-01-02T00:00
-category: pepys_court
-context: General
-topics: pepys_court:0.5710,personal_info:0.1430,learning:0.1430,pepys_financial:0.1430
----
-
-[Topics: pepys_court, personal_info, learning, pepys_financial]
-
-In the morning before I went forth old East brought me a dozen of bottles of
-sack, and I gave him a shilling for his pains. …
+timestamp: 1660-02-15T00:00
+category: work
+context: Office
+topics: work:1.0000
 ```
 
-Key fields:
-- `timestamp` — ISO 8601 diary entry date (temporal dimension)
-- `category` — primary topic slug
-- `topics` — scored topic list from the DiaryKG classifier
-- Body text starts after the frontmatter block
-
-DocKG reads these as plain Markdown files. The YAML frontmatter is treated as
-prose — it does not need special handling by the ingest pipeline.
+`DiaryKG` stores its corpus at `.diarykg/corpus/`. The simplest bridge:
+**symlink** `.diarykg/corpus` → `.diary` before calling `DiaryKG.rebuild_index()`.
+This reuses all DiaryKG enrichment code without any copying.
 
 ---
 
-## Building the `.diarykg/` index
+## The four-step pipeline
 
-Run `dockg build` once per diary, pointing `--repo` at the `.diary/` subdirectory
-(where the `entry_*.md` files live) and directing the output into `.diarykg/`.
-
-### Command template
-
-```bash
-dockg build \
-  --repo   "corpus/diaries/<DIARY-NAME>/.diary" \
-  --sqlite "corpus/diaries/<DIARY-NAME>/.diarykg/graph.sqlite" \
-  --lancedb "corpus/diaries/<DIARY-NAME>/.diarykg/lancedb" \
-  --chunk-strategy sentence_group \
-  --sentences-per-chunk 4 \
-  --no-similar \
-  --model BAAI/bge-small-en-v1.5
+```
+corpus/diaries/<Name>/
+  .diary/              ← Step 1 output (already exists — DiaryTransformer ran offline)
+  .diarykg/
+    corpus   → ../.diary   ← symlink created by build_diary_index()
+    graph.sqlite           ← Step 2: dockg build (sentence_group, no SIMILAR_TO)
+    lancedb/               ← Step 2: vector index
+    config.json            ← Step 2 metadata
 ```
 
-### Flag rationale
-
-| Flag | Value | Why |
+| Step | What runs | Where implemented |
 |---|---|---|
-| `--chunk-strategy sentence_group` | `sentence_group` | Chunks are already small discrete entries (~400-500 chars). `semantic` would re-chunk them further with an embedder and fragment the temporal structure. |
-| `--sentences-per-chunk 4` | 4 | DocKG default; groups 4 sentences per sub-chunk within each entry file. |
-| `--no-similar` | flag | Diary entries are chronologically dense and stylistically homogeneous — SIMILAR_TO edges between near-identical daily entries produce low-value noise. Skip them. |
-| `--model BAAI/bge-small-en-v1.5` | explicit | Must match the model baked into the Docker image (`EMBED_MODEL` env var). The handler and build pipeline both use `bge-small-en-v1.5`. |
+| 1 | `DiaryTransformer.ingest_to_corpus()` | **Already done** — `.diary/` exists |
+| 2 | `DocKG.build()` (sentence_group, no similar) | `DiaryKG.rebuild_index()` calls this |
+| 3 | `DiaryKG._inject_topic_edges()` | DiaryKG method — reads `topics:` frontmatter |
+| 4 | `DiaryKG._enrich_metadata()` | DiaryKG method — writes `timestamp`, `category`, `context` columns |
 
-### Concrete commands (all four diaries)
+---
 
-Run from the `gutenberg_kg` repo root:
+## What to change in `build_diaries.py`
+
+Replace the current `DocKG(...)` block with `DiaryKG.rebuild_index()`:
+
+```python
+# build_diaries.py  — updated build_diary_index()
+
+def build_diary_index(diary_dir, opts, embedder=None):
+    name = diary_dir.name
+    diary_chunks_dir = diary_dir / ".diary"
+    diarykg_dir = diary_dir / ".diarykg"
+    corpus_link = diarykg_dir / "corpus"      # DiaryKG expects corpus here
+    sqlite_path = diarykg_dir / "graph.sqlite"
+    ...
+
+    # Create .diarykg/ and symlink corpus → ../.diary so DiaryKG finds its corpus.
+    diarykg_dir.mkdir(parents=True, exist_ok=True)
+    if not corpus_link.exists():
+        corpus_link.symlink_to(diary_chunks_dir.resolve())
+
+    try:
+        from diary_kg.kg import DiaryKG
+
+        kg = DiaryKG(root=diary_dir, model=DIARY_EMBED_MODEL)
+        # rebuild_index() = Step 2 (dockg build) + Step 3 (inject topics) + Step 4 (enrich metadata)
+        kg.rebuild_index()
+    except ImportError as exc:
+        return DiaryBuildResult(name=name, status="failed", message=f"diary-kg not installed: {exc}")
+    except Exception as exc:
+        return DiaryBuildResult(name=name, status="failed", message=str(exc))
+
+    nodes, edges = _sqlite_counts(sqlite_path)
+    return DiaryBuildResult(name=name, status="built", nodes=nodes, edges=edges, ...)
+```
+
+Key points:
+- `DiaryKG(root=diary_dir)` sets `self._corpus_dir = diary_dir / ".diarykg" / "corpus"`
+- The symlink makes `self._corpus_dir` resolve to `.diary/`
+- `rebuild_index()` runs Steps 2 + 3 + 4 in sequence without re-running the DiaryTransformer
+
+---
+
+## Using `dockg pipeline` for topic discovery (optional pre-step)
+
+For diaries where the DiaryTransformer topics are sparse or absent, run
+`dockg pipeline discover-topics` first to build a `topics.yaml`, then pass it
+to `rebuild_index()` via the `topics_file` argument:
 
 ```bash
-# Pepys (largest — ~45 min; 8,423 entries → ~45K nodes)
-dockg build \
-  --repo   "corpus/diaries/The Diary of Samuel Pepys — Complete/.diary" \
-  --sqlite "corpus/diaries/The Diary of Samuel Pepys — Complete/.diarykg/graph.sqlite" \
-  --lancedb "corpus/diaries/The Diary of Samuel Pepys — Complete/.diarykg/lancedb" \
+# Discover corpus-specific topics (run once per diary, output reviewed manually)
+dockg pipeline discover-topics \
+  --repo "corpus/diaries/<Name>/.diary" \
+  --n-clusters 16 \
   --chunk-strategy sentence_group \
-  --no-similar \
-  --model BAAI/bge-small-en-v1.5
-
-# Evelyn Vol 1 (~5 min; 1,790 entries → ~13K nodes)
-dockg build \
-  --repo   "corpus/diaries/The Diary of John Evelyn — Volume 1/.diary" \
-  --sqlite "corpus/diaries/The Diary of John Evelyn — Volume 1/.diarykg/graph.sqlite" \
-  --lancedb "corpus/diaries/The Diary of John Evelyn — Volume 1/.diarykg/lancedb" \
-  --chunk-strategy sentence_group \
-  --no-similar \
-  --model BAAI/bge-small-en-v1.5
-
-# Evelyn Vol 2 (~5 min; 1,776 entries → ~11K nodes)
-dockg build \
-  --repo   "corpus/diaries/The Diary of John Evelyn — Volume 2/.diary" \
-  --sqlite "corpus/diaries/The Diary of John Evelyn — Volume 2/.diarykg/graph.sqlite" \
-  --lancedb "corpus/diaries/The Diary of John Evelyn — Volume 2/.diarykg/lancedb" \
-  --chunk-strategy sentence_group \
-  --no-similar \
-  --model BAAI/bge-small-en-v1.5
-
-# Boswell (Hebrides) (~5 min; 1,743 entries → ~10K nodes)
-dockg build \
-  --repo   "corpus/diaries/The Journal of a Tour to the Hebrides with Samuel Johnson/.diary" \
-  --sqlite "corpus/diaries/The Journal of a Tour to the Hebrides with Samuel Johnson/.diarykg/graph.sqlite" \
-  --lancedb "corpus/diaries/The Journal of a Tour to the Hebrides with Samuel Johnson/.diarykg/lancedb" \
-  --chunk-strategy sentence_group \
-  --no-similar \
-  --model BAAI/bge-small-en-v1.5
+  --output "corpus/diaries/<Name>/topics.yaml"
 ```
 
-### Expected node counts after build
+Then in `build_diary_index()`:
+```python
+kg.rebuild_index(topics_file=str(diary_dir / "topics.yaml"))
+```
 
-| Diary | Entry files | Nodes | Edges |
-|---|---:|---:|---:|
-| Pepys Complete | 8,423 | ~45,506 | ~310,205 |
-| Evelyn Vol 1 | 1,790 | ~13,010 | ~46,403 |
-| Evelyn Vol 2 | 1,776 | ~10,844 | ~44,925 |
-| Boswell Hebrides | 1,743 | ~10,413 | ~40,379 |
-
-Node breakdown (Pepys example):
-- `chunk` — 19,339 (DocKG sub-chunks from sentence_group splitting)
-- `document` — 8,423 (one per entry file)
-- `topic` — 7,424
-- `entity` — 7,186
-- `keyword` — 3,134
+For Pepys, `pepys_only_topics.yaml` already exists in the `diary_kg` repo — copy it
+to `corpus/diaries/The Diary of Samuel Pepys — Complete/topics.yaml` and pass it in.
+This gives the Pepys build the 17th-century-aware topic vocabulary rather than the
+generic DocKG keyword classifier.
 
 ---
 
-## How `bundle_diaries()` picks them up
+## What to change in `handler.py`
 
-After all four `.diarykg/` indices exist, `gutenkg build-corpus` runs
-`bundle_diaries()` (`src/gutenberg_kg/build_corpus.py:181`) which does:
-
-```python
-for diary_dir in sorted(diaries_root.iterdir()):
-    diarykg_dir = diary_dir / ".diarykg"
-    if not diarykg_dir.exists():
-        continue          # ← silently skipped if you forgot to build it
-    dest = bundle_diaries_dir / diary_dir.name / ".diarykg"
-    shutil.copytree(str(diarykg_dir), str(dest), dirs_exist_ok=True)
-```
-
-**If `.diarykg/` is absent, `bundle_diaries()` silently skips that diary.** The
-handler will start but `corpus=diary` queries will return zero hits for the
-missing diary. There is no error — check the startup log for
-`[bootstrap] registered diary: <slug>` lines to confirm all four loaded.
-
-The bundle destination layout is:
-
-```
-bundles/gutenberg-all/diaries/
-  The Diary of Samuel Pepys — Complete/.diarykg/
-  The Diary of John Evelyn — Volume 1/.diarykg/
-  The Diary of John Evelyn — Volume 2/.diarykg/
-  The Journal of a Tour to the Hebrides with Samuel Johnson/.diarykg/
-```
-
----
-
-## Handler registration
-
-At container startup, `docker/handler.py::_bootstrap_registry()` walks
-`/workspace/gutenberg/diaries/` and registers each diary as `KGKind.GUTENBERG`
-(the DocKG adapter — not a native DiaryKG adapter, because `.diarykg/` was
-built with `dockg build` and uses the DocKG schema):
+### 1. Register diaries as `KGKind.DIARY`
 
 ```python
+# docker/handler.py  — in _bootstrap_registry()
+
+from kg_rag.primitives import KGEntry, KGKind
+
 entry = KGEntry(
-    name=slug,          # e.g. "pepys-complete"
-    kind=KGKind.GUTENBERG,
-    sqlite_path=diarykg_dir / "graph.sqlite",
-    lancedb_path=diarykg_dir / "lancedb",
-    …
+    id=str(uuid.uuid4()),
+    name=slug,
+    kind=KGKind.DIARY,          # ← was KGKind.GUTENBERG
+    repo_path=diary_dir,        # diary root, not .diarykg/
+    venv_path=Path("/usr"),
+    sqlite_path=sqlite,
+    lancedb_path=lancedb,
+    metadata={"source_file": _source_file_for(diary_dir)},  # see below
+    created_at=datetime.now(UTC),
+    updated_at=datetime.now(UTC),
 )
 ```
 
-Slug derivation (from handler.py):
-- `"The Diary of Samuel Pepys — Complete"` → `"pepys-complete"`
-- `"The Diary of John Evelyn — Volume 1"` → `"evelyn-volume-1"`
-- `"The Diary of John Evelyn — Volume 2"` → `"evelyn-volume-2"`
-- `"The Journal of a Tour to the Hebrides with Samuel Johnson"` → `"johnson"`
-
-Successful registration prints:
+Add a helper to read the source file name from `.diarykg/config.json`:
+```python
+def _source_file_for(diary_dir: Path) -> str:
+    config = diary_dir / ".diarykg" / "config.json"
+    if config.exists():
+        import json
+        return json.loads(config.read_text()).get("source_file", "")
+    return ""
 ```
-[bootstrap] registered diary: pepys-complete
-[bootstrap] registered diary: evelyn-volume-1
-…
+
+### 2. Remove diary filtering by `kg_name`
+
+The current handler filters diary hits by `kg_name != "gutenberg"`. With
+`KGKind.DIARY` registered, the orchestrator separates them by kind — no manual
+filter needed. Update the `corpus="diary"` branch:
+
+```python
+# Before
+elif corpus == "diary":
+    kind_filter = [KGKind.GUTENBERG]
+    diary_filter = True
+
+# After
+elif corpus == "diary":
+    kind_filter = [KGKind.DIARY]
+    diary_filter = False        # kind_filter handles separation
+```
+
+And remove the `diary_filter` post-filter block.
+
+### 3. Surface temporal metadata on hits
+
+`DiaryKGAdapter.query()` returns `CrossHit` objects where:
+- `hit.name` = `timestamp` (ISO 8601 date string from the chunk)
+- `hit.source_path` = original source `.txt` filename
+- `hit.kg_kind` = `KGKind.DIARY`
+
+Update `_hit_to_dict()` to include timestamp:
+```python
+def _hit_to_dict(hit) -> dict:
+    return {
+        "kg_name":    hit.kg_name,
+        "kg_kind":    str(hit.kg_kind),
+        "node_id":    hit.node_id,
+        "name":       hit.name,
+        "kind":       hit.kind,
+        "score":      round(float(hit.score), 4),
+        "summary":    hit.summary,
+        "source_path": hit.source_path,
+        "timestamp":  hit.name if hit.kg_kind == KGKind.DIARY else None,  # ← add
+    }
 ```
 
 ---
 
-## Full Docker build workflow (from scratch)
+## What `diary-kg` provides that makes this work
 
-```bash
-# 1. Build all four .diarykg/ indices (run in gutenberg_kg repo root)
-#    Do this before build-corpus, as bundle_diaries() copies these.
-#    (Skip any that already exist on disk — dockg build is idempotent with --update)
-
-dockg build \
-  --repo "corpus/diaries/The Diary of Samuel Pepys — Complete/.diary" \
-  --sqlite "corpus/diaries/The Diary of Samuel Pepys — Complete/.diarykg/graph.sqlite" \
-  --lancedb "corpus/diaries/The Diary of Samuel Pepys — Complete/.diarykg/lancedb" \
-  --chunk-strategy sentence_group --no-similar --model BAAI/bge-small-en-v1.5
-
-# … (repeat for Evelyn Vol 1, Vol 2, and Boswell as shown above)
-
-# 2. Build the consolidated DocKG bundle (prose + verse + copy diaries)
-#    Takes ~24 min on Apple M5 Max.
-gutenkg build-corpus
-
-# 3. Build the Docker image (bakes bundles/gutenberg-all/ into the image)
-docker build -f docker/Dockerfile -t corpus-gutenberg:latest .
-
-# 4. Run
-docker compose -f docker/docker-compose.yml up -d gutenberg-worker
-```
-
----
-
-## Incremental update (adding a new diary)
-
-1. Place chunked entries in `corpus/diaries/<New Diary Name>/.diary/`
-2. Run `dockg build` with the flags above, pointing at the new `.diary/`
-3. Re-run `gutenkg build-corpus` (or just re-run `bundle_diaries()` manually)
-4. Rebuild the Docker image
-
----
-
-## Troubleshooting
-
-| Symptom | Cause | Fix |
-|---|---|---|
-| `[bootstrap] skipping <name> — no .diarykg/graph.sqlite` | `.diarykg/` was not built or `graph.sqlite` is absent | Run `dockg build` for that diary |
-| `corpus=diary` returns 0 hits | diary not registered | Check startup log for `[bootstrap] registered diary:` lines |
-| Topics all `fallback` | No topics YAML provided | Topics come from frontmatter text; the DocKG keyword classifier picks them up from the `[Topics: …]` body line — no separate topics file needed |
-| Embedding model mismatch | Built with a different model than `EMBED_MODEL` | Rebuild with `--model BAAI/bge-small-en-v1.5` |
-| `VerseChunker` fires on diary entries | Diary entries contain `\d+:\d+` patterns (rare) | Force strategy: `--chunk-strategy sentence_group` (already in the commands above) |
-
----
-
-## Where the `dockg` binary lives
-
-In the gutenberg_kg virtualenv:
-
-```bash
-.venv/bin/dockg build …
-```
-
-Or if `doc-kg` is installed globally in the Docker image via `pip install doc-kg`,
-use `dockg` directly. The Dockerfile installs it with:
-
+`diary-kg` is **already in the Dockerfile**:
 ```dockerfile
 RUN pip install --no-cache-dir doc-kg diary-kg streamlit httpx watchdog
 ```
 
-So inside the image, `dockg` is on `$PATH`.
+At runtime it provides:
+- `DiaryKG.rebuild_index()` — Steps 2+3+4 as one call
+- `DiaryKG._inject_topic_edges()` — reads `topics: name:score,…` from frontmatter,
+  writes `HAS_TOPIC` edges with `{"confidence": 0.57, "source": "classifier"}` evidence
+- `DiaryKG._enrich_metadata()` — adds `timestamp TEXT`, `category TEXT`, `context TEXT`,
+  `diary_source_file TEXT` columns to the `nodes` table (idempotent `ALTER TABLE`)
+- `DiaryKGAdapter` — registered automatically by KGRAG for `KGKind.DIARY` entries
+
+The `DiaryKGAdapter` wraps `DiaryKG.query()` which queries the LanceDB vector index and
+joins `timestamp`, `category`, `context` from the SQLite columns enriched in Step 4.
+
+---
+
+## What the SQLite schema looks like after Steps 3+4
+
+Standard DocKG columns (from Step 2):
+
+| column | type | example |
+|---|---|---|
+| `id` | TEXT | `chunk:entry_0042_chunk_0:1234` |
+| `kind` | TEXT | `chunk` |
+| `file_path` | TEXT | `entry_0042_chunk_0.md` |
+| `text` | TEXT | `[Topics: work, naval] In the morning…` |
+
+Extra columns added by Steps 3+4:
+
+| column | type | example | step |
+|---|---|---|---|
+| `timestamp` | TEXT | `1660-02-15T00:00` | 4 |
+| `category` | TEXT | `work` | 4 |
+| `context` | TEXT | `Office` | 4 |
+| `diary_source_file` | TEXT | `the_diary_of_samuel_pepys_complete.md` | 4 |
+
+HAS_TOPIC edges (Step 3):
+
+| src | rel | dst | evidence |
+|---|---|---|---|
+| `chunk:entry_0042_chunk_0:…` | `HAS_TOPIC` | `topic:work` | `{"confidence":1.0,"source":"classifier"}` |
+
+---
+
+## Updated `bundle_diaries()` in `build_corpus.py`
+
+`bundle_diaries()` (`src/gutenberg_kg/build_corpus.py:181`) copies `.diarykg/` verbatim.
+The symlink `corpus/diaries/<Name>/.diarykg/corpus → ../.diary` will be included in the
+copy. Verify `shutil.copytree` follows symlinks:
+
+```python
+shutil.copytree(str(diarykg_dir), str(dest), dirs_exist_ok=True, symlinks=True)
+```
+
+If `symlinks=True` is not set, `copytree` dereferences the link and copies the full
+`.diary/` content into the bundle under `diaries/<Name>/.diarykg/corpus/` — which is
+also fine (larger bundle, but self-contained).
+
+---
+
+## Updated Makefile workflow
+
+```
+make build-diaries   # Step 1 done; Steps 2+3+4 via DiaryKG.rebuild_index()
+make build-corpus    # bundles .diarykg/ + main DocKG prose corpus
+make build           # docker build
+```
+
+No change to the Makefile targets — `gutenkg build-diaries` is already wired.
+Only `build_diary_index()` in `build_diaries.py` and `_bootstrap_registry()` in
+`docker/handler.py` need updating.
+
+---
+
+## Per-diary topics files
+
+| Diary | Topics file | Notes |
+|---|---|---|
+| Pepys Complete | `pepys_only_topics.yaml` from `diary_kg` repo | 17th-century-aware; copy to `corpus/diaries/…/topics.yaml` |
+| Evelyn Vol 1 & 2 | Run `dockg pipeline discover-topics` first | Similar 17th-century vocabulary to Pepys |
+| Boswell Hebrides | Run `dockg pipeline discover-topics` first | 18th-century; different vocabulary |
+
+---
+
+## Summary of files to change
+
+| File | Change |
+|---|---|
+| `src/gutenberg_kg/build_diaries.py` | Replace `DocKG(…)` block with symlink + `DiaryKG.rebuild_index()` |
+| `docker/handler.py` | Register as `KGKind.DIARY`; add `_source_file_for()`; update corpus filter; add `timestamp` to hit dict |
+| `src/gutenberg_kg/build_corpus.py` | Add `symlinks=True` to `shutil.copytree` in `bundle_diaries()` |
+| `corpus/diaries/*/topics.yaml` | Copy `pepys_only_topics.yaml` for Pepys; run `discover-topics` for others |

@@ -42,6 +42,8 @@ services:
       - "8501:8501"
     environment:
       KGRAG_ENDPOINT: http://gutenberg-worker:8000
+      # mflux-server runs on the host Mac; host.docker.internal bridges to it.
+      GUTENKG_IMAGE_ENDPOINT: ${GUTENKG_IMAGE_ENDPOINT:-http://host.docker.internal:8090}
     depends_on:
       - gutenberg-worker
     profiles:

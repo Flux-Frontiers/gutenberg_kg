@@ -71,6 +71,7 @@ VLLM_API_KEY = os.environ.get("VLLM_API_KEY", "")
 VLLM_MODEL = os.environ.get("VLLM_MODEL", "Qwen3-8B-MLX-4bit")
 SYNTH_MAX_K = int(os.environ.get("SYNTH_MAX_K", "12"))
 EMBED_MODEL = os.environ.get("EMBED_MODEL", "BAAI/bge-small-en-v1.5")
+IMAGE_ENDPOINT = os.environ.get("IMAGE_ENDPOINT", "")  # base URL of mflux-serve
 HANDLER_SECRET = os.environ.get("HANDLER_SECRET", "")
 
 _DOCKG_SQLITE = GUTENBERG_ROOT / ".dockg" / "graph.sqlite"
@@ -136,12 +137,21 @@ _DIARY_META: dict[str, dict] = {
 # ---------------------------------------------------------------------------
 
 
+def _source_file_for(diary_dir: Path) -> str:
+    config = diary_dir / ".diarykg" / "config.json"
+    if config.exists():
+        return json.loads(config.read_text()).get("source_file", "")
+    return ""
+
+
 def _bootstrap_registry():
-    from kg_rag.primitives import KGEntry, KGKind
+    from kg_rag.corpus_registry import CorpusRegistry
+    from kg_rag.primitives import CorpusEntry, KGEntry, KGKind
     from kg_rag.registry import KGRegistry
 
     REGISTRY_PATH.parent.mkdir(parents=True, exist_ok=True)
     reg = KGRegistry(db_path=REGISTRY_PATH)
+    corp_reg = CorpusRegistry(db_path=REGISTRY_PATH)
 
     # --- DocKG (consolidated prose + verse) ---
     if not _DOCKG_SQLITE.exists():
@@ -164,6 +174,8 @@ def _bootstrap_registry():
         print(f"[bootstrap] registered gutenberg dockg ({_DOCKG_SQLITE})")
 
     # --- DiaryKG indices (one per diary) ---
+    corp_reg.create(CorpusEntry(name="diaries", description="Project Gutenberg — diary corpora"))
+    n_diaries = 0
     if _DIARIES_ROOT.exists():
         for diary_dir in sorted(_DIARIES_ROOT.iterdir()):
             if not diary_dir.is_dir() or diary_dir.name.startswith("."):
@@ -187,24 +199,26 @@ def _bootstrap_registry():
                 .strip()
                 .replace(" ", "-")
             )
-            # The .diarykg/ databases use DocKG schema (not DiaryKG native schema),
-            # so register as GUTENBERG kind to use the DocKG adapter.
             entry = KGEntry(
                 id=str(uuid.uuid4()),
                 name=slug,
-                kind=KGKind.GUTENBERG,
+                kind=KGKind.DIARY,
                 repo_path=diary_dir,
                 venv_path=Path("/usr"),
                 sqlite_path=sqlite,
                 lancedb_path=lancedb,
+                metadata={"source_file": _source_file_for(diary_dir)},
                 created_at=datetime.now(UTC),
                 updated_at=datetime.now(UTC),
             )
             reg.register(entry)
+            corp_reg.add_kg("diaries", entry.id)
             _KG_SQLITE[slug] = sqlite
+            n_diaries += 1
             print(f"[bootstrap] registered diary: {slug}")
     else:
         print("[bootstrap] no diaries/ directory found")
+    print(f"[bootstrap] diaries corpus: {n_diaries} KG(s)")
 
     return reg
 
@@ -250,6 +264,8 @@ print("[startup] ready")
 
 
 def _hit_to_dict(hit) -> dict:
+    from kg_rag.primitives import KGKind
+
     return {
         "kg_name": hit.kg_name,
         "kg_kind": str(hit.kg_kind),
@@ -259,6 +275,7 @@ def _hit_to_dict(hit) -> dict:
         "score": round(float(hit.score), 4),
         "summary": hit.summary,
         "source_path": hit.source_path,
+        "timestamp": hit.name if hit.kg_kind == KGKind.DIARY else None,
     }
 
 
@@ -292,17 +309,16 @@ def _attach_content(hits: list[dict]) -> None:
 def _enrich_catalog(hits: list[dict]) -> None:
     """Join author/title/genre from catalog.json onto DocKG hits."""
     for h in hits:
-        if h.get("kg_kind") not in ("KGKind.GUTENBERG", "gutenberg"):
-            continue
-        src = h.get("source_path", "")
-        parts = src.split("/")
-        if len(parts) >= 2:
-            key = f"{parts[0]}/{parts[1]}"
-            meta = _catalog.get(key, {})
-            h["genre"] = meta.get("genre") or parts[0]
-            h["title"] = meta.get("title") or parts[1]
-            h["author"] = meta.get("author")
-        # Diary hits have no genre/book prefix in source_path — fall back to static map.
+        if h.get("kg_kind") in ("KGKind.GUTENBERG", "gutenberg"):
+            src = h.get("source_path", "")
+            parts = src.split("/")
+            if len(parts) >= 2:
+                key = f"{parts[0]}/{parts[1]}"
+                meta = _catalog.get(key, {})
+                h["genre"] = meta.get("genre") or parts[0]
+                h["title"] = meta.get("title") or parts[1]
+                h["author"] = meta.get("author")
+        # Diary hits: fall back to static map keyed by slug.
         diary = _DIARY_META.get(h.get("kg_name", ""))
         if diary and not h.get("author"):
             h["genre"] = diary["genre"]
@@ -367,10 +383,12 @@ def _synthesize(query: str, hits: list[dict], model: str | None = None) -> str |
                     {
                         "role": "system",
                         "content": (
-                            "You are a knowledgeable literary guide to the Project Gutenberg "
-                            "corpus — classical literature, philosophy, sacred texts, natural "
-                            "history, science fiction, and diaries. Answer the question using "
-                            "only the provided source passages. Be concise and specific. "
+                            "You are a literary guide to the Project Gutenberg corpus. "
+                            "Answer the question using ONLY the provided source passages. "
+                            "Do NOT use any prior knowledge — if something is in the passages, "
+                            "report it; if it is not in the passages, say so. "
+                            "Never contradict or override what the passages say based on what "
+                            "you believe to be true. Be concise and specific. "
                             "Cite the author and work when relevant."
                         ),
                     },
@@ -392,6 +410,62 @@ def _synthesize(query: str, hits: list[dict], model: str | None = None) -> str |
 
 
 # ---------------------------------------------------------------------------
+# Image generation (via remote mflux-serve)
+# ---------------------------------------------------------------------------
+
+_ASPECT_SIZES: dict[str, tuple[int, int]] = {
+    "1:1": (1024, 1024),
+    "3:2": (1536, 1024),
+    "2:3": (1024, 1536),
+    "16:9": (1536, 864),
+    "9:16": (864, 1536),
+    "4:3": (1365, 1024),
+    "3:4": (1024, 1365),
+}
+
+
+def _imagine(inp: dict) -> dict:
+    """Handle op=imagine — proxy the prompt to IMAGE_ENDPOINT (mflux-serve)."""
+    if not IMAGE_ENDPOINT:
+        return {
+            "error": "IMAGE_ENDPOINT not configured — set it to the base URL of a running mflux-serve"
+        }
+
+    prompt = (inp.get("prompt") or "").strip()
+    if not prompt:
+        return {"error": "imagine requires a non-empty 'prompt'"}
+
+    aspect = inp.get("aspect_ratio", "3:2")
+    steps = int(inp.get("steps", 4))
+    seed = inp.get("seed")
+
+    width, height = _ASPECT_SIZES.get(aspect, _ASPECT_SIZES["3:2"])
+    payload: dict = {
+        "prompt": prompt,
+        "n": 1,
+        "size": f"{width}x{height}",
+        "num_inference_steps": steps,
+        "response_format": "b64_json",
+    }
+    if seed is not None:
+        payload["seed"] = int(seed)
+
+    try:
+        import httpx
+
+        resp = httpx.post(
+            IMAGE_ENDPOINT.rstrip("/") + "/v1/images/generations",
+            json=payload,
+            timeout=httpx.Timeout(connect=5.0, read=300.0, write=10.0, pool=5.0),
+        )
+        resp.raise_for_status()
+        b64 = resp.json()["data"][0]["b64_json"]
+        return {"image_b64": b64, "prompt": prompt, "aspect_ratio": aspect}
+    except Exception as exc:  # noqa: BLE001
+        return {"error": f"image server error: {exc}"}
+
+
+# ---------------------------------------------------------------------------
 # Handler
 # ---------------------------------------------------------------------------
 
@@ -404,6 +478,9 @@ def handler(job: dict) -> dict:
 
     if inp.get("op") == "models":
         return {"models": _list_models(), "default": VLLM_MODEL}
+
+    if inp.get("op") == "imagine":
+        return _imagine(inp)
 
     query = inp.get("query", "").strip()
     corpus = inp.get("corpus", "all")
@@ -421,19 +498,12 @@ def handler(job: dict) -> dict:
     kind_filter = None
     genre_filter: str | None = None
 
-    # Diary KGs are registered as KGKind.GUTENBERG (DocKG schema); filter by
-    # kg_name post-query rather than by kind.
-    diary_filter = False
-
     if corpus == "gutenberg":
         kind_filter = [KGKind.GUTENBERG]
-    elif corpus == "diary":
-        kind_filter = [KGKind.GUTENBERG]
-        diary_filter = True
     elif corpus in _ALL_GENRES:
         kind_filter = [KGKind.GUTENBERG]
         genre_filter = corpus
-    elif corpus != "all":
+    elif corpus not in ("all", "diary"):
         return {
             "error": (
                 f"unknown corpus {corpus!r}; choose: all, gutenberg, diary, "
@@ -441,26 +511,38 @@ def handler(job: dict) -> dict:
             )
         }
 
-    # Over-request when post-filtering so we keep enough hits after exclusion.
-    query_k = k * 6 if (genre_filter or diary_filter) else k
-
-    result = _kgrag.query(
-        query,
-        k=query_k,
-        kinds=kind_filter,
-        min_score=min_score,
-        semantic_floor=semantic_floor,
-    )
+    if corpus == "diary":
+        # Query only the diary KGs via the "diaries" corpus — avoids dilution
+        # from the 696K-node main dockg when searching for diary-specific content.
+        result = _kgrag.query_corpus(
+            "diaries",
+            query,
+            k=k,
+            min_score=min_score,
+            semantic_floor=semantic_floor,
+        )
+    else:
+        # Over-request for genre post-filtering; exact k otherwise.
+        query_k = k * 6 if genre_filter else k
+        result = _kgrag.query(
+            query,
+            k=query_k,
+            kinds=kind_filter,
+            min_score=min_score,
+            semantic_floor=semantic_floor,
+        )
 
     hits = [_hit_to_dict(h) for h in result.hits]
+    # Drop structural graph nodes — entities, keywords, topics, and bare document
+    # nodes carry no passage text and outscore content chunks on name-match queries.
+    hits = [h for h in hits if h.get("kind") in ("chunk", "section")]
     _attach_content(hits)
     _enrich_catalog(hits)
 
     if genre_filter:
         hits = [h for h in hits if h.get("genre") == genre_filter][:k]
-    elif diary_filter:
-        # Keep only hits from the diary KGs (exclude the main "gutenberg" dockg).
-        hits = [h for h in hits if h.get("kg_name") != "gutenberg"][:k]
+    elif corpus == "diary":
+        hits = hits[:k]
 
     synthesis = _synthesize(query, hits, model) if synthesize else None
 

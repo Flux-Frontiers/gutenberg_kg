@@ -12,6 +12,7 @@
   <img src="https://img.shields.io/badge/edges-5.3M-green.svg" alt="Edges"/>
   <a href="https://github.com/Flux-Frontiers/doc_kg"><img src="https://img.shields.io/badge/DocKG-ready-blue.svg" alt="DocKG"/></a>
   <a href="https://github.com/Flux-Frontiers/KGRAG"><img src="https://img.shields.io/badge/KGRAG-integrated-purple.svg" alt="KGRAG"/></a>
+  <img src="https://img.shields.io/badge/imagine-FLUX.2--Klein-ff6b35.svg" alt="Corpus image generation"/>
   <a href="https://doi.org/10.5281/zenodo.20045390"><img src="https://zenodo.org/badge/doi/10.5281/zenodo.20045390.svg" alt="DOI"/></a>
 </p>
 
@@ -121,6 +122,37 @@ kgrag synthesize "How do the Stoics and Russian novelists differ on suffering an
 ```
 
 > **Example synthesis output:** See [`STOICS_VS_RUSSIANS.md`](https://github.com/Flux-Frontiers/KGRAG/blob/main/docs/STOICS_VS_RUSSIANS.md) — a live run of the question above against Marcus Aurelius, Dostoevsky, Tolstoy, and Nietzsche, with every passage retrieved deterministically from the graph and quoted verbatim. The retrieval layer cannot hallucinate; the LLM synthesizes from verified facts only. *(Run against an earlier 78-book corpus; the current 245-book corpus adds substantial additional Stoic, philosophical, and literary coverage.)*
+
+---
+
+## Corpus-Grounded Image Generation
+
+`gutenkg imagine` generates illustrations grounded in the corpus text — no cloud API, no separate server. It runs a three-stage pipeline entirely on Apple Silicon:
+
+1. **DiaryKG / DocKG retrieval** — the most semantically relevant passages are pulled from the knowledge graph.
+2. **VLM rewrite** — a local Qwen3 model (via [oMLX](http://localhost:8080)) rewrites the prose into a visual scene description.
+3. **FLUX.2-Klein generation** — a 4-bit quantised FLUX.2-Klein model renders the image in ~15–22 seconds.
+
+```bash
+# 1. Install the imagine extras (mflux + fastmcp)
+pip install -e ".[imagine]"
+
+# 2. Start oMLX on port 8080 with a Qwen3 model (for VLM rewrite)
+omlx serve mlx-community/Qwen3-30B-A3B-Instruct-2507-MLX-4bit --port 8080
+
+# 3. Generate — FLUX model auto-downloads on first run (~4 GB, no license gate)
+gutenkg imagine --query "great fire" --book pepys --ratio 16:9 --steps 8
+
+# Direct prompt (no corpus lookup, no oMLX required)
+gutenkg imagine "the Great Fire of London at night, oil painting"
+
+# Inspect what the corpus retrieves before generating
+gutenkg imagine --query "plague in London" --book pepys --corpus-only
+```
+
+The same pipeline is available as an MCP tool (`corpus_imagine`) for use directly in Claude Code chat — ask *"Create an image of the Great Fire based on Pepys' description"* and the tool handles retrieval, rewriting, and generation automatically.
+
+For the full options reference see [`docs/CHEATSHEET.md § Corpus-Grounded Image Generation`](docs/CHEATSHEET.md).
 
 ---
 

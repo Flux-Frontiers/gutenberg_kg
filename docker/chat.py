@@ -16,7 +16,9 @@ Or via docker compose:
 from __future__ import annotations
 
 import html
+import io
 import os
+from pathlib import Path
 
 import httpx
 import streamlit as st
@@ -37,6 +39,22 @@ st.set_page_config(
 # ---------------------------------------------------------------------------
 
 _DEFAULT_WORKER = os.environ.get("KGRAG_ENDPOINT", "http://localhost:8000")
+
+# When running inside Docker on macOS, host services are at host.docker.internal, not localhost.
+_IN_DOCKER = os.path.exists("/.dockerenv")
+_HOST = "host.docker.internal" if _IN_DOCKER else "localhost"
+_DEFAULT_IMAGE_SERVER = os.environ.get("GUTENKG_IMAGE_ENDPOINT", f"http://{_HOST}:8090")
+_DEFAULT_IMAGE_MODEL = os.environ.get("GUTENKG_IMAGE_MODEL", "flux2-klein-4b")
+_DEFAULT_VLM_ENDPOINT = os.environ.get("GUTENKG_VLM_ENDPOINT", f"http://{_HOST}:8080/v1")
+
+_ASPECT_SIZES: dict[str, str] = {
+    "3:2": "1536x1024",
+    "16:9": "1536x864",
+    "1:1": "1024x1024",
+    "4:3": "1365x1024",
+    "9:16": "864x1536",
+    "2:3": "1024x1536",
+}
 
 _KG_KIND_COLOR: dict[str, str] = {
     "gutenberg": "#2E86AB",  # steel blue — prose/verse
@@ -77,12 +95,12 @@ _ALL_GENRES = [
 _SUGGESTED_QUERIES: list[tuple[str, str]] = [
     ("philosophy", "What is justice according to Plato?"),
     ("sacred-texts", "What does the Quran say about Moses?"),
-    ("english-literature", "How does Dante describe the circles of Hell?"),
+    ("world-literature", "How does Dante describe the circles of Hell?"),
     ("russian-literature", "How does Tolstoy portray the Napoleonic invasion?"),
-    ("science-fiction", "How did Jules Verne imagine undersea exploration?"),
+    ("french-literature", "How did Jules Verne describe undersea exploration?"),
     ("natural-history", "Describe Darwin's observations on the Galápagos"),
-    ("ancient-classical", "What virtues does Seneca recommend in his letters?"),
-    ("diary", "What did Pepys witness during the Great Fire of London?"),
+    ("ancient-classical", "What virtues does Seneca recommend in his dialogues?"),
+    ("diary", "What did Pepys say about the great fire?"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -94,7 +112,7 @@ st.markdown(
     <style>
     .stTabs [data-baseweb="tab-list"] { gap: 12px; }
     .stTabs [data-baseweb="tab"] { font-size: 1rem; padding: 6px 18px; }
-    .hit-card { background:#1e1e2e; border-radius:6px; padding:10px 14px; margin-bottom:6px; }
+    .hit-card { background:var(--secondary-background-color); border-radius:6px; padding:10px 14px; margin-bottom:6px; }
     </style>
     """,
     unsafe_allow_html=True,
@@ -129,9 +147,9 @@ def _score_bar(score: float, width: int = 80) -> str:
     color = "#27AE60" if score >= 0.7 else "#F39C12" if score >= 0.4 else "#E74C3C"
     return (
         f"<div style='display:inline-block;vertical-align:middle;"
-        f"width:{width}px;height:8px;background:#2a2a3e;border-radius:4px;overflow:hidden;'>"
+        f"width:{width}px;height:8px;background:var(--secondary-background-color);border-radius:4px;overflow:hidden;'>"
         f"<div style='width:{pct}%;height:100%;background:{color};'></div></div>"
-        f"&nbsp;<small style='color:#aaa;font-size:10px;'>{score:.3f}</small>"
+        f"&nbsp;<small style='color:var(--text-color);opacity:0.6;font-size:10px;'>{score:.3f}</small>"
     )
 
 
@@ -167,24 +185,34 @@ def _render_hit_card(hit: dict) -> None:
         details = (
             "<details style='margin-top:6px;'>"
             "<summary style='cursor:pointer;color:#4A90D9;font-size:12px;'>📖 Full passage</summary>"
-            f"<div style='color:#ddd;font-size:13px;margin-top:6px;line-height:1.55;'>{esc_full}</div>"
+            f"<div style='color:var(--text-color);font-size:13px;margin-top:6px;"
+            f"line-height:1.55;'>{esc_full}</div>"
             "</details>"
         )
 
     st.markdown(
         f"""
-        <div style="background:#1e1e2e;border-left:4px solid {border_color};
+        <div style="background:var(--secondary-background-color);border-left:4px solid {
+            border_color
+        };
                     border-radius:6px;padding:10px 14px;margin-bottom:6px;">
           {_kg_kind_badge(kg_kind, kg_name)}
           &nbsp;
           {_node_kind_badge(node_kind)}
           &nbsp;&nbsp;
-          <b style="font-size:14px;color:#f0f0f0;">{html.escape(meta_line)}</b>
+          <b style="font-size:14px;color:var(--text-color);">{html.escape(meta_line)}</b>
           <br>
-          <span style="color:#888;font-size:11px;font-family:monospace;">📄 {html.escape(source)}</span>
+          <span style="color:var(--text-color);opacity:0.55;font-size:11px;
+                       font-family:monospace;">📄 {html.escape(source)}</span>
           &nbsp;&nbsp;
           {_score_bar(score)}
-          {"<br><span style='color:#ccc;font-size:12px;'>" + esc_preview + "</span>" if esc_preview else ""}
+          {
+            "<br><span style='color:var(--text-color);opacity:0.8;font-size:12px;'>"
+            + esc_preview
+            + "</span>"
+            if esc_preview
+            else ""
+        }
           {details}
         </div>
         """,
@@ -289,6 +317,21 @@ def _result_to_markdown(result: dict) -> str:
     return "\n".join(lines)
 
 
+def _build_image_prompt(result: dict) -> str:
+    """Distil a result into a concise image-generation prompt (≤800 chars)."""
+    if result.get("synthesis"):
+        return result["synthesis"][:800]
+    hits = result.get("hits", [])[:3]
+    parts = [h.get("content") or h.get("summary") or "" for h in hits]
+    return " ".join(p.strip() for p in parts if p.strip())[:800]
+
+
+def _open_image(path: Path) -> None:
+    """Render *path* inline with st.image and show the file path as a caption."""
+    st.image(str(path), use_container_width=True)
+    st.caption(f"📁 {path}")
+
+
 def _render_assistant_turn(result: dict, idx: int = 0) -> None:
     hits = result.get("hits", [])
     synthesis = result.get("synthesis")
@@ -314,13 +357,89 @@ def _render_assistant_turn(result: dict, idx: int = 0) -> None:
         f"📊 {result.get('total_hits', len(hits))} passages · {result.get('kgs_queried', 0)} KGs queried"
     )
 
-    st.download_button(
-        "💾 Save result",
-        data=_result_to_markdown(result),
-        file_name=f"gutenberg_result_{idx}.md",
-        mime="text/markdown",
-        key=f"dl_{idx}",
-    )
+    save_col, aspect_col, render_col = st.columns([3, 2, 3], vertical_alignment="bottom")
+    with save_col:
+        st.download_button(
+            "💾 Save result",
+            data=_result_to_markdown(result),
+            file_name=f"gutenberg_result_{idx}.md",
+            mime="text/markdown",
+            key=f"dl_{idx}",
+        )
+    with aspect_col:
+        aspect = st.selectbox(
+            "Ratio",
+            options=["3:2", "16:9", "1:1", "4:3", "9:16", "2:3"],
+            label_visibility="collapsed",
+            key=f"aspect_{idx}",
+        )
+    with render_col:
+        render_clicked = st.button(
+            "🎨 Render response",
+            key=f"render_btn_{idx}",
+            use_container_width=True,
+            help="Generate an illustration from the retrieved passages using local FLUX",
+        )
+
+    if render_clicked:
+        import tempfile
+        import time
+
+        prompt = _build_image_prompt(result)
+        with st.spinner("Rewriting via VLM…"):
+            try:
+                from gutenberg_kg.image_gen import vlm_rewrite
+
+                prompt, vlm_error = vlm_rewrite(prompt, base_url=_DEFAULT_VLM_ENDPOINT)
+                if vlm_error:
+                    st.warning(f"VLM rewrite failed — sending raw corpus text. ({vlm_error})")
+                else:
+                    st.caption(f"🎨 Prompt: {prompt[:160]}{'…' if len(prompt) > 160 else ''}")
+            except Exception as exc:  # noqa: BLE001
+                st.warning(f"VLM rewrite error: {exc}")
+
+        server = _DEFAULT_IMAGE_SERVER.strip()
+        out_path = Path(tempfile.mkdtemp()) / f"gutenberg_render_{int(time.time())}.png"
+
+        if server:
+            with st.spinner(f"Generating via {_DEFAULT_IMAGE_MODEL}…"):
+                try:
+                    import base64
+
+                    from PIL import Image as PILImage
+
+                    resp = httpx.post(
+                        server.rstrip("/") + "/v1/images/generations",
+                        json={
+                            "model": _DEFAULT_IMAGE_MODEL,
+                            "prompt": prompt,
+                            "n": 1,
+                            "size": _ASPECT_SIZES.get(aspect, "1536x1024"),
+                        },
+                        timeout=httpx.Timeout(connect=5.0, read=300.0, write=10.0, pool=5.0),
+                    )
+                    resp.raise_for_status()
+                    b64 = resp.json()["data"][0]["b64_json"]
+                    pil = PILImage.open(io.BytesIO(base64.b64decode(b64)))
+                    pil.save(str(out_path))
+                    _open_image(out_path)
+                except httpx.HTTPStatusError as exc:
+                    body = exc.response.text[:400]
+                    st.error(f"Image server HTTP {exc.response.status_code}: {body}")
+                except Exception as exc:  # noqa: BLE001
+                    st.error(f"Image server error: {exc}")
+        else:
+            with st.spinner("Generating locally — ~20 s on Apple Silicon…"):
+                try:
+                    from gutenberg_kg import image_gen
+
+                    pil = image_gen.generate(prompt, aspect_ratio=aspect)
+                    pil.save(str(out_path))
+                    _open_image(out_path)
+                except ImportError:
+                    st.warning("Local image generation requires `mflux` (Apple Silicon).")
+                except Exception as exc:  # noqa: BLE001
+                    st.error(f"Image generation failed: {exc}")
 
     with st.expander(f"📄 Source passages ({len(hits)})", expanded=not bool(synthesis)):
         for hit in hits:
@@ -337,21 +456,6 @@ def _render_sidebar() -> dict:
     st.sidebar.markdown(
         "245 books · 18 genres · 4 diaries  \n696K nodes · 6.2M edges · bge-small-en-v1.5"
     )
-    st.sidebar.markdown("---")
-
-    st.sidebar.subheader("🔌 Worker")
-    worker_url = st.sidebar.text_input(
-        "Worker URL",
-        value=_DEFAULT_WORKER,
-        help="Base URL of the running corpus-gutenberg worker",
-    )
-    secret = st.sidebar.text_input(
-        "Secret (optional)",
-        value="",
-        type="password",
-        help="Set only when HANDLER_SECRET is configured in the worker",
-    )
-
     st.sidebar.markdown("---")
     st.sidebar.subheader("📖 Corpus")
 
@@ -386,14 +490,14 @@ def _render_sidebar() -> dict:
         help="Ignore a KG entirely if its best match is below this score",
     )
     synthesize = st.sidebar.toggle(
-        "Generate answer",
-        value=False,
+        "Synthesize response",
+        key="synthesize",
         help="Generate a narrative answer via the configured LLM backend",
     )
 
     model = ""
     if synthesize:
-        models, default = _fetch_models(worker_url, secret)
+        models, default = _fetch_models(_DEFAULT_WORKER, os.environ.get("HANDLER_SECRET", ""))
         if models:
             default_idx = models.index(default) if default in models else 0
             model = st.sidebar.selectbox(
@@ -422,8 +526,8 @@ def _render_sidebar() -> dict:
         st.rerun()
 
     return {
-        "worker_url": worker_url,
-        "secret": secret,
+        "worker_url": _DEFAULT_WORKER,
+        "secret": os.environ.get("HANDLER_SECRET", ""),
         "corpus": corpus,
         "k": k,
         "min_score": min_score,
@@ -445,6 +549,8 @@ def _init_state() -> None:
         st.session_state.pending_query = ""
     if "pending_corpus" not in st.session_state:
         st.session_state.pending_corpus = ""
+    if "synthesize" not in st.session_state:
+        st.session_state.synthesize = False
 
 
 # ---------------------------------------------------------------------------

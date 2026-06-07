@@ -10,6 +10,87 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added
 
+- **`gutenkg imagine` — corpus-grounded image generation CLI** — new subcommand
+  (`src/gutenberg_kg/cli/cmd_imagine.py`) that generates images from a text prompt
+  or from corpus content retrieved via DocKG / DiaryKG.
+  - `gutenkg imagine "prompt"` — direct text-to-image via local FLUX.2-Klein (MLX).
+  - `gutenkg imagine --query "great fire" --book pepys` — retrieves relevant diary
+    chunks, rewrites them into a visual scene description via a local VLM (OpenAI-
+    compatible, default Qwen3), then generates the image.
+  - `--ratio` (default `3:2`), `--seed`, `--steps` (default 4), `--output`, and
+    `--open/--no-open` flags round out the options.
+  - `--corpus-only` dumps retrieved corpus text without generating; `--no-vlm` skips
+    the rewrite step (corpus text passed directly to FLUX).
+  - Falls back to the prose `bundles/gutenberg-all/.dockg` bundle if no diary KG
+    matches the query.
+
+- **`src/gutenberg_kg/image_gen.py` — image generation library** — module wrapping
+  FLUX.2-Klein (mflux / MLX) with three call paths:
+  - `generate()` — local generation on Apple Silicon; caches the loaded model
+    between calls.
+  - `generate_via_server()` — HTTP client for a running `mflux-serve` instance;
+    requires only `httpx` + `pillow`, safe from Linux containers.
+  - `generate_auto()` — resolves server URL from `GUTENKG_IMAGE_ENDPOINT` env var
+    and falls back to local generation.
+  - `vlm_rewrite()` — rewrites historical corpus text into a visual image-generation
+    prompt via an OpenAI-compatible local VLM; strips `<think>` blocks before
+    returning the cleaned prompt.
+  - Controlled via `GUTENKG_IMAGE_MODEL`, `GUTENKG_IMAGE_STEPS`, and
+    `GUTENKG_IMAGE_ENDPOINT` environment variables.
+
+- **`src/gutenberg_kg/mcp_server.py` — GutenbergKG MCP server** — FastMCP server
+  (`gutenkg-mcp` entry point) exposing two tools for Claude Code / Cursor:
+  - `generate_image(prompt, aspect_ratio, seed, steps)` — direct text-to-image.
+  - `corpus_imagine(query, book, extra_prompt, aspect_ratio, seed, steps)` — corpus
+    retrieval + VLM rewrite + image generation in one MCP call.
+  Auto-compresses output to JPEG if the PNG exceeds the 5 MB MCP transport limit.
+
+- **`docker/image_server.py` — in-process FLUX image generation server** — thin
+  FastAPI wrapper around `image_gen.generate()` that pre-loads the Flux2Klein model
+  at startup and keeps it resident between requests. Exposes
+  `GET /v1/models` and `POST /v1/images/generations` (OpenAI Images API shape).
+  Runs on `:8090` by default; configured via `GUTENKG_IMAGE_MODEL`,
+  `GUTENKG_IMAGE_STEPS`, `MFLUX_SERVER_HOST`, and `MFLUX_SERVER_PORT`.
+
+- **`.mcp.json` — project MCP configuration** — declares the `gutenkg` and
+  `paperbanana` MCP servers for Claude Code / Cursor; wires `GUTENKG_IMAGE_MODEL`,
+  `GUTENKG_IMAGE_STEPS`, VLM provider, and image provider environment variables so
+  both servers pick up the correct local endpoints without further user config.
+
+- **`imagine` optional-dependency group** — `mflux>=0.9.0`, `fastmcp>=2.0`, and
+  `structlog>=24.0` grouped under `[project.optional-dependencies] imagine`; install
+  with `pip install -e ".[imagine]"` or `poetry install --extras "imagine"`. Added
+  to `all`.
+
+### Changed
+
+- **`diary-kg` promoted to a core dependency** — `diary-kg>=0.92.6` added to
+  `[project.dependencies]`; was previously only in the `kgdeps` extra. Also added
+  to `kgdeps` and `all` extras for completeness.
+
+- **`gutenkg-mcp` entry point added** — `pyproject.toml` now registers
+  `gutenkg-mcp = "gutenberg_kg.mcp_server:main"` alongside `gutenkg`.
+
+- **`tool.pycodekg.include` extended** — `docker` directory added to the PyCodeKG
+  source-scan list so `image_server.py` and other Docker utilities are indexed in
+  the code KG.
+
+- **Makefile — image server and `up` targets** — added `IMAGE_SERVER = http://localhost:8090`
+  variable, `image-server` target (starts `docker/image_server.py` on `:8090`), and
+  `up` target (starts worker + image server + chat UI together). Workflow comment
+  block updated to list all entry points.
+
+- **Docker stack updated for image generation** — `docker/Dockerfile`,
+  `docker/handler.py`, `docker/chat.py`, and `docker/docker-compose.yml` updated to
+  wire the image server into the standalone deployment stack and route image
+  generation requests through the handler.
+
+- **Documentation refreshed** — `docs/CHEATSHEET.md`, `docs/DIARY_INGEST_HANDOFF.md`,
+  `docs/ingestion-pipeline.md`, and `README.md` updated to document the `imagine`
+  command, MCP server setup, and image server workflow.
+
+### Added
+
 - **`gutenkg build-corpus` — consolidated single-index builder** — new subcommand
   that walks the entire `corpus/` tree once and writes a *single* DocKG
   (`graph.sqlite` + `lancedb` + `catalog.json`) to the gitignored

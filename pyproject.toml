@@ -86,6 +86,7 @@ dependencies = [
     "kgmodule-utils>=0.2.4",
     "rich>=13.0.0",
     "doc-kg (>=0.15.5)",
+    "diary-kg (>=0.92.6)",
 ]
 
 [project.optional-dependencies]
@@ -106,6 +107,7 @@ dev = [
 #   pip install git+https://github.com/Flux-Frontiers/pycode_kg.git
 kgdeps = [
     "doc-kg>=0.15.4",
+    "diary-kg>=0.92.6",
     "kg-rag @ git+https://github.com/Flux-Frontiers/KGRAG.git",
 ]
 viz = [
@@ -118,6 +120,11 @@ viz3d = [
     "pyvista[jupyter]>=0.44.0",
     "pyvistaqt>=0.11.0",
     "pycode-kg>=0.19.3",
+]
+imagine = [
+    "mflux>=0.9.0",
+    "fastmcp>=2.0",
+    "structlog>=24.0",
 ]
 all = [
     # dev
@@ -133,6 +140,7 @@ all = [
     "vtracer>=0.6.0",
     # kgdeps
     "doc-kg>=0.15.4",
+    "diary-kg>=0.92.6",
     "kg-rag @ git+https://github.com/Flux-Frontiers/KGRAG.git",
     # viz
     "plotly>=5.0.0",
@@ -150,7 +158,8 @@ Homepage   = "https://github.com/Flux-Frontiers/gutenberg_kg"
 Repository = "https://github.com/Flux-Frontiers/gutenberg_kg"
 
 [project.scripts]
-gutenkg = "gutenberg_kg.cli.main:cli"
+gutenkg     = "gutenberg_kg.cli.main:cli"
+gutenkg-mcp = "gutenberg_kg.mcp_server:main"
 
 # ---------------------------------------------------------------------------
 # Tool configuration
@@ -183,7 +192,7 @@ pythonpath = ["src"]
 # CodeKG / DocKG index configuration
 # ---------------------------------------------------------------------------
 [tool.pycodekg]
-include = ["src"]
+include = ["src", "docker"]
 
 [tool.dockg]
 exclude = [
