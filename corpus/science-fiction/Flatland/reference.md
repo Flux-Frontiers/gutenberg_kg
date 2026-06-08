@@ -1,20 +1,20 @@
-# Reference: Flatland
+# Reference: Flatland: A Romance of Many Dimensions
 
 ## Source
 
-- **Project Gutenberg ID**: 11
-- **URL**: https://www.gutenberg.org/ebooks/11
+- **Project Gutenberg ID**: 201
+- **URL**: https://www.gutenberg.org/ebooks/201
 - **Rights**: Public domain in the USA.
 
 ## Author
 
 - **Name**: Edwin Abbott Abbott
-- **Born**: 1832
-- **Died**: 1898
-- **Wikipedia**: https://en.wikipedia.org/wiki/Lewis_Carroll
-- **Gutenberg Agent ID**: 7
+- **Born**: 1838
+- **Died**: 1926
+- **Wikipedia**: https://en.wikipedia.org/wiki/Edwin_Abbott_Abbott
+- **Gutenberg Agent ID**: 64
 
-- **Gutenberg Published**: 2008-06-27
+- **Gutenberg Published**: 1995-01-01
 
 ## Language
 
@@ -22,18 +22,14 @@
 
 ## Subjects
 
-- Fantasy fiction
-- Children's stories
-- Imaginary places -- Juvenile fiction
-- Alice (Fictitious character from Carroll) -- Juvenile fiction
-- PR
-- PZ
+- Fourth dimension
+- QA
 - Text
 
 ## Summary
 
-"Alice's Adventures in Wonderland" by Lewis Carroll is a children's novel published in 1865. When a curious girl named Alice spots a White Rabbit with a pocket watch, she tumbles down a rabbit hole into an extraordinary fantasy world filled with peculiar anthropomorphic creatures. This pioneering work of literary nonsense plays with logic and language, creating a whimsical tale that delights both children and adults. Illustrated by John Tenniel, it helped transform children's literature from didactic instruction to pure entertainment. (This is an automatically generated summary.)
+"Flatland: A Romance of Many Dimensions" by Edwin Abbott Abbott is a satirical novella published in 1884. Set in a two-dimensional world inhabited by geometric shapes, the story follows a Square who encounters beings from other dimensions. Through his journey from Flatland to higher and lower dimensional worlds, the novella explores both the mathematical concept of dimensions and critiques Victorian society's rigid class and gender hierarchies. Unable to convince others of what he's witnessed, the Square faces imprisonment for preaching forbidden truths about reality beyond two dimensions. (This is an automatically generated summary.)
 
 ## Notes
 
-Wikipedia page about this book: https://en.wikipedia.org/wiki/Alice%27s_Adventures_in_Wonderland
+Wikipedia page about this book: https://en.wikipedia.org/wiki/Flatland

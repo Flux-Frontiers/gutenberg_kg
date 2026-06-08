@@ -1,19 +1,20 @@
-# Reference: On the Eve (Turgenev)
+# Reference: On the eve: A novel
 
 ## Source
 
-- **Project Gutenberg ID**: 11571
-- **URL**: https://www.gutenberg.org/ebooks/11571
+- **Project Gutenberg ID**: 6902
+- **URL**: https://www.gutenberg.org/ebooks/6902
 - **Rights**: Public domain in the USA.
 
 ## Author
 
 - **Name**: Ivan Sergeevich Turgenev
-- **Born**: 1856
-- **Died**: 1944
-- **Gutenberg Agent ID**: 5634
+- **Born**: 1818
+- **Died**: 1883
+- **Wikipedia**: https://en.wikipedia.org/wiki/Ivan_Turgenev
+- **Gutenberg Agent ID**: 922
 
-- **Gutenberg Published**: 2004-03-01
+- **Gutenberg Published**: 2004-11-01
 
 ## Language
 
@@ -21,10 +22,14 @@
 
 ## Subjects
 
-- World War, 1914-1918 -- Caricatures and cartoons
-- D501
+- Russia -- Social life and customs -- Fiction
+- PG
 - Text
 
 ## Summary
 
-"Mr. Punch's History of the Great War" by Charles L. Graves is a satirical historical account written in the early 20th century, specifically following the events of World War I. The book utilizes the comedic lens of Mr. Punch, a character originating from British satire, to reflect on the tumultuous period of the Great War, exploring the absurdities, tragedies, and moments of humanity amidst widespread chaos and conflict.  The opening of the text provides insight into the origins and character of Mr. Punch, who has witnessed various wars throughout British history and has developed a nuanced perspective on conflict, particularly the rise of militarism leading up to World War I. It discusses the complacency of Britain during years of peace, juxtaposed against the dangerous build-up of German military power, presenting a critical analysis of the socio-political landscape that contributed to the war's outbreak. The tone is both reflective and humorous, indicating that Mr. Punch aims to balance the grim realities of war with the spirit of perseverance and wit displayed by soldiers and civilians alike during these challenging times. (This is an automatically generated summary.)
+"On the eve: A novel by Ivan Sergeevich Turgenev" is a novel first published in 1859. The story follows Elena Stakhova, a young woman pursued by multiple suitors on the eve of the Crimean War. When she meets Dmitri Insarov, a revolutionary Bulgarian, they fall in love and secretly marry, defying her parents' wishes. Their union leads them on a tragic journey that tests their ideals and devotion, ultimately taking Elena far from home in search of a cause greater than herself. (This is an automatically generated summary.)
+
+## Notes
+
+Wikipedia page about this book: https://en.wikipedia.org/wiki/On_the_Eve

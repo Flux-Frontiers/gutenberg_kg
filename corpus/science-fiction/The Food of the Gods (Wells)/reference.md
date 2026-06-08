@@ -1,20 +1,20 @@
-# Reference: The Food of the Gods (Wells)
+# Reference: The Food of the Gods and How It Came to Earth
 
 ## Source
 
-- **Project Gutenberg ID**: 1635
-- **URL**: https://www.gutenberg.org/ebooks/1635
+- **Project Gutenberg ID**: 11696
+- **URL**: https://www.gutenberg.org/ebooks/11696
 - **Rights**: Public domain in the USA.
 
 ## Author
 
 - **Name**: H. G. (Herbert George) Wells
-- **Born**: -428
-- **Died**: -348
-- **Wikipedia**: https://en.wikipedia.org/wiki/Plato
-- **Gutenberg Agent ID**: 93
+- **Born**: 1866
+- **Died**: 1946
+- **Wikipedia**: https://en.wikipedia.org/wiki/H._G._Wells
+- **Gutenberg Agent ID**: 30
 
-- **Gutenberg Published**: 1999-02-01
+- **Gutenberg Published**: 2004-03-01
 
 ## Language
 
@@ -22,17 +22,14 @@
 
 ## Subjects
 
-- Classical literature
-- Homer. Iliad
-- Poetics -- History -- To 1500
-- Aesthetics, Ancient
-- PA
+- Science fiction
+- Giants -- Fiction
+- Food supply -- Fiction
+- Growth factors -- Fiction
+- Agriculture -- Experimentation -- Fiction
+- PR
 - Text
 
 ## Summary
 
-"Ion" by Plato is a dialogue written in ancient Greece. In this short work, Socrates questions Ion, a professional rhapsode who performs and lectures on Homer's poetry. Their conversation explores a provocative question: does Ion's skill come from genuine knowledge and artistic technique, or from divine possession? Through pointed questioning, Socrates challenges Ion's claims of expertise, suggesting that poets and their performers may be inspired vessels of the gods rather than masters of craft—a conclusion the rhapsode resists accepting. (This is an automatically generated summary.)
-
-## Notes
-
-Wikipedia page about this book: https://en.wikipedia.org/wiki/Ion_(dialogue)
+"The Food of the Gods and How It Came to Earth" by H. G. Wells is a science fiction novel written during the late 19th century. The narrative centers around the scientists Mr. Bensington and Professor Redwood, who discover a substance called Herakleophorbia that dramatically enhances growth in living organisms, leading to potentially monumental consequences.  The opening of the work sets the stage with introductions to the two main characters, Bensington and Redwood, presenting their mundane lives and academic backgrounds before they stumble upon the extraordinary food that fuels the plot. They engage in discussions about their groundbreaking discovery, which is humorously dubbed the Food of the Gods, postulating its potential applications and consequences. As they brainstorm together, their excitement hints at the awe and chaos that this discovery will eventually unleash, foreshadowing the conflicts and challenges that will arise from their scientific breakthrough. The beginning deftly combines humor and tension, suggesting that the tale will explore the intersection of human ambition and the unpredictable nature of scientific experimentation. (This is an automatically generated summary.)

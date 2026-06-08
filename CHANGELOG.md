@@ -8,6 +8,35 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Fixed
+
+- **8 corpus books contained completely wrong text due to bad Gutenberg IDs** — catalog
+  files held incorrect PG IDs that caused `gutenkg download` to fetch entirely different
+  books. Affected titles:
+
+  | Book | Wrong ID (fetched) | Correct ID |
+  |---|---|---|
+  | Flatland (Abbott) | 11 (Alice in Wonderland) | 201 |
+  | A Princess of Mars (Burroughs) | 10662 (The Night Land) | 62 |
+  | At the Earth's Core (Burroughs) | 62 (mislabeled; was Princess of Mars) | 123 |
+  | The First Men in the Moon (Wells) | 18857 (Journey to Centre of Earth) | 1013 |
+  | The Food of the Gods (Wells) | 1635 (Ion, Plato) | 11696 |
+  | The Sea-Wolf (London) | 1608 (La Dame aux Camélias) | 1074 |
+  | Germinal (Zola) | 5765 (Insectivorous Plants, Darwin) | 56528 |
+  | On the Eve (Turgenev) | 11571 (Mr. Punch's History of WWI) | 6902 |
+
+  All 5 catalog files corrected (`science-fiction.txt`, `science-fiction-additions.txt`,
+  `american-literature.txt`, `french-literature.txt`, `russian-literature.txt`). Books
+  re-downloaded with correct IDs; stale `.dockg/` per-book indices wiped and rebuilt via
+  `gutenkg ingest` across all 4 affected genres (8 rebuilt, 59 skipped, 0 failed).
+
+- **`scripts/regenerate_corpus_doc.py`** — refactored `main()` to extract `_collect_rows()`
+  and `_render()` helpers; narrowed `except Exception` to `except ImportError` in
+  `_gutenkg_version()`; fixed `import-outside-toplevel` lint suppression comment.
+
+- **`docs/CORPUS.md`** — regenerated with provenance block (script, version, timestamp,
+  host, elapsed time) at top and as an HTML comment at the bottom.
+
 ### Added
 
 - **`gutenkg imagine --endpoint` option** — new CLI flag to specify the image
