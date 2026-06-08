@@ -137,3 +137,4 @@ entry_*.md
 
 .claude/
 .venv**
+.vscode

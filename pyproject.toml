@@ -1,9 +1,10 @@
 # pyproject.toml — gutenberg-kg package configuration (PEP 621)
 #
 # Author: Eric G. Suchanek, PhD
-# Last Revision: 2026-05-03
+# Last Revision: 2026-06-07
 #
 # Build system : Poetry 2.x with PEP 621 [project] table
+# Note         : Build/run automation tasks live in Makefile (not Poe tasks)
 #
 # Quick install (pip)
 # -------------------
@@ -11,16 +12,18 @@
 #   pip install -e ".[kgdeps]"          core + KG integrations (doc-kg, kg-rag)
 #   pip install -e ".[viz]"             core + 2-D timeline visualisation (plotly)
 #   pip install -e ".[viz3d]"           core + 3-D visualisation (pyvista, PyQt5, pycode-kg)
+#   pip install -e ".[mcp]"             optional MCP server support (gutenkg-mcp)
 #   pip install -e ".[all]"             dev + kgdeps + viz + viz3d (everything)
 #   pip install -e "."                  core runtime only
 #
 # Quick install (poetry)
 # ----------------------
-#   poetry install --all-extras         everything (dev + kgdeps + viz3d)
+#   poetry install --all-extras         all optional dependency groups
 #   poetry install --extras "dev"       core + dev tools only
 #   poetry install --extras "kgdeps"    core + KG integrations only
 #   poetry install --extras "viz"       core + 2-D timeline visualisation only
 #   poetry install --extras "viz3d"     core + 3-D visualisation only
+#   poetry install --extras "mcp"       core + MCP server only
 #   poetry install                      core runtime only
 #
 # First-time setup
@@ -31,13 +34,17 @@
 #
 # Run tests
 # ---------
-#   pytest                          uses pytest.ini (testpaths = tests/)
+#   pytest                          uses [tool.pytest.ini_options] below
 #   pytest -m "not slow"            skip slow tests
 #   pytest --cov=gutenberg_kg       with coverage
 #
+# Generate docs
+# -------------
+#   make docs
+#
 # Build KG indices (after code changes)
 # --------------------------------------
-#   codekg build --repo .
+#   pycodekg build --repo .
 
 [build-system]
 requires = ["poetry-core>=2.0.0"]
@@ -102,13 +109,10 @@ dev = [
     "scipy>=1.13.0",
     "vtracer>=0.6.0",
 ]
-# doc-kg is on PyPI; kg-rag and pycode-kg are GitHub-only — install manually:
-#   pip install git+https://github.com/Flux-Frontiers/KGRAG.git
-#   pip install git+https://github.com/Flux-Frontiers/pycode_kg.git
 kgdeps = [
     "doc-kg>=0.15.4",
     "diary-kg>=0.92.6",
-    "kg-rag @ git+https://github.com/Flux-Frontiers/KGRAG.git",
+    "kg-rag>=0.9.1",
 ]
 viz = [
     "plotly>=5.0.0",
@@ -121,14 +125,9 @@ viz3d = [
     "pyvistaqt>=0.11.0",
     "pycode-kg>=0.19.3",
 ]
-imagine = [
+mcp = [
     "fastmcp>=2.0",
     "structlog>=24.0",
-]
-# Local image generation backend (mflux) is intentionally separate because
-# newer mflux releases require transformers 5.x, while KG embeddings pin <4.57.
-imagine-local = [
-    "mflux>=0.17.5",
 ]
 all = [
     # dev
@@ -145,7 +144,7 @@ all = [
     # kgdeps
     "doc-kg>=0.15.4",
     "diary-kg>=0.92.6",
-    "kg-rag @ git+https://github.com/Flux-Frontiers/KGRAG.git",
+    "kg-rag>=0.9.1",
     # viz
     "plotly>=5.0.0",
     # viz3d
@@ -196,18 +195,9 @@ pythonpath = ["src"]
 # CodeKG / DocKG index configuration
 # ---------------------------------------------------------------------------
 [tool.pycodekg]
-include = ["src", "docker"]
+include = ["src", "docker", "runpod"]
 
 [tool.dockg]
 exclude = [
-    "corpus", "bundles", "dist", "src", "venv", "reports", "runpod",
-]
-
-# ---------------------------------------------------------------------------
-# Poe tasks
-# ---------------------------------------------------------------------------
-[tool.poe.tasks.docs]
-help     = "Generate project documentation and user guide PDFs"
-sequence = [
-    { shell = "cd src && pdoc --o ../docs --logo ./logo.png gutenberg_kg" },
+    "corpus", "bundles", "dist", "src", "venv", "reports", "runpod", "docker",
 ]

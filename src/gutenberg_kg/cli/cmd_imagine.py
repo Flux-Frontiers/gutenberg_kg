@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-import sys
+import os
 from pathlib import Path
 
 import click
@@ -13,10 +13,16 @@ from gutenberg_kg.cli.main import cli
 @cli.command("imagine")
 @click.argument("prompt", required=False, default=None)
 @click.option(
-    "--query", "-q", default=None, help="Query the corpus for context (used as/with prompt)."
+    "--query",
+    "-q",
+    default=None,
+    help="Query the corpus for context (used as/with prompt).",
 )
 @click.option(
-    "--book", "-b", default=None, help="Restrict corpus query to this book title substring."
+    "--book",
+    "-b",
+    default=None,
+    help="Restrict corpus query to this book title substring.",
 )
 @click.option(
     "--ratio",
@@ -29,10 +35,22 @@ from gutenberg_kg.cli.main import cli
 @click.option("--seed", "-s", default=None, type=int, help="Random seed for reproducibility.")
 @click.option("--output", "-o", default=None, type=click.Path(), help="Save PNG to this path.")
 @click.option(
-    "--steps", default=4, show_default=True, type=int, help="Inference steps (4=fast, 25=quality)."
+    "--endpoint",
+    default=None,
+    help="Image endpoint base URL. Defaults to GUTENKG_IMAGE_ENDPOINT.",
 )
 @click.option(
-    "--open/--no-open", "open_image", default=True, help="Open the image after generation."
+    "--steps",
+    default=4,
+    show_default=True,
+    type=int,
+    help="Inference steps (4=fast, 25=quality).",
+)
+@click.option(
+    "--open/--no-open",
+    "open_image",
+    default=True,
+    help="Open the image after generation.",
 )
 @click.option(
     "--corpus-only",
@@ -46,7 +64,19 @@ from gutenberg_kg.cli.main import cli
     default=False,
     help="Skip VLM rewrite — pass corpus text directly to FLUX (faster, lower quality).",
 )
-def imagine_cmd(prompt, query, book, ratio, seed, output, steps, open_image, corpus_only, no_vlm):
+def imagine_cmd(
+    prompt,
+    query,
+    book,
+    ratio,
+    seed,
+    output,
+    endpoint,
+    steps,
+    open_image,
+    corpus_only,
+    no_vlm,
+):
     """Generate an image from a text prompt or corpus content.
 
     When --query is used, the relevant corpus text is retrieved and rewritten
@@ -59,11 +89,13 @@ def imagine_cmd(prompt, query, book, ratio, seed, output, steps, open_image, cor
       gutenkg imagine --query "great fire" --book pepys --ratio 16:9 -o fire.png
       gutenkg imagine --query "great fire" --book pepys --no-vlm
     """
-    try:
-        from gutenberg_kg import image_gen
-    except ImportError:
-        click.echo("mflux is not installed. Run: pip install mflux", err=True)
-        sys.exit(1)
+    from gutenberg_kg import image_gen
+
+    endpoint = endpoint or os.environ.get("GUTENKG_IMAGE_ENDPOINT")
+    if not endpoint:
+        raise click.UsageError(
+            "No image endpoint configured. Set --endpoint or GUTENKG_IMAGE_ENDPOINT."
+        )
 
     # Build the final prompt
     final_prompt = _resolve_prompt(prompt, query, book, corpus_only, use_vlm=not no_vlm)
@@ -72,12 +104,16 @@ def imagine_cmd(prompt, query, book, ratio, seed, output, steps, open_image, cor
     click.echo(f"Ratio:  {ratio}  Steps: {steps}  Seed: {seed or 'random'}")
     click.echo("Generating…")
 
-    pil = image_gen.generate(
-        final_prompt,
-        aspect_ratio=ratio,
-        seed=seed,
-        steps=steps,
-    )
+    try:
+        pil = image_gen.generate_via_server(
+            final_prompt,
+            server_url=endpoint,
+            aspect_ratio=ratio,
+            seed=seed,
+            steps=steps,
+        )
+    except Exception as exc:  # noqa: BLE001
+        raise click.ClickException(f"Image endpoint request failed: {exc}") from exc
 
     # Determine output path
     if output:
@@ -191,9 +227,9 @@ def _query_corpus(query: str, book: str | None) -> str:
         if bundle.exists():
             try:
                 kg = DocKG(
-                    corpus_root=str(bundle / "corpus")
-                    if (bundle / "corpus").exists()
-                    else str(bundle),
+                    corpus_root=(
+                        str(bundle / "corpus") if (bundle / "corpus").exists() else str(bundle)
+                    ),
                     db_path=str(bundle / "graph.sqlite"),
                     lancedb_dir=str(bundle / "lancedb"),
                 )

@@ -9,6 +9,7 @@
 #   make image-server   — start the local FLUX image generation server on :8090
 #   make chat           — start worker + Streamlit chat UI on http://localhost:8501
 #   make up             — start everything: worker + image server + chat UI
+#   make docs           — generate project docs into ./docs
 #   make query Q="..."  — fire a one-shot query against the running worker
 
 IMAGE        = corpus-gutenberg
@@ -16,7 +17,7 @@ COMPOSE      = docker compose -f docker/docker-compose.yml
 WORKER       = http://localhost:8000
 IMAGE_SERVER = http://localhost:8090
 
-.PHONY: build-diaries build-corpus build run image-server chat up stop down query logs clean
+.PHONY: build-diaries build-corpus build run image-server chat up stop down query logs clean docs
 
 build-diaries:
 	gutenkg build-diaries --force
@@ -46,7 +47,7 @@ chat:
 	@echo "Worker:  $(WORKER)"
 	@echo "Chat UI: http://localhost:8501"
 
-up:
+start up:
 	@echo "Starting worker + chat (Docker) ..."
 	$(COMPOSE) --profile chat up -d
 	@echo "Starting FLUX image server in isolated .venv-image ..."
@@ -73,3 +74,6 @@ logs:
 
 clean:
 	docker rmi $(IMAGE):latest 2>/dev/null || true
+
+docs:
+	cd src && pdoc --o ../docs --logo ./logo.png gutenberg_kg

@@ -10,6 +10,49 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added
 
+- **`gutenkg imagine --endpoint` option** — new CLI flag to specify the image
+  server base URL at runtime. Falls back to `GUTENKG_IMAGE_ENDPOINT` env var;
+  raises `UsageError` if neither is set.
+
+### Changed
+
+- **`imagine-local` extra removed** — `mflux` and its heavy ML dependencies
+  (accelerate, mlx, sentencepiece, opencv-python, piexif, twine, etc.) have
+  been dropped from `pyproject.toml` and `poetry.lock`. Local Apple Silicon
+  generation was incompatible with the KG embeddings `transformers<4.57` pin.
+  Image generation now exclusively targets the `mflux-serve` HTTP endpoint.
+
+- **`gutenkg imagine` now requires an HTTP endpoint** — `cmd_imagine.py`
+  replaces the local `image_gen.generate()` call with
+  `image_gen.generate_via_server(server_url=endpoint, …)`. The previous
+  `mflux` import fallback (with `sys.exit(1)`) is removed.
+
+- **`GUTENKG_IMAGE_ENDPOINT` is now the canonical image endpoint env var** —
+  `docker/.env.example` and `docker/docker-compose.yml` updated; `IMAGE_ENDPOINT`
+  kept as a backward-compatible alias in Compose so existing deployments are
+  unaffected.
+
+- **`kg-rag` dependency moved from GitHub source to PyPI** — `pyproject.toml`
+  now pins `kg-rag>=0.9.1` from PyPI; the `git+https://github.com/…` source
+  reference is removed. `poetry.lock` updated accordingly.
+
+- **Makefile: `start` added as alias for `up`** — `make start` and `make up`
+  both launch the worker + chat Docker stack.
+
+- **README install instructions simplified** — `pip install -e ".[imagine]"` is
+  now the correct incantation; references to the removed `imagine-local` extra
+  have been removed.
+
+- **`.gitignore`: `.vscode/` excluded** — IDE settings directory added to the
+  ignore list so editor-local configs are no longer tracked.
+
+- **`.vscode/settings.json`: pytest args simplified** — removed `--tb=short`
+  from `python.testing.pytestArgs`.
+
+---
+
+### Added
+
 - **`kgmodule-utils[synthesis]` integration (v0.4.2)** — both `docker/handler.py`
   and `runpod/handler.py` now delegate synthesis and image generation to `kg_utils`
   rather than maintaining inline implementations:
