@@ -4,6 +4,7 @@
 
 runpod>=1.7.0
 doc-kg>=0.12.3
+kgmodule-utils[synthesis]==0.4.2
 sentence-transformers>=3.0.0
 lancedb>=0.29.0
 numpy>=1.24.0

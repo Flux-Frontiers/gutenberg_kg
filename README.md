@@ -134,8 +134,8 @@ kgrag synthesize "How do the Stoics and Russian novelists differ on suffering an
 3. **FLUX.2-Klein generation** — a 4-bit quantised FLUX.2-Klein model renders the image in ~15–22 seconds.
 
 ```bash
-# 1. Install the imagine extras (mflux + fastmcp)
-pip install -e ".[imagine]"
+# 1. Install imagine extras (fastmcp + local mflux backend)
+pip install -e ".[imagine,imagine-local]"
 
 # 2. Start oMLX on port 8080 with a Qwen3 model (for VLM rewrite)
 omlx serve mlx-community/Qwen3-30B-A3B-Instruct-2507-MLX-4bit --port 8080

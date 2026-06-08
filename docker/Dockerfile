@@ -32,7 +32,8 @@ WORKDIR /app
 # diary-kg: DiaryKG temporal index + query API
 # streamlit + httpx: chat UI dependencies
 # watchdog: faster Streamlit file-watching via native OS events (vs. polling)
-RUN pip install --no-cache-dir doc-kg diary-kg streamlit httpx watchdog openai
+ARG KGMODULE_UTILS_VERSION=0.4.2
+RUN pip install --no-cache-dir "kgmodule-utils[synthesis]==${KGMODULE_UTILS_VERSION}" doc-kg diary-kg streamlit httpx watchdog openai
 
 # Inject image_gen.py into the already-installed gutenberg_kg package.
 COPY src/gutenberg_kg/image_gen.py /tmp/image_gen.py

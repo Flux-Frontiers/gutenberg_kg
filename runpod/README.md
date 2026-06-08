@@ -39,6 +39,9 @@ docker push <your-registry>/gutenkg-worker:latest
 `build_image.sh` builds local Python wheels for `gutenberg-kg` and `kg-rag`
 (not yet on PyPI), then runs `docker build`.
 
+The RunPod image also pins `kgmodule-utils[synthesis]==0.4.2` via
+`requirements.txt` to keep worker behavior reproducible across rebuilds.
+
 Assumed repo layout (siblings):
 ```
 repos/

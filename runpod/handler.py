@@ -39,12 +39,12 @@ from __future__ import annotations
 import json
 import os
 import re
-import sqlite3
 import time
 import uuid
-from collections import defaultdict
 from datetime import UTC, datetime
 from pathlib import Path
+
+from kg_utils.retrieval import attach_content_by_sqlite, hit_to_dict
 
 import runpod
 
@@ -179,42 +179,11 @@ print("[startup] ready")
 
 
 def _hit_to_dict(hit) -> dict:
-    return {
-        "kg_name": hit.kg_name,
-        "kg_kind": str(hit.kg_kind),
-        "node_id": hit.node_id,
-        "name": hit.name,
-        "kind": hit.kind,
-        "score": round(float(hit.score), 4),
-        "summary": hit.summary,
-        "source_path": hit.source_path,
-    }
+    return hit_to_dict(hit)
 
 
 def _attach_content(hits: list[dict]) -> None:
-    by_kg: dict[str, list[dict]] = defaultdict(list)
-    for h in hits:
-        by_kg[h.get("kg_name", "")].append(h)
-
-    for kg_name, kg_hits in by_kg.items():
-        db_path = _KG_SQLITE.get(kg_name)
-        if not db_path or not db_path.exists():
-            continue
-        ids = [h["node_id"] for h in kg_hits if h.get("node_id")]
-        if not ids:
-            continue
-        text_by_id: dict[str, str] = {}
-        try:
-            with sqlite3.connect(str(db_path)) as con:
-                placeholders = ",".join("?" * len(ids))
-                for nid, text in con.execute(
-                    f"SELECT id, text FROM nodes WHERE id IN ({placeholders})", ids
-                ):
-                    text_by_id[nid] = text or ""
-        except sqlite3.Error:
-            continue
-        for h in kg_hits:
-            h["content"] = text_by_id.get(h["node_id"], "")
+    attach_content_by_sqlite(hits, _KG_SQLITE)
 
 
 def _enrich_catalog(hits: list[dict]) -> None:

@@ -83,7 +83,7 @@ classifiers = [
 requires-python = ">=3.12,<3.14"
 dependencies = [
     "click>=8.1.0,<9",
-    "kgmodule-utils>=0.2.4",
+    "kgmodule-utils[synthesis]>=0.4.2",
     "rich>=13.0.0",
     "doc-kg (>=0.15.5)",
     "diary-kg (>=0.92.6)",
@@ -122,9 +122,13 @@ viz3d = [
     "pycode-kg>=0.19.3",
 ]
 imagine = [
-    "mflux>=0.9.0",
     "fastmcp>=2.0",
     "structlog>=24.0",
+]
+# Local image generation backend (mflux) is intentionally separate because
+# newer mflux releases require transformers 5.x, while KG embeddings pin <4.57.
+imagine-local = [
+    "mflux>=0.17.5",
 ]
 all = [
     # dev

@@ -10,6 +10,49 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added
 
+- **`kgmodule-utils[synthesis]` integration (v0.4.2)** — both `docker/handler.py`
+  and `runpod/handler.py` now delegate synthesis and image generation to `kg_utils`
+  rather than maintaining inline implementations:
+  - `kg_utils.synthesis.TextSynthesizer` / `text_synthesizer_from_env()` — LLM text
+    synthesis (`list_models`, `synthesize_rag`, `rewrite_for_image`) across oMLX,
+    Ollama, and OpenAI backends; replaces inline `_synthesize()` / `_list_models()`.
+  - `kg_utils.synthesis.ImageSynthesizer` / `image_synthesizer_from_env()` — image
+    generation proxy (mflux-serve HTTP); replaces inline `_imagine()`.
+  - `kg_utils.retrieval.hit_to_dict` + `attach_content_by_sqlite` — shared hit
+    serialization and SQLite content-fetching; deduplicates code across both handlers.
+  - `kg_utils.worker.WorkerClient` — HTTP client abstraction used by `chat.py`
+    for `query`, `rewrite`, `imagine`, and `list_models`; replaces ad-hoc `httpx`
+    calls and inline JSON error parsing.
+  - `kg_utils.worker.handle_aux_ops` — dispatches `op=models` and `op=imagine`
+    requests in the Docker handler.
+
+- **Multi-provider synthesis** — chat UI sidebar shows a "Provider" dropdown
+  (oMLX / Ollama / OpenAI) when synthesis is enabled. The selected backend is
+  forwarded to the worker on every `query`, `rewrite`, and `imagine` call.
+  Per-request backend routing in `handler.py` via `_synth_for_backend()` /
+  `_image_for_backend()`.
+
+- **`OLLAMA_ENDPOINT` and `OPENAI_API_KEY` env vars** — added to
+  `docker/.env.example` and `docker/docker-compose.yml`. `OLLAMA_ENDPOINT`
+  defaults to `http://host.docker.internal:11434/v1`; `OPENAI_API_KEY` empty
+  by default.
+
+- **`imagine-local` optional-dependency group** — `mflux>=0.17.5` split out from
+  the `imagine` extra to avoid version conflicts between mflux (`transformers>=5.x`)
+  and KG embeddings (`<4.57`). Install with `pip install -e ".[imagine,imagine-local]"`.
+
+- **`docker/requirements-image.txt`** — new isolated requirements file for the
+  mflux image server, used by `make image-server` to populate `.venv-image`.
+
+- **`scripts/test_synthesis.py`** — standalone smoke test for `kg_utils.synthesis`
+  backends. Tests `list_models`, `synthesize_rag`, and `rewrite_for_image` across
+  oMLX (env default), Ollama, and OpenAI independently; connection failures are
+  reported and the script continues to the next backend.
+
+- **`docs/KG_UTILS_EXTRACTION_PLAN.md`** — design document for the `kg_utils`
+  synthesis/retrieval/worker extraction: module layout, interface contracts, and
+  migration plan.
+
 - **`docker/image_gen.py` — standalone image generation module in Docker** — new
   file copied directly into `/app/image_gen.py` inside the container (no
   `gutenberg_kg` package import required). Provides four entry points:
@@ -59,6 +102,34 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   Silicon and Ollama cross-platform), including port notes and API-key guidance.
 
 ### Changed
+
+- **`docker/image_gen.py` simplified** — `vlm_rewrite()`, `generate_via_server()`,
+  and `generate_auto()` removed; those paths now live in `kg_utils.synthesis`.
+  The module is now local Apple Silicon generation only (`generate()` via mflux),
+  used exclusively by `docker/image_server.py`.
+
+- **`make image-server`** — now creates an isolated `.venv-image` virtual environment
+  and installs `docker/requirements-image.txt` before starting `image_server.py`,
+  preventing mflux/transformers version conflicts with the main project venv.
+
+- **Chat UI: Save/Render buttons moved to sidebar** — "💾 Save result" and
+  "🎨 Render response" now operate on the most recent result from the sidebar
+  rather than appearing inline per result card. Image generation and VLM rewrite
+  route through `_imagine_via_worker()` and `_rewrite_via_worker()` (no direct
+  `image_gen` or `openai` imports in `chat.py`).
+
+- **`VLLM_ENDPOINT_URL` default now includes `/v1` suffix** — updated in
+  `docker/.env.example` and `docker/docker-compose.yml`
+  (`http://host.docker.internal:8080` → `http://host.docker.internal:8080/v1`).
+
+- **`kgmodule-utils` bumped to `[synthesis]>=0.4.2`** — `pyproject.toml`
+  dependency updated from `>=0.2.4` (no extras) to enable `kg_utils.synthesis`,
+  `kg_utils.retrieval`, and `kg_utils.worker`. Build arg
+  `KGMODULE_UTILS_VERSION: 0.4.2` added to `docker-compose.yml`.
+
+- **`.gitignore` streamlined** — removed framework-specific boilerplate (Django,
+  Flask, Scrapy, PyBuilder, Celery, SageMath, pixi, Marimo, LaTeX, Cursor,
+  Abstra). Added `.claude/` and `.venv**` to project-local excludes.
 
 - **`docker/Dockerfile`** — `COPY docker/image_gen.py /app/image_gen.py` added so
   the standalone module is available at `/app/image_gen.py` inside the container.

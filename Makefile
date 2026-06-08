@@ -32,8 +32,14 @@ run:
 	@echo "Worker running at $(WORKER)"
 
 image-server:
-	@echo "Starting FLUX image server on $(IMAGE_SERVER) (background) ..."
-	python docker/image_server.py &
+	@if [ ! -x .venv-image/bin/python ]; then \
+		echo "Creating .venv-image for isolated image dependencies ..."; \
+		python3 -m venv .venv-image; \
+	fi
+	@.venv-image/bin/python -m pip install --quiet --upgrade pip
+	@.venv-image/bin/python -m pip install --quiet -r docker/requirements-image.txt
+	@echo "Starting FLUX image server on $(IMAGE_SERVER) (background, .venv-image) ..."
+	MFLUX_SERVER_HOST=0.0.0.0 .venv-image/bin/python docker/image_server.py &
 
 chat:
 	$(COMPOSE) --profile chat up -d
@@ -43,8 +49,8 @@ chat:
 up:
 	@echo "Starting worker + chat (Docker) ..."
 	$(COMPOSE) --profile chat up -d
-	@echo "Starting FLUX image server in background ..."
-	python docker/image_server.py &
+	@echo "Starting FLUX image server in isolated .venv-image ..."
+	$(MAKE) image-server
 	@echo ""
 	@echo "Worker:       $(WORKER)"
 	@echo "Image server: $(IMAGE_SERVER)"

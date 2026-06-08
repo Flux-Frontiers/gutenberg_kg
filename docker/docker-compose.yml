@@ -17,6 +17,8 @@ services:
     build:
       context: ..
       dockerfile: docker/Dockerfile
+      args:
+        KGMODULE_UTILS_VERSION: 0.4.2
     command: python handler.py --rp_serve_api --rp_api_host 0.0.0.0
     ports:
       - "8000:8000"
@@ -26,9 +28,11 @@ services:
       HANDLER_SECRET: ${HANDLER_SECRET:-}
       # Synthesis via a host LLM server (optional — omit to disable).
       # Defaults target oMLX on :8080; see docker/.env.example.
-      VLLM_ENDPOINT_URL: ${VLLM_ENDPOINT_URL:-http://host.docker.internal:8080}
+      VLLM_ENDPOINT_URL: ${VLLM_ENDPOINT_URL:-http://host.docker.internal:8080/v1}
       VLLM_MODEL: ${VLLM_MODEL:-Qwen3-4B-Instruct-2507-MLX-8bit}
       VLLM_API_KEY: ${VLLM_API_KEY:-}
+      OLLAMA_ENDPOINT: ${OLLAMA_ENDPOINT:-http://host.docker.internal:11434/v1}
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
       # Image generation via mflux-serve on the host (optional — omit to disable).
       IMAGE_ENDPOINT: ${IMAGE_ENDPOINT:-http://host.docker.internal:8090}
       IMAGE_STEPS: ${IMAGE_STEPS:-4}

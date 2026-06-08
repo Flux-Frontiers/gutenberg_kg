@@ -8,11 +8,11 @@ uvx subprocess, no per-request downloads.
 
 Usage
 -----
-    # from repo root, with the venv active:
-    MFLUX_SERVER_HOST=0.0.0.0 python docker/image_server.py
+    # from repo root (recommended: isolated image env):
+    make image-server
 
-    # or via the venv directly:
-    MFLUX_SERVER_HOST=0.0.0.0 .venv/bin/python docker/image_server.py
+    # or run directly from the isolated venv:
+    MFLUX_SERVER_HOST=0.0.0.0 .venv-image/bin/python docker/image_server.py
 
 Environment variables
 ---------------------
@@ -47,11 +47,20 @@ app = FastAPI(title="GutenbergKG image server")
 _MODEL_NAME = os.environ.get("GUTENKG_IMAGE_MODEL", image_gen._DEFAULT_MODEL)
 _DEFAULT_STEPS = int(os.environ.get("IMAGE_STEPS", "4"))
 _OUTPUT_DIR = Path(os.environ.get("IMAGE_OUTPUT_DIR", "/tmp/gutenberg_images"))
+_PRELOAD = os.environ.get("IMAGE_PRELOAD", "0").strip().lower() in {
+    "1",
+    "true",
+    "yes",
+}
 
-# Pre-load the model at startup so the first request isn't slow.
-print(f"[startup] loading model {_MODEL_NAME} ...")
-image_gen._load_model(_MODEL_NAME)
-print("[startup] model ready")
+# Optional preload for local generation; keep disabled by default so endpoint-only
+# deployments do not require local mflux model imports at startup.
+if _PRELOAD:
+    print(f"[startup] loading model {_MODEL_NAME} ...")
+    image_gen._load_model(_MODEL_NAME)
+    print("[startup] model ready")
+else:
+    print("[startup] IMAGE_PRELOAD disabled; model will load on first generation request")
 
 
 class ImageGenRequest(BaseModel):
