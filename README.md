@@ -7,9 +7,9 @@
   <a href="https://www.elastic.co/licensing/elastic-license"><img src="https://img.shields.io/badge/code-Elastic--2.0-lightgrey.svg" alt="Code License"/></a>
   <a href="https://www.gutenberg.org/"><img src="https://img.shields.io/badge/texts-Public%20Domain-green.svg" alt="Texts License"/></a>
   <img src="https://img.shields.io/badge/version-1.5.0-blue.svg" alt="Version"/>
-  <img src="https://img.shields.io/badge/corpus-245%20books-orange.svg" alt="Corpus"/>
-  <img src="https://img.shields.io/badge/nodes-1.2M-green.svg" alt="Nodes"/>
-  <img src="https://img.shields.io/badge/edges-5.3M-green.svg" alt="Edges"/>
+  <img src="https://img.shields.io/badge/corpus-249%20books-orange.svg" alt="Corpus"/>
+  <img src="https://img.shields.io/badge/nodes-1.3M-green.svg" alt="Nodes"/>
+  <img src="https://img.shields.io/badge/edges-5.2M-green.svg" alt="Edges"/>
   <a href="https://github.com/Flux-Frontiers/doc_kg"><img src="https://img.shields.io/badge/DocKG-ready-blue.svg" alt="DocKG"/></a>
   <a href="https://github.com/Flux-Frontiers/KGRAG"><img src="https://img.shields.io/badge/KGRAG-integrated-purple.svg" alt="KGRAG"/></a>
   <img src="https://img.shields.io/badge/imagine-FLUX.2--Klein-ff6b35.svg" alt="Corpus image generation"/>
@@ -22,7 +22,7 @@
 
 It transforms the world's great public-domain literature, philosophy, and sacred texts into **queryable knowledge graphs** — enabling semantic search, thematic analysis, and cross-work discovery at a scale and depth that keyword search cannot touch. Ask *what themes connect Dostoevsky and Dante*, trace the evolution of the social contract from Rousseau to Thoreau, or find every passage in the corpus that grapples with revenge — and get semantically grounded answers drawn from the source texts themselves.
 
-The corpus currently spans **245 public-domain texts across 18 genres** — 1,236,169 nodes, 5,321,000 edges — built and fully indexed on an Apple M5 Max in under 30 minutes.
+The corpus currently spans **249 public-domain texts across 19 genres** — 1,314,930 nodes, 5,225,150 edges — built and fully indexed on an Apple M5 Max in under 30 minutes.
 
 *Author: Eric G. Suchanek, PhD · Flux-Frontiers, Liberty TWP, OH*
 
@@ -53,25 +53,26 @@ The result: every work is independently queryable as its own knowledge graph, gr
 
 | Genre | Books | Nodes | Edges |
 |-------|------:|------:|------:|
-| Philosophy | 48 | 241,471 | 918,796 |
-| English Literature | 37 | 187,058 | 927,902 |
-| Ancient & Classical | 26 | 137,857 | 579,264 |
-| American Literature | 23 | 90,481 | 370,090 |
-| Russian Literature | 13 | 90,191 | 462,058 |
-| French Literature | 12 | 89,511 | 447,009 |
-| Biography | 11 | 69,535 | 314,775 |
-| Drama | 11 | 25,602 | 101,637 |
-| Science Fiction | 19 | 73,199 | 268,940 |
-| Travel | 6 | 51,693 | 205,555 |
-| Natural History | 7 | 44,747 | 172,992 |
-| Sacred Texts | 7 | 32,942 | 175,701 |
-| Letters | 7 | 27,029 | 98,526 |
-| World Literature | 5 | 21,185 | 83,696 |
-| German Literature | 5 | 13,066 | 50,830 |
-| Technical Reference (IA) | 3 | 22,920 | 62,506 |
-| Spanish Literature | 1 | 11,422 | 57,980 |
-| Shakespeare | 4 | 6,260 | 22,743 |
-| **Total** | **245** | **1,236,169** | **5,321,000** |
+| Philosophy | 48 | 241,471 | 840,191 |
+| English Literature | 37 | 187,058 | 834,019 |
+| Ancient & Classical | 26 | 137,857 | 528,620 |
+| American Literature | 23 | 92,609 | 340,371 |
+| Russian Literature | 13 | 87,426 | 414,348 |
+| French Literature | 12 | 89,473 | 415,362 |
+| Biography | 11 | 69,535 | 279,817 |
+| Drama | 11 | 25,602 | 94,353 |
+| Science Fiction | 19 | 73,905 | 242,425 |
+| Travel | 6 | 51,693 | 188,514 |
+| Natural History | 7 | 44,747 | 157,202 |
+| Sacred Texts | 7 | 31,773 | 155,939 |
+| Letters | 7 | 27,029 | 88,666 |
+| World Literature | 5 | 21,185 | 73,094 |
+| German Literature | 5 | 13,066 | 45,907 |
+| Diaries | 4 | 79,899 | 390,685 |
+| Technical Reference (IA) | 3 | 22,920 | 61,837 |
+| Spanish Literature | 1 | 11,422 | 52,834 |
+| Shakespeare | 4 | 6,260 | 20,966 |
+| **Total** | **249** | **1,314,930** | **5,225,150** |
 
 The full book list, organized by genre, is in [`docs/CORPUS.md`](docs/CORPUS.md). Planned additions are tracked in [`docs/CORPUS_WISHLIST.md`](docs/CORPUS_WISHLIST.md).
 
@@ -204,19 +205,19 @@ If you use GutenbergKG in your research, please cite it. GitHub's **Cite this re
   author       = {Suchanek, Eric G.},
   title        = {{GutenbergKG}: The Knowledge Press},
   year         = {2026},
-  version      = {1.4.0},
+  version      = {1.5.0},
   publisher    = {Flux-Frontiers},
   doi          = {10.5281/zenodo.20045390},
   url          = {https://github.com/Flux-Frontiers/gutenberg_kg},
   note         = {Universal ingestion engine for digitized text corpora;
-                  245 public-domain texts across 18 genres as queryable
+                  249 public-domain texts across 19 genres as queryable
                   knowledge graphs via DocKG and KGRAG}
 }
 ```
 
 **APA:**
 
-> Suchanek, E. G. (2026). *GutenbergKG: The Knowledge Press* (Version 1.4.0) [Software]. Flux-Frontiers. https://doi.org/10.5281/zenodo.20045390
+> Suchanek, E. G. (2026). *GutenbergKG: The Knowledge Press* (Version 1.5.0) [Software]. Flux-Frontiers. https://doi.org/10.5281/zenodo.20045390
 
 ---
 
