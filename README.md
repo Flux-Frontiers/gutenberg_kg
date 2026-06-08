@@ -6,7 +6,7 @@
   <a href="https://www.python.org/"><img src="https://img.shields.io/badge/python-3.12%20|%203.13-blue.svg" alt="Python"/></a>
   <a href="https://www.elastic.co/licensing/elastic-license"><img src="https://img.shields.io/badge/code-Elastic--2.0-lightgrey.svg" alt="Code License"/></a>
   <a href="https://www.gutenberg.org/"><img src="https://img.shields.io/badge/texts-Public%20Domain-green.svg" alt="Texts License"/></a>
-  <img src="https://img.shields.io/badge/version-1.4.0-blue.svg" alt="Version"/>
+  <img src="https://img.shields.io/badge/version-1.5.0-blue.svg" alt="Version"/>
   <img src="https://img.shields.io/badge/corpus-245%20books-orange.svg" alt="Corpus"/>
   <img src="https://img.shields.io/badge/nodes-1.2M-green.svg" alt="Nodes"/>
   <img src="https://img.shields.io/badge/edges-5.3M-green.svg" alt="Edges"/>

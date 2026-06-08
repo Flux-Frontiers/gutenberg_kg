@@ -8,6 +8,18 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Added
+
+### Changed
+
+### Removed
+
+### Fixed
+
+---
+
+## [1.5.0] - 2026-06-08
+
 ### Fixed
 
 - **8 corpus books contained completely wrong text due to bad Gutenberg IDs** — catalog
