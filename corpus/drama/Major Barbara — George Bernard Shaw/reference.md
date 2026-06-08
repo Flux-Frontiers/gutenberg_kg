@@ -8,7 +8,7 @@
 
 ## Author
 
-- **Name**: Mark Twain
+- **Name**: George Bernard Shaw
 - **Born**: 1835
 - **Died**: 1910
 - **Wikipedia**: https://en.wikipedia.org/wiki/Mark_Twain

@@ -8,7 +8,7 @@
 
 ## Author
 
-- **Name**: Henry Inman
+- **Name**: Anton Pavlovich Chekhov
 - **Born**: 1837
 - **Died**: 1899
 - **Wikipedia**: https://en.wikipedia.org/wiki/Henry_Inman_(U.S._Army_officer_and_author)

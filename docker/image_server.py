@@ -8,16 +8,17 @@ uvx subprocess, no per-request downloads.
 
 Usage
 -----
-    # from repo root, with the venv active:
-    MFLUX_SERVER_HOST=0.0.0.0 python docker/image_server.py
+    # from repo root (recommended: isolated image env):
+    make image-server
 
-    # or via the venv directly:
-    MFLUX_SERVER_HOST=0.0.0.0 .venv/bin/python docker/image_server.py
+    # or run directly from the isolated venv:
+    MFLUX_SERVER_HOST=0.0.0.0 .venv-image/bin/python docker/image_server.py
 
 Environment variables
 ---------------------
 GUTENKG_IMAGE_MODEL   HF repo for Flux2Klein (default: mlx-community/flux2-klein-4b-4bit)
-GUTENKG_IMAGE_STEPS   Default inference steps (default: 4)
+IMAGE_STEPS           Default inference steps (default: 4)
+IMAGE_OUTPUT_DIR      Directory for saved images when response_format=filepath (default: /tmp/gutenberg_images)
 MFLUX_SERVER_HOST     Bind host (default: 0.0.0.0)
 MFLUX_SERVER_PORT     Bind port (default: 8090)
 """
@@ -27,25 +28,39 @@ from __future__ import annotations
 import asyncio
 import base64
 import os
+import sys
 import time
+import uuid
 from io import BytesIO
+from pathlib import Path
 
 import uvicorn
 from fastapi import FastAPI
 from fastapi.responses import JSONResponse
 from pydantic import BaseModel
 
-from gutenberg_kg import image_gen
+sys.path.insert(0, os.path.dirname(__file__))
+import image_gen  # noqa: E402
 
 app = FastAPI(title="GutenbergKG image server")
 
 _MODEL_NAME = os.environ.get("GUTENKG_IMAGE_MODEL", image_gen._DEFAULT_MODEL)
-_DEFAULT_STEPS = int(os.environ.get("GUTENKG_IMAGE_STEPS", "4"))
+_DEFAULT_STEPS = int(os.environ.get("IMAGE_STEPS", "4"))
+_OUTPUT_DIR = Path(os.environ.get("IMAGE_OUTPUT_DIR", "/tmp/gutenberg_images"))
+_PRELOAD = os.environ.get("IMAGE_PRELOAD", "0").strip().lower() in {
+    "1",
+    "true",
+    "yes",
+}
 
-# Pre-load the model at startup so the first request isn't slow.
-print(f"[startup] loading model {_MODEL_NAME} ...")
-image_gen._load_model(_MODEL_NAME)
-print("[startup] model ready")
+# Optional preload for local generation; keep disabled by default so endpoint-only
+# deployments do not require local mflux model imports at startup.
+if _PRELOAD:
+    print(f"[startup] loading model {_MODEL_NAME} ...")
+    image_gen._load_model(_MODEL_NAME)
+    print("[startup] model ready")
+else:
+    print("[startup] IMAGE_PRELOAD disabled; model will load on first generation request")
 
 
 class ImageGenRequest(BaseModel):
@@ -74,7 +89,6 @@ async def generate_image(req: ImageGenRequest):
     except ValueError:
         width, height = 1536, 1024
 
-    # Derive aspect ratio string from dimensions for image_gen.generate()
     ratio_map = {
         (1024, 1024): "1:1",
         (1536, 1024): "3:2",
@@ -98,16 +112,16 @@ async def generate_image(req: ImageGenRequest):
         ),
     )
 
+    if req.response_format == "filepath":
+        _OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+        out = _OUTPUT_DIR / f"{uuid.uuid4().hex}.png"
+        pil.save(str(out))
+        return JSONResponse({"created": int(time.time()), "data": [{"filepath": str(out)}]})
+
     buf = BytesIO()
     pil.save(buf, format="PNG")
     b64 = base64.b64encode(buf.getvalue()).decode()
-
-    return JSONResponse(
-        {
-            "created": int(time.time()),
-            "data": [{"b64_json": b64}],
-        }
-    )
+    return JSONResponse({"created": int(time.time()), "data": [{"b64_json": b64}]})
 
 
 def main() -> None:

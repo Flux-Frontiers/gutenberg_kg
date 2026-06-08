@@ -15,5 +15,5 @@
 2610	The Hunchback of Notre-Dame (Hugo)
 
 # --- Zola ---
-5765	Germinal (Zola)
+56528	Germinal (Zola)
 5250	Nana (Zola)

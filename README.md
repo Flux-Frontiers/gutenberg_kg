@@ -134,8 +134,11 @@ kgrag synthesize "How do the Stoics and Russian novelists differ on suffering an
 3. **FLUX.2-Klein generation** — a 4-bit quantised FLUX.2-Klein model renders the image in ~15–22 seconds.
 
 ```bash
-# 1. Install the imagine extras (mflux + fastmcp)
+# 1. Install the project (CLI-first workflow)
 pip install -e ".[imagine]"
+
+# Optional: MCP server support
+pip install -e ".[mcp]"
 
 # 2. Start oMLX on port 8080 with a Qwen3 model (for VLM rewrite)
 omlx serve mlx-community/Qwen3-30B-A3B-Instruct-2507-MLX-4bit --port 8080
@@ -150,7 +153,7 @@ gutenkg imagine "the Great Fire of London at night, oil painting"
 gutenkg imagine --query "plague in London" --book pepys --corpus-only
 ```
 
-The same pipeline is available as an MCP tool (`corpus_imagine`) for use directly in Claude Code chat — ask *"Create an image of the Great Fire based on Pepys' description"* and the tool handles retrieval, rewriting, and generation automatically.
+The same pipeline is available as an MCP tool (`corpus_imagine`) for use directly in Claude Code chat when installed with `.[mcp]` — ask *"Create an image of the Great Fire based on Pepys' description"* and the tool handles retrieval, rewriting, and generation automatically.
 
 For the full options reference see [`docs/CHEATSHEET.md § Corpus-Grounded Image Generation`](docs/CHEATSHEET.md).
 

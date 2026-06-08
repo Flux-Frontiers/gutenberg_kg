@@ -8,6 +8,241 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Fixed
+
+- **8 corpus books contained completely wrong text due to bad Gutenberg IDs** — catalog
+  files held incorrect PG IDs that caused `gutenkg download` to fetch entirely different
+  books. Affected titles:
+
+  | Book | Wrong ID (fetched) | Correct ID |
+  |---|---|---|
+  | Flatland (Abbott) | 11 (Alice in Wonderland) | 201 |
+  | A Princess of Mars (Burroughs) | 10662 (The Night Land) | 62 |
+  | At the Earth's Core (Burroughs) | 62 (mislabeled; was Princess of Mars) | 123 |
+  | The First Men in the Moon (Wells) | 18857 (Journey to Centre of Earth) | 1013 |
+  | The Food of the Gods (Wells) | 1635 (Ion, Plato) | 11696 |
+  | The Sea-Wolf (London) | 1608 (La Dame aux Camélias) | 1074 |
+  | Germinal (Zola) | 5765 (Insectivorous Plants, Darwin) | 56528 |
+  | On the Eve (Turgenev) | 11571 (Mr. Punch's History of WWI) | 6902 |
+
+  All 5 catalog files corrected (`science-fiction.txt`, `science-fiction-additions.txt`,
+  `american-literature.txt`, `french-literature.txt`, `russian-literature.txt`). Books
+  re-downloaded with correct IDs; stale `.dockg/` per-book indices wiped and rebuilt via
+  `gutenkg ingest` across all 4 affected genres (8 rebuilt, 59 skipped, 0 failed).
+
+- **`scripts/regenerate_corpus_doc.py`** — refactored `main()` to extract `_collect_rows()`
+  and `_render()` helpers; narrowed `except Exception` to `except ImportError` in
+  `_gutenkg_version()`; fixed `import-outside-toplevel` lint suppression comment.
+
+- **`docs/CORPUS.md`** — regenerated with provenance block (script, version, timestamp,
+  host, elapsed time) at top and as an HTML comment at the bottom.
+
+### Added
+
+- **`gutenkg imagine --endpoint` option** — new CLI flag to specify the image
+  server base URL at runtime. Falls back to `GUTENKG_IMAGE_ENDPOINT` env var;
+  raises `UsageError` if neither is set.
+
+### Changed
+
+- **`imagine-local` extra removed** — `mflux` and its heavy ML dependencies
+  (accelerate, mlx, sentencepiece, opencv-python, piexif, twine, etc.) have
+  been dropped from `pyproject.toml` and `poetry.lock`. Local Apple Silicon
+  generation was incompatible with the KG embeddings `transformers<4.57` pin.
+  Image generation now exclusively targets the `mflux-serve` HTTP endpoint.
+
+- **`gutenkg imagine` now requires an HTTP endpoint** — `cmd_imagine.py`
+  replaces the local `image_gen.generate()` call with
+  `image_gen.generate_via_server(server_url=endpoint, …)`. The previous
+  `mflux` import fallback (with `sys.exit(1)`) is removed.
+
+- **`GUTENKG_IMAGE_ENDPOINT` is now the canonical image endpoint env var** —
+  `docker/.env.example` and `docker/docker-compose.yml` updated; `IMAGE_ENDPOINT`
+  kept as a backward-compatible alias in Compose so existing deployments are
+  unaffected.
+
+- **`kg-rag` dependency moved from GitHub source to PyPI** — `pyproject.toml`
+  now pins `kg-rag>=0.9.1` from PyPI; the `git+https://github.com/…` source
+  reference is removed. `poetry.lock` updated accordingly.
+
+- **Makefile: `start` added as alias for `up`** — `make start` and `make up`
+  both launch the worker + chat Docker stack.
+
+- **README install instructions simplified** — `pip install -e ".[imagine]"` is
+  now the correct incantation; references to the removed `imagine-local` extra
+  have been removed.
+
+- **`.gitignore`: `.vscode/` excluded** — IDE settings directory added to the
+  ignore list so editor-local configs are no longer tracked.
+
+- **`.vscode/settings.json`: pytest args simplified** — removed `--tb=short`
+  from `python.testing.pytestArgs`.
+
+---
+
+### Added
+
+- **`kgmodule-utils[synthesis]` integration (v0.4.2)** — both `docker/handler.py`
+  and `runpod/handler.py` now delegate synthesis and image generation to `kg_utils`
+  rather than maintaining inline implementations:
+  - `kg_utils.synthesis.TextSynthesizer` / `text_synthesizer_from_env()` — LLM text
+    synthesis (`list_models`, `synthesize_rag`, `rewrite_for_image`) across oMLX,
+    Ollama, and OpenAI backends; replaces inline `_synthesize()` / `_list_models()`.
+  - `kg_utils.synthesis.ImageSynthesizer` / `image_synthesizer_from_env()` — image
+    generation proxy (mflux-serve HTTP); replaces inline `_imagine()`.
+  - `kg_utils.retrieval.hit_to_dict` + `attach_content_by_sqlite` — shared hit
+    serialization and SQLite content-fetching; deduplicates code across both handlers.
+  - `kg_utils.worker.WorkerClient` — HTTP client abstraction used by `chat.py`
+    for `query`, `rewrite`, `imagine`, and `list_models`; replaces ad-hoc `httpx`
+    calls and inline JSON error parsing.
+  - `kg_utils.worker.handle_aux_ops` — dispatches `op=models` and `op=imagine`
+    requests in the Docker handler.
+
+- **Multi-provider synthesis** — chat UI sidebar shows a "Provider" dropdown
+  (oMLX / Ollama / OpenAI) when synthesis is enabled. The selected backend is
+  forwarded to the worker on every `query`, `rewrite`, and `imagine` call.
+  Per-request backend routing in `handler.py` via `_synth_for_backend()` /
+  `_image_for_backend()`.
+
+- **`OLLAMA_ENDPOINT` and `OPENAI_API_KEY` env vars** — added to
+  `docker/.env.example` and `docker/docker-compose.yml`. `OLLAMA_ENDPOINT`
+  defaults to `http://host.docker.internal:11434/v1`; `OPENAI_API_KEY` empty
+  by default.
+
+- **`imagine-local` optional-dependency group** — `mflux>=0.17.5` split out from
+  the `imagine` extra to avoid version conflicts between mflux (`transformers>=5.x`)
+  and KG embeddings (`<4.57`). Install with `pip install -e ".[imagine,imagine-local]"`.
+
+- **`docker/requirements-image.txt`** — new isolated requirements file for the
+  mflux image server, used by `make image-server` to populate `.venv-image`.
+
+- **`scripts/test_synthesis.py`** — standalone smoke test for `kg_utils.synthesis`
+  backends. Tests `list_models`, `synthesize_rag`, and `rewrite_for_image` across
+  oMLX (env default), Ollama, and OpenAI independently; connection failures are
+  reported and the script continues to the next backend.
+
+- **`docs/KG_UTILS_EXTRACTION_PLAN.md`** — design document for the `kg_utils`
+  synthesis/retrieval/worker extraction: module layout, interface contracts, and
+  migration plan.
+
+- **`docker/image_gen.py` — standalone image generation module in Docker** — new
+  file copied directly into `/app/image_gen.py` inside the container (no
+  `gutenberg_kg` package import required). Provides four entry points:
+  - `generate()` — local Flux2Klein generation on Apple Silicon via mflux.
+  - `generate_via_server()` — HTTP client for a running mflux-serve instance;
+    requires only `httpx` + `pillow`, safe from Linux containers.
+  - `generate_auto()` — resolves server URL from `IMAGE_ENDPOINT` env var,
+    falls back to local generation.
+  - `vlm_rewrite()` — rewrites historical corpus text into a visual image-generation
+    prompt via an OpenAI-compatible VLM; strips `<think>` blocks before returning.
+
+- **RunPod handler: `corpus` routing** — `handler()` now accepts a `corpus` field
+  (`all`, `gutenberg`, or any registered genre slug). Genre queries apply 6× query
+  expansion and post-filter by genre tag from the enriched catalog, matching the
+  docker handler behavior.
+
+- **RunPod handler: `op=models` operation** — pass `{"input": {"op": "models"}}`
+  to list models available at the configured vLLM endpoint without running a query.
+
+- **RunPod handler: `HANDLER_SECRET` authentication** — optional shared secret; when
+  `HANDLER_SECRET` is set, all requests must include `{"secret": "<value>"}`.
+
+- **RunPod handler: `_attach_content()` and `_enrich_catalog()`** — post-processing
+  pipeline attaches full node text from SQLite (by `node_id`) and joins
+  author/title/genre from `catalog.json` onto each hit before synthesis.
+
+- **RunPod handler: `_load_catalog()`** — loads `catalog.json` sidecar at startup
+  for O(1) metadata enrichment on every request.
+
+- **RunPod handler: `SYNTH_MAX_K` env var** — caps passages fed to synthesis
+  (default 12), preventing context-window overflows for large `k` queries.
+
+- **RunPod handler: timing fields in response** — `search_ms` and `synthesis_ms`
+  added to every response payload.
+
+- **Chat UI: global resolution control** — sidebar "Image" section with a
+  Preview / Standard / Full selector (replacing the per-result inline aspect-ratio
+  selectbox). Each tier maps six aspect ratios to pixel dimensions
+  (Preview ~768 px wide, Standard ~1152 px wide, Full ~1536 px wide).
+
+- **Chat UI: timing display** — `search_ms`, `synthesis_ms`, VLM rewrite latency,
+  and image generation latency are shown in captions so pipeline bottlenecks are
+  immediately visible.
+
+- **`.env.example`: oMLX and Ollama setup instructions** — rewritten with
+  step-by-step sections for the two recommended local LLM backends (oMLX on Apple
+  Silicon and Ollama cross-platform), including port notes and API-key guidance.
+
+### Changed
+
+- **`docker/image_gen.py` simplified** — `vlm_rewrite()`, `generate_via_server()`,
+  and `generate_auto()` removed; those paths now live in `kg_utils.synthesis`.
+  The module is now local Apple Silicon generation only (`generate()` via mflux),
+  used exclusively by `docker/image_server.py`.
+
+- **`make image-server`** — now creates an isolated `.venv-image` virtual environment
+  and installs `docker/requirements-image.txt` before starting `image_server.py`,
+  preventing mflux/transformers version conflicts with the main project venv.
+
+- **Chat UI: Save/Render buttons moved to sidebar** — "💾 Save result" and
+  "🎨 Render response" now operate on the most recent result from the sidebar
+  rather than appearing inline per result card. Image generation and VLM rewrite
+  route through `_imagine_via_worker()` and `_rewrite_via_worker()` (no direct
+  `image_gen` or `openai` imports in `chat.py`).
+
+- **`VLLM_ENDPOINT_URL` default now includes `/v1` suffix** — updated in
+  `docker/.env.example` and `docker/docker-compose.yml`
+  (`http://host.docker.internal:8080` → `http://host.docker.internal:8080/v1`).
+
+- **`kgmodule-utils` bumped to `[synthesis]>=0.4.2`** — `pyproject.toml`
+  dependency updated from `>=0.2.4` (no extras) to enable `kg_utils.synthesis`,
+  `kg_utils.retrieval`, and `kg_utils.worker`. Build arg
+  `KGMODULE_UTILS_VERSION: 0.4.2` added to `docker-compose.yml`.
+
+- **`.gitignore` streamlined** — removed framework-specific boilerplate (Django,
+  Flask, Scrapy, PyBuilder, Celery, SageMath, pixi, Marimo, LaTeX, Cursor,
+  Abstra). Added `.claude/` and `.venv**` to project-local excludes.
+
+- **`docker/Dockerfile`** — `COPY docker/image_gen.py /app/image_gen.py` added so
+  the standalone module is available at `/app/image_gen.py` inside the container.
+  `chat.py` and `image_server.py` both import it via a `sys.path` insert rather
+  than the `gutenberg_kg` package.
+
+- **`IMAGE_ENDPOINT` env var standardised** — renamed from `GUTENKG_IMAGE_ENDPOINT`
+  across `docker/chat.py`, `docker/docker-compose.yml`, `docker/handler.py`, and
+  the `.env.example`. `IMAGE_STEPS` (not `GUTENKG_IMAGE_STEPS`) is now the
+  canonical name in `image_server.py` as well.
+
+- **`docker-compose.yml`: `extra_hosts` added** — `host.docker.internal:host-gateway`
+  added to both `gutenberg-worker` and `gutenberg-chat` services so host services
+  (oMLX on :8080, mflux-serve on :8090) are reachable from inside the container on
+  Linux Docker hosts.
+
+- **Default synthesis model updated** — `Qwen3-8B-MLX-4bit` → `Qwen3-4B-Instruct-2507-MLX-8bit`
+  in `docker/handler.py`, `docker/docker-compose.yml`, and `docker/.env.example`.
+
+- **RunPod handler `_synthesize()` reworked** — uses full node content instead of
+  summaries; builds richer context headers (genre | author | title); applies
+  `SYNTH_MAX_K` cap; supports per-request `model` override; disables thinking mode
+  (`think: false`, `enable_thinking: false`); strips `<think>` blocks from output;
+  uses `VLLM_API_KEY` (falling back to `RUNPOD_API_KEY`); returns `None` on error
+  instead of raising.
+
+- **RunPod handler: `RUNPOD_API_KEY` → `VLLM_API_KEY`** — module-level constant
+  renamed; legacy `RUNPOD_API_KEY` env var retained as fallback for backward compat.
+
+- **`runpod/test_local.py`** — `_add_sibling_src_to_path()` helper auto-discovers
+  sibling `kgrag/src` trees so the smoke test works outside Docker. Added
+  `op=models` and invalid-corpus test cases. Import error surfaces a clear message
+  with `pip install` hints.
+
+### Fixed
+
+- **Chat UI `_query_worker()` error parsing** — error responses from the worker may
+  carry `{"error": "<json-string>"}` or `{"error": {...}}`. Parser now handles both
+  forms (JSON-decode string first, then fall through to dict extraction), preventing
+  an `AttributeError: 'str' object has no attribute 'get'` crash on worker errors.
+
 ### Added
 
 - **`scripts/bench_synthesis.py` — synthesis latency benchmark** — standalone script

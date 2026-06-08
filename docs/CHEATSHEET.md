@@ -212,7 +212,7 @@ Apple Silicon:
 
 ### Installation
 
-#### 1. Python extras
+#### 1. Python install
 
 ```bash
 # pip
@@ -220,11 +220,13 @@ pip install -e ".[imagine]"
 
 # Poetry
 poetry install --extras imagine
+
+# Optional: MCP server support (Claude Code / Cursor)
+pip install -e ".[mcp]"
 ```
 
-This adds `mflux` (MLX image generation) and `fastmcp` (MCP server) to the
-environment. Everything else (`openai`, `pillow`) is already in the base
-install.
+This installs the CLI image workflow dependencies. MCP server dependencies are
+optional and installed via `.[mcp]`.
 
 #### 2. oMLX — local VLM server
 
@@ -265,10 +267,15 @@ huggingface-cli download mlx-community/flux2-klein-4b-4bit
 
 No HuggingFace account or license acceptance is required for this model.
 
-#### 4. MCP server (Claude Code / Cursor)
+#### 4. MCP server (optional — Claude Code / Cursor)
 
-To expose `generate_image` and `corpus_imagine` as MCP tools, add the
+To expose `generate_image` and `corpus_imagine` as MCP tools, first install
+the MCP extra, then add the
 `gutenkg` server to your `.mcp.json` in the repo root:
+
+```bash
+pip install -e ".[mcp]"
+```
 
 ```json
 {

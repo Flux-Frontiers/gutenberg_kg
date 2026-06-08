@@ -11,9 +11,9 @@
 84	Frankenstein
 5230	The Invisible Man
 1658	The Island of Doctor Moreau
-18857	The First Men in the Moon
-10662	A Princess of Mars
-11	Flatland
+1013	The First Men in the Moon
+62	A Princess of Mars
+201	Flatland
 139	The Lost World
 
 # --- H.P. Lovecraft ---
@@ -24,5 +24,5 @@
 50133	The Dunwich Horror
 
 # --- Edgar Rice Burroughs ---
-62	At the Earth's Core
+123	At the Earth's Core
 64	The Gods of Mars

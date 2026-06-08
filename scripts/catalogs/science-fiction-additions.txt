@@ -8,7 +8,7 @@
 # Island of Doctor Moreau, First Men in Moon, Princess of Mars, Flatland,
 # Lost World, Lovecraft x5, At Earth's Core, Gods of Mars, Burroughs x2
 
-1635	The Food of the Gods (Wells)
+11696	The Food of the Gods (Wells)
 2038	When the World Screamed (Doyle)
 3935	A Journey to Other Worlds (Astor)
 605	Pellucidar (Burroughs)

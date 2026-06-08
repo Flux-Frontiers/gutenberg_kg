@@ -8,7 +8,7 @@
 
 ## Author
 
-- **Name**: A. Maynard (Anna Maynard) Barbour
+- **Name**: Isabella Bird
 - **Died**: 1941
 - **Wikipedia**: https://en.wikipedia.org/wiki/Anna_Maynard_Barbour
 - **Gutenberg Agent ID**: 841

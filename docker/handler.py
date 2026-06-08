@@ -52,12 +52,19 @@ from __future__ import annotations
 
 import json
 import os
-import sqlite3
 import time
 import uuid
-from collections import defaultdict
 from datetime import UTC, datetime
 from pathlib import Path
+
+from kg_utils.retrieval import attach_content_by_sqlite, hit_to_dict
+from kg_utils.synthesis import (
+    image_synth_for_backend,
+    image_synthesizer_from_env,
+    text_synth_for_backend,
+    text_synthesizer_from_env,
+)
+from kg_utils.worker import handle_aux_ops
 
 import runpod
 
@@ -67,13 +74,8 @@ import runpod
 
 GUTENBERG_ROOT = Path(os.environ.get("GUTENBERG_ROOT", "/workspace/gutenberg"))
 REGISTRY_PATH = Path("/tmp/gutenberg_worker/registry.sqlite")
-VLLM_ENDPOINT = os.environ.get("VLLM_ENDPOINT_URL", "")
-VLLM_API_KEY = os.environ.get("VLLM_API_KEY", "")
-VLLM_MODEL = os.environ.get("VLLM_MODEL", "Qwen3-8B-MLX-4bit")
 SYNTH_MAX_K = int(os.environ.get("SYNTH_MAX_K", "12"))
 EMBED_MODEL = os.environ.get("EMBED_MODEL", "BAAI/bge-small-en-v1.5")
-IMAGE_ENDPOINT = os.environ.get("IMAGE_ENDPOINT", "")  # base URL of mflux-serve
-IMAGE_STEPS = int(os.environ.get("IMAGE_STEPS", "4"))
 HANDLER_SECRET = os.environ.get("HANDLER_SECRET", "")
 
 _DOCKG_SQLITE = GUTENBERG_ROOT / ".dockg" / "graph.sqlite"
@@ -132,7 +134,6 @@ _DIARY_META: dict[str, dict] = {
         "genre": "diaries",
     },
 }
-
 
 # ---------------------------------------------------------------------------
 # Startup
@@ -257,7 +258,24 @@ print("[startup] initialising KGRAG orchestrator ...")
 from kg_rag.orchestrator import KGRAG  # noqa: E402
 
 _kgrag = KGRAG(registry_path=REGISTRY_PATH, embedder=_embedder)
+
+print("[startup] initialising synthesis backends ...")
+_text_synth = text_synthesizer_from_env()
+_image_synth = image_synthesizer_from_env()
 print("[startup] ready")
+
+
+# ---------------------------------------------------------------------------
+# Per-request backend factory
+# ---------------------------------------------------------------------------
+
+
+def _synth_for_backend(backend_str: str):
+    return text_synth_for_backend(backend_str, _text_synth)
+
+
+def _image_for_backend(backend_str: str):
+    return image_synth_for_backend(backend_str, _image_synth)
 
 
 # ---------------------------------------------------------------------------
@@ -266,46 +284,12 @@ print("[startup] ready")
 
 
 def _hit_to_dict(hit) -> dict:
-    from kg_rag.primitives import KGKind
-
-    return {
-        "kg_name": hit.kg_name,
-        "kg_kind": str(hit.kg_kind),
-        "node_id": hit.node_id,
-        "name": hit.name,
-        "kind": hit.kind,
-        "score": round(float(hit.score), 4),
-        "summary": hit.summary,
-        "source_path": hit.source_path,
-        "timestamp": hit.name if hit.kg_kind == KGKind.DIARY else None,
-    }
+    return hit_to_dict(hit, include_diary_timestamp=True)
 
 
 def _attach_content(hits: list[dict]) -> None:
     """Fetch full node text from the appropriate SQLite for each hit."""
-    by_kg: dict[str, list[dict]] = defaultdict(list)
-    for h in hits:
-        by_kg[h.get("kg_name", "")].append(h)
-
-    for kg_name, kg_hits in by_kg.items():
-        db_path = _KG_SQLITE.get(kg_name)
-        if not db_path or not db_path.exists():
-            continue
-        ids = [h["node_id"] for h in kg_hits if h.get("node_id")]
-        if not ids:
-            continue
-        text_by_id: dict[str, str] = {}
-        try:
-            with sqlite3.connect(str(db_path)) as con:
-                placeholders = ",".join("?" * len(ids))
-                for nid, text in con.execute(
-                    f"SELECT id, text FROM nodes WHERE id IN ({placeholders})", ids
-                ):
-                    text_by_id[nid] = text or ""
-        except Exception:  # noqa: BLE001
-            continue
-        for h in kg_hits:
-            h["content"] = text_by_id.get(h["node_id"], "")
+    attach_content_by_sqlite(hits, _KG_SQLITE)
 
 
 def _enrich_catalog(hits: list[dict]) -> None:
@@ -329,145 +313,6 @@ def _enrich_catalog(hits: list[dict]) -> None:
 
 
 # ---------------------------------------------------------------------------
-# Synthesis
-# ---------------------------------------------------------------------------
-
-
-def _list_models() -> list[str]:
-    if not VLLM_ENDPOINT:
-        return []
-    import httpx
-
-    headers = {"Authorization": f"Bearer {VLLM_API_KEY}"} if VLLM_API_KEY else {}
-    try:
-        resp = httpx.get(
-            f"{VLLM_ENDPOINT}/v1/models",
-            headers=headers,
-            timeout=httpx.Timeout(connect=5.0, read=15.0, write=5.0, pool=5.0),
-        )
-        resp.raise_for_status()
-        return [m["id"] for m in resp.json().get("data", []) if m.get("id")]
-    except Exception:  # noqa: BLE001
-        return []
-
-
-def _synthesize(query: str, hits: list[dict], model: str | None = None) -> str | None:
-    if not VLLM_ENDPOINT:
-        return None
-    import re
-
-    import httpx
-
-    snippets = [h for h in hits[:SYNTH_MAX_K] if h.get("content")]
-    if not snippets:
-        return None
-
-    ctx_parts = []
-    for s in snippets:
-        genre = s.get("genre", s.get("kg_kind", ""))
-        author = s.get("author") or ""
-        title = s.get("title") or s.get("name") or ""
-        header = " · ".join(x for x in [genre, author, title] if x)
-        ctx_parts.append(f"[{header}]\n{s['content'].strip()}")
-
-    ctx = "\n\n".join(ctx_parts)
-
-    headers = {"Authorization": f"Bearer {VLLM_API_KEY}"} if VLLM_API_KEY else {}
-    try:
-        resp = httpx.post(
-            f"{VLLM_ENDPOINT}/v1/chat/completions",
-            headers=headers,
-            json={
-                "model": model or VLLM_MODEL,
-                "think": False,
-                "chat_template_kwargs": {"enable_thinking": False},
-                "messages": [
-                    {
-                        "role": "system",
-                        "content": (
-                            "You are a literary guide to the Project Gutenberg corpus. "
-                            "Answer the question using ONLY the provided source passages. "
-                            "Do NOT use any prior knowledge — if something is in the passages, "
-                            "report it; if it is not in the passages, say so. "
-                            "Never contradict or override what the passages say based on what "
-                            "you believe to be true. Be concise and specific. "
-                            "Cite the author and work when relevant."
-                        ),
-                    },
-                    {
-                        "role": "user",
-                        "content": f"Source passages:\n{ctx}\n\nQuestion: {query}",
-                    },
-                ],
-                "max_tokens": 2048,
-            },
-            timeout=httpx.Timeout(connect=10.0, read=600.0, write=60.0, pool=10.0),
-        )
-        resp.raise_for_status()
-        content = resp.json()["choices"][0]["message"]["content"]
-        content = re.sub(r"<think>.*?</think>", "", content, flags=re.DOTALL).strip()
-        return content or None
-    except Exception:  # noqa: BLE001
-        return None
-
-
-# ---------------------------------------------------------------------------
-# Image generation (via remote mflux-serve)
-# ---------------------------------------------------------------------------
-
-_ASPECT_SIZES: dict[str, tuple[int, int]] = {
-    "1:1": (1024, 1024),
-    "3:2": (1536, 1024),
-    "2:3": (1024, 1536),
-    "16:9": (1536, 864),
-    "9:16": (864, 1536),
-    "4:3": (1365, 1024),
-    "3:4": (1024, 1365),
-}
-
-
-def _imagine(inp: dict) -> dict:
-    """Handle op=imagine — proxy the prompt to IMAGE_ENDPOINT (mflux-serve)."""
-    if not IMAGE_ENDPOINT:
-        return {
-            "error": "IMAGE_ENDPOINT not configured — set it to the base URL of a running mflux-serve"
-        }
-
-    prompt = (inp.get("prompt") or "").strip()
-    if not prompt:
-        return {"error": "imagine requires a non-empty 'prompt'"}
-
-    aspect = inp.get("aspect_ratio", "3:2")
-    steps = int(inp.get("steps", IMAGE_STEPS))
-    seed = inp.get("seed")
-
-    width, height = _ASPECT_SIZES.get(aspect, _ASPECT_SIZES["3:2"])
-    payload: dict = {
-        "prompt": prompt,
-        "n": 1,
-        "size": f"{width}x{height}",
-        "num_inference_steps": steps,
-        "response_format": "b64_json",
-    }
-    if seed is not None:
-        payload["seed"] = int(seed)
-
-    try:
-        import httpx
-
-        resp = httpx.post(
-            IMAGE_ENDPOINT.rstrip("/") + "/v1/images/generations",
-            json=payload,
-            timeout=httpx.Timeout(connect=5.0, read=300.0, write=10.0, pool=5.0),
-        )
-        resp.raise_for_status()
-        b64 = resp.json()["data"][0]["b64_json"]
-        return {"image_b64": b64, "prompt": prompt, "aspect_ratio": aspect}
-    except Exception as exc:  # noqa: BLE001
-        return {"error": f"image server error: {exc}"}
-
-
-# ---------------------------------------------------------------------------
 # Handler
 # ---------------------------------------------------------------------------
 
@@ -478,11 +323,9 @@ def handler(job: dict) -> dict:
     if HANDLER_SECRET and inp.get("secret") != HANDLER_SECRET:
         return {"error": "unauthorized"}
 
-    if inp.get("op") == "models":
-        return {"models": _list_models(), "default": VLLM_MODEL}
-
-    if inp.get("op") == "imagine":
-        return _imagine(inp)
+    aux_result = handle_aux_ops(inp, _synth_for_backend, _image_for_backend)
+    if aux_result is not None:
+        return aux_result
 
     query = inp.get("query", "").strip()
     corpus = inp.get("corpus", "all")
@@ -553,9 +396,10 @@ def handler(job: dict) -> dict:
 
     synthesis = None
     synthesis_ms: float | None = None
+    active_synth = _synth_for_backend(inp.get("backend", ""))
     if synthesize:
         t0_synth = time.perf_counter()
-        synthesis = _synthesize(query, hits, model)
+        synthesis = active_synth.synthesize_rag(query, hits, model=model, max_k=SYNTH_MAX_K)
         synthesis_ms = (time.perf_counter() - t0_synth) * 1000
         print(f"[query] synthesis returned in {synthesis_ms:.0f}ms")
 
@@ -568,7 +412,7 @@ def handler(job: dict) -> dict:
         "search_ms": round(search_ms),
         "synthesis": synthesis,
         "synthesis_ms": round(synthesis_ms) if synthesis_ms is not None else None,
-        "model": (model or VLLM_MODEL) if synthesize else None,
+        "model": (model or active_synth._cfg.resolved_model()) if synthesize else None,
     }
 
 

@@ -17,6 +17,8 @@ services:
     build:
       context: ..
       dockerfile: docker/Dockerfile
+      args:
+        KGMODULE_UTILS_VERSION: 0.4.2
     command: python handler.py --rp_serve_api --rp_api_host 0.0.0.0
     ports:
       - "8000:8000"
@@ -26,10 +28,18 @@ services:
       HANDLER_SECRET: ${HANDLER_SECRET:-}
       # Synthesis via a host LLM server (optional — omit to disable).
       # Defaults target oMLX on :8080; see docker/.env.example.
-      VLLM_ENDPOINT_URL: ${VLLM_ENDPOINT_URL:-http://host.docker.internal:8080}
-      VLLM_MODEL: ${VLLM_MODEL:-Qwen3-8B-MLX-4bit}
+      VLLM_ENDPOINT_URL: ${VLLM_ENDPOINT_URL:-http://host.docker.internal:8080/v1}
+      VLLM_MODEL: ${VLLM_MODEL:-Qwen3-4B-Instruct-2507-MLX-8bit}
       VLLM_API_KEY: ${VLLM_API_KEY:-}
+      OLLAMA_ENDPOINT: ${OLLAMA_ENDPOINT:-http://host.docker.internal:11434/v1}
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      # Canonical image endpoint variable.
+      GUTENKG_IMAGE_ENDPOINT: ${GUTENKG_IMAGE_ENDPOINT:-http://host.docker.internal:8090}
+      # Compatibility alias for components still reading IMAGE_ENDPOINT.
+      IMAGE_ENDPOINT: ${GUTENKG_IMAGE_ENDPOINT:-http://host.docker.internal:8090}
       IMAGE_STEPS: ${IMAGE_STEPS:-4}
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
     restart: unless-stopped
 
   # Optional Streamlit chat UI — launch with:  docker compose --profile chat up
@@ -45,7 +55,10 @@ services:
       KGRAG_ENDPOINT: http://gutenberg-worker:8000
       # mflux-server runs on the host Mac; host.docker.internal bridges to it.
       GUTENKG_IMAGE_ENDPOINT: ${GUTENKG_IMAGE_ENDPOINT:-http://host.docker.internal:8090}
+      IMAGE_ENDPOINT: ${GUTENKG_IMAGE_ENDPOINT:-http://host.docker.internal:8090}
       IMAGE_STEPS: ${IMAGE_STEPS:-4}
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
     depends_on:
       - gutenberg-worker
     profiles:

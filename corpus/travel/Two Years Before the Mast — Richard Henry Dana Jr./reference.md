@@ -8,7 +8,7 @@
 
 ## Author
 
-- **Name**: George Eliot
+- **Name**: Richard Henry Dana Jr.
 - **Born**: 1819
 - **Died**: 1880
 - **Wikipedia**: https://en.wikipedia.org/wiki/George_Eliot

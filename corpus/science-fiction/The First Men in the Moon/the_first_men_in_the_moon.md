@@ -1,10543 +1,7631 @@
 # The First Men in the Moon
 
-**Jules Verne**
+**H. G. (Herbert George) Wells**
 
 ---
 
-### A JOURNEY TO THE CENTRE OF THE EARTH
-
-*By Jules Verne*
-
-[Redactor's Note: Journey to the Centre of the Earth is number
-V002 in the Taves and Michaluk numbering of the works of Jules
-Verne. First published in England by Griffith and Farran, 1871,
-this edition is not a translation at all but a complete re-write
-of the novel, with portions added and omitted, and names changed.
-The most reprinted version, it is entered into Project Gutenberg
-for reference purposes only. A better translation is _A Journey
-into the Interior of the Earth_ translated by Rev. F. A. Malleson,
-also available on Project Gutenberg.]
-
-## CHAPTER 1 MY UNCLE MAKES A GREAT DISCOVERY
-
-Looking back to all that has occurred to me since that eventful day, I
-am scarcely able to believe in the reality of my adventures. They were
-truly so wonderful that even now I am bewildered when I think of them.
-
-My uncle was a German, having married my mother's sister, an
-Englishwoman. Being very much attached to his fatherless nephew, he
-invited me to study under him in his home in the fatherland. This home
-was in a large town, and my uncle a professor of philosophy, chemistry,
-geology, mineralogy, and many other ologies.
-
-One day, after passing some hours in the laboratory--my uncle being
-absent at the time--I suddenly felt the necessity of renovating the
-tissues--<i>i.e.</i>, I was hungry, and was about to rouse up our old French
-cook, when my uncle, Professor Von Hardwigg, suddenly opened the street
-door, and came rushing upstairs.
-
-Now Professor Hardwigg, my worthy uncle, is by no means a bad sort of
-man; he is, however, choleric and original. To bear with him means to
-obey; and scarcely had his heavy feet resounded within our joint
-domicile than he shouted for me to attend upon him.
-
-"Harry--Harry--Harry--"
-
-I hastened to obey, but before I could reach his room, jumping three
-steps at a time, he was stamping his right foot upon the landing.
-
-"Harry!" he cried, in a frantic tone, "are you coming up?"
-
-Now to tell the truth, at that moment I was far more interested in the
-question as to what was to constitute our dinner than in any problem of
-science; to me soup was more interesting than soda, an omelette more
-tempting than arithmetic, and an artichoke of ten times more value than
-any amount of asbestos.
-
-But my uncle was not a man to be kept waiting; so adjourning therefore
-all minor questions, I presented myself before him.
-
-He was a very learned man. Now most persons in this category supply
-themselves with information, as peddlers do with goods, for the benefit
-of others, and lay up stores in order to diffuse them abroad for the
-benefit of society in general. Not so my excellent uncle, Professor
-Hardwigg; he studied, he consumed the midnight oil, he pored over heavy
-tomes, and digested huge quartos and folios in order to keep the
-knowledge acquired to himself.
-
-There was a reason, and it may be regarded as a good one, why my uncle
-objected to display his learning more than was absolutely necessary: he
-stammered; and when intent upon explaining the phenomena of the heavens,
-was apt to find himself at fault, and allude in such a vague way to sun,
-moon, and stars that few were able to comprehend his meaning. To tell
-the honest truth, when the right word would not come, it was generally
-replaced by a very powerful adjective.
-
-In connection with the sciences there are many almost unpronounceable
-names--names very much resembling those of Welsh villages; and my uncle
-being very fond of using them, his habit of stammering was not thereby
-improved. In fact, there were periods in his discourse when he would
-finally give up and swallow his discomfiture--in a glass of water.
-
-As I said, my uncle, Professor Hardwigg, was a very learned man; and I
-now add a most kind relative. I was bound to him by the double ties of
-affection and interest. I took deep interest in all his doings, and
-hoped some day to be almost as learned myself. It was a rare thing for
-me to be absent from his lectures. Like him, I preferred mineralogy to
-all the other sciences. My anxiety was to gain real <i>knowledge of the
-earth</i>. Geology and mineralogy were to us the sole objects of life, and
-in connection with these studies many a fair specimen of stone, chalk,
-or metal did we break with our hammers.
-
-Steel rods, loadstones, glass pipes, and bottles of various acids were
-oftener before us than our meals. My uncle Hardwigg was once known to
-classify six hundred different geological specimens by their weight,
-hardness, fusibility, sound, taste, and smell.
-
-He corresponded with all the great, learned, and scientific men of the
-age. I was, therefore, in constant communication with, at all events the
-letters of, Sir Humphry Davy, Captain Franklin, and other great men.
-
-But before I state the subject on which my uncle wished to confer with
-me, I must say a word about his personal appearance. Alas! my readers
-will see a very different portrait of him at a future time, after he has
-gone through the fearful adventures yet to be related.
-
-My uncle was fifty years old; tall, thin, and wiry. Large spectacles
-hid, to a certain extent, his vast, round, and goggle eyes, while his
-nose was irreverently compared to a thin file. So much indeed did it
-resemble that useful article, that a compass was said in his presence to
-have made considerable N (Nasal) deviation.
-
-The truth being told, however, the only article really attracted to my
-uncle's nose was tobacco.
-
-Another peculiarity of his was, that he always stepped a yard at a time,
-clenched his fists as if he were going to hit you, and was, when in one
-of his peculiar humors, very far from a pleasant companion.
-
-It is further necessary to observe that he lived in a very nice house,
-in that very nice street, the Konigstrasse at Hamburg. Though lying in
-the centre of a town, it was perfectly rural in its aspect--half wood,
-half bricks, with old-fashioned gables--one of the few old houses spared
-by the great fire of 1842.
-
-When I say a nice house, I mean a handsome house--old, tottering, and
-not exactly comfortable to English notions: a house a little off the
-perpendicular and inclined to fall into the neighboring canal; exactly
-the house for a wandering artist to depict; all the more that you could
-scarcely see it for ivy and a magnificent old tree which grew over the
-door.
-
-My uncle was rich; his house was his own property, while he had a
-considerable private income. To my notion the best part of his
-possessions was his god-daughter, Gretchen. And the old cook, the young
-lady, the Professor and I were the sole inhabitants.
-
-I loved mineralogy, I loved geology. To me there was nothing like
-pebbles--and if my uncle had been in a little less of a fury, we should
-have been the happiest of families. To prove the excellent Hardwigg's
-impatience, I solemnly declare that when the flowers in the drawing-room
-pots began to grow, he rose every morning at four o'clock to make them
-grow quicker by pulling the leaves!
-
-Having described my uncle, I will now give an account of our interview.
-
-He received me in his study; a perfect museum, containing every natural
-curiosity that can well be imagined--minerals, however, predominating.
-Every one was familiar to me, having been catalogued by my own hand. My
-uncle, apparently oblivious of the fact that he had summoned me to his
-presence, was absorbed in a book. He was particularly fond of early
-editions, tall copies, and unique works.
-
-"Wonderful!" he cried, tapping his forehead. "Wonderful--wonderful!"
-
-It was one of those yellow-leaved volumes now rarely found on stalls,
-and to me it appeared to possess but little value. My uncle, however,
-was in raptures.
-
-He admired its binding, the clearness of its characters, the ease with
-which it opened in his hand, and repeated aloud, half a dozen times,
-that it was very, very old.
-
-To my fancy he was making a great fuss about nothing, but it was not my
-province to say so. On the contrary, I professed considerable interest
-in the subject, and asked him what it was about.
-
-"It is the Heims-Kringla of Snorre Tarleson," he said, "the celebrated
-Icelandic author of the twelfth century--it is a true and correct
-account of the Norwegian princes who reigned in Iceland."
-
-My next question related to the language in which it was written. I
-hoped at all events it was translated into German. My uncle was
-indignant at the very thought, and declared he wouldn't give a penny for
-a translation. His delight was to have found the original work in the
-Icelandic tongue, which he declared to be one of the most magnificent
-and yet simple idioms in the world--while at the same time its
-grammatical combinations were the most varied known to students.
-
-"About as easy as German?" was my insidious remark.
-
-My uncle shrugged his shoulders.
-
-"The letters at all events," I said, "are rather difficult of
-comprehension."
-
-"It is a Runic manuscript, the language of the original population of
-Iceland, invented by Odin himself," cried my uncle, angry at my
-ignorance.
-
-I was about to venture upon some misplaced joke on the subject, when a
-small scrap of parchment fell out of the leaves. Like a hungry man
-snatching at a morsel of bread the Professor seized it. It was about
-five inches by three and was scrawled over in the most extraordinary
-fashion.
-
-The lines shown here are an exact facsimile of what was written on the
-venerable piece of parchment--and have wonderful importance, as they
-induced my uncle to undertake the most wonderful series of adventures
-which ever fell to the lot of human beings.
-
-My uncle looked keenly at the document for some moments and then
-declared that it was Runic. The letters were similar to those in the
-book, but then what did they mean? This was exactly what I wanted to
-know.
-
-Now as I had a strong conviction that the Runic alphabet and dialect
-were simply an invention to mystify poor human nature, I was delighted
-to find that my uncle knew as much about the matter as I did--which was
-nothing. At all events the tremulous motion of his fingers made me think
-so.
-
-"And yet," he muttered to himself, "it is old Icelandic, I am sure of
-it."
-
-And my uncle ought to have known, for he was a perfect polyglot
-dictionary in himself. He did not pretend, like a certain learned
-pundit, to speak the two thousand languages and four thousand idioms
-made use of in different parts of the globe, but he did know all the
-more important ones.
-
-It is a matter of great doubt to me now, to what violent measures my
-uncle's impetuosity might have led him, had not the clock struck two,
-and our old French cook called out to let us know that dinner was on the
-table.
-
-"Bother the dinner!" cried my uncle.
-
-But as I was hungry, I sallied forth to the dining room, where I took up
-my usual quarters. Out of politeness I waited three minutes, but no sign
-of my uncle, the Professor. I was surprised. He was not usually so blind
-to the pleasure of a good dinner. It was the acme of German
-luxury--parsley soup, a ham omelette with sorrel trimmings, an oyster of
-veal stewed with prunes, delicious fruit, and sparkling Moselle. For the
-sake of poring over this musty old piece of parchment, my uncle forbore
-to share our meal. To satisfy my conscience, I ate for both.
-
-The old cook and housekeeper was nearly out of her mind. After taking so
-much trouble, to find her master not appear at dinner was to her a sad
-disappointment--which, as she occasionally watched the havoc I was
-making on the viands, became also alarm. If my uncle were to come to
-table after all?
-
-Suddenly, just as I had consumed the last apple and drunk the last glass
-of wine, a terrible voice was heard at no great distance. It was my
-uncle roaring for me to come to him. I made very nearly one leap of
-it--so loud, so fierce was his tone.
-
-## CHAPTER 2 THE MYSTERIOUS PARCHMENT
-
-"I Declare," cried my uncle, striking the table fiercely with his fist,
-"I declare to you it is Runic--and contains some wonderful secret, which
-I must get at, at any price."
-
-I was about to reply when he stopped me.
-
-"Sit down," he said, quite fiercely, "and write to my dictation."
-
-I obeyed.
-
-"I will substitute," he said, "a letter of our alphabet for that of the
-Runic: we will then see what that will produce. Now, begin and make no
-mistakes."
-
-The dictation commenced with the following incomprehensible result:
-
-mm.rnlls esruel seecJde
-sgtssmf unteief niedrke
-kt,samn atrateS Saodrrn
-emtnaeI nuaect  rrilSa
-Atvaar  .nscrc  ieaabs
-ccdrmi  eeutul  frantu
-dt,iac  oseibo  KediiY
-
-Scarcely giving me time to finish, my uncle snatched the document from
-my hands and examined it with the most rapt and deep attention.
-
-"I should like to know what it means," he said, after a long period.
-
-I certainly could not tell him, nor did he expect me to--his
-conversation being uniformly answered by himself.
-
-"I declare it puts me in mind of a cryptograph," he cried, "unless,
-indeed, the letters have been written without any real meaning; and yet
-why take so much trouble? Who knows but I may be on the verge of some
-great discovery?"
-
-My candid opinion was that it was all rubbish! But this opinion I kept
-carefully to myself, as my uncle's choler was not pleasant to bear. All
-this time he was comparing the book with the parchment.
-
-"The manuscript volume and the smaller document are written in different
-hands," he said, "the cryptograph is of much later date than the book;
-there is an undoubted proof of the correctness of my surmise. [An
-irrefragable proof I took it to be.] The first letter is a double M,
-which was only added to the Icelandic language in the twelfth
-century--this makes the parchment two hundred years posterior to the
-volume."
-
-The circumstances appeared very probable and very logical, but it was
-all surmise to me.
-
-"To me it appears probable that this sentence was written by some owner
-of the book. Now who was the owner, is the next important question.
-Perhaps by great good luck it may be written somewhere in the volume."
-
-With these words Professor Hardwigg took off his spectacles, and, taking
-a powerful magnifying glass, examined the book carefully.
-
-On the fly leaf was what appeared to be a blot of ink, but on
-examination proved to be a line of writing almost effaced by time. This
-was what he sought; and, after some considerable time, he made out these
-letters:
-
-"Arne Saknussemm!" he cried in a joyous and triumphant tone, "that is
-not only an Icelandic name, but of a learned professor of the sixteenth
-century, a celebrated alchemist."
-
-I bowed as a sign of respect.
-
-"These alchemists," he continued, "Avicenna, Bacon, Lully, Paracelsus,
-were the true, the only learned men of the day. They made surprising
-discoveries. May not this Saknussemm, nephew mine, have hidden on this
-bit of parchment some astounding invention? I believe the cryptograph to
-have a profound meaning--which I must make out."
-
-My uncle walked about the room in a state of excitement almost
-impossible to describe.
-
-"It may be so, sir," I timidly observed, "but why conceal it from
-posterity, if it be a useful, a worthy discovery?"
-
-"Why--how should I know? Did not Galileo make a secret of his
-discoveries in connection with Saturn? But we shall see. Until I
-discover the meaning of this sentence I will neither eat nor sleep."
-
-"My dear uncle--" I began.
-
-"Nor you neither," he added.
-
-It was lucky I had taken double allowance that day.
-
-"In the first place," he continued, "there must be a clue to the
-meaning. If we could find that, the rest would be easy enough."
-
-I began seriously to reflect. The prospect of going without food and
-sleep was not a promising one, so I determined to do my best to solve
-the mystery. My uncle, meanwhile, went on with his soliloquy.
-
-"The way to discover it is easy enough. In this document there are one
-hundred and thirty-two letters, giving seventy-nine consonants to
-fifty-three vowels. This is about the proportion found in most southern
-languages, the idioms of the north being much more rich in consonants.
-We may confidently predict, therefore, that we have to deal with a
-southern dialect."
-
-Nothing could be more logical.
-
-"Now," said Professor Hardwigg, "to trace the particular language."
-
-"As Shakespeare says, 'that is the question,"' was my rather satirical
-reply.
-
-"This man Saknussemm," he continued, "was a very learned man: now as he
-did not write in the language of his birthplace, he probably, like most
-learned men of the sixteenth century, wrote in Latin. If, however, I
-prove wrong in this guess, we must try Spanish, French, Italian, Greek,
-and even Hebrew. My own opinion, though, is decidedly in favor of
-Latin."
-
-This proposition startled me. Latin was my favorite study, and it seemed
-sacrilege to believe this gibberish to belong to the country of Virgil.
-
-"Barbarous Latin, in all probability," continued my uncle, "but still
-Latin."
-
-"Very probably," I replied, not to contradict him.
-
-"Let us see into the matter," continued my uncle; "here you see we have
-a series of one hundred and thirty-two letters, apparently thrown
-pell-mell upon paper, without method or organization. There are words
-which are composed wholly of consonants, such as <i>mm.rnlls</i>, others
-which are nearly all vowels, the fifth, for instance, which is unteief,
-and one of the last oseibo. This appears an extraordinary combination.
-Probably we shall find that the phrase is arranged according to some
-mathematical plan. No doubt a certain sentence has been written out and
-then jumbled up--some plan to which some figure is the clue. Now, Harry,
-to show your English wit--what is that figure?"
-
-I could give him no hint. My thoughts were indeed far away. While he was
-speaking I had caught sight of the portrait of my cousin Gretchen, and
-was wondering when she would return.
-
-We were affianced, and loved one another very sincerely. But my uncle,
-who never thought even of such sublunary matters, knew nothing of this.
-Without noticing my abstraction, the Professor began reading the
-puzzling cryptograph all sorts of ways, according to some theory of his
-own. Presently, rousing my wandering attention, he dictated one precious
-attempt to me.
-
-I mildly handed it over to him. It read as follows:
-
-<i>mmessunkaSenrA.icefdoK.segnittamurtn
-ecertserrette,rotaivsadua,ednecsedsadne
-lacartniiilrJsiratracSarbmutabiledmek
-meretarcsilucoYsleffenSnI.</i>
-
-I could scarcely keep from laughing, while my uncle, on the contrary,
-got in a towering passion, struck the table with his fist, darted out of
-the room, out of the house, and then taking to his heels was presently
-lost to sight.
-
-## CHAPTER 3 AN ASTOUNDING DISCOVERY
-
-"What is the matter?" cried the cook, entering the room; "when will
-master have his dinner?"
-
-"Never."
-
-"And, his supper?"
-
-"I don't know. He says he will eat no more, neither shall I. My uncle
-has determined to fast and make me fast until he makes out this
-abominable inscription," I replied.
-
-"You will be starved to death," she said.
-
-I was very much of the same opinion, but not liking to say so, sent her
-away, and began some of my usual work of classification. But try as I
-might, nothing could keep me from thinking alternately of the stupid
-manuscript and of the pretty Gretchen.
-
-Several times I thought of going out, but my uncle would have been angry
-at my absence. At the end of an hour, my allotted task was done. How to
-pass the time? I began by lighting my pipe. Like all other students, I
-delighted in tobacco; and, seating myself in the great armchair, I began
-to think.
-
-Where was my uncle? I could easily imagine him tearing along some
-solitary road, gesticulating, talking to himself, cutting the air with
-his cane, and still thinking of the absurd bit of hieroglyphics. Would
-he hit upon some clue? Would he come home in better humor? While these
-thoughts were passing through my brain, I mechanically took up the
-execrable puzzle and tried every imaginable way of grouping the letters.
-I put them together by twos, by threes, fours, and fives--in vain.
-Nothing intelligible came out, except that the fourteenth, fifteenth,
-and sixteenth made <i>ice</i> in English; the eighty-fourth, eighty-fifth,
-and eighty-sixth, the word <i>sir</i>; then at last I seemed to find the
-Latin words <i>rota, mutabile, ira, nec, atra</i>.
-
-"Ha! there seems to be some truth in my uncle's notion," thought I.
-
-Then again I seemed to find the word <i>luco</i>, which means sacred wood.
-Then in the third line I appeared to make out <i>labiled</i>, a perfect
-Hebrew word, and at the last the syllables mere, are, mer, which were
-French.
-
-It was enough to drive one mad. Four different idioms in this absurd
-phrase. What connection could there be between ice, sir, anger, cruel,
-sacred wood, changing, mother, are, and sea? The first and the last
-might, in a sentence connected with Iceland, mean sea of ice. But what
-of the rest of this monstrous cryptograph?
-
-I was, in fact, fighting against an insurmountable difficulty; my brain
-was almost on fire; my eyes were strained with staring at the parchment;
-the whole absurd collection of letters appeared to dance before my
-vision in a number of black little groups. My mind was possessed with
-temporary hallucination--I was stifling. I wanted air. Mechanically I
-fanned myself with the document, of which now I saw the back and then
-the front.
-
-Imagine my surprise when glancing at the back of the wearisome puzzle,
-the ink having gone through, I clearly made out Latin words, and among
-others craterem and terrestre.
-
-I had discovered the secret!
-
-It came upon me like a flash of lightning. I had got the clue. All you
-had to do to understand the document was to read it backwards. All the
-ingenious ideas of the Professor were realized; he had dictated it
-rightly to me; by a mere accident I had discovered what he so much
-desired.
-
-My delight, my emotion may be imagined, my eyes were dazzled and I
-trembled so that at first I could make nothing of it. One look, however,
-would tell me all I wished to know.
-
-"Let me read," I said to myself, after drawing a long breath.
-
-I spread it before me on the table, I passed my finger over each letter,
-I spelled it through; in my excitement I read it out.
-
-What horror and stupefaction took possession of my soul. I was like a
-man who had received a knock-down blow. Was it possible that I really
-read the terrible secret, and it had really been accomplished! A man had
-dared to do--what?
-
-No living being should ever know.
-
-"Never!" cried I, jumping up. "Never shall my uncle be made aware of the
-dread secret. He would be quite capable of undertaking the terrible
-journey. Nothing would check him, nothing stop him. Worse, he would
-compel me to accompany him, and we should be lost forever. But no; such
-folly and madness cannot be allowed."
-
-I was almost beside myself with rage and fury.
-
-"My worthy uncle is already nearly mad," I cried aloud. "This would
-finish him. By some accident he may make the discovery; in which case,
-we are both lost. Perish the fearful secret--let the flames forever bury
-it in oblivion."
-
-I snatched up book and parchment, and was about to cast them into the
-fire, when the door opened and my uncle entered.
-
-I had scarcely time to put down the wretched documents before my uncle
-was by my side. He was profoundly absorbed. His thoughts were evidently
-bent on the terrible parchment. Some new combination had probably struck
-him while taking his walk.
-
-He seated himself in his armchair, and with a pen began to make an
-algebraical calculation. I watched him with anxious eyes. My flesh
-crawled as it became probable that he would discover the secret.
-
-His combinations I knew now were useless, I having discovered the one
-only clue. For three mortal hours he continued without speaking a word,
-without raising his head, scratching, rewriting, calculating over and
-over again. I knew that in time he must hit upon the right phrase. The
-letters of every alphabet have only a certain number of combinations.
-But then years might elapse before he would arrive at the correct
-solution.
-
-Still time went on; night came, the sounds in the streets ceased--and
-still my uncle went on, not even answering our worthy cook when she
-called us to supper.
-
-I did not dare to leave him, so waved her away, and at last fell asleep
-on the sofa.
-
-When I awoke my uncle was still at work. His red eyes, his pallid
-countenance, his matted hair, his feverish hands, his hectically flushed
-cheeks, showed how terrible had been his struggle with the impossible,
-and what fearful fatigue he had undergone during that long sleepless
-night. It made me quite ill to look at him. Though he was rather severe
-with me, I loved him, and my heart ached at his sufferings. He was so
-overcome by one idea that he could not even get in a passion! All his
-energies were focused on one point. And I knew that by speaking one
-little word all this suffering would cease. I could not speak it.
-
-My heart was, nevertheless, inclining towards him. Why, then, did I
-remain silent? In the interest of my uncle himself.
-
-"Nothing shall make me speak," I muttered. "He will want to follow in
-the footsteps of the other! I know him well. His imagination is a
-perfect volcano, and to make discoveries in the interests of geology he
-would sacrifice his life. I will therefore be silent and strictly keep
-the secret I have discovered. To reveal it would be suicidal. He would
-not only rush, himself, to destruction, but drag me with him."
-
-I crossed my arms, looked another way and smoked--resolved never to
-speak.
-
-When our cook wanted to go out to market, or on any other errand, she
-found the front door locked and the key taken away. Was this done
-purposely or not? Surely Professor Hardwigg did not intend the old woman
-and myself to become martyrs to his obstinate will. Were we to be
-starved to death? A frightful recollection came to my mind. Once we had
-fed on bits and scraps for a week while he sorted some curiosities. It
-gave me the cramp even to think of it!
-
-I wanted my breakfast, and I saw no way of getting it. Still my
-resolution held good. I would starve rather than yield. But the cook
-began to take me seriously to task. What was to be done? She could not
-go out; and I dared not.
-
-My uncle continued counting and writing; his imagination seemed to have
-translated him to the skies. He neither thought of eating nor drinking.
-In this way twelve o'clock came round. I was hungry, and there was
-nothing in the house. The cook had eaten the last bit of bread. This
-could not go on. It did, however, until two, when my sensations were
-terrible. After all, I began to think the document very absurd. Perhaps
-it might only be a gigantic hoax. Besides, some means would surely be
-found to keep my uncle back from attempting any such absurd expedition.
-On the other hand, if he did attempt anything so quixotic, I should not
-be compelled to accompany him. Another line of reasoning partially
-decided me. Very likely he would make the discovery himself when I
-should have suffered starvation for nothing. Under the influence of
-hunger this reasoning appeared admirable. I determined to tell all.
-
-The question now arose as to how it was to be done. I was still dwelling
-on the thought, when he rose and put on his hat.
-
-What! go out and lock us in? Never!
-
-"Uncle," I began.
-
-He did not appear even to hear me.
-
-"Professor Hardwigg," I cried.
-
-"What," he retorted, "did you speak?"
-
-"How about the key?"
-
-"What key--the key of the door?"
-
-"No--of these horrible hieroglyphics?"
-
-He looked at me from under his spectacles, and started at the odd
-expression of my face. Rushing forward, he clutched me by the arm and
-keenly examined my countenance. His very look was an interrogation.
+The First Men In The Moon
+
+by H. G. Wells
+
+### I.
+
+*Mr. Bedford Meets Mr. Cavor at Lympne*
+
+As I sit down to write here amidst the shadows of vine-leaves under the
+blue sky of southern Italy, it comes to me with a certain quality of
+astonishment that my participation in these amazing adventures of Mr.
+Cavor was, after all, the outcome of the purest accident. It might have
+been any one. I fell into these things at a time when I thought myself
+removed from the slightest possibility of disturbing experiences. I had
+gone to Lympne because I had imagined it the most uneventful place in
+the world. “Here, at any rate,” said I, “I shall find peace and a
+chance to work!”
+
+And this book is the sequel. So utterly at variance is destiny with all
+the little plans of men. I may perhaps mention here that very recently
+I had come an ugly cropper in certain business enterprises. Sitting now
+surrounded by all the circumstances of wealth, there is a luxury in
+admitting my extremity. I can admit, even, that to a certain extent my
+disasters were conceivably of my own making. It may be there are
+directions in which I have some capacity, but the conduct of business
+operations is not among these. But in those days I was young, and my
+youth among other objectionable forms took that of a pride in my
+capacity for affairs. I am young still in years, but the things that
+have happened to me have rubbed something of the youth from my mind.
+Whether they have brought any wisdom to light below it is a more
+doubtful matter.
+
+It is scarcely necessary to go into the details of the speculations
+that landed me at Lympne, in Kent. Nowadays even about business
+transactions there is a strong spice of adventure. I took risks. In
+these things there is invariably a certain amount of give and take, and
+it fell to me finally to do the giving reluctantly enough. Even when I
+had got out of everything, one cantankerous creditor saw fit to be
+malignant. Perhaps you have met that flaming sense of outraged virtue,
+or perhaps you have only felt it. He ran me hard. It seemed to me, at
+last, that there was nothing for it but to write a play, unless I
+wanted to drudge for my living as a clerk. I have a certain
+imagination, and luxurious tastes, and I meant to make a vigorous fight
+for it before that fate overtook me. In addition to my belief in my
+powers as a business man, I had always in those days had an idea that I
+was equal to writing a very good play. It is not, I believe, a very
+uncommon persuasion. I knew there is nothing a man can do outside
+legitimate business transactions that has such opulent possibilities,
+and very probably that biased my opinion. I had, indeed, got into the
+habit of regarding this unwritten drama as a convenient little reserve
+put by for a rainy day. That rainy day had come, and I set to work.
+
+I soon discovered that writing a play was a longer business than I had
+supposed; at first I had reckoned ten days for it, and it was to have a
+_pied-à-terre_ while it was in hand that I came to Lympne. I reckoned
+myself lucky in getting that little bungalow. I got it on a three
+years’ agreement. I put in a few sticks of furniture, and while the
+play was in hand I did my own cooking. My cooking would have shocked
+Mrs. Bond. And yet, you know, it had flavour. I had a coffee-pot, a
+sauce-pan for eggs, and one for potatoes, and a frying-pan for sausages
+and bacon—such was the simple apparatus of my comfort. One cannot
+always be magnificent, but simplicity is always a possible alternative.
+For the rest I laid in an eighteen-gallon cask of beer on credit, and a
+trustful baker came each day. It was not, perhaps, in the style of
+Sybaris, but I have had worse times. I was a little sorry for the
+baker, who was a very decent man indeed, but even for him I hoped.
+
+Certainly if any one wants solitude, the place is Lympne. It is in the
+clay part of Kent, and my bungalow stood on the edge of an old sea
+cliff and stared across the flats of Romney Marsh at the sea. In very
+wet weather the place is almost inaccessible, and I have heard that at
+times the postman used to traverse the more succulent portions of his
+route with boards upon his feet. I never saw him doing so, but I can
+quite imagine it. Outside the doors of the few cottages and houses that
+make up the present village big birch besoms are stuck, to wipe off the
+worst of the clay, which will give some idea of the texture of the
+district. I doubt if the place would be there at all, if it were not a
+fading memory of things gone for ever. It was the big port of England
+in Roman times, Portus Lemanis, and now the sea is four miles away. All
+down the steep hill are boulders and masses of Roman brickwork, and
+from it old Watling Street, still paved in places, starts like an arrow
+to the north. I used to stand on the hill and think of it all, the
+galleys and legions, the captives and officials, the women and traders,
+the speculators like myself, all the swarm and tumult that came
+clanking in and out of the harbour. And now just a few lumps of rubble
+on a grassy slope, and a sheep or two—and I. And where the port had
+been were the levels of the marsh, sweeping round in a broad curve to
+distant Dungeness, and dotted here and there with tree clumps and the
+church towers of old mediæval towns that are following Lemanis now
+towards extinction.
+
+That outlook on the marsh was, indeed, one of the finest views I have
+ever seen. I suppose Dungeness was fifteen miles away; it lay like a
+raft on the sea, and farther westward were the hills by Hastings under
+the setting sun. Sometimes they hung close and clear, sometimes they
+were faded and low, and often the drift of the weather took them clean
+out of sight. And all the nearer parts of the marsh were laced and lit
+by ditches and canals.
+
+The window at which I worked looked over the skyline of this crest, and
+it was from this window that I first set eyes on Cavor. It was just as
+I was struggling with my scenario, holding down my mind to the sheer
+hard work of it, and naturally enough he arrested my attention.
 
-I simply nodded.
-
-With an incredulous shrug of the shoulders, he turned upon his heel.
-Undoubtedly he thought I had gone mad.
-
-"I have made a very important discovery."
-
-His eyes flashed with excitement. His hand was lifted in a menacing
-attitude. For a moment neither of us spoke. It is hard to say which was
-most excited.
+The sun had set, the sky was a vivid tranquillity of green and yellow,
+and against that he came out black—the oddest little figure.
 
-"You don't mean to say that you have any idea of the meaning of the
-scrawl?"
+He was a short, round-bodied, thin-legged little man, with a jerky
+quality in his motions; he had seen fit to clothe his extraordinary
+mind in a cricket cap, an overcoat, and cycling knickerbockers and
+stockings. Why he did so I do not know, for he never cycled and he
+never played cricket. It was a fortuitous concurrence of garments,
+arising I know not how. He gesticulated with his hands and arms, and
+jerked his head about and buzzed. He buzzed like something electric.
+You never heard such buzzing. And ever and again he cleared his throat
+with a most extraordinary noise.
 
-"I do," was my desperate reply. "Look at the sentence as dictated by
-you."
+There had been rain, and that spasmodic walk of his was enhanced by the
+extreme slipperiness of the footpath. Exactly as he came against the
+sun he stopped, pulled out a watch, hesitated. Then with a sort of
+convulsive gesture he turned and retreated with every manifestation of
+haste, no longer gesticulating, but going with ample strides that
+showed the relatively large size of his feet—they were, I remember,
+grotesquely exaggerated in size by adhesive clay—to the best possible
+advantage.
 
-"Well, but it means nothing," was the angry answer.
+This occurred on the first day of my sojourn, when my play-writing
+energy was at its height and I regarded the incident simply as an
+annoying distraction—the waste of five minutes. I returned to my
+scenario. But when next evening the apparition was repeated with
+remarkable precision, and again the next evening, and indeed every
+evening when rain was not falling, concentration upon the scenario
+became a considerable effort. “Confound the man,” I said, “one would
+think he was learning to be a marionette!” and for several evenings I
+cursed him pretty heartily. Then my annoyance gave way to amazement and
+curiosity. Why on earth should a man do this thing? On the fourteenth
+evening I could stand it no longer, and so soon as he appeared I opened
+the french window, crossed the verandah, and directed myself to the
+point where he invariably stopped.
 
-"Nothing if you read from left to right, but mark, if from right to
-left--"
+He had his watch out as I came up to him. He had a chubby, rubicund
+face with reddish brown eyes—previously I had seen him only against the
+light. “One moment, sir,” said I as he turned. He stared. “One moment,”
+he said, “certainly. Or if you wish to speak to me for longer, and it
+is not asking too much—your moment is up—would it trouble you to
+accompany me?”
 
-"Backwards!" cried my uncle, in wild amazement. "Oh most cunning
-Saknussemm; and I to be such a blockhead!"
+“Not in the least,” said I, placing myself beside him.
 
-He snatched up the document, gazed at it with haggard eye, and read it
-out as I had done.
+“My habits are regular. My time for intercourse—limited.”
 
-It read as follows:
+“This, I presume, is your time for exercise?”
 
-<i>In Sneffels Yoculis craterem kem delibat
-umbra Scartaris Julii intra calendas descende,
-audas viator, et terrestre centrum attinges.
-Kod feci. Arne Saknussemm</i>
+“It is. I come here to enjoy the sunset.”
 
-Which dog Latin being translated, reads as follows:
+“You don’t.”
 
-Descend into the crater of Yocul of Sneffels, which the shade of
-Scartaris caresses, before the kalends of July, audacious traveler,
-and you will reach the centre of the earth. I did it.
+“Sir?”
 
-### ARNE SAKNUSSEMM
+“You never look at it.”
 
-My uncle leaped three feet from the ground with joy. He looked radiant
-and handsome. He rushed about the room wild with delight and
-satisfaction. He knocked over tables and chairs. He threw his books
-about until at last, utterly exhausted, he fell into his armchair.
+“Never look at it?”
 
-"What's o'clock?" he asked.
+“No. I’ve watched you thirteen nights, and not once have you looked at
+the sunset—not once.”
 
-"About three."
+He knitted his brows like one who encounters a problem.
 
-"My dinner does not seem to have done me much good," he observed. "Let
-me have something to eat. We can then start at once. Get my portmanteau
-ready."
+“Well, I enjoy the sunlight—the atmosphere—I go along this path,
+through that gate”—he jerked his head over his shoulder—“and round—”
 
-"What for?"
+“You don’t. You never have been. It’s all nonsense. There isn’t a way.
+To-night for instance—”
 
-"And your own," he continued. "We start at once."
+“Oh! to-night! Let me see. Ah! I just glanced at my watch, saw that I
+had already been out just three minutes over the precise half-hour,
+decided there was not time to go round, turned—”
 
-My horror may be conceived. I resolved however to show no fear.
-Scientific reasons were the only ones likely to influence my uncle. Now,
-there were many against this terrible journey. The very idea of going
-down to the centre of the earth was simply absurd. I determined
-therefore to argue the point after dinner.
+“You always do.”
 
-My uncle's rage was now directed against the cook for having no dinner
-ready. My explanation however satisfied him, and having gotten the key,
-she soon contrived to get sufficient to satisfy our voracious appetites.
+He looked at me—reflected. “Perhaps I do, now I come to think of it.
+But what was it you wanted to speak to me about?”
 
-During the repast my uncle was rather gay than otherwise. He made some
-of those peculiar jokes which belong exclusively to the learned. As
-soon, however, as dessert was over, he called me to his study. We each
-took a chair on opposite sides of the table.
+“Why, this!”
 
-"Henry," he said, in a soft and winning voice; "I have always believed
-you ingenious, and you have rendered me a service never to be forgotten.
-Without you, this great, this wondrous discovery would never have been
-made. It is my duty, therefore, to insist on your sharing the glory."
+“This?”
 
-"He is in a good humor," thought I; "I'll soon let him know my opinion
-of glory."
+“Yes. Why do you do it? Every night you come making a noise—”
 
-"In the first place," he continued, "you must keep the whole affair a
-profound secret. There is no more envious race of men than scientific
-discoverers. Many would start on the same journey. At all events, we
-will be the first in the field."
+“Making a noise?”
 
-"I doubt your having many competitors," was my reply.
+“Like this.” I imitated his buzzing noise. He looked at me, and it was
+evident the buzzing awakened distaste. “Do I do _that?_” he asked.
 
-"A man of real scientific acquirements would be delighted at the chance.
-We should find a perfect stream of pilgrims on the traces of Arne
-Saknussemm, if this document were once made public."
+“Every blessed evening.”
 
-"But, my dear sir, is not this paper very likely to be a hoax?" I urged.
+“I had no idea.”
 
-"The book in which we find it is sufficient proof of its authenticity,"
-he replied.
+He stopped dead. He regarded me gravely. “Can it be,” he said, “that I
+have formed a Habit?”
 
-"I thoroughly allow that the celebrated Professor wrote the lines, but
-only, I believe, as a kind of mystification," was my answer.
+“Well, it looks like it. Doesn’t it?”
 
-Scarcely were the words out of my mouth, when I was sorry I had uttered
-them. My uncle looked at me with a dark and gloomy scowl, and I began to
-be alarmed for the results of our conversation. His mood soon changed,
-however, and a smile took the place of a frown.
+He pulled down his lower lip between finger and thumb. He regarded a
+puddle at his feet.
 
-"We shall see," he remarked, with decisive emphasis.
+“My mind is much occupied,” he said. “And you want to know _why!_ Well,
+sir, I can assure you that not only do I not know why I do these
+things, but I did not even know I did them. Come to think, it is just
+as you say; I never _have_ been beyond that field.... And these things
+annoy you?”
 
-"But see, what is all this about Yocul, and Sneffels, and this
-Scartaris? I have never heard anything about them."
+For some reason I was beginning to relent towards him. “Not _annoy_,” I
+said. “But—imagine yourself writing a play!”
 
-"The very point to which I am coming. I lately received from my friend
-Augustus Peterman, of Leipzig, a map. Take down the third atlas from the
-second shelf, series Z, plate 4."
+“I couldn’t.”
 
-I rose, went to the shelf, and presently returned with the volume
-indicated.
+“Well, anything that needs concentration.”
 
-"This," said my uncle, "is one of the best maps of Iceland. I believe it
-will settle all your doubts, difficulties and objections."
+“Ah!” he said, “of course,” and meditated. His expression became so
+eloquent of distress, that I relented still more. After all, there is a
+touch of aggression in demanding of a man you don’t know why he hums on
+a public footpath.
 
-With a grim hope to the contrary, I stooped over the map.
+“You see,” he said weakly, “it’s a habit.”
 
-## CHAPTER 4 WE START ON THE JOURNEY
+“Oh, I recognise that.”
 
-"You see, the whole island is composed of volcanoes," said the
-Professor, "and remark carefully that they all bear the name of Yocul.
-The word is Icelandic, and means a glacier. In most of the lofty
-mountains of that region the volcanic eruptions come forth from icebound
-caverns. Hence the name applied to every volcano on this extraordinary
-island."
+“I must stop it.”
 
-"But what does this word Sneffels mean?"
+“But not if it puts you out. After all, I had no business—it’s
+something of a liberty.”
 
-To this question I expected no rational answer. I was mistaken.
+“Not at all, sir,” he said, “not at all. I am greatly indebted to you.
+I should guard myself against these things. In future I will. Could I
+trouble you—once again? That noise?”
 
-"Follow my finger to the western coast of Iceland, there you see
-Reykjavik, its capital. Follow the direction of one of its innumerable
-fjords or arms of the sea, and what do you see below the sixty-fifth
-degree of latitude?"
+“Something like this,” I said. “Zuzzoo, zuzzoo. But really, you know—”
 
-"A peninsula--very like a thighbone in shape."
+“I am greatly obliged to you. In fact, I know I am getting absurdly
+absent-minded. You are quite justified, sir—perfectly justified.
+Indeed, I am indebted to you. The thing shall end. And now, sir, I have
+already brought you farther than I should have done.”
+
+“I do hope my impertinence—”
+
+“Not at all, sir, not at all.”
+
+We regarded each other for a moment. I raised my hat and wished him a
+good evening. He responded convulsively, and so we went our ways.
+
+At the stile I looked back at his receding figure. His bearing had
+changed remarkably, he seemed limp, shrunken. The contrast with his
+former gesticulating, zuzzoing self took me in some absurd way as
+pathetic. I watched him out of sight. Then wishing very heartily I had
+kept to my own business, I returned to my bungalow and my play.
+
+The next evening I saw nothing of him, nor the next. But he was very
+much in my mind, and it had occurred to me that as a sentimental comic
+character he might serve a useful purpose in the development of my
+plot. The third day he called upon me.
+
+For a time I was puzzled to think what had brought him. He made
+indifferent conversation in the most formal way, then abruptly he came
+to business. He wanted to buy me out of my bungalow.
 
-"And in the centre of it--?"
+“You see,” he said, “I don’t blame you in the least, but you’ve
+destroyed a habit, and it disorganises my day. I’ve walked past here
+for years—years. No doubt I’ve hummed.... You’ve made all that
+impossible!”
 
-"A mountain."
+I suggested he might try some other direction.
 
-"Well, that's Sneffels."
+“No. There is no other direction. This is the only one. I’ve inquired.
+And now—every afternoon at four—I come to a dead wall.”
 
-I had nothing to say.
+“But, my dear sir, if the thing is so important to you—”
 
-"That is Sneffels--a mountain about five thousand feet in height, one of
-the most remarkable in the whole island, and certainly doomed to be the
-most celebrated in the world, for through its crater we shall reach the
-centre of the earth."
+“It’s vital. You see, I’m—I’m an investigator—I am engaged in a
+scientific research. I live—” he paused and seemed to think. “Just over
+there,” he said, and pointed suddenly dangerously near my eye. “The
+house with white chimneys you see just over the trees. And my
+circumstances are abnormal—abnormal. I am on the point of completing
+one of the most important—demonstrations—I can assure you one of _the
+most important_ demonstrations that have ever been made. It requires
+constant thought, constant mental ease and activity. And the afternoon
+was my brightest time!—effervescing with new ideas—new points of view.”
 
-"Impossible!" cried I, startled and shocked at the thought.
+“But why not come by still?”
 
-"Why impossible?" said Professor Hardwigg in his severest tones.
+“It would be all different. I should be self-conscious. I should think
+of you at your play—watching me irritated—instead of thinking of my
+work. No! I must have the bungalow.”
 
-"Because its crater is choked with lava, by burning rocks--by infinite
-dangers."
-
-"But if it be extinct?"
-
-"That would make a difference."
-
-"Of course it would. There are about three hundred volcanoes on the
-whole surface of the globe--but the greater number are extinct. Of these
-Sneffels is one. No eruption has occurred since 1219--in fact it has
-ceased to be a volcano at all."
-
-After this what more could I say? Yes,--I thought of another objection.
-
-"But what is all this about Scartaris and the kalends of July--?"
-
-My uncle reflected deeply. Presently he gave forth the result of his
-reflections in a sententious tone. "What appears obscure to you, to me
-is light. This very phrase shows how particular Saknussemm is in his
-directions. The Sneffels mountain has many craters. He is careful
-therefore to point the exact one which is the highway into the Interior
-of the Earth. He lets us know, for this purpose, that about the end of
-the month of June, the shadow of Mount Scartaris falls upon the one
-crater. There can be no doubt about the matter."
-
-My uncle had an answer for everything.
-
-"I accept all your explanations" I said, "and Saknussemm is right. He
-found out the entrance to the bowels of the earth, he has indicated
-correctly, but that he or anyone else ever followed up the discovery is
-madness to suppose."
-
-"Why so, young man?"
-
-"All scientific teaching, theoretical and practical, shows it to be
-impossible."
-
-"I care nothing for theories," retorted my uncle.
-
-"But is it not well-known that heat increases one degree for every
-seventy feet you descend into the earth? Which gives a fine idea of the
-central heat. All the matters which compose the globe are in a state of
-incandescence; even gold, platinum, and the hardest rocks are in a state
-of fusion. What would become of us?"
-
-"Don't be alarmed at the heat, my boy."
-
-"How so?"
-
-"Neither you nor anybody else know anything about the real state of the
-earth's interior. All modern experiments tend to explode the older
-theories. Were any such heat to exist, the upper crust of the earth
-would be shattered to atoms, and the world would be at an end."
-
-A long, learned and not uninteresting discussion followed, which ended
-in this wise:
-
-"I do not believe in the dangers and difficulties which you, Henry, seem
-to multiply; and the only way to learn, is like Arne Saknussemm, to go
-and see."
-
-"Well," cried I, overcome at last, "let us go and see. Though how we can
-do that in the dark is another mystery."
-
-"Fear nothing. We shall overcome these, and many other difficulties.
-Besides, as we approach the centre, I expect to find it luminous--"
-
-"Nothing is impossible."
-
-"And now that we have come to a thorough understanding, not a word to
-any living soul. Our success depends on secrecy and dispatch."
-
-Thus ended our memorable conference, which roused a perfect fever in me.
-Leaving my uncle, I went forth like one possessed. Reaching the banks of
-the Elbe, I began to think. Was all I had heard really and truly
-possible? Was my uncle in his sober senses, and could the interior of
-the earth be reached? Was I the victim of a madman, or was he a
-discoverer of rare courage and grandeur of conception?
-
-To a certain extent I was anxious to be off. I was afraid my enthusiasm
-would cool. I determined to pack up at once. At the end of an hour,
-however, on my way home, I found that my feelings had very much changed.
-
-"I'm all abroad," I cried; "'tis a nightmare--I must have dreamed it."
-
-At this moment I came face to face with Gretchen, whom I warmly
-embraced.
-
-"So you have come to meet me," she said; "how good of you. But what is
-the matter?"
-
-Well, it was no use mincing the matter, I told her all. She listened
-with awe, and for some minutes she could not speak.
-
-"Well?" I at last said, rather anxiously.
-
-"What a magnificent journey. If I were only a man! A journey worthy of
-the nephew of Professor Hardwigg. I should look upon it as an honor to
-accompany him."
-
-"My dear Gretchen, I thought you would be the first to cry out against
-this mad enterprise."
-
-"No; on the contrary, I glory in it. It is magnificent, splendid--an
-idea worthy of my father. Henry Lawson, I envy you."
-
-This was, as it were, conclusive. The final blow of all.
-
-When we entered the house we found my uncle surrounded by workmen and
-porters, who were packing up. He was pulling and hauling at a bell.
-
-"Where have you been wasting your time? Your portmanteau is not
-packed--my papers are not in order--the precious tailor has not brought
-my clothes, nor my gaiters--the key of my carpet bag is gone!"
-
-I looked at him stupefied. And still he tugged away at the bell.
-
-"We are really off, then?" I said.
-
-"Yes--of course, and yet you go out for a stroll, unfortunate boy!"
-
-"And when do we go?"
-
-"The day after tomorrow, at daybreak."
-
-I heard no more; but darted off to my little bedchamber and locked
-myself in. There was no doubt about it now. My uncle had been hard at
-work all the afternoon. The garden was full of ropes, rope ladders,
-torches, gourds, iron clamps, crowbars, alpenstocks, and
-pickaxes--enough to load ten men.
-
-I passed a terrible night. I was called early the next day to learn that
-the resolution of my uncle was unchanged and irrevocable. I also found
-my cousin and affianced wife as warm on the subject as was her father.
-
-Next day, at five o'clock in the morning, the post chaise was at the
-door. Gretchen and the old cook received the keys of the house; and,
-scarcely pausing to wish anyone good-by, we started on our adventurous
-journey into the centre of the earth.
-
-## CHAPTER 5
-
-*First Lessons in Climbing*
-
-At Altona, a suburb of Hamburg, is the Chief Station of the Kiel
-railway, which was to take us to the shores of the Belt. In twenty
-minutes from the moment of our departure we were in Holstein, and our
-carriage entered the station. Our heavy luggage was taken out, weighed,
-labeled, and placed in a huge van. We then took our tickets, and exactly
-at seven o'clock were seated opposite each other in a firstclass railway
-carriage.
-
-My uncle said nothing. He was too busy examining his papers, among which
-of course was the famous parchment, and some letters of introduction
-from the Danish consul which were to pave the way to an introduction to
-the Governor of Iceland. My only amusement was looking out of the
-window. But as we passed through a flat though fertile country, this
-occupation was slightly monotonous. In three hours we reached Kiel, and
-our baggage was at once transferred to the steamer.
-
-We had now a day before us, a delay of about ten hours. Which fact put
-my uncle in a towering passion. We had nothing to do but to walk about
-the pretty town and bay. At length, however, we went on board, and at
-half past ten were steaming down the Great Belt. It was a dark night,
-with a strong breeze and a rough sea, nothing being visible but the
-occasional fires on shore, with here and there a lighthouse. At seven in
-the morning we left Korsor, a little town on the western side of
-Seeland.
-
-Here we took another railway, which in three hours brought us to the
-capital, Copenhagen, where, scarcely taking time for refreshment, my
-uncle hurried out to present one of his letters of introduction. It was
-to the director of the Museum of Antiquities, who, having been informed
-that we were tourists bound for Iceland, did all he could to assist us.
-One wretched hope sustained me now. Perhaps no vessel was bound for such
-distant parts.
-
-Alas! a little Danish schooner, the <i>Valkyrie</i>, was to sail on the
-second of June for Reykjavik. The captain, M. Bjarne, was on board, and
-was rather surprised at the energy and cordiality with which his future
-passenger shook him by the hand. To him a voyage to Iceland was merely a
-matter of course. My uncle, on the other hand, considered the event of
-sublime importance. The honest sailor took advantage of the Professor's
-enthusiasm to double the fare.
-
-"On Tuesday morning at seven o'clock be on board," said M. Bjarne,
-handing us our receipts.
-
-"Excellent! Capital! Glorious!" remarked my uncle as we sat down to a
-late breakfast; "refresh yourself, my boy, and we will take a run
-through the town."
-
-Our meal concluded, we went to the Kongens-Nye-Torw; to the king's
-magnificent palace; to the beautiful bridge over the canal near the
-Museum; to the immense cenotaph of Thorwaldsen with its hideous naval
-groups; to the castle of Rosenberg; and to all the other lions of the
-place-none of which my uncle even saw, so absorbed was he in his
-anticipated triumphs.
-
-But one thing struck his fancy, and that was a certain singular steeple
-situated on the Island of Amak, which is the southeast quarter of the
-city of Copenhagen. My uncle at once ordered me to turn my steps that
-way, and accordingly we went on board the steam ferry boat which does
-duty on the canal, and very soon reached the noted dockyard quay.
-
-In the first instance we crossed some narrow streets, where we met
-numerous groups of galley slaves, with particolored trousers, grey and
-yellow, working under the orders and the sticks of severe taskmasters,
-and finally reached the Vor-Frelser's-Kirk.
-
-This church exhibited nothing remarkable in itself; in fact, the worthy
-Professor had only been attracted to it by one circumstance, which was,
-that its rather elevated steeple started from a circular platform, after
-which there was an exterior staircase, which wound round to the very
-summit.
-
-"Let us ascend," said my uncle.
-
-"But I never could climb church towers," I cried, "I am subject to
-dizziness in my head."
-
-"The very reason why you should go up. I want to cure you of a bad
-habit."
-
-"But, my good sir--"
-
-"I tell you to come. What is the use of wasting so much valuable time?"
-
-It was impossible to dispute the dictatorial commands of my uncle. I
-yielded with a groan. On payment of a fee, a verger gave us the key. He,
-for one, was not partial to the ascent. My uncle at once showed me the
-way, running up the steps like a schoolboy. I followed as well as I
-could, though no sooner was I outside the tower, than my head began to
-swim. There was nothing of the eagle about me. The earth was enough for
-me, and no ambitious desire to soar ever entered my mind. Still things
-did not go badly until I had ascended 150 steps, and was near the
-platform, when I began to feel the rush of cold air. I could scarcely
-stand, when clutching the railings, I looked upwards. The railing was
-frail enough, but nothing to those which skirted the terrible winding
-staircase, that appeared, from where I stood, to ascend to the skies.
-
-"Now then, Henry."
-
-"I can't do it!" I cried, in accents of despair.
-
-"Are you, after all, a coward, sir?" said my uncle in a pitiless tone.
-"Go up, I say!"
-
-To this there was no reply possible. And yet the keen air acted
-violently on my nervous system; sky, earth, all seemed to swim round,
-while the steeple rocked like a ship. My legs gave way like those of a
-drunken man. I crawled upon my hands and knees; I hauled myself up
-slowly, crawling like a snake. Presently I closed my eyes, and allowed
-myself to be dragged upwards.
-
-"Look around you," said my uncle in a stern voice, "heaven knows what
-profound abysses you may have to look down. This is excellent practice."
-
-Slowly, and shivering all the while with cold, I opened my eyes. What
-then did I see? My first glance was upwards at the cold fleecy clouds,
-which as by some optical delusion appeared to stand still, while the
-steeple, the weathercock, and our two selves were carried swiftly along.
-Far away on one side could be seen the grassy plain, while on the other
-lay the sea bathed in translucent light. The Sund, or Sound as we call
-it, could be discovered beyond the point of Elsinore, crowded with white
-sails, which, at that distance looked like the wings of seagulls; while
-to the east could be made out the far-off coast of Sweden. The whole
-appeared a magic panorama.
-
-But faint and bewildered as I was, there was no remedy for it. Rise and
-stand up I must. Despite my protestations my first lesson lasted quite
-an hour. When, nearly two hours later, I reached the bosom of mother
-earth, I was like a rheumatic old man bent double with pain.
-
-"Enough for one day," said my uncle, rubbing his hands, "we will begin
-again tomorrow."
-
-There was no remedy. My lessons lasted five days, and at the end of that
-period, I ascended blithely enough, and found myself able to look down
-into the depths below without even winking, and with some degree of
-pleasure.
-
-## CHAPTER 6
-
-*Our Voyage to Iceland*
-
-The hour of departure came at last. The night before, the worthy Mr.
-Thompson brought us the most cordial letters of introduction for Baron
-Trampe, Governor of Iceland, for M. Pictursson, coadjutor to the bishop,
-and for M. Finsen, mayor of the town of Reykjavik. In return, my uncle
-nearly crushed his hands, so warmly did he shake them.
-
-On the second of the month, at two in the morning, our precious cargo of
-luggage was taken on board the good ship <i>Valkyrie</i>. We followed, and
-were very politely introduced by the captain to a small cabin with two
-standing bed places, neither very well ventilated nor very comfortable.
-But in the cause of science men are expected to suffer.
-
-"Well, and have we a fair wind?" cried my uncle, in his most mellifluous
-accents.
-
-"An excellent wind!" replied Captain Bjarne; "we shall leave the Sound,
-going free with all sails set."
-
-A few minutes afterwards, the schooner started before the wind, under
-all the canvas she could carry, and entered the channel. An hour later,
-the capital of Denmark seemed to sink into the waves, and we were at no
-great distance from the coast of Elsinore. My uncle was delighted; for
-myself, moody and dissatisfied, I appeared almost to expect a glimpse of
-the ghost of Hamlet.
-
-"Sublime madman," thought I, "you doubtless would approve our
-proceedings. You might perhaps even follow us to the centre of the
-earth, there to resolve your eternal doubts."
-
-But no ghost or anything else appeared upon the ancient walls. The fact
-is, the castle is much later than the time of the heroic prince of
-Denmark. It is now the residence of the keeper of the Strait of the
-Sound, and through that Sound more than fifteen thousand vessels of all
-nations pass every year.
-
-The castle of Kronborg soon disappeared in the murky atmosphere, as well
-as the tower of Helsinborg, which raises its head on the Swedish Bank.
-And here the schooner began to feel in earnest the breezes of the
-Kattegat. The <i>Valkyrie</i> was swift enough, but with all sailing boats
-there is the same uncertainty. Her cargo was coal, furniture, pottery,
-woolen clothing, and a load of corn. As usual, the crew was small, five
-Danes doing the whole of the work.
-
-"How long will the voyage last?" asked my uncle.
-
-"Well, I should think about ten days," replied the skipper, "unless,
-indeed, we meet with some northeast gales among the Faroe Islands."
-
-"At all events, there will be no very considerable delay," cried the
-impatient Professor.
-
-"No, Mr. Hardwigg," said the captain, "no fear of that. At all events,
-we shall get there some day."
-
-Towards evening the schooner doubled Cape Skagen, the northernmost part
-of Denmark, crossed the Skagerrak during the night--skirted the extreme
-point of Norway through the gut of Cape Lindesnes, and then reached the
-Northern Seas. Two days later we were not far from the coast of
-Scotland, somewhere near what Danish sailors call Peterhead, and then
-the <i>Valkyrie</i> stretched out direct for the Faroe Islands, between
-Orkney and Shetland. Our vessel now felt the full force of the ocean
-waves, and the wind shifting, we with great difficulty made the Faroe
-Isles. On the eighth day, the captain made out Myganness, the
-westernmost of the isles, and from that moment headed direct for
-Portland, a cape on the southern shores of the singular island for which
-we were bound.
-
-The voyage offered no incident worthy of record. I bore it very well,
-but my uncle to his great annoyance, and even shame, was remarkably
-seasick! This mal de mer troubled him the more that it prevented him
-from questioning Captain Bjarne as to the subject of Sneffels, as to the
-means of communication, and the facilities of transport. All these
-explanations he had to adjourn to the period of his arrival. His time,
-meanwhile, was spent lying in bed groaning, and dwelling anxiously on
-the hoped--for termination of the voyage. I didn't pity him.
-
-On the eleventh day we sighted Cape Portland, over which towered Mount
-Myrdals Yokul, which, the weather being clear, we made out very readily.
-The cape itself is nothing but a huge mount of granite standing naked
-and alone to meet the Atlantic waves. The <i>Valkyrie</i> kept off the coast,
-steering to the westward. On all sides were to be seen whole "schools"
-of whales and sharks. After some hours we came in sight of a solitary
-rock in the ocean, forming a mighty vault, through which the foaming
-waves poured with intense fury. The islets of Westman appeared to leap
-from the ocean, being so low in the water as scarcely to be seen until
-you were right upon them. From that moment the schooner was steered to
-the westward in order to round Cape Reykjanes, the western point of
-Iceland.
-
-My uncle, to his great disgust, was unable even to crawl on deck, so
-heavy a sea was on, and thus lost the first view of the Land of Promise.
-Forty-eight hours later, after a storm which drove us far to sea under
-bare poles, we came once more in sight of land, and were boarded by a
-pilot, who, after three hours of dangerous navigation, brought the
-schooner safely to an anchor in the bay of Faxa before Reykjavik.
-
-My uncle came out of his cabin pale, haggard, thin, but full of
-enthusiasm, his eyes dilated with pleasure and satisfaction. Nearly the
-whole population of the town was on foot to see us land. The fact was,
-that scarcely any one of them but expected some goods by the periodical
-vessel.
-
-Professor Hardwigg was in haste to leave his prison, or rather as he
-called it, his hospital; but before he attempted to do so, he caught
-hold of my hand, led me to the quarterdeck of the schooner, took my arm
-with his left hand, and pointed inland with his right, over the northern
-part of the bay, to where rose a high two-peaked mountain--a double cone
-covered with eternal snow.
-
-"Behold he whispered in an awe-stricken voice, behold--Mount Sneffels!"
-
-Then without further remark, he put his finger to his lips, frowned
-darkly, and descended into the small boat which awaited us. I followed,
-and in a few minutes we stood upon the soil of mysterious Iceland!
-
-Scarcely were we fairly on shore when there appeared before us a man of
-excellent appearance, wearing the costume of a military officer. He was,
-however, but a civil servant, a magistrate, the governor of the
-island--Baron Trampe. The Professor knew whom he had to deal with. He
-therefore handed him the letters from Copenhagen, and a brief
-conversation in Danish followed, to which I of course was a stranger,
-and for a very good reason, for I did not know the language in which
-they conversed. I afterwards heard, however, that Baron Trampe placed
-himself entirely at the beck and call of Professor Hardwigg.
-
-My uncle was most graciously received by M. Finsen, the mayor, who as
-far as costume went, was quite as military as the governor, but also
-from character and occupation quite as pacific. As for his coadjutor, M.
-Pictursson, he was absent on an episcopal visit to the northern portion
-of the diocese. We were therefore compelled to defer the pleasure of
-being presented to him. His absence was, however, more than compensated
-by the presence of M. Fridriksson, professor of natural science in the
-college of Reykjavik, a man of invaluable ability. This modest scholar
-spoke no languages save Icelandic and Latin. When, therefore, he
-addressed himself to me in the language of Horace, we at once came to
-understand one another. He was, in fact, the only person that I did
-thoroughly understand during the whole period of my residence in this
-benighted island.
-
-Out of three rooms of which his house was composed, two were placed at
-our service, and in a few hours we were installed with all our baggage,
-the amount of which rather astonished the simple inhabitants of
-Reykjavik.
-
-"Now, Harry," said my uncle, rubbing his hands, "an goes well, the worse
-difficulty is now over."
-
-"How the worse difficulty over?" I cried in fresh amazement.
-
-"Doubtless. Here we are in Iceland. Nothing more remains but to descend
-into the bowels of the earth."
-
-"Well, sir, to a certain extent you are right. We have only to go
-down--but, as far as I am concerned, that is not the question. I want to
-know how we are to get up again."
-
-"That is the least part of the business, and does not in any way trouble
-me. In the meantime, there is not an hour to lose. I am about to visit
-the public library. Very likely I may find there some manuscripts from
-the hand of Saknussemm. I shall be glad to consult them."
-
-"In the meanwhile," I replied, "I will take a walk through the town.
-Will you not likewise do so?"
-
-"I feel no interest in the subject," said my uncle. "What for me is
-curious in this island, is not what is above the surface, but what is
-below."
-
-I bowed by way of reply, put on my hat and furred cloak, and went out.
-
-It was not an easy matter to lose oneself in the two streets of
-Reykjavik; I had therefore no need to ask my way. The town lies on a
-flat and marshy plain, between two hills. A vast field of lava skirts it
-on one side, falling away in terraces towards the sea. On the other hand
-is the large bay of Faxa, bordered on the north by the enormous glacier
-of Sneffels, and in which bay the <i>Valkyrie</i> was then the only vessel at
-anchor. Generally there were one or two English or French gunboats, to
-watch and protect the fisheries in the offing. They were now, however,
-absent on duty.
-
-The longest of the streets of Reykjavik runs parallel to the shore. In
-this street the merchants and traders live in wooden huts made with
-beams of wood, painted red--mere log huts, such as you find in the wilds
-of America. The other street, situated more to the west, runs toward a
-little lake between the residences of the bishop and the other
-personages not engaged in commerce.
-
-I had soon seen all I wanted of these weary and dismal thoroughfares.
-Here and there was a strip of discolored turf, like an old worn-out bit
-of woolen carpet; and now and then a bit of kitchen garden, in which
-grew potatoes, cabbage, and lettuce, almost diminutive enough to suggest
-the idea of Lilliput.
-
-In the centre of the new commercial street, I found the public cemetery,
-enclosed by an earthen wall. Though not very large, it appeared not
-likely to be filled for centuries. From hence I went to the house of the
-Governor--a mere hut in comparison with the Mansion House of
-Hamburg--but a palace alongside the other Icelandic houses. Between the
-little lake and the town was the church, built in simple Protestant
-style, and composed of calcined stones, thrown up by volcanic action. I
-have not the slightest doubt that in high winds its red tiles were blown
-out, to the great annoyance of the pastor and congregation. Upon an
-eminence close at hand was the national school, in which were taught
-Hebrew, English, French, and Danish.
-
-In three hours my tour was complete. The general impression upon my mind
-was sadness. No trees, no vegetation, so to speak--on all sides volcanic
-peaks--the huts of turf and earth--more like roofs than houses. Thanks
-to the heat of these residences, grass grows on the roof, which grass is
-carefully cut for hay. I saw but few inhabitants during my excursion,
-but I met a crowd on the beach, drying, salting and loading codfish, the
-principal article of exportation. The men appeared robust but heavy;
-fair-haired like Germans, but of pensive mien--exiles of a higher scale
-in the ladder of humanity than the Eskimos, but, I thought, much more
-unhappy, since with superior perceptions they are compelled to live
-within the limits of the Polar Circle.
-
-Sometimes they gave vent to a convulsive laugh, but by no chance did
-they smile. Their costume consists of a coarse capote of black wool,
-known in Scandinavian countries as the "vadmel," a broad-brimmed hat,
-trousers of red serge, and a piece of leather tied with strings for a
-shoe--a coarse kind of moccasin. The women, though sad-looking and
-mournful, had rather agreeable features, without much expression. They
-wear a bodice and petticoat of somber vadmel. When unmarried they wear a
-little brown knitted cap over a crown of plaited hair; but when married,
-they cover their heads with a colored handkerchief, over which they tie
-a white scarf.
-
-## CHAPTER 7
-
-*Conversation and Discovery*
-
-When I returned, dinner was ready. This meal was devoured by my worthy
-relative with avidity and voracity. His shipboard diet had turned his
-interior into a perfect gulf. The repast, which was more Danish than
-Icelandic, was in itself nothing, but the excessive hospitality of our
-host made us enjoy it doubly.
-
-The conversation turned upon scientific matters, and M. Fridriksson
-asked my uncle what he thought of the public library.
-
-"Library, sir?" cried my uncle; "it appears to me a collection of
-useless odd volumes, and a beggarly amount of empty shelves."
-
-"What!" cried M. Fridriksson; "why, we have eight thousand volumes of
-most rare and valuable works--some in the Scandinavian language, besides
-all the new publications from Copenhagen."
-
-"Eight thousand volumes, my dear sir--why, where are they?" cried my
-uncle.
-
-"Scattered over the country, Professor Hardwigg. We are very studious,
-my dear sir, though we do live in Iceland. Every farmer, every laborer,
-every fisherman can both read and write--and we think that books instead
-of being locked up in cupboards, far from the sight of students, should
-be distributed as widely as possible. The books of our library are
-therefore passed from hand to hand without returning to the library
-shelves perhaps for years."
-
-"Then when foreigners visit you, there is nothing for them to see?"
-
-"Well, sir, foreigners have their own libraries, and our first
-consideration is, that our humbler classes should be highly educated.
-Fortunately, the love of study is innate in the Icelandic people. In
-1816 we founded a Literary Society and Mechanics' Institute; many
-foreign scholars of eminence are honorary members; we publish books
-destined to educate our people, and these books have rendered valuable
-services to our country. Allow me to have the honor, Professor Hardwigg,
-to enroll you as an honorary member?"
-
-My uncle, who already belonged to nearly every literary and scientific
-institution in Europe, immediately yielded to the amiable wishes of good
-M. Fridriksson.
-
-"And now," he said, after many expressions of gratitude and good will,
-"if you will tell me what books you expected to find, perhaps I may be
-of some assistance to you."
-
-I watched my uncle keenly. For a minute or two he hesitated, as if
-unwilling to speak; to speak openly was, perhaps, to unveil his
-projects. Nevertheless, after some reflection, he made up his mind.
-
-"Well, M. Fridriksson," he said in an easy, unconcerned kind of way, "I
-was desirous of ascertaining, if among other valuable works, you had any
-of the learned Arne Saknussemm."
-
-"Arne Saknussemm!" cried the Professor of Reykjavik; "you speak of one
-of the most distinguished scholars of the sixteenth century, of the
-great naturalist, the great alchemist, the great traveler."
-
-"Exactly so."
-
-"One of the most distinguished men connected with Icelandic science and
-literature."
-
-"As you say, sir--"
-
-"A man illustrious above all."
-
-"Yes, sir, all this is true, but his works?"
-
-"We have none of them."
-
-"Not in Iceland?"
-
-"There are none in Iceland or elsewhere," answered the other, sadly.
-
-"Why so?"
-
-"Because Arne Saknussemm was persecuted for heresy, and in 1573 his
-works were publicly burnt at Copenhagen, by the hands of the common
-hangman."
-
-"Very good! capital!" murmured my uncle, to the great astonishment of
-the worthy Icelander.
-
-"You said, sir--"
-
-"Yes, yes, all is clear, I see the link in the chain; everything is
-explained, and I now understand why Arne Saknussemm, put out of court,
-forced to hide his magnificent discoveries, was compelled to conceal
-beneath the veil of an incomprehensible cryptograph, the secret--"
-
-"What secret?"
-
-"A secret--which," stammered my uncle.
-
-"Have you discovered some wonderful manuscript?" cried M. Fridriksson.
-
-"No! no, I was carried away by my enthusiasm. A mere supposition."
-
-"Very good, sir. But, really, to turn to another subject, I hope you
-will not leave our island without examining into its mineralogical
-riches."
-
-"Well, the fact is, I am rather late. So many learned men have been here
-before me."
-
-"Yes, yes, but there is still much to be done," cried M. Fridriksson.
-
-"You think so," said my uncle, his eyes twinkling with hidden
-satisfaction.
-
-"Yes, you have no idea how many unknown mountains, glaciers, volcanoes
-there are which remain to be studied. Without moving from where we sit,
-I can show you one. Yonder on the edge of the horizon, you see
-Sneffels."
-
-"Oh yes, Sneffels," said my uncle.
-
-"One of the most curious volcanoes in existence, the crater of which has
-been rarely visited."
-
-"Extinct?"
-
-"Extinct, any time these five hundred years," was the ready reply.
-
-"Well," said my uncle, who dug his nails into his flesh, and pressed his
-knees tightly together to prevent himself leaping up with joy. "I have a
-great mind to begin my studies with an examination of the geological
-mysteries of this Mount Seffel--Feisel--what do you call it?"
-
-"Sneffels, my dear sir."
-
-This portion of the conversation took place in Latin, and I therefore
-understood all that had been said. I could scarcely keep my countenance
-when I found my uncle so cunningly concealing his delight and
-satisfaction. I must confess that his artful grimaces, put on to conceal
-his happiness, made him look like a new Mephistopheles.
-
-"Yes, yes," he continued, "your proposition delights me. I will endeavor
-to climb to the summit of Sneffels, and, if possible, will descend into
-its crater."
-
-"I very much regret," continued M. Fridriksson, "that my occupation will
-entirely preclude the possibility of my accompanying you. It would have
-been both pleasurable and profitable if I could have spared the time."
-
-"No, no, a thousand times no," cried my uncle. "I do not wish to disturb
-the serenity of any man. I thank you, however, with all my heart. The
-presence of one so learned as yourself, would no doubt have been most
-useful, but the duties of your office and profession before everything."
-
-In the innocence of his simple heart, our host did not perceive the
-irony of these remarks.
-
-"I entirely approve your project," continued the Icelander after some
-further remarks. "It is a good idea to begin by examining this volcano.
-You will make a harvest of curious observations. In the first place, how
-do you propose to get to Sneffels?"
-
-"By sea. I shall cross the bay. Of course that is the most rapid route."
-
-"Of course. But still it cannot be done."
-
-"Why?"
-
-"We have not an available boat in all Reykjavik," replied the other.
-
-"What is to be done?"
-
-"You must go by land along the coast. It is longer, but much more
-interesting."
-
-"Then I must have a guide."
-
-"Of course; and I have your very man."
-
-"Somebody on whom I can depend."
-
-"Yes, an inhabitant of the peninsula on which Sneffels is situated. He
-is a very shrewd and worthy man, with whom you will be pleased. He
-speaks Danish like a Dane."
-
-"When can I see him--today?"
-
-"No, tomorrow; he will not be here before."
-
-"Tomorrow be it," replied my uncle, with a deep sigh.
-
-The conversation ended by compliments on both sides. During the dinner
-my uncle had learned much as to the history of Arne Saknussemm, the
-reasons for his mysterious and hieroglyphical document. He also became
-aware that his host would not accompany him on his adventurous
-expedition, and that next day we should have a guide.
-
-## CHAPTER 8 THE EIDER-DOWN HUNTER--OFF AT LAST
-
-That evening I took a brief walk on the shore near Reykjavik, after
-which I returned to an early sleep on my bed of coarse planks, where I
-slept the sleep of the just. When I awoke I heard my uncle speaking
-loudly in the next room. I rose hastily and joined him. He was talking
-in Danish with a man of tall stature, and of perfectly Herculean build.
-This man appeared to be possessed of very great strength. His eyes,
-which started rather prominently from a very large head, the face
-belonging to which was simple and naive, appeared very quick and
-intelligent. Very long hair, which even in England would have been
-accounted exceedingly red, fell over his athletic shoulders. This native
-of Iceland was active and supple in appearance, though he scarcely moved
-his arms, being in fact one of those men who despise the habit of
-gesticulation common to southern people.
-
-Everything in this man's manner revealed a calm and phlegmatic
-temperament. There was nothing indolent about him, but his appearance
-spoke of tranquillity. He was one of those who never seemed to expect
-anything from anybody, who liked to work when he thought proper, and
-whose philosophy nothing could astonish or trouble.
-
-I began to comprehend his character, simply from the way in which he
-listened to the wild and impassioned verbiage of my worthy uncle. While
-the excellent Professor spoke sentence after sentence, he stood with
-folded arms, utterly still, motionless to all my uncle's gesticulations.
-When he wanted to say No he moved his head from left to right; when he
-acquiesced he nodded, so slightly that you could scarcely see the
-undulation of his head. This economy of motion was carried to the length
-of avarice.
-
-Judging from his appearance I should have been a long time before I had
-suspected him to be what he was, a mighty hunter. Certainly his manner
-was not likely to frighten the game. How, then, did he contrive to get
-at his prey?
-
-My surprise was slightly modified when I knew that this tranquil and
-solemn personage was only a hunter of the eider duck, the down of which
-is, after all, the greatest source of the Icelanders' wealth.
-
-In the early days of summer, the female of the eider, a pretty sort of
-duck, builds its nest amid the rocks of the fjords--the name given to
-all narrow gulfs in Scandinavian countries--with which every part of the
-island is indented. No sooner has the eider duck made her nest than she
-lines the inside of it with the softest down from her breast. Then comes
-the hunter or trader, taking away the nest, the poor bereaved female
-begins her task over again, and this continues as long as any eider down
-is to be found.
-
-When she can find no more the male bird sets to work to see what he can
-do. As, however, his down is not so soft, and has therefore no
-commercial value, the hunter does not take the trouble to rob him of his
-nest lining. The nest is accordingly finished, the eggs are laid, the
-little ones are born, and next year the harvest of eider down is again
-collected.
-
-Now, as the eider duck never selects steep rocks or aspects to build its
-nest, but rather sloping and low cliffs near to the sea, the Icelandic
-hunter can carry on his trade operations without much difficulty. He is
-like a farmer who has neither to plow, to sow, nor to harrow, only to
-collect his harvest.
-
-This grave, sententious, silent person, as phlegmatic as an Englishman
-on the French stage, was named Hans Bjelke. He had called upon us in
-consequence of the recommendation of M. Fridriksson. He was, in fact,
-our future guide. It struck me that had I sought the world over, I could
-not have found a greater contradiction to my impulsive uncle.
-
-They, however, readily understood one another. Neither of them had any
-thought about money; one was ready to take all that was offered him, the
-other ready to offer anything that was asked. It may readily be
-conceived, then, that an understanding was soon come to between them.
-
-Now, the understanding was, that he was to take us to the village of
-Stapi, situated on the southern slope of the peninsula of Sneffels, at
-the very foot of the volcano. Hans, the guide, told us the distance was
-about twenty-two miles, a journey which my uncle supposed would take
-about two days.
-
-But when my uncle came to understand that they were Danish miles, of
-eight thousand yards each, he was obliged to be more moderate in his
-ideas, and, considering the horrible roads we had to follow, to allow
-eight or ten days for the journey.
-
-Four horses were prepared for us, two to carry the baggage, and two to
-bear the important weight of myself and uncle. Hans declared that
-nothing ever would make him climb on the back of any animal. He knew
-every inch of that part of the coast, and promised to take us the very
-shortest way.
-
-His engagement with my uncle was by no means to cease with our arrival
-at Stapi; he was further to remain in his service during the whole time
-required for the completion of his scientific investigations, at the
-fixed salary of three rix-dollars a week, being exactly fourteen
-shillings and twopence, minus one farthing, English currency. One
-stipulation, however, was made by the guide--the money was to be paid to
-him every Saturday night, failing which, his engagement was at an end.
-
-The day of our departure was fixed. My uncle wished to hand the
-eider-down hunter an advance, but he refused in one emphatic word--
-
-"Efter."
-
-Which being translated from Icelandic into plain English means--"After."
-
-The treaty concluded, our worthy guide retired without another word.
-
-"A splendid fellow," said my uncle; "only he little suspects the
-marvelous part he is about to play in the history of the world."
-
-"You mean, then," I cried in amazement, "that he should accompany us?"
-
-"To the interior of the earth, yes," replied my uncle. "Why not?"
-
-There were yet forty-eight hours to elapse before we made our final
-start. To my great regret, our whole time was taken up in making
-preparations for our journey. All our industry and ability were devoted
-to packing every object in the most advantageous manner--the instruments
-on one side, the arms on the other, the tools here and the provisions
-there. There were, in fact, four distinct groups.
-
-The instruments were of course of the best manufacture:
-
-1. A centigrade thermometer of Eigel, counting up to 150 degrees, which
-to me did not appear half enough--or too much. Too hot by half, if the
-degree of heat was to ascend so high--in which case we should certainly
-be cooked--not enough, if we wanted to ascertain the exact temperature
-of springs or metal in a state of fusion.
-
-2. A manometer worked by compressed air, an instrument used to ascertain
-the upper atmospheric pressure on the level of the ocean. Perhaps a
-common barometer would not have done as well, the atmospheric pressure
-being likely to increase in proportion as we descended below the surface
-of the earth.
-
-3. A first-class chronometer made by Boissonnas, of Geneva, set at the
-meridian of Hamburg, from which Germans calculate, as the English do
-from Greenwich, and the French from Paris.
-
-4. Two compasses, one for horizontal guidance, the other to ascertain
-the dip.
-
-5. A night glass.
-
-6. Two Ruhmkorff coils, which, by means of a current of electricity,
-would ensure us a very excellent, easily carried, and certain means of
-obtaining light.
-
-7. A voltaic battery on the newest principle.[1]
-
-[1] Thermometer (<i>thermos</i>, and <i>metron</i>, measure); an instrument for
-measuring the temperature of the air.--Manometer (<i>manos</i>,and <i>metron</i>,
-measure); an instrument to show the density or rarity of
-gases.--Chronometer (<i>chronos</i>. time, and <i>metros</i>, measure) a time
-measurer, or superior watch--Ruhmkorff's coil, an instrument for
-producing currents of induced electricity of great intensity. It
-consists of a coil of copper wire, insulated by being covered with silk,
-surrounded by another coil of fine wire, also insulated, in which a
-momentary current is induced when a current is passed through the inner
-coil from a voltaic battery. When the apparatus is in action, the gas
-becomes luminous, and produces a white and continued light. The battery
-and wire are carried in a leather bag, which the traveler fastens by a
-strap to his shoulders. The lantern is in front, and enables the
-benighted wanderer to see in the most profound obscurity. He may venture
-without fear of explosion into the midst of the most inflammable gases,
-and the lantern will burn beneath the deepest waters. H. D. Ruhmkorff,
-an able and learned chemist, discovered the induction coil. In 1864 he
-won the quinquennial French prize of £2,000 for this ingenious
-application of electricity--A voltaic battery, so called from Volta, its
-designer, is an apparatus consisting of a series of metal plates
-arranged in pairs and subjected to the action of saline solutions for
-producing currents of electricity.
-
-Our arms consisted of two rifles, with two revolving six-shooters. Why
-these arms were provided it was impossible for me to say. I had every
-reason to believe that we had neither wild beasts nor savage natives to
-fear. My uncle, on the other hand, was quite as devoted to his arsenal
-as to his collection of instruments, and above all was very careful with
-his provision of fulminating or gun cotton, warranted to keep in any
-climate, and of which the expansive force was known to be greater than
-that of ordinary gunpowder.
-
-Our tools consisted of two pickaxes, two crowbars, a silken ladder,
-three iron-shod Alpine poles, a hatchet, a hammer, a dozen wedges, some
-pointed pieces of iron, and a quantity of strong rope. You may conceive
-that the whole made a tolerable parcel, especially when I mention that
-the ladder itself was three hundred feet long!
-
-Then there came the important question of provisions. The hamper was not
-very large but tolerably satisfactory, for I knew that in concentrated
-essence of meat and biscuit there was enough to last six months. The
-only liquid provided by my uncle was Schiedam. Of water, not a drop. We
-had, however, an ample supply of gourds, and my uncle counted on finding
-water, and enough to fill them, as soon as we commenced our downward
-journey. My remarks as to the temperature, the quality, and even as to
-the possibility of none being found, remained wholly without effect.
-
-To make up the exact list of our traveling gear--for the guidance of
-future travelers--add, that we carried a medicine and surgical chest
-with all apparatus necessary for wounds, fractures and blows; lint,
-scissors, lancets--in fact, a perfect collection of horrible looking
-instruments; a number of vials containing ammonia, alcohol, ether,
-Goulard water, aromatic vinegar, in fact, every possible and impossible
-drug--finally, all the materials for working the Ruhmkorff coil!
-
-My uncle had also been careful to lay in a goodly supply of tobacco,
-several flasks of very fine gunpowder, boxes of tinder, besides a large
-belt crammed full of notes and gold. Good boots rendered watertight were
-to be found to the number of six in the tool box.
-
-"My boy, with such clothing, with such boots, and such general
-equipment," said my uncle, in a state of rapturous delight, "we may hope
-to travel far."
-
-It took a whole day to put all these matters in order. In the evening we
-dined with Baron Trampe, in company with the Mayor of Reykjavik, and
-Doctor Hyaltalin, the great medical man of Iceland. M. Fridriksson was
-not present, and I was afterwards sorry to hear that he and the governor
-did not agree on some matters connected with the administration of the
-island. Unfortunately, the consequence was, that I did not understand a
-word that was said at dinner--a kind of semiofficial reception. One
-thing I can say, my uncle never left off speaking.
-
-The next day our labor came to an end. Our worthy host delighted my
-uncle, Professor Hardwigg, by giving him a good map of Iceland, a most
-important and precious document for a mineralogist.
-
-Our last evening was spent in a long conversation with M. Fridriksson,
-whom I liked very much--the more that I never expected to see him or
-anyone else again. After this agreeable way of spending an hour or so, I
-tried to sleep. In vain; with the exception of a few dozes, my night was
-miserable.
-
-At five o'clock in the morning I was awakened from the only real half
-hour's sleep of the night by the loud neighing of horses under my
-window. I hastily dressed myself and went down into the street. Hans was
-engaged in putting the finishing stroke to our baggage, which he did in
-a silent, quiet way that won my admiration, and yet he did it admirably
-well. My uncle wasted a great deal of breath in giving him directions,
-but worthy Hans took not the slightest notice of his words.
-
-At six o'clock all our preparations were completed, and M. Fridriksson
-shook hands heartily with us. My uncle thanked him warmly, in the
-Icelandic language, for his kind hospitality, speaking truly from the
-heart.
-
-As for myself I put together a few of my best Latin phrases and paid him
-the highest compliments I could. This fraternal and friendly duty
-performed, we sallied forth and mounted our horses.
-
-As soon as we were quite ready, M. Fridriksson advanced, and by way of
-farewell, called after me in the words of Virgil--words which appeared
-to have been made for us, travelers starting for an uncertain
-destination:
-
-"Et quacunque viam dederit fortuna sequamur."
-
-("And whichsoever way thou goest, may fortune follow!")
-
-## CHAPTER 9 OUR START--WE MEET WITH ADVENTURES BY THE WAY
-
-The weather was overcast but settled, when we commenced our adventurous
-and perilous journey. We had neither to fear fatiguing heat nor
-drenching rain. It was, in fact, real tourist weather.
-
-As there was nothing I liked better than horse exercise, the pleasure of
-riding through an unknown country caused the early part of our
-enterprise to be particularly agreeable to me.
-
-I began to enjoy the exhilarating delight of traveling, a life of
-desire, gratification and liberty. The truth is, that my spirits rose so
-rapidly, that I began to be indifferent to what had once appeared to be
-a terrible journey.
-
-"After all," I said to myself, "what do I risk? Simply to take a journey
-through a curious country, to climb a remarkable mountain, and if the
-worst comes to the worst, to descend into the crater of an extinct
-volcano."
-
-There could be no doubt that this was all this terrible Saknussemm had
-done. As to the existence of a gallery, or of subterraneous passages
-leading into the interior of the earth, the idea was simply absurd, the
-hallucination of a distempered imagination. All, then, that may be
-required of me I will do cheerfully, and will create no difficulty.
-
-It was just before we left Reykjavik that I came to this decision.
-
-Hans, our extraordinary guide, went first, walking with a steady, rapid,
-unvarying step. Our two horses with the luggage followed of their own
-accord, without requiring whip or spur. My uncle and I came behind,
-cutting a very tolerable figure upon our small but vigorous animals.
-
-Iceland is one of the largest islands in Europe. It contains thirty
-thousand square miles of surface, and has about seventy thousand
-inhabitants. Geographers have divided it into four parts, and we had to
-cross the southwest quarter which in the vernacular is called Sudvestr
-Fjordungr.
-
-Hans, on taking his departure from Reykjavik, had followed the line of
-the sea. We took our way through poor and sparse meadows, which made a
-desperate effort every year to show a little green. They very rarely
-succeed in a good show of yellow.
-
-The rugged summits of the rocky hills were dimly visible on the edge of
-the horizon, through the misty fogs; every now and then some heavy
-flakes of snow showed conspicuous in the morning light, while certain
-lofty and pointed rocks were first lost in the grey low clouds, their
-summits clearly visible above, like jagged reefs rising from a troublous
-sea.
-
-Every now and then a spur of rock came down through the arid ground,
-leaving us scarcely room to pass. Our horses, however, appeared not only
-well acquainted with the country, but by a kind of instinct, knew which
-was the best road. My uncle had not even the satisfaction of urging
-forward his steed by whip, spur, or voice. It was utterly useless to
-show any signs of impatience. I could not help smiling to see him look
-so big on his little horse; his long legs now and then touching the
-ground made him look like a six-footed centaur.
-
-"Good beast, good beast," he would cry. "I assure you, that I begin to
-think no animal is more intelligent than an Icelandic horse. Snow,
-tempest, impracticable roads, rocks, icebergs--nothing stops him. He is
-brave; he is sober; he is safe; he never makes a false step; never
-glides or slips from his path. I dare to say that if any river, any
-fjord has to be crossed--and I have no doubt there will be many--you
-will see him enter the water without hesitation like an amphibious
-animal, and reach the opposite side in safety. We must not, however,
-attempt to hurry him; we must allow him to have his own way, and I
-will undertake to say that between us we shall do our ten leagues a
-day."
-
-"We may do so," was my reply, "but what about our worthy guide?"
-
-"I have not the slightest anxiety about him: that sort of people go
-ahead without knowing even what they are about. Look at Hans. He moves
-so little that it is impossible for him to become fatigued. Besides, if
-he were to complain of weariness, he could have the loan of my horse. I
-should have a violent attack of the cramp if I were not to have some
-sort of exercise. My arms are right--but my legs are getting a little
-stiff."
-
-All this while we were advancing at a rapid pace. The country we had
-reached was already nearly a desert. Here and there could be seen an
-isolated farm, some solitary bur, or Icelandic house, built of wood,
-earth, fragments of lava--looking like beggars on the highway of life.
-These wretched and miserable huts excited in us such pity that we felt
-half disposed to leave alms at every door. In this country there are no
-roads, paths are nearly unknown, and vegetation, poor as it was, slowly
-as it reached perfection, soon obliterated all traces of the few
-travelers who passed from place to place.
-
-Nevertheless, this division of the province, situated only a few miles
-from the capital, is considered one of the best cultivated and most
-thickly peopled in all Iceland. What, then, must be the state of the
-less known and more distant parts of the island? After traveling fully
-half a Danish mile, we had met neither a farmer at the door of his hut,
-nor even a wandering shepherd with his wild and savage flock.
-
-A few stray cows and sheep were only seen occasionally. What, then, must
-we expect when we come to the upheaved regions--to the districts broken
-and roughened from volcanic eruptions and subterraneous commotions?
-
-We were to learn this all in good time. I saw, however, on consulting
-the map, that we avoided a good deal of this rough country, by following
-the winding and desolate shores of the sea. In reality, the great
-volcanic movement of the island, and all its attendant phenomena, are
-concentrated in the interior of the island; there, horizontal layers or
-strata of rocks, piled one upon the other, eruptions of basaltic origin,
-and streams of lava, have given this country a kind of supernatural
-reputation.
-
-Little did I expect, however, the spectacle which awaited us when we
-reached the peninsula of Sneffels, where agglomerations of nature's
-ruins form a kind of terrible chaos.
-
-Some two hours or more after we had left the city of Reykjavik, we
-reached the little town called Aoalkirkja, or the principal church. It
-consists simply of a few houses--not what in England or Germany we
-should call a hamlet.
-
-Hans stopped here one half hour. He shared our frugal breakfast,
-answered Yes, and No to my uncle's questions as to the nature of the
-road, and at last when asked where we were to pass the night was as
-laconic as usual.
-
-"Gardar!" was his one-worded reply.
-
-I took occasion to consult the map, to see where Gardar was to be found.
-After looking keenly I found a small town of that name on the borders of
-the Hvalfjord, about four miles from Reykjavik. I pointed this out to my
-uncle, who made a very energetic grimace.
-
-"Only four miles out of twenty-two? Why it is only a little walk."
-
-He was about to make some energetic observation to the guide, but Hans,
-without taking the slightest notice of him, went in front of the horses,
-and walked ahead with the same imperturbable phlegm he had always
-exhibited.
-
-Three hours later, still traveling over those apparently interminable
-and sandy prairies, we were compelled to go round the Kollafjord, an
-easier and shorter cut than crossing the gulfs. Shortly after we entered
-a place of communal jurisdiction called Ejulberg, and the clock of which
-would then have struck twelve, if any Icelandic church had been rich
-enough to possess so valuable and useful an article. These sacred
-edifices are, however, very much like these people, who do without
-watches--and never miss them.
-
-Here the horses were allowed to take some rest and refreshment, then
-following a narrow strip of shore between high rocks and the sea, they
-took us without further halt to the Aoalkirkja of Brantar, and after
-another mile to Saurboer Annexia, a chapel of ease, situated on the
-southern bank of the Hvalfjord.
-
-It was four o'clock in the evening and we had traveled four Danish
-miles, about equal to twenty English.
-
-The fjord was in this place about half a mile in width. The sweeping and
-broken waves came rolling in upon the pointed rocks; the gulf was
-surrounded by rocky walls--a mighty cliff, three thousand feet in
-height, remarkable for its brown strata, separated here and there by
-beds of tufa of a reddish hue. Now, whatever may have been the
-intelligence of our horses, I had not the slightest reliance upon them,
-as a means of crossing a stormy arm of the sea. To ride over salt water
-upon the back of a little horse seemed to me absurd.
-
-"If they are really intelligent," I said to myself, "they will certainly
-not make the attempt. In any case, I shall trust rather to my own
-intelligence than theirs."
-
-But my uncle was in no humor to wait. He dug his heels into the sides of
-his steed, and made for the shore. His horse went to the very edge of
-the water, sniffed at the approaching wave and retreated.
-
-My uncle, who was, sooth to say, quite as obstinate as the beast he
-bestrode, insisted on his making the desired advance. This attempt was
-followed by a new refusal on the part of the horse which quietly shook
-his head. This demonstration of rebellion was followed by a volley of
-words and a stout application of whipcord; also followed by kicks on the
-part of the horse, which threw its head and heels upwards and tried to
-throw his rider. At length the sturdy little pony, spreading out his
-legs, in a stiff and ludicrous attitude, got from under the Professor's
-legs, and left him standing, with both feet on a separate stone, like
-the Colossus of Rhodes.
-
-"Wretched animal!" cried my uncle, suddenly transformed into a foot
-passenger--and as angry and ashamed as a dismounted cavalry officer on
-the field of battle.
-
-"Farja," said the guide, tapping him familiarly on the shoulder.
-
-"What, a ferry boat!"
-
-"Der," answered Hans, pointing to where lay the boat in
-question--"there."
-
-"Well," I cried, quite delighted with the information; "so it is."
-
-"Why did you not say so before," cried my uncle; "why not start at
-once?"
-
-"Tidvatten," said the guide.
-
-"What does he say?" I asked, considerably puzzled by the delay and the
-dialogue.
-
-"He says tide," replied my uncle, translating the Danish word for my
-information.
-
-"Of course I understand--we must wait till the tide serves."
-
-"For bida?" asked my uncle.
-
-"Ja," replied Hans.
-
-My uncle frowned, stamped his feet and then followed the horses to where
-the boat lay.
-
-I thoroughly understood and appreciated the necessity for waiting,
-before crossing the fjord, for that moment when the sea at its highest
-point is in a state of slack water. As neither the ebb nor flow can then
-be felt, the ferry boat was in no danger of being carried out to sea, or
-dashed upon the rocky coast.
-
-The favorable moment did not come until six o'clock in the evening. Then
-my uncle, myself, and guide, two boatmen and the four horses got into a
-very awkward flat-bottom boat. Accustomed as I had been to the steam
-ferry boats of the Elbe, I found the long oars of the boatmen but sorry
-means of locomotion. We were more than an hour in crossing the fjord;
-but at length the passage was concluded without accident.
-
-Half an hour later we reached Gardar.
-
-## CHAPTER 10 TRAVELING IN ICELAND
-
-It ought, one would have thought, to have been night, even in the
-sixty-fifth parallel of latitude; but still the nocturnal illumination
-did not surprise me. For in Iceland, during the months of June and July,
-the sun never sets.
-
-The temperature, however, was very much lower than I expected. I was
-cold, but even that did not affect me so much as ravenous hunger.
-Welcome indeed, therefore, was the hut which hospitably opened its doors
-to us.
-
-It was merely the house of a peasant, but in the matter of hospitality,
-it was worthy of being the palace of a king. As we alighted at the door
-the master of the house came forward, held out his hand, and without any
-further ceremony, signaled to us to follow him.
-
-We followed him, for to accompany him was impossible. A long, narrow,
-gloomy passage led into the interior of this habitation, made from beams
-roughly squared by the ax. This passage gave ingress to every room. The
-chambers were four in number--the kitchen, the workshop, where the
-weaving was carried on, the general sleeping chamber of the family, and
-the best room, to which strangers were especially invited. My uncle,
-whose lofty stature had not been taken into consideration when the house
-was built, contrived to knock his head against the beams of the roof.
-
-We were introduced into our chamber, a kind of large room with a hard
-earthen floor, and lighted by a window, the panes of which were made of
-a sort of parchment from the intestines of sheep--very far from
-transparent.
-
-The bedding was composed of dry hay thrown into two long red wooden
-boxes, ornamented with sentences painted in Icelandic. I really had no
-idea that we should be made so comfortable. There was one objection to
-the house, and that was, the very powerful odor of dried fish, of
-macerated meat, and of sour milk, which three fragrances combined did
-not at all suit my olfactory nerves.
-
-As soon as we had freed ourselves from our heavy traveling costume, the
-voice of our host was heard calling to us to come into the kitchen, the
-only room in which the Icelanders ever make any fire, no matter how cold
-it may be.
-
-My uncle, nothing loath, hastened to obey this hospitable and friendly
-invitation. I followed.
-
-The kitchen chimney was made on an antique model. A large stone standing
-in the middle of the room was the fireplace; above, in the roof, was a
-hole for the smoke to pass through. This apartment was kitchen, parlor
-and dining room all in one.
-
-On our entrance, our worthy host, as if he had not seen us before,
-advanced ceremoniously, uttered a word which means "be happy," and then
-kissed both of us on the cheek.
-
-His wife followed, pronounced the same word, with the same ceremonial,
-then the husband and wife, placing their right hands upon their hearts,
-bowed profoundly.
-
-This excellent Icelandic woman was the mother of nineteen children, who,
-little and big, rolled, crawled, and walked about in the midst of
-volumes of smoke arising from the angular fireplace in the middle of the
-room. Every now and then I could see a fresh white head, and a slightly
-melancholy expression of countenance, peering at me through the vapor.
-
-Both my uncle and myself, however, were very friendly with the whole
-party, and before we were aware of it, there were three or four of these
-little ones on our shoulders, as many on our boxes, and the rest hanging
-about our legs. Those who could speak kept crying out saellvertu in
-every possible and impossible key. Those who did not speak only made all
-the more noise.
-
-This concert was interrupted by the announcement of supper. At this
-moment our worthy guide, the eider-duck hunter, came in after seeing to
-the feeding and stabling of the horses--which consisted in letting them
-loose to browse on the stunted green of the Icelandic prairies. There
-was little for them to eat, but moss and some very dry and innutritious
-grass; next day they were ready before the door, some time before we
-were.
-
-"Welcome," said Hans.
-
-Then tranquilly, with the air of an automaton, without any more
-expression in one kiss than another, he embraced the host and hostess
-and their nineteen children.
-
-This ceremony concluded to the satisfaction of all parties, we all sat
-down to table, that is twenty-four of us, somewhat crowded. Those who
-were best off had only two juveniles on their knees.
-
-As soon, however, as the inevitable soup was placed on the table, the
-natural taciturnity, common even to Icelandic babies, prevailed over all
-else. Our host filled our plates with a portion of lichen soup of
-Iceland moss, of by no means disagreeable flavor, an enormous lump of
-fish floating in sour butter. After that there came some skyr, a kind of
-curds and whey, served with biscuits and juniper-berry juice. To drink,
-we had blanda, skimmed milk with water. I was hungry, so hungry, that by
-way of dessert I finished up with a basin of thick oaten porridge.
-
-As soon as the meal was over, the children disappeared, whilst the grown
-people sat around the fireplace, on which was placed turf, heather, cow
-dung and dried fish-bones. As soon as everybody was sufficiently warm, a
-general dispersion took place, all retiring to their respective couches.
-Our hostess offered to pull off our stockings and trousers, according to
-the custom of the country, but as we graciously declined to be so
-honored, she left us to our bed of dry fodder.
-
-Next day, at five in the morning, we took our leave of these hospitable
-peasants. My uncle had great difficulty in making them accept a
-sufficient and proper remuneration.
-
-Hans then gave the signal to start.
-
-We had scarcely got a hundred yards from Gardar, when the character of
-the country changed. The soil began to be marshy and boggy, and less
-favorable to progress. To the right, the range of mountains was
-prolonged indefinitely like a great system of natural fortifications, of
-which we skirted the glacis. We met with numerous streams and rivulets
-which it was necessary to ford, and that without wetting our baggage. As
-we advanced, the deserted appearance increased, and yet now and then we
-could see human shadows flitting in the distance. When a sudden turn of
-the track brought us within easy reach of one of these specters, I felt
-a sudden impulse of disgust at the sight of a swollen head, with shining
-skin, utterly without hair, and whose repulsive and revolting wounds
-could be seen through his rags. The unhappy wretches never came forward
-to beg; on the contrary, they ran away; not so quick, however, but that
-Hans was able to salute them with the universal saellvertu.
-
-"Spetelsk," said he.
-
-"A leper," explained my uncle.
-
-The very sound of such a word caused a feeling of repulsion. The
-horrible affliction known as leprosy, which has almost vanished before
-the effects of modern science, is common in Iceland. It is not
-contagious but hereditary, so that marriage is strictly prohibited to
-these unfortunate creatures.
-
-These poor lepers did not tend to enliven our journey, the scene of
-which was inexpressibly sad and lonely. The very last tufts of grassy
-vegetation appeared to die at our feet. Not a tree was to be seen,
-except a few stunted willows about as big as blackberry bushes. Now and
-then we watched a falcon soaring in the grey and misty air, taking his
-flight towards warmer and sunnier regions. I could not help feeling a
-sense of melancholy come over me. I sighed for my own Native Land, and
-wished to be back with Gretchen.
-
-We were compelled to cross several little fjords, and at last came to a
-real gulf. The tide was at its height, and we were able to go over at
-once, and reach the hamlet of Alftanes, about a mile farther.
-
-That evening, after fording the Alfa and the Heta, two rivers rich in
-trout and pike, we were compelled to pass the night in a deserted house,
-worthy of being haunted by all the fays of Scandinavian mythology. The
-King of Cold had taken up his residence there, and made us feel his
-presence all night.
-
-The following day was remarkable by its lack of any particular
-incidents. Always the same damp and swampy soil; the same dreary
-uniformity; the same sad and monotonous aspect of scenery. In the
-evening, having accomplished the half of our projected journey, we slept
-at the Annexia of Krosolbt.
-
-For a whole mile we had under our feet nothing but lava. This
-disposition of the soil is called <i>hraun</i>: the crumbled lava on the
-surface was in some instances like ship cables stretched out
-horizontally, in others coiled up in heaps; an immense field of lava
-came from the neighboring mountains, all extinct volcanoes, but whose
-remains showed what once they had been. Here and there could be made out
-the steam from hot water springs.
-
-There was no time, however, for us to take more than a cursory view of
-these phenomena. We had to go forward with what speed we might. Soon the
-soft and swampy soil again appeared under the feet of our horses, while
-at every hundred yards we came upon one or more small lakes. Our journey
-was now in a westerly direction; we had, in fact, swept round the great
-bay of Faxa, and the twin white summits of Sneffels rose to the clouds
-at a distance of less than five miles.
-
-The horses now advanced rapidly. The accidents and difficulties of the
-soil no longer checked them. I confess that fatigue began to tell
-severely upon me; but my uncle was as firm and as hard as he had been on
-the first day. I could not help admiring both the excellent Professor
-and the worthy guide; for they appeared to regard this rugged expedition
-as a mere walk!
-
-On Saturday, the 20th June, at six o'clock in the evening, we reached
-Budir, a small town picturesquely situated on the shore of the ocean;
-and here the guide asked for his money. My uncle settled with him
-immediately. It was now the family of Hans himself, that is to say, his
-uncles, his cousins--german, who offered us hospitality. We were
-exceedingly well received, and without taking too much advantage of the
-goodness of these worthy people, I should have liked very much to have
-rested with them after the fatigues of the journey. But my uncle, who
-did not require rest, had no idea of anything of the kind; and despite
-the fact that next day was Sunday, I was compelled once more to mount my
-steed.
-
-The soil was again affected by the neighborhood of the mountains, whose
-granite peered out of the ground like tops of an old oak. We were
-skirting the enormous base of the mighty volcano. My uncle never took
-his eyes from off it; he could not keep from gesticulating, and looking
-at it with a kind of sullen defiance as much as to say "That is the
-giant I have made up my mind to conquer."
-
-After four hours of steady traveling, the horses stopped of themselves
-before the door of the presbytery of Stapi.
-
-## CHAPTER 11 WE REACH MOUNT SNEFFELS--THE "REYKIR"
-
-Stapi is a town consisting of thirty huts, built on a large plain of
-lava, exposed to the rays of the sun, reflected from the volcano. It
-stretches its humble tenements along the end of a little fjord,
-surrounded by a basaltic wall of the most singular character.
-
-Basalt is a brown rock of igneous origin. It assumes regular forms,
-which astonish by their singular appearance. Here we found Nature
-proceeding geometrically, and working quite after a human fashion, as if
-she had employed the plummet line, the compass and the rule. If
-elsewhere she produces grand artistic effects by piling up huge masses
-without order or connection--if elsewhere we see truncated cones,
-imperfect pyramids, with an odd succession of lines; here, as if wishing
-to give a lesson in regularity, and preceding the architects of the
-early ages, she has erected a severe order of architecture, which
-neither the splendors of Babylon nor the marvels of Greece ever
-surpassed.
-
-I had often heard of the Giant's Causeway in Ireland, and of Fingal's
-Cave in one of the Hebrides, but the grand spectacle of a real basaltic
-formation had never yet come before my eyes.
-
-This at Stapi gave us an idea of one in all its wonderful beauty and
-grace.
-
-The wall of the fjord, like nearly the whole of the peninsula, consisted
-of a series of vertical columns, in height about thirty feet. These
-upright pillars of stone, of the finest proportions, supported an
-archivault of horizontal columns which formed a kind of half-vaulted
-roof above the sea. At certain intervals, and below this natural basin,
-the eye was pleased and surprised by the sight of oval openings through
-which the outward waves came thundering in volleys of foam. Some banks
-of basalt, torn from their fastenings by the fury of the waves, lay
-scattered on the ground like the ruins of an ancient temple--ruins
-eternally young, over which the storms of ages swept without producing
-any perceptible effect!
-
-This was the last stage of our journey. Hans had brought us along with
-fidelity and intelligence, and I began to feel somewhat more comfortable
-when I reflected that he was to accompany us still farther on our way.
-
-When we halted before the house of the Rector, a small and incommodious
-cabin, neither handsome nor more comfortable than those of his
-neighbors, I saw a man in the act of shoeing a horse, a hammer in his
-hand, and a leathern apron tied round his waist.
-
-"Be happy," said the eider-down hunter, using his national salutation in
-his own language.
-
-"God dag--good day!" replied the former, in excellent Danish.
-
-"Kyrkoherde," cried Hans, turning round and introducing him to my uncle.
-
-"The Rector," repeated the worthy Professor; "it appears, my dear Harry,
-that this worthy man is the Rector, and is not above doing his own
-work."
-
-During the speaking of these words the guide intimated to the Kyrkoherde
-what was the true state of the case. The good man, ceasing from his
-occupation, gave a kind of halloo, upon which a tall woman, almost a
-giantess, came out of the hut. She was at least six feet high, which in
-that region is something considerable.
-
-My first impression was one of horror. I thought she had come to give us
-the Icelandic kiss. I had, however, nothing to fear, for she did not
-even show much inclination to receive us into her house.
-
-The room devoted to strangers appeared to me to be by far the worst in
-the presbytery; it was narrow, dirty and offensive. There was, however,
-no choice about the matter. The Rector had no notion of practicing the
-usual cordial and antique hospitality. Far from it. Before the day was
-over, I found we had to deal with a blacksmith, a fisherman, a hunter, a
-carpenter, anything but a clergyman. It must be said in his favor that
-we had caught him on a weekday; probably he appeared to greater
-advantage on the Sunday.
-
-These poor priests receive from the Danish Government a most
-ridiculously inadequate salary, and collect one quarter of the tithe of
-their parish--not more than sixty marks current, or about L3 10s.
-sterling. Hence the necessity of working to live. In truth, we soon
-found that our host did not count civility among the cardinal virtues.
-
-My uncle soon became aware of the kind of man he had to deal with.
-Instead of a worthy and learned scholar, he found a dull ill-mannered
-peasant. He therefore resolved to start on his great expedition as soon
-as possible. He did not care about fatigue, and resolved to spend a few
-days in the mountains.
-
-The preparations for our departure were made the very next day after our
-arrival at Stapi; Hans now hired three Icelanders to take the place of
-the horses--which could no longer carry our luggage. When, however,
-these worthy islanders had reached the bottom of the crater, they were
-to go back and leave us to ourselves. This point was settled before they
-would agree to start.
-
-On this occasion, my uncle partly confided in Hans, the eider-duck
-hunter, and gave him to understand that it was his intention to continue
-his exploration of the volcano to the last possible limits.
-
-Hans listened calmly, and then nodded his head. To go there, or
-elsewhere, to bury himself in the bowels of the earth, or to travel over
-its summits, was all the same to him! As for me, amused and occupied by
-the incidents of travel, I had begun to forget the inevitable future;
-but now I was once more destined to realize the actual state of affairs.
-What was to be done? Run away? But if I really had intended to leave
-Professor Hardwigg to his fate, it should have been at Hamburg and not
-at the foot of Sneffels.
-
-One idea, above all others, began to trouble me: a very terrible idea,
-and one calculated to shake the nerves of a man even less sensitive than
-myself.
-
-"Let us consider the matter," I said to myself; "we are going to ascend
-the Sneffels mountain. Well and good. We are about to pay a visit to the
-very bottom of the crater. Good, still. Others have done it and did not
-perish from that course.
-
-"That, however, is not the whole matter to be considered. If a road does
-really present itself by which to descend into the dark and
-subterraneous bowels of Mother Earth, if this thrice unhappy Saknussemm
-has really told the truth, we shall be most certainly lost in the midst
-of the labyrinth of subterraneous galleries of the volcano. Now, we have
-no evidence to prove that Sneffels is really extinct. What proof have we
-that an eruption is not shortly about to take place? Because the monster
-has slept soundly since 1219, does it follow that he is never to wake?
-
-"If he does wake what is to become of us?"
-
-These were questions worth thinking about, and upon them I reflected
-long and deeply. I could not lie down in search of sleep without
-dreaming of eruptions. The more I thought, the more I objected to be
-reduced to the state of dross and ashes.
-
-I could stand it no longer; so I determined at last to submit the whole
-case to my uncle, in the most adroit manner possible, and under the form
-of some totally irreconcilable hypothesis.
-
-I sought him. I laid before him my fears, and then drew back in order to
-let him get his passion over at his ease.
-
-"I have been thinking about the matter," he said, in the quietest tone
-in the world.
-
-What did he mean? Was he at last about to listen to the voice of reason?
-Did he think of suspending his projects? It was almost too much
-happiness to be true.
-
-I however made no remark. In fact, I was only too anxious not to
-interrupt him, and allowed him to reflect at his leisure. After some
-moments he spoke out.
-
-"I have been thinking about the matter," he resumed. "Ever since we have
-been at Stapi, my mind has been almost solely occupied with the grave
-question which has been submitted to me by yourself--for nothing would
-be unwiser and more inconsistent than to act with imprudence."
-
-"I heartily agree with you, my dear uncle," was my somewhat hopeful
-rejoinder.
-
-"It is now six hundred years since Sneffels has spoken, but though now
-reduced to a state of utter silence, he may speak again. New volcanic
-eruptions are always preceded by perfectly well-known phenomena. I have
-closely examined the inhabitants of this region; I have carefully
-studied the soil, and I beg to tell you emphatically, my dear Harry,
-there will be no eruption at present."
-
-As I listened to his positive affirmations, I was stupefied and could
-say nothing.
-
-"I see you doubt my word," said my uncle; "follow me."
-
-I obeyed mechanically.
-
-Leaving the presbytery, the Professor took a road through an opening in
-the basaltic rock, which led far away from the sea. We were soon in open
-country, if we could give such a name to a place all covered with
-volcanic deposits. The whole land seemed crushed under the weight of
-enormous stones--of trap, of basalt, of granite, of lava, and of all
-other volcanic substances.
-
-I could see many spouts of steam rising in the air. These white vapors,
-called in the Icelandic language "reykir," come from hot water
-fountains, and indicate by their violence the volcanic activity of the
-soil. Now the sight of these appeared to justify my apprehension. I was,
-therefore, all the more surprised and mortified when my uncle thus
-addressed me.
-
-"You see all this smoke, Harry, my boy?"
-
-"Yes, sir."
-
-"Well, as long as you see them thus, you have nothing to fear from the
-volcano."
-
-"How can that be?"
-
-"Be careful to remember this," continued the Professor. "At the approach
-of an eruption these spouts of vapor redouble their activity--to
-disappear altogether during the period of volcanic eruption; for the
-elastic fluids, no longer having the necessary tension, seek refuge in
-the interior of the crater, instead of escaping through the fissures of
-the earth. If, then, the steam remains in its normal or habitual state,
-if their energy does not increase, and if you add to this, the remark
-that the wind is not replaced by heavy atmospheric pressure and dead
-calm, you may be quite sure that there is no fear of any immediate
-eruption."
-
-"But--"
-
-"Enough, my boy. When science has sent forth her fiat--it is only to
-hear and obey."
-
-I came back to the house quite downcast and disappointed. My uncle had
-completely defeated me with his scientific arguments. Nevertheless, I
-had still one hope, and that was, when once we were at the bottom of the
-crater, that it would be impossible in default of a gallery or tunnel,
-to descend any deeper; and this, despite all the learned Saknussemms in
-the world.
-
-I passed the whole of the following night with a nightmare on my chest!
-and, after unheard-of miseries and tortures, found myself in the very
-depths of the earth, from which I was suddenly launched into planetary
-space, under the form of an eruptive rock!
-
-Next day, June 23d, Hans calmly awaited us outside the presbytery with
-his three companions loaded with provisions, tools, and instruments. Two
-iron-shod poles, two guns, and two large game bags, were reserved for my
-uncle and myself. Hans, who was a man who never forgot even the minutest
-precautions, had added to our baggage a large skin full of water, as an
-addition to our gourds. This assured us water for eight days.
-
-It was nine o'clock in the morning when we were quite ready. The rector
-and his huge wife or servant, I never knew which, stood at the door to
-see us off. They appeared to be about to inflict on us the usual final
-kiss of the Icelanders. To our supreme astonishment their adieu took the
-shape of a formidable bill, in which they even counted the use of the
-pastoral house, really and truly the most abominable and dirty place I
-ever was in. The worthy couple cheated and robbed us like a Swiss
-innkeeper, and made us feel, by the sum we had to pay, the splendors of
-their hospitality.
-
-My uncle, however, paid without bargaining. A man who had made up his
-mind to undertake a voyage into the Interior of the Earth, is not the
-man to haggle over a few miserable rix-dollars.
-
-This important matter settled, Hans gave the signal for departure, and
-some few moments later we had left Stapi.
-
-## CHAPTER 12 THE ASCENT OF MOUNT SNEFFELS
-
-The huge volcano which was the first stage of our daring experiment is
-above five thousand feet high. Sneffels is the termination of a long
-range of volcanic mountains, of a different character to the system of
-the island itself. One of its peculiarities is its two huge pointed
-summits. From whence we started it was impossible to make out the real
-outlines of the peak against the grey field of sky. All we could
-distinguish was a vast dome of white, which fell downwards from the head
-of the giant.
-
-The commencement of the great undertaking filled me with awe. Now that
-we had actually started, I began to believe in the reality of the
-undertaking!
-
-Our party formed quite a procession. We walked in single file, preceded
-by Hans, the imperturbable eider-duck hunter. He calmly led us by narrow
-paths where two persons could by no possibility walk abreast.
-Conversation was wholly impossible. We had all the more opportunity to
-reflect and admire the awful grandeur of the scene around.
-
-Beyond the extraordinary basaltic wall of the fjord of Stapi we found
-ourselves making our way through fibrous turf, over which grew a scanty
-vegetation of grass, the residuum of the ancient vegetation of the
-swampy peninsula. The vast mass of this combustible, the field of which
-as yet is utterly unexplored, would suffice to warm Iceland for a whole
-century. This mighty turf pit, measured from the bottom of certain
-ravines, is often not less than seventy feet deep, and presents to the
-eye the view of successive layers of black burned-up rocky detritus,
-separated by thin streaks of porous sandstone.
-
-The grandeur of the spectacle was undoubted, as well as its arid and
-deserted air.
-
-As a true nephew of the great Professor Hardwigg, and despite my
-preoccupation and doleful fears of what was to come, I observed with
-great interest the vast collection of mineralogical curiosities spread
-out before me in this vast museum of natural history. Looking back to my
-recent studies, I went over in thought the whole geological history of
-Iceland.
-
-This extraordinary and curious island must have made its appearance from
-out of the great world of waters at a comparatively recent date. Like
-the coral islands of the Pacific, it may, for aught we know, be still
-rising by slow and imperceptible degrees.
-
-If this really be the case, its origin can be attributed to only one
-cause--that of the continued action of subterranean fires.
-
-This was a happy thought.
-
-If so, if this were true, away with the theories of Sir Humphry Davy;
-away with the authority of the parchment of Arne Saknussemm; the
-wonderful pretensions to discovery on the part of my uncle--and to our
-journey!
-
-All must end in smoke.
-
-Charmed with the idea, I began more carefully to look about me. A
-serious study of the soil was necessary to negative or confirm my
-hypothesis. I took in every item of what I saw, and I began to
-comprehend the succession of phenomena which had preceded its formation.
-
-Iceland, being absolutely without sedimentary soil, is composed
-exclusively of volcanic tufa; that is to say, of an agglomeration of
-stones and of rocks of a porous texture. Long before the existence of
-volcanoes, it was composed of a solid body of massive trap rock lifted
-bodily and slowly out of the sea, by the action of the centrifugal force
-at work in the earth.
-
-The internal fires, however, had not as yet burst their bounds and
-flooded the exterior cake of Mother Earth with hot and raging lava.
-
-My readers must excuse this brief and somewhat pedantic geological
-lecture. But it is necessary to the complete understanding of what
-follows.
-
-At a later period in the world's history, a huge and mighty fissure
-must, reasoning by analogy, have been dug diagonally from the southwest
-to the northeast of the island, through which by degrees flowed the
-volcanic crust. The great and wondrous phenomenon then went on without
-violence--the outpouring was enormous, and the seething fused matter,
-ejected from the bowels of the earth, spread slowly and peacefully in
-the form of vast level plains, or what are called mamelons or mounds.
-
-It was at this epoch that the rocks called feldspars, syenites, and
-porphyries appeared.
-
-But as a natural consequence of this overflow, the depth of the island
-increased. It can readily be believed what an enormous quantity of
-elastic fluids were piled up within its centre, when at last it afforded
-no other openings, after the process of cooling the crust had taken
-place.
-
-At length a time came when despite the enormous thickness and weight of
-the upper crust, the mechanical forces of the combustible gases below
-became so great, that they actually upheaved the weighty back and made
-for themselves huge and gigantic shafts. Hence the volcanoes which
-suddenly arose through the upper crust, and next the craters, which
-burst forth at the summit of these new creations.
-
-It will be seen that the first phenomena in connection with the
-formation of the island were simply eruptive; to these, however, shortly
-succeeded the volcanic phenomena.
-
-Through the newly formed openings, escaped the marvelous mass of
-basaltic stones with which the plain we were now crossing was covered.
-We were trampling our way over heavy rocks of dark grey color, which,
-while cooling, had been moulded into six-sided prisms. In the "back
-distance" we could see a number of flattened cones, which formerly were
-so many fire-vomiting mouths.
-
-After the basaltic eruption was appeased and set at rest, the volcano,
-the force of which increased with that of the extinct craters, gave free
-passage to the fiery overflow of lava, and to the mass of cinders and
-pumice stone, now scattered over the sides of the mountain, like
-disheveled hair on the shoulders of a Bacchante.
-
-Here, in a nutshell, I had the whole history of the phenomena from which
-Iceland arose. All take their rise in the fierce action of interior
-fires, and to believe that the central mass did not remain in a state of
-liquid fire, white hot, was simply and purely madness.
-
-This being satisfactorily proved (Q.E.D.), what insensate folly to
-pretend to penetrate into the interior of the mighty earth!
-
-This mental lecture delivered to myself while proceeding on a journey,
-did me good. I was quite reassured as to the fate of our enterprise; and
-therefore went, like a brave soldier mounting a bristling battery, to
-the assault of old Sneffels.
-
-As we advanced, the road became every moment more difficult. The soil
-was broken and dangerous. The rocks broke and gave way under our feet,
-and we had to be scrupulously careful in order to avoid dangerous and
-constant falls.
-
-Hans advanced as calmly as if he had been walking over Salisbury Plain;
-sometimes he would disappear behind huge blocks of stone, and we
-momentarily lost sight of him. There was a little period of anxiety and
-then there was a shrill whistle, just to tell us where to look for him.
-
-Occasionally he would take it into his head to stop to pick up lumps of
-rock, and silently pile them up into small heaps, in order that we might
-not lose our way on our return.
-
-He had no idea of the journey we were about to undertake.
-
-At all events, the precaution was a good one; though how utterly useless
-and unnecessary--but I must not anticipate.
-
-Three hours of terrible fatigue, walking incessantly, had only brought
-us to the foot of the great mountain. This will give some notion of what
-we had still to undergo.
-
-Suddenly, however, Hans cried a halt--that is, he made signs to that
-effect--and a summary kind of breakfast was laid out on the lava before
-us. My uncle, who now was simply Professor Hardwigg, was so eager to
-advance, that he bolted his food like a greedy clown. This halt for
-refreshment was also a halt for repose. The Professor was therefore
-compelled to wait the good pleasure of his imperturbable guide, who did
-not give the signal for departure for a good hour.
-
-The three Icelanders, who were as taciturn as their comrade, did not say
-a word; but went on eating and drinking very quietly and soberly.
-
-From this, our first real stage, we began to ascend the slopes of the
-Sneffels volcano. Its magnificent snowy nightcap, as we began to call
-it, by an optical delusion very common in mountains, appeared to me to
-be close at hand; and yet how many long weary hours must elapse before
-we reached its summit. What unheard-of fatigue must we endure!
-
-The stones on the mountain side, held together by no cement of soil,
-bound together by no roots or creeping herbs, gave way continually under
-our feet, and went rushing below into the plains, like a series of small
-avalanches.
-
-In certain places the sides of this stupendous mountain were at an angle
-so steep that it was impossible to climb upwards, and we were compelled
-to get round these obstacles as best we might.
-
-Those who understand Alpine climbing will comprehend our difficulties.
-Often we were obliged to help each other along by means of our climbing
-poles.
-
-I must say this for my uncle, that he stuck as close to me as possible.
-He never lost sight of me, and on many occasions his arm supplied me
-with firm and solid support. He was strong, wiry, and apparently
-insensible to fatigue. Another great advantage with him was that he had
-the innate sentiment of equilibrium--for he never slipped or failed in
-his steps. The Icelanders, though heavily loaded, climbed with the
-agility of mountaineers.
-
-Looking up, every now and then, at the height of the great volcano of
-Sneffels, it appeared to me wholly impossible to reach to the summit on
-that side; at all events, if the angle of inclination did not speedily
-change.
-
-Fortunately, after an hour of unheard-of fatigues, and of gymnastic
-exercises that would have been trying to an acrobat, we came to a vast
-field of ice, which wholly surrounded the bottom of the cone of the
-volcano. The natives called it the tablecloth, probably from some such
-reason as the dwellers in the Cape of Good Hope call their mountain
-Table Mountain, and their roads Table Bay.
-
-Here, to our mutual surprise, we found an actual flight of stone steps,
-which wonderfully assisted our ascent. This singular flight of stairs
-was, like everything else, volcanic. It had been formed by one of those
-torrents of stones cast up by the eruptions, and of which the Icelandic
-name is stina. If this singular torrent had not been checked in its
-descent by the peculiar shape of the flanks of the mountain, it would
-have swept into the sea, and would have formed new islands.
-
-Such as it was, it served us admirably. The abrupt character of the
-slopes momentarily increased, but these remarkable stone steps, a little
-less difficult than those of the Egyptian pyramids, were the one simple
-natural means by which we were enabled to proceed.
-
-About seven in the evening of that day, after having clambered up two
-thousand of these rough steps, we found ourselves overlooking a kind of
-spur or projection of the mountain--a sort of buttress upon which the
-conelike crater, properly so called, leaned for support.
-
-The ocean lay beneath us at a depth of more than three thousand two
-hundred feet--a grand and mighty spectacle. We had reached the region of
-eternal snows.
-
-The cold was keen, searching and intense. The wind blew with
-extraordinary violence. I was utterly exhausted.
-
-My worthy uncle, the Professor, saw clearly that my legs refused further
-service, and that, in fact, I was utterly exhausted. Despite his hot and
-feverish impatience, he decided, with a sigh, upon a halt. He called the
-eider-duck hunter to his side. That worthy, however, shook his head.
-
-"Ofvanfor," was his sole spoken reply.
-
-"It appears," says my uncle with a woebegone look, "that we must go
-higher."
-
-He then turned to Hans, and asked him to give some reason for this
-decisive response.
-
-"Mistour," replied the guide.
-
-"Ja, mistour--yes, the mistour," cried one of the Icelandic guides in a
-terrified tone.
-
-It was the first time he had spoken.
-
-"What does this mysterious word signify?" I anxiously inquired.
-
-"Look," said my uncle.
-
-I looked down upon the plain below, and I saw a vast, a prodigious
-volume of pulverized pumice stone, of sand, of dust, rising to the
-heavens in the form of a mighty waterspout. It resembled the fearful
-phenomenon of a similar character known to the travelers in the desert
-of the great Sahara.
-
-The wind was driving it directly towards that side of Sneffels on which
-we were perched. This opaque veil standing up between us and the sun
-projected a deep shadow on the flanks of the mountain. If this sand
-spout broke over us, we must all be infallibly destroyed, crushed in its
-fearful embraces. This extraordinary phenomenon, very common when the
-wind shakes the glaciers, and sweeps over the arid plains, is in the
-Icelandic tongue called "mistour."
-
-"Hastigt, hastigt!" cried our guide.
-
-Now I certainly knew nothing of Danish, but I thoroughly understood that
-his gestures were meant to quicken us.
-
-The guide turned rapidly in a direction which would take us to the back
-of the crater, all the while ascending slightly.
-
-We followed rapidly, despite our excessive fatigue.
-
-A quarter of an hour later Hans paused to enable us to look back. The
-mighty whirlwind of sand was spreading up the slope of the mountain to
-the very spot where we had proposed to halt. Huge stones were caught up,
-cast into the air, and thrown about as during an eruption. We were
-happily a little out of the direction of the wind, and therefore out of
-reach of danger. But for the precaution and knowledge of our guide, our
-dislocated bodies, our crushed and broken limbs, would have been cast to
-the wind, like dust from some unknown meteor.
-
-Hans, however, did not think it prudent to pass the night on the bare
-side of the cone. We therefore continued our journey in a zigzag
-direction. The fifteen hundred feet which remained to be accomplished
-took us at least five hours. The turnings and windings, the
-no-thoroughfares, the marches and marches, turned that insignificant
-distance into at least three leagues. I never felt such misery, fatigue
-and exhaustion in my life. I was ready to faint from hunger and cold.
-The rarefied air at the same time painfully acted upon my lungs.
-
-At last, when I thought myself at my last gasp, about eleven at night,
-it being in that region quite dark, we reached the summit of Mount
-Sneffels! It was in an awful mood of mind, that despite my fatigue,
-before I descended into the crater which was to shelter us for the
-night, I paused to behold the sun rise at midnight on the very day of
-its lowest declension, and enjoyed the spectacle of its ghastly pale
-rays cast upon the isle which lay sleeping at our feet!
-
-I no longer wondered at people traveling all the way from England to
-Norway to behold this magical and wondrous spectacle.
-
-## CHAPTER 13 THE SHADOW OF SCARTARIS
-
-Our supper was eaten with ease and rapidity, after which everybody did
-the best he could for himself within the hollow of the crater. The bed
-was hard, the shelter unsatisfactory, the situation painful--lying in
-the open air, five thousand feet above the level of the sea!
-
-Nevertheless, it has seldom happened to me to sleep so well as I did on
-that particular night. I did not even dream. So much for the effects of
-what my uncle called "wholesome fatigue."
-
-Next day, when we awoke under the rays of a bright and glorious sun, we
-were nearly frozen by the keen air. I left my granite couch and made one
-of the party to enjoy a view of the magnificent spectacle which
-developed itself, panorama-like, at our feet.
-
-I stood upon the lofty summit of Mount Sneffels' southern peak. Thence I
-was able to obtain a view of the greater part of the island. The optical
-delusion, common to all lofty heights, raised the shores of the island,
-while the central portions appeared depressed. It was by no means too
-great a flight of fancy to believe that a giant picture was stretched
-out before me. I could see the deep valleys that crossed each other in
-every direction. I could see precipices looking like sides of wells,
-lakes that seemed to be changed into ponds, ponds that looked like
-puddles, and rivers that were transformed into petty brooks. To my right
-were glaciers upon glaciers, and multiplied peaks, topped with light
-clouds of smoke.
-
-The undulation of these infinite numbers of mountains, whose snowy
-summits make them look as if covered by foam, recalled to my remembrance
-the surface of a storm-beaten ocean. If I looked towards the west, the
-ocean lay before me in all its majestic grandeur, a continuation as it
-were, of these fleecy hilltops.
-
-Where the earth ended and the sea began it was impossible for the eye to
-distinguish.
-
-I soon felt that strange and mysterious sensation which is awakened in
-the mind when looking down from lofty hilltops, and now I was able to do
-so without any feeling of nervousness, having fortunately hardened
-myself to that kind of sublime contemplation.
-
-I wholly forgot who I was, and where I was. I became intoxicated with a
-sense of lofty sublimity, without thought of the abysses into which my
-daring was soon about to plunge me. I was presently, however, brought
-back to the realities of life by the arrival of the Professor and Hans,
-who joined me upon the lofty summit of the peak.
-
-My uncle, turning in a westerly direction, pointed out to me a light
-cloud of vapor, a kind of haze, with a faint outline of land rising out
-of the waters.
-
-"Greenland!" said he.
-
-"Greenland?" cried I in reply.
-
-"Yes," continued my uncle, who always when explaining anything spoke as
-if he were in a professor's chair; "we are not more than thirty-five
-leagues distant from that wonderful land. When the great annual breakup
-of the ice takes place, white bears come over to Iceland, carried by the
-floating masses of ice from the north. This, however, is a matter of
-little consequence. We are now on the summit of the great, the
-transcendent Sneffels, and here are its two peaks, north and south. Hans
-will tell you the name by which the people of Iceland call that on which
-we stand."
-
-My uncle turned to the imperturbable guide, who nodded, and spoke as
-usual--one word.
-
-"Scartaris."
-
-My uncle looked at me with a proud and triumphant glance.
-
-"A crater," he said, "you hear?"
-
-I did hear, but I was totally unable to make reply.
-
-The crater of Mount Sneffels represented an inverted cone, the gaping
-orifice apparently half a mile across; the depth indefinite feet.
-Conceive what this hole must have been like when full of flame and
-thunder and lightning. The bottom of the funnel-shaped hollow was about
-five hundred feet in circumference, by which it will be seen that the
-slope from the summit to the bottom was very gradual, and we were
-therefore clearly able to get there without much fatigue or difficulty.
-Involuntarily, I compared this crater to an enormous loaded cannon; and
-the comparison completely terrified me.
-
-"To descend into the interior of a cannon," I thought to myself, "when
-perhaps it is loaded, and will go off at the least shock, is the act of
-a madman."
-
-But there was no longer any opportunity for me to hesitate. Hans, with a
-perfectly calm and indifferent air, took his usual post at the head of
-the adventurous little band. I followed without uttering a syllable.
-
-I felt like the lamb led to the slaughter.
-
-In order to render the descent less difficult, Hans took his way down
-the interior of the cone in rather a zigzag fashion, making, as the
-sailors say, long tracks to the eastward, followed by equally long ones
-to the west. It was necessary to walk through the midst of eruptive
-rocks, some of which, shaken in their balance, went rolling down with
-thundering clamor to the bottom of the abyss. These continual falls
-awoke echoes of singular power and effect.
-
-Many portions of the cone consisted of inferior glaciers. Hans, whenever
-he met with one of these obstacles, advanced with a great show of
-precaution, sounding the soil with his long iron pole in order to
-discover fissures and layers of deep soft snow. In many doubtful or
-dangerous places, it became necessary for us to be tied together by a
-long rope in order that should any one of us be unfortunate enough to
-slip, he would be supported by his companions. This connecting link was
-doubtless a prudent precaution, but not by any means unattended with
-danger.
-
-Nevertheless, and despite all the manifold difficulties of the descent,
-along slopes with which our guide was wholly unacquainted, we made
-considerable progress without accident. One of our great parcels of rope
-slipped from one of the Iceland porters, and rushed by a short cut to
-the bottom of the abyss.
-
-By midday we were at the end of our journey. I looked upwards, and saw
-only the upper orifice of the cone, which served as a circular frame to
-a very small portion of the sky--a portion which seemed to me singularly
-beautiful. Should I ever again gaze on that lovely sunlit sky!
-
-The only exception to this extraordinary landscape, was the Peak of
-Scartaris, which seemed lost in the great void of the heavens.
-
-The bottom of the crater was composed of three separate shafts, through
-which, during periods of eruption, when Sneffels was in action, the
-great central furnace sent forth its burning lava and poisonous vapors.
-Each of these chimneys or shafts gaped open-mouthed in our path. I kept
-as far away from them as possible, not even venturing to take the
-faintest peep downwards.
-
-As for the Professor, after a rapid examination of their disposition and
-characteristics, he became breathless and panting. He ran from one to
-the other like a delighted schoolboy, gesticulating wildly, and uttering
-incomprehensible and disjointed phrases in all sorts of languages.
-
-Hans, the guide, and his humbler companions seated themselves on some
-piles of lava and looked silently on. They clearly took my uncle for a
-lunatic; and--waited the result.
-
-Suddenly the Professor uttered a wild, unearthly cry. At first I
-imagined he had lost his footing, and was falling headlong into one of
-the yawning gulfs. Nothing of the kind. I saw him, his arms spread out
-to their widest extent, his legs stretched apart, standing upright
-before an enormous pedestal, high enough and black enough to bear a
-gigantic statue of Pluto. His attitude and mien were that of a man
-utterly stupefied. But his stupefaction was speedily changed to the
-wildest joy.
-
-"Harry! Harry! come here!" he cried; "make haste--wonderful--wonderful!"
-
-Unable to understand what he meant, I turned to obey his commands.
-Neither Hans nor the other Icelanders moved a step.
-
-"Look!" said the Professor, in something of the manner of the French
-general, pointing out the pyramids to his army.
-
-And fully partaking his stupefaction, if not his joy, I read on the
-eastern side of the huge block of stone, the same characters, half eaten
-away by the corrosive action of time, the name, to me a thousand times
-accursed--
-
-"Arne Saknussemm!" cried my uncle, "now, unbeliever, do you begin to
-have faith?"
-
-It was totally impossible for me to answer a single word. I went back to
-my pile of lava, in a state of silent awe. The evidence was
-unanswerable, overwhelming!
-
-In a few moments, however, my thoughts were far away, back in my German
-home, with Gretchen and the old cook. What would I have given for one of
-my cousin's smiles, for one of the ancient domestic's omelettes, and for
-my own feather bed!
-
-How long I remained in this state I know not. All I can say is, that
-when at last I raised my head from between my hands, there remained at
-the bottom of the crater only myself, my uncle and Hans. The Icelandic
-porters had been dismissed and were now descending the exterior slopes
-of Mount Sneffels, on their way to Stapi. How heartily did I wish myself
-with them!
-
-Hans slept tranquilly at the foot of a rock in a kind of rill of lava,
-where he had made himself a rough and ready bed. MY uncle was walking
-about the bottom of the crater like a wild beast in a cage. I had no
-desire, neither had I the strength, to move from my recumbent position.
-Taking example by the guide, I gave way to a kind of painful somnolency,
-during which I seemed both to hear and feel continued heavings and
-shudderings in the mountain.
-
-In this way we passed our first night in the interior of a crater.
-
-Next morning, a grey, cloudy, heavy sky hung like a funereal pall over
-the summit of the volcanic cone. I did not notice it so much from the
-obscurity that reigned around us, as from the rage with which my uncle
-was devoured.
-
-I fully understood the reason, and again a glimpse of hope made my heart
-leap with joy. I will briefly explain the cause.
-
-Of the three openings which yawned beneath our steps, only one could
-have been followed by the adventurous Saknussemm. According to the words
-of the learned Icelander, it was only to be known by that one particular
-mentioned in the cryptograph, that the shadow of Scartaris fell upon it,
-just touching its mouth in the last days of the month of June.
-
-We were, in fact, to consider the pointed peak as the stylus of an
-immense sun-dial, the shadow of which pointed on one given day, like the
-inexorable finger of fate, to the yawning chasm which led into the
-interior of the earth.
-
-Now, as often happens in these regions, should the sun fail to burst
-through the clouds, no shadow. Consequently, no chance of discovering
-the right aperture. We had already reached the 25th June. If the kindly
-heavens would only remain densely clouded for six more days, we should
-have to put off our voyage of discovery for another year, when certainly
-there would be one person fewer in the party. I already had sufficient
-of the mad and monstrous enterprise.
-
-It would be utterly impossible to depict the impotent rage of Professor
-Hardwigg. The day passed away, and not the faintest outline of a shadow
-could be seen at the bottom of the crater. Hans the guide never moved
-from his place. He must have been curious to know what we were about, if
-indeed he could believe we were about anything. As for my uncle, he
-never addressed a word to me. He was nursing his wrath to keep it warm!
-His eyes fixed on the black and foggy atmosphere, his complexion hideous
-with suppressed passion. Never had his eyes appeared so fierce, his nose
-so aquiline, his mouth so hard and firm.
-
-On the 26th no change for the better. A mixture of rain and snow fell
-during the whole day. Hans very quietly built himself a hut of lava into
-which he retired like Diogenes into his tub. I took a malicious delight
-in watching the thousand little cascades that flowed down the side of
-the cone, carrying with them at times a stream of stones into the "vasty
-deep" below.
-
-My uncle was almost frantic: to be sure, it was enough to make even a
-patient man angry. He had reached to a certain extent the goal of his
-desires, and yet he was likely to be wrecked in port.
-
-But if the heavens and the elements are capable of causing us much pain
-and sorrow, there are two sides to a medal. And there was reserved for
-Professor Hardwigg a brilliant and sudden surprise which was to
-compensate him for all his sufferings.
-
-Next day the sky was still overcast, but on Sunday, the 28th, the last
-day but two of the month, with a sudden change of wind and a new moon
-there came a change of weather. The sun poured its beaming rays to the
-very bottom of the crater.
-
-Each hillock, every rock, every stone, every asperity of the soil had
-its share of the luminous effulgence, and its shadow fell heavily on the
-soil. Among others, to his insane delight, the shadow of Scartaris was
-marked and clear, and moved slowly with the radiant start of day.
-
-My uncle moved with it in a state of mental ecstasy.
-
-At twelve o'clock exactly, when the sun had attained its highest
-altitude for the day, the shadow fell upon the edge of the central pit!
-
-"Here it is," gasped the Professor in an agony of joy, "here it is--we
-have found it. Forward, my friends, into the Interior of the Earth."
-
-I looked curiously at Hans to see what reply he would make to this
-terrific announcement.
-
-"Forut," said the guide tranquilly.
-
-"Forward it is," answered my uncle, who was now in the seventh heaven of
-delight.
-
-When we were quite ready, our watches indicated thirteen minutes past
-one!
-
-## CHAPTER 14 THE REAL JOURNEY COMMENCES
-
-Our real journey had now commenced. Hitherto our courage and
-determination had overcome all difficulties. We were fatigued at times;
-and that was all. Now we were about to encounter unknown and fearful
-dangers.
-
-I had not as yet ventured to take a glimpse down the horrible abyss into
-which in a few minutes more I was about to plunge. The fatal moment had,
-however, at last arrived. I had still the option of refusing or
-accepting a share in this foolish and audacious enterprise. But I was
-ashamed to show more fear than the eider-duck hunter. Hans seemed to
-accept the difficulties of the journey so tranquilly, with such calm
-indifference, with such perfect recklessness of all danger, that I
-actually blushed to appear less of a man than he!
-
-Had I been alone with my uncle, I should certainly have sat down and
-argued the point fully; but in the presence of the guide I held my
-tongue. I gave one moment to the thought of my charming cousin, and then
-I advanced to the mouth of the central shaft.
-
-It measured about a hundred feet in diameter, which made about three
-hundred in circumference. I leaned over a rock which stood on its edge,
-and looked down. My hair stood on end, my teeth chattered, my limbs
-trembled. I seemed utterly to lose my centre of gravity, while my head
-was in a sort of whirl, like that of a drunken man. There is nothing
-more powerful than this attraction towards an abyss. I was about to fall
-headlong into the gaping well, when I was drawn back by a firm and
-powerful hand. It was that of Hans. I had not taken lessons enough at
-the Frelser's-Kirk of Copenhagen in the art of looking down from lofty
-eminences without blinking!
-
-However, few as the minutes were during which I gazed down this
-tremendous and even wondrous shaft, I had a sufficient glimpse of it to
-give me some idea of its physical conformation. Its sides, which were
-almost as perpendicular as those of a well, presented numerous
-projections which doubtless would assist our descent.
-
-It was a sort of wild and savage staircase, without bannister or fence.
-A rope fastened above, near the surface, would certainly support our
-weight and enable us to reach the bottom, but how, when we had arrived
-at its utmost depth, were we to loosen it above? This was, I thought, a
-question of some importance.
-
-My uncle, however, was one of those men who are nearly always prepared
-with expedients. He hit upon a very simple method of obviating this
-difficulty. He unrolled a cord about as thick as my thumb, and at least
-four hundred feet in length. He allowed about half of it to go down the
-pit and catch in a hitch over a great block of lava which stood on the
-edge of the precipice. This done, he threw the second half after the
-first.
-
-Each of us could now descend by catching the two cords in one hand. When
-about two hundred feet below, all the explorer had to do was to let go
-one end and pull away at the other, when the cord would come falling at
-his feet. In order to go down farther, all that was necessary was to
-continue the same operation.
-
-This was a very excellent proposition, and no doubt, a correct one.
-Going down appeared to me easy enough; it was the coming up again that
-now occupied my thoughts.
-
-"Now," said my uncle, as soon as he had completed this important
-preparation, "let us see about the baggage. It must be divided into
-three separate parcels, and each of us must carry one on his back. I
-allude to the more important and fragile articles."
-
-My worthy and ingenious uncle did not appear to consider that we came
-under the denomination.
-
-"Hans," he continued, "you will take charge of the tools and some of the
-provisions; you, Harry, must take possession of another third of the
-provisions and of the arms. I will load myself with the rest of the
-eatables, and with the more delicate instruments."
-
-"But," I exclaimed, "our clothes, this mass of cord and ladders--who
-will undertake to carry them down?"
-
-"They will go down of themselves."
-
-"And how so?" I asked.
-
-"You shall see."
-
-My uncle was not fond of half measures, nor did he like anything in the
-way of hesitation. Giving his orders to Hans he had the whole of the
-nonfragile articles made up into one bundle; and the packet, firmly and
-solidly fastened, was simply pitched over the edge of the gulf.
-
-I heard the moaning of the suddenly displaced air, and the noise of
-falling stones. My uncle leaning over the abyss followed the descent of
-his luggage with a perfectly self-satisfied air, and did not rise until
-it had completely disappeared from sight.
-
-"Now then," he cried, "it is our turn."
-
-I put it in good faith to any man of common sense--was it possible to
-hear this energetic cry without a shudder?
-
-The Professor fastened his case of instruments on his back. Hans took
-charge of the tools, I of the arms. The descent then commenced in the
-following order: Hans went first, my uncle followed, and I went last.
-Our progress was made in profound silence--a silence only troubled by
-the fall of pieces of rock, which breaking from the jagged sides, fell
-with a roar into the depths below.
-
-I allowed myself to slide, so to speak, holding frantically on the
-double cord with one hand and with the other keeping myself off the
-rocks by the assistance of my iron-shod pole. One idea was all the time
-impressed upon my brain. I feared that the upper support would fail me.
-The cord appeared to me far too fragile to bear the weight of three such
-persons as we were, with our luggage. I made as little use of it as
-possible, trusting to my own agility and doing miracles in the way of
-feats of dexterity and strength upon the projecting shelves and spurs of
-lava which my feet seemed to clutch as strongly as my hands.
-
-The guide went first, I have said, and when one of the slippery and
-frail supports broke from under his feet he had recourse to his usual
-monosyllabic way of speaking.
-
-"Gif akt--"
-
-"Attention--look out," repeated my uncle.
-
-In about half an hour we reached a kind of small terrace formed by a
-fragment of rock projecting some distance from the sides of the shaft.
-
-Hans now began to haul upon the cord on one side only, the other going
-as quietly upward as the other came down. It fell at last, bringing with
-it a shower of small stones, lava and dust, a disagreeable kind of rain
-or hail.
-
-While we were seated on this extraordinary bench I ventured once more to
-look downwards. With a sigh I discovered that the bottom was still
-wholly invisible. Were we, then, going direct to the interior of the
-earth?
-
-The performance with the cord recommenced, and a quarter of an hour
-later we had reached to the depth of another two hundred feet.
-
-I have very strong doubts if the most determined geologist would, during
-that descent, have studied the nature of the different layers of earth
-around him. I did not trouble my head much about the matter; whether we
-were among the combustible carbon, Silurians, or primitive soil, I
-neither knew nor cared to know.
-
-Not so the inveterate Professor. He must have taken notes all the way
-down, for, at one of our halts, he began a brief lecture.
-
-"The farther we advance," said he, "the greater is my confidence in the
-result. The disposition of these volcanic strata absolutely confirms the
-theories of Sir Humphry Davy. We are still within the region of the
-primordial soil, the soil in which took place the chemical operation of
-metals becoming inflamed by coming in contact with the air and water. I
-at once regret the old and now forever exploded theory of a central
-fire. At all events, we shall soon know the truth."
-
-Such was the everlasting conclusion to which he came. I, however, was
-very far from being in humor to discuss the matter. I had something else
-to think of. My silence was taken for consent; and still we continued to
-go down.
-
-At the expiration of three hours, we were, to all appearance, as far off
-as ever from the bottom of the well. When I looked upwards, however, I
-could see that the upper orifice was every minute decreasing in size.
-The sides of the shaft were getting closer and closer together, we were
-approaching the regions of eternal night!
-
-And still we continued to descend!
-
-At length, I noticed that when pieces of stone were detached from the
-sides of this stupendous precipice, they were swallowed up with less
-noise than before. The final sound was sooner heard. We were approaching
-the bottom of the abyss!
-
-As I had been very careful to keep account of all the changes of cord
-which took place, I was able to tell exactly what was the depth we had
-reached, as well as the time it had taken.
-
-We had shifted the rope twenty-eight times, each operation taking a
-quarter of an hour, which in all made seven hours. To this had to be
-added twenty-eight pauses; in all ten hours and a half. We started at
-one, it was now, therefore, about eleven o'clock at night.
-
-It does not require great knowledge of arithmetic to know that
-twenty-eight times two hundred feet makes five thousand six hundred feet
-in all (more than an English mile).
-
-While I was making this mental calculation a voice broke the silence. It
-was the voice of Hans.
-
-"Halt!" he cried.
-
-I checked myself very suddenly, just at the moment when I was about to
-kick my uncle on the head.
-
-"We have reached the end of our journey," said the worthy Professor in a
-satisfied tone.
-
-"What, the interior of the earth?" said I, slipping down to his side.
-
-"No, you stupid fellow! but we have reached the bottom of the well."
-
-"And I suppose there is no farther progress to be made?" I hopefully
-exclaimed.
-
-"Oh, yes, I can dimly see a sort of tunnel, which turns off obliquely to
-the right. At all events, we must see about that tomorrow. Let us sup
-now, and seek slumber as best we may."
-
-I thought it time, but made no observations on that point. I was fairly
-launched on a desperate course, and all I had to do was to go forward
-hopefully and trustingly.
-
-It was not even now quite dark, the light filtering down in a most
-extraordinary manner.
-
-We opened the provision bag, ate a frugal supper, and each did his best
-to find a bed amid the pile of stones, dirt, and lava which had
-accumulated for ages at the bottom of the shaft.
-
-I happened to grope out the pile of ropes, ladders, and clothes which we
-had thrown down; and upon them I stretched myself. After such a day's
-labor, my rough bed seemed as soft as down!
-
-For a while I lay in a sort of pleasant trance.
-
-Presently, after lying quietly for some minutes, I opened my eyes and
-looked upwards. As I did so I made out a brilliant little dot, at the
-extremity of this long, gigantic telescope.
-
-It was a star without scintillating rays. According to my calculation,
-it must be Beta in the constellation of the Little Bear.
-
-After this little bit of astronomical recreation, I dropped into a sound
-sleep.
-
-## CHAPTER 15 WE CONTINUE OUR DESCENT
-
-At eight o'clock the next morning, a faint kind of dawn of day awoke us.
-The thousand and one prisms of the lava collected the light as it passed
-and brought it to us like a shower of sparks.
-
-We were able with ease to see objects around us.
-
-"Well, Harry, my boy," cried the delighted Professor, rubbing his hands
-together, "what say you now? Did you ever pass a more tranquil night in
-our house in the Konigstrasse? No deafening sounds of cart wheels, no
-cries of hawkers, no bad language from boatmen or watermen!"
-
-"Well, Uncle, we are quite at the bottom of this well--but to me there
-is something terrible in this calm."
-
-"Why," said the Professor hotly, "one would say you were already
-beginning to be afraid. How will you get on presently? Do you know, that
-as yet, we have not penetrated one inch into the bowels of the earth."
-
-"What can you mean, sir?" was my bewildered and astonished reply.
-
-"I mean to say that we have only just reached the soil of the island
-itself. This long vertical tube, which ends at the bottom of the crater
-of Sneffels, ceases here just about on a level with the sea."
-
-"Are you sure, sir?"
-
-"Quite sure. Consult the barometer."
-
-It was quite true that the mercury, after rising gradually in the
-instrument, as long as our descent was taking place, had stopped
-precisely at twenty-nine degrees.
-
-"You perceive," said the Professor, "we have as yet only to endure the
-pressure of air. I am curious to replace the barometer by the
-manometer."
-
-The barometer, in fact, was about to become useless--as soon as the
-weight of the air was greater than what was calculated as above the
-level of the ocean.
-
-"But," said I, "is it not very much to be feared that this
-ever-increasing pressure may not in the end turn out very painful and
-inconvenient?"
-
-"No," said he. "We shall descend very slowly, and our lungs will be
-gradually accustomed to breathe compressed air. It is well known that
-aeronauts have gone so high as to be nearly without air at all--why,
-then, should we not accustom ourselves to breathe when we have, say, a
-little too much of it? For myself, I am certain I shall prefer it. Let
-us not lose a moment. Where is the packet which preceded us in our
-descent?"
-
-I smilingly pointed it out to my uncle. Hans had not seen it, and
-believed it caught somewhere above us: "Huppe" as he phrased it.
-
-"Now," said my uncle, "let us breakfast, and break fast like people who
-have a long day's work before them."
-
-Biscuit and dried meat, washed down by some mouthfuls of water flavored
-with Schiedam, was the material of our luxurious meal.
-
-As soon as it was finished, my uncle took from his pocket a notebook
-destined to be filled by memoranda of our travels. He had already placed
-his instruments in order, and this is what he wrote:
-
-Monday, June 29th
-
-Chronometer, 8h. 17m. morning.
-
-Barometer, 29.6 inches.
-
-Thermometer, 6 degrees [43 degrees Fahr.]
-
-Direction, E.S.E.
-
-This last observation referred to the obscure gallery, and was indicated
-to us by the compass.
-
-"Now, Harry," cried the Professor, in an enthusiastic tone of voice, "we
-are truly about to take our first step into the Interior of the Earth;
-never before visited by man since the first creation of the world. You
-may consider, therefore, that at this precise moment our travels really
-commence."
-
-As my uncle made this remark, he took in one hand the Ruhmkorff coil
-apparatus, which hung round his neck, and with the other he put the
-electric current into communication with the worm of the lantern. And a
-bright light at once illumined that dark and gloomy tunnel!
-
-The effect was magical!
-
-Hans, who carried the second apparatus, had it also put into operation.
-This ingenious application of electricity to practical purposes enabled
-us to move along by the light of an artificial day, amid even the flow
-of the most inflammable and combustible gases.
-
-"Forward!" cried my uncle. Each took up his burden. Hans went first, my
-uncle followed, and I going third, we entered the somber gallery!
-
-Just as we were about to engulf ourselves in this dismal passage, I
-lifted up my head, and through the tubelike shaft saw that Iceland sky I
-was never to see again!
-
-Was it the last I should ever see of any sky?
-
-The stream of lava flowing from the bowels of the earth in 1219 had
-forced itself a passage through the tunnel. It lined the whole of the
-inside with its thick and brilliant coating. The electric light added
-very greatly to the brilliancy of the effect.
-
-The great difficulty of our journey now began. How were we to prevent
-ourselves from slipping down the steeply inclined plane? Happily some
-cracks, abrasures of the soil, and other irregularities, served the
-place of steps; and we descended slowly; allowing our heavy luggage to
-slip on before, at the end of a long cord.
-
-But that which served as steps under our feet became in other places
-stalactites. The lava, very porous in certain places, took the form of
-little round blisters. Crystals of opaque quartz, adorned with limpid
-drops of natural glass suspended to the roof like lusters, seemed to
-take fire as we passed beneath them. One would have fancied that the
-genii of romance were illuminating their underground palaces to receive
-the sons of men.
-
-"Magnificent, glorious!" I cried in a moment of involuntary enthusiasm,
-"What a spectacle, Uncle! Do you not admire these variegated shades of
-lava, which run through a whole series of colors, from reddish brown to
-pale yellow--by the most insensible degrees? And these crystals, they
-appear like luminous globes."
-
-"You are beginning to see the charms of travel, Master Harry," cried my
-uncle. "Wait a bit, until we advance farther. What we have as yet
-discovered is nothing--onwards, my boy, onwards!"
-
-It would have been a far more correct and appropriate expression, had he
-said, "let us slide," for we were going down an inclined plane with
-perfect ease. The compass indicated that we were moving in a
-southeasterly direction. The flow of lava had never turned to the right
-or the left. It had the inflexibility of a straight line.
-
-Nevertheless, to my surprise, we found no perceptible increase in heat.
-This proved the theories of Humphry Davy to be founded on truth, and
-more than once I found myself examining the thermometer in silent
-astonishment.
-
-Two hours after our departure it only marked fifty-four degrees
-Fahrenheit. I had every reason to believe from this that our descent was
-far more horizontal than vertical. As for discovering the exact depth to
-which we had attained, nothing could be easier. The Professor as he
-advanced measured the angles of deviation and inclination; but he kept
-the result of his observations to himself.
-
-About eight o'clock in the evening, my uncle gave the signal for
-halting. Hans seated himself on the ground. The lamps were hung to
-fissures in the lava rock. We were now in a large cavern where air was
-not wanting. On the contrary, it abounded. What could be the cause of
-this--to what atmospheric agitation could be ascribed this draught? But
-this was a question which I did not care to discuss just then. Fatigue
-and hunger made me incapable of reasoning. An unceasing march of seven
-hours had not been kept up without great exhaustion. I was really and
-truly worn out; and delighted enough I was to hear the word Halt.
-
-Hans laid out some provisions on a lump of lava, and we each supped with
-keen relish. One thing, however, caused us great uneasiness--our water
-reserve was already half exhausted. My uncle had full confidence in
-finding subterranean resources, but hitherto we had completely failed in
-so doing. I could not help calling my uncle's attention to the
-circumstance.
-
-"And you are surprised at this total absence of springs?" he said.
-
-"Doubtless--I am very uneasy on the point. We have certainly not enough
-water to last us five days."
-
-"Be quite easy on that matter," continued my uncle. "I answer for it we
-shall find plenty of water--in fact, far more than we shall want."
-
-"But when?"
-
-"When we once get through this crust of lava. How can you expect springs
-to force their way through these solid stone walls?"
-
-"But what is there to prove that this concrete mass of lava does not
-extend to the centre of the earth? I don't think we have as yet done
-much in a vertical way."
-
-"What puts that into your head, my boy?" asked my uncle mildly.
-
-"Well, it appears to me that if we had descended very far below the
-level of the sea--we should find it rather hotter than we have."
-
-"According to your system," said my uncle; "but what does the
-thermometer say?"
-
-"Scarcely fifteen degrees by Reaumur, which is only an increase of nine
-since our departure."
-
-"Well, and what conclusion does that bring you to?" inquired the
-Professor.
-
-"The deduction I draw from this is very simple. According to the most
-exact observations, the augmentation of the temperature of the interior
-of the earth is one degree for every hundred feet. But certain local
-causes may considerably modify this figure. Thus at Yakoust in Siberia,
-it has been remarked that the heat increases a degree every thirty-six
-feet. The difference evidently depends on the conductibility of certain
-rocks. In the neighborhood of an extinct volcano, it has been remarked
-that the elevation of temperature was only one degree in every
-five-and-twenty feet. Let us, then, go upon this calculation--which is
-the most favorable--and calculate."
-
-"Calculate away, my boy."
-
-"Nothing easier," said I, pulling out my notebook and pencil. "Nine
-times one hundred and twenty-five feet make a depth of eleven hundred
-and twenty-five feet."
-
-"Archimedes could not have spoken more geometrically."
-
-"Well?"
-
-"Well, according to my observations, we are at least ten thousand feet
-below the level of the sea."
-
-"Can it be possible?"
-
-"Either my calculation is correct, or there is no truth in figures."
-
-The calculations of the Professor were perfectly correct. We were
-already six thousand feet deeper down in the bowels of the earth than
-anyone had ever been before. The lowest known depth to which man had
-hitherto penetrated was in the mines of Kitzbuhel, in the Tirol, and
-those of Wurttemberg.
-
-The temperature, which should have been eighty-one, was in this place
-only fifteen. This was a matter for serious consideration.
-
-## CHAPTER 16 THE EASTERN TUNNEL
-
-The next day was Tuesday, the 30th of June--and at six o'clock in the
-morning we resumed our journey.
-
-We still continued to follow the gallery of lava, a perfect natural
-pathway, as easy of descent as some of those inclined planes which, in
-very old German houses, serve the purpose of staircases. This went on
-until seventeen minutes past twelve, the precise instant at which we
-rejoined Hans, who, having been somewhat in advance, had suddenly
-stopped.
-
-"At last," cried my uncle, "we have reached the end of the shaft."
-
-I looked wonderingly about me. We were in the centre of four cross
-paths--somber and narrow tunnels. The question now arose as to which it
-was wise to take; and this of itself was no small difficulty.
-
-My uncle, who did not wish to appear to have any hesitation about the
-matter before myself or the guide, at once made up his mind. He pointed
-quietly to the eastern tunnel; and, without delay, we entered within its
-gloomy recesses.
-
-Besides, had he entertained any feeling of hesitation it might have been
-prolonged indefinitely, for there was no indication by which to
-determine on a choice. It was absolutely necessary to trust to chance
-and good fortune!
-
-The descent of this obscure and narrow gallery was very gradual and
-winding. Sometimes we gazed through a succession of arches, its course
-very like the aisles of a Gothic cathedral. The great artistic sculptors
-and builders of the Middle Ages might have here completed their studies
-with advantage. Many most beautiful and suggestive ideas of
-architectural beauty would have been discovered by them. After passing
-through this phase of the cavernous way, we suddenly came, about a mile
-farther on, upon a square system of arch, adopted by the early Romans,
-projecting from the solid rock, and keeping up the weight of the roof.
-
-Suddenly we would come upon a series of low subterranean tunnels which
-looked like beaver holes, or the work of foxes--through whose narrow and
-winding ways we had literally to crawl!
-
-The heat still remained at quite a supportable degree. With an
-involuntary shudder, I reflected on what the heat must have been when
-the volcano of Sneffels was pouring its smoke, flames, and streams of
-boiling lava--all of which must have come up by the road we were now
-following. I could imagine the torrents of hot seething stone darting
-on, bubbling up with accompaniments of smoke, steam, and sulphurous
-stench!
-
-"Only to think of the consequences," I mused, "if the old volcano were
-once more to set to work."
-
-I did not communicate these rather unpleasant reflections to my uncle.
-He not only would not have understood them, but would have been
-intensely disgusted. His only idea was to go ahead. He walked, he slid,
-he clambered over piles of fragments, he rolled down heaps of broken
-lava, with an earnestness and conviction it was impossible not to
-admire.
-
-At six o'clock in the evening, after a very wearisome journey, but one
-not so fatiguing as before, we had made six miles towards the southward,
-but had not gone more than a mile downwards.
-
-My uncle, as usual, gave the signal to halt. We ate our meal in
-thoughtful silence, and then retired to sleep.
-
-Our arrangements for the night were very primitive and simple. A
-traveling rug, in which each rolled himself, was all our bedding. We had
-no necessity to fear cold or any unpleasant visit. Travelers who bury
-themselves in the wilds and depths of the African desert, who seek
-profit and pleasure in the forests of the New World, are compelled to
-take it in turn to watch during the hours of sleep; but in this region
-of the earth absolute solitude and complete security reigned supreme.
-
-We had nothing to fear either from savages or from wild beasts.
-
-After a night's sweet repose, we awoke fresh and ready for action. There
-being nothing to detain us, we started on our journey. We continued to
-burrow through the lava tunnel as before. It was impossible to make out
-through what soil we were making way. The tunnel, moreover, instead of
-going down into the bowels of the earth, became absolutely horizontal.
-
-I even thought, after some examination, that we were actually tending
-upwards. About ten o'clock in the day this state of things became so
-clear that, finding the change very fatiguing, I was obliged to slacken
-my pace and finally come to a halt.
-
-"Well," said the Professor quickly, "what is the matter?"
-
-"The fact is, I am dreadfully tired," was my earnest reply.
-
-"What," cried my uncle, "tired after a three hours' walk, and by so easy
-a road?"
-
-"Easy enough, I dare say, but very fatiguing."
-
-"But how can that be, when all we have to do is to go downwards."
-
-"I beg your pardon, sir. For some time I have noticed that we are going
-upwards."
-
-"Upwards," cried my uncle, shrugging his shoulders, "how can that be?"
-
-"There can be no doubt about it. For the last half hour the slopes have
-been upward--and if we go on in this way much longer we shall find
-ourselves back in Iceland."
-
-My uncle shook his head with the air of a man who does not want to be
-convinced. I tried to continue the conversation. He would not answer me,
-but once more gave the signal for departure. His silence I thought was
-only caused by concentrated ill-temper.
-
-However this might be, I once more took up my load, and boldly and
-resolutely followed Hans, who was now in advance of my uncle. I did not
-like to be beaten or even distanced. I was naturally anxious not to lose
-sight of my companions. The very idea of being left behind, lost in that
-terrible labyrinth, made me shiver as with the ague.
-
-Besides, if the ascending path was more arduous and painful to clamber,
-I had one source of secret consolation and delight. It was to all
-appearance taking us back to the surface of the earth. That of itself
-was hopeful. Every step I took confirmed me in my belief, and I began
-already to build castles in the air in relation to my marriage with my
-pretty little cousin.
-
-About twelve o'clock there was a great and sudden change in the aspect
-of the rocky sides of the gallery. I first noticed it from the
-diminution of the rays of light which cast back the reflection of the
-lamp. From being coated with shining and resplendent lava, it became
-living rock. The sides were sloping walls, which sometimes became quite
-vertical.
-
-We were now in what the geological professors call a state of
-transition, in the period of Silurian stones, so called because this
-specimen of early formation is very common in England in the counties
-formerly inhabited by the Celtic nation known as Silures.
-
-"I can see clearly now," I cried; "the sediment from the waters which
-once covered the whole earth formed during the second period of its
-existence these schists and these calcareous rocks. We are turning our
-backs on the granite rocks, and are like people from Hamburg who would
-go to Lubeck by way of Hanover."
-
-I might just as well have kept my observations to myself. My geological
-enthusiasm got the better, however, of my cooler judgment, and Professor
-Hardwigg heard my observations.
-
-"What is the matter now?" he said, in a tone of great gravity.
-
-"Well," cried I, "do you not see these different layers of calcareous
-rocks and the first indication of slate strata?"
-
-"Well; what then?"
-
-"We have arrived at that period of the world's existence when the first
-plants and the first animals made their appearance."
-
-"You think so?"
-
-"Yes, look; examine and judge for yourself."
-
-I induced the Professor with some difficulty to cast the light of his
-lamp on the sides of the long winding gallery. I expected some
-exclamation to burst from his lips. I was very much mistaken. The worthy
-Professor never spoke a word.
-
-It was impossible to say whether he understood me or not. Perhaps it was
-possible that in his pride--my uncle and a learned professor--he did not
-like to own that he was wrong in having chosen the eastern tunnel, or
-was he determined at any price to go to the end of it? It was quite
-evident we had left the region of lava, and that the road by which we
-were going could not take us back to the great crater of Mount Sneffels.
-
-As we went along I could not help ruminating on the whole question, and
-asked myself if I did not lay too great a stress on these sudden and
-peculiar modifications of the earth's crust.
-
-After all, I was very likely to be mistaken--and it was within the range
-of probability and possibility that we were not making our way through
-the strata of rocks which I believed I recognized piled on the lower
-layer of granitic formation.
-
-"At all events, if I am right," I thought to myself, "I must certainly
-find some remains of primitive plants, and it will be absolutely
-necessary to give way to such indubitable evidence. Let us have a good
-search."
-
-I accordingly lost no opportunity of searching, and had not gone more
-than about a hundred yards, when the evidence I sought for cropped up in
-the most incontestable manner before my eyes. It was quite natural that
-I should expect to find these signs, for during the Silurian period the
-seas contained no fewer than fifteen hundred different animal and
-vegetable species. My feet, so long accustomed to the hard and arid lava
-soil, suddenly found themselves treading on a kind of soft dust, the
-remains of plants and shells.
-
-Upon the walls themselves I could clearly make out the outline, as plain
-as a sun picture, of the fucus and the lycopods. The worthy and
-excellent Professor Hardwigg could not of course make any mistake about
-the matter; but I believe he deliberately closed his eyes, and continued
-on his way with a firm and unalterable step.
-
-I began to think that he was carrying his obstinacy a great deal too
-far. I could no longer act with prudence or composure. I stooped on a
-sudden and picked up an almost perfect shell, which had undoubtedly
-belonged to some animal very much resembling some of the present day.
-Having secured the prize, I followed in the wake of my uncle.
-
-"Do you see this?" I said.
-
-"Well, said the Professor, with the most imperturbable tranquillity, "it
-is the shell of a crustaceous animal of the extinct order of the
-trilobites; nothing more, I assure you."
-
-"But," cried I, much troubled at his coolness, "do you draw no
-conclusion from it?"
-
-"Well, if I may ask, what conclusion do you draw from it yourself?"
-
-"Well, I thought--"
-
-"I know, my boy, what you would say, and you are right, perfectly and
-incontestably right. We have finally abandoned the crust of lava and the
-road by which the lava ascended. It is quite possible that I may have
-been mistaken, but I shall be unable to discover my error until I get to
-the end of this gallery."
-
-"You are quite right as far as that is concerned," I replied, "and I
-should highly approve of your decision, if we had not to fear the
-greatest of all dangers."
-
-"And what is that?"
-
-"Want of water."
-
-"Well, my dear Henry, it can't be helped. We must put ourselves on
-rations."
-
-And on he went.
-
-## CHAPTER 17 DEEPER AND DEEPER--THE COAL MINE
-
-In truth, we were compelled to put ourselves upon rations. Our supply
-would certainly last not more than three days. I found this out about
-supper time. The worst part of the matter was that, in what is called
-the transition rocks, it was hardly to be expected we should meet with
-water!
-
-I had read of the horrors of thirst, and I knew that where we were, a
-brief trial of its sufferings would put an end to our adventures--and
-our lives! But it was utterly useless to discuss the matter with my
-uncle. He would have answered by some axiom from Plato.
-
-During the whole of next day we proceeded on our journey through this
-interminable gallery, arch after arch, tunnel after tunnel. We journeyed
-without exchanging a word. We had become as mute and reticent as Hans,
-our guide.
-
-The road had no longer an upward tendency; at all events, if it had, it
-was not to be made out very clearly. Sometimes there could be no doubt
-that we were going downwards. But this inclination was scarcely to be
-distinguished, and was by no means reassuring to the Professor, because
-the character of the strata was in no wise modified, and the transition
-character of the rocks became more and more marked.
-
-It was a glorious sight to see how the electric light brought out the
-sparkles in the walls of the calcareous rocks, and the old red
-sandstone. One might have fancied oneself in one of those deep cuttings
-in Devonshire, which have given their name to this kind of soil. Some
-magnificent specimens of marble projected from the sides of the gallery:
-some of an agate grey with white veins of variegated character, others
-of a yellow spotted color, with red veins; farther off might be seen
-samples of color in which cherry-tinted seams were to be found in all
-their brightest shades.
-
-The greater number of these marbles were stamped with the marks of
-primitive animals. Since the previous evening, nature and creation had
-made considerable progress. Instead of the rudimentary trilobites, I
-perceived the remains of a more perfect order. Among others, the fish in
-which the eye of a geologist has been able to discover the first form of
-the reptile.
-
-The Devonian seas were inhabited by a vast number of animals of this
-species, which were deposited in tens of thousands in the rocks of new
-formation.
-
-It was quite evident to me that we were ascending the scale of animal
-life of which man forms the summit. My excellent uncle, the Professor,
-appeared not to take notice of these warnings. He was determined at any
-risk to proceed.
-
-He must have been in expectation of one of two things; either that a
-vertical well was about to open under his feet, and thus allow him to
-continue his descent, or that some insurmountable obstacle would compel
-us to stop and go back by the road we had so long traveled. But evening
-came again, and, to my horror, neither hope was doomed to be realized!
-
-On Friday, after a night when I began to feel the gnawing agony of
-thirst, and when in consequence appetite decreased, our little band rose
-and once more followed the turnings and windings, the ascents and
-descents, of this interminable gallery. All were silent and gloomy. I
-could see that even my uncle had ventured too far.
-
-After about ten hours of further progress--a progress dull and
-monotonous to the last degree--I remarked that the reverberation, and
-reflection of our lamps upon the sides of the tunnel, had singularly
-diminished. The marble, the schist, the calcareous rocks, the red
-sandstone, had disappeared, leaving in their places a dark and gloomy
-wall, somber and without brightness. When we reached a remarkably narrow
-part of the tunnel, I leaned my left hand against the rock.
-
-When I took my hand away, and happened to glance at it, it was quite
-black. We had reached the coal strata of the Central Earth.
-
-"A coal mine!" I cried.
-
-"A coal mine without miners," responded my uncle, a little severely.
-
-"How can we tell?"
-
-"I can tell," replied my uncle, in a sharp and doctorial tone. "I am
-perfectly certain that this gallery through successive layers of coal
-was not cut by the hand of man. But whether it is the work of nature or
-not is of little concern to us. The hour for our evening meal has
-come--let us sup."
-
-Hans, the guide, occupied himself in preparing food. I had come to that
-point when I could no longer eat. All I cared about were the few drops
-of water which fell to my share. What I suffered it is useless to
-record. The guide's gourd, not quite half full, was all that was left
-for us three!
-
-Having finished their repast, my two companions laid themselves down
-upon their rugs, and found in sleep a remedy for their fatigue and
-sufferings. As for me, I could not sleep, I lay counting the hours until
-morning.
-
-The next morning, Saturday, at six o'clock, we started again. Twenty
-minutes later we suddenly came upon a vast excavation. From its mighty
-extent I saw at once that the hand of man could have had nothing to do
-with this coal mine; the vault above would have fallen in; as it was, it
-was only held together by some miracle of nature.
-
-This mighty natural cavern was about a hundred feet wide, by about a
-hundred and fifty high. The earth had evidently been cast apart by some
-violent subterranean commotion. The mass, giving way to some prodigious
-upheaving of nature, had split in two, leaving the vast gap into which
-we inhabitants of the earth had penetrated for the first time.
-
-The whole singular history of the coal period was written on those dark
-and gloomy walls. A geologist would have been able easily to follow the
-different phases of its formation. The seams of coal were separated by
-strata of sandstone, a compact clay, which appeared to be crushed down
-by the weight from above.
-
-At that period of the world which preceded the secondary epoch, the
-earth was covered by a coating of enormous and rich vegetation, due to
-the double action of tropical heat and perpetual humidity. A vast
-atmospheric cloud of vapor surrounded the earth on all sides, preventing
-the rays of the sun from ever reaching it.
-
-Hence the conclusion that these intense heats did not arise from this
-new source of caloric.
-
-Perhaps even the star of day was not quite ready for its brilliant
-work--to illumine a universe. Climates did not as yet exist, and a level
-heat pervaded the whole surface of the globe--the same heat existing at
-the North Pole as at the equator.
-
-Whence did it come? From the interior of the earth?
-
-In spite of all the learned theories of Professor Hardwigg, a fierce and
-vehement fire certainly burned within the entrails of the great
-spheroid. Its action was felt even to the very topmost crust of the
-earth; the plants then in existence, being deprived of the vivifying
-rays of the sun, had neither buds, nor flowers, nor odor, but their
-roots drew a strong and vigorous life from the burning earth of early
-days.
-
-There were but few of what may be called trees--only herbaceous plants,
-immense turfs, briers, mosses, rare families, which, however, in those
-days were counted by tens and tens of thousands.
-
-It is entirely to this exuberant vegetation that coal owes its origin.
-The crust of the vast globe still yielded under the influence of the
-seething, boiling mass, which was forever at work beneath. Hence arose
-numerous fissures, and continual falling in of the upper earth. The
-dense mass of plants being beneath the waters, soon formed themselves
-into vast agglomerations.
-
-Then came about the action of natural chemistry; in the depths of the
-ocean the vegetable mass at first became turf, then, thanks to the
-influence of gases and subterranean fermentation, they underwent the
-complete process of mineralization.
-
-In this manner, in early days, were formed those vast and prodigious
-layers of coal, which an ever--increasing consumption must utterly use
-up in about three centuries more, if people do not find some more
-economic light than gas, and some cheaper motive power than steam.
-
-All these reflections, the memories of my school studies, came to my
-mind while I gazed upon these mighty accumulations of coal, whose
-riches, however, are scarcely likely to be ever utilized. The working of
-these mines could only be carried out at an expense that would never
-yield a profit.
-
-The matter, however, is scarcely worthy consideration, when coal is
-scattered over the whole surface of the globe, within a few yards of the
-upper crust. As I looked at these untouched strata, therefore, I knew
-they would remain as long as the world lasts.
-
-While we still continued our journey, I alone forgot the length of the
-road, by giving myself up wholly to these geological considerations. The
-temperature continued to be very much the same as while we were
-traveling amid the lava and the schists. On the other hand my sense of
-smell was much affected by a very powerful odor. I immediately knew that
-the gallery was filled to overflowing with that dangerous gas the miners
-call fire damp, the explosion of which has caused such fearful and
-terrible accidents, making a hundred widows and hundreds of orphans in a
-single hour.
-
-Happily, we were able to illumine our progress by means of the Ruhmkorff
-apparatus. If we had been so rash and imprudent as to explore this
-gallery, torch in hand, a terrible explosion would have put an end to
-our travels, simply because no travelers would be left.
-
-Our excursion through this wondrous coal mine in the very bowels of the
-earth lasted until evening. My uncle was scarcely able to conceal his
-impatience and dissatisfaction at the road continuing still to advance
-in a horizontal direction.
-
-The darkness, dense and opaque a few yards in advance and in the rear,
-rendered it impossible to make out what was the length of the gallery.
-For myself, I began to believe that it was simply interminable, and
-would go on in the same manner for months.
-
-Suddenly, at six o'clock, we stood in front of a wall. To the right, to
-the left above, below, nowhere was there any passage. We had reached a
-spot where the rocks said in unmistakable accents--No Thoroughfare.
-
-I stood stupefied. The guide simply folded his arms. My uncle was
-silent.
-
-"Well, well, so much the better," cried my uncle, at last, "I now know
-what we are about. We are decidedly not upon the road followed by
-Saknussemm. All we have to do is to go back. Let us take one night's
-good rest, and before three days are over, I promise you we shall have
-regained the point where the galleries divided."
-
-"Yes, we may, if our strength lasts as long," I cried, in a lamentable
-voice.
-
-"And why not?"
-
-"Tomorrow, among us three, there will not be a drop of water. It is just
-gone."
-
-"And your courage with it," said my uncle, speaking in a severe tone.
-
-What could I say? I turned round on my side, and from sheer exhaustion
-fell into a heavy sleep disturbed by dreams of water! And I awoke
-unrefreshed.
-
-I would have bartered a diamond mine for a glass of pure spring water!
-
-## CHAPTER 18 THE WRONG ROAD!
-
-Next day, our departure took place at a very early hour. There was no
-time for the least delay. According to my account, we had five days'
-hard work to get back to the place where the galleries divided.
-
-I can never tell all the sufferings we endured upon our return. My uncle
-bore them like a man who has been in the wrong--that is, with
-concentrated and suppressed anger; Hans, with all the resignation of his
-pacific character; and I--I confess that I did nothing but complain, and
-despair. I had no heart for this bad fortune.
-
-But there was one consolation. Defeat at the outset would probably upset
-the whole journey!
-
-As I had expected from the first, our supply of water gave completely
-out on our first day's march. Our provision of liquids was reduced to
-our supply of Schiedam; but this horrible--nay, I will say it--this
-infernal liquor burnt the throat, and I could not even bear the sight of
-it. I found the temperature to be stifling. I was paralyzed with
-fatigue. More than once I was about to fall insensible to the ground.
-The whole party then halted, and the worthy Icelander and my excellent
-uncle did their best to console and comfort me. I could, however,
-plainly see that my uncle was contending painfully against the extreme
-fatigues of our journey, and the awful torture generated by the absence
-of water.
-
-At length a time came when I ceased to recollect anything--when all was
-one awfull hideous, fantastic dream!
-
-At last, on Tuesday, the seventh of the month of July, after crawling on
-our hands and knees for many hours, more dead than alive, we reached the
-point of junction between the galleries. I lay like a log, an inert mass
-of human flesh on the arid lava soil. It was then ten in the morning.
-
-Hans and my uncle, leaning against the wall, tried to nibble away at
-some pieces of biscuit, while deep groans and sighs escaped from my
-scorched and swollen lips. Then I fell off into a kind of deep lethargy.
-
-Presently I felt my uncle approach, and lift me up tenderly in his arms.
-
-"Poor boy," I heard him say in a tone of deep commiseration.
-
-I was profoundly touched by these words, being by no means accustomed to
-signs of womanly weakness in the Professor. I caught his trembling hands
-in mine and gave them a gentle pressure. He allowed me to do so without
-resistance, looking at me kindly all the time. His eyes were wet with
-tears.
-
-I then saw him take the gourd which he wore at his side. To my surprise,
-or rather to my stupefaction, he placed it to my lips.
-
-"Drink, my boy," he said.
-
-Was it possible my ears had not deceived me? Was my uncle mad? I looked
-at him, with, I am sure, quite an idiotic expression. I could not
-believe him. I too much feared the counteraction of disappointment.
-
-"Drink," he said again.
-
-Had I heard aright? Before, however, I could ask myself the question a
-second time, a mouthful of water cooled my parched lips and throat--one
-mouthful, but I do believe it brought me back to life.
-
-I thanked my uncle by clasping my hands. My heart was too full to speak.
-
-"Yes," said he, "one mouthful of water, the very last--do you hear, my
-boy--the very last! I have taken care of it at the bottom of my bottle
-as the apple of my eye. Twenty times, a hundred times, I have resisted
-the fearful desire to drink it. But--no--no, Harry, I saved it for you."
-
-"My dear uncle," I exclaimed, and the big tears rolled down my hot and
-feverish cheeks.
-
-"Yes, my poor boy, I knew that when you reached this place, this
-crossroad in the earth, you would fall down half dead, and I saved my
-last drop of water in order to restore you."
-
-"Thanks," I cried; "thanks from my heart."
-
-As little as my thirst was really quenched, I had nevertheless partially
-recovered my strength. The contracted muscles of my throat relaxed--and
-the inflammation of my lips in some measure subsided. At all events, I
-was able to speak.
-
-"Well," I said, "there can be no doubt now as to what we have to do.
-Water has utterly failed us; our journey is therefore at an end. Let us
-return."
-
-While I spoke thus, my uncle evidently avoided my face: he held down his
-head; his eyes were turned in every possible direction but the right
-one.
-
-"Yes," I continued, getting excited by my own words, "we must go back to
-Sneffels. May heaven give us strength to enable us once more to revisit
-the light of day. Would that we now stood on the summit of the crater."
-
-"Go back," said my uncle, speaking to himself, "and must it be so?"
-
-"Go back--yes, and without losing a single moment," I vehemently cried.
-
-For some moments there was silence under that dark and gloomy vault.
-
-"So, my dear Harry," said the Professor in a very singular tone of
-voice, "those few drops of water have not sufficed to restore your
-energy and courage."
-
-"Courage!" I cried.
-
-"I see that you are quite as downcast as before--and still give way to
-discouragement and despair."
-
-What, then, was the man made of, and what other projects were entering
-his fertile and audacious brain!
-
-"You are not discouraged, sir?"
-
-"What! Give up just as we are on the verge of success?" he cried.
-"Never, never shall it be said that Professor Hardwigg retreated."
-
-"Then we must make up our minds to perish," I cried with a helpless
-sigh.
-
-"No, Harry, my boy, certainly not. Go, leave me, I am very far from
-desiring your death. Take Hans with you. <i>I will go on alone.</i>"
-
-"You ask us to leave you?"
-
-"Leave me, I say. I have undertaken this dangerous and perilous
-adventure. I will carry it to the end--or I will never return to the
-surface of Mother Earth. Go, Harry--once more I say to you--go!"
-
-My uncle as he spoke was terribly excited. His voice, which before had
-been tender, almost womanly, became harsh and menacing. He appeared to
-be struggling with desperate energy against the impossible. I did not
-wish to abandon him at the bottom of that abyss, while, on the other
-hand, the instinct of preservation told me to fly.
-
-Meanwhile, our guide was looking on with profound calmness and
-indifference. He appeared to be an unconcerned party, and yet he
-perfectly well knew what was going on between us. Our gestures
-sufficiently indicated the different roads each wished to follow--and
-which each tried to influence the other to undertake. But Hans appeared
-not to take the slightest interest in what was really a question of life
-and death for us all, but waited quite ready to obey the signal which
-should say go aloft, or to resume his desperate journey into the
-interior of the earth.
-
-How then I wished with all my heart and soul that I could make him
-understand my words. My representations, my sighs and groans, the
-earnest accents in which I should have spoken would have convinced that
-cold, hard nature. Those fearful dangers and perils of which the stolid
-guide had no idea, I would have pointed them out to him--I would have,
-as it were, made him see and feel. Between us, we might have convinced
-the obstinate Professor. If the worst had come to the worst, we could
-have compelled him to return to the summit of Sneffels.
-
-I quietly approached Hans. I caught his hand in mine. He never moved a
-muscle. I indicated to him the road to the top of the crater. He
-remained motionless. My panting form, my haggard countenance, must have
-indicated the extent of my sufferings. The Icelander gently shook his
-head and pointed to my uncle.
-
-"Master," he said.
-
-The word is Icelandic as well as English.
-
-"The master!" I cried, beside myself with fury--"madman! no--I tell you
-he is not the master of our lives; we must fly! we must drag him with
-us! do you hear me? Do you understand me, I say?"
-
-I have already explained that I held Hans by the arm. I tried to make
-him rise from his seat. I struggled with him and tried to force him
-away. My uncle now interposed.
-
-"My good Henry, be calm," he said. "You will obtain nothing from my
-devoted follower; therefore, listen to what I have to say."
-
-I folded my arms, as well as I could, and looked my uncle full in the
-face.
-
-"This wretched want of water," he said, "is the sole obstacle to the
-success of my project. In the entire gallery, made of lava, schist, and
-coal, it is true we found not one liquid molecule. It is quite possible
-that we may be more fortunate in the western tunnel."
-
-My sole reply was to shake my head with an air of deep incredulity.
-
-"Listen to me to the end," said the Professor in his well-known
-lecturing voice. "While you lay yonder without life or motion, I
-undertook a reconnoitering journey into the conformation of this other
-gallery. I have discovered that it goes directly downwards into the
-bowels of the earth, and in a few hours will take us to the old granitic
-formation. In this we shall undoubtedly find innumerable springs. The
-nature of the rock makes this a mathematical certainty, and instinct
-agrees with logic to say that it is so. Now, this is the serious
-proposition which I have to make to you. When Christopher Columbus asked
-of his men three days to discover the land of promise, his men ill,
-terrified, and hopeless, yet gave him three days--and the New World was
-discovered. Now I, the Christopher Columbus of this subterranean region,
-only ask of you one more day. If, when that time is expired, I have not
-found the water of which we are in search, I swear to you, I will give
-up my mighty enterprise and return to the earth's surface."
-
-Despite my irritation and despair, I knew how much it cost my uncle to
-make this proposition, and to hold such conciliatory language. Under the
-circumstances, what could I do but yield?
-
-"Well," I cried, "let it be as you wish, and may heaven reward your
-superhuman energy. But as, unless we discover water, our hours are
-numbered, let us lose no time, but go ahead."
-
-## CHAPTER 19 THE WESTERN GALLERY--A NEW ROUTE
-
-Our descent was now resumed by means of the second gallery. Hans took up
-his post in front as usual. We had not gone more than a hundred yards
-when the Professor carefully examined the walls.
-
-"This is the primitive formation--we are on the right road--onwards is
-our hope!"
-
-When the whole earth got cool in the first hours of the world's morning,
-the diminution of the volume of the earth produced a state of
-dislocation in its upper crust, followed by ruptures, crevasses and
-fissures. The passage was a fissure of this kind, through which, ages
-ago, had flowed the eruptive granite. The thousand windings and turnings
-formed an inextricable labyrinth through the ancient soil.
-
-As we descended, successions of layers composing the primitive soil
-appeared with the utmost fidelity of detail. Geological science
-considers this primitive soil as the base of the mineral crust, and it
-has recognized that it is composed of three different strata or layers,
-all resting on the immovable rock known as granite.
-
-No mineralogists had even found themselves placed in such a marvelous
-position to study nature in all her real and naked beauty. The sounding
-rod, a mere machine, could not bring to the surface of the earth the
-objects of value for the study of its internal structure, which we were
-about to see with our own eyes, to touch with our own hands.
-
-Remember that I am writing this after the journey.
-
-Across the streak of the rocks, colored by beautiful green tints, wound
-metallic threads of copper, of manganese, with traces of platinum and
-gold. I could not help gazing at these riches buried in the entrails of
-Mother Earth, and of which no man would have the enjoyment to the end of
-time! These treasures--mighty and inexhaustible, were buried in the
-morning of the earth's history, at such awful depths, that no crowbar or
-pickax will ever drag them from their tomb!
-
-The light of our Ruhmkorff's coil, increased tenfold by the myriad of
-prismatic masses of rock, sent its jets of fire in every direction, and
-I could fancy myself traveling through a huge hollow diamond, the rays
-of which produced myriads of extraordinary effects.
-
-Towards six o'clock, this festival of light began sensibly and visibly
-to decrease, and soon almost ceased. The sides of the gallery assumed a
-crystallized tint, with a somber hue; white mica began to commingle more
-freely with feldspar and quartz, to form what may be called the true
-rock--the stone which is hard above all, that supports, without being
-crushed, the four stories of the earth's soil.
-
-We were walled by an immense prison of granite!
-
-It was now eight o'clock, and still there was no sign of water. The
-sufferings I endured were horrible. My uncle now kept at the head of our
-little column. Nothing could induce him to stop. I, meanwhile, had but
-one real thought. My ear was keenly on the watch to catch the sound of a
-spring. But no pleasant sound of falling water fell upon my listening
-ear.
-
-But at last the time came when my limbs refused to carry me longer. I
-contended heroically against the terrible tortures I endured, because I
-did not wish to compel my uncle to halt. To him I knew this would be the
-last fatal stroke.
-
-Suddenly I felt a deadly faintness come over me. My eyes could no longer
-see; my knees shook. I gave one despairing cry--and fell!
-
-"Help, help, I am dying!"
-
-My uncle turned and slowly retraced his steps. He looked at me with
-folded arms, and then allowed one sentence to escape, in hollow accents,
-from his lips:
-
-"All is over."
-
-The last thing I saw was a face fearfully distorted with pain and
-sorrow; and then my eyes closed.
-
-When I again opened them, I saw my companions lying near me, motionless,
-wrapped in their huge traveling rugs. Were they asleep or dead? For
-myself, sleep was wholly out of the question. My fainting fit over, I
-was wakeful as the lark. I suffered too much for sleep to visit my
-eyelids--the more, that I thought myself sick unto death--dying. The
-last words spoken by my uncle seemed to be buzzing in my ears--all is
-over! And it was probable that he was right. In the state of prostration
-to which I was reduced, it was madness to think of ever again seeing the
-light of day.
-
-Above were miles upon miles of the earth's crust. As I thought of it, I
-could fancy the whole weight resting on my shoulders. I was crushed,
-annihilated! and exhausted myself in vain attempts to turn in my granite
-bed.
-
-Hours upon hours passed away. A profound and terrible silence reigned
-around us--a silence of the tomb. Nothing could make itself heard
-through these gigantic walls of granite. The very thought was
-stupendous.
-
-Presently, despite my apathy, despite the kind of deadly calm into which
-I was cast, something aroused me. It was a slight but peculiar noise.
-While I was watching intently, I observed that the tunnel was becoming
-dark. Then gazing through the dim light that remained, I thought I saw
-the Icelander taking his departure, lamp in hand.
-
-Why had he acted thus? Did Hans the guide mean to abandon us? My uncle
-lay fast asleep--or dead. I tried to cry out, and arouse him. My voice,
-feebly issuing from my parched and fevered lips, found no echo in that
-fearful place. My throat was dry, my tongue stuck to the roof of my
-mouth. The obscurity had by this time become intense, and at last even
-the faint sound of the guide's footsteps was lost in the blank distance.
-My soul seemed filled with anguish, and death appeared welcome, only let
-it come quickly.
-
-"Hans is leaving us," I cried. "Hans--Hans, if you are a man, come
-back."
-
-These words were spoken to myself. They could not be heard aloud.
-Nevertheless, after the first few moments of terror were over, I was
-ashamed of my suspicions against a man who hitherto had behaved so
-admirably. Nothing in his conduct or character justified suspicion.
-Moreover, a moment's reflection reassured me. His departure could not be
-a flight. Instead of ascending the gallery, he was going deeper down
-into the gulf. Had he had any bad design, his way would have been
-upwards.
-
-This reasoning calmed me a little and I began to hope!
-
-The good, and peaceful, and imperturbable Hans would certainly not have
-arisen from his sleep without some serious and grave motive. Was he bent
-on a voyage of discovery? During the deep, still silence of the night
-had he at last heard that sweet murmur about which we were all so
-anxious?
-
-## CHAPTER 20 WATER, WHERE IS IT? A BITTER DISAPPOINTMENT
-
-During a long, long, weary hour, there crossed my wildly delirious brain
-all sorts of reasons as to what could have aroused our quiet and
-faithful guide. The most absurd and ridiculous ideas passed through my
-head, each more impossible than the other. I believe I was either half
-or wholly mad.
-
-Suddenly, however, there arose, as it were from the depths of the earth,
-a voice of comfort. It was the sound of footsteps! Hans was returning.
-
-Presently the uncertain light began to shine upon the walls of the
-passage, and then it came in view far down the sloping tunnel. At length
-Hans himself appeared.
-
-He approached my uncle, placed his hand upon his shoulder, and gently
-awakened him. My uncle, as soon as he saw who it was, instantly arose.
-
-"Well!" exclaimed the Professor.
-
-"Vatten," said the hunter.
-
-I did not know a single word of the Danish language, and yet by a sort
-of mysterious instinct I understood what the guide had said.
-
-"Water, water!" I cried, in a wild and frantic tone, clapping my hands,
-and gesticulating like a madman.
-
-"Water!" murmured my uncle, in a voice of deep emotion and gratitude.
-"Hvar?" ("Where?")
-
-"Nedat." ("Below.")
-
-"Where? below!" I understood every word. I had caught the hunter by the
-hands, and I shook them heartily, while he looked on with perfect
-calmness.
-
-The preparations for our departure did not take long, and we were soon
-making a rapid descent into the tunnel.
-
-An hour later we had advanced a thousand yards, and descended two
-thousand feet.
-
-At this moment I heard an accustomed and well-known sound running along
-the floors of the granite rock--a kind of dull and sullen roar, like
-that of a distant waterfall.
-
-During the first half hour of our advance, not finding the discovered
-spring, my feelings of intense suffering appeared to return. Once more I
-began to lose all hope. My uncle, however, observing how downhearted I
-was again becoming, took up the conversation.
-
-"Hans was right," he exclaimed enthusiastically; "that is the dull
-roaring of a torrent."
-
-"A torrent," I cried, delighted at even hearing the welcome words.
-
-"There's not the slightest doubt about it," he replied, "a subterranean
-river is flowing beside us."
-
-I made no reply, but hastened on, once more animated by hope. I began
-not even to feel the deep fatigue which hitherto had overpowered me. The
-very sound of this glorious murmuring water already refreshed me. We
-could hear it increasing in volume every moment. The torrent, which for
-a long time could be heard flowing over our heads, now ran distinctly
-along the left wall, roaring, rushing, spluttering, and still falling.
-
-Several times I passed my hand across the rock hoping to find some trace
-of humidity--of the slightest percolation. Alas! in vain.
-
-Again a half hour passed in the same weary toil. Again we advanced.
-
-It now became evident that the hunter, during his absence, had not been
-able to carry his researches any farther. Guided by an instinct peculiar
-to the dwellers in mountain regions and water finders, he "smelt" the
-living spring through the rock. Still he had not seen the precious
-liquid. He had neither quenched his own thirst, nor brought us one drop
-in his gourd.
-
-Moreover, we soon made the disastrous discovery that, if our progress
-continued, we should soon be moving away from the torrent, the sound of
-which gradually diminished. We turned back. Hans halted at the precise
-spot where the sound of the torrent appeared nearest.
-
-I could bear the suspense and suffering no longer, and seated myself
-against the wall, behind which I could hear the water seething and
-effervescing not two feet away. But a solid wall of granite still
-separated us from it!
-
-Hans looked keenly at me, and, strange enough, for once I thought I saw
-a smile on his imperturbable face.
-
-He rose from a stone on which he had been seated, and took up the lamp.
-I could not help rising and following. He moved slowly along the firm
-and solid granite wall. I watched him with mingled curiosity and
-eagerness. Presently he halted and placed his ear against the dry stone,
-moving slowly along and listening with the most extreme care and
-attention. I understood at once that he was searching for the exact spot
-where the torrent's roar was most plainly heard. This point he soon
-found in the lateral wall on the left side, about three feet above the
-level of the tunnel floor.
-
-I was in a state of intense excitement. I scarcely dared believe what
-the eider-duck hunter was about to do. It was, however, impossible in a
-moment more not to both understand and applaud, and even to smother him
-in my embraces, when I saw him raise the heavy crowbar and commence an
-attack upon the rock itself.
-
-"Saved!" I cried.
-
-"Yes," cried my uncle, even more excited and delighted than myself;
-"Hans is quite right. Oh, the worthy, excellent man! We should never
-have thought of such an idea."
-
-And nobody else, I think, would have done so. Such a process, simple as
-it seemed, would most certainly not have entered our heads. Nothing
-could be more dangerous than to begin to work with pickaxes in that
-particular part of the globe. Supposing while he was at work a break-up
-were to take place, and supposing the torrent once having gained an inch
-were to take an ell, and come pouring bodily through the broken rock!
-
-Not one of these dangers was chimerical. They were only too real. But at
-that moment no fear of falling in of the roof, or even of inundation was
-capable of stopping us. Our thirst was so intense that to quench it we
-would have dug below the bed of old Ocean itself.
-
-Hans went quietly to work--a work which neither my uncle nor I would
-have undertaken at any price. Our impatience was so great that if we had
-once begun with pickax and crowbar, the rock would soon have split into
-a hundred fragments. The guide, on the contrary, calm, ready, moderate,
-wore away the hard rock by little steady blows of his instrument, making
-no attempt at a larger hole than about six inches. As I stood, I heard,
-or I thought I heard, the roar of the torrent momentarily increasing in
-loudness, and at times I almost felt the pleasant sensation of water
-upon my parched lips.
-
-At the end of what appeared an age, Hans had made a hole which enabled
-his crowbar to enter two feet into the solid rock. He had been at work
-exactly an hour. It appeared a dozen. I was getting wild with
-impatience. My uncle began to think of using more violent measures. I
-had the greatest difficulty in checking him. He had indeed just got hold
-of his crowbar when a loud and welcome hiss was heard. Then a stream, or
-rather jet, of water burst through the wall and came out with such force
-as to hit the opposite side!
-
-Hans, the guide, who was half upset by the shock, was scarcely able to
-keep down a cry of pain and grief. I understood his meaning when,
-plunging my hands into the sparkling jet, I myself gave a wild and
-frantic cry. The water was scalding hot!
-
-"Boiling," I cried, in bitter disappointment.
-
-"Well, never mind," said my uncle, "it will soon get cool."
-
-The tunnel began to be filled by clouds of vapor, while a small stream
-ran away into the interior of the earth. In a short time we had some
-sufficiently cool to drink. We swallowed it in huge mouthfuls.
-
-Oh! what exalted delight--what rich and incomparable luxury! What was
-this water, whence did it come? To us what was that? The simple fact
-was--it was water; and, though still with a tingle of warmth about it,
-it brought back to the heart, that life which, but for it, must surely
-have faded away. I drank greedily, almost without tasting it.
-
-When, however, I had almost quenched my ravenous thirst, I made a
-discovery.
-
-"Why, it is chalybeate water!"
-
-"A most excellent stomachic," replied my uncle, "and highly mineralized.
-Here is a journey worth twenty to Spa."
-
-"It's very good," I replied.
-
-"I should think so. Water found six miles under ground. There is a
-peculiarly inky flavor about it, which is by no means disagreeable. Hans
-may congratulate himself on having made a rare discovery. What do you
-say, nephew, according to the usual custom of travelers, to name the
-stream after him?"
-
-"Good," said I. And the name of "Hansbach" ("Hans Brook") was at once
-agreed upon.
-
-Hans was not a bit more proud after hearing our determination than he
-was before. After having taken a very small modicum of the welcome
-refreshment, he had seated himself in a corner with his usual
-imperturbable gravity.
-
-"Now," said I, "it is not worth while letting this water run to waste."
-
-"What is the use," replied my uncle, "the source from which this river
-rises is inexhaustible."
-
-"Never mind," I continued, "let us fill our goatskin and gourds, and
-then try to stop the opening up."
-
-My advice, after some hesitation, was followed or attempted to be
-followed. Hans picked up all the broken pieces of granite he had knocked
-out, and using some tow he happened to have about him, tried to shut up
-the fissure he had made in the wall. All he did was to scald his hands.
-The pressure was too great, and all our attempts were utter failures.
-
-"It is evident," I remarked, "that the upper surface of these springs is
-situated at a very great height above--as we may fairly infer from the
-great pressure of the jet."
-
-"That is by no means doubtful," replied my uncle, "if this column of
-water is about thirty-two thousand feet high, the atmospheric pressure
-must be something enormous. But a new idea has just struck me."
-
-"And what is that?"
-
-"Why be at so much trouble to close this aperture?"
-
-"Because--"
-
-I hesitated and stammered, having no real reason.
-
-"When our water bottles are empty, we are not at all sure that we shall
-be able to fill them," observed my uncle.
-
-"I think that is very probable."
-
-"Well, then, let this water run. It will, of course, naturally follow in
-our track, and will serve to guide and refresh us."
-
-"I think the idea a good one," I cried in reply, "and with this rivulet
-as a companion, there is no further reason why we should not succeed in
-our marvelous project."
-
-"Ah, my boy," said the Professor, laughing, "after all, you are coming
-round."
-
-"More than that, I am now confident of ultimate success."
-
-"One moment, nephew mine. Let us begin by taking some hours of repose."
-
-I had utterly forgotten that it was night. The chronometer, however,
-informed me of the fact. Soon we were sufficiently restored and
-refreshed, and had all fallen into a profound sleep.
-
-## CHAPTER 21 UNDER THE OCEAN
-
-By the next day we had nearly forgotten our past sufferings. The first
-sensation I experienced was surprise at not being thirsty, and I
-actually asked myself the reason. The running stream, which flowed in
-rippling wavelets at my feet, was the satisfactory reply.
-
-We breakfasted with a good appetite, and then drank our fill of the
-excellent water. I felt myself quite a new man, ready to go anywhere my
-uncle chose to lead. I began to think. Why should not a man as seriously
-convinced as my uncle, succeed, with so excellent a guide as worthy
-Hans, and so devoted a nephew as myself? These were the brilliant ideas
-which now invaded my brain. Had the proposition now been made to go back
-to the summit of Mount Sneffels, I should have declined the offer in a
-most indignant manner.
-
-But fortunately there was no question of going up. We were about to
-descend farther into the interior of the earth.
-
-"Let us be moving," I cried, awakening the echoes of the old world.
-
-We resumed our march on Thursday at eight o'clock in the morning. The
-great granite tunnel, as it went round by sinuous and winding ways,
-presented every now and then sharp turns, and in fact all the appearance
-of a labyrinth. Its direction, however, was in general towards the
-southwest. My uncle made several pauses in order to consult his compass.
-
-The gallery now began to trend downwards in a horizontal direction, with
-about two inches of fall in every furlong. The murmuring stream flowed
-quietly at our feet. I could not but compare it to some familiar spirit,
-guiding us through the earth, and I dabbled my fingers in its tepid
-water, which sang like a naiad as we progressed. My good humor began to
-assume a mythological character.
-
-As for my uncle he began to complain of the horizontal character of the
-road. His route, he found, began to be indefinitely prolonged, instead
-of "sliding down the celestial ray," according to his expression.
-
-But we had no choice; and as long as our road led towards the
-centre--however little progress we made, there was no reason to
-complain.
-
-Moreover, from time to time the slopes were much greater, the naiad sang
-more loudly, and we began to dip downwards in earnest.
-
-As yet, however, I felt no painful sensation. I had not got over the
-excitement of the discovery of water.
-
-That day and the next we did a considerable amount of horizontal, and
-relatively very little vertical, traveling.
-
-On Friday evening, the tenth of July, according to our estimation, we
-ought to have been thirty leagues to the southeast of Reykjavik, and
-about two leagues and a half deep. We now received a rather startling
-surprise.
-
-Under our feet there opened a horrible well. My uncle was so delighted
-that he actually clapped his hands--as he saw how steep and sharp was
-the descent.
-
-"Ah, ah!" he cried, in rapturous delight; "this will take us a long way.
-Look at the projections of the rock. Hah!" he exclaimed, "it's a fearful
-staircase!"
-
-Hans, however, who in all our troubles had never given up the ropes,
-took care so to dispose of them as to prevent any accidents. Our descent
-then began. I dare not call it a perilous descent, for I was already too
-familiar with that sort of work to look upon it as anything but a very
-ordinary affair.
-
-This well was a kind of narrow opening in the massive granite of the
-kind known as a fissure. The contraction of the terrestrial scaffolding,
-when it suddenly cooled, had been evidently the cause. If it had ever
-served in former times as a kind of funnel through which passed the
-eruptive masses vomited by Sneffels, I was at a loss to explain how it
-had left no mark. We were, in fact, descending a spiral, something like
-those winding staircases in use in modern houses.
-
-We were compelled every quarter of an hour or thereabouts to sit down in
-order to rest our legs. Our calves ached. We then seated ourselves on
-some projecting rock with our legs hanging over, and gossiped while we
-ate a mouthful--drinking still from the pleasantly warm running stream
-which had not deserted us.
-
-It is scarcely necessary to say that in this curiously shaped fissure
-the Hansbach had become a cascade to the detriment of its size. It was
-still, however, sufficient, and more, for our wants. Besides we knew
-that, as soon as the declivity ceased to be so abrupt, the stream must
-resume its peaceful course. At this moment it reminded me of my uncle,
-his impatience and rage, while when it flowed more peacefully, I
-pictured to myself the placidity of the Icelandic guide.
-
-During the whole of two days, the sixth and seventh of July, we followed
-the extraordinary spiral staircase of the fissure, penetrating two
-leagues farther into the crust of the earth, which put us five leagues
-below the level of the sea. On the eighth, however, at twelve o'clock in
-the day, the fissure suddenly assumed a much more gentle slope still
-trending in a southeast direction.
-
-The road now became comparatively easy, and at the same time dreadfully
-monotonous. It would have been difficult for matters to have turned out
-otherwise. Our peculiar journey had no chance of being diversified by
-landscape and scenery. At all events, such was my idea.
-
-At length, on Wednesday the fifteenth, we were actually seven leagues
-(twenty-one miles) below the surface of the earth, and fifty leagues
-distant from the mountain of Sneffels. Though, if the truth be told, we
-were very tired, our health had resisted all suffering, and was in a
-most satisfactory state. Our traveler's box of medicaments had not even
-been opened.
-
-My uncle was careful to note every hour the indications of the compass,
-of the manometer, and of the thermometer, all which he afterwards
-published in his elaborate philosophical and scientific account of our
-remarkable voyage. He was therefore able to give an exact relation of
-the situation. When, therefore, he informed me that we were fifty
-leagues in a horizontal direction distant from our starting point, I
-could not suppress a loud exclamation.
-
-"What is the matter now?" cried my uncle.
-
-"Nothing very important, only an idea has entered my head," was my
-reply.
-
-"Well, out with it, My boy."
-
-"It is my opinion that if your calculations are correct we are no longer
-under Iceland."
-
-"Do you think so?"
-
-"We can very easily find out," I replied, pulling out a map and
-compasses.
-
-"You see," I said, after careful measurement, "that I am not mistaken.
-We are far beyond Cape Portland; and those fifty leagues to the
-southeast will take us into the open sea."
-
-"Under the open sea," cried my uncle, rubbing his hands with a delighted
+I meditated. Naturally, I wanted to think the matter over thoroughly
+before anything decisive was said. I was generally ready enough for
+business in those days, and selling always attracted me; but in the
+first place it was not my bungalow, and even if I sold it to him at a
+good price I might get inconvenienced in the delivery of goods if the
+current owner got wind of the transaction, and in the second I was,
+well—undischarged. It was clearly a business that required delicate
+handling. Moreover, the possibility of his being in pursuit of some
+valuable invention also interested me. It occurred to me that I would
+like to know more of this research, not with any dishonest intention,
+but simply with an idea that to know what it was would be a relief from
+play-writing. I threw out feelers.
+
+He was quite willing to supply information. Indeed, once he was fairly
+under way the conversation became a monologue. He talked like a man
+long pent up, who has had it over with himself again and again. He
+talked for nearly an hour, and I must confess I found it a pretty stiff
+bit of listening. But through it all there was the undertone of
+satisfaction one feels when one is neglecting work one has set oneself.
+During that first interview I gathered very little of the drift of his
+work. Half his words were technicalities entirely strange to me, and he
+illustrated one or two points with what he was pleased to call
+elementary mathematics, computing on an envelope with a copying-ink
+pencil, in a manner that made it hard even to seem to understand.
+“Yes,” I said, “yes. Go on!” Nevertheless I made out enough to convince
+me that he was no mere crank playing at discoveries. In spite of his
+crank-like appearance there was a force about him that made that
+impossible. Whatever it was, it was a thing with mechanical
+possibilities. He told me of a work-shed he had, and of three
+assistants—originally jobbing carpenters—whom he had trained. Now, from
+the work-shed to the patent office is clearly only one step. He invited
+me to see those things. I accepted readily, and took care, by a remark
+or so, to underline that. The proposed transfer of the bungalow
+remained very conveniently in suspense.
+
+At last he rose to depart, with an apology for the length of his call.
+Talking over his work was, he said, a pleasure enjoyed only too rarely.
+It was not often he found such an intelligent listener as myself, he
+mingled very little with professional scientific men.
+
+“So much pettiness,” he explained; “so much intrigue! And really, when
+one has an idea—a novel, fertilising idea—I don’t want to be
+uncharitable, but—”
+
+I am a man who believes in impulses. I made what was perhaps a rash
+proposition. But you must remember, that I had been alone, play-writing
+in Lympne, for fourteen days, and my compunction for his ruined walk
+still hung about me. “Why not,” said I, “make this your new habit? In
+the place of the one I spoilt? At least, until we can settle about the
+bungalow. What you want is to turn over your work in your mind. That
+you have always done during your afternoon walk. Unfortunately that’s
+over—you can’t get things back as they were. But why not come and talk
+about your work to me; use me as a sort of wall against which you may
+throw your thoughts and catch them again? It’s certain I don’t know
+enough to steal your ideas myself—and I know no scientific men—”
+
+I stopped. He was considering. Evidently the thing attracted him. “But
+I’m afraid I should bore you,” he said.
+
+“You think I’m too dull?”
+
+“Oh, no; but technicalities—”
+
+“Anyhow, you’ve interested me immensely this afternoon.”
+
+“Of course it _would_ be a great help to me. Nothing clears up one’s
+ideas so much as explaining them. Hitherto—”
+
+“My dear sir, say no more.”
+
+“But really can you spare the time?”
+
+“There is no rest like change of occupation,” I said, with profound
+conviction.
+
+The affair was over. On my verandah steps he turned. “I am already
+greatly indebted to you,” he said.
+
+I made an interrogative noise.
+
+“You have completely cured me of that ridiculous habit of humming,” he
+explained.
+
+I think I said I was glad to be of any service to him, and he turned
+away.
+
+Immediately the train of thought that our conversation had suggested
+must have resumed its sway. His arms began to wave in their former
+fashion. The faint echo of “zuzzoo” came back to me on the breeze....
+
+Well, after all, that was not my affair....
+
+He came the next day, and again the next day after that, and delivered
+two lectures on physics to our mutual satisfaction. He talked with an
+air of being extremely lucid about the “ether” and “tubes of force,”
+and “gravitational potential,” and things like that, and I sat in my
+other folding-chair and said, “Yes,” “Go on,” “I follow you,” to keep
+him going. It was tremendously difficult stuff, but I do not think he
+ever suspected how much I did not understand him. There were moments
+when I doubted whether I was well employed, but at any rate I was
+resting from that confounded play. Now and then things gleamed on me
+clearly for a space, only to vanish just when I thought I had hold of
+them. Sometimes my attention failed altogether, and I would give it up
+and sit and stare at him, wondering whether, after all, it would not be
+better to use him as a central figure in a good farce and let all this
+other stuff slide. And then, perhaps, I would catch on again for a bit.
+
+At the earliest opportunity I went to see his house. It was large and
+carelessly furnished; there were no servants other than his three
+assistants, and his dietary and private life were characterised by a
+philosophical simplicity. He was a water-drinker, a vegetarian, and all
+those logical disciplinary things. But the sight of his equipment
+settled many doubts. It looked like business from cellar to attic—an
+amazing little place to find in an out-of-the-way village. The
+ground-floor rooms contained benches and apparatus, the bakehouse and
+scullery boiler had developed into respectable furnaces, dynamos
+occupied the cellar, and there was a gasometer in the garden. He showed
+it to me with all the confiding zest of a man who has been living too
+much alone. His seclusion was overflowing now in an excess of
+confidence, and I had the good luck to be the recipient.
+
+The three assistants were creditable specimens of the class of
+“handy-men” from which they came. Conscientious if unintelligent,
+strong, civil, and willing. One, Spargus, who did the cooking and all
+the metal work, had been a sailor; a second, Gibbs, was a joiner; and
+the third was an ex-jobbing gardener, and now general assistant. They
+were the merest labourers. All the intelligent work was done by Cavor.
+Theirs was the darkest ignorance compared even with my muddled
+impression.
+
+And now, as to the nature of these inquiries. Here, unhappily, comes a
+grave difficulty. I am no scientific expert, and if I were to attempt
+to set forth in the highly scientific language of Mr. Cavor the aim to
+which his experiments tended, I am afraid I should confuse not only the
+reader but myself, and almost certainly I should make some blunder that
+would bring upon me the mockery of every up-to-date student of
+mathematical physics in the country. The best thing I can do therefore
+is, I think to give my impressions in my own inexact language, without
+any attempt to wear a garment of knowledge to which I have no claim.
+
+The object of Mr. Cavor’s search was a substance that should be
+“opaque”—he used some other word I have forgotten, but “opaque” conveys
+the idea—to “all forms of radiant energy.” “Radiant energy,” he made me
+understand, was anything like light or heat, or those Röntgen Rays
+there was so much talk about a year or so ago, or the electric waves of
+Marconi, or gravitation. All these things, he said, _radiate_ out from
+centres, and act on bodies at a distance, whence comes the term
+“radiant energy.” Now almost all substances are opaque to some form or
+other of radiant energy. Glass, for example, is transparent to light,
+but much less so to heat, so that it is useful as a fire-screen; and
+alum is transparent to light, but blocks heat completely. A solution of
+iodine in carbon bisulphide, on the other hand, completely blocks
+light, but is quite transparent to heat. It will hide a fire from you,
+but permit all its warmth to reach you. Metals are not only opaque to
+light and heat, but also to electrical energy, which passes through
+both iodine solution and glass almost as though they were not
+interposed. And so on.
+
+Now all known substances are “transparent” to gravitation. You can use
+screens of various sorts to cut off the light or heat, or electrical
+influence of the sun, or the warmth of the earth from anything; you can
+screen things by sheets of metal from Marconi’s rays, but nothing will
+cut off the gravitational attraction of the sun or the gravitational
+attraction of the earth. Yet why there should be nothing is hard to
+say. Cavor did not see why such a substance should not exist, and
+certainly I could not tell him. I had never thought of such a
+possibility before. He showed me by calculations on paper, which Lord
+Kelvin, no doubt, or Professor Lodge, or Professor Karl Pearson, or any
+of those great scientific people might have understood, but which
+simply reduced me to a hopeless muddle, that not only was such a
+substance possible, but that it must satisfy certain conditions. It was
+an amazing piece of reasoning. Much as it amazed and exercised me at
+the time, it would be impossible to reproduce it here. “Yes,” I said to
+it all, “yes; go on!” Suffice it for this story that he believed he
+might be able to manufacture this possible substance opaque to
+gravitation out of a complicated alloy of metals and something new—a
+new element, I fancy—called, I believe, _helium_, which was sent to him
+from London in sealed stone jars. Doubt has been thrown upon this
+detail, but I am almost certain it was _helium_ he had sent him in
+sealed stone jars. It was certainly something very gaseous and thin. If
+only I had taken notes...
+
+But then, how was I to foresee the necessity of taking notes?
+
+Any one with the merest germ of an imagination will understand the
+extraordinary possibilities of such a substance, and will sympathise a
+little with the emotion I felt as this understanding emerged from the
+haze of abstruse phrases in which Cavor expressed himself. Comic relief
+in a play indeed! It was some time before I would believe that I had
+interpreted him aright, and I was very careful not to ask questions
+that would have enabled him to gauge the profundity of misunderstanding
+into which he dropped his daily exposition. But no one reading the
+story of it here will sympathise fully, because from my barren
+narrative it will be impossible to gather the strength of my conviction
+that this astonishing substance was positively going to be made.
+
+I do not recall that I gave my play an hour’s consecutive work at any
+time after my visit to his house. My imagination had other things to
+do. There seemed no limit to the possibilities of the stuff; whichever
+way I tried I came on miracles and revolutions. For example, if one
+wanted to lift a weight, however enormous, one had only to get a sheet
+of this substance beneath it, and one might lift it with a straw. My
+first natural impulse was to apply this principle to guns and
+ironclads, and all the material and methods of war, and from that to
+shipping, locomotion, building, every conceivable form of human
+industry. The chance that had brought me into the very birth-chamber of
+this new time—it was an epoch, no less—was one of those chances that
+come once in a thousand years. The thing unrolled, it expanded and
+expanded. Among other things I saw in it my redemption as a business
+man. I saw a parent company, and daughter companies, applications to
+right of us, applications to left, rings and trusts, privileges, and
+concessions spreading and spreading, until one vast, stupendous
+Cavorite company ran and ruled the world.
+
+And I was in it!
+
+I took my line straight away. I knew I was staking everything, but I
+jumped there and then.
+
+“We’re on absolutely the biggest thing that has ever been invented,” I
+said, and put the accent on “we.” “If you want to keep me out of this,
+you’ll have to do it with a gun. I’m coming down to be your fourth
+labourer to-morrow.”
+
+He seemed surprised at my enthusiasm, but not a bit suspicious or
+hostile. Rather, he was self-depreciatory. He looked at me doubtfully.
+“But do you really think—?” he said. “And your play! How about that
+play?”
+
+“It’s vanished!” I cried. “My dear sir, don’t you see what you’ve got?
+Don’t you see what you’re going to do?”
+
+That was merely a rhetorical turn, but positively, he didn’t. At first
+I could not believe it. He had not had the beginning of the inkling of
+an idea. This astonishing little man had been working on purely
+theoretical grounds the whole time! When he said it was “the most
+important” research the world had ever seen, he simply meant it squared
+up so many theories, settled so much that was in doubt; he had troubled
+no more about the application of the stuff he was going to turn out
+than if he had been a machine that makes guns. This was a possible
+substance, and he was going to make it! _V’la tout_, as the Frenchman
+says.
+
+Beyond that, he was childish! If he made it, it would go down to
+posterity as Cavorite or Cavorine, and he would be made an F.R.S., and
+his portrait given away as a scientific worthy with _Nature_, and
+things like that. And that was all he saw! He would have dropped this
+bombshell into the world as though he had discovered a new species of
+gnat, if it had not happened that I had come along. And there it would
+have lain and fizzled, like one or two other little things these
+scientific people have lit and dropped about us.
+
+When I realised this, it was I did the talking, and Cavor who said, “Go
+on!” I jumped up. I paced the room, gesticulating like a boy of twenty.
+I tried to make him understand his duties and responsibilities in the
+matter—_our_ duties and responsibilities in the matter. I assured him
+we might make wealth enough to work any sort of social revolution we
+fancied, we might own and order the whole world. I told him of
+companies and patents, and the case for secret processes. All these
+things seemed to take him much as his mathematics had taken me. A look
+of perplexity came into his ruddy little face. He stammered something
+about indifference to wealth, but I brushed all that aside. He had got
+to be rich, and it was no good his stammering. I gave him to understand
+the sort of man I was, and that I had had very considerable business
+experience. I did not tell him I was an undischarged bankrupt at the
+time, because that was temporary, but I think I reconciled my evident
+poverty with my financial claims. And quite insensibly, in the way such
+projects grow, the understanding of a Cavorite monopoly grew up between
+us. He was to make the stuff, and I was to make the boom.
+
+I stuck like a leech to the “we”—“you” and “I” didn’t exist for me.
+
+His idea was that the profits I spoke of might go to endow research,
+but that, of course, was a matter we had to settle later. “That’s all
+right,” I shouted, “that’s all right.” The great point, as I insisted,
+was to get the thing done.
+
+“Here is a substance,” I cried, “no home, no factory, no fortress, no
+ship can dare to be without—more universally applicable even than a
+patent medicine. There isn’t a solitary aspect of it, not one of its
+ten thousand possible uses that will not make us rich, Cavor, beyond
+the dreams of avarice!”
+
+“No!” he said. “I begin to see. It’s extraordinary how one gets new
+points of view by talking over things!”
+
+“And as it happens you have just talked to the right man!”
+
+“I suppose no one,” he said, “is absolutely _averse_ to enormous
+wealth. Of course there is one thing—”
+
+He paused. I stood still.
+
+“It is just possible, you know, that we may not be able to make it
+after all! It may be one of those things that are a theoretical
+possibility, but a practical absurdity. Or when we make it, there may
+be some little hitch!”
+
+“We’ll tackle the hitch when it comes,” said I.
+
+### II.
+
+*The First Making of Cavorite*
+
+But Cavor’s fears were groundless, so far as the actual making was
+concerned. On the 14th of October, 1899, this incredible substance was
+made!
+
+Oddly enough, it was made at last by accident, when Mr. Cavor least
+expected it. He had fused together a number of metals and certain other
+things—I wish I knew the particulars now!—and he intended to leave the
+mixture a week and then allow it to cool slowly. Unless he had
+miscalculated, the last stage in the combination would occur when the
+stuff sank to a temperature of 60 degrees Fahrenheit. But it chanced
+that, unknown to Cavor, dissension had arisen about the furnace
+tending. Gibbs, who had previously seen to this, had suddenly attempted
+to shift it to the man who had been a gardener, on the score that coal
+was soil, being dug, and therefore could not possibly fall within the
+province of a joiner; the man who had been a jobbing gardener alleged,
+however, that coal was a metallic or ore-like substance, let alone that
+he was cook. But Spargus insisted on Gibbs doing the coaling, seeing
+that he was a joiner and that coal is notoriously fossil wood.
+Consequently Gibbs ceased to replenish the furnace, and no one else did
+so, and Cavor was too much immersed in certain interesting problems
+concerning a Cavorite flying machine (neglecting the resistance of the
+air and one or two other points) to perceive that anything was wrong.
+And the premature birth of his invention took place just as he was
+coming across the field to my bungalow for our afternoon talk and tea.
+
+I remember the occasion with extreme vividness. The water was boiling,
+and everything was prepared, and the sound of his “zuzzoo” had brought
+me out upon the verandah. His active little figure was black against
+the autumnal sunset, and to the right the chimneys of his house just
+rose above a gloriously tinted group of trees. Remoter rose the Wealden
+Hills, faint and blue, while to the left the hazy marsh spread out
+spacious and serene. And then—
+
+The chimneys jerked heavenward, smashing into a string of bricks as
+they rose, and the roof and a miscellany of furniture followed. Then
+overtaking them came a huge white flame. The trees about the building
+swayed and whirled and tore themselves to pieces, that sprang towards
+the flare. My ears were smitten with a clap of thunder that left me
+deaf on one side for life, and all about me windows smashed, unheeded.
+
+I took three steps from the verandah towards Cavor’s house, and even as
+I did so came the wind.
+
+Instantly my coat tails were over my head, and I was progressing in
+great leaps and bounds, and quite against my will, towards him. In the
+same moment the discoverer was seized, whirled about, and flew through
+the screaming air. I saw one of my chimney pots hit the ground within
+six yards of me, leap a score of feet, and so hurry in great strides
+towards the focus of the disturbance. Cavor, kicking and flapping, came
+down again, rolled over and over on the ground for a space, struggled
+up and was lifted and borne forward at an enormous velocity, vanishing
+at last among the labouring, lashing trees that writhed about his
+house.
+
+A mass of smoke and ashes, and a square of bluish shining substance
+rushed up towards the zenith. A large fragment of fencing came sailing
+past me, dropped edgeways, hit the ground and fell flat, and then the
+worst was over. The aerial commotion fell swiftly until it was a mere
+strong gale, and I became once more aware that I had breath and feet.
+By leaning back against the wind I managed to stop, and could collect
+such wits as still remained to me.
+
+In that instant the whole face of the world had changed. The tranquil
+sunset had vanished, the sky was dark with scurrying clouds, everything
+was flattened and swaying with the gale. I glanced back to see if my
+bungalow was still in a general way standing, then staggered forwards
+towards the trees amongst which Cavor had vanished, and through whose
+tall and leaf-denuded branches shone the flames of his burning house.
+
+I entered the copse, dashing from one tree to another and clinging to
+them, and for a space I sought him in vain. Then amidst a heap of
+smashed branches and fencing that had banked itself against a portion
+of his garden wall I perceived something stir. I made a run for this,
+but before I reached it a brown object separated itself, rose on two
+muddy legs, and protruded two drooping, bleeding hands. Some tattered
+ends of garment fluttered out from its middle portion and streamed
+before the wind.
+
+For a moment I did not recognise this earthy lump, and then I saw that
+it was Cavor, caked in the mud in which he had rolled. He leant forward
+against the wind, rubbing the dirt from his eyes and mouth.
+
+He extended a muddy lump of hand, and staggered a pace towards me. His
+face worked with emotion, little lumps of mud kept falling from it. He
+looked as damaged and pitiful as any living creature I have ever seen,
+and his remark therefore amazed me exceedingly.
+
+“Gratulate me,” he gasped; “gratulate me!”
+
+“Congratulate you!” said I. “Good heavens! What for?”
+
+“I’ve done it.”
+
+“You _have_. What on earth caused that explosion?”
+
+A gust of wind blew his words away. I understood him to say that it
+wasn’t an explosion at all. The wind hurled me into collision with him,
+and we stood clinging to one another.
+
+“Try and get back—to my bungalow,” I bawled in his ear. He did not hear
+me, and shouted something about “three martyrs—science,” and also
+something about “not much good.” At the time he laboured under the
+impression that his three attendants had perished in the whirlwind.
+Happily this was incorrect. Directly he had left for my bungalow they
+had gone off to the public-house in Lympne to discuss the question of
+the furnaces over some trivial refreshment.
+
+I repeated my suggestion of getting back to my bungalow, and this time
+he understood. We clung arm-in-arm and started, and managed at last to
+reach the shelter of as much roof as was left to me. For a space we sat
+in arm-chairs and panted. All the windows were broken, and the lighter
+articles of furniture were in great disorder, but no irrevocable damage
+was done. Happily the kitchen door had stood the pressure upon it, so
+that all my crockery and cooking materials had survived. The oil stove
+was still burning, and I put on the water to boil again for tea. And
+that prepared, I could turn on Cavor for his explanation.
+
+“Quite correct,” he insisted; “quite correct. I’ve done it, and it’s
+all right.”
+
+“But,” I protested. “All right! Why, there can’t be a rick standing, or
+a fence or a thatched roof undamaged for twenty miles round....”
+
+“It’s all right—_really_. I didn’t, of course, foresee this little
+upset. My mind was preoccupied with another problem, and I’m apt to
+disregard these practical side issues. But it’s all right—”
+
+“My dear sir,” I cried, “don’t you see you’ve done thousands of pounds’
+worth of damage?”
+
+“There, I throw myself on your discretion. I’m not a practical man, of
+course, but don’t you think they will regard it as a cyclone?”
+
+“But the explosion—”
+
+“It was _not_ an explosion. It’s perfectly simple. Only, as I say, I’m
+apt to overlook these little things. It’s that zuzzoo business on a
+larger scale. Inadvertently I made this substance of mine, this
+Cavorite, in a thin, wide sheet....”
+
+He paused. “You are quite clear that the stuff is opaque to
+gravitation, that it cuts off things from gravitating towards each
+other?”
+
+“Yes,” said I. “Yes.”
+
+“Well, so soon as it reached a temperature of 60 degrees Fahrenheit,
+and the process of its manufacture was complete, the air above it, the
+portions of roof and ceiling and floor above it ceased to have weight.
+I suppose you know—everybody knows nowadays—that, as a usual thing, the
+air _has_ weight, that it presses on everything at the surface of the
+earth, presses in all directions, with a pressure of fourteen and a
+half pounds to the square inch?”
+
+“I know that,” said I. “Go on.”
+
+“I know that too,” he remarked. “Only this shows you how useless
+knowledge is unless you apply it. You see, over our Cavorite this
+ceased to be the case, the air there ceased to exert any pressure, and
+the air round it and not over the Cavorite was exerting a pressure of
+fourteen pounds and a half to the square inch upon this suddenly
+weightless air. Ah! you begin to see! The air all about the Cavorite
+crushed in upon the air above it with irresistible force. The air above
+the Cavorite was forced upward violently, the air that rushed in to
+replace it immediately lost weight, ceased to exert any pressure,
+followed suit, blew the ceiling through and the roof off....
+
+“You perceive,” he said, “it formed a sort of atmospheric fountain, a
+kind of chimney in the atmosphere. And if the Cavorite itself hadn’t
+been loose and so got sucked up the chimney, does it occur to you what
+would have happened?”
+
+I thought. “I suppose,” I said, “the air would be rushing up and up
+over that infernal piece of stuff now.”
+
+“Precisely,” he said. “A huge fountain—”
+
+“Spouting into space! Good heavens! Why, it would have squirted all the
+atmosphere of the earth away! It would have robbed the world of air! It
+would have been the death of all mankind! That little lump of stuff!”
+
+“Not exactly into space,” said Cavor, “but as bad—practically. It would
+have whipped the air off the world as one peels a banana, and flung it
+thousands of miles. It would have dropped back again, of course—but on
+an asphyxiated world! From our point of view very little better than if
+it never came back!”
+
+I stared. As yet I was too amazed to realise how all my expectations
+had been upset. “What do you mean to do now?” I asked.
+
+“In the first place if I may borrow a garden trowel I will remove some
+of this earth with which I am encased, and then if I may avail myself
+of your domestic conveniences I will have a bath. This done, we will
+converse more at leisure. It will be wise, I think”—he laid a muddy
+hand on my arm—“if nothing were said of this affair beyond ourselves. I
+know I have caused great damage—probably even dwelling-houses may be
+ruined here and there upon the country-side. But on the other hand, I
+cannot possibly pay for the damage I have done, and if the real cause
+of this is published, it will lead only to heartburning and the
+obstruction of my work. One cannot foresee _everything_, you know, and
+I cannot consent for one moment to add the burthen of practical
+considerations to my theorising. Later on, when you have come in with
+your practical mind, and Cavorite is floated—floated _is_ the word,
+isn’t it?—and it has realised all you anticipate for it, we may set
+matters right with these persons. But not now—not now. If no other
+explanation is offered, people, in the present unsatisfactory state of
+meteorological science, will ascribe all this to a cyclone; there might
+be a public subscription, and as my house has collapsed and been burnt,
+I should in that case receive a considerable share in the compensation,
+which would be extremely helpful to the prosecution of our researches.
+But if it is known that _I_ caused this, there will be no public
+subscription, and everybody will be put out. Practically I should never
+get a chance of working in peace again. My three assistants may or may
+not have perished. That is a detail. If they have, it is no great loss;
+they were more zealous than able, and this premature event must be
+largely due to their joint neglect of the furnace. If they have not
+perished, I doubt if they have the intelligence to explain the affair.
+They will accept the cyclone story. And if during the temporary
+unfitness of my house for occupation, I may lodge in one of the
+untenanted rooms of this bungalow of yours—”
+
+He paused and regarded me.
+
+A man of such possibilities, I reflected, is no ordinary guest to
+entertain.
+
+“Perhaps,” said I, rising to my feet, “we had better begin by looking
+for a trowel,” and I led the way to the scattered vestiges of the
+greenhouse.
+
+And while he was having his bath I considered the entire question
+alone. It was clear there were drawbacks to Mr. Cavor’s society I had
+not foreseen. The absentmindedness that had just escaped depopulating
+the terrestrial globe, might at any moment result in some other grave
+inconvenience. On the other hand I was young, my affairs were in a
+mess, and I was in just the mood for reckless adventure—with a chance
+of something good at the end of it. I had quite settled in my mind that
+I was to have half at least in that aspect of the affair. Fortunately I
+held my bungalow, as I have already explained, on a three-year
+agreement, without being responsible for repairs; and my furniture,
+such as there was of it, had been hastily purchased, was unpaid for,
+insured, and altogether devoid of associations. In the end I decided to
+keep on with him, and see the business through.
+
+Certainly the aspect of things had changed very greatly. I no longer
+doubted at all the enormous possibilities of the substance, but I began
+to have doubts about the gun-carriage and the patent boots. We set to
+work at once to reconstruct his laboratory and proceed with our
+experiments. Cavor talked more on my level than he had ever done
+before, when it came to the question of how we should make the stuff
+next.
+
+“Of course we must make it again,” he said, with a sort of glee I had
+not expected in him, “of course we must make it again. We have caught a
+Tartar, perhaps, but we have left the theoretical behind us for good
+and all. If we can possibly avoid wrecking this little planet of ours,
+we will. But—there _must_ be risks! There must be. In experimental work
+there always are. And here, as a practical man, _you_ must come in. For
+my own part it seems to me we might make it edgeways, perhaps, and very
+thin. Yet I don’t know. I have a certain dim perception of another
+method. I can hardly explain it yet. But curiously enough it came into
+my mind, while I was rolling over and over in the mud before the wind,
+and very doubtful how the whole adventure was to end, as being
+absolutely the thing I ought to have done.”
+
+Even with my aid we found some little difficulty, and meanwhile we kept
+at work restoring the laboratory. There was plenty to do before it
+became absolutely necessary to decide upon the precise form and method
+of our second attempt. Our only hitch was the strike of the three
+labourers, who objected to my activity as a foreman. But that matter we
+compromised after two days’ delay.
+
+### III.
+
+*The Building of the sphere*
+
+I remember the occasion very distinctly when Cavor told me of his idea
+of the sphere. He had had intimations of it before, but at the time it
+seemed to come to him in a rush. We were returning to the bungalow for
+tea, and on the way he fell humming. Suddenly he shouted, “That’s it!
+That finishes it! A sort of roller blind!”
+
+“Finishes what?” I asked.
+
+“Space—anywhere! The moon.”
+
+“What do you mean?”
+
+“Mean? Why—it must be a sphere! That’s what I mean!”
+
+I saw I was out of it, and for a time I let him talk in his own
+fashion. I hadn’t the ghost of an idea then of his drift. But after he
+had taken tea he made it clear to me.
+
+“It’s like this,” he said. “Last time I ran this stuff that cuts things
+off from gravitation into a flat tank with an overlap that held it
+down. And directly it had cooled and the manufacture was completed all
+that uproar happened, nothing above it weighed anything, the air went
+squirting up, the house squirted up, and if the stuff itself hadn’t
+squirted up too, I don’t know what would have happened! But suppose the
+substance is loose, and quite free to go up?”
+
+“It will go up at once!”
+
+“Exactly. With no more disturbance than firing a big gun.”
+
+“But what good will that do?”
+
+“I’m going up with it!”
+
+I put down my teacup and stared at him.
+
+“Imagine a sphere,” he explained, “large enough to hold two people and
+their luggage. It will be made of steel lined with thick glass; it will
+contain a proper store of solidified air, concentrated food, water
+distilling apparatus, and so forth. And enamelled, as it were, on the
+outer steel—”
+
+“Cavorite?”
+
+“Yes.”
+
+“But how will you get inside?”
+
+“There was a similar problem about a dumpling.”
+
+“Yes, I know. But how?”
+
+“That’s perfectly easy. An air-tight manhole is all that is needed.
+That, of course, will have to be a little complicated; there will have
+to be a valve, so that things may be thrown out, if necessary, without
+much loss of air.”
+
+“Like Jules Verne’s thing in _A Trip to the Moon_.”
+
+But Cavor was not a reader of fiction.
+
+“I begin to see,” I said slowly. “And you could get in and screw
+yourself up while the Cavorite was warm, and as soon as it cooled it
+would become impervious to gravitation, and off you would fly—”
+
+“At a tangent.”
+
+“You would go off in a straight line—” I stopped abruptly. “What is to
+prevent the thing travelling in a straight line into space for ever?” I
+asked. “You’re not safe to get anywhere, and if you do—how will you get
+back?”
+
+“I’ve just thought of that,” said Cavor. “That’s what I meant when I
+said the thing is finished. The inner glass sphere can be air-tight,
+and, except for the manhole, continuous, and the steel sphere can be
+made in sections, each section capable of rolling up after the fashion
+of a roller blind. These can easily be worked by springs, and released
+and checked by electricity conveyed by platinum wires fused through the
+glass. All that is merely a question of detail. So you see, that except
+for the thickness of the blind rollers, the Cavorite exterior of the
+sphere will consist of windows or blinds, whichever you like to call
+them. Well, when all these windows or blinds are shut, no light, no
+heat, no gravitation, no radiant energy of any sort will get at the
+inside of the sphere, it will fly on through space in a straight line,
+as you say. But open a window, imagine one of the windows open. Then at
+once any heavy body that chances to be in that direction will attract
+us—”
+
+I sat taking it in.
+
+“You see?” he said.
+
+“Oh, I _see_.”
+
+“Practically we shall be able to tack about in space just as we wish.
+Get attracted by this and that.”
+
+“Oh, yes. _That’s_ clear enough. Only—”
+
+“Well?”
+
+“I don’t quite see what we shall do it for! It’s really only jumping
+off the world and back again.”
+
+“Surely! For example, one might go to the moon.”
+
+“And when one got there? What would you find?”
+
+“We should see—Oh! consider the new knowledge.”
+
+“Is there air there?”
+
+“There may be.”
+
+“It’s a fine idea,” I said, “but it strikes me as a large order all the
+same. The moon! I’d much rather try some smaller things first.”
+
+“They’re out of the question, because of the air difficulty.”
+
+“Why not apply that idea of spring blinds—Cavorite blinds in strong
+steel cases—to lifting weights?”
+
+“It wouldn’t work,” he insisted. “After all, to go into outer space is
+not so much worse, if at all, than a polar expedition. Men go on polar
+expeditions.”
+
+“Not business men. And besides, they get paid for polar expeditions.
+And if anything goes wrong there are relief parties. But this—it’s just
+firing ourselves off the world for nothing.”
+
+“Call it prospecting.”
+
+“You’ll have to call it that.... One might make a book of it perhaps,”
+I said.
+
+“I have no doubt there will be minerals,” said Cavor.
+
+“For example?”
+
+“Oh! sulphur, ores, gold perhaps, possibly new elements.”
+
+“Cost of carriage,” I said. “You know you’re _not_ a practical man. The
+moon’s a quarter of a million miles away.”
+
+“It seems to me it wouldn’t cost much to cart any weight anywhere if
+you packed it in a Cavorite case.”
+
+I had not thought of that. “Delivered free on head of purchaser, eh?”
+
+“It isn’t as though we were confined to the moon.”
+
+“You mean?”
+
+“There’s Mars—clear atmosphere, novel surroundings, exhilarating sense
+of lightness. It might be pleasant to go there.”
+
+“Is there air on Mars?”
+
+“Oh, yes!”
+
+“Seems as though you might run it as a sanatorium. By the way, how far
+is Mars?”
+
+“Two hundred million miles at present,” said Cavor airily; “and you go
+close by the sun.”
+
+My imagination was picking itself up again. “After all,” I said,
+“there’s something in these things. There’s travel—”
+
+An extraordinary possibility came rushing into my mind. Suddenly I saw,
+as in a vision, the whole solar system threaded with Cavorite liners
+and spheres _de luxe_. “Rights of pre-emption,” came floating into my
+head—planetary rights of pre-emption. I recalled the old Spanish
+monopoly in American gold. It wasn’t as though it was just this planet
+or that—it was all of them. I stared at Cavor’s rubicund face, and
+suddenly my imagination was leaping and dancing. I stood up, I walked
+up and down; my tongue was unloosened.
+
+“I’m beginning to take it in,” I said; “I’m beginning to take it in.”
+The transition from doubt to enthusiasm seemed to take scarcely any
+time at all. “But this is tremendous!” I cried. “This is Imperial! I
+haven’t been dreaming of this sort of thing.”
+
+Once the chill of my opposition was removed, his own pent-up excitement
+had play. He too got up and paced. He too gesticulated and shouted. We
+behaved like men inspired. We _were_ men inspired.
+
+“We’ll settle all that!” he said in answer to some incidental
+difficulty that had pulled me up. “We’ll soon settle that! We’ll start
+the drawings for mouldings this very night.”
+
+“We’ll start them now,” I responded, and we hurried off to the
+laboratory to begin upon this work forthwith.
+
+I was like a child in Wonderland all that night. The dawn found us both
+still at work—we kept our electric light going heedless of the day. I
+remember now exactly how these drawings looked. I shaded and tinted
+while Cavor drew—smudged and haste-marked they were in every line, but
+wonderfully correct. We got out the orders for the steel blinds and
+frames we needed from that night’s work, and the glass sphere was
+designed within a week. We gave up our afternoon conversations and our
+old routine altogether. We worked, and we slept and ate when we could
+work no longer for hunger and fatigue. Our enthusiasm infected even our
+three men, though they had no idea what the sphere was for. Through
+those days the man Gibbs gave up walking, and went everywhere, even
+across the room, at a sort of fussy run.
+
+And it grew—the sphere. December passed, January—I spent a day with a
+broom sweeping a path through the snow from bungalow to
+laboratory—February, March. By the end of March the completion was in
+sight. In January had come a team of horses, a huge packing-case; we
+had our thick glass sphere now ready, and in position under the crane
+we had rigged to sling it into the steel shell. All the bars and blinds
+of the steel shell—it was not really a spherical shell, but polyhedral,
+with a roller blind to each facet—had arrived by February, and the
+lower half was bolted together. The Cavorite was half made by March,
+the metallic paste had gone through two of the stages in its
+manufacture, and we had plastered quite half of it on to the steel bars
+and blinds. It was astonishing how closely we kept to the lines of
+Cavor’s first inspiration in working out the scheme. When the bolting
+together of the sphere was finished, he proposed to remove the rough
+roof of the temporary laboratory in which the work was done, and build
+a furnace about it. So the last stage of Cavorite making, in which the
+paste is heated to a dull red glow in a stream of helium, would be
+accomplished when it was already on the sphere.
+
+And then we had to discuss and decide what provisions we were to
+take—compressed foods, concentrated essences, steel cylinders
+containing reserve oxygen, an arrangement for removing carbonic acid
+and waste from the air and restoring oxygen by means of sodium
+peroxide, water condensers, and so forth. I remember the little heap
+they made in the corner—tins, and rolls, and boxes—convincingly
+matter-of-fact.
+
+It was a strenuous time, with little chance of thinking. But one day,
+when we were drawing near the end, an odd mood came over me. I had been
+bricking up the furnace all the morning, and I sat down by these
+possessions dead beat. Everything seemed dull and incredible.
+
+“But look here, Cavor,” I said. “After all! What’s it all for?”
+
+He smiled. “The thing now is to go.”
+
+“The moon,” I reflected. “But what do you expect? I thought the moon
+was a dead world.”
+
+He shrugged his shoulders.
+
+“We’re going to see.”
+
+“_Are_ we?” I said, and stared before me.
+
+“You are tired,” he remarked. “You’d better take a walk this
+afternoon.”
+
+“No,” I said obstinately; “I’m going to finish this brickwork.”
+
+And I did, and insured myself a night of insomnia. I don’t think I have
+ever had such a night. I had some bad times before my business
+collapse, but the very worst of those was sweet slumber compared to
+this infinity of aching wakefulness. I was suddenly in the most
+enormous funk at the thing we were going to do.
+
+I do not remember before that night thinking at all of the risks we
+were running. Now they came like that array of spectres that once
+beleaguered Prague, and camped around me. The strangeness of what we
+were about to do, the unearthliness of it, overwhelmed me. I was like a
+man awakened out of pleasant dreams to the most horrible surroundings.
+I lay, eyes wide open, and the sphere seemed to get more flimsy and
+feeble, and Cavor more unreal and fantastic, and the whole enterprise
+madder and madder every moment.
+
+I got out of bed and wandered about. I sat at the window and stared at
+the immensity of space. Between the stars was the void, the
+unfathomable darkness! I tried to recall the fragmentary knowledge of
+astronomy I had gained in my irregular reading, but it was all too
+vague to furnish any idea of the things we might expect. At last I got
+back to bed and snatched some moments of sleep—moments of nightmare
+rather—in which I fell and fell and fell for evermore into the abyss of
+the sky.
+
+I astonished Cavor at breakfast. I told him shortly, “I’m not coming
+with you in the sphere.”
+
+I met all his protests with a sullen persistence. “The thing’s too
+mad,” I said, “and I won’t come. The thing’s too mad.”
+
+I would not go with him to the laboratory. I fretted about my bungalow
+for a time, and then took hat and stick and set out alone, I knew not
+whither. It chanced to be a glorious morning: a warm wind and deep blue
+sky, the first green of spring abroad, and multitudes of birds singing.
+I lunched on beef and beer in a little public-house near Elham, and
+startled the landlord by remarking _apropos_ of the weather, “A man who
+leaves the world when days of this sort are about is a fool!”
+
+“That’s what I says when I heerd on it!” said the landlord, and I found
+that for one poor soul at least this world had proved excessive, and
+there had been a throat-cutting. I went on with a new twist to my
+thoughts.
+
+In the afternoon I had a pleasant sleep in a sunny place, and went on
+my way refreshed.
+
+I came to a comfortable-looking inn near Canterbury. It was bright with
+creepers, and the landlady was a clean old woman and took my eye. I
+found I had just enough money to pay for my lodging with her. I decided
+to stop the night there. She was a talkative body, and among many other
+particulars I learnt she had never been to London. “Canterbury’s as far
+as ever I been,” she said. “I’m not one of your gad-about sort.”
+
+“How would you like a trip to the moon?” I cried.
+
+“I never did hold with them ballooneys,” she said evidently under the
+impression that this was a common excursion enough. “I wouldn’t go up
+in one—not for ever so.”
+
+This struck me as being funny. After I had supped I sat on a bench by
+the door of the inn and gossiped with two labourers about brickmaking,
+and motor cars, and the cricket of last year. And in the sky a faint
+new crescent, blue and vague as a distant Alp, sank westward over the
+sun.
+
+The next day I returned to Cavor. “I am coming,” I said. “I’ve been a
+little out of order, that’s all.”
+
+That was the only time I felt any serious doubt our enterprise. Nerves
+purely! After that I worked a little more carefully, and took a trudge
+for an hour every day. And at last, save for the heating in the
+furnace, our labours were at an end.
+
+### IV.
+
+*Inside the Sphere*
+
+“Go on,” said Cavor, as I sat across the edge of the manhole, and
+looked down into the black interior of the sphere. We two were alone.
+It was evening, the sun had set, and the stillness of the twilight was
+upon everything.
+
+I drew my other leg inside and slid down the smooth glass to the bottom
+of the sphere, then turned to take the cans of food and other
+impedimenta from Cavor. The interior was warm, the thermometer stood at
+eighty, and as we should lose little or none of this by radiation, we
+were dressed in shoes and thin flannels. We had, however, a bundle of
+thick woollen clothing and several thick blankets to guard against
+mischance.
+
+By Cavor’s direction I placed the packages, the cylinders of oxygen,
+and so forth, loosely about my feet, and soon we had everything in. He
+walked about the roofless shed for a time seeking anything we had
+overlooked, and then crawled in after me. I noted something in his
+hand.
+
+“What have you got there?” I asked.
+
+“Haven’t you brought anything to read?”
+
+“Good Lord! No.”
+
+“I forgot to tell you. There are uncertainties— The voyage may last— We
+may be weeks!”
+
+“But—”
+
+“We shall be floating in this sphere with absolutely no occupation.”
+
+“I wish I’d known—”
+
+He peered out of the manhole. “Look!” he said. “There’s something
+there!”
+
+“Is there time?”
+
+“We shall be an hour.”
+
+I looked out. It was an old number of _Tit-Bits_ that one of the men
+must have brought. Farther away in the corner I saw a torn _Lloyd’s
+News_. I scrambled back into the sphere with these things. “What have
+you got?” I said.
+
+I took the book from his hand and read, “The Works of William
+Shakespeare”.
+
+He coloured slightly. “My education has been so purely scientific—” he
+said apologetically.
+
+“Never read him?”
+
+“Never.”
+
+“He knew a little, you know—in an irregular sort of way.”
+
+“Precisely what I am told,” said Cavor.
+
+I assisted him to screw in the glass cover of the manhole, and then he
+pressed a stud to close the corresponding blind in the outer case. The
+little oblong of twilight vanished. We were in darkness. For a time
+neither of us spoke. Although our case would not be impervious to
+sound, everything was very still. I perceived there was nothing to grip
+when the shock of our start should come, and I realised that I should
+be uncomfortable for want of a chair.
+
+“Why have we no chairs?” I asked.
+
+“I’ve settled all that,” said Cavor. “We won’t need them.”
+
+“Why not?”
+
+“You will see,” he said, in the tone of a man who refuses to talk.
+
+I became silent. Suddenly it had come to me clear and vivid that I was
+a fool to be inside that sphere. Even now, I asked myself, is to too
+late to withdraw? The world outside the sphere, I knew, would be cold
+and inhospitable enough for me—for weeks I had been living on subsidies
+from Cavor—but after all, would it be as cold as the infinite zero, as
+inhospitable as empty space? If it had not been for the appearance of
+cowardice, I believe that even then I should have made him let me out.
+But I hesitated on that score, and hesitated, and grew fretful and
+angry, and the time passed.
+
+There came a little jerk, a noise like champagne being uncorked in
+another room, and a faint whistling sound. For just one instant I had a
+sense of enormous tension, a transient conviction that my feet were
+pressing downward with a force of countless tons. It lasted for an
+infinitesimal time.
+
+But it stirred me to action. “Cavor!” I said into the darkness, “my
+nerve’s in rags. I don’t think—”
+
+I stopped. He made no answer.
+
+“Confound it!” I cried; “I’m a fool! What business have I here? I’m not
+coming, Cavor. The thing’s too risky. I’m getting out.”
+
+“You can’t,” he said.
+
+“Can’t! We’ll soon see about that!”
+
+He made no answer for ten seconds. “It’s too late for us to quarrel
+now, Bedford,” he said. “That little jerk was the start. Already we are
+flying as swiftly as a bullet up into the gulf of space.”
+
+“I—” I said, and then it didn’t seem to matter what happened. For a
+time I was, as it were, stunned; I had nothing to say. It was just as
+if I had never heard of this idea of leaving the world before. Then I
+perceived an unaccountable change in my bodily sensations. It was a
+feeling of lightness, of unreality. Coupled with that was a queer
+sensation in the head, an apoplectic effect almost, and a thumping of
+blood vessels at the ears. Neither of these feelings diminished as time
+went on, but at last I got so used to them that I experienced no
+inconvenience.
+
+I heard a click, and a little glow lamp came into being.
+
+I saw Cavor’s face, as white as I felt my own to be. We regarded one
+another in silence. The transparent blackness of the glass behind him
+made him seem as though he floated in a void.
+
+“Well, we’re committed,” I said at last.
+
+“Yes,” he said, “we’re committed.”
+
+“Don’t move,” he exclaimed, at some suggestion of a gesture. “Let your
+muscles keep quite lax—as if you were in bed. We are in a little
+universe of our own. Look at those things!”
+
+He pointed to the loose cases and bundles that had been lying on the
+blankets in the bottom of the sphere. I was astonished to see that they
+were floating now nearly a foot from the spherical wall. Then I saw
+from his shadow that Cavor was no longer leaning against the glass. I
+thrust out my hand behind me, and found that I too was suspended in
+space, clear of the glass.
+
+I did not cry out nor gesticulate, but fear came upon me. It was like
+being held and lifted by something—you know not what. The mere touch of
+my hand against the glass moved me rapidly. I understood what had
+happened, but that did not prevent my being afraid. We were cut off
+from all exterior gravitation, only the attraction of objects within
+our sphere had effect. Consequently everything that was not fixed to
+the glass was falling—slowly because of the slightness of our
+masses—towards the centre of gravity of our little world, which seemed
+to be somewhere about the middle of the sphere, but rather nearer to
+myself than Cavor, on account of my greater weight.
+
+“We must turn round,” said Cavor, “and float back to back, with the
+things between us.”
+
+It was the strangest sensation conceivable, floating thus loosely in
+space, at first indeed horribly strange, and when the horror passed,
+not disagreeable at all, exceeding restful; indeed, the nearest thing
+in earthly experience to it that I know is lying on a very thick, soft
+feather bed. But the quality of utter detachment and independence! I
+had not reckoned on things like this. I had expected a violent jerk at
+starting, a giddy sense of speed. Instead I felt—as if I were
+disembodied. It was not like the beginning of a journey; it was like
+the beginning of a dream.
+
+### V.
+
+*The Journey to the Moon*
+
+Presently Cavor extinguished the light. He said we had not overmuch
+energy stored, and that what we had we must economise for reading. For
+a time, whether it was long or short I do not know, there was nothing
+but blank darkness.
+
+A question floated up out of the void. “How are we pointing?” I said.
+“What is our direction?”
+
+“We are flying away from the earth at a tangent, and as the moon is
+near her third quarter we are going somewhere towards her. I will open
+a blind—”
+
+Came a click, and then a window in the outer case yawned open. The sky
+outside was as black as the darkness within the sphere, but the shape
+of the open window was marked by an infinite number of stars.
+
+Those who have only seen the starry sky from the earth cannot imagine
+its appearance when the vague, half luminous veil of our air has been
+withdrawn. The stars we see on earth are the mere scattered survivors
+that penetrate our misty atmosphere. But now at last I could realise
+the meaning of the hosts of heaven!
+
+Stranger things we were presently to see, but that airless, star-dusted
+sky! Of all things, I think that will be one of the last I shall
+forget.
+
+The little window vanished with a click, another beside it snapped open
+and instantly closed, and then a third, and for a moment I had to close
+my eyes because of the blinding splendour of the waning moon.
+
+For a space I had to stare at Cavor and the white-lit things about me
+to season my eyes to light again, before I could turn them towards that
+pallid glare.
+
+Four windows were open in order that the gravitation of the moon might
+act upon all the substances in our sphere. I found I was no longer
+floating freely in space, but that my feet were resting on the glass in
+the direction of the moon. The blankets and cases of provisions were
+also creeping slowly down the glass, and presently came to rest so as
+to block out a portion of the view. It seemed to me, of course, that I
+looked “down” when I looked at the moon. On earth “down” means
+earthward, the way things fall, and “up” the reverse direction. Now the
+pull of gravitation was towards the moon, and for all I knew to the
+contrary our earth was overhead. And, of course, when all the Cavorite
+blinds were closed, “down” was towards the centre of our sphere, and
+“up” towards its outer wall.
+
+It was curiously unlike earthly experience, too, to have the light
+coming _up_ to one. On earth light falls from above, or comes slanting
+down sideways, but here it came from beneath our feet, and to see our
+shadows we had to look up.
+
+At first it gave me a sort of vertigo to stand only on thick glass and
+look down upon the moon through hundreds of thousands of miles of
+vacant space; but this sickness passed very speedily. And then—the
+splendour of the sight!
+
+The reader may imagine it best if he will lie on the ground some warm
+summer’s night and look between his upraised feet at the moon, but for
+some reason, probably because the absence of air made it so much more
+luminous, the moon seemed already considerably larger than it does from
+earth. The minutest details of its surface were acutely clear. And
+since we did not see it through air, its outline was bright and sharp,
+there was no glow or halo about it, and the star-dust that covered the
+sky came right to its very margin, and marked the outline of its
+unilluminated part. And as I stood and stared at the moon between my
+feet, that perception of the impossible that had been with me off and
+on ever since our start, returned again with tenfold conviction.
+
+“Cavor,” I said, “this takes me queerly. Those companies we were going
+to run, and all that about minerals?”
+
+“Well?”
+
+“I don’t see ‘em here.”
+
+“No,” said Cavor; “but you’ll get over all that.”
+
+“I suppose I’m made to turn right side up again. Still, _this_— For a
+moment I could half believe there never was a world.”
+
+“That copy of _Lloyd’s News_ might help you.”
+
+I stared at the paper for a moment, then held it above the level of my
+face, and found I could read it quite easily. I struck a column of mean
+little advertisements. “A gentleman of private means is willing to lend
+money,” I read. I knew that gentleman. Then somebody eccentric wanted
+to sell a Cutaway bicycle, “quite new and cost £15,” for five pounds;
+and a lady in distress wished to dispose of some fish knives and forks,
+“a wedding present,” at a great sacrifice. No doubt some simple soul
+was sagely examining these knives and forks, and another triumphantly
+riding off on that bicycle, and a third trustfully consulting that
+benevolent gentleman of means even as I read. I laughed, and let the
+paper drift from my hand.
+
+“Are we visible from the earth?” I asked.
+
+“Why?”
+
+“I knew some one who was rather interested in astronomy. It occurred to
+me that it would be rather odd if—my friend—chanced to be looking
+through some telescope.”
+
+“It would need the most powerful telescope on earth even now to see us
+as the minutest speck.”
+
+For a time I stared in silence at the moon.
+
+“It’s a world,” I said; “one feels that infinitely more than one ever
+did on earth. People perhaps—”
+
+“People!” he exclaimed. “_No!_ Banish all that! Think yourself a sort
+of ultra-arctic voyager exploring the desolate places of space. Look at
+it!”
+
+He waved his hand at the shining whiteness below. “It’s dead—dead! Vast
+extinct volcanoes, lava wildernesses, tumbled wastes of snow, or frozen
+carbonic acid, or frozen air, and everywhere landslip seams and cracks
+and gulfs. Nothing happens. Men have watched this planet systematically
+with telescopes for over two hundred years. How much change do you
+think they have seen?”
+
+“None.”
+
+“They have traced two indisputable landslips, a doubtful crack, and one
+slight periodic change of colour, and that’s all.”
+
+“I didn’t know they’d traced even that.”
+
+“Oh, yes. But as for people—!”
+
+“By the way,” I asked, “how small a thing will the biggest telescopes
+show upon the moon?”
+
+“One could see a fair-sized church. One could certainly see any towns
+or buildings, or anything like the handiwork of men. There might
+perhaps be insects, something in the way of ants, for example, so that
+they could hide in deep burrows from the lunar light, or some new sort
+of creatures having no earthly parallel. That is the most probable
+thing, if we are to find life there at all. Think of the difference in
+conditions! Life must fit itself to a day as long as fourteen earthly
+days, a cloudless sun-blaze of fourteen days, and then a night of equal
+length, growing ever colder and colder under these cold, sharp stars.
+In that night there must be cold, the ultimate cold, absolute zero,
+273° C. below the earthly freezing point. Whatever life there is must
+hibernate through _that_, and rise again each day.”
+
+He mused. “One can imagine something worm-like,” he said, “taking its
+air solid as an earth-worm swallows earth, or thick-skinned monsters—”
+
+“By the bye,” I said, “why didn’t we bring a gun?”
+
+He did not answer that question. “No,” he concluded, “we just have to
+go. We shall see when we get there.”
+
+I remembered something. “Of course, there’s my minerals, anyhow,” I
+said; “whatever the conditions may be.”
+
+Presently he told me he wished to alter our course a little by letting
+the earth tug at us for a moment. He was going to open one earthward
+blind for thirty seconds. He warned me that it would make my head swim,
+and advised me to extend my hands against the glass to break my fall. I
+did as he directed, and thrust my feet against the bales of food cases
+and air cylinders to prevent their falling upon me. Then with a click
+the window flew open. I fell clumsily upon hands and face, and saw for
+a moment between my black extended fingers our mother earth—a planet in
+a downward sky.
+
+We were still very near—Cavor told me the distance was perhaps eight
+hundred miles and the huge terrestrial disc filled all heaven. But
+already it was plain to see that the world was a globe. The land below
+us was in twilight and vague, but westward the vast grey stretches of
+the Atlantic shone like molten silver under the receding day. I think I
+recognised the cloud-dimmed coast-lines of France and Spain and the
+south of England, and then, with a click, the shutter closed again, and
+I found myself in a state of extraordinary confusion sliding slowly
+over the smooth glass.
+
+When at last things settled themselves in my mind again, it seemed
+quite beyond question that the moon was “down” and under my feet, and
+that the earth was somewhere away on the level of the horizon—the earth
+that had been “down” to me and my kindred since the beginning of
+things.
+
+So slight were the exertions required of us, so easy did the practical
+annihilation of our weight make all we had to do, that the necessity
+for taking refreshment did not occur to us for nearly six hours (by
+Cavor’s chronometer) after our start. I was amazed at that lapse of
+time. Even then I was satisfied with very little. Cavor examined the
+apparatus for absorbing carbonic acid and water, and pronounced it to
+be in satisfactory order, our consumption of oxygen having been
+extraordinarily slight. And our talk being exhausted for the time, and
+there being nothing further for us to do, we gave way to a curious
+drowsiness that had come upon us, and spreading our blankets on the
+bottom of the sphere in such a manner as to shut out most of the
+moonlight, wished each other good-night, and almost immediately fell
+asleep.
+
+And so, sleeping, and sometimes talking and reading a little, and at
+times eating, although without any keenness of appetite,[1] but for the
+most part in a sort of quiescence that was neither waking nor slumber,
+we fell through a space of time that had neither night nor day in it,
+silently, softly, and swiftly down towards the moon.
+
+[1] It is a curious thing, that while we were in the sphere we felt
+not the slightest desire for food, nor did we feel the want of it when
+we abstained. At first we forced our appetites, but afterwards we
+fasted completely. Altogether we did not consume one-hundredth part of
+the compressed provisions we had brought with us. The amount of
+carbonic acid we breathed was also unnaturally low, but why this was,
+I am quite unable to explain.
+
+### VI.
+
+*The Landing on the Moon*
+
+I remember how one day Cavor suddenly opened six of our shutters and
+blinded me so that I cried aloud at him. The whole area was moon, a
+stupendous scimitar of white dawn with its edge hacked out by notches
+of darkness, the crescent shore of an ebbing tide of darkness, out of
+which peaks and pinnacles came glittering into the blaze of the sun. I
+take it the reader has seen pictures or photographs of the moon and
+that I need not describe the broader features of that landscape, those
+spacious ring-like ranges vaster than any terrestrial mountains, their
+summits shining in the day, their shadows harsh and deep, the grey
+disordered plains, the ridges, hills, and craterlets, all passing at
+last from a blazing illumination into a common mystery of black.
+Athwart this world we were flying scarcely a hundred miles above its
+crests and pinnacles. And now we could see, what no eye on earth will
+ever see, that under the blaze of the day the harsh outlines of the
+rocks and ravines of the plains and crater floor grew grey and
+indistinct under a thickening haze, that the white of their lit
+surfaces broke into lumps and patches, and broke again and shrank and
+vanished, and that here and there strange tints of brown and olive grew
+and spread.
+
+But little time we had for watching then. For now we had come to the
+real danger of our journey. We had to drop ever closer to the moon as
+we spun about it, to slacken our pace and watch our chance, until at
+last we could dare to drop upon its surface.
+
+For Cavor that was a time of intense exertion; for me it was an anxious
+inactivity. I seemed perpetually to be getting out of his way. He leapt
+about the sphere from point to point with an agility that would have
+been impossible on earth. He was perpetually opening and closing the
+Cavorite windows, making calculations, consulting his chronometer by
+means of the glow lamp during those last eventful hours. For a long
+time we had all our windows closed and hung silently in darkness
+hurling through space.
+
+Then he was feeling for the shutter studs, and suddenly four windows
+were open. I staggered and covered my eyes, drenched and scorched and
+blinded by the unaccustomed splendour of the sun beneath my feet. Then
+again the shutters snapped, leaving my brain spinning in a darkness
+that pressed against the eyes. And after that I floated in another
+vast, black silence.
+
+Then Cavor switched on the electric light, and told me he proposed to
+bind all our luggage together with the blankets about it, against the
+concussion of our descent. We did this with our windows closed, because
+in that way our goods arranged themselves naturally at the centre of
+the sphere. That too was a strange business; we two men floating loose
+in that spherical space, and packing and pulling ropes. Imagine it if
+you can! No up nor down, and every effort resulting in unexpected
+movements. Now I would be pressed against the glass with the full force
+of Cavor’s thrust, now I would be kicking helplessly in a void. Now the
+star of the electric light would be overhead, now under foot. Now
+Cavor’s feet would float up before my eyes, and now we would be
+crossways to each other. But at last our goods were safely bound
+together in a big soft bale, all except two blankets with head holes
+that we were to wrap about ourselves.
+
+Then for a flash Cavor opened a window moonward, and we saw that we
+were dropping towards a huge central crater with a number of minor
+craters grouped in a sort of cross about it. And then again Cavor flung
+our little sphere open to the scorching, blinding sun. I think he was
+using the sun’s attraction as a brake. “Cover yourself with a blanket,”
+he cried, thrusting himself from me, and for a moment I did not
+understand.
+
+Then I hauled the blanket from beneath my feet and got it about me and
+over my head and eyes. Abruptly he closed the shutters again, snapped
+one open again and closed it, then suddenly began snapping them all
+open, each safely into its steel roller. There came a jar, and then we
+were rolling over and over, bumping against the glass and against the
+big bale of our luggage, and clutching at each other, and outside some
+white substance splashed as if we were rolling down a slope of snow....
+
+Over, clutch, bump, clutch, bump, over....
+
+Came a thud, and I was half buried under the bale of our possessions,
+and for a space everything was still. Then I could hear Cavor puffing
+and grunting, and the snapping of a shutter in its sash. I made an
+effort, thrust back our blanket-wrapped luggage, and emerged from
+beneath it. Our open windows were just visible as a deeper black set
+with stars.
+
+We were still alive, and we were lying in the darkness of the shadow of
+the wall of the great crater into which we had fallen.
+
+We sat getting our breath again, and feeling the bruises on our limbs.
+I don’t think either of us had had a very clear expectation of such
+rough handling as we had received. I struggled painfully to my feet.
+“And now,” said I, “to look at the landscape of the moon! But—! It’s
+tremendously dark, Cavor!”
+
+The glass was dewy, and as I spoke I wiped at it with my blanket.
+“We’re half an hour or so beyond the day,” he said. “We must wait.”
+
+It was impossible to distinguish anything. We might have been in a
+sphere of steel for all that we could see. My rubbing with the blanket
+simply smeared the glass, and as fast as I wiped it, it became opaque
+again with freshly condensed moisture mixed with an increasing quantity
+of blanket hairs. Of course I ought not to have used the blanket. In my
+efforts to clear the glass I slipped upon the damp surface, and hurt my
+shin against one of the oxygen cylinders that protruded from our bale.
+
+The thing was exasperating—it was absurd. Here we were just arrived
+upon the moon, amidst we knew not what wonders, and all we could see
+was the grey and streaming wall of the bubble in which we had come.
+
+“Confound it!” I said, “but at this rate we might have stopped at
+home;” and I squatted on the bale and shivered, and drew my blanket
+closer about me.
+
+Abruptly the moisture turned to spangles and fronds of frost. “Can you
+reach the electric heater,” said Cavor. “Yes—that black knob. Or we
+shall freeze.”
+
+I did not wait to be told twice. “And now,” said I, “what are we to
+do?”
+
+“Wait,” he said.
+
+“Wait?”
+
+“Of course. We shall have to wait until our air gets warm again, and
+then this glass will clear. We can’t do anything till then. It’s night
+here yet; we must wait for the day to overtake us. Meanwhile, don’t you
+feel hungry?”
+
+For a space I did not answer him, but sat fretting. I turned
+reluctantly from the smeared puzzle of the glass and stared at his
+face. “Yes,” I said, “I am hungry. I feel somehow enormously
+disappointed. I had expected—I don’t know what I had expected, but not
+this.”
+
+I summoned my philosophy, and rearranging my blanket about me sat down
+on the bale again and began my first meal on the moon. I don’t think I
+finished it—I forget. Presently, first in patches, then running rapidly
+together into wider spaces, came the clearing of the glass, came the
+drawing of the misty veil that hid the moon world from our eyes.
+
+We peered out upon the landscape of the moon.
+
+### VII.
+
+*Sunrise on the Moon*
+
+As we saw it first it was the wildest and most desolate of scenes. We
+were in an enormous amphitheatre, a vast circular plain, the floor of
+the giant crater. Its cliff-like walls closed us in on every side. From
+the westward the light of the unseen sun fell upon them, reaching to
+the very foot of the cliff, and showed a disordered escarpment of drab
+and greyish rock, lined here and there with banks and crevices of snow.
+This was perhaps a dozen miles away, but at first no intervening
+atmosphere diminished in the slightest the minutely detailed brilliancy
+with which these things glared at us. They stood out clear and dazzling
+against a background of starry blackness that seemed to our earthly
+eyes rather a gloriously spangled velvet curtain than the spaciousness
+of the sky.
+
+The eastward cliff was at first merely a starless selvedge to the
+starry dome. No rosy flush, no creeping pallor, announced the
+commencing day. Only the Corona, the Zodiacal light, a huge
+cone-shaped, luminous haze, pointing up towards the splendour of the
+morning star, warned us of the imminent nearness of the sun.
+
+Whatever light was about us was reflected by the westward cliffs. It
+showed a huge undulating plain, cold and grey, a grey that deepened
+eastward into the absolute raven darkness of the cliff shadow.
+Innumerable rounded grey summits, ghostly hummocks, billows of snowy
+substance, stretching crest beyond crest into the remote obscurity,
+gave us our first inkling of the distance of the crater wall. These
+hummocks looked like snow. At the time I thought they were snow. But
+they were not—they were mounds and masses of frozen air.
+
+So it was at first; and then, sudden, swift, and amazing, came the
+lunar day.
+
+The sunlight had crept down the cliff, it touched the drifted masses at
+its base and incontinently came striding with seven-leagued boots
+towards us. The distant cliff seemed to shift and quiver, and at the
+touch of the dawn a reek of grey vapour poured upward from the crater
+floor, whirls and puffs and drifting wraiths of grey, thicker and
+broader and denser, until at last the whole westward plain was steaming
+like a wet handkerchief held before the fire, and the westward cliffs
+were no more than refracted glare beyond.
+
+“It is air,” said Cavor. “It must be air—or it would not rise like
+this—at the mere touch of a sun-beam. And at this pace....”
+
+He peered upwards. “Look!” he said.
+
+“What?” I asked.
+
+“In the sky. Already. On the blackness—a little touch of blue. See! The
+stars seem larger. And the little ones and all those dim nebulosities
+we saw in empty space—they are hidden!”
+
+Swiftly, steadily, the day approached us. Grey summit after grey summit
+was overtaken by the blaze, and turned to a smoking white intensity. At
+last there was nothing to the west of us but a bank of surging fog, the
+tumultuous advance and ascent of cloudy haze. The distant cliff had
+receded farther and farther, had loomed and changed through the whirl,
+and foundered and vanished at last in its confusion.
+
+Nearer came that steaming advance, nearer and nearer, coming as fast as
+the shadow of a cloud before the south-west wind. About us rose a thin
+anticipatory haze.
+
+Cavor gripped my arm. “What?” I said.
+
+“Look! The sunrise! The sun!”
+
+He turned me about and pointed to the brow of the eastward cliff,
+looming above the haze about us, scarce lighter than the darkness of
+the sky. But now its line was marked by strange reddish shapes, tongues
+of vermilion flame that writhed and danced. I fancied it must be
+spirals of vapour that had caught the light and made this crest of
+fiery tongues against the sky, but indeed it was the solar prominences
+I saw, a crown of fire about the sun that is forever hidden from
+earthly eyes by our atmospheric veil.
+
+And then—the sun!
+
+Steadily, inevitably came a brilliant line, came a thin edge of
+intolerable effulgence that took a circular shape, became a bow, became
+a blazing sceptre, and hurled a shaft of heat at us as though it was a
+spear.
+
+It seemed verily to stab my eyes! I cried aloud and turned about
+blinded, groping for my blanket beneath the bale.
+
+And with that incandescence came a sound, the first sound that had
+reached us from without since we left the earth, a hissing and
+rustling, the stormy trailing of the aerial garment of the advancing
+day. And with the coming of the sound and the light the sphere lurched,
+and blinded and dazzled we staggered helplessly against each other. It
+lurched again, and the hissing grew louder. I had shut my eyes
+perforce, I was making clumsy efforts to cover my head with my blanket,
+and this second lurch sent me helplessly off my feet. I fell against
+the bale, and opening my eyes had a momentary glimpse of the air just
+outside our glass. It was running—it was boiling—like snow into which a
+white-hot rod is thrust. What had been solid air had suddenly at the
+touch of the sun become a paste, a mud, a slushy liquefaction, that
+hissed and bubbled into gas.
+
+There came a still more violent whirl of the sphere and we had clutched
+one another. In another moment we were spun about again. Round we went
+and over, and then I was on all fours. The lunar dawn had hold of us.
+It meant to show us little men what the moon could do with us.
+
+I caught a second glimpse of things without, puffs of vapour, half
+liquid slush, excavated, sliding, falling, sliding. We dropped into
+darkness. I went down with Cavor’s knees in my chest. Then he seemed to
+fly away from me, and for a moment I lay with all the breath out of my
+body staring upward. A toppling crag of the melting stuff had splashed
+over us, buried us, and now it thinned and boiled off us. I saw the
+bubbles dancing on the glass above. I heard Cavor exclaiming feebly.
+
+Then some huge landslip in the thawing air had caught us, and
+spluttering expostulation, we began to roll down a slope, rolling
+faster and faster, leaping crevasses and rebounding from banks, faster
+and faster, westward into the white-hot boiling tumult of the lunar
+day.
+
+Clutching at one another we spun about, pitched this way and that, our
+bale of packages leaping at us, pounding at us. We collided, we
+gripped, we were torn asunder—our heads met, and the whole universe
+burst into fiery darts and stars! On the earth we should have smashed
+one another a dozen times, but on the moon, luckily for us, our weight
+was only one-sixth of what it is terrestrially, and we fell very
+mercifully. I recall a sensation of utter sickness, a feeling as if my
+brain were upside down within my skull, and then—
+
+Something was at work upon my face, some thin feelers worried my ears.
+Then I discovered the brilliance of the landscape around was mitigated
+by blue spectacles. Cavor bent over me, and I saw his face upside down,
+his eyes also protected by tinted goggles. His breath came irregularly,
+and his lip was bleeding from a bruise. “Better?” he said, wiping the
+blood with the back of his hand.
+
+Everything seemed swaying for a space, but that was simply my
+giddiness. I perceived that he had closed some of the shutters in the
+outer sphere to save me—from the direct blaze of the sun. I was aware
+that everything about us was very brilliant.
+
+“Lord!” I gasped. “But this—”
+
+I craned my neck to see. I perceived there was a blinding glare
+outside, an utter change from the gloomy darkness of our first
+impressions. “Have I been insensible long?” I asked.
+
+“I don’t know—the chronometer is broken. Some little time.... My dear
+chap! I have been afraid...”
+
+I lay for a space taking this in. I saw his face still bore evidences
+of emotion. For a while I said nothing. I passed an inquisitive hand
+over my contusions, and surveyed his face for similar damages. The back
+of my right hand had suffered most, and was skinless and raw. My
+forehead was bruised and had bled. He handed me a little measure with
+some of the restorative—I forget the name of it—he had brought with us.
+After a time I felt a little better. I began to stretch my limbs
+carefully. Soon I could talk.
+
+“It wouldn’t have done,” I said, as though there had been no interval.
+
+“No! it _wouldn’t_.”
+
+He thought, his hands hanging over his knees. He peered through the
+glass and then stared at me. “Good Lord!” he said. “_No!_”
+
+“What has happened?” I asked after a pause. “Have we jumped to the
+tropics?”
+
+“It was as I expected. This air has evaporated—if it is air. At any
+rate, it has evaporated, and the surface of the moon is showing. We are
+lying on a bank of earthy rock. Here and there bare soil is exposed. A
+queer sort of soil!”
+
+It occurred to him that it was unnecessary to explain. He assisted me
+into a sitting position, and I could see with my own eyes.
+
+### VIII.
+
+*A Lunar Morning*
+
+The harsh emphasis, the pitiless black and white of scenery had
+altogether disappeared. The glare of the sun had taken upon itself a
+faint tinge of amber; the shadows upon the cliff of the crater wall
+were deeply purple. To the eastward a dark bank of fog still crouched
+and sheltered from the sunrise, but to the westward the sky was blue
+and clear. I began to realise the length of my insensibility.
+
+We were no longer in a void. An atmosphere had arisen about us. The
+outline of things had gained in character, had grown acute and varied;
+save for a shadowed space of white substance here and there, white
+substance that was no longer air but snow, the arctic appearance had
+gone altogether. Everywhere broad rusty brown spaces of bare and
+tumbled earth spread to the blaze of the sun. Here and there at the
+edge of the snowdrifts were transient little pools and eddies of water,
+the only things stirring in that expanse of barrenness. The sunlight
+inundated the upper two blinds of our sphere and turned our climate to
+high summer, but our feet were still in shadow, and the sphere was
+lying upon a drift of snow.
+
+And scattered here and there upon the slope, and emphasised by little
+white threads of unthawed snow upon their shady sides, were shapes like
+sticks, dry twisted sticks of the same rusty hue as the rock upon which
+they lay. That caught one’s thoughts sharply. Sticks! On a lifeless
+world? Then as my eye grew more accustomed to the texture of their
+substance, I perceived that almost all this surface had a fibrous
+texture, like the carpet of brown needles one finds beneath the shade
+of pine trees.
+
+“Cavor!” I said.
+
+“Yes.”
+
+“It may be a dead world now—but once—”
+
+Something arrested my attention. I had discovered among these needles a
+number of little round objects. And it seemed to me that one of these
+had moved. “Cavor,” I whispered.
+
+“What?”
+
+But I did not answer at once. I stared incredulous. For an instant I
+could not believe my eyes. I gave an inarticulate cry. I gripped his
+arm. I pointed. “Look!” I cried, finding my tongue. “There! Yes! And
+there!”
+
+His eyes followed my pointing finger. “Eh?” he said.
+
+How can I describe the thing I saw? It is so petty a thing to state,
+and yet it seemed so wonderful, so pregnant with emotion. I have said
+that amidst the stick-like litter were these rounded bodies, these
+little oval bodies that might have passed as very small pebbles. And
+now first one and then another had stirred, had rolled over and
+cracked, and down the crack of each of them showed a minute line of
+yellowish green, thrusting outward to meet the hot encouragement of the
+newly-risen sun. For a moment that was all, and then there stirred, and
+burst a third!
+
+“It is a seed,” said Cavor. And then I heard him whisper very softly,
+“_Life!_”
+
+“Life!” And immediately it poured upon us that our vast journey had not
+been made in vain, that we had come to no arid waste of minerals, but
+to a world that lived and moved! We watched intensely. I remember I
+kept rubbing the glass before me with my sleeve, jealous of the
+faintest suspicion of mist.
+
+The picture was clear and vivid only in the middle of the field. All
+about that centre the dead fibres and seeds were magnified and
+distorted by the curvature of the glass. But we could see enough! One
+after another all down the sunlit slope these miraculous little brown
+bodies burst and gaped apart, like seed-pods, like the husks of fruits;
+opened eager mouths that drank in the heat and light pouring in a
+cascade from the newly-risen sun.
+
+Every moment more of these seed coats ruptured, and even as they did so
+the swelling pioneers overflowed their rent-distended seed-cases, and
+passed into the second stage of growth. With a steady assurance, a
+swift deliberation, these amazing seeds thrust a rootlet downward to
+the earth and a queer little bundle-like bud into the air. In a little
+while the whole slope was dotted with minute plantlets standing at
+attention in the blaze of the sun.
+
+They did not stand for long. The bundle-like buds swelled and strained
+and opened with a jerk, thrusting out a coronet of little sharp tips,
+spreading a whorl of tiny, spiky, brownish leaves, that lengthened
+rapidly, lengthened visibly even as we watched. The movement was slower
+than any animal’s, swifter than any plant’s I have ever seen before.
+How can I suggest it to you—the way that growth went on? The leaf tips
+grew so that they moved onward even while we looked at them. The brown
+seed-case shrivelled and was absorbed with an equal rapidity. Have you
+ever on a cold day taken a thermometer into your warm hand and watched
+the little thread of mercury creep up the tube? These moon plants grew
+like that.
+
+In a few minutes, as it seemed, the buds of the more forward of these
+plants had lengthened into a stem and were even putting forth a second
+whorl of leaves, and all the slope that had seemed so recently a
+lifeless stretch of litter was now dark with the stunted olive-green
+herbage of bristling spikes that swayed with the vigour of their
+growing.
+
+I turned about, and behold! along the upper edge of a rock to the
+eastward a similar fringe in a scarcely less forward condition swayed
+and bent, dark against the blinding glare of the sun. And beyond this
+fringe was the silhouette of a plant mass, branching clumsily like a
+cactus, and swelling visibly, swelling like a bladder that fills with
 air.
 
-"Yes," I cried, "no doubt old Ocean flows over our heads!"
-
-"Well, my dear boy, what can be more natural! Do you not know that in
-the neighborhood of Newcastle there are coal mines which have been
-worked far out under the sea?"
-
-Now my worthy uncle, the Professor, no doubt regarded this discovery as
-a very simple fact, but to me the idea was by no means a pleasant one.
-And yet when one came to think the matter over seriously, what mattered
-it whether the plains and mountains of Iceland were suspended over our
-devoted heads, or the mighty billows of the Atlantic Ocean? The whole
-question rested on the solidity of the granite roof above us. However, I
-soon got used to the ideal for the passage now level, now running down,
-and still always to the southeast, kept going deeper and deeper into the
-profound abysses of Mother Earth.
-
-Three days later, on the eighteenth day of July, on a Saturday, we
-reached a kind of vast grotto. My uncle here paid Hans his usual
-rix-dollars, and it was decided that the next day should be a day of
-rest.
-
-## CHAPTER 22 SUNDAY BELOW GROUND
-
-I Awoke on Sunday morning without any sense of hurry and bustle
-attendant on an immediate departure. Though the day to be devoted to
-repose and reflection was spent under such strange circumstances, and in
-so wonderful a place, the idea was a pleasant one. Besides, we all began
-to get used to this kind of existence. I had almost ceased to think of
-the sun, of the moon, of the stars, of the trees, houses, and towns; in
-fact, about any terrestrial necessities. In our peculiar position we
-were far above such reflections.
-
-The grotto was a vast and magnificent hall. Along its granitic soil the
-stream flowed placidly and pleasantly. So great a distance was it now
-from its fiery source that its water was scarcely lukewarm, and could be
-drunk without delay or difficulty.
-
-After a frugal breakfast, the Professor made up his mind to devote some
-hours to putting his notes and calculations in order.
-
-"In the first place," he said, "I have a good many to verify and prove,
-in order that we may know our exact position. I wish to be able on our
-return to the upper regions to make a map of our journey, a kind of
-vertical section of the globe, which will be, as it were, the profile of
-the expedition."
-
-"That would indeed be a curious work, Uncle; but can you make your
-observations with anything like certainty and precision?"
-
-"I can. I have never on any occasion failed to note with great care the
-angles and slopes. I am certain as to having made no mistake. Take the
-compass and examine how she points."
-
-I looked at the instrument with care.
-
-"East one quarter southeast."
-
-"Very good," resumed the Professor, noting the observation, and going
-through some rapid calculations. "I make out that we have journeyed two
-hundred and fifty miles from the point of our departure."
-
-"Then the mighty waves of the Atlantic are rolling over our heads?"
-
-"Certainly."
-
-"And at this very moment it is possible that fierce tempests are raging
-above, and that men and ships are battling against the angry blasts just
-over our heads?"
-
-"It is quite within the range of possibility," rejoined my uncle,
-smiling.
-
-"And that whales are playing in shoals, thrashing the bottom of the sea,
-the roof of our adamantine prison?"
-
-"Be quite at rest on that point; there is no danger of their breaking
-through. But to return to our calculations. We are to the southeast, two
-hundred and fifty miles from the base of Sneffels, and, according to my
-preceding notes, I think we have gone sixteen leagues in a downward
-direction."
-
-"Sixteen leagues--fifty miles!" I cried.
-
-"I am sure of it."
-
-"But that is the extreme limit allowed by science for the thickness of
-the earth's crust," I replied, referring to my geological studies.
-
-"I do not contravene that assertion," was his quiet answer.
-
-"And at this stage of our journey, according to all known laws on the
-increase of heat, there should be here a temperature of <i>fifteen hundred
-degrees of Reaumur</i>."
-
-"There should be--you say, my boy."
-
-"In which case this granite would not exist, but be in a state of
-fusion."
-
-"But you perceive, my boy, that it is not so, and that facts, as usual,
-are very stubborn things, overruling all theories."
-
-"I am forced to yield to the evidence of my senses, but I am
-nevertheless very much surprised."
-
-"What heat does the thermometer really indicate?" continued the
-philosopher.
-
-"Twenty-seven six-tenths."
-
-"So that science is wrong by fourteen hundred and seventy-four degrees
-and four-tenths. According to which, it is demonstrated that the
-proportional increase in temperature is an exploded error. Humphry Davy
-here shines forth in all his glory. He is right, and I have acted wisely
-to believe him. Have you any answer to make to this statement?"
-
-Had I chosen to have spoken, I might have said a great deal. I in no way
-admitted the theory of Humphry Davy--I still held out for the theory of
-proportional increase of heat, though I did not feel it.
-
-I was far more willing to allow that this chimney of an extinct volcano
-was covered by lava of a kind refractory to heat--in fact a bad
-conductor--which did not allow the great increase of temperature to
-percolate through its sides. The hot water jet supported my view of the
-matter.
-
-But without entering on a long and useless discussion, or seeking for
-new arguments to controvert my uncle, I contented myself with taking up
-facts as they were.
-
-"Well, sir, I take for granted that all your calculations are correct,
-but allow me to draw from them a rigorous and definite conclusion."
-
-"Go on, my boy--have your say," cried my uncle goodhumoredly.
-
-"At the place where we now are, under the latitude of Iceland, the
-terrestrial depth is about fifteen hundred and eighty-three leagues."
-
-"Fifteen hundred eighty-three and a quarter."
-
-"Well, suppose we say sixteen hundred in round numbers. Now, out of a
-voyage of sixteen hundred leagues we have completed sixteen."
-
-"As you say, what then?"
-
-"At the expense of a diagonal journey of no less than eighty-five
-leagues."
-
-"Exactly."
-
-"We have been twenty days about it."
-
-"Exactly twenty days."
-
-"Now sixteen is the hundredth part of our contemplated expedition. If we
-go on in this way we shall be two thousand days, that is about five
-years and a half, going down."
-
-The Professor folded his arms, listened, but did not speak.
-
-"Without counting that if a vertical descent of sixteen leagues costs us
-a horizontal of eighty-five, we shall have to go about eight thousand
-leagues to the southeast, and we must therefore come out somewhere in
-the circumference long before we can hope to reach the centre."
-
-"Bother your calculations," cried my uncle in one of his old rages. "On
-what basis do they rest? How do you know that this passage does not take
-us direct to the end we require? Moreover, I have in my favor,
-fortunately, a precedent. What I have undertaken to do, another has
-done, and he having succeeded, why should I not be equally successful?"
-
-"I hope, indeed, you will, but still, I suppose I may be allowed to--"
-
-"You are allowed to hold your tongue," cried Professor Hardwigg, "when
-you talk so unreasonably as this."
-
-I saw at once that the old doctorial Professor was still alive in my
-uncle--and fearful to rouse his angry passions, I dropped the unpleasant
-subject.
-
-"Now, then," he explained, "consult the manometer. What does that
-indicate?"
-
-"A considerable amount of pressure."
-
-"Very good. You see, then, that by descending slowly, and by gradually
-accustoming ourselves to the density of this lower atmosphere, we shall
-not suffer."
-
-"Well, I suppose not, except it may be a certain amount of pain in the
-ears," was my rather grim reply.
-
-"That, my dear boy, is nothing, and you will easily get rid of that
-source of discomfort by bringing the exterior air in communication with
-the air contained in your lungs."
-
-"Perfectly," said I, for I had quite made up my mind in no wise to
-contradict my uncle. "I should fancy almost that I should experience a
-certain amount of satisfaction in making a plunge into this dense
-atmosphere. Have you taken note of how wonderfully sound is propagated?"
-
-"Of course I have. There can be no doubt that a journey into the
-interior of the earth would be an excellent cure for deafness."
-
-"But then, Uncle," I ventured mildly to observe, "this density will
-continue to increase."
-
-"Yes--according to a law which, however, is scarcely defined. It is true
-that the intensity of weight will diminish just in proportion to the
-depth to which we go. You know very well that it is on the surface of
-the earth that its action is most powerfully felt, while on the
-contrary, in the very centre of the earth bodies cease to have any
-weight at all."
-
-"I know that is the case, but as we progress will not the atmosphere
-finally assume the density of water?"
-
-"I know it; when placed under the pressure of seven hundred and ten
-atmospheres," cried my uncle with imperturbable gravity.
-
-"And when we are still lower down?" I asked with natural anxiety.
-
-"Well, lower down, the density will become even greater."
-
-"Then how shall we be able to make our way through this atmospheric
-fog?"
-
-"Well, my worthy nephew, we must ballast ourselves by filling our
-pockets with stones," said Professor Hardwigg.
-
-"Faith, Uncle, you have an answer for everything," was my only reply.
-
-I began to feel that it was unwise of me to go any farther into the wide
-field of hypotheses for I should certainly have revived some difficulty,
-or rather impossibility, that would have enraged the Professor.
-
-It was evident, nevertheless, that the air under a pressure which might
-be multiplied by thousands of atmospheres, would end by becoming
-perfectly solid, and that then admitting our bodies resisted the
-pressure, we should have to stop, in spite of all the reasonings in the
-world. Facts overcome all arguments.
-
-But I thought it best not to urge this argument. My uncle would simply
-have quoted the example of Saknussemm. Supposing the learned Icelander's
-journey ever really to have taken place--there was one simple answer to
-be made:
-
-In the sixteenth century neither the barometer nor the manometer had
-been invented--how, then, could Saknussemm have been able to discover
-when he did reach the centre of the earth?
-
-This unanswerable and learned objection I, however, kept to myself and,
-bracing up my courage, awaited the course of events--little aware of how
-adventurous yet were to be the incidents of our remarkable journey.
-
-The rest of this day of leisure and repose was spent in calculation and
-conversation. I made it a point to agree with the Professor in
-everything; but I envied the perfect indifference of Hans, who, without
-taking any such trouble about the cause and effect, went blindly onwards
-wherever destiny chose to lead him.
-
-## CHAPTER 23 ALONE
-
-It must in all truth be confessed, things as yet had gone on well, and I
-should have acted in bad taste to have complained. If the true medium of
-our difficulties did not increase, it was within the range of
-possibility that we might ultimately reach the end of our journey. Then
-what glory would be ours! I began in the newly aroused ardor of my soul
-to speak enthusiastically to the Professor. Well, was I serious? The
-whole state in which we existed was a mystery--and it was impossible to
-know whether or not I was in earnest.
-
-For several days after our memorable halt, the slopes became more
-rapid--some were even of a most frightful character--almost vertical, so
-that we were forever going down into the solid interior mass. During
-some days, we actually descended a league and a half, even two leagues
-towards the centre of the earth. The descents were sufficiently
-perilous, and while we were engaged in them we learned fully to
-appreciate the marvelous coolness of our guide, Hans. Without him we
-should have been wholly lost. The grave and impassible Icelander devoted
-himself to us with the most incomprehensible sang-froid and ease; and,
-thanks to him, many a dangerous pass was got over, where, but for him,
-we should inevitably have stuck fast.
-
-His silence increased every day. I think that we began to be influenced
-by this peculiar trait in his character. It is certain that the
-inanimate objects by which you are surrounded have a direct action on
-the brain. It must be that a man who shuts himself up between four walls
-must lose the faculty of associating ideas and words. How many persons
-condemned to the horrors of solitary confinement have gone mad--simply
-because the thinking faculties have lain dormant!
-
-During the two weeks that followed our last interesting conversation,
-there occurred nothing worthy of being especially recorded.
-
-I have, while writing these memoirs, taxed my memory in vain for one
-incident of travel during this particular period.
-
-But the next event to be related is terrible indeed. Its very memory,
-even now, makes my soul shudder, and my blood run cold.
-
-It was on the seventh of August. Our constant and successive descents
-had taken us quite thirty leagues into the interior of the earth, that
-is to say that there were above us thirty leagues, nearly a hundred
-miles, of rocks, and oceans, and continents, and towns, to say nothing
-of living inhabitants. We were in a southeasterly direction, about two
-hundred leagues from Iceland.
-
-On that memorable day the tunnel had begun to assume an almost
-horizontal course.
-
-I was on this occasion walking on in front. My uncle had charge of one
-of the Ruhmkorff coils, I had possession of the other. By means of its
-light I was busy examining the different layers of granite. I was
-completely absorbed in my work.
-
-Suddenly halting and turning round, I found that I was alone!
-
-"Well," thought I to myself, "I have certainly been walking too fast--or
-else Hans and my uncle have stopped to rest. The best thing I can do is
-to go back and find them. Luckily, there is very little ascent to tire
-me."
-
-I accordingly retraced my steps and, while doing so, walked for at least
-a quarter of an hour. Rather uneasy, I paused and looked eagerly around.
-Not a living soul. I called aloud. No reply. My voice was lost amid the
-myriad cavernous echoes it aroused!
-
-I began for the first time to feel seriously uneasy. A cold shiver shook
-my whole body, and perspiration, chill and terrible, burst upon my skin.
-
-"I must be calm," I said, speaking aloud, as boys whistle to drive away
-fear. "There can be no doubt that I shall find my companions. There
-cannot be two roads. It is certain that I was considerably ahead; all I
-have to do is to go back."
-
-Having come to this determination I ascended the tunnel for at least
-half an hour, unable to decide if I had ever seen certain landmarks
-before. Every now and then I paused to discover if any loud appeal was
-made to me, well knowing that in that dense and intensified atmosphere I
-should hear it a long way off. But no. The most extraordinary silence
-reigned in this immense gallery. Only the echoes of my own footsteps
-could be heard.
-
-At last I stopped. I could scarcely realize the fact of my isolation. I
-was quite willing to think that I had made a mistake, but not that I was
-lost. If I had made a mistake, I might find my way; if lost--I shuddered
-to think of it.
-
-"Come, come," said I to myself, "since there is only one road, and they
-must come by it, we shall at last meet. All I have to do is still to go
-upwards. Perhaps, however, not seeing me, and forgetting I was ahead,
-they may have gone back in search of me. Still, even in this case, if I
-make haste, I shall get up to them. There can be no doubt about the
-matter."
-
-But as I spoke these last words aloud, it would have been quite clear to
-any listener--had there been one--that I was by no means convinced of
-the fact. Moreover in order to associate together these simple ideas and
-to reunite them under the form of reasoning, required some time. I could
-not all at once bring my brain to think.
-
-Then another dread doubt fell upon my soul. After all, was I ahead? Of
-course I was. Hans was no doubt following behind preceded by my uncle. I
-perfectly recollected his having stopped for a moment to strap his
-baggage on his shoulder. I now remembered this trifling detail. It was,
-I believe, just at that very moment that I had determined to continue my
-route.
-
-"Again," thought I, reasoning as calmly as was possible, "there is
-another sure means of not losing my way, a thread to guide me through
-the labyrinthine subterraneous retreat--one which I had forgotten--my
-faithful river."
-
-This course of reasoning roused my drooping spirits, and I resolved to
-resume my journey without further delay. No time was to be lost.
-
-It was at this moment that I had reason to bless the thoughtfulness of
-my uncle, when he refused to allow the eider hunter to close the
-orifices of the hot spring--that small fissure in the great mass of
-granite. This beneficent spring after having saved us from thirst during
-so many days would now enable me to regain the right road.
-
-Having come to this mental decision, I made up my mind, before I started
-upwards, that ablution would certainly do me a great deal of good.
-
-I stopped to plunge my hands and forehead in the pleasant water of the
-Hansbach stream, blessing its presence as a certain consolation.
-
-Conceive my horror and stupefaction!--I was treading a hard, dusty,
-shingly road of granite. The stream on which I reckoned had wholly
-disappeared!
-
-## CHAPTER 24 LOST!
-
-No words in any human language can depict my utter despair. I was
-literally buried alive; with no other expectation before me but to die
-in all the slow horrible torture of hunger and thirst.
-
-Mechanically I crawled about, feeling the dry and arid rock. Never to my
-fancy had I ever felt anything so dry.
-
-But, I frantically asked myself, how had I lost the course of the
-flowing stream? There could be no doubt it had ceased to flow in the
-gallery in which I now was. Now I began to understand the cause of the
-strange silence which prevailed when last I tried if any appeal from my
-companions might perchance reach my ear.
-
-It so happened that when I first took an imprudent step in the wrong
-direction, I did not perceive the absence of the all-important stream.
-
-It was now quite evident that when we halted, another tunnel must have
-received the waters of the little torrent, and that I had unconsciously
-entered a different gallery. To what unknown depths had my companions
-gone? Where was I?
-
-How to get back! Clue or landmark there was absolutely none! My feet
-left no signs on the granite and shingle. My brain throbbed with agony
-as I tried to discover the solution of this terrible problem. My
-situation, after all sophistry and reflection, had finally to be summed
-up in three awful words--
-
-<i>Lost!</i> Lost!! LOST!!!
-
-Lost at a depth which, to my finite understanding, appeared to be
-immeasurable.
-
-These thirty leagues of the crust of the earth weighed upon my shoulders
-like the globe on the shoulders of Atlas. I felt myself crushed by the
-awful weight. It was indeed a position to drive the sanest man to
-madness!
-
-I tried to bring my thoughts back to the things of the world so long
-forgotten. It was with the greatest difficulty that I succeeded in doing
-so. Hamburg, the house on the Konigstrasse, my dear cousin Gretchen--all
-that world which had before vanished like a shadow floated before my now
-vivid imagination.
-
-There they were before me, but how unreal. Under the influence of a
-terrible hallucination I saw all the incidents of our journey pass
-before me like the scenes of a panorama. The ship and its inmates,
-Iceland, M. Fridriksson, and the great summit of Mount Sneffels! I said
-to myself that, if in my position I retained the most faint and shadowy
-outline of a hope, it would be a sure sign of approaching delirium. It
-were better to give way wholly to despair!
-
-In fact, did I but reason with calmness and philosophy, what human power
-was there in existence able to take me back to the surface of the earth,
-and ready, too, to split asunder, to rend in twain those huge and mighty
-vaults which stand above my head? Who could enable me to find my
-road--and regain my companions?
-
-Insensate folly and madness to entertain even a shadow of hope!
-
-"Oh, Uncle!" was my despairing cry.
-
-This was the only word of reproach which came to my lips; for I
-thoroughly understood how deeply and sorrowfully the worthy Professor
-would regret my loss, and how in his turn he would patiently seek for
-me.
-
-When I at last began to resign myself to the fact that no further aid
-was to be expected from man, and knowing that I was utterly powerless to
-do anything for my own salvation, I kneeled with earnest fervor and
-asked assistance from Heaven. The remembrance of my innocent childhood,
-the memory of my mother, known only in my infancy, came welling forth
-from my heart. I had recourse to prayer. And little as I had a right to
-be remembered by Him whom I had forgotten in the hour of prosperity, and
-whom I so tardily invoked, I prayed earnestly and sincerely.
-
-This renewal of my youthful faith brought about a much greater amount of
-calm, and I was enabled to concentrate all my strength and intelligence
-on the terrible realities of my unprecedented situation.
-
-I had about me that which I had at first wholly forgotten--three days'
-provisions. Moreover, my water bottle was quite full. Nevertheless, the
-one thing which it was impossible to do was to remain alone. Try to find
-my companions I must, at any price. But which course should I take?
-Should I go upwards, or again descend? Doubtless it was right to retrace
-my steps in an upward direction.
-
-By doing this with care and coolness, I must reach the point where I had
-turned away from the rippling stream. I must find the fatal bifurcation
-or fork. Once at this spot, once the river at my feet, I could, at all
-events, regain the awful crater of Mount Sneffels. Why had I not thought
-of this before? This, at last, was a reasonable hope of safety. The most
-important thing, then, to be done was to discover the bed of the
-Hansbach.
-
-After a slight meal and a draught of water, I rose like a giant
-refreshed. Leaning heavily on my pole, I began the ascent of the
-gallery. The slope was very rapid and rather difficult. But I advanced
-hopefully and carefully, like a man who at last is making his way out of
-a forest, and knows there is only one road to follow.
-
-During one whole hour nothing happened to check my progress. As I
-advanced, I tried to recollect the shape of the tunnel--to recall to my
-memory certain projections of rocks--to persuade myself that I had
-followed certain winding routes before. But no one particular sign could
-I bring to mind, and I was soon forced to allow that this gallery would
-never take me back to the point at which I had separated myself from my
-companions. It was absolutely without issue--a mere blind alley in the
-earth.
-
-The moment at length came when, facing the solid rock, I knew my fate,
-and fell inanimate on the arid floor!
-
-To describe the horrible state of despair and fear into which I then
-fell would now be vain and impossible. My last hope, the courage which
-had sustained me, drooped before the sight of this pitiless granite
-rock!
-
-Lost in a vast labyrinth, the sinuosities of which spread in every
-direction, without guide, clue or compass, I knew it was a vain and
-useless task to attempt flight. All that remained to me was to lie down
-and die. To lie down and die the most cruel and horrible of deaths!
-
-In my state of mind, the idea came into my head that one day perhaps,
-when my fossil bones were found, their discovery so far below the level
-of the earth might give rise to solemn and interesting scientific
-discussions.
-
-I tried to cry aloud, but hoarse, hollow, and inarticulate sounds alone
-could make themselves heard through my parched lips. I literally panted
-for breath.
-
-In the midst of all these horrible sources of anguish and despair, a new
-horror took possession of my soul. My lamp, by falling down, had got out
-of order. I had no means of repairing it. Its light was already becoming
-paler and paler, and soon would expire.
-
-With a strange sense of resignation and despair, I watched the luminous
-current in the coil getting less and less. A procession of shadows moved
-flashing along the granite wall. I scarcely dared to lower my eyelids,
-fearing to lose the last spark of this fugitive light. Every instant it
-seemed to me that it was about to vanish and to leave me forever--in
-utter darkness!
-
-At last, one final trembling flame remained in the lamp; I followed it
-with all my power of vision; I gasped for breath; I concentrated upon it
-all the power of my soul, as upon the last scintillation of light I was
-ever destined to see: and then I was to be lost forever in Cimmerian and
-tenebrous shades.
-
-A wild and plaintive cry escaped my lips. On earth during the most
-profound and comparatively complete darkness, light never allows a
-complete destruction and extinction of its power. Light is so diffuse,
-so subtle, that it permeates everywhere, and whatever little may remain,
-the retina of the eye will succeed in finding it. In this place
-nothing--the absolute obscurity made me blind in every sense.
-
-My head was now wholly lost. I raised my arms, trying the effects of the
-feeling in getting against the cold stone wall. It was painful in the
-extreme. Madness must have taken possession of me. I knew not what I
-did. I began to run, to fly, rushing at haphazard in this inextricable
-labyrinth, always going downwards, running wildly underneath the
-terrestrial crust, like an inhabitant of the subterranean furnaces,
-screaming, roaring, howling, until bruised by the pointed rocks, falling
-and picking myself up all covered with blood, seeking madly to drink the
-blood which dripped from my torn features, mad because this blood only
-trickled over my face, and watching always for this horrid wall which
-ever presented to me the fearful obstacle against which I could not dash
-my head.
-
-Where was I going? It was impossible to say. I was perfectly ignorant of
-the matter.
-
-Several hours passed in this way. After a long time, having utterly
-exhausted my strength, I fell a heavy inert mass along the side of the
-tunnel, and lost consciousness.
-
-## CHAPTER 25 THE WHISPERING GALLERY
-
-When at last I came back to a sense of life and being, my face was wet,
-but wet, as I soon knew, with tears. How long this state of
-insensibility lasted, it is quite impossible for me now to say. I had no
-means left to me of taking any account of time. Never since the creation
-of the world had such a solitude as mine existed. I was completely
-abandoned.
-
-After my fall I lost much blood. I felt myself flooded with the
-life-giving liquid. My first sensation was perhaps a natural one. Why
-was I not dead? Because I was alive, there was something left to do. I
-tried to make up my mind to think no longer. As far as I was able, I
-drove away all ideas, and utterly overcome by pain and grief, I crouched
-against the granite wall.
-
-I just commenced to feel the fainting coming on again, and the sensation
-that this was the last struggle before complete annihilation--when, on a
-sudden, a violent uproar reached my ears. It had some resemblance to the
-prolonged rumbling voice of thunder, and I clearly distinguished
-sonorous voices, lost one after the other, in the distant depths of the
-gulf.
-
-Whence came this noise? Naturally, it was to be supposed from new
-phenomena which were taking place in the bosom of the solid mass of
-Mother Earth! The explosion of some gaseous vapors, or the fall of some
-solid, of the granitic or other rock.
-
-Again I listened with deep attention. I was extremely anxious to hear if
-this strange and inexplicable sound was likely to be renewed! A whole
-quarter of an hour elapsed in painful expectation. Deep and solemn
-silence reigned in the tunnel. So still that I could hear the beatings
-of my own heart! I waited, waited with a strange kind of hopefulness.
-
-Suddenly my ear, which leaned accidentally against the wall, appeared to
-catch, as it were, the faintest echo of a sound. I thought that I heard
-vague, incoherent and distant voices. I quivered all over with
-excitement and hope!
-
-"It must be hallucination," I cried. "It cannot be! it is not true!"
-
-But no! By listening more attentively, I really did convince myself that
-what I heard was truly the sound of human voices. To make any meaning
-out of the sound, however, was beyond my power. I was too weak even to
-hear distinctly. Still it was a positive fact that someone was speaking.
-Of that I was quite certain.
-
-There was a moment of fear. A dread fell upon my soul that it might be
-my own words brought back to me by a distant echo. Perhaps without
-knowing it, I might have been crying aloud. I resolutely closed my lips,
-and once more placed my ear to the huge granite wall.
-
-Yes, for certain. It was in truth the sound of human voices.
-
-I now by the exercise of great determination dragged myself along the
-sides of the cavern, until I reached a point where I could hear more
-distinctly. But though I could detect the sound, I could only make out
-uncertain, strange, and incomprehensible words. They reached my ear as
-if they had been spoken in a low tone--murmured, as it were, afar off.
-
-At last, I made out the word forlorad repeated several times in a tone
-betokening great mental anguish and sorrow.
-
-What could this word mean, and who was speaking it? It must be either my
-uncle or the guide Hans! If, therefore, I could hear them, they must
-surely be able to hear me.
-
-"Help," I cried at the top of my voice; "help, I am dying!"
-
-I then listened with scarcely a breath; I panted for the slightest sound
-in the darkness--a cry, a sigh, a question! But silence reigned supreme.
-No answer came! In this way some minutes passed. A whole flood of ideas
-flashed through my mind. I began to fear that my voice, weakened by
-sickness and suffering, could not reach my companions who were in search
-of me.
-
-"It must be they," I cried; "who else could by any possibility be buried
-a hundred miles below the level of the earth?" The mere supposition was
-preposterous.
-
-I began, therefore, to listen again with the most breathless attention.
-As I moved my ears along the side of the place I was in, I found a
-mathematical point as it were, where the voices appeared to attain their
-maximum of intensity. The word forlorad again distinctly reached my ear.
-Then came again that rolling noise like thunder which had awakened me
-out of torpor.
-
-"I begin to understand," I said to myself after some little time devoted
-to reflection; "it is not through the solid mass that the sound reaches
-my ears. The walls of my cavernous retreat are of solid granite, and the
-most fearful explosion would not make uproar enough to penetrate them.
-The sound must come along the gallery itself. The place I was in must
-possess some peculiar acoustic properties of its own."
-
-Again I listened; and this time--yes, this time--I heard my name
-distinctly pronounced: cast as it were into space.
-
-It was my uncle, the Professor, who was speaking. He was in conversation
-with the guide, and the word which had so often reached my ears,
-forlorad, was a Danish expression.
-
-Then I understood it all. In order to make myself heard, I too must
-speak as it were along the side of the gallery, which would carry the
-sound of my voice just as the wire carries the electric fluid from point
-to point.
-
-But there was no time to lose. If my companions were only to remove a
-few feet from where they stood, the acoustic effect would be over, my
-Whispering Gallery would be destroyed. I again therefore crawled towards
-the wall, and said as clearly and distinctly as I could:
-
-"Uncle Hardwigg."
-
-I then awaited a reply.
-
-Sound does not possess the property of traveling with such extreme
-rapidity. Besides the density of the air at that depth from light and
-motion was very far from adding to the rapidity of circulation. Several
-seconds elapsed, which to my excited imagination, appeared ages; and
-these words reached my eager ears, and moved my wildly beating heart:
-
-"Harry, my boy, is that you?"
-
-A short delay between question and answer.
-
-"Yes--yes."
-
-..........
-
-"Where are you?"
-
-..........
-
-"Lost!"
-
-..........
-
-"And your lamp?"
-
-..........
-
-"Out."
-
-..........
-
-"But the guiding stream?"
-
-..........
-
-"Is lost!"
-
-..........
-
-"Keep your courage, Harry. We will do our best."
-
-..........
-
-"One moment, my uncle," I cried; "I have no longer strength to answer
-your questions. But--for heaven's sake--do you--continue--to speak--to
-me!" Absolute silence, I felt, would be annihilation.
-
-"Keep up your courage," said my uncle. "As you are so weak, do not
-speak. We have been searching for you in all directions, both by going
-upwards and downwards in the gallery. My dear boy, I had begun to give
-over all hope--and you can never know what bitter tears of sorrow and
-regret I have shed. At last, supposing you to be still on the road
-beside the Hansbach, we again descended, firing off guns as signals.
-Now, however, that we have found you, and that our voices reach each
-other, it may be a long time before we actually meet. We are conversing
-by means of some extraordinary acoustic arrangement of the labyrinth.
-But do not despair, my dear boy. It is something gained even to hear
-each other."
-
-While he was speaking, my brain was at work reflecting. A certain
-undefined hope, vague and shapeless as yet, made my heart beat wildly.
-In the first place, it was absolutely necessary for me to know one
-thing. I once more, therefore, leaned my head against the wall, which I
-almost touched with my lips, and again spoke.
-
-"Uncle."
-
-..........
-
-"My boy?" was his answer after a few moments.
-
-..........
-
-"It is of the utmost consequence that we should know how far we are
-asunder."
-
-..........
-
-"That is not difficult."
-
-..........
-
-"You have your chronometer at hand?" I asked.
-
-..........
-
-"Certainly."
-
-..........
-
-"Well, take it into your hand. Pronounce my name, noting exactly the
-second at which you speak. I will reply as soon as I hear your
-words--and you will then note exactly the moment at which my reply
-reaches you."
-
-..........
-
-"Very good; and the mean time between my question and your answer will
-be the time occupied by my voice in reaching you."
-
-..........
-
-"That is exactly what I mean, Uncle," was my eager reply.
-
-..........
-
-"Are you ready?"
-
-..........
-
-"Yes."
-
-..........
-
-"Well, make ready, I am about to pronounce your name," said the
-Professor.
-
-I applied my ear close to the sides of the cavernous gallery, and as
-soon as the word "Harry" reached my ear, I turned round and, placing my
-lips to the wall, repeated the sound.
-
-..........
-
-"Forty seconds," said my uncle. "There has elapsed forty seconds between
-the two words. The sound, therefore, takes twenty seconds to ascend.
-Now, allowing a thousand and twenty feet for every second--we have
-twenty thousand four hundred feet--a league and a half and one-eighth."
-
-These words fell on my soul like a kind of death knell.
-
-"A league and a half," I muttered in a low and despairing voice.
-
-..........
-
-"It shall be got over, my boy," cried my uncle in a cheery tone; "depend
-on us."
-
-..........
-
-"But do you know whether to ascend or descend?" I asked faintly enough.
-
-..........
-
-"We have to descend, and I will tell you why. You have reached a vast
-open space, a kind of bare crossroad, from which galleries diverge in
-every direction. That in which you are now lying must necessarily bring
-you to this point, for it appears that all these mighty fissures, these
-fractures of the globe's interior, radiate from the vast cavern which we
-at this moment occupy. Rouse yourself, then, have courage and continue
-your route. Walk if you can, if not drag yourself along--slide, if
-nothing else is possible. The slope must be rather rapid--and you will
-find strong arms to receive you at the end of your journey. Make a
-start, like a good fellow."
-
-These words served to rouse some kind of courage in my sinking frame.
-
-"Farewell for the present, good uncle, I am about to take my departure.
-As soon as I start, our voices will cease to commingle. Farewell, then,
-until we meet again."
-
-..........
-
-"Adieu, Harry--until we say Welcome." Such were the last words which
-reached my anxious ears before I commenced my weary and almost hopeless
-journey.
-
-This wonderful and surprising conversation which took place through the
-vast mass of the earth's labyrinth, these words exchanged, the speakers
-being about five miles apart--ended with hopeful and pleasant
-expressions. I breathed one more prayer to Heaven, I sent up words of
-thanksgiving--believing in my inmost heart that He had led me to the
-only place where the voices of my friends could reach my ears.
-
-This apparently astounding acoustic mystery is easily explainable by
-simple natural laws; it arose from the conductibility of the rock. There
-are many instances of this singular propagation of sound which are not
-perceptible in its less mediate positions. In the interior gallery of
-St. Paul's, and amid the curious caverns in Sicily, these phenomena are
-observable. The most marvelous of them all is known as the Ear of
-Dionysius.
-
-These memories of the past, of my early reading and studies, came fresh
-to my thoughts. Moreover, I began to reason that if my uncle and I could
-communicate at so great a distance, no serious obstacle could exist
-between us. All I had to do was to follow the direction whence the sound
-had reached me; and logically putting it, I must reach him if my
-strength did not fail.
-
-I accordingly rose to my feet. I soon found, however, that I could not
-walk; that I must drag myself along. The slope as I expected was very
-rapid; but I allowed myself to slip down.
-
-Soon the rapidity of the descent began to assume frightful proportions;
-and menaced a fearful fall. I clutched at the sides; I grasped at
-projections of rocks; I threw myself backwards. All in vain. My weakness
-was so great I could do nothing to save myself.
-
-Suddenly earth failed me.
-
-I was first launched into a dark and gloomy void. I then struck against
-the projecting asperities of a vertical gallery, a perfect well. My head
-bounded against a pointed rock, and I lost all knowledge of existence.
-As far as I was concerned, death had claimed me for his own.
-
-## CHAPTER 26 A RAPID RECOVERY
-
-When I returned to the consciousness of existence, I found myself
-surrounded by a kind of semiobscurity, lying on some thick and soft
-coverlets. My uncle was watching--his eyes fixed intently on my
-countenance, a grave expression on his face, a tear in his eye. At the
-first sigh which struggled from my bosom, he took hold of my hand. When
-he saw my eyes open and fix themselves upon his, he uttered a loud cry
-of joy. "He lives! he lives!"
-
-"Yes, my good uncle," I whispered.
-
-"My dear boy," continued the grim Professor, clasping me to his heart,
-"you are saved!"
-
-I was deeply and unaffectedly touched by the tone in which these words
-were uttered, and even more by the kindly care which accompanied them.
-The Professor, however, was one of those men who must be severely tried
-in order to induce any display of affection or gentle emotion. At this
-moment our friend Hans, the guide, joined us. He saw my hand in that of
-my uncle, and I venture to say that, taciturn as he was, his eyes beamed
-with lively satisfaction.
-
-"God dag," he said.
-
-"Good day, Hans, good day," I replied, in as hearty a tone as I could
-assume, "and now, Uncle, that we are together, tell me where we are. I
-have lost all idea of our position, as of everything else."
-
-"Tomorrow, Harry, tomorrow," he replied. "Today you are far too weak.
-Your head is surrounded with bandages and poultices that must not be
-touched. Sleep, my boy, sleep, and tomorrow you will know all that you
-require."
-
-"But," I cried, "let me know what o'clock it is--what day it is?"
-
-"It is now eleven o'clock at night, and this is once more Sunday. It is
-now the ninth of the month of August. And I distinctly prohibit you from
-asking any more questions until the tenth of the same."
-
-I was, if the truth were told, very weak indeed, and my eyes soon closed
-involuntarily. I did require a good night's rest, and I went off
-reflecting at the last moment that my perilous adventure in the interior
-of the earth, in total darkness, had lasted four days!
-
-On the morning of the next day, at my awakening, I began to look around
-me. My sleeping place, made of all our traveling bedding, was in a
-charming grotto, adorned with magnificent stalagmites, glittering in all
-the colors of the rainbow, the floor of soft and silvery sand.
-
-A dim obscurity prevailed. No torch, no lamp was lighted, and yet
-certain unexplained beams of light penetrated from without, and made
-their way through the opening of the beautiful grotto.
-
-I, moreover, heard a vague and indefinite murmur, like the ebb and flow
-of waves upon a strand, and sometimes I verily believed I could hear the
-sighing of the wind.
-
-I began to believe that, instead of being awake, I must be dreaming.
-Surely my brain had not been affected by my fall, and all that occurred
-during the last twenty-four hours was not the frenzied visions of
-madness? And yet after some reflection, a trial of my faculties, I came
-to the conclusion that I could not be mistaken. Eyes and ears could not
-surely both deceive me.
-
-"It is a ray of the blessed daylight," I said to myself, "which has
-penetrated through some mighty fissure in the rocks. But what is the
-meaning of this murmur of waves, this unmistakable moaning of the
-salt-sea billows? I can hear, too, plainly enough, the whistling of the
-wind. But can I be altogether mistaken? If my uncle, during my illness,
-has but carried me back to the surface of the earth! Has he, on my
-account, given up his wondrous expedition, or in some strange manner has
-it come to an end?"
-
-I was puzzling my brain over these and other questions, when the
-Professor joined me.
-
-"Good day, Harry," he cried in a joyous tone. "I fancy you are quite
-well."
-
-"I am very much better," I replied, actually sitting up in my bed.
-
-"I knew that would be the end of it, as you slept both soundly and
-tranquilly. Hans and I have each taken turn to watch, and every hour we
-have seen visible signs of amelioration."
-
-"You must be right, Uncle," was my reply, "for I feel as if I could do
-justice to any meal you could put before me."
-
-"You shall eat, my boy, you shall eat. The fever has left you. Our
-excellent friend Hans has rubbed your wounds and bruises with I know not
-what ointment, of which the Icelanders alone possess the secret. And
-they have healed your bruises in the most marvelous manner. Ah, he's a
-wise fellow is Master Hans."
-
-While he was speaking, my uncle was placing before me several articles
-of food, which, despite his earnest injunctions, I readily devoured. As
-soon as the first rage of hunger was appeased, I overwhelmed him with
-questions, to which he now no longer hesitated to give answers.
-
-I then learned, for the first time, that my providential fall had
-brought me to the bottom of an almost perpendicular gallery. As I came
-down, amidst a perfect shower of stones, the least of which falling on
-me would have crushed me to death, they came to the conclusion that I
-had carried with me an entire dislocated rock. Riding as it were on this
-terrible chariot, I was cast headlong into my uncle's arms. And into
-them I fell, insensible and covered with blood.
-
-"It is indeed a miracle," was the Professor's final remark, "that you
-were not killed a thousand times over. But let us take care never to
-separate; for surely we should risk never meeting again."
-
-"Let us take care never again to separate."
-
-These words fell with a sort of chill upon my heart. The journey, then,
-was not over. I looked at my uncle with surprise and astonishment. My
-uncle, after an instant's examination of my countenance, said: "What is
-the matter, Harry?"
-
-"I want to ask you a very serious question. You say that I am all right
-in health?"
-
-"Certainly you are."
-
-"And all my limbs are sound and capable of new exertion?" I asked.
-
-"Most undoubtedly."
-
-"But what about my head?" was my next anxious question.
-
-"Well, your head, except that you have one or two contusions, is exactly
-where it ought to be--on your shoulders," said my uncle, laughing.
-
-"Well, my own opinion is that my head is not exactly right. In fact, I
-believe myself slightly delirious."
-
-"What makes you think so?"
-
-"I will explain why I fancy I have lost my senses," I cried. "Have we
-not returned to the surface of Mother Earth?"
-
-"Certainly not."
-
-"Then truly I must be mad, for do I not see the light of day? do I not
-hear the whistling of the wind? and can I not distinguish the wash of a
-great sea?"
-
-"And that is all that makes you uneasy?" said my uncle, with a smile.
-
-"Can you explain?"
-
-"I will not make any attempt to explain; for the whole matter is utterly
-inexplicable. But you shall see and judge for yourself. You will then
-find that geological science is as yet in its infancy--and that we are
-doomed to enlighten the world."
-
-"Let us advance, then," I cried eagerly, no longer able to restrain my
-curiosity.
-
-"Wait a moment, my dear Harry," he responded; "you must take precautions
-after your illness before going into the open air."
-
-"The open air?"
-
-"Yes, my boy. I have to warn you that the wind is rather violent--and I
-have no wish for you to expose yourself without necessary precautions."
-
-"But I beg to assure you that I am perfectly recovered from my illness."
-
-"Have just a little patience, my boy. A relapse would be inconvenient to
-all parties. We have no time to lose--as our approaching sea voyage may
-be of long duration."
-
-"Sea voyage?" I cried, more bewildered than ever.
-
-"Yes. You must take another day's rest, and we shall be ready to go on
-board by tomorrow," replied my uncle, with a peculiar smile.
-
-"Go on board!" The words utterly astonished me.
-
-Go on board--what and how? Had we come upon a river, a lake, had we
-discovered some inland sea? Was a vessel lying at anchor in some part of
-the interior of the earth?
-
-My curiosity was worked up to the very highest pitch. My uncle made vain
-attempts to restrain me. When at last, however, he discovered that my
-feverish impatience would do more harm than good--and that the
-satisfaction of my wishes could alone restore me to a calm state of
-mind--he gave way.
-
-I dressed myself rapidly--and then taking the precaution to please my
-uncle, of wrapping myself in one of the coverlets, I rushed out of the
-grotto.
-
-## CHAPTER 27 THE CENTRAL SEA
-
-At first I saw absolutely nothing. My eyes, wholly unused to the
-effulgence of light, could not bear the sudden brightness; and I was
-compelled to close them. When I was able to reopen them, I stood still,
-far more stupefied than astonished. Not all the wildest effects of
-imagination could have conjured up such a scene! "The sea--the sea," I
-cried.
-
-"Yes," replied my uncle, in a tone of pardonable pride; "the Central
-Sea. No future navigator will deny the fact of my having discovered it;
-and hence of acquiring a right of giving it a name."
-
-It was quite true. A vast, limitless expanse of water, the end of a lake
-if not of an ocean, spread before us, until it was lost in the distance.
-The shore, which was very much indented, consisted of a beautiful soft
-golden sand, mixed with small shells, the long-deserted home of some of
-the creatures of a past age. The waves broke incessantly--and with a
-peculiarly sonorous murmur, to be found in underground localities. A
-slight frothy flake arose as the wind blew along the pellucid waters;
-and many a dash of spray was blown into my face. The mighty
-superstructure of rock which rose above to an inconceivable height left
-only a narrow opening--but where we stood, there was a large margin of
-strand. On all sides were capes and promontories and enormous cliffs,
-partially worn by the eternal breaking of the waves, through countless
-ages! And as I gazed from side to side, the mighty rocks faded away like
-a fleecy film of cloud.
-
-It was in reality an ocean, with all the usual characteristics of an
-inland sea, only horribly wild--so rigid, cold and savage.
-
-One thing startled and puzzled me greatly. How was it that I was able to
-look upon that vast sheet of water instead of being plunged in utter
-darkness? The vast landscape before me was lit up like day. But there
-was wanting the dazzling brilliancy, the splendid irradiation of the
-sun; the pale cold illumination of the moon; the brightness of the
-stars. The illuminating power in this subterranean region, from its
-trembling and Rickering character, its clear dry whiteness, the very
-slight elevation of its temperature, its great superiority to that of
-the moon, was evidently electric; something in the nature of the aurora
-borealis, only that its phenomena were constant, and able to light up
-the whole of the ocean cavern.
-
-The tremendous vault above our heads, the sky, so to speak, appeared to
-be composed of a conglomeration of nebulous vapors, in constant motion.
-I should originally have supposed that, under such an atmospheric
-pressure as must exist in that place, the evaporation of water could not
-really take place, and yet from the action of some physical law, which
-escaped my memory, there were heavy and dense clouds rolling along that
-mighty vault, partially concealing the roof. Electric currents produced
-astonishing play of light and shade in the distance, especially around
-the heavier clouds. Deep shadows were cast beneath, and then suddenly,
-between two clouds, there would come a ray of unusual beauty, and
-remarkable intensity. And yet it was not like the sun, for it gave no
-heat.
-
-The effect was sad and excruciatingly melancholy. Instead of a noble
-firmament of blue, studded with stars, there was above me a heavy roof
-of granite, which seemed to crush me.
-
-Gazing around, I began to think of the theory of the English captain who
-compared the earth to a vast hollow sphere in the interior of which the
-air is retained in a luminous state by means of atmospheric pressure,
-while two stars, Pluto and Proserpine, circled there in their mysterious
-orbits. After all, suppose the old fellow was right!
-
-In truth, we were imprisoned--bound as it were, in a vast excavation.
-Its width it was impossible to make out; the shore, on either hand,
-widening rapidly until lost to sight; while its length was equally
-uncertain. A haze on the distant horizon bounded our view. As to its
-height, we could see that it must be many miles to the roof. Looking
-upward, it was impossible to discover where the stupendous roof began.
-The lowest of the clouds must have been floating at an elevation of two
-thousand yards, a height greater than that of terrestrial vapors, which
-circumstance was doubtless owing to the extreme density of the air.
-
-I use the word "cavern" in order to give an idea of the place. I cannot
-describe its awful grandeur; human language fails to convey an idea of
-its savage sublimity. Whether this singular vacuum had or had not been
-caused by the sudden cooling of the earth when in a state of fusion, I
-could not say. I had read of most wonderful and gigantic caverns--but,
-none in any way like this.
-
-The great grotto of Guachara, in Colombia, visited by the learned
-Humboldt; the vast and partially explored Mammoth Cave in Kentucky--what
-were these holes in the earth to that in which I stood in speechless
-admiration! with its vapory clouds, its electric light, and the mighty
-ocean slumbering in its bosom! Imagination, not description, can alone
-give an idea of the splendor and vastness of the cave.
-
-I gazed at these marvels in profound silence. Words were utterly wanting
-to indicate the sensations of wonder I experienced. I seemed, as I stood
-upon that mysterious shore, as if I were some wandering inhabitant of a
-distant planet, present for the first time at the spectacle of some
-terrestrial phenomena belonging to another existence. To give body and
-existence to such new sensations would have required the coinage of new
-words--and here my feeble brain found itself wholly at fault. I looked
-on, I thought, I reflected, I admired, in a state of stupefaction not
-altogether unmingled with fear!
-
-The unexpected spectacle restored some color to my pallid cheeks. I
-seemed to be actually getting better under the influence of this
-novelty. Moreover, the vivacity of the dense atmosphere reanimated my
-body by inflating my lungs with unaccustomed oxygen.
-
-It will be readily conceived that after an imprisonment of forty-seven
-days, in a dark and miserable tunnel it was with infinite delight that I
-breathed this saline air. It was like the genial, reviving influence of
-the salt sea waves.
-
-My uncle had already got over the first surprise.
-
-With the Latin poet Horace his idea was that--
-
-Not to admire is all the art I know,
-
-To make man happy and to keep him so.
-
-"Well," he said, after giving me time thoroughly to appreciate the
-marvels of this underground sea, "do you feel strong enough to walk up
-and down?"
-
-"Certainly," was my ready answer, "nothing would give me greater
-pleasure."
-
-"Well then, my boy," he said, "lean on my arm, and we will stroll along
-the beach."
-
-I accepted his offer eagerly, and we began to walk along the shores of
-this extraordinary lake. To our left were abrupt rocks, piled one upon
-the other--a stupendous titanic pile; down their sides leaped
-innumerable cascades, which at last, becoming limpid and murmuring
-streams, were lost in the waters of the lake. Light vapors, which rose
-here and there, and floated in fleecy clouds from rock to rock,
-indicated hot springs, which also poured their superfluity into the vast
-reservoir at our feet.
-
-Among them I recognized our old and faithful stream, the Hansbach,
-which, lost in that wild basin, seemed as if it had been flowing since
-the creation of the world.
-
-"We shall miss our excellent friend," I remarked, with a deep sigh.
-
-"Bah!" said my uncle testily, "what matters it? That or another, it is
-all the same."
-
-I thought the remark ungrateful, and felt almost inclined to say so; but
-I forbore.
-
-At this moment my attention was attracted by an unexpected spectacle.
-After we had gone about five hundred yards, we suddenly turned a steep
-promontory, and found ourselves close to a lofty forest! It consisted of
-straight trunks with tufted tops, in shape like parasols. The air seemed
-to have no effect upon these trees--which in spite of a tolerable breeze
-remained as still and motionless as if they had been petrified.
-
-I hastened forward. I could find no name for these singular formations.
-Did they not belong to the two thousand and more known trees--or were we
-to make the discovery of a new growth? By no means. When we at last
-reached the forest, and stood beneath the trees, my surprise gave way to
-admiration.
-
-In truth, I was simply in the presence of a very ordinary product of the
-earth, of singular and gigantic proportions. My uncle unhesitatingly
-called them by their real names.
-
-"It is only," he said, in his coolest manner, "a forest of mushrooms."
-
-On close examination I found that he was not mistaken. Judge of the
-development attained by this product of damp hot soils. I had heard that
-the Lycoperdon giganteum reaches nine feet in circumference, but here
-were white mushrooms, nearly forty feet high, and with tops of equal
-dimensions. They grew in countless thousands--the light could not make
-its way through their massive substance, and beneath them reigned a
-gloomy and mystic darkness.
-
-Still I wished to go forward. The cold in the shades of this singular
-forest was intense. For nearly an hour we wandered about in this visible
-darkness. At length I left the spot, and once more returned to the
-shores of the lake, to light and comparative warmth.
-
-But the amazing vegetation of subterraneous land was not confined to
-gigantic mushrooms. New wonders awaited us at every step. We had not
-gone many hundred yards, when we came upon a mighty group of other trees
-with discolored leaves--the common humble trees of Mother Earth, of an
-exorbitant and phenomenal size: lycopods a hundred feet high; flowering
-ferns as tall as pines; gigantic grasses!
-
-"Astonishing, magnificent, splendid!" cried my uncle; "here we have
-before us the whole flora of the second period of the world, that of
-transition. Behold the humble plants of our gardens, which in the first
-ages of the world were mighty trees. Look around you, my dear Harry. No
-botanist ever before gazed on such a sight!"
-
-My uncle's enthusiasm, always a little more than was required, was now
-excusable.
-
-"You are right, Uncle," I remarked. "Providence appears to have designed
-the preservation in this vast and mysterious hothouse of antediluvian
-plants, to prove the sagacity of learned men in figuring them so
-marvelously on paper."
-
-"Well said, my boy--very well said; it is indeed a mighty hothouse. But
-you would also be within the bounds of reason and common sense, if you
-added that it is also a vast menagerie."
-
-I looked rather anxiously around. If the animals were as exaggerated as
-the plants, the matter would certainly be serious.
-
-"A menagerie?"
-
-"Doubtless. Look at the dust we are treading under foot--behold the
-bones with which the whole soil of the seashore is covered--"
-
-"Bones," I replied, "yes, certainly, the bones of antediluvian animals."
-
-I stooped down as I spoke, and picked up one or two singular remains,
-relics of a bygone age. It was easy to give a name to these gigantic
-bones, in some instances as big as trunks of trees.
-
-"Here is, clearly, the lower jawbone of a mastodon," I cried, almost as
-warmly and enthusiastically as my uncle; "here are the molars of the
-Dinotherium; here is a leg bone which belonged to the Megatherium. You
-are right, Uncle, it is indeed a menagerie; for the mighty animals to
-which these bones once belonged, have lived and died on the shores of
-this subterranean sea, under the shadow of these plants. Look, yonder
-are whole skeletons--and yet--"
-
-"And yet, nephew?" said my uncle, noticing that I suddenly came to a
-full stop.
-
-"I do not understand the presence of such beasts in granite caverns,
-however vast and prodigious," was my reply.
-
-"Why not?" said my uncle, with very much of his old professional
-impatience.
-
-"Because it is well known that animal life only existed on earth during
-the secondary period, when the sedimentary soil was formed by the
-alluviums, and thus replaced the hot and burning rocks of the primitive
-age."
-
-"I have listened to you earnestly and with patience, Harry, and I have a
-simple and clear answer to your objections: and that is, that this
-itself is a sedimentary soil."
-
-"How can that be at such enormous depth from the surface of the earth?"
-
-"The fact can be explained both simply and geologically. At a certain
-period, the earth consisted only of an elastic crust, liable to
-alternative upward and downward movements in virtue of the law of
-attraction. It is very probable that many a landslip took place in those
-days, and that large portions of sedimentary soil were cast into huge
-and mighty chasms."
-
-"Quite possible," I dryly remarked. "But, Uncle, if these antediluvian
-animals formerly lived in these subterranean regions, what more likely
-than that one of these monsters may at this moment be concealed behind
-one of yonder mighty rocks."
-
-As I spoke, I looked keenly around, examining with care every point of
-the horizon; but nothing alive appeared to exist on these deserted
-shores.
-
-I now felt rather fatigued, and told my uncle so. The walk and
-excitement were too much for me in my weak state. I therefore seated
-myself at the end of a promontory, at the foot of which the waves broke
-in incessant rolls. I looked round a bay formed by projections of vast
-granitic rocks. At the extreme end was a little port protected by huge
-pyramids of stones. A brig and three or four schooners might have lain
-there with perfect ease. So natural did it seem, that every minute my
-imagination induced me to expect a vessel coming out under all sail and
-making for the open sea under the influence of a warm southerly breeze.
-
-But the fantastic illusion never lasted more than a minute. We were the
-only living creatures in this subterranean world!
-
-During certain periods there was an utter cessation of wind, when a
-silence deeper, more terrible than the silence of the desert fell upon
-these solitary and arid rocks--and seemed to hang like a leaden weight
-upon the waters of this singular ocean. I sought, amid the awful
-stillness, to penetrate through the distant fog, to tear down the veil
-which concealed the mysterious distance. What unspoken words were
-murmured by my trembling lips--what questions did I wish to ask and did
-not! Where did this sea end--to what did it lead? Should we ever be able
-to examine its distant shores?
-
-But my uncle had no doubts about the matter. He was convinced that our
-enterprise would in the end be successful. For my part, I was in a state
-of painful indecision--I desired to embark on the journey and to
-succeed, and still I feared the result.
-
-After we had passed an hour or more in silent contemplation of the
-wondrous spectacle, we rose and went down towards the bank on our way to
-the grotto, which I was not sorry to gain. After a slight repast, I
-sought refuge in slumber, and at length, after many and tedious
-struggles, sleep came over my weary eyes.
-
-## CHAPTER 28 LAUNCHING THE RAFT
-
-On the morning of the next day, to my great surprise, I awoke completely
-restored. I thought a bath would be delightful after my long illness and
-sufferings. So, soon after rising, I went and plunged into the waters of
-this new Mediterranean. The bath was cool, fresh and invigorating.
-
-I came back to breakfast with an excellent appetite. Hans, our worthy
-guide, thoroughly understood how to cook such eatables as we were able
-to provide; he had both fire and water at discretion, so that he was
-enabled slightly to vary the weary monotony of our ordinary repast.
-
-Our morning meal was like a capital English breakfast, with coffee by
-way of a windup. And never had this delicious beverage been so welcome
-and refreshing.
-
-My uncle had sufficient regard for my state of health not to interrupt
-me in the enjoyment of the meal, but he was evidently delighted when I
-had finished.
-
-"Now then," said he, "come with me. It is the height of the tide, and I
-am anxious to study its curious phenomena."
-
-"What!"' I cried, rising in astonishment, "did you say the tide, Uncle?"
-
-"Certainly I did."
-
-"You do not mean to say," I replied, in a tone of respectful doubt,
-"that the influence of the sun and moon is felt here below."
-
-"And pray why not? Are not all bodies influenced by the law of universal
-attraction? Why should this vast underground sea be exempt from the
-general law, the rule of the universe? Besides, there is nothing like
-that which is proved and demonstrated. Despite the great atmospheric
-pressure down here, you will notice that this inland sea rises and falls
-with as much regularity as the Atlantic itself."
-
-As my uncle spoke, we reached the sandy shore, and saw and heard the
-waves breaking monotonously on the beach. They were evidently rising.
-
-"This is truly the flood," I cried, looking at the water at my feet.
-
-"Yes, my excellent nephew," replied my uncle, rubbing his hands with the
-gusto of a philosopher, "and you see by these several streaks of foam
-that the tide rises at least ten or twelve feet."
-
-"It is indeed marvelous."
-
-"By no means," he responded; "on the contrary, it is quite natural."
-
-"It may appear so in your eyes, my dear uncle," was my reply, "but all
-the phenomena of the place appear to me to partake of the marvelous. It
-is almost impossible to believe that which I see. Who in his wildest
-dreams could have imagined that, beneath the crust of our earth, there
-could exist a real ocean, with ebbing and flowing tides, with its
-changes of winds, and even its storms! I for one should have laughed the
-suggestion to scorn."
-
-"But, Harry, my boy, why not?" inquired my uncle, with a pitying smile;
-"is there any physical reason in opposition to it?"
-
-"Well, if we give up the great theory of the central heat of the earth,
-I certainly can offer no reasons why anything should be looked upon as
-impossible."
-
-"Then you will own," he added, "that the system of Sir Humphry Davy is
-wholly justified by what we have seen?"
-
-"I allow that it is--and that point once granted, I certainly can see no
-reason for doubting the existence of seas and other wonders, even
-countries, in the interior of the globe."
-
-"That is so--but of course these varied countries are uninhabited?"
-
-"Well, I grant that it is more likely than not: still, I do not see why
-this sea should not have given shelter to some species of unknown fish."
-
-"Hitherto we have not discovered any, and the probabilities are rather
-against our ever doing so," observed the Professor.
-
-I was losing my skepticism in the presence of these wonders.
-
-"Well, I am determined to solve the question. It is my intention to try
-my luck with my fishing line and hook."
-
-"Certainly; make the experiment," said my uncle, pleased with my
-enthusiasm. "While we are about it, it will certainly be only proper to
-discover all the secrets of this extraordinary region."
-
-"But, after all, where are we now?" I asked; "all this time I have quite
-forgotten to ask you a question, which, doubtless, your philosophical
-instruments have long since answered."
-
-"Well," replied the Professor, "examining the situation from only one
-point of view, we are now distant three hundred and fifty leagues from
-Iceland."
-
-"So much?" was my exclamation.
-
-"I have gone over the matter several times, and am sure not to have made
-a mistake of five hundred yards," replied my uncle positively.
-
-"And as to the direction--are we still going to the southeast?"
-
-"Yes, with a western declination[2] of nineteen degrees, forty-two
-minutes, just as it is above. As for the inclination[3] I have
-discovered a very curious fact."
-
-[2] The declination is the variation of the needle from the true
-meridian of a place.
-
-[3] Inclination is the dip of the magnetic needle with a tendency to
-incline towards the earth.
-
-"What may that be, Uncle? Your information interests me."
-
-"Why, that the needle instead of dipping towards the pole as it does on
-earth, in the northern hemisphere, has an upward tendency."
-
-"This proves," I cried, "that the great point of magnetic attraction
-lies somewhere between the surface of the earth and the spot we have
-succeeded in reaching."
-
-"Exactly, my observant nephew," exclaimed my uncle, elated and
-delighted, "and it is quite probable that if we succeed in getting
-toward the polar regions--somewhere near the seventy-third degree of
-latitude, where Sir James Ross discovered the magnetic pole, we shall
-behold the needle point directly upward. We have therefore discovered by
-analogy, that this great centre of attraction is not situated at a very
-great depth."
-
-"Well," said I, rather surprised, "this discovery will astonish
-experimental philosophers. It was never suspected."
-
-"Science, great, mighty and in the end unerring," replied my uncle
-dogmatically, "science has fallen into many errors--errors which have
-been fortunate and useful rather than otherwise, for they have been the
-steppingstones to truth."
-
-After some further discussion, I turned to another matter.
-
-"Have you any idea of the depth we have reached?"
-
-"We are now," continued the Professor, "exactly thirty-five
-leagues--above a hundred miles--down into the interior of the earth."
-
-"So," said I, after measuring the distance on the map, "we are now
-beneath the Scottish Highlands, and have over our heads the lofty
-Grampian Hills."
-
-"You are quite right," said the Professor, laughing; "it sounds very
-alarming, the weight being heavy--but the vault which supports this vast
-mass of earth and rock is solid and safe; the mighty Architect of the
-Universe has constructed it of solid materials. Man, even in his highest
-flights of vivid and poetic imagination, never thought of such things!
-What are the finest arches of our bridges, what the vaulted roofs of our
-cathedrals, to that mighty dome above us, and beneath which floats an
-ocean with its storms and calms and tides!"
-
-"I admire it all as much as you can, Uncle, and have no fear that our
-granite sky will fall upon our heads. But now that we have discussed
-matters of science and discovery, what are your future intentions? Are
-you not thinking of getting back to the surface of our beautiful earth?"
-
-This was said more as a feeler than with any hope of success.
-
-"Go back, nephew," cried my uncle in a tone of alarm, "you are not
-surely thinking of anything so absurd or cowardly. No, my intention is
-to advance and continue our journey. We have as yet been singularly
-fortunate, and henceforth I hope we shall be more so."
-
-"But," said I, "how are we to cross yonder liquid plain?"
-
-"It is not my intention to leap into it head foremost, or even to swim
-across it, like Leander over the Hellespont. But as oceans are, after
-all, only great lakes, inasmuch as they are surrounded by land, so does
-it stand to reason, that this central sea is circumscribed by granite
-surroundings."
-
-"Doubtless," was my natural reply.
-
-"Well, then, do you not think that when once we reach the other end, we
-shall find some means of continuing our journey?"
-
-"Probably, but what extent do you allow to this internal ocean?"
-
-"Well, I should fancy it to extend about forty or fifty leagues--more or
-less."
-
-"But even supposing this approximation to be a correct one--what then?"
-I asked.
-
-"My dear boy, we have no time for further discussion. We shall embark
-tomorrow."
-
-I looked around with surprise and incredulity. I could see nothing in
-the shape of boat or vessel.
-
-"What!" I cried, "we are about to launch out upon an unknown sea; and
-where, if I may ask, is the vessel to carry us?"
-
-"Well, my dear boy, it will not be exactly what you would call a vessel.
-For the present we must be content with a good and solid raft."
-
-"A raft," I cried, incredulously, "but down here a raft is as impossible
-of construction as a vessel--and I am at a loss to imagine--"
-
-"My good Harry--if you were to listen instead of talking so much, you
-would hear," said my uncle, waxing a little impatient.
-
-"I should hear?"
-
-"Yes--certain knocks with the hammer, which Hans is now employing to
-make the raft. He has been at work for many hours."
-
-"Making a raft?"
-
-"Yes."
-
-"But where has he found trees suitable for such a construction?"
-
-"He found the trees all ready to his hand. Come, and you shall see our
-excellent guide at work."
-
-More and more amazed at what I heard and saw, I followed my uncle like
-one in a dream.
-
-After a walk of about a quarter of an hour, I saw Hans at work on the
-other side of the promontory which formed our natural port. A few
-minutes more and I was beside him. To my great surprise, on the sandy
-shore lay a half-finished raft. It was made from beams of a very
-peculiar wood, and a great number of limbs, joints, boughs, and pieces
-lay about, sufficient to have constructed a fleet of ships and boats.
-
-I turned to my uncle, silent with astonishment and awe.
-
-"Where did all this wood come from?" I cried; "what wood is it?"
-
-"Well, there is pinewood, fir, and the palms of the northern regions,
-mineralized by the action of the sea," he replied, sententiously.
-
-"Can it be possible?"
-
-"Yes," said the learned Professor, "what you see is called fossil wood."
-
-"But then," cried I, after reflecting for a moment, "like the lignites,
-it must be as hard and as heavy as iron, and therefore will certainly
-not float."
-
-"Sometimes that is the case. Many of these woods have become true
-anthracites, but others again, like those you see before you, have only
-undergone one phase of fossil transformation. But there is no proof like
-demonstration," added my uncle, picking one or two of these precious
-waifs and casting them into the sea.
-
-The piece of wood, after having disappeared for a moment, came to the
-surface, and floated about with the oscillation produced by wind and
-tide.
-
-"Are you convinced?" said my uncle, with a self-satisfied smile.
-
-"I am convinced," I cried, "that what I see is incredible."
-
-The fact was that my journey into the interior of the earth was rapidly
-changing all preconceived notions, and day by day preparing me for the
-marvelous.
-
-I should not have been surprised to have seen a fleet of native canoes
-afloat upon that silent sea.
-
-The very next evening, thanks to the industry and ability of Hans, the
-raft was finished. It was about ten feet long and five feet wide. The
-beams bound together with stout ropes, were solid and firm, and once
-launched by our united efforts, the improvised vessel floated tranquilly
-upon the waters of what the Professor had well named the Central Sea.
-
-## CHAPTER 29 ON THE WATERS--A RAFT VOYAGE
-
-On the thirteenth of August we were up betimes. There was no time to be
-lost. We now had to inaugurate a new kind of locomotion, which would
-have the advantage of being rapid and not fatiguing.
-
-A mast, made of two pieces of wood fastened together, to give additional
-strength, a yard made from another one, the sail a linen sheet from our
-bed. We were fortunately in no want of cordage, and the whole on trial
-appeared solid and seaworthy.
-
-At six o'clock in the morning, when the eager and enthusiastic Professor
-gave the signal to embark, the victuals, the luggage, all our
-instruments, our weapons, and a goodly supply of sweet water, which we
-had collected from springs in the rocks, were placed on the raft.
-
-Hans had, with considerable ingenuity, contrived a rudder, which enabled
-him to guide the floating apparatus with ease. He took the tiller, as a
-matter of course. The worthy man was as good a sailor as he was a guide
-and duck hunter. I then let go the painter which held us to the shore,
-the sail was brought to the wind, and we made a rapid offing.
-
-Our sea voyage had at length commenced; and once more we were making for
-distant and unknown regions.
-
-Just as we were about to leave the little port where the raft had been
-constructed, my uncle, who was very strong as to geographic
-nomenclature, wanted to give it a name, and among others, suggested
-mine.
-
-"Well," said I, "before you decide I have another to propose."
-
-"Well; out with it."
-
-"I should like to call it Gretchen. Port Gretchen will sound very well
-on our future map."
-
-"Well then, Port Gretchen let it be," said the Professor.
-
-And thus it was that the memory of my dear girl was attached to our
-adventurous and memorable expedition.
-
-When we left the shore the wind was blowing from the northward and
-eastward. We went directly before the wind at a much greater speed than
-might have been expected from a raft. The dense layers of atmosphere at
-that depth had great propelling power and acted upon the sail with
-considerable force.
-
-At the end of an hour, my uncle, who had been taking careful
-observations, was enabled to judge of the rapidity with which we moved.
-It was far beyond anything seen in the upper world.
-
-"If," he said, "we continue to advance at our present rate, we shall
-have traveled at least thirty leagues in twenty-four hours. With a mere
-raft this is an almost incredible velocity."
-
-I certainly was surprised, and without making any reply went forward
-upon the raft. Already the northern shore was fading away on the edge of
-the horizon. The two shores appeared to separate more and more, leaving
-a wide and open space for our departure. Before me I could see nothing
-but the vast and apparently limitless sea--upon which we floated--the
-only living objects in sight.
-
-Huge and dark clouds cast their grey shadows below--shadows which seemed
-to crush that colorless and sullen water by their weight. Anything more
-suggestive of gloom and of regions of nether darkness I never beheld.
-Silvery rays of electric light, reflected here and there upon some small
-spots of water, brought up luminous sparkles in the long wake of our
-cumbrous bark. Presently we were wholly out of sight of land; not a
-vestige could be seen, nor any indication of where we were going. So
-still and motionless did we seem without any distant point to fix our
-eyes on that but for the phosphoric light at the wake of the raft I
-should have fancied that we were still and motionless.
-
-But I knew that we were advancing at a very rapid rate.
-
-About twelve o'clock in the day, vast collections of seaweed were
-discovered surrounding us on all sides. I was aware of the extraordinary
-vegetative power of these plants, which have been known to creep along
-the bottom of the great ocean, and stop the advance of large ships. But
-never were seaweeds ever seen, so gigantic and wonderful as those of the
-Central Sea. I could well imagine how, seen at a distance, tossing and
-heaving on the summit of the billows, the long lines of algae have been
-taken for living things, and thus have been fertile sources of the
-belief in sea serpents.
-
-Our raft swept past great specimens of fucus or seawrack, from three to
-four thousand feet in length, immense, incredibly long, looking like
-snakes that stretched out far beyond our horizon. It afforded me great
-amusement to gaze on their variegated ribbon-like endless lengths. Hour
-after hour passed without our coming to the termination of these
-floating weeds. If my astonishment increased, my patience was well-nigh
-exhausted.
-
-What natural force could possibly have produced such abnormal and
-extraordinary plants? What must have been the aspect of the globe,
-during the first centuries of its formation, when under the combined
-action of heat and humidity, the vegetable kingdom occupied its vast
-surface to the exclusion of everything else?
-
-These were considerations of never-ending interest for the geologist and
-the philosopher.
-
-All this while we were advancing on our journey; and at length night
-came; but as I had remarked the evening before, the luminous state of
-the atmosphere was in nothing diminished. Whatever was the cause, it was
-a phenomenon upon the duration of which we could calculate with
-certainty.
-
-As soon as our supper had been disposed of, and some little speculative
-conversation indulged in, I stretched myself at the foot of the mast,
-and presently went to sleep.
-
-Hans remained motionless at the tiller, allowing the raft to rise and
-fall on the waves. The wind being aft, and the sail square, all he had
-to do was to keep his oar in the centre.
-
-Ever since we had taken our departure from the newly named Port
-Gretchen, my worthy uncle had directed me to keep a regular log of our
-day's navigation, with instructions to put down even the most minute
-particulars, every interesting and curious phenomenon, the direction of
-the wind, our rate of sailing, the distance we went; in a word, every
-incident of our extraordinary voyage.
-
-From our log, therefore, I tell the story of our voyage on the Central
-Sea.
-
-Friday, August 14th. A steady breeze from the northwest. Raft
-progressing with extreme rapidity, and going perfectly straight. Coast
-still dimly visible about thirty leagues to leeward. Nothing to be seen
-beyond the horizon in front. The extraordinary intensity of the light
-neither increases nor diminishes. It is singularly stationary. The
-weather remarkably fine; that is to say, the clouds have ascended very
-high, and are light and fleecy, and surrounded by an atmosphere
-resembling silver in fusion.
-
-Thermometer, +32 degrees centigrade.
-
-About twelve o'clock in the day our guide Hans having prepared and
-baited a hook, cast his line into the subterranean waters. The bait he
-used was a small piece of meat, by means of which he concealed his hook.
-Anxious as I was, I was for a long time doomed to disappointment. Were
-these waters supplied with fish or not? That was the important question.
-No--was my decided answer. Then there came a sudden and rather hard tug.
-Hans coolly drew it in, and with it a fish, which struggled violently to
-escape.
-
-"A fish!" cried my uncle.
-
-"It is a sturgeon!" I cried, "certainly a small sturgeon."
-
-The Professor examined the fish carefully, noting every characteristic;
-and he did not coincide in my opinion. The fish had a flat head, round
-body, and the lower extremities covered with bony scales; its mouth was
-wholly without teeth, the pectoral fins, which were highly developed,
-sprouted direct from the body, which properly speaking had no tail. The
-animal certainly belonged to the order in which naturalists class the
-sturgeon, but it differed from that fish in many essential particulars.
-
-My uncle, after all, was not mistaken. After a long and patient
-examination, he said:
-
-"This fish, my dear boy, belongs to a family which has been extinct for
-ages, and of which no trace has ever been found on earth, except fossil
-remains in the Devonian strata."
-
-"You do not mean to say," I cried, "that we have captured a live
-specimen of a fish belonging to the primitive stock that existed before
-the deluge?"
-
-"We have," said the Professor, who all this time was continuing his
-observations, "and you may see by careful examination that these fossil
-fish have no identity with existing species. To hold in one's hand,
-therefore, a living specimen of the order, is enough to make a
-naturalist happy for life."
-
-"But," cried I, "to what family does it belong?"
-
-"To the order of Ganoides--an order of fish having angular scales,
-covered with bright enamel--forming one of the family of the
-Cephalaspides, of the genus--"
-
-"Well, sir," I remarked, as I noticed my uncle hesitated to conclude.
-
-"To the genus Pterychtis--yes, I am certain of it. Still, though I am
-confident of the correctness of my surmise, this fish offers to our
-notice a remarkable peculiarity, never known to exist in any other fish
-but those which are the natives of subterranean waters, wells, lakes, in
-caverns, and suchlike hidden pools."
-
-"And what may that be?"
-
-"It is blind."
-
-"Blind!" I cried, much surprised.
-
-"Not only blind," continued the Professor, "but absolutely without
-organs of sight."
-
-I now examined our discovery for myself. It was singular, to be sure,
-but it was really a fact. This, however, might be a solitary instance, I
-suggested. The hook was baited again and once more thrown into the
-water. This subterranean ocean must have been tolerably well supplied
-with fish, for in two hours we took a large number of Pterychtis, as
-well as other fish belonging to another supposed extinct family--the
-Dipterides (a genus of fish, furnished with two fins only, whence the
-name), though my uncle could not class it exactly. All, without
-exception, however, were blind. This unexpected capture enabled us to
-renew our stock of provisions in a very satisfactory way.
-
-We were now convinced that this subterranean sea contained only fish
-known to us as fossil specimens--and fish and reptiles alike were all
-the more perfect the farther back they dated their origin.
-
-We began to hope that we should find some of those saurians which
-science has succeeded in reconstructing from bits of bone or cartilage.
-
-I took up the telescope and carefully examined the horizon--looked over
-the whole sea; it was utterly and entirely deserted. Doubtless we were
-still too near the coast.
-
-After an examination of the ocean, I looked upward, towards the strange
-and mysterious sky. Why should not one of the birds reconstructed by the
-immortal Cuvier flap his stupendous wings aloft in the dull strata of
-subterranean air? It would, of course, find quite sufficient food from
-the fish in the sea. I gazed for some time upon the void above. It was
-as silent and as deserted as the shores we had but lately left.
-
-Nevertheless, though I could neither see nor discover anything, my
-imagination carried me away into wild hypotheses. I was in a kind of
-waking dream. I thought I saw on the surface of the water those enormous
-antediluvian turtles as big as floating islands. Upon those dull and
-somber shores passed a spectral row of the mammifers of early days, the
-great Liptotherium found in the cavernous hollow of the Brazilian hills,
-the Mesicotherium, a native of the glacial regions of Siberia.
-
-Farther on, the pachydermatous Lophrodon, that gigantic tapir, which
-concealed itself behind rocks, ready to do battle for its prey with the
-Anoplotherium, a singular animal partaking of the nature of the
-rhinoceros, the horse, the hippopotamus and the camel.
-
-There was the giant Mastodon, twisting and turning his horrid trunk,
-with which he crushed the rocks of the shore to powder, while the
-Megatherium--his back raised like a cat in a passion, his enormous claws
-stretched out, dug into the earth for food, at the same time that he
-awoke the sonorous echoes of the whole place with his terrible roar.
-
-Higher up still, the first monkey ever seen on the face of the globe
-clambered, gamboling and playing up the granite hills. Still farther
-away, ran the Pterodactyl, with the winged hand, gliding or rather
-sailing through the dense and compressed air like a huge bat.
-
-Above all, near the leaden granitic sky, were immense birds, more
-powerful than the cassowary and the ostrich, which spread their mighty
-wings and fluttered against the huge stone vault of the inland sea.
-
-I thought, such was the effect of my imagination, that I saw this whole
-tribe of antediluvian creatures. I carried myself back to far ages, long
-before man existed--when, in fact, the earth was in too imperfect a
-state for him to live upon it.
-
-My dream was of countless ages before the existence of man. The
-mammifers first disappeared, then the mighty birds, then the reptiles of
-the secondary period, presently the fish, the crustacea, the mollusks,
-and finally the vertebrata. The zoophytes of the period of transition in
-their turn sank into annihilation.
-
-The whole panorama of the world's life before the historic period,
-seemed to be born over again, and mine was the only human heart that
-beat in this unpeopled world! There were no more seasons; there were no
-more climates; the natural heat of the world increased unceasingly, and
-neutralized that of the great radiant Sun.
-
-Vegetation was exaggerated in an extraordinary manner. I passed like a
-shadow in the midst of brushwood as lofty as the giant trees of
-California, and trod underfoot the moist and humid soil, reeking with a
-rank and varied vegetation.
-
-I leaned against the huge column-like trunks of giant trees, to which
-those of Canada were as ferns. Whole ages passed, hundreds upon hundreds
-of years were concentrated into a single day.
-
-Next, unrolled before me like a panorama, came the great and wondrous
-series of terrestrial transformations. Plants disappeared; the granitic
-rocks lost all trace of solidity; the liquid state was suddenly
-substituted for that which had before existed. This was caused by
-intense heat acting on the organic matter of the earth. The waters
-flowed over the whole surface of the globe; they boiled; they were
-volatilized, or turned into vapor; a kind of steam cloud wrapped the
-whole earth, the globe itself becoming at last nothing but one huge
-sphere of gas, indescribable in color, between white heat and red, as
-big and as brilliant as the sun.
-
-In the very centre of this prodigious mass, fourteen hundred thousand
-times as large as our globe, I was whirled round in space, and brought
-into close conjunction with the planets. My body was subtilized, or
-rather became volatile, and commingled in a state of atomic vapor, with
-the prodigious clouds, which rushed forward like a mighty comet into
-infinite space!
-
-What an extraordinary dream! Where would it finally take me? My feverish
-hand began to write down the marvelous details--details more like the
-imaginings of a lunatic than anything sober and real. I had during this
-period of hallucination forgotten everything--the Professor, the guide,
-and the raft on which we were floating. My mind was in a state of
-semioblivion.
-
-"What is the matter, Harry?" said my uncle suddenly.
-
-My eyes, which were wide opened like those of a somnambulist, were fixed
-upon him, but I did not see him, nor could I clearly make out anything
-around me.
-
-"Take care, my boy," again cried my uncle, "you will fall into the sea."
-
-As he uttered these words, I felt myself seized on the other side by the
-firm hand of our devoted guide. Had it not been for the presence of mind
-of Hans, I must infallibly have fallen into the waves and been drowned.
-
-"Have you gone mad?" cried my uncle, shaking me on the other side.
-
-"What--what is the matter?" I said at last, coming to myself.
-
-"Are you ill, Henry?" continued the Professor in an anxious tone.
-
-"No--no; but I have had an extraordinary dream. It, however, has passed
-away. All now seems well," I added, looking around me with strangely
-puzzled eyes.
-
-"All right," said my uncle; "a beautiful breeze, a splendid sea. We are
-going along at a rapid rate, and if I am not out in my calculations we
-shall soon see land. I shall not be sorry to exchange the narrow limits
-of our raft for the mysterious strand of the subterranean ocean."
-
-As my uncle uttered these words, I rose and carefully scanned the
-horizon. But the line of water was still confounded with the lowering
-clouds that hung aloft, and in the distance appeared to touch the edge
-of the water.
-
-## CHAPTER 30 TERRIFIC SAURIAN COMBAT
-
-Saturday, August 15th. The sea still retains its uniform monotony. The
-same leaden hue, the same eternal glare from above. No indication of
-land being in sight. The horizon appears to retreat before us, more and
-more as we advance.
-
-My head, still dull and heavy from the effects of my extraordinary
-dream, which I cannot as yet banish from my mind.
-
-The Professor, who has not dreamed, is, however, in one of his morose
-and unaccountable humors. Spends his time in scanning the horizon, at
-every point of the compass. His telescope is raised every moment to his
-eyes, and when he finds nothing to give any clue to our whereabouts, he
-assumes a Napoleonic attitude and walks anxiously.
-
-I remarked that my uncle, the Professor, had a strong tendency to resume
-his old impatient character, and I could not but make a note of this
-disagreeable circumstance in my journal. I saw clearly that it had
-required all the influence of my danger and suffering, to extract from
-him one scintillation of humane feeling. Now that I was quite recovered,
-his original nature had conquered and obtained the upper hand.
-
-And, after all, what had he to be angry and annoyed about, now more than
-at any other time? Was not the journey being accomplished under the most
-favorable circumstances? Was not the raft progressing with the most
-marvelous rapidity?
-
-What, then, could be the matter? After one or two preliminary hems, I
-determined to inquire.
-
-"You seem uneasy, Uncle," said I, when for about the hundredth time he
-put down his telescope and walked up and down, muttering to himself.
-
-"No, I am not uneasy," he replied in a dry harsh tone, "by no means."
-
-"Perhaps I should have said impatient," I replied, softening the force
-of my remark.
-
-"Enough to make me so, I think."
-
-"And yet we are advancing at a rate seldom attained by a raft," I
-remarked.
-
-"What matters that?" cried my uncle. "I am not vexed at the rate we go
-at, but I am annoyed to find the sea so much vaster than I expected."
-
-I then recollected that the Professor, before our departure, had
-estimated the length of this subterranean ocean as at most about thirty
-leagues. Now we had traveled at least over thrice that distance without
-discovering any trace of the distant shore. I began to understand my
-uncle's anger.
-
-"We are not going down," suddenly exclaimed the Professor. "We are not
-progressing with our great discoveries. All this is utter loss of time.
-After all, I did not come from home to undertake a party of pleasure.
-This voyage on a raft over a pond annoys and wearies me."
-
-He called this adventurous journey a party of pleasure, and this great
-inland sea a pond!
-
-"But," argued I, "if we have followed the route indicated by the great
-Saknussemm, we cannot be going far wrong."
-
-"'That is the question,' as the great, the immortal Shakespeare, has it.
-Are we following the route indicated by that wondrous sage? Did
-Saknussemm ever fall in with this great sheet of water? If he did, did
-he cross it? I begin to fear that the rivulet we adopted for a guide has
-led us wrong."
-
-"In any case, we can never regret having come thus far. It is worth the
-whole journey to have enjoyed this magnificent spectacle--it is
-something to have seen."
-
-"I care nothing about seeing, nor about magnificent spectacles. I came
-down into the interior of the earth with an object, and that object I
-mean to attain. Don't talk to me about admiring scenery, or any other
-sentimental trash."
-
-After this I thought it well to hold my tongue, and allow the Professor
-to bite his lips until the blood came, without further remark.
-
-At six o'clock in the evening, our matter-of-fact guide, Hans, asked for
-his week's salary, and receiving his three rix-dollars, put them
-carefully in his pocket. He was perfectly contented and satisfied.
-
-Sunday, August 16th. Nothing new to record. The same weather as before.
-The wind has a slight tendency to freshen up, with signs of an
-approaching gale. When I awoke, my first observation was in regard to
-the intensity of the light. I keep on fearing, day after day, that the
-extraordinary electric phenomenon should become first obscured, and then
-go wholly out, leaving us in total darkness. Nothing, however, of the
-kind occurs. The shadow of the raft, its mast and sails, is clearly
-distinguished on the surface of the water.
-
-This wondrous sea is, after all, infinite in its extent. It must be
-quite as wide as the Mediterranean--or perhaps even as the great
-Atlantic Ocean. Why, after all, should it not be so?
-
-My uncle has on more than one occasion, tried deep-sea soundings. He
-tied the cross of one of our heaviest crowbars to the extremity of a
-cord, which he allowed to run out to the extent of two hundred fathoms.
-We had the greatest difficulty in hoisting in our novel kind of lead.
-
-When the crowbar was finally dragged on board, Hans called my attention
-to some singular marks upon its surface. The piece of iron looked as if
-it had been crushed between two very hard substances.
-
-I looked at our worthy guide with an inquiring glance.
-
-"Tander," said he.
-
-Of course I was at a loss to understand. I turned round towards my
-uncle, absorbed in gloomy reflections. I had little wish to disturb him
-from his reverie. I accordingly turned once more towards our worthy
-Icelander.
-
-Hans very quietly and significantly opened his mouth once or twice, as
-if in the act of biting, and in this way made me understand his meaning.
-
-"Teeth!" cried I, with stupefaction, as I examined the bar of iron with
-more attention.
-
-Yes. There can be no doubt about the matter. The indentations on the bar
-of iron are the marks of teeth! What jaws must the owner of such molars
-be possessed of! Have we then, come upon a monster of unknown species,
-which still exists within the vast waste of waters--a monster more
-voracious than a shark, more terrible and bulky than the whale? I am
-unable to withdraw my eyes from the bar of iron, actually half crushed!
-
-Is, then, my dream about to come true--a dread and terrible reality?
-
-All day my thoughts were bent upon these speculations, and my
-imagination scarcely regained a degree of calmness and power of
-reflection until after a sleep of many hours.
-
-This day, as on other Sundays, we observed as a day of rest and pious
-meditation.
-
-Monday, August 17th. I have been trying to realize from memory the
-particular instincts of those antediluvian animals of the secondary
-period, which succeeding to the mollusca, to the crustacea, and to the
-fish, preceded the appearance of the race of mammifers. The generation
-of reptiles then reigned supreme upon the earth. These hideous monsters
-ruled everything in the seas of the secondary period, which formed the
-strata of which the Jura mountains are composed. Nature had endowed them
-with perfect organization. What a gigantic structure was theirs; what
-vast and prodigious strength they possessed!
-
-The existing saurians, which include all such reptiles as lizards,
-crocodiles, and alligators, even the largest and most formidable of
-their class, are but feeble imitations of their mighty sires, the
-animals of ages long ago. If there were giants in the days of old, there
-were also gigantic animals.
-
-I shuddered as I evolved from my mind the idea and recollection of these
-awful monsters. No eye of man had seen them in the flesh. They took
-their walks abroad upon the face of the earth thousands of ages before
-man came into existence, and their fossil bones, discovered in the
-limestone, have allowed us to reconstruct them anatomically, and thus to
-get some faint idea of their colossal formation.
-
-I recollect once seeing in the great Museum of Hamburg the skeleton of
-one of these wonderful saurians. It measured no less than thirty feet
-from the nose to the tail. Am I, then, an inhabitant of the earth of the
-present day, destined to find myself face to face with a representative
-of this antediluvian family? I can scarcely believe it possible; I can
-hardly believe it true. And yet these marks of powerful teeth upon the
-bar of iron! Can there be a doubt from their shape that the bite is the
-bite of a crocodile?
-
-My eyes stare wildly and with terror upon the subterranean sea. Every
-moment I expect one of these monsters to rise from its vast cavernous
-depths.
-
-I fancy that the worthy Professor in some measure shares my notions, if
-not my fears, for, after an attentive examination of the crowbar, he
-cast his eyes rapidly over the mighty and mysterious ocean.
-
-"What could possess him to leave the land," I thought, "as if the depth
-of this water was of any importance to us. No doubt he has disturbed
-some terrible monster in his watery home, and perhaps we may pay dearly
-for our temerity."
-
-Anxious to be prepared for the worst, I examined our weapons, and saw
-that they were in a fit state for use. My uncle looked on at me and
-nodded his head approvingly. He, too, has noticed what we have to fear.
-
-Already the uplifting of the waters on the surface indicates that
-something is in motion below. The danger approaches. It comes nearer and
-nearer. It behooves us to be on the watch.
-
-Tuesday, August 18th. Evening came at last, the hour when the desire for
-sleep caused our eyelids to be heavy. Night there is not, properly
-speaking, in this place, any more than there is in summer in the arctic
-regions. Hans, however, is immovable at the rudder. When he snatches a
-moment of rest I really cannot say. I take advantage of his vigilance to
-take some little repose.
-
-But two hours after I was awakened from a heavy sleep by an awful shock.
-The raft appeared to have struck upon a sunken rock. It was lifted right
-out of the water by some wondrous and mysterious power, and then started
-off twenty fathoms distant.
-
-"Eh, what is it?" cried my uncle starting up. "Are we shipwrecked, or
-what?"
-
-Hans raised his hand and pointed to where, about two hundred yards off,
-a large black mass was moving up and down.
-
-I looked with awe. My worst fears were realized.
-
-"It is a colossal monster!" I cried, clasping my hands.
-
-"Yes," cried the agitated Professor, "and there yonder is a huge sea
-lizard of terrible size and shape."
-
-"And farther on behold a prodigious crocodile. Look at his hideous jaws,
-and that row of monstrous teeth. Ha! he has gone."
-
-"A whale! a whale!" shouted the Professor, "I can see her enormous fins.
-See, see, how she blows air and water!"
-
-Two liquid columns rose to a vast height above the level of the sea,
-into which they fell with a terrific crash, waking up the echoes of that
-awful place. We stood still--surprised, stupefied, terror-stricken at
-the sight of this group of fearful marine monsters, more hideous in the
-reality than in my dream. They were of supernatural dimensions; the very
-smallest of the whole party could with ease have crushed our raft and
-ourselves with a single bite.
-
-Hans, seizing the rudder which had flown out of his hand, puts it hard
-aweather in order to escape from such dangerous vicinity; but no sooner
-does he do so, than he finds he is flying from Scylla to Charybdis. To
-leeward is a turtle about forty feet wide, and a serpent quite as long,
-with an enormous and hideous head peering from out the waters.
-
-Look which way we will, it is impossible for us to fly. The fearful
-reptiles advanced upon us; they turned and twisted about the raft with
-awful rapidity. They formed around our devoted vessel a series of
-concentric circles. I took up my rifle in desperation. But what effect
-can a rifle ball produce upon the armor scales with which the bodies of
-these horrid monsters are covered?
-
-We remain still and dumb from utter horror. They advance upon us, nearer
-and nearer. Our fate appears certain, fearful and terrible. On one side
-the mighty crocodile, on the other the great sea serpent. The rest of
-the fearful crowd of marine prodigies have plunged beneath the briny
-waves and disappeared!
-
-I am about to fire at any risk and try the effect of a shot. Hans, the
-guide, however, interfered by a sign to check me. The two hideous and
-ravenous monsters passed within fifty fathoms of the raft, and then made
-a rush at one another--their fury and rage preventing them from seeing
-us.
-
-The combat commenced. We distinctly made out every action of the two
-hideous monsters.
-
-But to my excited imagination the other animals appeared about to take
-part in the fierce and deadly struggle--the monster, the whale, the
-lizard, and the turtle. I distinctly saw them every moment. I pointed
-them out to the Icelander. But he only shook his head.
-
-"Tva," he said.
-
-"What--two only does he say. Surely he is mistaken," I cried in a tone
-of wonder.
-
-"He is quite right," replied my uncle coolly and philosophically,
-examining the terrible duel with his telescope and speaking as if he
-were in a lecture room.
-
-"How can that be?"
-
-"Yes, it is so. The first of these hideous monsters has the snout of a
-porpoise, the head of a lizard, the teeth of a crocodile; and it is this
-that has deceived us. It is the most fearful of all antediluvian
-reptiles, the world--renowned Ichthyosaurus or great fish lizard."
-
-"And the other?"
-
-"The other is a monstrous serpent, concealed under the hard vaulted
-shell of the turtle, the terrible enemy of its fearful rival, the
-Plesiosaurus, or sea crocodile."
-
-Hans was quite right. The two monsters only, disturbed the surface of
-the sea!
-
-At last have mortal eyes gazed upon two reptiles of the great primitive
-ocean! I see the flaming red eyes of the Ichthyosaurus, each as big, or
-bigger than a man's head. Nature in its infinite wisdom had gifted this
-wondrous marine animal with an optical apparatus of extreme power,
-capable of resisting the pressure of the heavy layers of water which
-rolled over him in the depths of the ocean where he usually fed. It has
-by some authors truly been called the whale of the saurian race, for it
-is as big and quick in its motions as our king of the seas. This one
-measures not less than a hundred feet in length, and I can form some
-idea of his girth when I see him lift his prodigious tail out of the
-waters. His jaw is of awful size and strength, and according to the
-best-informed naturalists, it does not contain less than a hundred and
-eighty-two teeth.
-
-The other was the mighty Plesiosaurus, a serpent with a cylindrical
-trunk, with a short stumpy tail, with fins like a bank of oars in a
-Roman galley.
-
-Its whole body covered by a carapace or shell, and its neck, as flexible
-as that of a swan, rose more than thirty feet above the waves, a tower
-of animated flesh!
-
-These animals attacked one another with inconceivable fury. Such a
-combat was never seen before by mortal eyes, and to us who did see it,
-it appeared more like the phantasmagoric creation of a dream than
-anything else. They raised mountains of water, which dashed in spray
-over the raft, already tossed to and fro by the waves. Twenty times we
-seemed on the point of being upset and hurled headlong into the waves.
-Hideous hisses appeared to shake the gloomy granite roof of that mighty
-cavern--hisses which carried terror to our hearts. The awful combatants
-held each other in a tight embrace. I could not make out one from the
-other. Still the combat could not last forever; and woe unto us,
-whichsoever became the victor.
-
-One hour, two hours, three hours passed away, without any decisive
-result. The struggle continued with the same deadly tenacity, but
-without apparent result. The deadly opponents now approached, now drew
-away from the raft. Once or twice we fancied they were about to leave us
-altogether, but instead of that, they came nearer and nearer.
-
-We crouched on the raft ready to fire at them at a moment's notice, poor
-as the prospect of hurting or terrifying them was. Still we were
-determined not to perish without a struggle.
-
-Suddenly the Ichthyosaurus and the Plesiosaurus disappeared beneath the
-waves, leaving behind them a maelstrom in the midst of the sea. We were
-nearly drawn down by the indraft of the water!
-
-Several minutes elapsed before anything was again seen. Was this
-wonderful combat to end in the depths of the ocean? Was the last act of
-this terrible drama to take place without spectators?
-
-It was impossible for us to say.
-
-Suddenly, at no great distance from us, an enormous mass rises out of
-the waters--the head of the great Plesiosaurus. The terrible monster is
-now wounded unto death. I can see nothing now of his enormous body. All
-that could be distinguished was his serpent-like neck, which he twisted
-and curled in all the agonies of death. Now he struck the waters with it
-as if it had been a gigantic whip, and then again wriggled like a worm
-cut in two. The water was spurted up to a great distance in all
-directions. A great portion of it swept over our raft and nearly blinded
-us. But soon the end of the beast approached nearer and nearer; his
-movements slackened visibly; his contortions almost ceased; and at last
-the body of the mighty snake lay an inert, dead mass on the surface of
-the now calm and placid waters.
-
-As for the Ichthyosaurus, has he gone down to his mighty cavern under
-the sea to rest, or will he reappear to destroy us?
-
-This question remained unanswered. And we had breathing time.
-
-## CHAPTER 31 THE SEA MONSTER
-
-Wednesday, August 19th. Fortunately the wind, which for the present
-blows with some violence, has allowed us to escape from the scene of the
-unparalleled and extraordinary struggle. Hans with his usual
-imperturbable calm remained at the helm. My uncle, who for a short time
-had been withdrawn from his absorbing reveries by the novel incidents of
-this sea fight, fell back again apparently into a brown study. His eyes
-were fixed impatiently on the widespread ocean.
-
-Our voyage now became monotonous and uniform. Dull as it has become, I
-have no desire to have it broken by any repetition of the perils and
-adventures of yesterday.
-
-Thursday, August 20th. The wind is now N. N. E., and blows very
-irregularly. It has changed to fitful gusts. The temperature is
-exceedingly high. We are now progressing at the average rate of about
-ten miles and a half per hour.
-
-About twelve o'clock a distant sound as of thunder fell upon our ears. I
-make a note of the fact without even venturing a suggestion as to its
-cause. It was one continued roar as of a sea falling over mighty rocks.
-
-"Far off in the distance," said the Professor dogmatically, "there is
-some rock or some island against which the sea lashed to fury by the
-wind, is breaking violently."
-
-Hans, without saying a word, clambered to the top of the mast, but could
-make out nothing. The ocean was level in every direction as far as the
-eye could reach.
-
-Three hours passed away without any sign to indicate what might be
-before us. The sound began to assume that of a mighty cataract.
-
-I expressed my opinion on this point strongly to my uncle. He merely
-shook his head. I, however, am strongly impressed by a conviction that I
-am not wrong. Are we advancing towards some mighty waterfall which shall
-cast us into the abyss? Probably this mode of descending into the abyss
-may be agreeable to the Professor, because it would be something like
-the vertical descent he is so eager to make. I entertain a very
-different opinion.
-
-Whatever be the truth, it is certain that not many leagues distant there
-must be some very extraordinary phenomenon, for as we advance the roar
-becomes something mighty and stupendous. Is it in the water, or in the
-air?
-
-I cast hasty glances aloft at the suspended vapors, and I seek to
-penetrate their mighty depths. But the vault above is tranquil. The
-clouds, which are now elevated to the very summit, appear utterly still
-and motionless, and completely lost in the irradiation of electric
-light. It is necessary, therefore, to seek for the cause of this
-phenomenon elsewhere.
-
-I examine the horizon, now perfectly calm, pure, and free from all haze.
-Its aspect still remains unchanged. But if this awful noise proceeds
-from a cataract--if, so to speak in plain English, this vast interior
-ocean is precipitated into a lower basin--if these tremendous roars are
-produced by the noise of falling waters, the current would increase in
-activity, and its increasing swiftness would give me some idea of the
-extent of the peril with which we are menaced. I consult the current. It
-simply does not exist: there is no such thing. An empty bottle cast into
-the water lies to leeward without motion.
-
-About four o'clock Hans rises, clambers up the mast, and reaches the
-truck itself. From this elevated position his looks are cast around.
-They take in a vast circumference of the ocean. At last, his eyes remain
-fixed. His face expresses no astonishment, but his eyes slightly dilate.
-
-"He has seen something at last," cried my uncle.
-
-"I think so," I replied.
-
-Hans came down, stood beside us, and pointed with his right hand to the
-south.
-
-"Der nere," he said.
-
-"There," replied my uncle.
-
-And seizing his telescope, he looked at it with great attention for
-about a minute, which to me appeared an age. I knew not what to think or
-expect.
-
-"Yes, yes," he cried in a tone of considerable surprise, "there it is."
-
-"What?" I asked.
-
-"A tremendous spurt of water rising out of the waves."
-
-"Some other marine monster," I cried, already alarmed.
-
-"Perhaps."
-
-"Then let us steer more to the westward, for we know what we have to
-expect from antediluvian animals," was my eager reply.
-
-"Go ahead," said my uncle.
-
-I turned towards Hans. Hans was at the tiller steering with his usual
-imperturbable calm.
-
-Nevertheless, if from the distance which separated us from this
-creature, a distance which must be estimated at not less than a dozen
-leagues, one could see the column of water spurting from the blow-hole
-of the great animal, his dimensions must be something preternatural. To
-fly is, therefore, the course to be suggested by ordinary prudence. But
-we have not come into that part of the world to be prudent. Such is my
-uncle's determination.
-
-We, accordingly, continued to advance. The nearer we come, the loftier
-is the spouting water. What monster can fill himself with such huge
-volumes of water, and then unceasingly spout them out in such lofty
-jets?
-
-At eight o'clock in the evening, reckoning as above ground, where there
-is day and night, we are not more than two leagues from the mighty
-beast. Its long, black, enormous, mountainous body, lies on the top of
-the water like an island. But then sailors have been said to have gone
-ashore on sleeping whales, mistaking them for land. Is it illusion, or
-is it fear? Its length cannot be less than a thousand fathoms. What,
-then, is this cetaceous monster of which no Cuvier ever thought?
-
-It is quite motionless and presents the appearance of sleep. The sea
-seems unable to lift him upwards; it is rather the waves which break on
-his huge and gigantic frame. The waterspout, rising to a height of five
-hundred feet, breaks in spray with a dull, sullen roar.
-
-We advance, like senseless lunatics, towards this mighty mass.
-
-I honestly confess that I was abjectly afraid. I declared that I would
-go no farther. I threatened in my terror to cut the sheet of the sail. I
-attacked the Professor with considerable acrimony, calling him
-foolhardy, mad, I know not what. He made no answer.
-
-Suddenly the imperturbable Hans once more pointed his finger to the
-menacing object:
-
-"<i>Holme</i>!"
-
-"An island!" cried my uncle.
-
-"An island?" I replied, shrugging my shoulders at this poor attempt at
-deception.
-
-"Of course it is," cried my uncle, bursting into a loud and joyous
-laugh.
-
-"But the waterspout?"
-
-"Geyser," said Hans.
-
-"Yes, of course--a geyser," replied my uncle, still laughing, "a geyser
-like those common in Iceland. Jets like this are the great wonders of
-the country."
-
-At first I would not allow that I had been so grossly deceived. What
-could be more ridiculous than to have taken an island for a marine
-monster? But kick as one may, one must yield to evidence, and I was
-finally convinced of my error. It was nothing, after all, but a natural
-phenomenon.
-
-As we approached nearer and nearer, the dimensions of the liquid sheaf
-of waters became truly grand and stupendous. The island had, at a
-distance, presented the appearance of an enormous whale, whose head rose
-high above the waters. The geyser, a word the Icelanders pronounce
-geysir, and which signifies fury, rose majestically from its summit.
-Dull detonations are heard every now and then, and the enormous jet,
-taken as it were with sudden fury, shakes its plume of vapor, and bounds
-into the first layer of the clouds. It is alone. Neither spurts of vapor
-nor hot springs surround it, and the whole volcanic power of that region
-is concentrated in one sublime column. The rays of electric light mix
-with this dazzling sheaf, every drop as it falls assuming the prismatic
-colors of the rainbow.
-
-"Let us go on shore," said the Professor, after some minutes of silence.
-
-It is necessary, however, to take great precaution, in order to avoid
-the weight of falling waters, which would cause the raft to founder in
-an instant. Hans, however, steers admirably, and brings us to the other
-extremity of the island.
-
-I was the first to leap on the rock. My uncle followed, while the
-eider-duck hunter remained still, like a man above any childish sources
-of astonishment. We were now walking on granite mixed with siliceous
-sandstone; the soil shivered under our feet like the sides of boilers in
-which over-heated steam is forcibly confined. It is burning. We soon
-came in sight of the little central basin from which rose the geyser. I
-plunged a thermometer into the water which ran bubbling from the centre,
-and it marked a heat of a hundred and sixty-three degrees!
-
-This water, therefore, came from some place where the heat was intense.
-This was singularly in contradiction with the theories of Professor
-Hardwigg. I could not help telling him my opinion on the subject.
-
-"Well," said he sharply, "and what does this prove against my doctrine?"
-
-"Nothing," replied I dryly, seeing that I was running my head against a
-foregone conclusion.
-
-Nevertheless, I am compelled to confess that until now we have been most
-remarkably fortunate, and that this voyage is being accomplished in most
-favorable conditions of temperature; but it appears evident, in fact,
-certain, that we shall sooner or later arrive at one of those regions
-where the central heat will reach its utmost limits, and will go far
-beyond all the possible gradations of thermometers.
-
-Visions of the Hades of the ancients, believed to be in the centre of
-the earth, floated through my imagination.
-
-We shall, however, see what we shall see. That is the Professor's
-favorite phrase now. Having christened the volcanic island by the name
-of his nephew, the leader of the expedition turned away and gave the
-signal for embarkation.
-
-I stood still, however, for some minutes, gazing upon the magnificent
-geyser. I soon was able to perceive that the upward tendency of the
-water was irregular; now it diminished in intensity, and then, suddenly,
-it regained new vigor, which I attributed to the variation of the
-pressure of the accumulated vapors in its reservoir.
-
-At last we took our departure, going carefully round the projecting, and
-rather dangerous, rocks of the southern side. Hans had taken advantage
-of this brief halt to repair the raft.
-
-Before we took our final departure from the island, however, I made some
-observations to calculate the distance we had gone over, and I put them
-down in my journal. Since we left Port Gretchen, we had traveled two
-hundred and seventy leagues--more than eight hundred miles--on this
-great inland sea; we were, therefore, six hundred and twenty leagues
-from Iceland, and exactly under England.
-
-## CHAPTER 32 THE BATTLE OF THE ELEMENTS
-
-Friday, August 21st. This morning the magnificent geyser had wholly
-disappeared. The wind had freshened up, and we were fast leaving the
-neighborhood of Henry's Island. Even the roaring sound of the mighty
-column was lost to the ear.
-
-The weather, if, under the circumstances, we may use such an expression,
-is about to change very suddenly. The atmosphere is being gradually
-loaded with vapors, which carry with them the electricity formed by the
-constant evaporation of the saline waters; the clouds are slowly but
-sensibly falling towards the sea, and are assuming a dark-olive texture;
-the electric rays can scarcely pierce through the opaque curtain which
-has fallen like a drop scene before this wondrous theater, on the stage
-of which another and terrible drama is soon to be enacted. This time it
-is no fight of animals; it is the fearful battle of the elements.
-
-I feel that I am very peculiarly influenced, as all creatures are on
-land when a deluge is about to take place.
-
-The cumuli, a perfectly oval kind of cloud, piled upon the south,
-presented a most awful and sinister appearance, with the pitiless aspect
-often seen before a storm. The air is extremely heavy; the sea is
-comparatively calm.
-
-In the distance, the clouds have assumed the appearance of enormous
-balls of cotton, or rather pods, piled one above the other in
-picturesque confusion. By degrees, they appear to swell out, break, and
-gain in number what they lose in grandeur; their heaviness is so great
-that they are unable to lift themselves from the horizon; but under the
-influence of the upper currents of air, they are gradually broken up,
-become much darker, and then present the appearance of one single layer
-of a formidable character; now and then a lighter cloud, still lit up
-from above, rebounds upon this grey carpet, and is lost in the opaque
-mass.
-
-There can be no doubt that the entire atmosphere is saturated with
-electric fluid; I am myself wholly impregnated; my hairs literally stand
-on end as if under the influence of a galvanic battery. If one of my
-companions ventured to touch me, I think he would receive rather a
-violent and unpleasant shock.
-
-About ten o'clock in the morning, the symptoms of the storm became more
-thorough and decisive; the wind appeared to soften down as if to take
-breath for a renewed attack; the vast funereal pall above us looked like
-a huge bag--like the cave of AEolus, in which the storm was collecting
-its forces for the attack.
-
-I tried all I could not to believe in the menacing signs of the sky, and
-yet I could not avoid saying, as it were involuntarily:
-
-"I believe we are going to have bad weather."
-
-The Professor made me no answer. He was in a horrible, in a detestable
-humor--to see the ocean stretching interminably before his eyes. On
-hearing my words he simply shrugged his shoulders.
-
-"We shall have a tremendous storm," I said again, pointing to the
-horizon. "These clouds are falling lower and lower upon the sea, as if
-to crush it."
-
-A great silence prevailed. The wind wholly ceased. Nature assumed a dead
-calm, and ceased to breathe. Upon the mast, where I noticed a sort of
-slight ignis fatuus, the sail hangs in loose heavy folds. The raft is
-motionless in the midst of a dark heavy sea--without undulation, without
-motion. It is as still as glass. But as we are making no progress, what
-is the use of keeping up the sail, which may be the cause of our
-perdition if the tempest should suddenly strike us without warning.
-
-"Let us lower the sail," I said, "it is only an act of common prudence."
-
-"No--no," cried my uncle, in an exasperated tone, "a hundred times, no.
-Let the wind strike us and do its worst, let the storm sweep us away
-where it will--only let me see the glimmer of some coast--of some rocky
-cliffs, even if they dash our raft into a thousand pieces. No! keep up
-the sail--no matter what happens."
-
-These words were scarcely uttered when the southern horizon underwent a
-sudden and violent change. The long accumulated vapors were resolved
-into water, and the air required to fill up the void produced became a
-wild and raging tempest.
-
-It came from the most distant corners of the mighty cavern. It raged
-from every point of the compass. It roared; it yelled; it shrieked with
-glee as of demons let loose. The darkness increased and became indeed
-darkness visible.
-
-The raft rose and fell with the storm, and bounded over the waves. My
-uncle was cast headlong upon the deck. I with great difficulty dragged
-myself towards him. He was holding on with might and main to the end of
-a cable, and appeared to gaze with pleasure and delight at the spectacle
-of the unchained elements.
-
-Hans never moved a muscle. His long hair driven hither and thither by
-the tempest and scattered wildly over his motionless face, gave him a
-most extraordinary appearance--for every single hair was illuminated by
-little sparkling sprigs.
-
-His countenance presents the extraordinary appearance of an antediluvian
-man, a true contemporary of the Megatherium.
-
-Still the mast holds good against the storm. The sail spreads out and
-fills like a soap bubble about to burst. The raft rushes on at a pace
-impossible to estimate, but still less swiftly than the body of water
-displaced beneath it, the rapidity of which may be seen by the lines
-which fly right and left in the wake.
-
-"The sail, the sail!" I cried, making a trumpet of my hands, and then
-endeavoring to lower it.
-
-"Let it alone!" said my uncle, more exasperated than ever.
-
-"<i>Nej</i>," said Hans, gently shaking his head.
-
-Nevertheless, the rain formed a roaring cataract before this horizon of
-which we were in search, and to which we were rushing like madmen.
-
-But before this wilderness of waters reached us, the mighty veil of
-cloud was torn in twain; the sea began to foam wildly; and the
-electricity, produced by some vast and extraordinary chemical action in
-the upper layer of cloud, is brought into play. To the fearful claps of
-thunder are added dazzling flashes of lightning, such as I had never
-seen. The flashes crossed one another, hurled from every side; while the
-thunder came pealing like an echo. The mass of vapor becomes
-incandescent; the hailstones which strike the metal of our boots and our
-weapons are actually luminous; the waves as they rise appear to be
-fire-eating monsters, beneath which seethes an intense fire, their
-crests surmounted by combs of flame.
-
-My eyes are dazzled, blinded by the intensity of light, my ears are
-deafened by the awful roar of the elements. I am compelled to hold onto
-the mast, which bends like a reed beneath the violence of the storm, to
-which none ever before seen by mariners bore any resemblance.
-
-*       *       *       *       *
-
-Here my traveling notes become very incomplete, loose and vague. I have
-only been able to make out one or two fugitive observations, jotted down
-in a mere mechanical way. But even their brevity, even their obscurity,
-show the emotions which overcame me.
-
-*       *       *       *       *
-
-Sunday, August 23rd. Where have we got to? In what region are we
-wandering? We are still carried forward with inconceivable rapidity.
-
-The night has been fearful, something not to be described. The storm
-shows no signs of cessation. We exist in the midst of an uproar which
-has no name. The detonations as of artillery are incessant. Our ears
-literally bleed. We are unable to exchange a word, or hear each other
-speak.
-
-The lightning never ceases to flash for a single instant. I can see the
-zigzags after a rapid dart strike the arched roof of this mightiest of
-mighty vaults. If it were to give way and fall upon us! Other lightnings
-plunge their forked streaks in every direction, and take the form of
-globes of fire, which explode like bombshells over a beleaguered city.
-The general crash and roar do not apparently increase; it has already
-gone far beyond what human ear can appreciate. If all the powder
-magazines in the world were to explode together, it would be impossible
-for us to hear worse noise.
-
-There is a constant emission of light from the storm clouds; the
-electric matter is incessantly released; evidently the gaseous
-principles of the air are out of order; innumerable columns of water
-rush up like waterspouts, and fall back upon the surface of the ocean in
-foam.
-
-Whither are we going? My uncle still lies at full length upon the raft,
-without speaking--without taking any note of time.
-
-The heat increases. I look at the thermometer, to my surprise it
-indicates--<i>The exact figure is here rubbed out in my manuscript.</i>
-
-Monday, August 24th. This terrible storm will never end. Why should not
-this state of the atmosphere, so dense and murky, once modified, again
-remain definitive?
-
-We are utterly broken and harassed by fatigue. Hans remains just as
-usual. The raft runs to the southeast invariably. We have now already
-run two hundred leagues from the newly discovered island.
-
-About twelve o'clock the storm became worse than ever. We are obliged
-now to fasten every bit of cargo tightly on the deck of the raft, or
-everything would be swept away. We make ourselves fast, too, each man
-lashing the other. The waves drive over us, so that several times we are
-actually under water.
-
-We had been under the painful necessity of abstaining from speech for
-three days and three nights. We opened our mouths, we moved our lips,
-but no sound came. Even when we placed our mouths to each other's ears
-it was the same.
-
-The wind carried the voice away.
-
-My uncle once contrived to get his head close to mine after several
-almost vain endeavors. He appeared to my nearly exhausted senses to
-articulate some word. I had a notion, more from intuition than anything
-else, that he said to me, "We are lost."
-
-I took out my notebook, from which under the most desperate
-circumstances I never parted, and wrote a few words as legibly as I
-could:
-
-"Take in sail."
-
-With a deep sigh he nodded his head and acquiesced.
-
-His head had scarcely time to fall back in the position from which he
-had momentarily raised it than a disk or ball of fire appeared on the
-very edge of the raft--our devoted, our doomed craft. The mast and sail
-are carried away bodily, and I see them swept away to a prodigious
-height like a kite.
-
-We were frozen, actually shivered with terror. The ball of fire, half
-white, half azure-colored, about the size of a ten-inch bombshell, moved
-along, turning with prodigious rapidity to leeward of the storm. It ran
-about here, there, and everywhere, it clambered up one of the bulwarks
-of the raft, it leaped upon the sack of provisions, and then finally
-descended lightly, fell like a football and landed on our powder barrel.
-
-Horrible situation. An explosion of course was now inevitable.
-
-By heaven's mercy, it was not so.
-
-The dazzling disk moved on one side, it approached Hans, who looked at
-it with singular fixity; then it approached my uncle, who cast himself
-on his knees to avoid it; it came towards me, as I stood pale and
-shuddering in the dazzling light and heat; it pirouetted round my feet,
-which I endeavored to withdraw.
-
-An odor of nitrous gas filled the whole air; it penetrated to the
-throat, to the lungs. I felt ready to choke.
-
-Why is it that I cannot withdraw my feet? Are they riveted to the
-flooring of the raft?
-
-No.
-
-The fall of the electric globe has turned all the iron on board into
-loadstones--the instruments, the tools, the arms are clanging together
-with awful and horrible noise; the nails of my heavy boots adhere
-closely to the plate of iron incrustated in the wood. I cannot withdraw
-my foot.
-
-It is the old story again of the mountain of adamant.
-
-At last, by a violent and almost superhuman effort, I tear it away just
-as the ball which is still executing its gyratory motions is about to
-run round it and drag me with it--if--
-
-Oh, what intense stupendous light! The globe of fire bursts--we are
-enveloped in cascades of living fire, which flood the space around with
-luminous matter.
-
-Then all went out and darkness once more fell upon the deep! I had just
-time to see my uncle once more cast apparently senseless on the flooring
-of the raft, Hans at the helm, "spitting fire" under the influence of
-the electricity which seemed to have gone through him.
-
-Whither are we going, I ask? and echo answers, Whither?
-
-.............
-
-Tuesday, August 25th. I have just come out of a long fainting fit. The
-awful and hideous storm still continues; the lightning has increased in
-vividness, and pours out its fiery wrath like a brood of serpents let
-loose in the atmosphere.
-
-Are we still upon the sea? Yes, and being carried along with incredible
-velocity.
-
-We have passed under England, under the Channel, under France, probably
-under the whole extent of Europe.
-
-*       *       *       *       *
-
-Another awful clamor in the distance. This time it is certain that the
-sea is breaking upon the rocks at no great distance. Then--
-
-..............
-
-..............
-
-## CHAPTER 33 OUR ROUTE REVERSED
-
-Here ends what I call "My Journal" of our voyage on board the raft,
-which journal was happily saved from the wreck. I proceed with my
-narrative as I did before I commenced my daily notes.
-
-What happened when the terrible shock took place, when the raft was cast
-upon the rocky shore, it would be impossible for me now to say. I felt
-myself precipitated violently into the boiling waves, and if I escaped
-from a certain and cruel death, it was wholly owing to the determination
-of the faithful Hans, who, clutching me by the arm, saved me from the
-yawning abyss.
-
-The courageous Icelander then carried me in his powerful arms, far out
-of the reach of the waves, and laid me down upon a burning expanse of
-sand, where I found myself some time afterwards in the company of my
-uncle, the Professor.
-
-Then he quietly returned towards the fatal rocks, against which the
-furious waves were beating, in order to save any stray waifs from the
-wreck. This man was always practical and thoughtful. I could not utter a
-word; I was quite overcome with emotion; my whole body was broken and
-bruised with fatigue; it took hours before I was anything like myself.
-
-Meanwhile, there fell a fearful deluge of rain, drenching us to the
-skin. Its very violence, however, proclaimed the approaching end of the
-storm. Some overhanging rocks afforded us a slight protection from the
-torrents.
-
-Under this shelter, Hans prepared some food, which, however, I was
-unable to touch; and, exhausted by the three weary days and nights of
-watching, we fell into a deep and painful sleep. My dreams were fearful,
-but at last exhausted nature asserted her supremacy, and I slumbered.
-
-Next day when I awoke the change was magical. The weather was
-magnificent. Air and sea, as if by mutual consent, had regained their
-serenity. Every trace of the storm, even the faintest, had disappeared.
-I was saluted on my awakening by the first joyous tones I had heard from
-the Professor for many a day. His gaiety, indeed, was something
-terrible.
-
-"Well, my lad," he cried, rubbing his hands together, "have you slept
-soundly?"
-
-Might it not have been supposed that we were in the old house on the
-Konigstrasse; that I had just come down quietly to my breakfast; and
-that my marriage with Gretchen was to take place that very day? My
-uncle's coolness was exasperating.
-
-Alas, considering how the tempest had driven us in an easterly
-direction, we had passed under the whole of Germany, under the city of
-Hamburg where I had been so happy, under the very street which contained
-all I loved and cared for in the world.
-
-It was a positive fact that I was only separated from her by a distance
-of forty leagues. But these forty leagues were of hard, impenetrable
-granite!
-
-All these dreary and miserable reflections passed through my mind,
-before I attempted to answer my uncle's question.
-
-"Why, what is the matter?" he cried. "Cannot you say whether you have
-slept well or not?"
-
-"I have slept very well," was my reply, "but every bone in my body
-aches. I suppose that will lead to nothing."
-
-"Nothing at all, my boy. It is only the result of the fatigue of the
-last few days--that is all."
-
-"You appear--if I may be allowed to say so--to be very jolly this
-morning," I said.
-
-"Delighted, my dear boy, delighted. Was never happier in my life. We
-have at last reached the wished-for port."
-
-"The end of our expedition?" cried I, in a tone of considerable
-surprise.
-
-"No; but to the confines of that sea which I began to fear would never
-end, but go round the whole world. We will now tranquilly resume our
-journey by land, and once again endeavor to dive into the centre of the
-earth."
-
-"My dear uncle," I began, in a hesitating kind of way, "allow me to ask
-you one question."
-
-"Certainly, Harry; a dozen if you think proper."
-
-"One will suffice. How about getting back?" I asked.
-
-"How about getting back? What a question to ask. We have not as yet
-reached the end of our journey."
-
-"I know that. All I want to know is how you propose we shall manage the
-return voyage?"
-
-"In the most simple manner in the world," said the imperturbable
-Professor. "Once we reach the exact centre of this sphere, either we
-shall find a new road by which to ascend to the surface, or we shall
-simply turn round and go back by the way we came. I have every reason to
-believe that while we are traveling forward, it will not close behind
-us."
-
-"Then one of the first matters to see to will be to repair the raft,"
-was my rather melancholy response.
-
-"Of course. We must attend to that above all things," continued the
-Professor.
-
-"Then comes the all-important question of provisions," I urged. "Have we
-anything like enough left to enable us to accomplish such great, such
-amazing, designs as you contemplate carrying out?"
-
-"I have seen into the matter, and my answer is in the affirmative. Hans
-is a very clever fellow, and I have reason to believe that he has saved
-the greater part of the cargo. But the best way to satisfy your scruples
-is to come and judge for yourself."
-
-Saying which, he led the way out of the kind of open grotto in which we
-had taken shelter. I had almost begun to hope that which I should rather
-have feared, and this was the impossibility of such a shipwreck leaving
-even the slightest signs of what it had carried as freight. I was,
-however, thoroughly mistaken.
-
-As soon as I reached the shores of this inland sea, I found Hans
-standing gravely in the midst of a large number of things laid out in
-complete order. My uncle wrung his hands with deep and silent gratitude.
-His heart was too full for speech.
-
-This man, whose superhuman devotion to his employers I not only never
-saw surpassed, nor even equaled, had been hard at work all the time we
-slept, and at the risk of his life had succeeded in saving the most
-precious articles of our cargo.
-
-Of course, under the circumstances, we necessarily experienced several
-severe losses. Our weapons had wholly vanished. But experience had
-taught us to do without them. The provision of powder had, however,
-remained intact, after having narrowly escaped blowing us all to atoms
-in the storm.
-
-"Well," said the Professor, who was now ready to make the best of
-everything, "as we have no guns, all we have to do is to give up all
-idea of hunting."
-
-"Yes, my dear sir, we can do without them, but what about all our
-instruments?"
-
-"Here is the manometer, the most useful of all, and which I gladly
-accept in lieu of the rest. With it alone I can calculate the depth as
-we proceed; by its means alone I shall be able to decide when we have
-reached the centre of the earth. Ha, ha! but for this little instrument
-we might make a mistake, and run the risk of coming out at the
-antipodes!"
-
-All this was said amid bursts of unnatural laughter.
-
-"But the compass," I cried, "without that what can we do?"
-
-"Here it is, safe and sound!" he cried, with real joy, "ah, ah, and here
-we have the chronometer and the thermometers. Hans the hunter is indeed
-an invaluable man!"
-
-It was impossible to deny this fact. As far as the nautical and other
-instruments were concerned, nothing was wanting. Then on further
-examination, I found ladders, cords, pickaxes, crowbars, and shovels,
-all scattered about on the shore.
-
-There was, however, finally the most important question of all, and that
-was, provisions.
-
-"But what are we to do for food?" I asked.
-
-"Let us see to the commissariat department", replied my uncle gravely.
-
-The boxes which contained our supply of food for the voyage were placed
-in a row along the strand, and were in a capital state of preservation;
-the sea had in every case respected their contents, and to sum up in one
-sentence, taking into consideration, biscuits, salt meat, Schiedam and
-dried fish, we could still calculate on having about four months'
-supply, if used with prudence and caution.
-
-"Four months," cried the sanguine Professor in high glee. "Then we shall
-have plenty of time both to go and to come, and with what remains I
-undertake to give a grand dinner to my colleagues of the Johanneum."
-
-I sighed. I should by this time have become used to the temperament of
-my uncle, and yet this man astonished me more and more every day. He was
-the greatest human enigma I ever had known.
-
-"Now," he, "before we do anything else, we must lay in a stock of fresh
-water. The rain has fallen in abundance, and filled the hollows of the
-granite. There is a rich supply of water, and we have no fear of
-suffering from thirst, which in our circumstances is of the last
-importance. As for the raft, I shall recommend Hans to repair it to the
-best of his abilities; though I have every reason to believe we shall
-not require it again."
-
-"How is that?" I cried, more amazed than ever at my uncle's style of
-reasoning.
-
-"I have an idea, my dear boy; it is none other than this simple fact; we
-shall not come out by the same opening as that by which we entered."
-
-I began to look at my uncle with vague suspicion. An idea had more than
-once taken possession of me; and this was, that he was going mad. And
-yet, little did I think how true and prophetic his words were doomed to
-be.
-
-"And now," he said, "having seen to all these matters of detail, to
-breakfast."
-
-I followed him to a sort of projecting cape, after he had given his last
-instructions to our guide. In this original position, with dried meat,
-biscuit, and a delicious cup of tea, we made a satisfactory meal--I may
-say one of the most welcome and pleasant I ever remember. Exhaustion,
-the keen atmosphere, the state of calm after so much agitation, all
-contributed to give me an excellent appetite. Indeed, it contributed
-very much to producing a pleasant and cheerful state of mind.
-
-While breakfast was in hand, and between the sips of warm tea, I asked
-my uncle if he had any idea of how we now stood in relation to the world
-above.
-
-"For my part," I added, "I think it will be rather difficult to
-determine."
-
-"Well, if we were compelled to fix the exact spot," said my uncle, "it
-might be difficult, since during the three days of that awful tempest I
-could keep no account either of the quickness of our pace, or of the
-direction in which the raft was going. Still, we will endeavor to
-approximate to the truth. We shall not, I believe, be so very far out."
-
-"Well, if I recollect rightly," I replied, "our last observation was
-made at the geyser island."
-
-"Harry's Island, my boy! Harry's Island. Do not decline the honor of
-having named it; given your name to an island discovered by us, the
-first human beings who trod it since the creation of the world!"
-
-"Let it be so, then. At Harry's Island we had already gone over two
-hundred and seventy leagues of sea, and we were, I believe, about six
-hundred leagues, more or less, from Iceland."
-
-"Good. I am glad to see that you remember so well. Let us start from
-that point, and let us count four days of storm, during which our rate
-of traveling must have been very great. I should say that our velocity
-must have been about eighty leagues to the twenty-four hours."
-
-I agreed that I thought this a fair calculation. There were then three
-hundred leagues to be added to the grand total.
-
-"Yes, and the Central Sea must extend at least six hundred leagues from
-side to side. Do you know, my boy, Harry, that we have discovered an
-inland lake larger than the Mediterranean?"
-
-"Certainly, and we only know of its extent in one way. It may be
-hundreds of miles in length."
-
-"Very likely."
-
-"Then," said I, after calculating for some for some minutes, "if your
-previsions are right, we are at this moment exactly under the
-Mediterranean itself."
-
-"Do you think so?"
-
-"Yes, I am almost certain of it. Are we not nine hundred leagues distant
-from Reykjavik?"
-
-"That is perfectly true, and a famous bit of road we have traveled, my
-boy. But why we should be under the Mediterranean more than under Turkey
-or the Atlantic Ocean can only be known when we are sure of not having
-deviated from our course; and of this we know nothing."
-
-"I do not think we were driven very far from our course; the wind
-appears to me to have been always about the same. My opinion is that
-this shore must be situated to the southeast of Port Gretchen."
-
-"Good--I hope so. It will, however, be easy to decide the matter by
-taking the bearings from our departure by means of the compass. Come
-along, and we will consult that invaluable invention."
-
-The Professor now walked eagerly in the direction of the rock where the
-indefatigable Hans had placed the instruments in safety. My uncle was
-gay and lighthearted; he rubbed his hands, and assumed all sorts of
-attitudes. He was to all appearance once more a young man. Since I had
-known him, never had he been so amiable and pleasant. I followed him,
-rather curious to know whether I had made any mistake in my estimation
-of our position.
-
-As soon as we had reached the rock, my uncle took the compass, placed it
-horizontally before him, and looked keenly at the needle.
-
-As he had at first shaken it to give it vivacity, it oscillated
-considerably, and then slowly assumed its right position under the
-influence of the magnetic power.
-
-The Professor bent his eyes curiously over the wondrous instrument. A
-violent start immediately showed the extent of his emotion.
-
-He closed his eyes, rubbed them, and took another and a keener survey.
-
-Then he turned slowly round to me, stupefaction depicted on his
-countenance.
-
-"What is the matter?" said I, beginning to be alarmed.
-
-He could not speak. He was too overwhelmed for words. He simply pointed
-to the instrument.
-
-I examined it eagerly according to his mute directions, and a loud cry
-of surprise escaped my lips. The needle of the compass pointed due
-north--in the direction we expected was the south!
-
-It pointed to the shore instead of to the high seas.
-
-I shook the compass; I examined it with a curious and anxious eye. It
-was in a state of perfection. No blemish in any way explained the
-phenomenon. Whatever position we forced the needle into, it returned
-invariably to the same unexpected point.
-
-It was useless attempting to conceal from ourselves the fatal truth.
-
-There could be no doubt about it, unwelcome as was the fact, that during
-the tempest, there had been a sudden slant of wind, of which we had been
-unable to take any account, and thus the raft had carried us back to the
-shores we had left, apparently forever, so many days before!
-
-## CHAPTER 34 A VOYAGE OF DISCOVERY
-
-It would be altogether impossible for me to give any idea of the utter
-astonishment which overcame the Professor on making this extraordinary
-discovery. Amazement, incredulity, and rage were blended in such a way
-as to alarm me.
-
-During the whole course of my Life I had never seen a man at first so
-chapfallen; and then so furiously indignant.
-
-The terrible fatigues of our sea voyage, the fearful dangers we had
-passed through, had all, all, gone for nothing. We had to begin them all
-over again.
-
-Instead of progressing, as we fondly expected, during a voyage of so
-many days, we had retreated. Every hour of our expedition on the raft
-had been so much lost time!
-
-Presently, however, the indomitable energy of my uncle overcame every
-other consideration.
-
-"So," he said, between his set teeth, "fatality will play me these
-terrible tricks. The elements themselves conspire to overwhelm me with
-mortification. Air, fire, and water combine their united efforts to
-oppose my passage. Well, they shall see what the earnest will of a
-determined man can do. I will not yield, I will not retreat even one
-inch; and we shall see who shall triumph in this great contest--man or
-nature."
-
-Standing upright on a rock, irritated and menacing, Professor Hardwigg,
-like the ferocious Ajax, seemed to defy the fates. I, however, took upon
-myself to interfere, and to impose some sort of check upon such
-insensate enthusiasm.
-
-"Listen to me, Uncle," I said, in a firm but temperate tone of voice,
-"there must be some limit to ambition here below. It is utterly useless
-to struggle against the impossible. Pray listen to reason. We are
-utterly unprepared for a sea voyage; it is simply madness to think of
-performing a journey of five hundred leagues upon a wretched pile of
-beams, with a counterpane for a sail, a paltry stick for a mast, and a
-tempest to contend with. As we are totally incapable of steering our
-frail craft, we shall become the mere plaything of the storm, and it is
-acting the part of madmen if we, a second time, run any risk upon this
-dangerous and treacherous Central Sea."
-
-These are only a few of the reasons and arguments I put
-together--reasons and arguments which to me appeared unanswerable. I was
-allowed to go on without interruption for about ten minutes. The
-explanation to this I soon discovered. The Professor was not even
-listening, and did not hear a word of all my eloquence.
-
-"To the raft!" he cried in a hoarse voice, when I paused for a reply.
-
-Such was the result of my strenuous effort to resist his iron will. I
-tried again; I begged and implored him; I got into a passion; but I had
-to deal with a will more determined than my own. I seemed to feel like
-the waves which fought and battled against the huge mass of granite at
-our feet, which had smiled grimly for so many ages at their puny
-efforts.
-
-Hans, meanwhile, without taking part in our discussion, had been
-repairing the raft. One would have supposed that he instinctively
-guessed at the further projects of my uncle.
-
-By means of some fragments of cordage, he had again made the raft
-seaworthy.
-
-While I had been speaking, he had hoisted a new mast and sail, the
-latter already fluttering and waving in the breeze.
-
-The worthy Professor spoke a few words to our imperturbable guide, who
-immediately began to put our baggage on board and to prepare for our
-departure. The atmosphere was now tolerably clear and pure, and the
-northeast wind blew steadily and serenely. It appeared likely to last
-for some time.
-
-What, then, could I do? Could I undertake to resist the iron will of two
-men? It was simply impossible if even I could have hoped for the support
-of Hans. This, however, was out of the question. It appeared to me that
-the Icelander had set aside all personal will and identity. He was a
-picture of abnegation.
-
-I could hope for nothing from one so infatuated with and devoted to his
-master. All I could do, therefore, was to swim with the stream.
-
-In a mood of stolid and sullen resignation, I was about to take my
-accustomed place on the raft when my uncle placed his hand upon my
-shoulder.
-
-"There is no hurry, my boy," he said, "we shall not start until
-tomorrow."
-
-I looked the picture of resignation to the dire will of fate.
-
-"Under the circumstances," he said, "I ought to neglect no precautions.
-As fate has cast me upon these shores, I shall not leave without having
-completely examined them."
-
-In order to understand this remark, I must explain that though we had
-been driven back to the northern shore, we had landed at a very
-different spot from that which had been our starting point.
-
-Port Gretchen must, we calculated, be very much to the westward.
-Nothing, therefore, was more natural and reasonable than that we should
-reconnoiter this new shore upon which we had so unexpectedly landed.
-
-"Let us go on a journey of discovery," I cried.
-
-And leaving Hans to his important operation, we started on our
-expedition. The distance between the foreshore at high water and the
-foot of the rocks was considerable. It would take about half an hour's
-walking to get from one to the other.
-
-As we trudged along, our feet crushed innumerable shells of every shape
-and size--once the dwelling place of animals of every period of
-creation.
-
-I particularly noticed some enormous shells--carapaces (turtle and
-tortoise species) the diameter of which exceeded fifteen feet.
-
-They had in past ages belonged to those gigantic Glyptodons of the
-Pliocene period, of which the modern turtle is but a minute specimen. In
-addition, the whole soil was covered by a vast quantity of stony relics,
-having the appearance of flints worn by the action of the waves, and
-lying in successive layers one above the other. I came to the conclusion
-that in past ages the sea must have covered the whole district. Upon the
-scattered rocks, now lying far beyond its reach, the mighty waves of
-ages had left evident marks of their passage.
-
-On reflection, this appeared to me partially to explain the existence of
-this remarkable ocean, forty leagues below the surface of the earth's
-crust. According to my new, and perhaps fanciful, theory, this liquid
-mass must be gradually lost in the deep bowels of the earth. I had also
-no doubt that this mysterious sea was fed by infiltration of the ocean
-above, through imperceptible fissures.
-
-Nevertheless, it was impossible not to admit that these fissures must
-now be nearly choked up, for if not, the cavern, or rather the immense
-and stupendous reservoir, would have been completely filled in a short
-space of time. Perhaps even this water, having to contend against the
-accumulated subterraneous fires of the interior of the earth, had become
-partially vaporized. Hence the explanation of those heavy clouds
-suspended over our heads, and the superabundant display of that
-electricity which occasioned such terrible storms in this deep and
-cavernous sea.
-
-This lucid explanation of the phenomena we had witnessed appeared to me
-quite satisfactory. However great and mighty the marvels of nature may
-seem to us, they are always to be explained by physical reasons.
-Everything is subordinate to some great law of nature.
-
-It now appeared clear that we were walking upon a kind of sedimentary
-soil, formed like all the soils of that period, so frequent on the
-surface of the globe, by the subsidence of the waters. The Professor,
-who was now in his element, carefully examined every rocky fissure. Let
-him only find an opening and it directly became important to him to
-examine its depth.
-
-For a whole mile we followed the windings of the Central Sea, when
-suddenly an important change took place in the aspect of the soil. It
-seemed to have been rudely cast up, convulsionized, as it were, by a
-violent upheaving of the lower strata. In many places, hollows here and
-hillocks there attested great dislocations at some other period of the
-terrestrial mass.
-
-We advanced with great difficulty over the broken masses of granite
-mixed with flint, quartz, and alluvial deposits, when a large field,
-more even than a field, a plain of bones, appeared suddenly before our
-eyes! It looked like an immense cemetery, where generation after
-generation had mingled their mortal dust.
-
-Lofty barrows of early remains rose at intervals. They undulated away to
-the limits of the distant horizon and were lost in a thick and brown
-fog.
-
-On that spot, some three square miles in extent, was accumulated the
-whole history of animal life--scarcely one creature upon the
-comparatively modern soil of the upper and inhabited world had not there
-existed.
-
-Nevertheless, we were drawn forward by an all-absorbing and impatient
-curiosity. Our feet crushed with a dry and crackling sound the remains
-of those prehistoric fossils, for which the museums of great cities
-quarrel, even when they obtain only rare and curious morsels. A thousand
-such naturalists as Cuvier would not have sufficed to recompose the
-skeletons of the organic beings which lay in this magnificent osseous
-collection.
-
-I was utterly confounded. My uncle stood for some minutes with his arms
-raised on high towards the thick granite vault which served us for a
-sky. His mouth was wide open; his eyes sparkled wildly behind his
-spectacles (which he had fortunately saved), his head bobbed up and down
-and from side to side, while his whole attitude and mien expressed
-unbounded astonishment.
-
-He stood in the presence of an endless, wondrous, and inexhaustibly rich
-collection of antediluvian monsters, piled up for his own private and
-peculiar satisfaction.
-
-Fancy an enthusiastic lover of books carried suddenly into the very
-midst of the famous library of Alexandria burned by the sacrilegious
-Omar, and which some miracle had restored to its pristine splendor! Such
-was something of the state of mind in which Uncle Hardwigg was now
-placed.
-
-For some time he stood thus, literally aghast at the magnitude of his
-discovery.
-
-But it was even a greater excitement when, darting wildly over this mass
-of organic dust, he caught up a naked skull and addressed me in a
-quivering voice:
-
-"Harry, my boy--Harry--this is a human head!"
-
-"A human head, Uncle!" I said, no less amazed and stupefied than
-himself.
-
-"Yes, nephew. Ah! Mr. Milne-Edwards--ah! Mr. De Quatrefages--why are you
-not here where I am--I, Professor Hardwigg!"
-
-## CHAPTER 35 DISCOVERY UPON DISCOVERY
-
-In order fully to understand the exclamation made by my uncle, and his
-allusions to these illustrious and learned men, it will be necessary to
-enter into certain explanations in regard to a circumstance of the
-highest importance to paleontology, or the science of fossil life, which
-had taken place a short time before our departure from the upper regions
-of the earth.
-
-On the 28th of March, 1863, some navigators under the direction of M.
-Boucher de Perthes, were at work in the great quarries of
-Moulin-Quignon, near Abbeville, in the department of the Somme, in
-France. While at work, they unexpectedly came upon a human jawbone
-buried fourteen feet below the surface of the soil. It was the first
-fossil of the kind that had ever been brought to the light of day. Near
-this unexpected human relic were found stone hatchets and carved flints,
-colored and clothed by time in one uniform brilliant tint of verdigris.
-
-The report of this extraordinary and unexpected discovery spread not
-only all over France, but over England and Germany. Many learned men
-belonging to various scientific bodies, and noteworthy among others,
-Messrs. Milne-Edwards and De Quatrefages, took the affair very much to
-heart, demonstrated the incontestable authenticity of the bone in
-question, and became--to use the phrase then recognized in England--the
-most ardent supporters of the "jawbone question."
-
-To the eminent geologists of the United Kingdom who looked upon the fact
-as certain--Messrs. Falconer, Buck, Carpenter, and others--were soon
-united the learned men of Germany, and among those in the first rank,
-the most eager, the most enthusiastic, was my worthy uncle, Professor
-Hardwigg.
-
-The authenticity of a human fossil of the Quaternary period seemed then
-to be incontestably demonstrated, and even to be admitted by the most
-skeptical.
-
-This system or theory, call it what you will, had, it is true, a bitter
-adversary in M. Elie de Beaumont. This learned man, who holds such a
-high place in the scientific world, holds that the soil of
-Moulin-Quignon does not belong to the diluvium but to a much less
-ancient stratum, and, in accordance with Cuvier in this respect, he
-would by no means admit that the human species was contemporary with the
-animals of the Quaternary epoch. My worthy uncle, Professor Hardwigg, in
-concert with the great majority of geologists, had held firm, had
-disputed, discussed, and finally, after considerable talking and
-writing, M. Elie de Beaumont had been pretty well left alone in his
-opinions.
-
-We were familiar with all the details of this discussion, but were far
-from being aware then that since our departure the matter had entered
-upon a new phase. Other similar jawbones, though belonging to
-individuals of varied types and very different natures, had been found
-in the movable grey sands of certain grottoes in France, Switzerland,
-and Belgium; together with arms, utensils, tools, bones of children, of
-men in the prime of life, and of old men. The existence of men in the
-Quaternary period became, therefore, more positive every day.
-
-But this was far from being all. New remains, dug up from the Pliocene
-or Tertiary deposits, had enabled the more far-seeing or audacious among
-learned men to assign even a far greater degree of antiquity to the
-human race. These remains, it is true, were not those of men; that is,
-were not the bones of men, but objects decidedly having served the human
-race: shinbones, thighbones of fossil animals, regularly scooped out,
-and in fact sculptured--bearing the unmistakable signs of human
-handiwork.
-
-By means of these wondrous and unexpected discoveries, man ascended
-endless centuries in the scale of time; he, in fact, preceded the
-mastodon; became the contemporary of the <i>Elephas meridionalis</i>--the
-southern elephant; acquired an antiquity of over a hundred thousand
-years, since that is the date given by the most eminent geologists to
-the Pliocene period of the earth. Such was then the state of
-paleontologic science, and what we moreover knew sufficed to explain our
-attitude before this great cemetery of the plains of the Hardwigg Ocean.
-
-It will now be easy to understand the Professor's mingled astonishment
-and joy when, on advancing about twenty yards, he found himself in the
-presence of, I may say face to face with, a specimen of the human race
-actually belonging to the Quaternary period!
-
-It was indeed a human skull, perfectly recognizable. Had a soil of very
-peculiar nature, like that of the cemetery of St. Michel at Bordeaux,
-preserved it during countless ages? This was the question I asked
-myself, but which I was wholly unable to answer. But this head with
-stretched and parchmenty skin, with the teeth whole, the hair abundant,
-was before our eyes as in life!
-
-I stood mute, almost paralyzed with wonder and awe before this dread
-apparition of another age. My uncle, who on almost every occasion was a
-great talker, remained for a time completely dumfounded. He was too full
-of emotion for speech to be possible. After a while, however, we raised
-up the body to which the skull belonged. We stood it on end. It seemed,
-to our excited imaginations, to look at us with its terrible hollow
-eyes.
-
-After some minutes of silence, the man was vanquished by the Professor.
-Human instincts succumbed to scientific pride and exultation. Professor
-Hardwigg, carried away by his enthusiasm, forgot all the circumstances
-of our journey, the extraordinary position in which we were placed, the
-immense cavern which stretched far away over our heads. There can be no
-doubt that he thought himself at the Institution addressing his
-attentive pupils, for he put on his most doctorial style, waved his
-hand, and began:
-
-"Gentlemen, I have the honor on this auspicious occasion to present to
-you a man of the Quaternary period of our globe. Many learned men have
-denied his very existence, while other able persons, perhaps of even
-higher authority, have affirmed their belief in the reality of his life.
-If the St. Thomases of paleontology were present, they would
-reverentially touch him with their fingers and believe in his existence,
-thus acknowledging their obstinate heresy. I know that science should be
-careful in relation to all discoveries of this nature. I am not without
-having heard of the many Barnums and other quacks who have made a trade
-of suchlike pretended discoveries. I have, of course, heard of the
-discovery of the kneebones of Ajax, of the pretended finding of the body
-of Orestes by the Spartiates, and of the body of Asterius, ten spans
-long, fifteen feet--of which we read in Pausanias.
-
-"I have read everything in relation to the skeleton of Trapani,
-discovered in the fourteenth century, and which many persons chose to
-regard as that of Polyphemus, and the history of the giant dug up during
-the sixteenth century in the environs of Palmyra. You are well aware as
-I am, gentlemen, of the existence of the celebrated analysis made near
-Lucerne, in 1577, of the great bones which the celebrated Doctor Felix
-Plater declared belonged to a giant about nineteen feet high. I have
-devoured all the treatises of Cassanion, and all those memoirs,
-pamphlets, speeches, and replies published in reference to the skeleton
-of Teutobochus, king of the Cimbri, the invader of Gaul, dug out of a
-gravel pit in Dauphine, in 1613. In the eighteenth century I should have
-denied, with Peter Campet, the existence of the preadamites of
-Scheuchzer. I have had in my hands the writing called Gigans--"
-
-Here my uncle was afflicted by the natural infirmity which prevented him
-from pronouncing difficult words in public. It was not exactly
-stuttering, but a strange sort of constitutional hesitation.
-
-"The writing named Gigans--" he repeated.
-
-He, however, could get no further.
-
-"Giganteo--"
-
-Impossible! The unfortunate word would not come out. There would have
-been great laughter at the Institution, had the mistake happened there.
-
-"Gigantosteology!" at last exclaimed Professor Hardwigg between two
-savage growls.
-
-Having got over our difficulty, and getting more and more excited--
-
-"Yes, gentlemen, I am well acquainted with all these matters, and know,
-also, that Cuvier and Blumenbach fully recognized in these bones the
-undeniable remains of mammoths of the Quaternary period. But after what
-we now see, to allow a doubt is to insult scientific inquiry. There is
-the body; you can see it; you can touch it. It is not a skeleton, it is
-a complete and uninjured body, preserved with an anthropological
-object."
-
-I did not attempt to controvert this singular and astounding assertion.
-
-"If I could but wash this corpse in a solution of sulphuric acid,"
-continued my uncle, "I would undertake to remove all the earthy
-particles, and these resplendent shells, which are incrusted all over
-this body. But I am without this precious dissolving medium.
-Nevertheless, such as it is, this body will tell its own history."
-
-Here the Professor held up the fossil body, and exhibited it with rare
-dexterity. No professional showman could have shown more activity.
-
-"As on examination you will see," my uncle continued, "it is only about
-six feet in length, which is a long way from the pretended giants of
-early days. As to the particular race to which it belonged, it is
-incontestably Caucasian. It is of the white race, that is, of our own.
-The skull of this fossil being is a perfect ovoid without any remarkable
-or prominent development of the cheekbones, and without any projection
-of the jaw. It presents no indication of the prognathism which modifies
-the facial angle.[4] Measure the angle for yourselves, and you will find
-that it is just ninety degrees. But I will advance still farther on the
-road of inquiry and deduction, and I dare venture to say that this human
-sample or specimen belongs to the Japhetic family, which spread over the
-world from India to the uttermost limits of western Europe. There is no
-occasion, gentlemen, to smile at my remarks."
-
-[4] The facial angle is formed by two planes--one more or less vertical
-which is in a straight line with the forehead and the incisors; the
-other, horizontal, which passes through the organs of hearing, and the
-lower nasal bone. Prognathism, in anthropological language, means that
-particular projection of the jaw which modifies the facial angle.
-
-Of course nobody smiled. But the excellent Professor was so accustomed
-to beaming countenances at his lectures, that he believed he saw all his
-audience laughing during the delivery of his learned dissertation.
-
-"Yes," he continued, with renewed animation, "this is a fossil man, a
-contemporary of the mastodons, with the bones of which this whole
-amphitheater is covered. But if I am called on to explain how he came to
-this place, how these various strata by which he is covered have fallen
-into this vast cavity, I can undertake to give you no explanation.
-Doubtless, if we carry ourselves back to the Quaternary epoch, we shall
-find that great and mighty convulsions took place in the crust of the
-earth; the continually cooling operation, through which the earth had to
-pass, produced fissures, landslips, and chasms, through which a large
-portion of the earth made its way. I come to no absolute conclusion, but
-there is the man, surrounded by the works of his hands, his hatchets and
-his carved flints, which belong to the stony period; and the only
-rational supposition is, that, like myself, he visited the centre of the
-earth as a traveling tourist, a pioneer of science. At all events, there
-can be no doubt of his great age, and of his being one of the oldest
-race of human beings."
-
-The Professor with these words ceased his oration, and I burst forth
-into loud and "unanimous" applause. Besides, after all, my uncle was
-right. Much more learned men than his nephew would have found it rather
-hard to refute his facts and arguments.
-
-Another circumstance soon presented itself. This fossilized body was not
-the only one in this vast plain of bones--the cemetery of an extinct
-world. Other bodies were found, as we trod the dusty plain, and my uncle
-was able to choose the most marvelous of these specimens in order to
-convince the most incredulous.
-
-In truth, it was a surprising spectacle, the successive remains of
-generations and generations of men and animals confounded together in
-one vast cemetery. But a great question now presented itself to our
-notice, and one we were actually afraid to contemplate in all its
-bearings.
-
-Had these once animated beings been buried so far beneath the soil by
-some tremendous convulsion of nature, after they had been earth to earth
-and ashes to ashes, or had they lived here below, in this subterranean
-world, under this factitious sky, borne, married, and given in marriage,
-and died at last, just like ordinary inhabitants of the earth?
-
-Up to the present moment, marine monsters, fish, and suchlike animals
-had alone been seen alive!
-
-The question which rendered us rather uneasy, was a pertinent one. Were
-any of these men of the abyss wandering about the deserted shores of
-this wondrous sea of the centre of the earth?
-
-This was a question which rendered me very uneasy and uncomfortable.
-How, should they really be in existence, would they receive us men from
-above?
-
-## CHAPTER 36 WHAT IS IT?
-
-For a long and weary hour we tramped over this great bed of bones. We
-advanced regardless of everything, drawn on by ardent curiosity. What
-other marvels did this great cavern contain--what other wondrous
-treasures for the scientific man? My eyes were quite prepared for any
-number of surprises, my imagination lived in expectation of something
-new and wonderful.
-
-The borders of the great Central Ocean had for some time disappeared
-behind the hills that were scattered over the ground occupied by the
-plain of bones. The imprudent and enthusiastic Professor, who did not
-care whether he lost himself or not, hurried me forward. We advanced
-silently, bathed in waves of electric fluid.
-
-By reason of a phenomenon which I cannot explain, and thanks to its
-extreme diffusion, now complete, the light illumined equally the sides
-of every hill and rock. Its seat appeared to be nowhere, in no
-determined force, and produced no shade whatever.
-
-The appearance presented was that of a tropical country at midday in
-summer--in the midst of the equatorial regions and under the vertical
-rays of the sun.
-
-All signs of vapor had disappeared. The rocks, the distant mountains,
-some confused masses of far-off forests, assumed a weird and mysterious
-aspect under this equal distribution of the luminous fluid!
-
-We resembled, to a certain extent, the mysterious personage in one of
-Hoffmann's fantastic tales--the man who lost his shadow.
-
-After we had walked about a mile farther, we came to the edge of a vast
-forest not, however, one of the vast mushroom forests we had discovered
-near Port Gretchen.
-
-It was the glorious and wild vegetation of the Tertiary period, in all
-its superb magnificence. Huge palms, of a species now unknown, superb
-palmacites--a genus of fossil palms from the coal formation--pines,
-yews, cypress, and conifers or cone-bearing trees, the whole bound
-together by an inextricable and complicated mass of creeping plants.
-
-A beautiful carpet of mosses and ferns grew beneath the trees. Pleasant
-brooks murmured beneath umbrageous boughs, little worthy of this name,
-for no shade did they give. Upon their borders grew small treelike
-shrubs, such as are seen in the hot countries on our own inhabited
-globe.
-
-The one thing wanting in these plants, these shrubs, these trees--was
-color! Forever deprived of the vivifying warmth of the sun, they were
-vapid and colorless. All shade was lost in one uniform tint, of a brown
-and faded character. The leaves were wholly devoid of verdure, and the
-flowers, so numerous during the Tertiary period which gave them birth,
-were without color and without perfume, something like paper discolored
-by long exposure to the atmosphere.
-
-My uncle ventured beneath the gigantic groves. I followed him, though
-not without a certain amount of apprehension. Since nature had shown
-herself capable of producing such stupendous vegetable supplies, why
-might we not meet with mammals just as large, and therefore dangerous?
-
-I particularly remarked, in the clearings left by trees that had fallen
-and been partially consumed by time, many leguminous (beanlike) shrubs,
-such as the maple and other eatable trees, dear to ruminating animals.
-Then there appeared confounded together and intermixed, the trees of
-such varied lands, specimens of the vegetation of every part of the
-globe; there was the oak near the palm tree, the Australian eucalyptus,
-an interesting class of the order Myrtaceae--leaning against the tall
-Norwegian pine, the poplar of the north, mixing its branches with those
-of the New Zealand kauris. It was enough to drive the most ingenious
-classifier of the upper regions out of his mind, and to upset all his
-received ideas about botany.
-
-Suddenly I stopped short and restrained my uncle.
-
-The extreme diffuseness of the light enabled me to see the smallest
-objects in the distant copses. I thought I saw--no, I really did see
-with my own eyes--immense, gigantic animals moving about under the
-mighty trees. Yes, they were truly gigantic animals, a whole herd of
-mastodons, not fossils, but living, and exactly like those discovered in
-1801, on the marshy banks of the great Ohio, in North America.
-
-Yes, I could see these enormous elephants, whose trunks were tearing
-down large boughs, and working in and out the trees like a legion of
-serpents. I could hear the sounds of the mighty tusks uprooting huge
-trees!
-
-The boughs crackled, and the whole masses of leaves and green branches
-went down the capacious throats of these terrible monsters!
-
-That wondrous dream, when I saw the antehistorical times revivified,
-when the Tertiary and Quaternary periods passed before me, was now
-realized!
-
-And there we were alone, far down in the bowels of the earth, at the
-mercy of its ferocious inhabitants!
-
-My uncle paused, full of wonder and astonishment.
-
-"Come!" he said at last, when his first surprise was over, "Come along,
-my boy, and let us see them nearer."
-
-"No," replied I, restraining his efforts to drag me forward, "we are
-wholly without arms. What should we do in the midst of that flock of
-gigantic quadrupeds? Come away, Uncle, I implore you. No human creature
-can with impunity brave the ferocious anger of these monsters."
-
-"No human creature," said my uncle, suddenly lowering his voice to a
-mysterious whisper, "you are mistaken, my dear Henry. Look! look yonder!
-It seems to me that I behold a human being--a being like ourselves--a
-man!"
-
-I looked, shrugging my shoulders, decided to push incredulity to its
-very last limits. But whatever might have been my wish, I was compelled
-to yield to the weight of ocular demonstration.
-
-Yes--not more than a quarter of a mile off, leaning against the trunk of
-an enormous tree, was a human being--a Proteus of these subterranean
-regions, a new son of Neptune keeping this innumerable herd of
-mastodons.
-
-Immanis pecoris custos, immanior ipse![5]
-
-[5] The keeper of gigantic cattle, himself still more gigantic!
-
-Yes--it was no longer a fossil whose corpse we had raised from the
-ground in the great cemetery, but a giant capable of guiding and driving
-these prodigious monsters. His height was above twelve feet. His head,
-as big as the head of a buffalo, was lost in a mane of matted hair. It
-was indeed a huge mane, like those which belonged to the elephants of
-the earlier ages of the world.
-
-In his hand was a branch of a tree, which served as a crook for this
-antediluvian shepherd.
-
-We remained profoundly still, speechless with surprise.
-
-But we might at any moment be seen by him. Nothing remained for us but
-instant flight.
-
-"Come, come!" I cried, dragging my uncle along; and, for the first time,
-he made no resistance to my wishes.
-
-A quarter of an hour later we were far away from that terrible monster!
-
-Now that I think of the matter calmly, and that I reflect upon it
-dispassionately; now that months, years, have passed since this strange
-and unnatural adventure befell us--what am I to think, what am I to
-believe?
-
-No, it is utterly impossible! Our ears must have deceived us, and our
-eyes have cheated us! we have not seen what we believed we had seen. No
-human being could by any possibility have existed in that subterranean
-world! No generation of men could inhabit the lower caverns of the globe
-without taking note of those who peopled the surface, without
-communication with them. It was folly, folly, folly! nothing else!
-
-I am rather inclined to admit the existence of some animal resembling in
-structure the human race--of some monkey of the first geological epochs,
-like that discovered by M. Lartet in the ossiferous deposit of Sansan.
-
-But this animal, or being, whichsoever it was, surpassed in height all
-things known to modern science. Never mind. However unlikely it may be,
-it might have been a monkey--but a man, a living man, and with him a
-whole generation of gigantic animals, buried in the entrails of the
-earth--it was too monstrous to be believed!
-
-## CHAPTER 37 THE MYSTERIOUS DAGGER
-
-During this time, we had left the bright and transparent forest far
-behind us. We were mute with astonishment, overcome by a kind of feeling
-which was next door to apathy. We kept running in spite of ourselves. It
-was a perfect Right, which resembled one of those horrible sensations we
-sometimes meet with in our dreams.
-
-Instinctively we made our way towards the Central Sea, and I cannot now
-tell what wild thoughts passed through my mind, nor of what follies I
-might have been guilty, but for a very serious preoccupation which
-brought me back to practical life.
-
-Though I was aware that we were treading on a soil quite new to us, I,
-however, every now and then noticed certain aggregations of rock, the
-shape of which forcibly reminded me of those near Port Gretchen.
-
-This confirmed, moreover, the indications of the compass and our
-extraordinary and unlooked-for, as well as involuntary, return to the
-north of this great Central Sea. It was so like our starting point, that
-I could scarcely doubt the reality of our position. Streams and cascades
-fell in hundreds over the numerous projections of the rocks.
-
-I actually thought I could see our faithful and monotonous Hans and the
-wonderful grotto in which I had come back to life after my tremendous
-fall.
-
-Then, as we advanced still farther, the position of the cliffs, the
-appearance of a stream, the unexpected profile of a rock, threw me again
-into a state of bewildering doubt.
-
-After some time, I explained my state of mental indecision to my uncle.
-He confessed to a similar feeling of hesitation. He was totally unable
-to make up his mind in the midst of this extraordinary but uniform
-panorama.
-
-"There can be no doubt," I insisted, "that we have not landed exactly at
-the place whence we first took our departure; but the tempest has
-brought us above our starting point. I think, therefore, that if we
-follow the coast we shall once more find Port Gretchen."
-
-"In that case," cried my uncle, "it is useless to continue our
-exploration. The very best thing we can do is to make our way back to
-the raft. Are you quite sure, Harry, that you are not mistaken?"
-
-"It is difficult," was my reply, "to come to any decision, for all these
-rocks are exactly alike. There is no marked difference between them. At
-the same time, the impression on my mind is that I recognize the
-promontory at the foot of which our worthy Hans constructed the raft. We
-are, I am nearly convinced, near the little port: if this be not it," I
-added, carefully examining a creek which appeared singularly familiar to
-my mind.
-
-"My dear Harry--if this were the case, we should find traces of our own
-footsteps, some signs of our passage; and I can really see nothing to
-indicate our having passed this way."
-
-"But I see something," I cried, in an impetuous tone of voice, as I
-rushed forward and eagerly picked up something which shone in the sand
-under my feet.
-
-"What is it?" cried the astonished and bewildered Professor.
-
-"This," was my reply.
-
-And I handed to my startled relative a rusty dagger, of singular shape.
-
-"What made you bring with you so useless a weapon?" he exclaimed. "It
-was needlessly hampering yourself."
-
-"I bring it? It is quite new to me. I never saw it before--are you sure
-it is not out of your collection?"
-
-"Not that I know of," said the Professor, puzzled. "I have no
-recollection of the circumstance. It was never my property."
-
-"This is very extraordinary," I said, musing over the novel and singular
-incident.
-
-"Not at all. There is a very simple explanation, Harry. The Icelanders
-are known to keep up the use of these antiquated weapons, and this must
-have belonged to Hans, who has let it fall without knowing it."
-
-I shook my head. That dagger had never been in the possession of the
-pacific and taciturn Hans. I knew him and his habits too well.
-
-"Then what can it be--unless it be the weapon of some antediluvian
-warrior," I continued, "of some living man, a contemporary of that
-mighty shepherd from whom we have just escaped? But no--mystery upon
-mystery--this is no weapon of the stony epoch, nor even of the bronze
-period. It is made of excellent steel--"
-
-Ere I could finish my sentence, my uncle stopped me short from entering
-upon a whole train of theories, and spoke in his most cold and decided
-tone of voice.
-
-"Calm yourself, my dear boy, and endeavor to use your reason. This
-weapon, upon which we have fallen so unexpectedly, is a true <i>dague</i>,
-one of those worn by gentlemen in their belts during the sixteenth
-century. Its use was to give the <i>coup de grace</i>, the final blow, to the
-foe who would not surrender. It is clearly of Spanish workmanship. It
-belongs neither to you, nor to me, nor the eider-down hunter, nor to any
-of the living beings who may still exist so marvelously in the interior
-of the earth."
-
-"What can you mean, Uncle?" I said, now lost in a host of surmises.
-
-"Look closely at it," he continued; "these jagged edges were never made
-by the resistance of human blood and bone. The blade is covered with a
-regular coating of iron mold and rust, which is not a day old, not a
-year old, not a century old, but much more--"
-
-The Professor began to get quite excited, according to custom, and was
-allowing himself to be carried away by his fertile imagination. I could
-have said something. He stopped me.
-
-"Harry," he cried, "we are now on the verge of a great discovery. This
-blade of a dagger you have so marvelously discovered, after being
-abandoned upon the sand for more than a hundred, two hundred, even three
-hundred years, has been indented by someone endeavoring to carve an
-inscription on these rocks."
-
-"But this poniard never got here of itself," I exclaimed, "it could not
-have twisted itself. Someone, therefore, must have preceded us upon the
-shores of this extraordinary sea."
-
-"Yes, a man."
-
-"But what man has been sufficiently desperate to do such a thing?"
-
-"A man who has somewhere written his name with this very dagger--a man
-who has endeavored once more to indicate the right road to the interior
-of the earth. Let us look around, my boy. You know not the importance of
-your singular and happy discovery."
-
-Prodigiously interested, we walked along the wall of rock, examining the
-smallest fissures, which might finally expand into the much wished--for
-gully or shaft.
-
-We at last reached a spot where the shore became extremely narrow. The
-sea almost bathed the foot of the rocks, which were here very lofty and
-steep. There was scarcely a path wider than two yards at any point. At
-last, under a huge over-hanging rock, we discovered the entrance of a
-dark and gloomy tunnel.
-
-There, on a square tablet of granite, which had been smoothed by rubbing
-it with another stone, we could see two mysterious, and much worn
-letters, the two initials of the bold and extraordinary traveler who had
-preceded us on our adventurous journey.
-
-"A. S.!" cried my uncle. "You see, I was right. Arne Saknussemm, always
-Arne Saknussemm!"
-
-## CHAPTER 38 NO OUTLET--BLASTING THE ROCK
-
-Ever since the commencement of our marvelous journey, I had experienced
-many surprises, had suffered from many illusions. I thought that I was
-case-hardened against all surprises and could neither see nor hear
-anything to amaze me again.
-
-I was like a many who, having been round the world, finds himself wholly
-blase and proof against the marvelous.
-
-When, however, I saw these two letters, which had been engraven three
-hundred years before, I stood fixed in an attitude of mute surprise.
-
-Not only was there the signature of the learned and enterprising
-alchemist written in the rock, but I held in my hand the very identical
-instrument with which he had laboriously engraved it.
-
-It was impossible, without showing an amount of incredulity scarcely
-becoming a sane man, to deny the existence of the traveler, and the
-reality of that voyage which I believed all along to have been a
-myth--the mystification of some fertile brain.
-
-While these reflections were passing through my mind, my uncle, the
-Professor, gave way to an access of feverish and poetical excitement.
-
-"Wonderful and glorious genius, great Saknussemm," he cried, "you have
-left no stone unturned, no resource omitted, to show to other mortals
-the way into the interior of our mighty globe, and your fellow creatures
-can find the trail left by your illustrious footsteps, three hundred
-years ago, at the bottom of these obscure subterranean abodes. You have
-been careful to secure for others the contemplation of these wonders and
-marvels of creation. Your name engraved at every important stage of your
-glorious journey leads the hopeful traveler direct to the great and
-mighty discovery to which you devoted such energy and courage. The
-audacious traveler, who shall follow your footsteps to the last, will
-doubtless find your initials engraved with your own hand upon the centre
-of the earth. I will be that audacious traveler--I, too, will sign my
-name upon the very same spot, upon the central granite stone of this
-wondrous work of the Creator. But in justice to your devotion, to your
-courage, and to your being the first to indicate the road, let this
-cape, seen by you upon the shores of this sea discovered by you, be
-called, of all time, Cape Saknussemm."
-
-This is what I heard, and I began to be roused to the pitch of
-enthusiasm indicated by those words. A fierce excitement roused me. I
-forgot everything. The dangers of the voyage and the perils of the
-return journey were now as nothing!
-
-What another man had done in ages past could, I felt, be done again; I
-was determined to do it myself, and now nothing that man had
-accomplished appeared to me impossible.
-
-"Forward--forward," I cried in a burst of genuine and hearty enthusiasm.
-
-I had already started in the direction of the somber and gloomy gallery
-when the Professor stopped me; he, the man so rash and hasty, he, the
-man so easily roused to the highest pitch of enthusiasm, checked me, and
-asked me to be patient and show more calm.
-
-"Let us return to our good friend, Hans," he said; "we will then bring
-the raft down to this place."
-
-I must say that though I at once yielded to my uncle's request, it was
-not without dissatisfaction, and I hastened along the rocks of that
-wonderful coast.
-
-"Do you know, my dear uncle," I said, as we walked along, "that we have
-been singularly helped by a concurrence of circumstances, right up to
-this very moment."
-
-"So you begin to see it, do you, Harry?" said the Professor with a
-smile.
-
-"Doubtless," I responded, "and strangely enough, even the tempest has
-been the means of putting us on the right road. Blessings on the
-tempest! It brought us safely back to the very spot from which fine
-weather would have driven us forever. Supposing we had succeeded in
-reaching the southern and distant shores of this extraordinary sea, what
-would have become of us? The name of Saknussemm would never have
-appeared to us, and at this moment we should have been cast away upon an
-inhospitable coast, probably without an outlet."
-
-"Yes, Harry, my boy, there is certainly something providential in that
-wandering at the mercy of wind and waves towards the south: we have come
-back exactly north; and what is better still, we fall upon this great
-discovery of Cape Saknussemm. I mean to say, that it is more than
-surprising; there is something in it which is far beyond my
-comprehension. The coincidence is unheard of, marvelous!"
-
-"What matter! It is not our duty to explain facts, but to make the best
-possible use of them."
-
-"Doubtless, my boy; but if you will allow me--" said the really
-delighted Professor.
-
-"Excuse me, sir, but I see exactly how it will be; we shall take the
-northern route; we shall pass under the northern regions of Europe,
-under Sweden, under Russia, under Siberia, and who knows where--instead
-of burying ourselves under the burning plains and deserts of Africa, or
-beneath the mighty waves of the ocean; and that is all, at this stage of
-our journey, that I care to know. Let us advance, and Heaven will be our
-guide!"
-
-"Yes, Harry, you are right, quite right; all is for the best. Let us
-abandon this horizontal sea, which could never have led to anything
-satisfactory. We shall descend, descend, and everlastingly descend. Do
-you know, my dear boy, that to reach the interior of the earth we have
-only five thousand miles to travel!"
-
-"Bah!" I cried, carried away by a burst of enthusiasm, "the distance is
-scarcely worth speaking about. The thing is to make a start."
-
-My wild, mad, and incoherent speeches continued until we rejoined our
-patient and phlegmatic guide. All was, we found, prepared for an
-immediate departure. There was not a single parcel but what was in its
-proper place. We all took up our posts on the raft, and the sail being
-hoisted, Hans received his directions, and guided the frail bark towards
-Cape Saknussemm, as we had definitely named it.
-
-The wind was very unfavorable to a craft that was unable to sail close
-to the wind. It was constructed to go before the blast. We were
-continually reduced to pushing ourselves forward by means of poles. On
-several occasions the rocks ran far out into deep water and we were
-compelled to make a long round. At last, after three long and weary
-hours of navigation, that is to say, about six o'clock in the evening,
-we found a place at which we could land.
-
-I jumped on shore first. In my present state of excitement and
-enthusiasm, I was always first. My uncle and the Icelander followed. The
-voyage from the port to this point of the sea had by no means calmed me.
-It had rather produced the opposite effect. I even proposed to burn our
-vessel, that is, to destroy our raft, in order to completely cut off our
-retreat. But my uncle sternly opposed this wild project. I began to
-think him particularly lukewarm and unenthusiastic.
-
-"At any rate, my dear uncle," I said, "let us start without delay."
-
-"Yes, my boy, I am quite as eager to do so as you can be. But, in the
-first place, let us examine this mysterious gallery, in order to find if
-we shall need to prepare and mend our ladders."
-
-My uncle now began to see to the efficiency of our Ruhmkorff coil, which
-would doubtless soon be needed; the raft, securely fastened to a rock,
-was left alone. Moreover, the opening into the new gallery was not
-twenty paces distant from the spot. Our little troop, with myself at the
-head, advanced.
-
-The orifice, which was almost circular, presented a diameter of about
-five feet; the somber tunnel was cut in the living rock, and coated on
-the inside by the different material which had once passed through it in
-a state of fusion. The lower part was about level with the water, so
-that we were able to penetrate to the interior without difficulty.
-
-We followed an almost horizontal direction; when, at the end of about a
-dozen paces, our further advance was checked by the interposition of an
-enormous block of granite rock.
-
-"Accursed stone!" I cried furiously, on perceiving that we were stopped
-by what seemed an insurmountable obstacle.
-
-In vain we looked to the right, in vain we looked to the left; in vain
-examined it above and below. There existed no passage, no sign of any
-other tunnel. I experienced the most bitter and painful disappointment.
-So enraged was I that I would not admit the reality of any obstacle. I
-stooped to my knees; I looked under the mass of stone. No hole, no
-interstice. I then looked above. The same barrier of granite! Hans, with
-the lamp, examined the sides of the tunnel in every direction.
-
-But all in vain! It was necessary to renounce all hope of passing
-through.
-
-I had seated myself upon the ground. My uncle walked angrily and
-hopelessly up and down. He was evidently desperate.
-
-"But," I cried, after some moments' thought, "what about Arne
-Saknussemm?"
-
-"You are right," replied my uncle, "he can never have been checked by a
-lump of rock."
-
-"No--ten thousand times no," I cried, with extreme vivacity. "This huge
-lump of rock, in consequence of some singular concussion, or process,
-one of those magnetic phenomena which have so often shaken the
-terrestrial crust, has in some unexpected way closed up the passage.
-Many and many years have passed away since the return of Saknussemm, and
-the fall of this huge block of granite. Is it not quite evident that
-this gallery was formerly the outlet for the pent-up lava in the
-interior of the earth, and that these eruptive matters then circulated
-freely? Look at these recent fissures in the granite roof; it is
-evidently formed of pieces of enormous stone, placed here as if by the
-hand of a giant, who had worked to make a strong and substantial arch.
-One day, after an unusually strong shock, the vast rock which stands in
-our way, and which was doubtless the key of a kind of arch, fell through
-to a level with the soil and has barred our further progress. We are
-right, then, in thinking that this is an unexpected obstacle, with which
-Saknussemm did not meet; and if we do not upset it in some way, we are
-unworthy of following in the footsteps of the great discoverer; and
-incapable of finding our way to the centre of the earth!"
-
-In this wild way I addressed my uncle. The zeal of the Professor, his
-earnest longing for success, had become part and parcel of my being. I
-wholly forgot the past; I utterly despised the future. Nothing existed
-for me upon the surface of this spheroid in the bosom of which I was
-engulfed, no towns, no country, no Hamburg, no Koenigstrasse, not even
-my poor Gretchen, who by this time would believe me utterly lost in the
-interior of the earth!
-
-"Well," cried my uncle, roused to enthusiasm by my words, "Let us go to
-work with pickaxes, with crowbars, with anything that comes to hand--but
-down with these terrible walls."
-
-"It is far too tough and too big to be destroyed by a pickax or
-crowbar," I replied.
-
-"What then?"
-
-"As I said, it is useless to think of overcoming such a difficulty by
-means of ordinary tools."
-
-"What then?"
-
-"What else but gunpowder, a subterranean mine? Let us blow up the
-obstacle that stands in our way."
-
-"Gunpowder!"
-
-"Yes; all we have to do is to get rid of this paltry obstacle."
-
-"To work, Hans, to work!" cried the Professor.
-
-The Icelander went back to the raft, and soon returned with a huge
-crowbar, with which he began to dig a hole in the rock, which was to
-serve as a mine. It was by no means a slight task. It was necessary for
-our purpose to make a cavity large enough to hold fifty pounds of
-fulminating gun cotton, the expansive power of which is four times as
-great as that of ordinary gunpowder.
-
-I had now roused myself to an almost miraculous state of excitement.
-While Hans was at work, I actively assisted my uncle to prepare a long
-wick, made from damp gunpowder, the mass of which we finally enclosed in
-a bag of linen.
-
-"We are bound to go through," I cried, enthusiastically.
-
-"We are bound to go through," responded the Professor, tapping me on the
-back.
-
-At midnight, our work as miners was completely finished; the charge of
-fulminating cotton was thrust into the hollow, and the match, which we
-had made of considerable length, was ready.
-
-A spark was now sufficient to ignite this formidable engine, and to blow
-the rock to atoms!
-
-"We will now rest until tomorrow."
-
-It was absolutely necessary to resign myself to my fate, and to consent
-to wait for the explosion for six weary hours!
-
-## CHAPTER 39 THE EXPLOSION AND ITS RESULTS
-
-The next day, which was the twenty-seventh of August, was a date
-celebrated in our wondrous subterranean journey. I never think of it
-even now, but I shudder with horror. My heart beats wildly at the very
-memory of that awful day.
-
-From this time forward, our reason, our judgment, our human ingenuity,
-have nothing to do with the course of events. We are about to become the
-plaything of the great phenomena of the earth!
-
-At six o'clock we were all up and ready. The dreaded moment was arriving
-when we were about to seek an opening into the interior of the earth by
-means of gunpowder. What would be the consequences of breaking through
-the crust of the earth?
-
-I begged that it might be my duty to set fire to the mine. I looked upon
-it as an honor. This task once performed, I could rejoin my friends upon
-the raft, which had not been unloaded. As soon as we were all ready, we
-were to sail away to some distance to avoid the consequences of the
-explosion, the effects of which would certainly not be concentrated in
-the interior of the earth.
-
-The slow match we calculated to burn for about ten minutes, more or
-less, before it reached the chamber in which the great body of powder
-was confined. I should therefore have plenty of time to reach the raft
-and put off to a safe distance.
-
-I prepared to execute my self-allotted task--not, it must be confessed,
-without considerable emotion.
-
-After a hearty repast, my uncle and the hunter-guide embarked on board
-the raft, while I remained alone upon the desolate shore.
-
-I was provided with a lantern which was to enable me to set fire to the
-wick of the infernal machine.
-
-"Go, my boy," said my uncle, "and Heaven be with you. But come back as
-soon as you can. I shall be all impatience."
-
-"Be easy on that matter," I replied, "there is no fear of my delaying on
-the road."
-
-Having said this, I advanced toward the opening of the somber gallery.
-My heart beat wildly. I opened my lantern and seized the extremity of
-the wick.
-
-The Professor, who was looking on, held his chronometer in his hand.
-
-"Are you ready?" cried he.
-
-"Quite ready."
-
-"Well, then, fire away!"
-
-I hastened to put the light to the wick, which crackled and sparkled,
-hissing and spitting like a serpent; then, running as fast as I could, I
-returned to the shore.
-
-"Get on board, my lad, and you, Hans, shove off," cried my uncle.
-
-By a vigorous application of his pole Hans sent us flying over the
-water. The raft was quite twenty fathoms distant.
-
-It was a moment of palpitating interest, of deep anxiety. My uncle, the
-Professor, never took his eyes off the chronometer.
-
-"Only five minutes more," he said in a low tone, "only four, only
-three."
-
-My pulse went a hundred to the minute. I could hear my heart beating.
-
-"Only two, one! Now, then, mountains of granite, crumble beneath the
-power of man!"
-
-What happened after that? As to the terrific roar of the explosion, I do
-not think I heard it. But the form of the rocks completely changed in my
-eyes--they seemed to be drawn aside like a curtain. I saw a fathomless,
-a bottomless abyss, which yawned beneath the turgid waves. The sea,
-which seemed suddenly to have gone mad, then became one great
-mountainous mass, upon the top of which the raft rose perpendicularly.
-
-We were all thrown down. In less than a second the light gave place to
-the most profound obscurity. Then I felt all solid support give way not
-to my feet, but to the raft itself. I thought it was going bodily down a
-tremendous well. I tried to speak, to question my uncle. Nothing could
-be heard but the roaring of the mighty waves. We clung together in utter
-silence.
-
-Despite the awful darkness, despite the noise, the surprise, the
-emotion, I thoroughly understood what had happened.
-
-Beyond the rock which had been blown up, there existed a mighty abyss.
-The explosion had caused a kind of earthquake in this soil, broken by
-fissures and rents. The gulf, thus suddenly thrown open, was about to
-swallow the inland sea which, transformed into a mighty torrent, was
-dragging us with it.
-
-Only one idea filled my mind. We were utterly and completely lost!
-
-One hour, two hours--what more I cannot say, passed in this manner. We
-sat close together, elbow touching elbow, knee touching knee! We held
-one another's hands not to be thrown off the raft. We were subjected to
-the most violent shocks, whenever our sole dependence, a frail wooden
-raft, struck against the rocky sides of the channel. Fortunately for us,
-these concussions became less and less frequent, which made me fancy
-that the gallery was getting wider and wider. There could be now no
-doubt that we had chanced upon the road once followed by Saknussemm, but
-instead of going down in a proper manner, we had, through our own
-imprudence, drawn a whole sea with us!
-
-These ideas presented themselves to my mind in a very vague and obscure
-manner. I felt rather than reasoned. I put my ideas together only
-confusedly, while spinning along like a man going down a waterfall. To
-judge by the air which, as it were, whipped my face, we must have been
-rushing at a perfectly lightning rate.
-
-To attempt under these circumstances to light a torch was simply
-impossible, and the last remains of our electric machine, of our
-Ruhmkorff coil, had been destroyed during the fearful explosion.
-
-I was therefore very much confused to see at last a bright light shining
-close to me. The calm countenance of the guide seemed to gleam upon me.
-The clever and patient hunter had succeeded in lighting the lantern; and
-though, in the keen and thorough draft, the flame flickered and
-vacillated and was nearly put out, it served partially to dissipate the
-awful obscurity.
-
-The gallery into which we had entered was very wide. I was, therefore,
-quite right in that part of my conjecture. The insufficient light did
-not allow us to see both of the walls at the same time. The slope of
-waters, which was carrying us away, was far greater than that of the
-most rapid river of America. The whole surface of the stream seemed to
-be composed of liquid arrows, darted forward with extreme violence and
-power. I can give no idea of the impression it made upon me.
-
-The raft, at times, caught in certain whirlpools, and rushed forward,
-yet turned on itself all the time. How it did not upset I shall never be
-able to understand. When it approached the sides of the gallery, I took
-care to throw upon them the light of the lantern, and I was able to
-judge of the rapidity of motion by looking at the projecting masses of
-rock, which as soon as seen were again invisible. So rapid was our
-progress that points of rock at a considerable distance one from the
-other appeared like portions of transverse lines, which enclosed us in a
-kind of net, like that of a line of telegraphic wires.
-
-I believe we were now going at a rate of not less than a hundred miles
-an hour.
-
-My uncle and I looked at one another with wild and haggard eyes; we
-clung convulsively to the stump of the mast, which, at the moment when
-the catastrophe took place, had snapped short off. We turned our backs
-as much as possible to the wind, in order not to be stifled by a
-rapidity of motion which nothing human could face and live.
-
-And still the long monotonous hours went on. The situation did not
-change in the least, though a discovery I suddenly made seemed to
-complicate it very much.
-
-When we had slightly recovered our equilibrium, I proceeded to examine
-our cargo. I then made the unsatisfactory discovery that the greater
-part of it had utterly disappeared.
-
-I became alarmed, and determined to discover what were our resources. My
-heart beat at the idea, but it was absolutely necessary to know on what
-we had to depend. With this view, I took the lantern and looked around.
-
-Of all our former collection of nautical and philosophical instruments,
-there remained only the chronometer and the compass. The ladders and
-ropes were reduced to a small piece of rope fastened to the stump of the
-mast. Not a pickax, not a crowbar, not a hammer, and, far worse than
-all, no food--not enough for one day!
-
-This discovery was a prelude to a certain and horrible death.
-
-Seated gloomily on the raft, clasping the stump of the mast
-mechanically, I thought of all I had read as to sufferings from
-starvation.
-
-I remembered everything that history had taught me on the subject, and I
-shuddered at the remembrance of the agonies to be endured.
-
-Maddened at the prospects of enduring the miseries of starvation, I
-persuaded myself that I must be mistaken. I examined the cracks in the
-raft; I poked between the joints and beams; I examined every possible
-hole and corner. The result was--simply nothing!
-
-Our stock of provisions consisted of nothing but a piece of dry meat and
-some soaked and half-moldy biscuits.
-
-I gazed around me scared and frightened. I could not understand the
-awful truth. And yet of what consequence was it in regard to any new
-danger? Supposing that we had had provisions for months, and even for
-years, how could we ever get out of the awful abyss into which we were
-being hurled by the irresistible torrent we had let loose?
-
-Why should we trouble ourselves about the sufferings and tortures to be
-endured from hunger when death stared us in the face under so many other
-swifter and perhaps even more horrid forms?
-
-It was very doubtful, under the circumstances in which we were placed,
-if we should have time to die of inanition.
-
-But the human frame is singularly constituted.
-
-I know not how it was; but, from some singular hallucination of the
-mind, I forgot the real, serious, and immediate danger to which we were
-exposed, to think of the menaces of the future, which appeared before us
-in all their naked terror. Besides, after all, suggested Hope, perhaps
-we might finally escape the fury of the raging torrent, and once more
-revisit the glimpses of the moon, on the surface of our beautiful Mother
-Earth.
-
-How was it to be done? I had not the remotest idea. Where were we to
-come out? No matter, so that we did.
-
-One chance in a thousand is always a chance, while death from hunger
-gave us not even the faintest glimpse of hope. It left to the
-imagination nothing but blank horror, without the faintest chance of
-escape!
-
-I had the greatest mind to reveal all to my uncle, to explain to him the
-extraordinary and wretched position to which we were reduced, in order
-that, between the two, we might make a calculation as to the exact space
-of time which remained for us to live.
-
-It was, it appeared to me, the only thing to be done. But I had the
-courage to hold my tongue, to gnaw at my entrails like the Spartan boy.
-I wished to leave him all his coolness.
-
-At this moment, the light of the lantern slowly fell, and at last went
-out!
-
-The wick had wholly burnt to an end. The obscurity became absolute. It
-was no longer possible to see through the impenetrable darkness! There
-was one torch left, but it was impossible to keep it alight. Then, like
-a child, I shut my eyes, that I might not see the darkness.
-
-After a great lapse of time, the rapidity of our journey increased. I
-could feel it by the rush of air upon my face. The slope of the waters
-was excessive. I began to feel that we were no longer going down a
-slope; we were falling. I felt as one does in a dream, going down
-bodily--falling; falling; falling!
-
-I felt that the hands of my uncle and Hans were vigorously clasping my
-arms.
-
-Suddenly, after a lapse of time scarcely appreciable, I felt something
-like a shock. The raft had not struck a hard body, but had suddenly been
-checked in its course. A waterspout, a liquid column of water, fell upon
-us. I felt suffocating. I was being drowned.
-
-Still the sudden inundation did not last. In a few seconds I felt myself
-once more able to breathe. My uncle and Hans pressed my arms, and the
-raft carried us all three away.
-
-## CHAPTER 40 THE APE GIGANS
-
-It is difficult for me to determine what was the real time, but I should
-suppose, by after calculation, that it must have been ten at night.
-
-I lay in a stupor, a half dream, during which I saw visions of
-astounding character. Monsters of the deep were side by side with the
-mighty elephantine shepherd. Gigantic fish and animals seemed to form
-strange conjunctions.
-
-The raft took a sudden turn, whirled round, entered another tunnel--this
-time illumined in a most singular manner. The roof was formed of porous
-stalactite, through which a moonlit vapor appeared to pass, casting its
-brilliant light upon our gaunt and haggard figures. The light increased
-as we advanced, while the roof ascended; until at last, we were once
-more in a kind of water cavern, the lofty dome of which disappeared in a
-luminous cloud!
-
-A rugged cavern of small extent appeared to offer a halting place to our
-weary bodies.
-
-My uncle and the guide moved as men in a dream. I was afraid to waken
-them, knowing the danger of such a sudden start. I seated myself beside
-them to watch.
-
-As I did so, I became aware of something moving in the distance, which
-at once fascinated my eyes. It was floating, apparently, upon the
-surface of the water, advancing by means of what at first appeared
-paddles. I looked with glaring eyes. One glance told me that it was
-something monstrous.
-
-But what?
-
-It was the great "shark-crocodile" of the early writers on geology.
-About the size of an ordinary whale, with hideous jaws and two gigantic
-eyes, it advanced. Its eyes fixed on me with terrible sternness. Some
-indefinite warning told me that it had marked me for its own.
-
-I attempted to rise--to escape, no matter where, but my knees shook
-under me; my limbs trembled violently; I almost lost my senses. And
-still the mighty monster advanced. My uncle and the guide made no effort
-to save themselves.
-
-With a strange noise, like none other I had ever heard, the beast came
-on. His jaws were at least seven feet apart, and his distended mouth
-looked large enough to have swallowed a boatful of men.
-
-We were about ten feet distant when I discovered that much as his body
-resembled that of a crocodile, his mouth was wholly that of a shark.
-
-His twofold nature now became apparent. To snatch us up at a mouthful it
-was necessary for him to turn on his back, which motion necessarily
-caused his legs to kick up helplessly in the air.
-
-I actually laughed even in the very jaws of death!
-
-But next minute, with a wild cry, I darted away into the interior of the
-cave, leaving my unhappy comrades to their fate! This cavern was deep
-and dreary. After about a hundred yards, I paused and looked around.
-
-The whole floor, composed of sand and malachite, was strewn with bones,
-freshly gnawed bones of reptiles and fish, with a mixture of mammalia.
-My very soul grew sick as my body shuddered with horror. I had truly,
-according to the old proverb, fallen out of the frying pan into the
-fire. Some beast larger and more ferocious even than the shark-crocodile
-inhabited this den.
-
-What could I do? The mouth of the cave was guarded by one ferocious
-monster, the interior was inhabited by something too hideous to
-contemplate. Flight was impossible!
-
-Only one resource remained, and that was to find some small hiding place
-to which the fearful denizens of the cavern could not penetrate. I gazed
-wildly around, and at last discovered a fissure in the rock, to which I
-rushed in the hope of recovering my scattered senses.
-
-Crouching down, I waited shivering as in an ague fit. No man is brave in
-presence of an earthquake, or a bursting boiler, or an exploding
-torpedo. I could not be expected to feel much courage in presence of the
-fearful fate that appeared to await me.
-
-An hour passed. I heard all the time a strange rumbling outside the
-cave.
-
-What was the fate of my unhappy companions? It was impossible for me to
-pause to inquire. My own wretched existence was all I could think of.
-
-Suddenly a groaning, as of fifty bears in a fight, fell upon my
-ears--hisses, spitting, moaning, hideous to hear--and then I saw--
-
-Never, were ages to pass over my head, shall I forget the horrible
-apparition.
-
-It was the Ape Gigans!
-
-Fourteen feet high, covered with coarse hair, of a blackish brown, the
-hair on the arms, from the shoulder to the elbow joints, pointing
-downwards, while that from the wrist to the elbow pointed upwards, it
-advanced. Its arms were as long as its body, while its legs were
-prodigious. It had thick, long, and sharply pointed teeth--like a
-mammoth saw.
-
-It struck its breast as it came on smelling and sniffing, reminding me
-of the stories we read in our early childhood of giants who ate the
-Flesh of men and little boys!
-
-Suddenly it stopped. My heart beat wildly, for I was conscious that,
-somehow or other, the fearful monster had smelled me out and was peering
-about with his hideous eyes to try and discover my whereabouts.
-
-My reading, which as a rule is a blessing, but which on this occasion,
-seemed momentarily to prove a curse, told me the real truth. It was the
-Ape Gigans, the antediluvian gorilla.
-
-Yes! This awful monster, confined by good fortune to the interior of the
-earth, was the progenitor of the hideous monster of Africa.
-
-He glared wildly about, seeking something--doubtless myself. I gave
-myself up for lost. No hope of safety or escape seemed to remain.
-
-At this moment, just as my eyes appeared to close in death, there came a
-strange noise from the entrance of the cave; and turning, the gorilla
-evidently recognized some enemy more worthy his prodigious size and
-strength. It was the huge shark-crocodile, which perhaps having disposed
-of my friends, was coming in search of further prey.
-
-The gorilla placed himself on the defensive, and clutching a bone some
-seven or eight feet in length, a perfect club, aimed a deadly blow at
-the hideous beast, which reared upwards and fell with all its weight
-upon its adversary.
-
-A terrible combat, the details of which it is impossible to give, now
-ensued. The struggle was awful and ferocious, I, however, did not wait
-to witness the result. Regarding myself as the object of contention, I
-determined to remove from the presence of the victor. I slid down from
-my hiding place, reached the ground, and gliding against the wall,
-strove to gain the open mouth of the cavern.
-
-But I had not taken many steps when the fearful clamor ceased, to be
-followed by a mumbling and groaning which appeared to be indicative of
-victory.
-
-I looked back and saw the huge ape, gory with blood, coming after me
-with glaring eyes, with dilated nostrils that gave forth two columns of
-heated vapor. I could feel his hot and fetid breath on my neck; and with
-a horrid jump--awoke from my nightmare sleep.
-
-Yes--it was all a dream. I was still on the raft with my uncle and the
-guide.
-
-The relief was not instantaneous, for under the influence of the hideous
-nightmare my senses had become numbed. After a while, however, my
-feelings were tranquilized. The first of my perceptions which returned
-in full force was that of hearing. I listened with acute and attentive
-ears. All was still as death. All I comprehended was silence. To the
-roaring of the waters, which had filled the gallery with awful
-reverberations, succeeded perfect peace.
-
-After some little time my uncle spoke, in a low and scarcely audible
-tone: "Harry, boy, where are you?"
-
-"I am here," was my faint rejoinder.
-
-"Well, don't you see what has happened? We are going upwards."
-
-"My dear uncle, what can you mean?" was my half-delirious reply.
-
-"Yes, I tell you we are ascending rapidly. Our downward journey is quite
-checked."
-
-I held out my hand, and, after some little difficulty, succeeded in
-touching the wall. My hand was in an instant covered with blood. The
-skin was torn from the flesh. We were ascending with extraordinary
-rapidity.
-
-"The torch--the torch!" cried the Professor, wildly; "it must be
-lighted."
-
-Hans, the guide, after many vain efforts, at last succeeded in lighting
-it, and the flame, having now nothing to prevent its burning, shed a
-tolerably clear light. We were enabled to form an approximate idea of
-the truth.
-
-"It is just as I thought," said my uncle, after a moment or two of
-silent attention. "We are in a narrow well about four fathoms square.
-The waters of the great inland sea, having reached the bottom of the
-gulf are now forcing themselves up the mighty shaft. As a natural
-consequence, we are being cast upon the summit of the waters."
-
-"That I can see," was my lugubrious reply; "but where will this shaft
-end, and to what fall are we likely to be exposed?"
-
-"Of that I am as ignorant as yourself. All I know is, that we should be
-prepared for the worst. We are going up at a fearfully rapid rate. As
-far as I can judge, we are ascending at the rate of two fathoms a
-second, of a hundred and twenty fathoms a minute, or rather more than
-three and a half leagues an hour. At this rate, our fate will soon be a
-matter of certainty."
-
-"No doubt of it," was my reply. "The great concern I have now, however,
-is to know whether this shaft has any issue. It may end in a granite
-roof--in which case we shall be suffocated by compressed air, or dashed
-to atoms against the top. I fancy, already, that the air is beginning to
-be close and condensed. I have a difficulty in breathing."
-
-This might be fancy, or it might be the effect of our rapid motion, but
-I certainly felt a great oppression of the chest.
-
-"Henry," said the Professor, "I do believe that the situation is to a
-certain extent desperate. There remain, however, many chances of
-ultimate safety, and I have, in my own mind, been revolving them over,
-during your heavy but agitated sleep. I have come to this logical
-conclusion--whereas we may at any moment perish, so at any moment we may
-be saved! We need, therefore, prepare ourselves for whatever may turn up
-in the great chapter of accidents."
-
-"But what would you have us do?" I cried. "Are we not utterly helpless?"
-
-"No! While there is life there is hope. At all events, there is one
-thing we can do--eat, and thus obtain strength to face victory or
-death."
-
-As he spoke, I looked at my uncle with a haggard glance. I had put off
-the fatal communication as long as possible. It was now forced upon me,
-and I must tell him the truth.
-
-Still I hesitated.
-
-"Eat," I said, in a deprecating tone as if there were no hurry.
-
-"Yes, and at once. I feel like a starving prisoner," he said, rubbing
-his yellow and shivering hands together.
-
-And, turning round to the guide, he spoke some hearty, cheering words,
-as I judged from his tone, in Danish. Hans shook his head in a terribly
-significant manner. I tried to look unconcerned.
-
-"What!" cried the Professor, "you do not mean to say that all our
-provisions are lost?"
-
-"Yes," was my lowly spoken reply, as I held out something in my hand,
-"this morsel of dried meat is all that remains for us three."
-
-My uncle gazed at me as if he could not fully appreciate the meaning of
-my words. The blow seemed to stun him by its severity. I allowed him to
-reflect for some moments.
-
-"Well," said I, after a short pause, "what do you think now? Is there
-any chance of our escaping from our horrible subterranean dangers? Are
-we not doomed to perish in the great hollows of the centre of the
-earth?"
-
-But my pertinent questions brought no answer. My uncle either heard me
-not, or appeared not to do so.
-
-And in this way a whole hour passed. Neither of us cared to speak. For
-myself, I began to feel the most fearful and devouring hunger. My
-companions, doubtless, felt the same horrible tortures, but neither of
-them would touch the wretched morsel of meat that remained. It lay
-there, a last remnant of all our great preparations for the mad and
-senseless journey!
-
-I looked back, with wonderment, to my own folly. Fully was I aware that,
-despite his enthusiasm, and the ever-to-be-hated scroll of Saknussemm,
-my uncle should never have started on his perilous voyage. What memories
-of the happy past, what previsions of the horrible future, now filled my
-brain!
-
-## CHAPTER 41 HUNGER
-
-Hunger, prolonged, is temporary madness! The brain is at work without
-its required food, and the most fantastic notions fill the mind.
-Hitherto I had never known what hunger really meant. I was likely to
-understand it now.
-
-And yet, three months before I could tell my terrible story of
-starvation, as I thought it. As a boy I used to make frequent excursions
-in the neighborhood of the Professor's house.
-
-My uncle always acted on system, and he believed that, in addition to
-the day of rest and worship, there should be a day of recreation. In
-consequence, I was always free to do as I liked on a Wednesday.
-
-Now, as I had a notion to combine the useful and the agreeable, my
-favorite pastime was birds' nesting. I had one of the best collections
-of eggs in all the town. They were classified, and under glass cases.
-
-There was a certain wood, which, by rising at early morn, and taking the
-cheap train, I could reach at eleven in the morning. Here I would
-botanize or geologize at my will. My uncle was always glad of specimens
-for his herbarium, and stones to examine. When I had filled my wallet, I
-proceeded to search for nests.
-
-After about two hours of hard work, I, one day, sat down by a stream to
-eat my humble but copious lunch. How the remembrance of the spiced
-sausage, the wheaten loaf, and the beer, made my mouth water now! I
-would have given every prospect of worldly wealth for such a meal. But
-to my story.
-
-While seated thus at my leisure, I looked up at the ruins of an old
-castle, at no great distance. It was the remains of an historical
-dwelling, ivy-clad, and now falling to pieces.
-
-While looking, I saw two eagles circling about the summit of a lofty
-tower. I soon became satisfied that there was a nest. Now, in all my
-collection, I lacked eggs of the native eagle and the large owl.
-
-My mind was made up. I would reach the summit of that tower, or perish
-in the attempt. I went nearer, and surveyed the ruins. The old
-staircase, years before, had fallen in. The outer walls were, however,
-intact. There was no chance that way, unless I looked to the ivy solely
-for support. This was, as I soon found out, futile.
-
-There remained the chimney, which still went up to the top, and had once
-served to carry off the smoke from every story of the tower.
-
-Up this I determined to venture. It was narrow, rough, and therefore the
-more easily climbed. I took off my coat and crept into the chimney.
-Looking up, I saw a small, light opening, proclaiming the summit of the
-chimney.
-
-Up--up I went, for some time using my hands and knees, after the fashion
-of a chimney sweep. It was slow work, but, there being continual
-projections, the task was comparatively easy. In this way, I reached
-halfway. The chimney now became narrower. The atmosphere was close, and,
-at last, to end the matter, I stuck fast. I could ascend no higher.
-
-There could be no doubt of this, and there remained no resource but to
-descend, and give up my glorious prey in despair. I yielded to fate and
-endeavored to descend. But I could not move. Some unseen and mysterious
-obstacle intervened and stopped me. In an instant the full horror of my
-situation seized me.
-
-I was unable to move either way, and was doomed to a terrible and
-horrible death, that of starvation. In a boy's mind, however, there is
-an extraordinary amount of elasticity and hope, and I began to think of
-all sorts of plans to escape my gloomy fate.
-
-In the first place, I required no food just at present, having had an
-excellent meal, and was therefore allowed time for reflection. My first
-thought was to try and move the mortar with my hand. Had I possessed a
-knife, something might have been done, but that useful instrument I had
-left in my coat pocket.
-
-I soon found that all efforts of this kind were vain and useless, and
-that all I could hope to do was to wriggle downwards.
-
-But though I jerked and struggled, and strove to turn, it was all in
-vain. I could not move an inch, one way or the other. And time flew
-rapidly. My early rising probably contributed to the fact that I felt
-sleepy, and gradually gave way to the sensation of drowsiness.
-
-I slept, and awoke in darkness, ravenously hungry.
-
-Night had come, and still I could not move. I was tight bound, and did
-not succeed in changing my position an inch. I groaned aloud. Never
-since the days of my happy childhood, when it was a hardship to go from
-meal to meal without eating, had I really experienced hunger. The
-sensation was as novel as it was painful. I began now to lose my head
-and to scream and cry out in my agony. Something appeared, startled by
-my noise. It was a harmless lizard, but it appeared to me a loathsome
-reptile. Again I made the old ruins resound with my cries, and finally
-so exhausted myself that I fainted.
-
-How long I lay in a kind of trance or sleep I cannot say, but when again
-I recovered consciousness it was day. How ill I felt, how hunger still
-gnawed at me, it would be hard to say. I was too weak to scream now, far
-too weak to struggle.
-
-Suddenly I was startled by a roar.
-
-"Are you there, Henry?" said the voice of my uncle; "are you there, my
-boy?"
-
-I could only faintly respond, but I also made a desperate effort to
-turn. Some mortar fell. To this I owed my being discovered. When the
-search took place, it was easily seen that mortar and small pieces of
-stone had recently fallen from above. Hence my uncle's cry.
-
-"Be calm," he cried, "if we pull down the whole ruin, you shall be
-saved."
-
-They were delicious words, but I had little hope.
-
-Soon however, about a quarter of an hour later I heard a voice above me,
-at one of the upper fireplaces.
-
-"Are you below or above?"
-
-"Below," was my reply.
-
-In an instant a basket was lowered with milk, a biscuit, and an egg. My
-uncle was fearful to be too ready with his supply of food. I drank the
-milk first, for thirst had nearly deadened hunger. I then, much
-refreshed, ate my bread and hard egg.
-
-They were now at work at the wall. I could hear a pickax. Wishing to
-escape all danger from this terrible weapon I made a desperate struggle,
-and the belt, which surrounded my waist and which had been hitched on a
-stone, gave way. I was free, and only escaped falling down by a rapid
-motion of my hands and knees.
-
-In ten minutes more I was in my uncle's arms, after being two days and
-nights in that horrible prison. My occasional delirium prevented me from
-counting time.
-
-I was weeks recovering from that awful starvation adventure; and yet
-what was that to the hideous sufferings I now endured?
-
-After dreaming for some time, and thinking of this and other matters, I
-once more looked around me. We were still ascending with fearful
-rapidity. Every now and then the air appeared to check our respiration
-as it does that of aeronauts when the ascension of the balloon is too
-rapid. But if they feel a degree of cold in proportion to the elevation
-they attain in the atmosphere, we experienced quite a contrary effect.
-The heat began to increase in a most threatening and exceptional manner.
-I cannot tell exactly the mean, but I think it must have reached one
-hundred twenty-two degrees Fahrenheit.
-
-What was the meaning of this extraordinary change in the temperature? As
-far as we had hitherto gone, facts had proved the theories of Davy and
-of Lidenbrock to be correct. Until now, all the peculiar conditions of
-refractory rocks, of electricity, of magnetism, had modified the general
-laws of nature, and had created for us a moderate temperature; for the
-theory of the central fire, remained, in my eyes, the only explainable
-one.
-
-Were we, then, going to reach a position in which these phenomena were
-to be carried out in all their rigor, and in which the heat would reduce
-the rocks to a state of fusion?
-
-Such was my not unnatural fear, and I did not conceal the fact from my
-uncle. My way of doing so might be cold and heartless, but I could not
-help it.
-
-"If we are not drowned, or smashed into pancakes, and if we do not die
-of starvation, we have the satisfaction of knowing that we must be
-burned alive."
-
-My uncle, in presence of this brusque attack, simply shrugged his
-shoulders, and resumed his reflections--whatever they might be.
-
-An hour passed away, and except that there was a slight increase in the
-temperature no incident modified the situation.
-
-My uncle at last, of his own accord, broke silence.
-
-"Well, Henry, my boy," he said, in a cheerful way, "we must make up our
-minds."
-
-"Make up our minds to what?" I asked, in considerable surprise.
-
-"Well--to something. We must at whatever risk recruit our physical
-strength. If we make the fatal mistake of husbanding our little remnant
-of food, we may probably prolong our wretched existence a few hours--but
-we shall remain weak to the end."
-
-"Yes," I growled, "to the end. That, however, will not keep us long
-waiting."
-
-"Well, only let a chance of safety present itself--only allow that a
-moment of action be necessary--where shall we find the means of action
-if we allow ourselves to be reduced to physical weakness by inanition?"
-
-"When this piece of meat is devoured, Uncle, what hope will there remain
-unto us?"
-
-"None, my dear Henry, none. But will it do you any good to devour it
-with your eyes? You appear to me to reason like one without will or
-decision, like a being without energy."
-
-"Then," cried I, exasperated to a degree which is scarcely to be
-explained, "you do not mean to tell me--that you--that you--have not
-lost all hope."
-
-"Certainly not," replied the Professor with consummate coolness.
-
-"You mean to tell me, Uncle, that we shall get out of this monstrous
-subterranean shaft?"
-
-"While there is life there is hope. I beg to assert, Henry, that as long
-as a man's heart beats, as long as a man's flesh quivers, I do not allow
-that a being gifted with thought and will can allow himself to despair."
-
-What a nerve! The man placed in a position like that we occupied must
-have been very brave to speak like this.
-
-"Well," I cried, "what do you mean to do?"
-
-"Eat what remains of the food we have in our hands; let us swallow the
-last crumb. It will bel Heaven willing, our last repast. Well, never
-mind--instead of being exhausted skeletons, we shall be men."
-
-"True," muttered I in a despairing tone, "let us take our fill."
-
-"We must," replied my uncle, with a deep sigh, "call it what you will."
-
-My uncle took a piece of the meat that remained, and some crusts of
-biscuit which had escaped the wreck. He divided the whole into three
-parts.
-
-Each had one pound of food to last him as long as he remained in the
-interior of the earth.
-
-Each now acted in accordance with his own private character.
-
-My uncle, the Professor, ate greedily, but evidently without appetite,
-eating simply from some mechanical motion. I put the food inside my
-lips, and hungry as I was, chewed my morsel without pleasure, and
-without satisfaction.
-
-Hans, the guide, just as if he had been eider-down hunting, swallowed
-every mouthful, as though it were a usual affair. He looked like a man
-equally prepared to enjoy superfluity or total want.
-
-Hans, in all probability, was no more used to starvation than ourselves,
-but his hardy Icelandic nature had prepared him for many sufferings. As
-long as he received his three rix-dollars every Saturday night, he was
-prepared for anything.
-
-The fact was, Hans never troubled himself about much except his money.
-He had undertaken to serve a certain man at so much per week, and no
-matter what evils befell his employer or himself, he never found fault
-or grumbled, so long as his wages were duly paid.
-
-Suddenly my uncle roused himself. He had seen a smile on the face of our
-guide. I could not make it out.
-
-"What is the matter?" said my uncle.
-
-"Schiedam," said the guide, producing a bottle of this precious fluid.
-
-We drank. My uncle and myself will own to our dying day that hence we
-derived strength to exist until the last bitter moment. That precious
-bottle of Hollands was in reality only half full; but, under the
-circumstances, it was nectar.
-
-It took some minutes for myself and my uncle to form a decided opinion
-on the subject. The worthy Professor swallowed about half a pint and did
-not seem able to drink any more.
-
-"<i>Fortrafflig</i>," said Hans, swallowing nearly all that was left.
-
-"Excellent--very good," said my uncle, with as much gusto as if he had
-just left the steps of the club at Hamburg.
-
-I had begun to feel as if there had been one gleam of hope. Now all
-thought of the future vanished!
-
-We had consumed our last ounce of food, and it was five o'clock in the
-morning!
-
-## CHAPTER 42 THE VOLCANIC SHAFT
-
-Man's constitution is so peculiar that his health is purely a negative
-matter. No sooner is the rage of hunger appeased than it becomes
-difficult to comprehend the meaning of starvation. It is only when you
-suffer that you really understand.
-
-As to anyone who has not endured privation having any notion of the
-matter, it is simply absurd.
-
-With us, after a long fast, some mouthfuls of bread and meat, a little
-moldy biscuit and salt beef triumphed over all our previous gloomy and
-saturnine thoughts.
-
-Nevertheless, after this repast each gave way to his own reflections. I
-wondered what were those of Hans--the man of the extreme north, who was
-yet gifted with the fatalistic resignation of Oriental character. But
-the utmost stretch of the imagination would not allow me to realize the
-truth. As for my individual self, my thoughts had ceased to be anything
-but memories of the past, and were all connected with that upper world
-which I never should have left. I saw it all now, the beautiful house in
-the Konigstrasse, my poor Gretchen, the good Martha; they all passed
-before my mind like visions of the past. Every time any of the
-lugubrious groanings which were to be distinguished in the hollows
-around fell upon my ears, I fancied I heard the distant murmur of the
-great cities above my head.
-
-As for my uncle, always thinking of his science, he examined the nature
-of the shaft by means of a torch. He closely examined the different
-strata one above the other, in order to recognize his situation by
-geological theory. This calculation, or rather this estimation, could by
-no means be anything but approximate. But a learned man, a philosopher,
-is nothing if not a philosopher, when he keeps his ideas calm and
-collected; and certainly the Professor possessed this quality to
-perfection.
-
-I heard him, as I sat in silence, murmuring words of geological science.
-As I understood his object and his meaning, I could not but interest
-myself despite my preoccupation in that terrible hour.
-
-"Eruptive granite," he said to himself, "we are still in the primitive
-epoch. But we are going up--going up, still going up. But who knows? Who
-knows?"
-
-Then he still hoped. He felt along the vertical sides of the shaft with
-his hand, and some few minutes later, he would go on again in the
-following style:
-
-"This is gneiss. This is mica schist--siliceous mineral. Good again;
-this is the epoch of transition, at all events, we are close to
-them--and then, and then--"
-
-What could the Professor mean? Could he, by any conceivable means,
-measure the thickness of the crust of the earth suspended above our
-heads? Did he possess any possible means of making any approximation to
-this calculation? No.
-
-The manometer was wanting, and no summary estimation could take the
-place of it.
-
-And yet, as we progressed, the temperature increased in the most
-extraordinary degree, and I began to feel as if I were bathed in a hot
-and burning atmosphere. Never before had I felt anything like it. I
-could only compare it to the hot vapor from an iron foundry, when the
-liquid iron is in a state of ebullition and runs over. By degrees, and
-one after the other, Hans, my uncle, and myself had taken off our coats
-and waistcoats. They were unbearable. Even the slightest garment was not
-only uncomfortable, but the cause of extreme suffering.
-
-"Are we ascending to a living fire?" I cried; when, to my horror and
-astonishment, the heat became greater than before.
-
-"No, no," said my uncle, "it is simply impossible, quite impossible."
-
-"And yet," said I, touching the side of the shaft with my naked hand,
-"this wall is literally burning."
-
-At this moment, feeling as I did that the sides of this extraordinary
-wall were red hot, I plunged my hands into the water to cool them. I
-drew them back with a cry of despair.
-
-"The water is boiling!" I cried.
-
-My uncle, the Professor, made no reply other than a gesture of rage and
-despair.
-
-Something very like the truth had probably struck his imagination.
-
-But I could take no share in either what was going on, or in his
-speculations. An invincible dread had taken possession of my brain and
-soul. I could only look forward to an immediate catastrophe, such a
-catastrophe as not even the most vivid imagination could have thought
-of. An idea, at first vague and uncertain, was gradually being changed
-into certainty.
-
-I tremulously rejected it at first, but it forced itself upon me by
-degrees with extreme obstinacy. It was so terrible an idea that I
-scarcely dared to whisper it to myself.
-
-And yet all the while certain, and as it were, involuntary observations
-determined my convictions. By the doubtful glare of the torch, I could
-make out some singular changes in the granitic strata; a strange and
-terrible phenomenon was about to be produced, in which electricity
-played a part.
-
-Then this boiling water, this terrible and excessive heat? I determined
-as a last resource to examine the compass.
-
-The compass had gone mad!
-
-Yes, wholly stark staring mad. The needle jumped from pole to pole with
-sudden and surprising jerks, ran round, or as it is said, boxed the
-compass, and then ran suddenly back again as if it had the vertigo.
-
-I was aware that, according to the best acknowledged theories, it was a
-received notion that the mineral crust of the globe is never, and never
-has been, in a state of complete repose.
-
-It is perpetually undergoing the modifications caused by the
-decomposition of internal matter, the agitation consequent on the
-flowing of extensive liquid currents, the excessive action of magnetism
-which tends to shake it incessantly, at a time when even the
-multitudinous beings on its surface do not suspect the seething process
-to be going on.
-
-Still this phenomenon would not have alarmed me alone; it would not have
-aroused in my mind a terrible, an awful idea.
-
-But other facts could not allow my self-delusion to last.
-
-Terrible detonations, like Heaven's artillery, began to multiply
-themselves with fearful intensity. I could only compare them with the
-noise made by hundreds of heavily laden chariots being madly driven over
-a stone pavement. It was a continuous roll of heavy thunder.
-
-And then the mad compass, shaken by the wild electric phenomena,
-confirmed me in my rapidly formed opinion. The mineral crust was about
-to burst, the heavy granite masses were about to rejoin, the fissure was
-about to close, the void was about to be filled up, and we poor atoms to
-be crushed in its awful embrace!
-
-"Uncle, Uncle!" I cried, "we are wholly, irretrievably lost!"
-
-"What, then, my young friend, is your new cause of terror and alarm?" he
-said in his calmest manner. "What fear you now?"
-
-"What do I fear now!" I cried in fierce and angry tones. "Do you not see
-that the walls of the shaft are in motion? Do you not see that the solid
-granite masses are cracking? Do you not feel the terrible, torrid heat?
-Do you not observe the awful boiling water on which we float? Do you not
-remark this mad needle? Every sign and portent of an awful earthquake!"
-
-My uncle coolly shook his head.
-
-"An earthquake," he replied in the most calm and provoking tone.
-
-"Yes."
-
-"My nephew, I tell you that you are utterly mistaken," he continued.
-
-"Do you not, can you not, recognize all the well-known symtons--"
-
-"Of an earthquake? By no means. I am expecting something far more
-important."
-
-"My brain is strained beyond endurance--what, what do you mean?" I
-cried.
-
-"An eruption, Harry."
-
-"An eruption," I gasped. "We are, then, in the volcanic shaft of a
-crater in full action and vigor."
-
-"I have every reason to think so," said the Professor in a smiling tone,
-"and I beg to tell you that it is the most fortunate thing that could
-happen to us."
-
-The most fortunate thing! Had my uncle really and truly gone mad? What
-did he mean by these awful words--what did he mean by this terrible
-calm, this solemn smile?
-
-"What!" cried I, in the height of my exasperation, "we are on the way to
-an eruption, are we? Fatality has cast us into a well of burning and
-boiling lava, of rocks on fire, of boiling water, in a word, filled with
-every kind of eruptive matter? We are about to be expelled, thrown up,
-vomited, spit out of the interior of the earth, in common with huge
-blocks of granite, with showers of cinders and scoriae, in a wild
-whirlwind of flame, and you say--the most fortunate thing which could
-happen to us."
-
-"Yes," replied the Professor, looking at me calmly from under his
-spectacles, "it is the only chance which remains to us of ever escaping
-from the interior of the earth to the light of day."
-
-It is quite impossible that I can put on paper the thousand strange,
-wild thoughts which followed this extraordinary announcement.
-
-But my uncle was right, quite right, and never had he appeared to me so
-audacious and so convinced as when he looked me calmly in the face and
-spoke of the chances of an eruption--of our being cast upon Mother Earth
-once more through the gaping crater of a volcano!
-
-Nevertheless, while we were speaking we were still ascending; we passed
-the whole night going up, or to speak more scientifically, in an
-ascensional motion. The fearful noise redoubled; I was ready to
-suffocate. I seriously believed that my last hour was approaching, and
-yet, so strange is imagination, all I thought of was some childish
-hypothesis or other. In such circumstances you do not choose your own
-thoughts. They overcome you.
-
-It was quite evident that we were being cast upwards by eruptive matter;
-under the raft there was a mass of boiling water, and under this was a
-heavier mass of lava, and an aggregate of rocks which, on reaching the
-summit of the water, would be dispersed in every direction.
-
-That we were inside the chimney of a volcano there could no longer be
-the shadow of a doubt. Nothing more terrible could be conceived!
-
-But on this occasion, instead of Sneffels, an old and extinct volcano,
-we were inside a mountain of fire in full activity. Several times I
-found myself asking, what mountain was it, and on what part of the world
-we should be shot out. As if it were of any consequence!
-
-In the northern regions, there could be no reasonable doubt about that.
-Before it went decidedly mad, the compass had never made the slightest
-mistake. From the cape of Saknussemm, we had been swept away to the
-northward many hundreds of leagues. Now the question was, were we once
-more under Iceland--should we be belched forth on to the earth through
-the crater of Mount Hecla, or should we reappear through one of the
-other seven fire funnels of the island? Taking in my mental vision a
-radius of five hundred leagues to the westward, I could see under this
-parallel only the little-known volcanoes of the northwest coast of
-America.
-
-To the east one only existed somewhere about the eightieth degree of
-latitude, the Esk, upon the island of Jan Mayen, not far from the frozen
-regions of Spitsbergen.
-
-It was not craters that were wanting, and many of them were big enough
-to vomit a whole army; all I wished to know was the particular one
-towards which we were making with such fearful velocity.
-
-I often think now of my folly: as if I should ever have expected to
-escape!
-
-Towards morning, the ascending motion became greater and greater. If the
-degree of heat increased instead of decreasing, as we approached the
-surface of the earth, it was simply because the causes were local and
-wholly due to volcanic influence. Our very style of locomotion left in
-my mind no doubt upon the subject. An enormous force, a force of several
-hundreds of atmospheres produced by the vapors accumulated and long
-compressed in the interior of the earth, was hoisting us upwards with
-irresistible power.
-
-But though we were approaching the light of day, to what fearful dangers
-were we about to be exposed?
-
-Instant death appeared the only fate which we could expect or
-contemplate.
-
-Soon a dim, sepulchral light penetrated the vertical gallery, which
-became wider and wider. I could make out to the right and left long dark
-corridors like immense tunnels, from which awful and horrid vapors
-poured out. Tongues of fire, sparkling and crackling, appeared about to
-lick us up.
-
-The hour had come!
-
-"Look, Uncle, look!" I cried.
-
-"Well, what you see are the great sulphurous flames. Nothing more common
-in connection with an eruption."
-
-"But if they lap us round!" I angrily replied.
-
-"They will not lap us round," was his quiet and serene answer.
-
-"But it will be all the same in the end if they stifle us," I cried.
-
-"We shall not be stifled. The gallery is rapidly becoming wider and
-wider, and if it be necessary, we will presently leave the raft and take
-refuge in some fissure in the rock."
-
-"But the water, the water, which is continually ascending?" I
-despairingly replied.
-
-"There is no longer any water, Harry," he answered, "but a kind of lava
-paste, which is heaving us up, in company with itself, to the mouth of
-the crater."
-
-In truth, the liquid column of water had wholly disappeared to give
-place to dense masses of boiling eruptive matter. The temperature was
-becoming utterly insupportable, and a thermometer exposed to this
-atmosphere would have marked between one hundred and eighty-nine and one
-hundred ninety degrees Fahrenheit.
-
-Perspiration rushed from every pore. But for the extraordinary rapidity
-of our ascent we should have been stifled.
-
-Nevertheless, the Professor did not carry out his proposition of
-abandoning the raft; and he did quite wisely. Those few ill-joined beams
-offered, anyway, a solid surface--a support which elsewhere must have
-utterly failed us.
-
-Towards eight o'clock in the morning a new incident startled us. The
-ascensional movement suddenly ceased. The raft became still and
-motionless.
-
-"What is the matter now?" I said, querulously, very much startled by
-this change.
-
-"A simple halt," replied my uncle.
-
-"Is the eruption about to fail?" I asked.
-
-"I hope not."
-
-Without making any reply, I rose. I tried to look around me. Perhaps the
-raft, checked by some projecting rock, opposed a momentary resistance to
-the eruptive mass. In this case, it was absolutely necessary to release
-it as quickly as possible.
-
-Nothing of the kind had occurred. The column of cinders, of scoriae, of
-broken rocks and earth, had wholly ceased to ascend.
-
-"I tell you, Uncle, that the eruption has stopped," was my oracular
-decision.
-
-"Ah," said my uncle, "you think so, my boy. You are wrong. Do not be in
-the least alarmed; this sudden moment of calm will not last long, be
-assured. It has already endured five minutes, and before we are many
-minutes older we shall be continuing our journey to the mouth of the
-crater."
-
-All the time he was speaking the Professor continued to consult his
-chronometer, and he was probably right in his prognostics. Soon the raft
-resumed its motion, in a very rapid and disorderly way, which lasted two
-minutes or thereabout; and then again it stopped as suddenly as before.
-
-"Good," said my uncle, observing the hour, "in ten we shall start
-again."
-
-"In ten minutes?"
-
-"Yes--precisely. We have to do with a volcano, the eruption of which is
-intermittent. We are compelled to breathe just as it does."
-
-Nothing could be more true. At the exact minute he had indicated, we
-were again launched on high with extreme rapidity. Not to be cast off
-the raft, it was necessary to hold on to the beams. Then the hoist again
+Then to the westward also I discovered that another such distended form
+was rising over the scrub. But here the light fell upon its sleek
+sides, and I could see that its colour was a vivid orange hue. It rose
+as one watched it; if one looked away from it for a minute and then
+back, its outline had changed; it thrust out blunt congested branches
+until in a little time it rose a coralline shape of many feet in
+height. Compared with such a growth the terrestrial puff-ball, which
+will sometimes swell a foot in diameter in a single night, would be a
+hopeless laggard. But then the puff-ball grows against a gravitational
+pull six times that of the moon. Beyond, out of gullies and flats that
+had been hidden from us, but not from the quickening sun, over reefs
+and banks of shining rock, a bristling beard of spiky and fleshy
+vegetation was straining into view, hurrying tumultuously to take
+advantage of the brief day in which it must flower and fruit and seed
+again and die. It was like a miracle, that growth. So, one must
+imagine, the trees and plants arose at the Creation and covered the
+desolation of the new-made earth.
+
+Imagine it! Imagine that dawn! The resurrection of the frozen air, the
+stirring and quickening of the soil, and then this silent uprising of
+vegetation, this unearthly ascent of fleshiness and spikes. Conceive it
+all lit by a blaze that would make the intensest sunlight of earth seem
+watery and weak. And still around this stirring jungle, wherever there
+was shadow, lingered banks of bluish snow. And to have the picture of
+our impression complete, you must bear in mind that we saw it all
+through a thick bent glass, distorting it as things are distorted by a
+lens, acute only in the centre of the picture, and very bright there,
+and towards the edges magnified and unreal.
+
+### IX.
+
+*Prospecting Begins*
+
+We ceased to gaze. We turned to each other, the same thought, the same
+question in our eyes. For these plants to grow, there must be some air,
+however attenuated, air that we also should be able to breathe.
+
+“The manhole?” I said.
+
+“Yes!” said Cavor, “if it is air we see!”
+
+“In a little while,” I said, “these plants will be as high as we are.
+Suppose—suppose after all— Is it certain? How do you know that stuff
+_is_ air? It may be nitrogen—it may be carbonic acid even!”
+
+“That’s easy,” he said, and set about proving it. He produced a big
+piece of crumpled paper from the bale, lit it, and thrust it hastily
+through the man-hole valve. I bent forward and peered down through the
+thick glass for its appearance outside, that little flame on whose
+evidence depended so much!
+
+I saw the paper drop out and lie lightly upon the snow. The pink flame
+of its burning vanished. For an instant it seemed to be extinguished.
+And then I saw a little blue tongue upon the edge of it that trembled,
+and crept, and spread!
+
+Quietly the whole sheet, save where it lay in immediate contact with
+the snow, charred and shrivelled and sent up a quivering thread of
+smoke. There was no doubt left to me; the atmosphere of the moon was
+either pure oxygen or air, and capable therefore—unless its tenuity was
+excessive—of supporting our alien life. We might emerge—and live!
+
+I sat down with my legs on either side of the manhole and prepared to
+unscrew it, but Cavor stopped me. “There is first a little precaution,”
+he said. He pointed out that although it was certainly an oxygenated
+atmosphere outside, it might still be so rarefied as to cause us grave
+injury. He reminded me of mountain sickness, and of the bleeding that
+often afflicts aeronauts who have ascended too swiftly, and he spent
+some time in the preparation of a sickly-tasting drink which he
+insisted on my sharing. It made me feel a little numb, but otherwise
+had no effect on me. Then he permitted me to begin unscrewing.
+
+Presently the glass stopper of the manhole was so far undone that the
+denser air within our sphere began to escape along the thread of the
+screw, singing as a kettle sings before it boils. Thereupon he made me
+desist. It speedily became evident that the pressure outside was very
+much less than it was within. How much less it was we had no means of
+telling.
+
+I sat grasping the stopper with both hands, ready to close it again if,
+in spite of our intense hope, the lunar atmosphere should after all
+prove too rarefied for us, and Cavor sat with a cylinder of compressed
+oxygen at hand to restore our pressure. We looked at one another in
+silence, and then at the fantastic vegetation that swayed and grew
+visibly and noiselessly without. And ever that shrill piping continued.
+
+My blood-vessels began to throb in my ears, and the sound of Cavor’s
+movements diminished. I noted how still everything had become, because
+of the thinning of the air.
+
+As our air sizzled out from the screw the moisture of it condensed in
+little puffs.
+
+Presently I experienced a peculiar shortness of breath that lasted
+indeed during the whole of the time of our exposure to the moon’s
+exterior atmosphere, and a rather unpleasant sensation about the ears
+and finger-nails and the back of the throat grew upon my attention, and
+presently passed off again.
+
+But then came vertigo and nausea that abruptly changed the quality of
+my courage. I gave the lid of the manhole half a turn and made a hasty
+explanation to Cavor; but now he was the more sanguine. He answered me
+in a voice that seemed extraordinarily small and remote, because of the
+thinness of the air that carried the sound. He recommended a nip of
+brandy, and set me the example, and presently I felt better. I turned
+the manhole stopper back again. The throbbing in my ears grew louder,
+and then I remarked that the piping note of the outrush had ceased. For
+a time I could not be sure that it had ceased.
+
+“Well?” said Cavor, in the ghost of a voice.
+
+“Well?” said I.
+
+“Shall we go on?”
+
+I thought. “Is this all?”
+
+“If you can stand it.”
+
+By way of answer I went on unscrewing. I lifted the circular operculum
+from its place and laid it carefully on the bale. A flake or so of snow
+whirled and vanished as that thin and unfamiliar air took possession of
+our sphere. I knelt, and then seated myself at the edge of the manhole,
+peering over it. Beneath, within a yard of my face, lay the untrodden
+snow of the moon.
+
+There came a little pause. Our eyes met.
+
+“It doesn’t distress your lungs too much?” said Cavor.
+
+“No,” I said. “I can stand this.”
+
+He stretched out his hand for his blanket, thrust his head through its
+central hole, and wrapped it about him. He sat down on the edge of the
+manhole, he let his feet drop until they were within six inches of the
+lunar ground. He hesitated for a moment, then thrust himself forward,
+dropped these intervening inches, and stood upon the untrodden soil of
+the moon.
+
+As he stepped forward he was refracted grotesquely by the edge of the
+glass. He stood for a moment looking this way and that. Then he drew
+himself together and leapt.
+
+The glass distorted everything, but it seemed to me even then to be an
+extremely big leap. He had at one bound become remote. He seemed twenty
+or thirty feet off. He was standing high upon a rocky mass and
+gesticulating back to me. Perhaps he was shouting—but the sound did not
+reach me. But how the deuce had he done this? I felt like a man who has
+just seen a new conjuring trick.
+
+In a puzzled state of mind I too dropped through the manhole. I stood
+up. Just in front of me the snowdrift had fallen away and made a sort
+of ditch. I made a step and jumped.
+
+I found myself flying through the air, saw the rock on which he stood
+coming to meet me, clutched it and clung in a state of infinite
+amazement.
+
+I gasped a painful laugh. I was tremendously confused. Cavor bent down
+and shouted in piping tones for me to be careful.
+
+I had forgotten that on the moon, with only an eighth part of the
+earth’s mass and a quarter of its diameter, my weight was barely a
+sixth what it was on earth. But now that fact insisted on being
+remembered.
+
+“We are out of Mother Earth’s leading-strings now,” he said.
+
+With a guarded effort I raised myself to the top, and moving as
+cautiously as a rheumatic patient, stood up beside him under the blaze
+of the sun. The sphere lay behind us on its dwindling snowdrift thirty
+feet away.
+
+As far as the eye could see over the enormous disorder of rocks that
+formed the crater floor, the same bristling scrub that surrounded us
+was starting into life, diversified here and there by bulging masses of
+a cactus form, and scarlet and purple lichens that grew so fast they
+seemed to crawl over the rocks. The whole area of the crater seemed to
+me then to be one similar wilderness up to the very foot of the
+surrounding cliff.
+
+This cliff was apparently bare of vegetation save at its base, and with
+buttresses and terraces and platforms that did not very greatly attract
+our attention at the time. It was many miles away from us in every
+direction; we seemed to be almost at the centre of the crater, and we
+saw it through a certain haziness that drove before the wind. For there
+was even a wind now in the thin air, a swift yet weak wind that chilled
+exceedingly but exerted little pressure. It was blowing round the
+crater, as it seemed, to the hot illuminated side from the foggy
+darkness under the sunward wall. It was difficult to look into this
+eastward fog; we had to peer with half-closed eyes beneath the shade of
+our hands, because of the fierce intensity of the motionless sun.
+
+“It seems to be deserted,” said Cavor, “absolutely desolate.”
+
+I looked about me again. I retained even then a clinging hope of some
+quasi-human evidence, some pinnacle of building, some house or engine,
+but everywhere one looked spread the tumbled rocks in peaks and crests,
+and the darting scrub and those bulging cacti that swelled and swelled,
+a flat negation as it seemed of all such hope.
+
+“It looks as though these plants had it to themselves,” I said. “I see
+no trace of any other creature.”
+
+“No insects—no birds, no! Not a trace, not a scrap nor particle of
+animal life. If there was—what would they do in the night? ... No;
+there’s just these plants alone.”
+
+I shaded my eyes with my hand. “It’s like the landscape of a dream.
+These things are less like earthly land plants than the things one
+imagines among the rocks at the bottom of the sea. Look at that yonder!
+One might imagine it a lizard changed into a plant. And the glare!”
+
+“This is only the fresh morning,” said Cavor.
+
+He sighed and looked about him. “This is no world for men,” he said.
+“And yet in a way—it appeals.”
+
+He became silent for a time, then commenced his meditative humming.
+
+I started at a gentle touch, and found a thin sheet of livid lichen
+lapping over my shoe. I kicked at it and it fell to powder, and each
+speck began to grow.
+
+I heard Cavor exclaim sharply, and perceived that one of the fixed
+bayonets of the scrub had pricked him. He hesitated, his eyes sought
+among the rocks about us. A sudden blaze of pink had crept up a ragged
+pillar of crag. It was a most extraordinary pink, a livid magenta.
+
+“Look!” said I, turning, and behold Cavor had vanished.
+
+For an instant I stood transfixed. Then I made a hasty step to look
+over the verge of the rock. But in my surprise at his disappearance I
+forgot once more that we were on the moon. The thrust of my foot that I
+made in striding would have carried me a yard on earth; on the moon it
+carried me six—a good five yards over the edge. For the moment the
+thing had something of the effect of those nightmares when one falls
+and falls. For while one falls sixteen feet in the first second of a
+fall on earth, on the moon one falls two, and with only a sixth of
+one’s weight. I fell, or rather I jumped down, about ten yards I
+suppose. It seemed to take quite a long time, five or six seconds, I
+should think. I floated through the air and fell like a feather,
+knee-deep in a snow-drift in the bottom of a gully of blue-grey,
+white-veined rock.
+
+I looked about me. “Cavor!” I cried; but no Cavor was visible.
+
+“Cavor!” I cried louder, and the rocks echoed me.
+
+I turned fiercely to the rocks and clambered to the summit of them.
+“Cavor!” I cried. My voice sounded like the voice of a lost lamb.
+
+The sphere, too, was not in sight, and for a moment a horrible feeling
+of desolation pinched my heart.
+
+Then I saw him. He was laughing and gesticulating to attract my
+attention. He was on a bare patch of rock twenty or thirty yards away.
+I could not hear his voice, but “jump” said his gestures. I hesitated,
+the distance seemed enormous. Yet I reflected that surely I must be
+able to clear a greater distance than Cavor.
+
+I made a step back, gathered myself together, and leapt with all my
+might. I seemed to shoot right up in the air as though I should never
+come down.
+
+It was horrible and delightful, and as wild as a nightmare, to go
+flying off in this fashion. I realised my leap had been altogether too
+violent. I flew clean over Cavor’s head and beheld a spiky confusion in
+a gully spreading to meet my fall. I gave a yelp of alarm. I put out my
+hands and straightened my legs.
+
+I hit a huge fungoid bulk that burst all about me, scattering a mass of
+orange spores in every direction, and covering me with orange powder. I
+rolled over spluttering, and came to rest convulsed with breathless
+laughter.
+
+I became aware of Cavor’s little round face peering over a bristling
+hedge. He shouted some faded inquiry. “Eh?” I tried to shout, but could
+not do so for want of breath. He made his way towards me, coming
+gingerly among the bushes.
+
+“We’ve got to be careful,” he said. “This moon has no discipline.
+She’ll let us smash ourselves.”
+
+He helped me to my feet. “You exerted yourself too much,” he said,
+dabbing at the yellow stuff with his hand to remove it from my
+garments.
+
+I stood passive and panting, allowing him to beat off the jelly from my
+knees and elbows and lecture me upon my misfortunes. “We don’t quite
+allow for the gravitation. Our muscles are scarcely educated yet. We
+must practise a little, when you have got your breath.”
+
+I pulled two or three little thorns out of my hand, and sat for a time
+on a boulder of rock. My muscles were quivering, and I had that feeling
+of personal disillusionment that comes at the first fall to the learner
+of cycling on earth.
+
+It suddenly occurred to Cavor that the cold air in the gully, after the
+brightness of the sun, might give me a fever. So we clambered back into
+the sunlight. We found that beyond a few abrasions I had received no
+serious injuries from my tumble, and at Cavor’s suggestion we were
+presently looking round for some safe and easy landing-place for my
+next leap. We chose a rocky slab some ten yards off, separated from us
+by a little thicket of olive-green spikes.
+
+“Imagine it there!” said Cavor, who was assuming the airs of a trainer,
+and he pointed to a spot about four feet from my toes. This leap I
+managed without difficulty, and I must confess I found a certain
+satisfaction in Cavor’s falling short by a foot or so and tasting the
+spikes of the scrub. “One has to be careful, you see,” he said, pulling
+out his thorns, and with that he ceased to be my mentor and became my
+fellow-learner in the art of lunar locomotion.
+
+We chose a still easier jump and did it without difficulty, and then
+leapt back again, and to and fro several times, accustoming our muscles
+to the new standard. I could never have believed had I not experienced
+it, how rapid that adaptation would be. In a very little time indeed,
+certainly after fewer than thirty leaps, we could judge the effort
+necessary for a distance with almost terrestrial assurance.
+
+And all this time the lunar plants were growing around us, higher and
+denser and more entangled, every moment thicker and taller, spiked
+plants, green cactus masses, fungi, fleshy and lichenous things,
+strangest radiate and sinuous shapes. But we were so intent upon our
+leaping, that for a time we gave no heed to their unfaltering
+expansion.
+
+An extraordinary elation had taken possession of us. Partly, I think,
+it was our sense of release from the confinement of the sphere. Mainly,
+however, the thin sweetness of the air, which I am certain contained a
+much larger proportion of oxygen than our terrestrial atmosphere. In
+spite of the strange quality of all about us, I felt as adventurous and
+experimental as a cockney would do placed for the first time among
+mountains and I do not think it occurred to either of us, face to face
+though we were with the unknown, to be very greatly afraid.
+
+We were bitten by a spirit of enterprise. We selected a lichenous kopje
+perhaps fifteen yards away, and landed neatly on its summit one after
+the other. “Good!” we cried to each other; “good!” and Cavor made three
+steps and went off to a tempting slope of snow a good twenty yards and
+more beyond. I stood for a moment struck by the grotesque effect of his
+soaring figure—his dirty cricket cap, and spiky hair, his little round
+body, his arms and his knicker-bockered legs tucked up tightly—against
+the weird spaciousness of the lunar scene. A gust of laughter seized
+me, and then I stepped off to follow. Plump! I dropped beside him.
+
+We made a few gargantuan strides, leapt three or four times more, and
+sat down at last in a lichenous hollow. Our lungs were painful. We sat
+holding our sides and recovering our breath, looking appreciation to
+one another. Cavor panted something about “amazing sensations.” And
+then came a thought into my head. For the moment it did not seem a
+particularly appalling thought, simply a natural question arising out
+of the situation.
+
+“By the way,” I said, “where exactly is the sphere?”
+
+Cavor looked at me. “Eh?”
+
+The full meaning of what we were saying struck me sharply.
+
+“Cavor!” I cried, laying a hand on his arm, “where is the sphere?”
+
+### X.
+
+*Lost Men in the Moon*
+
+His face caught something of my dismay. He stood up and stared about
+him at the scrub that fenced us in and rose about us, straining upward
+in a passion of growth. He put a dubious hand to his lips. He spoke
+with a sudden lack of assurance. “I think,” he said slowly, “we left it
+... somewhere ... about _there_.”
+
+He pointed a hesitating finger that wavered in an arc.
+
+“I’m not sure.” His look of consternation deepened. “Anyhow,” he said,
+with his eyes on me, “it can’t be far.”
+
+We had both stood up. We made unmeaning ejaculations, our eyes sought
+in the twining, thickening jungle round about us.
+
+All about us on the sunlit slopes frothed and swayed the darting
+shrubs, the swelling cactus, the creeping lichens, and wherever the
+shade remained the snow-drifts lingered. North, south, east, and west
+spread an identical monotony of unfamiliar forms. And somewhere, buried
+already among this tangled confusion, was our sphere, our home, our
+only provision, our only hope of escape from this fantastic wilderness
+of ephemeral growths into which we had come.
+
+“I think after all,” he said, pointing suddenly, “it might be over
+there.”
+
+“No,” I said. “We have turned in a curve. See! here is the mark of my
+heels. It’s clear the thing must be more to the eastward, much more.
+No—the sphere must be over there.”
+
+“I _think_,” said Cavor, “I kept the sun upon my right all the time.”
+
+“Every leap, it seems to _me_,” I said, “my shadow flew before me.”
+
+We stared into one another’s eyes. The area of the crater had become
+enormously vast to our imaginations, the growing thickets already
+impenetrably dense.
+
+“Good heavens! What fools we have been!”
+
+“It’s evident that we must find it again,” said Cavor, “and that soon.
+The sun grows stronger. We should be fainting with the heat already if
+it wasn’t so dry. And ... I’m hungry.”
+
+I stared at him. I had not suspected this aspect of the matter before.
+But it came to me at once—a positive craving. “Yes,” I said with
+emphasis. “I am hungry too.”
+
+He stood up with a look of active resolution. “Certainly we must find
+the sphere.”
+
+As calmly as possible we surveyed the interminable reefs and thickets
+that formed the floor of the crater, each of us weighing in silence the
+chances of our finding the sphere before we were overtaken by heat and
+hunger.
+
+“It can’t be fifty yards from here,” said Cavor, with indecisive
+gestures. “The only thing is to beat round about until we come upon
+it.”
+
+“That is all we can do,” I said, without any alacrity to begin our
+hunt. “I wish this confounded spike bush did not grow so fast!”
+
+“That’s just it,” said Cavor. “But it was lying on a bank of snow.”
+
+I stared about me in the vain hope of recognising some knoll or shrub
+that had been near the sphere. But everywhere was a confusing sameness,
+everywhere the aspiring bushes, the distending fungi, the dwindling
+snow banks, steadily and inevitably changed. The sun scorched and
+stung, the faintness of an unaccountable hunger mingled with our
+infinite perplexity. And even as we stood there, confused and lost
+amidst unprecedented things, we became aware for the first time of a
+sound upon the moon other than the air of the growing plants, the faint
+sighing of the wind, or those that we ourselves had made.
+
+Boom.... Boom.... Boom.
+
+It came from beneath our feet, a sound in the earth. We seemed to hear
+it with our feet as much as with our ears. Its dull resonance was
+muffled by distance, thick with the quality of intervening substance.
+No sound that I can imagine could have astonished us more, or have
+changed more completely the quality of things about us. For this sound,
+rich, slow, and deliberate, seemed to us as though it could be nothing
+but the striking of some gigantic buried clock.
+
+Boom.... Boom.... Boom.
+
+Sound suggestive of still cloisters, of sleepless nights in crowded
+cities, of vigils and the awaited hour, of all that is orderly and
+methodical in life, booming out pregnant and mysterious in this
+fantastic desert! To the eye everything was unchanged: the desolation
+of bushes and cacti waving silently in the wind, stretched unbroken to
+the distant cliffs, the still dark sky was empty overhead, and the hot
+sun hung and burned. And through it all, a warning, a threat, throbbed
+this enigma of sound.
+
+Boom.... Boom.... Boom....
+
+We questioned one another in faint and faded voices.
+
+“A clock?”
+
+“Like a clock!”
+
+“What is it?”
+
+“What can it be?”
+
+“Count,” was Cavor’s belated suggestion, and at that word the striking
 ceased.
 
-Many times since have I thought of this singular phenomenon without
-being able to find for it any satisfactory explanation. Nevertheless, it
-appeared quite clear to me, that we were not in the principal chimney of
-the volcano, but in an accessory conduit, where we felt the counter
-shock of the great and principal tunnel filled by burning lava.
+The silence, the rhythmic disappointment of the silence, came as a
+fresh shock. For a moment one could doubt whether one had ever heard a
+sound. Or whether it might not still be going on. Had I indeed heard a
+sound?
 
-It is impossible for me to say how many times this maneuver was
-repeated. All that I can remember is, that on every ascensional motion,
-we were hoisted up with ever increasing velocity, as if we had been
-launched from a huge projectile. During the sudden halts we were nearly
-stifled; during the moments of projection the hot air took away our
-breath.
-
-I thought for a moment of the voluptuous joy of suddenly finding myself
-in the hyperborean regions with the cold thirty degrees below zero!
-
-My exalted imagination pictured to itself the vast snowy plains of the
-arctic regions, and I was impatient to roll myself on the icy carpet of
-the North Pole.
-
-By degrees my head, utterly overcome by a series of violent emotions,
-began to give way to hallucination. I was delirious. Had it not been for
-the powerful arms of Hans, the guide, I should have broken my head
-against the granite masses of the shaft.
-
-I have, in consequence, kept no account of what followed for many hours.
-I have a vague and confused remembrance of continual detonations, of the
-shaking of the huge granitic mass, and of the raft going round like a
-spinning top. It floated on the stream of hot lava, amidst a falling
-cloud of cinders. The huge flames roaring, wrapped us around.
-
-A storm of wind which appeared to be cast forth from an immense
-ventilator roused up the interior fires of the earth. It was a hot,
-incandescent blast!
-
-At last I saw the figure of Hans as if enveloped in the huge halo of
-burning blaze, and no other sense remained to me but that sinister dread
-which the condemned victim may be supposed to feel when led to the mouth
-of a cannon, at the supreme moment when the shot is fired and his limbs
-are dispersed into empty space.
-
-## CHAPTER 43 DAYLIGHT AT LAST
-
-When I opened my eyes I felt the hand of the guide clutching me firmly
-by the belt. With his other hand he supported my uncle. I was not
-grievously wounded, but bruised all over in the most remarkable manner.
-
-After a moment I looked around, and found that I was lying down on the
-slope of a mountain not two yards from a yawning gulf into which I
-should have fallen had I made the slightest false step. Hans had saved
-me from death, while I rolled insensible on the flanks of the crater.
-
-"Where are we?" dreamily asked my uncle, who literally appeared to be
-disgusted at having returned to earth.
-
-The eider-down hunter simply shrugged his shoulders as a mark of total
-ignorance.
-
-"In Iceland?" said I, not positively but interrogatively.
-
-"Nej," said Hans.
-
-"How do you mean?" cried the Professor; "no--what are your reasons?"
-
-"Hans is wrong," said I, rising.
-
-After all the innumerable surprises of this journey, a yet more singular
-one was reserved to us. I expected to see a cone covered by snow, by
-extensive and widespread glaciers, in the midst of the arid deserts of
-the extreme northern regions, beneath the full rays of a polar sky,
-beyond the highest latitudes.
-
-But contrary to all our expectations, I, my uncle, and the Icelander,
-were cast upon the slope of a mountain calcined by the burning rays of a
-sun which was literally baking us with its fires.
-
-I could not believe my eyes, but the actual heat which affected my body
-allowed me no chance of doubting. We came out of the crater half naked,
-and the radiant star from which we had asked nothing for two months, was
-good enough to be prodigal to us of light and warmth--a light and warmth
-we could easily have dispensed with.
-
-When our eyes were accustomed to the light we had lost sight of so long,
-I used them to rectify the errors of my imagination. Whatever happened,
-we should have been at Spitsbergen, and I was in no humor to yield to
-anything but the most absolute proof.
-
-After some delay, the Professor spoke.
-
-"Hem!" he said, in a hesitating kind of way, "it really does not look
-like Iceland."
-
-"But supposing it were the island of Jan Mayen?" I ventured to observe.
-
-"Not in the least, my boy. This is not one of the volcanoes of the
-north, with its hills of granite and its crown of snow."
-
-"Nevertheless--"
-
-"Look, look, my boy," said the Professor, as dogmatically as usual.
-
-Right above our heads, at a great height, opened the crater of a volcano
-from which escaped, from one quarter of an hour to the other, with a
-very loud explosion, a lofty jet of flame mingled with pumice stone,
-cinders, and lava. I could feel the convulsions of nature in the
-mountain, which breathed like a huge whale, throwing up from time to
-time fire and air through its enormous vents.
-
-Below, and floating along a slope of considerable angularity, the stream
-of eruptive matter spread away to a depth which did not give the volcano
-a height of three hundred fathoms.
-
-Its base disappeared in a perfect forest of green trees, among which I
-perceived olives, fig trees, and vines loaded with rich grapes.
-
-Certainly this was not the ordinary aspect of the arctic regions. About
-that there could not be the slightest doubt.
-
-When the eye was satisfied at its glimpse of this verdant expanse, it
-fell upon the waters of a lovely sea or beautiful lake, which made of
-this enchanted land an island of not many leagues in extent.
-
-On the side of the rising sun was to be seen a little port, crowded with
-houses, and near which the boats and vessels of peculiar build were
-floating upon azure waves.
-
-Beyond, groups of islands rose above the liquid plain, so numerous and
-close together as to resemble a vast beehive.
-
-Towards the setting sun, some distant shores were to be made out on the
-edge of the horizon. Some presented the appearance of blue mountains of
-harmonious conformation; upon others, much more distant, there appeared
-a prodigiously lofty cone, above the summit of which hung dark and heavy
-clouds.
-
-Towards the north, an immense expanse of water sparkled beneath the
-solar rays, occasionally allowing the extremity of a mast or the
-convexity of a sail bellying to the wind, to be seen.
-
-The unexpected character of such a scene added a hundredfold to its
-marvelous beauties.
-
-"Where can we be?" I asked, speaking in a low and solemn voice.
-
-Hans shut his eyes with an air of indifference, and my uncle looked on
-without clearly understanding.
-
-"Whatever this mountain may be," he said, at last, "I must confess it is
-rather warm. The explosions do not leave off, and I do not think it is
-worthwhile to have left the interior of a volcano and remain here to
-receive a huge piece of rock upon one's head. Let us carefully descend
-the mountain and discover the real state of the case. To confess the
-truth, I am dying of hunger and thirst."
-
-Decidedly the Professor was no longer a truly reflective character. For
-myself, forgetting all my necessities, ignoring my fatigues and
-sufferings, I should have remained still for several hours longer--but
-it was necessary to follow my companions.
-
-The slope of the volcano was very steep and slippery; we slid over piles
-of ashes, avoiding the streams of hot lava which glided about like fiery
-serpents. Still, while we were advancing, I spoke with extreme
-volubility, for my imagination was too full not to explode in words.
-
-"We are in Asia!" I exclaimed; "we are on the coast of India, in the
-great Malay islands, in the centre of Oceania. We have crossed the one
-half of the globe to come out right at the antipodes of Europe!"
-
-"But the compass!" exclaimed my uncle; "explain that to me!"
-
-"Yes--the compass," I said with considerable hesitation. "I grant that
-is a difficulty. According to it, we have always been going northward."
-
-"Then it lied."
-
-"Hem--to say it lied is rather a harsh word," was my answer.
-
-"Then we are at the North Pole--"
-
-"The Pole--no--well--well I give it up," was my reply.
-
-The plain truth was, that there was no explanation possible. I could
-make nothing of it.
-
-And all the while we were approaching this beautiful verdure, hunger and
-thirst tormented me fearfully. Happily, after two long hours' march, a
-beautiful country spread out before us, covered by olives, pomegranates,
-and vines, which appeared to belong to anybody and everybody. In any
-event, in the state of destitution into which we had fallen, we were not
-in a mood to ponder too scrupulously.
-
-What delight it was to press these delicious fruits to our lips, and to
-bite at grapes and pomegranates fresh from the vine.
-
-Not far off, near some fresh and mossy grass, under the delicious shade
-of some trees, I discovered a spring of fresh water, in which we
-voluptuously laved our faces, hands, and feet.
-
-While we were all giving way to the delights of new-found pleasures, a
-little child appeared between two tufted olive trees.
-
-"Ah," cried I, "an inhabitant of this happy country."
-
-The little fellow was poorly dressed, weak, and suffering, and appeared
-terribly alarmed at our appearance. Half-naked, with tangled, matted and
-ragged beards, we did look supremely ill-favored; and unless the country
-was a bandit land, we were not likely to alarm the inhabitants!
-
-Just as the boy was about to take to his heels, Hans ran after him, and
-brought him back, despite his cries and kicks.
-
-My uncle tried to look as gentle as possible, and then spoke in German.
-
-"What is the name of this mountain, my friend?"
-
-The child made no reply.
-
-"Good," said my uncle, with a very positive air of conviction, "we are
-not in Germany."
-
-He then made the same demand in English, of which language he was an
-excellent scholar.
-
-The child shook its head and made no reply. I began to be considerably
-puzzled.
-
-"Is he dumb?" cried the Professor, who was rather proud of his polyglot
-knowledge of languages, and made the same demand in French.
-
-The boy only stared in his face.
-
-"I must perforce try him in Italian," said my uncle, with a shrug.
-
-"<i>Dove noi siamo</i>?"
-
-"Yes, tell me where we are?" I added impatiently and eagerly.
-
-Again the boy remained silent.
-
-"My fine fellow, do you or do you not mean to speak?" cried my uncle,
-who began to get angry. He shook him, and spoke another dialect of the
-Italian language.
-
-"<i>Come si noma questa isola</i>?"--"What is the name of this island?"
-
-"Stromboli," replied the rickety little shepherd, dashing away from Hans
-and disappearing in the olive groves.
-
-We thought little enough about him.
-
-Stromboli! What effect on the imagination did these few words produce!
-We were in the centre of the Mediterranean, amidst the eastern
-archipelago of mythological memory, in the ancient Strongylos, where
-AEolus kept the wind and the tempest chained up. And those blue
-mountains, which rose towards the rising sun, were the mountains of
-Calabria.
-
-And that mighty volcano which rose on the southern horizon was Etna, the
-fierce and celebrated Etna!
-
-"Stromboli! Stromboli!" I repeated to myself.
-
-My uncle played a regular accompaniment to my gestures and words. We
-were singing together like an ancient chorus.
-
-Ah--what a journey--what a marvelous and extraordinary journey! Here we
-had entered the earth by one volcano, and we had come out by another.
-And this other was situated more than twelve hundred leagues from
-Sneffels from that drear country of Iceland cast away on the confines of
-the earth. The wondrous changes of this expedition had transported us to
-the most harmonious and beautiful of earthly lands. We had abandoned the
-region of eternal snows for that of infinite verdure, and had left over
-our heads the gray fog of the icy regions to come back to the azure sky
-of Sicily!
-
-After a delicious repast of fruits and fresh water, we again continued
-our journey in order to reach the port of Stromboli. To say how we had
-reached the island would scarcely have been prudent. The superstitious
-character of the Italians would have been at work, and we should have
-been called demons vomited from the infernal regions. It was therefore
-necessary to pass for humble and unfortunate shipwrecked travelers. It
-was certainly less striking and romantic, but it was decidedly safer.
-
-As we advanced, I could hear my worthy uncle muttering to himself:
-
-"But the compass. The compass most certainly marked north. This is a
-fact I cannot explain in any way."
-
-"Well, the fact is," said I, with an air of disdain, "we must not
-explain anything. It will be much more easy."
-
-"I should like to see a professor of the Johanneum Institution who is
-unable to explain a cosmic phenomenon--it would indeed be strange."
-
-And speaking thus, my uncle, half-naked, his leathern purse round his
-loins, and his spectacles upon his nose, became once more the terrible
-Professor of Mineralogy.
-
-An hour after leaving the wood of olives, we reached the fort of San
-Vicenza, where Hans demanded the price of his thirteenth week of
-service. My uncle paid him, with very many warm shakes of the hand.
-
-At that moment, if he did not indeed quite share our natural emotion, he
-allowed his feelings so far to give way as to indulge in an
-extraordinary expression for him.
-
-With the tips of two fingers he gently pressed our hands and smiled.
-
-## CHAPTER 44 THE JOURNEY ENDED
-
-This is the final conclusion of a narrative which will be probably
-disbelieved even by people who are astonished at nothing. I am, however,
-armed at all points against human incredulity.
-
-We were kindly received by the Strombolite fishermen, who treated us as
-shipwrecked travelers. They gave us clothes and food. After a delay of
-forty-eight hours, on the 30th of September a little vessel took us to
-Messina, where a few days of delightful and complete repose restored us
-to ourselves.
-
-On Friday, the 4th of October, we embarked in the Volturne, one of the
-postal packets of the Imperial Messageries of France; and three days
-later we landed at Marseilles, having no other care on our minds but
-that of our precious but erratic compass. This inexplicable circumstance
-tormented me terribly. On the 9th of October, in the evening, we reached
-Hamburg.
-
-What was the astonishment of Martha, what the joy of Gretchen! I will
-not attempt to define it.
-
-"Now then, Harry, that you really are a hero," she said, "there is no
-reason why you should ever leave me again."
-
-I looked at her. She was weeping tears of joy.
-
-I leave it to be imagined if the return of Professor Hardwigg made or
-did not make a sensation in Hamburg. Thanks to the indiscretion of
-Martha, the news of his departure for the interior of the earth had been
-spread over the whole world.
-
-No one would believe it--and when they saw him come back in safety they
-believed it all the less.
-
-But the presence of Hans and many stray scraps of information by degrees
-modified public opinion.
-
-Then my uncle became a great man and I the nephew of a great man, which,
-at all events, is something. Hamburg gave a festival in our honor. A
-public meeting of the Johanneum Institution was held, at which the
-Professor related the whole story of his adventures, omitting only the
-facts in connection with the compass.
-
-That same day he deposited in the archives of the town the document he
-had found written by Saknussemm, and he expressed his great regret that
-circumstances, stronger than his will, did not allow him to follow the
-Icelandic traveler's track into the very centre of the earth. He was
-modest in his glory, but his reputation only increased.
-
-So much honor necessarily created for him many envious enemies. Of
-course they existed, and as his theories, supported by certain facts,
-contradicted the system of science upon the question of central heat, he
-maintained his own views both with pen and speech against the learned of
-every country. Although I still believe in the theory of central heat, I
-confess that certain circumstances, hitherto very ill defined, may
-modify the laws of such natural phenomena.
-
-At the moment when these questions were being discussed with interest,
-my uncle received a rude shock--one that he felt very much. Hans,
-despite everything he could say to the contrary, quitted Hamburg; the
-man to whom we owed so much would not allow us to pay our deep debt of
-gratitude. He was taken with nostalgia; a love for his Icelandic home.
-
-"Farval," said he, one day, and with this one short word of adieu, he
-started for Reykjavik, which he soon reached in safety.
-
-We were deeply attached to our brave eider-duck hunter. His absence will
-never cause him to be forgotten by those whose lives he saved, and I
-hope, at some not distant day, to see him again.
-
-To conclude, I may say that our journey into the interior of the earth
-created an enormous sensation throughout the civilized world. It was
-translated and printed in many languages. All the leading journals
-published extracts from it, which were commentated, discussed, attacked,
-and supported with equal animation by those who believed in its
-episodes, and by those who were utterly incredulous.
-
-Wonderful! My uncle enjoyed during his lifetime all the glory he
-deserved; and he was even offered a large sum of money, by Mr. Barnum,
-to exhibit himself in the United States; while I am credibly informed by
-a traveler that he is to be seen in waxwork at Madame Tussaud's!
-
-But one care preyed upon his mind, a care which rendered him very
-unhappy. One fact remained inexplicable--that of the compass. For a
-learned man to be baffled by such an inexplicable phenomenon was very
-aggravating. But Heaven was merciful, and in the end my uncle was happy.
-
-One day, while he put some minerals belonging to his collection in
-order, I fell upon the famous compass and examined it keenly.
-
-For six months it had lain unnoticed and untouched.
-
-I looked at it with curiosity, which soon became surprise. I gave a loud
-cry. The Professor, who was at hand, soon joined me.
-
-"What is the matter?" he cried.
-
-"The compass!"
-
-"What then?"
-
-"Why its needle points to the south and not to the north."
-
-"My dear boy, you must be dreaming."
-
-"I am not dreaming. See--the poles are changed."
-
-"Changed!"
-
-My uncle put on his spectacles, examined the instrument, and leaped with
-joy, shaking the whole house.
-
-A clear light fell upon our minds.
-
-"Here it is!" he cried, as soon as he had recovered the use of his
-speech, "after we had once passed Cape Saknussemm, the needle of this
-compass pointed to the southward instead of the northward."
-
-"Evidently."
-
-"Our error is now easily explained. But to what phenomenon do we owe
-this alteration in the needle?"
-
-"Nothing more simple."
-
-"Explain yourself, my boy. I am on thorns."
-
-"During the storm, upon the Central Sea, the ball of fire which made a
-magnet of the iron in our raft, turned our compass topsy-turvy."
-
-"Ah!" cried the Professor, with a loud and ringing laugh, "it was a
-trick of that inexplicable electricity."
-
-From that hour my uncle was the happiest of learned men, and I the
-happiest of ordinary mortals. For my pretty Virland girl, abdicating her
-position as ward, took her place in the house in the Konigstrasse in the
-double quality of niece and wife.
-
-We need scarcely mention that her uncle was the illustrious Professor
-Hardwigg, corresponding member of all the scientific, geographical,
-mineralogical, and geological societies of the five parts of the globe.
-
-End of the Voyage Extraordinaire
+I felt the pressure of Cavor’s hand upon my arm. He spoke in an
+undertone, as though he feared to wake some sleeping thing. “Let us
+keep together,” he whispered, “and look for the sphere. We must get
+back to the sphere. This is beyond our understanding.”
+
+“Which way shall we go?”
+
+He hesitated. An intense persuasion of presences, of unseen things
+about us and near us, dominated our minds. What could they be? Where
+could they be? Was this arid desolation, alternately frozen and
+scorched, only the outer rind and mask of some subterranean world? And
+if so, what sort of world? What sort of inhabitants might it not
+presently disgorge upon us?
+
+And then, stabbing the aching stillness as vivid and sudden as an
+unexpected thunderclap, came a clang and rattle as though great gates
+of metal had suddenly been flung apart.
+
+It arrested our steps. We stood gaping helplessly. Then Cavor stole
+towards me.
+
+“I do not understand!” he whispered close to my face. He waved his hand
+vaguely skyward, the vague suggestion of still vaguer thoughts.
+
+“A hiding-place! If anything came...”
+
+I looked about us. I nodded my head in assent to him.
+
+We started off, moving stealthily with the most exaggerated precautions
+against noise. We went towards a thicket of scrub. A clangour like
+hammers flung about a boiler hastened our steps. “We must crawl,”
+whispered Cavor.
+
+The lower leaves of the bayonet plants, already overshadowed by the
+newer ones above, were beginning to wilt and shrivel so that we could
+thrust our way in among the thickening stems without serious injury. A
+stab in the face or arm we did not heed. At the heart of the thicket I
+stopped, and stared panting into Cavor’s face.
+
+“Subterranean,” he whispered. “Below.”
+
+“They may come out.”
+
+“We must find the sphere!”
+
+“Yes,” I said; “but how?”
+
+“Crawl till we come to it.”
+
+“But if we don’t?”
+
+“Keep hidden. See what they are like.”
+
+“We will keep together,” said I.
+
+He thought. “Which way shall we go?”
+
+“We must take our chance.”
+
+We peered this way and that. Then very circumspectly, we began to crawl
+through the lower jungle, making, so far as we could judge, a circuit,
+halting now at every waving fungus, at every sound, intent only on the
+sphere from which we had so foolishly emerged. Ever and again from out
+of the earth beneath us came concussions, beatings, strange,
+inexplicable, mechanical sounds; and once, and then again, we thought
+we heard something, a faint rattle and tumult, borne to us through the
+air. But fearful as we were we dared essay no vantage-point to survey
+the crater. For long we saw nothing of the beings whose sounds were so
+abundant and insistent. But for the faintness of our hunger and the
+drying of our throats that crawling would have had the quality of a
+very vivid dream. It was so absolutely unreal. The only element with
+any touch of reality was these sounds.
+
+Picture it to yourself! About us the dream-like jungle, with the silent
+bayonet leaves darting overhead, and the silent, vivid, sun-splashed
+lichens under our hands and knees, waving with the vigour of their
+growth as a carpet waves when the wind gets beneath it. Ever and again
+one of the bladder fungi, bulging and distending under the sun, loomed
+upon us. Ever and again some novel shape in vivid colour obtruded. The
+very cells that built up these plants were as large as my thumb, like
+beads of coloured glass. And all these things were saturated in the
+unmitigated glare of the sun, were seen against a sky that was bluish
+black and spangled still, in spite of the sunlight, with a few
+surviving stars. Strange! the very forms and texture of the stones were
+strange. It was all strange, the feeling of one’s body was
+unprecedented, every other movement ended in a surprise. The breath
+sucked thin in one’s throat, the blood flowed through one’s ears in a
+throbbing tide—thud, thud, thud, thud....
+
+And ever and again came gusts of turmoil, hammering, the clanging and
+throb of machinery, and presently—the bellowing of great beasts!
+
+### XI.
+
+*The Mooncalf Pastures*
+
+So we two poor terrestrial castaways, lost in that wild-growing moon
+jungle, crawled in terror before the sounds that had come upon us. We
+crawled, as it seemed, a long time before we saw either Selenite or
+mooncalf, though we heard the bellowing and gruntulous noises of these
+latter continually drawing nearer to us. We crawled through stony
+ravines, over snow slopes, amidst fungi that ripped like thin bladders
+at our thrust, emitting a watery humour, over a perfect pavement of
+things like puff-balls, and beneath interminable thickets of scrub. And
+ever more helplessly our eyes sought for our abandoned sphere. The
+noise of the mooncalves would at times be a vast flat calf-like sound,
+at times it rose to an amazed and wrathy bellowing, and again it would
+become a clogged bestial sound, as though these unseen creatures had
+sought to eat and bellow at the same time.
+
+Our first view was but an inadequate transitory glimpse, yet none the
+less disturbing because it was incomplete. Cavor was crawling in front
+at the time, and he first was aware of their proximity. He stopped
+dead, arresting me with a single gesture.
+
+A crackling and smashing of the scrub appeared to be advancing directly
+upon us, and then, as we squatted close and endeavoured to judge of the
+nearness and direction of this noise, there came a terrific bellow
+behind us, so close and vehement that the tops of the bayonet scrub
+bent before it, and one felt the breath of it hot and moist. And,
+turning about, we saw indistinctly through a crowd of swaying stems the
+mooncalf’s shining sides, and the long line of its back loomed out
+against the sky.
+
+Of course it is hard for me now to say how much I saw at that time,
+because my impressions were corrected by subsequent observation. First
+of all impressions was its enormous size; the girth of its body was
+some fourscore feet, its length perhaps two hundred. Its sides rose and
+fell with its laboured breathing. I perceived that its gigantic, flabby
+body lay along the ground, and that its skin was of a corrugated white,
+dappling into blackness along the backbone. But of its feet we saw
+nothing. I think also that we saw then the profile at least of the
+almost brainless head, with its fat-encumbered neck, its slobbering
+omnivorous mouth, its little nostrils, and tight shut eyes. (For the
+mooncalf invariably shuts its eyes in the presence of the sun.) We had
+a glimpse of a vast red pit as it opened its mouth to bleat and bellow
+again; we had a breath from the pit, and then the monster heeled over
+like a ship, dragged forward along the ground, creasing all its
+leathery skin, rolled again, and so wallowed past us, smashing a path
+amidst the scrub, and was speedily hidden from our eyes by the dense
+interlacings beyond. Another appeared more distantly, and then another,
+and then, as though he was guiding these animated lumps of provender to
+their pasture, a Selenite came momentarily into ken. My grip upon
+Cavor’s foot became convulsive at the sight of him, and we remained
+motionless and peering long after he had passed out of our range.
+
+By contrast with the mooncalves he seemed a trivial being, a mere ant,
+scarcely five feet high. He was wearing garments of some leathery
+substance, so that no portion of his actual body appeared, but of this,
+of course, we were entirely ignorant. He presented himself, therefore,
+as a compact, bristling creature, having much of the quality of a
+complicated insect, with whip-like tentacles and a clanging arm
+projecting from his shining cylindrical body case. The form of his head
+was hidden by his enormous many-spiked helmet—we discovered afterwards
+that he used the spikes for prodding refractory mooncalves—and a pair
+of goggles of darkened glass, set very much at the side, gave a
+bird-like quality to the metallic apparatus that covered his face. His
+arms did not project beyond his body case, and he carried himself upon
+short legs that, wrapped though they were in warm coverings, seemed to
+our terrestrial eyes inordinately flimsy. They had very short thighs,
+very long shanks, and little feet.
+
+In spite of his heavy-looking clothing, he was progressing with what
+would be, from the terrestrial point of view, very considerable
+strides, and his clanging arm was busy. The quality of his motion
+during the instant of his passing suggested haste and a certain anger,
+and soon after we had lost sight of him we heard the bellow of a
+mooncalf change abruptly into a short, sharp squeal followed by the
+scuffle of its acceleration. And gradually that bellowing receded, and
+then came to an end, as if the pastures sought had been attained.
+
+We listened. For a space the moon world was still. But it was some time
+before we resumed our crawling search for the vanished sphere.
+
+When next we saw mooncalves they were some little distance away from us
+in a place of tumbled rocks. The less vertical surfaces of the rocks
+were thick with a speckled green plant growing in dense mossy clumps,
+upon which these creatures were browsing. We stopped at the edge of the
+reeds amidst which we were crawling at the sight of them, peering out
+at them and looking round for a second glimpse of a Selenite. They lay
+against their food like stupendous slugs, huge, greasy hulls, eating
+greedily and noisily, with a sort of sobbing avidity. They seemed
+monsters of mere fatness, clumsy and overwhelmed to a degree that would
+make a Smithfield ox seem a model of agility. Their busy, writhing,
+chewing mouths, and eyes closed, together with the appetising sound of
+their munching, made up an effect of animal enjoyment that was
+singularly stimulating to our empty frames.
+
+“Hogs!” said Cavor, with unusual passion. “Disgusting hogs!” and after
+one glare of angry envy crawled off through the bushes to our right. I
+stayed long enough to see that the speckled plant was quite hopeless
+for human nourishment, then crawled after him, nibbling a quill of it
+between my teeth.
+
+Presently we were arrested again by the proximity of a Selenite, and
+this time we were able to observe him more exactly. Now we could see
+that the Selenite covering was indeed clothing, and not a sort of
+crustacean integument. He was quite similar in his costume to the
+former one we had glimpsed, except that ends of something like wadding
+were protruding from his neck, and he stood on a promontory of rock and
+moved his head this way and that, as though he was surveying the
+crater. We lay quite still, fearing to attract his attention if we
+moved, and after a time he turned about and disappeared.
+
+We came upon another drove of mooncalves bellowing up a ravine, and
+then we passed over a place of sounds, sounds of beating machinery as
+if some huge hall of industry came near the surface there. And while
+these sounds were still about us we came to the edge of a great open
+space, perhaps two hundred yards in diameter, and perfectly level. Save
+for a few lichens that advanced from its margin this space was bare,
+and presented a powdery surface of a dusty yellow colour. We were
+afraid to strike out across this space, but as it presented less
+obstruction to our crawling than the scrub, we went down upon it and
+began very circumspectly to skirt its edge.
+
+For a little while the noises from below ceased and everything, save
+for the faint stir of the growing vegetation, was very still. Then
+abruptly there began an uproar, louder, more vehement, and nearer than
+any we had so far heard. Of a certainty it came from below.
+Instinctively we crouched as flat as we could, ready for a prompt
+plunge into the thicket beside us. Each knock and throb seemed to
+vibrate through our bodies. Louder grew this throbbing and beating, and
+that irregular vibration increased until the whole moon world seemed to
+be jerking and pulsing.
+
+“Cover,” whispered Cavor, and I turned towards the bushes.
+
+At that instant came a thud like the thud of a gun, and then a thing
+happened—it still haunts me in my dreams. I had turned my head to look
+at Cavor’s face, and thrust out my hand in front of me as I did so. And
+my hand met nothing! I plunged suddenly into a bottomless hole!
+
+My chest hit something hard, and I found myself with my chin on the
+edge of an unfathomable abyss that had suddenly opened beneath me, my
+hand extended stiffly into the void. The whole of that flat circular
+area was no more than a gigantic lid, that was now sliding sideways
+from off the pit it had covered into a slot prepared for it.
+
+Had it not been for Cavor I think I should have remained rigid, hanging
+over this margin and staring into the enormous gulf below, until at
+last the edges of the slot scraped me off and hurled me into its
+depths. But Cavor had not received the shock that had paralysed me. He
+had been a little distance from the edge when the lid had first opened,
+and perceiving the peril that held me helpless, gripped my legs and
+pulled me backward. I came into a sitting position, crawled away from
+the edge for a space on all fours, then staggered up and ran after him
+across the thundering, quivering sheet of metal. It seemed to be
+swinging open with a steadily accelerated velocity, and the bushes in
+front of me shifted sideways as I ran.
+
+I was none too soon. Cavor’s back vanished amidst the bristling
+thicket, and as I scrambled up after him, the monstrous valve came into
+its position with a clang. For a long time we lay panting, not daring
+to approach the pit.
+
+But at last very cautiously and bit by bit we crept into a position
+from which we could peer down. The bushes about us creaked and waved
+with the force of a breeze that was blowing down the shaft. We could
+see nothing at first except smooth vertical walls descending at last
+into an impenetrable black. And then very gradually we became aware of
+a number of very faint and little lights going to and fro.
+
+For a time that stupendous gulf of mystery held us so that we forgot
+even our sphere. In time, as we grew more accustomed to the darkness,
+we could make out very small, dim, elusive shapes moving about among
+those needle-point illuminations. We peered amazed and incredulous,
+understanding so little that we could find no words to say. We could
+distinguish nothing that would give us a clue to the meaning of the
+faint shapes we saw.
+
+“What can it be?” I asked; “what can it be?”
+
+“The engineering!... They must live in these caverns during the night,
+and come out during the day.”
+
+“Cavor!” I said. “Can they be—_that_—it was something like—men?”
+
+“_That_ was not a man.”
+
+“We dare risk nothing!”
+
+“We dare do nothing until we find the sphere!”
+
+“We _can_ do nothing until we find the sphere.”
+
+He assented with a groan and stirred himself to move. He stared about
+him for a space, sighed, and indicated a direction. We struck out
+through the jungle. For a time we crawled resolutely, then with
+diminishing vigour. Presently among great shapes of flabby purple there
+came a noise of trampling and cries about us. We lay close, and for a
+long time the sounds went to and fro and very near. But this time we
+saw nothing. I tried to whisper to Cavor that I could hardly go without
+food much longer, but my mouth had become too dry for whispering.
+
+“Cavor,” I said, “I must have food.”
+
+He turned a face full of dismay towards me. “It’s a case for holding
+out,” he said.
+
+“But I _must_,” I said, “and look at my lips!”
+
+“I’ve been thirsty some time.”
+
+“If only some of that snow had remained!”
+
+“It’s clean gone! We’re driving from arctic to tropical at the rate of
+a degree a minute....”
+
+I gnawed my hand.
+
+“The sphere!” he said. “There is nothing for it but the sphere.”
+
+We roused ourselves to another spurt of crawling. My mind ran entirely
+on edible things, on the hissing profundity of summer drinks, more
+particularly I craved for beer. I was haunted by the memory of a
+sixteen gallon cask that had swaggered in my Lympne cellar. I thought
+of the adjacent larder, and especially of steak and kidney pie—tender
+steak and plenty of kidney, and rich, thick gravy between. Ever and
+again I was seized with fits of hungry yawning. We came to flat places
+overgrown with fleshy red things, monstrous coralline growths; as we
+pushed against them they snapped and broke. I noted the quality of the
+broken surfaces. The confounded stuff certainly looked of a biteable
+texture. Then it seemed to me that it smelt rather well.
+
+I picked up a fragment and sniffed at it.
+
+“Cavor,” I said in a hoarse undertone.
+
+He glanced at me with his face screwed up. “Don’t,” he said. I put down
+the fragment, and we crawled on through this tempting fleshiness for a
+space.
+
+“Cavor,” I asked, “why _not?_”
+
+“Poison,” I heard him say, but he did not look round.
+
+We crawled some way before I decided.
+
+“I’ll chance it,” said I.
+
+He made a belated gesture to prevent me. I stuffed my mouth full. He
+crouched watching my face, his own twisted into the oddest expression.
+“It’s good,” I said.
+
+“O Lord!” he cried.
+
+He watched me munch, his face wrinkled between desire and disapproval,
+then suddenly succumbed to appetite and began to tear off huge
+mouthfuls. For a time we did nothing but eat.
+
+The stuff was not unlike a terrestrial mushroom, only it was much laxer
+in texture, and, as one swallowed it, it warmed the throat. At first we
+experienced a mere mechanical satisfaction in eating; then our blood
+began to run warmer, and we tingled at the lips and fingers, and then
+new and slightly irrelevant ideas came bubbling up in our minds.
+
+“It’s good,” said I. “Infernally good! What a home for our surplus
+population! Our poor surplus population,” and I broke off another large
+portion. It filled me with a curiously benevolent satisfaction that
+there was such good food in the moon. The depression of my hunger gave
+way to an irrational exhilaration. The dread and discomfort in which I
+had been living vanished entirely. I perceived the moon no longer as a
+planet from which I most earnestly desired the means of escape, but as
+a possible refuge from human destitution. I think I forgot the
+Selenites, the mooncalves, the lid, and the noises completely so soon
+as I had eaten that fungus.
+
+Cavor replied to my third repetition of my “surplus population” remark
+with similar words of approval. I felt that my head swam, but I put
+this down to the stimulating effect of food after a long fast.
+“Ess’lent discov’ry yours, Cavor,” said I. “Se’nd on’y to the ‘tato.”
+
+“Whajer mean?” asked Cavor. “‘Scovery of the moon—se’nd on’y to the
+tato?”
+
+I looked at him, shocked at his suddenly hoarse voice, and by the
+badness of his articulation. It occurred to me in a flash that he was
+intoxicated, possibly by the fungus. It also occurred to me that he
+erred in imagining that he had discovered the moon; he had not
+discovered it, he had only reached it. I tried to lay my hand on his
+arm and explain this to him, but the issue was too subtle for his
+brain. It was also unexpectedly difficult to express. After a momentary
+attempt to understand me—I remember wondering if the fungus had made my
+eyes as fishy as his—he set off upon some observations on his own
+account.
+
+“We are,” he announced with a solemn hiccup, “the creashurs o’ what we
+eat and drink.”
+
+He repeated this, and as I was now in one of my subtle moods, I
+determined to dispute it. Possibly I wandered a little from the point.
+But Cavor certainly did not attend at all properly. He stood up as well
+as he could, putting a hand on my head to steady himself, which was
+disrespectful, and stood staring about him, quite devoid now of any
+fear of the moon beings.
+
+I tried to point out that this was dangerous for some reason that was
+not perfectly clear to me, but the word “dangerous” had somehow got
+mixed with “indiscreet,” and came out rather more like “injurious” than
+either; and after an attempt to disentangle them, I resumed my
+argument, addressing myself principally to the unfamiliar but attentive
+coralline growths on either side. I felt that it was necessary to clear
+up this confusion between the moon and a potato at once—I wandered into
+a long parenthesis on the importance of precision of definition in
+argument. I did my best to ignore the fact that my bodily sensations
+were no longer agreeable.
+
+In some way that I have now forgotten, my mind was led back to projects
+of colonisation. “We must annex this moon,” I said. “There must be no
+shilly-shally. This is part of the White Man’s Burthen. Cavor—we
+are—_hic_—Satap—mean Satraps! Nempire Cæsar never dreamt. B’in all the
+newspapers. Cavorecia. Bedfordecia. Bedfordecia—hic—Limited.
+Mean—unlimited! Practically.”
+
+Certainly I was intoxicated.
+
+I embarked upon an argument to show the infinite benefits our arrival
+would confer on the moon. I involved myself in a rather difficult proof
+that the arrival of Columbus was, on the whole, beneficial to America.
+I found I had forgotten the line of argument I had intended to pursue,
+and continued to repeat “sim’lar to C’lumbus,” to fill up time.
+
+From that point my memory of the action of that abominable fungus
+becomes confused. I remember vaguely that we declared our intention of
+standing no nonsense from any confounded insects, that we decided it
+ill became men to hide shamefully upon a mere satellite, that we
+equipped ourselves with huge armfuls of the fungus—whether for missile
+purposes or not I do not know—and, heedless of the stabs of the bayonet
+scrub, we started forth into the sunshine.
+
+Almost immediately we must have come upon the Selenites. There were six
+of them, and they were marching in single file over a rocky place,
+making the most remarkable piping and whining sounds. They all seemed
+to become aware of us at once, all instantly became silent and
+motionless, like animals, with their faces turned towards us.
+
+For a moment I was sobered.
+
+“Insects,” murmured Cavor, “insects! And they think I’m going to crawl
+about on my stomach—on my vertebrated stomach!
+
+“Stomach,” he repeated slowly, as though he chewed the indignity.
+
+Then suddenly, with a sort of fury, he made three vast strides and
+leapt towards them. He leapt badly; he made a series of somersaults in
+the air, whirled right over them, and vanished with an enormous splash
+amidst the cactus bladders. What the Selenites made of this amazing,
+and to my mind undignified irruption from another planet, I have no
+means of guessing. I seem to remember the sight of their backs as they
+ran in all directions, but I am not sure. All these last incidents
+before oblivion came are vague and faint in my mind. I know I made a
+step to follow Cavor, and tripped and fell headlong among the rocks. I
+was, I am certain, suddenly and vehemently ill. I seem to remember a
+violent struggle and being gripped by metallic clasps....
+
+My next clear recollection is that we were prisoners at we knew not
+what depths beneath the moon’s surface; we were in darkness amidst
+strange distracting noises; our bodies were covered with scratches and
+bruises, and our heads racked with pain.
+
+### XII.
+
+*The Selenite’s Face*
+
+I found myself sitting crouched together in a tumultuous darkness. For
+a long time I could not understand where I was, nor how I had come to
+this perplexity. I thought of the cupboard into which I had been thrust
+at times when I was a child, and then of a very dark and noisy bedroom
+in which I had slept during an illness. But these sounds about me were
+not the noises I had known, and there was a thin flavour in the air
+like the wind of a stable. Then I supposed we must still be at work
+upon the sphere, and that somehow I had got into the cellar of Cavor’s
+house. I remembered we had finished the sphere, and fancied I must
+still be in it and travelling through space.
+
+“Cavor,” I said, “cannot we have some light?”
+
+There came no answer.
+
+“Cavor!” I insisted.
+
+I was answered by a groan. “My head!” I heard him say; “my head!”
+
+I attempted to press my hands to my brow, which ached, and discovered
+they were tied together. This startled me very much. I brought them up
+to my mouth and felt the cold smoothness of metal. They were chained
+together. I tried to separate my legs and made out they were similarly
+fastened, and also that I was fastened to the ground by a much thicker
+chain about the middle of my body.
+
+I was more frightened than I had yet been by anything in all our
+strange experiences. For a time I tugged silently at my bonds. “Cavor!”
+I cried out sharply. “Why am I tied? Why have you tied me hand and
+foot?”
+
+“I haven’t tied you,” he answered. “It’s the Selenites.”
+
+The Selenites! My mind hung on that for a space. Then my memories came
+back to me: the snowy desolation, the thawing of the air, the growth of
+the plants, our strange hopping and crawling among the rocks and
+vegetation of the crater. All the distress of our frantic search for
+the sphere returned to me.... Finally the opening of the great lid that
+covered the pit!
+
+Then as I strained to trace our later movements down to our present
+plight, the pain in my head became intolerable. I came to an
+insurmountable barrier, an obstinate blank.
+
+“Cavor!”
+
+“Yes?”
+
+“Where are we?”
+
+“How should I know?”
+
+“Are we dead?”
+
+“What nonsense!”
+
+“They’ve got us, then!”
+
+He made no answer but a grunt. The lingering traces of the poison
+seemed to make him oddly irritable.
+
+“What do you mean to do?”
+
+“How should I know what to do?”
+
+“Oh, very well!” said I, and became silent. Presently, I was roused
+from a stupor. “O _Lord!_” I cried; “I wish you’d stop that buzzing!”
+
+We lapsed into silence again, listening to the dull confusion of noises
+like the muffled sounds of a street or factory that filled our ears. I
+could make nothing of it, my mind pursued first one rhythm and then
+another, and questioned it in vain. But after a long time I became
+aware of a new and sharper element, not mingling with the rest but
+standing out, as it were, against that cloudy background of sound. It
+was a series of relatively very little definite sounds, tappings and
+rubbings, like a loose spray of ivy against a window or a bird moving
+about upon a box. We listened and peered about us, but the darkness was
+a velvet pall. There followed a noise like the subtle movement of the
+wards of a well-oiled lock. And then there appeared before me, hanging
+as it seemed in an immensity of black, a thin bright line.
+
+“Look!” whispered Cavor very softly.
+
+“What is it?”
+
+“I don’t know.”
+
+We stared.
+
+The thin bright line became a band, and broader and paler. It took upon
+itself the quality of a bluish light falling upon a white-washed wall.
+It ceased to be parallel-sided; it developed a deep indentation on one
+side. I turned to remark this to Cavor, and was amazed to see his ear
+in a brilliant illumination—all the rest of him in shadow. I twisted my
+head round as well as my bonds would permit. “Cavor,” I said, “it’s
+behind!”
+
+His ear vanished—gave place to an eye!
+
+Suddenly the crack that had been admitting the light broadened out, and
+revealed itself as the space of an opening door. Beyond was a sapphire
+vista, and in the doorway stood a grotesque outline silhouetted against
+the glare.
+
+We both made convulsive efforts to turn, and failing, sat staring over
+our shoulders at this. My first impression was of some clumsy quadruped
+with lowered head. Then I perceived it was the slender pinched body and
+short and extremely attenuated bandy legs of a Selenite, with his head
+depressed between his shoulders. He was without the helmet and body
+covering they wear upon the exterior.
+
+He was a blank, black figure to us, but instinctively our imaginations
+supplied features to his very human outline. I, at least, took it
+instantly that he was somewhat hunchbacked, with a high forehead and
+long features.
+
+He came forward three steps and paused for a time. His movements seemed
+absolutely noiseless. Then he came forward again. He walked like a
+bird, his feet fell one in front of the other. He stepped out of the
+ray of light that came through the doorway, and it seemed as though he
+vanished altogether in the shadow.
+
+For a moment my eyes sought him in the wrong place, and then I
+perceived him standing facing us both in the full light. Only the human
+features I had attributed to him were not there at all!
+
+Of course I ought to have expected that, only I didn’t. It came to me
+as an absolute, for a moment an overwhelming shock. It seemed as though
+it wasn’t a face, as though it must needs be a mask, a horror, a
+deformity, that would presently be disavowed or explained. There was no
+nose, and the thing had dull bulging eyes at the side—in the silhouette
+I had supposed they were ears. There were no ears.... I have tried to
+draw one of these heads, but I cannot. There was a mouth, downwardly
+curved, like a human mouth in a face that stares ferociously....
+
+The neck on which the head was poised was jointed in three places,
+almost like the short joints in the leg of a crab. The joints of the
+limbs I could not see, because of the puttee-like straps in which they
+were swathed, and which formed the only clothing the being wore.
+
+There the thing was, looking at us!
+
+At the time my mind was taken up by the mad impossibility of the
+creature. I suppose he also was amazed, and with more reason, perhaps,
+for amazement than we. Only, confound him! he did not show it. We did
+at least know what had brought about this meeting of incompatible
+creatures. But conceive how it would seem to decent Londoners, for
+example, to come upon a couple of living things, as big as men and
+absolutely unlike any other earthly animals, careering about among the
+sheep in Hyde Park! It must have taken him like that.
+
+Figure us! We were bound hand and foot, fagged and filthy; our beards
+two inches long, our faces scratched and bloody. Cavor you must imagine
+in his knickerbockers (torn in several places by the bayonet scrub) his
+Jaegar shirt and old cricket cap, his wiry hair wildly disordered, a
+tail to every quarter of the heavens. In that blue light his face did
+not look red but very dark, his lips and the drying blood upon my hands
+seemed black. If possible I was in a worse plight than he, on account
+of the yellow fungus into which I had jumped. Our jackets were
+unbuttoned, and our shoes had been taken off and lay at our feet. And
+we were sitting with our backs to this queer bluish light, peering at
+such a monster as Durer might have invented.
+
+Cavor broke the silence; started to speak, went hoarse, and cleared his
+throat. Outside began a terrific bellowing, as if a mooncalf were in
+trouble. It ended in a shriek, and everything was still again.
+
+Presently the Selenite turned about, flickered into the shadow, stood
+for a moment retrospective at the door, and then closed it on us; and
+once more we were in that murmurous mystery of darkness into which we
+had awakened.
+
+### XIII.
+
+*Mr. Cavor Makes Some Suggestions*
+
+For a time neither of us spoke. To focus together all the things we had
+brought upon ourselves seemed beyond my mental powers.
+
+“They’ve got us,” I said at last.
+
+“It was that fungus.”
+
+“Well—if I hadn’t taken it we should have fainted and starved.”
+
+“We might have found the sphere.”
+
+I lost my temper at his persistence, and swore to myself. For a time we
+hated one another in silence. I drummed with my fingers on the floor
+between my knees, and gritted the links of my fetters together.
+Presently I was forced to talk again.
+
+“What do you make of it, anyhow?” I asked humbly.
+
+“They are reasonable creatures—they can make things and do things.
+Those lights we saw...”
+
+He stopped. It was clear he could make nothing of it.
+
+When he spoke again it was to confess, “After all, they are more human
+than we had a right to expect. I suppose—”
+
+He stopped irritatingly.
+
+“Yes?”
+
+“I suppose, anyhow—on any planet where there is an intelligent
+animal—it will carry its brain case upward, and have hands, and walk
+erect.”
+
+Presently he broke away in another direction.
+
+“We are some way in,” he said. “I mean—perhaps a couple of thousand
+feet or more.”
+
+“Why?”
+
+“It’s cooler. And our voices are so much louder. That faded quality—it
+has altogether gone. And the feeling in one’s ears and throat.”
+
+I had not noted that, but I did now.
+
+“The air is denser. We must be some depths—a mile even, we may
+be—inside the moon.”
+
+“We never thought of a world inside the moon.”
+
+“No.”
+
+“How could we?”
+
+“We might have done. Only one gets into habits of mind.”
+
+He thought for a time.
+
+“_Now_,” he said, “it seems such an obvious thing.”
+
+“Of course! The moon must be enormously cavernous, with an atmosphere
+within, and at the centre of its caverns a sea.
+
+“One knew that the moon had a lower specific gravity than the earth,
+one knew that it had little air or water outside, one knew, too, that
+it was sister planet to the earth, and that it was unaccountable that
+it should be different in composition. The inference that it was
+hollowed out was as clear as day. And yet one never saw it as a fact.
+Kepler, of course—”
+
+His voice had the interest now of a man who has discerned a pretty
+sequence of reasoning.
+
+“Yes,” he said, “Kepler with his _sub-volvani_ was right after all.”
+
+“I wish you had taken the trouble to find that out before we came,” I
+said.
+
+He answered nothing, buzzing to himself softly, as he pursued his
+thoughts. My temper was going.
+
+“What do you think has become of the sphere, anyhow?” I asked.
+
+“Lost,” he said, like a man who answers an uninteresting question.
+
+“Among those plants?”
+
+“Unless they find it.”
+
+“And then?”
+
+“How can I tell?”
+
+“Cavor,” I said, with a sort of hysterical bitterness, “things look
+bright for my Company...”
+
+He made no answer.
+
+“Good Lord!” I exclaimed. “Just think of all the trouble we took to get
+into this pickle! What did we come for? What are we after? What was the
+moon to us or we to the moon? We wanted too much, we tried too much. We
+ought to have started the little things first. It was you proposed the
+moon! Those Cavorite spring blinds! I am certain we could have worked
+them for terrestrial purposes. Certain! Did you really understand what
+I proposed? A steel cylinder—”
+
+“Rubbish!” said Cavor.
+
+We ceased to converse.
+
+For a time Cavor kept up a broken monologue without much help from me.
+
+“If they find it,” he began, “if they find it ... what will they do
+with it? Well, that’s a question. It may be that’s _the_ question. They
+won’t understand it, anyhow. If they understood that sort of thing they
+would have come long since to the earth. Would they? Why shouldn’t
+they? But they would have sent something—they couldn’t keep their hands
+off such a possibility. No! But they will examine it. Clearly they are
+intelligent and inquisitive. They will examine it—get inside it—trifle
+with the studs. Off! ... That would mean the moon for us for all the
+rest of our lives. Strange creatures, strange knowledge....”
+
+“As for strange knowledge—” said I, and language failed me.
+
+“Look here, Bedford,” said Cavor, “you came on this expedition of your
+own free will.”
+
+“You said to me, ‘Call it prospecting’.”
+
+“There’s always risks in prospecting.”
+
+“Especially when you do it unarmed and without thinking out every
+possibility.”
+
+“I was so taken up with the sphere. The thing rushed on us, and carried
+us away.”
+
+“Rushed on _me_, you mean.”
+
+“Rushed on me just as much. How was I to know when I set to work on
+molecular physics that the business would bring me here—of all places?”
+
+“It’s this accursed science,” I cried. “It’s the very Devil. The
+mediæval priests and persecutors were right and the Moderns are all
+wrong. You tamper with it—and it offers you gifts. And directly you
+take them it knocks you to pieces in some unexpected way. Old passions
+and new weapons—now it upsets your religion, now it upsets your social
+ideas, now it whirls you off to desolation and misery!”
+
+“Anyhow, it’s no use your quarrelling with me _now_. These
+creatures—these Selenites, or whatever we choose to call them—have got
+us tied hand and foot. Whatever temper you choose to go through with it
+in, you will have to go through with it.... We have experiences before
+us that will need all our coolness.”
+
+He paused as if he required my assent. But I sat sulking. “Confound
+your science!” I said.
+
+“The problem is communication. Gestures, I fear, will be different.
+Pointing, for example. No creatures but men and monkeys point.”
+
+That was too obviously wrong for me. “Pretty nearly every animal,” I
+cried, “points with its eyes or nose.”
+
+Cavor meditated over that. “Yes,” he said at last, “and we don’t.
+There’s such differences—such differences!”
+
+“One might.... But how can I tell? There is speech. The sounds they
+make, a sort of fluting and piping. I don’t see how we are to imitate
+that. Is it their speech, that sort of thing? They may have different
+senses, different means of communication. Of course they are minds and
+we are minds; there must be something in common. Who knows how far we
+may not get to an understanding?”
+
+“The things are outside us,” I said. “They’re more different from us
+than the strangest animals on earth. They are a different clay. What is
+the good of talking like this?”
+
+Cavor thought. “I don’t see that. Where there are minds they will have
+something _similar_—even though they have been evolved on different
+planets. Of course if it was a question of instincts, if we or they are
+no more than animals—”
+
+“Well, _are_ they? They’re much more like ants on their hind legs than
+human beings, and who ever got to any sort of understanding with ants?”
+
+“But these machines and clothing! No, I don’t hold with you, Bedford.
+The difference is wide—”
+
+“It’s insurmountable.”
+
+“The resemblance must bridge it. I remember reading once a paper by the
+late Professor Galton on the possibility of communication between the
+planets. Unhappily, at that time it did not seem probable that that
+would be of any material benefit to me, and I fear I did not give it
+the attention I should have done—in view of this state of affairs.
+Yet.... Now, let me see!
+
+“His idea was to begin with those broad truths that must underlie all
+conceivable mental existences and establish a basis on those. The great
+principles of geometry, to begin with. He proposed to take some leading
+proposition of Euclid’s, and show by construction that its truth was
+known to us, to demonstrate, for example, that the angles at the base
+of an isosceles triangle are equal, and that if the equal sides be
+produced the angles on the other side of the base are equal also, or
+that the square on the hypotenuse of a right-angled triangle is equal
+to the sum of the squares on the two other sides. By demonstrating our
+knowledge of these things we should demonstrate our possession of a
+reasonable intelligence.... Now, suppose I ... I might draw the
+geometrical figure with a wet finger, or even trace it in the air....”
+
+He fell silent. I sat meditating his words. For a time his wild hope of
+communication, of interpretation, with these weird beings held me. Then
+that angry despair that was a part of my exhaustion and physical misery
+resumed its sway. I perceived with a sudden novel vividness the
+extraordinary folly of everything I had ever done. “Ass!” I said; “oh,
+ass, unutterable ass.... I seem to exist only to go about doing
+preposterous things. Why did we ever leave the thing? ... Hopping about
+looking for patents and concessions in the craters of the moon!... If
+only we had had the sense to fasten a handkerchief to a stick to show
+where we had left the sphere!”
+
+I subsided, fuming.
+
+“It is clear,” meditated Cavor, “they are intelligent. One can
+hypothecate certain things. As they have not killed us at once, they
+must have ideas of mercy. Mercy! at any rate of restraint. Possibly of
+intercourse. They may meet us. And this apartment and the glimpses we
+had of its guardian. These fetters! A high degree of intelligence...”
+
+“I wish to heaven,” cried I, “I’d thought even twice! Plunge after
+plunge. First one fluky start and then another. It was my confidence in
+you! _Why_ didn’t I stick to my play? That was what I was equal to.
+That was my world and the life I was made for. I could have finished
+that play. I’m certain ... it was a good play. I had the scenario as
+good as done. Then.... Conceive it! leaping to the moon!
+Practically—I’ve thrown my life away! That old woman in the inn near
+Canterbury had better sense.”
+
+I looked up, and stopped in mid-sentence. The darkness had given place
+to that bluish light again. The door was opening, and several noiseless
+Selenites were coming into the chamber. I became quite still, staring
+at their grotesque faces.
+
+Then suddenly my sense of disagreeable strangeness changed to interest.
+I perceived that the foremost and second carried bowls. One elemental
+need at least our minds could understand in common. They were bowls of
+some metal that, like our fetters, looked dark in that bluish light;
+and each contained a number of whitish fragments. All the cloudy pain
+and misery that oppressed me rushed together and took the shape of
+hunger. I eyed these bowls wolfishly, and, though it returned to me in
+dreams, at that time it seemed a small matter that at the end of the
+arms that lowered one towards me were not hands, but a sort of flap and
+thumb, like the end of an elephant’s trunk. The stuff in the bowl was
+loose in texture, and whitish brown in colour—rather like lumps of some
+cold souffle, and it smelt faintly like mushrooms. From a partially
+divided carcass of a mooncalf that we presently saw, I am inclined to
+believe it must have been mooncalf flesh.
+
+My hands were so tightly chained that I could barely contrive to reach
+the bowl; but when they saw the effort I made, two of them dexterously
+released one of the turns about my wrist. Their tentacle hands were
+soft and cold to my skin. I immediately seized a mouthful of the food.
+It had the same laxness in texture that all organic structures seem to
+have upon the moon; it tasted rather like a gauffre or a damp meringue,
+but in no way was it disagreeable. I took two other mouthfuls. “I
+_wanted_—foo’!” said I, tearing off a still larger piece....
+
+For a time we ate with an utter absence of self-consciousness. We ate
+and presently drank like tramps in a soup kitchen. Never before nor
+since have I been hungry to the ravenous pitch, and save that I have
+had this very experience I could never have believed that, a quarter of
+a million of miles out of our proper world, in utter perplexity of
+soul, surrounded, watched, touched by beings more grotesque and inhuman
+than the worst creations of a nightmare, it would be possible for me to
+eat in utter forgetfulness of all these things. They stood about us
+watching us, and ever and again making a slight elusive twittering that
+stood, I suppose, in the stead of speech. I did not even shiver at
+their touch. And when the first zeal of my feeding was over, I could
+note that Cavor, too, had been eating with the same shameless abandon.
+
+### XIV.
+
+*Experiments in intercourse*
+
+When at last we had made an end of eating, the Selenites linked our
+hands closely together again, and then untwisted the chains about our
+feet and rebound them, so as to give us a limited freedom of movement.
+Then they unfastened the chains about our waists. To do all this they
+had to handle us freely, and ever and again one of their queer heads
+came down close to my face, or a soft tentacle-hand touched my head or
+neck. I don’t remember that I was afraid then or repelled by their
+proximity. I think that our incurable anthropomorphism made us imagine
+there were human heads inside their masks. The skin, like everything
+else, looked bluish, but that was on account of the light; and it was
+hard and shiny, quite in the beetle-wing fashion, not soft, or moist,
+or hairy, as a vertebrated animal’s would be. Along the crest of the
+head was a low ridge of whitish spines running from back to front, and
+a much larger ridge curved on either side over the eyes. The Selenite
+who untied me used his mouth to help his hands.
+
+“They seem to be releasing us,” said Cavor. “Remember we are on the
+moon! Make no sudden movements!”
+
+“Are you going to try that geometry?”
+
+“If I get a chance. But, of course, they may make an advance first.”
+
+We remained passive, and the Selenites, having finished their
+arrangements, stood back from us, and seemed to be looking at us. I say
+seemed to be, because as their eyes were at the side and not in front,
+one had the same difficulty in determining the direction in which they
+were looking as one has in the case of a hen or a fish. They conversed
+with one another in their reedy tones, that seemed to me impossible to
+imitate or define. The door behind us opened wider, and, glancing over
+my shoulder, I saw a vague large space beyond, in which quite a little
+crowd of Selenites were standing. They seemed a curiously miscellaneous
+rabble.
+
+“Do they want us to imitate those sounds?” I asked Cavor.
+
+“I don’t think so,” he said.
+
+“It seems to me that they are trying to make us understand something.”
+
+“I can’t make anything of their gestures. Do you notice this one, who
+is worrying with his head like a man with an uncomfortable collar?”
+
+“Let us shake our heads at him.”
+
+We did that, and finding it ineffectual, attempted an imitation of the
+Selenites’ movements. That seemed to interest them. At any rate they
+all set up the same movement. But as that seemed to lead to nothing, we
+desisted at last and so did they, and fell into a piping argument among
+themselves. Then one of them, shorter and very much thicker than the
+others, and with a particularly wide mouth, squatted down suddenly
+beside Cavor, and put his hands and feet in the same posture as Cavor’s
+were bound, and then by a dexterous movement stood up.
+
+“Cavor,” I shouted, “they want us to get up!”
+
+He stared open-mouthed. “That’s it!” he said.
+
+And with much heaving and grunting, because our hands were tied
+together, we contrived to struggle to our feet. The Selenites made way
+for our elephantine heavings, and seemed to twitter more volubly. As
+soon as we were on our feet the thick-set Selenite came and patted each
+of our faces with his tentacles, and walked towards the open doorway.
+That also was plain enough, and we followed him. We saw that four of
+the Selenites standing in the doorway were much taller than the others,
+and clothed in the same manner as those we had seen in the crater,
+namely, with spiked round helmets and cylindrical body-cases, and that
+each of the four carried a goad with spike and guard made of that same
+dull-looking metal as the bowls. These four closed about us, one on
+either side of each of us, as we emerged from our chamber into the
+cavern from which the light had come.
+
+We did not get our impression of that cavern all at once. Our attention
+was taken up by the movements and attitudes of the Selenites
+immediately about us, and by the necessity of controlling our motion,
+lest we should startle and alarm them and ourselves by some excessive
+stride. In front of us was the short, thick-set being who had solved
+the problem of asking us to get up, moving with gestures that seemed,
+almost all of them, intelligible to us, inviting us to follow him. His
+spout-like face turned from one of us to the other with a quickness
+that was clearly interrogative. For a time, I say, we were taken up
+with these things.
+
+But at last the great place that formed a background to our movements
+asserted itself. It became apparent that the source of much, at least,
+of the tumult of sounds which had filled our ears ever since we had
+recovered from the stupefaction of the fungus was a vast mass of
+machinery in active movement, whose flying and whirling parts were
+visible indistinctly over the heads and between the bodies of the
+Selenites who walked about us. And not only did the web of sounds that
+filled the air proceed from this mechanism, but also the peculiar blue
+light that irradiated the whole place. We had taken it as a natural
+thing that a subterranean cavern should be artificially lit, and even
+now, though the fact was patent to my eyes, I did not really grasp its
+import until presently the darkness came. The meaning and structure of
+this huge apparatus we saw I cannot explain, because we neither of us
+learnt what it was for or how it worked. One after another, big shafts
+of metal flung out and up from its centre, their heads travelling in
+what seemed to me to be a parabolic path; each dropped a sort of
+dangling arm as it rose towards the apex of its flight and plunged down
+into a vertical cylinder, forcing this down before it. About it moved
+the shapes of tenders, little figures that seemed vaguely different
+from the beings about us. As each of the three dangling arms of the
+machine plunged down, there was a clank and then a roaring, and out of
+the top of the vertical cylinder came pouring this incandescent
+substance that lit the place, and ran over as milk runs over a boiling
+pot, and dripped luminously into a tank of light below. It was a cold
+blue light, a sort of phosphorescent glow but infinitely brighter, and
+from the tanks into which it fell it ran in conduits athwart the
+cavern.
+
+Thud, thud, thud, thud, came the sweeping arms of this unintelligible
+apparatus, and the light substance hissed and poured. At first the
+thing seemed only reasonably large and near to us, and then I saw how
+exceedingly little the Selenites upon it seemed, and I realised the
+full immensity of cavern and machine. I looked from this tremendous
+affair to the faces of the Selenites with a new respect. I stopped, and
+Cavor stopped, and stared at this thunderous engine.
+
+“But this is stupendous!” I said. “What can it be for?”
+
+Cavor’s blue-lit face was full of an intelligent respect. “I can’t
+dream! Surely these beings— Men could not make a thing like that! Look
+at those arms, are they on connecting rods?”
+
+The thick-set Selenite had gone some paces unheeded. He came back and
+stood between us and the great machine. I avoided seeing him, because I
+guessed somehow that his idea was to beckon us onward. He walked away
+in the direction he wished us to go, and turned and came back, and
+flicked our faces to attract our attention.
+
+Cavor and I looked at one another.
+
+“Cannot we show him we are interested in the machine?” I said.
+
+“Yes,” said Cavor. “We’ll try that.” He turned to our guide and smiled,
+and pointed to the machine, and pointed again, and then to his head,
+and then to the machine. By some defect of reasoning he seemed to
+imagine that broken English might help these gestures. “Me look ‘im,”
+he said, “me think ‘im very much. Yes.”
+
+His behaviour seemed to check the Selenites in their desire for our
+progress for a moment. They faced one another, their queer heads moved,
+the twittering voices came quick and liquid. Then one of them, a lean,
+tall creature, with a sort of mantle added to the puttee in which the
+others were dressed, twisted his elephant trunk of a hand about Cavor’s
+waist, and pulled him gently to follow our guide, who again went on
+ahead. Cavor resisted. “We may just as well begin explaining ourselves
+now. They may think we are new animals, a new sort of mooncalf perhaps!
+It is most important that we should show an intelligent interest from
+the outset.”
+
+He began to shake his head violently. “No, no,” he said, “me not come
+on one minute. Me look at ‘im.”
+
+“Isn’t there some geometrical point you might bring in _apropos_ of
+that affair?” I suggested, as the Selenites conferred again.
+
+“Possibly a parabolic—” he began.
+
+He yelled loudly, and leaped six feet or more!
+
+One of the four armed moon-men had pricked him with a goad!
+
+I turned on the goad-bearer behind me with a swift threatening gesture,
+and he started back. This and Cavor’s sudden shout and leap clearly
+astonished all the Selenites. They receded hastily, facing us. For one
+of those moments that seem to last for ever, we stood in angry protest,
+with a scattered semicircle of these inhuman beings about us.
+
+“He pricked me!” said Cavor, with a catching of the voice.
+
+“I saw him,” I answered.
+
+“Confound it!” I said to the Selenites; “we’re not going to stand that!
+What on earth do you take us for?”
+
+I glanced quickly right and left. Far away across the blue wilderness
+of cavern I saw a number of other Selenites running towards us; broad
+and slender they were, and one with a larger head than the others. The
+cavern spread wide and low, and receded in every direction into
+darkness. Its roof, I remember, seemed to bulge down as if with the
+weight of the vast thickness of rocks that prisoned us. There was no
+way out of it—no way out of it. Above, below, in every direction, was
+the unknown, and these inhuman creatures, with goads and gestures,
+confronting us, and we two unsupported men!
+
+### XV.
+
+*The Giddy Bridge*
+
+Just for a moment that hostile pause endured. I suppose that both we
+and the Selenites did some very rapid thinking. My clearest impression
+was that there was nothing to put my back against, and that we were
+bound to be surrounded and killed. The overwhelming folly of our
+presence there loomed over me in black, enormous reproach. Why had I
+ever launched myself on this mad, inhuman expedition?
+
+Cavor came to my side and laid his hand on my arm. His pale and
+terrified face was ghastly in the blue light.
+
+“We can’t do anything,” he said. “It’s a mistake. They don’t
+understand. We must go. As they want us to go.”
+
+I looked down at him, and then at the fresh Selenites who were coming
+to help their fellows. “If I had my hands free—”
+
+“It’s no use,” he panted.
+
+“No.”
+
+“We’ll go.”
+
+And he turned about and led the way in the direction that had been
+indicated for us.
+
+I followed, trying to look as subdued as possible, and feeling at the
+chains about my wrists. My blood was boiling. I noted nothing more of
+that cavern, though it seemed to take a long time before we had marched
+across it, or if I noted anything I forgot it as I saw it. My thoughts
+were concentrated, I think, upon my chains and the Selenites, and
+particularly upon the helmeted ones with the goads. At first they
+marched parallel with us, and at a respectful distance, but presently
+they were overtaken by three others, and then they drew nearer, until
+they were within arms length again. I winced like a beaten horse as
+they came near to us. The shorter, thicker Selenite marched at first on
+our right flank, but presently came in front of us again.
+
+How well the picture of that grouping has bitten into my brain; the
+back of Cavor’s downcast head just in front of me, and the dejected
+droop of his shoulders, and our guide’s gaping visage, perpetually
+jerking about him, and the goad-bearers on either side, watchful, yet
+open-mouthed—a blue monochrome. And after all, I _do_ remember one
+other thing besides the purely personal affair, which is, that a sort
+of gutter came presently across the floor of the cavern, and then ran
+along by the side of the path of rock we followed. And it was full of
+that same bright blue luminous stuff that flowed out of the great
+machine. I walked close beside it, and I can testify it radiated not a
+particle of heat. It was brightly shining, and yet it was neither
+warmer nor colder than anything else in the cavern.
+
+Clang, clang, clang, we passed right under the thumping levers of
+another vast machine, and so came at last to a wide tunnel, in which we
+could even hear the pad, pad, of our shoeless feet, and which, save for
+the trickling thread of blue to the right of us, was quite unlit. The
+shadows made gigantic travesties of our shapes and those of the
+Selenites on the irregular wall and roof of the tunnel. Ever and again
+crystals in the walls of the tunnel scintillated like gems, ever and
+again the tunnel expanded into a stalactitic cavern, or gave off
+branches that vanished into darkness.
+
+We seemed to be marching down that tunnel for a long time. “Trickle,
+trickle,” went the flowing light very softly, and our footfalls and
+their echoes made an irregular paddle, paddle. My mind settled down to
+the question of my chains. If I were to slip off one turn _so_, and
+then to twist it _so_ ...
+
+If I tried to do it very gradually, would they see I was slipping my
+wrist out of the looser turn? If they did, what would they do?
+
+“Bedford,” said Cavor, “it goes down. It keeps on going down.”
+
+His remark roused me from my sullen pre-occupation.
+
+“If they wanted to kill us,” he said, dropping back to come level with
+me, “there is no reason why they should not have done it.”
+
+“No,” I admitted, “that’s true.”
+
+“They don’t understand us,” he said, “they think we are merely strange
+animals, some wild sort of mooncalf birth, perhaps. It will be only
+when they have observed us better that they will begin to think we have
+minds—”
+
+“When you trace those geometrical problems,” said I.
+
+“It may be that.”
+
+We tramped on for a space.
+
+“You see,” said Cavor, “these may be Selenites of a lower class.”
+
+“The infernal fools!” said I viciously, glancing at their exasperating
+faces.
+
+“If we endure what they do to us—”
+
+“We’ve got to endure it,” said I.
+
+“There may be others less stupid. This is the mere outer fringe of
+their world. It must go down and down, cavern, passage, tunnel, down at
+last to the sea—hundreds of miles below.”
+
+His words made me think of the mile or so of rock and tunnel that might
+be over our heads already. It was like a weight dropping on my
+shoulders. “Away from the sun and air,” I said. “Even a mine half a
+mile deep is stuffy.”
+
+“This is not, anyhow. It’s probable—Ventilation! The air would blow
+from the dark side of the moon to the sunlit, and all the carbonic acid
+would well out there and feed those plants. Up this tunnel, for
+example, there is quite a breeze. And what a world it must be. The
+earnest we have in that shaft, and those machines—”
+
+“And the goad,” I said. “Don’t forget the goad!”
+
+He walked a little in front of me for a time.
+
+“Even that goad—” he said.
+
+“Well?”
+
+“I was angry at the time. But—it was perhaps necessary we should get
+on. They have different skins, and probably different nerves. They may
+not understand our objection—just as a being from Mars might not like
+our earthly habit of nudging.”
+
+“They’d better be careful how they nudge _me_.”
+
+“And about that geometry. After all, their way is a way of
+understanding, too. They begin with the elements of life and not of
+thought. Food. Compulsion. Pain. They strike at fundamentals.”
+
+“There’s no doubt about _that_,” I said.
+
+He went on to talk of the enormous and wonderful world into which we
+were being taken. I realised slowly from his tone, that even now he was
+not absolutely in despair at the prospect of going ever deeper into
+this inhuman planet-burrow. His mind ran on machines and invention, to
+the exclusion of a thousand dark things that beset me. It wasn’t that
+he intended to make any use of these things, he simply wanted to know
+them.
+
+“After all,” he said, “this is a tremendous occasion. It is the meeting
+of two worlds! What are we going to see? Think of what is below us
+here.”
+
+“We shan’t see much if the light isn’t better,” I remarked.
+
+“This is only the outer crust. Down below— On this scale— There will be
+everything. Do you notice how different they seem one from another? The
+story we shall take back!”
+
+“Some rare sort of animal,” I said, “might comfort himself in that way
+while they were bringing him to the Zoo.... It doesn’t follow that we
+are going to be shown all these things.”
+
+“When they find we have reasonable minds,” said Cavor, “they will want
+to learn about the earth. Even if they have no generous emotions, they
+will teach in order to learn.... And the things they must know! The
+unanticipated things!”
+
+He went on to speculate on the possibility of their knowing things he
+had never hoped to learn on earth, speculating in that way, with a raw
+wound from that goad already in his skin! Much that he said I forget,
+for my attention was drawn to the fact that the tunnel along which we
+had been marching was opening out wider and wider. We seemed, from the
+feeling of the air, to be going out into a huge space. But how big the
+space might really be we could not tell, because it was unlit. Our
+little stream of light ran in a dwindling thread and vanished far
+ahead. Presently the rocky walls had vanished altogether on either
+hand. There was nothing to be seen but the path in front of us and the
+trickling hurrying rivulet of blue phosphorescence. The figures of
+Cavor and the guiding Selenite marched before me, the sides of their
+legs and heads that were towards the rivulet were clear and bright
+blue, their darkened sides, now that the reflection of the tunnel wall
+no longer lit them, merged indistinguishably in the darkness beyond.
+
+And soon I perceived that we were approaching a declivity of some sort,
+because the little blue stream dipped suddenly out of sight.
+
+In another moment, as it seemed, we had reached the edge. The shining
+stream gave one meander of hesitation and then rushed over. It fell to
+a depth at which the sound of its descent was absolutely lost to us.
+Far below was a bluish glow, a sort of blue mist—at an infinite
+distance below. And the darkness the stream dropped out of became
+utterly void and black, save that a thing like a plank projected from
+the edge of the cliff and stretched out and faded and vanished
+altogether. There was a warm air blowing up out of the gulf.
+
+For a moment I and Cavor stood as near the edge as we dared, peering
+into a blue-tinged profundity. And then our guide was pulling at my
+arm.
+
+Then he left me, and walked to the end of that plank and stepped upon
+it, looking back. Then when he perceived we watched him, he turned
+about and went on along it, walking as surely as though he was on firm
+earth. For a moment his form was distinct, then he became a blue blur,
+and then vanished into the obscurity. I became aware of some vague
+shape looming darkly out of the black.
+
+There was a pause. “Surely!—” said Cavor.
+
+One of the other Selenites walked a few paces out upon the plank, and
+turned and looked back at us unconcernedly. The others stood ready to
+follow after us. Our guide’s expectant figure reappeared. He was
+returning to see why we had not advanced.
+
+“What is that beyond there?” I asked.
+
+“I can’t see.”
+
+“We can’t cross this at any price,” said I.
+
+“I could not go three steps on it,” said Cavor, “even with my hands
+free.”
+
+We looked at each other’s drawn faces in blank consternation.
+
+“They can’t know what it is to be giddy!” said Cavor.
+
+“It’s quite impossible for us to walk that plank.”
+
+“I don’t believe they see as we do. I’ve been watching them. I wonder
+if they know this is simply blackness for us. How can we make them
+understand?”
+
+“Anyhow, we must make them understand.”
+
+I think we said these things with a vague half hope the Selenites might
+somehow understand. I knew quite clearly that all that was needed was
+an explanation. Then as I saw their faces, I realised that an
+explanation was impossible. Just here it was that our resemblances were
+not going to bridge our differences. Well, I wasn’t going to walk the
+plank, anyhow. I slipped my wrist very quickly out of the coil of chain
+that was loose, and then began to twist my wrists in opposite
+directions. I was standing nearest to the bridge, and as I did this two
+of the Selenites laid hold of me, and pulled me gently towards it.
+
+I shook my head violently. “No go,” I said, “no use. You don’t
+understand.”
+
+Another Selenite added his compulsion. I was forced to step forward.
+
+“I’ve got an idea,” said Cavor; but I knew his ideas.
+
+“Look here!” I exclaimed to the Selenites. “Steady on! It’s all very
+well for you—”
+
+I sprang round upon my heel. I burst out into curses. For one of the
+armed Selenites had stabbed me behind with his goad.
+
+I wrenched my wrists free from the little tentacles that held them. I
+turned on the goad-bearer. “Confound you!” I cried. “I’ve warned you of
+that. What on earth do you think I’m made of, to stick that into me? If
+you touch me again—”
+
+By way of answer he pricked me forthwith.
+
+I heard Cavor’s voice in alarm and entreaty. Even then I think he
+wanted to compromise with these creatures. “I say, Bedford,” he cried,
+“I know a way!” But the sting of that second stab seemed to set free
+some pent-up reserve of energy in my being. Instantly the link of the
+wrist-chain snapped, and with it snapped all considerations that had
+held us unresisting in the hands of these moon creatures. For that
+second, at least, I was mad with fear and anger. I took no thought of
+consequences. I hit straight out at the face of the thing with the
+goad. The chain was twisted round my fist.
+
+There came another of these beastly surprises of which the moon world
+is full.
+
+My mailed hand seemed to go clean through him. He smashed like—like
+some softish sort of sweet with liquid in it! He broke right in! He
+squelched and splashed. It was like hitting a damp toadstool. The
+flimsy body went spinning a dozen yards, and fell with a flabby impact.
+I was astonished. I was incredulous that any living thing could be so
+flimsy. For an instant I could have believed the whole thing a dream.
+
+Then it had become real and imminent again. Neither Cavor nor the other
+Selenites seemed to have done anything from the time when I had turned
+about to the time when the dead Selenite hit the ground. Every one
+stood back from us two, every one alert. That arrest seemed to last at
+least a second after the Selenite was down. Every one must have been
+taking the thing in. I seem to remember myself standing with my arm
+half retracted, trying also to take it in. “What next?” clamoured my
+brain; “what next?” Then in a moment every one was moving!
+
+I perceived we must get our chains loose, and that before we could do
+this these Selenites had to be beaten off. I faced towards the group of
+the three goad-bearers. Instantly one threw his goad at me. It swished
+over my head, and I suppose went flying into the abyss behind.
+
+I leaped right at him with all my might as the goad flew over me. He
+turned to run as I jumped, and I bore him to the ground, came down
+right upon him, and slipped upon his smashed body and fell. He seemed
+to wriggle under my foot.
+
+I came into a sitting position, and on every hand the blue backs of the
+Selenites were receding into the darkness. I bent a link by main force
+and untwisted the chain that had hampered me about the ankles, and
+sprang to my feet, with the chain in my hand. Another goad, flung
+javelin-wise, whistled by me, and I made a rush towards the darkness
+out of which it had come. Then I turned back towards Cavor, who was
+still standing in the light of the rivulet near the gulf convulsively
+busy with his wrists, and at the same time jabbering nonsense about his
+idea.
+
+“Come on!” I cried.
+
+“My hands!” he answered.
+
+Then, realising that I dared not run back to him, because my
+ill-calculated steps might carry me over the edge, he came shuffling
+towards me, with his hands held out before him.
+
+I gripped his chains at once to unfasten them.
+
+“Where are they?” he panted.
+
+“Run away. They’ll come back. They’re throwing things! Which way shall
+we go?”
+
+“By the light. To that tunnel. Eh?”
+
+“Yes,” said I, and his hands were free.
+
+I dropped on my knees and fell to work on his ankle bonds. Whack came
+something—I know not what—and splashed the livid streamlet into drops
+about us. Far away on our right a piping and whistling began.
+
+I whipped the chain off his feet, and put it in his hand. “Hit with
+that!” I said, and without waiting for an answer, set off in big bounds
+along the path by which we had come. I had a nasty sort of feeling that
+these things could jump out of the darkness on to my back. I heard the
+impact of his leaps come following after me.
+
+We ran in vast strides. But that running, you must understand, was an
+altogether different thing from any running on earth. On earth one
+leaps and almost instantly hits the ground again, but on the moon,
+because of its weaker pull, one shot through the air for several
+seconds before one came to earth. In spite of our violent hurry this
+gave an effect of long pauses, pauses in which one might have counted
+seven or eight. “Step,” and one soared off! All sorts of questions ran
+through my mind: “Where are the Selenites? What will they do? Shall we
+ever get to that tunnel? Is Cavor far behind? Are they likely to cut
+him off?” Then whack, stride, and off again for another step.
+
+I saw a Selenite running in front of me, his legs going exactly as a
+man’s would go on earth, saw him glance over his shoulder, and heard
+him shriek as he ran aside out of my way into the darkness. He was, I
+think, our guide, but I am not sure. Then in another vast stride the
+walls of rock had come into view on either hand, and in two more
+strides I was in the tunnel, and tempering my pace to its low roof. I
+went on to a bend, then stopped and turned back, and plug, plug, plug,
+Cavor came into view, splashing into the stream of blue light at every
+stride, and grew larger and blundered into me. We stood clutching each
+other. For a moment, at least, we had shaken off our captors and were
+alone.
+
+We were both very much out of breath. We spoke in panting, broken
+sentences.
+
+“You’ve spoilt it all!” panted Cavor. “Nonsense,” I cried. “It was that
+or death!”
+
+“What are we to do?”
+
+“Hide.”
+
+“How can we?”
+
+“It’s dark enough.”
+
+“But where?”
+
+“Up one of these side caverns.”
+
+“And then?”
+
+“Think.”
+
+“Right—come on.”
+
+We strode on, and presently came to a radiating dark cavern. Cavor was
+in front. He hesitated, and chose a black mouth that seemed to promise
+good hiding. He went towards it and turned.
+
+“It’s dark,” he said.
+
+“Your legs and feet will light us. You’re wet with that luminous
+stuff.”
+
+“But—”
+
+A tumult of sounds, and in particular a sound like a clanging gong,
+advancing up the main tunnel, became audible. It was horribly
+suggestive of a tumultuous pursuit. We made a bolt for the unlit side
+cavern forthwith. As we ran along it our way was lit by the irradiation
+of Cavor’s legs. “It’s lucky,” I panted, “they took off our boots, or
+we should fill this place with clatter.” On we rushed, taking as small
+steps as we could to avoid striking the roof of the cavern. After a
+time we seemed to be gaining on the uproar. It became muffled, it
+dwindled, it died away.
+
+I stopped and looked back, and I heard the pad, pad of Cavor’s feet
+receding. Then he stopped also. “Bedford,” he whispered; “there’s a
+sort of light in front of us.”
+
+I looked, and at first could see nothing. Then I perceived his head and
+shoulders dimly outlined against a fainter darkness. I saw, also, that
+this mitigation of the darkness was not blue, as all the other light
+within the moon had been, but a pallid grey, a very vague, faint white,
+the daylight colour. Cavor noted this difference as soon, or sooner,
+than I did, and I think, too, that it filled him with much the same
+wild hope.
+
+“Bedford,” he whispered, and his voice trembled. “That light—it is
+possible—”
+
+He did not dare to say the thing he hoped. Then came a pause. Suddenly
+I knew by the sound of his feet that he was striding towards that
+pallor. I followed him with a beating heart.
+
+### XVI.
+
+*Points of View*
+
+The light grew stronger as we advanced. In a little time it was nearly
+as strong as the phosphorescence on Cavor’s legs. Our tunnel was
+expanding into a cavern, and this new light was at the farther end of
+it. I perceived something that set my hopes leaping and bounding.
+
+“Cavor,” I said, “it comes from above! I am certain it comes from
+above!”
+
+He made no answer, but hurried on.
+
+Indisputably it was a grey light, a silvery light.
+
+In another moment we were beneath it. It filtered down through a chink
+in the walls of the cavern, and as I stared up, drip, came a drop of
+water upon my face. I started and stood aside—drip, fell another drop
+quite audibly on the rocky floor.
+
+“Cavor,” I said, “if one of us lifts the other, he can reach that
+crack!”
+
+“I’ll lift you,” he said, and incontinently hoisted me as though I was
+a baby.
+
+I thrust an arm into the crack, and just at my finger tips found a
+little ledge by which I could hold. I could see the white light was
+very much brighter now. I pulled myself up by two fingers with scarcely
+an effort, though on earth I weigh twelve stone, reached to a still
+higher corner of rock, and so got my feet on the narrow ledge. I stood
+up and searched up the rocks with my fingers; the cleft broadened out
+upwardly. “It’s climbable,” I said to Cavor. “Can you jump up to my
+hand if I hold it down to you?”
+
+I wedged myself between the sides of the cleft, rested knee and foot on
+the ledge, and extended a hand. I could not see Cavor, but I could hear
+the rustle of his movements as he crouched to spring. Then whack and he
+was hanging to my arm—and no heavier than a kitten! I lugged him up
+until he had a hand on my ledge, and could release me.
+
+“Confound it!” I said, “any one could be a mountaineer on the moon;”
+and so set myself in earnest to the climbing. For a few minutes I
+clambered steadily, and then I looked up again. The cleft opened out
+steadily, and the light was brighter. Only—
+
+It was not daylight after all.
+
+In another moment I could see what it was, and at the sight I could
+have beaten my head against the rocks with disappointment. For I beheld
+simply an irregularly sloping open space, and all over its slanting
+floor stood a forest of little club-shaped fungi, each shining
+gloriously with that pinkish silvery light. For a moment I stared at
+their soft radiance, then sprang forward and upward among them. I
+plucked up half a dozen and flung them against the rocks, and then sat
+down, laughing bitterly, as Cavor’s ruddy face came into view.
+
+“It’s phosphorescence again!” I said. “No need to hurry. Sit down and
+make yourself at home.” And as he spluttered over our disappointment, I
+began to lob more of these growths into the cleft.
+
+“I thought it was daylight,” he said.
+
+“Daylight!” cried I. “Daybreak, sunset, clouds, and windy skies! Shall
+we ever see such things again?”
+
+As I spoke, a little picture of our world seemed to rise before me,
+bright and little and clear, like the background of some old Italian
+picture. “The sky that changes, and the sea that changes, and the hills
+and the green trees and the towns and cities shining in the sun. Think
+of a wet roof at sunset, Cavor! Think of the windows of a westward
+house!” He made no answer.
+
+“Here we are burrowing in this beastly world that isn’t a world, with
+its inky ocean hidden in some abominable blackness below, and outside
+that torrid day and that death stillness of night. And all these things
+that are chasing us now, beastly men of leather—insect men, that come
+out of a nightmare! After all, they’re right! What business have we
+here smashing them and disturbing their world! For all we know the
+whole planet is up and after us already. In a minute we may hear them
+whimpering, and their gongs going. What are we to do? Where are we to
+go? Here we are as comfortable as snakes from Jamrach’s loose in a
+Surbiton villa!”
+
+“It was your fault,” said Cavor.
+
+“My fault!” I shouted. “Good Lord!”
+
+“I had an idea!”
+
+“Curse your ideas!”
+
+“If we had refused to budge—”
+
+“Under those goads?”
+
+“Yes. They would have carried us!”
+
+“Over that bridge?”
+
+“Yes. They must have carried us from outside.”
+
+“I’d rather be carried by a fly across a ceiling.”
+
+“Good Heavens!”
+
+I resumed my destruction of the fungi. Then suddenly I saw something
+that struck me even then. “Cavor,” I said, “these chains are of gold!”
+
+He was thinking intently, with his hands gripping his cheeks. He turned
+his head slowly and stared at me, and when I had repeated my words, at
+the twisted chain about his right hand. “So they are,” he said, “so
+they are.” His face lost its transitory interest even as he looked. He
+hesitated for a moment, then went on with his interrupted meditation. I
+sat for a space puzzling over the fact that I had only just observed
+this, until I considered the blue light in which we had been, and which
+had taken all the colour out of the metal. And from that discovery I
+also started upon a train of thought that carried me wide and far. I
+forgot that I had just been asking what business we had in the moon.
+Gold....
+
+It was Cavor who spoke first. “It seems to me that there are two
+courses open to us.”
+
+“Well?”
+
+“Either we can attempt to make our way—fight our way if necessary—out
+to the exterior again, and then hunt for our sphere until we find it,
+or the cold of the night comes to kill us, or else—”
+
+He paused. “Yes?” I said, though I knew what was coming.
+
+“We might attempt once more to establish some sort of understanding
+with the minds of the people in the moon.”
+
+“So far as I’m concerned—it’s the first.”
+
+“I doubt.”
+
+“I don’t.”
+
+“You see,” said Cavor, “I do not think we can judge the Selenites by
+what we have seen of them. Their central world, their civilised world
+will be far below in the profounder caverns about their sea. This
+region of the crust in which we are is an outlying district, a pastoral
+region. At any rate, that is my interpretation. These Selenites we have
+seen may be only the equivalent of cowboys and engine-tenders. Their
+use of goads—in all probability mooncalf goads—the lack of imagination
+they show in expecting us to be able to do just what they can do, their
+indisputable brutality, all seem to point to something of that sort.
+But if we endured—”
+
+“Neither of us could endure a six-inch plank across the bottomless pit
+for very long.”
+
+“No,” said Cavor; “but then—”
+
+“I _won’t_,” I said.
+
+He discovered a new line of possibilities. “Well, suppose we got
+ourselves into some corner, where we could defend ourselves against
+these hinds and labourers. If, for example, we could hold out for a
+week or so, it is probable that the news of our appearance would filter
+down to the more intelligent and populous parts—”
+
+“If they exist.”
+
+“They must exist, or whence came those tremendous machines?”
+
+“That’s possible, but it’s the worst of the two chances.”
+
+“We might write up inscriptions on walls—”
+
+“How do we know their eyes would see the sort of marks we made?”
+
+“If we cut them—”
+
+“That’s possible, of course.”
+
+I took up a new thread of thought. “After all,” I said, “I suppose you
+don’t think these Selenites so infinitely wiser than men.”
+
+“They must know a lot more—or at least a lot of different things.”
+
+“Yes, but—” I hesitated.
+
+“I think you’ll quite admit, Cavor, that you’re rather an exceptional
+man.”
+
+“How?”
+
+“Well, you—you’re a rather lonely man—have been, that is. You haven’t
+married.”
+
+“Never wanted to. But why—”
+
+“And you never grew richer than you happened to be?”
+
+“Never wanted that either.”
+
+“You’ve just rooted after knowledge?”
+
+“Well, a certain curiosity is natural—”
+
+“You think so. That’s just it. You think every other mind wants to
+_know_. I remember once, when I asked you why you conducted all these
+researches, you said you wanted your F.R.S., and to have the stuff
+called Cavorite, and things like that. You know perfectly well you
+didn’t do it for that; but at the time my question took you by
+surprise, and you felt you ought to have something to look like a
+motive. Really you conducted researches because you _had_ to. It’s your
+twist.”
+
+“Perhaps it is—”
+
+“It isn’t one man in a million has that twist. Most men want—well,
+various things, but very few want knowledge for its own sake. _I_
+don’t, I know perfectly well. Now, these Selenites seem to be a
+driving, busy sort of being, but how do you know that even the most
+intelligent will take an interest in us or our world? I don’t believe
+they’ll even know we have a world. They never come out at night—they’d
+freeze if they did. They’ve probably never seen any heavenly body at
+all except the blazing sun. How are they to know there is another
+world? What does it matter to them if they do? Well, even if they
+_have_ had a glimpse of a few stars, or even of the earth crescent,
+what of that? Why should people living _inside_ a planet trouble to
+observe that sort of thing? Men wouldn’t have done it except for the
+seasons and sailing; why should the moon people?...
+
+“Well, suppose there are a few philosophers like yourself. They are
+just the very Selenites who’ll never have heard of our existence.
+Suppose a Selenite had dropped on the earth when you were at Lympne,
+you’d have been the last man in the world to hear he had come. You
+never read a newspaper! You see the chances against you. Well, it’s for
+these chances we’re sitting here doing nothing while precious time is
+flying. I tell you we’ve got into a fix. We’ve come unarmed, we’ve lost
+our sphere, we’ve got no food, we’ve shown ourselves to the Selenites,
+and made them think we’re strange, strong, dangerous animals; and
+unless these Selenites are perfect fools, they’ll set about now and
+hunt us till they find us, and when they find us they’ll try to take us
+if they can, and kill us if they can’t, and that’s the end of the
+matter. If they take us, they’ll probably kill us, through some
+misunderstanding. After we’re done for, they may discuss us perhaps,
+but we shan’t get much fun out of that.”
+
+“Go on.”
+
+“On the other hand, here’s gold knocking about like cast iron at home.
+If only we can get some of it back, if only we can find our sphere
+again before they do, and get back, then—”
+
+“Yes?”
+
+“We might put the thing on a sounder footing. Come back in a bigger
+sphere with guns.”
+
+“Good Lord!” cried Cavor, as though that was horrible.
+
+I shied another luminous fungus down the cleft.
+
+“Look here, Cavor,” I said, “I’ve half the voting power anyhow in this
+affair, and this is a case for a practical man. I’m a practical man,
+and you are not. I’m not going to trust to Selenites and geometrical
+diagrams if I can help it. That’s all. Get back. Drop all this
+secrecy—or most of it. And come again.”
+
+He reflected. “When I came to the moon,” he said, “I ought to have come
+alone.”
+
+“The question before the meeting,” I said, “is how to get back to the
+sphere.”
+
+For a time we nursed our knees in silence. Then he seemed to decide for
+my reasons.
+
+“I think,” he said, “one can get data. It is clear that while the sun
+is on this side of the moon the air will be blowing through this planet
+sponge from the dark side hither. On this side, at any rate, the air
+will be expanding and flowing out of the moon caverns into the
+craters.... Very well, there’s a draught here.”
+
+“So there is.”
+
+“And that means that this is not a dead end; somewhere behind us this
+cleft goes on and up. The draught is blowing up, and that is the way we
+have to go. If we try to get up any sort of chimney or gully there is,
+we shall not only get out of these passages where they are hunting for
+us—”
+
+“But suppose the gully is too narrow?”
+
+“We’ll come down again.”
+
+“Ssh!” I said suddenly; “what’s that?”
+
+We listened. At first it was an indistinct murmur, and then one picked
+out the clang of a gong. “They must think we are mooncalves,” said I,
+“to be frightened at that.”
+
+“They’re coming along that passage,” said Cavor.
+
+“They must be.”
+
+“They’ll not think of the cleft. They’ll go past.”
+
+I listened again for a space. “This time,” I whispered, “they’re likely
+to have some sort of weapon.”
+
+Then suddenly I sprang to my feet. “Good heavens, Cavor!” I cried. “But
+they _will!_ They’ll see the fungi I have been pitching down. They’ll—”
+
+I didn’t finish my sentence. I turned about and made a leap over the
+fungus tops towards the upper end of the cavity. I saw that the space
+turned upward and became a draughty cleft again, ascending to
+impenetrable darkness. I was about to clamber up into this, and then
+with a happy inspiration turned back.
+
+“What are you doing?” asked Cavor.
+
+“Go on!” said I, and went back and got two of the shining fungi, and
+putting one into the breast pocket of my flannel jacket, so that it
+stuck out to light our climbing, went back with the other for Cavor.
+The noise of the Selenites was now so loud that it seemed they must be
+already beneath the cleft. But it might be they would have difficulty
+in clambering in to it, or might hesitate to ascend it against our
+possible resistance. At any rate, we had now the comforting knowledge
+of the enormous muscular superiority our birth in another planet gave
+us. In other minute I was clambering with gigantic vigour after Cavor’s
+blue-lit heels.
+
+### XVII.
+
+*The Fight in the Cave of the Moon Butchers*
+
+I do not know how far we clambered before we came to the grating. It
+may be we ascended only a few hundred feet, but at the time it seemed
+to me we might have hauled and jammed and hopped and wedged ourselves
+through a mile or more of vertical ascent. Whenever I recall that time,
+there comes into my head the heavy clank of our golden chains that
+followed every movement. Very soon my knuckles and knees were raw, and
+I had a bruise on one cheek. After a time the first violence of our
+efforts diminished, and our movements became more deliberate and less
+painful. The noise of the pursuing Selenites had died away altogether.
+It seemed almost as though they had not traced us up the crack after
+all, in spite of the tell-tale heap of broken fungi that must have lain
+beneath it. At times the cleft narrowed so much that we could scarce
+squeeze up it; at others it expanded into great drusy cavities, studded
+with prickly crystals or thickly beset with dull, shining fungoid
+pimples. Sometimes it twisted spirally, and at other times slanted down
+nearly to the horizontal direction. Ever and again there was the
+intermittent drip and trickle of water by us. Once or twice it seemed
+to us that small living things had rustled out of our reach, but what
+they were we never saw. They may have been venomous beasts for all I
+know, but they did us no harm, and we were now tuned to a pitch when a
+weird creeping thing more or less mattered little. And at last, far
+above, came the familiar bluish light again, and then we saw that it
+filtered through a grating that barred our way.
+
+We whispered as we pointed this out to one another, and became more and
+more cautious in our ascent. Presently we were close under the grating,
+and by pressing my face against its bars I could see a limited portion
+of the cavern beyond. It was clearly a large space, and lit no doubt by
+some rivulet of the same blue light that we had seen flow from the
+beating machinery. An intermittent trickle of water dropped ever and
+again between the bars near my face.
+
+My first endeavour was naturally to see what might be upon the floor of
+the cavern, but our grating lay in a depression whose rim hid all this
+from our eyes. Our foiled attention then fell back upon the suggestion
+of the various sounds we heard, and presently my eye caught a number of
+faint shadows that played across the dim roof far overhead.
+
+Indisputably there were several Selenites, perhaps a considerable
+number, in this space, for we could hear the noises of their
+intercourse, and faint sounds that I identified as their footfalls.
+There was also a succession of regularly repeated sounds—chid, chid,
+chid—which began and ceased, suggestive of a knife or spade hacking at
+some soft substance. Then came a clank as if of chains, a whistle and a
+rumble as of a truck running over a hollowed place, and then again that
+chid, chid, chid resumed. The shadows told of shapes that moved quickly
+and rhythmically, in agreement with that regular sound, and rested when
+it ceased.
+
+We put our heads close together, and began to discuss these things in
+noiseless whispers.
+
+“They are occupied,” I said, “they are occupied in some way.”
+
+“Yes.”
+
+“They’re not seeking us, or thinking of us.”
+
+“Perhaps they have not heard of us.”
+
+“Those others are hunting about below. If suddenly we appeared here—”
+
+We looked at one another.
+
+“There might be a chance to parley,” said Cavor.
+
+“No,” I said. “Not as we are.”
+
+For a space we remained, each occupied by his own thoughts.
+
+Chid, chid, chid went the chipping, and the shadows moved to and fro.
+
+I looked at the grating. “It’s flimsy,” I said. “We might bend two of
+the bars and crawl through.”
+
+We wasted a little time in vague discussion. Then I took one of the
+bars in both hands, and got my feet up against the rock until they were
+almost on a level with my head, and so thrust against the bar. It bent
+so suddenly that I almost slipped. I clambered about and bent the
+adjacent bar in the opposite direction, and then took the luminous
+fungus from my pocket and dropped it down the fissure.
+
+“Don’t do anything hastily,” whispered Cavor, as I twisted myself up
+through the opening I had enlarged. I had a glimpse of busy figures as
+I came through the grating, and immediately bent down, so that the rim
+of the depression in which the grating lay hid me from their eyes, and
+so lay flat, signalling advice to Cavor as he also prepared to come
+through. Presently we were side by side in the depression, peering over
+the edge at the cavern and its occupants.
+
+It was a much larger cavern than we had supposed from our first glimpse
+of it, and we looked up from the lowest portion of its sloping floor.
+It widened out as it receded from us, and its roof came down and hid
+the remoter portion altogether. And lying in a line along its length,
+vanishing at last far away in that tremendous perspective, were a
+number of huge shapes, huge pallid hulls, upon which the Selenites were
+busy. At first they seemed big white cylinders of vague import. Then I
+noted the heads upon them lying towards us, eyeless and skinless like
+the heads of sheep at a butcher’s, and perceived they were the
+carcasses of mooncalves being cut up, much as the crew of a whaler
+might cut up a moored whale. They were cutting off the flesh in strips,
+and on some of the farther trunks the white ribs were showing. It was
+the sound of their hatchets that made that chid, chid, chid. Some way
+away a thing like a trolley cable, drawn and loaded with chunks of lax
+meat, was running up the slope of the cavern floor. This enormous long
+avenue of hulls that were destined to be food gave us a sense of the
+vast populousness of the moon world second only to the effect of our
+first glimpse down the shaft.
+
+It seemed to me at first that the Selenites must be standing on
+trestle-supported planks,[2] and then I saw that the planks and
+supports and the hatchets were really of the same leaden hue as my
+fetters had seemed before white light came to bear on them. A number of
+very thick-looking crowbars lay about the floor, and had apparently
+assisted to turn the dead mooncalf over on its side. They were perhaps
+six feet long, with shaped handles, very tempting-looking weapons. The
+whole place was lit by three transverse streams of the blue fluid.
+
+[2] I do not remember seeing any wooden things on the moon; doors,
+tables, everything corresponding to our terrestrial joinery was made
+of metal, and I believe for the most part of gold, which as a metal
+would, of course, naturally recommend itself—other things being
+equal—on account of the ease in working it, and its toughness and
+durability.
+
+We lay for a long time noting all these things in silence. “Well?” said
+Cavor at last.
+
+I crouched over and turned to him. I had come upon a brilliant idea.
+“Unless they lowered those bodies by a crane,” I said, “we must be
+nearer the surface than I thought.”
+
+“Why?”
+
+“The mooncalf doesn’t hop, and it hasn’t got wings.”
+
+He peered over the edge of the hollow again. “I wonder now—” he began.
+“After all, we have never gone far from the surface—”
+
+I stopped him by a grip on his arm. I had heard a noise from the cleft
+below us!
+
+We twisted ourselves about, and lay as still as death, with every sense
+alert. In a little while I did not doubt that something was quietly
+ascending the cleft. Very slowly and quite noiselessly I assured myself
+of a good grip on my chain, and waited for that something to appear.
+
+“Just look at those chaps with the hatchets again,” I said.
+
+“They’re all right,” said Cavor.
+
+I took a sort of provisional aim at the gap in the grating. I could
+hear now quite distinctly the soft twittering of the ascending
+Selenites, the dab of their hands against the rock, and the falling of
+dust from their grips as they clambered.
+
+Then I could see that there was something moving dimly in the blackness
+below the grating, but what it might be I could not distinguish. The
+whole thing seemed to hang fire just for a moment—then smash! I had
+sprung to my feet, struck savagely at something that had flashed out at
+me. It was the keen point of a spear. I have thought since that its
+length in the narrowness of the cleft must have prevented its being
+sloped to reach me. Anyhow, it shot out from the grating like the
+tongue of a snake, and missed and flew back and flashed again. But the
+second time I snatched and caught it, and wrenched it away, but not
+before another had darted ineffectually at me.
+
+I shouted with triumph as I felt the hold of the Selenite resist my
+pull for a moment and give, and then I was jabbing down through the
+bars, amidst squeals from the darkness, and Cavor had snapped off the
+other spear, and was leaping and flourishing it beside me, and making
+inefficient jabs. Clang, clang, came up through the grating, and then
+an axe hurtled through the air and whacked against the rocks beyond, to
+remind me of the fleshers at the carcasses up the cavern.
+
+I turned, and they were all coming towards us in open order waving
+their axes. They were short, thick, little beggars, with long arms,
+strikingly different from the ones we had seen before. If they had not
+heard of us before, they must have realised the situation with
+incredible swiftness. I stared at them for a moment, spear in hand.
+“Guard that grating, Cavor,” I cried, howled to intimidate them, and
+rushed to meet them. Two of them missed with their hatchets, and the
+rest fled incontinently. Then the two also were sprinting away up the
+cavern, with hands clenched and heads down. I never saw men run like
+them!
+
+I knew the spear I had was no good for me. It was thin and flimsy, only
+effectual for a thrust, and too long for a quick recover. So I only
+chased the Selenites as far as the first carcass, and stopped there and
+picked up one of the crowbars that were lying about. It felt
+comfortingly heavy, and equal to smashing any number of Selenites. I
+threw away my spear, and picked up a second crowbar for the other hand.
+I felt five times better than I had with the spear. I shook the two
+threateningly at the Selenites, who had come to a halt in a little
+crowd far away up the cavern, and then turned about to look at Cavor.
+
+He was leaping from side to side of the grating, making threatening
+jabs with his broken spear. That was all right. It would keep the
+Selenites down—for a time at any rate. I looked up the cavern again.
+What on earth were we going to do now?
+
+We were cornered in a sort of way already. But these butchers up the
+cavern had been surprised, they were probably scared, and they had no
+special weapons, only those little hatchets of theirs. And that way lay
+escape. Their sturdy little forms—ever so much shorter and thicker than
+the mooncalf herds—were scattered up the slope in a way that was
+eloquent of indecision. I had the moral advantage of a mad bull in a
+street. But for all that, there seemed a tremendous crowd of them. Very
+probably there was. Those Selenites down the cleft had certainly some
+infernally long spears. It might be they had other surprises for us....
+But, confound it! if we charged up the cave we should let them up
+behind us, and if we didn’t those little brutes up the cave would
+probably get reinforced. Heaven alone knew what tremendous engines of
+warfare—guns, bombs, terrestrial torpedoes—this unknown world below our
+feet, this vaster world of which we had only pricked the outer cuticle,
+might not presently send up to our destruction. It became clear the
+only thing to do was to charge! It became clearer as the legs of a
+number of fresh Selenites appeared running down the cavern towards us.
+
+“Bedford!” cried Cavor, and behold! he was halfway between me and the
+grating.
+
+“Go back!” I cried. “What are you doing—”
+
+“They’ve got—it’s like a gun!”
+
+And struggling in the grating between those defensive spears appeared
+the head and shoulders of a singularly lean and angular Selenite,
+bearing some complicated apparatus.
+
+I realised Cavor’s utter incapacity for the fight we had in hand. For a
+moment I hesitated. Then I rushed past him whirling my crowbars, and
+shouting to confound the aim of the Selenite. He was aiming in the
+queerest way with the thing against his stomach. “_Chuzz!_” The thing
+wasn’t a gun; it went off like a cross-bow more, and dropped me in the
+middle of a leap.
+
+I didn’t fall down, I simply came down a little shorter than I should
+have done if I hadn’t been hit, and from the feel of my shoulder the
+thing might have tapped me and glanced off. Then my left hand hit
+against the shaft, and I perceived there was a sort of spear sticking
+half through my shoulder. The moment after I got home with the crowbar
+in my right hand, and hit the Selenite fair and square. He collapsed—he
+crushed and crumpled—his head smashed like an egg.
+
+I dropped a crowbar, pulled the spear out of my shoulder, and began to
+jab it down the grating into the darkness. At each jab came a shriek
+and twitter. Finally I hurled the spear down upon them with all my
+strength, leapt up, picked up the crowbar again, and started for the
+multitude up the cavern.
+
+“Bedford!” cried Cavor. “Bedford!” as I flew past him.
+
+I seem to remember his footsteps coming on behind me.
+
+Step, leap ... whack, step, leap.... Each leap seemed to last ages.
+With each, the cave opened out and the number of Selenites visible
+increased. At first they seemed all running about like ants in a
+disturbed ant-hill, one or two waving hatchets and coming to meet me,
+more running away, some bolting sideways into the avenue of carcasses,
+then presently others came in sight carrying spears, and then others. I
+saw a most extraordinary thing, all hands and feet, bolting for cover.
+The cavern grew darker farther up.
+
+Flick! something flew over my head. Flick! As I soared in mid-stride I
+saw a spear hit and quiver in one of the carcasses to my left. Then, as
+I came down, one hit the ground before me, and I heard the remote
+chuzz! with which their things were fired. Flick, flick! for a moment
+it was a shower. They were volleying!
+
+I stopped dead.
+
+I don’t think I thought clearly then. I seem to remember a kind of
+stereotyped phrase running through my mind: “Zone of fire, seek cover!”
+I know I made a dash for the space between two of the carcasses, and
+stood there panting and feeling very wicked.
+
+I looked round for Cavor, and for a moment it seemed as if he had
+vanished from the world. Then he came out of the darkness between the
+row of the carcasses and the rocky wall of the cavern. I saw his little
+face, dark and blue, and shining with perspiration and emotion.
+
+He was saying something, but what it was I did not heed. I had realised
+that we might work from mooncalf to mooncalf up the cave until we were
+near enough to charge home. It was charge or nothing. “Come on!” I
+said, and led the way.
+
+“Bedford!” he cried unavailingly.
+
+My mind was busy as we went up that narrow alley between the dead
+bodies and the wall of the cavern. The rocks curved about—they could
+not enfilade us. Though in that narrow space we could not leap, yet
+with our earth-born strength we were still able to go very much faster
+than the Selenites. I reckoned we should presently come right among
+them. Once we were on them, they would be nearly as formidable as black
+beetles. Only there would first of all be a volley. I thought of a
+stratagem. I whipped off my flannel jacket as I ran.
+
+“Bedford!” panted Cavor behind me.
+
+I glanced back. “What?” said I.
+
+He was pointing upward over the carcasses. “White light!” he said.
+“White light again!”
+
+I looked, and it was even so; a faint white ghost of light in the
+remoter cavern roof. That seemed to give me double strength.
+
+“Keep close,” I said. A flat, long Selenite dashed out of the darkness,
+and squealed and fled. I halted, and stopped Cavor with my hand. I hung
+my jacket over my crowbar, ducked round the next carcass, dropped
+jacket and crowbar, showed myself, and darted back.
+
+“Chuzz-flick,” just one arrow came. We were close on the Selenites, and
+they were standing in a crowd, broad, short, and tall together, with a
+little battery of their shooting implements pointing down the cave.
+Three or four other arrows followed the first, then their fire ceased.
+
+I stuck out my head, and escaped by a hair’s-breadth. This time I drew
+a dozen shots or more, and heard the Selenites shouting and twittering
+as if with excitement as they shot. I picked up jacket and crowbar
+again.
+
+“_Now!_” said I, and thrust out the jacket.
+
+“Chuzz-zz-zz-zz! Chuzz!” In an instant my jacket had grown a thick
+beard of arrows, and they were quivering all over the carcass behind
+us. Instantly I slipped the crowbar out of the jacket, dropped the
+jacket—for all I know to the contrary it is lying up there in the moon
+now—and rushed out upon them.
+
+For a minute perhaps it was massacre. I was too fierce to discriminate,
+and the Selenites were probably too scared to fight. At any rate they
+made no sort of fight against me. I saw scarlet, as the saying is. I
+remember I seemed to be wading among those leathery, thin things as a
+man wades through tall grass, mowing and hitting, first right, then
+left; smash. Little drops of moisture flew about. I trod on things that
+crushed and piped and went slippery. The crowd seemed to open and close
+and flow like water. They seemed to have no combined plan whatever.
+There were spears flew about me, I was grazed over the ear by one. I
+was stabbed once in the arm and once in the cheek, but I only found
+that out afterwards, when the blood had had time to run and cool and
+feel wet.
+
+What Cavor did I do not know. For a space it seemed that this fighting
+had lasted for an age, and must needs go on for ever. Then suddenly it
+was all over, and there was nothing to be seen but the backs of heads
+bobbing up and down as their owners ran in all directions.... I seemed
+altogether unhurt. I ran forward some paces, shouting, then turned
+about. I was amazed.
+
+I had come right through them in vast flying strides, they were all
+behind me, and running hither and thither to hide.
+
+I felt an enormous astonishment at the evaporation of the great fight
+into which I had hurled myself, and not a little exultation. It did not
+seem to me that I had discovered the Selenites were unexpectedly
+flimsy, but that I was unexpectedly strong. I laughed stupidly. This
+fantastic moon!
+
+I glanced for a moment at the smashed and writhing bodies that were
+scattered over the cavern floor, with a vague idea of further violence,
+then hurried on after Cavor.
+
+### XVIII.
+
+*In the Sunlight*
+
+Presently we saw that the cavern before us opened upon a hazy void. In
+another moment we had emerged upon a sort of slanting gallery, that
+projected into a vast circular space, a huge cylindrical pit running
+vertically up and down. Round this pit the slanting gallery ran without
+any parapet or protection for a turn and a half, and then plunged high
+above into the rock again. Somehow it reminded me then of one of those
+spiral turns of the railway through the Saint Gothard. It was all
+tremendously huge. I can scarcely hope to convey to you the Titanic
+proportion of all that place, the Titanic effect of it. Our eyes
+followed up the vast declivity of the pit wall, and overhead and far
+above we beheld a round opening set with faint stars, and half of the
+lip about it well nigh blinding with the white light of the sun. At
+that we cried aloud simultaneously.
+
+“Come on!” I said, leading the way.
+
+“But there?” said Cavor, and very carefully stepped nearer the edge of
+the gallery. I followed his example, and craned forward and looked
+down, but I was dazzled by that gleam of light above, and I could see
+only a bottomless darkness with spectral patches of crimson and purple
+floating therein. Yet if I could not see, I could hear. Out of this
+darkness came a sound, a sound like the angry hum one can hear if one
+puts one’s ear outside a hive of bees, a sound out of that enormous
+hollow, it may be, four miles beneath our feet...
+
+For a moment I listened, then tightened my grip on my crowbar, and led
+the way up the gallery.
+
+“This must be the shaft we looked down upon,” said Cavor. “Under that
+lid.”
+
+“And below there, is where we saw the lights.”
+
+“The lights!” said he. “Yes—the lights of the world that now we shall
+never see.”
+
+“We’ll come back,” I said, for now we had escaped so much I was rashly
+sanguine that we should recover the sphere.
+
+His answer I did not catch.
+
+“Eh?” I asked.
+
+“It doesn’t matter,” he answered, and we hurried on in silence.
+
+I suppose that slanting lateral way was four or five miles long,
+allowing for its curvature, and it ascended at a slope that would have
+made it almost impossibly steep on earth, but which one strode up
+easily under lunar conditions. We saw only two Selenites during all
+that portion of our flight, and directly they became aware of us they
+ran headlong. It was clear that the knowledge of our strength and
+violence had reached them. Our way to the exterior was unexpectedly
+plain. The spiral gallery straightened into a steeply ascendent tunnel,
+its floor bearing abundant traces of the mooncalves, and so straight
+and short in proportion to its vast arch, that no part of it was
+absolutely dark. Almost immediately it began to lighten, and then far
+off and high up, and quite blindingly brilliant, appeared its opening
+on the exterior, a slope of Alpine steepness surmounted by a crest of
+bayonet shrub, tall and broken down now, and dry and dead, in spiky
+silhouette against the sun.
+
+And it is strange that we men, to whom this very vegetation had seemed
+so weird and horrible a little time ago, should now behold it with the
+emotion a home-coming exile might feel at sight of his native land. We
+welcomed even the rareness of the air that made us pant as we ran, and
+which rendered speaking no longer the easy thing that it had been, but
+an effort to make oneself heard. Larger grew the sunlit circle above
+us, and larger, and all the nearer tunnel sank into a rim of
+indistinguishable black. We saw the dead bayonet shrub no longer with
+any touch of green in it, but brown and dry and thick, and the shadow
+of its upper branches high out of sight made a densely interlaced
+pattern upon the tumbled rocks. And at the immediate mouth of the
+tunnel was a wide trampled space where the mooncalves had come and
+gone.
+
+We came out upon this space at last into a light and heat that hit and
+pressed upon us. We traversed the exposed area painfully, and clambered
+up a slope among the scrub stems, and sat down at last panting in a
+high place beneath the shadow of a mass of twisted lava. Even in the
+shade the rock felt hot.
+
+The air was intensely hot, and we were in great physical discomfort,
+but for all that we were no longer in a nightmare. We seemed to have
+come to our own province again, beneath the stars. All the fear and
+stress of our flight through the dim passages and fissures below had
+fallen from us. That last fight had filled us with an enormous
+confidence in ourselves so far as the Selenites were concerned. We
+looked back almost incredulously at the black opening from which we had
+just emerged. Down there it was, in a blue glow that now in our
+memories seemed the next thing to absolute darkness, we had met with
+things like mad mockeries of men, helmet-headed creatures, and had
+walked in fear before them, and had submitted to them until we could
+submit no longer. And behold, they had smashed like wax and scattered
+like chaff, and fled and vanished like the creatures of a dream!
+
+I rubbed my eyes, doubting whether we had not slept and dreamt these
+things by reason of the fungus we had eaten, and suddenly discovered
+the blood upon my face, and then that my shirt was sticking painfully
+to my shoulder and arm.
+
+“Confound it!” I said, gauging my injuries with an investigatory hand,
+and suddenly that distant tunnel mouth became, as it were, a watching
+eye.
+
+“Cavor!” I said; “what are they going to do now? And what are we going
+to do?”
+
+He shook his head, with his eyes fixed upon the tunnel. “How can one
+tell what they will do?”
+
+“It depends on what they think of us, and I don’t see how we can begin
+to guess that. And it depends upon what they have in reserve. It’s as
+you say, Cavor, we have touched the merest outside of this world. They
+may have all sorts of things inside here. Even with those shooting
+things they might make it bad for us....
+
+“Yet after all,” I said, “even if we _don’t_ find the sphere at once,
+there is a chance for us. We might hold out. Even through the night. We
+might go down there again and make a fight for it.”
+
+I stared about me with speculative eyes. The character of the scenery
+had altered altogether by reason of the enormous growth and subsequent
+drying of the scrub. The crest on which we sat was high, and commanded
+a wide prospect of the crater landscape, and we saw it now all sere and
+dry in the late autumn of the lunar afternoon. Rising one behind the
+other were long slopes and fields of trampled brown where the
+mooncalves had pastured, and far away in the full blaze of the sun a
+drove of them basked slumberously, scattered shapes, each with a blot
+of shadow against it like sheep on the side of a down. But never a sign
+of a Selenite was to be seen. Whether they had fled on our emergence
+from the interior passages, or whether they were accustomed to retire
+after driving out the mooncalves, I cannot guess. At the time I
+believed the former was the case.
+
+“If we were to set fire to all this stuff,” I said, “we might find the
+sphere among the ashes.”
+
+Cavor did not seem to hear me. He was peering under his hand at the
+stars, that still, in spite of the intense sunlight, were abundantly
+visible in the sky. “How long do you think we’ve have been here?” he
+asked at last.
+
+“Been where?”
+
+“On the moon.”
+
+“Two earthly days, perhaps.”
+
+“More nearly ten. Do you know, the sun is past its zenith, and sinking
+in the west. In four days’ time or less it will be night.”
+
+“But—we’ve only eaten once!”
+
+“I know that. And— But there are the stars!”
+
+“But why should time seem different because we are on a smaller
+planet?”
+
+“I don’t know. There it is!”
+
+“How does one tell time?”
+
+“Hunger—fatigue—all those things are different. Everything is
+different—everything. To me it seems that since first we came out of
+the sphere has been only a question of hours—long hours—at most.”
+
+“Ten days,” I said; “that leaves—” I looked up at the sun for a moment,
+and then saw that it was halfway from the zenith to the western edge of
+things. “Four days! ... Cavor, we mustn’t sit here and dream. How do
+you think we may begin?”
+
+I stood up. “We must get a fixed point we can recognise—we might hoist
+a flag, or a handkerchief, or something—and quarter the ground, and
+work round that.”
+
+He stood up beside me.
+
+“Yes,” he said, “there is nothing for it but to hunt the sphere.
+Nothing. We may find it—certainly we may find it. And if not—”
+
+“We must keep on looking.”
+
+He looked this way and that, glanced up at the sky and down at the
+tunnel, and astonished me by a sudden gesture of impatience. “Oh! but
+we have done foolishly! To have come to this pass! Think how it might
+have been, and the things we might have done!”
+
+“We might do something yet.”
+
+“Never the thing we might have done. Here below our feet is a world.
+Think of what that world must be! Think of that machine we saw, and the
+lid and the shaft! They were just remote outlying things, and those
+creatures we have seen and fought with no more than ignorant peasants,
+dwellers in the outskirts, yokels and labourers half akin to brutes.
+Down below! Caverns beneath caverns, tunnels, structures, ways... It
+must open out, and be greater and wider and more populous as one
+descends. Assuredly. Right down at the last the central sea that washes
+round the core of the moon. Think of its inky waters under the spare
+lights—if, indeed, their eyes _need_ lights! Think of the cascading
+tributaries pouring down their channels to feed it! Think of the tides
+upon its surface, and the rush and swirl of its ebb and flow! Perhaps
+they have ships that go upon it, perhaps down there are mighty cities
+and swarming ways, and wisdom and order passing the wit of man. And we
+may die here upon it, and never see the masters who _must_ be—ruling
+over these things! We may freeze and die here, and the air will freeze
+and thaw upon us, and then—! Then they will come upon us, come on our
+stiff and silent bodies, and find the sphere we cannot find, and they
+will understand at last too late all the thought and effort that ended
+here in vain!”
+
+His voice for all that speech sounded like the voice of someone heard
+in a telephone, weak and far away.
+
+“But the darkness,” I said.
+
+“One might get over that.”
+
+“How?”
+
+“I don’t know. How am I to know? One might carry a torch, one might
+have a lamp— The others—might understand.”
+
+He stood for a moment with his hands held down and a rueful face,
+staring out over the waste that defied him. Then with a gesture of
+renunciation he turned towards me with proposals for the systematic
+hunting of the sphere.
+
+“We can return,” I said.
+
+He looked about him. “First of all we shall have to get to earth.”
+
+“We could bring back lamps to carry and climbing irons, and a hundred
+necessary things.”
+
+“Yes,” he said.
+
+“We can take back an earnest of success in this gold.”
+
+He looked at my golden crowbars, and said nothing for a space. He stood
+with his hands clasped behind his back, staring across the crater. At
+last he signed and spoke. “It was _I_ found the way here, but to find a
+way isn’t always to be master of a way. If I take my secret back to
+earth, what will happen? I do not see how I can keep my secret for a
+year, for even a part of a year. Sooner or later it must come out, even
+if other men rediscover it. And then ... Governments and powers will
+struggle to get hither, they will fight against one another, and
+against these moon people; it will only spread warfare and multiply the
+occasions of war. In a little while, in a very little while, if I tell
+my secret, this planet to its deepest galleries will be strewn with
+human dead. Other things are doubtful, but that is certain. It is not
+as though man had any use for the moon. What good would the moon be to
+men? Even of their own planet what have they made but a battle-ground
+and theatre of infinite folly? Small as his world is, and short as his
+time, he has still in his little life down there far more than he can
+do. No! Science has toiled too long forging weapons for fools to use.
+It is time she held her hand. Let him find it out for himself again—in
+a thousand years’ time.”
+
+“There are methods of secrecy,” I said.
+
+He looked up at me and smiled. “After all,” he said, “why should one
+worry? There is little chance of our finding the sphere, and down below
+things are brewing. It’s simply the human habit of hoping till we die
+that makes us think of return. Our troubles are only beginning. We have
+shown these moon folk violence, we have given them a taste of our
+quality, and our chances are about as good as a tiger’s that has got
+loose and killed a man in Hyde Park. The news of us must be running
+down from gallery to gallery, down towards the central parts.... No
+sane beings will ever let us take that sphere back to earth after so
+much as they have seen of us.”
+
+“We aren’t improving our chances,” said I, “by sitting here.”
+
+We stood up side by side.
+
+“After all,” he said, “we must separate. We must stick up a
+handkerchief on these tall spikes here and fasten it firmly, and from
+this as a centre we must work over the crater. You must go westward,
+moving out in semicircles to and fro towards the setting sun. You must
+move first with your shadow on your right until it is at right angles
+with the direction of your handkerchief, and then with your shadow on
+your left. And I will do the same to the east. We will look into every
+gully, examine every skerry of rocks; we will do all we can to find my
+sphere. If we see the Selenites we will hide from them as well as we
+can. For drink we must take snow, and if we feel the need of food, we
+must kill a mooncalf if we can, and eat such flesh as it has—raw—and so
+each will go his own way.”
+
+“And if one of us comes upon the sphere?”
+
+“He must come back to the white handkerchief, and stand by it and
+signal to the other.”
+
+“And if neither?”
+
+Cavor glanced up at the sun. “We go on seeking until the night and cold
+overtake us.”
+
+“Suppose the Selenites have found the sphere and hidden it?”
+
+He shrugged his shoulders.
+
+“Or if presently they come hunting us?”
+
+He made no answer.
+
+“You had better take a club,” I said.
+
+He shook his head, and stared away from me across the waste.
+
+But for a moment he did not start. He looked round at me shyly,
+hesitated. “_Au revoir_,” he said.
+
+I felt an odd stab of emotion. A sense of how we had galled each other,
+and particularly how I must have galled him, came to me. “Confound it,”
+thought I, “we might have done better!” I was on the point of asking
+him to shake hands—for that, somehow, was how I felt just then—when he
+put his feet together and leapt away from me towards the north. He
+seemed to drift through the air as a dead leaf would do, fell lightly,
+and leapt again. I stood for a moment watching him, then faced westward
+reluctantly, pulled myself together, and with something of the feeling
+of a man who leaps into icy water, selected a leaping point, and
+plunged forward to explore my solitary half of the moon world. I
+dropped rather clumsily among rocks, stood up and looked about me,
+clambered on to a rocky slab, and leapt again....
+
+When presently I looked for Cavor he was hidden from my eyes, but the
+handkerchief showed out bravely on its headland, white in the blaze of
+the sun.
+
+I determined not to lose sight of that handkerchief whatever might
+betide.
+
+### XIX.
+
+*Mr. Bedford Alone*
+
+In a little while it seemed to me as though I had always been alone on
+the moon. I hunted for a time with a certain intentness, but the heat
+was still very great, and the thinness of the air felt like a hoop
+about one’s chest. I came presently into a hollow basin bristling with
+tall, brown, dry fronds about its edge, and I sat down under these to
+rest and cool. I intended to rest for only a little while. I put down
+my clubs beside me, and sat resting my chin on my hands. I saw with a
+sort of colourless interest that the rocks of the basin, where here and
+there the crackling dry lichens had shrunk away to show them, were all
+veined and splattered with gold, that here and there bosses of rounded
+and wrinkled gold projected from among the litter. What did that matter
+now? A sort of languor had possession of my limbs and mind, I did not
+believe for a moment that we should ever find the sphere in that vast
+desiccated wilderness. I seemed to lack a motive for effort until the
+Selenites should come. Then I supposed I should exert myself, obeying
+that unreasonable imperative that urges a man before all things to
+preserve and defend his life, albeit he may preserve it only to die
+more painfully in a little while.
+
+Why had we come to the moon?
+
+The thing presented itself to me as a perplexing problem. What is this
+spirit in man that urges him for ever to depart from happiness and
+security, to toil, to place himself in danger, to risk even a
+reasonable certainty of death? It dawned upon me up there in the moon
+as a thing I ought always to have known, that man is not made simply to
+go about being safe and comfortable and well fed and amused. Almost any
+man, if you put the thing to him, not in words, but in the shape of
+opportunities, will show that he knows as much. Against his interest,
+against his happiness, he is constantly being driven to do unreasonable
+things. Some force not himself impels him, and go he must. But why?
+Why? Sitting there in the midst of that useless moon gold, amidst the
+things of another world, I took count of all my life. Assuming I was to
+die a castaway upon the moon, I failed altogether to see what purpose I
+had served. I got no light on that point, but at any rate it was
+clearer to me than it had ever been in my life before that I was not
+serving my own purpose, that all my life I had in truth never served
+the purposes of my private life. Whose purposes, what purposes, was I
+serving? ... I ceased to speculate on why we had come to the moon, and
+took a wider sweep. Why had I come to the earth? Why had I a private
+life at all? ... I lost myself at last in bottomless speculations....
+
+My thoughts became vague and cloudy, no longer leading in definite
+directions. I had not felt heavy or weary—I cannot imagine one doing so
+upon the moon—but I suppose I was greatly fatigued. At any rate I
+slept.
+
+Slumbering there rested me greatly, I think, and the sun was setting
+and the violence of the heat abating, through all the time I slumbered.
+When at last I was roused from my slumbers by a remote clamour, I felt
+active and capable again. I rubbed my eyes and stretched my arms. I
+rose to my feet—I was a little stiff—and at once prepared to resume my
+search. I shouldered my golden clubs, one on each shoulder, and went on
+out of the ravine of the gold-veined rocks.
+
+The sun was certainly lower, much lower than it had been; the air was
+very much cooler. I perceived I must have slept some time. It seemed to
+me that a faint touch of misty blueness hung about the western cliff. I
+leapt to a little boss of rock and surveyed the crater. I could see no
+signs of mooncalves or Selenites, nor could I see Cavor, but I could
+see my handkerchief far off, spread out on its thicket of thorns. I
+looked about me, and then leapt forward to the next convenient
+view-point.
+
+I beat my way round in a semicircle, and back again in a still remoter
+crescent. It was very fatiguing and hopeless. The air was really very
+much cooler, and it seemed to me that the shadow under the westward
+cliff was growing broad. Ever and again I stopped and reconnoitred, but
+there was no sign of Cavor, no sign of Selenites; and it seemed to me
+the mooncalves must have been driven into the interior again—I could
+see none of them. I became more and more desirous of seeing Cavor. The
+winged outline of the sun had sunk now, until it was scarcely the
+distance of its diameter from the rim of the sky. I was oppressed by
+the idea that the Selenites would presently close their lids and
+valves, and shut us out under the inexorable onrush of the lunar night.
+It seemed to me high time that he abandoned his search, and that we
+took counsel together. I felt how urgent it was that we should decide
+soon upon our course. We had failed to find the sphere, we no longer
+had time to seek it, and once these valves were closed with us outside,
+we were lost men. The great night of space would descend upon us—that
+blackness of the void which is the only absolute death. All my being
+shrank from that approach. We must get into the moon again, though we
+were slain in doing it. I was haunted by a vision of our freezing to
+death, of our hammering with our last strength on the valve of the
+great pit.
+
+I took no thought any more of the sphere. I thought only of finding
+Cavor again. I was half inclined to go back into the moon without him,
+rather than seek him until it was too late. I was already half-way back
+towards our handkerchief, when suddenly—
+
+I saw the sphere!
+
+I did not find it so much as it found me. It was lying much farther to
+the westward than I had gone, and the sloping rays of the sinking sun
+reflected from its glass had suddenly proclaimed its presence in a
+dazzling beam. For an instant I thought this was some new device of the
+Selenites against us, and then I understood.
+
+I threw up my arms, shouted a ghostly shout, and set off in vast leaps
+towards it. I missed one of my leaps and dropped into a deep ravine and
+twisted my ankle, and after that I stumbled at almost every leap. I was
+in a state of hysterical agitation, trembling violently, and quite
+breathless long before I got to it. Three times at least I had to stop
+with my hands resting on my side and in spite of the thin dryness of
+the air, the perspiration was wet upon my face.
+
+I thought of nothing but the sphere until I reached it, I forgot even
+my trouble of Cavor’s whereabouts. My last leap flung me with my hands
+hard against its glass; then I lay against it panting, and trying
+vainly to shout, “Cavor! here is the sphere!” When I had recovered a
+little I peered through the thick glass, and the things inside seemed
+tumbled. I stooped to peer closer. Then I attempted to get in. I had to
+hoist it over a little to get my head through the manhole. The screw
+stopper was inside, and I could see now that nothing had been touched,
+nothing had suffered. It lay there as we had left it when we had
+dropped out amidst the snow. For a time I was wholly occupied in making
+and remaking this inventory. I found I was trembling violently. It was
+good to see that familiar dark interior again! I cannot tell you how
+good. Presently I crept inside and sat down among the things. I looked
+through the glass at the moon world and shivered. I placed my gold
+clubs upon the table, and sought out and took a little food; not so
+much because I wanted it, but because it was there. Then it occurred to
+me that it was time to go out and signal for Cavor. But I did not go
+out and signal for Cavor forthwith. Something held me to the sphere.
+
+After all, everything was coming right. There would be still time for
+us to get more of the magic stone that gives one mastery over men. Away
+there, close handy, was gold for the picking up; and the sphere would
+travel as well half full of gold as though it were empty. We could go
+back now, masters of ourselves and our world, and then—
+
+I roused myself at last, and with an effort got myself out of the
+sphere. I shivered as I emerged, for the evening air was growing very
+cold. I stood in the hollow staring about me. I scrutinised the bushes
+round me very carefully before I leapt to the rocky shelf hard by, and
+took once more what had been my first leap in the moon. But now I made
+it with no effort whatever.
+
+The growth and decay of the vegetation had gone on apace, and the whole
+aspect of the rocks had changed, but still it was possible to make out
+the slope on which the seeds had germinated, and the rocky mass from
+which we had taken our first view of the crater. But the spiky shrub on
+the slope stood brown and sere now, and thirty feet high, and cast long
+shadows that stretched out of sight, and the little seeds that
+clustered in its upper branches were brown and ripe. Its work was done,
+and it was brittle and ready to fall and crumple under the freezing
+air, so soon as the nightfall came. And the huge cacti, that had
+swollen as we watched them, had long since burst and scattered their
+spores to the four quarters of the moon. Amazing little corner in the
+universe—the landing place of men!
+
+Some day, thought I, I will have an inscription standing there right in
+the midst of the hollow. It came to me, if only this teeming world
+within knew of the full import of the moment, how furious its tumult
+would become!
+
+But as yet it could scarcely be dreaming of the significance of our
+coming. For if it did, the crater would surely be an uproar of pursuit,
+instead of as still as death! I looked about for some place from which
+I might signal Cavor, and saw that same patch of rock to which he had
+leapt from my present standpoint, still bare and barren in the sun. For
+a moment I hesitated at going so far from the sphere. Then with a pang
+of shame at that hesitation, I leapt....
+
+From this vantage point I surveyed the crater again. Far away at the
+top of the enormous shadow I cast was the little white handkerchief
+fluttering on the bushes. It was very little and very far, and Cavor
+was not in sight. It seemed to me that by this time he ought to be
+looking for me. That was the agreement. But he was nowhere to be seen.
+
+I stood waiting and watching, hands shading my eyes, expecting every
+moment to distinguish him. Very probably I stood there for quite a long
+time. I tried to shout, and was reminded of the thinness of the air. I
+made an undecided step back towards the sphere. But a lurking dread of
+the Selenites made me hesitate to signal my whereabouts by hoisting one
+of our sleeping-blankets on to the adjacent scrub. I searched the
+crater again.
+
+It had an effect of emptiness that chilled me. And it was still. Any
+sound from the Selenites in the world beneath had died away. It was as
+still as death. Save for the faint stir of the shrub about me in the
+little breeze that was rising, there was no sound nor shadow of a
+sound. And the breeze blew chill.
+
+Confound Cavor!
+
+I took a deep breath. I put my hands to the sides of my mouth. “Cavor!”
+I bawled, and the sound was like some manikin shouting far away.
+
+I looked at the handkerchief, I looked behind me at the broadening
+shadow of the westward cliff, I looked under my hand at the sun. It
+seemed to me that almost visibly it was creeping down the sky.
+
+I felt I must act instantly if I was to save Cavor. I whipped off my
+vest and flung it as a mark on the sere bayonets of the shrubs behind
+me, and then set off in a straight line towards the handkerchief.
+Perhaps it was a couple of miles away—a matter of a few hundred leaps
+and strides. I have already told how one seemed to hang through those
+lunar leaps. In each suspense I sought Cavor, and marvelled why he
+should be hidden. In each leap I could feel the sun setting behind me.
+Each time I touched the ground I was tempted to go back.
+
+A last leap and I was in the depression below our handkerchief, a
+stride, and I stood on our former vantage point within arms’ reach of
+it. I stood up straight and scanned the world about me, between its
+lengthening bars of shadow. Far away, down a long declivity, was the
+opening of the tunnel up which we had fled, and my shadow reached
+towards it, stretched towards it, and touched it, like a finger of the
+night.
+
+Not a sign of Cavor, not a sound in all the stillness, only the stir
+and waving of the scrub and of the shadows increased. And suddenly and
+violently I shivered. “Cav—” I began, and realised once more the
+uselessness of the human voice in that thin air. Silence. The silence
+of death.
+
+Then it was my eye caught something—a little thing lying, perhaps fifty
+yards away down the slope, amidst a litter of bent and broken branches.
+What was it? I knew, and yet for some reason I would not know. I went
+nearer to it. It was the little cricket-cap Cavor had worn. I did not
+touch it, I stood looking at it.
+
+I saw then that the scattered branches about it had been forcibly
+smashed and trampled. I hesitated, stepped forward, and picked it up.
+
+I stood with Cavor’s cap in my hand, staring at the trampled reeds and
+thorns about me. On some of them were little smears of something dark,
+something that I dared not touch. A dozen yards away, perhaps, the
+rising breeze dragged something into view, something small and vividly
+white.
+
+It was a little piece of paper crumpled tightly, as though it had been
+clutched tightly. I picked it up, and on it were smears of red. My eye
+caught faint pencil marks. I smoothed it out, and saw uneven and broken
+writing ending at last in a crooked streak upon the paper.
+
+I set myself to decipher this.
+
+“I have been injured about the knee, I think my kneecap is hurt, and I
+cannot run or crawl,” it began—pretty distinctly written.
+
+Then less legibly: “They have been chasing me for some time, and it is
+only a question of”—the word “time” seemed to have been written here
+and erased in favour of something illegible—“before they get me. They
+are beating all about me.”
+
+Then the writing became convulsive. “I can hear them,” I guessed the
+tracing meant, and then it was quite unreadable for a space. Then came
+a little string of words that were quite distinct: “a different sort of
+Selenite altogether, who appears to be directing the—” The writing
+became a mere hasty confusion again.
+
+“They have larger brain cases—much larger, and slenderer bodies, and
+very short legs. They make gentle noises, and move with organized
+deliberation...
+
+“And though I am wounded and helpless here, their appearance still
+gives me hope.” That was like Cavor. “They have not shot at me or
+attempted... injury. I intend—”
+
+Then came the sudden streak of the pencil across the paper, and on the
+back and edges—blood!
+
+And as I stood there stupid, and perplexed, with this dumbfounding
+relic in my hand, something very soft and light and chill touched my
+hand for a moment and ceased to be, and then a thing, a little white
+speck, drifted athwart a shadow. It was a tiny snowflake, the first
+snowflake, the herald of the night.
+
+I looked up with a start, and the sky had darkened almost to blackness,
+and was thick with a gathering multitude of coldly watchful stars. I
+looked eastward, and the light of that shrivelled world was touched
+with sombre bronze; westward, and the sun robbed now by a thickening
+white mist of half its heat and splendour, was touching the crater rim,
+was sinking out of sight, and all the shrubs and jagged and tumbled
+rocks stood out against it in a bristling disorder of black shapes.
+Into the great lake of darkness westward, a vast wreath of mist was
+sinking. A cold wind set all the crater shivering. Suddenly, for a
+moment, I was in a puff of falling snow, and all the world about me
+grey and dim.
+
+And then it was I heard, not loud and penetrating as at first, but
+faint and dim like a dying voice, that tolling, that same tolling that
+had welcomed the coming of the day: Boom!... Boom!... Boom!...
+
+It echoed about the crater, it seemed to throb with the throbbing of
+the greater stars, the blood-red crescent of the sun’s disc sank as it
+tolled out: Boom!... Boom!... Boom!...
+
+What had happened to Cavor? All through that tolling I stood there
+stupidly, and at last the tolling ceased.
+
+And suddenly the open mouth of the tunnel down below there, shut like
+an eye and vanished out of sight.
+
+Then indeed was I alone.
+
+Over me, around me, closing in on me, embracing me ever nearer, was the
+Eternal; that which was before the beginning, and that which triumphs
+over the end; that enormous void in which all light and life and being
+is but the thin and vanishing splendour of a falling star, the cold,
+the stillness, the silence—the infinite and final Night of space.
+
+The sense of solitude and desolation became the sense of an
+overwhelming presence that stooped towards me, that almost touched me.
+
+“No,” I cried. “_No!_ Not yet! not yet! Wait! Wait! Oh, wait!” My voice
+went up to a shriek. I flung the crumpled paper from me, scrambled back
+to the crest to take my bearings, and then, with all the will that was
+in me, leapt out towards the mark I had left, dim and distant now in
+the very margin of the shadow.
+
+Leap, leap, leap, and each leap was seven ages.
+
+Before me the pale serpent-girdled section of the sun sank and sank,
+and the advancing shadow swept to seize the sphere before I could reach
+it. I was two miles away, a hundred leaps or more, and the air about me
+was thinning out as it thins under an air-pump, and the cold was
+gripping at my joints. But had I died, I should have died leaping.
+Once, and then again my foot slipped on the gathering snow as I leapt
+and shortened my leap; once I fell short into bushes that crashed and
+smashed into dusty chips and nothingness, and once I stumbled as I
+dropped and rolled head over heels into a gully, and rose bruised and
+bleeding and confused as to my direction.
+
+But such incidents were as nothing to the intervals, those awful pauses
+when one drifted through the air towards that pouring tide of night. My
+breathing made a piping noise, and it was as though knives were
+whirling in my lungs. My heart seemed to beat against the top of my
+brain. “Shall I reach it? O Heaven! Shall I reach it?”
+
+My whole being became anguish.
+
+“Lie down!” screamed my pain and despair; “lie down!”
+
+The nearer I struggled, the more awfully remote it seemed. I was numb,
+I stumbled, I bruised and cut myself and did not bleed.
+
+It was in sight.
+
+I fell on all fours, and my lungs whooped.
+
+I crawled. The frost gathered on my lips, icicles hung from my
+moustache, I was white with the freezing atmosphere.
+
+I was a dozen yards from it. My eyes had become dim. “Lie down!”
+screamed despair; “lie down!”
+
+I touched it, and halted. “Too late!” screamed despair; “lie down!”
+
+I fought stiffly with it. I was on the manhole lip, a stupefied,
+half-dead being. The snow was all about me. I pulled myself in. There
+lurked within a little warmer air.
+
+The snowflakes—the airflakes—danced in about me, as I tried with
+chilling hands to thrust the valve in and spun it tight and hard. I
+sobbed. “I will,” I chattered in my teeth. And then, with fingers that
+quivered and felt brittle, I turned to the shutter studs.
+
+As I fumbled with the switches—for I had never controlled them before—I
+could see dimly through the steaming glass the blazing red streamers of
+the sinking sun, dancing and flickering through the snowstorm, and the
+black forms of the scrub thickening and bending and breaking beneath
+the accumulating snow. Thicker whirled the snow and thicker, black
+against the light. What if even now the switches overcame me? Then
+something clicked under my hands, and in an instant that last vision of
+the moon world was hidden from my eyes. I was in the silence and
+darkness of the inter-planetary sphere.
+
+### XX.
+
+*Mr. Bedford in Infinite Space*
+
+It was almost as though I had been killed. Indeed, I could imagine a
+man suddenly and violently killed would feel very much as I did. One
+moment, a passion of agonising existence and fear; the next, darkness
+and stillness, neither light nor life nor sun, moon nor stars, the
+blank infinite. Although the thing was done by my own act, although I
+had already tasted this very of effect in Cavor’s company, I felt
+astonished, dumbfounded, and overwhelmed. I seemed to be borne upward
+into an enormous darkness. My fingers floated off the studs, I hung as
+if I were annihilated, and at last very softly and gently I came
+against the bale and the golden chain, and the crowbars that had
+drifted to the middle of the sphere.
+
+I do not know how long that drifting took. In the sphere of course,
+even more than on the moon, one’s earthly time sense was ineffectual.
+At the touch of the bale it was as if I had awakened from a dreamless
+sleep. I immediately perceived that if I wanted to keep awake and alive
+I must get a light or open a window, so as to get a grip of something
+with my eyes. And besides, I was cold. I kicked off from the bale,
+therefore, clawed on to the thin cords within the glass, crawled along
+until I got to the manhole rim, and so got my bearings for the light
+and blind studs, took a shove off, and flying once round the bale, and
+getting a scare from something big and flimsy that was drifting loose,
+I got my hand on the cord quite close to the studs, and reached them. I
+lit the little lamp first of all to see what it was I had collided
+with, and discovered that old copy of _Lloyd’s News_ had slipped its
+moorings, and was adrift in the void. That brought me out of the
+infinite to my own proper dimensions again. It made me laugh and pant
+for a time, and suggested the idea of a little oxygen from one of the
+cylinders. After that I lit the heater until I felt warm, and then I
+took food. Then I set to work in a very gingerly fashion on the
+Cavorite blinds, to see if I could guess by any means how the sphere
+was travelling.
+
+The first blind I opened I shut at once, and hung for a time flattened
+and blinded by the sunlight that had hit me. After thinking a little I
+started upon the windows at right angles to this one, and got the huge
+crescent moon and the little crescent earth behind it, the second time.
+I was amazed to find how far I was from the moon. I had reckoned that
+not only should I have little or none of the “kick-off” that the
+earth’s atmosphere had given us at our start, but that the tangential
+“fly off” of the moon’s spin would be at least twenty-eight times less
+than the earth’s. I had expected to discover myself hanging over our
+crater, and on the edge of the night, but all that was now only a part
+of the outline of the white crescent that filled the sky. And Cavor—?
+
+He was already infinitesimal.
+
+I tried to imagine what could have happened to him. But at that time I
+could think of nothing but death. I seemed to see him, bent and smashed
+at the foot of some interminably high cascade of blue. And all about
+him the stupid insects stared...
+
+Under the inspiring touch of the drifting newspaper I became practical
+again for a while. It was quite clear to me that what I had to do was
+to get back to earth, but as far as I could see I was drifting away
+from it. Whatever had happened to Cavor, even if he was still alive,
+which seemed to me incredible after that blood-stained scrap, I was
+powerless to help him. There he was, living or dead behind the mantle
+of that rayless night, and there he must remain at least until I could
+summon our fellow men to his assistance. Should I do that? Something of
+the sort I had in my mind; to come back to earth if it were possible,
+and then as maturer consideration might determine, either to show and
+explain the sphere to a few discreet persons, and act with them, or
+else to keep my secret, sell my gold, obtain weapons, provisions, and
+an assistant, and return with these advantages to deal on equal terms
+with the flimsy people of the moon, to rescue Cavor, if that were still
+possible, and at any rate to procure a sufficient supply of gold to
+place my subsequent proceedings on a firmer basis. But that was hoping
+far; I had first to get back.
+
+I set myself to decide just exactly how the return to earth could be
+contrived. As I struggled with that problem I ceased to worry about
+what I should do when I got there. At last my only care was to get
+back.
+
+I puzzled out at last that my best chance would be to drop back towards
+the moon as near as I dared in order to gather velocity, then to shut
+my windows, and fly behind it, and when I was past to open my earthward
+windows, and so get off at a good pace homeward. But whether I should
+ever reach the earth by that device, or whether I might not simply find
+myself spinning about it in some hyperbolic or parabolic curve or
+other, I could not tell. Later I had a happy inspiration, and by
+opening certain windows to the moon, which had appeared in the sky in
+front of the earth, I turned my course aside so as to head off the
+earth, which it had become evident to me I must pass behind without
+some such expedient. I did a very great deal of complicated thinking
+over these problems—for I am no mathematician—and in the end I am
+certain it was much more my good luck than my reasoning that enabled me
+to hit the earth. Had I known then, as I know now, the mathematical
+chances there were against me, I doubt if I should have troubled even
+to touch the studs to make any attempt. And having puzzled out what I
+considered to be the thing to do, I opened all my moonward windows, and
+squatted down—the effort lifted me for a time some feet or so into the
+air, and I hung there in the oddest way—and waited for the crescent to
+get bigger and bigger until I felt I was near enough for safety. Then I
+would shut the windows, fly past the moon with the velocity I had got
+from it—if I did not smash upon it—and so go on towards the earth.
+
+And that is what I did.
+
+At last I felt my moonward start was sufficient. I shut out the sight
+of the moon from my eyes, and in a state of mind that was, I now
+recall, incredibly free from anxiety or any distressful quality, I sat
+down to begin a vigil in that little speck of matter in infinite space
+that would last until I should strike the earth. The heater had made
+the sphere tolerably warm, the air had been refreshed by the oxygen,
+and except for that faint congestion of the head that was always with
+me while I was away from earth, I felt entire physical comfort. I had
+extinguished the light again, lest it should fail me in the end; I was
+in darkness, save for the earthshine and the glitter of the stars below
+me. Everything was so absolutely silent and still that I might indeed
+have been the only being in the universe, and yet, strangely enough, I
+had no more feeling of loneliness or fear than if I had been lying in
+bed on earth. Now, this seems all the stranger to me, since during my
+last hours in that crater of the moon, the sense of my utter loneliness
+had been an agony....
+
+Incredible as it will seem, this interval of time that I spent in space
+has no sort of proportion to any other interval of time in my life.
+Sometimes it seemed as though I sat through immeasurable eternities
+like some god upon a lotus leaf, and again as though there was a
+momentary pause as I leapt from moon to earth. In truth, it was
+altogether some weeks of earthly time. But I had done with care and
+anxiety, hunger or fear, for that space. I floated, thinking with a
+strange breadth and freedom of all that we had undergone, and of all my
+life and motives, and the secret issues of my being. I seemed to myself
+to have grown greater and greater, to have lost all sense of movement;
+to be floating amidst the stars, and always the sense of earth’s
+littleness and the infinite littleness of my life upon it, was implicit
+in my thoughts.
+
+I can’t profess to explain the things that happened in my mind. No
+doubt they could all be traced directly or indirectly to the curious
+physical conditions under which I was living. I set them down here just
+for what they are worth, and without any comment. The most prominent
+quality of it was a pervading doubt of my own identity. I became, if I
+may so express it, dissociate from Bedford; I looked down on Bedford as
+a trivial, incidental thing with which I chanced to be connected. I saw
+Bedford in many relations—as an ass or as a poor beast, where I had
+hitherto been inclined to regard him with a quiet pride as a very
+spirited or rather forcible person. I saw him not only as an ass, but
+as the son of many generations of asses. I reviewed his school-days and
+his early manhood, and his first encounter with love, very much as one
+might review the proceedings of an ant in the sand. Something of that
+period of lucidity I regret still hangs about me, and I doubt if I
+shall ever recover the full-bodied self satisfaction of my early days.
+But at the time the thing was not in the least painful, because I had
+that extraordinary persuasion that, as a matter of fact, I was no more
+Bedford than I was any one else, but only a mind floating in the still
+serenity of space. Why should I be disturbed about this Bedford’s
+shortcomings? I was not responsible for him or them.
+
+For a time I struggled against this really very grotesque delusion. I
+tried to summon the memory of vivid moments, of tender or intense
+emotions to my assistance; I felt that if I could recall one genuine
+twinge of feeling the growing severance would be stopped. But I could
+not do it. I saw Bedford rushing down Chancery Lane, hat on the back of
+his head, coat tails flying out, _en route_ for his public examination.
+I saw him dodging and bumping against, and even saluting, other similar
+little creatures in that swarming gutter of people. Me? I saw Bedford
+that same evening in the sitting-room of a certain lady, and his hat
+was on the table beside him, and it wanted brushing badly, and he was
+in tears. Me? I saw him with that lady in various attitudes and
+emotions—I never felt so detached before.... I saw him hurrying off to
+Lympne to write a play, and accosting Cavor, and in his shirt sleeves
+working at the sphere, and walking out to Canterbury because he was
+afraid to come! Me? I did not believe it.
+
+I still reasoned that all this was hallucination due to my solitude,
+and the fact that I had lost all weight and sense of resistance. I
+endeavoured to recover that sense by banging myself about the sphere,
+by pinching my hands and clasping them together. Among other things, I
+lit the light, captured that torn copy of _Lloyd’s_, and read those
+convincingly realistic advertisements about the Cutaway bicycle, and
+the gentleman of private means, and the lady in distress who was
+selling those “forks and spoons.” There was no doubt they existed
+surely enough, and, said I, “This is your world, and you are Bedford,
+and you are going back to live among things like that for all the rest
+of your life.” But the doubts within me could still argue: “It is not
+you that is reading, it is Bedford, but you are not Bedford, you know.
+That’s just where the mistake comes in.”
+
+“Confound it!” I cried; “and if I am not Bedford, what am I?”
+
+But in that direction no light was forthcoming, though the strangest
+fancies came drifting into my brain, queer remote suspicions, like
+shadows seen from away. Do you know, I had a sort of idea that really I
+was something quite outside not only the world, but all worlds, and out
+of space and time, and that this poor Bedford was just a peephole
+through which I looked at life? ...
+
+Bedford! However I disavowed him, there I was most certainly bound up
+with him, and I knew that wherever or whatever I might be, I must needs
+feel the stress of his desires, and sympathise with all his joys and
+sorrows until his life should end. And with the dying of Bedford—what
+then? ...
+
+Enough of this remarkable phase of my experiences! I tell it here
+simply to show how one’s isolation and departure from this planet
+touched not only the functions and feeling of every organ of the body,
+but indeed also the very fabric of the mind, with strange and
+unanticipated disturbances. All through the major portion of that vast
+space journey I hung thinking of such immaterial things as these, hung
+dissociated and apathetic, a cloudy megalomaniac, as it were, amidst
+the stars and planets in the void of space; and not only the world to
+which I was returning, but the blue-lit caverns of the Selenites, their
+helmet faces, their gigantic and wonderful machines, and the fate of
+Cavor, dragged helpless into that world, seemed infinitely minute and
+altogether trivial things to me.
+
+Until at last I began to feel the pull of the earth upon my being,
+drawing me back again to the life that is real for men. And then,
+indeed, it grew clearer and clearer to me that I was quite certainly
+Bedford after all, and returning after amazing adventures to this world
+of ours, and with a life that I was very likely to lose in this return.
+I set myself to puzzle out the conditions under which I must fall to
+earth.
+
+### XXI.
+
+*Mr. Bedford at Littlestone*
+
+My line of flight was about parallel with the surface as I came into
+the upper air. The temperature of the sphere began to rise forthwith. I
+knew it behoved me to drop at once. Far below me, in a darkling
+twilight, stretched a great expanse of sea. I opened every window I
+could, and fell—out of sunshine into evening, and out of evening into
+night. Vaster grew the earth and vaster, swallowing up the stars, and
+the silvery translucent starlit veil of cloud it wore spread out to
+catch me. At last the world seemed no longer a sphere but flat, and
+then concave. It was no longer a planet in the sky, but the world of
+Man. I shut all but an inch or so of earthward window, and dropped with
+a slackening velocity. The broadening water, now so near that I could
+see the dark glitter of the waves, rushed up to meet me. The sphere
+became very hot. I snapped the last strip of window, and sat scowling
+and biting my knuckles, waiting for the impact....
+
+The sphere hit the water with a huge splash: it must have sent it
+fathoms high. At the splash I flung the Cavorite shutters open. Down I
+went, but slower and slower, and then I felt the sphere pressing
+against my feet, and so drove up again as a bubble drives. And at the
+last I was floating and rocking upon the surface of the sea, and my
+journey in space was at an end.
+
+The night was dark and overcast. Two yellow pinpoints far away showed
+the passing of a ship, and nearer was a red glare that came and went.
+Had not the electricity of my glow-lamp exhausted itself, I could have
+got picked up that night. In spite of the inordinate fatigue I was
+beginning to feel, I was excited now, and for a time hopeful, in a
+feverish, impatient way, that so my travelling might end.
+
+But at last I ceased to move about, and sat, wrists on knees, staring
+at a distant red light. It swayed up and down, rocking, rocking. My
+excitement passed. I realised I had yet to spend another night at least
+in the sphere. I perceived myself infinitely heavy and fatigued. And so
+I fell asleep.
+
+A change in my rhythmic motion awakened me. I peered through the
+refracting glass, and saw that I had come aground upon a huge shallow
+of sand. Far away I seemed to see houses and trees, and seaward a
+curved, vague distortion of a ship hung between sea and sky.
+
+I stood up and staggered. My one desire was to emerge. The manhole was
+upward, and I wrestled with the screw. Slowly I opened the manhole. At
+last the air was singing in again as once it had sung out. But this
+time I did not wait until the pressure was adjusted. In another moment
+I had the weight of the window on my hands, and I was open, wide open,
+to the old familiar sky of earth.
+
+The air hit me on the chest so that I gasped. I dropped the glass
+screw. I cried out, put my hands to my chest, and sat down. For a time
+I was in pain. Then I took deep breaths. At last I could rise and move
+about again.
+
+I tried to thrust my head through the manhole, and the sphere rolled
+over. It was as though something had lugged my head down directly it
+emerged. I ducked back sharply, or I should have been pinned face under
+water. After some wriggling and shoving I managed to crawl out upon
+sand, over which the retreating waves still came and went.
+
+I did not attempt to stand up. It seemed to me that my body must be
+suddenly changed to lead. Mother Earth had her grip on me now—no
+Cavorite intervening. I sat down heedless of the water that came over
+my feet.
+
+It was dawn, a grey dawn, rather overcast but showing here and there a
+long patch of greenish grey. Some way out a ship was lying at anchor, a
+pale silhouette of a ship with one yellow light. The water came
+rippling in in long shallow waves. Away to the right curved the land, a
+shingle bank with little hovels, and at last a lighthouse, a sailing
+mark and a point. Inland stretched a space of level sand, broken here
+and there by pools of water, and ending a mile away perhaps in a low
+shore of scrub. To the north-east some isolated watering-place was
+visible, a row of gaunt lodging-houses, the tallest things that I could
+see on earth, dull dabs against the brightening sky. What strange men
+can have reared these vertical piles in such an amplitude of space I do
+not know. There they are, like pieces of Brighton lost in the waste.
+
+For a long time I sat there, yawning and rubbing my face. At last I
+struggled to rise. It made me feel that I was lifting a weight. I stood
+up.
+
+I stared at the distant houses. For the first time since our starvation
+in the crater I thought of earthly food. “Bacon,” I whispered, “eggs.
+Good toast and good coffee.... And how the devil am I going to get all
+this stuff to Lympne?” I wondered where I was. It was an east shore
+anyhow, and I had seen Europe before I dropped.
+
+I heard footsteps crunching in the sand, and a little round-faced,
+friendly-looking man in flannels, with a bathing towel wrapped about
+his shoulders, and his bathing dress over his arm, appeared up the
+beach. I knew instantly that I must be in England. He was staring most
+intently at the sphere and me. He advanced staring. I dare say I looked
+a ferocious savage enough—dirty, unkempt, to an indescribable degree;
+but it did not occur to me at the time. He stopped at a distance of
+twenty yards. “Hul-lo, my man!” he said doubtfully.
+
+“Hullo yourself!” said I.
+
+He advanced, reassured by that. “What on earth is that thing?” he
+asked.
+
+“Can you tell me where I am?” I asked.
+
+“That’s Littlestone,” he said, pointing to the houses; “and that’s
+Dungeness! Have you just landed? What’s that thing you’ve got? Some
+sort of machine?”
+
+“Yes.”
+
+“Have you floated ashore? Have you been wrecked or something? What is
+it?”
+
+I meditated swiftly. I made an estimate of the little man’s appearance
+as he drew nearer. “By Jove!” he said, “you’ve had a time of it! I
+thought you— Well— Where were you cast away? Is that thing a sort of
+floating thing for saving life?”
+
+I decided to take that line for the present. I made a few vague
+affirmatives. “I want help,” I said hoarsely. “I want to get some stuff
+up the beach—stuff I can’t very well leave about.” I became aware of
+three other pleasant-looking young men with towels, blazers, and straw
+hats, coming down the sands towards me. Evidently the early bathing
+section of this Littlestone.
+
+“Help!” said the young man: “rather!” He became vaguely active. “What
+particularly do you want done?” He turned round and gesticulated. The
+three young men accelerated their pace. In a minute they were about me,
+plying me with questions I was indisposed to answer. “I’ll tell all
+that later,” I said. “I’m dead beat. I’m a rag.”
+
+“Come up to the hotel,” said the foremost little man. “We’ll look after
+that thing there.”
+
+I hesitated. “I can’t,” I said. “In that sphere there’s two big bars of
+gold.”
+
+They looked incredulously at one another, then at me with a new
+inquiry. I went to the sphere, stooped, crept in, and presently they
+had the Selenites’ crowbars and the broken chain before them. If I had
+not been so horribly fagged I could have laughed at them. It was like
+kittens round a beetle. They didn’t know what to do with the stuff. The
+fat little man stooped and lifted the end of one of the bars, and then
+dropped it with a grunt. Then they all did.
+
+“It’s lead, or gold!” said one.
+
+“Oh, it’s _gold!_” said another.
+
+“Gold, right enough,” said the third.
+
+Then they all stared at me, and then they all stared at the ship lying
+at anchor.
+
+“I say!” cried the little man. “But where did you get that?”
+
+I was too tired to keep up a lie. “I got it in the moon.”
+
+I saw them stare at one another.
+
+“Look here!” said I, “I’m not going to argue now. Help me carry these
+lumps of gold up to the hotel—I guess, with rests, two of you can
+manage one, and I’ll trail this chain thing—and I’ll tell you more when
+I’ve had some food.”
+
+“And how about that thing?”
+
+“It won’t hurt there,” I said. “Anyhow—confound it!—it must stop there
+now. If the tide comes up, it will float all right.”
+
+And in a state of enormous wonderment, these young men most obediently
+hoisted my treasures on their shoulders, and with limbs that felt like
+lead I headed a sort of procession towards that distant fragment of
+“sea-front.” Half-way there we were reinforced by two awe-stricken
+little girls with spades, and later a lean little boy, with a
+penetrating sniff, appeared. He was, I remember, wheeling a bicycle,
+and he accompanied us at a distance of about a hundred yards on our
+right flank, and then I suppose, gave us up as uninteresting, mounted
+his bicycle and rode off over the level sands in the direction of the
+sphere.
+
+I glanced back after him.
+
+“_He_ won’t touch it,” said the stout young man reassuringly, and I was
+only too willing to be reassured.
+
+At first something of the grey of the morning was in my mind, but
+presently the sun disengaged itself from the level clouds of the
+horizon and lit the world, and turned the leaden sea to glittering
+waters. My spirits rose. A sense of the vast importance of the things I
+had done and had yet to do came with the sunlight into my mind. I
+laughed aloud as the foremost man staggered under my gold. When indeed
+I took my place in the world, how amazed the world would be!
+
+If it had not been for my inordinate fatigue, the landlord of the
+Littlestone hotel would have been amusing, as he hesitated between my
+gold and my respectable company on the one and my filthy appearance on
+the other. But at last I found myself in a terrestrial bathroom once
+more with warm water to wash myself with, and a change of raiment,
+preposterously small indeed, but anyhow clean, that the genial little
+man had lent me. He lent me a razor too, but I could not screw up my
+resolution to attack even the outposts of the bristling beard that
+covered my face.
+
+I sat down to an English breakfast and ate with a sort of languid
+appetite—an appetite many weeks old and very decrepit—and stirred
+myself to answer the questions of the four young men. And I told them
+the truth.
+
+“Well,” said I, “as you press me—I got it in the moon.”
+
+“The moon?”
+
+“Yes, the moon in the sky.”
+
+“But how do you mean?”
+
+“What I say, confound it!”
+
+“Then you have just come from the moon?”
+
+“Exactly! through space—in that ball.” And I took a delicious mouthful
+of egg. I made a private note that when I went back to the moon I would
+take a box of eggs.
+
+I could see clearly that they did not believe one word of what I told
+them, but evidently they considered me the most respectable liar they
+had ever met. They glanced at one another, and then concentrated the
+fire of their eyes on me. I fancy they expected a clue to me in the way
+I helped myself to salt. They seemed to find something significant in
+my peppering my egg. These strangely shaped masses of gold they had
+staggered under held their minds. There the lumps lay in front of me,
+each worth thousands of pounds, and as impossible for any one to steal
+as a house or a piece of land. As I looked at their curious faces over
+my coffee-cup, I realised something of the enormous wilderness of
+explanations into which I should have to wander to render myself
+comprehensible again.
+
+“You don’t _really_ mean—” began the youngest young man, in the tone of
+one who speaks to an obstinate child.
+
+“Just pass me that toast-rack,” I said, and shut him up completely.
+
+“But look here, I say,” began one of the others. “We’re not going to
+believe that, you know.”
+
+“Ah, well,” said I, and shrugged my shoulders.
+
+“He doesn’t want to tell us,” said the youngest young man in a stage
+aside; and then, with an appearance of great _sang-froid_, “You don’t
+mind if I take a cigarette?”
+
+I waved him a cordial assent, and proceeded with my breakfast. Two of
+the others went and looked out of the farther window and talked
+inaudibly. I was struck by a thought. “The tide,” I said, “is running
+out?”
+
+There was a pause, a doubt who should answer me.
+
+“It’s near the ebb,” said the fat little man.
+
+“Well, anyhow,” I said, “it won’t float far.”
+
+I decapitated my third egg, and began a little speech. “Look here,” I
+said. “Please don’t imagine I’m surly or telling you uncivil lies, or
+anything of that sort. I’m forced almost, to be a little short and
+mysterious. I can quite understand this is as queer as it can be, and
+that your imaginations must be going it. I can assure you, you’re in at
+a memorable time. But I can’t make it clear to you now—it’s impossible.
+I give you my word of honour I’ve come from the moon, and that’s all I
+can tell you.... All the same, I’m tremendously obliged to you, you
+know, tremendously. I hope that my manner hasn’t in any way given you
+offence.”
+
+“Oh, not in the least!” said the youngest young man affably. “We can
+quite understand,” and staring hard at me all the time, he heeled his
+chair back until it very nearly upset, and recovered with some
+exertion. “Not a bit of it,” said the fat young man.
+
+“Don’t you imagine _that!_” and they all got up and dispersed, and
+walked about and lit cigarettes, and generally tried to show they were
+perfectly amiable and disengaged, and entirely free from the slightest
+curiosity about me and the sphere. “I’m going to keep an eye on that
+ship out there all the same,” I heard one of them remarking in an
+undertone. If only they could have forced themselves to it, they would,
+I believe, even have gone out and left me. I went on with my third egg.
+
+“The weather,” the fat little man remarked presently, “has been
+immense, has it not? I don’t know _when_ we have had such a summer.”
+
+Phoo-whizz! Like a tremendous rocket!
+
+And somewhere a window was broken....
+
+“What’s that?” said I.
+
+“It isn’t—?” cried the little man, and rushed to the corner window.
+
+All the others rushed to the window likewise. I sat staring at them.
+
+Suddenly I leapt up, knocked over my third egg, rushed for the window
+also. I had just thought of something. “Nothing to be seen there,”
+cried the little man, rushing for the door.
+
+“It’s that boy!” I cried, bawling in hoarse fury; “it’s that accursed
+boy!” and turning about I pushed the waiter aside—he was just bringing
+me some more toast—and rushed violently out of the room and down and
+out upon the queer little esplanade in front of the hotel.
+
+The sea, which had been smooth, was rough now with hurrying cat’s-paws,
+and all about where the sphere had been was tumbled water like the wake
+of a ship. Above, a little puff of cloud whirled like dispersing smoke,
+and the three or four people on the beach were staring up with
+interrogative faces towards the point of that unexpected report. And
+that was all! Boots and waiter and the four young men in blazers came
+rushing out behind me. Shouts came from windows and doors, and all
+sorts of worrying people came into sight—agape.
+
+For a time I stood there, too overwhelmed by this new development to
+think of the people.
+
+At first I was too stunned to see the thing as any definite disaster—I
+was just stunned, as a man is by some accidental violent blow. It is
+only afterwards he begins to appreciate his specific injury.
+
+“Good Lord!”
+
+I felt as though somebody was pouring funk out of a can down the back
+of my neck. My legs became feeble. I had got the first intimation of
+what the disaster meant for me. There was that confounded boy—sky high!
+I was utterly left. There was the gold in the coffee-room—my only
+possession on earth. How would it all work out? The general effect was
+of a gigantic unmanageable confusion.
+
+“I say,” said the voice of the little man behind. “I _say_, you know.”
+
+I wheeled about, and there were twenty or thirty people, a sort of
+irregular investment of people, all bombarding me with dumb
+interrogation, with infinite doubt and suspicion. I felt the compulsion
+of their eyes intolerably. I groaned aloud.
+
+“I _can’t_,” I shouted. “I tell you I can’t! I’m not equal to it! You
+must puzzle and—and be damned to you!”
+
+I gesticulated convulsively. He receded a step as though I had
+threatened him. I made a bolt through them into the hotel. I charged
+back into the coffee-room, rang the bell furiously. I gripped the
+waiter as he entered. “D’ye hear?” I shouted. “Get help and carry these
+bars up to my room right away.”
+
+He failed to understand me, and I shouted and raved at him. A
+scared-looking little old man in a green apron appeared, and further
+two of the young men in flannels. I made a dash at them and
+commandeered their services. As soon as the gold was in my room I felt
+free to quarrel. “Now get out,” I shouted; “all of you get out if you
+don’t want to see a man go mad before your eyes!” And I helped the
+waiter by the shoulder as he hesitated in the doorway. And then, as
+soon as I had the door locked on them all, I tore off the little man’s
+clothes again, shied them right and left, and got into bed forthwith.
+And there I lay swearing and panting and cooling for a very long time.
+
+At last I was calm enough to get out of bed and ring up the round-eyed
+waiter for a flannel nightshirt, a soda and whisky, and some good
+cigars. And these things being procured me, after an exasperating delay
+that drove me several times to the bell, I locked the door again and
+proceeded very deliberately to look the entire situation in the face.
+
+The net result of the great experiment presented itself as an absolute
+failure. It was a rout, and I was the sole survivor. It was an absolute
+collapse, and this was the final disaster. There was nothing for it but
+to save myself, and as much as I could in the way of prospects from our
+_débâcle_. At one fatal crowning blow all my vague resolutions of
+return and recovery had vanished. My intention of going back to the
+moon, of getting a sphereful of gold, and afterwards of having a
+fragment of Cavorite analysed and so recovering the great
+secret—perhaps, finally, even of recovering Cavor’s body—all these
+ideas vanished altogether.
+
+I was the sole survivor, and that was all.
+
+I think that going to bed was one of the luckiest ideas I have ever had
+in an emergency. I really believe I should either have got loose-headed
+or done some indiscreet thing. But there, locked in and secure from all
+interruptions, I could think out the position in all its bearings and
+make my arrangements at leisure.
+
+Of course, it was quite clear to me what had happened to the boy. He
+had crawled into the sphere, meddled with the studs, shut the Cavorite
+windows, and gone up. It was highly improbable he had screwed the
+manhole stopper, and, even if he had, the chances were a thousand to
+one against his getting back. It was fairly evident that he would
+gravitate with my bales to somewhere near the middle of the sphere and
+remain there, and so cease to be a legitimate terrestrial interest,
+however remarkable he might seem to the inhabitants of some remote
+quarter of space. I very speedily convinced myself on that point. And
+as for any responsibility I might have in the matter, the more I
+reflected upon that, the clearer it became that if only I kept quiet
+about things, I need not trouble myself about that. If I was faced by
+sorrowing parents demanding their lost boy, I had merely to demand my
+lost sphere—or ask them what they meant. At first I had had a vision of
+weeping parents and guardians, and all sorts of complications; but now
+I saw that I simply had to keep my mouth shut, and nothing in that way
+could arise. And, indeed, the more I lay and smoked and thought, the
+more evident became the wisdom of impenetrability.
+
+It is within the right of every British citizen, provided he does not
+commit damage nor indecorum, to appear suddenly wherever he pleases,
+and as ragged and filthy as he pleases, and with whatever amount of
+virgin gold he sees fit to encumber himself, and no one has any right
+at all to hinder and detain him in this procedure. I formulated that at
+last to myself, and repeated it over as a sort of private Magna Charta
+of my liberty.
+
+Once I had put that issue on one side, I could take up and consider in
+an equable manner certain considerations I had scarcely dared to think
+of before, namely, those arising out of the circumstances of my
+bankruptcy. But now, looking at this matter calmly and at leisure, I
+could see that if only I suppressed my identity by a temporary
+assumption of some less well-known name, and if I retained the two
+months’ beard that had grown upon me, the risks of any annoyance from
+the spiteful creditor to whom I have already alluded became very small
+indeed. From that to a definite course of rational worldly action was
+plain sailing. It was all amazingly petty, no doubt, but what was there
+remaining for me to do?
+
+Whatever I did I was resolved that I would keep myself level and right
+side up.
+
+I ordered up writing materials, and addressed a letter to the New
+Romney Bank—the nearest, the waiter informed me—telling the manager I
+wished to open an account with him, and requesting him to send two
+trustworthy persons properly authenticated in a cab with a good horse
+to fetch some hundredweight of gold with which I happened to be
+encumbered. I signed the letter “Blake,” which seemed to me to be a
+thoroughly respectable sort of name. This done, I got a Folkstone Blue
+Book, picked out an outfitter, and asked him to send a cutter to
+measure me for a dark tweed suit, ordering at the same time a valise,
+dressing bag, brown boots, shirts, hat (to fit), and so forth; and from
+a watchmaker I also ordered a watch. And these letters being
+despatched, I had up as good a lunch as the hotel could give, and then
+lay smoking a cigar, as calm and ordinary as possible, until in
+accordance with my instructions two duly authenticated clerks came from
+the bank and weighed and took away my gold. After which I pulled the
+clothes over my ears in order to drown any knocking, and went very
+comfortably to sleep.
+
+I went to sleep. No doubt it was a prosaic thing for the first man back
+from the moon to do, and I can imagine that the young and imaginative
+reader will find my behaviour disappointing. But I was horribly
+fatigued and bothered, and, confound it! what else was there to do?
+There certainly was not the remotest chance of my being believed, if I
+had told my story then, and it would certainly have subjected me to
+intolerable annoyances. I went to sleep. When at last I woke up again I
+was ready to face the world as I have always been accustomed to face it
+since I came to years of discretion. And so I got away to Italy, and
+there it is I am writing this story. If the world will not have it as
+fact, then the world may take it as fiction. It is no concern of mine.
+
+And now that the account is finished, I am amazed to think how
+completely this adventure is gone and done with. Everybody believes
+that Cavor was a not very brilliant scientific experimenter who blew up
+his house and himself at Lympne, and they explain the bang that
+followed my arrival at Littlestone by a reference to the experiments
+with explosives that are going on continually at the government
+establishment of Lydd, two miles away. I must confess that hitherto I
+have not acknowledged my share in the disappearance of Master Tommy
+Simmons, which was that little boy’s name. That, perhaps, may prove a
+difficult item of corroboration to explain away. They account for my
+appearance in rags with two bars of indisputable gold upon the
+Littlestone beach in various ingenious ways—it doesn’t worry me what
+they think of me. They say I have strung all these things together to
+avoid being questioned too closely as to the source of my wealth. I
+would like to see the man who could invent a story that would hold
+together like this one. Well, they must take it as fiction—there it is.
+
+I have told my story—and now, I suppose, I have to take up the worries
+of this terrestrial life again. Even if one has been to the moon, one
+has still to earn a living. So I am working here at Amalfi, on the
+scenario of that play I sketched before Cavor came walking into my
+world, and I am trying to piece my life together as it was before ever
+I saw him. I must confess that I find it hard to keep my mind on the
+play when the moonshine comes into my room. It is full moon here, and
+last night I was out on the pergola for hours, staring away at the
+shining blankness that hides so much. Imagine it! tables and chairs,
+and trestles and bars of gold! Confound it!—if only one could hit on
+that Cavorite again! But a thing like that doesn’t come twice in a
+life. Here I am, a little better off than I was at Lympne, and that is
+all. And Cavor has committed suicide in a more elaborate way than any
+human being ever did before. So the story closes as finally and
+completely as a dream. It fits in so little with all the other things
+of life, so much of it is so utterly remote from all human experience,
+the leaping, the eating, the breathing, and these weightless times,
+that indeed there are moments when, in spite of my moon gold, I do more
+than half believe myself that the whole thing was a dream....
+
+### XXII.
+
+The Astonishing Communication of Mr. Julius Wendigee
+
+When I had finished my account of my return to the earth at
+Littlestone, I wrote, “The End,” made a flourish, and threw my pen
+aside, fully believing that the whole story of the First Men in the
+Moon was done. Not only had I done this, but I had placed my manuscript
+in the hands of a literary agent, had permitted it to be sold, had seen
+the greater portion of it appear in the _Strand Magazine_, and was
+setting to work again upon the scenario of the play I had commenced at
+Lympne before I realised that the end was not yet. And then, following
+me from Amalfi to Algiers, there reached me (it is now about six months
+ago) one of the most astounding communications I have ever been fated
+to receive. Briefly, it informed me that Mr. Julius Wendigee, a Dutch
+electrician, who has been experimenting with certain apparatus akin to
+the apparatus used by Mr. Tesla in America, in the hope of discovering
+some method of communication with Mars, was receiving day by day a
+curiously fragmentary message in English, which was indisputably
+emanating from Mr. Cavor in the moon.
+
+At first I thought the thing was an elaborate practical joke by some
+one who had seen the manuscript of my narrative. I answered Mr.
+Wendigee jestingly, but he replied in a manner that put such suspicion
+altogether aside, and in a state of inconceivable excitement I hurried
+from Algiers to the little observatory upon the Monte Rosa in which he
+was working. In the presence of his record and his appliances—and above
+all of the messages from Cavor that were coming to hand—my lingering
+doubts vanished. I decided at once to accept a proposal he made to me
+to remain with him, assisting him to take down the record from day to
+day, and endeavouring with him to send a message back to the moon.
+Cavor, we learnt, was not only alive, but free, in the midst of an
+almost inconceivable community of these ant-like beings, these ant-men,
+in the blue darkness of the lunar caves. He was lamed, it seemed, but
+otherwise in quite good health—in better health, he distinctly said,
+than he usually enjoyed on earth. He had had a fever, but it had left
+no bad effects. But curiously enough he seemed to be labouring under a
+conviction that I was either dead in the moon crater or lost in the
+deep of space.
+
+His message began to be received by Mr. Wendigee when that gentleman
+was engaged in quite a different investigation. The reader will no
+doubt recall the little excitement that began the century, arising out
+of an announcement by Mr. Nikola Tesla, the American electrical
+celebrity, that he had received a message from Mars. His announcement
+renewed attention to a fact that had long been familiar to scientific
+people, namely: that from some unknown source in space, waves of
+electromagnetic disturbance, entirely similar to those used by Signor
+Marconi for his wireless telegraphy, are constantly reaching the earth.
+Besides Tesla quite a number of other observers have been engaged in
+perfecting apparatus for receiving and recording these vibrations,
+though few would go so far as to consider them actual messages from
+some extraterrestrial sender. Among that few, however, we must
+certainly count Mr. Wendigee. Ever since 1898 he had devoted himself
+almost entirely to this subject, and being a man of ample means he had
+erected an observatory on the flanks of Monte Rosa, in a position
+singularly adapted in every way for such observations.
+
+My scientific attainments, I must admit, are not great, but so far as
+they enable me to judge, Mr. Wendigee’s contrivances for detecting and
+recording any disturbances in the electromagnetic conditions of space
+are singularly original and ingenious. And by a happy combination of
+circumstances they were set up and in operation about two months before
+Cavor made his first attempt to call up the earth. Consequently we have
+fragments of his communication even from the beginning. Unhappily, they
+are only fragments, and the most momentous of all the things that he
+had to tell humanity—the instructions, that is, for the making of
+Cavorite, if, indeed, he ever transmitted them—have throbbed themselves
+away unrecorded into space. We never succeeded in getting a response
+back to Cavor. He was unable to tell, therefore, what we had received
+or what we had missed; nor, indeed, did he certainly know that any one
+on earth was really aware of his efforts to reach us. And the
+persistence he displayed in sending eighteen long descriptions of lunar
+affairs—as they would be if we had them complete—shows how much his
+mind must have turned back towards his native planet since he left it
+two years ago.
+
+You can imagine how amazed Mr. Wendigee must have been when he
+discovered his record of electromagnetic disturbances interlaced by
+Cavor’s straightforward English. Mr. Wendigee knew nothing of our wild
+journey moonward, and suddenly—this English out of the void!
+
+It is well the reader should understand the conditions under which it
+would seem these messages were sent. Somewhere within the moon Cavor
+certainly had access for a time to a considerable amount of electrical
+apparatus, and it would seem he rigged up—perhaps furtively—a
+transmitting arrangement of the Marconi type. This he was able to
+operate at irregular intervals: sometimes for only half an hour or so,
+sometimes for three or four hours at a stretch. At these times he
+transmitted his earthward message, regardless of the fact that the
+relative position of the moon and points upon the earth’s surface is
+constantly altering. As a consequence of this and of the necessary
+imperfections of our recording instruments his communication comes and
+goes in our records in an extremely fitful manner; it becomes blurred;
+it “fades out” in a mysterious and altogether exasperating way. And
+added to this is the fact that he was not an expert operator; he had
+partly forgotten, or never completely mastered, the code in general
+use, and as he became fatigued he dropped words and misspelt in a
+curious manner.
+
+Altogether we have probably lost quite half of the communications he
+made, and much we have is damaged, broken, and partly effaced. In the
+abstract that follows the reader must be prepared therefore for a
+considerable amount of break, hiatus, and change of topic. Mr. Wendigee
+and I are collaborating in a complete and annotated edition of the
+Cavor record, which we hope to publish, together with a detailed
+account of the instruments employed, beginning with the first volume in
+January next. That will be the full and scientific report, of which
+this is only the popular transcript. But here we give at least
+sufficient to complete the story I have told, and to give the broad
+outlines of the state of that other world so near, so akin, and yet so
+dissimilar to our own.
+
+### XXIII.
+
+An Abstract of the Six Messages First Received from Mr. Cavor
+
+The two earlier messages of Mr. Cavor may very well be reserved for
+that larger volume. They simply tell, with greater brevity and with a
+difference in several details that is interesting, but not of any vital
+importance, the bare facts of the making of the sphere and our
+departure from the world. Throughout, Cavor speaks of me as a man who
+is dead, but with a curious change of temper as he approaches our
+landing on the moon. “Poor Bedford,” he says of me, and “this poor
+young man,” and he blames himself for inducing a young man, “by no
+means well equipped for such adventures,” to leave a planet “on which
+he was indisputably fitted to succeed” on so precarious a mission. I
+think he underrates the part my energy and practical capacity played in
+bringing about the realisation of his theoretical sphere. “We arrived,”
+he says, with no more account of our passage through space than if we
+had made a journey of common occurrence in a railway train.
+
+And then he becomes increasingly unfair to me. Unfair, indeed, to an
+extent I should not have expected in a man trained in the search for
+truth. Looking back over my previously written account of these things,
+I must insist that I have been altogether juster to Cavor than he has
+been to me. I have extenuated little and suppressed nothing. But his
+account is:—
+
+“It speedily became apparent that the entire strangeness of our
+circumstances and surroundings—great loss of weight, attenuated but
+highly oxygenated air, consequent exaggeration of the results of
+muscular effort, rapid development of weird plants from obscure spores,
+lurid sky—was exciting my companion unduly. On the moon his character
+seemed to deteriorate. He became impulsive, rash, and quarrelsome. In a
+little while his folly in devouring some gigantic vesicles and his
+consequent intoxication led to our capture by the Selenites—before we
+had had the slightest opportunity of properly observing their ways....”
+
+(He says, you observe, nothing of his own concession to these same
+“vesicles.”)
+
+And he goes on from that point to say that “We came to a difficult
+passage with them, and Bedford mistaking certain gestures of
+theirs”—pretty gestures they were!—“gave way to a panic violence. He
+ran amuck, killed three, and perforce I had to flee with him after the
+outrage. Subsequently we fought with a number who endeavoured to bar
+our way, and slew seven or eight more. It says much for the tolerance
+of these beings that on my recapture I was not instantly slain. We made
+our way to the exterior and separated in the crater of our arrival, to
+increase our chances of recovering our sphere. But presently I came
+upon a body of Selenites, led by two who were curiously different, even
+in form, from any of these we had seen hitherto, with larger heads and
+smaller bodies, and much more elaborately wrapped about. And after
+evading them for some time I fell into a crevasse, cut my head rather
+badly, and displaced my patella, and, finding crawling very painful,
+decided to surrender—if they would still permit me to do so. This they
+did, and, perceiving my helpless condition, carried me with them again
+into the moon. And of Bedford I have heard or seen nothing more, nor,
+so far as I can gather, has any Selenite. Either the night overtook him
+in the crater, or else, which is more probable, he found the sphere,
+and, desiring to steal a march upon me, made off with it—only, I fear,
+to find it uncontrollable, and to meet a more lingering fate in outer
+space.”
+
+And with that Cavor dismisses me and goes on to more interesting
+topics. I dislike the idea of seeming to use my position as his editor
+to deflect his story in my own interest, but I am obliged to protest
+here against the turn he gives these occurrences. He said nothing about
+that gasping message on the blood-stained paper in which he told, or
+attempted to tell, a very different story. The dignified self-surrender
+is an altogether new view of the affair that has come to him, I must
+insist, since he began to feel secure among the lunar people; and as
+for the “stealing a march” conception, I am quite willing to let the
+reader decide between us on what he has before him. I know I am not a
+model man—I have made no pretence to be. But am I _that?_
+
+However, that is the sum of my wrongs. From this point I can edit Cavor
+with an untroubled mind, for he mentions me no more.
+
+It would seem the Selenites who had come upon him carried him to some
+point in the interior down “a great shaft” by means of what he
+describes as “a sort of balloon.” We gather from the rather confused
+passage in which he describes this, and from a number of chance
+allusions and hints in other and subsequent messages, that this “great
+shaft” is one of an enormous system of artificial shafts that run, each
+from what is called a lunar “crater,” downwards for very nearly a
+hundred miles towards the central portion of our satellite. These
+shafts communicate by transverse tunnels, they throw out abysmal
+caverns and expand into great globular places; the whole of the moon’s
+substance for a hundred miles inward, indeed, is a mere sponge of rock.
+“Partly,” says Cavor, “this sponginess is natural, but very largely it
+is due to the enormous industry of the Selenites in the past. The
+enormous circular mounds of the excavated rock and earth it is that
+form these great circles about the tunnels known to earthly astronomers
+(misled by a false analogy) as volcanoes.”
+
+It was down this shaft they took him, in this “sort of balloon” he
+speaks of, at first into an inky blackness and then into a region of
+continually increasing phosphorescence. Cavor’s despatches show him to
+be curiously regardless of detail for a scientific man, but we gather
+that this light was due to the streams and cascades of water—“no doubt
+containing some phosphorescent organism”—that flowed ever more
+abundantly downward towards the Central Sea. And as he descended, he
+says, “The Selenites also became luminous.” And at last far below him
+he saw, as it were, a lake of heatless fire, the waters of the Central
+Sea, glowing and eddying in strange perturbation, “like luminous blue
+milk that is just on the boil.”
+
+“This Lunar Sea,” says Cavor, in a later passage, “is not a stagnant
+ocean; a solar tide sends it in a perpetual flow around the lunar axis,
+and strange storms and boilings and rushings of its waters occur, and
+at times cold winds and thunderings that ascend out of it into the busy
+ways of the great ant-hill above. It is only when the water is in
+motion that it gives out light; in its rare seasons of calm it is
+black. Commonly, when one sees it, its waters rise and fall in an oily
+swell, and flakes and big rafts of shining, bubbly foam drift with the
+sluggish, faintly glowing current. The Selenites navigate its cavernous
+straits and lagoons in little shallow boats of a canoe-like shape; and
+even before my journey to the galleries about the Grand Lunar, who is
+Master of the Moon, I was permitted to make a brief excursion on its
+waters.
+
+“The caverns and passages are naturally very tortuous. A large
+proportion of these ways are known only to expert pilots among the
+fishermen, and not infrequently Selenites are lost for ever in their
+labyrinths. In their remoter recesses, I am told, strange creatures
+lurk, some of them terrible and dangerous creatures that all the
+science of the moon has been unable to exterminate. There is
+particularly the Rapha, an inextricable mass of clutching tentacles
+that one hacks to pieces only to multiply; and the Tzee, a darting
+creature that is never seen, so subtly and suddenly does it slay...”
+
+He gives us a gleam of description.
+
+“I was reminded on this excursion of what I have read of the Mammoth
+Caves; if only I had had a yellow flambeau instead of the pervading
+blue light, and a solid-looking boatman with an oar instead of a
+scuttle-faced Selenite working an engine at the back of the canoe, I
+could have imagined I had suddenly got back to earth. The rocks about
+us were very various, sometimes black, sometimes pale blue and veined,
+and once they flashed and glittered as though we had come into a mine
+of sapphires. And below one saw the ghostly phosphorescent fishes flash
+and vanish in the hardly less phosphorescent deep. Then, presently, a
+long ultra-marine vista down the turgid stream of one of the channels
+of traffic, and a landing stage, and then, perhaps, a glimpse up the
+enormous crowded shaft of one of the vertical ways.
+
+“In one great place heavy with glistening stalactites a number of boats
+were fishing. We went alongside one of these and watched the long-armed
+Selenites winding in a net. They were little, hunchbacked insects, with
+very strong arms, short, bandy legs, and crinkled face-masks. As they
+pulled at it that net seemed the heaviest thing I had come upon in the
+moon; it was loaded with weights—no doubt of gold—and it took a long
+time to draw, for in those waters the larger and more edible fish lurk
+deep. The fish in the net came up like a blue moonrise—a blaze of
+darting, tossing blue.
+
+“Among their catch was a many-tentaculate, evil-eyed black thing,
+ferociously active, whose appearance they greeted with shrieks and
+twitters, and which with quick, nervous movements they hacked to pieces
+by means of little hatchets. All its dissevered limbs continued to lash
+and writhe in a vicious manner. Afterwards, when fever had hold of me,
+I dreamt again and again of that bitter, furious creature rising so
+vigorous and active out of the unknown sea. It was the most active and
+malignant thing of all the living creatures I have yet seen in this
+world inside the moon....
+
+“The surface of this sea must be very nearly two hundred miles (if not
+more) below the level of the moon’s exterior; all the cities of the
+moon lie, I learnt, immediately above this Central Sea, in such
+cavernous spaces and artificial galleries as I have described, and they
+communicate with the exterior by enormous vertical shafts which open
+invariably in what are called by earthly astronomers the ‘craters’ of
+the moon. The lid covering one such aperture I had already seen during
+the wanderings that had preceded my capture.
+
+“Upon the condition of the less central portion of the moon I have not
+yet arrived at very precise knowledge. There is an enormous system of
+caverns in which the mooncalves shelter during the night; and there are
+abattoirs and the like—in one of these it was that I and Bedford fought
+with the Selenite butchers—and I have since seen balloons laden with
+meat descending out of the upper dark. I have as yet scarcely learnt as
+much of these things as a Zulu in London would learn about the British
+corn supplies in the same time. It is clear, however, that these
+vertical shafts and the vegetation of the surface must play an
+essential role in ventilating and keeping fresh the atmosphere of the
+moon. At one time, and particularly on my first emergence from my
+prison, there was certainly a cold wind blowing _down_ the shaft, and
+later there was a kind of sirocco upward that corresponded with my
+fever. For at the end of about three weeks I fell ill of an indefinable
+sort of fever, and in spite of sleep and the quinine tabloids that very
+fortunately I had brought in my pocket, I remained ill and fretting
+miserably, almost to the time when I was taken into the presence of the
+Grand Lunar, who is Master of the Moon.
+
+“I will not dilate on the wretchedness of my condition,” he remarks,
+“during those days of ill-health.” And he goes on with great amplitude
+with details I omit here. “My temperature,” he concludes, “kept
+abnormally high for a long time, and I lost all desire for food. I had
+stagnant waking intervals, and sleep tormented by dreams, and at one
+phase I was, I remember, so weak as to be earth-sick and almost
+hysterical. I longed almost intolerably for colour to break the
+everlasting blue...”
+
+He reverts again presently to the topic of this sponge-caught lunar
+atmosphere. I am told by astronomers and physicists that all he tells
+is in absolute accordance with what was already known of the moon’s
+condition. Had earthly astronomers had the courage and imagination to
+push home a bold induction, says Mr. Wendigee, they might have foretold
+almost everything that Cavor has to say of the general structure of the
+moon. They know now pretty certainly that moon and earth are not so
+much satellite and primary as smaller and greater sisters, made out of
+one mass, and consequently made of the same material. And since the
+density of the moon is only three-fifths that of the earth, there can
+be nothing for it but that she is hollowed out by a great system of
+caverns. There was no necessity, said Sir Jabez Flap, F.R.S., that most
+entertaining exponent of the facetious side of the stars, that we
+should ever have gone to the moon to find out such easy inferences, and
+points the pun with an allusion to Gruyère, but he certainly might have
+announced his knowledge of the hollowness of the moon before. And if
+the moon is hollow, then the apparent absence of air and water is, of
+course, quite easily explained. The sea lies within at the bottom of
+the caverns, and the air travels through the great sponge of galleries,
+in accordance with simple physical laws. The caverns of the moon, on
+the whole, are very windy places. As the sunlight comes round the moon
+the air in the outer galleries on that side is heated, its pressure
+increases, some flows out on the exterior and mingles with the
+evaporating air of the craters (where the plants remove its carbonic
+acid), while the greater portion flows round through the galleries to
+replace the shrinking air of the cooling side that the sunlight has
+left. There is, therefore, a constant eastward breeze in the air of the
+outer galleries, and an upflow during the lunar day up the shafts,
+complicated, of course, very greatly by the varying shape of the
+galleries, and the ingenious contrivances of the Selenite mind....
+
+### XXIV.
+
+*The Natural History of the Selenites*
+
+The messages of Cavor from the sixth up to the sixteenth are for the
+most part so much broken, and they abound so in repetitions, that they
+scarcely form a consecutive narrative. They will be given in full, of
+course, in the scientific report, but here it will be far more
+convenient to continue simply to abstract and quote as in the former
+chapter. We have subjected every word to a keen critical scrutiny, and
+my own brief memories and impressions of lunar things have been of
+inestimable help in interpreting what would otherwise have been
+impenetrably dark. And, naturally, as living beings, our interest
+centres far more upon the strange community of lunar insects in which
+he was living, it would seem, as an honoured guest than upon the mere
+physical condition of their world.
+
+I have already made it clear, I think, that the Selenites I saw
+resembled man in maintaining the erect attitude, and in having four
+limbs, and I have compared the general appearance of their heads and
+the jointing of their limbs to that of insects. I have mentioned, too,
+the peculiar consequence of the smaller gravitation of the moon on
+their fragile slightness. Cavor confirms me upon all these points. He
+calls them “animals,” though of course they fall under no division of
+the classification of earthly creatures, and he points out “the insect
+type of anatomy had, fortunately for men, never exceeded a relatively
+very small size on earth.” The largest terrestrial insects, living or
+extinct, do not, as a matter of fact, measure six inches in length;
+“but here, against the lesser gravitation of the moon, a creature
+certainly as much an insect as vertebrate seems to have been able to
+attain to human and ultra-human dimensions.”
+
+He does not mention the ant, but throughout his allusions the ant is
+continually being brought before my mind, in its sleepless activity, in
+its intelligence and social organisation, in its structure, and more
+particularly in the fact that it displays, in addition to the two
+forms, the male and the female form, that almost all other animals
+possess, a number of other sexless creatures, workers, soldiers, and
+the like, differing from one another in structure, character, power,
+and use, and yet all members of the same species. For these Selenites,
+also, have a great variety of forms. Of course, they are not only
+colossally greater in size than ants, but also, in Cavor’s opinion at
+least, in intelligence, morality, and social wisdom are they colossally
+greater than men. And instead of the four or five different forms of
+ant that are found, there are almost innumerably different forms of
+Selenite. I had endeavoured to indicate the very considerable
+difference observable in such Selenites of the outer crust as I
+happened to encounter; the differences in size and proportions were
+certainly as wide as the differences between the most widely separated
+races of men. But such differences as I saw fade absolutely to nothing
+in comparison with the huge distinctions of which Cavor tells. It would
+seem the exterior Selenites I saw were, indeed, mostly engaged in
+kindred occupations—mooncalf herds, butchers, fleshers, and the like.
+But within the moon, practically unsuspected by me, there are, it
+seems, a number of other sorts of Selenite, differing in size,
+differing in the relative size of part to part, differing in power and
+appearance, and yet not different species of creatures, but only
+different forms of one species, and retaining through all their
+variations a certain common likeness that marks their specific unity.
+The moon is, indeed, a sort of vast ant-hill, only, instead of there
+being only four or five sorts of ant, there are many hundred different
+sorts of Selenite, and almost every gradation between one sort and
+another.
+
+It would seem the discovery came upon Cavor very speedily. I infer
+rather than learn from his narrative that he was captured by the
+mooncalf herds under the direction of these other Selenites who “have
+larger brain cases (heads?) and very much shorter legs.” Finding he
+would not walk even under the goad, they carried him into darkness,
+crossed a narrow, plank-like bridge that may have been the identical
+bridge I had refused, and put him down in something that must have
+seemed at first to be some sort of lift. This was the balloon—it had
+certainly been absolutely invisible to us in the darkness—and what had
+seemed to me a mere plank-walking into the void was really, no doubt,
+the passage of the gangway. In this he descended towards constantly
+more luminous caverns of the moon. At first they descended in
+silence—save for the twitterings of the Selenites—and then into a stir
+of windy movement. In a little while the profound blackness had made
+his eyes so sensitive that he began to see more and more of the things
+about him, and at last the vague took shape.
+
+“Conceive an enormous cylindrical space,” says Cavor, in his seventh
+message, “a quarter of a mile across, perhaps; very dimly lit at first
+and then brighter, with big platforms twisting down its sides in a
+spiral that vanishes at last below in a blue profundity; and lit even
+more brightly—one could not tell how or why. Think of the well of the
+very largest spiral staircase or lift-shaft that you have ever looked
+down, and magnify that by a hundred. Imagine it at twilight seen
+through blue glass. Imagine yourself looking down that; only imagine
+also that you feel extraordinarily light, and have got rid of any giddy
+feeling you might have on earth, and you will have the first conditions
+of my impression. Round this enormous shaft imagine a broad gallery
+running in a much steeper spiral than would be credible on earth, and
+forming a steep road protected from the gulf only by a little parapet
+that vanishes at last in perspective a couple of miles below.
+
+“Looking up, I saw the very fellow of the downward vision; it had, of
+course, the effect of looking into a very steep cone. A wind was
+blowing down the shaft, and far above I fancy I heard, growing fainter
+and fainter, the bellowing of the mooncalves that were being driven
+down again from their evening pasturage on the exterior. And up and
+down the spiral galleries were scattered numerous moon people, pallid,
+faintly luminous beings, regarding our appearance or busied on unknown
+errands.
+
+“Either I fancied it or a flake of snow came drifting down on the icy
+breeze. And then, falling like a snowflake, a little figure, a little
+man-insect, clinging to a parachute, drove down very swiftly towards
+the central places of the moon.
+
+“The big-headed Selenite sitting beside me, seeing me move my head with
+the gesture of one who saw, pointed with his trunk-like ‘hand’ and
+indicated a sort of jetty coming into sight very far below: a little
+landing-stage, as it were, hanging into the void. As it swept up
+towards us our pace diminished very rapidly, and in a few moments, as
+it seemed, we were abreast of it, and at rest. A mooring-rope was flung
+and grasped, and I found myself pulled down to a level with a great
+crowd of Selenites, who jostled to see me.
+
+“It was an incredible crowd. Suddenly and violently there was forced
+upon my attention the vast amount of difference there is amongst these
+beings of the moon.
+
+“Indeed, there seemed not two alike in all that jostling multitude.
+They differed in shape, they differed in size, they rang all the
+horrible changes on the theme of Selenite form! Some bulged and
+overhung, some ran about among the feet of their fellows. All of them
+had a grotesque and disquieting suggestion of an insect that has
+somehow contrived to mock humanity; but all seemed to present an
+incredible exaggeration of some particular feature: one had a vast
+right fore-limb, an enormous antennal arm, as it were; one seemed all
+leg, poised, as it were, on stilts; another protruded the edge of his
+face mask into a nose-like organ that made him startlingly human until
+one saw his expressionless gaping mouth. The strange and (except for
+the want of mandibles and palps) most insect-like head of the
+mooncalf-minders underwent, indeed, the most incredible
+transformations: here it was broad and low, here high and narrow; here
+its leathery brow was drawn out into horns and strange features; here
+it was whiskered and divided, and there with a grotesquely human
+profile. One distortion was particularly conspicuous. There were
+several brain cases distended like bladders to a huge size, with the
+face mask reduced to quite small proportions. There were several
+amazing forms, with heads reduced to microscopic proportions and blobby
+bodies; and fantastic, flimsy things that existed, it would seem, only
+as a basis for vast, trumpet-like protrusions of the lower part of the
+mask. And oddest of all, as it seemed to me for the moment, two or
+three of these weird inhabitants of a subterranean world, a world
+sheltered by innumerable miles of rock from sun or rain, _carried
+umbrellas_ in their tentaculate hands—real terrestrial looking
+umbrellas! And then I thought of the parachutist I had watched descend.
+
+“These moon people behaved exactly as a human crowd might have done in
+similar circumstances: they jostled and thrust one another, they shoved
+one another aside, they even clambered upon one another to get a
+glimpse of me. Every moment they increased in numbers, and pressed more
+urgently upon the discs of my ushers”—Cavor does not explain what he
+means by this—“every moment fresh shapes emerged from the shadows and
+forced themselves upon my astounded attention. And presently I was
+signed and helped into a sort of litter, and lifted up on the shoulders
+of strong-armed bearers, and so borne through the twilight over this
+seething multitude towards the apartments that were provided for me in
+the moon. All about me were eyes, faces, masks, a leathery noise like
+the rustling of beetle wings, and a great bleating and cricket-like
+twittering of Selenite voices.”
+
+We gather he was taken to a “hexagonal apartment,” and there for a
+space he was confined. Afterwards he was given a much more considerable
+liberty; indeed, almost as much freedom as one has in a civilised town
+on earth. And it would appear that the mysterious being who is the
+ruler and master of the moon appointed two Selenites “with large heads”
+to guard and study him, and to establish whatever mental communications
+were possible with him. And, amazing and incredible as it may seem,
+these two creatures, these fantastic men insects, these beings of other
+world, were presently communicating with Cavor by means of terrestrial
+speech.
+
+Cavor speaks of them as Phi-oo and Tsi-puff. Phi-oo, he says, was about
+5 feet high; he had small slender legs about 18 inches long, and slight
+feet of the common lunar pattern. On these balanced a little body,
+throbbing with the pulsations of his heart. He had long, soft,
+many-jointed arms ending in a tentacled grip, and his neck was
+many-jointed in the usual way, but exceptionally short and thick. His
+head, says Cavor—apparently alluding to some previous description that
+has gone astray in space—“is of the common lunar type, but strangely
+modified. The mouth has the usual expressionless gape, but it is
+unusually small and pointing downward, and the mask is reduced to the
+size of a large flat nose-flap. On either side are the little eyes.
+
+“The rest of the head is distended into a huge globe and the chitinous
+leathery cuticle of the mooncalf herds thins out to a mere membrane,
+through which the pulsating brain movements are distinctly visible. He
+is a creature, indeed, with a tremendously hypertrophied brain, and
+with the rest of his organism both relatively and absolutely dwarfed.”
+
+In another passage Cavor compares the back view of him to Atlas
+supporting the world. Tsi-puff it seems was a very similar insect, but
+his “face” was drawn out to a considerable length, and the brain
+hypertrophy being in different regions, his head was not round but
+pear-shaped, with the stalk downward. There were also litter-carriers,
+lopsided beings, with enormous shoulders, very spidery ushers, and a
+squat foot attendant in Cavor’s retinue.
+
+The manner in which Phi-oo and Tsi-puff attacked the problem of speech
+was fairly obvious. They came into this “hexagonal cell” in which Cavor
+was confined, and began imitating every sound he made, beginning with a
+cough. He seems to have grasped their intention with great quickness,
+and to have begun repeating words to them and pointing to indicate the
+application. The procedure was probably always the same. Phi-oo would
+attend to Cavor for a space, then point also and say the word he had
+heard.
+
+The first word he mastered was “man,” and the second “Mooney”—which
+Cavor on the spur of the moment seems to have used instead of
+“Selenite” for the moon race. As soon as Phi-oo was assured of the
+meaning of a word he repeated it to Tsi-puff, who remembered it
+infallibly. They mastered over one hundred English nouns at their first
+session.
+
+Subsequently it seems they brought an artist with them to assist the
+work of explanation with sketches and diagrams—Cavor’s drawings being
+rather crude. “He was,” says Cavor, “a being with an active arm and an
+arresting eye,” and he seemed to draw with incredible swiftness.
+
+The eleventh message is undoubtedly only a fragment of a longer
+communication. After some broken sentences, the record of which is
+unintelligible, it goes on:—
+
+“But it will interest only linguists, and delay me too long, to give
+the details of the series of intent parleys of which these were the
+beginning, and, indeed, I very much doubt if I could give in anything
+like the proper order all the twistings and turnings that we made in
+our pursuit of mutual comprehension. Verbs were soon plain sailing—at
+least, such active verbs as I could express by drawings; some
+adjectives were easy, but when it came to abstract nouns, to
+prepositions, and the sort of hackneyed figures of speech, by means of
+which so much is expressed on earth, it was like diving in
+cork-jackets. Indeed, these difficulties were insurmountable until to
+the sixth lesson came a fourth assistant, a being with a huge
+football-shaped head, whose _forte_ was clearly the pursuit of
+intricate analogy. He entered in a preoccupied manner, stumbling
+against a stool, and the difficulties that arose had to be presented to
+him with a certain amount of clamour and hitting and pricking before
+they reached his apprehension. But once he was involved his penetration
+was amazing. Whenever there came a need of thinking beyond Phi-oo’s by
+no means limited scope, this prolate-headed person was in request, but
+he invariably told the conclusion to Tsi-puff, in order that it might
+be remembered; Tsi-puff was ever the arsenal for facts. And so we
+advanced again.
+
+“It seemed long and yet brief—a matter of days—before I was positively
+talking with these insects of the moon. Of course, at first it was an
+intercourse infinitely tedious and exasperating, but imperceptibly it
+has grown to comprehension. And my patience has grown to meet its
+limitations, Phi-oo it is who does all the talking. He does it with a
+vast amount of meditative provisional ‘M’m—M’m’ and has caught up one
+or two phrases, If I may say,’ ‘If you understand,’ and beads all his
+speech with them.
+
+“Thus he would discourse. Imagine him explaining his artist.
+
+“‘M’m—M’m—he—if I may say—draw. Eat little—drink little—draw. Love
+draw. No other thing. Hate all who not draw like him. Angry. Hate all
+who draw like him better. Hate most people. Hate all who not think all
+world for to draw. Angry. M’m. All things mean nothing to him—only
+draw. He like you ... if you understand.... New thing to draw.
+Ugly—striking. Eh?
+
+“‘He’—turning to Tsi-puff—‘love remember words. Remember wonderful more
+than any. Think no, draw no—remember. Say’—here he referred to his
+gifted assistant for a word—‘histories—all things. He hear once—say
+ever.’
+
+“It is more wonderful to me than I dreamt that anything ever could be
+again, to hear, in this perpetual obscurity, these extraordinary
+creatures—for even familiarity fails to weaken the inhuman effect of
+their appearance—continually piping a nearer approach to coherent
+earthly speech—asking questions, giving answers. I feel that I am
+casting back to the fable-hearing period of childhood again, when the
+ant and the grasshopper talked together and the bee judged between
+them...”
+
+And while these linguistic exercises were going on Cavor seems to have
+experienced a considerable relaxation of his confinement. “The first
+dread and distrust our unfortunate conflict aroused is being,” he said,
+“continually effaced by the deliberate rationality of all I do.... I am
+now able to come and go as I please, or I am restricted only for my own
+good. So it is I have been able to get at this apparatus, and, assisted
+by a happy find among the material that is littered in this enormous
+store-cave, I have contrived to despatch these messages. So far not the
+slightest attempt has been made to interfere with me in this, though I
+have made it quite clear to Phi-oo that I am signalling to the earth.
+
+“‘You talk to other?’ he asked, watching me.
+
+“‘Others,’ said I.
+
+“‘Others,’ he said. ‘Oh yes, Men?’
+
+“And I went on transmitting.”
+
+Cavor was continually making corrections in his previous accounts of
+the Selenites as fresh facts flowed upon him to modify his conclusions,
+and accordingly one gives the quotations that follow with a certain
+amount of reservation. They are quoted from the ninth, thirteenth, and
+sixteenth messages, and, altogether vague and fragmentary as they are,
+they probably give as complete a picture of the social life of this
+strange community as mankind can now hope to have for many generations.
+
+“In the moon,” says Cavor, “every citizen knows his place. He is born
+to that place, and the elaborate discipline of training and education
+and surgery he undergoes fits him at last so completely to it that he
+has neither ideas nor organs for any purpose beyond it. ‘Why should
+he?’ Phi-oo would ask. If, for example, a Selenite is destined to be a
+mathematician, his teachers and trainers set out at once to that end.
+They check any incipient disposition to other pursuits, they encourage
+his mathematical bias with a perfect psychological skill. His brain
+grows, or at least the mathematical faculties of his brain grow, and
+the rest of him only so much as is necessary to sustain this essential
+part of him. At last, save for rest and food, his one delight lies in
+the exercise and display of his faculty, his one interest in its
+application, his sole society with other specialists in his own line.
+His brain grows continually larger, at least so far as the portions
+engaging in mathematics are concerned; they bulge ever larger and seem
+to suck all life and vigour from the rest of his frame. His limbs
+shrivel, his heart and digestive organs diminish, his insect face is
+hidden under its bulging contours. His voice becomes a mere
+stridulation for the stating of formulæ; he seems deaf to all but
+properly enunciated problems. The faculty of laughter, save for the
+sudden discovery of some paradox, is lost to him; his deepest emotion
+is the evolution of a novel computation. And so he attains his end.
+
+“Or, again, a Selenite appointed to be a minder of mooncalves is from
+his earliest years induced to think and live mooncalf, to find his
+pleasure in mooncalf lore, his exercise in their tending and pursuit.
+He is trained to become wiry and active, his eye is indurated to the
+tight wrappings, the angular contours that constitute a ‘smart
+mooncalfishness.’ He takes at last no interest in the deeper part of
+the moon; he regards all Selenites not equally versed in mooncalves
+with indifference, derision, or hostility. His thoughts are of mooncalf
+pastures, and his dialect an accomplished mooncalf technique. So also
+he loves his work, and discharges in perfect happiness the duty that
+justifies his being. And so it is with all sorts and conditions of
+Selenites—each is a perfect unit in a world machine....
+
+“These beings with big heads, on whom the intellectual labours fall,
+form a sort of aristocracy in this strange society, and at the head of
+them, quintessential of the moon, is that marvellous gigantic ganglion
+the Grand Lunar, into whose presence I am finally to come. The
+unlimited development of the minds of the intellectual class is
+rendered possible by the absence of any bony skull in the lunar
+anatomy, that strange box of bone that clamps about the developing
+brain of man, imperiously insisting ‘thus far and no farther’ to all
+his possibilities. They fall into three main classes differing greatly
+in influence and respect. There are administrators, of whom Phi-oo is
+one, Selenites of considerable initiative and versatility, responsible
+each for a certain cubic content of the moon’s bulk; the experts like
+the football-headed thinker, who are trained to perform certain special
+operations; and the erudite, who are the repositories of all knowledge.
+To the latter class belongs Tsi-puff, the first lunar professor of
+terrestrial languages. With regard to these latter, it is a curious
+little thing to note that the unlimited growth of the lunar brain has
+rendered unnecessary the invention of all those mechanical aids to
+brain work which have distinguished the career of man. There are no
+books, no records of any sort, no libraries or inscriptions. All
+knowledge is stored in distended brains much as the honey-ants of Texas
+store honey in their distended abdomens. The lunar Somerset House and
+the lunar British Museum Library are collections of living brains...
+
+“The less specialised administrators, I note, do for the most part take
+a very lively interest in me whenever they encounter me. They will come
+out of the way and stare at me and ask questions to which Phi-oo will
+reply. I see them going hither and thither with a retinue of bearers,
+attendants, shouters, parachute-carriers, and so forth—queer groups to
+see. The experts for the most part ignore me completely, even as they
+ignore each other, or notice me only to begin a clamorous exhibition of
+their distinctive skill. The erudite for the most part are rapt in an
+impervious and apoplectic complacency, from which only a denial of
+their erudition can rouse them. Usually they are led about by little
+watchers and attendants, and often there are small and active-looking
+creatures, small females usually, that I am inclined to think are a
+sort of wife to them; but some of the profounder scholars are
+altogether too great for locomotion, and are carried from place to
+place in a sort of sedan tub, wabbling jellies of knowledge that enlist
+my respectful astonishment. I have just passed one in coming to this
+place where I am permitted to amuse myself with these electrical toys,
+a vast, shaven, shaky head, bald and thin-skinned, carried on his
+grotesque stretcher. In front and behind came his bearers, and curious,
+almost trumpet-faced, news disseminators shrieked his fame.
+
+“I have already mentioned the retinues that accompany most of the
+intellectuals: ushers, bearers, valets, extraneous tentacles and
+muscles, as it were, to replace the abortive physical powers of these
+hypertrophied minds. Porters almost invariably accompany them. There
+are also extremely swift messengers with spider-like legs and ‘hands’
+for grasping parachutes, and attendants with vocal organs that could
+well nigh wake the dead. Apart from their controlling intelligence
+these subordinates are as inert and helpless as umbrellas in a stand.
+They exist only in relation to the orders they have to obey, the duties
+they have to perform.
+
+“The bulk of these insects, however, who go to and fro upon the spiral
+ways, who fill the ascending balloons and drop past me clinging to
+flimsy parachutes are, I gather, of the operative class. ‘Machine
+hands,’ indeed, some of these are in actual nature—it is no figure of
+speech, the single tentacle of the mooncalf herd is profoundly modified
+for clawing, lifting, guiding, the rest of them no more than necessary
+subordinate appendages to these important parts. Some, who I suppose
+deal with bell-striking mechanisms, have enormously developed auditory
+organs; some whose work lies in delicate chemical operations project a
+vast olfactory organ; others again have flat feet for treadles with
+anchylosed joints; and others—who I have been told are
+glassblowers—seem mere lung-bellows. But every one of these common
+Selenites I have seen at work is exquisitely adapted to the social need
+it meets. Fine work is done by fined-down workers, amazingly dwarfed
+and neat. Some I could hold on the palm of my hand. There is even a
+sort of turnspit Selenite, very common, whose duty and only delight it
+is to apply the motive power for various small appliances. And to rule
+over these things and order any erring tendency there might be in some
+aberrant natures are the most muscular beings I have seen in the moon,
+a sort of lunar police, who must have been trained from their earliest
+years to give a perfect respect and obedience to the swollen heads.
+
+“The making of these various sorts of operative must be a very curious
+and interesting process. I am very much in the dark about it, but quite
+recently I came upon a number of young Selenites confined in jars from
+which only the fore-limbs protruded, who were being compressed to
+become machine-minders of a special sort. The extended ‘hand’ in this
+highly developed system of technical education is stimulated by
+irritants and nourished by injection, while the rest of the body is
+starved. Phi-oo, unless I misunderstood him, explained that in the
+earlier stages these queer little creatures are apt to display signs of
+suffering in their various cramped situations, but they easily become
+indurated to their lot; and he took me on to where a number of
+flexible-minded messengers were being drawn out and broken in. It is
+quite unreasonable, I know, but such glimpses of the educational
+methods of these beings affect me disagreeably. I hope, however, that
+may pass off, and I may be able to see more of this aspect of their
+wonderful social order. That wretched-looking hand-tentacle sticking
+out of its jar seemed to have a sort of limp appeal for lost
+possibilities; it haunts me still, although, of course it is really in
+the end a far more humane proceeding than our earthly method of leaving
+children to grow into human beings, and then making machines of them.
+
+“Quite recently, too—I think it was on the eleventh or twelfth visit I
+made to this apparatus—I had a curious light upon the lives of these
+operatives. I was being guided through a short cut hither, instead of
+going down the spiral, and by the quays to the Central Sea. From the
+devious windings of a long, dark gallery, we emerged into a vast, low
+cavern, pervaded by an earthy smell, and as things go in this darkness,
+rather brightly lit. The light came from a tumultuous growth of livid
+fungoid shapes—some indeed singularly like our terrestrial mushrooms,
+but standing as high or higher than a man.
+
+“‘Mooneys eat these?’ said I to Phi-oo.
+
+“‘Yes, food.’
+
+“‘Goodness me!’ I cried; ‘what’s that?’
+
+“My eye had just caught the figure of an exceptionally big and ungainly
+Selenite lying motionless among the stems, face downward. We stopped.
+
+“‘Dead?’ I asked. (For as yet I have seen no dead in the moon, and I
+have grown curious.)
+
+“‘_No!_’ exclaimed Phi-oo. ‘Him—worker—no work to do. Get little drink
+then—make sleep—till we him want. What good him wake, eh? No want him
+walking about.’
+
+“‘There’s another!’ cried I.
+
+“And indeed all that huge extent of mushroom ground was, I found,
+peppered with these prostrate figures sleeping under an opiate until
+the moon had need of them. There were scores of them of all sorts, and
+we were able to turn over some of them, and examine them more precisely
+than I had been able to do previously. They breathed noisily at my
+doing so, but did not wake. One, I remember very distinctly: he left a
+strong impression, I think, because some trick of the light and of his
+attitude was strongly suggestive of a drawn-up human figure. His
+fore-limbs were long, delicate tentacles—he was some kind of refined
+manipulator—and the pose of his slumber suggested a submissive
+suffering. No doubt it was a mistake for me to interpret his expression
+in that way, but I did. And as Phi-oo rolled him over into the darkness
+among the livid fleshiness again I felt a distinctly unpleasant
+sensation, although as he rolled the insect in him was confessed.
+
+“It simply illustrates the unthinking way in which one acquires habits
+of feeling. To drug the worker one does not want and toss him aside is
+surely far better than to expel him from his factory to wander starving
+in the streets. In every complicated social community there is
+necessarily a certain intermittency of employment for all specialised
+labour, and in this way the trouble of an ‘unemployed’ problem is
+altogether anticipated. And yet, so unreasonable are even
+scientifically trained minds, I still do not like the memory of those
+prostrate forms amidst those quiet, luminous arcades of fleshy growth,
+and I avoid that short cut in spite of the inconveniences of the
+longer, more noisy, and more crowded alternative.
+
+“My alternative route takes me round by a huge, shadowy cavern, very
+crowded and clamorous, and here it is I see peering out of the
+hexagonal openings of a sort of honeycomb wall, or parading a large
+open space behind, or selecting the toys and amulets made to please
+them by the dainty-tentacled jewellers who work in kennels below, the
+mothers of the moon world—the queen bees, as it were, of the hive. They
+are noble-looking beings, fantastically and sometimes quite beautifully
+adorned, with a proud carriage, and, save for their mouths, almost
+microscopic heads.
+
+“Of the condition of the moon sexes, marrying and giving in marriage,
+and of birth and so forth among the Selenites, I have as yet been able
+to learn very little. With the steady progress of Phi-oo in English,
+however, my ignorance will no doubt as steadily disappear. I am of
+opinion that, as with the ants and bees, there is a large majority of
+the members in this community of the neuter sex. Of course on earth in
+our cities there are now many who never live that life of parentage
+which is the natural life of man. Here, as with the ants, this thing
+has become a normal condition of the race, and the whole of such
+replacement as is necessary falls upon this special and by no means
+numerous class of matrons, the mothers of the moon-world, large and
+stately beings beautifully fitted to bear the larval Selenite. Unless I
+misunderstand an explanation of Phi-oo’s, they are absolutely incapable
+of cherishing the young they bring into the moon; periods of foolish
+indulgence alternate with moods of aggressive violence, and as soon as
+possible the little creatures, who are quite soft and flabby and pale
+coloured, are transferred to the charge of celibate females, women
+‘workers’ as it were, who in some cases possess brains of almost
+masculine dimensions.”
+
+Just at this point, unhappily, this message broke off. Fragmentary and
+tantalising as the matter constituting this chapter is, it does
+nevertheless give a vague, broad impression of an altogether strange
+and wonderful world—a world with which our own may have to reckon we
+know not how speedily. This intermittent trickle of messages, this
+whispering of a record needle in the stillness of the mountain slopes,
+is the first warning of such a change in human conditions as mankind
+has scarcely imagined heretofore. In that satellite of ours there are
+new elements, new appliances, traditions, an overwhelming avalanche of
+new ideas, a strange race with whom we must inevitably struggle for
+mastery—gold as common as iron or wood...
+
+### XXV.
+
+*The Grand Lunar*
+
+The penultimate message describes, with occasionally elaborate detail,
+the encounter between Cavor and the Grand Lunar, who is the ruler or
+master of the moon. Cavor seems to have sent most of it without
+interference, but to have been interrupted in the concluding portion.
+The second came after an interval of a week.
+
+The first message begins: “At last I am able to resume this—” it then
+becomes illegible for a space, and after a time resumed in
+mid-sentence.
+
+The missing words of the following sentence are probably “the crowd.”
+There follows quite clearly: “grew ever denser as we drew near the
+palace of the Grand Lunar—if I may call a series of excavations a
+palace. Everywhere faces stared at me—blank, chitinous gapes and masks,
+eyes peering over tremendous olfactory developments, eyes beneath
+monstrous forehead plates; and undergrowth of smaller creatures dodged
+and yelped, and helmet faces poised on sinuous, long-jointed necks
+appeared craning over shoulders and beneath armpits. Keeping a welcome
+space about me marched a cordon of stolid, scuttle-headed guards, who
+had joined us on our leaving the boat in which we had come along the
+channels of the Central Sea. The quick-eyed artist with the little
+brain joined us also, and a thick bunch of lean porter-insects swayed
+and struggled under the multitude of conveniences that were considered
+essential to my state. I was carried in a litter during the final stage
+of our journey. This litter was made of some very ductile metal that
+looked dark to me, meshed and woven, and with bars of paler metal, and
+about me as I advanced there grouped itself a long and complicated
+procession.
+
+“In front, after the manner of heralds, marched four trumpet-faced
+creatures making a devastating bray; and then came squat,
+resolute-moving ushers before and behind, and on either hand a galaxy
+of learned heads, a sort of animated encyclopedia, who were, Phi-oo
+explained, to stand about the Grand Lunar for purposes of reference.
+(Not a thing in lunar science, not a point of view or method of
+thinking, that these wonderful beings did not carry in their heads!)
+Followed guards and porters, and then Phi-oo’s shivering brain borne
+also on a litter. Then came Tsi-puff in a slightly less important
+litter; then myself on a litter of greater elegance than any other, and
+surrounded by my food and drink attendants. More trumpeters came next,
+splitting the ear with vehement outcries, and then several big brains,
+special correspondents one might well call them, or historiographers,
+charged with the task of observing and remembering every detail of this
+epoch-making interview. A company of attendants, bearing and dragging
+banners and masses of scented fungus and curious symbols, vanished in
+the darkness behind. The way was lined by ushers and officers in
+caparisons that gleamed like steel, and beyond their line, so far as my
+eyes could pierce the gloom, the heads of that enormous crowd extended.
+
+“I will own that I am still by no means indurated to the peculiar
+effect of the Selenite appearance, and to find myself, as it were,
+adrift on this broad sea of excited entomology was by no means
+agreeable. Just for a space I had something very like what I should
+imagine people mean when they speak of the ‘horrors.’ It had come to me
+before in these lunar caverns, when on occasion I have found myself
+weaponless and with an undefended back, amidst a crowd of these
+Selenites, but never quite so vividly. It is, of course, as absolutely
+irrational a feeling as one could well have, and I hope gradually to
+subdue it. But just for a moment, as I swept forward into the welter of
+the vast crowd, it was only by gripping my litter tightly and summoning
+all my will-power that I succeeded in avoiding an outcry or some such
+manifestation. It lasted perhaps three minutes; then I had myself in
+hand again.
+
+“We ascended the spiral of a vertical way for some time, and then
+passed through a series of huge halls dome-roofed and elaborately
+decorated. The approach to the Grand Lunar was certainly contrived to
+give one a vivid impression of his greatness. Each cavern one entered
+seemed greater and more boldly arched than its predecessor. This effect
+of progressive size was enhanced by a thin haze of faintly
+phosphorescent blue incense that thickened as one advanced, and robbed
+even the nearer figures of clearness. I seemed to advance continually
+to something larger, dimmer, and less material.
+
+“I must confess that all this multitude made me feel extremely shabby
+and unworthy. I was unshaven and unkempt; I had brought no razor; I had
+a coarse beard over my mouth. On earth I have always been inclined to
+despise any attention to my person beyond a proper care for
+cleanliness; but under the exceptional circumstances in which I found
+myself, representing, as I did, my planet and my kind, and depending
+very largely upon the attractiveness of my appearance for a proper
+reception, I could have given much for something a little more artistic
+and dignified than the husks I wore. I had been so serene in the belief
+that the moon was uninhabited as to overlook such precautions
+altogether. As it was I was dressed in a flannel jacket,
+knickerbockers, and golfing stockings, stained with every sort of dirt
+the moon offered, slippers (of which the left heel was wanting), and a
+blanket, through a hole in which I thrust my head. (These clothes,
+indeed, I still wear.) Sharp bristles are anything but an improvement
+to my cast of features, and there was an unmended tear at the knee of
+my knickerbockers that showed conspicuously as I squatted in my litter;
+my right stocking, too, persisted in getting about my ankle. I am fully
+alive to the injustice my appearance did humanity, and if by any
+expedient I could have improvised something a little out of the way and
+imposing I would have done so. But I could hit upon nothing. I did what
+I could with my blanket—folding it somewhat after the fashion of a
+toga, and for the rest I sat as upright as the swaying of my litter
+permitted.
+
+“Imagine the largest hall you have ever been in, imperfectly lit with
+blue light and obscured by a grey-blue fog, surging with metallic or
+livid-grey creatures of such a mad diversity as I have hinted. Imagine
+this hall to end in an open archway beyond which is a still larger
+hall, and beyond this yet another and still larger one, and so on. At
+the end of the vista, dimly seen, a flight of steps, like the steps of
+Ara Coeli at Rome, ascend out of sight. Higher and higher these steps
+appear to go as one draws nearer their base. But at last I came under a
+huge archway and beheld the summit of these steps, and upon it the
+Grand Lunar exalted on his throne.
+
+“He was seated in what was relatively a blaze of incandescent blue.
+This, and the darkness about him gave him an effect of floating in a
+blue-black void. He seemed a small, self-luminous cloud at first,
+brooding on his sombre throne; his brain case must have measured many
+yards in diameter. For some reason that I cannot fathom a number of
+blue search-lights radiated from behind the throne on which he sat, and
+immediately encircling him was a halo. About him, and little and
+indistinct in this glow, a number of body-servants sustained and
+supported him, and overshadowed and standing in a huge semicircle
+beneath him were his intellectual subordinates, his remembrancers and
+computators and searchers and servants, and all the distinguished
+insects of the court of the moon. Still lower stood ushers and
+messengers, and then all down the countless steps of the throne were
+guards, and at the base, enormous, various, indistinct, vanishing at
+last into an absolute black, a vast swaying multitude of the minor
+dignitaries of the moon. Their feet made a perpetual scraping whisper
+on the rocky floor, as their limbs moved with a rustling murmur.
+
+“As I entered the penultimate hall the music rose and expanded into an
+imperial magnificence of sound, and the shrieks of the news-bearers
+died away....
+
+“I entered the last and greatest hall....
+
+“My procession opened out like a fan. My ushers and guards went right
+and left, and the three litters bearing myself and Phi-oo and Tsi-puff
+marched across a shiny darkness of floor to the foot of the giant
+stairs. Then began a vast throbbing hum, that mingled with the music.
+The two Selenites dismounted, but I was bidden remain seated—I imagine
+as a special honour. The music ceased, but not that humming, and by a
+simultaneous movement of ten thousand respectful heads my attention was
+directed to the enhaloed supreme intelligence that hovered above me.
+
+“At first as I peered into the radiating glow this quintessential brain
+looked very much like an opaque, featureless bladder with dim,
+undulating ghosts of convolutions writhing visibly within. Then beneath
+its enormity and just above the edge of the throne one saw with a start
+minute elfin eyes peering out of the glow. No face, but eyes, as if
+they peered through holes. At first I could see no more than these two
+staring little eyes, and then below I distinguished the little dwarfed
+body and its insect-jointed limbs shrivelled and white. The eyes stared
+down at me with a strange intensity, and the lower part of the swollen
+globe was wrinkled. Ineffectual-looking little hand-tentacles steadied
+this shape on the throne....
+
+“It was great. It was pitiful. One forgot the hall and the crowd.
+
+“I ascended the staircase by jerks. It seemed to me that this darkly
+glowing brain case above us spread over me, and took more and more of
+the whole effect into itself as I drew nearer. The tiers of attendants
+and helpers grouped about their master seemed to dwindle and fade into
+the night. I saw that shadowy attendants were busy spraying that great
+brain with a cooling spray, and patting and sustaining it. For my own
+part, I sat gripping my swaying litter and staring at the Grand Lunar,
+unable to turn my gaze aside. And at last, as I reached a little
+landing that was separated only by ten steps or so from the supreme
+seat, the woven splendour of the music reached a climax and ceased, and
+I was left naked, as it were, in that vastness, beneath the still
+scrutiny of the Grand Lunar’s eyes.
+
+“He was scrutinising the first man he had ever seen....
+
+“My eyes dropped at last from his greatness to the ant figures in the
+blue mist about him, and then down the steps to the massed Selenites,
+still and expectant in their thousands, packed on the floor below. Once
+again an unreasonable horror reached out towards me.... And passed.
+
+“After the pause came the salutation. I was assisted from my litter,
+and stood awkwardly while a number of curious and no doubt deeply
+symbolical gestures were vicariously performed for me by two slender
+officials. The encyclopaedic galaxy of the learned that had accompanied
+me to the entrance of the last hall appeared two steps above me and
+left and right of me, in readiness for the Grand Lunar’s need, and
+Phi-oo’s pale brain placed itself about half-way up to the throne in
+such a position as to communicate easily between us without turning his
+back on either the Grand Lunar or myself. Tsi-puff took up a position
+behind him. Dexterous ushers sidled sideways towards me, keeping a full
+face to the Presence. I seated myself Turkish fashion, and Phi-oo and
+Tsi-puff also knelt down above me. There came a pause. The eyes of the
+nearer court went from me to the Grand Lunar and came back to me, and a
+hissing and piping of expectation passed across the hidden multitudes
+below and ceased.
+
+“That humming ceased.
+
+“For the first and last time in my experience the moon was silent.
+
+“I became aware of a faint wheezy noise. The Grand Lunar was addressing
+me. It was like the rubbing of a finger upon a pane of glass.
+
+“I watched him attentively for a time, and then glanced at the alert
+Phi-oo. I felt amidst these slender beings ridiculously thick and
+fleshy and solid; my head all jaw and black hair. My eyes went back to
+the Grand Lunar. He had ceased; his attendants were busy, and his
+shining superficies was glistening and running with cooling spray.
+
+“Phi-oo meditated through an interval. He consulted Tsi-puff. Then he
+began piping his recognisable English—at first a little nervously, so
+that he was not very clear.
+
+“‘M’m—the Grand Lunar—wished to say—wishes to say—he gathers you
+are—m’m—men—that you are a man from the planet earth. He wishes to say
+that he welcomes you—welcomes you—and wishes to learn—learn, if I may
+use the word—the state of your world, and the reason why you came to
+this.’
+
+“He paused. I was about to reply when he resumed. He proceeded to
+remarks of which the drift was not very clear, though I am inclined to
+think they were intended to be complimentary. He told me that the earth
+was to the moon what the sun is to the earth, and that the Selenites
+desired very greatly to learn about the earth and men. He then told me
+no doubt in compliment also, the relative magnitude and diameter of
+earth and moon, and the perpetual wonder and speculation with which the
+Selenites had regarded our planet. I meditated with downcast eyes, and
+decided to reply that men too had wondered what might lie in the moon,
+and had judged it dead, little recking of such magnificence as I had
+seen that day. The Grand Lunar, in token of recognition, caused his
+long blue rays to rotate in a very confusing manner, and all about the
+great hall ran the pipings and whisperings and rustlings of the report
+of what I had said. He then proceeded to put to Phi-oo a number of
+inquiries which were easier to answer.
+
+“He understood, he explained, that we lived on the surface of the
+earth, that our air and sea were outside the globe; the latter part,
+indeed, he already knew from his astronomical specialists. He was very
+anxious to have more detailed information of what he called this
+extraordinary state of affairs, for from the solidity of the earth
+there had always been a disposition to regard it as uninhabitable. He
+endeavoured first to ascertain the extremes of temperature to which we
+earth beings were exposed, and he was deeply interested by my
+descriptive treatment of clouds and rain. His imagination was assisted
+by the fact that the lunar atmosphere in the outer galleries of the
+night side is not infrequently very foggy. He seemed inclined to marvel
+that we did not find the sunlight too intense for our eyes, and was
+interested in my attempt to explain that the sky was tempered to a
+bluish colour through the refraction of the air, though I doubt if he
+clearly understood that. I explained how the iris of the human eyes can
+contract the pupil and save the delicate internal structure from the
+excess of sunlight, and was allowed to approach within a few feet of
+the Presence in order that this structure might be seen. This led to a
+comparison of the lunar and terrestrial eyes. The former is not only
+excessively sensitive to such light as men can see, but it can also
+_see_ heat, and every difference in temperature within the moon renders
+objects visible to it.
+
+“The iris was quite a new organ to the Grand Lunar. For a time he
+amused himself by flashing his rays into my face and watching my pupils
+contract. As a consequence, I was dazzled and blinded for some little
+time....
+
+“But in spite of that discomfort I found something reassuring by
+insensible degrees in the rationality of this business of question and
+answer. I could shut my eyes, think of my answer, and almost forget
+that the the Grand Lunar has no face....
+
+“When I had descended again to my proper place the Grand Lunar asked
+how we sheltered ourselves from heat and storms, and I expounded to him
+the arts of building and furnishing. Here we wandered into
+misunderstandings and cross-purposes, due largely, I must admit, to the
+looseness of my expressions. For a long time I had great difficulty in
+making him understand the nature of a house. To him and his attendant
+Selenites it seemed, no doubt, the most whimsical thing in the world
+that men should build houses when they might descend into excavations,
+and an additional complication was introduced by the attempt I made to
+explain that men had originally begun their homes in caves, and that
+they were now taking their railways and many establishments beneath the
+surface. Here I think a desire for intellectual completeness betrayed
+me. There was also a considerable tangle due to an equally unwise
+attempt on my part to explain about mines. Dismissing this topic at
+last in an incomplete state, the Grand Lunar inquired what we did with
+the interior of our globe.
+
+“A tide of twittering and piping swept into the remotest corners of
+that great assembly when it was at last made clear that we men know
+absolutely nothing of the contents of the world upon which the
+immemorial generations of our ancestors had been evolved. Three times
+had I to repeat that of all the 4000 miles of distance between the
+earth and its centre men knew only to the depth of a mile, and that
+very vaguely. I understood the Grand Lunar to ask why had I come to the
+moon seeing we had scarcely touched our own planet yet, but he did not
+trouble me at that time to proceed to an explanation, being too anxious
+to pursue the details of this mad inversion of all his ideas.
+
+“He reverted to the question of weather, and I tried to describe the
+perpetually changing sky, and snow, and frost and hurricanes. ‘But when
+the night comes,’ he asked, ‘is it not cold?’
+
+“I told him it was colder than by day.
+
+“‘And does not your atmosphere freeze?’
+
+“I told him not; that it was never cold enough for that, because our
+nights were so short.
+
+“‘Not even liquefy?’
+
+“I was about to say ‘No,’ but then it occurred to me that one part at
+least of our atmosphere, the water vapour of it, does sometimes liquefy
+and form dew, and sometimes freeze and form frost—a process perfectly
+analogous to the freezing of all the external atmosphere of the moon
+during its longer night. I made myself clear on this point, and from
+that the Grand Lunar went on to speak with me of sleep. For the need of
+sleep that comes so regularly every twenty-four hours to all things is
+part also of our earthly inheritance. On the moon they rest only at
+rare intervals, and after exceptional exertions. Then I tried to
+describe to him the soft splendours of a summer night, and from that I
+passed to a description of those animals that prowl by night and sleep
+by day. I told him of lions and tigers, and here it seemed as though we
+had come to a deadlock. For, save in their waters, there are no
+creatures in the moon not absolutely domestic and subject to his will,
+and so it has been for immemorial years. They have monstrous water
+creatures, but no evil beasts, and the idea of anything strong and
+large existing ‘outside’ in the night is very difficult for them....”
+
+[The record is here too broken to transcribe for the space of perhaps
+twenty words or more.]
+
+“He talked with his attendants, as I suppose, upon the strange
+superficiality and unreasonableness of (man) who lives on the mere
+surface of a world, a creature of waves and winds, and all the chances
+of space, who cannot even unite to overcome the beasts that prey upon
+his kind, and yet who dares to invade another planet. During this aside
+I sat thinking, and then at his desire I told him of the different
+sorts of men. He searched me with questions. ‘And for all sorts of work
+you have the same sort of men. But who thinks? Who governs?’
+
+“I gave him an outline of the democratic method.
+
+“When I had done he ordered cooling sprays upon his brow, and then
+requested me to repeat my explanation conceiving something had
+miscarried.
+
+“‘Do they not do different things, then?’ said Phi-oo.
+
+“Some, I admitted, were thinkers and some officials; some hunted, some
+were mechanics, some artists, some toilers. ‘But _all_ rule,’ I said.
+
+“‘And have they not different shapes to fit them to their different
+duties?’
+
+“‘None that you can see,’ I said, ‘except perhaps, for clothes. Their
+minds perhaps differ a little,’ I reflected.
+
+“‘Their minds must differ a great deal,’ said the Grand Lunar, ‘or they
+would all want to do the same things.’
+
+“In order to bring myself into a closer harmony with his
+preconceptions, I said that his surmise was right. ‘It was all hidden
+in the brain,’ I said; but the difference was there. Perhaps if one
+could see the minds and souls of men they would be as varied and
+unequal as the Selenites. There were great men and small men, men who
+could reach out far and wide, men who could go swiftly; noisy,
+trumpet-minded men, and men who could remember without thinking....’”
+[The record is indistinct for three words.]
+
+“He interrupted me to recall me to my previous statements. ‘But you
+said all men rule?’ he pressed.
+
+“‘To a certain extent,’ I said, and made, I fear, a denser fog with my
+explanation.
+
+“He reached out to a salient fact. ‘Do you mean,’ asked, ‘that there is
+no Grand Earthly?’
+
+“I thought of several people, but assured him finally there was none. I
+explained that such autocrats and emperors as we had tried upon earth
+had usually ended in drink, or vice, or violence, and that the large
+and influential section of the people of the earth to which I belonged,
+the Anglo-Saxons, did not mean to try that sort of thing again. At
+which the Grand Lunar was even more amazed.
+
+“‘But how do you keep even such wisdom as you have?’ he asked; and I
+explained to him the way we helped our limited [A word omitted here,
+probably “brains.”] with libraries of books. I explained to him how our
+science was growing by the united labours of innumerable little men,
+and on that he made no comment save that it was evident we had mastered
+much in spite of our social savagery, or we could not have come to the
+moon. Yet the contrast was very marked. With knowledge the Selenites
+grew and changed; mankind stored their knowledge about them and
+remained brutes—equipped. He said this...” [Here there is a short piece
+of the record indistinct.]
+
+“He then caused me to describe how we went about this earth of ours,
+and I described to him our railways and ships. For a time he could not
+understand that we had had the use of steam only one hundred years, but
+when he did he was clearly amazed. (I may mention as a singular thing,
+that the Selenites use years to count by, just as we do on earth,
+though I can make nothing of their numeral system. That, however, does
+not matter, because Phi-oo understands ours.) From that I went on to
+tell him that mankind had dwelt in cities only for nine or ten thousand
+years, and that we were still not united in one brotherhood, but under
+many different forms of government. This astonished the Grand Lunar
+very much, when it was made clear to him. At first he thought we
+referred merely to administrative areas.
+
+“‘Our States and Empires are still the rawest sketches of what order
+will some day be,’ I said, and so I came to tell him....” [At this
+point a length of record that probably represents thirty or forty words
+is totally illegible.]
+
+“The Grand Lunar was greatly impressed by the folly of men in clinging
+to the inconvenience of diverse tongues. ‘They want to communicate, and
+yet not to communicate,’ he said, and then for a long time he
+questioned me closely concerning war.
+
+“He was at first perplexed and incredulous. ‘You mean to say,’ he
+asked, seeking confirmation, ‘that you run about over the surface of
+your world—this world, whose riches you have scarcely begun to
+scrape—killing one another for beasts to eat?’
+
+“I told him that was perfectly correct.
+
+“He asked for particulars to assist his imagination.
+
+“‘But do not ships and your poor little cities get injured?’ he asked,
+and I found the waste of property and conveniences seemed to impress
+him almost as much as the killing. ‘Tell me more,’ said the Grand
+Lunar; ‘make me see pictures. I cannot conceive these things.’
+
+“And so, for a space, though something loath, I told him the story of
+earthly War.
+
+“I told him of the first orders and ceremonies of war, of warnings and
+ultimatums, and the marshalling and marching of troops. I gave him an
+idea of manoeuvres and positions and battle joined. I told him of
+sieges and assaults, of starvation and hardship in trenches, and of
+sentinels freezing in the snow. I told him of routs and surprises, and
+desperate last stands and faint hopes, and the pitiless pursuit of
+fugitives and the dead upon the field. I told, too, of the past, of
+invasions and massacres, of the Huns and Tartars, and the wars of
+Mahomet and the Caliphs, and of the Crusades. And as I went on, and
+Phi-oo translated, the Selenites cooed and murmured in a steadily
+intensified emotion.
+
+“I told them an ironclad could fire a shot of a ton twelve miles, and
+go through 20 feet of iron—and how we could steer torpedoes under
+water. I went on to describe a Maxim gun in action, and what I could
+imagine of the Battle of Colenso. The Grand Lunar was so incredulous
+that he interrupted the translation of what I had said in order to have
+my verification of my account. They particularly doubted my description
+of the men cheering and rejoicing as they went into battle.
+
+“‘But surely they do not like it!’ translated Phi-oo.
+
+“I assured them men of my race considered battle the most glorious
+experience of life, at which the whole assembly was stricken with
+amazement.
+
+“‘But what good is this war?’ asked the Grand Lunar, sticking to his
+theme.
+
+“‘Oh! as for _good_!’ said I; ‘it thins the population!’
+
+“‘But why should there be a need—?’
+
+“There came a pause, the cooling sprays impinged upon his brow, and
+then he spoke again.”
+
+At this point a series of undulations that have been apparent as a
+perplexing complication as far back as Cavor’s description of the
+silence that fell before the first speaking of the Grand Lunar become
+confusingly predominant in the record. These undulations are evidently
+the result of radiations proceeding from a lunar source, and their
+persistent approximation to the alternating signals of Cavor is
+curiously suggestive of some operator deliberately seeking to mix them
+in with his message and render it illegible. At first they are small
+and regular, so that with a little care and the loss of very few words
+we have been able to disentangle Cavor’s message; then they become
+broad and larger, then suddenly they are irregular, with an
+irregularity that gives the effect at last of some one scribbling
+through a line of writing. For a long time nothing can be made of this
+madly zigzagging trace; then quite abruptly the interruption ceases,
+leaves a few words clear, and then resumes and continues for the rest
+of the message, completely obliterating whatever Cavor was attempting
+to transmit. Why, if this is indeed a deliberate intervention, the
+Selenites should have preferred to let Cavor go on transmitting his
+message in happy ignorance of their obliteration of its record, when it
+was clearly quite in their power and much more easy and convenient for
+them to stop his proceedings at any time, is a problem to which I can
+contribute nothing. The thing seems to have happened so, and that is
+all I can say. This last rag of his description of the Grand Lunar
+begins in mid-sentence.
+
+“...interrogated me very closely upon my secret. I was able in a little
+while to get to an understanding with them, and at last to elucidate
+what has been a puzzle to me ever since I realised the vastness of
+their science, namely, how it is they themselves have never discovered
+Cavorite.’ I find they know of it as a theoretical substance, but they
+have always regarded it as a practical impossibility, because for some
+reason there is no helium in the moon, and helium...”
+
+Across the last letters of helium slashes the resumption of that
+obliterating trace. Note that word “secret,” for on that, and that
+alone, I base my interpretation of the message that follows, the last
+message, as both Mr. Wendigee and myself now believe it to be, that he
+is ever likely to send us.
+
+### XXVI.
+
+*The Last Message Cavor sent to the Earth*
+
+On this unsatisfactory manner the penultimate message of Cavor dies
+out. One seems to see him away there in the blue obscurity amidst his
+apparatus intently signalling us to the last, all unaware of the
+curtain of confusion that drops between us; all unaware, too, of the
+final dangers that even then must have been creeping upon him. His
+disastrous want of vulgar common sense had utterly betrayed him. He had
+talked of war, he had talked of all the strength and irrational
+violence of men, of their insatiable aggressions, their tireless
+futility of conflict. He had filled the whole moon world with this
+impression of our race, and then I think it is plain that he made the
+most fatal admission that upon himself alone hung the possibility—at
+least for a long time—of any further men reaching the moon. The line
+the cold, inhuman reason of the moon would take seems plain enough to
+me, and a suspicion of it, and then perhaps some sudden sharp
+realisation of it, must have come to him. One imagines him about the
+moon with the remorse of this fatal indiscretion growing in his mind.
+During a certain time I am inclined to guess the Grand Lunar was
+deliberating the new situation, and for all that time Cavor may have
+gone as free as ever he had gone. But obstacles of some sort prevented
+his getting to his electromagnetic apparatus again after that message I
+have just given. For some days we received nothing. Perhaps he was
+having fresh audiences, and trying to evade his previous admissions.
+Who can hope to guess?
+
+And then suddenly, like a cry in the night, like a cry that is followed
+by a stillness, came the last message. It is the briefest fragment, the
+broken beginnings of two sentences.
+
+The first was: “I was mad to let the Grand Lunar know—”
+
+There was an interval of perhaps a minute. One imagines some
+interruption from without. A departure from the instrument—a dreadful
+hesitation among the looming masses of apparatus in that dim, blue-lit
+cavern—a sudden rush back to it, full of a resolve that came too late.
+Then, as if it were hastily transmitted came: “Cavorite made as
+follows: take—”
+
+There followed one word, a quite unmeaning word as it stands: “uless.”
+
+And that is all.
+
+It may be he made a hasty attempt to spell “useless” when his fate was
+close upon him. Whatever it was that was happening about that apparatus
+we cannot tell. Whatever it was we shall never, I know, receive another
+message from the moon. For my own part a vivid dream has come to my
+help, and I see, almost as plainly as though I had seen it in actual
+fact, a blue-lit shadowy dishevelled Cavor struggling in the grip of
+these insect Selenites, struggling ever more desperately and hopelessly
+as they press upon him, shouting, expostulating, perhaps even at last
+fighting, and being forced backwards step by step out of all speech or
+sign of his fellows, for evermore into the Unknown—into the dark, into
+that silence that has no end....

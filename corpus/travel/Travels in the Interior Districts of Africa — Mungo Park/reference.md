@@ -8,7 +8,7 @@
 
 ## Author
 
-- **Name**: Samuel Pepys
+- **Name**: Mungo Park
 - **Born**: 1633
 - **Died**: 1703
 - **Wikipedia**: https://en.wikipedia.org/wiki/Samuel_Pepys

@@ -8,7 +8,7 @@
 
 ## Author
 
-- **Name**: André Theuriet
+- **Name**: John Jacob Astor IV
 - **Born**: 1833
 - **Died**: 1907
 - **Wikipedia**: https://en.wikipedia.org/wiki/Andr%C3%A9_Theuriet

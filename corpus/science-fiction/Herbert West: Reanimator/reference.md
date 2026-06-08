@@ -8,7 +8,7 @@
 
 ## Author
 
-- **Name**: Noah Webster
+- **Name**: H. P. (Howard Phillips) Lovecraft
 - **Wikipedia**: https://en.wikipedia.org/wiki/Project_Gutenberg
 - **Gutenberg Agent ID**: 114
 

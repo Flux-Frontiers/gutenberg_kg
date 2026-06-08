@@ -2,19 +2,19 @@
 
 ## Source
 
-- **Project Gutenberg ID**: 18857
-- **URL**: https://www.gutenberg.org/ebooks/18857
+- **Project Gutenberg ID**: 1013
+- **URL**: https://www.gutenberg.org/ebooks/1013
 - **Rights**: Public domain in the USA.
 
 ## Author
 
-- **Name**: Jules Verne
-- **Born**: 1828
-- **Died**: 1905
-- **Wikipedia**: https://en.wikipedia.org/wiki/Jules_Verne
-- **Gutenberg Agent ID**: 60
+- **Name**: H. G. (Herbert George) Wells
+- **Born**: 1866
+- **Died**: 1946
+- **Wikipedia**: https://en.wikipedia.org/wiki/H._G._Wells
+- **Gutenberg Agent ID**: 30
 
-- **Gutenberg Published**: 2006-07-18
+- **Gutenberg Published**: 2004-10-20
 
 ## Language
 
@@ -23,16 +23,19 @@
 ## Subjects
 
 - Science fiction
-- Adventure stories
-- Earth (Planet) -- Core -- Fiction
-- Voyages, Imaginary -- Fiction
-- PQ
+- Satire
+- Utopias -- Fiction
+- Imperialism -- Fiction
+- Utopian fiction
+- Space flight to the moon -- Fiction
+- Moon -- Fiction
+- PR
 - Text
 
 ## Summary
 
-"A Journey to the Centre of the Earth" by Jules Verne is a science fiction novel first published in 1864. Professor Otto Lidenbrock, an eccentric German scientist, discovers a cryptic message suggesting a path to Earth's center through an Icelandic volcano. He embarks on an extraordinary expedition with his nephew Axel and guide Hans, descending into the depths below. The trio encounters underground oceans, prehistoric creatures, and countless perils as they journey through a hidden world beneath our feet, ultimately facing an explosive return to the surface. (This is an automatically generated summary.)
+"The First Men in the Moon" by H. G. Wells is a scientific romance serialized from 1900 to 1901. When businessman Mr. Bedford meets eccentric scientist Mr. Cavor, they build a spacecraft using a gravity-blocking substance to reach the Moon in search of mineral wealth. There they discover a sophisticated underground civilization of insect-like creatures called Selenites, whose rigidly hierarchical society serves as sharp social satire. The adventure combines thrilling action with dystopian commentary on specialization and collectivism. (This is an automatically generated summary.)
 
 ## Notes
 
-Wikipedia page about this book: https://en.wikipedia.org/wiki/Journey_to_the_Center_of_the_Earth
+Wikipedia page about this book: https://en.wikipedia.org/wiki/The_First_Men_in_the_Moon

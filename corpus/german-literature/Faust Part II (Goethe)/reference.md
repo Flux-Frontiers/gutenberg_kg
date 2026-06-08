@@ -8,7 +8,7 @@
 
 ## Author
 
-- **Name**: Samuel White, Sir Baker
+- **Name**: Johann Wolfgang von Goethe
 - **Born**: 1821
 - **Died**: 1893
 - **Wikipedia**: https://en.wikipedia.org/wiki/Samuel_Baker

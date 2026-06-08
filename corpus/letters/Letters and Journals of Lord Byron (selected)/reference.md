@@ -8,7 +8,7 @@
 
 ## Author
 
-- **Name**: Elwyn A. (Elwyn Allen) Smith
+- **Name**: George Gordon Byron
 - **Born**: 1919
 - **Gutenberg Agent ID**: 8543
 

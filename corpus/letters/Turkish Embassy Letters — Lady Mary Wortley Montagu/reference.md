@@ -8,7 +8,7 @@
 
 ## Author
 
-- **Name**: William James
+- **Name**: Lady Mary Wortley Montagu
 - **Born**: 1842
 - **Died**: 1910
 - **Wikipedia**: http://en.wikipedia.org/wiki/William_James

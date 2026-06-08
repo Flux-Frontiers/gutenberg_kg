@@ -39,6 +39,9 @@ docker push <your-registry>/gutenkg-worker:latest
 `build_image.sh` builds local Python wheels for `gutenberg-kg` and `kg-rag`
 (not yet on PyPI), then runs `docker build`.
 
+The RunPod image also pins `kgmodule-utils[synthesis]==0.4.2` via
+`requirements.txt` to keep worker behavior reproducible across rebuilds.
+
 Assumed repo layout (siblings):
 ```
 repos/
@@ -110,9 +113,12 @@ RunPod dashboard → **Serverless** → **+ New Endpoint**
 | Variable | Value |
 |---|---|
 | `KG_VOLUME` | `/workspace` |
-| `RUNPOD_API_KEY` | your RunPod API key |
+| `HANDLER_SECRET` | shared secret for requests (optional) |
 | `VLLM_ENDPOINT_URL` | `https://api.runpod.ai/v2/<vllm-endpoint-id>` (optional) |
+| `VLLM_API_KEY` | bearer token for synthesis endpoint (optional) |
+| `RUNPOD_API_KEY` | fallback token if `VLLM_API_KEY` is unset |
 | `VLLM_MODEL` | `Qwen/Qwen3-8B-Instruct` (optional) |
+| `SYNTH_MAX_K` | max passages fed to synthesis (default `12`) |
 
 ---
 
@@ -126,7 +132,9 @@ curl -s -X POST \
   -d '{
     "input": {
       "query": "Marcus Aurelius on suffering and stoic virtue",
-      "k": 8
+      "corpus": "philosophy",
+      "k": 8,
+      "synthesize": true
     }
   }' | jq .
 ```
@@ -135,11 +143,30 @@ curl -s -X POST \
 
 | Field | Type | Default | Description |
 |---|---|---|---|
+| `op` | str | — | Optional operation: `models` returns available synthesis models |
 | `query` | str | — | Natural-language query (required) |
+| `secret` | str | — | Required if `HANDLER_SECRET` is set |
+| `corpus` | str | `all` | `all`, `gutenberg`, or a genre like `philosophy` |
 | `k` | int | `8` | Top-k hits |
 | `min_score` | float | `0.0` | Drop hits below this score |
 | `semantic_floor` | float | `0.0` | Discard the KG if its best hit is below this |
 | `synthesize` | bool | `false` | Generate an answer via the vLLM endpoint |
+| `model` | str | `VLLM_MODEL` | Override synthesis model for this request |
+
+**No image generation in this worker:**
+
+This RunPod worker intentionally supports retrieval and text synthesis only. It does not
+expose image-generation operations.
+
+**Model discovery request:**
+
+```bash
+curl -s -X POST \
+  "https://api.runpod.ai/v2/<ENDPOINT_ID>/runsync" \
+  -H "Authorization: Bearer $RUNPOD_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{"input":{"op":"models"}}' | jq .
+```
 
 **Example response:**
 
@@ -147,8 +174,10 @@ curl -s -X POST \
 {
   "output": {
     "query": "Marcus Aurelius on suffering and stoic virtue",
+    "corpus": "philosophy",
     "total_hits": 8,
     "kgs_queried": 1,
+    "search_ms": 142,
     "hits": [
       {
         "kg_name": "gutenberg",
@@ -158,10 +187,16 @@ curl -s -X POST \
         "kind": "chunk",
         "score": 0.8912,
         "summary": "The impediment to action advances action. What stands in the way becomes the way.",
-        "source_path": "philosophy/meditations.md"
+        "source_path": "philosophy/meditations.md",
+        "content": "...full node text...",
+        "genre": "philosophy",
+        "title": "Meditations",
+        "author": "Marcus Aurelius"
       }
     ],
-    "synthesis": null
+    "synthesis": "...grounded answer...",
+    "synthesis_ms": 1310,
+    "model": "Qwen/Qwen3-8B-Instruct"
   }
 }
 ```

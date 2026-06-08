@@ -1,20 +1,20 @@
-# Reference: Germinal (Zola)
+# Reference: Germinal
 
 ## Source
 
-- **Project Gutenberg ID**: 5765
-- **URL**: https://www.gutenberg.org/ebooks/5765
+- **Project Gutenberg ID**: 56528
+- **URL**: https://www.gutenberg.org/ebooks/56528
 - **Rights**: Public domain in the USA.
 
 ## Author
 
-- **Name**: Charles Darwin
-- **Born**: 1809
-- **Died**: 1882
-- **Wikipedia**: https://en.wikipedia.org/wiki/Charles_Darwin
-- **Gutenberg Agent ID**: 485
+- **Name**: Émile Zola
+- **Born**: 1840
+- **Died**: 1902
+- **Wikipedia**: https://fr.wikipedia.org/wiki/%C3%89mile_Zola
+- **Gutenberg Agent ID**: 528
 
-- **Gutenberg Published**: 2004-05-01
+- **Gutenberg Published**: 2018-02-08
 
 ## Language
 
@@ -22,15 +22,19 @@
 
 ## Subjects
 
-- Carnivorous plants
-- Plants -- Assimilation
-- QK
+- Coal miners -- Fiction
+- Coal mines and mining -- Fiction
+- Political fiction
+- Strikes and lockouts -- Fiction
+- Labor disputes -- Fiction
+- France, Northern -- Fiction
+- PQ
 - Text
 
 ## Summary
 
-"Insectivorous Plants" by Charles Darwin is a scientific study published in 1875. The book examines carnivorous plants and their remarkable adaptations for surviving in nutrient-poor environments. Through meticulous experiments, Darwin investigated how these plants trap, digest, and absorb nutrients from insects using mechanisms strikingly similar to animal digestion. He tested various stimuli and discovered the plants respond only to potential prey, demonstrating sophisticated evolutionary efficiency. The work reveals nature's ingenious solutions to survival challenges in difficult conditions. (This is an automatically generated summary.)
+"Germinal" by Émile Zola is a novel written between 1884 and 1885. Set in a northern French coal mining town during the 1860s, it follows young migrant worker Étienne Lantier as he arrives seeking work in the forbidding pits of Montsou. As brutal working conditions and desperate poverty push the miners toward breaking point, Étienne becomes an unlikely leader of a strike movement. This uncompromisingly harsh and realistic story explores the workers' struggle for survival, explosive riots, and personal entanglements against a backdrop of severe oppression. (This is an automatically generated summary.)
 
 ## Notes
 
-Wikipedia page about this book: https://en.wikipedia.org/wiki/Insectivorous_Plants_(book)
+Wikipedia page about this book: https://en.wikipedia.org/wiki/Germinal_(novel)

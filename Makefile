@@ -9,6 +9,7 @@
 #   make image-server   — start the local FLUX image generation server on :8090
 #   make chat           — start worker + Streamlit chat UI on http://localhost:8501
 #   make up             — start everything: worker + image server + chat UI
+#   make docs           — generate project docs into ./docs
 #   make query Q="..."  — fire a one-shot query against the running worker
 
 IMAGE        = corpus-gutenberg
@@ -16,7 +17,7 @@ COMPOSE      = docker compose -f docker/docker-compose.yml
 WORKER       = http://localhost:8000
 IMAGE_SERVER = http://localhost:8090
 
-.PHONY: build-diaries build-corpus build run image-server chat up stop down query logs clean
+.PHONY: build-diaries build-corpus build run image-server chat up stop down query logs clean docs
 
 build-diaries:
 	gutenkg build-diaries --force
@@ -32,19 +33,25 @@ run:
 	@echo "Worker running at $(WORKER)"
 
 image-server:
-	@echo "Starting FLUX image server on $(IMAGE_SERVER) (background) ..."
-	python docker/image_server.py &
+	@if [ ! -x .venv-image/bin/python ]; then \
+		echo "Creating .venv-image for isolated image dependencies ..."; \
+		python3 -m venv .venv-image; \
+	fi
+	@.venv-image/bin/python -m pip install --quiet --upgrade pip
+	@.venv-image/bin/python -m pip install --quiet -r docker/requirements-image.txt
+	@echo "Starting FLUX image server on $(IMAGE_SERVER) (background, .venv-image) ..."
+	MFLUX_SERVER_HOST=0.0.0.0 .venv-image/bin/python docker/image_server.py &
 
 chat:
 	$(COMPOSE) --profile chat up -d
 	@echo "Worker:  $(WORKER)"
 	@echo "Chat UI: http://localhost:8501"
 
-up:
+start up:
 	@echo "Starting worker + chat (Docker) ..."
 	$(COMPOSE) --profile chat up -d
-	@echo "Starting FLUX image server in background ..."
-	python docker/image_server.py &
+	@echo "Starting FLUX image server in isolated .venv-image ..."
+	$(MAKE) image-server
 	@echo ""
 	@echo "Worker:       $(WORKER)"
 	@echo "Image server: $(IMAGE_SERVER)"
@@ -67,3 +74,6 @@ logs:
 
 clean:
 	docker rmi $(IMAGE):latest 2>/dev/null || true
+
+docs:
+	cd src && pdoc --o ../docs --logo ./logo.png gutenberg_kg

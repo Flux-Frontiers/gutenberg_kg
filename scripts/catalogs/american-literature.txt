@@ -18,7 +18,7 @@
 
 # --- Fiction ---
 910	White Fang (London)
-1608	The Sea-Wolf (London)
+1074	The Sea-Wolf (London)
 160	The Awakening (Chopin)
 284	The House of Mirth (Wharton)
 541	The Age of Innocence (Wharton)

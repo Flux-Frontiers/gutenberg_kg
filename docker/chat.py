@@ -18,10 +18,31 @@ from __future__ import annotations
 import html
 import io
 import os
+import sys
 from pathlib import Path
+
+sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
 
 import httpx
 import streamlit as st
+from kg_utils.worker import WorkerClient, WorkerError
+
+_IN_DOCKER = os.path.exists("/.dockerenv")
+_HOST = "host.docker.internal" if _IN_DOCKER else "localhost"
+
+_DEFAULT_WORKER = os.environ.get("KGRAG_ENDPOINT", "http://localhost:8000")
+
+_SYNTH_PROVIDERS: dict[str, str] = {
+    "oMLX": "omlx",
+    "Ollama": "ollama",
+    "OpenAI": "openai",
+}
+
+_RESOLUTION_LABELS: dict[str, str] = {
+    "Preview": "Preview  (768 × 512)",
+    "Standard": "Standard  (1152 × 768)",
+    "Full": "Full  (1536 × 1024)",
+}
 
 # ---------------------------------------------------------------------------
 # Page config
@@ -37,25 +58,6 @@ st.set_page_config(
 # ---------------------------------------------------------------------------
 # Constants
 # ---------------------------------------------------------------------------
-
-_DEFAULT_WORKER = os.environ.get("KGRAG_ENDPOINT", "http://localhost:8000")
-
-# When running inside Docker on macOS, host services are at host.docker.internal, not localhost.
-_IN_DOCKER = os.path.exists("/.dockerenv")
-_HOST = "host.docker.internal" if _IN_DOCKER else "localhost"
-_DEFAULT_IMAGE_SERVER = os.environ.get("GUTENKG_IMAGE_ENDPOINT", f"http://{_HOST}:8090")
-_DEFAULT_IMAGE_MODEL = os.environ.get("GUTENKG_IMAGE_MODEL", "flux2-klein-4b")
-_DEFAULT_IMAGE_STEPS = int(os.environ.get("IMAGE_STEPS", "4"))
-_DEFAULT_VLM_ENDPOINT = os.environ.get("GUTENKG_VLM_ENDPOINT", f"http://{_HOST}:8080/v1")
-
-_ASPECT_SIZES: dict[str, str] = {
-    "3:2": "1536x1024",
-    "16:9": "1536x864",
-    "1:1": "1024x1024",
-    "4:3": "1365x1024",
-    "9:16": "864x1536",
-    "2:3": "1024x1536",
-}
 
 _KG_KIND_COLOR: dict[str, str] = {
     "gutenberg": "#2E86AB",  # steel blue — prose/verse
@@ -171,7 +173,6 @@ def _render_hit_card(hit: dict) -> None:
     content = hit.get("content") or hit.get("summary") or ""
     preview, truncated = _preview(content, 220)
 
-    # Author/title for DocKG hits; diary name for DiaryKG hits.
     author = hit.get("author") or ""
     title = hit.get("title") or ""
     genre = hit.get("genre") or ""
@@ -226,8 +227,33 @@ def _render_hit_card(hit: dict) -> None:
 # ---------------------------------------------------------------------------
 
 
-class WorkerError(Exception):
-    pass
+def _rewrite_via_worker(
+    worker_url: str,
+    text: str,
+    secret: str,
+    backend: str = "",
+    model: str = "",
+) -> tuple[str, str | None]:
+    """Ask the worker to rewrite a corpus passage into an image-generation prompt."""
+    return WorkerClient(worker_url, secret).rewrite(text, backend=backend, model=model)
+
+
+def _imagine_via_worker(
+    worker_url: str,
+    prompt: str,
+    secret: str,
+    *,
+    image_backend: str = "",
+    aspect_ratio: str = "3:2",
+    steps: int | None = None,
+) -> tuple[str | None, str | None, str | None, str | None]:
+    """Route image generation through the worker. Returns (b64, image_model, image_backend, error)."""
+    return WorkerClient(worker_url, secret).imagine(
+        prompt,
+        image_backend=image_backend,
+        aspect_ratio=aspect_ratio,
+        steps=steps,
+    )
 
 
 def _query_worker(
@@ -241,53 +267,23 @@ def _query_worker(
     synthesize: bool,
     secret: str,
     model: str = "",
+    backend: str = "",
 ) -> dict:
-    payload: dict = {
-        "input": {
-            "query": query,
-            "corpus": corpus,
-            "k": k,
-            "min_score": min_score,
-            "semantic_floor": semantic_floor,
-            "synthesize": synthesize,
-        }
-    }
-    if model:
-        payload["input"]["model"] = model
-    if secret:
-        payload["input"]["secret"] = secret
-
-    resp = httpx.post(
-        worker_url.rstrip("/") + "/runsync",
-        json=payload,
-        timeout=httpx.Timeout(connect=5.0, read=600.0, write=30.0, pool=5.0),
+    return WorkerClient(worker_url, secret).query(
+        query,
+        corpus=corpus,
+        k=k,
+        min_score=min_score,
+        semantic_floor=semantic_floor,
+        synthesize=synthesize,
+        model=model,
+        backend=backend,
     )
-    resp.raise_for_status()
-    data = resp.json()
-
-    if data.get("status") == "FAILED" or "error_type" in data:
-        err = data.get("error", data)
-        raise WorkerError(f"{err.get('error_type', 'Unknown')}: {err.get('error_message', err)}")
-
-    return data.get("output", data)
 
 
 @st.cache_data(ttl=60, show_spinner=False)
-def _fetch_models(worker_url: str, secret: str) -> tuple[list[str], str]:
-    payload: dict = {"input": {"op": "models"}}
-    if secret:
-        payload["input"]["secret"] = secret
-    try:
-        resp = httpx.post(
-            worker_url.rstrip("/") + "/runsync",
-            json=payload,
-            timeout=httpx.Timeout(connect=5.0, read=20.0, write=5.0, pool=5.0),
-        )
-        resp.raise_for_status()
-        out = resp.json().get("output", {})
-        return out.get("models", []), out.get("default", "")
-    except Exception:  # noqa: BLE001
-        return [], ""
+def _fetch_models(worker_url: str, secret: str, backend: str = "") -> tuple[list[str], str]:
+    return WorkerClient(worker_url, secret).list_models(backend=backend)
 
 
 # ---------------------------------------------------------------------------
@@ -328,12 +324,11 @@ def _build_image_prompt(result: dict) -> str:
 
 
 def _open_image(path: Path) -> None:
-    """Render *path* inline with st.image and show the file path as a caption."""
     st.image(str(path), use_container_width=True)
     st.caption(f"📁 {path}")
 
 
-def _render_assistant_turn(result: dict, idx: int = 0) -> None:
+def _render_assistant_turn(result: dict) -> None:
     hits = result.get("hits", [])
     synthesis = result.get("synthesis")
     synthesis_error = result.get("synthesis_error")
@@ -354,94 +349,14 @@ def _render_assistant_turn(result: dict, idx: int = 0) -> None:
     else:
         st.info("Answer generation off — see source passages below.")
 
-    st.caption(
+    _parts = [
         f"📊 {result.get('total_hits', len(hits))} passages · {result.get('kgs_queried', 0)} KGs queried"
-    )
-
-    save_col, aspect_col, render_col = st.columns([3, 2, 3], vertical_alignment="bottom")
-    with save_col:
-        st.download_button(
-            "💾 Save result",
-            data=_result_to_markdown(result),
-            file_name=f"gutenberg_result_{idx}.md",
-            mime="text/markdown",
-            key=f"dl_{idx}",
-        )
-    with aspect_col:
-        aspect = st.selectbox(
-            "Ratio",
-            options=["3:2", "16:9", "1:1", "4:3", "9:16", "2:3"],
-            label_visibility="collapsed",
-            key=f"aspect_{idx}",
-        )
-    with render_col:
-        render_clicked = st.button(
-            "🎨 Render response",
-            key=f"render_btn_{idx}",
-            use_container_width=True,
-            help="Generate an illustration from the retrieved passages using local FLUX",
-        )
-
-    if render_clicked:
-        import tempfile
-        import time
-
-        prompt = _build_image_prompt(result)
-        with st.spinner("Rewriting via VLM…"):
-            try:
-                from gutenberg_kg.image_gen import vlm_rewrite
-
-                prompt, vlm_error = vlm_rewrite(prompt, base_url=_DEFAULT_VLM_ENDPOINT)
-                if vlm_error:
-                    st.warning(f"VLM rewrite failed — sending raw corpus text. ({vlm_error})")
-                else:
-                    st.caption(f"🎨 Prompt: {prompt[:160]}{'…' if len(prompt) > 160 else ''}")
-            except Exception as exc:  # noqa: BLE001
-                st.warning(f"VLM rewrite error: {exc}")
-
-        server = _DEFAULT_IMAGE_SERVER.strip()
-        out_path = Path(tempfile.mkdtemp()) / f"gutenberg_render_{int(time.time())}.png"
-
-        if server:
-            with st.spinner(f"Generating via {_DEFAULT_IMAGE_MODEL}…"):
-                try:
-                    import base64
-
-                    from PIL import Image as PILImage
-
-                    resp = httpx.post(
-                        server.rstrip("/") + "/v1/images/generations",
-                        json={
-                            "model": _DEFAULT_IMAGE_MODEL,
-                            "prompt": prompt,
-                            "n": 1,
-                            "size": _ASPECT_SIZES.get(aspect, "1536x1024"),
-                            "num_inference_steps": _DEFAULT_IMAGE_STEPS,
-                        },
-                        timeout=httpx.Timeout(connect=5.0, read=300.0, write=10.0, pool=5.0),
-                    )
-                    resp.raise_for_status()
-                    b64 = resp.json()["data"][0]["b64_json"]
-                    pil = PILImage.open(io.BytesIO(base64.b64decode(b64)))
-                    pil.save(str(out_path))
-                    _open_image(out_path)
-                except httpx.HTTPStatusError as exc:
-                    body = exc.response.text[:400]
-                    st.error(f"Image server HTTP {exc.response.status_code}: {body}")
-                except Exception as exc:  # noqa: BLE001
-                    st.error(f"Image server error: {exc}")
-        else:
-            with st.spinner("Generating locally — ~20 s on Apple Silicon…"):
-                try:
-                    from gutenberg_kg import image_gen
-
-                    pil = image_gen.generate(prompt, aspect_ratio=aspect)
-                    pil.save(str(out_path))
-                    _open_image(out_path)
-                except ImportError:
-                    st.warning("Local image generation requires `mflux` (Apple Silicon).")
-                except Exception as exc:  # noqa: BLE001
-                    st.error(f"Image generation failed: {exc}")
+    ]
+    if result.get("search_ms") is not None:
+        _parts.append(f"search {result['search_ms']:,} ms")
+    if result.get("synthesis_ms") is not None:
+        _parts.append(f"synthesis {result['synthesis_ms']:,} ms")
+    st.caption(" · ".join(_parts))
 
     with st.expander(f"📄 Source passages ({len(hits)})", expanded=not bool(synthesis)):
         for hit in hits:
@@ -461,7 +376,6 @@ def _render_sidebar() -> dict:
     st.sidebar.markdown("---")
     st.sidebar.subheader("📖 Corpus")
 
-    # Filter out separators for the actual corpus value
     corpus_options = [g for g in _ALL_GENRES if not g.startswith("—")]
     corpus = st.sidebar.selectbox(
         "Scope",
@@ -497,22 +411,82 @@ def _render_sidebar() -> dict:
         help="Generate a narrative answer via the configured LLM backend",
     )
 
+    backend = ""
     model = ""
     if synthesize:
-        models, default = _fetch_models(_DEFAULT_WORKER, os.environ.get("HANDLER_SECRET", ""))
+        provider_label = st.sidebar.selectbox(
+            "Provider",
+            options=list(_SYNTH_PROVIDERS.keys()),
+            index=0,
+            help="LLM backend — oMLX (local MLX), Ollama (local), or OpenAI (cloud)",
+        )
+        backend = _SYNTH_PROVIDERS[provider_label]
+
+        secret = os.environ.get("HANDLER_SECRET", "")
+        with st.sidebar:
+            with st.spinner("Fetching models…"):
+                models, default = _fetch_models(_DEFAULT_WORKER, secret, backend)
         if models:
             default_idx = models.index(default) if default in models else 0
             model = st.sidebar.selectbox(
                 "Model",
                 options=models,
                 index=default_idx,
-                help="Synthesis model — pulled live from the worker's LLM backend",
+                help="Model — fetched live from the selected provider",
             )
         else:
-            st.sidebar.caption("⚠️ No models reported — using the worker's default.")
+            st.sidebar.caption("⚠️ No models reported — using provider default.")
         if st.sidebar.button("🔄 Refresh models", use_container_width=True):
             _fetch_models.clear()
             st.rerun()
+
+    st.sidebar.markdown("---")
+    st.sidebar.subheader("🖼️ Image")
+    resolution = st.sidebar.selectbox(
+        "Resolution",
+        options=list(_RESOLUTION_LABELS.keys()),
+        format_func=lambda r: _RESOLUTION_LABELS[r],
+        index=0,
+        help="Smaller = faster generation",
+    )
+    has_result = any(
+        m.get("role") == "assistant" and m.get("result")
+        for m in st.session_state.get("messages", [])
+    )
+    last_result = next(
+        (
+            m["result"]
+            for m in reversed(st.session_state.get("messages", []))
+            if m.get("role") == "assistant" and m.get("result")
+        ),
+        None,
+    )
+    if last_result:
+        st.sidebar.download_button(
+            "💾 Save result",
+            data=_result_to_markdown(last_result),
+            file_name="gutenberg_result.md",
+            mime="text/markdown",
+            use_container_width=True,
+            help="Download the most recent result as Markdown",
+        )
+    else:
+        st.sidebar.button(
+            "💾 Save result",
+            disabled=True,
+            use_container_width=True,
+            help="Run a query first",
+        )
+    render_clicked = st.sidebar.button(
+        "🎨 Render response",
+        use_container_width=True,
+        disabled=not has_result,
+        help=(
+            "Generate an illustration from the most recent result"
+            if has_result
+            else "Run a query first"
+        ),
+    )
 
     st.sidebar.markdown("---")
     st.sidebar.subheader("💡 Try asking")
@@ -535,7 +509,10 @@ def _render_sidebar() -> dict:
         "min_score": min_score,
         "semantic_floor": semantic_floor,
         "synthesize": synthesize,
+        "backend": backend,
         "model": model,
+        "resolution": resolution,
+        "render_clicked": render_clicked,
     }
 
 
@@ -577,16 +554,15 @@ def main() -> None:
         "sacred texts, natural history, science fiction, and four historical diaries."
     )
 
-    for i, msg in enumerate(st.session_state.messages):
+    for msg in st.session_state.messages:
         with st.chat_message(msg["role"]):
             if msg["role"] == "user":
                 corpus_tag = msg.get("corpus", "")
                 label = f"`[{corpus_tag}]` " if corpus_tag and corpus_tag != "all" else ""
                 st.markdown(label + msg["content"])
             else:
-                _render_assistant_turn(msg["result"], idx=i)
+                _render_assistant_turn(msg["result"])
 
-    # Handle suggested-query button clicks (they set pending_query + pending_corpus).
     prompt = st.chat_input("Ask about any text in the corpus…")
     if not prompt and st.session_state.pending_query:
         prompt = st.session_state.pending_query
@@ -617,6 +593,7 @@ def main() -> None:
                         synthesize=cfg["synthesize"],
                         secret=cfg["secret"],
                         model=cfg["model"],
+                        backend=cfg["backend"],
                     )
                 except httpx.ConnectError:
                     st.error(
@@ -645,7 +622,7 @@ def main() -> None:
                 st.session_state.messages.pop()
                 st.stop()
 
-            _render_assistant_turn(result, idx=len(st.session_state.messages))
+            _render_assistant_turn(result)
 
         st.session_state.messages.append(
             {
@@ -655,6 +632,69 @@ def main() -> None:
                 "result": result,
             }
         )
+        st.rerun()
+
+    if cfg["render_clicked"]:
+        last_result = next(
+            (
+                m["result"]
+                for m in reversed(st.session_state.messages)
+                if m.get("role") == "assistant" and m.get("result")
+            ),
+            None,
+        )
+        if last_result:
+            import base64
+            import tempfile
+            import time
+
+            from PIL import Image as PILImage
+
+            st.divider()
+            prompt = _build_image_prompt(last_result)
+            with st.spinner("Rewriting via LLM…"):
+                t0_vlm = time.perf_counter()
+                prompt, vlm_error = _rewrite_via_worker(
+                    cfg["worker_url"],
+                    prompt,
+                    cfg["secret"],
+                    backend=cfg["backend"],
+                    model=cfg["model"],
+                )
+                vlm_ms = round((time.perf_counter() - t0_vlm) * 1000)
+                if vlm_error:
+                    st.warning(f"Rewrite failed — sending raw corpus text. ({vlm_error})")
+                else:
+                    st.caption(
+                        f"🎨 Prompt: {prompt[:160]}{'…' if len(prompt) > 160 else ''}"
+                        f" · rewrite {vlm_ms:,} ms"
+                    )
+            image_backend = "openai" if cfg["backend"] == "openai" else ""
+            with st.spinner("Generating image…"):
+                try:
+                    t0_img = time.perf_counter()
+                    b64, image_model, image_backend_used, img_error = _imagine_via_worker(
+                        cfg["worker_url"],
+                        prompt,
+                        cfg["secret"],
+                        image_backend=image_backend,
+                        aspect_ratio="3:2",
+                    )
+                    img_ms = round((time.perf_counter() - t0_img) * 1000)
+                    if img_error or not b64:
+                        st.error(f"Image generation failed: {img_error or 'no image returned'}")
+                    else:
+                        out_path = (
+                            Path(tempfile.mkdtemp()) / f"gutenberg_render_{int(time.time())}.png"
+                        )
+                        PILImage.open(io.BytesIO(base64.b64decode(b64))).save(str(out_path))
+                        _open_image(out_path)
+                        st.caption(
+                            f"🖼️ {image_model or image_backend_used or 'unknown'}"
+                            f" · {cfg['resolution']} · {img_ms:,} ms"
+                        )
+                except Exception as exc:  # noqa: BLE001
+                    st.error(f"Image generation failed: {exc}")
 
 
 if __name__ == "__main__":

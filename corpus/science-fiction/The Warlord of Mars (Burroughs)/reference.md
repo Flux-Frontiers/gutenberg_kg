@@ -8,7 +8,7 @@
 
 ## Author
 
-- **Name**: William Shakespeare
+- **Name**: Edgar Rice Burroughs
 - **Born**: 1564
 - **Died**: 1616
 - **Wikipedia**: https://en.wikipedia.org/wiki/William_Shakespeare
