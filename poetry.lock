@@ -8684,7 +8684,6 @@ propcache = ">=0.2.1"
 [extras]
 all = ["PyQt5", "detect-secrets", "diary-kg", "doc-kg", "kg-rag", "markdown", "param", "pdoc", "pillow", "plotly", "pre-commit", "pycode-kg", "pytest", "pytest-cov", "pyvista", "pyvistaqt", "ruff", "scipy", "ty", "vtracer"]
 dev = ["detect-secrets", "pdoc", "pillow", "pre-commit", "pytest", "pytest-cov", "ruff", "scipy", "ty", "vtracer"]
-imagine = []
 kgdeps = ["diary-kg", "doc-kg", "kg-rag"]
 mcp = ["fastmcp", "structlog"]
 viz = ["plotly"]
@@ -8693,4 +8692,4 @@ viz3d = ["PyQt5", "markdown", "param", "pycode-kg", "pyvista", "pyvistaqt"]
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.12,<3.14"
-content-hash = "622c73ade731d87881605395245115657dd299aaa009054ec400f12d9253104c"
+content-hash = "26b5e60aed7554b1900d8d7c5d77af560b7fda4fc55d7a0c017b9b429181579b"
