@@ -8,7 +8,7 @@
 
 ## Author
 
-- **Name**: Alexandre Dumas
+- **Name**: Jack London
 - **Born**: 1824
 - **Died**: 1895
 - **Wikipedia**: https://en.wikipedia.org/wiki/Alexandre_Dumas,_fils

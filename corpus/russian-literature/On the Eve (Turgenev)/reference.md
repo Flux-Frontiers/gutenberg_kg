@@ -8,7 +8,7 @@
 
 ## Author
 
-- **Name**: Charles L. (Charles Larcom) Graves
+- **Name**: Ivan Sergeevich Turgenev
 - **Born**: 1856
 - **Died**: 1944
 - **Gutenberg Agent ID**: 5634

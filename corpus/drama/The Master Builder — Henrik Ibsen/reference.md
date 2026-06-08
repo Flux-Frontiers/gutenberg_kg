@@ -8,7 +8,7 @@
 
 ## Author
 
-- **Name**: William Wells Brown
+- **Name**: Henrik Ibsen
 - **Died**: 1884
 - **Wikipedia**: https://en.wikipedia.org/wiki/William_Wells_Brown
 - **Gutenberg Agent ID**: 135

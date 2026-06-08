@@ -8,7 +8,7 @@
 
 ## Author
 
-- **Name**: Lewis Carroll
+- **Name**: Edwin Abbott Abbott
 - **Born**: 1832
 - **Died**: 1898
 - **Wikipedia**: https://en.wikipedia.org/wiki/Lewis_Carroll

@@ -8,7 +8,7 @@
 
 ## Author
 
-- **Name**: Plato
+- **Name**: H. G. (Herbert George) Wells
 - **Born**: -428
 - **Died**: -348
 - **Wikipedia**: https://en.wikipedia.org/wiki/Plato

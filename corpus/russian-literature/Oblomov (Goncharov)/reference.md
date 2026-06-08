@@ -8,7 +8,7 @@
 
 ## Author
 
-- **Name**: Anonymous
+- **Name**: Ivan Aleksandrovich Goncharov
 - **Wikipedia**: https://en.wikipedia.org/wiki/Anonymous_work
 - **Gutenberg Agent ID**: 216
 

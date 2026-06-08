@@ -8,7 +8,7 @@
 
 ## Author
 
-- **Name**: Jules Verne
+- **Name**: H. G. (Herbert George) Wells
 - **Born**: 1828
 - **Died**: 1905
 - **Wikipedia**: https://en.wikipedia.org/wiki/Jules_Verne

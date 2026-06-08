@@ -8,7 +8,7 @@
 
 ## Author
 
-- **Name**: Charles Darwin
+- **Name**: Émile Zola
 - **Born**: 1809
 - **Died**: 1882
 - **Wikipedia**: https://en.wikipedia.org/wiki/Charles_Darwin

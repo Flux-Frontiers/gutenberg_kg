@@ -8,7 +8,7 @@
 
 ## Author
 
-- **Name**: Henry David Thoreau
+- **Name**: Nikolai Vasilevich Gogol
 - **Born**: 1817
 - **Died**: 1862
 - **Wikipedia**: https://en.wikipedia.org/wiki/Henry_David_Thoreau

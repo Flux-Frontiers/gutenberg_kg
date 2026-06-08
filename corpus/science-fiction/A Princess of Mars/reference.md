@@ -8,7 +8,7 @@
 
 ## Author
 
-- **Name**: William Hope Hodgson
+- **Name**: Edgar Rice Burroughs
 - **Born**: 1877
 - **Died**: 1918
 - **Wikipedia**: https://en.wikipedia.org/wiki/William_Hope_Hodgson
