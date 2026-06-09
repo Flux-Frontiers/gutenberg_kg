@@ -32,8 +32,13 @@ WORKDIR /app
 # diary-kg: DiaryKG temporal index + query API
 # streamlit + httpx: chat UI dependencies
 # watchdog: faster Streamlit file-watching via native OS events (vs. polling)
-ARG KGMODULE_UTILS_VERSION=0.4.2
-RUN pip install --no-cache-dir "kgmodule-utils[synthesis]==${KGMODULE_UTILS_VERSION}" doc-kg diary-kg streamlit httpx watchdog openai
+ARG KGMODULE_UTILS_VERSION=0.4.3
+# doc-kg 0.15.6+ adds the FTS5/BM25 lexical channel + RRF fusion that fixes
+# exact-phrase retrieval (e.g. "pillar of salt"). diary-kg 0.93.0+ carries the
+# same fusion for the diary corpus. Pinned for reproducible builds.
+ARG DOC_KG_VERSION=0.15.6
+ARG DIARY_KG_VERSION=0.93.1
+RUN pip install --no-cache-dir "kgmodule-utils[synthesis]==${KGMODULE_UTILS_VERSION}" "doc-kg==${DOC_KG_VERSION}" "diary-kg==${DIARY_KG_VERSION}" streamlit httpx watchdog openai
 
 # Inject image_gen.py into the already-installed gutenberg_kg package.
 COPY src/gutenberg_kg/image_gen.py /tmp/image_gen.py

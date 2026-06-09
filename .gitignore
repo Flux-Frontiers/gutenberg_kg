@@ -138,3 +138,4 @@ entry_*.md
 .claude/
 .venv**
 .vscode
+.mcp.json

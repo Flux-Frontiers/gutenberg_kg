@@ -13,6 +13,7 @@
 #   pip install -e ".[viz]"             core + 2-D timeline visualisation (plotly)
 #   pip install -e ".[viz3d]"           core + 3-D visualisation (pyvista, PyQt5, pycode-kg)
 #   pip install -e ".[mcp]"             optional MCP server support (gutenkg-mcp)
+#   pip install -e ".[full]"            everything except dev tools (RECOMMENDED)
 #   pip install -e ".[all]"             dev + kgdeps + viz + viz3d (everything)
 #   pip install -e "."                  core runtime only
 #
@@ -24,6 +25,7 @@
 #   poetry install --extras "viz"       core + 2-D timeline visualisation only
 #   poetry install --extras "viz3d"     core + 3-D visualisation only
 #   poetry install --extras "mcp"       core + MCP server only
+#   poetry install --extras "full"      everything except dev tools (RECOMMENDED)
 #   poetry install                      core runtime only
 #
 # First-time setup
@@ -70,7 +72,7 @@ vtracer        = ">=0.6.0"
 # ---------------------------------------------------------------------------
 [project]
 name = "gutenberg-kg"
-version = "1.5.0"
+version = "1.5.1"
 description = "The Knowledge Press — universal ingestion engine for digitized text corpora"
 readme = "README.md"
 license = "Elastic-2.0"
@@ -90,7 +92,7 @@ classifiers = [
 requires-python = ">=3.12,<3.14"
 dependencies = [
     "click>=8.1.0,<9",
-    "kgmodule-utils[synthesis]>=0.4.2",
+    "kgmodule-utils[synthesis]>=0.4.3",
     "rich>=13.0.0",
     "doc-kg (>=0.15.5)",
     "diary-kg (>=0.92.6)",
@@ -126,6 +128,25 @@ viz3d = [
     "pycode-kg>=0.19.3",
 ]
 mcp = [
+    "fastmcp>=2.0",
+    "structlog>=24.0",
+]
+# Everything except dev tooling — the recommended default install.
+full = [
+    # kgdeps
+    "doc-kg>=0.15.4",
+    "diary-kg>=0.92.6",
+    "kg-rag>=0.9.1",
+    # viz
+    "plotly>=5.0.0",
+    # viz3d
+    "markdown>=3.6",
+    "param>=2.0.0",
+    "PyQt5>=5.15.0",
+    "pyvista[jupyter]>=0.44.0",
+    "pyvistaqt>=0.11.0",
+    "pycode-kg>=0.19.3",
+    # mcp
     "fastmcp>=2.0",
     "structlog>=24.0",
 ]

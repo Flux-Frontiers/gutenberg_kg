@@ -10,11 +10,41 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added
 
+- **`full` install extra (recommended)** — installs everything except dev tooling
+  (kgdeps + viz + viz3d + mcp) in one step: `pip install -e ".[full]"` or
+  `poetry install --extras "full"`.
+- **`docs/INSTALLATION.md`** — full prerequisites, platform notes, the complete
+  environment-variable reference, and troubleshooting.
+- **`docs/CHAT_UI.md`** — walkthrough of the Streamlit *Knowledge Press* chat UI:
+  search scopes, controls, synthesis providers, corpus-grounded image rendering,
+  and troubleshooting.
+- **README** — a `Requirements` table plus split `Quick Start — CLI` and
+  `Quick Start — Docker` sections covering the full
+  `make build-corpus → build → up → query` flow.
+- **MCP servers** — `pycodekg` and `dockg` entries in `.mcp.json` for in-repo
+  knowledge-graph tooling.
+
 ### Changed
+
+- **Docker image pins the hybrid-retrieval stack**: `doc-kg==0.15.6` and
+  `diary-kg==0.93.1`. These add the FTS5/BM25 lexical channel + reciprocal-rank
+  fusion that fixes exact-phrase queries (e.g. "pillar of salt") for both the
+  book and diary corpora; previously both were installed unpinned.
+- `poetry.lock` refreshed for the new `full` extra and updated KG dependencies.
+- `.gitignore` now excludes the local `.mcp.json` (developer-specific server paths).
+- **`kgmodule-utils` bumped to `0.4.3`** (pyproject floor, `poetry.lock`, Docker
+  `KGMODULE_UTILS_VERSION`, and `docker-compose.yml`) for the image-size fix below.
 
 ### Removed
 
 ### Fixed
+
+- **Image Resolution selector was inert** — the chat UI's Resolution choice
+  (Preview / Standard / Full) was displayed in the caption but never sent to the
+  image backend, so every render came back at 1536×1024 regardless of selection.
+  The selected pixel size is now threaded end-to-end (chat → worker `imagine`
+  op → `ImageSynthesizer`) via a new `size` parameter, honored by the mflux
+  local and serve backends.
 
 ---
 

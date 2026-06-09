@@ -6,7 +6,7 @@
   <a href="https://www.python.org/"><img src="https://img.shields.io/badge/python-3.12%20|%203.13-blue.svg" alt="Python"/></a>
   <a href="https://www.elastic.co/licensing/elastic-license"><img src="https://img.shields.io/badge/code-Elastic--2.0-lightgrey.svg" alt="Code License"/></a>
   <a href="https://www.gutenberg.org/"><img src="https://img.shields.io/badge/texts-Public%20Domain-green.svg" alt="Texts License"/></a>
-  <img src="https://img.shields.io/badge/version-1.5.0-blue.svg" alt="Version"/>
+  <img src="https://img.shields.io/badge/version-1.5.1-blue.svg" alt="Version"/>
   <img src="https://img.shields.io/badge/corpus-249%20books-orange.svg" alt="Corpus"/>
   <img src="https://img.shields.io/badge/nodes-1.3M-green.svg" alt="Nodes"/>
   <img src="https://img.shields.io/badge/edges-5.2M-green.svg" alt="Edges"/>
@@ -78,7 +78,23 @@ The full book list, organized by genre, is in [`docs/CORPUS.md`](docs/CORPUS.md)
 
 ---
 
-## Quick Start
+## Requirements
+
+| | Required | Notes |
+|---|---|---|
+| **Python** | 3.12 or 3.13 | `>=3.12,<3.14` |
+| **[Poetry](https://python-poetry.org/)** | for the CLI workflow | dependency management + virtual env |
+| **[GNU Make](https://www.gnu.org/software/make/)** | for build/run targets | drives `build-corpus`, `build`, `run`, `chat` |
+| **[Docker](https://docs.docker.com/get-docker/)** | for the container workflow | Docker Engine 24+ with Compose v2 |
+| **LLM (optional)** | for synthesis & image generation | [oMLX](https://omlx.ai) (Apple Silicon) or [Ollama](https://ollama.com) (cross-platform), or **OpenAI** cloud (`OPENAI_API_KEY`) |
+
+**No LLM is required to query the corpus** — the graph and vector index answer semantic queries on their own. An LLM is only needed for the optional *synthesis* and *image generation* layers. On Apple Silicon, **oMLX** is recommended; **Ollama** works everywhere; and the **OpenAI** provider path works end-to-end (synthesis *and* `gpt-image-1` image generation) with nothing but `OPENAI_API_KEY` set — see [`docs/INSTALLATION.md`](docs/INSTALLATION.md#environment-variables--full-reference).
+
+Full prerequisites, platform notes, and troubleshooting are in [`docs/INSTALLATION.md`](docs/INSTALLATION.md).
+
+---
+
+## Quick Start — CLI
 
 ```bash
 git clone https://github.com/Flux-Frontiers/gutenberg_kg
@@ -96,6 +112,38 @@ gutenkg ingest --force-build
 > **Expect 30–45 minutes** for a full rebuild on Apple Silicon (Apple M5 Max: ~30 min, Mac mini M4: ~45 min). Individual genres take 30 seconds to 5 minutes. Grab a coffee — or two.
 
 For the full command reference — downloading, ingesting, genre management, batch workflows — see [`docs/CHEATSHEET.md`](docs/CHEATSHEET.md). For the technical pipeline internals, see [`docs/DOWNLOAD_PIPELINE.md`](docs/DOWNLOAD_PIPELINE.md).
+
+---
+
+## Quick Start — Docker
+
+The Docker image bundles a pre-built knowledge graph (DocKG + DiaryKG indices) behind a query worker and an optional Streamlit chat UI. The bundle is built locally and baked into the image, so you need the CLI installed first to generate it.
+
+```bash
+git clone https://github.com/Flux-Frontiers/gutenberg_kg
+cd gutenberg_kg
+poetry install                       # needed to run `gutenkg build-corpus`
+
+# 1. Build the corpus bundle (DiaryKG + DocKG) — ~24 min, one time
+make build-corpus
+
+# 2. Build the Docker image (bakes the bundle in)
+make build
+
+# 3. Start everything — worker + chat UI + FLUX image server
+make up
+
+# Fire a one-shot query against the running worker
+make query Q="What is justice according to Plato?"
+```
+
+`make up` brings up the full stack: the query worker (http://localhost:8000), the Streamlit chat UI (http://localhost:8501), and the local FLUX image server (:8090). Run `make stop` to shut it all down.
+
+Want a lighter setup? Start just the worker with `make run`, or worker + chat UI (no image server) with `make chat`.
+
+The Streamlit chat UI — **The Knowledge Press** — gives you point-and-click semantic search, optional LLM synthesis, and corpus-grounded image rendering at http://localhost:8501. See [`docs/CHAT_UI.md`](docs/CHAT_UI.md) for the full walkthrough of scopes, search controls, synthesis providers, and troubleshooting.
+
+Synthesis and image generation are optional and reach a host LLM via `host.docker.internal`. Copy `docker/.env.example` to `docker/.env` and point `VLLM_ENDPOINT_URL` (oMLX) or `OLLAMA_ENDPOINT` (Ollama) at your local server. See [`docs/INSTALLATION.md`](docs/INSTALLATION.md) for the full Docker reference.
 
 ---
 
@@ -205,7 +253,7 @@ If you use GutenbergKG in your research, please cite it. GitHub's **Cite this re
   author       = {Suchanek, Eric G.},
   title        = {{GutenbergKG}: The Knowledge Press},
   year         = {2026},
-  version      = {1.5.0},
+  version      = {1.5.1},
   publisher    = {Flux-Frontiers},
   doi          = {10.5281/zenodo.20045390},
   url          = {https://github.com/Flux-Frontiers/gutenberg_kg},
@@ -217,7 +265,7 @@ If you use GutenbergKG in your research, please cite it. GitHub's **Cite this re
 
 **APA:**
 
-> Suchanek, E. G. (2026). *GutenbergKG: The Knowledge Press* (Version 1.5.0) [Software]. Flux-Frontiers. https://doi.org/10.5281/zenodo.20045390
+> Suchanek, E. G. (2026). *GutenbergKG: The Knowledge Press* (Version 1.5.1) [Software]. Flux-Frontiers. https://doi.org/10.5281/zenodo.20045390
 
 ---
 

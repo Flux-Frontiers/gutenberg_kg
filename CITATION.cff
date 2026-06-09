@@ -15,8 +15,8 @@ authors:
     orcid: "https://orcid.org/0009-0009-0891-1507"
     email: suchanek@flux-frontiers.com
     affiliation: "Flux-Frontiers"
-version: "1.4.0"
-date-released: "2026-05-21"
+version: "1.5.1"
+date-released: "2026-06-08"
 doi: "10.5281/zenodo.20045390"
 license-url: "https://www.elastic.co/licensing/elastic-license"
 repository-code: "https://github.com/Flux-Frontiers/gutenberg_kg"

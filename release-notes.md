@@ -2,63 +2,97 @@
 
 > Released: 2026-06-08
 
-## Highlights
+## Corpus-Grounded Image Generation
 
-### Image Generation: HTTP-First Architecture
+GutenbergKG can now generate images directly from the corpus. The `gutenkg imagine`
+command retrieves relevant passages, rewrites them into a visual scene description via
+a local VLM, and passes the result to a FLUX.2-Klein image server — all in one command.
 
-`gutenkg imagine` now requires an HTTP endpoint (`--endpoint` or `GUTENKG_IMAGE_ENDPOINT`).
-The `imagine-local` extra and all `mflux` / Apple-Silicon-only dependencies have been
-removed — they were incompatible with the KG embeddings `transformers<4.57` pin. Run
-`mflux-serve` locally or point at any compatible image server; the CLI is otherwise unchanged.
+```bash
+# Direct prompt
+gutenkg imagine "the great fire of London at night, oil painting"
 
-Multi-provider synthesis is now available in the chat UI (oMLX / Ollama / OpenAI), with
-per-request backend routing and a timing display showing search, synthesis, VLM rewrite,
-and image generation latency.
+# Corpus-grounded: retrieve from Pepys' diary, rewrite with VLM, generate
+gutenkg imagine --query "great fire" --book pepys --ratio 16:9
 
-### Corpus Integrity: 8 Books Repaired
+# Skip the VLM rewrite and pass corpus text straight to FLUX
+gutenkg imagine --query "great fire" --book pepys --no-vlm
 
-Eight books in the corpus contained completely wrong text due to incorrect Gutenberg IDs in
-the catalog files. The bad downloads had gone undetected because only `reference.md` metadata
-was obviously wrong — the text files silently held entirely different works:
+# Print the retrieved + rewritten prompt without generating
+gutenkg imagine --query "great fire" --book pepys --corpus-only
+```
 
-| Book | Was actually |
+Image generation is now **HTTP-first**: point `--endpoint` (or `GUTENKG_IMAGE_ENDPOINT`)
+at any running `mflux-serve` instance. Aspect ratio (`1:1`, `3:2`, `16:9`, etc.),
+inference steps, seed, and output path are all configurable.
+
+> **Breaking change:** the `imagine-local` extra is removed. Local Apple Silicon generation
+> was incompatible with the KG embeddings `transformers<4.57` pin. Use `mflux-serve` over
+> HTTP instead — same model, no dependency conflict.
+
+---
+
+## Multi-Provider LLM Synthesis
+
+The chat UI now supports three synthesis backends selectable at runtime — no restart needed:
+
+| Backend | When to use |
 |---|---|
-| Flatland (Abbott) | Alice's Adventures in Wonderland |
-| A Princess of Mars (Burroughs) | The Night Land (Hodgson) |
-| At the Earth's Core (Burroughs) | A Princess of Mars (wrong ID cascade) |
-| The First Men in the Moon (Wells) | Journey to the Centre of the Earth (Verne) |
-| The Food of the Gods (Wells) | Ion (Plato) |
-| The Sea-Wolf (London) | La Dame aux Camélias (Dumas fils) |
-| Germinal (Zola) | Insectivorous Plants (Darwin) |
-| On the Eve (Turgenev) | Mr. Punch's History of the Great War |
+| **oMLX** | Apple Silicon, sub-second local inference |
+| **Ollama** | Cross-platform local inference, GPU or CPU |
+| **OpenAI** | Cloud fallback, maximal quality |
 
-All 5 affected catalog files corrected; books re-downloaded and re-ingested.
+The selected backend is forwarded to the worker on every `query`, `rewrite`, and `imagine`
+call. Per-request model override is also supported in the RunPod handler.
 
-### Corpus Expansion: 249 Books across 19 Genres
+---
 
-42 new texts across 5 genres added (biography, drama, letters, natural-history, travel);
-4 diary books given proper `reference.md` metadata. `scripts/regenerate_corpus_doc.py`
-added to keep `docs/CORPUS.md` in sync automatically.
+## Configurable Inference Steps & Image Resolution
 
-### Docker & RunPod
+Two new controls let you trade quality for speed on every request:
 
-Standalone Docker image bakes the full corpus bundle for cold-start-free deployment.
-RunPod handler gains `corpus` routing, `op=models`, `HANDLER_SECRET` auth, per-request
-synthesis model override, and timing fields. Chat UI adds provider selection, global
-image resolution control, and sidebar-based save/render.
+- **`IMAGE_STEPS` env var** — sets default inference steps across the worker, image server,
+  and chat UI. `4` is fast/preview; `25` gives noticeably better detail.
+- **Resolution tiers in the chat sidebar** — Preview (768 × 512), Standard (1152 × 768),
+  Full (1536 × 1024). Applied globally to all image results in the session.
 
-## Breaking Changes
+---
 
-- `gutenkg imagine` **requires** `--endpoint` or `GUTENKG_IMAGE_ENDPOINT` — local
-  Apple Silicon generation no longer available via the CLI.
-- `pip install gutenberg-kg[imagine-local]` is no longer valid; use `[imagine]`.
+## Pipeline Timing Visibility
 
-## Dependency Changes
+Every response now exposes latency at each stage: `search_ms`, `synthesis_ms`, VLM rewrite
+time, and image generation time are shown in result captions. Bottlenecks are immediately
+visible without digging into logs.
 
-- `kg-rag` moved from GitHub source to PyPI (`>=0.9.1`)
-- `kgmodule-utils[synthesis]` bumped to `>=0.4.2`
+---
+
+## Standalone Docker Deployment
+
+A self-contained Docker image bakes the full 249-book corpus bundle so the worker starts
+cold with no build step. The stack (`make up`) starts the KGRAG worker, FLUX image server,
+and Streamlit chat UI in one command.
+
+RunPod handler additions: `corpus` routing by genre, `op=models` introspection,
+`HANDLER_SECRET` auth, and `SYNTH_MAX_K` cap to prevent context-window overflow.
+
+---
+
+## Corpus Integrity: 8 Books Repaired
+
+Eight books contained completely wrong text due to incorrect Gutenberg IDs in the catalog
+files — silently serving Alice in Wonderland as Flatland, Dumas as Jack London, Darwin as
+Zola. All catalog IDs corrected, books re-downloaded and re-ingested.
+
+---
+
+## Other Changes
+
+- **249 books / 19 genres** — 42 texts added across biography, drama, letters,
+  natural-history, and travel since v1.3.0
+- **`scripts/regenerate_corpus_doc.py`** — keeps `docs/CORPUS.md` in sync with the corpus
+- `kg-rag` moved from GitHub source to PyPI
 - `rich` promoted to a core dependency
-- `doc-kg` minimum raised to `0.15.5`
+- `doc-kg` minimum raised to `0.15.5` (bounded SIMILAR_TO edges)
 
 ---
 

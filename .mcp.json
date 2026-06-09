@@ -19,6 +19,14 @@
         "OPENAI_BASE_URL": "http://localhost:8090/v1",
         "OPENAI_API_KEY": "not-needed"
       }
+    },
+    "pycodekg": {
+      "command": "/Users/egs/repos/gutenberg_kg/.venv/bin/pycodekg-mcp",
+      "args": ["--repo", "/Users/egs/repos/gutenberg_kg"]
+    },
+    "dockg": {
+      "command": "/Users/egs/repos/gutenberg_kg/.venv/bin/dockg",
+      "args": ["mcp", "--repo", "/Users/egs/repos/gutenberg_kg"]
     }
   }
 }

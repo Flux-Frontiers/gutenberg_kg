@@ -44,6 +44,13 @@ _RESOLUTION_LABELS: dict[str, str] = {
     "Full": "Full  (1536 × 1024)",
 }
 
+# Pixel dimensions sent to the image backend for each preset (all 3:2).
+_RESOLUTION_SIZES: dict[str, str] = {
+    "Preview": "768x512",
+    "Standard": "1152x768",
+    "Full": "1536x1024",
+}
+
 # ---------------------------------------------------------------------------
 # Page config
 # ---------------------------------------------------------------------------
@@ -246,6 +253,7 @@ def _imagine_via_worker(
     image_backend: str = "",
     aspect_ratio: str = "3:2",
     steps: int | None = None,
+    size: str | None = None,
 ) -> tuple[str | None, str | None, str | None, str | None]:
     """Route image generation through the worker. Returns (b64, image_model, image_backend, error)."""
     return WorkerClient(worker_url, secret).imagine(
@@ -253,6 +261,7 @@ def _imagine_via_worker(
         image_backend=image_backend,
         aspect_ratio=aspect_ratio,
         steps=steps,
+        size=size,
     )
 
 
@@ -679,6 +688,7 @@ def main() -> None:
                         cfg["secret"],
                         image_backend=image_backend,
                         aspect_ratio="3:2",
+                        size=_RESOLUTION_SIZES.get(cfg["resolution"]),
                     )
                     img_ms = round((time.perf_counter() - t0_img) * 1000)
                     if img_error or not b64:
