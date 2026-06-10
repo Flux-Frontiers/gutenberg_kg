@@ -10,6 +10,9 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added
 
+- **`scripts/check_standard_queries.py`** — a validation harness that runs the
+  eight standard chat queries (one per genre plus a diary) against a live worker
+  and asserts each returns at least one hit, printing the top results and scores.
 - **`full` install extra (recommended)** — installs everything except dev tooling
   (kgdeps + viz + viz3d + mcp) in one step: `pip install -e ".[full]"` or
   `poetry install --extras "full"`.
@@ -34,11 +37,35 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - `.gitignore` now excludes the local `.mcp.json` (developer-specific server paths).
 - **`kgmodule-utils` bumped to `0.4.3`** (pyproject floor, `poetry.lock`, Docker
   `KGMODULE_UTILS_VERSION`, and `docker-compose.yml`) for the image-size fix below.
+- **Worker retrieval is now semantic-first** (`docker/handler.py`). Book/genre/
+  diary/`all` queries rank chunks by their own cosine distance via a direct
+  LanceDB search (`metric("cosine")`, content-kind/genre/`reference.md` filters
+  pushed into a pre-filter) instead of `DocKG.query()`'s graph-hop expansion.
+  Diaries get the same treatment across their per-book DiaryKG vector tables, so
+  the `all` corpus ranks both collections on one comparable scale. The KGRAG
+  orchestrator is no longer on the query path. Clean passage text and diary
+  timestamps are hydrated from SQLite (the LanceDB `text` column holds prefixed
+  embed-text, not the clean passage).
 
 ### Removed
 
+- **KGRAG orchestrator from the worker query path** — `handler.py` no longer
+  initialises `KGRAG` or routes queries through `query`/`query_corpus`; retrieval
+  is served directly from the LanceDB tables (see semantic-first change above).
+
 ### Fixed
 
+- **Named-book queries returned zero or wrong hits** (e.g. "What does the Quran
+  say about Moses?" surfaced *The Three Musketeers* / *Confucius* and no Quran
+  passages, failing the genre check). Root cause: `DocKG.query()`'s hop-1
+  expansion made every chunk inherit its seed's distance, collapsing each book
+  into a flat score plateau and burying the true top matches below `max_nodes`.
+  The semantic-first path ranks each chunk on its own cosine score, so all eight
+  standard genre queries now return the correct book on top.
+- **`all` corpus surfaced diaries above better book matches** — diary hits came
+  through the orchestrator's flat-plateau scoring (~0.88) and out-sorted true
+  cosine book scores. Both corpora now share the cosine scale, so books rank
+  correctly (e.g. Plato's *Republic* tops a justice query; diaries fall to ~0.62).
 - **Image Resolution selector was inert** — the chat UI's Resolution choice
   (Preview / Standard / Full) was displayed in the caption but never sent to the
   image backend, so every render came back at 1536×1024 regardless of selection.
