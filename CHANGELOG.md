@@ -29,11 +29,14 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Changed
 
-- **Docker image pins the hybrid-retrieval stack**: `doc-kg==0.15.6` and
-  `diary-kg==0.93.1`. These add the FTS5/BM25 lexical channel + reciprocal-rank
-  fusion that fixes exact-phrase queries (e.g. "pillar of salt") for both the
-  book and diary corpora; previously both were installed unpinned.
-- `poetry.lock` refreshed for the new `full` extra and updated KG dependencies.
+- **Hybrid-retrieval stack pinned to `doc-kg==0.15.8` and `diary-kg==0.93.2`**,
+  aligned across the `pyproject.toml` floors, `poetry.lock`, and the
+  `docker/Dockerfile` `DOC_KG_VERSION` / `DIARY_KG_VERSION` args. These carry the
+  FTS5/BM25 lexical channel + reciprocal-rank fusion that fixes exact-phrase
+  queries (e.g. "pillar of salt") for both the book and diary corpora. Previously
+  the lock floated below the Docker pins, so `poetry install` silently downgraded
+  local dev to an older retrieval stack than the image shipped.
+- `poetry.lock` refreshed for the new `full` extra and the pinned KG dependencies.
 - `.gitignore` now excludes the local `.mcp.json` (developer-specific server paths).
 - **`kgmodule-utils` bumped to `0.4.3`** (pyproject floor, `poetry.lock`, Docker
   `KGMODULE_UTILS_VERSION`, and `docker-compose.yml`) for the image-size fix below.

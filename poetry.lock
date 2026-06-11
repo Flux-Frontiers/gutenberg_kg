@@ -1427,19 +1427,20 @@ word-list = ["pyahocorasick"]
 
 [[package]]
 name = "diary-kg"
-version = "0.92.6"
+version = "0.93.2"
 description = "A knowledge graph builder and semantic search engine for diaries and journals"
 optional = false
 python-versions = "<3.14,>=3.12"
 groups = ["main"]
 files = [
-    {file = "diary_kg-0.92.6-py3-none-any.whl", hash = "sha256:64aaf85912a74691be28dbee55c93c8ca35a8162b1fb9fbd6bc70477a1311fd4"},
-    {file = "diary_kg-0.92.6.tar.gz", hash = "sha256:99e3d85815acaf63f62dd266fa404495fb4e8aac2a712b446694ae1118a97d7a"},
+    {file = "diary_kg-0.93.2-py3-none-any.whl", hash = "sha256:0de92c7a202ef84dff2c510109c5e0cd5f3eb501892d04649efae34f05ab9272"},
+    {file = "diary_kg-0.93.2.tar.gz", hash = "sha256:14b846e46b863075b1697580283b346030440df4f2873ce455c4934eb2b9c30c"},
 ]
 
 [package.dependencies]
 click = ">=8.1.0,<9"
-kgmodule-utils = ">=0.2.3"
+doc-kg = ">=0.15.8"
+kgmodule-utils = ">=0.4.0"
 lancedb = ">=0.29.0"
 mcp = ">=1.0.0"
 numpy = ">=1.24.0"
@@ -1449,8 +1450,8 @@ sentence-transformers = ">=5.4.1"
 spacy = ">=3.8.11,<4"
 
 [package.extras]
-all = ["PyQt5 (>=5.15.0)", "detect-secrets (>=1.5.0)", "doc-kg (>=0.15.0)", "markdown (>=3.6)", "mypy (>=1.10.0)", "param (>=2.0.0)", "pdoc (>=14.0.0)", "plotly (>=5.14.0)", "pre-commit (>=4.5.1)", "pycode-kg (>=0.19.0)", "pylint (>=4.0.5)", "pytest (>=8.0.0)", "pytest-cov (>=5.0.0)", "pyvis (>=0.3.2)", "pyvista[jupyter] (>=0.44.0)", "pyvistaqt (>=0.11.0)", "ruff (>=0.4.0)", "streamlit (>=1.35.0)", "trame-vtk (>=2.0.0)"]
-kgdeps = ["doc-kg (>=0.15.0)", "pycode-kg (>=0.19.0)"]
+all = ["PyQt5 (>=5.15.0)", "detect-secrets (>=1.5.0)", "markdown (>=3.6)", "param (>=2.0.0)", "pdoc (>=14.0.0)", "plotly (>=5.14.0)", "pre-commit (>=4.5.1)", "pycode-kg (>=0.19.0)", "pylint (>=4.0.5)", "pytest (>=8.0.0)", "pytest-cov (>=5.0.0)", "pyvis (>=0.3.2)", "pyvista[jupyter] (>=0.44.0)", "pyvistaqt (>=0.11.0)", "ruff (>=0.4.0)", "streamlit (>=1.35.0)", "trame-vtk (>=2.0.0)", "ty (>=0.0.44)"]
+kgdeps = ["pycode-kg (>=0.19.0)"]
 viz = ["plotly (>=5.14.0)", "pyvis (>=0.3.2)", "streamlit (>=1.35.0)"]
 viz3d = ["PyQt5 (>=5.15.0)", "markdown (>=3.6)", "param (>=2.0.0)", "pyvista[jupyter] (>=0.44.0)", "pyvistaqt (>=0.11.0)", "trame-vtk (>=2.0.0)"]
 
@@ -1503,20 +1504,20 @@ wmi = ["wmi (>=1.5.1) ; platform_system == \"Windows\""]
 
 [[package]]
 name = "doc-kg"
-version = "0.15.5"
+version = "0.15.8"
 description = "A tool to build a semantically searchable knowledge graph from markdown and text documents"
 optional = false
 python-versions = "<3.14,>=3.12"
 groups = ["main"]
 files = [
-    {file = "doc_kg-0.15.5-py3-none-any.whl", hash = "sha256:743e5022f2093b818967703c0c992ec9b274cbc3f93d4b5d077198061c2cfc71"},
-    {file = "doc_kg-0.15.5.tar.gz", hash = "sha256:e1935bf8b1f32b5e91298fe5a6261505cba3728c9871f5297e973d81ef5c0491"},
+    {file = "doc_kg-0.15.8-py3-none-any.whl", hash = "sha256:1afa04c1bf5489f245b77fb7f2b28bb810b20b79edc6d5aeb9c865f3b5f2ef1e"},
+    {file = "doc_kg-0.15.8.tar.gz", hash = "sha256:3268d984e0a7fa547235897d719dea3d48efb6ebac3a92bf8219e1123f1782be"},
 ]
 
 [package.dependencies]
 click = ">=8.1.0,<9"
 einops = ">=0.8.2"
-kgmodule-utils = ">=0.2.0"
+kgmodule-utils = ">=0.4.0"
 lancedb = ">=0.29.0"
 markdown-it-py = ">=3.0.0"
 mcp = ">=1.0.0"
@@ -8693,4 +8694,4 @@ viz3d = ["PyQt5", "markdown", "param", "pycode-kg", "pyvista", "pyvistaqt"]
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.12,<3.14"
-content-hash = "6f2a9f9ceb44dd3636d87ceec66f2d7a0f54425b4061f476f8200cde354eb61f"
+content-hash = "e5815d3b0db251c18657db11172ceb55f50ac8c655c445b86f1bc9426b3e927e"
