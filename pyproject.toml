@@ -94,8 +94,8 @@ dependencies = [
     "click>=8.1.0,<9",
     "kgmodule-utils[synthesis]>=0.4.3",
     "rich>=13.0.0",
-    "doc-kg (>=0.15.5)",
-    "diary-kg (>=0.92.6)",
+    "doc-kg (>=0.15.8)",
+    "diary-kg (>=0.93.2)",
 ]
 
 [project.optional-dependencies]
@@ -112,8 +112,8 @@ dev = [
     "vtracer>=0.6.0",
 ]
 kgdeps = [
-    "doc-kg>=0.15.4",
-    "diary-kg>=0.92.6",
+    "doc-kg>=0.15.8",
+    "diary-kg>=0.93.2",
     "kg-rag>=0.9.1",
 ]
 viz = [
@@ -134,8 +134,8 @@ mcp = [
 # Everything except dev tooling — the recommended default install.
 full = [
     # kgdeps
-    "doc-kg>=0.15.4",
-    "diary-kg>=0.92.6",
+    "doc-kg>=0.15.8",
+    "diary-kg>=0.93.2",
     "kg-rag>=0.9.1",
     # viz
     "plotly>=5.0.0",
@@ -163,8 +163,8 @@ all = [
     "scipy>=1.13.0",
     "vtracer>=0.6.0",
     # kgdeps
-    "doc-kg>=0.15.4",
-    "diary-kg>=0.92.6",
+    "doc-kg>=0.15.8",
+    "diary-kg>=0.93.2",
     "kg-rag>=0.9.1",
     # viz
     "plotly>=5.0.0",
@@ -213,7 +213,7 @@ addopts    = "-v --tb=short"
 pythonpath = ["src"]
 
 # ---------------------------------------------------------------------------
-# CodeKG / DocKG index configuration
+# PycodeKG / DocKG index configuration
 # ---------------------------------------------------------------------------
 [tool.pycodekg]
 include = ["src", "docker", "runpod"]
