@@ -1,22 +1,28 @@
 #!/usr/bin/env bash
 # push_indices.sh
 #
-# Push pre-built GutenbergKG DocKG indices from your local machine to a
-# RunPod Network Volume via SSH.  Total upload is ~130 MB (just the indices,
-# not the raw text corpus).
+# Push the pre-built GutenbergKG corpus bundle from your local machine to a
+# RunPod Network Volume via SSH.
 #
-# This is the fastest way to populate the volume: build locally once,
-# push the resulting .dockg/ directory.  The raw Gutenberg corpus stays
-# on your machine.
+# The bundle lives at bundles/gutenberg-all/ after running `make build-corpus`.
+# It contains the consolidated DocKG index (.dockg/) and DiaryKG indices
+# (diaries/) for the full 249-book corpus.  Total upload is several GB.
+#
+# The remote layout after this script:
+#   /workspace/
+#   └── gutenberg_kg/
+#       ├── .dockg/          (DocKG index — SQLite + LanceDB)
+#       │   ├── graph.sqlite
+#       │   ├── lancedb/
+#       │   └── catalog.json
+#       └── diaries/         (DiaryKG temporal indices)
 #
 # Prerequisites
 # -------------
-#   1. A RunPod Network Volume exists (≥ 10 GB).
-#   2. A temporary RunPod pod has the volume attached and is running.
-#      ("Mount path" in RunPod UI should be /workspace)
-#   3. SSH key added to RunPod account (Settings → SSH Public Keys).
-#   4. Local .dockg/ indices already built:
-#        gutenkg ingest --genre philosophy --force-build
+#   1. make build-corpus has completed (bundles/gutenberg-all/ exists locally).
+#   2. A RunPod Network Volume exists (≥ 20 GB recommended).
+#   3. A temporary RunPod pod has the volume attached at /workspace.
+#   4. SSH key added to your RunPod account (Settings → SSH Public Keys).
 #
 # Usage
 # -----
@@ -53,39 +59,44 @@ SSH_OPTS="-p ${POD_PORT} -i ${SSH_KEY} -o StrictHostKeyChecking=no"
 RSYNC_SSH="ssh ${SSH_OPTS}"
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-GUTENBERG_REPO="$(dirname "${SCRIPT_DIR}")"   # this repo
+GUTENBERG_REPO="$(dirname "${SCRIPT_DIR}")"
+
+BUNDLE_DIR="${GUTENBERG_REPO}/bundles/gutenberg-all"
+BUNDLE_CHECK="${BUNDLE_DIR}/.dockg/graph.sqlite"
 
 echo ""
-echo "==> Target: ${SSH_TARGET} -p ${POD_PORT} : ${DEST_BASE}"
+echo "==> Target: ${SSH_TARGET} -p ${POD_PORT} : ${DEST_BASE}/gutenberg_kg/"
 echo ""
 
 # ---------------------------------------------------------------------------
-# Verify local indices exist
+# Verify local bundle exists
 # ---------------------------------------------------------------------------
 
-DOCKG_LOCAL="${GUTENBERG_REPO}/.dockg/graph.sqlite"
-
-if [[ ! -f "${DOCKG_LOCAL}" ]]; then
-    echo "ERROR: missing local index: ${DOCKG_LOCAL}"
-    echo "       Run 'gutenkg ingest --genre <genre> --force-build' first."
+if [[ ! -f "${BUNDLE_CHECK}" ]]; then
+    echo "ERROR: corpus bundle not found at ${BUNDLE_CHECK}"
+    echo "       Run 'make build-corpus' first to generate bundles/gutenberg-all/."
     exit 1
 fi
+
+echo "==> Source bundle: ${BUNDLE_DIR}"
+du -sh "${BUNDLE_DIR}" || true
+echo ""
 
 # ---------------------------------------------------------------------------
 # Create remote directory structure
 # ---------------------------------------------------------------------------
 
 ssh ${SSH_OPTS} "${SSH_TARGET}" \
-    "mkdir -p ${DEST_BASE}/gutenberg_kg/.dockg"
+    "mkdir -p ${DEST_BASE}/gutenberg_kg"
 
 # ---------------------------------------------------------------------------
-# Push indices
+# Push bundle
 # ---------------------------------------------------------------------------
 
-echo "--- GutenbergKG .dockg/ ---"
+echo "--- Pushing corpus bundle → ${DEST_BASE}/gutenberg_kg/ ---"
 rsync -avz --progress -e "${RSYNC_SSH}" \
-    "${GUTENBERG_REPO}/.dockg/" \
-    "${SSH_TARGET}:${DEST_BASE}/gutenberg_kg/.dockg/"
+    "${BUNDLE_DIR}/" \
+    "${SSH_TARGET}:${DEST_BASE}/gutenberg_kg/"
 
 # ---------------------------------------------------------------------------
 # Verify
@@ -94,8 +105,9 @@ rsync -avz --progress -e "${RSYNC_SSH}" \
 echo ""
 echo "==> Remote volume contents:"
 ssh "${SSH_TARGET}" -p "${POD_PORT}" \
-    "du -sh ${DEST_BASE}/gutenberg_kg/.dockg 2>/dev/null"
+    "du -sh ${DEST_BASE}/gutenberg_kg 2>/dev/null && \
+     ls ${DEST_BASE}/gutenberg_kg/.dockg/ 2>/dev/null || echo '  (no .dockg yet)'"
 
 echo ""
 echo "Done. Detach or terminate the temporary pod."
-echo "The Network Volume now has all indices — attach it to the gutenkg endpoint."
+echo "The Network Volume is ready — attach it to the gutenkg serverless endpoint."

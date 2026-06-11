@@ -28,24 +28,51 @@ The corpus currently spans **249 public-domain texts across 19 genres** — 1,31
 
 ---
 
-## What It Does
+## The Knowledge Press — Local App
 
-GutenbergKG ingests text from three sources:
+The primary interface is **The Knowledge Press**: a self-contained Docker app that bundles the full knowledge graph, a query worker, and a Streamlit chat UI. Once running, open `http://localhost:8501` and query 249 books with plain English.
 
-- **[Project Gutenberg](https://www.gutenberg.org/)** — the canonical source for public-domain literature. Full OPDS + RDF metadata enrichment: author birth/death, Wikipedia links, subjects, rights.
-- **[Internet Archive](https://archive.org/)** — for works not on Gutenberg, including technical reference volumes (Audel Guides, early science texts). OCR plain-text with configurable curation preprocessing.
-- **Local corpora** — any directory of `.md` or `.txt` files can be ingested as a genre.
+### One-time corpus build (~24 min)
 
-Each text is:
+The corpus must be built before the Docker image. This step converts the raw texts into DocKG + DiaryKG indices and bundles them for baking into the image. You only do this once (or after adding new books).
 
-1. **Stripped** of boilerplate (Project Gutenberg headers/footers, OCR artifacts)
-2. **Structured** — chapters, parts, acts, scenes, letters, verses detected and converted to Markdown heading hierarchy
-3. **Indexed** by [DocKG](https://github.com/Flux-Frontiers/doc_kg) into a hybrid SQLite + LanceDB knowledge graph
-4. **Registered** with [KGRAG](https://github.com/Flux-Frontiers/KGRAG) for federated cross-corpus query
+```bash
+git clone https://github.com/Flux-Frontiers/gutenberg_kg
+cd gutenberg_kg
+poetry install         # installs the gutenkg CLI
 
-The result: every work is independently queryable as its own knowledge graph, grouped into genre corpora for thematic search, and unified into `gutenberg-all` for corpus-wide discovery.
+make build-corpus      # builds .dockg/ indices + bundles/gutenberg-all/
+```
 
-**No LLM is required to query the corpus.** The graph and vector index answer semantic queries on their own. A small local LLM (Ollama, llama.cpp, MLX) can optionally be connected for synthesis — summarizing results, comparing passages, or generating thematic essays — but the retrieval layer stands alone.
+> **Expect ~24 minutes** on Apple Silicon. Individual genres take 30 seconds to 5 minutes. The resulting `bundles/gutenberg-all/` directory (~3–5 GB) is what gets baked into the Docker image.
+
+### Build and run
+
+```bash
+make build             # bakes the corpus bundle into a self-contained Docker image
+make up                # starts everything: worker + chat UI + FLUX image server
+```
+
+`make up` brings up three services:
+
+| Service | URL | Purpose |
+|---------|-----|---------|
+| Query worker | `http://localhost:8000` | Handles all retrieval and synthesis |
+| **Chat UI** | **`http://localhost:8501`** | **The Knowledge Press — primary interface** |
+| FLUX image server | `http://localhost:8090` | Corpus-grounded image generation |
+
+Open `http://localhost:8501` to start querying.
+
+```bash
+make stop              # shuts everything down
+make query Q="What is justice according to Plato?"   # one-shot query against the worker
+```
+
+**Lighter setups:** `make run` starts just the worker; `make chat` starts worker + chat UI without the image server.
+
+### About the image size
+
+The Docker image is large (~4–6 GB) because the full corpus — 1.3M nodes, 5.2M edges, and their 384-dim vector embeddings — is baked in. This is by design: the image is entirely self-contained and needs no external data at runtime. You build it once locally; it never needs to be pushed anywhere.
 
 ---
 
@@ -78,6 +105,27 @@ The full book list, organized by genre, is in [`docs/CORPUS.md`](docs/CORPUS.md)
 
 ---
 
+## What It Does
+
+GutenbergKG ingests text from three sources:
+
+- **[Project Gutenberg](https://www.gutenberg.org/)** — the canonical source for public-domain literature. Full OPDS + RDF metadata enrichment: author birth/death, Wikipedia links, subjects, rights.
+- **[Internet Archive](https://archive.org/)** — for works not on Gutenberg, including technical reference volumes (Audel Guides, early science texts). OCR plain-text with configurable curation preprocessing.
+- **Local corpora** — any directory of `.md` or `.txt` files can be ingested as a genre.
+
+Each text is:
+
+1. **Stripped** of boilerplate (Project Gutenberg headers/footers, OCR artifacts)
+2. **Structured** — chapters, parts, acts, scenes, letters, verses detected and converted to Markdown heading hierarchy
+3. **Indexed** by [DocKG](https://github.com/Flux-Frontiers/doc_kg) into a hybrid SQLite + LanceDB knowledge graph
+4. **Registered** with [KGRAG](https://github.com/Flux-Frontiers/KGRAG) for federated cross-corpus query
+
+The result: every work is independently queryable as its own knowledge graph, grouped into genre corpora for thematic search, and unified into `gutenberg-all` for corpus-wide discovery.
+
+**No LLM is required to query the corpus.** The graph and vector index answer semantic queries on their own. A small local LLM (Ollama, llama.cpp, MLX) can optionally be connected for synthesis — summarizing results, comparing passages, or generating thematic essays — but the retrieval layer stands alone.
+
+---
+
 ## Requirements
 
 | | Required | Notes |
@@ -90,11 +138,13 @@ The full book list, organized by genre, is in [`docs/CORPUS.md`](docs/CORPUS.md)
 
 **No LLM is required to query the corpus** — the graph and vector index answer semantic queries on their own. An LLM is only needed for the optional *synthesis* and *image generation* layers. On Apple Silicon, **oMLX** is recommended; **Ollama** works everywhere; and the **OpenAI** provider path works end-to-end (synthesis *and* `gpt-image-1` image generation) with nothing but `OPENAI_API_KEY` set — see [`docs/INSTALLATION.md`](docs/INSTALLATION.md#environment-variables--full-reference).
 
-Full prerequisites, platform notes, and troubleshooting are in [`docs/INSTALLATION.md`](docs/INSTALLATION.md).
+Full prerequisites, platform notes, and troubleshooting are in [`docs/INSTALLATION.md`](docs/INSTALLATION.md). For RunPod serverless deployment see [`docs/RUNPOD.md`](docs/RUNPOD.md).
 
 ---
 
-## Quick Start — CLI
+## CLI Quick Start — Developer / Power-User Path
+
+The CLI operates directly against the local `.dockg/` indices — no Docker required. Use it to download and ingest books, manage the corpus, and query the graph from the terminal.
 
 ```bash
 git clone https://github.com/Flux-Frontiers/gutenberg_kg
@@ -103,47 +153,15 @@ poetry install
 gutenkg --help
 ```
 
-After cloning, rebuild the knowledge graph indices from the source Markdown (not committed to git — they're local build artifacts):
+After cloning, rebuild the knowledge graph indices from the source Markdown:
 
 ```bash
 gutenkg ingest --force-build
 ```
 
-> **Expect 30–45 minutes** for a full rebuild on Apple Silicon (Apple M5 Max: ~30 min, Mac mini M4: ~45 min). Individual genres take 30 seconds to 5 minutes. Grab a coffee — or two.
+> **Expect 30–45 minutes** for a full rebuild on Apple Silicon (Apple M5 Max: ~30 min, Mac mini M4: ~45 min). Individual genres take 30 seconds to 5 minutes.
 
 For the full command reference — downloading, ingesting, genre management, batch workflows — see [`docs/CHEATSHEET.md`](docs/CHEATSHEET.md). For the technical pipeline internals, see [`docs/DOWNLOAD_PIPELINE.md`](docs/DOWNLOAD_PIPELINE.md).
-
----
-
-## Quick Start — Docker
-
-The Docker image bundles a pre-built knowledge graph (DocKG + DiaryKG indices) behind a query worker and an optional Streamlit chat UI. The bundle is built locally and baked into the image, so you need the CLI installed first to generate it.
-
-```bash
-git clone https://github.com/Flux-Frontiers/gutenberg_kg
-cd gutenberg_kg
-poetry install                       # needed to run `gutenkg build-corpus`
-
-# 1. Build the corpus bundle (DiaryKG + DocKG) — ~24 min, one time
-make build-corpus
-
-# 2. Build the Docker image (bakes the bundle in)
-make build
-
-# 3. Start everything — worker + chat UI + FLUX image server
-make up
-
-# Fire a one-shot query against the running worker
-make query Q="What is justice according to Plato?"
-```
-
-`make up` brings up the full stack: the query worker (http://localhost:8000), the Streamlit chat UI (http://localhost:8501), and the local FLUX image server (:8090). Run `make stop` to shut it all down.
-
-Want a lighter setup? Start just the worker with `make run`, or worker + chat UI (no image server) with `make chat`.
-
-The Streamlit chat UI — **The Knowledge Press** — gives you point-and-click semantic search, optional LLM synthesis, and corpus-grounded image rendering at http://localhost:8501. See [`docs/CHAT_UI.md`](docs/CHAT_UI.md) for the full walkthrough of scopes, search controls, synthesis providers, and troubleshooting.
-
-Synthesis and image generation are optional and reach a host LLM via `host.docker.internal`. Copy `docker/.env.example` to `docker/.env` and point `VLLM_ENDPOINT_URL` (oMLX) or `OLLAMA_ENDPOINT` (Ollama) at your local server. See [`docs/INSTALLATION.md`](docs/INSTALLATION.md) for the full Docker reference.
 
 ---
 
@@ -170,7 +188,7 @@ kgrag synthesize "How do the Stoics and Russian novelists differ on suffering an
   --model qwen3:4b
 ```
 
-> **Example synthesis output:** See [`STOICS_VS_RUSSIANS.md`](https://github.com/Flux-Frontiers/KGRAG/blob/main/docs/STOICS_VS_RUSSIANS.md) — a live run of the question above against Marcus Aurelius, Dostoevsky, Tolstoy, and Nietzsche, with every passage retrieved deterministically from the graph and quoted verbatim. The retrieval layer cannot hallucinate; the LLM synthesizes from verified facts only. *(Run against an earlier 78-book corpus; the current 245-book corpus adds substantial additional Stoic, philosophical, and literary coverage.)*
+> **Example synthesis output:** See [`STOICS_VS_RUSSIANS.md`](https://github.com/Flux-Frontiers/KGRAG/blob/main/docs/STOICS_VS_RUSSIANS.md) — a live run of the question above against Marcus Aurelius, Dostoevsky, Tolstoy, and Nietzsche, with every passage retrieved deterministically from the graph and quoted verbatim. The retrieval layer cannot hallucinate; the LLM synthesizes from verified facts only. *(Run against an earlier 78-book corpus; the current 249-book corpus adds substantial additional Stoic, philosophical, and literary coverage.)*
 
 ---
 
@@ -228,7 +246,7 @@ Digital humanities centers, computational linguistics labs, library science prog
 
 ### Why now
 
-245 works, 5.3 million edges, production-ready pipeline. The architecture is federated by design — new corpora slot in without touching the existing graph. The ingestion tooling is fast and fully automated. The query layer is proven. This is the inflection point before the graph becomes too large for any single team to steer.
+249 works, 5.2 million edges, production-ready pipeline. The architecture is federated by design — new corpora slot in without touching the existing graph. The ingestion tooling is fast and fully automated. The query layer is proven. This is the inflection point before the graph becomes too large for any single team to steer.
 
 **To discuss a partnership:** [suchanek@flux-frontiers.com](mailto:suchanek@flux-frontiers.com)
 

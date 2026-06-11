@@ -69,6 +69,8 @@ from kg_utils.synthesis import (
 from kg_utils.worker import handle_aux_ops
 
 import runpod
+from gutenberg_kg.diary_meta import DIARY_META as _DIARY_META
+from gutenberg_kg.diary_meta import diary_slug as _diary_slug
 
 # ---------------------------------------------------------------------------
 # Config
@@ -122,28 +124,6 @@ _DIARY_TABLES: dict = {}
 _catalog: dict[str, dict] = {}
 
 # Static metadata for diary KGs (not in catalog.json, which covers prose/verse only).
-_DIARY_META: dict[str, dict] = {
-    "pepys-complete": {
-        "author": "Samuel Pepys",
-        "title": "The Diary of Samuel Pepys — Complete",
-        "genre": "diaries",
-    },
-    "evelyn-volume-1": {
-        "author": "John Evelyn",
-        "title": "The Diary of John Evelyn — Volume 1",
-        "genre": "diaries",
-    },
-    "evelyn-volume-2": {
-        "author": "John Evelyn",
-        "title": "The Diary of John Evelyn — Volume 2",
-        "genre": "diaries",
-    },
-    "johnson": {
-        "author": "James Boswell",
-        "title": "The Journal of a Tour to the Hebrides with Samuel Johnson",
-        "genre": "diaries",
-    },
-}
 
 # ---------------------------------------------------------------------------
 # Startup
@@ -199,19 +179,7 @@ def _bootstrap_registry():
             if not sqlite.exists():
                 print(f"[bootstrap] skipping {diary_dir.name} — no .diarykg/graph.sqlite")
                 continue
-            # Slug: "The Diary of Samuel Pepys — Complete" → "pepys-complete"
-            slug = (
-                diary_dir.name.lower()
-                .replace("the diary of ", "")
-                .replace("the journal of a tour to the hebrides with ", "")
-                .replace("samuel pepys", "pepys")
-                .replace("john evelyn", "evelyn")
-                .replace("samuel johnson", "johnson")
-                .replace("—", "")
-                .replace("  ", " ")
-                .strip()
-                .replace(" ", "-")
-            )
+            slug = _diary_slug(diary_dir.name)
             entry = KGEntry(
                 id=str(uuid.uuid4()),
                 name=slug,

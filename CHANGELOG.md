@@ -10,7 +10,30 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added
 
+- **`src/gutenberg_kg/diary_meta.py`** — shared module for diary slug derivation
+  (`diary_slug()`) and static author/title/genre metadata (`DIARY_META`). Both
+  handler workers now import from this single source of truth; adding a new diary
+  requires editing one file only.
+- **`docs/RUNPOD.md`** — comprehensive RunPod serverless deployment guide covering
+  the two-image architecture, network volume setup, `push_indices.sh` workflow,
+  endpoint configuration, request reference, and corpus update procedure.
+
 ### Changed
+
+- **README restructured** — Docker local app (`make build-corpus → make build →
+  make up → localhost:8501`) promoted to the primary quick-start path; CLI demoted
+  to developer/power-user section; RunPod section removed (see `docs/RUNPOD.md`).
+- **`runpod/handler.py` rewritten** to use the same direct LanceDB cosine-search
+  path as `docker/handler.py` (no KGRAG orchestrator), adding DiaryKG support and
+  eliminating the startup hang on large corpora.
+- **`runpod/push_indices.sh`** — fixed source path from repo-root `.dockg/` (the
+  project documentation KG) to `bundles/gutenberg-all/` (the literary corpus
+  bundle); destination corrected to `/workspace/gutenberg_kg/` to match handler
+  expectations.
+- **`runpod/test_local.py`** — symlink target fixed from repo root to
+  `bundles/gutenberg-all/`; added clear error if bundle does not exist.
+- **`runpod/requirements.txt`** — pinned to `doc-kg>=0.15.8`, `diary-kg>=0.93.2`,
+  `kgmodule-utils>=0.4.3` to match the docker stack.
 
 ### Removed
 

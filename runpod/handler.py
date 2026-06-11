@@ -1,37 +1,48 @@
 """
 RunPod serverless handler — GutenbergKG query service.
 
-Serves semantic search over the Project Gutenberg literary corpus
-mounted from a RunPod Network Volume.
+Serves semantic search over the Project Gutenberg literary corpus mounted
+from a RunPod Network Volume.  Uses the same direct LanceDB cosine-search
+path as docker/handler.py — no KGRAG orchestrator hop-expansion, which
+avoids the flat-plateau scoring bug and hangs on large corpora.
+
+Volume layout (populated by runpod/push_indices.sh)
+-----------------------------------------------------
+  /workspace/   (KG_VOLUME)
+  └── gutenberg_kg/
+      ├── .dockg/
+      │   ├── graph.sqlite
+      │   ├── lancedb/
+      │   └── catalog.json
+      └── diaries/
+          └── <diary-name>/.diarykg/
 
 Environment variables
 ---------------------
-KG_VOLUME        Path where the network volume is mounted. Default: /workspace
-EMBED_MODEL      Sentence-transformer model ID. Default: BAAI/bge-small-en-v1.5
-HANDLER_SECRET   Optional shared secret for requests.
-VLLM_ENDPOINT_URL Optional: OpenAI-compatible endpoint base URL for synthesis.
-VLLM_API_KEY     Optional bearer token for synthesis endpoint.
-RUNPOD_API_KEY   Optional fallback token for synthesis endpoint.
-VLLM_MODEL       Default model ID used for synthesis.
-SYNTH_MAX_K      Max passages sent to synthesis (default: 12).
+KG_VOLUME          Path where the Network Volume is mounted.  Default: /workspace
+EMBED_MODEL        Sentence-transformer model ID.  Default: BAAI/bge-small-en-v1.5
+HANDLER_SECRET     Optional shared secret.  Requests must include {"secret": "<value>"}.
+VLLM_ENDPOINT_URL  Optional OpenAI-compatible endpoint for synthesis.
+VLLM_API_KEY       Bearer token for the synthesis endpoint.
+RUNPOD_API_KEY     Fallback token if VLLM_API_KEY is unset.
+VLLM_MODEL         Default synthesis model.  Default: Qwen/Qwen3-8B-Instruct
+SYNTH_MAX_K        Max passages fed to synthesis.  Default: 12
 
 Request schema
 --------------
 {
-    "op":             str   — optional operation. "models" lists synthesis models.
   "query":          str   — natural-language query (required)
-    "secret":         str   — required when HANDLER_SECRET is configured
-    "corpus":         str   — "all" | "gutenberg" | <genre> (default: "all")
-  "k":              int   — top-k hits to return (default: 8)
-  "min_score":      float — drop hits below this score (default: 0.0)
-  "semantic_floor": float — discard the KG entirely if its best hit is below
-                           this value (default: 0.0)
-  "synthesize":     bool  — call vLLM endpoint for a generated answer
-                           (default: false)
-    "model":          str   — optional synthesis model override
+  "secret":         str   — required when HANDLER_SECRET is set
+  "corpus":         str   — "all" | "gutenberg" | "diary" | <genre>  (default: "all")
+  "k":              int   — top-k hits  (default: 8)
+  "min_score":      float — drop hits below this score  (default: 0.0)
+  "semantic_floor": float — discard KG if best hit is below this  (default: 0.0)
+  "synthesize":     bool  — call vLLM endpoint for a generated answer  (default: false)
+  "model":          str   — override VLLM_MODEL for this request
+  "op":             str   — "models" returns available synthesis models
 }
 
-This worker intentionally excludes all image-generation operations.
+Note: image generation is not available in this worker (local FLUX only).
 """
 
 from __future__ import annotations
@@ -39,32 +50,37 @@ from __future__ import annotations
 import json
 import os
 import re
+import sqlite3
 import time
 import uuid
+from collections import defaultdict
 from datetime import UTC, datetime
 from pathlib import Path
 
-from kg_utils.retrieval import attach_content_by_sqlite, hit_to_dict
+from kg_utils.retrieval import attach_content_by_sqlite
 
 import runpod
+from gutenberg_kg.diary_meta import DIARY_META as _DIARY_META
+from gutenberg_kg.diary_meta import diary_slug as _diary_slug
 
 # ---------------------------------------------------------------------------
 # Config
 # ---------------------------------------------------------------------------
 
 VOLUME = Path(os.environ.get("KG_VOLUME", "/workspace"))
+GUTENBERG_ROOT = VOLUME / "gutenberg_kg"
 REGISTRY_PATH = Path("/tmp/gutenkg_worker/registry.sqlite")
+EMBED_MODEL = os.environ.get("EMBED_MODEL", "BAAI/bge-small-en-v1.5")
+HANDLER_SECRET = os.environ.get("HANDLER_SECRET", "")
 VLLM_ENDPOINT = os.environ.get("VLLM_ENDPOINT_URL", "")
 VLLM_API_KEY = os.environ.get("VLLM_API_KEY", "") or os.environ.get("RUNPOD_API_KEY", "")
 VLLM_MODEL = os.environ.get("VLLM_MODEL", "Qwen/Qwen3-8B-Instruct")
-EMBED_MODEL = os.environ.get("EMBED_MODEL", "BAAI/bge-small-en-v1.5")
 SYNTH_MAX_K = int(os.environ.get("SYNTH_MAX_K", "12"))
-HANDLER_SECRET = os.environ.get("HANDLER_SECRET", "")
 
-_DOCKG_SQLITE = VOLUME / "gutenberg_kg" / ".dockg" / "graph.sqlite"
-_CATALOG_PATH = VOLUME / "gutenberg_kg" / ".dockg" / "catalog.json"
-_KG_SQLITE: dict[str, Path] = {}
-_CATALOG: dict[str, dict] = {}
+_DOCKG_SQLITE = GUTENBERG_ROOT / ".dockg" / "graph.sqlite"
+_DOCKG_LANCEDB = GUTENBERG_ROOT / ".dockg" / "lancedb"
+_CATALOG_PATH = GUTENBERG_ROOT / ".dockg" / "catalog.json"
+_DIARIES_ROOT = GUTENBERG_ROOT / "diaries"
 
 _ALL_GENRES = {
     "american-literature",
@@ -87,53 +103,123 @@ _ALL_GENRES = {
     "world-literature",
 }
 
-_CORPUS_MAP: dict[str, tuple[str, Path, Path, Path]] = {
-    "gutenberg": (
-        "gutenberg",
-        VOLUME / "gutenberg_kg",
-        VOLUME / "gutenberg_kg" / ".dockg" / "graph.sqlite",
-        VOLUME / "gutenberg_kg" / ".dockg" / "lancedb",
-    ),
-}
+_KG_SQLITE: dict[str, Path] = {}
+_DOCKG_TABLE = None
+_DIARY_TABLES: dict = {}
+_catalog: dict[str, dict] = {}
 
 
 # ---------------------------------------------------------------------------
-# Startup: bootstrap registry, load embedder, initialise orchestrator
+# Startup
 # ---------------------------------------------------------------------------
+
+
+def _source_file_for(diary_dir: Path) -> str:
+    config = diary_dir / ".diarykg" / "config.json"
+    if config.exists():
+        return json.loads(config.read_text()).get("source_file", "")
+    return ""
 
 
 def _bootstrap_registry():
-    from kg_rag.primitives import KGEntry, KGKind
+    from kg_rag.corpus_registry import CorpusRegistry
+    from kg_rag.primitives import CorpusEntry, KGEntry, KGKind
     from kg_rag.registry import KGRegistry
 
     REGISTRY_PATH.parent.mkdir(parents=True, exist_ok=True)
     reg = KGRegistry(db_path=REGISTRY_PATH)
+    corp_reg = CorpusRegistry(db_path=REGISTRY_PATH)
 
-    for name, (kind_str, repo_path, sqlite_path, lancedb_path) in _CORPUS_MAP.items():
-        repo_path = Path(repo_path)
-        sqlite_path = Path(sqlite_path)
-        lancedb_path = Path(lancedb_path)
-        if not sqlite_path.exists():
-            print(f"[bootstrap] {name}: index not found at {sqlite_path}, skipping")
-            continue
+    # --- DocKG (consolidated prose + verse) ---
+    if not _DOCKG_SQLITE.exists():
+        print(f"[bootstrap] WARNING: DocKG not found at {_DOCKG_SQLITE}")
+        print("[bootstrap]   Run 'make build-corpus' then push_indices.sh.")
+    else:
         entry = KGEntry(
             id=str(uuid.uuid4()),
-            name=name,
-            kind=KGKind.from_str(kind_str),
-            repo_path=repo_path,
+            name="gutenberg",
+            kind=KGKind.GUTENBERG,
+            repo_path=GUTENBERG_ROOT,
             venv_path=Path("/usr"),
-            sqlite_path=sqlite_path,
-            lancedb_path=lancedb_path,
+            sqlite_path=_DOCKG_SQLITE,
+            lancedb_path=_DOCKG_LANCEDB,
             created_at=datetime.now(UTC),
             updated_at=datetime.now(UTC),
         )
         reg.register(entry)
-        _KG_SQLITE[name] = sqlite_path
-        print(f"[bootstrap] registered {name} ({kind_str}) from {sqlite_path}")
+        _KG_SQLITE["gutenberg"] = _DOCKG_SQLITE
+        print(f"[bootstrap] registered gutenberg dockg ({_DOCKG_SQLITE})")
 
-    registered = [e.name for e in reg.list()]
-    print(f"[bootstrap] active corpora: {registered}")
+    # --- DiaryKG indices ---
+    corp_reg.create(CorpusEntry(name="diaries", description="Project Gutenberg — diary corpora"))
+    n_diaries = 0
+    if _DIARIES_ROOT.exists():
+        for diary_dir in sorted(_DIARIES_ROOT.iterdir()):
+            if not diary_dir.is_dir() or diary_dir.name.startswith("."):
+                continue
+            diarykg_dir = diary_dir / ".diarykg"
+            sqlite = diarykg_dir / "graph.sqlite"
+            lancedb = diarykg_dir / "lancedb"
+            if not sqlite.exists():
+                print(f"[bootstrap] skipping {diary_dir.name} — no .diarykg/graph.sqlite")
+                continue
+            slug = _diary_slug(diary_dir.name)
+            entry = KGEntry(
+                id=str(uuid.uuid4()),
+                name=slug,
+                kind=KGKind.DIARY,
+                repo_path=diary_dir,
+                venv_path=Path("/usr"),
+                sqlite_path=sqlite,
+                lancedb_path=lancedb,
+                metadata={"source_file": _source_file_for(diary_dir)},
+                created_at=datetime.now(UTC),
+                updated_at=datetime.now(UTC),
+            )
+            reg.register(entry)
+            corp_reg.add_kg("diaries", entry.id)
+            _KG_SQLITE[slug] = sqlite
+            if lancedb.exists():
+                import lancedb as _ldb
+
+                try:
+                    _DIARY_TABLES[slug] = _ldb.connect(str(lancedb)).open_table("dockg_nodes")
+                except Exception as exc:  # noqa: BLE001
+                    print(f"[bootstrap] WARNING: could not open diary table {slug}: {exc}")
+            n_diaries += 1
+            print(f"[bootstrap] registered diary: {slug}")
+    else:
+        print("[bootstrap] no diaries/ directory found")
+    print(f"[bootstrap] diaries corpus: {n_diaries} KG(s)")
+
     return reg
+
+
+def _open_dockg_table() -> None:
+    """Open the consolidated DocKG LanceDB table for semantic-first search."""
+    global _DOCKG_TABLE
+    if not _DOCKG_LANCEDB.exists():
+        print(f"[startup] WARNING: DocKG lancedb not found at {_DOCKG_LANCEDB}")
+        return
+    import lancedb
+
+    db = lancedb.connect(str(_DOCKG_LANCEDB))
+    names = list(db.table_names())
+    table = "dockg_nodes" if "dockg_nodes" in names else (names[0] if names else None)
+    if table is None:
+        print(f"[startup] WARNING: no lancedb table found in {_DOCKG_LANCEDB}")
+        return
+    _DOCKG_TABLE = db.open_table(table)
+    print(f"[startup] opened DocKG vector table: {table} ({_DOCKG_TABLE.count_rows()} rows)")
+
+
+def _load_catalog() -> None:
+    if _CATALOG_PATH.exists():
+        with open(_CATALOG_PATH, encoding="utf-8") as f:
+            _catalog.update(json.load(f))
+        print(f"[startup] loaded catalog: {len(_catalog)} books")
+    else:
+        print(f"[startup] WARNING: catalog.json not found at {_CATALOG_PATH}")
 
 
 def _make_embedder():
@@ -146,17 +232,6 @@ def _make_embedder():
     return emb
 
 
-def _load_catalog() -> None:
-    if not _CATALOG_PATH.exists():
-        print(f"[startup] catalog not found at {_CATALOG_PATH}; metadata enrichment disabled")
-        return
-    with open(_CATALOG_PATH, encoding="utf-8") as f:
-        data = json.load(f)
-    if isinstance(data, dict):
-        _CATALOG.update(data)
-    print(f"[startup] loaded catalog: {len(_CATALOG)} entries")
-
-
 print("[startup] bootstrapping registry ...")
 _registry = _bootstrap_registry()
 
@@ -166,36 +241,143 @@ _load_catalog()
 print("[startup] loading embedder ...")
 _embedder = _make_embedder()
 
-print("[startup] initialising KGRAG orchestrator ...")
-from kg_rag.orchestrator import KGRAG  # noqa: E402
+print("[startup] opening DocKG vector table ...")
+_open_dockg_table()
 
-_kgrag = KGRAG(registry_path=REGISTRY_PATH, embedder=_embedder)
 print("[startup] ready")
 
 
 # ---------------------------------------------------------------------------
-# Helpers
+# Retrieval
 # ---------------------------------------------------------------------------
-
-
-def _hit_to_dict(hit) -> dict:
-    return hit_to_dict(hit)
 
 
 def _attach_content(hits: list[dict]) -> None:
     attach_content_by_sqlite(hits, _KG_SQLITE)
 
 
+def _table_search(table, qvec, where: str, k: int) -> list[dict]:
+    return table.search(qvec).metric("cosine").where(where, prefilter=True).limit(k).to_list()
+
+
+def _rows_to_hits(rows: list[dict], kg_name: str, kg_kind: str, min_score: float) -> list[dict]:
+    hits: list[dict] = []
+    for row in rows:
+        score = round(1.0 - float(row.get("_distance", 1.0)), 4)
+        if score < min_score:
+            continue
+        hits.append(
+            {
+                "kg_name": kg_name,
+                "kg_kind": kg_kind,
+                "node_id": row.get("id"),
+                "name": row.get("name") or row.get("title") or "",
+                "kind": row.get("kind", "chunk"),
+                "score": score,
+                "summary": "",
+                "source_path": row.get("file_path") or "",
+                "content": "",
+                "timestamp": None,
+            }
+        )
+    return hits
+
+
+def _attach_diary_fields(hits: list[dict]) -> None:
+    by_kg: dict[str, list[dict]] = defaultdict(list)
+    for h in hits:
+        by_kg[h.get("kg_name", "")].append(h)
+    for slug, kg_hits in by_kg.items():
+        db_path = _KG_SQLITE.get(slug)
+        if not db_path or not Path(db_path).exists():
+            continue
+        ids = [h["node_id"] for h in kg_hits if h.get("node_id")]
+        if not ids:
+            continue
+        field_by_id: dict[str, tuple[str, str | None]] = {}
+        try:
+            with sqlite3.connect(str(db_path)) as con:
+                placeholders = ",".join("?" * len(ids))
+                rows = con.execute(
+                    f"SELECT id, text, timestamp FROM nodes WHERE id IN ({placeholders})", ids
+                )
+                for nid, text, ts in rows:
+                    field_by_id[nid] = (text or "", ts)
+        except Exception:  # noqa: BLE001
+            pass
+        for h in kg_hits:
+            text, ts = field_by_id.get(h.get("node_id"), ("", None))
+            h["content"] = text
+            h["summary"] = text
+            h["timestamp"] = ts
+
+
+def _semantic_search(
+    query: str,
+    k: int,
+    min_score: float = 0.0,
+    semantic_floor: float = 0.0,
+    genre_filter: str | None = None,
+) -> list[dict]:
+    if _DOCKG_TABLE is None:
+        return []
+    qvec = _embedder.embed_texts([query])[0]
+    where = "kind IN ('chunk', 'section') AND file_path NOT LIKE '%reference.md'"
+    if genre_filter:
+        where += f" AND file_path LIKE '{genre_filter}/%'"
+    rows = _table_search(_DOCKG_TABLE, qvec, where, k)
+    hits = _rows_to_hits(rows, "gutenberg", "KGKind.GUTENBERG", min_score)
+    _attach_content(hits)
+    for h in hits:
+        h["summary"] = h.get("content", "")
+    if semantic_floor > 0.0 and hits and hits[0]["score"] < semantic_floor:
+        return []
+    return hits
+
+
+def _semantic_search_diaries(
+    query: str,
+    k: int,
+    min_score: float = 0.0,
+    semantic_floor: float = 0.0,
+) -> list[dict]:
+    if not _DIARY_TABLES:
+        return []
+    qvec = _embedder.embed_texts([query])[0]
+    where = "kind IN ('chunk', 'section')"
+    hits: list[dict] = []
+    for slug, table in _DIARY_TABLES.items():
+        rows = _table_search(table, qvec, where, k)
+        hits.extend(_rows_to_hits(rows, slug, "KGKind.DIARY", min_score))
+    hits.sort(key=lambda h: h["score"], reverse=True)
+    hits = hits[:k]
+    _attach_diary_fields(hits)
+    if semantic_floor > 0.0 and hits and hits[0]["score"] < semantic_floor:
+        return []
+    return hits
+
+
 def _enrich_catalog(hits: list[dict]) -> None:
     for h in hits:
-        src = h.get("source_path", "")
-        parts = src.split("/")
-        if len(parts) >= 2:
-            key = f"{parts[0]}/{parts[1]}"
-            meta = _CATALOG.get(key, {})
-            h["genre"] = meta.get("genre") or parts[0]
-            h["title"] = meta.get("title") or parts[1]
-            h["author"] = meta.get("author")
+        if h.get("kg_kind") in ("KGKind.GUTENBERG", "gutenberg"):
+            src = h.get("source_path", "")
+            parts = src.split("/")
+            if len(parts) >= 2:
+                key = f"{parts[0]}/{parts[1]}"
+                meta = _catalog.get(key, {})
+                h["genre"] = meta.get("genre") or parts[0]
+                h["title"] = meta.get("title") or parts[1]
+                h["author"] = meta.get("author")
+        diary = _DIARY_META.get(h.get("kg_name", ""))
+        if diary and not h.get("author"):
+            h["genre"] = diary["genre"]
+            h["title"] = diary["title"]
+            h["author"] = diary["author"]
+
+
+# ---------------------------------------------------------------------------
+# Synthesis (text only — no image generation on RunPod)
+# ---------------------------------------------------------------------------
 
 
 def _list_models() -> list[str]:
@@ -295,58 +477,58 @@ def handler(job: dict) -> dict:
     if not query:
         return {"error": "query is required"}
 
-    from kg_rag.primitives import KGKind
-
-    kind_filter = None
     genre_filter: str | None = None
-
-    if corpus == "gutenberg":
-        kind_filter = [KGKind.GUTENBERG]
-    elif corpus in _ALL_GENRES:
-        kind_filter = [KGKind.GUTENBERG]
+    if corpus in _ALL_GENRES:
         genre_filter = corpus
-    elif corpus != "all":
+    elif corpus not in ("all", "diary", "gutenberg"):
         return {
             "error": (
-                f"unknown corpus {corpus!r}; choose: all, gutenberg, "
+                f"unknown corpus {corpus!r}; choose: all, gutenberg, diary, "
                 f"or a genre name ({', '.join(sorted(_ALL_GENRES))})"
             )
         }
 
     t0_search = time.perf_counter()
-    query_k = k * 6 if genre_filter else k
-    result = _kgrag.query(
-        query,
-        k=query_k,
-        kinds=kind_filter,
-        min_score=min_score,
-        semantic_floor=semantic_floor,
-    )
 
-    hits = [_hit_to_dict(h) for h in result.hits]
-    hits = [h for h in hits if h.get("kind") in ("chunk", "section")]
-    _attach_content(hits)
-    _enrich_catalog(hits)
-
-    if genre_filter:
-        hits = [h for h in hits if h.get("genre") == genre_filter][:k]
+    if corpus == "diary":
+        hits = _semantic_search_diaries(
+            query, k=k, min_score=min_score, semantic_floor=semantic_floor
+        )
+        _enrich_catalog(hits)
+        kgs_queried = len(_DIARY_TABLES)
     else:
-        hits = hits[:k]
+        hits = _semantic_search(
+            query,
+            k=k,
+            min_score=min_score,
+            semantic_floor=semantic_floor,
+            genre_filter=genre_filter,
+        )
+        _enrich_catalog(hits)
+        kgs_queried = 1
+        if corpus == "all":
+            dhits = _semantic_search_diaries(
+                query, k=k, min_score=min_score, semantic_floor=semantic_floor
+            )
+            _enrich_catalog(dhits)
+            hits = sorted(hits + dhits, key=lambda h: h.get("score", 0.0), reverse=True)[:k]
+            kgs_queried += len(_DIARY_TABLES)
 
-    search_ms = (time.perf_counter() - t0_search) * 1000.0
+    search_ms = (time.perf_counter() - t0_search) * 1000
+    print(f"[query] {len(hits)} hits in {search_ms:.0f}ms")
 
     synthesis = None
     synthesis_ms: float | None = None
     if synthesize:
         t0_synth = time.perf_counter()
         synthesis = _synthesize(query, hits, model)
-        synthesis_ms = (time.perf_counter() - t0_synth) * 1000.0
+        synthesis_ms = (time.perf_counter() - t0_synth) * 1000
 
     return {
         "query": query,
         "corpus": corpus,
         "total_hits": len(hits),
-        "kgs_queried": result.kgs_queried,
+        "kgs_queried": kgs_queried,
         "hits": hits,
         "search_ms": round(search_ms),
         "synthesis": synthesis,

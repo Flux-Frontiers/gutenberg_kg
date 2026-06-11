@@ -46,10 +46,16 @@ if "KG_VOLUME" not in os.environ:
     import tempfile
 
     gutenberg_repo = pathlib.Path(__file__).parent.parent
+    bundle = gutenberg_repo / "bundles" / "gutenberg-all"
+    if not bundle.exists():
+        raise SystemExit(
+            f"Corpus bundle not found at {bundle}\n"
+            "Run 'make build-corpus' first to generate bundles/gutenberg-all/."
+        )
     tmp = pathlib.Path(tempfile.mkdtemp(prefix="gutenkg_vol_"))
-    (tmp / "gutenberg_kg").symlink_to(gutenberg_repo)
+    (tmp / "gutenberg_kg").symlink_to(bundle)
     os.environ["KG_VOLUME"] = str(tmp)
-    print(f"[test] Using local volume symlink at {tmp}")
+    print(f"[test] Using corpus bundle at {bundle}")
 
 try:
     import handler  # noqa: E402  (triggers startup bootstrap)

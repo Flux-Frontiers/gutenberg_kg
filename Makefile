@@ -9,6 +9,7 @@
 #   make image-server   — start the local FLUX image generation server on :8090
 #   make chat           — start worker + Streamlit chat UI on http://localhost:8501
 #   make up             — start everything: worker + image server + chat UI
+#   make down           - stop everything: worker + image server + chat UI
 #   make docs           — generate project docs into ./docs
 #   make query Q="..."  — fire a one-shot query against the running worker
 
