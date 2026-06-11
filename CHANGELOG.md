@@ -10,6 +10,18 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added
 
+### Changed
+
+### Removed
+
+### Fixed
+
+---
+
+## [1.6.0] - 2026-06-10
+
+### Added
+
 - **`scripts/check_standard_queries.py`** — a validation harness that runs the
   eight standard chat queries (one per genre plus a diary) against a live worker
   and asserts each returns at least one hit, printing the top results and scores.
