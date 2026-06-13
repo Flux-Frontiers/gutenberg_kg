@@ -2,6 +2,7 @@
 # corpus-gutenberg — build and run targets
 #
 # Typical workflow:
+#   make chunk-diaries  — rebuild .diary/ chunks from committed .md (clean-clone step)
 #   make build-diaries  — build .diarykg/ indices (prerequisite for build-corpus)
 #   make build-corpus   — rebuild the DocKG + diary bundle (takes ~24 min)
 #   make build          — build the Docker image (bakes bundle into image)
@@ -18,9 +19,12 @@ COMPOSE      = docker compose -f docker/docker-compose.yml
 WORKER       = http://localhost:8000
 IMAGE_SERVER = http://localhost:8090
 
-.PHONY: build-diaries build-corpus build run image-server chat up stop down query logs clean docs
+.PHONY: chunk-diaries build-diaries build-corpus build run image-server chat up stop down query logs clean docs
 
-build-diaries:
+chunk-diaries:
+	gutenkg chunk-diaries
+
+build-diaries: chunk-diaries
 	gutenkg build-diaries --force
 
 build-corpus: build-diaries

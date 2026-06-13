@@ -274,6 +274,106 @@ def add_to_corpus(
     return True
 
 
+def register_diary_book(
+    kg_reg: KGRegistry,
+    name: str,
+    diary_dir: Path,
+    dry_run: bool = False,
+) -> KGEntry | None:
+    """Register a diary's ``.diarykg/`` index (DiaryKG, not standard ``.dockg/``).
+
+    :param kg_reg: Open KGRAG registry.
+    :param name: KG name, e.g. ``gutenberg-diaries-<slug>-doc``.
+    :param diary_dir: Diary book directory under ``corpus/diaries/``.
+    :param dry_run: Print the action without writing to the registry.
+    :return: The registered :class:`KGEntry`, or ``None`` on dry-run/failure.
+    """
+    from kg_rag.primitives import KGEntry, KGKind
+
+    sqlite = diary_dir / ".diarykg" / "graph.sqlite"
+    lancedb = diary_dir / ".diarykg" / "lancedb"
+    entry = KGEntry(
+        name=name,
+        kind=KGKind.GUTENBERG,
+        repo_path=diary_dir,
+        venv_path=diary_dir / ".venv",
+        sqlite_path=sqlite if sqlite.exists() else None,
+        lancedb_path=lancedb if lancedb.exists() else None,
+        tags=[date.today().isoformat()],
+    )
+    if dry_run:
+        print(f"    [dry] register diary {name!r} -> {diary_dir}")
+        return None
+    kg_reg.register(entry)
+    return entry
+
+
+def ingest_diaries(
+    registry_path: Path,
+    opts: IngestOptions,
+) -> int:
+    """Run the DiaryKG pipeline for the ``diaries`` genre and register the indices.
+
+    Diaries are *not* built through the standard DocKG path — they use a separate
+    pipeline: ``chunk-diaries`` (``.md`` → ``.diary/``) then ``build-diaries``
+    (``.diary/`` → ``.diarykg/``).  This routes them so a single ``gutenkg ingest``
+    / ``rebuild-indices`` rebuilds prose *and* diaries.  Runs before the Live
+    progress display to avoid nesting Rich renderers.
+
+    :param registry_path: Resolved KGRAG registry database path.
+    :param opts: Ingest option flags (``force_build`` re-chunks + rebuilds).
+    :return: 0 on success, 1 if chunking or building failed.
+    """
+    from kg_rag.corpus_registry import CorpusRegistry
+    from kg_rag.registry import KGRegistry
+
+    from gutenberg_kg.build_diaries import (
+        BuildDiariesOptions,
+        list_diary_dirs,
+        run_build_diaries,
+    )
+    from gutenberg_kg.diary.chunk import ChunkDiariesOptions, run_chunk_diaries
+
+    print("=== diaries (DiaryKG pipeline) ===")
+
+    rc_chunk = run_chunk_diaries(
+        [], ChunkDiariesOptions(force=opts.force_build, dry_run=opts.dry_run)
+    )
+    if rc_chunk != 0:
+        return rc_chunk
+    rc_build = run_build_diaries(
+        [], BuildDiariesOptions(force=opts.force_build, dry_run=opts.dry_run)
+    )
+    if rc_build != 0:
+        return rc_build
+
+    # --- Register each .diarykg with KGRAG + corpus membership ---
+    diary_corpus = "gutenberg-diaries"
+    with (
+        KGRegistry(db_path=registry_path) as kg_reg,
+        CorpusRegistry(db_path=registry_path) as corp_reg,
+    ):
+        ensure_corpus(
+            corp_reg, diary_corpus, description="Project Gutenberg — diaries", dry_run=opts.dry_run
+        )
+        ensure_corpus(corp_reg, TOP_CORPUS, dry_run=opts.dry_run)
+        for diary_dir in list_diary_dirs():
+            name = f"gutenberg-diaries-{slugify(diary_dir.name)}-doc"
+            existing = kg_reg.get(name)
+            if existing is not None and not opts.force_register:
+                print(f"  [{diary_dir.name}] already registered: {name}")
+                entry = existing
+            else:
+                verb = "re-registering" if existing else "registering"
+                print(f"  [{diary_dir.name}] {verb}: {name}")
+                entry = register_diary_book(kg_reg, name, diary_dir, dry_run=opts.dry_run)
+            if entry is not None:
+                add_to_corpus(corp_reg, diary_corpus, entry, dry_run=opts.dry_run)
+                add_to_corpus(corp_reg, TOP_CORPUS, entry, dry_run=opts.dry_run)
+    print()
+    return 0
+
+
 def git_commit_push_genre(genre_dir: Path, genre: str, dry_run: bool = False) -> None:
     """Stage genre_dir, commit, and push. Skips silently if nothing to commit."""
     if dry_run:
@@ -754,6 +854,15 @@ def run_ingest(
 
     registry_path = Path(registry).resolve() if registry else default_registry_path()
 
+    # Diaries use the DiaryKG pipeline, not the standard DocKG path. Handle them
+    # first (before the Live display) and drop them from the prose genre list.
+    diary_rc = 0
+    if "diaries" in genres:
+        diary_rc = ingest_diaries(registry_path, opts)
+        genres = [g for g in genres if g != "diaries"]
+        if not genres:
+            return diary_rc
+
     # Pre-count total books so the progress bar has an accurate total.
     def _book_dirs(genre: str) -> list[Path]:
         d = CORPUS_ROOT / genre
@@ -857,7 +966,7 @@ def run_ingest(
     )
     print(f"  Report saved: {report_path}\n")
 
-    return 1 if any(g.failed for g in genre_summaries) else 0
+    return 1 if (diary_rc != 0 or any(g.failed for g in genre_summaries)) else 0
 
 
 def run_reregister(
@@ -904,6 +1013,24 @@ def run_reregister(
             genre_corpus = f"gutenberg-{genre}"
             ensure_corpus(corp_reg, genre_corpus, dry_run=dry_run)
             ensure_corpus(corp_reg, TOP_CORPUS, dry_run=dry_run)
+
+            # Diaries register their .diarykg/ index, not a standard .dockg/.
+            if genre == "diaries":
+                print(f"=== {genre} ({len(book_dirs)} diaries) ===")
+                for diary_dir in book_dirs:
+                    if not (diary_dir / ".diarykg" / "graph.sqlite").exists():
+                        print(f"  [{diary_dir.name}] no .diarykg — skipping")
+                        skipped += 1
+                        continue
+                    name = f"gutenberg-diaries-{slugify(diary_dir.name)}-doc"
+                    total += 1
+                    print(f"  [{diary_dir.name}] re-registering diary")
+                    entry = register_diary_book(kg_reg, name, diary_dir, dry_run=dry_run)
+                    if entry:
+                        add_to_corpus(corp_reg, genre_corpus, entry, dry_run=dry_run)
+                        add_to_corpus(corp_reg, TOP_CORPUS, entry, dry_run=dry_run)
+                    updated += 1
+                continue
 
             print(f"=== {genre} ({len(book_dirs)} books) ===")
             for book_dir in book_dirs:

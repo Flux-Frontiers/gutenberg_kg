@@ -2,8 +2,8 @@
 
 ## Source
 
-- **Project Gutenberg ID**: 42081
-- **URL**: https://www.gutenberg.org/ebooks/42081
+- **Project Gutenberg ID**: 41218
+- **URL**: https://www.gutenberg.org/ebooks/41218
 - **Rights**: Public domain in the USA.
 
 ## Author
@@ -14,7 +14,7 @@
 - **Wikipedia**: https://en.wikipedia.org/wiki/John_Evelyn
 - **Gutenberg Agent ID**: 6100
 
-- **Gutenberg Published**: 2013-02-12
+- **Gutenberg Published**: 2012-10-29
 
 ## Language
 
@@ -31,7 +31,7 @@
 
 ## Summary
 
-"The Diary of John Evelyn (Volume 2 of 2)" by John Evelyn is a diary first published in 1818. This work chronicles the life of a seventeenth-century Royalist gentleman and scholar from 1640 to 1706. Unlike a strict daily record, Evelyn compiled many entries from notes with the benefit of hindsight, documenting his travels, observations of buildings and art, and experiences across decades of English history. His diary predated and helped inspire the later publication of Samuel Pepys's more famous diary. (This is an automatically generated summary.)
+"The Diary of John Evelyn (Volume 1 of 2)" by John Evelyn is a diary first published in 1818. This chronicle spans from 1640 to 1706, documenting the life of a Royalist gentleman and virtuoso through decades of English history. Beginning when Evelyn was a student at the Middle Temple, the entries blend contemporary observations with later reflections compiled from notes. His travels, encounters, and experiences offer a window into seventeenth-century life, creating a work that would later inspire attention to Samuel Pepys's more famous diary. (This is an automatically generated summary.)
 
 ## Notes
 

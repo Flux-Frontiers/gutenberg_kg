@@ -24,10 +24,13 @@ def rebuild_indices(genre, force_build):
     """Rebuild knowledge graph indices after cloning.
 
     Graph indices are not committed to git. Run this once after cloning to
-    reconstruct them from the committed Markdown source files.
+    reconstruct them from the committed Markdown source files. Prose genres are
+    built into per-book ``.dockg/`` indices; the ``diaries`` genre is routed to
+    the DiaryKG pipeline (``chunk-diaries`` then ``build-diaries`` → ``.diarykg/``)
+    automatically, so a single run reconstructs the whole corpus.
 
     :param genre: Tuple of genres to rebuild (empty = all genres).
-    :param force_build: Rebuild even if .dockg already exists.
+    :param force_build: Rebuild even if the index already exists.
     """
     genres = list(genre) if genre else ALL_GENRES
     opts = ig.IngestOptions(force_build=force_build)

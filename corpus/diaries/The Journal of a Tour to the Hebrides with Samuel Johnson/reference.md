@@ -2,19 +2,19 @@
 
 ## Source
 
-- **Project Gutenberg ID**: 4200
-- **URL**: https://www.gutenberg.org/ebooks/4200
+- **Project Gutenberg ID**: 6018
+- **URL**: https://www.gutenberg.org/ebooks/6018
 - **Rights**: Public domain in the USA.
 
 ## Author
 
-- **Name**: Samuel Pepys
-- **Born**: 1633
-- **Died**: 1703
-- **Wikipedia**: https://en.wikipedia.org/wiki/Samuel_Pepys
-- **Gutenberg Agent ID**: 1181
+- **Name**: James Boswell
+- **Born**: 1740
+- **Died**: 1795
+- **Wikipedia**: https://en.wikipedia.org/wiki/James_Boswell
+- **Gutenberg Agent ID**: 659
 
-- **Gutenberg Published**: 2004-10-31
+- **Gutenberg Published**: 2004-07-01
 
 ## Language
 
@@ -22,14 +22,17 @@
 
 ## Subjects
 
-- Pepys, Samuel, 1633-1703 -- Diaries
-- Cabinet officers -- Great Britain -- Diaries
-- Diarists -- Great Britain -- Diaries
-- Great Britain -- Social life and customs -- 17th century -- Sources
-- Great Britain -- History -- Charles II, 1660-1685 -- Sources
+- Scotland -- Description and travel -- Early works to 1800
+- Johnson, Samuel, 1709-1784 -- Travel -- Scotland -- Hebrides
+- Boswell, James, 1740-1795 -- Travel -- Scotland -- Hebrides
+- Hebrides (Scotland) -- Description and travel -- Early works to 1800
 - DA
 - Text
 
 ## Summary
 
-"The Diary of Samuel Pepys — Complete" by Samuel Pepys is a historical account written in the mid-17th century, specifically spanning the years from 1659 to 1669. This richly detailed diary offers a firsthand perspective on daily life during a transformative period in English history, including the Restoration of Charles II. Pepys documents his personal experiences, work as a naval administrator, and the socio-political events of his time, thus providing readers with an intimate look at both mundane and significant occurrences.  The opening of the diary introduces us to Samuel Pepys's life at the end of 1659, revealing his mundane daily existence as he reflects on his health and domestic situation. He resides in Axe Yard with his wife and a servant, and navigates the uncertainty of the political climate, including disruptions caused by military figures like Lord Lambert. Pepys notes his wife's unfulfilled hopes of pregnancy, along with his observations of political events and personal affairs, setting the stage for an engaging account that intertwines his private and public life. This opening establishes not just the backdrop against which Pepys lived but also the diary's promise of detailed socio-political commentary combined with personal musings. (This is an automatically generated summary.)
+"The Journal of a Tour to the Hebrides with Samuel Johnson, LL.D." by James Boswell is a travel journal published in 1785. The work chronicles Boswell and Samuel Johnson's 1773 journey through the Scottish Highlands and western islands. Based on Boswell's detailed diary entries, the journal captures their conversations and experiences as they traveled from Edinburgh through remote islands including Skye, Coll, and Mull. Known for its anecdotal style and keen attention to detail, the journal served as a preview of Boswell's later masterpiece, his biography of Johnson. (This is an automatically generated summary.)
+
+## Notes
+
+Wikipedia page about this book: https://en.wikipedia.org/wiki/The_Journal_of_a_Tour_to_the_Hebrides

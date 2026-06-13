@@ -104,7 +104,7 @@ poetry install --extras full
 make build-corpus      # builds DiaryKG indices, then bundles DocKG + diaries (~24 min)
 ```
 
-`make build-corpus` runs `make build-diaries` first (a prerequisite), then `gutenkg build-corpus`, producing `bundles/gutenberg-all/` (gitignored).
+`make build-corpus` runs `make build-diaries` first (a prerequisite), then `gutenkg build-corpus`, producing `bundles/gutenberg-all/` (gitignored). `make build-diaries` in turn depends on `make chunk-diaries`, which reconstructs each diary's git-ignored `.diary/` chunk corpus from the committed `<book>.md` — so a fresh clone needs no extra steps. (The chunker uses spaCy; if prompted, run `python -m spacy download en_core_web_sm` once.)
 
 ### 2. Build the image and bring up the stack
 
@@ -132,7 +132,8 @@ make logs        # follow worker logs
 
 | Target | Does |
 |---|---|
-| `make build-diaries` | rebuild `.diarykg/` indices (prerequisite for `build-corpus`) |
+| `make chunk-diaries` | rebuild `.diary/` chunks from committed `<book>.md` (clean-clone step) |
+| `make build-diaries` | rebuild `.diarykg/` indices (depends on `chunk-diaries`; prerequisite for `build-corpus`) |
 | `make build-corpus` | rebuild the DocKG + diary bundle (~24 min) |
 | `make build` | build the Docker image (bakes the bundle in) |
 | `make run` | start the worker on `:8000` |

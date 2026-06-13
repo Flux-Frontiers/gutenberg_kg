@@ -2,19 +2,19 @@
 
 ## Source
 
-- **Project Gutenberg ID**: 41218
-- **URL**: https://www.gutenberg.org/ebooks/41218
+- **Project Gutenberg ID**: 4200
+- **URL**: https://www.gutenberg.org/ebooks/4200
 - **Rights**: Public domain in the USA.
 
 ## Author
 
-- **Name**: John Evelyn
-- **Born**: 1620
-- **Died**: 1706
-- **Wikipedia**: https://en.wikipedia.org/wiki/John_Evelyn
-- **Gutenberg Agent ID**: 6100
+- **Name**: Samuel Pepys
+- **Born**: 1633
+- **Died**: 1703
+- **Wikipedia**: https://en.wikipedia.org/wiki/Samuel_Pepys
+- **Gutenberg Agent ID**: 1181
 
-- **Gutenberg Published**: 2012-10-29
+- **Gutenberg Published**: 2004-10-31
 
 ## Language
 
@@ -22,17 +22,14 @@
 
 ## Subjects
 
-- Great Britain -- History -- Stuarts, 1603-1714
-- Great Britain -- Court and courtiers -- Early works to 1800
-- Evelyn, John, 1620-1706 -- Diaries
-- Great Britain -- Social life and customs -- Early works to 1800
+- Pepys, Samuel, 1633-1703 -- Diaries
+- Cabinet officers -- Great Britain -- Diaries
+- Diarists -- Great Britain -- Diaries
+- Great Britain -- Social life and customs -- 17th century -- Sources
+- Great Britain -- History -- Charles II, 1660-1685 -- Sources
 - DA
 - Text
 
 ## Summary
 
-"The Diary of John Evelyn (Volume 1 of 2)" by John Evelyn is a diary first published in 1818. This chronicle spans from 1640 to 1706, documenting the life of a Royalist gentleman and virtuoso through decades of English history. Beginning when Evelyn was a student at the Middle Temple, the entries blend contemporary observations with later reflections compiled from notes. His travels, encounters, and experiences offer a window into seventeenth-century life, creating a work that would later inspire attention to Samuel Pepys's more famous diary. (This is an automatically generated summary.)
-
-## Notes
-
-Wikipedia page about this book: https://en.wikipedia.org/wiki/John_Evelyn%27s_Diary
+"The Diary of Samuel Pepys — Complete" by Samuel Pepys is a historical account written in the mid-17th century, specifically spanning the years from 1659 to 1669. This richly detailed diary offers a firsthand perspective on daily life during a transformative period in English history, including the Restoration of Charles II. Pepys documents his personal experiences, work as a naval administrator, and the socio-political events of his time, thus providing readers with an intimate look at both mundane and significant occurrences.  The opening of the diary introduces us to Samuel Pepys's life at the end of 1659, revealing his mundane daily existence as he reflects on his health and domestic situation. He resides in Axe Yard with his wife and a servant, and navigates the uncertainty of the political climate, including disruptions caused by military figures like Lord Lambert. Pepys notes his wife's unfulfilled hopes of pregnancy, along with his observations of political events and personal affairs, setting the stage for an engaging account that intertwines his private and public life. This opening establishes not just the backdrop against which Pepys lived but also the diary's promise of detailed socio-political commentary combined with personal musings. (This is an automatically generated summary.)
