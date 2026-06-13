@@ -14,9 +14,11 @@ def cli():
 
 # Import subcommands to register them
 from gutenberg_kg.cli import (  # noqa: E402, F401
+    cmd_audit,
     cmd_authors,
     cmd_build_corpus,
     cmd_build_diaries,
+    cmd_chunk_diaries,
     cmd_download,
     cmd_genres,
     cmd_ia,

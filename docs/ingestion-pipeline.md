@@ -122,7 +122,7 @@ Each diary goes through the full four-step DiaryKG pipeline:
 
 | Step | What runs |
 |---|---|
-| 1 | `DiaryTransformer.ingest_to_corpus()` — pre-built offline; `.diary/` already exists |
+| 0 | `gutenkg chunk-diaries` — `GutenbergDiaryParser` parses `<book>.md` → `.diary_source.psv`, then `DiaryTransformer.ingest_to_corpus()` chunks it into `.diary/`. Reproducible from the committed `.md`; `make build-diaries` runs this first. |
 | 2 | `DocKG.build()` via `DiaryKG.rebuild_index()` — sentence_group, no SIMILAR_TO |
 | 3 | `DiaryKG._inject_topic_edges()` — writes `HAS_TOPIC` edges from frontmatter classifier scores |
 | 4 | `DiaryKG._enrich_metadata()` — adds `timestamp`, `category`, `context`, `diary_source_file` columns |
@@ -208,11 +208,17 @@ the `file_path` prefix — no extra node fields required.
 Full sequence from clean checkout to running container:
 
 ```
-make build-diaries   # DiaryKG pipeline (Steps 2+3+4) for each diary under corpus/diaries/
+make chunk-diaries   # .md -> .diary_source.psv -> .diary/ chunks (Gutenberg parser; clean-clone step)
+make build-diaries   # DiaryKG pipeline (Steps 2+3+4) for each diary; depends on chunk-diaries
 make build-corpus    # DocKG prose index + copy diary indices -> bundles/gutenberg-all/
 make build           # docker build — COPYs bundles/gutenberg-all/ into image
 make run             # docker compose up — worker on http://localhost:8000
 ```
+
+`.diary/` and `.diary_source.psv` are git-ignored — `make chunk-diaries` rebuilds them from
+each book's committed `.md`. The `.md → PSV` step is gutenberg_kg's own
+`GutenbergDiaryParser` (`src/gutenberg_kg/diary/parser.py`), with the per-book date format
+selected by a committed `.diary_format` file (`pepys` | `evelyn` | `boswell`).
 
 `make build-corpus` depends on `make build-diaries` in the Makefile, so running
 `make build-corpus` alone is sufficient for steps 1-2.  **Never run `make build`

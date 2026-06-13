@@ -6,7 +6,8 @@ Each diary lives under corpus/diaries/<name>/ with pre-chunked entries in
 bundle_diaries() in build_corpus.py - it copies the indices but does not build
 them.
 
-Chunk strategy and flags match docs/DIARY_INGEST_HANDOFF.md:
+The .diary/ chunk corpus is produced by 'gutenkg chunk-diaries' (see
+gutenberg_kg.diary.chunk).  Chunk strategy and flags match docs/ingestion-pipeline.md:
 - chunk_strategy = sentence_group  (preserves temporal entry structure)
 - discover_similar = False         (chronologically dense entries produce noise)
 - model = BAAI/bge-small-en-v1.5   (must match EMBED_MODEL in the Docker image)

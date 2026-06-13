@@ -46,13 +46,13 @@ def build_diaries(diary_names, force, workers, dry_run, quiet):
     """Build .diarykg/ DocKG indices for diary corpora under corpus/diaries/.
 
     Each diary must have a pre-built .diary/ directory of chunked entry files
-    (produced by the DiaryKG pipeline).  This command runs the DocKG build
-    over those chunks and writes the resulting graph.sqlite + lancedb index
-    into .diarykg/ — the prerequisite for 'build-corpus', which copies these
-    indices verbatim into the bundle.
+    (produced by 'gutenkg chunk-diaries' from the committed <book>.md).  This
+    command runs the DocKG build over those chunks and writes the resulting
+    graph.sqlite + lancedb index into .diarykg/ — the prerequisite for
+    'build-corpus', which copies these indices verbatim into the bundle.
 
     Uses sentence_group chunking and disables SIMILAR_TO edges, matching the
-    temporal structure of diary entries (see docs/DIARY_INGEST_HANDOFF.md).
+    temporal structure of diary entries (see docs/ingestion-pipeline.md).
 
     Build flags applied to all diaries:
 

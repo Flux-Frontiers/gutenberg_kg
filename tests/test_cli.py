@@ -104,3 +104,76 @@ def test_rebuild_indices_help():
     result = CliRunner().invoke(cli, ["rebuild-indices", "--help"])
     assert result.exit_code == 0
     assert "--genre" in result.output
+
+
+def test_chunk_diaries_help():
+    result = CliRunner().invoke(cli, ["chunk-diaries", "--help"])
+    assert result.exit_code == 0
+    assert "--diary" in result.output
+    assert "--force" in result.output
+
+
+def test_build_diaries_help():
+    result = CliRunner().invoke(cli, ["build-diaries", "--help"])
+    assert result.exit_code == 0
+    assert "--diary" in result.output
+    assert "--workers" in result.output
+
+
+def test_build_corpus_help():
+    result = CliRunner().invoke(cli, ["build-corpus", "--help"])
+    assert result.exit_code == 0
+    assert "--genre" in result.output
+    assert "--diaries-only" in result.output
+
+
+def test_audit_help():
+    result = CliRunner().invoke(cli, ["audit", "--help"])
+    assert result.exit_code == 0
+    assert "--genre" in result.output
+    assert "--json" in result.output
+
+
+def test_reregister_help():
+    result = CliRunner().invoke(cli, ["re-register", "--help"])
+    assert result.exit_code == 0
+    assert "--genre" in result.output
+
+
+def test_viz3d_help():
+    result = CliRunner().invoke(cli, ["viz3d", "--help"])
+    assert result.exit_code == 0
+
+
+def test_viz_timeline_help():
+    result = CliRunner().invoke(cli, ["viz-timeline", "--help"])
+    assert result.exit_code == 0
+
+
+def test_imagine_help():
+    result = CliRunner().invoke(cli, ["imagine", "--help"])
+    assert result.exit_code == 0
+
+
+@pytest.mark.parametrize(
+    "command",
+    [
+        "audit",
+        "authors",
+        "build-corpus",
+        "build-diaries",
+        "chunk-diaries",
+        "download",
+        "genres",
+        "ia",
+        "ingest",
+        "rebuild-indices",
+        "re-register",
+        "snapshot",
+        "status",
+    ],
+)
+def test_command_is_registered(command):
+    """Every expected subcommand resolves and shows help without error."""
+    result = CliRunner().invoke(cli, [command, "--help"])
+    assert result.exit_code == 0
