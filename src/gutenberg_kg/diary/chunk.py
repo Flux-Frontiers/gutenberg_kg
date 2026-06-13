@@ -176,6 +176,20 @@ def chunk_diary(diary_dir: Path, opts: ChunkDiariesOptions) -> ChunkResult:
             max_chunks_per_entry=0,  # unlimited — long entries (Pepys) keep all chunks
             source_file=md_file.name,
         )
+    except SystemExit as exc:
+        # diary_transformer calls sys.exit(1) when the spaCy model is missing.
+        return ChunkResult(
+            name=name,
+            status="failed",
+            fmt=fmt,
+            elapsed=time.perf_counter() - t0,
+            entries=n_entries,
+            message=(
+                "chunking failed: diary_transformer aborted "
+                f"(exit {exc.code}) — is the spaCy model installed? "
+                "run: python -m spacy download en_core_web_sm"
+            ),
+        )
     except Exception as exc:  # noqa: BLE001
         return ChunkResult(
             name=name,

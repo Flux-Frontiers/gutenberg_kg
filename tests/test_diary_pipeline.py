@@ -27,8 +27,36 @@ def _make_diary(tmp_path, fmt="pepys", text=PEPYS_MD):
     return book
 
 
-def test_chunk_diary_writes_psv_from_md(tmp_path):
-    """Stage ①: parsing the .md always produces the dated PSV (no heavy deps)."""
+def _install_fake_transformer(monkeypatch, behavior):
+    """Inject a fake diary_transformer.transformer.DiaryTransformer.
+
+    ``behavior`` is called in DiaryTransformer.__init__ to simulate the desired
+    outcome (e.g. raise SystemExit for a missing spaCy model).
+    """
+    import sys
+    import types
+
+    mod = types.ModuleType("diary_transformer.transformer")
+
+    class FakeDiaryTransformer:
+        def __init__(self, **_kwargs):
+            behavior()
+
+        def ingest_to_corpus(self, **_kwargs):  # pragma: no cover - never reached
+            return 0
+
+    mod.DiaryTransformer = FakeDiaryTransformer
+    monkeypatch.setitem(sys.modules, "diary_transformer", types.ModuleType("diary_transformer"))
+    monkeypatch.setitem(sys.modules, "diary_transformer.transformer", mod)
+
+
+def test_chunk_diary_writes_psv_before_stage_two(tmp_path, monkeypatch):
+    """Stage ①: the dated PSV is written even if stage ② can't run (no heavy deps)."""
+
+    def boom():
+        raise RuntimeError("transformer unavailable")
+
+    _install_fake_transformer(monkeypatch, boom)
     book = _make_diary(tmp_path)
     res = chunk_diary(book, ChunkDiariesOptions(force=True))
 
@@ -37,8 +65,22 @@ def test_chunk_diary_writes_psv_from_md(tmp_path):
     lines = psv.read_text(encoding="utf-8").splitlines()
     assert len(lines) == 2
     assert lines[0].startswith("1660-01-01T00:00:00 | diary | prose | ")
-    # entries is recorded even if stage ② can't run (transformer absent)
-    assert res.entries == 2
+    assert res.entries == 2  # recorded even though chunking failed
+
+
+def test_chunk_diary_handles_missing_spacy_model_gracefully(tmp_path, monkeypatch):
+    """diary_transformer's hard sys.exit(1) (missing spaCy model) is caught, not propagated."""
+
+    def sys_exit():
+        raise SystemExit(1)
+
+    _install_fake_transformer(monkeypatch, sys_exit)
+    book = _make_diary(tmp_path)
+    res = chunk_diary(book, ChunkDiariesOptions(force=True))  # must not raise SystemExit
+
+    assert res.status == "failed"
+    assert "spacy" in res.message.lower()
+    assert (book / ".diary_source.psv").exists()
 
 
 def test_chunk_diary_produces_chunks_when_deps_present(tmp_path):
