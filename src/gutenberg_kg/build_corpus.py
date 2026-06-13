@@ -222,6 +222,28 @@ def bundle_diaries(out_dir: Path) -> int:
     return n
 
 
+def ensure_diaries_built(dry_run: bool = False, quiet: bool = False) -> int:
+    """Reconstruct any unbuilt diary indices so :func:`bundle_diaries` finds them.
+
+    Runs the DiaryKG pipeline — ``chunk-diaries`` (``.md`` → ``.diary/``) then
+    ``build-diaries`` (``.diary/`` → ``.diarykg/``) — idempotently: diaries that
+    already have a ``.diary/`` and ``.diarykg/`` are skipped.  This makes
+    ``gutenkg build-corpus`` self-sufficient on a clean clone instead of relying
+    on the Makefile to sequence ``build-diaries`` first.
+
+    :param dry_run: Print the plan without executing.
+    :param quiet: Suppress per-stage DiaryKG build progress.
+    :return: 0 on success, 1 if chunking or building any diary failed.
+    """
+    from gutenberg_kg.build_diaries import BuildDiariesOptions, run_build_diaries
+    from gutenberg_kg.diary.chunk import ChunkDiariesOptions, run_chunk_diaries
+
+    rc = run_chunk_diaries([], ChunkDiariesOptions(force=False, dry_run=dry_run))
+    if rc != 0:
+        return rc
+    return run_build_diaries([], BuildDiariesOptions(force=False, dry_run=dry_run, quiet=quiet))
+
+
 def _dir_size_mb(path: Path) -> float:
     """Total size of *path* (recursively) in megabytes."""
     total = sum(f.stat().st_size for f in path.rglob("*") if f.is_file())
@@ -295,7 +317,10 @@ def run_build_corpus(genres: list[str], opts: BuildCorpusOptions) -> int:
     print()
 
     if opts.diaries_only:
-        print("[diaries-only] skipping phases 1-3; re-bundling diary indices …")
+        print("[diaries-only] skipping phases 1-3; building + bundling diary indices …")
+        if ensure_diaries_built(dry_run=opts.dry_run, quiet=opts.quiet) != 0:
+            print("[x] diary build failed")
+            return 1
         try:
             n_diaries = bundle_diaries(out_dir)
         except Exception as exc:  # noqa: BLE001
@@ -315,7 +340,7 @@ def run_build_corpus(genres: list[str], opts: BuildCorpusOptions) -> int:
             print(f"    exclude={sorted(sg_exclude)}")
         print(f"[dry-run] phase 2: embed all nodes → {sqlite_path}")
         print(f"[dry-run] phase 3: lancedb index + SIMILAR_TO → {lancedb_path}")
-        print("[dry-run] phase 4: bundle DiaryKG indices → bundles dir")
+        print("[dry-run] phase 4: build (if needed) + bundle DiaryKG indices → bundles dir")
         print(f"[dry-run] would write {out_dir / 'catalog.json'} (author/title per book)")
         return 0
 
@@ -384,9 +409,12 @@ def run_build_corpus(genres: list[str], opts: BuildCorpusOptions) -> int:
         cache_path.unlink(missing_ok=True)
 
         # ------------------------------------------------------------------
-        # Phase 4: bundle DiaryKG indices (copy, do not re-ingest).
+        # Phase 4: build (if needed) + bundle DiaryKG indices.
         # ------------------------------------------------------------------
-        print("[4/4] bundling DiaryKG indices …")
+        print("[4/4] building + bundling DiaryKG indices …")
+        if ensure_diaries_built(dry_run=opts.dry_run, quiet=opts.quiet) != 0:
+            print("[x] diary build failed")
+            return 1
         n_diaries = bundle_diaries(out_dir)
         if n_diaries:
             print(f"  copied {n_diaries} diary index(es) → bundles/{name}/diaries/")
