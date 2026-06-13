@@ -1,4396 +1,4564 @@
-# The Island of Doctor Moreau
+# The island of Doctor Moreau
 
-**Plato**
+**H. G. (Herbert George) Wells**
 
 ---
 
-### PHAEDO
+The Island of Doctor Moreau
 
-*By Plato*
-
-Translated by Benjamin Jowett
+by H. G. Wells
 
 INTRODUCTION.
 
-After an interval of some months or years, and at Phlius, a town of
-Peloponnesus, the tale of the last hours of Socrates is narrated to
-Echecrates and other Phliasians by Phaedo the 'beloved disciple.' The
-Dialogue necessarily takes the form of a narrative, because Socrates has
-to be described acting as well as speaking. The minutest particulars of
-the event are interesting to distant friends, and the narrator has an
-equal interest in them.
-
-During the voyage of the sacred ship to and from Delos, which has
-occupied thirty days, the execution of Socrates has been deferred.
-(Compare Xen. Mem.) The time has been passed by him in conversation with
-a select company of disciples. But now the holy season is over, and the
-disciples meet earlier than usual in order that they may converse with
-Socrates for the last time. Those who were present, and those who might
-have been expected to be present, are mentioned by name. There are
-Simmias and Cebes (Crito), two disciples of Philolaus whom Socrates
-'by his enchantments has attracted from Thebes' (Mem.), Crito the aged
-friend, the attendant of the prison, who is as good as a friend--these
-take part in the conversation. There are present also, Hermogenes,
-from whom Xenophon derived his information about the trial of Socrates
-(Mem.), the 'madman' Apollodorus (Symp.), Euclid and Terpsion from
-Megara (compare Theaet.), Ctesippus, Antisthenes, Menexenus, and some
-other less-known members of the Socratic circle, all of whom are silent
-auditors. Aristippus, Cleombrotus, and Plato are noted as absent. Almost
-as soon as the friends of Socrates enter the prison Xanthippe and her
-children are sent home in the care of one of Crito's servants.
-Socrates himself has just been released from chains, and is led by this
-circumstance to make the natural remark that 'pleasure follows pain.'
-(Observe that Plato is preparing the way for his doctrine of the
-alternation of opposites.) 'Aesop would have represented them in a fable
-as a two-headed creature of the gods.' The mention of Aesop reminds
-Cebes of a question which had been asked by Evenus the poet (compare
-Apol.): 'Why Socrates, who was not a poet, while in prison had been
-putting Aesop into verse?'--'Because several times in his life he had
-been warned in dreams that he should practise music; and as he was about
-to die and was not certain of what was meant, he wished to fulfil the
-admonition in the letter as well as in the spirit, by writing verses as
-well as by cultivating philosophy. Tell this to Evenus; and say that I
-would have him follow me in death.' 'He is not at all the sort of man
-to comply with your request, Socrates.' 'Why, is he not a philosopher?'
-'Yes.' 'Then he will be willing to die, although he will not take his
-own life, for that is held to be unlawful.'
-
-Cebes asks why suicide is thought not to be right, if death is to be
-accounted a good? Well, (1) according to one explanation, because man is
-a prisoner, who must not open the door of his prison and run away--this
-is the truth in a 'mystery.' Or (2) rather, because he is not his own
-property, but a possession of the gods, and has no right to make away
-with that which does not belong to him. But why, asks Cebes, if he is a
-possession of the gods, should he wish to die and leave them? For he is
-under their protection; and surely he cannot take better care of himself
-than they take of him. Simmias explains that Cebes is really referring
-to Socrates, whom they think too unmoved at the prospect of leaving the
-gods and his friends. Socrates answers that he is going to other gods
-who are wise and good, and perhaps to better friends; and he professes
-that he is ready to defend himself against the charge of Cebes.
-The company shall be his judges, and he hopes that he will be more
-successful in convincing them than he had been in convincing the court.
-
-The philosopher desires death--which the wicked world will insinuate
-that he also deserves: and perhaps he does, but not in any sense which
-they are capable of understanding. Enough of them: the real question
-is, What is the nature of that death which he desires? Death is
-the separation of soul and body--and the philosopher desires such
-a separation. He would like to be freed from the dominion of bodily
-pleasures and of the senses, which are always perturbing his mental
-vision. He wants to get rid of eyes and ears, and with the light of the
-mind only to behold the light of truth. All the evils and impurities
-and necessities of men come from the body. And death separates him from
-these corruptions, which in life he cannot wholly lay aside. Why then
-should he repine when the hour of separation arrives? Why, if he is dead
-while he lives, should he fear that other death, through which alone he
-can behold wisdom in her purity?
-
-Besides, the philosopher has notions of good and evil unlike those of
-other men. For they are courageous because they are afraid of greater
-dangers, and temperate because they desire greater pleasures. But he
-disdains this balancing of pleasures and pains, which is the exchange
-of commerce and not of virtue. All the virtues, including wisdom, are
-regarded by him only as purifications of the soul. And this was the
-meaning of the founders of the mysteries when they said, 'Many are the
-wand-bearers but few are the mystics.' (Compare Matt. xxii.: 'Many are
-called but few are chosen.') And in the hope that he is one of these
-mystics, Socrates is now departing. This is his answer to any one who
-charges him with indifference at the prospect of leaving the gods and
-his friends.
-
-Still, a fear is expressed that the soul upon leaving the body may
-vanish away like smoke or air. Socrates in answer appeals first of all
-to the old Orphic tradition that the souls of the dead are in the world
-below, and that the living come from them. This he attempts to found
-on a philosophical assumption that all opposites--e.g. less, greater;
-weaker, stronger; sleeping, waking; life, death--are generated out of
-each other. Nor can the process of generation be only a passage from
-living to dying, for then all would end in death. The perpetual sleeper
-(Endymion) would be no longer distinguished from the rest of mankind.
-The circle of nature is not complete unless the living come from the
-dead as well as pass to them.
-
-The Platonic doctrine of reminiscence is then adduced as a confirmation
-of the pre-existence of the soul. Some proofs of this doctrine are
-demanded. One proof given is the same as that of the Meno, and is
-derived from the latent knowledge of mathematics, which may be elicited
-from an unlearned person when a diagram is presented to him. Again,
-there is a power of association, which from seeing Simmias may remember
-Cebes, or from seeing a picture of Simmias may remember Simmias. The
-lyre may recall the player of the lyre, and equal pieces of wood or
-stone may be associated with the higher notion of absolute equality. But
-here observe that material equalities fall short of the conception of
-absolute equality with which they are compared, and which is the measure
-of them. And the measure or standard must be prior to that which is
-measured, the idea of equality prior to the visible equals. And if prior
-to them, then prior also to the perceptions of the senses which recall
-them, and therefore either given before birth or at birth. But all men
-have not this knowledge, nor have any without a process of reminiscence;
-which is a proof that it is not innate or given at birth, unless indeed
-it was given and taken away at the same instant. But if not given to
-men in birth, it must have been given before birth--this is the only
-alternative which remains. And if we had ideas in a former state, then
-our souls must have existed and must have had intelligence in a former
-state. The pre-existence of the soul stands or falls with the doctrine
-of ideas.
-
-It is objected by Simmias and Cebes that these arguments only prove a
-former and not a future existence. Socrates answers this objection by
-recalling the previous argument, in which he had shown that the living
-come from the dead. But the fear that the soul at departing may vanish
-into air (especially if there is a wind blowing at the time) has not yet
-been charmed away. He proceeds: When we fear that the soul will vanish
-away, let us ask ourselves what is that which we suppose to be liable
-to dissolution? Is it the simple or the compound, the unchanging or the
-changing, the invisible idea or the visible object of sense? Clearly the
-latter and not the former; and therefore not the soul, which in her own
-pure thought is unchangeable, and only when using the senses descends
-into the region of change. Again, the soul commands, the body serves:
-in this respect too the soul is akin to the divine, and the body to the
-mortal. And in every point of view the soul is the image of divinity and
-immortality, and the body of the human and mortal. And whereas the
-body is liable to speedy dissolution, the soul is almost if not quite
-indissoluble. (Compare Tim.) Yet even the body may be preserved for ages
-by the embalmer's art: how unlikely, then, that the soul will perish and
-be dissipated into air while on her way to the good and wise God!
-She has been gathered into herself, holding aloof from the body, and
-practising death all her life long, and she is now finally released from
-the errors and follies and passions of men, and for ever dwells in the
-company of the gods.
-
-But the soul which is polluted and engrossed by the corporeal, and has
-no eye except that of the senses, and is weighed down by the bodily
-appetites, cannot attain to this abstraction. In her fear of the world
-below she lingers about the sepulchre, loath to leave the body which
-she loved, a ghostly apparition, saturated with sense, and therefore
-visible. At length entering into some animal of a nature congenial to
-her former life of sensuality or violence, she takes the form of an ass,
-a wolf or a kite. And of these earthly souls the happiest are those who
-have practised virtue without philosophy; they are allowed to pass into
-gentle and social natures, such as bees and ants. (Compare Republic,
-Meno.) But only the philosopher who departs pure is permitted to enter
-the company of the gods. (Compare Phaedrus.) This is the reason why he
-abstains from fleshly lusts, and not because he fears loss or disgrace,
-which is the motive of other men. He too has been a captive, and the
-willing agent of his own captivity. But philosophy has spoken to him,
-and he has heard her voice; she has gently entreated him, and brought
-him out of the 'miry clay,' and purged away the mists of passion and
-the illusions of sense which envelope him; his soul has escaped from the
-influence of pleasures and pains, which are like nails fastening her to
-the body. To that prison-house she will not return; and therefore she
-abstains from bodily pleasures--not from a desire of having more or
-greater ones, but because she knows that only when calm and free from
-the dominion of the body can she behold the light of truth.
-
-Simmias and Cebes remain in doubt; but they are unwilling to raise
-objections at such a time. Socrates wonders at their reluctance. Let
-them regard him rather as the swan, who, having sung the praises of
-Apollo all his life long, sings at his death more lustily than ever.
-Simmias acknowledges that there is cowardice in not probing truth to the
-bottom. 'And if truth divine and inspired is not to be had, then let
-a man take the best of human notions, and upon this frail bark let him
-sail through life.' He proceeds to state his difficulty: It has been
-argued that the soul is invisible and incorporeal, and therefore
-immortal, and prior to the body. But is not the soul acknowledged to
-be a harmony, and has she not the same relation to the body, as the
-harmony--which like her is invisible--has to the lyre? And yet the
-harmony does not survive the lyre. Cebes has also an objection, which
-like Simmias he expresses in a figure. He is willing to admit that the
-soul is more lasting than the body. But the more lasting nature of the
-soul does not prove her immortality; for after having worn out many
-bodies in a single life, and many more in successive births and
-deaths, she may at last perish, or, as Socrates afterwards restates the
-objection, the very act of birth may be the beginning of her death, and
-her last body may survive her, just as the coat of an old weaver is left
-behind him after he is dead, although a man is more lasting than his
-coat. And he who would prove the immortality of the soul, must prove not
-only that the soul outlives one or many bodies, but that she outlives
-them all.
-
-The audience, like the chorus in a play, for a moment interpret the
-feelings of the actors; there is a temporary depression, and then the
-enquiry is resumed. It is a melancholy reflection that arguments, like
-men, are apt to be deceivers; and those who have been often deceived
-become distrustful both of arguments and of friends. But this
-unfortunate experience should not make us either haters of men or haters
-of arguments. The want of health and truth is not in the argument, but
-in ourselves. Socrates, who is about to die, is sensible of his own
-weakness; he desires to be impartial, but he cannot help feeling that he
-has too great an interest in the truth of the argument. And therefore he
-would have his friends examine and refute him, if they think that he is
-in error.
-
-At his request Simmias and Cebes repeat their objections. They do not
-go to the length of denying the pre-existence of ideas. Simmias is of
-opinion that the soul is a harmony of the body. But the admission of the
-pre-existence of ideas, and therefore of the soul, is at variance with
-this. (Compare a parallel difficulty in Theaet.) For a harmony is
-an effect, whereas the soul is not an effect, but a cause; a harmony
-follows, but the soul leads; a harmony admits of degrees, and the soul
-has no degrees. Again, upon the supposition that the soul is a harmony,
-why is one soul better than another? Are they more or less harmonized,
-or is there one harmony within another? But the soul does not admit of
-degrees, and cannot therefore be more or less harmonized. Further, the
-soul is often engaged in resisting the affections of the body, as Homer
-describes Odysseus 'rebuking his heart.' Could he have written this
-under the idea that the soul is a harmony of the body? Nay rather, are
-we not contradicting Homer and ourselves in affirming anything of the
-sort?
-
-The goddess Harmonia, as Socrates playfully terms the argument of
-Simmias, has been happily disposed of; and now an answer has to be given
-to the Theban Cadmus. Socrates recapitulates the argument of Cebes,
-which, as he remarks, involves the whole question of natural growth or
-causation; about this he proposes to narrate his own mental experience.
-When he was young he had puzzled himself with physics: he had enquired
-into the growth and decay of animals, and the origin of thought, until
-at last he began to doubt the self-evident fact that growth is the
-result of eating and drinking; and so he arrived at the conclusion that
-he was not meant for such enquiries. Nor was he less perplexed with
-notions of comparison and number. At first he had imagined himself to
-understand differences of greater and less, and to know that ten is two
-more than eight, and the like. But now those very notions appeared to
-him to contain a contradiction. For how can one be divided into two? Or
-two be compounded into one? These are difficulties which Socrates cannot
-answer. Of generation and destruction he knows nothing. But he has a
-confused notion of another method in which matters of this sort are to
-be investigated. (Compare Republic; Charm.)
-
-Then he heard some one reading out of a book of Anaxagoras, that mind is
-the cause of all things. And he said to himself: If mind is the cause
-of all things, surely mind must dispose them all for the best. The new
-teacher will show me this 'order of the best' in man and nature. How
-great had been his hopes and how great his disappointment! For he found
-that his new friend was anything but consistent in his use of mind as
-a cause, and that he soon introduced winds, waters, and other eccentric
-notions. (Compare Arist. Metaph.) It was as if a person had said that
-Socrates is sitting here because he is made up of bones and muscles,
-instead of telling the true reason--that he is here because the
-Athenians have thought good to sentence him to death, and he has thought
-good to await his sentence. Had his bones and muscles been left by him
-to their own ideas of right, they would long ago have taken themselves
-off. But surely there is a great confusion of the cause and condition
-in all this. And this confusion also leads people into all sorts of
-erroneous theories about the position and motions of the earth. None of
-them know how much stronger than any Atlas is the power of the best. But
-this 'best' is still undiscovered; and in enquiring after the cause, we
-can only hope to attain the second best.
-
-Now there is a danger in the contemplation of the nature of things, as
-there is a danger in looking at the sun during an eclipse, unless the
-precaution is taken of looking only at the image reflected in the water,
-or in a glass. (Compare Laws; Republic.) 'I was afraid,' says Socrates,
-'that I might injure the eye of the soul. I thought that I had better
-return to the old and safe method of ideas. Though I do not mean to say
-that he who contemplates existence through the medium of ideas sees
-only through a glass darkly, any more than he who contemplates actual
-effects.'
-
-If the existence of ideas is granted to him, Socrates is of opinion that
-he will then have no difficulty in proving the immortality of the soul.
-He will only ask for a further admission:--that beauty is the cause of
-the beautiful, greatness the cause of the great, smallness of the small,
-and so on of other things. This is a safe and simple answer, which
-escapes the contradictions of greater and less (greater by reason of
-that which is smaller!), of addition and subtraction, and the other
-difficulties of relation. These subtleties he is for leaving to wiser
-heads than his own; he prefers to test ideas by the consistency of their
-consequences, and, if asked to give an account of them, goes back to
-some higher idea or hypothesis which appears to him to be the best,
-until at last he arrives at a resting-place. (Republic; Phil.)
-
-The doctrine of ideas, which has long ago received the assent of the
-Socratic circle, is now affirmed by the Phliasian auditor to command
-the assent of any man of sense. The narrative is continued; Socrates is
-desirous of explaining how opposite ideas may appear to co-exist but do
-not really co-exist in the same thing or person. For example, Simmias
-may be said to have greatness and also smallness, because he is greater
-than Socrates and less than Phaedo. And yet Simmias is not really great
-and also small, but only when compared to Phaedo and Socrates. I use the
-illustration, says Socrates, because I want to show you not only that
-ideal opposites exclude one another, but also the opposites in us. I,
-for example, having the attribute of smallness remain small, and cannot
-become great: the smallness which is in me drives out greatness.
-
-One of the company here remarked that this was inconsistent with the
-old assertion that opposites generated opposites. But that, replies
-Socrates, was affirmed, not of opposite ideas either in us or in
-nature, but of opposition in the concrete--not of life and death, but
-of individuals living and dying. When this objection has been removed,
-Socrates proceeds: This doctrine of the mutual exclusion of opposites
-is not only true of the opposites themselves, but of things which are
-inseparable from them. For example, cold and heat are opposed; and fire,
-which is inseparable from heat, cannot co-exist with cold, or snow,
-which is inseparable from cold, with heat. Again, the number three
-excludes the number four, because three is an odd number and four is
-an even number, and the odd is opposed to the even. Thus we are able to
-proceed a step beyond 'the safe and simple answer.' We may say, not
-only that the odd excludes the even, but that the number three, which
-participates in oddness, excludes the even. And in like manner, not only
-does life exclude death, but the soul, of which life is the inseparable
-attribute, also excludes death. And that of which life is the
-inseparable attribute is by the force of the terms imperishable. If the
-odd principle were imperishable, then the number three would not perish
-but remove, on the approach of the even principle. But the immortal is
-imperishable; and therefore the soul on the approach of death does not
-perish but removes.
-
-Thus all objections appear to be finally silenced. And now the
-application has to be made: If the soul is immortal, 'what manner of
-persons ought we to be?' having regard not only to time but to eternity.
-For death is not the end of all, and the wicked is not released from his
-evil by death; but every one carries with him into the world below that
-which he is or has become, and that only.
-
-For after death the soul is carried away to judgment, and when she has
-received her punishment returns to earth in the course of ages. The wise
-soul is conscious of her situation, and follows the attendant angel who
-guides her through the windings of the world below; but the impure soul
-wanders hither and thither without companion or guide, and is carried
-at last to her own place, as the pure soul is also carried away to hers.
-'In order that you may understand this, I must first describe to you the
-nature and conformation of the earth.'
-
-Now the whole earth is a globe placed in the centre of the heavens, and
-is maintained there by the perfection of balance. That which we call the
-earth is only one of many small hollows, wherein collect the mists and
-waters and the thick lower air; but the true earth is above, and is in
-a finer and subtler element. And if, like birds, we could fly to the
-surface of the air, in the same manner that fishes come to the top of
-the sea, then we should behold the true earth and the true heaven and
-the true stars. Our earth is everywhere corrupted and corroded; and even
-the land which is fairer than the sea, for that is a mere chaos or waste
-of water and mud and sand, has nothing to show in comparison of the
-other world. But the heavenly earth is of divers colours, sparkling with
-jewels brighter than gold and whiter than any snow, having flowers and
-fruits innumerable. And the inhabitants dwell some on the shore of the
-sea of air, others in 'islets of the blest,' and they hold converse
-with the gods, and behold the sun, moon and stars as they truly are, and
-their other blessedness is of a piece with this.
-
-The hollows on the surface of the globe vary in size and shape from that
-which we inhabit: but all are connected by passages and perforations in
-the interior of the earth. And there is one huge chasm or opening called
-Tartarus, into which streams of fire and water and liquid mud are ever
-flowing; of these small portions find their way to the surface and
-form seas and rivers and volcanoes. There is a perpetual inhalation and
-exhalation of the air rising and falling as the waters pass into the
-depths of the earth and return again, in their course forming lakes
-and rivers, but never descending below the centre of the earth; for on
-either side the rivers flowing either way are stopped by a precipice.
-These rivers are many and mighty, and there are four principal ones,
-Oceanus, Acheron, Pyriphlegethon, and Cocytus. Oceanus is the river
-which encircles the earth; Acheron takes an opposite direction, and
-after flowing under the earth through desert places, at last reaches the
-Acherusian lake,--this is the river at which the souls of the dead await
-their return to earth. Pyriphlegethon is a stream of fire, which coils
-round the earth and flows into the depths of Tartarus. The fourth river,
-Cocytus, is that which is called by the poets the Stygian river, and
-passes into and forms the lake Styx, from the waters of which it gains
-new and strange powers. This river, too, falls into Tartarus.
-
-The dead are first of all judged according to their deeds, and those who
-are incurable are thrust into Tartarus, from which they never come out.
-Those who have only committed venial sins are first purified of them,
-and then rewarded for the good which they have done. Those who have
-committed crimes, great indeed, but not unpardonable, are thrust
-into Tartarus, but are cast forth at the end of a year by way of
-Pyriphlegethon or Cocytus, and these carry them as far as the Acherusian
-lake, where they call upon their victims to let them come out of the
-rivers into the lake. And if they prevail, then they are let out and
-their sufferings cease: if not, they are borne unceasingly into Tartarus
-and back again, until they at last obtain mercy. The pure souls also
-receive their reward, and have their abode in the upper earth, and a
-select few in still fairer 'mansions.'
-
-Socrates is not prepared to insist on the literal accuracy of this
-description, but he is confident that something of the kind is true.
-He who has sought after the pleasures of knowledge and rejected the
-pleasures of the body, has reason to be of good hope at the approach of
-death; whose voice is already speaking to him, and who will one day be
-heard calling all men.
-
-The hour has come at which he must drink the poison, and not much
-remains to be done. How shall they bury him? That is a question which he
-refuses to entertain, for they are burying, not him, but his dead body.
-His friends had once been sureties that he would remain, and they shall
-now be sureties that he has run away. Yet he would not die without the
-customary ceremonies of washing and burial. Shall he make a libation of
-the poison? In the spirit he will, but not in the letter. One request he
-utters in the very act of death, which has been a puzzle to after ages.
-With a sort of irony he remembers that a trifling religious duty is
-still unfulfilled, just as above he desires before he departs to compose
-a few verses in order to satisfy a scruple about a dream--unless,
-indeed, we suppose him to mean, that he was now restored to health, and
-made the customary offering to Asclepius in token of his recovery.
-
-*****
-
-1. The doctrine of the immortality of the soul has sunk deep into
-the heart of the human race; and men are apt to rebel against any
-examination of the nature or grounds of their belief. They do not like
-to acknowledge that this, as well as the other 'eternal ideas; of
-man, has a history in time, which may be traced in Greek poetry or
-philosophy, and also in the Hebrew Scriptures. They convert feeling into
-reasoning, and throw a network of dialectics over that which is really
-a deeply-rooted instinct. In the same temper which Socrates reproves in
-himself they are disposed to think that even fallacies will do no harm,
-for they will die with them, and while they live they will gain by the
-delusion. And when they consider the numberless bad arguments which have
-been pressed into the service of theology, they say, like the companions
-of Socrates, 'What argument can we ever trust again?' But there is a
-better and higher spirit to be gathered from the Phaedo, as well as from
-the other writings of Plato, which says that first principles should
-be most constantly reviewed (Phaedo and Crat.), and that the highest
-subjects demand of us the greatest accuracy (Republic); also that we
-must not become misologists because arguments are apt to be deceivers.
-
-2. In former ages there was a customary rather than a reasoned belief
-in the immortality of the soul. It was based on the authority of the
-Church, on the necessity of such a belief to morality and the order of
-society, on the evidence of an historical fact, and also on analogies
-and figures of speech which filled up the void or gave an expression
-in words to a cherished instinct. The mass of mankind went on their
-way busy with the affairs of this life, hardly stopping to think about
-another. But in our own day the question has been reopened, and it is
-doubtful whether the belief which in the first ages of Christianity
-was the strongest motive of action can survive the conflict with a
-scientific age in which the rules of evidence are stricter and the mind
-has become more sensitive to criticism. It has faded into the distance
-by a natural process as it was removed further and further from the
-historical fact on which it has been supposed to rest. Arguments derived
-from material things such as the seed and the ear of corn or transitions
-in the life of animals from one state of being to another (the chrysalis
-and the butterfly) are not 'in pari materia' with arguments from
-the visible to the invisible, and are therefore felt to be no longer
-applicable. The evidence to the historical fact seems to be weaker than
-was once supposed: it is not consistent with itself, and is based upon
-documents which are of unknown origin. The immortality of man must be
-proved by other arguments than these if it is again to become a living
-belief. We must ask ourselves afresh why we still maintain it, and seek
-to discover a foundation for it in the nature of God and in the first
-principles of morality.
-
-3. At the outset of the discussion we may clear away a confusion. We
-certainly do not mean by the immortality of the soul the immortality of
-fame, which whether worth having or not can only be ascribed to a very
-select class of the whole race of mankind, and even the interest in
-these few is comparatively short-lived. To have been a benefactor to the
-world, whether in a higher or a lower sphere of life and thought, is a
-great thing: to have the reputation of being one, when men have passed
-out of the sphere of earthly praise or blame, is hardly worthy of
-consideration. The memory of a great man, so far from being immortal,
-is really limited to his own generation:--so long as his friends or his
-disciples are alive, so long as his books continue to be read, so long
-as his political or military successes fill a page in the history of
-his country. The praises which are bestowed upon him at his death hardly
-last longer than the flowers which are strewed upon his coffin or the
-'immortelles' which are laid upon his tomb. Literature makes the most
-of its heroes, but the true man is well aware that far from enjoying an
-immortality of fame, in a generation or two, or even in a much shorter
-time, he will be forgotten and the world will get on without him.
-
-4. Modern philosophy is perplexed at this whole question, which is
-sometimes fairly given up and handed over to the realm of faith. The
-perplexity should not be forgotten by us when we attempt to submit the
-Phaedo of Plato to the requirements of logic. For what idea can we form
-of the soul when separated from the body? Or how can the soul be united
-with the body and still be independent? Is the soul related to the
-body as the ideal to the real, or as the whole to the parts, or as the
-subject to the object, or as the cause to the effect, or as the end to
-the means? Shall we say with Aristotle, that the soul is the entelechy
-or form of an organized living body? or with Plato, that she has a life
-of her own? Is the Pythagorean image of the harmony, or that of the
-monad, the truer expression? Is the soul related to the body as sight to
-the eye, or as the boatman to his boat? (Arist. de Anim.) And in
-another state of being is the soul to be conceived of as vanishing into
-infinity, hardly possessing an existence which she can call her own,
-as in the pantheistic system of Spinoza: or as an individual informing
-another body and entering into new relations, but retaining her own
-character? (Compare Gorgias.) Or is the opposition of soul and body a
-mere illusion, and the true self neither soul nor body, but the union
-of the two in the 'I' which is above them? And is death the assertion
-of this individuality in the higher nature, and the falling away into
-nothingness of the lower? Or are we vainly attempting to pass
-the boundaries of human thought? The body and the soul seem to be
-inseparable, not only in fact, but in our conceptions of them; and any
-philosophy which too closely unites them, or too widely separates them,
-either in this life or in another, disturbs the balance of human nature.
-No thinker has perfectly adjusted them, or been entirely consistent with
-himself in describing their relation to one another. Nor can we
-wonder that Plato in the infancy of human thought should have confused
-mythology and philosophy, or have mistaken verbal arguments for real
-ones.
-
-5. Again, believing in the immortality of the soul, we must still
-ask the question of Socrates, 'What is that which we suppose to be
-immortal?' Is it the personal and individual element in us, or the
-spiritual and universal? Is it the principle of knowledge or of
-goodness, or the union of the two? Is it the mere force of life which is
-determined to be, or the consciousness of self which cannot be got rid
-of, or the fire of genius which refuses to be extinguished? Or is there
-a hidden being which is allied to the Author of all existence, who is
-because he is perfect, and to whom our ideas of perfection give us a
-title to belong? Whatever answer is given by us to these questions,
-there still remains the necessity of allowing the permanence of evil, if
-not for ever, at any rate for a time, in order that the wicked 'may not
-have too good a bargain.' For the annihilation of evil at death, or the
-eternal duration of it, seem to involve equal difficulties in the moral
-government of the universe. Sometimes we are led by our feelings, rather
-than by our reason, to think of the good and wise only as existing in
-another life. Why should the mean, the weak, the idiot, the infant,
-the herd of men who have never in any proper sense the use of reason,
-reappear with blinking eyes in the light of another world? But our
-second thought is that the hope of humanity is a common one, and that
-all or none will be partakers of immortality. Reason does not allow us
-to suppose that we have any greater claims than others, and experience
-may often reveal to us unexpected flashes of the higher nature in
-those whom we had despised. Why should the wicked suffer any more than
-ourselves? had we been placed in their circumstances should we have been
-any better than they? The worst of men are objects of pity rather than
-of anger to the philanthropist; must they not be equally such to divine
-benevolence? Even more than the good they have need of another life; not
-that they may be punished, but that they may be educated. These are
-a few of the reflections which arise in our minds when we attempt to
-assign any form to our conceptions of a future state.
-
-There are some other questions which are disturbing to us because we
-have no answer to them. What is to become of the animals in a future
-state? Have we not seen dogs more faithful and intelligent than men,
-and men who are more stupid and brutal than any animals? Does their life
-cease at death, or is there some 'better thing reserved' also for
-them? They may be said to have a shadow or imitation of morality, and
-imperfect moral claims upon the benevolence of man and upon the justice
-of God. We cannot think of the least or lowest of them, the insect, the
-bird, the inhabitants of the sea or the desert, as having any place in
-a future world, and if not all, why should those who are specially
-attached to man be deemed worthy of any exceptional privilege? When we
-reason about such a subject, almost at once we degenerate into nonsense.
-It is a passing thought which has no real hold on the mind. We may argue
-for the existence of animals in a future state from the attributes of
-God, or from texts of Scripture ('Are not two sparrows sold for one
-farthing?' etc.), but the truth is that we are only filling up the void
-of another world with our own fancies. Again, we often talk about
-the origin of evil, that great bugbear of theologians, by which they
-frighten us into believing any superstition. What answer can be made
-to the old commonplace, 'Is not God the author of evil, if he knowingly
-permitted, but could have prevented it?' Even if we assume that the
-inequalities of this life are rectified by some transposition of human
-beings in another, still the existence of the very least evil if it
-could have been avoided, seems to be at variance with the love and
-justice of God. And so we arrive at the conclusion that we are carrying
-logic too far, and that the attempt to frame the world according to a
-rule of divine perfection is opposed to experience and had better be
-given up. The case of the animals is our own. We must admit that the
-Divine Being, although perfect himself, has placed us in a state of life
-in which we may work together with him for good, but we are very far
-from having attained to it.
-
-6. Again, ideas must be given through something; and we are always prone
-to argue about the soul from analogies of outward things which may serve
-to embody our thoughts, but are also partly delusive. For we cannot
-reason from the natural to the spiritual, or from the outward to the
-inward. The progress of physiological science, without bringing us
-nearer to the great secret, has tended to remove some erroneous notions
-respecting the relations of body and mind, and in this we have the
-advantage of the ancients. But no one imagines that any seed of
-immortality is to be discerned in our mortal frames. Most people have
-been content to rest their belief in another life on the agreement of
-the more enlightened part of mankind, and on the inseparable connection
-of such a doctrine with the existence of a God--also in a less degree
-on the impossibility of doubting about the continued existence of those
-whom we love and reverence in this world. And after all has been
-said, the figure, the analogy, the argument, are felt to be only
-approximations in different forms to an expression of the common
-sentiment of the human heart. That we shall live again is far more
-certain than that we shall take any particular form of life.
-
-7. When we speak of the immortality of the soul, we must ask further
-what we mean by the word immortality. For of the duration of a living
-being in countless ages we can form no conception; far less than a three
-years' old child of the whole of life. The naked eye might as well try
-to see the furthest star in the infinity of heaven. Whether time and
-space really exist when we take away the limits of them may be doubted;
-at any rate the thought of them when unlimited us so overwhelming to us
-as to lose all distinctness. Philosophers have spoken of them as forms
-of the human mind, but what is the mind without them? As then infinite
-time, or an existence out of time, which are the only possible
-explanations of eternal duration, are equally inconceivable to us, let
-us substitute for them a hundred or a thousand years after death, and
-ask not what will be our employment in eternity, but what will happen to
-us in that definite portion of time; or what is now happening to those
-who passed out of life a hundred or a thousand years ago. Do we imagine
-that the wicked are suffering torments, or that the good are singing the
-praises of God, during a period longer than that of a whole life, or
-of ten lives of men? Is the suffering physical or mental? And does the
-worship of God consist only of praise, or of many forms of service? Who
-are the wicked, and who are the good, whom we venture to divide by a
-hard and fast line; and in which of the two classes should we place
-ourselves and our friends? May we not suspect that we are making
-differences of kind, because we are unable to imagine differences
-of degree?--putting the whole human race into heaven or hell for the
-greater convenience of logical division? Are we not at the same time
-describing them both in superlatives, only that we may satisfy the
-demands of rhetoric? What is that pain which does not become deadened
-after a thousand years? or what is the nature of that pleasure or
-happiness which never wearies by monotony? Earthly pleasures and pains
-are short in proportion as they are keen; of any others which are both
-intense and lasting we have no experience, and can form no idea.
-The words or figures of speech which we use are not consistent with
-themselves. For are we not imagining Heaven under the similitude of
-a church, and Hell as a prison, or perhaps a madhouse or chamber of
-horrors? And yet to beings constituted as we are, the monotony of
-singing psalms would be as great an infliction as the pains of hell,
-and might be even pleasantly interrupted by them. Where are the actions
-worthy of rewards greater than those which are conferred on the greatest
-benefactors of mankind? And where are the crimes which according to
-Plato's merciful reckoning,--more merciful, at any rate, than the
-eternal damnation of so-called Christian teachers,--for every ten years
-in this life deserve a hundred of punishment in the life to come?
-We should be ready to die of pity if we could see the least of the
-sufferings which the writers of Infernos and Purgatorios have attributed
-to the damned. Yet these joys and terrors seem hardly to exercise an
-appreciable influence over the lives of men. The wicked man when old,
-is not, as Plato supposes (Republic), more agitated by the terrors of
-another world when he is nearer to them, nor the good in an ecstasy at
-the joys of which he is soon to be the partaker. Age numbs the sense of
-both worlds; and the habit of life is strongest in death. Even the dying
-mother is dreaming of her lost children as they were forty or fifty
-years before, 'pattering over the boards,' not of reunion with them
-in another state of being. Most persons when the last hour comes are
-resigned to the order of nature and the will of God. They are not
-thinking of Dante's Inferno or Paradiso, or of the Pilgrim's Progress.
-Heaven and hell are not realities to them, but words or ideas; the
-outward symbols of some great mystery, they hardly know what. Many
-noble poems and pictures have been suggested by the traditional
-representations of them, which have been fixed in forms of art and can
-no longer be altered. Many sermons have been filled with descriptions
-of celestial or infernal mansions. But hardly even in childhood did the
-thought of heaven and hell supply the motives of our actions, or at any
-time seriously affect the substance of our belief.
-
-8. Another life must be described, if at all, in forms of thought
-and not of sense. To draw pictures of heaven and hell, whether in the
-language of Scripture or any other, adds nothing to our real knowledge,
-but may perhaps disguise our ignorance. The truest conception which
-we can form of a future life is a state of progress or education--a
-progress from evil to good, from ignorance to knowledge. To this we are
-led by the analogy of the present life, in which we see different races
-and nations of men, and different men and women of the same nation,
-in various states or stages of cultivation; some more and some less
-developed, and all of them capable of improvement under favourable
-circumstances. There are punishments too of children when they are
-growing up inflicted by their parents, of elder offenders which are
-imposed by the law of the land, of all men at all times of life,
-which are attached by the laws of nature to the performance of certain
-actions. All these punishments are really educational; that is to say,
-they are not intended to retaliate on the offender, but to teach him
-a lesson. Also there is an element of chance in them, which is another
-name for our ignorance of the laws of nature. There is evil too
-inseparable from good (compare Lysis); not always punished here, as good
-is not always rewarded. It is capable of being indefinitely diminished;
-and as knowledge increases, the element of chance may more and more
-disappear.
-
-For we do not argue merely from the analogy of the present state of this
-world to another, but from the analogy of a probable future to which we
-are tending. The greatest changes of which we have had experience as yet
-are due to our increasing knowledge of history and of nature. They
-have been produced by a few minds appearing in three or four favoured
-nations, in a comparatively short period of time. May we be allowed to
-imagine the minds of men everywhere working together during many ages
-for the completion of our knowledge? May not the science of physiology
-transform the world? Again, the majority of mankind have really
-experienced some moral improvement; almost every one feels that he has
-tendencies to good, and is capable of becoming better. And these germs
-of good are often found to be developed by new circumstances, like
-stunted trees when transplanted to a better soil. The differences
-between the savage and the civilized man, or between the civilized
-man in old and new countries, may be indefinitely increased. The first
-difference is the effect of a few thousand, the second of a few hundred
-years. We congratulate ourselves that slavery has become industry;
-that law and constitutional government have superseded despotism and
-violence; that an ethical religion has taken the place of Fetichism.
-There may yet come a time when the many may be as well off as the few;
-when no one will be weighed down by excessive toil; when the necessity
-of providing for the body will not interfere with mental improvement;
-when the physical frame may be strengthened and developed; and the
-religion of all men may become a reasonable service.
-
-Nothing therefore, either in the present state of man or in the
-tendencies of the future, as far as we can entertain conjecture of them,
-would lead us to suppose that God governs us vindictively in this
-world, and therefore we have no reason to infer that he will govern us
-vindictively in another. The true argument from analogy is not, 'This
-life is a mixed state of justice and injustice, of great waste, of
-sudden casualties, of disproportionate punishments, and therefore the
-like inconsistencies, irregularities, injustices are to be expected
-in another;' but 'This life is subject to law, and is in a state of
-progress, and therefore law and progress may be believed to be the
-governing principles of another.' All the analogies of this world would
-be against unmeaning punishments inflicted a hundred or a thousand years
-after an offence had been committed. Suffering there might be as a
-part of education, but not hopeless or protracted; as there might be
-a retrogression of individuals or of bodies of men, yet not such as to
-interfere with a plan for the improvement of the whole (compare Laws.)
-
-9. But some one will say: That we cannot reason from the seen to the
-unseen, and that we are creating another world after the image of this,
-just as men in former ages have created gods in their own likeness. And
-we, like the companions of Socrates, may feel discouraged at hearing
-our favourite 'argument from analogy' thus summarily disposed of. Like
-himself, too, we may adduce other arguments in which he seems to have
-anticipated us, though he expresses them in different language. For we
-feel that the soul partakes of the ideal and invisible; and can never
-fall into the error of confusing the external circumstances of man with
-his higher self; or his origin with his nature. It is as repugnant to
-us as it was to him to imagine that our moral ideas are to be attributed
-only to cerebral forces. The value of a human soul, like the value of a
-man's life to himself, is inestimable, and cannot be reckoned in earthly
-or material things. The human being alone has the consciousness of truth
-and justice and love, which is the consciousness of God. And the soul
-becoming more conscious of these, becomes more conscious of her own
-immortality.
-
-10. The last ground of our belief in immortality, and the strongest, is
-the perfection of the divine nature. The mere fact of the existence of
-God does not tend to show the continued existence of man. An evil God
-or an indifferent God might have had the power, but not the will, to
-preserve us. He might have regarded us as fitted to minister to his
-service by a succession of existences,--like the animals, without
-attributing to each soul an incomparable value. But if he is perfect,
-he must will that all rational beings should partake of that perfection
-which he himself is. In the words of the Timaeus, he is good, and
-therefore he desires that all other things should be as like himself as
-possible. And the manner in which he accomplishes this is by permitting
-evil, or rather degrees of good, which are otherwise called evil.
-For all progress is good relatively to the past, and yet may be
-comparatively evil when regarded in the light of the future. Good and
-evil are relative terms, and degrees of evil are merely the negative
-aspect of degrees of good. Of the absolute goodness of any finite nature
-we can form no conception; we are all of us in process of transition
-from one degree of good or evil to another. The difficulties which
-are urged about the origin or existence of evil are mere dialectical
-puzzles, standing in the same relation to Christian philosophy as the
-puzzles of the Cynics and Megarians to the philosophy of Plato. They
-arise out of the tendency of the human mind to regard good and evil both
-as relative and absolute; just as the riddles about motion are to be
-explained by the double conception of space or matter, which the human
-mind has the power of regarding either as continuous or discrete.
-
-In speaking of divine perfection, we mean to say that God is just and
-true and loving, the author of order and not of disorder, of good and
-not of evil. Or rather, that he is justice, that he is truth, that he
-is love, that he is order, that he is the very progress of which we were
-speaking; and that wherever these qualities are present, whether in the
-human soul or in the order of nature, there is God. We might still see
-him everywhere, if we had not been mistakenly seeking for him apart from
-us, instead of in us; away from the laws of nature, instead of in
-them. And we become united to him not by mystical absorption, but by
-partaking, whether consciously or unconsciously, of that truth and
-justice and love which he himself is.
-
-Thus the belief in the immortality of the soul rests at last on the
-belief in God. If there is a good and wise God, then there is a progress
-of mankind towards perfection; and if there is no progress of men
-towards perfection, then there is no good and wise God. We cannot
-suppose that the moral government of God of which we see the beginnings
-in the world and in ourselves will cease when we pass out of life.
-
-11. Considering the 'feebleness of the human faculties and the
-uncertainty of the subject,' we are inclined to believe that the fewer
-our words the better. At the approach of death there is not much said;
-good men are too honest to go out of the world professing more than they
-know. There is perhaps no important subject about which, at any time,
-even religious people speak so little to one another. In the fulness
-of life the thought of death is mostly awakened by the sight or
-recollection of the death of others rather than by the prospect of our
-own. We must also acknowledge that there are degrees of the belief in
-immortality, and many forms in which it presents itself to the mind.
-Some persons will say no more than that they trust in God, and that they
-leave all to Him. It is a great part of true religion not to pretend
-to know more than we do. Others when they quit this world are comforted
-with the hope 'That they will see and know their friends in heaven.' But
-it is better to leave them in the hands of God and to be assured that
-'no evil shall touch them.' There are others again to whom the belief in
-a divine personality has ceased to have any longer a meaning; yet they
-are satisfied that the end of all is not here, but that something still
-remains to us, 'and some better thing for the good than for the evil.'
-They are persuaded, in spite of their theological nihilism, that the
-ideas of justice and truth and holiness and love are realities. They
-cherish an enthusiastic devotion to the first principles of morality.
-Through these they see, or seem to see, darkly, and in a figure, that
-the soul is immortal.
-
-But besides differences of theological opinion which must ever prevail
-about things unseen, the hope of immortality is weaker or stronger in
-men at one time of life than at another; it even varies from day to day.
-It comes and goes; the mind, like the sky, is apt to be overclouded.
-Other generations of men may have sometimes lived under an 'eclipse of
-faith,' to us the total disappearance of it might be compared to the
-'sun falling from heaven.' And we may sometimes have to begin again and
-acquire the belief for ourselves; or to win it back again when it is
-lost. It is really weakest in the hour of death. For Nature, like a kind
-mother or nurse, lays us to sleep without frightening us; physicians,
-who are the witnesses of such scenes, say that under ordinary
-circumstances there is no fear of the future. Often, as Plato tells
-us, death is accompanied 'with pleasure.' (Tim.) When the end is still
-uncertain, the cry of many a one has been, 'Pray, that I may be taken.'
-The last thoughts even of the best men depend chiefly on the accidents
-of their bodily state. Pain soon overpowers the desire of life; old age,
-like the child, is laid to sleep almost in a moment. The long experience
-of life will often destroy the interest which mankind have in it. So
-various are the feelings with which different persons draw near to
-death; and still more various the forms in which imagination clothes it.
-For this alternation of feeling compare the Old Testament,--Psalm vi.;
-Isaiah; Eccles.
-
-12. When we think of God and of man in his relation to God; of the
-imperfection of our present state and yet of the progress which is
-observable in the history of the world and of the human mind; of the
-depth and power of our moral ideas which seem to partake of the very
-nature of God Himself; when we consider the contrast between the
-physical laws to which we are subject and the higher law which raises us
-above them and is yet a part of them; when we reflect on our capacity of
-becoming the 'spectators of all time and all existence,' and of framing
-in our own minds the ideal of a perfect Being; when we see how the
-human mind in all the higher religions of the world, including Buddhism,
-notwithstanding some aberrations, has tended towards such a belief--we
-have reason to think that our destiny is different from that of animals;
-and though we cannot altogether shut out the childish fear that the soul
-upon leaving the body may 'vanish into thin air,' we have still, so far
-as the nature of the subject admits, a hope of immortality with which we
-comfort ourselves on sufficient grounds. The denial of the belief takes
-the heart out of human life; it lowers men to the level of the material.
-As Goethe also says, 'He is dead even in this world who has no belief in
-another.'
-
-13. It is well also that we should sometimes think of the forms of
-thought under which the idea of immortality is most naturally presented
-to us. It is clear that to our minds the risen soul can no longer be
-described, as in a picture, by the symbol of a creature half-bird,
-half-human, nor in any other form of sense. The multitude of angels, as
-in Milton, singing the Almighty's praises, are a noble image, and may
-furnish a theme for the poet or the painter, but they are no longer an
-adequate expression of the kingdom of God which is within us. Neither is
-there any mansion, in this world or another, in which the departed can
-be imagined to dwell and carry on their occupations. When this earthly
-tabernacle is dissolved, no other habitation or building can take them
-in: it is in the language of ideas only that we speak of them.
-
-First of all there is the thought of rest and freedom from pain; they
-have gone home, as the common saying is, and the cares of this world
-touch them no more. Secondly, we may imagine them as they were at
-their best and brightest, humbly fulfilling their daily round of
-duties--selfless, childlike, unaffected by the world; when the eye was
-single and the whole body seemed to be full of light; when the mind was
-clear and saw into the purposes of God. Thirdly, we may think of them
-as possessed by a great love of God and man, working out His will at a
-further stage in the heavenly pilgrimage. And yet we acknowledge that
-these are the things which eye hath not seen nor ear heard and therefore
-it hath not entered into the heart of man in any sensible manner to
-conceive them. Fourthly, there may have been some moments in our own
-lives when we have risen above ourselves, or been conscious of our truer
-selves, in which the will of God has superseded our wills, and we have
-entered into communion with Him, and been partakers for a brief season
-of the Divine truth and love, in which like Christ we have been inspired
-to utter the prayer, 'I in them, and thou in me, that we may be all made
-perfect in one.' These precious moments, if we have ever known them, are
-the nearest approach which we can make to the idea of immortality.
-
-14. Returning now to the earlier stage of human thought which is
-represented by the writings of Plato, we find that many of the
-same questions have already arisen: there is the same tendency to
-materialism; the same inconsistency in the application of the idea of
-mind; the same doubt whether the soul is to be regarded as a cause or as
-an effect; the same falling back on moral convictions. In the Phaedo the
-soul is conscious of her divine nature, and the separation from the body
-which has been commenced in this life is perfected in another. Beginning
-in mystery, Socrates, in the intermediate part of the Dialogue, attempts
-to bring the doctrine of a future life into connection with his theory
-of knowledge. In proportion as he succeeds in this, the individual seems
-to disappear in a more general notion of the soul; the contemplation of
-ideas 'under the form of eternity' takes the place of past and future
-states of existence. His language may be compared to that of some modern
-philosophers, who speak of eternity, not in the sense of perpetual
-duration of time, but as an ever-present quality of the soul. Yet at
-the conclusion of the Dialogue, having 'arrived at the end of the
-intellectual world' (Republic), he replaces the veil of mythology,
-and describes the soul and her attendant genius in the language of the
-mysteries or of a disciple of Zoroaster. Nor can we fairly demand of
-Plato a consistency which is wanting among ourselves, who acknowledge
-that another world is beyond the range of human thought, and yet are
-always seeking to represent the mansions of heaven or hell in
-the colours of the painter, or in the descriptions of the poet or
-rhetorician.
-
-15. The doctrine of the immortality of the soul was not new to the
-Greeks in the age of Socrates, but, like the unity of God, had a
-foundation in the popular belief. The old Homeric notion of a gibbering
-ghost flitting away to Hades; or of a few illustrious heroes enjoying
-the isles of the blest; or of an existence divided between the two; or
-the Hesiodic, of righteous spirits, who become guardian angels,--had
-given place in the mysteries and the Orphic poets to representations,
-partly fanciful, of a future state of rewards and punishments. (Laws.)
-The reticence of the Greeks on public occasions and in some part of
-their literature respecting this 'underground' religion, is not to be
-taken as a measure of the diffusion of such beliefs. If Pericles in the
-funeral oration is silent on the consolations of immortality, the
-poet Pindar and the tragedians on the other hand constantly assume the
-continued existence of the dead in an upper or under world. Darius
-and Laius are still alive; Antigone will be dear to her brethren after
-death; the way to the palace of Cronos is found by those who 'have
-thrice departed from evil.' The tragedy of the Greeks is not 'rounded'
-by this life, but is deeply set in decrees of fate and mysterious
-workings of powers beneath the earth. In the caricature of Aristophanes
-there is also a witness to the common sentiment. The Ionian and
-Pythagorean philosophies arose, and some new elements were added to the
-popular belief. The individual must find an expression as well as the
-world. Either the soul was supposed to exist in the form of a magnet, or
-of a particle of fire, or of light, or air, or water; or of a number or
-of a harmony of number; or to be or have, like the stars, a principle
-of motion (Arist. de Anim.). At length Anaxagoras, hardly distinguishing
-between life and mind, or between mind human and divine, attained
-the pure abstraction; and this, like the other abstractions of Greek
-philosophy, sank deep into the human intelligence. The opposition of
-the intelligible and the sensible, and of God to the world, supplied an
-analogy which assisted in the separation of soul and body. If ideas were
-separable from phenomena, mind was also separable from matter; if the
-ideas were eternal, the mind that conceived them was eternal too. As
-the unity of God was more distinctly acknowledged, the conception of the
-human soul became more developed. The succession, or alternation of
-life and death, had occurred to Heracleitus. The Eleatic Parmenides had
-stumbled upon the modern thesis, that 'thought and being are the same.'
-The Eastern belief in transmigration defined the sense of individuality;
-and some, like Empedocles, fancied that the blood which they had shed
-in another state of being was crying against them, and that for thirty
-thousand years they were to be 'fugitives and vagabonds upon the earth.'
-The desire of recognizing a lost mother or love or friend in the world
-below (Phaedo) was a natural feeling which, in that age as well as in
-every other, has given distinctness to the hope of immortality. Nor were
-ethical considerations wanting, partly derived from the necessity of
-punishing the greater sort of criminals, whom no avenging power of this
-world could reach. The voice of conscience, too, was heard reminding
-the good man that he was not altogether innocent. (Republic.) To these
-indistinct longings and fears an expression was given in the mysteries
-and Orphic poets: a 'heap of books' (Republic), passing under the names
-of Musaeus and Orpheus in Plato's time, were filled with notions of an
-under-world.
-
-16. Yet after all the belief in the individuality of the soul after
-death had but a feeble hold on the Greek mind. Like the personality of
-God, the personality of man in a future state was not inseparably bound
-up with the reality of his existence. For the distinction between the
-personal and impersonal, and also between the divine and human, was far
-less marked to the Greek than to ourselves. And as Plato readily passes
-from the notion of the good to that of God, he also passes almost
-imperceptibly to himself and his reader from the future life of the
-individual soul to the eternal being of the absolute soul. There has
-been a clearer statement and a clearer denial of the belief in modern
-times than is found in early Greek philosophy, and hence the comparative
-silence on the whole subject which is often remarked in ancient writers,
-and particularly in Aristotle. For Plato and Aristotle are not further
-removed in their teaching about the immortality of the soul than they
-are in their theory of knowledge.
-
-17. Living in an age when logic was beginning to mould human thought,
-Plato naturally cast his belief in immortality into a logical form. And
-when we consider how much the doctrine of ideas was also one of words,
-it is not surprising that he should have fallen into verbal fallacies:
-early logic is always mistaking the truth of the form for the truth of
-the matter. It is easy to see that the alternation of opposites is
-not the same as the generation of them out of each other; and that the
-generation of them out of each other, which is the first argument in
-the Phaedo, is at variance with their mutual exclusion of each other,
-whether in themselves or in us, which is the last. For even if we admit
-the distinction which he draws between the opposites and the things
-which have the opposites, still individuals fall under the latter class;
-and we have to pass out of the region of human hopes and fears to a
-conception of an abstract soul which is the impersonation of the ideas.
-Such a conception, which in Plato himself is but half expressed, is
-unmeaning to us, and relative only to a particular stage in the history
-of thought. The doctrine of reminiscence is also a fragment of a former
-world, which has no place in the philosophy of modern times. But Plato
-had the wonders of psychology just opening to him, and he had not the
-explanation of them which is supplied by the analysis of language and
-the history of the human mind. The question, 'Whence come our abstract
-ideas?' he could only answer by an imaginary hypothesis. Nor is it
-difficult to see that his crowning argument is purely verbal, and is
-but the expression of an instinctive confidence put into a logical
-form:--'The soul is immortal because it contains a principle of
-imperishableness.' Nor does he himself seem at all to be aware that
-nothing is added to human knowledge by his 'safe and simple answer,'
-that beauty is the cause of the beautiful; and that he is merely
-reasserting the Eleatic being 'divided by the Pythagorean numbers,'
-against the Heracleitean doctrine of perpetual generation. The answer to
-the 'very serious question' of generation and destruction is really
-the denial of them. For this he would substitute, as in the Republic, a
-system of ideas, tested, not by experience, but by their consequences,
-and not explained by actual causes, but by a higher, that is, a more
-general notion. Consistency with themselves is the only test which is to
-be applied to them. (Republic, and Phaedo.)
-
-18. To deal fairly with such arguments, they should be translated as
-far as possible into their modern equivalents. 'If the ideas of men are
-eternal, their souls are eternal, and if not the ideas, then not the
-souls.' Such an argument stands nearly in the same relation to Plato and
-his age, as the argument from the existence of God to immortality among
-ourselves. 'If God exists, then the soul exists after death; and if
-there is no God, there is no existence of the soul after death.' For
-the ideas are to his mind the reality, the truth, the principle of
-permanence, as well as of intelligence and order in the world. When
-Simmias and Cebes say that they are more strongly persuaded of the
-existence of ideas than they are of the immortality of the soul, they
-represent fairly enough the order of thought in Greek philosophy. And we
-might say in the same way that we are more certain of the existence
-of God than we are of the immortality of the soul, and are led by the
-belief in the one to a belief in the other. The parallel, as Socrates
-would say, is not perfect, but agrees in as far as the mind in either
-case is regarded as dependent on something above and beyond herself. The
-analogy may even be pressed a step further: 'We are more certain of our
-ideas of truth and right than we are of the existence of God, and
-are led on in the order of thought from one to the other.' Or more
-correctly: 'The existence of right and truth is the existence of God,
-and can never for a moment be separated from Him.'
-
-19. The main argument of the Phaedo is derived from the existence of
-eternal ideas of which the soul is a partaker; the other argument of the
-alternation of opposites is replaced by this. And there have not been
-wanting philosophers of the idealist school who have imagined that the
-doctrine of the immortality of the soul is a theory of knowledge, and
-that in what has preceded Plato is accommodating himself to the popular
-belief. Such a view can only be elicited from the Phaedo by what may
-be termed the transcendental method of interpretation, and is obviously
-inconsistent with the Gorgias and the Republic. Those who maintain
-it are immediately compelled to renounce the shadow which they have
-grasped, as a play of words only. But the truth is, that Plato in his
-argument for the immortality of the soul has collected many elements of
-proof or persuasion, ethical and mythological as well as dialectical,
-which are not easily to be reconciled with one another; and he is as
-much in earnest about his doctrine of retribution, which is repeated
-in all his more ethical writings, as about his theory of knowledge.
-And while we may fairly translate the dialectical into the language of
-Hegel, and the religious and mythological into the language of Dante or
-Bunyan, the ethical speaks to us still in the same voice, and appeals to
-a common feeling.
-
-20. Two arguments of this ethical character occur in the Phaedo. The
-first may be described as the aspiration of the soul after another state
-of being. Like the Oriental or Christian mystic, the philosopher is
-seeking to withdraw from impurities of sense, to leave the world and the
-things of the world, and to find his higher self. Plato recognizes in
-these aspirations the foretaste of immortality; as Butler and Addison in
-modern times have argued, the one from the moral tendencies of mankind,
-the other from the progress of the soul towards perfection. In using
-this argument Plato has certainly confused the soul which has left the
-body, with the soul of the good and wise. (Compare Republic.) Such a
-confusion was natural, and arose partly out of the antithesis of soul
-and body. The soul in her own essence, and the soul 'clothed upon' with
-virtues and graces, were easily interchanged with one another, because
-on a subject which passes expression the distinctions of language can
-hardly be maintained.
-
-21. The ethical proof of the immortality of the soul is derived from the
-necessity of retribution. The wicked would be too well off if their
-evil deeds came to an end. It is not to be supposed that an Ardiaeus,
-an Archelaus, an Ismenias could ever have suffered the penalty of
-their crimes in this world. The manner in which this retribution is
-accomplished Plato represents under the figures of mythology. Doubtless
-he felt that it was easier to improve than to invent, and that in
-religion especially the traditional form was required in order to give
-verisimilitude to the myth. The myth too is far more probable to that
-age than to ours, and may fairly be regarded as 'one guess among
-many' about the nature of the earth, which he cleverly supports by the
-indications of geology. Not that he insists on the absolute truth of
-his own particular notions: 'no man of sense will be confident in such
-matters; but he will be confident that something of the kind is true.'
-As in other passages (Gorg., Tim., compare Crito), he wins belief for
-his fictions by the moderation of his statements; he does not, like
-Dante or Swedenborg, allow himself to be deceived by his own creations.
-
-The Dialogue must be read in the light of the situation. And first of
-all we are struck by the calmness of the scene. Like the spectators
-at the time, we cannot pity Socrates; his mien and his language are
-so noble and fearless. He is the same that he ever was, but milder and
-gentler, and he has in no degree lost his interest in dialectics;
-he will not forego the delight of an argument in compliance with the
-jailer's intimation that he should not heat himself with talking. At
-such a time he naturally expresses the hope of his life, that he has
-been a true mystic and not a mere retainer or wand-bearer: and he refers
-to passages of his personal history. To his old enemies the Comic
-poets, and to the proceedings on the trial, he alludes playfully; but he
-vividly remembers the disappointment which he felt in reading the books
-of Anaxagoras. The return of Xanthippe and his children indicates that
-the philosopher is not 'made of oak or rock.' Some other traits of his
-character may be noted; for example, the courteous manner in which
-he inclines his head to the last objector, or the ironical touch, 'Me
-already, as the tragic poet would say, the voice of fate calls;' or
-the depreciation of the arguments with which 'he comforted himself and
-them;' or his fear of 'misology;' or his references to Homer; or the
-playful smile with which he 'talks like a book' about greater and less;
-or the allusion to the possibility of finding another teacher among
-barbarous races (compare Polit.); or the mysterious reference to another
-science (mathematics?) of generation and destruction for which he is
-vainly feeling. There is no change in him; only now he is invested with
-a sort of sacred character, as the prophet or priest of Apollo the God
-of the festival, in whose honour he first of all composes a hymn,
-and then like the swan pours forth his dying lay. Perhaps the extreme
-elevation of Socrates above his own situation, and the ordinary
-interests of life (compare his jeu d'esprit about his burial, in which
-for a moment he puts on the 'Silenus mask'), create in the mind of the
-reader an impression stronger than could be derived from arguments that
-such a one has in him 'a principle which does not admit of death.'
-
-The other persons of the Dialogue may be considered under two heads: (1)
-private friends; (2) the respondents in the argument.
-
-First there is Crito, who has been already introduced to us in the
-Euthydemus and the Crito; he is the equal in years of Socrates, and
-stands in quite a different relation to him from his younger disciples.
-He is a man of the world who is rich and prosperous (compare the jest
-in the Euthydemus), the best friend of Socrates, who wants to know his
-commands, in whose presence he talks to his family, and who performs
-the last duty of closing his eyes. It is observable too that, as in the
-Euthydemus, Crito shows no aptitude for philosophical discussions. Nor
-among the friends of Socrates must the jailer be forgotten, who seems
-to have been introduced by Plato in order to show the impression made
-by the extraordinary man on the common. The gentle nature of the man
-is indicated by his weeping at the announcement of his errand and then
-turning away, and also by the words of Socrates to his disciples: 'How
-charming the man is! since I have been in prison he has been always
-coming to me, and is as good as could be to me.' We are reminded
-too that he has retained this gentle nature amid scenes of death and
-violence by the contrasts which he draws between the behaviour of
-Socrates and of others when about to die.
-
-Another person who takes no part in the philosophical discussion is the
-excitable Apollodorus, the same who, in the Symposium, of which he is
-the narrator, is called 'the madman,' and who testifies his grief by the
-most violent emotions. Phaedo is also present, the 'beloved disciple'
-as he may be termed, who is described, if not 'leaning on his bosom,'
-as seated next to Socrates, who is playing with his hair. He too, like
-Apollodorus, takes no part in the discussion, but he loves above all
-things to hear and speak of Socrates after his death. The calmness
-of his behaviour, veiling his face when he can no longer restrain
-his tears, contrasts with the passionate outcries of the other. At a
-particular point the argument is described as falling before the attack
-of Simmias. A sort of despair is introduced in the minds of the company.
-The effect of this is heightened by the description of Phaedo, who has
-been the eye-witness of the scene, and by the sympathy of his Phliasian
-auditors who are beginning to think 'that they too can never trust an
-argument again.' And the intense interest of the company is communicated
-not only to the first auditors, but to us who in a distant country read
-the narrative of their emotions after more than two thousand years have
-passed away.
-
-The two principal interlocutors are Simmias and Cebes, the disciples of
-Philolaus the Pythagorean philosopher of Thebes. Simmias is described
-in the Phaedrus as fonder of an argument than any man living; and
-Cebes, although finally persuaded by Socrates, is said to be the most
-incredulous of human beings. It is Cebes who at the commencement of
-the Dialogue asks why 'suicide is held to be unlawful,' and who
-first supplies the doctrine of recollection in confirmation of the
-pre-existence of the soul. It is Cebes who urges that the pre-existence
-does not necessarily involve the future existence of the soul, as is
-shown by the illustration of the weaver and his coat. Simmias, on the
-other hand, raises the question about harmony and the lyre, which is
-naturally put into the mouth of a Pythagorean disciple. It is Simmias,
-too, who first remarks on the uncertainty of human knowledge, and
-only at last concedes to the argument such a qualified approval as is
-consistent with the feebleness of the human faculties. Cebes is the
-deeper and more consecutive thinker, Simmias more superficial and
-rhetorical; they are distinguished in much the same manner as Adeimantus
-and Glaucon in the Republic.
-
-Other persons, Menexenus, Ctesippus, Lysis, are old friends; Evenus
-has been already satirized in the Apology; Aeschines and Epigenes
-were present at the trial; Euclid and Terpsion will reappear in the
-Introduction to the Theaetetus, Hermogenes has already appeared in
-the Cratylus. No inference can fairly be drawn from the absence of
-Aristippus, nor from the omission of Xenophon, who at the time of
-Socrates' death was in Asia. The mention of Plato's own absence seems
-like an expression of sorrow, and may, perhaps, be an indication that
-the report of the conversation is not to be taken literally.
-
-The place of the Dialogue in the series is doubtful. The doctrine of
-ideas is certainly carried beyond the Socratic point of view; in no
-other of the writings of Plato is the theory of them so completely
-developed. Whether the belief in immortality can be attributed to
-Socrates or not is uncertain; the silence of the Memorabilia, and of the
-earlier Dialogues of Plato, is an argument to the contrary. Yet in the
-Cyropaedia Xenophon has put language into the mouth of the dying Cyrus
-which recalls the Phaedo, and may have been derived from the teaching of
-Socrates. It may be fairly urged that the greatest religious interest of
-mankind could not have been wholly ignored by one who passed his life in
-fulfilling the commands of an oracle, and who recognized a Divine plan
-in man and nature. (Xen. Mem.) And the language of the Apology and of
-the Crito confirms this view.
-
-The Phaedo is not one of the Socratic Dialogues of Plato; nor, on the
-other hand, can it be assigned to that later stage of the Platonic
-writings at which the doctrine of ideas appears to be forgotten. It
-belongs rather to the intermediate period of the Platonic philosophy,
-which roughly corresponds to the Phaedrus, Gorgias, Republic,
-Theaetetus. Without pretending to determine the real time of their
-composition, the Symposium, Meno, Euthyphro, Apology, Phaedo may be
-conveniently read by us in this order as illustrative of the life of
-Socrates. Another chain may be formed of the Meno, Phaedrus, Phaedo,
-in which the immortality of the soul is connected with the doctrine of
-ideas. In the Meno the theory of ideas is based on the ancient belief in
-transmigration, which reappears again in the Phaedrus as well as in the
-Republic and Timaeus, and in all of them is connected with a doctrine of
-retribution. In the Phaedrus the immortality of the soul is supposed to
-rest on the conception of the soul as a principle of motion, whereas in
-the Republic the argument turns on the natural continuance of the soul,
-which, if not destroyed by her own proper evil, can hardly be destroyed
-by any other. The soul of man in the Timaeus is derived from the Supreme
-Creator, and either returns after death to her kindred star, or descends
-into the lower life of an animal. The Apology expresses the same view
-as the Phaedo, but with less confidence; there the probability of death
-being a long sleep is not excluded. The Theaetetus also describes, in a
-digression, the desire of the soul to fly away and be with God--'and to
-fly to him is to be like him.' The Symposium may be observed to
-resemble as well as to differ from the Phaedo. While the first notion of
-immortality is only in the way of natural procreation or of posthumous
-fame and glory, the higher revelation of beauty, like the good in the
-Republic, is the vision of the eternal idea. So deeply rooted in
-Plato's mind is the belief in immortality; so various are the forms of
-expression which he employs.
-
-As in several other Dialogues, there is more of system in the Phaedo
-than appears at first sight. The succession of arguments is based on
-previous philosophies; beginning with the mysteries and the Heracleitean
-alternation of opposites, and proceeding to the Pythagorean harmony and
-transmigration; making a step by the aid of Platonic reminiscence, and
-a further step by the help of the nous of Anaxagoras; until at last we
-rest in the conviction that the soul is inseparable from the ideas,
-and belongs to the world of the invisible and unknown. Then, as in
-the Gorgias or Republic, the curtain falls, and the veil of mythology
-descends upon the argument. After the confession of Socrates that he is
-an interested party, and the acknowledgment that no man of sense will
-think the details of his narrative true, but that something of the kind
-is true, we return from speculation to practice. He is himself more
-confident of immortality than he is of his own arguments; and the
-confidence which he expresses is less strong than that which his
-cheerfulness and composure in death inspire in us.
-
-Difficulties of two kinds occur in the Phaedo--one kind to be explained
-out of contemporary philosophy, the other not admitting of an entire
-solution. (1) The difficulty which Socrates says that he experienced in
-explaining generation and corruption; the assumption of hypotheses which
-proceed from the less general to the more general, and are tested by
-their consequences; the puzzle about greater and less; the resort to the
-method of ideas, which to us appear only abstract terms,--these are to
-be explained out of the position of Socrates and Plato in the history of
-philosophy. They were living in a twilight between the sensible and
-the intellectual world, and saw no way of connecting them. They
-could neither explain the relation of ideas to phenomena, nor their
-correlation to one another. The very idea of relation or comparison was
-embarrassing to them. Yet in this intellectual uncertainty they had a
-conception of a proof from results, and of a moral truth, which remained
-unshaken amid the questionings of philosophy. (2) The other is a
-difficulty which is touched upon in the Republic as well as in the
-Phaedo, and is common to modern and ancient philosophy. Plato is not
-altogether satisfied with his safe and simple method of ideas. He wants
-to have proved to him by facts that all things are for the best, and
-that there is one mind or design which pervades them all. But this
-'power of the best' he is unable to explain; and therefore takes refuge
-in universal ideas. And are not we at this day seeking to discover that
-which Socrates in a glass darkly foresaw?
-
-Some resemblances to the Greek drama may be noted in all the Dialogues
-of Plato. The Phaedo is the tragedy of which Socrates is the protagonist
-and Simmias and Cebes the secondary performers, standing to them in the
-same relation as to Glaucon and Adeimantus in the Republic. No Dialogue
-has a greater unity of subject and feeling. Plato has certainly
-fulfilled the condition of Greek, or rather of all art, which requires
-that scenes of death and suffering should be clothed in beauty. The
-gathering of the friends at the commencement of the Dialogue, the
-dismissal of Xanthippe, whose presence would have been out of place at
-a philosophical discussion, but who returns again with her children to
-take a final farewell, the dejection of the audience at the temporary
-overthrow of the argument, the picture of Socrates playing with the
-hair of Phaedo, the final scene in which Socrates alone retains his
-composure--are masterpieces of art. And the chorus at the end might have
-interpreted the feeling of the play: 'There can no evil happen to a good
-man in life or death.'
-
-'The art of concealing art' is nowhere more perfect than in those
-writings of Plato which describe the trial and death of Socrates. Their
-charm is their simplicity, which gives them verisimilitude; and yet
-they touch, as if incidentally, and because they were suitable to the
-occasion, on some of the deepest truths of philosophy. There is nothing
-in any tragedy, ancient or modern, nothing in poetry or history (with
-one exception), like the last hours of Socrates in Plato. The master
-could not be more fitly occupied at such a time than in discoursing of
-immortality; nor the disciples more divinely consoled. The arguments,
-taken in the spirit and not in the letter, are our arguments; and
-Socrates by anticipation may be even thought to refute some 'eccentric
-notions; current in our own age. For there are philosophers among
-ourselves who do not seem to understand how much stronger is the power
-of intelligence, or of the best, than of Atlas, or mechanical force.
-How far the words attributed to Socrates were actually uttered by him we
-forbear to ask; for no answer can be given to this question. And it
-is better to resign ourselves to the feeling of a great work, than to
-linger among critical uncertainties.
-
-### PHAEDO PERSONS OF THE DIALOGUE:
-
-Phaedo, who is the narrator of the dialogue to Echecrates of Phlius.
-Socrates, Apollodorus, Simmias, Cebes, Crito and an Attendant of the
-Prison.
-
-SCENE: The Prison of Socrates.
-
-PLACE OF THE NARRATION: Phlius.
-
-ECHECRATES: Were you yourself, Phaedo, in the prison with Socrates on
-the day when he drank the poison?
-
-PHAEDO: Yes, Echecrates, I was.
-
-ECHECRATES: I should so like to hear about his death. What did he say in
-his last hours? We were informed that he died by taking poison, but no
-one knew anything more; for no Phliasian ever goes to Athens now, and it
-is a long time since any stranger from Athens has found his way hither;
-so that we had no clear account.
-
-PHAEDO: Did you not hear of the proceedings at the trial?
-
-ECHECRATES: Yes; some one told us about the trial, and we could not
-understand why, having been condemned, he should have been put to death,
-not at the time, but long afterwards. What was the reason of this?
-
-PHAEDO: An accident, Echecrates: the stern of the ship which the
-Athenians send to Delos happened to have been crowned on the day before
-he was tried.
-
-ECHECRATES: What is this ship?
-
-PHAEDO: It is the ship in which, according to Athenian tradition,
-Theseus went to Crete when he took with him the fourteen youths, and was
-the saviour of them and of himself. And they were said to have vowed
-to Apollo at the time, that if they were saved they would send a yearly
-mission to Delos. Now this custom still continues, and the whole period
-of the voyage to and from Delos, beginning when the priest of Apollo
-crowns the stern of the ship, is a holy season, during which the city is
-not allowed to be polluted by public executions; and when the vessel
-is detained by contrary winds, the time spent in going and returning
-is very considerable. As I was saying, the ship was crowned on the day
-before the trial, and this was the reason why Socrates lay in prison and
-was not put to death until long after he was condemned.
-
-ECHECRATES: What was the manner of his death, Phaedo? What was said or
-done? And which of his friends were with him? Or did the authorities
-forbid them to be present--so that he had no friends near him when he
-died?
-
-PHAEDO: No; there were several of them with him.
-
-ECHECRATES: If you have nothing to do, I wish that you would tell me
-what passed, as exactly as you can.
-
-PHAEDO: I have nothing at all to do, and will try to gratify your wish.
-To be reminded of Socrates is always the greatest delight to me, whether
-I speak myself or hear another speak of him.
-
-ECHECRATES: You will have listeners who are of the same mind with you,
-and I hope that you will be as exact as you can.
-
-PHAEDO: I had a singular feeling at being in his company. For I
-could hardly believe that I was present at the death of a friend, and
-therefore I did not pity him, Echecrates; he died so fearlessly, and
-his words and bearing were so noble and gracious, that to me he appeared
-blessed. I thought that in going to the other world he could not be
-without a divine call, and that he would be happy, if any man ever was,
-when he arrived there, and therefore I did not pity him as might have
-seemed natural at such an hour. But I had not the pleasure which I
-usually feel in philosophical discourse (for philosophy was the theme
-of which we spoke). I was pleased, but in the pleasure there was also a
-strange admixture of pain; for I reflected that he was soon to die, and
-this double feeling was shared by us all; we were laughing and weeping
-by turns, especially the excitable Apollodorus--you know the sort of
-man?
-
-ECHECRATES: Yes.
-
-PHAEDO: He was quite beside himself; and I and all of us were greatly
-moved.
-
-ECHECRATES: Who were present?
-
-PHAEDO: Of native Athenians there were, besides Apollodorus, Critobulus
-and his father Crito, Hermogenes, Epigenes, Aeschines, Antisthenes;
-likewise Ctesippus of the deme of Paeania, Menexenus, and some others;
-Plato, if I am not mistaken, was ill.
-
-ECHECRATES: Were there any strangers?
-
-PHAEDO: Yes, there were; Simmias the Theban, and Cebes, and Phaedondes;
-Euclid and Terpison, who came from Megara.
-
-ECHECRATES: And was Aristippus there, and Cleombrotus?
-
-PHAEDO: No, they were said to be in Aegina.
-
-ECHECRATES: Any one else?
-
-PHAEDO: I think that these were nearly all.
-
-ECHECRATES: Well, and what did you talk about?
-
-PHAEDO: I will begin at the beginning, and endeavour to repeat the
-entire conversation. On the previous days we had been in the habit of
-assembling early in the morning at the court in which the trial took
-place, and which is not far from the prison. There we used to wait
-talking with one another until the opening of the doors (for they were
-not opened very early); then we went in and generally passed the day
-with Socrates. On the last morning we assembled sooner than usual,
-having heard on the day before when we quitted the prison in the evening
-that the sacred ship had come from Delos, and so we arranged to meet
-very early at the accustomed place. On our arrival the jailer who
-answered the door, instead of admitting us, came out and told us to stay
-until he called us. 'For the Eleven,' he said, 'are now with Socrates;
-they are taking off his chains, and giving orders that he is to die
-to-day.' He soon returned and said that we might come in. On entering we
-found Socrates just released from chains, and Xanthippe, whom you know,
-sitting by him, and holding his child in her arms. When she saw us she
-uttered a cry and said, as women will: 'O Socrates, this is the last
-time that either you will converse with your friends, or they with you.'
-Socrates turned to Crito and said: 'Crito, let some one take her home.'
-Some of Crito's people accordingly led her away, crying out and beating
-herself. And when she was gone, Socrates, sitting up on the couch, bent
-and rubbed his leg, saying, as he was rubbing: How singular is the
-thing called pleasure, and how curiously related to pain, which might be
-thought to be the opposite of it; for they are never present to a man at
-the same instant, and yet he who pursues either is generally compelled
-to take the other; their bodies are two, but they are joined by a single
-head. And I cannot help thinking that if Aesop had remembered them, he
-would have made a fable about God trying to reconcile their strife, and
-how, when he could not, he fastened their heads together; and this is
-the reason why when one comes the other follows, as I know by my own
-experience now, when after the pain in my leg which was caused by the
-chain pleasure appears to succeed.
-
-Upon this Cebes said: I am glad, Socrates, that you have mentioned the
-name of Aesop. For it reminds me of a question which has been asked by
-many, and was asked of me only the day before yesterday by Evenus the
-poet--he will be sure to ask it again, and therefore if you would like
-me to have an answer ready for him, you may as well tell me what I
-should say to him:--he wanted to know why you, who never before wrote
-a line of poetry, now that you are in prison are turning Aesop's fables
-into verse, and also composing that hymn in honour of Apollo.
-
-Tell him, Cebes, he replied, what is the truth--that I had no idea of
-rivalling him or his poems; to do so, as I knew, would be no easy task.
-But I wanted to see whether I could purge away a scruple which I felt
-about the meaning of certain dreams. In the course of my life I have
-often had intimations in dreams 'that I should compose music.' The same
-dream came to me sometimes in one form, and sometimes in another, but
-always saying the same or nearly the same words: 'Cultivate and make
-music,' said the dream. And hitherto I had imagined that this was only
-intended to exhort and encourage me in the study of philosophy, which
-has been the pursuit of my life, and is the noblest and best of music.
-The dream was bidding me do what I was already doing, in the same way
-that the competitor in a race is bidden by the spectators to run when he
-is already running. But I was not certain of this, for the dream might
-have meant music in the popular sense of the word, and being under
-sentence of death, and the festival giving me a respite, I thought that
-it would be safer for me to satisfy the scruple, and, in obedience to
-the dream, to compose a few verses before I departed. And first I made
-a hymn in honour of the god of the festival, and then considering that a
-poet, if he is really to be a poet, should not only put together words,
-but should invent stories, and that I have no invention, I took some
-fables of Aesop, which I had ready at hand and which I knew--they were
-the first I came upon--and turned them into verse. Tell this to Evenus,
-Cebes, and bid him be of good cheer; say that I would have him come
-after me if he be a wise man, and not tarry; and that to-day I am likely
-to be going, for the Athenians say that I must.
-
-Simmias said: What a message for such a man! having been a frequent
-companion of his I should say that, as far as I know him, he will never
-take your advice unless he is obliged.
-
-Why, said Socrates,--is not Evenus a philosopher?
-
-I think that he is, said Simmias.
-
-Then he, or any man who has the spirit of philosophy, will be willing to
-die, but he will not take his own life, for that is held to be unlawful.
-
-Here he changed his position, and put his legs off the couch on to the
-ground, and during the rest of the conversation he remained sitting.
-
-Why do you say, enquired Cebes, that a man ought not to take his own
-life, but that the philosopher will be ready to follow the dying?
-
-Socrates replied: And have you, Cebes and Simmias, who are the disciples
-of Philolaus, never heard him speak of this?
-
-Yes, but his language was obscure, Socrates.
-
-My words, too, are only an echo; but there is no reason why I should not
-repeat what I have heard: and indeed, as I am going to another place,
-it is very meet for me to be thinking and talking of the nature of
-the pilgrimage which I am about to make. What can I do better in the
-interval between this and the setting of the sun?
-
-Then tell me, Socrates, why is suicide held to be unlawful? as I have
-certainly heard Philolaus, about whom you were just now asking, affirm
-when he was staying with us at Thebes: and there are others who say the
-same, although I have never understood what was meant by any of them.
-
-Do not lose heart, replied Socrates, and the day may come when you will
-understand. I suppose that you wonder why, when other things which are
-evil may be good at certain times and to certain persons, death is to
-be the only exception, and why, when a man is better dead, he is not
-permitted to be his own benefactor, but must wait for the hand of
-another.
-
-Very true, said Cebes, laughing gently and speaking in his native
-Boeotian.
-
-I admit the appearance of inconsistency in what I am saying; but
-there may not be any real inconsistency after all. There is a doctrine
-whispered in secret that man is a prisoner who has no right to open
-the door and run away; this is a great mystery which I do not quite
-understand. Yet I too believe that the gods are our guardians, and that
-we are a possession of theirs. Do you not agree?
-
-Yes, I quite agree, said Cebes.
-
-And if one of your own possessions, an ox or an ass, for example, took
-the liberty of putting himself out of the way when you had given no
-intimation of your wish that he should die, would you not be angry with
-him, and would you not punish him if you could?
-
-Certainly, replied Cebes.
-
-Then, if we look at the matter thus, there may be reason in saying that
-a man should wait, and not take his own life until God summons him, as
-he is now summoning me.
-
-Yes, Socrates, said Cebes, there seems to be truth in what you say. And
-yet how can you reconcile this seemingly true belief that God is our
-guardian and we his possessions, with the willingness to die which we
-were just now attributing to the philosopher? That the wisest of men
-should be willing to leave a service in which they are ruled by the gods
-who are the best of rulers, is not reasonable; for surely no wise man
-thinks that when set at liberty he can take better care of himself than
-the gods take of him. A fool may perhaps think so--he may argue that he
-had better run away from his master, not considering that his duty is
-to remain to the end, and not to run away from the good, and that there
-would be no sense in his running away. The wise man will want to be ever
-with him who is better than himself. Now this, Socrates, is the reverse
-of what was just now said; for upon this view the wise man should sorrow
-and the fool rejoice at passing out of life.
-
-The earnestness of Cebes seemed to please Socrates. Here, said he,
-turning to us, is a man who is always inquiring, and is not so easily
-convinced by the first thing which he hears.
-
-And certainly, added Simmias, the objection which he is now making does
-appear to me to have some force. For what can be the meaning of a truly
-wise man wanting to fly away and lightly leave a master who is better
-than himself? And I rather imagine that Cebes is referring to you; he
-thinks that you are too ready to leave us, and too ready to leave the
-gods whom you acknowledge to be our good masters.
-
-Yes, replied Socrates; there is reason in what you say. And so you think
-that I ought to answer your indictment as if I were in a court?
-
-We should like you to do so, said Simmias.
-
-Then I must try to make a more successful defence before you than I
-did when before the judges. For I am quite ready to admit, Simmias and
-Cebes, that I ought to be grieved at death, if I were not persuaded in
-the first place that I am going to other gods who are wise and good (of
-which I am as certain as I can be of any such matters), and secondly
-(though I am not so sure of this last) to men departed, better than
-those whom I leave behind; and therefore I do not grieve as I might have
-done, for I have good hope that there is yet something remaining for the
-dead, and as has been said of old, some far better thing for the good
-than for the evil.
-
-But do you mean to take away your thoughts with you, Socrates? said
-Simmias. Will you not impart them to us?--for they are a benefit
-in which we too are entitled to share. Moreover, if you succeed in
-convincing us, that will be an answer to the charge against yourself.
-
-I will do my best, replied Socrates. But you must first let me hear what
-Crito wants; he has long been wishing to say something to me.
-
-Only this, Socrates, replied Crito:--the attendant who is to give you
-the poison has been telling me, and he wants me to tell you, that you
-are not to talk much, talking, he says, increases heat, and this is
-apt to interfere with the action of the poison; persons who excite
-themselves are sometimes obliged to take a second or even a third dose.
-
-Then, said Socrates, let him mind his business and be prepared to give
-the poison twice or even thrice if necessary; that is all.
-
-I knew quite well what you would say, replied Crito; but I was obliged
-to satisfy him.
-
-Never mind him, he said.
-
-And now, O my judges, I desire to prove to you that the real philosopher
-has reason to be of good cheer when he is about to die, and that after
-death he may hope to obtain the greatest good in the other world. And
-how this may be, Simmias and Cebes, I will endeavour to explain. For I
-deem that the true votary of philosophy is likely to be misunderstood
-by other men; they do not perceive that he is always pursuing death and
-dying; and if this be so, and he has had the desire of death all his
-life long, why when his time comes should he repine at that which he has
-been always pursuing and desiring?
-
-Simmias said laughingly: Though not in a laughing humour, you have made
-me laugh, Socrates; for I cannot help thinking that the many when they
-hear your words will say how truly you have described philosophers, and
-our people at home will likewise say that the life which philosophers
-desire is in reality death, and that they have found them out to be
-deserving of the death which they desire.
-
-And they are right, Simmias, in thinking so, with the exception of the
-words 'they have found them out'; for they have not found out either
-what is the nature of that death which the true philosopher deserves,
-or how he deserves or desires death. But enough of them:--let us discuss
-the matter among ourselves: Do we believe that there is such a thing as
-death?
-
-To be sure, replied Simmias.
-
-Is it not the separation of soul and body? And to be dead is the
-completion of this; when the soul exists in herself, and is released
-from the body and the body is released from the soul, what is this but
-death?
-
-Just so, he replied.
-
-There is another question, which will probably throw light on our
-present inquiry if you and I can agree about it:--Ought the philosopher
-to care about the pleasures--if they are to be called pleasures--of
-eating and drinking?
-
-Certainly not, answered Simmias.
-
-And what about the pleasures of love--should he care for them?
-
-By no means.
-
-And will he think much of the other ways of indulging the body, for
-example, the acquisition of costly raiment, or sandals, or other
-adornments of the body? Instead of caring about them, does he not rather
-despise anything more than nature needs? What do you say?
-
-I should say that the true philosopher would despise them.
-
-Would you not say that he is entirely concerned with the soul and not
-with the body? He would like, as far as he can, to get away from the
-body and to turn to the soul.
-
-Quite true.
-
-In matters of this sort philosophers, above all other men, may be
-observed in every sort of way to dissever the soul from the communion of
-the body.
-
-Very true.
-
-Whereas, Simmias, the rest of the world are of opinion that to him who
-has no sense of pleasure and no part in bodily pleasure, life is not
-worth having; and that he who is indifferent about them is as good as
-dead.
-
-That is also true.
-
-What again shall we say of the actual acquirement of knowledge?--is the
-body, if invited to share in the enquiry, a hinderer or a helper? I mean
-to say, have sight and hearing any truth in them? Are they not, as the
-poets are always telling us, inaccurate witnesses? and yet, if even
-they are inaccurate and indistinct, what is to be said of the other
-senses?--for you will allow that they are the best of them?
-
-Certainly, he replied.
-
-Then when does the soul attain truth?--for in attempting to consider
-anything in company with the body she is obviously deceived.
-
-True.
-
-Then must not true existence be revealed to her in thought, if at all?
-
-Yes.
-
-And thought is best when the mind is gathered into herself and none of
-these things trouble her--neither sounds nor sights nor pain nor any
-pleasure,--when she takes leave of the body, and has as little as
-possible to do with it, when she has no bodily sense or desire, but is
-aspiring after true being?
-
-Certainly.
-
-And in this the philosopher dishonours the body; his soul runs away from
-his body and desires to be alone and by herself?
-
-That is true.
-
-Well, but there is another thing, Simmias: Is there or is there not an
-absolute justice?
-
-Assuredly there is.
-
-And an absolute beauty and absolute good?
-
-Of course.
-
-But did you ever behold any of them with your eyes?
-
-Certainly not.
-
-Or did you ever reach them with any other bodily sense?--and I speak not
-of these alone, but of absolute greatness, and health, and strength,
-and of the essence or true nature of everything. Has the reality of them
-ever been perceived by you through the bodily organs? or rather, is not
-the nearest approach to the knowledge of their several natures made
-by him who so orders his intellectual vision as to have the most exact
-conception of the essence of each thing which he considers?
-
-Certainly.
-
-And he attains to the purest knowledge of them who goes to each with the
-mind alone, not introducing or intruding in the act of thought sight
-or any other sense together with reason, but with the very light of the
-mind in her own clearness searches into the very truth of each; he who
-has got rid, as far as he can, of eyes and ears and, so to speak, of the
-whole body, these being in his opinion distracting elements which when
-they infect the soul hinder her from acquiring truth and knowledge--who,
-if not he, is likely to attain the knowledge of true being?
-
-What you say has a wonderful truth in it, Socrates, replied Simmias.
-
-And when real philosophers consider all these things, will they not be
-led to make a reflection which they will express in words something like
-the following? 'Have we not found,' they will say, 'a path of thought
-which seems to bring us and our argument to the conclusion, that while
-we are in the body, and while the soul is infected with the evils of the
-body, our desire will not be satisfied? and our desire is of the truth.
-For the body is a source of endless trouble to us by reason of the mere
-requirement of food; and is liable also to diseases which overtake and
-impede us in the search after true being: it fills us full of loves, and
-lusts, and fears, and fancies of all kinds, and endless foolery, and
-in fact, as men say, takes away from us the power of thinking at all.
-Whence come wars, and fightings, and factions? whence but from the body
-and the lusts of the body? wars are occasioned by the love of money, and
-money has to be acquired for the sake and in the service of the body;
-and by reason of all these impediments we have no time to give to
-philosophy; and, last and worst of all, even if we are at leisure and
-betake ourselves to some speculation, the body is always breaking in
-upon us, causing turmoil and confusion in our enquiries, and so amazing
-us that we are prevented from seeing the truth. It has been proved to us
-by experience that if we would have pure knowledge of anything we
-must be quit of the body--the soul in herself must behold things in
-themselves: and then we shall attain the wisdom which we desire, and of
-which we say that we are lovers, not while we live, but after death; for
-if while in company with the body, the soul cannot have pure knowledge,
-one of two things follows--either knowledge is not to be attained at
-all, or, if at all, after death. For then, and not till then, the soul
-will be parted from the body and exist in herself alone. In this present
-life, I reckon that we make the nearest approach to knowledge when we
-have the least possible intercourse or communion with the body, and are
-not surfeited with the bodily nature, but keep ourselves pure until the
-hour when God himself is pleased to release us. And thus having got rid
-of the foolishness of the body we shall be pure and hold converse with
-the pure, and know of ourselves the clear light everywhere, which is
-no other than the light of truth.' For the impure are not permitted to
-approach the pure. These are the sort of words, Simmias, which the true
-lovers of knowledge cannot help saying to one another, and thinking. You
-would agree; would you not?
-
-Undoubtedly, Socrates.
-
-But, O my friend, if this is true, there is great reason to hope that,
-going whither I go, when I have come to the end of my journey, I shall
-attain that which has been the pursuit of my life. And therefore I go on
-my way rejoicing, and not I only, but every other man who believes that
-his mind has been made ready and that he is in a manner purified.
-
-Certainly, replied Simmias.
-
-And what is purification but the separation of the soul from the body,
-as I was saying before; the habit of the soul gathering and collecting
-herself into herself from all sides out of the body; the dwelling in
-her own place alone, as in another life, so also in this, as far as she
-can;--the release of the soul from the chains of the body?
-
-Very true, he said.
-
-And this separation and release of the soul from the body is termed
-death?
-
-To be sure, he said.
-
-And the true philosophers, and they only, are ever seeking to release
-the soul. Is not the separation and release of the soul from the body
-their especial study?
-
-That is true.
-
-And, as I was saying at first, there would be a ridiculous contradiction
-in men studying to live as nearly as they can in a state of death, and
-yet repining when it comes upon them.
-
-Clearly.
-
-And the true philosophers, Simmias, are always occupied in the practice
-of dying, wherefore also to them least of all men is death terrible.
-Look at the matter thus:--if they have been in every way the enemies of
-the body, and are wanting to be alone with the soul, when this desire of
-theirs is granted, how inconsistent would they be if they trembled and
-repined, instead of rejoicing at their departure to that place where,
-when they arrive, they hope to gain that which in life they desired--and
-this was wisdom--and at the same time to be rid of the company of their
-enemy. Many a man has been willing to go to the world below animated
-by the hope of seeing there an earthly love, or wife, or son, and
-conversing with them. And will he who is a true lover of wisdom, and is
-strongly persuaded in like manner that only in the world below he can
-worthily enjoy her, still repine at death? Will he not depart with joy?
-Surely he will, O my friend, if he be a true philosopher. For he will
-have a firm conviction that there and there only, he can find wisdom
-in her purity. And if this be true, he would be very absurd, as I was
-saying, if he were afraid of death.
-
-He would, indeed, replied Simmias.
-
-And when you see a man who is repining at the approach of death, is not
-his reluctance a sufficient proof that he is not a lover of wisdom, but
-a lover of the body, and probably at the same time a lover of either
-money or power, or both?
-
-Quite so, he replied.
-
-And is not courage, Simmias, a quality which is specially characteristic
-of the philosopher?
-
-Certainly.
-
-There is temperance again, which even by the vulgar is supposed to
-consist in the control and regulation of the passions, and in the sense
-of superiority to them--is not temperance a virtue belonging to those
-only who despise the body, and who pass their lives in philosophy?
-
-Most assuredly.
-
-For the courage and temperance of other men, if you will consider them,
-are really a contradiction.
-
-How so?
-
-Well, he said, you are aware that death is regarded by men in general as
-a great evil.
-
-Very true, he said.
-
-And do not courageous men face death because they are afraid of yet
-greater evils?
-
-That is quite true.
-
-Then all but the philosophers are courageous only from fear, and because
-they are afraid; and yet that a man should be courageous from fear, and
-because he is a coward, is surely a strange thing.
-
-Very true.
-
-And are not the temperate exactly in the same case? They are temperate
-because they are intemperate--which might seem to be a contradiction,
-but is nevertheless the sort of thing which happens with this foolish
-temperance. For there are pleasures which they are afraid of losing; and
-in their desire to keep them, they abstain from some pleasures, because
-they are overcome by others; and although to be conquered by pleasure is
-called by men intemperance, to them the conquest of pleasure consists in
-being conquered by pleasure. And that is what I mean by saying that, in
-a sense, they are made temperate through intemperance.
-
-Such appears to be the case.
-
-Yet the exchange of one fear or pleasure or pain for another fear or
-pleasure or pain, and of the greater for the less, as if they were
-coins, is not the exchange of virtue. O my blessed Simmias, is there not
-one true coin for which all things ought to be exchanged?--and that
-is wisdom; and only in exchange for this, and in company with this, is
-anything truly bought or sold, whether courage or temperance or justice.
-And is not all true virtue the companion of wisdom, no matter what fears
-or pleasures or other similar goods or evils may or may not attend her?
-But the virtue which is made up of these goods, when they are severed
-from wisdom and exchanged with one another, is a shadow of virtue only,
-nor is there any freedom or health or truth in her; but in the true
-exchange there is a purging away of all these things, and temperance,
-and justice, and courage, and wisdom herself are the purgation of them.
-The founders of the mysteries would appear to have had a real meaning,
-and were not talking nonsense when they intimated in a figure long ago
-that he who passes unsanctified and uninitiated into the world below
-will lie in a slough, but that he who arrives there after initiation and
-purification will dwell with the gods. For 'many,' as they say in the
-mysteries, 'are the thyrsus-bearers, but few are the mystics,'--meaning,
-as I interpret the words, 'the true philosophers.' In the number
-of whom, during my whole life, I have been seeking, according to my
-ability, to find a place;--whether I have sought in a right way or not,
-and whether I have succeeded or not, I shall truly know in a little
-while, if God will, when I myself arrive in the other world--such is my
-belief. And therefore I maintain that I am right, Simmias and Cebes,
-in not grieving or repining at parting from you and my masters in this
-world, for I believe that I shall equally find good masters and friends
-in another world. But most men do not believe this saying; if then I
-succeed in convincing you by my defence better than I did the Athenian
-judges, it will be well.
-
-Cebes answered: I agree, Socrates, in the greater part of what you say.
-But in what concerns the soul, men are apt to be incredulous; they fear
-that when she has left the body her place may be nowhere, and that on
-the very day of death she may perish and come to an end--immediately on
-her release from the body, issuing forth dispersed like smoke or air
-and in her flight vanishing away into nothingness. If she could only be
-collected into herself after she has obtained release from the evils of
-which you are speaking, there would be good reason to hope, Socrates,
-that what you say is true. But surely it requires a great deal of
-argument and many proofs to show that when the man is dead his soul yet
-exists, and has any force or intelligence.
-
-True, Cebes, said Socrates; and shall I suggest that we converse a
-little of the probabilities of these things?
-
-I am sure, said Cebes, that I should greatly like to know your opinion
-about them.
-
-I reckon, said Socrates, that no one who heard me now, not even if he
-were one of my old enemies, the Comic poets, could accuse me of idle
-talking about matters in which I have no concern:--If you please, then,
-we will proceed with the inquiry.
-
-Suppose we consider the question whether the souls of men after death
-are or are not in the world below. There comes into my mind an ancient
-doctrine which affirms that they go from hence into the other world, and
-returning hither, are born again from the dead. Now if it be true that
-the living come from the dead, then our souls must exist in the other
-world, for if not, how could they have been born again? And this would
-be conclusive, if there were any real evidence that the living are only
-born from the dead; but if this is not so, then other arguments will
-have to be adduced.
-
-Very true, replied Cebes.
-
-Then let us consider the whole question, not in relation to man only,
-but in relation to animals generally, and to plants, and to everything
-of which there is generation, and the proof will be easier. Are not all
-things which have opposites generated out of their opposites? I mean
-such things as good and evil, just and unjust--and there are innumerable
-other opposites which are generated out of opposites. And I want to show
-that in all opposites there is of necessity a similar alternation;
-I mean to say, for example, that anything which becomes greater must
-become greater after being less.
-
-True.
-
-And that which becomes less must have been once greater and then have
-become less.
-
-Yes.
-
-And the weaker is generated from the stronger, and the swifter from the
-slower.
-
-Very true.
-
-And the worse is from the better, and the more just is from the more
-unjust.
-
-Of course.
-
-And is this true of all opposites? and are we convinced that all of them
-are generated out of opposites?
-
-Yes.
-
-And in this universal opposition of all things, are there not also two
-intermediate processes which are ever going on, from one to the other
-opposite, and back again; where there is a greater and a less there is
-also an intermediate process of increase and diminution, and that which
-grows is said to wax, and that which decays to wane?
-
-Yes, he said.
-
-And there are many other processes, such as division and composition,
-cooling and heating, which equally involve a passage into and out of one
-another. And this necessarily holds of all opposites, even though not
-always expressed in words--they are really generated out of one another,
-and there is a passing or process from one to the other of them?
-
-Very true, he replied.
-
-Well, and is there not an opposite of life, as sleep is the opposite of
-waking?
-
-True, he said.
-
-And what is it?
-
-Death, he answered.
-
-And these, if they are opposites, are generated the one from the other,
-and have there their two intermediate processes also?
-
-Of course.
-
-Now, said Socrates, I will analyze one of the two pairs of opposites
-which I have mentioned to you, and also its intermediate processes, and
-you shall analyze the other to me. One of them I term sleep, the other
-waking. The state of sleep is opposed to the state of waking, and out
-of sleeping waking is generated, and out of waking, sleeping; and the
-process of generation is in the one case falling asleep, and in the
-other waking up. Do you agree?
-
-I entirely agree.
-
-Then, suppose that you analyze life and death to me in the same manner.
-Is not death opposed to life?
-
-Yes.
-
-And they are generated one from the other?
-
-Yes.
-
-What is generated from the living?
-
-The dead.
-
-And what from the dead?
-
-I can only say in answer--the living.
-
-Then the living, whether things or persons, Cebes, are generated from
-the dead?
-
-That is clear, he replied.
-
-Then the inference is that our souls exist in the world below?
-
-That is true.
-
-And one of the two processes or generations is visible--for surely the
-act of dying is visible?
-
-Surely, he said.
-
-What then is to be the result? Shall we exclude the opposite process?
-And shall we suppose nature to walk on one leg only? Must we not rather
-assign to death some corresponding process of generation?
-
-Certainly, he replied.
-
-And what is that process?
-
-Return to life.
-
-And return to life, if there be such a thing, is the birth of the dead
-into the world of the living?
-
-Quite true.
-
-Then here is a new way by which we arrive at the conclusion that the
-living come from the dead, just as the dead come from the living; and
-this, if true, affords a most certain proof that the souls of the dead
-exist in some place out of which they come again.
-
-Yes, Socrates, he said; the conclusion seems to flow necessarily out of
-our previous admissions.
-
-And that these admissions were not unfair, Cebes, he said, may be shown,
-I think, as follows: If generation were in a straight line only, and
-there were no compensation or circle in nature, no turn or return of
-elements into their opposites, then you know that all things would at
-last have the same form and pass into the same state, and there would be
-no more generation of them.
-
-What do you mean? he said.
-
-A simple thing enough, which I will illustrate by the case of sleep,
-he replied. You know that if there were no alternation of sleeping
-and waking, the tale of the sleeping Endymion would in the end have no
-meaning, because all other things would be asleep, too, and he would not
-be distinguishable from the rest. Or if there were composition only,
-and no division of substances, then the chaos of Anaxagoras would come
-again. And in like manner, my dear Cebes, if all things which partook
-of life were to die, and after they were dead remained in the form
-of death, and did not come to life again, all would at last die, and
-nothing would be alive--what other result could there be? For if the
-living spring from any other things, and they too die, must not all
-things at last be swallowed up in death? (But compare Republic.)
-
-There is no escape, Socrates, said Cebes; and to me your argument seems
-to be absolutely true.
-
-Yes, he said, Cebes, it is and must be so, in my opinion; and we have
-not been deluded in making these admissions; but I am confident that
-there truly is such a thing as living again, and that the living spring
-from the dead, and that the souls of the dead are in existence, and that
-the good souls have a better portion than the evil.
-
-Cebes added: Your favorite doctrine, Socrates, that knowledge is simply
-recollection, if true, also necessarily implies a previous time in
-which we have learned that which we now recollect. But this would be
-impossible unless our soul had been in some place before existing in the
-form of man; here then is another proof of the soul's immortality.
-
-But tell me, Cebes, said Simmias, interposing, what arguments are urged
-in favour of this doctrine of recollection. I am not very sure at the
-moment that I remember them.
-
-One excellent proof, said Cebes, is afforded by questions. If you put
-a question to a person in a right way, he will give a true answer of
-himself, but how could he do this unless there were knowledge and right
-reason already in him? And this is most clearly shown when he is taken
-to a diagram or to anything of that sort. (Compare Meno.)
-
-But if, said Socrates, you are still incredulous, Simmias, I would ask
-you whether you may not agree with me when you look at the matter
-in another way;--I mean, if you are still incredulous as to whether
-knowledge is recollection.
-
-Incredulous, I am not, said Simmias; but I want to have this doctrine
-of recollection brought to my own recollection, and, from what Cebes has
-said, I am beginning to recollect and be convinced; but I should still
-like to hear what you were going to say.
-
-This is what I would say, he replied:--We should agree, if I am not
-mistaken, that what a man recollects he must have known at some previous
-time.
-
-Very true.
-
-And what is the nature of this knowledge or recollection? I mean to
-ask, Whether a person who, having seen or heard or in any way perceived
-anything, knows not only that, but has a conception of something
-else which is the subject, not of the same but of some other kind of
-knowledge, may not be fairly said to recollect that of which he has the
-conception?
-
-What do you mean?
-
-I mean what I may illustrate by the following instance:--The knowledge
-of a lyre is not the same as the knowledge of a man?
-
-True.
-
-And yet what is the feeling of lovers when they recognize a lyre, or
-a garment, or anything else which the beloved has been in the habit of
-using? Do not they, from knowing the lyre, form in the mind's eye an
-image of the youth to whom the lyre belongs? And this is recollection.
-In like manner any one who sees Simmias may remember Cebes; and there
-are endless examples of the same thing.
-
-Endless, indeed, replied Simmias.
-
-And recollection is most commonly a process of recovering that which has
-been already forgotten through time and inattention.
-
-Very true, he said.
-
-Well; and may you not also from seeing the picture of a horse or a
-lyre remember a man? and from the picture of Simmias, you may be led to
-remember Cebes?
-
-True.
-
-Or you may also be led to the recollection of Simmias himself?
-
-Quite so.
-
-And in all these cases, the recollection may be derived from things
-either like or unlike?
-
-It may be.
-
-And when the recollection is derived from like things, then another
-consideration is sure to arise, which is--whether the likeness in any
-degree falls short or not of that which is recollected?
-
-Very true, he said.
-
-And shall we proceed a step further, and affirm that there is such a
-thing as equality, not of one piece of wood or stone with another, but
-that, over and above this, there is absolute equality? Shall we say so?
-
-Say so, yes, replied Simmias, and swear to it, with all the confidence
-in life.
-
-And do we know the nature of this absolute essence?
-
-To be sure, he said.
-
-And whence did we obtain our knowledge? Did we not see equalities of
-material things, such as pieces of wood and stones, and gather from
-them the idea of an equality which is different from them? For you will
-acknowledge that there is a difference. Or look at the matter in another
-way:--Do not the same pieces of wood or stone appear at one time equal,
-and at another time unequal?
-
-That is certain.
-
-But are real equals ever unequal? or is the idea of equality the same as
-of inequality?
-
-Impossible, Socrates.
-
-Then these (so-called) equals are not the same with the idea of
-equality?
-
-I should say, clearly not, Socrates.
-
-And yet from these equals, although differing from the idea of equality,
-you conceived and attained that idea?
-
-Very true, he said.
-
-Which might be like, or might be unlike them?
-
-Yes.
-
-But that makes no difference; whenever from seeing one thing you
-conceived another, whether like or unlike, there must surely have been
-an act of recollection?
-
-Very true.
-
-But what would you say of equal portions of wood and stone, or other
-material equals? and what is the impression produced by them? Are they
-equals in the same sense in which absolute equality is equal? or do they
-fall short of this perfect equality in a measure?
-
-Yes, he said, in a very great measure too.
-
-And must we not allow, that when I or any one, looking at any object,
-observes that the thing which he sees aims at being some other thing,
-but falls short of, and cannot be, that other thing, but is inferior, he
-who makes this observation must have had a previous knowledge of that to
-which the other, although similar, was inferior?
-
-Certainly.
-
-And has not this been our own case in the matter of equals and of
-absolute equality?
-
-Precisely.
-
-Then we must have known equality previously to the time when we first
-saw the material equals, and reflected that all these apparent equals
-strive to attain absolute equality, but fall short of it?
-
-Very true.
-
-And we recognize also that this absolute equality has only been known,
-and can only be known, through the medium of sight or touch, or of some
-other of the senses, which are all alike in this respect?
-
-Yes, Socrates, as far as the argument is concerned, one of them is the
-same as the other.
-
-From the senses then is derived the knowledge that all sensible things
-aim at an absolute equality of which they fall short?
-
-Yes.
-
-Then before we began to see or hear or perceive in any way, we must have
-had a knowledge of absolute equality, or we could not have referred to
-that standard the equals which are derived from the senses?--for to that
-they all aspire, and of that they fall short.
-
-No other inference can be drawn from the previous statements.
-
-And did we not see and hear and have the use of our other senses as soon
-as we were born?
-
-Certainly.
-
-Then we must have acquired the knowledge of equality at some previous
-time?
-
-Yes.
-
-That is to say, before we were born, I suppose?
-
-True.
-
-And if we acquired this knowledge before we were born, and were born
-having the use of it, then we also knew before we were born and at the
-instant of birth not only the equal or the greater or the less, but all
-other ideas; for we are not speaking only of equality, but of beauty,
-goodness, justice, holiness, and of all which we stamp with the name of
-essence in the dialectical process, both when we ask and when we answer
-questions. Of all this we may certainly affirm that we acquired the
-knowledge before birth?
-
-We may.
-
-But if, after having acquired, we have not forgotten what in each case
-we acquired, then we must always have come into life having knowledge,
-and shall always continue to know as long as life lasts--for knowing
-is the acquiring and retaining knowledge and not forgetting. Is not
-forgetting, Simmias, just the losing of knowledge?
-
-Quite true, Socrates.
-
-But if the knowledge which we acquired before birth was lost by us at
-birth, and if afterwards by the use of the senses we recovered what
-we previously knew, will not the process which we call learning be a
-recovering of the knowledge which is natural to us, and may not this be
-rightly termed recollection?
-
-Very true.
-
-So much is clear--that when we perceive something, either by the help of
-sight, or hearing, or some other sense, from that perception we are
-able to obtain a notion of some other thing like or unlike which is
-associated with it but has been forgotten. Whence, as I was saying, one
-of two alternatives follows:--either we had this knowledge at birth, and
-continued to know through life; or, after birth, those who are said to
-learn only remember, and learning is simply recollection.
-
-Yes, that is quite true, Socrates.
-
-And which alternative, Simmias, do you prefer? Had we the knowledge at
-our birth, or did we recollect the things which we knew previously to
-our birth?
-
-I cannot decide at the moment.
-
-At any rate you can decide whether he who has knowledge will or will not
-be able to render an account of his knowledge? What do you say?
-
-Certainly, he will.
-
-But do you think that every man is able to give an account of these very
-matters about which we are speaking?
-
-Would that they could, Socrates, but I rather fear that to-morrow, at
-this time, there will no longer be any one alive who is able to give an
-account of them such as ought to be given.
-
-Then you are not of opinion, Simmias, that all men know these things?
-
-Certainly not.
-
-They are in process of recollecting that which they learned before?
-
-Certainly.
-
-But when did our souls acquire this knowledge?--not since we were born
-as men?
-
-Certainly not.
-
-And therefore, previously?
-
-Yes.
-
-Then, Simmias, our souls must also have existed without bodies before
-they were in the form of man, and must have had intelligence.
-
-Unless indeed you suppose, Socrates, that these notions are given us at
-the very moment of birth; for this is the only time which remains.
-
-Yes, my friend, but if so, when do we lose them? for they are not in
-us when we are born--that is admitted. Do we lose them at the moment of
-receiving them, or if not at what other time?
-
-No, Socrates, I perceive that I was unconsciously talking nonsense.
-
-Then may we not say, Simmias, that if, as we are always repeating, there
-is an absolute beauty, and goodness, and an absolute essence of all
-things; and if to this, which is now discovered to have existed in our
-former state, we refer all our sensations, and with this compare them,
-finding these ideas to be pre-existent and our inborn possession--then
-our souls must have had a prior existence, but if not, there would be
-no force in the argument? There is the same proof that these ideas must
-have existed before we were born, as that our souls existed before we
-were born; and if not the ideas, then not the souls.
-
-Yes, Socrates; I am convinced that there is precisely the same necessity
-for the one as for the other; and the argument retreats successfully
-to the position that the existence of the soul before birth cannot be
-separated from the existence of the essence of which you speak. For
-there is nothing which to my mind is so patent as that beauty, goodness,
-and the other notions of which you were just now speaking, have a most
-real and absolute existence; and I am satisfied with the proof.
-
-Well, but is Cebes equally satisfied? for I must convince him too.
-
-I think, said Simmias, that Cebes is satisfied: although he is the most
-incredulous of mortals, yet I believe that he is sufficiently convinced
-of the existence of the soul before birth. But that after death the soul
-will continue to exist is not yet proven even to my own satisfaction.
-I cannot get rid of the feeling of the many to which Cebes was
-referring--the feeling that when the man dies the soul will be
-dispersed, and that this may be the extinction of her. For admitting
-that she may have been born elsewhere, and framed out of other elements,
-and was in existence before entering the human body, why after having
-entered in and gone out again may she not herself be destroyed and come
-to an end?
-
-Very true, Simmias, said Cebes; about half of what was required has been
-proven; to wit, that our souls existed before we were born:--that the
-soul will exist after death as well as before birth is the other half of
-which the proof is still wanting, and has to be supplied; when that is
-given the demonstration will be complete.
-
-But that proof, Simmias and Cebes, has been already given, said
-Socrates, if you put the two arguments together--I mean this and the
-former one, in which we admitted that everything living is born of the
-dead. For if the soul exists before birth, and in coming to life and
-being born can be born only from death and dying, must she not after
-death continue to exist, since she has to be born again?--Surely the
-proof which you desire has been already furnished. Still I suspect
-that you and Simmias would be glad to probe the argument further. Like
-children, you are haunted with a fear that when the soul leaves the
-body, the wind may really blow her away and scatter her; especially if a
-man should happen to die in a great storm and not when the sky is calm.
-
-Cebes answered with a smile: Then, Socrates, you must argue us out of
-our fears--and yet, strictly speaking, they are not our fears, but there
-is a child within us to whom death is a sort of hobgoblin; him too we
-must persuade not to be afraid when he is alone in the dark.
-
-Socrates said: Let the voice of the charmer be applied daily until you
-have charmed away the fear.
-
-And where shall we find a good charmer of our fears, Socrates, when you
-are gone?
-
-Hellas, he replied, is a large place, Cebes, and has many good men, and
-there are barbarous races not a few: seek for him among them all, far
-and wide, sparing neither pains nor money; for there is no better way
-of spending your money. And you must seek among yourselves too; for you
-will not find others better able to make the search.
-
-The search, replied Cebes, shall certainly be made. And now, if
-you please, let us return to the point of the argument at which we
-digressed.
-
-By all means, replied Socrates; what else should I please?
-
-Very good.
-
-Must we not, said Socrates, ask ourselves what that is which, as we
-imagine, is liable to be scattered, and about which we fear? and what
-again is that about which we have no fear? And then we may proceed
-further to enquire whether that which suffers dispersion is or is not
-of the nature of soul--our hopes and fears as to our own souls will turn
-upon the answers to these questions.
-
-Very true, he said.
-
-Now the compound or composite may be supposed to be naturally capable,
-as of being compounded, so also of being dissolved; but that which is
-uncompounded, and that only, must be, if anything is, indissoluble.
-
-Yes; I should imagine so, said Cebes.
-
-And the uncompounded may be assumed to be the same and unchanging,
-whereas the compound is always changing and never the same.
-
-I agree, he said.
-
-Then now let us return to the previous discussion. Is that idea or
-essence, which in the dialectical process we define as essence or true
-existence--whether essence of equality, beauty, or anything else--are
-these essences, I say, liable at times to some degree of change? or
-are they each of them always what they are, having the same simple
-self-existent and unchanging forms, not admitting of variation at all,
-or in any way, or at any time?
-
-They must be always the same, Socrates, replied Cebes.
-
-And what would you say of the many beautiful--whether men or horses or
-garments or any other things which are named by the same names and may
-be called equal or beautiful,--are they all unchanging and the same
-always, or quite the reverse? May they not rather be described as almost
-always changing and hardly ever the same, either with themselves or with
-one another?
-
-The latter, replied Cebes; they are always in a state of change.
-
-And these you can touch and see and perceive with the senses, but
-the unchanging things you can only perceive with the mind--they are
-invisible and are not seen?
-
-That is very true, he said.
-
-Well, then, added Socrates, let us suppose that there are two sorts of
-existences--one seen, the other unseen.
-
-Let us suppose them.
-
-The seen is the changing, and the unseen is the unchanging?
-
-That may be also supposed.
-
-And, further, is not one part of us body, another part soul?
-
-To be sure.
-
-And to which class is the body more alike and akin?
-
-Clearly to the seen--no one can doubt that.
-
-And is the soul seen or not seen?
-
-Not by man, Socrates.
-
-And what we mean by 'seen' and 'not seen' is that which is or is not
-visible to the eye of man?
-
-Yes, to the eye of man.
-
-And is the soul seen or not seen?
-
-Not seen.
-
-Unseen then?
-
-Yes.
-
-Then the soul is more like to the unseen, and the body to the seen?
-
-That follows necessarily, Socrates.
-
-And were we not saying long ago that the soul when using the body as an
-instrument of perception, that is to say, when using the sense of sight
-or hearing or some other sense (for the meaning of perceiving through
-the body is perceiving through the senses)--were we not saying that the
-soul too is then dragged by the body into the region of the changeable,
-and wanders and is confused; the world spins round her, and she is like
-a drunkard, when she touches change?
-
-Very true.
-
-But when returning into herself she reflects, then she passes into the
-other world, the region of purity, and eternity, and immortality, and
-unchangeableness, which are her kindred, and with them she ever lives,
-when she is by herself and is not let or hindered; then she ceases
-from her erring ways, and being in communion with the unchanging is
-unchanging. And this state of the soul is called wisdom?
-
-That is well and truly said, Socrates, he replied.
-
-And to which class is the soul more nearly alike and akin, as far as may
-be inferred from this argument, as well as from the preceding one?
-
-I think, Socrates, that, in the opinion of every one who follows the
-argument, the soul will be infinitely more like the unchangeable--even
-the most stupid person will not deny that.
-
-And the body is more like the changing?
-
-Yes.
-
-Yet once more consider the matter in another light: When the soul and
-the body are united, then nature orders the soul to rule and govern, and
-the body to obey and serve. Now which of these two functions is akin to
-the divine? and which to the mortal? Does not the divine appear to you
-to be that which naturally orders and rules, and the mortal to be that
-which is subject and servant?
-
-True.
-
-And which does the soul resemble?
-
-The soul resembles the divine, and the body the mortal--there can be no
-doubt of that, Socrates.
-
-Then reflect, Cebes: of all which has been said is not this the
-conclusion?--that the soul is in the very likeness of the divine,
-and immortal, and intellectual, and uniform, and indissoluble, and
-unchangeable; and that the body is in the very likeness of the human,
-and mortal, and unintellectual, and multiform, and dissoluble, and
-changeable. Can this, my dear Cebes, be denied?
-
-It cannot.
-
-But if it be true, then is not the body liable to speedy dissolution?
-and is not the soul almost or altogether indissoluble?
-
-Certainly.
-
-And do you further observe, that after a man is dead, the body, or
-visible part of him, which is lying in the visible world, and is
-called a corpse, and would naturally be dissolved and decomposed and
-dissipated, is not dissolved or decomposed at once, but may remain for a
-for some time, nay even for a long time, if the constitution be sound at
-the time of death, and the season of the year favourable? For the body
-when shrunk and embalmed, as the manner is in Egypt, may remain almost
-entire through infinite ages; and even in decay, there are still
-some portions, such as the bones and ligaments, which are practically
-indestructible:--Do you agree?
-
-Yes.
-
-And is it likely that the soul, which is invisible, in passing to the
-place of the true Hades, which like her is invisible, and pure, and
-noble, and on her way to the good and wise God, whither, if God will, my
-soul is also soon to go,--that the soul, I repeat, if this be her nature
-and origin, will be blown away and destroyed immediately on quitting the
-body, as the many say? That can never be, my dear Simmias and Cebes.
-The truth rather is, that the soul which is pure at departing and draws
-after her no bodily taint, having never voluntarily during life had
-connection with the body, which she is ever avoiding, herself gathered
-into herself;--and making such abstraction her perpetual study--which
-means that she has been a true disciple of philosophy; and therefore
-has in fact been always engaged in the practice of dying? For is not
-philosophy the practice of death?--
-
-Certainly--
-
-That soul, I say, herself invisible, departs to the invisible world--to
-the divine and immortal and rational: thither arriving, she is secure of
-bliss and is released from the error and folly of men, their fears and
-wild passions and all other human ills, and for ever dwells, as they say
-of the initiated, in company with the gods (compare Apol.). Is not this
-true, Cebes?
-
-Yes, said Cebes, beyond a doubt.
-
-But the soul which has been polluted, and is impure at the time of her
-departure, and is the companion and servant of the body always, and is
-in love with and fascinated by the body and by the desires and pleasures
-of the body, until she is led to believe that the truth only exists in
-a bodily form, which a man may touch and see and taste, and use for the
-purposes of his lusts,--the soul, I mean, accustomed to hate and fear
-and avoid the intellectual principle, which to the bodily eye is dark
-and invisible, and can be attained only by philosophy;--do you suppose
-that such a soul will depart pure and unalloyed?
-
-Impossible, he replied.
-
-She is held fast by the corporeal, which the continual association and
-constant care of the body have wrought into her nature.
-
-Very true.
-
-And this corporeal element, my friend, is heavy and weighty and earthy,
-and is that element of sight by which a soul is depressed and dragged
-down again into the visible world, because she is afraid of the
-invisible and of the world below--prowling about tombs and sepulchres,
-near which, as they tell us, are seen certain ghostly apparitions
-of souls which have not departed pure, but are cloyed with sight and
-therefore visible.
-
-(Compare Milton, Comus:--
-
-'But when lust,
-By unchaste looks, loose gestures, and foul talk,
-But most by lewd and lavish act of sin,
-Lets in defilement to the inward parts,
-The soul grows clotted by contagion,
-Imbodies, and imbrutes, till she quite lose,
-The divine property of her first being.
-Such are those thick and gloomy shadows damp
-Oft seen in charnel vaults and sepulchres,
-Lingering, and sitting by a new made grave,
-As loath to leave the body that it lov'd,
-And linked itself by carnal sensuality
-To a degenerate and degraded state.')
-
-That is very likely, Socrates.
-
-Yes, that is very likely, Cebes; and these must be the souls, not of the
-good, but of the evil, which are compelled to wander about such places
-in payment of the penalty of their former evil way of life; and they
-continue to wander until through the craving after the corporeal which
-never leaves them, they are imprisoned finally in another body. And they
-may be supposed to find their prisons in the same natures which they
-have had in their former lives.
-
-What natures do you mean, Socrates?
-
-What I mean is that men who have followed after gluttony, and
-wantonness, and drunkenness, and have had no thought of avoiding them,
-would pass into asses and animals of that sort. What do you think?
-
-I think such an opinion to be exceedingly probable.
-
-And those who have chosen the portion of injustice, and tyranny, and
-violence, will pass into wolves, or into hawks and kites;--whither else
-can we suppose them to go?
-
-Yes, said Cebes; with such natures, beyond question.
-
-And there is no difficulty, he said, in assigning to all of them places
-answering to their several natures and propensities?
-
-There is not, he said.
-
-Some are happier than others; and the happiest both in themselves and
-in the place to which they go are those who have practised the civil and
-social virtues which are called temperance and justice, and are acquired
-by habit and attention without philosophy and mind. (Compare Republic.)
-
-Why are they the happiest?
-
-Because they may be expected to pass into some gentle and social kind
-which is like their own, such as bees or wasps or ants, or back again
-into the form of man, and just and moderate men may be supposed to
-spring from them.
-
-Very likely.
-
-No one who has not studied philosophy and who is not entirely pure at
-the time of his departure is allowed to enter the company of the Gods,
-but the lover of knowledge only. And this is the reason, Simmias and
-Cebes, why the true votaries of philosophy abstain from all fleshly
-lusts, and hold out against them and refuse to give themselves up to
-them,--not because they fear poverty or the ruin of their families, like
-the lovers of money, and the world in general; nor like the lovers of
-power and honour, because they dread the dishonour or disgrace of evil
-deeds.
-
-No, Socrates, that would not become them, said Cebes.
-
-No indeed, he replied; and therefore they who have any care of their
-own souls, and do not merely live moulding and fashioning the body, say
-farewell to all this; they will not walk in the ways of the blind: and
-when philosophy offers them purification and release from evil, they
-feel that they ought not to resist her influence, and whither she leads
-they turn and follow.
-
-What do you mean, Socrates?
-
-I will tell you, he said. The lovers of knowledge are conscious that
-the soul was simply fastened and glued to the body--until philosophy
-received her, she could only view real existence through the bars of
-a prison, not in and through herself; she was wallowing in the mire of
-every sort of ignorance; and by reason of lust had become the principal
-accomplice in her own captivity. This was her original state; and
-then, as I was saying, and as the lovers of knowledge are well aware,
-philosophy, seeing how terrible was her confinement, of which she was
-to herself the cause, received and gently comforted her and sought to
-release her, pointing out that the eye and the ear and the other senses
-are full of deception, and persuading her to retire from them, and
-abstain from all but the necessary use of them, and be gathered up and
-collected into herself, bidding her trust in herself and her own pure
-apprehension of pure existence, and to mistrust whatever comes to her
-through other channels and is subject to variation; for such things
-are visible and tangible, but what she sees in her own nature is
-intelligible and invisible. And the soul of the true philosopher thinks
-that she ought not to resist this deliverance, and therefore abstains
-from pleasures and desires and pains and fears, as far as she is
-able; reflecting that when a man has great joys or sorrows or fears or
-desires, he suffers from them, not merely the sort of evil which might
-be anticipated--as for example, the loss of his health or property which
-he has sacrificed to his lusts--but an evil greater far, which is the
-greatest and worst of all evils, and one of which he never thinks.
-
-What is it, Socrates? said Cebes.
-
-The evil is that when the feeling of pleasure or pain is most intense,
-every soul of man imagines the objects of this intense feeling to be
-then plainest and truest: but this is not so, they are really the things
-of sight.
-
-Very true.
-
-And is not this the state in which the soul is most enthralled by the
-body?
-
-How so?
-
-Why, because each pleasure and pain is a sort of nail which nails
-and rivets the soul to the body, until she becomes like the body, and
-believes that to be true which the body affirms to be true; and from
-agreeing with the body and having the same delights she is obliged to
-have the same habits and haunts, and is not likely ever to be pure at
-her departure to the world below, but is always infected by the body;
-and so she sinks into another body and there germinates and grows,
-and has therefore no part in the communion of the divine and pure and
-simple.
-
-Most true, Socrates, answered Cebes.
-
-And this, Cebes, is the reason why the true lovers of knowledge are
-temperate and brave; and not for the reason which the world gives.
-
-Certainly not.
-
-Certainly not! The soul of a philosopher will reason in quite another
-way; she will not ask philosophy to release her in order that when
-released she may deliver herself up again to the thraldom of pleasures
-and pains, doing a work only to be undone again, weaving instead of
-unweaving her Penelope's web. But she will calm passion, and follow
-reason, and dwell in the contemplation of her, beholding the true
-and divine (which is not matter of opinion), and thence deriving
-nourishment. Thus she seeks to live while she lives, and after death she
-hopes to go to her own kindred and to that which is like her, and to be
-freed from human ills. Never fear, Simmias and Cebes, that a soul which
-has been thus nurtured and has had these pursuits, will at her departure
-from the body be scattered and blown away by the winds and be nowhere
-and nothing.
-
-When Socrates had done speaking, for a considerable time there was
-silence; he himself appeared to be meditating, as most of us were, on
-what had been said; only Cebes and Simmias spoke a few words to one
-another. And Socrates observing them asked what they thought of the
-argument, and whether there was anything wanting? For, said he, there
-are many points still open to suspicion and attack, if any one were
-disposed to sift the matter thoroughly. Should you be considering
-some other matter I say no more, but if you are still in doubt do not
-hesitate to say exactly what you think, and let us have anything better
-which you can suggest; and if you think that I can be of any use, allow
-me to help you.
-
-Simmias said: I must confess, Socrates, that doubts did arise in our
-minds, and each of us was urging and inciting the other to put the
-question which we wanted to have answered and which neither of us liked
-to ask, fearing that our importunity might be troublesome under present
-at such a time.
-
-Socrates replied with a smile: O Simmias, what are you saying? I am
-not very likely to persuade other men that I do not regard my present
-situation as a misfortune, if I cannot even persuade you that I am no
-worse off now than at any other time in my life. Will you not allow that
-I have as much of the spirit of prophecy in me as the swans? For they,
-when they perceive that they must die, having sung all their life long,
-do then sing more lustily than ever, rejoicing in the thought that
-they are about to go away to the god whose ministers they are. But men,
-because they are themselves afraid of death, slanderously affirm of the
-swans that they sing a lament at the last, not considering that no bird
-sings when cold, or hungry, or in pain, not even the nightingale, nor
-the swallow, nor yet the hoopoe; which are said indeed to tune a lay of
-sorrow, although I do not believe this to be true of them any more than
-of the swans. But because they are sacred to Apollo, they have the gift
-of prophecy, and anticipate the good things of another world, wherefore
-they sing and rejoice in that day more than they ever did before. And I
-too, believing myself to be the consecrated servant of the same God, and
-the fellow-servant of the swans, and thinking that I have received from
-my master gifts of prophecy which are not inferior to theirs, would not
-go out of life less merrily than the swans. Never mind then, if this be
-your only objection, but speak and ask anything which you like, while
-the eleven magistrates of Athens allow.
-
-Very good, Socrates, said Simmias; then I will tell you my difficulty,
-and Cebes will tell you his. I feel myself, (and I daresay that you have
-the same feeling), how hard or rather impossible is the attainment of
-any certainty about questions such as these in the present life. And yet
-I should deem him a coward who did not prove what is said about them to
-the uttermost, or whose heart failed him before he had examined them
-on every side. For he should persevere until he has achieved one of two
-things: either he should discover, or be taught the truth about them;
-or, if this be impossible, I would have him take the best and most
-irrefragable of human theories, and let this be the raft upon which he
-sails through life--not without risk, as I admit, if he cannot find some
-word of God which will more surely and safely carry him. And now, as
-you bid me, I will venture to question you, and then I shall not have to
-reproach myself hereafter with not having said at the time what I think.
-For when I consider the matter, either alone or with Cebes, the argument
-does certainly appear to me, Socrates, to be not sufficient.
-
-Socrates answered: I dare say, my friend, that you may be right, but I
-should like to know in what respect the argument is insufficient.
-
-In this respect, replied Simmias:--Suppose a person to use the same
-argument about harmony and the lyre--might he not say that harmony is
-a thing invisible, incorporeal, perfect, divine, existing in the lyre
-which is harmonized, but that the lyre and the strings are matter and
-material, composite, earthy, and akin to mortality? And when some one
-breaks the lyre, or cuts and rends the strings, then he who takes this
-view would argue as you do, and on the same analogy, that the harmony
-survives and has not perished--you cannot imagine, he would say, that
-the lyre without the strings, and the broken strings themselves which
-are mortal remain, and yet that the harmony, which is of heavenly and
-immortal nature and kindred, has perished--perished before the mortal.
-The harmony must still be somewhere, and the wood and strings will decay
-before anything can happen to that. The thought, Socrates, must have
-occurred to your own mind that such is our conception of the soul;
-and that when the body is in a manner strung and held together by the
-elements of hot and cold, wet and dry, then the soul is the harmony or
-due proportionate admixture of them. But if so, whenever the strings of
-the body are unduly loosened or overstrained through disease or other
-injury, then the soul, though most divine, like other harmonies of music
-or of works of art, of course perishes at once, although the material
-remains of the body may last for a considerable time, until they are
-either decayed or burnt. And if any one maintains that the soul, being
-the harmony of the elements of the body, is first to perish in that
-which is called death, how shall we answer him?
-
-Socrates looked fixedly at us as his manner was, and said with a smile:
-Simmias has reason on his side; and why does not some one of you who
-is better able than myself answer him? for there is force in his attack
-upon me. But perhaps, before we answer him, we had better also hear what
-Cebes has to say that we may gain time for reflection, and when they
-have both spoken, we may either assent to them, if there is truth in
-what they say, or if not, we will maintain our position. Please to tell
-me then, Cebes, he said, what was the difficulty which troubled you?
-
-Cebes said: I will tell you. My feeling is that the argument is where it
-was, and open to the same objections which were urged before; for I am
-ready to admit that the existence of the soul before entering into
-the bodily form has been very ingeniously, and, if I may say so, quite
-sufficiently proven; but the existence of the soul after death is still,
-in my judgment, unproven. Now my objection is not the same as that of
-Simmias; for I am not disposed to deny that the soul is stronger and
-more lasting than the body, being of opinion that in all such respects
-the soul very far excels the body. Well, then, says the argument to me,
-why do you remain unconvinced?--When you see that the weaker continues
-in existence after the man is dead, will you not admit that the more
-lasting must also survive during the same period of time? Now I will
-ask you to consider whether the objection, which, like Simmias, I will
-express in a figure, is of any weight. The analogy which I will adduce
-is that of an old weaver, who dies, and after his death somebody
-says:--He is not dead, he must be alive;--see, there is the coat which
-he himself wove and wore, and which remains whole and undecayed. And
-then he proceeds to ask of some one who is incredulous, whether a man
-lasts longer, or the coat which is in use and wear; and when he is
-answered that a man lasts far longer, thinks that he has thus certainly
-demonstrated the survival of the man, who is the more lasting, because
-the less lasting remains. But that, Simmias, as I would beg you to
-remark, is a mistake; any one can see that he who talks thus is talking
-nonsense. For the truth is, that the weaver aforesaid, having woven and
-worn many such coats, outlived several of them, and was outlived by the
-last; but a man is not therefore proved to be slighter and weaker than
-a coat. Now the relation of the body to the soul may be expressed in a
-similar figure; and any one may very fairly say in like manner that the
-soul is lasting, and the body weak and shortlived in comparison. He may
-argue in like manner that every soul wears out many bodies, especially
-if a man live many years. While he is alive the body deliquesces and
-decays, and the soul always weaves another garment and repairs the
-waste. But of course, whenever the soul perishes, she must have on her
-last garment, and this will survive her; and then at length, when
-the soul is dead, the body will show its native weakness, and quickly
-decompose and pass away. I would therefore rather not rely on the
-argument from superior strength to prove the continued existence of the
-soul after death. For granting even more than you affirm to be possible,
-and acknowledging not only that the soul existed before birth, but also
-that the souls of some exist, and will continue to exist after death,
-and will be born and die again and again, and that there is a
-natural strength in the soul which will hold out and be born many
-times--nevertheless, we may be still inclined to think that she will
-weary in the labours of successive births, and may at last succumb in
-one of her deaths and utterly perish; and this death and dissolution of
-the body which brings destruction to the soul may be unknown to any of
-us, for no one of us can have had any experience of it: and if so,
-then I maintain that he who is confident about death has but a foolish
-confidence, unless he is able to prove that the soul is altogether
-immortal and imperishable. But if he cannot prove the soul's
-immortality, he who is about to die will always have reason to fear that
-when the body is disunited, the soul also may utterly perish.
-
-All of us, as we afterwards remarked to one another, had an unpleasant
-feeling at hearing what they said. When we had been so firmly convinced
-before, now to have our faith shaken seemed to introduce a confusion and
-uncertainty, not only into the previous argument, but into any future
-one; either we were incapable of forming a judgment, or there were no
-grounds of belief.
-
-ECHECRATES: There I feel with you--by heaven I do, Phaedo, and when you
-were speaking, I was beginning to ask myself the same question: What
-argument can I ever trust again? For what could be more convincing than
-the argument of Socrates, which has now fallen into discredit? That
-the soul is a harmony is a doctrine which has always had a wonderful
-attraction for me, and, when mentioned, came back to me at once, as my
-own original conviction. And now I must begin again and find another
-argument which will assure me that when the man is dead the soul
-survives. Tell me, I implore you, how did Socrates proceed? Did he
-appear to share the unpleasant feeling which you mention? or did he
-calmly meet the attack? And did he answer forcibly or feebly? Narrate
-what passed as exactly as you can.
-
-PHAEDO: Often, Echecrates, I have wondered at Socrates, but never more
-than on that occasion. That he should be able to answer was nothing,
-but what astonished me was, first, the gentle and pleasant and approving
-manner in which he received the words of the young men, and then his
-quick sense of the wound which had been inflicted by the argument, and
-the readiness with which he healed it. He might be compared to a general
-rallying his defeated and broken army, urging them to accompany him and
-return to the field of argument.
-
-ECHECRATES: What followed?
-
-PHAEDO: You shall hear, for I was close to him on his right hand, seated
-on a sort of stool, and he on a couch which was a good deal higher.
-He stroked my head, and pressed the hair upon my neck--he had a way of
-playing with my hair; and then he said: To-morrow, Phaedo, I suppose
-that these fair locks of yours will be severed.
-
-Yes, Socrates, I suppose that they will, I replied.
-
-Not so, if you will take my advice.
-
-What shall I do with them? I said.
-
-To-day, he replied, and not to-morrow, if this argument dies and we
-cannot bring it to life again, you and I will both shave our locks; and
-if I were you, and the argument got away from me, and I could not hold
-my ground against Simmias and Cebes, I would myself take an oath, like
-the Argives, not to wear hair any more until I had renewed the conflict
-and defeated them.
-
-Yes, I said, but Heracles himself is said not to be a match for two.
-
-Summon me then, he said, and I will be your Iolaus until the sun goes
-down.
-
-I summon you rather, I rejoined, not as Heracles summoning Iolaus, but
-as Iolaus might summon Heracles.
-
-That will do as well, he said. But first let us take care that we avoid
-a danger.
-
-Of what nature? I said.
-
-Lest we become misologists, he replied, no worse thing can happen to a
-man than this. For as there are misanthropists or haters of men, there
-are also misologists or haters of ideas, and both spring from the same
-cause, which is ignorance of the world. Misanthropy arises out of the
-too great confidence of inexperience;--you trust a man and think him
-altogether true and sound and faithful, and then in a little while he
-turns out to be false and knavish; and then another and another, and
-when this has happened several times to a man, especially when it
-happens among those whom he deems to be his own most trusted and
-familiar friends, and he has often quarreled with them, he at last hates
-all men, and believes that no one has any good in him at all. You must
-have observed this trait of character?
-
-I have.
-
-And is not the feeling discreditable? Is it not obvious that such an
-one having to deal with other men, was clearly without any experience of
-human nature; for experience would have taught him the true state of
-the case, that few are the good and few the evil, and that the great
-majority are in the interval between them.
-
-What do you mean? I said.
-
-I mean, he replied, as you might say of the very large and very small,
-that nothing is more uncommon than a very large or very small man; and
-this applies generally to all extremes, whether of great and small, or
-swift and slow, or fair and foul, or black and white: and whether
-the instances you select be men or dogs or anything else, few are the
-extremes, but many are in the mean between them. Did you never observe
-this?
-
-Yes, I said, I have.
-
-And do you not imagine, he said, that if there were a competition in
-evil, the worst would be found to be very few?
-
-Yes, that is very likely, I said.
-
-Yes, that is very likely, he replied; although in this respect arguments
-are unlike men--there I was led on by you to say more than I had
-intended; but the point of comparison was, that when a simple man who
-has no skill in dialectics believes an argument to be true which he
-afterwards imagines to be false, whether really false or not, and
-then another and another, he has no longer any faith left, and great
-disputers, as you know, come to think at last that they have grown to be
-the wisest of mankind; for they alone perceive the utter unsoundness and
-instability of all arguments, or indeed, of all things, which, like the
-currents in the Euripus, are going up and down in never-ceasing ebb and
-flow.
-
-That is quite true, I said.
-
-Yes, Phaedo, he replied, and how melancholy, if there be such a thing as
-truth or certainty or possibility of knowledge--that a man should have
-lighted upon some argument or other which at first seemed true and then
-turned out to be false, and instead of blaming himself and his own want
-of wit, because he is annoyed, should at last be too glad to transfer
-the blame from himself to arguments in general: and for ever afterwards
-should hate and revile them, and lose truth and the knowledge of
-realities.
-
-Yes, indeed, I said; that is very melancholy.
-
-Let us then, in the first place, he said, be careful of allowing or of
-admitting into our souls the notion that there is no health or soundness
-in any arguments at all. Rather say that we have not yet attained to
-soundness in ourselves, and that we must struggle manfully and do our
-best to gain health of mind--you and all other men having regard to the
-whole of your future life, and I myself in the prospect of death. For at
-this moment I am sensible that I have not the temper of a philosopher;
-like the vulgar, I am only a partisan. Now the partisan, when he is
-engaged in a dispute, cares nothing about the rights of the question,
-but is anxious only to convince his hearers of his own assertions.
-And the difference between him and me at the present moment is merely
-this--that whereas he seeks to convince his hearers that what he says is
-true, I am rather seeking to convince myself; to convince my hearers
-is a secondary matter with me. And do but see how much I gain by the
-argument. For if what I say is true, then I do well to be persuaded of
-the truth, but if there be nothing after death, still, during the short
-time that remains, I shall not distress my friends with lamentations,
-and my ignorance will not last, but will die with me, and therefore
-no harm will be done. This is the state of mind, Simmias and Cebes, in
-which I approach the argument. And I would ask you to be thinking of
-the truth and not of Socrates: agree with me, if I seem to you to be
-speaking the truth; or if not, withstand me might and main, that I may
-not deceive you as well as myself in my enthusiasm, and like the bee,
-leave my sting in you before I die.
-
-And now let us proceed, he said. And first of all let me be sure that
-I have in my mind what you were saying. Simmias, if I remember rightly,
-has fears and misgivings whether the soul, although a fairer and diviner
-thing than the body, being as she is in the form of harmony, may not
-perish first. On the other hand, Cebes appeared to grant that the soul
-was more lasting than the body, but he said that no one could know
-whether the soul, after having worn out many bodies, might not perish
-herself and leave her last body behind her; and that this is death,
-which is the destruction not of the body but of the soul, for in the
-body the work of destruction is ever going on. Are not these, Simmias
-and Cebes, the points which we have to consider?
-
-They both agreed to this statement of them.
-
-He proceeded: And did you deny the force of the whole preceding
-argument, or of a part only?
-
-Of a part only, they replied.
-
-And what did you think, he said, of that part of the argument in which
-we said that knowledge was recollection, and hence inferred that the
-soul must have previously existed somewhere else before she was enclosed
-in the body?
-
-Cebes said that he had been wonderfully impressed by that part of the
-argument, and that his conviction remained absolutely unshaken. Simmias
-agreed, and added that he himself could hardly imagine the possibility
-of his ever thinking differently.
-
-But, rejoined Socrates, you will have to think differently, my Theban
-friend, if you still maintain that harmony is a compound, and that the
-soul is a harmony which is made out of strings set in the frame of the
-body; for you will surely never allow yourself to say that a harmony is
-prior to the elements which compose it.
-
-Never, Socrates.
-
-But do you not see that this is what you imply when you say that the
-soul existed before she took the form and body of man, and was made up
-of elements which as yet had no existence? For harmony is not like
-the soul, as you suppose; but first the lyre, and the strings, and the
-sounds exist in a state of discord, and then harmony is made last of
-all, and perishes first. And how can such a notion of the soul as this
-agree with the other?
-
-Not at all, replied Simmias.
-
-And yet, he said, there surely ought to be harmony in a discourse of
-which harmony is the theme.
-
-There ought, replied Simmias.
-
-But there is no harmony, he said, in the two propositions that knowledge
-is recollection, and that the soul is a harmony. Which of them will you
-retain?
-
-I think, he replied, that I have a much stronger faith, Socrates, in the
-first of the two, which has been fully demonstrated to me, than in
-the latter, which has not been demonstrated at all, but rests only on
-probable and plausible grounds; and is therefore believed by the many. I
-know too well that these arguments from probabilities are impostors, and
-unless great caution is observed in the use of them, they are apt to
-be deceptive--in geometry, and in other things too. But the doctrine of
-knowledge and recollection has been proven to me on trustworthy grounds;
-and the proof was that the soul must have existed before she came into
-the body, because to her belongs the essence of which the very name
-implies existence. Having, as I am convinced, rightly accepted this
-conclusion, and on sufficient grounds, I must, as I suppose, cease to
-argue or allow others to argue that the soul is a harmony.
-
-Let me put the matter, Simmias, he said, in another point of view: Do
-you imagine that a harmony or any other composition can be in a state
-other than that of the elements, out of which it is compounded?
-
-Certainly not.
-
-Or do or suffer anything other than they do or suffer?
-
-He agreed.
-
-Then a harmony does not, properly speaking, lead the parts or elements
-which make up the harmony, but only follows them.
-
-He assented.
-
-For harmony cannot possibly have any motion, or sound, or other quality
-which is opposed to its parts.
-
-That would be impossible, he replied.
-
-And does not the nature of every harmony depend upon the manner in which
-the elements are harmonized?
-
-I do not understand you, he said.
-
-I mean to say that a harmony admits of degrees, and is more of a
-harmony, and more completely a harmony, when more truly and fully
-harmonized, to any extent which is possible; and less of a harmony, and
-less completely a harmony, when less truly and fully harmonized.
-
-True.
-
-But does the soul admit of degrees? or is one soul in the very least
-degree more or less, or more or less completely, a soul than another?
-
-Not in the least.
-
-Yet surely of two souls, one is said to have intelligence and virtue,
-and to be good, and the other to have folly and vice, and to be an evil
-soul: and this is said truly?
-
-Yes, truly.
-
-But what will those who maintain the soul to be a harmony say of this
-presence of virtue and vice in the soul?--will they say that here is
-another harmony, and another discord, and that the virtuous soul is
-harmonized, and herself being a harmony has another harmony within her,
-and that the vicious soul is inharmonical and has no harmony within her?
-
-I cannot tell, replied Simmias; but I suppose that something of the sort
-would be asserted by those who say that the soul is a harmony.
-
-And we have already admitted that no soul is more a soul than another;
-which is equivalent to admitting that harmony is not more or less
-harmony, or more or less completely a harmony?
-
-Quite true.
-
-And that which is not more or less a harmony is not more or less
-harmonized?
-
-True.
-
-And that which is not more or less harmonized cannot have more or less
-of harmony, but only an equal harmony?
-
-Yes, an equal harmony.
-
-Then one soul not being more or less absolutely a soul than another, is
-not more or less harmonized?
-
-Exactly.
-
-And therefore has neither more nor less of discord, nor yet of harmony?
-
-She has not.
-
-And having neither more nor less of harmony or of discord, one soul
-has no more vice or virtue than another, if vice be discord and virtue
-harmony?
-
-Not at all more.
-
-Or speaking more correctly, Simmias, the soul, if she is a harmony, will
-never have any vice; because a harmony, being absolutely a harmony, has
-no part in the inharmonical.
-
-No.
-
-And therefore a soul which is absolutely a soul has no vice?
-
-How can she have, if the previous argument holds?
-
-Then, if all souls are equally by their nature souls, all souls of all
-living creatures will be equally good?
-
-I agree with you, Socrates, he said.
-
-And can all this be true, think you? he said; for these are the
-consequences which seem to follow from the assumption that the soul is a
-harmony?
-
-It cannot be true.
-
-Once more, he said, what ruler is there of the elements of human nature
-other than the soul, and especially the wise soul? Do you know of any?
-
-Indeed, I do not.
-
-And is the soul in agreement with the affections of the body? or is she
-at variance with them? For example, when the body is hot and thirsty,
-does not the soul incline us against drinking? and when the body
-is hungry, against eating? And this is only one instance out of ten
-thousand of the opposition of the soul to the things of the body.
-
-Very true.
-
-But we have already acknowledged that the soul, being a harmony, can
-never utter a note at variance with the tensions and relaxations and
-vibrations and other affections of the strings out of which she is
-composed; she can only follow, she cannot lead them?
-
-It must be so, he replied.
-
-And yet do we not now discover the soul to be doing the exact
-opposite--leading the elements of which she is believed to be composed;
-almost always opposing and coercing them in all sorts of ways throughout
-life, sometimes more violently with the pains of medicine and gymnastic;
-then again more gently; now threatening, now admonishing the desires,
-passions, fears, as if talking to a thing which is not herself, as Homer
-in the Odyssee represents Odysseus doing in the words--
-
-'He beat his breast, and thus reproached his heart: Endure, my heart;
-far worse hast thou endured!'
-
-Do you think that Homer wrote this under the idea that the soul is a
-harmony capable of being led by the affections of the body, and not
-rather of a nature which should lead and master them--herself a far
-diviner thing than any harmony?
-
-Yes, Socrates, I quite think so.
-
-Then, my friend, we can never be right in saying that the soul is a
-harmony, for we should contradict the divine Homer, and contradict
-ourselves.
-
-True, he said.
-
-Thus much, said Socrates, of Harmonia, your Theban goddess, who has
-graciously yielded to us; but what shall I say, Cebes, to her husband
-Cadmus, and how shall I make peace with him?
-
-I think that you will discover a way of propitiating him, said Cebes; I
-am sure that you have put the argument with Harmonia in a manner that
-I could never have expected. For when Simmias was mentioning his
-difficulty, I quite imagined that no answer could be given to him, and
-therefore I was surprised at finding that his argument could not sustain
-the first onset of yours, and not impossibly the other, whom you call
-Cadmus, may share a similar fate.
-
-Nay, my good friend, said Socrates, let us not boast, lest some evil eye
-should put to flight the word which I am about to speak. That, however,
-may be left in the hands of those above, while I draw near in Homeric
-fashion, and try the mettle of your words. Here lies the point:--You
-want to have it proven to you that the soul is imperishable and
-immortal, and the philosopher who is confident in death appears to you
-to have but a vain and foolish confidence, if he believes that he will
-fare better in the world below than one who has led another sort of
-life, unless he can prove this; and you say that the demonstration of
-the strength and divinity of the soul, and of her existence prior to our
-becoming men, does not necessarily imply her immortality. Admitting the
-soul to be longlived, and to have known and done much in a former state,
-still she is not on that account immortal; and her entrance into
-the human form may be a sort of disease which is the beginning of
-dissolution, and may at last, after the toils of life are over, end in
-that which is called death. And whether the soul enters into the body
-once only or many times, does not, as you say, make any difference in
-the fears of individuals. For any man, who is not devoid of sense,
-must fear, if he has no knowledge and can give no account of the soul's
-immortality. This, or something like this, I suspect to be your notion,
-Cebes; and I designedly recur to it in order that nothing may escape us,
-and that you may, if you wish, add or subtract anything.
-
-But, said Cebes, as far as I see at present, I have nothing to add or
-subtract: I mean what you say that I mean.
-
-Socrates paused awhile, and seemed to be absorbed in reflection. At
-length he said: You are raising a tremendous question, Cebes, involving
-the whole nature of generation and corruption, about which, if you like,
-I will give you my own experience; and if anything which I say is likely
-to avail towards the solution of your difficulty you may make use of it.
-
-I should very much like, said Cebes, to hear what you have to say.
-
-Then I will tell you, said Socrates. When I was young, Cebes, I had a
-prodigious desire to know that department of philosophy which is called
-the investigation of nature; to know the causes of things, and why
-a thing is and is created or destroyed appeared to me to be a lofty
-profession; and I was always agitating myself with the consideration of
-questions such as these:--Is the growth of animals the result of some
-decay which the hot and cold principle contracts, as some have said? Is
-the blood the element with which we think, or the air, or the fire? or
-perhaps nothing of the kind--but the brain may be the originating
-power of the perceptions of hearing and sight and smell, and memory
-and opinion may come from them, and science may be based on memory and
-opinion when they have attained fixity. And then I went on to examine
-the corruption of them, and then to the things of heaven and earth, and
-at last I concluded myself to be utterly and absolutely incapable
-of these enquiries, as I will satisfactorily prove to you. For I was
-fascinated by them to such a degree that my eyes grew blind to things
-which I had seemed to myself, and also to others, to know quite well; I
-forgot what I had before thought self-evident truths; e.g. such a fact
-as that the growth of man is the result of eating and drinking; for when
-by the digestion of food flesh is added to flesh and bone to bone, and
-whenever there is an aggregation of congenial elements, the lesser
-bulk becomes larger and the small man great. Was not that a reasonable
-notion?
-
-Yes, said Cebes, I think so.
-
-Well; but let me tell you something more. There was a time when I
-thought that I understood the meaning of greater and less pretty well;
-and when I saw a great man standing by a little one, I fancied that one
-was taller than the other by a head; or one horse would appear to
-be greater than another horse: and still more clearly did I seem to
-perceive that ten is two more than eight, and that two cubits are more
-than one, because two is the double of one.
-
-And what is now your notion of such matters? said Cebes.
-
-I should be far enough from imagining, he replied, that I knew the cause
-of any of them, by heaven I should; for I cannot satisfy myself that,
-when one is added to one, the one to which the addition is made becomes
-two, or that the two units added together make two by reason of the
-addition. I cannot understand how, when separated from the other, each
-of them was one and not two, and now, when they are brought together,
-the mere juxtaposition or meeting of them should be the cause of their
-becoming two: neither can I understand how the division of one is the
-way to make two; for then a different cause would produce the same
-effect,--as in the former instance the addition and juxtaposition of one
-to one was the cause of two, in this the separation and subtraction of
-one from the other would be the cause. Nor am I any longer satisfied
-that I understand the reason why one or anything else is either
-generated or destroyed or is at all, but I have in my mind some confused
-notion of a new method, and can never admit the other.
-
-Then I heard some one reading, as he said, from a book of Anaxagoras,
-that mind was the disposer and cause of all, and I was delighted at this
-notion, which appeared quite admirable, and I said to myself: If mind
-is the disposer, mind will dispose all for the best, and put each
-particular in the best place; and I argued that if any one desired to
-find out the cause of the generation or destruction or existence of
-anything, he must find out what state of being or doing or suffering was
-best for that thing, and therefore a man had only to consider the best
-for himself and others, and then he would also know the worse, since the
-same science comprehended both. And I rejoiced to think that I had found
-in Anaxagoras a teacher of the causes of existence such as I desired,
-and I imagined that he would tell me first whether the earth is flat or
-round; and whichever was true, he would proceed to explain the cause and
-the necessity of this being so, and then he would teach me the nature of
-the best and show that this was best; and if he said that the earth was
-in the centre, he would further explain that this position was the best,
-and I should be satisfied with the explanation given, and not want any
-other sort of cause. And I thought that I would then go on and ask him
-about the sun and moon and stars, and that he would explain to me their
-comparative swiftness, and their returnings and various states, active
-and passive, and how all of them were for the best. For I could not
-imagine that when he spoke of mind as the disposer of them, he would
-give any other account of their being as they are, except that this was
-best; and I thought that when he had explained to me in detail the cause
-of each and the cause of all, he would go on to explain to me what was
-best for each and what was good for all. These hopes I would not have
-sold for a large sum of money, and I seized the books and read them as
-fast as I could in my eagerness to know the better and the worse.
-
-What expectations I had formed, and how grievously was I disappointed!
-As I proceeded, I found my philosopher altogether forsaking mind or any
-other principle of order, but having recourse to air, and ether, and
-water, and other eccentricities. I might compare him to a person who
-began by maintaining generally that mind is the cause of the actions
-of Socrates, but who, when he endeavoured to explain the causes of my
-several actions in detail, went on to show that I sit here because my
-body is made up of bones and muscles; and the bones, as he would say,
-are hard and have joints which divide them, and the muscles are elastic,
-and they cover the bones, which have also a covering or environment of
-flesh and skin which contains them; and as the bones are lifted at their
-joints by the contraction or relaxation of the muscles, I am able
-to bend my limbs, and this is why I am sitting here in a curved
-posture--that is what he would say, and he would have a similar
-explanation of my talking to you, which he would attribute to sound, and
-air, and hearing, and he would assign ten thousand other causes of the
-same sort, forgetting to mention the true cause, which is, that the
-Athenians have thought fit to condemn me, and accordingly I have thought
-it better and more right to remain here and undergo my sentence; for
-I am inclined to think that these muscles and bones of mine would have
-gone off long ago to Megara or Boeotia--by the dog they would, if they
-had been moved only by their own idea of what was best, and if I had not
-chosen the better and nobler part, instead of playing truant and running
-away, of enduring any punishment which the state inflicts. There is
-surely a strange confusion of causes and conditions in all this. It may
-be said, indeed, that without bones and muscles and the other parts
-of the body I cannot execute my purposes. But to say that I do as I do
-because of them, and that this is the way in which mind acts, and
-not from the choice of the best, is a very careless and idle mode of
-speaking. I wonder that they cannot distinguish the cause from the
-condition, which the many, feeling about in the dark, are always
-mistaking and misnaming. And thus one man makes a vortex all round and
-steadies the earth by the heaven; another gives the air as a support to
-the earth, which is a sort of broad trough. Any power which in arranging
-them as they are arranges them for the best never enters into their
-minds; and instead of finding any superior strength in it, they rather
-expect to discover another Atlas of the world who is stronger and more
-everlasting and more containing than the good;--of the obligatory and
-containing power of the good they think nothing; and yet this is the
-principle which I would fain learn if any one would teach me. But as I
-have failed either to discover myself, or to learn of any one else,
-the nature of the best, I will exhibit to you, if you like, what I have
-found to be the second best mode of enquiring into the cause.
-
-I should very much like to hear, he replied.
-
-Socrates proceeded:--I thought that as I had failed in the contemplation
-of true existence, I ought to be careful that I did not lose the eye of
-my soul; as people may injure their bodily eye by observing and gazing
-on the sun during an eclipse, unless they take the precaution of only
-looking at the image reflected in the water, or in some similar medium.
-So in my own case, I was afraid that my soul might be blinded altogether
-if I looked at things with my eyes or tried to apprehend them by the
-help of the senses. And I thought that I had better have recourse to the
-world of mind and seek there the truth of existence. I dare say that
-the simile is not perfect--for I am very far from admitting that he who
-contemplates existences through the medium of thought, sees them only
-'through a glass darkly,' any more than he who considers them in action
-and operation. However, this was the method which I adopted: I first
-assumed some principle which I judged to be the strongest, and then I
-affirmed as true whatever seemed to agree with this, whether relating
-to the cause or to anything else; and that which disagreed I regarded
-as untrue. But I should like to explain my meaning more clearly, as I do
-not think that you as yet understand me.
-
-No indeed, replied Cebes, not very well.
-
-There is nothing new, he said, in what I am about to tell you; but
-only what I have been always and everywhere repeating in the previous
-discussion and on other occasions: I want to show you the nature of that
-cause which has occupied my thoughts. I shall have to go back to those
-familiar words which are in the mouth of every one, and first of all
-assume that there is an absolute beauty and goodness and greatness, and
-the like; grant me this, and I hope to be able to show you the nature of
-the cause, and to prove the immortality of the soul.
-
-Cebes said: You may proceed at once with the proof, for I grant you
-this.
-
-Well, he said, then I should like to know whether you agree with me
-in the next step; for I cannot help thinking, if there be anything
-beautiful other than absolute beauty should there be such, that it can
-be beautiful only in as far as it partakes of absolute beauty--and I
-should say the same of everything. Do you agree in this notion of the
-cause?
-
-Yes, he said, I agree.
-
-He proceeded: I know nothing and can understand nothing of any other of
-those wise causes which are alleged; and if a person says to me that
-the bloom of colour, or form, or any such thing is a source of beauty,
-I leave all that, which is only confusing to me, and simply and singly,
-and perhaps foolishly, hold and am assured in my own mind that nothing
-makes a thing beautiful but the presence and participation of beauty in
-whatever way or manner obtained; for as to the manner I am uncertain,
-but I stoutly contend that by beauty all beautiful things become
-beautiful. This appears to me to be the safest answer which I can give,
-either to myself or to another, and to this I cling, in the persuasion
-that this principle will never be overthrown, and that to myself or
-to any one who asks the question, I may safely reply, That by beauty
-beautiful things become beautiful. Do you not agree with me?
-
-I do.
-
-And that by greatness only great things become great and greater
-greater, and by smallness the less become less?
-
-True.
-
-Then if a person were to remark that A is taller by a head than B, and
-B less by a head than A, you would refuse to admit his statement, and
-would stoutly contend that what you mean is only that the greater is
-greater by, and by reason of, greatness, and the less is less only by,
-and by reason of, smallness; and thus you would avoid the danger of
-saying that the greater is greater and the less less by the measure of
-the head, which is the same in both, and would also avoid the monstrous
-absurdity of supposing that the greater man is greater by reason of the
-head, which is small. You would be afraid to draw such an inference,
-would you not?
-
-Indeed, I should, said Cebes, laughing.
-
-In like manner you would be afraid to say that ten exceeded eight by,
-and by reason of, two; but would say by, and by reason of, number; or
-you would say that two cubits exceed one cubit not by a half, but by
-magnitude?-for there is the same liability to error in all these cases.
-
-Very true, he said.
-
-Again, would you not be cautious of affirming that the addition of
-one to one, or the division of one, is the cause of two? And you would
-loudly asseverate that you know of no way in which anything comes
-into existence except by participation in its own proper essence,
-and consequently, as far as you know, the only cause of two is
-the participation in duality--this is the way to make two, and the
-participation in one is the way to make one. You would say: I will let
-alone puzzles of division and addition--wiser heads than mine may answer
-them; inexperienced as I am, and ready to start, as the proverb says,
-at my own shadow, I cannot afford to give up the sure ground of a
-principle. And if any one assails you there, you would not mind him,
-or answer him, until you had seen whether the consequences which follow
-agree with one another or not, and when you are further required to give
-an explanation of this principle, you would go on to assume a higher
-principle, and a higher, until you found a resting-place in the best of
-the higher; but you would not confuse the principle and the consequences
-in your reasoning, like the Eristics--at least if you wanted to discover
-real existence. Not that this confusion signifies to them, who never
-care or think about the matter at all, for they have the wit to be well
-pleased with themselves however great may be the turmoil of their ideas.
-But you, if you are a philosopher, will certainly do as I say.
-
-What you say is most true, said Simmias and Cebes, both speaking at
-once.
-
-ECHECRATES: Yes, Phaedo; and I do not wonder at their assenting. Any
-one who has the least sense will acknowledge the wonderful clearness of
-Socrates' reasoning.
-
-PHAEDO: Certainly, Echecrates; and such was the feeling of the whole
-company at the time.
-
-ECHECRATES: Yes, and equally of ourselves, who were not of the company,
-and are now listening to your recital. But what followed?
-
-PHAEDO: After all this had been admitted, and they had that ideas exist,
-and that other things participate in them and derive their names from
-them, Socrates, if I remember rightly, said:--
-
-This is your way of speaking; and yet when you say that Simmias is
-greater than Socrates and less than Phaedo, do you not predicate of
-Simmias both greatness and smallness?
-
-Yes, I do.
-
-But still you allow that Simmias does not really exceed Socrates, as
-the words may seem to imply, because he is Simmias, but by reason of the
-size which he has; just as Simmias does not exceed Socrates because he
-is Simmias, any more than because Socrates is Socrates, but because he
-has smallness when compared with the greatness of Simmias?
-
-True.
-
-And if Phaedo exceeds him in size, this is not because Phaedo is
-Phaedo, but because Phaedo has greatness relatively to Simmias, who is
-comparatively smaller?
-
-That is true.
-
-And therefore Simmias is said to be great, and is also said to be small,
-because he is in a mean between them, exceeding the smallness of the one
-by his greatness, and allowing the greatness of the other to exceed his
-smallness. He added, laughing, I am speaking like a book, but I believe
-that what I am saying is true.
-
-Simmias assented.
-
-I speak as I do because I want you to agree with me in thinking, not
-only that absolute greatness will never be great and also small, but
-that greatness in us or in the concrete will never admit the small or
-admit of being exceeded: instead of this, one of two things will happen,
-either the greater will fly or retire before the opposite, which is the
-less, or at the approach of the less has already ceased to exist; but
-will not, if allowing or admitting of smallness, be changed by that;
-even as I, having received and admitted smallness when compared with
-Simmias, remain just as I was, and am the same small person. And as the
-idea of greatness cannot condescend ever to be or become small, in like
-manner the smallness in us cannot be or become great; nor can any other
-opposite which remains the same ever be or become its own opposite, but
-either passes away or perishes in the change.
-
-That, replied Cebes, is quite my notion.
-
-Hereupon one of the company, though I do not exactly remember which of
-them, said: In heaven's name, is not this the direct contrary of what
-was admitted before--that out of the greater came the less and out of
-the less the greater, and that opposites were simply generated from
-opposites; but now this principle seems to be utterly denied.
-
-Socrates inclined his head to the speaker and listened. I like your
-courage, he said, in reminding us of this. But you do not observe that
-there is a difference in the two cases. For then we were speaking of
-opposites in the concrete, and now of the essential opposite which, as
-is affirmed, neither in us nor in nature can ever be at variance with
-itself: then, my friend, we were speaking of things in which opposites
-are inherent and which are called after them, but now about the
-opposites which are inherent in them and which give their name to them;
-and these essential opposites will never, as we maintain, admit of
-generation into or out of one another. At the same time, turning to
-Cebes, he said: Are you at all disconcerted, Cebes, at our friend's
-objection?
-
-No, I do not feel so, said Cebes; and yet I cannot deny that I am often
-disturbed by objections.
-
-Then we are agreed after all, said Socrates, that the opposite will
-never in any case be opposed to itself?
-
-To that we are quite agreed, he replied.
-
-Yet once more let me ask you to consider the question from another point
-of view, and see whether you agree with me:--There is a thing which you
-term heat, and another thing which you term cold?
-
-Certainly.
-
-But are they the same as fire and snow?
-
-Most assuredly not.
-
-Heat is a thing different from fire, and cold is not the same with snow?
-
-Yes.
-
-And yet you will surely admit, that when snow, as was before said, is
-under the influence of heat, they will not remain snow and heat; but at
-the advance of the heat, the snow will either retire or perish?
-
-Very true, he replied.
-
-And the fire too at the advance of the cold will either retire or
-perish; and when the fire is under the influence of the cold, they will
-not remain as before, fire and cold.
-
-That is true, he said.
-
-And in some cases the name of the idea is not only attached to the idea
-in an eternal connection, but anything else which, not being the idea,
-exists only in the form of the idea, may also lay claim to it. I will
-try to make this clearer by an example:--The odd number is always called
-by the name of odd?
-
-Very true.
-
-But is this the only thing which is called odd? Are there not other
-things which have their own name, and yet are called odd, because,
-although not the same as oddness, they are never without oddness?--that
-is what I mean to ask--whether numbers such as the number three are not
-of the class of odd. And there are many other examples: would you not
-say, for example, that three may be called by its proper name, and also
-be called odd, which is not the same with three? and this may be said
-not only of three but also of five, and of every alternate number--each
-of them without being oddness is odd, and in the same way two and
-four, and the other series of alternate numbers, has every number even,
-without being evenness. Do you agree?
-
-Of course.
-
-Then now mark the point at which I am aiming:--not only do essential
-opposites exclude one another, but also concrete things, which, although
-not in themselves opposed, contain opposites; these, I say, likewise
-reject the idea which is opposed to that which is contained in them,
-and when it approaches them they either perish or withdraw. For example;
-Will not the number three endure annihilation or anything sooner than be
-converted into an even number, while remaining three?
-
-Very true, said Cebes.
-
-And yet, he said, the number two is certainly not opposed to the number
-three?
-
-It is not.
-
-Then not only do opposite ideas repel the advance of one another, but
-also there are other natures which repel the approach of opposites.
-
-Very true, he said.
-
-Suppose, he said, that we endeavour, if possible, to determine what
-these are.
-
-By all means.
-
-Are they not, Cebes, such as compel the things of which they have
-possession, not only to take their own form, but also the form of some
-opposite?
-
-What do you mean?
-
-I mean, as I was just now saying, and as I am sure that you know, that
-those things which are possessed by the number three must not only be
-three in number, but must also be odd.
-
-Quite true.
-
-And on this oddness, of which the number three has the impress, the
-opposite idea will never intrude?
-
-No.
-
-And this impress was given by the odd principle?
-
-Yes.
-
-And to the odd is opposed the even?
-
-True.
-
-Then the idea of the even number will never arrive at three?
-
-No.
-
-Then three has no part in the even?
-
-None.
-
-Then the triad or number three is uneven?
-
-Very true.
-
-To return then to my distinction of natures which are not opposed, and
-yet do not admit opposites--as, in the instance given, three, although
-not opposed to the even, does not any the more admit of the even, but
-always brings the opposite into play on the other side; or as two does
-not receive the odd, or fire the cold--from these examples (and there
-are many more of them) perhaps you may be able to arrive at the general
-conclusion, that not only opposites will not receive opposites, but also
-that nothing which brings the opposite will admit the opposite of
-that which it brings, in that to which it is brought. And here let me
-recapitulate--for there is no harm in repetition. The number five will
-not admit the nature of the even, any more than ten, which is the
-double of five, will admit the nature of the odd. The double has another
-opposite, and is not strictly opposed to the odd, but nevertheless
-rejects the odd altogether. Nor again will parts in the ratio 3:2, nor
-any fraction in which there is a half, nor again in which there is a
-third, admit the notion of the whole, although they are not opposed to
-the whole: You will agree?
-
-Yes, he said, I entirely agree and go along with you in that.
-
-And now, he said, let us begin again; and do not you answer my question
-in the words in which I ask it: let me have not the old safe answer of
-which I spoke at first, but another equally safe, of which the truth
-will be inferred by you from what has been just said. I mean that if any
-one asks you 'what that is, of which the inherence makes the body
-hot,' you will reply not heat (this is what I call the safe and
-stupid answer), but fire, a far superior answer, which we are now in a
-condition to give. Or if any one asks you 'why a body is diseased,' you
-will not say from disease, but from fever; and instead of saying that
-oddness is the cause of odd numbers, you will say that the monad is the
-cause of them: and so of things in general, as I dare say that you will
-understand sufficiently without my adducing any further examples.
-
-Yes, he said, I quite understand you.
-
-Tell me, then, what is that of which the inherence will render the body
-alive?
-
-The soul, he replied.
-
-And is this always the case?
-
-Yes, he said, of course.
-
-Then whatever the soul possesses, to that she comes bearing life?
-
-Yes, certainly.
-
-And is there any opposite to life?
-
-There is, he said.
-
-And what is that?
-
-Death.
-
-Then the soul, as has been acknowledged, will never receive the opposite
-of what she brings.
-
-Impossible, replied Cebes.
-
-And now, he said, what did we just now call that principle which repels
-the even?
-
-The odd.
-
-And that principle which repels the musical, or the just?
-
-The unmusical, he said, and the unjust.
-
-And what do we call the principle which does not admit of death?
-
-The immortal, he said.
-
-And does the soul admit of death?
-
-No.
-
-Then the soul is immortal?
-
-Yes, he said.
-
-And may we say that this has been proven?
-
-Yes, abundantly proven, Socrates, he replied.
-
-Supposing that the odd were imperishable, must not three be
-imperishable?
-
-Of course.
-
-And if that which is cold were imperishable, when the warm principle
-came attacking the snow, must not the snow have retired whole and
-unmelted--for it could never have perished, nor could it have remained
-and admitted the heat?
-
-True, he said.
-
-Again, if the uncooling or warm principle were imperishable, the fire
-when assailed by cold would not have perished or have been extinguished,
-but would have gone away unaffected?
-
-Certainly, he said.
-
-And the same may be said of the immortal: if the immortal is also
-imperishable, the soul when attacked by death cannot perish; for the
-preceding argument shows that the soul will not admit of death, or ever
-be dead, any more than three or the odd number will admit of the even,
-or fire or the heat in the fire, of the cold. Yet a person may say: 'But
-although the odd will not become even at the approach of the even, why
-may not the odd perish and the even take the place of the odd?' Now to
-him who makes this objection, we cannot answer that the odd principle is
-imperishable; for this has not been acknowledged, but if this had been
-acknowledged, there would have been no difficulty in contending that
-at the approach of the even the odd principle and the number three took
-their departure; and the same argument would have held good of fire and
-heat and any other thing.
-
-Very true.
-
-And the same may be said of the immortal: if the immortal is also
-imperishable, then the soul will be imperishable as well as immortal;
-but if not, some other proof of her imperishableness will have to be
-given.
-
-No other proof is needed, he said; for if the immortal, being eternal,
-is liable to perish, then nothing is imperishable.
-
-Yes, replied Socrates, and yet all men will agree that God, and the
-essential form of life, and the immortal in general, will never perish.
-
-Yes, all men, he said--that is true; and what is more, gods, if I am not
-mistaken, as well as men.
-
-Seeing then that the immortal is indestructible, must not the soul, if
-she is immortal, be also imperishable?
-
-Most certainly.
-
-Then when death attacks a man, the mortal portion of him may be supposed
-to die, but the immortal retires at the approach of death and is
-preserved safe and sound?
-
-True.
-
-Then, Cebes, beyond question, the soul is immortal and imperishable, and
-our souls will truly exist in another world!
-
-I am convinced, Socrates, said Cebes, and have nothing more to object;
-but if my friend Simmias, or any one else, has any further objection to
-make, he had better speak out, and not keep silence, since I do not know
-to what other season he can defer the discussion, if there is anything
-which he wants to say or to have said.
-
-But I have nothing more to say, replied Simmias; nor can I see any
-reason for doubt after what has been said. But I still feel and cannot
-help feeling uncertain in my own mind, when I think of the greatness of
-the subject and the feebleness of man.
-
-Yes, Simmias, replied Socrates, that is well said: and I may add that
-first principles, even if they appear certain, should be carefully
-considered; and when they are satisfactorily ascertained, then, with a
-sort of hesitating confidence in human reason, you may, I think, follow
-the course of the argument; and if that be plain and clear, there will
-be no need for any further enquiry.
-
-Very true.
-
-But then, O my friends, he said, if the soul is really immortal, what
-care should be taken of her, not only in respect of the portion of time
-which is called life, but of eternity! And the danger of neglecting her
-from this point of view does indeed appear to be awful. If death had
-only been the end of all, the wicked would have had a good bargain in
-dying, for they would have been happily quit not only of their body, but
-of their own evil together with their souls. But now, inasmuch as the
-soul is manifestly immortal, there is no release or salvation from evil
-except the attainment of the highest virtue and wisdom. For the soul
-when on her progress to the world below takes nothing with her but
-nurture and education; and these are said greatly to benefit or greatly
-to injure the departed, at the very beginning of his journey thither.
-
-For after death, as they say, the genius of each individual, to whom
-he belonged in life, leads him to a certain place in which the dead are
-gathered together, whence after judgment has been given they pass into
-the world below, following the guide, who is appointed to conduct them
-from this world to the other: and when they have there received their
-due and remained their time, another guide brings them back again after
-many revolutions of ages. Now this way to the other world is not, as
-Aeschylus says in the Telephus, a single and straight path--if that were
-so no guide would be needed, for no one could miss it; but there are
-many partings of the road, and windings, as I infer from the rites and
-sacrifices which are offered to the gods below in places where three
-ways meet on earth. The wise and orderly soul follows in the straight
-path and is conscious of her surroundings; but the soul which desires
-the body, and which, as I was relating before, has long been fluttering
-about the lifeless frame and the world of sight, is after many struggles
-and many sufferings hardly and with violence carried away by her
-attendant genius, and when she arrives at the place where the other
-souls are gathered, if she be impure and have done impure deeds, whether
-foul murders or other crimes which are the brothers of these, and the
-works of brothers in crime--from that soul every one flees and turns
-away; no one will be her companion, no one her guide, but alone she
-wanders in extremity of evil until certain times are fulfilled, and
-when they are fulfilled, she is borne irresistibly to her own fitting
-habitation; as every pure and just soul which has passed through life in
-the company and under the guidance of the gods has also her own proper
-home.
-
-Now the earth has divers wonderful regions, and is indeed in nature
-and extent very unlike the notions of geographers, as I believe on the
-authority of one who shall be nameless.
-
-What do you mean, Socrates? said Simmias. I have myself heard many
-descriptions of the earth, but I do not know, and I should very much
-like to know, in which of these you put faith.
-
-And I, Simmias, replied Socrates, if I had the art of Glaucus would tell
-you; although I know not that the art of Glaucus could prove the truth
-of my tale, which I myself should never be able to prove, and even if
-I could, I fear, Simmias, that my life would come to an end before the
-argument was completed. I may describe to you, however, the form and
-regions of the earth according to my conception of them.
-
-That, said Simmias, will be enough.
-
-Well, then, he said, my conviction is, that the earth is a round body
-in the centre of the heavens, and therefore has no need of air or any
-similar force to be a support, but is kept there and hindered from
-falling or inclining any way by the equability of the surrounding heaven
-and by her own equipoise. For that which, being in equipoise, is in the
-centre of that which is equably diffused, will not incline any way in
-any degree, but will always remain in the same state and not deviate.
-And this is my first notion.
-
-Which is surely a correct one, said Simmias.
-
-Also I believe that the earth is very vast, and that we who dwell in
-the region extending from the river Phasis to the Pillars of Heracles
-inhabit a small portion only about the sea, like ants or frogs about a
-marsh, and that there are other inhabitants of many other like places;
-for everywhere on the face of the earth there are hollows of various
-forms and sizes, into which the water and the mist and the lower
-air collect. But the true earth is pure and situated in the pure
-heaven--there are the stars also; and it is the heaven which is commonly
-spoken of by us as the ether, and of which our own earth is the sediment
-gathering in the hollows beneath. But we who live in these hollows are
-deceived into the notion that we are dwelling above on the surface of
-the earth; which is just as if a creature who was at the bottom of the
-sea were to fancy that he was on the surface of the water, and that the
-sea was the heaven through which he saw the sun and the other stars,
-he having never come to the surface by reason of his feebleness and
-sluggishness, and having never lifted up his head and seen, nor ever
-heard from one who had seen, how much purer and fairer the world above
-is than his own. And such is exactly our case: for we are dwelling in a
-hollow of the earth, and fancy that we are on the surface; and the air
-we call the heaven, in which we imagine that the stars move. But the
-fact is, that owing to our feebleness and sluggishness we are prevented
-from reaching the surface of the air: for if any man could arrive at the
-exterior limit, or take the wings of a bird and come to the top, then
-like a fish who puts his head out of the water and sees this world, he
-would see a world beyond; and, if the nature of man could sustain the
-sight, he would acknowledge that this other world was the place of the
-true heaven and the true light and the true earth. For our earth, and
-the stones, and the entire region which surrounds us, are spoilt and
-corroded, as in the sea all things are corroded by the brine, neither
-is there any noble or perfect growth, but caverns only, and sand, and an
-endless slough of mud: and even the shore is not to be compared to the
-fairer sights of this world. And still less is this our world to be
-compared with the other. Of that upper earth which is under the heaven,
-I can tell you a charming tale, Simmias, which is well worth hearing.
-
-And we, Socrates, replied Simmias, shall be charmed to listen to you.
-
-The tale, my friend, he said, is as follows:--In the first place, the
-earth, when looked at from above, is in appearance streaked like one of
-those balls which have leather coverings in twelve pieces, and is decked
-with various colours, of which the colours used by painters on earth are
-in a manner samples. But there the whole earth is made up of them,
-and they are brighter far and clearer than ours; there is a purple of
-wonderful lustre, also the radiance of gold, and the white which is in
-the earth is whiter than any chalk or snow. Of these and other colours
-the earth is made up, and they are more in number and fairer than the
-eye of man has ever seen; the very hollows (of which I was speaking)
-filled with air and water have a colour of their own, and are seen like
-light gleaming amid the diversity of the other colours, so that the
-whole presents a single and continuous appearance of variety in unity.
-And in this fair region everything that grows--trees, and flowers, and
-fruits--are in a like degree fairer than any here; and there are hills,
-having stones in them in a like degree smoother, and more transparent,
-and fairer in colour than our highly-valued emeralds and sardonyxes and
-jaspers, and other gems, which are but minute fragments of them: for
-there all the stones are like our precious stones, and fairer still
-(compare Republic). The reason is, that they are pure, and not, like
-our precious stones, infected or corroded by the corrupt briny elements
-which coagulate among us, and which breed foulness and disease both in
-earth and stones, as well as in animals and plants. They are the jewels
-of the upper earth, which also shines with gold and silver and the like,
-and they are set in the light of day and are large and abundant and in
-all places, making the earth a sight to gladden the beholder's eye.
-And there are animals and men, some in a middle region, others dwelling
-about the air as we dwell about the sea; others in islands which the air
-flows round, near the continent: and in a word, the air is used by them
-as the water and the sea are by us, and the ether is to them what the
-air is to us. Moreover, the temperament of their seasons is such that
-they have no disease, and live much longer than we do, and have
-sight and hearing and smell, and all the other senses, in far greater
-perfection, in the same proportion that air is purer than water or the
-ether than air. Also they have temples and sacred places in which the
-gods really dwell, and they hear their voices and receive their answers,
-and are conscious of them and hold converse with them, and they see the
-sun, moon, and stars as they truly are, and their other blessedness is
-of a piece with this.
-
-Such is the nature of the whole earth, and of the things which are
-around the earth; and there are divers regions in the hollows on the
-face of the globe everywhere, some of them deeper and more extended than
-that which we inhabit, others deeper but with a narrower opening
-than ours, and some are shallower and also wider. All have numerous
-perforations, and there are passages broad and narrow in the interior of
-the earth, connecting them with one another; and there flows out of and
-into them, as into basins, a vast tide of water, and huge subterranean
-streams of perennial rivers, and springs hot and cold, and a great fire,
-and great rivers of fire, and streams of liquid mud, thin or thick (like
-the rivers of mud in Sicily, and the lava streams which follow them),
-and the regions about which they happen to flow are filled up with them.
-And there is a swinging or see-saw in the interior of the earth which
-moves all this up and down, and is due to the following cause:--There is
-a chasm which is the vastest of them all, and pierces right through the
-whole earth; this is that chasm which Homer describes in the words,--
-
-'Far off, where is the inmost depth beneath the earth;'
-
-and which he in other places, and many other poets, have called
-Tartarus. And the see-saw is caused by the streams flowing into and out
-of this chasm, and they each have the nature of the soil through which
-they flow. And the reason why the streams are always flowing in and out,
-is that the watery element has no bed or bottom, but is swinging and
-surging up and down, and the surrounding wind and air do the same; they
-follow the water up and down, hither and thither, over the earth--just
-as in the act of respiration the air is always in process of inhalation
-and exhalation;--and the wind swinging with the water in and out
-produces fearful and irresistible blasts: when the waters retire with
-a rush into the lower parts of the earth, as they are called, they flow
-through the earth in those regions, and fill them up like water raised
-by a pump, and then when they leave those regions and rush back hither,
-they again fill the hollows here, and when these are filled, flow
-through subterranean channels and find their way to their several
-places, forming seas, and lakes, and rivers, and springs. Thence they
-again enter the earth, some of them making a long circuit into many
-lands, others going to a few places and not so distant; and again fall
-into Tartarus, some at a point a good deal lower than that at which they
-rose, and others not much lower, but all in some degree lower than the
-point from which they came. And some burst forth again on the opposite
-side, and some on the same side, and some wind round the earth with one
-or many folds like the coils of a serpent, and descend as far as they
-can, but always return and fall into the chasm. The rivers flowing in
-either direction can descend only to the centre and no further, for
-opposite to the rivers is a precipice.
-
-Now these rivers are many, and mighty, and diverse, and there are four
-principal ones, of which the greatest and outermost is that called
-Oceanus, which flows round the earth in a circle; and in the opposite
-direction flows Acheron, which passes under the earth through desert
-places into the Acherusian lake: this is the lake to the shores of
-which the souls of the many go when they are dead, and after waiting an
-appointed time, which is to some a longer and to some a shorter time,
-they are sent back to be born again as animals. The third river passes
-out between the two, and near the place of outlet pours into a vast
-region of fire, and forms a lake larger than the Mediterranean Sea,
-boiling with water and mud; and proceeding muddy and turbid, and winding
-about the earth, comes, among other places, to the extremities of the
-Acherusian Lake, but mingles not with the waters of the lake, and after
-making many coils about the earth plunges into Tartarus at a deeper
-level. This is that Pyriphlegethon, as the stream is called, which
-throws up jets of fire in different parts of the earth. The fourth river
-goes out on the opposite side, and falls first of all into a wild and
-savage region, which is all of a dark-blue colour, like lapis lazuli;
-and this is that river which is called the Stygian river, and falls into
-and forms the Lake Styx, and after falling into the lake and receiving
-strange powers in the waters, passes under the earth, winding round
-in the opposite direction, and comes near the Acherusian lake from the
-opposite side to Pyriphlegethon. And the water of this river too mingles
-with no other, but flows round in a circle and falls into Tartarus over
-against Pyriphlegethon; and the name of the river, as the poets say, is
-Cocytus.
-
-Such is the nature of the other world; and when the dead arrive at the
-place to which the genius of each severally guides them, first of all,
-they have sentence passed upon them, as they have lived well and piously
-or not. And those who appear to have lived neither well nor ill, go to
-the river Acheron, and embarking in any vessels which they may find, are
-carried in them to the lake, and there they dwell and are purified of
-their evil deeds, and having suffered the penalty of the wrongs which
-they have done to others, they are absolved, and receive the rewards of
-their good deeds, each of them according to his deserts. But those who
-appear to be incurable by reason of the greatness of their crimes--who
-have committed many and terrible deeds of sacrilege, murders foul and
-violent, or the like--such are hurled into Tartarus which is their
-suitable destiny, and they never come out. Those again who have
-committed crimes, which, although great, are not irremediable--who in
-a moment of anger, for example, have done violence to a father or a
-mother, and have repented for the remainder of their lives, or, who
-have taken the life of another under the like extenuating
-circumstances--these are plunged into Tartarus, the pains of which they
-are compelled to undergo for a year, but at the end of the year the
-wave casts them forth--mere homicides by way of Cocytus, parricides and
-matricides by Pyriphlegethon--and they are borne to the Acherusian lake,
-and there they lift up their voices and call upon the victims whom they
-have slain or wronged, to have pity on them, and to be kind to them,
-and let them come out into the lake. And if they prevail, then they come
-forth and cease from their troubles; but if not, they are carried back
-again into Tartarus and from thence into the rivers unceasingly, until
-they obtain mercy from those whom they have wronged: for that is the
-sentence inflicted upon them by their judges. Those too who have been
-pre-eminent for holiness of life are released from this earthly prison,
-and go to their pure home which is above, and dwell in the purer earth;
-and of these, such as have duly purified themselves with philosophy live
-henceforth altogether without the body, in mansions fairer still which
-may not be described, and of which the time would fail me to tell.
-
-Wherefore, Simmias, seeing all these things, what ought not we to do
-that we may obtain virtue and wisdom in this life? Fair is the prize,
-and the hope great!
-
-A man of sense ought not to say, nor will I be very confident, that the
-description which I have given of the soul and her mansions is exactly
-true. But I do say that, inasmuch as the soul is shown to be immortal,
-he may venture to think, not improperly or unworthily, that something of
-the kind is true. The venture is a glorious one, and he ought to comfort
-himself with words like these, which is the reason why I lengthen out
-the tale. Wherefore, I say, let a man be of good cheer about his soul,
-who having cast away the pleasures and ornaments of the body as alien to
-him and working harm rather than good, has sought after the pleasures of
-knowledge; and has arrayed the soul, not in some foreign attire, but
-in her own proper jewels, temperance, and justice, and courage, and
-nobility, and truth--in these adorned she is ready to go on her journey
-to the world below, when her hour comes. You, Simmias and Cebes, and all
-other men, will depart at some time or other. Me already, as the tragic
-poet would say, the voice of fate calls. Soon I must drink the poison;
-and I think that I had better repair to the bath first, in order that
-the women may not have the trouble of washing my body after I am dead.
-
-When he had done speaking, Crito said: And have you any commands for us,
-Socrates--anything to say about your children, or any other matter in
-which we can serve you?
-
-Nothing particular, Crito, he replied: only, as I have always told
-you, take care of yourselves; that is a service which you may be ever
-rendering to me and mine and to all of us, whether you promise to do so
-or not. But if you have no thought for yourselves, and care not to walk
-according to the rule which I have prescribed for you, not now for the
-first time, however much you may profess or promise at the moment, it
-will be of no avail.
-
-We will do our best, said Crito: And in what way shall we bury you?
-
-In any way that you like; but you must get hold of me, and take care
-that I do not run away from you. Then he turned to us, and added with a
-smile:--I cannot make Crito believe that I am the same Socrates who have
-been talking and conducting the argument; he fancies that I am the other
-Socrates whom he will soon see, a dead body--and he asks, How shall he
-bury me? And though I have spoken many words in the endeavour to show
-that when I have drunk the poison I shall leave you and go to the joys
-of the blessed,--these words of mine, with which I was comforting you
-and myself, have had, as I perceive, no effect upon Crito. And therefore
-I want you to be surety for me to him now, as at the trial he was surety
-to the judges for me: but let the promise be of another sort; for he
-was surety for me to the judges that I would remain, and you must be my
-surety to him that I shall not remain, but go away and depart; and then
-he will suffer less at my death, and not be grieved when he sees my body
-being burned or buried. I would not have him sorrow at my hard lot, or
-say at the burial, Thus we lay out Socrates, or, Thus we follow him to
-the grave or bury him; for false words are not only evil in themselves,
-but they infect the soul with evil. Be of good cheer, then, my dear
-Crito, and say that you are burying my body only, and do with that
-whatever is usual, and what you think best.
-
-When he had spoken these words, he arose and went into a chamber to
-bathe; Crito followed him and told us to wait. So we remained behind,
-talking and thinking of the subject of discourse, and also of the
-greatness of our sorrow; he was like a father of whom we were being
-bereaved, and we were about to pass the rest of our lives as orphans.
-When he had taken the bath his children were brought to him--(he had two
-young sons and an elder one); and the women of his family also came,
-and he talked to them and gave them a few directions in the presence of
-Crito; then he dismissed them and returned to us.
-
-Now the hour of sunset was near, for a good deal of time had passed
-while he was within. When he came out, he sat down with us again after
-his bath, but not much was said. Soon the jailer, who was the servant of
-the Eleven, entered and stood by him, saying:--To you, Socrates, whom
-I know to be the noblest and gentlest and best of all who ever came to
-this place, I will not impute the angry feelings of other men, who rage
-and swear at me, when, in obedience to the authorities, I bid them drink
-the poison--indeed, I am sure that you will not be angry with me; for
-others, as you are aware, and not I, are to blame. And so fare you well,
-and try to bear lightly what must needs be--you know my errand. Then
-bursting into tears he turned away and went out.
-
-Socrates looked at him and said: I return your good wishes, and will do
-as you bid. Then turning to us, he said, How charming the man is: since
-I have been in prison he has always been coming to see me, and at times
-he would talk to me, and was as good to me as could be, and now see how
-generously he sorrows on my account. We must do as he says, Crito; and
-therefore let the cup be brought, if the poison is prepared: if not, let
-the attendant prepare some.
-
-Yet, said Crito, the sun is still upon the hill-tops, and I know that
-many a one has taken the draught late, and after the announcement has
-been made to him, he has eaten and drunk, and enjoyed the society of his
-beloved; do not hurry--there is time enough.
-
-Socrates said: Yes, Crito, and they of whom you speak are right in so
-acting, for they think that they will be gainers by the delay; but I am
-right in not following their example, for I do not think that I should
-gain anything by drinking the poison a little later; I should only be
-ridiculous in my own eyes for sparing and saving a life which is already
-forfeit. Please then to do as I say, and not to refuse me.
-
-Crito made a sign to the servant, who was standing by; and he went out,
-and having been absent for some time, returned with the jailer
-carrying the cup of poison. Socrates said: You, my good friend, who
-are experienced in these matters, shall give me directions how I am to
-proceed. The man answered: You have only to walk about until your legs
-are heavy, and then to lie down, and the poison will act. At the same
-time he handed the cup to Socrates, who in the easiest and gentlest
-manner, without the least fear or change of colour or feature, looking
-at the man with all his eyes, Echecrates, as his manner was, took the
-cup and said: What do you say about making a libation out of this cup
-to any god? May I, or not? The man answered: We only prepare, Socrates,
-just so much as we deem enough. I understand, he said: but I may
-and must ask the gods to prosper my journey from this to the other
-world--even so--and so be it according to my prayer. Then raising the
-cup to his lips, quite readily and cheerfully he drank off the poison.
-And hitherto most of us had been able to control our sorrow; but now
-when we saw him drinking, and saw too that he had finished the draught,
-we could no longer forbear, and in spite of myself my own tears were
-flowing fast; so that I covered my face and wept, not for him, but at
-the thought of my own calamity in having to part from such a friend. Nor
-was I the first; for Crito, when he found himself unable to restrain his
-tears, had got up, and I followed; and at that moment, Apollodorus, who
-had been weeping all the time, broke out in a loud and passionate cry
-which made cowards of us all. Socrates alone retained his calmness: What
-is this strange outcry? he said. I sent away the women mainly in order
-that they might not misbehave in this way, for I have been told that
-a man should die in peace. Be quiet, then, and have patience. When we
-heard his words we were ashamed, and refrained our tears; and he walked
-about until, as he said, his legs began to fail, and then he lay on his
-back, according to the directions, and the man who gave him the poison
-now and then looked at his feet and legs; and after a while he pressed
-his foot hard, and asked him if he could feel; and he said, No; and then
-his leg, and so upwards and upwards, and showed us that he was cold and
-stiff. And he felt them himself, and said: When the poison reaches the
-heart, that will be the end. He was beginning to grow cold about the
-groin, when he uncovered his face, for he had covered himself up,
-and said--they were his last words--he said: Crito, I owe a cock to
-Asclepius; will you remember to pay the debt? The debt shall be
-paid, said Crito; is there anything else? There was no answer to
-this question; but in a minute or two a movement was heard, and the
-attendants uncovered him; his eyes were set, and Crito closed his eyes
-and mouth.
-
-Such was the end, Echecrates, of our friend; concerning whom I may
-truly say, that of all the men of his time whom I have known, he was the
-wisest and justest and best.
+On February the First 1887, the _Lady Vain_ was lost by collision with
+a derelict when about the latitude 1° S. and longitude 107° W.
+
+On January the Fifth, 1888—that is eleven months and four days after—my
+uncle, Edward Prendick, a private gentleman, who certainly went aboard
+the _Lady Vain_ at Callao, and who had been considered drowned, was
+picked up in latitude 5° 3′ S. and longitude 101° W. in a small open
+boat of which the name was illegible, but which is supposed to have
+belonged to the missing schooner _Ipecacuanha_. He gave such a strange
+account of himself that he was supposed demented. Subsequently he
+alleged that his mind was a blank from the moment of his escape from
+the _Lady Vain_. His case was discussed among psychologists at the time
+as a curious instance of the lapse of memory consequent upon physical
+and mental stress. The following narrative was found among his papers
+by the undersigned, his nephew and heir, but unaccompanied by any
+definite request for publication.
+
+The only island known to exist in the region in which my uncle was
+picked up is Noble’s Isle, a small volcanic islet and uninhabited. It
+was visited in 1891 by _H. M. S. Scorpion_. A party of sailors then
+landed, but found nothing living thereon except certain curious white
+moths, some hogs and rabbits, and some rather peculiar rats. So that
+this narrative is without confirmation in its most essential
+particular. With that understood, there seems no harm in putting this
+strange story before the public in accordance, as I believe, with my
+uncle’s intentions. There is at least this much in its behalf: my uncle
+passed out of human knowledge about latitude 5° S. and longitude 105°
+E., and reappeared in the same part of the ocean after a space of
+eleven months. In some way he must have lived during the interval. And
+it seems that a schooner called the _Ipecacuanha_ with a drunken
+captain, John Davies, did start from Africa with a puma and certain
+other animals aboard in January, 1887, that the vessel was well known
+at several ports in the South Pacific, and that it finally disappeared
+from those seas (with a considerable amount of copra aboard), sailing
+to its unknown fate from Bayna in December, 1887, a date that tallies
+entirely with my uncle’s story.
+
+CHARLES EDWARD PRENDICK.
+
+The Island of Doctor Moreau
+
+(The Story written by Edward Prendick.)
+
+### I. IN THE DINGEY OF THE “LADY VAIN.”
+
+I do not propose to add anything to what has already been written
+concerning the loss of the _Lady Vain_. As everyone knows, she collided
+with a derelict when ten days out from Callao. The longboat, with seven
+of the crew, was picked up eighteen days after by H. M. gunboat
+_Myrtle_, and the story of their terrible privations has become quite
+as well known as the far more horrible _Medusa_ case. But I have to add
+to the published story of the _Lady Vain_ another, possibly as horrible
+and far stranger. It has hitherto been supposed that the four men who
+were in the dingey perished, but this is incorrect. I have the best of
+evidence for this assertion: I was one of the four men.
+
+But in the first place I must state that there never were _four_ men in
+the dingey,—the number was three. Constans, who was “seen by the
+captain to jump into the gig,”[1] luckily for us and unluckily for
+himself did not reach us. He came down out of the tangle of ropes under
+the stays of the smashed bowsprit, some small rope caught his heel as
+he let go, and he hung for a moment head downward, and then fell and
+struck a block or spar floating in the water. We pulled towards him,
+but he never came up.
+
+[1] _Daily News_, March 17, 1887.
+
+I say luckily for us he did not reach us, and I might almost say
+luckily for himself; for we had only a small beaker of water and some
+soddened ship’s biscuits with us, so sudden had been the alarm, so
+unprepared the ship for any disaster. We thought the people on the
+launch would be better provisioned (though it seems they were not), and
+we tried to hail them. They could not have heard us, and the next
+morning when the drizzle cleared,—which was not until past midday,—we
+could see nothing of them. We could not stand up to look about us,
+because of the pitching of the boat. The two other men who had escaped
+so far with me were a man named Helmar, a passenger like myself, and a
+seaman whose name I don’t know,—a short sturdy man, with a stammer.
+
+We drifted famishing, and, after our water had come to an end,
+tormented by an intolerable thirst, for eight days altogether. After
+the second day the sea subsided slowly to a glassy calm. It is quite
+impossible for the ordinary reader to imagine those eight days. He has
+not, luckily for himself, anything in his memory to imagine with. After
+the first day we said little to one another, and lay in our places in
+the boat and stared at the horizon, or watched, with eyes that grew
+larger and more haggard every day, the misery and weakness gaining upon
+our companions. The sun became pitiless. The water ended on the fourth
+day, and we were already thinking strange things and saying them with
+our eyes; but it was, I think, the sixth before Helmar gave voice to
+the thing we had all been thinking. I remember our voices were dry and
+thin, so that we bent towards one another and spared our words. I stood
+out against it with all my might, was rather for scuttling the boat and
+perishing together among the sharks that followed us; but when Helmar
+said that if his proposal was accepted we should have drink, the sailor
+came round to him.
+
+I would not draw lots however, and in the night the sailor whispered to
+Helmar again and again, and I sat in the bows with my clasp-knife in my
+hand, though I doubt if I had the stuff in me to fight; and in the
+morning I agreed to Helmar’s proposal, and we handed halfpence to find
+the odd man. The lot fell upon the sailor; but he was the strongest of
+us and would not abide by it, and attacked Helmar with his hands. They
+grappled together and almost stood up. I crawled along the boat to
+them, intending to help Helmar by grasping the sailor’s leg; but the
+sailor stumbled with the swaying of the boat, and the two fell upon the
+gunwale and rolled overboard together. They sank like stones. I
+remember laughing at that, and wondering why I laughed. The laugh
+caught me suddenly like a thing from without.
+
+I lay across one of the thwarts for I know not how long, thinking that
+if I had the strength I would drink sea-water and madden myself to die
+quickly. And even as I lay there I saw, with no more interest than if
+it had been a picture, a sail come up towards me over the sky-line. My
+mind must have been wandering, and yet I remember all that happened,
+quite distinctly. I remember how my head swayed with the seas, and the
+horizon with the sail above it danced up and down; but I also remember
+as distinctly that I had a persuasion that I was dead, and that I
+thought what a jest it was that they should come too late by such a
+little to catch me in my body.
+
+For an endless period, as it seemed to me, I lay with my head on the
+thwart watching the schooner (she was a little ship, schooner-rigged
+fore and aft) come up out of the sea. She kept tacking to and fro in a
+widening compass, for she was sailing dead into the wind. It never
+entered my head to attempt to attract attention, and I do not remember
+anything distinctly after the sight of her side until I found myself in
+a little cabin aft. There’s a dim half-memory of being lifted up to the
+gangway, and of a big round countenance covered with freckles and
+surrounded with red hair staring at me over the bulwarks. I also had a
+disconnected impression of a dark face, with extraordinary eyes, close
+to mine; but that I thought was a nightmare, until I met it again. I
+fancy I recollect some stuff being poured in between my teeth; and that
+is all.
+
+### II. THE MAN WHO WAS GOING NOWHERE.
+
+The cabin in which I found myself was small and rather untidy. A
+youngish man with flaxen hair, a bristly straw-coloured moustache, and
+a dropping nether lip, was sitting and holding my wrist. For a minute
+we stared at each other without speaking. He had watery grey eyes,
+oddly void of expression. Then just overhead came a sound like an iron
+bedstead being knocked about, and the low angry growling of some large
+animal. At the same time the man spoke. He repeated his question,—“How
+do you feel now?”
+
+I think I said I felt all right. I could not recollect how I had got
+there. He must have seen the question in my face, for my voice was
+inaccessible to me.
+
+“You were picked up in a boat, starving. The name on the boat was the
+_Lady Vain_, and there were spots of blood on the gunwale.”
+
+At the same time my eye caught my hand, so thin that it looked like a
+dirty skin-purse full of loose bones, and all the business of the boat
+came back to me.
+
+“Have some of this,” said he, and gave me a dose of some scarlet stuff,
+iced.
+
+It tasted like blood, and made me feel stronger.
+
+“You were in luck,” said he, “to get picked up by a ship with a medical
+man aboard.” He spoke with a slobbering articulation, with the ghost of
+a lisp.
+
+“What ship is this?” I said slowly, hoarse from my long silence.
+
+“It’s a little trader from Arica and Callao. I never asked where she
+came from in the beginning,—out of the land of born fools, I guess. I’m
+a passenger myself, from Arica. The silly ass who owns her,—he’s
+captain too, named Davies,—he’s lost his certificate, or something. You
+know the kind of man,—calls the thing the _Ipecacuanha_, of all silly,
+infernal names; though when there’s much of a sea without any wind, she
+certainly acts according.”
+
+(Then the noise overhead began again, a snarling growl and the voice of
+a human being together. Then another voice, telling some
+“Heaven-forsaken idiot” to desist.)
+
+“You were nearly dead,” said my interlocutor. “It was a very near
+thing, indeed. But I’ve put some stuff into you now. Notice your arm’s
+sore? Injections. You’ve been insensible for nearly thirty hours.”
+
+I thought slowly. (I was distracted now by the yelping of a number of
+dogs.) “Am I eligible for solid food?” I asked.
+
+“Thanks to me,” he said. “Even now the mutton is boiling.”
+
+“Yes,” I said with assurance; “I could eat some mutton.”
+
+“But,” said he with a momentary hesitation, “you know I’m dying to hear
+of how you came to be alone in that boat. _Damn that howling_!” I
+thought I detected a certain suspicion in his eyes.
+
+He suddenly left the cabin, and I heard him in violent controversy with
+some one, who seemed to me to talk gibberish in response to him. The
+matter sounded as though it ended in blows, but in that I thought my
+ears were mistaken. Then he shouted at the dogs, and returned to the
+cabin.
+
+“Well?” said he in the doorway. “You were just beginning to tell me.”
+
+I told him my name, Edward Prendick, and how I had taken to Natural
+History as a relief from the dulness of my comfortable independence.
+
+He seemed interested in this. “I’ve done some science myself. I did my
+Biology at University College,—getting out the ovary of the earthworm
+and the radula of the snail, and all that. Lord! It’s ten years ago.
+But go on! go on! tell me about the boat.”
+
+He was evidently satisfied with the frankness of my story, which I told
+in concise sentences enough, for I felt horribly weak; and when it was
+finished he reverted at once to the topic of Natural History and his
+own biological studies. He began to question me closely about Tottenham
+Court Road and Gower Street. “Is Caplatzi still flourishing? What a
+shop that was!” He had evidently been a very ordinary medical student,
+and drifted incontinently to the topic of the music halls. He told me
+some anecdotes.
+
+“Left it all,” he said, “ten years ago. How jolly it all used to be!
+But I made a young ass of myself,—played myself out before I was
+twenty-one. I daresay it’s all different now. But I must look up that
+ass of a cook, and see what he’s done to your mutton.”
+
+The growling overhead was renewed, so suddenly and with so much savage
+anger that it startled me. “What’s that?” I called after him, but the
+door had closed. He came back again with the boiled mutton, and I was
+so excited by the appetising smell of it that I forgot the noise of the
+beast that had troubled me.
+
+After a day of alternate sleep and feeding I was so far recovered as to
+be able to get from my bunk to the scuttle, and see the green seas
+trying to keep pace with us. I judged the schooner was running before
+the wind. Montgomery—that was the name of the flaxen-haired man—came in
+again as I stood there, and I asked him for some clothes. He lent me
+some duck things of his own, for those I had worn in the boat had been
+thrown overboard. They were rather loose for me, for he was large and
+long in his limbs. He told me casually that the captain was three-parts
+drunk in his own cabin. As I assumed the clothes, I began asking him
+some questions about the destination of the ship. He said the ship was
+bound to Hawaii, but that it had to land him first.
+
+“Where?” said I.
+
+“It’s an island, where I live. So far as I know, it hasn’t got a name.”
+
+He stared at me with his nether lip dropping, and looked so wilfully
+stupid of a sudden that it came into my head that he desired to avoid
+my questions. I had the discretion to ask no more.
+
+### III. THE STRANGE FACE.
+
+We left the cabin and found a man at the companion obstructing our way.
+He was standing on the ladder with his back to us, peering over the
+combing of the hatchway. He was, I could see, a misshapen man, short,
+broad, and clumsy, with a crooked back, a hairy neck, and a head sunk
+between his shoulders. He was dressed in dark-blue serge, and had
+peculiarly thick, coarse, black hair. I heard the unseen dogs growl
+furiously, and forthwith he ducked back,—coming into contact with the
+hand I put out to fend him off from myself. He turned with animal
+swiftness.
+
+In some indefinable way the black face thus flashed upon me shocked me
+profoundly. It was a singularly deformed one. The facial part
+projected, forming something dimly suggestive of a muzzle, and the huge
+half-open mouth showed as big white teeth as I had ever seen in a human
+mouth. His eyes were blood-shot at the edges, with scarcely a rim of
+white round the hazel pupils. There was a curious glow of excitement in
+his face.
+
+“Confound you!” said Montgomery. “Why the devil don’t you get out of
+the way?”
+
+The black-faced man started aside without a word. I went on up the
+companion, staring at him instinctively as I did so. Montgomery stayed
+at the foot for a moment. “You have no business here, you know,” he
+said in a deliberate tone. “Your place is forward.”
+
+The black-faced man cowered. “They—won’t have me forward.” He spoke
+slowly, with a queer, hoarse quality in his voice.
+
+“Won’t have you forward!” said Montgomery, in a menacing voice. “But I
+tell you to go!” He was on the brink of saying something further, then
+looked up at me suddenly and followed me up the ladder.
+
+I had paused half way through the hatchway, looking back, still
+astonished beyond measure at the grotesque ugliness of this black-faced
+creature. I had never beheld such a repulsive and extraordinary face
+before, and yet—if the contradiction is credible—I experienced at the
+same time an odd feeling that in some way I _had_ already encountered
+exactly the features and gestures that now amazed me. Afterwards it
+occurred to me that probably I had seen him as I was lifted aboard; and
+yet that scarcely satisfied my suspicion of a previous acquaintance.
+Yet how one could have set eyes on so singular a face and yet have
+forgotten the precise occasion, passed my imagination.
+
+Montgomery’s movement to follow me released my attention, and I turned
+and looked about me at the flush deck of the little schooner. I was
+already half prepared by the sounds I had heard for what I saw.
+Certainly I never beheld a deck so dirty. It was littered with scraps
+of carrot, shreds of green stuff, and indescribable filth. Fastened by
+chains to the mainmast were a number of grisly staghounds, who now
+began leaping and barking at me, and by the mizzen a huge puma was
+cramped in a little iron cage far too small even to give it turning
+room. Farther under the starboard bulwark were some big hutches
+containing a number of rabbits, and a solitary llama was squeezed in a
+mere box of a cage forward. The dogs were muzzled by leather straps.
+The only human being on deck was a gaunt and silent sailor at the
+wheel.
+
+The patched and dirty spankers were tense before the wind, and up aloft
+the little ship seemed carrying every sail she had. The sky was clear,
+the sun midway down the western sky; long waves, capped by the breeze
+with froth, were running with us. We went past the steersman to the
+taffrail, and saw the water come foaming under the stern and the
+bubbles go dancing and vanishing in her wake. I turned and surveyed the
+unsavoury length of the ship.
+
+“Is this an ocean menagerie?” said I.
+
+“Looks like it,” said Montgomery.
+
+“What are these beasts for? Merchandise, curios? Does the captain think
+he is going to sell them somewhere in the South Seas?”
+
+“It looks like it, doesn’t it?” said Montgomery, and turned towards the
+wake again.
+
+Suddenly we heard a yelp and a volley of furious blasphemy from the
+companion hatchway, and the deformed man with the black face came up
+hurriedly. He was immediately followed by a heavy red-haired man in a
+white cap. At the sight of the former the staghounds, who had all tired
+of barking at me by this time, became furiously excited, howling and
+leaping against their chains. The black hesitated before them, and this
+gave the red-haired man time to come up with him and deliver a
+tremendous blow between the shoulder-blades. The poor devil went down
+like a felled ox, and rolled in the dirt among the furiously excited
+dogs. It was lucky for him that they were muzzled. The red-haired man
+gave a yawp of exultation and stood staggering, and as it seemed to me
+in serious danger of either going backwards down the companion hatchway
+or forwards upon his victim.
+
+So soon as the second man had appeared, Montgomery had started forward.
+“Steady on there!” he cried, in a tone of remonstrance. A couple of
+sailors appeared on the forecastle. The black-faced man, howling in a
+singular voice rolled about under the feet of the dogs. No one
+attempted to help him. The brutes did their best to worry him, butting
+their muzzles at him. There was a quick dance of their lithe
+grey-figured bodies over the clumsy, prostrate figure. The sailors
+forward shouted, as though it was admirable sport. Montgomery gave an
+angry exclamation, and went striding down the deck, and I followed him.
+The black-faced man scrambled up and staggered forward, going and
+leaning over the bulwark by the main shrouds, where he remained,
+panting and glaring over his shoulder at the dogs. The red-haired man
+laughed a satisfied laugh.
+
+“Look here, Captain,” said Montgomery, with his lisp a little
+accentuated, gripping the elbows of the red-haired man, “this won’t
+do!”
+
+I stood behind Montgomery. The captain came half round, and regarded
+him with the dull and solemn eyes of a drunken man. “Wha’ won’t do?” he
+said, and added, after looking sleepily into Montgomery’s face for a
+minute, “Blasted Sawbones!”
+
+With a sudden movement he shook his arms free, and after two
+ineffectual attempts stuck his freckled fists into his side pockets.
+
+“That man’s a passenger,” said Montgomery. “I’d advise you to keep your
+hands off him.”
+
+“Go to hell!” said the captain, loudly. He suddenly turned and
+staggered towards the side. “Do what I like on my own ship,” he said.
+
+I think Montgomery might have left him then, seeing the brute was
+drunk; but he only turned a shade paler, and followed the captain to
+the bulwarks.
+
+“Look you here, Captain,” he said; “that man of mine is not to be
+ill-treated. He has been hazed ever since he came aboard.”
+
+For a minute, alcoholic fumes kept the captain speechless. “Blasted
+Sawbones!” was all he considered necessary.
+
+I could see that Montgomery had one of those slow, pertinacious tempers
+that will warm day after day to a white heat, and never again cool to
+forgiveness; and I saw too that this quarrel had been some time
+growing. “The man’s drunk,” said I, perhaps officiously; “you’ll do no
+good.”
+
+Montgomery gave an ugly twist to his dropping lip. “He’s always drunk.
+Do you think that excuses his assaulting his passengers?”
+
+“My ship,” began the captain, waving his hand unsteadily towards the
+cages, “was a clean ship. Look at it now!” It was certainly anything
+but clean. “Crew,” continued the captain, “clean, respectable crew.”
+
+“You agreed to take the beasts.”
+
+“I wish I’d never set eyes on your infernal island. What the devil—want
+beasts for on an island like that? Then, that man of yours—understood
+he was a man. He’s a lunatic; and he hadn’t no business aft. Do you
+think the whole damned ship belongs to you?”
+
+“Your sailors began to haze the poor devil as soon as he came aboard.”
+
+“That’s just what he is—he’s a devil! an ugly devil! My men can’t stand
+him. _I_ can’t stand him. None of us can’t stand him. Nor _you_
+either!”
+
+Montgomery turned away. “_You_ leave that man alone, anyhow,” he said,
+nodding his head as he spoke.
+
+But the captain meant to quarrel now. He raised his voice. “If he comes
+this end of the ship again I’ll cut his insides out, I tell you. Cut
+out his blasted insides! Who are _you_, to tell _me_ what _I’m_ to do?
+I tell you I’m captain of this ship,—captain and owner. I’m the law
+here, I tell you,—the law and the prophets. I bargained to take a man
+and his attendant to and from Arica, and bring back some animals. I
+never bargained to carry a mad devil and a silly Sawbones, a—”
+
+Well, never mind what he called Montgomery. I saw the latter take a
+step forward, and interposed. “He’s drunk,” said I. The captain began
+some abuse even fouler than the last. “Shut up!” I said, turning on him
+sharply, for I had seen danger in Montgomery’s white face. With that I
+brought the downpour on myself.
+
+However, I was glad to avert what was uncommonly near a scuffle, even
+at the price of the captain’s drunken ill-will. I do not think I have
+ever heard quite so much vile language come in a continuous stream from
+any man’s lips before, though I have frequented eccentric company
+enough. I found some of it hard to endure, though I am a mild-tempered
+man; but, certainly, when I told the captain to “shut up” I had
+forgotten that I was merely a bit of human flotsam, cut off from my
+resources and with my fare unpaid; a mere casual dependant on the
+bounty, or speculative enterprise, of the ship. He reminded me of it
+with considerable vigour; but at any rate I prevented a fight.
+
+### IV. AT THE SCHOONER’S RAIL.
+
+That night land was sighted after sundown, and the schooner hove to.
+Montgomery intimated that was his destination. It was too far to see
+any details; it seemed to me then simply a low-lying patch of dim blue
+in the uncertain blue-grey sea. An almost vertical streak of smoke went
+up from it into the sky. The captain was not on deck when it was
+sighted. After he had vented his wrath on me he had staggered below,
+and I understand he went to sleep on the floor of his own cabin. The
+mate practically assumed the command. He was the gaunt, taciturn
+individual we had seen at the wheel. Apparently he was in an evil
+temper with Montgomery. He took not the slightest notice of either of
+us. We dined with him in a sulky silence, after a few ineffectual
+efforts on my part to talk. It struck me too that the men regarded my
+companion and his animals in a singularly unfriendly manner. I found
+Montgomery very reticent about his purpose with these creatures, and
+about his destination; and though I was sensible of a growing curiosity
+as to both, I did not press him.
+
+We remained talking on the quarter deck until the sky was thick with
+stars. Except for an occasional sound in the yellow-lit forecastle and
+a movement of the animals now and then, the night was very still. The
+puma lay crouched together, watching us with shining eyes, a black heap
+in the corner of its cage. Montgomery produced some cigars. He talked
+to me of London in a tone of half-painful reminiscence, asking all
+kinds of questions about changes that had taken place. He spoke like a
+man who had loved his life there, and had been suddenly and irrevocably
+cut off from it. I gossiped as well as I could of this and that. All
+the time the strangeness of him was shaping itself in my mind; and as I
+talked I peered at his odd, pallid face in the dim light of the
+binnacle lantern behind me. Then I looked out at the darkling sea,
+where in the dimness his little island was hidden.
+
+This man, it seemed to me, had come out of Immensity merely to save my
+life. To-morrow he would drop over the side, and vanish again out of my
+existence. Even had it been under commonplace circumstances, it would
+have made me a trifle thoughtful; but in the first place was the
+singularity of an educated man living on this unknown little island,
+and coupled with that the extraordinary nature of his luggage. I found
+myself repeating the captain’s question. What did he want with the
+beasts? Why, too, had he pretended they were not his when I had
+remarked about them at first? Then, again, in his personal attendant
+there was a bizarre quality which had impressed me profoundly. These
+circumstances threw a haze of mystery round the man. They laid hold of
+my imagination, and hampered my tongue.
+
+Towards midnight our talk of London died away, and we stood side by
+side leaning over the bulwarks and staring dreamily over the silent,
+starlit sea, each pursuing his own thoughts. It was the atmosphere for
+sentiment, and I began upon my gratitude.
+
+“If I may say it,” said I, after a time, “you have saved my life.”
+
+“Chance,” he answered. “Just chance.”
+
+“I prefer to make my thanks to the accessible agent.”
+
+“Thank no one. You had the need, and I had the knowledge; and I
+injected and fed you much as I might have collected a specimen. I was
+bored and wanted something to do. If I’d been jaded that day, or hadn’t
+liked your face, well—it’s a curious question where you would have been
+now!”
+
+This damped my mood a little. “At any rate,” I began.
+
+“It’s a chance, I tell you,” he interrupted, “as everything is in a
+man’s life. Only the asses won’t see it! Why am I here now, an outcast
+from civilisation, instead of being a happy man enjoying all the
+pleasures of London? Simply because eleven years ago—I lost my head for
+ten minutes on a foggy night.”
+
+He stopped. “Yes?” said I.
+
+“That’s all.”
+
+We relapsed into silence. Presently he laughed. “There’s something in
+this starlight that loosens one’s tongue. I’m an ass, and yet somehow I
+would like to tell you.”
+
+“Whatever you tell me, you may rely upon my keeping to myself—if that’s
+it.”
+
+He was on the point of beginning, and then shook his head, doubtfully.
+
+“Don’t,” said I. “It is all the same to me. After all, it is better to
+keep your secret. There’s nothing gained but a little relief if I
+respect your confidence. If I don’t—well?”
+
+He grunted undecidedly. I felt I had him at a disadvantage, had caught
+him in the mood of indiscretion; and to tell the truth I was not
+curious to learn what might have driven a young medical student out of
+London. I have an imagination. I shrugged my shoulders and turned away.
+Over the taffrail leant a silent black figure, watching the stars. It
+was Montgomery’s strange attendant. It looked over its shoulder quickly
+with my movement, then looked away again.
+
+It may seem a little thing to you, perhaps, but it came like a sudden
+blow to me. The only light near us was a lantern at the wheel. The
+creature’s face was turned for one brief instant out of the dimness of
+the stern towards this illumination, and I saw that the eyes that
+glanced at me shone with a pale-green light. I did not know then that a
+reddish luminosity, at least, is not uncommon in human eyes. The thing
+came to me as stark inhumanity. That black figure with its eyes of fire
+struck down through all my adult thoughts and feelings, and for a
+moment the forgotten horrors of childhood came back to my mind. Then
+the effect passed as it had come. An uncouth black figure of a man, a
+figure of no particular import, hung over the taffrail against the
+starlight, and I found Montgomery was speaking to me.
+
+“I’m thinking of turning in, then,” said he, “if you’ve had enough of
+this.”
+
+I answered him incongruously. We went below, and he wished me
+good-night at the door of my cabin.
+
+That night I had some very unpleasant dreams. The waning moon rose
+late. Its light struck a ghostly white beam across my cabin, and made
+an ominous shape on the planking by my bunk. Then the staghounds woke,
+and began howling and baying; so that I dreamt fitfully, and scarcely
+slept until the approach of dawn.
+
+### V. THE MAN WHO HAD NOWHERE TO GO.
+
+In the early morning (it was the second morning after my recovery, and
+I believe the fourth after I was picked up), I awoke through an avenue
+of tumultuous dreams,—dreams of guns and howling mobs,—and became
+sensible of a hoarse shouting above me. I rubbed my eyes and lay
+listening to the noise, doubtful for a little while of my whereabouts.
+Then came a sudden pattering of bare feet, the sound of heavy objects
+being thrown about, a violent creaking and the rattling of chains. I
+heard the swish of the water as the ship was suddenly brought round,
+and a foamy yellow-green wave flew across the little round window and
+left it streaming. I jumped into my clothes and went on deck.
+
+As I came up the ladder I saw against the flushed sky—for the sun was
+just rising—the broad back and red hair of the captain, and over his
+shoulder the puma spinning from a tackle rigged on to the mizzen
+spanker-boom.
+
+The poor brute seemed horribly scared, and crouched in the bottom of
+its little cage.
+
+“Overboard with ’em!” bawled the captain. “Overboard with ’em! We’ll
+have a clean ship soon of the whole bilin’ of ’em.”
+
+He stood in my way, so that I had perforce to tap his shoulder to come
+on deck. He came round with a start, and staggered back a few paces to
+stare at me. It needed no expert eye to tell that the man was still
+drunk.
+
+“Hullo!” said he, stupidly; and then with a light coming into his eyes,
+“Why, it’s Mister—Mister?”
+
+“Prendick,” said I.
+
+“Prendick be damned!” said he. “Shut-up,—that’s your name. Mister
+Shut-up.”
+
+It was no good answering the brute; but I certainly did not expect his
+next move. He held out his hand to the gangway by which Montgomery
+stood talking to a massive grey-haired man in dirty-blue flannels, who
+had apparently just come aboard.
+
+“That way, Mister Blasted Shut-up! that way!” roared the captain.
+
+Montgomery and his companion turned as he spoke.
+
+“What do you mean?” I said.
+
+“That way, Mister Blasted Shut-up,—that’s what I mean! Overboard,
+Mister Shut-up,—and sharp! We’re cleaning the ship out,—cleaning the
+whole blessed ship out; and overboard you go!”
+
+I stared at him dumfounded. Then it occurred to me that it was exactly
+the thing I wanted. The lost prospect of a journey as sole passenger
+with this quarrelsome sot was not one to mourn over. I turned towards
+Montgomery.
+
+“Can’t have you,” said Montgomery’s companion, concisely.
+
+“You can’t have me!” said I, aghast. He had the squarest and most
+resolute face I ever set eyes upon.
+
+“Look here,” I began, turning to the captain.
+
+“Overboard!” said the captain. “This ship aint for beasts and cannibals
+and worse than beasts, any more. Overboard you go, Mister Shut-up. If
+they can’t have you, you goes overboard. But, anyhow, you go—with your
+friends. I’ve done with this blessed island for evermore, amen! I’ve
+had enough of it.”
+
+“But, Montgomery,” I appealed.
+
+He distorted his lower lip, and nodded his head hopelessly at the
+grey-haired man beside him, to indicate his powerlessness to help me.
+
+“I’ll see to _you_, presently,” said the captain.
+
+Then began a curious three-cornered altercation. Alternately I appealed
+to one and another of the three men,—first to the grey-haired man to
+let me land, and then to the drunken captain to keep me aboard. I even
+bawled entreaties to the sailors. Montgomery said never a word, only
+shook his head. “You’re going overboard, I tell you,” was the captain’s
+refrain. “Law be damned! I’m king here.” At last I must confess my
+voice suddenly broke in the middle of a vigorous threat. I felt a gust
+of hysterical petulance, and went aft and stared dismally at nothing.
+
+Meanwhile the sailors progressed rapidly with the task of unshipping
+the packages and caged animals. A large launch, with two standing lugs,
+lay under the lee of the schooner; and into this the strange assortment
+of goods were swung. I did not then see the hands from the island that
+were receiving the packages, for the hull of the launch was hidden from
+me by the side of the schooner. Neither Montgomery nor his companion
+took the slightest notice of me, but busied themselves in assisting and
+directing the four or five sailors who were unloading the goods. The
+captain went forward interfering rather than assisting. I was
+alternately despairful and desperate. Once or twice as I stood waiting
+there for things to accomplish themselves, I could not resist an
+impulse to laugh at my miserable quandary. I felt all the wretcheder
+for the lack of a breakfast. Hunger and a lack of blood-corpuscles take
+all the manhood from a man. I perceived pretty clearly that I had not
+the stamina either to resist what the captain chose to do to expel me,
+or to force myself upon Montgomery and his companion. So I waited
+passively upon fate; and the work of transferring Montgomery’s
+possessions to the launch went on as if I did not exist.
+
+Presently that work was finished, and then came a struggle. I was
+hauled, resisting weakly enough, to the gangway. Even then I noticed
+the oddness of the brown faces of the men who were with Montgomery in
+the launch; but the launch was now fully laden, and was shoved off
+hastily. A broadening gap of green water appeared under me, and I
+pushed back with all my strength to avoid falling headlong. The hands
+in the launch shouted derisively, and I heard Montgomery curse at them;
+and then the captain, the mate, and one of the seamen helping him, ran
+me aft towards the stern.
+
+The dingey of the _Lady Vain_ had been towing behind; it was half full
+of water, had no oars, and was quite unvictualled. I refused to go
+aboard her, and flung myself full length on the deck. In the end, they
+swung me into her by a rope (for they had no stern ladder), and then
+they cut me adrift. I drifted slowly from the schooner. In a kind of
+stupor I watched all hands take to the rigging, and slowly but surely
+she came round to the wind; the sails fluttered, and then bellied out
+as the wind came into them. I stared at her weather-beaten side heeling
+steeply towards me; and then she passed out of my range of view.
+
+I did not turn my head to follow her. At first I could scarcely believe
+what had happened. I crouched in the bottom of the dingey, stunned, and
+staring blankly at the vacant, oily sea. Then I realised that I was in
+that little hell of mine again, now half swamped; and looking back over
+the gunwale, I saw the schooner standing away from me, with the
+red-haired captain mocking at me over the taffrail, and turning towards
+the island saw the launch growing smaller as she approached the beach.
+
+Abruptly the cruelty of this desertion became clear to me. I had no
+means of reaching the land unless I should chance to drift there. I was
+still weak, you must remember, from my exposure in the boat; I was
+empty and very faint, or I should have had more heart. But as it was I
+suddenly began to sob and weep, as I had never done since I was a
+little child. The tears ran down my face. In a passion of despair I
+struck with my fists at the water in the bottom of the boat, and kicked
+savagely at the gunwale. I prayed aloud for God to let me die.
+
+### VI. THE EVIL-LOOKING BOATMEN.
+
+But the islanders, seeing that I was really adrift, took pity on me. I
+drifted very slowly to the eastward, approaching the island slantingly;
+and presently I saw, with hysterical relief, the launch come round and
+return towards me. She was heavily laden, and I could make out as she
+drew nearer Montgomery’s white-haired, broad-shouldered companion
+sitting cramped up with the dogs and several packing-cases in the stern
+sheets. This individual stared fixedly at me without moving or
+speaking. The black-faced cripple was glaring at me as fixedly in the
+bows near the puma. There were three other men besides,—three strange
+brutish-looking fellows, at whom the staghounds were snarling savagely.
+Montgomery, who was steering, brought the boat by me, and rising,
+caught and fastened my painter to the tiller to tow me, for there was
+no room aboard.
+
+I had recovered from my hysterical phase by this time and answered his
+hail, as he approached, bravely enough. I told him the dingey was
+nearly swamped, and he reached me a piggin. I was jerked back as the
+rope tightened between the boats. For some time I was busy baling.
+
+It was not until I had got the water under (for the water in the dingey
+had been shipped; the boat was perfectly sound) that I had leisure to
+look at the people in the launch again.
+
+The white-haired man I found was still regarding me steadfastly, but
+with an expression, as I now fancied, of some perplexity. When my eyes
+met his, he looked down at the staghound that sat between his knees. He
+was a powerfully-built man, as I have said, with a fine forehead and
+rather heavy features; but his eyes had that odd drooping of the skin
+above the lids which often comes with advancing years, and the fall of
+his heavy mouth at the corners gave him an expression of pugnacious
+resolution. He talked to Montgomery in a tone too low for me to hear.
+
+From him my eyes travelled to his three men; and a strange crew they
+were. I saw only their faces, yet there was something in their faces—I
+knew not what—that gave me a queer spasm of disgust. I looked steadily
+at them, and the impression did not pass, though I failed to see what
+had occasioned it. They seemed to me then to be brown men; but their
+limbs were oddly swathed in some thin, dirty, white stuff down even to
+the fingers and feet: I have never seen men so wrapped up before, and
+women so only in the East. They wore turbans too, and thereunder peered
+out their elfin faces at me,—faces with protruding lower-jaws and
+bright eyes. They had lank black hair, almost like horsehair, and
+seemed as they sat to exceed in stature any race of men I have seen.
+The white-haired man, who I knew was a good six feet in height, sat a
+head below any one of the three. I found afterwards that really none
+were taller than myself; but their bodies were abnormally long, and the
+thigh-part of the leg short and curiously twisted. At any rate, they
+were an amazingly ugly gang, and over the heads of them under the
+forward lug peered the black face of the man whose eyes were luminous
+in the dark. As I stared at them, they met my gaze; and then first one
+and then another turned away from my direct stare, and looked at me in
+an odd, furtive manner. It occurred to me that I was perhaps annoying
+them, and I turned my attention to the island we were approaching.
+
+It was low, and covered with thick vegetation,—chiefly a kind of palm,
+that was new to me. From one point a thin white thread of vapour rose
+slantingly to an immense height, and then frayed out like a down
+feather. We were now within the embrace of a broad bay flanked on
+either hand by a low promontory. The beach was of dull-grey sand, and
+sloped steeply up to a ridge, perhaps sixty or seventy feet above the
+sea-level, and irregularly set with trees and undergrowth. Half way up
+was a square enclosure of some greyish stone, which I found
+subsequently was built partly of coral and partly of pumiceous lava.
+Two thatched roofs peeped from within this enclosure. A man stood
+awaiting us at the water’s edge. I fancied while we were still far off
+that I saw some other and very grotesque-looking creatures scuttle into
+the bushes upon the slope; but I saw nothing of these as we drew
+nearer. This man was of a moderate size, and with a black negroid face.
+He had a large, almost lipless, mouth, extraordinary lank arms, long
+thin feet, and bow-legs, and stood with his heavy face thrust forward
+staring at us. He was dressed like Montgomery and his white-haired
+companion, in jacket and trousers of blue serge. As we came still
+nearer, this individual began to run to and fro on the beach, making
+the most grotesque movements.
+
+At a word of command from Montgomery, the four men in the launch sprang
+up, and with singularly awkward gestures struck the lugs. Montgomery
+steered us round and into a narrow little dock excavated in the beach.
+Then the man on the beach hastened towards us. This dock, as I call it,
+was really a mere ditch just long enough at this phase of the tide to
+take the longboat. I heard the bows ground in the sand, staved the
+dingey off the rudder of the big boat with my piggin, and freeing the
+painter, landed. The three muffled men, with the clumsiest movements,
+scrambled out upon the sand, and forthwith set to landing the cargo,
+assisted by the man on the beach. I was struck especially by the
+curious movements of the legs of the three swathed and bandaged
+boatmen,—not stiff they were, but distorted in some odd way, almost as
+if they were jointed in the wrong place. The dogs were still snarling,
+and strained at their chains after these men, as the white-haired man
+landed with them. The three big fellows spoke to one another in odd
+guttural tones, and the man who had waited for us on the beach began
+chattering to them excitedly—a foreign language, as I fancied—as they
+laid hands on some bales piled near the stern. Somewhere I had heard
+such a voice before, and I could not think where. The white-haired man
+stood, holding in a tumult of six dogs, and bawling orders over their
+din. Montgomery, having unshipped the rudder, landed likewise, and all
+set to work at unloading. I was too faint, what with my long fast and
+the sun beating down on my bare head, to offer any assistance.
+
+Presently the white-haired man seemed to recollect my presence, and
+came up to me.
+
+“You look,” said he, “as though you had scarcely breakfasted.” His
+little eyes were a brilliant black under his heavy brows. “I must
+apologise for that. Now you are our guest, we must make you
+comfortable,—though you are uninvited, you know.” He looked keenly into
+my face. “Montgomery says you are an educated man, Mr. Prendick; says
+you know something of science. May I ask what that signifies?”
+
+I told him I had spent some years at the Royal College of Science, and
+had done some researches in biology under Huxley. He raised his
+eyebrows slightly at that.
+
+“That alters the case a little, Mr. Prendick,” he said, with a trifle
+more respect in his manner. “As it happens, we are biologists here.
+This is a biological station—of a sort.” His eye rested on the men in
+white who were busily hauling the puma, on rollers, towards the walled
+yard. “I and Montgomery, at least,” he added. Then, “When you will be
+able to get away, I can’t say. We’re off the track to anywhere. We see
+a ship once in a twelve-month or so.”
+
+He left me abruptly, and went up the beach past this group, and I think
+entered the enclosure. The other two men were with Montgomery, erecting
+a pile of smaller packages on a low-wheeled truck. The llama was still
+on the launch with the rabbit hutches; the staghounds were still lashed
+to the thwarts. The pile of things completed, all three men laid hold
+of the truck and began shoving the ton-weight or so upon it after the
+puma. Presently Montgomery left them, and coming back to me held out
+his hand.
+
+“I’m glad,” said he, “for my own part. That captain was a silly ass.
+He’d have made things lively for you.”
+
+“It was you,” said I, “that saved me again.”
+
+“That depends. You’ll find this island an infernally rum place, I
+promise you. I’d watch my goings carefully, if I were you. _He_—” He
+hesitated, and seemed to alter his mind about what was on his lips. “I
+wish you’d help me with these rabbits,” he said.
+
+His procedure with the rabbits was singular. I waded in with him, and
+helped him lug one of the hutches ashore. No sooner was that done than
+he opened the door of it, and tilting the thing on one end turned its
+living contents out on the ground. They fell in a struggling heap one
+on the top of the other. He clapped his hands, and forthwith they went
+off with that hopping run of theirs, fifteen or twenty of them I should
+think, up the beach.
+
+“Increase and multiply, my friends,” said Montgomery. “Replenish the
+island. Hitherto we’ve had a certain lack of meat here.”
+
+As I watched them disappearing, the white-haired man returned with a
+brandy-flask and some biscuits. “Something to go on with, Prendick,”
+said he, in a far more familiar tone than before. I made no ado, but
+set to work on the biscuits at once, while the white-haired man helped
+Montgomery to release about a score more of the rabbits. Three big
+hutches, however, went up to the house with the puma. The brandy I did
+not touch, for I have been an abstainer from my birth.
+
+### VII. THE LOCKED DOOR.
+
+The reader will perhaps understand that at first everything was so
+strange about me, and my position was the outcome of such unexpected
+adventures, that I had no discernment of the relative strangeness of
+this or that thing. I followed the llama up the beach, and was
+overtaken by Montgomery, who asked me not to enter the stone enclosure.
+I noticed then that the puma in its cage and the pile of packages had
+been placed outside the entrance to this quadrangle.
+
+I turned and saw that the launch had now been unloaded, run out again,
+and was being beached, and the white-haired man was walking towards us.
+He addressed Montgomery.
+
+“And now comes the problem of this uninvited guest. What are we to do
+with him?”
+
+“He knows something of science,” said Montgomery.
+
+“I’m itching to get to work again—with this new stuff,” said the
+white-haired man, nodding towards the enclosure. His eyes grew
+brighter.
+
+“I daresay you are,” said Montgomery, in anything but a cordial tone.
+
+“We can’t send him over there, and we can’t spare the time to build him
+a new shanty; and we certainly can’t take him into our confidence just
+yet.”
+
+“I’m in your hands,” said I. I had no idea of what he meant by “over
+there.”
+
+“I’ve been thinking of the same things,” Montgomery answered. “There’s
+my room with the outer door—”
+
+“That’s it,” said the elder man, promptly, looking at Montgomery; and
+all three of us went towards the enclosure. “I’m sorry to make a
+mystery, Mr. Prendick; but you’ll remember you’re uninvited. Our little
+establishment here contains a secret or so, is a kind of Blue-Beard’s
+chamber, in fact. Nothing very dreadful, really, to a sane man; but
+just now, as we don’t know you—”
+
+“Decidedly,” said I, “I should be a fool to take offence at any want of
+confidence.”
+
+He twisted his heavy mouth into a faint smile—he was one of those
+saturnine people who smile with the corners of the mouth down,—and
+bowed his acknowledgment of my complaisance. The main entrance to the
+enclosure was passed; it was a heavy wooden gate, framed in iron and
+locked, with the cargo of the launch piled outside it, and at the
+corner we came to a small doorway I had not previously observed. The
+white-haired man produced a bundle of keys from the pocket of his
+greasy blue jacket, opened this door, and entered. His keys, and the
+elaborate locking-up of the place even while it was still under his
+eye, struck me as peculiar. I followed him, and found myself in a small
+apartment, plainly but not uncomfortably furnished and with its inner
+door, which was slightly ajar, opening into a paved courtyard. This
+inner door Montgomery at once closed. A hammock was slung across the
+darker corner of the room, and a small unglazed window defended by an
+iron bar looked out towards the sea.
+
+This the white-haired man told me was to be my apartment; and the inner
+door, which “for fear of accidents,” he said, he would lock on the
+other side, was my limit inward. He called my attention to a convenient
+deck-chair before the window, and to an array of old books, chiefly, I
+found, surgical works and editions of the Latin and Greek classics
+(languages I cannot read with any comfort), on a shelf near the
+hammock. He left the room by the outer door, as if to avoid opening the
+inner one again.
+
+“We usually have our meals in here,” said Montgomery, and then, as if
+in doubt, went out after the other. “Moreau!” I heard him call, and for
+the moment I do not think I noticed. Then as I handled the books on the
+shelf it came up in consciousness: Where had I heard the name of Moreau
+before? I sat down before the window, took out the biscuits that still
+remained to me, and ate them with an excellent appetite. Moreau!
+
+Through the window I saw one of those unaccountable men in white,
+lugging a packing-case along the beach. Presently the window-frame hid
+him. Then I heard a key inserted and turned in the lock behind me.
+After a little while I heard through the locked door the noise of the
+staghounds, that had now been brought up from the beach. They were not
+barking, but sniffing and growling in a curious fashion. I could hear
+the rapid patter of their feet, and Montgomery’s voice soothing them.
+
+I was very much impressed by the elaborate secrecy of these two men
+regarding the contents of the place, and for some time I was thinking
+of that and of the unaccountable familiarity of the name of Moreau; but
+so odd is the human memory that I could not then recall that well-known
+name in its proper connection. From that my thoughts went to the
+indefinable queerness of the deformed man on the beach. I never saw
+such a gait, such odd motions as he pulled at the box. I recalled that
+none of these men had spoken to me, though most of them I had found
+looking at me at one time or another in a peculiarly furtive manner,
+quite unlike the frank stare of your unsophisticated savage. Indeed,
+they had all seemed remarkably taciturn, and when they did speak,
+endowed with very uncanny voices. What was wrong with them? Then I
+recalled the eyes of Montgomery’s ungainly attendant.
+
+Just as I was thinking of him he came in. He was now dressed in white,
+and carried a little tray with some coffee and boiled vegetables
+thereon. I could hardly repress a shuddering recoil as he came, bending
+amiably, and placed the tray before me on the table. Then astonishment
+paralysed me. Under his stringy black locks I saw his ear; it jumped
+upon me suddenly close to my face. The man had pointed ears, covered
+with a fine brown fur!
+
+“Your breakfast, sair,” he said.
+
+I stared at his face without attempting to answer him. He turned and
+went towards the door, regarding me oddly over his shoulder. I followed
+him out with my eyes; and as I did so, by some odd trick of unconscious
+cerebration, there came surging into my head the phrase, “The Moreau
+Hollows”—was it? “The Moreau—” Ah! It sent my memory back ten years.
+“The Moreau Horrors!” The phrase drifted loose in my mind for a moment,
+and then I saw it in red lettering on a little buff-coloured pamphlet,
+to read which made one shiver and creep. Then I remembered distinctly
+all about it. That long-forgotten pamphlet came back with startling
+vividness to my mind. I had been a mere lad then, and Moreau was, I
+suppose, about fifty,—a prominent and masterful physiologist,
+well-known in scientific circles for his extraordinary imagination and
+his brutal directness in discussion.
+
+Was this the same Moreau? He had published some very astonishing facts
+in connection with the transfusion of blood, and in addition was known
+to be doing valuable work on morbid growths. Then suddenly his career
+was closed. He had to leave England. A journalist obtained access to
+his laboratory in the capacity of laboratory-assistant, with the
+deliberate intention of making sensational exposures; and by the help
+of a shocking accident (if it was an accident), his gruesome pamphlet
+became notorious. On the day of its publication a wretched dog, flayed
+and otherwise mutilated, escaped from Moreau’s house. It was in the
+silly season, and a prominent editor, a cousin of the temporary
+laboratory-assistant, appealed to the conscience of the nation. It was
+not the first time that conscience has turned against the methods of
+research. The doctor was simply howled out of the country. It may be
+that he deserved to be; but I still think that the tepid support of his
+fellow-investigators and his desertion by the great body of scientific
+workers was a shameful thing. Yet some of his experiments, by the
+journalist’s account, were wantonly cruel. He might perhaps have
+purchased his social peace by abandoning his investigations; but he
+apparently preferred the latter, as most men would who have once fallen
+under the overmastering spell of research. He was unmarried, and had
+indeed nothing but his own interest to consider.
+
+I felt convinced that this must be the same man. Everything pointed to
+it. It dawned upon me to what end the puma and the other animals—which
+had now been brought with other luggage into the enclosure behind the
+house—were destined; and a curious faint odour, the halitus of
+something familiar, an odour that had been in the background of my
+consciousness hitherto, suddenly came forward into the forefront of my
+thoughts. It was the antiseptic odour of the dissecting-room. I heard
+the puma growling through the wall, and one of the dogs yelped as
+though it had been struck.
+
+Yet surely, and especially to another scientific man, there was nothing
+so horrible in vivisection as to account for this secrecy; and by some
+odd leap in my thoughts the pointed ears and luminous eyes of
+Montgomery’s attendant came back again before me with the sharpest
+definition. I stared before me out at the green sea, frothing under a
+freshening breeze, and let these and other strange memories of the last
+few days chase one another through my mind.
+
+What could it all mean? A locked enclosure on a lonely island, a
+notorious vivisector, and these crippled and distorted men?
+
+### VIII. THE CRYING OF THE PUMA.
+
+Montgomery interrupted my tangle of mystification and suspicion about
+one o’clock, and his grotesque attendant followed him with a tray
+bearing bread, some herbs and other eatables, a flask of whiskey, a jug
+of water, and three glasses and knives. I glanced askance at this
+strange creature, and found him watching me with his queer, restless
+eyes. Montgomery said he would lunch with me, but that Moreau was too
+preoccupied with some work to come.
+
+“Moreau!” said I. “I know that name.”
+
+“The devil you do!” said he. “What an ass I was to mention it to you! I
+might have thought. Anyhow, it will give you an inkling of
+our—mysteries. Whiskey?”
+
+“No, thanks; I’m an abstainer.”
+
+“I wish I’d been. But it’s no use locking the door after the steed is
+stolen. It was that infernal stuff which led to my coming here,—that,
+and a foggy night. I thought myself in luck at the time, when Moreau
+offered to get me off. It’s queer—”
+
+“Montgomery,” said I, suddenly, as the outer door closed, “why has your
+man pointed ears?”
+
+“Damn!” he said, over his first mouthful of food. He stared at me for a
+moment, and then repeated, “Pointed ears?”
+
+“Little points to them,” said I, as calmly as possible, with a catch in
+my breath; “and a fine black fur at the edges?”
+
+He helped himself to whiskey and water with great deliberation. “I was
+under the impression—that his hair covered his ears.”
+
+“I saw them as he stooped by me to put that coffee you sent to me on
+the table. And his eyes shine in the dark.”
+
+By this time Montgomery had recovered from the surprise of my question.
+“I always thought,” he said deliberately, with a certain accentuation
+of his flavouring of lisp, “that there _was_ something the matter with
+his ears, from the way he covered them. What were they like?”
+
+I was persuaded from his manner that this ignorance was a pretence.
+Still, I could hardly tell the man that I thought him a liar.
+“Pointed,” I said; “rather small and furry,—distinctly furry. But the
+whole man is one of the strangest beings I ever set eyes on.”
+
+A sharp, hoarse cry of animal pain came from the enclosure behind us.
+Its depth and volume testified to the puma. I saw Montgomery wince.
+
+“Yes?” he said.
+
+“Where did you pick up the creature?”
+
+“San Francisco. He’s an ugly brute, I admit. Half-witted, you know.
+Can’t remember where he came from. But I’m used to him, you know. We
+both are. How does he strike you?”
+
+“He’s unnatural,” I said. “There’s something about him—don’t think me
+fanciful, but it gives me a nasty little sensation, a tightening of my
+muscles, when he comes near me. It’s a touch—of the diabolical, in
+fact.”
+
+Montgomery had stopped eating while I told him this. “Rum!” he said.
+“_I_ can’t see it.” He resumed his meal. “I had no idea of it,” he
+said, and masticated. “The crew of the schooner must have felt it the
+same. Made a dead set at the poor devil. You saw the captain?”
+
+Suddenly the puma howled again, this time more painfully. Montgomery
+swore under his breath. I had half a mind to attack him about the men
+on the beach. Then the poor brute within gave vent to a series of
+short, sharp cries.
+
+“Your men on the beach,” said I; “what race are they?”
+
+“Excellent fellows, aren’t they?” said he, absentmindedly, knitting his
+brows as the animal yelled out sharply.
+
+I said no more. There was another outcry worse than the former. He
+looked at me with his dull grey eyes, and then took some more whiskey.
+He tried to draw me into a discussion about alcohol, professing to have
+saved my life with it. He seemed anxious to lay stress on the fact that
+I owed my life to him. I answered him distractedly.
+
+Presently our meal came to an end; the misshapen monster with the
+pointed ears cleared the remains away, and Montgomery left me alone in
+the room again. All the time he had been in a state of ill-concealed
+irritation at the noise of the vivisected puma. He had spoken of his
+odd want of nerve, and left me to the obvious application.
+
+I found myself that the cries were singularly irritating, and they grew
+in depth and intensity as the afternoon wore on. They were painful at
+first, but their constant resurgence at last altogether upset my
+balance. I flung aside a crib of Horace I had been reading, and began
+to clench my fists, to bite my lips, and to pace the room. Presently I
+got to stopping my ears with my fingers.
+
+The emotional appeal of those yells grew upon me steadily, grew at last
+to such an exquisite expression of suffering that I could stand it in
+that confined room no longer. I stepped out of the door into the
+slumberous heat of the late afternoon, and walking past the main
+entrance—locked again, I noticed—turned the corner of the wall.
+
+The crying sounded even louder out of doors. It was as if all the pain
+in the world had found a voice. Yet had I known such pain was in the
+next room, and had it been dumb, I believe—I have thought since—I could
+have stood it well enough. It is when suffering finds a voice and sets
+our nerves quivering that this pity comes troubling us. But in spite of
+the brilliant sunlight and the green fans of the trees waving in the
+soothing sea-breeze, the world was a confusion, blurred with drifting
+black and red phantasms, until I was out of earshot of the house in the
+chequered wall.
+
+### IX. THE THING IN THE FOREST.
+
+I strode through the undergrowth that clothed the ridge behind the
+house, scarcely heeding whither I went; passed on through the shadow of
+a thick cluster of straight-stemmed trees beyond it, and so presently
+found myself some way on the other side of the ridge, and descending
+towards a streamlet that ran through a narrow valley. I paused and
+listened. The distance I had come, or the intervening masses of
+thicket, deadened any sound that might be coming from the enclosure.
+The air was still. Then with a rustle a rabbit emerged, and went
+scampering up the slope before me. I hesitated, and sat down in the
+edge of the shade.
+
+The place was a pleasant one. The rivulet was hidden by the luxuriant
+vegetation of the banks save at one point, where I caught a triangular
+patch of its glittering water. On the farther side I saw through a
+bluish haze a tangle of trees and creepers, and above these again the
+luminous blue of the sky. Here and there a splash of white or crimson
+marked the blooming of some trailing epiphyte. I let my eyes wander
+over this scene for a while, and then began to turn over in my mind
+again the strange peculiarities of Montgomery’s man. But it was too hot
+to think elaborately, and presently I fell into a tranquil state midway
+between dozing and waking.
+
+From this I was aroused, after I know not how long, by a rustling
+amidst the greenery on the other side of the stream. For a moment I
+could see nothing but the waving summits of the ferns and reeds. Then
+suddenly upon the bank of the stream appeared something—at first I
+could not distinguish what it was. It bowed its round head to the
+water, and began to drink. Then I saw it was a man, going on all-fours
+like a beast. He was clothed in bluish cloth, and was of a
+copper-coloured hue, with black hair. It seemed that grotesque ugliness
+was an invariable character of these islanders. I could hear the suck
+of the water at his lips as he drank.
+
+I leant forward to see him better, and a piece of lava, detached by my
+hand, went pattering down the slope. He looked up guiltily, and his
+eyes met mine. Forthwith he scrambled to his feet, and stood wiping his
+clumsy hand across his mouth and regarding me. His legs were scarcely
+half the length of his body. So, staring one another out of
+countenance, we remained for perhaps the space of a minute. Then,
+stopping to look back once or twice, he slunk off among the bushes to
+the right of me, and I heard the swish of the fronds grow faint in the
+distance and die away. Long after he had disappeared, I remained
+sitting up staring in the direction of his retreat. My drowsy
+tranquillity had gone.
+
+I was startled by a noise behind me, and turning suddenly saw the
+flapping white tail of a rabbit vanishing up the slope. I jumped to my
+feet. The apparition of this grotesque, half-bestial creature had
+suddenly populated the stillness of the afternoon for me. I looked
+around me rather nervously, and regretted that I was unarmed. Then I
+thought that the man I had just seen had been clothed in bluish cloth,
+had not been naked as a savage would have been; and I tried to persuade
+myself from that fact that he was after all probably a peaceful
+character, that the dull ferocity of his countenance belied him.
+
+Yet I was greatly disturbed at the apparition. I walked to the left
+along the slope, turning my head about and peering this way and that
+among the straight stems of the trees. Why should a man go on all-fours
+and drink with his lips? Presently I heard an animal wailing again, and
+taking it to be the puma, I turned about and walked in a direction
+diametrically opposite to the sound. This led me down to the stream,
+across which I stepped and pushed my way up through the undergrowth
+beyond.
+
+I was startled by a great patch of vivid scarlet on the ground, and
+going up to it found it to be a peculiar fungus, branched and
+corrugated like a foliaceous lichen, but deliquescing into slime at the
+touch; and then in the shadow of some luxuriant ferns I came upon an
+unpleasant thing,—the dead body of a rabbit covered with shining flies,
+but still warm and with the head torn off. I stopped aghast at the
+sight of the scattered blood. Here at least was one visitor to the
+island disposed of! There were no traces of other violence about it. It
+looked as though it had been suddenly snatched up and killed; and as I
+stared at the little furry body came the difficulty of how the thing
+had been done. The vague dread that had been in my mind since I had
+seen the inhuman face of the man at the stream grew distincter as I
+stood there. I began to realise the hardihood of my expedition among
+these unknown people. The thicket about me became altered to my
+imagination. Every shadow became something more than a shadow,—became
+an ambush; every rustle became a threat. Invisible things seemed
+watching me. I resolved to go back to the enclosure on the beach. I
+suddenly turned away and thrust myself violently, possibly even
+frantically, through the bushes, anxious to get a clear space about me
+again.
+
+I stopped just in time to prevent myself emerging upon an open space.
+It was a kind of glade in the forest, made by a fall; seedlings were
+already starting up to struggle for the vacant space; and beyond, the
+dense growth of stems and twining vines and splashes of fungus and
+flowers closed in again. Before me, squatting together upon the fungoid
+ruins of a huge fallen tree and still unaware of my approach, were
+three grotesque human figures. One was evidently a female; the other
+two were men. They were naked, save for swathings of scarlet cloth
+about the middle; and their skins were of a dull pinkish-drab colour,
+such as I had seen in no savages before. They had fat, heavy, chinless
+faces, retreating foreheads, and a scant bristly hair upon their heads.
+I never saw such bestial-looking creatures.
+
+They were talking, or at least one of the men was talking to the other
+two, and all three had been too closely interested to heed the rustling
+of my approach. They swayed their heads and shoulders from side to
+side. The speaker’s words came thick and sloppy, and though I could
+hear them distinctly I could not distinguish what he said. He seemed to
+me to be reciting some complicated gibberish. Presently his
+articulation became shriller, and spreading his hands he rose to his
+feet. At that the others began to gibber in unison, also rising to
+their feet, spreading their hands and swaying their bodies in rhythm
+with their chant. I noticed then the abnormal shortness of their legs,
+and their lank, clumsy feet. All three began slowly to circle round,
+raising and stamping their feet and waving their arms; a kind of tune
+crept into their rhythmic recitation, and a refrain,—“Aloola,” or
+“Balloola,” it sounded like. Their eyes began to sparkle, and their
+ugly faces to brighten, with an expression of strange pleasure. Saliva
+dripped from their lipless mouths.
+
+Suddenly, as I watched their grotesque and unaccountable gestures, I
+perceived clearly for the first time what it was that had offended me,
+what had given me the two inconsistent and conflicting impressions of
+utter strangeness and yet of the strangest familiarity. The three
+creatures engaged in this mysterious rite were human in shape, and yet
+human beings with the strangest air about them of some familiar animal.
+Each of these creatures, despite its human form, its rag of clothing,
+and the rough humanity of its bodily form, had woven into it—into its
+movements, into the expression of its countenance, into its whole
+presence—some now irresistible suggestion of a hog, a swinish taint,
+the unmistakable mark of the beast.
+
+I stood overcome by this amazing realisation and then the most horrible
+questionings came rushing into my mind. They began leaping in the air,
+first one and then the other, whooping and grunting. Then one slipped,
+and for a moment was on all-fours,—to recover, indeed, forthwith. But
+that transitory gleam of the true animalism of these monsters was
+enough.
+
+I turned as noiselessly as possible, and becoming every now and then
+rigid with the fear of being discovered, as a branch cracked or a leaf
+rustled, I pushed back into the bushes. It was long before I grew
+bolder, and dared to move freely. My only idea for the moment was to
+get away from these foul beings, and I scarcely noticed that I had
+emerged upon a faint pathway amidst the trees. Then suddenly traversing
+a little glade, I saw with an unpleasant start two clumsy legs among
+the trees, walking with noiseless footsteps parallel with my course,
+and perhaps thirty yards away from me. The head and upper part of the
+body were hidden by a tangle of creeper. I stopped abruptly, hoping the
+creature did not see me. The feet stopped as I did. So nervous was I
+that I controlled an impulse to headlong flight with the utmost
+difficulty. Then looking hard, I distinguished through the interlacing
+network the head and body of the brute I had seen drinking. He moved
+his head. There was an emerald flash in his eyes as he glanced at me
+from the shadow of the trees, a half-luminous colour that vanished as
+he turned his head again. He was motionless for a moment, and then with
+a noiseless tread began running through the green confusion. In another
+moment he had vanished behind some bushes. I could not see him, but I
+felt that he had stopped and was watching me again.
+
+What on earth was he,—man or beast? What did he want with me? I had no
+weapon, not even a stick. Flight would be madness. At any rate the
+Thing, whatever it was, lacked the courage to attack me. Setting my
+teeth hard, I walked straight towards him. I was anxious not to show
+the fear that seemed chilling my backbone. I pushed through a tangle of
+tall white-flowered bushes, and saw him twenty paces beyond, looking
+over his shoulder at me and hesitating. I advanced a step or two,
+looking steadfastly into his eyes.
+
+“Who are you?” said I.
+
+He tried to meet my gaze. “No!” he said suddenly, and turning went
+bounding away from me through the undergrowth. Then he turned and
+stared at me again. His eyes shone brightly out of the dusk under the
+trees.
+
+My heart was in my mouth; but I felt my only chance was bluff, and
+walked steadily towards him. He turned again, and vanished into the
+dusk. Once more I thought I caught the glint of his eyes, and that was
+all.
+
+For the first time I realised how the lateness of the hour might affect
+me. The sun had set some minutes since, the swift dusk of the tropics
+was already fading out of the eastern sky, and a pioneer moth fluttered
+silently by my head. Unless I would spend the night among the unknown
+dangers of the mysterious forest, I must hasten back to the enclosure.
+The thought of a return to that pain-haunted refuge was extremely
+disagreeable, but still more so was the idea of being overtaken in the
+open by darkness and all that darkness might conceal. I gave one more
+look into the blue shadows that had swallowed up this odd creature, and
+then retraced my way down the slope towards the stream, going as I
+judged in the direction from which I had come.
+
+I walked eagerly, my mind confused with many things, and presently
+found myself in a level place among scattered trees. The colourless
+clearness that comes after the sunset flush was darkling; the blue sky
+above grew momentarily deeper, and the little stars one by one pierced
+the attenuated light; the interspaces of the trees, the gaps in the
+further vegetation, that had been hazy blue in the daylight, grew black
+and mysterious. I pushed on. The colour vanished from the world. The
+tree-tops rose against the luminous blue sky in inky silhouette, and
+all below that outline melted into one formless blackness. Presently
+the trees grew thinner, and the shrubby undergrowth more abundant. Then
+there was a desolate space covered with a white sand, and then another
+expanse of tangled bushes. I did not remember crossing the sand-opening
+before. I began to be tormented by a faint rustling upon my right hand.
+I thought at first it was fancy, for whenever I stopped there was
+silence, save for the evening breeze in the tree-tops. Then when I
+turned to hurry on again there was an echo to my footsteps.
+
+I turned away from the thickets, keeping to the more open ground, and
+endeavouring by sudden turns now and then to surprise something in the
+act of creeping upon me. I saw nothing, and nevertheless my sense of
+another presence grew steadily. I increased my pace, and after some
+time came to a slight ridge, crossed it, and turned sharply, regarding
+it steadfastly from the further side. It came out black and clear-cut
+against the darkling sky; and presently a shapeless lump heaved up
+momentarily against the sky-line and vanished again. I felt assured now
+that my tawny-faced antagonist was stalking me once more; and coupled
+with that was another unpleasant realisation, that I had lost my way.
+
+For a time I hurried on hopelessly perplexed, and pursued by that
+stealthy approach. Whatever it was, the Thing either lacked the courage
+to attack me, or it was waiting to take me at some disadvantage. I kept
+studiously to the open. At times I would turn and listen; and presently
+I had half persuaded myself that my pursuer had abandoned the chase, or
+was a mere creation of my disordered imagination. Then I heard the
+sound of the sea. I quickened my footsteps almost into a run, and
+immediately there was a stumble in my rear.
+
+I turned suddenly, and stared at the uncertain trees behind me. One
+black shadow seemed to leap into another. I listened, rigid, and heard
+nothing but the creep of the blood in my ears. I thought that my nerves
+were unstrung, and that my imagination was tricking me, and turned
+resolutely towards the sound of the sea again.
+
+In a minute or so the trees grew thinner, and I emerged upon a bare,
+low headland running out into the sombre water. The night was calm and
+clear, and the reflection of the growing multitude of the stars
+shivered in the tranquil heaving of the sea. Some way out, the wash
+upon an irregular band of reef shone with a pallid light of its own.
+Westward I saw the zodiacal light mingling with the yellow brilliance
+of the evening star. The coast fell away from me to the east, and
+westward it was hidden by the shoulder of the cape. Then I recalled the
+fact that Moreau’s beach lay to the west.
+
+A twig snapped behind me, and there was a rustle. I turned, and stood
+facing the dark trees. I could see nothing—or else I could see too
+much. Every dark form in the dimness had its ominous quality, its
+peculiar suggestion of alert watchfulness. So I stood for perhaps a
+minute, and then, with an eye to the trees still, turned westward to
+cross the headland; and as I moved, one among the lurking shadows moved
+to follow me.
+
+My heart beat quickly. Presently the broad sweep of a bay to the
+westward became visible, and I halted again. The noiseless shadow
+halted a dozen yards from me. A little point of light shone on the
+further bend of the curve, and the grey sweep of the sandy beach lay
+faint under the starlight. Perhaps two miles away was that little point
+of light. To get to the beach I should have to go through the trees
+where the shadows lurked, and down a bushy slope.
+
+I could see the Thing rather more distinctly now. It was no animal, for
+it stood erect. At that I opened my mouth to speak, and found a hoarse
+phlegm choked my voice. I tried again, and shouted, “Who is there?”
+There was no answer. I advanced a step. The Thing did not move, only
+gathered itself together. My foot struck a stone. That gave me an idea.
+Without taking my eyes off the black form before me, I stooped and
+picked up this lump of rock; but at my motion the Thing turned abruptly
+as a dog might have done, and slunk obliquely into the further
+darkness. Then I recalled a schoolboy expedient against big dogs, and
+twisted the rock into my handkerchief, and gave this a turn round my
+wrist. I heard a movement further off among the shadows, as if the
+Thing was in retreat. Then suddenly my tense excitement gave way; I
+broke into a profuse perspiration and fell a-trembling, with my
+adversary routed and this weapon in my hand.
+
+It was some time before I could summon resolution to go down through
+the trees and bushes upon the flank of the headland to the beach. At
+last I did it at a run; and as I emerged from the thicket upon the
+sand, I heard some other body come crashing after me. At that I
+completely lost my head with fear, and began running along the sand.
+Forthwith there came the swift patter of soft feet in pursuit. I gave a
+wild cry, and redoubled my pace. Some dim, black things about three or
+four times the size of rabbits went running or hopping up from the
+beach towards the bushes as I passed.
+
+So long as I live, I shall remember the terror of that chase. I ran
+near the water’s edge, and heard every now and then the splash of the
+feet that gained upon me. Far away, hopelessly far, was the yellow
+light. All the night about us was black and still. Splash, splash, came
+the pursuing feet, nearer and nearer. I felt my breath going, for I was
+quite out of training; it whooped as I drew it, and I felt a pain like
+a knife at my side. I perceived the Thing would come up with me long
+before I reached the enclosure, and, desperate and sobbing for my
+breath, I wheeled round upon it and struck at it as it came up to
+me,—struck with all my strength. The stone came out of the sling of the
+handkerchief as I did so. As I turned, the Thing, which had been
+running on all-fours, rose to its feet, and the missile fell fair on
+its left temple. The skull rang loud, and the animal-man blundered into
+me, thrust me back with its hands, and went staggering past me to fall
+headlong upon the sand with its face in the water; and there it lay
+still.
+
+I could not bring myself to approach that black heap. I left it there,
+with the water rippling round it, under the still stars, and giving it
+a wide berth pursued my way towards the yellow glow of the house; and
+presently, with a positive effect of relief, came the pitiful moaning
+of the puma, the sound that had originally driven me out to explore
+this mysterious island. At that, though I was faint and horribly
+fatigued, I gathered together all my strength, and began running again
+towards the light. I thought I heard a voice calling me.
+
+### X. THE CRYING OF THE MAN.
+
+As I drew near the house I saw that the light shone from the open door
+of my room; and then I heard coming from out of the darkness at the
+side of that orange oblong of light, the voice of Montgomery shouting,
+“Prendick!” I continued running. Presently I heard him again. I replied
+by a feeble “Hullo!” and in another moment had staggered up to him.
+
+“Where have you been?” said he, holding me at arm’s length, so that the
+light from the door fell on my face. “We have both been so busy that we
+forgot you until about half an hour ago.” He led me into the room and
+sat me down in the deck chair. For awhile I was blinded by the light.
+“We did not think you would start to explore this island of ours
+without telling us,” he said; and then, “I was afraid—But—what—Hullo!”
+
+My last remaining strength slipped from me, and my head fell forward on
+my chest. I think he found a certain satisfaction in giving me brandy.
+
+“For God’s sake,” said I, “fasten that door.”
+
+“You’ve been meeting some of our curiosities, eh?” said he.
+
+He locked the door and turned to me again. He asked me no questions,
+but gave me some more brandy and water and pressed me to eat. I was in
+a state of collapse. He said something vague about his forgetting to
+warn me, and asked me briefly when I left the house and what I had
+seen.
+
+I answered him as briefly, in fragmentary sentences. “Tell me what it
+all means,” said I, in a state bordering on hysterics.
+
+“It’s nothing so very dreadful,” said he. “But I think you have had
+about enough for one day.” The puma suddenly gave a sharp yell of pain.
+At that he swore under his breath. “I’m damned,” said he, “if this
+place is not as bad as Gower Street, with its cats.”
+
+“Montgomery,” said I, “what was that thing that came after me? Was it a
+beast or was it a man?”
+
+“If you don’t sleep to-night,” he said, “you’ll be off your head
+to-morrow.”
+
+I stood up in front of him. “What was that thing that came after me?” I
+asked.
+
+He looked me squarely in the eyes, and twisted his mouth askew. His
+eyes, which had seemed animated a minute before, went dull. “From your
+account,” said he, “I’m thinking it was a bogle.”
+
+I felt a gust of intense irritation, which passed as quickly as it
+came. I flung myself into the chair again, and pressed my hands on my
+forehead. The puma began once more.
+
+Montgomery came round behind me and put his hand on my shoulder. “Look
+here, Prendick,” he said, “I had no business to let you drift out into
+this silly island of ours. But it’s not so bad as you feel, man. Your
+nerves are worked to rags. Let me give you something that will make you
+sleep. _That_—will keep on for hours yet. You must simply get to sleep,
+or I won’t answer for it.”
+
+I did not reply. I bowed forward, and covered my face with my hands.
+Presently he returned with a small measure containing a dark liquid.
+This he gave me. I took it unresistingly, and he helped me into the
+hammock.
+
+When I awoke, it was broad day. For a little while I lay flat, staring
+at the roof above me. The rafters, I observed, were made out of the
+timbers of a ship. Then I turned my head, and saw a meal prepared for
+me on the table. I perceived that I was hungry, and prepared to clamber
+out of the hammock, which, very politely anticipating my intention,
+twisted round and deposited me upon all-fours on the floor.
+
+I got up and sat down before the food. I had a heavy feeling in my
+head, and only the vaguest memory at first of the things that had
+happened over night. The morning breeze blew very pleasantly through
+the unglazed window, and that and the food contributed to the sense of
+animal comfort which I experienced. Presently the door behind me—the
+door inward towards the yard of the enclosure—opened. I turned and saw
+Montgomery’s face.
+
+“All right,” said he. “I’m frightfully busy.” And he shut the door.
+
+Afterwards I discovered that he forgot to re-lock it. Then I recalled
+the expression of his face the previous night, and with that the memory
+of all I had experienced reconstructed itself before me. Even as that
+fear came back to me came a cry from within; but this time it was not
+the cry of a puma. I put down the mouthful that hesitated upon my lips,
+and listened. Silence, save for the whisper of the morning breeze. I
+began to think my ears had deceived me.
+
+After a long pause I resumed my meal, but with my ears still vigilant.
+Presently I heard something else, very faint and low. I sat as if
+frozen in my attitude. Though it was faint and low, it moved me more
+profoundly than all that I had hitherto heard of the abominations
+behind the wall. There was no mistake this time in the quality of the
+dim, broken sounds; no doubt at all of their source. For it was
+groaning, broken by sobs and gasps of anguish. It was no brute this
+time; it was a human being in torment!
+
+As I realised this I rose, and in three steps had crossed the room,
+seized the handle of the door into the yard, and flung it open before
+me.
+
+“Prendick, man! Stop!” cried Montgomery, intervening.
+
+A startled deerhound yelped and snarled. There was blood, I saw, in the
+sink,—brown, and some scarlet—and I smelt the peculiar smell of
+carbolic acid. Then through an open doorway beyond, in the dim light of
+the shadow, I saw something bound painfully upon a framework, scarred,
+red, and bandaged; and then blotting this out appeared the face of old
+Moreau, white and terrible. In a moment he had gripped me by the
+shoulder with a hand that was smeared red, had twisted me off my feet,
+and flung me headlong back into my own room. He lifted me as though I
+was a little child. I fell at full length upon the floor, and the door
+slammed and shut out the passionate intensity of his face. Then I heard
+the key turn in the lock, and Montgomery’s voice in expostulation.
+
+“Ruin the work of a lifetime,” I heard Moreau say.
+
+“He does not understand,” said Montgomery. and other things that were
+inaudible.
+
+“I can’t spare the time yet,” said Moreau.
+
+The rest I did not hear. I picked myself up and stood trembling, my
+mind a chaos of the most horrible misgivings. Could it be possible, I
+thought, that such a thing as the vivisection of men was carried on
+here? The question shot like lightning across a tumultuous sky; and
+suddenly the clouded horror of my mind condensed into a vivid
+realisation of my own danger.
+
+### XI. THE HUNTING OF THE MAN.
+
+It came before my mind with an unreasonable hope of escape that the
+outer door of my room was still open to me. I was convinced now,
+absolutely assured, that Moreau had been vivisecting a human being. All
+the time since I had heard his name, I had been trying to link in my
+mind in some way the grotesque animalism of the islanders with his
+abominations; and now I thought I saw it all. The memory of his work on
+the transfusion of blood recurred to me. These creatures I had seen
+were the victims of some hideous experiment. These sickening scoundrels
+had merely intended to keep me back, to fool me with their display of
+confidence, and presently to fall upon me with a fate more horrible
+than death,—with torture; and after torture the most hideous
+degradation it is possible to conceive,—to send me off a lost soul, a
+beast, to the rest of their Comus rout.
+
+I looked round for some weapon. Nothing. Then with an inspiration I
+turned over the deck chair, put my foot on the side of it, and tore
+away the side rail. It happened that a nail came away with the wood,
+and projecting, gave a touch of danger to an otherwise petty weapon. I
+heard a step outside, and incontinently flung open the door and found
+Montgomery within a yard of it. He meant to lock the outer door! I
+raised this nailed stick of mine and cut at his face; but he sprang
+back. I hesitated a moment, then turned and fled, round the corner of
+the house. “Prendick, man!” I heard his astonished cry, “don’t be a
+silly ass, man!”
+
+Another minute, thought I, and he would have had me locked in, and as
+ready as a hospital rabbit for my fate. He emerged behind the corner,
+for I heard him shout, “Prendick!” Then he began to run after me,
+shouting things as he ran. This time running blindly, I went
+northeastward in a direction at right angles to my previous expedition.
+Once, as I went running headlong up the beach, I glanced over my
+shoulder and saw his attendant with him. I ran furiously up the slope,
+over it, then turning eastward along a rocky valley fringed on either
+side with jungle I ran for perhaps a mile altogether, my chest
+straining, my heart beating in my ears; and then hearing nothing of
+Montgomery or his man, and feeling upon the verge of exhaustion, I
+doubled sharply back towards the beach as I judged, and lay down in the
+shelter of a canebrake. There I remained for a long time, too fearful
+to move, and indeed too fearful even to plan a course of action. The
+wild scene about me lay sleeping silently under the sun, and the only
+sound near me was the thin hum of some small gnats that had discovered
+me. Presently I became aware of a drowsy breathing sound, the soughing
+of the sea upon the beach.
+
+After about an hour I heard Montgomery shouting my name, far away to
+the north. That set me thinking of my plan of action. As I interpreted
+it then, this island was inhabited only by these two vivisectors and
+their animalised victims. Some of these no doubt they could press into
+their service against me if need arose. I knew both Moreau and
+Montgomery carried revolvers; and, save for a feeble bar of deal spiked
+with a small nail, the merest mockery of a mace, I was unarmed.
+
+So I lay still there, until I began to think of food and drink; and at
+that thought the real hopelessness of my position came home to me. I
+knew no way of getting anything to eat. I was too ignorant of botany to
+discover any resort of root or fruit that might lie about me; I had no
+means of trapping the few rabbits upon the island. It grew blanker the
+more I turned the prospect over. At last in the desperation of my
+position, my mind turned to the animal men I had encountered. I tried
+to find some hope in what I remembered of them. In turn I recalled each
+one I had seen, and tried to draw some augury of assistance from my
+memory.
+
+Then suddenly I heard a staghound bay, and at that realised a new
+danger. I took little time to think, or they would have caught me then,
+but snatching up my nailed stick, rushed headlong from my hiding-place
+towards the sound of the sea. I remember a growth of thorny plants,
+with spines that stabbed like pen-knives. I emerged bleeding and with
+torn clothes upon the lip of a long creek opening northward. I went
+straight into the water without a minute’s hesitation, wading up the
+creek, and presently finding myself kneedeep in a little stream. I
+scrambled out at last on the westward bank, and with my heart beating
+loudly in my ears, crept into a tangle of ferns to await the issue. I
+heard the dog (there was only one) draw nearer, and yelp when it came
+to the thorns. Then I heard no more, and presently began to think I had
+escaped.
+
+The minutes passed; the silence lengthened out, and at last after an
+hour of security my courage began to return to me. By this time I was
+no longer very much terrified or very miserable. I had, as it were,
+passed the limit of terror and despair. I felt now that my life was
+practically lost, and that persuasion made me capable of daring
+anything. I had even a certain wish to encounter Moreau face to face;
+and as I had waded into the water, I remembered that if I were too hard
+pressed at least one path of escape from torment still lay open to
+me,—they could not very well prevent my drowning myself. I had half a
+mind to drown myself then; but an odd wish to see the whole adventure
+out, a queer, impersonal, spectacular interest in myself, restrained
+me. I stretched my limbs, sore and painful from the pricks of the spiny
+plants, and stared around me at the trees; and, so suddenly that it
+seemed to jump out of the green tracery about it, my eyes lit upon a
+black face watching me. I saw that it was the simian creature who had
+met the launch upon the beach. He was clinging to the oblique stem of a
+palm-tree. I gripped my stick, and stood up facing him. He began
+chattering. “You, you, you,” was all I could distinguish at first.
+Suddenly he dropped from the tree, and in another moment was holding
+the fronds apart and staring curiously at me.
+
+I did not feel the same repugnance towards this creature which I had
+experienced in my encounters with the other Beast Men. “You,” he said,
+“in the boat.” He was a man, then,—at least as much of a man as
+Montgomery’s attendant,—for he could talk.
+
+“Yes,” I said, “I came in the boat. From the ship.”
+
+“Oh!” he said, and his bright, restless eyes travelled over me, to my
+hands, to the stick I carried, to my feet, to the tattered places in my
+coat, and the cuts and scratches I had received from the thorns. He
+seemed puzzled at something. His eyes came back to my hands. He held
+his own hand out and counted his digits slowly, “One, two, three, four,
+five—eigh?”
+
+I did not grasp his meaning then; afterwards I was to find that a great
+proportion of these Beast People had malformed hands, lacking sometimes
+even three digits. But guessing this was in some way a greeting, I did
+the same thing by way of reply. He grinned with immense satisfaction.
+Then his swift roving glance went round again; he made a swift
+movement—and vanished. The fern fronds he had stood between came
+swishing together.
+
+I pushed out of the brake after him, and was astonished to find him
+swinging cheerfully by one lank arm from a rope of creepers that looped
+down from the foliage overhead. His back was to me.
+
+“Hullo!” said I.
+
+He came down with a twisting jump, and stood facing me.
+
+“I say,” said I, “where can I get something to eat?”
+
+“Eat!” he said. “Eat Man’s food, now.” And his eye went back to the
+swing of ropes. “At the huts.”
+
+“But where are the huts?”
+
+“Oh!”
+
+“I’m new, you know.”
+
+At that he swung round, and set off at a quick walk. All his motions
+were curiously rapid. “Come along,” said he.
+
+I went with him to see the adventure out. I guessed the huts were some
+rough shelter where he and some more of these Beast People lived. I
+might perhaps find them friendly, find some handle in their minds to
+take hold of. I did not know how far they had forgotten their human
+heritage.
+
+My ape-like companion trotted along by my side, with his hands hanging
+down and his jaw thrust forward. I wondered what memory he might have
+in him. “How long have you been on this island?” said I.
+
+“How long?” he asked; and after having the question repeated, he held
+up three fingers.
+
+The creature was little better than an idiot. I tried to make out what
+he meant by that, and it seems I bored him. After another question or
+two he suddenly left my side and went leaping at some fruit that hung
+from a tree. He pulled down a handful of prickly husks and went on
+eating the contents. I noted this with satisfaction, for here at least
+was a hint for feeding. I tried him with some other questions, but his
+chattering, prompt responses were as often as not quite at cross
+purposes with my question. Some few were appropriate, others quite
+parrot-like.
+
+I was so intent upon these peculiarities that I scarcely noticed the
+path we followed. Presently we came to trees, all charred and brown,
+and so to a bare place covered with a yellow-white incrustation, across
+which a drifting smoke, pungent in whiffs to nose and eyes, went
+drifting. On our right, over a shoulder of bare rock, I saw the level
+blue of the sea. The path coiled down abruptly into a narrow ravine
+between two tumbled and knotty masses of blackish scoriae. Into this we
+plunged.
+
+It was extremely dark, this passage, after the blinding sunlight
+reflected from the sulphurous ground. Its walls grew steep, and
+approached each other. Blotches of green and crimson drifted across my
+eyes. My conductor stopped suddenly. “Home!” said he, and I stood in a
+floor of a chasm that was at first absolutely dark to me. I heard some
+strange noises, and thrust the knuckles of my left hand into my eyes. I
+became aware of a disagreeable odor, like that of a monkey’s cage
+ill-cleaned. Beyond, the rock opened again upon a gradual slope of
+sunlit greenery, and on either hand the light smote down through narrow
+ways into the central gloom.
+
+### XII. THE SAYERS OF THE LAW.
+
+Then something cold touched my hand. I started violently, and saw close
+to me a dim pinkish thing, looking more like a flayed child than
+anything else in the world. The creature had exactly the mild but
+repulsive features of a sloth, the same low forehead and slow gestures.
+
+As the first shock of the change of light passed, I saw about me more
+distinctly. The little sloth-like creature was standing and staring at
+me. My conductor had vanished. The place was a narrow passage between
+high walls of lava, a crack in the knotted rock, and on either side
+interwoven heaps of sea-mat, palm-fans, and reeds leaning against the
+rock formed rough and impenetrably dark dens. The winding way up the
+ravine between these was scarcely three yards wide, and was disfigured
+by lumps of decaying fruit-pulp and other refuse, which accounted for
+the disagreeable stench of the place.
+
+The little pink sloth-creature was still blinking at me when my Ape-man
+reappeared at the aperture of the nearest of these dens, and beckoned
+me in. As he did so a slouching monster wriggled out of one of the
+places, further up this strange street, and stood up in featureless
+silhouette against the bright green beyond, staring at me. I hesitated,
+having half a mind to bolt the way I had come; and then, determined to
+go through with the adventure, I gripped my nailed stick about the
+middle and crawled into the little evil-smelling lean-to after my
+conductor.
+
+It was a semi-circular space, shaped like the half of a bee-hive; and
+against the rocky wall that formed the inner side of it was a pile of
+variegated fruits, cocoa-nuts among others. Some rough vessels of lava
+and wood stood about the floor, and one on a rough stool. There was no
+fire. In the darkest corner of the hut sat a shapeless mass of darkness
+that grunted “Hey!” as I came in, and my Ape-man stood in the dim light
+of the doorway and held out a split cocoa-nut to me as I crawled into
+the other corner and squatted down. I took it, and began gnawing it, as
+serenely as possible, in spite of a certain trepidation and the nearly
+intolerable closeness of the den. The little pink sloth-creature stood
+in the aperture of the hut, and something else with a drab face and
+bright eyes came staring over its shoulder.
+
+“Hey!” came out of the lump of mystery opposite. “It is a man.”
+
+“It is a man,” gabbled my conductor, “a man, a man, a five-man, like
+me.”
+
+“Shut up!” said the voice from the dark, and grunted. I gnawed my
+cocoa-nut amid an impressive stillness.
+
+I peered hard into the blackness, but could distinguish nothing.
+
+“It is a man,” the voice repeated. “He comes to live with us?”
+
+It was a thick voice, with something in it—a kind of whistling
+overtone—that struck me as peculiar; but the English accent was
+strangely good.
+
+The Ape-man looked at me as though he expected something. I perceived
+the pause was interrogative. “He comes to live with you,” I said.
+
+“It is a man. He must learn the Law.”
+
+I began to distinguish now a deeper blackness in the black, a vague
+outline of a hunched-up figure. Then I noticed the opening of the place
+was darkened by two more black heads. My hand tightened on my stick.
+
+The thing in the dark repeated in a louder tone, “Say the words.” I had
+missed its last remark. “Not to go on all-fours; that is the Law,” it
+repeated in a kind of sing-song.
+
+I was puzzled.
+
+“Say the words,” said the Ape-man, repeating, and the figures in the
+doorway echoed this, with a threat in the tone of their voices.
+
+I realised that I had to repeat this idiotic formula; and then began
+the insanest ceremony. The voice in the dark began intoning a mad
+litany, line by line, and I and the rest to repeat it. As they did so,
+they swayed from side to side in the oddest way, and beat their hands
+upon their knees; and I followed their example. I could have imagined I
+was already dead and in another world. That dark hut, these grotesque
+dim figures, just flecked here and there by a glimmer of light, and all
+of them swaying in unison and chanting,
+
+“Not to go on all-fours; that is the Law. Are we not Men?
+“Not to suck up Drink; that is the Law. Are we not Men?
+“Not to eat Fish or Flesh; that is the Law. Are we not Men?
+“Not to claw the Bark of Trees; _that_ is the Law. Are we not Men?
+“Not to chase other Men; _that_ is the Law. Are we not Men?”
+
+And so from the prohibition of these acts of folly, on to the
+prohibition of what I thought then were the maddest, most impossible,
+and most indecent things one could well imagine. A kind of rhythmic
+fervour fell on all of us; we gabbled and swayed faster and faster,
+repeating this amazing Law. Superficially the contagion of these brutes
+was upon me, but deep down within me the laughter and disgust struggled
+together. We ran through a long list of prohibitions, and then the
+chant swung round to a new formula.
+
+“_His_ is the House of Pain.
+“_His_ is the Hand that makes.
+“_His_ is the Hand that wounds.
+“_His_ is the Hand that heals.”
+
+And so on for another long series, mostly quite incomprehensible
+gibberish to me about _Him_, whoever he might be. I could have fancied
+it was a dream, but never before have I heard chanting in a dream.
+
+“_His_ is the lightning flash,” we sang. “_His_ is the deep, salt sea.”
+
+A horrible fancy came into my head that Moreau, after animalising these
+men, had infected their dwarfed brains with a kind of deification of
+himself. However, I was too keenly aware of white teeth and strong
+claws about me to stop my chanting on that account.
+
+“_His_ are the stars in the sky.”
+
+At last that song ended. I saw the Ape-man’s face shining with
+perspiration; and my eyes being now accustomed to the darkness, I saw
+more distinctly the figure in the corner from which the voice came. It
+was the size of a man, but it seemed covered with a dull grey hair
+almost like a Skye-terrier. What was it? What were they all? Imagine
+yourself surrounded by all the most horrible cripples and maniacs it is
+possible to conceive, and you may understand a little of my feelings
+with these grotesque caricatures of humanity about me.
+
+“He is a five-man, a five-man, a five-man—like me,” said the Ape-man.
+
+I held out my hands. The grey creature in the corner leant forward.
+
+“Not to run on all-fours; that is the Law. Are we not Men?” he said.
+
+He put out a strangely distorted talon and gripped my fingers. The
+thing was almost like the hoof of a deer produced into claws. I could
+have yelled with surprise and pain. His face came forward and peered at
+my nails, came forward into the light of the opening of the hut and I
+saw with a quivering disgust that it was like the face of neither man
+nor beast, but a mere shock of grey hair, with three shadowy
+over-archings to mark the eyes and mouth.
+
+“He has little nails,” said this grisly creature in his hairy beard.
+“It is well.”
+
+He threw my hand down, and instinctively I gripped my stick.
+
+“Eat roots and herbs; it is His will,” said the Ape-man.
+
+“I am the Sayer of the Law,” said the grey figure. “Here come all that
+be new to learn the Law. I sit in the darkness and say the Law.”
+
+“It is even so,” said one of the beasts in the doorway.
+
+“Evil are the punishments of those who break the Law. None escape.”
+
+“None escape,” said the Beast Folk, glancing furtively at one another.
+
+“None, none,” said the Ape-man,—“none escape. See! I did a little
+thing, a wrong thing, once. I jabbered, jabbered, stopped talking. None
+could understand. I am burnt, branded in the hand. He is great. He is
+good!”
+
+“None escape,” said the grey creature in the corner.
+
+“None escape,” said the Beast People, looking askance at one another.
+
+“For every one the want that is bad,” said the grey Sayer of the Law.
+“What you will want we do not know; we shall know. Some want to follow
+things that move, to watch and slink and wait and spring; to kill and
+bite, bite deep and rich, sucking the blood. It is bad. ‘Not to chase
+other Men; that is the Law. Are we not Men? Not to eat Flesh or Fish;
+that is the Law. Are we not Men?’”
+
+“None escape,” said a dappled brute standing in the doorway.
+
+“For every one the want is bad,” said the grey Sayer of the Law. “Some
+want to go tearing with teeth and hands into the roots of things,
+snuffing into the earth. It is bad.”
+
+“None escape,” said the men in the door.
+
+“Some go clawing trees; some go scratching at the graves of the dead;
+some go fighting with foreheads or feet or claws; some bite suddenly,
+none giving occasion; some love uncleanness.”
+
+“None escape,” said the Ape-man, scratching his calf.
+
+“None escape,” said the little pink sloth-creature.
+
+“Punishment is sharp and sure. Therefore learn the Law. Say the words.”
+
+And incontinently he began again the strange litany of the Law, and
+again I and all these creatures began singing and swaying. My head
+reeled with this jabbering and the close stench of the place; but I
+kept on, trusting to find presently some chance of a new development.
+
+“Not to go on all-fours; that is the Law. Are we not Men?”
+
+We were making such a noise that I noticed nothing of a tumult outside,
+until some one, who I think was one of the two Swine Men I had seen,
+thrust his head over the little pink sloth-creature and shouted
+something excitedly, something that I did not catch. Incontinently
+those at the opening of the hut vanished; my Ape-man rushed out; the
+thing that had sat in the dark followed him (I only observed that it
+was big and clumsy, and covered with silvery hair), and I was left
+alone. Then before I reached the aperture I heard the yelp of a
+staghound.
+
+In another moment I was standing outside the hovel, my chair-rail in my
+hand, every muscle of me quivering. Before me were the clumsy backs of
+perhaps a score of these Beast People, their misshapen heads half
+hidden by their shoulder-blades. They were gesticulating excitedly.
+Other half-animal faces glared interrogation out of the hovels. Looking
+in the direction in which they faced, I saw coming through the haze
+under the trees beyond the end of the passage of dens the dark figure
+and awful white face of Moreau. He was holding the leaping staghound
+back, and close behind him came Montgomery revolver in hand.
+
+For a moment I stood horror-struck. I turned and saw the passage behind
+me blocked by another heavy brute, with a huge grey face and twinkling
+little eyes, advancing towards me. I looked round and saw to the right
+of me and a half-dozen yards in front of me a narrow gap in the wall of
+rock through which a ray of light slanted into the shadows.
+
+“Stop!” cried Moreau as I strode towards this, and then, “Hold him!”
+
+At that, first one face turned towards me and then others. Their
+bestial minds were happily slow. I dashed my shoulder into a clumsy
+monster who was turning to see what Moreau meant, and flung him forward
+into another. I felt his hands fly round, clutching at me and missing
+me. The little pink sloth-creature dashed at me, and I gashed down its
+ugly face with the nail in my stick and in another minute was
+scrambling up a steep side pathway, a kind of sloping chimney, out of
+the ravine. I heard a howl behind me, and cries of “Catch him!” “Hold
+him!” and the grey-faced creature appeared behind me and jammed his
+huge bulk into the cleft. “Go on! go on!” they howled. I clambered up
+the narrow cleft in the rock and came out upon the sulphur on the
+westward side of the village of the Beast Men.
+
+That gap was altogether fortunate for me, for the narrow chimney,
+slanting obliquely upward, must have impeded the nearer pursuers. I ran
+over the white space and down a steep slope, through a scattered growth
+of trees, and came to a low-lying stretch of tall reeds, through which
+I pushed into a dark, thick undergrowth that was black and succulent
+under foot. As I plunged into the reeds, my foremost pursuers emerged
+from the gap. I broke my way through this undergrowth for some minutes.
+The air behind me and about me was soon full of threatening cries. I
+heard the tumult of my pursuers in the gap up the slope, then the
+crashing of the reeds, and every now and then the crackling crash of a
+branch. Some of the creatures roared like excited beasts of prey. The
+staghound yelped to the left. I heard Moreau and Montgomery shouting in
+the same direction. I turned sharply to the right. It seemed to me even
+then that I heard Montgomery shouting for me to run for my life.
+
+Presently the ground gave rich and oozy under my feet; but I was
+desperate and went headlong into it, struggled through kneedeep, and so
+came to a winding path among tall canes. The noise of my pursuers
+passed away to my left. In one place three strange, pink, hopping
+animals, about the size of cats, bolted before my footsteps. This
+pathway ran up hill, across another open space covered with white
+incrustation, and plunged into a canebrake again. Then suddenly it
+turned parallel with the edge of a steep-walled gap, which came without
+warning, like the ha-ha of an English park,—turned with an unexpected
+abruptness. I was still running with all my might, and I never saw this
+drop until I was flying headlong through the air.
+
+I fell on my forearms and head, among thorns, and rose with a torn ear
+and bleeding face. I had fallen into a precipitous ravine, rocky and
+thorny, full of a hazy mist which drifted about me in wisps, and with a
+narrow streamlet from which this mist came meandering down the centre.
+I was astonished at this thin fog in the full blaze of daylight; but I
+had no time to stand wondering then. I turned to my right, down-stream,
+hoping to come to the sea in that direction, and so have my way open to
+drown myself. It was only later I found that I had dropped my nailed
+stick in my fall.
+
+Presently the ravine grew narrower for a space, and carelessly I
+stepped into the stream. I jumped out again pretty quickly, for the
+water was almost boiling. I noticed too there was a thin sulphurous
+scum drifting upon its coiling water. Almost immediately came a turn in
+the ravine, and the indistinct blue horizon. The nearer sea was
+flashing the sun from a myriad facets. I saw my death before me; but I
+was hot and panting, with the warm blood oozing out on my face and
+running pleasantly through my veins. I felt more than a touch of
+exultation too, at having distanced my pursuers. It was not in me then
+to go out and drown myself yet. I stared back the way I had come.
+
+I listened. Save for the hum of the gnats and the chirp of some small
+insects that hopped among the thorns, the air was absolutely still.
+Then came the yelp of a dog, very faint, and a chattering and
+gibbering, the snap of a whip, and voices. They grew louder, then
+fainter again. The noise receded up the stream and faded away. For a
+while the chase was over; but I knew now how much hope of help for me
+lay in the Beast People.
+
+### XIII. A PARLEY.
+
+I turned again and went on down towards the sea. I found the hot stream
+broadened out to a shallow, weedy sand, in which an abundance of crabs
+and long-bodied, many-legged creatures started from my footfall. I
+walked to the very edge of the salt water, and then I felt I was safe.
+I turned and stared, arms akimbo, at the thick green behind me, into
+which the steamy ravine cut like a smoking gash. But, as I say, I was
+too full of excitement and (a true saying, though those who have never
+known danger may doubt it) too desperate to die.
+
+Then it came into my head that there was one chance before me yet.
+While Moreau and Montgomery and their bestial rabble chased me through
+the island, might I not go round the beach until I came to their
+enclosure,—make a flank march upon them, in fact, and then with a rock
+lugged out of their loosely-built wall, perhaps, smash in the lock of
+the smaller door and see what I could find (knife, pistol, or what not)
+to fight them with when they returned? It was at any rate something to
+try.
+
+So I turned to the westward and walked along by the water’s edge. The
+setting sun flashed his blinding heat into my eyes. The slight Pacific
+tide was running in with a gentle ripple. Presently the shore fell away
+southward, and the sun came round upon my right hand. Then suddenly,
+far in front of me, I saw first one and then several figures emerging
+from the bushes,—Moreau, with his grey staghound, then Montgomery, and
+two others. At that I stopped.
+
+They saw me, and began gesticulating and advancing. I stood watching
+them approach. The two Beast Men came running forward to cut me off
+from the undergrowth, inland. Montgomery came, running also, but
+straight towards me. Moreau followed slower with the dog.
+
+At last I roused myself from my inaction, and turning seaward walked
+straight into the water. The water was very shallow at first. I was
+thirty yards out before the waves reached to my waist. Dimly I could
+see the intertidal creatures darting away from my feet.
+
+“What are you doing, man?” cried Montgomery.
+
+I turned, standing waist deep, and stared at them. Montgomery stood
+panting at the margin of the water. His face was bright-red with
+exertion, his long flaxen hair blown about his head, and his dropping
+nether lip showed his irregular teeth. Moreau was just coming up, his
+face pale and firm, and the dog at his hand barked at me. Both men had
+heavy whips. Farther up the beach stared the Beast Men.
+
+“What am I doing? I am going to drown myself,” said I.
+
+Montgomery and Moreau looked at each other. “Why?” asked Moreau.
+
+“Because that is better than being tortured by you.”
+
+“I told you so,” said Montgomery, and Moreau said something in a low
+tone.
+
+“What makes you think I shall torture you?” asked Moreau.
+
+“What I saw,” I said. “And those—yonder.”
+
+“Hush!” said Moreau, and held up his hand.
+
+“I will not,” said I. “They were men: what are they now? I at least
+will not be like them.”
+
+I looked past my interlocutors. Up the beach were M’ling, Montgomery’s
+attendant, and one of the white-swathed brutes from the boat. Farther
+up, in the shadow of the trees, I saw my little Ape-man, and behind him
+some other dim figures.
+
+“Who are these creatures?” said I, pointing to them and raising my
+voice more and more that it might reach them. “They were men, men like
+yourselves, whom you have infected with some bestial taint,—men whom
+you have enslaved, and whom you still fear.
+
+“You who listen,” I cried, pointing now to Moreau and shouting past him
+to the Beast Men,—“You who listen! Do you not see these men still fear
+you, go in dread of you? Why, then, do you fear them? You are many—”
+
+“For God’s sake,” cried Montgomery, “stop that, Prendick!”
+
+“Prendick!” cried Moreau.
+
+They both shouted together, as if to drown my voice; and behind them
+lowered the staring faces of the Beast Men, wondering, their deformed
+hands hanging down, their shoulders hunched up. They seemed, as I
+fancied, to be trying to understand me, to remember, I thought,
+something of their human past.
+
+I went on shouting, I scarcely remember what,—that Moreau and
+Montgomery could be killed, that they were not to be feared: that was
+the burden of what I put into the heads of the Beast People. I saw the
+green-eyed man in the dark rags, who had met me on the evening of my
+arrival, come out from among the trees, and others followed him, to
+hear me better. At last for want of breath I paused.
+
+“Listen to me for a moment,” said the steady voice of Moreau; “and then
+say what you will.”
+
+“Well?” said I.
+
+He coughed, thought, then shouted: “Latin, Prendick! bad Latin,
+schoolboy Latin; but try and understand. _Hi non sunt homines; sunt
+animalia qui nos habemus_—vivisected. A humanising process. I will
+explain. Come ashore.”
+
+I laughed. “A pretty story,” said I. “They talk, build houses. They
+were men. It’s likely I’ll come ashore.”
+
+“The water just beyond where you stand is deep—and full of sharks.”
+
+“That’s my way,” said I. “Short and sharp. Presently.”
+
+“Wait a minute.” He took something out of his pocket that flashed back
+the sun, and dropped the object at his feet. “That’s a loaded
+revolver,” said he. “Montgomery here will do the same. Now we are going
+up the beach until you are satisfied the distance is safe. Then come
+and take the revolvers.”
+
+“Not I! You have a third between you.”
+
+“I want you to think over things, Prendick. In the first place, I never
+asked you to come upon this island. If we vivisected men, we should
+import men, not beasts. In the next, we had you drugged last night, had
+we wanted to work you any mischief; and in the next, now your first
+panic is over and you can think a little, is Montgomery here quite up
+to the character you give him? We have chased you for your good.
+Because this island is full of—inimical phenomena. Besides, why should
+we want to shoot you when you have just offered to drown yourself?”
+
+“Why did you set—your people onto me when I was in the hut?”
+
+“We felt sure of catching you, and bringing you out of danger.
+Afterwards we drew away from the scent, for your good.”
+
+I mused. It seemed just possible. Then I remembered something again.
+“But I saw,” said I, “in the enclosure—”
+
+“That was the puma.”
+
+“Look here, Prendick,” said Montgomery, “you’re a silly ass! Come out
+of the water and take these revolvers, and talk. We can’t do anything
+more than we could do now.”
+
+I will confess that then, and indeed always, I distrusted and dreaded
+Moreau; but Montgomery was a man I felt I understood.
+
+“Go up the beach,” said I, after thinking, and added, “holding your
+hands up.”
+
+“Can’t do that,” said Montgomery, with an explanatory nod over his
+shoulder. “Undignified.”
+
+“Go up to the trees, then,” said I, “as you please.”
+
+“It’s a damned silly ceremony,” said Montgomery.
+
+Both turned and faced the six or seven grotesque creatures, who stood
+there in the sunlight, solid, casting shadows, moving, and yet so
+incredibly unreal. Montgomery cracked his whip at them, and forthwith
+they all turned and fled helter-skelter into the trees; and when
+Montgomery and Moreau were at a distance I judged sufficient, I waded
+ashore, and picked up and examined the revolvers. To satisfy myself
+against the subtlest trickery, I discharged one at a round lump of
+lava, and had the satisfaction of seeing the stone pulverised and the
+beach splashed with lead. Still I hesitated for a moment.
+
+“I’ll take the risk,” said I, at last; and with a revolver in each hand
+I walked up the beach towards them.
+
+“That’s better,” said Moreau, without affectation. “As it is, you have
+wasted the best part of my day with your confounded imagination.” And
+with a touch of contempt which humiliated me, he and Montgomery turned
+and went on in silence before me.
+
+The knot of Beast Men, still wondering, stood back among the trees. I
+passed them as serenely as possible. One started to follow me, but
+retreated again when Montgomery cracked his whip. The rest stood
+silent—watching. They may once have been animals; but I never before
+saw an animal trying to think.
+
+### XIV. DOCTOR MOREAU EXPLAINS.
+
+“And now, Prendick, I will explain,” said Doctor Moreau, so soon as we
+had eaten and drunk. “I must confess that you are the most dictatorial
+guest I ever entertained. I warn you that this is the last I shall do
+to oblige you. The next thing you threaten to commit suicide about, I
+shan’t do,—even at some personal inconvenience.”
+
+He sat in my deck chair, a cigar half consumed in his white,
+dexterous-looking fingers. The light of the swinging lamp fell on his
+white hair; he stared through the little window out at the starlight. I
+sat as far away from him as possible, the table between us and the
+revolvers to hand. Montgomery was not present. I did not care to be
+with the two of them in such a little room.
+
+“You admit that the vivisected human being, as you called it, is, after
+all, only the puma?” said Moreau. He had made me visit that horror in
+the inner room, to assure myself of its inhumanity.
+
+“It is the puma,” I said, “still alive, but so cut and mutilated as I
+pray I may never see living flesh again. Of all vile—”
+
+“Never mind that,” said Moreau; “at least, spare me those youthful
+horrors. Montgomery used to be just the same. You admit that it is the
+puma. Now be quiet, while I reel off my physiological lecture to you.”
+
+And forthwith, beginning in the tone of a man supremely bored, but
+presently warming a little, he explained his work to me. He was very
+simple and convincing. Now and then there was a touch of sarcasm in his
+voice. Presently I found myself hot with shame at our mutual positions.
+
+The creatures I had seen were not men, had never been men. They were
+animals, humanised animals,—triumphs of vivisection.
+
+“You forget all that a skilled vivisector can do with living things,”
+said Moreau. “For my own part, I’m puzzled why the things I have done
+here have not been done before. Small efforts, of course, have been
+made,—amputation, tongue-cutting, excisions. Of course you know a
+squint may be induced or cured by surgery? Then in the case of
+excisions you have all kinds of secondary changes, pigmentary
+disturbances, modifications of the passions, alterations in the
+secretion of fatty tissue. I have no doubt you have heard of these
+things?”
+
+“Of course,” said I. “But these foul creatures of yours—”
+
+“All in good time,” said he, waving his hand at me; “I am only
+beginning. Those are trivial cases of alteration. Surgery can do better
+things than that. There is building up as well as breaking down and
+changing. You have heard, perhaps, of a common surgical operation
+resorted to in cases where the nose has been destroyed: a flap of skin
+is cut from the forehead, turned down on the nose, and heals in the new
+position. This is a kind of grafting in a new position of part of an
+animal upon itself. Grafting of freshly obtained material from another
+animal is also possible,—the case of teeth, for example. The grafting
+of skin and bone is done to facilitate healing: the surgeon places in
+the middle of the wound pieces of skin snipped from another animal, or
+fragments of bone from a victim freshly killed. Hunter’s
+cock-spur—possibly you have heard of that—flourished on the bull’s
+neck; and the rhinoceros rats of the Algerian zouaves are also to be
+thought of,—monsters manufactured by transferring a slip from the tail
+of an ordinary rat to its snout, and allowing it to heal in that
+position.”
+
+“Monsters manufactured!” said I. “Then you mean to tell me—”
+
+“Yes. These creatures you have seen are animals carven and wrought into
+new shapes. To that, to the study of the plasticity of living forms, my
+life has been devoted. I have studied for years, gaining in knowledge
+as I go. I see you look horrified, and yet I am telling you nothing
+new. It all lay in the surface of practical anatomy years ago, but no
+one had the temerity to touch it. It is not simply the outward form of
+an animal which I can change. The physiology, the chemical rhythm of
+the creature, may also be made to undergo an enduring modification,—of
+which vaccination and other methods of inoculation with living or dead
+matter are examples that will, no doubt, be familiar to you. A similar
+operation is the transfusion of blood,—with which subject, indeed, I
+began. These are all familiar cases. Less so, and probably far more
+extensive, were the operations of those mediaeval practitioners who
+made dwarfs and beggar-cripples, show-monsters,—some vestiges of whose
+art still remain in the preliminary manipulation of the young
+mountebank or contortionist. Victor Hugo gives an account of them in
+‘L’Homme qui Rit.’—But perhaps my meaning grows plain now. You begin to
+see that it is a possible thing to transplant tissue from one part of
+an animal to another, or from one animal to another; to alter its
+chemical reactions and methods of growth; to modify the articulations
+of its limbs; and, indeed, to change it in its most intimate structure.
+
+“And yet this extraordinary branch of knowledge has never been sought
+as an end, and systematically, by modern investigators until I took it
+up! Some such things have been hit upon in the last resort of surgery;
+most of the kindred evidence that will recur to your mind has been
+demonstrated as it were by accident,—by tyrants, by criminals, by the
+breeders of horses and dogs, by all kinds of untrained clumsy-handed
+men working for their own immediate ends. I was the first man to take
+up this question armed with antiseptic surgery, and with a really
+scientific knowledge of the laws of growth. Yet one would imagine it
+must have been practised in secret before. Such creatures as the
+Siamese Twins—And in the vaults of the Inquisition. No doubt their
+chief aim was artistic torture, but some at least of the inquisitors
+must have had a touch of scientific curiosity.”
+
+“But,” said I, “these things—these animals talk!”
+
+He said that was so, and proceeded to point out that the possibility of
+vivisection does not stop at a mere physical metamorphosis. A pig may
+be educated. The mental structure is even less determinate than the
+bodily. In our growing science of hypnotism we find the promise of a
+possibility of superseding old inherent instincts by new suggestions,
+grafting upon or replacing the inherited fixed ideas. Very much indeed
+of what we call moral education, he said, is such an artificial
+modification and perversion of instinct; pugnacity is trained into
+courageous self-sacrifice, and suppressed sexuality into religious
+emotion. And the great difference between man and monkey is in the
+larynx, he continued,—in the incapacity to frame delicately different
+sound-symbols by which thought could be sustained. In this I failed to
+agree with him, but with a certain incivility he declined to notice my
+objection. He repeated that the thing was so, and continued his account
+of his work.
+
+I asked him why he had taken the human form as a model. There seemed to
+me then, and there still seems to me now, a strange wickedness for that
+choice.
+
+He confessed that he had chosen that form by chance. “I might just as
+well have worked to form sheep into llamas and llamas into sheep. I
+suppose there is something in the human form that appeals to the
+artistic turn of mind more powerfully than any animal shape can. But
+I’ve not confined myself to man-making. Once or twice—” He was silent,
+for a minute perhaps. “These years! How they have slipped by! And here
+I have wasted a day saving your life, and am now wasting an hour
+explaining myself!”
+
+“But,” said I, “I still do not understand. Where is your justification
+for inflicting all this pain? The only thing that could excuse
+vivisection to me would be some application—”
+
+“Precisely,” said he. “But, you see, I am differently constituted. We
+are on different platforms. You are a materialist.”
+
+“I am _not_ a materialist,” I began hotly.
+
+“In my view—in my view. For it is just this question of pain that parts
+us. So long as visible or audible pain turns you sick; so long as your
+own pains drive you; so long as pain underlies your propositions about
+sin,—so long, I tell you, you are an animal, thinking a little less
+obscurely what an animal feels. This pain—”
+
+I gave an impatient shrug at such sophistry.
+
+“Oh, but it is such a little thing! A mind truly opened to what science
+has to teach must see that it is a little thing. It may be that save in
+this little planet, this speck of cosmic dust, invisible long before
+the nearest star could be attained—it may be, I say, that nowhere else
+does this thing called pain occur. But the laws we feel our way
+towards—Why, even on this earth, even among living things, what pain is
+there?”
+
+As he spoke he drew a little penknife from his pocket, opened the
+smaller blade, and moved his chair so that I could see his thigh. Then,
+choosing the place deliberately, he drove the blade into his leg and
+withdrew it.
+
+“No doubt,” he said, “you have seen that before. It does not hurt a
+pin-prick. But what does it show? The capacity for pain is not needed
+in the muscle, and it is not placed there,—is but little needed in the
+skin, and only here and there over the thigh is a spot capable of
+feeling pain. Pain is simply our intrinsic medical adviser to warn us
+and stimulate us. Not all living flesh is painful; nor is all nerve,
+not even all sensory nerve. There’s no taint of pain, real pain, in the
+sensations of the optic nerve. If you wound the optic nerve, you merely
+see flashes of light,—just as disease of the auditory nerve merely
+means a humming in our ears. Plants do not feel pain, nor the lower
+animals; it’s possible that such animals as the starfish and crayfish
+do not feel pain at all. Then with men, the more intelligent they
+become, the more intelligently they will see after their own welfare,
+and the less they will need the goad to keep them out of danger. I
+never yet heard of a useless thing that was not ground out of existence
+by evolution sooner or later. Did you? And pain gets needless.
+
+“Then I am a religious man, Prendick, as every sane man must be. It may
+be, I fancy, that I have seen more of the ways of this world’s Maker
+than you,—for I have sought his laws, in _my_ way, all my life, while
+you, I understand, have been collecting butterflies. And I tell you,
+pleasure and pain have nothing to do with heaven or hell. Pleasure and
+pain—bah! What is your theologian’s ecstasy but Mahomet’s houri in the
+dark? This store which men and women set on pleasure and pain,
+Prendick, is the mark of the beast upon them,—the mark of the beast
+from which they came! Pain, pain and pleasure, they are for us only so
+long as we wriggle in the dust.
+
+“You see, I went on with this research just the way it led me. That is
+the only way I ever heard of true research going. I asked a question,
+devised some method of obtaining an answer, and got a fresh question.
+Was this possible or that possible? You cannot imagine what this means
+to an investigator, what an intellectual passion grows upon him! You
+cannot imagine the strange, colourless delight of these intellectual
+desires! The thing before you is no longer an animal, a
+fellow-creature, but a problem! Sympathetic pain,—all I know of it I
+remember as a thing I used to suffer from years ago. I wanted—it was
+the one thing I wanted—to find out the extreme limit of plasticity in a
+living shape.”
+
+“But,” said I, “the thing is an abomination—”
+
+“To this day I have never troubled about the ethics of the matter,” he
+continued. “The study of Nature makes a man at last as remorseless as
+Nature. I have gone on, not heeding anything but the question I was
+pursuing; and the material has—dripped into the huts yonder. It is
+nearly eleven years since we came here, I and Montgomery and six
+Kanakas. I remember the green stillness of the island and the empty
+ocean about us, as though it was yesterday. The place seemed waiting
+for me.
+
+“The stores were landed and the house was built. The Kanakas founded
+some huts near the ravine. I went to work here upon what I had brought
+with me. There were some disagreeable things happened at first. I began
+with a sheep, and killed it after a day and a half by a slip of the
+scalpel. I took another sheep, and made a thing of pain and fear and
+left it bound up to heal. It looked quite human to me when I had
+finished it; but when I went to it I was discontented with it. It
+remembered me, and was terrified beyond imagination; and it had no more
+than the wits of a sheep. The more I looked at it the clumsier it
+seemed, until at last I put the monster out of its misery. These
+animals without courage, these fear-haunted, pain-driven things,
+without a spark of pugnacious energy to face torment,—they are no good
+for man-making.
+
+“Then I took a gorilla I had; and upon that, working with infinite care
+and mastering difficulty after difficulty, I made my first man. All the
+week, night and day, I moulded him. With him it was chiefly the brain
+that needed moulding; much had to be added, much changed. I thought him
+a fair specimen of the negroid type when I had finished him, and he lay
+bandaged, bound, and motionless before me. It was only when his life
+was assured that I left him and came into this room again, and found
+Montgomery much as you are. He had heard some of the cries as the thing
+grew human,—cries like those that disturbed _you_ so. I didn’t take him
+completely into my confidence at first. And the Kanakas too, had
+realised something of it. They were scared out of their wits by the
+sight of me. I got Montgomery over to me—in a way; but I and he had the
+hardest job to prevent the Kanakas deserting. Finally they did; and so
+we lost the yacht. I spent many days educating the brute,—altogether I
+had him for three or four months. I taught him the rudiments of
+English; gave him ideas of counting; even made the thing read the
+alphabet. But at that he was slow, though I’ve met with idiots slower.
+He began with a clean sheet, mentally; had no memories left in his mind
+of what he had been. When his scars were quite healed, and he was no
+longer anything but painful and stiff, and able to converse a little, I
+took him yonder and introduced him to the Kanakas as an interesting
+stowaway.
+
+“They were horribly afraid of him at first, somehow,—which offended me
+rather, for I was conceited about him; but his ways seemed so mild, and
+he was so abject, that after a time they received him and took his
+education in hand. He was quick to learn, very imitative and adaptive,
+and built himself a hovel rather better, it seemed to me, than their
+own shanties. There was one among the boys a bit of a missionary, and
+he taught the thing to read, or at least to pick out letters, and gave
+him some rudimentary ideas of morality; but it seems the beast’s habits
+were not all that is desirable.
+
+“I rested from work for some days after this, and was in a mind to
+write an account of the whole affair to wake up English physiology.
+Then I came upon the creature squatting up in a tree and gibbering at
+two of the Kanakas who had been teasing him. I threatened him, told him
+the inhumanity of such a proceeding, aroused his sense of shame, and
+came home resolved to do better before I took my work back to England.
+I have been doing better. But somehow the things drift back again: the
+stubborn beast-flesh grows day by day back again. But I mean to do
+better things still. I mean to conquer that. This puma—
+
+“But that’s the story. All the Kanaka boys are dead now; one fell
+overboard of the launch, and one died of a wounded heel that he
+poisoned in some way with plant-juice. Three went away in the yacht,
+and I suppose and hope were drowned. The other one—was killed. Well, I
+have replaced them. Montgomery went on much as you are disposed to do
+at first, and then—”
+
+“What became of the other one?” said I, sharply,—“the other Kanaka who
+was killed?”
+
+“The fact is, after I had made a number of human creatures I made a
+Thing—” He hesitated.
+
+“Yes?” said I.
+
+“It was killed.”
+
+“I don’t understand,” said I; “do you mean to say—”
+
+“It killed the Kanaka—yes. It killed several other things that it
+caught. We chased it for a couple of days. It only got loose by
+accident—I never meant it to get away. It wasn’t finished. It was
+purely an experiment. It was a limbless thing, with a horrible face,
+that writhed along the ground in a serpentine fashion. It was immensely
+strong, and in infuriating pain. It lurked in the woods for some days,
+until we hunted it; and then it wriggled into the northern part of the
+island, and we divided the party to close in upon it. Montgomery
+insisted upon coming with me. The man had a rifle; and when his body
+was found, one of the barrels was curved into the shape of an S and
+very nearly bitten through. Montgomery shot the thing. After that I
+stuck to the ideal of humanity—except for little things.”
+
+He became silent. I sat in silence watching his face.
+
+“So for twenty years altogether—counting nine years in England—I have
+been going on; and there is still something in everything I do that
+defeats me, makes me dissatisfied, challenges me to further effort.
+Sometimes I rise above my level, sometimes I fall below it; but always
+I fall short of the things I dream. The human shape I can get now,
+almost with ease, so that it is lithe and graceful, or thick and
+strong; but often there is trouble with the hands and the
+claws,—painful things, that I dare not shape too freely. But it is in
+the subtle grafting and reshaping one must needs do to the brain that
+my trouble lies. The intelligence is often oddly low, with
+unaccountable blank ends, unexpected gaps. And least satisfactory of
+all is something that I cannot touch, somewhere—I cannot determine
+where—in the seat of the emotions. Cravings, instincts, desires that
+harm humanity, a strange hidden reservoir to burst forth suddenly and
+inundate the whole being of the creature with anger, hate, or fear.
+These creatures of mine seemed strange and uncanny to you so soon as
+you began to observe them; but to me, just after I make them, they seem
+to be indisputably human beings. It’s afterwards, as I observe them,
+that the persuasion fades. First one animal trait, then another, creeps
+to the surface and stares out at me. But I will conquer yet! Each time
+I dip a living creature into the bath of burning pain, I say, ‘This
+time I will burn out all the animal; this time I will make a rational
+creature of my own!’ After all, what is ten years? Men have been a
+hundred thousand in the making.” He thought darkly. “But I am drawing
+near the fastness. This puma of mine—” After a silence, “And they
+revert. As soon as my hand is taken from them the beast begins to creep
+back, begins to assert itself again.” Another long silence.
+
+“Then you take the things you make into those dens?” said I.
+
+“They go. I turn them out when I begin to feel the beast in them, and
+presently they wander there. They all dread this house and me. There is
+a kind of travesty of humanity over there. Montgomery knows about it,
+for he interferes in their affairs. He has trained one or two of them
+to our service. He’s ashamed of it, but I believe he half likes some of
+those beasts. It’s his business, not mine. They only sicken me with a
+sense of failure. I take no interest in them. I fancy they follow in
+the lines the Kanaka missionary marked out, and have a kind of mockery
+of a rational life, poor beasts! There’s something they call the Law.
+Sing hymns about ‘all thine.’ They build themselves their dens, gather
+fruit, and pull herbs—marry even. But I can see through it all, see
+into their very souls, and see there nothing but the souls of beasts,
+beasts that perish, anger and the lusts to live and gratify
+themselves.—Yet they’re odd; complex, like everything else alive. There
+is a kind of upward striving in them, part vanity, part waste sexual
+emotion, part waste curiosity. It only mocks me. I have some hope of
+this puma. I have worked hard at her head and brain—
+
+“And now,” said he, standing up after a long gap of silence, during
+which we had each pursued our own thoughts, “what do you think? Are you
+in fear of me still?”
+
+I looked at him, and saw but a white-faced, white-haired man, with calm
+eyes. Save for his serenity, the touch almost of beauty that resulted
+from his set tranquillity and his magnificent build, he might have
+passed muster among a hundred other comfortable old gentlemen. Then I
+shivered. By way of answer to his second question, I handed him a
+revolver with either hand.
+
+“Keep them,” he said, and snatched at a yawn. He stood up, stared at me
+for a moment, and smiled. “You have had two eventful days,” said he. “I
+should advise some sleep. I’m glad it’s all clear. Good-night.” He
+thought me over for a moment, then went out by the inner door.
+
+I immediately turned the key in the outer one. I sat down again; sat
+for a time in a kind of stagnant mood, so weary, emotionally, mentally,
+and physically, that I could not think beyond the point at which he had
+left me. The black window stared at me like an eye. At last with an
+effort I put out the light and got into the hammock. Very soon I was
+asleep.
+
+### XV. CONCERNING THE BEAST FOLK.
+
+I woke early. Moreau’s explanation stood before my mind, clear and
+definite, from the moment of my awakening. I got out of the hammock and
+went to the door to assure myself that the key was turned. Then I tried
+the window-bar, and found it firmly fixed. That these man-like
+creatures were in truth only bestial monsters, mere grotesque
+travesties of men, filled me with a vague uncertainty of their
+possibilities which was far worse than any definite fear.
+
+A tapping came at the door, and I heard the glutinous accents of M’ling
+speaking. I pocketed one of the revolvers (keeping one hand upon it),
+and opened to him.
+
+“Good-morning, sair,” he said, bringing in, in addition to the
+customary herb-breakfast, an ill-cooked rabbit. Montgomery followed
+him. His roving eye caught the position of my arm and he smiled askew.
+
+The puma was resting to heal that day; but Moreau, who was singularly
+solitary in his habits, did not join us. I talked with Montgomery to
+clear my ideas of the way in which the Beast Folk lived. In particular,
+I was urgent to know how these inhuman monsters were kept from falling
+upon Moreau and Montgomery and from rending one another. He explained
+to me that the comparative safety of Moreau and himself was due to the
+limited mental scope of these monsters. In spite of their increased
+intelligence and the tendency of their animal instincts to reawaken,
+they had certain fixed ideas implanted by Moreau in their minds, which
+absolutely bounded their imaginations. They were really hypnotised; had
+been told that certain things were impossible, and that certain things
+were not to be done, and these prohibitions were woven into the texture
+of their minds beyond any possibility of disobedience or dispute.
+
+Certain matters, however, in which old instinct was at war with
+Moreau’s convenience, were in a less stable condition. A series of
+propositions called the Law (I had already heard them recited) battled
+in their minds with the deep-seated, ever-rebellious cravings of their
+animal natures. This Law they were ever repeating, I found, and ever
+breaking. Both Montgomery and Moreau displayed particular solicitude to
+keep them ignorant of the taste of blood; they feared the inevitable
+suggestions of that flavour. Montgomery told me that the Law,
+especially among the feline Beast People, became oddly weakened about
+nightfall; that then the animal was at its strongest; that a spirit of
+adventure sprang up in them at the dusk, when they would dare things
+they never seemed to dream about by day. To that I owed my stalking by
+the Leopard-man, on the night of my arrival. But during these earlier
+days of my stay they broke the Law only furtively and after dark; in
+the daylight there was a general atmosphere of respect for its
+multifarious prohibitions.
+
+And here perhaps I may give a few general facts about the island and
+the Beast People. The island, which was of irregular outline and lay
+low upon the wide sea, had a total area, I suppose, of seven or eight
+square miles.[2] It was volcanic in origin, and was now fringed on
+three sides by coral reefs; some fumaroles to the northward, and a hot
+spring, were the only vestiges of the forces that had long since
+originated it. Now and then a faint quiver of earthquake would be
+sensible, and sometimes the ascent of the spire of smoke would be
+rendered tumultuous by gusts of steam; but that was all. The population
+of the island, Montgomery informed me, now numbered rather more than
+sixty of these strange creations of Moreau’s art, not counting the
+smaller monstrosities which lived in the undergrowth and were without
+human form. Altogether he had made nearly a hundred and twenty; but
+many had died, and others—like the writhing Footless Thing of which he
+had told me—had come by violent ends. In answer to my question,
+Montgomery said that they actually bore offspring, but that these
+generally died. When they lived, Moreau took them and stamped the human
+form upon them. There was no evidence of the inheritance of their
+acquired human characteristics. The females were less numerous than the
+males, and liable to much furtive persecution in spite of the monogamy
+the Law enjoined.
+
+[2]This description corresponds in every respect to Noble’s Isle.—C.
+E. P.
+
+It would be impossible for me to describe these Beast People in detail;
+my eye has had no training in details, and unhappily I cannot sketch.
+Most striking, perhaps, in their general appearance was the
+disproportion between the legs of these creatures and the length of
+their bodies; and yet—so relative is our idea of grace—my eye became
+habituated to their forms, and at last I even fell in with their
+persuasion that my own long thighs were ungainly. Another point was the
+forward carriage of the head and the clumsy and inhuman curvature of
+the spine. Even the Ape-man lacked that inward sinuous curve of the
+back which makes the human figure so graceful. Most had their shoulders
+hunched clumsily, and their short forearms hung weakly at their sides.
+Few of them were conspicuously hairy, at least until the end of my time
+upon the island.
+
+The next most obvious deformity was in their faces, almost all of which
+were prognathous, malformed about the ears, with large and protuberant
+noses, very furry or very bristly hair, and often strangely-coloured or
+strangely-placed eyes. None could laugh, though the Ape-man had a
+chattering titter. Beyond these general characters their heads had
+little in common; each preserved the quality of its particular species:
+the human mark distorted but did not hide the leopard, the ox, or the
+sow, or other animal or animals, from which the creature had been
+moulded. The voices, too, varied exceedingly. The hands were always
+malformed; and though some surprised me by their unexpected human
+appearance, almost all were deficient in the number of the digits,
+clumsy about the finger-nails, and lacking any tactile sensibility.
+
+The two most formidable Animal Men were my Leopard-man and a creature
+made of hyena and swine. Larger than these were the three
+bull-creatures who pulled in the boat. Then came the silvery-hairy-man,
+who was also the Sayer of the Law, M’ling, and a satyr-like creature of
+ape and goat. There were three Swine-men and a Swine-woman, a
+mare-rhinoceros-creature, and several other females whose sources I did
+not ascertain. There were several wolf-creatures, a bear-bull, and a
+Saint-Bernard-man. I have already described the Ape-man, and there was
+a particularly hateful (and evil-smelling) old woman made of vixen and
+bear, whom I hated from the beginning. She was said to be a passionate
+votary of the Law. Smaller creatures were certain dappled youths and my
+little sloth-creature. But enough of this catalogue.
+
+At first I had a shivering horror of the brutes, felt all too keenly
+that they were still brutes; but insensibly I became a little
+habituated to the idea of them, and moreover I was affected by
+Montgomery’s attitude towards them. He had been with them so long that
+he had come to regard them as almost normal human beings. His London
+days seemed a glorious, impossible past to him. Only once in a year or
+so did he go to Africa to deal with Moreau’s agent, a trader in animals
+there. He hardly met the finest type of mankind in that seafaring
+village of Spanish mongrels. The men aboard-ship, he told me, seemed at
+first just as strange to him as the Beast Men seemed to me,—unnaturally
+long in the leg, flat in the face, prominent in the forehead,
+suspicious, dangerous, and cold-hearted. In fact, he did not like men:
+his heart had warmed to me, he thought, because he had saved my life. I
+fancied even then that he had a sneaking kindness for some of these
+metamorphosed brutes, a vicious sympathy with some of their ways, but
+that he attempted to veil it from me at first.
+
+M’ling, the black-faced man, Montgomery’s attendant, the first of the
+Beast Folk I had encountered, did not live with the others across the
+island, but in a small kennel at the back of the enclosure. The
+creature was scarcely so intelligent as the Ape-man, but far more
+docile, and the most human-looking of all the Beast Folk; and
+Montgomery had trained it to prepare food, and indeed to discharge all
+the trivial domestic offices that were required. It was a complex
+trophy of Moreau’s horrible skill,—a bear, tainted with dog and ox, and
+one of the most elaborately made of all his creatures. It treated
+Montgomery with a strange tenderness and devotion. Sometimes he would
+notice it, pat it, call it half-mocking, half-jocular names, and so
+make it caper with extraordinary delight; sometimes he would ill-treat
+it, especially after he had been at the whiskey, kicking it, beating
+it, pelting it with stones or lighted fusees. But whether he treated it
+well or ill, it loved nothing so much as to be near him.
+
+I say I became habituated to the Beast People, that a thousand things
+which had seemed unnatural and repulsive speedily became natural and
+ordinary to me. I suppose everything in existence takes its colour from
+the average hue of our surroundings. Montgomery and Moreau were too
+peculiar and individual to keep my general impressions of humanity well
+defined. I would see one of the clumsy bovine-creatures who worked the
+launch treading heavily through the undergrowth, and find myself
+asking, trying hard to recall, how he differed from some really human
+yokel trudging home from his mechanical labours; or I would meet the
+Fox-bear woman’s vulpine, shifty face, strangely human in its
+speculative cunning, and even imagine I had met it before in some city
+byway.
+
+Yet every now and then the beast would flash out upon me beyond doubt
+or denial. An ugly-looking man, a hunch-backed human savage to all
+appearance, squatting in the aperture of one of the dens, would stretch
+his arms and yawn, showing with startling suddenness scissor-edged
+incisors and sabre-like canines, keen and brilliant as knives. Or in
+some narrow pathway, glancing with a transitory daring into the eyes of
+some lithe, white-swathed female figure, I would suddenly see (with a
+spasmodic revulsion) that she had slit-like pupils, or glancing down
+note the curving nail with which she held her shapeless wrap about her.
+It is a curious thing, by the bye, for which I am quite unable to
+account, that these weird creatures—the females, I mean—had in the
+earlier days of my stay an instinctive sense of their own repulsive
+clumsiness, and displayed in consequence a more than human regard for
+the decency and decorum of extensive costume.
+
+### XVI. HOW THE BEAST FOLK TASTE BLOOD.
+
+My inexperience as a writer betrays me, and I wander from the thread of
+my story.
+
+After I had breakfasted with Montgomery, he took me across the island
+to see the fumarole and the source of the hot spring into whose
+scalding waters I had blundered on the previous day. Both of us carried
+whips and loaded revolvers. While going through a leafy jungle on our
+road thither, we heard a rabbit squealing. We stopped and listened, but
+we heard no more; and presently we went on our way, and the incident
+dropped out of our minds. Montgomery called my attention to certain
+little pink animals with long hind-legs, that went leaping through the
+undergrowth. He told me they were creatures made of the offspring of
+the Beast People, that Moreau had invented. He had fancied they might
+serve for meat, but a rabbit-like habit of devouring their young had
+defeated this intention. I had already encountered some of these
+creatures,—once during my moonlight flight from the Leopard-man, and
+once during my pursuit by Moreau on the previous day. By chance, one
+hopping to avoid us leapt into the hole caused by the uprooting of a
+wind-blown tree; before it could extricate itself we managed to catch
+it. It spat like a cat, scratched and kicked vigorously with its
+hind-legs, and made an attempt to bite; but its teeth were too feeble
+to inflict more than a painless pinch. It seemed to me rather a pretty
+little creature; and as Montgomery stated that it never destroyed the
+turf by burrowing, and was very cleanly in its habits, I should imagine
+it might prove a convenient substitute for the common rabbit in
+gentlemen’s parks.
+
+We also saw on our way the trunk of a tree barked in long strips and
+splintered deeply. Montgomery called my attention to this. “Not to claw
+bark of trees, _that_ is the Law,” he said. “Much some of them care for
+it!” It was after this, I think, that we met the Satyr and the Ape-man.
+The Satyr was a gleam of classical memory on the part of Moreau,—his
+face ovine in expression, like the coarser Hebrew type; his voice a
+harsh bleat, his nether extremities Satanic. He was gnawing the husk of
+a pod-like fruit as he passed us. Both of them saluted Montgomery.
+
+“Hail,” said they, “to the Other with the Whip!”
+
+“There’s a Third with a Whip now,” said Montgomery. “So you’d better
+mind!”
+
+“Was he not made?” said the Ape-man. “He said—he said he was made.”
+
+The Satyr-man looked curiously at me. “The Third with the Whip, he that
+walks weeping into the sea, has a thin white face.”
+
+“He has a thin long whip,” said Montgomery.
+
+“Yesterday he bled and wept,” said the Satyr. “You never bleed nor
+weep. The Master does not bleed or weep.”
+
+“Ollendorffian beggar!” said Montgomery, “you’ll bleed and weep if you
+don’t look out!”
+
+“He has five fingers, he is a five-man like me,” said the Ape-man.
+
+“Come along, Prendick,” said Montgomery, taking my arm; and I went on
+with him.
+
+The Satyr and the Ape-man stood watching us and making other remarks to
+each other.
+
+“He says nothing,” said the Satyr. “Men have voices.”
+
+“Yesterday he asked me of things to eat,” said the Ape-man. “He did not
+know.”
+
+Then they spoke inaudible things, and I heard the Satyr laughing.
+
+It was on our way back that we came upon the dead rabbit. The red body
+of the wretched little beast was rent to pieces, many of the ribs
+stripped white, and the backbone indisputably gnawed.
+
+At that Montgomery stopped. “Good God!” said he, stooping down, and
+picking up some of the crushed vertebrae to examine them more closely.
+“Good God!” he repeated, “what can this mean?”
+
+“Some carnivore of yours has remembered its old habits,” I said after a
+pause. “This backbone has been bitten through.”
+
+He stood staring, with his face white and his lip pulled askew. “I
+don’t like this,” he said slowly.
+
+“I saw something of the same kind,” said I, “the first day I came
+here.”
+
+“The devil you did! What was it?”
+
+“A rabbit with its head twisted off.”
+
+“The day you came here?”
+
+“The day I came here. In the undergrowth at the back of the enclosure,
+when I went out in the evening. The head was completely wrung off.”
+
+He gave a long, low whistle.
+
+“And what is more, I have an idea which of your brutes did the thing.
+It’s only a suspicion, you know. Before I came on the rabbit I saw one
+of your monsters drinking in the stream.”
+
+“Sucking his drink?”
+
+“Yes.”
+
+“‘Not to suck your drink; that is the Law.’ Much the brutes care for
+the Law, eh? when Moreau’s not about!”
+
+“It was the brute who chased me.”
+
+“Of course,” said Montgomery; “it’s just the way with carnivores. After
+a kill, they drink. It’s the taste of blood, you know.—What was the
+brute like?” he continued. “Would you know him again?” He glanced about
+us, standing astride over the mess of dead rabbit, his eyes roving
+among the shadows and screens of greenery, the lurking-places and
+ambuscades of the forest that bounded us in. “The taste of blood,” he
+said again.
+
+He took out his revolver, examined the cartridges in it and replaced
+it. Then he began to pull at his dropping lip.
+
+“I think I should know the brute again,” I said. “I stunned him. He
+ought to have a handsome bruise on the forehead of him.”
+
+“But then we have to _prove_ that he killed the rabbit,” said
+Montgomery. “I wish I’d never brought the things here.”
+
+I should have gone on, but he stayed there thinking over the mangled
+rabbit in a puzzle-headed way. As it was, I went to such a distance
+that the rabbit’s remains were hidden.
+
+“Come on!” I said.
+
+Presently he woke up and came towards me. “You see,” he said, almost in
+a whisper, “they are all supposed to have a fixed idea against eating
+anything that runs on land. If some brute has by any accident tasted
+blood—”
+
+We went on some way in silence. “I wonder what can have happened,” he
+said to himself. Then, after a pause again: “I did a foolish thing the
+other day. That servant of mine—I showed him how to skin and cook a
+rabbit. It’s odd—I saw him licking his hands—It never occurred to me.”
+
+Then: “We must put a stop to this. I must tell Moreau.”
+
+He could think of nothing else on our homeward journey.
+
+Moreau took the matter even more seriously than Montgomery, and I need
+scarcely say that I was affected by their evident consternation.
+
+“We must make an example,” said Moreau. “I’ve no doubt in my own mind
+that the Leopard-man was the sinner. But how can we prove it? I wish,
+Montgomery, you had kept your taste for meat in hand, and gone without
+these exciting novelties. We may find ourselves in a mess yet, through
+it.”
+
+“I was a silly ass,” said Montgomery. “But the thing’s done now; and
+you said I might have them, you know.”
+
+“We must see to the thing at once,” said Moreau. “I suppose if anything
+should turn up, M’ling can take care of himself?”
+
+“I’m not so sure of M’ling,” said Montgomery. “I think I ought to know
+him.”
+
+In the afternoon, Moreau, Montgomery, myself, and M’ling went across
+the island to the huts in the ravine. We three were armed; M’ling
+carried the little hatchet he used in chopping firewood, and some coils
+of wire. Moreau had a huge cowherd’s horn slung over his shoulder.
+
+“You will see a gathering of the Beast People,” said Montgomery. “It is
+a pretty sight!”
+
+Moreau said not a word on the way, but the expression of his heavy,
+white-fringed face was grimly set.
+
+We crossed the ravine down which smoked the stream of hot water, and
+followed the winding pathway through the canebrakes until we reached a
+wide area covered over with a thick, powdery yellow substance which I
+believe was sulphur. Above the shoulder of a weedy bank the sea
+glittered. We came to a kind of shallow natural amphitheatre, and here
+the four of us halted. Then Moreau sounded the horn, and broke the
+sleeping stillness of the tropical afternoon. He must have had strong
+lungs. The hooting note rose and rose amidst its echoes, to at last an
+ear-penetrating intensity.
+
+“Ah!” said Moreau, letting the curved instrument fall to his side
+again.
+
+Immediately there was a crashing through the yellow canes, and a sound
+of voices from the dense green jungle that marked the morass through
+which I had run on the previous day. Then at three or four points on
+the edge of the sulphurous area appeared the grotesque forms of the
+Beast People hurrying towards us. I could not help a creeping horror,
+as I perceived first one and then another trot out from the trees or
+reeds and come shambling along over the hot dust. But Moreau and
+Montgomery stood calmly enough; and, perforce, I stuck beside them.
+
+First to arrive was the Satyr, strangely unreal for all that he cast a
+shadow and tossed the dust with his hoofs. After him from the brake
+came a monstrous lout, a thing of horse and rhinoceros, chewing a straw
+as it came; then appeared the Swine-woman and two Wolf-women; then the
+Fox-bear witch, with her red eyes in her peaked red face, and then
+others,—all hurrying eagerly. As they came forward they began to cringe
+towards Moreau and chant, quite regardless of one another, fragments of
+the latter half of the litany of the Law,—“His is the Hand that wounds;
+His is the Hand that heals,” and so forth. As soon as they had
+approached within a distance of perhaps thirty yards they halted, and
+bowing on knees and elbows began flinging the white dust upon their
+heads.
+
+Imagine the scene if you can! We three blue-clad men, with our
+misshapen black-faced attendant, standing in a wide expanse of sunlit
+yellow dust under the blazing blue sky, and surrounded by this circle
+of crouching and gesticulating monstrosities,—some almost human save in
+their subtle expression and gestures, some like cripples, some so
+strangely distorted as to resemble nothing but the denizens of our
+wildest dreams; and, beyond, the reedy lines of a canebrake in one
+direction, a dense tangle of palm-trees on the other, separating us
+from the ravine with the huts, and to the north the hazy horizon of the
+Pacific Ocean.
+
+“Sixty-two, sixty-three,” counted Moreau. “There are four more.”
+
+“I do not see the Leopard-man,” said I.
+
+Presently Moreau sounded the great horn again, and at the sound of it
+all the Beast People writhed and grovelled in the dust. Then, slinking
+out of the canebrake, stooping near the ground and trying to join the
+dust-throwing circle behind Moreau’s back, came the Leopard-man. The
+last of the Beast People to arrive was the little Ape-man. The earlier
+animals, hot and weary with their grovelling, shot vicious glances at
+him.
+
+“Cease!” said Moreau, in his firm, loud voice; and the Beast People sat
+back upon their hams and rested from their worshipping.
+
+“Where is the Sayer of the Law?” said Moreau, and the hairy-grey
+monster bowed his face in the dust.
+
+“Say the words!” said Moreau.
+
+Forthwith all in the kneeling assembly, swaying from side to side and
+dashing up the sulphur with their hands,—first the right hand and a
+puff of dust, and then the left,—began once more to chant their strange
+litany. When they reached, “Not to eat Flesh or Fish, that is the Law,”
+Moreau held up his lank white hand.
+
+“Stop!” he cried, and there fell absolute silence upon them all.
+
+I think they all knew and dreaded what was coming. I looked round at
+their strange faces. When I saw their wincing attitudes and the furtive
+dread in their bright eyes, I wondered that I had ever believed them to
+be men.
+
+“That Law has been broken!” said Moreau.
+
+“None escape,” from the faceless creature with the silvery hair. “None
+escape,” repeated the kneeling circle of Beast People.
+
+“Who is he?” cried Moreau, and looked round at their faces, cracking
+his whip. I fancied the Hyena-swine looked dejected, so too did the
+Leopard-man. Moreau stopped, facing this creature, who cringed towards
+him with the memory and dread of infinite torment.
+
+“Who is he?” repeated Moreau, in a voice of thunder.
+
+“Evil is he who breaks the Law,” chanted the Sayer of the Law.
+
+Moreau looked into the eyes of the Leopard-man, and seemed to be
+dragging the very soul out of the creature.
+
+“Who breaks the Law—” said Moreau, taking his eyes off his victim, and
+turning towards us (it seemed to me there was a touch of exultation in
+his voice).
+
+“Goes back to the House of Pain,” they all clamoured,—“goes back to the
+House of Pain, O Master!”
+
+“Back to the House of Pain,—back to the House of Pain,” gabbled the
+Ape-man, as though the idea was sweet to him.
+
+“Do you hear?” said Moreau, turning back to the criminal, “my
+friend—Hullo!”
+
+For the Leopard-man, released from Moreau’s eye, had risen straight
+from his knees, and now, with eyes aflame and his huge feline tusks
+flashing out from under his curling lips, leapt towards his tormentor.
+I am convinced that only the madness of unendurable fear could have
+prompted this attack. The whole circle of threescore monsters seemed to
+rise about us. I drew my revolver. The two figures collided. I saw
+Moreau reeling back from the Leopard-man’s blow. There was a furious
+yelling and howling all about us. Every one was moving rapidly. For a
+moment I thought it was a general revolt. The furious face of the
+Leopard-man flashed by mine, with M’ling close in pursuit. I saw the
+yellow eyes of the Hyena-swine blazing with excitement, his attitude as
+if he were half resolved to attack me. The Satyr, too, glared at me
+over the Hyena-swine’s hunched shoulders. I heard the crack of Moreau’s
+pistol, and saw the pink flash dart across the tumult. The whole crowd
+seemed to swing round in the direction of the glint of fire, and I too
+was swung round by the magnetism of the movement. In another second I
+was running, one of a tumultuous shouting crowd, in pursuit of the
+escaping Leopard-man.
+
+That is all I can tell definitely. I saw the Leopard-man strike Moreau,
+and then everything spun about me until I was running headlong. M’ling
+was ahead, close in pursuit of the fugitive. Behind, their tongues
+already lolling out, ran the Wolf-women in great leaping strides. The
+Swine folk followed, squealing with excitement, and the two Bull-men in
+their swathings of white. Then came Moreau in a cluster of the Beast
+People, his wide-brimmed straw hat blown off, his revolver in hand, and
+his lank white hair streaming out. The Hyena-swine ran beside me,
+keeping pace with me and glancing furtively at me out of his feline
+eyes, and the others came pattering and shouting behind us.
+
+The Leopard-man went bursting his way through the long canes, which
+sprang back as he passed, and rattled in M’ling’s face. We others in
+the rear found a trampled path for us when we reached the brake. The
+chase lay through the brake for perhaps a quarter of a mile, and then
+plunged into a dense thicket, which retarded our movements exceedingly,
+though we went through it in a crowd together,—fronds flicking into our
+faces, ropy creepers catching us under the chin or gripping our ankles,
+thorny plants hooking into and tearing cloth and flesh together.
+
+“He has gone on all-fours through this,” panted Moreau, now just ahead
+of me.
+
+“None escape,” said the Wolf-bear, laughing into my face with the
+exultation of hunting. We burst out again among rocks, and saw the
+quarry ahead running lightly on all-fours and snarling at us over his
+shoulder. At that the Wolf Folk howled with delight. The Thing was
+still clothed, and at a distance its face still seemed human; but the
+carriage of its four limbs was feline, and the furtive droop of its
+shoulder was distinctly that of a hunted animal. It leapt over some
+thorny yellow-flowering bushes, and was hidden. M’ling was halfway
+across the space.
+
+Most of us now had lost the first speed of the chase, and had fallen
+into a longer and steadier stride. I saw as we traversed the open that
+the pursuit was now spreading from a column into a line. The
+Hyena-swine still ran close to me, watching me as it ran, every now and
+then puckering its muzzle with a snarling laugh. At the edge of the
+rocks the Leopard-man, realising that he was making for the projecting
+cape upon which he had stalked me on the night of my arrival, had
+doubled in the undergrowth; but Montgomery had seen the manoeuvre, and
+turned him again. So, panting, tumbling against rocks, torn by
+brambles, impeded by ferns and reeds, I helped to pursue the
+Leopard-man who had broken the Law, and the Hyena-swine ran, laughing
+savagely, by my side. I staggered on, my head reeling and my heart
+beating against my ribs, tired almost to death, and yet not daring to
+lose sight of the chase lest I should be left alone with this horrible
+companion. I staggered on in spite of infinite fatigue and the dense
+heat of the tropical afternoon.
+
+At last the fury of the hunt slackened. We had pinned the wretched
+brute into a corner of the island. Moreau, whip in hand, marshalled us
+all into an irregular line, and we advanced now slowly, shouting to one
+another as we advanced and tightening the cordon about our victim. He
+lurked noiseless and invisible in the bushes through which I had run
+from him during that midnight pursuit.
+
+“Steady!” cried Moreau, “steady!” as the ends of the line crept round
+the tangle of undergrowth and hemmed the brute in.
+
+“Ware a rush!” came the voice of Montgomery from beyond the thicket.
+
+I was on the slope above the bushes; Montgomery and Moreau beat along
+the beach beneath. Slowly we pushed in among the fretted network of
+branches and leaves. The quarry was silent.
+
+“Back to the House of Pain, the House of Pain, the House of Pain!”
+yelped the voice of the Ape-man, some twenty yards to the right.
+
+When I heard that, I forgave the poor wretch all the fear he had
+inspired in me. I heard the twigs snap and the boughs swish aside
+before the heavy tread of the Horse-rhinoceros upon my right. Then
+suddenly through a polygon of green, in the half darkness under the
+luxuriant growth, I saw the creature we were hunting. I halted. He was
+crouched together into the smallest possible compass, his luminous
+green eyes turned over his shoulder regarding me.
+
+It may seem a strange contradiction in me,—I cannot explain the
+fact,—but now, seeing the creature there in a perfectly animal
+attitude, with the light gleaming in its eyes and its imperfectly human
+face distorted with terror, I realised again the fact of its humanity.
+In another moment other of its pursuers would see it, and it would be
+overpowered and captured, to experience once more the horrible tortures
+of the enclosure. Abruptly I slipped out my revolver, aimed between its
+terror-struck eyes, and fired. As I did so, the Hyena-swine saw the
+Thing, and flung itself upon it with an eager cry, thrusting thirsty
+teeth into its neck. All about me the green masses of the thicket were
+swaying and cracking as the Beast People came rushing together. One
+face and then another appeared.
+
+“Don’t kill it, Prendick!” cried Moreau. “Don’t kill it!” and I saw him
+stooping as he pushed through under the fronds of the big ferns.
+
+In another moment he had beaten off the Hyena-swine with the handle of
+his whip, and he and Montgomery were keeping away the excited
+carnivorous Beast People, and particularly M’ling, from the still
+quivering body. The hairy-grey Thing came sniffing at the corpse under
+my arm. The other animals, in their animal ardour, jostled me to get a
+nearer view.
+
+“Confound you, Prendick!” said Moreau. “I wanted him.”
+
+“I’m sorry,” said I, though I was not. “It was the impulse of the
+moment.” I felt sick with exertion and excitement. Turning, I pushed my
+way out of the crowding Beast People and went on alone up the slope
+towards the higher part of the headland. Under the shouted directions
+of Moreau I heard the three white-swathed Bull-men begin dragging the
+victim down towards the water.
+
+It was easy now for me to be alone. The Beast People manifested a quite
+human curiosity about the dead body, and followed it in a thick knot,
+sniffing and growling at it as the Bull-men dragged it down the beach.
+I went to the headland and watched the bull-men, black against the
+evening sky as they carried the weighted dead body out to sea; and like
+a wave across my mind came the realisation of the unspeakable
+aimlessness of things upon the island. Upon the beach among the rocks
+beneath me were the Ape-man, the Hyena-swine, and several other of the
+Beast People, standing about Montgomery and Moreau. They were all still
+intensely excited, and all overflowing with noisy expressions of their
+loyalty to the Law; yet I felt an absolute assurance in my own mind
+that the Hyena-swine was implicated in the rabbit-killing. A strange
+persuasion came upon me, that, save for the grossness of the line, the
+grotesqueness of the forms, I had here before me the whole balance of
+human life in miniature, the whole interplay of instinct, reason, and
+fate in its simplest form. The Leopard-man had happened to go under:
+that was all the difference. Poor brute!
+
+Poor brutes! I began to see the viler aspect of Moreau’s cruelty. I had
+not thought before of the pain and trouble that came to these poor
+victims after they had passed from Moreau’s hands. I had shivered only
+at the days of actual torment in the enclosure. But now that seemed to
+me the lesser part. Before, they had been beasts, their instincts fitly
+adapted to their surroundings, and happy as living things may be. Now
+they stumbled in the shackles of humanity, lived in a fear that never
+died, fretted by a law they could not understand; their mock-human
+existence, begun in an agony, was one long internal struggle, one long
+dread of Moreau—and for what? It was the wantonness of it that stirred
+me.
+
+Had Moreau had any intelligible object, I could have sympathised at
+least a little with him. I am not so squeamish about pain as that. I
+could have forgiven him a little even, had his motive been only hate.
+But he was so irresponsible, so utterly careless! His curiosity, his
+mad, aimless investigations, drove him on; and the Things were thrown
+out to live a year or so, to struggle and blunder and suffer, and at
+last to die painfully. They were wretched in themselves; the old animal
+hate moved them to trouble one another; the Law held them back from a
+brief hot struggle and a decisive end to their natural animosities.
+
+In those days my fear of the Beast People went the way of my personal
+fear for Moreau. I fell indeed into a morbid state, deep and enduring,
+and alien to fear, which has left permanent scars upon my mind. I must
+confess that I lost faith in the sanity of the world when I saw it
+suffering the painful disorder of this island. A blind Fate, a vast
+pitiless mechanism, seemed to cut and shape the fabric of existence and
+I, Moreau (by his passion for research), Montgomery (by his passion for
+drink), the Beast People with their instincts and mental restrictions,
+were torn and crushed, ruthlessly, inevitably, amid the infinite
+complexity of its incessant wheels. But this condition did not come all
+at once: I think indeed that I anticipate a little in speaking of it
+now.
+
+### XVII. A CATASTROPHE.
+
+Scarcely six weeks passed before I had lost every feeling but dislike
+and abhorrence for this infamous experiment of Moreau’s. My one idea
+was to get away from these horrible caricatures of my Maker’s image,
+back to the sweet and wholesome intercourse of men. My
+fellow-creatures, from whom I was thus separated, began to assume
+idyllic virtue and beauty in my memory. My first friendship with
+Montgomery did not increase. His long separation from humanity, his
+secret vice of drunkenness, his evident sympathy with the Beast People,
+tainted him to me. Several times I let him go alone among them. I
+avoided intercourse with them in every possible way. I spent an
+increasing proportion of my time upon the beach, looking for some
+liberating sail that never appeared,—until one day there fell upon us
+an appalling disaster, which put an altogether different aspect upon my
+strange surroundings.
+
+It was about seven or eight weeks after my landing,—rather more, I
+think, though I had not troubled to keep account of the time,—when this
+catastrophe occurred. It happened in the early morning—I should think
+about six. I had risen and breakfasted early, having been aroused by
+the noise of three Beast Men carrying wood into the enclosure.
+
+After breakfast I went to the open gateway of the enclosure, and stood
+there smoking a cigarette and enjoying the freshness of the early
+morning. Moreau presently came round the corner of the enclosure and
+greeted me. He passed by me, and I heard him behind me unlock and enter
+his laboratory. So indurated was I at that time to the abomination of
+the place, that I heard without a touch of emotion the puma victim
+begin another day of torture. It met its persecutor with a shriek,
+almost exactly like that of an angry virago.
+
+Then suddenly something happened,—I do not know what, to this day. I
+heard a short, sharp cry behind me, a fall, and turning saw an awful
+face rushing upon me,—not human, not animal, but hellish, brown, seamed
+with red branching scars, red drops starting out upon it, and the
+lidless eyes ablaze. I threw up my arm to defend myself from the blow
+that flung me headlong with a broken forearm; and the great monster,
+swathed in lint and with red-stained bandages fluttering about it,
+leapt over me and passed. I rolled over and over down the beach, tried
+to sit up, and collapsed upon my broken arm. Then Moreau appeared, his
+massive white face all the more terrible for the blood that trickled
+from his forehead. He carried a revolver in one hand. He scarcely
+glanced at me, but rushed off at once in pursuit of the puma.
+
+I tried the other arm and sat up. The muffled figure in front ran in
+great striding leaps along the beach, and Moreau followed her. She
+turned her head and saw him, then doubling abruptly made for the
+bushes. She gained upon him at every stride. I saw her plunge into
+them, and Moreau, running slantingly to intercept her, fired and missed
+as she disappeared. Then he too vanished in the green confusion. I
+stared after them, and then the pain in my arm flamed up, and with a
+groan I staggered to my feet. Montgomery appeared in the doorway,
+dressed, and with his revolver in his hand.
+
+“Great God, Prendick!” he said, not noticing that I was hurt, “that
+brute’s loose! Tore the fetter out of the wall! Have you seen them?”
+Then sharply, seeing I gripped my arm, “What’s the matter?”
+
+“I was standing in the doorway,” said I.
+
+He came forward and took my arm. “Blood on the sleeve,” said he, and
+rolled back the flannel. He pocketed his weapon, felt my arm about
+painfully, and led me inside. “Your arm is broken,” he said, and then,
+“Tell me exactly how it happened—what happened?”
+
+I told him what I had seen; told him in broken sentences, with gasps of
+pain between them, and very dexterously and swiftly he bound my arm
+meanwhile. He slung it from my shoulder, stood back and looked at me.
+
+“You’ll do,” he said. “And now?”
+
+He thought. Then he went out and locked the gates of the enclosure. He
+was absent some time.
+
+I was chiefly concerned about my arm. The incident seemed merely one
+more of many horrible things. I sat down in the deck chair, and I must
+admit swore heartily at the island. The first dull feeling of injury in
+my arm had already given way to a burning pain when Montgomery
+reappeared. His face was rather pale, and he showed more of his lower
+gums than ever.
+
+“I can neither see nor hear anything of him,” he said. “I’ve been
+thinking he may want my help.” He stared at me with his expressionless
+eyes. “That was a strong brute,” he said. “It simply wrenched its
+fetter out of the wall.” He went to the window, then to the door, and
+there turned to me. “I shall go after him,” he said. “There’s another
+revolver I can leave with you. To tell you the truth, I feel anxious
+somehow.”
+
+He obtained the weapon, and put it ready to my hand on the table; then
+went out, leaving a restless contagion in the air. I did not sit long
+after he left, but took the revolver in hand and went to the doorway.
+
+The morning was as still as death. Not a whisper of wind was stirring;
+the sea was like polished glass, the sky empty, the beach desolate. In
+my half-excited, half-feverish state, this stillness of things
+oppressed me. I tried to whistle, and the tune died away. I swore
+again,—the second time that morning. Then I went to the corner of the
+enclosure and stared inland at the green bush that had swallowed up
+Moreau and Montgomery. When would they return, and how? Then far away
+up the beach a little grey Beast Man appeared, ran down to the water’s
+edge and began splashing about. I strolled back to the doorway, then to
+the corner again, and so began pacing to and fro like a sentinel upon
+duty. Once I was arrested by the distant voice of Montgomery bawling,
+“Coo-ee—Moreau!” My arm became less painful, but very hot. I got
+feverish and thirsty. My shadow grew shorter. I watched the distant
+figure until it went away again. Would Moreau and Montgomery never
+return? Three sea-birds began fighting for some stranded treasure.
+
+Then from far away behind the enclosure I heard a pistol-shot. A long
+silence, and then came another. Then a yelling cry nearer, and another
+dismal gap of silence. My unfortunate imagination set to work to
+torment me. Then suddenly a shot close by. I went to the corner,
+startled, and saw Montgomery,—his face scarlet, his hair disordered,
+and the knee of his trousers torn. His face expressed profound
+consternation. Behind him slouched the Beast Man, M’ling, and round
+M’ling’s jaws were some queer dark stains.
+
+“Has he come?” said Montgomery.
+
+“Moreau?” said I. “No.”
+
+“My God!” The man was panting, almost sobbing. “Go back in,” he said,
+taking my arm. “They’re mad. They’re all rushing about mad. What can
+have happened? I don’t know. I’ll tell you, when my breath comes.
+Where’s some brandy?”
+
+Montgomery limped before me into the room and sat down in the deck
+chair. M’ling flung himself down just outside the doorway and began
+panting like a dog. I got Montgomery some brandy-and-water. He sat
+staring in front of him at nothing, recovering his breath. After some
+minutes he began to tell me what had happened.
+
+He had followed their track for some way. It was plain enough at first
+on account of the crushed and broken bushes, white rags torn from the
+puma’s bandages, and occasional smears of blood on the leaves of the
+shrubs and undergrowth. He lost the track, however, on the stony ground
+beyond the stream where I had seen the Beast Man drinking, and went
+wandering aimlessly westward shouting Moreau’s name. Then M’ling had
+come to him carrying a light hatchet. M’ling had seen nothing of the
+puma affair; had been felling wood, and heard him calling. They went on
+shouting together. Two Beast Men came crouching and peering at them
+through the undergrowth, with gestures and a furtive carriage that
+alarmed Montgomery by their strangeness. He hailed them, and they fled
+guiltily. He stopped shouting after that, and after wandering some time
+farther in an undecided way, determined to visit the huts.
+
+He found the ravine deserted.
+
+Growing more alarmed every minute, he began to retrace his steps. Then
+it was he encountered the two Swine-men I had seen dancing on the night
+of my arrival; blood-stained they were about the mouth, and intensely
+excited. They came crashing through the ferns, and stopped with fierce
+faces when they saw him. He cracked his whip in some trepidation, and
+forthwith they rushed at him. Never before had a Beast Man dared to do
+that. One he shot through the head; M’ling flung himself upon the
+other, and the two rolled grappling. M’ling got his brute under and
+with his teeth in its throat, and Montgomery shot that too as it
+struggled in M’ling’s grip. He had some difficulty in inducing M’ling
+to come on with him. Thence they had hurried back to me. On the way,
+M’ling had suddenly rushed into a thicket and driven out an under-sized
+Ocelot-man, also blood-stained, and lame through a wound in the foot.
+This brute had run a little way and then turned savagely at bay, and
+Montgomery—with a certain wantonness, I thought—had shot him.
+
+“What does it all mean?” said I.
+
+He shook his head, and turned once more to the brandy.
+
+### XVIII. THE FINDING OF MOREAU.
+
+When I saw Montgomery swallow a third dose of brandy, I took it upon
+myself to interfere. He was already more than half fuddled. I told him
+that some serious thing must have happened to Moreau by this time, or
+he would have returned before this, and that it behoved us to ascertain
+what that catastrophe was. Montgomery raised some feeble objections,
+and at last agreed. We had some food, and then all three of us started.
+
+It is possibly due to the tension of my mind, at the time, but even now
+that start into the hot stillness of the tropical afternoon is a
+singularly vivid impression. M’ling went first, his shoulder hunched,
+his strange black head moving with quick starts as he peered first on
+this side of the way and then on that. He was unarmed; his axe he had
+dropped when he encountered the Swine-man. Teeth were _his_ weapons,
+when it came to fighting. Montgomery followed with stumbling footsteps,
+his hands in his pockets, his face downcast; he was in a state of
+muddled sullenness with me on account of the brandy. My left arm was in
+a sling (it was lucky it was my left), and I carried my revolver in my
+right. Soon we traced a narrow path through the wild luxuriance of the
+island, going northwestward; and presently M’ling stopped, and became
+rigid with watchfulness. Montgomery almost staggered into him, and then
+stopped too. Then, listening intently, we heard coming through the
+trees the sound of voices and footsteps approaching us.
+
+“He is dead,” said a deep, vibrating voice.
+
+“He is not dead; he is not dead,” jabbered another.
+
+“We saw, we saw,” said several voices.
+
+“_Hul_-lo!” suddenly shouted Montgomery, “Hullo, there!”
+
+“Confound you!” said I, and gripped my pistol.
+
+There was a silence, then a crashing among the interlacing vegetation,
+first here, then there, and then half-a-dozen faces appeared,—strange
+faces, lit by a strange light. M’ling made a growling noise in his
+throat. I recognised the Ape-man: I had indeed already identified his
+voice, and two of the white-swathed brown-featured creatures I had seen
+in Montgomery’s boat. With these were the two dappled brutes and that
+grey, horribly crooked creature who said the Law, with grey hair
+streaming down its cheeks, heavy grey eyebrows, and grey locks pouring
+off from a central parting upon its sloping forehead,—a heavy, faceless
+thing, with strange red eyes, looking at us curiously from amidst the
+green.
+
+For a space no one spoke. Then Montgomery hiccoughed, “Who—said he was
+dead?”
+
+The Monkey-man looked guiltily at the hairy-grey Thing. “He is dead,”
+said this monster. “They saw.”
+
+There was nothing threatening about this detachment, at any rate. They
+seemed awestricken and puzzled.
+
+“Where is he?” said Montgomery.
+
+“Beyond,” and the grey creature pointed.
+
+“Is there a Law now?” asked the Monkey-man. “Is it still to be this and
+that? Is he dead indeed?”
+
+“Is there a Law?” repeated the man in white. “Is there a Law, thou
+Other with the Whip?”
+
+“He is dead,” said the hairy-grey Thing. And they all stood watching
+us.
+
+“Prendick,” said Montgomery, turning his dull eyes to me. “He’s dead,
+evidently.”
+
+I had been standing behind him during this colloquy. I began to see how
+things lay with them. I suddenly stepped in front of Montgomery and
+lifted up my voice:—“Children of the Law,” I said, “he is _not_ dead!”
+M’ling turned his sharp eyes on me. “He has changed his shape; he has
+changed his body,” I went on. “For a time you will not see him. He
+is—there,” I pointed upward, “where he can watch you. You cannot see
+him, but he can see you. Fear the Law!”
+
+I looked at them squarely. They flinched.
+
+“He is great, he is good,” said the Ape-man, peering fearfully upward
+among the dense trees.
+
+“And the other Thing?” I demanded.
+
+“The Thing that bled, and ran screaming and sobbing,—that is dead too,”
+said the grey Thing, still regarding me.
+
+“That’s well,” grunted Montgomery.
+
+“The Other with the Whip—” began the grey Thing.
+
+“Well?” said I.
+
+“Said he was dead.”
+
+But Montgomery was still sober enough to understand my motive in
+denying Moreau’s death. “He is not dead,” he said slowly, “not dead at
+all. No more dead than I am.”
+
+“Some,” said I, “have broken the Law: they will die. Some have died.
+Show us now where his old body lies,—the body he cast away because he
+had no more need of it.”
+
+“It is this way, Man who walked in the Sea,” said the grey Thing.
+
+And with these six creatures guiding us, we went through the tumult of
+ferns and creepers and tree-stems towards the northwest. Then came a
+yelling, a crashing among the branches, and a little pink homunculus
+rushed by us shrieking. Immediately after appeared a monster in
+headlong pursuit, blood-bedabbled, who was amongst us almost before he
+could stop his career. The grey Thing leapt aside. M’ling, with a
+snarl, flew at it, and was struck aside. Montgomery fired and missed,
+bowed his head, threw up his arm, and turned to run. I fired, and the
+Thing still came on; fired again, point-blank, into its ugly face. I
+saw its features vanish in a flash: its face was driven in. Yet it
+passed me, gripped Montgomery, and holding him, fell headlong beside
+him and pulled him sprawling upon itself in its death-agony.
+
+I found myself alone with M’ling, the dead brute, and the prostrate
+man. Montgomery raised himself slowly and stared in a muddled way at
+the shattered Beast Man beside him. It more than half sobered him. He
+scrambled to his feet. Then I saw the grey Thing returning cautiously
+through the trees.
+
+“See,” said I, pointing to the dead brute, “is the Law not alive? This
+came of breaking the Law.”
+
+He peered at the body. “He sends the Fire that kills,” said he, in his
+deep voice, repeating part of the Ritual. The others gathered round and
+stared for a space.
+
+At last we drew near the westward extremity of the island. We came upon
+the gnawed and mutilated body of the puma, its shoulder-bone smashed by
+a bullet, and perhaps twenty yards farther found at last what we
+sought. Moreau lay face downward in a trampled space in a canebrake.
+One hand was almost severed at the wrist and his silvery hair was
+dabbled in blood. His head had been battered in by the fetters of the
+puma. The broken canes beneath him were smeared with blood. His
+revolver we could not find. Montgomery turned him over. Resting at
+intervals, and with the help of the seven Beast People (for he was a
+heavy man), we carried Moreau back to the enclosure. The night was
+darkling. Twice we heard unseen creatures howling and shrieking past
+our little band, and once the little pink sloth-creature appeared and
+stared at us, and vanished again. But we were not attacked again. At
+the gates of the enclosure our company of Beast People left us, M’ling
+going with the rest. We locked ourselves in, and then took Moreau’s
+mangled body into the yard and laid it upon a pile of brushwood. Then
+we went into the laboratory and put an end to all we found living
+there.
+
+### XIX. MONTGOMERY’S “BANK HOLIDAY.”
+
+When this was accomplished, and we had washed and eaten, Montgomery and
+I went into my little room and seriously discussed our position for the
+first time. It was then near midnight. He was almost sober, but greatly
+disturbed in his mind. He had been strangely under the influence of
+Moreau’s personality: I do not think it had ever occurred to him that
+Moreau could die. This disaster was the sudden collapse of the habits
+that had become part of his nature in the ten or more monotonous years
+he had spent on the island. He talked vaguely, answered my questions
+crookedly, wandered into general questions.
+
+“This silly ass of a world,” he said; “what a muddle it all is! I
+haven’t had any life. I wonder when it’s going to begin. Sixteen years
+being bullied by nurses and schoolmasters at their own sweet will; five
+in London grinding hard at medicine, bad food, shabby lodgings, shabby
+clothes, shabby vice, a blunder,—_I_ didn’t know any better,—and
+hustled off to this beastly island. Ten years here! What’s it all for,
+Prendick? Are we bubbles blown by a baby?”
+
+It was hard to deal with such ravings. “The thing we have to think of
+now,” said I, “is how to get away from this island.”
+
+“What’s the good of getting away? I’m an outcast. Where am _I_ to join
+on? It’s all very well for _you_, Prendick. Poor old Moreau! We can’t
+leave him here to have his bones picked. As it is—And besides, what
+will become of the decent part of the Beast Folk?”
+
+“Well,” said I, “that will do to-morrow. I’ve been thinking we might
+make the brushwood into a pyre and burn his body—and those other
+things. Then what will happen with the Beast Folk?”
+
+“_I_ don’t know. I suppose those that were made of beasts of prey will
+make silly asses of themselves sooner or later. We can’t massacre the
+lot—can we? I suppose that’s what _your_ humanity would suggest? But
+they’ll change. They are sure to change.”
+
+He talked thus inconclusively until at last I felt my temper going.
+
+“Damnation!” he exclaimed at some petulance of mine; “can’t you see I’m
+in a worse hole than you are?” And he got up, and went for the brandy.
+“Drink!” he said returning, “you logic-chopping, chalky-faced saint of
+an atheist, drink!”
+
+“Not I,” said I, and sat grimly watching his face under the yellow
+paraffine flare, as he drank himself into a garrulous misery.
+
+I have a memory of infinite tedium. He wandered into a maudlin defence
+of the Beast People and of M’ling. M’ling, he said, was the only thing
+that had ever really cared for him. And suddenly an idea came to him.
+
+“I’m damned!” said he, staggering to his feet and clutching the brandy
+bottle.
+
+By some flash of intuition I knew what it was he intended. “You don’t
+give drink to that beast!” I said, rising and facing him.
+
+“Beast!” said he. “You’re the beast. He takes his liquor like a
+Christian. Come out of the way, Prendick!”
+
+“For God’s sake,” said I.
+
+“Get—out of the way!” he roared, and suddenly whipped out his revolver.
+
+“Very well,” said I, and stood aside, half-minded to fall upon him as
+he put his hand upon the latch, but deterred by the thought of my
+useless arm. “You’ve made a beast of yourself,—to the beasts you may
+go.”
+
+He flung the doorway open, and stood half facing me between the yellow
+lamp-light and the pallid glare of the moon; his eye-sockets were
+blotches of black under his stubbly eyebrows.
+
+“You’re a solemn prig, Prendick, a silly ass! You’re always fearing and
+fancying. We’re on the edge of things. I’m bound to cut my throat
+to-morrow. I’m going to have a damned Bank Holiday to-night.” He turned
+and went out into the moonlight. “M’ling!” he cried; “M’ling, old
+friend!”
+
+Three dim creatures in the silvery light came along the edge of the wan
+beach,—one a white-wrapped creature, the other two blotches of
+blackness following it. They halted, staring. Then I saw M’ling’s
+hunched shoulders as he came round the corner of the house.
+
+“Drink!” cried Montgomery, “drink, you brutes! Drink and be men! Damme,
+I’m the cleverest. Moreau forgot this; this is the last touch. Drink, I
+tell you!” And waving the bottle in his hand he started off at a kind
+of quick trot to the westward, M’ling ranging himself between him and
+the three dim creatures who followed.
+
+I went to the doorway. They were already indistinct in the mist of the
+moonlight before Montgomery halted. I saw him administer a dose of the
+raw brandy to M’ling, and saw the five figures melt into one vague
+patch.
+
+“Sing!” I heard Montgomery shout,—“sing all together, ‘Confound old
+Prendick!’ That’s right; now again, ‘Confound old Prendick!’”
+
+The black group broke up into five separate figures, and wound slowly
+away from me along the band of shining beach. Each went howling at his
+own sweet will, yelping insults at me, or giving whatever other vent
+this new inspiration of brandy demanded. Presently I heard Montgomery’s
+voice shouting, “Right turn!” and they passed with their shouts and
+howls into the blackness of the landward trees. Slowly, very slowly,
+they receded into silence.
+
+The peaceful splendour of the night healed again. The moon was now past
+the meridian and travelling down the west. It was at its full, and very
+bright riding through the empty blue sky. The shadow of the wall lay, a
+yard wide and of inky blackness, at my feet. The eastward sea was a
+featureless grey, dark and mysterious; and between the sea and the
+shadow the grey sands (of volcanic glass and crystals) flashed and
+shone like a beach of diamonds. Behind me the paraffine lamp flared hot
+and ruddy.
+
+Then I shut the door, locked it, and went into the enclosure where
+Moreau lay beside his latest victims,—the staghounds and the llama and
+some other wretched brutes,—with his massive face calm even after his
+terrible death, and with the hard eyes open, staring at the dead white
+moon above. I sat down upon the edge of the sink, and with my eyes upon
+that ghastly pile of silvery light and ominous shadows began to turn
+over my plans. In the morning I would gather some provisions in the
+dingey, and after setting fire to the pyre before me, push out into the
+desolation of the high sea once more. I felt that for Montgomery there
+was no help; that he was, in truth, half akin to these Beast Folk,
+unfitted for human kindred.
+
+I do not know how long I sat there scheming. It must have been an hour
+or so. Then my planning was interrupted by the return of Montgomery to
+my neighbourhood. I heard a yelling from many throats, a tumult of
+exultant cries passing down towards the beach, whooping and howling,
+and excited shrieks that seemed to come to a stop near the water’s
+edge. The riot rose and fell; I heard heavy blows and the splintering
+smash of wood, but it did not trouble me then. A discordant chanting
+began.
+
+My thoughts went back to my means of escape. I got up, brought the
+lamp, and went into a shed to look at some kegs I had seen there. Then
+I became interested in the contents of some biscuit-tins, and opened
+one. I saw something out of the tail of my eye,—a red figure,—and
+turned sharply.
+
+Behind me lay the yard, vividly black-and-white in the moonlight, and
+the pile of wood and faggots on which Moreau and his mutilated victims
+lay, one over another. They seemed to be gripping one another in one
+last revengeful grapple. His wounds gaped, black as night, and the
+blood that had dripped lay in black patches upon the sand. Then I saw,
+without understanding, the cause of my phantom,—a ruddy glow that came
+and danced and went upon the wall opposite. I misinterpreted this,
+fancied it was a reflection of my flickering lamp, and turned again to
+the stores in the shed. I went on rummaging among them, as well as a
+one-armed man could, finding this convenient thing and that, and
+putting them aside for to-morrow’s launch. My movements were slow, and
+the time passed quickly. Insensibly the daylight crept upon me.
+
+The chanting died down, giving place to a clamour; then it began again,
+and suddenly broke into a tumult. I heard cries of, “More! more!” a
+sound like quarrelling, and a sudden wild shriek. The quality of the
+sounds changed so greatly that it arrested my attention. I went out
+into the yard and listened. Then cutting like a knife across the
+confusion came the crack of a revolver.
+
+I rushed at once through my room to the little doorway. As I did so I
+heard some of the packing-cases behind me go sliding down and smash
+together with a clatter of glass on the floor of the shed. But I did
+not heed these. I flung the door open and looked out.
+
+Up the beach by the boathouse a bonfire was burning, raining up sparks
+into the indistinctness of the dawn. Around this struggled a mass of
+black figures. I heard Montgomery call my name. I began to run at once
+towards this fire, revolver in hand. I saw the pink tongue of
+Montgomery’s pistol lick out once, close to the ground. He was down. I
+shouted with all my strength and fired into the air. I heard some one
+cry, “The Master!” The knotted black struggle broke into scattering
+units, the fire leapt and sank down. The crowd of Beast People fled in
+sudden panic before me, up the beach. In my excitement I fired at their
+retreating backs as they disappeared among the bushes. Then I turned to
+the black heaps upon the ground.
+
+Montgomery lay on his back, with the hairy-grey Beast-man sprawling
+across his body. The brute was dead, but still gripping Montgomery’s
+throat with its curving claws. Near by lay M’ling on his face and quite
+still, his neck bitten open and the upper part of the smashed
+brandy-bottle in his hand. Two other figures lay near the fire,—the one
+motionless, the other groaning fitfully, every now and then raising its
+head slowly, then dropping it again.
+
+I caught hold of the grey man and pulled him off Montgomery’s body; his
+claws drew down the torn coat reluctantly as I dragged him away.
+Montgomery was dark in the face and scarcely breathing. I splashed
+sea-water on his face and pillowed his head on my rolled-up coat.
+M’ling was dead. The wounded creature by the fire—it was a Wolf-brute
+with a bearded grey face—lay, I found, with the fore part of its body
+upon the still glowing timber. The wretched thing was injured so
+dreadfully that in mercy I blew its brains out at once. The other brute
+was one of the Bull-men swathed in white. He too was dead. The rest of
+the Beast People had vanished from the beach.
+
+I went to Montgomery again and knelt beside him, cursing my ignorance
+of medicine. The fire beside me had sunk down, and only charred beams
+of timber glowing at the central ends and mixed with a grey ash of
+brushwood remained. I wondered casually where Montgomery had got his
+wood. Then I saw that the dawn was upon us. The sky had grown brighter,
+the setting moon was becoming pale and opaque in the luminous blue of
+the day. The sky to the eastward was rimmed with red.
+
+Suddenly I heard a thud and a hissing behind me, and, looking round,
+sprang to my feet with a cry of horror. Against the warm dawn great
+tumultuous masses of black smoke were boiling up out of the enclosure,
+and through their stormy darkness shot flickering threads of blood-red
+flame. Then the thatched roof caught. I saw the curving charge of the
+flames across the sloping straw. A spurt of fire jetted from the window
+of my room.
+
+I knew at once what had happened. I remembered the crash I had heard.
+When I had rushed out to Montgomery’s assistance, I had overturned the
+lamp.
+
+The hopelessness of saving any of the contents of the enclosure stared
+me in the face. My mind came back to my plan of flight, and turning
+swiftly I looked to see where the two boats lay upon the beach. They
+were gone! Two axes lay upon the sands beside me; chips and splinters
+were scattered broadcast, and the ashes of the bonfire were blackening
+and smoking under the dawn. Montgomery had burnt the boats to revenge
+himself upon me and prevent our return to mankind!
+
+A sudden convulsion of rage shook me. I was almost moved to batter his
+foolish head in, as he lay there helpless at my feet. Then suddenly his
+hand moved, so feebly, so pitifully, that my wrath vanished. He
+groaned, and opened his eyes for a minute. I knelt down beside him and
+raised his head. He opened his eyes again, staring silently at the
+dawn, and then they met mine. The lids fell.
+
+“Sorry,” he said presently, with an effort. He seemed trying to think.
+“The last,” he murmured, “the last of this silly universe. What a
+mess—”
+
+I listened. His head fell helplessly to one side. I thought some drink
+might revive him; but there was neither drink nor vessel in which to
+bring drink at hand. He seemed suddenly heavier. My heart went cold. I
+bent down to his face, put my hand through the rent in his blouse. He
+was dead; and even as he died a line of white heat, the limb of the
+sun, rose eastward beyond the projection of the bay, splashing its
+radiance across the sky and turning the dark sea into a weltering
+tumult of dazzling light. It fell like a glory upon his death-shrunken
+face.
+
+I let his head fall gently upon the rough pillow I had made for him,
+and stood up. Before me was the glittering desolation of the sea, the
+awful solitude upon which I had already suffered so much; behind me the
+island, hushed under the dawn, its Beast People silent and unseen. The
+enclosure, with all its provisions and ammunition, burnt noisily, with
+sudden gusts of flame, a fitful crackling, and now and then a crash.
+The heavy smoke drove up the beach away from me, rolling low over the
+distant tree-tops towards the huts in the ravine. Beside me were the
+charred vestiges of the boats and these five dead bodies.
+
+Then out of the bushes came three Beast People, with hunched shoulders,
+protruding heads, misshapen hands awkwardly held, and inquisitive,
+unfriendly eyes, and advanced towards me with hesitating gestures.
+
+### XX. ALONE WITH THE BEAST FOLK.
+
+I faced these people, facing my fate in them, single-handed
+now,—literally single-handed, for I had a broken arm. In my pocket was
+a revolver with two empty chambers. Among the chips scattered about the
+beach lay the two axes that had been used to chop up the boats. The
+tide was creeping in behind me. There was nothing for it but courage. I
+looked squarely into the faces of the advancing monsters. They avoided
+my eyes, and their quivering nostrils investigated the bodies that lay
+beyond me on the beach. I took half-a-dozen steps, picked up the
+blood-stained whip that lay beneath the body of the Wolf-man, and
+cracked it. They stopped and stared at me.
+
+“Salute!” said I. “Bow down!”
+
+They hesitated. One bent his knees. I repeated my command, with my
+heart in my mouth, and advanced upon them. One knelt, then the other
+two.
+
+I turned and walked towards the dead bodies, keeping my face towards
+the three kneeling Beast Men, very much as an actor passing up the
+stage faces the audience.
+
+“They broke the Law,” said I, putting my foot on the Sayer of the Law.
+“They have been slain,—even the Sayer of the Law; even the Other with
+the Whip. Great is the Law! Come and see.”
+
+“None escape,” said one of them, advancing and peering.
+
+“None escape,” said I. “Therefore hear and do as I command.” They stood
+up, looking questioningly at one another.
+
+“Stand there,” said I.
+
+I picked up the hatchets and swung them by their heads from the sling
+of my arm; turned Montgomery over; picked up his revolver still loaded
+in two chambers, and bending down to rummage, found half-a-dozen
+cartridges in his pocket.
+
+“Take him,” said I, standing up again and pointing with the whip; “take
+him, and carry him out and cast him into the sea.”
+
+They came forward, evidently still afraid of Montgomery, but still more
+afraid of my cracking red whip-lash; and after some fumbling and
+hesitation, some whip-cracking and shouting, they lifted him gingerly,
+carried him down to the beach, and went splashing into the dazzling
+welter of the sea.
+
+“On!” said I, “on! Carry him far.”
+
+They went in up to their armpits and stood regarding me.
+
+“Let go,” said I; and the body of Montgomery vanished with a splash.
+Something seemed to tighten across my chest.
+
+“Good!” said I, with a break in my voice; and they came back, hurrying
+and fearful, to the margin of the water, leaving long wakes of black in
+the silver. At the water’s edge they stopped, turning and glaring into
+the sea as though they presently expected Montgomery to arise therefrom
+and exact vengeance.
+
+“Now these,” said I, pointing to the other bodies.
+
+They took care not to approach the place where they had thrown
+Montgomery into the water, but instead, carried the four dead Beast
+People slantingly along the beach for perhaps a hundred yards before
+they waded out and cast them away.
+
+As I watched them disposing of the mangled remains of M’ling, I heard a
+light footfall behind me, and turning quickly saw the big Hyena-swine
+perhaps a dozen yards away. His head was bent down, his bright eyes
+were fixed upon me, his stumpy hands clenched and held close by his
+side. He stopped in this crouching attitude when I turned, his eyes a
+little averted.
+
+For a moment we stood eye to eye. I dropped the whip and snatched at
+the pistol in my pocket; for I meant to kill this brute, the most
+formidable of any left now upon the island, at the first excuse. It may
+seem treacherous, but so I was resolved. I was far more afraid of him
+than of any other two of the Beast Folk. His continued life was I knew
+a threat against mine.
+
+I was perhaps a dozen seconds collecting myself. Then cried I, “Salute!
+Bow down!”
+
+His teeth flashed upon me in a snarl. “Who are _you_ that I should—”
+
+Perhaps a little too spasmodically I drew my revolver, aimed quickly
+and fired. I heard him yelp, saw him run sideways and turn, knew I had
+missed, and clicked back the cock with my thumb for the next shot. But
+he was already running headlong, jumping from side to side, and I dared
+not risk another miss. Every now and then he looked back at me over his
+shoulder. He went slanting along the beach, and vanished beneath the
+driving masses of dense smoke that were still pouring out from the
+burning enclosure. For some time I stood staring after him. I turned to
+my three obedient Beast Folk again and signalled them to drop the body
+they still carried. Then I went back to the place by the fire where the
+bodies had fallen and kicked the sand until all the brown blood-stains
+were absorbed and hidden.
+
+I dismissed my three serfs with a wave of the hand, and went up the
+beach into the thickets. I carried my pistol in my hand, my whip thrust
+with the hatchets in the sling of my arm. I was anxious to be alone, to
+think out the position in which I was now placed. A dreadful thing that
+I was only beginning to realise was, that over all this island there
+was now no safe place where I could be alone and secure to rest or
+sleep. I had recovered strength amazingly since my landing, but I was
+still inclined to be nervous and to break down under any great stress.
+I felt that I ought to cross the island and establish myself with the
+Beast People, and make myself secure in their confidence. But my heart
+failed me. I went back to the beach, and turning eastward past the
+burning enclosure, made for a point where a shallow spit of coral sand
+ran out towards the reef. Here I could sit down and think, my back to
+the sea and my face against any surprise. And there I sat, chin on
+knees, the sun beating down upon my head and unspeakable dread in my
+mind, plotting how I could live on against the hour of my rescue (if
+ever rescue came). I tried to review the whole situation as calmly as I
+could, but it was difficult to clear the thing of emotion.
+
+I began turning over in my mind the reason of Montgomery’s despair.
+“They will change,” he said; “they are sure to change.” And Moreau,
+what was it that Moreau had said? “The stubborn beast-flesh grows day
+by day back again.” Then I came round to the Hyena-swine. I felt sure
+that if I did not kill that brute, he would kill me. The Sayer of the
+Law was dead: worse luck. They knew now that we of the Whips could be
+killed even as they themselves were killed. Were they peering at me
+already out of the green masses of ferns and palms over yonder,
+watching until I came within their spring? Were they plotting against
+me? What was the Hyena-swine telling them? My imagination was running
+away with me into a morass of unsubstantial fears.
+
+My thoughts were disturbed by a crying of sea-birds hurrying towards
+some black object that had been stranded by the waves on the beach near
+the enclosure. I knew what that object was, but I had not the heart to
+go back and drive them off. I began walking along the beach in the
+opposite direction, designing to come round the eastward corner of the
+island and so approach the ravine of the huts, without traversing the
+possible ambuscades of the thickets.
+
+Perhaps half a mile along the beach I became aware of one of my three
+Beast Folk advancing out of the landward bushes towards me. I was now
+so nervous with my own imaginings that I immediately drew my revolver.
+Even the propitiatory gestures of the creature failed to disarm me. He
+hesitated as he approached.
+
+“Go away!” cried I.
+
+There was something very suggestive of a dog in the cringing attitude
+of the creature. It retreated a little way, very like a dog being sent
+home, and stopped, looking at me imploringly with canine brown eyes.
+
+“Go away,” said I. “Do not come near me.”
+
+“May I not come near you?” it said.
+
+“No; go away,” I insisted, and snapped my whip. Then putting my whip in
+my teeth, I stooped for a stone, and with that threat drove the
+creature away.
+
+So in solitude I came round by the ravine of the Beast People, and
+hiding among the weeds and reeds that separated this crevice from the
+sea I watched such of them as appeared, trying to judge from their
+gestures and appearance how the death of Moreau and Montgomery and the
+destruction of the House of Pain had affected them. I know now the
+folly of my cowardice. Had I kept my courage up to the level of the
+dawn, had I not allowed it to ebb away in solitary thought, I might
+have grasped the vacant sceptre of Moreau and ruled over the Beast
+People. As it was I lost the opportunity, and sank to the position of a
+mere leader among my fellows.
+
+Towards noon certain of them came and squatted basking in the hot sand.
+The imperious voices of hunger and thirst prevailed over my dread. I
+came out of the bushes, and, revolver in hand, walked down towards
+these seated figures. One, a Wolf-woman, turned her head and stared at
+me, and then the others. None attempted to rise or salute me. I felt
+too faint and weary to insist, and I let the moment pass.
+
+“I want food,” said I, almost apologetically, and drawing near.
+
+“There is food in the huts,” said an Ox-boar-man, drowsily, and looking
+away from me.
+
+I passed them, and went down into the shadow and odours of the almost
+deserted ravine. In an empty hut I feasted on some specked and
+half-decayed fruit; and then after I had propped some branches and
+sticks about the opening, and placed myself with my face towards it and
+my hand upon my revolver, the exhaustion of the last thirty hours
+claimed its own, and I fell into a light slumber, hoping that the
+flimsy barricade I had erected would cause sufficient noise in its
+removal to save me from surprise.
+
+### XXI. THE REVERSION OF THE BEAST FOLK.
+
+In this way I became one among the Beast People in the Island of Doctor
+Moreau. When I awoke, it was dark about me. My arm ached in its
+bandages. I sat up, wondering at first where I might be. I heard coarse
+voices talking outside. Then I saw that my barricade had gone, and that
+the opening of the hut stood clear. My revolver was still in my hand.
+
+I heard something breathing, saw something crouched together close
+beside me. I held my breath, trying to see what it was. It began to
+move slowly, interminably. Then something soft and warm and moist
+passed across my hand. All my muscles contracted. I snatched my hand
+away. A cry of alarm began and was stifled in my throat. Then I just
+realised what had happened sufficiently to stay my fingers on the
+revolver.
+
+“Who is that?” I said in a hoarse whisper, the revolver still pointed.
+
+“_I_—Master.”
+
+“Who are _you?_”
+
+“They say there is no Master now. But I know, I know. I carried the
+bodies into the sea, O Walker in the Sea! the bodies of those you slew.
+I am your slave, Master.”
+
+“Are you the one I met on the beach?” I asked.
+
+“The same, Master.”
+
+The Thing was evidently faithful enough, for it might have fallen upon
+me as I slept. “It is well,” I said, extending my hand for another
+licking kiss. I began to realise what its presence meant, and the tide
+of my courage flowed. “Where are the others?” I asked.
+
+“They are mad; they are fools,” said the Dog-man. “Even now they talk
+together beyond there. They say, ‘The Master is dead. The Other with
+the Whip is dead. That Other who walked in the Sea is as we are. We
+have no Master, no Whips, no House of Pain, any more. There is an end.
+We love the Law, and will keep it; but there is no Pain, no Master, no
+Whips for ever again.’ So they say. But I know, Master, I know.”
+
+I felt in the darkness, and patted the Dog-man’s head. “It is well,” I
+said again.
+
+“Presently you will slay them all,” said the Dog-man.
+
+“Presently,” I answered, “I will slay them all,—after certain days and
+certain things have come to pass. Every one of them save those you
+spare, every one of them shall be slain.”
+
+“What the Master wishes to kill, the Master kills,” said the Dog-man
+with a certain satisfaction in his voice.
+
+“And that their sins may grow,” I said, “let them live in their folly
+until their time is ripe. Let them not know that I am the Master.”
+
+“The Master’s will is sweet,” said the Dog-man, with the ready tact of
+his canine blood.
+
+“But one has sinned,” said I. “Him I will kill, whenever I may meet
+him. When I say to you, ‘_That is he_,’ see that you fall upon him. And
+now I will go to the men and women who are assembled together.”
+
+For a moment the opening of the hut was blackened by the exit of the
+Dog-man. Then I followed and stood up, almost in the exact spot where I
+had been when I had heard Moreau and his staghound pursuing me. But now
+it was night, and all the miasmatic ravine about me was black; and
+beyond, instead of a green, sunlit slope, I saw a red fire, before
+which hunched, grotesque figures moved to and fro. Farther were the
+thick trees, a bank of darkness, fringed above with the black lace of
+the upper branches. The moon was just riding up on the edge of the
+ravine, and like a bar across its face drove the spire of vapour that
+was for ever streaming from the fumaroles of the island.
+
+“Walk by me,” said I, nerving myself; and side by side we walked down
+the narrow way, taking little heed of the dim Things that peered at us
+out of the huts.
+
+None about the fire attempted to salute me. Most of them disregarded
+me, ostentatiously. I looked round for the Hyena-swine, but he was not
+there. Altogether, perhaps twenty of the Beast Folk squatted, staring
+into the fire or talking to one another.
+
+“He is dead, he is dead! the Master is dead!” said the voice of the
+Ape-man to the right of me. “The House of Pain—there is no House of
+Pain!”
+
+“He is not dead,” said I, in a loud voice. “Even now he watches us!”
+
+This startled them. Twenty pairs of eyes regarded me.
+
+“The House of Pain is gone,” said I. “It will come again. The Master
+you cannot see; yet even now he listens among you.”
+
+“True, true!” said the Dog-man.
+
+They were staggered at my assurance. An animal may be ferocious and
+cunning enough, but it takes a real man to tell a lie.
+
+“The Man with the Bandaged Arm speaks a strange thing,” said one of the
+Beast Folk.
+
+“I tell you it is so,” I said. “The Master and the House of Pain will
+come again. Woe be to him who breaks the Law!”
+
+They looked curiously at one another. With an affectation of
+indifference I began to chop idly at the ground in front of me with my
+hatchet. They looked, I noticed, at the deep cuts I made in the turf.
+
+Then the Satyr raised a doubt. I answered him. Then one of the dappled
+things objected, and an animated discussion sprang up round the fire.
+Every moment I began to feel more convinced of my present security. I
+talked now without the catching in my breath, due to the intensity of
+my excitement, that had troubled me at first. In the course of about an
+hour I had really convinced several of the Beast Folk of the truth of
+my assertions, and talked most of the others into a dubious state. I
+kept a sharp eye for my enemy the Hyena-swine, but he never appeared.
+Every now and then a suspicious movement would startle me, but my
+confidence grew rapidly. Then as the moon crept down from the zenith,
+one by one the listeners began to yawn (showing the oddest teeth in the
+light of the sinking fire), and first one and then another retired
+towards the dens in the ravine; and I, dreading the silence and
+darkness, went with them, knowing I was safer with several of them than
+with one alone.
+
+In this manner began the longer part of my sojourn upon this Island of
+Doctor Moreau. But from that night until the end came, there was but
+one thing happened to tell save a series of innumerable small
+unpleasant details and the fretting of an incessant uneasiness. So that
+I prefer to make no chronicle for that gap of time, to tell only one
+cardinal incident of the ten months I spent as an intimate of these
+half-humanised brutes. There is much that sticks in my memory that I
+could write,—things that I would cheerfully give my right hand to
+forget; but they do not help the telling of the story.
+
+In the retrospect it is strange to remember how soon I fell in with
+these monsters’ ways, and gained my confidence again. I had my quarrels
+with them of course, and could show some of their teeth-marks still;
+but they soon gained a wholesome respect for my trick of throwing
+stones and for the bite of my hatchet. And my Saint-Bernard-man’s
+loyalty was of infinite service to me. I found their simple scale of
+honour was based mainly on the capacity for inflicting trenchant
+wounds. Indeed, I may say—without vanity, I hope—that I held something
+like pre-eminence among them. One or two, whom in a rare access of high
+spirits I had scarred rather badly, bore me a grudge; but it vented
+itself chiefly behind my back, and at a safe distance from my missiles,
+in grimaces.
+
+The Hyena-swine avoided me, and I was always on the alert for him. My
+inseparable Dog-man hated and dreaded him intensely. I really believe
+that was at the root of the brute’s attachment to me. It was soon
+evident to me that the former monster had tasted blood, and gone the
+way of the Leopard-man. He formed a lair somewhere in the forest, and
+became solitary. Once I tried to induce the Beast Folk to hunt him, but
+I lacked the authority to make them co-operate for one end. Again and
+again I tried to approach his den and come upon him unaware; but always
+he was too acute for me, and saw or winded me and got away. He too made
+every forest pathway dangerous to me and my ally with his lurking
+ambuscades. The Dog-man scarcely dared to leave my side.
+
+In the first month or so the Beast Folk, compared with their latter
+condition, were human enough, and for one or two besides my canine
+friend I even conceived a friendly tolerance. The little pink
+sloth-creature displayed an odd affection for me, and took to following
+me about. The Monkey-man bored me, however; he assumed, on the strength
+of his five digits, that he was my equal, and was for ever jabbering at
+me,—jabbering the most arrant nonsense. One thing about him entertained
+me a little: he had a fantastic trick of coining new words. He had an
+idea, I believe, that to gabble about names that meant nothing was the
+proper use of speech. He called it “Big Thinks” to distinguish it from
+“Little Thinks,” the sane every-day interests of life. If ever I made a
+remark he did not understand, he would praise it very much, ask me to
+say it again, learn it by heart, and go off repeating it, with a word
+wrong here or there, to all the milder of the Beast People. He thought
+nothing of what was plain and comprehensible. I invented some very
+curious “Big Thinks” for his especial use. I think now that he was the
+silliest creature I ever met; he had developed in the most wonderful
+way the distinctive silliness of man without losing one jot of the
+natural folly of a monkey.
+
+This, I say, was in the earlier weeks of my solitude among these
+brutes. During that time they respected the usage established by the
+Law, and behaved with general decorum. Once I found another rabbit torn
+to pieces,—by the Hyena-swine, I am assured,—but that was all. It was
+about May when I first distinctly perceived a growing difference in
+their speech and carriage, a growing coarseness of articulation, a
+growing disinclination to talk. My Monkey-man’s jabber multiplied in
+volume but grew less and less comprehensible, more and more simian.
+Some of the others seemed altogether slipping their hold upon speech,
+though they still understood what I said to them at that time. (Can you
+imagine language, once clear-cut and exact, softening and guttering,
+losing shape and import, becoming mere lumps of sound again?) And they
+walked erect with an increasing difficulty. Though they evidently felt
+ashamed of themselves, every now and then I would come upon one or
+another running on toes and finger-tips, and quite unable to recover
+the vertical attitude. They held things more clumsily; drinking by
+suction, feeding by gnawing, grew commoner every day. I realised more
+keenly than ever what Moreau had told me about the “stubborn
+beast-flesh.” They were reverting, and reverting very rapidly.
+
+Some of them—the pioneers in this, I noticed with some surprise, were
+all females—began to disregard the injunction of decency, deliberately
+for the most part. Others even attempted public outrages upon the
+institution of monogamy. The tradition of the Law was clearly losing
+its force. I cannot pursue this disagreeable subject.
+
+My Dog-man imperceptibly slipped back to the dog again; day by day he
+became dumb, quadrupedal, hairy. I scarcely noticed the transition from
+the companion on my right hand to the lurching dog at my side.
+
+As the carelessness and disorganisation increased from day to day, the
+lane of dwelling places, at no time very sweet, became so loathsome
+that I left it, and going across the island made myself a hovel of
+boughs amid the black ruins of Moreau’s enclosure. Some memory of pain,
+I found, still made that place the safest from the Beast Folk.
+
+It would be impossible to detail every step of the lapsing of these
+monsters,—to tell how, day by day, the human semblance left them; how
+they gave up bandagings and wrappings, abandoned at last every stitch
+of clothing; how the hair began to spread over the exposed limbs; how
+their foreheads fell away and their faces projected; how the
+quasi-human intimacy I had permitted myself with some of them in the
+first month of my loneliness became a shuddering horror to recall.
+
+The change was slow and inevitable. For them and for me it came without
+any definite shock. I still went among them in safety, because no jolt
+in the downward glide had released the increasing charge of explosive
+animalism that ousted the human day by day. But I began to fear that
+soon now that shock must come. My Saint-Bernard-brute followed me to
+the enclosure every night, and his vigilance enabled me to sleep at
+times in something like peace. The little pink sloth-thing became shy
+and left me, to crawl back to its natural life once more among the
+tree-branches. We were in just the state of equilibrium that would
+remain in one of those “Happy Family” cages which animal-tamers
+exhibit, if the tamer were to leave it for ever.
+
+Of course these creatures did not decline into such beasts as the
+reader has seen in zoological gardens,—into ordinary bears, wolves,
+tigers, oxen, swine, and apes. There was still something strange about
+each; in each Moreau had blended this animal with that. One perhaps was
+ursine chiefly, another feline chiefly, another bovine chiefly; but
+each was tainted with other creatures,—a kind of generalised animalism
+appearing through the specific dispositions. And the dwindling shreds
+of the humanity still startled me every now and then,—a momentary
+recrudescence of speech perhaps, an unexpected dexterity of the
+fore-feet, a pitiful attempt to walk erect.
+
+I too must have undergone strange changes. My clothes hung about me as
+yellow rags, through whose rents showed the tanned skin. My hair grew
+long, and became matted together. I am told that even now my eyes have
+a strange brightness, a swift alertness of movement.
+
+At first I spent the daylight hours on the southward beach watching for
+a ship, hoping and praying for a ship. I counted on the _Ipecacuanha_
+returning as the year wore on; but she never came. Five times I saw
+sails, and thrice smoke; but nothing ever touched the island. I always
+had a bonfire ready, but no doubt the volcanic reputation of the island
+was taken to account for that.
+
+It was only about September or October that I began to think of making
+a raft. By that time my arm had healed, and both my hands were at my
+service again. At first, I found my helplessness appalling. I had never
+done any carpentry or such-like work in my life, and I spent day after
+day in experimental chopping and binding among the trees. I had no
+ropes, and could hit on nothing wherewith to make ropes; none of the
+abundant creepers seemed limber or strong enough, and with all my
+litter of scientific education I could not devise any way of making
+them so. I spent more than a fortnight grubbing among the black ruins
+of the enclosure and on the beach where the boats had been burnt,
+looking for nails and other stray pieces of metal that might prove of
+service. Now and then some Beast-creature would watch me, and go
+leaping off when I called to it. There came a season of thunder-storms
+and heavy rain, which greatly retarded my work; but at last the raft
+was completed.
+
+I was delighted with it. But with a certain lack of practical sense
+which has always been my bane, I had made it a mile or more from the
+sea; and before I had dragged it down to the beach the thing had fallen
+to pieces. Perhaps it is as well that I was saved from launching it;
+but at the time my misery at my failure was so acute that for some days
+I simply moped on the beach, and stared at the water and thought of
+death.
+
+I did not, however, mean to die, and an incident occurred that warned
+me unmistakably of the folly of letting the days pass so,—for each
+fresh day was fraught with increasing danger from the Beast People.
+
+I was lying in the shade of the enclosure wall, staring out to sea,
+when I was startled by something cold touching the skin of my heel, and
+starting round found the little pink sloth-creature blinking into my
+face. He had long since lost speech and active movement, and the lank
+hair of the little brute grew thicker every day and his stumpy claws
+more askew. He made a moaning noise when he saw he had attracted my
+attention, went a little way towards the bushes and looked back at me.
+
+At first I did not understand, but presently it occurred to me that he
+wished me to follow him; and this I did at last,—slowly, for the day
+was hot. When we reached the trees he clambered into them, for he could
+travel better among their swinging creepers than on the ground. And
+suddenly in a trampled space I came upon a ghastly group. My
+Saint-Bernard-creature lay on the ground, dead; and near his body
+crouched the Hyena-swine, gripping the quivering flesh with its
+misshapen claws, gnawing at it, and snarling with delight. As I
+approached, the monster lifted its glaring eyes to mine, its lips went
+trembling back from its red-stained teeth, and it growled menacingly.
+It was not afraid and not ashamed; the last vestige of the human taint
+had vanished. I advanced a step farther, stopped, and pulled out my
+revolver. At last I had him face to face.
+
+The brute made no sign of retreat; but its ears went back, its hair
+bristled, and its body crouched together. I aimed between the eyes and
+fired. As I did so, the Thing rose straight at me in a leap, and I was
+knocked over like a ninepin. It clutched at me with its crippled hand,
+and struck me in the face. Its spring carried it over me. I fell under
+the hind part of its body; but luckily I had hit as I meant, and it had
+died even as it leapt. I crawled out from under its unclean weight and
+stood up trembling, staring at its quivering body. That danger at least
+was over; but this, I knew was only the first of the series of relapses
+that must come.
+
+I burnt both of the bodies on a pyre of brushwood; but after that I saw
+that unless I left the island my death was only a question of time. The
+Beast People by that time had, with one or two exceptions, left the
+ravine and made themselves lairs according to their taste among the
+thickets of the island. Few prowled by day, most of them slept, and the
+island might have seemed deserted to a new-comer; but at night the air
+was hideous with their calls and howling. I had half a mind to make a
+massacre of them; to build traps, or fight them with my knife. Had I
+possessed sufficient cartridges, I should not have hesitated to begin
+the killing. There could now be scarcely a score left of the dangerous
+carnivores; the braver of these were already dead. After the death of
+this poor dog of mine, my last friend, I too adopted to some extent the
+practice of slumbering in the daytime in order to be on my guard at
+night. I rebuilt my den in the walls of the enclosure, with such a
+narrow opening that anything attempting to enter must necessarily make
+a considerable noise. The creatures had lost the art of fire too, and
+recovered their fear of it. I turned once more, almost passionately
+now, to hammering together stakes and branches to form a raft for my
+escape.
+
+I found a thousand difficulties. I am an extremely unhandy man (my
+schooling was over before the days of Slöjd); but most of the
+requirements of a raft I met at last in some clumsy, circuitous way or
+other, and this time I took care of the strength. The only
+insurmountable obstacle was that I had no vessel to contain the water I
+should need if I floated forth upon these untravelled seas. I would
+have even tried pottery, but the island contained no clay. I used to go
+moping about the island trying with all my might to solve this one last
+difficulty. Sometimes I would give way to wild outbursts of rage, and
+hack and splinter some unlucky tree in my intolerable vexation. But I
+could think of nothing.
+
+And then came a day, a wonderful day, which I spent in ecstasy. I saw a
+sail to the southwest, a small sail like that of a little schooner; and
+forthwith I lit a great pile of brushwood, and stood by it in the heat
+of it, and the heat of the midday sun, watching. All day I watched that
+sail, eating or drinking nothing, so that my head reeled; and the
+Beasts came and glared at me, and seemed to wonder, and went away. It
+was still distant when night came and swallowed it up; and all night I
+toiled to keep my blaze bright and high, and the eyes of the Beasts
+shone out of the darkness, marvelling. In the dawn the sail was nearer,
+and I saw it was the dirty lug-sail of a small boat. But it sailed
+strangely. My eyes were weary with watching, and I peered and could not
+believe them. Two men were in the boat, sitting low down,—one by the
+bows, the other at the rudder. The head was not kept to the wind; it
+yawed and fell away.
+
+As the day grew brighter, I began waving the last rag of my jacket to
+them; but they did not notice me, and sat still, facing each other. I
+went to the lowest point of the low headland, and gesticulated and
+shouted. There was no response, and the boat kept on her aimless
+course, making slowly, very slowly, for the bay. Suddenly a great white
+bird flew up out of the boat, and neither of the men stirred nor
+noticed it; it circled round, and then came sweeping overhead with its
+strong wings outspread.
+
+Then I stopped shouting, and sat down on the headland and rested my
+chin on my hands and stared. Slowly, slowly, the boat drove past
+towards the west. I would have swum out to it, but something—a cold,
+vague fear—kept me back. In the afternoon the tide stranded the boat,
+and left it a hundred yards or so to the westward of the ruins of the
+enclosure. The men in it were dead, had been dead so long that they
+fell to pieces when I tilted the boat on its side and dragged them out.
+One had a shock of red hair, like the captain of the _Ipecacuanha_, and
+a dirty white cap lay in the bottom of the boat.
+
+As I stood beside the boat, three of the Beasts came slinking out of
+the bushes and sniffing towards me. One of my spasms of disgust came
+upon me. I thrust the little boat down the beach and clambered on board
+her. Two of the brutes were Wolf-beasts, and came forward with
+quivering nostrils and glittering eyes; the third was the horrible
+nondescript of bear and bull. When I saw them approaching those
+wretched remains, heard them snarling at one another and caught the
+gleam of their teeth, a frantic horror succeeded my repulsion. I turned
+my back upon them, struck the lug and began paddling out to sea. I
+could not bring myself to look behind me.
+
+I lay, however, between the reef and the island that night, and the
+next morning went round to the stream and filled the empty keg aboard
+with water. Then, with such patience as I could command, I collected a
+quantity of fruit, and waylaid and killed two rabbits with my last
+three cartridges. While I was doing this I left the boat moored to an
+inward projection of the reef, for fear of the Beast People.
+
+### XXII. THE MAN ALONE.
+
+In the evening I started, and drove out to sea before a gentle wind
+from the southwest, slowly, steadily; and the island grew smaller and
+smaller, and the lank spire of smoke dwindled to a finer and finer line
+against the hot sunset. The ocean rose up around me, hiding that low,
+dark patch from my eyes. The daylight, the trailing glory of the sun,
+went streaming out of the sky, was drawn aside like some luminous
+curtain, and at last I looked into the blue gulf of immensity which the
+sunshine hides, and saw the floating hosts of the stars. The sea was
+silent, the sky was silent. I was alone with the night and silence.
+
+So I drifted for three days, eating and drinking sparingly, and
+meditating upon all that had happened to me,—not desiring very greatly
+then to see men again. One unclean rag was about me, my hair a black
+tangle: no doubt my discoverers thought me a madman.
+
+It is strange, but I felt no desire to return to mankind. I was only
+glad to be quit of the foulness of the Beast People. And on the third
+day I was picked up by a brig from Apia to San Francisco. Neither the
+captain nor the mate would believe my story, judging that solitude and
+danger had made me mad; and fearing their opinion might be that of
+others, I refrained from telling my adventure further, and professed to
+recall nothing that had happened to me between the loss of the _Lady
+Vain_ and the time when I was picked up again,—the space of a year.
+
+I had to act with the utmost circumspection to save myself from the
+suspicion of insanity. My memory of the Law, of the two dead sailors,
+of the ambuscades of the darkness, of the body in the canebrake,
+haunted me; and, unnatural as it seems, with my return to mankind came,
+instead of that confidence and sympathy I had expected, a strange
+enhancement of the uncertainty and dread I had experienced during my
+stay upon the island. No one would believe me; I was almost as queer to
+men as I had been to the Beast People. I may have caught something of
+the natural wildness of my companions. They say that terror is a
+disease, and anyhow I can witness that for several years now a restless
+fear has dwelt in my mind,—such a restless fear as a half-tamed lion
+cub may feel.
+
+My trouble took the strangest form. I could not persuade myself that
+the men and women I met were not also another Beast People, animals
+half wrought into the outward image of human souls, and that they would
+presently begin to revert,—to show first this bestial mark and then
+that. But I have confided my case to a strangely able man,—a man who
+had known Moreau, and seemed half to credit my story; a mental
+specialist,—and he has helped me mightily, though I do not expect that
+the terror of that island will ever altogether leave me. At most times
+it lies far in the back of my mind, a mere distant cloud, a memory, and
+a faint distrust; but there are times when the little cloud spreads
+until it obscures the whole sky. Then I look about me at my fellow-men;
+and I go in fear. I see faces, keen and bright; others dull or
+dangerous; others, unsteady, insincere,—none that have the calm
+authority of a reasonable soul. I feel as though the animal was surging
+up through them; that presently the degradation of the Islanders will
+be played over again on a larger scale. I know this is an illusion;
+that these seeming men and women about me are indeed men and women,—men
+and women for ever, perfectly reasonable creatures, full of human
+desires and tender solicitude, emancipated from instinct and the slaves
+of no fantastic Law,—beings altogether different from the Beast Folk.
+Yet I shrink from them, from their curious glances, their inquiries and
+assistance, and long to be away from them and alone. For that reason I
+live near the broad free downland, and can escape thither when this
+shadow is over my soul; and very sweet is the empty downland then,
+under the wind-swept sky.
+
+When I lived in London the horror was well-nigh insupportable. I could
+not get away from men: their voices came through windows; locked doors
+were flimsy safeguards. I would go out into the streets to fight with
+my delusion, and prowling women would mew after me; furtive, craving
+men glance jealously at me; weary, pale workers go coughing by me with
+tired eyes and eager paces, like wounded deer dripping blood; old
+people, bent and dull, pass murmuring to themselves; and, all
+unheeding, a ragged tail of gibing children. Then I would turn aside
+into some chapel,—and even there, such was my disturbance, it seemed
+that the preacher gibbered “Big Thinks,” even as the Ape-man had done;
+or into some library, and there the intent faces over the books seemed
+but patient creatures waiting for prey. Particularly nauseous were the
+blank, expressionless faces of people in trains and omnibuses; they
+seemed no more my fellow-creatures than dead bodies would be, so that I
+did not dare to travel unless I was assured of being alone. And even it
+seemed that I too was not a reasonable creature, but only an animal
+tormented with some strange disorder in its brain which sent it to
+wander alone, like a sheep stricken with gid.
+
+This is a mood, however, that comes to me now, I thank God, more
+rarely. I have withdrawn myself from the confusion of cities and
+multitudes, and spend my days surrounded by wise books,—bright windows
+in this life of ours, lit by the shining souls of men. I see few
+strangers, and have but a small household. My days I devote to reading
+and to experiments in chemistry, and I spend many of the clear nights
+in the study of astronomy. There is—though I do not know how there is
+or why there is—a sense of infinite peace and protection in the
+glittering hosts of heaven. There it must be, I think, in the vast and
+eternal laws of matter, and not in the daily cares and sins and
+troubles of men, that whatever is more than animal within us must find
+its solace and its hope. I _hope_, or I could not live.
+
+And so, in hope and solitude, my story ends.
+
+EDWARD PRENDICK.
+
+NOTE.
+
+The substance of the chapter entitled “Doctor Moreau explains,” which
+contains the essential idea of the story, appeared as a middle article
+in the _Saturday Review_ in January, 1895. This is the only portion of
+this story that has been previously published, and it has been entirely
+recast to adapt it to the narrative form.

@@ -24,7 +24,7 @@ from dataclasses import dataclass, field
 from pathlib import Path
 
 from gutenberg_kg.authors import parse_reference
-from gutenberg_kg.genres import ALL_GENRES
+from gutenberg_kg.genres import ALL_GENRES, IA_GENRES
 from gutenberg_kg.ingest import slugify
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
@@ -145,7 +145,8 @@ def _audit_book(
     else:
         meta = parse_reference(ref)
         res.ebook_id = meta.get("ebook_id")
-        if res.ebook_id is None:
+        # Internet Archive books have an IA identifier, not a Gutenberg ID.
+        if res.ebook_id is None and genre not in IA_GENRES:
             res.warnings.append("no Gutenberg ID in reference.md")
 
     if is_diary:

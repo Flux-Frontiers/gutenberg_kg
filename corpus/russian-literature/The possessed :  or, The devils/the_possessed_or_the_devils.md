@@ -1,4 +1,4 @@
-# The Possessed / Demons (Dostoevsky)
+# The possessed :  or, The devils
 
 **Fyodor Dostoyevsky**
 
