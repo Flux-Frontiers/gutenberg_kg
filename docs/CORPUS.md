@@ -2,14 +2,14 @@
 
 > **Generated**
 > - Script: `regenerate_corpus_doc.py`
-> - gutenkg: `1.4.0`
-> - Date: `2026-06-08T04:44:56Z`
+> - gutenkg: `1.6.0`
+> - Date: `2026-06-15T00:10:12Z`
 > - Host: `turing (Darwin arm64)`
-> - Elapsed: `0.01s`
+> - Elapsed: `0.03s`
 
-249 public-domain texts across 19 genres. Planned additions are tracked in [`CORPUS_WISHLIST.md`](CORPUS_WISHLIST.md).
+234 public-domain texts across 19 genres. Planned additions are tracked in [`CORPUS_WISHLIST.md`](CORPUS_WISHLIST.md).
 
-### Philosophy (48)
+### Philosophy (39)
 
 | Title | Author |
 |---|---|
@@ -27,28 +27,22 @@
 | Leviathan | Thomas Hobbes |
 | Meditations | Emperor of Rome Marcus Aurelius |
 | Nicomachean Ethics | Aristotle |
-| On Liberty | John Stuart Mill |
 | On Liberty | Mill |
 | On the Duty of Civil Disobedience | Thoreau |
-| On the Origin of Species | Charles Darwin |
 | Phaedo | Plato |
 | Plutarch's Morals | Plutarch |
 | Poetics | Aristotle |
 | Politics | Aristotle |
 | Second Treatise of Government | John Locke |
-| Symposium | Plato |
 | The Art of War | Sun Tzu |
 | The Birth of Tragedy; or, Hellenism and Pessimism | Friedrich Wilhelm Nietzsche |
 | The City of God, Volume I | of Hippo, Saint Augustine |
-| The Confessions of St. Augustine | of Hippo, Saint Augustine |
 | The Crown of Wild Olive | John Ruskin |
 | The Enchiridion | Epictetus |
 | The Federalist Papers | James Madison |
 | The Kama Sutra of Vatsyayana | Vatsyayana |
 | The Lives and Opinions of Eminent Philosophers | Diogenes Laertius |
-| The Man Who Was Thursday: A Nightmare | G. K. (Gilbert Keith) Chesterton |
 | The origin and development of the moral ideas | Edward Westermarck |
-| The Picture of Dorian Gray | Oscar Wilde |
 | The Prince | Niccolò Machiavelli |
 | The Problems of Philosophy | Russell |
 | The Republic | Plato |
@@ -57,12 +51,9 @@
 | The Twilight of the Idols; or, How to Philosophize with the Hammer. The Antichrist | Friedrich Wilhelm Nietzsche |
 | The Wealth of Nations | Adam Smith |
 | Thus Spake Zarathustra | Friedrich Wilhelm Nietzsche |
-| Thus Spake Zarathustra: A Book for All and None | Friedrich Wilhelm Nietzsche |
-| Tractatus Logico-Philosophicus | Ludwig Wittgenstein |
 | Utilitarianism | Mill |
-| Walden, and On The Duty Of Civil Disobedience | Henry David Thoreau |
 
-### English Literature (37)
+### English Literature (36)
 
 | Title | Author |
 |---|---|
@@ -76,7 +67,6 @@
 | Dracula | Bram Stoker |
 | Emma | Jane Austen |
 | Far from the Madding Crowd | Hardy |
-| Frankenstein | Mary Wollstonecraft Shelley |
 | Great Expectations | Charles Dickens |
 | Grimms Fairy Tales | Wilhelm Grimm |
 | Gullivers Travels | Jonathan Swift |
@@ -104,19 +94,17 @@
 | Vanity Fair | Thackeray |
 | Wuthering Heights | Emily Brontë |
 
-### Ancient & Classical (26)
+### Ancient & Classical (23)
 
 | Title | Author |
 |---|---|
 | A Selection from the Discourses of Epictetus with the Encheiridion | Epictetus |
 | Histories | Herodotus |
 | History of the Peloponnesian War | Thucydides |
-| Medea | Euripides |
-| Meditations | Emperor of Rome Marcus Aurelius |
+| Medea of Euripides | Euripides |
 | Metamorphoses | Ovid |
 | Minor Dialogues, Together With the Dialogue on Clemency | Lucius Annaeus Seneca |
 | Oedipus King of Thebes | Sophocles |
-| On Duties | Marcus Tullius Cicero |
 | On the Nature of Things | Lucretius |
 | Oresteia | Aeschylus |
 | Parallel Lives | Plutarch |
@@ -131,11 +119,10 @@
 | The Iliad | Homer |
 | The Meditations of the Emperor Marcus Aurelius Antoninus | Emperor of Rome Marcus Aurelius |
 | The Odyssey | Homer |
-| The Republic | Plato |
 | The Teaching of Epictetus | Epictetus |
 | Thoughts of Marcus Aurelius Antoninus | Emperor of Rome Marcus Aurelius |
 
-### American Literature (23)
+### American Literature (21)
 
 | Title | Author |
 |---|---|
@@ -143,7 +130,6 @@
 | Leaves of Grass | Walt Whitman |
 | Moby Dick | Herman Melville |
 | My Antonia | Cather |
-| Narrative of the Life of Frederick Douglass | Douglass |
 | O Pioneers! | Cather |
 | Tales of Mystery and Imagination | Poe |
 | The Age of Innocence | Wharton |
@@ -159,7 +145,6 @@
 | The Souls of Black Folk | Du Bois |
 | The Yellow Wallpaper | Charlotte Perkins Gilman |
 | Uncle Toms Cabin | Harriet Beecher Stowe |
-| Up From Slavery | Washington |
 | Walden | Henry David Thoreau |
 | White Fang | London |
 
@@ -178,7 +163,7 @@
 | The Brothers Karamazov | Fyodor Dostoyevsky |
 | The Idiot | Fyodor Dostoyevsky |
 | The Overcoat | Gogol |
-| The Possessed | Fyodor Dostoevsky |
+| The possessed :  or, The devils | Fyodor Dostoyevsky |
 | War and Peace | Leo, graf Tolstoy |
 
 ### French Literature (12)
@@ -248,7 +233,7 @@
 | The Food of the Gods | Wells |
 | The Gods of Mars | Edgar Rice Burroughs |
 | The Invisible Man | H. G. (Herbert George) Wells |
-| The Island of Doctor Moreau | H. G. (Herbert George) Wells |
+| The island of Doctor Moreau | H. G. (Herbert George) Wells |
 | The Lost World | Arthur Conan Doyle |
 | The Shadow over Innsmouth | H. P. (Howard Phillips) Lovecraft |
 | The Warlord of Mars | Burroughs |
@@ -353,4 +338,4 @@
 | Macbeth | William Shakespeare |
 | Romeo and Juliet | William Shakespeare |
 
-<!-- generated by regenerate_corpus_doc.py | gutenkg 1.4.0 | 2026-06-08T04:44:56Z | turing (Darwin arm64) | 0.01s -->
+<!-- generated by regenerate_corpus_doc.py | gutenkg 1.6.0 | 2026-06-15T00:10:12Z | turing (Darwin arm64) | 0.03s -->

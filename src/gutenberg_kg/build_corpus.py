@@ -94,6 +94,8 @@ class BuildCorpusOptions:
     similar_max_degree: int = DEFAULT_SIMILAR_K  # hard per-node degree cap
     discover_similar: bool = True
     n_workers: int = 4
+    embed_batch_size: int = 64
+    embed_device: str = "auto"  # auto|cpu|mps
     wipe: bool = True
     dry_run: bool = False
     quiet: bool = False
@@ -310,6 +312,8 @@ def run_build_corpus(genres: list[str], opts: BuildCorpusOptions) -> int:
     print(f"  books         : ~{n_books}")
     print(f"  similar_k     : {opts.similar_k if opts.discover_similar else 'disabled'}")
     print(f"  embed workers : {opts.n_workers}")
+    print(f"  embed batch   : {opts.embed_batch_size}")
+    print(f"  embed device  : {opts.embed_device}")
     print()
     print("  strategy groups:")
     for strategy, sg_genres in sorted(strategy_groups.items()):
@@ -345,7 +349,7 @@ def run_build_corpus(genres: list[str], opts: BuildCorpusOptions) -> int:
         return 0
 
     try:
-        from doc_kg.index import SentenceTransformerEmbedder
+        from doc_kg.index import make_embedder
         from doc_kg.kg import DocKG
     except ImportError as exc:
         print(f"[x] doc_kg not installed (needed for build-corpus): {exc}")
@@ -354,8 +358,26 @@ def run_build_corpus(genres: list[str], opts: BuildCorpusOptions) -> int:
     out_dir.mkdir(parents=True, exist_ok=True)
 
     t0 = time.perf_counter()
-    embedder = SentenceTransformerEmbedder()
-    print(f"  [embedder] {embedder!r}\n")
+    # Build the embedder on the requested device. The consolidated build embeds
+    # 700k+ nodes in one pass; on Apple MPS the unified-memory watermark contends
+    # with the system file cache and OOMs on "other allocations", so
+    # `--embed-device cpu` is the reliable choice for the full corpus.
+    if opts.embed_device == "mps":
+        try:
+            import torch  # pylint: disable=import-outside-toplevel
+
+            if not torch.backends.mps.is_available():
+                print("[x] --embed-device mps requested but MPS is not available")
+                return 1
+        except Exception as exc:  # noqa: BLE001
+            print(f"[x] failed to validate embed device 'mps': {exc}")
+            return 1
+    try:
+        embedder = make_embedder(device=opts.embed_device)
+    except Exception as exc:  # noqa: BLE001
+        print(f"[x] failed to build embedder on device {opts.embed_device!r}: {exc}")
+        return 1
+    print(f"  [embedder] {embedder!r}  (device={opts.embed_device})\n")
 
     try:
         # ------------------------------------------------------------------
@@ -390,8 +412,17 @@ def run_build_corpus(genres: list[str], opts: BuildCorpusOptions) -> int:
             lancedb_dir=lancedb_path,
             embedder=embedder,
         )
-        cache_path = out_dir / "embeddings.json"
-        kg_all.build_embeddings(out=cache_path, n_workers=opts.n_workers, quiet=opts.quiet)
+        # Use a .jsonl cache so doc_kg streams embeddings batch-by-batch to disk
+        # (flat memory) instead of accumulating every vector in RAM. This is the
+        # memory-safe path for the consolidated build (700k+ nodes at once);
+        # it runs single-process, so n_workers does not apply.
+        cache_path = out_dir / "embeddings.jsonl"
+        kg_all.build_embeddings(
+            out=cache_path,
+            n_workers=opts.n_workers,
+            batch_size=opts.embed_batch_size,
+            quiet=opts.quiet,
+        )
 
         # ------------------------------------------------------------------
         # Phase 3: build LanceDB index + SIMILAR_TO edges.
@@ -426,6 +457,11 @@ def run_build_corpus(genres: list[str], opts: BuildCorpusOptions) -> int:
 
     except Exception as exc:  # noqa: BLE001
         print(f"[x] build failed: {exc}")
+        msg = str(exc)
+        if "MPS backend out of memory" in msg:
+            print("[hint] Apple MPS OOM during embedding pass.")
+            print("[hint] Retry with CPU embeddings and a smaller embed batch:")
+            print("       gutenkg build-corpus --embed-device cpu --embed-batch-size 16")
         return 1
 
     elapsed = time.perf_counter() - t0

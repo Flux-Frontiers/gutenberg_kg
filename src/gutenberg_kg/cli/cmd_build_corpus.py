@@ -69,6 +69,20 @@ def _parse_strategy(ctx, param, value):  # noqa: ARG001
     help="Embedding worker processes.",
 )
 @click.option(
+    "--embed-batch-size",
+    type=int,
+    default=64,
+    show_default=True,
+    help="Embedding batch size passed to sentence-transformers encode().",
+)
+@click.option(
+    "--embed-device",
+    type=click.Choice(["auto", "cpu", "mps"]),
+    default="auto",
+    show_default=True,
+    help="Embedding device override (auto uses the backend default).",
+)
+@click.option(
     "--strategy",
     multiple=True,
     metavar="GENRE:STRATEGY",
@@ -99,7 +113,17 @@ def _parse_strategy(ctx, param, value):  # noqa: ARG001
     help="Suppress per-stage DocKG progress output.",
 )
 def build_corpus(
-    genre, output, similar_k, no_similar, workers, strategy, diaries_only, dry_run, quiet
+    genre,
+    output,
+    similar_k,
+    no_similar,
+    workers,
+    embed_batch_size,
+    embed_device,
+    strategy,
+    diaries_only,
+    dry_run,
+    quiet,
 ):
     """Build one consolidated DocKG over the whole corpus (or chosen genres).
 
@@ -117,6 +141,8 @@ def build_corpus(
     :param similar_k: Cap on SIMILAR_TO out-edges per chunk.
     :param no_similar: Disable SIMILAR_TO discovery.
     :param workers: Embedding worker processes.
+    :param embed_batch_size: Embedding encode() batch size.
+    :param embed_device: Embedding device override (auto/cpu/mps).
     :param strategy: Dict of genre→strategy overrides (parsed from CLI).
     :param diaries_only: Skip phases 1-3 and only re-bundle diary indices.
     :param dry_run: Print the plan without building.
@@ -128,6 +154,8 @@ def build_corpus(
         similar_k=similar_k,
         discover_similar=not no_similar,
         n_workers=workers,
+        embed_batch_size=embed_batch_size,
+        embed_device=embed_device,
         strategy_overrides=strategy,
         diaries_only=diaries_only,
         dry_run=dry_run,
