@@ -66,7 +66,7 @@ def _parse_strategy(ctx, param, value):  # noqa: ARG001
     type=int,
     default=4,
     show_default=True,
-    help="Embedding worker processes.",
+    help="(Deprecated; ignored) Embedding now streams single-process. Use --embed-batch-size for throughput.",
 )
 @click.option(
     "--embed-batch-size",

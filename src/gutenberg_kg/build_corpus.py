@@ -311,7 +311,7 @@ def run_build_corpus(genres: list[str], opts: BuildCorpusOptions) -> int:
     )
     print(f"  books         : ~{n_books}")
     print(f"  similar_k     : {opts.similar_k if opts.discover_similar else 'disabled'}")
-    print(f"  embed workers : {opts.n_workers}")
+    print("  embed mode    : streaming (single-process; --workers not used)")
     print(f"  embed batch   : {opts.embed_batch_size}")
     print(f"  embed device  : {opts.embed_device}")
     print()
