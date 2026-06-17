@@ -483,7 +483,12 @@ def run_build_corpus(genres: list[str], opts: BuildCorpusOptions) -> int:
         print(f"  lexical index: {n_fts:,} chunks")
 
         kg_all.close()
-        cache_path.unlink(missing_ok=True)
+        # The embedding cache (.json / .jsonl) is a build-only intermediate — it can
+        # be several GB and must never ship in the bundle. Remove BOTH variants so a
+        # stale cache from a prior or killed run can't bloat the bundle (and the image
+        # COPY). .dockerignore guards the same at pack time as a belt-and-suspenders.
+        for _cache in ("embeddings.json", "embeddings.jsonl"):
+            (out_dir / _cache).unlink(missing_ok=True)
 
         # ------------------------------------------------------------------
         # Phase 4: build (if needed) + bundle DiaryKG indices.
