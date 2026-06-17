@@ -49,12 +49,20 @@ def make_texts(n: int, length: int = 430) -> list[str]:
     return [f"{i:08d} {base}" for i in range(n)]
 
 
-def run_single(n: int, batch_size: int, device: str, model_name: str) -> None:
-    os.environ["KG_EMBED_DEVICE"] = device
-    from kg_utils.embedder import load_sentence_transformer
+def _load_model(model_name: str, device: str):
+    """Load the model directly via sentence-transformers — no kg_utils dependency,
+    so this benchmark runs identically on any version of the stack."""
+    from sentence_transformers import SentenceTransformer
 
+    try:
+        return SentenceTransformer(model_name, device=device)
+    except Exception:  # noqa: BLE001 — fall back to local cache only
+        return SentenceTransformer(model_name, device=device, local_files_only=True)
+
+
+def run_single(n: int, batch_size: int, device: str, model_name: str) -> None:
     print(f"[single] loading {model_name} on {device} ...")
-    model = load_sentence_transformer(model_name, device=device)
+    model = _load_model(model_name, device)
     texts = make_texts(n)
     print(f"[single] embedding {n:,} texts (batch={batch_size}); tex/s per 10k:")
 
@@ -86,12 +94,17 @@ def run_single(n: int, batch_size: int, device: str, model_name: str) -> None:
 
 
 def run_parallel(n: int, batch_size: int, device: str, model_name: str) -> None:
-    os.environ["KG_EMBED_DEVICE"] = device
+    import inspect
+
+    os.environ["KG_EMBED_DEVICE"] = device  # honored by new kg_utils; ignored by old
     from doc_kg.embedder_worker import CorpusEmbedder
 
     texts = make_texts(n)
-    ce = CorpusEmbedder(model_name, batch_size=batch_size, device=device)
-    print(f"[parallel] n={n:,} workers={ce.n_workers} device={ce.device}")
+    kw = {"batch_size": batch_size}
+    if "device" in inspect.signature(CorpusEmbedder.__init__).parameters:
+        kw["device"] = device  # new doc_kg (0.15.9+)
+    ce = CorpusEmbedder(model_name, **kw)
+    print(f"[parallel] n={n:,} workers={ce.n_workers} device={getattr(ce, 'device', '?')}")
     t0 = time.monotonic()
     cache = ce.embed(texts)
     tot = time.monotonic() - t0
