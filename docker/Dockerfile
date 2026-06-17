@@ -32,11 +32,14 @@ WORKDIR /app
 # diary-kg: DiaryKG temporal index + query API
 # streamlit + httpx: chat UI dependencies
 # watchdog: faster Streamlit file-watching via native OS events (vs. polling)
-ARG KGMODULE_UTILS_VERSION=0.4.3
-# doc-kg 0.15.8 carries the FTS5/BM25 lexical channel + RRF fusion that fixes
-# exact-phrase retrieval (e.g. "pillar of salt"). diary-kg 0.93.2 carries the
-# same fusion for the diary corpus. Pinned for reproducible builds.
-ARG DOC_KG_VERSION=0.15.8
+# kgmodule-utils 0.4.4 adds the device override (KG_EMBED_DEVICE) used to pin
+# embedding workers to CPU. doc-kg 0.15.9 adds CPU-parallel worker recycling
+# (flat throughput on large corpora) + the device guard; it carries the
+# FTS5/BM25 lexical channel + RRF fusion that fixes exact-phrase retrieval
+# (e.g. "pillar of salt"). diary-kg 0.93.2 carries the same fusion for diaries.
+# Pinned for reproducible builds.
+ARG KGMODULE_UTILS_VERSION=0.4.4
+ARG DOC_KG_VERSION=0.15.9
 ARG DIARY_KG_VERSION=0.93.2
 RUN pip install --no-cache-dir "kgmodule-utils[synthesis]==${KGMODULE_UTILS_VERSION}" "doc-kg==${DOC_KG_VERSION}" "diary-kg==${DIARY_KG_VERSION}" streamlit httpx watchdog openai
 

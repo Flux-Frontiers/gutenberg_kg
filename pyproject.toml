@@ -92,9 +92,9 @@ classifiers = [
 requires-python = ">=3.12,<3.14"
 dependencies = [
     "click>=8.1.0,<9",
-    "kgmodule-utils[synthesis]>=0.4.3",
+    "kgmodule-utils[synthesis]>=0.4.4",
     "rich>=13.0.0",
-    "doc-kg (>=0.15.8)",
+    "doc-kg (>=0.15.9)",
     "diary-kg (>=0.93.2)",
 ]
 
@@ -112,7 +112,7 @@ dev = [
     "vtracer>=0.6.0",
 ]
 kgdeps = [
-    "doc-kg>=0.15.8",
+    "doc-kg>=0.15.9",
     "diary-kg>=0.93.2",
     "kg-rag>=0.9.1",
 ]
@@ -134,7 +134,7 @@ mcp = [
 # Everything except dev tooling — the recommended default install.
 full = [
     # kgdeps
-    "doc-kg>=0.15.8",
+    "doc-kg>=0.15.9",
     "diary-kg>=0.93.2",
     "kg-rag>=0.9.1",
     # viz
@@ -163,7 +163,7 @@ all = [
     "scipy>=1.13.0",
     "vtracer>=0.6.0",
     # kgdeps
-    "doc-kg>=0.15.8",
+    "doc-kg>=0.15.9",
     "diary-kg>=0.93.2",
     "kg-rag>=0.9.1",
     # viz
