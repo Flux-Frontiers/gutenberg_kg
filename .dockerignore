@@ -4,6 +4,11 @@
 **/embeddings.json
 **/embeddings.jsonl
 
+# Transient SQLite sidecar files — the served DB opens fresh; never ship these
+**/*.sqlite-wal
+**/*.sqlite-shm
+**/*.sqlite-journal
+
 # Repo cruft that has no business in the build context
 .git/
 .venv/
