@@ -120,6 +120,16 @@ _DOCKG_TABLE = None
 # the same true-cosine scoring as the books (no orchestrator hop-expansion).
 _DIARY_TABLES: dict = {}
 
+# Populated at startup: a GraphStore over the consolidated DocKG SQLite, used for
+# the FTS5/BM25 lexical retrieval channel that is fused with dense cosine search
+# via reciprocal rank fusion (RRF).  None when the corpus has no lexical index,
+# in which case retrieval degrades to pure dense ranking.
+_DOCKG_STORE = None
+
+# RRF constant — matches doc_kg's _fused_seeds so the handler and library blend
+# dense + lexical ranks on the same scale.
+_RRF_K = 60
+
 # Populated at startup: "<genre>/<book>" → {title, author, genre, ...}
 _catalog: dict[str, dict] = {}
 
@@ -230,6 +240,34 @@ def _open_dockg_table() -> None:
     print(f"[startup] opened DocKG vector table: {table} ({_DOCKG_TABLE.count_rows()} rows)")
 
 
+def _open_dockg_store() -> None:
+    """Open the consolidated DocKG SQLite for FTS5/BM25 lexical search.
+
+    The lexical channel only activates when the corpus carries a ``nodes_fts``
+    index (built by ``dockg reindex-fts`` / a recent ``dockg build``).  When it
+    is absent the store stays ``None`` and retrieval falls back to pure dense
+    cosine ranking, so older corpora keep working unchanged.
+    """
+    global _DOCKG_STORE
+    if not _DOCKG_SQLITE.exists():
+        return
+    try:
+        from doc_kg.store import GraphStore
+
+        store = GraphStore(_DOCKG_SQLITE)
+        if not store.has_fts():
+            print(
+                f"[startup] WARNING: no FTS5 index in {_DOCKG_SQLITE}; lexical "
+                "channel disabled (run 'dockg reindex-fts' or rebuild the corpus)"
+            )
+            store.close()
+            return
+        _DOCKG_STORE = store
+        print("[startup] opened DocKG lexical (FTS5) index — hybrid retrieval enabled")
+    except Exception as exc:  # noqa: BLE001 — degrade to dense-only on any error
+        print(f"[startup] WARNING: could not open DocKG lexical store: {exc}")
+
+
 def _load_catalog() -> None:
     if _CATALOG_PATH.exists():
         with open(_CATALOG_PATH, encoding="utf-8") as f:
@@ -260,6 +298,9 @@ _embedder = _make_embedder()
 
 print("[startup] opening DocKG vector table ...")
 _open_dockg_table()
+
+print("[startup] opening DocKG lexical index ...")
+_open_dockg_store()
 
 print("[startup] initialising synthesis backends ...")
 _text_synth = text_synthesizer_from_env()
@@ -293,6 +334,27 @@ def _attach_content(hits: list[dict]) -> None:
 def _table_search(table, qvec, where: str, k: int) -> list[dict]:
     """Run a cosine kNN search with a pre-filter and return raw LanceDB rows."""
     return table.search(qvec).metric("cosine").where(where, prefilter=True).limit(k).to_list()
+
+
+def _rrf_fuse(dense_ids: list[str], lex_ids: list[str], k: int) -> list[str]:
+    """Blend dense and lexical rank lists with reciprocal rank fusion (RRF).
+
+    Each channel contributes ``1 / (_RRF_K + rank)`` to a node's score, so a
+    chunk ranked highly by *either* cosine or BM25 floats up, while a chunk
+    ranked by both wins decisively.  This is what lets exact-term matches the
+    dense embedder buries (e.g. "Hell" in Dante's *Inferno*) seed the answer.
+
+    :param dense_ids: Node IDs ordered best-first by cosine distance.
+    :param lex_ids: Node IDs ordered best-first by BM25 lexical score.
+    :param k: Number of fused IDs to return.
+    :returns: Node IDs ordered best-first by fused RRF score.
+    """
+    scores: dict[str, float] = {}
+    for rank, nid in enumerate(dense_ids):
+        scores[nid] = scores.get(nid, 0.0) + 1.0 / (_RRF_K + rank)
+    for rank, nid in enumerate(lex_ids):
+        scores[nid] = scores.get(nid, 0.0) + 1.0 / (_RRF_K + rank)
+    return sorted(scores, key=lambda i: -scores[i])[:k]
 
 
 def _rows_to_hits(rows: list[dict], kg_name: str, kg_kind: str, min_score: float) -> list[dict]:
@@ -361,18 +423,28 @@ def _semantic_search(
     semantic_floor: float = 0.0,
     genre_filter: str | None = None,
 ) -> list[dict]:
-    """Pure dense (cosine) search over the consolidated DocKG vector table.
+    """Hybrid (dense + lexical) search over the consolidated DocKG.
 
-    Ranks every chunk/section by its *own* semantic distance to the query — no
-    graph-hop expansion, so a query that names a book surfaces that book's
-    passages on top instead of letting them inherit a flat seed score from a few
-    graph-expanded neighbours.  Content-kind and genre filters are pushed into
-    LanceDB as a pre-filter so the top-k is computed over the eligible subset.
+    Ranks every chunk/section by its *own* relevance to the query — no graph-hop
+    expansion, so a query that names a book surfaces that book's passages on top
+    instead of letting them inherit a flat seed score from a few graph-expanded
+    neighbours.  Two channels run over the same in-scope subset and are blended
+    with reciprocal rank fusion:
+
+    * **dense** — cosine kNN over the LanceDB vector table;
+    * **lexical** — FTS5/BM25 over the SQLite ``nodes_fts`` index.
+
+    The lexical channel recovers exact-term hits that the embedder buries — e.g.
+    "circles of Hell" drifts semantically toward Dante's geometric *Paradiso*,
+    while BM25 pins the literal *Inferno* passages.  When no lexical index is
+    present (``_DOCKG_STORE is None``) the search degrades to pure dense ranking.
+    Content-kind and genre filters are pushed into *both* channels so the top-k
+    is computed over the eligible subset.
 
     :param query: Natural-language query string.
     :param k: Number of hits to return.
     :param min_score: Drop hits whose cosine similarity is below this.
-    :param semantic_floor: If the best hit is below this, discard the whole set.
+    :param semantic_floor: If the best *dense* hit is below this, discard the set.
     :param genre_filter: Restrict to a single genre subtree (e.g. ``sacred-texts``).
     :returns: Hit dictionaries ranked best-first, shaped like ``hit_to_dict``.
     """
@@ -383,13 +455,53 @@ def _semantic_search(
     if genre_filter:
         # genre_filter is validated against _ALL_GENRES before this call.
         where += f" AND file_path LIKE '{genre_filter}/%'"
-    rows = _table_search(_DOCKG_TABLE, qvec, where, k)
-    hits = _rows_to_hits(rows, "gutenberg", "KGKind.GUTENBERG", min_score)
+
+    # Dense channel — oversample so RRF has rank headroom for the lexical blend.
+    dense_rows = _table_search(_DOCKG_TABLE, qvec, where, k * 3)
+
+    # Lexical channel — BM25 over the same genre/kind-scoped subset (pushed down
+    # into the FTS5 SQL), returning chunk IDs ordered best-first.
+    lex_ids: list[str] = []
+    if _DOCKG_STORE is not None:
+        try:
+            lex_ids = _DOCKG_STORE.search_lexical(
+                query,
+                limit=k * 3,
+                file_prefixes=[f"{genre_filter}/"] if genre_filter else None,
+                node_kinds=("chunk", "section"),
+            )
+        except Exception as exc:  # noqa: BLE001 — degrade to dense-only on any error
+            print(f"[query] WARNING: lexical search failed, dense-only: {exc}")
+
+    row_by_id: dict[str, dict] = {r.get("id"): r for r in dense_rows}
+    if lex_ids:
+        # Hydrate cosine rows for lexical-only IDs so every fused hit carries an
+        # honest cosine score and stays inside the genre/kind scope.
+        missing = [i for i in lex_ids if i and i not in row_by_id]
+        if missing:
+            id_list = ", ".join("'" + i.replace("'", "''") + "'" for i in missing)
+            lex_rows = _table_search(
+                _DOCKG_TABLE, qvec, f"{where} AND id IN ({id_list})", len(missing)
+            )
+            for r in lex_rows:
+                row_by_id.setdefault(r.get("id"), r)
+        lex_ids = [i for i in lex_ids if i in row_by_id]  # drop out-of-scope IDs
+        ordered_ids = _rrf_fuse([r.get("id") for r in dense_rows], lex_ids, k)
+        ordered_rows = [row_by_id[i] for i in ordered_ids]
+    else:
+        ordered_rows = dense_rows[:k]
+
+    hits = _rows_to_hits(ordered_rows, "gutenberg", "KGKind.GUTENBERG", min_score)
     _attach_content(hits)  # clean passage text from SQLite
     for h in hits:
         h["summary"] = h.get("content", "")
-    if semantic_floor > 0.0 and hits and hits[0]["score"] < semantic_floor:
-        return []
+    # The semantic floor gauges whether the KG is relevant at all, so test it
+    # against the best *dense* cosine (the lexical channel can surface a literal
+    # match with modest cosine that should not, by itself, keep a stale set).
+    if semantic_floor > 0.0:
+        best_dense = round(1.0 - float(dense_rows[0]["_distance"]), 4) if dense_rows else 0.0
+        if best_dense < semantic_floor:
+            return []
     return hits
 
 

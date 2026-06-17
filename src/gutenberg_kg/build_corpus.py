@@ -46,6 +46,7 @@ License: Elastic 2.0
 from __future__ import annotations
 
 import json
+import os
 import time
 from collections import defaultdict
 from dataclasses import dataclass, field
@@ -311,7 +312,12 @@ def run_build_corpus(genres: list[str], opts: BuildCorpusOptions) -> int:
     )
     print(f"  books         : ~{n_books}")
     print(f"  similar_k     : {opts.similar_k if opts.discover_similar else 'disabled'}")
-    print("  embed mode    : streaming (single-process; --workers not used)")
+    _mode = {
+        "cpu": "parallel (CPU multiprocessing, cpu_count/2 workers)",
+        "mps": "streaming (single-process; GPU can't be shared across workers)",
+        "cuda": "streaming (single-process; GPU can't be shared across workers)",
+    }.get(opts.embed_device, "auto (parallel on CPU, streaming on MPS/CUDA)")
+    print(f"  embed mode    : {_mode}")
     print(f"  embed batch   : {opts.embed_batch_size}")
     print(f"  embed device  : {opts.embed_device}")
     print()
@@ -412,17 +418,47 @@ def run_build_corpus(genres: list[str], opts: BuildCorpusOptions) -> int:
             lancedb_dir=lancedb_path,
             embedder=embedder,
         )
-        # Use a .jsonl cache so doc_kg streams embeddings batch-by-batch to disk
-        # (flat memory) instead of accumulating every vector in RAM. This is the
-        # memory-safe path for the consolidated build (700k+ nodes at once);
-        # it runs single-process, so n_workers does not apply.
-        cache_path = out_dir / "embeddings.jsonl"
-        kg_all.build_embeddings(
-            out=cache_path,
-            n_workers=opts.n_workers,
-            batch_size=opts.embed_batch_size,
-            quiet=opts.quiet,
-        )
+        # Resolve the effective device to pick the embedding path: CPU can fan
+        # out across processes safely; MPS/CUDA cannot (one shared allocator).
+        effective_device = opts.embed_device
+        if effective_device == "auto":
+            try:
+                import torch  # pylint: disable=import-outside-toplevel
+
+                effective_device = "mps" if torch.backends.mps.is_available() else "cpu"
+            except Exception:  # noqa: BLE001
+                effective_device = "cpu"
+
+        if effective_device == "cpu":
+            # CPU → PARALLEL embedding. A `.json` cache selects doc_kg's
+            # multi-process CorpusEmbedder (spawns cpu_count/2 workers). We pin
+            # every worker to CPU via KG_EMBED_DEVICE: without it each worker
+            # auto-selects MPS and N workers stack N GPU allocations → the exact
+            # OOM that forced the old single-process stream. Peak host RAM is
+            # just the vector cache (~0.5–4 GB for this corpus) — trivially safe
+            # on a 64 GB+ box — and it uses every core instead of ~1.6.
+            os.environ["KG_EMBED_DEVICE"] = "cpu"
+            cache_path = out_dir / "embeddings.json"
+            print("  [parallel] CPU multiprocessing (cpu_count/2 workers)")
+            kg_all.build_embeddings(
+                out=cache_path,
+                n_workers=None,  # CorpusEmbedder default = cpu_count/2
+                batch_size=opts.embed_batch_size,
+                quiet=opts.quiet,
+            )
+        else:
+            # MPS/CUDA → single-process streaming to a `.jsonl` cache. The GPU
+            # allocator can't be shared across spawn workers without OOM, so
+            # parallelism is off here by design; streaming keeps GPU + host
+            # memory flat across the whole corpus (700k+ nodes).
+            cache_path = out_dir / "embeddings.jsonl"
+            print(f"  [stream] single-process on {effective_device}")
+            kg_all.build_embeddings(
+                out=cache_path,
+                n_workers=None,
+                batch_size=opts.embed_batch_size,
+                quiet=opts.quiet,
+            )
 
         # ------------------------------------------------------------------
         # Phase 3: build LanceDB index + SIMILAR_TO edges.
@@ -436,6 +472,16 @@ def run_build_corpus(genres: list[str], opts: BuildCorpusOptions) -> int:
             similar_max_degree=opts.similar_max_degree,
             quiet=opts.quiet,
         )
+
+        # Rebuild the FTS5 lexical index over the *full* consolidated graph so
+        # the handler's hybrid (dense + BM25) retrieval activates. build_graph()
+        # rebuilds it per strategy group, but we do it once more here as an
+        # explicit guard: it is the single artifact the lexical channel depends
+        # on, and an absent nodes_fts silently degrades retrieval to dense-only.
+        print("[3/4] building FTS5 lexical index (nodes_fts) over the full graph …")
+        n_fts = kg_all.store.rebuild_fts(quiet=opts.quiet)
+        print(f"  lexical index: {n_fts:,} chunks")
+
         kg_all.close()
         cache_path.unlink(missing_ok=True)
 
