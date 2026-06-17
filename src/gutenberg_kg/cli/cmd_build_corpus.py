@@ -56,10 +56,13 @@ def _parse_strategy(ctx, param, value):  # noqa: ARG001
     help="Max SIMILAR_TO out-edges per chunk (0 = no cap).",
 )
 @click.option(
-    "--no-similar",
-    is_flag=True,
+    "--similar/--no-similar",
+    "discover_similar",
     default=False,
-    help="Disable SIMILAR_TO edge discovery entirely.",
+    show_default=True,
+    help="Discover cross-book SIMILAR_TO edges. Default off: the served handler is "
+    "semantic-first and never traverses them, so they only bloat the shipped "
+    "graph.sqlite. Enable for viz3d arcs or DocKG.query() hop-expansion use.",
 )
 @click.option(
     "--workers",
@@ -124,7 +127,7 @@ def build_corpus(
     genre,
     output,
     similar_k,
-    no_similar,
+    discover_similar,
     workers,
     embed_batch_size,
     embed_device,
@@ -147,8 +150,8 @@ def build_corpus(
 
     :param genre: Tuple of genres to include (empty = all genres).
     :param output: Override the bundle directory name.
-    :param similar_k: Cap on SIMILAR_TO out-edges per chunk.
-    :param no_similar: Disable SIMILAR_TO discovery.
+    :param similar_k: Cap on SIMILAR_TO out-edges per chunk (when discovery is enabled).
+    :param discover_similar: Discover SIMILAR_TO edges (default off for the served bundle).
     :param workers: Embedding worker processes.
     :param embed_batch_size: Embedding encode() batch size.
     :param embed_device: Embedding device override (auto/cpu/mps).
@@ -162,7 +165,7 @@ def build_corpus(
     opts = bc.BuildCorpusOptions(
         output=output,
         similar_k=similar_k,
-        discover_similar=not no_similar,
+        discover_similar=discover_similar,
         n_workers=workers,
         embed_batch_size=embed_batch_size,
         embed_device=embed_device,

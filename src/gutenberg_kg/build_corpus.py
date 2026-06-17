@@ -66,10 +66,13 @@ BUNDLES_ROOT = REPO_ROOT / "bundles"
 # into the consolidated index (author index pages, the DiaryKG-built diaries).
 NON_GENRE_DIRS = {"authors", "diaries"}
 
-# Default cap on SIMILAR_TO out-edges per chunk. Cross-book, cross-author
-# similarity is high-signal here (the "Tolstoy vs Dostoevsky" edges), unlike a
-# single-author diary — but capping keeps the edge table from exploding.
-# See the SIMILAR_TO decision (cap 8, default-on).
+# Default cap on SIMILAR_TO out-edges per chunk, applied only when discovery is
+# explicitly enabled (--similar). Cross-book, cross-author similarity is
+# high-signal (the "Tolstoy vs Dostoevsky" edges), but the served handler is
+# semantic-first and never traverses these edges, so consolidated builds default
+# to NOT discovering them — recomputing ~800k edges only bloats the shipped
+# graph.sqlite. The cap-8 SIMILAR_TO validation applies to DocKG.query()'s
+# hop-expansion path (per-book CLI queries, viz3d arcs), not this bundle.
 DEFAULT_SIMILAR_K = 8
 
 # Per-genre default chunk strategy.  Genres not listed here get "semantic".
@@ -93,7 +96,7 @@ class BuildCorpusOptions:
     output: str | None = None  # output bundle name; default derived from genres
     similar_k: int = DEFAULT_SIMILAR_K
     similar_max_degree: int = DEFAULT_SIMILAR_K  # hard per-node degree cap
-    discover_similar: bool = True
+    discover_similar: bool = False  # served handler never traverses SIMILAR_TO; opt-in only
     n_workers: int = 4
     embed_batch_size: int = 64
     embed_device: str = "auto"  # auto|cpu|mps
