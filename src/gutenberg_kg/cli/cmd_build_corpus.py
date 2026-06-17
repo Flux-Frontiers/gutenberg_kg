@@ -101,6 +101,14 @@ def _parse_strategy(ctx, param, value):  # noqa: ARG001
     help="Skip phases 1-3; re-bundle diary indices into an existing bundle only.",
 )
 @click.option(
+    "--update",
+    is_flag=True,
+    default=False,
+    help="Incremental rebuild: re-parse the corpus, embed ONLY new/changed nodes, upsert "
+    "into the existing vector index, and prune removed ones (skips SIMILAR_TO). Reuses "
+    "existing embeddings, so a small corpus change costs minutes instead of a full rebuild.",
+)
+@click.option(
     "--dry-run",
     is_flag=True,
     default=False,
@@ -122,6 +130,7 @@ def build_corpus(
     embed_device,
     strategy,
     diaries_only,
+    update,
     dry_run,
     quiet,
 ):
@@ -145,6 +154,7 @@ def build_corpus(
     :param embed_device: Embedding device override (auto/cpu/mps).
     :param strategy: Dict of genre→strategy overrides (parsed from CLI).
     :param diaries_only: Skip phases 1-3 and only re-bundle diary indices.
+    :param update: Incremental rebuild — embed only new/changed nodes, upsert, prune.
     :param dry_run: Print the plan without building.
     :param quiet: Suppress per-stage progress output.
     """
@@ -158,6 +168,7 @@ def build_corpus(
         embed_device=embed_device,
         strategy_overrides=strategy,
         diaries_only=diaries_only,
+        update=update,
         dry_run=dry_run,
         quiet=quiet,
     )

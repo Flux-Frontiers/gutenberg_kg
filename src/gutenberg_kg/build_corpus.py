@@ -98,6 +98,7 @@ class BuildCorpusOptions:
     embed_batch_size: int = 64
     embed_device: str = "auto"  # auto|cpu|mps
     wipe: bool = True
+    update: bool = False  # incremental: embed only new/changed nodes, upsert, prune
     dry_run: bool = False
     quiet: bool = False
     diaries_only: bool = False  # skip phases 1-3; re-bundle diary indices only
@@ -429,21 +430,23 @@ def run_build_corpus(genres: list[str], opts: BuildCorpusOptions) -> int:
             except Exception:  # noqa: BLE001
                 effective_device = "cpu"
 
-        if effective_device == "cpu":
-            # CPU → PARALLEL embedding. A `.json` cache selects doc_kg's
-            # multi-process CorpusEmbedder (spawns cpu_count/2 workers). We pin
-            # every worker to CPU via KG_EMBED_DEVICE: without it each worker
-            # auto-selects MPS and N workers stack N GPU allocations → the exact
-            # OOM that forced the old single-process stream. Peak host RAM is
-            # just the vector cache (~0.5–4 GB for this corpus) — trivially safe
-            # on a 64 GB+ box — and it uses every core instead of ~1.6.
-            os.environ["KG_EMBED_DEVICE"] = "cpu"
+        if effective_device == "cpu" or opts.update:
+            # CPU (or any --update) → PARALLEL embedding via doc_kg's multi-process
+            # CorpusEmbedder (`.json` cache). This is the only path that supports
+            # incremental `only_missing` embedding. On CPU we pin every worker via
+            # KG_EMBED_DEVICE: without it each auto-selects MPS and N workers stack
+            # N GPU allocations → OOM. Peak host RAM is just the vector cache, and
+            # it uses every core instead of ~1.6.
+            if effective_device == "cpu":
+                os.environ["KG_EMBED_DEVICE"] = "cpu"
             cache_path = out_dir / "embeddings.json"
-            print("  [parallel] CPU multiprocessing (cpu_count/2 workers)")
+            mode = "incremental — embed only new/changed nodes" if opts.update else "full"
+            print(f"  [parallel] CPU multiprocessing ({mode})")
             kg_all.build_embeddings(
                 out=cache_path,
                 n_workers=None,  # CorpusEmbedder default = cpu_count/2
                 batch_size=opts.embed_batch_size,
+                only_missing=opts.update,
                 quiet=opts.quiet,
             )
         else:
@@ -463,11 +466,18 @@ def run_build_corpus(genres: list[str], opts: BuildCorpusOptions) -> int:
         # ------------------------------------------------------------------
         # Phase 3: build LanceDB index + SIMILAR_TO edges.
         # ------------------------------------------------------------------
-        print("[3/4] building LanceDB index + SIMILAR_TO edges …")
+        # On --update we UPSERT into the existing vector index (wipe=False) and skip
+        # SIMILAR_TO — the served handler is semantic-first and never traverses those
+        # edges, so recomputing 800k+ of them every update is pure waste.
+        index_wipe = opts.wipe and not opts.update
+        discover_similar = opts.discover_similar and not opts.update
+        print(
+            f"[3/4] building LanceDB index{' + SIMILAR_TO edges' if discover_similar else ' (upsert)' if opts.update else ''} …"
+        )
         stats = kg_all.build_index_from_cache(
             cache_path,
-            wipe=opts.wipe,
-            discover_similar=opts.discover_similar,
+            wipe=index_wipe,
+            discover_similar=discover_similar,
             similar_k=opts.similar_k,
             similar_max_degree=opts.similar_max_degree,
             quiet=opts.quiet,
@@ -481,6 +491,12 @@ def run_build_corpus(genres: list[str], opts: BuildCorpusOptions) -> int:
         print("[3/4] building FTS5 lexical index (nodes_fts) over the full graph …")
         n_fts = kg_all.store.rebuild_fts(quiet=opts.quiet)
         print(f"  lexical index: {n_fts:,} chunks")
+
+        # Incremental adds only; drop index vectors for nodes that left the graph
+        # (removed/renamed books) so they can't return stale hits.
+        if opts.update:
+            print("[3/4] pruning orphan vectors (removed/renamed nodes) …")
+            kg_all.prune_index(quiet=opts.quiet)
 
         kg_all.close()
         # The embedding cache (.json / .jsonl) is a build-only intermediate — it can
