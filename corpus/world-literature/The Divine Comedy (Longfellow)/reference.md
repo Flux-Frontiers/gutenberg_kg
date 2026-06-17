@@ -1,4 +1,4 @@
-# Reference: The Divine Comedy
+# Reference: The Divine Comedy (Longfellow's Translation)
 
 ## Source
 

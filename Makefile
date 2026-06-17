@@ -19,16 +19,20 @@ COMPOSE      = docker compose -f docker/docker-compose.yml
 WORKER       = http://localhost:8000
 IMAGE_SERVER = http://localhost:8090
 
+# Use the project's own CLI from the repo venv, not a (possibly stale) global
+# `gutenkg` on PATH. Override with e.g. `make GUTENKG=gutenkg build-corpus`.
+GUTENKG     ?= poetry run gutenkg
+
 .PHONY: chunk-diaries build-diaries build-corpus build run image-server chat up stop down query logs clean docs
 
 chunk-diaries:
-	gutenkg chunk-diaries
+	$(GUTENKG) chunk-diaries
 
 build-diaries: chunk-diaries
-	gutenkg build-diaries --force
+	$(GUTENKG) build-diaries --force
 
 build-corpus: build-diaries
-	gutenkg build-corpus
+	$(GUTENKG) build-corpus
 
 build:
 	docker build -f docker/Dockerfile -t $(IMAGE):latest .

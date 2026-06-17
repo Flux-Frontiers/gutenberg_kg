@@ -7,7 +7,7 @@
   <a href="https://www.elastic.co/licensing/elastic-license"><img src="https://img.shields.io/badge/code-Elastic--2.0-lightgrey.svg" alt="Code License"/></a>
   <a href="https://www.gutenberg.org/"><img src="https://img.shields.io/badge/texts-Public%20Domain-green.svg" alt="Texts License"/></a>
   <img src="https://img.shields.io/badge/version-1.6.0-blue.svg" alt="Version"/>
-  <img src="https://img.shields.io/badge/corpus-249%20books-orange.svg" alt="Corpus"/>
+  <img src="https://img.shields.io/badge/corpus-234%20books-orange.svg" alt="Corpus"/>
   <img src="https://img.shields.io/badge/nodes-1.3M-green.svg" alt="Nodes"/>
   <img src="https://img.shields.io/badge/edges-5.2M-green.svg" alt="Edges"/>
   <a href="https://github.com/Flux-Frontiers/doc_kg"><img src="https://img.shields.io/badge/DocKG-ready-blue.svg" alt="DocKG"/></a>
@@ -22,7 +22,7 @@
 
 It transforms the world's great public-domain literature, philosophy, and sacred texts into **queryable knowledge graphs** — enabling semantic search, thematic analysis, and cross-work discovery at a scale and depth that keyword search cannot touch. Ask *what themes connect Dostoevsky and Dante*, trace the evolution of the social contract from Rousseau to Thoreau, or find every passage in the corpus that grapples with revenge — and get semantically grounded answers drawn from the source texts themselves.
 
-The corpus currently spans **249 public-domain texts across 19 genres** — 1,314,930 nodes, 5,225,150 edges — built and fully indexed on an Apple M5 Max in under 30 minutes.
+The corpus currently spans **234 public-domain texts across 19 genres** — 1,250,883 nodes, 4,998,235 edges — built and fully indexed on an Apple M5 Max in under 30 minutes.
 
 *Author: Eric G. Suchanek, PhD · Flux-Frontiers, Liberty TWP, OH*
 
@@ -30,7 +30,7 @@ The corpus currently spans **249 public-domain texts across 19 genres** — 1,31
 
 ## The Knowledge Press — Local App
 
-The primary interface is **The Knowledge Press**: a self-contained Docker app that bundles the full knowledge graph, a query worker, and a Streamlit chat UI. Once running, open `http://localhost:8501` and query 249 books with plain English.
+The primary interface is **The Knowledge Press**: a self-contained Docker app that bundles the full knowledge graph, a query worker, and a Streamlit chat UI. Once running, open `http://localhost:8501` and query 234 books with plain English.
 
 ### One-time corpus build (~24 min)
 
@@ -188,7 +188,7 @@ kgrag synthesize "How do the Stoics and Russian novelists differ on suffering an
   --model qwen3:4b
 ```
 
-> **Example synthesis output:** See [`STOICS_VS_RUSSIANS.md`](https://github.com/Flux-Frontiers/KGRAG/blob/main/docs/STOICS_VS_RUSSIANS.md) — a live run of the question above against Marcus Aurelius, Dostoevsky, Tolstoy, and Nietzsche, with every passage retrieved deterministically from the graph and quoted verbatim. The retrieval layer cannot hallucinate; the LLM synthesizes from verified facts only. *(Run against an earlier 78-book corpus; the current 249-book corpus adds substantial additional Stoic, philosophical, and literary coverage.)*
+> **Example synthesis output:** See [`STOICS_VS_RUSSIANS.md`](https://github.com/Flux-Frontiers/KGRAG/blob/main/docs/STOICS_VS_RUSSIANS.md) — a live run of the question above against Marcus Aurelius, Dostoevsky, Tolstoy, and Nietzsche, with every passage retrieved deterministically from the graph and quoted verbatim. The retrieval layer cannot hallucinate; the LLM synthesizes from verified facts only. *(Run against an earlier 78-book corpus; the current 234-book corpus adds substantial additional Stoic, philosophical, and literary coverage.)*
 
 ---
 
@@ -246,7 +246,7 @@ Digital humanities centers, computational linguistics labs, library science prog
 
 ### Why now
 
-249 works, 5.2 million edges, production-ready pipeline. The architecture is federated by design — new corpora slot in without touching the existing graph. The ingestion tooling is fast and fully automated. The query layer is proven. This is the inflection point before the graph becomes too large for any single team to steer.
+234 works, 5.0 million edges, production-ready pipeline. The architecture is federated by design — new corpora slot in without touching the existing graph. The ingestion tooling is fast and fully automated. The query layer is proven. This is the inflection point before the graph becomes too large for any single team to steer.
 
 **To discuss a partnership:** [suchanek@flux-frontiers.com](mailto:suchanek@flux-frontiers.com)
 
@@ -276,7 +276,7 @@ If you use GutenbergKG in your research, please cite it. GitHub's **Cite this re
   doi          = {10.5281/zenodo.20045390},
   url          = {https://github.com/Flux-Frontiers/gutenberg_kg},
   note         = {Universal ingestion engine for digitized text corpora;
-                  249 public-domain texts across 19 genres as queryable
+                  234 public-domain texts across 19 genres as queryable
                   knowledge graphs via DocKG and KGRAG}
 }
 ```

@@ -1,6 +1,6 @@
 # GutenbergKG — Ingestion Pipeline
 
-**The Knowledge Press:** 245 books · 18 genres · one query-ready index
+**The Knowledge Press:** 230 prose books · 18 genres (+ 4 diaries = 234 total) · one query-ready index
 
 ---
 
@@ -12,7 +12,7 @@
         ▼
   ┌─────────────────────────────────────────────────────────────┐
   │                   CORPUS  (corpus/)                         │
-  │   18 genres  ·  245 books  ·  Markdown + reference.md      │
+  │   18 genres · 230 books (+4 diaries) · Markdown + reference.md │
   └─────────────────────────────────────────────────────────────┘
         │
         ├─── 17 prose genres ────────────────────────────────────▶  Semantic Chunker
@@ -38,7 +38,7 @@ All genres in a strategy group are processed together in one DocKG pass.
 
 | Strategy | Genres | Chunker behaviour |
 |---|---|---|
-| `semantic` | 17 genres (238 books) | Sentence-transformer semantic boundary detection |
+| `semantic` | 17 genres (223 books) | Sentence-transformer semantic boundary detection |
 | `verse` | `sacred-texts` (7 books) | Chapter:verse window; auto-detects `^\d+:\d+\s` format |
 | `diarykg` | `diaries` (4 collections) | Separate temporal pipeline — YAML timestamps, diary-aware chunking |
 
@@ -66,7 +66,7 @@ All genres in a strategy group are processed together in one DocKG pass.
 ```
 
 **Output:** `bundles/gutenberg-all/.dockg/graph.sqlite`
-696,166 nodes · all genres in one table
+683,531 nodes · all genres in one table
 
 ---
 
@@ -84,7 +84,7 @@ All genres in a strategy group are processed together in one DocKG pass.
   │    batch : 64 chunks/batch                               │
   │         │                                                │
   │         ▼                                                │
-  │  embeddings.json  (temp cache, deleted after indexing)   │
+  │  embeddings.jsonl (temp cache, deleted after indexing)   │
   └──────────────────────────────────────────────────────────┘
 ```
 
@@ -97,7 +97,7 @@ All genres in a strategy group are processed together in one DocKG pass.
 ```
   DocKG.build_index_from_cache()
   ┌──────────────────────────────────────────────────────────┐
-  │  embeddings.json                                         │
+  │  embeddings.jsonl                                        │
   │         │                                                │
   │         ├──▶  LanceDB (ANN vector index)                 │
   │         │      384-dim · ~1.6 GB                         │
@@ -107,11 +107,11 @@ All genres in a strategy group are processed together in one DocKG pass.
   │                threshold : cosine ≥ 0.85                 │
   │                cap       : k = 8 per chunk               │
   │                scope     : cross-book, cross-author       │
-  │                2,582,715 edges  (42% of all edges)        │
+  │                855,307 edges  (66% of all edges)          │
   └──────────────────────────────────────────────────────────┘
 ```
 
-**Total edges:** 6,175,439  ·  **Index size:** 6,508.9 MB (sqlite 4.8 GB + lancedb 1.6 GB)
+**Total edges:** 1,295,307  ·  **Index size:** ~6.3 GB (sqlite 4.8 GB + lancedb 1.6 GB)
 
 ---
 
@@ -188,9 +188,9 @@ the `file_path` prefix — no extra node fields required.
 ```
   bundles/gutenberg-all/
   ├── .dockg/
-  │   ├── graph.sqlite          4.8 GB   (696,166 nodes · 6,175,439 edges)
-  │   ├── lancedb/              1.6 GB   (696,166 × 384-dim vectors)
-  │   └── catalog.json          84 KB    (241 books · author/title/ID)
+  │   ├── graph.sqlite          4.8 GB   (683,531 nodes · 1,295,307 edges)
+  │   ├── lancedb/              1.6 GB   (683,531 × 384-dim vectors)
+  │   └── catalog.json          84 KB    (234 books · author/title/ID)
   │
   └── diaries/
       ├── The Diary of Samuel Pepys — Complete/.diarykg/
@@ -198,7 +198,7 @@ the `file_path` prefix — no extra node fields required.
       ├── The Diary of John Evelyn — Volume 2/.diarykg/
       └── The Journal of a Tour to the Hebrides with Samuel Johnson/.diarykg/
 
-  Total: 6,508.9 MB  ·  Build time: 23m 18s  ·  4 embed workers
+  Total: ~6.3 GB  ·  Build time: 34m  ·  streaming embed (single-process)
 ```
 
 ---

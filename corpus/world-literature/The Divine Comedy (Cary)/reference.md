@@ -1,4 +1,4 @@
-# Reference: The Divine Comedy: Paradiso (Dante)
+# Reference: The Divine Comedy (Cary's Translation)
 
 ## Source
 

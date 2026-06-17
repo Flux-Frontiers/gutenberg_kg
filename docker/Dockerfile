@@ -32,17 +32,21 @@ WORKDIR /app
 # diary-kg: DiaryKG temporal index + query API
 # streamlit + httpx: chat UI dependencies
 # watchdog: faster Streamlit file-watching via native OS events (vs. polling)
-ARG KGMODULE_UTILS_VERSION=0.4.3
-# doc-kg 0.15.8 carries the FTS5/BM25 lexical channel + RRF fusion that fixes
-# exact-phrase retrieval (e.g. "pillar of salt"). diary-kg 0.93.2 carries the
-# same fusion for the diary corpus. Pinned for reproducible builds.
-ARG DOC_KG_VERSION=0.15.8
+# kgmodule-utils 0.4.4 adds the device override (KG_EMBED_DEVICE) used to pin
+# embedding workers to CPU. doc-kg 0.15.9 adds CPU-parallel worker recycling
+# (flat throughput on large corpora) + the device guard; it carries the
+# FTS5/BM25 lexical channel + RRF fusion that fixes exact-phrase retrieval
+# (e.g. "pillar of salt"). diary-kg 0.93.2 carries the same fusion for diaries.
+# Pinned for reproducible builds.
+ARG KGMODULE_UTILS_VERSION=0.4.4
+ARG DOC_KG_VERSION=0.15.9
 ARG DIARY_KG_VERSION=0.93.2
 RUN pip install --no-cache-dir "kgmodule-utils[synthesis]==${KGMODULE_UTILS_VERSION}" "doc-kg==${DOC_KG_VERSION}" "diary-kg==${DIARY_KG_VERSION}" streamlit httpx watchdog openai
 
-# Inject image_gen.py into the already-installed gutenberg_kg package.
-COPY src/gutenberg_kg/image_gen.py /tmp/image_gen.py
-RUN python -c "import os, shutil, gutenberg_kg; shutil.copy('/tmp/image_gen.py', os.path.join(os.path.dirname(gutenberg_kg.__file__), 'image_gen.py'))"
+# Install the local repo package so runtime imports always match this checkout.
+COPY pyproject.toml README.md /app/
+COPY src/gutenberg_kg /app/src/gutenberg_kg
+RUN pip install --no-cache-dir .
 
 # Pre-download the embedding model during build so the container never reaches
 # HuggingFace at runtime (network may be unavailable or restricted on RunPod).

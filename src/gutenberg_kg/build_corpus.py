@@ -46,6 +46,7 @@ License: Elastic 2.0
 from __future__ import annotations
 
 import json
+import os
 import time
 from collections import defaultdict
 from dataclasses import dataclass, field
@@ -94,6 +95,8 @@ class BuildCorpusOptions:
     similar_max_degree: int = DEFAULT_SIMILAR_K  # hard per-node degree cap
     discover_similar: bool = True
     n_workers: int = 4
+    embed_batch_size: int = 64
+    embed_device: str = "auto"  # auto|cpu|mps
     wipe: bool = True
     dry_run: bool = False
     quiet: bool = False
@@ -309,7 +312,14 @@ def run_build_corpus(genres: list[str], opts: BuildCorpusOptions) -> int:
     )
     print(f"  books         : ~{n_books}")
     print(f"  similar_k     : {opts.similar_k if opts.discover_similar else 'disabled'}")
-    print(f"  embed workers : {opts.n_workers}")
+    _mode = {
+        "cpu": "parallel (CPU multiprocessing, cpu_count/2 workers)",
+        "mps": "streaming (single-process; GPU can't be shared across workers)",
+        "cuda": "streaming (single-process; GPU can't be shared across workers)",
+    }.get(opts.embed_device, "auto (parallel on CPU, streaming on MPS/CUDA)")
+    print(f"  embed mode    : {_mode}")
+    print(f"  embed batch   : {opts.embed_batch_size}")
+    print(f"  embed device  : {opts.embed_device}")
     print()
     print("  strategy groups:")
     for strategy, sg_genres in sorted(strategy_groups.items()):
@@ -345,7 +355,7 @@ def run_build_corpus(genres: list[str], opts: BuildCorpusOptions) -> int:
         return 0
 
     try:
-        from doc_kg.index import SentenceTransformerEmbedder
+        from doc_kg.index import make_embedder
         from doc_kg.kg import DocKG
     except ImportError as exc:
         print(f"[x] doc_kg not installed (needed for build-corpus): {exc}")
@@ -354,8 +364,26 @@ def run_build_corpus(genres: list[str], opts: BuildCorpusOptions) -> int:
     out_dir.mkdir(parents=True, exist_ok=True)
 
     t0 = time.perf_counter()
-    embedder = SentenceTransformerEmbedder()
-    print(f"  [embedder] {embedder!r}\n")
+    # Build the embedder on the requested device. The consolidated build embeds
+    # 700k+ nodes in one pass; on Apple MPS the unified-memory watermark contends
+    # with the system file cache and OOMs on "other allocations", so
+    # `--embed-device cpu` is the reliable choice for the full corpus.
+    if opts.embed_device == "mps":
+        try:
+            import torch  # pylint: disable=import-outside-toplevel
+
+            if not torch.backends.mps.is_available():
+                print("[x] --embed-device mps requested but MPS is not available")
+                return 1
+        except Exception as exc:  # noqa: BLE001
+            print(f"[x] failed to validate embed device 'mps': {exc}")
+            return 1
+    try:
+        embedder = make_embedder(device=opts.embed_device)
+    except Exception as exc:  # noqa: BLE001
+        print(f"[x] failed to build embedder on device {opts.embed_device!r}: {exc}")
+        return 1
+    print(f"  [embedder] {embedder!r}  (device={opts.embed_device})\n")
 
     try:
         # ------------------------------------------------------------------
@@ -390,8 +418,47 @@ def run_build_corpus(genres: list[str], opts: BuildCorpusOptions) -> int:
             lancedb_dir=lancedb_path,
             embedder=embedder,
         )
-        cache_path = out_dir / "embeddings.json"
-        kg_all.build_embeddings(out=cache_path, n_workers=opts.n_workers, quiet=opts.quiet)
+        # Resolve the effective device to pick the embedding path: CPU can fan
+        # out across processes safely; MPS/CUDA cannot (one shared allocator).
+        effective_device = opts.embed_device
+        if effective_device == "auto":
+            try:
+                import torch  # pylint: disable=import-outside-toplevel
+
+                effective_device = "mps" if torch.backends.mps.is_available() else "cpu"
+            except Exception:  # noqa: BLE001
+                effective_device = "cpu"
+
+        if effective_device == "cpu":
+            # CPU → PARALLEL embedding. A `.json` cache selects doc_kg's
+            # multi-process CorpusEmbedder (spawns cpu_count/2 workers). We pin
+            # every worker to CPU via KG_EMBED_DEVICE: without it each worker
+            # auto-selects MPS and N workers stack N GPU allocations → the exact
+            # OOM that forced the old single-process stream. Peak host RAM is
+            # just the vector cache (~0.5–4 GB for this corpus) — trivially safe
+            # on a 64 GB+ box — and it uses every core instead of ~1.6.
+            os.environ["KG_EMBED_DEVICE"] = "cpu"
+            cache_path = out_dir / "embeddings.json"
+            print("  [parallel] CPU multiprocessing (cpu_count/2 workers)")
+            kg_all.build_embeddings(
+                out=cache_path,
+                n_workers=None,  # CorpusEmbedder default = cpu_count/2
+                batch_size=opts.embed_batch_size,
+                quiet=opts.quiet,
+            )
+        else:
+            # MPS/CUDA → single-process streaming to a `.jsonl` cache. The GPU
+            # allocator can't be shared across spawn workers without OOM, so
+            # parallelism is off here by design; streaming keeps GPU + host
+            # memory flat across the whole corpus (700k+ nodes).
+            cache_path = out_dir / "embeddings.jsonl"
+            print(f"  [stream] single-process on {effective_device}")
+            kg_all.build_embeddings(
+                out=cache_path,
+                n_workers=None,
+                batch_size=opts.embed_batch_size,
+                quiet=opts.quiet,
+            )
 
         # ------------------------------------------------------------------
         # Phase 3: build LanceDB index + SIMILAR_TO edges.
@@ -405,6 +472,16 @@ def run_build_corpus(genres: list[str], opts: BuildCorpusOptions) -> int:
             similar_max_degree=opts.similar_max_degree,
             quiet=opts.quiet,
         )
+
+        # Rebuild the FTS5 lexical index over the *full* consolidated graph so
+        # the handler's hybrid (dense + BM25) retrieval activates. build_graph()
+        # rebuilds it per strategy group, but we do it once more here as an
+        # explicit guard: it is the single artifact the lexical channel depends
+        # on, and an absent nodes_fts silently degrades retrieval to dense-only.
+        print("[3/4] building FTS5 lexical index (nodes_fts) over the full graph …")
+        n_fts = kg_all.store.rebuild_fts(quiet=opts.quiet)
+        print(f"  lexical index: {n_fts:,} chunks")
+
         kg_all.close()
         cache_path.unlink(missing_ok=True)
 
@@ -426,6 +503,11 @@ def run_build_corpus(genres: list[str], opts: BuildCorpusOptions) -> int:
 
     except Exception as exc:  # noqa: BLE001
         print(f"[x] build failed: {exc}")
+        msg = str(exc)
+        if "MPS backend out of memory" in msg:
+            print("[hint] Apple MPS OOM during embedding pass.")
+            print("[hint] Retry with CPU embeddings and a smaller embed batch:")
+            print("       gutenkg build-corpus --embed-device cpu --embed-batch-size 16")
         return 1
 
     elapsed = time.perf_counter() - t0

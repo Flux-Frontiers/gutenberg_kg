@@ -1,4 +1,4 @@
-# The Divine Comedy: Paradiso (Dante)
+# The Divine Comedy (Cary's Translation)
 
 **Dante Alighieri**
 

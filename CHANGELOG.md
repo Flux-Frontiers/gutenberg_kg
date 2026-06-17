@@ -17,6 +17,13 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - **`docs/RUNPOD.md`** — comprehensive RunPod serverless deployment guide covering
   the two-image architecture, network volume setup, `push_indices.sh` workflow,
   endpoint configuration, request reference, and corpus update procedure.
+- **Hybrid (dense + lexical) retrieval in `docker/handler.py`** — a new FTS5/BM25
+  channel (`_open_dockg_store`, `_rrf_fuse`) is fused with cosine kNN via
+  reciprocal rank fusion (RRF, `k=60`), recovering exact-term matches the embedder
+  buries (e.g. "circles of Hell" → Dante's *Inferno*). Both channels honour the
+  same genre/content-kind scope, and the semantic floor is now gauged against the
+  best *dense* hit only. Degrades gracefully to pure dense ranking when a corpus
+  carries no `nodes_fts` index.
 
 ### Changed
 
@@ -34,10 +41,29 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   `bundles/gutenberg-all/`; added clear error if bundle does not exist.
 - **`runpod/requirements.txt`** — pinned to `doc-kg>=0.15.8`, `diary-kg>=0.93.2`,
   `kgmodule-utils>=0.4.3` to match the docker stack.
+- **`docker/Dockerfile` installs the local repo package** (`pip install .` of
+  `pyproject.toml` + `src/gutenberg_kg`) instead of hot-copying a single
+  `image_gen.py` over the PyPI install, so runtime imports always match the
+  checkout being built.
+- **`src/gutenberg_kg/build_corpus.py` embed path is device-aware** — CPU now
+  fans out across `cpu_count/2` worker processes (`.json` cache → doc_kg's
+  multi-process `CorpusEmbedder`, with `KG_EMBED_DEVICE=cpu` pinned so workers
+  don't each grab the GPU and OOM), while MPS/CUDA keep the single-process
+  streaming (`.jsonl`) path. The startup banner reports the resolved mode.
 
 ### Removed
 
+- **Mislabeled / duplicate Dante editions in `corpus/world-literature/`** — the
+  three entries split across translation fragments were consolidated: *Paradiso*
+  → **The Divine Comedy (Cary)**, *Inferno* → **The Divine Comedy (Longfellow)**,
+  and the duplicate *Purgatorio* directory dropped.
+
 ### Fixed
+
+- **FTS5 lexical index now rebuilt over the full consolidated graph** at the end
+  of `run_build_corpus` (`store.rebuild_fts`), so the handler's hybrid retrieval
+  reliably activates instead of depending on the per-strategy-group rebuild; an
+  absent `nodes_fts` silently degraded retrieval to dense-only.
 
 ---
 
