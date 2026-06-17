@@ -1504,20 +1504,20 @@ wmi = ["wmi (>=1.5.1) ; platform_system == \"Windows\""]
 
 [[package]]
 name = "doc-kg"
-version = "0.15.8"
+version = "0.15.9"
 description = "A tool to build a semantically searchable knowledge graph from markdown and text documents"
 optional = false
 python-versions = "<3.14,>=3.12"
 groups = ["main"]
 files = [
-    {file = "doc_kg-0.15.8-py3-none-any.whl", hash = "sha256:1afa04c1bf5489f245b77fb7f2b28bb810b20b79edc6d5aeb9c865f3b5f2ef1e"},
-    {file = "doc_kg-0.15.8.tar.gz", hash = "sha256:3268d984e0a7fa547235897d719dea3d48efb6ebac3a92bf8219e1123f1782be"},
+    {file = "doc_kg-0.15.9-py3-none-any.whl", hash = "sha256:156f156f613633ee9886a0bba7e8be5ec34b5ffea8ec24380378764826ab052a"},
+    {file = "doc_kg-0.15.9.tar.gz", hash = "sha256:2a42f084efe2f0be0e770b2ed4a71adb56c7168543753455b30c5e1415dd39f1"},
 ]
 
 [package.dependencies]
 click = ">=8.1.0,<9"
 einops = ">=0.8.2"
-kgmodule-utils = ">=0.4.0"
+kgmodule-utils = ">=0.4.4"
 lancedb = ">=0.29.0"
 markdown-it-py = ">=3.0.0"
 mcp = ">=1.0.0"
@@ -2932,14 +2932,14 @@ viz3d = ["PyQt5 (>=5.15.0)", "markdown (>=3.6)", "param (>=2.0.0)", "pyvista[jup
 
 [[package]]
 name = "kgmodule-utils"
-version = "0.4.3"
+version = "0.4.4"
 description = "Shared types, graph store, semantic index, and pipeline base for the KGModule SDK"
 optional = false
 python-versions = "<3.14,>=3.12"
 groups = ["main"]
 files = [
-    {file = "kgmodule_utils-0.4.3-py3-none-any.whl", hash = "sha256:0c17214bee703161471bec163fba22a95d3dafde01af63ba5bce7c648253cd28"},
-    {file = "kgmodule_utils-0.4.3.tar.gz", hash = "sha256:2b83162ce4f74bf038d7f19397a10d98413d1a71f8bbdcd252a45953217dbc1f"},
+    {file = "kgmodule_utils-0.4.4-py3-none-any.whl", hash = "sha256:3c3eacbbc0b97ff2cfaccf7c9b6b8edeee03b2a2ccf9bca105a4edd368aec5c4"},
+    {file = "kgmodule_utils-0.4.4.tar.gz", hash = "sha256:02338f23fb151e7e20f801ab363bd1f25d82f6dbbdd8746dd7b7325a5df3efbd"},
 ]
 
 [package.dependencies]
@@ -8694,4 +8694,4 @@ viz3d = ["PyQt5", "markdown", "param", "pycode-kg", "pyvista", "pyvistaqt"]
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.12,<3.14"
-content-hash = "e5815d3b0db251c18657db11172ceb55f50ac8c655c445b86f1bc9426b3e927e"
+content-hash = "ee19d02743eeeaac0b17315f9b0e18b3f751eee47338ed469f7fce68ef2b3208"
