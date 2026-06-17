@@ -320,7 +320,7 @@ def run_build_corpus(genres: list[str], opts: BuildCorpusOptions) -> int:
         "cpu": "parallel (CPU multiprocessing, cpu_count/2 workers)",
         "mps": "streaming (single-process; GPU can't be shared across workers)",
         "cuda": "streaming (single-process; GPU can't be shared across workers)",
-    }.get(opts.embed_device, "auto (parallel on CPU, streaming on MPS/CUDA)")
+    }.get(opts.embed_device, "auto → parallel CPU (use --embed-device mps for small corpora)")
     print(f"  embed mode    : {_mode}")
     print(f"  embed batch   : {opts.embed_batch_size}")
     print(f"  embed device  : {opts.embed_device}")
@@ -424,14 +424,12 @@ def run_build_corpus(genres: list[str], opts: BuildCorpusOptions) -> int:
         )
         # Resolve the effective device to pick the embedding path: CPU can fan
         # out across processes safely; MPS/CUDA cannot (one shared allocator).
-        effective_device = opts.embed_device
-        if effective_device == "auto":
-            try:
-                import torch  # pylint: disable=import-outside-toplevel
-
-                effective_device = "mps" if torch.backends.mps.is_available() else "cpu"
-            except Exception:  # noqa: BLE001
-                effective_device = "cpu"
+        # `auto` deliberately resolves to CPU: the consolidated build embeds
+        # 700k+ nodes, and MPS single-process streaming OOMs on the unified-memory
+        # watermark (see embedder setup above). CPU parallel is the reliable
+        # default; request `--embed-device mps` explicitly for a small corpus that
+        # fits in GPU memory.
+        effective_device = "cpu" if opts.embed_device == "auto" else opts.embed_device
 
         if effective_device == "cpu" or opts.update:
             # CPU (or any --update) → PARALLEL embedding via doc_kg's multi-process

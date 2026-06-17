@@ -70,6 +70,11 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Fixed
 
+- **`build-corpus --embed-device auto` now resolves to CPU, not MPS.** The full
+  consolidated build embeds 700k+ nodes, and MPS single-process streaming OOMs on
+  Apple's unified-memory watermark (`other allocations: ~80 GiB` partway through
+  the pass). `auto` now picks the reliable parallel-CPU path; pass
+  `--embed-device mps` explicitly only for a small corpus that fits in GPU memory.
 - **FTS5 lexical index now rebuilt over the full consolidated graph** at the end
   of `run_build_corpus` (`store.rebuild_fts`), so the handler's hybrid retrieval
   reliably activates instead of depending on the per-strategy-group rebuild; an
