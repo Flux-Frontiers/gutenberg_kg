@@ -10,6 +10,18 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added
 
+### Changed
+
+### Removed
+
+### Fixed
+
+---
+
+## [1.7.0] - 2026-06-24
+
+### Added
+
 - **`src/gutenberg_kg/diary_meta.py`** — shared module for diary slug derivation
   (`diary_slug()`) and static author/title/genre metadata (`DIARY_META`). Both
   handler workers now import from this single source of truth; adding a new diary
