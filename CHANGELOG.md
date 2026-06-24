@@ -27,6 +27,9 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Changed
 
+- **`doc-kg` dependency floor raised to `>=0.16.0`** across all dependency groups
+  (`dependencies`, `kgdeps`, `full`, `all`) in `pyproject.toml`, ensuring the
+  hybrid FTS5/BM25 lexical-retrieval support is present in the installed doc_kg.
 - **Consolidated `build-corpus` no longer discovers SIMILAR_TO edges by default.**
   `BuildCorpusOptions.discover_similar` now defaults to `False`, and the CLI flag
   flipped from opt-out `--no-similar` to an opt-in `--similar/--no-similar` pair
