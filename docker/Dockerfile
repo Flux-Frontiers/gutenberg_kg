@@ -32,16 +32,22 @@ WORKDIR /app
 # diary-kg: DiaryKG temporal index + query API
 # streamlit + httpx: chat UI dependencies
 # watchdog: faster Streamlit file-watching via native OS events (vs. polling)
-# kgmodule-utils 0.4.4 adds the device override (KG_EMBED_DEVICE) used to pin
-# embedding workers to CPU. doc-kg 0.15.9 adds CPU-parallel worker recycling
-# (flat throughput on large corpora) + the device guard; it carries the
-# FTS5/BM25 lexical channel + RRF fusion that fixes exact-phrase retrieval
-# (e.g. "pillar of salt"). diary-kg 0.93.2 carries the same fusion for diaries.
-# Pinned for reproducible builds.
-ARG KGMODULE_UTILS_VERSION=0.4.4
-ARG DOC_KG_VERSION=0.15.9
+# doc-kg and kgmodule-utils install from GIT (tag/sha), not PyPI. This decouples
+# DEPLOYS from PyPI RELEASES: to ship a doc-kg/kg_utils change, push the commit/tag
+# and bump the *_REF below — no wheel publish required (mirrors how kg-rag is
+# installed). diary-kg (stable) stays pinned on PyPI.
+#   v0.15.9 = CPU-parallel worker recycling + device guard + FTS5/BM25+RRF hybrid;
+#   v0.4.4  = KG_EMBED_DEVICE worker pinning.
+#   NOTE: refs must be pushed to the remote (`git push origin <tag>`); a private
+#   repo additionally needs a build-time git credential.
+ARG KGMODULE_UTILS_REF=v0.4.4
+ARG DOC_KG_REF=v0.15.9
 ARG DIARY_KG_VERSION=0.93.2
-RUN pip install --no-cache-dir "kgmodule-utils[synthesis]==${KGMODULE_UTILS_VERSION}" "doc-kg==${DOC_KG_VERSION}" "diary-kg==${DIARY_KG_VERSION}" streamlit httpx watchdog openai
+RUN pip install --no-cache-dir \
+    "kgmodule-utils[synthesis] @ git+https://github.com/Flux-Frontiers/KG_utils.git@${KGMODULE_UTILS_REF}" \
+    "doc-kg @ git+https://github.com/Flux-Frontiers/doc_kg.git@${DOC_KG_REF}" \
+    "diary-kg==${DIARY_KG_VERSION}" \
+    streamlit httpx watchdog openai
 
 # Install the local repo package so runtime imports always match this checkout.
 COPY pyproject.toml README.md /app/

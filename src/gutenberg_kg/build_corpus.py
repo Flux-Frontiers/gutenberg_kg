@@ -66,10 +66,13 @@ BUNDLES_ROOT = REPO_ROOT / "bundles"
 # into the consolidated index (author index pages, the DiaryKG-built diaries).
 NON_GENRE_DIRS = {"authors", "diaries"}
 
-# Default cap on SIMILAR_TO out-edges per chunk. Cross-book, cross-author
-# similarity is high-signal here (the "Tolstoy vs Dostoevsky" edges), unlike a
-# single-author diary — but capping keeps the edge table from exploding.
-# See the SIMILAR_TO decision (cap 8, default-on).
+# Default cap on SIMILAR_TO out-edges per chunk, applied only when discovery is
+# explicitly enabled (--similar). Cross-book, cross-author similarity is
+# high-signal (the "Tolstoy vs Dostoevsky" edges), but the served handler is
+# semantic-first and never traverses these edges, so consolidated builds default
+# to NOT discovering them — recomputing ~800k edges only bloats the shipped
+# graph.sqlite. The cap-8 SIMILAR_TO validation applies to DocKG.query()'s
+# hop-expansion path (per-book CLI queries, viz3d arcs), not this bundle.
 DEFAULT_SIMILAR_K = 8
 
 # Per-genre default chunk strategy.  Genres not listed here get "semantic".
@@ -93,11 +96,12 @@ class BuildCorpusOptions:
     output: str | None = None  # output bundle name; default derived from genres
     similar_k: int = DEFAULT_SIMILAR_K
     similar_max_degree: int = DEFAULT_SIMILAR_K  # hard per-node degree cap
-    discover_similar: bool = True
+    discover_similar: bool = False  # served handler never traverses SIMILAR_TO; opt-in only
     n_workers: int = 4
     embed_batch_size: int = 64
     embed_device: str = "auto"  # auto|cpu|mps
     wipe: bool = True
+    update: bool = False  # incremental: embed only new/changed nodes, upsert, prune
     dry_run: bool = False
     quiet: bool = False
     diaries_only: bool = False  # skip phases 1-3; re-bundle diary indices only
@@ -316,7 +320,7 @@ def run_build_corpus(genres: list[str], opts: BuildCorpusOptions) -> int:
         "cpu": "parallel (CPU multiprocessing, cpu_count/2 workers)",
         "mps": "streaming (single-process; GPU can't be shared across workers)",
         "cuda": "streaming (single-process; GPU can't be shared across workers)",
-    }.get(opts.embed_device, "auto (parallel on CPU, streaming on MPS/CUDA)")
+    }.get(opts.embed_device, "auto → parallel CPU (use --embed-device mps for small corpora)")
     print(f"  embed mode    : {_mode}")
     print(f"  embed batch   : {opts.embed_batch_size}")
     print(f"  embed device  : {opts.embed_device}")
@@ -420,30 +424,30 @@ def run_build_corpus(genres: list[str], opts: BuildCorpusOptions) -> int:
         )
         # Resolve the effective device to pick the embedding path: CPU can fan
         # out across processes safely; MPS/CUDA cannot (one shared allocator).
-        effective_device = opts.embed_device
-        if effective_device == "auto":
-            try:
-                import torch  # pylint: disable=import-outside-toplevel
+        # `auto` deliberately resolves to CPU: the consolidated build embeds
+        # 700k+ nodes, and MPS single-process streaming OOMs on the unified-memory
+        # watermark (see embedder setup above). CPU parallel is the reliable
+        # default; request `--embed-device mps` explicitly for a small corpus that
+        # fits in GPU memory.
+        effective_device = "cpu" if opts.embed_device == "auto" else opts.embed_device
 
-                effective_device = "mps" if torch.backends.mps.is_available() else "cpu"
-            except Exception:  # noqa: BLE001
-                effective_device = "cpu"
-
-        if effective_device == "cpu":
-            # CPU → PARALLEL embedding. A `.json` cache selects doc_kg's
-            # multi-process CorpusEmbedder (spawns cpu_count/2 workers). We pin
-            # every worker to CPU via KG_EMBED_DEVICE: without it each worker
-            # auto-selects MPS and N workers stack N GPU allocations → the exact
-            # OOM that forced the old single-process stream. Peak host RAM is
-            # just the vector cache (~0.5–4 GB for this corpus) — trivially safe
-            # on a 64 GB+ box — and it uses every core instead of ~1.6.
-            os.environ["KG_EMBED_DEVICE"] = "cpu"
+        if effective_device == "cpu" or opts.update:
+            # CPU (or any --update) → PARALLEL embedding via doc_kg's multi-process
+            # CorpusEmbedder (`.json` cache). This is the only path that supports
+            # incremental `only_missing` embedding. On CPU we pin every worker via
+            # KG_EMBED_DEVICE: without it each auto-selects MPS and N workers stack
+            # N GPU allocations → OOM. Peak host RAM is just the vector cache, and
+            # it uses every core instead of ~1.6.
+            if effective_device == "cpu":
+                os.environ["KG_EMBED_DEVICE"] = "cpu"
             cache_path = out_dir / "embeddings.json"
-            print("  [parallel] CPU multiprocessing (cpu_count/2 workers)")
+            mode = "incremental — embed only new/changed nodes" if opts.update else "full"
+            print(f"  [parallel] CPU multiprocessing ({mode})")
             kg_all.build_embeddings(
                 out=cache_path,
                 n_workers=None,  # CorpusEmbedder default = cpu_count/2
                 batch_size=opts.embed_batch_size,
+                only_missing=opts.update,
                 quiet=opts.quiet,
             )
         else:
@@ -463,11 +467,18 @@ def run_build_corpus(genres: list[str], opts: BuildCorpusOptions) -> int:
         # ------------------------------------------------------------------
         # Phase 3: build LanceDB index + SIMILAR_TO edges.
         # ------------------------------------------------------------------
-        print("[3/4] building LanceDB index + SIMILAR_TO edges …")
+        # On --update we UPSERT into the existing vector index (wipe=False) and skip
+        # SIMILAR_TO — the served handler is semantic-first and never traverses those
+        # edges, so recomputing 800k+ of them every update is pure waste.
+        index_wipe = opts.wipe and not opts.update
+        discover_similar = opts.discover_similar and not opts.update
+        print(
+            f"[3/4] building LanceDB index{' + SIMILAR_TO edges' if discover_similar else ' (upsert)' if opts.update else ''} …"
+        )
         stats = kg_all.build_index_from_cache(
             cache_path,
-            wipe=opts.wipe,
-            discover_similar=opts.discover_similar,
+            wipe=index_wipe,
+            discover_similar=discover_similar,
             similar_k=opts.similar_k,
             similar_max_degree=opts.similar_max_degree,
             quiet=opts.quiet,
@@ -482,8 +493,19 @@ def run_build_corpus(genres: list[str], opts: BuildCorpusOptions) -> int:
         n_fts = kg_all.store.rebuild_fts(quiet=opts.quiet)
         print(f"  lexical index: {n_fts:,} chunks")
 
+        # Incremental adds only; drop index vectors for nodes that left the graph
+        # (removed/renamed books) so they can't return stale hits.
+        if opts.update:
+            print("[3/4] pruning orphan vectors (removed/renamed nodes) …")
+            kg_all.prune_index(quiet=opts.quiet)
+
         kg_all.close()
-        cache_path.unlink(missing_ok=True)
+        # The embedding cache (.json / .jsonl) is a build-only intermediate — it can
+        # be several GB and must never ship in the bundle. Remove BOTH variants so a
+        # stale cache from a prior or killed run can't bloat the bundle (and the image
+        # COPY). .dockerignore guards the same at pack time as a belt-and-suspenders.
+        for _cache in ("embeddings.json", "embeddings.jsonl"):
+            (out_dir / _cache).unlink(missing_ok=True)
 
         # ------------------------------------------------------------------
         # Phase 4: build (if needed) + bundle DiaryKG indices.

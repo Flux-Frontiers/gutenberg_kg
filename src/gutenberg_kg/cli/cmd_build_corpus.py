@@ -56,10 +56,13 @@ def _parse_strategy(ctx, param, value):  # noqa: ARG001
     help="Max SIMILAR_TO out-edges per chunk (0 = no cap).",
 )
 @click.option(
-    "--no-similar",
-    is_flag=True,
+    "--similar/--no-similar",
+    "discover_similar",
     default=False,
-    help="Disable SIMILAR_TO edge discovery entirely.",
+    show_default=True,
+    help="Discover cross-book SIMILAR_TO edges. Default off: the served handler is "
+    "semantic-first and never traverses them, so they only bloat the shipped "
+    "graph.sqlite. Enable for viz3d arcs or DocKG.query() hop-expansion use.",
 )
 @click.option(
     "--workers",
@@ -101,6 +104,14 @@ def _parse_strategy(ctx, param, value):  # noqa: ARG001
     help="Skip phases 1-3; re-bundle diary indices into an existing bundle only.",
 )
 @click.option(
+    "--update",
+    is_flag=True,
+    default=False,
+    help="Incremental rebuild: re-parse the corpus, embed ONLY new/changed nodes, upsert "
+    "into the existing vector index, and prune removed ones (skips SIMILAR_TO). Reuses "
+    "existing embeddings, so a small corpus change costs minutes instead of a full rebuild.",
+)
+@click.option(
     "--dry-run",
     is_flag=True,
     default=False,
@@ -116,12 +127,13 @@ def build_corpus(
     genre,
     output,
     similar_k,
-    no_similar,
+    discover_similar,
     workers,
     embed_batch_size,
     embed_device,
     strategy,
     diaries_only,
+    update,
     dry_run,
     quiet,
 ):
@@ -138,13 +150,14 @@ def build_corpus(
 
     :param genre: Tuple of genres to include (empty = all genres).
     :param output: Override the bundle directory name.
-    :param similar_k: Cap on SIMILAR_TO out-edges per chunk.
-    :param no_similar: Disable SIMILAR_TO discovery.
+    :param similar_k: Cap on SIMILAR_TO out-edges per chunk (when discovery is enabled).
+    :param discover_similar: Discover SIMILAR_TO edges (default off for the served bundle).
     :param workers: Embedding worker processes.
     :param embed_batch_size: Embedding encode() batch size.
     :param embed_device: Embedding device override (auto/cpu/mps).
     :param strategy: Dict of genre→strategy overrides (parsed from CLI).
     :param diaries_only: Skip phases 1-3 and only re-bundle diary indices.
+    :param update: Incremental rebuild — embed only new/changed nodes, upsert, prune.
     :param dry_run: Print the plan without building.
     :param quiet: Suppress per-stage progress output.
     """
@@ -152,12 +165,13 @@ def build_corpus(
     opts = bc.BuildCorpusOptions(
         output=output,
         similar_k=similar_k,
-        discover_similar=not no_similar,
+        discover_similar=discover_similar,
         n_workers=workers,
         embed_batch_size=embed_batch_size,
         embed_device=embed_device,
         strategy_overrides=strategy,
         diaries_only=diaries_only,
+        update=update,
         dry_run=dry_run,
         quiet=quiet,
     )

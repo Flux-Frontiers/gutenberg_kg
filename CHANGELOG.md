@@ -27,6 +27,19 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Changed
 
+- **`doc-kg` dependency floor raised to `>=0.16.0`** across all dependency groups
+  (`dependencies`, `kgdeps`, `full`, `all`) in `pyproject.toml`, ensuring the
+  hybrid FTS5/BM25 lexical-retrieval support is present in the installed doc_kg.
+- **Consolidated `build-corpus` no longer discovers SIMILAR_TO edges by default.**
+  `BuildCorpusOptions.discover_similar` now defaults to `False`, and the CLI flag
+  flipped from opt-out `--no-similar` to an opt-in `--similar/--no-similar` pair
+  (default `--no-similar`). The served `docker/handler.py` is semantic-first
+  (dense cosine + BM25 RRF) and never traverses the edges table, so the ~800k
+  SIMILAR_TO edges a full build produced (245 books × ~2.8k) were pure dead weight
+  in the shipped `graph.sqlite`. The cap-8 SIMILAR_TO retrieval gains apply only to
+  `DocKG.query()`'s hop-expansion path — per-book `gutenkg ingest` still builds
+  cap-8 edges for viz3d arcs and hop queries. Pass `--similar` to opt a consolidated
+  bundle back in.
 - **README restructured** — Docker local app (`make build-corpus → make build →
   make up → localhost:8501`) promoted to the primary quick-start path; CLI demoted
   to developer/power-user section; RunPod section removed (see `docs/RUNPOD.md`).
@@ -60,6 +73,11 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Fixed
 
+- **`build-corpus --embed-device auto` now resolves to CPU, not MPS.** The full
+  consolidated build embeds 700k+ nodes, and MPS single-process streaming OOMs on
+  Apple's unified-memory watermark (`other allocations: ~80 GiB` partway through
+  the pass). `auto` now picks the reliable parallel-CPU path; pass
+  `--embed-device mps` explicitly only for a small corpus that fits in GPU memory.
 - **FTS5 lexical index now rebuilt over the full consolidated graph** at the end
   of `run_build_corpus` (`store.rebuild_fts`), so the handler's hybrid retrieval
   reliably activates instead of depending on the per-strategy-group rebuild; an
