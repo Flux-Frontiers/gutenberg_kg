@@ -1504,14 +1504,14 @@ wmi = ["wmi (>=1.5.1) ; platform_system == \"Windows\""]
 
 [[package]]
 name = "doc-kg"
-version = "0.15.9"
+version = "0.16.0"
 description = "A tool to build a semantically searchable knowledge graph from markdown and text documents"
 optional = false
 python-versions = "<3.14,>=3.12"
 groups = ["main"]
 files = [
-    {file = "doc_kg-0.15.9-py3-none-any.whl", hash = "sha256:156f156f613633ee9886a0bba7e8be5ec34b5ffea8ec24380378764826ab052a"},
-    {file = "doc_kg-0.15.9.tar.gz", hash = "sha256:2a42f084efe2f0be0e770b2ed4a71adb56c7168543753455b30c5e1415dd39f1"},
+    {file = "doc_kg-0.16.0-py3-none-any.whl", hash = "sha256:7fdf199ef5bddd1e885451c65c609f43c0f11c17fa054be9a87426d3a41640ad"},
+    {file = "doc_kg-0.16.0.tar.gz", hash = "sha256:12213973921448184b016dd600a5a8092dc3687d6454d8cd4ac9765ad7781ae7"},
 ]
 
 [package.dependencies]
@@ -8694,4 +8694,4 @@ viz3d = ["PyQt5", "markdown", "param", "pycode-kg", "pyvista", "pyvistaqt"]
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.12,<3.14"
-content-hash = "ee19d02743eeeaac0b17315f9b0e18b3f751eee47338ed469f7fce68ef2b3208"
+content-hash = "ff0b22ea239b1ef58d655b95d234c41ad90e8fa8a2387414bada0301c912270c"
