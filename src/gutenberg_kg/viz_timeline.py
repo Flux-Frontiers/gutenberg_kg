@@ -93,6 +93,13 @@ def create_timeline_figure(snapshots_dir: Path) -> go.Figure:
     )
 
     def _trace(y: list, name: str, color: str) -> go.Scatter:
+        """Build one line+marker trace with hover text showing version/commit/date.
+
+        :param y: Metric values plotted against the shared ``x`` snapshot dates.
+        :param name: Trace/legend name, also used in the hover template.
+        :param color: Line and marker color.
+        :return: A configured ``go.Scatter`` trace.
+        """
         return go.Scatter(
             x=x,
             y=y,
@@ -149,6 +156,7 @@ def create_3d_timeline_figure(snapshots_dir: Path) -> go.Figure:
     commits = timeline["commits"]
 
     def _norm(vals: list[int]) -> list[float]:
+        """Scale values to a 0-100 range relative to their maximum."""
         mx = max(vals) if vals else 1
         return [v / mx * 100 if mx else 0.0 for v in vals]
 
@@ -206,6 +214,7 @@ _W = 64  # Inner width of the summary box
 
 
 def _row(label: str, value: str) -> str:
+    """Format a label/value pair as a padded, box-bordered summary line."""
     body = f"{label:<12}{value}"
     return f"| {body:<{_W}} |"
 
@@ -225,6 +234,13 @@ def display_timeline_summary(snapshots_dir: Path) -> str:
     title = f"{'GutenbergKG Corpus Growth Summary':^{_W}}"
 
     def _section(name: str, first: int, last: int) -> list[str]:
+        """Render a boxed First/Latest/Delta block for one metric.
+
+        :param name: Metric label, e.g. ``"BOOKS"``.
+        :param first: Value at the earliest snapshot.
+        :param last: Value at the latest snapshot.
+        :return: Lines to append to the summary box.
+        """
         delta = last - first
         sign = "+" if delta >= 0 else ""
         return [

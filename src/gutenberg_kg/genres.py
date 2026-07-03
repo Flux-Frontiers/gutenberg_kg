@@ -32,12 +32,20 @@ _DEFAULTS: dict[str, list[str]] = {
 
 
 def _load() -> dict[str, list[str]]:
+    """Load the genre registry from ``corpus/genres.json``, falling back to built-in defaults.
+
+    :return: Dict mapping source (``"gutenberg"``/``"ia"``) to a list of genre slugs.
+    """
     if _REGISTRY_PATH.exists():
         return json.loads(_REGISTRY_PATH.read_text(encoding="utf-8"))
     return {k: list(v) for k, v in _DEFAULTS.items()}
 
 
 def _save(data: dict[str, list[str]]) -> None:
+    """Write *data* to ``corpus/genres.json``, creating the parent directory if needed.
+
+    :param data: Registry dict mapping source to a list of genre slugs.
+    """
     _REGISTRY_PATH.parent.mkdir(parents=True, exist_ok=True)
     _REGISTRY_PATH.write_text(json.dumps(data, indent=2) + "\n", encoding="utf-8")
 

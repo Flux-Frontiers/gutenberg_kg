@@ -141,6 +141,11 @@ _catalog: dict[str, dict] = {}
 
 
 def _source_file_for(diary_dir: Path) -> str:
+    """Look up a diary's original source filename from its DiaryKG config.
+
+    :param diary_dir: Diary directory containing a ``.diarykg/`` subdirectory.
+    :returns: The recorded ``source_file`` value, or ``""`` if unavailable.
+    """
     config = diary_dir / ".diarykg" / "config.json"
     if config.exists():
         return json.loads(config.read_text()).get("source_file", "")
@@ -148,6 +153,13 @@ def _source_file_for(diary_dir: Path) -> str:
 
 
 def _bootstrap_registry():
+    """Register the consolidated DocKG and every DiaryKG in the KGRegistry at startup.
+
+    Populates the module-level ``_KG_SQLITE`` and ``_DIARY_TABLES`` caches as a
+    side effect, opening each diary's LanceDB table for semantic-first search.
+
+    :returns: The populated ``KGRegistry`` instance.
+    """
     from kg_rag.corpus_registry import CorpusRegistry
     from kg_rag.primitives import CorpusEntry, KGEntry, KGKind
     from kg_rag.registry import KGRegistry
@@ -269,6 +281,7 @@ def _open_dockg_store() -> None:
 
 
 def _load_catalog() -> None:
+    """Load ``catalog.json`` into the module-level ``_catalog`` dict, if present."""
     if _CATALOG_PATH.exists():
         with open(_CATALOG_PATH, encoding="utf-8") as f:
             _catalog.update(json.load(f))
@@ -278,6 +291,10 @@ def _load_catalog() -> None:
 
 
 def _make_embedder():
+    """Load the sentence-transformer embedder and warm it up with a dummy embed call.
+
+    :returns: A ready-to-use ``SentenceTransformerEmbedder`` instance.
+    """
     from kg_rag._embedders import SentenceTransformerEmbedder
 
     print(f"[startup] loading embedder: {EMBED_MODEL}")
@@ -314,10 +331,20 @@ print("[startup] ready")
 
 
 def _synth_for_backend(backend_str: str):
+    """Resolve the text synthesizer to use for a request, falling back to the env default.
+
+    :param backend_str: Backend name requested by the caller (e.g. ``"ollama"``), or ``""``.
+    :returns: A text synthesizer instance for the resolved backend.
+    """
     return text_synth_for_backend(backend_str, _text_synth)
 
 
 def _image_for_backend(backend_str: str):
+    """Resolve the image synthesizer to use for a request, falling back to the env default.
+
+    :param backend_str: Backend name requested by the caller (e.g. ``"openai"``), or ``""``.
+    :returns: An image synthesizer instance for the resolved backend.
+    """
     return image_synth_for_backend(backend_str, _image_synth)
 
 
@@ -565,6 +592,14 @@ def _enrich_catalog(hits: list[dict]) -> None:
 
 
 def handler(job: dict) -> dict:
+    """RunPod serverless entry point: search the corpus and optionally synthesise an answer.
+
+    :param job: RunPod job dict; ``job["input"]`` holds the request schema described
+        in this module's docstring (query, corpus, k, min_score, semantic_floor,
+        synthesize, model, secret, op).
+    :returns: A result dict with hits, timing, and optional synthesis text, or
+        ``{"error": ...}`` on validation/auth failure.
+    """
     inp = job.get("input", {})
 
     if HANDLER_SECRET and inp.get("secret") != HANDLER_SECRET:

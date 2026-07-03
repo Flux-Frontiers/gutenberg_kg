@@ -38,6 +38,12 @@ def _dg():
 
 
 def _field(pattern: str, text: str) -> str | None:
+    """Return the first capture group of *pattern* in *text*, or None if no match.
+
+    :param pattern: Regex pattern with a single capture group.
+    :param text: Text to search.
+    :return: Stripped capture group, or None.
+    """
     m = re.search(pattern, text, re.MULTILINE)
     return m.group(1).strip() if m else None
 
@@ -112,6 +118,11 @@ def patch_reference(path: Path, extra: dict, dry_run: bool = False) -> bool:
 
 
 def _slugify(name: str) -> str:
+    """Convert an author name to a filesystem-safe, underscore-separated slug.
+
+    :param name: Author name (e.g. ``"Jane Austen"``).
+    :return: Lowercased slug (e.g. ``"jane_austen"``).
+    """
     slug = name.lower().strip()
     slug = re.sub(r"[^\w\s-]", "", slug)
     slug = re.sub(r"[\s-]+", "_", slug)

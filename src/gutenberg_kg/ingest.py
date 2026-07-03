@@ -444,6 +444,10 @@ class _LogCapture:
     """
 
     def __init__(self, maxlines: int = 24) -> None:
+        """Initialize capture state (call :meth:`start` to begin redirecting stdout).
+
+        :param maxlines: Maximum number of captured plain-text lines to retain.
+        """
         self._lines: deque[str] = deque(maxlen=maxlines)
         self._lock = threading.Lock()
         self._partial = ""
@@ -453,6 +457,7 @@ class _LogCapture:
         self._thread: threading.Thread | None = None
 
     def start(self) -> None:
+        """Redirect fd 1 to a pipe and start the background reader thread."""
         self._pipe_r, self._pipe_w = os.pipe()
         self._orig_fd = os.dup(1)
         os.dup2(self._pipe_w, 1)
@@ -463,6 +468,7 @@ class _LogCapture:
         self._thread.start()
 
     def stop(self) -> None:
+        """Restore the original stdout/fd 1 and stop the reader thread."""
         if self._orig_fd == -1:
             return
         sys.stdout.flush()
@@ -477,6 +483,7 @@ class _LogCapture:
         self._orig_fd = self._pipe_r = self._pipe_w = -1
 
     def _read_loop(self) -> None:
+        """Poll the pipe, strip ANSI codes, and append completed lines until EOF."""
         try:
             while True:
                 ready, _, _ = select.select([self._pipe_r], [], [], 0.05)
@@ -495,6 +502,7 @@ class _LogCapture:
             pass
 
     def render(self) -> str:
+        """:return: The captured lines joined into a single newline-separated string."""
         with self._lock:
             return "\n".join(self._lines)
 
@@ -503,10 +511,16 @@ class _LiveLog:
     """Rich renderable that pulls the latest captured lines on every render cycle."""
 
     def __init__(self, capture: _LogCapture, title: str = "Build output") -> None:
+        """Store the log capture source and panel title.
+
+        :param capture: The :class:`_LogCapture` instance to pull lines from.
+        :param title: Title shown on the rendered panel.
+        """
         self._cap = capture
         self._title = title
 
     def __rich__(self) -> Panel:
+        """:return: A ``Panel`` rendering the latest captured log lines."""
         return Panel(
             Text(self._cap.render(), no_wrap=True, overflow="fold"),
             title=self._title,
@@ -515,6 +529,7 @@ class _LiveLog:
 
 
 def _make_progress() -> Progress:
+    """:return: A Rich ``Progress`` bar configured for the per-book ingest loop."""
     return Progress(
         SpinnerColumn(style="bold yellow"),
         TextColumn("[bold yellow]{task.description}", markup=True),
@@ -528,6 +543,12 @@ def _make_progress() -> Progress:
 
 
 def _build_layout(progress: Progress, log: _LogCapture) -> Layout:
+    """Build the two-pane Live layout: progress bar on top, captured log below.
+
+    :param progress: Progress bar to place in the top pane.
+    :param log: Log capture whose output feeds the bottom pane.
+    :return: Assembled Rich ``Layout``.
+    """
     layout = Layout()
     layout.split_column(
         Layout(progress, name="top", size=3),
@@ -620,6 +641,7 @@ W = 80  # box width
 
 
 def _row(label: str, value: str) -> str:
+    """Format a label/value pair as a padded summary line."""
     return f"  {label:<28}  {value}"
 
 
@@ -865,6 +887,7 @@ def run_ingest(
 
     # Pre-count total books so the progress bar has an accurate total.
     def _book_dirs(genre: str) -> list[Path]:
+        """:return: Sorted non-hidden book subdirectories under ``CORPUS_ROOT/genre``."""
         d = CORPUS_ROOT / genre
         if not d.is_dir():
             return []

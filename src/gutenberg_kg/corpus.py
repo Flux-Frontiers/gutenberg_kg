@@ -33,6 +33,11 @@ _LABEL_OVERRIDES: dict[str, str] = {
 
 
 def _slug_to_label(slug: str) -> str:
+    """Return the display label for a genre slug.
+
+    :param slug: Genre slug (e.g. ``"ancient-classical"``).
+    :return: Label from ``_LABEL_OVERRIDES``, else title-cased with hyphens as spaces.
+    """
     return _LABEL_OVERRIDES.get(slug, slug.replace("-", " ").title())
 
 
@@ -75,6 +80,11 @@ def _git_info(repo_root: Path) -> dict[str, str]:
     """Return branch, short commit, and full commit from git."""
 
     def _run(*args: str) -> str:
+        """Run a git command in *repo_root* and return its stripped stdout, or "unknown" on failure.
+
+        :param args: Command and arguments (e.g. ``"git", "rev-parse", "HEAD"``).
+        :return: Stripped stdout, or ``"unknown"`` if the command fails.
+        """
         try:
             return subprocess.check_output(
                 list(args), cwd=repo_root, text=True, stderr=subprocess.DEVNULL
@@ -325,6 +335,12 @@ def snapshot_diff(
         return {"error": "Need at least two snapshots to diff."}
 
     def _resolve(name: str | None, fallback: Path) -> dict:
+        """Load the snapshot matching *name*, or *fallback* if *name* is None.
+
+        :param name: Snapshot filename or timestamp prefix to match; None uses *fallback*.
+        :param fallback: Path to load when *name* is None or matches nothing.
+        :return: Parsed snapshot dict, or ``{}`` if not found or unreadable.
+        """
         if name is None:
             try:
                 return json.loads(fallback.read_text(encoding="utf-8"))
@@ -343,6 +359,11 @@ def snapshot_diff(
     ta, tb = snap_a.get("totals", {}), snap_b.get("totals", {})
 
     def _delta(key: str) -> dict[str, int]:
+        """Build a before/after/delta dict for a totals *key*.
+
+        :param key: Key to compare between the two snapshots' ``totals`` dicts.
+        :return: Dict with ``before``, ``after``, and ``delta`` values.
+        """
         va, vb = ta.get(key, 0), tb.get(key, 0)
         return {"before": va, "after": vb, "delta": vb - va}
 
@@ -416,6 +437,13 @@ class GutenbergSnapshotManager(_BaseSnapshotManager):
         repo_root: Path,
         corpus_root: Path,
     ) -> None:
+        """Initialize the manager and store the paths used to capture snapshots.
+
+        :param snapshots_dir: Directory where snapshot JSON files are stored.
+        :param registry_path: KGRAG registry SQLite path.
+        :param repo_root: Repository root (for git metadata).
+        :param corpus_root: Corpus data root (contains ``authors/`` etc.).
+        """
         super().__init__(snapshots_dir, package_name="gutenberg-kg")
         self.registry_path = registry_path
         self.repo_root = repo_root

@@ -61,6 +61,11 @@ _BADGE_PATTERNS = {
 
 
 def _fmt_badge_nodes(n: int) -> str:
+    """Abbreviate a count for a shields.io badge (e.g. ``1200000`` -> ``"1.2M"``).
+
+    :param n: Count to abbreviate.
+    :return: Abbreviated string using K/M suffixes, or the plain number if small.
+    """
     if n >= 1_000_000:
         return f"{n / 1_000_000:.1f}M"
     if n >= 1_000:
@@ -152,6 +157,15 @@ def _print_rich_table(
     total_authors: int,
     version: str,
 ) -> None:
+    """Print corpus status as a Rich table, falling back to plain text if Rich is unavailable.
+
+    :param genre_stats: Per-genre stat dicts (``label``, ``books``, ``nodes``, ``edges``).
+    :param total_books: Total book count across all genres.
+    :param total_nodes: Total node count across all genres.
+    :param total_edges: Total edge count across all genres.
+    :param total_authors: Total author count.
+    :param version: Package version string to show in the table title.
+    """
     try:
         from rich.console import Console
         from rich.table import Table

@@ -167,6 +167,7 @@ async def _run_sync(fn, *args, **kwargs):
 
 
 def main() -> None:
+    """Run the GutenbergKG MCP server (entry point for the ``gutenkg-mcp`` command)."""
     mcp.run()
 
 

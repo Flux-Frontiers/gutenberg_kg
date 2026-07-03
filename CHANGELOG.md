@@ -18,6 +18,29 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ---
 
+## [1.7.1] - 2026-07-02
+
+### Added
+
+- **`hf-transfer` dependency** — enables accelerated Hugging Face Hub downloads.
+- `analysis/gutenberg_kg_analysis_20260703.md` — PyCodeKG architectural analysis
+  snapshot (complexity hotspots, module coupling, docstring coverage) captured
+  after the docstring pass below.
+
+### Changed
+
+- **Docstring coverage raised from 67.3% to 95.3%** (PyCodeKG-measured). Added
+  Google/NumPy `:param:`/`:return:`-style docstrings to ~100 previously
+  undocumented functions and methods across `docker/chat.py`, `docker/handler.py`,
+  `docker/image_server.py`, `runpod/build_kg.py`, `runpod/handler.py`, and
+  `src/gutenberg_kg/{authors,cmd_snapshot,cmd_status,corpus,genres,gutenberg,
+  ingest,mcp_server,viz3d,viz_timeline}.py`. Pure documentation insertions — no
+  behavioral changes.
+- **`kgdeps` extra** now installs `pycode-kg` instead of the already-core
+  `doc-kg`/`diary-kg` pins.
+
+---
+
 ## [1.7.0] - 2026-06-24
 
 ### Added

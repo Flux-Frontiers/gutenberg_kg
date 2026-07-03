@@ -122,6 +122,10 @@ def _source_file_for(diary_dir: Path) -> str:
 
 
 def _bootstrap_registry():
+    """Register the consolidated DocKG and all diary KGs into a fresh in-memory KGRAG registry.
+
+    :return: The populated :class:`KGRegistry`.
+    """
     from kg_rag.corpus_registry import CorpusRegistry
     from kg_rag.primitives import CorpusEntry, KGEntry, KGKind
     from kg_rag.registry import KGRegistry
@@ -214,6 +218,7 @@ def _open_dockg_table() -> None:
 
 
 def _load_catalog() -> None:
+    """Load ``catalog.json`` (book genre/title/author metadata) into the module-level ``_catalog`` dict."""
     if _CATALOG_PATH.exists():
         with open(_CATALOG_PATH, encoding="utf-8") as f:
             _catalog.update(json.load(f))
@@ -223,6 +228,10 @@ def _load_catalog() -> None:
 
 
 def _make_embedder():
+    """Load the configured sentence-transformer embedder and warm it up with a dummy embed call.
+
+    :return: The ready-to-use embedder instance.
+    """
     from kg_rag._embedders import SentenceTransformerEmbedder
 
     print(f"[startup] loading embedder: {EMBED_MODEL}")
@@ -253,14 +262,25 @@ print("[startup] ready")
 
 
 def _attach_content(hits: list[dict]) -> None:
+    """Fill in each hit's ``content`` field by looking up its node in the per-KG sqlite DBs.
+
+    :param hits: Hit dicts to update in place; each must have ``kg_name`` and ``node_id``.
+    """
     attach_content_by_sqlite(hits, _KG_SQLITE)
 
 
 def _table_search(table, qvec, where: str, k: int) -> list[dict]:
+    """Run a cosine kNN search with a pre-filter and return raw LanceDB rows."""
     return table.search(qvec).metric("cosine").where(where, prefilter=True).limit(k).to_list()
 
 
 def _rows_to_hits(rows: list[dict], kg_name: str, kg_kind: str, min_score: float) -> list[dict]:
+    """Shape LanceDB rows into hit dicts (clean content hydrated separately).
+
+    The LanceDB ``text`` column holds the structured *embed-text*, not the clean
+    passage — so ``content``/``summary`` are left empty here and filled from
+    SQLite by ``_attach_content`` / ``_attach_diary_fields``.
+    """
     hits: list[dict] = []
     for row in rows:
         score = round(1.0 - float(row.get("_distance", 1.0)), 4)
@@ -358,6 +378,10 @@ def _semantic_search_diaries(
 
 
 def _enrich_catalog(hits: list[dict]) -> None:
+    """Attach ``genre``/``title``/``author`` metadata to each hit from the book catalog or diary metadata.
+
+    :param hits: Hit dicts to update in place.
+    """
     for h in hits:
         if h.get("kg_kind") in ("KGKind.GUTENBERG", "gutenberg"):
             src = h.get("source_path", "")
@@ -381,6 +405,10 @@ def _enrich_catalog(hits: list[dict]) -> None:
 
 
 def _list_models() -> list[str]:
+    """Query the vLLM endpoint's ``/v1/models`` for available synthesis model IDs.
+
+    :return: List of model IDs, or an empty list if no endpoint is configured or the request fails.
+    """
     if not VLLM_ENDPOINT:
         return []
     import httpx
@@ -399,6 +427,13 @@ def _list_models() -> list[str]:
 
 
 def _synthesize(query: str, hits: list[dict], model: str | None = None) -> str | None:
+    """Generate a text answer from the retrieved hits via the vLLM chat-completions endpoint.
+
+    :param query: The original user query.
+    :param hits: Retrieved hits; only those with non-empty ``content`` (up to ``SYNTH_MAX_K``) are used.
+    :param model: Model ID to use; falls back to ``VLLM_MODEL`` when not given.
+    :return: The synthesized answer text, or ``None`` if no endpoint, no usable hits, or the call fails.
+    """
     if not VLLM_ENDPOINT:
         return None
     import httpx
@@ -458,6 +493,11 @@ def _synthesize(query: str, hits: list[dict], model: str | None = None) -> str |
 
 
 def handler(job: dict) -> dict:
+    """RunPod serverless entry point: validate the request, run semantic search, and optionally synthesize an answer.
+
+    :param job: RunPod job dict; ``job["input"]`` holds the request schema described in the module docstring.
+    :return: Response dict with ``hits`` and, if requested, a ``synthesis`` answer (see module docstring for shape).
+    """
     inp = job.get("input", {})
 
     if HANDLER_SECRET and inp.get("secret") != HANDLER_SECRET:

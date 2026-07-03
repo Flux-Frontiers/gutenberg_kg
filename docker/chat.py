@@ -134,6 +134,12 @@ st.markdown(
 
 
 def _kg_kind_badge(kg_kind: str, kg_name: str = "") -> str:
+    """Render an inline HTML badge naming a hit's source KG.
+
+    :param kg_kind: KG kind string, e.g. ``"KGKind.GUTENBERG"``.
+    :param kg_name: Display name to use instead of ``kg_kind`` when set.
+    :returns: HTML ``<span>`` markup for the badge.
+    """
     label = kg_name or kg_kind
     color = _KG_KIND_COLOR.get(kg_kind.lower().split(".")[-1], "#95A5A6")
     return (
@@ -144,6 +150,11 @@ def _kg_kind_badge(kg_kind: str, kg_name: str = "") -> str:
 
 
 def _node_kind_badge(kind: str) -> str:
+    """Render an inline HTML badge naming a hit's node kind (chunk/section/entity).
+
+    :param kind: Node kind string.
+    :returns: HTML ``<span>`` markup for the badge.
+    """
     color = _NODE_KIND_COLOR.get(kind, "#95A5A6")
     return (
         f"<span style='background:{color};color:#fff;border-radius:3px;"
@@ -153,6 +164,12 @@ def _node_kind_badge(kind: str) -> str:
 
 
 def _score_bar(score: float, width: int = 80) -> str:
+    """Render an inline HTML bar visualising a similarity score, colour-coded by magnitude.
+
+    :param score: Similarity score in ``[0, 1]``.
+    :param width: Bar width in pixels.
+    :returns: HTML markup for the bar plus a numeric label.
+    """
     pct = min(int(score * 100), 100)
     color = "#27AE60" if score >= 0.7 else "#F39C12" if score >= 0.4 else "#E74C3C"
     return (
@@ -164,6 +181,12 @@ def _score_bar(score: float, width: int = 80) -> str:
 
 
 def _preview(text: str, n: int = 220) -> tuple[str, bool]:
+    """Truncate text to roughly ``n`` characters at a word boundary.
+
+    :param text: Text to truncate.
+    :param n: Maximum length before truncation.
+    :returns: Tuple of ``(preview_text, was_truncated)``.
+    """
     text = (text or "").strip()
     if len(text) <= n:
         return text, False
@@ -172,6 +195,10 @@ def _preview(text: str, n: int = 220) -> tuple[str, bool]:
 
 
 def _render_hit_card(hit: dict) -> None:
+    """Render a single search hit as a styled HTML card with an expandable full passage.
+
+    :param hit: Hit dictionary as returned by the worker (kg/node metadata, score, content).
+    """
     kg_kind = hit.get("kg_kind", "").lower().split(".")[-1]
     kg_name = hit.get("kg_name", "")
     node_kind = hit.get("kind", "")
@@ -278,6 +305,20 @@ def _query_worker(
     model: str = "",
     backend: str = "",
 ) -> dict:
+    """Route a corpus query through the worker and return the raw result payload.
+
+    :param query: Natural-language query string.
+    :param worker_url: Base URL of the KGRAG worker.
+    :param corpus: Corpus scope, e.g. ``"all"``, ``"diary"``, or a genre name.
+    :param k: Number of hits to request.
+    :param min_score: Drop hits below this similarity score.
+    :param semantic_floor: Discard a KG entirely if its best hit is below this.
+    :param synthesize: Whether to also request a synthesised narrative answer.
+    :param secret: Shared secret for the worker (if configured).
+    :param model: Override model ID for synthesis.
+    :param backend: Synthesis backend (``"omlx"``, ``"ollama"``, ``"openai"``).
+    :returns: The worker's raw JSON response as a dict.
+    """
     return WorkerClient(worker_url, secret).query(
         query,
         corpus=corpus,
@@ -292,6 +333,13 @@ def _query_worker(
 
 @st.cache_data(ttl=60, show_spinner=False)
 def _fetch_models(worker_url: str, secret: str, backend: str = "") -> tuple[list[str], str]:
+    """Fetch the available model list and default model from the worker (cached 60s).
+
+    :param worker_url: Base URL of the KGRAG worker.
+    :param secret: Shared secret for the worker (if configured).
+    :param backend: Synthesis backend to query models for.
+    :returns: Tuple of ``(model_ids, default_model_id)``.
+    """
     return WorkerClient(worker_url, secret).list_models(backend=backend)
 
 
@@ -301,6 +349,11 @@ def _fetch_models(worker_url: str, secret: str, backend: str = "") -> tuple[list
 
 
 def _result_to_markdown(result: dict) -> str:
+    """Render a query result dict as a downloadable Markdown document.
+
+    :param result: Worker query result (question, corpus, synthesis, hits).
+    :returns: Markdown text summarising the answer and source passages.
+    """
     lines = ["# GutenbergKG — Result", ""]
     if result.get("query"):
         lines += [f"**Question:** {result['query']}", ""]
@@ -333,11 +386,19 @@ def _build_image_prompt(result: dict) -> str:
 
 
 def _open_image(path: Path) -> None:
+    """Display a saved image in the Streamlit UI with its file path as a caption.
+
+    :param path: Path to the image file on disk.
+    """
     st.image(str(path), use_container_width=True)
     st.caption(f"📁 {path}")
 
 
 def _render_assistant_turn(result: dict) -> None:
+    """Render an assistant chat turn: synthesis (or warning), stats caption, and hit cards.
+
+    :param result: Worker query result to render.
+    """
     hits = result.get("hits", [])
     synthesis = result.get("synthesis")
     synthesis_error = result.get("synthesis_error")
@@ -378,6 +439,10 @@ def _render_assistant_turn(result: dict) -> None:
 
 
 def _render_sidebar() -> dict:
+    """Render the sidebar controls (corpus, search, synthesis, image settings).
+
+    :returns: Query configuration dict assembled from the current widget values.
+    """
     st.sidebar.title("📚 GutenbergKG")
     st.sidebar.markdown(
         "245 books · 18 genres · 4 diaries  \n696K nodes · 6.2M edges · bge-small-en-v1.5"
@@ -531,6 +596,7 @@ def _render_sidebar() -> dict:
 
 
 def _init_state() -> None:
+    """Initialise Streamlit session-state defaults on first run."""
     if "messages" not in st.session_state:
         st.session_state.messages = []
     if "pending_query" not in st.session_state:
@@ -547,6 +613,7 @@ def _init_state() -> None:
 
 
 def main() -> None:
+    """Entry point: render the chat UI, handle queries, and drive image rendering."""
     _init_state()
     cfg = _render_sidebar()
 

@@ -56,6 +56,12 @@ def _resolve_two_keys(mgr: GutenbergSnapshotManager) -> tuple[str, str]:
 
 
 def _fmt_delta(val: int | float, *, pct: bool = False) -> str:
+    """Format a delta value with an explicit sign.
+
+    :param val: Delta value to format.
+    :param pct: If True, format as a percentage instead of a count.
+    :return: Signed string, e.g. ``"+42"`` or ``"+3.2%"``.
+    """
     sign = "+" if val >= 0 else ""
     if pct:
         return f"{sign}{val:.1%}"
@@ -378,6 +384,11 @@ def snapshot_diff(
     click.echo("")
 
     def _line(label: str, key: str) -> None:
+        """Echo a single ``A → B (delta)`` row for a metrics *key*.
+
+        :param label: Column label to print (e.g. ``"Books:"``).
+        :param key: Metrics dict key to compare between snapshots A and B.
+        """
         ma = sa.get("metrics", {}).get(key, 0)
         mb = sb.get("metrics", {}).get(key, 0)
         click.echo(f"  {label:<10} {ma:>10,}  →  {mb:>10,}  ({_fmt_delta(mb - ma)})")

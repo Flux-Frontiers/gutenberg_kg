@@ -148,10 +148,12 @@ class BookMeta:
 
     @property
     def db_path(self) -> Path:
+        """Path to this book's DocKG SQLite graph file."""
         return self.book_dir / ".dockg" / "graph.sqlite"
 
     @property
     def has_kg(self) -> bool:
+        """Whether a non-trivial DocKG SQLite file exists for this book."""
         return self.db_path.exists() and self.db_path.stat().st_size > 100
 
 
@@ -272,6 +274,7 @@ class ForestLayout(Layout3D):
         leaf_radius: float = 1.5,
         canopy_lift: float = 4.0,
     ) -> None:
+        """Store layout radii/scale parameters; see class docstring for their roles."""
         self.grove_inner_radius = grove_inner_radius
         self.grove_outer_radius = grove_outer_radius
         self.book_inner_radius = book_inner_radius
@@ -578,6 +581,7 @@ class TextPopup(QDialog):
     """
 
     def __init__(self, title: str, text: str, parent=None, on_close_callback=None):
+        """Build the popup dialog: title bar, rendered Markdown browser, and Close button."""
         super().__init__(parent)
         self.setWindowTitle(title)
         self.setMinimumSize(640, 420)
@@ -599,6 +603,7 @@ class TextPopup(QDialog):
         layout.addWidget(close_btn)
 
     def closeEvent(self, event):
+        """Invoke the close callback, if any, then let the dialog close normally."""
         if self.on_close_callback:
             self.on_close_callback()
         super().closeEvent(event)
@@ -1001,6 +1006,7 @@ class ForestMainWindow(QMainWindow):
         width: int = 1500,
         height: int = 950,
     ) -> None:
+        """Build the main window: control/viewport panels, mesh picking, and signal wiring."""
         super().__init__()
         self.timer = None
         self._current_picked_actor = None
@@ -1054,17 +1060,21 @@ class ForestMainWindow(QMainWindow):
 
     @staticmethod
     def _h2(text: str) -> QLabel:
+        """Build a bold, light-green section-heading label for the control panel."""
         lbl = QLabel(f"<b style='font-size:13px;color:#90EE90'>{text}</b>")
         lbl.setStyleSheet("background:transparent; border:none;")
         return lbl
 
     @staticmethod
     def _lbl(text: str) -> QLabel:
+        """Build a plain, muted-gray text label for the control panel."""
         lbl = QLabel(text)
         lbl.setStyleSheet("background:transparent; border:none; color:#c0c0c0;")
         return lbl
 
     def _build_control_panel(self) -> QWidget:
+        """Build the left control panel: corpus path, genre/book selectors, visibility
+        checkboxes, stats label, and render/save buttons."""
         ctrl = QVBoxLayout()
         ctrl.setSpacing(10)
         ctrl.setContentsMargins(6, 6, 6, 6)
@@ -1145,6 +1155,7 @@ class ForestMainWindow(QMainWindow):
         return widget
 
     def _build_viewport_panel(self) -> QWidget:
+        """Build the right panel: the PyVista viewport plus a reset/status button row."""
         vis = QVBoxLayout()
         vis.setSpacing(8)
         vis.setContentsMargins(8, 8, 8, 8)
@@ -1171,6 +1182,7 @@ class ForestMainWindow(QMainWindow):
         return widget
 
     def _stats_text(self) -> str:
+        """Return the multi-line corpus/nodes/edges summary shown in the stats label."""
         v = self.visualizer
         return (
             f"Genres: {v.num_genres}\n"
@@ -1182,6 +1194,7 @@ class ForestMainWindow(QMainWindow):
     # -- Signals / slots -----------------------------------------------------
 
     def _setup_mesh_picking(self) -> None:
+        """Enable right-click mesh picking on the plotter, routed to :meth:`on_pick`."""
         self.vtk_plotter.enable_mesh_picking(
             callback=self.on_pick,
             show=False,
@@ -1197,6 +1210,7 @@ class ForestMainWindow(QMainWindow):
             self.vtk_plotter.picker.SetPickFromList(0)
 
     def _connect_signals(self) -> None:
+        """Wire all Qt widget signals and ``param`` watchers to their handler slots."""
         self.corpus_input.editingFinished.connect(self._on_corpus_path_edited)
         self.genre_selector.itemSelectionChanged.connect(self._on_genre_selection_changed)
         self.book_selector.itemSelectionChanged.connect(self._on_book_selection_changed)
@@ -1238,24 +1252,29 @@ class ForestMainWindow(QMainWindow):
     # -- Corpus / genre / book updates ---------------------------------------
 
     def _on_corpus_path_edited(self) -> None:
+        """Push the edited corpus path text into the visualizer, triggering a rescan."""
         self.visualizer.corpus_root = self.corpus_input.text().strip()
 
     def _on_genre_selection_changed(self) -> None:
+        """Sync the visualizer's selected genres with the genre list widget selection."""
         self.visualizer.selected_genres = [
             item.text() for item in self.genre_selector.selectedItems()
         ]
 
     def _on_book_selection_changed(self) -> None:
+        """Sync the visualizer's selected books with the book list widget selection."""
         self.visualizer.selected_books = [
             item.text() for item in self.book_selector.selectedItems()
         ]
 
     def _on_genres_loaded(self, event: param.Event) -> None:
+        """Repopulate the genre list widget when the visualizer's genre list changes."""
         self.genre_selector.clear()
         for g in event.new:
             self.genre_selector.addItem(g)
 
     def _on_books_updated(self, event: param.Event) -> None:
+        """Repopulate the book list widget when the visualizer's book list changes."""
         self.book_selector.clear()
         for b in event.new:
             self.book_selector.addItem(b)
@@ -1263,6 +1282,7 @@ class ForestMainWindow(QMainWindow):
     # -- Render / pick -------------------------------------------------------
 
     def on_render_clicked(self) -> None:
+        """Render Forest button handler: trigger a full load + render of the scene."""
         self.visualizer.visualize()
 
     def on_pick(self, actor) -> None:
@@ -1330,6 +1350,7 @@ class ForestMainWindow(QMainWindow):
         self.update_status_display(f"Picked: {title} (dist {best_dist:.1f})")
 
     def _highlight_mesh(self, mesh) -> None:
+        """Clear any existing highlight, then add *mesh* as the yellow-edged highlight actor."""
         self._clear_highlight()
         self.plotter.add_mesh(
             mesh,
@@ -1345,6 +1366,7 @@ class ForestMainWindow(QMainWindow):
         self._current_picked_actor = self.plotter.actors.get("_forest_highlight")
 
     def _clear_highlight(self) -> None:
+        """Remove the current pick-highlight actor from the plotter, if one exists."""
         if self._current_picked_actor:
             try:
                 self.plotter.remove_actor(self._current_picked_actor, reset_camera=False)
@@ -1353,6 +1375,7 @@ class ForestMainWindow(QMainWindow):
             self._current_picked_actor = None
 
     def _on_popup_close(self) -> None:
+        """TextPopup close callback: clear the pick highlight and re-render the scene."""
         self._clear_highlight()
         self.plotter.render()
 
@@ -1374,6 +1397,7 @@ class ForestMainWindow(QMainWindow):
     # -- Camera --------------------------------------------------------------
 
     def reset_camera(self) -> None:
+        """Reset the plotter camera to the default isometric view and zoom level."""
         if not self.plotter:
             return
         self.plotter.reset_camera()  # type: ignore[call-arg]
@@ -1384,6 +1408,7 @@ class ForestMainWindow(QMainWindow):
     # -- Save ----------------------------------------------------------------
 
     def save_current_view(self) -> None:
+        """Save View button handler: export the current scene to HTML or a screenshot."""
         save_path = Path(self.visualizer.save_path)
         fmt = self.visualizer.save_format
         if save_path.suffix.lstrip(".") != fmt:
@@ -1403,6 +1428,8 @@ class ForestMainWindow(QMainWindow):
     # -- Reset ---------------------------------------------------------------
 
     def reset_settings(self) -> None:
+        """Reset Settings button handler: clear selections, restore default visibility
+        checkboxes, and reset the camera."""
         self.genre_selector.clearSelection()
         self.book_selector.clearSelection()
         self.cb_sections.setChecked(True)
@@ -1417,10 +1444,12 @@ class ForestMainWindow(QMainWindow):
     # -- Status --------------------------------------------------------------
 
     def on_status_change(self, event: param.Event) -> None:
+        """``param`` watcher for ``visualizer.status``: re-emit as the Qt ``status_changed`` signal."""
         self.status_changed.emit(event.new)
         QApplication.processEvents()
 
     def update_status_display(self, status: str) -> None:
+        """Render *status* into the status label, color-coded by message type (error/busy/done)."""
         if status.startswith("Error"):
             html = f"<span style='color:#FF6B6B;font-size:13px;'><b>{status}</b></span>"
         elif any(kw in status for kw in ("Rendering", "Loading", "Building", "Drawing")):
@@ -1432,11 +1461,13 @@ class ForestMainWindow(QMainWindow):
         self.status_display.setText(html)
 
     def update_window_title(self, event: param.Event) -> None:
+        """``param`` watcher for ``visualizer.window_title``: apply it to the Qt window."""
         self.setWindowTitle(event.new)
 
     # -- Cleanup -------------------------------------------------------------
 
     def cleanup(self) -> None:
+        """Close any open popup and tear down the VTK plotter to release GPU resources."""
         if self._current_popup and hasattr(self._current_popup, "isVisible"):
             try:
                 self._current_popup.close()
@@ -1454,6 +1485,7 @@ class ForestMainWindow(QMainWindow):
         gc.collect()
 
     def closeEvent(self, event) -> None:
+        """Qt window-close handler: run :meth:`cleanup` (warnings suppressed) then accept."""
         with warnings.catch_warnings():
             warnings.simplefilter("ignore")
             try:

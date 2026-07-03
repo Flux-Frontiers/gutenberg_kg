@@ -849,6 +849,11 @@ def _survey_book_dir(book_dir: str, title: str) -> dict:
 
 
 def _check_mark(value: bool) -> str:
+    """Return a checkmark or cross-mark glyph for a boolean status.
+
+    :param value: True for present/complete, False otherwise.
+    :return: ``"✓"`` if True, else ``"✗"``.
+    """
     return "✓" if value else "✗"
 
 

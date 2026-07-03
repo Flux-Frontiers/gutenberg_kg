@@ -45,26 +45,32 @@ _RED = "\033[31m"
 
 
 def _c(color: str, text: str) -> str:
+    """Wrap text in an ANSI color code, but only when stdout is a TTY."""
     return f"{color}{text}{_RESET}" if sys.stdout.isatty() else text
 
 
 def info(msg: str) -> None:
+    """Print a cyan section header line."""
     print(_c(_CYAN, f"==> {msg}"), flush=True)
 
 
 def step(msg: str) -> None:
+    """Print a green indented step line."""
     print(_c(_GREEN, f"    {msg}"), flush=True)
 
 
 def warn(msg: str) -> None:
+    """Print a yellow indented warning line."""
     print(_c(_YELLOW, f"    WARNING: {msg}"), flush=True)
 
 
 def error(msg: str) -> None:
+    """Print a red error line to stderr."""
     print(_c(_RED, f"ERROR: {msg}"), file=sys.stderr, flush=True)
 
 
 def blank() -> None:
+    """Print a blank line."""
     print(flush=True)
 
 
@@ -103,6 +109,11 @@ def run(
 
 
 def _du(path: Path) -> str:
+    """Return the human-readable disk usage of ``path`` (via ``du -sh``), or ``"?"`` on failure.
+
+    :param path: Path to measure.
+    :return: Size string (e.g. ``"1.2G"``), or ``"?"`` if ``du`` failed.
+    """
     try:
         out = subprocess.run(
             ["du", "-sh", str(path)], capture_output=True, text=True, check=False
@@ -118,6 +129,10 @@ def _du(path: Path) -> str:
 
 
 def parse_args() -> argparse.Namespace:
+    """Parse command-line arguments for the volume builder.
+
+    :return: Parsed arguments (``dest``, ``genres``, ``skip_download``, ``rebuild_only``, ``branch``).
+    """
     p = argparse.ArgumentParser(
         description=__doc__,
         formatter_class=argparse.RawDescriptionHelpFormatter,
@@ -204,6 +219,7 @@ _SYSTEM_PACKAGES = [
 
 
 def install_system_deps() -> None:
+    """Install the apt packages needed to build the venv and indices, then clean the apt cache."""
     info("Installing system dependencies …")
     run(["apt-get", "update", "-qq"])
     run(["apt-get", "install", "-y", "--no-install-recommends", *_SYSTEM_PACKAGES])
@@ -218,6 +234,11 @@ def install_system_deps() -> None:
 
 
 def ensure_venv(work_dir: Path) -> Path:
+    """Reuse an existing venv under ``work_dir``, or create a fresh Python 3.12 venv.
+
+    :param work_dir: Build working directory containing (or to contain) the ``venv`` folder.
+    :return: Path to the venv.
+    """
     venv = work_dir / "venv"
     pip = venv / "bin" / "pip"
     if pip.exists():
@@ -237,6 +258,12 @@ def ensure_venv(work_dir: Path) -> Path:
 
 
 def _clone_or_pull(url: str, dest: Path, branch: str = "main") -> None:
+    """Pull latest if ``dest`` is already a git checkout, otherwise clone ``url`` into it.
+
+    :param url: Git repository URL.
+    :param dest: Target checkout directory.
+    :param branch: Branch to clone when ``dest`` doesn't already exist.
+    """
     if (dest / ".git").exists():
         step(f"{dest.name}: pulling latest")
         run(["git", "-C", str(dest), "pull", "--quiet"])
@@ -246,6 +273,11 @@ def _clone_or_pull(url: str, dest: Path, branch: str = "main") -> None:
 
 
 def clone_repos(work_dir: Path, branch: str) -> None:
+    """Clone (or pull) the gutenberg_kg and KGRAG repos into ``work_dir``.
+
+    :param work_dir: Build working directory to clone into.
+    :param branch: gutenberg_kg branch to check out.
+    """
     info("Cloning repos …")
     os.environ["GIT_TERMINAL_PROMPT"] = "0"
     subprocess.run(["git", "config", "--global", "credential.helper", ""], check=False)
@@ -258,6 +290,11 @@ def clone_repos(work_dir: Path, branch: str) -> None:
 
 
 def install_packages(venv: Path, work_dir: Path) -> None:
+    """Editable-install the cloned kgrag (with the ``kg`` extra) and gutenberg_kg packages into the venv.
+
+    :param venv: Target venv path.
+    :param work_dir: Build working directory containing the cloned repos.
+    """
     pip = venv / "bin" / "pip"
     info("Installing Python packages …")
     run([pip, "install", "--quiet", "-e", f"{work_dir / 'kgrag'}[kg]"])
@@ -274,6 +311,13 @@ _DEFAULT_GENRES = ["philosophy", "english-literature", "russian-literature"]
 
 
 def resolve_genres(args: argparse.Namespace, work_dir: Path) -> list[str]:
+    """Determine which genres to build: explicit ``--genres``, auto-detected corpus
+    subdirectories (in ``--rebuild-only`` mode), or the default genre list.
+
+    :param args: Parsed CLI arguments.
+    :param work_dir: Build working directory containing the cloned gutenberg_kg corpus.
+    :return: List of genre names to process.
+    """
     if args.genres is not None:
         return args.genres
 
@@ -298,6 +342,14 @@ def build_gutenbergkg(
     genres: list[str],
     skip_download: bool,
 ) -> None:
+    """Download and ingest each genre into DocKG, then rsync the resulting indices to the volume.
+
+    :param venv: Venv containing the installed ``gutenkg`` CLI.
+    :param work_dir: Build working directory containing the cloned gutenberg_kg repo.
+    :param dest: Network Volume destination to sync the built ``.dockg`` indices to.
+    :param genres: Genres to download (unless skipped) and ingest.
+    :param skip_download: Skip book downloads and ingest from the existing corpus only.
+    """
     info("Building GutenbergKG DocKG indices …")
     gutenkg = venv / "bin" / "gutenkg"
     gutenberg_src = work_dir / "gutenberg_kg"
@@ -344,6 +396,10 @@ def build_gutenbergkg(
 
 
 def print_summary(dest: Path) -> None:
+    """Print the final volume contents and next-step instructions.
+
+    :param dest: Network Volume destination that was built.
+    """
     blank()
     print("=" * 60)
     print("  Volume contents:")
@@ -362,6 +418,7 @@ def print_summary(dest: Path) -> None:
 
 
 def main() -> None:
+    """Run the full (or rebuild-only) volume build: env setup, deps, clone, install, and index build."""
     args = parse_args()
     dest: Path = args.dest
     work_dir = dest / "gutenkg_build"

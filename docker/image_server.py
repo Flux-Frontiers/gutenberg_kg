@@ -76,6 +76,10 @@ class ImageGenRequest(BaseModel):
 
 @app.get("/v1/models")
 def list_models():
+    """List the single model this server serves, in OpenAI-compatible format.
+
+    :returns: OpenAI-style ``{"object": "list", "data": [...]}`` model listing.
+    """
     return {
         "object": "list",
         "data": [{"id": "flux2-klein-4b", "object": "model", "owned_by": "mflux"}],
@@ -84,6 +88,15 @@ def list_models():
 
 @app.post("/v1/images/generations")
 async def generate_image(req: ImageGenRequest):
+    """Generate an image via image_gen.generate() and return it as base64 or a filepath.
+
+    Runs the (blocking) generation call in an executor thread to avoid blocking
+    the event loop, and maps the requested pixel size to the nearest known
+    aspect ratio.
+
+    :param req: Parsed request body (prompt, size, steps, seed, response_format, ...).
+    :returns: OpenAI-compatible JSON response with either ``b64_json`` or ``filepath``.
+    """
     try:
         width, height = map(int, req.size.split("x"))
     except ValueError:
@@ -125,6 +138,7 @@ async def generate_image(req: ImageGenRequest):
 
 
 def main() -> None:
+    """Run the FastAPI app with uvicorn, using host/port from environment variables."""
     host = os.environ.get("MFLUX_SERVER_HOST", "0.0.0.0")
     port = int(os.environ.get("MFLUX_SERVER_PORT", "8090"))
     uvicorn.run(app, host=host, port=port)
