@@ -643,7 +643,7 @@ def _list_books(genre: str) -> dict:
         for meta in _catalog.values()
         if meta.get("genre") == genre
     ]
-    books.sort(key=lambda b: (b.get("title") or ""))
+    books.sort(key=lambda b: b.get("title") or "")
     return {"genre": genre, "books": books}
 
 
