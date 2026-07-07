@@ -38,6 +38,31 @@ _SYNTH_PROVIDERS: dict[str, str] = {
     "OpenAI": "openai",
 }
 
+# Synthesis models to hide from the dropdown. Reasoning models like Agents-A1
+# emit their chain-of-thought as plain prose in the response body — not as
+# strippable `<think>` tags, and unaffected by the `enable_thinking:false` flag —
+# so on RAG prompts the answer truncates inside the thinking and the UI shows raw
+# reasoning instead of an answer. Also excludes non-chat utilities (document
+# converters, embedding models). Matched case-insensitively as substrings.
+_MODEL_BLOCKLIST: tuple[str, ...] = (
+    "agents-a1",  # reasoning agent — unstrippable "Thinking Process:" prose
+    "deepseek-r1",  # R1 reasoning model
+    "gpt-oss",  # reasoning model (harmony channels leak into content)
+    "markitdown",  # document-to-markdown converter, not a chat model
+    "embed",  # embedding models (nomic-embed, mxbai-embed, qwen3-embedding)
+)
+
+
+def _is_synth_model(model_id: str) -> bool:
+    """Return ``True`` if a model id is usable for RAG synthesis (not blocklisted).
+
+    :param model_id: Model id reported by the backend.
+    :returns: ``False`` for reasoning/non-chat models unsuited to concise RAG.
+    """
+    lid = model_id.lower()
+    return not any(pat in lid for pat in _MODEL_BLOCKLIST)
+
+
 _RESOLUTION_LABELS: dict[str, str] = {
     "Preview": "Preview  (768 × 512)",
     "Standard": "Standard  (1152 × 768)",
@@ -338,9 +363,14 @@ def _fetch_models(worker_url: str, secret: str, backend: str = "") -> tuple[list
     :param worker_url: Base URL of the KGRAG worker.
     :param secret: Shared secret for the worker (if configured).
     :param backend: Synthesis backend to query models for.
-    :returns: Tuple of ``(model_ids, default_model_id)``.
+    :returns: Tuple of ``(model_ids, default_model_id)``. Reasoning and non-chat
+              models (see ``_MODEL_BLOCKLIST``) are filtered out.
     """
-    return WorkerClient(worker_url, secret).list_models(backend=backend)
+    models, default = WorkerClient(worker_url, secret).list_models(backend=backend)
+    models = [m for m in models if _is_synth_model(m)]
+    if default and not _is_synth_model(default):
+        default = models[0] if models else ""
+    return models, default
 
 
 # ---------------------------------------------------------------------------
