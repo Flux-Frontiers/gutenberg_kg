@@ -45,6 +45,10 @@ Request schema
   "synthesize":     bool  — call vLLM for a generated answer  (default: false)
   "model":          str   — override VLLM_MODEL for this request
   "op":             str   — "models" returns {"models": [...], "default": ...}
+                            "list_genres" returns [{"genre", "book_count"}, ...]
+                            "list_books" (needs "genre") returns its books
+                            "get_chapters" (needs "genre", "book") returns its chapter list
+                            "get_chapter" (needs "genre", "book", "section_id") returns chapter text
 }
 """
 
@@ -125,6 +129,10 @@ _DIARY_TABLES: dict = {}
 # via reciprocal rank fusion (RRF).  None when the corpus has no lexical index,
 # in which case retrieval degrades to pure dense ranking.
 _DOCKG_STORE = None
+
+# Populated on first use: a plain GraphStore for chapter/section reads (Browse
+# page), independent of the FTS gate on _DOCKG_STORE above.
+_DOCKG_STORE_RO = None
 
 # RRF constant — matches doc_kg's _fused_seeds so the handler and library blend
 # dense + lexical ranks on the same scale.
@@ -566,6 +574,183 @@ def _semantic_search_diaries(
     return hits
 
 
+def _dockg_store_ro():
+    """Return a ``GraphStore`` for read-only node lookups (chapters/sections).
+
+    Reuses ``_DOCKG_STORE`` if the FTS-gated lexical channel already opened one;
+    otherwise lazily opens and caches a plain store, since chapter/section reads
+    don't require an FTS5 index.
+
+    :returns: An open ``GraphStore``, or ``None`` if the DocKG SQLite is missing.
+    """
+    global _DOCKG_STORE_RO
+    if _DOCKG_STORE is not None:
+        return _DOCKG_STORE
+    if _DOCKG_STORE_RO is None and _DOCKG_SQLITE.exists():
+        from doc_kg.store import GraphStore
+
+        _DOCKG_STORE_RO = GraphStore(_DOCKG_SQLITE)
+    return _DOCKG_STORE_RO
+
+
+def _resolve_book_file_path(genre: str, book: str) -> str | None:
+    """Look up the content ``.md`` file path for a ``<genre>/<book>`` pair.
+
+    Each book directory has exactly one content document plus a ``reference.md``;
+    this is a single prefix lookup that ``GraphStore.query_nodes`` doesn't support
+    directly (it only matches ``file_path`` exactly), so it stays raw SQL.
+
+    :param genre: Genre slug, e.g. ``"american-literature"``.
+    :param book: Book directory name, e.g. ``"Adventures of Huckleberry Finn"``.
+    :returns: The node ``file_path`` for the book's content document, or ``None``.
+    """
+    store = _dockg_store_ro()
+    if store is None:
+        return None
+    row = store.con.execute(
+        "SELECT file_path FROM nodes WHERE kind='document' AND file_path LIKE ? "
+        "AND file_path NOT LIKE '%reference.md' LIMIT 1",
+        (f"{genre}/{book}/%",),
+    ).fetchone()
+    return row[0] if row else None
+
+
+def _list_genres() -> dict:
+    """List every genre in ``catalog.json`` with its book count.
+
+    :returns: ``{"genres": [{"genre": ..., "book_count": ...}, ...]}``, sorted by genre.
+    """
+    counts: dict[str, int] = defaultdict(int)
+    for meta in _catalog.values():
+        counts[meta.get("genre", "")] += 1
+    genres = [{"genre": genre, "book_count": count} for genre, count in sorted(counts.items())]
+    return {"genres": genres}
+
+
+def _list_books(genre: str) -> dict:
+    """List every book in a genre from ``catalog.json``.
+
+    :param genre: Genre slug to filter by.
+    :returns: ``{"genre": ..., "books": [{"book", "title", "author", "ebook_id"}, ...]}``.
+    """
+    books = [
+        {
+            "book": meta.get("book"),
+            "title": meta.get("title"),
+            "author": meta.get("author"),
+            "ebook_id": meta.get("ebook_id"),
+        }
+        for meta in _catalog.values()
+        if meta.get("genre") == genre
+    ]
+    books.sort(key=lambda b: b.get("title") or "")
+    return {"genre": genre, "books": books}
+
+
+def _get_chapters(genre: str, book: str) -> dict:
+    """List a book's chapters (from ``section`` nodes, or ``chunk.chapter`` as fallback).
+
+    :param genre: Genre slug.
+    :param book: Book directory name.
+    :returns: ``{"book", "chapters": [{"id", "title", "index"}, ...]}``, or an
+        ``"error"`` key if the book/store can't be resolved.
+    """
+    store = _dockg_store_ro()
+    if store is None:
+        return {"error": "DocKG store unavailable"}
+    file_path = _resolve_book_file_path(genre, book)
+    if file_path is None:
+        return {"error": f"book not found: {genre}/{book}"}
+
+    sections = store.query_nodes(kinds=["section"], file_path=file_path)
+    if sections:
+        chapters = [
+            {"id": s["id"], "title": s.get("title") or s.get("name"), "index": i}
+            for i, s in enumerate(sections)
+        ]
+        return {"book": book, "chapters": chapters}
+
+    # Verse-chunked genres (sacred-texts) may carry no section nodes — fall back
+    # to grouping chunks by their `chapter` column.
+    chunks = store.query_nodes(kinds=["chunk"], file_path=file_path)
+    seen_chapters: list[int] = []
+    for c in chunks:
+        ch = c.get("chapter")
+        if ch is not None and ch not in seen_chapters:
+            seen_chapters.append(ch)
+    chapters = [
+        {"id": f"chapter:{ch}", "title": f"Chapter {ch}", "index": i}
+        for i, ch in enumerate(seen_chapters)
+    ]
+    return {"book": book, "chapters": chapters}
+
+
+def _get_chapter(genre: str, book: str, section_id: str) -> dict:
+    """Reconstruct one chapter's text by concatenating its chunks in order.
+
+    :param genre: Genre slug.
+    :param book: Book directory name.
+    :param section_id: A chapter id from :func:`_get_chapters` — either a
+        ``section`` node id, or a synthetic ``"chapter:<n>"`` id from the
+        chunk-grouping fallback.
+    :returns: ``{"title", "text", "index", "total", "prev_id", "next_id"}``, or
+        an ``"error"`` key if the book/section can't be resolved.
+    """
+    store = _dockg_store_ro()
+    if store is None:
+        return {"error": "DocKG store unavailable"}
+    file_path = _resolve_book_file_path(genre, book)
+    if file_path is None:
+        return {"error": f"book not found: {genre}/{book}"}
+
+    sections = store.query_nodes(kinds=["section"], file_path=file_path)
+    if sections:
+        index = next((i for i, s in enumerate(sections) if s["id"] == section_id), None)
+        if index is None:
+            return {"error": f"unknown section: {section_id}"}
+        start = sections[index]["char_start"]
+        end = sections[index + 1]["char_start"] if index + 1 < len(sections) else None
+        chunks = store.query_nodes(kinds=["chunk"], file_path=file_path)
+        text = "\n\n".join(
+            c["text"]
+            for c in chunks
+            if c["char_start"] >= start and (end is None or c["char_start"] < end)
+        )
+        return {
+            "title": sections[index].get("title") or sections[index].get("name"),
+            "text": text,
+            "index": index,
+            "total": len(sections),
+            "prev_id": sections[index - 1]["id"] if index > 0 else None,
+            "next_id": sections[index + 1]["id"] if index + 1 < len(sections) else None,
+        }
+
+    # Chunk-grouping fallback (verse-chunked genres).
+    if not section_id.startswith("chapter:"):
+        return {"error": f"unknown section: {section_id}"}
+    chapter_num = int(section_id.split(":", 1)[1])
+    chunks = store.query_nodes(kinds=["chunk"], file_path=file_path)
+    seen_chapters: list[int] = []
+    for c in chunks:
+        ch = c.get("chapter")
+        if ch is not None and ch not in seen_chapters:
+            seen_chapters.append(ch)
+    if chapter_num not in seen_chapters:
+        return {"error": f"unknown chapter: {chapter_num}"}
+    index = seen_chapters.index(chapter_num)
+    text = "\n\n".join(c["text"] for c in chunks if c.get("chapter") == chapter_num)
+    prev_ch = seen_chapters[index - 1] if index > 0 else None
+    next_ch = seen_chapters[index + 1] if index + 1 < len(seen_chapters) else None
+    return {
+        "title": f"Chapter {chapter_num}",
+        "text": text,
+        "index": index,
+        "total": len(seen_chapters),
+        "prev_id": f"chapter:{prev_ch}" if prev_ch is not None else None,
+        "next_id": f"chapter:{next_ch}" if next_ch is not None else None,
+    }
+
+
 def _enrich_catalog(hits: list[dict]) -> None:
     """Join author/title/genre from catalog.json onto DocKG hits."""
     for h in hits:
@@ -608,6 +793,16 @@ def handler(job: dict) -> dict:
     aux_result = handle_aux_ops(inp, _synth_for_backend, _image_for_backend)
     if aux_result is not None:
         return aux_result
+
+    op = inp.get("op", "")
+    if op == "list_genres":
+        return _list_genres()
+    if op == "list_books":
+        return _list_books(inp.get("genre", ""))
+    if op == "get_chapters":
+        return _get_chapters(inp.get("genre", ""), inp.get("book", ""))
+    if op == "get_chapter":
+        return _get_chapter(inp.get("genre", ""), inp.get("book", ""), inp.get("section_id", ""))
 
     query = inp.get("query", "").strip()
     corpus = inp.get("corpus", "all")

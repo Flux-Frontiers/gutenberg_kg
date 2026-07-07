@@ -77,6 +77,7 @@ COPY bundles/gutenberg-all/ /workspace/gutenberg/
 
 COPY docker/handler.py   /app/handler.py
 COPY docker/chat.py      /app/chat.py
+COPY docker/pages/       /app/pages/
 COPY docker/image_gen.py /app/image_gen.py
 
 ENV GUTENBERG_ROOT=/workspace/gutenberg

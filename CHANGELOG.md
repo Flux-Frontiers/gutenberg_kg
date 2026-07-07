@@ -10,6 +10,20 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added
 
+- **Corpus browser** — a new "Browse" page (`docker/pages/1_Browse.py`) lets you
+  list every book by genre and read it chapter by chapter, reconstructed from
+  the DocKG section/chunk nodes already baked into the worker's index (no raw
+  corpus text needs to ship in the deployed image). Backed by four new
+  `docker/handler.py` ops — `list_genres`, `list_books`, `get_chapters`,
+  `get_chapter` — served through the existing `/runsync` endpoint alongside
+  search. Streamlit's multi-page auto-discovery means `chat.py` itself needed
+  no changes; `docker/Dockerfile` now also copies `docker/pages/` into the image.
+- **Synthesis model blocklist** (`docker/chat.py`) — reasoning models (e.g.
+  Agents-A1, DeepSeek-R1, gpt-oss) and non-chat utility models (document
+  converters, embedders) are now filtered out of the model dropdown, since their
+  chain-of-thought prose isn't strippable and truncates RAG answers before the
+  actual response.
+
 ### Changed
 
 ### Removed
