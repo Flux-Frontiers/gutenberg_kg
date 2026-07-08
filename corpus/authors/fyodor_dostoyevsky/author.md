@@ -13,3 +13,4 @@
 | Notes from Underground (Dostoevsky) | russian-literature |
 | The Brothers Karamazov | russian-literature |
 | The Idiot | russian-literature |
+| The possessed :  or, The devils | russian-literature |

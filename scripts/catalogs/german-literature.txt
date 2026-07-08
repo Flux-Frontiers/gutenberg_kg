@@ -3,7 +3,7 @@
 # Download: gutenkg download catalog scripts/catalogs/german-literature.txt --genre german-literature
 
 2229	Faust Part I (Goethe)
-3233	Faust Part II (Goethe)
+2230	Faust Part II (Goethe)
 5200	The Metamorphosis (Kafka)
 7849	The Trial (Kafka)
 2500	Siddhartha (Hesse)

@@ -9,4 +9,5 @@
 
 | Title | Genre |
 |-------|-------|
+| Confessions — Jean-Jacques Rousseau | biography |
 | The Social Contract (Rousseau) | philosophy |

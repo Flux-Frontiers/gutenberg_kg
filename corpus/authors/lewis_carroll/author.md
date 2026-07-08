@@ -10,4 +10,3 @@
 | Title | Genre |
 |-------|-------|
 | Alices Adventures in Wonderland | english-literature |
-| Flatland | science-fiction |

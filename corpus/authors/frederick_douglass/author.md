@@ -9,4 +9,4 @@
 
 | Title | Genre |
 |-------|-------|
-| Narrative of the Life of Frederick Douglass (Douglass) | american-literature |
+| Narrative of the Life of Frederick Douglass | biography |

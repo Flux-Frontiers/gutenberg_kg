@@ -9,5 +9,6 @@
 
 | Title | Genre |
 |-------|-------|
+| Autobiography | biography |
 | On Liberty (Mill) | philosophy |
 | Utilitarianism (Mill) | philosophy |

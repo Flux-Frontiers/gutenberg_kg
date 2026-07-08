@@ -9,4 +9,5 @@
 
 | Title | Genre |
 |-------|-------|
+| The Importance of Being Earnest — Oscar Wilde | drama |
 | The Picture of Dorian Gray | english-literature |

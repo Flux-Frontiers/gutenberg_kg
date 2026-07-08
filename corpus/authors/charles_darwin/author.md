@@ -9,6 +9,7 @@
 
 | Title | Genre |
 |-------|-------|
-| Germinal (Zola) | french-literature |
-| Howards End (Forster) | english-literature |
-| On the Origin of Species | philosophy |
+| Autobiography of Charles Darwin | natural-history |
+| On the Origin of Species — Charles Darwin | natural-history |
+| The Descent of Man — Charles Darwin | natural-history |
+| The Voyage of the Beagle — Charles Darwin | natural-history |

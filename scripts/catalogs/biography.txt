@@ -20,7 +20,7 @@
 # ── 18th–19th Century ────────────────────────────────────────────────────────
 148	Autobiography of Benjamin Franklin
 1564	The Life of Samuel Johnson — James Boswell
-7223	Autobiography of John Stuart Mill
+10378	Autobiography of John Stuart Mill
 
 # ── American ─────────────────────────────────────────────────────────────────
 23	Narrative of the Life of Frederick Douglass

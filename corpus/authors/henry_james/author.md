@@ -9,5 +9,6 @@
 
 | Title | Genre |
 |-------|-------|
-| The Portrait of a Lady (Henry James) | english-literature |
+| The Portrait of a Lady — Volume 1 | english-literature |
+| The Portrait of a Lady — Volume 2 | english-literature |
 | The Turn of the Screw (Henry James) | english-literature |

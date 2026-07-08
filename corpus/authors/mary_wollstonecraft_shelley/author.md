@@ -9,5 +9,4 @@
 
 | Title | Genre |
 |-------|-------|
-| Frankenstein | english-literature |
 | Frankenstein | science-fiction |

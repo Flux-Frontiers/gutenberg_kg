@@ -23,12 +23,28 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   converters, embedders) are now filtered out of the model dropdown, since their
   chain-of-thought prose isn't strippable and truncates RAG answers before the
   actual response.
+- **Title/content mismatch detection in `gutenkg audit`** (`src/gutenberg_kg/audit.py`)
+  — compares each book's `reference.md` title against the quoted title in its
+  auto-generated `## Summary` (sourced from the real fetched text) and flags a
+  divergence as an error, catching a wrong Gutenberg ID that silently mislabels
+  a whole book. A curated `KNOWN_TITLE_VARIANTS` allowlist (by ebook ID) exempts
+  legitimate alternate titles/translations (e.g. *The Quran* / *The Koran*,
+  *Faust Part I* / *Faust: Der Tragödie erster Teil*) from being flagged.
 
 ### Changed
 
 ### Removed
 
 ### Fixed
+
+- **Corpus relabel/re-fetch for mislabeled books** surfaced by the new audit
+  check — wrong-ID or mismatched entries were replaced with the correct text
+  across `ancient-classical`, `biography`, `drama`, `english-literature`,
+  `german-literature`, `letters`, `russian-literature`, `science-fiction`, and
+  `travel` (e.g. *Oresteia (Aeschylus)* → *The House of Atreus* (Agamemnon,
+  Libation Bearers, Furies); *A Journey to Other Worlds (Astor)* → *A Journey in
+  Other Worlds: A Romance of the Future*). `corpus/authors/` gained ~40 new
+  author pages and `docs/CORPUS.md` was regenerated to match.
 
 ---
 

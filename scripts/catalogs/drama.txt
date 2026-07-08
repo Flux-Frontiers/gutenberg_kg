@@ -10,7 +10,7 @@
 # Note: Aristophanes and Euripides are already in ancient-classical;
 # listed here as reference only — do not re-ingest.
 # Already in ancient-classical (skip): Medea (#35), Oresteia (#8714),
-#   The Clouds (#2562), The Birds (#3013)
+#   The Clouds (#2562), The Birds (#3013), Oresteia (#8604)
 
 # ── Jacobean & Elizabethan ────────────────────────────────────────────────────
 779	Doctor Faustus — Christopher Marlowe
@@ -20,11 +20,10 @@
 # ── 19th Century European ─────────────────────────────────────────────────────
 2542	A Doll's House — Henrik Ibsen
 4093	Hedda Gabler — Henrik Ibsen
-2046	The Master Builder — Henrik Ibsen
+4070	The Master Builder — Henrik Ibsen
 
 # ── Late 19th / Early 20th Century ───────────────────────────────────────────
 3825	Pygmalion — George Bernard Shaw
-3175	Major Barbara — George Bernard Shaw
+3790	Major Barbara — George Bernard Shaw
 844	The Importance of Being Earnest — Oscar Wilde
-7984	The Cherry Orchard — Anton Chekhov
-7986	The Seagull — Anton Chekhov
+1754	The Seagull — Anton Chekhov

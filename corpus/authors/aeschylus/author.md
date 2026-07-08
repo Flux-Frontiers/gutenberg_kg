@@ -9,4 +9,4 @@
 
 | Title | Genre |
 |-------|-------|
-| Oresteia (Aeschylus) | ancient-classical |
+| The House of Atreus; Being the Agamemnon, the Libation bearers, and the Furies | ancient-classical |

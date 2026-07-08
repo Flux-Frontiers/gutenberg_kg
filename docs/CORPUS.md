@@ -2,12 +2,12 @@
 
 > **Generated**
 > - Script: `regenerate_corpus_doc.py`
-> - gutenkg: `1.6.0`
-> - Date: `2026-06-15T00:10:12Z`
+> - gutenkg: `1.7.1`
+> - Date: `2026-07-07T23:36:20Z`
 > - Host: `turing (Darwin arm64)`
-> - Elapsed: `0.03s`
+> - Elapsed: `0.01s`
 
-234 public-domain texts across 19 genres. Planned additions are tracked in [`CORPUS_WISHLIST.md`](CORPUS_WISHLIST.md).
+230 public-domain texts across 19 genres. Planned additions are tracked in [`CORPUS_WISHLIST.md`](CORPUS_WISHLIST.md).
 
 ### Philosophy (39)
 
@@ -53,7 +53,7 @@
 | Thus Spake Zarathustra | Friedrich Wilhelm Nietzsche |
 | Utilitarianism | Mill |
 
-### English Literature (36)
+### English Literature (37)
 
 | Title | Author |
 |---|---|
@@ -71,7 +71,7 @@
 | Grimms Fairy Tales | Wilhelm Grimm |
 | Gullivers Travels | Jonathan Swift |
 | Heart of Darkness | Joseph Conrad |
-| Howards End | Forster |
+| Howards End | E. M. (Edward Morgan) Forster |
 | Jane Eyre | Charlotte Brontë |
 | Kim | Kipling |
 | Middlemarch | George Eliot |
@@ -85,7 +85,8 @@
 | The Man Who Was Thursday | Chesterton |
 | The Mayor of Casterbridge | Hardy |
 | The Picture of Dorian Gray | Oscar Wilde |
-| The Portrait of a Lady | Henry James |
+| The Portrait of a Lady — Volume 1 | Henry James |
+| The Portrait of a Lady — Volume 2 | Henry James |
 | The Strange Case of Dr Jekyll and Mr Hyde | Robert Louis Stevenson |
 | The Time Machine | H. G. (Herbert George) Wells |
 | The Turn of the Screw | Henry James |
@@ -106,7 +107,6 @@
 | Minor Dialogues, Together With the Dialogue on Clemency | Lucius Annaeus Seneca |
 | Oedipus King of Thebes | Sophocles |
 | On the Nature of Things | Lucretius |
-| Oresteia | Aeschylus |
 | Parallel Lives | Plutarch |
 | The Aeneid | Virgil |
 | The Birds | Aristophanes |
@@ -116,6 +116,7 @@
 | The Eleven Comedies, Volume 2 | Aristophanes |
 | The Frogs | Aristophanes |
 | The Golden Sayings of Epictetus, with the Hymn of Cleanthes | Epictetus |
+| The House of Atreus; Being the Agamemnon, the Libation bearers, and the Furies | Aeschylus |
 | The Iliad | Homer |
 | The Meditations of the Emperor Marcus Aurelius Antoninus | Emperor of Rome Marcus Aurelius |
 | The Odyssey | Homer |
@@ -148,7 +149,7 @@
 | Walden | Henry David Thoreau |
 | White Fang | London |
 
-### Russian Literature (13)
+### Russian Literature (12)
 
 | Title | Author |
 |---|---|
@@ -158,11 +159,10 @@
 | Dead Souls | Nikolai Vasilevich Gogol |
 | Fathers and Sons | Turgenev |
 | Notes from Underground | Dostoevsky |
-| Oblomov | Goncharov |
+| Oblomov | Ivan Aleksandrovich Goncharov |
 | On the Eve | Turgenev |
 | The Brothers Karamazov | Fyodor Dostoyevsky |
 | The Idiot | Fyodor Dostoyevsky |
-| The Overcoat | Gogol |
 | The possessed :  or, The devils | Fyodor Dostoyevsky |
 | War and Peace | Leo, graf Tolstoy |
 
@@ -187,9 +187,9 @@
 
 | Title | Author |
 |---|---|
+| Autobiography | John Stuart Mill |
 | Autobiography of Benjamin Franklin | Benjamin Franklin |
 | Autobiography of Benvenuto Cellini | Benvenuto Cellini |
-| Autobiography of John Stuart Mill | Unknown |
 | Confessions — Jean-Jacques Rousseau | Jean-Jacques Rousseau |
 | Confessions — Saint Augustine | Saint Augustine |
 | Incidents in the Life of a Slave Girl — Harriet Jacobs | Harriet Jacobs |
@@ -199,33 +199,31 @@
 | The Life of Samuel Johnson — James Boswell | James Boswell |
 | Up From Slavery — Booker T. Washington | Booker T. Washington |
 
-### Drama (11)
+### Drama (10)
 
 | Title | Author |
 |---|---|
 | A Doll's House — Henrik Ibsen | Henrik Ibsen |
 | Doctor Faustus — Christopher Marlowe | Christopher Marlowe |
 | Hedda Gabler — Henrik Ibsen | Henrik Ibsen |
-| Major Barbara — George Bernard Shaw | George Bernard Shaw |
+| Major Barbara | Bernard Shaw |
 | Pygmalion — George Bernard Shaw | George Bernard Shaw |
 | Tamburlaine the Great — Christopher Marlowe | Christopher Marlowe |
-| The Cherry Orchard — Anton Chekhov | Anton Chekhov |
 | The Duchess of Malfi — John Webster | John Webster |
 | The Importance of Being Earnest — Oscar Wilde | Oscar Wilde |
-| The Master Builder — Henrik Ibsen | Henrik Ibsen |
-| The Seagull — Anton Chekhov | Anton Chekhov |
+| The Master Builder | Henrik Ibsen |
+| The sea-gull | Anton Pavlovich Chekhov |
 
-### Science Fiction (19)
+### Science Fiction (18)
 
 | Title | Author |
 |---|---|
-| A Journey to Other Worlds | Astor |
+| A Journey in Other Worlds: A Romance of the Future | John Jacob Astor |
 | A Princess of Mars | Edgar Rice Burroughs |
 | At the Earth's Core | Edgar Rice Burroughs |
 | At the Mountains of Madness | H. P. (Howard Phillips) Lovecraft |
 | Flatland | Edwin Abbott Abbott |
 | Frankenstein | Mary Wollstonecraft Shelley |
-| Herbert West: Reanimator | H. P. (Howard Phillips) Lovecraft |
 | Pellucidar | Burroughs |
 | The Call of Cthulhu | H. P. (Howard Phillips) Lovecraft |
 | The Dunwich Horror | H. P. (Howard Phillips) Lovecraft |
@@ -236,18 +234,18 @@
 | The island of Doctor Moreau | H. G. (Herbert George) Wells |
 | The Lost World | Arthur Conan Doyle |
 | The Shadow over Innsmouth | H. P. (Howard Phillips) Lovecraft |
-| The Warlord of Mars | Burroughs |
-| When the World Screamed | Doyle |
+| The Shunned House | H. P. (Howard Phillips) Lovecraft |
+| The warlord of Mars | Edgar Rice Burroughs |
 
 ### Travel (6)
 
 | Title | Author |
 |---|---|
-| A Lady's Life in the Rocky Mountains — Isabella Bird | Isabella Bird |
+| A Lady's Life in the Rocky Mountains | Isabella L. (Isabella Lucy) Bird |
 | The Innocents Abroad — Mark Twain | Mark Twain |
 | The Travels of Marco Polo | da Pisa Rusticiano |
-| Travels in the Interior Districts of Africa — Mungo Park | Mungo Park |
-| Two Years Before the Mast — Richard Henry Dana Jr. | Richard Henry Dana Jr. |
+| Travels in the interior districts of Africa: performed under the direction and patronage of the African Association, in the years 1795, 1796, and 1797 | Mungo Park |
+| Two Years Before the Mast | Richard Henry Dana |
 | Typee: A Peep at Polynesian Life — Herman Melville | Herman Melville |
 
 ### Natural History (7)
@@ -274,34 +272,32 @@
 | The Quran | Rodwell translation |
 | The Upanishads | Max Müller translation |
 
-### Letters (7)
+### Letters (6)
 
 | Title | Author |
 |---|---|
-| Letters and Journals of Lord Byron | selected |
-| Letters of Charles Lamb — Volume 1 | Edward Everett Hale |
 | Letters of John Keats to His Family and Friends | John Keats |
 | Letters of Pliny the Younger | the Younger Pliny |
+| Letters on England | Voltaire |
 | Letters to His Son — Lord Chesterfield | Lord Chesterfield |
-| Philosophical Letters — Voltaire | Voltaire |
-| Turkish Embassy Letters — Lady Mary Wortley Montagu | Lady Mary Wortley Montagu |
+| The Works of Lord Byron: Letters and Journals. Vol. 1 | George Gordon Byron, Baron Byron |
+| The Works of Lord Byron: Letters and Journals. Vol. 2 | George Gordon Byron, Baron Byron |
 
-### World Literature (5)
+### World Literature (4)
 
 | Title | Author |
 |---|---|
 | Gitanjali | Tagore |
 | One Thousand and One Nights | Lane translation |
-| The Divine Comedy | Dante - Inferno |
-| The Divine Comedy: Paradiso | Dante |
-| The Divine Comedy: Purgatorio | Dante |
+| The Divine Comedy | Cary |
+| The Divine Comedy | Longfellow |
 
 ### German Literature (5)
 
 | Title | Author |
 |---|---|
 | Faust Part I | Goethe |
-| Faust Part II | Goethe |
+| Faust: Der Tragödie zweiter Teil | Johann Wolfgang von Goethe |
 | Siddhartha | Hesse |
 | The Metamorphosis | Kafka |
 | The Trial | Kafka |
@@ -338,4 +334,4 @@
 | Macbeth | William Shakespeare |
 | Romeo and Juliet | William Shakespeare |
 
-<!-- generated by regenerate_corpus_doc.py | gutenkg 1.6.0 | 2026-06-15T00:10:12Z | turing (Darwin arm64) | 0.03s -->
+<!-- generated by regenerate_corpus_doc.py | gutenkg 1.7.1 | 2026-07-07T23:36:20Z | turing (Darwin arm64) | 0.01s -->

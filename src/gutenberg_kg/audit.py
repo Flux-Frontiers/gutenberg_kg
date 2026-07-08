@@ -19,8 +19,10 @@ exit code when any error is found, so it is CI-friendly.
 
 from __future__ import annotations
 
+import re
 import sqlite3
 from dataclasses import dataclass, field
+from difflib import SequenceMatcher
 from pathlib import Path
 
 from gutenberg_kg.authors import parse_reference
@@ -30,6 +32,32 @@ from gutenberg_kg.ingest import slugify
 REPO_ROOT = Path(__file__).resolve().parents[2]
 CORPUS_ROOT = REPO_ROOT / "corpus"
 DIARIES_GENRE = "diaries"
+
+# Curated catalog titles that intentionally differ from the Gutenberg canonical
+# title (a shortened form, or an alternate translation/romanization of the same
+# work). These are verified same-work, so the title/content check below
+# allowlists them by Gutenberg ID rather than flagging them as swaps.
+KNOWN_TITLE_VARIANTS: frozenset[int] = frozenset(
+    {
+        2147,  # Tales of Mystery and Imagination  ~ The Works of Poe, Vol. 1
+        779,  # Doctor Faustus              ~ The Tragical History of Doctor Faustus
+        829,  # Gulliver's Travels          ~ ...into Several Remote Nations of the World
+        2610,  # The Hunchback of Notre-Dame ~ Notre-Dame de Paris
+        2229,  # Faust Part I                ~ Faust: Der Tragödie erster Teil
+        6762,  # Politics                    ~ Politics: A Treatise on Government
+        2017,  # Dhammapada                  ~ The Dhammapada, a Collection of Verses...
+        216,  # Tao Te Ching                ~ The Tao Teh King...
+        4094,  # The Analects of Confucius   ~ The Chinese Classics, Vol. 1
+        2388,  # The Bhagavad Gita           ~ The Song Celestial
+        2800,  # The Quran                   ~ The Koran
+        1900,  # Typee: A Peep at ...        ~ Typee: A Romance of the South Seas
+        128,  # One Thousand and One Nights ~ The Arabian Nights Entertainments
+        674,  # Parallel Lives              ~ Plutarch: Lives of the Noble Grecians and Romans
+        8438,  # Nicomachean Ethics          ~ The Ethics of Aristotle
+    }
+)
+
+_QUOTE_RE = re.compile(r"[\"“”″]([^\"“”″]{2,120})[\"“”″]")
 
 
 # ---------------------------------------------------------------------------
@@ -126,6 +154,63 @@ def _find_md(book_dir: Path) -> Path | None:
     return cands[0] if cands else None
 
 
+def _summary_title(ref_text: str) -> str | None:
+    """Return the first quoted title in the ``## Summary`` section, if any.
+
+    The auto-generated summary opens with ``"<real title>" by <author>``, so the
+    quoted string reflects the *actual* fetched text (independent of the catalog
+    title in the reference header).
+    """
+    m = re.search(r"##\s*Summary\s*\n+(.+)", ref_text, re.S)
+    if not m:
+        return None
+    q = _QUOTE_RE.search(m.group(1))
+    return q.group(1).strip() if q else None
+
+
+def _norm_title(s: str) -> str:
+    """Normalize a title for comparison: drop parentheticals, an em-dash author
+    suffix, apostrophes, punctuation, and common stop-words."""
+    s = re.sub(r"\(.*?\)", " ", s)  # "(Forster)", "(James Legge translation)"
+    s = re.sub(r"\s+[—–-]\s+.*$", " ", s)  # " — George Bernard Shaw"
+    s = s.replace("'", "").replace("’", "")
+    s = re.sub(r"[^a-z0-9]+", " ", s.lower())
+    s = re.sub(r"\b(the|a|an|of|and|or|to)\b", " ", s)
+    return re.sub(r"\s+", " ", s).strip()
+
+
+def _titles_agree(header: str, summary: str) -> bool:
+    """True when the reference title and the summary's title plausibly name the
+    same work (shared significant tokens or high string similarity)."""
+    h, s = _norm_title(header), _norm_title(summary)
+    if not h or not s:
+        return True  # not enough signal to judge — don't flag
+    ht, st = set(h.split()), set(s.split())
+    short, long = (ht, st) if len(ht) <= len(st) else (st, ht)
+    if short and len(short & long) / len(short) >= 0.6:
+        return True
+    return SequenceMatcher(None, h, s).ratio() >= 0.5
+
+
+def _title_content_error(ref: Path, meta: dict, book_dir: Path) -> str | None:
+    """Return an error string when the reference title and the auto-summary's
+    quoted title name clearly different works — the fingerprint of a wrong
+    Gutenberg ID that silently mislabels a whole book. ``None`` when they agree,
+    when there is no signal, or when the book is an allowlisted title variant.
+    """
+    ebook_id = meta.get("ebook_id")
+    if ebook_id is None or ebook_id in KNOWN_TITLE_VARIANTS:
+        return None
+    stitle = _summary_title(ref.read_text(encoding="utf-8"))
+    ref_title = meta.get("title") or book_dir.name
+    if stitle and not _titles_agree(ref_title, stitle):
+        return (
+            f"title/content mismatch: reference titled '{ref_title}' "
+            f"but content is “{stitle}” (wrong Gutenberg ID?)"
+        )
+    return None
+
+
 def _audit_book(
     book_dir: Path,
     genre: str,
@@ -148,6 +233,12 @@ def _audit_book(
         # Internet Archive books have an IA identifier, not a Gutenberg ID.
         if res.ebook_id is None and genre not in IA_GENRES:
             res.warnings.append("no Gutenberg ID in reference.md")
+
+        # Title <-> content check: a wrong Gutenberg ID silently mislabels a
+        # whole book; the auto-summary's quoted title reveals the real text.
+        title_err = _title_content_error(ref, meta, book_dir)
+        if title_err:
+            res.errors.append(title_err)
 
     if is_diary:
         from gutenberg_kg.diary.chunk import DEFAULT_FORMAT

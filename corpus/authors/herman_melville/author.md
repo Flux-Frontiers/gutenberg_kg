@@ -10,3 +10,4 @@
 | Title | Genre |
 |-------|-------|
 | Moby Dick | american-literature |
+| Typee: A Peep at Polynesian Life — Herman Melville | travel |
