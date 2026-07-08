@@ -9,4 +9,5 @@
 
 | Title | Genre |
 |-------|-------|
+| Germinal | french-literature |
 | Nana (Zola) | french-literature |

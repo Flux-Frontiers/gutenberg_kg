@@ -9,7 +9,8 @@
 
 | Title | Genre |
 |-------|-------|
-| At the Mountains of Madness | science-fiction |
+| At the mountains of madness | science-fiction |
 | The Call of Cthulhu | science-fiction |
 | The Dunwich Horror | science-fiction |
-| The Shadow over Innsmouth | science-fiction |
+| The Shunned House | science-fiction |
+| The shadow over Innsmouth | science-fiction |

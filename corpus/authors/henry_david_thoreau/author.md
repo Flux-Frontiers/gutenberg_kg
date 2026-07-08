@@ -10,5 +10,4 @@
 | Title | Genre |
 |-------|-------|
 | On the Duty of Civil Disobedience (Thoreau) | philosophy |
-| The Overcoat (Gogol) | russian-literature |
 | Walden | american-literature |

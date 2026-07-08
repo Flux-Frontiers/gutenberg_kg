@@ -10,3 +10,4 @@
 | Title | Genre |
 |-------|-------|
 | Parallel Lives (Plutarch) | ancient-classical |
+| Plutarch's Morals | philosophy |

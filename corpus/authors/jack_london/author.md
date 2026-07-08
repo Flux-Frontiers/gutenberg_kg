@@ -10,4 +10,5 @@
 | Title | Genre |
 |-------|-------|
 | The Call of the Wild | american-literature |
+| The Sea-Wolf | american-literature |
 | White Fang (London) | american-literature |

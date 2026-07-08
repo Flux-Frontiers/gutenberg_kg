@@ -22,11 +22,12 @@
 
 # --- Forster ---
 2641	A Room with a View (Forster)
-5765	Howards End (Forster)
+2891	Howards End (Forster)
 
 # --- James ---
 209	The Turn of the Screw (Henry James)
-432	The Portrait of a Lady (Henry James)
+2833	The Portrait of a Lady, Vol. 1 (Henry James)
+2834	The Portrait of a Lady, Vol. 2 (Henry James)
 
 # --- Dickens (additional) ---
 766	David Copperfield (Dickens)

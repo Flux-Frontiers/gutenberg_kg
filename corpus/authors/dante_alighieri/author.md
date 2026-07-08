@@ -9,6 +9,5 @@
 
 | Title | Genre |
 |-------|-------|
-| The Divine Comedy | world-literature |
-| The Divine Comedy: Paradiso (Dante) | world-literature |
-| The Divine Comedy: Purgatorio (Dante) | world-literature |
+| The Divine Comedy (Cary's Translation) | world-literature |
+| The Divine Comedy (Longfellow's Translation) | world-literature |

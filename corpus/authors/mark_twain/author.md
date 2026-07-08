@@ -10,3 +10,4 @@
 | Title | Genre |
 |-------|-------|
 | Adventures of Huckleberry Finn | american-literature |
+| The Innocents Abroad — Mark Twain | travel |

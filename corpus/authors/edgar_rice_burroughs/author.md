@@ -9,5 +9,8 @@
 
 | Title | Genre |
 |-------|-------|
+| A princess of Mars | science-fiction |
 | At the Earth's Core | science-fiction |
+| Pellucidar (Burroughs) | science-fiction |
 | The Gods of Mars | science-fiction |
+| The warlord of Mars | science-fiction |

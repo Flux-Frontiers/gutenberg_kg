@@ -1,9 +1,9 @@
-# Reference: At the Mountains of Madness
+# Reference: At the mountains of madness
 
 ## Source
 
-- **Project Gutenberg ID**: 31469
-- **URL**: https://www.gutenberg.org/ebooks/31469
+- **Project Gutenberg ID**: 70652
+- **URL**: https://www.gutenberg.org/ebooks/70652
 - **Rights**: Public domain in the USA.
 
 ## Author
@@ -14,7 +14,7 @@
 - **Wikipedia**: https://en.wikipedia.org/wiki/H._P._Lovecraft
 - **Gutenberg Agent ID**: 34724
 
-- **Gutenberg Published**: 2010-03-02
+- **Gutenberg Published**: 2023-04-27
 
 ## Language
 
@@ -22,15 +22,19 @@
 
 ## Subjects
 
-- Horror tales, American
-- Haunted houses -- Fiction
+- Fantasy fiction
+- Horror tales
+- Antarctica -- Fiction
+- Fossils -- Collection and preservation -- Fiction
+- Scientific expeditions -- Fiction
+- Stone carving -- Fiction
 - PS
 - Text
 
 ## Summary
 
-"The Shunned House" by H. P. Lovecraft is a horror novelette written in October 1924. Based on a real house in Providence, Rhode Island, the story follows a narrator and his uncle as they investigate mysterious deaths and illnesses plaguing residents for over a century. Strange fungi, foul odors, and yellowish vapors in the cellar hint at something monstrous beneath. Armed with flamethrowers and scientific equipment, they spend a night confronting an ancient, supernatural evil lurking in the foundation. (This is an automatically generated summary.)
+"At the mountains of madness" by H. P. Lovecraft is a science-fiction and cosmic horror novella written in 1931 and published in 1936. The story follows Dr. William Dyer as he recounts a catastrophic Antarctic expedition in 1930, hoping to prevent future explorers from returning. His team discovers an ancient alien civilization predating humanity, preserved ruins beyond towering mountains, and prehistoric creatures that defy classification. As they uncover the terrifying history of Earth's original inhabitants through ancient murals, they encounter something far more dangerous lurking in the frozen wasteland. (This is an automatically generated summary.)
 
 ## Notes
 
-Wikipedia page about this book: https://en.wikipedia.org/wiki/The_Shunned_House
+Wikipedia page on this work: https://en.wikipedia.org/wiki/At_the_Mountains_of_Madness

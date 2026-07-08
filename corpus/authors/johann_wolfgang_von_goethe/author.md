@@ -10,3 +10,4 @@
 | Title | Genre |
 |-------|-------|
 | Faust Part I (Goethe) | german-literature |
+| Faust: Der Tragödie zweiter Teil | german-literature |

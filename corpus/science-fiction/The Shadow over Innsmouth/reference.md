@@ -1,9 +1,9 @@
-# Reference: The Shadow over Innsmouth
+# Reference: The shadow over Innsmouth
 
 ## Source
 
-- **Project Gutenberg ID**: 70652
-- **URL**: https://www.gutenberg.org/ebooks/70652
+- **Project Gutenberg ID**: 73181
+- **URL**: https://www.gutenberg.org/ebooks/73181
 - **Rights**: Public domain in the USA.
 
 ## Author
@@ -14,7 +14,7 @@
 - **Wikipedia**: https://en.wikipedia.org/wiki/H._P._Lovecraft
 - **Gutenberg Agent ID**: 34724
 
-- **Gutenberg Published**: 2023-04-27
+- **Gutenberg Published**: 2024-03-16
 
 ## Language
 
@@ -24,17 +24,16 @@
 
 - Fantasy fiction
 - Horror tales
-- Antarctica -- Fiction
-- Fossils -- Collection and preservation -- Fiction
-- Scientific expeditions -- Fiction
-- Stone carving -- Fiction
+- Paranormal fiction
+- Massachusetts -- Fiction
+- Harbors -- Fiction
 - PS
 - Text
 
 ## Summary
 
-"At the mountains of madness" by H. P. Lovecraft is a science-fiction and cosmic horror novella written in 1931 and published in 1936. The story follows Dr. William Dyer as he recounts a catastrophic Antarctic expedition in 1930, hoping to prevent future explorers from returning. His team discovers an ancient alien civilization predating humanity, preserved ruins beyond towering mountains, and prehistoric creatures that defy classification. As they uncover the terrifying history of Earth's original inhabitants through ancient murals, they encounter something far more dangerous lurking in the frozen wasteland. (This is an automatically generated summary.)
+"The Shadow over Innsmouth" by H. P. Lovecraft is a horror novella written in November–December 1931. A young student's antiquarian tour through New England leads him to the decaying seaport of Innsmouth, where he encounters strange inhabitants with an unsettling appearance and discovers dark secrets about the town's history. His inquiries uncover a sinister conspiracy involving an ancient undersea civilization and a mysterious cult, leading to a nightmarish revelation that threatens his sanity and survival. (This is an automatically generated summary.)
 
 ## Notes
 
-Wikipedia page on this work: https://en.wikipedia.org/wiki/At_the_Mountains_of_Madness
+Wikipedia page on this work: https://en.wikipedia.org/wiki/The_Shadow_over_Innsmouth

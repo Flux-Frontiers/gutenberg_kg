@@ -10,11 +10,10 @@
 2811	Letters of Pliny the Younger
 
 # ── 18th Century ─────────────────────────────────────────────────────────────
-2586	Philosophical Letters — Voltaire
+2445	Philosophical Letters — Voltaire
 3352	Letters to His Son — Lord Chesterfield
-16287	Turkish Embassy Letters — Lady Mary Wortley Montagu
-19190	Letters and Journals of Lord Byron (selected)
+8901	Letters and Journals of Lord Byron, Vol. 1
+9921	Letters and Journals of Lord Byron, Vol. 2
 
 # ── 19th Century ─────────────────────────────────────────────────────────────
 35698	Letters of John Keats to His Family and Friends
-1633	Letters of Charles Lamb — Volume 1

@@ -10,3 +10,4 @@
 | Title | Genre |
 |-------|-------|
 | The Adventures of Sherlock Holmes | english-literature |
+| The Lost World | science-fiction |

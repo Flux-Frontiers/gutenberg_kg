@@ -11,10 +11,10 @@
 12410	The Travels of Marco Polo
 
 # ── 18th Century Exploration ─────────────────────────────────────────────────
-4191	Travels in the Interior Districts of Africa — Mungo Park
+74976	Travels in the Interior Districts of Africa — Mungo Park
 
 # ── 19th Century ─────────────────────────────────────────────────────────────
-507	Two Years Before the Mast — Richard Henry Dana Jr.
+2055	Two Years Before the Mast — Richard Henry Dana Jr.
 1900	Typee: A Peep at Polynesian Life — Herman Melville
 3176	The Innocents Abroad — Mark Twain
-2172	A Lady's Life in the Rocky Mountains — Isabella Bird
+755	A Lady's Life in the Rocky Mountains — Isabella Bird

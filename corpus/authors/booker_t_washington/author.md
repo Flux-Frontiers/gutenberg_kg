@@ -9,4 +9,4 @@
 
 | Title | Genre |
 |-------|-------|
-| Up From Slavery (Washington) | american-literature |
+| Up From Slavery — Booker T. Washington | biography |

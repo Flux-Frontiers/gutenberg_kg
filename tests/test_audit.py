@@ -26,16 +26,25 @@ def corpus(tmp_path, monkeypatch):
     return root
 
 
-def _make_book(corpus_root: Path, genre: str, name: str, *, ebook_id=42, md=True, ref=True) -> Path:
+def _make_book(
+    corpus_root: Path,
+    genre: str,
+    name: str,
+    *,
+    ebook_id=42,
+    md=True,
+    ref=True,
+    summary_title=None,
+) -> Path:
     book = corpus_root / genre / name
     book.mkdir(parents=True)
     if md:
         (book / f"{name.lower().replace(' ', '_')}.md").write_text("Body text.", encoding="utf-8")
     if ref:
-        (book / "reference.md").write_text(
-            f"# Reference: {name}\n\n- **Project Gutenberg ID**: {ebook_id}\n",
-            encoding="utf-8",
-        )
+        text = f"# Reference: {name}\n\n- **Project Gutenberg ID**: {ebook_id}\n"
+        if summary_title is not None:
+            text += f'\n## Summary\n\n"{summary_title}" by Some Author is a book.\n'
+        (book / "reference.md").write_text(text, encoding="utf-8")
     return book
 
 
@@ -92,6 +101,48 @@ def test_diary_unparseable_with_format_is_error(corpus):
     )
     report = au.audit_corpus(["diaries"], registry=NO_REGISTRY)
     assert any("0 entries" in e for e in _errors(report, "BadFormat"))
+
+
+def test_title_content_mismatch_is_error(corpus):
+    # Reference titled one book, but the summary (from the real text) names a
+    # completely different one → wrong Gutenberg ID contamination.
+    _make_book(
+        corpus,
+        "english-literature",
+        "Howards End",
+        ebook_id=5765,
+        summary_title="Insectivorous Plants",
+    )
+    report = au.audit_corpus(["english-literature"], registry=NO_REGISTRY)
+    assert any("title/content mismatch" in e for e in _errors(report, "Howards End"))
+
+
+def test_title_variant_is_not_flagged(corpus):
+    # A fuller canonical title for the same work must not be flagged.
+    _make_book(
+        corpus,
+        "philosophy",
+        "Politics",
+        ebook_id=99,
+        summary_title="Politics: A Treatise on Government",
+    )
+    report = au.audit_corpus(["philosophy"], registry=NO_REGISTRY)
+    assert report.n_errors == 0
+
+
+def test_allowlisted_id_suppresses_mismatch(corpus):
+    # An allowlisted ebook_id (known alternate-title work) is never flagged,
+    # even when the titles diverge completely.
+    allowed = next(iter(au.KNOWN_TITLE_VARIANTS))
+    _make_book(
+        corpus,
+        "sacred-texts",
+        "The Quran",
+        ebook_id=allowed,
+        summary_title="Something Entirely Different",
+    )
+    report = au.audit_corpus(["sacred-texts"], registry=NO_REGISTRY)
+    assert report.n_errors == 0
 
 
 def test_run_audit_exit_code(corpus):

@@ -13,4 +13,3 @@
 | Hamlet | shakespeare |
 | Macbeth | shakespeare |
 | Romeo and Juliet | shakespeare |
-| The Warlord of Mars (Burroughs) | science-fiction |

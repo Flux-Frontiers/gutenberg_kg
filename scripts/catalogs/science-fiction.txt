@@ -18,10 +18,10 @@
 
 # --- H.P. Lovecraft ---
 68283	The Call of Cthulhu
-31469	At the Mountains of Madness
-70652	The Shadow over Innsmouth
-665	Herbert West: Reanimator
+70652	At the Mountains of Madness
+73181	The Shadow over Innsmouth
 50133	The Dunwich Horror
+31469	The Shunned House
 
 # --- Edgar Rice Burroughs ---
 123	At the Earth's Core

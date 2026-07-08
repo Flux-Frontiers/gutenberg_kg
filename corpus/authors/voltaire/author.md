@@ -10,3 +10,4 @@
 | Title | Genre |
 |-------|-------|
 | Candide | french-literature |
+| Letters on England | letters |

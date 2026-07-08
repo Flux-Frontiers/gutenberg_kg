@@ -9,7 +9,9 @@
 
 | Title | Genre |
 |-------|-------|
-| Medea (Euripides) | ancient-classical |
+| The First Men in the Moon | science-fiction |
+| The Food of the Gods and How It Came to Earth | science-fiction |
 | The Invisible Man | science-fiction |
 | The Time Machine | english-literature |
 | The War of the Worlds | english-literature |
+| The island of Doctor Moreau | science-fiction |
