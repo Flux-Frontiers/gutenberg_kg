@@ -2,6 +2,7 @@
 # corpus-gutenberg — build and run targets
 #
 # Typical workflow:
+#   make init           — fetch local ML models (spaCy, embedder); run once after clone
 #   make chunk-diaries  — rebuild .diary/ chunks from committed .md (clean-clone step)
 #   make build-diaries  — build .diarykg/ indices (prerequisite for build-corpus)
 #   make build-corpus   — rebuild the DocKG + diary bundle (takes ~24 min)
@@ -23,7 +24,10 @@ IMAGE_SERVER = http://localhost:8090
 # `gutenkg` on PATH. Override with e.g. `make GUTENKG=gutenkg build-corpus`.
 GUTENKG     ?= poetry run gutenkg
 
-.PHONY: chunk-diaries build-diaries build-corpus build run image-server chat up stop down query logs clean docs
+.PHONY: init chunk-diaries build-diaries build-corpus build run image-server chat up stop down query logs clean docs
+
+init:
+	$(GUTENKG) init
 
 chunk-diaries:
 	$(GUTENKG) chunk-diaries

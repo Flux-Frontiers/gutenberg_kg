@@ -40,6 +40,7 @@ The corpus must be built before the Docker image. This step converts the raw tex
 git clone https://github.com/Flux-Frontiers/gutenberg_kg
 cd gutenberg_kg
 poetry install         # installs the gutenkg CLI
+make init               # fetches local models (spaCy, embedder) — run once
 
 make build-corpus      # builds .dockg/ indices + bundles/gutenberg-all/
 ```
@@ -150,6 +151,7 @@ The CLI operates directly against the local `.dockg/` indices — no Docker requ
 git clone https://github.com/Flux-Frontiers/gutenberg_kg
 cd gutenberg_kg
 poetry install
+gutenkg init            # fetches local models (spaCy, embedder) — run once
 gutenkg --help
 ```
 
