@@ -80,7 +80,7 @@ classifiers = [
 requires-python = ">=3.12,<3.14"
 dependencies = [
     "click>=8.1.0,<9",
-    "kgmodule-utils[synthesis]>=0.4.4",
+    "kgmodule-utils[synthesis]>=0.4.6",
     "rich>=13.0.0",
     "doc-kg (>=0.16.0)",
     "diary-kg (>=0.93.2)",
