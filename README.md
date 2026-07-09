@@ -13,7 +13,7 @@
   <a href="https://github.com/Flux-Frontiers/doc_kg"><img src="https://img.shields.io/badge/DocKG-ready-blue.svg" alt="DocKG"/></a>
   <a href="https://github.com/Flux-Frontiers/KGRAG"><img src="https://img.shields.io/badge/KGRAG-integrated-purple.svg" alt="KGRAG"/></a>
   <img src="https://img.shields.io/badge/imagine-FLUX.2--Klein-ff6b35.svg" alt="Corpus image generation"/>
-  <a href="https://doi.org/10.5281/zenodo.20045390"><img src="https://zenodo.org/badge/doi/10.5281/zenodo.20045390.svg" alt="DOI"/></a>
+  <a href="https://doi.org/10.5281/zenodo.20045390"><img src="https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20045390-blue.svg" alt="DOI"/></a>
 </p>
 
 # GutenbergKG — The Knowledge Press
