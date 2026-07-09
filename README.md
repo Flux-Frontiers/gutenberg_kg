@@ -7,9 +7,9 @@
   <a href="https://www.elastic.co/licensing/elastic-license"><img src="https://img.shields.io/badge/code-Elastic--2.0-lightgrey.svg" alt="Code License"/></a>
   <a href="https://www.gutenberg.org/"><img src="https://img.shields.io/badge/texts-Public%20Domain-green.svg" alt="Texts License"/></a>
   <img src="https://img.shields.io/badge/version-1.7.1-blue.svg" alt="Version"/>
-  <img src="https://img.shields.io/badge/corpus-234%20books-orange.svg" alt="Corpus"/>
-  <img src="https://img.shields.io/badge/nodes-1.3M-green.svg" alt="Nodes"/>
-  <img src="https://img.shields.io/badge/edges-5.2M-green.svg" alt="Edges"/>
+  <img src="https://img.shields.io/badge/corpus-230%20books-orange.svg" alt="Corpus"/>
+  <img src="https://img.shields.io/badge/nodes-1.2M-green.svg" alt="Nodes"/>
+  <img src="https://img.shields.io/badge/edges-4.9M-green.svg" alt="Edges"/>
   <a href="https://github.com/Flux-Frontiers/doc_kg"><img src="https://img.shields.io/badge/DocKG-ready-blue.svg" alt="DocKG"/></a>
   <a href="https://github.com/Flux-Frontiers/KGRAG"><img src="https://img.shields.io/badge/KGRAG-integrated-purple.svg" alt="KGRAG"/></a>
   <img src="https://img.shields.io/badge/imagine-FLUX.2--Klein-ff6b35.svg" alt="Corpus image generation"/>
@@ -22,7 +22,7 @@
 
 It transforms the world's great public-domain literature, philosophy, and sacred texts into **queryable knowledge graphs** — enabling semantic search, thematic analysis, and cross-work discovery at a scale and depth that keyword search cannot touch. Ask *what themes connect Dostoevsky and Dante*, trace the evolution of the social contract from Rousseau to Thoreau, or find every passage in the corpus that grapples with revenge — and get semantically grounded answers drawn from the source texts themselves.
 
-The corpus currently spans **234 public-domain texts across 19 genres** — 1,250,883 nodes, 4,998,235 edges — built and fully indexed on an Apple M5 Max in under 30 minutes.
+The corpus currently spans **230 public-domain texts across 19 genres** — 1,234,165 nodes, 4,947,554 edges — built and fully indexed on an Apple M5 Max in under 30 minutes.
 
 *Author: Eric G. Suchanek, PhD · Flux-Frontiers, Liberty TWP, OH*
 
@@ -30,7 +30,7 @@ The corpus currently spans **234 public-domain texts across 19 genres** — 1,25
 
 ## The Knowledge Press — Local App
 
-The primary interface is **The Knowledge Press**: a self-contained Docker app that bundles the full knowledge graph, a query worker, and a Streamlit chat UI. Once running, open `http://localhost:8501` and query 234 books with plain English.
+The primary interface is **The Knowledge Press**: a self-contained Docker app that bundles the full knowledge graph, a query worker, and a Streamlit chat UI. Once running, open `http://localhost:8501` and query 230 books with plain English.
 
 ### One-time corpus build (~24 min)
 
@@ -72,7 +72,7 @@ make query Q="What is justice according to Plato?"   # one-shot query against th
 
 ### About the image size
 
-The Docker image is large (~4–6 GB) because the full corpus — 1.3M nodes, 5.2M edges, and their 384-dim vector embeddings — is baked in. This is by design: the image is entirely self-contained and needs no external data at runtime. You build it once locally; it never needs to be pushed anywhere.
+The Docker image is large (~4–6 GB) because the full corpus — 1.2M nodes, 4.9M edges, and their 384-dim vector embeddings — is baked in. This is by design: the image is entirely self-contained and needs no external data at runtime. You build it once locally; it never needs to be pushed anywhere.
 
 ---
 
@@ -80,26 +80,26 @@ The Docker image is large (~4–6 GB) because the full corpus — 1.3M nodes, 5.
 
 | Genre | Books | Nodes | Edges |
 |-------|------:|------:|------:|
-| Philosophy | 48 | 241,471 | 840,191 |
-| English Literature | 37 | 187,058 | 834,019 |
-| Ancient & Classical | 26 | 137,857 | 528,620 |
-| American Literature | 23 | 92,609 | 340,371 |
-| Russian Literature | 13 | 87,426 | 414,348 |
+| Philosophy | 39 | 206,960 | 721,341 |
+| English Literature | 37 | 185,188 | 834,173 |
+| Ancient & Classical | 23 | 118,737 | 461,010 |
+| American Literature | 21 | 86,452 | 320,974 |
+| Russian Literature | 12 | 89,271 | 422,384 |
 | French Literature | 12 | 89,473 | 415,362 |
-| Biography | 11 | 69,535 | 279,817 |
-| Drama | 11 | 25,602 | 94,353 |
-| Science Fiction | 19 | 73,905 | 242,425 |
-| Travel | 6 | 51,693 | 188,514 |
+| Biography | 11 | 71,607 | 290,544 |
+| Drama | 10 | 14,992 | 57,192 |
+| Science Fiction | 18 | 47,400 | 162,187 |
+| Travel | 6 | 57,279 | 197,361 |
 | Natural History | 7 | 44,747 | 157,202 |
 | Sacred Texts | 7 | 31,773 | 155,939 |
-| Letters | 7 | 27,029 | 88,666 |
-| World Literature | 5 | 21,185 | 73,094 |
-| German Literature | 5 | 13,066 | 45,907 |
-| Diaries | 4 | 79,899 | 390,685 |
+| Letters | 6 | 37,562 | 120,173 |
+| World Literature | 4 | 18,305 | 65,559 |
+| German Literature | 5 | 15,073 | 48,065 |
+| Diaries | 4 | 78,744 | 382,451 |
 | Technical Reference (IA) | 3 | 22,920 | 61,837 |
 | Spanish Literature | 1 | 11,422 | 52,834 |
 | Shakespeare | 4 | 6,260 | 20,966 |
-| **Total** | **249** | **1,314,930** | **5,225,150** |
+| **Total** | **230** | **1,234,165** | **4,947,554** |
 
 The full book list, organized by genre, is in [`docs/CORPUS.md`](docs/CORPUS.md). Planned additions are tracked in [`docs/CORPUS_WISHLIST.md`](docs/CORPUS_WISHLIST.md).
 
@@ -188,7 +188,7 @@ kgrag synthesize "How do the Stoics and Russian novelists differ on suffering an
   --model qwen3:4b
 ```
 
-> **Example synthesis output:** See [`STOICS_VS_RUSSIANS.md`](https://github.com/Flux-Frontiers/KGRAG/blob/main/docs/STOICS_VS_RUSSIANS.md) — a live run of the question above against Marcus Aurelius, Dostoevsky, Tolstoy, and Nietzsche, with every passage retrieved deterministically from the graph and quoted verbatim. The retrieval layer cannot hallucinate; the LLM synthesizes from verified facts only. *(Run against an earlier 78-book corpus; the current 234-book corpus adds substantial additional Stoic, philosophical, and literary coverage.)*
+> **Example synthesis output:** See [`STOICS_VS_RUSSIANS.md`](https://github.com/Flux-Frontiers/KGRAG/blob/main/docs/STOICS_VS_RUSSIANS.md) — a live run of the question above against Marcus Aurelius, Dostoevsky, Tolstoy, and Nietzsche, with every passage retrieved deterministically from the graph and quoted verbatim. The retrieval layer cannot hallucinate; the LLM synthesizes from verified facts only. *(Run against an earlier 78-book corpus; the current 230-book corpus adds substantial additional Stoic, philosophical, and literary coverage.)*
 
 ---
 
@@ -246,7 +246,7 @@ Digital humanities centers, computational linguistics labs, library science prog
 
 ### Why now
 
-234 works, 5.0 million edges, production-ready pipeline. The architecture is federated by design — new corpora slot in without touching the existing graph. The ingestion tooling is fast and fully automated. The query layer is proven. This is the inflection point before the graph becomes too large for any single team to steer.
+230 works, 4.9 million edges, production-ready pipeline. The architecture is federated by design — new corpora slot in without touching the existing graph. The ingestion tooling is fast and fully automated. The query layer is proven. This is the inflection point before the graph becomes too large for any single team to steer.
 
 **To discuss a partnership:** [suchanek@flux-frontiers.com](mailto:suchanek@flux-frontiers.com)
 
@@ -276,7 +276,7 @@ If you use GutenbergKG in your research, please cite it. GitHub's **Cite this re
   doi          = {10.5281/zenodo.20045390},
   url          = {https://github.com/Flux-Frontiers/gutenberg_kg},
   note         = {Universal ingestion engine for digitized text corpora;
-                  234 public-domain texts across 19 genres as queryable
+                  230 public-domain texts across 19 genres as queryable
                   knowledge graphs via DocKG and KGRAG}
 }
 ```
