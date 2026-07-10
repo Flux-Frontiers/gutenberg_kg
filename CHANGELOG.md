@@ -10,9 +10,47 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added
 
+- **`gutenberg_kg.serve` package** — the serving layer now ships inside the
+  installed package instead of loose scripts under `docker/`:
+  `serve/handler.py` (RunPod worker), `serve/chat.py` + `serve/pages/`
+  (Streamlit UI), and `serve/image_server.py` (FLUX image server).
+- **New entry points** — `gutenkg chat` (launches the Streamlit UI via
+  `streamlit run` on the packaged app), `gutenkg-handler` (RunPod worker),
+  and `gutenkg-image-server` (FLUX server, replaces
+  `python docker/image_server.py`).
+- **New optional extras** — `pip install 'gutenberg-kg[chat]'`
+  (streamlit/httpx/watchdog/pillow) and `[image]`
+  (fastapi/uvicorn/pydantic/pillow) mirror the chat and image serve modules.
+  runpod is deliberately not an extra (its dependency tree stalls
+  `poetry lock`); the RunPod container installs it via
+  `runpod/requirements.txt`.
+
 ### Changed
 
+- `docker/Dockerfile` no longer COPYs `handler.py`/`chat.py`/`pages/`/
+  `image_gen.py` into `/app` — the `pip install .` of the repo package carries
+  them; `CMD` is now `python -u -m gutenberg_kg.serve.handler`, and the
+  compose chat service runs `gutenkg chat --port 8501 --address 0.0.0.0`.
+- `make image-server` installs the package (`--no-deps`) into `.venv-image`
+  and runs `gutenkg-image-server`.
+- **KG dependencies now install from PyPI, not git/local wheels** — the
+  Docker image installs `kgmodule-utils[synthesis]==0.4.6` and
+  `doc-kg==0.16.0` by version (pre-installed in a cached layer so source-only
+  changes don't re-resolve the torch stack), and the RunPod build only builds
+  the `gutenberg-kg` wheel locally — `kg-rag>=0.9.1` and the KG packages come
+  from `runpod/requirements.txt`. `build_image.sh`/README no longer assume a
+  sibling `kgrag/` checkout.
+- **`viz3d`/`full`/`all` extras use plain `pyvista`, not `pyvista[jupyter]`** —
+  viz3d renders to a desktop Qt window, so the `[jupyter]` trame/browser stack
+  was unused and massively bloated `poetry lock`.
+
 ### Removed
+
+- **`docker/image_gen.py`** — a diverged fork of `gutenberg_kg/image_gen.py`
+  (it still read the old `IMAGE_STEPS` env var and lacked the server/VLM
+  paths). `serve/image_server.py` now imports the canonical
+  `gutenberg_kg.image_gen`; explicit `steps` passing keeps the served
+  behaviour identical.
 
 ### Fixed
 

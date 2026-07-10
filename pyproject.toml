@@ -111,13 +111,38 @@ viz3d = [
     "markdown>=3.6",
     "param>=2.0.0",
     "PyQt5>=5.15.0",
-    "pyvista[jupyter]>=0.44.0",
+    # NOTE: plain pyvista, NOT pyvista[jupyter]. viz3d renders to a desktop Qt
+    # window via pyvistaqt's QtInteractor (see pycode_kg/viz3d.py) — the [jupyter]
+    # extra only pulls the trame/ipywidgets/jupyter-server browser-rendering stack,
+    # which nothing here imports and which massively bloated `poetry lock`. Re-add
+    # [jupyter] (→ trame) only if we ever render 3-D into a notebook or browser.
+    "pyvista>=0.44.0",
     "pyvistaqt>=0.11.0",
     "pycode-kg>=0.19.3",
 ]
 mcp = [
     "fastmcp>=2.0",
     "structlog>=24.0",
+]
+# Serving layer (gutenberg_kg.serve) — one extra per module.
+# NOTE: runpod is deliberately NOT listed (no `worker` extra) — its
+# fastapi[all]/boto3/aiohttp[speedups] tree makes `poetry lock` pathologically
+# slow, and the worker only runs in the RunPod container, which installs it
+# via runpod/requirements.txt (same rationale as the mflux exclusion below).
+chat = [
+    "streamlit>=1.59,<2",
+    "httpx>=0.27.0",
+    "watchdog>=6.0.0",
+    "pillow>=10.4.0",
+]
+# NOTE: mflux is deliberately NOT listed — its transformers pin conflicts with
+# pycode-kg, so local FLUX generation uses the isolated .venv-image built from
+# docker/requirements-image.txt (see `make image-server`).
+image = [
+    "fastapi>=0.116.0",
+    "uvicorn>=0.30.0",
+    "pydantic>=2.8.0",
+    "pillow>=10.4.0",
 ]
 # Everything except dev tooling — the recommended default install.
 full = [
@@ -129,7 +154,7 @@ full = [
     "markdown>=3.6",
     "param>=2.0.0",
     "PyQt5>=5.15.0",
-    "pyvista[jupyter]>=0.44.0",
+    "pyvista>=0.44.0",  # NOT [jupyter] — see viz3d extra note above
     "pyvistaqt>=0.11.0",
     "pycode-kg>=0.19.3",
     # mcp
@@ -156,7 +181,7 @@ all = [
     "markdown>=3.6",
     "param>=2.0.0",
     "PyQt5>=5.15.0",
-    "pyvista[jupyter]>=0.44.0",
+    "pyvista>=0.44.0",  # NOT [jupyter] — see viz3d extra note above
     "pyvistaqt>=0.11.0",
     "pycode-kg>=0.19.3",
 ]
@@ -166,8 +191,10 @@ Homepage   = "https://github.com/Flux-Frontiers/gutenberg_kg"
 Repository = "https://github.com/Flux-Frontiers/gutenberg_kg"
 
 [project.scripts]
-gutenkg     = "gutenberg_kg.cli.main:cli"
-gutenkg-mcp = "gutenberg_kg.mcp_server:main"
+gutenkg              = "gutenberg_kg.cli.main:cli"
+gutenkg-mcp          = "gutenberg_kg.mcp_server:main"
+gutenkg-handler      = "gutenberg_kg.serve.handler:main"
+gutenkg-image-server = "gutenberg_kg.serve.image_server:main"
 
 # ---------------------------------------------------------------------------
 # Tool configuration

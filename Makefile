@@ -52,8 +52,9 @@ image-server:
 	fi
 	@.venv-image/bin/python -m pip install --quiet --upgrade pip
 	@.venv-image/bin/python -m pip install --quiet -r docker/requirements-image.txt
+	@.venv-image/bin/python -m pip install --quiet --no-deps -e .
 	@echo "Starting FLUX image server on $(IMAGE_SERVER) (background, .venv-image) ..."
-	MFLUX_SERVER_HOST=0.0.0.0 .venv-image/bin/python docker/image_server.py &
+	MFLUX_SERVER_HOST=0.0.0.0 .venv-image/bin/gutenkg-image-server &
 
 chat:
 	$(COMPOSE) --profile chat up -d
@@ -71,11 +72,11 @@ start up:
 	@echo "Chat UI:      http://localhost:8501"
 	@echo ""
 	@echo "Run 'make stop' to shut down Docker services."
-	@echo "Kill the image server with: pkill -f image_server.py"
+	@echo "Kill the image server with: pkill -f gutenkg-image-server"
 
 stop down:
 	$(COMPOSE) --profile chat down
-	-pkill -f image_server.py 2>/dev/null || true
+	-pkill -f gutenkg-image-server 2>/dev/null || true
 
 query:
 	@curl -s -X POST $(WORKER)/runsync \

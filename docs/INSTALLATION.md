@@ -274,7 +274,7 @@ The local `gutenkg imagine` command (outside Docker) reads its own `GUTENKG_*` v
 | `GUTENKG_IMAGE_MODEL` | `mlx-community/flux2-klein-4b-4bit` | Local FLUX model. |
 | `GUTENKG_IMAGE_STEPS` | `4` | Local FLUX inference steps. |
 
-### Image server (`make image-server` / `docker/image_server.py`)
+### Image server (`make image-server` / `gutenkg-image-server`)
 
 | Variable | Default | Purpose |
 |---|---|---|

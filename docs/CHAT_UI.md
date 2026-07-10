@@ -1,13 +1,13 @@
 # The Knowledge Press — Chat UI
 
-[`docker/chat.py`](../docker/chat.py) is a [Streamlit](https://streamlit.io/) chat
+[`gutenberg_kg/serve/chat.py`](../src/gutenberg_kg/serve/chat.py) is a [Streamlit](https://streamlit.io/) chat
 front-end for the GutenbergKG corpus. It turns the headless query worker into a
 point-and-click reading room: ask a question in plain English, get ranked source
 passages from the knowledge graph, optionally synthesize a narrative answer with a
 local or cloud LLM, and render a corpus-grounded illustration.
 
 It is a **thin client**. All retrieval, synthesis, and image work happens in the
-query worker ([`docker/handler.py`](../docker/handler.py)); the chat app only
+query worker ([`gutenberg_kg/serve/handler.py`](../src/gutenberg_kg/serve/handler.py)); the chat app only
 collects your question, calls the worker over HTTP, and renders the result. The
 worker must be running before the chat UI is useful.
 
@@ -63,7 +63,7 @@ You can run the Streamlit app directly against a worker you start separately.
 Start the worker first (`make run`), then:
 
 ```bash
-streamlit run docker/chat.py
+gutenkg chat          # requires: pip install 'gutenberg-kg[chat]'
 ```
 
 The app opens on **http://localhost:8501** and, when not running inside Docker,

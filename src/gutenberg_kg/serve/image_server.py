@@ -12,7 +12,7 @@ Usage
     make image-server
 
     # or run directly from the isolated venv:
-    MFLUX_SERVER_HOST=0.0.0.0 .venv-image/bin/python docker/image_server.py
+    MFLUX_SERVER_HOST=0.0.0.0 .venv-image/bin/gutenkg-image-server
 
 Environment variables
 ---------------------
@@ -28,7 +28,6 @@ from __future__ import annotations
 import asyncio
 import base64
 import os
-import sys
 import time
 import uuid
 from io import BytesIO
@@ -39,8 +38,7 @@ from fastapi import FastAPI
 from fastapi.responses import JSONResponse
 from pydantic import BaseModel
 
-sys.path.insert(0, os.path.dirname(__file__))
-import image_gen  # noqa: E402
+from gutenberg_kg import image_gen
 
 app = FastAPI(title="GutenbergKG image server")
 
