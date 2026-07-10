@@ -1,6 +1,6 @@
 {
   "format": "1.0",
-  "last_update": "2026-06-06T01:27:01.932024+00:00",
+  "last_update": "2026-07-10T20:11:27.459200+00:00",
   "snapshots": [
     {
       "key": "e7d8a8023f69b4d7de199d6b44978fb01c73c723",
@@ -67,6 +67,100 @@
       "deltas": {
         "vs_previous": null,
         "vs_baseline": null
+      }
+    },
+    {
+      "key": "24a4113cabec2b139ac2dc1bed7302896e48d9ff",
+      "branch": "main",
+      "timestamp": "2026-07-10T20:11:27.458840+00:00",
+      "version": "0.19.3",
+      "file": "24a4113cabec2b139ac2dc1bed7302896e48d9ff.json",
+      "metrics": {
+        "db_path": "/Users/egs/repos/gutenberg_kg/.pycodekg/graph.sqlite",
+        "total_nodes": 6453,
+        "meaningful_nodes": 437,
+        "total_edges": 5461,
+        "node_counts": {
+          "class": 25,
+          "function": 292,
+          "method": 73,
+          "module": 47,
+          "symbol": 6016
+        },
+        "edge_counts": {
+          "ATTR_ACCESS": 1674,
+          "CALLS": 2349,
+          "CONTAINS": 390,
+          "IMPORTS": 359,
+          "INHERITS": 10,
+          "RESOLVES_TO": 679
+        },
+        "module_count": 47,
+        "class_count": 25,
+        "function_count": 292,
+        "method_count": 73,
+        "docstring_coverage": 0.95,
+        "snapshot_count": 1,
+        "critical_issues": 4,
+        "complexity_median": 4,
+        "module_node_counts": {
+          "docker/chat.py": 259,
+          "docker/handler.py": 356,
+          "docker/image_gen.py": 35,
+          "docker/image_server.py": 64,
+          "docker/pages/1_Browse.py": 82,
+          "runpod/build_kg.py": 156,
+          "runpod/handler.py": 264,
+          "runpod/test_local.py": 38,
+          "src/gutenberg_kg/__init__.py": 2,
+          "src/gutenberg_kg/audit.py": 201,
+          "src/gutenberg_kg/authors.py": 134,
+          "src/gutenberg_kg/build_corpus.py": 153,
+          "src/gutenberg_kg/build_diaries.py": 122,
+          "src/gutenberg_kg/cli/__init__.py": 1,
+          "src/gutenberg_kg/cli/cmd_audit.py": 9,
+          "src/gutenberg_kg/cli/cmd_authors.py": 6,
+          "src/gutenberg_kg/cli/cmd_build_corpus.py": 34,
+          "src/gutenberg_kg/cli/cmd_build_diaries.py": 13,
+          "src/gutenberg_kg/cli/cmd_chunk_diaries.py": 11,
+          "src/gutenberg_kg/cli/cmd_download.py": 43,
+          "src/gutenberg_kg/cli/cmd_genres.py": 29,
+          "src/gutenberg_kg/cli/cmd_ia.py": 33,
+          "src/gutenberg_kg/cli/cmd_imagine.py": 83,
+          "src/gutenberg_kg/cli/cmd_ingest.py": 23,
+          "src/gutenberg_kg/cli/cmd_init.py": 17,
+          "src/gutenberg_kg/cli/cmd_rebuild.py": 12,
+          "src/gutenberg_kg/cli/cmd_reregister.py": 13,
+          "src/gutenberg_kg/cli/cmd_snapshot.py": 185,
+          "src/gutenberg_kg/cli/cmd_status.py": 74,
+          "src/gutenberg_kg/cli/cmd_viz3d.py": 8,
+          "src/gutenberg_kg/cli/cmd_viz_timeline.py": 22,
+          "src/gutenberg_kg/cli/main.py": 2,
+          "src/gutenberg_kg/cli/options.py": 29,
+          "src/gutenberg_kg/corpus.py": 199,
+          "src/gutenberg_kg/diary/__init__.py": 2,
+          "src/gutenberg_kg/diary/chunk.py": 93,
+          "src/gutenberg_kg/diary/parser.py": 141,
+          "src/gutenberg_kg/diary_meta.py": 4,
+          "src/gutenberg_kg/genres.py": 36,
+          "src/gutenberg_kg/gutenberg.py": 419,
+          "src/gutenberg_kg/ia.py": 324,
+          "src/gutenberg_kg/image_gen.py": 94,
+          "src/gutenberg_kg/ingest.py": 516,
+          "src/gutenberg_kg/mcp_server.py": 87,
+          "src/gutenberg_kg/model_setup.py": 16,
+          "src/gutenberg_kg/viz3d.py": 801,
+          "src/gutenberg_kg/viz_timeline.py": 89
+        }
+      },
+      "deltas": {
+        "vs_previous": null,
+        "vs_baseline": {
+          "nodes": 2585,
+          "edges": 2207,
+          "coverage_delta": 0.19400000000000006,
+          "critical_issues_delta": 1
+        }
       }
     }
   ]

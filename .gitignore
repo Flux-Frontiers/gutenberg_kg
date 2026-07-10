@@ -103,6 +103,9 @@ dmypy.json
 # Also ignore .dockg/ nested under subdirectories (e.g. docs/.dockg/)
 **/.dockg/
 
+# Local ML model cache (fetched by `gutenkg init`)
+.kgcache/
+
 # Corpus snapshots (point-in-time metrics captures)
 corpus/.snapshots/
 
