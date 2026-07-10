@@ -1,11 +1,12 @@
 # RunPod GutenbergKG worker — PyPI dependencies
-# Non-PyPI packages (gutenberg-kg, kg-rag) are installed
-# from local wheels by build_image.sh before docker build runs.
+# gutenberg-kg itself is installed from a local wheel built by
+# build_image.sh before docker build runs.
 
 runpod>=1.7.0
+kg-rag>=0.9.1
 doc-kg>=0.15.8
 diary-kg>=0.93.2
-kgmodule-utils[synthesis]>=0.4.3
+kgmodule-utils[synthesis]>=0.4.6
 sentence-transformers>=3.0.0
 lancedb>=0.29.0
 numpy>=1.24.0

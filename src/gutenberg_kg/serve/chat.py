@@ -3,11 +3,11 @@
 chat.py — GutenbergKG Chat Interface
 
 Streamlit chat UI for the corpus-gutenberg KGRAG worker.  Searches the
-consolidated DocKG (245 books, 18 genres) and 4 DiaryKG temporal indices,
+consolidated DocKG (226 books, 18 genres) and 4 DiaryKG temporal indices,
 and optionally synthesises answers via a local Ollama / oMLX model.
 
 Run standalone (worker must be running first):
-    streamlit run docker/chat.py
+    gutenkg chat
 
 Or via docker compose:
     docker compose --profile chat up
@@ -18,10 +18,7 @@ from __future__ import annotations
 import html
 import io
 import os
-import sys
 from pathlib import Path
-
-sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
 
 import httpx
 import streamlit as st
@@ -475,7 +472,7 @@ def _render_sidebar() -> dict:
     """
     st.sidebar.title("📚 GutenbergKG")
     st.sidebar.markdown(
-        "245 books · 18 genres · 4 diaries  \n696K nodes · 6.2M edges · bge-small-en-v1.5"
+        "226 books · 18 genres · 4 diaries  \n751K nodes · 4.3M edges · bge-small-en-v1.5"
     )
     st.sidebar.markdown("---")
     st.sidebar.subheader("📖 Corpus")
@@ -656,7 +653,7 @@ def main() -> None:
             st.rerun()
 
     st.caption(
-        "Semantic search across 245 Project Gutenberg texts — philosophy, literature, "
+        "Semantic search across 226 Project Gutenberg texts — philosophy, literature, "
         "sacred texts, natural history, science fiction, and four historical diaries."
     )
 

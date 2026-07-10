@@ -36,18 +36,9 @@ docker tag gutenkg-worker:latest <your-registry>/gutenkg-worker:latest
 docker push <your-registry>/gutenkg-worker:latest
 ```
 
-`build_image.sh` builds local Python wheels for `gutenberg-kg` and `kg-rag`
-(not yet on PyPI), then runs `docker build`.
-
-The RunPod image also pins `kgmodule-utils[synthesis]==0.4.2` via
-`requirements.txt` to keep worker behavior reproducible across rebuilds.
-
-Assumed repo layout (siblings):
-```
-repos/
-├── gutenberg_kg/    ← this repo
-└── kgrag/
-```
+`build_image.sh` builds a local Python wheel for `gutenberg-kg`, then runs
+`docker build`. All other packages — including `kg-rag` and
+`kgmodule-utils[synthesis]>=0.4.6` — install from PyPI via `requirements.txt`.
 
 ---
 

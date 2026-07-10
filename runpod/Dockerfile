@@ -24,8 +24,8 @@ RUN apt-get update && \
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Local wheel packages (gutenberg-kg, kg-rag)
-# These are built by build_image.sh before docker build runs.
+# Local wheel package (gutenberg-kg) — built by build_image.sh before
+# docker build runs. kg-rag comes from PyPI via requirements.txt.
 COPY wheels/ wheels/
 RUN pip install --no-cache-dir wheels/*.whl && rm -rf wheels/
 

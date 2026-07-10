@@ -28,28 +28,26 @@ FROM egsuchanek/kgrag-worker:latest
 
 WORKDIR /app
 
+# kgmodule-utils: synthesis + shared KG runtime
 # doc-kg: DocKG index + query API
 # diary-kg: DiaryKG temporal index + query API
 # streamlit + httpx: chat UI dependencies
 # watchdog: faster Streamlit file-watching via native OS events (vs. polling)
-# doc-kg and kgmodule-utils install from GIT (tag/sha), not PyPI. This decouples
-# DEPLOYS from PyPI RELEASES: to ship a doc-kg/kg_utils change, push the commit/tag
-# and bump the *_REF below — no wheel publish required (mirrors how kg-rag is
-# installed). diary-kg (stable) stays pinned on PyPI.
-#   v0.15.9 = CPU-parallel worker recycling + device guard + FTS5/BM25+RRF hybrid;
-#   v0.4.4  = KG_EMBED_DEVICE worker pinning.
-#   NOTE: refs must be pushed to the remote (`git push origin <tag>`); a private
-#   repo additionally needs a build-time git credential.
-ARG KGMODULE_UTILS_REF=v0.4.4
-ARG DOC_KG_REF=v0.15.9
+# All three KG packages ship on PyPI, so they install by version like any other
+# dep. Pre-installing them here (before the src COPY below) keeps them in a cached
+# layer, so source-only changes don't re-resolve the heavy KG/torch stack.
+ARG KGMODULE_UTILS_VERSION=0.4.6
+ARG DOC_KG_VERSION=0.16.0
 ARG DIARY_KG_VERSION=0.93.2
 RUN pip install --no-cache-dir \
-    "kgmodule-utils[synthesis] @ git+https://github.com/Flux-Frontiers/KG_utils.git@${KGMODULE_UTILS_REF}" \
-    "doc-kg @ git+https://github.com/Flux-Frontiers/doc_kg.git@${DOC_KG_REF}" \
+    "kgmodule-utils[synthesis]==${KGMODULE_UTILS_VERSION}" \
+    "doc-kg==${DOC_KG_VERSION}" \
     "diary-kg==${DIARY_KG_VERSION}" \
     streamlit httpx watchdog openai
 
 # Install the local repo package so runtime imports always match this checkout.
+# The serving layer (handler, chat UI, pages) ships inside the package at
+# gutenberg_kg/serve/ — no loose script COPYs needed.
 COPY pyproject.toml README.md /app/
 COPY src/gutenberg_kg /app/src/gutenberg_kg
 RUN pip install --no-cache-dir .
@@ -75,12 +73,7 @@ ENV TRANSFORMERS_OFFLINE=1
 # Lives at:      bundles/gutenberg-all/   (gitignored — build locally first)
 COPY bundles/gutenberg-all/ /workspace/gutenberg/
 
-COPY docker/handler.py   /app/handler.py
-COPY docker/chat.py      /app/chat.py
-COPY docker/pages/       /app/pages/
-COPY docker/image_gen.py /app/image_gen.py
-
 ENV GUTENBERG_ROOT=/workspace/gutenberg
 ENV EMBED_MODEL=BAAI/bge-small-en-v1.5
 
-CMD ["python", "-u", "handler.py"]
+CMD ["python", "-u", "-m", "gutenberg_kg.serve.handler"]

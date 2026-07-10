@@ -18,8 +18,8 @@ services:
       context: ..
       dockerfile: docker/Dockerfile
       args:
-        KGMODULE_UTILS_VERSION: 0.4.3
-    command: python handler.py --rp_serve_api --rp_api_host 0.0.0.0
+        KGMODULE_UTILS_VERSION: "0.4.6"
+    command: python -u -m gutenberg_kg.serve.handler --rp_serve_api --rp_api_host 0.0.0.0
     ports:
       - "8000:8000"
     environment:
@@ -45,10 +45,7 @@ services:
   # Optional Streamlit chat UI — launch with:  docker compose --profile chat up
   gutenberg-chat:
     image: corpus-gutenberg:latest
-    command: >
-      streamlit run /app/chat.py
-      --server.port 8501
-      --server.address 0.0.0.0
+    command: gutenkg chat --port 8501 --address 0.0.0.0
     ports:
       - "8501:8501"
     environment:

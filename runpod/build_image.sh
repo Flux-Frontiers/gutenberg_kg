@@ -6,7 +6,8 @@
 #
 # Default IMAGE_TAG: gutenkg-worker:latest
 #
-# Prereqs: pip, docker, gutenberg_kg and kgrag repos checked out as siblings.
+# Prereqs: pip, docker. kg-rag installs from PyPI (see requirements.txt);
+# only the gutenberg-kg wheel is built locally.
 
 set -euo pipefail
 
@@ -14,22 +15,12 @@ IMAGE="${1:-gutenkg-worker:latest}"
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 WHEEL_DIR="${SCRIPT_DIR}/wheels"
 
-# Repo paths — adjust if your layout differs
 GUTENBERG_REPO="$(dirname "${SCRIPT_DIR}")"            # this repo
-KGRAG_REPO="$(dirname "${GUTENBERG_REPO}")/kgrag"      # ../kgrag
 
-echo "==> Building local wheels into ${WHEEL_DIR}/"
+echo "==> Building gutenberg-kg wheel into ${WHEEL_DIR}/"
 rm -rf "${WHEEL_DIR}"
 mkdir -p "${WHEEL_DIR}"
-
-for repo in "${GUTENBERG_REPO}" "${KGRAG_REPO}"; do
-    if [[ ! -d "${repo}" ]]; then
-        echo "ERROR: repo not found at ${repo}" >&2
-        exit 1
-    fi
-    echo "  building wheel for ${repo##*/} …"
-    pip wheel --no-deps -w "${WHEEL_DIR}" "${repo}" -q
-done
+pip wheel --no-deps -w "${WHEEL_DIR}" "${GUTENBERG_REPO}" -q
 
 echo "==> Wheels built:"
 ls -lh "${WHEEL_DIR}"/*.whl

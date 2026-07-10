@@ -445,7 +445,7 @@ def _attach_diary_fields(hits: list[dict]) -> None:
         except Exception:  # noqa: BLE001
             continue
         for h in kg_hits:
-            text, ts = field_by_id.get(h.get("node_id"), ("", None))
+            text, ts = field_by_id.get(h.get("node_id", ""), ("", None))
             h["content"] = text
             h["summary"] = text
             h["timestamp"] = ts
@@ -508,7 +508,7 @@ def _semantic_search(
         except Exception as exc:  # noqa: BLE001 — degrade to dense-only on any error
             print(f"[query] WARNING: lexical search failed, dense-only: {exc}")
 
-    row_by_id: dict[str, dict] = {r.get("id"): r for r in dense_rows}
+    row_by_id: dict[str, dict] = {r["id"]: r for r in dense_rows}
     if lex_ids:
         # Hydrate cosine rows for lexical-only IDs so every fused hit carries an
         # honest cosine score and stays inside the genre/kind scope.
@@ -519,9 +519,9 @@ def _semantic_search(
                 _DOCKG_TABLE, qvec, f"{where} AND id IN ({id_list})", len(missing)
             )
             for r in lex_rows:
-                row_by_id.setdefault(r.get("id"), r)
+                row_by_id.setdefault(r["id"], r)
         lex_ids = [i for i in lex_ids if i in row_by_id]  # drop out-of-scope IDs
-        ordered_ids = _rrf_fuse([r.get("id") for r in dense_rows], lex_ids, k)
+        ordered_ids = _rrf_fuse([r["id"] for r in dense_rows], lex_ids, k)
         ordered_rows = [row_by_id[i] for i in ordered_ids]
     else:
         ordered_rows = dense_rows[:k]
@@ -882,5 +882,10 @@ def handler(job: dict) -> dict:
     }
 
 
-if __name__ == "__main__":
+def main() -> None:
+    """Start the RunPod serverless worker (``gutenkg-handler`` entry point)."""
     runpod.serverless.start({"handler": handler})
+
+
+if __name__ == "__main__":
+    main()

@@ -8,7 +8,7 @@ the DocKG section/chunk nodes already baked into the worker's index — no raw
 corpus text is shipped in the deployed image.
 
 Run standalone (worker must be running first):
-    streamlit run docker/chat.py
+    gutenkg chat
     # then use the "Browse" entry in the top nav
 
 Or via docker compose:
@@ -41,7 +41,7 @@ st.set_page_config(
 def _call_worker(worker_url: str, op: str, **kwargs) -> dict:
     """POST ``{"input": {"op": op, **kwargs}}`` to the worker's ``/runsync`` endpoint.
 
-    Mirrors the RunPod job format ``docker/handler.py`` expects, the same
+    Mirrors the RunPod job format ``gutenberg_kg.serve.handler`` expects, the same
     convention ``WorkerClient`` uses internally for the chat page's queries.
 
     :param worker_url: Base URL of the KGRAG worker.
