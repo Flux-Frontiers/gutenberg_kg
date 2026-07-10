@@ -10,6 +10,25 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added
 
+### Changed
+
+### Removed
+
+### Fixed
+
+---
+
+## [1.8.0] - 2026-07-10
+
+### Added
+
+- **`gutenkg init` command** (`src/gutenberg_kg/cli/cmd_init.py`,
+  `src/gutenberg_kg/model_setup.py`) — fetches the local ML models (spaCy +
+  embedder) the pipeline needs, run once after cloning + `poetry install`. It
+  catches a missing model up front instead of failing mid-run during
+  `chunk-diaries` / `ingest` / `build-corpus`. Pass `--check` to report model
+  status without downloading. Docker builds don't need it — the image
+  pre-downloads the embedder at build time.
 - **Corpus browser** — a new "Browse" page (`docker/pages/1_Browse.py`) lets you
   list every book by genre and read it chapter by chapter, reconstructed from
   the DocKG section/chunk nodes already baked into the worker's index (no raw

@@ -1,61 +1,54 @@
-# Release Notes — v1.7.0
+# Release Notes — v1.8.0
 
-> Released: 2026-06-24
+> Released: 2026-07-10
 
-GutenbergKG 1.7.0 makes the served retriever genuinely hybrid and the corpus
-builder leaner and more reliable. Chat queries now blend dense semantic search
-with a lexical BM25 channel, so exact phrases the embedder used to bury (think
-"circles of Hell" landing on Dante's *Inferno*) surface where you expect them.
-At the same time, the consolidated build sheds nearly a million dead-weight
-edges, and `--embed-device auto` no longer melts down on Apple Silicon.
+GutenbergKG 1.8.0 smooths the rough edges of first-run setup and corpus
+integrity. A new `gutenkg init` command pulls the local ML models the pipeline
+needs before you touch any data, so a fresh clone no longer dies halfway through
+a build with a missing-model error. Alongside it, the deployed chat app gains a
+full corpus browser, a smarter model picker, and an audit check that catches the
+insidious class of bug where a book's declared title and its actual text quietly
+disagree.
 
 ## What changed
 
-**Hybrid dense + lexical retrieval.** The served handler now fuses cosine kNN
-with an FTS5/BM25 channel via reciprocal rank fusion (RRF, k=60), recovering
-exact-term matches that pure embeddings miss. Both channels honour the same
-genre and content-kind scope, and the FTS5 index is rebuilt over the full
-consolidated graph at the end of a build so the hybrid path reliably activates
-rather than silently degrading to dense-only. This requires `doc-kg >= 0.16.0`,
-now the floor across every install extra.
+**One-shot model setup.** `gutenkg init` fetches the spaCy and embedder models
+the local pipeline depends on, meant to be run once after cloning and
+`poetry install`. It fails fast and legibly up front instead of letting
+`chunk-diaries` / `ingest` / `build-corpus` blow up mid-run on a model that was
+never downloaded. Pass `--check` to report model status without downloading.
+Docker builds don't need it — the image pre-downloads the embedder at build time
+and never runs spaCy at runtime.
 
-**Leaner consolidated bundles.** `build-corpus` no longer discovers SIMILAR_TO
-edges by default. The served handler is semantic-first and never traverses the
-edges table, so the ~800k edges a full build produced (245 books × ~2.8k) were
-pure bloat in the shipped `graph.sqlite`. The flag flipped from opt-out
-`--no-similar` to an opt-in `--similar/--no-similar` pair. Per-book
-`gutenkg ingest` is unchanged — it still builds cap-8 edges for viz3d arcs and
-hop queries.
+**Read the corpus, not just search it.** A new "Browse" page in the deployed app
+lets you walk every book by genre and read it chapter by chapter, reconstructed
+from the DocKG section/chunk nodes already baked into the worker's index — no raw
+corpus text needs to ship in the image. Four new handler ops (`list_genres`,
+`list_books`, `get_chapters`, `get_chapter`) serve it through the existing
+`/runsync` endpoint next to search.
 
-**Device-aware embedding.** `--embed-device auto` now resolves to CPU instead of
-MPS. The full build embeds 700k+ nodes, and MPS single-process streaming OOMs on
-Apple's unified-memory watermark partway through; the CPU path fans out across
-`cpu_count/2` worker processes and finishes reliably. Pass `--embed-device mps`
-explicitly only for a small corpus that fits in GPU memory. The startup banner
-reports the resolved mode.
+**A model picker that doesn't sabotage answers.** The synthesis model dropdown
+now filters out reasoning models (Agents-A1, DeepSeek-R1, gpt-oss) and non-chat
+utility models (document converters, embedders). Their chain-of-thought prose
+isn't reliably strippable and was truncating RAG answers before the real
+response ever arrived.
 
-**Docker and deployment.** The Docker image now installs the local repo package
-rather than hot-copying a single file over a PyPI install, so runtime imports
-always match the checkout being built; transient SQLite sidecar files are
-excluded from the build context. The RunPod handler was rewritten onto the same
-direct LanceDB cosine-search path as the Docker handler, gaining DiaryKG support
-and eliminating the startup hang on large corpora; see the new `docs/RUNPOD.md`
-for the full deployment guide. The README now leads with the Docker local-app
-quick start.
-
-**Corpus cleanup.** Three mislabeled / duplicate Dante editions in
-`world-literature` were consolidated into *The Divine Comedy (Cary)* and
-*The Divine Comedy (Longfellow)*, with the duplicate dropped.
+**Catching mislabeled books.** `gutenkg audit` now compares each book's
+`reference.md` title against the title quoted in its auto-generated summary
+(sourced from the real fetched text) and flags a divergence as an error —
+surfacing a wrong Gutenberg ID that would otherwise silently mislabel a whole
+book. A `KNOWN_TITLE_VARIANTS` allowlist exempts legitimate alternate
+titles and translations. The check drove a corpus-wide relabel/re-fetch pass
+across nine genres, plus ~40 new author pages and a regenerated `docs/CORPUS.md`.
 
 ## Upgrading
 
-Rebuild the consolidated bundle (`make build-corpus`) to pick up the
-SIMILAR_TO-free graph and the freshly rebuilt FTS5 index that powers hybrid
-retrieval — an existing bundle built before this release will fall back to
-dense-only ranking. Ensure `doc-kg >= 0.16.0` is installed (a plain
-`pip install -e ".[full]"` / `poetry install` handles this). If you relied on
-SIMILAR_TO edges in a consolidated bundle for viz3d, pass `--similar` to opt
-back in. No data migration is required.
+After pulling, run `gutenkg init` once to make sure the local models are present
+before your next build. No data migration is required, and existing consolidated
+bundles keep working — rebuild only if you want the corpus relabels and the
+refreshed author index. The new Browse page and model-picker filtering are
+served automatically by the updated handler; redeploy the worker image to pick
+them up.
 
 ---
 
