@@ -99,7 +99,7 @@ class BuildCorpusOptions:
     discover_similar: bool = False  # served handler never traverses SIMILAR_TO; opt-in only
     n_workers: int = 4
     embed_batch_size: int = 64
-    embed_device: str = "auto"  # auto|cpu|mps
+    embed_device: str = "auto"  # auto|cpu|mps|cuda
     wipe: bool = True
     update: bool = False  # incremental: embed only new/changed nodes, upsert, prune
     dry_run: bool = False
@@ -125,6 +125,19 @@ def _mps_available() -> bool:
         import torch  # pylint: disable=import-outside-toplevel
 
         return bool(torch.backends.mps.is_available())
+    except Exception:  # noqa: BLE001
+        return False
+
+
+def _cuda_available() -> bool:
+    """Return True when torch reports a usable CUDA backend.
+
+    :return: ``True`` if CUDA is available; ``False`` on any import/probe failure.
+    """
+    try:
+        import torch  # pylint: disable=import-outside-toplevel
+
+        return bool(torch.cuda.is_available())
     except Exception:  # noqa: BLE001
         return False
 
@@ -393,6 +406,9 @@ def run_build_corpus(genres: list[str], opts: BuildCorpusOptions) -> int:
     if opts.embed_device == "mps" and not _mps_available():
         print("[x] --embed-device mps requested but MPS is not available")
         return 1
+    if opts.embed_device == "cuda" and not _cuda_available():
+        print("[x] --embed-device cuda requested but CUDA is not available")
+        return 1
     try:
         embedder = make_embedder(device=opts.embed_device)
     except Exception as exc:  # noqa: BLE001
@@ -435,12 +451,18 @@ def run_build_corpus(genres: list[str], opts: BuildCorpusOptions) -> int:
         )
         # Resolve the effective device to pick the embedding path: CPU can fan
         # out across processes safely; MPS/CUDA cannot (one shared allocator).
-        # `auto` prefers MPS when available: the encode-batch cap (doc_kg PR #7 /
-        # kgmodule-utils 0.4.6) bounds per-call memory, so single-process
-        # streaming no longer hits the unified-memory watermark that used to
-        # force this to CPU. Falls back to parallel CPU when no GPU is present.
+        # `auto` prefers a GPU when available (MPS on Macs, CUDA elsewhere —
+        # e.g. RunPod): the encode-batch cap (doc_kg PR #7 / kgmodule-utils
+        # 0.4.6) bounds per-call memory, so single-process streaming no longer
+        # hits the unified-memory watermark that used to force this to CPU.
+        # Falls back to parallel CPU when no GPU is present.
         if opts.embed_device == "auto":
-            effective_device = "mps" if _mps_available() else "cpu"
+            if _mps_available():
+                effective_device = "mps"
+            elif _cuda_available():
+                effective_device = "cuda"
+            else:
+                effective_device = "cpu"
         else:
             effective_device = opts.embed_device
 
