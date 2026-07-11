@@ -9,8 +9,10 @@
 
 | Title | Genre |
 |-------|-------|
-| At the mountains of madness | science-fiction |
-| The Call of Cthulhu | science-fiction |
-| The Dunwich Horror | science-fiction |
-| The Shunned House | science-fiction |
-| The shadow over Innsmouth | science-fiction |
+| At the Mountains of Madness | horror |
+| The Call of Cthulhu | horror |
+| The Case of Charles Dexter Ward | horror |
+| The Colour Out of Space | horror |
+| The Dunwich Horror | horror |
+| The Shadow over Innsmouth | horror |
+| The Shunned House | horror |

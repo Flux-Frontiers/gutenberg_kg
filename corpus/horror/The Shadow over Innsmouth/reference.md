@@ -1,4 +1,4 @@
-# Reference: The shadow over Innsmouth
+# Reference: The Shadow over Innsmouth
 
 ## Source
 

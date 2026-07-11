@@ -9,4 +9,4 @@
 
 | Title | Genre |
 |-------|-------|
-| A Princess of Mars | science-fiction |
+| The House on the Borderland | horror |

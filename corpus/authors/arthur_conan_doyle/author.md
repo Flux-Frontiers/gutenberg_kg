@@ -9,5 +9,6 @@
 
 | Title | Genre |
 |-------|-------|
+| Tales of Terror and Mystery | horror |
 | The Adventures of Sherlock Holmes | english-literature |
 | The Lost World | science-fiction |

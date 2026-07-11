@@ -16,12 +16,7 @@
 201	Flatland
 139	The Lost World
 
-# --- H.P. Lovecraft ---
-68283	The Call of Cthulhu
-70652	At the Mountains of Madness
-73181	The Shadow over Innsmouth
-50133	The Dunwich Horror
-31469	The Shunned House
+# --- H.P. Lovecraft moved to the horror genre (see catalogs/horror.txt) ---
 
 # --- Edgar Rice Burroughs ---
 123	At the Earth's Core

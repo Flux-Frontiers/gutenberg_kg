@@ -1,4 +1,4 @@
-# At the mountains of madness
+# At the Mountains of Madness
 
 **H. P. (Howard Phillips) Lovecraft**
 

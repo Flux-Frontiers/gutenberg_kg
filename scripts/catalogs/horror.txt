@@ -1,0 +1,26 @@
+# Horror genre catalog
+# <gutenberg_id>[TAB title_override]
+
+# Gothic foundations
+3268	The Mysteries of Udolpho
+601	The Monk: A Romance
+
+# Weird / cosmic horror
+389	The Great God Pan
+10002	The House on the Borderland
+11438	The Willows
+8492	The King in Yellow
+
+# H. P. Lovecraft (all consolidated here from science-fiction)
+68283	The Call of Cthulhu
+70652	At the Mountains of Madness
+50133	The Dunwich Horror
+73181	The Shadow over Innsmouth
+68236	The Colour Out of Space
+73547	The Case of Charles Dexter Ward
+31469	The Shunned House
+
+# Vampire / ghost classics
+10007	Carmilla
+8486	Ghost Stories of an Antiquary
+537	Tales of Terror and Mystery

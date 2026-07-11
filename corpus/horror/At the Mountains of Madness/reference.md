@@ -1,4 +1,4 @@
-# Reference: At the mountains of madness
+# Reference: At the Mountains of Madness
 
 ## Source
 

@@ -1,4 +1,4 @@
-# The shadow over Innsmouth
+# The Shadow over Innsmouth
 
 **H. P. (Howard Phillips) Lovecraft**
 

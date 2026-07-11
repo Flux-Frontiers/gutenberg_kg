@@ -5,11 +5,14 @@
 | [Adam Smith](adam_smith/author.md) | 1723 | 1790 | 1 |
 | [Aeschylus](aeschylus/author.md) | -525 | -456 | 1 |
 | [Alfred Russel Wallace](alfred_russel_wallace/author.md) | 1823 | 1913 | 1 |
+| [Algernon Blackwood](algernon_blackwood/author.md) | 1869 | 1951 | 1 |
 | [Andrew Lang](andrew_lang/author.md) | 1844 | 1912 | 1 |
+| [Ann Ward Radcliffe](ann_ward_radcliffe/author.md) | 1764 | 1823 | 1 |
 | [Anton Pavlovich Chekhov](anton_pavlovich_chekhov/author.md) | 1860 | 1904 | 1 |
 | [Aristophanes](aristophanes/author.md) | -450 | -388 | 5 |
 | [Aristotle](aristotle/author.md) | -384 | -322 | 3 |
-| [Arthur Conan Doyle](arthur_conan_doyle/author.md) | 1859 | 1930 | 2 |
+| [Arthur Conan Doyle](arthur_conan_doyle/author.md) | 1859 | 1930 | 3 |
+| [Arthur Machen](arthur_machen/author.md) | 1863 | 1947 | 1 |
 | [Auguste Maquet](auguste_maquet/author.md) | 1802 | 1870 | 2 |
 | [Benjamin Franklin](benjamin_franklin/author.md) | 1706 | 1790 | 1 |
 | [Benvenuto Cellini](benvenuto_cellini/author.md) | 1500 | 1571 | 1 |
@@ -47,7 +50,7 @@
 | [George Gordon Byron, Baron Byron](george_gordon_byron_baron_byron/author.md) | 1788 | 1824 | 2 |
 | [Gustave Flaubert](gustave_flaubert/author.md) | 1821 | 1880 | 1 |
 | [H. G. (Herbert George) Wells](h_g_herbert_george_wells/author.md) | 1866 | 1946 | 6 |
-| [H. P. (Howard Phillips) Lovecraft](h_p_howard_phillips_lovecraft/author.md) | 1890 | 1937 | 5 |
+| [H. P. (Howard Phillips) Lovecraft](h_p_howard_phillips_lovecraft/author.md) | 1890 | 1937 | 7 |
 | [Harriet A. (Harriet Ann) Jacobs](harriet_a_harriet_ann_jacobs/author.md) | 1813 | 1897 | 1 |
 | [Harriet Beecher Stowe](harriet_beecher_stowe/author.md) | 1811 | 1896 | 1 |
 | [Henrik Ibsen](henrik_ibsen/author.md) | 1828 | 1906 | 3 |
@@ -78,12 +81,15 @@
 | [John Webster](john_webster/author.md) | — | — | 1 |
 | [Jonathan Swift](jonathan_swift/author.md) | 1667 | 1745 | 2 |
 | [Joseph Conrad](joseph_conrad/author.md) | 1857 | 1924 | 1 |
+| [Joseph Sheridan Le Fanu](joseph_sheridan_le_fanu/author.md) | 1814 | 1873 | 1 |
 | [Jules Verne](jules_verne/author.md) | 1828 | 1905 | 4 |
 | [Kate Chopin](kate_chopin/author.md) | 1850 | 1904 | 1 |
 | [Laozi](laozi/author.md) | — | — | 1 |
 | [Leo, graf Tolstoy](leo_graf_tolstoy/author.md) | 1828 | 1910 | 3 |
 | [Lewis Carroll](lewis_carroll/author.md) | 1832 | 1898 | 1 |
 | [Lucius Annaeus Seneca](lucius_annaeus_seneca/author.md) | — | 65 | 1 |
+| [M. G. (Matthew Gregory) Lewis](m_g_matthew_gregory_lewis/author.md) | 1775 | 1818 | 1 |
+| [M. R. (Montague Rhodes) James](m_r_montague_rhodes_james/author.md) | 1862 | 1936 | 1 |
 | [Mark Twain](mark_twain/author.md) | 1835 | 1910 | 2 |
 | [Mary Wollstonecraft](mary_wollstonecraft/author.md) | 1759 | 1797 | 1 |
 | [Mary Wollstonecraft Shelley](mary_wollstonecraft_shelley/author.md) | 1797 | 1851 | 1 |
@@ -103,6 +109,7 @@
 | [René Descartes](rené_descartes/author.md) | 1596 | 1650 | 1 |
 | [Richard Henry Dana](richard_henry_dana/author.md) | 1815 | 1882 | 1 |
 | [Robert Louis Stevenson](robert_louis_stevenson/author.md) | 1850 | 1894 | 2 |
+| [Robert W. (Robert William) Chambers](robert_w_robert_william_chambers/author.md) | 1865 | 1933 | 1 |
 | [Rudyard Kipling](rudyard_kipling/author.md) | 1865 | 1936 | 2 |
 | [Samuel Pepys](samuel_pepys/author.md) | 1633 | 1703 | 1 |
 | [Sophocles](sophocles/author.md) | -496 | -406 | 1 |
@@ -125,6 +132,7 @@
 | [Washington Irving](washington_irving/author.md) | 1783 | 1859 | 1 |
 | [Wilhelm Grimm](wilhelm_grimm/author.md) | 1785 | 1863 | 1 |
 | [Willa Cather](willa_cather/author.md) | 1873 | 1947 | 2 |
+| [William Hope Hodgson](william_hope_hodgson/author.md) | 1877 | 1918 | 1 |
 | [William Makepeace Thackeray](william_makepeace_thackeray/author.md) | 1811 | 1863 | 1 |
 | [William Shakespeare](william_shakespeare/author.md) | 1564 | 1616 | 4 |
 | [active 6th century B.C. Sunzi](active_6th_century_bc_sunzi/author.md) | — | — | 1 |
