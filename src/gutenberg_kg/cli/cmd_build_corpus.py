@@ -69,7 +69,8 @@ def _parse_strategy(ctx, param, value):  # noqa: ARG001
     type=int,
     default=4,
     show_default=True,
-    help="(Deprecated; ignored) Embedding now streams single-process. Use --embed-batch-size for throughput.",
+    help="Embedding worker processes for the CPU path (each loads its own model copy, "
+    "~1.2 GB). Ignored on MPS/CUDA, which stream single-process.",
 )
 @click.option(
     "--embed-batch-size",
@@ -83,7 +84,7 @@ def _parse_strategy(ctx, param, value):  # noqa: ARG001
     type=click.Choice(["auto", "cpu", "mps"]),
     default="auto",
     show_default=True,
-    help="Embedding device override (auto uses the backend default).",
+    help="Embedding device override (auto prefers MPS when available, else CPU).",
 )
 @click.option(
     "--strategy",
