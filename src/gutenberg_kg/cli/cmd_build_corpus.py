@@ -81,10 +81,10 @@ def _parse_strategy(ctx, param, value):  # noqa: ARG001
 )
 @click.option(
     "--embed-device",
-    type=click.Choice(["auto", "cpu", "mps"]),
+    type=click.Choice(["auto", "cpu", "mps", "cuda"]),
     default="auto",
     show_default=True,
-    help="Embedding device override (auto prefers MPS when available, else CPU).",
+    help="Embedding device override (auto prefers MPS, then CUDA, else CPU).",
 )
 @click.option(
     "--strategy",
