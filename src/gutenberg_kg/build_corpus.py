@@ -452,10 +452,18 @@ def run_build_corpus(genres: list[str], opts: BuildCorpusOptions) -> int:
         # Resolve the effective device to pick the embedding path: CPU can fan
         # out across processes safely; MPS/CUDA cannot (one shared allocator).
         # `auto` prefers a GPU when available (MPS on Macs, CUDA elsewhere —
-        # e.g. RunPod): the encode-batch cap (doc_kg PR #7 / kgmodule-utils
-        # 0.4.6) bounds per-call memory, so single-process streaming no longer
-        # hits the unified-memory watermark that used to force this to CPU.
-        # Falls back to parallel CPU when no GPU is present.
+        # e.g. RunPod), falling back to parallel CPU when no GPU is present.
+        #
+        # CAUTION: unlike `dockg build-index` (SemanticIndex.build(), which
+        # hard-caps its encode sub-batch at 128 — doc_kg PR #7 / kgmodule-utils
+        # 0.4.6), this streaming path (DocKG.build_embeddings ->
+        # precompute_embeddings -> _precompute_embeddings_jsonl_stream) has NO
+        # internal cap: --embed-batch-size is passed straight to
+        # model.encode() uncapped. It's safe today only because our own
+        # --embed-batch-size default (64) is small. Raising it for throughput
+        # while on MPS/CUDA for the full 700k+ node corpus reintroduces the
+        # batch x seq^2 unified-memory OOM PR #7 fixed elsewhere -- that fix
+        # does not reach this code path.
         if opts.embed_device == "auto":
             if _mps_available():
                 effective_device = "mps"

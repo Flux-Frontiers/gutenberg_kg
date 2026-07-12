@@ -77,7 +77,10 @@ def _parse_strategy(ctx, param, value):  # noqa: ARG001
     type=int,
     default=64,
     show_default=True,
-    help="Embedding batch size passed to sentence-transformers encode().",
+    help="Embedding batch size passed to sentence-transformers encode(). Unbounded on "
+    "the MPS/CUDA streaming path (no internal cap) -- raising this for throughput "
+    "on the full corpus risks an attention-memory OOM (batch x seq^2). Safe to raise "
+    "on --embed-device cpu, where each worker's own batch is small either way.",
 )
 @click.option(
     "--embed-device",
