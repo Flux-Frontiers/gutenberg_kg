@@ -440,7 +440,10 @@ def run_build_corpus(genres: list[str], opts: BuildCorpusOptions) -> int:
             # it uses every core instead of ~1.6.
             if effective_device == "cpu":
                 os.environ["KG_EMBED_DEVICE"] = "cpu"
-            cache_path = out_dir / "embeddings.json"
+            # .jsonl streams vectors to disk as shards complete (CorpusEmbedder.
+            # embed_to_cache) instead of holding the whole corpus in RAM — peak memory
+            # is bounded by shard size, which is what kept the 689k-node build off swap.
+            cache_path = out_dir / "embeddings.jsonl"
             mode = "incremental — embed only new/changed nodes" if opts.update else "full"
             print(f"  [parallel] CPU multiprocessing ({mode})")
             kg_all.build_embeddings(
