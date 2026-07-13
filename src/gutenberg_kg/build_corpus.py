@@ -99,7 +99,7 @@ class BuildCorpusOptions:
     discover_similar: bool = False  # served handler never traverses SIMILAR_TO; opt-in only
     n_workers: int = 4
     embed_batch_size: int = 64
-    embed_device: str = "auto"  # auto|cpu|mps
+    embed_device: str = "auto"  # auto|cpu|mps|cuda
     wipe: bool = True
     update: bool = False  # incremental: embed only new/changed nodes, upsert, prune
     dry_run: bool = False
@@ -114,6 +114,32 @@ class BuildCorpusOptions:
 # ---------------------------------------------------------------------------
 # Helpers
 # ---------------------------------------------------------------------------
+
+
+def _mps_available() -> bool:
+    """Return True when torch reports a usable MPS backend.
+
+    :return: ``True`` if MPS is available; ``False`` on any import/probe failure.
+    """
+    try:
+        import torch  # pylint: disable=import-outside-toplevel
+
+        return bool(torch.backends.mps.is_available())
+    except Exception:  # noqa: BLE001
+        return False
+
+
+def _cuda_available() -> bool:
+    """Return True when torch reports a usable CUDA backend.
+
+    :return: ``True`` if CUDA is available; ``False`` on any import/probe failure.
+    """
+    try:
+        import torch  # pylint: disable=import-outside-toplevel
+
+        return bool(torch.cuda.is_available())
+    except Exception:  # noqa: BLE001
+        return False
 
 
 def derive_output_name(genres: list[str], override: str | None) -> str:
@@ -317,10 +343,15 @@ def run_build_corpus(genres: list[str], opts: BuildCorpusOptions) -> int:
     print(f"  books         : ~{n_books}")
     print(f"  similar_k     : {opts.similar_k if opts.discover_similar else 'disabled'}")
     _mode = {
-        "cpu": "parallel (CPU multiprocessing, cpu_count/2 workers)",
+        "cpu": f"parallel (CPU multiprocessing, {opts.n_workers} workers)",
         "mps": "streaming (single-process; GPU can't be shared across workers)",
         "cuda": "streaming (single-process; GPU can't be shared across workers)",
-    }.get(opts.embed_device, "auto → parallel CPU (use --embed-device mps for small corpora)")
+    }.get(
+        opts.embed_device,
+        "auto → streaming MPS (single-process)"
+        if _mps_available()
+        else f"auto → parallel CPU ({opts.n_workers} workers)",
+    )
     print(f"  embed mode    : {_mode}")
     print(f"  embed batch   : {opts.embed_batch_size}")
     print(f"  embed device  : {opts.embed_device}")
@@ -372,16 +403,12 @@ def run_build_corpus(genres: list[str], opts: BuildCorpusOptions) -> int:
     # 700k+ nodes in one pass; on Apple MPS the unified-memory watermark contends
     # with the system file cache and OOMs on "other allocations", so
     # `--embed-device cpu` is the reliable choice for the full corpus.
-    if opts.embed_device == "mps":
-        try:
-            import torch  # pylint: disable=import-outside-toplevel
-
-            if not torch.backends.mps.is_available():
-                print("[x] --embed-device mps requested but MPS is not available")
-                return 1
-        except Exception as exc:  # noqa: BLE001
-            print(f"[x] failed to validate embed device 'mps': {exc}")
-            return 1
+    if opts.embed_device == "mps" and not _mps_available():
+        print("[x] --embed-device mps requested but MPS is not available")
+        return 1
+    if opts.embed_device == "cuda" and not _cuda_available():
+        print("[x] --embed-device cuda requested but CUDA is not available")
+        return 1
     try:
         embedder = make_embedder(device=opts.embed_device)
     except Exception as exc:  # noqa: BLE001
@@ -424,22 +451,37 @@ def run_build_corpus(genres: list[str], opts: BuildCorpusOptions) -> int:
         )
         # Resolve the effective device to pick the embedding path: CPU can fan
         # out across processes safely; MPS/CUDA cannot (one shared allocator).
-        # `auto` deliberately resolves to CPU: the consolidated build embeds
-        # 700k+ nodes, and MPS single-process streaming OOMs on the unified-memory
-        # watermark (see embedder setup above). CPU parallel is the reliable
-        # default; request `--embed-device mps` explicitly for a small corpus that
-        # fits in GPU memory.
-        effective_device = "cpu" if opts.embed_device == "auto" else opts.embed_device
+        # `auto` prefers a GPU when available (MPS on Macs, CUDA elsewhere —
+        # e.g. RunPod), falling back to parallel CPU when no GPU is present.
+        #
+        # CAUTION: unlike `dockg build-index` (SemanticIndex.build(), which
+        # hard-caps its encode sub-batch at 128 — doc_kg PR #7 / kgmodule-utils
+        # 0.4.6), this streaming path (DocKG.build_embeddings ->
+        # precompute_embeddings -> _precompute_embeddings_jsonl_stream) has NO
+        # internal cap: --embed-batch-size is passed straight to
+        # model.encode() uncapped. It's safe today only because our own
+        # --embed-batch-size default (64) is small. Raising it for throughput
+        # while on MPS/CUDA for the full 700k+ node corpus reintroduces the
+        # batch x seq^2 unified-memory OOM PR #7 fixed elsewhere -- that fix
+        # does not reach this code path.
+        if opts.embed_device == "auto":
+            if _mps_available():
+                effective_device = "mps"
+            elif _cuda_available():
+                effective_device = "cuda"
+            else:
+                effective_device = "cpu"
+        else:
+            effective_device = opts.embed_device
 
         if effective_device == "cpu" or opts.update:
             # CPU (or any --update) → PARALLEL embedding via doc_kg's multi-process
             # CorpusEmbedder (`.json` cache). This is the only path that supports
-            # incremental `only_missing` embedding. On CPU we pin every worker via
-            # KG_EMBED_DEVICE: without it each auto-selects MPS and N workers stack
-            # N GPU allocations → OOM. Peak host RAM is just the vector cache, and
-            # it uses every core instead of ~1.6.
-            if effective_device == "cpu":
-                os.environ["KG_EMBED_DEVICE"] = "cpu"
+            # incremental `only_missing` embedding. Pin every worker via
+            # KG_EMBED_DEVICE — even when the resolved device is MPS (--update):
+            # without the pin each worker auto-selects MPS and N workers stack
+            # N GPU allocations → OOM.
+            os.environ["KG_EMBED_DEVICE"] = "cpu"
             # .jsonl streams vectors to disk as shards complete (CorpusEmbedder.
             # embed_to_cache) instead of holding the whole corpus in RAM — peak memory
             # is bounded by shard size, which is what kept the 689k-node build off swap.
@@ -448,7 +490,7 @@ def run_build_corpus(genres: list[str], opts: BuildCorpusOptions) -> int:
             print(f"  [parallel] CPU multiprocessing ({mode})")
             kg_all.build_embeddings(
                 out=cache_path,
-                n_workers=None,  # CorpusEmbedder default = cpu_count/2
+                n_workers=opts.n_workers,  # each worker loads its own model copy (~1.2 GB)
                 batch_size=opts.embed_batch_size,
                 only_missing=opts.update,
                 quiet=opts.quiet,
