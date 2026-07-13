@@ -5,9 +5,11 @@ from __future__ import annotations
 import os
 from pathlib import Path
 
+from gutenberg_kg import gutenberg as dg
 from gutenberg_kg.gutenberg import (
     _check_mark,
     _detect_toc,
+    _find_book_by_id,
     _is_heading,
     _skip_front_matter,
     _survey_book_dir,
@@ -457,3 +459,79 @@ def test_check_mark_true():
 
 def test_check_mark_false():
     assert _check_mark(False) == "✗"
+
+
+# ---------------------------------------------------------------------------
+# _find_book_by_id / ID-based download idempotence
+# ---------------------------------------------------------------------------
+
+
+def _make_downloaded_book(root: Path, name: str, ebook_id: int) -> Path:
+    book_dir = root / name
+    book_dir.mkdir(parents=True)
+    md = book_dir / f"{slugify(name)}.md"
+    md.write_text("Body text.", encoding="utf-8")
+    (book_dir / "reference.md").write_text(
+        f"# Reference: {name}\n\n- **Project Gutenberg ID**: {ebook_id}\n",
+        encoding="utf-8",
+    )
+    return md
+
+
+def test_find_book_by_id_matches_regardless_of_dir_name(tmp_path: Path):
+    md = _make_downloaded_book(tmp_path, "Letters on England", 2445)
+    assert _find_book_by_id(2445, str(tmp_path)) == str(md)
+
+
+def test_find_book_by_id_returns_none_when_absent(tmp_path: Path):
+    _make_downloaded_book(tmp_path, "Letters on England", 2445)
+    assert _find_book_by_id(9999, str(tmp_path)) is None
+
+
+def test_find_book_by_id_returns_none_for_missing_root(tmp_path: Path):
+    assert _find_book_by_id(2445, str(tmp_path / "nope")) is None
+
+
+def test_find_book_by_id_ignores_book_without_main_md(tmp_path: Path):
+    book_dir = tmp_path / "Broken Book"
+    book_dir.mkdir()
+    (book_dir / "reference.md").write_text(
+        "# Reference: Broken Book\n\n- **Project Gutenberg ID**: 2445\n",
+        encoding="utf-8",
+    )
+    assert _find_book_by_id(2445, str(tmp_path)) is None
+
+
+def test_download_book_skips_by_id_despite_title_override(tmp_path: Path, monkeypatch, capsys):
+    """A catalog title override that differs from the existing directory name
+    must not re-download the book (the regression that duplicated #2445)."""
+    monkeypatch.setattr(dg, "CORPUS_ROOT", str(tmp_path))
+    md = _make_downloaded_book(tmp_path / "letters", "Letters on England", 2445)
+
+    def _no_network(*a, **kw):
+        raise AssertionError("network must not be hit when the ID already exists")
+
+    monkeypatch.setattr(dg, "fetch_metadata", _no_network)
+    result = dg.download_book(2445, title="Philosophical Letters — Voltaire", genre="letters")
+    assert result == str(md)
+    assert "already downloaded (Gutenberg #2445)" in capsys.readouterr().out
+
+
+def test_download_book_force_bypasses_id_check(tmp_path: Path, monkeypatch):
+    """--force must still reach the metadata fetch even when the ID exists."""
+    monkeypatch.setattr(dg, "CORPUS_ROOT", str(tmp_path))
+    _make_downloaded_book(tmp_path / "letters", "Letters on England", 2445)
+
+    class _Sentinel(Exception):
+        pass
+
+    def _boom(*a, **kw):
+        raise _Sentinel
+
+    monkeypatch.setattr(dg, "fetch_metadata", _boom)
+    try:
+        dg.download_book(2445, genre="letters", force=True)
+    except _Sentinel:
+        pass  # reached the fetch — the ID check was bypassed
+    else:
+        raise AssertionError("expected the download path to be taken")

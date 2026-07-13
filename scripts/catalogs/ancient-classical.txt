@@ -13,7 +13,7 @@
 21765	Metamorphoses (Ovid)
 2562	The Clouds (Aristophanes)
 3013	The Birds (Aristophanes)
-8604	Oresteia (Aeschylus)
+8604	The House of Atreus; Being the Agamemnon, the Libation bearers, and the Furies
 35	Medea (Euripides)
 47001	On Duties / De Officiis (Cicero)
 785	On the Nature of Things (Lucretius)

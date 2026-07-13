@@ -20,10 +20,10 @@
 # ── 19th Century European ─────────────────────────────────────────────────────
 2542	A Doll's House — Henrik Ibsen
 4093	Hedda Gabler — Henrik Ibsen
-4070	The Master Builder — Henrik Ibsen
+4070	The Master Builder
 
 # ── Late 19th / Early 20th Century ───────────────────────────────────────────
 3825	Pygmalion — George Bernard Shaw
-3790	Major Barbara — George Bernard Shaw
+3790	Major Barbara
 844	The Importance of Being Earnest — Oscar Wilde
-1754	The Seagull — Anton Chekhov
+1754	The sea-gull

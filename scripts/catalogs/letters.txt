@@ -10,10 +10,10 @@
 2811	Letters of Pliny the Younger
 
 # ── 18th Century ─────────────────────────────────────────────────────────────
-2445	Philosophical Letters — Voltaire
+2445	Letters on England
 3352	Letters to His Son — Lord Chesterfield
-8901	Letters and Journals of Lord Byron, Vol. 1
-9921	Letters and Journals of Lord Byron, Vol. 2
+8901	The Works of Lord Byron: Letters and Journals. Vol. 1
+9921	The Works of Lord Byron: Letters and Journals. Vol. 2
 
 # ── 19th Century ─────────────────────────────────────────────────────────────
 35698	Letters of John Keats to His Family and Friends

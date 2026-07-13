@@ -19,10 +19,14 @@ NO_REGISTRY = "/nonexistent/registry.sqlite"  # forces registry_found=False
 
 @pytest.fixture
 def corpus(tmp_path, monkeypatch):
-    """Point the audit module at an empty synthetic corpus root."""
+    """Point the audit module at an empty synthetic corpus root (and an empty
+    synthetic catalog dir, so the real scripts/catalogs/ never leaks in)."""
     root = tmp_path / "corpus"
     root.mkdir()
+    catalogs = tmp_path / "catalogs"
+    catalogs.mkdir()
     monkeypatch.setattr(au, "CORPUS_ROOT", root)
+    monkeypatch.setattr(au, "CATALOG_ROOT", catalogs)
     return root
 
 
@@ -142,6 +146,55 @@ def test_allowlisted_id_suppresses_mismatch(corpus):
         summary_title="Something Entirely Different",
     )
     report = au.audit_corpus(["sacred-texts"], registry=NO_REGISTRY)
+    assert report.n_errors == 0
+
+
+def test_catalog_title_drift_is_error(corpus, tmp_path):
+    _make_book(corpus, "drama", "The sea-gull", ebook_id=1754)
+    (tmp_path / "catalogs" / "drama.txt").write_text(
+        "1754\tThe Seagull — Anton Chekhov\n", encoding="utf-8"
+    )
+    report = au.audit_corpus(["drama"], registry=NO_REGISTRY)
+    assert any("catalog title" in e for e in _errors(report, "The sea-gull"))
+
+
+def test_catalog_title_match_is_clean(corpus, tmp_path):
+    _make_book(corpus, "drama", "The sea-gull", ebook_id=1754)
+    (tmp_path / "catalogs" / "drama.txt").write_text("1754\tThe sea-gull\n", encoding="utf-8")
+    report = au.audit_corpus(["drama"], registry=NO_REGISTRY)
+    assert report.n_errors == 0
+
+
+def test_catalog_entry_not_yet_downloaded_is_ignored(corpus, tmp_path):
+    """A catalog line whose book has no directory yet is a wishlist entry,
+    not drift."""
+    _make_book(corpus, "drama", "The sea-gull", ebook_id=1754)
+    (tmp_path / "catalogs" / "drama.txt").write_text(
+        "1754\tThe sea-gull\n9999\tNot Downloaded Yet\n", encoding="utf-8"
+    )
+    report = au.audit_corpus(["drama"], registry=NO_REGISTRY)
+    assert report.n_errors == 0
+
+
+def test_catalog_id_only_line_is_ignored(corpus, tmp_path):
+    """A line without a title override has nothing to drift from."""
+    _make_book(corpus, "drama", "The sea-gull", ebook_id=1754)
+    (tmp_path / "catalogs" / "drama.txt").write_text("1754\n", encoding="utf-8")
+    report = au.audit_corpus(["drama"], registry=NO_REGISTRY)
+    assert report.n_errors == 0
+
+
+def test_catalog_title_unicode_normalization(corpus, tmp_path):
+    """NFC/NFD variants of the same name (macOS filesystems return NFD) must
+    not be flagged as drift."""
+    import unicodedata
+
+    name = "Faust: Der Tragödie zweiter Teil"
+    _make_book(corpus, "german-literature", unicodedata.normalize("NFD", name), ebook_id=2230)
+    (tmp_path / "catalogs" / "german-literature.txt").write_text(
+        f"2230\t{unicodedata.normalize('NFC', name)}\n", encoding="utf-8"
+    )
+    report = au.audit_corpus(["german-literature"], registry=NO_REGISTRY)
     assert report.n_errors == 0
 
 
