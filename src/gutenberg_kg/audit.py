@@ -9,6 +9,8 @@ to introduce by hand:
   (wrong/missing format);
 - a stray ``.dockg/`` inside a diary directory (diaries must use ``.diarykg/``);
 - the same Gutenberg ID assigned to more than one book (a mix-up/swap);
+- a catalog title override that differs from the directory name of the book
+  already downloaded for that ID (catalog/corpus naming drift);
 - a registered KG whose index file no longer exists, or a diary registered to
   a ``.dockg`` index instead of ``.diarykg``.
 
@@ -21,16 +23,19 @@ from __future__ import annotations
 
 import re
 import sqlite3
+import unicodedata
 from dataclasses import dataclass, field
 from difflib import SequenceMatcher
 from pathlib import Path
 
 from gutenberg_kg.authors import parse_reference
 from gutenberg_kg.genres import ALL_GENRES, IA_GENRES
+from gutenberg_kg.gutenberg import parse_catalog
 from gutenberg_kg.ingest import slugify
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 CORPUS_ROOT = REPO_ROOT / "corpus"
+CATALOG_ROOT = REPO_ROOT / "scripts" / "catalogs"
 DIARIES_GENRE = "diaries"
 
 # Curated catalog titles that intentionally differ from the Gutenberg canonical
@@ -328,6 +333,30 @@ def audit_corpus(
             others = ", ".join(f"{g.genre}/{g.book}" for g in group)
             for b in group:
                 b.errors.append(f"duplicate Gutenberg ID {eid} (shared by: {others})")
+
+    # Corpus-wide: catalog title override ≠ downloaded directory name. The
+    # download path is keyed on the Gutenberg ID, so drift can no longer
+    # duplicate books — but the catalog is the source of truth, and an
+    # override that misnames an existing directory is still a lie in it.
+    def _nfc(s: str) -> str:
+        return unicodedata.normalize("NFC", s)
+
+    by_genre_id = {(b.genre, b.ebook_id): b for b in report.books if b.ebook_id is not None}
+    for genre in genres:
+        if genre in IA_GENRES:
+            continue
+        catalog = CATALOG_ROOT / f"{genre}.txt"
+        if not catalog.exists():
+            continue
+        for eid, cat_title in parse_catalog(str(catalog)):
+            b = by_genre_id.get((genre, eid))
+            if b is None or cat_title is None:
+                continue  # not downloaded yet, or no override to compare
+            if _nfc(cat_title) != _nfc(b.book):
+                b.errors.append(
+                    f"catalog title '{cat_title}' ≠ directory '{b.book}' "
+                    f"(fix scripts/catalogs/{genre}.txt or rename the dir)"
+                )
 
     # Registered KGs (within the audited genres) whose index file is gone.
     if registry_found:

@@ -19,7 +19,7 @@
 # --- Enlightenment ---
 4280	Critique of Pure Reason (Kant)
 5682	Groundwork of the Metaphysics of Morals (Kant)
-59	Meditations on First Philosophy (Descartes)
+59	Discourse on the Method of Rightly Conducting One's Reason and of Seeking Truth in the Sciences
 34901	On Liberty (Mill)
 11224	Utilitarianism (Mill)
 46333	The Social Contract (Rousseau)

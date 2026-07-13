@@ -24,7 +24,9 @@ import urllib.error
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
+from pathlib import Path
 
+from gutenberg_kg.authors import parse_reference
 from gutenberg_kg.genres import GUTENBERG_GENRES as ALL_GENRES
 
 # ---------------------------------------------------------------------------
@@ -746,6 +748,32 @@ def write_reference(book_dir: str, meta: dict) -> str:
 # ---------------------------------------------------------------------------
 
 
+def _find_book_by_id(ebook_id: int, search_root: str) -> str | None:
+    """Return the primary ``.md`` path of an existing book with this Gutenberg ID.
+
+    Scans ``<search_root>/*/reference.md`` so idempotence is keyed on the ID
+    itself — a catalog title override that differs from the existing directory
+    name must not trigger a duplicate re-download of the same book.
+
+    :param ebook_id: Project Gutenberg numeric book ID.
+    :param search_root: Directory whose immediate children are book dirs.
+    :returns: Path to the book's full-text ``.md``, or ``None`` if not found.
+    """
+    root = Path(search_root)
+    if not root.is_dir():
+        return None
+    for ref in sorted(root.glob("*/reference.md")):
+        try:
+            if parse_reference(ref).get("ebook_id") != ebook_id:
+                continue
+        except OSError:
+            continue
+        cands = [p for p in ref.parent.glob("*.md") if p.name != "reference.md"]
+        if cands:
+            return str(cands[0])
+    return None
+
+
 def download_book(
     ebook_id: int,
     title: str | None = None,
@@ -764,6 +792,18 @@ def download_book(
     :param dry_run: Print what would be done without writing any files.
     :returns: Absolute path to the primary Markdown file.
     """
+    # ID-based idempotence check: a book already present under ANY directory
+    # name (e.g. downloaded under its OPDS title before a catalog override was
+    # curated) must not be fetched again. Runs before the metadata fetch so a
+    # skip costs no network round-trip.
+    if not force:
+        search_root = os.path.join(CORPUS_ROOT, genre) if genre else CORPUS_ROOT
+        existing = _find_book_by_id(ebook_id, search_root)
+        if existing:
+            existing_dir = os.path.basename(os.path.dirname(existing))
+            print(f"  [=] already downloaded (Gutenberg #{ebook_id}): {existing_dir} — skipping")
+            return existing
+
     # Fetch metadata (needed for the title before we can check idempotence)
     print(f"  Fetching metadata for Gutenberg #{ebook_id}...")
     meta = fetch_metadata(ebook_id)

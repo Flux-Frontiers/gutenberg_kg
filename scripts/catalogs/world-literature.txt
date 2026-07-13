@@ -7,5 +7,5 @@
 
 128	One Thousand and One Nights (Lane translation)
 8799	The Divine Comedy: Purgatorio (Dante)
-8800	The Divine Comedy: Paradiso (Dante)
+8800	The Divine Comedy (Cary)
 7164	Gitanjali (Tagore)
