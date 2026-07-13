@@ -10,6 +10,16 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added
 
+- **`scripts/sync_corpus_docs.py`** — one command keeps every public
+  corpus-count surface aligned with the live corpus (the KGRAG registry, via
+  `corpus_status`): the README badges, the "Corpus at a Glance" table
+  (regenerated between `<!-- BEGIN/END corpus-table -->` markers), the intro
+  prose, the "query N books" line, the partnership blurb, the BibTeX citation
+  note, and `docs/CORPUS.md` (delegated to `regenerate_corpus_doc.py`). Genre
+  ordering for the table is shared with CORPUS.md via
+  `regenerate_corpus_doc.GENRE_ORDER`. Run with `--check` to report drift and
+  exit non-zero (CI / pre-release gate); run with no flag to fix. The release
+  version badge is deliberately left to the `/release` workflow.
 - **`gutenberg_kg.serve` package** — the serving layer now ships inside the
   installed package instead of loose scripts under `docker/`:
   `serve/handler.py` (RunPod worker), `serve/chat.py` + `serve/pages/`
@@ -27,6 +37,8 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Changed
 
+- **`doc-kg` floor raised `>=0.16.0` -> `>=0.17.0`** (`pyproject.toml`,
+  `poetry.lock`; pulls in `kgmodule-utils` 0.4.9).
 - `docker/Dockerfile` no longer COPYs `handler.py`/`chat.py`/`pages/`/
   `image_gen.py` into `/app` — the `pip install .` of the repo package carries
   them; `CMD` is now `python -u -m gutenberg_kg.serve.handler`, and the
@@ -53,6 +65,17 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   behaviour identical.
 
 ### Fixed
+
+- **Stale corpus counts across README and `docs/CORPUS.md`** — the badges,
+  intro prose, "Corpus at a Glance" table, partnership blurb, and citation
+  advertised 230 books / 1.2M nodes / 4.9M edges / 19 genres; the live corpus
+  is **241 books / 1,270,591 nodes / 5,094,446 edges / 20 genres**. All
+  surfaces are now regenerated from live data.
+- **Horror genre silently dropped from generated docs** — `regenerate_corpus_doc.py`
+  hardcoded a `GENRE_ORDER`/`GENRE_LABELS` list that never included `horror`,
+  so its 16 books were omitted from `docs/CORPUS.md` even on regeneration (and
+  Science Fiction had drifted 18 → 13). Added the genre; both lists now cover
+  the full corpus.
 
 ---
 
