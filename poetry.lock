@@ -7645,4 +7645,4 @@ viz3d = ["PyQt5", "markdown", "param", "pycode-kg", "pyvista", "pyvistaqt"]
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.12,<3.14"
-content-hash = "4dad8b1603e0053f5648927d6a282d536cd1c365e1e42dfdb803ad16f5dd11b3"
+content-hash = "580902b5421dbaf65953b4f0f3447b5cd2e77e4c08b3e076bdfa86a55c9865be"
