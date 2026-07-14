@@ -36,11 +36,11 @@ WORKDIR /app
 # All three KG packages ship on PyPI, so they install by version like any other
 # dep. Pre-installing them here (before the src COPY below) keeps them in a cached
 # layer, so source-only changes don't re-resolve the heavy KG/torch stack.
-ARG KGMODULE_UTILS_VERSION=0.4.6
-ARG DOC_KG_VERSION=0.16.0
+ARG KGMODULE_UTILS_VERSION=0.5.0
+ARG DOC_KG_VERSION=0.18.0
 ARG DIARY_KG_VERSION=0.93.2
 RUN pip install --no-cache-dir \
-    "kgmodule-utils[synthesis]==${KGMODULE_UTILS_VERSION}" \
+    "kgmodule-utils[synthesis,sqlite-vec]==${KGMODULE_UTILS_VERSION}" \
     "doc-kg==${DOC_KG_VERSION}" \
     "diary-kg==${DIARY_KG_VERSION}" \
     streamlit httpx watchdog openai

@@ -8,14 +8,14 @@
 # It contains the consolidated DocKG index (.dockg/) and DiaryKG indices
 # (diaries/) for the full 249-book corpus.  Total upload is several GB.
 #
-# The remote layout after this script:
+# The remote layout after this script (sqlite-vec — LanceDB dirs are excluded):
 #   /workspace/
 #   └── gutenberg_kg/
-#       ├── .dockg/          (DocKG index — SQLite + LanceDB)
+#       ├── .dockg/          (DocKG index — SQLite graph + sqlite-vec vectors)
 #       │   ├── graph.sqlite
-#       │   ├── lancedb/
+#       │   ├── vectors.sqlite
 #       │   └── catalog.json
-#       └── diaries/         (DiaryKG temporal indices)
+#       └── diaries/         (DiaryKG temporal indices, each with vectors.sqlite)
 #
 # Prerequisites
 # -------------
@@ -94,7 +94,10 @@ ssh ${SSH_OPTS} "${SSH_TARGET}" \
 # ---------------------------------------------------------------------------
 
 echo "--- Pushing corpus bundle → ${DEST_BASE}/gutenberg_kg/ ---"
-rsync -avz --progress -e "${RSYNC_SSH}" \
+# --exclude 'lancedb': the served worker reads sqlite-vec (vectors.sqlite); the
+# LanceDB dirs are the ~2.3 GB legacy store and are not shipped. Drop the flag
+# to fall back to a LanceDB deploy.
+rsync -avz --progress --exclude 'lancedb' -e "${RSYNC_SSH}" \
     "${BUNDLE_DIR}/" \
     "${SSH_TARGET}:${DEST_BASE}/gutenberg_kg/"
 

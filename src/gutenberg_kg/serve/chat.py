@@ -3,7 +3,7 @@
 chat.py — GutenbergKG Chat Interface
 
 Streamlit chat UI for the corpus-gutenberg KGRAG worker.  Searches the
-consolidated DocKG (226 books, 18 genres) and 4 DiaryKG temporal indices,
+consolidated DocKG (241 books, 20 genres) and 4 DiaryKG temporal indices,
 and optionally synthesises answers via a local Ollama / oMLX model.
 
 Run standalone (worker must be running first):
@@ -98,31 +98,6 @@ _NODE_KIND_COLOR: dict[str, str] = {
     "section": "#1ABC9C",
     "entity": "#E74C3C",
 }
-
-_ALL_GENRES = [
-    "all",
-    "— DocKG —",
-    "american-literature",
-    "ancient-classical",
-    "audel-electric",
-    "biography",
-    "drama",
-    "english-literature",
-    "french-literature",
-    "german-literature",
-    "letters",
-    "natural-history",
-    "philosophy",
-    "russian-literature",
-    "sacred-texts",
-    "science-fiction",
-    "shakespeare",
-    "spanish",
-    "travel",
-    "world-literature",
-    "— DiaryKG —",
-    "diary",
-]
 
 _SUGGESTED_QUERIES: list[tuple[str, str]] = [
     ("philosophy", "What is justice according to Plato?"),
@@ -351,6 +326,54 @@ def _query_worker(
     )
 
 
+@st.cache_data(ttl=300, show_spinner=False)
+def _fetch_stats(worker_url: str) -> dict:
+    """Fetch live corpus totals from the worker's ``stats`` op (cached 5 min).
+
+    :param worker_url: Base URL of the KGRAG worker.
+    :returns: The worker's stats dict, or ``{}`` if the worker is unreachable so
+              the header degrades gracefully before the worker is up.
+    """
+    try:
+        resp = httpx.post(
+            f"{worker_url.rstrip('/')}/runsync",
+            json={"input": {"op": "stats"}},
+            timeout=10.0,
+        )
+        resp.raise_for_status()
+        payload = resp.json()
+    except httpx.HTTPError:
+        return {}
+    return payload.get("output", payload)
+
+
+@st.cache_data(ttl=300, show_spinner=False)
+def _corpus_options(worker_url: str) -> list[str]:
+    """Build the corpus-scope dropdown from the worker's live genre list.
+
+    ``all`` (DocKG + diaries) and ``diary`` (diaries only) always bookend the
+    list; the middle is every DocKG genre reported by the worker's ``list_genres``
+    op. The ``diaries`` genre is folded into the ``diary`` scope, so it is
+    excluded here. Falls back to ``["all", "diary"]`` if the worker is offline.
+
+    :param worker_url: Base URL of the KGRAG worker.
+    :returns: Ordered corpus-scope options for the sidebar selectbox.
+    """
+    try:
+        resp = httpx.post(
+            f"{worker_url.rstrip('/')}/runsync",
+            json={"input": {"op": "list_genres"}},
+            timeout=10.0,
+        )
+        resp.raise_for_status()
+        payload = resp.json()
+    except httpx.HTTPError:
+        return ["all", "diary"]
+    genres = (payload.get("output", payload)).get("genres", [])
+    names = sorted(g["genre"] for g in genres if g.get("genre") and g["genre"] != "diaries")
+    return ["all", *names, "diary"]
+
+
 @st.cache_data(ttl=60, show_spinner=False)
 def _fetch_models(worker_url: str, secret: str, backend: str = "") -> tuple[list[str], str]:
     """Fetch the available model list and default model from the worker (cached 60s).
@@ -469,13 +492,19 @@ def _render_sidebar() -> dict:
     :returns: Query configuration dict assembled from the current widget values.
     """
     st.sidebar.title("📚 GutenbergKG")
-    st.sidebar.markdown(
-        "226 books · 18 genres · 4 diaries  \n751K nodes · 4.3M edges · bge-small-en-v1.5"
-    )
+    stats = _fetch_stats(_DEFAULT_WORKER)
+    if stats:
+        model_short = (stats.get("embed_model") or "").rsplit("/", 1)[-1]
+        st.sidebar.markdown(
+            f"{stats['books']} books · {stats['genres']} genres · {stats['diaries']} diaries  \n"
+            f"{model_short}"
+        )
+    else:
+        st.sidebar.markdown("_corpus stats unavailable — worker offline_")
     st.sidebar.markdown("---")
     st.sidebar.subheader("📖 Corpus")
 
-    corpus_options = [g for g in _ALL_GENRES if not g.startswith("—")]
+    corpus_options = _corpus_options(_DEFAULT_WORKER)
     corpus = st.sidebar.selectbox(
         "Scope",
         options=corpus_options,
@@ -650,8 +679,12 @@ def main() -> None:
             st.session_state.messages = []
             st.rerun()
 
+    _n_books = _fetch_stats(_DEFAULT_WORKER).get("books")
+    _books_phrase = (
+        f"{_n_books} Project Gutenberg texts" if _n_books else "the Project Gutenberg corpus"
+    )
     st.caption(
-        "Semantic search across 226 Project Gutenberg texts — philosophy, literature, "
+        f"Semantic search across {_books_phrase} — philosophy, literature, "
         "sacred texts, natural history, science fiction, and four historical diaries."
     )
 

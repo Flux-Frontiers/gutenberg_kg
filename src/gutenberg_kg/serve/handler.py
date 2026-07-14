@@ -4,7 +4,7 @@ KGRAG handler — GutenbergKG corpus.
 
 Serves semantic search over the full Project Gutenberg corpus baked into this
 image at /workspace/gutenberg/:
-  .dockg/            — consolidated DocKG (245 books, 18 genres, 696K nodes)
+  .dockg/            — consolidated DocKG (241 books, 20 genres, 1.3M nodes)
   diaries/*/diarykg/ — 4 DiaryKG temporal indices (Pepys, Evelyn, Boswell)
 
 Implements the RunPod serverless API (--rp_serve_api) so it can be driven by
@@ -45,6 +45,7 @@ Request schema
   "synthesize":     bool  — call vLLM for a generated answer  (default: false)
   "model":          str   — override VLLM_MODEL for this request
   "op":             str   — "models" returns {"models": [...], "default": ...}
+                            "stats" returns {"books", "genres", "diaries", "nodes", "edges", "embed_model"}
                             "list_genres" returns [{"genre", "book_count"}, ...]
                             "list_books" (needs "genre") returns its books
                             "get_chapters" (needs "genre", "book") returns its chapter list
@@ -88,30 +89,16 @@ HANDLER_SECRET = os.environ.get("HANDLER_SECRET", "")
 
 _DOCKG_SQLITE = GUTENBERG_ROOT / ".dockg" / "graph.sqlite"
 _DOCKG_LANCEDB = GUTENBERG_ROOT / ".dockg" / "lancedb"
+_DOCKG_VECTORS = GUTENBERG_ROOT / ".dockg" / "vectors.sqlite"
 _CATALOG_PATH = GUTENBERG_ROOT / ".dockg" / "catalog.json"
+# Metadata columns the sqlite-vec store carries (matches doc_kg's index).
+_VEC_META = ("kind", "name", "title", "file_path")
 _DIARIES_ROOT = GUTENBERG_ROOT / "diaries"
 
-# Valid genre names (must match corpus/ subdirectory names).
-_ALL_GENRES = {
-    "american-literature",
-    "ancient-classical",
-    "audel-electric",
-    "biography",
-    "drama",
-    "english-literature",
-    "french-literature",
-    "german-literature",
-    "letters",
-    "natural-history",
-    "philosophy",
-    "russian-literature",
-    "sacred-texts",
-    "science-fiction",
-    "shakespeare",
-    "spanish",
-    "travel",
-    "world-literature",
-}
+# Valid genre names, populated from catalog.json at startup (see _load_catalog).
+# Derived from the live corpus rather than hardcoded, so newly-added genres are
+# accepted as corpus filters without touching this file.
+_ALL_GENRES: set[str] = set()
 
 # Populated at startup: kg_name → sqlite path (for _attach_content lookups).
 _KG_SQLITE: dict[str, Path] = {}
@@ -225,14 +212,13 @@ def _bootstrap_registry():
             reg.register(entry)
             corp_reg.add_kg("diaries", entry.id)
             _KG_SQLITE[slug] = sqlite
-            # Open the diary's vector table for semantic-first cosine search.
-            if lancedb.exists():
-                import lancedb as _ldb
-
-                try:
-                    _DIARY_TABLES[slug] = _ldb.connect(str(lancedb)).open_table("dockg_nodes")
-                except Exception as exc:  # noqa: BLE001
-                    print(f"[bootstrap] WARNING: could not open diary table {slug}: {exc}")
+            # Open the diary's vector store (sqlite-vec preferred, LanceDB fallback).
+            try:
+                src = _open_vector_source(diarykg_dir, label=f"diary {slug}")
+                if src is not None:
+                    _DIARY_TABLES[slug] = src
+            except Exception as exc:  # noqa: BLE001
+                print(f"[bootstrap] WARNING: could not open diary store {slug}: {exc}")
             n_diaries += 1
             print(f"[bootstrap] registered diary: {slug}")
     else:
@@ -242,22 +228,46 @@ def _bootstrap_registry():
     return reg
 
 
-def _open_dockg_table() -> None:
-    """Open the consolidated DocKG LanceDB table for semantic-first search."""
-    global _DOCKG_TABLE
-    if not _DOCKG_LANCEDB.exists():
-        print(f"[startup] WARNING: DocKG lancedb not found at {_DOCKG_LANCEDB}")
-        return
-    import lancedb
+def _open_vector_source(dockg_dir, *, label: str):
+    """Open a vector source for a ``.dockg`` dir — sqlite-vec if present, else LanceDB.
 
-    db = lancedb.connect(str(_DOCKG_LANCEDB))
-    names = list(db.table_names())
-    table = "dockg_nodes" if "dockg_nodes" in names else (names[0] if names else None)
-    if table is None:
-        print(f"[startup] WARNING: no lancedb table found in {_DOCKG_LANCEDB}")
-        return
-    _DOCKG_TABLE = db.open_table(table)
-    print(f"[startup] opened DocKG vector table: {table} ({_DOCKG_TABLE.count_rows()} rows)")
+    Prefers the exact ``vectors.sqlite`` store (see the sqlite-vec migration);
+    falls back to the LanceDB ``dockg_nodes`` table for un-converted corpora, so
+    the worker keeps serving during the transition.
+
+    :param dockg_dir: The ``.dockg`` directory holding ``vectors.sqlite`` / ``lancedb``.
+    :param label: Human label for startup logging.
+    :returns: A ``SqliteVecBackend`` or an open LanceDB table, or ``None``.
+    """
+    vectors = dockg_dir / "vectors.sqlite"
+    lancedb_dir = dockg_dir / "lancedb"
+    if vectors.exists():
+        from kg_utils.vector_backend import SqliteVecBackend
+
+        be = SqliteVecBackend(vectors, dim=384, meta_columns=_VEC_META, check_same_thread=False)
+        be.open(wipe=False)
+        print(f"[startup] {label}: sqlite-vec store ({be.count()} vectors)")
+        return be
+    if lancedb_dir.exists():
+        import lancedb
+
+        db = lancedb.connect(str(lancedb_dir))
+        names = list(db.table_names())
+        table = "dockg_nodes" if "dockg_nodes" in names else (names[0] if names else None)
+        if table is None:
+            print(f"[startup] WARNING: no lancedb table in {lancedb_dir}")
+            return None
+        tbl = db.open_table(table)
+        print(f"[startup] {label}: LanceDB table {table} ({tbl.count_rows()} rows)")
+        return tbl
+    print(f"[startup] WARNING: no vector store for {label} in {dockg_dir}")
+    return None
+
+
+def _open_dockg_table() -> None:
+    """Open the consolidated DocKG vector store (sqlite-vec preferred)."""
+    global _DOCKG_TABLE
+    _DOCKG_TABLE = _open_vector_source(GUTENBERG_ROOT / ".dockg", label="DocKG")
 
 
 def _open_dockg_store() -> None:
@@ -293,7 +303,8 @@ def _load_catalog() -> None:
     if _CATALOG_PATH.exists():
         with open(_CATALOG_PATH, encoding="utf-8") as f:
             _catalog.update(json.load(f))
-        print(f"[startup] loaded catalog: {len(_catalog)} books")
+        _ALL_GENRES.update(m["genre"] for m in _catalog.values() if m.get("genre"))
+        print(f"[startup] loaded catalog: {len(_catalog)} books, {len(_ALL_GENRES)} genres")
     else:
         print(f"[startup] WARNING: catalog.json not found at {_CATALOG_PATH}")
 
@@ -367,8 +378,25 @@ def _attach_content(hits: list[dict]) -> None:
 
 
 def _table_search(table, qvec, where: str, k: int) -> list[dict]:
-    """Run a cosine kNN search with a pre-filter and return raw LanceDB rows."""
-    return table.search(qvec).metric("cosine").where(where, prefilter=True).limit(k).to_list()
+    """Run a cosine kNN search with a pre-filter; returns rows with ``_distance``.
+
+    Dispatches on the store type. The sqlite-vec backend is exact (recall 1.0)
+    and its ``where`` compiles to a true rowid-subquery prefilter. The LanceDB
+    path keeps the ``nprobes(128)`` stopgap that lifts IvfFlat recall@10 from
+    ~0.825 to ~0.99 (benchmarks/SQLITE_VEC_RESULTS.md).
+    """
+    from kg_utils.vector_backend import SqliteVecBackend
+
+    if isinstance(table, SqliteVecBackend):
+        return table.search(qvec, k, where=where)
+    return (
+        table.search(qvec)
+        .metric("cosine")
+        .where(where, prefilter=True)
+        .nprobes(128)
+        .limit(k)
+        .to_list()
+    )
 
 
 def _rrf_fuse(dense_ids: list[str], lex_ids: list[str], k: int) -> list[str]:
@@ -627,6 +655,34 @@ def _list_genres() -> dict:
     return {"genres": genres}
 
 
+def _corpus_stats() -> dict:
+    """Return live corpus totals for the chat UI header (no hardcoded counts).
+
+    Books and genres come from ``catalog.json``; node/edge totals from the
+    consolidated ``graph.sqlite``; diary count from the registered DiaryKG
+    tables. Returns zeros for any store that can't be opened.
+
+    :returns: ``{"books", "genres", "diaries", "nodes", "edges", "embed_model"}``.
+    """
+    genres = {meta.get("genre", "") for meta in _catalog.values() if meta.get("genre")}
+    nodes = edges = 0
+    if _DOCKG_SQLITE.exists():
+        try:
+            with sqlite3.connect(_DOCKG_SQLITE) as con:
+                nodes = con.execute("SELECT COUNT(*) FROM nodes").fetchone()[0]
+                edges = con.execute("SELECT COUNT(*) FROM edges").fetchone()[0]
+        except sqlite3.Error:
+            pass
+    return {
+        "books": len(_catalog),
+        "genres": len(genres),
+        "diaries": len(_DIARY_TABLES),
+        "nodes": nodes,
+        "edges": edges,
+        "embed_model": EMBED_MODEL,
+    }
+
+
 def _list_books(genre: str) -> dict:
     """List every book in a genre from ``catalog.json``.
 
@@ -795,6 +851,8 @@ def handler(job: dict) -> dict:
         return aux_result
 
     op = inp.get("op", "")
+    if op == "stats":
+        return _corpus_stats()
     if op == "list_genres":
         return _list_genres()
     if op == "list_books":

@@ -384,7 +384,7 @@ def run_build_corpus(genres: list[str], opts: BuildCorpusOptions) -> int:
             print(f"  strategy={strategy}, genres={sorted(sg_genres)}")
             print(f"    exclude={sorted(sg_exclude)}")
         print(f"[dry-run] phase 2: embed all nodes → {sqlite_path}")
-        print(f"[dry-run] phase 3: lancedb index + SIMILAR_TO → {lancedb_path}")
+        print(f"[dry-run] phase 3: sqlite-vec index + SIMILAR_TO → {out_dir / 'vectors.sqlite'}")
         print("[dry-run] phase 4: build (if needed) + bundle DiaryKG indices → bundles dir")
         print(f"[dry-run] would write {out_dir / 'catalog.json'} (author/title per book)")
         return 0
@@ -448,6 +448,9 @@ def run_build_corpus(genres: list[str], opts: BuildCorpusOptions) -> int:
             db_path=sqlite_path,
             lancedb_dir=lancedb_path,
             embedder=embedder,
+            # Served bundle is sqlite-vec (exact, ~10x smaller). Vectors land at
+            # <bundle>/.dockg/vectors.sqlite (derived from lancedb_dir's parent).
+            vector_backend="sqlite-vec",
         )
         # Resolve the effective device to pick the embedding path: CPU can fan
         # out across processes safely; MPS/CUDA cannot (one shared allocator).
@@ -518,7 +521,7 @@ def run_build_corpus(genres: list[str], opts: BuildCorpusOptions) -> int:
         index_wipe = opts.wipe and not opts.update
         discover_similar = opts.discover_similar and not opts.update
         print(
-            f"[3/4] building LanceDB index{' + SIMILAR_TO edges' if discover_similar else ' (upsert)' if opts.update else ''} …"
+            f"[3/4] building sqlite-vec index{' + SIMILAR_TO edges' if discover_similar else ' (upsert)' if opts.update else ''} …"
         )
         stats = kg_all.build_index_from_cache(
             cache_path,
