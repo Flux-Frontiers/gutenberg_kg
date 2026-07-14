@@ -121,7 +121,7 @@ Each text is:
 
 1. **Stripped** of boilerplate (Project Gutenberg headers/footers, OCR artifacts)
 2. **Structured** — chapters, parts, acts, scenes, letters, verses detected and converted to Markdown heading hierarchy
-3. **Indexed** by [DocKG](https://github.com/Flux-Frontiers/doc_kg) into a hybrid SQLite + LanceDB knowledge graph
+3. **Indexed** by [DocKG](https://github.com/Flux-Frontiers/doc_kg) into a hybrid SQLite knowledge graph (FTS5 lexical + `sqlite-vec` dense vectors)
 4. **Registered** with [KGRAG](https://github.com/Flux-Frontiers/KGRAG) for federated cross-corpus query
 
 The result: every work is independently queryable as its own knowledge graph, grouped into genre corpora for thematic search, and unified into `gutenberg-all` for corpus-wide discovery.

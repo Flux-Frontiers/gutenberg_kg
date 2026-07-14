@@ -36,7 +36,7 @@ The current stack, as it runs today:
 ┌─────────────────────┐   RunPod-serverless JSON    ┌──────────────────────────────┐
 │ Streamlit chat.py   │ ──────────────────────────► │ serve/handler.py (worker)     │
 │  · sidebar config   │   {query, corpus, k,        │  · bge-small-en-v1.5 embed    │
-│  · chat turns       │    min_score, floor,        │  · LanceDB cosine kNN (dense) │
+│  · chat turns       │    min_score, floor,        │  · sqlite-vec cosine kNN(dense)│
 │  · hit cards        │    synthesize, model,       │  · SQLite FTS5/BM25 (lexical) │
 │  · Browse page      │    backend, op}             │  · RRF fusion                 │
 │  · Render response  │                             │  · catalog enrichment         │
@@ -56,8 +56,8 @@ Key data facts (measured from `bundles/gutenberg-all/`):
 | Asset | Size | Notes |
 |---|---:|---|
 | Consolidated DocKG `graph.sqlite` | 2.9 GB | includes embed-text, topics, entities, keywords |
-| Consolidated LanceDB | 2.5 GB | 688 K vectors, 384-dim fp32, bge-small-en-v1.5 |
-| Diary KGs (4) | ~320 MB | Pepys dominates at 202 MB |
+| Consolidated `vectors.sqlite` (sqlite-vec) | 1.1 GB | 688 K vectors, 384-dim fp32, bge-small-en-v1.5 — **now the served store** (was 2.5 GB LanceDB) |
+| Diary KGs (4) | ~320 MB | each carries a `vectors.sqlite`; Pepys dominates |
 | **Searched subset** | — | only `kind IN ('chunk','section')` = **364 K vectors** |
 
 The retrieval path (`_semantic_search`, [handler.py:454](../src/gutenberg_kg/serve/handler.py#L454))
@@ -164,13 +164,17 @@ for no launch benefit.
 
 ### 3.3 Delivery
 
-**macOS (Phase 1–3): none needed.** The app opens the converted SQLite store
-directly from a user-chosen path (default: the repo's `bundles/` output, via a
-security-scoped bookmark). The store conversion is still required — Swift can
-no more read LanceDB than iOS can — but it's a local `gutenkg export-swift`
-run, not a hosted download. If the server-side sqlite-vec migration lands
-(see `benchmarks/bench_sqlite_vec.py`), the app and the worker read the *same
-artifact* and even the conversion step disappears.
+**macOS (Phase 1–3): none needed.** The app opens the SQLite store directly
+from a user-chosen path (default: the repo's `bundles/` output, via a
+security-scoped bookmark).
+
+**The server-side sqlite-vec migration has landed (2026-07-14):** the worker now
+serves the consolidated corpus and every diary from `vectors.sqlite`
+(`dockg convert-index`; parity gate recall@10 = 1.0 over the 688 K-vector
+bundle), so the bundle the app reads is **the same `vectors.sqlite` the worker
+serves** — no separate LanceDB→Swift conversion step. An `export-swift`/pack
+build is only needed for the int8-quantized, FTS-rebuilt, content-only *mobile*
+pack (§3.2); on macOS the app can open the served store as-is.
 
 **iOS (final phase):**
 

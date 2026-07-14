@@ -10,6 +10,11 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added
 
+- **`docker/Dockerfile.sqlite`** — sqlite-vec-only worker image: installs
+  `kgmodule-utils==0.5.0` + `doc-kg==0.18.0` from PyPI plus
+  `sqlite-vec==0.1.9`, and bakes only the sqlite-vec stores
+  (`vectors.sqlite`) — the ~2.5 GB consolidated LanceDB dir is never sent to
+  the image, and per-diary `lancedb/` dirs are stripped after COPY.
 - **`scripts/sync_corpus_docs.py`** — one command keeps every public
   corpus-count surface aligned with the live corpus (the KGRAG registry, via
   `corpus_status`): the README badges, the "Corpus at a Glance" table
@@ -40,11 +45,41 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   fallback, and the end-to-end flow (missing-endpoint usage error, param
   pass-through including `--size`, env-var endpoint, request-failure handling,
   `--open`, and `--corpus-only`).
+- **Worker `stats` op + live chat header** — new `stats` op returns
+  `{books, genres, diaries, nodes, edges, embed_model}` computed on demand from
+  `catalog.json` and the consolidated `graph.sqlite`. `serve/chat.py` now
+  fetches its sidebar counts, the intro caption's book count, and the
+  corpus-scope dropdown live from the worker (`stats` + `list_genres`) instead
+  of hardcoded strings — so adding a book or genre flows into the UI with no
+  code change (nodes/edges are omitted from the header, since the served
+  consolidated graph deduplicates entities and drops `SIMILAR_TO`, so its
+  totals differ from the per-book sum the README reports).
 
 ### Changed
 
-- **`doc-kg` floor raised `>=0.16.0` -> `>=0.17.0`** (`pyproject.toml`,
-  `poetry.lock`; pulls in `kgmodule-utils` 0.4.9).
+- **Vector store migrated LanceDB → sqlite-vec** across the serving and build
+  paths. Motivation (see `benchmarks/SQLITE_VEC_RESULTS.md`): the production
+  LanceDB IvfFlat index averaged **0.825 recall@10** at default settings
+  ("pillar of salt": 0.4), while sqlite-vec brute force is exact (recall 1.0)
+  at comparable latency and ~10× smaller (2.5 GB → 1.1 GB fp32 for the full
+  688 K-vector store).
+  - Both workers (`serve/handler.py`, `runpod/handler.py`) open vector
+    sources via `_open_vector_source`: `vectors.sqlite`
+    (`kg_utils.vector_backend.SqliteVecBackend`) preferred, LanceDB kept as
+    a transition fallback for un-converted corpora — including every diary KG.
+  - The LanceDB fallback path gains the **`nprobes(128)` recall stopgap**
+    (0.825 → 0.992 recall@10 at ~+5 ms).
+  - `build_corpus` phase 3 now builds the bundle with
+    `vector_backend="sqlite-vec"` (doc-kg 0.18.0), emitting
+    `<bundle>/.dockg/vectors.sqlite`.
+  - `runpod/push_indices.sh` excludes `lancedb/` dirs from the rsync
+    (~2.3 GB less per deploy); README + `docs/APP_ARCHITECTURE.md` updated —
+    the macOS app now reads the *same* `vectors.sqlite` the worker serves.
+- **`doc-kg` floor raised `>=0.16.0` -> `>=0.18.0`** and
+  **`kgmodule-utils[synthesis]` `>=0.4.6` -> `>=0.5.0`** (`pyproject.toml`,
+  `poetry.lock`, `runpod/requirements.txt`; 0.18.0/0.5.0 bring the
+  `VectorBackend` seam with the sqlite-vec backend). Docker images pin
+  `KGMODULE_UTILS_VERSION=0.5.0` / `DOC_KG_VERSION=0.18.0`.
 - `docker/Dockerfile` no longer COPYs `handler.py`/`chat.py`/`pages/`/
   `image_gen.py` into `/app` — the `pip install .` of the repo package carries
   them; `CMD` is now `python -u -m gutenberg_kg.serve.handler`, and the
@@ -70,6 +105,11 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   `serve/image_server.py` (which passed `req.size` straight through instead of
   snapping it to the nearest known ratio). `serve/chat.py` drops its now-unused
   `aspect_ratio` plumbing.
+- **Worker genre validation derived from the catalog** — `serve/handler.py`'s
+  `_ALL_GENRES` was a hardcoded set (missing `horror`, so filtering the chat by
+  it would have been rejected as an unknown corpus). It is now populated from
+  `catalog.json` at startup, so every genre in the live corpus is accepted as a
+  filter automatically.
 
 ### Removed
 
@@ -91,6 +131,13 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   so its 16 books were omitted from `docs/CORPUS.md` even on regeneration (and
   Science Fiction had drifted 18 → 13). Added the genre; both lists now cover
   the full corpus.
+- **Worker crash-loop on the sqlite-vec bundle** — `docker/Dockerfile` (the
+  default compose image) installed only `kgmodule-utils[synthesis]`, but the
+  baked bundle now ships a `vectors.sqlite` store, so the handler selected the
+  `SqliteVecBackend` and died at startup with
+  `SqliteVecBackend requires sqlite-vec`, restart-looping the worker (the chat
+  UI reported "Cannot connect to worker"). The image now installs
+  `kgmodule-utils[synthesis,sqlite-vec]`, matching `Dockerfile.sqlite`.
 
 ---
 

@@ -79,7 +79,10 @@ SYNTH_MAX_K = int(os.environ.get("SYNTH_MAX_K", "12"))
 
 _DOCKG_SQLITE = GUTENBERG_ROOT / ".dockg" / "graph.sqlite"
 _DOCKG_LANCEDB = GUTENBERG_ROOT / ".dockg" / "lancedb"
+_DOCKG_VECTORS = GUTENBERG_ROOT / ".dockg" / "vectors.sqlite"
 _CATALOG_PATH = GUTENBERG_ROOT / ".dockg" / "catalog.json"
+# Metadata columns the sqlite-vec store carries (matches doc_kg's index).
+_VEC_META = ("kind", "name", "title", "file_path")
 _DIARIES_ROOT = GUTENBERG_ROOT / "diaries"
 
 _ALL_GENRES = {
@@ -183,13 +186,13 @@ def _bootstrap_registry():
             reg.register(entry)
             corp_reg.add_kg("diaries", entry.id)
             _KG_SQLITE[slug] = sqlite
-            if lancedb.exists():
-                import lancedb as _ldb
-
-                try:
-                    _DIARY_TABLES[slug] = _ldb.connect(str(lancedb)).open_table("dockg_nodes")
-                except Exception as exc:  # noqa: BLE001
-                    print(f"[bootstrap] WARNING: could not open diary table {slug}: {exc}")
+            # Open the diary's vector store (sqlite-vec preferred, LanceDB fallback).
+            try:
+                src = _open_vector_source(diarykg_dir, label=f"diary {slug}")
+                if src is not None:
+                    _DIARY_TABLES[slug] = src
+            except Exception as exc:  # noqa: BLE001
+                print(f"[bootstrap] WARNING: could not open diary store {slug}: {exc}")
             n_diaries += 1
             print(f"[bootstrap] registered diary: {slug}")
     else:
@@ -199,22 +202,45 @@ def _bootstrap_registry():
     return reg
 
 
-def _open_dockg_table() -> None:
-    """Open the consolidated DocKG LanceDB table for semantic-first search."""
-    global _DOCKG_TABLE
-    if not _DOCKG_LANCEDB.exists():
-        print(f"[startup] WARNING: DocKG lancedb not found at {_DOCKG_LANCEDB}")
-        return
-    import lancedb
+def _open_vector_source(dockg_dir, *, label: str):
+    """Open a vector source for a ``.dockg`` dir — sqlite-vec if present, else LanceDB.
 
-    db = lancedb.connect(str(_DOCKG_LANCEDB))
-    names = list(db.table_names())
-    table = "dockg_nodes" if "dockg_nodes" in names else (names[0] if names else None)
-    if table is None:
-        print(f"[startup] WARNING: no lancedb table found in {_DOCKG_LANCEDB}")
-        return
-    _DOCKG_TABLE = db.open_table(table)
-    print(f"[startup] opened DocKG vector table: {table} ({_DOCKG_TABLE.count_rows()} rows)")
+    Prefers the exact ``vectors.sqlite`` store; falls back to the LanceDB
+    ``dockg_nodes`` table for un-converted corpora (transition safety).
+
+    :param dockg_dir: The ``.dockg``/``.diarykg`` dir holding the vector store.
+    :param label: Human label for startup logging.
+    :returns: A ``SqliteVecBackend`` or an open LanceDB table, or ``None``.
+    """
+    vectors = dockg_dir / "vectors.sqlite"
+    lancedb_dir = dockg_dir / "lancedb"
+    if vectors.exists():
+        from kg_utils.vector_backend import SqliteVecBackend
+
+        be = SqliteVecBackend(vectors, dim=384, meta_columns=_VEC_META, check_same_thread=False)
+        be.open(wipe=False)
+        print(f"[startup] {label}: sqlite-vec store ({be.count()} vectors)")
+        return be
+    if lancedb_dir.exists():
+        import lancedb
+
+        db = lancedb.connect(str(lancedb_dir))
+        names = list(db.table_names())
+        table = "dockg_nodes" if "dockg_nodes" in names else (names[0] if names else None)
+        if table is None:
+            print(f"[startup] WARNING: no lancedb table in {lancedb_dir}")
+            return None
+        tbl = db.open_table(table)
+        print(f"[startup] {label}: LanceDB table {table} ({tbl.count_rows()} rows)")
+        return tbl
+    print(f"[startup] WARNING: no vector store for {label} in {dockg_dir}")
+    return None
+
+
+def _open_dockg_table() -> None:
+    """Open the consolidated DocKG vector store (sqlite-vec preferred)."""
+    global _DOCKG_TABLE
+    _DOCKG_TABLE = _open_vector_source(GUTENBERG_ROOT / ".dockg", label="DocKG")
 
 
 def _load_catalog() -> None:
@@ -270,8 +296,25 @@ def _attach_content(hits: list[dict]) -> None:
 
 
 def _table_search(table, qvec, where: str, k: int) -> list[dict]:
-    """Run a cosine kNN search with a pre-filter and return raw LanceDB rows."""
-    return table.search(qvec).metric("cosine").where(where, prefilter=True).limit(k).to_list()
+    """Run a cosine kNN search with a pre-filter; returns rows with ``_distance``.
+
+    Dispatches on the store type. The sqlite-vec backend is exact (recall 1.0)
+    and its ``where`` compiles to a true rowid-subquery prefilter. The LanceDB
+    path keeps the ``nprobes(128)`` stopgap that lifts IvfFlat recall@10 from
+    ~0.825 to ~0.99 (benchmarks/SQLITE_VEC_RESULTS.md).
+    """
+    from kg_utils.vector_backend import SqliteVecBackend
+
+    if isinstance(table, SqliteVecBackend):
+        return table.search(qvec, k, where=where)
+    return (
+        table.search(qvec)
+        .metric("cosine")
+        .where(where, prefilter=True)
+        .nprobes(128)
+        .limit(k)
+        .to_list()
+    )
 
 
 def _rows_to_hits(rows: list[dict], kg_name: str, kg_kind: str, min_score: float) -> list[dict]:

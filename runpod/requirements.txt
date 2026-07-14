@@ -4,9 +4,9 @@
 
 runpod>=1.7.0
 kg-rag>=0.9.1
-doc-kg>=0.15.8
+doc-kg>=0.18.0
 diary-kg>=0.93.2
-kgmodule-utils[synthesis]>=0.4.6
+kgmodule-utils[synthesis]>=0.5.0
 sentence-transformers>=3.0.0
 lancedb>=0.29.0
 numpy>=1.24.0

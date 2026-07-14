@@ -1,0 +1,57 @@
+# corpus-gutenberg — sqlite-vec build
+#
+# Same as docker/Dockerfile but:
+#   - installs kgmodule-utils 0.5.0 + doc-kg 0.18.0 (sqlite-vec backend)
+#     from PyPI, plus sqlite-vec==0.1.9
+#   - bakes ONLY the sqlite-vec stores (vectors.sqlite) — the consolidated
+#     LanceDB dir (~2.5 GB) is intentionally omitted; per-diary lancedb dirs are
+#     stripped after COPY.
+#
+# Build (from repo root):
+#   docker build -f docker/Dockerfile.sqlite -t corpus-gutenberg-sqlite:latest .
+# Run:
+#   docker run --rm -p 8000:8000 corpus-gutenberg-sqlite:latest \
+#     python -u -m gutenberg_kg.serve.handler --rp_serve_api --rp_api_host 0.0.0.0
+
+FROM egsuchanek/kgrag-worker:latest
+
+WORKDIR /app
+
+# KG packages from PyPI. --no-deps: the base image already carries the heavy
+# torch/lancedb/sentence-transformers stack; these only upgrade the KG packages.
+ARG KGMODULE_UTILS_VERSION=0.5.0
+ARG DOC_KG_VERSION=0.18.0
+RUN pip install --no-cache-dir --no-deps \
+        "kgmodule-utils==${KGMODULE_UTILS_VERSION}[sqlite-vec]" \
+        "doc-kg==${DOC_KG_VERSION}" \
+    && pip install --no-cache-dir "sqlite-vec==0.1.9"
+
+# Install the local gutenberg_kg package (serving layer). --no-deps so pip does
+# not re-resolve doc-kg and drag in packages the base image already has.
+COPY pyproject.toml README.md /app/
+COPY src/gutenberg_kg /app/src/gutenberg_kg
+RUN pip install --no-cache-dir --no-deps .
+
+# Ensure the embedding model is present for offline runtime.
+ARG EMBED_MODEL=BAAI/bge-small-en-v1.5
+RUN python - <<'EOF'
+import os
+from sentence_transformers import SentenceTransformer
+SentenceTransformer(os.environ.get("EMBED_MODEL", "BAAI/bge-small-en-v1.5"))
+print("model ready")
+EOF
+ENV HF_HUB_OFFLINE=1
+ENV TRANSFORMERS_OFFLINE=1
+
+# Bake the sqlite-vec-only bundle. COPY specific files so the consolidated
+# LanceDB dir is never sent to the image; then strip small per-diary lancedb dirs.
+COPY bundles/gutenberg-all/.dockg/graph.sqlite   /workspace/gutenberg/.dockg/graph.sqlite
+COPY bundles/gutenberg-all/.dockg/vectors.sqlite /workspace/gutenberg/.dockg/vectors.sqlite
+COPY bundles/gutenberg-all/.dockg/catalog.json   /workspace/gutenberg/.dockg/catalog.json
+COPY bundles/gutenberg-all/diaries               /workspace/gutenberg/diaries
+RUN find /workspace/gutenberg/diaries -name lancedb -type d -prune -exec rm -rf {} + || true
+
+ENV GUTENBERG_ROOT=/workspace/gutenberg
+ENV EMBED_MODEL=BAAI/bge-small-en-v1.5
+
+CMD ["python", "-u", "-m", "gutenberg_kg.serve.handler", "--rp_serve_api", "--rp_api_host", "0.0.0.0"]
