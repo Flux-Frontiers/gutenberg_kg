@@ -195,6 +195,7 @@ gutenkg              = "gutenberg_kg.cli.main:cli"
 gutenkg-mcp          = "gutenberg_kg.mcp_server:main"
 gutenkg-handler      = "gutenberg_kg.serve.handler:main"
 gutenkg-image-server = "gutenberg_kg.serve.image_server:main"
+gutenkg-sdxl-server  = "gutenberg_kg.serve.sdxl_server:main"
 
 # ---------------------------------------------------------------------------
 # Tool configuration
