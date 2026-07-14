@@ -34,6 +34,12 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   runpod is deliberately not an extra (its dependency tree stalls
   `poetry lock`); the RunPod container installs it via
   `runpod/requirements.txt`.
+- **`tests/test_cmd_imagine.py`** — covers the `gutenkg imagine` command with
+  the endpoint, VLM, and corpus retrieval mocked (no network/GPU/doc-kg): help
+  registration, the `_resolve_prompt` prompt-building seam, `_vlm_rewrite`
+  fallback, and the end-to-end flow (missing-endpoint usage error, param
+  pass-through including `--size`, env-var endpoint, request-failure handling,
+  `--open`, and `--corpus-only`).
 
 ### Changed
 
@@ -55,6 +61,15 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - **`viz3d`/`full`/`all` extras use plain `pyvista`, not `pyvista[jupyter]`** —
   viz3d renders to a desktop Qt window, so the `[jupyter]` trame/browser stack
   was unused and massively bloated `poetry lock`.
+- **Image generation takes an explicit `--size WIDTHxHEIGHT`, not `--ratio`** —
+  the fixed `_ASPECT_SIZES` lookup (`1:1`, `3:2`, `16:9`, …) is replaced by a
+  free-form pixel size parsed by `image_gen._parse_size()`, so any dimensions
+  are allowed (default `1536x1024`, overridable via `GUTENKG_IMAGE_SIZE`). The
+  `size=` parameter now flows through `generate`, `generate_via_server`,
+  `generate_auto`, the `generate_image`/`corpus_imagine` MCP tools, and
+  `serve/image_server.py` (which passed `req.size` straight through instead of
+  snapping it to the nearest known ratio). `serve/chat.py` drops its now-unused
+  `aspect_ratio` plumbing.
 
 ### Removed
 

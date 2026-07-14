@@ -27,16 +27,6 @@ logger = structlog.get_logger()
 
 mcp = FastMCP("GutenbergKG")
 
-_ASPECT_SIZES: dict[str, tuple[int, int]] = {
-    "1:1": (1024, 1024),
-    "3:2": (1536, 1024),
-    "2:3": (1024, 1536),
-    "16:9": (1536, 864),
-    "9:16": (864, 1536),
-    "4:3": (1365, 1024),
-    "3:4": (1024, 1365),
-}
-
 _MAX_IMAGE_BYTES = 3_750_000
 
 
@@ -74,7 +64,7 @@ def _compress_for_mcp(pil_img: PILImage.Image, path: str) -> tuple[str, str]:
 @mcp.tool
 async def generate_image(
     prompt: str,
-    aspect_ratio: str = "3:2",
+    size: str = "1536x1024",
     seed: int | None = None,
     steps: int = 4,
 ) -> Image:
@@ -84,7 +74,7 @@ async def generate_image(
 
     Args:
         prompt: Text description of the image to generate.
-        aspect_ratio: 1:1, 3:2 (default landscape), 2:3, 16:9, 9:16, 4:3, 3:4.
+        size: Output size "WIDTHxHEIGHT" (default landscape 1536x1024).
         seed: Optional integer seed for reproducible outputs.
         steps: Inference steps — 4 (fast) to 25 (higher quality).
 
@@ -93,10 +83,8 @@ async def generate_image(
     """
     from gutenberg_kg import image_gen
 
-    logger.info("generate_image", prompt=prompt[:80], aspect_ratio=aspect_ratio, seed=seed)
-    pil = await _run_sync(
-        image_gen.generate, prompt, aspect_ratio=aspect_ratio, seed=seed, steps=steps
-    )
+    logger.info("generate_image", prompt=prompt[:80], size=size, seed=seed)
+    pil = await _run_sync(image_gen.generate, prompt, size=size, seed=seed, steps=steps)
 
     with tempfile.NamedTemporaryFile(suffix=".png", delete=False) as f:
         out_path = f.name
@@ -109,7 +97,7 @@ async def corpus_imagine(
     query: str,
     book: str | None = None,
     extra_prompt: str | None = None,
-    aspect_ratio: str = "3:2",
+    size: str = "1536x1024",
     seed: int | None = None,
     steps: int = 4,
 ) -> Image:
@@ -125,7 +113,7 @@ async def corpus_imagine(
               (e.g. "pepys", "evelyn", "republic").
         extra_prompt: Additional style or scene instructions appended to the
                       corpus text (e.g. "oil painting, dramatic lighting").
-        aspect_ratio: 1:1, 3:2 (default), 2:3, 16:9, 9:16, 4:3, 3:4.
+        size: Output size "WIDTHxHEIGHT" (default landscape 1536x1024).
         seed: Optional integer seed for reproducibility.
         steps: Inference steps — 4 (fast) to 25 (higher quality).
 
@@ -146,9 +134,7 @@ async def corpus_imagine(
     if vlm_error:
         logger.warning("vlm_rewrite_failed", error=vlm_error)
 
-    pil = await _run_sync(
-        image_gen.generate, prompt, aspect_ratio=aspect_ratio, seed=seed, steps=steps
-    )
+    pil = await _run_sync(image_gen.generate, prompt, size=size, seed=seed, steps=steps)
 
     with tempfile.NamedTemporaryFile(suffix=".png", delete=False) as f:
         out_path = f.name

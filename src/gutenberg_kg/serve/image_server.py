@@ -89,34 +89,17 @@ async def generate_image(req: ImageGenRequest):
     """Generate an image via image_gen.generate() and return it as base64 or a filepath.
 
     Runs the (blocking) generation call in an executor thread to avoid blocking
-    the event loop, and maps the requested pixel size to the nearest known
-    aspect ratio.
+    the event loop, passing the requested pixel size straight through.
 
     :param req: Parsed request body (prompt, size, steps, seed, response_format, ...).
     :returns: OpenAI-compatible JSON response with either ``b64_json`` or ``filepath``.
     """
-    try:
-        width, height = map(int, req.size.split("x"))
-    except ValueError:
-        width, height = 1536, 1024
-
-    ratio_map = {
-        (1024, 1024): "1:1",
-        (1536, 1024): "3:2",
-        (1024, 1536): "2:3",
-        (1536, 864): "16:9",
-        (864, 1536): "9:16",
-        (1365, 1024): "4:3",
-        (1024, 1365): "3:4",
-    }
-    aspect = ratio_map.get((width, height), "3:2")
-
     loop = asyncio.get_event_loop()
     pil = await loop.run_in_executor(
         None,
         lambda: image_gen.generate(
             req.prompt,
-            aspect_ratio=aspect,
+            size=req.size,
             seed=req.seed,
             model_name=_MODEL_NAME,
             steps=req.num_inference_steps or _DEFAULT_STEPS,
