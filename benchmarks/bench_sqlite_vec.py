@@ -207,11 +207,9 @@ def main() -> None:
         truth_scores = {ids[i]: float(sims[i]) for i in truth_idx}
 
         res_l, ms_l = timed(
-            lambda qv=qvec: table.search(qv)
-            .metric("cosine")
-            .where(WHERE, prefilter=True)
-            .limit(K)
-            .to_list()
+            lambda qv=qvec: (
+                table.search(qv).metric("cosine").where(WHERE, prefilter=True).limit(K).to_list()
+            )
         )
         got_l = {r["id"] for r in res_l}
 
