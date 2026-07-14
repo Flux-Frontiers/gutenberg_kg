@@ -8,7 +8,7 @@ image at /workspace/gutenberg/:
   diaries/*/diarykg/ — 4 DiaryKG temporal indices (Pepys, Evelyn, Boswell)
 
 Implements the RunPod serverless API (--rp_serve_api) so it can be driven by
-the chat.py Streamlit UI, curl, or any compatible HTTP client.
+the Chat.py Streamlit UI, curl, or any compatible HTTP client.
 
 Volume layout (baked in at build time)
 ---------------------------------------

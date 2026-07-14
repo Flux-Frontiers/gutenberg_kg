@@ -26,7 +26,7 @@ def chat_cmd(port: int, address: str, worker_url: str | None) -> None:
     """Launch the Streamlit chat UI (needs the [chat] extra and a running worker).
 
     Streamlit apps are launched by file path, not module import, so this
-    resolves the packaged ``gutenberg_kg/serve/chat.py`` (the ``pages/``
+    resolves the packaged ``gutenberg_kg/serve/Chat.py`` (the ``pages/``
     directory beside it provides the multi-page nav) and execs
     ``streamlit run`` on it.
 
@@ -41,7 +41,7 @@ def chat_cmd(port: int, address: str, worker_url: str | None) -> None:
             "streamlit is not installed — install with: pip install 'gutenberg-kg[chat]'"
         ) from exc
 
-    app = Path(__file__).resolve().parent.parent / "serve" / "chat.py"
+    app = Path(__file__).resolve().parent.parent / "serve" / "Chat.py"
     env = os.environ.copy()
     if worker_url:
         env["KGRAG_ENDPOINT"] = worker_url
