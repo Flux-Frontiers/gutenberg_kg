@@ -300,7 +300,6 @@ def _imagine_via_worker(
     secret: str,
     *,
     image_backend: str = "",
-    aspect_ratio: str = "3:2",
     steps: int | None = None,
     size: str | None = None,
 ) -> tuple[str | None, str | None, str | None, str | None]:
@@ -308,7 +307,6 @@ def _imagine_via_worker(
     return WorkerClient(worker_url, secret).imagine(
         prompt,
         image_backend=image_backend,
-        aspect_ratio=aspect_ratio,
         steps=steps,
         size=size,
     )
@@ -781,7 +779,6 @@ def main() -> None:
                         prompt,
                         cfg["secret"],
                         image_backend=image_backend,
-                        aspect_ratio="3:2",
                         size=_RESOLUTION_SIZES.get(cfg["resolution"]),
                     )
                     img_ms = round((time.perf_counter() - t0_img) * 1000)

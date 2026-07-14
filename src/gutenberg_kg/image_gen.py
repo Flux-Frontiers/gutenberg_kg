@@ -11,6 +11,7 @@ Environment variables
 GUTENKG_IMAGE_MODEL      HuggingFace repo or mflux model name
                          (default: mlx-community/flux2-klein-4b-4bit)
 GUTENKG_IMAGE_STEPS      Inference steps (default: 4)
+GUTENKG_IMAGE_SIZE       Default output size WIDTHxHEIGHT (default: 1536x1024)
 GUTENKG_IMAGE_ENDPOINT   Base URL of a running mflux-serve instance
                          (default: empty — use local generation)
                          Example: http://localhost:8090  (mflux-server default)
@@ -30,16 +31,27 @@ if TYPE_CHECKING:
 
 _DEFAULT_MODEL = "mlx-community/flux2-klein-4b-4bit"
 _DEFAULT_STEPS = 4
+_DEFAULT_SIZE = "1536x1024"
+_DEFAULT_DIMS = (1536, 1024)
 
-_ASPECT_SIZES: dict[str, tuple[int, int]] = {
-    "1:1": (1024, 1024),
-    "3:2": (1536, 1024),
-    "2:3": (1024, 1536),
-    "16:9": (1536, 864),
-    "9:16": (864, 1536),
-    "4:3": (1365, 1024),
-    "3:4": (1024, 1365),
-}
+
+def _parse_size(size: str | None) -> tuple[int, int] | None:
+    """Parse an explicit ``"WIDTHxHEIGHT"`` string into an ``(width, height)`` pair.
+
+    :param size: Size string such as ``"768x512"`` (case-insensitive ``x``), or None.
+    :returns: ``(width, height)`` when *size* parses to two positive ints, else None.
+    """
+    if not size:
+        return None
+    try:
+        w_str, h_str = size.lower().split("x", 1)
+        width, height = int(w_str), int(h_str)
+    except (ValueError, AttributeError):
+        return None
+    if width <= 0 or height <= 0:
+        return None
+    return width, height
+
 
 _DEFAULT_VLM_BASE_URL = "http://localhost:8080/v1"
 _DEFAULT_VLM_MODEL = "Qwen3-4B-Instruct-2507-MLX-8bit"
@@ -119,7 +131,7 @@ def _load_model(model_name: str):
 def generate(
     prompt: str,
     *,
-    aspect_ratio: str = "3:2",
+    size: str | None = None,
     seed: int | None = None,
     output_path: str | Path | None = None,
     model_name: str | None = None,
@@ -128,7 +140,7 @@ def generate(
     """Generate an image locally via Flux2Klein (Apple Silicon / mflux).
 
     :param prompt: Text description of the image to generate.
-    :param aspect_ratio: One of 1:1, 3:2, 2:3, 16:9, 9:16, 4:3, 3:4.
+    :param size: Output size ``"WIDTHxHEIGHT"`` (default: GUTENKG_IMAGE_SIZE or 1536x1024).
     :param seed: Random seed for reproducibility (random if omitted).
     :param output_path: If given, save the PNG here in addition to returning it.
     :param model_name: Override the HF model repo (default: mlx-community/flux2-klein-4b-4bit).
@@ -138,7 +150,8 @@ def generate(
     model_name = model_name or os.environ.get("GUTENKG_IMAGE_MODEL", _DEFAULT_MODEL)
     steps = steps or int(os.environ.get("GUTENKG_IMAGE_STEPS", _DEFAULT_STEPS))
     seed = seed if seed is not None else random.randint(0, 2**31 - 1)
-    width, height = _ASPECT_SIZES.get(aspect_ratio, _ASPECT_SIZES["3:2"])
+    size = size or os.environ.get("GUTENKG_IMAGE_SIZE", _DEFAULT_SIZE)
+    width, height = _parse_size(size) or _DEFAULT_DIMS
 
     model = _load_model(model_name)
     result = model.generate_image(
@@ -163,7 +176,7 @@ def generate_via_server(
     prompt: str,
     *,
     server_url: str,
-    aspect_ratio: str = "3:2",
+    size: str | None = None,
     seed: int | None = None,
     steps: int | None = None,
 ) -> PILImage:
@@ -174,7 +187,7 @@ def generate_via_server(
 
     :param prompt: Text description of the image to generate.
     :param server_url: Base URL of the mflux-serve instance, e.g. http://localhost:8088.
-    :param aspect_ratio: One of 1:1, 3:2, 2:3, 16:9, 9:16, 4:3, 3:4.
+    :param size: Output size ``"WIDTHxHEIGHT"`` (default: GUTENKG_IMAGE_SIZE or 1536x1024).
     :param seed: Optional integer seed for reproducibility.
     :param steps: Override inference steps (default: GUTENKG_IMAGE_STEPS or 4).
     :returns: PIL Image decoded from the server response.
@@ -183,7 +196,8 @@ def generate_via_server(
     from PIL import Image
 
     steps = steps or int(os.environ.get("GUTENKG_IMAGE_STEPS", _DEFAULT_STEPS))
-    width, height = _ASPECT_SIZES.get(aspect_ratio, _ASPECT_SIZES["3:2"])
+    size = size or os.environ.get("GUTENKG_IMAGE_SIZE", _DEFAULT_SIZE)
+    width, height = _parse_size(size) or _DEFAULT_DIMS
 
     payload: dict = {
         "prompt": prompt,
@@ -209,7 +223,7 @@ def generate_auto(
     prompt: str,
     *,
     server_url: str | None = None,
-    aspect_ratio: str = "3:2",
+    size: str | None = None,
     seed: int | None = None,
     steps: int | None = None,
     model_name: str | None = None,
@@ -223,7 +237,7 @@ def generate_auto(
 
     :param prompt: Text description of the image to generate.
     :param server_url: Override server URL; pass None to use env var or local.
-    :param aspect_ratio: One of 1:1, 3:2, 2:3, 16:9, 9:16, 4:3, 3:4.
+    :param size: Output size ``"WIDTHxHEIGHT"`` (default: GUTENKG_IMAGE_SIZE or 1536x1024).
     :param seed: Optional integer seed for reproducibility.
     :param steps: Override inference steps.
     :param model_name: Local model override (ignored when using server).
@@ -231,9 +245,5 @@ def generate_auto(
     """
     url = server_url or os.environ.get("GUTENKG_IMAGE_ENDPOINT", "")
     if url:
-        return generate_via_server(
-            prompt, server_url=url, aspect_ratio=aspect_ratio, seed=seed, steps=steps
-        )
-    return generate(
-        prompt, aspect_ratio=aspect_ratio, seed=seed, steps=steps, model_name=model_name
-    )
+        return generate_via_server(prompt, server_url=url, size=size, seed=seed, steps=steps)
+    return generate(prompt, size=size, seed=seed, steps=steps, model_name=model_name)

@@ -25,12 +25,12 @@ from gutenberg_kg.cli.main import cli
     help="Restrict corpus query to this book title substring.",
 )
 @click.option(
-    "--ratio",
+    "--size",
     "-r",
-    default="3:2",
+    "size",
+    default="1536x1024",
     show_default=True,
-    type=click.Choice(["1:1", "3:2", "2:3", "16:9", "9:16", "4:3", "3:4"]),
-    help="Output aspect ratio.",
+    help="Output size WIDTHxHEIGHT, e.g. 768x512, 1152x768, 1536x1024.",
 )
 @click.option("--seed", "-s", default=None, type=int, help="Random seed for reproducibility.")
 @click.option("--output", "-o", default=None, type=click.Path(), help="Save PNG to this path.")
@@ -68,7 +68,7 @@ def imagine_cmd(
     prompt,
     query,
     book,
-    ratio,
+    size,
     seed,
     output,
     endpoint,
@@ -86,7 +86,7 @@ def imagine_cmd(
     Examples:
       gutenkg imagine "the great fire of London at night, oil painting"
       gutenkg imagine --query "great fire" --book pepys
-      gutenkg imagine --query "great fire" --book pepys --ratio 16:9 -o fire.png
+      gutenkg imagine --query "great fire" --book pepys --size 1536x864 -o fire.png
       gutenkg imagine --query "great fire" --book pepys --no-vlm
     """
     from gutenberg_kg import image_gen
@@ -101,14 +101,14 @@ def imagine_cmd(
     final_prompt = _resolve_prompt(prompt, query, book, corpus_only, use_vlm=not no_vlm)
 
     click.echo(f"Prompt: {final_prompt[:120]}{'…' if len(final_prompt) > 120 else ''}")
-    click.echo(f"Ratio:  {ratio}  Steps: {steps}  Seed: {seed or 'random'}")
+    click.echo(f"Size:   {size}  Steps: {steps}  Seed: {seed or 'random'}")
     click.echo("Generating…")
 
     try:
         pil = image_gen.generate_via_server(
             final_prompt,
             server_url=endpoint,
-            aspect_ratio=ratio,
+            size=size,
             seed=seed,
             steps=steps,
         )
