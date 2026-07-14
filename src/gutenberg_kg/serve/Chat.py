@@ -519,12 +519,12 @@ def _render_sidebar() -> dict:
     st.sidebar.markdown("---")
     st.sidebar.subheader("⚙️ Search")
 
-    k = st.sidebar.slider("Results", min_value=1, max_value=50, value=10)
+    k = st.sidebar.slider("Results", min_value=1, max_value=50, value=15)
     min_score = st.sidebar.slider(
         "Min score",
         min_value=0.0,
         max_value=0.9,
-        value=0.5,
+        value=0.6,
         step=0.05,
         help="Drop hits below this similarity score",
     )
@@ -532,7 +532,7 @@ def _render_sidebar() -> dict:
         "Semantic floor",
         min_value=0.0,
         max_value=0.9,
-        value=0.0,
+        value=0.3,
         step=0.05,
         help="Ignore a KG entirely if its best match is below this score",
     )
