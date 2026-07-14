@@ -59,7 +59,7 @@ build:
 	docker build -f docker/Dockerfile -t $(IMAGE):latest .
 
 run:
-	$(COMPOSE) up -d gutenberg-worker
+	$(COMPOSE) up -d worker
 	@echo "Worker running at $(WORKER)"
 
 image-server:
@@ -112,7 +112,7 @@ query:
 	  -d '{"input":{"query":"$(Q)","corpus":"all","k":5,"synthesize":false}}' | python3 -m json.tool
 
 logs:
-	$(COMPOSE) logs -f gutenberg-worker
+	$(COMPOSE) logs -f worker
 
 clean:
 	docker rmi $(IMAGE):latest 2>/dev/null || true

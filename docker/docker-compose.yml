@@ -11,8 +11,10 @@
 # Chat UI (requires --profile chat):
 #   docker compose --profile chat up
 
+name: gutenbergkg
+
 services:
-  gutenberg-worker:
+  worker:
     image: corpus-gutenberg:latest
     build:
       context: ..
@@ -43,13 +45,13 @@ services:
     restart: unless-stopped
 
   # Optional Streamlit chat UI — launch with:  docker compose --profile chat up
-  gutenberg-chat:
+  chat:
     image: corpus-gutenberg:latest
     command: gutenkg chat --port 8501 --address 0.0.0.0
     ports:
       - "8501:8501"
     environment:
-      KGRAG_ENDPOINT: http://gutenberg-worker:8000
+      KGRAG_ENDPOINT: http://worker:8000
       # mflux-server runs on the host Mac; host.docker.internal bridges to it.
       GUTENKG_IMAGE_ENDPOINT: ${GUTENKG_IMAGE_ENDPOINT:-http://host.docker.internal:8090}
       IMAGE_ENDPOINT: ${GUTENKG_IMAGE_ENDPOINT:-http://host.docker.internal:8090}
@@ -57,6 +59,6 @@ services:
     extra_hosts:
       - "host.docker.internal:host-gateway"
     depends_on:
-      - gutenberg-worker
+      - worker
     profiles:
       - chat
