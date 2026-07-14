@@ -1,12 +1,30 @@
-# The Knowledge Press — iOS App Architecture
+# The Knowledge Press — Native App Architecture (macOS-first)
 
-**Status:** Draft for review · 2026-07-14
+**Status:** Draft for review · 2026-07-14 (rev. 2: macOS-first)
 **Branch:** `feat/ios-app-architecture`
 
-A native iOS port of the GutenbergKG chat experience (`gutenberg_kg/serve/chat.py`),
+A native Swift port of the GutenbergKG chat experience (`gutenberg_kg/serve/chat.py`),
 preserving the same query → retrieval → synthesis path and the same visual
 vocabulary, with **Apple Foundation Models** for fully local inference and a
 tiered strategy for image generation.
+
+**Strategy: build for macOS first, iOS second.** Same SwiftUI codebase, same
+FoundationModels API (macOS 26 ≡ iOS 26), but macOS removes every launch
+blocker at once:
+
+- **No corpus-distribution problem.** The 5.7 GB bundle is already on the dev
+  machine's disk; the app opens the store directly. Pack hosting, Background
+  Assets, and download UX all defer to the iOS phase.
+- **The whole "remote" tier is localhost.** oMLX, Ollama, `image_server.py`,
+  and `sdxl_server.py` already run on this Mac — every backend is reachable
+  and debuggable without deploying anything.
+- **No provisioning/TestFlight/App Review friction**; distribute to yourself
+  with a Developer ID build.
+- **M-series headroom.** More RAM and faster ANE/GPU than any iPhone; if the
+  ~3 B Foundation Model proves too thin, an MLX-served larger model on the
+  same machine is one provider entry away.
+- **iOS becomes a target flip, not a port**: the deferred work is exactly the
+  pack pipeline (§3) plus device-budget tuning — the app core doesn't change.
 
 ---
 
@@ -101,10 +119,19 @@ lands.
 
 ### 3.1 Why not LanceDB
 
-LanceDB has no iOS/Swift binding. The replacement is **SQLite + `sqlite-vec`**
-(the `vec0` virtual table), which compiles cleanly for iOS as a static SQLite
-extension and keeps the whole corpus in one database technology — FTS5 is
-already SQLite, so dense + lexical + content live in one file per pack.
+LanceDB has no iOS/macOS Swift binding. The replacement is **SQLite +
+`sqlite-vec`** (the `vec0` virtual table), which compiles cleanly for
+iOS/macOS as a static SQLite extension and keeps the whole corpus in one
+database technology — FTS5 is already SQLite, so dense + lexical + content
+live in one file per pack.
+
+**Benchmarked 2026-07-14** ([benchmarks/SQLITE_VEC_RESULTS.md](../benchmarks/SQLITE_VEC_RESULTS.md)):
+over the real 361K-vector searched subset, vec0 brute force is *exact*
+(recall@10 = 1.0 fp32 / 0.94 int8) where the production LanceDB IvfFlat
+index averages **0.825 recall** at default settings, at comparable latency
+(85–132 ms vs 77 ms) and 9–11× smaller size (636 MB fp32 / 218 MB int8 vs
+2.5 GB). The store choice is therefore quality-neutral-or-better, not a
+mobile compromise.
 
 ### 3.2 Pack format
 
@@ -137,6 +164,16 @@ for no launch benefit.
 
 ### 3.3 Delivery
 
+**macOS (Phase 1–3): none needed.** The app opens the converted SQLite store
+directly from a user-chosen path (default: the repo's `bundles/` output, via a
+security-scoped bookmark). The store conversion is still required — Swift can
+no more read LanceDB than iOS can — but it's a local `gutenkg export-swift`
+run, not a hosted download. If the server-side sqlite-vec migration lands
+(see `benchmarks/bench_sqlite_vec.py`), the app and the worker read the *same
+artifact* and even the conversion step disappears.
+
+**iOS (final phase):**
+
 - **Background Assets framework** (essential/prefetched asset packs) so the
   download happens at install time with system UI, or
 - plain resumable `URLSession` download from the existing CDN/host, stored in
@@ -160,7 +197,7 @@ element below maps 1:1 to a function in `chat.py`:
 | `_render_assistant_turn` | `AssistantTurnView`: synthesis as native Markdown (`AttributedString`), model caption, stats line ("N passages · M KGs · search X ms · synthesis Y ms") |
 | `_render_hit_card` (HTML card, badges, score bar) | `HitCardView`: rounded card, `_kg_kind_badge`/`_node_kind_badge` → tinted capsules, `_score_bar` → `Gauge`/`ProgressView` tinted by magnitude, `DisclosureGroup` for the full passage |
 | `st.expander("Source passages")` | collapsible `Section` under the synthesis, expanded when synthesis is off — same rule as today |
-| `_render_sidebar` | `SettingsView` (sheet on iPhone, `NavigationSplitView` sidebar/inspector on iPad): corpus `Picker` (all/gutenberg/diary/18 genres), Results `Slider` (1–50), Min-score + Semantic-floor sliders, Synthesize `Toggle`, Provider `Picker` (**On-Device** / oMLX / Ollama / OpenAI), live model list, image resolution picker |
+| `_render_sidebar` | `NavigationSplitView` sidebar on macOS/iPad (a sheet on iPhone later): corpus `Picker` (all/gutenberg/diary/18 genres), Results `Slider` (1–50), Min-score + Semantic-floor sliders, Synthesize `Toggle`, Provider `Picker` (**On-Device** / oMLX / Ollama / OpenAI), live model list, image resolution picker — on macOS this is a persistent sidebar, which is actually *closer* to the Streamlit layout than iPhone's sheet |
 | suggested queries | tappable chips above the input field on first launch / empty chat |
 | `_result_to_markdown` + download button | `ShareLink` exporting the identical Markdown document |
 | 🎨 Render response | button on each assistant turn (and in settings) driving `ImageBackend`; result rendered inline in the turn, saveable to Photos |
@@ -283,8 +320,9 @@ Resolution picker maps to the server's explicit `WIDTHxHEIGHT` sizes (the
 ## 8. Project layout & testing
 
 ```
-ios/
-├── KnowledgePress/              app target (SwiftUI views, SwiftData models)
+app/
+├── KnowledgePress/              multiplatform SwiftUI app target — macOS first,
+│                                iOS added later as a destination, not a rewrite
 ├── GutenbergKGKit/              Swift package — everything testable headless:
 │   ├── Retrieval/               LocalRetrieval, RemoteRetrieval, RRF, CorpusStore
 │   ├── Synthesis/               OnDeviceSynthesis, RemoteSynthesis, ContextBudgeter
@@ -292,13 +330,13 @@ ios/
 │   ├── WorkerClient/            RunPod-shape API client (query + 5 ops)
 │   └── Embedding/               CoreML bge-small wrapper + WordPiece tokenizer
 └── Tools/                       export validation scripts
-src/gutenberg_kg/cli/cmd_export_ios.py    gutenkg export-ios (pack builder)
+src/gutenberg_kg/cli/cmd_export_swift.py  gutenkg export-swift (store/pack builder)
 ```
 
 **Parity is the test strategy.** The Python handler is the reference
 implementation, so:
 
-- `gutenkg export-ios` emits, alongside the packs, a **golden-query file**: N
+- `gutenkg export-swift` emits, alongside the store, a **golden-query file**: N
   representative queries (per genre + the known-hard ones: "pillar of salt",
   "circles of Hell", Moses/Quran) with the worker's top-k node IDs and scores.
 - `GutenbergKGKit` CI runs the same queries against the packs (macOS runner —
@@ -312,16 +350,19 @@ implementation, so:
 
 ## 9. Phased migration
 
+All phases below target **macOS**; iOS is the last row, not a fork.
+
 | Phase | Deliverable | Depends on |
 |---|---|---|
-| **0. Export tooling** | `gutenkg export-ios`: pack format, int8 vec0 conversion, FTS rebuild, golden-query file | bundle exists (`make build-corpus`) |
-| **1. Thin client** | Full SwiftUI app (Chat/Browse/Settings) in **Remote mode** against the existing worker — same look, ships first, validates the UI with zero ML risk | worker deployed (already true) |
-| **2. Local retrieval** | Core ML embedder + CorpusStore + LocalRetrieval, parity gate green; Browse goes local | Phase 0 |
-| **3. Local synthesis** | FoundationModels backend, ContextBudgeter, guardrail fallbacks, streaming turns | Phase 2 |
-| **4. Images** | RemoteImage against image_server/sdxl_server, then Image Playground fallback; on-device vlm_rewrite | Phase 1 (remote) / 3 (rewrite) |
+| **0. Store spike + export tooling** | sqlite-vec benchmark (`benchmarks/bench_sqlite_vec.py`) → `gutenkg export-swift`: vec0 store conversion, FTS rebuild, golden-query file | bundle exists (`make build-corpus`) |
+| **1. Thin client (macOS)** | Full SwiftUI app (Chat/Browse/Settings) in **Remote mode** against the local worker (`make run`) — same look, ships first, validates the UI with zero ML risk | worker runs locally (already true) |
+| **2. Local retrieval** | Core ML embedder + CorpusStore + LocalRetrieval over the converted store on disk, parity gate green; Browse goes local | Phase 0 |
+| **3. Local synthesis** | FoundationModels backend (macOS 26), ContextBudgeter, guardrail fallbacks, streaming turns | Phase 2 |
+| **4. Images** | RemoteImage against localhost image_server/sdxl_server, then Image Playground fallback; on-device vlm_rewrite | Phase 1 (remote) / 3 (rewrite) |
+| **5. iOS target** | Add the iOS destination: pack splitting + hosting + Background Assets, iPhone layout (settings sheet), device context budgets | Phases 2–4 |
 
 Each phase is independently shippable; Phase 1 alone is already "our chat
-interface on iOS".
+interface as a native Mac app".
 
 ## 10. Risks & open questions
 
@@ -332,11 +373,13 @@ interface on iOS".
   against the real corpus; the fallback UX is designed in from the start.
 - **Tokenizer parity** for bge-small in Swift — de-risked early by the Phase 0/2
   golden-query gate.
-- **Pack hosting** — ~1.5 GB per user download; needs a home (existing CDN,
-  Cloudflare R2, or GitHub Releases won't cut it at scale). Cost scales with
-  installs.
-- **Corpus updates** — full re-download on re-ingest in v1; delta packs are a
-  later optimization.
-- **Minimum OS is iOS 26 / Apple Intelligence hardware** for Full-local mode;
-  older devices get Remote mode only (the app should run on iOS 17+ with the
-  FM backend compiled conditionally).
+- **Pack hosting** *(iOS phase only)* — ~1.5 GB per user download; needs a
+  home (existing CDN, Cloudflare R2, or GitHub Releases won't cut it at
+  scale). Cost scales with installs. Not a blocker for anything before
+  Phase 5.
+- **Corpus updates** — on macOS, re-run `gutenkg export-swift` after
+  re-ingest; on iOS, full re-download in v1 with delta packs as a later
+  optimization.
+- **Minimum OS is macOS 26 on Apple Silicon** for Full-local mode (and
+  iOS 26 / Apple Intelligence hardware when the iOS target lands); older
+  systems get Remote mode with the FM backend compiled conditionally.
