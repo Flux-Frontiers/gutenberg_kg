@@ -25,13 +25,15 @@ additional modules.
 
 ```sh
 cd app/GutenbergKGKit
-swift build                    # library builds with CLT alone
-DEVELOPER_DIR=/Applications/Xcode-beta.app/Contents/Developer swift test
+swift build
+swift test
 ```
 
-`swift test` needs the full Xcode toolchain for the Testing framework; this
-machine's `xcode-select` points at CommandLineTools, so pass `DEVELOPER_DIR`
-(or `sudo xcode-select -s /Applications/Xcode-beta.app` once).
+`swift test` needs the full Xcode toolchain for the Testing framework
+(CommandLineTools alone can build the library but not run the tests). If
+`xcode-select -p` reports CommandLineTools, either switch once with
+`sudo xcode-select -s /Applications/Xcode-beta.app/Contents/Developer` or
+prefix commands with `DEVELOPER_DIR=/Applications/Xcode-beta.app/Contents/Developer`.
 
 ## Live smoke test
 
