@@ -142,3 +142,6 @@ entry_*.md
 .venv**
 .vscode
 .mcp.json
+
+# Swift / SwiftPM build output
+.build/
