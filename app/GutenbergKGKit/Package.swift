@@ -6,10 +6,12 @@ let package = Package(
     name: "GutenbergKGKit",
     platforms: [.macOS(.v14)],
     products: [
-        .library(name: "GutenbergKGKit", targets: ["GutenbergKGKit"])
+        .library(name: "GutenbergKGKit", targets: ["GutenbergKGKit"]),
+        .executable(name: "KnowledgePress", targets: ["KnowledgePress"]),
     ],
     targets: [
         .target(name: "GutenbergKGKit"),
+        .executableTarget(name: "KnowledgePress", dependencies: ["GutenbergKGKit"]),
         .testTarget(name: "GutenbergKGKitTests", dependencies: ["GutenbergKGKit"]),
     ]
 )
