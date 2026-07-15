@@ -2599,6 +2599,7 @@ openai = {version = ">=1.30.0", optional = true, markers = "extra == \"synthesis
 pillow = {version = ">=10.0.0", optional = true, markers = "extra == \"synthesis\""}
 rich = {version = ">=13.0.0", optional = true, markers = "extra == \"semantic\""}
 sentence-transformers = {version = ">=5.4.1", optional = true, markers = "extra == \"semantic\""}
+sqlite-vec = {version = "0.1.9", optional = true, markers = "extra == \"sqlite-vec\""}
 torch = {version = ">=2.5.1", optional = true, markers = "extra == \"semantic\""}
 transformers = {version = ">=4.40.0,<4.57", optional = true, markers = "extra == \"semantic\""}
 ty = ">=0.0.44,<0.0.45"
@@ -6161,6 +6162,21 @@ files = [
 ]
 
 [[package]]
+name = "sqlite-vec"
+version = "0.1.9"
+description = ""
+optional = false
+python-versions = "*"
+groups = ["main"]
+files = [
+    {file = "sqlite_vec-0.1.9-py3-none-macosx_10_6_x86_64.whl", hash = "sha256:1b62a7f0a060d9475575d4e599bbf94a13d85af896bc1ce86ee80d1b5b48e5fb"},
+    {file = "sqlite_vec-0.1.9-py3-none-macosx_11_0_arm64.whl", hash = "sha256:1d52e30513bae4cc9778ddbf6145610434081be4c3afe57cd877893bad9f6b6c"},
+    {file = "sqlite_vec-0.1.9-py3-none-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:4e921e592f24a5f9a18f590b6ddd530eb637e2d474e3b1972f9bbeb773aa3cb9"},
+    {file = "sqlite_vec-0.1.9-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux1_x86_64.whl", hash = "sha256:1515727990b49e79bcaf75fdee2ffc7d461f8b66905013231251f1c8938e7786"},
+    {file = "sqlite_vec-0.1.9-py3-none-win_amd64.whl", hash = "sha256:4a28dc12fa4b53d7b1dced22da2488fade444e96b5d16fd2d698cd670675cf32"},
+]
+
+[[package]]
 name = "srsly"
 version = "2.5.3"
 description = "Modern high-performance serialization utilities for Python"
@@ -7647,4 +7663,4 @@ viz3d = ["PyQt5", "markdown", "param", "pycode-kg", "pyvista", "pyvistaqt"]
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.12,<3.14"
-content-hash = "e0a6bbee97ed994c2af7760a9c5f12d61d68341cb22c2888e0ebc0f469c7c8f4"
+content-hash = "2b90e038aa3825b104be98a908ad90577b9396bb4e28bd4ecb160418670c694f"
