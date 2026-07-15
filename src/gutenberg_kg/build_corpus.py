@@ -274,7 +274,10 @@ def ensure_diaries_built(dry_run: bool = False, quiet: bool = False) -> int:
     rc = run_chunk_diaries([], ChunkDiariesOptions(force=False, dry_run=dry_run))
     if rc != 0:
         return rc
-    return run_build_diaries([], BuildDiariesOptions(force=False, dry_run=dry_run, quiet=quiet))
+    rc, _results = run_build_diaries(
+        [], BuildDiariesOptions(force=False, dry_run=dry_run, quiet=quiet)
+    )
+    return rc
 
 
 def _dir_size_mb(path: Path) -> float:

@@ -250,12 +250,12 @@ def build_diary_index(
 def run_build_diaries(
     diary_names: list[str],
     opts: BuildDiariesOptions,
-) -> int:
+) -> tuple[int, list[DiaryBuildResult]]:
     """Build .diarykg/ indices for all (or selected) diaries.
 
     :param diary_names: Diary directory names to process (empty = all).
     :param opts: Build option flags.
-    :return: 0 on full success, 1 if any diary failed.
+    :return: (0 on full success else 1, per-diary build results).
     """
     diary_dirs = list_diary_dirs(diary_names if diary_names else None)
 
@@ -263,7 +263,7 @@ def run_build_diaries(
         print("[!] No diary directories found under corpus/diaries/")
         if diary_names:
             print(f"    Requested: {diary_names}")
-        return 1
+        return 1, []
 
     print("=== gutenkg build-diaries ===")
     print(f"  diaries       : {len(diary_dirs)}")
@@ -319,4 +319,4 @@ def run_build_diaries(
                 print(f"    [x] {r.name}: {r.message}")
     print()
 
-    return 1 if failed else 0
+    return (1 if failed else 0), results

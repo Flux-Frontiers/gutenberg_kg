@@ -21,7 +21,7 @@ def test_run_ingest_routes_diaries_to_diary_pipeline(monkeypatch):
     def fake_ingest_diaries(registry_path, opts):
         calls["registry_path"] = registry_path
         calls["opts"] = opts
-        return 0
+        return 0, None
 
     # If routing failed and it fell through to the prose path, this would raise.
     def boom(*a, **k):  # pragma: no cover - only hit on routing regression

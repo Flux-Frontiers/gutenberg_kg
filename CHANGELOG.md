@@ -138,6 +138,20 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   `SqliteVecBackend requires sqlite-vec`, restart-looping the worker (the chat
   UI reported "Cannot connect to worker"). The image now installs
   `kgmodule-utils[synthesis,sqlite-vec]`, matching `Dockerfile.sqlite`.
+- **`pyproject.toml` missing the `sqlite-vec` extra** — same root cause as the
+  Docker crash-loop above, but for the package itself: a plain `pip install
+  gutenberg-kg` / `poetry install` pulled `kgmodule-utils[synthesis]` without
+  `sqlite-vec`, so any non-Docker environment (e.g. the macOS app) reading a
+  `vectors.sqlite` bundle hit the same `SqliteVecBackend requires sqlite-vec`
+  failure. Now depends on `kgmodule-utils[synthesis,sqlite-vec]`.
+- **`diaries` genre missing from ingest reports** — `gutenkg ingest` routes
+  `diaries` through a separate DiaryKG pipeline (`ingest_diaries()`) that ran
+  *before* the main per-genre loop and dropped its results on the floor, so
+  the console summary and saved `reports/ingest_*.md` under-reported "Genres
+  processed" (19 instead of 20) and omitted the diary books' node/edge counts
+  entirely — even though the diaries built and registered successfully.
+  `run_build_diaries()`/`ingest_diaries()` now return per-book results as a
+  `GenreSummary` that folds into the same report as every other genre.
 
 ---
 

@@ -311,7 +311,7 @@ def register_diary_book(
 def ingest_diaries(
     registry_path: Path,
     opts: IngestOptions,
-) -> int:
+) -> tuple[int, GenreSummary | None]:
     """Run the DiaryKG pipeline for the ``diaries`` genre and register the indices.
 
     Diaries are *not* built through the standard DocKG path — they use a separate
@@ -322,7 +322,9 @@ def ingest_diaries(
 
     :param registry_path: Resolved KGRAG registry database path.
     :param opts: Ingest option flags (``force_build`` re-chunks + rebuilds).
-    :return: 0 on success, 1 if chunking or building failed.
+    :return: (0 on success else 1, a GenreSummary for the "diaries" genre so it
+        rolls into the same Totals/report as the standard DocKG genres — or
+        ``None`` if the build step failed before any results were collected).
     """
     from kg_rag.corpus_registry import CorpusRegistry
     from kg_rag.registry import KGRegistry
@@ -340,12 +342,27 @@ def ingest_diaries(
         [], ChunkDiariesOptions(force=opts.force_build, dry_run=opts.dry_run)
     )
     if rc_chunk != 0:
-        return rc_chunk
-    rc_build = run_build_diaries(
+        return rc_chunk, None
+    rc_build, build_results = run_build_diaries(
         [], BuildDiariesOptions(force=opts.force_build, dry_run=opts.dry_run)
     )
+    genre_summary = GenreSummary(
+        genre="diaries",
+        results=[
+            BookResult(
+                name=r.name,
+                genre="diaries",
+                status=r.status,
+                elapsed=r.elapsed,
+                nodes=r.nodes,
+                edges=r.edges,
+            )
+            for r in build_results
+        ],
+        wall_elapsed=sum(r.elapsed for r in build_results),
+    )
     if rc_build != 0:
-        return rc_build
+        return rc_build, genre_summary
 
     # --- Register each .diarykg with KGRAG + corpus membership ---
     diary_corpus = "gutenberg-diaries"
@@ -371,7 +388,7 @@ def ingest_diaries(
                 add_to_corpus(corp_reg, diary_corpus, entry, dry_run=opts.dry_run)
                 add_to_corpus(corp_reg, TOP_CORPUS, entry, dry_run=opts.dry_run)
     print()
-    return 0
+    return 0, genre_summary
 
 
 def git_commit_push_genre(genre_dir: Path, genre: str, dry_run: bool = False) -> None:
@@ -879,11 +896,10 @@ def run_ingest(
     # Diaries use the DiaryKG pipeline, not the standard DocKG path. Handle them
     # first (before the Live display) and drop them from the prose genre list.
     diary_rc = 0
+    diary_summary: GenreSummary | None = None
     if "diaries" in genres:
-        diary_rc = ingest_diaries(registry_path, opts)
+        diary_rc, diary_summary = ingest_diaries(registry_path, opts)
         genres = [g for g in genres if g != "diaries"]
-        if not genres:
-            return diary_rc
 
     # Pre-count total books so the progress bar has an accurate total.
     def _book_dirs(genre: str) -> list[Path]:
@@ -896,6 +912,8 @@ def run_ingest(
     total_books = sum(len(_book_dirs(g)) for g in genres)
 
     genre_summaries: list[GenreSummary] = []
+    if diary_summary is not None:
+        genre_summaries.append(diary_summary)
     wall_start = datetime.now(UTC)
     wall_t0 = time.perf_counter()
     embed_model_name: str = ""
@@ -980,6 +998,9 @@ def run_ingest(
     finally:
         live.stop()
         log.stop()
+
+    if not genre_summaries:
+        return 1 if diary_rc != 0 else 0
 
     wall_elapsed = time.perf_counter() - wall_t0
     print_summary(genre_summaries, opts, registry_path, wall_start, wall_elapsed, embed_model_name)
