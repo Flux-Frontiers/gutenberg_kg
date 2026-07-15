@@ -6,8 +6,8 @@ Modules
 handler       — RunPod serverless worker (semantic search + synthesis).
                 Importing it runs the full startup sequence (registry,
                 embedder, vector tables), so import it only to serve.
-chat          — Streamlit chat UI (launch via ``gutenkg chat``).
-pages/        — extra Streamlit pages auto-discovered next to chat.py.
+Chat          — Streamlit chat UI (launch via ``gutenkg chat``).
+pages/        — extra Streamlit pages auto-discovered next to Chat.py.
 image_server  — FastAPI wrapper around :mod:`gutenberg_kg.image_gen`
                 (launch via ``gutenkg-image-server``).
 

@@ -76,6 +76,6 @@ def build_diaries(diary_names, force, workers, dry_run, quiet):
         dry_run=dry_run,
         quiet=quiet,
     )
-    rc = bd.run_build_diaries(list(diary_names), opts)
+    rc, _results = bd.run_build_diaries(list(diary_names), opts)
     if rc != 0:
         raise SystemExit(rc)

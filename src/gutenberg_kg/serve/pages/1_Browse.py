@@ -2,7 +2,7 @@
 """
 1_Browse.py — GutenbergKG corpus browser.
 
-Streamlit page (auto-discovered by the multi-page nav next to chat.py) that
+Streamlit page (auto-discovered by the multi-page nav next to Chat.py) that
 lists every book by genre and reads it chapter by chapter, reconstructed from
 the DocKG section/chunk nodes already baked into the worker's index — no raw
 corpus text is shipped in the deployed image.

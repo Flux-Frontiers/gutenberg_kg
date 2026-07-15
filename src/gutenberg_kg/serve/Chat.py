@@ -1,6 +1,6 @@
 # © 2026 Eric G. Suchanek, PhD — Flux-Frontiers · SPDX-License-Identifier: Elastic-2.0
 """
-chat.py — GutenbergKG Chat Interface
+Chat.py — GutenbergKG Chat Interface
 
 Streamlit chat UI for the corpus-gutenberg KGRAG worker.  Searches the
 consolidated DocKG (241 books, 20 genres) and 4 DiaryKG temporal indices,
@@ -23,6 +23,8 @@ from pathlib import Path
 import httpx
 import streamlit as st
 from kg_utils.worker import WorkerClient, WorkerError
+
+from gutenberg_kg import __version__
 
 _IN_DOCKER = os.path.exists("/.dockerenv")
 _HOST = "host.docker.internal" if _IN_DOCKER else "localhost"
@@ -492,6 +494,7 @@ def _render_sidebar() -> dict:
     :returns: Query configuration dict assembled from the current widget values.
     """
     st.sidebar.title("📚 GutenbergKG")
+    st.sidebar.caption(f"v{__version__}")
     stats = _fetch_stats(_DEFAULT_WORKER)
     if stats:
         model_short = (stats.get("embed_model") or "").rsplit("/", 1)[-1]
@@ -516,12 +519,12 @@ def _render_sidebar() -> dict:
     st.sidebar.markdown("---")
     st.sidebar.subheader("⚙️ Search")
 
-    k = st.sidebar.slider("Results", min_value=1, max_value=50, value=10)
+    k = st.sidebar.slider("Results", min_value=1, max_value=50, value=15)
     min_score = st.sidebar.slider(
         "Min score",
         min_value=0.0,
         max_value=0.9,
-        value=0.5,
+        value=0.6,
         step=0.05,
         help="Drop hits below this similarity score",
     )
@@ -529,7 +532,7 @@ def _render_sidebar() -> dict:
         "Semantic floor",
         min_value=0.0,
         max_value=0.9,
-        value=0.0,
+        value=0.3,
         step=0.05,
         help="Ignore a KG entirely if its best match is below this score",
     )
