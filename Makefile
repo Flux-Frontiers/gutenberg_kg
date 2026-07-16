@@ -118,4 +118,5 @@ clean:
 	docker rmi $(IMAGE):latest 2>/dev/null || true
 
 docs:
-	cd src && pdoc --o ../site --logo ./logo.png gutenberg_kg '!gutenberg_kg.serve.sdxl_server'
+	cd src && pdoc --o ../site --logo "https://flux-frontiers.github.io/gutenberg_kg/logo.png" gutenberg_kg '!gutenberg_kg.serve.sdxl_server'
+	cp assets/logos/logo_256.png site/logo.png
