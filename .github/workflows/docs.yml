@@ -42,12 +42,13 @@ jobs:
       # pdoc IMPORTS every documented module, so the env must satisfy every
       # top-level import: chat (streamlit/httpx), image (fastapi/uvicorn),
       # mcp (fastmcp/structlog), viz+viz3d (plotly/PyQt5/pyvista/pycode-kg),
-      # dev (pdoc itself). runpod (serve.handler's import) is deliberately in
+      # dev (pdoc itself), kgdeps (kg-rag — serve.handler runs its registry
+      # bootstrap at import time, so even its function-local imports count). runpod (serve.handler's import) is deliberately in
       # no extra — its dep tree stalls poetry lock — so it installs via plain
       # pip, same rationale as runpod/requirements.txt.
       - name: Install dependencies
         run: |
-          poetry install --no-interaction --extras "dev chat image mcp viz viz3d"
+          poetry install --no-interaction --extras "dev chat image mcp viz viz3d kgdeps"
           poetry run pip install --quiet runpod
 
       # PDOC_ALLOW_EXEC: pdoc sandboxes subprocesses during import;
