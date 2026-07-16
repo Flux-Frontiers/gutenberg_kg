@@ -102,7 +102,7 @@ dev = [
 ]
 kgdeps = [
     "kg-rag>=0.9.1",
-    "pycode-kg>=0.19.3",
+    "pycode-kg>=0.20.0",
 ]
 viz = [
     "plotly>=5.0.0",

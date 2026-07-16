@@ -4401,20 +4401,20 @@ files = [
 
 [[package]]
 name = "pycode-kg"
-version = "0.19.3"
+version = "0.20.0"
 description = "A tool to build a searchable knowledge graph from Python repositories"
 optional = true
 python-versions = "<3.14,>=3.12"
 groups = ["main"]
 markers = "extra == \"kgdeps\" or extra == \"viz3d\" or extra == \"full\" or extra == \"all\""
 files = [
-    {file = "pycode_kg-0.19.3-py3-none-any.whl", hash = "sha256:835f77b2fed1a6bbb97064d671174621848b4f42b18c964242963ba2676e665e"},
-    {file = "pycode_kg-0.19.3.tar.gz", hash = "sha256:bb27f051a39039feaa843aba10123da1ac40e2a8dd0d04d44eb8c95cd2eecda8"},
+    {file = "pycode_kg-0.20.0-py3-none-any.whl", hash = "sha256:a902d5dd5e0ed9c7b29b407d5b26bcd3e2e48537881ab46dc1ae720d86bab41f"},
+    {file = "pycode_kg-0.20.0.tar.gz", hash = "sha256:532b9276650089a462cf4002ec72d13f7884ba0340c0ebae23da507fbd77fb51"},
 ]
 
 [package.dependencies]
 click = ">=8.1.0,<9"
-kgmodule-utils = {version = ">=0.3.1", extras = ["semantic"]}
+kgmodule-utils = {version = ">=0.6.2", extras = ["semantic", "sqlite-vec"]}
 mcp = ">=1.0.0"
 numpy = ">=1.24.0"
 pandas = ">=2.0.0"
@@ -4425,9 +4425,9 @@ torch = ">=2.5.1"
 transformers = ">=4.40.0,<4.57"
 
 [package.extras]
-all = ["PyQt5 (>=5.15.0)", "detect-secrets (>=1.5.0)", "markdown (>=3.6)", "param (>=2.0.0)", "pdoc (>=14.0.0)", "plotly (>=5.14.0)", "pre-commit (>=4.5.1)", "pylint (>=4.0.5)", "pytest (>=8.0.0)", "pytest-cov (>=5.0.0)", "pyvis (>=0.3.2)", "pyvista[jupyter] (>=0.44.0)", "pyvistaqt (>=0.11.0)", "ruff (>=0.4.0)", "streamlit (>=1.35.0)", "trame-vtk (>=2.0.0)", "ty (>=0.0.41)"]
-dev = ["detect-secrets (>=1.5.0)", "doc-kg (>=0.15.2)", "pdoc (>=14.0.0)", "pre-commit (>=4.5.1)", "pylint (>=4.0.5)", "pytest (>=8.0.0)", "pytest-cov (>=5.0.0)", "ruff (>=0.4.0)", "ty (>=0.0.41)"]
-kgdeps = ["doc-kg (>=0.15.2)"]
+all = ["PyQt5 (>=5.15.0)", "detect-secrets (>=1.5.0)", "markdown (>=3.6)", "param (>=2.0.0)", "pdoc (>=14.0.0)", "plotly (>=5.14.0)", "pre-commit (>=4.5.1)", "pytest (>=8.0.0)", "pytest-cov (>=5.0.0)", "pyvis (>=0.3.2)", "pyvista[jupyter] (>=0.44.0)", "pyvistaqt (>=0.11.0)", "ruff (>=0.4.0)", "streamlit (>=1.35.0)", "trame-vtk (>=2.0.0)", "ty (>=0.0.41)"]
+dev = ["detect-secrets (>=1.5.0)", "doc-kg (>=0.18.1)", "pdoc (>=14.0.0)", "pre-commit (>=4.5.1)", "pytest (>=8.0.0)", "pytest-cov (>=5.0.0)", "ruff (>=0.4.0)", "ty (>=0.0.41)"]
+kgdeps = ["doc-kg (>=0.18.1)"]
 viz = ["plotly (>=5.14.0)", "pyvis (>=0.3.2)", "streamlit (>=1.35.0)"]
 viz3d = ["PyQt5 (>=5.15.0)", "markdown (>=3.6)", "param (>=2.0.0)", "pyvista[jupyter] (>=0.44.0)", "pyvistaqt (>=0.11.0)", "trame-vtk (>=2.0.0)"]
 
@@ -7663,4 +7663,4 @@ viz3d = ["PyQt5", "markdown", "param", "pycode-kg", "pyvista", "pyvistaqt"]
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.12,<3.14"
-content-hash = "41a7b2d318b49233d133e1d76b186ede685db4860f0abf4f1069f8696b76752c"
+content-hash = "d18027c297c826637e86200ebb807e2f0c8be76a38b7a3118c9ce90208d45711"
