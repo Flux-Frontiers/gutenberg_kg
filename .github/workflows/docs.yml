@@ -50,8 +50,13 @@ jobs:
           poetry install --no-interaction --extras "dev chat image mcp viz viz3d"
           poetry run pip install --quiet runpod
 
+      # PDOC_ALLOW_EXEC: pdoc sandboxes subprocesses during import;
+      # runpod's import calls cpuinfo, which shells out on Linux and
+      # crashes on the suppressed (empty) output.
       - name: Build docs
         run: poetry run make docs
+        env:
+          PDOC_ALLOW_EXEC: "1"
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
