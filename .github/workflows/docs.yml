@@ -40,12 +40,16 @@ jobs:
           key: docs-${{ runner.os }}-${{ hashFiles('poetry.lock') }}
 
       # chat/image extras: pdoc imports gutenberg_kg.serve.* (streamlit,
-      # fastapi, …) to document them.
+      # fastapi, …) to document them. runpod (serve.handler's import) is
+      # deliberately in no extra — its dep tree stalls poetry lock — so it
+      # installs via plain pip, same rationale as runpod/requirements.txt.
       - name: Install dependencies
-        run: poetry install --no-interaction --extras "dev chat image"
+        run: |
+          poetry install --no-interaction --extras "dev chat image"
+          poetry run pip install --quiet runpod
 
       - name: Build docs
-        run: make docs
+        run: poetry run make docs
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
