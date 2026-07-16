@@ -6,7 +6,7 @@
   <a href="https://www.python.org/"><img src="https://img.shields.io/badge/python-3.12%20|%203.13-blue.svg" alt="Python"/></a>
   <a href="https://www.elastic.co/licensing/elastic-license"><img src="https://img.shields.io/badge/code-Elastic--2.0-lightgrey.svg" alt="Code License"/></a>
   <a href="https://www.gutenberg.org/"><img src="https://img.shields.io/badge/texts-Public%20Domain-green.svg" alt="Texts License"/></a>
-  <img src="https://img.shields.io/badge/version-1.8.0-blue.svg" alt="Version"/>
+  <img src="https://img.shields.io/badge/version-1.9.0-blue.svg" alt="Version"/>
   <img src="https://img.shields.io/badge/corpus-241%20books-orange.svg" alt="Corpus"/>
   <img src="https://img.shields.io/badge/nodes-1.3M-green.svg" alt="Nodes"/>
   <img src="https://img.shields.io/badge/edges-5.1M-green.svg" alt="Edges"/>
@@ -22,7 +22,7 @@
 
 It transforms the world's great public-domain literature, philosophy, and sacred texts into **queryable knowledge graphs** — enabling semantic search, thematic analysis, and cross-work discovery at a scale and depth that keyword search cannot touch. Ask *what themes connect Dostoevsky and Dante*, trace the evolution of the social contract from Rousseau to Thoreau, or find every passage in the corpus that grapples with revenge — and get semantically grounded answers drawn from the source texts themselves.
 
-The corpus currently spans **241 public-domain texts across 20 genres** — 1,270,591 nodes, 5,094,446 edges — built and fully indexed on an Apple M5 Max in under 30 minutes.
+The corpus currently spans **241 public-domain texts across 20 genres** — 1,270,591 nodes, 5,094,446 edges — built and fully indexed on an Apple M5 Max in about 30 minutes.
 
 *Author: Eric G. Suchanek, PhD · Flux-Frontiers, Liberty TWP, OH*
 
@@ -30,9 +30,9 @@ The corpus currently spans **241 public-domain texts across 20 genres** — 1,27
 
 ## The Knowledge Press — Local App
 
-The primary interface is **The Knowledge Press**: a self-contained Docker app that bundles the full knowledge graph, a query worker, and a Streamlit chat UI. Once running, open `http://localhost:8501` and query 241 books with plain English.
+The primary interface is **The Knowledge Press**: a self-contained Docker app that bundles the full knowledge graph, a query worker, and a Streamlit chat UI. Once running, open `http://localhost:8501` and query all books with plain English.
 
-### One-time corpus build (~24 min)
+### One-time corpus build (~30 min)
 
 The corpus must be built before the Docker image. This step converts the raw texts into DocKG + DiaryKG indices and bundles them for baking into the image. You only do this once (or after adding new books).
 
@@ -276,7 +276,7 @@ If you use GutenbergKG in your research, please cite it. GitHub's **Cite this re
   author       = {Suchanek, Eric G.},
   title        = {{GutenbergKG}: The Knowledge Press},
   year         = {2026},
-  version      = {1.8.0},
+  version      = {1.9.0},
   publisher    = {Flux-Frontiers},
   doi          = {10.5281/zenodo.20045390},
   url          = {https://github.com/Flux-Frontiers/gutenberg_kg},
@@ -288,7 +288,7 @@ If you use GutenbergKG in your research, please cite it. GitHub's **Cite this re
 
 **APA:**
 
-> Suchanek, E. G. (2026). *GutenbergKG: The Knowledge Press* (Version 1.8.0) [Software]. Flux-Frontiers. https://doi.org/10.5281/zenodo.20045390
+> Suchanek, E. G. (2026). *GutenbergKG: The Knowledge Press* (Version 1.9.0) [Software]. Flux-Frontiers. https://doi.org/10.5281/zenodo.20045390
 
 ---
 

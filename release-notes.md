@@ -1,54 +1,55 @@
-# Release Notes — v1.8.0
+# Release Notes — v1.9.0
 
-> Released: 2026-07-10
+> Released: 2026-07-16
 
-GutenbergKG 1.8.0 smooths the rough edges of first-run setup and corpus
-integrity. A new `gutenkg init` command pulls the local ML models the pipeline
-needs before you touch any data, so a fresh clone no longer dies halfway through
-a build with a missing-model error. Alongside it, the deployed chat app gains a
-full corpus browser, a smarter model picker, and an audit check that catches the
-insidious class of bug where a book's declared title and its actual text quietly
-disagree.
+GutenbergKG 1.9.0 takes the Knowledge Press beyond the browser: a native
+macOS app (Phase 1 thin client) now talks to the same worker the Streamlit UI
+uses, and the vector store underneath everything has migrated from LanceDB to
+sqlite-vec — exact retrieval, ~10× smaller on disk.
 
 ## What changed
 
-**One-shot model setup.** `gutenkg init` fetches the spaCy and embedder models
-the local pipeline depends on, meant to be run once after cloning and
-`poetry install`. It fails fast and legibly up front instead of letting
-`chunk-diaries` / `ingest` / `build-corpus` blow up mid-run on a model that was
-never downloaded. Pass `--check` to report model status without downloading.
-Docker builds don't need it — the image pre-downloads the embedder at build time
-and never runs spaCy at runtime.
+**KnowledgePress macOS app.** The new `app/GutenbergKGKit/` SwiftPM package
+ships a SwiftUI thin client for the corpus: a chat view that renders
+retrieved passages per turn, a Browse view for reading books chapter by
+chapter, and a settings sidebar for the worker endpoint and API key. Under it
+sits `GutenbergKGKit`, an async `WorkerClient` covering the worker's search,
+stats, and browse ops, with unit tests against a stubbed `URLProtocol`.
+Phase 2 (on-device Core ML retrieval) is the next step.
 
-**Read the corpus, not just search it.** A new "Browse" page in the deployed app
-lets you walk every book by genre and read it chapter by chapter, reconstructed
-from the DocKG section/chunk nodes already baked into the worker's index — no raw
-corpus text needs to ship in the image. Four new handler ops (`list_genres`,
-`list_books`, `get_chapters`, `get_chapter`) serve it through the existing
-`/runsync` endpoint next to search.
+**sqlite-vec replaces LanceDB.** Benchmarks showed the production LanceDB
+IvfFlat index averaging 0.825 recall@10 (as low as 0.4 on exact-phrase
+queries like "pillar of salt"), while sqlite-vec brute force is exact at
+comparable latency and shrinks the store from ~2.5 GB to ~1.1 GB. Both
+workers now prefer `vectors.sqlite` and keep LanceDB only as a transition
+fallback — with an `nprobes(128)` stopgap that lifts fallback recall to
+0.992. `build-corpus` emits sqlite-vec bundles natively, and a new
+`docker/Dockerfile.sqlite` builds a worker image that never ships the
+LanceDB directory at all.
 
-**A model picker that doesn't sabotage answers.** The synthesis model dropdown
-now filters out reasoning models (Agents-A1, DeepSeek-R1, gpt-oss) and non-chat
-utility models (document converters, embedders). Their chain-of-thought prose
-isn't reliably strippable and was truncating RAG answers before the real
-response ever arrived.
+**Serving layer moved into the package.** The RunPod handler, Streamlit chat
+UI, and FLUX image server now live in `gutenberg_kg.serve` with proper entry
+points (`gutenkg chat`, `gutenkg-handler`, `gutenkg-image-server`) and
+optional extras (`[chat]`, `[image]`), instead of loose scripts under
+`docker/`. The chat UI header and corpus-scope dropdown are now fed live from
+the worker's new `stats` op rather than hardcoded counts.
 
-**Catching mislabeled books.** `gutenkg audit` now compares each book's
-`reference.md` title against the title quoted in its auto-generated summary
-(sourced from the real fetched text) and flags a divergence as an error —
-surfacing a wrong Gutenberg ID that would otherwise silently mislabel a whole
-book. A `KNOWN_TITLE_VARIANTS` allowlist exempts legitimate alternate
-titles and translations. The check drove a corpus-wide relabel/re-fetch pass
-across nine genres, plus ~40 new author pages and a regenerated `docs/CORPUS.md`.
+**Accuracy fixes.** Diary books are no longer dropped from ingest reports
+(20 genres reported, not 19); the missing `sqlite-vec` extra that crash-looped
+the worker and broke non-Docker installs is fixed; the horror genre is no
+longer silently omitted from generated corpus docs; and every public corpus
+count (badges, tables, citations) is regenerated from live data — 241 books,
+1,270,591 nodes, 5,094,446 edges across 20 genres.
 
 ## Upgrading
 
-After pulling, run `gutenkg init` once to make sure the local models are present
-before your next build. No data migration is required, and existing consolidated
-bundles keep working — rebuild only if you want the corpus relabels and the
-refreshed author index. The new Browse page and model-picker filtering are
-served automatically by the updated handler; redeploy the worker image to pick
-them up.
+Run `poetry install` to pick up the raised floors (`doc-kg>=0.18.0`,
+`kgmodule-utils[synthesis,sqlite-vec]>=0.5.0`), then rebuild bundles with
+`make build-corpus` to emit the new `vectors.sqlite` store and rebuild the
+Docker image with `make build`. Existing LanceDB bundles keep working through
+the fallback path. Image generation now takes `--size WIDTHxHEIGHT` instead
+of `--ratio`. The macOS app builds with `swift build` inside
+`app/GutenbergKGKit/` — see `app/README.md`.
 
 ---
 

@@ -10,6 +10,27 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added
 
+### Changed
+
+### Removed
+
+### Fixed
+
+---
+
+## [1.9.0] - 2026-07-16
+
+### Added
+
+- **KnowledgePress macOS app (Phase 1 thin client)** — `app/GutenbergKGKit/`,
+  a SwiftPM package with two targets: `GutenbergKGKit` (async `WorkerClient`
+  for the RunPod worker's `/runsync` ops — `search`, `stats`, `list_genres`,
+  `list_books`, `get_chapters`, `get_chapter` — plus typed response models and
+  `WorkerError`) and `KnowledgePress` (SwiftUI app: chat view with retrieved-
+  passage turns, corpus Browse view, settings sidebar for endpoint/API key).
+  Unit tests cover model decoding and the client against a stubbed
+  `URLProtocol`. See `app/README.md`; Phase 2 (local Core ML retrieval) is
+  next.
 - **`docker/Dockerfile.sqlite`** — sqlite-vec-only worker image: installs
   `kgmodule-utils==0.5.0` + `doc-kg==0.18.0` from PyPI plus
   `sqlite-vec==0.1.9`, and bakes only the sqlite-vec stores
