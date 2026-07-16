@@ -118,4 +118,4 @@ clean:
 	docker rmi $(IMAGE):latest 2>/dev/null || true
 
 docs:
-	cd src && pdoc --o ../docs --logo ./logo.png gutenberg_kg
+	cd src && pdoc --o ../docs --logo ./logo.png gutenberg_kg '!gutenberg_kg.serve.sdxl_server'
