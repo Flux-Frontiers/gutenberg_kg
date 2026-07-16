@@ -148,3 +148,6 @@ entry_*.md
 .swiftpm/
 DerivedData/
 xcuserdata/
+
+# pdoc output — built in CI (docs.yml), deployed to GitHub Pages
+site/
