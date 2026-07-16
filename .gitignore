@@ -143,5 +143,8 @@ entry_*.md
 .vscode
 .mcp.json
 
-# Swift / SwiftPM build output
+# Swift / SwiftPM (app/)
 .build/
+.swiftpm/
+DerivedData/
+xcuserdata/

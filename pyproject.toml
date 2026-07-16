@@ -80,7 +80,7 @@ classifiers = [
 requires-python = ">=3.12,<3.14"
 dependencies = [
     "click>=8.1.0,<9",
-    "kgmodule-utils[synthesis,sqlite-vec]>=0.5.0",
+    "kgmodule-utils[synthesis,sqlite-vec]>=0.6.2",
     "rich>=13.0.0",
     "doc-kg (>=0.18.0)",
     "diary-kg (>=0.93.2)",
@@ -102,7 +102,7 @@ dev = [
 ]
 kgdeps = [
     "kg-rag>=0.9.1",
-    "pycode-kg>=0.19.3",
+    "pycode-kg>=0.20.0",
 ]
 viz = [
     "plotly>=5.0.0",
