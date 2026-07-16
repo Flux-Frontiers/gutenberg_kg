@@ -39,13 +39,15 @@ jobs:
           path: .venv
           key: docs-${{ runner.os }}-${{ hashFiles('poetry.lock') }}
 
-      # chat/image extras: pdoc imports gutenberg_kg.serve.* (streamlit,
-      # fastapi, …) to document them. runpod (serve.handler's import) is
-      # deliberately in no extra — its dep tree stalls poetry lock — so it
-      # installs via plain pip, same rationale as runpod/requirements.txt.
+      # pdoc IMPORTS every documented module, so the env must satisfy every
+      # top-level import: chat (streamlit/httpx), image (fastapi/uvicorn),
+      # mcp (fastmcp/structlog), viz+viz3d (plotly/PyQt5/pyvista/pycode-kg),
+      # dev (pdoc itself). runpod (serve.handler's import) is deliberately in
+      # no extra — its dep tree stalls poetry lock — so it installs via plain
+      # pip, same rationale as runpod/requirements.txt.
       - name: Install dependencies
         run: |
-          poetry install --no-interaction --extras "dev chat image"
+          poetry install --no-interaction --extras "dev chat image mcp viz viz3d"
           poetry run pip install --quiet runpod
 
       - name: Build docs
