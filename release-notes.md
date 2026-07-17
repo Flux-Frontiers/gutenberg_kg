@@ -1,55 +1,43 @@
-# Release Notes — v1.9.0
+# Release Notes — v1.10.0
 
 > Released: 2026-07-16
 
-GutenbergKG 1.9.0 takes the Knowledge Press beyond the browser: a native
-macOS app (Phase 1 thin client) now talks to the same worker the Streamlit UI
-uses, and the vector store underneath everything has migrated from LanceDB to
-sqlite-vec — exact retrieval, ~10× smaller on disk.
+GutenbergKG 1.10.0 is an operational release: the API documentation site is
+now live and rebuilt automatically on every change, and a handful of small
+gaps left over from the 1.9.0 push are closed.
 
 ## What changed
 
-**KnowledgePress macOS app.** The new `app/GutenbergKGKit/` SwiftPM package
-ships a SwiftUI thin client for the corpus: a chat view that renders
-retrieved passages per turn, a Browse view for reading books chapter by
-chapter, and a settings sidebar for the worker endpoint and API key. Under it
-sits `GutenbergKGKit`, an async `WorkerClient` covering the worker's search,
-stats, and browse ops, with unit tests against a stubbed `URLProtocol`.
-Phase 2 (on-device Core ML retrieval) is the next step.
+**GitHub Pages goes live.** The API reference at
+https://flux-frontiers.github.io/gutenberg_kg/ is now built and deployed by
+`.github/workflows/docs.yml` on every push to `main`, rather than committing
+generated HTML to the repo. `docs/` reverts to hand-written markdown only,
+and `make docs` writes its pdoc output to a gitignored `site/`. Getting there
+took a full audit of what `pdoc` actually needs at import time — it exercises
+every documented module, including `gutenberg_kg.serve.handler`'s full
+startup sequence (KG registry, embedder warm-up) — so the CI job now installs
+the complete set of extras that requires (`dev chat image mcp viz viz3d
+kgdeps`), pip-installs `runpod` alongside them, and sets
+`PDOC_ALLOW_EXEC=1` to work around a Linux-only crash in `runpod`'s
+import-time CPU probe. The docs logo, which pointed at a file never
+committed to the repo, now resolves correctly too.
 
-**sqlite-vec replaces LanceDB.** Benchmarks showed the production LanceDB
-IvfFlat index averaging 0.825 recall@10 (as low as 0.4 on exact-phrase
-queries like "pillar of salt"), while sqlite-vec brute force is exact at
-comparable latency and shrinks the store from ~2.5 GB to ~1.1 GB. Both
-workers now prefer `vectors.sqlite` and keep LanceDB only as a transition
-fallback — with an `nprobes(128)` stopgap that lifts fallback recall to
-0.992. `build-corpus` emits sqlite-vec bundles natively, and a new
-`docker/Dockerfile.sqlite` builds a worker image that never ships the
-LanceDB directory at all.
+**The docs landing page had nothing on it.** `gutenberg_kg/__init__.py`
+carried no module docstring, so pdoc's generated `index.html` — which
+redirects straight to the package's top-level page — rendered essentially
+empty. It now describes the project in general terms: an ingestion engine
+for public-domain text corpora, not affiliated with or limited to Project
+Gutenberg specifically.
 
-**Serving layer moved into the package.** The RunPod handler, Streamlit chat
-UI, and FLUX image server now live in `gutenberg_kg.serve` with proper entry
-points (`gutenkg chat`, `gutenkg-handler`, `gutenkg-image-server`) and
-optional extras (`[chat]`, `[image]`), instead of loose scripts under
-`docker/`. The chat UI header and corpus-scope dropdown are now fed live from
-the worker's new `stats` op rather than hardcoded counts.
-
-**Accuracy fixes.** Diary books are no longer dropped from ingest reports
-(20 genres reported, not 19); the missing `sqlite-vec` extra that crash-looped
-the worker and broke non-Docker installs is fixed; the horror genre is no
-longer silently omitted from generated corpus docs; and every public corpus
-count (badges, tables, citations) is regenerated from live data — 241 books,
-1,270,591 nodes, 5,094,446 edges across 20 genres.
+**`/release` gets a safety net.** The release workflow now runs `poetry run
+make docs` as a gate before tagging, so an environment or import regression
+in the docs build is caught locally instead of silently failing the Pages
+deploy after the tag is already pushed.
 
 ## Upgrading
 
-Run `poetry install` to pick up the raised floors (`doc-kg>=0.18.0`,
-`kgmodule-utils[synthesis,sqlite-vec]>=0.5.0`), then rebuild bundles with
-`make build-corpus` to emit the new `vectors.sqlite` store and rebuild the
-Docker image with `make build`. Existing LanceDB bundles keep working through
-the fallback path. Image generation now takes `--size WIDTHxHEIGHT` instead
-of `--ratio`. The macOS app builds with `swift build` inside
-`app/GutenbergKGKit/` — see `app/README.md`.
+No dependency, schema, or API changes — this release only affects
+documentation tooling. Nothing to do beyond the usual `git pull`.
 
 ---
 

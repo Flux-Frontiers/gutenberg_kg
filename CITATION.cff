@@ -7,15 +7,15 @@ abstract: >
   It downloads public-domain works from Project Gutenberg and the Internet
   Archive, converts them to structured Markdown, and indexes them as
   queryable knowledge graphs via DocKG and KGRAG. The current corpus spans
-  79 works across 9 genres — 448,139 nodes, 4,836,993 edges — queryable as
-  independent genre corpora or as a unified knowledge graph.
+  241 works across 20 genres — 1,270,591 nodes, 5,094,446 edges — queryable
+  as independent genre corpora or as a unified knowledge graph.
 authors:
   - family-names: Suchanek
     given-names: "Eric G., PhD"
     orcid: "https://orcid.org/0009-0009-0891-1507"
     email: suchanek@flux-frontiers.com
     affiliation: "Flux-Frontiers"
-version: "1.9.0"
+version: "1.10.0"
 date-released: "2026-07-16"
 doi: "10.5281/zenodo.20045390"
 license-url: "https://www.elastic.co/licensing/elastic-license"
@@ -27,7 +27,7 @@ keywords:
   - project-gutenberg
   - internet-archive
   - semantic-search
-  - lancedb
+  - sqlite-vec
   - public-domain
 references:
   - type: software

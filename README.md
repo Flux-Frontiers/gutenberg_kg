@@ -6,7 +6,7 @@
   <a href="https://www.python.org/"><img src="https://img.shields.io/badge/python-3.12%20|%203.13-blue.svg" alt="Python"/></a>
   <a href="https://www.elastic.co/licensing/elastic-license"><img src="https://img.shields.io/badge/code-Elastic--2.0-lightgrey.svg" alt="Code License"/></a>
   <a href="https://www.gutenberg.org/"><img src="https://img.shields.io/badge/texts-Public%20Domain-green.svg" alt="Texts License"/></a>
-  <img src="https://img.shields.io/badge/version-1.9.0-blue.svg" alt="Version"/>
+  <img src="https://img.shields.io/badge/version-1.10.0-blue.svg" alt="Version"/>
   <img src="https://img.shields.io/badge/corpus-241%20books-orange.svg" alt="Corpus"/>
   <img src="https://img.shields.io/badge/nodes-1.3M-green.svg" alt="Nodes"/>
   <img src="https://img.shields.io/badge/edges-5.1M-green.svg" alt="Edges"/>
@@ -276,7 +276,7 @@ If you use GutenbergKG in your research, please cite it. GitHub's **Cite this re
   author       = {Suchanek, Eric G.},
   title        = {{GutenbergKG}: The Knowledge Press},
   year         = {2026},
-  version      = {1.9.0},
+  version      = {1.10.0},
   publisher    = {Flux-Frontiers},
   doi          = {10.5281/zenodo.20045390},
   url          = {https://github.com/Flux-Frontiers/gutenberg_kg},
@@ -288,7 +288,7 @@ If you use GutenbergKG in your research, please cite it. GitHub's **Cite this re
 
 **APA:**
 
-> Suchanek, E. G. (2026). *GutenbergKG: The Knowledge Press* (Version 1.9.0) [Software]. Flux-Frontiers. https://doi.org/10.5281/zenodo.20045390
+> Suchanek, E. G. (2026). *GutenbergKG: The Knowledge Press* (Version 1.10.0) [Software]. Flux-Frontiers. https://doi.org/10.5281/zenodo.20045390
 
 ---
 

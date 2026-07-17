@@ -18,6 +18,62 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ---
 
+## [1.10.0] - 2026-07-16
+
+### Added
+
+- **`.github/workflows/docs.yml`** — GitHub Pages is now built and deployed
+  by CI instead of a committed-HTML branch deploy: builds the pdoc API
+  reference (`poetry run make docs`) and publishes via
+  `actions/deploy-pages` on every push to `main`. Live at
+  https://flux-frontiers.github.io/gutenberg_kg/.
+
+### Changed
+
+- **`make docs` now outputs to a gitignored `site/`** instead of committing
+  generated HTML under `docs/`; `docs/` returns to hand-written markdown
+  only (44 pdoc HTML files removed). This also fixed the prior deployment,
+  which the legacy Jekyll branch-builder failed to process — a literal
+  `{{...}}` Plotly template string in `viz_timeline.html` broke Liquid
+  parsing, and the publish root had no `index.html`.
+- **Docs CI installs every extra pdoc's imports actually need** —
+  `dev chat image mcp viz viz3d kgdeps`, plus a plain `pip install runpod`
+  (deliberately outside any extra — see the `pyproject.toml` note) and
+  `PDOC_ALLOW_EXEC=1` (pdoc sandboxes subprocess execution during import;
+  `runpod`'s import-time `cpuinfo` probe crashes on the suppressed output
+  on Linux, though not on macOS). `gutenberg_kg.serve.handler` bootstraps
+  its full KG registry and embedder at import time, so pdoc — which
+  imports every documented module to render it — exercises this whole
+  startup path.
+- **pdoc's logo now resolves.** `--logo` points at the Pages-absolute URL
+  and the real asset (`assets/logos/logo_256.png`) is copied into `site/`
+  at build time; the previous `./logo.png` referenced a file that was
+  never committed to the repo.
+- **`/release` gained a docs-build verification step** — `poetry run make
+  docs` now runs as a release gate before tagging, so a broken docs
+  environment is caught locally instead of surfacing only after the tag
+  reaches `main`.
+
+### Removed
+
+### Fixed
+
+- **`gutenberg_kg/__init__.py` had no module docstring** — since `pdoc`'s
+  generated `index.html` redirects here, the docs site's landing page
+  rendered empty. Added a docstring describing the project generally
+  (it ingests from Project Gutenberg, the Internet Archive, and other
+  public-domain sources — not affiliated with or limited to Project
+  Gutenberg specifically).
+- **`CITATION.cff` was stale** — the abstract still quoted an old corpus
+  snapshot (79 works / 9 genres / 448,139 nodes) and listed `lancedb` as a
+  keyword after the sqlite-vec migration. Now reads the live corpus totals
+  (241 works / 20 genres / 1,270,591 nodes / 5,094,446 edges) and
+  `sqlite-vec`. Note: `scripts/sync_corpus_docs.py` doesn't touch this file
+  yet, so it will drift again on the next corpus growth — folding it in is
+  a follow-up.
+
+---
+
 ## [1.9.0] - 2026-07-16
 
 ### Added
