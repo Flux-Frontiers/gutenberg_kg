@@ -2,7 +2,7 @@ name: Docs
 
 on:
   push:
-    branches: [main]
+    tags: ['v*']
   workflow_dispatch:
 
 permissions:
@@ -20,10 +20,10 @@ jobs:
     name: Build API docs (pdoc)
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.12"
 
@@ -34,7 +34,7 @@ jobs:
           virtualenvs-in-project: true
 
       - name: Cache virtualenv
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         with:
           path: .venv
           key: docs-${{ runner.os }}-${{ hashFiles('poetry.lock') }}
@@ -60,10 +60,10 @@ jobs:
           PDOC_ALLOW_EXEC: "1"
 
       - name: Setup Pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6
 
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
         with:
           path: site
 
