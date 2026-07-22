@@ -84,17 +84,17 @@ Everything else — `docker/.env`, oMLX/Ollama/OpenAI synthesis, image
 backends (`IMAGE_BACKEND=sdxl`), the chat UI — behaves identically to the
 Docker path.
 
-## Verification status & first-run watch items
+## Verification status
 
-Developed on a Linux box, so the Apple runtime itself could not be
-executed. Verified here: all seven targets dry-run cleanly under **both**
-runtimes (`make -n`), the generated shell is correct, edited Python
-byte-compiles, and the Docker path's dry-run output is unchanged.
+**Verified working on the Mac (Apple Silicon, macOS 26) — 2026-07-22.**
+Developed on a Linux box, where all seven targets were dry-run-checked under
+both runtimes (`make -n`), then smoke-tested successfully on the real Apple
+runtime. The two first-contact risks flagged during development did not
+materialize, but are kept here as troubleshooting pointers:
 
-The real smoke test is on the Mac. Two most-likely first-contact issues:
-
-1. **Builder VM headroom** — the multi-GB bundle `COPY` may need
-   `container builder start --cpus 4 --memory 8g` before `make build`.
+1. **Builder VM headroom** — if a build struggles on the multi-GB bundle
+   `COPY`, give the builder more room: `container builder start --cpus 4
+   --memory 8g` before `make build`.
 2. **Worker-IP parsing** — the `chat` target regex-parses the `address`
    field out of `container inspect` JSON. If chat can't reach the worker,
    that line in the Makefile is the first place to look (fallback: set

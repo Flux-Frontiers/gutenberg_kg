@@ -1,8 +1,8 @@
 # Apple `container` as a Docker alternative for GutenbergKG
 
-*Status: implemented as an alternative runtime — `make <target> RUNTIME=apple`.
-Sections below record the original assessment (2026-07-22); the "Using it"
-section describes what actually shipped.*
+*Status: implemented as an alternative runtime — `make <target> RUNTIME=apple` —
+and verified working on Apple Silicon / macOS 26 (2026-07-22). Sections below
+record the original assessment; the "Using it" section describes what shipped.*
 
 ## Using it
 
