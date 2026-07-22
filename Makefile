@@ -17,10 +17,21 @@
 #   make docs           — generate project docs into ./docs
 #   make query Q="..."  — fire a one-shot query against the running worker
 #
-# Container runtime — RUNTIME=docker (default) or RUNTIME=apple:
-#   make up RUNTIME=apple       — run on Apple's native `container` CLI instead of
-#                                 Docker (Apple Silicon + macOS 26; no Docker Desktop).
-#                                 See docs/APPLE_CONTAINERS.md for setup and caveats.
+# Container runtime — RUNTIME=docker (default) or RUNTIME=apple.
+# RUNTIME=apple drives Apple's native `container` CLI instead of Docker
+# (Apple Silicon + macOS 26; no Docker Desktop). Prereq once per boot:
+#   container system start
+# Same targets, one extra variable:
+#   make build RUNTIME=apple    — build the image with `container build`
+#   make run   RUNTIME=apple    — worker on :8000 (idempotent; leaves a warm worker alone)
+#   make chat  RUNTIME=apple    — worker + chat UI on :8501 (needs macOS 26 vmnet)
+#   make up    RUNTIME=apple    — everything: worker + chat UI + image server
+#   make down  RUNTIME=apple    — stop and delete both containers + image servers
+#   make logs  RUNTIME=apple    — follow worker logs (`container logs -f`)
+#   make clean RUNTIME=apple    — remove the image (`container image rm`)
+# Per-container VM sizing (overridable): WORKER_MEM=8g WORKER_CPUS=6 CHAT_MEM=4g
+#   make run RUNTIME=apple WORKER_MEM=12g
+# See docs/APPLE_CONTAINERS.md for setup and caveats.
 RUNTIME ?= docker
 
 IMAGE        = corpus-gutenberg
