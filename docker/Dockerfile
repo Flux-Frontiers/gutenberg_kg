@@ -75,5 +75,8 @@ COPY bundles/gutenberg-all/ /workspace/gutenberg/
 
 ENV GUTENBERG_ROOT=/workspace/gutenberg
 ENV EMBED_MODEL=BAAI/bge-small-en-v1.5
+# In-container marker for runtimes that don't create /.dockerenv (Apple's
+# `container` CLI) — read by the chat UI to pick host.docker.internal.
+ENV GUTENKG_IN_CONTAINER=1
 
 CMD ["python", "-u", "-m", "gutenberg_kg.serve.handler"]

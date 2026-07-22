@@ -12,8 +12,9 @@ README badges, prose, table, and citation can never silently drift again:
   * ``README.md`` — the BibTeX citation note ("N public-domain texts across G genres")
   * ``docs/CORPUS.md`` — the full per-genre book list (via regenerate_corpus_doc)
 
-The genre *ordering* for the README table is taken from
-``regenerate_corpus_doc.GENRE_ORDER`` so both documents share one canonical order.
+The README table is sorted by book count (descending, ties in
+``regenerate_corpus_doc.GENRE_ORDER``); ``docs/CORPUS.md`` keeps the canonical
+``GENRE_ORDER`` for browsing.
 
 Usage::
 
@@ -65,10 +66,16 @@ def _render_table(genre_by_corpus: dict[str, dict], totals: dict) -> str:
         "| Genre | Books | Nodes | Edges |",
         "|-------|------:|------:|------:|",
     ]
+    rows = []
     for slug in regen.GENRE_ORDER:
         g = genre_by_corpus.get(f"gutenberg-{slug}")
         if not g or g["books"] == 0:
             continue
+        rows.append(g)
+    # README table reads best largest-first; ties keep GENRE_ORDER (stable
+    # sort). docs/CORPUS.md keeps the canonical GENRE_ORDER for browsing.
+    rows.sort(key=lambda g: -g["books"])
+    for g in rows:
         lines.append(f"| {g['label']} | {g['books']} | {g['nodes']:,} | {g['edges']:,} |")
     lines.append(
         f"| **Total** | **{totals['books']}** | **{totals['nodes']:,}** | **{totals['edges']:,}** |"

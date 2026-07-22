@@ -1,0 +1,17 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "c=$(jq -r \".tool_input.command // \\\"\\\"\"); case \"$c\" in *\"git push\"*) cd \"${CLAUDE_PROJECT_DIR:-$(git rev-parse --show-toplevel 2>/dev/null || echo .)}\"; if command -v ruff >/dev/null 2>&1; then R=\"ruff\"; else R=\"poetry run ruff\"; fi; o=$($R format --check . 2>&1) && o2=$($R check . 2>&1) || { printf \"Push blocked: ruff checks failed \u2014 fix before pushing.\\n%s\\n%s\\n\" \"$o\" \"$o2\" >&2; exit 2; } ;; esac",
+            "timeout": 60,
+            "statusMessage": "Running ruff checks before push..."
+          }
+        ]
+      }
+    ]
+  }
+}

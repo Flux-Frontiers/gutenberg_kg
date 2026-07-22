@@ -10,6 +10,18 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added
 
+- **Apple `container` runtime support** — the local worker/chat stack can now
+  run on Apple's native `container` CLI (macOS 26, Apple Silicon) instead of
+  Docker Desktop: `make build|run|chat|up|down|logs|clean RUNTIME=apple`.
+  The Docker/compose path remains the default and RunPod builds still require
+  Docker. Assessment and usage notes in `docs/APPLE_CONTAINERS.md`.
+- **`GUTENKG_IN_CONTAINER=1`** baked into both corpus images as an explicit
+  in-container marker, since Apple's runtime creates no `/.dockerenv`.
+- **`LICENSE`** — the Elastic License 2.0 text now ships in the repo root
+  (it was declared in `pyproject.toml` and badged in the README, but the
+  file itself was missing; GitHub could not display the license).
+- **`docs/PARTNERS.md`** — the full partnership/sponsorship prospectus,
+  moved out of the README.
 - **`gutenkg query`** — a first-class CLI command for searching the locally
   ingested corpus without Docker. It delegates to `kgrag corpus query`
   (defaulting to the `gutenberg-all` corpus, `-k 8`) and supports `--corpus`,
@@ -31,10 +43,24 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Changed
 
-- **README rewritten for readers.** Replaces the engine-centric framing with a
-  reader/researcher-first narrative: what the corpus is good for, a "choose a
-  path" table, the local reading-room build, and terminal usage that now leads
-  with `gutenkg query`. Corpus figures updated to 241 books across 20 genres.
+- **README restructured** for readability: "What It Does" now precedes the
+  quickstart; a table of contents added; the requirements table collapsed
+  to a one-liner pointing at `docs/INSTALLATION.md`; the corpus table
+  folded into a `<details>` block sorted by book count; the querying
+  section now explains that `dockg`/`kgrag` ship baked-in as dependencies
+  and how they relate to `gutenkg` and the chat UI; the partners section
+  reduced to a summary linking `docs/PARTNERS.md`; the duplicated
+  "No LLM required" paragraph deduplicated. Badges: live CI and Docs
+  workflow badges added, decorative DocKG/KGRAG/imagine badges retired,
+  license badge now links to the local `LICENSE` file. Corpus figures
+  updated to 241 books across 20 genres, with terminal usage leading on
+  `gutenkg query`.
+- **`scripts/sync_corpus_docs.py`** sorts the README genre table by book
+  count (descending, stable ties); `docs/CORPUS.md` keeps the canonical
+  `GENRE_ORDER`.
+- **Chat UI container detection** (`serve/Chat.py`, `serve/pages/1_Browse.py`)
+  now checks `GUTENKG_IN_CONTAINER` in addition to `/.dockerenv`, so
+  `host.docker.internal` is selected correctly under either runtime.
 - **Docs refreshed to the current corpus and query path.** `INSTALLATION.md`
   now shows `gutenkg query` (replacing the raw `dockg`/`kgrag` invocations),
   `CHAT_UI.md` and `ingestion-pipeline.md` update counts to 241 books / 20

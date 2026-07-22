@@ -138,7 +138,13 @@ entry_*.md
 .diary_source_chunks.pkl
 **/.diarykg/
 
-.claude/
+# Ignore .claude contents except shared project files: skills and
+# settings.json (pre-push ruff hook). Must be dir/* (not dir/) so the
+# negations below can re-include — git can't reach into a fully
+# ignored directory.
+.claude/*
+!.claude/skills/
+!.claude/settings.json
 .codex/
 .venv**
 .vscode

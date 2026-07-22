@@ -13,7 +13,7 @@ This guide covers everything needed to install, build, and run GutenbergKG — b
 | **Python** | everything | 3.12 or 3.13 (`>=3.12,<3.14`) | 3.14 not yet supported |
 | **[Poetry](https://python-poetry.org/)** | CLI workflow | 2.x | dependency management + virtual env |
 | **[GNU Make](https://www.gnu.org/software/make/)** | build/run targets | any | drives `build-corpus`, `build`, `run`, `chat`, `up` |
-| **[Docker](https://docs.docker.com/get-docker/)** | container workflow | Engine 24+, Compose v2 | `docker compose` (v2 syntax, not `docker-compose`) |
+| **[Docker](https://docs.docker.com/get-docker/)** | container workflow | Engine 24+, Compose v2 | `docker compose` (v2 syntax, not `docker-compose`) — or Apple's [`container`](https://github.com/apple/container) CLI on macOS 26 via `make … RUNTIME=apple` (see [APPLE_CONTAINERS.md](APPLE_CONTAINERS.md)) |
 | **Local LLM** | synthesis + image generation *(optional)* | — | [oMLX](https://omlx.ai) on Apple Silicon, or [Ollama](https://ollama.com) cross-platform |
 
 ### Do I need an LLM?
