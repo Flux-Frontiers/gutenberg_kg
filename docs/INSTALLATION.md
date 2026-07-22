@@ -79,11 +79,11 @@ gutenkg ingest --force-build
 ### 3. Query
 
 ```bash
-# Semantic search within a genre
-dockg query "characters who seek revenge" --corpus gutenberg-russian-literature
+# Semantic search across the locally ingested corpus
+gutenkg query "the nature of justice"
 
-# Cross-work thematic analysis
-kgrag corpus query gutenberg-philosophy "free will and moral responsibility"
+# Semantic search within a local genre corpus
+gutenkg query "characters who seek revenge" --corpus gutenberg-russian-literature
 ```
 
 The full command reference is in [`CHEATSHEET.md`](CHEATSHEET.md); pipeline internals are in [`DOWNLOAD_PIPELINE.md`](DOWNLOAD_PIPELINE.md).
