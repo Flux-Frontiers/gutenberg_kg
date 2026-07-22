@@ -28,9 +28,7 @@ from gutenberg_kg import __version__
 
 # /.dockerenv only exists under Docker; Apple's `container` runtime sets no
 # marker file, so the images also set GUTENKG_IN_CONTAINER=1 explicitly.
-_IN_CONTAINER = os.path.exists("/.dockerenv") or bool(
-    os.environ.get("GUTENKG_IN_CONTAINER")
-)
+_IN_CONTAINER = os.path.exists("/.dockerenv") or bool(os.environ.get("GUTENKG_IN_CONTAINER"))
 _HOST = "host.docker.internal" if _IN_CONTAINER else "localhost"
 
 _DEFAULT_WORKER = os.environ.get("KGRAG_ENDPOINT", "http://localhost:8000")
