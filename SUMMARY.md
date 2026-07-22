@@ -86,19 +86,30 @@ Docker path.
 
 ## Verification status
 
-**Verified working on the Mac (Apple Silicon, macOS 26) — 2026-07-22.**
-Developed on a Linux box, where all seven targets were dry-run-checked under
-both runtimes (`make -n`), then smoke-tested successfully on the real Apple
-runtime. The two first-contact risks flagged during development did not
-materialize, but are kept here as troubleshooting pointers:
+**Verified working on the Mac (Apple Silicon, macOS 26) — 2026-07-22**, after
+two runtime issues surfaced on first real contact and were fixed (the earlier
+"smoke test" was recorded prematurely, before the stack actually started):
 
-1. **Builder VM headroom** — if a build struggles on the multi-GB bundle
-   `COPY`, give the builder more room: `container builder start --cpus 4
-   --memory 8g` before `make build`.
-2. **Worker-IP parsing** — the `chat` target regex-parses the `address`
-   field out of `container inspect` JSON. If chat can't reach the worker,
-   that line in the Makefile is the first place to look (fallback: set
-   `KGRAG_ENDPOINT` by hand).
+1. **No `--publish`.** The initial Makefile forwarded ports Docker-style
+   (`--publish 8000:8000`), which Apple's `container` rejects with
+   `Unknown option '--publish'`. Fixed: containers are addressed by their own
+   vmnet IP (parsed from `container inspect`); each target prints the URL, and
+   `localhost:PORT` does not apply.
+2. **`host.docker.internal` does not resolve in-container** on this runtime,
+   despite the 0.9 "native" claim — so host-service endpoints (oMLX :8080,
+   Ollama :11434, image server) now use the vmnet gateway (`APPLE_HOST_GW`,
+   default `192.168.64.1`). The host service must also bind `0.0.0.0`, not
+   `127.0.0.1`, or it refuses vmnet connections.
+
+Troubleshooting pointers:
+
+- **Builder VM headroom** — if a build struggles on the multi-GB bundle
+  `COPY`, give the builder more room: `container builder start --cpus 4
+  --memory 8g` before `make build`.
+- **Worker-IP parsing** — the `chat` target regex-parses the `address`
+  field out of `container inspect` JSON. If chat can't reach the worker,
+  that line in the Makefile is the first place to look (fallback: set
+  `KGRAG_ENDPOINT` by hand).
 
 ## Deliberately out of scope
 

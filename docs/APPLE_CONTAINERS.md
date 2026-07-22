@@ -13,8 +13,8 @@ Requirements: Apple Silicon, macOS 26 (Tahoe), and Apple's
 ```sh
 container system start           # once per boot
 make build RUNTIME=apple         # container build -f docker/Dockerfile
-make run   RUNTIME=apple         # worker on http://localhost:8000
-make chat  RUNTIME=apple         # worker + chat UI on http://localhost:8501
+make run   RUNTIME=apple         # worker at its container IP :8000 (printed; no localhost)
+make chat  RUNTIME=apple         # worker + chat UI at the chat container IP :8501 (printed)
 make up    RUNTIME=apple         # everything incl. FLUX image server
 make logs  RUNTIME=apple
 make down  RUNTIME=apple
@@ -25,9 +25,20 @@ Notes:
 - **Memory/CPU are per-container VM flags**, defaulting to 8g/6 CPUs for the
   worker and 4g for chat. Override like `make run RUNTIME=apple WORKER_MEM=12g`.
 - **`docker/.env` still works** — the Make targets source it before
-  `container run`, mirroring compose's automatic loading. All
-  `host.docker.internal` endpoint defaults (oMLX, Ollama, mflux) apply
-  unchanged; Apple's runtime resolves that hostname natively since 0.9.0.
+  `container run`, mirroring compose's automatic loading.
+- **No `--publish`; containers are addressed by their vmnet IP.** Apple's
+  `container` has no Docker-style port forwarding, so `make run/chat/up` print
+  the worker and chat-UI URLs at each container's own IP (e.g.
+  `http://192.168.64.4:8501`) — `localhost:8501` will NOT work.
+- **Host services are reached at the vmnet gateway, not `host.docker.internal`.**
+  Contrary to the 0.9 "resolves natively" claim, that hostname does *not*
+  resolve inside the containers on the runtime tested here, so the Apple
+  targets point oMLX/Ollama/image-server endpoints at the gateway IP
+  (`APPLE_HOST_GW`, default `192.168.64.1`). Override per-machine if your
+  subnet differs (`container inspect gutenberg-worker` → `networks[].gateway`).
+  **The host service must also bind `0.0.0.0`, not `127.0.0.1`** — a
+  loopback-only listener refuses vmnet connections. Start oMLX with
+  `--host 0.0.0.0` (likewise Ollama / the image server).
 - **chat→worker traffic** goes container-to-container over vmnet, addressed by
   the worker VM's IP (read from `container inspect` at start). This is the
   part that hard-requires macOS 26 — on macOS 15 containers can't see each
@@ -63,7 +74,7 @@ deployment pipeline should stay on Docker.
 | `docker/Dockerfile.sqlite` | sqlite-vec variant | ✅ builds as-is |
 | `docker/docker-compose.yml` | worker + chat services, profiles, ports, env, restart | ⚠️ no compose — replace with `container run` targets |
 | `Makefile` (`run`/`chat`/`up`/`down`/`logs`/`clean`) | drives compose | ⚠️ rewrite ~6 targets |
-| `host.docker.internal` (compose env, `docker/.env.example`) | reach oMLX :8080, Ollama :11434, mflux :8090/:8091 on the host | ✅ supported natively since `container` 0.9.0 |
+| `host.docker.internal` (compose env, `docker/.env.example`) | reach oMLX :8080, Ollama :11434, mflux :8090/:8091 on the host | ⚠️ hostname does NOT resolve in-container on the tested runtime — Apple targets use the vmnet gateway IP (`APPLE_HOST_GW`, default 192.168.64.1); host services must bind 0.0.0.0 |
 | `/.dockerenv` check in `serve/Chat.py` + `serve/pages/1_Browse.py` | detect "inside container" to pick `host.docker.internal` vs `localhost` | ❌ Apple VMs don't create `/.dockerenv` — needs a one-line fix |
 | `runpod/` (Dockerfile, build_image.sh) | x86 serverless image for RunPod cloud | 🚫 keep on Docker (amd64 target) |
 | GitHub Actions CI | — | ✅ no Docker usage at all |
@@ -91,16 +102,25 @@ The multi-GB bundle `COPY` works; give the builder VM headroom first
 (`container builder start --cpus 4 --memory 8g`) or the default builder may
 struggle with the layer.
 
-**Host services need no rework.** As of release 0.9.0 (Feb 2026), containers
-resolve `host.docker.internal` to the host, so every default in
-`docker-compose.yml` and `docker/.env.example` — oMLX on :8080, Ollama on
-:11434, the FLUX/SDXL image servers on :8090/:8091 — keeps working verbatim.
-(Containers also always reach the host at the vmnet gateway, 192.168.64.1 on
-the default subnet.)
+**Host services are reached at the vmnet gateway.** The 0.9.0 release notes
+claim containers resolve `host.docker.internal` to the host, but on the
+runtime tested here that name does *not* resolve in-container (DNS returns
+`Name or service not known`; the containers' only nameserver is the gateway,
+which doesn't answer it). Containers *do* always reach the host at the vmnet
+gateway (192.168.64.1 on the default subnet), so the Apple Make targets point
+oMLX :8080, Ollama :11434, and the FLUX/SDXL image servers :8090/:8091 at that
+IP (`APPLE_HOST_GW`) rather than the docker hostname. Two caveats: the host
+service must bind `0.0.0.0` (a `127.0.0.1`-only listener refuses vmnet
+connections — verify from the host with `curl http://192.168.64.1:8080/v1/models`
+before blaming the container), and the gateway IP can differ per machine
+(override `APPLE_HOST_GW`).
 
-**Ports and volumes.** `container run --publish 8000:8000` forwards to
-localhost like Docker; alternatively each container has its own routable IP
-(`container inspect`) you can hit directly. Bind mounts (`--volume`) exist,
+**Ports and volumes.** Apple's `container` has **no** Docker-style port
+publishing — there is no `--publish`/`-p` (passing it errors with
+`Unknown option '--publish'`). Instead each container gets its own routable
+vmnet IP (`container inspect`) that the host hits directly, so the Makefile
+addresses the worker and chat UI by IP (each target prints the URL). Bind
+mounts (`--volume`) exist,
 which opens a nice option Docker made painful: mount the bundle instead of
 baking 3–4 GB into the image (`--volume $(PWD)/bundles/gutenberg-all:/workspace/gutenberg`),
 cutting rebuild time for index-only changes to zero.
@@ -116,16 +136,15 @@ only entry point, this is a Makefile rewrite, not a workflow change:
 run-native:
 	container run -d --name gutenberg-worker \
 	  --memory 8g --cpus 6 \
-	  --publish 8000:8000 \
 	  --env-file docker/.env \
 	  -e GUTENBERG_ROOT=/workspace/gutenberg \
 	  corpus-gutenberg:latest \
 	  python -u -m gutenberg_kg.serve.handler --rp_serve_api --rp_api_host 0.0.0.0
+	# reach the worker from the host at its container IP: container inspect gutenberg-worker
 
 chat-native: run-native
 	container run -d --name gutenberg-chat \
 	  --memory 4g \
-	  --publish 8501:8501 \
 	  -e KGRAG_ENDPOINT=http://gutenberg-worker.gutenberg:8000 \
 	  corpus-gutenberg:latest \
 	  gutenkg chat --port 8501 --address 0.0.0.0
