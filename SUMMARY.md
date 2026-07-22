@@ -1,173 +1,116 @@
-# Work Summary — Retrieval Quality, Corpus Hygiene & Build Performance
+# Work Summary — Apple `container` Runtime Support
 
-_Branch: `fix/build-corpus-memory`. Date: 2026-06-16 → 06-17._
+_Branch: `claude/gutenberg-apple-containers-w43ed9`. Date: 2026-07-22._
 
-This documents three intertwined workstreams, the root-cause findings (especially
-the embedding-performance hunt), the exact changes by repo, and the **integration /
-release plan** to get everything properly shipped.
+This documents the assessment and implementation of running the GutenbergKG
+local stack (worker + chat UI) on **Apple's native `container` CLI** instead
+of Docker Desktop, shipped as an opt-in runtime behind a single Makefile
+variable. The full assessment with sources lives in
+[`docs/APPLE_CONTAINERS.md`](docs/APPLE_CONTAINERS.md).
 
 ---
 
 ## TL;DR
 
-1. **Retrieval quality** — the consolidated handler did pure-dense cosine and buried
-   exact-term matches (e.g. `[world-literature] "circles of Hell"` returned only
-   Purgatory/Paradise). Added **dense + FTS5/BM25 + RRF hybrid** retrieval.
-2. **Corpus hygiene** — three mislabeled/duplicate Dante editions in `world-literature`.
-   Relabeled to **Longfellow** / **Cary**, dropped the duplicate.
-3. **Build performance** — the consolidated embed degraded badly over a run. The hunt
-   uncovered **two independent effects** that were tangled together:
-   - **Process accumulation** (~16% sag, every machine) — long-lived embedding workers
-     accumulate allocator/heap/GC state; **fixed by recycling** (`maxtasksperchild=1`).
-   - **Laptop thermal throttling** (laptop-only, recycling-proof) — sustained multi-core
-     embedding on the MacBook craters throughput (ETA 7:30 → 30:00 across the inflection)
-     *even with recycling*. The Mini ran the identical CPU-parallel path to completion
-     (~730 tex/s). **Build on the cool machine; the laptop is not an embedding box.**
-   Also: `--embed-device auto` → **MPS** on Macs takes a single-process streaming path
-   whose allocator degrades worst (hard-OOM on the laptop). **Force CPU + parallel.**
+1. **It works, and Gutenberg is an unusually good fit.** The base image
+   (`egsuchanek/kgrag-worker:latest`) is already linux/arm64 — native in
+   Apple's per-container VMs, no emulation. Both Dockerfiles are plain
+   BuildKit-compatible and build unchanged. Crucially, Apple's runtime
+   resolves **`host.docker.internal` natively** (since `container` 0.9.0,
+   Feb 2026), so every host-service default — oMLX :8080, Ollama :11434,
+   FLUX/SDXL :8090/:8091 — works verbatim.
+2. **Shipped as `RUNTIME=apple`**, not a replacement:
+   `make build|run|chat|up|down|logs|clean RUNTIME=apple`. Docker/compose
+   remains the default path and is untouched.
+3. **One real bug found and fixed**: the chat UI detected "inside a
+   container" via `/.dockerenv`, which only Docker creates — under Apple's
+   runtime it would have silently picked `localhost` instead of
+   `host.docker.internal`. Both images now bake `GUTENKG_IN_CONTAINER=1`
+   and the UI checks it.
+4. **RunPod stays on Docker** — it targets x86_64 cloud; cross-building the
+   torch stack under emulation buys nothing.
+5. **Hard floor: macOS 26** for the chat profile (container↔container
+   networking). On macOS 15 only the worker-alone path works.
 
 ---
 
-## Root-cause findings (recorded so we don't re-litigate)
+## Why this is viable now (assessment findings)
 
-The embedding slowdown was chased to ground with measurements, not theory:
+Recorded so we don't re-litigate:
 
-- **Data is uniform** — avg chunk length ~430 chars across every genre position; only
-  309 chunks > 2048 chars in 348k; bge-small truncates at 512 tokens. No heavy region.
-- **The JSONL stream is flat** — replaying the exact `iter_nodes` cursor over the real
-  683k graph with a dummy vector (no embedding) streamed **683k rows in 10 s**, flat
-  ~65k rows/s. Streaming is a rounding error, not the bottleneck.
-- **Not O(n²) pagination** — `store.iter_nodes()` uses a single cursor + `fetchmany`, not
-  `LIMIT/OFFSET`.
-- **Not (only) thermal** — on the *same Mini*, CPU-parallel embedding was flat (~874 tex/s)
-  while MPS single-process streaming sagged. Same heat, different path ⇒ thermal ruled out
-  as the primary cause.
-- **Effect 1 — process accumulation** — throughput decays as a long-lived embedding process
-  crosses ~320k items (allocator/heap/GC growth). Device-independent, ~16% at 683k, grows
-  with corpus size. The earlier benchmark "looked flat" only because it stopped at
-  `--n 300000`, ~20k short of the inflection.
-- **Effect 2 — laptop thermal** — the recycling build on the laptop **still exploded**
-  (ETA 7:30 → 30:00 from 298k → 345k), while the same CPU-parallel path completed cleanly on
-  the Mini. Same code, different machine ⇒ the laptop delta is heat, and recycling can't fix
-  heat. The laptop also spawns more workers (9 vs 7) → more sustained heat = worst case.
-- **The MPS trap** — `--embed-device auto` resolves to **MPS** on Macs and takes the
-  **single-process `.jsonl` streaming** path, where the MPS allocator degrades worst (and
-  on the laptop, hard-OOM'd). That path being the default is what surfaced the problem.
+- **Arch**: verified via the Docker Hub registry manifest that the base
+  image is published **arm64-only** — Apple Silicon native, no Rosetta.
+- **Host access**: `container` 0.9.0 added `host.docker.internal`
+  resolution; this removed what looked like the biggest migration cost
+  (every endpoint default in `docker-compose.yml` and `docker/.env.example`
+  leans on that hostname).
+- **No compose exists** (Apple ships none as of v1.1.x). Not a blocker
+  here because the Makefile is already the only entry point — compose was
+  an implementation detail behind `make`, so the swap is invisible to the
+  workflow.
+- **Per-container VMs change the memory model**: Docker Desktop shared one
+  big VM; Apple gives each container its own, with small defaults that
+  would OOM the worker (torch + bge-small + 696K-node graph + LanceDB).
+  Memory must be explicit — but it's a lazy upper bound, not a
+  reservation, so `--memory 8g` doesn't pin 8 GB.
+- **No restart policies** — compose's `restart: unless-stopped` has no
+  equivalent; after a reboot the worker stays down until `make run`.
+- **CI never touches Docker** — GitHub Actions needed no changes.
 
-**Conclusion:** embed on **CPU + parallel** with **process recycling** (fixes Effect 1 and
-scales), and run the consolidated build on **cool hardware** (the Mini), not the laptop
-(Effect 2). Recycling must be validated on cool hardware — the laptop's thermal masks it.
-
----
-
-## Changes by repo
-
-### `gutenberg_kg` (this repo — branch `fix/build-corpus-memory`, editable)
+## What shipped (by file)
 
 | File | Change |
 |---|---|
-| `docker/handler.py` | Hybrid retrieval: `_semantic_search` now fuses **dense cosine + FTS5/BM25** via RRF (`_rrf_fuse`, `_RRF_K=60`, `_open_dockg_store`). Genre/kind filters pushed into both channels; degrades to dense-only if `nodes_fts` absent. |
-| `src/gutenberg_kg/build_corpus.py` | (1) Phase-3 **explicit `rebuild_fts()` guard** (root `.dockg` was shipping without `nodes_fts`). (2) Phase-2 **device branch**: CPU → parallel `.json`; MPS/CUDA → single-process `.jsonl` stream; sets `KG_EMBED_DEVICE`; honest "embed mode" banner. |
-| `corpus/world-literature/` | **Dante relabel/dedup**: `(Longfellow)` = PG#1004 complete; `(Cary)` = PG#8800 complete (title + H1 fixed); removed PG#8799 (Cary Paradiso-only duplicate). |
-| `scratch_embed_bench.py` | Diagnostic: version-independent embedding throughput-over-time harness (single-process & `--parallel`). **Keep** — it's how we isolated the root cause. |
+| `Makefile` | `RUNTIME ?= docker` switch. Apple branch replaces compose with explicit `container run`: worker `--memory 8g --cpus 6`, chat `--memory 4g` (all overridable: `WORKER_MEM`, `WORKER_CPUS`, `CHAT_MEM`); sources `docker/.env` before launch to mirror compose's auto-loading; `make run` is idempotent (a warm worker with its loaded index is left alone); chat reaches the worker via the worker VM's IP pulled from `container inspect`. |
+| `serve/Chat.py`, `serve/pages/1_Browse.py` | Container detection: `/.dockerenv` **or** `GUTENKG_IN_CONTAINER` env var. |
+| `docker/Dockerfile`, `docker/Dockerfile.sqlite` | `ENV GUTENKG_IN_CONTAINER=1` (harmless under Docker). |
+| `README.md` | Runtime-choice section under "Build and run"; requirements table row updated. |
+| `docs/APPLE_CONTAINERS.md` | New: "Using it" runbook + the full original assessment. |
+| `CHANGELOG.md` | Unreleased entries (Added/Changed). |
 
-Per-book + registry side-effects already applied locally: the 2 Dante books were
-re-ingested (with `nodes_fts`), and 3 stale Dante entries were removed from the KGRAG
-registry (`~/.kgrag/registry.sqlite`).
+## Using it
 
-### `kgmodule-utils` (`../KG_utils`) — **0.4.3 → 0.4.4**
+On the Mac (macOS 26, `brew install --cask container`):
 
-- `load_sentence_transformer(model_name, device=None)`: explicit `device` param +
-  `KG_EMBED_DEVICE` env override. Precedence: **explicit arg > env > auto-detect**.
-  The env channel is what lets spawn-based workers be pinned to CPU (they inherit
-  `os.environ`), preventing N workers each grabbing MPS → OOM.
+```bash
+container system start        # once per boot
+make build RUNTIME=apple      # container build -f docker/Dockerfile
+make up    RUNTIME=apple      # worker :8000 + chat :8501 + FLUX :8090
+make query Q="What is justice according to Plato?"
+make down  RUNTIME=apple
+```
 
-### `doc-kg` (`../doc_kg`) — **0.15.8 → 0.15.9**
+Everything else — `docker/.env`, oMLX/Ollama/OpenAI synthesis, image
+backends (`IMAGE_BACKEND=sdxl`), the chat UI — behaves identically to the
+Docker path.
 
-| File | Change |
-|---|---|
-| `embedder_worker.py` | `_resolve_device()`; `CorpusEmbedder(device=None)` + **GPU→single-process guard** (a GPU can't be shared across spawn workers). `_embed_shard` pins the worker via **`model.to(device)`** after an auto-detect load — so doc-kg works with **any** kg_utils version (no hard 0.4.4 dependency; this is the form that shipped). **Performance fix:** many small shards (`_RECYCLE_SHARD=25_000`) + **`Pool(maxtasksperchild=1)`** → a fresh worker per shard, resetting accumulated state ⇒ flat throughput at any scale. |
-| `index.py` | `precompute_embeddings(device=None)` passthrough to `CorpusEmbedder`. |
-| `kg.py` | `build_embeddings(device=None)` passthrough. |
+## Verification status & first-run watch items
 
----
+Developed on a Linux box, so the Apple runtime itself could not be
+executed. Verified here: all seven targets dry-run cleanly under **both**
+runtimes (`make -n`), the generated shell is correct, edited Python
+byte-compiles, and the Docker path's dry-run output is unchanged.
 
-## Status (2026-06-17)
+The real smoke test is on the Mac. Two most-likely first-contact issues:
 
-- **Published**: `kgmodule-utils 0.4.4` and `doc-kg 0.15.9` are on PyPI (both confirmed as the
-  latest resolvable versions). `gutenberg_kg` pins bumped accordingly (`pyproject.toml` +
-  `docker/Dockerfile`).
-- **Bundle**: the full consolidated bundle was **built on the Mini** (683k nodes, 857k
-  SIMILAR_TO, 233 books, 4 diaries) — on **stock 0.15.8 / 0.4.3**, parallel CPU, ~15:35
-  embed (~730 tex/s, ~16% sag, completed). ⚠️ This shipped bundle **predates the recycling
-  fix** — recycling (0.15.9) is published but **not yet exercised at 683k scale on cool
-  hardware**, so the flat-throughput claim is still pending validation there.
-- **Laptop test outcome**: the recycling build on the laptop **still exploded** (ETA 7:30 →
-  30:00 across the inflection), confirming the laptop's slowdown is **thermal**, separate from
-  process accumulation. The laptop is not an embedding box; build on the Mini.
-- **Remaining**: commit the `gutenberg_kg` branch pins + this summary, then **rebuild the
-  Docker image** with the new pins + the Mini bundle to make the retrieval fix live.
+1. **Builder VM headroom** — the multi-GB bundle `COPY` may need
+   `container builder start --cpus 4 --memory 8g` before `make build`.
+2. **Worker-IP parsing** — the `chat` target regex-parses the `address`
+   field out of `container inspect` JSON. If chat can't reach the worker,
+   that line in the Makefile is the first place to look (fallback: set
+   `KGRAG_ENDPOINT` by hand).
 
----
+## Deliberately out of scope
 
-## Source integrity — verified
-
-**`../doc_kg` is NOT stale.** Verified by diffing repo HEAD (0.15.8) against the PyPI
-`doc-kg==0.15.8` wheel: `index.py`, `embedder_worker.py`, `kg.py` are **byte-identical**.
-So the 0.15.9 changes layer cleanly on the real 0.15.8 — no reconciliation, no regression.
-(An earlier worry that the jsonl stream had lost an `mps.empty_cache` eviction was wrong:
-that eviction lives in `build()`, and the single-process jsonl stream never had it in 0.15.8.
-That missing eviction is a real reason the MPS stream degrades — a roadmap item, not a
-release blocker, since CPU+parallel is the supported path.)
+- `runpod/` build pipeline (x86_64 — stays Docker).
+- Publishing `egsuchanek/kgrag-worker` itself (upstream of this repo;
+  `container build` + `container registry push` could take it over later).
+- DNS-based container naming (`container system dns create`) — IP
+  injection was chosen instead to avoid a sudo setup step.
+- Auto-restart on boot — if wanted later, a launchd agent running
+  `container start gutenberg-worker` is the idiomatic Mac answer.
 
 ---
 
-## Integration / release plan (ordered)
-
-1. ~~Reconcile `../doc_kg` ↔ PyPI 0.15.8~~ — **done; verified byte-identical, not stale.**
-2. ~~Release `kgmodule-utils 0.4.4`~~ — **DONE, on PyPI.**
-3. ~~Release `doc-kg 0.15.9`~~ — **DONE, on PyPI.** (Shipped with the `model.to(device)`
-   decouple, so it no longer hard-depends on kg_utils 0.4.4.)
-4. ~~Bump pins in `gutenberg_kg`~~ — **DONE** (`pyproject.toml` floors + `docker/Dockerfile`
-   ARGs to 0.15.9 / 0.4.4).
-5. **Merge** `fix/build-corpus-memory` → `main` (handler hybrid, build_corpus device branch +
-   FTS guard, Dante corpus fix, `scratch_embed_bench.py`, pins, this summary). ← _next_
-6. **Rebuild the Docker image** with the released versions + the Mini-built bundle (the bundle
-   is already correct; just bake it). Standardize the build command:
-   `gutenkg build-corpus --embed-device cpu --embed-batch-size 512`.
-7. **Sync other machines** (e.g. the Mini) by `pip install` of the **released** versions —
-   not source repos — so they get the recycling fix + device pin without local checkouts.
-8. **Validate recycling at scale on cool hardware** (still pending — the shipped bundle was
-   built on stock 0.15.8). Re-run a 683k build on the Mini with 0.15.9 and confirm flat past
-   ~320k.
-
----
-
-## Verification checklist (before shipping a bundle)
-
-- [ ] `bundles/gutenberg-all/.dockg/graph.sqlite` has a `nodes_fts` table.
-- [ ] `catalog.json` shows **The Divine Comedy (Longfellow)** and **(Cary)**; no
-      Purgatorio/Paradiso entries.
-- [ ] Handler hybrid retrieval: `[world-literature] "circles of Hell"` now returns
-      **Inferno** passages (the original failure).
-- [ ] Consolidated build ran on **CPU + parallel** (banner: `parallel (CPU multiprocessing…)`)
-      on **cool hardware** (the Mini), not the laptop.
-- [ ] Recycling validated on cool hardware: throughput holds **flat past ~320k** (do NOT
-      validate on the laptop — thermal masks the result).
-
----
-
-## Roadmap (when rested — not blocking)
-
-- **Kill the 5.6 GB JSON round-trip.** The `.json` parallel path accumulates every vector in
-  RAM then writes/reloads 5.6 GB (~2 min each way). Move to **parallel workers streaming
-  compact shards to disk** (numpy/float16), avoiding both the accumulation and the round-trip.
-- **Pluggable embedding backend.** Define one interface, target in-process /
-  **TEI** (HF `text-embeddings-inference`, platform-agnostic, dynamic batching, flat memory) /
-  **MLX** (Apple-Silicon fast path). Decouples embedding from the KG build and gives
-  flat-by-design throughput. The platform-agnostic + optional-MLX combo is the goal.
-- **Incremental embedding.** Per-book `.dockg` indices already hold vectors; reuse them and
-  only embed new/changed books. This is what actually scales as the corpus grows.
-- **MPS streaming path:** either fix the allocator growth (the `empty_cache` isn't enough) or
-  explicitly deprecate MPS for large consolidated builds (CPU+parallel+recycling is the
-  supported path).
+_Previous summary (retrieval quality / corpus hygiene / build performance,
+branch `fix/build-corpus-memory`, 2026-06-17) is preserved in git history._
