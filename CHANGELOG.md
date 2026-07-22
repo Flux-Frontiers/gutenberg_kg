@@ -26,9 +26,8 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   ingesting, and managing the corpus) and `.agents/skills/sync-corpus-docs/`
   (keeping README badges and corpus-count surfaces in sync with the live
   corpus).
-- **`.codex/config.toml`** — Codex MCP server definitions (dockg, gutenkg,
-  paperbanana, pycodekg) — and **`poetry.toml`** pinning the virtualenv
-  in-project.
+- **`poetry.toml`** pinning the virtualenv in-project, and a `.codex/`
+  gitignore entry for local Codex MCP config.
 
 ### Changed
 
