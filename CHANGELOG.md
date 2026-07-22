@@ -22,6 +22,24 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   file itself was missing; GitHub could not display the license).
 - **`docs/PARTNERS.md`** — the full partnership/sponsorship prospectus,
   moved out of the README.
+- **`gutenkg query`** — a first-class CLI command for searching the locally
+  ingested corpus without Docker. It delegates to `kgrag corpus query`
+  (defaulting to the `gutenberg-all` corpus, `-k 8`) and supports `--corpus`,
+  `--k`, `--registry`, and `--json`. A missing KGRAG install raises a clear
+  `ClickException` instead of a bare `FileNotFoundError`. Wired into the CLI in
+  `cli/main.py` and covered by `tests/test_cmd_query.py`.
+- **Expected-title relevance gating in `scripts/check_standard_queries.py`** —
+  each standard query now carries the work(s) it should surface, and a new
+  `--expected-rank` flag (default 3) fails a query unless one of those titles
+  appears within the top N hits. This upgrades the check from "did we get any
+  hits" to "did we get the *right* book," with a `_has_expected_title` helper
+  covered by `tests/test_check_standard_queries.py`.
+- **Agent skills** — `.agents/skills/gutenkg/` (CLI reference for downloading,
+  ingesting, and managing the corpus) and `.agents/skills/sync-corpus-docs/`
+  (keeping README badges and corpus-count surfaces in sync with the live
+  corpus).
+- **`poetry.toml`** pinning the virtualenv in-project, and a `.codex/`
+  gitignore entry for local Codex MCP config.
 
 ### Changed
 
@@ -34,14 +52,20 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   reduced to a summary linking `docs/PARTNERS.md`; the duplicated
   "No LLM required" paragraph deduplicated. Badges: live CI and Docs
   workflow badges added, decorative DocKG/KGRAG/imagine badges retired,
-  license badge now links to the local `LICENSE` file.
+  license badge now links to the local `LICENSE` file. Corpus figures
+  updated to 241 books across 20 genres, with terminal usage leading on
+  `gutenkg query`.
 - **`scripts/sync_corpus_docs.py`** sorts the README genre table by book
   count (descending, stable ties); `docs/CORPUS.md` keeps the canonical
   `GENRE_ORDER`.
-
 - **Chat UI container detection** (`serve/Chat.py`, `serve/pages/1_Browse.py`)
   now checks `GUTENKG_IN_CONTAINER` in addition to `/.dockerenv`, so
   `host.docker.internal` is selected correctly under either runtime.
+- **Docs refreshed to the current corpus and query path.** `INSTALLATION.md`
+  now shows `gutenkg query` (replacing the raw `dockg`/`kgrag` invocations),
+  `CHAT_UI.md` and `ingestion-pipeline.md` update counts to 241 books / 20
+  genres, and the pipeline's static "Corpus at a Glance" table is replaced by a
+  routing summary that points to the live `CORPUS.md` catalog.
 
 ### Removed
 

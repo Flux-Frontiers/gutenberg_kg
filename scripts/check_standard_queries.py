@@ -17,16 +17,52 @@ import urllib.request
 
 DEFAULT_ENDPOINT = "http://localhost:8000"
 
-STANDARD_QUERIES: list[tuple[str, str]] = [
-    ("philosophy", "What is justice according to Plato?"),
-    ("sacred-texts", "What does the Quran say about Moses?"),
-    ("world-literature", "How does Dante describe the circles of Hell?"),
-    ("russian-literature", "How does Tolstoy portray the Napoleonic invasion?"),
-    ("french-literature", "How did Jules Verne describe undersea exploration?"),
-    ("natural-history", "Describe Darwin's observations on the Galapagos"),
-    ("ancient-classical", "What virtues does Seneca recommend in his dialogues?"),
-    ("diary", "What did Pepys say about the great fire?"),
+STANDARD_QUERIES: list[tuple[str, str, tuple[str, ...]]] = [
+    ("philosophy", "What is justice according to Plato?", ("The Republic",)),
+    ("sacred-texts", "What does the Quran say about Moses?", ("The Quran",)),
+    (
+        "world-literature",
+        "How does Dante describe the circles of Hell?",
+        ("The Divine Comedy",),
+    ),
+    (
+        "russian-literature",
+        "How does Tolstoy portray the Napoleonic invasion?",
+        ("War and Peace",),
+    ),
+    (
+        "french-literature",
+        "How did Jules Verne describe undersea exploration?",
+        ("Twenty Thousand Leagues Under the Sea",),
+    ),
+    (
+        "natural-history",
+        "Describe Darwin's observations on the Galapagos",
+        ("The Voyage of the Beagle",),
+    ),
+    (
+        "ancient-classical",
+        "What virtues does Seneca recommend in his dialogues?",
+        ("Minor Dialogues",),
+    ),
+    ("diary", "What did Pepys say about the great fire?", ("Samuel Pepys",)),
 ]
+
+
+def _has_expected_title(hits: list[dict], expected_titles: tuple[str, ...], rank: int) -> bool:
+    """Return whether an expected work occurs within the leading hits.
+
+    :param hits: Handler hit dictionaries in retrieval order.
+    :param expected_titles: Case-insensitive title fragments accepted as relevant.
+    :param rank: Number of leading hits to inspect.
+    :returns: ``True`` when any expected fragment occurs in a leading hit title.
+    """
+    leading_titles = [
+        str(hit.get("title") or hit.get("name") or "").casefold() for hit in hits[:rank]
+    ]
+    return any(
+        expected.casefold() in title for expected in expected_titles for title in leading_titles
+    )
 
 
 def _post_runsync(endpoint: str, payload: dict) -> dict:
@@ -52,6 +88,12 @@ def main() -> int:
     parser.add_argument("--semantic-floor", type=float, default=0.0, help="KG semantic floor")
     parser.add_argument("--min-hits", type=int, default=1, help="Required minimum hits per query")
     parser.add_argument(
+        "--expected-rank",
+        type=int,
+        default=3,
+        help="Require the expected work within the top N hits",
+    )
+    parser.add_argument(
         "--show-top",
         type=int,
         default=3,
@@ -66,7 +108,7 @@ def main() -> int:
     print(f"k={args.k} min_score={args.min_score} semantic_floor={args.semantic_floor}")
     print("-" * 72)
 
-    for corpus, query in STANDARD_QUERIES:
+    for corpus, query, expected_titles in STANDARD_QUERIES:
         payload = {
             "query": query,
             "corpus": corpus,
@@ -96,7 +138,9 @@ def main() -> int:
 
         hits = out.get("hits", []) or []
         total = int(out.get("total_hits", len(hits)))
-        ok = total >= args.min_hits
+        enough_hits = total >= args.min_hits
+        expected_found = _has_expected_title(hits, expected_titles, args.expected_rank)
+        ok = enough_hits and expected_found
         status = "PASS" if ok else "FAIL"
         print(f"{status} [{corpus}] hits={total} q={query}")
 
@@ -107,6 +151,11 @@ def main() -> int:
             print(f"  {idx}. score={score:.3f} genre={genre} title={title}")
 
         if not ok:
+            if not enough_hits:
+                print(f"  expected at least {args.min_hits} hits")
+            if not expected_found:
+                expected = " or ".join(repr(title) for title in expected_titles)
+                print(f"  expected {expected} within top {args.expected_rank} titles")
             failures += 1
 
     elapsed_ms = round((time.perf_counter() - start) * 1000)

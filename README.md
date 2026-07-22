@@ -1,11 +1,11 @@
 <p align="center">
-  <img src="assets/logos/logo_512.png" alt="GutenbergKG — The Knowledge Press" width="400"/>
+  <img src="assets/logos/logo_512.png" alt="GutenbergKG — The Knowledge Press" width="320"/>
 </p>
 
 <p align="center">
   <a href="https://github.com/Flux-Frontiers/gutenberg_kg/actions/workflows/ci.yml"><img src="https://github.com/Flux-Frontiers/gutenberg_kg/actions/workflows/ci.yml/badge.svg" alt="CI"/></a>
   <a href="https://github.com/Flux-Frontiers/gutenberg_kg/actions/workflows/docs.yml"><img src="https://github.com/Flux-Frontiers/gutenberg_kg/actions/workflows/docs.yml/badge.svg" alt="Docs"/></a>
-  <a href="https://www.python.org/"><img src="https://img.shields.io/badge/python-3.12%20|%203.13-blue.svg" alt="Python"/></a>
+  <a href="https://www.python.org/"><img src="https://img.shields.io/badge/python-3.12%20%7C%203.13-blue.svg" alt="Python"/></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/code-Elastic--2.0-lightgrey.svg" alt="Code License"/></a>
   <a href="https://www.gutenberg.org/"><img src="https://img.shields.io/badge/texts-Public%20Domain-green.svg" alt="Texts License"/></a>
   <img src="https://img.shields.io/badge/version-1.10.0-blue.svg" alt="Version"/>
@@ -17,91 +17,58 @@
 
 # GutenbergKG — The Knowledge Press
 
-**GutenbergKG** is a universal ingestion engine for digitized text corpora — named for the press that democratized books, built to do the same for structured knowledge.
+**A local, source-grounded way to ask better questions of great books.**
 
-It transforms the world's great public-domain literature, philosophy, and sacred texts into **queryable knowledge graphs** — enabling semantic search, thematic analysis, and cross-work discovery at a scale and depth that keyword search cannot touch. Ask *what themes connect Dostoevsky and Dante*, trace the evolution of the social contract from Rousseau to Thoreau, or find every passage in the corpus that grapples with revenge — and get semantically grounded answers drawn from the source texts themselves.
+GutenbergKG turns public-domain texts into a queryable library of knowledge graphs. Instead of searching for a word in one book at a time, you can explore an idea across works—then read the passages that support what you find.
 
-The corpus currently spans **241 public-domain texts across 20 genres** — 1,270,591 nodes, 5,094,446 edges — built and fully indexed on an Apple M5 Max in about 30 minutes.
+Ask how Stoics, novelists, and sacred texts treat suffering; find accounts of the Great Fire in Pepys; compare what Rousseau and Thoreau mean by freedom. Retrieval is local and works without an LLM. An optional local or cloud model can turn the retrieved passages into a cited synthesis, but the evidence remains visible and inspectable.
 
-*Author: Eric G. Suchanek, PhD · Flux-Frontiers, Liberty TWP, OH*
+The included corpus contains **241 texts in 20 genres**: literature, philosophy, drama, diaries, sacred texts, travel, natural history, and technical reference. It is a working library, not a benchmark-sized black box.
 
-**Contents:**
-[What It Does](#what-it-does) ·
-[The Knowledge Press — Local App](#the-knowledge-press--local-app) ·
-[Corpus at a Glance](#corpus-at-a-glance) ·
-[Requirements](#requirements) ·
-[CLI Quick Start](#cli-quick-start--developer--power-user-path) ·
-[Querying the Corpus](#querying-the-corpus) ·
-[Image Generation](#corpus-grounded-image-generation) ·
-[Partnerships](#partnerships) ·
-[Citation](#citation) ·
-[License](#license)
+> **GutenbergKG is for readers, researchers, and builders** who want semantic discovery with a path back to the original text.
 
----
+## What makes it useful
 
-## What It Does
+- **Ask across books, not just within them.** Search semantically by theme, scene, question, or concept.
+- **Keep the source in view.** Results are ranked passages with their work, author, genre, and path—not an answer detached from its evidence.
+- **Run locally.** The query layer is a SQLite graph plus vector index, so retrieval needs no LLM or remote service.
+- **Grow the library reproducibly.** The `gutenkg` CLI downloads, cleans, structures, indexes, and registers new texts from Project Gutenberg, Internet Archive, or local Markdown/text files.
 
-GutenbergKG ingests text from three sources:
+Under the hood, each work becomes a [DocKG](https://github.com/Flux-Frontiers/doc_kg) knowledge graph; diary material uses [DiaryKG](https://github.com/Flux-Frontiers/diary_kg). [KGRAG](https://github.com/Flux-Frontiers/KGRAG) federates those graphs into genre and corpus-wide search.
 
-- **[Project Gutenberg](https://www.gutenberg.org/)** — the canonical source for public-domain literature. Full OPDS + RDF metadata enrichment: author birth/death, Wikipedia links, subjects, rights.
-- **[Internet Archive](https://archive.org/)** — for works not on Gutenberg, including technical reference volumes (Audel Guides, early science texts). OCR plain-text with configurable curation preprocessing.
-- **Local corpora** — any directory of `.md` or `.txt` files can be ingested as a genre.
+## Choose a path
 
-Each text is:
+| If you want to… | Start here |
+|---|---|
+| Explore the library in a browser | Build the local app below, then open the chat UI. |
+| Work from the terminal or add texts | Follow the [CLI installation guide](docs/INSTALLATION.md#cli-workflow). |
+| Understand a command or corpus-maintenance workflow | See the [cheatsheet](docs/CHEATSHEET.md). |
+| See every title in the corpus | Browse [the corpus catalog](docs/CORPUS.md). |
+| Understand the retrieval and build architecture | Read the [ingestion pipeline](docs/ingestion-pipeline.md). |
 
-1. **Stripped** of boilerplate (Project Gutenberg headers/footers, OCR artifacts)
-2. **Structured** — chapters, parts, acts, scenes, letters, verses detected and converted to Markdown heading hierarchy
-3. **Indexed** by [DocKG](https://github.com/Flux-Frontiers/doc_kg) into a hybrid SQLite knowledge graph (FTS5 lexical + `sqlite-vec` dense vectors)
-4. **Registered** with [KGRAG](https://github.com/Flux-Frontiers/KGRAG) for federated cross-corpus query
+## Run the local reading room
 
-The result: every work is independently queryable as its own knowledge graph, grouped into genre corpora for thematic search, and unified into `gutenberg-all` for corpus-wide discovery. No LLM is required to query — see [Requirements](#requirements).
-
----
-
-## The Knowledge Press — Local App
-
-The primary interface is **The Knowledge Press**: a self-contained container app that bundles the full knowledge graph, a query worker, and a Streamlit chat UI. Once running, open `http://localhost:8501` and query all books with plain English.
-
-### One-time corpus build (~30 min)
-
-The corpus must be built before the container image. This step converts the raw texts into DocKG + DiaryKG indices and bundles them for baking into the image. You only do this once (or after adding new books).
+The Knowledge Press is a self-contained Docker app: a query worker, a Streamlit chat interface, and an optional image service. The first build prepares local indices from the tracked source texts; later starts reuse the image.
 
 ```bash
 git clone https://github.com/Flux-Frontiers/gutenberg_kg
 cd gutenberg_kg
-poetry install         # installs the gutenkg CLI
-make init               # fetches local models (spaCy, embedder) — run once
-
-make build-corpus      # builds .dockg/ indices + bundles/gutenberg-all/
+poetry install --extras full
+make init                 # download local models once
+make build-corpus         # build DocKG + DiaryKG indices (~30 min on Apple Silicon)
+make build                # bake the corpus into the Docker image
+make chat                 # start the worker and reading room
 ```
 
-> **Expect ~24 minutes** on Apple Silicon. Individual genres take 30 seconds to 5 minutes. The resulting `bundles/gutenberg-all/` directory (~3–5 GB) is what gets baked into the image.
+Open **http://localhost:8501** and ask a question. Use `make up` instead of `make chat` to also start the local image service; use `make stop` to shut down services.
 
-### Build and run
+The bundle and Docker image are large because the corpus and its vector indices travel with the app. That is deliberate: once built, the reading room has no runtime dependency on a hosted corpus.
 
-```bash
-make build             # bakes the corpus bundle into a self-contained Docker image
-make up                # starts everything: worker + chat UI + FLUX image server
-```
+For prerequisites, non-Apple-Silicon notes, smaller setups, and cloud/OpenAI synthesis, see [Installation](docs/INSTALLATION.md). For what the interface shows and how it handles sources, see [The Knowledge Press chat UI](docs/CHAT_UI.md).
 
-`make up` brings up three services:
+### Runtime: Docker or Apple `container`
 
-| Service | URL | Purpose |
-|---------|-----|---------|
-| Query worker | `http://localhost:8000` | Handles all retrieval and synthesis |
-| **Chat UI** | **`http://localhost:8501`** | **The Knowledge Press — primary interface** |
-| FLUX image server | `http://localhost:8090` | Corpus-grounded image generation |
-
-Open `http://localhost:8501` to start querying.
-
-```bash
-make stop              # shuts everything down
-make query Q="What is justice according to Plato?"   # one-shot query against the worker
-```
-
-**Lighter setups:** `make run` starts just the worker; `make chat` starts worker + chat UI without the image server.
-
-**Runtime choice:** all of the above runs on Docker by default. On Apple Silicon with macOS 26 you can skip Docker Desktop entirely and use Apple's native [`container`](https://github.com/apple/container) CLI instead — same targets, one extra variable:
+By default the local app runs on Docker. On Apple Silicon with macOS 26 you can skip Docker Desktop entirely and use Apple's native [`container`](https://github.com/apple/container) CLI instead — same `make` targets, one extra variable:
 
 ```bash
 container system start  # once per boot
@@ -111,11 +78,36 @@ make up RUNTIME=apple
 
 Setup, caveats, and how the two runtimes differ are covered in [`docs/APPLE_CONTAINERS.md`](docs/APPLE_CONTAINERS.md).
 
-**About the image size:** the image is large (~4–6 GB) because the full corpus — 1.3M nodes, 5.1M edges, and their 384-dim vector embeddings — is baked in. This is by design: the image is entirely self-contained and needs no external data at runtime. You build it once locally; it never needs to be pushed anywhere.
+## Manage the library from the terminal
 
----
+Use `gutenkg` to search the locally ingested corpus—Docker is not required:
 
-## Corpus at a Glance
+```bash
+# Search the full corpus
+gutenkg query "the nature of justice"
+
+# Search a genre-specific local corpus
+gutenkg query "characters who seek revenge" --corpus gutenberg-russian-literature
+```
+
+Run `gutenkg ingest` first to build the per-book indices and register them locally.
+
+## Build a library of your own
+
+The project is also an ingestion tool. Add a book, a catalog, an Internet Archive work, or a directory of local Markdown/text; then index it into the same discovery layer.
+
+```bash
+# Download and index a known Project Gutenberg work
+gutenkg download book 2701 --genre american-literature
+gutenkg ingest --genre american-literature
+
+# Inspect what is present and indexed
+gutenkg status
+```
+
+The complete workflows—including catalogs, genre management, provenance, and rebuilding after a clone—are in the [CLI cheatsheet](docs/CHEATSHEET.md) and [download pipeline](docs/DOWNLOAD_PIPELINE.md).
+
+## Corpus at a glance
 
 <details>
 <summary><b>Full genre breakdown</b> — every genre with book, node, and edge counts, sorted by book count</summary>
@@ -148,135 +140,28 @@ Setup, caveats, and how the two runtimes differ are covered in [`docs/APPLE_CONT
 
 </details>
 
-The full book list, organized by genre, is in [`docs/CORPUS.md`](docs/CORPUS.md). Planned additions are tracked in [`docs/CORPUS_WISHLIST.md`](docs/CORPUS_WISHLIST.md).
+Browse the complete, title-level [corpus catalog](docs/CORPUS.md); prospective additions live in the [corpus wishlist](docs/CORPUS_WISHLIST.md).
 
----
+## Corpus-grounded images
 
-## Requirements
-
-**Python 3.12+, [Poetry](https://python-poetry.org/), GNU Make, and Docker** — or Apple's native [`container`](https://github.com/apple/container) CLI on macOS 26 via `RUNTIME=apple` ([details](docs/APPLE_CONTAINERS.md)). The full requirements table, platform notes, and troubleshooting are in [`docs/INSTALLATION.md`](docs/INSTALLATION.md).
-
-**No LLM is required to query the corpus** — the graph and vector index answer semantic queries on their own. An LLM is only needed for the optional *synthesis* and *image generation* layers. On Apple Silicon, **[oMLX](https://omlx.ai)** is recommended; **[Ollama](https://ollama.com)** works everywhere; and the **OpenAI** provider path works end-to-end (synthesis *and* `gpt-image-1` image generation) with nothing but `OPENAI_API_KEY` set — see [`docs/INSTALLATION.md`](docs/INSTALLATION.md#environment-variables--full-reference).
-
-For RunPod serverless deployment see [`docs/RUNPOD.md`](docs/RUNPOD.md).
-
----
-
-## CLI Quick Start — Developer / Power-User Path
-
-The CLI operates directly against the local `.dockg/` indices — no Docker required. Use it to download and ingest books, manage the corpus, and query the graph from the terminal.
+On Apple Silicon, `gutenkg imagine` can retrieve passages, turn them into a visual brief, and render an illustration locally. This is an optional creative layer—not a substitute for the source text.
 
 ```bash
-git clone https://github.com/Flux-Frontiers/gutenberg_kg
-cd gutenberg_kg
-poetry install
-gutenkg init            # fetches local models (spaCy, embedder) — run once
-gutenkg --help
-```
-
-After cloning, rebuild the knowledge graph indices from the source Markdown:
-
-```bash
-gutenkg ingest --force-build
-```
-
-> **Expect 30–45 minutes** for a full rebuild on Apple Silicon (Apple M5 Max: ~30 min, Mac mini M4: ~45 min). Individual genres take 30 seconds to 5 minutes.
-
-For the full command reference — downloading, ingesting, genre management, batch workflows — see [`docs/CHEATSHEET.md`](docs/CHEATSHEET.md). For the technical pipeline internals, see [`docs/DOWNLOAD_PIPELINE.md`](docs/DOWNLOAD_PIPELINE.md).
-
----
-
-## Querying the Corpus
-
-The query tooling ships **baked in** — no separate installs. `poetry install` puts the [DocKG](https://github.com/Flux-Frontiers/doc_kg) CLI (`dockg`) on your PATH as a core dependency, and the [KGRAG](https://github.com/Flux-Frontiers/KGRAG) CLI (`kgrag`) comes with the `kgdeps` extra (`poetry install --extras kgdeps`). The linked repos are for documentation and development, not something you need to clone.
-
-Three layers, from highest to lowest level — pick the one that fits:
-
-| Tool | Level | Use it for |
-|---|---|---|
-| **Chat UI / `make query`** | app | conversational querying and one-shot questions against the running worker |
-| **`kgrag`** | federated | cross-corpus thematic search and LLM synthesis across genre corpora |
-| **`dockg`** | single corpus | direct semantic search within one index |
-
-(`gutenkg` itself is the *corpus management* layer — downloading, ingesting, genre bookkeeping, status — not a query tool.)
-
-```bash
-# Semantic search within a genre (dockg — direct index query)
-dockg query "characters who seek revenge" --corpus gutenberg-russian-literature
-
-# Cross-work thematic analysis (kgrag — federated)
-kgrag corpus query gutenberg-philosophy "free will and moral responsibility"
-
-# Full corpus discovery
-kgrag corpus query gutenberg-all "the nature of justice"
-
-# LLM synthesis — retrieve deterministic passages, synthesize with a local model
-kgrag synthesize "How do the Stoics and Russian novelists differ on suffering and redemption?" \
-  --corpus gutenberg-ancient-classical,gutenberg-russian-literature,gutenberg-philosophy \
-  --model qwen3:4b
-```
-
-> **Example synthesis output:** See [`STOICS_VS_RUSSIANS.md`](https://github.com/Flux-Frontiers/KGRAG/blob/main/docs/STOICS_VS_RUSSIANS.md) — a live run of the question above against Marcus Aurelius, Dostoevsky, Tolstoy, and Nietzsche, with every passage retrieved deterministically from the graph and quoted verbatim. The retrieval layer cannot hallucinate; the LLM synthesizes from verified facts only. *(Run against an earlier 78-book corpus; the current 241-book corpus adds substantial additional Stoic, philosophical, and literary coverage.)*
-
----
-
-## Corpus-Grounded Image Generation
-
-`gutenkg imagine` generates illustrations grounded in the corpus text — no cloud API, no separate server. It runs a three-stage pipeline entirely on Apple Silicon:
-
-1. **DiaryKG / DocKG retrieval** — the most semantically relevant passages are pulled from the knowledge graph.
-2. **VLM rewrite** — a local Qwen3 model (via [oMLX](http://localhost:8080)) rewrites the prose into a visual scene description.
-3. **FLUX.2-Klein generation** — a 4-bit quantised FLUX.2-Klein model renders the image in ~15–22 seconds.
-
-```bash
-# 1. Install the project (CLI-first workflow)
-pip install -e ".[imagine]"
-
-# Optional: MCP server support
-pip install -e ".[mcp]"
-
-# 2. Start oMLX on port 8080 with a Qwen3 model (for VLM rewrite)
-omlx serve mlx-community/Qwen3-30B-A3B-Instruct-2507-MLX-4bit --port 8080
-
-# 3. Generate — FLUX model auto-downloads on first run (~4 GB, no license gate)
-gutenkg imagine --query "great fire" --book pepys --ratio 16:9 --steps 8
-
-# Direct prompt (no corpus lookup, no oMLX required)
-gutenkg imagine "the Great Fire of London at night, oil painting"
-
-# Inspect what the corpus retrieves before generating
+gutenkg imagine --query "the Great Fire of London" --book pepys --ratio 16:9
 gutenkg imagine --query "plague in London" --book pepys --corpus-only
 ```
 
-The same pipeline is available as an MCP tool (`corpus_imagine`) for use directly in Claude Code chat when installed with `.[mcp]` — ask *"Create an image of the Great Fire based on Pepys' description"* and the tool handles retrieval, rewriting, and generation automatically.
+The second command is a useful way to inspect retrieval without generating anything. Setup and full options are in the [image-generation cheatsheet](docs/CHEATSHEET.md#corpus-grounded-image-generation).
 
-For the full options reference see [`docs/CHEATSHEET.md § Corpus-Grounded Image Generation`](docs/CHEATSHEET.md).
+## Project ecosystem
 
----
+GutenbergKG is one corpus in the broader **Tree of Knowledge**: interoperable, domain-specific knowledge graphs that can be queried independently or together. The underlying projects are [DocKG](https://github.com/Flux-Frontiers/doc_kg) for document graphs and [KGRAG](https://github.com/Flux-Frontiers/KGRAG) for federated retrieval.
 
-## Partnerships
-
-GutenbergKG is one node in the **Tree of Knowledge** — a federated network of domain knowledge graphs unified by [KGRAG](https://github.com/Flux-Frontiers/KGRAG), aimed at a persistent, publicly queryable graph of humanity's written heritage. With 241 works, 5.1 million edges, and a production-ready pipeline, we are seeking hosting sponsors, licensing partners, and research collaborators — see [`docs/PARTNERS.md`](docs/PARTNERS.md) for what we're looking for and what partners get.
-
-**To discuss a partnership:** [suchanek@flux-frontiers.com](mailto:suchanek@flux-frontiers.com)
-
----
-
-## Related Projects
-
-Both DocKG and KGRAG install with this project as dependencies (see [Querying the Corpus](#querying-the-corpus)) — these repos are where they are developed and documented:
-
-- **[KGRAG](https://github.com/Flux-Frontiers/KGRAG)** — Federated knowledge graph orchestration and query layer
-- **[DocKG](https://github.com/Flux-Frontiers/doc_kg)** — Semantic document knowledge graph (powers this corpus)
-- **[PyCodeKG](https://github.com/Flux-Frontiers/pycode_kg)** — Structural knowledge graph for Python codebases
-
----
+We welcome research collaborators, library and digital-humanities partners, and infrastructure sponsors interested in extending access to public-domain knowledge — see [`docs/PARTNERS.md`](docs/PARTNERS.md) for what we're looking for and what partners get. Contact [suchanek@flux-frontiers.com](mailto:suchanek@flux-frontiers.com).
 
 ## Citation
 
-If you use GutenbergKG in your research, please cite it. GitHub's **Cite this repository** button (top-right of the repo page) will generate APA or BibTeX automatically from [`CITATION.cff`](CITATION.cff).
-
-**BibTeX:**
+If you use GutenbergKG in research, use GitHub’s **Cite this repository** button or [`CITATION.cff`](CITATION.cff).
 
 ```bibtex
 @software{suchanek2026gutenbergkg,
@@ -286,18 +171,9 @@ If you use GutenbergKG in your research, please cite it. GitHub's **Cite this re
   version      = {1.10.0},
   publisher    = {Flux-Frontiers},
   doi          = {10.5281/zenodo.20045390},
-  url          = {https://github.com/Flux-Frontiers/gutenberg_kg},
-  note         = {Universal ingestion engine for digitized text corpora;
-                  241 public-domain texts across 20 genres as queryable
-                  knowledge graphs via DocKG and KGRAG}
+  url          = {https://github.com/Flux-Frontiers/gutenberg_kg}
 }
 ```
-
-**APA:**
-
-> Suchanek, E. G. (2026). *GutenbergKG: The Knowledge Press* (Version 1.10.0) [Software]. Flux-Frontiers. https://doi.org/10.5281/zenodo.20045390
-
----
 
 ## License
 

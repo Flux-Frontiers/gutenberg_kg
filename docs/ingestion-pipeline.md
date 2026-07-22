@@ -1,6 +1,9 @@
 # GutenbergKG — Ingestion Pipeline
 
-**The Knowledge Press:** 230 prose books · 18 genres (+ 4 diaries = 234 total) · one query-ready index
+> **Current corpus:** 241 books across 20 genres. The per-stage sizes below are
+> architecture examples from a reference build; consult the [corpus catalog](CORPUS.md)
+> for live coverage and [`gutenkg status`](CHEATSHEET.md#check-ingest-status-across-corpus)
+> for local index metrics.
 
 ---
 
@@ -12,10 +15,10 @@
         ▼
   ┌─────────────────────────────────────────────────────────────┐
   │                   CORPUS  (corpus/)                         │
-  │   18 genres · 230 books (+4 diaries) · Markdown + reference.md │
+  │   20 genres · 241 books · Markdown + reference.md             │
   └─────────────────────────────────────────────────────────────┘
         │
-        ├─── 17 prose genres ────────────────────────────────────▶  Semantic Chunker
+        ├─── 18 prose / technical genres ─────────────────────────▶  Semantic Chunker
         │       american-literature, ancient-classical,              (doc-kg)
         │       english-literature, french-literature,
         │       philosophy, science-fiction, drama …
@@ -38,7 +41,7 @@ All genres in a strategy group are processed together in one DocKG pass.
 
 | Strategy | Genres | Chunker behaviour |
 |---|---|---|
-| `semantic` | 17 genres (223 books) | Sentence-transformer semantic boundary detection |
+| `semantic` | 18 genres (230 books) | Sentence-transformer semantic boundary detection |
 | `verse` | `sacred-texts` (7 books) | Chapter:verse window; auto-detects `^\d+:\d+\s` format |
 | `diarykg` | `diaries` (4 collections) | Separate temporal pipeline — YAML timestamps, diary-aware chunking |
 
@@ -190,7 +193,7 @@ the `file_path` prefix — no extra node fields required.
   ├── .dockg/
   │   ├── graph.sqlite          4.8 GB   (683,531 nodes · 1,295,307 edges)
   │   ├── lancedb/              1.6 GB   (683,531 × 384-dim vectors)
-  │   └── catalog.json          84 KB    (234 books · author/title/ID)
+  │   └── catalog.json          size varies  (241 books · author/title/ID)
   │
   └── diaries/
       ├── The Diary of Samuel Pepys — Complete/.diarykg/
@@ -249,31 +252,15 @@ and will bake in a stale or empty bundle if that directory is missing or outdate
 
 ---
 
-## Corpus at a Glance
+## Current routing at a glance
 
-| Genre | Books | Chunker |
-|---|---|---|
-| philosophy | 48 | semantic |
-| english-literature | 37 | semantic |
-| ancient-classical | 26 | semantic |
-| american-literature | 23 | semantic |
-| science-fiction | 19 | semantic |
-| russian-literature | 13 | semantic |
-| french-literature | 12 | semantic |
-| biography | 11 | semantic |
-| drama | 11 | semantic |
-| sacred-texts | 7 | **verse** |
-| natural-history | 7 | semantic |
-| letters | 7 | semantic |
-| german-literature | 5 | semantic |
-| world-literature | 5 | semantic |
-| shakespeare | 4 | semantic |
-| travel | 6 | semantic |
-| audel-electric | 3 | semantic |
-| spanish | 1 | semantic |
-| **diaries** | **4** | **DiaryKG (temporal)** |
-| **TOTAL** | **249** | |
+| Content type | Genres | Books | Index |
+|---|---:|---:|---|
+| Prose and technical text | 18 | 230 | DocKG semantic chunking |
+| Sacred texts | 1 | 7 | DocKG verse chunking |
+| Diaries | 1 | 4 | DiaryKG temporal indexing |
+| **Total** | **20** | **241** | |
 
 ---
 
-*Generated from `gutenkg build-corpus` · doc-kg 0.15.5 · diary-kg 0.92.6 · BAAI/bge-small-en-v1.5*
+For the live genre-by-genre breakdown, see [Books in the Corpus](CORPUS.md).

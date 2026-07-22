@@ -145,6 +145,7 @@ entry_*.md
 .claude/*
 !.claude/skills/
 !.claude/settings.json
+.codex/
 .venv**
 .vscode
 .mcp.json
