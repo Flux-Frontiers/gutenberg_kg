@@ -17,8 +17,27 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   Docker. Assessment and usage notes in `docs/APPLE_CONTAINERS.md`.
 - **`GUTENKG_IN_CONTAINER=1`** baked into both corpus images as an explicit
   in-container marker, since Apple's runtime creates no `/.dockerenv`.
+- **`LICENSE`** — the Elastic License 2.0 text now ships in the repo root
+  (it was declared in `pyproject.toml` and badged in the README, but the
+  file itself was missing; GitHub could not display the license).
+- **`docs/PARTNERS.md`** — the full partnership/sponsorship prospectus,
+  moved out of the README.
 
 ### Changed
+
+- **README restructured** for readability: "What It Does" now precedes the
+  quickstart; a table of contents added; the requirements table collapsed
+  to a one-liner pointing at `docs/INSTALLATION.md`; the corpus table
+  folded into a `<details>` block sorted by book count; the querying
+  section now explains that `dockg`/`kgrag` ship baked-in as dependencies
+  and how they relate to `gutenkg` and the chat UI; the partners section
+  reduced to a summary linking `docs/PARTNERS.md`; the duplicated
+  "No LLM required" paragraph deduplicated. Badges: live CI and Docs
+  workflow badges added, decorative DocKG/KGRAG/imagine badges retired,
+  license badge now links to the local `LICENSE` file.
+- **`scripts/sync_corpus_docs.py`** sorts the README genre table by book
+  count (descending, stable ties); `docs/CORPUS.md` keeps the canonical
+  `GENRE_ORDER`.
 
 - **Chat UI container detection** (`serve/Chat.py`, `serve/pages/1_Browse.py`)
   now checks `GUTENKG_IN_CONTAINER` in addition to `/.dockerenv`, so
