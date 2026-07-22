@@ -139,6 +139,7 @@ entry_*.md
 **/.diarykg/
 
 .claude/
+.codex/
 .venv**
 .vscode
 .mcp.json

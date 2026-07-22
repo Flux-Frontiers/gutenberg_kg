@@ -10,7 +10,36 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added
 
+- **`gutenkg query`** — a first-class CLI command for searching the locally
+  ingested corpus without Docker. It delegates to `kgrag corpus query`
+  (defaulting to the `gutenberg-all` corpus, `-k 8`) and supports `--corpus`,
+  `--k`, `--registry`, and `--json`. A missing KGRAG install raises a clear
+  `ClickException` instead of a bare `FileNotFoundError`. Wired into the CLI in
+  `cli/main.py` and covered by `tests/test_cmd_query.py`.
+- **Expected-title relevance gating in `scripts/check_standard_queries.py`** —
+  each standard query now carries the work(s) it should surface, and a new
+  `--expected-rank` flag (default 3) fails a query unless one of those titles
+  appears within the top N hits. This upgrades the check from "did we get any
+  hits" to "did we get the *right* book," with a `_has_expected_title` helper
+  covered by `tests/test_check_standard_queries.py`.
+- **Agent skills** — `.agents/skills/gutenkg/` (CLI reference for downloading,
+  ingesting, and managing the corpus) and `.agents/skills/sync-corpus-docs/`
+  (keeping README badges and corpus-count surfaces in sync with the live
+  corpus).
+- **`poetry.toml`** pinning the virtualenv in-project, and a `.codex/`
+  gitignore entry for local Codex MCP config.
+
 ### Changed
+
+- **README rewritten for readers.** Replaces the engine-centric framing with a
+  reader/researcher-first narrative: what the corpus is good for, a "choose a
+  path" table, the local reading-room build, and terminal usage that now leads
+  with `gutenkg query`. Corpus figures updated to 241 books across 20 genres.
+- **Docs refreshed to the current corpus and query path.** `INSTALLATION.md`
+  now shows `gutenkg query` (replacing the raw `dockg`/`kgrag` invocations),
+  `CHAT_UI.md` and `ingestion-pipeline.md` update counts to 241 books / 20
+  genres, and the pipeline's static "Corpus at a Glance" table is replaced by a
+  routing summary that points to the live `CORPUS.md` catalog.
 
 ### Removed
 

@@ -21,7 +21,7 @@ def test_help_exits_zero():
 def test_help_shows_top_level_commands():
     result = CliRunner().invoke(cli, ["--help"])
     assert result.exit_code == 0
-    for cmd in ("authors", "download", "ia", "ingest", "list-genres", "rebuild-indices"):
+    for cmd in ("authors", "download", "ia", "ingest", "list-genres", "query", "rebuild-indices"):
         assert cmd in result.output, f"expected '{cmd}' in help output"
 
 
@@ -155,6 +155,13 @@ def test_imagine_help():
     assert result.exit_code == 0
 
 
+def test_query_help():
+    result = CliRunner().invoke(cli, ["query", "--help"])
+    assert result.exit_code == 0
+    for option in ("--corpus", "--k", "--registry", "--json"):
+        assert option in result.output
+
+
 @pytest.mark.parametrize(
     "command",
     [
@@ -167,6 +174,7 @@ def test_imagine_help():
         "genres",
         "ia",
         "ingest",
+        "query",
         "rebuild-indices",
         "re-register",
         "snapshot",
