@@ -1,6 +1,46 @@
-# Assessment: Apple `container` as a Docker replacement for GutenbergKG
+# Apple `container` as a Docker alternative for GutenbergKG
 
-*Status: assessment only — no migration performed. 2026-07-22.*
+*Status: implemented as an alternative runtime — `make <target> RUNTIME=apple`.
+Sections below record the original assessment (2026-07-22); the "Using it"
+section describes what actually shipped.*
+
+## Using it
+
+Requirements: Apple Silicon, macOS 26 (Tahoe), and Apple's
+[`container`](https://github.com/apple/container) tool v1.0+
+(`brew install --cask container` or the pkg from GitHub releases).
+
+```sh
+container system start           # once per boot
+make build RUNTIME=apple         # container build -f docker/Dockerfile
+make run   RUNTIME=apple         # worker on http://localhost:8000
+make chat  RUNTIME=apple         # worker + chat UI on http://localhost:8501
+make up    RUNTIME=apple         # everything incl. FLUX image server
+make logs  RUNTIME=apple
+make down  RUNTIME=apple
+```
+
+Notes:
+
+- **Memory/CPU are per-container VM flags**, defaulting to 8g/6 CPUs for the
+  worker and 4g for chat. Override like `make run RUNTIME=apple WORKER_MEM=12g`.
+- **`docker/.env` still works** — the Make targets source it before
+  `container run`, mirroring compose's automatic loading. All
+  `host.docker.internal` endpoint defaults (oMLX, Ollama, mflux) apply
+  unchanged; Apple's runtime resolves that hostname natively since 0.9.0.
+- **chat→worker traffic** goes container-to-container over vmnet, addressed by
+  the worker VM's IP (read from `container inspect` at start). This is the
+  part that hard-requires macOS 26 — on macOS 15 containers can't see each
+  other, so only `make run RUNTIME=apple` (worker alone) works there.
+- **No restart policy** — unlike compose's `restart: unless-stopped`, the
+  worker stays down after a reboot until you `make run RUNTIME=apple` again.
+- **`make run` is idempotent**: a running worker is left alone; a stopped or
+  stale container is replaced.
+- The RunPod pipeline (`runpod/`) is untouched and still requires Docker.
+
+---
+
+## Original assessment (2026-07-22)
 
 Apple's [`container`](https://github.com/apple/container) tool (v1.1.x as of
 July 2026) runs OCI Linux containers natively on Apple Silicon, one

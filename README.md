@@ -71,6 +71,16 @@ make query Q="What is justice according to Plato?"   # one-shot query against th
 
 **Lighter setups:** `make run` starts just the worker; `make chat` starts worker + chat UI without the image server.
 
+**Runtime choice:** all of the above runs on Docker by default. On Apple Silicon with macOS 26 you can skip Docker Desktop entirely and use Apple's native [`container`](https://github.com/apple/container) CLI instead — same targets, one extra variable:
+
+```bash
+container system start  # once per boot
+make build RUNTIME=apple
+make up RUNTIME=apple
+```
+
+Setup, caveats, and how the two runtimes differ are covered in [`docs/APPLE_CONTAINERS.md`](docs/APPLE_CONTAINERS.md).
+
 ### About the image size
 
 The Docker image is large (~4–6 GB) because the full corpus — 1.2M nodes, 4.9M edges, and their 384-dim vector embeddings — is baked in. This is by design: the image is entirely self-contained and needs no external data at runtime. You build it once locally; it never needs to be pushed anywhere.
@@ -137,7 +147,7 @@ The result: every work is independently queryable as its own knowledge graph, gr
 | **Python** | 3.12 or 3.13 | `>=3.12,<3.14` |
 | **[Poetry](https://python-poetry.org/)** | for the CLI workflow | dependency management + virtual env |
 | **[GNU Make](https://www.gnu.org/software/make/)** | for build/run targets | drives `build-corpus`, `build`, `run`, `chat` |
-| **[Docker](https://docs.docker.com/get-docker/)** | for the container workflow | Docker Engine 24+ with Compose v2 |
+| **[Docker](https://docs.docker.com/get-docker/)** | for the container workflow | Docker Engine 24+ with Compose v2 — or Apple's [`container`](https://github.com/apple/container) on macOS 26 via `RUNTIME=apple` ([details](docs/APPLE_CONTAINERS.md)) |
 | **LLM (optional)** | for synthesis & image generation | [oMLX](https://omlx.ai) (Apple Silicon) or [Ollama](https://ollama.com) (cross-platform), or **OpenAI** cloud (`OPENAI_API_KEY`) |
 
 **No LLM is required to query the corpus** — the graph and vector index answer semantic queries on their own. An LLM is only needed for the optional *synthesis* and *image generation* layers. On Apple Silicon, **oMLX** is recommended; **Ollama** works everywhere; and the **OpenAI** provider path works end-to-end (synthesis *and* `gpt-image-1` image generation) with nothing but `OPENAI_API_KEY` set — see [`docs/INSTALLATION.md`](docs/INSTALLATION.md#environment-variables--full-reference).

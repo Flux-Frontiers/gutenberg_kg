@@ -10,7 +10,19 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added
 
+- **Apple `container` runtime support** — the local worker/chat stack can now
+  run on Apple's native `container` CLI (macOS 26, Apple Silicon) instead of
+  Docker Desktop: `make build|run|chat|up|down|logs|clean RUNTIME=apple`.
+  The Docker/compose path remains the default and RunPod builds still require
+  Docker. Assessment and usage notes in `docs/APPLE_CONTAINERS.md`.
+- **`GUTENKG_IN_CONTAINER=1`** baked into both corpus images as an explicit
+  in-container marker, since Apple's runtime creates no `/.dockerenv`.
+
 ### Changed
+
+- **Chat UI container detection** (`serve/Chat.py`, `serve/pages/1_Browse.py`)
+  now checks `GUTENKG_IN_CONTAINER` in addition to `/.dockerenv`, so
+  `host.docker.internal` is selected correctly under either runtime.
 
 ### Removed
 
