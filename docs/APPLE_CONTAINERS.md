@@ -8,10 +8,12 @@ record the original assessment; the "Using it" section describes what shipped.*
 
 Requirements: Apple Silicon, macOS 26 (Tahoe), and Apple's
 [`container`](https://github.com/apple/container) tool v1.0+
-(`brew install --cask container` or the pkg from GitHub releases).
+(`brew install container` or the pkg from GitHub releases).
 
 ```sh
-container system start           # once per boot
+make setup RUNTIME=apple         # clean machine: installs the CLI (Homebrew)
+                                 # + `container system start`; build/run/chat
+                                 # depend on it, so this is optional
 make build RUNTIME=apple         # container build -f docker/Dockerfile
 make run   RUNTIME=apple         # worker at its container IP :8000 (printed; no localhost)
 make chat  RUNTIME=apple         # worker + chat UI at the chat container IP :8501 (printed)

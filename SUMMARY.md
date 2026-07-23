@@ -15,10 +15,11 @@ variable. The full assessment with sources lives in
 1. **It works, and Gutenberg is an unusually good fit.** The base image
    (`egsuchanek/kgrag-worker:latest`) is already linux/arm64 — native in
    Apple's per-container VMs, no emulation. Both Dockerfiles are plain
-   BuildKit-compatible and build unchanged. Crucially, Apple's runtime
-   resolves **`host.docker.internal` natively** (since `container` 0.9.0,
-   Feb 2026), so every host-service default — oMLX :8080, Ollama :11434,
-   FLUX/SDXL :8090/:8091 — works verbatim.
+   BuildKit-compatible and build unchanged. Host services (oMLX :8080,
+   Ollama :11434, FLUX/SDXL :8090/:8091) are reached at the **vmnet gateway**
+   (`APPLE_HOST_GW`, default 192.168.64.1) — `host.docker.internal` does *not*
+   resolve inside the containers on this runtime, despite the 0.9 claim, and
+   the host service must bind `0.0.0.0` to accept vmnet connections.
 2. **Shipped as `RUNTIME=apple`**, not a replacement:
    `make build|run|chat|up|down|logs|clean RUNTIME=apple`. Docker/compose
    remains the default path and is untouched.

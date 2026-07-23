@@ -19,9 +19,11 @@
 #
 # Container runtime — RUNTIME=docker (default) or RUNTIME=apple.
 # RUNTIME=apple drives Apple's native `container` CLI instead of Docker
-# (Apple Silicon + macOS 26; no Docker Desktop). Prereq once per boot:
-#   container system start
+# (Apple Silicon + macOS 26; no Docker Desktop). First-time / per-boot setup
+# is automatic — build/run/chat depend on `setup`, which installs the CLI if
+# missing (Homebrew cask) and runs `container system start`.
 # Same targets, one extra variable:
+#   make setup RUNTIME=apple    — install `container` CLI + start its services
 #   make build RUNTIME=apple    — build the image with `container build`
 #   make run   RUNTIME=apple    — worker on :8000 (idempotent; leaves a warm worker alone)
 #   make chat  RUNTIME=apple    — worker + chat UI on :8501 (needs macOS 26 vmnet)
@@ -33,6 +35,14 @@
 #   make run RUNTIME=apple WORKER_MEM=12g
 # See docs/APPLE_CONTAINERS.md for setup and caveats.
 RUNTIME ?= docker
+
+# NOTE: docker/Dockerfile builds FROM egsuchanek/kgrag-worker:latest, which is
+# NOT built in this repo — it is built and pushed to Docker Hub from the KGRAG
+# repo (~/repos/KGRAG/runpod/build_image.sh, Docker required). If the base has
+# changed, rebuild + push it there FIRST, or `make build` here bakes a stale
+# base. Both runtimes also cache :latest locally — refresh explicitly with:
+#   docker pull egsuchanek/kgrag-worker:latest            (RUNTIME=docker)
+#   container image pull egsuchanek/kgrag-worker:latest   (RUNTIME=apple)
 
 IMAGE        = corpus-gutenberg
 COMPOSE      = docker compose -f docker/docker-compose.yml
@@ -84,7 +94,7 @@ endif
 # `gutenkg` on PATH. Override with e.g. `make GUTENKG=gutenkg build-corpus`.
 GUTENKG     ?= poetry run gutenkg
 
-.PHONY: init chunk-diaries build-diaries build-corpus build run image-server sdxl-server chat up stop down query logs clean docs
+.PHONY: init chunk-diaries build-diaries build-corpus setup build run image-server sdxl-server chat up stop down query logs clean docs
 
 init:
 	$(GUTENKG) init
@@ -102,7 +112,8 @@ ifeq ($(RUNTIME),apple)
 
 # ---------------------------------------------------------------------------
 # Apple `container` runtime (macOS 26, Apple Silicon).
-# `container system start` must have been run once since boot.
+# `setup` installs the CLI if needed and starts its services (the once-per-
+# boot step); build/run depend on it, so a clean clone works out of the box.
 # No `--publish`: containers are addressed by their vmnet IP (from `container
 # inspect`). host.docker.internal does NOT resolve inside the containers on
 # this runtime, so host-service endpoints use the vmnet gateway
@@ -114,12 +125,31 @@ ifeq ($(RUNTIME),apple)
 # for docker-compose) to the vmnet gateway, which is how the host is reachable.
 IMG_ENDPOINT := $(subst host.docker.internal,$(APPLE_HOST_GW),$(IMG_ENDPOINT))
 
-build:
+# Idempotent host setup: install Apple's `container` CLI if missing (Homebrew
+# formula, bottled — no sudo; otherwise point at the GitHub releases pkg) and
+# start its services. `container system start` is a no-op when already
+# running; --enable-kernel-install auto-answers the first-run prompt to
+# download the default guest kernel (Kata) that every container VM boots.
+setup:
+	@if ! command -v container >/dev/null 2>&1; then \
+		if command -v brew >/dev/null 2>&1; then \
+			echo "Installing Apple container CLI (brew install container) ..."; \
+			brew install container; \
+		else \
+			echo "Apple 'container' CLI not found and Homebrew is unavailable."; \
+			echo "Install the pkg from https://github.com/apple/container/releases, then re-run."; \
+			exit 1; \
+		fi; \
+	fi
+	@container system start --enable-kernel-install
+	@echo "Apple container runtime ready."
+
+build: setup
 	container build -f docker/Dockerfile -t $(IMAGE):latest .
 
 # Idempotent like `compose up`: a running worker is left alone (it takes a
 # while to load the index), a stopped or stale one is replaced.
-run:
+run: setup
 	@if container list --quiet 2>/dev/null | grep -qx "$(WORKER_NAME)"; then \
 		WORKER_IP=$$(container inspect $(WORKER_NAME) | $(INSPECT_IP)); \
 		echo "Worker already running at http://$$WORKER_IP:8000"; exit 0; \
@@ -194,6 +224,12 @@ else
 # ---------------------------------------------------------------------------
 # Docker runtime (default) — docker compose drives worker + chat.
 # ---------------------------------------------------------------------------
+
+# Nothing to install here — just verify the Docker daemon is reachable.
+setup:
+	@command -v docker >/dev/null 2>&1 || { echo "Docker not found — install Docker Desktop, or use RUNTIME=apple."; exit 1; }
+	@docker info >/dev/null 2>&1 || { echo "Docker daemon not running — start Docker Desktop, or use RUNTIME=apple."; exit 1; }
+	@echo "Docker runtime ready."
 
 build:
 	docker build -f docker/Dockerfile -t $(IMAGE):latest .
