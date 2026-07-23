@@ -36,13 +36,11 @@
 # See docs/APPLE_CONTAINERS.md for setup and caveats.
 RUNTIME ?= docker
 
-# NOTE: docker/Dockerfile builds FROM egsuchanek/kgrag-worker:latest, which is
-# NOT built in this repo — it is built and pushed to Docker Hub from the KGRAG
-# repo (~/repos/KGRAG/runpod/build_image.sh, Docker required). If the base has
-# changed, rebuild + push it there FIRST, or `make build` here bakes a stale
-# base. Both runtimes also cache :latest locally — refresh explicitly with:
-#   docker pull egsuchanek/kgrag-worker:latest            (RUNTIME=docker)
-#   container image pull egsuchanek/kgrag-worker:latest   (RUNTIME=apple)
+# NOTE: docker/Dockerfile is self-contained (python:3.12-slim + PyPI pins).
+# Only the sqlite-vec variant (docker/Dockerfile.sqlite) still builds FROM
+# egsuchanek/kgrag-worker:latest — that base is built and pushed from the
+# KGRAG repo (~/repos/KGRAG/runpod/build_image.sh, Docker required); keep it
+# current on the Hub before building the sqlite variant.
 
 IMAGE        = corpus-gutenberg
 COMPOSE      = docker compose -f docker/docker-compose.yml
