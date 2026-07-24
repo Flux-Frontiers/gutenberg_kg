@@ -15,8 +15,8 @@ make setup RUNTIME=apple         # clean machine: installs the CLI (Homebrew)
                                  # + `container system start`; build/run/chat
                                  # depend on it, so this is optional
 make build RUNTIME=apple         # container build -f docker/Dockerfile
-make run   RUNTIME=apple         # worker at its container IP :8000 (printed; no localhost)
-make chat  RUNTIME=apple         # worker + chat UI at the chat container IP :8501 (printed)
+make run   RUNTIME=apple         # worker on http://localhost:8000
+make chat  RUNTIME=apple         # worker + chat UI on http://localhost:8501
 make up    RUNTIME=apple         # everything incl. FLUX image server
 make logs  RUNTIME=apple
 make down  RUNTIME=apple
@@ -28,23 +28,25 @@ Notes:
   worker and 4g for chat. Override like `make run RUNTIME=apple WORKER_MEM=12g`.
 - **`docker/.env` still works** — the Make targets source it before
   `container run`, mirroring compose's automatic loading.
-- **No `--publish`; containers are addressed by their vmnet IP.** Apple's
-  `container` has no Docker-style port forwarding, so `make run/chat/up` print
-  the worker and chat-UI URLs at each container's own IP (e.g.
-  `http://192.168.64.4:8501`) — `localhost:8501` will NOT work.
+- **Ports are published to the host (`localhost` works).** Apple's `container`
+  gained Docker-style port publishing in CLI **v1.1.0**, so `make run/chat/up`
+  forward `8000`/`8501` to the host and print `http://localhost:PORT` — same as
+  the Docker path. (Older CLIs had no `--publish` and forced vmnet-IP addressing;
+  if `container run --help` shows no `-p/--publish`, `make setup RUNTIME=apple`
+  upgrades it.)
 - **Host services are reached at the vmnet gateway, not `host.docker.internal`.**
   Contrary to the 0.9 "resolves natively" claim, that hostname does *not*
-  resolve inside the containers on the runtime tested here, so the Apple
-  targets point oMLX/Ollama/image-server endpoints at the gateway IP
-  (`APPLE_HOST_GW`, default `192.168.64.1`). Override per-machine if your
-  subnet differs (`container inspect gutenberg-worker` → `networks[].gateway`).
+  resolve inside the containers on the runtime tested here (still true on
+  v1.1.0), so the Apple targets point oMLX/Ollama/image-server endpoints at the
+  gateway IP (`APPLE_HOST_GW`, default `192.168.64.1`). Override per-machine if
+  your subnet differs (`container inspect gutenberg-worker` → `networks[].gateway`).
   **The host service must also bind `0.0.0.0`, not `127.0.0.1`** — a
   loopback-only listener refuses vmnet connections. Start oMLX with
   `--host 0.0.0.0` (likewise Ollama / the image server).
-- **chat→worker traffic** goes container-to-container over vmnet, addressed by
-  the worker VM's IP (read from `container inspect` at start). This is the
-  part that hard-requires macOS 26 — on macOS 15 containers can't see each
-  other, so only `make run RUNTIME=apple` (worker alone) works there.
+- **chat→worker traffic** goes through the vmnet gateway: the worker's `8000`
+  is published to the host, and the chat container reaches it at
+  `http://$(APPLE_HOST_GW):8000`. No container-to-container vmnet needed, so
+  this no longer hard-requires macOS 26 for the chat↔worker hop.
 - **No restart policy** — unlike compose's `restart: unless-stopped`, the
   worker stays down after a reboot until you `make run RUNTIME=apple` again.
 - **`make run` is idempotent**: a running worker is left alone; a stopped or

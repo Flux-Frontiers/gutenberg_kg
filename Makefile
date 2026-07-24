@@ -25,8 +25,8 @@
 # Same targets, one extra variable:
 #   make setup RUNTIME=apple    — install `container` CLI + start its services
 #   make build RUNTIME=apple    — build the image with `container build`
-#   make run   RUNTIME=apple    — worker on :8000 (idempotent; leaves a warm worker alone)
-#   make chat  RUNTIME=apple    — worker + chat UI on :8501 (needs macOS 26 vmnet)
+#   make run   RUNTIME=apple    — worker on localhost:8000 (idempotent; leaves a warm worker alone)
+#   make chat  RUNTIME=apple    — worker + chat UI on localhost:8501
 #   make up    RUNTIME=apple    — everything: worker + chat UI + image server
 #   make down  RUNTIME=apple    — stop and delete both containers + image servers
 #   make logs  RUNTIME=apple    — follow worker logs (`container logs -f`)
@@ -61,19 +61,15 @@ WORKER_MEM  ?= 8g
 WORKER_CPUS ?= 6
 CHAT_MEM    ?= 4g
 
-# Apple `container` has no Docker-style port publishing (no `--publish`); each
-# container gets its own routable vmnet IP. This extracts that IPv4 from
-# `container inspect` to address the worker/chat from the host and
-# container-to-container.
-INSPECT_IP = python3 -c 'import re,sys; m=re.search(r"\"address\"\s*:\s*\"(\d+\.\d+\.\d+\.\d+)", sys.stdin.read()); print(m.group(1) if m else "")'
-
-# Host reachability from containers. Contrary to the 0.9 "resolves natively"
-# claim, host.docker.internal does NOT resolve inside the containers on this
-# runtime — the host is reachable only at the vmnet gateway IP. This is the
-# standard default-subnet gateway; override if your subnet differs
-# (`container inspect $(WORKER_NAME)` → networks[].gateway). Host services
-# (oMLX :8080, Ollama :11434, image server) must also bind 0.0.0.0, not
-# 127.0.0.1, to be reachable over the vmnet.
+# Host reachability from containers. Apple's `container` DOES support
+# Docker-style port publishing (`--publish`) as of CLI v1.1.0, so the worker
+# and chat ports are forwarded to the host and reachable at localhost, just
+# like the Docker path. Containers reach the host — and each other's published
+# ports — at the vmnet gateway IP; host.docker.internal still does NOT resolve
+# in-container on this runtime. This is the standard default-subnet gateway;
+# override if your subnet differs (`container inspect $(WORKER_NAME)` →
+# networks[].gateway). Host services (oMLX :8080, Ollama :11434, image server)
+# must also bind 0.0.0.0, not 127.0.0.1, to be reachable over the vmnet.
 APPLE_HOST_GW ?= 192.168.64.1
 
 # Image backend for `make up`: flux (FLUX.2 / mflux, default) or sdxl (SDXL-Lightning).
@@ -114,9 +110,10 @@ ifeq ($(RUNTIME),apple)
 # Apple `container` runtime (macOS 26, Apple Silicon).
 # `setup` installs the CLI if needed and starts its services (the once-per-
 # boot step); build/run depend on it, so a clean clone works out of the box.
-# No `--publish`: containers are addressed by their vmnet IP (from `container
-# inspect`). host.docker.internal does NOT resolve inside the containers on
-# this runtime, so host-service endpoints use the vmnet gateway
+# Ports are published to the host (`--publish`, container CLI >= 1.1.0), so the
+# worker and chat UI are reachable at localhost, same as the Docker path.
+# host.docker.internal does NOT resolve inside the containers on this runtime,
+# so in-container endpoints (chat->worker, host services) use the vmnet gateway
 # ($(APPLE_HOST_GW)). docker/.env is sourced explicitly below to mirror
 # compose's automatic .env loading.
 # ---------------------------------------------------------------------------
@@ -151,13 +148,13 @@ build: setup
 # while to load the index), a stopped or stale one is replaced.
 run: setup
 	@if container list --quiet 2>/dev/null | grep -qx "$(WORKER_NAME)"; then \
-		WORKER_IP=$$(container inspect $(WORKER_NAME) | $(INSPECT_IP)); \
-		echo "Worker already running at http://$$WORKER_IP:8000"; exit 0; \
+		echo "Worker already running at $(WORKER)"; exit 0; \
 	fi; \
 	container delete -f $(WORKER_NAME) >/dev/null 2>&1 || true; \
 	set -a; [ -f docker/.env ] && . docker/.env; set +a; \
 	container run --detach --name $(WORKER_NAME) \
 	  --memory $(WORKER_MEM) --cpus $(WORKER_CPUS) \
+	  --publish 8000:8000 \
 	  -e GUTENBERG_ROOT=/workspace/gutenberg \
 	  -e EMBED_MODEL=BAAI/bge-small-en-v1.5 \
 	  -e HANDLER_SECRET="$${HANDLER_SECRET:-}" \
@@ -171,42 +168,36 @@ run: setup
 	  -e IMAGE_STEPS="$${IMAGE_STEPS:-4}" \
 	  $(IMAGE):latest \
 	  python -u -m gutenberg_kg.serve.handler --rp_serve_api --rp_api_host 0.0.0.0
-	@WORKER_IP=$$(container inspect $(WORKER_NAME) | $(INSPECT_IP)); \
-	echo "Worker running at http://$$WORKER_IP:8000"
+	@echo "Worker running at $(WORKER)"
 
-# Chat reaches the worker container-to-container over the vmnet network
-# (macOS 26 only — macOS 15 isolates containers from each other), addressed
-# by the worker VM's IP pulled from `container inspect`.
+# Chat reaches the worker at the vmnet gateway, where the worker's published
+# 8000 is forwarded to the host — no container-to-container vmnet needed.
 chat: run
 	@container delete -f $(CHAT_NAME) >/dev/null 2>&1 || true
-	@WORKER_IP=$$(container inspect $(WORKER_NAME) | $(INSPECT_IP)); \
-	set -a; [ -f docker/.env ] && . docker/.env; set +a; \
+	@set -a; [ -f docker/.env ] && . docker/.env; set +a; \
 	container run --detach --name $(CHAT_NAME) \
 	  --memory $(CHAT_MEM) \
-	  -e KGRAG_ENDPOINT="http://$$WORKER_IP:8000" \
+	  --publish 8501:8501 \
+	  -e KGRAG_ENDPOINT="http://$(APPLE_HOST_GW):8000" \
 	  -e GUTENKG_IMAGE_ENDPOINT="$${GUTENKG_IMAGE_ENDPOINT:-$(IMG_ENDPOINT)}" \
 	  -e IMAGE_ENDPOINT="$${GUTENKG_IMAGE_ENDPOINT:-$(IMG_ENDPOINT)}" \
 	  -e IMAGE_STEPS="$${IMAGE_STEPS:-4}" \
 	  $(IMAGE):latest \
 	  gutenkg chat --port 8501 --address 0.0.0.0
-	@WORKER_IP=$$(container inspect $(WORKER_NAME) | $(INSPECT_IP)); \
-	CHAT_IP=$$(container inspect $(CHAT_NAME) | $(INSPECT_IP)); \
-	echo "Worker:  http://$$WORKER_IP:8000"; \
-	echo "Chat UI: http://$$CHAT_IP:8501"
+	@echo "Worker:  $(WORKER)"
+	@echo "Chat UI: http://localhost:8501"
 
 start up:
 	@echo "Starting worker + chat (Apple container), image backend: $(IMAGE_BACKEND) ($(IMG_ENDPOINT)) ..."
 	GUTENKG_IMAGE_ENDPOINT=$(IMG_ENDPOINT) $(MAKE) chat RUNTIME=apple
 	@echo "Starting $(IMAGE_BACKEND) image server ..."
 	$(MAKE) $(IMAGE_TARGET)
-	@WORKER_IP=$$(container inspect $(WORKER_NAME) | $(INSPECT_IP)); \
-	CHAT_IP=$$(container inspect $(CHAT_NAME) | $(INSPECT_IP)); \
-	echo ""; \
-	echo "Worker:       http://$$WORKER_IP:8000"; \
-	echo "Image server: $(IMAGE_URL)  ($(IMAGE_BACKEND))"; \
-	echo "Chat UI:      http://$$CHAT_IP:8501"; \
-	echo ""; \
-	echo "Run 'make stop RUNTIME=apple' to shut down containers + image servers."
+	@echo ""
+	@echo "Worker:       $(WORKER)"
+	@echo "Image server: $(IMAGE_URL)  ($(IMAGE_BACKEND))"
+	@echo "Chat UI:      http://localhost:8501"
+	@echo ""
+	@echo "Run 'make stop RUNTIME=apple' to shut down containers + image servers."
 
 stop down:
 	-container delete -f $(CHAT_NAME) $(WORKER_NAME) 2>/dev/null || true
