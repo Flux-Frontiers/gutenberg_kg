@@ -37,11 +37,6 @@ from pathlib import Path
 
 import torch
 import uvicorn
-from diffusers import AutoencoderKL
-from diffusers.pipelines.stable_diffusion_xl.pipeline_stable_diffusion_xl import (
-    StableDiffusionXLPipeline,
-)
-from diffusers.schedulers.scheduling_euler_discrete import EulerDiscreteScheduler
 from fastapi import FastAPI
 from fastapi.responses import JSONResponse
 from huggingface_hub import hf_hub_download
@@ -80,6 +75,24 @@ def _load_pipeline():
     global _pipe
     if _pipe is not None:
         return _pipe
+
+    # diffusers is deferred: it lives only in the isolated .venv-sdxl
+    # (docker/requirements-sdxl.txt), NOT the main Poetry env, so importing this
+    # module for docs/tests/CLI never requires it. Only actually loading the
+    # pipeline does — mirroring how image_server defers its mflux import.
+    try:
+        from diffusers import AutoencoderKL
+        from diffusers.pipelines.stable_diffusion_xl.pipeline_stable_diffusion_xl import (
+            StableDiffusionXLPipeline,
+        )
+        from diffusers.schedulers.scheduling_euler_discrete import EulerDiscreteScheduler
+    except ModuleNotFoundError as exc:
+        raise RuntimeError(
+            "The SDXL backend requires the isolated diffusers environment. "
+            "Run `make sdxl-server` (creates .venv-sdxl from "
+            "docker/requirements-sdxl.txt) instead of launching this module from "
+            "the main env."
+        ) from exc
 
     device, dtype = _device_dtype()
     steps = _STEPS.get(_MODEL, 4)

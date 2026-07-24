@@ -16,6 +16,15 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Fixed
 
+- **`serve/sdxl_server.py` now imports cleanly in the main env.** The `diffusers`
+  imports were at module top-level, so importing the module without the isolated
+  `.venv-sdxl` (docs, tests, CLI) raised `ModuleNotFoundError` — the pdoc docs
+  build hit this during submodule discovery. The three `diffusers` imports are
+  now deferred into `_load_pipeline()` (with an actionable error pointing at
+  `make sdxl-server`), mirroring how `image_server.py` defers its mflux import.
+  `diffusers` remains isolated in `docker/requirements-sdxl.txt`, not the main
+  Poetry env.
+
 ## [1.11.0] - 2026-07-24
 
 **Headline — a fully Apple-native, Apple-Silicon, purely local stack.** The
