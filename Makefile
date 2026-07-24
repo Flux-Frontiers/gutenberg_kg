@@ -120,6 +120,18 @@ ifeq ($(RUNTIME),apple)
 # for docker-compose) to the vmnet gateway, which is how the host is reachable.
 IMG_ENDPOINT := $(subst host.docker.internal,$(APPLE_HOST_GW),$(IMG_ENDPOINT))
 
+# docker/.env is written for Docker, where the host is host.docker.internal —
+# a name that does NOT resolve inside an Apple container VM. After sourcing it,
+# rewrite each endpoint var to the vmnet gateway ($(APPLE_HOST_GW)) so host
+# services (oMLX :8080, Ollama :11434, image server) stay reachable, applying
+# the gateway default when the var is unset. Used after `. docker/.env` in the
+# run/chat recipes; without this, a .env pointing oMLX at host.docker.internal
+# silently disables synthesis (the worker can't see the LLM).
+APPLE_REWRITE_ENDPOINTS = \
+  VLLM_ENDPOINT_URL=$$(printf '%s' "$${VLLM_ENDPOINT_URL:-http://$(APPLE_HOST_GW):8080/v1}" | sed 's/host\.docker\.internal/$(APPLE_HOST_GW)/g'); \
+  OLLAMA_ENDPOINT=$$(printf '%s' "$${OLLAMA_ENDPOINT:-http://$(APPLE_HOST_GW):11434/v1}" | sed 's/host\.docker\.internal/$(APPLE_HOST_GW)/g'); \
+  GUTENKG_IMAGE_ENDPOINT=$$(printf '%s' "$${GUTENKG_IMAGE_ENDPOINT:-$(IMG_ENDPOINT)}" | sed 's/host\.docker\.internal/$(APPLE_HOST_GW)/g')
+
 # Idempotent host setup: install Apple's `container` CLI if missing (Homebrew
 # formula, bottled — no sudo; otherwise point at the GitHub releases pkg) and
 # start its services. `container system start` is a no-op when already
@@ -150,19 +162,20 @@ run: setup
 	fi; \
 	container delete -f $(WORKER_NAME) >/dev/null 2>&1 || true; \
 	set -a; [ -f docker/.env ] && . docker/.env; set +a; \
+	$(APPLE_REWRITE_ENDPOINTS); \
 	container run --detach --name $(WORKER_NAME) \
 	  --memory $(WORKER_MEM) --cpus $(WORKER_CPUS) \
 	  --publish 8000:8000 \
 	  -e GUTENBERG_ROOT=/workspace/gutenberg \
 	  -e EMBED_MODEL=BAAI/bge-small-en-v1.5 \
 	  -e HANDLER_SECRET="$${HANDLER_SECRET:-}" \
-	  -e VLLM_ENDPOINT_URL="$${VLLM_ENDPOINT_URL:-http://$(APPLE_HOST_GW):8080/v1}" \
+	  -e VLLM_ENDPOINT_URL="$$VLLM_ENDPOINT_URL" \
 	  -e VLLM_MODEL="$${VLLM_MODEL:-Qwen3-4B-Instruct-2507-MLX-8bit}" \
 	  -e VLLM_API_KEY="$${VLLM_API_KEY:-}" \
-	  -e OLLAMA_ENDPOINT="$${OLLAMA_ENDPOINT:-http://$(APPLE_HOST_GW):11434/v1}" \
+	  -e OLLAMA_ENDPOINT="$$OLLAMA_ENDPOINT" \
 	  -e OPENAI_API_KEY="$${OPENAI_API_KEY:-}" \
-	  -e GUTENKG_IMAGE_ENDPOINT="$${GUTENKG_IMAGE_ENDPOINT:-$(IMG_ENDPOINT)}" \
-	  -e IMAGE_ENDPOINT="$${GUTENKG_IMAGE_ENDPOINT:-$(IMG_ENDPOINT)}" \
+	  -e GUTENKG_IMAGE_ENDPOINT="$$GUTENKG_IMAGE_ENDPOINT" \
+	  -e IMAGE_ENDPOINT="$$GUTENKG_IMAGE_ENDPOINT" \
 	  -e IMAGE_STEPS="$${IMAGE_STEPS:-4}" \
 	  $(IMAGE):latest \
 	  python -u -m gutenberg_kg.serve.handler --rp_serve_api --rp_api_host 0.0.0.0
@@ -173,12 +186,13 @@ run: setup
 chat: run
 	@container delete -f $(CHAT_NAME) >/dev/null 2>&1 || true
 	@set -a; [ -f docker/.env ] && . docker/.env; set +a; \
+	$(APPLE_REWRITE_ENDPOINTS); \
 	container run --detach --name $(CHAT_NAME) \
 	  --memory $(CHAT_MEM) \
 	  --publish 8501:8501 \
 	  -e KGRAG_ENDPOINT="http://$(APPLE_HOST_GW):8000" \
-	  -e GUTENKG_IMAGE_ENDPOINT="$${GUTENKG_IMAGE_ENDPOINT:-$(IMG_ENDPOINT)}" \
-	  -e IMAGE_ENDPOINT="$${GUTENKG_IMAGE_ENDPOINT:-$(IMG_ENDPOINT)}" \
+	  -e GUTENKG_IMAGE_ENDPOINT="$$GUTENKG_IMAGE_ENDPOINT" \
+	  -e IMAGE_ENDPOINT="$$GUTENKG_IMAGE_ENDPOINT" \
 	  -e IMAGE_STEPS="$${IMAGE_STEPS:-4}" \
 	  $(IMAGE):latest \
 	  gutenkg chat --port 8501 --address 0.0.0.0
