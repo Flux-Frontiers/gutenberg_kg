@@ -64,11 +64,18 @@ CHAT_MEM    ?= 4g
 # and chat ports are forwarded to the host and reachable at localhost, just
 # like the Docker path. Containers reach the host — and each other's published
 # ports — at the vmnet gateway IP; host.docker.internal still does NOT resolve
-# in-container on this runtime. This is the standard default-subnet gateway;
-# override if your subnet differs (`container inspect $(WORKER_NAME)` →
-# networks[].gateway). Host services (oMLX :8080, Ollama :11434, image server)
-# must also bind 0.0.0.0, not 127.0.0.1, to be reachable over the vmnet.
-APPLE_HOST_GW ?= 192.168.64.1
+# in-container on this runtime. The gateway subnet is NOT stable across CLI
+# versions (0.1.0 used 192.168.64.0/24; 1.1.0 uses 192.168.65.0/24), which
+# silently breaks LLM access whenever it shifts. So auto-detect it from the
+# live `default` network and fall back to the 1.1.0 default when the runtime
+# isn't up yet; override explicitly with `make APPLE_HOST_GW=… …` if needed.
+# Host services (oMLX :8080, Ollama :11434, image server) must also bind
+# 0.0.0.0, not 127.0.0.1, to be reachable over the vmnet.
+ifeq ($(RUNTIME),apple)
+APPLE_HOST_GW ?= $(or $(shell container network inspect default 2>/dev/null | sed -n 's/.*"ipv4Gateway" : "\([0-9.]*\)".*/\1/p' | head -1),192.168.65.1)
+else
+APPLE_HOST_GW ?= 192.168.65.1
+endif
 
 # Image backend for `make up`: flux (FLUX.2 / mflux, default) or sdxl (SDXL-Lightning).
 #   make up                    → FLUX.2 on :8090
