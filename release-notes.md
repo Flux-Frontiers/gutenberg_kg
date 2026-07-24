@@ -1,43 +1,44 @@
-# Release Notes — v1.10.0
+# Release Notes — v1.11.0
 
-> Released: 2026-07-16
+> Released: 2026-07-24
 
-GutenbergKG 1.10.0 is an operational release: the API documentation site is
-now live and rebuilt automatically on every change, and a handful of small
-gaps left over from the 1.9.0 push are closed.
+GutenbergKG 1.11.0 makes the local stack fully Apple-native. The worker and
+chat services now run end-to-end on Apple's own `container` runtime on Apple
+Silicon — no Docker Desktop, no cloud, and no external LLM. Paired with local
+MLX or Ollama models on the host, you can stand up the entire retrieval-plus-
+chat experience with a single `make up RUNTIME=apple` and keep every byte on
+your machine.
 
 ## What changed
 
-**GitHub Pages goes live.** The API reference at
-https://flux-frontiers.github.io/gutenberg_kg/ is now built and deployed by
-`.github/workflows/docs.yml` on every push to `main`, rather than committing
-generated HTML to the repo. `docs/` reverts to hand-written markdown only,
-and `make docs` writes its pdoc output to a gitignored `site/`. Getting there
-took a full audit of what `pdoc` actually needs at import time — it exercises
-every documented module, including `gutenberg_kg.serve.handler`'s full
-startup sequence (KG registry, embedder warm-up) — so the CI job now installs
-the complete set of extras that requires (`dev chat image mcp viz viz3d
-kgdeps`), pip-installs `runpod` alongside them, and sets
-`PDOC_ALLOW_EXEC=1` to work around a Linux-only crash in `runpod`'s
-import-time CPU probe. The docs logo, which pointed at a file never
-committed to the repo, now resolves correctly too.
+**A purely local, Apple-Silicon environment.** The `RUNTIME=apple` path graduates
+from experimental to the recommended way to run GutenbergKG locally on macOS 26.
+Each service runs in its own lightweight VM under Apple's `container` CLI, and
+with container CLI 1.1.0 the worker (`:8000`) and chat UI (`:8501`) publish to
+`localhost` exactly like the Docker path — so nothing about how you reach the
+services changes when you drop Docker Desktop.
 
-**The docs landing page had nothing on it.** `gutenberg_kg/__init__.py`
-carried no module docstring, so pdoc's generated `index.html` — which
-redirects straight to the package's top-level page — rendered essentially
-empty. It now describes the project in general terms: an ingestion engine
-for public-domain text corpora, not affiliated with or limited to Project
-Gutenberg specifically.
+**Reliable host-to-container networking.** Apple's runtime does not resolve
+`host.docker.internal` and does not keep a stable vmnet subnet across CLI
+versions, which previously caused the worker to silently see no LLM after a CLI
+upgrade. The Makefile now rewrites host endpoints (oMLX, Ollama, image server)
+to the vmnet gateway and **auto-detects** that gateway from the live network
+instead of hardcoding it, so a `container` upgrade no longer breaks model
+access.
 
-**`/release` gets a safety net.** The release workflow now runs `poetry run
-make docs` as a gate before tagging, so an environment or import regression
-in the docs build is caught locally instead of silently failing the Pages
-deploy after the tag is already pushed.
+**A self-contained worker image.** The default `docker/Dockerfile` builds from
+`python:3.12-slim` and pulls everything from PyPI pins plus this checkout,
+rather than extending a separately-published base image — a cleaner, more
+reproducible build for both the Docker and Apple paths.
 
 ## Upgrading
 
-No dependency, schema, or API changes — this release only affects
-documentation tooling. Nothing to do beyond the usual `git pull`.
+Nothing changes for existing Docker users — `make up` still defaults to Docker.
+To run natively on Apple Silicon, install Apple's `container` CLI **1.1.0 or
+newer** (older 0.x builds lack `--publish` and use a different vmnet subnet),
+make sure your host LLM servers bind `0.0.0.0` (not `127.0.0.1`), and run
+`make up RUNTIME=apple`. The host gateway is detected automatically; override it
+with `make APPLE_HOST_GW=… RUNTIME=apple` only if you run a non-default subnet.
 
 ---
 

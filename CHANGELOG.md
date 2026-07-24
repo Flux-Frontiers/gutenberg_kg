@@ -10,6 +10,23 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added
 
+### Changed
+
+### Removed
+
+### Fixed
+
+## [1.11.0] - 2026-07-24
+
+**Headline — a fully Apple-native, Apple-Silicon, purely local stack.** The
+worker and chat services now run end-to-end on Apple's native `container`
+runtime (macOS 26, Apple Silicon): no Docker Desktop, no cloud, no external
+LLM. Local MLX (oMLX) or Ollama models are reached over the vmnet gateway, and
+with container CLI ≥ 1.1.0 the services publish to `localhost` exactly like the
+Docker path. `make up RUNTIME=apple` is all it takes.
+
+### Added
+
 - **Apple `container` runtime support** — the local worker/chat stack can now
   run on Apple's native `container` CLI (macOS 26, Apple Silicon) instead of
   Docker Desktop: `make build|run|chat|up|down|logs|clean RUNTIME=apple`.
@@ -67,9 +84,33 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   genres, and the pipeline's static "Corpus at a Glance" table is replaced by a
   routing summary that points to the live `CORPUS.md` catalog.
 
+- **Self-contained worker image** — `docker/Dockerfile` now builds from
+  `python:3.12-slim` instead of extending `egsuchanek/kgrag-worker:latest`.
+  Everything the worker imports comes from PyPI pins plus this checkout (with
+  `libgomp1`/`libglib2.0-0` for the sentence-transformers / lancedb wheels),
+  so a clean build no longer depends on a separately-published base image.
+  Only the sqlite-vec variant (`docker/Dockerfile.sqlite`) still uses the
+  kgrag-worker base.
+
 ### Removed
 
 ### Fixed
+
+- **Apple `container` port publishing restored.** With container CLI ≥ 1.1.0,
+  the worker (`:8000`) and chat UI (`:8501`) are published to the host via
+  `--publish` and reachable at `localhost`, matching the Docker path. The
+  interim 1.0.x workaround (raw vmnet IPs, since `--publish` was unsupported)
+  is no longer needed.
+- **Host services reachable from Apple containers.** `host.docker.internal`
+  does not resolve on this runtime, so the worker's LLM and image endpoints
+  (oMLX `:8080`, Ollama `:11434`, image server `:8090`) are rewritten to the
+  vmnet gateway; without this the worker silently saw no LLM.
+- **Gateway subnet no longer hardcoded.** Apple's `container` shifts its
+  default vmnet subnet across CLI versions (0.1.0 → `192.168.64.0/24`,
+  1.1.0 → `192.168.65.0/24`), which silently broke worker→LLM access on
+  upgrade. `APPLE_HOST_GW` now auto-detects the gateway from the live
+  `default` network, falling back to the current default when the runtime
+  isn't up yet.
 
 ---
 
