@@ -1,6 +1,7 @@
 # corpus-gutenberg — standalone KGRAG image for the full GutenbergKG corpus
 #
-# Extends the kgrag-worker base image with:
+# Self-contained build from python:3.12-slim (no kgrag-worker base — everything
+# the worker imports comes from PyPI pins + this checkout):
 #   - the pre-built bundle (DocKG + DiaryKG indices) baked in at /workspace/gutenberg/
 #   - a Gutenberg-specific handler that registers all KG kinds on startup
 #
@@ -24,22 +25,37 @@
 #     The Diary of John Evelyn — Volume 2/.diarykg/
 #     The Journal of a Tour to the Hebrides with Samuel Johnson/.diarykg/
 
-FROM egsuchanek/kgrag-worker:latest
+FROM python:3.12-slim
 
 WORKDIR /app
 
+# System libs needed by the sentence-transformers / lancedb wheels.
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends \
+        libgomp1 \
+        libglib2.0-0 \
+    && rm -rf /var/lib/apt/lists/*
+
+# runpod: serverless worker harness (rp_serve_api) used by the handler
+# kg-rag: KGRegistry/CorpusRegistry + embedder wrapper — imported lazily by
+#         the handler's _bootstrap_registry, so a missing install only fails
+#         at container startup, not at build time
 # kgmodule-utils: synthesis + shared KG runtime
-# doc-kg: DocKG index + query API
+# doc-kg: DocKG index + query API (pulls the heavy torch/sentence-transformers/
+#         lancedb stack transitively)
 # diary-kg: DiaryKG temporal index + query API
 # streamlit + httpx: chat UI dependencies
 # watchdog: faster Streamlit file-watching via native OS events (vs. polling)
 # All three KG packages ship on PyPI, so they install by version like any other
 # dep. Pre-installing them here (before the src COPY below) keeps them in a cached
 # layer, so source-only changes don't re-resolve the heavy KG/torch stack.
+ARG KG_RAG_VERSION=0.10.0
 ARG KGMODULE_UTILS_VERSION=0.5.0
 ARG DOC_KG_VERSION=0.18.0
 ARG DIARY_KG_VERSION=0.93.2
 RUN pip install --no-cache-dir \
+    "runpod>=1.7.0" \
+    "kg-rag==${KG_RAG_VERSION}" \
     "kgmodule-utils[synthesis,sqlite-vec]==${KGMODULE_UTILS_VERSION}" \
     "doc-kg==${DOC_KG_VERSION}" \
     "diary-kg==${DIARY_KG_VERSION}" \
