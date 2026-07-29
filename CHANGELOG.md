@@ -10,6 +10,16 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added
 
+### Changed
+
+### Removed
+
+### Fixed
+
+## [1.12.0] - 2026-07-29
+
+### Added
+
 - **Import-level MCP server tests** (`tests/test_mcp_server.py`). `mcp_server.py`
   builds its `FastMCP` instance and registers both tools at module import, so an
   incompatible `fastmcp` breaks `gutenkg-mcp` at import time. The tests skip when

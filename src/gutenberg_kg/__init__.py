@@ -21,4 +21,4 @@ mcp_server    — MCP tools for querying the corpus and generating images.
 .. _KGRAG: https://github.com/Flux-Frontiers/KGRAG
 """
 
-__version__ = "1.11.0"
+__version__ = "1.12.0"

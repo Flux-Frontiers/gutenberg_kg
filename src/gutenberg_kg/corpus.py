@@ -6,7 +6,7 @@ called from any context — CLI, tests, or kgrag adapters — without depending
 on package-level path constants.
 
 Author: Eric G. Suchanek, PhD
-Last Revision: 2026-05-16 21:49:44
+Last Revision: 2026-07-02 20:14:05
 License: Elastic 2.0
 """
 

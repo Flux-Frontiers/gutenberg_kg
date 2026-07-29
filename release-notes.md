@@ -1,44 +1,44 @@
-# Release Notes — v1.11.0
+# Release Notes — v1.12.0
 
-> Released: 2026-07-24
+> Released: 2026-07-29
 
-GutenbergKG 1.11.0 makes the local stack fully Apple-native. The worker and
-chat services now run end-to-end on Apple's own `container` runtime on Apple
-Silicon — no Docker Desktop, no cloud, and no external LLM. Paired with local
-MLX or Ollama models on the host, you can stand up the entire retrieval-plus-
-chat experience with a single `make up RUNTIME=apple` and keep every byte on
-your machine.
+A dependency-hygiene release. GutenbergKG is the only KG in the family built on the
+standalone `fastmcp` package rather than the SDK's bundled `mcp.server.fastmcp`, so it was
+untouched by the mcp 2.0 breakage that hit its siblings. But its `fastmcp` requirement had
+no upper bound at all, against a project that has already shipped two majors on its own
+schedule. That is now bounded, and the floor moves up rather than down.
 
 ## What changed
 
-**A purely local, Apple-Silicon environment.** The `RUNTIME=apple` path graduates
-from experimental to the recommended way to run GutenbergKG locally on macOS 26.
-Each service runs in its own lightweight VM under Apple's `container` CLI, and
-with container CLI 1.1.0 the worker (`:8000`) and chat UI (`:8501`) publish to
-`localhost` exactly like the Docker path — so nothing about how you reach the
-services changes when you drop Docker Desktop.
+**`fastmcp` bounded to `>=3.0,<4`.** The requirement was an unbounded `fastmcp>=2.0`, free
+to cross a major version on any clean install. The obvious conservative fix would have been
+to freeze at `<3` — but that assumption turned out to be wrong. The lock file already
+resolves to fastmcp **3.4.4**, and the server imports and registers both tools cleanly
+against it. Freezing at `<3` would have been a downgrade away from the known-good state
+rather than a preservation of it, so the floor moved up instead. The generalizable lesson:
+read the resolved lock, not the declared spec, before deciding which side of a major to
+freeze on. The bound applies to both the `mcp` and `full` extras.
 
-**Reliable host-to-container networking.** Apple's runtime does not resolve
-`host.docker.internal` and does not keep a stable vmnet subnet across CLI
-versions, which previously caused the worker to silently see no LLM after a CLI
-upgrade. The Makefile now rewrites host endpoints (oMLX, Ollama, image server)
-to the vmnet gateway and **auto-detects** that gateway from the live network
-instead of hardcoding it, so a `container` upgrade no longer breaks model
-access.
+**Import-level MCP server tests.** `mcp_server.py` builds its `FastMCP` instance and
+registers both tools at module import, so an incompatible major breaks `gutenkg-mcp` at
+import time — invisibly to anyone with a pinned lock file. The new `tests/test_mcp_server.py`
+skips cleanly when the `mcp` extra is absent, but **fails** rather than skips when `fastmcp`
+is present at an incompatible major, which is the case worth catching.
 
-**A self-contained worker image.** The default `docker/Dockerfile` builds from
-`python:3.12-slim` and pulls everything from PyPI pins plus this checkout,
-rather than extending a separately-published base image — a cleaner, more
-reproducible build for both the Docker and Apple paths.
+**A snapshot-tracking bug fixed.** GutenbergKG's ignore rules carried a blanket
+`**/.dockg/` pattern that swallowed the repository's own `.dockg/snapshots/` directory. The
+result: every pre-commit run generated DocKG snapshots and then silently discarded them —
+none were ever tracked. The ignore rules now follow one canonical form shared across all
+eleven KG repos, written so the ~250 per-book stores under `corpus/` stay fully ignored
+while root-level `snapshots/` is tracked.
+
+**`serve/sdxl_server.py` imports cleanly in the main environment** again.
 
 ## Upgrading
 
-Nothing changes for existing Docker users — `make up` still defaults to Docker.
-To run natively on Apple Silicon, install Apple's `container` CLI **1.1.0 or
-newer** (older 0.x builds lack `--publish` and use a different vmnet subnet),
-make sure your host LLM servers bind `0.0.0.0` (not `127.0.0.1`), and run
-`make up RUNTIME=apple`. The host gateway is detected automatically; override it
-with `make APPLE_HOST_GW=… RUNTIME=apple` only if you run a non-default subnet.
+If you install the `mcp` or `full` extras and had pinned `fastmcp` to a 2.x release, you
+will need to move to 3.x. Everything else is unchanged — no rebuild, no migration, no API
+change to the corpus tooling.
 
 ---
 
