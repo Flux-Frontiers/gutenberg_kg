@@ -121,7 +121,13 @@ viz3d = [
     "pycode-kg>=0.20.0",
 ]
 mcp = [
-    "fastmcp>=2.0",
+    # Upper-bounded: fastmcp ships majors on its own schedule (2.x → 3.x), and
+    # src/gutenberg_kg/mcp_server.py builds its FastMCP instance and registers
+    # both tools at module import, so an incompatible major breaks `gutenkg-mcp`
+    # at import time. The floor is >=3.0 because that is what the lock already
+    # resolves to and what the server is verified against; see
+    # tests/test_mcp_server.py. Lift the ceiling only after verifying 4.x.
+    "fastmcp>=3.0,<4",
     "structlog>=24.0",
 ]
 # Serving layer (gutenberg_kg.serve) — one extra per module.
@@ -158,7 +164,7 @@ full = [
     "pyvistaqt>=0.11.0",
     "pycode-kg>=0.20.0",
     # mcp
-    "fastmcp>=2.0",
+    "fastmcp>=3.0,<4",  # bounded — see the mcp extra above
     "structlog>=24.0",
 ]
 all = [

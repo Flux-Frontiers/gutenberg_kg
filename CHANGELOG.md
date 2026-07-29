@@ -10,7 +10,22 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added
 
+- **Import-level MCP server tests** (`tests/test_mcp_server.py`). `mcp_server.py`
+  builds its `FastMCP` instance and registers both tools at module import, so an
+  incompatible `fastmcp` breaks `gutenkg-mcp` at import time. The tests skip when
+  the `mcp` extra is absent, but fail — rather than skip — when `fastmcp` is
+  present at an incompatible major.
+
 ### Changed
+
+- **`fastmcp` bounded to `>=3.0,<4`** (was an unbounded `>=2.0`). GutenbergKG is
+  the only KG in the family on the standalone `fastmcp` package rather than the
+  SDK's bundled `mcp.server.fastmcp`, so it was untouched by the mcp 2.0 break —
+  but it tracks a project that has already shipped 2.x and 3.x on its own
+  schedule. The floor moves to `3.0` because that is what the lock already
+  resolved to (3.4.4) and what the server is verified against; freezing at `<3`
+  would have been a downgrade away from the known-good state. Applies to both the
+  `mcp` and `full` extras.
 
 - **Dependency floors lifted to the currently published releases** —
   `kgmodule-utils[synthesis,sqlite-vec]>=0.8.0`, `doc-kg>=0.18.1`,
