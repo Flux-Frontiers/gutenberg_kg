@@ -86,32 +86,12 @@ dmypy.json
 # Visual Studio Code
 # .vscode/ is tracked to preserve project-specific config (tasks, settings, MCP)
 
-# PyCodeKG generated artifacts — databases are transient/reproducible, snapshots are tracked
-.pycodekg/lancedb/
-.pycodekg/lancedb-*
-.pycodekg/graph.sqlite
-.pycodekg/graph.sqlite*
-.pycodekg/models
-
-# DocKG generated artifacts — same pattern as CodeKG; snapshots will be tracked once added
-.dockg/lancedb*
-.dockg/*.sqlite
-.dockg/*.sqlite-shm
-.dockg/*.sqlite-wal
-.dockg/models
-
-# Also ignore .dockg/ nested under subdirectories (e.g. docs/.dockg/)
-**/.dockg/
-
 # Local ML model cache (fetched by `gutenkg init`)
 .kgcache/
 
 # Corpus snapshots (point-in-time metrics captures)
 corpus/.snapshots/
 
-.agentkg/
-
-# Local MCP configuration (contains absolute paths)
 #.mcp.json
 
 # Benchmark working data (LongMemEval corpus + result logs)
@@ -132,11 +112,9 @@ assets/code_kg_arch_*.png
 *_forest_3d.html
 *.pyvista.html
 
-# Diary pipeline generated artifacts (all reproducible via gutenkg ingest)
 entry_*.md
 .diary_source.psv
 .diary_source_chunks.pkl
-**/.diarykg/
 
 # Ignore .claude contents except shared project files: skills and
 # settings.json (pre-push ruff hook). Must be dir/* (not dir/) so the
@@ -145,10 +123,8 @@ entry_*.md
 .claude/*
 !.claude/skills/
 !.claude/settings.json
-.codex/
 .venv**
 .vscode
-.mcp.json
 
 # Swift / SwiftPM (app/)
 .build/
@@ -158,3 +134,46 @@ xcuserdata/
 
 # pdoc output — built in CI (docs.yml), deployed to GitHub Pages
 site/
+
+# === KG generated artifacts (normalized across the fleet) ===
+# Databases, vector indexes and model caches are transient and
+# reproducible. snapshots/ is TRACKED and must never be ignored --
+# never use a bare `**/.<ns>/` pattern here, it swallows snapshots too.
+
+**/.pycodekg/lancedb/
+**/.pycodekg/lancedb-*
+**/.pycodekg/*.sqlite
+**/.pycodekg/*.sqlite-shm
+**/.pycodekg/*.sqlite-wal
+**/.pycodekg/*.db
+**/.pycodekg/models
+
+**/.dockg/lancedb/
+**/.dockg/lancedb-*
+**/.dockg/*.sqlite
+**/.dockg/*.sqlite-shm
+**/.dockg/*.sqlite-wal
+**/.dockg/*.db
+**/.dockg/models
+**/.dockg/embeddings.json
+
+# AgentKG local store -- nothing under it is ever tracked
+**/.agentkg/
+
+**/.diarykg/lancedb/
+**/.diarykg/lancedb-*
+**/.diarykg/*.sqlite
+**/.diarykg/*.sqlite-shm
+**/.diarykg/*.sqlite-wal
+**/.diarykg/*.db
+**/.diarykg/models
+**/.diarykg/corpus
+
+# Agent scratch dirs (Claude Code / Codex)
+.agents/
+.codex/
+
+# MCP server config -- machine-specific, contains absolute paths
+.mcp.json
+.mcp.json.sav
+# === end KG generated artifacts ===
