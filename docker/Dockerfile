@@ -39,6 +39,27 @@ RUN apt-get update && \
         libglib2.0-0 \
     && rm -rf /var/lib/apt/lists/*
 
+# CPU-only torch, installed BEFORE the KG stack that pulls it transitively.
+#
+# torch's default PyPI wheel for linux/aarch64 is now a CUDA build (2.13.0+cu130
+# at the time of writing — the aarch64 CUDA wheels exist for ARM servers like
+# Grace Hopper). Nothing here asks for it; it arrives silently through
+# sentence-transformers. In this image it is pure dead weight: 2.9 GB of
+# nvidia-* runtime plus 652 MB of triton, in a container that reports
+# torch.cuda.is_available() == False whether it runs under Docker Desktop or
+# Apple's `container` — both are arm64 VMs on Apple Silicon with no NVIDIA GPU.
+#
+# Its own RUN on purpose: --index-url REPLACES PyPI for the whole command, and
+# the PyTorch CPU index does not host kg-rag/doc-kg/diary-kg. Installing torch
+# first means the resolver below finds the requirement already satisfied and
+# leaves the CPU build in place. Keep this layer above the KG install so a pin
+# bump doesn't re-download torch.
+#
+# NOTE: this is the LOCAL/Apple image only. runpod/Dockerfile is deliberately
+# left on the default CUDA wheels — RunPod serverless is amd64 on real GPUs,
+# where that build is the correct one.
+RUN pip install --no-cache-dir --index-url https://download.pytorch.org/whl/cpu torch
+
 # runpod: serverless worker harness (rp_serve_api) used by the handler
 # kg-rag: KGRegistry/CorpusRegistry + embedder wrapper — imported lazily by
 #         the handler's _bootstrap_registry, so a missing install only fails
@@ -63,7 +84,7 @@ RUN apt-get update && \
 #                      KGEntry.vectors_path, which handler.py passes at startup)
 #   doc-kg 0.20.0      transformers>=5.5.0, kgmodule-utils>=0.9.0
 #   kgmodule-utils 0.9.0
-#   diary-kg 0.93.2    no transformers pin of its own, so it rides along
+#   diary-kg 0.96.0    requires doc-kg>=0.20.0 + kgmodule-utils>=0.9.0
 # Because these are `==` pins, a stale one is a hard resolution failure at build
 # time, not a silent upgrade: doc-kg 0.20.0 with kgmodule-utils==0.8.0 cannot
 # resolve. Bump them together and rerun `poetry lock`.

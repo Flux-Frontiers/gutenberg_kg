@@ -74,6 +74,25 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Fixed
 
+- **The image shipped ~3.8 GB of unusable CUDA runtime.** torch's default PyPI
+  wheel for `linux/aarch64` is now a CUDA build (`2.13.0+cu130`), pulled in
+  transitively via sentence-transformers — so `docker/Dockerfile` installed
+  2.9 GB of `nvidia-*` packages plus 652 MB of `triton` into an arm64 image that
+  reports `torch.cuda.is_available() == False` under both Docker Desktop and
+  Apple's `container`. Nothing in the config asked for this; it arrived when
+  torch changed its aarch64 packaging.
+
+  A dedicated `RUN` now installs torch from the PyTorch CPU index before the KG
+  stack that pulls it. It must be its own layer: `--index-url` replaces PyPI for
+  the whole command and that index does not host kg-rag/doc-kg/diary-kg.
+  Not a downgrade — the CPU index carries the same `2.13.0` for cp312 aarch64,
+  and the floors it must satisfy are low (`sentence-transformers` needs
+  `torch>=1.11.0`, `transformers` `torch>=2.4`), so the later install leaves it
+  alone. `nvidia/` 2970 MB → 0, `triton` 652 MB → 0, `torch` 914 MB → 635 MB.
+
+  `runpod/Dockerfile` is deliberately unchanged: RunPod serverless is amd64 on
+  real GPUs, where the CUDA build is the correct one.
+
 - **`build-corpus` never removed a pre-migration LanceDB store.** Phase 2 has
   written sqlite-vec since the migration, but nothing deleted the `lancedb/`
   directory beside it, so a freshly rebuilt bundle still carried ~2.8 GB of index
