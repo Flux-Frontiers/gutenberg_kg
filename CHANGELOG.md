@@ -10,11 +10,54 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added
 
+- **`gutenberg_kg.vector_store.resolve_vector_paths()`** — resolves a KG store
+  directory to `(vectors_path, lancedb_path)`, preferring sqlite-vec and falling
+  back to LanceDB. Exactly one is non-`None`, so a migrated store never carries
+  a stale LanceDB pointer beside its sqlite-vec one.
+
+  The precedence deliberately matches `handler._open_vector_source`, which
+  already read on that rule. The bug below was the *read* path and the
+  *register* path disagreeing.
+
+- **`tests/test_vector_store.py`**, kept free of any `kg_rag` import so it runs
+  in CI — `tests/test_ingest.py` skips wholesale when kg_rag is absent, which is
+  how the registration paths went untested.
+
 ### Changed
 
 ### Removed
 
+- **`_DOCKG_LANCEDB` / `_DOCKG_VECTORS`** module constants in `serve/handler.py`,
+  now that the paths are derived. `_DOCKG_VECTORS` was already dead.
+
 ### Fixed
+
+- **Registration recorded no vector store for migrated KGs.** All four sites
+  that build a `KGEntry` probed only for a `lancedb/` directory and passed
+  `lancedb_path`, with no `vectors_path` — so against a store that had moved to
+  sqlite-vec the probe missed and the entry registered with **both** vector
+  columns empty. Silently: `None` is legal for both, so nothing raised, and the
+  registry simply lost the pointer.
+
+  Affects `ingest.register_book`, `ingest.register_diary_book`, and the two
+  bootstrap entries in `serve/handler.py` (the DocKG bundle one passed
+  `_DOCKG_LANCEDB` unconditionally, recording a directory that need not exist).
+
+  Two independent triggers, not one:
+
+  * **Diaries** — diary-kg >=0.94.0 writes `.diarykg/vectors.sqlite` and no
+    longer creates `lancedb/`. This was the reported case.
+  * **Books** — `build_dockg` constructs `DocKG(book_dir, embedder=...)` with no
+    `vector_backend`, leaving it on `"auto"`, which resolves to sqlite-vec for a
+    fresh corpus. So *every freshly built book* already wrote `vectors.sqlite`
+    and registered nothing, independent of diary-kg. An earlier note in the
+    KGRAG TODO judged the book path "correct until doc_kg Phase 4"; that was
+    wrong — `auto` had already migrated it.
+
+  `cli/cmd_imagine.py` and `build_corpus.py` are **not** affected despite naming
+  `lancedb`: they pass `lancedb_dir=` to `DocKG` on `"auto"`, and `make_backend`
+  derives the sidecar as `<lancedb_dir>.parent/vectors.sqlite`, which lands
+  exactly on the migrated file. Left alone deliberately.
 
 ## [1.12.0] - 2026-07-29
 

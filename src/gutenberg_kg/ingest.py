@@ -55,6 +55,8 @@ from rich.progress import (
 )
 from rich.text import Text
 
+from gutenberg_kg.vector_store import resolve_vector_paths
+
 # kg_rag is an optional kgdeps extra — import lazily inside functions so the
 # module can be imported in environments where it isn't installed (e.g. CI).
 if TYPE_CHECKING:
@@ -240,14 +242,18 @@ def register_book(
     from kg_rag.primitives import KGEntry, KGKind
 
     sqlite = book_dir / ".dockg" / "graph.sqlite"
-    lancedb = book_dir / ".dockg" / "lancedb"
+    # build_dockg leaves DocKG on vector_backend="auto", which resolves to
+    # sqlite-vec for a fresh corpus — so a newly built book writes
+    # vectors.sqlite, not lancedb/. Probe for both rather than assuming either.
+    vectors, lancedb = resolve_vector_paths(book_dir / ".dockg")
     entry = KGEntry(
         name=name,
         kind=KGKind.GUTENBERG,
         repo_path=book_dir,
         venv_path=book_dir / ".venv",
         sqlite_path=sqlite if sqlite.exists() else None,
-        lancedb_path=lancedb if lancedb.exists() else None,
+        vectors_path=vectors,
+        lancedb_path=lancedb,
         tags=[date.today().isoformat()],
     )
     if dry_run:
@@ -291,14 +297,18 @@ def register_diary_book(
     from kg_rag.primitives import KGEntry, KGKind
 
     sqlite = diary_dir / ".diarykg" / "graph.sqlite"
-    lancedb = diary_dir / ".diarykg" / "lancedb"
+    # diary-kg >=0.94.0 writes .diarykg/vectors.sqlite and no longer creates
+    # lancedb/, so probing only for the latter registered both vector columns
+    # empty — silently, since None is a legal value here.
+    vectors, lancedb = resolve_vector_paths(diary_dir / ".diarykg")
     entry = KGEntry(
         name=name,
         kind=KGKind.GUTENBERG,
         repo_path=diary_dir,
         venv_path=diary_dir / ".venv",
         sqlite_path=sqlite if sqlite.exists() else None,
-        lancedb_path=lancedb if lancedb.exists() else None,
+        vectors_path=vectors,
+        lancedb_path=lancedb,
         tags=[date.today().isoformat()],
     )
     if dry_run:
