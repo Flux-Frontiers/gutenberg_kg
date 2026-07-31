@@ -209,7 +209,13 @@ gutenkg-sdxl-server  = "gutenberg_kg.serve.sdxl_server:main"
 [tool.ruff]
 line-length    = 100
 target-version = "py312"
-exclude        = [".claude"]
+# ruff 0.16 formats Python code blocks inside Markdown as stable behaviour
+# (0.15 gates it behind preview), so `ruff format --check .` starts rewriting
+# prose docs the moment the lock resolves 0.16 — a failure that looks unrelated
+# to whatever change triggered the relock. Doc snippets are illustrative and
+# often deliberately aligned, so keep them out of the formatter's reach.
+# doc_kg and ftree_kg carry the same exclusion.
+exclude        = [".claude", "*.md"]
 
 [tool.ruff.lint]
 # BLE = flake8-blind-except (replaces pylint broad-exception-caught);
