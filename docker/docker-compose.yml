@@ -19,8 +19,11 @@ services:
     build:
       context: ..
       dockerfile: docker/Dockerfile
-      args:
-        KGMODULE_UTILS_VERSION: "0.4.6"
+      # No `args:` on purpose. The KG package pins live in ONE place — the ARG
+      # defaults in docker/Dockerfile — so a compose-triggered build and
+      # `make build` (plain `docker build`, no args) produce the same image.
+      # Overriding one pin here is how compose drifted to kgmodule-utils 0.4.6
+      # while the Dockerfile said 0.5.0.
     command: python -u -m gutenberg_kg.serve.handler --rp_serve_api --rp_api_host 0.0.0.0
     ports:
       - "8000:8000"

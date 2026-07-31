@@ -5,8 +5,9 @@ corpus (or a chosen subset of genres), written to ``bundles/<name>/.dockg/``.
 
 This differs from :mod:`gutenberg_kg.ingest`, which builds one DocKG *per book*
 and federates them through the KGRAG registry. Here we walk ``corpus/`` once and
-produce a single ``graph.sqlite`` + ``lancedb`` index — the artifact that gets
-baked into the standalone "fat image" (Pepys-style: pull, run, query directly).
+produce a single ``graph.sqlite`` + ``vectors.sqlite`` (sqlite-vec) index — the
+artifact that gets baked into the standalone "fat image" (Pepys-style: pull,
+run, query directly).
 
 Genre is recoverable for free at query time: with the walk rooted at ``corpus/``,
 every node's ``file_path`` is ``<genre>/<book>/<file>.md``, so the genre is just
@@ -28,7 +29,7 @@ Output layout::
       gutenberg-all/
         .dockg/
           graph.sqlite
-          lancedb/
+          vectors.sqlite     (sqlite-vec; no lancedb/ — a stale one is purged)
           catalog.json
         diaries/
           pepys-complete/.diarykg/
@@ -47,6 +48,7 @@ from __future__ import annotations
 
 import json
 import os
+import shutil
 import time
 from collections import defaultdict
 from dataclasses import dataclass, field
@@ -232,8 +234,6 @@ def bundle_diaries(out_dir: Path) -> int:
     :param out_dir: The bundle's ``.dockg/`` directory (sibling of ``diaries/``).
     :return: Number of diary indices copied.
     """
-    import shutil
-
     diaries_root = CORPUS_ROOT / "diaries"
     if not diaries_root.exists():
         return 0
@@ -250,7 +250,15 @@ def bundle_diaries(out_dir: Path) -> int:
         dest.parent.mkdir(parents=True, exist_ok=True)
         if dest.exists() or dest.is_symlink():
             shutil.rmtree(dest)
-        shutil.copytree(str(diarykg_dir), str(dest), symlinks=True)
+        # Skip any lancedb/ a pre-0.94 diary-kg left behind — the served store
+        # is .diarykg/vectors.sqlite, and handler.py's resolve_vector_paths
+        # prefers it, so copying the old one only bloats the bundle and the image.
+        shutil.copytree(
+            str(diarykg_dir),
+            str(dest),
+            symlinks=True,
+            ignore=shutil.ignore_patterns("lancedb"),
+        )
         n += 1
     return n
 
@@ -319,7 +327,13 @@ def run_build_corpus(genres: list[str], opts: BuildCorpusOptions) -> int:
     name = derive_output_name(genres, opts.output)
     out_dir = BUNDLES_ROOT / name / ".dockg"
     sqlite_path = out_dir / "graph.sqlite"
+    # NOT where vectors go — this build is sqlite-vec end to end and never
+    # writes a LanceDB store. doc_kg still takes `lancedb_dir` as the anchor for
+    # the whole vector store and derives the sqlite-vec sidecar from its parent
+    # (index.sqlite_vectors_path: lancedb_dir.parent / "vectors.sqlite"), so the
+    # path has to be named even though the directory is never created.
     lancedb_path = out_dir / "lancedb"
+    vectors_path = out_dir / "vectors.sqlite"
 
     # Effective strategy: defaults merged with caller overrides.
     effective_strategy: dict[str, str] = {**GENRE_STRATEGY, **opts.strategy_overrides}
@@ -387,7 +401,12 @@ def run_build_corpus(genres: list[str], opts: BuildCorpusOptions) -> int:
             print(f"  strategy={strategy}, genres={sorted(sg_genres)}")
             print(f"    exclude={sorted(sg_exclude)}")
         print(f"[dry-run] phase 2: embed all nodes → {sqlite_path}")
-        print(f"[dry-run] phase 3: sqlite-vec index + SIMILAR_TO → {out_dir / 'vectors.sqlite'}")
+        print(f"[dry-run] phase 3: sqlite-vec index + SIMILAR_TO → {vectors_path}")
+        if lancedb_path.exists():
+            print(
+                f"[dry-run] would remove stale LanceDB store "
+                f"({_dir_size_mb(lancedb_path):.0f} MB) → {lancedb_path}"
+            )
         print("[dry-run] phase 4: build (if needed) + bundle DiaryKG indices → bundles dir")
         print(f"[dry-run] would write {out_dir / 'catalog.json'} (author/title per book)")
         return 0
@@ -400,6 +419,19 @@ def run_build_corpus(genres: list[str], opts: BuildCorpusOptions) -> int:
         return 1
 
     out_dir.mkdir(parents=True, exist_ok=True)
+
+    # Purge a LanceDB store left over from a pre-migration build. Two reasons,
+    # both real: (1) it is ~2.8 GB of index that nothing reads any more — the
+    # handler and resolve_vector_paths both prefer vectors.sqlite — and a
+    # blanket `COPY bundles/` baked every byte of it into the image; (2) doc_kg
+    # resolves vector_backend="auto" by probing the filesystem, and an existing
+    # lancedb/ with no vectors.sqlite yet (a --wipe rebuild) resolves to
+    # "lancedb" — so a stale directory could silently steer a phase back onto
+    # the old backend. Delete it before anything probes for it.
+    if lancedb_path.exists():
+        stale_mb = _dir_size_mb(lancedb_path)
+        shutil.rmtree(lancedb_path)
+        print(f"  [clean] removed stale LanceDB store ({stale_mb:.0f} MB) → {lancedb_path}")
 
     t0 = time.perf_counter()
     # Build the embedder on the requested device. The consolidated build embeds
@@ -437,6 +469,12 @@ def run_build_corpus(genres: list[str], opts: BuildCorpusOptions) -> int:
                 exclude=sg_exclude,
                 embedder=embedder,
                 chunk_strategy=strategy,
+                # Pin the backend here too, not just in phase 2. build_graph()
+                # doesn't touch the lazy .index today, so "auto" is only latent —
+                # but it resolves by probing the filesystem, and leaving the two
+                # phases disagreeing is how a future parse-time index write ends
+                # up on LanceDB while phase 2 writes sqlite-vec.
+                vector_backend="sqlite-vec",
             )
             kg.build_graph(wipe=first and opts.wipe, quiet=opts.quiet)
             kg.close()
