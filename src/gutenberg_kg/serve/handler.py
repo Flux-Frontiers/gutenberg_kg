@@ -76,6 +76,7 @@ from kg_utils.worker import handle_aux_ops
 import runpod
 from gutenberg_kg.diary_meta import DIARY_META as _DIARY_META
 from gutenberg_kg.diary_meta import diary_slug as _diary_slug
+from gutenberg_kg.vector_store import resolve_vector_paths
 
 # ---------------------------------------------------------------------------
 # Config
@@ -88,8 +89,6 @@ EMBED_MODEL = os.environ.get("EMBED_MODEL", "BAAI/bge-small-en-v1.5")
 HANDLER_SECRET = os.environ.get("HANDLER_SECRET", "")
 
 _DOCKG_SQLITE = GUTENBERG_ROOT / ".dockg" / "graph.sqlite"
-_DOCKG_LANCEDB = GUTENBERG_ROOT / ".dockg" / "lancedb"
-_DOCKG_VECTORS = GUTENBERG_ROOT / ".dockg" / "vectors.sqlite"
 _CATALOG_PATH = GUTENBERG_ROOT / ".dockg" / "catalog.json"
 # Metadata columns the sqlite-vec store carries (matches doc_kg's index).
 _VEC_META = ("kind", "name", "title", "file_path")
@@ -168,6 +167,10 @@ def _bootstrap_registry():
         print(f"[bootstrap] WARNING: DocKG not found at {_DOCKG_SQLITE}")
         print("[bootstrap]   Run 'gutenkg build-corpus' then rebuild the image.")
     else:
+        # Register whichever store is actually on disk, on the same precedence
+        # _open_vector_source reads with — previously this hardcoded the LanceDB
+        # dir, recording it even when only vectors.sqlite existed.
+        _vectors, _lancedb = resolve_vector_paths(GUTENBERG_ROOT / ".dockg")
         entry = KGEntry(
             id=str(uuid.uuid4()),
             name="gutenberg",
@@ -175,7 +178,8 @@ def _bootstrap_registry():
             repo_path=GUTENBERG_ROOT,
             venv_path=Path("/usr"),
             sqlite_path=_DOCKG_SQLITE,
-            lancedb_path=_DOCKG_LANCEDB,
+            vectors_path=_vectors,
+            lancedb_path=_lancedb,
             created_at=datetime.now(UTC),
             updated_at=datetime.now(UTC),
         )
@@ -192,7 +196,10 @@ def _bootstrap_registry():
                 continue
             diarykg_dir = diary_dir / ".diarykg"
             sqlite = diarykg_dir / "graph.sqlite"
-            lancedb = diarykg_dir / "lancedb"
+            # diary-kg >=0.94.0 writes vectors.sqlite here and no longer creates
+            # lancedb/, so registering the latter unconditionally left the entry
+            # pointing at a directory that does not exist.
+            vectors, lancedb = resolve_vector_paths(diarykg_dir)
             if not sqlite.exists():
                 print(f"[bootstrap] skipping {diary_dir.name} — no .diarykg/graph.sqlite")
                 continue
@@ -204,6 +211,7 @@ def _bootstrap_registry():
                 repo_path=diary_dir,
                 venv_path=Path("/usr"),
                 sqlite_path=sqlite,
+                vectors_path=vectors,
                 lancedb_path=lancedb,
                 metadata={"source_file": _source_file_for(diary_dir)},
                 created_at=datetime.now(UTC),
