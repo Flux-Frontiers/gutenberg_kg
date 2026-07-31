@@ -70,7 +70,7 @@ RUN apt-get update && \
 ARG KG_RAG_VERSION=0.11.0
 ARG KGMODULE_UTILS_VERSION=0.9.0
 ARG DOC_KG_VERSION=0.20.0
-ARG DIARY_KG_VERSION=0.93.2
+ARG DIARY_KG_VERSION=0.96.0
 RUN pip install --no-cache-dir \
     "runpod>=1.7.0" \
     "kg-rag==${KG_RAG_VERSION}" \

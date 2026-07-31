@@ -38,6 +38,21 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   Because these are `==` pins, a stale one is now a hard resolution failure at
   build time rather than a silent upgrade by the later `pip install .`.
 
+- **`diary-kg>=0.96.0`** (was `>=0.93.2`), bringing it in line with the rest of
+  the set — it requires `doc-kg>=0.20.0` and `kgmodule-utils>=0.9.0`, the same
+  floors declared above. Functionally it also pins `vector_backend="sqlite-vec"`
+  internally and writes `.diarykg/vectors.sqlite` rather than `lancedb/`;
+  under 0.93.2 the sqlite-vec output was incidental, produced by doc-kg's old
+  `"auto"` default resolving that way rather than by any diary-kg guarantee.
+
+- **`build-corpus` names the sqlite-vec store directly.** doc-kg 0.20.0 accepts
+  `vectors_path`, so both `DocKG` constructions now pass it alongside an
+  explicit `vector_backend="sqlite-vec"` and no longer pass `lancedb_dir` at
+  all. Previously the sqlite-vec path could only be *derived* — `lancedb_dir`
+  had to be supplied purely as an anchor whose parent the sidecar hung off
+  (`sqlite_vectors_path()`), which meant naming a directory the build never
+  created. Matches how diary-kg 0.96.0 drives DocKG.
+
 - **`rich>=14.3.3,<15`** (was `>=13.0.0`), matching the rest of the fleet —
   pycode-kg, kg-rag and diary-kg all require `>=14.3.3`, and every KG package
   caps at `<15`. `runpod/requirements.txt` also moves
@@ -101,8 +116,11 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
   Two independent triggers, not one:
 
-  * **Diaries** — diary-kg >=0.94.0 writes `.diarykg/vectors.sqlite` and no
-    longer creates `lancedb/`. This was the reported case.
+  * **Diaries** — diary-kg >=0.96.0 writes `.diarykg/vectors.sqlite` and no
+    longer creates `lancedb/`. This was the reported case. (Earlier drafts of
+    this note cited ">=0.94.0", a version that was never published — the line
+    runs 0.93.2 → 0.93.4 → 0.96.0. Under 0.93.2 the sqlite-vec output came from
+    doc-kg's old `"auto"` default resolving that way, not from diary-kg.)
   * **Books** — `build_dockg` constructs `DocKG(book_dir, embedder=...)` with no
     `vector_backend`, leaving it on `"auto"`, which resolves to sqlite-vec for a
     fresh corpus. So *every freshly built book* already wrote `vectors.sqlite`

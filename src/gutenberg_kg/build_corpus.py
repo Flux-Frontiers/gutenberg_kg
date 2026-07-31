@@ -327,13 +327,12 @@ def run_build_corpus(genres: list[str], opts: BuildCorpusOptions) -> int:
     name = derive_output_name(genres, opts.output)
     out_dir = BUNDLES_ROOT / name / ".dockg"
     sqlite_path = out_dir / "graph.sqlite"
-    # NOT where vectors go — this build is sqlite-vec end to end and never
-    # writes a LanceDB store. doc_kg still takes `lancedb_dir` as the anchor for
-    # the whole vector store and derives the sqlite-vec sidecar from its parent
-    # (index.sqlite_vectors_path: lancedb_dir.parent / "vectors.sqlite"), so the
-    # path has to be named even though the directory is never created.
-    lancedb_path = out_dir / "lancedb"
     vectors_path = out_dir / "vectors.sqlite"
+    # Only ever used to find and delete a pre-migration store (see the purge
+    # below). It is deliberately NOT passed to DocKG: since doc-kg 0.20.0 the
+    # sqlite-vec location is given directly via `vectors_path`, so `lancedb_dir`
+    # no longer has to serve as the anchor the sidecar path was derived from.
+    lancedb_path = out_dir / "lancedb"
 
     # Effective strategy: defaults merged with caller overrides.
     effective_strategy: dict[str, str] = {**GENRE_STRATEGY, **opts.strategy_overrides}
@@ -420,14 +419,17 @@ def run_build_corpus(genres: list[str], opts: BuildCorpusOptions) -> int:
 
     out_dir.mkdir(parents=True, exist_ok=True)
 
-    # Purge a LanceDB store left over from a pre-migration build. Two reasons,
-    # both real: (1) it is ~2.8 GB of index that nothing reads any more — the
-    # handler and resolve_vector_paths both prefer vectors.sqlite — and a
-    # blanket `COPY bundles/` baked every byte of it into the image; (2) doc_kg
-    # resolves vector_backend="auto" by probing the filesystem, and an existing
-    # lancedb/ with no vectors.sqlite yet (a --wipe rebuild) resolves to
-    # "lancedb" — so a stale directory could silently steer a phase back onto
-    # the old backend. Delete it before anything probes for it.
+    # Purge a LanceDB store left over from a pre-migration build: ~2.8 GB of
+    # index nothing reads any more (the handler and resolve_vector_paths both
+    # prefer vectors.sqlite), which a blanket `COPY bundles/` baked into the
+    # image byte for byte.
+    #
+    # It used to be a correctness issue too, not just weight: through doc-kg
+    # 0.19 the default backend was "auto", resolved by probing the filesystem,
+    # so a stale lancedb/ with no vectors.sqlite yet — the state a --wipe
+    # rebuild starts from — silently selected the retired backend. doc-kg 0.20.0
+    # pins the default to sqlite-vec and we now pass it explicitly besides, so
+    # this is purely about size. Delete it anyway; nothing should ship it.
     if lancedb_path.exists():
         stale_mb = _dir_size_mb(lancedb_path)
         shutil.rmtree(lancedb_path)
@@ -465,16 +467,18 @@ def run_build_corpus(genres: list[str], opts: BuildCorpusOptions) -> int:
             kg = DocKG(
                 corpus_root=CORPUS_ROOT,
                 db_path=sqlite_path,
-                lancedb_dir=lancedb_path,
                 exclude=sg_exclude,
                 embedder=embedder,
                 chunk_strategy=strategy,
-                # Pin the backend here too, not just in phase 2. build_graph()
-                # doesn't touch the lazy .index today, so "auto" is only latent —
-                # but it resolves by probing the filesystem, and leaving the two
-                # phases disagreeing is how a future parse-time index write ends
-                # up on LanceDB while phase 2 writes sqlite-vec.
+                # State the store explicitly in both phases rather than letting
+                # either infer it. doc-kg 0.20.0 defaults `vector_backend` to
+                # sqlite-vec (0.19 and earlier defaulted to "auto", which
+                # resolved from whatever was on disk — a stale lancedb/ dir was
+                # enough to keep a migrated corpus on the retired backend), so
+                # this is belt-and-braces; it also means the call says what it
+                # writes instead of relying on a default we don't control.
                 vector_backend="sqlite-vec",
+                vectors_path=vectors_path,
             )
             kg.build_graph(wipe=first and opts.wipe, quiet=opts.quiet)
             kg.close()
@@ -487,11 +491,11 @@ def run_build_corpus(genres: list[str], opts: BuildCorpusOptions) -> int:
         kg_all = DocKG(
             corpus_root=CORPUS_ROOT,
             db_path=sqlite_path,
-            lancedb_dir=lancedb_path,
             embedder=embedder,
-            # Served bundle is sqlite-vec (exact, ~10x smaller). Vectors land at
-            # <bundle>/.dockg/vectors.sqlite (derived from lancedb_dir's parent).
+            # Served bundle is sqlite-vec (exact, ~10x smaller), written to the
+            # path named here rather than derived from a LanceDB anchor.
             vector_backend="sqlite-vec",
+            vectors_path=vectors_path,
         )
         # Resolve the effective device to pick the embedding path: CPU can fan
         # out across processes safely; MPS/CUDA cannot (one shared allocator).

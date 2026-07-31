@@ -90,7 +90,13 @@ dependencies = [
     # >=13.0.0 was both too low to be honest and missing the major-version cap.
     "rich>=14.3.3,<15",
     "doc-kg (>=0.20.0)",  # transformers 5.x — must match kg-rag; see the kgdeps extra
-    "diary-kg (>=0.93.2)",
+    # >=0.96.0 keeps the fleet consistent: it requires doc-kg>=0.20.0 and
+    # kgmodule-utils>=0.9.0, matching the floors above. It also pins
+    # vector_backend="sqlite-vec" internally and writes .diarykg/vectors.sqlite
+    # instead of lancedb/ — 0.93.2 produced sqlite-vec output only because
+    # doc-kg's old "auto" default happened to resolve that way. (There is no
+    # 0.94.0 on PyPI; the line goes 0.93.2 → 0.93.4 → 0.96.0.)
+    "diary-kg (>=0.96.0)",
     "hf-transfer (>=0.1.9,<0.2.0)",
 ]
 

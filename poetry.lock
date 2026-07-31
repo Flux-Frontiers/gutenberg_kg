@@ -1193,9 +1193,10 @@ files = [
 name = "deprecation"
 version = "2.1.0"
 description = "A library to handle automated deprecations"
-optional = false
+optional = true
 python-versions = "*"
 groups = ["main"]
+markers = "extra == \"kgdeps\" or extra == \"viz3d\" or extra == \"full\" or extra == \"all\""
 files = [
     {file = "deprecation-2.1.0-py2.py3-none-any.whl", hash = "sha256:a10811591210e1fb0e768a8c25517cabeabcba6f0bf96564f8ff45189f90b14a"},
     {file = "deprecation-2.1.0.tar.gz", hash = "sha256:72b3bde64e5d778694b0cf68178aed03d15e15477116add3fb773e581f9518ff"},
@@ -1227,22 +1228,21 @@ word-list = ["pyahocorasick"]
 
 [[package]]
 name = "diary-kg"
-version = "0.93.2"
+version = "0.96.0"
 description = "A knowledge graph builder and semantic search engine for diaries and journals"
 optional = false
 python-versions = "<3.14,>=3.12"
 groups = ["main"]
 files = [
-    {file = "diary_kg-0.93.2-py3-none-any.whl", hash = "sha256:0de92c7a202ef84dff2c510109c5e0cd5f3eb501892d04649efae34f05ab9272"},
-    {file = "diary_kg-0.93.2.tar.gz", hash = "sha256:14b846e46b863075b1697580283b346030440df4f2873ce455c4934eb2b9c30c"},
+    {file = "diary_kg-0.96.0-py3-none-any.whl", hash = "sha256:ea213e23c412ae3eaf1446011fe949cc0e21b3dfafbfe35744b252b5dac1eb65"},
+    {file = "diary_kg-0.96.0.tar.gz", hash = "sha256:a2d4e05eaa747a10a58919eea621ddb69c7ae1752b3390ed8c93735710662f5d"},
 ]
 
 [package.dependencies]
 click = ">=8.1.0,<9"
-doc-kg = ">=0.15.8"
-kgmodule-utils = ">=0.4.0"
-lancedb = ">=0.29.0"
-mcp = ">=1.0.0"
+doc-kg = ">=0.20.0"
+kgmodule-utils = ">=0.9.0"
+mcp = ">=1.0.0,<2"
 numpy = ">=1.24.0"
 pandas = ">=2.0.0"
 rich = ">=14.3.3,<15"
@@ -1250,10 +1250,10 @@ sentence-transformers = ">=5.4.1"
 spacy = ">=3.8.11,<4"
 
 [package.extras]
-all = ["PyQt5 (>=5.15.0)", "detect-secrets (>=1.5.0)", "markdown (>=3.6)", "param (>=2.0.0)", "pdoc (>=14.0.0)", "plotly (>=5.14.0)", "pre-commit (>=4.5.1)", "pycode-kg (>=0.19.0)", "pylint (>=4.0.5)", "pytest (>=8.0.0)", "pytest-cov (>=5.0.0)", "pyvis (>=0.3.2)", "pyvista[jupyter] (>=0.44.0)", "pyvistaqt (>=0.11.0)", "ruff (>=0.4.0)", "streamlit (>=1.35.0)", "trame-vtk (>=2.0.0)", "ty (>=0.0.44)"]
-kgdeps = ["pycode-kg (>=0.19.0)"]
+all = ["PyQt5 (>=5.15.0)", "detect-secrets (>=1.5.0)", "markdown (>=3.6)", "param (>=2.0.0)", "pdoc (>=14.0.0)", "pillow (>=10.0.0)", "plotly (>=5.14.0)", "pre-commit (>=4.5.1)", "pylint (>=4.0.5)", "pytest (>=8.0.0)", "pytest-cov (>=5.0.0)", "pyvis (>=0.3.2)", "pyvista (>=0.44.0)", "pyvistaqt (>=0.11.0)", "ruff (>=0.4.0)", "streamlit (>=1.35.0)", "trame-vtk (>=2.0.0)", "ty (>=0.0.44)", "vtracer (>=0.6.15)"]
+dev = ["detect-secrets (>=1.5.0)", "pdoc (>=14.0.0)", "pillow (>=10.0.0)", "pre-commit (>=4.5.1)", "pylint (>=4.0.5)", "pytest (>=8.0.0)", "pytest-cov (>=5.0.0)", "ruff (>=0.4.0)", "ty (>=0.0.44)", "vtracer (>=0.6.15)"]
 viz = ["plotly (>=5.14.0)", "pyvis (>=0.3.2)", "streamlit (>=1.35.0)"]
-viz3d = ["PyQt5 (>=5.15.0)", "markdown (>=3.6)", "param (>=2.0.0)", "pyvista[jupyter] (>=0.44.0)", "pyvistaqt (>=0.11.0)", "trame-vtk (>=2.0.0)"]
+viz3d = ["PyQt5 (>=5.15.0)", "markdown (>=3.6)", "param (>=2.0.0)", "pyvista (>=0.44.0)", "pyvistaqt (>=0.11.0)", "trame-vtk (>=2.0.0)"]
 
 [[package]]
 name = "distlib"
@@ -2861,9 +2861,10 @@ files = [
 name = "lance-namespace"
 version = "0.9.0"
 description = "Lance Namespace interface and plugin registry"
-optional = false
+optional = true
 python-versions = ">=3.8"
 groups = ["main"]
+markers = "extra == \"kgdeps\" or extra == \"viz3d\" or extra == \"full\" or extra == \"all\""
 files = [
     {file = "lance_namespace-0.9.0-py3-none-any.whl", hash = "sha256:f785ff10927e4ce0db69986576670fedd37f8a33521e8a4630c6be22db8061b2"},
     {file = "lance_namespace-0.9.0.tar.gz", hash = "sha256:f738b641cc615b17323baa4eb47900f184688739ee3d2ea9fe39396b9588e53d"},
@@ -2876,9 +2877,10 @@ lance-namespace-urllib3-client = "0.9.0"
 name = "lance-namespace-urllib3-client"
 version = "0.9.0"
 description = "Lance Namespace Specification"
-optional = false
+optional = true
 python-versions = ">=3.8"
 groups = ["main"]
+markers = "extra == \"kgdeps\" or extra == \"viz3d\" or extra == \"full\" or extra == \"all\""
 files = [
     {file = "lance_namespace_urllib3_client-0.9.0-py3-none-any.whl", hash = "sha256:be819c8cffb1e460a3a504dbf52d1ca009560a48e7202b8c4279998e4adf9fe4"},
     {file = "lance_namespace_urllib3_client-0.9.0.tar.gz", hash = "sha256:cf796fa5307fa4dde91fe4bec2af28b90ba79191852d4394e8fe44276538e40f"},
@@ -2894,9 +2896,10 @@ urllib3 = ">=1.25.3,<3.0.0"
 name = "lancedb"
 version = "0.34.0"
 description = "lancedb"
-optional = false
+optional = true
 python-versions = ">=3.10"
 groups = ["main"]
+markers = "extra == \"kgdeps\" or extra == \"viz3d\" or extra == \"full\" or extra == \"all\""
 files = [
     {file = "lancedb-0.34.0-cp39-abi3-macosx_11_0_arm64.whl", hash = "sha256:c462f2e6f933cad659fd0179394eaab578acbc9151fe2ef41bc29b36ecca5058"},
     {file = "lancedb-0.34.0-cp39-abi3-manylinux_2_28_aarch64.whl", hash = "sha256:48829e88e708947d0520454ab9e4f8efa35f3e3626469eadd3a6e061b89cb223"},
@@ -4590,9 +4593,10 @@ wrappers-encryption = ["cryptography (>=45.0.0)"]
 name = "pyarrow"
 version = "25.0.0"
 description = "Python library for Apache Arrow"
-optional = false
+optional = true
 python-versions = ">=3.10"
 groups = ["main"]
+markers = "extra == \"kgdeps\" or extra == \"viz3d\" or extra == \"full\" or extra == \"all\" or extra == \"chat\""
 files = [
     {file = "pyarrow-25.0.0-cp310-cp310-macosx_12_0_arm64.whl", hash = "sha256:ce0ca222802087b9a8cb031a6468442cb6b67c290a45a601cac64753d34954d3"},
     {file = "pyarrow-25.0.0-cp310-cp310-macosx_12_0_x86_64.whl", hash = "sha256:7d6da02ffc7a3a9bda3b7ded4cc2a27ff73969ab37153f3afd46bbbc1ba4f0f7"},
@@ -7934,4 +7938,4 @@ viz3d = ["PyQt5", "markdown", "param", "pycode-kg", "pyvista", "pyvistaqt"]
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.12,<3.14"
-content-hash = "a2fa7c7fee15d81694f1304d4ce5403ba3e715c0d26f740387ecff545f8a64ab"
+content-hash = "28ccb53335f228ca9600a287790c441e9fec68b21076ac14c317affea66f57e9"

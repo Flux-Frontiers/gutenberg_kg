@@ -8,7 +8,7 @@ runpod>=1.7.0
 # transformers>=5.5.0 needs doc-kg>=0.20.0. Older pairs fail at worker startup.
 kg-rag>=0.11.0
 doc-kg>=0.20.0
-diary-kg>=0.93.2
+diary-kg>=0.96.0
 # [sqlite-vec] mirrors pyproject and docker/Dockerfile. Strictly redundant —
 # doc-kg 0.20.0 requires sqlite-vec==0.1.9 as a core dep — but the worker reads
 # vectors.sqlite, so name the dependency it actually serves from rather than
