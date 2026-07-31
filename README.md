@@ -12,7 +12,7 @@
   <img src="https://img.shields.io/badge/corpus-241%20books-orange.svg" alt="Corpus"/>
   <img src="https://img.shields.io/badge/nodes-1.3M-green.svg" alt="Nodes"/>
   <img src="https://img.shields.io/badge/edges-5.1M-green.svg" alt="Edges"/>
-  <a href="https://doi.org/10.5281/zenodo.20045390"><img src="https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20045390-blue.svg" alt="DOI"/></a>
+  <a href="https://doi.org/10.5281/zenodo.20045389"><img src="https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20045389-blue.svg" alt="DOI"/></a>
 </p>
 
 # GutenbergKG — The Knowledge Press
@@ -170,7 +170,7 @@ If you use GutenbergKG in research, use GitHub’s **Cite this repository** butt
   year         = {2026},
   version      = {1.12.0},
   publisher    = {Flux-Frontiers},
-  doi          = {10.5281/zenodo.20045390},
+  doi          = {10.5281/zenodo.20045389},
   url          = {https://github.com/Flux-Frontiers/gutenberg_kg}
 }
 ```
