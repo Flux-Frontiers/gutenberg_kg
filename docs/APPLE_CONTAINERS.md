@@ -74,8 +74,7 @@ deployment pipeline should stay on Docker.
 
 | Piece | What it does | Apple `container` fit |
 |---|---|---|
-| `docker/Dockerfile` | corpus image from `egsuchanek/kgrag-worker:latest`, bakes bundle | ✅ builds as-is |
-| `docker/Dockerfile.sqlite` | sqlite-vec variant | ✅ builds as-is |
+| `docker/Dockerfile` | corpus image from `python:3.12-slim` (self-contained, sqlite-vec), bakes bundle | ✅ builds as-is |
 | `docker/docker-compose.yml` | worker + chat services, profiles, ports, env, restart | ⚠️ no compose — replace with `container run` targets |
 | `Makefile` (`run`/`chat`/`up`/`down`/`logs`/`clean`) | drives compose | ⚠️ rewrite ~6 targets |
 | `host.docker.internal` (compose env, `docker/.env.example`) | reach oMLX :8080, Ollama :11434, mflux :8090/:8091 on the host | ⚠️ hostname does NOT resolve in-container on the tested runtime — Apple targets use the vmnet gateway IP (`APPLE_HOST_GW`, default 192.168.64.1); host services must bind 0.0.0.0 |
@@ -85,21 +84,20 @@ deployment pipeline should stay on Docker.
 
 ## What works out of the box
 
-**The base image is already linux/arm64.** `egsuchanek/kgrag-worker:latest`
-on Docker Hub is published arm64-only, so it runs natively in Apple's VMs —
-no Rosetta, no emulation penalty on the torch/embedding stack. Registry
-pull/push (`container registry login`) speaks standard OCI, so Docker Hub
-keeps working.
+**The base image is already linux/arm64.** `python:3.12-slim` is a multi-arch
+official image, so the arm64 variant is selected automatically and runs
+natively in Apple's VMs — no Rosetta, no emulation penalty on the
+torch/embedding stack. Registry pull/push (`container registry login`) speaks
+standard OCI, so Docker Hub keeps working.
 
-**Both Dockerfiles are plain BuildKit-compatible Dockerfiles.**
+**The Dockerfile is a plain BuildKit-compatible Dockerfile.**
 `container build` runs a BuildKit-based builder in its own VM and handles
-everything these files use: `FROM`, `ARG`/`--build-arg`, `RUN` heredocs
+everything the file uses: `FROM`, `ARG`/`--build-arg`, `RUN` heredocs
 (`python - <<'EOF'`), multi-file `COPY`, `ENV`, `CMD`. Expected commands:
 
 ```sh
 container system start                       # once per boot
 container build -f docker/Dockerfile -t corpus-gutenberg:latest .
-container build -f docker/Dockerfile.sqlite -t corpus-gutenberg-sqlite:latest .
 ```
 
 The multi-GB bundle `COPY` works; give the builder VM headroom first

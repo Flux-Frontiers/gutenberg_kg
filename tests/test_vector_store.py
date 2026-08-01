@@ -19,7 +19,7 @@ def _store(tmp_path, name=".dockg"):
 
 class TestResolveVectorPaths:
     def test_migrated_store_returns_vectors_only(self, tmp_path):
-        """A diary-kg >=0.94.0 / fresh DocKG store: vectors.sqlite, no lancedb."""
+        """A diary-kg >=0.96.0 / fresh DocKG store: vectors.sqlite, no lancedb."""
         d = _store(tmp_path)
         (d / "vectors.sqlite").touch()
         vectors, lancedb = resolve_vector_paths(d)

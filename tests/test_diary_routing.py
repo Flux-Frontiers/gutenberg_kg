@@ -52,6 +52,8 @@ def test_register_diary_book_points_to_diarykg(tmp_path):
     entry = ig.register_diary_book(reg, "gutenberg-diaries-some-diary-doc", diary_dir)
 
     assert entry is reg.registered
-    assert str(entry.sqlite_path).endswith(".diarykg/graph.sqlite")
-    assert str(entry.lancedb_path).endswith(".diarykg/lancedb")
+    assert entry.sqlite_path.parent == diary_dir / ".diarykg"
+    assert entry.sqlite_path.name == "graph.sqlite"
+    assert entry.lancedb_path.parent == diary_dir / ".diarykg"
+    assert entry.lancedb_path.name == "lancedb"
     assert ".dockg" not in str(entry.sqlite_path)

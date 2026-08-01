@@ -297,7 +297,7 @@ def register_diary_book(
     from kg_rag.primitives import KGEntry, KGKind
 
     sqlite = diary_dir / ".diarykg" / "graph.sqlite"
-    # diary-kg >=0.94.0 writes .diarykg/vectors.sqlite and no longer creates
+    # diary-kg >=0.96.0 writes .diarykg/vectors.sqlite and no longer creates
     # lancedb/, so probing only for the latter registered both vector columns
     # empty — silently, since None is a legal value here.
     vectors, lancedb = resolve_vector_paths(diary_dir / ".diarykg")

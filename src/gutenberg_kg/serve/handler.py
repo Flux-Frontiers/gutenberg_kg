@@ -196,7 +196,7 @@ def _bootstrap_registry():
                 continue
             diarykg_dir = diary_dir / ".diarykg"
             sqlite = diarykg_dir / "graph.sqlite"
-            # diary-kg >=0.94.0 writes vectors.sqlite here and no longer creates
+            # diary-kg >=0.96.0 writes vectors.sqlite here and no longer creates
             # lancedb/, so registering the latter unconditionally left the entry
             # pointing at a directory that does not exist.
             vectors, lancedb = resolve_vector_paths(diarykg_dir)

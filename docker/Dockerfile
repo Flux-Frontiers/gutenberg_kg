@@ -17,7 +17,8 @@
 # Layout baked into the image at /workspace/gutenberg/:
 #   .dockg/
 #     graph.sqlite    (696K nodes · 6.2M edges)
-#     lancedb/        (696K × 384-dim vectors)
+#     vectors.sqlite  (696K × 384-dim vectors, sqlite-vec — exact, ~10x smaller
+#                      than the LanceDB store it replaced)
 #     catalog.json    (241 books · author/title/Gutenberg ID)
 #   diaries/
 #     The Diary of Samuel Pepys — Complete/.diarykg/
@@ -29,30 +30,68 @@ FROM python:3.12-slim
 
 WORKDIR /app
 
-# System libs needed by the sentence-transformers / lancedb wheels.
+# System libs needed by the sentence-transformers / pyarrow wheels.
+# libgomp1: OpenMP runtime for torch. libglib2.0-0: pulled in by the pyarrow
+# side of the doc-kg stack.
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
         libgomp1 \
         libglib2.0-0 \
     && rm -rf /var/lib/apt/lists/*
 
+# CPU-only torch, installed BEFORE the KG stack that pulls it transitively.
+#
+# torch's default PyPI wheel for linux/aarch64 is now a CUDA build (2.13.0+cu130
+# at the time of writing — the aarch64 CUDA wheels exist for ARM servers like
+# Grace Hopper). Nothing here asks for it; it arrives silently through
+# sentence-transformers. In this image it is pure dead weight: 2.9 GB of
+# nvidia-* runtime plus 652 MB of triton, in a container that reports
+# torch.cuda.is_available() == False whether it runs under Docker Desktop or
+# Apple's `container` — both are arm64 VMs on Apple Silicon with no NVIDIA GPU.
+#
+# Its own RUN on purpose: --index-url REPLACES PyPI for the whole command, and
+# the PyTorch CPU index does not host kg-rag/doc-kg/diary-kg. Installing torch
+# first means the resolver below finds the requirement already satisfied and
+# leaves the CPU build in place. Keep this layer above the KG install so a pin
+# bump doesn't re-download torch.
+#
+# NOTE: this is the LOCAL/Apple image only. runpod/Dockerfile is deliberately
+# left on the default CUDA wheels — RunPod serverless is amd64 on real GPUs,
+# where that build is the correct one.
+RUN pip install --no-cache-dir --index-url https://download.pytorch.org/whl/cpu torch
+
 # runpod: serverless worker harness (rp_serve_api) used by the handler
 # kg-rag: KGRegistry/CorpusRegistry + embedder wrapper — imported lazily by
 #         the handler's _bootstrap_registry, so a missing install only fails
 #         at container startup, not at build time
-# kgmodule-utils: synthesis + shared KG runtime
-# doc-kg: DocKG index + query API (pulls the heavy torch/sentence-transformers/
-#         lancedb stack transitively)
+# kgmodule-utils: synthesis + shared KG runtime; the [sqlite-vec] extra supplies
+#         the sqlite_vec module the served vectors.sqlite store needs
+# doc-kg: DocKG index + query API (pulls the heavy torch/sentence-transformers
+#         stack transitively)
 # diary-kg: DiaryKG temporal index + query API
 # streamlit + httpx: chat UI dependencies
 # watchdog: faster Streamlit file-watching via native OS events (vs. polling)
 # All three KG packages ship on PyPI, so they install by version like any other
 # dep. Pre-installing them here (before the src COPY below) keeps them in a cached
 # layer, so source-only changes don't re-resolve the heavy KG/torch stack.
-ARG KG_RAG_VERSION=0.10.0
-ARG KGMODULE_UTILS_VERSION=0.5.0
-ARG DOC_KG_VERSION=0.18.0
-ARG DIARY_KG_VERSION=0.93.2
+# KEEP THESE >= THE FLOORS IN pyproject.toml [project].dependencies. The
+# `pip install .` below re-resolves the same packages, so a pin below the floor
+# is silently upgraded there — the pinned layer is wasted work and the numbers
+# here become fiction. These are the versions the build is verified against.
+#
+# They also move as a SET, not individually — these four are cross-pinned:
+#   kg-rag 0.11.0      needs transformers>=5.5.0 (and is the floor for
+#                      KGEntry.vectors_path, which handler.py passes at startup)
+#   doc-kg 0.20.0      transformers>=5.5.0, kgmodule-utils>=0.9.0
+#   kgmodule-utils 0.9.0
+#   diary-kg 0.96.0    requires doc-kg>=0.20.0 + kgmodule-utils>=0.9.0
+# Because these are `==` pins, a stale one is a hard resolution failure at build
+# time, not a silent upgrade: doc-kg 0.20.0 with kgmodule-utils==0.8.0 cannot
+# resolve. Bump them together and rerun `poetry lock`.
+ARG KG_RAG_VERSION=0.11.0
+ARG KGMODULE_UTILS_VERSION=0.9.0
+ARG DOC_KG_VERSION=0.20.0
+ARG DIARY_KG_VERSION=0.96.0
 RUN pip install --no-cache-dir \
     "runpod>=1.7.0" \
     "kg-rag==${KG_RAG_VERSION}" \

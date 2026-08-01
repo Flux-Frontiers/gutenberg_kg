@@ -36,11 +36,12 @@
 # See docs/APPLE_CONTAINERS.md for setup and caveats.
 RUNTIME ?= docker
 
-# NOTE: docker/Dockerfile is self-contained (python:3.12-slim + PyPI pins).
-# Only the sqlite-vec variant (docker/Dockerfile.sqlite) still builds FROM
-# egsuchanek/kgrag-worker:latest — that base is built and pushed from the
-# KGRAG repo (~/repos/KGRAG/runpod/build_image.sh, Docker required); keep it
-# current on the Hub before building the sqlite variant.
+# NOTE: docker/Dockerfile is self-contained (python:3.12-slim + PyPI pins) and
+# is now the only image definition here — the old sqlite-vec variant
+# (docker/Dockerfile.sqlite, FROM egsuchanek/kgrag-worker:latest) was deleted
+# once this one went sqlite-vec by default. The KG package pins live in that
+# file's ARG defaults and nowhere else; keep them >= the pyproject.toml floors
+# or `pip install .` silently upgrades past them.
 
 IMAGE        = corpus-gutenberg
 COMPOSE      = docker compose -f docker/docker-compose.yml

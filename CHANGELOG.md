@@ -25,12 +25,102 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Changed
 
+- **Dependency floors raised to a co-installable set:** `doc-kg>=0.20.0` and
+  `pycode-kg>=0.21.2`, alongside the existing `kg-rag>=0.11.0`. The previous
+  floors admitted doc-kg 0.18.x / pycode-kg 0.20.x, which pin `transformers<4.57`
+  and so contradict kg-rag 0.11.0's `transformers>=5.5.0`. `runpod/requirements.txt`
+  carried the same stale floors and is bumped to match.
+
+- **Container pins are declared once**, in `docker/Dockerfile`'s `ARG` defaults.
+  `docker-compose.yml` overrode `KGMODULE_UTILS_VERSION` with `0.4.6` while the
+  Dockerfile said `0.5.0`, so a compose-triggered build and `make build`
+  produced different images from the same Dockerfile; the `args:` block is gone.
+  Because these are `==` pins, a stale one is now a hard resolution failure at
+  build time rather than a silent upgrade by the later `pip install .`.
+
+- **`diary-kg>=0.96.0`** (was `>=0.93.2`), bringing it in line with the rest of
+  the set — it requires `doc-kg>=0.20.0` and `kgmodule-utils>=0.9.0`, the same
+  floors declared above. Functionally it also pins `vector_backend="sqlite-vec"`
+  internally and writes `.diarykg/vectors.sqlite` rather than `lancedb/`;
+  under 0.93.2 the sqlite-vec output was incidental, produced by doc-kg's old
+  `"auto"` default resolving that way rather than by any diary-kg guarantee.
+
+- **`build-corpus` names the sqlite-vec store directly.** doc-kg 0.20.0 accepts
+  `vectors_path`, so both `DocKG` constructions now pass it alongside an
+  explicit `vector_backend="sqlite-vec"` and no longer pass `lancedb_dir` at
+  all. Previously the sqlite-vec path could only be *derived* — `lancedb_dir`
+  had to be supplied purely as an anchor whose parent the sidecar hung off
+  (`sqlite_vectors_path()`), which meant naming a directory the build never
+  created. Matches how diary-kg 0.96.0 drives DocKG.
+
+- **`rich>=14.3.3,<15`** (was `>=13.0.0`), matching the rest of the fleet —
+  pycode-kg, kg-rag and diary-kg all require `>=14.3.3`, and every KG package
+  caps at `<15`. `runpod/requirements.txt` also moves
+  `sentence-transformers>=3.0.0` → `>=5.4.1,<6`, the floor doc-kg 0.20.0 and
+  kg-rag 0.11.0 already forced.
+
 ### Removed
 
 - **`_DOCKG_LANCEDB` / `_DOCKG_VECTORS`** module constants in `serve/handler.py`,
   now that the paths are derived. `_DOCKG_VECTORS` was already dead.
 
+- **`docker/Dockerfile.sqlite`** — its premise ("like the main image, but
+  sqlite-vec and no LanceDB") is what `docker/Dockerfile` now does by default.
+  Nothing built it: no Make target, no CI. It was also a liability — it built
+  `FROM egsuchanek/kgrag-worker:latest`, an external base needing a manual
+  rebuild and push from the KGRAG repo, and installed everything `--no-deps`, so
+  its real dependency set was whatever that base happened to carry (it never
+  installed kg-rag or diary-kg at all).
+
 ### Fixed
+
+- **The image shipped ~3.8 GB of unusable CUDA runtime.** torch's default PyPI
+  wheel for `linux/aarch64` is now a CUDA build (`2.13.0+cu130`), pulled in
+  transitively via sentence-transformers — so `docker/Dockerfile` installed
+  2.9 GB of `nvidia-*` packages plus 652 MB of `triton` into an arm64 image that
+  reports `torch.cuda.is_available() == False` under both Docker Desktop and
+  Apple's `container`. Nothing in the config asked for this; it arrived when
+  torch changed its aarch64 packaging.
+
+  A dedicated `RUN` now installs torch from the PyTorch CPU index before the KG
+  stack that pulls it. It must be its own layer: `--index-url` replaces PyPI for
+  the whole command and that index does not host kg-rag/doc-kg/diary-kg.
+  Not a downgrade — the CPU index carries the same `2.13.0` for cp312 aarch64,
+  and the floors it must satisfy are low (`sentence-transformers` needs
+  `torch>=1.11.0`, `transformers` `torch>=2.4`), so the later install leaves it
+  alone. `nvidia/` 2970 MB → 0, `triton` 652 MB → 0, `torch` 914 MB → 635 MB.
+
+  `runpod/Dockerfile` is deliberately unchanged: RunPod serverless is amd64 on
+  real GPUs, where the CUDA build is the correct one.
+
+- **`build-corpus` never removed a pre-migration LanceDB store.** Phase 2 has
+  written sqlite-vec since the migration, but nothing deleted the `lancedb/`
+  directory beside it, so a freshly rebuilt bundle still carried ~2.8 GB of index
+  from an earlier build — and `docker/Dockerfile`'s blanket
+  `COPY bundles/gutenberg-all/` baked every byte of it into the image. Reads were
+  unaffected (`resolve_vector_paths` and the handler both prefer
+  `vectors.sqlite`), so it was pure weight. `run_build_corpus` now purges it,
+  `bundle_diaries` skips any `lancedb/` a pre-0.94 diary-kg left behind, and
+  `.dockerignore` excludes `**/lancedb` as a pack-time backstop. Build context
+  drops 7.8 GB → 5.0 GB.
+
+- **Phase 1 of `build-corpus` left `vector_backend` on `"auto"`** while phase 2
+  pinned `sqlite-vec`. `auto` resolves by probing the filesystem, and an existing
+  `lancedb/` with no `vectors.sqlite` yet — exactly the state a `--wipe` rebuild
+  starts from — resolves to `lancedb`. Latent today (`build_graph` never touches
+  the lazy `.index`), but the two phases disagreeing is a trap. Both now pin
+  `sqlite-vec`.
+
+- **`.diarykg/corpus` shipped into the image as a dangling symlink.** It is
+  DiaryKG's back-pointer to its source `.diary` directory, an absolute host path
+  that `bundle_diaries` copies verbatim via `copytree(symlinks=True)`; Docker
+  copies symlinks as-is, so it landed in the image pointing at a path that does
+  not exist there. Nothing reads it at serve time. Now excluded at pack time.
+
+- **`bundles/` was not gitignored**, despite `build_corpus`'s docstring saying so.
+  The `**/.dockg/*.sqlite` rules caught the multi-GB databases by coincidence,
+  which left `catalog.json` — and anything a future bundle format adds —
+  committable. The whole tree is ignored now.
 
 - **Registration recorded no vector store for migrated KGs.** All four sites
   that build a `KGEntry` probed only for a `lancedb/` directory and passed
@@ -45,8 +135,11 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
   Two independent triggers, not one:
 
-  * **Diaries** — diary-kg >=0.94.0 writes `.diarykg/vectors.sqlite` and no
-    longer creates `lancedb/`. This was the reported case.
+  * **Diaries** — diary-kg >=0.96.0 writes `.diarykg/vectors.sqlite` and no
+    longer creates `lancedb/`. This was the reported case. (Earlier drafts of
+    this note cited ">=0.94.0", a version that was never published — the line
+    runs 0.93.2 → 0.93.4 → 0.96.0. Under 0.93.2 the sqlite-vec output came from
+    doc-kg's old `"auto"` default resolving that way, not from diary-kg.)
   * **Books** — `build_dockg` constructs `DocKG(book_dir, embedder=...)` with no
     `vector_backend`, leaving it on `"auto"`, which resolves to sqlite-vec for a
     fresh corpus. So *every freshly built book* already wrote `vectors.sqlite`

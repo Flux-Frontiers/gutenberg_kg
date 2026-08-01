@@ -157,6 +157,13 @@ site/
 **/.dockg/models
 **/.dockg/embeddings.json
 
+# Consolidated build output from `gutenkg build-corpus` -- multi-GB and fully
+# reproducible. The rules above only caught bundles/*/.dockg/*.sqlite by
+# coincidence, so catalog.json (and anything else a future bundle format adds)
+# stayed committable; build_corpus.py's docstring already claimed this directory
+# was ignored, which it was not. Ignore the whole tree, as intended.
+bundles/
+
 # AgentKG local store -- nothing under it is ever tracked
 **/.agentkg/
 

@@ -9,6 +9,19 @@
 **/*.sqlite-shm
 **/*.sqlite-journal
 
+# LanceDB stores — dead weight since the sqlite-vec migration. build-corpus now
+# writes vectors.sqlite and the handler prefers it (resolve_vector_paths), but it
+# does NOT delete a lancedb/ dir left over from a pre-migration build, so
+# `COPY bundles/gutenberg-all/` would bake ~2.8 GB of stale index into the image.
+# Excluding it at pack time keeps the image honest no matter what's on disk.
+**/lancedb
+
+# DiaryKG's back-pointer to its source .diary dir — an ABSOLUTE host path
+# (/Users/.../corpus/diaries/<name>/.diary) that bundle_diaries copies verbatim
+# (shutil.copytree(symlinks=True)). Docker copies symlinks as-is, so it lands in
+# the image dangling. Nothing at serve time reads it; keep it out.
+**/.diarykg/corpus
+
 # Repo cruft that has no business in the build context
 .git/
 .venv/

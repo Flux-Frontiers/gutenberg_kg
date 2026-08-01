@@ -12,7 +12,8 @@ FROM python:3.12-slim
 
 WORKDIR /app
 
-# System deps needed by sentence-transformers / lancedb
+# System deps needed by sentence-transformers / pyarrow (libgomp1 is torch's
+# OpenMP runtime). No lancedb here — the worker serves sqlite-vec.
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
         libgomp1 \

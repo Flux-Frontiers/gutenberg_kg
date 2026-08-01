@@ -80,10 +80,23 @@ classifiers = [
 requires-python = ">=3.12,<3.14"
 dependencies = [
     "click>=8.1.0,<9",
-    "kgmodule-utils[synthesis,sqlite-vec]>=0.8.0",
-    "rich>=13.0.0",
-    "doc-kg (>=0.18.1)",
-    "diary-kg (>=0.93.2)",
+    # >=0.9.0 because doc-kg 0.20.0 and pycode-kg 0.21.2 both require it; at
+    # >=0.8.0 this floor was a lie the resolver quietly corrected. Both extras
+    # still exist in 0.9.0 (synthesis, sqlite-vec).
+    "kgmodule-utils[synthesis,sqlite-vec]>=0.9.0",
+    # Matches the rest of the fleet, which all agree on >=14.3.3,<15:
+    # pycode-kg 0.21.2, kg-rag 0.11.0 and diary-kg 0.93.2 each require
+    # rich>=14.3.3, and all four (incl. doc-kg 0.20.0) cap at <15. The old
+    # >=13.0.0 was both too low to be honest and missing the major-version cap.
+    "rich>=14.3.3,<15",
+    "doc-kg (>=0.20.0)",  # transformers 5.x — must match kg-rag; see the kgdeps extra
+    # >=0.96.0 keeps the fleet consistent: it requires doc-kg>=0.20.0 and
+    # kgmodule-utils>=0.9.0, matching the floors above. It also pins
+    # vector_backend="sqlite-vec" internally and writes .diarykg/vectors.sqlite
+    # instead of lancedb/ — 0.93.2 produced sqlite-vec output only because
+    # doc-kg's old "auto" default happened to resolve that way. (There is no
+    # 0.94.0 on PyPI; the line goes 0.93.2 → 0.93.4 → 0.96.0.)
+    "diary-kg (>=0.96.0)",
     "hf-transfer (>=0.1.9,<0.2.0)",
 ]
 
@@ -101,8 +114,18 @@ dev = [
     "vtracer>=0.6.0",
 ]
 kgdeps = [
-    "kg-rag>=0.9.1",
-    "pycode-kg>=0.20.0",
+    # >=0.11.0 is a hard floor, not a preference: KGEntry gained `vectors_path`
+    # in 0.11.0, and serve/handler.py's _bootstrap_registry plus ingest.py's
+    # register_* helpers pass it unconditionally since the sqlite-vec migration.
+    # On 0.10.0 they raise TypeError at worker startup, not at import.
+    #
+    # kg-rag 0.11.0 also moved to transformers>=5.5.0, which the older doc-kg
+    # (<0.20.0) and pycode-kg (<0.21.2) pins (transformers<4.57) contradict. Their
+    # floors are raised in lockstep so the three stay co-installable: a fresh
+    # resolve can't land on the conflicting set, and an in-place `pip install -U
+    # kg-rag` against an older env fails loudly instead of half-upgrading.
+    "kg-rag>=0.11.0",
+    "pycode-kg>=0.21.2",
 ]
 viz = [
     "plotly>=5.0.0",
@@ -118,7 +141,7 @@ viz3d = [
     # [jupyter] (→ trame) only if we ever render 3-D into a notebook or browser.
     "pyvista>=0.44.0",
     "pyvistaqt>=0.11.0",
-    "pycode-kg>=0.20.0",
+    "pycode-kg>=0.21.2",
 ]
 mcp = [
     # Upper-bounded: fastmcp ships majors on its own schedule (2.x → 3.x), and
@@ -153,7 +176,7 @@ image = [
 # Everything except dev tooling — the recommended default install.
 full = [
     # kgdeps
-    "kg-rag>=0.9.1",
+    "kg-rag>=0.11.0",  # hard floor — KGEntry.vectors_path; see the kgdeps extra
     # viz
     "plotly>=5.0.0",
     # viz3d
@@ -162,7 +185,7 @@ full = [
     "PyQt5>=5.15.0",
     "pyvista>=0.44.0",  # NOT [jupyter] — see viz3d extra note above
     "pyvistaqt>=0.11.0",
-    "pycode-kg>=0.20.0",
+    "pycode-kg>=0.21.2",
     # mcp
     "fastmcp>=3.0,<4",  # bounded — see the mcp extra above
     "structlog>=24.0",
@@ -180,7 +203,7 @@ all = [
     "scipy>=1.13.0",
     "vtracer>=0.6.0",
     # kgdeps
-    "kg-rag>=0.9.1",
+    "kg-rag>=0.11.0",  # hard floor — KGEntry.vectors_path; see the kgdeps extra
     # viz
     "plotly>=5.0.0",
     # viz3d
@@ -189,7 +212,7 @@ all = [
     "PyQt5>=5.15.0",
     "pyvista>=0.44.0",  # NOT [jupyter] — see viz3d extra note above
     "pyvistaqt>=0.11.0",
-    "pycode-kg>=0.20.0",
+    "pycode-kg>=0.21.2",
 ]
 
 [project.urls]
