@@ -57,6 +57,7 @@ from __future__ import annotations
 
 import json
 import os
+import re
 import sqlite3
 import time
 import uuid
@@ -236,6 +237,38 @@ def _bootstrap_registry():
     return reg
 
 
+def _stored_vector_dim(path: Path, default: int = 384) -> int:
+    """Return the embedding width a sqlite-vec store was actually built with.
+
+    ``SqliteVecBackend.open()`` creates its vec0 table with ``CREATE VIRTUAL
+    TABLE IF NOT EXISTS``, so for a store that already exists the ``dim`` passed
+    to the constructor is accepted and then silently ignored — the table keeps
+    the width it was built with.  Hardcoding a dimension therefore does *not*
+    fail at startup; it fails at the first query, with ``OperationalError:
+    Dimension mismatch for query vector``.  Since ``EMBED_MODEL`` is
+    configurable and not every sentence-transformer is 384-wide (bge-base and
+    mpnet are 768, bge-large is 1024), read the width off the store instead of
+    asserting one.
+
+    :param path: Path to the ``vectors.sqlite`` store.
+    :param default: Width to assume when the store has no vec0 table yet — a
+        fresh store, where the value is used to *create* the table rather than
+        to match an existing one.
+    :return: The declared embedding width.
+    """
+    try:
+        with sqlite3.connect(str(path)) as con:
+            row = con.execute(
+                "SELECT sql FROM sqlite_master WHERE type='table' AND name='vec_nodes'"
+            ).fetchone()
+    except sqlite3.Error:
+        return default
+    if not row or not row[0]:
+        return default
+    m = re.search(r"embedding\s+\w+\[(\d+)\]", row[0])
+    return int(m.group(1)) if m else default
+
+
 def _open_vector_source(dockg_dir, *, label: str):
     """Open a vector source for a ``.dockg`` dir — sqlite-vec if present, else LanceDB.
 
@@ -252,9 +285,10 @@ def _open_vector_source(dockg_dir, *, label: str):
     if vectors.exists():
         from kg_utils.vector_backend import SqliteVecBackend
 
-        be = SqliteVecBackend(vectors, dim=384, meta_columns=_VEC_META, check_same_thread=False)
+        dim = _stored_vector_dim(vectors)
+        be = SqliteVecBackend(vectors, dim=dim, meta_columns=_VEC_META, check_same_thread=False)
         be.open(wipe=False)
-        print(f"[startup] {label}: sqlite-vec store ({be.count()} vectors)")
+        print(f"[startup] {label}: sqlite-vec store ({be.count()} vectors, dim={dim})")
         return be
     if lancedb_dir.exists():
         import lancedb
