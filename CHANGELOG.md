@@ -8,6 +8,35 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Removed
+
+- **The `full` and `all` aggregate extras.** They were the reason `poetry lock`
+  took over eight minutes.
+
+  Re-listing a package inside an aggregate makes it a *second* declaration under
+  different markers. Poetry reports that as `Duplicate dependencies … Different
+  requirements found` and resolves it by discarding the entire resolution,
+  adding an override, and starting over — with the override set accumulating, so
+  each restart is a bigger problem than the last. A `-vvv` lock showed **1,278
+  restarts across 1,321 solver runs**, 309s of it inside the solver, and *zero*
+  package downloads. Twelve packages triggered it.
+
+  Removing the two aggregates takes the lock from **503s to 9.6s**, resolving to
+  a byte-identical package set (253 packages before and after).
+
+  The obvious fix — `full = ["gutenberg-kg[kgdeps,viz,viz3d,mcp]"]` — poetry
+  rejects outright: `Package 'gutenberg-kg[…]' is listed as a dependency of
+  itself`. So there is no way to keep the aggregates and the speed.
+
+  **Migration:** `--extras full` → `--extras "kgdeps viz viz3d mcp"`;
+  `.[full]` → `.[kgdeps,viz,viz3d,mcp]`; `--all-extras` is unchanged and now
+  covers what `all` did.
+
+### Changed
+
+- `dev`'s `pillow` floor raised `>=10.0.0` → `>=10.4.0` to match `chat`/`image`,
+  removing the one genuinely divergent duplicate constraint.
+
 ### Added
 
 - **`gutenberg_kg.vector_store.resolve_vector_paths()`** — resolves a KG store
