@@ -89,7 +89,7 @@ dependencies = [
     # rich>=14.3.3, and all four (incl. doc-kg 0.20.0) cap at <15. The old
     # >=13.0.0 was both too low to be honest and missing the major-version cap.
     "rich>=14.3.3,<15",
-    "doc-kg (>=0.20.0)",  # transformers 5.x — must match kg-rag; see the kgdeps extra
+    "doc-kg (>=0.21.1)",  # transformers 5.x — must match kg-rag; see the kgdeps extra
     # >=0.96.0 keeps the fleet consistent: it requires doc-kg>=0.20.0 and
     # kgmodule-utils>=0.9.0, matching the floors above. It also pins
     # vector_backend="sqlite-vec" internally and writes .diarykg/vectors.sqlite
