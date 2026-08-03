@@ -53,7 +53,7 @@ The Knowledge Press is a self-contained Docker app: a query worker, a Streamlit 
 ```bash
 git clone https://github.com/Flux-Frontiers/gutenberg_kg
 cd gutenberg_kg
-poetry install --extras full
+poetry install --extras "kgdeps viz viz3d mcp"
 make init                 # download local models once
 make build-corpus         # build DocKG + DiaryKG indices (~30 min on Apple Silicon)
 make build                # bake the corpus into the Docker image

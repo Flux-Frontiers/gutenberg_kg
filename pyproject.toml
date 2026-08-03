@@ -13,8 +13,7 @@
 #   pip install -e ".[viz]"             core + 2-D timeline visualisation (plotly)
 #   pip install -e ".[viz3d]"           core + 3-D visualisation (pyvista, PyQt5, pycode-kg)
 #   pip install -e ".[mcp]"             optional MCP server support (gutenkg-mcp)
-#   pip install -e ".[full]"            everything except dev tools (RECOMMENDED)
-#   pip install -e ".[all]"             dev + kgdeps + viz + viz3d (everything)
+#   pip install -e ".[kgdeps,viz,viz3d,mcp]"   everything except dev tools (RECOMMENDED)
 #   pip install -e "."                  core runtime only
 #
 # Quick install (poetry)
@@ -25,7 +24,7 @@
 #   poetry install --extras "viz"       core + 2-D timeline visualisation only
 #   poetry install --extras "viz3d"     core + 3-D visualisation only
 #   poetry install --extras "mcp"       core + MCP server only
-#   poetry install --extras "full"      everything except dev tools (RECOMMENDED)
+#   poetry install --extras "kgdeps viz viz3d mcp"   everything but dev (RECOMMENDED)
 #   poetry install                      core runtime only
 #
 # First-time setup
@@ -92,7 +91,7 @@ dev = [
     "detect-secrets>=1.5.0",
     "ty>=0.0.41",
     "pdoc>=14.0.0",
-    "pillow>=10.0.0",
+    "pillow>=10.4.0",
     "pre-commit>=4.5.1",
     "pytest>=8.0.0",
     "pytest-cov>=5.0.0",
@@ -152,47 +151,16 @@ image = [
     "pydantic>=2.8.0",
     "pillow>=10.4.0",
 ]
-# Everything except dev tooling — the recommended default install.
-full = [
-    # kgdeps
-    "kg-rag>=0.11.0",  # hard floor — KGEntry.vectors_path; see the kgdeps extra
-    # viz
-    "plotly>=5.0.0",
-    # viz3d
-    "markdown>=3.6",
-    "param>=2.0.0",
-    "PyQt5>=5.15.0",
-    "pyvista>=0.44.0",  # NOT [jupyter] — see viz3d extra note above
-    "pyvistaqt>=0.11.0",
-    "pycode-kg>=0.21.4",
-    # mcp
-    "fastmcp>=3.0,<4",  # bounded — see the mcp extra above
-    "structlog>=24.0",
-]
-all = [
-    # dev
-    "detect-secrets>=1.5.0",
-    "ty>=0.0.41",
-    "pdoc>=14.0.0",
-    "pillow>=10.0.0",
-    "pre-commit>=4.5.1",
-    "pytest>=8.0.0",
-    "pytest-cov>=5.0.0",
-    "ruff>=0.4.0",
-    "scipy>=1.13.0",
-    "vtracer>=0.6.0",
-    # kgdeps
-    "kg-rag>=0.11.0",  # hard floor — KGEntry.vectors_path; see the kgdeps extra
-    # viz
-    "plotly>=5.0.0",
-    # viz3d
-    "markdown>=3.6",
-    "param>=2.0.0",
-    "PyQt5>=5.15.0",
-    "pyvista>=0.44.0",  # NOT [jupyter] — see viz3d extra note above
-    "pyvistaqt>=0.11.0",
-    "pycode-kg>=0.21.4",
-]
+# NOTE: there are deliberately no `full` / `all` aggregate extras. Re-listing a
+# package in an aggregate makes it a *second* declaration under different
+# markers, which poetry reports as "Duplicate dependencies ... Different
+# requirements found" and handles by discarding the whole resolution, adding an
+# override, and starting over. Twelve packages triggered that here; the
+# overrides accumulate, so `poetry lock` took 1,278 restarts and 503s. Removing
+# the two aggregates took the same lock to 11s.
+# The obvious alternative — `full = ["gutenberg-kg[kgdeps,viz,viz3d,mcp]"]` —
+# poetry rejects outright ("Package ... is listed as a dependency of itself").
+# Use `--all-extras`, or name the extras you want.
 
 [project.urls]
 Homepage   = "https://github.com/Flux-Frontiers/gutenberg_kg"

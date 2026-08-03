@@ -2,7 +2,7 @@
 
 This guide covers everything needed to install, build, and run GutenbergKG — both the **CLI workflow** (build and query the corpus directly) and the **Docker workflow** (run the corpus behind a query worker and chat UI).
 
-> **TL;DR** — For the CLI: install Poetry, `poetry install --extras full`, `gutenkg ingest --force-build`. For Docker: `make build-corpus && make build && make run`. Querying needs no LLM; synthesis and image generation need a local LLM (oMLX or Ollama).
+> **TL;DR** — For the CLI: install Poetry, `poetry install --extras "kgdeps viz viz3d mcp"`, `gutenkg ingest --force-build`. For Docker: `make build-corpus && make build && make run`. Querying needs no LLM; synthesis and image generation need a local LLM (oMLX or Ollama).
 
 ---
 
@@ -39,31 +39,34 @@ On Apple Silicon, **oMLX** is recommended (fast, multi-model, OpenAI-compatible)
 ```bash
 git clone https://github.com/Flux-Frontiers/gutenberg_kg
 cd gutenberg_kg
-poetry install --extras full
+poetry install --extras "kgdeps viz viz3d mcp"
 gutenkg --help
 ```
 
-`--extras full` is the **recommended default** — it installs everything except dev tooling (KG integrations, visualisation, and the MCP server). A bare `poetry install` gives you the core runtime only; layer in individual extras if you want a leaner install:
+That set is the **recommended default** — everything except dev tooling (KG integrations, visualisation, and the MCP server). A bare `poetry install` gives you the core runtime only; layer in individual extras if you want a leaner install:
 
 | Extra | Installs | Install with |
 |---|---|---|
-| `full` | **everything but dev** (kgdeps + viz + viz3d + mcp) — **recommended** | `poetry install --extras full` |
 | `kgdeps` | doc-kg, diary-kg, kg-rag | `poetry install --extras kgdeps` |
 | `viz` | plotly (2-D growth timeline) | `poetry install --extras viz` |
 | `viz3d` | pyvista, PyQt5, pycode-kg (3-D visualiser) | `poetry install --extras viz3d` |
 | `mcp` | fastmcp, structlog (MCP server) | `poetry install --extras mcp` |
+| `chat` | streamlit, httpx, watchdog (reading-room UI) | `poetry install --extras chat` |
+| `image` | fastapi, uvicorn, pydantic (image service) | `poetry install --extras image` |
 | `dev` | pytest, ruff, ty, pdoc, pre-commit | `poetry install --extras dev` |
-| `all` | `full` + dev (literally everything) | `poetry install --all-extras` |
 | *(none)* | core runtime only | `poetry install` |
+| *(everything)* | every extra above | `poetry install --all-extras` |
 
-Contributors who need the test/lint toolchain should use `--all-extras` (adds `dev` on top of `full`).
+Contributors who need the test/lint toolchain should use `--all-extras`.
+
+> **Note** — there are no `full` / `all` aggregate extras. They existed until they were found to be the reason `poetry lock` took over eight minutes: re-listing a package inside an aggregate makes it a second declaration under different markers, and poetry resolves that by throwing away the whole resolution and restarting. Dropping them took a lock from 503s to 11s. Name the extras you want, or use `--all-extras`.
 
 Prefer a plain venv + pip? The same extras work with pip:
 
 ```bash
 python -m venv .venv
 source .venv/bin/activate          # Windows: .venv\Scripts\activate
-pip install -e ".[full]"           # or ".[all]" to include dev tools
+pip install -e ".[kgdeps,viz,viz3d,mcp]"      # add ",dev" for the test/lint toolchain
 ```
 
 ### 2. Build the knowledge graph
@@ -99,7 +102,7 @@ The Docker image extends a KGRAG worker base image with a pre-built corpus bundl
 ```bash
 git clone https://github.com/Flux-Frontiers/gutenberg_kg
 cd gutenberg_kg
-poetry install --extras full
+poetry install --extras "kgdeps viz viz3d mcp"
 
 make build-corpus      # builds DiaryKG indices, then bundles DocKG + diaries (~24 min)
 ```
