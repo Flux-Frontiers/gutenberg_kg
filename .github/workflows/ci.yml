@@ -128,9 +128,17 @@ jobs:
         run: poetry build
 
       - name: Install the wheel into a clean venv
+        # [mcp] only. Unlike the rest of the fleet, this package's serving entry
+        # points are provisioned outside its dependency metadata entirely: the
+        # Makefile builds .venv-image / .venv-sdxl with `pip install --no-deps`
+        # plus docker/requirements-*.txt, and the RunPod worker installs
+        # runpod/requirements.txt. pyproject documents why runpod is deliberately
+        # not an extra — its fastapi[all]/boto3/aiohttp tree makes `poetry lock`
+        # pathologically slow. So those three are skipped below rather than
+        # forced into the main dependency graph to satisfy this check.
         run: |
           python -m venv /tmp/smoke
-          /tmp/smoke/bin/pip install --quiet dist/*.whl
+          /tmp/smoke/bin/pip install --quiet "$(ls dist/*.whl)[mcp]"
 
       - name: Load every console-script entry point
         run: |
@@ -139,8 +147,13 @@ jobs:
           import importlib.metadata as md
           import sys
 
+          # Provisioned from docker/requirements-*.txt and runpod/requirements.txt
+          # in isolated venvs, never from this package's metadata. See the
+          # install step above.
+          SKIP = {"gutenkg-handler", "gutenkg-image-server", "gutenkg-sdxl-server"}
+
           eps = [e for e in md.distribution("gutenberg-kg").entry_points
-                 if e.group == "console_scripts"]
+                 if e.group == "console_scripts" and e.name not in SKIP]
           if not eps:
               sys.exit("no console scripts found in the installed distribution")
 
