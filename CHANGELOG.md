@@ -12,6 +12,15 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Changed
 
+- **Apple `container` runtime memory caps lowered**: `WORKER_MEM` 8g → 2g,
+  `CHAT_MEM` 4g → 512m. The old defaults were unmeasured guesses; the new
+  values follow the sibling `corpus_pepys` repo's `container stats`
+  measurements for the same worker/chat container shape. Memory is a lazy
+  upper bound, not a reservation, so this only lowers the ceiling — override
+  with `WORKER_MEM=`/`CHAT_MEM=` if a larger corpus needs more headroom.
+  `docs/APPLE_CONTAINERS.md` documents the re-measurement procedure to use
+  if that cap is ever hit.
+
 ### Removed
 
 ### Fixed

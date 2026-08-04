@@ -24,8 +24,31 @@ make down  RUNTIME=apple
 
 Notes:
 
-- **Memory/CPU are per-container VM flags**, defaulting to 8g/6 CPUs for the
-  worker and 4g for chat. Override like `make run RUNTIME=apple WORKER_MEM=12g`.
+- **Memory/CPU are per-container VM flags**, defaulting to 2g/6 CPUs for the
+  worker and 512m for chat. Override like `make run RUNTIME=apple WORKER_MEM=4g`
+  if a larger corpus or heavier query load needs headroom. These follow the
+  same shape observed in the sibling `corpus_pepys` repo (same Makefile
+  pattern, same worker/chat container shape): worker needs ~2g, chat ~512m —
+  both a fraction of the old 8g/4g guesses. Memory is a lazy upper bound, not
+  a reservation, so this doesn't pin RAM, just caps it. If a larger corpus
+  ever pushes the worker past this cap (OOM, or `container stats` showing it
+  pinned at the ceiling under load), re-measure with:
+  1. `make up RUNTIME=apple` (or `run` + `chat-container`) with the current
+     defaults.
+  2. In one shell, poll `container stats --no-stream <worker-name> <chat-name>`
+     every ~1s through cold start (model/index load is usually the peak) and
+     while idle, to get a baseline.
+  3. In another shell, fire a burst of concurrent real queries at the worker
+     (e.g. several parallel `curl -X POST http://localhost:8000/runsync ...`
+     with a generous `k`) while still polling `container stats`, to find the
+     load peak.
+  4. Repeat step 3 with `chat` too if there's an easy way to drive it
+     (Streamlit UI interactions, or whatever the chat container actually does
+     under load).
+  5. Set `WORKER_MEM`/`CHAT_MEM` in the `Makefile` to roughly 2x the observed
+     peak (round up to a clean value), re-verify `make up RUNTIME=apple` still
+     works end-to-end at the new caps, and update the rationale comment here
+     and in the `Makefile` with the measured numbers.
 - **`docker/.env` still works** — the Make targets source it before
   `container run`, mirroring compose's automatic loading.
 - **Ports are published to the host (`localhost` works).** Apple's `container`

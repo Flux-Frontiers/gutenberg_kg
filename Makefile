@@ -51,14 +51,15 @@ SDXL_SERVER  = http://localhost:8091
 
 # Apple `container` runtime settings (RUNTIME=apple only). Each container is
 # its own VM — memory is an explicit upper bound, not shared with the host
-# like Docker Desktop's single big VM, and the defaults are far too small for
-# the worker (torch + embedder + 696K-node graph). Lazily allocated, so 8g
-# does not pin 8 GB of RAM.
+# like Docker Desktop's single big VM. Right-sized per the corpus_pepys
+# `container stats` recipe (same worker/chat shape): worker needs ~2g,
+# chat ~512m. See docs/APPLE_CONTAINERS.md. Lazily allocated, so this
+# doesn't pin the RAM, just caps it — override per-machine if needed.
 WORKER_NAME  = gutenberg-worker
 CHAT_NAME    = gutenberg-chat
-WORKER_MEM  ?= 8g
+WORKER_MEM  ?= 2g
 WORKER_CPUS ?= 6
-CHAT_MEM    ?= 4g
+CHAT_MEM    ?= 512m
 
 # Host reachability from containers. Apple's `container` DOES support
 # Docker-style port publishing (`--publish`) as of CLI v1.1.0, so the worker
