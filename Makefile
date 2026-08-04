@@ -65,17 +65,33 @@ CHAT_MEM    ?= 4g
 # and chat ports are forwarded to the host and reachable at localhost, just
 # like the Docker path. Containers reach the host — and each other's published
 # ports — at the vmnet gateway IP; host.docker.internal still does NOT resolve
-# in-container on this runtime. The gateway subnet is NOT stable across CLI
-# versions (0.1.0 used 192.168.64.0/24; 1.1.0 uses 192.168.65.0/24), which
-# silently breaks LLM access whenever it shifts. So auto-detect it from the
-# live `default` network and fall back to the 1.1.0 default when the runtime
-# isn't up yet; override explicitly with `make APPLE_HOST_GW=… …` if needed.
+# in-container on this runtime. Getting the gateway wrong fails silently: the
+# worker simply cannot reach the LLM, so you get answers with no synthesis and
+# no error. So auto-detect it from the live `default` network, and treat the
+# constant purely as a cold-start fallback for when the runtime is not running
+# yet; override explicitly with `make APPLE_HOST_GW=… …` if needed.
+#
+# The fallback is 192.168.64.1 because that is what the `container-network-vmnet`
+# plugin actually allocates — macOS's vmnet framework defaults to
+# 192.168.64.0/24. Verified on CLI 1.1.0 against a network created fresh by
+# `container system start`, so this is the current CLI's allocation, not a
+# leftover from an older one:
+#
+#   $ container network list
+#   NETWORK  SUBNET
+#   default  192.168.64.0/24
+#
+# This previously read 192.168.65.1, with a comment claiming 1.1.0 had moved to
+# 192.168.65.0/24. That was wrong — 192.168.65.x is *Docker Desktop's* gateway
+# subnet, the likely source of the number — and it contradicted this repo's own
+# docs/APPLE_CONTAINERS.md, which documents 192.168.64.1 throughout.
+#
 # Host services (oMLX :8080, Ollama :11434, image server) must also bind
 # 0.0.0.0, not 127.0.0.1, to be reachable over the vmnet.
 ifeq ($(RUNTIME),apple)
-APPLE_HOST_GW ?= $(or $(shell container network inspect default 2>/dev/null | sed -n 's/.*"ipv4Gateway" : "\([0-9.]*\)".*/\1/p' | head -1),192.168.65.1)
+APPLE_HOST_GW ?= $(or $(shell container network inspect default 2>/dev/null | sed -n 's/.*"ipv4Gateway" : "\([0-9.]*\)".*/\1/p' | head -1),192.168.64.1)
 else
-APPLE_HOST_GW ?= 192.168.65.1
+APPLE_HOST_GW ?= 192.168.64.1
 endif
 
 # Image backend for `make up`: flux (FLUX.2 / mflux, default) or sdxl (SDXL-Lightning).
