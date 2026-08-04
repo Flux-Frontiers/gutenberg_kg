@@ -8,6 +8,109 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Added
+
+### Changed
+
+### Removed
+
+### Fixed
+
+---
+
+## [1.13.0] - 2026-08-03
+
+### Added
+
+- **`gutenberg_kg.vector_store.resolve_vector_paths()`** — resolves a KG store
+  directory to `(vectors_path, lancedb_path)`, preferring sqlite-vec and falling
+  back to LanceDB. Exactly one is non-`None`, so a migrated store never carries
+  a stale LanceDB pointer beside its sqlite-vec one.
+
+  The precedence deliberately matches `handler._open_vector_source`, which
+  already read on that rule. The bug below was the *read* path and the
+  *register* path disagreeing.
+
+- **`tests/test_vector_store.py`**, kept free of any `kg_rag` import so it runs
+  in CI — `tests/test_ingest.py` skips wholesale when kg_rag is absent, which is
+  how the registration paths went untested.
+
+### Changed
+
+- `dev`'s `pillow` floor raised `>=10.0.0` → `>=10.4.0` to match `chat`/`image`,
+  removing the one genuinely divergent duplicate constraint.
+
+
+- **Dependency floors raised to a co-installable set:** `doc-kg>=0.20.0` and
+  `pycode-kg>=0.21.2`, alongside the existing `kg-rag>=0.11.0`. The previous
+  floors admitted doc-kg 0.18.x / pycode-kg 0.20.x, which pin `transformers<4.57`
+  and so contradict kg-rag 0.11.0's `transformers>=5.5.0`. `runpod/requirements.txt`
+  carried the same stale floors and is bumped to match.
+
+- **Container pins are declared once**, in `docker/Dockerfile`'s `ARG` defaults.
+  `docker-compose.yml` overrode `KGMODULE_UTILS_VERSION` with `0.4.6` while the
+  Dockerfile said `0.5.0`, so a compose-triggered build and `make build`
+  produced different images from the same Dockerfile; the `args:` block is gone.
+  Because these are `==` pins, a stale one is now a hard resolution failure at
+  build time rather than a silent upgrade by the later `pip install .`.
+
+- **`diary-kg>=0.96.0`** (was `>=0.93.2`), bringing it in line with the rest of
+  the set — it requires `doc-kg>=0.20.0` and `kgmodule-utils>=0.9.0`, the same
+  floors declared above. Functionally it also pins `vector_backend="sqlite-vec"`
+  internally and writes `.diarykg/vectors.sqlite` rather than `lancedb/`;
+  under 0.93.2 the sqlite-vec output was incidental, produced by doc-kg's old
+  `"auto"` default resolving that way rather than by any diary-kg guarantee.
+
+- **`build-corpus` names the sqlite-vec store directly.** doc-kg 0.20.0 accepts
+  `vectors_path`, so both `DocKG` constructions now pass it alongside an
+  explicit `vector_backend="sqlite-vec"` and no longer pass `lancedb_dir` at
+  all. Previously the sqlite-vec path could only be *derived* — `lancedb_dir`
+  had to be supplied purely as an anchor whose parent the sidecar hung off
+  (`sqlite_vectors_path()`), which meant naming a directory the build never
+  created. Matches how diary-kg 0.96.0 drives DocKG.
+
+- **`rich>=14.3.3,<15`** (was `>=13.0.0`), matching the rest of the fleet —
+  pycode-kg, kg-rag and diary-kg all require `>=14.3.3`, and every KG package
+  caps at `<15`. `runpod/requirements.txt` also moves
+  `sentence-transformers>=3.0.0` → `>=5.4.1,<6`, the floor doc-kg 0.20.0 and
+  kg-rag 0.11.0 already forced.
+
+### Removed
+
+- **The `full` and `all` aggregate extras.** They were the reason `poetry lock`
+  took over eight minutes.
+
+  Re-listing a package inside an aggregate makes it a *second* declaration under
+  different markers. Poetry reports that as `Duplicate dependencies … Different
+  requirements found` and resolves it by discarding the entire resolution,
+  adding an override, and starting over — with the override set accumulating, so
+  each restart is a bigger problem than the last. A `-vvv` lock showed **1,278
+  restarts across 1,321 solver runs**, 309s of it inside the solver, and *zero*
+  package downloads. Twelve packages triggered it.
+
+  Removing the two aggregates takes the lock from **503s to 9.6s**, resolving to
+  a byte-identical package set (253 packages before and after).
+
+  The obvious fix — `full = ["gutenberg-kg[kgdeps,viz,viz3d,mcp]"]` — poetry
+  rejects outright: `Package 'gutenberg-kg[…]' is listed as a dependency of
+  itself`. So there is no way to keep the aggregates and the speed.
+
+  **Migration:** `--extras full` → `--extras "kgdeps viz viz3d mcp"`;
+  `.[full]` → `.[kgdeps,viz,viz3d,mcp]`; `--all-extras` is unchanged and now
+  covers what `all` did.
+
+
+- **`_DOCKG_LANCEDB` / `_DOCKG_VECTORS`** module constants in `serve/handler.py`,
+  now that the paths are derived. `_DOCKG_VECTORS` was already dead.
+
+- **`docker/Dockerfile.sqlite`** — its premise ("like the main image, but
+  sqlite-vec and no LanceDB") is what `docker/Dockerfile` now does by default.
+  Nothing built it: no Make target, no CI. It was also a liability — it built
+  `FROM egsuchanek/kgrag-worker:latest`, an external base needing a manual
+  rebuild and push from the KGRAG repo, and installed everything `--no-deps`, so
+  its real dependency set was whatever that base happened to carry (it never
+  installed kg-rag or diary-kg at all).
+
 ### Fixed
 
 - **`APPLE_HOST_GW` fell back to the wrong vmnet gateway.** The constant was
@@ -51,100 +154,6 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   Found in `corpus_pepys`, which carries a near-identical copy of this file;
   fixed in both.
 
-### Removed
-
-- **The `full` and `all` aggregate extras.** They were the reason `poetry lock`
-  took over eight minutes.
-
-  Re-listing a package inside an aggregate makes it a *second* declaration under
-  different markers. Poetry reports that as `Duplicate dependencies … Different
-  requirements found` and resolves it by discarding the entire resolution,
-  adding an override, and starting over — with the override set accumulating, so
-  each restart is a bigger problem than the last. A `-vvv` lock showed **1,278
-  restarts across 1,321 solver runs**, 309s of it inside the solver, and *zero*
-  package downloads. Twelve packages triggered it.
-
-  Removing the two aggregates takes the lock from **503s to 9.6s**, resolving to
-  a byte-identical package set (253 packages before and after).
-
-  The obvious fix — `full = ["gutenberg-kg[kgdeps,viz,viz3d,mcp]"]` — poetry
-  rejects outright: `Package 'gutenberg-kg[…]' is listed as a dependency of
-  itself`. So there is no way to keep the aggregates and the speed.
-
-  **Migration:** `--extras full` → `--extras "kgdeps viz viz3d mcp"`;
-  `.[full]` → `.[kgdeps,viz,viz3d,mcp]`; `--all-extras` is unchanged and now
-  covers what `all` did.
-
-### Changed
-
-- `dev`'s `pillow` floor raised `>=10.0.0` → `>=10.4.0` to match `chat`/`image`,
-  removing the one genuinely divergent duplicate constraint.
-
-### Added
-
-- **`gutenberg_kg.vector_store.resolve_vector_paths()`** — resolves a KG store
-  directory to `(vectors_path, lancedb_path)`, preferring sqlite-vec and falling
-  back to LanceDB. Exactly one is non-`None`, so a migrated store never carries
-  a stale LanceDB pointer beside its sqlite-vec one.
-
-  The precedence deliberately matches `handler._open_vector_source`, which
-  already read on that rule. The bug below was the *read* path and the
-  *register* path disagreeing.
-
-- **`tests/test_vector_store.py`**, kept free of any `kg_rag` import so it runs
-  in CI — `tests/test_ingest.py` skips wholesale when kg_rag is absent, which is
-  how the registration paths went untested.
-
-### Changed
-
-- **Dependency floors raised to a co-installable set:** `doc-kg>=0.20.0` and
-  `pycode-kg>=0.21.2`, alongside the existing `kg-rag>=0.11.0`. The previous
-  floors admitted doc-kg 0.18.x / pycode-kg 0.20.x, which pin `transformers<4.57`
-  and so contradict kg-rag 0.11.0's `transformers>=5.5.0`. `runpod/requirements.txt`
-  carried the same stale floors and is bumped to match.
-
-- **Container pins are declared once**, in `docker/Dockerfile`'s `ARG` defaults.
-  `docker-compose.yml` overrode `KGMODULE_UTILS_VERSION` with `0.4.6` while the
-  Dockerfile said `0.5.0`, so a compose-triggered build and `make build`
-  produced different images from the same Dockerfile; the `args:` block is gone.
-  Because these are `==` pins, a stale one is now a hard resolution failure at
-  build time rather than a silent upgrade by the later `pip install .`.
-
-- **`diary-kg>=0.96.0`** (was `>=0.93.2`), bringing it in line with the rest of
-  the set — it requires `doc-kg>=0.20.0` and `kgmodule-utils>=0.9.0`, the same
-  floors declared above. Functionally it also pins `vector_backend="sqlite-vec"`
-  internally and writes `.diarykg/vectors.sqlite` rather than `lancedb/`;
-  under 0.93.2 the sqlite-vec output was incidental, produced by doc-kg's old
-  `"auto"` default resolving that way rather than by any diary-kg guarantee.
-
-- **`build-corpus` names the sqlite-vec store directly.** doc-kg 0.20.0 accepts
-  `vectors_path`, so both `DocKG` constructions now pass it alongside an
-  explicit `vector_backend="sqlite-vec"` and no longer pass `lancedb_dir` at
-  all. Previously the sqlite-vec path could only be *derived* — `lancedb_dir`
-  had to be supplied purely as an anchor whose parent the sidecar hung off
-  (`sqlite_vectors_path()`), which meant naming a directory the build never
-  created. Matches how diary-kg 0.96.0 drives DocKG.
-
-- **`rich>=14.3.3,<15`** (was `>=13.0.0`), matching the rest of the fleet —
-  pycode-kg, kg-rag and diary-kg all require `>=14.3.3`, and every KG package
-  caps at `<15`. `runpod/requirements.txt` also moves
-  `sentence-transformers>=3.0.0` → `>=5.4.1,<6`, the floor doc-kg 0.20.0 and
-  kg-rag 0.11.0 already forced.
-
-### Removed
-
-- **`_DOCKG_LANCEDB` / `_DOCKG_VECTORS`** module constants in `serve/handler.py`,
-  now that the paths are derived. `_DOCKG_VECTORS` was already dead.
-
-- **`docker/Dockerfile.sqlite`** — its premise ("like the main image, but
-  sqlite-vec and no LanceDB") is what `docker/Dockerfile` now does by default.
-  Nothing built it: no Make target, no CI. It was also a liability — it built
-  `FROM egsuchanek/kgrag-worker:latest`, an external base needing a manual
-  rebuild and push from the KGRAG repo, and installed everything `--no-deps`, so
-  its real dependency set was whatever that base happened to carry (it never
-  installed kg-rag or diary-kg at all).
-
-### Fixed
 
 - **The image shipped ~3.8 GB of unusable CUDA runtime.** torch's default PyPI
   wheel for `linux/aarch64` is now a CUDA build (`2.13.0+cu130`), pulled in
