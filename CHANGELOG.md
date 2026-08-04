@@ -8,6 +8,30 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Fixed
+
+- **The chat model picker silently reverted to the provider default.** Neither
+  the Provider nor the Model selectbox in `serve/Chat.py` carried a `key`, so
+  Streamlit derived each widget's identity from its parameters — including
+  `options` and `index`. Anything that changed those made it a *new* widget and
+  reset the selection: switching provider, or hitting **🔄 Refresh models**,
+  which clears the cache and refetches, potentially with a different order or
+  `default`.
+
+  The reset was invisible. The sidebar showed the default, and `cfg["model"]`
+  carried it into both the query and the image-prompt rewrite — so answers came
+  back from a model you had not chosen, with nothing indicating the swap.
+
+  Both selectboxes now use explicit keys (`synth_provider`, `synth_model`) so
+  their values live in `st.session_state` and survive reruns. A reconcile step
+  runs *before* the Model widget renders: Streamlit raises if `session_state`
+  holds a value absent from `options`, which is exactly what a provider switch
+  causes, so the stored choice is validated first — kept when still available,
+  and replaced by the provider default only when it genuinely vanished.
+
+  Found in `corpus_pepys`, which carries a near-identical copy of this file;
+  fixed in both.
+
 ### Removed
 
 - **The `full` and `all` aggregate extras.** They were the reason `poetry lock`

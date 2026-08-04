@@ -547,10 +547,18 @@ def _render_sidebar() -> dict:
     backend = ""
     model = ""
     if synthesize:
+        # Both selectboxes carry an explicit key so their value lives in
+        # st.session_state and survives a rerun. Without one, Streamlit derives
+        # the widget's identity from its parameters — including `options` and
+        # `index` — so anything that changes those (switching provider, or
+        # "Refresh models" returning a different order or default) makes it a
+        # *new* widget, silently resetting the choice to the provider default.
+        # That reset was invisible: the sidebar showed the default while the
+        # query still ran, so answers came back from a model you had not picked.
         provider_label = st.sidebar.selectbox(
             "Provider",
             options=list(_SYNTH_PROVIDERS.keys()),
-            index=0,
+            key="synth_provider",
             help="LLM backend — oMLX (local MLX), Ollama (local), or OpenAI (cloud)",
         )
         backend = _SYNTH_PROVIDERS[provider_label]
@@ -560,16 +568,26 @@ def _render_sidebar() -> dict:
             with st.spinner("Fetching models…"):
                 models, default = _fetch_models(_DEFAULT_WORKER, secret, backend)
         if models:
-            default_idx = models.index(default) if default in models else 0
+            # Reconcile the stored choice against the current list BEFORE the
+            # widget renders. Streamlit raises if session_state holds a value
+            # that is not in `options`, which is exactly what happens when the
+            # provider changes or a refresh drops a model. Keeping a still-valid
+            # choice is what makes the selection stick across a refresh.
+            if st.session_state.get("synth_model") not in models:
+                st.session_state["synth_model"] = default if default in models else models[0]
             model = st.sidebar.selectbox(
                 "Model",
                 options=models,
-                index=default_idx,
+                key="synth_model",
                 help="Model — fetched live from the selected provider",
             )
         else:
             st.sidebar.caption("⚠️ No models reported — using provider default.")
         if st.sidebar.button("🔄 Refresh models", use_container_width=True):
+            # Drops every provider's entry (cache_data.clear() has no per-key
+            # form), so the next run refetches. synth_model is deliberately left
+            # in session_state: the reconcile above keeps it if it survived the
+            # refresh, and only falls back to the default if it truly vanished.
             _fetch_models.clear()
             st.rerun()
 
