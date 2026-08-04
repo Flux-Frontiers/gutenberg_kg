@@ -10,6 +10,25 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Fixed
 
+- **`APPLE_HOST_GW` fell back to the wrong vmnet gateway.** The constant was
+  `192.168.65.1`, with a comment claiming CLI 0.1.0 used `192.168.64.0/24` and
+  1.1.0 moved to `192.168.65.0/24`. That is wrong: the
+  `container-network-vmnet` plugin allocates `192.168.64.0/24` — macOS's vmnet
+  framework default — verified on CLI 1.1.0 against a network created fresh by
+  `container system start`, so it is the current allocation and not a leftover
+  from an older CLI. `192.168.65.x` is *Docker Desktop's* gateway subnet, the
+  likely source of the number.
+
+  It also contradicted this repo's own `docs/APPLE_CONTAINERS.md`, which
+  documents `192.168.64.1` in three places. The docs were right.
+
+  Live detection already covered the normal path, so this only bit on a cold
+  start — runtime not yet running, probe returns nothing, constant used. In
+  that window every host-facing endpoint (oMLX, Ollama, the image servers)
+  pointed at an unreachable address, and the failure was silent: answers came
+  back with no synthesis rather than an error. Fixed alongside the same bug in
+  `corpus_pepys`.
+
 - **The chat model picker silently reverted to the provider default.** Neither
   the Provider nor the Model selectbox in `serve/Chat.py` carried a `key`, so
   Streamlit derived each widget's identity from its parameters — including
