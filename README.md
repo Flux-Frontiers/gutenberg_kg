@@ -27,6 +27,40 @@ The included corpus contains **241 texts in 20 genres**: literature, philosophy,
 
 > **GutenbergKG is for readers, researchers, and builders** who want semantic discovery with a path back to the original text.
 
+## 🌳 New: a book grows into a tree, and the tree can leave the screen
+
+Two things are new here, and the second depends on hardware most people do not have yet.
+
+### Books grow into natural-looking trees
+
+A knowledge graph does not have to be drawn as a hairball. Each book now grows into a tree, and the growth is structural rather than decorative. The book's text chunks become attraction points and the branches are produced by space colonization (Runions, Lane & Prusinkiewicz, 2007), so every limb is a real path through the graph—document → section → chunk cluster—and the canopy's shape is the book's shape. Branch radii follow the pipe model, so a limb carrying half the text is visibly thicker.
+
+Two books of different structure therefore grow different silhouettes, and a given book grows the same tree every time: the seed comes from its slug, not from Python's per-process `hash()`. Hamlet is 420 chunks carried on 305 limbs.
+
+```bash
+gutenkg viz3d                                     # tick "Organic tree", pick a book
+gutenkg quilt --book Hamlet --season autumn       # spring, summer, autumn, winter
+```
+
+There are four seasons. `--season winter` drops ninety percent of the leaves, which is the point—bare wood is where the pipe model shows.
+
+### If you own a Looking Glass display, cast to it
+
+This is the part that is genuinely new context rather than a nicer picture. A [Looking Glass](https://lookingglassfactory.com/) panel shows a *light field*: dozens of views at once, so the tree has real depth and holds still in space while you move your head around it. No glasses, no headset. Two people can lean over the same tree at the same time and see it from their own angles.
+
+Rendering to one is handled by [quiltwright](https://github.com/suchanek/quiltwright), a separate library for turning ordered sweeps of views into light-field quilts.
+
+```bash
+gutenkg quilt --book Hamlet                       # 48 views, one 7680x4320 quilt
+gutenkg quilt --book Pepys --orbit 180 --cast     # turntable video, straight to the display
+```
+
+Hamlet's 8x6 quilt for the 16" Gen3 Landscape takes about two seconds on an M5 Max. The stereo depth budget is printed before every render, so an over-wide disparity shows up at no cost rather than after all 48 views. The viewer has a **Cast to LG** button that does the same thing for whatever is on screen.
+
+No panel? Nothing is lost. A quilt is an ordinary PNG and the trees above render without any display hardware at all.
+
+Both features need the `viz3d` extra; see the [cheatsheet](docs/CHEATSHEET.md) for options and the [design notes](docs/NATURAL_TREE_LFD_PLAN.md) for how the growth model was chosen.
+
 ## What makes it useful
 
 - **Ask across books, not just within them.** Search semantically by theme, scene, question, or concept.

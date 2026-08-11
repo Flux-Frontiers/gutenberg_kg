@@ -10,7 +10,80 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added
 
+- **Organically grown knowledge trees** (`gutenberg_kg.layout_organic`). Where
+  the existing `ForestLayout` places nodes on a golden-angle spiral — right for
+  exploring the whole corpus — this module *grows* a skeleton that reaches the
+  data. A book's chunk positions become attraction points and the branch
+  structure is produced by space colonization (Runions, Lane & Prusinkiewicz
+  2007), so every limb is a real structural path document → section → chunk
+  cluster and the canopy's shape is the book's shape rather than decoration.
+  Branch radii follow the pipe model (da Vinci's rule, exponent 2.2), limbs are
+  swept tubes along Catmull-Rom root-to-tip paths, and leaves are glyphed
+  (never per-node meshes) with orientation biased away from the trunk.
+
+  Everything is deterministic: `seed_from_slug()` derives a stable 32-bit seed
+  from the book slug — Python's salted builtin `hash()` cannot be used for
+  geometry that must reproduce between sessions, renders, and printed figures.
+
+  Two departures from textbook colonization, both needed because a book's
+  crown is clumpy where a plant's attractor cloud is not. When no attractor is
+  within the influence radius, the algorithm as published simply stops — which
+  strands the rest of the canopy as a stump under a cloud of unattached
+  leaves; instead a limb is bridged across the gap and growth continues. And
+  an isolated attractor can stay in range for the entire run yet never win a
+  node, because the averaged pull always goes to the crowd — a book's
+  one-chunk front-matter sections are exactly that case — so each survivor is
+  given its own twig at the end. Every chunk hangs on wood.
+
+- **`gutenkg quilt`** — renders one book's tree as a Looking Glass light-field
+  quilt (still or `--orbit` turntable video), off-screen and Qt-free, with
+  `--cast` to push the result to Looking Glass Bridge. Presets cover the 16"
+  Gen3 Landscape (default), portrait, Go, 27", 32", and 65" devices.
+
+  The **depth budget is printed before every render**, not after: the scene
+  bounding box is projected onto the view axis and the near/far disparities are
+  reported in pixels. Above roughly 5 px reads soft, past ~8 px ghosts visibly
+  — so a blown budget shows up at zero cost instead of after a full quilt
+  render.
+
+- **Seasonal foliage** (`SEASONS`, selectable in the viewer and via
+  `--season`). Spring/summer/autumn/winter each carry a foliage palette
+  sampled per leaf — a canopy varies the way a real one does instead of reading
+  as one flat green — plus wood colour and sky gradient. Winter additionally
+  drops 90% of the leaves, which is the point: bare wood is where the pipe
+  model shows.
+
+- **Viewer controls for the above**: an "Organic tree (one book)" checkbox, a
+  season selector, and a "Cast to LG" button that renders the current view as a
+  quilt and casts it. Organic mode requires exactly one selected book and says
+  so plainly when more are loaded; picking is disabled there, since the scene
+  is swept wood and glyphed leaves rather than per-node actors.
+
+- **`tests/test_scene.py`, `tests/test_layout_organic.py`,
+  `tests/test_seasons.py`** — 77 tests over the extracted scene builder,
+  the growth pipeline (seed stability, crown spacing, colonization,
+  pipe radii, sweeps), and the seasonal/leaf-placement geometry. These are
+  Qt-free and run headless, which is what the extraction below buys.
+
 ### Changed
+
+- **Scene construction extracted from the Qt viewer into
+  `gutenberg_kg.scene`** — corpus scanning, `BookMeta`, `ForestLayout`, glyph
+  and edge geometry, `build_forest_scene()`, and the new `build_tree_scene()`
+  now compose into a plain `pv.Plotter` with no PyQt import and no
+  `QApplication.processEvents()`. Progress reporting is a plain
+  `Callable[[str], None]`, so a Qt caller can pump its event loop and a
+  headless one can print or ignore.
+
+  `viz3d.py` is now one caller of that module (down ~680 lines) and the
+  off-screen quilt renderer is another. Without this split, light-field
+  rendering would have needed a live `QApplication`.
+
+- **`quiltwright>=0.3.0` added to the `viz3d` extra**, marker-gated to
+  `python_version < '3.13'`: quiltwright pins `requires-python <3.13` while
+  this project supports `<3.14`, and without the marker Poetry rejects the
+  whole resolution rather than just that package. Drop the marker once
+  quiltwright widens its floor.
 
 - **Apple `container` runtime memory caps lowered**: `WORKER_MEM` 8g → 2g,
   `CHAT_MEM` 4g → 512m. The old defaults were unmeasured guesses; the new
@@ -22,6 +95,11 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   if that cap is ever hit.
 
 ### Removed
+
+- **Stale LanceDB ignore rules** (`**/.dockg/lancedb*`, `**/.diarykg/lancedb*`)
+  dropped from `.gitignore`. The sqlite-vec migration means those directories
+  are no longer produced; `renders/` is ignored in their place, since that is
+  where `gutenkg quilt` writes.
 
 ### Fixed
 

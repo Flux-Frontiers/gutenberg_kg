@@ -148,8 +148,6 @@ site/
 **/.pycodekg/*.db
 **/.pycodekg/models
 
-**/.dockg/lancedb/
-**/.dockg/lancedb-*
 **/.dockg/*.sqlite
 **/.dockg/*.sqlite-shm
 **/.dockg/*.sqlite-wal
@@ -167,8 +165,6 @@ bundles/
 # AgentKG local store -- nothing under it is ever tracked
 **/.agentkg/
 
-**/.diarykg/lancedb/
-**/.diarykg/lancedb-*
 **/.diarykg/*.sqlite
 **/.diarykg/*.sqlite-shm
 **/.diarykg/*.sqlite-wal
@@ -179,6 +175,8 @@ bundles/
 # Agent scratch dirs (Claude Code / Codex)
 .agents/
 .codex/
+
+renders/*
 
 # MCP server config -- machine-specific, contains absolute paths
 .mcp.json

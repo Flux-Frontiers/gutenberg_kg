@@ -120,6 +120,11 @@ viz3d = [
     "pyvista>=0.44.0",
     "pyvistaqt>=0.11.0",
     "pycode-kg>=0.21.4",
+    # Light-field output (`gutenkg quilt`). Marker-gated: quiltwright pins
+    # requires-python <3.13 while this project supports <3.14, and without the
+    # marker poetry rejects the whole resolution. Drop the marker once
+    # quiltwright widens its floor.
+    "quiltwright>=0.3.0; python_version < '3.13'",
 ]
 mcp = [
     # Upper-bounded: fastmcp ships majors on its own schedule (2.x → 3.x), and
