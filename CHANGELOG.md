@@ -14,6 +14,12 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Removed
 
+- **`docs/analysis_v1.2.0.md`** — a generated PyCodeKG analysis report, stamped
+  `pycode-kg 0.19.0` at commit `76ea9f4` and last regenerated for v1.2.0,
+  eleven releases ago. Nothing linked to it and no release step refreshed it,
+  so it described a graph the repo no longer has. Deleted rather than
+  regenerated; it can be reproduced on demand with `pycodekg analyze`.
+
 ### Fixed
 
 - **CI collection no longer dies when the `viz3d` extra is absent.**
