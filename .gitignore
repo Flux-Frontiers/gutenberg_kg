@@ -172,6 +172,12 @@ bundles/
 **/.diarykg/models
 **/.diarykg/corpus
 
+# Ingest reports -- one is written per real `gutenkg ingest` run, so routine
+# partial rebuilds would otherwise pile up in the diff. They are good
+# provenance (host, flags, embedder, per-book timings), so keep the ones worth
+# keeping deliberately:  git add -f reports/ingest_<date>.md
+reports/ingest_*.md
+
 # Agent scratch dirs (Claude Code / Codex)
 .agents/
 .codex/

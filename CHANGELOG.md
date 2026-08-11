@@ -112,6 +112,12 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Removed
 
+- **Routine ingest reports ignored** (`reports/ingest_*.md`). One is written per
+  real `gutenkg ingest` run, so partial rebuilds would pile up in every diff.
+  They remain good provenance — host, flags, embedder, per-book timings — so
+  the ones worth keeping are kept deliberately with `git add -f`; the existing
+  full-corpus report stays tracked.
+
 - **Stale LanceDB ignore rules** (`**/.dockg/lancedb*`, `**/.diarykg/lancedb*`)
   dropped from `.gitignore`. The sqlite-vec migration means those directories
   are no longer produced; `renders/` is ignored in their place, since that is
@@ -140,9 +146,17 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   Moby Dick, Pride and Prejudice, Alice, Hamlet, and Tao Te Ching, so the
   relaxed gate does not invent structure elsewhere.
 
-  Note this applies at conversion: the raw Gutenberg `.txt` is not retained
-  after ingest, so affected books need re-downloading and re-ingesting before
-  their new sections appear.
+  The two affected books have been re-downloaded and re-ingested, and their
+  corrected Markdown is committed: the Quran now carries 120 sections instead
+  of 7 (PREFACE drops from 2,586 chunks to 99, and Sura II *The Cow* becomes
+  the heaviest limb at 183 — correctly, it is the longest sura) and the
+  Analects 28 instead of 8. The diffs are heading lines only, +113 and +21,
+  with no body text touched. Other machines need no re-download, since the
+  Markdown is tracked; only the gitignored `.dockg/` indices must be rebuilt.
+
+- **`gutenkg ingest --dry-run` no longer writes an ingest report.** A dry run
+  changes nothing, so leaving behind a file that says so was the one thing
+  reliably filling `reports/` with noise.
 
 ---
 
