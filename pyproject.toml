@@ -79,7 +79,7 @@ classifiers = [
 requires-python = ">=3.12,<3.14"
 dependencies = [
     "click>=8.1.0,<9",
-    "kgmodule-utils[synthesis,sqlite-vec]>=0.10.0",
+    "kgmodule-utils[synthesis,sqlite-vec]>=0.11.0",
     "rich>=14.3.3,<15",
     "doc-kg (>=0.21.1)",  # transformers 5.x — must match kg-rag; see the kgdeps extra
     "diary-kg (>=0.96.0)",
@@ -119,7 +119,11 @@ viz3d = [
     # [jupyter] (→ trame) only if we ever render 3-D into a notebook or browser.
     "pyvista>=0.44.0",
     "pyvistaqt>=0.11.0",
-    "pycode-kg>=0.21.4",
+    # Shared 3-D layout primitives (Layout3D, LayoutNode/Edge, fibonacci_*).
+    # These lived in pycode_kg.layout3d until kgmodule-utils 0.11.0 took them
+    # over, which drops the odd dependency on the *code* KG package for what is
+    # pure geometry. pycode-kg stays in `kgdeps` for its own CLI.
+    "kgmodule-utils[viz3d]>=0.11.0",
     # Light-field output (`gutenkg quilt`). Marker-gated: quiltwright pins
     # requires-python <3.13 while this project supports <3.14, and without the
     # marker poetry rejects the whole resolution. Drop the marker once

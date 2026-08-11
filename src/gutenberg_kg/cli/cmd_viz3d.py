@@ -40,7 +40,7 @@ def cmd_viz3d(corpus_root: str, width: int, height: int) -> None:
         from gutenberg_kg.viz3d import launch
     except ImportError as exc:
         raise click.ClickException(
-            f"viz3d requires pyvista, pyvistaqt, PyQt5, param, and pycode_kg.\n"
+            f"viz3d requires pyvista, pyvistaqt, PyQt5, param, and kgmodule-utils[viz3d].\n"
             f"Install with:  pip install gutenberg-kg[viz3d]\n"
             f"Details: {exc}"
         ) from exc

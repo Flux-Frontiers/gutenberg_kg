@@ -18,6 +18,18 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Changed
 
+- **3-D layout primitives now come from `kg_utils.viz3d`, not
+  `pycode_kg.layout3d`.** `Layout3D`, `LayoutNode`, `LayoutEdge`,
+  `fibonacci_sphere`, and `fibonacci_annulus` moved into kgmodule-utils 0.11.0,
+  which ends an odd dependency: GutenbergKG's 3-D layer was pulling in the
+  *code* KG package for what is pure geometry. `ForestLayout` still subclasses
+  `Layout3D`, and `LayoutNode` carries an identical field set, so this is an
+  import swap rather than a rewrite.
+
+  `viz3d` now declares `kgmodule-utils[viz3d]>=0.11.0` in place of
+  `pycode-kg`, and the core floor moves to `>=0.11.0`. `pycode-kg` stays in the
+  `kgdeps` extra for its own CLI.
+
 - **Entities and topics are now separate spore clouds.** `show_entities` drew
   `entity`, `topic`, and `keyword` as one gold halo, which conflated what a
   book *names* with what it is *about* and left the blue `KIND_COLOR["topic"]`

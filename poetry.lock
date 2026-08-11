@@ -2543,26 +2543,29 @@ viz3d = ["PyQt5 (>=5.15.0)", "markdown (>=3.6)", "param (>=2.0.0)", "pyvista[jup
 
 [[package]]
 name = "kgmodule-utils"
-version = "0.10.0"
+version = "0.11.0"
 description = "Shared types, graph store, semantic index, and pipeline base for the KGModule SDK"
 optional = false
 python-versions = "<3.14,>=3.12"
 groups = ["main"]
 files = [
-    {file = "kgmodule_utils-0.10.0-py3-none-any.whl", hash = "sha256:765279f44cf754cf9256ddeab0eee4bb462f1028af3417eb321f7ef3ad1aa8a0"},
-    {file = "kgmodule_utils-0.10.0.tar.gz", hash = "sha256:b06a36c4674d2c308a776c6246f0519d99804fbd32e1901cd02fa240449baf24"},
+    {file = "kgmodule_utils-0.11.0-py3-none-any.whl", hash = "sha256:a3ccef8d29667591e64f8593cfc60d0c187c65de6bfd5dca02526b82459de3b6"},
+    {file = "kgmodule_utils-0.11.0.tar.gz", hash = "sha256:a0de0555fcdadfe6b9fa51ad535832f68c607bc147549155748fb515433c1c7e"},
 ]
 
 [package.dependencies]
 httpx = {version = ">=0.27.0", optional = true, markers = "extra == \"synthesis\""}
-numpy = {version = ">=1.24.0", optional = true, markers = "extra == \"semantic\""}
+numpy = [
+    {version = ">=1.24.0", optional = true, markers = "extra == \"viz3d\""},
+    {version = ">=1.24.0", optional = true, markers = "extra == \"semantic\""},
+]
 openai = {version = ">=1.30.0", optional = true, markers = "extra == \"synthesis\""}
 pillow = {version = ">=10.0.0", optional = true, markers = "extra == \"synthesis\""}
 rich = {version = ">=13.0.0,<15.0.0", optional = true, markers = "extra == \"semantic\""}
 sentence-transformers = {version = ">=5.4.1", optional = true, markers = "extra == \"semantic\""}
 sqlite-vec = [
-    {version = "0.1.9", optional = true, markers = "extra == \"semantic\""},
     {version = "0.1.9", optional = true, markers = "extra == \"sqlite-vec\""},
+    {version = "0.1.9", optional = true, markers = "extra == \"semantic\""},
 ]
 torch = {version = ">=2.5.1", optional = true, markers = "extra == \"semantic\""}
 transformers = {version = ">=5.5.0,<6", optional = true, markers = "extra == \"semantic\""}
@@ -2574,6 +2577,7 @@ sqlite-vec = ["sqlite-vec (==0.1.9)"]
 synthesis = ["httpx (>=0.27.0)", "openai (>=1.30.0)", "pillow (>=10.0.0)"]
 synthesis-mflux = ["httpx (>=0.27.0)", "mflux (>=0.9.0)", "openai (>=1.30.0)", "pillow (>=10.0.0)"]
 viz = ["pyvis (>=0.3.2)"]
+viz3d = ["numpy (>=1.24.0)"]
 
 [[package]]
 name = "kiwisolver"
@@ -4307,7 +4311,7 @@ description = "A tool to build a searchable knowledge graph from Python reposito
 optional = true
 python-versions = "<3.14,>=3.12"
 groups = ["main"]
-markers = "extra == \"kgdeps\" or extra == \"viz3d\""
+markers = "extra == \"kgdeps\""
 files = [
     {file = "pycode_kg-0.21.4-py3-none-any.whl", hash = "sha256:bcca9ed8e4c276d513af8da7b0726e8ba2cd36e8f18632a4f1940ad710a9e0f0"},
     {file = "pycode_kg-0.21.4.tar.gz", hash = "sha256:2a94e9dd62d1c745f27ea371c03a8e69275992ebf7e6dcd1faf29cd042f73150"},
@@ -7556,9 +7560,9 @@ image = ["fastapi", "pillow", "pydantic", "uvicorn"]
 kgdeps = ["kg-rag", "pycode-kg"]
 mcp = ["fastmcp", "structlog"]
 viz = ["plotly"]
-viz3d = ["PyQt5", "markdown", "param", "pycode-kg", "pyvista", "pyvistaqt", "quiltwright"]
+viz3d = ["PyQt5", "kgmodule-utils", "markdown", "param", "pyvista", "pyvistaqt", "quiltwright"]
 
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.12,<3.14"
-content-hash = "30054ef6b738d1a77893c98aecad17fdfbe4637f6926c69b3e5c7ddc2936d891"
+content-hash = "cabc76df99af1888cfaa0bea563d62e064d1757480afdc45abd740fd0dd7de35"
