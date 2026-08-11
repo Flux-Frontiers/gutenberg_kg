@@ -10,7 +10,33 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added
 
+- **`gutenkg quilt --topics`** draws topic nodes as their own blue pollen
+  cloud, and **`--leaf-size`** overrides the leaf radius before density
+  scaling. The second exists because leaves shrink by the cube root of chunk
+  count, so Pepys renders its 18,757 chunks at 0.32x and reads sparse even
+  though every chunk has a leaf; `--leaf-size 0.9` thickens that canopy.
+
 ### Changed
+
+- **Entities and topics are now separate spore clouds.** `show_entities` drew
+  `entity`, `topic`, and `keyword` as one gold halo, which conflated what a
+  book *names* with what it is *about* and left the blue `KIND_COLOR["topic"]`
+  unused since it was defined. They toggle independently; the viewer drives
+  both from its single checkbox, so it behaves exactly as before.
+
+- **Spore halos are capped at 200 glyphs.** One glyph per node cannot work at
+  corpus scale — Pepys carries 7,065 entities and 7,287 topics against 18,757
+  leaves, and the halo buried the tree it exists to annotate. Measured against
+  a spore-free Hamlet render, an uncapped halo left 38% of the foliage legible,
+  350 left 64%, and 200 leaves ~68%. A halo reads as a cloud rather than a
+  count, so a deterministic sample carries the same meaning at a fraction of
+  the ink. Spores are also sized against the leaves rather than their own
+  count, so the halo always reads finer than the foliage.
+
+  Opacity is not a free dial: below about 0.2 the spores stop being visible
+  while still veiling the crown, which is strictly worse than not drawing them.
+  Depth peeling was tried and changes nothing — the cost is coverage, not draw
+  order.
 
 - **PyCodeKG code-health reports are no longer tracked.** The repo carried them
   under two competing conventions — a version-named `docs/analysis_v1.2.0.md`

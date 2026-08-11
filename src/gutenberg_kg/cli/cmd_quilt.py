@@ -118,6 +118,17 @@ def _depth_report(plotter, spec) -> str:
     help="Foliage palette. Winter drops most leaves, baring the wood.",
 )
 @click.option("--entities", is_flag=True, help="Include the gold entity spores.")
+@click.option("--topics", is_flag=True, help="Include the blue topic pollen cloud.")
+@click.option(
+    "--leaf-size",
+    default=None,
+    type=float,
+    help=(
+        "Leaf glyph radius before density scaling (default 0.32). Leaves shrink "
+        "by the cube root of chunk count, so a dense book like Pepys renders at "
+        "~0.32x; raise this to thicken its canopy."
+    ),
+)
 @click.option(
     "--zoom",
     default=1.0,
@@ -147,6 +158,8 @@ def cmd_quilt(
     schematic: bool,
     season: str,
     entities: bool,
+    topics: bool,
+    leaf_size: float | None,
     zoom: float,
     fov: float,
     orbit: int,
@@ -204,7 +217,7 @@ def cmd_quilt(
 
     nodes, edges = load_book_graph(meta)
     entry_times = load_entry_times(meta)
-    filters = SceneFilters(show_entities=entities)
+    filters = SceneFilters(show_entities=entities, show_topics=topics)
 
     plotter = pv.Plotter(off_screen=True)
     if schematic:
@@ -230,6 +243,7 @@ def cmd_quilt(
             filters=filters,
             season=season,
             progress=lambda m: click.echo(f"  {m}"),
+            **({"leaf_size": leaf_size} if leaf_size is not None else {}),
         )
     click.echo(f"Scene: {info.title}")
 
