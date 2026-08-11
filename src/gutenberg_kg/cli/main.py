@@ -27,6 +27,7 @@ from gutenberg_kg.cli import (  # noqa: E402, F401
     cmd_ingest,
     cmd_init,
     cmd_query,
+    cmd_quilt,
     cmd_rebuild,
     cmd_reregister,
     cmd_snapshot,

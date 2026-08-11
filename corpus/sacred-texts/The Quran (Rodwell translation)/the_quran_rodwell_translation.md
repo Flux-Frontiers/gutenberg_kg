@@ -982,9 +982,9 @@ the growth of a new power, by the ruinous strifes of the Persians and Greeks.
 Abulfeda (Life of Muhammad, p. 76) expressly says that he had promised his
 followers the spoils o Chosroes and Cæsar.
 
-SURA1 XCVI.-THICK BLOOD, OR CLOTS OF BLOOD [I.]
+## SURA1 XCVI.-THICK BLOOD, OR CLOTS OF BLOOD [I.]
 
-MECCA.-19 Verses
+*MECCA.-19 Verses*
 
 In the Name of God, the Compassionate, the Merciful2
 
@@ -1115,9 +1115,9 @@ in all sincerity, but still self-deceived, to take upon himself the office
 and work of a Messenger from God. We may perhaps infer from such passages as
 Sura ii. 123, what had ever been the leading idea in Muhammad's mind.
 
-SURA LXXIV.-THE ENWRAPPED1 [II.]
+## SURA LXXIV.-THE ENWRAPPED1 [II.]
 
-MECCA.-55 Verses
+*MECCA.-55 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -1290,7 +1290,7 @@ mistake of the copyist for the usual word, which suits it.
 
 7 That is, death.  Beidh.  Comp. Sura xv. 99.
 
-SURA LXXIII. THE ENFOLDED1 [III.]
+## SURA LXXIII. THE ENFOLDED1 [III.]
 
 MECCA. 20 Verses.
 
@@ -1386,9 +1386,9 @@ Meccans, especially to that numerous body who were anxiously searching after
 some better religion than the idolatries of their fathers (v. on Sura iii.
 19, 60), and provided Muhammad with a copious fund from which to draw.
 
-SURA XCIII.1-THE BRIGHTNESS [IV.]
+## SURA XCIII.1-THE BRIGHTNESS [IV.]
 
-MECCA.-11 Verses
+*MECCA.-11 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -1434,9 +1434,9 @@ Tabari says that when he first entered on his office of Prophet, even his
 wife Chadijah had read the Scriptures, and was acquainted with the History of
 the Prophets. Spreng. p. 100. But his conformity can only have been partial.
 
-SURA XCIV.-THE OPENING [V.]
+## SURA XCIV.-THE OPENING [V.]
 
-MECCA.-8 Verses
+*MECCA.-8 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -1456,9 +1456,9 @@ But when thou art set at liberty, then prosecute thy toil.
 
 And seek thy Lord with fervour.
 
-SURA CXIII.-THE DAYBREAK [VI.]
+## SURA CXIII.-THE DAYBREAK [VI.]
 
-MECCA OR MEDINA.-5 Verses
+*MECCA OR MEDINA.-5 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -1480,9 +1480,9 @@ women in general, who disconcert schemes as thread is disentangled by blowing
 upon it. Suras cxiii. are called the el mouwwidhetani, or preservative
 chapters, are engraved on amulets,etc.
 
-SURA CXIV.-MEN [VII.]
+## SURA CXIV.-MEN [VII.]
 
-MECCA OR MEDINA.-6 Verses
+*MECCA OR MEDINA.-6 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -1502,9 +1502,9 @@ _______________________
 
 1 Satan.
 
-SURA I.1 [VIII.]
+## SURA I.1 [VIII.]
 
-MECCA.-7 Verses
+*MECCA.-7 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -1558,9 +1558,9 @@ Ihdina 'ssirat almostakeem.
 Sirat alezeena anhamta aleihim, gheiri-'l mughdoobi aleihim, wala dsaleen.
 Ameen.
 
-SURA CIX.-UNBELIEVERS [IX.]
+## SURA CIX.-UNBELIEVERS [IX.]
 
-MECCA.-6 Verses
+*MECCA.-6 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -1584,9 +1584,9 @@ Meccan deities, or alternately every year. Hishâmi, p. 79; Tabari, p. 139. It
 is a distinct renunciation of Meccan idolatry, as the following Sura is a
 distinct recognition of the Divine Unity.
 
-SURA CXII.-THE UNITY [X.]
+## SURA CXII.-THE UNITY [X.]
 
-MECCA.-4 Verses
+*MECCA.-4 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -1598,9 +1598,9 @@ He begetteth not, and He is not begotten;
 
 And there is none like unto Him.
 
-SURA CXI. ABU LAHAB [XI.]
+## SURA CXI. ABU LAHAB [XI.]
 
-MECCA. 5 Verses
+*MECCA. 5 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -1625,9 +1625,9 @@ the outset of his career, especially from the rich.
 
 2 In allusion to the meaning of Abu Lahab, father of flame.
 
-SURA CVIII.-THE ABUNDANCE [XII.]
+## SURA CVIII.-THE ABUNDANCE [XII.]
 
-MECCA.-3 Verses
+*MECCA.-3 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -1642,9 +1642,9 @@ _______________________
 1 A reply to those who had taunted Muhammad with the death of his sons, as a
 mark of the divine displeasure.
 
-SURA CIV.-THE BACKBITER [XII.]
+## SURA CIV.-THE BACKBITER [XII.]
 
-MECCA.-9 Verses
+*MECCA.-9 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -1666,9 +1666,9 @@ It shall verily rise over them like a vault,
 
 On outstretched columns.
 
-SURA CVII.-RELIGION [XIV.]
+## SURA CVII.-RELIGION [XIV.]
 
-MECCA.-7 Verses
+*MECCA.-7 Verses*
 
 In the name of God, the Compassionate, the Merciful
 
@@ -1686,9 +1686,9 @@ Who make a shew of devotion,
 
 But refuse help to the needy.
 
-SURA CII.-DESIRE [XV.]
+## SURA CII.-DESIRE [XV.]
 
-MECCA.-8 Verses
+*MECCA.-8 Verses*
 
 In the name of God, the Compassionate, the Merciful
 
@@ -1708,9 +1708,9 @@ Then shall ye surely see it with the eye of certainty;
 
 Then shall ye on that day be taken to task concerning pleasures.
 
-SURA XCII.-THE NIGHT [XVI.]
+## SURA XCII.-THE NIGHT [XVI.]
 
-MECCA.-21 Verses
+*MECCA.-21 Verses*
 
 In the name of God, the Compassionate, the Merciful
 
@@ -1762,9 +1762,9 @@ _______________________
 2  Comp. Luke xi. 41.  Muhammad perhaps derived this view of the meritorious
 anture of almsgiving from the Jewish oral law.
 
-SURA LXVIII.-THE PEN [XVII.]
+## SURA LXVIII.-THE PEN [XVII.]
 
-Mecca.-52 Verses
+*Mecca.-52 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -1926,9 +1926,9 @@ action of stripping previous to wrestling, swimming, etc.
 7 Lit. the companion of the fish. Comp. on Jonah Sura xxxvii. 139-148, and
 Sura xxi. 87.
 
-SURA XC.-THE SOIL [XVIII.]
+## SURA XC.-THE SOIL [XVIII.]
 
-MECCA.-20 Verses
+*MECCA.-20 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -1983,9 +1983,9 @@ _______________________
 takes precedence of the feeding and clothing of the poor, and there is no
 commandment so great as this."
 
-SURA CV.-THE ELEPHANT [XIX.]
+## SURA CV.-THE ELEPHANT [XIX.]
 
-MECCA.-5 Verses
+*MECCA.-5 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -2015,9 +2015,9 @@ Decline and Fall, c. 1. The small-pox first shewed itself in Arabia at the
 time of the invasion by Abraha. M. de Hammer Gemaldesaal, i. 24. Reiske
 opusc. Med. Arabum. Hal‘, 1776, p. 8.
 
-SURA CVI.-THE KOREISCH [XX.]
+## SURA CVI.-THE KOREISCH [XX.]
 
-MECCA.-4 Verses
+*MECCA.-4 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -2036,9 +2036,9 @@ _______________________
 Mecca. See Sura, xcv. n. p. 41. This Sura, therefore, like the preceding, is
 a brief appeal to the Meccans on the ground of their peculiar privileges.
 
-SURA XCVII.-POWER [XXI.]
+## SURA XCVII.-POWER [XXI.]
 
-MECCA.-5 Verses
+*MECCA.-5 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -2065,9 +2065,9 @@ righteous, one of the perfectly wicked, one of the intermediate. The
 perfectly righteous are inscribed and sealed for life," etc. Bab. Talm. Rosh.
 Hash., § I.
 
-SURA LXXXVI. THE NIGHT-COMER [XXII.]
+## SURA LXXXVI. THE NIGHT-COMER [XXII.]
 
-MECCA. 17 Verses
+*MECCA. 17 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -2105,9 +2105,9 @@ And I will plot a plot against them.
 
 Deal calmly therefore with the infidels; leave them awhile alone.
 
-SURA XCI.-THE SUN [XXIII.]
+## SURA XCI.-THE SUN [XXIII.]
 
-MECCA.-15 Verses
+*MECCA.-15 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -2147,9 +2147,9 @@ _______________________
 
 1 See Sura vii. 33, for the story of Themoud.
 
-SURA LXXX.-HE FROWNED [XXIV.]
+## SURA LXXX.-HE FROWNED [XXIV.]
 
-MECCA.-42 Verses
+*MECCA.-42 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -2256,9 +2256,9 @@ of warning.
 lxxxv. p. 42, and almost every Sura to the lv., after which they become
 gradually more historical.
 
-SURA LXXXVII.-THE MOST HIGH [XXV.]
+## SURA LXXXVII.-THE MOST HIGH [XXV.]
 
-MECCA.-19 Verses
+*MECCA.-19 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -2305,9 +2305,9 @@ _______________________
 1 Thus the Rabbins attribute the Book Jezirah to Abraham. See Fabr. Cod.
 Apoc. V. T. p. 349.
 
-SURA XCV.-THE FIG [XXVI.]
+## SURA XCV.-THE FIG [XXVI.]
 
-MECCA.-8 Verses
+*MECCA.-8 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -2339,9 +2339,9 @@ ceremonies were a bond of union to several of the Bedouin tribes of the
 Hejaz. The Koreisch had monopolised most of the offices and advantages of the
 Haram in the time of Muhammad. See Sprenger's Life of Mohammad, pp. 7 20.
 
-SURA CIII.-THE AFTERNOON [XXVII.]
+## SURA CIII.-THE AFTERNOON [XXVII.]
 
-MECCA.-3 Verses
+*MECCA.-3 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -2357,9 +2357,9 @@ _______________________
 1 Said to have been recited in the Mosque shortly before his death by
 Muhammad. See Weil, p. 328.
 
-SURA LXXXV.-THE STARRY [XXVIII.]
+## SURA LXXXV.-THE STARRY [XXVIII.]
 
-MECCA.-22 Verses
+*MECCA.-22 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -2430,9 +2430,9 @@ Christian legends.
 length, which is a characteristic of the more advanced period. Observe also
 the change in the rhymes.
 
-SURA CI.-THE BLOW [XXIX.]
+## SURA CI.-THE BLOW [XXIX.]
 
-MECCA.-8 Verses
+*MECCA.-8 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -2457,9 +2457,9 @@ _______________________
 
 1 Lit. Mother.
 
-SURA XCIX.-THE EARTHQUAKE [XXX.]
+## SURA XCIX.-THE EARTHQUAKE [XXX.]
 
-MECCA.-8 Verses
+*MECCA.-8 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -2479,9 +2479,9 @@ And whosoever shall have wrought an atom's weight of good shall behold it,
 
 And whosoever shall have wrought an atom's weight of evil shall behold it.
 
-SURA LXXXII.-THE CLEAVING [XXXI.]
+## SURA LXXXII.-THE CLEAVING [XXXI.]
 
-MECCA.-19 Verses
+*MECCA.-19 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -2528,9 +2528,9 @@ _______________________
 
 1 Salt water and fresh water.
 
-SURA LXXXI.-THE FOLDED UP [XXXII.]
+## SURA LXXXI.-THE FOLDED UP [XXXII.]
 
-MECCA.-29 Verses
+*MECCA.-29 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -2622,9 +2622,9 @@ another.
 
 10 Comp. the doctrine of predestination in Sura 1xxvi. v. 25 to end.
 
-SURA LXXXIV.-THE SPLITTING ASUNDER [XXXIII.]
+## SURA LXXXIV.-THE SPLITTING ASUNDER [XXXIII.]
 
-MECCA.-25 Verses
+*MECCA.-25 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -2693,9 +2693,9 @@ the damned will be chained to the neck; the left chained behind the back.
 4 The expression is ironical. See Freyt. on the word. Lit. tell them glad
 tidings.
 
-SURA C.-THE CHARGERS [XXXIV.]
+## SURA C.-THE CHARGERS [XXXIV.]
 
-Mecca.-11 Verses
+*Mecca.-11 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -2721,9 +2721,9 @@ And that which is in men's breasts shall be brought forth,
 
 Verily their Lord shall on that day be informed concerning them?
 
-SURA LXXIX.1-THOSE WHO DRAG FORTH [XXXV.]
+## SURA LXXIX.1-THOSE WHO DRAG FORTH [XXXV.]
 
-MECCA.-46 Verses
+*MECCA.-46 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -2833,9 +2833,9 @@ considered as one of the short and early Suras.
 Paradise. Or, are beforehand with the Satans and djinn in learning the
 decrees of God.
 
-SURA LXXVII.-THE SENT [XXXVI.]
+## SURA LXXVII.-THE SENT [XXXVI.]
 
-MECCA.-50 Verses
+*MECCA.-50 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -2954,9 +2954,9 @@ and "raise the dead, and they shall be gathered into Paradise, and there
 shall eat and drink and be in good health to all eternity."-Sanhedrin, fol.
 119, col. I.
 
-SURA LXXVIII.-THE NEWS [XXXVII.]
+## SURA LXXVIII.-THE NEWS [XXXVII.]
 
-MECCA.-41 Verses
+*MECCA.-41 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -3066,9 +3066,9 @@ existence."
 
 4 Gabriel.
 
-SURA LXXXVIII.-THE OVERSHADOWING [XXXVIII.]
+## SURA LXXXVIII.-THE OVERSHADOWING [XXXVIII.]
 
-MECCA.-26 Verses
+*MECCA.-26 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -3128,9 +3128,9 @@ _______________________
 
 1 The name of a bitter, thorny shrub.
 
-SURA LXXXIX.-THE DAYBREAK [XXXIX.]
+## SURA LXXXIX.-THE DAYBREAK [XXXIX.]
 
-MECCA.-30 Verses
+*MECCA.-30 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -3207,9 +3207,9 @@ _______________________
 will "be dragged up by 70,000 chains, each pulled by 70,000 angels," as if it
 were an enormous animal or locomotive engine.
 
-SURA LXXV.-THE RESURRECTION [XL.]
+## SURA LXXV.-THE RESURRECTION [XL.]
 
-MECCA.-40 Verses
+*MECCA.-40 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -3316,9 +3316,9 @@ Maracci.
 
 6 Nonne fuit humor ex spermate quod spermatizatur.
 
-SURA LXXXIII.-THOSE WHO STINT [XLI.]
+## SURA LXXXIII.-THOSE WHO STINT [XLI.]
 
-MECCA.-36 Verses
+*MECCA.-36 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -3403,9 +3403,9 @@ transferred to the register of the righteous.
 2 Derived from the root sanima, to be high: this water being conveyed to the
 highest apartments in the Pavilions of Paradise.
 
-SURA LXIX.-THE INEVITABLE [XLII.]
+## SURA LXIX.-THE INEVITABLE [XLII.]
 
-MECCA.-52 Verses
+*MECCA.-52 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -3539,9 +3539,9 @@ Resurrection and Day of Judgment.
 
 5 In allusion to the mode of executing criminals in many eastern countries.
 
-SURA LI.-THE SCATTERING [XLIII.]
+## SURA LI.-THE SCATTERING [XLIII.]
 
-MECCA.-60 Verses
+*MECCA.-60 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -3709,9 +3709,9 @@ commentators.
 
 8 That is, in broad daylight. Thus Beidh. Comp. Sura xlvi. 22.
 
-SURA LII.-THE MOUNTAIN [XLIV.]
+## SURA LII.-THE MOUNTAIN [XLIV.]
 
-MECCA.-49 Verses
+*MECCA.-49 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -3843,9 +3843,9 @@ _______________________
 context. Muir places the whole Sura in what he terms the fourth stage of
 Meccan Suras.
 
-SURA LVI.-THE INEVITABLE [XLV.]
+## SURA LVI.-THE INEVITABLE [XLV.]
 
-MECCA.-96 Verses
+*MECCA.-96 Verses*
 
 In the name of God, the Compassionate, the Merciful
 
@@ -4306,9 +4306,9 @@ Sura, to have originated at Medina.
 
 11 Compare the refrain in Sura lv. p. 74.
 
-SURA LXX.-THE STEPS OR ASCENTS [XLVII.]
+## SURA LXX.-THE STEPS OR ASCENTS [XLVII.]
 
-MECCA.-44 Verses
+*MECCA.-44 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -4420,9 +4420,9 @@ place in a single night.
 
 4 See next Sura. v. 16.
 
-SURA LV.-THE MERCIFUL [XLVIII.]
+## SURA LV.-THE MERCIFUL [XLVIII.]
 
-MECCA.-78 Verses
+*MECCA.-78 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -4611,9 +4611,9 @@ reward of the faithful. Suras ii. 23 and iv. 60. While in Suras xxxvi. 56;
 xliii. 70; xiii. 23; xl. 8 the proper wives of the faithful are spoken of as
 accompanying their husbands into the gardens of bliss.
 
-SURA LIV.-THE MOON [XLIX.]
+## SURA LIV.-THE MOON [XLIX.]
 
-MECCA.-55 Verses
+*MECCA.-55 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -4762,9 +4762,9 @@ _______________________
 more than one Paradise-and of the rivers and trees therein, will be found in
 Schr der Talm. Rabb. Judenthum, pp. 418-432.
 
-SURA XXXVII.-THE RANKS [L.]
+## SURA XXXVII.-THE RANKS [L.]
 
-MECCA.-182 Verses
+*MECCA.-182 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -5201,9 +5201,9 @@ rhyme.
 
 19 Compare verse 69.
 
-SURA LXXI.-NOAH [LI.]
+## SURA LXXI.-NOAH [LI.]
 
-MECCA.-29 Verses
+*MECCA.-29 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -5286,9 +5286,9 @@ _______________________
 2 Or, the idols had seduced many. Thus Kas. Beidh. gives both  interpp.-See
 on these idols Freytag's Einleitung, p. 349.
 
-SURA LXXVI.-MAN [LII.]
+## SURA LXXVI.-MAN [LII.]
 
-MECCA.-31 Verses
+*MECCA.-31 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -5377,9 +5377,9 @@ _______________________
 
 3 Desire no recompense from you.
 
-SURA XLIV.-SMOKE [LIII.]
+## SURA XLIV.-SMOKE [LIII.]
 
-MECCA.-59 Verses
+*MECCA.-59 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -5546,9 +5546,9 @@ the Koreisch, and the bitter enemy of Muhammad.
 
 11 To see the turn which events may take.
 
-SURA L.-KAF [LIV.]
+## SURA L.-KAF [LIV.]
 
-MECCA.-45 Verses
+*MECCA.-45 Verses*
 
 In the Name of God, the Compassionate, the Merciful.
 
@@ -5702,9 +5702,9 @@ and Beidh.) to have been revealed in answer to the Jews who told the Prophet
 that if God rested on the Sabbath, it was because he was weary. But a
 connection with verse 14 seems more natural.
 
-SURA XX.1-TA. HA. [LV.]
+## SURA XX.1-TA. HA. [LV.]
 
-MECCA.-135 Verses
+*MECCA.-135 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -6209,9 +6209,9 @@ divided.
 
 30 Supply, we will not believe.
 
-SURA XXVI.-THE POETS1 [LVI.]
+## SURA XXVI.-THE POETS1 [LVI.]
 
-MECCA.-228 Verses
+*MECCA.-228 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -6793,9 +6793,9 @@ contests were subsequently suppressed by Muhammad, as offering openings for
 discussions which might prove inconvenient, and dangerous to his rising
 claims.
 
-SURA XV.-HEDJR1 [LVII.]
+## SURA XV.-HEDJR1 [LVII.]
 
-MECCA.-99 Verses
+*MECCA.-99 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -7119,9 +7119,9 @@ Sprenger (Life of M. p. 177, 8).
 
 23 Death.
 
-SURA XIX.1-MARY [LVIII.]
+## SURA XIX.1-MARY [LVIII.]
 
-MECCA.-98 Verses
+*MECCA.-98 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -7520,9 +7520,9 @@ the singular Allah, God.
 29 As ambassadors come into the presence of a prince. Sale. This is implied
 in the original.
 
-SURA XXXVIII.-SAD [LIX.]
+## SURA XXXVIII.-SAD [LIX.]
 
-MECCA.-88 Verses
+*MECCA.-88 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -7845,9 +7845,9 @@ uncertain period.
 
 23 Lit. stoned. See Sura xv. 34, p. 114.
 
-SURA XXXVI.-YA. SIN [LX.]
+## SURA XXXVI.-YA. SIN [LX.]
 
-MECCA.-83 Verses
+*MECCA.-83 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -8136,7 +8136,7 @@ witnesses, saith the Lord." See also Sura [lxxi.] xli. 19, 20.
 
 18 The form of the Arabic word is Rabbinic Hebrew.
 
-SURA XLIII.-ORNAMENTS OF GOLD [LXI.]
+## SURA XLIII.-ORNAMENTS OF GOLD [LXI.]
 
 MECCA.-89 Verses.
 
@@ -8467,9 +8467,9 @@ the angels, will be allowed to intercede.
 
 22 Muhammad.
 
-SURA LXXII.-DJINN [LXII.]
+## SURA LXXII.-DJINN [LXII.]
 
-MECCA.-28 Verses
+*MECCA.-28 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -8563,9 +8563,9 @@ _______________________
 Mohram" of Burckhardt, midway between Mecca and Ta‹ef, when Muhammad was
 driven from Mecca. A.D. 620.
 
-SURA LXVII.-THE KINGDOM [LXIII.]
+## SURA LXVII.-THE KINGDOM [LXIII.]
 
-MECCA.- 30 Verses
+*MECCA.- 30 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -8671,9 +8671,9 @@ meaning of the Arabic root is to draw near; hence the above signification, in
 the sense of God's presence as interpenetrating all things: hence also the
 other sense of benign, as in Sura [lxxxiii.] xlii. 18.
 
-SURA XXIII.-THE BELIEVERS [LXIV.]
+## SURA XXIII.-THE BELIEVERS [LXIV.]
 
-MECCA.1-118 Verses
+*MECCA.1-118 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -9037,9 +9037,9 @@ torment.
 14 Lit. those who number, or keep account, i.e. our torments distract us too
 much to allow us to compute.
 
-SURA XXI.-THE PROPHETS [LXV.]
+## SURA XXI.-THE PROPHETS [LXV.]
 
-MECCA.-112 Verses
+*MECCA.-112 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -9477,9 +9477,9 @@ Muhammad's secretaries.
 
 26 Ps. xxxvii. 29. This is the only text quoted in the Koran.
 
-SURA XXV.-AL FURKAN [LXVI.]
+## SURA XXV.-AL FURKAN [LXVI.]
 
-MECCA.-77 Verses
+*MECCA.-77 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -9785,9 +9785,9 @@ in the Talmud.
 
 20 The idolaters.
 
-SURA XVII.-THE NIGHT JOURNEY [LXVII.]
+## SURA XVII.-THE NIGHT JOURNEY [LXVII.]
 
-MECCA.1-111 Verses
+*MECCA.1-111 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -10274,9 +10274,9 @@ of Hannah.
 
 30 Lit. magnify Him by magnifying.
 
-SURA XXVII.-THE ANT [LXVIII.]
+## SURA XXVII.-THE ANT [LXVIII.]
 
-MECCA.-95 Verses
+*MECCA.-95 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -10618,9 +10618,9 @@ of dead persons are also called by this name" (ib. 289).
 
 15 Or, shall derive advantage from them.
 
-SURA XVIII.-THE CAVE [LXIX.]
+## SURA XVIII.-THE CAVE [LXIX.]
 
-MECCA.-110 Verses
+*MECCA.-110 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -11090,9 +11090,9 @@ the Greek or Syriac.
 Persian elements as was noticed above in the identification of Satans and
 Djinn, verse 48.
 
-SURA XXXII.-ADORATION [LXX.]
+## SURA XXXII.-ADORATION [LXX.]
 
-MECCA.-30 Verses
+*MECCA.-30 Verses*
 
 In the Name of God, the Compassionate, the Merciful.
 
@@ -11212,9 +11212,9 @@ to this verse, p. 108, n.
 
 6 Wait thou for their punishment as they wait for thy downfall.
 
-SURA1 XLI.-THE MADE PLAIN [LXXI.]
+## SURA1 XLI.-THE MADE PLAIN [LXXI.]
 
-MECCA.-54 Verses
+*MECCA.-54 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -11447,9 +11447,9 @@ what! foreign and Arabian?
 
 16 Lit. to Him is referred.
 
-SURA XLV.-THE KNEELING [LXXII.]
+## SURA XLV.-THE KNEELING [LXXII.]
 
-MECCA.-36 Verses
+*MECCA.-36 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -11591,9 +11591,9 @@ religion.
 
 6 Lit. the makers vain, i.e. vanitatis arguentes alcoranum. Mar.
 
-SURA XVI.-THE BEE [LXXIII.]
+## SURA XVI.-THE BEE [LXXIII.]
 
-MECCA.-128 Verses
+*MECCA.-128 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -12135,9 +12135,9 @@ convert and pervert.
 25 All Muhammadan commentators explain this verse as a prohibition to avenge
 the death of Hamza on the Meccans with too great severity.
 
-SURA XXX.-THE GREEKS [LXXIV.]
+## SURA XXX.-THE GREEKS [LXXIV.]
 
-MECCA.-60 Verses
+*MECCA.-60 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -12388,9 +12388,9 @@ were the whole.
 
 11 Lit. which none can put back from God.
 
-SURA XI.-HOUD [LXXV.]
+## SURA XI.-HOUD [LXXV.]
 
-MECCA.-123 Verses
+*MECCA.-123 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -12915,9 +12915,9 @@ have hastened my white hairs." "And what," asked Abu Bekr, "are its sisters?"
 "The Inevitable (Sura lvi.) and the Blow (Sura ci.)." Kitâb al Wackidi, p.
 84, ap. Muir.
 
-SURA XIV.-ABRAHAM, ON WHOM BE PEACE [LXXVI.]
+## SURA XIV.-ABRAHAM, ON WHOM BE PEACE [LXXVI.]
 
-MECCA.-52 Verses
+*MECCA.-52 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -13128,9 +13128,9 @@ _______________________
 
 7 Lit. were unjust to their own souls.
 
-SURA XII.-JOSEPH, PEACE BE ON HIM [LXXVII.]
+## SURA XII.-JOSEPH, PEACE BE ON HIM [LXXVII.]
 
-MECCA.-III Verses
+*MECCA.-III Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -13619,9 +13619,9 @@ materials, have entered upon a course of wilful dissimulation and deceit
 (although the end would justify to him the means employed) in claiming
 inspiration for them.
 
-SURA XL.-THE BELIEVER [LXXVIII.]
+## SURA XL.-THE BELIEVER [LXXVIII.]
 
-MECCA.-85 Verses
+*MECCA.-85 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -13962,9 +13962,9 @@ Egypt, which of course impoverished the tribes situated on the line of the
 old mercantile route southward. Mecca, however, was still to a certain extent
 prosperous. Comp. Sura [lxi.] xliii. 28.
 
-SURA XXVIII.-THE STORY [LXXIX.]
+## SURA XXVIII.-THE STORY [LXXIX.]
 
-MECCA.-88 Verses
+*MECCA.-88 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -14364,9 +14364,9 @@ this story. Compare also Tract. Psachim. fol. 119 a.
 this latter interpretation involves the revelation of this verse at least, at
 Medina.
 
-SURA XXXIX.-THE TROOPS [LXXX.]
+## SURA XXXIX.-THE TROOPS [LXXX.]
 
-MECCA.-75 Verses
+*MECCA.-75 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -14677,9 +14677,9 @@ Omar ben Muhammad. Beidh. Itq. 19.
 
 13 Adventum diei hujus. Mar.
 
-SURA XXIX.-THE SPIDER [LXXXI.]
+## SURA XXIX.-THE SPIDER [LXXXI.]
 
-MECCA-69 Verses
+*MECCA-69 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -14988,9 +14988,9 @@ been imminent when Muhammad could thus write.
 
 16 At Mecca.
 
-SURA XXXI.-LOKMAN1 [LXXXII.]
+## SURA XXXI.-LOKMAN1 [LXXXII.]
 
-MECCA.-34 Verses
+*MECCA.-34 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -15158,9 +15158,9 @@ the preceding and following context.
 
 11 Between idolatry and Islam.
 
-SURA XLII.-COUNSEL [LXXXIII.]
+## SURA XLII.-COUNSEL [LXXXIII.]
 
-MECCA.-53 Verses
+*MECCA.-53 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -15390,9 +15390,9 @@ God will abolish the lie and, etc.
 
 10 Thus Beidhawi.
 
-SURA X.-JONAH, PEACE BE ON HIM! [LXXXIV.]
+## SURA X.-JONAH, PEACE BE ON HIM! [LXXXIV.]
 
-MECCA.-109 Verses
+*MECCA.-109 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -15847,9 +15847,9 @@ Eliezer, § 43. Comp. Midr. on Ps. cvi. Midr. Jalkut, ch. 238.
 12 That is, whether thou art not foretold in the Law and Gospel, and whether
 the Koran is not in unison with, and confirmatory of, them.
 
-SURA XXXIV.-SABA1 [LXXXV.]
+## SURA XXXIV.-SABA1 [LXXXV.]
 
-MECCA.-54 Verses
+*MECCA.-54 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -16087,9 +16087,9 @@ from the surface of the earth. Ullm.
 
 10 That is, when in this life.
 
-SURA XXXV.-THE CREATOR, OR THE ANGELS [LXXXVI.]
+## SURA XXXV.-THE CREATOR, OR THE ANGELS [LXXXVI.]
 
-MECCA.-45 Verses
+*MECCA.-45 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -16282,9 +16282,9 @@ hills, and white sandy valleys were the only objects in sight."
 
 6 Method of dealing, i.e., first warning, then punishing.
 
-SURA VII.-AL ARAF [LXXXVII.]
+## SURA VII.-AL ARAF [LXXXVII.]
 
-MECCA.-205 Verses
+*MECCA.-205 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -17263,9 +17263,9 @@ voluntary and superfluous alms as the people could spare.
 
 53 Collected or sought it out. Beidh.
 
-SURA XLVI.-AL AHKAF [LXXXVIII.]
+## SURA XLVI.-AL AHKAF [LXXXVIII.]
 
-MECCA.-35 Verses
+*MECCA.-35 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -17439,9 +17439,9 @@ the same period as the rest of the Sura.
 gottesdienstlichen Opfer näherten. Ad appropinquandum (magis ipsi Deo), by
 intercession. Mar. Beidh.
 
-SURA VI.-CATTLE [LXXXIX.]
+## SURA VI.-CATTLE [LXXXIX.]
 
-MECCA.-165 Verses
+*MECCA.-165 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -18255,9 +18255,9 @@ passage between this and the preceding verse is lost.
 
 40 Lit. we were careless of their studies
 
-SURA XIII.-THUNDER [XC.]
+## SURA XIII.-THUNDER [XC.]
 
-MECCA.-43 Verses
+*MECCA.-43 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -18478,9 +18478,9 @@ existed before the Creation. Midr. Jalkut, 7.
 8 That is, the progressive conquests of the Muslims trench more and more on
 the territories of the idolatrous Arabians.
 
-SURA II.-THE COW1 [XCI.]
+## SURA II.-THE COW1 [XCI.]
 
-MEDINA.-286 Verses
+*MEDINA.-286 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -20114,9 +20114,9 @@ instilling the fear of poverty.
 109 Comp. Matt. vi. 3, 4. 110 This contradicts verse 254, as well as several
 verses in Sura [1viii.] xix.
 
-SURA XCVIII.-CLEAR EVIDENCE [XCII.]
+## SURA XCVIII.-CLEAR EVIDENCE [XCII.]
 
-MEDINA.-8 Verses
+*MEDINA.-8 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -20146,9 +20146,9 @@ rivers flow, in which they shall abide for evermore.
 God is well pleased in them and they in Him! This, for him who feareth his
 Lord.
 
-SURA LXIV.-MUTUAL DECEIT [XCIII.]
+## SURA LXIV.-MUTUAL DECEIT [XCIII.]
 
-MEDINA.1-18 Verses
+*MEDINA.1-18 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -20228,9 +20228,9 @@ see that if they had been just persons they would have gone to Paradise.
 3 Their occasionally beguiling you from your duty, especially that of
 contending for the faith. Comp. 1 Cor. vii. 32.
 
-SURA LXII.-THE ASSEMBLY [XCIV.]
+## SURA LXII.-THE ASSEMBLY [XCIV.]
 
-MEDINA.-II Verses
+*MEDINA.-II Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -20288,9 +20288,9 @@ be accurate, we may approximate to the date of this Sura as in Hej. 5
 Muslims at the battle of the Ditch. And as the former part is aimed at the
 Jews, it is probably of the same period as Sura [xci.] ii.
 
-SURA VIII.-THE SPOILS1 [XCV.]
+## SURA VIII.-THE SPOILS1 [XCV.]
 
-MEDINA.-76 Verses
+*MEDINA.-76 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -20640,9 +20640,9 @@ drawing on the enemy in self-confidence.
 
 23 See Weil. Life of M. p. 84, n.
 
-SURA1 XLVII.-MUHAMMAD [XCVI.]
+## SURA1 XLVII.-MUHAMMAD [XCVI.]
 
-MEDINA.-40 Verses
+*MEDINA.-40 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -20813,9 +20813,9 @@ See Sura [xci.] ii. 56, p. 343.
 
 8 Matt. xxi. 43.
 
-SURA III.-THE FAMILY OF IMRAN1 [XCVII.]
+## SURA III.-THE FAMILY OF IMRAN1 [XCVII.]
 
-MEDINA.-200 Verses
+*MEDINA.-200 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -21828,9 +21828,9 @@ the women, who had fled their country for the faith. Beidh.
 Meccans in their trading journeys. This may point to the comparative freedom
 from trade and general independence of the Meccans after the affair at Ohod.
 
-SURA LXI.-BATTLE ARRAY [XCVIII.]
+## SURA LXI.-BATTLE ARRAY [XCVIII.]
 
-MEDINA.-14 Verses
+*MEDINA.-14 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -21907,9 +21907,9 @@ lix.) we have a clue to the probable date of the Sura. The promise, however,
 may be general. But the tone of verse 9 evidently points to a period when, as
 at Medina, the prospects of Islam were becoming hopeful.
 
-SURA LVII.-IRON [XCIX.]
+## SURA LVII.-IRON [XCIX.]
 
-MEDINA.1-29 Verses
+*MEDINA.1-29 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -22071,9 +22071,9 @@ committed to writing subsequently, in the same way as his own Koran.
 11 The word in the original is the same for favours, gifts of grace, bounty.
 The reference is to the gift of prophecy (Beidh.) mentioned verse 27.
 
-SURA IV.-WOMEN1 [C.]
+## SURA IV.-WOMEN1 [C.]
 
-MEDINA.-175 Verses
+*MEDINA.-175 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -22951,9 +22951,9 @@ too little, like the Jews who would not believe on Muhammad.
 
 32 That is, a Being possessing a Spirit.
 
-SURA LXV.-DIVORCE1 [CI.]
+## SURA LXV.-DIVORCE1 [CI.]
 
-MECCA.-12 Verses
+*MECCA.-12 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -23031,9 +23031,9 @@ of the first clause of verse II.
 of the Meccan Suras. Hence, probably; a tradition in Omar ben Muhammad makes
 the whole Sura Meccan.
 
-SURA LIX.-THE EMIGRATION [CII.]
+## SURA LIX.-THE EMIGRATION [CII.]
 
-MEDINA.-24 Verses
+*MEDINA.-24 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -23160,9 +23160,9 @@ plundered previously to those of Nadhir.
 on account of its lowness, to be the scene of the revelation to Moses, in
 order to shew that God loves the humble.
 
-SURA XXXIII.-THE CONFEDERATES1 [CIII.]
+## SURA XXXIII.-THE CONFEDERATES1 [CIII.]
 
-MEDINA.-73 Verses
+*MEDINA.-73 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -23542,9 +23542,9 @@ thrown on Muhammad for unfairly dividing spoils, whereupon he said, "God be
 merciful to my brother Moses. He was wronged more than this, and bore it with
 patience."
 
-SURA LXIII.1-THE HYPOCRITES [CIV.]
+## SURA LXIII.1-THE HYPOCRITES [CIV.]
 
-MEDINA.-11 Verses
+*MEDINA.-11 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -23606,9 +23606,9 @@ their persons are bulky, but their hearts so hypocritical and cowardly that
 they are afraid of the slightest noise. In the original, saïkat is perhaps an
 allusion to the shout of Gabriel, that is to exterminate the wicked.
 
-SURA XXIV.-LIGHT [CV.]
+## SURA XXIV.-LIGHT [CV.]
 
-MEDINA.-64 Verses
+*MEDINA.-64 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -23950,9 +23950,9 @@ salute his Rabbi, nor to return his salutation, in the same way that
 salutations are given and returned among friends." "Whoever despises the wise
 men hath no portion in the world to come." See Hilchoth Torah, c.5.
 
-SURA LVIII.-SHE WHO PLEADED [CVI.]
+## SURA LVIII.-SHE WHO PLEADED [CVI.]
 
-MEDINA.-22 Verses
+*MEDINA.-22 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -24074,9 +24074,9 @@ Jews said, Es-sam aleika, "a plague, or poison on thee." See Geiger, p. 18.
 
 5 The Jews swear that they are Muslims.
 
-SURA XXII.-THE PILGRIMAGE [CVII.]
+## SURA XXII.-THE PILGRIMAGE [CVII.]
 
-MEDINA.1-78 Verses
+*MEDINA.1-78 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -24433,9 +24433,9 @@ desires, or affections, we should render when he recited.
 
 14 Lit. they measure not God with truth of His measurement.
 
-SURA XLVIII.-THE VICTORY [CVIII.]
+## SURA XLVIII.-THE VICTORY [CVIII.]
 
-MEDINA.-29 Verses
+*MEDINA.-29 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -24602,9 +24602,9 @@ their forehead.
 
 12 Lit. legs.
 
-SURA LXVI.-THE FORBIDDING [CIX.]
+## SURA LXVI.-THE FORBIDDING [CIX.]
 
-MEDINA.-12 Verses
+*MEDINA.-12 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -24681,9 +24681,9 @@ Chron. iv.18.
 5 See Sura xxi. 91. Lit. quae rimam suam tuita est, in quam (rimam)
 inflavimus Spiritus nostri partem. Thus Beidh.
 
-SURA1 LX.-SHE WHO IS TRIED [CX.]
+## SURA1 LX.-SHE WHO IS TRIED [CX.]
 
-MEDINA.-13 Versus
+*MEDINA.-13 Versus*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -24788,9 +24788,9 @@ restitution of property was to take place.
 8 Lit. with a calumny which they have devised between their hands and their
 feet. Said to have been revealed at the taking of Mecca. Tab. Beidh.
 
-SURA1 CX.-HELP [CXI.]
+## SURA1 CX.-HELP [CXI.]
 
-MEDINA.-3 Verses
+*MEDINA.-3 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -24806,9 +24806,9 @@ _______________________
 1 This Sura was revealed at the taking of Mecca, and is supposed to have
 given Muhammad warning of his death.
 
-SURA XLIX.-THE APARTMENTS [CXII.]
+## SURA XLIX.-THE APARTMENTS [CXII.]
 
-MEDINA.-18 Verses
+*MEDINA.-18 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 
@@ -24921,9 +24921,9 @@ Ibn Sad. Tabari. Wah.
 
 10 As if by so doing they had conferred a favour on the Prophet.
 
-SURA IX.1-IMMUNITY [CXIII.]
+## SURA IX.1-IMMUNITY [CXIII.]
 
-MEDINA.-130 Verses
+*MEDINA.-130 Verses*
 
 An IMMUNITY from God and His Apostle to those with whom ye are in league,
 among the Polytheist Arabs! (those who join gods with God).
@@ -25637,9 +25637,9 @@ to Medina.
 
 48 While fighting for the cause of God.
 
-SURA V.-THE TABLE [CXIV.]
+## SURA V.-THE TABLE [CXIV.]
 
-MEDINA.-120 Verses
+*MEDINA.-120 Verses*
 
 In the Name of God, the Compassionate, the Merciful
 

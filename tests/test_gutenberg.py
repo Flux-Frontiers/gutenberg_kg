@@ -535,3 +535,100 @@ def test_download_book_force_bypasses_id_check(tmp_path: Path, monkeypatch):
         pass  # reached the fetch — the ID check was bypassed
     else:
         raise AssertionError("expected the download path to be taken")
+
+
+# ---------------------------------------------------------------------------
+# SURA headings (Quran) and the bilingual heading gate
+# ---------------------------------------------------------------------------
+
+
+def test_is_heading_sura_with_title_and_edition_marker():
+    # Rodwell: footnote digit on the word, edition order in brackets.
+    result = _is_heading("SURA1 XCVI.-THICK BLOOD, OR CLOTS OF BLOOD [I.]")
+    assert result is not None
+    assert result[0] == 2
+    assert "XCVI" in result[1]
+
+
+def test_is_heading_sura_space_separated():
+    result = _is_heading("SURA CXI. ABU LAHAB [XI.]")
+    assert result is not None
+    assert result[0] == 2
+
+
+def test_is_heading_sura_numeral_only():
+    result = _is_heading("SURA I.1 [VIII.]")
+    assert result is not None
+    assert result[0] == 2
+
+
+def test_is_heading_sura_requires_a_separator_after_the_numeral():
+    # Prose must not be promoted: "SURA I saw ..." is a sentence, not a heading.
+    assert _is_heading("SURA I saw the light in the east") is None
+
+
+def test_is_heading_ignores_sura_in_prose():
+    assert _is_heading("the sura was revealed at Mecca") is None
+
+
+def test_breaks_before_heading_on_blank():
+    assert dg._breaks_before_heading("") is True
+    assert dg._breaks_before_heading("   ") is True
+
+
+def test_breaks_before_heading_on_non_latin_line():
+    # Legge's Analects prints the Chinese heading directly above the English.
+    assert dg._breaks_before_heading("學而第一") is True
+
+
+def test_breaks_before_heading_false_for_prose():
+    assert dg._breaks_before_heading("with a constant perseverance") is False
+    assert dg._breaks_before_heading("1. The Master said") is False
+
+
+def test_bilingual_heading_is_promoted():
+    # Regression: every "BOOK I." in the Analects was swallowed because the
+    # Chinese line above it meant the blank-line gate never opened, collapsing
+    # the whole work into a single section.
+    text = "\n".join(
+        [
+            "*** START OF THE PROJECT GUTENBERG EBOOK TEST ***",
+            "",
+            "CONFUCIAN ANALECTS.",
+            "",
+            "學而第一",
+            "BOOK I.  HSIO R.",
+            "",
+            "The Master said, is it not pleasant to learn.",
+            "",
+            "為政第二",
+            "BOOK II. WEI CHANG.",
+            "",
+            "He who exercises government by means of his virtue.",
+            "",
+            "*** END OF THE PROJECT GUTENBERG EBOOK TEST ***",
+        ]
+    )
+    md = text_to_markdown(text, {"title": "Analects", "author": "Legge"})
+    assert "## BOOK I.  HSIO R." in md
+    assert "## BOOK II. WEI CHANG." in md
+
+
+def test_sura_headings_become_sections():
+    text = "\n".join(
+        [
+            "*** START OF THE PROJECT GUTENBERG EBOOK TEST ***",
+            "",
+            "SURA XCVI.-THICK BLOOD [I.]",
+            "",
+            "Recite thou, in the name of thy Lord who created.",
+            "",
+            "SURA LXXIV.-THE ENWRAPPED [II.]",
+            "",
+            "O thou, enwrapped in thy mantle.",
+            "",
+            "*** END OF THE PROJECT GUTENBERG EBOOK TEST ***",
+        ]
+    )
+    md = text_to_markdown(text, {"title": "Quran", "author": "Rodwell"})
+    assert md.count("\n## SURA") == 2

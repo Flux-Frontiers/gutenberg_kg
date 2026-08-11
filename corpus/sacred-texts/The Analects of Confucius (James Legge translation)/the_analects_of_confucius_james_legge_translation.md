@@ -40,12 +40,13 @@ James Legge
 CONFUCIAN ANALECTS.
 
 學而第一
-BOOK I.  HSIO R.
+## BOOK I.  HSIO R.
 
 【第一章】
 【一節】子曰、 學而時習之、不亦說乎。【二節】有朋自遠方來、不亦樂
 乎。【三節】人不知而不慍、不亦君子乎。
-CHAPTER I. 1. The Master said, 'Is it not pleasant to learn
+## CHAPTER I. 1. The Master said, 'Is it not pleasant to learn
+
 with a constant perseverance and application?
 2. 'Is it not delightful to have friends coming from distant
 quarters?'
@@ -186,7 +187,7 @@ men's not knowing me; I will be afflicted that I do not know
 men.'
 
 為政第二
-BOOK II. WEI CHANG.
+## BOOK II. WEI CHANG.
 
 【第一章】子曰、為政以德、譬如北辰、居其所、而眾星共之。
 CHAP. I. The Master said, 'He who exercises government
@@ -361,7 +362,7 @@ a spirit which does not belong to him is flattery.
 courage.'
 
 八佾第三
-BOOK III. PA YIH.
+## BOOK III. PA YIH.
 
 【第一章】孔子謂季氏、八佾舞於庭、是可忍也、孰不可忍也。
 CHAP. I. Confucius said of the head of the Chi family, who
@@ -560,7 +561,7 @@ contemplate such ways?'
 不敬、臨喪不哀、吾何以觀之哉。
 
 里仁第四
-BOOK IV. LE JIN.
+## BOOK IV. LE JIN.
 
 【第一章】子曰、里仁為美、擇不處仁、焉得知。
 【第二章】子曰、不仁者、不可以久處約、不可以長處樂、仁者安仁、知者
@@ -705,7 +706,7 @@ remonstrances lead to disgrace. Between friends, frequent
 reproofs make the friendship distant.'
 
 公冶長第五
-BOOK V. KUNG-YE CH'ANG.
+## BOOK V. KUNG-YE CH'ANG.
 
 【第一章】【一節】子謂公冶長、可妻也、雖在縲絏之中、非其罪也。以其
 子妻之。【二節】子謂南容、
@@ -924,7 +925,7 @@ families, there may be found one honourable and sincere as I
 am, but not so fond of learning.'
 
 雍也第六
-BOOK VI. YUNG YEY.
+## BOOK VI. YUNG YEY.
 
 【第一章】【一節】子曰、雍也可使南面。【二節】仲弓問子桑伯子。子曰、
 可也、簡。【三節】仲弓曰、居敬而行簡、以臨其民、不亦可乎、居簡而行
@@ -1137,7 +1138,7 @@ be enlarged himself, he seeks also to enlarge others.
 ourselves;-- this may be called the art of virtue.'
 
 述而第七
-BOOK VII. SHU R.
+## BOOK VII. SHU R.
 
 【第一章】子曰、述而不作、信而好古、竊比於我老彭。
 【第二章】子曰、默而識之、學而不厭、誨人不倦、何有於我哉。
@@ -1377,7 +1378,7 @@ CHAP. XXXVII. The Master was mild, and yet dignified;
 majestic, and yet not fierce; respectful, and yet easy.
 
 泰伯第八
-BOOK VIII. T'AI-PO.
+## BOOK VIII. T'AI-PO.
 
 【第一章】子曰、太伯其可謂至德也已矣、三以天下讓、民無得而稱焉。
 CHAP. I. The Master said, 'T'ai-po may be said to have
@@ -1547,7 +1548,7 @@ house, but expended all his strength on the ditches and water-
 channels. I can find nothing like a flaw in Yu.'
 
 子罕第九
-BOOK IX. TSZE HAN.
+## BOOK IX. TSZE HAN.
 
 【第一章】子罕言、利、與命、與仁。
 【第二章】【一節】達巷黨人曰、大哉孔子、搏學而無所成名。【二節】子
@@ -1768,7 +1769,7 @@ and turn! Do I not think of you? But your house is distant.
 How is it distant?'
 
 鄉黨第十
-BOOK X. HEANG TANG.
+## BOOK X. HEANG TANG.
 
 【第一章】【一節】孔子於鄉黨、恂恂如也、似不能言者。【二節】其在宗
 廟朝廷、便便然、唯謹爾。
@@ -1998,7 +1999,7 @@ bridge. At its season! At its season!' Tsze-lu made a motion to
 it. Thrice it smelt him and then rose.
 
 先進第十一
-BOOK XI. HSIEN TSIN.
+## BOOK XI. HSIEN TSIN.
 
 【第一章】【一節】子曰、先進於禮樂、野人也、後進於禮樂、君子也、【二
 節】如用之、則吾從先進。
@@ -2284,7 +2285,7 @@ audiences but the sovereign? If Ch'ih were to be a small
 assistant in these services, who could be a great one?
 
 顏淵第十二
-BOOK XII. YEN YUAN.
+## BOOK XII. YEN YUAN.
 
 【第一章】【一節】顏淵問仁。子曰、克己復禮為仁、一日克己復禮、天下
 歸仁焉、為仁由己、而由人乎哉。【二節】顏淵曰、請問其目。子曰、非禮
@@ -2547,7 +2548,7 @@ man on grounds of culture meets with his friends, and by their
 friendship helps his virtue.'
 
 子路第十三
-BOOK XIII. TSZE-LU.
+## BOOK XIII. TSZE-LU.
 
 【第一章】【一節】子路問政。子曰、先之、勞之。【二節】請益。曰、無
 倦。
@@ -2835,7 +2836,7 @@ CHAP. XXX. The Master said, 'To lead an uninstructed
 people to war, is to throw them away.'
 
 憲問第十四
-BOOK XIV. HSIEN WAN.
+## BOOK XIV. HSIEN WAN.
 
 【第一章】憲問恥。子曰、邦有道穀、邦無道穀、恥也。
 CHAP. I. Hsien asked what was shameful. The Master
@@ -3209,7 +3210,7 @@ to shoulder with his elders. He is not one who is seeking to
 make progress in learning. He wishes quickly to become a man.'
 
 衛靈公第十五
-BOOK XV. WEI LING KUNG.
+## BOOK XV. WEI LING KUNG.
 
 【第一章】【一節】衛靈公問陳於孔子。孔子對曰、俎豆之事、則嘗聞之矣、
 軍旅之事、未之學也。明日遂行。【二節】在陳絕糧、從者病、莫能興。【三
@@ -3476,7 +3477,7 @@ master?'
 those who lead the blind.'
 
 李氏第十六
-BOOK XVI. KE SHE.
+## BOOK XVI. KE SHE.
 
 【第一章】【一節】李氏將伐顓臾。【二節】冉有李路見於孔子曰、李氏將
 有事於顓臾。
@@ -3712,7 +3713,7 @@ her K'WA HSIAO CHUN. The people of other states also call her
 CHUN FU ZAN.
 
 陽貨第十七
-BOOK XVII. YANG HO.
+## BOOK XVII. YANG HO.
 
 [17.1]
 
@@ -3986,7 +3987,7 @@ CHAP. XXVI. The Master said, 'When a man at forty is the
 object of dislike, he will always continue what he is.'
 
 微子第十八
-BOOK XVIII. WEI TSZE.
+## BOOK XVIII. WEI TSZE.
 
 【第一章】【一節】微子去之、箕子為之奴、比干諫而死。【二節】孔子曰、
 殷有三仁焉。
@@ -4151,7 +4152,7 @@ Po-kwo, Chung-tu, Chung-hwu, Shu-ya, Shu-hsia, Chi-sui, and
 Chi-kwa.
 
 子張第十九
-BOOK XIX. TSZE-CHANG.
+## BOOK XIX. TSZE-CHANG.
 
 【第一章】子張曰、士、見危致命、見得思義、祭思敬、喪思哀、其可已矣。
 【第二章】子張曰、執德不弘、信道不篤、焉能為有、焉能為亡。
@@ -4369,7 +4370,7 @@ died, he would be bitterly lamented. How is it possible for him
 to be attained to?'
 
 堯曰第二十
-BOOK XX. YAO YUEH.
+## BOOK XX. YAO YUEH.
 
 【第一章】【一節】堯曰、咨、爾舜、天之曆數在爾躬、允執其中、四海困
 窮、天祿永終。【二節】舜亦以命禹。【三節】曰、予小子履、敢用玄牡、

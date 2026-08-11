@@ -1015,10 +1015,15 @@ def run_ingest(
     wall_elapsed = time.perf_counter() - wall_t0
     print_summary(genre_summaries, opts, registry_path, wall_start, wall_elapsed, embed_model_name)
 
-    report_path = save_summary(
-        genre_summaries, opts, registry_path, wall_start, wall_elapsed, embed_model_name
-    )
-    print(f"  Report saved: {report_path}\n")
+    if opts.dry_run:
+        # A dry run changes nothing, so it should not leave a report behind
+        # claiming it did — that is the one thing that fills reports/ with noise.
+        print("  [dry] no report written\n")
+    else:
+        report_path = save_summary(
+            genre_summaries, opts, registry_path, wall_start, wall_elapsed, embed_model_name
+        )
+        print(f"  Report saved: {report_path}\n")
 
     return 1 if (diary_rc != 0 or any(g.failed for g in genre_summaries)) else 0
 
