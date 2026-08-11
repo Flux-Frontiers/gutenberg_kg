@@ -12,13 +12,14 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Changed
 
-### Removed
+- **The committed PyCodeKG analysis report is current again**, as
+  `docs/analysis_v1.14.0.md`. The previous one was stamped `pycode-kg 0.19.0`
+  at commit `76ea9f4` and had not been regenerated since v1.2.0, eleven
+  releases ago — it described a 3,305-node graph against a `src/` tree that now
+  indexes 7,659 nodes and 6,508 edges. Nothing linked to it and no release step
+  refreshed it. Regenerate with `pycodekg analyze . -o docs/analysis_v<ver>.md`.
 
-- **`docs/analysis_v1.2.0.md`** — a generated PyCodeKG analysis report, stamped
-  `pycode-kg 0.19.0` at commit `76ea9f4` and last regenerated for v1.2.0,
-  eleven releases ago. Nothing linked to it and no release step refreshed it,
-  so it described a graph the repo no longer has. Deleted rather than
-  regenerated; it can be reproduced on demand with `pycodekg analyze`.
+### Removed
 
 ### Fixed
 
