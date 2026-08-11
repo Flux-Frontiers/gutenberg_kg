@@ -204,7 +204,9 @@ def create_forest_visualization(
             slug=slug,
             genre=viz._book_genre_map.get(slug, "unknown"),
             entry_times=viz._entry_times,
-            filters=SceneFilters(show_entities=viz.show_entities),
+            # One checkbox drives both clouds here, so the viewer keeps the
+            # behaviour it had before entities and topics were split apart.
+            filters=SceneFilters(show_entities=viz.show_entities, show_topics=viz.show_entities),
             season=viz.season,
             progress=_progress,
         )
@@ -224,6 +226,7 @@ def create_forest_visualization(
             show_sections=viz.show_sections,
             show_chunks=viz.show_chunks,
             show_entities=viz.show_entities,
+            show_topics=viz.show_entities,
             show_contains=viz.show_contains,
             show_similar=viz.show_similar,
             show_next=viz.show_next,

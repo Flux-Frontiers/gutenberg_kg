@@ -47,10 +47,17 @@ def _write_graph(db_path, nodes, edges):
     con.close()
 
 
-def _prose_book(book_dir, n_sections=4, chunks_per_section=5):
-    """A .dockg book: one document, sections, chunks under each section."""
+def _prose_book(book_dir, n_sections=4, chunks_per_section=5, n_spores=0):
+    """A .dockg book: one document, sections, chunks under each section.
+
+    *n_spores* adds that many ``entity`` and ``topic`` nodes each; it defaults
+    to none so the existing count assertions are unaffected.
+    """
     nodes = [("doc:book", "document", "book", "Book", "book.md", None, None)]
     edges = []
+    for kind in ("entity", "topic"):
+        for i in range(n_spores):
+            nodes.append((f"{kind}:{i}", kind, f"{kind}{i}", None, "book.md", None, None))
     for s in range(n_sections):
         sid = f"sec:{s}"
         nodes.append((sid, "section", f"s{s}", f"Section {s}", "book.md", None, None))
@@ -239,8 +246,19 @@ class TestSceneFilters:
     def test_documents_are_always_visible(self):
         assert "document" in SceneFilters(show_sections=False, show_chunks=False).visible_kinds()
 
-    def test_entity_toggle_covers_the_floating_kinds(self):
+    def test_entity_toggle_covers_entities_and_keywords(self):
         kinds = SceneFilters(show_entities=True).visible_kinds()
+        assert {"entity", "keyword"} <= kinds
+
+    def test_entities_and_topics_toggle_independently(self):
+        # They were one gold cloud until the split; "what the book names" and
+        # "what it is about" are different questions.
+        assert "topic" not in SceneFilters(show_entities=True).visible_kinds()
+        assert "entity" not in SceneFilters(show_topics=True).visible_kinds()
+        assert "topic" in SceneFilters(show_topics=True).visible_kinds()
+
+    def test_both_toggles_together_restore_the_old_set(self):
+        kinds = SceneFilters(show_entities=True, show_topics=True).visible_kinds()
         assert {"entity", "topic", "keyword"} <= kinds
 
     def test_relations_follow_their_toggles(self):
@@ -285,6 +303,60 @@ class TestBuildForestScene:
         assert info.counts["section"] == 18
         assert info.counts["document"] == 0
         plotter.close()
+
+
+class TestSporeClouds:
+    """Entities and topics render as two independently-toggled clouds."""
+
+    @staticmethod
+    def _actors(tmp_path, **flags):
+        from gutenberg_kg.scene import SceneFilters, build_tree_scene
+
+        # The default prose fixture carries no floating kinds, and a cloud only
+        # renders when nodes of that kind exist.
+        _prose_book(tmp_path / "philosophy" / "Spores", n_spores=5)
+        meta, nodes, edges = _load(tmp_path, "philosophy", "Spores")
+        plotter = pv.Plotter(off_screen=True)
+        build_tree_scene(nodes, edges, plotter, slug=meta.slug, filters=SceneFilters(**flags))
+        names = set(plotter.renderer.actors)
+        plotter.close()
+        return names
+
+    def test_neither_cloud_by_default(self, tmp_path):
+        assert not {"entity-spores", "topic-spores"} & self._actors(tmp_path)
+
+    def test_entities_alone_draw_no_topic_cloud(self, tmp_path):
+        names = self._actors(tmp_path, show_entities=True)
+        assert "entity-spores" in names
+        assert "topic-spores" not in names
+
+    def test_topics_alone_draw_no_entity_cloud(self, tmp_path):
+        names = self._actors(tmp_path, show_topics=True)
+        assert "topic-spores" in names
+        assert "entity-spores" not in names
+
+    def test_the_two_clouds_use_their_own_colours(self):
+        from gutenberg_kg.scene import KIND_COLOR
+
+        # The topic kind carried a blue KIND_COLOR that went unused while both
+        # kinds shared one gold cloud.
+        assert KIND_COLOR["entity"] != KIND_COLOR["topic"]
+
+
+class TestLeafSize:
+    def test_leaf_size_scales_the_canopy(self, corpus):
+        from gutenberg_kg.scene import build_tree_scene
+
+        meta, nodes, edges = _load(corpus, "philosophy", "A Treatise")
+        extents = {}
+        for size in (0.2, 0.8):
+            plotter = pv.Plotter(off_screen=True)
+            build_tree_scene(nodes, edges, plotter, slug=meta.slug, leaf_size=size)
+            leaves = plotter.renderer.actors["leaves"].mapper.dataset
+            b = leaves.bounds
+            extents[size] = (b[1] - b[0]) * (b[3] - b[2]) * (b[5] - b[4])
+            plotter.close()
+        assert extents[0.8] > extents[0.2]
 
 
 class TestBuildTreeScene:

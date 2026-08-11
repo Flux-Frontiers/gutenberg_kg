@@ -813,7 +813,10 @@ class SceneFilters:
 
     :param show_sections: Draw ``section`` (branch) nodes.
     :param show_chunks: Draw ``chunk`` (leaf) nodes.
-    :param show_entities: Draw ``entity`` / ``topic`` / ``keyword`` nodes.
+    :param show_entities: Draw ``entity`` / ``keyword`` nodes — the gold spores.
+    :param show_topics: Draw ``topic`` nodes — the blue pollen cloud.  Separate
+        from *show_entities* because the two answer different questions: what
+        the book names, versus what it is about.
     :param show_contains: Draw ``CONTAINS`` structural edges.
     :param show_similar: Draw ``SIMILAR_TO`` semantic arcs.
     :param show_next: Draw ``NEXT`` sequential arcs.
@@ -822,6 +825,7 @@ class SceneFilters:
     show_sections: bool = True
     show_chunks: bool = True
     show_entities: bool = False
+    show_topics: bool = False
     show_contains: bool = False
     show_similar: bool = False
     show_next: bool = False
@@ -834,7 +838,9 @@ class SceneFilters:
         if self.show_chunks:
             kinds.add("chunk")
         if self.show_entities:
-            kinds.update(("entity", "topic", "keyword"))
+            kinds.update(("entity", "keyword"))
+        if self.show_topics:
+            kinds.add("topic")
         return kinds
 
     def visible_rels(self) -> set[str]:
@@ -1130,6 +1136,22 @@ WOOD_COLOR = "#6B4A2E"
 #: Chunk count at which leaves render at full size; denser crowns scale down.
 LEAF_REFERENCE_COUNT: int = 600
 
+#: Most spores drawn per halo.  A halo reads as a cloud rather than a count, so
+#: past a couple of hundred glyphs more ink buys nothing and costs the tree.
+#: Measured on Hamlet against a spore-free render: an uncapped halo leaves 38%
+#: of the foliage legible, 350 leaves 64%, and 200 leaves ~68%.
+SPORE_CAP: int = 200
+
+#: Spore radius as a fraction of the (already density-scaled) leaf radius.
+#: Below 1.0 so the halo always reads as finer than the foliage.
+SPORE_LEAF_RATIO: float = 0.45
+
+#: Spore alpha.  Not a free dial: below about 0.2 the spores stop being visible
+#: while still veiling the crown, which is strictly worse than not drawing them
+#: — so this stays high enough to earn the foliage it costs.  Depth peeling was
+#: tried and changes nothing here; the cost is coverage, not draw order.
+SPORE_OPACITY: float = 0.38
+
 
 @dataclass(frozen=True)
 class Season:
@@ -1204,8 +1226,9 @@ def build_tree_scene(
     :param genre: Genre name, which selects the tropism silhouette.
     :param entry_times: ``{document id: ISO timestamp}`` from
         :func:`load_entry_times`; grows a dated book's limbs as calendar years.
-    :param filters: Only ``show_entities`` is consulted — the gold spores.
-        Wood and leaves are the point of this scene.
+    :param filters: Only ``show_entities`` (gold spores) and ``show_topics``
+        (blue pollen) are consulted.  Wood and leaves are the point of this
+        scene.
     :param season: Key into :data:`SEASONS` — foliage palette, leaf density,
         wood tone, and sky.
     :param tip_radius: Radius of leaf-bearing twigs, in scene units.
@@ -1293,21 +1316,44 @@ def build_tree_scene(
             name="leaves",
         )
 
-    # Gold spores: small bright off-plane points, the best depth cue in the
-    # scene and the hook for query illumination later.  The schematic layout
-    # parks them in a tight ball above the canopy, which at tree scale reads as
-    # a golf ball on a stick; here they surround the whole crown as a halo.
-    if filters.show_entities:
-        n_spores = sum(1 for n in nodes if n.kind in ("entity", "topic"))
-        if n_spores:
-            spore_pts = _crown_halo(n_spores, crown, seed=seed_from_slug(slug + ":spores"))
-            spore_size = KIND_SIZE["entity"] * min(
-                1.0, (LEAF_REFERENCE_COUNT / n_spores) ** (1.0 / 3.0)
-            )
-            spores = pv.PolyData(spore_pts).glyph(
-                geom=pv.Tetrahedron(radius=spore_size), orient=False, scale=False
-            )
-            plotter.add_mesh(spores, color=KIND_COLOR["entity"], opacity=0.55, name="spores")
+    # Spores: bright off-plane points, the best depth cue in the scene and the
+    # hook for query illumination later.  The schematic layout parks them in a
+    # tight ball above the canopy, which at tree scale reads as a golf ball on
+    # a stick; here they surround the crown as a halo.
+    #
+    # Entities and topics get their own halo, since one gold cloud conflated
+    # what a book *names* with what it is *about* and wasted the blue the topic
+    # kind already carried.  Topics sit further out so the two stay separable.
+    #
+    # Both are capped at SPORE_CAP.  Drawing one glyph per node cannot work at
+    # corpus scale — Pepys has 7,065 entities and 7,287 topics against 18,757
+    # leaves, so the halo simply buries the tree it is meant to annotate.  A
+    # halo reads as a cloud, not as a count, so a deterministic sample carries
+    # the same meaning at a fraction of the ink.
+    for kind, enabled, spread in (
+        ("entity", filters.show_entities, 1.0),
+        ("topic", filters.show_topics, 1.3),
+    ):
+        if not enabled:
+            continue
+        n_spores = sum(1 for n in nodes if n.kind == kind)
+        if not n_spores:
+            continue
+        n_drawn = min(n_spores, SPORE_CAP)
+        spore_pts = _crown_halo(
+            n_drawn, crown * spread, seed=seed_from_slug(f"{slug}:{kind}-spores")
+        )
+        # Sized against the leaves rather than against their own count, so the
+        # halo always reads as finer than the foliage it surrounds.
+        spore_size = (
+            leaf_size * leaf_scale * SPORE_LEAF_RATIO * (KIND_SIZE[kind] / KIND_SIZE["entity"])
+        )
+        spores = pv.PolyData(spore_pts).glyph(
+            geom=pv.Tetrahedron(radius=spore_size), orient=False, scale=False
+        )
+        plotter.add_mesh(
+            spores, color=KIND_COLOR[kind], opacity=SPORE_OPACITY, name=f"{kind}-spores"
+        )
 
     if ground_size > 0:
         ground = pv.Plane(
