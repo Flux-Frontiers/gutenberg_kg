@@ -5,7 +5,12 @@ import sqlite3
 import numpy as np
 import pytest
 
-from gutenberg_kg.scene import (
+# The modules under test import pyvista at module scope, which CI does not
+# install (the viz3d extra is optional).  Skip at collection time rather than
+# letting the import blow up the whole run.
+pytest.importorskip("pyvista")
+
+from gutenberg_kg.scene import (  # noqa: E402
     KG_DIRS,
     BookMeta,
     ForestLayout,

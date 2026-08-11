@@ -16,6 +16,16 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Fixed
 
+- **CI collection no longer dies when the `viz3d` extra is absent.**
+  `tests/test_scene.py`, `tests/test_layout_organic.py`, and
+  `tests/test_seasons.py` imported `gutenberg_kg.scene` / `.layout_organic` at
+  module scope, and those modules import `pyvista` at module scope in turn. CI
+  installs no optional extras, so all three failed at *collection*, which
+  aborts the entire run rather than skipping three files — the rest of the
+  suite never executed. Each now calls `pytest.importorskip("pyvista")` before
+  the import, matching how the suite already guards pyvista inside test
+  bodies. Without the extra: 419 passed, 3 skipped; with it: 496 passed.
+
 ---
 
 ## [1.14.0] - 2026-08-11
