@@ -12,12 +12,21 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Changed
 
-- **The committed PyCodeKG analysis report is current again**, as
-  `docs/analysis_v1.14.0.md`. The previous one was stamped `pycode-kg 0.19.0`
-  at commit `76ea9f4` and had not been regenerated since v1.2.0, eleven
-  releases ago — it described a 3,305-node graph against a `src/` tree that now
-  indexes 7,659 nodes and 6,508 edges. Nothing linked to it and no release step
-  refreshed it. Regenerate with `pycodekg analyze . -o docs/analysis_v<ver>.md`.
+- **PyCodeKG code-health reports are no longer tracked.** The repo carried them
+  under two competing conventions — a version-named `docs/analysis_v1.2.0.md`
+  frozen since v1.2.0 and eleven releases stale, and dated
+  `analysis/gutenberg_kg_analysis_<date>.md` files. Both describe code that git
+  already records, and they regenerate in about six seconds
+  (`pycodekg analyze .`), so tracking dated snapshots was pure churn: one past
+  release bumped a report as its only doc change. The version-named file is
+  deleted, the dated ones are untracked but left on disk, and
+  `analysis/gutenberg_kg_analysis_*.md` is now gitignored.
+
+  The experiment results beside them stay tracked deliberately — the
+  `similar_to_*` sweeps behind the cap-8 / `discover_similar=False` decision,
+  `embedder_benchmark_*`, and `front_matter_assessment.json`. Those cost real
+  compute, cannot be regenerated cheaply, and are the evidence for conclusions
+  this changelog asserts elsewhere.
 
 ### Removed
 

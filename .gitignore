@@ -178,6 +178,14 @@ bundles/
 # keeping deliberately:  git add -f reports/ingest_<date>.md
 reports/ingest_*.md
 
+# PyCodeKG code-health reports -- regenerable in seconds from the KG
+# (`pycodekg analyze .`), and they describe code that git already records, so
+# tracking dated snapshots is churn. The experiment results beside them
+# (similar_to_* sweeps, embedder_benchmark_*, front_matter_assessment) are NOT
+# regenerable and stay tracked -- they are the evidence behind decisions the
+# changelog asserts.
+analysis/gutenberg_kg_analysis_*.md
+
 # Agent scratch dirs (Claude Code / Codex)
 .agents/
 .codex/
