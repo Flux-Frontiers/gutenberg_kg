@@ -10,6 +10,18 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added
 
+### Changed
+
+### Removed
+
+### Fixed
+
+---
+
+## [1.14.0] - 2026-08-11
+
+### Added
+
 - **Organically grown knowledge trees** (`gutenberg_kg.layout_organic`). Where
   the existing `ForestLayout` places nodes on a golden-angle spiral — right for
   exploring the whole corpus — this module *grows* a skeleton that reaches the

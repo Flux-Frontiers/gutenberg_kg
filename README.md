@@ -8,7 +8,7 @@
   <a href="https://www.python.org/"><img src="https://img.shields.io/badge/python-3.12%20%7C%203.13-blue.svg" alt="Python"/></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/code-Elastic--2.0-lightgrey.svg" alt="Code License"/></a>
   <a href="https://www.gutenberg.org/"><img src="https://img.shields.io/badge/texts-Public%20Domain-green.svg" alt="Texts License"/></a>
-  <img src="https://img.shields.io/badge/version-1.13.0-blue.svg" alt="Version"/>
+  <img src="https://img.shields.io/badge/version-1.14.0-blue.svg" alt="Version"/>
   <img src="https://img.shields.io/badge/corpus-241%20books-orange.svg" alt="Corpus"/>
   <img src="https://img.shields.io/badge/nodes-1.3M-green.svg" alt="Nodes"/>
   <img src="https://img.shields.io/badge/edges-5.1M-green.svg" alt="Edges"/>
@@ -160,7 +160,7 @@ The complete workflows—including catalogs, genre management, provenance, and r
 | Biography | 11 | 71,607 | 290,544 |
 | Drama | 10 | 14,992 | 57,192 |
 | Natural History | 7 | 44,747 | 157,202 |
-| Sacred Texts | 7 | 31,773 | 155,939 |
+| Sacred Texts | 7 | 31,850 | 156,538 |
 | Travel | 6 | 57,279 | 197,361 |
 | Letters | 6 | 37,562 | 120,173 |
 | German Literature | 5 | 15,073 | 48,065 |
@@ -169,7 +169,7 @@ The complete workflows—including catalogs, genre management, provenance, and r
 | Shakespeare | 4 | 6,260 | 20,966 |
 | Technical Reference (IA) | 3 | 22,920 | 61,837 |
 | Spanish Literature | 1 | 11,422 | 52,834 |
-| **Total** | **241** | **1,270,591** | **5,094,446** |
+| **Total** | **241** | **1,270,668** | **5,095,045** |
 <!-- END corpus-table -->
 
 </details>
@@ -202,7 +202,7 @@ If you use GutenbergKG in research, use GitHub’s **Cite this repository** butt
   author       = {Suchanek, Eric G.},
   title        = {{GutenbergKG}: The Knowledge Press},
   year         = {2026},
-  version      = {1.13.0},
+  version      = {1.14.0},
   publisher    = {Flux-Frontiers},
   doi          = {10.5281/zenodo.20045389},
   url          = {https://github.com/Flux-Frontiers/gutenberg_kg}
