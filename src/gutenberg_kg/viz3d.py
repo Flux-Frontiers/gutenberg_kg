@@ -14,8 +14,8 @@ This module is the **Qt viewer** only: corpus scanning, layout, and scene
 composition live in :mod:`gutenberg_kg.scene`, which knows nothing about Qt so
 the off-screen light-field renderer (``gutenkg quilt``) can share them.
 
-Requires: pyvista, pyvistaqt, PyQt5, param, numpy
-(all available in the pycode_kg environment).
+Requires: pyvista, pyvistaqt, PyQt5, param, numpy, and the shared 3-D layout
+primitives from ``kg_utils.viz3d`` (kgmodule-utils' ``viz3d`` extra).
 
 Author: Eric G. Suchanek, PhD
 """
@@ -34,8 +34,8 @@ from pathlib import Path
 import numpy as np
 import param
 import pyvista as pv
+from kg_utils.viz3d import LayoutEdge, LayoutNode
 from markdown import markdown  # type: ignore[import-untyped]
-from pycode_kg.layout3d import LayoutEdge, LayoutNode
 from PyQt5.QtCore import Qt, pyqtSignal
 from PyQt5.QtGui import QFont
 from PyQt5.QtWidgets import (

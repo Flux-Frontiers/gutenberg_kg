@@ -25,7 +25,7 @@ from pathlib import Path
 
 import numpy as np
 import pyvista as pv
-from pycode_kg.layout3d import Layout3D, LayoutEdge, LayoutNode, fibonacci_annulus, fibonacci_sphere
+from kg_utils.viz3d import Layout3D, LayoutEdge, LayoutNode, fibonacci_annulus, fibonacci_sphere
 
 from gutenberg_kg.layout_organic import Skeleton, grow_tree, leaf_glyphs, seed_from_slug, tree_mesh
 
