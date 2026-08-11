@@ -159,6 +159,18 @@ HEADING_PATTERNS = [
         ),
         2,
     ),
+    # SURA headings (Quran).  Rodwell prints a footnote digit straight after
+    # the word or the numeral and an edition-order marker in brackets at the
+    # end: "SURA1 XCVI.-THICK BLOOD, OR CLOTS OF BLOOD [I.]".  A separator
+    # after the numeral is required so prose like "SURA I saw ..." is not
+    # mistaken for a heading.
+    (
+        re.compile(
+            r"^SURA\d*\s+([IVXLCDM]+)\d*\s*[.\-—]+\s*(.*?)\s*(?:\[[IVXLCDM]+\.?\])?$",
+            re.IGNORECASE,
+        ),
+        2,
+    ),
     # STAVE I / STAVE 1 (A Christmas Carol)
     (
         re.compile(
@@ -447,6 +459,27 @@ def strip_boilerplate(text: str) -> str:
 # ---------------------------------------------------------------------------
 
 
+def _breaks_before_heading(prev_line: str) -> bool:
+    """
+    Whether *prev_line* separates a heading from body text as a blank line would.
+
+    A heading is normally only honoured after a blank line, which keeps
+    mid-paragraph phrases from being promoted.  Bilingual editions break that
+    assumption: Legge's Analects prints the Chinese heading immediately above
+    the English one with nothing between, so every ``BOOK I.`` in the volume
+    was silently swallowed into the body and the whole work collapsed into one
+    section.  A line carrying no Latin letters is not prose in these texts, so
+    it can stand in for the blank.
+
+    :param prev_line: The preceding source line.
+    :return: ``True`` if a heading may follow it.
+    """
+    stripped = prev_line.strip()
+    if not stripped:
+        return True
+    return not any(ch.isalpha() and ch.isascii() for ch in stripped)
+
+
 def _is_heading(line: str) -> tuple[int, str] | None:
     """Check if a line is a structural heading.
 
@@ -580,6 +613,7 @@ def text_to_markdown(text: str, meta: dict) -> str:
     md_lines.append("")
 
     prev_blank = True
+    prev_line = ""
 
     i = start_idx
     while i < total:
@@ -610,7 +644,7 @@ def text_to_markdown(text: str, meta: dict) -> str:
 
         # Check for heading
         heading = _is_heading(stripped)
-        if heading and prev_blank:
+        if heading and (prev_blank or _breaks_before_heading(prev_line)):
             level, heading_text = heading
 
             # Look ahead for subtitle / multi-line chapter title:
@@ -665,6 +699,7 @@ def text_to_markdown(text: str, meta: dict) -> str:
         # Normal text line
         md_lines.append(stripped)
         prev_blank = False
+        prev_line = stripped
         i += 1
 
     return "\n".join(md_lines).strip() + "\n"

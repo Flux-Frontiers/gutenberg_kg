@@ -26,7 +26,9 @@ import atexit
 import gc
 import logging
 import sys
+import time
 import warnings
+from dataclasses import replace
 from pathlib import Path
 
 import numpy as np
@@ -94,6 +96,13 @@ ZOOM_FACTOR: float = 8.0
 #: Looking Glass preset the "Cast to LG" button renders for — the 16" Gen3
 #: Landscape, matching the `gutenkg quilt` default.
 QUILT_SPEC: str = "16-landscape"
+
+#: Fraction of the preset's pixel size used when casting from the viewer.
+#: Rendering a full 7680x4320 quilt costs about a second here but leaves Bridge
+#: a 33-megapixel PNG to load and decode, which is where the wait actually is.
+#: Halving each axis quarters that; the lenticular optics hide the difference.
+#: `gutenkg quilt` still writes full resolution for files that get kept.
+CAST_SCALE: float = 0.5
 
 
 # ---------------------------------------------------------------------------
@@ -764,6 +773,10 @@ class ForestMainWindow(QMainWindow):
         window's camera, so what is cast is the view being looked at — then
         hands the quilt to Bridge.  Needs Looking Glass Bridge running on this
         machine; the render is kept either way.
+
+        The quilt is rendered at :data:`CAST_SCALE` of the preset's pixel size:
+        the local render costs about a second at full size, but the wait is
+        Bridge loading the resulting PNG, and that scales with its area.
         """
         try:
             from quiltwright import QUILT_PRESETS, cast_quilt, render_quilt, save_quilt
@@ -774,26 +787,41 @@ class ForestMainWindow(QMainWindow):
             self.visualizer.status = "Nothing to cast — render something first."
             return
 
-        spec = QUILT_PRESETS[QUILT_SPEC]
-        offscreen = pv.Plotter(off_screen=True)
-        try:
-            self.visualizer.status = f"Rendering {spec.n_views} views..."
+        preset = QUILT_PRESETS[QUILT_SPEC]
+        spec = replace(
+            preset,
+            quilt_width=int(preset.quilt_width * CAST_SCALE) // preset.columns * preset.columns,
+            quilt_height=int(preset.quilt_height * CAST_SCALE) // preset.rows * preset.rows,
+        )
+
+        def step(n: int, message: str) -> None:
+            self.visualizer.status = f"Cast {n}/4 — {message}"
+            self.cast_btn.setEnabled(False)
             QApplication.processEvents()
+
+        offscreen = pv.Plotter(off_screen=True)
+        started = time.perf_counter()
+        try:
+            step(1, "building scene...")
             create_forest_visualization(self.visualizer, offscreen)
             offscreen.camera_position = self.vtk_plotter.camera_position
 
+            step(2, f"rendering {spec.n_views} views at {spec.tile_width}x{spec.tile_height}...")
+            quilt = render_quilt(offscreen, spec)
+
+            step(3, f"writing {spec.quilt_width}x{spec.quilt_height} quilt...")
             out_dir = Path(self.visualizer.corpus_root).parent / "renders" / "quilts"
-            stem = out_dir / f"{Path(self.visualizer.save_path).name}_cast"
-            path = save_quilt(render_quilt(offscreen, spec), stem, spec)
-            self.visualizer.status = f"Wrote {path.name}; casting..."
-            QApplication.processEvents()
+            path = save_quilt(quilt, out_dir / f"{Path(self.visualizer.save_path).name}_cast", spec)
+
+            step(4, "handing to Bridge...")
             cast_quilt(path.resolve(), spec)
-            self.visualizer.status = f"Cast to Looking Glass: {path.name}"
+            self.visualizer.status = f"Cast {path.name} in {time.perf_counter() - started:.1f}s"
         except Exception as exc:  # noqa: BLE001 — a dark panel must not kill the viewer
             logger.exception("Cast failed")
             self.visualizer.status = f"Cast failed (is Bridge running?): {exc}"
         finally:
             offscreen.close()
+            self.cast_btn.setEnabled(True)
 
     def on_pick(self, actor) -> None:
         """Right-click callback: find nearest node and show text popup."""

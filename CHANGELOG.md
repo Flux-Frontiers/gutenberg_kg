@@ -65,6 +65,11 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   pipe radii, sweeps), and the seasonal/leaf-placement geometry. These are
   Qt-free and run headless, which is what the extraction below buys.
 
+- **10 tests in `tests/test_gutenberg.py`** covering the sura heading pattern
+  (including the prose cases it must *not* match) and the bilingual heading
+  gate, plus end-to-end `text_to_markdown()` checks that a Quran and an
+  Analects excerpt now produce sections.
+
 ### Changed
 
 - **Scene construction extracted from the Qt viewer into
@@ -85,6 +90,17 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   whole resolution rather than just that package. Drop the marker once
   quiltwright widens its floor.
 
+- **Casting from the viewer renders at half the preset's pixel size**
+  (`CAST_SCALE`), giving an exactly-tiling 3840×2160 quilt instead of
+  7680×4320. Measured, the local pipeline is only ~1.5 s end to end (scene
+  0.4 s, 48 views 0.6 s, PNG 0.6 s) — the wait is Bridge loading a
+  33-megapixel PNG, and that cost scales with area, so this quarters it. Files
+  written by `gutenkg quilt` stay at full resolution.
+
+  The button also reports four phases (`Cast 2/4 — rendering 48 views at
+  480x360...`), disables itself while running, and prints elapsed time, so a
+  slow Bridge handoff never looks like a hang.
+
 - **Apple `container` runtime memory caps lowered**: `WORKER_MEM` 8g → 2g,
   `CHAT_MEM` 4g → 512m. The old defaults were unmeasured guesses; the new
   values follow the sibling `corpus_pepys` repo's `container stats`
@@ -102,6 +118,31 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   where `gutenkg quilt` writes.
 
 ### Fixed
+
+- **Sacred-text headings were being lost during text→Markdown conversion**,
+  collapsing whole works into a single section. Two unrelated causes, both in
+  `text_to_markdown()`:
+
+  - **Quran**: none of the 114 sura headings matched a pattern, because Rodwell
+    prints a footnote digit against the word or numeral and an edition-order
+    marker in brackets — `SURA1 XCVI.-THICK BLOOD, OR CLOTS OF BLOOD [I.]`. All
+    2,586 body chunks therefore hung under a section named "PREFACE". A `SURA`
+    pattern now covers them; it requires a separator after the numeral so prose
+    like "SURA I saw ..." is not promoted to a heading.
+  - **Analects**: `BOOK I.  HSIO R.` *did* match, but headings are only honoured
+    after a blank line and Legge's bilingual edition prints the Chinese heading
+    (`學而第一`) directly above the English one. Every `BOOK` heading in the
+    volume was swallowed. A preceding line carrying no Latin letters now counts
+    as a break, since it is not prose in these editions.
+
+  Verified against the texts themselves: the Quran goes from 4 headings to 118
+  and the Analects from 3 to 26. Heading counts are unchanged on Frankenstein,
+  Moby Dick, Pride and Prejudice, Alice, Hamlet, and Tao Te Ching, so the
+  relaxed gate does not invent structure elsewhere.
+
+  Note this applies at conversion: the raw Gutenberg `.txt` is not retained
+  after ingest, so affected books need re-downloading and re-ingesting before
+  their new sections appear.
 
 ---
 
