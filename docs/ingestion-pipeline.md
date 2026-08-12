@@ -95,26 +95,37 @@ All genres in a strategy group are processed together in one DocKG pass.
 
 ---
 
-## Stage 4 — Vector Index + Similarity Edges  `[3/4]`
+## Stage 4 — Vector Index + Lexical Index  `[3/4]`
 
 ```
   DocKG.build_index_from_cache()
   ┌──────────────────────────────────────────────────────────┐
   │  embeddings.jsonl                                        │
   │         │                                                │
-  │         ├──▶  LanceDB (ANN vector index)                 │
-  │         │      384-dim · ~1.6 GB                         │
+  │         ├──▶  vectors.sqlite (sqlite-vec `vec0` table)   │
+  │         │      384-dim fp32 · ~1.1 GB                    │
   │         │      enables semantic search at query time     │
   │         │                                                │
   │         └──▶  SIMILAR_TO edges  (graph.sqlite)           │
+  │                OFF by default — enable with `--similar`   │
   │                threshold : cosine ≥ 0.85                 │
   │                cap       : k = 8 per chunk               │
   │                scope     : cross-book, cross-author       │
-  │                855,307 edges  (66% of all edges)          │
+  └──────────────────────────────────────────────────────────┘
+        │
+        ▼
+  ┌──────────────────────────────────────────────────────────┐
+  │  store.rebuild_fts()  →  nodes_fts (FTS5)                │
+  │    the lexical half of the worker's hybrid retrieval;     │
+  │    without it, search silently degrades to dense-only     │
   └──────────────────────────────────────────────────────────┘
 ```
 
-**Total edges:** 1,295,307  ·  **Index size:** ~6.3 GB (sqlite 4.8 GB + lancedb 1.6 GB)
+The served handler is semantic-first and never traverses `SIMILAR_TO`, so
+discovery is opt-in and is skipped entirely on `--update`. See
+[`SIMILAR_TO_CAP_RECOMMENDATION.md`](SIMILAR_TO_CAP_RECOMMENDATION.md) for the
+evaluation behind the cap. Measured bundle sizes live in
+[`APP_ARCHITECTURE.md`](APP_ARCHITECTURE.md).
 
 ---
 
@@ -132,7 +143,7 @@ Each diary goes through the full four-step DiaryKG pipeline:
 
 `bundle_diaries()` copies the completed `.diarykg/` indices verbatim (`symlinks=True` preserves
 the `.diarykg/corpus -> ../.diary` symlink; if the target is absent in the bundle the symlink is
-dangling but query-time reads only hit SQLite + LanceDB, so this is safe).
+dangling but query-time reads only hit `graph.sqlite` + `vectors.sqlite`, so this is safe).
 
 ```
   corpus/diaries/
@@ -191,8 +202,8 @@ the `file_path` prefix — no extra node fields required.
 ```
   bundles/gutenberg-all/
   ├── .dockg/
-  │   ├── graph.sqlite          4.8 GB   (683,531 nodes · 1,295,307 edges)
-  │   ├── lancedb/              1.6 GB   (683,531 × 384-dim vectors)
+  │   ├── graph.sqlite          2.9 GB   (683,531 nodes; embed-text, topics, entities)
+  │   ├── vectors.sqlite        1.1 GB   (688 K × 384-dim fp32 vectors, sqlite-vec)
   │   └── catalog.json          size varies  (241 books · author/title/ID)
   │
   └── diaries/
@@ -201,7 +212,7 @@ the `file_path` prefix — no extra node fields required.
       ├── The Diary of John Evelyn — Volume 2/.diarykg/
       └── The Journal of a Tour to the Hebrides with Samuel Johnson/.diarykg/
 
-  Total: ~6.3 GB  ·  Build time: 34m  ·  streaming embed (single-process)
+  Total: ~4.3 GB  ·  Build time: 34m  ·  streaming embed (single-process)
 ```
 
 ---
@@ -242,8 +253,8 @@ and will bake in a stale or empty bundle if that directory is missing or outdate
   │                                                             │
   │  Query path:                                                │
   │    user query  →  KGRAG federated search                   │
-  │                   ├── LanceDB ANN (semantic similarity)     │
-  │                   ├── SQLite graph traversal (SIMILAR_TO)   │
+  │                   ├── sqlite-vec kNN (dense semantic)       │
+  │                   ├── FTS5 / BM25 (lexical), fused by RRF   │
   │                   └── DiaryKG temporal filter (date range)  │
   │                →  ranked chunks  →  LLM synthesis           │
   │                   (Ollama / oMLX via OpenAI-compatible API) │

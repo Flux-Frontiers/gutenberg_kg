@@ -11,7 +11,7 @@
 #   pip install -e ".[dev]"             core + dev tools (pytest, ruff, ty, etc.)
 #   pip install -e ".[kgdeps]"          core + KG integrations (doc-kg, kg-rag)
 #   pip install -e ".[viz]"             core + 2-D timeline visualisation (plotly)
-#   pip install -e ".[viz3d]"           core + 3-D visualisation (pyvista, PyQt5, pycode-kg)
+#   pip install -e ".[viz3d]"           core + 3-D visualisation + quilts (pyvista, PyQt5, quiltwright)
 #   pip install -e ".[mcp]"             optional MCP server support (gutenkg-mcp)
 #   pip install -e ".[kgdeps,viz,viz3d,mcp]"   everything except dev tools (RECOMMENDED)
 #   pip install -e "."                  core runtime only
@@ -113,7 +113,7 @@ viz3d = [
     "param>=2.0.0",
     "PyQt5>=5.15.0",
     # NOTE: plain pyvista, NOT pyvista[jupyter]. viz3d renders to a desktop Qt
-    # window via pyvistaqt's QtInteractor (see pycode_kg/viz3d.py) — the [jupyter]
+    # window via pyvistaqt's QtInteractor (see gutenberg_kg/viz3d.py) — the [jupyter]
     # extra only pulls the trame/ipywidgets/jupyter-server browser-rendering stack,
     # which nothing here imports and which massively bloated `poetry lock`. Re-add
     # [jupyter] (→ trame) only if we ever render 3-D into a notebook or browser.

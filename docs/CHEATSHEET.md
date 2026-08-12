@@ -180,6 +180,102 @@ gutenkg rebuild-indices --genre shakespeare --genre philosophy
 
 ---
 
+## Querying the Corpus
+
+`gutenkg query` searches the locally ingested corpus through KGRAG — no Docker,
+no LLM. Run `gutenkg ingest` first so the per-book indices exist and are
+registered.
+
+```bash
+gutenkg query "the nature of justice"                        # whole corpus
+gutenkg query "revenge" --corpus gutenberg-russian-literature  # one genre corpus
+gutenkg query "the Great Fire" --k 20                        # results per KG (default 8)
+gutenkg query "plague" --json                                # machine-readable
+gutenkg query "plague" --registry /path/to/registry.json     # non-default registry
+```
+
+| Option | Default | Meaning |
+|---|---|---|
+| `--corpus` | `gutenberg-all` | Registered corpus to search |
+| `--k` | `8` | Results per knowledge graph |
+| `--registry` | KGRAG default | Override the local registry path |
+| `--json` | off | Emit KGRAG results as JSON |
+
+---
+
+## Visualisation and Light-Field Rendering
+
+`viz3d` and `quilt` need the 3-D extra: `poetry install --extras viz3d`. The
+2-D growth timeline at the end of this section needs `--extras viz` instead.
+
+### The interactive forest — `gutenkg viz3d`
+
+```bash
+gutenkg viz3d                                    # whole ingested corpus
+gutenkg viz3d --corpus corpus --width 1920 --height 1200
+```
+
+Every ingested book (one with a `.dockg/graph.sqlite`) becomes a tree: trunk =
+document, branches = sections, leaves = chunks, grouped into genre groves.
+Right-click a node to read its text. Two controls in the panel matter most:
+
+- **Organic tree (one book)** — filter to a single book, then tick this to grow
+  it by space colonization instead of drawing the schematic spiral. The limbs
+  reach the book's own chunks, so the canopy's shape is the book's structure;
+  branch radii follow the pipe model. Picking is disabled in this mode — the
+  scene is swept wood and batched leaf glyphs, not per-node actors.
+- **Cast to LG** — render whatever is on screen as a quilt and send it to
+  Looking Glass Bridge (16" Gen3 Landscape, at half resolution for speed).
+
+The season selector applies to the organic tree; `summer` is the default.
+
+### Light-field quilts — `gutenkg quilt`
+
+```bash
+gutenkg quilt --book Hamlet                       # 48 views, one 7680x4320 quilt
+gutenkg quilt --book Hamlet --season autumn       # spring, summer, autumn, winter
+gutenkg quilt --book Hamlet --entities --zoom 1.2 # add the gold entity spores
+gutenkg quilt --book Hamlet --spec portrait       # another device preset
+gutenkg quilt --book Pepys --orbit 180 --cast     # 180-frame turntable, to the display
+gutenkg quilt --book Hamlet --schematic           # the spiral layout instead
+```
+
+The stereo depth budget is printed **before** every render, so an over-wide
+disparity shows up at no cost rather than after all 48 views. A quilt is an
+ordinary PNG; nothing here needs a Looking Glass panel except `--cast`.
+
+| Option | Default | Meaning |
+|---|---|---|
+| `--book` | *(required)* | Title, or a unique fragment of one |
+| `--genre` | all | Restrict the book search to one genre |
+| `--spec` | `16-landscape` | Quilt preset (`16-landscape`, `16-portrait`, `portrait`, `go`, `27-*`, `32-*`, `65`) |
+| `--out` | `renders/quilts` | Output directory |
+| `--season` | `summer` | Foliage palette; `winter` drops 90% of leaves, baring the wood |
+| `--schematic` | off | Original spiral layout instead of the grown tree |
+| `--entities` / `--topics` | off | Gold entity spores / blue topic pollen |
+| `--leaf-size` | `0.32` before density scaling | Leaves shrink by the cube root of chunk count; raise for a dense book |
+| `--zoom` | `1.0` | Camera dolly after framing — this is what drives depth |
+| `--fov` | `14.0` | Per-view vertical FOV; Looking Glass recommends ~14 |
+| `--orbit` | `0` | Render a turntable quilt **video** of this many frames |
+| `--fps` | `24` | Frame rate for `--orbit` |
+| `--cast` | off | Send the finished quilt to Looking Glass Bridge |
+
+Rendering is deterministic: the growth seed comes from the book's slug, so a
+book grows the same tree in every session and every render.
+
+### The growth timeline — `gutenkg viz-timeline`
+
+Plots books, authors, nodes, and edges over time from the saved snapshots, so
+run `gutenkg snapshot save` at least twice first.
+
+```bash
+gutenkg viz-timeline                             # 2x2 Plotly subplot grid
+gutenkg viz-timeline --type 3d                   # normalized multi-metric scatter
+gutenkg viz-timeline --snapshots path/to/.snapshots
+```
+
+---
+
 ## Git / Pushing
 
 Pushes are handled automatically by `gutenkg ingest --push` (one commit per genre).
@@ -192,8 +288,8 @@ git push
 ```
 
 Only source Markdown and `reference.md` files are tracked. Knowledge-graph
-artifacts (`.dockg/graph.sqlite` and `.dockg/lancedb/`) are gitignored — they
-are regenerable from the source text via `gutenkg ingest --force-build`.
+artifacts (`.dockg/graph.sqlite` and `.dockg/vectors.sqlite`) are gitignored —
+they are regenerable from the source text via `gutenkg ingest --force-build`.
 
 ---
 
@@ -455,21 +551,22 @@ gutenberg_kg/
 │   │       ├── reference.md                # Author provenance + Gutenberg metadata
 │   │       └── .dockg/                     # Built by ingest (gitignored)
 │   │           ├── graph.sqlite            # Graph database
-│   │           └── lancedb/                # Vector index
+│   │           └── vectors.sqlite          # Vector index (sqlite-vec)
 │   ├── diaries/                            # Diary corpora (Pepys, Evelyn, …)
 │   │   └── <Diary Title>/
 │   │       ├── .diary/                     # Timestamped chunks (built by build-diaries)
 │   │       └── .diarykg/                   # DiaryKG indices (gitignored)
 │   │           ├── corpus -> ../.diary     # Symlink to chunk directory
 │   │           ├── graph.sqlite
-│   │           └── lancedb/
+│   │           └── vectors.sqlite
 │   └── authors/                            # Built by `gutenkg authors`
 │       ├── index.md                        # Master alphabetical author table
 │       └── <author_slug>/author.md         # Born, died, Wikipedia, works
 ├── src/gutenberg_kg/
 │   ├── __init__.py
+│   ├── audit.py                            # Corpus audit checks (gutenkg audit)
 │   ├── authors.py                          # Author-index logic
-│   ├── build_corpus.py                     # Corpus build orchestration
+│   ├── build_corpus.py                     # Consolidated bundle build orchestration
 │   ├── build_diaries.py                    # Diary ingest + DiaryKG build
 │   ├── corpus.py                           # Corpus model
 │   ├── genres.py                           # Loads genres.json; exposes ALL_GENRES
@@ -477,20 +574,39 @@ gutenberg_kg/
 │   ├── ia.py                               # Internet Archive download
 │   ├── image_gen.py                        # FLUX.2-Klein wrapper (gutenkg imagine)
 │   ├── ingest.py                           # DocKG ingest + KGRAG registration
+│   ├── layout_organic.py                   # Space colonization, pipe radii, tube sweep
 │   ├── mcp_server.py                       # MCP server (gutenkg-mcp entry point)
-│   ├── viz3d.py                            # 3-D KG visualisation
+│   ├── model_setup.py                      # Local model download (gutenkg init)
+│   ├── scene.py                            # Qt-free scene builder + seasons
+│   ├── vector_store.py                     # sqlite-vec / LanceDB store resolution
+│   ├── viz3d.py                            # 3-D KG visualisation (Qt viewer)
 │   ├── viz_timeline.py                     # 2-D timeline visualisation
+│   ├── diary/                              # Diary parsing + chunking
+│   │   ├── chunk.py
+│   │   └── parser.py
+│   ├── serve/
+│   │   ├── Chat.py                         # Streamlit reading room
+│   │   ├── handler.py                      # Query worker (retrieval + synthesis)
+│   │   ├── image_server.py                 # FLUX image service
+│   │   ├── sdxl_server.py                  # SDXL-Lightning image service
+│   │   └── pages/1_Browse.py               # Corpus browser page
 │   └── cli/
 │       ├── main.py                         # gutenkg CLI root group
 │       ├── options.py                      # Shared options: REPO_ROOT, CORPUS_ROOT
+│       ├── cmd_audit.py                    # gutenkg audit
 │       ├── cmd_authors.py                  # gutenkg authors
 │       ├── cmd_build_corpus.py             # gutenkg build-corpus
 │       ├── cmd_build_diaries.py            # gutenkg build-diaries
+│       ├── cmd_chat.py                     # gutenkg chat
+│       ├── cmd_chunk_diaries.py            # gutenkg chunk-diaries
 │       ├── cmd_download.py                 # gutenkg download *
 │       ├── cmd_genres.py                   # gutenkg genres init/list/add
 │       ├── cmd_ia.py                       # gutenkg ia *
 │       ├── cmd_imagine.py                  # gutenkg imagine (corpus image generation)
 │       ├── cmd_ingest.py                   # gutenkg ingest
+│       ├── cmd_init.py                     # gutenkg init (local models)
+│       ├── cmd_query.py                    # gutenkg query
+│       ├── cmd_quilt.py                    # gutenkg quilt (light-field render)
 │       ├── cmd_rebuild.py                  # gutenkg rebuild-indices
 │       ├── cmd_reregister.py               # gutenkg reregister
 │       ├── cmd_snapshot.py                 # gutenkg snapshot
@@ -498,15 +614,18 @@ gutenberg_kg/
 │       ├── cmd_viz3d.py                    # gutenkg viz3d
 │       └── cmd_viz_timeline.py             # gutenkg viz-timeline
 ├── docker/
-│   ├── Dockerfile                          # RunPod / container image
+│   ├── Dockerfile                          # Worker + chat image
 │   ├── docker-compose.yml
-│   ├── chat.py                             # Chat handler
-│   └── handler.py                          # RunPod serverless handler
+│   ├── requirements-image.txt              # FLUX image-server deps
+│   └── requirements-sdxl.txt               # SDXL image-server deps
+├── runpod/                                 # RunPod serverless build pipeline
 ├── scripts/
 │   ├── process_logo.py                     # Logo transparency + variant generator
 │   ├── benchmark_embedders.py              # Embedder benchmarking
 │   ├── assess_front_matter.py              # Corpus front-matter analysis
 │   ├── provenance_verifier.py              # Reference.md provenance checker
+│   ├── regenerate_corpus_doc.py            # Regenerates docs/CORPUS.md
+│   ├── sync_corpus_docs.py                 # Syncs the README corpus table
 │   └── catalogs/                           # Per-genre batch download catalogs
 │       ├── science-fiction.txt
 │       ├── philosophy.txt
@@ -517,13 +636,19 @@ gutenberg_kg/
 │       ├── russian-literature.txt
 │       ├── german-literature.txt
 │       ├── sacred-texts.txt
-│       └── world-literature.txt
+│       └── world-literature.txt            # …and one per remaining genre
 ├── docs/
+│   ├── APPLE_CONTAINERS.md                 # Apple `container` runtime notes
+│   ├── APP_ARCHITECTURE.md                 # Worker/chat/query architecture
+│   ├── CHAT_UI.md                          # The reading-room chat interface
 │   ├── CHEATSHEET.md                       # Command quick-reference (this file)
 │   ├── CORPUS.md                           # Full corpus book list by genre
 │   ├── CORPUS_WISHLIST.md                  # Curated additions checklist
-│   ├── DIARY_INGEST_HANDOFF.md             # Diary pipeline design notes
 │   ├── DOWNLOAD_PIPELINE.md                # End-to-end download pipeline reference
+│   ├── INSTALLATION.md                     # CLI + Docker installation
+│   ├── PARTNERS.md                         # Collaboration and sponsorship
+│   ├── RUNPOD.md                           # RunPod deployment
+│   ├── SIMILAR_TO_CAP_*.md                 # SIMILAR_TO evaluation record
 │   └── ingestion-pipeline.md               # Ingestion pipeline internals
 ├── reports/
 │   └── ingest_YYYY-MM-DD_HHMMSS.md         # Auto-saved ingest reports

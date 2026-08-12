@@ -49,7 +49,7 @@ That set is the **recommended default** — everything except dev tooling (KG in
 |---|---|---|
 | `kgdeps` | doc-kg, diary-kg, kg-rag | `poetry install --extras kgdeps` |
 | `viz` | plotly (2-D growth timeline) | `poetry install --extras viz` |
-| `viz3d` | pyvista, PyQt5, pycode-kg (3-D visualiser) | `poetry install --extras viz3d` |
+| `viz3d` | pyvista, PyQt5, kgmodule-utils, quiltwright (3-D visualiser + light-field quilts) | `poetry install --extras viz3d` |
 | `mcp` | fastmcp, structlog (MCP server) | `poetry install --extras mcp` |
 | `chat` | streamlit, httpx, watchdog (reading-room UI) | `poetry install --extras chat` |
 | `image` | fastapi, uvicorn, pydantic (image service) | `poetry install --extras image` |
@@ -58,6 +58,12 @@ That set is the **recommended default** — everything except dev tooling (KG in
 | *(everything)* | every extra above | `poetry install --all-extras` |
 
 Contributors who need the test/lint toolchain should use `--all-extras`.
+
+> **Note** — `gutenkg quilt` (light-field output) additionally needs
+> **Python < 3.13**: quiltwright is marker-gated in `viz3d` because it pins
+> `requires-python <3.13`. On 3.13 the rest of `viz3d` installs and
+> `gutenkg viz3d` works; only the quilt path and the viewer's **Cast to LG**
+> button are unavailable.
 
 > **Note** — there are no `full` / `all` aggregate extras. They existed until they were found to be the reason `poetry lock` took over eight minutes: re-listing a package inside an aggregate makes it a second declaration under different markers, and poetry resolves that by throwing away the whole resolution and restarting. Dropping them took a lock from 503s to 11s. Name the extras you want, or use `--all-extras`.
 

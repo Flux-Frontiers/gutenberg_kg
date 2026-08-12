@@ -3,6 +3,14 @@
 **Date:** 2026-05-21
 **Decision:** Enable SIMILAR_TO by default at `similar_max_degree=8`
 
+> **Status: superseded as a default; the cap still stands.** SIMILAR_TO
+> discovery is **off** by default in `gutenkg build-corpus` (`--similar`
+> enables it) because the served handler became semantic-first — dense kNN +
+> BM25 fused by RRF, with no graph-hop expansion — so the edges cost build time
+> and ship weight without touching retrieval. The evaluation below still
+> governs the **cap** whenever discovery is switched on (for viz3d arcs or
+> `DocKG.query()` hop-expansion). Keep this file as the decision record.
+
 ---
 
 ## Decision
