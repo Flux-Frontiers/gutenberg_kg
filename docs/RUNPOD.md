@@ -28,7 +28,7 @@ RunPod vLLM Endpoint — Qwen3-8B-Instruct
 RunPod Network Volume (20 GB recommended)
   /workspace/
   └── gutenberg_kg/
-      ├── .dockg/          (DocKG: SQLite + LanceDB)
+      ├── .dockg/          (DocKG: graph.sqlite + vectors.sqlite)
       └── diaries/         (DiaryKG temporal indices)
 ```
 

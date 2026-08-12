@@ -202,8 +202,8 @@ Alternative: skip DNS and inject the worker's IP
 
 **3. Per-container memory must be set explicitly.** Docker Desktop gave all
 containers one big shared VM; Apple gives each container its own VM with a
-small default allocation. The worker (torch + bge-small + 696K-node
-graph.sqlite + LanceDB) will OOM at defaults — `--memory 8g` (worker) /
+small default allocation. The worker (torch + bge-small + 683K-node
+graph.sqlite + the sqlite-vec store) will OOM at defaults — `--memory 8g` (worker) /
 `--memory 4g` (chat) are the starting points. Memory is a lazy upper bound,
 not a reservation, so this doesn't pin 12 GB of RAM; but note that pages
 freed inside the guest aren't fully returned to the host, so a long-running

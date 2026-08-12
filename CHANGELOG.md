@@ -66,7 +66,38 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   compute, cannot be regenerated cheaply, and are the evidence for conclusions
   this changelog asserts elsewhere.
 
+- **Docs audit against the shipped v1.14.0 code.** `docs/CHEATSHEET.md` gained
+  the two sections the README had been pointing at without them existing —
+  **Querying the Corpus** (`gutenkg query`) and **Visualisation and Light-Field
+  Rendering** (`gutenkg viz3d`, `quilt`, `viz-timeline`, every option with its
+  default) — and its File Layout tree now matches the tree on disk (`scene.py`,
+  `layout_organic.py`, `vector_store.py`, `audit.py`, `model_setup.py`,
+  `diary/`, `serve/`, six new `cmd_*.py`; `docker/chat.py` and
+  `docker/handler.py` moved to `serve/` some releases ago). The vector store is
+  described as `vectors.sqlite` (sqlite-vec), not `lancedb/`, in
+  `CHEATSHEET.md`, `DOWNLOAD_PIPELINE.md`, `ingestion-pipeline.md`,
+  `RUNPOD.md`, and `APPLE_CONTAINERS.md`, and `ingestion-pipeline.md`'s Stage 4
+  now records that SIMILAR_TO discovery is off by default and that the FTS5
+  lexical index is built in the same phase. `docs/INSTALLATION.md` lists what
+  the `viz3d` extra actually installs (kgmodule-utils and quiltwright, not
+  pycode-kg) and notes that `gutenkg quilt` needs Python < 3.13.
+  `SIMILAR_TO_CAP_RECOMMENDATION.md` carries a status banner: its cap-8 finding
+  stands, its default-on recommendation does not. `docs/CHAT_UI.md`'s link to
+  `serve/chat.py` now points at `serve/Chat.py`.
+
 ### Removed
+
+- **`docs/NATURAL_TREE_LFD_PLAN.md`**, and the README link to it. The plan
+  described the organic tree, the seasons, the Qt-free scene builder, and the
+  `quilt` CLI as unbuilt work; all of it shipped in v1.14.0, so the document
+  described the code's past as its future. Its §5 also carried a corpus size
+  (249 books) the corpus never had. The design rationale that survives
+  implementation now lives in the cheatsheet's visualisation section and in the
+  docstrings of `layout_organic.py` and `scene.py`; the copy in
+  `kgrag_priv/docs/` is untouched, since a grant document cites it there.
+
+- **`docs/release-notes.md`** — stranded at v1.1.0 (May 2026) and unreferenced.
+  The release workflow reads the root `release-notes.md`, which is at v1.14.0.
 
 ### Fixed
 

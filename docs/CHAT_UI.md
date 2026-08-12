@@ -1,6 +1,6 @@
 # The Knowledge Press — Chat UI
 
-[`gutenberg_kg/serve/chat.py`](../src/gutenberg_kg/serve/chat.py) is a [Streamlit](https://streamlit.io/) chat
+[`gutenberg_kg/serve/Chat.py`](../src/gutenberg_kg/serve/Chat.py) is a [Streamlit](https://streamlit.io/) chat
 front-end for the GutenbergKG corpus. It turns the headless query worker into a
 point-and-click reading room: ask a question in plain English, get ranked source
 passages from the knowledge graph, optionally synthesize a narrative answer with a

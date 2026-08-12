@@ -59,7 +59,7 @@ Hamlet's 8x6 quilt for the 16" Gen3 Landscape takes about two seconds on an M5 M
 
 No panel? Nothing is lost. A quilt is an ordinary PNG and the trees above render without any display hardware at all.
 
-Both features need the `viz3d` extra; see the [cheatsheet](docs/CHEATSHEET.md) for options and the [design notes](docs/NATURAL_TREE_LFD_PLAN.md) for how the growth model was chosen.
+Both features need the `viz3d` extra; see the [cheatsheet](docs/CHEATSHEET.md#visualisation-and-light-field-rendering) for every option of `viz3d` and `quilt`.
 
 ## What makes it useful
 
