@@ -91,13 +91,16 @@ RUN pip install --no-cache-dir --index-url https://download.pytorch.org/whl/cpu 
 # time, not a silent upgrade: doc-kg 0.21.1 with kgmodule-utils==0.9.0 cannot
 # resolve. Bump them together and rerun `poetry lock`.
 #
-# KGMODULE_UTILS_VERSION tracks pyproject's >=0.11.0 floor and the lock. It sat
+# KGMODULE_UTILS_VERSION tracks pyproject's >=0.12.1 floor and the lock. It sat
 # at 0.10.0 — below both — which made the ARG fiction rather than a pin: the
-# `pip install .` below re-resolved it and upgraded to 0.11.0 anyway, exactly as
-# the paragraph above warns, so the image never ran the version named here and
-# the pre-install layer fetched that package twice per cold build.
+# `pip install .` below re-resolved it and upgraded anyway, exactly as the
+# paragraph above warns, so the image never ran the version named here and the
+# pre-install layer fetched that package twice per cold build. 0.12.1 is the
+# release that actually carries the organic tree engine scene.py imports: 0.12.0
+# was published without it, from a tree the v0.12.0 tag did not contain, and
+# cannot be corrected in place because PyPI reserves an uploaded filename.
 ARG KG_RAG_VERSION=0.11.0
-ARG KGMODULE_UTILS_VERSION=0.11.0
+ARG KGMODULE_UTILS_VERSION=0.12.1
 ARG DOC_KG_VERSION=0.21.1
 ARG DIARY_KG_VERSION=0.96.0
 RUN pip install --no-cache-dir \

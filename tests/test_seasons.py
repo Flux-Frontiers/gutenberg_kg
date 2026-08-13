@@ -140,14 +140,14 @@ class TestNearestNeighbourGap:
 class TestLeafCling:
     @staticmethod
     def _tree():
-        from gutenberg_kg.layout_organic import grow_tree
+        from kg_utils.viz3d import grow_tree
 
         rng = np.random.default_rng(5)
         crown = rng.normal(0, 1, (300, 3)) * np.array([4.0, 4.0, 5.0]) + np.array([0, 0, 30.0])
-        return crown, grow_tree(crown, np.zeros(3), slug="cling")
+        return crown, grow_tree(crown, np.zeros(3), key="cling")
 
     def test_clinging_draws_leaves_toward_the_wood(self):
-        from gutenberg_kg.layout_organic import leaf_glyphs
+        from kg_utils.viz3d import leaf_glyphs
 
         crown, sk = self._tree()
         loose = leaf_glyphs(crown, sk, cling=0.0, seed=1)
@@ -160,7 +160,7 @@ class TestLeafCling:
         assert mean_gap(tight) < mean_gap(loose)
 
     def test_leaves_never_sink_into_the_wood(self):
-        from gutenberg_kg.layout_organic import leaf_glyphs
+        from kg_utils.viz3d import leaf_glyphs
 
         crown, sk = self._tree()
         glyphed = leaf_glyphs(crown, sk, size=0.3, cling=1.0, seed=1)
