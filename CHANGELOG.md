@@ -10,6 +10,50 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added
 
+- **`make sdxl-fetch`** — pre-downloads the ~7 GB of SDXL weights without
+  starting the server, so the first `make up` on a fresh machine is not a silent
+  long wait. Once cached, `SDXL_OFFLINE=1` makes the server refuse network access.
+- **`tests/test_sdxl_server.py` (43 tests)** — the first coverage
+  `serve/sdxl_server.py` has had, made possible by the deferred imports below.
+  Covers size parsing, step resolution, the offline flag, and the
+  `cuda → mps → cpu` fallback, with no stubbing at all. The CI test job installs
+  the `image` extra alongside `dev` for the fastapi/pydantic the module needs at
+  import; torch and diffusers stay out.
+
+### Changed
+
+- **`serve/sdxl_server.py` defers torch and uvicorn.** They were imported at
+  module scope, so the module could not be imported outside `.venv-sdxl` — which
+  is why it had no tests, and why the wheel smoke-test has to skip its entry
+  point. torch now loads behind `_torch()` and uvicorn inside `main()`, the same
+  deferral `image_gen.py` already uses for mflux. Only an actual render needs
+  them. Size parsing and step resolution moved into `_parse_size` / `_steps_for`
+  so they are testable and shared between `_load_pipeline` and `_render`;
+  `_parse_size` also rejects non-positive dimensions, which the inline version
+  accepted.
+- **CUDA memory is released after a render**, matching what MPS already did.
+
+### Fixed
+
+- **SDXL could not run on a machine that had not already cached the weights.**
+  `_load_pipeline` hard-wired `local_files_only=True` for the base pipeline, the
+  fp16-fix VAE and the Lightning UNet, so a fresh clone failed with a cache miss
+  rather than downloading. That became load-bearing when `make up` started
+  defaulting to this backend wherever mflux cannot run: the portable option was
+  the one that did not work out of the box. Weights are now fetched on first run,
+  with `SDXL_OFFLINE=1` restoring the strict behaviour.
+- **A future `poetry lock` would have turned the Type Check job red** on five
+  findings unrelated to whatever triggered it. The `# ty: ignore[...]` comments
+  on pyvista calls in `scene.py` and `cli/cmd_quilt.py` look unused to every CI
+  job, because pyvista is in the `viz3d` extra and all three jobs install only
+  `dev` — without it ty cannot resolve `plotter`, so it never emits the errors
+  those comments suppress. ty 0.0.44 (what the lock pins) reports them as
+  warnings and exits 0; 0.0.70 exits 1 on the same five, and the floor is
+  `ty>=0.0.41` with no ceiling. Deleting the comments to satisfy CI would have
+  broken the check for anyone running `--all-extras`, where pyvista *is* present
+  and the suppressions do work — so the rule is silenced in `[tool.ty.rules]`
+  instead. Verified clean under both ty versions.
+
 - **`gutenkg quilt --topics`** draws topic nodes as their own blue pollen
   cloud, and **`--leaf-size`** overrides the leaf radius before density
   scaling. The second exists because leaves shrink by the cube root of chunk

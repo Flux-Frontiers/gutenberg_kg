@@ -156,6 +156,7 @@ make logs        # follow worker logs
 | `make chat` | start worker + chat UI on `:8501` |
 | `make image-server` | start the local FLUX image server on `:8090` (isolated `.venv-image`; needs mflux — see below) |
 | `make sdxl-server` | start the local SDXL-Lightning image server on `:8091` (isolated `.venv-sdxl`; runs anywhere) |
+| `make sdxl-fetch` | pre-download the SDXL weights (~7 GB) without starting the server |
 | `make up` | start everything (worker + chat + whichever image server this host supports) |
 | `make query Q="…"` | fire a one-shot query against the running worker |
 | `make logs` | follow worker logs |
@@ -238,6 +239,8 @@ Two local servers, both isolated in their own venv so their dependencies never t
 | SDXL-Lightning (diffusers) | `8091` | `make sdxl-server` | anywhere — `sdxl_server` resolves `cuda → mps → cpu`, so it works on CPU too, just slowly |
 
 `make up` picks for you: FLUX where mflux is supported, SDXL everywhere else. Force one with `make up IMAGE_BACKEND=flux` or `IMAGE_BACKEND=sdxl`; asking for FLUX on a host that cannot run it now fails with a message naming the requirement instead of a pip resolution error.
+
+**SDXL downloads weights on first run** — SDXL base, the fp16-fix VAE and the Lightning UNet come to roughly 7 GB, cached under `~/.cache/huggingface`. Run `make sdxl-fetch` to get that out of the way before starting the stack. Once cached, `SDXL_OFFLINE=1` makes the server refuse network access entirely.
 
 Point the worker at whichever is running via `GUTENKG_IMAGE_ENDPOINT` in `docker/.env` (`http://host.docker.internal:8090` for FLUX, `:8091` for SDXL) — `make up` sets this automatically — or leave it blank to disable image rendering. See [`CHEATSHEET.md § Corpus-Grounded Image Generation`](CHEATSHEET.md).
 
