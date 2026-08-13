@@ -25,9 +25,18 @@ from pathlib import Path
 
 import numpy as np
 import pyvista as pv
-from kg_utils.viz3d import Layout3D, LayoutEdge, LayoutNode, fibonacci_annulus, fibonacci_sphere
-
-from gutenberg_kg.layout_organic import Skeleton, grow_tree, leaf_glyphs, seed_from_slug, tree_mesh
+from kg_utils.viz3d import (
+    Layout3D,
+    LayoutEdge,
+    LayoutNode,
+    Skeleton,
+    fibonacci_annulus,
+    fibonacci_sphere,
+    grow_tree,
+    leaf_glyphs,
+    seed_from_key,
+    tree_mesh,
+)
 
 logger = logging.getLogger(__name__)
 
@@ -1271,7 +1280,7 @@ def build_tree_scene(
     skeleton = grow_tree(
         crown,
         root,
-        slug=slug,
+        key=slug,
         tip_radius=tip_radius,
         tropism=GENRE_TROPISM.get(genre, DEFAULT_TROPISM),
     )
@@ -1291,7 +1300,7 @@ def build_tree_scene(
     # wood entirely.  Shrink with count so a 19,000-chunk diary reads as foliage
     # with branches visible through it, the way a canopy actually does.
     leaf_scale = min(1.0, (LEAF_REFERENCE_COUNT / max(len(crown), 1)) ** (1.0 / 3.0))
-    leaf_rng = np.random.default_rng(seed_from_slug(f"{slug}:{season}"))
+    leaf_rng = np.random.default_rng(seed_from_key(f"{slug}:{season}"))
     kept = crown
     if palette.density < 1.0:
         n_kept = max(1, int(round(len(crown) * palette.density)))
@@ -1302,7 +1311,7 @@ def build_tree_scene(
         skeleton,
         size=leaf_size * leaf_scale,
         tint=tint,
-        seed=seed_from_slug(slug + ":leaves"),
+        seed=seed_from_key(slug + ":leaves"),
     )
     if leaves.n_points:
         from matplotlib.colors import ListedColormap  # pyvista dependency, always present
@@ -1341,7 +1350,7 @@ def build_tree_scene(
             continue
         n_drawn = min(n_spores, SPORE_CAP)
         spore_pts = _crown_halo(
-            n_drawn, crown * spread, seed=seed_from_slug(f"{slug}:{kind}-spores")
+            n_drawn, crown * spread, seed=seed_from_key(f"{slug}:{kind}-spores")
         )
         # Sized against the leaves rather than against their own count, so the
         # halo always reads as finer than the foliage it surrounds.
