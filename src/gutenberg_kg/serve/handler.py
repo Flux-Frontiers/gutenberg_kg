@@ -961,13 +961,25 @@ def handler(job: dict) -> dict:
     print(f"[query] {len(hits)} matching results found in {search_ms:.0f}ms")
 
     synthesis = None
+    synthesis_error: str | None = None
     synthesis_ms: float | None = None
     active_synth = _synth_for_backend(inp.get("backend", ""))
     if synthesize:
         t0_synth = time.perf_counter()
-        synthesis = active_synth.synthesize_rag(query, hits, model=model, max_k=SYNTH_MAX_K)
+        # Synthesis is the optional half of the response: the search already
+        # succeeded, and an unreachable LLM server, an unloaded model or a
+        # timeout should not throw those hits away. The failure is reported as
+        # `synthesis_error` alongside the results, which is what Chat.py's
+        # "Answer generation failed" branch has always rendered — that branch
+        # was unreachable until now because nothing ever set the key.
+        try:
+            synthesis = active_synth.synthesize_rag(query, hits, model=model, max_k=SYNTH_MAX_K)
+        except Exception as exc:  # noqa: BLE001 — any backend failure degrades the same way
+            synthesis_error = f"{type(exc).__name__}: {exc}"
+            print(f"[query] synthesis FAILED: {synthesis_error}")
         synthesis_ms = (time.perf_counter() - t0_synth) * 1000
-        print(f"[query] synthesis returned in {synthesis_ms:.0f}ms")
+        if synthesis_error is None:
+            print(f"[query] synthesis returned in {synthesis_ms:.0f}ms")
 
     return {
         "query": query,
@@ -977,6 +989,7 @@ def handler(job: dict) -> dict:
         "hits": hits,
         "search_ms": round(search_ms),
         "synthesis": synthesis,
+        "synthesis_error": synthesis_error,
         "synthesis_ms": round(synthesis_ms) if synthesis_ms is not None else None,
         "model": (model or active_synth._cfg.resolved_model()) if synthesize else None,
     }

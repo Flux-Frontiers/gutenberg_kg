@@ -52,10 +52,20 @@ def _call_worker(worker_url: str, op: str, **kwargs) -> dict:
     :param kwargs: Extra fields merged into ``input`` (e.g. ``genre``, ``book``).
     :returns: The worker's JSON response, or ``{"error": ...}`` on request failure.
     """
+    inp: dict = {"op": op, **kwargs}
+    # HANDLER_SECRET is read here rather than threaded through the four cached
+    # wrappers above: it comes from the environment and is fixed for the life of
+    # the process, so it cannot go stale inside a cache entry. Without it, every
+    # op on this page returned {"error": "unauthorized"} whenever the worker had
+    # a secret configured — the genre list came back empty and the page looked
+    # like an empty corpus rather than a rejected request.
+    secret = os.environ.get("HANDLER_SECRET", "")
+    if secret:
+        inp["secret"] = secret
     try:
         resp = httpx.post(
             f"{worker_url.rstrip('/')}/runsync",
-            json={"input": {"op": op, **kwargs}},
+            json={"input": inp},
             timeout=30.0,
         )
         resp.raise_for_status()

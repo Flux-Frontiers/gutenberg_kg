@@ -55,6 +55,12 @@ services:
       - "8501:8501"
     environment:
       KGRAG_ENDPOINT: http://worker:8000
+      # Must match the worker's. Chat.py and the Browse page put this in every
+      # request body; the worker rejects a mismatch with
+      # {"error": "unauthorized"}. Without this line a HANDLER_SECRET set for the
+      # worker took the chat sidebar down with a KeyError and emptied the browse
+      # page, while curl kept working.
+      HANDLER_SECRET: ${HANDLER_SECRET:-}
       # mflux-server runs on the host Mac; host.docker.internal bridges to it.
       GUTENKG_IMAGE_ENDPOINT: ${GUTENKG_IMAGE_ENDPOINT:-http://host.docker.internal:8090}
       IMAGE_ENDPOINT: ${GUTENKG_IMAGE_ENDPOINT:-http://host.docker.internal:8090}
