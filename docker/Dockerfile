@@ -79,17 +79,25 @@ RUN pip install --no-cache-dir --index-url https://download.pytorch.org/whl/cpu 
 # is silently upgraded there — the pinned layer is wasted work and the numbers
 # here become fiction. These are the versions the build is verified against.
 #
-# They also move as a SET, not individually — these four are cross-pinned:
-#   kg-rag 0.11.0      needs transformers>=5.5.0 (and is the floor for
-#                      KGEntry.vectors_path, which handler.py passes at startup)
-#   doc-kg 0.20.0      transformers>=5.5.0, kgmodule-utils>=0.9.0
-#   kgmodule-utils 0.9.0
-#   diary-kg 0.96.0    requires doc-kg>=0.20.0 + kgmodule-utils>=0.9.0
+# They also move as a SET, not individually — these four are cross-pinned. What
+# each one actually requires, read off the lock rather than from memory:
+#   kg-rag 0.11.0         transformers>=5.5.0,<6 · kgmodule-utils>=0.8.0
+#                         (also the floor for KGEntry.vectors_path, which
+#                         handler.py passes at startup)
+#   doc-kg 0.21.1         kgmodule-utils[semantic]>=0.10.0
+#   diary-kg 0.96.0       doc-kg>=0.20.0 · kgmodule-utils>=0.9.0
+#   kgmodule-utils 0.11.0 transformers>=5.5.0,<6 via its [semantic] extra
 # Because these are `==` pins, a stale one is a hard resolution failure at build
-# time, not a silent upgrade: doc-kg 0.20.0 with kgmodule-utils==0.8.0 cannot
+# time, not a silent upgrade: doc-kg 0.21.1 with kgmodule-utils==0.9.0 cannot
 # resolve. Bump them together and rerun `poetry lock`.
+#
+# KGMODULE_UTILS_VERSION tracks pyproject's >=0.11.0 floor and the lock. It sat
+# at 0.10.0 — below both — which made the ARG fiction rather than a pin: the
+# `pip install .` below re-resolved it and upgraded to 0.11.0 anyway, exactly as
+# the paragraph above warns, so the image never ran the version named here and
+# the pre-install layer fetched that package twice per cold build.
 ARG KG_RAG_VERSION=0.11.0
-ARG KGMODULE_UTILS_VERSION=0.10.0
+ARG KGMODULE_UTILS_VERSION=0.11.0
 ARG DOC_KG_VERSION=0.21.1
 ARG DIARY_KG_VERSION=0.96.0
 RUN pip install --no-cache-dir \

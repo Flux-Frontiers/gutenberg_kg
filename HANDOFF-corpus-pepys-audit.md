@@ -1,32 +1,38 @@
 # Handoff — defects in `gutenberg_kg` surfaced by the `corpus_pepys` audit
 
-**Status:** findings only. Nothing in this branch changes behaviour; this file is
-the entire diff. Each item below is verified against the tree at
-`b704b07` (merge of PR #46), with file and line references.
+**Status: all four items are fixed on this branch.** This file was originally
+findings-only; it now doubles as the rationale for the diff beside it. Line
+references are to the tree as it was at `b704b07` (merge of PR #46), i.e. before
+the fix — they are kept so the reasoning stays checkable against the original.
 
 **Origin:** an audit of `corpus_pepys` against this repo — Docker build, chat UI,
 dependency pins. `gutenberg_kg` was the reference implementation for that audit,
 so most differences were fixed on the `corpus_pepys` side
-(Flux-Frontiers/corpus_pepys#7). Four things turned out to be wrong *here*, and
-one is a live user-facing crash. They are written up here rather than fixed
-because they touch the serving layer of the larger repo and deserve their own
-review.
+(Flux-Frontiers/corpus_pepys#7). Four things turned out to be wrong *here*, one
+of them a live user-facing crash.
+
+**Verified:** `ruff check .`, `ruff format --check .`, `ty check src/` (5
+pre-existing warnings in `scene.py`/`cmd_quilt.py`, unchanged), `docker compose
+config`, hadolint, and the test suite — 118 passed, 6 skipped, with the 10
+collection errors from absent optional deps (`click`, `numpy`) unchanged from
+before. `tests/test_chat_worker_ops.py` is new: 16 tests over the op helpers,
+the first coverage `serve/` has had.
 
 ---
 
 ## Summary
 
-| # | Severity | Item | Where |
-|---|---|---|---|
-| 1 | **High** | Chat sidebar crashes with `KeyError` when `HANDLER_SECRET` is set | `serve/Chat.py`, `docker/docker-compose.yml`, `Makefile` |
-| 2 | Medium | Dockerfile pins `kgmodule-utils` below its own declared floor; the pin is silently overridden later in the same build | `docker/Dockerfile` |
-| 3 | Low | Cross-pin comment block documents versions three releases stale | `docker/Dockerfile` |
-| 4 | Low | `synthesis_error` is rendered but never produced | `serve/Chat.py`, `serve/handler.py` |
-| 5 | — | Two things `corpus_pepys` now has that this repo may want | — |
+| # | Severity | Item | Where | Status |
+|---|---|---|---|---|
+| 1 | **High** | Chat sidebar crashed with `KeyError` when `HANDLER_SECRET` is set | `serve/Chat.py`, `serve/pages/1_Browse.py`, `docker/docker-compose.yml`, `Makefile` | ✅ fixed |
+| 2 | Medium | Dockerfile pinned `kgmodule-utils` below its own declared floor; the pin was silently overridden later in the same build | `docker/Dockerfile` | ✅ fixed |
+| 3 | Low | Cross-pin comment block documented versions three releases stale | `docker/Dockerfile` | ✅ fixed |
+| 4 | Low | `synthesis_error` rendered but never produced | `serve/handler.py` | ✅ fixed |
+| 5 | — | Two things `corpus_pepys` has that this repo may want | — | one adopted |
 
 ---
 
-## 1. Chat sidebar crashes when `HANDLER_SECRET` is set — **High**
+## 1. Chat sidebar crashed when `HANDLER_SECRET` is set — **High** · fixed
 
 ### What happens
 
@@ -99,33 +105,45 @@ Note this is not exclusively a secret problem. **Any** worker error payload —
 a missing index, a bootstrap failure — reaches the same subscript and crashes the
 same way. The secret is just the reliable way to trigger it.
 
-### Suggested fix
+### Fix applied
 
-Three parts, all small:
+Five parts:
 
-1. Add `HANDLER_SECRET: ${HANDLER_SECRET:-}` to the compose `chat` service and
-   `-e HANDLER_SECRET="$${HANDLER_SECRET:-}"` to the Makefile `chat` target.
-2. Thread the secret into `_fetch_stats` and `_corpus_options` (they need a
-   `secret` parameter; it also becomes part of the `st.cache_data` key, which is
-   correct — a different secret is a different result).
-3. Make `_fetch_stats` reject error payloads so the `else` branch can do its job:
+1. **`HANDLER_SECRET` forwarded to the chat container** — added to the compose
+   `chat` service and to the Makefile's Apple `chat` target, matching what their
+   worker counterparts already did.
+2. **New `_worker_op(worker_url, op, secret)` helper** in `Chat.py`. Both bare-op
+   callers went through their own hand-built payload; the secret and the
+   envelope handling now live in one place instead of being duplicated and — as
+   it turned out — omitted. `_fetch_stats` and `_corpus_options` became thin
+   wrappers over it and gained a `secret` parameter, which correctly joins the
+   `st.cache_data` key: a different secret is a different result.
+3. **Error payloads normalised to `{}`** inside `_worker_op`:
 
    ```python
    out = payload.get("output", payload)
    return out if isinstance(out, dict) and "error" not in out else {}
    ```
 
-   Independently, `stats['books']` should become `stats.get('books', 0)` — a
-   partial payload should not take the sidebar down.
+   This is what makes the existing "worker offline" fallbacks reachable. It also
+   guards the non-dict case, which would have been its own `AttributeError`.
+4. **`stats['books']` → `stats.get('books', 0)`** and likewise for `genres` and
+   `diaries`, so a partial payload costs a number rather than the sidebar. Belt
+   and braces with (3), deliberately: they fail independently.
+5. **`pages/1_Browse.py` sends the secret too.** Its `_call_worker` had the same
+   omission, so every op on that page returned `unauthorized` and the UI rendered
+   an empty corpus rather than a rejected request. There the secret is read from
+   the environment inside `_call_worker` rather than threaded through the four
+   cached wrappers above it — it is process-fixed, so it cannot go stale inside a
+   cache entry, and this keeps the change to one function.
 
-`corpus_pepys` has (1) and (3) implemented in
-Flux-Frontiers/corpus_pepys#7 (`docker/chat.py::_fetch_stats`,
-`docker/docker-compose.yml`, `Makefile::chat-container`) if a worked example is
-useful. Its `stats` op and handler dispatch are modelled directly on this repo's.
+Covered by `tests/test_chat_worker_ops.py`, including the specific regression:
+an `unauthorized` payload must come back falsy so `_render_sidebar` takes the
+offline branch.
 
 ---
 
-## 2. `kgmodule-utils` is pinned below its own floor, and the pin does not hold — Medium
+## 2. `kgmodule-utils` pinned below its own floor, and the pin did not hold — Medium · fixed
 
 `docker/Dockerfile:92`:
 
@@ -169,15 +187,18 @@ it. Consequences:
   self-consistent; one member drifting past its floor and being silently
   corrected means the set is no longer the thing being tested.
 
-**Fix:** bump the ARG to `0.11.0` so it matches the floor and the lock. This is a
-one-character change and the resulting image is what is already being produced.
+**Fix applied:** the ARG is now `0.11.0`, matching the floor and the lock. The
+resulting image is what was already being produced, so this changes no runtime
+behaviour — it makes the recorded pin true, restores the layer cache, and puts
+the four cross-pinned packages back under the `==` guarantee.
 
-**Related:** this repo has no equivalent of `corpus_pepys`'s
-`scripts/check_pins.py`, which is why the drift went unnoticed — see item 5.
+**Still open:** this repo has no equivalent of `corpus_pepys`'s
+`scripts/check_pins.py`, which is why the drift went unnoticed in the first
+place. Nothing stops it recurring. See item 5.
 
 ---
 
-## 3. The cross-pin comment block is stale — Low
+## 3. The cross-pin comment block was stale — Low · fixed
 
 `docker/Dockerfile`, immediately above the ARGs, enumerates the pinned set:
 
@@ -195,11 +216,17 @@ earlier round. Since this block is the documentation of record for *why* the fou
 move together, a stale copy is worse than none — the next person to bump them
 will reason from 0.9.0 floors that no longer apply.
 
-Worth updating in the same commit as item 2.
+**Fix applied:** rewritten from the lock's actual constraints, in the same commit
+as item 2 — `kg-rag 0.11.0` needs `transformers>=5.5.0,<6` and
+`kgmodule-utils>=0.8.0`; `doc-kg 0.21.1` needs `kgmodule-utils[semantic]>=0.10.0`;
+`diary-kg 0.96.0` needs `doc-kg>=0.20.0` and `kgmodule-utils>=0.9.0`;
+`kgmodule-utils 0.11.0` carries the transformers range through its `[semantic]`
+extra. The worked example of why a stale pin resolves rather than fails is now
+stated against the real versions.
 
 ---
 
-## 4. `synthesis_error` is rendered but never produced — Low
+## 4. `synthesis_error` rendered but never produced — Low · fixed
 
 `serve/Chat.py:456` reads it and `:466-470` renders a dedicated warning:
 
@@ -215,24 +242,25 @@ No handler ever sets that key. `serve/handler.py:963-980` returns `synthesis`,
 a synthesis failure propagates out of the handler and surfaces as a worker error,
 never as `synthesis_error`. The branch is unreachable.
 
-Two coherent resolutions:
+### Fix applied
 
-- **Populate it.** Wrap the `synthesize_rag` call so a backend failure (LLM
-  server down, model unloaded, timeout) degrades to hits-plus-explanation rather
-  than failing the whole query. This is the behaviour the UI was clearly written
-  for, and it is the better outcome — a search that worked should not be discarded
-  because the optional narration failed.
-- **Drop the branch** if the fail-the-query behaviour is intended.
+Populated rather than dropped. The `synthesize_rag` call is wrapped, and a
+backend failure (LLM server down, model unloaded, timeout) now degrades to
+hits-plus-explanation instead of failing the whole query — a search that worked
+should not be discarded because the optional narration did not. `synthesis_error`
+carries `"{ExceptionType}: {message}"`, `synthesis_ms` still reports how long the
+attempt took, and the key is present-and-`None` on the success and
+not-requested paths so the response shape is stable.
 
-`corpus_pepys` carries the identical dead path (inherited from this file) and has
-recorded the same decision in its `HANDOFF.md`. Whichever way this goes, both
-repos should go the same way.
+`corpus_pepys` carried the identical dead path (inherited from this file) and is
+fixed the same way in Flux-Frontiers/corpus_pepys#7, so the two workers keep the
+same response contract.
 
 ---
 
-## 5. Two things `corpus_pepys` now has that this repo may want
+## 5. Two things `corpus_pepys` has that this repo may want
 
-Neither is a defect here; both are offered because the audit produced them.
+Neither is a defect here. **The second is now adopted; the first is not.**
 
 **`scripts/check_pins.py`.** Compares the KG package versions across
 `poetry.lock`, the Dockerfile ARGs, and any compose build args, and fails with a
@@ -245,9 +273,14 @@ lock-vs-Dockerfile because that project is `package-mode = false` and has no
 `pip install .` step, which is precisely the mechanism that makes floors matter
 here.
 
-**A testable Streamlit stub.** `Chat.py` currently has no test coverage, largely
-because importing it requires a real Streamlit and it builds its whole page at
-import time. `corpus_pepys/tests/conftest.py` gets around this in three lines:
+**Not ported in this branch** — it needs that floor check designed, and it is a
+new build-time gate on `make build` rather than a bug fix, so it deserves its own
+change. Until then, nothing prevents item 2 recurring.
+
+**A testable Streamlit stub — adopted.** `Chat.py` had no test coverage at all,
+largely because importing it requires a real Streamlit and it builds its whole
+page at import time. `corpus_pepys/tests/conftest.py` gets around this in three
+lines:
 
 ```python
 _streamlit = MagicMock()
@@ -258,10 +291,19 @@ sys.modules["streamlit"] = _streamlit
 The `cache_data` substitution is the load-bearing part — as a plain `MagicMock`
 it replaces every decorated function with a mock, so the memoised helpers cannot
 be called at all; as an identity decorator they are directly testable and there
-is no cache bleed between tests. That unlocked 23 tests over the model blocklist
-and the stats fetch. The same stub would work unmodified here, and the model
-blocklist (`_MODEL_BLOCKLIST` / `_is_synth_model`, which originated in this repo)
-is currently untested in both.
+is no cache bleed between tests.
+
+`tests/test_chat_worker_ops.py` uses it to cover `_worker_op`, `_fetch_stats` and
+`_corpus_options` — 16 tests, the first coverage `serve/` has had. It lives in the
+test module rather than a `tests/conftest.py` (this repo has none) and stubs only
+`streamlit`; `kg_utils.worker` stays real, since CI installs it and nothing in
+these tests needs it mocked. The stub is applied unconditionally rather than via
+`setdefault`: CI runs `--extras dev`, so streamlit is absent there and the stub is
+what makes the module importable at all — but under `--all-extras` the real
+`st.cache_data` would memoise across tests and make results order-dependent.
+
+Still untested in both repos: `_MODEL_BLOCKLIST` / `_is_synth_model`, which
+originated here. `corpus_pepys` covers its copy; this one has no equivalent yet.
 
 ---
 

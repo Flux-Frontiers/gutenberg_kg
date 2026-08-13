@@ -330,50 +330,73 @@ def _query_worker(
     )
 
 
-@st.cache_data(ttl=300, show_spinner=False)
-def _fetch_stats(worker_url: str) -> dict:
-    """Fetch live corpus totals from the worker's ``stats`` op (cached 5 min).
+def _worker_op(worker_url: str, op: str, secret: str) -> dict:
+    """POST a bare ``op`` to the worker and return its unwrapped output.
+
+    Both callers below build their own payload rather than going through
+    ``WorkerClient`` (which has no op-only method), so the secret and the
+    error-envelope handling live here instead of being repeated — and, until
+    this helper existed, being omitted.
+
+    The worker rejects a bad/absent secret with a **200 carrying**
+    ``{"error": "unauthorized"}``, not an HTTP error status, so
+    ``raise_for_status()`` does not catch it. Returning that dict verbatim made
+    it truthy at the call site, which sent the sidebar down its success path and
+    into ``stats['books']`` — a KeyError traceback where the sidebar should be.
+    Any worker-side error reproduces it, not just an auth failure. So an error
+    payload is normalised to ``{}`` here, which is what the callers' "worker
+    offline" fallbacks were always written for.
 
     :param worker_url: Base URL of the KGRAG worker.
-    :returns: The worker's stats dict, or ``{}`` if the worker is unreachable so
-              the header degrades gracefully before the worker is up.
+    :param op: Operation name, e.g. ``"stats"`` or ``"list_genres"``.
+    :param secret: Shared secret for the worker; omitted from the payload when empty.
+    :returns: The worker's output dict, or ``{}`` if it is unreachable or
+              reported an error.
     """
+    inp: dict = {"op": op}
+    if secret:
+        inp["secret"] = secret
     try:
         resp = httpx.post(
             f"{worker_url.rstrip('/')}/runsync",
-            json={"input": {"op": "stats"}},
+            json={"input": inp},
             timeout=10.0,
         )
         resp.raise_for_status()
         payload = resp.json()
     except httpx.HTTPError:
         return {}
-    return payload.get("output", payload)
+    out = payload.get("output", payload)
+    return out if isinstance(out, dict) and "error" not in out else {}
 
 
 @st.cache_data(ttl=300, show_spinner=False)
-def _corpus_options(worker_url: str) -> list[str]:
+def _fetch_stats(worker_url: str, secret: str) -> dict:
+    """Fetch live corpus totals from the worker's ``stats`` op (cached 5 min).
+
+    :param worker_url: Base URL of the KGRAG worker.
+    :param secret: Shared secret for the worker (if configured).
+    :returns: The worker's stats dict, or ``{}`` if the worker is unreachable or
+              rejected the call, so the header degrades gracefully.
+    """
+    return _worker_op(worker_url, "stats", secret)
+
+
+@st.cache_data(ttl=300, show_spinner=False)
+def _corpus_options(worker_url: str, secret: str) -> list[str]:
     """Build the corpus-scope dropdown from the worker's live genre list.
 
     ``all`` (DocKG + diaries) and ``diary`` (diaries only) always bookend the
     list; the middle is every DocKG genre reported by the worker's ``list_genres``
     op. The ``diaries`` genre is folded into the ``diary`` scope, so it is
-    excluded here. Falls back to ``["all", "diary"]`` if the worker is offline.
+    excluded here. Falls back to ``["all", "diary"]`` if the worker is offline or
+    rejected the call.
 
     :param worker_url: Base URL of the KGRAG worker.
+    :param secret: Shared secret for the worker (if configured).
     :returns: Ordered corpus-scope options for the sidebar selectbox.
     """
-    try:
-        resp = httpx.post(
-            f"{worker_url.rstrip('/')}/runsync",
-            json={"input": {"op": "list_genres"}},
-            timeout=10.0,
-        )
-        resp.raise_for_status()
-        payload = resp.json()
-    except httpx.HTTPError:
-        return ["all", "diary"]
-    genres = (payload.get("output", payload)).get("genres", [])
+    genres = _worker_op(worker_url, "list_genres", secret).get("genres", [])
     names = sorted(g["genre"] for g in genres if g.get("genre") and g["genre"] != "diaries")
     return ["all", *names, "diary"]
 
@@ -495,13 +518,17 @@ def _render_sidebar() -> dict:
 
     :returns: Query configuration dict assembled from the current widget values.
     """
+    secret = os.environ.get("HANDLER_SECRET", "")
     st.sidebar.title("📚 GutenbergKG")
     st.sidebar.caption(f"v{__version__}")
-    stats = _fetch_stats(_DEFAULT_WORKER)
+    stats = _fetch_stats(_DEFAULT_WORKER, secret)
     if stats:
         model_short = (stats.get("embed_model") or "").rsplit("/", 1)[-1]
+        # .get, not subscript: a partial payload should cost a number, not the
+        # whole sidebar.
         st.sidebar.markdown(
-            f"{stats['books']} books · {stats['genres']} genres · {stats['diaries']} diaries  \n"
+            f"{stats.get('books', 0)} books · {stats.get('genres', 0)} genres · "
+            f"{stats.get('diaries', 0)} diaries  \n"
             f"{model_short}"
         )
     else:
@@ -509,7 +536,7 @@ def _render_sidebar() -> dict:
     st.sidebar.markdown("---")
     st.sidebar.subheader("📖 Corpus")
 
-    corpus_options = _corpus_options(_DEFAULT_WORKER)
+    corpus_options = _corpus_options(_DEFAULT_WORKER, secret)
     corpus = st.sidebar.selectbox(
         "Scope",
         options=corpus_options,
@@ -563,7 +590,6 @@ def _render_sidebar() -> dict:
         )
         backend = _SYNTH_PROVIDERS[provider_label]
 
-        secret = os.environ.get("HANDLER_SECRET", "")
         with st.sidebar:
             with st.spinner("Fetching models…"):
                 models, default = _fetch_models(_DEFAULT_WORKER, secret, backend)
@@ -654,7 +680,7 @@ def _render_sidebar() -> dict:
 
     return {
         "worker_url": _DEFAULT_WORKER,
-        "secret": os.environ.get("HANDLER_SECRET", ""),
+        "secret": secret,
         "corpus": corpus,
         "k": k,
         "min_score": min_score,
@@ -702,7 +728,7 @@ def main() -> None:
             st.session_state.messages = []
             st.rerun()
 
-    _n_books = _fetch_stats(_DEFAULT_WORKER).get("books")
+    _n_books = _fetch_stats(_DEFAULT_WORKER, os.environ.get("HANDLER_SECRET", "")).get("books")
     _books_phrase = (
         f"{_n_books} Project Gutenberg texts" if _n_books else "the Project Gutenberg corpus"
     )

@@ -101,6 +101,56 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Fixed
 
+Four defects surfaced by a consistency audit of `corpus_pepys`, which used this
+repo as its reference implementation. Written up in full in
+`HANDOFF-corpus-pepys-audit.md`.
+
+- **The chat sidebar crashed with a `KeyError` whenever `HANDLER_SECRET` was
+  set.** Two independent causes compounded. First, the secret never reached the
+  chat container: `Chat.py` and `pages/1_Browse.py` read `HANDLER_SECRET` and put
+  it in every request, but the compose `chat` service and the Apple `chat` target
+  both omitted it while their worker counterparts set it. Second, `_fetch_stats`
+  and `_corpus_options` built their payloads by hand and never sent it at all, so
+  fixing the first alone would not have helped.
+
+  The crash itself came from the error envelope. The worker rejects a bad secret
+  with a **200 carrying** `{"error": "unauthorized"}`, so `raise_for_status()`
+  does not fire; `_fetch_stats` returned that dict verbatim, it was *truthy*, and
+  the sidebar took its success branch straight into `stats['books']`. The
+  "corpus stats unavailable — worker offline" fallback was unreachable, because
+  it was written for a falsy `{}`. Any worker-side error reproduced it, not just
+  an auth failure. `_corpus_options` failed more quietly, collapsing the corpus
+  dropdown to `["all", "diary"]` and hiding every genre.
+
+  Both fetches now go through one `_worker_op` helper that sends the secret and
+  normalises an error payload to `{}`; the sidebar reads totals with `.get` so a
+  partial payload costs a number rather than the page; and both deployment paths
+  forward `HANDLER_SECRET`. `pages/1_Browse.py` sends it too — every op on that
+  page was returning `unauthorized`, which rendered as an empty corpus rather
+  than a rejected request.
+
+- **The Dockerfile pinned `kgmodule-utils` below its own declared floor.**
+  `ARG KGMODULE_UTILS_VERSION=0.10.0` against a `>=0.11.0` floor in
+  `pyproject.toml` and 0.11.0 in the lock. The Dockerfile's own comment predicts
+  the consequence: the later `pip install .` re-resolved and upgraded it, so the
+  ARG was fiction — no build ever ran the version it named, the pre-install layer
+  fetched that package twice per cold build, and the four `==`-pinned KG packages
+  were no longer verified as the set that actually ships. Now 0.11.0.
+
+- **The cross-pin comment block was three releases stale**, naming doc-kg 0.20.0
+  and kgmodule-utils 0.9.0 directly above ARGs reading 0.21.1 and 0.11.0. Since
+  that block is the documentation of record for why the four move together, a
+  stale copy is worse than none. Rewritten from the lock's actual constraints.
+
+- **A failed synthesis threw away a search that had already succeeded.**
+  `synthesize_rag` was called unguarded, so an unreachable LLM server, an
+  unloaded model or a timeout propagated out of the handler and failed the whole
+  request. It is now caught and returned as `synthesis_error` alongside the hits
+  — the key `Chat.py`'s "Answer generation failed" branch has always rendered,
+  and which was unreachable because nothing ever set it. `corpus_pepys` carried
+  the identical dead path and is fixed the same way, so the two workers keep the
+  same response contract.
+
 - **CI collection no longer dies when the `viz3d` extra is absent.**
   `tests/test_scene.py`, `tests/test_layout_organic.py`, and
   `tests/test_seasons.py` imported `gutenberg_kg.scene` / `.layout_organic` at
