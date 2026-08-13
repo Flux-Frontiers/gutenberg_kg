@@ -79,7 +79,7 @@ classifiers = [
 requires-python = ">=3.12,<3.14"
 dependencies = [
     "click>=8.1.0,<9",
-    "kgmodule-utils[synthesis,sqlite-vec]>=0.12.0",
+    "kgmodule-utils[synthesis,sqlite-vec]>=0.12.1",
     "rich>=14.3.3,<15",
     "doc-kg (>=0.21.1)",  # transformers 5.x — must match kg-rag; see the kgdeps extra
     "diary-kg (>=0.96.0)",
@@ -95,7 +95,7 @@ dev = [
     "pre-commit>=4.5.1",
     "pytest>=9.0.3",
     "pytest-cov>=5.0.0",
-    "ruff>=0.4.0",
+    "ruff>=0.4.0,<0.16",
     "scipy>=1.13.0",
     "vtracer>=0.6.0",
 ]
@@ -112,12 +112,13 @@ viz3d = [
     "markdown>=3.6",
     "param>=2.0.0",
     "PyQt5>=5.15.0",
-    # NOTE: plain pyvista, NOT pyvista[jupyter]. viz3d renders to a desktop Qt
-    # window via pyvistaqt's QtInteractor (see gutenberg_kg/viz3d.py) — the [jupyter]
-    # extra only pulls the trame/ipywidgets/jupyter-server browser-rendering stack,
-    # which nothing here imports and which massively bloated `poetry lock`. Re-add
-    # [jupyter] (→ trame) only if we ever render 3-D into a notebook or browser.
-    "pyvista>=0.44.0",
+    # pyvistaqt only. pyvista itself now arrives via kgmodule-utils[viz3d-render]
+    # below, which is where it belongs: the SDK's tree_mesh/leaf_glyphs/smooth_paths
+    # need it, so the SDK declares it rather than every consumer hand-pinning it.
+    # Still NOT pyvista[jupyter] — viz3d renders to a desktop Qt window via
+    # pyvistaqt's QtInteractor (see gutenberg_kg/viz3d.py), and [jupyter] only adds
+    # the trame/ipywidgets/jupyter-server browser stack, which nothing here imports
+    # and which massively bloated `poetry lock`.
     "pyvistaqt>=0.11.0",
     # Shared 3-D geometry: layout primitives (Layout3D, LayoutNode/Edge,
     # fibonacci_*) and, since 0.12.0, the organic tree engine (grow_tree,
@@ -127,7 +128,7 @@ viz3d = [
     # geometry; the trees moved for the same reason, so a diary corpus can grow
     # them without depending on a *book* corpus. pycode-kg stays in `kgdeps`
     # for its own CLI.
-    "kgmodule-utils[viz3d]>=0.12.0",
+    "kgmodule-utils[viz3d-render]>=0.12.1",
     # Light-field output (`gutenkg quilt`). Marker-gated: quiltwright pins
     # requires-python <3.13 while this project supports <3.14, and without the
     # marker poetry rejects the whole resolution. Drop the marker once
