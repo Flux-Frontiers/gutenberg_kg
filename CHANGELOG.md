@@ -10,6 +10,28 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added
 
+- **21 tests for the synthesis-model blocklist** (`tests/test_chat_worker_ops.py`).
+  `_MODEL_BLOCKLIST` / `_is_synth_model` originated here and were ported to
+  `corpus_pepys`, which ended up covering them first; this closes the gap so both
+  copies are pinned. The blocklist is the kind of thing that fails quietly when
+  it breaks — a reasoning model that slips through emits its chain-of-thought as
+  prose into the answer pane, which reads as a bad answer rather than a bad model
+  choice, and an embedding model fails the request outright.
+
+  Covers allowed and blocked ids, case-insensitivity, substring matching
+  anywhere in a namespaced id, that every pattern is lower-case (`_is_synth_model`
+  lowercases the id but not the patterns, so an upper-case entry would silently
+  never match), the blocklist contents spelled out so a silent edit shows up as a
+  test change, and `_fetch_models` actually applying the filter — including the
+  case where the *backend's own default* is blocklisted, which is the one that
+  selects itself with no user interaction.
+
+  Verified by mutation rather than by passing: removing `embed` from the
+  blocklist fails 7 tests, and dropping the filter line from `_fetch_models`
+  fails 3. Suite: 178 → 199.
+
+### Added
+
 - **`make sdxl-fetch`** — pre-downloads the ~7 GB of SDXL weights without
   starting the server, so the first `make up` on a fresh machine is not a silent
   long wait. Once cached, `SDXL_OFFLINE=1` makes the server refuse network access.

@@ -1,4 +1,7 @@
-"""Unit tests for the chat UI's bare-op worker calls (``serve/Chat.py``).
+"""Unit tests for the chat UI's worker-facing helpers (``serve/Chat.py``).
+
+Covers the bare-op calls (``_worker_op`` / ``_fetch_stats`` / ``_corpus_options``)
+and the synthesis-model filtering that ``_fetch_models`` applies.
 
 These cover the regression that made the sidebar crash: the worker rejects a
 bad or absent secret with a **200 carrying** ``{"error": "unauthorized"}``, so
@@ -152,3 +155,121 @@ class TestCorpusOptions:
         post = _post({"output": {"genres": [{"genre": ""}, {"genre": "philosophy"}, {}]}})
         with patch.object(httpx, "post", post):
             assert Chat._corpus_options("http://w:8000", "") == ["all", "philosophy", "diary"]
+
+
+# ---------------------------------------------------------------------------
+# _is_synth_model / _MODEL_BLOCKLIST
+# ---------------------------------------------------------------------------
+
+
+class TestIsSynthModel:
+    """The blocklist keeps unusable models out of the sidebar's Model picker.
+
+    It originated here and was ported to corpus_pepys, which covered it first;
+    this backfills the gap so both copies are pinned. A model that slips through
+    does not error visibly — a reasoning model emits its chain-of-thought as
+    prose into the answer pane, which reads as a bad answer rather than a bad
+    model choice.
+    """
+
+    @pytest.mark.parametrize(
+        "model_id",
+        [
+            "Qwen3-4B-Instruct-2507-MLX-8bit",
+            "Qwen3-30B-A3B-Instruct-2507-MLX-4bit",
+            "llama3.1:8b",
+            "gpt-4o-mini",
+            "mistral-small",
+        ],
+    )
+    def test_ordinary_chat_models_allowed(self, model_id):
+        assert Chat._is_synth_model(model_id)
+
+    @pytest.mark.parametrize(
+        "model_id",
+        [
+            "Agents-A1-32B",  # unstrippable "Thinking Process:" prose
+            "deepseek-r1:14b",  # R1 reasoning model
+            "gpt-oss-20b",  # harmony channels leak into content
+            "markitdown-1b",  # document converter, not a chat model
+            "nomic-embed-text",  # embedding models fail the request outright
+            "mxbai-embed-large",
+            "Qwen3-Embedding-0.6B",
+        ],
+    )
+    def test_reasoning_and_non_chat_models_blocked(self, model_id):
+        assert not Chat._is_synth_model(model_id)
+
+    def test_matching_is_case_insensitive(self):
+        assert not Chat._is_synth_model("DEEPSEEK-R1")
+        assert not Chat._is_synth_model("DeepSeek-R1:70b")
+
+    def test_blocklist_matches_as_substring_anywhere(self):
+        # Backends namespace their ids differently; the pattern has to hit
+        # wherever it appears, not just at the start.
+        assert not Chat._is_synth_model("hosted/team/nomic-embed-text-v1.5")
+
+    def test_blocklist_contents_are_pinned(self):
+        # Spelled out so a silent edit here shows up as a test change, and so
+        # the corpus_pepys copy can be diffed against it by eye.
+        assert set(Chat._MODEL_BLOCKLIST) == {
+            "agents-a1",
+            "deepseek-r1",
+            "gpt-oss",
+            "markitdown",
+            "embed",
+        }
+
+    def test_every_pattern_is_lowercase(self):
+        # _is_synth_model lowercases the id but not the patterns, so an
+        # upper-case entry would silently never match.
+        assert all(p == p.lower() for p in Chat._MODEL_BLOCKLIST)
+
+
+# ---------------------------------------------------------------------------
+# _fetch_models — where the blocklist is actually applied
+# ---------------------------------------------------------------------------
+
+
+class TestFetchModels:
+    @staticmethod
+    def _client(models, default):
+        client = MagicMock()
+        client.list_models = MagicMock(return_value=(models, default))
+        return MagicMock(return_value=client)
+
+    def test_blocklisted_models_dropped_from_the_dropdown(self):
+        factory = self._client(["qwen3-4b", "deepseek-r1:8b", "nomic-embed-text"], "qwen3-4b")
+        with patch.object(Chat, "WorkerClient", factory):
+            models, default = Chat._fetch_models("http://w:8000", "")
+        assert models == ["qwen3-4b"]
+        assert default == "qwen3-4b"
+
+    def test_blocklisted_default_replaced_with_first_allowed_model(self):
+        # The case that needs no user interaction at all: the backend reports a
+        # reasoning model as its default, so it is what runs unless replaced.
+        factory = self._client(["gpt-oss-20b", "qwen3-4b", "llama3.1"], "gpt-oss-20b")
+        with patch.object(Chat, "WorkerClient", factory):
+            models, default = Chat._fetch_models("http://w:8000", "")
+        assert "gpt-oss-20b" not in models
+        assert default == "qwen3-4b"
+
+    def test_all_models_blocked_yields_empty_list_and_default(self):
+        factory = self._client(["deepseek-r1", "nomic-embed-text"], "deepseek-r1")
+        with patch.object(Chat, "WorkerClient", factory):
+            models, default = Chat._fetch_models("http://w:8000", "")
+        assert models == []
+        assert default == ""
+
+    def test_allowed_default_preserved(self):
+        factory = self._client(["a-model", "b-model"], "b-model")
+        with patch.object(Chat, "WorkerClient", factory):
+            _, default = Chat._fetch_models("http://w:8000", "")
+        assert default == "b-model"
+
+    def test_backend_is_forwarded_to_the_worker(self):
+        client = MagicMock()
+        client.list_models = MagicMock(return_value=(["m"], "m"))
+        with patch.object(Chat, "WorkerClient", MagicMock(return_value=client)):
+            Chat._fetch_models("http://w:8000", "s3cret", "ollama")
+        client.list_models.assert_called_once_with(backend="ollama")
