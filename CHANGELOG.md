@@ -126,8 +126,47 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Fixed
 
-Four defects surfaced by a consistency audit of `corpus_pepys`, which used this
-repo as its reference implementation. Written up in full in
+- **`make up` died on any host without Apple Silicon.** `IMAGE_BACKEND` defaulted
+  to `flux`, so `up` ran `make image-server` unconditionally — which builds
+  `.venv-image` from `docker/requirements-image.txt` and installs mflux. mflux's
+  own metadata pins `mlx ; sys_platform == "darwin"` and
+  `mlx[cuda13] ; sys_platform == "linux"`, with no Windows entry at all, so on an
+  ordinary x86 host the pip install failed and took `up` with it — *after* the
+  worker and chat had already started, so the whole stack looked broken when only
+  the image backend was unavailable.
+
+  The default is now conditional: FLUX where mflux can run, **SDXL-Lightning**
+  everywhere else. That is a real fallback rather than a skip, because
+  `gutenberg_kg.serve.sdxl_server` resolves `cuda → mps → cpu` and so runs on any
+  host (slowly on CPU, but it runs). On Apple Silicon nothing changes.
+  `make up IMAGE_BACKEND=flux|sdxl` still forces either. Asking for FLUX where it
+  cannot run now fails with a message naming the requirement and pointing at the
+  SDXL alternative, instead of a pip resolution error, and `FORCE_IMAGE_SERVER=1`
+  overrides the probe for the CUDA 13 Linux case it cannot detect.
+
+  Starting the image server is also best-effort in both runtime branches now: it
+  is one optional button in the chat UI, so its failure warns rather than
+  failing a stack whose worker and chat are already serving.
+
+- **SDXL-Lightning was undocumented.** `make sdxl-server` and the `:8091` server
+  appeared only in architecture diagrams and file listings — never in
+  `docs/INSTALLATION.md`'s target table or its image-generation section. It is
+  the only local image backend that runs off Apple Silicon, so the one option a
+  Linux or Windows user needs was the one nobody could find. Documented in
+  `INSTALLATION.md` and `CHAT_UI.md`, including a table of what each server
+  requires.
+
+- **`docs/INSTALLATION.md` called OpenAI "the one provider path that works
+  identically on Linux and Windows".** Ollama already covers text synthesis
+  there, and SDXL-Lightning covers images; OpenAI's actual distinction is
+  needing nothing installed locally. Also flagged the collision between the
+  *Make* variable `IMAGE_BACKEND` (`flux`/`sdxl` — which server to start) and the
+  *environment* variable of the same name in `docker/.env`
+  (`mflux-serve`/`mflux-local`/`openai` — which backend the worker generates
+  through). They are unrelated and the Make one is not passed into the container.
+
+Four further defects were surfaced by a consistency audit of `corpus_pepys`,
+which used this repo as its reference implementation. Written up in full in
 `HANDOFF-corpus-pepys-audit.md`.
 
 - **The chat sidebar crashed with a `KeyError` whenever `HANDLER_SECRET` was

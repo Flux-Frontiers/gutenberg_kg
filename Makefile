@@ -8,11 +8,16 @@
 #   make build-corpus   — rebuild the DocKG + diary bundle (takes ~24 min)
 #   make build          — build the container image (bakes bundle into image)
 #   make run            — start the worker on http://localhost:8000
-#   make image-server   — start the local FLUX image generation server on :8090
+#   make image-server   — start the local FLUX image server on :8090 (needs mflux:
+#                         Apple Silicon, or Linux + CUDA 13)
 #   make sdxl-server    — start the local SDXL-Lightning image server on :8091
+#                         (diffusers; cuda -> mps -> cpu, so it runs anywhere)
 #   make chat           — start worker + Streamlit chat UI on http://localhost:8501
-#   make up             — start everything: worker + chat UI + FLUX.2 image server (:8090)
-#   make up IMAGE_BACKEND=sdxl  — start everything with the SDXL-Lightning server (:8091)
+#   make up             — start everything: worker + chat UI + an image server.
+#                         Picks FLUX.2 (:8090) where mflux can run, SDXL (:8091)
+#                         otherwise. The image server is optional — if it fails,
+#                         worker and chat stay up.
+#   make up IMAGE_BACKEND=sdxl|flux  — force one backend
 #   make down           - stop everything: worker + image servers + chat UI
 #   make docs           — generate project docs into ./docs
 #   make query Q="..."  — fire a one-shot query against the running worker
@@ -95,10 +100,43 @@ else
 APPLE_HOST_GW ?= 192.168.64.1
 endif
 
-# Image backend for `make up`: flux (FLUX.2 / mflux, default) or sdxl (SDXL-Lightning).
-#   make up                    → FLUX.2 on :8090
+# ------------------------------------------------------------------
+# Can this host run the FLUX image server?
+#
+# `make image-server` builds .venv-image from docker/requirements-image.txt,
+# which installs mflux. mflux is not portable — its own metadata says:
+#
+#     mlx<0.32.0,>=0.27.0          ; sys_platform == "darwin"
+#     mlx[cuda13]<0.32.0,>=0.30.3  ; sys_platform == "linux"
+#
+# so it needs Apple MLX on macOS arm64, or CUDA 13 and an NVIDIA GPU on Linux,
+# and there is no Windows entry at all. On any other host the pip install fails.
+#
+# The SDXL backend has no such constraint: gutenberg_kg.serve.sdxl_server
+# resolves cuda -> mps -> cpu, so its diffusers/torch stack runs anywhere (on
+# CPU it is slow, but it works). That is why the default below falls back to it
+# rather than simply skipping image generation.
+#
+# FORCE_IMAGE_SERVER=1 asserts flux support — the escape hatch for a CUDA 13
+# Linux box, which mflux does support but this probe cannot detect.
+# ------------------------------------------------------------------
+MFLUX_OK := $(shell \
+  if [ "$(FORCE_IMAGE_SERVER)" = "1" ]; then echo 1; \
+  elif [ "$$(uname -s 2>/dev/null)" = "Darwin" ] && [ "$$(uname -m 2>/dev/null)" = "arm64" ]; then echo 1; \
+  fi)
+
+# Image backend for `make up`: flux (FLUX.2 / mflux) or sdxl (SDXL-Lightning).
+#   make up                    → FLUX.2 on :8090   (where mflux can run)
+#                                SDXL-Lightning on :8091 (everywhere else)
 #   make up IMAGE_BACKEND=sdxl → SDXL-Lightning on :8091 (worker repointed automatically)
-IMAGE_BACKEND ?= flux
+#   make up IMAGE_BACKEND=flux → force FLUX.2; errors out if mflux cannot run here
+#
+# The default is conditional so `make up` works on a host without Apple Silicon.
+# It used to be a flat `flux`, which meant `up` ran `make image-server`
+# unconditionally and died on the mflux install — after the worker and chat had
+# already started, so the whole stack looked broken when only the image backend
+# was unavailable. On Apple Silicon nothing changes.
+IMAGE_BACKEND ?= $(if $(MFLUX_OK),flux,sdxl)
 ifeq ($(IMAGE_BACKEND),sdxl)
 IMAGE_TARGET  = sdxl-server
 IMAGE_URL     = $(SDXL_SERVER)
@@ -238,7 +276,9 @@ start up:
 	@echo "Starting worker + chat (Apple container), image backend: $(IMAGE_BACKEND) ($(IMG_ENDPOINT)) ..."
 	GUTENKG_IMAGE_ENDPOINT=$(IMG_ENDPOINT) $(MAKE) chat RUNTIME=apple
 	@echo "Starting $(IMAGE_BACKEND) image server ..."
-	$(MAKE) $(IMAGE_TARGET)
+	-@$(MAKE) --no-print-directory $(IMAGE_TARGET) || \
+		echo "WARNING: the image server did not start. Worker and chat are up; only the chat UI's 'Render response' button is affected."
+
 	@echo ""
 	@echo "Worker:       $(WORKER)"
 	@echo "Image server: $(IMAGE_URL)  ($(IMAGE_BACKEND))"
@@ -285,7 +325,9 @@ start up:
 	@echo "Starting worker + chat (Docker), image backend: $(IMAGE_BACKEND) ($(IMG_ENDPOINT)) ..."
 	GUTENKG_IMAGE_ENDPOINT=$(IMG_ENDPOINT) IMAGE_ENDPOINT=$(IMG_ENDPOINT) $(COMPOSE) --profile chat up -d
 	@echo "Starting $(IMAGE_BACKEND) image server ..."
-	$(MAKE) $(IMAGE_TARGET)
+	-@$(MAKE) --no-print-directory $(IMAGE_TARGET) || \
+		echo "WARNING: the image server did not start. Worker and chat are up; only the chat UI's 'Render response' button is affected."
+
 	@echo ""
 	@echo "Worker:       $(WORKER)"
 	@echo "Image server: $(IMAGE_URL)  ($(IMAGE_BACKEND))"
@@ -307,6 +349,15 @@ clean:
 endif
 
 image-server:
+	@if [ "$(MFLUX_OK)" != "1" ]; then \
+		echo "ERROR: the FLUX image server cannot run on this host."; \
+		echo "  mflux needs Apple MLX (macOS arm64), or mlx[cuda13] on a Linux box"; \
+		echo "  with an NVIDIA GPU. It publishes no Windows wheel."; \
+		echo "  Use the portable backend instead:  make up IMAGE_BACKEND=sdxl"; \
+		echo "  (SDXL-Lightning resolves cuda -> mps -> cpu, so it runs anywhere.)"; \
+		echo "  Or re-run with FORCE_IMAGE_SERVER=1 on a CUDA 13 Linux host."; \
+		exit 1; \
+	fi
 	@if [ ! -x .venv-image/bin/python ]; then \
 		echo "Creating .venv-image for isolated image dependencies ..."; \
 		python3 -m venv .venv-image; \
