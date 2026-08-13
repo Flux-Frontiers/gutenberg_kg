@@ -2555,17 +2555,14 @@ files = [
 
 [package.dependencies]
 httpx = {version = ">=0.27.0", optional = true, markers = "extra == \"synthesis\""}
-numpy = [
-    {version = ">=1.24.0", optional = true, markers = "extra == \"viz3d\""},
-    {version = ">=1.24.0", optional = true, markers = "extra == \"semantic\""},
-]
+numpy = {version = ">=1.24.0", optional = true, markers = "extra == \"semantic\" or extra == \"viz3d\""}
 openai = {version = ">=1.30.0", optional = true, markers = "extra == \"synthesis\""}
 pillow = {version = ">=10.0.0", optional = true, markers = "extra == \"synthesis\""}
 rich = {version = ">=13.0.0,<15.0.0", optional = true, markers = "extra == \"semantic\""}
 sentence-transformers = {version = ">=5.4.1", optional = true, markers = "extra == \"semantic\""}
 sqlite-vec = [
-    {version = "0.1.9", optional = true, markers = "extra == \"sqlite-vec\""},
     {version = "0.1.9", optional = true, markers = "extra == \"semantic\""},
+    {version = "0.1.9", optional = true, markers = "extra == \"sqlite-vec\""},
 ]
 torch = {version = ">=2.5.1", optional = true, markers = "extra == \"semantic\""}
 transformers = {version = ">=5.5.0,<6", optional = true, markers = "extra == \"semantic\""}
@@ -4306,20 +4303,20 @@ files = [
 
 [[package]]
 name = "pycode-kg"
-version = "0.21.4"
+version = "0.22.0"
 description = "A tool to build a searchable knowledge graph from Python repositories"
 optional = true
 python-versions = "<3.14,>=3.12"
 groups = ["main"]
 markers = "extra == \"kgdeps\""
 files = [
-    {file = "pycode_kg-0.21.4-py3-none-any.whl", hash = "sha256:bcca9ed8e4c276d513af8da7b0726e8ba2cd36e8f18632a4f1940ad710a9e0f0"},
-    {file = "pycode_kg-0.21.4.tar.gz", hash = "sha256:2a94e9dd62d1c745f27ea371c03a8e69275992ebf7e6dcd1faf29cd042f73150"},
+    {file = "pycode_kg-0.22.0-py3-none-any.whl", hash = "sha256:c164193b20116ab845fb9467e65e32b92fcc77922cab037b3afae2f2c5efbe0e"},
+    {file = "pycode_kg-0.22.0.tar.gz", hash = "sha256:631ad04fc9b5a750f09b7a2189b0be2855d1fcdcb8b4ab6c665e3d64f64af96f"},
 ]
 
 [package.dependencies]
 click = ">=8.1.0,<9"
-kgmodule-utils = {version = ">=0.10.0", extras = ["semantic"]}
+kgmodule-utils = {version = ">=0.11.0", extras = ["semantic", "viz3d"]}
 mcp = ">=1.0.0,<2"
 networkx = ">=3.0"
 numpy = ">=1.24.0"
@@ -5197,15 +5194,15 @@ test = ["pytest (>=6,!=7.0.0,!=7.0.1)", "pytest-cov (>=3.0.0)", "pytest-qt"]
 
 [[package]]
 name = "quiltwright"
-version = "0.3.0"
+version = "0.3.1"
 description = "Holographic output for Looking Glass displays: off-axis multi-view quilts from PyVista or POV-Ray scenes"
 optional = true
 python-versions = "<3.13,>=3.12"
 groups = ["main"]
 markers = "python_version == \"3.12\" and extra == \"viz3d\""
 files = [
-    {file = "quiltwright-0.3.0-py3-none-any.whl", hash = "sha256:ad86e66da27b96f037f30213fd217fc68907c20e74e40c5d1eb0e339251c7d89"},
-    {file = "quiltwright-0.3.0.tar.gz", hash = "sha256:658591e85e53be4c5fd4befb1eac38913e2beab293a699468bd7e46037c4abed"},
+    {file = "quiltwright-0.3.1-py3-none-any.whl", hash = "sha256:2a78ac9bd0741ae10005f9b420689f65ff79e4515eb35d2cdc2479364c2eb8b3"},
+    {file = "quiltwright-0.3.1.tar.gz", hash = "sha256:56d025b49cf497f0d3be6146a58b953723be18440298af238b6948f5ab8e829b"},
 ]
 
 [package.dependencies]
@@ -7565,4 +7562,4 @@ viz3d = ["PyQt5", "kgmodule-utils", "markdown", "param", "pyvista", "pyvistaqt",
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.12,<3.14"
-content-hash = "cfeb776dc166a24e17f359862262a1c737c2b59afedcd8d844ace7d6d551d693"
+content-hash = "a599852c66ddb79b89c7ab165005e555788afe09bce6fc5a533d68526e3fd51f"
