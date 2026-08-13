@@ -99,6 +99,31 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - **`docs/release-notes.md`** — stranded at v1.1.0 (May 2026) and unreferenced.
   The release workflow reads the root `release-notes.md`, which is at v1.14.0.
 
+### Added
+
+- **`scripts/check_pins.py`** — verifies the four cross-pinned KG packages agree
+  across every file that names them: `pyproject.toml` floors, `poetry.lock`,
+  `docker/Dockerfile` ARGs, and `runpod/requirements.txt`. A prerequisite of
+  `make build` in both runtime branches, and a step in the CI lint job.
+
+  The floor comparison is the point. `docker/Dockerfile` pre-installs the pinned
+  stack and then runs `pip install .`, which re-resolves against pyproject — so
+  an ARG below its floor is silently upgraded rather than failing the build. The
+  pin becomes a number no image runs, and nothing anywhere goes red. That is how
+  `KGMODULE_UTILS_VERSION` sat at 0.10.0 against a `>=0.11.0` floor unnoticed.
+
+  On its first run it found a second instance of that same drift, which the
+  manual audit had missed: `runpod/requirements.txt` also floored
+  `kgmodule-utils` at `>=0.10.0`, so the serverless worker could install a
+  version the package itself rejects. Fixed alongside.
+
+  Stdlib-only (`tomllib` + `re`, with a local `_version_key` rather than
+  `packaging.version`) so a build gate never depends on what the install
+  resolved — which also matters for the ordering it tests, since `"0.9.0" >
+  "0.11.0"` under a string compare. `corpus_pepys` carries a sibling that
+  deliberately omits the floor check: that project is `package-mode = false`
+  with no `pip install .` step, so its Dockerfile pins are the last word.
+
 ### Fixed
 
 Four defects surfaced by a consistency audit of `corpus_pepys`, which used this

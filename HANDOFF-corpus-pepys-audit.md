@@ -13,10 +13,10 @@ of them a live user-facing crash.
 
 **Verified:** `ruff check .`, `ruff format --check .`, `ty check src/` (5
 pre-existing warnings in `scene.py`/`cmd_quilt.py`, unchanged), `docker compose
-config`, hadolint, and the test suite — 118 passed, 6 skipped, with the 10
-collection errors from absent optional deps (`click`, `numpy`) unchanged from
-before. `tests/test_chat_worker_ops.py` is new: 16 tests over the op helpers,
-the first coverage `serve/` has had.
+config`, hadolint, `make check-pins`, and the test suite — 134 passed, 6 skipped,
+with the 10 collection errors from absent optional deps (`click`, `numpy`)
+unchanged from before. Two new test modules: `tests/test_chat_worker_ops.py`
+(16, the first coverage `serve/` has had) and `tests/test_check_pins.py` (16).
 
 ---
 
@@ -28,7 +28,7 @@ the first coverage `serve/` has had.
 | 2 | Medium | Dockerfile pinned `kgmodule-utils` below its own declared floor; the pin was silently overridden later in the same build | `docker/Dockerfile` | ✅ fixed |
 | 3 | Low | Cross-pin comment block documented versions three releases stale | `docker/Dockerfile` | ✅ fixed |
 | 4 | Low | `synthesis_error` rendered but never produced | `serve/handler.py` | ✅ fixed |
-| 5 | — | Two things `corpus_pepys` has that this repo may want | — | one adopted |
+| 5 | — | Two things `corpus_pepys` has that this repo may want | `scripts/check_pins.py`, `tests/` | ✅ both adopted |
 
 ---
 
@@ -192,9 +192,9 @@ resulting image is what was already being produced, so this changes no runtime
 behaviour — it makes the recorded pin true, restores the layer cache, and puts
 the four cross-pinned packages back under the `==` guarantee.
 
-**Still open:** this repo has no equivalent of `corpus_pepys`'s
-`scripts/check_pins.py`, which is why the drift went unnoticed in the first
-place. Nothing stops it recurring. See item 5.
+**Now guarded:** `scripts/check_pins.py` was ported in this branch and catches
+exactly this — see item 5. It is a prerequisite of `make build` in both runtime
+branches and runs in CI, so a drifted image cannot be produced.
 
 ---
 
@@ -273,9 +273,35 @@ lock-vs-Dockerfile because that project is `package-mode = false` and has no
 `pip install .` step, which is precisely the mechanism that makes floors matter
 here.
 
-**Not ported in this branch** — it needs that floor check designed, and it is a
-new build-time gate on `make build` rather than a bug fix, so it deserves its own
-change. Until then, nothing prevents item 2 recurring.
+**Ported, with the floor check added.** `scripts/check_pins.py` here compares
+four files rather than two, because this repo names the KG versions in four
+places that drift independently:
+
+| file | form | what it governs |
+|---|---|---|
+| `pyproject.toml` | floors (`>=`) | what the wheel demands |
+| `poetry.lock` | exact | what the local build resolves |
+| `docker/Dockerfile` | exact (`==` via ARG) | what the served image installs |
+| `runpod/requirements.txt` | floors (`>=`) | what the serverless worker installs |
+
+It fails on: an ARG below its pyproject floor (item 2), an ARG disagreeing with
+the lock, a runpod floor below the pyproject floor, a package missing from the
+lock or from the Dockerfile, and a stray `*_VERSION` arg reappearing in compose.
+
+**It immediately found a fifth instance of item 2 that the manual pass had
+missed:** `runpod/requirements.txt` pinned `kgmodule-utils>=0.10.0`, also below
+the `>=0.11.0` floor, so the serverless worker could install a version the
+package rejects. Fixed in the same commit — which is the argument for the script
+better than any description of it.
+
+Stdlib-only (`tomllib` + `re`), including a small `_version_key` rather than
+`packaging.version`, so a build gate never depends on what the install resolved.
+That matters for the ordering it exists to test: `"0.9.0" > "0.11.0"` under a
+string compare, which is the exact drift being checked for.
+
+Wired into `make build` in both runtime branches and into the CI lint job.
+Covered by `tests/test_check_pins.py` (16 tests) — a gate that cannot go red is
+worse than none, so each drift class has a test that asserts exit status 1.
 
 **A testable Streamlit stub — adopted.** `Chat.py` had no test coverage at all,
 largely because importing it requires a real Streamlit and it builds its whole

@@ -113,7 +113,7 @@ endif
 # `gutenkg` on PATH. Override with e.g. `make GUTENKG=gutenkg build-corpus`.
 GUTENKG     ?= poetry run gutenkg
 
-.PHONY: init chunk-diaries build-diaries build-corpus setup build run image-server sdxl-server chat up stop down query logs clean docs
+.PHONY: init chunk-diaries build-diaries build-corpus check-pins setup build run image-server sdxl-server chat up stop down query logs clean docs
 
 init:
 	$(GUTENKG) init
@@ -126,6 +126,15 @@ build-diaries: chunk-diaries
 
 build-corpus: build-diaries
 	$(GUTENKG) build-corpus
+
+# The four KG packages are named in four files that drift independently:
+# pyproject floors, poetry.lock, docker/Dockerfile ARGs, runpod/requirements.txt.
+# A Dockerfile ARG below its pyproject floor is not a build failure — the
+# `pip install .` step just re-resolves past it — so the pin silently stops
+# describing the image. A prerequisite of `build` in both runtime branches so a
+# drifted image cannot be produced in the first place.
+check-pins:
+	@python3 scripts/check_pins.py
 
 ifeq ($(RUNTIME),apple)
 
@@ -176,7 +185,7 @@ setup:
 	@container system start --enable-kernel-install
 	@echo "Apple container runtime ready."
 
-build: setup
+build: check-pins setup
 	container build -f docker/Dockerfile -t $(IMAGE):latest .
 
 # Idempotent like `compose up`: a running worker is left alone (it takes a
@@ -260,7 +269,7 @@ setup:
 	@docker info >/dev/null 2>&1 || { echo "Docker daemon not running — start Docker Desktop, or use RUNTIME=apple."; exit 1; }
 	@echo "Docker runtime ready."
 
-build:
+build: check-pins
 	docker build -f docker/Dockerfile -t $(IMAGE):latest .
 
 run:
