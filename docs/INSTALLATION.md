@@ -119,8 +119,15 @@ make build-corpus      # builds DiaryKG indices, then bundles DocKG + diaries (~
 
 ```bash
 make build             # docker build -f docker/Dockerfile -t corpus-gutenberg:latest .
-make up                # worker (:8000) + chat UI (:8501) + FLUX image server (:8090)
+make up                # worker (:8000) + chat UI (:8501) + an image server
 ```
+
+`make up` picks the image backend that this host can actually run: **FLUX** on
+`:8090` where mflux is supported (Apple Silicon, or a CUDA 13 Linux box), and
+**SDXL-Lightning** on `:8091` everywhere else. Override with
+`make up IMAGE_BACKEND=flux|sdxl`. Image generation is optional either way — if
+the server fails to start, the worker and chat UI stay up and only the chat UI's
+*Render response* button is affected.
 
 `make build` then `make up` is the recommended happy path — it bakes the bundle into the image and brings up the full stack in one command. Fire a one-shot query against the running worker:
 
@@ -147,8 +154,9 @@ make logs        # follow worker logs
 | `make build` | build the Docker image (bakes the bundle in) |
 | `make run` | start the worker on `:8000` |
 | `make chat` | start worker + chat UI on `:8501` |
-| `make image-server` | start the local FLUX image server on `:8090` (isolated `.venv-image`) |
-| `make up` | start everything (worker + chat + image server) |
+| `make image-server` | start the local FLUX image server on `:8090` (isolated `.venv-image`; needs mflux — see below) |
+| `make sdxl-server` | start the local SDXL-Lightning image server on `:8091` (isolated `.venv-sdxl`; runs anywhere) |
+| `make up` | start everything (worker + chat + whichever image server this host supports) |
 | `make query Q="…"` | fire a one-shot query against the running worker |
 | `make logs` | follow worker logs |
 | `make stop` | shut everything down |
@@ -218,11 +226,27 @@ SYNTH_MODEL=gpt-4o            # text model (default gpt-4o-mini)
 IMAGE_MODEL=gpt-image-1       # image model (default gpt-image-1)
 ```
 
-Because OpenAI is a cloud API, this is the **one provider path that works identically on Linux and Windows** — no Apple Silicon, oMLX, or local FLUX server required.
+Because OpenAI is a cloud API, it is the **one path that needs nothing installed locally at all** — no Apple Silicon, no oMLX, no local image server. It is not the only cross-platform option, though: Ollama covers text synthesis on Linux and Windows, and SDXL-Lightning covers images (below).
 
 ### Image generation (local)
 
-`gutenkg imagine` and the chat UI's image feature can instead use a local FLUX image server (`make image-server`, port 8090, Apple Silicon only). Set `GUTENKG_IMAGE_ENDPOINT=http://host.docker.internal:8090` in `docker/.env`, or leave it blank to disable image rendering. See [`CHEATSHEET.md § Corpus-Grounded Image Generation`](CHEATSHEET.md).
+Two local servers, both isolated in their own venv so their dependencies never touch the main Poetry environment:
+
+| Server | Port | Start with | Runs on |
+|---|---|---|---|
+| FLUX.2 (mflux) | `8090` | `make image-server` | Apple Silicon, or Linux with CUDA 13 — mflux needs `mlx`, and there is no Windows wheel |
+| SDXL-Lightning (diffusers) | `8091` | `make sdxl-server` | anywhere — `sdxl_server` resolves `cuda → mps → cpu`, so it works on CPU too, just slowly |
+
+`make up` picks for you: FLUX where mflux is supported, SDXL everywhere else. Force one with `make up IMAGE_BACKEND=flux` or `IMAGE_BACKEND=sdxl`; asking for FLUX on a host that cannot run it now fails with a message naming the requirement instead of a pip resolution error.
+
+Point the worker at whichever is running via `GUTENKG_IMAGE_ENDPOINT` in `docker/.env` (`http://host.docker.internal:8090` for FLUX, `:8091` for SDXL) — `make up` sets this automatically — or leave it blank to disable image rendering. See [`CHEATSHEET.md § Corpus-Grounded Image Generation`](CHEATSHEET.md).
+
+> **Two different `IMAGE_BACKEND`s.** As a *Make* variable
+> (`make up IMAGE_BACKEND=sdxl`) it selects which local image **server** to
+> start — `flux` or `sdxl`. As an *environment* variable in `docker/.env`
+> (`IMAGE_BACKEND=openai`) it tells the **worker** which backend to generate
+> through — `mflux-serve`, `mflux-local`, or `openai`. They are unrelated, and
+> the Make one is not passed into the container.
 
 ---
 

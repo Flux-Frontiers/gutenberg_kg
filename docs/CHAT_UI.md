@@ -131,8 +131,10 @@ The sidebar **🖼️ Image** section acts on the most recent result:
 - **🎨 Render response** — a two-stage pipeline: an LLM rewrites the passage into a
   visual scene description, then an image backend generates the illustration. The
   **Resolution** selector (Preview / Standard / Full) trades quality for speed.
-  Requires a running image server (`make up`, or `make image-server` separately) and,
-  for the rewrite step, a synthesis provider.
+  Requires a running image server (`make up`, or `make image-server` /
+  `make sdxl-server` separately) and, for the rewrite step, a synthesis provider.
+  `make up` starts whichever image server this host supports — FLUX where mflux
+  can run, SDXL-Lightning everywhere else — so this works off Apple Silicon too.
 
 ### Clearing the conversation
 
@@ -171,7 +173,7 @@ the full reference.
 | *"Answer generation failed"* | Synthesis is on but the LLM backend is unreachable. Confirm oMLX/Ollama is running and the worker's `VLLM_ENDPOINT_URL` / `OLLAMA_ENDPOINT` is correct. |
 | *"No models reported"* | The provider returned no model list; the provider default is used. Check the backend is up, then **🔄 Refresh models**. |
 | **🎨 Render response** disabled | Run a query first — it illustrates the *most recent* result. |
-| Image generation fails | The image server isn't running. Start it with `make up` or `make image-server`. |
+| Image generation fails | The image server isn't running. Start it with `make up`, which picks a backend this host supports. On a non-Apple host use `make sdxl-server` (`:8091`) — `make image-server` is FLUX/mflux and needs Apple Silicon or CUDA 13. |
 
 ---
 
