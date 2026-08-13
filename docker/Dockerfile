@@ -120,8 +120,16 @@ RUN pip install --no-cache-dir .
 
 # Pre-download the embedding model during build so the container never reaches
 # HuggingFace at runtime (network may be unavailable or restricted on RunPod).
+# The token arrives as a BuildKit secret (see HF_SECRET in the Makefile), so the
+# Hub request is authenticated — higher rate limits, no "unauthenticated
+# requests" warning — without the token landing in the image or its build
+# history the way a --build-arg would. The secret is optional: with none
+# mounted, the download proceeds anonymously, which still works for this
+# public model.
 ARG EMBED_MODEL=BAAI/bge-small-en-v1.5
-RUN python - <<'EOF'
+RUN --mount=type=secret,id=hf_token \
+    if [ -s /run/secrets/hf_token ]; then export HF_TOKEN="$(cat /run/secrets/hf_token)"; fi; \
+    python - <<'EOF'
 import os
 from sentence_transformers import SentenceTransformer
 model = os.environ.get("EMBED_MODEL", "BAAI/bge-small-en-v1.5")

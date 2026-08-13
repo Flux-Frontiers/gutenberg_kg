@@ -55,6 +55,24 @@ WORKER       = http://localhost:8000
 IMAGE_SERVER = http://localhost:8090
 SDXL_SERVER  = http://localhost:8091
 
+# HuggingFace auth for the image build's embedder pre-download. Anonymous Hub
+# requests are rate-limited and print "You are sending unauthenticated requests
+# to the HF Hub"; passing a token silences it and raises the limits. Sent as a
+# BuildKit secret (both `docker build` and `container build` take --secret), so
+# it is never baked into the image or readable from its history — unlike
+# --build-arg. Source order: $HF_TOKEN from the environment, else the token
+# `hf auth login` cached in ~/.cache/huggingface/token. Neither present is
+# fine — bge-small is public and downloads anonymously.
+COMMA := ,
+HF_TOKEN_FILE ?= $(HOME)/.cache/huggingface/token
+ifneq ($(HF_TOKEN),)
+HF_SECRET := --secret id=hf_token$(COMMA)env=HF_TOKEN
+else ifneq ($(wildcard $(HF_TOKEN_FILE)),)
+HF_SECRET := --secret id=hf_token$(COMMA)src=$(HF_TOKEN_FILE)
+else
+HF_SECRET :=
+endif
+
 # Apple `container` runtime settings (RUNTIME=apple only). Each container is
 # its own VM — memory is an explicit upper bound, not shared with the host
 # like Docker Desktop's single big VM. Right-sized per the corpus_pepys
@@ -225,7 +243,7 @@ setup:
 	@echo "Apple container runtime ready."
 
 build: check-pins setup
-	container build -f docker/Dockerfile -t $(IMAGE):latest .
+	container build $(HF_SECRET) -f docker/Dockerfile -t $(IMAGE):latest .
 
 # Idempotent like `compose up`: a running worker is left alone (it takes a
 # while to load the index), a stopped or stale one is replaced.
@@ -311,7 +329,7 @@ setup:
 	@echo "Docker runtime ready."
 
 build: check-pins
-	docker build -f docker/Dockerfile -t $(IMAGE):latest .
+	docker build $(HF_SECRET) -f docker/Dockerfile -t $(IMAGE):latest .
 
 run:
 	$(COMPOSE) up -d worker

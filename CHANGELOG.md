@@ -30,8 +30,6 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   blocklist fails 7 tests, and dropping the filter line from `_fetch_models`
   fails 3. Suite: 178 → 199.
 
-### Added
-
 - **`make sdxl-fetch`** — pre-downloads the ~7 GB of SDXL weights without
   starting the server, so the first `make up` on a fresh machine is not a silent
   long wait. Once cached, `SDXL_OFFLINE=1` makes the server refuse network access.
@@ -42,7 +40,52 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   the `image` extra alongside `dev` for the fastapi/pydantic the module needs at
   import; torch and diffusers stay out.
 
+- **`gutenkg quilt --topics`** draws topic nodes as their own blue pollen
+  cloud, and **`--leaf-size`** overrides the leaf radius before density
+  scaling. The second exists because leaves shrink by the cube root of chunk
+  count, so Pepys renders its 18,757 chunks at 0.32x and reads sparse even
+  though every chunk has a leaf; `--leaf-size 0.9` thickens that canopy.
+
+- **`scripts/check_pins.py`** — verifies the four cross-pinned KG packages agree
+  across every file that names them: `pyproject.toml` floors, `poetry.lock`,
+  `docker/Dockerfile` ARGs, and `runpod/requirements.txt`. A prerequisite of
+  `make build` in both runtime branches, and a step in the CI lint job.
+
+  The floor comparison is the point. `docker/Dockerfile` pre-installs the pinned
+  stack and then runs `pip install .`, which re-resolves against pyproject — so
+  an ARG below its floor is silently upgraded rather than failing the build. The
+  pin becomes a number no image runs, and nothing anywhere goes red. That is how
+  `KGMODULE_UTILS_VERSION` sat at 0.10.0 against a `>=0.11.0` floor unnoticed.
+
+  On its first run it found a second instance of that same drift, which the
+  manual audit had missed: `runpod/requirements.txt` also floored
+  `kgmodule-utils` at `>=0.10.0`, so the serverless worker could install a
+  version the package itself rejects. Fixed alongside.
+
+  Stdlib-only (`tomllib` + `re`, with a local `_version_key` rather than
+  `packaging.version`) so a build gate never depends on what the install
+  resolved — which also matters for the ordering it tests, since `"0.9.0" >
+  "0.11.0"` under a string compare. `corpus_pepys` carries a sibling that
+  deliberately omits the floor check: that project is `package-mode = false`
+  with no `pip install .` step, so its Dockerfile pins are the last word.
+
 ### Changed
+
+- **`make build` authenticates the embedder download to HuggingFace.** The image
+  pre-downloads `BAAI/bge-small-en-v1.5` at build time so the container never
+  reaches the Hub at runtime, but that download went out anonymously — rate
+  limited, and noisy about it: *"You are sending unauthenticated requests to the
+  HF Hub."* The token now rides in as a BuildKit secret, which both `docker
+  build` and `container build` accept, so it is mounted for exactly one `RUN`
+  and never lands in the image or its history the way `--build-arg` would.
+
+  No configuration needed if you have logged in: the Makefile uses `$HF_TOKEN`
+  when it is set, otherwise the token `hf auth login` cached in
+  `~/.cache/huggingface/token`, otherwise nothing at all — bge-small is public,
+  so an anonymous build still works, it is just rate limited. Verified on the
+  Apple `container` builder in all three states, and the built image confirms
+  the token did not survive: `HF_TOKEN` is unset and `/run/secrets` does not
+  exist, while the model cache is present as it should be.
 
 - **`serve/sdxl_server.py` defers torch and uvicorn.** They were imported at
   module scope, so the module could not be imported outside `.venv-sdxl` — which
@@ -54,35 +97,6 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   `_parse_size` also rejects non-positive dimensions, which the inline version
   accepted.
 - **CUDA memory is released after a render**, matching what MPS already did.
-
-### Fixed
-
-- **SDXL could not run on a machine that had not already cached the weights.**
-  `_load_pipeline` hard-wired `local_files_only=True` for the base pipeline, the
-  fp16-fix VAE and the Lightning UNet, so a fresh clone failed with a cache miss
-  rather than downloading. That became load-bearing when `make up` started
-  defaulting to this backend wherever mflux cannot run: the portable option was
-  the one that did not work out of the box. Weights are now fetched on first run,
-  with `SDXL_OFFLINE=1` restoring the strict behaviour.
-- **A future `poetry lock` would have turned the Type Check job red** on five
-  findings unrelated to whatever triggered it. The `# ty: ignore[...]` comments
-  on pyvista calls in `scene.py` and `cli/cmd_quilt.py` look unused to every CI
-  job, because pyvista is in the `viz3d` extra and all three jobs install only
-  `dev` — without it ty cannot resolve `plotter`, so it never emits the errors
-  those comments suppress. ty 0.0.44 (what the lock pins) reports them as
-  warnings and exits 0; 0.0.70 exits 1 on the same five, and the floor is
-  `ty>=0.0.41` with no ceiling. Deleting the comments to satisfy CI would have
-  broken the check for anyone running `--all-extras`, where pyvista *is* present
-  and the suppressions do work — so the rule is silenced in `[tool.ty.rules]`
-  instead. Verified clean under both ty versions.
-
-- **`gutenkg quilt --topics`** draws topic nodes as their own blue pollen
-  cloud, and **`--leaf-size`** overrides the leaf radius before density
-  scaling. The second exists because leaves shrink by the cube root of chunk
-  count, so Pepys renders its 18,757 chunks at 0.32x and reads sparse even
-  though every chunk has a leaf; `--leaf-size 0.9` thickens that canopy.
-
-### Changed
 
 - **3-D layout primitives now come from `kg_utils.viz3d`, not
   `pycode_kg.layout3d`.** `Layout3D`, `LayoutNode`, `LayoutEdge`,
@@ -165,32 +179,26 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - **`docs/release-notes.md`** — stranded at v1.1.0 (May 2026) and unreferenced.
   The release workflow reads the root `release-notes.md`, which is at v1.14.0.
 
-### Added
-
-- **`scripts/check_pins.py`** — verifies the four cross-pinned KG packages agree
-  across every file that names them: `pyproject.toml` floors, `poetry.lock`,
-  `docker/Dockerfile` ARGs, and `runpod/requirements.txt`. A prerequisite of
-  `make build` in both runtime branches, and a step in the CI lint job.
-
-  The floor comparison is the point. `docker/Dockerfile` pre-installs the pinned
-  stack and then runs `pip install .`, which re-resolves against pyproject — so
-  an ARG below its floor is silently upgraded rather than failing the build. The
-  pin becomes a number no image runs, and nothing anywhere goes red. That is how
-  `KGMODULE_UTILS_VERSION` sat at 0.10.0 against a `>=0.11.0` floor unnoticed.
-
-  On its first run it found a second instance of that same drift, which the
-  manual audit had missed: `runpod/requirements.txt` also floored
-  `kgmodule-utils` at `>=0.10.0`, so the serverless worker could install a
-  version the package itself rejects. Fixed alongside.
-
-  Stdlib-only (`tomllib` + `re`, with a local `_version_key` rather than
-  `packaging.version`) so a build gate never depends on what the install
-  resolved — which also matters for the ordering it tests, since `"0.9.0" >
-  "0.11.0"` under a string compare. `corpus_pepys` carries a sibling that
-  deliberately omits the floor check: that project is `package-mode = false`
-  with no `pip install .` step, so its Dockerfile pins are the last word.
-
 ### Fixed
+
+- **SDXL could not run on a machine that had not already cached the weights.**
+  `_load_pipeline` hard-wired `local_files_only=True` for the base pipeline, the
+  fp16-fix VAE and the Lightning UNet, so a fresh clone failed with a cache miss
+  rather than downloading. That became load-bearing when `make up` started
+  defaulting to this backend wherever mflux cannot run: the portable option was
+  the one that did not work out of the box. Weights are now fetched on first run,
+  with `SDXL_OFFLINE=1` restoring the strict behaviour.
+- **A future `poetry lock` would have turned the Type Check job red** on five
+  findings unrelated to whatever triggered it. The `# ty: ignore[...]` comments
+  on pyvista calls in `scene.py` and `cli/cmd_quilt.py` look unused to every CI
+  job, because pyvista is in the `viz3d` extra and all three jobs install only
+  `dev` — without it ty cannot resolve `plotter`, so it never emits the errors
+  those comments suppress. ty 0.0.44 (what the lock pins) reports them as
+  warnings and exits 0; 0.0.70 exits 1 on the same five, and the floor is
+  `ty>=0.0.41` with no ceiling. Deleting the comments to satisfy CI would have
+  broken the check for anyone running `--all-extras`, where pyvista *is* present
+  and the suppressions do work — so the rule is silenced in `[tool.ty.rules]`
+  instead. Verified clean under both ty versions.
 
 - **`make up` died on any host without Apple Silicon.** `IMAGE_BACKEND` defaulted
   to `flux`, so `up` ran `make image-server` unconditionally — which builds
