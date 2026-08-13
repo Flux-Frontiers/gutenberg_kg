@@ -12,6 +12,7 @@
 #                         Apple Silicon, or Linux + CUDA 13)
 #   make sdxl-server    — start the local SDXL-Lightning image server on :8091
 #                         (diffusers; cuda -> mps -> cpu, so it runs anywhere)
+#   make sdxl-fetch     — pre-download the SDXL weights (~7 GB) before first use
 #   make chat           — start worker + Streamlit chat UI on http://localhost:8501
 #   make up             — start everything: worker + chat UI + an image server.
 #                         Picks FLUX.2 (:8090) where mflux can run, SDXL (:8091)
@@ -151,7 +152,7 @@ endif
 # `gutenkg` on PATH. Override with e.g. `make GUTENKG=gutenkg build-corpus`.
 GUTENKG     ?= poetry run gutenkg
 
-.PHONY: init chunk-diaries build-diaries build-corpus check-pins setup build run image-server sdxl-server chat up stop down query logs clean docs
+.PHONY: init chunk-diaries build-diaries build-corpus check-pins setup build run image-server sdxl-server sdxl-fetch chat up stop down query logs clean docs
 
 init:
 	$(GUTENKG) init
@@ -378,6 +379,21 @@ sdxl-server:
 	@.venv-sdxl/bin/python -m pip install --quiet --no-deps -e .
 	@echo "Starting SDXL-Lightning image server on $(SDXL_SERVER) (background, .venv-sdxl) ..."
 	SDXL_SERVER_HOST=0.0.0.0 .venv-sdxl/bin/gutenkg-sdxl-server &
+
+# Pre-download the SDXL weights without starting the server, so the first
+# `make up` on a fresh machine is not a silent multi-GB wait. Once cached,
+# SDXL_OFFLINE=1 makes the server refuse network access entirely.
+sdxl-fetch:
+	@if [ ! -x .venv-sdxl/bin/python ]; then \
+		echo "Creating .venv-sdxl for isolated SDXL/diffusers dependencies ..."; \
+		python3 -m venv .venv-sdxl; \
+	fi
+	@.venv-sdxl/bin/python -m pip install --quiet --upgrade pip
+	@.venv-sdxl/bin/python -m pip install --quiet -r docker/requirements-sdxl.txt
+	@.venv-sdxl/bin/python -m pip install --quiet --no-deps -e .
+	@echo "Fetching SDXL-Lightning weights (~7 GB, cached under ~/.cache/huggingface) ..."
+	@.venv-sdxl/bin/python -c "from gutenberg_kg.serve.sdxl_server import _load_pipeline; _load_pipeline()"
+	@echo "Done. Weights cached; SDXL_OFFLINE=1 will now work."
 
 query:
 	@curl -s -X POST $(WORKER)/runsync \

@@ -209,6 +209,20 @@ root = ["src"]
 
 [tool.ty.rules]
 unresolved-import = "ignore"
+# The `# ty: ignore[...]` comments on pyvista calls in scene.py and
+# cli/cmd_quilt.py look unused to every CI job, because pyvista lives in the
+# `viz3d` extra and all three jobs install only `dev`. Without it ty cannot
+# resolve `plotter`, so it never emits the `missing-argument` /
+# `invalid-argument-type` those comments suppress — but a developer running
+# `--all-extras` does have pyvista, and there the suppressions do work. Deleting
+# them to satisfy CI would therefore break the check locally.
+#
+# Silencing the rule keeps both happy. It also defuses a version trap: ty 0.0.44
+# (what poetry.lock pins) reports these as warnings and exits 0, while 0.0.70
+# exits 1 on the same five. The floor is `ty>=0.0.41` with no ceiling, so the
+# next relock would have turned CI red on findings unrelated to whatever
+# triggered it.
+unused-ignore-comment = "ignore"
 
 [tool.pytest.ini_options]
 testpaths  = ["tests"]

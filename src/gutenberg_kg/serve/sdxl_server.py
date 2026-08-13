@@ -9,16 +9,16 @@ worker code changes.
 Backed by SDXL base + a ByteDance SDXL-Lightning UNet (2/4/8-step). Much smaller
 inference footprint than FLUX.2 and 2–4 step generation.
 
-Runs from an env with torch + diffusers (NOT the mflux .venv-image). On this
-machine personal_agent's venv already has everything:
+Runs from an env with torch + diffusers (NOT the mflux .venv-image):
 
-    /Users/egs/repos/personal_agent/.venv/bin/python \
-        /Users/egs/repos/gutenberg_kg/src/gutenberg_kg/serve/sdxl_server.py
+    make sdxl-server        # builds .venv-sdxl and serves :8091
+    make up IMAGE_BACKEND=sdxl
 
 Environment variables
 ---------------------
 SDXL_MODEL        Lightning variant: sdxl_lightning_2 | _4 (default) | _8
 SDXL_BASE         SDXL base repo (default: stabilityai/stable-diffusion-xl-base-1.0)
+SDXL_OFFLINE      1 = never reach HuggingFace; fail if weights are not cached
 MPS_DTYPE         float16 (default; uses fp16-fix VAE) | float32 (heavier fallback)
 IMAGE_OUTPUT_DIR  Dir for response_format=filepath (default: /tmp/gutenberg_images)
 SDXL_SERVER_HOST  Bind host (default: 0.0.0.0)
@@ -34,14 +34,14 @@ import time
 import uuid
 from io import BytesIO
 from pathlib import Path
+from typing import TYPE_CHECKING, Any
 
-import torch
-import uvicorn
 from fastapi import FastAPI
 from fastapi.responses import JSONResponse
-from huggingface_hub import hf_hub_download
 from pydantic import BaseModel
-from safetensors.torch import load_file
+
+if TYPE_CHECKING:  # torch lives only in .venv-sdxl; see _torch() below
+    import torch
 
 app = FastAPI(title="GutenbergKG SDXL-Lightning image server")
 
@@ -56,12 +56,81 @@ _VAE_FP16_FIX = "madebyollin/sdxl-vae-fp16-fix"
 # SDXL-Lightning enforces its trained step count; guidance is ~1.0 (no CFG).
 _STEPS = {"sdxl_lightning_2": 2, "sdxl_lightning_4": 4, "sdxl_lightning_8": 8}
 
-_pipe = None  # module-level pipeline cache
+_DEFAULT_DIMS: tuple[int, int] = (1024, 1024)
+
+_pipe: Any = None  # module-level pipeline cache
+
+
+def _offline() -> bool:
+    """Whether to refuse network access when resolving weights.
+
+    :returns: True when ``SDXL_OFFLINE`` is set to a truthy value.
+    """
+    return os.environ.get("SDXL_OFFLINE", "").strip().lower() in {"1", "true", "yes"}
+
+
+def _torch():
+    """Import torch on demand.
+
+    Deferred so this module can be imported — for tests, docs, or the CLI
+    entry-point check — from an environment without the diffusers stack. Only
+    actually rendering needs it. :mod:`gutenberg_kg.image_gen` defers its mflux
+    import for the same reason.
+
+    :returns: The imported :mod:`torch` module.
+    :raises RuntimeError: When the isolated environment has not been built.
+    """
+    try:
+        import torch as _t
+    except ModuleNotFoundError as exc:
+        raise RuntimeError(
+            "The SDXL backend requires the isolated diffusers environment. "
+            "Run `make sdxl-server` (creates .venv-sdxl from "
+            "docker/requirements-sdxl.txt) instead of launching this module from "
+            "the main env."
+        ) from exc
+    return _t
+
+
+def _parse_size(size: str | None) -> tuple[int, int]:
+    """Parse ``"WIDTHxHEIGHT"`` into a ``(width, height)`` pair.
+
+    :param size: Size string such as ``"1024x1024"`` (case-insensitive ``x``).
+    :returns: The parsed pair, or ``_DEFAULT_DIMS`` when it does not parse to
+              two positive ints.
+    """
+    if not size:
+        return _DEFAULT_DIMS
+    try:
+        w_str, h_str = size.lower().split("x", 1)
+        width, height = int(w_str), int(h_str)
+    except (ValueError, AttributeError):
+        return _DEFAULT_DIMS
+    if width <= 0 or height <= 0:
+        return _DEFAULT_DIMS
+    return width, height
+
+
+def _steps_for(model: str, requested: int | None = None) -> int:
+    """Resolve the inference step count.
+
+    SDXL-Lightning UNets are distilled for a fixed step count, so the model name
+    wins over any per-request override — asking a 4-step UNet for 30 steps
+    degrades the image rather than improving it.
+
+    :param model: Lightning variant name.
+    :param requested: Per-request override, used only for an unknown variant.
+    :returns: Step count to run.
+    """
+    if model in _STEPS:
+        return _STEPS[model]
+    return requested if requested and requested > 0 else 4
 
 
 def _device_dtype() -> tuple[str, torch.dtype]:
     """Resolve (device, dtype). MPS defaults to float16 — safe because we swap in
     the fp16-fix VAE; set MPS_DTYPE=float32 to force the heavier full-precision path."""
+    torch = _torch()
     if torch.cuda.is_available():
         return "cuda", torch.float16
     if getattr(torch.backends, "mps", None) and torch.backends.mps.is_available():
@@ -76,6 +145,7 @@ def _load_pipeline():
     if _pipe is not None:
         return _pipe
 
+    torch = _torch()
     # diffusers is deferred: it lives only in the isolated .venv-sdxl
     # (docker/requirements-sdxl.txt), NOT the main Poetry env, so importing this
     # module for docs/tests/CLI never requires it. Only actually loading the
@@ -86,6 +156,8 @@ def _load_pipeline():
             StableDiffusionXLPipeline,
         )
         from diffusers.schedulers.scheduling_euler_discrete import EulerDiscreteScheduler
+        from huggingface_hub import hf_hub_download
+        from safetensors.torch import load_file
     except ModuleNotFoundError as exc:
         raise RuntimeError(
             "The SDXL backend requires the isolated diffusers environment. "
@@ -95,20 +167,32 @@ def _load_pipeline():
         ) from exc
 
     device, dtype = _device_dtype()
-    steps = _STEPS.get(_MODEL, 4)
+    steps = _steps_for(_MODEL)
+    # Weights are fetched on first run and cached under ~/.cache/huggingface.
+    # This used to be hard-wired local-files-only, which meant a fresh machine
+    # failed with a cache miss instead of downloading — and since `make up` now
+    # defaults to this backend wherever mflux cannot run, that turned the
+    # portable option into one that did not work out of the box. `make
+    # sdxl-fetch` does the download up front; SDXL_OFFLINE=1 restores the strict
+    # behaviour once the cache is warm.
+    local_only = _offline()
+    if not local_only:
+        print("[startup] weights are fetched on first run and cached (~7 GB).", flush=True)
     print(f"[startup] loading {_BASE} + {_MODEL} on {device}/{dtype} …", flush=True)
 
     pipe = StableDiffusionXLPipeline.from_pretrained(
-        _BASE, torch_dtype=dtype, local_files_only=True
+        _BASE, torch_dtype=dtype, local_files_only=local_only
     ).to(device)
 
     # In float16 the stock SDXL VAE overflows to black images; swap in the fp16-fix VAE.
     if dtype == torch.float16:
         print(f"[startup] loading fp16-fix VAE {_VAE_FP16_FIX} …", flush=True)
-        pipe.vae = AutoencoderKL.from_pretrained(_VAE_FP16_FIX, torch_dtype=dtype).to(device)
+        pipe.vae = AutoencoderKL.from_pretrained(
+            _VAE_FP16_FIX, torch_dtype=dtype, local_files_only=local_only
+        ).to(device)
 
     filename = f"sdxl_lightning_{steps}step_unet.safetensors"
-    unet_path = hf_hub_download(_LIGHTNING_REPO, filename, local_files_only=True)
+    unet_path = hf_hub_download(_LIGHTNING_REPO, filename, local_files_only=local_only)
     state = load_file(unet_path, device=device)
     missing, unexpected = pipe.unet.load_state_dict(state, strict=False)
     if missing or unexpected:
@@ -154,13 +238,10 @@ def list_models():
 
 def _render(req: ImageGenRequest):
     """Blocking SDXL-Lightning render. Returns a PIL image."""
-    try:
-        width, height = (int(v) for v in req.size.lower().split("x", 1))
-    except (ValueError, AttributeError):
-        width, height = 1024, 1024
-
+    torch = _torch()
+    width, height = _parse_size(req.size)
     pipe = _load_pipeline()
-    steps = _STEPS.get(_MODEL, req.num_inference_steps or 4)
+    steps = _steps_for(_MODEL, req.num_inference_steps)
     device, _ = _device_dtype()
 
     generator = None
@@ -185,6 +266,8 @@ def _render(req: ImageGenRequest):
     # returns to baseline between renders (analogous to CUDA's empty_cache).
     if device == "mps":
         torch.mps.empty_cache()
+    elif device == "cuda":
+        torch.cuda.empty_cache()
     return image
 
 
@@ -208,6 +291,11 @@ async def generate_image(req: ImageGenRequest):
 
 def main() -> None:
     """Run the SDXL-Lightning server (preloads the pipeline at startup)."""
+    # Imported here, not at module scope: only actually serving needs uvicorn,
+    # so importing this module for tests or the wheel's entry-point check does
+    # not require it.
+    import uvicorn
+
     _load_pipeline()
     host = os.environ.get("SDXL_SERVER_HOST", "0.0.0.0")
     port = int(os.environ.get("SDXL_SERVER_PORT", "8091"))
