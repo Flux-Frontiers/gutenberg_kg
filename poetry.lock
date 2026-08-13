@@ -2543,29 +2543,29 @@ viz3d = ["PyQt5 (>=5.15.0)", "markdown (>=3.6)", "param (>=2.0.0)", "pyvista[jup
 
 [[package]]
 name = "kgmodule-utils"
-version = "0.11.0"
+version = "0.12.0"
 description = "Shared types, graph store, semantic index, and pipeline base for the KGModule SDK"
 optional = false
 python-versions = "<3.14,>=3.12"
 groups = ["main"]
 files = [
-    {file = "kgmodule_utils-0.11.0-py3-none-any.whl", hash = "sha256:a3ccef8d29667591e64f8593cfc60d0c187c65de6bfd5dca02526b82459de3b6"},
-    {file = "kgmodule_utils-0.11.0.tar.gz", hash = "sha256:a0de0555fcdadfe6b9fa51ad535832f68c607bc147549155748fb515433c1c7e"},
+    {file = "kgmodule_utils-0.12.0-py3-none-any.whl", hash = "sha256:87cc05115de8b41469c0c05b09f2a07667f10cb332e6f35548c15076d1cd771d"},
+    {file = "kgmodule_utils-0.12.0.tar.gz", hash = "sha256:c366e725f4c49f5640433379f1f314a9c093c59a02e2a8e105cd1c640347556f"},
 ]
 
 [package.dependencies]
 httpx = {version = ">=0.27.0", optional = true, markers = "extra == \"synthesis\""}
 numpy = [
-    {version = ">=1.24.0", optional = true, markers = "extra == \"semantic\""},
     {version = ">=1.24.0", optional = true, markers = "extra == \"viz3d\""},
+    {version = ">=1.24.0", optional = true, markers = "extra == \"semantic\""},
 ]
 openai = {version = ">=1.30.0", optional = true, markers = "extra == \"synthesis\""}
 pillow = {version = ">=10.0.0", optional = true, markers = "extra == \"synthesis\""}
 rich = {version = ">=13.0.0,<15.0.0", optional = true, markers = "extra == \"semantic\""}
 sentence-transformers = {version = ">=5.4.1", optional = true, markers = "extra == \"semantic\""}
 sqlite-vec = [
-    {version = "0.1.9", optional = true, markers = "extra == \"semantic\""},
     {version = "0.1.9", optional = true, markers = "extra == \"sqlite-vec\""},
+    {version = "0.1.9", optional = true, markers = "extra == \"semantic\""},
 ]
 torch = {version = ">=2.5.1", optional = true, markers = "extra == \"semantic\""}
 transformers = {version = ">=5.5.0,<6", optional = true, markers = "extra == \"semantic\""}
@@ -7565,4 +7565,4 @@ viz3d = ["PyQt5", "kgmodule-utils", "markdown", "param", "pyvista", "pyvistaqt",
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.12,<3.14"
-content-hash = "17fc6a323a6b23d21861c987ea602df467d94b1c80e1c256db640645277586fd"
+content-hash = "cfeb776dc166a24e17f359862262a1c737c2b59afedcd8d844ace7d6d551d693"
