@@ -48,7 +48,7 @@ jobs:
       # pip, same rationale as runpod/requirements.txt.
       - name: Install dependencies
         run: |
-          poetry install --no-interaction --extras "dev chat image mcp viz viz3d kgdeps"
+          poetry install --no-interaction --with dev --extras "chat image mcp viz viz3d kgdeps"
           poetry run pip install --quiet runpod
 
       # PDOC_ALLOW_EXEC: pdoc sandboxes subprocesses during import;
