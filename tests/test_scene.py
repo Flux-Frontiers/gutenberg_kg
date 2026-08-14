@@ -22,6 +22,17 @@ from gutenberg_kg.scene import (  # noqa: E402
 
 pv = pytest.importorskip("pyvista")
 
+from _render import can_render  # noqa: E402
+
+# An importable pyvista is not the same as a usable one. Without a working GL
+# context a Plotter aborts the interpreter rather than raising, so the tests
+# below that actually render are gated on a subprocess probe. The gate is per
+# test rather than per module: most of this file is layout and metadata, and
+# that half stays useful on a machine that cannot render.
+requires_render = pytest.mark.skipif(
+    not can_render(), reason="pyvista off-screen rendering unavailable"
+)
+
 
 # ---------------------------------------------------------------------------
 # Fixtures — synthetic book graphs in the two schemas the corpus actually holds
@@ -269,6 +280,7 @@ class TestSceneFilters:
         }
 
 
+@requires_render
 class TestBuildForestScene:
     def test_builds_without_qt(self, corpus):
         from gutenberg_kg.scene import build_forest_scene
@@ -322,14 +334,17 @@ class TestSporeClouds:
         plotter.close()
         return names
 
+    @requires_render
     def test_neither_cloud_by_default(self, tmp_path):
         assert not {"entity-spores", "topic-spores"} & self._actors(tmp_path)
 
+    @requires_render
     def test_entities_alone_draw_no_topic_cloud(self, tmp_path):
         names = self._actors(tmp_path, show_entities=True)
         assert "entity-spores" in names
         assert "topic-spores" not in names
 
+    @requires_render
     def test_topics_alone_draw_no_entity_cloud(self, tmp_path):
         names = self._actors(tmp_path, show_topics=True)
         assert "topic-spores" in names
@@ -343,6 +358,7 @@ class TestSporeClouds:
         assert KIND_COLOR["entity"] != KIND_COLOR["topic"]
 
 
+@requires_render
 class TestLeafSize:
     def test_leaf_size_scales_the_canopy(self, corpus):
         from gutenberg_kg.scene import build_tree_scene
@@ -359,6 +375,7 @@ class TestLeafSize:
         assert extents[0.8] > extents[0.2]
 
 
+@requires_render
 class TestBuildTreeScene:
     def test_grows_a_branching_tree(self, corpus):
         from gutenberg_kg.scene import build_tree_scene

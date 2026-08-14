@@ -8,6 +8,8 @@ import pytest
 # letting the import blow up the whole run.
 pytest.importorskip("pyvista")
 
+from _render import can_render  # noqa: E402
+
 from gutenberg_kg.scene import (  # noqa: E402
     DEFAULT_SEASON,
     SEASONS,
@@ -15,6 +17,14 @@ from gutenberg_kg.scene import (  # noqa: E402
     _leaf_facing,
     _nearest_neighbour_gap,
     _oriented_cluster,
+)
+
+# An importable pyvista is not the same as a usable one: without a working GL
+# context a Plotter aborts the interpreter rather than raising. Only
+# TestSeasonalScene renders; the rest of this file is foliage maths and stays
+# useful on a machine that cannot render.
+requires_render = pytest.mark.skipif(
+    not can_render(), reason="pyvista off-screen rendering unavailable"
 )
 
 
@@ -172,6 +182,7 @@ class TestLeafCling:
         assert (dist[np.arange(len(pts)), nearest] >= sk.radii[nearest] * 0.5).all()
 
 
+@requires_render
 class TestSeasonalScene:
     def test_unknown_season_is_refused_clearly(self, tmp_path):
         pv = pytest.importorskip("pyvista")
