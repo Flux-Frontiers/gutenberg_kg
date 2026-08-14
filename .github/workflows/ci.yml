@@ -32,7 +32,7 @@ jobs:
           key: lint-${{ runner.os }}-${{ hashFiles('poetry.lock') }}
 
       - name: Install dev dependencies
-        run: poetry install --no-interaction --extras dev
+        run: poetry install --no-interaction --with dev
 
       - name: Check formatting
         run: poetry run ruff format --check .
@@ -71,7 +71,7 @@ jobs:
           key: typecheck-${{ runner.os }}-${{ hashFiles('poetry.lock') }}
 
       - name: Install dependencies
-        run: poetry install --no-interaction --extras dev
+        run: poetry install --no-interaction --with dev
 
       - name: Run ty
         run: poetry run ty check src/
@@ -105,7 +105,7 @@ jobs:
       # request-model defaults. torch and diffusers stay out — sdxl_server
       # defers them until an actual render.
       - name: Install dependencies
-        run: poetry install --no-interaction --extras "dev image"
+        run: poetry install --no-interaction --with dev --extras image
 
       - name: Run tests
         run: poetry run pytest

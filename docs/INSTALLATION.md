@@ -53,11 +53,14 @@ That set is the **recommended default** — everything except dev tooling (KG in
 | `mcp` | fastmcp, structlog (MCP server) | `poetry install --extras mcp` |
 | `chat` | streamlit, httpx, watchdog (reading-room UI) | `poetry install --extras chat` |
 | `image` | fastapi, uvicorn, pydantic (image service) | `poetry install --extras image` |
-| `dev` | pytest, ruff, ty, pdoc, pre-commit | `poetry install --extras dev` |
 | *(none)* | core runtime only | `poetry install` |
 | *(everything)* | every extra above | `poetry install --all-extras` |
 
-Contributors who need the test/lint toolchain should use `--all-extras`.
+Dev tooling (pytest, ruff, ty, pdoc, pre-commit) is not an extra — it lives in the Poetry `dev` group so it stays out of the published wheel metadata. Contributors who need the test/lint toolchain:
+
+```bash
+poetry install --with dev              # or add --all-extras for everything
+```
 
 > **Note** — `gutenkg quilt` (light-field output) additionally needs
 > **Python < 3.13**: quiltwright is marker-gated in `viz3d` because it pins
@@ -72,7 +75,7 @@ Prefer a plain venv + pip? The same extras work with pip:
 ```bash
 python -m venv .venv
 source .venv/bin/activate          # Windows: .venv\Scripts\activate
-pip install -e ".[kgdeps,viz,viz3d,mcp]"      # add ",dev" for the test/lint toolchain
+pip install -e ".[kgdeps,viz,viz3d,mcp]"      # dev tooling is poetry-only: poetry install --with dev
 ```
 
 ### 2. Build the knowledge graph

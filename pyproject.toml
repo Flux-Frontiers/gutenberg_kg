@@ -8,7 +8,6 @@
 #
 # Quick install (pip)
 # -------------------
-#   pip install -e ".[dev]"             core + dev tools (pytest, ruff, ty, etc.)
 #   pip install -e ".[kgdeps]"          core + KG integrations (doc-kg, kg-rag)
 #   pip install -e ".[viz]"             core + 2-D timeline visualisation (plotly)
 #   pip install -e ".[viz3d]"           core + 3-D visualisation + quilts (pyvista, PyQt5, quiltwright)
@@ -18,8 +17,8 @@
 #
 # Quick install (poetry)
 # ----------------------
-#   poetry install --all-extras         all optional dependency groups
-#   poetry install --extras "dev"       core + dev tools only
+#   poetry install --all-extras         all optional extras (not dev tooling)
+#   poetry install --with dev           core + dev tools (pytest, ruff, ty, etc.)
 #   poetry install --extras "kgdeps"    core + KG integrations only
 #   poetry install --extras "viz"       core + 2-D timeline visualisation only
 #   poetry install --extras "viz3d"     core + 3-D visualisation only
@@ -27,11 +26,14 @@
 #   poetry install --extras "kgdeps viz viz3d mcp"   everything but dev (RECOMMENDED)
 #   poetry install                      core runtime only
 #
+# Dev tooling lives in the Poetry `dev` group, not an extra, so it stays out
+# of published wheel metadata. pip-only setups can't install it — use poetry
+# for development. (Fleet convention: extras are user-facing features, groups
+# are repo tooling. See kgrag_priv/docs/FLEET_STANDARDS.md.)
+#
 # First-time setup
 # ----------------
-#   python -m venv .venv
-#   source .venv/bin/activate       # Windows: .venv\Scripts\activate
-#   pip install -e ".[dev]"
+#   poetry install --with dev
 #
 # Run tests
 # ---------
@@ -87,18 +89,6 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-dev = [
-    "detect-secrets>=1.5.0",
-    "ty>=0.0.41",
-    "pdoc>=14.0.0",
-    "pillow>=10.4.0",
-    "pre-commit>=4.5.1",
-    "pytest>=9.0.3",
-    "pytest-cov>=5.0.0",
-    "ruff>=0.4.0,<0.16",
-    "scipy>=1.13.0",
-    "vtracer>=0.6.0",
-]
 kgdeps = [
     # Floors track the current releases — kg-rag 0.11.0 needs transformers>=5.5.0,
     # which older doc-kg/pycode-kg pins (transformers<4.57) contradict.
@@ -175,6 +165,28 @@ image = [
 # The obvious alternative — `full = ["gutenberg-kg[kgdeps,viz,viz3d,mcp]"]` —
 # poetry rejects outright ("Package ... is listed as a dependency of itself").
 # Use `--all-extras`, or name the extras you want.
+
+# Dev tooling. A group rather than an extra so pytest/ruff/ty/pre-commit stay
+# out of the published wheel metadata — `pip install gutenberg-kg[dev]` was
+# never meant to be a thing consumers do. Optional to preserve the contract
+# that a bare `poetry install` is core runtime only. Same shape as pycode_kg;
+# fleet convention is recorded in kgrag_priv/docs/FLEET_STANDARDS.md.
+#
+#   poetry install --with dev
+[tool.poetry.group.dev]
+optional = true
+
+[tool.poetry.group.dev.dependencies]
+detect-secrets = ">=1.5.0"
+pdoc = ">=14.0.0"
+pillow = ">=10.4.0"
+pre-commit = ">=4.5.1"
+pytest = ">=9.0.3"
+pytest-cov = ">=5.0.0"
+ruff = ">=0.4.0,<0.16"
+scipy = ">=1.13.0"
+ty = ">=0.0.41"
+vtracer = ">=0.6.0"
 
 [project.urls]
 Homepage   = "https://github.com/Flux-Frontiers/gutenberg_kg"
