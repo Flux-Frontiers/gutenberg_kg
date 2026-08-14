@@ -8,6 +8,8 @@ import pytest
 # letting the import blow up the whole run.
 pytest.importorskip("pyvista")
 
+from _render import can_render  # noqa: E402
+
 from gutenberg_kg.scene import (  # noqa: E402
     DEFAULT_SEASON,
     SEASONS,
@@ -16,8 +18,6 @@ from gutenberg_kg.scene import (  # noqa: E402
     _nearest_neighbour_gap,
     _oriented_cluster,
 )
-
-from _render import can_render  # noqa: E402
 
 # An importable pyvista is not the same as a usable one: without a working GL
 # context a Plotter aborts the interpreter rather than raising. Only
