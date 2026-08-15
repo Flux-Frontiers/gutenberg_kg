@@ -40,7 +40,6 @@ Output layout::
 consolidated index is never re-ingested by a stray repo-root ``dockg build``.
 
 Author: Eric G. Suchanek, PhD
-Last Revision: 2026-07-31 17:02:09
 License: Elastic 2.0
 """
 

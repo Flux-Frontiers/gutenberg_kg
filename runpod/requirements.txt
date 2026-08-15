@@ -4,10 +4,10 @@
 
 runpod>=1.7.0
 # kg-rag/doc-kg floors mirror pyproject's kgdeps extra: handler.py passes
-# KGEntry(vectors_path=...), which needs kg-rag>=0.11.0, and that release's
-# transformers>=5.5.0 needs doc-kg>=0.21.1. Older pairs fail at worker startup.
-kg-rag>=0.11.0
-doc-kg>=0.21.1
+# KGEntry(vectors_path=...), which needs kg-rag>=0.12.0, and that release's
+# transformers>=5.5.0 needs doc-kg>=0.21.2. Older pairs fail at worker startup.
+kg-rag>=0.12.0
+doc-kg>=0.21.2
 diary-kg>=0.96.0
 # [sqlite-vec] mirrors pyproject and docker/Dockerfile. Strictly redundant —
 # doc-kg requires sqlite-vec==0.1.9 as a core dep (since 0.20.0) — but the worker reads
@@ -16,7 +16,7 @@ diary-kg>=0.96.0
 # Floor tracks pyproject's, which moved to >=0.11.0 when the 3-D layout
 # primitives landed there; this file was left at >=0.10.0 and so could install a
 # version the package itself rejects. scripts/check_pins.py now compares the two.
-kgmodule-utils[synthesis,sqlite-vec]>=0.12.1
+kgmodule-utils[synthesis,sqlite-vec]>=0.13.2
 # >=5.4.1,<6 is what the set already forces: doc-kg needs >=5.4.1 and
 # kg-rag 0.11.0 needs >=5.2.0,<6. The old >=3.0.0 floor was three majors stale.
 sentence-transformers>=5.4.1,<6

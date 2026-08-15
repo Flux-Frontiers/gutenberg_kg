@@ -99,9 +99,9 @@ RUN pip install --no-cache-dir --index-url https://download.pytorch.org/whl/cpu 
 # release that actually carries the organic tree engine scene.py imports: 0.12.0
 # was published without it, from a tree the v0.12.0 tag did not contain, and
 # cannot be corrected in place because PyPI reserves an uploaded filename.
-ARG KG_RAG_VERSION=0.11.0
-ARG KGMODULE_UTILS_VERSION=0.12.1
-ARG DOC_KG_VERSION=0.21.1
+ARG KG_RAG_VERSION=0.12.0
+ARG KGMODULE_UTILS_VERSION=0.13.2
+ARG DOC_KG_VERSION=0.21.2
 ARG DIARY_KG_VERSION=0.96.0
 RUN pip install --no-cache-dir \
     "runpod>=1.7.0" \
