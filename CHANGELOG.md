@@ -10,6 +10,15 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Changed
 
+- **`diary-kg>=0.97.0`.** Moved as a set across all four pin sites — pyproject
+  floor, `poetry.lock`, `docker/Dockerfile`'s `DIARY_KG_VERSION` ARG, and
+  `runpod/requirements.txt` — so `scripts/check_pins.py` stays green and the
+  Dockerfile's pinned layer keeps matching what `pip install .` re-resolves to.
+  0.97.0 needs `doc-kg>=0.21.2` and `kgmodule-utils>=0.13.2`, both already our
+  floors, so nothing else in the resolution moved. It also drops its own `all`
+  and `dev` extras in favour of a Poetry group, the same migration this repo
+  made — one fewer package advertising a `[dev]` that consumers were never
+  meant to install.
 - **The depth budget comes from `quiltwright.depth_report` instead of a local
   copy.** `render_quilt` narrows the FOV and dollies back before it sweeps, so
   the ~40-line helper here measured the camera as *framed* rather than as

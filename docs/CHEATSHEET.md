@@ -13,9 +13,13 @@ Use the `gutenkg` CLI (after `poetry install`).
 ```bash
 deactivate          # make sure no other venv is active
 poetry env use python3.12
-poetry install
+poetry install --extras "kgdeps viz viz3d mcp"
 gutenkg --help
 ```
+
+Dev tooling (pytest, ruff, ty, pdoc, pre-commit) is a Poetry group rather than
+an extra, so add `--with dev` if you're working on the repo itself. Full
+options: [`INSTALLATION.md`](INSTALLATION.md).
 
 ---
 
@@ -296,8 +300,9 @@ they are regenerable from the source text via `gutenkg ingest --force-build`.
 ## Corpus-Grounded Image Generation
 
 `gutenkg imagine` generates illustrations grounded in the corpus — no cloud
-API, no separate image server. It runs a three-stage local pipeline entirely on
-Apple Silicon:
+API. It runs a three-stage local pipeline, with the last stage served by a
+local image server (`make image-server` on Apple Silicon, `make sdxl-server`
+elsewhere):
 
 1. **DiaryKG / DocKG retrieval** — the most relevant passages are pulled from
    the knowledge graph for your query.
@@ -311,18 +316,19 @@ Apple Silicon:
 #### 1. Python install
 
 ```bash
-# pip
-pip install -e ".[imagine]"
-
-# Poetry
-poetry install --extras imagine
+# The image service (fastapi/uvicorn) — Poetry or pip
+poetry install --extras image
+pip install -e ".[image]"
 
 # Optional: MCP server support (Claude Code / Cursor)
-pip install -e ".[mcp]"
+poetry install --extras mcp
 ```
 
-This installs the CLI image workflow dependencies. MCP server dependencies are
-optional and installed via `.[mcp]`.
+There is no `imagine` extra. The generation backend itself is **not** a
+dependency of this package: mflux pins a `transformers` version that conflicts
+with pycode-kg, so `make image-server` builds an isolated `.venv-image` from
+`docker/requirements-image.txt` instead. Run that once, then use `gutenkg
+imagine` normally.
 
 #### 2. oMLX — local VLM server
 

@@ -47,7 +47,7 @@ That set is the **recommended default** — everything except dev tooling (KG in
 
 | Extra | Installs | Install with |
 |---|---|---|
-| `kgdeps` | doc-kg, diary-kg, kg-rag | `poetry install --extras kgdeps` |
+| `kgdeps` | kg-rag, pycode-kg (doc-kg and diary-kg are core dependencies, always installed) | `poetry install --extras kgdeps` |
 | `viz` | plotly (2-D growth timeline) | `poetry install --extras viz` |
 | `viz3d` | pyvista, PyQt5, kgmodule-utils, quiltwright (3-D visualiser + light-field quilts) | `poetry install --extras viz3d` |
 | `mcp` | fastmcp, structlog (MCP server) | `poetry install --extras mcp` |
@@ -56,17 +56,16 @@ That set is the **recommended default** — everything except dev tooling (KG in
 | *(none)* | core runtime only | `poetry install` |
 | *(everything)* | every extra above | `poetry install --all-extras` |
 
-Dev tooling (pytest, ruff, ty, pdoc, pre-commit) is not an extra — it lives in the Poetry `dev` group so it stays out of the published wheel metadata. Contributors who need the test/lint toolchain:
+Dev tooling (pytest, ruff, ty, pdoc, pre-commit) is **not an extra** — it lives in the *optional* Poetry `dev` group, so it stays out of the published wheel metadata and a bare `poetry install` stays core-runtime-only. There is no `.[dev]` to pip-install; development needs Poetry. Contributors who want the test/lint toolchain:
 
 ```bash
-poetry install --with dev              # or add --all-extras for everything
+poetry install --with dev --extras "kgdeps viz viz3d mcp image"   # or --with dev --all-extras
+pre-commit install
 ```
 
-> **Note** — `gutenkg quilt` (light-field output) additionally needs
-> **Python < 3.13**: quiltwright is marker-gated in `viz3d` because it pins
-> `requires-python <3.13`. On 3.13 the rest of `viz3d` installs and
-> `gutenkg viz3d` works; only the quilt path and the viewer's **Cast to LG**
-> button are unavailable.
+`--with dev` alone covers `ruff` and `ty`, but the test suite additionally needs the `image` extra: `tests/test_sdxl_server.py` imports fastapi/pydantic at module level, so without it `pytest` aborts during *collection* rather than skipping. That is why CI's test job runs `poetry install --with dev --extras image`. The other extras only turn optional-feature tests from skipped into run.
+
+> **Watch for a stale venv.** Because the `dev` group is *optional*, a plain `poetry install` in an existing checkout leaves `.venv` without pytest/ruff/ty — and `poetry run pytest` then silently falls through to whatever `pytest` is on your `PATH`, which fails with confusing `ModuleNotFoundError`s. `ls .venv/bin/pytest` to check; re-run the command above to fix.
 
 > **Note** — there are no `full` / `all` aggregate extras. They existed until they were found to be the reason `poetry lock` took over eight minutes: re-listing a package inside an aggregate makes it a second declaration under different markers, and poetry resolves that by throwing away the whole resolution and restarting. Dropping them took a lock from 503s to 11s. Name the extras you want, or use `--all-extras`.
 

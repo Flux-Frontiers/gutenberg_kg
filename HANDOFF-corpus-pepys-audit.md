@@ -324,7 +324,7 @@ is no cache bleed between tests.
 test module rather than a `tests/conftest.py` (this repo has none) and stubs only
 `streamlit`; `kg_utils.worker` stays real, since CI installs it and nothing in
 these tests needs it mocked. The stub is applied unconditionally rather than via
-`setdefault`: CI runs `--extras dev`, so streamlit is absent there and the stub is
+`setdefault`: CI runs `--with dev`, so streamlit is absent there and the stub is
 what makes the module importable at all — but under `--all-extras` the real
 `st.cache_data` would memoise across tests and make results order-dependent.
 
