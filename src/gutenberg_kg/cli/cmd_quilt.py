@@ -37,49 +37,6 @@ def _resolve_book(catalogue: dict, book: str, genre: str | None):
     return exact[0] if exact else hits[0]
 
 
-def _depth_report(plotter, spec) -> str:
-    """Disparity report for the framed subject, printed before every render.
-
-    Projects the scene's bounding box onto the view axis to get the near and
-    far depths, then hands them to quiltwright's budget formatter.  Numbers
-    above roughly 5 px read soft; past ~8 px expect visible ghosting.
-
-    :param plotter: The framed plotter.
-    :param spec: Quilt specification.
-    :return: Multi-line report.
-    """
-    import numpy as np
-    from quiltwright.povray import PovCamera, format_depth_budget
-
-    camera = plotter.camera
-    pos = np.asarray(camera.position, dtype=float)
-    focal = np.asarray(camera.focal_point, dtype=float)
-    forward = focal - pos
-    distance = float(np.linalg.norm(forward))
-    forward = forward / max(distance, 1e-9)
-
-    xmin, xmax, ymin, ymax, zmin, zmax = plotter.bounds
-    corners = np.array(
-        [[x, y, z] for x in (xmin, xmax) for y in (ymin, ymax) for z in (zmin, zmax)],
-        dtype=float,
-    )
-    along = (corners - pos) @ forward
-
-    pov_cam = PovCamera(
-        location=tuple(pos), look_at=tuple(focal), sky=(0.0, 0.0, 1.0), fov=camera.view_angle
-    )
-    return format_depth_budget(
-        spec,
-        pov_cam,
-        {
-            "nearest foliage": float(along.min()),
-            "focal plane (display surface)": distance,
-            "farthest foliage": float(along.max()),
-            "sky": math.inf,
-        },
-    )
-
-
 @cli.command("quilt")
 @click.option(
     "--corpus",
@@ -182,7 +139,13 @@ def cmd_quilt(
     """
     try:
         import pyvista as pv
-        from quiltwright import QUILT_PRESETS, render_quilt, render_quilt_video, save_quilt
+        from quiltwright import (
+            QUILT_PRESETS,
+            depth_report,
+            render_quilt,
+            render_quilt_video,
+            save_quilt,
+        )
     except ImportError as exc:
         raise click.ClickException(
             f"quilt requires pyvista and quiltwright.\n"
@@ -256,7 +219,19 @@ def cmd_quilt(
     plotter.camera.position = (centre[0], ymin - (zmax - zmin) * 1.5, centre[2])
     plotter.reset_camera()  # ty: ignore[missing-argument]
 
-    click.echo(_depth_report(plotter, spec))
+    # fov and zoom are the ones the render will use: render_quilt narrows the
+    # FOV and dollies back before sweeping, so a budget taken from the camera
+    # as-framed describes a picture we are not about to make.
+    click.echo(
+        depth_report(
+            plotter,
+            spec,
+            fov=fov,
+            zoom=zoom,
+            labels=("nearest foliage", "focal plane (display surface)", "farthest foliage"),
+            extra_depths={"sky": math.inf},
+        )
+    )
 
     out_dir.mkdir(parents=True, exist_ok=True)
     suffix = "_schematic" if schematic else ("" if season == "summer" else f"_{season}")

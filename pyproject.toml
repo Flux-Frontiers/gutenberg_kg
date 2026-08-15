@@ -119,11 +119,9 @@ viz3d = [
     # them without depending on a *book* corpus. pycode-kg stays in `kgdeps`
     # for its own CLI.
     "kgmodule-utils[viz3d-render]>=0.12.1",
-    # Light-field output (`gutenkg quilt`). Marker-gated: quiltwright pins
-    # requires-python <3.13 while this project supports <3.14, and without the
-    # marker poetry rejects the whole resolution. Drop the marker once
-    # quiltwright widens its floor.
-    "quiltwright>=0.3.1; python_version < '3.13'",
+    # Light-field output (`gutenkg quilt`). 0.4.0 supplies depth_report() and
+    # widened requires-python to <3.14, which retires the old marker gate.
+    "quiltwright>=0.4.0",
 ]
 mcp = [
     # Upper-bounded: fastmcp ships majors on its own schedule (2.x → 3.x), and
