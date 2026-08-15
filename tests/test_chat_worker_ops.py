@@ -24,7 +24,7 @@ from unittest.mock import MagicMock, patch
 
 import pytest
 
-# Overridden unconditionally, not via setdefault. CI installs `--extras dev`, so
+# Overridden unconditionally, not via setdefault. CI installs `--with dev`, so
 # streamlit is absent there and the stub is what makes this module importable at
 # all — but a developer running `--all-extras` would otherwise get the real
 # `st.cache_data`, which memoises `_fetch_stats`/`_corpus_options` across tests
@@ -70,7 +70,7 @@ class TestWorkerOp:
         post = _post({"output": {}})
         with patch.object(httpx, "post", post):
             Chat._worker_op("http://w:8000", "stats", "s3cret")
-        assert post.sent["input"]["secret"] == "s3cret"
+        assert post.sent["input"]["secret"] == "s3cret"  # pragma: allowlist secret
 
         post = _post({"output": {}})
         with patch.object(httpx, "post", post):
