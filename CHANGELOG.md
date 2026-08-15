@@ -8,6 +8,23 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Changed
+
+- **The depth budget comes from `quiltwright.depth_report` instead of a local
+  copy.** `render_quilt` narrows the FOV and dollies back before it sweeps, so
+  the ~40-line helper here measured the camera as *framed* rather than as
+  *rendered* — the wrong FOV and the wrong focal distance. On Frankenstein at
+  `--spec portrait` the focal plane now reads 191.0 units rather than 87.5,
+  and nearest-foliage disparity 1.36 px rather than 1.43. pycode_kg had grown
+  the same helper independently; it now lives upstream, where it is written
+  once and correct once.
+- **`quiltwright>=0.4.0`, declared plainly.** The
+  `; python_version < '3.13'` marker is gone. It existed only because
+  quiltwright pinned `requires-python <3.13` while this project supports
+  `<3.14`, which made an unmarked declaration reject the whole resolution.
+  0.4.0 widened the ceiling and runs CI on both interpreters, so `gutenkg
+  quilt` now works on 3.13 instead of the dependency being skipped there.
+
 ### Added
 
 - **21 tests for the synthesis-model blocklist** (`tests/test_chat_worker_ops.py`).
