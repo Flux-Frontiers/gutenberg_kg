@@ -1178,20 +1178,20 @@ word-list = ["pyahocorasick"]
 
 [[package]]
 name = "diary-kg"
-version = "0.96.0"
+version = "0.97.0"
 description = "A knowledge graph builder and semantic search engine for diaries and journals"
 optional = false
 python-versions = "<3.14,>=3.12"
 groups = ["main"]
 files = [
-    {file = "diary_kg-0.96.0-py3-none-any.whl", hash = "sha256:ea213e23c412ae3eaf1446011fe949cc0e21b3dfafbfe35744b252b5dac1eb65"},
-    {file = "diary_kg-0.96.0.tar.gz", hash = "sha256:a2d4e05eaa747a10a58919eea621ddb69c7ae1752b3390ed8c93735710662f5d"},
+    {file = "diary_kg-0.97.0-py3-none-any.whl", hash = "sha256:398bad39475e2423f8d5c48b76c32be21516fb7732b08ef605981c8e3132e700"},
+    {file = "diary_kg-0.97.0.tar.gz", hash = "sha256:f7712acaee94f8aaa449844dfe079e781cda2108b0a31d6281b52c9be6d2e00c"},
 ]
 
 [package.dependencies]
 click = ">=8.1.0,<9"
-doc-kg = ">=0.20.0"
-kgmodule-utils = ">=0.9.0"
+doc-kg = ">=0.21.2"
+kgmodule-utils = ">=0.13.2"
 mcp = ">=1.0.0,<2"
 numpy = ">=1.24.0"
 pandas = ">=2.0.0"
@@ -1200,8 +1200,6 @@ sentence-transformers = ">=5.4.1"
 spacy = ">=3.8.11,<4"
 
 [package.extras]
-all = ["PyQt5 (>=5.15.0)", "detect-secrets (>=1.5.0)", "markdown (>=3.6)", "param (>=2.0.0)", "pdoc (>=14.0.0)", "pillow (>=10.0.0)", "plotly (>=5.14.0)", "pre-commit (>=4.5.1)", "pylint (>=4.0.5)", "pytest (>=8.0.0)", "pytest-cov (>=5.0.0)", "pyvis (>=0.3.2)", "pyvista (>=0.44.0)", "pyvistaqt (>=0.11.0)", "ruff (>=0.4.0)", "streamlit (>=1.35.0)", "trame-vtk (>=2.0.0)", "ty (>=0.0.44)", "vtracer (>=0.6.15)"]
-dev = ["detect-secrets (>=1.5.0)", "pdoc (>=14.0.0)", "pillow (>=10.0.0)", "pre-commit (>=4.5.1)", "pylint (>=4.0.5)", "pytest (>=8.0.0)", "pytest-cov (>=5.0.0)", "ruff (>=0.4.0)", "ty (>=0.0.44)", "vtracer (>=0.6.15)"]
 viz = ["plotly (>=5.14.0)", "pyvis (>=0.3.2)", "streamlit (>=1.35.0)"]
 viz3d = ["PyQt5 (>=5.15.0)", "markdown (>=3.6)", "param (>=2.0.0)", "pyvista (>=0.44.0)", "pyvistaqt (>=0.11.0)", "trame-vtk (>=2.0.0)"]
 
@@ -2340,8 +2338,8 @@ files = [
 [package.dependencies]
 httpx = {version = ">=0.27.0", optional = true, markers = "extra == \"synthesis\""}
 numpy = [
-    {version = ">=1.24.0", optional = true, markers = "extra == \"viz3d-render\""},
     {version = ">=1.24.0", optional = true, markers = "extra == \"semantic\" or extra == \"viz3d\""},
+    {version = ">=1.24.0", optional = true, markers = "extra == \"viz3d-render\""},
 ]
 openai = {version = ">=1.30.0", optional = true, markers = "extra == \"synthesis\""}
 pillow = {version = ">=10.0.0", optional = true, markers = "extra == \"synthesis\""}
@@ -2349,8 +2347,8 @@ pyvista = {version = ">=0.44.0", optional = true, markers = "extra == \"viz3d-re
 rich = {version = ">=13.0.0,<15.0.0", optional = true, markers = "extra == \"semantic\""}
 sentence-transformers = {version = ">=5.4.1", optional = true, markers = "extra == \"semantic\""}
 sqlite-vec = [
-    {version = "0.1.9", optional = true, markers = "extra == \"sqlite-vec\""},
     {version = "0.1.9", optional = true, markers = "extra == \"semantic\""},
+    {version = "0.1.9", optional = true, markers = "extra == \"sqlite-vec\""},
 ]
 torch = {version = ">=2.5.1", optional = true, markers = "extra == \"semantic\""}
 transformers = {version = ">=5.5.0,<6", optional = true, markers = "extra == \"semantic\""}
@@ -6846,4 +6844,4 @@ viz3d = ["PyQt5", "kgmodule-utils", "markdown", "param", "pyvistaqt", "quiltwrig
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.12,<3.14"
-content-hash = "ea912831bae7c1444e6d87fa82afd87bd5cf9c17e89715e6b3cad771725104c0"
+content-hash = "ff26702fd398f2a6470213ecb69bbe235ffb3dfcd11923541722cdd9ac7d2410"
