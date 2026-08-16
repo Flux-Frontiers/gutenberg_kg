@@ -284,6 +284,21 @@ class TestLighting:
         key_z = np.fromstring(lights[0], sep=",")[2]
         assert key_z < -geometry.crown[:, 2].max()
 
+    def test_the_key_light_is_on_the_same_side_as_the_camera(self, geometry, scene, sdl):
+        """
+        The rig and the camera are two upstream pieces that have to agree, and
+        nothing makes them. `lights_from_bounds` derives its side from `up`
+        alone, which for a +z-up scene is +y; `frame_tree` stands the camera
+        off along -y. Wired together untold, the rig lights the back of the
+        tree and the lens looks at its shadow — every structural assertion in
+        this file passes and the render comes out dark.
+        """
+        key = np.fromstring(re.findall(r"light_source \{ <([^>]*)>", sdl)[0], sep=",")
+        camera = tree_pov_camera(scene, geometry=geometry)
+        focal = np.asarray(camera.look_at, dtype=float)
+        eye = np.asarray(camera.location, dtype=float)
+        assert (key[1] - focal[1]) * (eye[1] - focal[1]) > 0.0
+
     def test_a_scene_is_lit_at_all(self, sdl):
         # POV-Ray has no headlight; an unlit scene ray-traces to black.
         assert sdl.count("light_source") >= 1

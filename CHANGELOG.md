@@ -159,7 +159,22 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   `frame_tree` gained `fov=`, `tree_pov_camera` passes it, and
   `TestTheLensSetsTheStandoff` now asserts the crown subtends the lens —
   fitting inside it *and* filling most of it, since "contains the subject" is
-  also satisfied by standing a mile back.
+  also satisfied by standing a mile back. `frame_tree`'s `margin` then leaves
+  headroom, because an exact fit puts the crown against the frame edge — and
+  on a panel it really is cropped, since the outermost views shear the tree
+  sideways out of a frame with no room.
+
+  The second thing only a render showed: **`lights_from_bounds` and
+  `frame_tree` disagree about which side the camera is on.** The rig derives
+  its key's side from `up` alone, which is `+y` for a `+z`-up scene, and the
+  camera stands off along `-y`. Reconciling those two was half of what
+  `tree_lights` had been for, and dropping it lit the back of the tree while
+  the lens looked at its shadow. The fix is upstream — `key_side=` — and
+  `povscene.CAMERA_SIDE` names the constant here, since the side is not a free
+  choice but a consequence of `frame_tree`'s rule.
+  `test_the_key_light_is_on_the_same_side_as_the_camera` reads the key off the
+  emitted file and the camera off `tree_pov_camera`, so the two cannot drift
+  apart silently again.
 
 - **`leaf_facing` and `oriented_cluster` now come from the engine.** Both were
   duplicated verbatim in `scene.py` and `pycode_kg/scene3d.py` — pure geometry

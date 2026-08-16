@@ -98,6 +98,13 @@ AMBIENT_LIGHT = "#3a3a44"
 #: inside the light-field depth budget.
 DEFAULT_GROUND: float = 3.0
 
+#: Which side of the tree the camera is on, so the key light goes there rather
+#: than behind it.  This is not a free choice: :func:`kg_utils.viz3d.frame_tree`
+#: stands the camera off along ``-y``, and a rig that derives its own side from
+#: ``up`` alone picks ``+y`` for a ``+z``-up scene — the far side.  The scene is
+#: then perfectly lit and the picture is dark.
+CAMERA_SIDE: tuple[float, float, float] = (0.0, -1.0, 0.0)
+
 
 def tree_pov_scene(
     geometry: TreeGeometry,
@@ -187,6 +194,7 @@ def tree_pov_scene(
         ground_color=GROUND_COLOR,
         ground_finish=GROUND_FINISH,
         brightness=brightness,
+        key_side=CAMERA_SIDE,
         rim_light=True,
         comment=(
             f"{slug} — GutenbergKG knowledge tree\n"
