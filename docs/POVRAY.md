@@ -80,6 +80,49 @@ across instead, framing the way `gutenkg quilt` does: level view along `-y`,
 up `+z`, focal plane at the centre of the scene's own bounds so the crown
 straddles the display surface.
 
+**`PovCamera` is in POV-Ray coordinates, not scene coordinates.** This trips
+people, and it caught this module. Geometry is authored right-handed and
+converted on emission, but a `PovCamera` holds coordinates that are *already*
+converted — `pov_camera_from_plotter` runs `to_pov` over the plotter's
+position, focal point and up vector, and `camera_block` emits whatever it is
+handed, verbatim. Frame in the right-handed world if you like, but convert
+before constructing the camera. Skip that and the tree sits at negative `z`
+while the lens aims at positive `z`: POV-Ray renders a flawless picture of
+empty sky. Nothing in the SDL looks wrong, and any assertion that compares
+right-handed against right-handed passes.
+
+## How this is verified
+
+`TestDualRender` renders the same tree through both backends at a matched
+camera and compares silhouettes against a black background — lighting models
+differ, so pixels never will. Measured with the viewpoint carried across:
+
+| Measure | Result |
+|---|---|
+| Silhouette IoU | **0.877** |
+| Coverage | 1.90% raster vs 1.76% ray-traced |
+| Bounding box | within 1–2 px on every edge |
+
+IoU is deflated by what the subject is: a canopy is thousands of small
+disconnected blades, so a pixel of misregistration costs far more than it
+would on a solid object. The residual is per-leaf roll (documented as
+differing from `vtkGlyph3D`) and an exact ellipsoid against an 8×6 tessellated
+one. The bounding box is what actually pins the lens — a wrong FOV, a wrong
+dolly or a mirrored axis all move those edges, and none survive 3 px.
+
+A separate test renders through `tree_pov_camera` rather than a carried
+camera, because the carried-camera tests isolate geometry and would happily
+pass with the framing broken. That is the one that fails on an unconverted
+camera.
+
+The tests skip unless both a `povray` binary and a working off-screen GL stack
+are present. On Debian/Ubuntu:
+
+```bash
+apt-get install -y povray xvfb libgl1-mesa-dri libglx-mesa0
+xvfb-run -a pytest tests/test_povscene.py
+```
+
 ## Dials
 
 | Flag | Effect |

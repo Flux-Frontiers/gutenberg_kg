@@ -54,6 +54,7 @@ from quiltwright.povgen import (
     instances_from_frames,
     sphere_sweeps_from_paths,
     spheres_from_points,
+    to_pov,
 )
 from quiltwright.povray import PovCamera
 
@@ -343,13 +344,19 @@ def tree_pov_camera(
     """
     Frame a tree scene the way ``gutenkg quilt`` frames the PyVista one.
 
-    Level view along ``-y``, up is ``+z``, and the focal plane sits at the
-    centre of the scene's own bounds so the crown straddles the display surface
-    rather than sitting entirely behind it.  Everything is in right-handed
-    coordinates; ``povgen`` negates ``z`` on emission, camera included.
+    Level view along ``-y``, up ``+z``, focal plane at the centre of the
+    scene's own bounds so the crown straddles the display surface rather than
+    sitting entirely behind it.  The distance fits the scene's bounding sphere
+    in *fov* — the analytic equivalent of ``plotter.reset_camera()``.
 
-    The distance is chosen to fit the scene's bounding sphere in *fov*, which
-    is the analytic equivalent of ``plotter.reset_camera()``.
+    **The returned camera is in POV-Ray coordinates, not scene coordinates.**
+    Framing is computed in the right-handed world the scene is authored in,
+    then converted, because that is the convention :class:`PovCamera` uses:
+    ``pov_camera_from_plotter`` runs ``to_pov`` over a plotter's position,
+    focal point and up vector, and ``camera_block`` emits whatever it is given
+    verbatim.  Skip the conversion and the geometry lands at negative ``z``
+    while the camera aims at positive ``z``, which renders an empty sky — the
+    tree is still there, just nowhere the lens is pointed.
 
     :param scene: A composed scene; its :meth:`~quiltwright.povgen.PovScene.bounds`
         supply the framing.  Instanced leaves do not contribute to those bounds
@@ -359,7 +366,7 @@ def tree_pov_camera(
     :param zoom: Dolly factor applied after framing; ``>1`` fills more of the
         tile, which is what drives perceived depth on a light-field panel.
     :return: The camera to hand to
-        :func:`~quiltwright.povray.render_pov_quilt`.
+        :func:`~quiltwright.povray.render_pov_quilt`, in POV-Ray coordinates.
     :raises ValueError: If the scene has nothing measurable to frame.
     """
     bounds = scene.bounds()
@@ -369,10 +376,12 @@ def tree_pov_camera(
     centre = (lo + hi) / 2.0
     radius = float(np.linalg.norm(hi - lo)) / 2.0
     distance = radius / max(np.tan(np.radians(fov / 2.0)), 1e-6) / max(zoom, 1e-6)
+
+    handedness = scene.handedness
     return PovCamera(
-        location=(float(centre[0]), float(centre[1] - distance), float(centre[2])),
-        look_at=(float(centre[0]), float(centre[1]), float(centre[2])),
-        sky=(0.0, 0.0, 1.0),
+        location=to_pov((centre[0], centre[1] - distance, centre[2]), handedness),
+        look_at=to_pov(tuple(centre), handedness),
+        sky=to_pov((0.0, 0.0, 1.0), handedness),
         fov=fov,
     )
 

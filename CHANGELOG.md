@@ -45,6 +45,15 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   nothing else. The claim is tested rather than asserted: a subprocess makes
   `pyvista` and `vtkmodules` unimportable and then writes a scene.
 
+  The geometry is verified by dual render, not by inspection. The same tree
+  goes through both backends at a matched camera and the silhouettes are
+  compared against a black background: **IoU 0.877**, coverage 1.90% against
+  1.76%, bounding boxes within 1–2 px on every edge. IoU is deflated by the
+  subject — a canopy is thousands of small disconnected blades, where a pixel
+  of misregistration costs far more than on a solid object — so the bounding
+  box is what pins the lens. Needs a `povray` binary and a working off-screen
+  GL stack; skips without either.
+
   (Note for anyone reading `sys.modules` to check this: `quiltwright/__init__`
   eagerly imports `lfd`, which imports pyvista *when it happens to be
   installed*, so `povgen` pulls it in through no fault of this package. What
@@ -54,6 +63,24 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   mismatch below, the dials, and the known limits.
 
 ### Fixed
+
+- **`tree_pov_camera` now returns a camera in POV-Ray coordinates.** It framed
+  in the right-handed world the scene is authored in and handed the result over
+  unconverted, so the geometry sat at negative `z` while the lens aimed at
+  positive `z`. POV-Ray rendered a flawless picture of empty sky.
+
+  Every unit assertion about that camera passed, because they compared
+  right-handed bounds against a right-handed camera — self-consistently wrong.
+  What found it was a dual render: POV-Ray coverage came back 100% background
+  against PyVista's 1.9%. `PovCamera` holds already-converted coordinates —
+  `pov_camera_from_plotter` runs `to_pov` over a plotter's position, focal
+  point and up vector, and `camera_block` emits verbatim — so the conversion
+  belongs here.
+
+  The tests are rebuilt around the emitted file rather than around the bounds
+  they were derived from, and `TestDualRender` now renders through this
+  function specifically, since the carried-camera comparisons isolate geometry
+  and pass regardless of framing.
 
 - **The POV-Ray lighting rig is built for a `+z`-up world.**
   `quiltwright.povgen.lights_from_bounds` is the general helper, but its

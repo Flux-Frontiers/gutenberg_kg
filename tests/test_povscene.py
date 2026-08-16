@@ -8,6 +8,7 @@ against the rasterised tree import pyvista themselves and skip without it.
 """
 
 import re
+import shutil
 import subprocess
 import sys
 
@@ -283,12 +284,41 @@ class TestLighting:
 
 
 class TestCamera:
+    def test_the_camera_is_in_pov_coordinates_not_scene_coordinates(self, scene, sdl):
+        # The bug this replaces: framing was computed in the right-handed world
+        # the scene is authored in and handed over unconverted, so the geometry
+        # sat at negative z while the lens aimed at positive z. Every assertion
+        # about it passed, because they compared right-handed against
+        # right-handed — self-consistently wrong. A dual render showed POV-Ray
+        # returning nothing but sky.
+        #
+        # So assert against the emitted file, which is the only thing POV-Ray
+        # actually reads: the camera must live on the same side of z = 0 as the
+        # geometry.
+        camera = tree_pov_camera(scene)
+        emitted_z = [float(m) for m in re.findall(r"<[^,>]+, [^,>]+, ([-\d.eE+]+)>,", sdl)]
+        assert min(emitted_z) < 0, "expected the tree to be emitted at negative z"
+        assert camera.look_at[2] < 0
+        assert camera.location[2] < 0
+        assert camera.sky == (0.0, 0.0, -1.0)  # +z up, converted
+
     def test_the_camera_frames_the_scene_from_the_front(self, scene):
         camera = tree_pov_camera(scene)
         lo, hi = scene.bounds()
-        assert camera.sky == (0.0, 0.0, 1.0)
+        # Bounds are right-handed, the camera is not, so z compares against the
+        # flipped interval.
         assert camera.location[1] < lo[1]  # stands off along -y
-        assert lo[2] <= camera.look_at[2] <= hi[2]  # focal plane inside the tree
+        assert -hi[2] <= camera.look_at[2] <= -lo[2]  # focal plane inside the tree
+
+    def test_framing_matches_what_pov_camera_from_plotter_would_produce(self, scene):
+        # Same convention as the helper povgen offers for the PyVista path —
+        # which is the definition of "POV-Ray coordinates" here.
+        from quiltwright.povgen import to_pov
+
+        camera = tree_pov_camera(scene)
+        lo, hi = scene.bounds()
+        centre = (lo + hi) / 2.0
+        assert np.allclose(camera.look_at, to_pov(tuple(centre)))
 
     def test_zoom_dollies_in(self, scene):
         near = tree_pov_camera(scene, zoom=2.0)
@@ -420,3 +450,150 @@ class TestCli:
         result = CliRunner().invoke(cli, ["pov", "--corpus", str(corpus), "--book", "Nonesuch"])
         assert result.exit_code != 0
         assert "No ingested book matching" in result.output
+
+
+# ---------------------------------------------------------------------------
+# Dual render — the check that a silhouette, not an assertion, has to pass
+# ---------------------------------------------------------------------------
+
+requires_dual_render = pytest.mark.skipif(
+    shutil.which("povray") is None or not can_render(),
+    reason="needs both a povray binary and a working off-screen GL stack",
+)
+
+
+@requires_dual_render
+class TestDualRender:
+    """
+    Render the same tree through both backends and compare silhouettes.
+
+    Every other test in this file inspects the SDL, which can only catch what
+    it thinks to look for. This one asks the question that matters — does
+    POV-Ray put the tree where PyVista does — and it is what caught
+    `tree_pov_camera` handing over an unconverted camera: the SDL was perfect,
+    the assertions all passed, and the render came back empty sky.
+
+    Lighting models differ, so the comparison is of silhouettes against a
+    matched black background, not of pixels.
+    """
+
+    SIZE = 300
+
+    @staticmethod
+    def _silhouette(img):
+        return np.asarray(img).sum(axis=2) > 24
+
+    def _render_both(self, tmp_path, nodes, edges):
+        import pyvista as pv
+        from PIL import Image
+        from quiltwright.povgen import pov_camera_from_plotter
+        from quiltwright.povray import camera_block
+
+        from gutenberg_kg.scene import build_tree_scene
+
+        plotter = pv.Plotter(off_screen=True, window_size=(self.SIZE, self.SIZE))
+        build_tree_scene(nodes, edges, plotter, slug=SLUG, genre="philosophy")
+        xmin, xmax, ymin, ymax, zmin, zmax = plotter.bounds
+        centre = ((xmin + xmax) / 2, (ymin + ymax) / 2, (zmin + zmax) / 2)
+        plotter.camera.up = (0.0, 0.0, 1.0)
+        plotter.camera.focal_point = centre
+        plotter.camera.position = (centre[0], ymin - (zmax - zmin) * 1.5, centre[2])
+        plotter.reset_camera()
+        plotter.set_background("black")
+        raster = plotter.screenshot(None, return_img=True)
+        # Carry the viewpoint across rather than reframing, so the comparison
+        # isolates geometry from framing policy.
+        camera = pov_camera_from_plotter(plotter)
+        plotter.close()
+
+        scene, _ = build_tree_pov_scene(nodes, edges, slug=SLUG, genre="philosophy")
+        scene.background = "#000000"
+        scene.ambient_light = None
+        scene.write(tmp_path / "tree.pov")
+        (tmp_path / "wrap.pov").write_text(
+            '#include "tree.pov"\n' + camera_block(camera, 0.0, 1.0) + "\n"
+        )
+        subprocess.run(
+            [
+                "povray",
+                "+Iwrap.pov",
+                "+Otree.png",
+                f"+W{self.SIZE}",
+                f"+H{self.SIZE}",
+                "+FN",
+                "-D",
+                "+Q9",
+                "+A0.3",
+            ],
+            cwd=tmp_path,
+            capture_output=True,
+            check=True,
+        )
+        traced = np.asarray(Image.open(tmp_path / "tree.png").convert("RGB"))
+        return self._silhouette(raster), self._silhouette(traced)
+
+    def test_the_ray_traced_tree_lands_where_the_rasterised_one_does(self, tmp_path):
+        nodes, edges = _book(n_sections=5, chunks_per_section=8)
+        raster, traced = self._render_both(tmp_path, nodes, edges)
+
+        assert traced.any(), "POV-Ray rendered nothing — camera and geometry disagree"
+        iou = (raster & traced).sum() / (raster | traced).sum()
+        # A canopy is thousands of small disconnected blades, so a pixel of
+        # misregistration costs IoU heavily; measured 0.877 with the camera
+        # carried across. Far below this and the two are not the same tree.
+        assert iou > 0.75, f"silhouette IoU {iou:.3f}"
+
+    def test_both_silhouettes_have_the_same_extent(self, tmp_path):
+        nodes, edges = _book(n_sections=5, chunks_per_section=8)
+        raster, traced = self._render_both(tmp_path, nodes, edges)
+
+        def bbox(mask):
+            ys, xs = np.nonzero(mask)
+            return ys.min(), ys.max(), xs.min(), xs.max()
+
+        # Extent is what pins the lens: a wrong FOV, a wrong dolly or a
+        # mirrored axis all move these edges, and none of them survive 3 px.
+        assert np.allclose(bbox(raster), bbox(traced), atol=3)
+
+    def test_our_own_framing_actually_points_at_the_tree(self, tmp_path):
+        # The carried-camera tests above isolate geometry, which means they say
+        # nothing about tree_pov_camera — and tree_pov_camera is exactly where
+        # the unconverted-camera bug lived. Render through our own framing and
+        # insist the tree is in the picture.
+        from PIL import Image
+        from quiltwright.povray import camera_block
+
+        nodes, edges = _book(n_sections=5, chunks_per_section=8)
+        scene, _ = build_tree_pov_scene(nodes, edges, slug=SLUG, genre="philosophy")
+        scene.background = "#000000"
+        scene.ambient_light = None
+        scene.write(tmp_path / "tree.pov")
+        camera = tree_pov_camera(scene, fov=30.0)
+        (tmp_path / "wrap.pov").write_text(
+            '#include "tree.pov"\n' + camera_block(camera, 0.0, 1.0) + "\n"
+        )
+        subprocess.run(
+            [
+                "povray",
+                "+Iwrap.pov",
+                "+Otree.png",
+                f"+W{self.SIZE}",
+                f"+H{self.SIZE}",
+                "+FN",
+                "-D",
+                "+Q9",
+                "+A0.3",
+            ],
+            cwd=tmp_path,
+            capture_output=True,
+            check=True,
+        )
+        traced = self._silhouette(Image.open(tmp_path / "tree.png").convert("RGB"))
+
+        assert traced.any(), "own framing rendered an empty sky — camera and geometry disagree"
+        # A framed hero shot: the tree is neither a speck nor the whole frame.
+        assert 0.005 < traced.mean() < 0.60, f"coverage {traced.mean():.2%}"
+        ys, xs = np.nonzero(traced)
+        # And it is roughly centred, not clipped against one edge.
+        assert abs(ys.mean() - self.SIZE / 2) < self.SIZE * 0.25
+        assert abs(xs.mean() - self.SIZE / 2) < self.SIZE * 0.25
