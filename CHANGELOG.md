@@ -23,6 +23,23 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Changed
 
+- **One `kgmodule-utils` floor, not two.** `[project].dependencies` still named
+  `>=0.13.2` while the `viz3d` and `pov` extras named `>=0.14.0`. Nothing
+  mis-resolved — poetry takes the intersection, and the lock has a single
+  0.14.0 entry — but `scripts/check_pins.py` deliberately compares the
+  *highest* declared floor, on the reasoning that pip resolves against the most
+  restrictive. That makes a stale low declaration invisible to the gate: the
+  pin table printed `>=0.14.0` and reported "Pins agree" with 0.13.2 sitting
+  in the file. Unified at 0.14.0, which is also the current PyPI release.
+- **The Dockerfile's cross-pin table is no longer fiction.** It exists so the
+  four `==` ARGs can be bumped as a set without reading each package's
+  metadata, and three of its four rows were stale — `kg-rag 0.11.0`,
+  `doc-kg 0.21.1`, `kgmodule-utils 0.11.0`, against ARGs of 0.12.0, 0.21.2 and
+  0.14.0. Refreshed from the published metadata, with a note that the
+  transitive floors listed there are *expected* to sit below what the image
+  pins, so nobody reads the gap as slack to be taken up. `runpod/requirements.txt`
+  carried the same drift in prose (`kg-rag 0.11.0`, a `>=0.10.0`/`>=0.11.0`
+  war story written as if current).
 - **CI's test job installs `--extras pov`.** `tests/test_povscene.py` imports
   `gutenberg_kg.povscene`, which imports `quiltwright.povgen` at module scope,
   so without the extra collection failed and took the whole job down — 787

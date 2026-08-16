@@ -88,7 +88,11 @@ classifiers = [
 requires-python = ">=3.12,<3.14"
 dependencies = [
     "click>=8.1.0,<9",
-    "kgmodule-utils[synthesis,sqlite-vec]>=0.13.2",
+    # One floor for this package across every declaration — the `viz3d` and
+    # `pov` extras below name 0.14.0, and a lower floor here buys nothing while
+    # making the repo state ambiguous: scripts/check_pins.py compares the
+    # *highest* declared floor, so a stale low one is invisible to the gate.
+    "kgmodule-utils[synthesis,sqlite-vec]>=0.14.0",
     "rich>=14.3.3,<15",
     "doc-kg (>=0.21.2)",  # transformers 5.x — must match kg-rag; see the kgdeps extra
     "diary-kg (>=0.97.0)",
