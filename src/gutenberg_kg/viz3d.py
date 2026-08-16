@@ -1246,6 +1246,8 @@ class ForestMainWindow(QMainWindow):
         self.progress_bar.setRange(0, spec.n_views)
         self.progress_bar.setValue(0)
         self.progress_bar.show()
+        self._pov_started = time.perf_counter()
+        self.progress_bar.setFormat("%v / %m views")
         self._pov_timer = QTimer(self)
         self._pov_timer.timeout.connect(self._poll_pov_progress)
         self._pov_timer.start(400)
@@ -1275,6 +1277,18 @@ class ForestMainWindow(QMainWindow):
             return
         done = len(list(views_dir.glob("view*.png")))
         self.progress_bar.setValue(done)
+
+        # Elapsed and ETA rather than a frame number. With jobs > 1 there is no
+        # single "current frame" — roughly one trace per core is in flight, and
+        # `done` is how many have landed, not which one is being worked on.
+        # Extrapolating from the completed rate is the honest reading of that.
+        started = getattr(self, "_pov_started", None)
+        if started is None or done == 0:
+            return
+        elapsed = time.perf_counter() - started
+        total = self.progress_bar.maximum()
+        eta = elapsed / done * (total - done)
+        self.progress_bar.setFormat(f"%v / %m views  ·  {elapsed:.0f}s, ~{eta:.0f}s left")
 
     def _finish_pov_render(self) -> None:
         """Stop polling, hide the bar, re-enable the buttons, drop the views."""
