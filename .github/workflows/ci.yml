@@ -70,8 +70,14 @@ jobs:
           path: .venv
           key: typecheck-${{ runner.os }}-${{ hashFiles('poetry.lock') }}
 
+      # `pov` so ty can resolve quiltwright.povgen. Without it the whole
+      # povscene↔quiltwright boundary is unchecked — an unresolved import is
+      # not a type error, so ty reported "All checks passed" while
+      # `swept_scene(instance_index=<ndarray>)` sat there against a
+      # `Sequence[int]` parameter. Installing the extra is what makes the
+      # signature visible.
       - name: Install dependencies
-        run: poetry install --no-interaction --with dev
+        run: poetry install --no-interaction --with dev --extras pov
 
       - name: Run ty
         run: poetry run ty check src/
@@ -104,8 +110,15 @@ jobs:
       # tests/test_sdxl_server.py needs to import the module and assert on its
       # request-model defaults. torch and diffusers stay out — sdxl_server
       # defers them until an actual render.
+      #
+      # `pov` too: tests/test_povscene.py imports gutenberg_kg.povscene, which
+      # imports quiltwright.povgen at module scope, so without it collection
+      # fails and takes the whole job with it. The extra is cheap and headless
+      # — NumPy-only geometry plus quiltwright (numpy, pillow), no PyVista, no
+      # Qt, no GL context. The tests that do want PyVista importorskip it
+      # individually.
       - name: Install dependencies
-        run: poetry install --no-interaction --with dev --extras image
+        run: poetry install --no-interaction --with dev --extras image --extras pov
 
       - name: Run tests
         run: poetry run pytest

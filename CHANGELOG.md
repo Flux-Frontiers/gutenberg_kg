@@ -8,20 +8,42 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
-> **Blocked on two upstream releases.** This work needs
-> `kgmodule-utils 0.14.0` (`leaf_frames`, `limb_paths`, `LEAF_ASPECT`, and the
-> promoted `leaf_facing`/`oriented_cluster`) and `quiltwright 0.5.0`
-> (`povgen`). Both are open PRs — Flux-Frontiers/KG_utils#20 and
-> suchanek/quiltwright#12 — and the floors below name the versions those will
-> become.
+> **Unblocked 2026-08-16.** `kgmodule-utils 0.14.0` (`leaf_frames`,
+> `limb_paths`, `LEAF_ASPECT`, and the promoted
+> `leaf_facing`/`oriented_cluster`) and `quiltwright 0.5.0` (`povgen`,
+> `swept_scene`) are both published, so the fourth pin site — `poetry.lock` —
+> is relocked and `scripts/check_pins.py` has nothing left to report.
 >
-> Three of the four pin sites are moved as a set: the pyproject floors, the
-> Dockerfile's `KGMODULE_UTILS_VERSION` ARG, and `runpod/requirements.txt`.
-> The fourth, `poetry.lock`, cannot be: relocking needs the versions to exist
-> on PyPI, and hand-editing a version string past its recorded hashes would
-> produce a lock that resolves to nothing. So `scripts/check_pins.py` reports
-> one mismatch — lock 0.13.2 against floor 0.14.0 — and `poetry lock` clears
-> it the moment the two releases land. Nothing else in the suite is affected.
+> Between the floors landing and the releases existing, `main` was red: the
+> lock still recorded 0.13.2 / 0.4.0, so `poetry install` refused with
+> "pyproject.toml changed significantly since poetry.lock was last generated"
+> and every CI job failed before running a check. Worth remembering as an
+> ordering hazard — a floor naming an unreleased version breaks the lock gate
+> for every job, not just the ones that use the extra.
+
+### Changed
+
+- **CI's test job installs `--extras pov`.** `tests/test_povscene.py` imports
+  `gutenberg_kg.povscene`, which imports `quiltwright.povgen` at module scope,
+  so without the extra collection failed and took the whole job down — 787
+  lines of new pov tests never ran. The lock failure above had been masking
+  this: the job died at `poetry install` before it reached collection. The
+  extra is cheap and headless (NumPy-only geometry plus quiltwright), and the
+  tests wanting PyVista `importorskip` it individually. 443 passed, 13 skipped.
+
+- **CI's type-check job installs `--extras pov` too, and a real type error it
+  was hiding is fixed.** An unresolved import is not a type error, so with
+  quiltwright absent `ty` reported "All checks passed" while
+  `povscene.swept_scene(instance_index=...)` was handed an `np.ndarray`
+  against a `Sequence[int]` parameter. Installing the extra makes the
+  signature visible; the call now passes `.tolist()`. Found by the pre-commit
+  hook, not by CI — the local run had the extra installed and CI did not.
+
+- **`viz3d` floors `quiltwright` at 0.5.0, matching `pov`.** It only needs
+  0.4.0, but two different floors on one package make Poetry lock it twice
+  under overlapping markers — 0.4.0 for `extra == "viz3d"` and 0.5.0 for
+  `extra == "viz3d" or extra == "pov"`. `poetry install --extras viz3d` then
+  installed both, one over the other. One floor, one locked version.
 
 ### Added
 

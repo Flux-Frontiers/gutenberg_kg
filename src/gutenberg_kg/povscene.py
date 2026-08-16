@@ -179,7 +179,9 @@ def tree_pov_scene(
         instance_shape=LEAF_ASPECT,
         instance_radius=geometry.leaf_radius,
         instance_palette=palette.foliage,
-        instance_index=np.asarray(geometry.leaf_tint, dtype=int),
+        # .tolist(): swept_scene takes Sequence[int], and an ndarray is not one
+        # as far as the type checker is concerned.
+        instance_index=np.asarray(geometry.leaf_tint, dtype=int).tolist(),
         instance_finish=LEAF_FINISH,
         clouds=clouds,
         cloud_finish=SPORE_FINISH,
