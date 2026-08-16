@@ -13,6 +13,7 @@ import sys
 
 import numpy as np
 import pytest
+from _render import can_render
 from kg_utils.viz3d import (
     LEAF_ASPECT,
     LayoutEdge,
@@ -328,6 +329,14 @@ class TestParityWithTheRasterisedTree:
 
     def test_both_backends_grow_the_same_skeleton(self):
         pv = pytest.importorskip("pyvista")
+        if not can_render():
+            # This is the one test here that builds a Plotter. An importable
+            # pyvista is not a renderable one: on a VTK build with no OSMesa or
+            # EGL fallback, constructing a render window without a GL context
+            # aborts the interpreter rather than raising, taking every queued
+            # test with it. See tests/_render.py.
+            pytest.skip("pyvista off-screen rendering unavailable")
+
         from gutenberg_kg.scene import build_tree_scene
 
         nodes, edges = _book()
