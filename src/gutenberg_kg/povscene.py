@@ -31,7 +31,6 @@ from __future__ import annotations
 
 import logging
 from collections.abc import Callable
-from dataclasses import replace
 from pathlib import Path
 
 import numpy as np
@@ -39,22 +38,16 @@ from kg_utils.viz3d import (
     LEAF_ASPECT,
     LayoutEdge,
     LayoutNode,
+    frame_tree,
     leaf_frames,
     limb_paths,
     seed_from_key,
 )
 from quiltwright.povgen import (
-    Box,
     Finish,
-    LightSource,
     PovScene,
-    Sphere,
-    Texture,
-    Union,
-    instances_from_frames,
-    sphere_sweeps_from_paths,
-    spheres_from_points,
-    to_pov,
+    pov_camera_from_frame,
+    swept_scene,
 )
 from quiltwright.povray import PovCamera
 
@@ -71,10 +64,6 @@ from gutenberg_kg.treegeom import (
 logger = logging.getLogger(__name__)
 
 __author__ = "Eric G. Suchanek, PhD"
-
-#: Declared name of the leaf prototype.  One ``#declare`` for a whole canopy:
-#: POV-Ray parses the ellipsoid once and each leaf costs a single line.
-LEAF_PROTOTYPE = "GutenLeaf"
 
 #: Bark finish.  Wood is matte — a phong highlight on a trunk reads as plastic,
 #: which is exactly the tell that makes a ray-traced tree look worse than the
@@ -104,74 +93,10 @@ DEFAULT_BRIGHTNESS: float = 2.6
 #: crown is not a silhouette; higher flattens the form.
 AMBIENT_LIGHT = "#3a3a44"
 
-#: Ground slab thickness.  The top face sits at ``z = 0``, where the trunk's
-#: root node is, so the tree stands *on* the ground instead of hovering over a
-#: plane parked below it.
-GROUND_THICKNESS: float = 0.4
-
 #: Default ground slab edge, as a multiple of the crown's width.  Wide enough
 #: that the shadow falls on it rather than off its edge, narrow enough to stay
 #: inside the light-field depth budget.
 DEFAULT_GROUND: float = 3.0
-
-
-def tree_lights(lo: np.ndarray, hi: np.ndarray, *, intensity: float = 1.0) -> list[LightSource]:
-    """
-    A three-point rig for a **+z-up** tree, sized to the scene bounds.
-
-    ``quiltwright.povgen.lights_from_bounds`` is the general helper and now
-    takes ``up=(0, 0, 1)``, which fixes the half of this that was a bug — its
-    offsets used to assume a ``+y``-up world and put the key light below the
-    ground of a ``+z``-up scene.  This stays because of the other half: that
-    helper is a two-light rig, and it cannot know which side of the subject
-    the camera is on, so it cannot choose a front.  This scene knows — the
-    quilt camera stands off along ``-y`` — and spends a third light on it.
-
-    Key from the upper front right, shadowless fill from the left to open the
-    shadows without doubling them, and a dim back light so the crown separates
-    from the sky instead of silhouetting into it.
-
-    :param lo: Lower bound corner, right-handed.
-    :param hi: Upper bound corner, right-handed.
-    :param intensity: Key light brightness multiplier.
-    :return: The light sources, key first.
-    """
-    lo_a = np.asarray(lo, dtype=float)
-    hi_a = np.asarray(hi, dtype=float)
-    centre = (lo_a + hi_a) / 2.0
-    radius = float(np.linalg.norm(hi_a - lo_a)) / 2.0 or 1.0
-
-    def level(fraction: float) -> tuple[float, float, float]:
-        value = intensity * fraction
-        return (value, value, value)
-
-    # The camera looks along +y from -y, so "front" is -y.  The key is steep —
-    # 2.2 up against 1.1 across — so the tree drops its shadow near its own
-    # base.  A shallower key throws the canopy's shadow so far to one side that
-    # it reads as a separate object rather than as contact with the ground.
-    return [
-        LightSource(position=tuple(centre + np.array([1.0, -1.1, 2.2]) * radius), color=level(1.0)),
-        LightSource(
-            position=tuple(centre + np.array([-1.6, -1.0, 0.7]) * radius),
-            color=level(0.35),
-            shadowless=True,
-        ),
-        LightSource(
-            position=tuple(centre + np.array([-0.3, 1.7, 1.3]) * radius),
-            color=level(0.25),
-            shadowless=True,
-        ),
-    ]
-
-
-def _leaf_texture_names(geometry: TreeGeometry) -> list[str]:
-    """
-    One declared texture identifier per foliage colour.
-
-    :param geometry: The placed tree.
-    :return: Identifiers parallel to ``geometry.palette.foliage``.
-    """
-    return [f"GutenLeafTex{i}" for i in range(len(geometry.palette.foliage))]
 
 
 def tree_pov_scene(
@@ -188,11 +113,11 @@ def tree_pov_scene(
     """
     Turn a placed :class:`~gutenberg_kg.treegeom.TreeGeometry` into POV-Ray SDL.
 
-    Wood becomes one ``sphere_sweep`` per root-to-tip path, carrying the pipe
-    model's per-node radii; foliage becomes one instance of
-    :data:`LEAF_PROTOTYPE` per leaf, oriented along its twig; spores become
-    plain spheres.  Leaves are grouped into one ``union`` per foliage colour so
-    a season's palette costs one texture per colour rather than one per leaf.
+    The composition is :func:`quiltwright.povgen.swept_scene`: limbs are its
+    swept paths, leaves its oriented instances, spores its point clouds.  What
+    is left here is the part that is actually about books — the season's
+    palette, which node kinds become spores, and the finishes — which is the
+    only part another KG module would not share.
 
     The scene is authored **right-handed** (``+z`` up, as everything else in
     this repo is) and emitted left-handed; ``povgen`` negates ``z`` on the way
@@ -216,12 +141,9 @@ def tree_pov_scene(
         off-budget disparity at the horizon; this slab is finite and sized to
         the crown, so it carries no such cost — and a ray-traced tree with no
         contact shadow reads as floating, which the rasterised one does not,
-        since VTK's headlight casts nothing anyway.  The tree casts onto it, and a
-        contact shadow is most of what makes a tree look *placed* rather than
-        floating.  Sized relative to the crown rather than in scene units so
-        one value works for a sonnet and for a nine-year diary; kept finite
-        because an effectively infinite plane guarantees off-budget disparity
-        at the horizon.
+        since VTK's headlight casts nothing anyway.  Sized relative to the
+        crown rather than in scene units, so one value works for a sonnet and
+        for a nine-year diary.
     :param lights: Place a three-point rig from the scene bounds.  POV-Ray has
         no equivalent of VTK's headlight, so a scene with no lights at all
         renders black.
@@ -232,101 +154,46 @@ def tree_pov_scene(
     :return: The composed :class:`~quiltwright.povgen.PovScene`.
     """
     palette = geometry.palette
-    scene = PovScene(
-        background=sky or palette.sky[0],
-        ambient_light=AMBIENT_LIGHT,
+    clouds = [
+        (points, radius, KIND_COLOR[kind], SPORE_OPACITY)
+        for kind, (points, radius) in geometry.spores.items()
+    ]
+    scene = swept_scene(
+        limb_paths(geometry.skeleton, subdivisions=subdivisions),
+        sweep_color=palette.wood,
+        sweep_finish=BARK_FINISH,
+        instances=leaf_frames(
+            geometry.leaf_points,
+            geometry.skeleton,
+            size=geometry.leaf_radius,
+            cling=cling,
+            seed=seed_from_key(slug + ":leaves"),
+        ),
+        instance_shape=LEAF_ASPECT,
+        instance_radius=geometry.leaf_radius,
+        instance_palette=palette.foliage,
+        instance_index=np.asarray(geometry.leaf_tint, dtype=int),
+        instance_finish=LEAF_FINISH,
+        clouds=clouds,
+        cloud_finish=SPORE_FINISH,
+        up=(0.0, 0.0, 1.0),
+        sky=sky or palette.sky[0],
+        ambient=AMBIENT_LIGHT,
+        lights=lights,
+        ground=ground_size,
+        # The trunk's root is at z = 0; the swept bounds are padded by its
+        # radius, so left to infer the floor would sit a trunk-radius low.
+        ground_base=0.0,
+        ground_color=GROUND_COLOR,
+        ground_finish=GROUND_FINISH,
+        brightness=brightness,
+        rim_light=True,
         comment=(
             f"{slug} — GutenbergKG knowledge tree\n"
             f"{geometry.title}\n"
-            f"Grown by kg_utils.viz3d, emitted by gutenberg_kg.povscene."
+            f"Grown by kg_utils.viz3d, composed by quiltwright.povgen.swept_scene."
         ),
     )
-
-    bark = Texture(color=palette.wood, finish=BARK_FINISH)
-    scene.declare_texture("GutenBark", bark)
-
-    # The leaf prototype is a unit sphere flattened by LEAF_ASPECT, the same
-    # scale the PyVista glyph applies to its prototype.  Instancing it means
-    # the canopy is one declared object plus a line per leaf.
-    scene.declare(LEAF_PROTOTYPE, Sphere(centre=(0.0, 0.0, 0.0), radius=1.0))
-    leaf_textures = _leaf_texture_names(geometry)
-    for name, color in zip(leaf_textures, palette.foliage, strict=True):
-        scene.declare_texture(name, Texture(color=color, finish=LEAF_FINISH))
-
-    # --- Wood -------------------------------------------------------------
-    paths = limb_paths(geometry.skeleton, subdivisions=subdivisions)
-    sweeps = sphere_sweeps_from_paths(paths, texture="GutenBark")
-    if sweeps:
-        scene.add(Union(sweeps))
-
-    # --- Foliage ----------------------------------------------------------
-    points, directions = leaf_frames(
-        geometry.leaf_points,
-        geometry.skeleton,
-        size=geometry.leaf_radius,
-        cling=cling,
-        seed=seed_from_key(slug + ":leaves"),
-    )
-    if len(points):
-        # LEAF_ASPECT is a per-axis ratio; the prototype is a unit sphere, so
-        # the instance scale is the leaf radius times that ratio.
-        leaf_scale = tuple(float(geometry.leaf_radius) * a for a in LEAF_ASPECT)
-        tint = np.asarray(geometry.leaf_tint, dtype=int)
-        for index, texture in enumerate(leaf_textures):
-            mask = tint == index
-            if not mask.any():
-                continue
-            instances = instances_from_frames(
-                LEAF_PROTOTYPE,
-                points[mask],
-                directions[mask],
-                texture=texture,
-            )
-            # Instance is frozen, and instances_from_frames has no scale
-            # parameter — the prototype is a unit sphere, so the scale is
-            # applied here.  POV-Ray transforms in written order, so the
-            # prototype is scaled, then rotated into its frame, then moved.
-            scene.add(Union([replace(i, scale=leaf_scale) for i in instances]))
-
-    # --- Spores -----------------------------------------------------------
-    for kind, (spore_points, spore_radius) in geometry.spores.items():
-        spore_texture = Texture(color=KIND_COLOR[kind], opacity=SPORE_OPACITY, finish=SPORE_FINISH)
-        scene.add(Union(spheres_from_points(spore_points, spore_radius, spore_texture)))
-
-    # --- Lights, before the ground ----------------------------------------
-    #
-    # Order matters.  The rig is sized from scene.bounds(), and the ground slab
-    # is deliberately wider than the crown — measure after adding it and the
-    # "scene radius" becomes the slab's half-diagonal, pushing the key light
-    # far enough out to flatten the tree and shrink its shadow to nothing.
-    # Light the subject, then lay the floor under it.
-    if lights:
-        # Instanced leaves are not measurable without resolving the prototype,
-        # so the canopy does not widen the rig; the wood reaches the crown
-        # anyway, which is what matters for placing lights.
-        bounds = scene.bounds()
-        if bounds is None:
-            scene.add_light(LightSource(position=(0.0, -50.0, 50.0)))
-        else:
-            for light in tree_lights(*bounds, intensity=brightness):
-                scene.add_light(light)
-
-    if ground_size > 0:
-        # Sized from the crown so one multiplier suits any book.  Only the key
-        # light casts, so the tree drops a single readable shadow rather than
-        # the three-way overlap a fully casting rig would give.
-        crown = geometry.crown
-        width = float(np.max(crown[:, :2].max(axis=0) - crown[:, :2].min(axis=0)))
-        half = max(width, 1.0) * ground_size / 2.0
-        centre = (crown[:, 0].mean(), crown[:, 1].mean())
-        scene.add(
-            Box(
-                corner1=(centre[0] - half, centre[1] - half, -GROUND_THICKNESS),
-                corner2=(centre[0] + half, centre[1] + half, 0.0),
-                texture=Texture(color=GROUND_COLOR, finish=GROUND_FINISH),
-            )
-        )
-
     return scene
 
 
@@ -408,60 +275,34 @@ def tree_pov_camera(
     zoom: float = 1.0,
 ) -> PovCamera:
     """
-    Frame a tree scene the way ``gutenkg quilt`` frames the PyVista one.
+    Frame the tree for a hero shot, in POV-Ray coordinates.
 
-    Level view along ``-y``, up ``+z``, focal plane at the centre of the
-    scene's own bounds so the crown straddles the display surface rather than
-    sitting entirely behind it.  The distance fits the scene's bounding sphere
-    in *fov* — the analytic equivalent of ``plotter.reset_camera()``.
+    Both halves now come from upstream: :func:`kg_utils.viz3d.frame_tree` is
+    the framing rule — one copy, shared with ``gutenkg quilt`` and every other
+    consumer — and :func:`quiltwright.povgen.pov_camera_from_frame` performs
+    the conversion into POV-Ray's left-handed world.
 
-    **The returned camera is in POV-Ray coordinates, not scene coordinates.**
-    Framing is computed in the right-handed world the scene is authored in,
-    then converted, because that is the convention :class:`PovCamera` uses:
-    ``pov_camera_from_plotter`` runs ``to_pov`` over a plotter's position,
-    focal point and up vector, and ``camera_block`` emits whatever it is given
-    verbatim.  Skip the conversion and the geometry lands at negative ``z``
-    while the camera aims at positive ``z``, which renders an empty sky — the
-    tree is still there, just nowhere the lens is pointed.
-
-    :param scene: A composed scene, used for framing only when *geometry* is
-        not supplied.
+    :param scene: A composed scene, used only when *geometry* is absent.
     :param geometry: The placed tree.  **Pass this.**  Framing from the scene
-        instead means framing whatever is in it, and since the ground slab is
-        three crown-widths across and on by default, that is mostly floor: the
-        tree ends up small and high in the tile.  The crown knows where the
-        tree is and the slab does not enter into it.  ``None`` falls back to
-        the scene bounds, where instanced leaves also do not contribute — they
-        cannot be measured without resolving the prototype — so the wood and
-        spores frame the shot.
-    :param fov: Vertical field of view in degrees.
-    :param zoom: Dolly factor applied after framing; ``>1`` fills more of the
-        tile, which is what drives perceived depth on a light-field panel.
-    :return: The camera to hand to
-        :func:`~quiltwright.povray.render_pov_quilt`, in POV-Ray coordinates.
-    :raises ValueError: If the scene has nothing measurable to frame.
+        means framing whatever is in it, and the ground slab is three
+        crown-widths across.
+    :param fov: Vertical field of view in degrees.  It sets the standoff as
+        well as the lens: POV-Ray has no ``reset_camera()``, so the distance
+        that fits the crown has to be computed up front or the tree overflows
+        a narrow lens and swims in a wide one.
+    :param zoom: Dolly toward the focal point after framing.
+    :return: The camera, in POV-Ray coordinates.
+    :raises ValueError: If there is nothing measurable to frame.
     """
     if geometry is not None:
-        # Crown plus the root at the origin: the whole tree, no floor.
-        crown = np.asarray(geometry.crown, dtype=float)
-        lo = np.minimum(crown.min(axis=0), 0.0)
-        hi = np.maximum(crown.max(axis=0), 0.0)
+        frame = frame_tree(geometry.crown, fov=fov)
     else:
         bounds = scene.bounds()
         if bounds is None:
             raise ValueError("scene has no measurable geometry to frame")
         lo, hi = bounds
-    centre = (lo + hi) / 2.0
-    radius = float(np.linalg.norm(hi - lo)) / 2.0
-    distance = radius / max(np.tan(np.radians(fov / 2.0)), 1e-6) / max(zoom, 1e-6)
-
-    handedness = scene.handedness
-    return PovCamera(
-        location=to_pov((centre[0], centre[1] - distance, centre[2]), handedness),
-        look_at=to_pov(tuple(centre), handedness),
-        sky=to_pov((0.0, 0.0, 1.0), handedness),
-        fov=fov,
-    )
+        frame = frame_tree(np.vstack([lo, hi]), fov=fov, include_root=False)
+    return pov_camera_from_frame(frame, fov=fov, zoom=zoom, handedness=scene.handedness)
 
 
 def write_tree_pov(

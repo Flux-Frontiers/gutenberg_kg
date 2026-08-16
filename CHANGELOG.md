@@ -124,13 +124,42 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   and pass regardless of framing.
 
 - **The POV-Ray lighting rig is built for a `+z`-up world.**
-  `quiltwright.povgen.lights_from_bounds` is the general helper, but its
-  offsets assume `+y` up: its key light sits at `+1.6y, -1.4z`, which in this
-  repo's world is level with the trunk and *below* the ground — a tree lit from
-  underneath. `povscene.tree_lights` rebuilds the three-point rig in the world
-  the rest of the scene uses.
+  `quiltwright.povgen.lights_from_bounds` assumed `+y` up: its key light sat at
+  `+1.6y, -1.4z`, which in this repo's world is level with the trunk and
+  *below* the ground — a tree lit from underneath. Found here, fixed there:
+  the helper now takes `up=`, so the rig this scene gets is the shared one.
 
 ### Changed
+
+- **`povscene` composes through `quiltwright.povgen.swept_scene`.** 491 lines
+  to 325. The scene assembly written here — prototype `#declare`, one union
+  and one texture per foliage colour, the light rig, the ground slab, and the
+  order those go in — was never about books, so all of it is upstream now and
+  this module keeps only what is: the season's palette, which node kinds
+  become spores, the finishes, and the pipe-model radii the sweeps carry.
+
+  Three local pieces went with it, each replaced by the thing it had been a
+  copy of. `tree_lights` becomes `lights_from_bounds(up=, rim=)` — the fix
+  that made this copy necessary landed upstream, and the third light it
+  existed for is now `rim=`. `LEAF_PROTOTYPE` and `_leaf_texture_names` become
+  `swept_scene`'s own prototype and colour grouping. The hand-built floor
+  becomes `ground_slab`, whose `base=` says where the root is — a swept tube's
+  bounds are padded by its radius, so taking the level from the bounds sank
+  the floor and stood the tree in a dish.
+
+  `tree_pov_camera` is now two upstream calls: `kg_utils.viz3d.frame_tree` for
+  the framing rule — one copy, shared with `gutenkg quilt` — and
+  `pov_camera_from_frame` for the handedness conversion.
+
+  The refit caught a real regression on the way. `frame_tree`'s standoff rule
+  is a fixed multiple of the subject's height, which is right for PyVista
+  because `reset_camera()` re-fits afterwards; POV-Ray has no such pass, so
+  the first Pepys render came out cropped top and bottom while all 47 tests
+  passed, because a badly-fitted frame is a structurally valid one.
+  `frame_tree` gained `fov=`, `tree_pov_camera` passes it, and
+  `TestTheLensSetsTheStandoff` now asserts the crown subtends the lens —
+  fitting inside it *and* filling most of it, since "contains the subject" is
+  also satisfied by standing a mile back.
 
 - **`leaf_facing` and `oriented_cluster` now come from the engine.** Both were
   duplicated verbatim in `scene.py` and `pycode_kg/scene3d.py` — pure geometry

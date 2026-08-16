@@ -25,13 +25,18 @@ from kg_utils.viz3d import (
 )
 
 from gutenberg_kg.povscene import (
-    LEAF_PROTOTYPE,
     build_tree_pov_scene,
-    tree_lights,
     tree_pov_camera,
     tree_pov_scene,
 )
 from gutenberg_kg.treegeom import SceneFilters, grow_tree_geometry
+
+#: Identifiers quiltwright.povgen.swept_scene declares. Named here because this
+#: module no longer chooses them — the composition moved upstream, and these
+#: tests assert what gutenberg_kg still decides: the palette, the spore kinds,
+#: the finishes and the defaults.
+LEAF_PROTOTYPE = "Glyph"
+LEAF_TEXTURE = "Tint"
 
 SLUG = "a_treatise"
 
@@ -206,7 +211,7 @@ class TestFoliage:
         assert np.allclose(np.sort(emitted, axis=0), np.sort(expected, axis=0))
 
     def test_every_palette_colour_is_declared_and_used(self, geometry, sdl):
-        declared = set(re.findall(r"#declare (GutenLeafTex\d+) =", sdl))
+        declared = set(re.findall(rf"#declare ({LEAF_TEXTURE}\d+) =", sdl))
         assert len(declared) == len(geometry.palette.foliage)
         assert {texture for _, _, texture in _instances(sdl)} <= declared
 
@@ -266,14 +271,18 @@ class TestHandedness:
 
 
 class TestLighting:
-    def test_the_key_light_is_above_the_tree_not_below_it(self, geometry):
-        # Regression against quiltwright's lights_from_bounds, whose offsets
-        # assume a +y-up world: used unchanged it puts the key light below the
-        # ground of a +z-up scene, lighting the tree from underneath.
-        lo = geometry.crown.min(axis=0)
-        hi = geometry.crown.max(axis=0)
-        key = tree_lights(lo, hi)[0]
-        assert key.position[2] > hi[2]
+    def test_the_key_light_is_above_the_tree_not_below_it(self, geometry, sdl):
+        """
+        The rig is quiltwright's now, driven with ``up=(0, 0, 1)``. This checks
+        the wiring rather than the rig: pass the wrong ``up`` from here and the
+        key light lands below the ground of a +z-up scene, lighting the tree
+        from underneath. Read off the emitted file, since that is what POV-Ray
+        reads. Emitted z is negated, so "above" is the most negative.
+        """
+        lights = re.findall(r"light_source \{ <([^>]*)>", sdl)
+        assert lights
+        key_z = np.fromstring(lights[0], sep=",")[2]
+        assert key_z < -geometry.crown[:, 2].max()
 
     def test_a_scene_is_lit_at_all(self, sdl):
         # POV-Ray has no headlight; an unlit scene ray-traces to black.
@@ -669,15 +678,12 @@ class TestGroundAndLighting:
         )
         assert lit == bare
 
-    def test_the_key_light_is_steep_enough_to_drop_a_contact_shadow(self, geometry):
-        """A shallow key throws the canopy's shadow off to one side, where it
-        reads as a separate object rather than as the tree touching ground."""
-        lo, hi = geometry.crown.min(axis=0), geometry.crown.max(axis=0)
-        key = tree_lights(lo, hi)[0]
-        centre = (lo + hi) / 2.0
-        rise = key.position[2] - centre[2]
-        run = float(np.hypot(key.position[0] - centre[0], key.position[1] - centre[1]))
-        assert rise > run, f"key elevation {rise:.1f} is shallower than its reach {run:.1f}"
+    def test_the_scene_is_lit_from_above_the_canopy(self, geometry, sdl):
+        """Every light clears the crown; none of them lights the tree from below."""
+        emitted = [np.fromstring(m, sep=",") for m in re.findall(r"light_source \{ <([^>]*)>", sdl)]
+        assert emitted
+        top = geometry.crown[:, 2].max()
+        assert all(light[2] < -top * 0.5 for light in emitted)
 
     def test_brightness_scales_the_whole_rig(self, geometry):
         dim = self._light_levels(tree_pov_scene(geometry, slug=SLUG, brightness=1.0).sdl())
@@ -722,3 +728,45 @@ class TestFramingIgnoresTheGround:
         b = tree_pov_camera(wide, geometry=geometry, fov=26.0)
         assert a.location == pytest.approx(b.location)
         assert a.look_at == pytest.approx(b.look_at)
+
+
+class TestTheLensSetsTheStandoff:
+    """
+    The regression the Pepys render caught and the rest of this file missed:
+    framing moved upstream to ``frame_tree``, whose default rule is a fixed
+    multiple of the subject's height.  PyVista callers get away with that
+    because ``plotter.reset_camera()`` fits afterwards; POV-Ray has no such
+    pass, so the tree came out cropped top and bottom.  Every assertion here
+    still passed, because a badly-fitted frame is a structurally valid one.
+    """
+
+    @staticmethod
+    def _subtended(camera, geometry) -> float:
+        """Vertical angle the crown subtends from the camera, in degrees."""
+        from quiltwright.povgen import to_pov
+
+        crown = np.vstack([np.atleast_2d(geometry.crown), np.zeros(3)])
+        pov = np.array([to_pov(tuple(p)) for p in crown])
+        eye = np.asarray(camera.location, dtype=float)
+        centre = np.asarray(camera.look_at, dtype=float)
+        radius = float(np.linalg.norm(pov - centre, axis=1).max())
+        return 2.0 * np.degrees(np.arctan(radius / np.linalg.norm(centre - eye)))
+
+    @pytest.mark.parametrize("fov", [14.0, 26.0, 60.0])
+    def test_the_crown_fits_the_lens(self, geometry, fov):
+        camera = tree_pov_camera(tree_pov_scene(geometry, slug=SLUG), geometry=geometry, fov=fov)
+        assert self._subtended(camera, geometry) <= fov + 1e-6
+
+    @pytest.mark.parametrize("fov", [14.0, 26.0, 60.0])
+    def test_the_crown_is_not_lost_in_the_lens(self, geometry, fov):
+        # The other half of fitting: a frame that merely contains the subject
+        # is satisfied by standing a mile back. The bounding sphere is the
+        # tightest thing a single distance can fit, so it should nearly fill.
+        camera = tree_pov_camera(tree_pov_scene(geometry, slug=SLUG), geometry=geometry, fov=fov)
+        assert self._subtended(camera, geometry) > 0.7 * fov
+
+    def test_a_narrower_lens_stands_further_back(self, geometry):
+        scene = tree_pov_scene(geometry, slug=SLUG)
+        near = tree_pov_camera(scene, geometry=geometry, fov=60.0)
+        far = tree_pov_camera(scene, geometry=geometry, fov=14.0)
+        assert far.focal_distance > near.focal_distance
