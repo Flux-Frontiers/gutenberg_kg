@@ -177,7 +177,6 @@ def cmd_pov(
 
     try:
         from quiltwright import QUILT_PRESETS, save_quilt
-        from quiltwright.povray import render_pov_quilt
     except ImportError as exc:  # pragma: no cover - quiltwright is a hard dep of this path
         raise click.ClickException(f"--render requires quiltwright: {exc}") from exc
 
@@ -192,10 +191,85 @@ def cmd_pov(
         f"(focal distance {camera.focal_distance:.1f})..."
     )
     try:
-        quilt = render_pov_quilt(pov_path, spec, camera, jobs=jobs)
+        quilt = _render_with_progress(pov_path, spec, camera, jobs=jobs)
     except FileNotFoundError as exc:
         raise click.ClickException(
             f"No povray binary found. Install POV-Ray, or drop --render to keep the scene only.\n"
             f"Details: {exc}"
         ) from exc
     click.echo(f"Wrote {save_quilt(quilt, stem, spec)}")
+
+
+def _render_with_progress(pov_path: Path, spec, camera, *, jobs: int):
+    """Ray-trace a quilt behind a Rich progress bar.
+
+    quiltwright's own ``progress=True`` prints a bare ``\r pov view 12/48``,
+    which loses the elapsed time and ETA that matter when a cast runs for
+    minutes.  Rich is already a core dependency here and drives the rest of
+    this CLI's output, so the bar is drawn locally and quiltwright is asked to
+    stay quiet.
+
+    Progress is a *completed* count, deliberately.  With ``jobs`` traces in
+    flight there is no single current frame, so naming one would be a fiction.
+
+    :param pov_path: The scene to trace.
+    :param spec: Quilt spec; ``n_views`` sets the total.
+    :param camera: Camera in POV-Ray coordinates.
+    :param jobs: Parallel POV-Ray processes.
+    :return: The assembled quilt as an RGB array.
+    """
+    import tempfile
+    import threading
+
+    import numpy as np
+    from PIL import Image
+    from quiltwright import assemble_quilt
+    from quiltwright.povray import render_pov_views
+    from rich.progress import (
+        BarColumn,
+        MofNCompleteColumn,
+        Progress,
+        SpinnerColumn,
+        TextColumn,
+        TimeElapsedColumn,
+        TimeRemainingColumn,
+    )
+
+    with tempfile.TemporaryDirectory(prefix="gutenkg-pov-") as tmp:
+        views_dir = Path(tmp)
+        done = threading.Event()
+        result: dict[str, list[Path]] = {}
+        error: dict[str, BaseException] = {}
+
+        def _work() -> None:
+            try:
+                result["paths"] = render_pov_views(
+                    pov_path, spec, camera, views_dir, jobs=jobs, progress=False
+                )
+            except BaseException as exc:  # noqa: BLE001 - re-raised on the main thread
+                error["exc"] = exc
+            finally:
+                done.set()
+
+        worker = threading.Thread(target=_work, daemon=True)
+        worker.start()
+
+        with Progress(
+            SpinnerColumn(),
+            TextColumn("[bold blue]ray-tracing"),
+            BarColumn(),
+            MofNCompleteColumn(),
+            TextColumn("views"),
+            TimeElapsedColumn(),
+            TimeRemainingColumn(),
+        ) as bar:
+            task = bar.add_task("pov", total=spec.n_views)
+            while not done.wait(timeout=0.3):
+                bar.update(task, completed=len(list(views_dir.glob("view*.png"))))
+            bar.update(task, completed=spec.n_views)
+
+        worker.join()
+        if "exc" in error:
+            raise error["exc"]
+        views = [np.asarray(Image.open(p).convert("RGB")) for p in result["paths"]]
+        return assemble_quilt(views, spec)

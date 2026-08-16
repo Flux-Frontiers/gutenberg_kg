@@ -423,6 +423,43 @@ class ImagePopup(QDialog):
         layout.addWidget(close_btn)
 
 
+def save_and_cast_quilt(image, stem: Path, spec, *, cast: bool) -> tuple[Path, str | None]:
+    """
+    Write a quilt to disk, then hand Bridge the **path** to it.
+
+    Split out of the window because the two arguments are easy to confuse and
+    the mistake is invisible until a panel is connected: ``save_quilt`` takes
+    the array, ``cast_quilt`` takes a path on the Bridge host's filesystem.
+    Passing the array to the caster raises ``argument should be a str or an
+    os.PathLike object ... not 'ndarray'`` — after the minutes of ray-tracing,
+    which is the worst possible moment to find out.
+
+    The file is confirmed on disk before Bridge is contacted, so a cast that
+    fails costs the connection and never the render.
+
+    :param image: Assembled quilt as an RGB array.
+    :param stem: Output path stem; ``save_quilt`` appends the spec suffix.
+    :param spec: The spec it was rendered against.
+    :param cast: Whether to push it to the Looking Glass after writing.
+    :return: ``(written path, error message or None)``.
+    """
+    from quiltwright import save_quilt
+
+    out = save_quilt(image, stem, spec)
+    if not cast:
+        return out, None
+    if not out.exists():
+        return out, f"{out} was not written"
+    try:
+        from quiltwright import cast_quilt
+
+        # An absolute path: Bridge resolves it on its own filesystem.
+        cast_quilt(out.resolve(), spec)
+    except Exception as exc:  # noqa: BLE001 - the quilt file is kept regardless
+        return out, str(exc)
+    return out, None
+
+
 def create_forest_visualization(
     viz: GutenbergForestVisualizer,
     plotter: pv.Plotter,
@@ -1319,39 +1356,28 @@ class ForestMainWindow(QMainWindow):
         :param label: Word for the status line.
         :param cast: Whether to push it to the Looking Glass.
         """
-        from quiltwright import save_quilt
-
         try:
-            out = save_quilt(image, self._pov_stem, spec)
+            out, error = save_and_cast_quilt(image, self._pov_stem, spec, cast=cast)
         except Exception as exc:  # noqa: BLE001 - surfaced to the status bar
             self.visualizer.status = f"POV-Ray render succeeded but saving failed: {exc}"
             return
-        self.visualizer.status = f"POV-Ray {label} → {out}"
-        QApplication.processEvents()
 
         if not cast:
+            self.visualizer.status = f"POV-Ray {label} → {out}"
             popup = ImagePopup(f"POV-Ray — {self.visualizer.window_title}", out, self)
             popup.resize(min(POV_PREVIEW_SIZE[0] + 40, 1200), POV_PREVIEW_SIZE[1] + 110)
             popup.show()
             return
 
-        # The file is on disk and confirmed before Bridge is contacted, so a
-        # cast that fails costs the connection and not the render.
-        if not out.exists():
-            self.visualizer.status = f"Refusing to cast: {out} was not written."
+        size_mb = out.stat().st_size / 1e6 if out.exists() else 0.0
+        if error:
+            self.visualizer.status = (
+                f"Quilt saved to {out} ({size_mb:.1f} MB), casting failed: {error}"
+            )
             return
         self.visualizer.status = (
-            f"Saved {out.name} ({out.stat().st_size / 1e6:.1f} MB) — casting..."
+            f"Cast POV-Ray quilt ({size_mb:.1f} MB) to the Looking Glass → {out}"
         )
-        QApplication.processEvents()
-        try:
-            from quiltwright import cast_quilt
-
-            cast_quilt(image, spec)
-        except Exception as exc:  # noqa: BLE001 - the quilt file is kept regardless
-            self.visualizer.status = f"Quilt saved to {out}, but casting failed: {exc}"
-            return
-        self.visualizer.status = f"Cast POV-Ray quilt to the Looking Glass → {out}"
 
     def frame_for_render(self) -> None:
         """
