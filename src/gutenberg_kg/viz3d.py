@@ -26,7 +26,9 @@ import atexit
 import gc
 import logging
 import os
+import shutil
 import sys
+import tempfile
 import time
 import warnings
 from dataclasses import replace
@@ -37,7 +39,7 @@ import param
 import pyvista as pv
 from kg_utils.viz3d import LayoutEdge, LayoutNode
 from markdown import markdown  # type: ignore[import-untyped]
-from PyQt5.QtCore import Qt, QThread, pyqtSignal
+from PyQt5.QtCore import Qt, QThread, QTimer, pyqtSignal
 from PyQt5.QtGui import QFont, QPixmap
 from PyQt5.QtWidgets import (
     QApplication,
@@ -50,6 +52,7 @@ from PyQt5.QtWidgets import (
     QLineEdit,
     QListWidget,
     QMainWindow,
+    QProgressBar,
     QPushButton,
     QScrollArea,
     QSizePolicy,
@@ -331,28 +334,47 @@ class PovRenderWorker(QThread):
     failed: pyqtSignal = pyqtSignal(str)
 
     def __init__(
-        self, pov_path: Path, spec, camera, jobs: int = 1, antialias: float | None = 0.3
+        self,
+        pov_path: Path,
+        spec,
+        camera,
+        views_dir: Path,
+        jobs: int = 1,
+        antialias: float | None = 0.3,
     ) -> None:
         """Store the render inputs; nothing is traced until :meth:`run`."""
         super().__init__()
         self._pov_path = pov_path
         self._spec = spec
         self._camera = camera
+        self._views_dir = views_dir
         self._jobs = jobs
         self._antialias = antialias
 
     def run(self) -> None:
         """Trace the scene, emitting :attr:`finished_ok` or :attr:`failed`."""
         try:
-            from quiltwright.povray import render_pov_quilt
+            import numpy as _np
+            from PIL import Image as _Image
+            from quiltwright import assemble_quilt
+            from quiltwright.povray import render_pov_views
 
-            image = render_pov_quilt(
+            # render_pov_views rather than render_pov_quilt: it writes one
+            # viewNNN.png into a directory the caller owns as each trace
+            # finishes, which is what makes progress observable at all. The
+            # quilt path keeps its views in a private temp dir, so a caster
+            # waiting minutes has nothing to watch.
+            paths = render_pov_views(
                 self._pov_path,
                 self._spec,
                 self._camera,
+                self._views_dir,
                 jobs=self._jobs,
                 antialias=self._antialias,
                 progress=False,
+            )
+            image = assemble_quilt(
+                [_np.asarray(_Image.open(p).convert("RGB")) for p in paths], self._spec
             )
         except FileNotFoundError as exc:
             self.failed.emit(f"No povray binary on PATH — install POV-Ray to ray-trace. ({exc})")
@@ -891,9 +913,16 @@ class ForestMainWindow(QMainWindow):
             f"font-weight:bold; font-size:13px; background:{BG_INPUT}; color:{ACCENT};"
             f"padding:5px; border:1px solid {BORDER}; border-radius:4px;"
         )
+        self.progress_bar = QProgressBar()
+        self.progress_bar.setFixedWidth(190)
+        self.progress_bar.setTextVisible(True)
+        self.progress_bar.setFormat("%v / %m views")
+        self.progress_bar.hide()
+
         btn_row.addWidget(self.reset_view_btn)
         btn_row.addWidget(self.frame_btn)
         btn_row.addWidget(self.reset_settings_btn)
+        btn_row.addWidget(self.progress_bar)
         btn_row.addWidget(self.status_display, stretch=1)
         vis.addLayout(btn_row)
 
@@ -1210,20 +1239,56 @@ class ForestMainWindow(QMainWindow):
         )
         QApplication.processEvents()
 
+        # The worker writes views here as it finishes them; the GUI thread
+        # counts the files. Polling the filesystem beats threading a callback
+        # out of an external process pool, and it cannot wedge the render.
+        self._views_dir = Path(tempfile.mkdtemp(prefix="gutenkg-pov-"))
+        self.progress_bar.setRange(0, spec.n_views)
+        self.progress_bar.setValue(0)
+        self.progress_bar.show()
+        self._pov_timer = QTimer(self)
+        self._pov_timer.timeout.connect(self._poll_pov_progress)
+        self._pov_timer.start(400)
+
         worker = PovRenderWorker(
             pov_path,
             spec,
             camera,
+            self._views_dir,
             jobs=max(1, (os.cpu_count() or 2) - 1),
             antialias=antialias,
         )
         worker.finished_ok.connect(lambda img: self._on_pov_done(img, spec, label, cast))
         worker.failed.connect(self._on_pov_failed)
-        worker.finished.connect(
-            lambda: (self.render_btn.setEnabled(True), self.cast_btn.setEnabled(True))
-        )
+        worker.finished.connect(self._finish_pov_render)
         self._pov_worker = worker  # keep a reference; a GC'd QThread is a crash
         worker.start()
+
+    def _poll_pov_progress(self) -> None:
+        """Count finished views on disk and advance the bar.
+
+        Cheap enough at 400 ms: a directory listing against a render whose
+        views take seconds each.
+        """
+        views_dir = getattr(self, "_views_dir", None)
+        if views_dir is None or not views_dir.exists():
+            return
+        done = len(list(views_dir.glob("view*.png")))
+        self.progress_bar.setValue(done)
+
+    def _finish_pov_render(self) -> None:
+        """Stop polling, hide the bar, re-enable the buttons, drop the views."""
+        timer = getattr(self, "_pov_timer", None)
+        if timer is not None:
+            timer.stop()
+        self.progress_bar.hide()
+        self.render_btn.setEnabled(True)
+        self.cast_btn.setEnabled(True)
+        views_dir = getattr(self, "_views_dir", None)
+        if views_dir is not None:
+            # Only ever a directory this method's owner created via mkdtemp.
+            shutil.rmtree(views_dir, ignore_errors=True)
+            self._views_dir = None
 
     def _on_pov_failed(self, message: str) -> None:
         """Report a failed trace on the status bar.
@@ -1248,6 +1313,7 @@ class ForestMainWindow(QMainWindow):
             self.visualizer.status = f"POV-Ray render succeeded but saving failed: {exc}"
             return
         self.visualizer.status = f"POV-Ray {label} → {out}"
+        QApplication.processEvents()
 
         if not cast:
             popup = ImagePopup(f"POV-Ray — {self.visualizer.window_title}", out, self)
@@ -1255,6 +1321,15 @@ class ForestMainWindow(QMainWindow):
             popup.show()
             return
 
+        # The file is on disk and confirmed before Bridge is contacted, so a
+        # cast that fails costs the connection and not the render.
+        if not out.exists():
+            self.visualizer.status = f"Refusing to cast: {out} was not written."
+            return
+        self.visualizer.status = (
+            f"Saved {out.name} ({out.stat().st_size / 1e6:.1f} MB) — casting..."
+        )
+        QApplication.processEvents()
         try:
             from quiltwright import cast_quilt
 
