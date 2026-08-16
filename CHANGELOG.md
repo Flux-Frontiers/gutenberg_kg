@@ -8,7 +8,193 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+> **Blocked on two upstream releases.** This work needs
+> `kgmodule-utils 0.14.0` (`leaf_frames`, `limb_paths`, `LEAF_ASPECT`, and the
+> promoted `leaf_facing`/`oriented_cluster`) and `quiltwright 0.5.0`
+> (`povgen`). Both are open PRs — Flux-Frontiers/KG_utils#20 and
+> suchanek/quiltwright#12 — and the floors below name the versions those will
+> become.
+>
+> Three of the four pin sites are moved as a set: the pyproject floors, the
+> Dockerfile's `KGMODULE_UTILS_VERSION` ARG, and `runpod/requirements.txt`.
+> The fourth, `poetry.lock`, cannot be: relocking needs the versions to exist
+> on PyPI, and hand-editing a version string past its recorded hashes would
+> produce a lock that resolves to nothing. So `scripts/check_pins.py` reports
+> one mismatch — lock 0.13.2 against floor 0.14.0 — and `poetry lock` clears
+> it the moment the two releases land. Nothing else in the suite is affected.
+
+### Added
+
+- **`gutenkg pov` — the knowledge tree as an analytic POV-Ray scene.** A limb
+  becomes a `sphere_sweep` carrying the pipe model's per-node radii, a leaf
+  becomes one instance of a single declared ellipsoid, and a spore becomes a
+  sphere. Nothing is tessellated, so the file is one to two orders of magnitude
+  smaller than the equivalent `mesh2` dump and the silhouettes stay exact at
+  any zoom — which is most of the reason to leave VTK in the first place.
+  `--render` ray-traces the result straight into a Looking Glass quilt through
+  `quiltwright.povray.render_pov_quilt`.
+
+  The two backends are not two trees. `gutenkg quilt` and `gutenkg pov` both
+  call `grow_tree_geometry`, so they share one skeleton, one clinging rule and
+  one halo; `test_both_backends_grow_the_same_skeleton` pins that they cannot
+  drift.
+
+- **A `pov` extra, deliberately apart from `viz3d`.** Composing a scene needs
+  the NumPy-only geometry plus `quiltwright.povgen` — no PyVista, no Qt, no GL
+  context — so a headless ray-tracing box can install `gutenberg-kg[pov]` and
+  nothing else. The claim is tested rather than asserted: a subprocess makes
+  `pyvista` and `vtkmodules` unimportable and then writes a scene.
+
+  The geometry is verified by dual render, not by inspection. The same tree
+  goes through both backends at a matched camera and the silhouettes are
+  compared against a black background: **IoU 0.877**, coverage 1.90% against
+  1.76%, bounding boxes within 1–2 px on every edge. IoU is deflated by the
+  subject — a canopy is thousands of small disconnected blades, where a pixel
+  of misregistration costs far more than on a solid object — so the bounding
+  box is what pins the lens. Needs a `povray` binary and a working off-screen
+  GL stack; skips without either.
+
+  (Note for anyone reading `sys.modules` to check this: `quiltwright/__init__`
+  eagerly imports `lfd`, which imports pyvista *when it happens to be
+  installed*, so `povgen` pulls it in through no fault of this package. What
+  matters is that the path still works when the rendering stack is absent.)
+
+- **`docs/POVRAY.md`** — the pipeline, the handedness rule, the lighting
+  mismatch below, the dials, and the known limits.
+
+- **The ray-traced tree stands on ground, in daylight.** `gutenkg pov` gains
+  `--ground`, `--brightness` and `--sky`, and the first two are on by default
+  because the defaults they replace produced an unusable picture.
+
+  A finite slab, sized as a multiple of the crown's own width so one value
+  suits a sonnet and a nine-year diary, with its top face at `z = 0` where the
+  trunk's root node is — the tree stands *on* it rather than hovering over a
+  plane parked below. Only the key light casts, so the tree drops one readable
+  shadow instead of the three-way overlap a fully casting rig gives. This is a
+  deliberate divergence from `build_tree_scene`, which omits its ground because
+  it draws an effectively infinite plane and would blow the disparity budget at
+  the horizon; a finite slab carries no such cost, and a ray-traced tree
+  without a contact shadow reads as floating in a way the rasterised one does
+  not, since VTK's headlight casts nothing at all.
+
+  `--brightness` defaults to **2.6**, not 1. A canopy of thousands of small
+  blades self-shadows heavily and the wood is dark brown against a dark sky, so
+  a unit key renders a tree that is geometrically perfect and visually black —
+  which is exactly what the first Pepys render, 9,993 leaves, came out as. The
+  ground finish is correspondingly dim: at `diffuse 0.7` against that key the
+  slab clipped to a flat lime that pulled the eye straight off the subject.
+
+  The key light is also steeper now — 2.2 up against 1.1 across, where it was
+  1.6 against 1.5. A shallow key throws the canopy's shadow so far to one side
+  that it reads as a separate object rather than as the tree touching ground.
+
+### Fixed
+
+- **`tree_pov_camera` frames the tree, not the floor.** It read
+  `scene.bounds()`, which was right until the ground became default-on: a slab
+  three crown-widths across then dominated the bounds and the tree came out
+  small and high in the tile. It now takes the `geometry` that
+  `build_tree_pov_scene` already returned for exactly this purpose — the
+  docstring said so and the code did not use it — and frames the crown plus the
+  root at the origin, which is the whole tree and no floor.
+
+- **The light rig is sized before the ground is laid.** Same root cause from
+  the other side: the rig takes its scale from `scene.bounds()`, so building
+  the slab first made the "scene radius" the slab's half-diagonal, pushing the
+  key light far enough out to flatten the tree and shrink its shadow to
+  nothing. Lights are placed first now, and a test pins that adding ground
+  leaves every light position untouched.
+
+- **`tree_pov_camera` now returns a camera in POV-Ray coordinates.** It framed
+  in the right-handed world the scene is authored in and handed the result over
+  unconverted, so the geometry sat at negative `z` while the lens aimed at
+  positive `z`. POV-Ray rendered a flawless picture of empty sky.
+
+  Every unit assertion about that camera passed, because they compared
+  right-handed bounds against a right-handed camera — self-consistently wrong.
+  What found it was a dual render: POV-Ray coverage came back 100% background
+  against PyVista's 1.9%. `PovCamera` holds already-converted coordinates —
+  `pov_camera_from_plotter` runs `to_pov` over a plotter's position, focal
+  point and up vector, and `camera_block` emits verbatim — so the conversion
+  belongs here.
+
+  The tests are rebuilt around the emitted file rather than around the bounds
+  they were derived from, and `TestDualRender` now renders through this
+  function specifically, since the carried-camera comparisons isolate geometry
+  and pass regardless of framing.
+
+- **The POV-Ray lighting rig is built for a `+z`-up world.**
+  `quiltwright.povgen.lights_from_bounds` assumed `+y` up: its key light sat at
+  `+1.6y, -1.4z`, which in this repo's world is level with the trunk and
+  *below* the ground — a tree lit from underneath. Found here, fixed there:
+  the helper now takes `up=`, so the rig this scene gets is the shared one.
+
 ### Changed
+
+- **`povscene` composes through `quiltwright.povgen.swept_scene`.** 491 lines
+  to 325. The scene assembly written here — prototype `#declare`, one union
+  and one texture per foliage colour, the light rig, the ground slab, and the
+  order those go in — was never about books, so all of it is upstream now and
+  this module keeps only what is: the season's palette, which node kinds
+  become spores, the finishes, and the pipe-model radii the sweeps carry.
+
+  Three local pieces went with it, each replaced by the thing it had been a
+  copy of. `tree_lights` becomes `lights_from_bounds(up=, rim=)` — the fix
+  that made this copy necessary landed upstream, and the third light it
+  existed for is now `rim=`. `LEAF_PROTOTYPE` and `_leaf_texture_names` become
+  `swept_scene`'s own prototype and colour grouping. The hand-built floor
+  becomes `ground_slab`, whose `base=` says where the root is — a swept tube's
+  bounds are padded by its radius, so taking the level from the bounds sank
+  the floor and stood the tree in a dish.
+
+  `tree_pov_camera` is now two upstream calls: `kg_utils.viz3d.frame_tree` for
+  the framing rule — one copy, shared with `gutenkg quilt` — and
+  `pov_camera_from_frame` for the handedness conversion.
+
+  The refit caught a real regression on the way. `frame_tree`'s standoff rule
+  is a fixed multiple of the subject's height, which is right for PyVista
+  because `reset_camera()` re-fits afterwards; POV-Ray has no such pass, so
+  the first Pepys render came out cropped top and bottom while all 47 tests
+  passed, because a badly-fitted frame is a structurally valid one.
+  `frame_tree` gained `fov=`, `tree_pov_camera` passes it, and
+  `TestTheLensSetsTheStandoff` now asserts the crown subtends the lens —
+  fitting inside it *and* filling most of it, since "contains the subject" is
+  also satisfied by standing a mile back. `frame_tree`'s `margin` then leaves
+  headroom, because an exact fit puts the crown against the frame edge — and
+  on a panel it really is cropped, since the outermost views shear the tree
+  sideways out of a frame with no room.
+
+  The second thing only a render showed: **`lights_from_bounds` and
+  `frame_tree` disagree about which side the camera is on.** The rig derives
+  its key's side from `up` alone, which is `+y` for a `+z`-up scene, and the
+  camera stands off along `-y`. Reconciling those two was half of what
+  `tree_lights` had been for, and dropping it lit the back of the tree while
+  the lens looked at its shadow. The fix is upstream — `key_side=` — and
+  `povscene.CAMERA_SIDE` names the constant here, since the side is not a free
+  choice but a consequence of `frame_tree`'s rule.
+  `test_the_key_light_is_on_the_same_side_as_the_camera` reads the key off the
+  emitted file and the camera off `tree_pov_camera`, so the two cannot drift
+  apart silently again.
+
+- **`leaf_facing` and `oriented_cluster` now come from the engine.** Both were
+  duplicated verbatim in `scene.py` and `pycode_kg/scene3d.py` — pure geometry
+  with no book knowledge — and `kgmodule-utils` 0.14.0 owns them. Promoting
+  them also *fixed* the copy this repo carried: it raised `ValueError` on an
+  empty cluster, because `fibonacci_sphere(0)` returns `[]` and subtracting a
+  `(3,)` centre from a `(0,)` array fails to broadcast. `pycode_kg`'s copy
+  guarded it and the promoted version keeps that guard, so a section whose
+  chunks are all filtered out no longer takes the layout down.
+
+- **The scene layer is split by what it needs, not by what it does.** The
+  PyVista-free half moved out of `scene.py` into two modules: `bookgraph.py`
+  (corpus discovery, per-book graph loading — plain `sqlite3`) and
+  `treegeom.py` (`ForestLayout`, the seasons, `grow_tree_geometry`). `scene.py`
+  keeps the PyVista composition and re-exports every public name from both, so
+  `from gutenberg_kg.scene import ForestLayout` is unchanged. Without this the
+  POV path would drag in VTK to reach a layout that never touches it.
+
+- **`kgmodule-utils[viz3d-render]>=0.14.0`** in the `viz3d` extra, for the
+  promoted helpers.
 
 - **`diary-kg>=0.97.0`.** Moved as a set across all four pin sites — pyproject
   floor, `poetry.lock`, `docker/Dockerfile`'s `DIARY_KG_VERSION` ARG, and

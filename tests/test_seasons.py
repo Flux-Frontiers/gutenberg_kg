@@ -10,13 +10,18 @@ pytest.importorskip("pyvista")
 
 from _render import can_render  # noqa: E402
 
-from gutenberg_kg.scene import (  # noqa: E402
+# ``leaf_facing`` and ``oriented_cluster`` live in the engine now, not in this
+# repo.  They are still exercised here — upstream owns their general contract,
+# these pin the properties the forest layout actually depends on, so a change
+# in kgmodule-utils that broke the canopy would fail here rather than on a
+# panel.
+from kg_utils.viz3d import leaf_facing, oriented_cluster  # noqa: E402
+
+from gutenberg_kg.treegeom import (  # noqa: E402
     DEFAULT_SEASON,
     SEASONS,
     _crown_halo,
-    _leaf_facing,
     _nearest_neighbour_gap,
-    _oriented_cluster,
 )
 
 # An importable pyvista is not the same as a usable one: without a working GL
@@ -52,28 +57,28 @@ class TestSeasons:
 
 class TestLeafFacing:
     def test_a_vertical_limb_faces_straight_up(self):
-        assert np.allclose(_leaf_facing(np.array([0.0, 0.0, 5.0])), [0, 0, 1])
+        assert np.allclose(leaf_facing(np.array([0.0, 0.0, 5.0])), [0, 0, 1])
 
     def test_facing_follows_the_limb_outward(self):
-        east = _leaf_facing(np.array([3.0, 0.0, 0.0]))
-        west = _leaf_facing(np.array([-3.0, 0.0, 0.0]))
+        east = leaf_facing(np.array([3.0, 0.0, 0.0]))
+        west = leaf_facing(np.array([-3.0, 0.0, 0.0]))
         assert east[0] > 0 and west[0] < 0
         assert east[2] > 0 and west[2] > 0  # both still reach for light
 
     def test_facing_is_a_unit_vector(self):
         for outward in ([1.0, 2.0, 0.0], [-4.0, 0.5, 0.0], [0.0, -3.0, 0.0]):
-            assert np.linalg.norm(_leaf_facing(np.array(outward))) == pytest.approx(1.0)
+            assert np.linalg.norm(leaf_facing(np.array(outward))) == pytest.approx(1.0)
 
     def test_up_bias_controls_how_far_the_cluster_leans(self):
         outward = np.array([3.0, 0.0, 0.0])
-        assert _leaf_facing(outward, up_bias=0.1)[2] < _leaf_facing(outward, up_bias=2.0)[2]
+        assert leaf_facing(outward, up_bias=0.1)[2] < leaf_facing(outward, up_bias=2.0)[2]
 
 
 class TestOrientedCluster:
     def test_all_points_lie_on_the_facing_side(self):
         centre = np.array([5.0, 0.0, 10.0])
-        facing = _leaf_facing(np.array([5.0, 0.0, 0.0]))
-        pts = np.asarray(_oriented_cluster(60, centre, facing, radius=2.0))
+        facing = leaf_facing(np.array([5.0, 0.0, 0.0]))
+        pts = np.asarray(oriented_cluster(60, centre, facing, radius=2.0))
         assert ((pts - centre) @ facing >= -1e-9).all()
 
     def test_cluster_follows_the_limb_not_world_up(self):
@@ -81,19 +86,26 @@ class TestOrientedCluster:
         # sub-canopy domed straight up regardless of its branch direction.
         centre = np.array([5.0, 0.0, 10.0])
         pts = np.asarray(
-            _oriented_cluster(60, centre, _leaf_facing(np.array([5.0, 0.0, 0.0])), radius=2.0)
+            oriented_cluster(60, centre, leaf_facing(np.array([5.0, 0.0, 0.0])), radius=2.0)
         )
         assert pts[:, 0].mean() > centre[0]
 
     def test_requested_count_is_honoured(self):
         centre = np.zeros(3)
         facing = np.array([0.0, 0.0, 1.0])
-        assert len(_oriented_cluster(7, centre, facing, radius=1.0)) == 7
+        assert len(oriented_cluster(7, centre, facing, radius=1.0)) == 7
+
+    def test_an_empty_cluster_is_empty_rather_than_a_crash(self):
+        # The copy this module used to carry raised ValueError here: an empty
+        # fibonacci_sphere is (0,), and subtracting a (3,) centre from it fails
+        # to broadcast.  A section whose chunks are all filtered out reaches
+        # this, so the engine's guarded version is what keeps the layout up.
+        assert oriented_cluster(0, np.zeros(3), np.array([0.0, 0.0, 1.0]), radius=1.0) == []
 
     def test_points_stay_within_the_radius(self):
         centre = np.array([1.0, 2.0, 3.0])
-        facing = _leaf_facing(np.array([0.0, 4.0, 0.0]))
-        pts = np.asarray(_oriented_cluster(40, centre, facing, radius=2.5))
+        facing = leaf_facing(np.array([0.0, 4.0, 0.0]))
+        pts = np.asarray(oriented_cluster(40, centre, facing, radius=2.5))
         assert np.linalg.norm(pts - centre, axis=1).max() <= 2.5 + 1e-9
 
 
