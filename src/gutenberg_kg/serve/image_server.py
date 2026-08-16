@@ -72,6 +72,19 @@ class ImageGenRequest(BaseModel):
     response_format: str = "b64_json"
 
 
+@app.get("/health")
+def health():
+    """Liveness probe.
+
+    Deliberately does no model work: it answers while a generation is in
+    flight and before any weights are resident, so a caller can tell "this
+    port is mine" apart from "this port is ready to be fast".
+
+    :returns: ``{"status": "ok", ...}`` identifying the backend.
+    """
+    return {"status": "ok", "backend": "flux", "model": "flux2-klein-4b"}
+
+
 @app.get("/v1/models")
 def list_models():
     """List the single model this server serves, in OpenAI-compatible format.

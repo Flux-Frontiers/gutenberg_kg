@@ -227,6 +227,19 @@ class ImageGenRequest(BaseModel):
     negative_prompt: str = "blurry, bad quality, distorted"
 
 
+@app.get("/health")
+def health():
+    """Liveness probe.
+
+    Does no model work, so it answers before the ~7 GB of SDXL weights have
+    been fetched or a pipeline built — which is exactly when a caller most
+    wants to know the port is live.
+
+    :returns: ``{"status": "ok", ...}`` identifying the backend.
+    """
+    return {"status": "ok", "backend": "sdxl-lightning", "model": _MODEL}
+
+
 @app.get("/v1/models")
 def list_models():
     """OpenAI-compatible single-model listing."""

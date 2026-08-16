@@ -49,7 +49,7 @@ from quiltwright.povgen import (
     pov_camera_from_frame,
     swept_scene,
 )
-from quiltwright.povray import PovCamera
+from quiltwright.povray import PovCamera, QuiltSpec
 
 from gutenberg_kg.treegeom import (
     DEFAULT_SEASON,
@@ -277,6 +277,62 @@ def build_tree_pov_scene(
     return scene, geometry
 
 
+def preview_spec(width: int = 1200, height: int = 900) -> QuiltSpec:
+    """
+    A one-view :class:`~quiltwright.QuiltSpec` — a plain ray-traced image.
+
+    ``render_pov_quilt`` is the only entry point that drives POV-Ray and
+    assembles the result, and it is parameterised entirely by the spec.  A
+    1x1 grid with a zero view cone therefore gives a single straight-on frame
+    through exactly the code path a quilt uses, rather than a second
+    render function that could drift from it.  What the preview shows is what
+    a tile of the quilt will contain.
+
+    :param width: Image width in pixels.
+    :param height: Image height in pixels.
+    :return: A spec whose ``n_views`` is 1.
+    """
+    return QuiltSpec(
+        columns=1,
+        rows=1,
+        quilt_width=int(width),
+        quilt_height=int(height),
+        aspect=float(width) / float(height),
+        view_cone=0.0,
+    )
+
+
+def tree_camera_frame(
+    geometry: TreeGeometry | None = None,
+    *,
+    bounds: tuple[np.ndarray, np.ndarray] | None = None,
+    fov: float = 14.0,
+):
+    """
+    The framing rule, before either renderer's coordinate conventions.
+
+    :func:`tree_pov_camera` converts this into POV-Ray's left-handed world;
+    a PyVista caller can assign ``(position, focal_point, up)`` straight to
+    ``plotter.camera_position``.  Exposing the frame itself is what lets the
+    interactive viewport show the *same* composition the ray-tracer will use,
+    instead of two framings that agree only by eye.
+
+    :param geometry: The placed tree.  **Pass this** — see
+        :func:`tree_pov_camera` for why framing the crown beats framing the
+        scene.
+    :param bounds: ``(lo, hi)`` fallback when no geometry is available.
+    :param fov: Vertical field of view in degrees.
+    :return: A ``kg_utils.viz3d.CameraFrame``.
+    :raises ValueError: If neither *geometry* nor *bounds* is usable.
+    """
+    if geometry is not None:
+        return frame_tree(geometry.crown, fov=fov)
+    if bounds is None:
+        raise ValueError("nothing measurable to frame: pass geometry or bounds")
+    lo, hi = bounds
+    return frame_tree(np.vstack([lo, hi]), fov=fov, include_root=False)
+
+
 def tree_pov_camera(
     scene: PovScene,
     *,
@@ -304,14 +360,11 @@ def tree_pov_camera(
     :return: The camera, in POV-Ray coordinates.
     :raises ValueError: If there is nothing measurable to frame.
     """
-    if geometry is not None:
-        frame = frame_tree(geometry.crown, fov=fov)
-    else:
-        bounds = scene.bounds()
-        if bounds is None:
-            raise ValueError("scene has no measurable geometry to frame")
-        lo, hi = bounds
-        frame = frame_tree(np.vstack([lo, hi]), fov=fov, include_root=False)
+    frame = tree_camera_frame(
+        geometry,
+        bounds=None if geometry is not None else scene.bounds(),
+        fov=fov,
+    )
     return pov_camera_from_frame(frame, fov=fov, zoom=zoom, handedness=scene.handedness)
 
 

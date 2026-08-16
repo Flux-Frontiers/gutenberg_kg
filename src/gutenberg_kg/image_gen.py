@@ -54,6 +54,51 @@ def _parse_size(size: str | None) -> tuple[int, int] | None:
 
 
 _DEFAULT_VLM_BASE_URL = "http://localhost:8080/v1"
+
+#: Endpoints probed when nothing is configured, in preference order — the two
+#: ports `make up` actually binds: FLUX/mflux on 8090, SDXL-Lightning on 8091.
+#: Which one is running depends on the host, and the Makefile already picks
+#: between them, so asking the user to name a port they did not choose is
+#: friction over a fact the machine can establish in a few milliseconds.
+DEFAULT_IMAGE_ENDPOINTS: tuple[str, ...] = (
+    "http://localhost:8090",
+    "http://localhost:8091",
+)
+
+
+def discover_image_endpoint(
+    candidates: tuple[str, ...] = DEFAULT_IMAGE_ENDPOINTS,
+    timeout: float = 1.5,
+) -> str | None:
+    """
+    Find a local image server that is actually up.
+
+    Tries ``/health`` first and falls back to ``/v1/models``.  Both routes are
+    served by `gutenkg-image-server` and `gutenkg-sdxl-server`, but ``/health``
+    is the newer one, and an already-running server — or a third-party
+    mflux-serve — will only answer the model listing.  Falling back costs one
+    extra request against a port that is live either way.
+
+    A connection refused, a timeout, or any non-200 all mean "not this one".
+
+    :param candidates: Base URLs to try, in order.
+    :param timeout: Per-candidate timeout in seconds.
+    :return: The first responding base URL, or None if none answered.
+    """
+    import httpx
+
+    for base in candidates:
+        root = base.rstrip("/")
+        for route in ("/health", "/v1/models"):
+            try:
+                reply = httpx.get(f"{root}{route}", timeout=timeout)
+            except Exception:  # noqa: BLE001 - any failure just means "try the next"
+                break  # port is down; no point trying its other route
+            if reply.status_code == 200:
+                return base
+    return None
+
+
 _DEFAULT_VLM_MODEL = "Qwen3-4B-Instruct-2507-MLX-8bit"
 
 _VLM_SYSTEM = (

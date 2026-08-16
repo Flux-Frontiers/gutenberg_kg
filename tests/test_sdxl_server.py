@@ -198,3 +198,21 @@ class TestRequestContract:
         body = sdxl_server.list_models()
         assert body["object"] == "list"
         assert body["data"][0]["id"] == sdxl_server._MODEL
+
+
+class TestHealth:
+    """The liveness route the endpoint probe and `make up` rely on."""
+
+    def test_it_answers_without_touching_the_model(self):
+        # The point of a health route on this server: SDXL weights are ~7 GB
+        # and load lazily, so a probe that needed them would report "down"
+        # for the entire window in which you most want to know the port is up.
+        from fastapi.testclient import TestClient
+
+        from gutenberg_kg.serve import sdxl_server
+
+        with patch.object(sdxl_server, "_load_pipeline", side_effect=AssertionError("loaded!")):
+            reply = TestClient(sdxl_server.app).get("/health")
+        assert reply.status_code == 200
+        assert reply.json()["status"] == "ok"
+        assert reply.json()["backend"] == "sdxl-lightning"

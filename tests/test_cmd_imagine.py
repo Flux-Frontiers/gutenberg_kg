@@ -109,11 +109,36 @@ def _fake_image():
     return mock.Mock(name="PILImage")
 
 
-def test_missing_endpoint_is_usage_error(monkeypatch):
+def test_no_endpoint_and_nothing_running_is_a_usage_error(monkeypatch):
+    # Discovery is patched rather than left to the machine: without this the
+    # test passes or fails depending on whether a dev happens to have an image
+    # server up on 8090, which is exactly the coupling `imagine` now exploits.
     monkeypatch.delenv("GUTENKG_IMAGE_ENDPOINT", raising=False)
-    result = CliRunner().invoke(cli, ["imagine", "a ship"])
+    with mock.patch("gutenberg_kg.image_gen.discover_image_endpoint", return_value=None):
+        result = CliRunner().invoke(cli, ["imagine", "a ship"])
     assert result.exit_code == 2  # click.UsageError
     assert "endpoint" in result.output.lower()
+    assert "make image-server" in result.output
+
+
+def test_a_running_server_is_discovered_when_nothing_is_configured(tmp_path, monkeypatch):
+    # The bug this fixes: `make up` binds a backend without exporting anything,
+    # so the CLI refused to work against a server that was right there.
+    monkeypatch.delenv("GUTENKG_IMAGE_ENDPOINT", raising=False)
+    out = tmp_path / "ship.png"
+    with (
+        mock.patch(
+            "gutenberg_kg.image_gen.discover_image_endpoint",
+            return_value="http://localhost:8090",
+        ),
+        mock.patch("gutenberg_kg.image_gen.generate_via_server", return_value=_fake_image()) as gen,
+    ):
+        result = CliRunner().invoke(
+            cli, ["imagine", "a ship", "-o", str(out), "--no-open", "--no-vlm"]
+        )
+    assert result.exit_code == 0, result.output
+    assert "discovered" in result.output
+    assert gen.call_args.kwargs["server_url"] == "http://localhost:8090"
 
 
 def test_happy_path_saves_image(tmp_path, monkeypatch):

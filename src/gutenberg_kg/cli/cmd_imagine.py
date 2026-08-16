@@ -93,8 +93,19 @@ def imagine_cmd(
 
     endpoint = endpoint or os.environ.get("GUTENKG_IMAGE_ENDPOINT")
     if not endpoint:
+        # Nothing configured is not the same as nothing running. `make up`
+        # picks a backend for this host and binds it without exporting
+        # anything, so probe before refusing.
+        endpoint = image_gen.discover_image_endpoint()
+        if endpoint:
+            click.echo(f"Using image server at {endpoint} (discovered).")
+    if not endpoint:
+        probed = ", ".join(image_gen.DEFAULT_IMAGE_ENDPOINTS)
         raise click.UsageError(
-            "No image endpoint configured. Set --endpoint or GUTENKG_IMAGE_ENDPOINT."
+            "No image server found. Start one with  make image-server  "
+            "(Apple Silicon / CUDA) or  make sdxl-server  (anywhere else), "
+            "or point --endpoint / GUTENKG_IMAGE_ENDPOINT at a running one.\n"
+            f"Probed: {probed}"
         )
 
     # Build the final prompt
