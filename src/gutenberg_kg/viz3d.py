@@ -44,12 +44,14 @@ from PyQt5.QtWidgets import (
     QCheckBox,
     QComboBox,
     QDialog,
+    QFrame,
     QHBoxLayout,
     QLabel,
     QLineEdit,
     QListWidget,
     QMainWindow,
     QPushButton,
+    QScrollArea,
     QSizePolicy,
     QTextBrowser,
     QVBoxLayout,
@@ -92,6 +94,9 @@ DEFAULT_SAVE = "gutenberg_forest_3d"
 
 CONTROL_PANEL_WIDTH: int = 260
 BUTTON_WIDTH: int = 120
+
+#: Width left for the control panel's scrollbar so it never overlaps a widget.
+SCROLLBAR_ALLOWANCE: int = 18
 ZOOM_FACTOR: float = 8.0
 
 #: Looking Glass preset the "Cast to LG" button renders for — the 16" Gen3
@@ -118,6 +123,15 @@ RENDER_STYLES: tuple[str, ...] = (RENDER_STYLE_PYVISTA, RENDER_STYLE_POVRAY)
 #: so this is chosen to stay under a minute rather than to look final —
 #: `gutenkg pov --render` is the path for a picture worth keeping.
 POV_PREVIEW_SIZE: tuple[int, int] = (900, 675)
+
+#: Antialiasing threshold for a preview: ``None`` means the ``+A`` flag is
+#: omitted entirely.  Measured on Huckleberry Finn at 900x675, this is the
+#: whole cost of a preview — 30.9 s with POV-Ray's default ``+A0.3`` against
+#: 10.3 s without.  Quality is almost free by comparison (``+Q5`` measured
+#: 10.5 s, ``+Q3`` 8.7 s), so the lever worth pulling is the one that stops
+#: supersampling every edge, not the one that removes shadows.  Casts keep
+#: antialiasing: a quilt is the artifact you hold on to.
+POV_PREVIEW_ANTIALIAS: float | None = None
 
 #: Vertical FOV used when framing for a render.  Matches the `gutenkg pov`
 #: and `gutenkg quilt` defaults, so the viewport, the ray-traced preview and
@@ -316,13 +330,16 @@ class PovRenderWorker(QThread):
     #: Emitted with a human-readable reason when it does not.
     failed: pyqtSignal = pyqtSignal(str)
 
-    def __init__(self, pov_path: Path, spec, camera, jobs: int = 1) -> None:
+    def __init__(
+        self, pov_path: Path, spec, camera, jobs: int = 1, antialias: float | None = 0.3
+    ) -> None:
         """Store the render inputs; nothing is traced until :meth:`run`."""
         super().__init__()
         self._pov_path = pov_path
         self._spec = spec
         self._camera = camera
         self._jobs = jobs
+        self._antialias = antialias
 
     def run(self) -> None:
         """Trace the scene, emitting :attr:`finished_ok` or :attr:`failed`."""
@@ -330,7 +347,12 @@ class PovRenderWorker(QThread):
             from quiltwright.povray import render_pov_quilt
 
             image = render_pov_quilt(
-                self._pov_path, self._spec, self._camera, jobs=self._jobs, progress=False
+                self._pov_path,
+                self._spec,
+                self._camera,
+                jobs=self._jobs,
+                antialias=self._antialias,
+                progress=False,
             )
         except FileNotFoundError as exc:
             self.failed.emit(f"No povray binary on PATH — install POV-Ray to ray-trace. ({exc})")
@@ -673,12 +695,22 @@ class ForestMainWindow(QMainWindow):
         ctrl_widget = self._build_control_panel()
         vis_widget = self._build_viewport_panel()
 
-        main_layout.addWidget(ctrl_widget)
+        # The panel is taller than the window on a laptop display, and the
+        # action buttons live at the bottom of it — so without this the Render
+        # and Cast buttons are simply unreachable rather than merely cramped.
+        ctrl_scroll = QScrollArea()
+        ctrl_scroll.setWidget(ctrl_widget)
+        ctrl_scroll.setWidgetResizable(True)
+        ctrl_scroll.setFrameShape(QFrame.NoFrame)
+        ctrl_scroll.setHorizontalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
+        ctrl_scroll.setFixedWidth(CONTROL_PANEL_WIDTH + SCROLLBAR_ALLOWANCE)
+
+        main_layout.addWidget(ctrl_scroll)
         main_layout.addWidget(vis_widget, stretch=1)
         main_layout.setContentsMargins(0, 0, 0, 0)
         main_layout.setSpacing(4)
 
-        ctrl_widget.setSizePolicy(QSizePolicy.Preferred, QSizePolicy.MinimumExpanding)
+        ctrl_scroll.setSizePolicy(QSizePolicy.Fixed, QSizePolicy.MinimumExpanding)
 
         self._setup_mesh_picking()
         self._connect_signals()
@@ -803,7 +835,7 @@ class ForestMainWindow(QMainWindow):
         ctrl.addWidget(self.stats_label)
 
         # Action buttons
-        ctrl.addStretch()
+        ctrl.addSpacing(10)
         self.render_btn = QPushButton("Render Forest")
         self.render_btn.setMinimumHeight(44)
         self.render_btn.setStyleSheet(
@@ -1108,7 +1140,14 @@ class ForestMainWindow(QMainWindow):
 
         camera = pov_camera_from_plotter(self.vtk_plotter, handedness=scene.handedness)
         spec = preview_spec(*POV_PREVIEW_SIZE)
-        self._start_pov_render(pov_path, spec, camera, label="preview", cast=False)
+        self._start_pov_render(
+            pov_path,
+            spec,
+            camera,
+            label="preview",
+            cast=False,
+            antialias=POV_PREVIEW_ANTIALIAS,
+        )
 
     def cast_povray(self) -> None:
         """
@@ -1144,7 +1183,16 @@ class ForestMainWindow(QMainWindow):
         self.visualizer.status = f"Wrote {pov_path.name}; ray-tracing {spec.n_views} views..."
         self._start_pov_render(pov_path, spec, camera, label="quilt", cast=True)
 
-    def _start_pov_render(self, pov_path: Path, spec, camera, *, label: str, cast: bool) -> None:
+    def _start_pov_render(
+        self,
+        pov_path: Path,
+        spec,
+        camera,
+        *,
+        label: str,
+        cast: bool,
+        antialias: float | None = 0.3,
+    ) -> None:
         """Run a POV-Ray trace in the background and route the result.
 
         :param pov_path: Scene to trace.
@@ -1152,6 +1200,7 @@ class ForestMainWindow(QMainWindow):
         :param camera: Camera in POV-Ray coordinates.
         :param label: Word for the status line.
         :param cast: Whether to push the finished quilt to the Looking Glass.
+        :param antialias: POV-Ray ``+A`` threshold; None omits the flag.
         """
         self.render_btn.setEnabled(False)
         self.cast_btn.setEnabled(False)
@@ -1161,7 +1210,13 @@ class ForestMainWindow(QMainWindow):
         )
         QApplication.processEvents()
 
-        worker = PovRenderWorker(pov_path, spec, camera, jobs=max(1, (os.cpu_count() or 2) - 1))
+        worker = PovRenderWorker(
+            pov_path,
+            spec,
+            camera,
+            jobs=max(1, (os.cpu_count() or 2) - 1),
+            antialias=antialias,
+        )
         worker.finished_ok.connect(lambda img: self._on_pov_done(img, spec, label, cast))
         worker.failed.connect(self._on_pov_failed)
         worker.finished.connect(
