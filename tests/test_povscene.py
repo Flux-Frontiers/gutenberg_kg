@@ -5,6 +5,11 @@ Deliberately **not** gated on ``pyvista``: the whole point of this path is that
 a scene can be composed without a VTK stack, and a test that imported pyvista
 to check that claim would not be checking it.  The two tests that do compare
 against the rasterised tree import pyvista themselves and skip without it.
+
+It *is* gated on ``quiltwright``, which ``gutenberg_kg.povscene`` imports at
+module scope for ``povgen``. Without the ``pov`` extra that import fails during
+collection, which aborts the whole run instead of skipping this file. CI
+installs the extra, so these tests run there.
 """
 
 import re
@@ -14,8 +19,11 @@ import sys
 
 import numpy as np
 import pytest
-from _render import can_render
-from kg_utils.viz3d import (
+
+pytest.importorskip("quiltwright", reason="quiltwright not installed — needs the `pov` extra")
+
+from _render import can_render  # noqa: E402
+from kg_utils.viz3d import (  # noqa: E402
     LEAF_ASPECT,
     LayoutEdge,
     LayoutNode,
@@ -24,12 +32,12 @@ from kg_utils.viz3d import (
     seed_from_key,
 )
 
-from gutenberg_kg.povscene import (
+from gutenberg_kg.povscene import (  # noqa: E402
     build_tree_pov_scene,
     tree_pov_camera,
     tree_pov_scene,
 )
-from gutenberg_kg.treegeom import SceneFilters, grow_tree_geometry
+from gutenberg_kg.treegeom import SceneFilters, grow_tree_geometry  # noqa: E402
 
 #: Identifiers quiltwright.povgen.swept_scene declares. Named here because this
 #: module no longer chooses them — the composition moved upstream, and these

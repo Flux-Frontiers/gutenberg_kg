@@ -23,6 +23,24 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Changed
 
+- **A missing optional extra now skips a test module instead of aborting the
+  run.** `tests/test_sdxl_server.py` and `tests/test_povscene.py` reach
+  `fastapi` and `quiltwright` through the modules under test, both at import
+  scope, so a checkout without the `image` / `pov` extras failed during
+  *collection* — and a collection error takes down the entire session, not just
+  the affected file. The whole suite would report `ModuleNotFoundError:
+  fastapi` and stop, which reads as a broken checkout rather than a narrow
+  install. Both now `pytest.importorskip` their dependency, the idiom
+  `test_cli.py` already used for `kg_rag`. CI installs both extras, so the
+  tests still run there.
+- **A real `integration` marker, registered.** `test_sdxl_server.py` exercises
+  a serving surface rather than a unit, and is marked accordingly, so
+  `pytest -m "not integration"` selects the 587 unit tests. Registering it in
+  `[tool.pytest.ini_options]` also makes a mistyped marker an error rather than
+  a silently-empty run. This replaces a `pytest -m "not slow"` line the
+  pyproject header had carried for a long time: no `slow` marker was ever
+  defined or applied anywhere in the repo, so that command always ran the
+  full suite while appearing to narrow it.
 - **One `kgmodule-utils` floor, not two.** `[project].dependencies` still named
   `>=0.13.2` while the `viz3d` and `pov` extras named `>=0.14.0`. Nothing
   mis-resolved — poetry takes the intersection, and the lock has a single
