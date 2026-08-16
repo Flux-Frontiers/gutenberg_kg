@@ -34,6 +34,8 @@ from kg_utils.viz3d import (  # noqa: E402
 
 from gutenberg_kg.povscene import (  # noqa: E402
     build_tree_pov_scene,
+    preview_spec,
+    tree_camera_frame,
     tree_pov_camera,
     tree_pov_scene,
 )
@@ -362,6 +364,62 @@ class TestCamera:
 
         with pytest.raises(ValueError, match="measurable"):
             tree_pov_camera(PovScene())
+
+
+class TestPreviewSpec:
+    """The one-view spec the viewer's Render button traces through."""
+
+    def test_it_is_a_single_view(self):
+        spec = preview_spec(800, 600)
+        assert spec.n_views == 1
+        assert (spec.columns, spec.rows) == (1, 1)
+
+    def test_the_view_cone_is_flat(self):
+        # A preview is one straight-on frame. Any cone would sweep the camera
+        # off-axis and show a tile that is not what the centre view contains.
+        assert preview_spec().view_cone == 0.0
+
+    def test_the_tile_is_the_requested_size(self):
+        spec = preview_spec(900, 675)
+        assert (spec.tile_width, spec.tile_height) == (900, 675)
+        assert spec.aspect == pytest.approx(4 / 3)
+
+
+class TestCameraFrame:
+    """The framing rule the viewport and both renderers share."""
+
+    def test_geometry_and_the_pov_camera_agree(self):
+        # The whole point of exposing the frame: what the viewport is told to
+        # look at must be what the ray-tracer frames, not merely similar.
+        nodes, edges = _book()
+        scene, geometry = build_tree_pov_scene(nodes, edges, slug=SLUG, genre="philosophy")
+        frame = tree_camera_frame(geometry, fov=14.0)
+        camera = tree_pov_camera(scene, geometry=geometry, fov=14.0)
+        # Same point, expressed in POV-Ray's left-handed world: the scene is
+        # written `flip-z`, so z negates and x is carried straight over. Pinned
+        # explicitly because a silent handedness change would not break any
+        # render — it would quietly mirror the tree.
+        assert scene.handedness == "flip-z"
+        assert frame.focal_point[0] == pytest.approx(camera.look_at[0], abs=1e-6)
+        assert frame.focal_point[2] == pytest.approx(-camera.look_at[2], abs=1e-6)
+
+    def test_it_frames_from_bounds_without_geometry(self):
+        lo, hi = np.array([-2.0, -2.0, 0.0]), np.array([2.0, 2.0, 6.0])
+        frame = tree_camera_frame(bounds=(lo, hi), fov=14.0)
+        # Level view, +z up, standing off along -y.
+        assert frame.up == (0.0, 0.0, 1.0)
+        assert frame.position[1] < frame.focal_point[1]
+        assert frame.position[2] == pytest.approx(frame.focal_point[2])
+
+    def test_a_narrower_lens_stands_further_back(self):
+        lo, hi = np.array([-2.0, -2.0, 0.0]), np.array([2.0, 2.0, 6.0])
+        near = tree_camera_frame(bounds=(lo, hi), fov=40.0)
+        far = tree_camera_frame(bounds=(lo, hi), fov=10.0)
+        assert abs(far.position[1]) > abs(near.position[1])
+
+    def test_nothing_to_frame_is_an_error(self):
+        with pytest.raises(ValueError, match="measurable"):
+            tree_camera_frame()
 
 
 class TestReproducibility:

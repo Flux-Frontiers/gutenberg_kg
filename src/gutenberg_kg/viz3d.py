@@ -25,6 +25,7 @@ from __future__ import annotations
 import atexit
 import gc
 import logging
+import os
 import sys
 import time
 import warnings
@@ -36,8 +37,8 @@ import param
 import pyvista as pv
 from kg_utils.viz3d import LayoutEdge, LayoutNode
 from markdown import markdown  # type: ignore[import-untyped]
-from PyQt5.QtCore import Qt, pyqtSignal
-from PyQt5.QtGui import QFont
+from PyQt5.QtCore import Qt, QThread, pyqtSignal
+from PyQt5.QtGui import QFont, QPixmap
 from PyQt5.QtWidgets import (
     QApplication,
     QCheckBox,
@@ -104,6 +105,130 @@ QUILT_SPEC: str = "16-landscape"
 #: `gutenkg quilt` still writes full resolution for files that get kept.
 CAST_SCALE: float = 0.5
 
+#: The two backends the Render button can drive.  PyVista draws into the live
+#: viewport; POV-Ray ray-traces the same tree to an image file.  They are not
+#: interchangeable in kind — one is a viewport, the other is a render — which
+#: is why this is an explicit style rather than a quality setting.
+RENDER_STYLE_PYVISTA: str = "PyVista (live)"
+RENDER_STYLE_POVRAY: str = "POV-Ray (ray-traced)"
+RENDER_STYLES: tuple[str, ...] = (RENDER_STYLE_PYVISTA, RENDER_STYLE_POVRAY)
+
+#: Preview size for a POV-Ray render from the viewer.  Ray-tracing this tree
+#: costs roughly 18 s at 640x480 on an M-series laptop and scales with pixels,
+#: so this is chosen to stay under a minute rather than to look final —
+#: `gutenkg pov --render` is the path for a picture worth keeping.
+POV_PREVIEW_SIZE: tuple[int, int] = (900, 675)
+
+#: Vertical FOV used when framing for a render.  Matches the `gutenkg pov`
+#: and `gutenkg quilt` defaults, so the viewport, the ray-traced preview and
+#: the cast quilt all compose the tree identically.
+RENDER_FOV: float = 14.0
+
+# ---------------------------------------------------------------------------
+# Theme
+# ---------------------------------------------------------------------------
+
+#: Three surface levels rather than one. The previous theme painted every
+#: widget `#1a1a2e` with `border: none`, so a list, a combo box and the panel
+#: behind them were the same flat slab — nothing to tell you where a control
+#: started or whether it had focus. Depth here comes from a lighter surface as
+#: a control becomes more interactive, plus a real 1 px edge on anything you
+#: can type in, pick from or scroll.
+BG_WINDOW: str = "#11151e"
+BG_PANEL: str = "#1a2030"
+BG_INPUT: str = "#232b3d"
+BG_INPUT_HOVER: str = "#2b3448"
+BORDER: str = "#3a4358"
+BORDER_FOCUS: str = "#5FA8D3"
+TEXT: str = "#e6e9ef"
+TEXT_DIM: str = "#9aa4b8"
+ACCENT: str = "#90EE90"
+SELECT_BG: str = "#2E8B57"
+
+DARK_STYLESHEET: str = f"""
+    QMainWindow, QDialog {{ background-color: {BG_WINDOW}; }}
+    QWidget {{ background-color: {BG_PANEL}; color: {TEXT}; }}
+    QLabel {{ background: transparent; border: none; color: {TEXT}; }}
+
+    /* Anything you type in, pick from, or scroll gets a real edge. */
+    QLineEdit, QListWidget, QComboBox, QTextBrowser, QSpinBox {{
+        background-color: {BG_INPUT};
+        color: {TEXT};
+        border: 1px solid {BORDER};
+        border-radius: 4px;
+        padding: 4px;
+        selection-background-color: {SELECT_BG};
+        selection-color: white;
+    }}
+    QLineEdit:hover, QListWidget:hover, QComboBox:hover {{
+        background-color: {BG_INPUT_HOVER};
+        border-color: {BORDER_FOCUS};
+    }}
+    QLineEdit:focus, QListWidget:focus, QComboBox:focus {{
+        border: 1px solid {BORDER_FOCUS};
+    }}
+
+    QListWidget::item {{ padding: 3px 4px; border-radius: 2px; }}
+    QListWidget::item:hover {{ background-color: {BG_INPUT_HOVER}; }}
+    QListWidget::item:selected {{ background-color: {SELECT_BG}; color: white; }}
+
+    QComboBox::drop-down {{
+        border-left: 1px solid {BORDER};
+        width: 18px;
+    }}
+    QComboBox QAbstractItemView {{
+        background-color: {BG_INPUT};
+        border: 1px solid {BORDER_FOCUS};
+        selection-background-color: {SELECT_BG};
+        outline: none;
+    }}
+
+    /* A checkbox with no visible box is just a label. */
+    QCheckBox {{ background: transparent; padding: 3px; spacing: 7px; }}
+    QCheckBox::indicator {{
+        width: 14px; height: 14px;
+        border: 1px solid {BORDER};
+        border-radius: 3px;
+        background-color: {BG_INPUT};
+    }}
+    QCheckBox::indicator:hover {{ border-color: {BORDER_FOCUS}; }}
+    QCheckBox::indicator:checked {{
+        background-color: {SELECT_BG};
+        border-color: {ACCENT};
+    }}
+
+    QPushButton {{
+        background-color: {SELECT_BG}; color: white;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        border-radius: 4px; padding: 6px; margin: 2px;
+        font-size: 12px;
+    }}
+    QPushButton:hover {{ border-color: {ACCENT}; }}
+    QPushButton:pressed {{ background-color: #26714a; }}
+    QPushButton:disabled {{
+        background-color: #2a3040; color: {TEXT_DIM};
+        border-color: {BORDER};
+    }}
+    QPushButton#reset-view   {{ background-color: #FFEB3B; color: black; }}
+    QPushButton#frame-render {{ background-color: #4A7C59; color: white; }}
+    QPushButton#reset-all    {{ background-color: #8B0000; color: white; }}
+
+    QScrollBar:vertical {{
+        background: {BG_PANEL}; width: 11px; margin: 0;
+        border: none; border-radius: 5px;
+    }}
+    QScrollBar::handle:vertical {{
+        background: {BORDER}; border-radius: 5px; min-height: 24px;
+    }}
+    QScrollBar::handle:vertical:hover {{ background: {BORDER_FOCUS}; }}
+    QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {{ height: 0; }}
+
+    QToolTip {{
+        background-color: {BG_INPUT}; color: {TEXT};
+        border: 1px solid {BORDER_FOCUS}; padding: 4px;
+    }}
+"""
+
 
 # ---------------------------------------------------------------------------
 # Text formatting
@@ -168,6 +293,90 @@ class TextPopup(QDialog):
 # ---------------------------------------------------------------------------
 # create_forest_visualization
 # ---------------------------------------------------------------------------
+
+
+class PovRenderWorker(QThread):
+    """
+    Ray-trace a written ``.pov`` off the GUI thread.
+
+    POV-Ray is an external process and a slow one — roughly 18 s for a single
+    900x675 view of a mid-sized book, and a 48-view quilt is that again per
+    tile.  Calling it inline would freeze the window for the whole render,
+    including the status label meant to report progress, so the work happens
+    here and the window learns about it through signals.
+
+    :param pov_path: The scene file to trace.
+    :param spec: Quilt spec; a 1x1 spec renders a single image.
+    :param camera: Camera in POV-Ray coordinates.
+    :param jobs: Parallel POV-Ray processes.
+    """
+
+    #: Emitted with the assembled image once the render succeeds.
+    finished_ok: pyqtSignal = pyqtSignal(object)
+    #: Emitted with a human-readable reason when it does not.
+    failed: pyqtSignal = pyqtSignal(str)
+
+    def __init__(self, pov_path: Path, spec, camera, jobs: int = 1) -> None:
+        """Store the render inputs; nothing is traced until :meth:`run`."""
+        super().__init__()
+        self._pov_path = pov_path
+        self._spec = spec
+        self._camera = camera
+        self._jobs = jobs
+
+    def run(self) -> None:
+        """Trace the scene, emitting :attr:`finished_ok` or :attr:`failed`."""
+        try:
+            from quiltwright.povray import render_pov_quilt
+
+            image = render_pov_quilt(
+                self._pov_path, self._spec, self._camera, jobs=self._jobs, progress=False
+            )
+        except FileNotFoundError as exc:
+            self.failed.emit(f"No povray binary on PATH — install POV-Ray to ray-trace. ({exc})")
+        except Exception as exc:  # noqa: BLE001 - surfaced to the status bar
+            self.failed.emit(str(exc))
+        else:
+            self.finished_ok.emit(image)
+
+
+class ImagePopup(QDialog):
+    """
+    A frameless-ish viewer for a rendered image.
+
+    :param title: Window title.
+    :param path: Image file to display.
+    :param parent: Parent widget.
+    """
+
+    def __init__(self, title: str, path: Path, parent=None) -> None:
+        """Show *path* scaled to fit, with the file location under it."""
+        super().__init__(parent)
+        self.setWindowTitle(title)
+        layout = QVBoxLayout(self)
+
+        label = QLabel(self)
+        pixmap = QPixmap(str(path))
+        if not pixmap.isNull():
+            label.setPixmap(
+                pixmap.scaled(
+                    min(pixmap.width(), 1100),
+                    min(pixmap.height(), 800),
+                    Qt.KeepAspectRatio,  # type: ignore[attr-defined]
+                    Qt.SmoothTransformation,  # type: ignore[attr-defined]
+                )
+            )
+        label.setAlignment(Qt.AlignCenter)  # type: ignore[attr-defined]
+        layout.addWidget(label)
+
+        where = QLabel(str(path), self)
+        where.setStyleSheet(f"color:{ACCENT}; font-size:11px;")
+        where.setTextInteractionFlags(Qt.TextSelectableByMouse)  # type: ignore[attr-defined]
+        layout.addWidget(where)
+
+        close_btn = QPushButton("Close", self)
+        close_btn.clicked.connect(self.close)  # type: ignore[arg-type]
+        layout.addWidget(close_btn)
 
 
 def create_forest_visualization(
@@ -263,6 +472,11 @@ class GutenbergForestVisualizer(param.Parameterized):
     )
     season: str = param.Selector(
         objects=list(SEASONS), default=DEFAULT_SEASON, doc="Foliage palette for the organic tree"
+    )
+    render_style: str = param.Selector(
+        objects=list(RENDER_STYLES),
+        default=RENDER_STYLE_PYVISTA,
+        doc="Which backend the Render button drives",
     )
 
     # Visibility toggles by node kind
@@ -454,17 +668,7 @@ class ForestMainWindow(QMainWindow):
         self.setCentralWidget(central)
         main_layout = QHBoxLayout(central)
 
-        self.setStyleSheet("""
-            QPushButton {
-                background-color: #2E8B57; color: white;
-                border: none; border-radius: 3px; padding: 6px; margin: 2px;
-            }
-            QPushButton#reset-view  { background-color: #FFEB3B; color: black; }
-            QPushButton#reset-all   { background-color: #8B0000; color: white; }
-            QPushButton { font-size: 12px; }
-            QWidget { background-color: #1a1a2e; color: #e0e0e0; }
-            QLabel  { background: transparent; border: none; }
-        """)
+        self.setStyleSheet(DARK_STYLESHEET)
 
         ctrl_widget = self._build_control_panel()
         vis_widget = self._build_viewport_panel()
@@ -487,15 +691,20 @@ class ForestMainWindow(QMainWindow):
     @staticmethod
     def _h2(text: str) -> QLabel:
         """Build a bold, light-green section-heading label for the control panel."""
-        lbl = QLabel(f"<b style='font-size:13px;color:#90EE90'>{text}</b>")
-        lbl.setStyleSheet("background:transparent; border:none;")
+        lbl = QLabel(f"<b style='font-size:13px;color:{ACCENT}'>{text}</b>")
+        # A rule under each heading is what actually groups the panel: without
+        # it the sections run together into one column of controls.
+        lbl.setStyleSheet(
+            f"background:transparent; border:none; border-bottom:1px solid {BORDER};"
+            "padding-top:6px; padding-bottom:3px; margin-bottom:2px;"
+        )
         return lbl
 
     @staticmethod
     def _lbl(text: str) -> QLabel:
         """Build a plain, muted-gray text label for the control panel."""
         lbl = QLabel(text)
-        lbl.setStyleSheet("background:transparent; border:none; color:#c0c0c0;")
+        lbl.setStyleSheet(f"background:transparent; border:none; color:{TEXT_DIM};")
         return lbl
 
     def _build_control_panel(self) -> QWidget:
@@ -539,6 +748,20 @@ class ForestMainWindow(QMainWindow):
         )
         ctrl.addWidget(self.cb_organic)
 
+        style_row = QHBoxLayout()
+        style_row.addWidget(self._lbl("Style:"))
+        self.style_selector = QComboBox()
+        self.style_selector.addItems(list(RENDER_STYLES))
+        self.style_selector.setCurrentText(self.visualizer.render_style)
+        self.style_selector.setToolTip(
+            "PyVista draws into the viewport below.\n"
+            "POV-Ray ray-traces the same tree to an image file — analytic\n"
+            "primitives, exact silhouettes, and slow. Needs one book selected\n"
+            "and a povray binary on PATH."
+        )
+        style_row.addWidget(self.style_selector, stretch=1)
+        ctrl.addLayout(style_row)
+
         season_row = QHBoxLayout()
         season_row.addWidget(self._lbl("Season:"))
         self.season_selector = QComboBox()
@@ -574,7 +797,8 @@ class ForestMainWindow(QMainWindow):
         self.stats_label = QLabel(self._stats_text())
         self.stats_label.setWordWrap(True)
         self.stats_label.setStyleSheet(
-            "background:#0d1b2a; color:#90EE90; padding:5px; border-radius:3px;"
+            f"background:{BG_INPUT}; color:{ACCENT}; padding:6px;"
+            f"border:1px solid {BORDER}; border-radius:4px;"
         )
         ctrl.addWidget(self.stats_label)
 
@@ -619,14 +843,24 @@ class ForestMainWindow(QMainWindow):
         self.reset_view_btn = QPushButton("Reset View")
         self.reset_view_btn.setObjectName("reset-view")
         self.reset_view_btn.setFixedWidth(BUTTON_WIDTH)
+        self.frame_btn = QPushButton("Frame for Render")
+        self.frame_btn.setObjectName("frame-render")
+        self.frame_btn.setFixedWidth(BUTTON_WIDTH + 30)
+        self.frame_btn.setToolTip(
+            "Place the camera exactly where the ray-tracer and the quilt will\n"
+            "place it: level, +z up, standing off the crown at the render FOV.\n"
+            "Reset View frames whatever is on screen; this frames the subject."
+        )
         self.reset_settings_btn = QPushButton("Reset Settings")
         self.reset_settings_btn.setObjectName("reset-all")
         self.reset_settings_btn.setFixedWidth(BUTTON_WIDTH)
         self.status_display = QLabel("Ready")
         self.status_display.setStyleSheet(
-            "font-weight:bold; font-size:13px; background:#0d1b2a; color:#90EE90; padding:3px;"
+            f"font-weight:bold; font-size:13px; background:{BG_INPUT}; color:{ACCENT};"
+            f"padding:5px; border:1px solid {BORDER}; border-radius:4px;"
         )
         btn_row.addWidget(self.reset_view_btn)
+        btn_row.addWidget(self.frame_btn)
         btn_row.addWidget(self.reset_settings_btn)
         btn_row.addWidget(self.status_display, stretch=1)
         vis.addLayout(btn_row)
@@ -699,7 +933,9 @@ class ForestMainWindow(QMainWindow):
         self.show_text_btn.clicked.connect(self.show_selected_text)
         self.save_btn.clicked.connect(self.save_current_view)
         self.reset_view_btn.clicked.connect(self.reset_camera)
+        self.frame_btn.clicked.connect(self.frame_for_render)
         self.reset_settings_btn.clicked.connect(self.reset_settings)
+        self.style_selector.currentTextChanged.connect(self._on_style_changed)
 
         self.status_changed.connect(self.update_status_display)
         self.visualizer.param.watch(self.on_status_change, "status")
@@ -764,9 +1000,257 @@ class ForestMainWindow(QMainWindow):
 
     # -- Render / pick -------------------------------------------------------
 
+    def _on_style_changed(self, style: str) -> None:
+        """Track the render-style combo, and relabel the buttons it governs.
+
+        POV-Ray is a single-book backend, so selecting it also turns organic
+        mode on: the spiral forest has no POV composer, and silently rendering
+        something other than what the viewport shows would be worse than
+        forcing the mode that matches.
+
+        :param style: The newly selected entry of :data:`RENDER_STYLES`.
+        """
+        self.visualizer.render_style = style
+        povray = style == RENDER_STYLE_POVRAY
+        if povray and not self.cb_organic.isChecked():
+            self.cb_organic.setChecked(True)
+            self.visualizer.status = "POV-Ray renders one book — organic mode enabled."
+        self.render_btn.setText("Ray-trace Tree" if povray else "Render Forest")
+        self.cast_btn.setText("Cast to LG (POV)" if povray else "Cast to LG")
+
+    def _single_book(self) -> tuple[str, str] | None:
+        """Resolve the one loaded book, or report why there isn't one.
+
+        The POV composer takes one book's nodes and edges; there is no forest
+        equivalent. This is the same gate :func:`create_forest_visualization`
+        applies to organic mode, kept in one shape so both report alike.
+
+        :return: ``(slug, genre)``, or None with the status bar already set.
+        """
+        if not self.visualizer.all_nodes:
+            self.visualizer.status = "Nothing loaded — select a book and render first."
+            return None
+        slugs = {n.id.split(":")[0] for n in self.visualizer.all_nodes}
+        if len(slugs) != 1:
+            self.visualizer.status = f"POV-Ray renders one book at a time ({len(slugs)} loaded)."
+            return None
+        slug = slugs.pop()
+        return slug, self.visualizer._book_genre_map.get(slug, "unknown")
+
+    def _build_pov_scene(self):
+        """Grow the loaded book and compose it as POV-Ray primitives.
+
+        The slug comes back with the scene so callers can name the output file
+        without resolving the book a second time.
+
+        :return: ``(scene, geometry, slug)``, or None with the status bar set.
+        """
+        resolved = self._single_book()
+        if resolved is None:
+            return None
+        slug, genre = resolved
+        from gutenberg_kg.povscene import build_tree_pov_scene
+
+        def _progress(message: str) -> None:
+            self.visualizer.status = message
+            QApplication.processEvents()
+
+        scene, geometry = build_tree_pov_scene(
+            self.visualizer.all_nodes,
+            self.visualizer.all_edges,
+            slug=slug,
+            genre=genre,
+            entry_times=self.visualizer._entry_times,
+            filters=SceneFilters(
+                show_entities=self.visualizer.show_entities,
+                show_topics=self.visualizer.show_entities,
+            ),
+            season=self.visualizer.season,
+            progress=_progress,
+        )
+        return scene, geometry, slug
+
     def on_render_clicked(self) -> None:
-        """Render button handler: trigger a full load + render of the scene."""
-        self.visualizer.visualize()
+        """Render button handler: drive whichever backend the style names."""
+        if self.visualizer.render_style == RENDER_STYLE_POVRAY:
+            self.render_povray()
+        else:
+            self.visualizer.visualize()
+
+    def render_povray(self) -> None:
+        """
+        Ray-trace the loaded book and show the result.
+
+        Loads if needed, writes the ``.pov`` beside the other renders, then
+        hands the trace to :class:`PovRenderWorker` so the window stays
+        responsive.  The camera comes from the viewport, so what is traced is
+        what is being looked at — use **Frame for Render** first to put the
+        viewport where the quilt would be.
+        """
+        if not self.visualizer.all_nodes:
+            self.visualizer.load_selected()
+        composed = self._build_pov_scene()
+        if composed is None:
+            return
+        scene, geometry, slug = composed
+        self._pov_geometry = geometry
+
+        out_dir = Path(self.visualizer.corpus_root).parent / "renders" / "pov"
+        out_dir.mkdir(parents=True, exist_ok=True)
+        self._pov_stem = out_dir / slug
+        pov_path = scene.write(self._pov_stem.with_suffix(".pov"))
+        self.visualizer.status = f"Wrote {pov_path.name} ({pov_path.stat().st_size / 1024:.0f} KB)"
+        QApplication.processEvents()
+
+        from quiltwright.povgen import pov_camera_from_plotter
+
+        from gutenberg_kg.povscene import preview_spec
+
+        camera = pov_camera_from_plotter(self.vtk_plotter, handedness=scene.handedness)
+        spec = preview_spec(*POV_PREVIEW_SIZE)
+        self._start_pov_render(pov_path, spec, camera, label="preview", cast=False)
+
+    def cast_povray(self) -> None:
+        """
+        Ray-trace a full light-field quilt and push it to the Looking Glass.
+
+        The same scene the preview traced, at the Looking Glass preset instead
+        of a single view — so this is :data:`POV_PREVIEW_SIZE` arithmetic times
+        ``n_views``, which is minutes rather than seconds.  The quilt is
+        written to ``renders/pov/`` before Bridge is contacted, so a failed
+        cast still leaves the hologram file behind.
+        """
+        composed = self._build_pov_scene()
+        if composed is None:
+            return
+        scene, geometry, slug = composed
+        self._pov_geometry = geometry
+
+        out_dir = Path(self.visualizer.corpus_root).parent / "renders" / "pov"
+        out_dir.mkdir(parents=True, exist_ok=True)
+        self._pov_stem = out_dir / f"{slug}_quilt"
+        pov_path = scene.write(self._pov_stem.with_suffix(".pov"))
+
+        from quiltwright import QUILT_PRESETS
+        from quiltwright.povgen import pov_camera_from_plotter
+
+        preset = QUILT_PRESETS[QUILT_SPEC]
+        spec = replace(
+            preset,
+            quilt_width=int(preset.quilt_width * CAST_SCALE) // preset.columns * preset.columns,
+            quilt_height=int(preset.quilt_height * CAST_SCALE) // preset.rows * preset.rows,
+        )
+        camera = pov_camera_from_plotter(self.vtk_plotter, handedness=scene.handedness)
+        self.visualizer.status = f"Wrote {pov_path.name}; ray-tracing {spec.n_views} views..."
+        self._start_pov_render(pov_path, spec, camera, label="quilt", cast=True)
+
+    def _start_pov_render(self, pov_path: Path, spec, camera, *, label: str, cast: bool) -> None:
+        """Run a POV-Ray trace in the background and route the result.
+
+        :param pov_path: Scene to trace.
+        :param spec: Quilt spec; 1x1 for a preview.
+        :param camera: Camera in POV-Ray coordinates.
+        :param label: Word for the status line.
+        :param cast: Whether to push the finished quilt to the Looking Glass.
+        """
+        self.render_btn.setEnabled(False)
+        self.cast_btn.setEnabled(False)
+        self.visualizer.status = (
+            f"POV-Ray: tracing {spec.n_views} view(s) at "
+            f"{spec.tile_width}x{spec.tile_height} — this is not fast..."
+        )
+        QApplication.processEvents()
+
+        worker = PovRenderWorker(pov_path, spec, camera, jobs=max(1, (os.cpu_count() or 2) - 1))
+        worker.finished_ok.connect(lambda img: self._on_pov_done(img, spec, label, cast))
+        worker.failed.connect(self._on_pov_failed)
+        worker.finished.connect(
+            lambda: (self.render_btn.setEnabled(True), self.cast_btn.setEnabled(True))
+        )
+        self._pov_worker = worker  # keep a reference; a GC'd QThread is a crash
+        worker.start()
+
+    def _on_pov_failed(self, message: str) -> None:
+        """Report a failed trace on the status bar.
+
+        :param message: Human-readable reason.
+        """
+        self.visualizer.status = f"POV-Ray failed: {message}"
+
+    def _on_pov_done(self, image, spec, label: str, cast: bool) -> None:
+        """Save the traced image, then preview or cast it.
+
+        :param image: Assembled RGB array from POV-Ray.
+        :param spec: The spec it was rendered against.
+        :param label: Word for the status line.
+        :param cast: Whether to push it to the Looking Glass.
+        """
+        from quiltwright import save_quilt
+
+        try:
+            out = save_quilt(image, self._pov_stem, spec)
+        except Exception as exc:  # noqa: BLE001 - surfaced to the status bar
+            self.visualizer.status = f"POV-Ray render succeeded but saving failed: {exc}"
+            return
+        self.visualizer.status = f"POV-Ray {label} → {out}"
+
+        if not cast:
+            popup = ImagePopup(f"POV-Ray — {self.visualizer.window_title}", out, self)
+            popup.resize(min(POV_PREVIEW_SIZE[0] + 40, 1200), POV_PREVIEW_SIZE[1] + 110)
+            popup.show()
+            return
+
+        try:
+            from quiltwright import cast_quilt
+
+            cast_quilt(image, spec)
+        except Exception as exc:  # noqa: BLE001 - the quilt file is kept regardless
+            self.visualizer.status = f"Quilt saved to {out}, but casting failed: {exc}"
+            return
+        self.visualizer.status = f"Cast POV-Ray quilt to the Looking Glass → {out}"
+
+    def frame_for_render(self) -> None:
+        """
+        Put the viewport camera exactly where the renderers will put theirs.
+
+        ``Reset View`` frames whatever actors are on screen, ground slab and
+        all.  This frames the *subject*: :func:`kg_utils.viz3d.frame_tree` is
+        the one rule ``gutenkg pov`` and ``gutenkg quilt`` also use, so after
+        pressing this the viewport is a true preview of the render — which is
+        what makes the depth budget on a light-field panel predictable rather
+        than a matter of nudging the mouse.
+
+        Falls back to the plotter's bounds when no tree has been grown yet,
+        the same fallback :func:`tree_pov_camera` makes.
+        """
+        if not self.plotter:
+            return
+        from gutenberg_kg.povscene import tree_camera_frame
+
+        geometry = getattr(self, "_pov_geometry", None)
+        bounds = None
+        if geometry is None:
+            raw = self.plotter.bounds
+            if raw is None:
+                self.visualizer.status = "Nothing to frame — render something first."
+                return
+            bounds = (
+                np.array([raw[0], raw[2], raw[4]], dtype=float),
+                np.array([raw[1], raw[3], raw[5]], dtype=float),
+            )
+        try:
+            frame = tree_camera_frame(geometry, bounds=bounds, fov=RENDER_FOV)
+        except ValueError as exc:
+            self.visualizer.status = f"Cannot frame: {exc}"
+            return
+
+        self.plotter.camera_position = [frame.position, frame.focal_point, frame.up]
+        self.plotter.camera.view_angle = RENDER_FOV
+        self.plotter.render()
+        self.visualizer.status = (
+            f"Framed for render at {RENDER_FOV:.0f}° FOV"
+            f"{'' if geometry is not None else ' (from scene bounds)'}."
+        )
 
     def cast_to_looking_glass(self) -> None:
         """
@@ -788,6 +1272,10 @@ class ForestMainWindow(QMainWindow):
             return
         if not self.visualizer.all_nodes:
             self.visualizer.status = "Nothing to cast — render something first."
+            return
+
+        if self.visualizer.render_style == RENDER_STYLE_POVRAY:
+            self.cast_povray()
             return
 
         preset = QUILT_PRESETS[QUILT_SPEC]
