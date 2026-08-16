@@ -88,6 +88,32 @@ LEAF_FINISH = Finish(ambient=0.18, diffuse=0.78, phong=0.15, phong_size=12.0)
 #: are annotation, not botany, and they must stay legible against a dark sky.
 SPORE_FINISH = Finish(ambient=0.55, diffuse=0.45, phong=0.3, phong_size=60.0)
 
+#: Ground finish.  Matte, and deliberately dim: its whole job is to catch the
+#: tree's shadow.  ``diffuse`` is low because it is multiplied by a key light
+#: running at :data:`DEFAULT_BRIGHTNESS` — at 0.7 the slab clipped to a flat
+#: lime that pulled the eye straight off the tree.
+GROUND_FINISH = Finish(ambient=0.10, diffuse=0.42, phong=None)
+
+#: Key-light multiplier.  Not ``1.0``: a canopy of thousands of small blades
+#: self-shadows heavily, and the wood is a dark brown against a dark sky, so a
+#: unit key renders a tree that is technically correct and visually black.
+#: Measured on Pepys — 9,993 leaves — where 1.0 left the trunk unreadable.
+DEFAULT_BRIGHTNESS: float = 2.6
+
+#: Global ambient.  Lifts the shadow side just enough that the far half of the
+#: crown is not a silhouette; higher flattens the form.
+AMBIENT_LIGHT = "#3a3a44"
+
+#: Ground slab thickness.  The top face sits at ``z = 0``, where the trunk's
+#: root node is, so the tree stands *on* the ground instead of hovering over a
+#: plane parked below it.
+GROUND_THICKNESS: float = 0.4
+
+#: Default ground slab edge, as a multiple of the crown's width.  Wide enough
+#: that the shadow falls on it rather than off its edge, narrow enough to stay
+#: inside the light-field depth budget.
+DEFAULT_GROUND: float = 3.0
+
 
 def tree_lights(lo: np.ndarray, hi: np.ndarray, *, intensity: float = 1.0) -> list[LightSource]:
     """
@@ -119,9 +145,12 @@ def tree_lights(lo: np.ndarray, hi: np.ndarray, *, intensity: float = 1.0) -> li
         value = intensity * fraction
         return (value, value, value)
 
-    # The camera looks along +y from -y, so "front" is -y.
+    # The camera looks along +y from -y, so "front" is -y.  The key is steep —
+    # 2.2 up against 1.1 across — so the tree drops its shadow near its own
+    # base.  A shallower key throws the canopy's shadow so far to one side that
+    # it reads as a separate object rather than as contact with the ground.
     return [
-        LightSource(position=tuple(centre + np.array([1.4, -1.5, 1.6]) * radius), color=level(1.0)),
+        LightSource(position=tuple(centre + np.array([1.0, -1.1, 2.2]) * radius), color=level(1.0)),
         LightSource(
             position=tuple(centre + np.array([-1.6, -1.0, 0.7]) * radius),
             color=level(0.35),
@@ -151,8 +180,10 @@ def tree_pov_scene(
     subdivisions: int = 4,
     slug: str = "tree",
     cling: float = 0.7,
-    ground_size: float = 0.0,
+    ground_size: float = DEFAULT_GROUND,
     lights: bool = True,
+    brightness: float = DEFAULT_BRIGHTNESS,
+    sky: str | None = None,
 ) -> PovScene:
     """
     Turn a placed :class:`~gutenberg_kg.treegeom.TreeGeometry` into POV-Ray SDL.
@@ -178,18 +209,32 @@ def tree_pov_scene(
     :param cling: How far each leaf is drawn toward its nearest twig, ``0`` to
         ``1``.  Must match the PyVista path's default for the two renders to
         agree.
-    :param ground_size: Edge length of a ground plane; ``0`` omits it.  An
-        effectively infinite plane guarantees off-budget disparity at the
-        horizon, which is why the tree scene leaves it out by default.
+    :param ground_size: Edge length of the ground slab, as a multiple of the
+        crown's own width; ``0`` omits it.  **On by default, unlike
+        :func:`~gutenberg_kg.scene.build_tree_scene`.**  That path omits its
+        ground because it draws an effectively infinite plane, which guarantees
+        off-budget disparity at the horizon; this slab is finite and sized to
+        the crown, so it carries no such cost — and a ray-traced tree with no
+        contact shadow reads as floating, which the rasterised one does not,
+        since VTK's headlight casts nothing anyway.  The tree casts onto it, and a
+        contact shadow is most of what makes a tree look *placed* rather than
+        floating.  Sized relative to the crown rather than in scene units so
+        one value works for a sonnet and for a nine-year diary; kept finite
+        because an effectively infinite plane guarantees off-budget disparity
+        at the horizon.
     :param lights: Place a three-point rig from the scene bounds.  POV-Ray has
         no equivalent of VTK's headlight, so a scene with no lights at all
         renders black.
+    :param brightness: Key-light multiplier.  See :data:`DEFAULT_BRIGHTNESS`
+        for why this is not ``1.0``.
+    :param sky: Background colour override, ``"#rrggbb"``.  ``None`` keeps the
+        season's own sky, which is chosen for a dark hero shot.
     :return: The composed :class:`~quiltwright.povgen.PovScene`.
     """
     palette = geometry.palette
     scene = PovScene(
-        background=palette.sky[0],
-        ambient_light="#2a2a30",
+        background=sky or palette.sky[0],
+        ambient_light=AMBIENT_LIGHT,
         comment=(
             f"{slug} — GutenbergKG knowledge tree\n"
             f"{geometry.title}\n"
@@ -248,27 +293,39 @@ def tree_pov_scene(
         spore_texture = Texture(color=KIND_COLOR[kind], opacity=SPORE_OPACITY, finish=SPORE_FINISH)
         scene.add(Union(spheres_from_points(spore_points, spore_radius, spore_texture)))
 
-    if ground_size > 0:
-        half = ground_size / 2.0
-        scene.add(
-            Box(
-                corner1=(-half, -half, -0.25),
-                corner2=(half, half, -0.2),
-                texture=Texture(color=GROUND_COLOR, finish=BARK_FINISH),
-            )
-        )
-
+    # --- Lights, before the ground ----------------------------------------
+    #
+    # Order matters.  The rig is sized from scene.bounds(), and the ground slab
+    # is deliberately wider than the crown — measure after adding it and the
+    # "scene radius" becomes the slab's half-diagonal, pushing the key light
+    # far enough out to flatten the tree and shrink its shadow to nothing.
+    # Light the subject, then lay the floor under it.
     if lights:
-        # Bounds come from the wood and spores: instanced leaves are not
-        # measurable without resolving the prototype, so the canopy does not
-        # widen the rig.  The wood reaches the crown anyway, which is what
-        # matters for placing lights.
+        # Instanced leaves are not measurable without resolving the prototype,
+        # so the canopy does not widen the rig; the wood reaches the crown
+        # anyway, which is what matters for placing lights.
         bounds = scene.bounds()
         if bounds is None:
             scene.add_light(LightSource(position=(0.0, -50.0, 50.0)))
         else:
-            for light in tree_lights(*bounds):
+            for light in tree_lights(*bounds, intensity=brightness):
                 scene.add_light(light)
+
+    if ground_size > 0:
+        # Sized from the crown so one multiplier suits any book.  Only the key
+        # light casts, so the tree drops a single readable shadow rather than
+        # the three-way overlap a fully casting rig would give.
+        crown = geometry.crown
+        width = float(np.max(crown[:, :2].max(axis=0) - crown[:, :2].min(axis=0)))
+        half = max(width, 1.0) * ground_size / 2.0
+        centre = (crown[:, 0].mean(), crown[:, 1].mean())
+        scene.add(
+            Box(
+                corner1=(centre[0] - half, centre[1] - half, -GROUND_THICKNESS),
+                corner2=(centre[0] + half, centre[1] + half, 0.0),
+                texture=Texture(color=GROUND_COLOR, finish=GROUND_FINISH),
+            )
+        )
 
     return scene
 
@@ -285,7 +342,9 @@ def build_tree_pov_scene(
     tip_radius: float = 0.05,
     leaf_size: float = 0.32,
     subdivisions: int = 4,
-    ground_size: float = 0.0,
+    ground_size: float = DEFAULT_GROUND,
+    brightness: float = DEFAULT_BRIGHTNESS,
+    sky: str | None = None,
     progress: Callable[[str], None] | None = None,
 ) -> tuple[PovScene, TreeGeometry]:
     """
@@ -306,7 +365,10 @@ def build_tree_pov_scene(
     :param tip_radius: Radius of leaf-bearing twigs, in scene units.
     :param leaf_size: Leaf radius before density scaling.
     :param subdivisions: Spline samples per skeleton segment.
-    :param ground_size: Ground slab edge length; ``0`` omits it.
+    :param ground_size: Ground slab edge as a multiple of crown width; ``0``
+        omits it.  On by default — a tree with no contact shadow floats.
+    :param brightness: Key-light multiplier.
+    :param sky: Background colour override, ``"#rrggbb"``.
     :param progress: Optional ``fn(message)`` progress callback.
     :return: ``(scene, geometry)`` — the geometry is returned because framing
         the camera needs the crown, and regrowing the tree to get it would be
@@ -331,6 +393,8 @@ def build_tree_pov_scene(
         subdivisions=subdivisions,
         slug=slug,
         ground_size=ground_size,
+        brightness=brightness,
+        sky=sky,
     )
     report(f"Composed {len(scene):,} POV-Ray objects.")
     return scene, geometry
@@ -339,6 +403,7 @@ def build_tree_pov_scene(
 def tree_pov_camera(
     scene: PovScene,
     *,
+    geometry: TreeGeometry | None = None,
     fov: float = 14.0,
     zoom: float = 1.0,
 ) -> PovCamera:
@@ -359,10 +424,16 @@ def tree_pov_camera(
     while the camera aims at positive ``z``, which renders an empty sky — the
     tree is still there, just nowhere the lens is pointed.
 
-    :param scene: A composed scene; its :meth:`~quiltwright.povgen.PovScene.bounds`
-        supply the framing.  Instanced leaves do not contribute to those bounds
-        — they cannot be measured without resolving the prototype — so the
-        wood and spores are what frame the shot.
+    :param scene: A composed scene, used for framing only when *geometry* is
+        not supplied.
+    :param geometry: The placed tree.  **Pass this.**  Framing from the scene
+        instead means framing whatever is in it, and since the ground slab is
+        three crown-widths across and on by default, that is mostly floor: the
+        tree ends up small and high in the tile.  The crown knows where the
+        tree is and the slab does not enter into it.  ``None`` falls back to
+        the scene bounds, where instanced leaves also do not contribute — they
+        cannot be measured without resolving the prototype — so the wood and
+        spores frame the shot.
     :param fov: Vertical field of view in degrees.
     :param zoom: Dolly factor applied after framing; ``>1`` fills more of the
         tile, which is what drives perceived depth on a light-field panel.
@@ -370,10 +441,16 @@ def tree_pov_camera(
         :func:`~quiltwright.povray.render_pov_quilt`, in POV-Ray coordinates.
     :raises ValueError: If the scene has nothing measurable to frame.
     """
-    bounds = scene.bounds()
-    if bounds is None:
-        raise ValueError("scene has no measurable geometry to frame")
-    lo, hi = bounds
+    if geometry is not None:
+        # Crown plus the root at the origin: the whole tree, no floor.
+        crown = np.asarray(geometry.crown, dtype=float)
+        lo = np.minimum(crown.min(axis=0), 0.0)
+        hi = np.maximum(crown.max(axis=0), 0.0)
+    else:
+        bounds = scene.bounds()
+        if bounds is None:
+            raise ValueError("scene has no measurable geometry to frame")
+        lo, hi = bounds
     centre = (lo + hi) / 2.0
     radius = float(np.linalg.norm(hi - lo)) / 2.0
     distance = radius / max(np.tan(np.radians(fov / 2.0)), 1e-6) / max(zoom, 1e-6)

@@ -62,7 +62,48 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - **`docs/POVRAY.md`** — the pipeline, the handedness rule, the lighting
   mismatch below, the dials, and the known limits.
 
+- **The ray-traced tree stands on ground, in daylight.** `gutenkg pov` gains
+  `--ground`, `--brightness` and `--sky`, and the first two are on by default
+  because the defaults they replace produced an unusable picture.
+
+  A finite slab, sized as a multiple of the crown's own width so one value
+  suits a sonnet and a nine-year diary, with its top face at `z = 0` where the
+  trunk's root node is — the tree stands *on* it rather than hovering over a
+  plane parked below. Only the key light casts, so the tree drops one readable
+  shadow instead of the three-way overlap a fully casting rig gives. This is a
+  deliberate divergence from `build_tree_scene`, which omits its ground because
+  it draws an effectively infinite plane and would blow the disparity budget at
+  the horizon; a finite slab carries no such cost, and a ray-traced tree
+  without a contact shadow reads as floating in a way the rasterised one does
+  not, since VTK's headlight casts nothing at all.
+
+  `--brightness` defaults to **2.6**, not 1. A canopy of thousands of small
+  blades self-shadows heavily and the wood is dark brown against a dark sky, so
+  a unit key renders a tree that is geometrically perfect and visually black —
+  which is exactly what the first Pepys render, 9,993 leaves, came out as. The
+  ground finish is correspondingly dim: at `diffuse 0.7` against that key the
+  slab clipped to a flat lime that pulled the eye straight off the subject.
+
+  The key light is also steeper now — 2.2 up against 1.1 across, where it was
+  1.6 against 1.5. A shallow key throws the canopy's shadow so far to one side
+  that it reads as a separate object rather than as the tree touching ground.
+
 ### Fixed
+
+- **`tree_pov_camera` frames the tree, not the floor.** It read
+  `scene.bounds()`, which was right until the ground became default-on: a slab
+  three crown-widths across then dominated the bounds and the tree came out
+  small and high in the tile. It now takes the `geometry` that
+  `build_tree_pov_scene` already returned for exactly this purpose — the
+  docstring said so and the code did not use it — and frames the crown plus the
+  root at the origin, which is the whole tree and no floor.
+
+- **The light rig is sized before the ground is laid.** Same root cause from
+  the other side: the rig takes its scale from `scene.bounds()`, so building
+  the slab first made the "scene radius" the slab's half-diagonal, pushing the
+  key light far enough out to flatten the tree and shrink its shadow to
+  nothing. Lights are placed first now, and a test pins that adding ground
+  leaves every light position untouched.
 
 - **`tree_pov_camera` now returns a camera in POV-Ray coordinates.** It framed
   in the right-handed world the scene is authored in and handed the result over

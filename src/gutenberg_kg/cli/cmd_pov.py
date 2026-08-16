@@ -50,6 +50,29 @@ from gutenberg_kg.cli.main import cli
     help="Spline samples per skeleton segment. The one dial trading file size for limb smoothness.",
 )
 @click.option(
+    "--ground",
+    default=None,
+    type=float,
+    help=(
+        "Ground slab edge as a multiple of crown width (default 3.0); 0 omits it. "
+        "The tree casts a contact shadow onto it — without one it floats."
+    ),
+)
+@click.option(
+    "--brightness",
+    default=None,
+    type=float,
+    help=(
+        "Key-light multiplier (default 2.6). A dense canopy self-shadows hard, "
+        "so a unit key renders a technically correct, visually black tree."
+    ),
+)
+@click.option(
+    "--sky",
+    default=None,
+    help="Background colour override, #rrggbb. Default is the season's own sky.",
+)
+@click.option(
     "--render",
     is_flag=True,
     help="Ray-trace the scene into a Looking Glass quilt. Needs a povray binary on PATH.",
@@ -86,6 +109,9 @@ def cmd_pov(
     topics: bool,
     leaf_size: float | None,
     subdivisions: int,
+    ground: float | None,
+    brightness: float | None,
+    sky: str | None,
     render: bool,
     spec_name: str,
     fov: float,
@@ -107,6 +133,7 @@ def cmd_pov(
       gutenkg pov --book Hamlet
       gutenkg pov --book Hamlet --season autumn --entities
       gutenkg pov --book Hamlet --render --spec portrait
+      gutenkg pov --book Hamlet --sky "#5a6a86" --ground 4
     """
     from gutenberg_kg.bookgraph import load_book_graph, load_entry_times, scan_corpus
     from gutenberg_kg.povscene import build_tree_pov_scene, tree_pov_camera
@@ -132,7 +159,10 @@ def cmd_pov(
         filters=SceneFilters(show_entities=entities, show_topics=topics),
         season=season,
         subdivisions=subdivisions,
+        sky=sky,
         progress=lambda m: click.echo(f"  {m}"),
+        **({"ground_size": ground} if ground is not None else {}),
+        **({"brightness": brightness} if brightness is not None else {}),
         **({"leaf_size": leaf_size} if leaf_size is not None else {}),
     )
     click.echo(f"Scene: {geometry.title}")
@@ -156,7 +186,7 @@ def cmd_pov(
             f"Unknown quilt preset {spec_name!r}. Choose from: {', '.join(QUILT_PRESETS)}"
         )
     spec = QUILT_PRESETS[spec_name]
-    camera = tree_pov_camera(scene, fov=fov, zoom=zoom)
+    camera = tree_pov_camera(scene, geometry=geometry, fov=fov, zoom=zoom)
     click.echo(
         f"Ray-tracing {spec.n_views} views at {spec.tile_width}x{spec.tile_height} "
         f"(focal distance {camera.focal_distance:.1f})..."

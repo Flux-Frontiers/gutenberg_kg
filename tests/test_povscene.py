@@ -506,7 +506,10 @@ class TestDualRender:
         camera = pov_camera_from_plotter(plotter)
         plotter.close()
 
-        scene, _ = build_tree_pov_scene(nodes, edges, slug=SLUG, genre="philosophy")
+        # build_tree_scene draws no ground, so neither may this one — the
+        # comparison is of geometry, and a slab in one silhouette and not the
+        # other would swamp it.
+        scene, _ = build_tree_pov_scene(nodes, edges, slug=SLUG, genre="philosophy", ground_size=0)
         scene.background = "#000000"
         scene.ambient_light = None
         scene.write(tmp_path / "tree.pov")
@@ -564,7 +567,10 @@ class TestDualRender:
         from quiltwright.povray import camera_block
 
         nodes, edges = _book(n_sections=5, chunks_per_section=8)
-        scene, _ = build_tree_pov_scene(nodes, edges, slug=SLUG, genre="philosophy")
+        # build_tree_scene draws no ground, so neither may this one — the
+        # comparison is of geometry, and a slab in one silhouette and not the
+        # other would swamp it.
+        scene, _ = build_tree_pov_scene(nodes, edges, slug=SLUG, genre="philosophy", ground_size=0)
         scene.background = "#000000"
         scene.ambient_light = None
         scene.write(tmp_path / "tree.pov")
@@ -597,3 +603,122 @@ class TestDualRender:
         # And it is roughly centred, not clipped against one edge.
         assert abs(ys.mean() - self.SIZE / 2) < self.SIZE * 0.25
         assert abs(xs.mean() - self.SIZE / 2) < self.SIZE * 0.25
+
+
+class TestGroundAndLighting:
+    """
+    The three dials that decide whether the render looks like a tree standing
+    somewhere, or a dark shape floating in the void.  None of this is caught by
+    the SDL-shape tests above — a scene can be structurally perfect and visually
+    unusable, which is exactly what the first Pepys render was.
+    """
+
+    @staticmethod
+    def _box(sdl):
+        """The emitted ground slab's two corners, or None."""
+        m = re.search(r"^box \{ <([^>]*)>, <([^>]*)>", sdl, re.MULTILINE)
+        return (
+            None
+            if m is None
+            else (
+                np.fromstring(m.group(1), sep=","),
+                np.fromstring(m.group(2), sep=","),
+            )
+        )
+
+    @staticmethod
+    def _light_levels(sdl):
+        return [float(m) for m in re.findall(r"light_source \{ <[^>]*> color rgb <([\d.]+)", sdl)]
+
+    def test_a_ground_slab_is_laid_by_default(self, geometry):
+        assert self._box(tree_pov_scene(geometry, slug=SLUG).sdl()) is not None
+
+    def test_ground_can_be_omitted(self, geometry):
+        assert self._box(tree_pov_scene(geometry, slug=SLUG, ground_size=0).sdl()) is None
+
+    def test_the_tree_stands_on_the_slab_rather_than_over_it(self, geometry):
+        # The trunk's root node is at z = 0, so the slab's top face must be too.
+        # POV-Ray sees z negated, so "top" is the smaller emitted z.
+        lo, hi = self._box(tree_pov_scene(geometry, slug=SLUG).sdl())
+        assert min(lo[2], hi[2]) == pytest.approx(0.0)
+
+    def test_the_slab_scales_with_the_crown(self, geometry):
+        """One multiplier has to suit a sonnet and a nine-year diary alike."""
+        narrow = self._box(tree_pov_scene(geometry, slug=SLUG, ground_size=2.0).sdl())
+        wide = self._box(tree_pov_scene(geometry, slug=SLUG, ground_size=6.0).sdl())
+        assert (wide[1][0] - wide[0][0]) > 2.5 * (narrow[1][0] - narrow[0][0])
+
+    def test_only_the_key_light_casts_a_shadow(self, geometry):
+        """Three casting lights would give the tree three overlapping shadows."""
+        sdl = tree_pov_scene(geometry, slug=SLUG).sdl()
+        lights = re.findall(r"light_source \{.*", sdl)
+        assert len(lights) == 3
+        assert sum("shadowless" not in light for light in lights) == 1
+
+    def test_the_ground_does_not_push_the_lights_away_from_the_tree(self, geometry):
+        """
+        Regression: the rig is sized from scene.bounds(), and the slab is wider
+        than the crown.  Building the ground first made the "scene radius" the
+        slab's half-diagonal, which flattened the tree and shrank its shadow to
+        nothing.  Lights are placed before the floor is laid.
+        """
+        lit = re.findall(r"light_source \{ <([^>]*)>", tree_pov_scene(geometry, slug=SLUG).sdl())
+        bare = re.findall(
+            r"light_source \{ <([^>]*)>",
+            tree_pov_scene(geometry, slug=SLUG, ground_size=0).sdl(),
+        )
+        assert lit == bare
+
+    def test_the_key_light_is_steep_enough_to_drop_a_contact_shadow(self, geometry):
+        """A shallow key throws the canopy's shadow off to one side, where it
+        reads as a separate object rather than as the tree touching ground."""
+        lo, hi = geometry.crown.min(axis=0), geometry.crown.max(axis=0)
+        key = tree_lights(lo, hi)[0]
+        centre = (lo + hi) / 2.0
+        rise = key.position[2] - centre[2]
+        run = float(np.hypot(key.position[0] - centre[0], key.position[1] - centre[1]))
+        assert rise > run, f"key elevation {rise:.1f} is shallower than its reach {run:.1f}"
+
+    def test_brightness_scales_the_whole_rig(self, geometry):
+        dim = self._light_levels(tree_pov_scene(geometry, slug=SLUG, brightness=1.0).sdl())
+        bright = self._light_levels(tree_pov_scene(geometry, slug=SLUG, brightness=3.0).sdl())
+        assert bright == pytest.approx([level * 3.0 for level in dim])
+
+    def test_the_default_is_brighter_than_unity(self, geometry):
+        """Measured on Pepys: a unit key renders a correct, unreadable tree."""
+        from gutenberg_kg.povscene import DEFAULT_BRIGHTNESS
+
+        assert DEFAULT_BRIGHTNESS > 1.0
+        assert max(self._light_levels(tree_pov_scene(geometry, slug=SLUG).sdl())) > 1.0
+
+    def test_sky_overrides_the_season_background(self, geometry):
+        sdl = tree_pov_scene(geometry, slug=SLUG, sky="#6d7f9e").sdl()
+        r, g, b = (int("6d7f9e"[i : i + 2], 16) / 255 for i in (0, 2, 4))
+        m = re.search(r"background \{ color rgb <([^>]*)>", sdl)
+        assert np.allclose(np.fromstring(m.group(1), sep=","), [r, g, b], atol=1e-4)
+
+    def test_the_season_sky_is_kept_when_none_is_given(self, geometry):
+        sdl = tree_pov_scene(geometry, slug=SLUG).sdl()
+        assert "background {" in sdl
+        assert tree_pov_scene(geometry, slug=SLUG, sky="#ffffff").sdl() != sdl
+
+
+class TestFramingIgnoresTheGround:
+    def test_the_camera_frames_the_tree_not_the_floor(self, geometry):
+        """
+        Regression from making the ground default-on: tree_pov_camera read
+        scene.bounds(), so once a slab three crown-widths across was in the
+        scene it framed mostly floor and the tree came out small and high.
+        """
+        scene = tree_pov_scene(geometry, slug=SLUG, ground_size=6.0)
+        framed = tree_pov_camera(scene, geometry=geometry, fov=26.0)
+        floored = tree_pov_camera(scene, fov=26.0)
+        assert framed.focal_distance < floored.focal_distance
+
+    def test_framing_is_unchanged_by_how_wide_the_slab_is(self, geometry):
+        narrow = tree_pov_scene(geometry, slug=SLUG, ground_size=2.0)
+        wide = tree_pov_scene(geometry, slug=SLUG, ground_size=8.0)
+        a = tree_pov_camera(narrow, geometry=geometry, fov=26.0)
+        b = tree_pov_camera(wide, geometry=geometry, fov=26.0)
+        assert a.location == pytest.approx(b.location)
+        assert a.look_at == pytest.approx(b.look_at)

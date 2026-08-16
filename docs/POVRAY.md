@@ -52,7 +52,22 @@ PyVista, Qt, or VTK. A headless render box needs nothing more to produce
 | Wood | one `sphere_sweep` per root-to-tip path | carries the pipe model's per-node radii; exact silhouette |
 | Foliage | `object { GutenLeaf … }` per leaf | prototype declared once, so a canopy is a line per leaf |
 | Spores | `sphere` per halo point | entity/topic annotation, off by default |
-| Ground | `box` slab | only with `ground_size > 0` |
+| Ground | `box` slab | **on by default**; catches the contact shadow |
+
+### The ground, and why it is on here but not in `gutenkg quilt`
+
+`build_tree_scene` omits its ground because it draws an effectively infinite
+plane, which guarantees off-budget disparity at the horizon. This slab is
+finite — `--ground` is a multiple of the crown's own width, default 3 — so it
+carries no such cost, and it earns its place: a ray-traced tree with no contact
+shadow reads as floating. The rasterised one does not have that problem
+because VTK's headlight casts nothing at all.
+
+Its top face sits at `z = 0`, where the trunk's root node is, so the tree
+stands *on* it rather than hovering over a plane parked below.
+
+Only the key light casts. A three-way casting rig gives one tree three
+overlapping shadows, which reads as three trees.
 
 Leaves are grouped into one `union` per foliage colour, so a season's palette
 costs one texture per colour rather than one per leaf.
@@ -135,6 +150,17 @@ xvfb-run -a pytest tests/test_povscene.py
 | `--leaf-size` | leaf radius before density scaling. Leaves shrink by the cube root of chunk count, so a dense book renders fine — raise this to thicken its canopy |
 | `--season` | foliage palette. Winter drops most leaves, baring the wood |
 | `--fov` / `--zoom` | per-view vertical FOV and dolly, same meaning as `gutenkg quilt` |
+| `--ground` | ground slab edge as a multiple of crown width; `0` omits it |
+| `--brightness` | key-light multiplier, default 2.6 — see below |
+| `--sky` | background colour override, `#rrggbb` |
+
+### Why the default brightness is 2.6 and not 1
+
+A canopy of thousands of small blades self-shadows heavily, and the wood is a
+dark brown against a dark sky. At unit intensity the first Pepys render — 9,993
+leaves — came out with the trunk unreadable: geometrically perfect, visually
+black. Nothing in the test suite noticed, because the SDL was correct. Only
+looking at the image did.
 
 ## Known limits
 
