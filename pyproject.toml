@@ -10,6 +10,9 @@
 #   kgdeps   KG integrations — kg-rag, pycode-kg (doc-kg/diary-kg are core deps)
 #   viz      2-D growth timeline (plotly)
 #   viz3d    3-D visualiser + light-field quilts (pyvistaqt, PyQt5, quiltwright)
+#   pov      analytic POV-Ray output, `gutenkg pov` (quiltwright povgen).
+#            Headless and NumPy-only — no PyVista, no Qt, no GL context — so a
+#            ray-tracing box can install this WITHOUT viz3d.
 #   mcp      MCP server, `gutenkg-mcp` (fastmcp, structlog)
 #   chat     reading-room UI, `gutenkg chat` (streamlit, httpx, watchdog)
 #   image    local image server, `gutenkg-image-server` (fastapi, uvicorn)
@@ -19,6 +22,7 @@
 #   poetry install --extras "kgdeps viz viz3d mcp"   RECOMMENDED user install
 #   poetry install --all-extras         every extra above (still no dev tooling)
 #   poetry install --extras "viz3d"     one extra at a time, for a leaner install
+#   poetry install --extras "pov"       headless POV-Ray box: no GL stack pulled
 #   poetry install                      core runtime only
 #   poetry install --with dev           core + dev tools (pytest, ruff, ty, etc.)
 #
@@ -35,18 +39,21 @@
 #
 # First-time setup (contributors)
 # -------------------------------
-#   poetry install --with dev --extras "kgdeps viz viz3d mcp image"
+#   poetry install --with dev --extras "kgdeps viz viz3d pov mcp image"
 #   pre-commit install
 #
-# `image` is in there for the tests, not for the feature: tests/test_sdxl_server.py
-# imports fastapi/pydantic at module scope, so without it pytest fails at
-# *collection* rather than skipping. CI's test job installs the same way.
+# `pov` and `image` are in there for the tests, not for the features:
+# tests/test_povscene.py and tests/test_sdxl_server.py import quiltwright and
+# fastapi through the modules under test. Both now `importorskip`, so a
+# narrower install SKIPS them rather than failing at collection and taking the
+# whole run down — but they only actually run with the extras present, which is
+# how CI's test job installs.
 #
 # Run tests
 # ---------
-#   pytest                          uses [tool.pytest.ini_options] below
-#   pytest -m "not slow"            skip slow tests
-#   pytest --cov=gutenberg_kg       with coverage
+#   pytest                             uses [tool.pytest.ini_options] below
+#   pytest -m "not integration"        unit only — skips the serving surfaces
+#   pytest --cov=gutenberg_kg          with coverage
 #
 # Generate docs
 # -------------
@@ -88,7 +95,11 @@ classifiers = [
 requires-python = ">=3.12,<3.14"
 dependencies = [
     "click>=8.1.0,<9",
-    "kgmodule-utils[synthesis,sqlite-vec]>=0.13.2",
+    # One floor for this package across every declaration — the `viz3d` and
+    # `pov` extras below name 0.14.0, and a lower floor here buys nothing while
+    # making the repo state ambiguous: scripts/check_pins.py compares the
+    # *highest* declared floor, so a stale low one is invisible to the gate.
+    "kgmodule-utils[synthesis,sqlite-vec]>=0.14.0",
     "rich>=14.3.3,<15",
     "doc-kg (>=0.21.2)",  # transformers 5.x — must match kg-rag; see the kgdeps extra
     "diary-kg (>=0.97.0)",
@@ -269,6 +280,13 @@ unused-ignore-comment = "ignore"
 testpaths  = ["tests"]
 addopts    = "-v --tb=short"
 pythonpath = ["src"]
+# Registered so `-m "not integration"` actually selects, and so a typo in a
+# marker name is an error rather than a silently-empty run. These modules also
+# `importorskip` their dependency, so they skip on a narrow install even when
+# the marker is not used — the mark is for choosing, the guard is for surviving.
+markers = [
+    "integration: exercises a service or optional-extra surface rather than a pure unit",
+]
 
 # ---------------------------------------------------------------------------
 # PycodeKG / DocKG index configuration

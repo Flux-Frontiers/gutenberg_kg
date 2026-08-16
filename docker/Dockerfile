@@ -81,24 +81,26 @@ RUN pip install --no-cache-dir --index-url https://download.pytorch.org/whl/cpu 
 #
 # They also move as a SET, not individually — these four are cross-pinned. What
 # each one actually requires, read off the lock rather than from memory:
-#   kg-rag 0.11.0         transformers>=5.5.0,<6 · kgmodule-utils>=0.8.0
+#   kg-rag 0.12.0         transformers>=5.5.0,<6 · kgmodule-utils>=0.12.1
 #                         (also the floor for KGEntry.vectors_path, which
 #                         handler.py passes at startup)
-#   doc-kg 0.21.1         kgmodule-utils[semantic]>=0.10.0
+#   doc-kg 0.21.2         kgmodule-utils[semantic]>=0.12.1
 #   diary-kg 0.97.0       doc-kg>=0.21.2 · kgmodule-utils>=0.13.2
-#   kgmodule-utils 0.11.0 transformers>=5.5.0,<6 via its [semantic] extra
+#   kgmodule-utils 0.14.0 transformers>=5.5.0,<6 · sqlite-vec==0.1.9, both via
+#                         its [semantic] extra
 # Because these are `==` pins, a stale one is a hard resolution failure at build
-# time, not a silent upgrade: doc-kg 0.21.1 with kgmodule-utils==0.9.0 cannot
+# time, not a silent upgrade: doc-kg 0.21.2 with kgmodule-utils==0.9.0 cannot
 # resolve. Bump them together and rerun `poetry lock`.
 #
-# KGMODULE_UTILS_VERSION tracks pyproject's >=0.12.1 floor and the lock. It sat
-# at 0.10.0 — below both — which made the ARG fiction rather than a pin: the
-# `pip install .` below re-resolved it and upgraded anyway, exactly as the
-# paragraph above warns, so the image never ran the version named here and the
-# pre-install layer fetched that package twice per cold build. 0.12.1 is the
-# release that actually carries the organic tree engine scene.py imports: 0.12.0
-# was published without it, from a tree the v0.12.0 tag did not contain, and
-# cannot be corrected in place because PyPI reserves an uploaded filename.
+# Note the transitive floors above are all BELOW what this image pins. That is
+# expected and not slack to be taken up — the ARGs track pyproject's floors and
+# the lock, which sit at the current releases, while each package states only
+# the oldest sibling it can tolerate. The rule is the paragraph above: an ARG
+# below pyproject's floor is fiction, because the `pip install .` further down
+# re-resolves and upgrades past it, so the image never runs the version named
+# here and the pre-install layer fetches that package twice per cold build.
+# KGMODULE_UTILS_VERSION sat at 0.10.0 against a >=0.12.1 floor for exactly that
+# reason. Keep every ARG == the lock.
 ARG KG_RAG_VERSION=0.12.0
 ARG KGMODULE_UTILS_VERSION=0.14.0
 ARG DOC_KG_VERSION=0.21.2

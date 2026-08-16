@@ -8,6 +8,14 @@ module scope, which made the whole module untestable outside that venv.
 
 Only ``fastapi``/``pydantic`` are needed to import it, and both come from the
 project's own ``image`` extra, which the CI test job installs.
+
+Integration rather than unit: this exercises the serving surface, and it is
+only importable when an optional extra is present. Hence both the
+``integration`` mark (so ``-m "not integration"`` can deselect it) and the
+``importorskip`` (so a checkout without the extra *skips* rather than failing
+at collection, which aborts the entire run — the same reason ``test_cli.py``
+guards on ``kg_rag``). CI installs ``image``, so these tests run there; it is
+the local narrow install that used to break.
 """
 
 from __future__ import annotations
@@ -17,7 +25,11 @@ from unittest.mock import MagicMock, patch
 
 import pytest
 
-from gutenberg_kg.serve import sdxl_server
+pytest.importorskip("fastapi", reason="fastapi not installed — integration test skipped")
+
+from gutenberg_kg.serve import sdxl_server  # noqa: E402
+
+pytestmark = pytest.mark.integration
 
 # Modules that must not be imported when this one is, so it stays importable
 # outside .venv-sdxl. torch and diffusers are the heavy pair; uvicorn is only
