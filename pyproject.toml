@@ -125,10 +125,23 @@ viz3d = [
     # geometry; the trees moved for the same reason, so a diary corpus can grow
     # them without depending on a *book* corpus. pycode-kg stays in `kgdeps`
     # for its own CLI.
-    "kgmodule-utils[viz3d-render]>=0.13.2",
+    # 0.14.0 promoted leaf_facing/oriented_cluster out of this package and
+    # pycode_kg, where they were duplicated; scene.py imports them now.
+    "kgmodule-utils[viz3d-render]>=0.14.0",
     # Light-field output (`gutenkg quilt`). 0.4.0 supplies depth_report() and
     # widened requires-python to <3.14, which retires the old marker gate.
     "quiltwright>=0.4.0",
+]
+pov = [
+    # Analytic POV-Ray output (`gutenkg pov`), deliberately apart from viz3d.
+    # Composing a scene needs the NumPy-only geometry — leaf_frames, limb_paths
+    # and LEAF_ASPECT, new in kgmodule-utils 0.14.0 — plus quiltwright's povgen
+    # (0.5.0). No PyVista, no Qt, no GL context: a headless ray-tracing box can
+    # install this extra alone and write scenes. `[viz3d]` here is the SDK's
+    # NumPy-only geometry extra, NOT `[viz3d-render]`, which is what would pull
+    # PyVista back in.
+    "kgmodule-utils[viz3d]>=0.14.0",
+    "quiltwright>=0.5.0",
 ]
 mcp = [
     # Upper-bounded: fastmcp ships majors on its own schedule (2.x → 3.x), and

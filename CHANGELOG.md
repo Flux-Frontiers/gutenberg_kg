@@ -8,7 +8,81 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+> **Blocked on two upstream releases.** This work needs
+> `kgmodule-utils 0.14.0` (`leaf_frames`, `limb_paths`, `LEAF_ASPECT`, and the
+> promoted `leaf_facing`/`oriented_cluster`) and `quiltwright 0.5.0`
+> (`povgen`). Both are open PRs — Flux-Frontiers/KG_utils#20 and
+> suchanek/quiltwright#12 — and the floors below name the versions those will
+> become.
+>
+> Three of the four pin sites are moved as a set: the pyproject floors, the
+> Dockerfile's `KGMODULE_UTILS_VERSION` ARG, and `runpod/requirements.txt`.
+> The fourth, `poetry.lock`, cannot be: relocking needs the versions to exist
+> on PyPI, and hand-editing a version string past its recorded hashes would
+> produce a lock that resolves to nothing. So `scripts/check_pins.py` reports
+> one mismatch — lock 0.13.2 against floor 0.14.0 — and `poetry lock` clears
+> it the moment the two releases land. Nothing else in the suite is affected.
+
+### Added
+
+- **`gutenkg pov` — the knowledge tree as an analytic POV-Ray scene.** A limb
+  becomes a `sphere_sweep` carrying the pipe model's per-node radii, a leaf
+  becomes one instance of a single declared ellipsoid, and a spore becomes a
+  sphere. Nothing is tessellated, so the file is one to two orders of magnitude
+  smaller than the equivalent `mesh2` dump and the silhouettes stay exact at
+  any zoom — which is most of the reason to leave VTK in the first place.
+  `--render` ray-traces the result straight into a Looking Glass quilt through
+  `quiltwright.povray.render_pov_quilt`.
+
+  The two backends are not two trees. `gutenkg quilt` and `gutenkg pov` both
+  call `grow_tree_geometry`, so they share one skeleton, one clinging rule and
+  one halo; `test_both_backends_grow_the_same_skeleton` pins that they cannot
+  drift.
+
+- **A `pov` extra, deliberately apart from `viz3d`.** Composing a scene needs
+  the NumPy-only geometry plus `quiltwright.povgen` — no PyVista, no Qt, no GL
+  context — so a headless ray-tracing box can install `gutenberg-kg[pov]` and
+  nothing else. The claim is tested rather than asserted: a subprocess makes
+  `pyvista` and `vtkmodules` unimportable and then writes a scene.
+
+  (Note for anyone reading `sys.modules` to check this: `quiltwright/__init__`
+  eagerly imports `lfd`, which imports pyvista *when it happens to be
+  installed*, so `povgen` pulls it in through no fault of this package. What
+  matters is that the path still works when the rendering stack is absent.)
+
+- **`docs/POVRAY.md`** — the pipeline, the handedness rule, the lighting
+  mismatch below, the dials, and the known limits.
+
+### Fixed
+
+- **The POV-Ray lighting rig is built for a `+z`-up world.**
+  `quiltwright.povgen.lights_from_bounds` is the general helper, but its
+  offsets assume `+y` up: its key light sits at `+1.6y, -1.4z`, which in this
+  repo's world is level with the trunk and *below* the ground — a tree lit from
+  underneath. `povscene.tree_lights` rebuilds the three-point rig in the world
+  the rest of the scene uses.
+
 ### Changed
+
+- **`leaf_facing` and `oriented_cluster` now come from the engine.** Both were
+  duplicated verbatim in `scene.py` and `pycode_kg/scene3d.py` — pure geometry
+  with no book knowledge — and `kgmodule-utils` 0.14.0 owns them. Promoting
+  them also *fixed* the copy this repo carried: it raised `ValueError` on an
+  empty cluster, because `fibonacci_sphere(0)` returns `[]` and subtracting a
+  `(3,)` centre from a `(0,)` array fails to broadcast. `pycode_kg`'s copy
+  guarded it and the promoted version keeps that guard, so a section whose
+  chunks are all filtered out no longer takes the layout down.
+
+- **The scene layer is split by what it needs, not by what it does.** The
+  PyVista-free half moved out of `scene.py` into two modules: `bookgraph.py`
+  (corpus discovery, per-book graph loading — plain `sqlite3`) and
+  `treegeom.py` (`ForestLayout`, the seasons, `grow_tree_geometry`). `scene.py`
+  keeps the PyVista composition and re-exports every public name from both, so
+  `from gutenberg_kg.scene import ForestLayout` is unchanged. Without this the
+  POV path would drag in VTK to reach a layout that never touches it.
+
+- **`kgmodule-utils[viz3d-render]>=0.14.0`** in the `viz3d` extra, for the
+  promoted helpers.
 
 - **`diary-kg>=0.97.0`.** Moved as a set across all four pin sites — pyproject
   floor, `poetry.lock`, `docker/Dockerfile`'s `DIARY_KG_VERSION` ARG, and

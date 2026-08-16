@@ -100,7 +100,7 @@ RUN pip install --no-cache-dir --index-url https://download.pytorch.org/whl/cpu 
 # was published without it, from a tree the v0.12.0 tag did not contain, and
 # cannot be corrected in place because PyPI reserves an uploaded filename.
 ARG KG_RAG_VERSION=0.12.0
-ARG KGMODULE_UTILS_VERSION=0.13.2
+ARG KGMODULE_UTILS_VERSION=0.14.0
 ARG DOC_KG_VERSION=0.21.2
 ARG DIARY_KG_VERSION=0.97.0
 RUN pip install --no-cache-dir \
