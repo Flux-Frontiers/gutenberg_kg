@@ -60,18 +60,22 @@ costs one texture per colour rather than one per leaf.
 ## Three things decided for you
 
 **Handedness.** The scene is authored **right-handed with `+z` up**, as
-everything else in this repo is, and `povgen` negates `z` on emission —
-geometry *and* camera. The ray-traced image therefore matches the PyVista
-render rather than mirroring it. A mirrored sweep would invert the hologram's
-depth, which is not something you want to discover on the panel.
+everything else in this repo is, and `povgen` negates `z` on emission. The
+ray-traced image therefore matches the PyVista render rather than mirroring
+it. A mirrored sweep would invert the hologram's depth, which is not something
+you want to discover on the panel. The camera is a separate matter — see
+below.
 
 **Lighting is a `+z`-up rig, written here.** `quiltwright.povgen` ships
-`lights_from_bounds`, but its offsets assume a `+y`-up world: used unchanged,
-its key light lands *below the ground* of a `+z`-up scene and lights the tree
-from underneath. `povscene.tree_lights` rebuilds the rig in this repo's world —
-key from the upper front right, shadowless fill from the left, dim back light
-so the crown separates from the sky. `test_the_key_light_is_above_the_tree_not_below_it`
-is the guard.
+`lights_from_bounds`; it now takes `up=(0, 0, 1)`, which fixes the half of this
+that was a bug — its offsets used to assume `+y` up and put the key light
+*below the ground* of a `+z`-up scene. `povscene.tree_lights` stays for the
+other half: the upstream helper is a two-light rig and cannot know which side
+of the subject the camera is on, so it cannot choose a front. This scene knows
+— the quilt camera stands off along `-y` — and spends a third light on it. Key
+from the upper front right, shadowless fill from the left, dim back light so
+the crown separates from the sky.
+`test_the_key_light_is_above_the_tree_not_below_it` is the guard.
 
 **No camera is written.** `render_pov_quilt` appends one off-axis camera per
 view and POV-Ray honours the *last* one it parses, so a camera in the scene

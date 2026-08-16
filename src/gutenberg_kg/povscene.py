@@ -93,12 +93,13 @@ def tree_lights(lo: np.ndarray, hi: np.ndarray, *, intensity: float = 1.0) -> li
     """
     A three-point rig for a **+z-up** tree, sized to the scene bounds.
 
-    ``quiltwright.povgen.lights_from_bounds`` is the general helper, but its
-    offsets are written for a ``+y``-up world: its key light sits at
-    ``+1.6y, -1.4z``, which in this repo's ``+z``-up world is level with the
-    trunk and *below* the ground.  A tree lit from underneath is not a subtle
-    difference, so the rig is rebuilt here in the world the rest of the scene
-    uses rather than being wrestled into the helper's.
+    ``quiltwright.povgen.lights_from_bounds`` is the general helper and now
+    takes ``up=(0, 0, 1)``, which fixes the half of this that was a bug — its
+    offsets used to assume a ``+y``-up world and put the key light below the
+    ground of a ``+z``-up scene.  This stays because of the other half: that
+    helper is a two-light rig, and it cannot know which side of the subject
+    the camera is on, so it cannot choose a front.  This scene knows — the
+    quilt camera stands off along ``-y`` — and spends a third light on it.
 
     Key from the upper front right, shadowless fill from the left to open the
     shadows without doubling them, and a dim back light so the crown separates
