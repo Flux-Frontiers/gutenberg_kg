@@ -1237,12 +1237,16 @@ class ForestMainWindow(QMainWindow):
             self.visualizer.status = f"Cast {n}/{total} — {message}"
             QApplication.processEvents()
 
+        def build(offscreen: pv.Plotter) -> None:
+            """Compose the forest into *offscreen*; its return value is unused here."""
+            create_forest_visualization(self.visualizer, offscreen)
+
         out_dir = Path(self.visualizer.corpus_root).parent / "renders" / "quilts"
         started = time.perf_counter()
         self.cast_btn.setEnabled(False)
         try:
             path, error = cast_scene_to_looking_glass(
-                lambda offscreen: create_forest_visualization(self.visualizer, offscreen),
+                build,
                 self.vtk_plotter.camera_position,
                 out_dir / f"{Path(self.visualizer.save_path).name}_cast",
                 spec,
