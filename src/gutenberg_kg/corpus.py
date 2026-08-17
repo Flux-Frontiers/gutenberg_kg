@@ -274,18 +274,45 @@ def snapshot_save(
 def snapshot_list(snapshots_dir: Path) -> list[dict[str, Any]]:
     """Load and return all snapshots, oldest first.
 
-    :param snapshots_dir: Directory containing ``snapshot-*.json`` files.
-    :return: List of snapshot dicts; empty if directory not found or empty.
+    Reads what :class:`GutenbergSnapshotManager` writes: a ``manifest.json``
+    listing one ``<tree-hash>.json`` per snapshot.  Each record carries ``key``,
+    ``branch``, ``timestamp``, ``version`` and a ``metrics`` dict.
+
+    This used to glob ``snapshot-*.json`` — the filename the retired
+    :func:`snapshot_save` produced — which silently returned nothing once
+    ``gutenkg snapshot save`` moved to the manager, taking ``gutenkg
+    viz-timeline`` with it.  The manifest is authoritative and already ordered;
+    the glob is a fallback for a directory whose manifest is missing.
+
+    :param snapshots_dir: Directory containing ``manifest.json`` and the
+        per-snapshot files, e.g. ``corpus/.snapshots/``.
+    :return: Snapshot dicts oldest first; empty if the directory is absent or
+        holds nothing readable.
     """
     if not snapshots_dir.is_dir():
         return []
-    result = []
-    for p in sorted(snapshots_dir.glob("snapshot-*.json")):
+
+    manifest = snapshots_dir / "manifest.json"
+    records: list[dict[str, Any]] = []
+    if manifest.is_file():
         try:
-            result.append(json.loads(p.read_text(encoding="utf-8")))
+            records = json.loads(manifest.read_text(encoding="utf-8")).get("snapshots", [])
         except Exception:  # noqa: BLE001
-            pass
-    return result
+            records = []
+
+    if not records:
+        # No manifest, or an unreadable one: read the snapshot files directly.
+        for p in sorted(snapshots_dir.glob("*.json")):
+            if p.name == "manifest.json":
+                continue
+            try:
+                records.append(json.loads(p.read_text(encoding="utf-8")))
+            except Exception:  # noqa: BLE001
+                pass
+
+    # Oldest first, by the field the caller plots against rather than by
+    # filename — the files are named for a tree hash, which does not sort.
+    return sorted(records, key=lambda s: s.get("timestamp", ""))
 
 
 def snapshot_show(snapshots_dir: Path, snapshot: str | None = None) -> dict[str, Any]:
