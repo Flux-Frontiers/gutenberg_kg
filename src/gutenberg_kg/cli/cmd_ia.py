@@ -18,6 +18,7 @@ def ia_group():
 @click.option("--max-results", default=25, show_default=True, help="Maximum results to display.")
 def ia_search(query, max_results):
     """Search the Internet Archive catalog.
+    \f
 
     :param query: Keyword query sent to the IA full-text search API.
     :param max_results: Maximum number of results to display.
@@ -43,6 +44,7 @@ def ia_search(query, max_results):
 @click.option("--dry-run", is_flag=True, default=False, help="Print actions without downloading.")
 def ia_download(identifier, genre, title, force, dry_run):
     """Download a single item by its Internet Archive identifier.
+    \f
 
     :param identifier: IA item identifier (e.g. ``audelselectriciansguide01ande``).
     :param genre: Genre subdirectory under corpus/.
@@ -67,6 +69,7 @@ def ia_download(identifier, genre, title, force, dry_run):
 @click.option("--dry-run", is_flag=True, default=False, help="Print actions without downloading.")
 def ia_catalog(catalog_file, genre, force, dry_run):
     """Download multiple items from a catalog file.
+    \f
 
     :param catalog_file: Path to a catalog file (one ``<identifier> [genre]`` per line).
     :param genre: Override genre for all entries.
@@ -87,6 +90,7 @@ def ia_catalog(catalog_file, genre, force, dry_run):
 )
 def ia_survey(genre):
     """Scan the repo and show download/ingest status for IA-sourced genres.
+    \f
 
     :param genre: Optional genre filter.
     """

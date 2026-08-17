@@ -127,6 +127,7 @@ def snapshot_save(
     Snapshots are stored in ``corpus/.snapshots/<tree-hash>.json`` alongside a
     ``manifest.json`` index.  Each entry records total and per-genre book /
     node / edge counts, the git tree hash, branch, and version.
+    \f
 
     :param registry: Override the KGRAG registry path.
     :param snapshots_dir: Override the snapshots directory.
@@ -201,6 +202,7 @@ def snapshot_list(
     output_json: bool,
 ) -> None:
     """List all temporal snapshots in reverse chronological order.
+    \f
 
     :param snapshots_dir: Override the snapshots directory.
     :param limit: Maximum snapshots to display.
@@ -263,6 +265,7 @@ def snapshot_show(key: str, snapshots_dir: str | None) -> None:
     """Display full details for a snapshot.
 
     KEY is a tree-hash key or prefix (default: ``latest``).
+    \f
 
     :param key: Tree-hash key or ``latest``.
     :param snapshots_dir: Override the snapshots directory.
@@ -350,6 +353,7 @@ def snapshot_diff(
     output_json: bool,
 ) -> None:
     """Compare two snapshots side-by-side (default: second-to-last vs last).
+    \f
 
     :param key_a: First snapshot key (tree hash); omit to use second-to-last.
     :param key_b: Second snapshot key (tree hash); omit to use last.
@@ -454,6 +458,7 @@ def snapshot_prune(snapshots_dir: str | None, dry_run: bool) -> None:
     3. Orphaned files    — JSON files on disk not referenced by the manifest.
 
     The oldest (baseline) and newest (latest) snapshots are always kept.
+    \f
 
     :param snapshots_dir: Override the snapshots directory.
     :param dry_run: Report what would be removed without deleting.

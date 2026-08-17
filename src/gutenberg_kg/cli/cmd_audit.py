@@ -34,6 +34,7 @@ def audit(genre, as_json, registry):
     rebuild); anything else is an error.
 
     Exits non-zero when any error is found, so it is safe to run in CI.
+    \f
 
     :param genre: Tuple of genres to audit (empty = all).
     :param as_json: Emit machine-readable JSON.

@@ -151,6 +151,7 @@ def build_corpus(
     Genres are processed in strategy groups: sacred-texts uses the verse chunker
     by default; all others use semantic.  Override with ``--strategy genre:strategy``.
     DiaryKG indices are copied verbatim from corpus/diaries/ into the bundle.
+    \f
 
     :param genre: Tuple of genres to include (empty = all genres).
     :param output: Override the bundle directory name.

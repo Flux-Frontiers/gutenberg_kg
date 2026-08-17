@@ -63,6 +63,7 @@ def build_diaries(diary_names, force, workers, dry_run, quiet):
 
     Skips diaries that already have a .diarykg/graph.sqlite; use --force to
     rebuild.
+    \f
 
     :param diary_names: Tuple of diary directory names (empty = all diaries).
     :param force: Rebuild existing indices.

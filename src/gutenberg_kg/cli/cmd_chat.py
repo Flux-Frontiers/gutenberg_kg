@@ -29,6 +29,7 @@ def chat_cmd(port: int, address: str, worker_url: str | None) -> None:
     resolves the packaged ``gutenberg_kg/serve/Chat.py`` (the ``pages/``
     directory beside it provides the multi-page nav) and execs
     ``streamlit run`` on it.
+    \f
 
     :param port: Streamlit server port.
     :param address: Streamlit bind address.

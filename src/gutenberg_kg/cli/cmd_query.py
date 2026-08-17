@@ -61,6 +61,7 @@ def query_cmd(query: str, corpus: str, k: int, registry: str | None, as_json: bo
     Examples:
       gutenkg query "the nature of justice"
       gutenkg query "characters who seek revenge" --corpus gutenberg-russian-literature
+    \f
 
     :param query: Natural-language search query.
     :param corpus: Local KGRAG corpus name.

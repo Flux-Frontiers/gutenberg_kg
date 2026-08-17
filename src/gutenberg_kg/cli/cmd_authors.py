@@ -27,6 +27,7 @@ def authors_cmd(refresh: bool, dry_run: bool) -> None:
     author, and writes one page per author plus a master alphabetical
     index. Use --refresh to also backfill Born/Died/Wikipedia for any
     reference.md that predates the RDF fetch.
+    \f
 
     :param refresh: Re-fetch RDF for books missing provenance.
     :param dry_run: Print actions without writing any files.
