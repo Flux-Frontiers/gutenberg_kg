@@ -23,6 +23,30 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Changed
 
+- **The viewer's cast reads a `CastResult` instead of assembling its own
+  status line.** `kgmodule-utils 0.16.0` moved the rest of the cast down a
+  layer: `cast_scene_to_looking_glass` now returns `path`, `error`, `elapsed`
+  and a ready `message`, so `ForestMainWindow.cast_to_looking_glass` no longer
+  carries the three-way branch, the `perf_counter` timing, or the wording
+  "(is Bridge running?)" — all of which `pycode_kg`'s viewer had verbatim, and
+  which is how the two copies drifted apart when this code lived in both.
+
+  The scene-builder wrapper is gone too. `build_scene` is annotated
+  `Callable[[Any], object]` upstream, so `create_forest_visualization` can be
+  passed inline as a lambda; the named `-> None` wrapper existed only because
+  `ty` rejects a lambda whose body returns a value against a `-> None`
+  parameter.
+
+  `QUILT_SPEC` and `CAST_SCALE` are now aliases of the SDK's
+  `DEFAULT_QUILT_PRESET` / `DEFAULT_CAST_SCALE`. Neither was ever a claim about
+  a corpus — the scale is a fact about Bridge's PNG decode time and the preset
+  is which panel is plugged in — so the values live in one place while the
+  names stay, because the POV-Ray cast path and the tests read them.
+
+  Floors move to `kgmodule-utils>=0.16.0` in the `viz3d` extra, the Dockerfile
+  ARG, and `runpod/requirements.txt`; `scripts/check_pins.py` caught the latter
+  two, which is exactly what it is for.
+
 - **A missing optional extra now skips a test module instead of aborting the
   run.** `tests/test_sdxl_server.py` and `tests/test_povscene.py` reach
   `fastapi` and `quiltwright` through the modules under test, both at import

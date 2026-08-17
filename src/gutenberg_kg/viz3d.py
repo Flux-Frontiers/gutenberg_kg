@@ -26,7 +26,6 @@ import atexit
 import gc
 import logging
 import sys
-import time
 import warnings
 from pathlib import Path
 
@@ -34,7 +33,13 @@ import numpy as np
 import param
 import pyvista as pv
 from kg_utils.viz3d import LayoutEdge, LayoutNode
-from kg_utils.viz3d.qt import ImagePopup, PovRenderSession, cast_scene_to_looking_glass
+from kg_utils.viz3d.qt import (
+    DEFAULT_CAST_SCALE,
+    DEFAULT_QUILT_PRESET,
+    ImagePopup,
+    PovRenderSession,
+    cast_scene_to_looking_glass,
+)
 from markdown import markdown  # type: ignore[import-untyped]
 from PyQt5.QtCore import Qt, pyqtSignal
 from PyQt5.QtGui import QFont
@@ -100,15 +105,18 @@ SCROLLBAR_ALLOWANCE: int = 18
 ZOOM_FACTOR: float = 8.0
 
 #: Looking Glass preset the "Cast to LG" button renders for — the 16" Gen3
-#: Landscape, matching the `gutenkg quilt` default.
-QUILT_SPEC: str = "16-landscape"
+#: Landscape, matching the `gutenkg quilt` default.  The SDK's default since
+#: kgmodule-utils 0.16.0: which panel is plugged in is deployment config, not a
+#: claim about a corpus, so the value lives in one place and this is the alias
+#: the POV-Ray path and the tests read.
+QUILT_SPEC: str = DEFAULT_QUILT_PRESET
 
 #: Fraction of the preset's pixel size used when casting from the viewer.
 #: Rendering a full 7680x4320 quilt costs about a second here but leaves Bridge
 #: a 33-megapixel PNG to load and decode, which is where the wait actually is.
 #: Halving each axis quarters that; the lenticular optics hide the difference.
 #: `gutenkg quilt` still writes full resolution for files that get kept.
-CAST_SCALE: float = 0.5
+CAST_SCALE: float = DEFAULT_CAST_SCALE
 
 #: The two backends the Render button can drive.  PyVista draws into the live
 #: viewport; POV-Ray ray-traces the same tree to an image file.  They are not
@@ -1237,29 +1245,19 @@ class ForestMainWindow(QMainWindow):
             self.visualizer.status = f"Cast {n}/{total} — {message}"
             QApplication.processEvents()
 
-        def build(offscreen: pv.Plotter) -> None:
-            """Compose the forest into *offscreen*; its return value is unused here."""
-            create_forest_visualization(self.visualizer, offscreen)
-
         out_dir = Path(self.visualizer.corpus_root).parent / "renders" / "quilts"
-        started = time.perf_counter()
         self.cast_btn.setEnabled(False)
         try:
-            path, error = cast_scene_to_looking_glass(
-                build,
+            result = cast_scene_to_looking_glass(
+                lambda offscreen: create_forest_visualization(self.visualizer, offscreen),
                 self.vtk_plotter.camera_position,
                 out_dir / f"{Path(self.visualizer.save_path).name}_cast",
                 spec,
                 progress=step,
             )
-            if path is None:
-                logger.error("Cast failed: %s", error)
-                self.visualizer.status = f"Cast failed (is Bridge running?): {error}"
-            elif error:
-                # The quilt is on disk; only the display is missing.
-                self.visualizer.status = f"Wrote {path.name}, casting failed: {error}"
-            else:
-                self.visualizer.status = f"Cast {path.name} in {time.perf_counter() - started:.1f}s"
+            if result.path is None:
+                logger.error("Cast failed: %s", result.error)
+            self.visualizer.status = result.message
         finally:
             self.cast_btn.setEnabled(True)
 

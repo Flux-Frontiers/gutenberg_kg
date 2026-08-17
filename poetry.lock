@@ -2325,21 +2325,21 @@ viz3d = ["PyQt5 (>=5.15.0)", "markdown (>=3.6)", "param (>=2.0.0)", "pyvista (>=
 
 [[package]]
 name = "kgmodule-utils"
-version = "0.15.0"
+version = "0.16.0"
 description = "Shared types, graph store, semantic index, and pipeline base for the KGModule SDK"
 optional = false
 python-versions = "<3.14,>=3.12"
 groups = ["main"]
 files = [
-    {file = "kgmodule_utils-0.15.0-py3-none-any.whl", hash = "sha256:ae760c6baa00d14ca443860b59e9ea1d7d48610f840354f2b0f370c2208e0aff"},
-    {file = "kgmodule_utils-0.15.0.tar.gz", hash = "sha256:2fa04319246b8ea7acbed111502e03d41b7c69709d9f67c60e73f7b7950c648b"},
+    {file = "kgmodule_utils-0.16.0-py3-none-any.whl", hash = "sha256:5fe2b7752ca2efbe75c1b7100efe70e8a9b3b01521fba325b5cc939686430ed8"},
+    {file = "kgmodule_utils-0.16.0.tar.gz", hash = "sha256:d69e40d6246572f3e5cb1dce45616d5484acd6a4b6935c20a936eefc81e336f0"},
 ]
 
 [package.dependencies]
 httpx = {version = ">=0.27.0", optional = true, markers = "extra == \"synthesis\""}
 numpy = [
-    {version = ">=1.24.0", optional = true, markers = "extra == \"semantic\" or extra == \"viz3d\""},
     {version = ">=1.24.0", optional = true, markers = "extra == \"viz3d-qt\" or extra == \"viz3d-render\""},
+    {version = ">=1.24.0", optional = true, markers = "extra == \"semantic\" or extra == \"viz3d\""},
 ]
 openai = {version = ">=1.30.0", optional = true, markers = "extra == \"synthesis\""}
 pillow = {version = ">=10.0.0", optional = true, markers = "extra == \"synthesis\""}
@@ -6848,4 +6848,4 @@ viz3d = ["PyQt5", "kgmodule-utils", "markdown", "param", "pyvistaqt", "quiltwrig
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.12,<3.14"
-content-hash = "b9cc58a35498d08ca05f908dcc5b5296e784b68316c1763d4090a2a858129b53"
+content-hash = "a37f694803746a1f145225e82d103652948456751039707ab592d0d4aee6e016"
