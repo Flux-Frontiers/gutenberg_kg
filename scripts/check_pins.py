@@ -11,6 +11,10 @@ and named in four files that drift independently:
     docker/Dockerfile         exact         — what the served image installs
     runpod/requirements.txt   floors  (>=)  — what the serverless worker installs
 
+docker/docker-compose.yml is read too, but holds no version args by design: the
+pins live in one place, the Dockerfile, so a compose build and `make build`
+produce the same image. Any build arg found there is reported as drift.
+
 The index is built locally against the lock and read by the container against
 the Dockerfile ARGs. Those two must match: doc-kg >=0.18.2 changed the vector
 store layout, so a builder older than the runtime emits an index the container
@@ -19,10 +23,10 @@ rather than an error.
 
 Why the floors ARE checked here
 -------------------------------
-docker/Dockerfile pins the KG stack and *then* runs ``pip install .`` (line 121).
-That second install re-resolves against pyproject's floors, so an ARG below its
-floor is silently upgraded: the ARG names a version no build ever runs, and the
-pinned layer is fetched twice. The Dockerfile says so itself at lines 99-103 —
+docker/Dockerfile pins the KG stack and *then* runs ``pip install .``. That
+second install re-resolves against pyproject's floors, so an ARG below its floor
+is silently upgraded: the ARG names a version no build ever runs, and the pinned
+layer is fetched twice. The Dockerfile carries the same warning beside its ARGs —
 "an ARG below pyproject's floor is fiction ... Keep every ARG == the lock" —
 recording the audit that found KGMODULE_UTILS_VERSION at 0.10.0 against a
 >=0.12.1 floor.
@@ -38,9 +42,15 @@ whenever a sibling publishes. A pin PyPI has no installable files for IS a
 failure: the container build would fail on it.
 
 ``--bump`` moves that whole set to the latest PyPI release: it raises the
-pyproject floors, rewrites the Dockerfile ARGs and any compose build args,
-then runs ``poetry lock`` so the lock agrees. Bumping only the Dockerfile
-would leave the builder behind the runtime — the exact drift this catches.
+pyproject and runpod floors, rewrites the Dockerfile ARGs and any compose build
+args, then runs ``poetry lock`` so the lock agrees. Every place a version is
+named moves together — bumping a subset would leave one of them behind, which is
+the drift this exists to catch.
+
+It also flattens declarations that are deliberately staggered: kgmodule-utils is
+floored differently in the core dependencies and in the viz3d extras. Raising a
+published wheel's core floor is a compatibility decision, so read the diff before
+committing a bump.
 
 Usage:
     python scripts/check_pins.py
@@ -185,10 +195,11 @@ def dockerfile_args() -> dict[str, str]:
 
 
 def compose_args() -> dict[str, str]:
-    """Read build args from docker-compose.yml.
+    """Read version build args from docker-compose.yml.
 
-    Compose carries its own copy of some version args, which override the
-    Dockerfile defaults at build time — so they must agree too.
+    There should be none — the pins live only in the Dockerfile ARGs. Any hit is
+    reported as a problem rather than merely compared, because a compose-side
+    copy silently overrides the Dockerfile default at build time.
 
     :returns: mapping of build-arg name to value.
     """
@@ -388,10 +399,16 @@ def main() -> int:
                 f"{dist}: poetry.lock has {lock_v} but Dockerfile ARG {arg}={docker_v} "
                 f"— the index would be built by {lock_v} and read by {docker_v}"
             )
-        if compose_v and docker_v and compose_v != docker_v:
+        # Any version arg in compose is drift here, matching or not. The pins
+        # live in one place so a compose build and `make build` cannot diverge;
+        # a duplicate that agrees today is the one that drifts tomorrow, which
+        # is how this repo reached kgmodule-utils 0.4.6 against a Dockerfile
+        # saying 0.5.0. corpus_pepys only compares them, and that is the check
+        # this repo had before its policy was imported.
+        if compose_v is not None:
             problems.append(
-                f"{dist}: docker-compose.yml sets {arg}={compose_v}, overriding "
-                f"the Dockerfile default {docker_v} at build time"
+                f"{dist}: docker-compose.yml sets {arg}={compose_v}, overriding the "
+                f"Dockerfile default at build time — the pins belong only in the Dockerfile"
             )
         # The check this repo needs most: `pip install .` re-resolves against the
         # floor, so an ARG below it is a pin that cannot hold.
