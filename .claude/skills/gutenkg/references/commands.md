@@ -259,7 +259,7 @@ Use this immediately after `git clone` — `.dockg/` directories are gitignored.
 Capture and review point-in-time corpus metrics.
 
 ```bash
-gutenkg snapshot save            # capture current corpus metrics → corpus/.snapshots/snapshot-<ts>.json
+gutenkg snapshot save            # capture current corpus metrics → corpus/.snapshots/<tree-hash>.json
 gutenkg snapshot list            # list all saved snapshots
 gutenkg snapshot show            # show full JSON for the most recent snapshot
 gutenkg snapshot diff            # compare second-to-last vs last snapshot
