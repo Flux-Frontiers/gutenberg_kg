@@ -85,6 +85,15 @@ services:
       context: ..
 """
 
+_RUNPOD = """\
+# a comment line that must be ignored
+runpod>=1.7.0
+kg-rag>={kgrag}
+doc-kg>={dockg}
+diary-kg>={diarykg}
+kgmodule-utils[synthesis,sqlite-vec]>={kgmodule}
+"""
+
 _COMPOSE_WITH_ARG = """\
 services:
   worker:
@@ -104,7 +113,7 @@ def tree(tmp_path, monkeypatch):
     :returns: a callable taking per-file version overrides and compose content.
     """
 
-    def _build(*, pyproject=None, lock=None, dockerfile=None, compose=None):
+    def _build(*, pyproject=None, lock=None, dockerfile=None, compose=None, runpod=None):
         def _vals(overrides):
             merged = dict(_GOOD)
             merged.update(overrides or {})
@@ -114,6 +123,7 @@ def tree(tmp_path, monkeypatch):
             "PYPROJECT": ("pyproject.toml", _PYPROJECT.format(**_vals(pyproject))),
             "LOCK": ("poetry.lock", _LOCK.format(**_vals(lock))),
             "DOCKERFILE": ("Dockerfile", _DOCKERFILE.format(**_vals(dockerfile))),
+            "RUNPOD_REQS": ("requirements.txt", _RUNPOD.format(**_vals(runpod))),
             "COMPOSE": (
                 "docker-compose.yml",
                 _COMPOSE_CLEAN if compose is None else _COMPOSE_WITH_ARG.format(**_vals(compose)),
@@ -200,12 +210,68 @@ class TestDriftIsCaught:
         assert "no ARG" in capsys.readouterr().out
 
 
-class TestPyprojectFloorsAreNotChecked:
-    """A floor below the lock is intent lagging reality, not drift."""
+class TestFloorsAreChecked:
+    """The check this repo needs, and the one an imported policy deleted.
 
-    def test_a_stale_floor_does_not_fail_the_gate(self, tree, offline):
-        tree(pyproject={"kgmodule": "0.10.0"})
+    docker/Dockerfile pins the KG stack and *then* runs ``pip install .``, which
+    re-resolves against pyproject's floors. An ARG below its floor is silently
+    upgraded, so the ARG names a version no build ever runs — the audit that
+    found KGMODULE_UTILS_VERSION at 0.10.0 against a >=0.12.1 floor. corpus_pepys
+    omits this check because it has no ``pip install .`` step; here it is the
+    whole point.
+    """
+
+    def test_an_arg_below_the_floor_is_drift(self, tree, offline, capsys):
+        tree(
+            dockerfile={"kgmodule": "0.15.0"},
+            lock={"kgmodule": "0.15.0"},
+            pyproject={"kgmodule": "0.16.0"},
+        )
+        assert check_pins.main() == 1
+        assert "silently upgrade" in capsys.readouterr().out
+
+    def test_an_arg_at_the_floor_passes(self, tree, offline):
+        tree(pyproject={"kgmodule": "0.16.0"})
         assert check_pins.main() == 0
+
+    def test_the_highest_floor_wins_when_declared_twice(self, tree):
+        """kgmodule-utils is declared in the core deps and again in an extra."""
+        tree()
+        assert check_pins.pyproject_floors()["kgmodule-utils"] == "0.16.0"
+
+
+class TestRunpodIsChecked:
+    """The serverless worker installs from requirements.txt, not the wheel."""
+
+    def test_a_runpod_floor_below_pyproject_is_drift(self, tree, offline, capsys):
+        tree(runpod={"dockg": "0.20.0"})
+        assert check_pins.main() == 1
+        assert "serverless worker" in capsys.readouterr().out
+
+    def test_reads_runpod_floors_ignoring_comments(self, tree):
+        tree()
+        floors = check_pins.runpod_floors()
+        assert floors["doc-kg"] == "0.21.2"
+        assert "runpod" not in floors  # the un-pinned line is not a KG package
+
+    def test_a_missing_runpod_file_is_not_an_error(self, tree):
+        tree()
+        check_pins.RUNPOD_REQS.unlink()
+        assert check_pins.runpod_floors() == {}
+
+
+class TestKgRagIsAFirstClassPin:
+    """It has a lock entry here, unlike in corpus_pepys where it is image-only."""
+
+    def test_kg_rag_is_pinned_not_container_only(self):
+        assert "kg-rag" in check_pins.PINNED
+        assert check_pins.CONTAINER_ONLY == {}
+
+    def test_its_lock_and_arg_are_compared(self, tree, offline, capsys):
+        tree(dockerfile={"kgrag": "0.11.0"})
+        assert check_pins.main() == 1
+        out = capsys.readouterr().out
+        assert "kg-rag" in out and "0.11.0" in out
 
 
 # ---------------------------------------------------------------------------
@@ -318,6 +384,12 @@ class TestBumpFiles:
         after = paths["PYPROJECT"].read_text()
         assert "diary-kg (>=0.97.0)" in after
         assert before.count("kgmodule-utils") == after.count("kgmodule-utils")
+
+    def test_runpod_floors_move_too(self, tree):
+        """Leaving the worker behind is the same half-applied bump elsewhere."""
+        paths = tree()
+        check_pins.bump_files({"doc-kg": "0.99.0"})
+        assert "doc-kg>=0.99.0" in paths["RUNPOD_REQS"].read_text()
 
     def test_a_noop_bump_reports_no_changes(self, tree):
         tree()

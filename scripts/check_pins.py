@@ -1,19 +1,36 @@
 #!/usr/bin/env python3
 # © 2026 Eric G. Suchanek, PhD — Flux-Frontiers · SPDX-License-Identifier: Elastic-2.0
 """
-Verify the KG pins agree across poetry.lock, the Dockerfile and docker-compose.
+Verify the KG pins agree across every place this repo names them.
 
-The index is built locally by the [build] extra (whose versions poetry.lock
-pins exactly) and read by the container (whose versions the Dockerfile ARGs
-pin exactly). Those two must match: doc-kg >=0.18.2 changed the vector store
-layout, so a builder older than the runtime emits an index the container
+The four KG packages (kg-rag, kgmodule-utils, doc-kg, diary-kg) are cross-pinned
+and named in four files that drift independently:
+
+    pyproject.toml            floors  (>=)  — what the wheel demands
+    poetry.lock               exact         — what the local build resolves
+    docker/Dockerfile         exact         — what the served image installs
+    runpod/requirements.txt   floors  (>=)  — what the serverless worker installs
+
+The index is built locally against the lock and read by the container against
+the Dockerfile ARGs. Those two must match: doc-kg >=0.18.2 changed the vector
+store layout, so a builder older than the runtime emits an index the container
 cannot open — and the failure is silent, surfacing as empty query results
 rather than an error.
 
-The pyproject floors are deliberately NOT checked. They express intent; the
-lock is what `make install` actually installs, so the lock is the truth about
-what built the index. `poetry update` moves the lock without touching the
-Dockerfile — that is the drift this catches.
+Why the floors ARE checked here
+-------------------------------
+docker/Dockerfile pins the KG stack and *then* runs ``pip install .`` (line 121).
+That second install re-resolves against pyproject's floors, so an ARG below its
+floor is silently upgraded: the ARG names a version no build ever runs, and the
+pinned layer is fetched twice. The Dockerfile says so itself at lines 99-103 —
+"an ARG below pyproject's floor is fiction ... Keep every ARG == the lock" —
+recording the audit that found KGMODULE_UTILS_VERSION at 0.10.0 against a
+>=0.12.1 floor.
+
+corpus_pepys carries a sibling of this script that omits the floor and runpod
+checks. That repo is ``package-mode = false`` with no ``pip install .`` step and
+no serverless worker, so its Dockerfile pins are the last word. Here they are
+not, and importing its policy silently deletes two real checks.
 
 PyPI is queried for each pinned distribution. Being behind the latest release
 is reported but is NOT a failure — the pins move as a deliberate set, not
@@ -52,19 +69,101 @@ LOCK = ROOT / "poetry.lock"
 PYPROJECT = ROOT / "pyproject.toml"
 DOCKERFILE = ROOT / "docker" / "Dockerfile"
 COMPOSE = ROOT / "docker" / "docker-compose.yml"
+RUNPOD_REQS = ROOT / "runpod" / "requirements.txt"
 
-# distribution name -> Dockerfile ARG name
+# distribution name -> Dockerfile ARG name.
+# kg-rag belongs here, not in a container-only bucket: it is declared in the
+# `kgdeps` extra and carries a poetry.lock entry, so its lock-vs-ARG comparison
+# is meaningful. (It is container-only in corpus_pepys, which is where the
+# opposite claim came from.)
 PINNED = {
-    "diary-kg": "DIARY_KG_VERSION",
-    "doc-kg": "DOC_KG_VERSION",
+    "kg-rag": "KG_RAG_VERSION",
     "kgmodule-utils": "KGMODULE_UTILS_VERSION",
+    "doc-kg": "DOC_KG_VERSION",
+    "diary-kg": "DIARY_KG_VERSION",
 }
 
-# Installed in the container but not a project dependency, so it has no lock
-# entry to compare against. Reported for visibility, not checked.
-CONTAINER_ONLY = {"kg-rag": "KG_RAG_VERSION"}
+# Nothing is container-only in this repo; kept so the table code below stays
+# shared with the corpus_pepys sibling.
+CONTAINER_ONLY: dict[str, str] = {}
 
 PYPI_TIMEOUT = 10
+
+
+# Matches a PEP 508 requirement's name, optional extras, and its `>=` floor, in
+# both the plain (`doc-kg>=0.21.2`) and poetry-parenthesised (`doc-kg (>=0.21.2)`)
+# spellings pyproject mixes.
+_REQ = re.compile(
+    r"^\s*(?P<name>[A-Za-z0-9._-]+)"
+    r"(?:\[[^\]]*\])?"
+    r"\s*\(?\s*>=\s*"
+    r"(?P<floor>[0-9][^,\s)]*)"
+)
+
+
+def _version_key(version: str) -> tuple[int, ...]:
+    """Split a dotted version into an int tuple for ordering.
+
+    Deliberately not ``packaging.version``: this runs as a ``make build`` gate
+    and should not depend on anything beyond the stdlib. A non-numeric component
+    sorts as 0 rather than raising, so a pre-release tag degrades to a loose
+    comparison instead of a crash.
+
+    :param version: version string such as ``"0.21.2"``.
+    :returns: tuple of ints suitable for comparison.
+    """
+    parts: list[int] = []
+    for chunk in version.split("."):
+        digits = re.match(r"\d+", chunk)
+        parts.append(int(digits.group()) if digits else 0)
+    return tuple(parts)
+
+
+def pyproject_floors() -> dict[str, str]:
+    """Read the highest ``>=`` floor declared for each pinned package.
+
+    A package may be declared several times under different extras —
+    ``kgmodule-utils`` appears in ``[project].dependencies`` and again in the
+    ``viz3d`` and ``pov`` extras, at deliberately different floors. pip resolves
+    against the most restrictive, so that is what is compared.
+
+    :returns: mapping of distribution name to its highest declared floor.
+    """
+    data = tomllib.loads(PYPROJECT.read_text())
+    project = data.get("project", {})
+    requirements = list(project.get("dependencies", []))
+    for extra_reqs in (project.get("optional-dependencies") or {}).values():
+        requirements.extend(extra_reqs)
+
+    floors: dict[str, str] = {}
+    for req in requirements:
+        match = _REQ.match(req)
+        if not match or match.group("name") not in PINNED:
+            continue
+        name, floor = match.group("name"), match.group("floor")
+        if name not in floors or _version_key(floor) > _version_key(floors[name]):
+            floors[name] = floor
+    return floors
+
+
+def runpod_floors() -> dict[str, str]:
+    """Read ``>=`` floors for the pinned packages from runpod/requirements.txt.
+
+    The serverless worker installs from this file, not from the wheel, so it can
+    drift below what the package itself requires.
+
+    :returns: mapping of distribution name to its declared floor.
+    """
+    if not RUNPOD_REQS.exists():
+        return {}
+    floors: dict[str, str] = {}
+    for line in RUNPOD_REQS.read_text().splitlines():
+        if not line.strip() or line.lstrip().startswith("#"):
+            continue
+        match = _REQ.match(line)
+        if match and match.group("name") in PINNED:
+            floors[match.group("name")] = match.group("floor")
+    return floors
 
 
 def lock_versions() -> dict[str, str]:
@@ -148,10 +247,17 @@ def rewrite(path: Path, pattern: re.Pattern[str], version: str, label: str) -> l
 
 
 def bump_files(targets: dict[str, str]) -> list[str]:
-    """Pin every declaration of ``targets`` in pyproject, Dockerfile and compose.
+    """Pin every declaration of ``targets`` in pyproject, Dockerfile, compose and runpod.
 
-    The pyproject floors are ``>=`` constraints and stay that way — only the
-    floor moves. The Dockerfile ARGs and compose build args are exact pins.
+    The pyproject and runpod floors are ``>=`` constraints and stay that way —
+    only the floor moves. The Dockerfile ARGs and compose build args are exact
+    pins.
+
+    **This raises every declaration to the same version.** pyproject floors here
+    are deliberately staggered (core ``>=0.14.0``, ``viz3d`` ``>=0.15.0``,
+    ``viz3d-render`` ``>=0.16.0``), and flattening them raises what a *published*
+    wheel demands of its consumers. That is a compatibility decision, not
+    hygiene — check the diff before committing a bump.
 
     :param targets: mapping of distribution name to the version to pin.
     :returns: one entry per edit made, in file order.
@@ -175,6 +281,14 @@ def bump_files(targets: dict[str, str]) -> list[str]:
         )
         changes += rewrite(
             COMPOSE, re.compile(rf"^(\s+{arg}:\s*)(\S+)", re.MULTILINE), version, arg
+        )
+        # The serverless worker installs from this file rather than the wheel,
+        # so leaving it behind is the same half-applied bump in another place.
+        changes += rewrite(
+            RUNPOD_REQS,
+            re.compile(rf"^({re.escape(dist)}(?:\[[^\]]*\])?>=)(\S+)", re.MULTILINE),
+            version,
+            f"{dist} >=",
         )
     return changes
 
@@ -228,6 +342,7 @@ def main() -> int:
         parser.error("--bump needs PyPI; it cannot be combined with --offline")
 
     locked, dockerfile, compose = lock_versions(), dockerfile_args(), compose_args()
+    floors, runpod = pyproject_floors(), runpod_floors()
     pypi: dict[str, tuple[str, set[str]] | None] = (
         {} if args.offline else {dist: pypi_releases(dist) for dist in (*PINNED, *CONTAINER_ONLY)}
     )
@@ -251,13 +366,18 @@ def main() -> int:
             return f"{latest}  ← behind"
         return latest
 
-    print(f"{'package':<18} {'poetry.lock':<14} {'Dockerfile':<14} {'compose':<14} PyPI latest")
-    print("-" * 90)
+    print(
+        f"{'package':<18} {'poetry.lock':<12} {'Dockerfile':<12} "
+        f"{'floor':<10} {'runpod':<10} PyPI latest"
+    )
+    print("-" * 96)
 
     for dist, arg in PINNED.items():
         lock_v = locked.get(dist)
         docker_v = dockerfile.get(arg)
         compose_v = compose.get(arg)
+        floor_v = floors.get(dist)
+        runpod_v = runpod.get(dist)
 
         if lock_v is None:
             problems.append(f"{dist}: not in poetry.lock (run 'poetry lock')")
@@ -273,10 +393,26 @@ def main() -> int:
                 f"{dist}: docker-compose.yml sets {arg}={compose_v}, overriding "
                 f"the Dockerfile default {docker_v} at build time"
             )
+        # The check this repo needs most: `pip install .` re-resolves against the
+        # floor, so an ARG below it is a pin that cannot hold.
+        if docker_v and floor_v and _version_key(docker_v) < _version_key(floor_v):
+            problems.append(
+                f"{dist}: Dockerfile ARG {arg}={docker_v} is below pyproject's "
+                f">={floor_v} floor — `pip install .` will silently upgrade it, so "
+                f"the ARG names a version no build actually runs"
+            )
+        if runpod_v and floor_v and _version_key(runpod_v) < _version_key(floor_v):
+            problems.append(
+                f"{dist}: runpod/requirements.txt has >={runpod_v} but pyproject "
+                f"floors >={floor_v} — the serverless worker may install a version "
+                f"the package itself rejects"
+            )
 
         print(
-            f"{dist:<18} {lock_v or '—':<14} {docker_v or '—':<14} "
-            f"{compose_v or '—':<14} {pypi_cell(dist, docker_v or lock_v)}"
+            f"{dist:<18} {lock_v or '—':<12} {docker_v or '—':<12} "
+            f"{('>=' + floor_v) if floor_v else '—':<10} "
+            f"{('>=' + runpod_v) if runpod_v else '—':<10} "
+            f"{pypi_cell(dist, docker_v or lock_v)}"
         )
 
     for dist, arg in CONTAINER_ONLY.items():
@@ -305,7 +441,7 @@ def main() -> int:
             print(f"  - {p}")
         return 1
 
-    print("Pins agree: the index builder and the container runtime match.")
+    print("Pins agree: lock, Dockerfile ARGs, pyproject floors and runpod all match.")
     return 0
 
 
