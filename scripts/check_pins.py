@@ -47,10 +47,10 @@ args, then runs ``poetry lock`` so the lock agrees. Every place a version is
 named moves together — bumping a subset would leave one of them behind, which is
 the drift this exists to catch.
 
-It also flattens declarations that are deliberately staggered: kgmodule-utils is
-floored differently in the core dependencies and in the viz3d extras. Raising a
-published wheel's core floor is a compatibility decision, so read the diff before
-committing a bump.
+It raises every declaration of a package to the same version. That is what this
+repo wants — pyproject states one floor per package across all declarations —
+but it is still a published wheel's floor, so read the diff before committing a
+bump.
 
 Usage:
     python scripts/check_pins.py
@@ -134,8 +134,9 @@ def pyproject_floors() -> dict[str, str]:
 
     A package may be declared several times under different extras —
     ``kgmodule-utils`` appears in ``[project].dependencies`` and again in the
-    ``viz3d`` and ``pov`` extras, at deliberately different floors. pip resolves
-    against the most restrictive, so that is what is compared.
+    ``viz3d`` and ``pov`` extras. They are meant to agree; pip resolves against
+    the most restrictive, so the highest is what is compared — which also means
+    a stale low floor is invisible here. Only a reader catches that one.
 
     :returns: mapping of distribution name to its highest declared floor.
     """
@@ -264,11 +265,9 @@ def bump_files(targets: dict[str, str]) -> list[str]:
     only the floor moves. The Dockerfile ARGs and compose build args are exact
     pins.
 
-    **This raises every declaration to the same version.** pyproject floors here
-    are deliberately staggered (core ``>=0.14.0``, ``viz3d`` ``>=0.15.0``,
-    ``viz3d-render`` ``>=0.16.0``), and flattening them raises what a *published*
-    wheel demands of its consumers. That is a compatibility decision, not
-    hygiene — check the diff before committing a bump.
+    **This raises every declaration of a package to the same version**, which is
+    what pyproject's one-floor-per-package rule asks for. It is still a published
+    wheel's floor, so check the diff before committing a bump.
 
     :param targets: mapping of distribution name to the version to pin.
     :returns: one entry per edit made, in file order.
