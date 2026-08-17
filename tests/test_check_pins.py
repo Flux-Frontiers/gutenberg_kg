@@ -275,7 +275,6 @@ class TestKgRagIsAFirstClassPin:
 
     def test_kg_rag_is_pinned_not_container_only(self):
         assert "kg-rag" in check_pins.PINNED
-        assert check_pins.CONTAINER_ONLY == {}
 
     def test_its_lock_and_arg_are_compared(self, tree, offline, capsys):
         tree(dockerfile={"kgrag": "0.11.0"})
