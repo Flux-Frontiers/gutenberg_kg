@@ -35,6 +35,7 @@ def viz_timeline(snapshots: str, chart_type: str) -> None:
     Plots total books, authors, nodes, and edges over time using an
     interactive Plotly chart.  Run ``gutenkg snapshot save`` first to
     build the snapshot history.
+    \f
 
     :param snapshots: Path to the snapshots directory — a ``manifest.json``
         listing one ``<tree-hash>.json`` per snapshot, as written by
