@@ -96,10 +96,12 @@ requires-python = ">=3.12,<3.14"
 dependencies = [
     "click>=8.1.0,<9",
     # One floor for this package across every declaration — the `viz3d` and
-    # `pov` extras below name 0.14.0, and a lower floor here buys nothing while
-    # making the repo state ambiguous: scripts/check_pins.py compares the
-    # *highest* declared floor, so a stale low one is invisible to the gate.
-    "kgmodule-utils[synthesis,sqlite-vec]>=0.14.0",
+    # `pov` extras below name the same 0.16.0, and a lower floor here buys
+    # nothing while making the repo state ambiguous: scripts/check_pins.py
+    # compares the *highest* declared floor, so a stale low one is invisible to
+    # the gate. This sat at 0.14.0 against 0.15.0 and 0.16.0 in the extras —
+    # drift the gate could not see, which is the reason for the rule.
+    "kgmodule-utils[synthesis,sqlite-vec]>=0.16.0",
     "rich>=14.3.3,<15",
     "doc-kg (>=0.21.2)",  # transformers 5.x — must match kg-rag; see the kgdeps extra
     "diary-kg (>=0.97.0)",
@@ -169,7 +171,7 @@ pov = [
     # install this extra alone and write scenes. `[viz3d]` here is the SDK's
     # NumPy-only geometry extra, NOT `[viz3d-render]`, which is what would pull
     # PyVista back in.
-    "kgmodule-utils[viz3d]>=0.15.0",
+    "kgmodule-utils[viz3d]>=0.16.0",
     "quiltwright>=0.6.0",
 ]
 mcp = [

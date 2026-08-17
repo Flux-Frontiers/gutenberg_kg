@@ -182,10 +182,6 @@ class TestPassing:
         tree()
         assert check_pins.main() == 0
 
-    def test_compose_agreeing_with_the_dockerfile_passes(self, tree, offline):
-        tree(compose={})  # same versions as the Dockerfile
-        assert check_pins.main() == 0
-
 
 class TestDriftIsCaught:
     def test_lock_and_dockerfile_disagree(self, tree, offline, capsys):
@@ -194,11 +190,22 @@ class TestDriftIsCaught:
         assert check_pins.main() == 1
         assert "0.20.0" in capsys.readouterr().out
 
-    def test_compose_overrides_the_dockerfile(self, tree, offline, capsys):
-        """A compose arg silently wins at build time, so disagreement is drift."""
+    def test_a_disagreeing_compose_arg_is_drift(self, tree, offline, capsys):
         tree(compose={"kgmodule": "0.9.0"})
         assert check_pins.main() == 1
         assert "overriding" in capsys.readouterr().out
+
+    def test_a_compose_arg_that_agrees_is_still_drift(self, tree, offline, capsys):
+        """The one an imported policy let through.
+
+        A duplicate that matches today is the one that drifts tomorrow — how
+        this repo reached kgmodule-utils 0.4.6 against a Dockerfile saying
+        0.5.0. The pins belong in the Dockerfile alone, so any compose version
+        arg is a problem regardless of its value.
+        """
+        tree(compose={})  # deliberately the same version as the Dockerfile
+        assert check_pins.main() == 1
+        assert "belong only in the Dockerfile" in capsys.readouterr().out
 
     def test_package_missing_from_lock(self, tree, offline, capsys):
         tree()
