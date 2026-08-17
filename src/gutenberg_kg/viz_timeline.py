@@ -29,6 +29,10 @@ from gutenberg_kg.corpus import snapshot_list
 def load_snapshots_timeline(snapshots_dir: Path) -> dict[str, list[Any]]:
     """Load corpus snapshots and return parallel timeline lists.
 
+    Reads the snapshot manager's field names: metrics live under ``metrics`` as
+    ``total_books`` and friends, and a snapshot is identified by ``key`` — the
+    git *tree* hash, not a commit — which is what the charts label points with.
+
     :param snapshots_dir: Path to ``corpus/.snapshots/``.
     :return: Dict with keys ``timestamps``, ``versions``, ``commits``,
         ``books``, ``authors``, ``nodes``, ``edges``; empty if no snapshots.
@@ -47,14 +51,15 @@ def load_snapshots_timeline(snapshots_dir: Path) -> dict[str, list[Any]]:
         "edges": [],
     }
     for snap in snaps:
-        t = snap.get("totals", {})
+        m = snap.get("metrics", {})
         timeline["timestamps"].append(snap.get("timestamp", ""))
         timeline["versions"].append(snap.get("version", ""))
-        timeline["commits"].append(snap.get("commit", "unknown"))
-        timeline["books"].append(t.get("books", 0))
-        timeline["authors"].append(t.get("authors", 0))
-        timeline["nodes"].append(t.get("nodes", 0))
-        timeline["edges"].append(t.get("edges", 0))
+        # Shortened like a commit, because that is how it reads in a tooltip.
+        timeline["commits"].append((snap.get("key") or "unknown")[:7])
+        timeline["books"].append(m.get("total_books", 0))
+        timeline["authors"].append(m.get("total_authors", 0))
+        timeline["nodes"].append(m.get("total_nodes", 0))
+        timeline["edges"].append(m.get("total_edges", 0))
 
     return timeline
 
