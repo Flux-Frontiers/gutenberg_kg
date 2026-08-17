@@ -28,6 +28,7 @@ def rebuild_indices(genre, force_build):
     built into per-book ``.dockg/`` indices; the ``diaries`` genre is routed to
     the DiaryKG pipeline (``chunk-diaries`` then ``build-diaries`` → ``.diarykg/``)
     automatically, so a single run reconstructs the whole corpus.
+    \f
 
     :param genre: Tuple of genres to rebuild (empty = all genres).
     :param force_build: Rebuild even if the index already exists.

@@ -5,14 +5,17 @@ drift — a checker that cannot go red is worse than none, because it reads as a
 guarantee. Each test points the module's file constants at a fixture tree in
 tmp_path, so nothing depends on the repo's current pin values.
 
-What it compares changed: the pins that matter are ``poetry.lock`` (what
-``make install`` actually builds the index with) against the Dockerfile ARGs and
-compose build args (what the container reads it with). The pyproject floors are
-deliberately *not* checked — they express intent, and intent is not what built
-the artifact. So the tests below assert the lock/container axis and leave the
-floors alone.
+Four files name these pins and drift independently: pyproject floors, the lock,
+the Dockerfile ARGs and runpod/requirements.txt. All four are compared, and the
+floors matter most — docker/Dockerfile runs ``pip install .`` after pinning, so
+an ARG below its floor is silently upgraded and names a version no build runs.
 
-``--bump`` is the part worth testing hardest. It rewrites three files and then
+That paragraph replaces one asserting the opposite. This file briefly carried
+corpus_pepys's policy, which omits the floor and runpod checks because that repo
+has no ``pip install .`` step; the tests were written to agree with it and went
+green on a contract that was never this repo's.
+
+``--bump`` is the part worth testing hardest. It rewrites four files and then
 runs ``poetry lock``, and its rewrite is a two-group regex where group 1 has to
 carry extras markers and ``>=`` operators through untouched. A regex that eats
 ``[synthesis,sqlite-vec]`` would leave a pyproject that still parses and no

@@ -112,6 +112,7 @@ def status(as_json: bool, update_readme: bool, registry: str | None) -> None:
 
     Reads per-book SQLite databases directly — no rebuild required. Suitable
     for CI health checks and badge maintenance.
+    \f
 
     :param as_json: Emit JSON instead of a Rich table.
     :param update_readme: Patch badge URLs in README.md after displaying stats.

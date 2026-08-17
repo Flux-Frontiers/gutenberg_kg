@@ -26,6 +26,7 @@ def download_group():
 @click.option("--dry-run", is_flag=True, default=False, help="Print actions without downloading.")
 def download_book(ebook_id, genre, title, force, dry_run):
     """Download a single book by its Gutenberg ebook ID.
+    \f
 
     :param ebook_id: Project Gutenberg numeric book ID.
     :param genre: Optional genre subdirectory.
@@ -58,6 +59,7 @@ def download_book(ebook_id, genre, title, force, dry_run):
 @click.option("--dry-run", is_flag=True, default=False, help="Print actions without downloading.")
 def download_catalog(catalog_file, genre, force, dry_run):
     """Download multiple books from a catalog file.
+    \f
 
     :param catalog_file: Path to a catalog file (one ``<ebook_id> [genre]`` per line).
     :param genre: Override genre for all entries.
@@ -81,6 +83,7 @@ def download_catalog(catalog_file, genre, force, dry_run):
 )
 def download_search(query, author, title, subject, language, max_results):
     """Search the Project Gutenberg catalog.
+    \f
 
     :param query: General keyword query.
     :param author: Filter by author name.
@@ -113,6 +116,7 @@ def download_search(query, author, title, subject, language, max_results):
 @click.option("--dry-run", is_flag=True, default=False, help="Print actions without downloading.")
 def fetch_genre(genre, query, max_results, yes, force, dry_run):
     """Search, confirm, and download an entire genre in one step.
+    \f
 
     :param genre: Genre to fetch books for.
     :param query: Additional keyword refinement for the search.
@@ -135,6 +139,7 @@ def fetch_genre(genre, query, max_results, yes, force, dry_run):
 )
 def survey(genre):
     """Scan the repo and show download/ingest status by genre.
+    \f
 
     :param genre: Optional genre filter.
     """

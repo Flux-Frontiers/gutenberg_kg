@@ -52,6 +52,7 @@ from gutenberg_kg.cli.options import ALL_GENRES
 )
 def ingest(genre, force_build, force_register, push, dry_run, registry, quiet):
     """Build DocKG indices, register with KGRAG, and optionally push to git.
+    \f
 
     :param genre: Tuple of genres to process (empty = all genres).
     :param force_build: Rebuild even if .dockg already exists.

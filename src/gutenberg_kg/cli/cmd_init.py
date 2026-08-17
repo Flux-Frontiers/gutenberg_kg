@@ -28,6 +28,7 @@ def init(check: bool) -> None:
     fail mid-run if a model is missing, which this catches up front instead.
     Docker builds don't need this: the image pre-downloads the embedder at
     build time and never runs spaCy at runtime.
+    \f
 
     :param check: Report status only; skip downloading missing models.
     """

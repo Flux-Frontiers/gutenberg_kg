@@ -43,6 +43,7 @@ def chunk_diaries(diary_names, force, dry_run):
 
     Skips diaries that already have a non-empty ``.diary/``; use ``--force`` to
     rebuild.
+    \f
 
     :param diary_names: Tuple of diary directory names (empty = all diaries).
     :param force: Re-chunk existing ``.diary/`` corpora.
