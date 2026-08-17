@@ -24,24 +24,20 @@ Full flag reference for the `gutenkg` CLI (v1.2.0). All commands run from the re
 16. [status](#status)
 17. [viz3d](#viz3d)
 18. [viz-timeline](#viz-timeline)
-19. [Data Sources](#data-sources-download-pipeline)
-20. [text_to_markdown Heading Patterns](#text_to_markdown-heading-patterns)
-21. [Failure Modes](#failure-modes)
-
----
-
-## download book
-
-Download a single book by its Gutenberg ebook ID.
-
-```bash
-gutenkg download book <id> --genre <genre>
-gutenkg download book <id> --genre <genre> --dry-run    # preview only
-gutenkg download book <id> --genre <genre> --force      # re-download if exists
-```
-
-**Idempotent** — skips if `corpus/<genre>/<title>/<slug>.md` already exists, unless `--force`.
-
+19. [init](#init)
+20. [audit](#audit)
+21. [query](#query)
+22. [re-register](#re-register)
+23. [chunk-diaries](#chunk-diaries)
+24. [build-diaries](#build-diaries)
+25. [build-corpus](#build-corpus)
+26. [quilt](#quilt)
+27. [pov](#pov)
+28. [chat](#chat)
+29. [imagine](#imagine)
+30. [Data Sources (download pipeline)](#data-sources-download-pipeline)
+31. [text_to_markdown Heading Patterns](#text_to_markdown-heading-patterns)
+32. [Failure Modes](#failure-modes)
 ---
 
 ## download catalog
@@ -310,6 +306,160 @@ gutenkg viz-timeline --snapshots /path/to/.snapshots
 
 Plots: total books, authors, nodes, edges over time.
 Requires at least one saved snapshot (`gutenkg snapshot save`).
+
+---
+
+## init
+
+Ensure the spaCy and embedder models used locally are present.
+
+```bash
+gutenkg init
+```
+
+Run once after `git clone` + `poetry install`, before `chunk-diaries` / `ingest` /
+`build-corpus` — those download models on first use otherwise, mid-build.
+
+---
+
+## audit
+
+Verify corpus integrity and report problems.
+
+```bash
+gutenkg audit
+```
+
+Checks every book for a present, parseable full-text `.md` and `reference.md`; that
+diaries parse with their `.diary_format`; and that no Gutenberg ID appears under two
+genres. Run it after moving a book between genres — a duplicate ID is the failure it
+exists to catch.
+
+---
+
+## query
+
+Search the locally ingested corpus. Docker is not required.
+
+```bash
+gutenkg query "whale"
+```
+
+Run `gutenkg ingest` first to build the per-book indices and register them with KGRAG.
+
+---
+
+## re-register
+
+Re-register built books with the correct KGKind, without rebuilding any DocKG.
+
+```bash
+gutenkg re-register --genre horror
+```
+
+Walks the corpus for books that already have `.dockg/graph.sqlite` and upserts their
+registry entries. Books lacking `.dockg/` are skipped, so this is safe to re-run.
+
+---
+
+## chunk-diaries
+
+Stages ①② of the diary pipeline: rebuild `.diary/` chunk corpora from the committed
+book `.md`.
+
+```bash
+gutenkg chunk-diaries
+```
+
+Parses each diary's full text into a dated `.diary_source.psv` using the format named
+by its `.diary_format`, then splits that into timestamped entry files under `.diary/`.
+
+---
+
+## build-diaries
+
+Stage ③ of the diary pipeline: build `.diarykg/` indices from `.diary/`.
+
+```bash
+gutenkg build-diaries
+```
+
+Requires `chunk-diaries` to have run. Builds without SIMILAR_TO edges. `ingest` and
+`rebuild-indices` route the `diaries` genre through both stages automatically, so this
+is only needed to run the stage on its own.
+
+---
+
+## build-corpus
+
+Build one consolidated DocKG over the whole corpus, or chosen genres.
+
+```bash
+gutenkg build-corpus
+gutenkg build-corpus --genre philosophy
+```
+
+Writes a single `graph.sqlite` + vector index to `bundles/<name>/.dockg/` — the artifact
+baked into the standalone fat image. Distinct from `ingest`, which builds one index per
+book.
+
+---
+
+## quilt
+
+Render one book's knowledge tree as a Looking Glass quilt.
+
+```bash
+gutenkg quilt --book "Pepys"                     # 16" Gen3 Landscape
+gutenkg quilt --book Hamlet --entities --zoom 1.2
+gutenkg quilt --book Hamlet --season autumn
+gutenkg quilt --book Hamlet --spec portrait      # another device
+gutenkg quilt --book Hamlet --orbit 180 --cast
+```
+
+The book is grown by space colonization so its limbs reach its own text chunks — the
+canopy's shape is the book's structure, not decoration. The depth budget is printed
+before every render, which is where a blown disparity budget shows up at no cost.
+
+---
+
+## pov
+
+Write one book's knowledge tree as an analytic POV-Ray scene.
+
+```bash
+gutenkg pov --book Hamlet
+gutenkg pov --book Hamlet --render
+```
+
+The same tree `quilt` rasterises, described as primitives rather than triangles: a limb
+is a `sphere_sweep`, a leaf one instance of a declared ellipsoid. One to two orders of
+magnitude smaller than a mesh dump, with exact silhouettes at any zoom. Needs a `povray`
+binary on PATH to `--render`.
+
+---
+
+## chat
+
+Launch the Streamlit chat UI. Needs the `[chat]` extra and a running worker.
+
+```bash
+gutenkg chat
+```
+
+---
+
+## imagine
+
+Generate an image from a text prompt or from corpus content.
+
+```bash
+gutenkg imagine --prompt "a whaling ship at dusk"
+gutenkg imagine --query "Ahab"
+```
+
+With `--query`, the relevant corpus text is retrieved and rewritten into a visual scene
+description by a local VLM before generation.
 
 ---
 

@@ -75,12 +75,64 @@ gutenkg download catalog scripts/catalogs/medieval-literature.txt --genre mediev
 gutenkg ingest --genre medieval-literature
 ```
 
+### Move a book between genres / remove a duplicate
+
+There is **no `gutenkg` deregister command** — the KGRAG registry bakes the genre into each
+KG name (`gutenberg-<genre>-<slug>-doc`), so moving a book's dir leaves a stale registry
+entry pointing at the old genre. Fix it with the **`kgrag`** CLI:
+
+```bash
+# 1. Deregister the old-genre entry (name from: kgrag list, or the registry)
+kgrag unregister gutenberg-science-fiction-the-call-of-cthulhu-doc --yes
+
+# 2. Move the whole dir with plain mv (carries .dockg/ along — no rebuild needed)
+mv "corpus/science-fiction/The Call of Cthulhu" "corpus/horror/The Call of Cthulhu"
+
+# 3. Re-register under the new genre (upsert-only; skips books lacking .dockg)
+gutenkg re-register --genre horror
+
+# 4. Update BOTH catalog files (source of truth) + verify
+#    - remove the id from scripts/catalogs/<old-genre>.txt
+#    - add    the id to   scripts/catalogs/<new-genre>.txt
+gutenkg audit                       # 0 errors = no duplicate Gutenberg IDs across genres
+```
+
+For a pure **duplicate** (same id already built in the target genre): `kgrag unregister` the
+losing entry, `rm -rf` its dir, drop its catalog line, then `gutenkg audit`.
+
+`gutenkg audit` catches cross-genre duplicate Gutenberg IDs — run it after any move.
+`kgrag list` shows all registered KG names; `kgrag unregister <name|uuid> --yes` removes one.
+
+### First run after install
+
+```bash
+gutenkg init                               # fetch the spaCy + embedder models
+```
+
+Do this before `chunk-diaries` / `ingest` / `build-corpus`, or they download models
+mid-build.
+
 ### After cloning (indices are gitignored)
 
 ```bash
-gutenkg rebuild-indices                      # all genres
-gutenkg rebuild-indices --genre philosophy   # single genre
+gutenkg rebuild-indices                      # rebuilds EVERYTHING: prose → .dockg/, diaries → .diarykg/
+gutenkg rebuild-indices --genre philosophy   # single prose genre
+gutenkg rebuild-indices --genre diaries      # diaries only (routes to the DiaryKG pipeline)
 ```
+
+`rebuild-indices` (and `ingest`) auto-detect the `diaries` genre and route it through the
+DiaryKG pipeline — `chunk-diaries` (`.md` → `.diary_source.psv` → `.diary/`, Gutenberg parser)
+then `build-diaries` (`.diary/` → `.diarykg/`, no SIMILAR_TO) — instead of the standard
+`.dockg/` build. So one command reconstructs the whole corpus after a clone. You can also run
+the diary stages directly:
+
+```bash
+gutenkg chunk-diaries                        # .md → .diary/  (per-book format from .diary_format)
+gutenkg build-diaries                        # .diary/ → .diarykg/
+```
+
+`chunk-diaries` needs the spaCy model: `python -m spacy download en_core_web_sm` (once).
+Per-book date format comes from a committed `.diary_format` file (`pepys` | `evelyn` | `boswell`).
 
 ### Status check
 
@@ -106,6 +158,33 @@ gutenkg snapshot diff                      # compare last two snapshots
 gutenkg viz3d                              # 3-D knowledge tree forest
 gutenkg viz-timeline                       # corpus growth chart (2d default)
 gutenkg viz-timeline --type 3d             # normalised 3-D scatter
+```
+
+`viz-timeline` plots the snapshots `snapshot save` wrote — no snapshots, no chart.
+
+### Light-field output (Looking Glass)
+
+One book's knowledge tree, grown by space colonization so its limbs reach its own
+text chunks: the canopy's shape is the book's structure, not decoration.
+
+```bash
+gutenkg quilt --book Hamlet                # rasterise via PyVista -> quilt
+gutenkg quilt --book Hamlet --season autumn --cast
+gutenkg pov   --book Hamlet                # same tree as analytic POV-Ray SDL
+gutenkg pov   --book Hamlet --render       # ...and ray-trace it (needs povray)
+```
+
+`quilt` prints the depth budget before every render — a blown disparity budget shows
+up there, for free, rather than after the render. `pov` writes primitives rather than
+triangles, so the scene is one to two orders of magnitude smaller with exact
+silhouettes at any zoom. Both need the `viz3d` / `pov` extras.
+
+### Query, chat, imagine
+
+```bash
+gutenkg query "whale"                      # search the local corpus; no Docker
+gutenkg chat                               # Streamlit UI ([chat] extra + worker)
+gutenkg imagine --query "Ahab"             # corpus text -> scene -> image
 ```
 
 ### Force re-download / force rebuild
@@ -137,11 +216,22 @@ Full flags and options: see [references/commands.md](references/commands.md).
 | `genres init / list` | — |
 | `list-genres` | — |
 | `authors` | `--refresh`, `--dry-run` |
+| `audit` | `--genre`, `--json`, `--registry` |
+| `re-register` | `--genre`, `--dry-run`, `--registry` |
 | `rebuild-indices` | `--genre`, `--force-build` |
+| `kgrag unregister <name>` | `--yes`, `--registry` (deregister a moved/removed book) |
 | `snapshot save/list/show/diff` | — |
 | `status` | `--json`, `--update-readme`, `--registry` |
 | `viz3d` | `--corpus`, `--width`, `--height` |
 | `viz-timeline` | `--snapshots`, `--type [2d\|3d]` |
+| `quilt` | `--book`, `--spec`, `--season`, `--entities`, `--zoom`, `--orbit`, `--cast` |
+| `pov` | `--book`, `--season`, `--render` |
+| `build-corpus` | `--genre`, `--embed-device`, `--embed-batch-size` |
+| `build-diaries` / `chunk-diaries` | — (stages of the diary pipeline) |
+| `query <q>` | — (local search; no Docker) |
+| `chat` | — (Streamlit UI; `[chat]` extra) |
+| `imagine` | `--prompt`, `--query` |
+| `init` | — (fetch spaCy + embedder models) |
 
 ---
 
@@ -200,3 +290,6 @@ Note: **Long and Hays translations** of *Meditations* are under copyright — no
 - `snapshot` requires prior `gutenkg ingest` — viz-timeline needs at least one saved snapshot.
 - `viz3d` shows only ingested books (with `.dockg/graph.sqlite`) — run `ingest` first.
 - `status` reads SQLite directly — does not require a rebuild and is safe for CI.
+- Registry KG names embed the genre (`gutenberg-<genre>-<slug>-doc`), so moving a book's dir
+  orphans its old entry. There is no `gutenkg` deregister — use `kgrag unregister <name> --yes`,
+  then `gutenkg re-register --genre <new>`. Run `gutenkg audit` to catch cross-genre duplicate IDs.
