@@ -144,7 +144,11 @@ viz3d = [
     # and then drifted; the SDK owns them now. [viz3d-qt] subsumes
     # [viz3d-render] — it declares pyvista itself — but both are named so the
     # dependency reads as what it is rather than as a side effect.
-    "kgmodule-utils[viz3d-render,viz3d-qt]>=0.15.0",
+    # 0.16.0 is required, not merely preferred: cast_scene_to_looking_glass
+    # returns a CastResult where it used to return a (path, error) tuple, and
+    # supplies DEFAULT_QUILT_PRESET/DEFAULT_CAST_SCALE, which this module now
+    # aliases rather than declaring its own copies of.
+    "kgmodule-utils[viz3d-render,viz3d-qt]>=0.16.0",
     # Light-field output (`gutenkg quilt`). 0.4.0 supplied depth_report() and
     # widened requires-python to <3.14, which retired the old marker gate.
     # 0.6.0 supplies save_and_cast_quilt() and QuiltSpec.scaled(), both

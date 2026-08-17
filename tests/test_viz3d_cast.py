@@ -76,9 +76,27 @@ class TestTheMachineryIsNotOursAnyMore:
 
         assert "_pov_session.shutdown()" in inspect.getsource(viz3d.ForestMainWindow.cleanup)
 
+    def test_the_cast_status_line_comes_from_the_sdk(self):
+        """0.16.0 moved the three-way outcome wording into ``CastResult``.
+
+        Re-deriving it here is how the two viewers' copies drifted apart in the
+        first place, so what is pinned is that the message is *taken*, not
+        rebuilt.
+        """
+        import inspect
+
+        source = inspect.getsource(viz3d.ForestMainWindow.cast_to_looking_glass)
+        assert "result.message" in source
+        assert "is Bridge running" not in source
+
 
 class TestTheContractTheViewerReliesOn:
-    """`_save_pov_result` and `cast_to_looking_glass` branch on this shape."""
+    """`_save_pov_result` branches on this shape.
+
+    The PyVista cast no longer does: as of kgmodule-utils 0.16.0 it gets a
+    ``CastResult`` back, and only the POV-Ray path still reads the tuple
+    ``save_and_cast_quilt`` returns.
+    """
 
     def test_returns_a_path_and_an_error_slot(self, tmp_path, spec, image):
         from quiltwright import save_and_cast_quilt
