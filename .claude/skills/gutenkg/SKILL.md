@@ -165,7 +165,7 @@ IA catalog format: `<ia_identifier>[\t<genre>]` (one per line, `#` comments OK)
 ```
 corpus/
 ├── genres.json                 # genre registry (single source of truth)
-├── .snapshots/                 # snapshot-*.json files (gitignored)
+├── .snapshots/                 # <tree-hash>.json + manifest.json (gitignored)
 ├── <genre>/
 │   └── <Book Title>/
 │       ├── <slug>.md           # full text with Markdown heading tree
