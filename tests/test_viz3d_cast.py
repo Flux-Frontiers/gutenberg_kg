@@ -3,7 +3,13 @@
 Only the seam, not the window: constructing ``ForestMainWindow`` builds a
 ``QtInteractor``, which aborts the interpreter without a GL context rather
 than raising (see ``tests/_render.py``). Importing the module is safe, so the
-module-level helper is testable and the Qt plumbing is not.
+seam is testable and the Qt plumbing is not.
+
+The seam moved down a layer.  ``save_and_cast_quilt`` is ``quiltwright``'s as
+of 0.6.0 and the render lifecycle is ``kg_utils.viz3d.qt``'s, so what is left
+to pin here is that this package really does use them — a re-introduced local
+copy would drift the same way it drifted from ``pycode_kg`` — plus the one
+behaviour the viewer's error handling is written against.
 """
 
 from __future__ import annotations
@@ -17,7 +23,7 @@ import pytest
 pytest.importorskip("pyvistaqt", reason="viz3d extra not installed — needs `viz3d`")
 pytest.importorskip("quiltwright", reason="quiltwright not installed — needs the `pov` extra")
 
-from gutenberg_kg.viz3d import save_and_cast_quilt  # noqa: E402
+from gutenberg_kg import viz3d  # noqa: E402
 
 pytestmark = pytest.mark.integration
 
@@ -36,47 +42,74 @@ def image():
     return np.zeros((24, 64, 3), dtype=np.uint8)
 
 
-class TestSaveAndCast:
-    def test_cast_receives_a_path_not_the_array(self, tmp_path, spec, image):
-        # The actual bug: cast_quilt takes a path on the Bridge host's
-        # filesystem, save_quilt takes the array. Passing the array raised
-        # "argument should be a str or an os.PathLike object ... not
-        # 'ndarray'" — but only once a cast was attempted, which is minutes of
-        # ray-tracing after the mistake was made.
-        with patch("quiltwright.cast_quilt") as cast:
+class TestTheMachineryIsNotOursAnyMore:
+    """Guards against a local copy creeping back in."""
+
+    def test_no_local_save_and_cast_helper(self):
+        assert not hasattr(viz3d, "save_and_cast_quilt")
+
+    def test_no_local_render_worker(self):
+        assert not hasattr(viz3d, "PovRenderWorker")
+
+    @pytest.mark.parametrize(
+        "name", ["PovRenderSession", "ImagePopup", "cast_scene_to_looking_glass"]
+    )
+    def test_the_sdk_supplies_it(self, name):
+        assert getattr(viz3d, name).__module__ == "kg_utils.viz3d.qt"
+
+    @pytest.mark.parametrize(
+        "gone",
+        [
+            "_start_pov_render",
+            "_poll_pov_progress",
+            "_finish_pov_render",
+            "_on_pov_failed",
+            "_on_pov_done",
+        ],
+    )
+    def test_the_window_no_longer_runs_the_lifecycle(self, gone):
+        assert not hasattr(viz3d.ForestMainWindow, gone)
+
+    def test_the_window_shuts_the_session_down_on_cleanup(self):
+        """The crash-on-close fix: a live QThread must not outlive the window."""
+        import inspect
+
+        assert "_pov_session.shutdown()" in inspect.getsource(viz3d.ForestMainWindow.cleanup)
+
+
+class TestTheContractTheViewerReliesOn:
+    """`_save_pov_result` and `cast_to_looking_glass` branch on this shape."""
+
+    def test_returns_a_path_and_an_error_slot(self, tmp_path, spec, image):
+        from quiltwright import save_and_cast_quilt
+
+        with patch("quiltwright.lfd.cast_quilt"):
             out, error = save_and_cast_quilt(image, tmp_path / "q", spec, cast=True)
-        assert error is None
-        (sent,) = cast.call_args.args[:1]
-        assert isinstance(sent, Path), f"cast_quilt got {type(sent).__name__}"
-        assert not isinstance(sent, np.ndarray)
+        assert isinstance(out, Path) and error is None
 
-    def test_the_path_sent_is_absolute(self, tmp_path, spec, image):
-        # Bridge resolves it on its own filesystem, so a relative path is a
-        # different file or no file at all.
-        with patch("quiltwright.cast_quilt") as cast:
-            save_and_cast_quilt(image, tmp_path / "q", spec, cast=True)
-        assert cast.call_args.args[0].is_absolute()
-
-    def test_the_file_exists_before_bridge_is_contacted(self, tmp_path, spec, image):
-        seen: dict[str, bool] = {}
-
-        def _record(path, _spec):
-            seen["existed"] = Path(path).exists()
-
-        with patch("quiltwright.cast_quilt", side_effect=_record):
-            save_and_cast_quilt(image, tmp_path / "q", spec, cast=True)
-        assert seen["existed"], "cast was attempted before the quilt was written"
-
-    def test_a_failed_cast_still_keeps_the_quilt(self, tmp_path, spec, image):
+    def test_a_failed_cast_is_returned_not_raised(self, tmp_path, spec, image):
         # No panel connected is the normal case, not an error worth losing a
-        # render over.
-        with patch("quiltwright.cast_quilt", side_effect=RuntimeError("no bridge")):
+        # render over — the viewer reports it and keeps the file.
+        from quiltwright import save_and_cast_quilt
+
+        with patch("quiltwright.lfd.cast_quilt", side_effect=RuntimeError("no bridge")):
             out, error = save_and_cast_quilt(image, tmp_path / "q", spec, cast=True)
         assert out.exists()
         assert error is not None and "no bridge" in error
 
-    def test_no_cast_writes_the_file_and_contacts_nothing(self, tmp_path, spec, image):
-        with patch("quiltwright.cast_quilt") as cast:
-            out, error = save_and_cast_quilt(image, tmp_path / "q", spec, cast=False)
-        assert out.exists() and error is None
-        cast.assert_not_called()
+
+class TestCastScaling:
+    """`CAST_SCALE` is applied through the spec, not by hand."""
+
+    def test_the_scaled_spec_keeps_whole_tiles(self):
+        from quiltwright import QUILT_PRESETS
+
+        scaled = QUILT_PRESETS[viz3d.QUILT_SPEC].scaled(viz3d.CAST_SCALE)
+        assert scaled.quilt_width % scaled.columns == 0
+        assert scaled.quilt_height % scaled.rows == 0
+
+    def test_the_view_grid_is_unchanged(self):
+        from quiltwright import QUILT_PRESETS
+
+        preset = QUILT_PRESETS[viz3d.QUILT_SPEC]
+        assert preset.scaled(viz3d.CAST_SCALE).n_views == preset.n_views

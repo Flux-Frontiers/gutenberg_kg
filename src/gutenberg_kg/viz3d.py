@@ -25,22 +25,19 @@ from __future__ import annotations
 import atexit
 import gc
 import logging
-import os
-import shutil
 import sys
-import tempfile
 import time
 import warnings
-from dataclasses import replace
 from pathlib import Path
 
 import numpy as np
 import param
 import pyvista as pv
 from kg_utils.viz3d import LayoutEdge, LayoutNode
+from kg_utils.viz3d.qt import ImagePopup, PovRenderSession, cast_scene_to_looking_glass
 from markdown import markdown  # type: ignore[import-untyped]
-from PyQt5.QtCore import Qt, QThread, QTimer, pyqtSignal
-from PyQt5.QtGui import QFont, QPixmap
+from PyQt5.QtCore import Qt, pyqtSignal
+from PyQt5.QtGui import QFont
 from PyQt5.QtWidgets import (
     QApplication,
     QCheckBox,
@@ -310,154 +307,6 @@ class TextPopup(QDialog):
 # ---------------------------------------------------------------------------
 # create_forest_visualization
 # ---------------------------------------------------------------------------
-
-
-class PovRenderWorker(QThread):
-    """
-    Ray-trace a written ``.pov`` off the GUI thread.
-
-    POV-Ray is an external process and a slow one — roughly 18 s for a single
-    900x675 view of a mid-sized book, and a 48-view quilt is that again per
-    tile.  Calling it inline would freeze the window for the whole render,
-    including the status label meant to report progress, so the work happens
-    here and the window learns about it through signals.
-
-    :param pov_path: The scene file to trace.
-    :param spec: Quilt spec; a 1x1 spec renders a single image.
-    :param camera: Camera in POV-Ray coordinates.
-    :param jobs: Parallel POV-Ray processes.
-    """
-
-    #: Emitted with the assembled image once the render succeeds.
-    finished_ok: pyqtSignal = pyqtSignal(object)
-    #: Emitted with a human-readable reason when it does not.
-    failed: pyqtSignal = pyqtSignal(str)
-
-    def __init__(
-        self,
-        pov_path: Path,
-        spec,
-        camera,
-        views_dir: Path,
-        jobs: int = 1,
-        antialias: float | None = 0.3,
-    ) -> None:
-        """Store the render inputs; nothing is traced until :meth:`run`."""
-        super().__init__()
-        self._pov_path = pov_path
-        self._spec = spec
-        self._camera = camera
-        self._views_dir = views_dir
-        self._jobs = jobs
-        self._antialias = antialias
-
-    def run(self) -> None:
-        """Trace the scene, emitting :attr:`finished_ok` or :attr:`failed`."""
-        try:
-            import numpy as _np
-            from PIL import Image as _Image
-            from quiltwright import assemble_quilt
-            from quiltwright.povray import render_pov_views
-
-            # render_pov_views rather than render_pov_quilt: it writes one
-            # viewNNN.png into a directory the caller owns as each trace
-            # finishes, which is what makes progress observable at all. The
-            # quilt path keeps its views in a private temp dir, so a caster
-            # waiting minutes has nothing to watch.
-            paths = render_pov_views(
-                self._pov_path,
-                self._spec,
-                self._camera,
-                self._views_dir,
-                jobs=self._jobs,
-                antialias=self._antialias,
-                progress=False,
-            )
-            image = assemble_quilt(
-                [_np.asarray(_Image.open(p).convert("RGB")) for p in paths], self._spec
-            )
-        except FileNotFoundError as exc:
-            self.failed.emit(f"No povray binary on PATH — install POV-Ray to ray-trace. ({exc})")
-        except Exception as exc:  # noqa: BLE001 - surfaced to the status bar
-            self.failed.emit(str(exc))
-        else:
-            self.finished_ok.emit(image)
-
-
-class ImagePopup(QDialog):
-    """
-    A frameless-ish viewer for a rendered image.
-
-    :param title: Window title.
-    :param path: Image file to display.
-    :param parent: Parent widget.
-    """
-
-    def __init__(self, title: str, path: Path, parent=None) -> None:
-        """Show *path* scaled to fit, with the file location under it."""
-        super().__init__(parent)
-        self.setWindowTitle(title)
-        layout = QVBoxLayout(self)
-
-        label = QLabel(self)
-        pixmap = QPixmap(str(path))
-        if not pixmap.isNull():
-            label.setPixmap(
-                pixmap.scaled(
-                    min(pixmap.width(), 1100),
-                    min(pixmap.height(), 800),
-                    Qt.KeepAspectRatio,  # type: ignore[attr-defined]
-                    Qt.SmoothTransformation,  # type: ignore[attr-defined]
-                )
-            )
-        label.setAlignment(Qt.AlignCenter)  # type: ignore[attr-defined]
-        layout.addWidget(label)
-
-        where = QLabel(str(path), self)
-        where.setStyleSheet(f"color:{ACCENT}; font-size:11px;")
-        where.setTextInteractionFlags(Qt.TextSelectableByMouse)  # type: ignore[attr-defined]
-        layout.addWidget(where)
-
-        close_btn = QPushButton("Close", self)
-        close_btn.clicked.connect(self.close)  # type: ignore[arg-type]
-        layout.addWidget(close_btn)
-
-
-def save_and_cast_quilt(image, stem: Path, spec, *, cast: bool) -> tuple[Path, str | None]:
-    """
-    Write a quilt to disk, then hand Bridge the **path** to it.
-
-    Split out of the window because the two arguments are easy to confuse and
-    the mistake is invisible until a panel is connected: ``save_quilt`` takes
-    the array, ``cast_quilt`` takes a path on the Bridge host's filesystem.
-    Passing the array to the caster raises ``argument should be a str or an
-    os.PathLike object ... not 'ndarray'`` — after the minutes of ray-tracing,
-    which is the worst possible moment to find out.
-
-    The file is confirmed on disk before Bridge is contacted, so a cast that
-    fails costs the connection and never the render.
-
-    :param image: Assembled quilt as an RGB array.
-    :param stem: Output path stem; ``save_quilt`` appends the spec suffix.
-    :param spec: The spec it was rendered against.
-    :param cast: Whether to push it to the Looking Glass after writing.
-    :return: ``(written path, error message or None)``.
-    """
-    from quiltwright import save_quilt
-
-    out = save_quilt(image, stem, spec)
-    if not cast:
-        return out, None
-    if not out.exists():
-        return out, f"{out} was not written"
-    try:
-        from quiltwright import cast_quilt
-
-        # An absolute path: Bridge resolves it on its own filesystem.
-        cast_quilt(out.resolve(), spec)
-    except Exception as exc:  # noqa: BLE001 - the quilt file is kept regardless
-        return out, str(exc)
-    return out, None
 
 
 def create_forest_visualization(
@@ -956,6 +805,16 @@ class ForestMainWindow(QMainWindow):
         self.progress_bar.setFormat("%v / %m views")
         self.progress_bar.hide()
 
+        # The ray-trace lifecycle — thread, temp views, polling, teardown —
+        # belongs to the SDK; what stays here is which widgets it drives and
+        # what to do with a finished image.
+        self._pov_session = PovRenderSession(
+            self,
+            progress_bar=self.progress_bar,
+            set_status=self._set_pov_status,
+            set_busy=self._set_render_busy,
+        )
+
         btn_row.addWidget(self.reset_view_btn)
         btn_row.addWidget(self.frame_btn)
         btn_row.addWidget(self.reset_settings_btn)
@@ -1206,12 +1065,12 @@ class ForestMainWindow(QMainWindow):
 
         camera = pov_camera_from_plotter(self.vtk_plotter, handedness=scene.handedness)
         spec = preview_spec(*POV_PREVIEW_SIZE)
-        self._start_pov_render(
+        self._pov_session.start(
             pov_path,
             spec,
             camera,
+            on_image=self._preview_pov_result,
             label="preview",
-            cast=False,
             antialias=POV_PREVIEW_ANTIALIAS,
         )
 
@@ -1239,136 +1098,59 @@ class ForestMainWindow(QMainWindow):
         from quiltwright import QUILT_PRESETS
         from quiltwright.povgen import pov_camera_from_plotter
 
-        preset = QUILT_PRESETS[QUILT_SPEC]
-        spec = replace(
-            preset,
-            quilt_width=int(preset.quilt_width * CAST_SCALE) // preset.columns * preset.columns,
-            quilt_height=int(preset.quilt_height * CAST_SCALE) // preset.rows * preset.rows,
-        )
+        spec = QUILT_PRESETS[QUILT_SPEC].scaled(CAST_SCALE)
         camera = pov_camera_from_plotter(self.vtk_plotter, handedness=scene.handedness)
         self.visualizer.status = f"Wrote {pov_path.name}; ray-tracing {spec.n_views} views..."
-        self._start_pov_render(pov_path, spec, camera, label="quilt", cast=True)
-
-    def _start_pov_render(
-        self,
-        pov_path: Path,
-        spec,
-        camera,
-        *,
-        label: str,
-        cast: bool,
-        antialias: float | None = 0.3,
-    ) -> None:
-        """Run a POV-Ray trace in the background and route the result.
-
-        :param pov_path: Scene to trace.
-        :param spec: Quilt spec; 1x1 for a preview.
-        :param camera: Camera in POV-Ray coordinates.
-        :param label: Word for the status line.
-        :param cast: Whether to push the finished quilt to the Looking Glass.
-        :param antialias: POV-Ray ``+A`` threshold; None omits the flag.
-        """
-        self.render_btn.setEnabled(False)
-        self.cast_btn.setEnabled(False)
-        self.visualizer.status = (
-            f"POV-Ray: tracing {spec.n_views} view(s) at "
-            f"{spec.tile_width}x{spec.tile_height} — this is not fast..."
+        self._pov_session.start(
+            pov_path, spec, camera, on_image=self._cast_pov_result, label="quilt"
         )
-        QApplication.processEvents()
 
-        # The worker writes views here as it finishes them; the GUI thread
-        # counts the files. Polling the filesystem beats threading a callback
-        # out of an external process pool, and it cannot wedge the render.
-        self._views_dir = Path(tempfile.mkdtemp(prefix="gutenkg-pov-"))
-        self.progress_bar.setRange(0, spec.n_views)
-        self.progress_bar.setValue(0)
-        self.progress_bar.show()
-        self._pov_started = time.perf_counter()
-        self.progress_bar.setFormat("%v / %m views")
-        self._pov_timer = QTimer(self)
-        self._pov_timer.timeout.connect(self._poll_pov_progress)
-        self._pov_timer.start(400)
+    def _save_pov_result(self, image, spec, *, cast: bool) -> tuple:
+        """Write a traced image beside the other renders, optionally casting it.
 
-        worker = PovRenderWorker(
-            pov_path,
-            spec,
-            camera,
-            self._views_dir,
-            jobs=max(1, (os.cpu_count() or 2) - 1),
-            antialias=antialias,
-        )
-        worker.finished_ok.connect(lambda img: self._on_pov_done(img, spec, label, cast))
-        worker.failed.connect(self._on_pov_failed)
-        worker.finished.connect(self._finish_pov_render)
-        self._pov_worker = worker  # keep a reference; a GC'd QThread is a crash
-        worker.start()
-
-    def _poll_pov_progress(self) -> None:
-        """Count finished views on disk and advance the bar.
-
-        Cheap enough at 400 ms: a directory listing against a render whose
-        views take seconds each.
+        :param image: Assembled RGB array from POV-Ray.
+        :param spec: The spec it was rendered against.
+        :param cast: Whether to push it to the Looking Glass.
+        :return: ``(path, error)``, or ``(None, message)`` if writing failed.
         """
-        views_dir = getattr(self, "_views_dir", None)
-        if views_dir is None or not views_dir.exists():
-            return
-        done = len(list(views_dir.glob("view*.png")))
-        self.progress_bar.setValue(done)
+        from quiltwright import save_and_cast_quilt
 
-        # Elapsed and ETA rather than a frame number. With jobs > 1 there is no
-        # single "current frame" — roughly one trace per core is in flight, and
-        # `done` is how many have landed, not which one is being worked on.
-        # Extrapolating from the completed rate is the honest reading of that.
-        started = getattr(self, "_pov_started", None)
-        if started is None or done == 0:
-            return
-        elapsed = time.perf_counter() - started
-        total = self.progress_bar.maximum()
-        eta = elapsed / done * (total - done)
-        self.progress_bar.setFormat(f"%v / %m views  ·  {elapsed:.0f}s, ~{eta:.0f}s left")
+        try:
+            return save_and_cast_quilt(image, self._pov_stem, spec, cast=cast)
+        except Exception as exc:  # noqa: BLE001 - surfaced to the status bar
+            self.visualizer.status = f"POV-Ray render succeeded but saving failed: {exc}"
+            return None, str(exc)
 
-    def _finish_pov_render(self) -> None:
-        """Stop polling, hide the bar, re-enable the buttons, drop the views."""
-        timer = getattr(self, "_pov_timer", None)
-        if timer is not None:
-            timer.stop()
-        self.progress_bar.hide()
-        self.render_btn.setEnabled(True)
-        self.cast_btn.setEnabled(True)
-        views_dir = getattr(self, "_views_dir", None)
-        if views_dir is not None:
-            # Only ever a directory this method's owner created via mkdtemp.
-            shutil.rmtree(views_dir, ignore_errors=True)
-            self._views_dir = None
-
-    def _on_pov_failed(self, message: str) -> None:
-        """Report a failed trace on the status bar.
-
-        :param message: Human-readable reason.
-        """
-        self.visualizer.status = f"POV-Ray failed: {message}"
-
-    def _on_pov_done(self, image, spec, label: str, cast: bool) -> None:
-        """Save the traced image, then preview or cast it.
+    def _preview_pov_result(self, image, spec, label: str) -> None:
+        """Session callback for a preview trace: write it, then show it.
 
         :param image: Assembled RGB array from POV-Ray.
         :param spec: The spec it was rendered against.
         :param label: Word for the status line.
-        :param cast: Whether to push it to the Looking Glass.
         """
-        try:
-            out, error = save_and_cast_quilt(image, self._pov_stem, spec, cast=cast)
-        except Exception as exc:  # noqa: BLE001 - surfaced to the status bar
-            self.visualizer.status = f"POV-Ray render succeeded but saving failed: {exc}"
+        out, _ = self._save_pov_result(image, spec, cast=False)
+        if out is None:
             return
+        self.visualizer.status = f"POV-Ray {label} \u2192 {out}"
+        popup = ImagePopup(
+            f"POV-Ray \u2014 {self.visualizer.window_title}",
+            out,
+            self,
+            path_color=ACCENT,
+        )
+        popup.resize(min(POV_PREVIEW_SIZE[0] + 40, 1200), POV_PREVIEW_SIZE[1] + 110)
+        popup.show()
 
-        if not cast:
-            self.visualizer.status = f"POV-Ray {label} → {out}"
-            popup = ImagePopup(f"POV-Ray — {self.visualizer.window_title}", out, self)
-            popup.resize(min(POV_PREVIEW_SIZE[0] + 40, 1200), POV_PREVIEW_SIZE[1] + 110)
-            popup.show()
+    def _cast_pov_result(self, image, spec, label: str) -> None:
+        """Session callback for a quilt trace: write it, then hand it to Bridge.
+
+        :param image: Assembled RGB array from POV-Ray.
+        :param spec: The spec it was rendered against.
+        :param label: Word for the status line.
+        """
+        out, error = self._save_pov_result(image, spec, cast=True)
+        if out is None:
             return
-
         size_mb = out.stat().st_size / 1e6 if out.exists() else 0.0
         if error:
             self.visualizer.status = (
@@ -1376,7 +1158,7 @@ class ForestMainWindow(QMainWindow):
             )
             return
         self.visualizer.status = (
-            f"Cast POV-Ray quilt ({size_mb:.1f} MB) to the Looking Glass → {out}"
+            f"Cast POV-Ray {label} ({size_mb:.1f} MB) to the Looking Glass \u2192 {out}"
         )
 
     def frame_for_render(self) -> None:
@@ -1436,7 +1218,7 @@ class ForestMainWindow(QMainWindow):
         Bridge loading the resulting PNG, and that scales with its area.
         """
         try:
-            from quiltwright import QUILT_PRESETS, cast_quilt, render_quilt, save_quilt
+            from quiltwright import QUILT_PRESETS
         except ImportError:
             self.visualizer.status = "Casting needs quiltwright: pip install gutenberg-kg[viz3d]"
             return
@@ -1448,40 +1230,37 @@ class ForestMainWindow(QMainWindow):
             self.cast_povray()
             return
 
-        preset = QUILT_PRESETS[QUILT_SPEC]
-        spec = replace(
-            preset,
-            quilt_width=int(preset.quilt_width * CAST_SCALE) // preset.columns * preset.columns,
-            quilt_height=int(preset.quilt_height * CAST_SCALE) // preset.rows * preset.rows,
-        )
+        spec = QUILT_PRESETS[QUILT_SPEC].scaled(CAST_SCALE)
 
-        def step(n: int, message: str) -> None:
-            self.visualizer.status = f"Cast {n}/4 — {message}"
-            self.cast_btn.setEnabled(False)
+        def step(n: int, total: int, message: str) -> None:
+            """Report cast progress, pumping the event loop so it is visible."""
+            self.visualizer.status = f"Cast {n}/{total} — {message}"
             QApplication.processEvents()
 
-        offscreen = pv.Plotter(off_screen=True)
-        started = time.perf_counter()
-        try:
-            step(1, "building scene...")
+        def build(offscreen: pv.Plotter) -> None:
+            """Compose the forest into *offscreen*; its return value is unused here."""
             create_forest_visualization(self.visualizer, offscreen)
-            offscreen.camera_position = self.vtk_plotter.camera_position
 
-            step(2, f"rendering {spec.n_views} views at {spec.tile_width}x{spec.tile_height}...")
-            quilt = render_quilt(offscreen, spec)
-
-            step(3, f"writing {spec.quilt_width}x{spec.quilt_height} quilt...")
-            out_dir = Path(self.visualizer.corpus_root).parent / "renders" / "quilts"
-            path = save_quilt(quilt, out_dir / f"{Path(self.visualizer.save_path).name}_cast", spec)
-
-            step(4, "handing to Bridge...")
-            cast_quilt(path.resolve(), spec)
-            self.visualizer.status = f"Cast {path.name} in {time.perf_counter() - started:.1f}s"
-        except Exception as exc:  # noqa: BLE001 — a dark panel must not kill the viewer
-            logger.exception("Cast failed")
-            self.visualizer.status = f"Cast failed (is Bridge running?): {exc}"
+        out_dir = Path(self.visualizer.corpus_root).parent / "renders" / "quilts"
+        started = time.perf_counter()
+        self.cast_btn.setEnabled(False)
+        try:
+            path, error = cast_scene_to_looking_glass(
+                build,
+                self.vtk_plotter.camera_position,
+                out_dir / f"{Path(self.visualizer.save_path).name}_cast",
+                spec,
+                progress=step,
+            )
+            if path is None:
+                logger.error("Cast failed: %s", error)
+                self.visualizer.status = f"Cast failed (is Bridge running?): {error}"
+            elif error:
+                # The quilt is on disk; only the display is missing.
+                self.visualizer.status = f"Wrote {path.name}, casting failed: {error}"
+            else:
+                self.visualizer.status = f"Cast {path.name} in {time.perf_counter() - started:.1f}s"
         finally:
-            offscreen.close()
             self.cast_btn.setEnabled(True)
 
     def on_pick(self, actor) -> None:
@@ -1667,8 +1446,32 @@ class ForestMainWindow(QMainWindow):
 
     # -- Cleanup -------------------------------------------------------------
 
+    def _set_pov_status(self, message: str) -> None:
+        """:class:`PovRenderSession` status sink: route it to the status bar.
+
+        :param message: Human-readable line from the render session.
+        """
+        self.visualizer.status = message
+
+    def _set_render_busy(self, busy: bool) -> None:
+        """:class:`PovRenderSession` busy sink: gate the buttons that start a render.
+
+        :param busy: True while a trace is in flight.
+        """
+        self.render_btn.setEnabled(not busy)
+        self.cast_btn.setEnabled(not busy)
+        if busy:
+            QApplication.processEvents()
+
     def cleanup(self) -> None:
-        """Close any open popup and tear down the VTK plotter to release GPU resources."""
+        """Close any open popup, stop a running trace, and tear down the plotter.
+
+        Order matters: the render session goes first.  A ``QThread`` still
+        running when the window is destroyed aborts the process, and a queued
+        signal delivered after these widgets are gone raises from inside Qt —
+        so the session is detached before anything it touches is torn down.
+        """
+        self._pov_session.shutdown()
         if self._current_popup and hasattr(self._current_popup, "isVisible"):
             try:
                 self._current_popup.close()
