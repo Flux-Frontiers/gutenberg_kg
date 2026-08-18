@@ -93,10 +93,6 @@ PINNED = {
     "diary-kg": "DIARY_KG_VERSION",
 }
 
-# Nothing is container-only in this repo; kept so the table code below stays
-# shared with the corpus_pepys sibling.
-CONTAINER_ONLY: dict[str, str] = {}
-
 PYPI_TIMEOUT = 10
 
 
@@ -274,7 +270,7 @@ def bump_files(targets: dict[str, str]) -> list[str]:
     """
     changes: list[str] = []
     for dist, version in targets.items():
-        arg = {**PINNED, **CONTAINER_ONLY}[dist]
+        arg = PINNED[dist]
         changes += rewrite(
             PYPROJECT,
             # Two shapes appear, and both must move or the bump is half-applied:
@@ -318,7 +314,7 @@ def bump(targets: dict[str, str], locked: dict[str, str]) -> int:
     for change in changes:
         print(f"  {change}")
 
-    stale = [d for d, v in targets.items() if d in PINNED and locked.get(d) != v]
+    stale = [d for d, v in targets.items() if locked.get(d) != v]
     if not changes and not stale:
         print("  (nothing to do — every pin is already at the latest PyPI release)")
         return 0
@@ -354,7 +350,7 @@ def main() -> int:
     locked, dockerfile, compose = lock_versions(), dockerfile_args(), compose_args()
     floors, runpod = pyproject_floors(), runpod_floors()
     pypi: dict[str, tuple[str, set[str]] | None] = (
-        {} if args.offline else {dist: pypi_releases(dist) for dist in (*PINNED, *CONTAINER_ONLY)}
+        {} if args.offline else {dist: pypi_releases(dist) for dist in PINNED}
     )
     problems: list[str] = []
     behind: list[str] = []
@@ -429,13 +425,6 @@ def main() -> int:
             f"{('>=' + floor_v) if floor_v else '—':<10} "
             f"{('>=' + runpod_v) if runpod_v else '—':<10} "
             f"{pypi_cell(dist, docker_v or lock_v)}"
-        )
-
-    for dist, arg in CONTAINER_ONLY.items():
-        docker_v = dockerfile.get(arg)
-        print(
-            f"{dist:<18} {'(none)':<14} {docker_v or '—':<14} "
-            f"{compose.get(arg) or '—':<14} {pypi_cell(dist, docker_v)}   container-only"
         )
 
     print()
