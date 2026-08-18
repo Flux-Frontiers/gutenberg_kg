@@ -11,6 +11,7 @@
 #   make rebuild        — force a fresh build (--no-cache) for the selected runtime
 #   make rebuild-all    — force a fresh build (--no-cache) for every runtime installed
 #   make prune          — remove dangling images / stopped containers / build cache
+#   make kill           — force-kill worker/chat containers under every runtime installed
 #   make run            — start the worker on http://localhost:8000
 #   make image-server   — start the local FLUX image server on :8090 (needs mflux:
 #                         Apple Silicon, or Linux + CUDA 13)
@@ -185,7 +186,7 @@ endif
 # `gutenkg` on PATH. Override with e.g. `make GUTENKG=gutenkg build-corpus`.
 GUTENKG     ?= poetry run gutenkg
 
-.PHONY: init chunk-diaries build-diaries build-corpus check-pins setup build build-all rebuild rebuild-all prune run image-server sdxl-server sdxl-fetch chat up stop down query logs clean docs
+.PHONY: init chunk-diaries build-diaries build-corpus check-pins setup build build-all rebuild rebuild-all prune kill run image-server sdxl-server sdxl-fetch chat up stop down query logs clean docs
 
 init:
 	$(GUTENKG) init
@@ -265,6 +266,30 @@ prune:
 		echo "==> Skipping Apple container — not installed."; \
 	fi
 	@echo "Done. Pruned."
+
+# Force-kill the worker + chat containers and the local image-server
+# processes, under every runtime installed — not just $(RUNTIME). Unlike
+# `stop`/`down` (gated to the selected runtime, graceful), this is the "get
+# me back to zero" button: no grace period, no profile/service-name
+# filtering, and it reaches whichever runtime actually has something running
+# regardless of which one is currently selected.
+kill:
+	@if [ "$(HAVE_DOCKER)" = "1" ]; then \
+		echo "==> Killing Docker containers ..."; \
+		$(COMPOSE) --profile chat down --timeout 0 --remove-orphans 2>/dev/null || true; \
+	else \
+		echo "==> Skipping Docker — not installed."; \
+	fi
+	@if [ "$(HAVE_APPLE)" = "1" ]; then \
+		echo "==> Killing Apple containers ..."; \
+		container delete -f $(WORKER_NAME) $(CHAT_NAME) 2>/dev/null || true; \
+	else \
+		echo "==> Skipping Apple container — not installed."; \
+	fi
+	@echo "==> Killing local image-server processes ..."
+	-pkill -f gutenkg-image-server 2>/dev/null || true
+	-pkill -f gutenkg-sdxl-server 2>/dev/null || true
+	@echo "Done. Killed."
 
 ifeq ($(RUNTIME),apple)
 
