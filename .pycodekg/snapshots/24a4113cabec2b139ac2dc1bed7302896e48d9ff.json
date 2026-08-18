@@ -4,7 +4,7 @@
   "timestamp": "2026-07-10T20:11:27.458840+00:00",
   "version": "0.19.3",
   "metrics": {
-    "db_path": "/Users/egs/repos/gutenberg_kg/.pycodekg/graph.sqlite",
+    "db_path": ".pycodekg/graph.sqlite",
     "total_nodes": 6453,
     "meaningful_nodes": 437,
     "total_edges": 5461,
