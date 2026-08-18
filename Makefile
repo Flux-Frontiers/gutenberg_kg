@@ -7,6 +7,10 @@
 #   make build-diaries  — build .diarykg/ indices (prerequisite for build-corpus)
 #   make build-corpus   — rebuild the DocKG + diary bundle (takes ~24 min)
 #   make build          — build the container image (bakes bundle into image)
+#   make build-all      — build for every runtime installed on this machine
+#   make rebuild        — force a fresh build (--no-cache) for the selected runtime
+#   make rebuild-all    — force a fresh build (--no-cache) for every runtime installed
+#   make prune          — remove dangling images / stopped containers / build cache
 #   make run            — start the worker on http://localhost:8000
 #   make image-server   — start the local FLUX image server on :8090 (needs mflux:
 #                         Apple Silicon, or Linux + CUDA 13)
@@ -54,6 +58,17 @@ COMPOSE      = docker compose -f docker/docker-compose.yml
 WORKER       = http://localhost:8000
 IMAGE_SERVER = http://localhost:8090
 SDXL_SERVER  = http://localhost:8091
+
+# Extra flags spliced into both build recipes below. Empty for a normal
+# `make build` (layer cache used); `make rebuild`/`rebuild-all` set this to
+# --no-cache so a stale cached layer can't hide a change.
+BUILD_FLAGS ?=
+
+# Which runtimes are actually present, for `make build-all`/`prune` and the
+# help text. Both are cheap `command -v` probes, evaluated once. Mirrors
+# corpus_pepys, which carries the same dual-runtime setup.
+HAVE_DOCKER := $(shell command -v docker >/dev/null 2>&1 && echo 1)
+HAVE_APPLE  := $(shell command -v container >/dev/null 2>&1 && echo 1)
 
 # HuggingFace auth for the image build's embedder pre-download. Anonymous Hub
 # requests are rate-limited and print "You are sending unauthenticated requests
@@ -170,7 +185,7 @@ endif
 # `gutenkg` on PATH. Override with e.g. `make GUTENKG=gutenkg build-corpus`.
 GUTENKG     ?= poetry run gutenkg
 
-.PHONY: init chunk-diaries build-diaries build-corpus check-pins setup build run image-server sdxl-server sdxl-fetch chat up stop down query logs clean docs
+.PHONY: init chunk-diaries build-diaries build-corpus check-pins setup build build-all rebuild rebuild-all prune run image-server sdxl-server sdxl-fetch chat up stop down query logs clean docs
 
 init:
 	$(GUTENKG) init
@@ -192,6 +207,64 @@ build-corpus: build-diaries
 # drifted image cannot be produced in the first place.
 check-pins:
 	@python3 scripts/check_pins.py
+
+# Build the image under EVERY runtime installed on this machine, rather than
+# only the one RUNTIME selects. Docker and Apple's `container` CLI keep
+# separate image stores, so an image built by one is invisible to the other.
+# Skips a runtime that is not installed rather than failing — mirrors
+# corpus_pepys, which carries the same dual-runtime setup.
+build-all:
+	@if [ -z "$(HAVE_DOCKER)$(HAVE_APPLE)" ]; then \
+		echo "ERROR: neither Docker nor Apple's 'container' CLI is installed."; \
+		exit 1; \
+	fi
+	@if [ "$(HAVE_DOCKER)" = "1" ]; then \
+		echo "==> Building with Docker ..."; \
+		$(MAKE) --no-print-directory build RUNTIME=docker; \
+	else \
+		echo "==> Skipping Docker — not installed."; \
+	fi
+	@if [ "$(HAVE_APPLE)" = "1" ]; then \
+		echo "==> Building with Apple container ..."; \
+		$(MAKE) --no-print-directory build RUNTIME=apple; \
+	else \
+		echo "==> Skipping Apple container — not installed."; \
+	fi
+
+# Force a fresh image under the selected runtime, ignoring the layer cache —
+# for when a cached layer is masking a change (e.g. a KG pin bump that
+# `check-pins` confirms but the cached pip-install layer never re-ran).
+# `build-all`'s BUILD_FLAGS override propagates through automatically: GNU
+# Make re-exports a command-line-set variable to every nested $(MAKE).
+rebuild:
+	@$(MAKE) --no-print-directory build BUILD_FLAGS=--no-cache
+
+rebuild-all:
+	@$(MAKE) --no-print-directory build-all BUILD_FLAGS=--no-cache
+
+# Hygiene: dangling images, stopped containers, and (Docker only) build cache
+# left behind by repeated build/rebuild runs. Runs under every runtime
+# installed, not just $(RUNTIME) — mirrors build-all, since Docker's and
+# Apple container's stores accumulate independently of each other. Only
+# removes dangling/stopped resources, never the tagged $(IMAGE):latest itself
+# — that's what `make clean` is for.
+prune:
+	@if [ "$(HAVE_DOCKER)" = "1" ]; then \
+		echo "==> Pruning Docker: dangling images, stopped containers, build cache ..."; \
+		docker image prune -f; \
+		docker container prune -f; \
+		docker builder prune -f; \
+	else \
+		echo "==> Skipping Docker — not installed."; \
+	fi
+	@if [ "$(HAVE_APPLE)" = "1" ]; then \
+		echo "==> Pruning Apple container: dangling images, stopped containers ..."; \
+		container image prune; \
+		container prune; \
+	else \
+		echo "==> Skipping Apple container — not installed."; \
+	fi
+	@echo "Done. Pruned."
 
 ifeq ($(RUNTIME),apple)
 
@@ -243,7 +316,7 @@ setup:
 	@echo "Apple container runtime ready."
 
 build: check-pins setup
-	container build $(HF_SECRET) -f docker/Dockerfile -t $(IMAGE):latest .
+	container build $(BUILD_FLAGS) $(HF_SECRET) -f docker/Dockerfile -t $(IMAGE):latest .
 
 # Idempotent like `compose up`: a running worker is left alone (it takes a
 # while to load the index), a stopped or stale one is replaced.
@@ -329,7 +402,7 @@ setup:
 	@echo "Docker runtime ready."
 
 build: check-pins
-	docker build $(HF_SECRET) -f docker/Dockerfile -t $(IMAGE):latest .
+	docker build $(BUILD_FLAGS) $(HF_SECRET) -f docker/Dockerfile -t $(IMAGE):latest .
 
 run:
 	$(COMPOSE) up -d worker
