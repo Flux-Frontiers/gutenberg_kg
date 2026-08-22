@@ -8,6 +8,49 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+> **Blocked on the `kgmodule-utils 0.18.0` release.** The floor, the Dockerfile
+> ARG and `runpod/requirements.txt` all name 0.18.0; `poetry.lock` still says
+> 0.16.0 and cannot move until the version exists on PyPI. `check_pins.py` is
+> red for exactly that reason and `tests/test_check_pins.py::TestRealRepo`
+> fails with it — deliberately left failing rather than skipped, since the gate
+> is reporting a true fact about the build. One `poetry lock` after the release
+> clears both.
+
+### Added
+
+- **`gutenberg_kg.temporal` — a book's publication year, as the shared
+  `kg_utils.temporal` contract.** A library is the fleet's clearest
+  *year-precision* case. The Internet Archive gives a book a date and
+  `gutenberg_kg.ia` already truncates it to the year, because that is honestly
+  all the source supports: an 1876 printing is not an event on the 1st of
+  January.
+
+  The contract preserves that distinction. `"1876"` stays a year and overlaps
+  any query touching 1876 — including a February window, which a silent
+  `1876-01-01` would miss entirely. That is the bug this avoids, and a test
+  pins it.
+
+  `publication_year()` reads the year from a book's `reference.md` metadata
+  sheet; `stamp_publication_year()` writes it onto **every** node of the book's
+  graph, not only the document row, because a federated query hits chunks and a
+  chunk that cannot say when its book was published drops out of any
+  time-scoped query. Existing metadata is merged, never replaced.
+
+  Wired into `build_dockg()`, so books are dated as they are ingested. A book
+  with no usable date — common for Gutenberg texts, which carry no IA sheet —
+  is left undated rather than guessed at.
+
+### Fixed
+
+- **Pin drift across the four files that name the KG versions.** The Dockerfile
+  ARG sat at `0.16.0` while its own comment block claimed `0.14.0`, and neither
+  matched the floor. The Dockerfile states the rule itself — "an ARG below
+  pyproject's floor is fiction", because `pip install .` re-resolves past it —
+  and records this exact failure happening before at 0.10.0 against a 0.12.1
+  floor. `pyproject.toml`'s two `viz3d` extras also still named `0.16.0` while
+  the core dependency had moved, so one package was declared at two different
+  floors in one file.
+
 > **Unblocked 2026-08-16.** `kgmodule-utils 0.14.0` (`leaf_frames`,
 > `limb_paths`, `LEAF_ASPECT`, and the promoted
 > `leaf_facing`/`oriented_cluster`) and `quiltwright 0.5.0` (`povgen`,
