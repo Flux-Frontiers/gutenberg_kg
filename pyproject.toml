@@ -101,9 +101,9 @@ dependencies = [
     # compares the *highest* declared floor, so a stale low one is invisible to
     # the gate. This sat at 0.14.0 against 0.15.0 and 0.16.0 in the extras —
     # drift the gate could not see, which is the reason for the rule.
-    "kgmodule-utils[synthesis,sqlite-vec]>=0.16.0",
+    "kgmodule-utils[synthesis,sqlite-vec]>=0.18.0",
     "rich>=14.3.3,<15",
-    "doc-kg (>=0.21.2)",  # transformers 5.x — must match kg-rag; see the kgdeps extra
+    "doc-kg (>=0.22.0)",  # transformers 5.x — must match kg-rag; see the kgdeps extra
     "diary-kg (>=0.97.0)",
     "hf-transfer (>=0.1.9,<0.2.0)",
 ]
@@ -112,7 +112,7 @@ dependencies = [
 kgdeps = [
     # Floors track the current releases — kg-rag 0.11.0 needs transformers>=5.5.0,
     # which older doc-kg/pycode-kg pins (transformers<4.57) contradict.
-    "kg-rag>=0.12.0",
+    "kg-rag>=0.14.0",
     "pycode-kg>=0.23.1",
 ]
 viz = [
@@ -150,7 +150,7 @@ viz3d = [
     # returns a CastResult where it used to return a (path, error) tuple, and
     # supplies DEFAULT_QUILT_PRESET/DEFAULT_CAST_SCALE, which this module now
     # aliases rather than declaring its own copies of.
-    "kgmodule-utils[viz3d-render,viz3d-qt]>=0.16.0",
+    "kgmodule-utils[viz3d-render,viz3d-qt]>=0.18.0",
     # Light-field output (`gutenkg quilt`). 0.4.0 supplied depth_report() and
     # widened requires-python to <3.14, which retired the old marker gate.
     # 0.6.0 supplies save_and_cast_quilt() and QuiltSpec.scaled(), both
@@ -161,7 +161,7 @@ viz3d = [
     # lock it twice under overlapping markers — one for `extra == "viz3d"` and
     # another for `extra == "viz3d" or extra == "pov"` — and `--extras viz3d`
     # then installs both, one over the other. One floor, one locked version.
-    "quiltwright>=0.6.0",
+    "quiltwright>=0.7.0",
 ]
 pov = [
     # Analytic POV-Ray output (`gutenkg pov`), deliberately apart from viz3d.
@@ -171,8 +171,8 @@ pov = [
     # install this extra alone and write scenes. `[viz3d]` here is the SDK's
     # NumPy-only geometry extra, NOT `[viz3d-render]`, which is what would pull
     # PyVista back in.
-    "kgmodule-utils[viz3d]>=0.16.0",
-    "quiltwright>=0.6.0",
+    "kgmodule-utils[viz3d]>=0.18.0",
+    "quiltwright>=0.7.0",
 ]
 mcp = [
     # Upper-bounded: fastmcp ships majors on its own schedule (2.x → 3.x), and
