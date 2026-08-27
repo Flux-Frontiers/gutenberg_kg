@@ -81,12 +81,12 @@ RUN pip install --no-cache-dir --index-url https://download.pytorch.org/whl/cpu 
 #
 # They also move as a SET, not individually — these four are cross-pinned. What
 # each one actually requires, read off the lock rather than from memory:
-#   kg-rag 0.12.0         transformers>=5.5.0,<6 · kgmodule-utils>=0.12.1
+#   kg-rag 0.14.0         transformers>=5.5.0,<6 · kgmodule-utils>=0.12.1
 #                         (also the floor for KGEntry.vectors_path, which
 #                         handler.py passes at startup)
-#   doc-kg 0.21.2         kgmodule-utils[semantic]>=0.12.1
-#   diary-kg 0.97.0       doc-kg>=0.21.2 · kgmodule-utils>=0.13.2
-#   kgmodule-utils 0.14.0 transformers>=5.5.0,<6 · sqlite-vec==0.1.9, both via
+#   doc-kg 0.22.0         kgmodule-utils[semantic]>=0.12.1
+#   diary-kg 0.97.0       doc-kg>=0.22.0 · kgmodule-utils>=0.13.2
+#   kgmodule-utils 0.18.0 transformers>=5.5.0,<6 · sqlite-vec==0.1.9, both via
 #                         its [semantic] extra
 # Because these are `==` pins, a stale one is a hard resolution failure at build
 # time, not a silent upgrade: doc-kg 0.21.2 with kgmodule-utils==0.9.0 cannot

@@ -55,6 +55,7 @@ from rich.progress import (
 )
 from rich.text import Text
 
+from gutenberg_kg.temporal import publication_year, stamp_publication_year
 from gutenberg_kg.vector_store import resolve_vector_paths
 
 # kg_rag is an optional kgdeps extra — import lazily inside functions so the
@@ -221,8 +222,19 @@ def build_dockg(
         cache_path = kg.db_path.parent / "embeddings.json"
         kg.build_embeddings(out=cache_path, n_workers=4, quiet=quiet)
         kg.build_index_from_cache(cache_path, wipe=True, similar_max_degree=8, quiet=quiet)
+        db_path = kg.db_path
         kg.close()
         cache_path.unlink(missing_ok=True)
+
+        # Stamp the book's publication year as the shared temporal contract, so
+        # a federated time-scoped query can reach this book at all. Books with
+        # no usable date -- common for Gutenberg texts, which carry no IA
+        # metadata sheet -- are simply left undated rather than guessed at.
+        year = publication_year(book_dir)
+        if year:
+            stamped = stamp_publication_year(db_path, year)
+            if stamped and not quiet:
+                print(f"    [+] dated {stamped} nodes to {year}")
         return True
     except Exception as exc:  # noqa: BLE001
         print(f"    [x] dockg build failed: {exc}")

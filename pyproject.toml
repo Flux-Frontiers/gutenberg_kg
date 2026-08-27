@@ -101,6 +101,9 @@ dependencies = [
     # compares the *highest* declared floor, so a stale low one is invisible to
     # the gate. This sat at 0.14.0 against 0.15.0 and 0.16.0 in the extras —
     # drift the gate could not see, which is the reason for the rule.
+    # 0.18.0: gutenberg_kg.temporal stamps a book's publication year as the
+    # shared kg_utils.temporal contract. A library is the clearest year-precision
+    # case in the fleet -- "1876" must stay a year, not become 1876-01-01.
     "kgmodule-utils[synthesis,sqlite-vec]>=0.18.0",
     "rich>=14.3.3,<15",
     "doc-kg (>=0.22.0)",  # transformers 5.x — must match kg-rag; see the kgdeps extra
