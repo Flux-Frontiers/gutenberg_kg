@@ -123,9 +123,9 @@ All genres in a strategy group are processed together in one DocKG pass.
 
 The served handler is semantic-first and never traverses `SIMILAR_TO`, so
 discovery is opt-in and is skipped entirely on `--update`. See
-[`SIMILAR_TO_CAP_RECOMMENDATION.md`](SIMILAR_TO_CAP_RECOMMENDATION.md) for the
+[`SIMILAR_TO_CAP_RECOMMENDATION.md`](../analysis/SIMILAR_TO_CAP_RECOMMENDATION.md) for the
 evaluation behind the cap. Measured bundle sizes live in
-[`APP_ARCHITECTURE.md`](APP_ARCHITECTURE.md).
+[`APP_ARCHITECTURE.md`](../analysis/APP_ARCHITECTURE.md).
 
 ---
 

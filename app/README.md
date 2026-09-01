@@ -1,7 +1,7 @@
 # The Knowledge Press — native app (macOS-first)
 
 Swift workspace for the native app described in
-[docs/APP_ARCHITECTURE.md](../docs/APP_ARCHITECTURE.md).
+[analysis/APP_ARCHITECTURE.md](../analysis/APP_ARCHITECTURE.md).
 
 ## Layout
 

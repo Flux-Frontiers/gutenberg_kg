@@ -1,6 +1,6 @@
 // © 2026 Eric G. Suchanek, PhD — Flux-Frontiers · SPDX-License-Identifier: Elastic-2.0
 //
-// The Knowledge Press — macOS thin client (Phase 1 of docs/APP_ARCHITECTURE.md).
+// The Knowledge Press — macOS thin client (Phase 1 of analysis/APP_ARCHITECTURE.md).
 // Run from app/GutenbergKGKit with:  swift run KnowledgePress
 // (needs a worker on http://localhost:8000 — `make up` at repo root).
 
