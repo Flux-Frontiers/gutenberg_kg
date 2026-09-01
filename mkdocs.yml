@@ -1,0 +1,96 @@
+site_name: GutenbergKG
+site_description: The Knowledge Press -- a universal ingestion engine for digitized text corpora, indexed into a hybrid semantic + structural knowledge graph and served for federated cross-corpus retrieval.
+site_url: https://flux-frontiers.github.io/gutenberg_kg/
+repo_url: https://github.com/Flux-Frontiers/gutenberg_kg
+repo_name: Flux-Frontiers/gutenberg_kg
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  logo: assets/logo.png
+  favicon: assets/favicon.png
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.top
+    - content.code.copy
+    - content.action.edit
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - tables
+  - toc:
+      permalink: true
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: [src]
+          options:
+            docstring_style: sphinx
+            show_source: true
+            show_root_heading: true
+            heading_level: 2
+            merge_init_into_class: true
+
+nav:
+  - Home: index.md
+  - Getting started:
+      - Installation: INSTALLATION.md
+      - Cheatsheet: CHEATSHEET.md
+      - Apple container runtime: APPLE_CONTAINERS.md
+  - Corpus:
+      - Books in the corpus: CORPUS.md
+      - Corpus wishlist: CORPUS_WISHLIST.md
+      - Download pipeline: DOWNLOAD_PIPELINE.md
+      - Ingestion pipeline: ingestion-pipeline.md
+  - Interfaces:
+      - Chat UI: CHAT_UI.md
+      - RunPod deployment: RUNPOD.md
+  - Visualization:
+      - Ray-tracing the knowledge tree: POVRAY.md
+  - Partners: PARTNERS.md
+  - API reference:
+      - Corpus & ingestion:
+          - Corpus discovery: api/corpus.md
+          - Download & ingest: api/ingest.md
+          - Corpus build pipeline: api/build_corpus.md
+          - Diary build pipeline: api/build_diaries.md
+          - Gutenberg source: api/gutenberg.md
+          - Internet Archive source: api/ia.md
+          - Author index: api/authors.md
+          - Genre catalog: api/genres.md
+          - Corpus audit: api/audit.md
+          - Diary metadata: api/diary_meta.md
+          - Model setup: api/model_setup.md
+          - Vector store: api/vector_store.md
+      - Diary parsing:
+          - Chunking: api/diary_chunk.md
+          - Parser: api/diary_parser.md
+      - Visualization & rendering:
+          - Book graph: api/bookgraph.md
+          - Scene assembly: api/scene.md
+          - Tree geometry: api/treegeom.md
+          - 3-D visualizer: api/viz3d.md
+          - Growth timeline: api/viz_timeline.md
+          - POV-Ray scenes: api/povscene.md
+      - Image & MCP:
+          - Image generation: api/image_gen.md
+          - MCP server: api/mcp_server.md

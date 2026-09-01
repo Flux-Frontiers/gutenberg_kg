@@ -1,8 +1,19 @@
+# Build the docs/*.md guides and the mkdocstrings API reference into a
+# GitHub Pages site.
+#
+# Runs on every push to main so the site never drifts from the guides, and
+# on demand.
+
 name: Docs
 
 on:
   push:
-    tags: ['v*']
+    branches: [main]
+    paths:
+      - 'docs/**'
+      - 'src/gutenberg_kg/**'
+      - 'mkdocs.yml'
+      - '.github/workflows/docs.yml'
   workflow_dispatch:
 
 permissions:
@@ -17,7 +28,7 @@ concurrency:
 
 jobs:
   build:
-    name: Build API docs (pdoc)
+    name: Build site (mkdocs)
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
@@ -39,25 +50,24 @@ jobs:
           path: .venv
           key: docs-${{ runner.os }}-${{ hashFiles('poetry.lock') }}
 
-      # pdoc IMPORTS every documented module, so the env must satisfy every
-      # top-level import: chat (streamlit/httpx), image (fastapi/uvicorn),
-      # mcp (fastmcp/structlog), viz+viz3d (plotly/PyQt5/pyvista/pycode-kg),
-      # dev (pdoc itself), kgdeps (kg-rag — serve.handler runs its registry
-      # bootstrap at import time, so even its function-local imports count). runpod (serve.handler's import) is deliberately in
-      # no extra — its dep tree stalls poetry lock — so it installs via plain
-      # pip, same rationale as runpod/requirements.txt.
+      # mkdocstrings imports gutenberg_kg to read its docstrings, so the env
+      # must satisfy every documented module's top-level import: chat
+      # (streamlit/httpx), image (fastapi/uvicorn), mcp (fastmcp/structlog),
+      # viz+viz3d (plotly/PyQt5/pyvista/pycode-kg), kgdeps (kg-rag). None of
+      # the documented modules import gutenberg_kg.serve.handler or runpod,
+      # so unlike the old pdoc build this needs no separate runpod install.
       - name: Install dependencies
-        run: |
-          poetry install --no-interaction --with dev --extras "chat image mcp viz viz3d kgdeps"
-          poetry run pip install --quiet runpod
+        run: poetry install --no-interaction --with docs --extras "chat image mcp viz viz3d kgdeps"
 
-      # PDOC_ALLOW_EXEC: pdoc sandboxes subprocesses during import;
-      # runpod's import calls cpuinfo, which shells out on Linux and
-      # crashes on the suppressed (empty) output.
-      - name: Build docs
-        run: poetry run make docs
-        env:
-          PDOC_ALLOW_EXEC: "1"
+      # Not --strict: docs/*.md cross-links to src/, benchmarks/, scripts/,
+      # docker/ and the top-level README (outside docs_dir) render fine on
+      # GitHub but have no target inside the built site, and mkdocstrings'
+      # griffe backend warns on GutenbergForestVisualizer's (viz3d.py)
+      # param.Parameterized docstring not matching its dynamically-generated
+      # __init__ signature -- same class of pre-existing, non-broken state as
+      # quiltwright's NamedTuple case, just a different declarative framework.
+      - name: Build
+        run: poetry run mkdocs build
 
       - name: Setup Pages
         uses: actions/configure-pages@v6

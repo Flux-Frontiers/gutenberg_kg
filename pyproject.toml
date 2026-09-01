@@ -57,7 +57,9 @@
 #
 # Generate docs
 # -------------
-#   make docs
+#   poetry install --with docs --extras "chat image mcp viz viz3d kgdeps"
+#   make docs                          build the mkdocs site into ./site
+#   make docs-serve                    serve it locally with live reload
 #
 # Build KG indices (after code changes)
 # --------------------------------------
@@ -228,9 +230,18 @@ image = [
 [tool.poetry.group.dev]
 optional = true
 
+[tool.poetry.group.docs]
+optional = true
+
+# The GitHub Pages site (docs.yml): mkdocs-material renders docs/*.md as-is,
+# and mkdocstrings adds an API reference generated from the package's own
+# docstrings so it can't drift from the code. Same versions quiltwright pins.
+[tool.poetry.group.docs.dependencies]
+mkdocs-material = ">=9.5"
+mkdocstrings = { version = ">=0.26", extras = ["python"] }
+
 [tool.poetry.group.dev.dependencies]
 detect-secrets = ">=1.5.0"
-pdoc = ">=14.0.0"
 pillow = ">=10.4.0"
 pre-commit = ">=4.5.1"
 pytest = ">=9.0.3"

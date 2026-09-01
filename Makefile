@@ -25,7 +25,8 @@
 #                         worker and chat stay up.
 #   make up IMAGE_BACKEND=sdxl|flux  — force one backend
 #   make down           - stop everything: worker + image servers + chat UI
-#   make docs           — generate project docs into ./docs
+#   make docs           — build the mkdocs site into ./site
+#   make docs-serve      — serve the mkdocs site locally with live reload
 #   make query Q="..."  — fire a one-shot query against the running worker
 #
 # Container runtime — RUNTIME=docker (default) or RUNTIME=apple.
@@ -517,5 +518,7 @@ query:
 	  -d '{"input":{"query":"$(Q)","corpus":"all","k":5,"synthesize":false}}' | python3 -m json.tool
 
 docs:
-	cd src && pdoc --o ../site --logo "https://flux-frontiers.github.io/gutenberg_kg/logo.png" gutenberg_kg '!gutenberg_kg.serve.sdxl_server'
-	cp assets/logos/logo_256.png site/logo.png
+	poetry run mkdocs build
+
+docs-serve:
+	poetry run mkdocs serve

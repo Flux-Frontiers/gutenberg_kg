@@ -197,7 +197,7 @@ At completion, report:
 
 1. `analysis/similar_to_cap_sweep_<timestamp>.json`
 2. `analysis/similar_to_cap_summary_<timestamp>.md`
-3. `docs/SIMILAR_TO_CAP_RECOMMENDATION.md`
+3. `analysis/SIMILAR_TO_CAP_RECOMMENDATION.md`
 
 ## Risks and Mitigations
 
