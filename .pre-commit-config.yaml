@@ -47,3 +47,16 @@ repos:
         language: system
         pass_filenames: false
         always_run: true
+      # Plain `mkdocs build` (what docs.yml's CI job runs) exits 0 on a
+      # broken internal link or missing nav target -- those are warnings,
+      # not errors. This runs --strict instead and only fails on a warning
+      # outside the two permanently-accepted categories documented in
+      # docs.yml's own comment. See scripts/check_docs_build.py. Skips
+      # cleanly rather than failing when the optional `docs` Poetry group
+      # is not installed, since most contributors only have `dev`.
+      - id: mkdocs-build
+        name: mkdocs build
+        entry: python3 scripts/check_docs_build.py
+        language: system
+        pass_filenames: false
+        always_run: true
