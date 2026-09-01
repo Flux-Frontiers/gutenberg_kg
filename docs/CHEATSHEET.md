@@ -17,7 +17,7 @@ poetry install --extras "kgdeps viz viz3d mcp"
 gutenkg --help
 ```
 
-Dev tooling (pytest, ruff, ty, pdoc, pre-commit) is a Poetry group rather than
+Dev tooling (pytest, ruff, ty, pre-commit) is a Poetry group rather than
 an extra, so add `--with dev` if you're working on the repo itself. Full
 options: [`INSTALLATION.md`](INSTALLATION.md).
 

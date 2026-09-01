@@ -56,7 +56,7 @@ That set is the **recommended default** — everything except dev tooling (KG in
 | *(none)* | core runtime only | `poetry install` |
 | *(everything)* | every extra above | `poetry install --all-extras` |
 
-Dev tooling (pytest, ruff, ty, pdoc, pre-commit) is **not an extra** — it lives in the *optional* Poetry `dev` group, so it stays out of the published wheel metadata and a bare `poetry install` stays core-runtime-only. There is no `.[dev]` to pip-install; development needs Poetry. Contributors who want the test/lint toolchain:
+Dev tooling (pytest, ruff, ty, pre-commit) is **not an extra** — it lives in the *optional* Poetry `dev` group, so it stays out of the published wheel metadata and a bare `poetry install` stays core-runtime-only. There is no `.[dev]` to pip-install; development needs Poetry. Contributors who want the test/lint toolchain:
 
 ```bash
 poetry install --with dev --extras "kgdeps viz viz3d mcp image"   # or --with dev --all-extras

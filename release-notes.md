@@ -1,86 +1,68 @@
-# Release Notes — v1.14.0
+# Release Notes — v1.15.0
 
-> Released: 2026-08-11
+> Released: 2026-09-01
 
-Seven commits since v1.13.0. The theme is structure made visible: each book now
-grows into a tree whose limbs are its own sections and chunks, and a tree can be
-rendered as a light field and cast to a Looking Glass display. Drawing the
-corpus that way immediately exposed two books whose structure had collapsed at
-conversion time, which is fixed here as well.
+Three weeks of work land here. The most visible change is the documentation
+site: it now runs on mkdocs-material with a real API reference generated
+from the package's own docstrings, gated by a strict local build so a broken
+link can no longer ship unnoticed. Alongside it, books now carry their
+publication year, a second backend renders knowledge trees as analytic
+POV-Ray scenes instead of a VTK mesh, and the local image server runs on any
+machine, not just Apple Silicon.
 
 ## What changed
 
-**A book grows into a tree, and the growth carries data.** The chunks of a book
-become attraction points, and the branch skeleton is produced by space
-colonization (Runions, Lane & Prusinkiewicz 2007), so every limb is a real path
-document → section → chunk cluster. Branch radii follow the pipe model, so a
-limb carrying half the text is visibly thicker. Two books of different structure
-grow different silhouettes, and a given book grows the same tree every time —
-the seed comes from its slug, since Python's builtin `hash()` is salted per
-process and cannot reproduce geometry between runs.
+**The docs site moved from pdoc to mkdocs-material.** pdoc rendered a flat
+module dump with no search or theming; mkdocs-material now renders the
+`docs/*.md` guides as a real site with navigation, search, and theming, and
+mkdocstrings generates the API reference straight from the package's own
+docstrings, so the reference can't drift from the code the way a hand-written
+one would. It also builds on every push to `main` that touches the docs or
+the source tree, rather than only on a version tag, so the published site can
+now go stale for at most one push instead of a whole release cycle. A new
+`scripts/check_docs_build.py`, wired into pre-commit, runs `mkdocs build
+--strict` and fails on any warning outside two known, permanent categories —
+closing a gap where a genuinely broken internal link or a missing nav target
+would previously build clean and ship silently, since CI's own build runs
+without `--strict`.
 
-Two departures from the published algorithm were needed, both because a book's
-crown is clumpy where a plant's attractor cloud is not. Textbook colonization
-stops when no attractor is within the influence radius, which strands the rest
-of the canopy as a stump under a cloud of unattached leaves; growth now bridges
-a limb across the gap instead. And an attractor can stay in range for the whole
-run yet never win a node, because the averaged pull always goes to the crowd —
-a book's one-chunk front-matter sections are exactly that case — so each
-survivor is given its own twig. Every chunk hangs on wood.
+**A book now carries its publication year.** `gutenberg_kg.temporal` reads
+the year a book was published from its Internet Archive metadata and stamps
+it onto every node in that book's graph, not just the top-level document —
+because a federated query hits chunks directly, and a chunk with no year
+attached drops out of any time-scoped search. The year is kept deliberately
+imprecise: `"1876"` is stored as a year, not silently promoted to
+`1876-01-01`, so it still overlaps a query for any month in that year.
 
-**`gutenkg quilt` renders a book to a Looking Glass panel.** Stills, or
-`--orbit` turntable video, with `--cast` handing the result to Bridge; the
-rendering itself is done by [quiltwright](https://github.com/suchanek/quiltwright).
-The stereo depth budget is printed before every render rather than after, so an
-over-wide disparity costs nothing to discover. Hamlet is 420 chunks on 305
-limbs, and its 8x6 quilt for the 16" Gen3 Landscape takes about two seconds on
-an M5 Max. No panel is required to use any of this — a quilt is an ordinary PNG,
-and the trees render in the viewer without display hardware.
+**`gutenkg pov` renders the knowledge tree as an analytic POV-Ray scene.**
+Where the existing `gutenkg quilt` path tessellates the tree into a VTK mesh,
+this one sweeps tubes and instances a single declared ellipsoid per leaf —
+one to two orders of magnitude smaller on disk, with silhouettes that stay
+exact at any zoom. Both backends grow from the same skeleton, so they can't
+drift into two different-looking trees. It's headless: the new `pov` extra
+needs no PyVista, Qt, or GL context, so a machine with just a `povray` binary
+can write scenes.
 
-**Scene construction left the Qt viewer.** Corpus scanning, layout, geometry,
-and both scene builders now live in `gutenberg_kg.scene` and compose into a
-plain `pv.Plotter` with no PyQt import. `viz3d.py` is one caller of that module
-and the off-screen renderer is another; without the split, light-field
-rendering would have needed a live `QApplication`. It also means the scene code
-is testable headless, and 77 tests now cover it.
+**Local image generation no longer requires Apple Silicon.** `make up`
+previously assumed the FLUX backend, which fails outright to install on any
+non-Apple host. It now falls back to SDXL-Lightning, which runs on
+CUDA, MPS, or plain CPU, so the stack comes up everywhere — slowly on CPU,
+but it comes up.
 
-**Two sacred texts had lost their structure at conversion.** None of the
-Quran's 114 sura headings matched a pattern, because Rodwell prints a footnote
-digit against the word and an edition-order marker in brackets — all 2,586 body
-chunks hung under a section named `PREFACE`. The Analects failed differently:
-its headings were recognised but discarded, because Legge's bilingual edition
-prints the Chinese heading directly above the English one and headings were
-only honoured after a blank line. The Quran now carries 120 sections instead of
-7, the Analects 28 instead of 8, and Sura II "The Cow" is correctly the
-heaviest limb in the tree at 183 chunks. Heading counts are unchanged on
-Frankenstein, Moby Dick, Pride and Prejudice, Alice, Hamlet, and Tao Te Ching,
-so the relaxed gate does not invent structure elsewhere.
-
-**Four seasons.** Foliage colour is sampled per leaf, so a canopy varies the
-way a real one does rather than reading as one flat green. Winter drops ninety
-percent of the leaves, which is the point — bare wood is where the pipe model
-shows.
+**Dependency pin hygiene.** The four KG packages this project cross-pins
+(`kgmodule-utils`, `kg-rag`, `doc-kg`, `diary-kg`) had drifted across
+`pyproject.toml`, `poetry.lock`, the Dockerfile ARGs, and
+`runpod/requirements.txt` — `scripts/check_pins.py`, added this cycle, now
+gates `make build` and CI on all four agreeing. `kgmodule-utils` moves to
+0.18.0 as part of that.
 
 ## Upgrading
 
-The tree and quilt features need the `viz3d` extra:
-`poetry install --extras viz3d`. Casting additionally needs Looking Glass
-Bridge running locally. `quiltwright` is marker-gated to Python < 3.13 for now,
-because it pins `requires-python <3.13` while this project supports `<3.14`;
-without the marker Poetry rejects the whole resolution.
-
-The corrected Quran and Analects Markdown is committed, so no re-download is
-needed — but their indices must be rebuilt, and `gutenkg ingest` will skip a
-book whose index looks current even when its source text has changed. Use
-`--force-build`:
-
-```bash
-gutenkg ingest --genre sacred-texts --force-build
-```
-
-The corpus is baked into the Docker image, so `make build` is required before
-the reading room reflects the corrected texts. Corpus totals move accordingly:
-1,270,668 nodes and 5,095,045 edges across 241 books.
+Building the docs locally needs the new optional `docs` group:
+`poetry install --with docs --extras "chat image mcp viz viz3d kgdeps"`, then
+`make docs` (or `make docs-serve` for live reload). Nothing else requires
+action — a plain `poetry install` picks up the relocked dependencies, and the
+POV-Ray path is opt-in via `poetry install --extras pov`.
 
 ---
 

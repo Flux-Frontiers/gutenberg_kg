@@ -8,13 +8,7 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
-> **Blocked on the `kgmodule-utils 0.18.0` release.** The floor, the Dockerfile
-> ARG and `runpod/requirements.txt` all name 0.18.0; `poetry.lock` still says
-> 0.16.0 and cannot move until the version exists on PyPI. `check_pins.py` is
-> red for exactly that reason and `tests/test_check_pins.py::TestRealRepo`
-> fails with it — deliberately left failing rather than skipped, since the gate
-> is reporting a true fact about the build. One `poetry lock` after the release
-> clears both.
+## [1.15.0] - 2026-09-01
 
 ### Added
 
@@ -40,29 +34,141 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   with no usable date — common for Gutenberg texts, which carry no IA sheet —
   is left undated rather than guessed at.
 
-### Fixed
+- **`gutenkg pov` — the knowledge tree as an analytic POV-Ray scene.** A limb
+  becomes a `sphere_sweep` carrying the pipe model's per-node radii, a leaf
+  becomes one instance of a single declared ellipsoid, and a spore becomes a
+  sphere. Nothing is tessellated, so the file is one to two orders of magnitude
+  smaller than the equivalent `mesh2` dump and the silhouettes stay exact at
+  any zoom — which is most of the reason to leave VTK in the first place.
+  `--render` ray-traces the result straight into a Looking Glass quilt through
+  `quiltwright.povray.render_pov_quilt`.
 
-- **Pin drift across the four files that name the KG versions.** The Dockerfile
-  ARG sat at `0.16.0` while its own comment block claimed `0.14.0`, and neither
-  matched the floor. The Dockerfile states the rule itself — "an ARG below
-  pyproject's floor is fiction", because `pip install .` re-resolves past it —
-  and records this exact failure happening before at 0.10.0 against a 0.12.1
-  floor. `pyproject.toml`'s two `viz3d` extras also still named `0.16.0` while
-  the core dependency had moved, so one package was declared at two different
-  floors in one file.
+  The two backends are not two trees. `gutenkg quilt` and `gutenkg pov` both
+  call `grow_tree_geometry`, so they share one skeleton, one clinging rule and
+  one halo; `test_both_backends_grow_the_same_skeleton` pins that they cannot
+  drift.
 
-> **Unblocked 2026-08-16.** `kgmodule-utils 0.14.0` (`leaf_frames`,
-> `limb_paths`, `LEAF_ASPECT`, and the promoted
-> `leaf_facing`/`oriented_cluster`) and `quiltwright 0.5.0` (`povgen`,
-> `swept_scene`) are both published, so the fourth pin site — `poetry.lock` —
-> is relocked and `scripts/check_pins.py` has nothing left to report.
->
-> Between the floors landing and the releases existing, `main` was red: the
-> lock still recorded 0.13.2 / 0.4.0, so `poetry install` refused with
-> "pyproject.toml changed significantly since poetry.lock was last generated"
-> and every CI job failed before running a check. Worth remembering as an
-> ordering hazard — a floor naming an unreleased version breaks the lock gate
-> for every job, not just the ones that use the extra.
+- **A `pov` extra, deliberately apart from `viz3d`.** Composing a scene needs
+  the NumPy-only geometry plus `quiltwright.povgen` — no PyVista, no Qt, no GL
+  context — so a headless ray-tracing box can install `gutenberg-kg[pov]` and
+  nothing else. The claim is tested rather than asserted: a subprocess makes
+  `pyvista` and `vtkmodules` unimportable and then writes a scene.
+
+  The geometry is verified by dual render, not by inspection. The same tree
+  goes through both backends at a matched camera and the silhouettes are
+  compared against a black background: **IoU 0.877**, coverage 1.90% against
+  1.76%, bounding boxes within 1–2 px on every edge. IoU is deflated by the
+  subject — a canopy is thousands of small disconnected blades, where a pixel
+  of misregistration costs far more than on a solid object — so the bounding
+  box is what pins the lens. Needs a `povray` binary and a working off-screen
+  GL stack; skips without either.
+
+  (Note for anyone reading `sys.modules` to check this: `quiltwright/__init__`
+  eagerly imports `lfd`, which imports pyvista *when it happens to be
+  installed*, so `povgen` pulls it in through no fault of this package. What
+  matters is that the path still works when the rendering stack is absent.)
+
+- **`docs/POVRAY.md`** — the pipeline, the handedness rule, the lighting
+  mismatch below, the dials, and the known limits.
+
+- **The ray-traced tree stands on ground, in daylight.** `gutenkg pov` gains
+  `--ground`, `--brightness` and `--sky`, and the first two are on by default
+  because the defaults they replace produced an unusable picture.
+
+  A finite slab, sized as a multiple of the crown's own width so one value
+  suits a sonnet and a nine-year diary, with its top face at `z = 0` where the
+  trunk's root node is — the tree stands *on* it rather than hovering over a
+  plane parked below. Only the key light casts, so the tree drops one readable
+  shadow instead of the three-way overlap a fully casting rig gives. This is a
+  deliberate divergence from `build_tree_scene`, which omits its ground because
+  it draws an effectively infinite plane and would blow the disparity budget at
+  the horizon; a finite slab carries no such cost, and a ray-traced tree
+  without a contact shadow reads as floating in a way the rasterised one does
+  not, since VTK's headlight casts nothing at all.
+
+  `--brightness` defaults to **2.6**, not 1. A canopy of thousands of small
+  blades self-shadows heavily and the wood is dark brown against a dark sky, so
+  a unit key renders a tree that is geometrically perfect and visually black —
+  which is exactly what the first Pepys render, 9,993 leaves, came out as. The
+  ground finish is correspondingly dim: at `diffuse 0.7` against that key the
+  slab clipped to a flat lime that pulled the eye straight off the subject.
+
+  The key light is also steeper now — 2.2 up against 1.1 across, where it was
+  1.6 against 1.5. A shallow key throws the canopy's shadow so far to one side
+  that it reads as a separate object rather than as the tree touching ground.
+
+- **21 tests for the synthesis-model blocklist** (`tests/test_chat_worker_ops.py`).
+  `_MODEL_BLOCKLIST` / `_is_synth_model` originated here and were ported to
+  `corpus_pepys`, which ended up covering them first; this closes the gap so both
+  copies are pinned. The blocklist is the kind of thing that fails quietly when
+  it breaks — a reasoning model that slips through emits its chain-of-thought as
+  prose into the answer pane, which reads as a bad answer rather than a bad model
+  choice, and an embedding model fails the request outright.
+
+  Covers allowed and blocked ids, case-insensitivity, substring matching
+  anywhere in a namespaced id, that every pattern is lower-case (`_is_synth_model`
+  lowercases the id but not the patterns, so an upper-case entry would silently
+  never match), the blocklist contents spelled out so a silent edit shows up as a
+  test change, and `_fetch_models` actually applying the filter — including the
+  case where the *backend's own default* is blocklisted, which is the one that
+  selects itself with no user interaction.
+
+  Verified by mutation rather than by passing: removing `embed` from the
+  blocklist fails 7 tests, and dropping the filter line from `_fetch_models`
+  fails 3. Suite: 178 → 199.
+
+- **`make sdxl-fetch`** — pre-downloads the ~7 GB of SDXL weights without
+  starting the server, so the first `make up` on a fresh machine is not a silent
+  long wait. Once cached, `SDXL_OFFLINE=1` makes the server refuse network access.
+- **`tests/test_sdxl_server.py` (43 tests)** — the first coverage
+  `serve/sdxl_server.py` has had, made possible by the deferred imports below.
+  Covers size parsing, step resolution, the offline flag, and the
+  `cuda → mps → cpu` fallback, with no stubbing at all. The CI test job installs
+  the `image` extra alongside `dev` for the fastapi/pydantic the module needs at
+  import; torch and diffusers stay out.
+
+- **`gutenkg quilt --topics`** draws topic nodes as their own blue pollen
+  cloud, and **`--leaf-size`** overrides the leaf radius before density
+  scaling. The second exists because leaves shrink by the cube root of chunk
+  count, so Pepys renders its 18,757 chunks at 0.32x and reads sparse even
+  though every chunk has a leaf; `--leaf-size 0.9` thickens that canopy.
+
+- **`scripts/check_pins.py`** — verifies the four cross-pinned KG packages agree
+  across every file that names them: `pyproject.toml` floors, `poetry.lock`,
+  `docker/Dockerfile` ARGs, and `runpod/requirements.txt`. A prerequisite of
+  `make build` in both runtime branches, and a step in the CI lint job.
+
+  The floor comparison is the point. `docker/Dockerfile` pre-installs the pinned
+  stack and then runs `pip install .`, which re-resolves against pyproject — so
+  an ARG below its floor is silently upgraded rather than failing the build. The
+  pin becomes a number no image runs, and nothing anywhere goes red. That is how
+  `KGMODULE_UTILS_VERSION` sat at 0.10.0 against a `>=0.11.0` floor unnoticed.
+
+  On its first run it found a second instance of that same drift, which the
+  manual audit had missed: `runpod/requirements.txt` also floored
+  `kgmodule-utils` at `>=0.10.0`, so the serverless worker could install a
+  version the package itself rejects. Fixed alongside.
+
+  Stdlib-only (`tomllib` + `re`, with a local `_version_key` rather than
+  `packaging.version`) so a build gate never depends on what the install
+  resolved — which also matters for the ordering it tests, since `"0.9.0" >
+  "0.11.0"` under a string compare. `corpus_pepys` carries a sibling that
+  deliberately omits the floor check: that project is `package-mode = false`
+  with no `pip install .` step, so its Dockerfile pins are the last word.
+
+- **`scripts/check_docs_build.py`**, wired into pre-commit — runs `mkdocs
+  build --strict` and fails only on a warning outside two accepted, permanent
+  categories: cross-links from `docs/*.md` to files outside `docs_dir` (they
+  render fine on GitHub but have no target inside the built site), and one
+  griffe warning on `GutenbergForestVisualizer` (`viz3d.py`), a
+  `param.Parameterized` class whose docstring doesn't match its
+  dynamically-generated `__init__` signature. `docs.yml`'s CI job
+  deliberately runs plain `mkdocs build` (not `--strict`) for the same two
+  reasons, which means a genuinely broken internal link or a nav entry
+  pointing at a missing file exited 0 and shipped — nothing caught that
+  locally before now, since `docs.yml` has no `pull_request` trigger. Skips
+  cleanly (exit 0) when mkdocs isn't installed, since it lives in the
+  optional `docs` Poetry group, not `dev`.
 
 ### Changed
 
@@ -146,114 +252,6 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   under overlapping markers — 0.4.0 for `extra == "viz3d"` and 0.5.0 for
   `extra == "viz3d" or extra == "pov"`. `poetry install --extras viz3d` then
   installed both, one over the other. One floor, one locked version.
-
-### Added
-
-- **`gutenkg pov` — the knowledge tree as an analytic POV-Ray scene.** A limb
-  becomes a `sphere_sweep` carrying the pipe model's per-node radii, a leaf
-  becomes one instance of a single declared ellipsoid, and a spore becomes a
-  sphere. Nothing is tessellated, so the file is one to two orders of magnitude
-  smaller than the equivalent `mesh2` dump and the silhouettes stay exact at
-  any zoom — which is most of the reason to leave VTK in the first place.
-  `--render` ray-traces the result straight into a Looking Glass quilt through
-  `quiltwright.povray.render_pov_quilt`.
-
-  The two backends are not two trees. `gutenkg quilt` and `gutenkg pov` both
-  call `grow_tree_geometry`, so they share one skeleton, one clinging rule and
-  one halo; `test_both_backends_grow_the_same_skeleton` pins that they cannot
-  drift.
-
-- **A `pov` extra, deliberately apart from `viz3d`.** Composing a scene needs
-  the NumPy-only geometry plus `quiltwright.povgen` — no PyVista, no Qt, no GL
-  context — so a headless ray-tracing box can install `gutenberg-kg[pov]` and
-  nothing else. The claim is tested rather than asserted: a subprocess makes
-  `pyvista` and `vtkmodules` unimportable and then writes a scene.
-
-  The geometry is verified by dual render, not by inspection. The same tree
-  goes through both backends at a matched camera and the silhouettes are
-  compared against a black background: **IoU 0.877**, coverage 1.90% against
-  1.76%, bounding boxes within 1–2 px on every edge. IoU is deflated by the
-  subject — a canopy is thousands of small disconnected blades, where a pixel
-  of misregistration costs far more than on a solid object — so the bounding
-  box is what pins the lens. Needs a `povray` binary and a working off-screen
-  GL stack; skips without either.
-
-  (Note for anyone reading `sys.modules` to check this: `quiltwright/__init__`
-  eagerly imports `lfd`, which imports pyvista *when it happens to be
-  installed*, so `povgen` pulls it in through no fault of this package. What
-  matters is that the path still works when the rendering stack is absent.)
-
-- **`docs/POVRAY.md`** — the pipeline, the handedness rule, the lighting
-  mismatch below, the dials, and the known limits.
-
-- **The ray-traced tree stands on ground, in daylight.** `gutenkg pov` gains
-  `--ground`, `--brightness` and `--sky`, and the first two are on by default
-  because the defaults they replace produced an unusable picture.
-
-  A finite slab, sized as a multiple of the crown's own width so one value
-  suits a sonnet and a nine-year diary, with its top face at `z = 0` where the
-  trunk's root node is — the tree stands *on* it rather than hovering over a
-  plane parked below. Only the key light casts, so the tree drops one readable
-  shadow instead of the three-way overlap a fully casting rig gives. This is a
-  deliberate divergence from `build_tree_scene`, which omits its ground because
-  it draws an effectively infinite plane and would blow the disparity budget at
-  the horizon; a finite slab carries no such cost, and a ray-traced tree
-  without a contact shadow reads as floating in a way the rasterised one does
-  not, since VTK's headlight casts nothing at all.
-
-  `--brightness` defaults to **2.6**, not 1. A canopy of thousands of small
-  blades self-shadows heavily and the wood is dark brown against a dark sky, so
-  a unit key renders a tree that is geometrically perfect and visually black —
-  which is exactly what the first Pepys render, 9,993 leaves, came out as. The
-  ground finish is correspondingly dim: at `diffuse 0.7` against that key the
-  slab clipped to a flat lime that pulled the eye straight off the subject.
-
-  The key light is also steeper now — 2.2 up against 1.1 across, where it was
-  1.6 against 1.5. A shallow key throws the canopy's shadow so far to one side
-  that it reads as a separate object rather than as the tree touching ground.
-
-### Fixed
-
-- **`tree_pov_camera` frames the tree, not the floor.** It read
-  `scene.bounds()`, which was right until the ground became default-on: a slab
-  three crown-widths across then dominated the bounds and the tree came out
-  small and high in the tile. It now takes the `geometry` that
-  `build_tree_pov_scene` already returned for exactly this purpose — the
-  docstring said so and the code did not use it — and frames the crown plus the
-  root at the origin, which is the whole tree and no floor.
-
-- **The light rig is sized before the ground is laid.** Same root cause from
-  the other side: the rig takes its scale from `scene.bounds()`, so building
-  the slab first made the "scene radius" the slab's half-diagonal, pushing the
-  key light far enough out to flatten the tree and shrink its shadow to
-  nothing. Lights are placed first now, and a test pins that adding ground
-  leaves every light position untouched.
-
-- **`tree_pov_camera` now returns a camera in POV-Ray coordinates.** It framed
-  in the right-handed world the scene is authored in and handed the result over
-  unconverted, so the geometry sat at negative `z` while the lens aimed at
-  positive `z`. POV-Ray rendered a flawless picture of empty sky.
-
-  Every unit assertion about that camera passed, because they compared
-  right-handed bounds against a right-handed camera — self-consistently wrong.
-  What found it was a dual render: POV-Ray coverage came back 100% background
-  against PyVista's 1.9%. `PovCamera` holds already-converted coordinates —
-  `pov_camera_from_plotter` runs `to_pov` over a plotter's position, focal
-  point and up vector, and `camera_block` emits verbatim — so the conversion
-  belongs here.
-
-  The tests are rebuilt around the emitted file rather than around the bounds
-  they were derived from, and `TestDualRender` now renders through this
-  function specifically, since the carried-camera comparisons isolate geometry
-  and pass regardless of framing.
-
-- **The POV-Ray lighting rig is built for a `+z`-up world.**
-  `quiltwright.povgen.lights_from_bounds` assumed `+y` up: its key light sat at
-  `+1.6y, -1.4z`, which in this repo's world is level with the trunk and
-  *below* the ground — a tree lit from underneath. Found here, fixed there:
-  the helper now takes `up=`, so the rig this scene gets is the shared one.
-
-### Changed
 
 - **`povscene` composes through `quiltwright.povgen.swept_scene`.** 491 lines
   to 325. The scene assembly written here — prototype `#declare`, one union
@@ -343,69 +341,6 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   `<3.14`, which made an unmarked declaration reject the whole resolution.
   0.4.0 widened the ceiling and runs CI on both interpreters, so `gutenkg
   quilt` now works on 3.13 instead of the dependency being skipped there.
-
-### Added
-
-- **21 tests for the synthesis-model blocklist** (`tests/test_chat_worker_ops.py`).
-  `_MODEL_BLOCKLIST` / `_is_synth_model` originated here and were ported to
-  `corpus_pepys`, which ended up covering them first; this closes the gap so both
-  copies are pinned. The blocklist is the kind of thing that fails quietly when
-  it breaks — a reasoning model that slips through emits its chain-of-thought as
-  prose into the answer pane, which reads as a bad answer rather than a bad model
-  choice, and an embedding model fails the request outright.
-
-  Covers allowed and blocked ids, case-insensitivity, substring matching
-  anywhere in a namespaced id, that every pattern is lower-case (`_is_synth_model`
-  lowercases the id but not the patterns, so an upper-case entry would silently
-  never match), the blocklist contents spelled out so a silent edit shows up as a
-  test change, and `_fetch_models` actually applying the filter — including the
-  case where the *backend's own default* is blocklisted, which is the one that
-  selects itself with no user interaction.
-
-  Verified by mutation rather than by passing: removing `embed` from the
-  blocklist fails 7 tests, and dropping the filter line from `_fetch_models`
-  fails 3. Suite: 178 → 199.
-
-- **`make sdxl-fetch`** — pre-downloads the ~7 GB of SDXL weights without
-  starting the server, so the first `make up` on a fresh machine is not a silent
-  long wait. Once cached, `SDXL_OFFLINE=1` makes the server refuse network access.
-- **`tests/test_sdxl_server.py` (43 tests)** — the first coverage
-  `serve/sdxl_server.py` has had, made possible by the deferred imports below.
-  Covers size parsing, step resolution, the offline flag, and the
-  `cuda → mps → cpu` fallback, with no stubbing at all. The CI test job installs
-  the `image` extra alongside `dev` for the fastapi/pydantic the module needs at
-  import; torch and diffusers stay out.
-
-- **`gutenkg quilt --topics`** draws topic nodes as their own blue pollen
-  cloud, and **`--leaf-size`** overrides the leaf radius before density
-  scaling. The second exists because leaves shrink by the cube root of chunk
-  count, so Pepys renders its 18,757 chunks at 0.32x and reads sparse even
-  though every chunk has a leaf; `--leaf-size 0.9` thickens that canopy.
-
-- **`scripts/check_pins.py`** — verifies the four cross-pinned KG packages agree
-  across every file that names them: `pyproject.toml` floors, `poetry.lock`,
-  `docker/Dockerfile` ARGs, and `runpod/requirements.txt`. A prerequisite of
-  `make build` in both runtime branches, and a step in the CI lint job.
-
-  The floor comparison is the point. `docker/Dockerfile` pre-installs the pinned
-  stack and then runs `pip install .`, which re-resolves against pyproject — so
-  an ARG below its floor is silently upgraded rather than failing the build. The
-  pin becomes a number no image runs, and nothing anywhere goes red. That is how
-  `KGMODULE_UTILS_VERSION` sat at 0.10.0 against a `>=0.11.0` floor unnoticed.
-
-  On its first run it found a second instance of that same drift, which the
-  manual audit had missed: `runpod/requirements.txt` also floored
-  `kgmodule-utils` at `>=0.10.0`, so the serverless worker could install a
-  version the package itself rejects. Fixed alongside.
-
-  Stdlib-only (`tomllib` + `re`, with a local `_version_key` rather than
-  `packaging.version`) so a build gate never depends on what the install
-  resolved — which also matters for the ordering it tests, since `"0.9.0" >
-  "0.11.0"` under a string compare. `corpus_pepys` carries a sibling that
-  deliberately omits the floor check: that project is `package-mode = false`
-  with no `pip install .` step, so its Dockerfile pins are the last word.
-
-### Changed
 
 - **`make build` authenticates the embedder download to HuggingFace.** The image
   pre-downloads `BAAI/bge-small-en-v1.5` at build time so the container never
@@ -501,6 +436,39 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   stands, its default-on recommendation does not. `docs/CHAT_UI.md`'s link to
   `serve/chat.py` now points at `serve/Chat.py`.
 
+- **The GitHub Pages site moved from pdoc to mkdocs-material.** pdoc
+  rendered a flat module dump with no search or theming; mkdocs-material now
+  renders the `docs/*.md` guides as a real site with nav, search, and
+  theming, and mkdocstrings generates the API reference from the package's
+  own docstrings so it can't drift from the code — one page per module under
+  `docs/api/`, each a two-line `mkdocstrings :: gutenberg_kg.<module>` stub.
+  `make docs` now runs `mkdocs build` into `./site`, and a new
+  `make docs-serve` serves it locally with live reload; the old logo-copying
+  step and the `--logo` flag pdoc needed are gone with it.
+
+  `docs.yml` now builds on every push to `main` that touches `docs/**`,
+  `src/gutenberg_kg/**`, or `mkdocs.yml`, rather than only on a version tag —
+  the site can now go stale for at most one push instead of a whole release
+  cycle — and drops the pdoc/runpod-only install steps. mkdocstrings imports
+  `gutenberg_kg` to read its docstrings, so the docs job installs the
+  `chat`, `image`, `mcp`, `viz`, `viz3d`, and `kgdeps` extras to satisfy
+  every documented module's top-level import; none of the documented
+  modules import `gutenberg_kg.serve.handler` or `runpod`, so unlike the old
+  pdoc build this needs no separate runpod install.
+
+  `mkdocs-material` and `mkdocstrings` moved into a new optional `docs`
+  Poetry group rather than `dev`, since most contributors editing code never
+  need to build the site; `pdoc` is dropped from `dev` entirely, now unused.
+
+  `APP_ARCHITECTURE.md` and the two `SIMILAR_TO_CAP` draft documents moved
+  from `docs/` to `analysis/` — they are internal drafts, not finished
+  guides, and mkdocs's nav only lists `docs/`, so leaving them in place
+  would have surfaced half-finished planning docs as if they were shipped
+  guides. `DOWNLOAD_PIPELINE.md`'s bare, `docs_dir`-relative links to
+  `src/`, `corpus/`, and `README.md` were already 404s on GitHub before this
+  change — GitHub resolves them relative to `docs/`, not the repo root — and
+  are now `../`-relative, which resolves correctly in both places.
+
 ### Removed
 
 - **`docs/NATURAL_TREE_LFD_PLAN.md`**, and the README link to it. The plan
@@ -516,6 +484,67 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   The release workflow reads the root `release-notes.md`, which is at v1.14.0.
 
 ### Fixed
+
+- **Pin drift across the four files that name the KG versions.** The Dockerfile
+  ARG sat at `0.16.0` while its own comment block claimed `0.14.0`, and neither
+  matched the floor. The Dockerfile states the rule itself — "an ARG below
+  pyproject's floor is fiction", because `pip install .` re-resolves past it —
+  and records this exact failure happening before at 0.10.0 against a 0.12.1
+  floor. `pyproject.toml`'s two `viz3d` extras also still named `0.16.0` while
+  the core dependency had moved, so one package was declared at two different
+  floors in one file.
+
+> **Unblocked 2026-08-16.** `kgmodule-utils 0.14.0` (`leaf_frames`,
+> `limb_paths`, `LEAF_ASPECT`, and the promoted
+> `leaf_facing`/`oriented_cluster`) and `quiltwright 0.5.0` (`povgen`,
+> `swept_scene`) are both published, so the fourth pin site — `poetry.lock` —
+> is relocked and `scripts/check_pins.py` has nothing left to report.
+>
+> Between the floors landing and the releases existing, `main` was red: the
+> lock still recorded 0.13.2 / 0.4.0, so `poetry install` refused with
+> "pyproject.toml changed significantly since poetry.lock was last generated"
+> and every CI job failed before running a check. Worth remembering as an
+> ordering hazard — a floor naming an unreleased version breaks the lock gate
+> for every job, not just the ones that use the extra.
+
+- **`tree_pov_camera` frames the tree, not the floor.** It read
+  `scene.bounds()`, which was right until the ground became default-on: a slab
+  three crown-widths across then dominated the bounds and the tree came out
+  small and high in the tile. It now takes the `geometry` that
+  `build_tree_pov_scene` already returned for exactly this purpose — the
+  docstring said so and the code did not use it — and frames the crown plus the
+  root at the origin, which is the whole tree and no floor.
+
+- **The light rig is sized before the ground is laid.** Same root cause from
+  the other side: the rig takes its scale from `scene.bounds()`, so building
+  the slab first made the "scene radius" the slab's half-diagonal, pushing the
+  key light far enough out to flatten the tree and shrink its shadow to
+  nothing. Lights are placed first now, and a test pins that adding ground
+  leaves every light position untouched.
+
+- **`tree_pov_camera` now returns a camera in POV-Ray coordinates.** It framed
+  in the right-handed world the scene is authored in and handed the result over
+  unconverted, so the geometry sat at negative `z` while the lens aimed at
+  positive `z`. POV-Ray rendered a flawless picture of empty sky.
+
+  Every unit assertion about that camera passed, because they compared
+  right-handed bounds against a right-handed camera — self-consistently wrong.
+  What found it was a dual render: POV-Ray coverage came back 100% background
+  against PyVista's 1.9%. `PovCamera` holds already-converted coordinates —
+  `pov_camera_from_plotter` runs `to_pov` over a plotter's position, focal
+  point and up vector, and `camera_block` emits verbatim — so the conversion
+  belongs here.
+
+  The tests are rebuilt around the emitted file rather than around the bounds
+  they were derived from, and `TestDualRender` now renders through this
+  function specifically, since the carried-camera comparisons isolate geometry
+  and pass regardless of framing.
+
+- **The POV-Ray lighting rig is built for a `+z`-up world.**
+  `quiltwright.povgen.lights_from_bounds` assumed `+y` up: its key light sat at
+  `+1.6y, -1.4z`, which in this repo's world is level with the trunk and
+  *below* the ground — a tree lit from underneath. Found here, fixed there:
+  the helper now takes `up=`, so the rig this scene gets is the shared one.
 
 - **SDXL could not run on a machine that had not already cached the weights.**
   `_load_pipeline` hard-wired `local_files_only=True` for the base pipeline, the
