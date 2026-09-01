@@ -156,19 +156,18 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   deliberately omits the floor check: that project is `package-mode = false`
   with no `pip install .` step, so its Dockerfile pins are the last word.
 
-- **`scripts/check_docs_build.py`**, wired into pre-commit — runs `mkdocs
-  build --strict` and fails only on a warning outside two accepted, permanent
-  categories: cross-links from `docs/*.md` to files outside `docs_dir` (they
-  render fine on GitHub but have no target inside the built site), and one
-  griffe warning on `GutenbergForestVisualizer` (`viz3d.py`), a
-  `param.Parameterized` class whose docstring doesn't match its
-  dynamically-generated `__init__` signature. `docs.yml`'s CI job
-  deliberately runs plain `mkdocs build` (not `--strict`) for the same two
-  reasons, which means a genuinely broken internal link or a nav entry
-  pointing at a missing file exited 0 and shipped — nothing caught that
-  locally before now, since `docs.yml` has no `pull_request` trigger. Skips
-  cleanly (exit 0) when mkdocs isn't installed, since it lives in the
-  optional `docs` Poetry group, not `dev`.
+- **`scripts/check_docs_build.py`**, wired into pre-commit. Runs `mkdocs
+  build --strict` and fails only on a warning outside two accepted
+  categories: cross-links from `docs/*.md` to files outside `docs_dir`
+  (valid on GitHub, no target inside the built site), and one griffe
+  warning on `GutenbergForestVisualizer` (`viz3d.py`), a
+  `param.Parameterized` class whose docstring does not match its
+  dynamically-generated `__init__` signature. `docs.yml`'s CI job runs
+  plain `mkdocs build` (not `--strict`) for the same two reasons, so a
+  broken internal link or a nav entry pointing at a missing file exited 0
+  and shipped; `docs.yml` has no `pull_request` trigger, so nothing
+  caught it locally. Exits 0 when mkdocs is not installed, since it lives
+  in the optional `docs` Poetry group, not `dev`.
 
 ### Changed
 
@@ -436,38 +435,33 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   stands, its default-on recommendation does not. `docs/CHAT_UI.md`'s link to
   `serve/chat.py` now points at `serve/Chat.py`.
 
-- **The GitHub Pages site moved from pdoc to mkdocs-material.** pdoc
-  rendered a flat module dump with no search or theming; mkdocs-material now
-  renders the `docs/*.md` guides as a real site with nav, search, and
-  theming, and mkdocstrings generates the API reference from the package's
-  own docstrings so it can't drift from the code — one page per module under
-  `docs/api/`, each a two-line `mkdocstrings :: gutenberg_kg.<module>` stub.
-  `make docs` now runs `mkdocs build` into `./site`, and a new
-  `make docs-serve` serves it locally with live reload; the old logo-copying
-  step and the `--logo` flag pdoc needed are gone with it.
+- **The GitHub Pages site moved from pdoc to mkdocs-material.**
+  mkdocs-material renders the `docs/*.md` guides with navigation, search,
+  and theming; mkdocstrings generates the API reference from the package
+  docstrings, one page per module under `docs/api/`, each a two-line
+  `mkdocstrings :: gutenberg_kg.<module>` stub. `make docs` runs
+  `mkdocs build` into `./site`, and a new `make docs-serve` serves it
+  locally with live reload. The pdoc logo-copy step and `--logo` flag are
+  gone.
 
-  `docs.yml` now builds on every push to `main` that touches `docs/**`,
-  `src/gutenberg_kg/**`, or `mkdocs.yml`, rather than only on a version tag —
-  the site can now go stale for at most one push instead of a whole release
-  cycle — and drops the pdoc/runpod-only install steps. mkdocstrings imports
+  `docs.yml` builds on every push to `main` that touches `docs/**`,
+  `src/gutenberg_kg/**`, or `mkdocs.yml`, instead of only on a version
+  tag, and drops the pdoc/runpod-only install steps. mkdocstrings imports
   `gutenberg_kg` to read its docstrings, so the docs job installs the
-  `chat`, `image`, `mcp`, `viz`, `viz3d`, and `kgdeps` extras to satisfy
-  every documented module's top-level import; none of the documented
-  modules import `gutenberg_kg.serve.handler` or `runpod`, so unlike the old
-  pdoc build this needs no separate runpod install.
+  `chat`, `image`, `mcp`, `viz`, `viz3d`, and `kgdeps` extras; none of
+  the documented modules import `gutenberg_kg.serve.handler` or `runpod`,
+  so no separate runpod install is needed.
 
-  `mkdocs-material` and `mkdocstrings` moved into a new optional `docs`
-  Poetry group rather than `dev`, since most contributors editing code never
-  need to build the site; `pdoc` is dropped from `dev` entirely, now unused.
+  `mkdocs-material` and `mkdocstrings` live in a new optional `docs`
+  Poetry group rather than `dev`; `pdoc` is removed from `dev`, now
+  unused.
 
-  `APP_ARCHITECTURE.md` and the two `SIMILAR_TO_CAP` draft documents moved
-  from `docs/` to `analysis/` — they are internal drafts, not finished
-  guides, and mkdocs's nav only lists `docs/`, so leaving them in place
-  would have surfaced half-finished planning docs as if they were shipped
-  guides. `DOWNLOAD_PIPELINE.md`'s bare, `docs_dir`-relative links to
-  `src/`, `corpus/`, and `README.md` were already 404s on GitHub before this
-  change — GitHub resolves them relative to `docs/`, not the repo root — and
-  are now `../`-relative, which resolves correctly in both places.
+  `APP_ARCHITECTURE.md` and the two `SIMILAR_TO_CAP` draft documents
+  moved from `docs/` to `analysis/`: they are internal drafts, and the
+  mkdocs nav lists only `docs/`. `DOWNLOAD_PIPELINE.md`'s
+  `docs_dir`-relative links to `src/`, `corpus/`, and `README.md` were
+  already 404s on GitHub, which resolves them relative to `docs/`, not
+  the repo root; they are now `../`-relative and resolve in both places.
 
 ### Removed
 
