@@ -361,12 +361,19 @@ All phases below target **macOS**; iOS is the last row, not a fork.
 | **0. Store spike + export tooling** | sqlite-vec benchmark (`benchmarks/bench_sqlite_vec.py`) → `gutenkg export-swift`: vec0 store conversion, FTS rebuild, golden-query file | bundle exists (`make build-corpus`) |
 | **1. Thin client (macOS)** | Full SwiftUI app (Chat/Browse/Settings) in **Remote mode** against the local worker (`make run`) — same look, ships first, validates the UI with zero ML risk | worker runs locally (already true) |
 | **2. Local retrieval** | Core ML embedder + CorpusStore + LocalRetrieval over the converted store on disk, parity gate green; Browse goes local | Phase 0 |
-| **3. Local synthesis** | FoundationModels backend (macOS 26), ContextBudgeter, guardrail fallbacks, streaming turns | Phase 2 |
+| **3. Local synthesis** ✅ | FoundationModels backend (macOS 26 / iOS 26), ContextBudgeter, guardrail fallbacks, streaming turns — **landed**, and ahead of Phase 2: it needs only hits, not where they came from | — |
 | **4. Images** | RemoteImage against localhost image_server/sdxl_server, then Image Playground fallback; on-device vlm_rewrite | Phase 1 (remote) / 3 (rewrite) |
-| **5. iOS target** | Add the iOS destination: pack splitting + hosting + Background Assets, iPhone layout (settings sheet), device context budgets | Phases 2–4 |
+| **5. iOS target** ◐ | iPhone layout (settings sheet) and the app target have **landed** (`app/ios`), sharing every view with the Mac through `KnowledgePressUI`; pack splitting + hosting + Background Assets remain | Phases 2–4 |
 
 Each phase is independently shippable; Phase 1 alone is already "our chat
 interface as a native Mac app".
+
+**Phase 3 landed before Phase 2**, which the dependency column had not
+anticipated. Synthesis consumes `[Hit]` and never asks where the hits came
+from, so the on-device answer engine works against worker retrieval exactly as
+it will against local retrieval — and it is the half a reader can *feel*. The
+app today is the Hybrid row of §2 with the arrow reversed: retrieval remote,
+answer local. Phase 2 turns the last remote call off.
 
 ## 10. Risks & open questions
 

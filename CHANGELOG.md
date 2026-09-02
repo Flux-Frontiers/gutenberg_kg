@@ -8,6 +8,57 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Added
+
+- **The chat answers on the phone, with the model already in the OS.** The
+  native app gained an on-device answer engine built on Apple's Foundation
+  Models framework: `OnDeviceSynthesis` streams a grounded answer from the
+  ~3B model that ships with iOS 26 / macOS 26. No key, no endpoint, no
+  request leaving the device — and the same prompt discipline the worker
+  uses, because `SynthesisPrompt.ragInstructions` is
+  `kg_utils.synthesis._text._RAG_SYSTEM` word for word. A drift between the
+  two is a silent change in what every answer is allowed to say, so the port
+  is verbatim and a test pins the two lines that matter.
+
+  The hard constraint is the context window: ~4,096 tokens for instructions,
+  passages, question and answer together, against `SYNTH_MAX_K=12` passages
+  on the worker. `ContextBudgeter` makes that trade explicit rather than
+  letting the framework truncate silently — it packs best-first, trims each
+  passage at a word boundary, and stops when the budget is spent. Retrieval
+  still returns the full `k` for the hit cards; only synthesis sees the
+  packed subset, and the turn's stats line says "5 of 10 in context" when
+  they differ. A short passage is kept when it is short because that is all
+  there was, and dropped when trimming ground it to a fragment.
+
+  Guardrail refusals are designed for, not discovered later: a corpus holding
+  the Inferno, the Old Testament and *Frankenstein* will trip a safety
+  classifier sometimes, so `.guardrailViolation` degrades to "the passages
+  below are unfiltered" with an offer to retry on the worker — the same shape
+  as `chat.py`'s `synthesis_error` state.
+
+- **An iPhone target, sharing every view with the Mac app.** The SwiftUI
+  layer moved out of the macOS executable into a `KnowledgePressUI` library
+  that both shells import: `MacRootView` keeps the settings sidebar, and
+  `PhoneRootView` puts the same controls behind a sheet. `BrowseView` became
+  a `NavigationStack` drill rather than an `HSplitView`, which reads
+  correctly on both and is one code path instead of two. `app/ios/` carries
+  the app entry point and an XcodeGen spec.
+
+- **`RetrievalEngine` and `QueryOrchestrator` — the seam local retrieval
+  drops into.** Retrieval, budgeting and synthesis are now one streamed
+  pipeline (`QueryEvent`), with the worker behind a protocol. Phase 2 —
+  Core ML bge-small over an on-device sqlite-vec pack — replaces one property
+  in `AppModel` and nothing else.
+
+### Changed
+
+- Assistant turns render progressively instead of waiting on a blocking
+  spinner. The Foundation Models stream yields snapshots of the whole answer
+  rather than deltas, so `SynthesisEvent.partial` carries cumulative text and
+  the view replaces rather than appends.
+- A query in flight can be stopped. The passages already retrieved stay on
+  screen.
+
 ## [1.15.0] - 2026-09-01
 
 ### Added

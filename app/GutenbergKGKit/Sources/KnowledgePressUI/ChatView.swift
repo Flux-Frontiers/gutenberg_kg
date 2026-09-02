@@ -10,10 +10,20 @@ struct ChatView: View {
     @State private var draft = ""
     @FocusState private var inputFocused: Bool
 
+    /// The Mac window carries the title in its own chrome and the settings in
+    /// the sidebar; the phone needs both inline.
+    let showsHeader: Bool
+
+    init(showsHeader: Bool = true) {
+        self.showsHeader = showsHeader
+    }
+
     var body: some View {
         VStack(spacing: 0) {
-            header
-            Divider()
+            if showsHeader {
+                header
+                Divider()
+            }
             ScrollViewReader { proxy in
                 ScrollView {
                     LazyVStack(alignment: .leading, spacing: 16) {
@@ -23,14 +33,6 @@ struct ChatView: View {
                         ForEach(model.turns) { turn in
                             TurnView(turn: turn)
                                 .id(turn.id)
-                        }
-                        if model.isQuerying {
-                            HStack(spacing: 8) {
-                                ProgressView().controlSize(.small)
-                                Text("Searching the corpus…")
-                                    .foregroundStyle(.secondary)
-                            }
-                            .id("busy")
                         }
                     }
                     .padding()
@@ -58,12 +60,35 @@ struct ChatView: View {
     }
 
     private var emptyState: some View {
-        VStack(alignment: .leading, spacing: 8) {
-            Text("Ask about any text in the corpus, or try a suggestion from the sidebar.")
+        VStack(alignment: .leading, spacing: 14) {
+            Text("Ask about any text in the corpus.")
                 .foregroundStyle(.secondary)
+            EngineBadge()
+            VStack(alignment: .leading, spacing: 8) {
+                ForEach(AppModel.suggestedQueries, id: \.query) { suggestion in
+                    Button {
+                        model.send(suggestion.query, corpusOverride: suggestion.corpus)
+                    } label: {
+                        HStack(spacing: 8) {
+                            Text(suggestion.corpus)
+                                .font(.caption2.monospaced())
+                                .padding(.horizontal, 6)
+                                .padding(.vertical, 3)
+                                .background(.tint.opacity(0.15), in: Capsule())
+                            Text(suggestion.query)
+                                .multilineTextAlignment(.leading)
+                            Spacer(minLength: 0)
+                        }
+                        .padding(10)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .background(.quaternary.opacity(0.4), in: RoundedRectangle(cornerRadius: 10))
+                    }
+                    .buttonStyle(.plain)
+                }
+            }
         }
         .frame(maxWidth: .infinity, alignment: .leading)
-        .padding(.top, 40)
+        .padding(.top, 24)
     }
 
     private var inputBar: some View {
@@ -73,9 +98,14 @@ struct ChatView: View {
                 .focused($inputFocused)
                 .onSubmit(submit)
                 .disabled(model.isQuerying)
-            Button("Send", action: submit)
-                .keyboardShortcut(.defaultAction)
-                .disabled(draft.trimmingCharacters(in: .whitespaces).isEmpty || model.isQuerying)
+            if model.isQuerying {
+                Button("Stop", systemImage: "stop.circle", action: model.cancel)
+                    .labelStyle(.iconOnly)
+            } else {
+                Button("Send", action: submit)
+                    .keyboardShortcut(.defaultAction)
+                    .disabled(draft.trimmingCharacters(in: .whitespaces).isEmpty)
+            }
         }
         .padding()
     }
@@ -84,7 +114,26 @@ struct ChatView: View {
         let text = draft
         draft = ""
         inputFocused = true
-        Task { await model.send(text) }
+        model.send(text)
+    }
+}
+
+/// "Answers from Apple Intelligence, on this device" — or the reason it cannot.
+struct EngineBadge: View {
+    @Environment(AppModel.self) private var model
+
+    var body: some View {
+        let availability = model.onDeviceAvailability
+        HStack(spacing: 7) {
+            Image(systemName: availability.isAvailable ? "iphone.gen3" : "exclamationmark.triangle")
+            if let reason = availability.reason {
+                Text("On-device answers unavailable — \(reason).")
+            } else {
+                Text("Answers are written on this device. Nothing is sent anywhere.")
+            }
+        }
+        .font(.caption)
+        .foregroundStyle(availability.isAvailable ? Color.secondary : Color.orange)
     }
 }
 
@@ -95,7 +144,7 @@ struct TurnView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
             HStack {
-                Spacer()
+                Spacer(minLength: 40)
                 HStack(spacing: 6) {
                     if turn.corpus != "all" {
                         Text(turn.corpus)
@@ -109,12 +158,7 @@ struct TurnView: View {
                 .padding(10)
                 .background(.tint.opacity(0.1), in: RoundedRectangle(cornerRadius: 10))
             }
-            if let error = turn.errorMessage {
-                Label(error, systemImage: "exclamationmark.triangle")
-                    .foregroundStyle(.orange)
-            } else if let result = turn.result {
-                AssistantTurnView(result: result)
-            }
+            AssistantTurnView(turn: turn)
         }
     }
 }
