@@ -174,7 +174,7 @@ _PASSAGE_SCHEMA = """
 CREATE TABLE pack_meta (key TEXT PRIMARY KEY, value TEXT);
 
 CREATE TABLE passages (
-  id         TEXT PRIMARY KEY,
+  id         TEXT PRIMARY KEY,  -- "<kg_name>:<node_id>"; diary node ids repeat across books
   kg_name    TEXT NOT NULL,     -- "gutenberg", or a diary slug
   kg_kind    TEXT NOT NULL,     -- the hit's kg_kind, verbatim from the worker
   kind       TEXT NOT NULL,     -- chunk | section
@@ -824,6 +824,16 @@ def build_passage_pack(
     Browse — and counted in ``missing_vectors`` so a partial store is visible
     rather than silent.
 
+    The pack id is ``<kg_name>:<node_id>``, not the source node id verbatim.
+    Diary node ids (``chunk:entry_0000_chunk_0.md:0000``) name the entry file
+    within a book but not the book, and every diary numbers its entries from
+    ``entry_0000`` — so merging four diaries into one table keyed by the raw
+    id silently dropped every later diary's colliding rows (4,601 of 27,462
+    passages, found 2026-09-01). The prefix restores uniqueness while keeping
+    the id an opaque string, which is all the search code here and the Swift
+    engine ever treat it as. The insert is a plain INSERT, so any residual
+    collision fails the export instead of shrinking the pack.
+
     :param dest: Output path.
     :param sources: KGs to merge into this pack (one for books, four for diaries).
     :param catalog: Parsed ``catalog.json``, for per-book title/author.
@@ -841,7 +851,7 @@ def build_passage_pack(
     stats = PackStats(path=dest)
     try:
         insert = (
-            "INSERT OR IGNORE INTO passages"
+            "INSERT INTO passages"
             "(id, kg_name, kg_kind, kind, name, title, node_title, author, genre, "
             " book, file_path, char_start, chapter, timestamp, content) "
             "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"
@@ -855,7 +865,7 @@ def build_passage_pack(
                 meta = catalog.get(f"{genre}/{book}", {}) if genre and book else {}
                 batch.append(
                     (
-                        record["id"],
+                        f"{source.kg_name}:{record['id']}",
                         source.kg_name,
                         source.kg_kind,
                         record["kind"],
@@ -962,8 +972,12 @@ def write_vector_sidecar(
                 if source.vectors is None and source.lancedb is None:
                     progress(f"  {source.kg_name}: no vector store — lexical search only")
                     continue
+                source_start = written
                 for node_id, vector in iter_source_vectors(source.vectors, source.lancedb):
-                    rowid = rowid_by_id.get(node_id)
+                    # The pack id is namespaced by kg_name, so a vector can only
+                    # ever land on a row from its own KG — a diary's vector
+                    # cannot claim another diary's colliding node id.
+                    rowid = rowid_by_id.get(f"{source.kg_name}:{node_id}")
                     if rowid is None or rowid in seen:
                         continue
                     seen.add(rowid)
@@ -976,7 +990,9 @@ def write_vector_sidecar(
                     handle.write(encoded)
                     assignments.append((written, rowid))
                     written += 1
-                progress(f"  {source.kg_name}: {written:,} vectors written ({dtype})")
+                progress(
+                    f"  {source.kg_name}: {written - source_start:,} vectors written ({dtype})"
+                )
 
             handle.flush()
             handle.seek(0)
@@ -1089,6 +1105,7 @@ def search_pack(
     k: int = 10,
     genre: str | None = None,
     min_score: float = 0.0,
+    lexical: bool = True,
 ) -> list[dict]:
     """Run the packed corpus's own hybrid search — dense + BM25, fused by RRF.
 
@@ -1107,6 +1124,10 @@ def search_pack(
     :param k: Hits to return.
     :param genre: Restrict to one genre, as the worker's ``genre_filter`` does.
     :param min_score: Drop hits below this cosine score.
+    :param lexical: Include the BM25 channel. False gives the dense channel
+        alone, which is what :func:`verify_pack` compares against dense
+        ground truth — fusing BM25 into one side of that comparison made the
+        quantisation gate report hybrid-vs-dense divergence as recall loss.
     :returns: Hit dicts in the worker's shape, best-first.
     """
     numpy = _load_numpy()
@@ -1149,7 +1170,7 @@ def search_pack(
             _all_scores = {}
 
         lexical_ids: list[str] = []
-        expression = fts_match_expression(query_text)
+        expression = fts_match_expression(query_text) if lexical else ""
         if expression:
             lex_sql = (
                 "SELECT p.id AS id FROM passages_fts f "
@@ -1310,8 +1331,12 @@ def verify_pack(
 
     Computes the true top-k by brute force over the *source* vectors — the same
     method ``benchmarks/bench_sqlite_vec.py`` uses — and compares it with what
-    the pack's dense channel returns. This is a build-time gate: an int8 recall
-    that has quietly fallen is something to see here, not in a user's answer.
+    the pack's dense channel returns (``search_pack(..., lexical=False)``; the
+    BM25 channel is deliberately off, because ground truth here is dense-only
+    and fusing lexical hits into one side reported the divergence as recall
+    loss — measured at 0.567 apparent vs 0.958 actual on 2026-09-01). This is
+    a build-time gate: an int8 recall that has quietly fallen is something to
+    see here, not in a user's answer.
 
     :param pack: The finished pack.
     :param source: The KG whose source vectors are the ground truth.
@@ -1329,7 +1354,7 @@ def verify_pack(
     ids: list[str] = []
     rows: list = []
     for node_id, vector in iter_source_vectors(source.vectors, source.lancedb):
-        ids.append(node_id)
+        ids.append(f"{source.kg_name}:{node_id}")
         rows.append(vector)
     if not rows:
         raise ExportError("no source vectors to verify against")
@@ -1358,7 +1383,7 @@ def verify_pack(
         top = numpy.argsort(-exact_scores)[:k]
         expected = {ids[i]: float(exact_scores[i]) for i in top}
 
-        got = search_pack(pack, vector, query, k=k)
+        got = search_pack(pack, vector, query, k=k, lexical=False)
         got_ids = [hit["node_id"] for hit in got]
         overlap = len(set(got_ids) & set(expected)) / max(len(expected), 1)
         recalls.append(overlap)

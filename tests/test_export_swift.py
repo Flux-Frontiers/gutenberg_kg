@@ -198,22 +198,24 @@ class TestPassageSelection:
     def test_carries_only_searchable_nodes(self, packs):
         _, out = packs
         ids = {r["id"] for r in _rows(out / "gutenberg.pack", "SELECT id FROM passages")}
-        assert ids == {"c:1", "c:2", "sec:1", "s:1"}
+        assert ids == {"gutenberg:c:1", "gutenberg:c:2", "gutenberg:sec:1", "gutenberg:s:1"}
 
     def test_reference_sheets_never_become_passages(self, packs):
         _, out = packs
         ids = {r["id"] for r in _rows(out / "gutenberg.pack", "SELECT id FROM passages")}
-        assert "c:ref" not in ids
+        assert "gutenberg:c:ref" not in ids
 
     def test_empty_sections_survive_because_browse_needs_them(self, packs):
         """A section marker carries no prose but is still a chapter."""
         _, out = packs
         rows = _rows(out / "gutenberg.pack", "SELECT id FROM passages WHERE kind='section'")
-        assert [r["id"] for r in rows] == ["sec:1"]
+        assert [r["id"] for r in rows] == ["gutenberg:sec:1"]
 
     def test_content_is_stripped(self, packs):
         _, out = packs
-        (row,) = _rows(out / "gutenberg.pack", "SELECT content FROM passages WHERE id='c:1'")
+        (row,) = _rows(
+            out / "gutenberg.pack", "SELECT content FROM passages WHERE id='gutenberg:c:1'"
+        )
         assert row["content"].startswith("The life")
         assert row["content"].endswith("short.")
 
@@ -223,7 +225,7 @@ class TestCatalogJoin:
         _, out = packs
         (row,) = _rows(
             out / "gutenberg.pack",
-            "SELECT title, author, genre, book FROM passages WHERE id='c:1'",
+            "SELECT title, author, genre, book FROM passages WHERE id='gutenberg:c:1'",
         )
         assert row == {
             "title": "Leviathan",
@@ -237,7 +239,7 @@ class TestCatalogJoin:
         _, out = packs
         (row,) = _rows(
             out / "gutenberg.pack",
-            "SELECT title, node_title FROM passages WHERE id='sec:1'",
+            "SELECT title, node_title FROM passages WHERE id='gutenberg:sec:1'",
         )
         assert row == {"title": "Leviathan", "node_title": "Of Man"}
 
@@ -278,7 +280,7 @@ class TestFullTextIndex:
             "WHERE passages_fts MATCH ?",
             ('"brutish"',),
         )
-        assert [r["id"] for r in rows] == ["c:1"]
+        assert [r["id"] for r in rows] == ["gutenberg:c:1"]
 
     def test_stems_so_a_singular_query_finds_a_plural(self, packs):
         _, out = packs
@@ -288,7 +290,7 @@ class TestFullTextIndex:
             "WHERE passages_fts MATCH ?",
             ('"covenant"',),
         )
-        assert [r["id"] for r in rows] == ["c:2"]
+        assert [r["id"] for r in rows] == ["gutenberg:c:2"]
 
 
 class TestCorePack:
@@ -320,7 +322,7 @@ class TestCorePack:
             "WHERE kind='section' AND file_path=? ORDER BY char_start",
             (book["file_path"],),
         )
-        assert chapters == [{"id": "sec:1", "title": "Of Man"}]
+        assert chapters == [{"id": "gutenberg:sec:1", "title": "Of Man"}]
 
 
 class TestManifest:
@@ -384,17 +386,20 @@ class TestHelpers:
         assert split_source_path("bare.md") == (None, None)
 
 
-def _seed_source_vectors(bundle, axes):
-    """Give the fixture bundle a vec0 source store, as a real bundle has.
+def _seed_source_vectors(bundle, axes, *, store=None):
+    """Give a store in the fixture bundle a vec0 source, as a real bundle has.
 
     The *source* is still sqlite-vec — that is what `dockg convert-index`
     produces — even though the pack it becomes is not.
+
+    :param store: The `.dockg`/`.diarykg` directory to seed; defaults to the
+        bundle's consolidated `.dockg`.
     """
     import numpy as np
 
     from gutenberg_kg.export_swift import EMBED_DIM, _connect_with_vec
 
-    con = _connect_with_vec(bundle / ".dockg" / "vectors.sqlite")
+    con = _connect_with_vec((store or bundle / ".dockg") / "vectors.sqlite")
     con.execute("CREATE TABLE vec_meta(id TEXT PRIMARY KEY, kind TEXT)")
     con.execute(
         f"CREATE VIRTUAL TABLE vec_nodes USING vec0(embedding float[{EMBED_DIM}] "
@@ -480,11 +485,14 @@ class TestVectorSidecar:
         indexed = {r["id"]: r["vector_index"] for r in rows if r["vector_index"] is not None}
         assert sorted(indexed.values()) == [0, 1]
         # c:2 and sec:1 had no vector in the source and stay unindexed.
-        assert {r["id"] for r in rows if r["vector_index"] is None} == {"c:2", "sec:1"}
+        assert {r["id"] for r in rows if r["vector_index"] is None} == {
+            "gutenberg:c:2",
+            "gutenberg:sec:1",
+        }
 
         matrix, _ = read_vector_sidecar(out / "gutenberg.vectors")
-        assert int(np.argmax(matrix[indexed["c:1"]])) == 0
-        assert int(np.argmax(matrix[indexed["s:1"]])) == 7
+        assert int(np.argmax(matrix[indexed["gutenberg:c:1"]])) == 0
+        assert int(np.argmax(matrix[indexed["gutenberg:s:1"]])) == 7
 
     def test_missing_vectors_are_counted_not_hidden(self, bundle, tmp_path):
         _seed_source_vectors(bundle, [("c:1", 0)])
@@ -554,7 +562,7 @@ class TestSearchPack:
 
         # "zzzz" matches nothing lexically, so this is the dense channel alone.
         hits = search_pack(searchable, self._basis(2), "zzzz", k=3)
-        assert hits[0]["node_id"] == "s:1"
+        assert hits[0]["node_id"] == "gutenberg:s:1"
         assert hits[0]["score"] == pytest.approx(1.0, abs=0.02)
 
     def test_hits_carry_the_worker_hit_shape(self, searchable):
@@ -582,7 +590,11 @@ class TestSearchPack:
         from gutenberg_kg.export_swift import search_pack
 
         hits = search_pack(searchable, self._basis(2), "pillar of salt", k=5, genre="philosophy")
-        assert {hit["node_id"] for hit in hits} <= {"c:1", "c:2", "sec:1"}
+        assert {hit["node_id"] for hit in hits} <= {
+            "gutenberg:c:1",
+            "gutenberg:c:2",
+            "gutenberg:sec:1",
+        }
         assert all(hit["genre"] == "philosophy" for hit in hits)
 
     def test_lexical_channel_rescues_what_the_embedder_buries(self, searchable):
@@ -602,14 +614,128 @@ class TestSearchPack:
         from gutenberg_kg.export_swift import search_pack
 
         dense_only = search_pack(searchable, self._basis(0), "zzzz", k=1)
-        assert dense_only[0]["node_id"] == "c:1"
+        assert dense_only[0]["node_id"] == "gutenberg:c:1"
 
         fused = search_pack(searchable, self._basis(0), "pillar salt", k=1)
-        assert fused[0]["node_id"] == "s:1"
+        assert fused[0]["node_id"] == "gutenberg:s:1"
+
+    def test_lexical_false_gives_the_dense_channel_alone(self, searchable):
+        """`verify_pack` measures quantisation, so it must not fuse BM25.
+
+        Same setup as the rescue test above: lexically, "pillar salt" promotes
+        `s:1` past the dense winner. With `lexical=False` that channel is off
+        and the dense winner stands — which is what dense-only fp32 ground
+        truth expects. Comparing the *hybrid* top-k against dense truth is the
+        bug that reported recall 0.567 while true int8 recall was 0.958.
+        """
+        from gutenberg_kg.export_swift import search_pack
+
+        dense = search_pack(searchable, self._basis(0), "pillar salt", k=1, lexical=False)
+        assert dense[0]["node_id"] == "gutenberg:c:1"
 
     def test_min_score_drops_weak_hits(self, searchable):
         from gutenberg_kg.export_swift import search_pack
 
         # Orthogonal passages score ~0.0; only the on-axis one clears the floor.
         hits = search_pack(searchable, self._basis(2), "zzzz", k=3, min_score=0.5)
-        assert [hit["node_id"] for hit in hits] == ["s:1"]
+        assert [hit["node_id"] for hit in hits] == ["gutenberg:s:1"]
+
+
+EVELYN_DIR = "The Diary of John Evelyn — Volume 1"
+PEPYS_DIR = "The Diary of Samuel Pepys — Complete"
+
+
+class TestCrossDiaryIdCollisions:
+    """Diary node ids repeat across books, and the pack must survive that.
+
+    Real diary ids look like ``chunk:entry_0000_chunk_0.md:0000`` — the entry
+    file within a book, not the book — and every diary numbers its entries
+    from ``entry_0000``. Before the ``<kg_name>:`` prefix, merging four
+    diaries into one id-keyed table dropped 4,601 of 27,462 passages via
+    ``INSERT OR IGNORE``, silently: every later diary lost the rows whose ids
+    an earlier diary had already claimed.
+    """
+
+    @pytest.fixture
+    def colliding_bundle(self, bundle):
+        """The fixture bundle plus a second diary reusing the same node ids."""
+        _graph(
+            bundle / "diaries" / EVELYN_DIR / ".diarykg" / "graph.sqlite",
+            DIARY_COLUMNS,
+            [
+                (
+                    "p:1",
+                    "chunk",
+                    "September 2nd 1666",
+                    "The dreadful fire near Fish Street.",
+                    "1666-09-02T00:00:00",
+                ),
+                (
+                    "p:2",
+                    "chunk",
+                    "September 3rd 1666",
+                    "The fire increasing to Cheapside.",
+                    "1666-09-03T00:00:00",
+                ),
+            ],
+            edges=False,
+        )
+        return bundle
+
+    def test_colliding_ids_all_survive_with_their_own_content(self, colliding_bundle, tmp_path):
+        out = tmp_path / "swift"
+        export_swift(
+            ExportOptions(
+                bundle=colliding_bundle, out=out, with_vectors=False, golden=False, force=True
+            )
+        )
+        rows = _rows(out / "diaries.pack", "SELECT id, kg_name, content FROM passages")
+        assert {r["id"] for r in rows} == {
+            "evelyn-volume-1:p:1",
+            "evelyn-volume-1:p:2",
+            "pepys-complete:p:1",
+            "pepys-complete:p:2",
+        }
+        by_id = {r["id"]: r for r in rows}
+        assert by_id["evelyn-volume-1:p:1"]["content"].startswith("The dreadful fire")
+        assert by_id["pepys-complete:p:1"]["content"].startswith("The poor pigeons")
+
+    def test_reported_passage_count_matches_the_pack(self, colliding_bundle, tmp_path):
+        """The log counts real inserts, not attempts — the drop was invisible
+        because ``stats.passages`` tallied attempted rows."""
+        out = tmp_path / "swift"
+        report = export_swift(
+            ExportOptions(
+                bundle=colliding_bundle, out=out, with_vectors=False, golden=False, force=True
+            )
+        )
+        pack = next(p for p in report.packs if p.name == "diaries.pack")
+        (count,) = _rows(out / "diaries.pack", "SELECT COUNT(*) AS n FROM passages")
+        assert pack.passages == count["n"] == 4
+
+    @pytest.mark.skipif(
+        find_spec("sqlite_vec") is None or find_spec("numpy") is None,
+        reason="vector packs need sqlite-vec and numpy",
+    )
+    def test_each_diary_keeps_its_own_vector(self, colliding_bundle, tmp_path):
+        """A diary's vector must not claim another diary's colliding row."""
+        import numpy as np
+
+        from gutenberg_kg.export_swift import read_vector_sidecar
+
+        root = colliding_bundle / "diaries"
+        _seed_source_vectors(colliding_bundle, [("p:1", 3)], store=root / EVELYN_DIR / ".diarykg")
+        _seed_source_vectors(colliding_bundle, [("p:1", 5)], store=root / PEPYS_DIR / ".diarykg")
+        out = tmp_path / "swift"
+        export_swift(ExportOptions(bundle=colliding_bundle, out=out, golden=False, force=True))
+
+        rows = _rows(
+            out / "diaries.pack",
+            "SELECT id, vector_index FROM passages WHERE vector_index IS NOT NULL",
+        )
+        indexed = {r["id"]: r["vector_index"] for r in rows}
+        assert set(indexed) == {"evelyn-volume-1:p:1", "pepys-complete:p:1"}
+
+        matrix, _ = read_vector_sidecar(out / "diaries.vectors")
+        assert int(np.argmax(matrix[indexed["evelyn-volume-1:p:1"]])) == 3
+        assert int(np.argmax(matrix[indexed["pepys-complete:p:1"]])) == 5

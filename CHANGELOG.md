@@ -131,6 +131,31 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - A query in flight can be stopped. The passages already retrieved stay on
   screen.
 
+### Fixed
+
+- **`export-swift` silently dropped 4,601 of 27,462 diary passages.** Diary
+  node ids (`chunk:entry_0000_chunk_0.md:0000`) name the entry file within a
+  book but not the book, and every diary numbers its entries from
+  `entry_0000` — so merging four diaries into one `passages` table keyed by
+  the raw id discarded every later diary's colliding rows via
+  `INSERT OR IGNORE`, and the log's passage counts (attempted inserts, not
+  actual) hid it. Pepys alone lost 2,927 chunks. The pack id is now
+  `<kg_name>:<node_id>` — opaque to both retrieval engines, so nothing else
+  changes — the insert is a plain `INSERT` that fails loudly on any residual
+  collision, and a vector can only land on a row from its own KG.
+- **`export-swift --verify` compared hybrid search against dense ground
+  truth.** The gate reported recall@10 of 0.567 against its 0.9 threshold,
+  suggesting int8 quantisation loss; actual dense-only int8 recall was
+  0.958. `verify_pack` computed fp32 ground truth from the dense channel
+  alone but measured the pack through the full dense+BM25 RRF pipeline, so
+  every lexical rescue counted as a recall miss — including the golden
+  queries chosen precisely because only BM25 finds them. The verify now
+  runs `search_pack(..., lexical=False)`, matching what its docstring
+  already claimed.
+- **`export-swift`'s per-KG vector log printed the running total**, so the
+  last diary appeared to write 22,861 vectors for 2,784 passages. Each KG
+  now reports its own count.
+
 ## [1.15.0] - 2026-09-01
 
 ### Added

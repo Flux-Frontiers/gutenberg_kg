@@ -92,6 +92,13 @@ Empty chunks are dropped. Empty *sections* are not: they carry no prose, but
 they are the chapter markers `get_chapters` lists and `get_chapter` slices
 between.
 
+`passages.id` is `<kg_name>:<node_id>`, not the source node id verbatim.
+Diary node ids name the entry file within a book but not the book, and every
+diary numbers its entries from `entry_0000` — so raw ids collide across the
+four diaries merged into `diaries.pack`. The prefix keeps the id unique while
+leaving it an opaque string, which is all either retrieval engine treats it
+as.
+
 The dense query is one join against a dense row index:
 
 ```sql
