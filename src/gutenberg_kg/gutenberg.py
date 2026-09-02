@@ -927,28 +927,74 @@ def record_in_catalog(
         written.
     :param ebook_id: Project Gutenberg numeric book ID.
     :param title: The book's directory name, written as the title override.
-    :param dry_run: When true, write nothing.
-    :returns: True when a line was appended.
+    :param dry_run: When true, report what would be written but write nothing.
+    :returns: True when a line was appended, or would have been under
+        ``dry_run`` -- so a caller can count pending repairs without writing.
     """
-    if genre is None or dry_run:
+    if genre is None:
         return False
 
     catalog_path = os.path.join(CATALOG_ROOT, f"{genre}.txt")
+    needs_newline = False
     if os.path.exists(catalog_path):
         if any(eid == ebook_id for eid, _ in parse_catalog(catalog_path)):
             return False
         with open(catalog_path, encoding="utf-8") as f:
             needs_newline = not f.read().endswith("\n")
-    else:
-        os.makedirs(CATALOG_ROOT, exist_ok=True)
-        needs_newline = False
 
+    if dry_run:
+        print(f"  [dry] would catalogue: scripts/catalogs/{genre}.txt <- {ebook_id}\t{title}")
+        return True
+
+    os.makedirs(CATALOG_ROOT, exist_ok=True)
     with open(catalog_path, "a", encoding="utf-8") as f:
         if needs_newline:
             f.write("\n")
         f.write(f"{ebook_id}\t{title}\n")
     print(f"  Catalogued: scripts/catalogs/{genre}.txt <- {ebook_id}\t{title}")
     return True
+
+
+def run_catalog_sync(genres: list[str], dry_run: bool = False) -> int:
+    """Record every downloaded book in its genre catalog.
+
+    The repair counterpart to :func:`record_in_catalog`, for books downloaded
+    before write-back existed. It is the analogue of ``gutenkg re-register``:
+    both rebuild a derived record from what is already on disk, without redoing
+    the expensive work that produced it.
+
+    No downloading is involved. Each book's ``reference.md`` -- written by every
+    download path, Gutenberg and IA alike -- carries the Gutenberg ID, so the
+    catalog can be reconstructed by reading the corpus. The directory name is
+    written as the title override, matching what ``audit`` compares against.
+
+    IA genres are skipped: they have no catalog files, and what an IA catalog
+    should contain is a separate design question.
+
+    :param genres: Genres to process.
+    :param dry_run: Report what would be written without writing.
+    :returns: Number of catalog entries added (or that would be added).
+    """
+    from gutenberg_kg.genres import IA_GENRES
+
+    added = 0
+    for genre in genres:
+        if genre in IA_GENRES:
+            continue
+        genre_dir = os.path.join(CORPUS_ROOT, genre)
+        if not os.path.isdir(genre_dir):
+            continue
+        for book in sorted(os.listdir(genre_dir)):
+            book_dir = os.path.join(genre_dir, book)
+            ref = os.path.join(book_dir, "reference.md")
+            if book.startswith(".") or not os.path.isfile(ref):
+                continue
+            ebook_id = parse_reference(Path(ref)).get("ebook_id")
+            if ebook_id is None:
+                continue
+            if record_in_catalog(genre, int(ebook_id), book, dry_run=dry_run):
+                added += 1
+    return added
 
 
 def parse_catalog(catalog_path: str) -> list[tuple[int, str | None]]:

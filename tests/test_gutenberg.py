@@ -686,11 +686,20 @@ def test_record_in_catalog_creates_missing_catalog(tmp_path: Path, monkeypatch):
 
 
 def test_record_in_catalog_skips_dry_run_and_genreless(tmp_path: Path, monkeypatch):
-    """--dry-run and a genre-less download must write nothing at all."""
+    """--dry-run writes nothing but still reports the entry as needed, so a
+    caller (catalog-sync) can count pending repairs. A genre-less download has
+    no catalog to write to and reports nothing."""
     monkeypatch.setattr(dg, "CATALOG_ROOT", str(tmp_path))
-    assert dg.record_in_catalog("letters", 2445, "Letters on England", dry_run=True) is False
+    assert dg.record_in_catalog("letters", 2445, "Letters on England", dry_run=True) is True
     assert dg.record_in_catalog(None, 2445, "Letters on England") is False
-    assert list(tmp_path.iterdir()) == []
+    assert list(tmp_path.iterdir()) == []  # nothing written either way
+
+
+def test_record_in_catalog_dry_run_stays_silent_when_already_present(tmp_path, monkeypatch):
+    """A dry run must not report an entry that already exists."""
+    monkeypatch.setattr(dg, "CATALOG_ROOT", str(tmp_path))
+    (tmp_path / "letters.txt").write_text("2445\tLetters on England\n", encoding="utf-8")
+    assert dg.record_in_catalog("letters", 2445, "Letters on England", dry_run=True) is False
 
 
 def test_download_book_catalogues_the_already_present_book(tmp_path: Path, monkeypatch):
@@ -723,3 +732,92 @@ def test_download_book_dry_run_writes_no_catalog(tmp_path: Path, monkeypatch):
 
     dg.download_book(2445, genre="letters", dry_run=True)
     assert not (tmp_path / "catalogs").exists()
+
+
+# ---------------------------------------------------------------------------
+# run_catalog_sync — repairing drift from downloads that predate write-back
+# ---------------------------------------------------------------------------
+
+
+def _sync_corpus(tmp_path: Path, monkeypatch) -> tuple[Path, Path]:
+    corpus, catalogs = tmp_path / "corpus", tmp_path / "catalogs"
+    monkeypatch.setattr(dg, "CORPUS_ROOT", str(corpus))
+    monkeypatch.setattr(dg, "CATALOG_ROOT", str(catalogs))
+    return corpus, catalogs
+
+
+def test_catalog_sync_records_uncatalogued_books(tmp_path: Path, monkeypatch):
+    """The repair case: books on disk, catalog empty."""
+    corpus, catalogs = _sync_corpus(tmp_path, monkeypatch)
+    _make_downloaded_book(corpus / "letters", "Letters on England", 2445)
+    _make_downloaded_book(corpus / "letters", "Letters of Pliny the Younger", 2811)
+
+    assert dg.run_catalog_sync(["letters"]) == 2
+    assert sorted(parse_catalog(str(catalogs / "letters.txt"))) == [
+        (2445, "Letters on England"),
+        (2811, "Letters of Pliny the Younger"),
+    ]
+
+
+def test_catalog_sync_is_idempotent(tmp_path: Path, monkeypatch):
+    """Re-running must add nothing and must not duplicate lines."""
+    corpus, catalogs = _sync_corpus(tmp_path, monkeypatch)
+    _make_downloaded_book(corpus / "letters", "Letters on England", 2445)
+
+    assert dg.run_catalog_sync(["letters"]) == 1
+    assert dg.run_catalog_sync(["letters"]) == 0
+    assert parse_catalog(str(catalogs / "letters.txt")) == [(2445, "Letters on England")]
+
+
+def test_catalog_sync_dry_run_counts_but_writes_nothing(tmp_path: Path, monkeypatch):
+    corpus, catalogs = _sync_corpus(tmp_path, monkeypatch)
+    _make_downloaded_book(corpus / "letters", "Letters on England", 2445)
+
+    assert dg.run_catalog_sync(["letters"], dry_run=True) == 1
+    assert not catalogs.exists()
+
+
+def test_catalog_sync_preserves_existing_entries(tmp_path: Path, monkeypatch):
+    """Sync appends; it must never rewrite or reorder a curated catalog."""
+    corpus, catalogs = _sync_corpus(tmp_path, monkeypatch)
+    catalogs.mkdir()
+    (catalogs / "letters.txt").write_text(
+        "# curated header\n2811\tLetters of Pliny the Younger\n", encoding="utf-8"
+    )
+    _make_downloaded_book(corpus / "letters", "Letters on England", 2445)
+
+    dg.run_catalog_sync(["letters"])
+    text = (catalogs / "letters.txt").read_text(encoding="utf-8")
+    assert text.startswith("# curated header\n2811\t")
+    assert text.endswith("2445\tLetters on England\n")
+
+
+def test_catalog_sync_skips_ia_genres(tmp_path: Path, monkeypatch):
+    """IA genres have no catalogs by design and must not get one."""
+    corpus, catalogs = _sync_corpus(tmp_path, monkeypatch)
+    monkeypatch.setattr("gutenberg_kg.genres.IA_GENRES", ["curiosities"])
+    _make_downloaded_book(corpus / "curiosities", "Miracle Mongers", 999)
+
+    assert dg.run_catalog_sync(["curiosities"]) == 0
+    assert not catalogs.exists()
+
+
+def test_catalog_sync_ignores_books_without_an_id(tmp_path: Path, monkeypatch):
+    """A reference.md with no Gutenberg ID cannot be catalogued by ID."""
+    corpus, catalogs = _sync_corpus(tmp_path, monkeypatch)
+    book = corpus / "letters" / "Mystery Book"
+    book.mkdir(parents=True)
+    (book / "mystery_book.md").write_text("Body.", encoding="utf-8")
+    (book / "reference.md").write_text("# Reference: Mystery Book\n", encoding="utf-8")
+
+    assert dg.run_catalog_sync(["letters"]) == 0
+
+
+def test_catalog_sync_title_matches_directory_so_audit_stays_clean(tmp_path, monkeypatch):
+    """The written title must be the directory name, since audit errors when a
+    catalog title differs from the directory it names."""
+    corpus, catalogs = _sync_corpus(tmp_path, monkeypatch)
+    _make_downloaded_book(corpus / "drama", "The sea-gull", 1754)
+
+    dg.run_catalog_sync(["drama"])
+    assert parse_catalog(str(catalogs / "drama.txt")) == [(1754, "The sea-gull")]
