@@ -1,3 +1,8 @@
 audels-electric-library-vol-1	Audels Electric Library Vol 1
 audels-electric-library-vol-2	Audels Electric Library Vol 2
-audelsnewelectri008004mbp	Audels New Electric Library Vol VIII For Engineers Electricians All Electrical Workers Mechanics And Students
+audels-electric-library-vol-3	Audels Electric Library Vol 3
+audels-electric-library-vol-4	Audels Electric Library Vol 4
+audels-electric-library-vol-7	Audels Electric Library Vol 7
+audels-electric-library-vol-9	Audels Electric Library Vol 9
+audels-electric-library-vol-10	Audels Electric Library Vol 10
+audels-electric-library-vol-8	Audels Electric Library Vol 8
