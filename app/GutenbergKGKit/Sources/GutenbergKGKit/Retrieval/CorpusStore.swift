@@ -113,10 +113,8 @@ public final class PassagePack: @unchecked Sendable {
     /// :param query: Raw query text.
     /// :returns: A quoted OR-expression, or "" when nothing is searchable.
     static func matchExpression(for query: String) -> String {
-        let terms = query
-            .map { $0.isLetter || $0.isNumber ? $0 : " " }
-            .split(separator: " ")
-            .map(String.init)
+        let cleaned = String(query.map { $0.isLetter || $0.isNumber ? $0 : " " })
+        let terms = cleaned.split(separator: " ").map(String.init)
         return terms.map { "\"\($0)\"" }.joined(separator: " OR ")
     }
 
