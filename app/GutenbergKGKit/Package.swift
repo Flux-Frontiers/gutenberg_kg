@@ -19,6 +19,11 @@ let package = Package(
         // iOS app target in app/ios — build their window from this.
         .target(name: "KnowledgePressUI", dependencies: ["GutenbergKGKit"]),
         .executableTarget(name: "KnowledgePress", dependencies: ["KnowledgePressUI"]),
-        .testTarget(name: "GutenbergKGKitTests", dependencies: ["GutenbergKGKit"]),
+        .testTarget(
+            name: "GutenbergKGKitTests",
+            dependencies: ["GutenbergKGKit"],
+            // The real bge-small vocabulary and the tokens Python's
+            // BertTokenizer produces from it — see TokenizerParityTests.
+            resources: [.copy("Fixtures")]),
     ]
 )

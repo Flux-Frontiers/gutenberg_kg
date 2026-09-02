@@ -146,16 +146,28 @@ public struct WordPieceTokenizer: Sendable {
 
     // MARK: - BasicTokenizer
 
-    /// Clean, lowercase, strip accents, and split on whitespace and punctuation.
+    /// Clean, space out CJK, lowercase, strip accents, and split on whitespace
+    /// and punctuation.
     ///
-    /// Mirrors `BasicTokenizer.tokenize`. CJK segmentation is deliberately not
-    /// implemented: the corpus is English public-domain text, so a CJK query
-    /// degrades to unknown tokens rather than being silently mis-segmented.
+    /// Mirrors `BasicTokenizer.tokenize`, in that order — the CJK pass has to
+    /// precede the whitespace split or its spaces do nothing.
     func basicTokenize(_ text: String) -> [String] {
         var cleaned = String.UnicodeScalarView()
         for scalar in text.unicodeScalars {
             if scalar.value == 0 || scalar.value == 0xFFFD || isControl(scalar) { continue }
-            cleaned.append(isWhitespace(scalar) ? " " : scalar)
+            if isWhitespace(scalar) {
+                cleaned.append(" ")
+            } else if isChineseCharacter(scalar) {
+                // `_tokenize_chinese_chars`: space out every CJK ideograph so
+                // each becomes its own word. Without this, a run of them is one
+                // "word" and WordPiece prefixes all but the first with `##` —
+                // a different, wrong tokenization rather than an obvious break.
+                cleaned.append(" ")
+                cleaned.append(scalar)
+                cleaned.append(" ")
+            } else {
+                cleaned.append(scalar)
+            }
         }
 
         var prepared = String(cleaned)
@@ -231,6 +243,27 @@ public struct WordPieceTokenizer: Sendable {
     }
 
     // MARK: - Character classes (tokenization_bert.py's _is_* helpers)
+
+    /// The ranges `_is_chinese_char` treats as CJK.
+    ///
+    /// Deliberately not all of "CJK" as Unicode blocks it: BERT excludes
+    /// Hiragana, Katakana and Hangul, which are written with spaces between
+    /// words and so tokenize correctly without help.
+    private func isChineseCharacter(_ scalar: Unicode.Scalar) -> Bool {
+        switch scalar.value {
+        case 0x4E00...0x9FFF,  // CJK Unified Ideographs
+            0x3400...0x4DBF,  // Extension A
+            0x20000...0x2A6DF,  // Extension B
+            0x2A700...0x2B73F,  // Extension C
+            0x2B740...0x2B81F,  // Extension D
+            0x2B820...0x2CEAF,  // Extension E
+            0xF900...0xFAFF,  // Compatibility Ideographs
+            0x2F800...0x2FA1F:  // Compatibility Supplement
+            return true
+        default:
+            return false
+        }
+    }
 
     private func isWhitespace(_ scalar: Unicode.Scalar) -> Bool {
         if scalar == " " || scalar == "\t" || scalar == "\n" || scalar == "\r" { return true }
