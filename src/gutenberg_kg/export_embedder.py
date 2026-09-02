@@ -44,6 +44,7 @@ from __future__ import annotations
 import json
 from dataclasses import dataclass
 from pathlib import Path
+from typing import Any
 
 __all__ = ["EmbedderExportError", "EmbedderReport", "export_embedder"]
 
@@ -106,7 +107,18 @@ def export_embedder(out: Path, *, compute_units: str = "ALL", progress=None) -> 
     out.mkdir(parents=True, exist_ok=True)
 
     say(f"loading {MODEL_ID}…")
-    tokenizer = AutoTokenizer.from_pretrained(MODEL_ID)
+    # `AutoTokenizer.from_pretrained` is a dynamic factory whose declared
+    # return type is a union of tokenizer backends and None, so a type checker
+    # cannot see the BertTokenizerFast that actually comes back — nor any of
+    # the special-token attributes read below. `Any` says that honestly; the
+    # guard turns the None arm into a message instead of an AttributeError
+    # eight lines later.
+    tokenizer: Any = AutoTokenizer.from_pretrained(MODEL_ID)
+    if tokenizer is None:
+        raise EmbedderExportError(
+            f"transformers returned no tokenizer for {MODEL_ID} — check the model id "
+            "and that the download completed."
+        )
     config = AutoConfig.from_pretrained(MODEL_ID)
     model = AutoModel.from_pretrained(MODEL_ID).eval()
 
@@ -229,7 +241,7 @@ def export_embedder(out: Path, *, compute_units: str = "ALL", progress=None) -> 
     )
 
 
-def _write_vocab(tokenizer, destination: Path) -> None:
+def _write_vocab(tokenizer: Any, destination: Path) -> None:
     """Write the WordPiece vocabulary, one token per line, id order.
 
     Taken from the loaded tokenizer rather than downloaded separately, so the
