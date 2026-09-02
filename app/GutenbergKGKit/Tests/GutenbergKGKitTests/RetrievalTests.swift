@@ -180,4 +180,13 @@ private func makeTokenizer() -> WordPieceTokenizer {
     @Test func purePunctuationYieldsNoExpression() {
         #expect(PassagePack.matchExpression(for: "!!! ???").isEmpty)
     }
+
+    @Test func phraseKeepsTheTermsAdjacent() {
+        // Mirrors export_swift.fts_phrase_expression. lexicalSearch runs this
+        // first and only falls back to the OR above when it finds nothing —
+        // the order GraphStore.search_lexical uses.
+        #expect(PassagePack.phraseExpression(for: "pillar of salt") == "\"pillar of salt\"")
+        #expect(PassagePack.phraseExpression(for: "Moses?") == "\"Moses\"")
+        #expect(PassagePack.phraseExpression(for: "!!! ???").isEmpty)
+    }
 }

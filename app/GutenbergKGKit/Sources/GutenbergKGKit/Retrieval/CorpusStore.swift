@@ -85,7 +85,22 @@ public final class PassagePack: @unchecked Sendable {
     /// :param genre: Genre slug, or nil.
     /// :returns: Passage ids, best-first by BM25.
     public func lexicalSearch(_ query: String, limit: Int, genre: String?) throws -> [String] {
-        let expression = Self.matchExpression(for: query)
+        // Phrase first, then any-term for recall. A rare phrase diluted in a
+        // long chunk is exactly what the dense channel buries, so a literal
+        // match deserves to seed the fusion; the OR form keeps a query with no
+        // adjacent match from returning nothing at all.
+        let phrase = try search(expression: Self.phraseExpression(for: query), limit: limit, genre: genre)
+        guard phrase.isEmpty else { return phrase }
+        return try search(expression: Self.matchExpression(for: query), limit: limit, genre: genre)
+    }
+
+    /// One BM25 pass for an already-built FTS5 expression.
+    ///
+    /// :param expression: An FTS5 MATCH expression; "" returns no rows.
+    /// :param limit: Maximum ids to return.
+    /// :param genre: Genre slug, or nil.
+    /// :returns: Passage ids, best-first by BM25.
+    private func search(expression: String, limit: Int, genre: String?) throws -> [String] {
         guard !expression.isEmpty else { return [] }
 
         var sql = """
@@ -108,16 +123,31 @@ public final class PassagePack: @unchecked Sendable {
         return ids
     }
 
-    /// FTS5 MATCH expression for natural-language text.
+    /// Bare alphanumeric terms, so no character of the query can become FTS5
+    /// syntax. `export_swift.fts_terms` does the same split.
+    ///
+    /// :param query: Raw query text.
+    /// :returns: The searchable terms, in order.
+    static func terms(in query: String) -> [String] {
+        let cleaned = String(query.map { $0.isLetter || $0.isNumber ? $0 : " " })
+        return cleaned.split(separator: " ").map(String.init)
+    }
+
+    /// FTS5 exact-phrase expression: every term, adjacent and in order.
+    ///
+    /// :param query: Raw query text.
+    /// :returns: A quoted phrase, or "" when nothing is searchable.
+    static func phraseExpression(for query: String) -> String {
+        let found = terms(in: query)
+        return found.isEmpty ? "" : "\"" + found.joined(separator: " ") + "\""
+    }
+
+    /// FTS5 any-term expression — the recall fallback behind the phrase.
     ///
     /// :param query: Raw query text.
     /// :returns: A quoted OR-expression, or "" when nothing is searchable.
     static func matchExpression(for query: String) -> String {
-        let terms = query
-            .map { $0.isLetter || $0.isNumber ? $0 : " " }
-            .split(separator: " ")
-            .map(String.init)
-        return terms.map { "\"\($0)\"" }.joined(separator: " OR ")
+        terms(in: query).map { "\"\($0)\"" }.joined(separator: " OR ")
     }
 
     /// Load full passages by id, keyed for the caller to order as it likes.

@@ -3,12 +3,17 @@
 A start-to-finish checklist for the on-device app: build the corpus, convert
 the embedder, compile the Swift, and get it answering with the network off.
 
-**Read this first.** The Python in this branch was written and run — 35 tests
-green. The Swift was written and reviewed but **never compiled**, because the
-environment it was written in has no Swift toolchain. Step 3 is where you find
-out what I got wrong, and [Troubleshooting](#7-troubleshooting) lists the
-failures I consider most likely, with fixes. Budget an hour for that step and
-it will probably take twenty minutes.
+**Read this first.** This has now been run end to end on a Mac (Xcode-beta,
+Swift 6.4, macOS 27), so the warning that used to stand here is retired: the
+Swift compiles and the golden gate passes. Step 3 needed exactly one fix, and
+it was not any of the six that [Troubleshooting](#7-troubleshooting) predicts
+-- those all compiled as written. Section 7 stays because a different
+toolchain may still hit them.
+
+Two things did go wrong, and both are written up where they bite: step 2 does
+not run in the project venv at all (see the note there), and the retrieval
+port had two divergences from the worker that the golden gate was too weak to
+catch. Both are fixed; the gate now checks rank order, not just membership.
 
 Do the steps in order. Steps 1–5 get the Mac app working, which is the fastest
 feedback loop; the iPhone (step 6) is the same code with a different shell.
@@ -104,10 +109,44 @@ The packs hold `bge-small-en-v1.5` vectors. A query embedded by any other model
 lands somewhere else in the space and returns fluent, ranked, **wrong**
 passages — so the app has to carry this exact model.
 
-```sh
-poetry run pip install torch transformers coremltools   # deliberately not project deps
-poetry run gutenkg export-embedder
+**This does not work in the project venv, and cannot.** transformers 5.x
+routes BERT through its unified `masking_utils`, which emits a non-scalar
+`aten::Int` that coremltools 9.0 cannot fold to a constant:
+
 ```
+TypeError: only 0-dimensional arrays can be converted to Python scalars
+```
+
+Downgrading is not an option either -- `doc-kg (>=0.22.0)` and `kg-rag 0.11.0`
+require `transformers>=5.5.0`, which `pyproject.toml` documents. It is not
+attention-dependent; `eager` and `sdpa` fail identically.
+
+Use a throwaway venv pinned to the stack coremltools is tested against, which
+is what "deliberately not project deps" was always pointing at:
+
+```sh
+python3.12 -m venv /tmp/mlenv
+/tmp/mlenv/bin/pip install torch==2.7.1 transformers==4.46.3 "numpy<2" coremltools
+```
+
+`export_embedder.py` imports torch, transformers and coremltools lazily inside
+the function and needs nothing else from the package, so drive it by loading
+the file directly rather than importing `gutenberg_kg` -- that keeps the
+transformers 5.x chain out of the process:
+
+```python
+import importlib.util, sys
+from pathlib import Path
+
+src = Path("src/gutenberg_kg/export_embedder.py")
+spec = importlib.util.spec_from_file_location("export_embedder", src)
+mod = importlib.util.module_from_spec(spec)
+sys.modules[spec.name] = mod        # @dataclass resolves through sys.modules
+spec.loader.exec_module(mod)
+mod.export_embedder(Path("bundles/gutenberg-all/swift"), progress=print)
+```
+
+Expect 66 MB at parity 0.9999.
 
 Writes into the same directory as step 1:
 
@@ -143,18 +182,21 @@ changing anything.** The likely failures are known and small.
 
 ### What is already verified, and what is not
 
-The Apple-free half of the package — `WordPieceTokenizer`, `ContextBudgeter`,
-`SynthesisPrompt`, `QueryOrchestrator`, `Models`, the protocols, and the
-non-FoundationModels path of `OnDeviceSynthesis` — **compiles clean under Swift
-6 strict concurrency and its 26 tests pass**, checked on a Linux toolchain.
+**All of it is verified now.** The whole package builds and 55 tests pass,
+the golden gate among them. That includes everything importing CoreML,
+Accelerate, SQLite3 or SwiftUI -- `BGEEmbedder`, `VectorIndex`, `CorpusStore`,
+`CatalogPack`, `CorpusPacks`, `LocalRetrieval` and the UI target -- which was
+the half this step existed to test.
+
+The one compile failure was `CorpusStore.matchExpression`: chaining
+`query.map` (a `[Character]`) into `split(separator: " ")` and then
+`map(String.init)` gives the type checker an overload set it will not finish,
+and it reports "failed to produce diagnostic for expression" rather than a
+real error. Making the intermediate an explicit `String` fixes it.
+
 `TokenizerParityTests` runs the shipped tokenizer over the real 30,522-token
 `bge-small` vocabulary and asserts it reproduces Python's `BertTokenizer`
 exactly on 36 inputs, the twelve golden queries among them.
-
-Untouched by that: everything importing CoreML, Accelerate, SQLite3 or SwiftUI
-— `BGEEmbedder`, `VectorIndex`, `CorpusStore`, `CatalogPack`, `CorpusPacks`,
-`LocalRetrieval`, and the whole UI target. Those are what step 3 is really
-testing.
 
 If you want the same Linux check yourself (useful in CI, no Mac needed), the
 subset builds with a stock `swift-6.0.3` toolchain against a `Package.swift`
@@ -366,6 +408,24 @@ Honest inventory, so nothing here surprises you:
 - **No image generation.** `🎨 Render response` from the Streamlit chat has no
   Swift equivalent yet; it is Phase 4.
 - **No SwiftData persistence.** Chat history is lost on relaunch.
-- **The golden gate has never run.** It is written and it is the right check;
-  step 5 is the first time it executes. The tokenizer half of what it would
-  catch is now covered separately by `TokenizerParityTests`, which has run.
+- **Diaries cannot be browsed, only searched.** Browse lists the four diaries
+  and then shows nothing under them. This is not new and not a packing fault:
+  the catalog carries no `file_path` for a diary, `diaries.pack` holds 27,462
+  chunks and zero `section` rows, and the worker cannot resolve one either
+  (`handler._resolve_book_file_path` looks for a `document` node in the DocKG
+  store, and diaries live in DiaryKG). Their text is fully readable through
+  search, which is where diary passages surface today.
+
+  Everything a fix needs is already in the pack, so it is Swift-only work with
+  no re-export: `title` matches the catalog's `book`, `kg_name` identifies the
+  diary, `timestamp` gives 874 / 1,426 / 88 / 2,754 dated entries, and
+  `char_start` is populated on every chunk. A diary browses by dated entry
+  rather than by chapter. Note that Pepys alone would render 2,754 entries, so
+  the list wants grouping by year rather than one flat scroll.
+The golden gate has now run, and it earned its keep: it was the thing that
+made the "pillar of salt" divergence measurable rather than a matter of
+opinion. Worth knowing what it did *not* catch on its own -- it compared the
+set of returned passages and their scores, so a result carrying the right
+passages in the wrong order passed, and it was doing so at exactly its 0.90
+tolerance floor. It now also bounds how far a shared hit may drift from the
+reference's fused position (`max_rank_drift`, default 2).
