@@ -3,6 +3,9 @@
 Swift workspace for the native app described in
 [analysis/APP_ARCHITECTURE.md](../analysis/APP_ARCHITECTURE.md).
 
+**Setting it up for the first time? Follow [RUNBOOK.md](RUNBOOK.md)** — build
+the packs, convert the embedder, compile, install, verify.
+
 ## Layout
 
 ```

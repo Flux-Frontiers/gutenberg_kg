@@ -1,5 +1,8 @@
 # The Knowledge Press — iPhone app
 
+**First time? Follow [../RUNBOOK.md](../RUNBOOK.md)** — this file is the
+target's reference, the runbook is the ordered checklist.
+
 The iOS shell. One file (`Sources/KnowledgePressApp.swift`); everything it
 draws comes from the `KnowledgePressUI` target in
 [`../GutenbergKGKit`](../GutenbergKGKit), shared with the Mac app.
