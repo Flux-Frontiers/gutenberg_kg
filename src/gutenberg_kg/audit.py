@@ -39,6 +39,7 @@ from pathlib import Path
 from gutenberg_kg.authors import parse_reference
 from gutenberg_kg.genres import ALL_GENRES, IA_GENRES
 from gutenberg_kg.gutenberg import parse_catalog
+from gutenberg_kg.ia import parse_catalog as parse_ia_catalog
 from gutenberg_kg.ingest import slugify
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
@@ -86,6 +87,7 @@ class BookAudit:
     book: str
     is_diary: bool
     ebook_id: int | None = None
+    ia_id: str | None = None  # Internet Archive identifier, for IA-genre books
     fmt: str | None = None  # diary parser format
     entries: int | None = None  # diary parsed-entry count
     built: bool = False
@@ -243,9 +245,12 @@ def _audit_book(
     else:
         meta = parse_reference(ref)
         res.ebook_id = meta.get("ebook_id")
+        res.ia_id = meta.get("ia_id")
         # Internet Archive books have an IA identifier, not a Gutenberg ID.
         if res.ebook_id is None and genre not in IA_GENRES:
             res.warnings.append("no Gutenberg ID in reference.md")
+        elif res.ia_id is None and genre in IA_GENRES:
+            res.warnings.append("no Internet Archive ID in reference.md")
 
         # Title <-> content check: a wrong Gutenberg ID silently mislabels a
         # whole book; the auto-summary's quoted title reveals the real text.
@@ -342,6 +347,20 @@ def audit_corpus(
             for b in group:
                 b.errors.append(f"duplicate Gutenberg ID {eid} (shared by: {others})")
 
+    # The same check for IA items. This had no coverage: the check above keys on
+    # ebook_id, which is None for every IA book, so two directories holding one
+    # IA item both audited clean. Path-keyed idempotence in ia.download_book
+    # made that reachable by simply passing a different --title.
+    by_ia_id: dict[str, list[BookAudit]] = {}
+    for b in report.books:
+        if b.ia_id is not None:
+            by_ia_id.setdefault(b.ia_id, []).append(b)
+    for ia_id, group in by_ia_id.items():
+        if len(group) > 1:
+            others = ", ".join(f"{g.genre}/{g.book}" for g in group)
+            for b in group:
+                b.errors.append(f"duplicate Internet Archive ID {ia_id} (shared by: {others})")
+
     # Corpus-wide: catalog title override ≠ downloaded directory name. The
     # download path is keyed on the Gutenberg ID, so drift can no longer
     # duplicate books — but the catalog is the source of truth, and an
@@ -377,16 +396,23 @@ def audit_corpus(
     # catalogs list, so the uncatalogued ones are silently absent. A warning,
     # not an error, for exactly that reason.
     #
-    # IA genres are skipped here as they are above: they have no catalog files
-    # at all, so every IA book would trip this. Whether they should have
-    # catalogs is a separate open question.
+    # IA genres are covered too, keyed on the Internet Archive identifier. A
+    # genre is either Gutenberg or IA and never both, so which parser reads its
+    # catalog is unambiguous.
     for genre in genres:
-        if genre in IA_GENRES:
-            continue
         catalog = CATALOG_ROOT / f"{genre}.txt"
-        catalogued = {eid for eid, _ in parse_catalog(str(catalog))} if catalog.exists() else set()
+        is_ia = genre in IA_GENRES
+        if not catalog.exists():
+            catalogued: set = set()
+        elif is_ia:
+            catalogued = {ident for ident, _ in parse_ia_catalog(catalog)}
+        else:
+            catalogued = {eid for eid, _ in parse_catalog(str(catalog))}
         for b in report.books:
-            if b.genre == genre and b.ebook_id is not None and b.ebook_id not in catalogued:
+            if b.genre != genre:
+                continue
+            key = b.ia_id if is_ia else b.ebook_id
+            if key is not None and key not in catalogued:
                 b.warnings.append(f"not recorded in scripts/catalogs/{genre}.txt")
 
     # Registered KGs (within the audited genres) whose index file is gone.

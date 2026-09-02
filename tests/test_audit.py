@@ -253,3 +253,57 @@ def test_ia_genre_books_are_exempt(corpus, tmp_path, monkeypatch):
     _make_book(corpus, "curiosities", "Miracle Mongers", ebook_id=None)
     report = au.audit_corpus(["curiosities"], registry=NO_REGISTRY)
     assert not any("not recorded in" in w for w in _warnings(report, "Miracle Mongers"))
+
+
+# ---------------------------------------------------------------------------
+# Internet Archive coverage — checks that previously exempted IA entirely
+# ---------------------------------------------------------------------------
+
+
+def _make_ia_book(corpus_root: Path, genre: str, name: str, identifier: str) -> Path:
+    book = corpus_root / genre / name
+    book.mkdir(parents=True)
+    (book / f"{name.lower().replace(' ', '_')}.md").write_text("Body text.", encoding="utf-8")
+    (book / "reference.md").write_text(
+        f"# Reference: {name}\n\n- **Internet Archive ID**: {identifier}\n", encoding="utf-8"
+    )
+    return book
+
+
+def test_duplicate_ia_identifier_is_error(corpus, monkeypatch):
+    """Two directories holding one IA item used to audit clean, because the
+    duplicate check keys on ebook_id and IA books have none."""
+    monkeypatch.setattr(au, "IA_GENRES", ["curiosities"])
+    _make_ia_book(corpus, "curiosities", "Miracle Mongers", "MiracleMongers")
+    _make_ia_book(corpus, "curiosities", "Miracle Mongers And Their Methods", "MiracleMongers")
+    report = au.audit_corpus(["curiosities"], registry=NO_REGISTRY)
+    assert any("duplicate Internet Archive ID" in e for e in _errors(report, "Miracle Mongers"))
+
+
+def test_ia_book_absent_from_catalog_warns(corpus, tmp_path, monkeypatch):
+    monkeypatch.setattr(au, "IA_GENRES", ["curiosities"])
+    _make_ia_book(corpus, "curiosities", "Miracle Mongers", "MiracleMongers")
+    report = au.audit_corpus(["curiosities"], registry=NO_REGISTRY)
+    assert any("not recorded in" in w for w in _warnings(report, "Miracle Mongers"))
+
+
+def test_ia_book_present_in_catalog_does_not_warn(corpus, tmp_path, monkeypatch):
+    """The IA catalog is read with the identifier parser, not the numeric one."""
+    monkeypatch.setattr(au, "IA_GENRES", ["curiosities"])
+    _make_ia_book(corpus, "curiosities", "Miracle Mongers", "MiracleMongers")
+    (tmp_path / "catalogs" / "curiosities.txt").write_text(
+        "MiracleMongers\tMiracle Mongers\n", encoding="utf-8"
+    )
+    report = au.audit_corpus(["curiosities"], registry=NO_REGISTRY)
+    assert not any("not recorded in" in w for w in _warnings(report, "Miracle Mongers"))
+    assert report.n_errors == 0
+
+
+def test_ia_book_without_identifier_warns(corpus, monkeypatch):
+    monkeypatch.setattr(au, "IA_GENRES", ["curiosities"])
+    book = corpus / "curiosities" / "Mystery Item"
+    book.mkdir(parents=True)
+    (book / "mystery_item.md").write_text("Body.", encoding="utf-8")
+    (book / "reference.md").write_text("# Reference: Mystery Item\n", encoding="utf-8")
+    report = au.audit_corpus(["curiosities"], registry=NO_REGISTRY)
+    assert any("no Internet Archive ID" in w for w in _warnings(report, "Mystery Item"))

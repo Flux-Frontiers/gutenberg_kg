@@ -487,3 +487,114 @@ def test_find_text_file_shortest_djvu_wins():
 def test_find_text_file_empty_files():
     result = find_text_file("book", [])
     assert result is None
+
+
+# ---------------------------------------------------------------------------
+# identifier-keyed idempotence and catalog write-back
+# ---------------------------------------------------------------------------
+
+from gutenberg_kg import ia as _ia  # noqa: E402
+from gutenberg_kg.authors import parse_reference as _parse_reference  # noqa: E402
+
+
+def _make_ia_book(root: Path, name: str, identifier: str) -> Path:
+    book = root / name
+    book.mkdir(parents=True)
+    md = book / f"{slugify(name)}.md"
+    md.write_text("Body text.", encoding="utf-8")
+    (book / "reference.md").write_text(
+        f"# Reference: {name}\n\n- **Internet Archive ID**: {identifier}\n",
+        encoding="utf-8",
+    )
+    return md
+
+
+def test_parse_reference_extracts_ia_id(tmp_path: Path):
+    """The identifier was always written; nothing read it until now."""
+    _make_ia_book(tmp_path, "Miracle Mongers", "MiracleMongersAndTheirMethods")
+    meta = _parse_reference(tmp_path / "Miracle Mongers" / "reference.md")
+    assert meta["ia_id"] == "MiracleMongersAndTheirMethods"
+    assert meta["ebook_id"] is None
+
+
+def test_find_item_by_id_matches_regardless_of_dir_name(tmp_path: Path):
+    md = _make_ia_book(tmp_path, "Miracle Mongers and Their Methods", "MiracleMongers")
+    assert _ia._find_item_by_id("MiracleMongers", tmp_path) == str(md)
+
+
+def test_find_item_by_id_returns_none_when_absent(tmp_path: Path):
+    _make_ia_book(tmp_path, "Miracle Mongers", "MiracleMongers")
+    assert _ia._find_item_by_id("SomethingElse", tmp_path) is None
+
+
+def test_ia_download_skips_by_identifier_despite_title_override(tmp_path, monkeypatch, capsys):
+    """The duplicate bug: a differing --title must not write a second copy.
+
+    The IA counterpart of the Gutenberg #2445 regression. IA titles are
+    uncurated, so an override is the normal case, which made this reachable in
+    ordinary use -- and audit could not see the result.
+    """
+    monkeypatch.setattr(_ia, "CORPUS_ROOT", tmp_path / "corpus")
+    monkeypatch.setattr(_ia, "CATALOG_ROOT", tmp_path / "catalogs")
+    _make_ia_book(tmp_path / "corpus" / "curiosities", "Miracle Mongers", "MiracleMongers")
+
+    def _no_network(*a, **kw):
+        raise AssertionError("network must not be hit when the identifier exists")
+
+    monkeypatch.setattr(_ia, "fetch_ia_metadata", _no_network)
+    result = _ia.download_book(
+        "MiracleMongers", title="A Totally Different Title", genre="curiosities"
+    )
+    assert result is not None
+    assert Path(result).parent.name == "Miracle Mongers"
+    assert "already downloaded (IA MiracleMongers)" in capsys.readouterr().out
+
+
+def test_ia_record_in_catalog_appends_and_is_idempotent(tmp_path: Path, monkeypatch):
+    monkeypatch.setattr(_ia, "CATALOG_ROOT", tmp_path)
+    assert _ia.record_in_catalog("curiosities", "MiracleMongers", "Miracle Mongers") is True
+    assert _ia.record_in_catalog("curiosities", "MiracleMongers", "Miracle Mongers") is False
+    assert (tmp_path / "curiosities.txt").read_text(
+        encoding="utf-8"
+    ) == "MiracleMongers\tMiracle Mongers\n"
+
+
+def test_ia_record_in_catalog_dry_run_writes_nothing(tmp_path: Path, monkeypatch):
+    monkeypatch.setattr(_ia, "CATALOG_ROOT", tmp_path / "catalogs")
+    assert _ia.record_in_catalog("curiosities", "X", "Some Item", dry_run=True) is True
+    assert not (tmp_path / "catalogs").exists()
+
+
+def test_ia_catalog_sync_records_and_preserves(tmp_path: Path, monkeypatch):
+    """Sync appends; a curated title override already present is left alone."""
+    monkeypatch.setattr(_ia, "CORPUS_ROOT", tmp_path / "corpus")
+    monkeypatch.setattr(_ia, "CATALOG_ROOT", tmp_path / "catalogs")
+    monkeypatch.setattr(_ia, "ALL_GENRES", ["audel-electric"])
+    (tmp_path / "catalogs").mkdir()
+    (tmp_path / "catalogs" / "audel-electric.txt").write_text(
+        "# curated\naudels-electric-library-vol-1\tAudels Electric Library Vol 1\n",
+        encoding="utf-8",
+    )
+    _make_ia_book(
+        tmp_path / "corpus" / "audel-electric",
+        "Audels Electric Library Vol 1",
+        "audels-electric-library-vol-1",
+    )
+    _make_ia_book(
+        tmp_path / "corpus" / "audel-electric", "Vol VIII Long Title", "audelsnewelectri008004mbp"
+    )
+
+    assert _ia.run_catalog_sync(["audel-electric"]) == 1  # vol 1 already there
+    text = (tmp_path / "catalogs" / "audel-electric.txt").read_text(encoding="utf-8")
+    assert text.startswith("# curated\n")
+    assert text.endswith("audelsnewelectri008004mbp\tVol VIII Long Title\n")
+    assert _ia.run_catalog_sync(["audel-electric"]) == 0  # idempotent
+
+
+def test_ia_parse_catalog_reads_identifier_and_title(tmp_path: Path):
+    cat = tmp_path / "curiosities.txt"
+    cat.write_text("# comment\n\nMiracleMongers\tMiracle Mongers\nBareIdentifier\n", "utf-8")
+    assert _ia.parse_catalog(cat) == [
+        ("MiracleMongers", "Miracle Mongers"),
+        ("BareIdentifier", None),
+    ]

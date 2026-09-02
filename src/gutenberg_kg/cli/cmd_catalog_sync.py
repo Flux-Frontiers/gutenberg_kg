@@ -3,6 +3,7 @@
 import click
 
 from gutenberg_kg import gutenberg as dg
+from gutenberg_kg import ia
 from gutenberg_kg.cli.main import cli
 from gutenberg_kg.cli.options import ALL_GENRES
 
@@ -34,14 +35,17 @@ def catalog_sync(genre, dry_run):
     entries from built indices the same way.
 
     Idempotent: books already catalogued are left alone, so it is safe to re-run
-    and safe to run on a fresh clone.  IA genres are skipped -- they have no
-    catalog files.  Run `gutenkg audit` afterwards to confirm the warnings clear.
+    and safe to run on a fresh clone.  Gutenberg genres are keyed on the
+    Gutenberg ID, IA genres on the Internet Archive identifier; both live in
+    each book's reference.md.  Run `gutenkg audit` afterwards to confirm the
+    warnings clear.
     """
     genres = list(genre) if genre else ALL_GENRES
     if dry_run:
         click.echo("[DRY RUN — no changes will be made]\n")
 
     added = dg.run_catalog_sync(genres, dry_run=dry_run)
+    added += ia.run_catalog_sync(genres, dry_run=dry_run)
 
     if not added:
         click.echo("Every downloaded book is already catalogued — nothing to do.")

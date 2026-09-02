@@ -26,6 +26,7 @@ import urllib.request
 from collections import Counter
 from pathlib import Path
 
+from gutenberg_kg.authors import parse_reference
 from gutenberg_kg.genres import IA_GENRES as ALL_GENRES
 
 # ---------------------------------------------------------------------------
@@ -39,6 +40,7 @@ IA_DETAILS_URL = "https://archive.org/details/{identifier}"
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 CORPUS_ROOT = REPO_ROOT / "corpus"
+CATALOG_ROOT = REPO_ROOT / "scripts" / "catalogs"
 
 
 # Unicode ligature normalization: OCR commonly mis-encodes these
@@ -584,6 +586,39 @@ def write_reference(book_dir: Path, meta: dict) -> Path:
 # ---------------------------------------------------------------------------
 
 
+def _find_item_by_id(identifier: str, search_root: Path) -> str | None:
+    """Return the primary ``.md`` path of an existing item with this IA identifier.
+
+    The IA counterpart of :func:`gutenberg_kg.gutenberg._find_book_by_id`, and
+    it exists for the same reason. Keying idempotence on the output *path* means
+    a differing ``--title`` writes a second directory holding the same item --
+    the regression that duplicated Gutenberg #2445 before that path moved to an
+    ID check. IA titles make it likelier, not less: they are uncurated, often
+    unwieldy (one Audel volume's is over 100 characters), so an override is the
+    normal case rather than the exception.
+
+    Nothing catches the duplicate afterwards either: ``audit``'s duplicate check
+    keys on ``ebook_id``, which is ``None`` for every IA book, so both copies
+    audit clean.
+
+    :param identifier: Internet Archive item identifier.
+    :param search_root: Directory whose immediate children are book dirs.
+    :returns: Path to the item's full-text ``.md``, or ``None`` if not found.
+    """
+    if not search_root.is_dir():
+        return None
+    for ref in sorted(search_root.glob("*/reference.md")):
+        try:
+            if parse_reference(ref).get("ia_id") != identifier:
+                continue
+        except OSError:
+            continue
+        cands = [p for p in ref.parent.glob("*.md") if p.name != "reference.md"]
+        if cands:
+            return str(cands[0])
+    return None
+
+
 def download_book(
     identifier: str,
     title: str | None = None,
@@ -595,6 +630,20 @@ def download_book(
 
     Returns path to the .md file on success, None on failure.
     """
+    # Identifier-based idempotence, ahead of the metadata fetch so a skip costs
+    # no network round-trip. See _find_item_by_id for why the path check below
+    # is not sufficient on its own.
+    if not force:
+        search_root = CORPUS_ROOT / genre if genre else CORPUS_ROOT
+        existing = _find_item_by_id(identifier, search_root)
+        if existing:
+            existing_dir = Path(existing).parent.name
+            print(f"  [=] already downloaded (IA {identifier}): {existing_dir} — skipping")
+            # Catalogue on the skip path too: an item on disk but uncatalogued
+            # is exactly the pre-existing drift, and re-running is the repair.
+            record_in_catalog(genre, identifier, existing_dir, dry_run=dry_run)
+            return existing
+
     print(f"  Fetching metadata for {identifier!r}...")
     try:
         meta = fetch_ia_metadata(identifier)
@@ -615,6 +664,7 @@ def download_book(
 
     if md_path.exists() and not force:
         print(f"  [=] Already exists: {md_path} (use --force to re-download)")
+        record_in_catalog(genre, identifier, item_title, dry_run=dry_run)
         return str(md_path)
 
     if dry_run:
@@ -637,6 +687,8 @@ def download_book(
 
     write_reference(book_dir, meta)
     print(f"  [✓] Reference: {book_dir / 'reference.md'}")
+
+    record_in_catalog(genre, identifier, item_title, dry_run=dry_run)
 
     return str(md_path)
 
@@ -699,6 +751,101 @@ def format_search_results(results: list[dict]) -> None:
     print(f"\n{len(results)} result(s).")
 
 
+def parse_catalog(catalog_path: str | Path) -> list[tuple[str, str | None]]:
+    """Parse an IA catalog file. Each line: ``<identifier>[\\t<title>]``.
+
+    The same shape as a Gutenberg catalog, with a string identifier where that
+    one has a numeric ID. Genres are either Gutenberg or IA and never both, so
+    which parser reads a given ``scripts/catalogs/<genre>.txt`` is unambiguous.
+
+    :param catalog_path: Path to the catalog file.
+    :returns: ``(identifier, title_override_or_None)`` per entry.
+    """
+    entries: list[tuple[str, str | None]] = []
+    for line in Path(catalog_path).read_text(encoding="utf-8").splitlines():
+        line = line.strip()
+        if not line or line.startswith("#"):
+            continue
+        parts = line.split("\t", 1)
+        identifier = parts[0].strip()
+        title = parts[1].strip() if len(parts) > 1 else None
+        if identifier:
+            entries.append((identifier, title))
+    return entries
+
+
+def record_in_catalog(
+    genre: str | None,
+    identifier: str,
+    title: str,
+    dry_run: bool = False,
+) -> bool:
+    """Record a downloaded IA item in its genre catalog, if not already there.
+
+    The IA counterpart of :func:`gutenberg_kg.gutenberg.record_in_catalog`. IA
+    genres had no catalogs at all, so ``ia download`` recorded nothing anywhere
+    and every catalog-facing check had to exempt them.
+
+    The title override matters more here than on the Gutenberg side: IA titles
+    are uncurated and often unusable as directory names, so the override column
+    is where the curation lives.
+
+    :param genre: Genre whose catalog to write; ``None`` writes nothing.
+    :param identifier: Internet Archive item identifier.
+    :param title: The item's directory name, written as the title override.
+    :param dry_run: Report what would be written but write nothing.
+    :returns: True when a line was appended, or would have been under ``dry_run``.
+    """
+    if genre is None:
+        return False
+
+    catalog_path = CATALOG_ROOT / f"{genre}.txt"
+    needs_newline = False
+    if catalog_path.exists():
+        if any(ident == identifier for ident, _ in parse_catalog(catalog_path)):
+            return False
+        needs_newline = not catalog_path.read_text(encoding="utf-8").endswith("\n")
+
+    if dry_run:
+        print(f"  [dry] would catalogue: scripts/catalogs/{genre}.txt <- {identifier}\t{title}")
+        return True
+
+    CATALOG_ROOT.mkdir(parents=True, exist_ok=True)
+    with open(catalog_path, "a", encoding="utf-8") as f:
+        if needs_newline:
+            f.write("\n")
+        f.write(f"{identifier}\t{title}\n")
+    print(f"  Catalogued: scripts/catalogs/{genre}.txt <- {identifier}\t{title}")
+    return True
+
+
+def run_catalog_sync(genres: list[str], dry_run: bool = False) -> int:
+    """Record every downloaded IA item in its genre catalog.
+
+    The IA half of ``gutenkg catalog-sync``; see
+    :func:`gutenberg_kg.gutenberg.run_catalog_sync`. Keyed on the identifier in
+    each ``reference.md``, so nothing is downloaded.
+
+    :param genres: Genres to process; non-IA genres are ignored.
+    :param dry_run: Report what would be written without writing.
+    :returns: Number of catalog entries added (or that would be added).
+    """
+    added = 0
+    for genre in genres:
+        if genre not in ALL_GENRES:  # ALL_GENRES is IA_GENRES in this module
+            continue
+        genre_dir = CORPUS_ROOT / genre
+        if not genre_dir.is_dir():
+            continue
+        for ref in sorted(genre_dir.glob("*/reference.md")):
+            ia_id = parse_reference(ref).get("ia_id")
+            if not ia_id:
+                continue
+            if record_in_catalog(genre, ia_id, ref.parent.name, dry_run=dry_run):
+                added += 1
+    return added
+
+
 def run_catalog(
     catalog_file: str,
     genre: str | None = None,
@@ -718,16 +865,7 @@ def run_catalog(
         print(f"ERROR: catalog not found: {catalog_path}", file=sys.stderr)
         return 1
 
-    entries: list[tuple[str, str | None]] = []
-    for line in catalog_path.read_text(encoding="utf-8").splitlines():
-        line = line.strip()
-        if not line or line.startswith("#"):
-            continue
-        parts = line.split("\t", 1)
-        identifier = parts[0].strip()
-        title = parts[1].strip() if len(parts) > 1 else None
-        if identifier:
-            entries.append((identifier, title))
+    entries = parse_catalog(catalog_path)
 
     if not entries:
         print("No entries in catalog.")
