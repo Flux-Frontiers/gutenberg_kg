@@ -164,6 +164,30 @@ Format: `- [ ] Title — Author (Gutenberg ID #NNNNN | IA)` — check the box wh
 
 ---
 
+## Fun & Curiosities *(Internet Archive — new genre, e.g. `curiosities`)*
+
+Surfaced by an `gutenkg ia search` survey (2026-09-01). Genuine period pieces,
+not modern reprints, unless flagged. Not yet downloaded — parking here for
+later triage.
+
+- [ ] Xiccarph — Clark Ashton Smith, Ballantine Adult Fantasy ed. (IA: `XiccarphClarkAshtonSmithLennySAMouse`)
+- [ ] Hollow Earth Tales (IA: `hollow-earth-tales-free-e-book`) *(2020 upload — verify it's a clean PD compilation, not new editorial matter)*
+- [ ] Miracle Mongers and Their Methods — Harry Houdini, 1920 (IA: `MiracleMongersAndTheirMethodsByHarryHoudini`)
+- [ ] The Secrets of Stage Conjuring — Robert-Houdin, tr. Hoffmann, 1881 (IA: `TheSecretsOfStageConjuring`)
+- [ ] Struggles and Triumphs — P.T. Barnum, 1883 ed. (IA: `strugglesandtri04barngoog`)
+- [ ] A General History of the Pyrates — Capt. Charles Johnson, 1725 ed. (IA: `bim_eighteenth-century_a-general-history-of-the_johnson-charles_1725`)
+- [ ] A General History of the Pyrates — Capt. Charles Johnson, 1734 ed. (IA: `bim_eighteenth-century_a-general-history-of-the_johnson-charles_1734`)
+- [ ] The Chronicles of Crime, or the New Newgate Calendar, 1841 ed. (IA: `chroniclescrime00pelhgoog`)
+- [ ] The Chronicles of Crime, or the New Newgate Calendar, 1887 ed., vols. 1-2 (IA: `chroniclesofcri01pelh`, `chroniclesofcri02pelh`)
+- [ ] Memoirs of Vidocq, Principal Agent of the French Police, 1847 ed. (IA: `memoirsofvidocqp02vidouoft`)
+- [ ] The Book of Were-Wolves — Sabine Baring-Gould, 1865 (IA: `bookofwerewolves0000sabi_u7b2`)
+- [ ] Chambers' Book of Days — a day-by-day miscellany of antiquities & oddities, 1863-64 (IA: `bookdaysamiscel00chamgoog`) *(verify a scan of the original text, not a padded reprint)*
+- [ ] Spiritism and Common Sense, 1922 (IA: `SpiritismAndCommonSense`)
+- [ ] Nick Carter Strikes Oil — dime-novel detective pulp, 1912 (IA: `nick-carter-strikes-oil-gunston-classics`)
+- [ ] Nick Carter the Girl Kidnapper — dime-novel detective pulp, 1915 (IA: `nick-carter-the-girl-kidnapper-by-nicholas-carter-gunston-classics`)
+
+---
+
 ## Letters & Correspondence *(new genre — `gutenkg genres add letters`)*
 
 Epistolary works as a distinct genre from diaries; letter collections reveal
