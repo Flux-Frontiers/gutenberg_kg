@@ -26,3 +26,7 @@
 140	The Jungle (Sinclair)
 242	My Antonia (Cather)
 24	O Pioneers! (Cather)
+
+# --- Clark Ashton Smith (pre-1931 verse; his only public-domain work) ---
+53333	Ebony and Crystal: Poems in Verse and Prose
+38410	The Star-Treader, and other poems

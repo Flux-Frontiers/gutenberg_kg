@@ -21,3 +21,8 @@
 # --- Edgar Rice Burroughs ---
 123	At the Earth's Core
 64	The Gods of Mars
+
+# --- Hollow-earth classics ---
+54485	Symzonia: Voyage of Discovery
+37775	Etidorhpa; or, The End of Earth.
+1951	The Coming Race
