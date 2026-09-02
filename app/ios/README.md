@@ -12,10 +12,13 @@ draws comes from the `KnowledgePressUI` target in
 | Passages | the GutenbergKG worker | **yes, today** |
 | Browse | the worker's `list_*` / `get_chapter` ops | yes |
 
-On-device *inference* is done (Phase 3). On-device *retrieval* is Phase 2 — it
-needs the corpus pack that `gutenkg export-swift` will build. Until then the
-phone asks the Mac for passages and writes the answer itself. `AppModel
-.retrievalEngine` is the single line that changes when the pack lands.
+On-device *inference* is done (Phase 3). On-device *retrieval* is Phase 2, and
+half of it is done: `gutenkg export-swift` builds the corpus packs the phone
+would search (`core.pack`, `gutenberg.pack`, `diaries.pack` — about 1.3 GB, see
+[docs/ON_DEVICE.md](../../docs/ON_DEVICE.md)). What is missing is the Swift
+side: a Core ML `bge-small` query embedder and a `CorpusStore` that reads the
+packs. Until that exists the phone asks the Mac for passages and writes the
+answer itself. `AppModel.retrievalEngine` is the single line that changes.
 
 ## Requirements
 

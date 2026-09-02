@@ -31,9 +31,10 @@ app/
 | Passages | the GutenbergKG worker | no — Phase 2 |
 
 On-device inference is in (Phase 3 of the architecture doc). On-device
-retrieval is not: it needs the corpus pack from `gutenkg export-swift`, which
-is not written yet. `AppModel.retrievalEngine` is the one line that changes
-when it is.
+retrieval is close: `gutenkg export-swift` now builds the corpus packs
+([docs/ON_DEVICE.md](../docs/ON_DEVICE.md)), and what is left is Swift-side —
+a Core ML `bge-small` query embedder and a `CorpusStore` that reads the packs.
+`AppModel.retrievalEngine` is the one line that changes when it lands.
 
 The on-device engine needs macOS 26 / iOS 26 on Apple Intelligence hardware.
 Everywhere else the app still runs — the provider picker says why the engine

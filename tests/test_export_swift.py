@@ -1,0 +1,549 @@
+"""Unit tests for gutenberg_kg.export_swift — the on-device corpus packs.
+
+Deliberately free of any ``kg_rag``/``numpy``/``sqlite-vec`` dependency for the
+schema half, so the shape of the pack is guarded in CI even where the ML stack
+is absent; the vector half skips when sqlite-vec is not importable.
+
+The regressions these guard for are all silent ones — a pack that builds
+cleanly and is quietly missing something the app needs: a book's ``reference.md``
+boilerplate ranked as prose, a chapter list emptied because section markers
+carry no text, or a section's chapter name overwritten by its book's title.
+"""
+
+from __future__ import annotations
+
+import json
+import sqlite3
+from importlib.util import find_spec
+
+import pytest
+
+from gutenberg_kg.export_swift import (
+    ExportError,
+    ExportOptions,
+    _truncate,
+    export_swift,
+    fts_match_expression,
+    locate_bundle,
+    rrf_fuse,
+    split_source_path,
+)
+
+BOOK_COLUMNS = (
+    "id TEXT PRIMARY KEY",
+    "kind TEXT",
+    "name TEXT",
+    "title TEXT",
+    "file_path TEXT",
+    "text TEXT",
+    "char_start INTEGER",
+    "chapter INTEGER",
+)
+DIARY_COLUMNS = (
+    "id TEXT PRIMARY KEY",
+    "kind TEXT",
+    "name TEXT",
+    "text TEXT",
+    "timestamp TEXT",
+)
+
+DOC = "philosophy/Leviathan/leviathan.md"
+BIBLE = "sacred-texts/The Bible (King James Version)/the_bible.md"
+BOOK_ROWS = [
+    ("doc:1", "document", "leviathan.md", "Leviathan", DOC, "", 0, None),
+    ("doc:ref", "document", "reference.md", None, "philosophy/Leviathan/reference.md", "", 0, None),
+    ("sec:1", "section", "Of Man", "Of Man", DOC, "", 0, None),
+    (
+        "c:1",
+        "chunk",
+        "chunk 1",
+        None,
+        DOC,
+        "  The life of man, nasty, brutish, and short.  ",
+        10,
+        1,
+    ),
+    ("c:2", "chunk", "chunk 2", None, DOC, "Covenants, without the Sword, are but Words.", 120, 1),
+    # A book's metadata sheet: never prose, never a search hit.
+    (
+        "c:ref",
+        "chunk",
+        "ref",
+        None,
+        "philosophy/Leviathan/reference.md",
+        "Gutenberg ID 3207",
+        0,
+        None,
+    ),
+    ("c:blank", "chunk", "blank", None, DOC, "   ", 300, 1),
+    # Not a searched kind — 324K of these stay out of the pack.
+    ("t:1", "topic", "sovereignty", None, DOC, "sovereignty", 0, None),
+    # A second genre: without one, neither the genre filter nor the fused
+    # ranking below is being tested against anything.
+    ("doc:2", "document", "the_bible.md", "Genesis", BIBLE, "", 0, None),
+    (
+        "s:1",
+        "chunk",
+        "Genesis 19",
+        None,
+        BIBLE,
+        "But his wife looked back from behind him, and she became a pillar of salt.",
+        0,
+        19,
+    ),
+]
+DIARY_ROWS = [
+    (
+        "p:1",
+        "chunk",
+        "September 2nd 1666",
+        "The poor pigeons were loth to leave.",
+        "1666-09-02T00:00:00",
+    ),
+    (
+        "p:2",
+        "chunk",
+        "September 3rd 1666",
+        "The fire continuing, I took coach.",
+        "1666-09-03T00:00:00",
+    ),
+]
+
+
+def _graph(path, columns, rows, *, edges=True):
+    path.parent.mkdir(parents=True, exist_ok=True)
+    con = sqlite3.connect(str(path))
+    con.execute(f"CREATE TABLE nodes ({', '.join(columns)})")
+    if edges:
+        con.execute("CREATE TABLE edges (src TEXT, rel TEXT, dst TEXT)")
+        con.execute("INSERT INTO edges VALUES ('doc:1','CONTAINS','c:1')")
+    con.executemany(f"INSERT INTO nodes VALUES ({', '.join('?' * len(columns))})", rows)
+    con.commit()
+    con.close()
+
+
+@pytest.fixture
+def bundle(tmp_path):
+    """A miniature bundle in the real layout: one book, one diary."""
+    root = tmp_path / "bundle"
+    _graph(root / ".dockg" / "graph.sqlite", BOOK_COLUMNS, BOOK_ROWS)
+    (root / ".dockg" / "catalog.json").write_text(
+        json.dumps(
+            {
+                "philosophy/Leviathan": {
+                    "genre": "philosophy",
+                    "book": "Leviathan",
+                    "title": "Leviathan",
+                    "author": "Thomas Hobbes",
+                    "ebook_id": 3207,
+                },
+                "sacred-texts/The Bible (King James Version)": {
+                    "genre": "sacred-texts",
+                    "book": "The Bible (King James Version)",
+                    "title": "The Bible (King James Version)",
+                    "author": None,
+                    "ebook_id": 10,
+                },
+            }
+        ),
+        encoding="utf-8",
+    )
+    # No file_path column at all — a DiaryKG's schema differs from DocKG's, and
+    # the exporter reads whatever columns each store actually has.
+    _graph(
+        root / "diaries" / "The Diary of Samuel Pepys — Complete" / ".diarykg" / "graph.sqlite",
+        DIARY_COLUMNS,
+        DIARY_ROWS,
+        edges=False,
+    )
+    return root
+
+
+@pytest.fixture
+def packs(bundle, tmp_path):
+    """A built export, without the vector or golden stages."""
+    out = tmp_path / "swift"
+    report = export_swift(
+        ExportOptions(bundle=bundle, out=out, with_vectors=False, golden=False, force=True)
+    )
+    return report, out
+
+
+def _rows(pack, sql, params=()):
+    con = sqlite3.connect(str(pack))
+    con.row_factory = sqlite3.Row
+    try:
+        return [dict(row) for row in con.execute(sql, params)]
+    finally:
+        con.close()
+
+
+class TestLocateBundle:
+    def test_finds_stores_and_diaries(self, bundle):
+        found = locate_bundle(bundle)
+        assert found.catalog is not None
+        assert [d.slug for d in found.diaries] == ["pepys-complete"]
+
+    def test_missing_bundle_names_the_fix(self, tmp_path):
+        with pytest.raises(ExportError, match="make build-corpus"):
+            locate_bundle(tmp_path / "nope")
+
+    def test_directory_without_a_graph_is_rejected(self, tmp_path):
+        (tmp_path / "empty").mkdir()
+        with pytest.raises(ExportError, match="no consolidated DocKG"):
+            locate_bundle(tmp_path / "empty")
+
+
+class TestPassageSelection:
+    def test_carries_only_searchable_nodes(self, packs):
+        _, out = packs
+        ids = {r["id"] for r in _rows(out / "gutenberg.pack", "SELECT id FROM passages")}
+        assert ids == {"c:1", "c:2", "sec:1", "s:1"}
+
+    def test_reference_sheets_never_become_passages(self, packs):
+        _, out = packs
+        ids = {r["id"] for r in _rows(out / "gutenberg.pack", "SELECT id FROM passages")}
+        assert "c:ref" not in ids
+
+    def test_empty_sections_survive_because_browse_needs_them(self, packs):
+        """A section marker carries no prose but is still a chapter."""
+        _, out = packs
+        rows = _rows(out / "gutenberg.pack", "SELECT id FROM passages WHERE kind='section'")
+        assert [r["id"] for r in rows] == ["sec:1"]
+
+    def test_content_is_stripped(self, packs):
+        _, out = packs
+        (row,) = _rows(out / "gutenberg.pack", "SELECT content FROM passages WHERE id='c:1'")
+        assert row["content"].startswith("The life")
+        assert row["content"].endswith("short.")
+
+
+class TestCatalogJoin:
+    def test_hits_carry_the_works_title_and_author(self, packs):
+        _, out = packs
+        (row,) = _rows(
+            out / "gutenberg.pack",
+            "SELECT title, author, genre, book FROM passages WHERE id='c:1'",
+        )
+        assert row == {
+            "title": "Leviathan",
+            "author": "Thomas Hobbes",
+            "genre": "philosophy",
+            "book": "Leviathan",
+        }
+
+    def test_section_keeps_its_own_chapter_name(self, packs):
+        """`title` is the work; `node_title` is the chapter. Browse needs both."""
+        _, out = packs
+        (row,) = _rows(
+            out / "gutenberg.pack",
+            "SELECT title, node_title FROM passages WHERE id='sec:1'",
+        )
+        assert row == {"title": "Leviathan", "node_title": "Of Man"}
+
+
+class TestDiaries:
+    def test_timestamps_and_static_metadata_survive(self, packs):
+        _, out = packs
+        rows = _rows(
+            out / "diaries.pack",
+            "SELECT id, kg_name, kg_kind, author, timestamp FROM passages ORDER BY id",
+        )
+        assert rows[0]["kg_name"] == "pepys-complete"
+        assert rows[0]["kg_kind"] == "KGKind.DIARY"
+        assert rows[0]["author"] == "Samuel Pepys"
+        assert rows[0]["timestamp"] == "1666-09-02T00:00:00"
+
+    def test_excluded_on_request(self, bundle, tmp_path):
+        out = tmp_path / "books-only"
+        export_swift(
+            ExportOptions(
+                bundle=bundle,
+                out=out,
+                with_vectors=False,
+                golden=False,
+                include_diaries=False,
+                force=True,
+            )
+        )
+        assert not (out / "diaries.pack").exists()
+
+
+class TestFullTextIndex:
+    def test_matches_passage_prose(self, packs):
+        _, out = packs
+        rows = _rows(
+            out / "gutenberg.pack",
+            "SELECT p.id FROM passages_fts f JOIN passages p ON p.rowid = f.rowid "
+            "WHERE passages_fts MATCH ?",
+            ('"brutish"',),
+        )
+        assert [r["id"] for r in rows] == ["c:1"]
+
+    def test_stems_so_a_singular_query_finds_a_plural(self, packs):
+        _, out = packs
+        rows = _rows(
+            out / "gutenberg.pack",
+            "SELECT p.id FROM passages_fts f JOIN passages p ON p.rowid = f.rowid "
+            "WHERE passages_fts MATCH ?",
+            ('"covenant"',),
+        )
+        assert [r["id"] for r in rows] == ["c:2"]
+
+
+class TestCorePack:
+    def test_books_genres_and_stats(self, packs):
+        _, out = packs
+        books = {b["key"]: b for b in _rows(out / "core.pack", "SELECT * FROM books")}
+        assert books["philosophy/Leviathan"]["ebook_id"] == 3207
+        # reference.md is never a book's entry point.
+        assert books["philosophy/Leviathan"]["file_path"] == DOC
+
+        genres = _rows(out / "core.pack", "SELECT * FROM genres ORDER BY genre")
+        assert genres == [
+            {"genre": "philosophy", "book_count": 1},
+            {"genre": "sacred-texts", "book_count": 1},
+        ]
+
+        (stats,) = _rows(out / "core.pack", "SELECT * FROM corpus_stats")
+        assert (stats["books"], stats["genres"], stats["diaries"]) == (2, 2, 1)
+
+    def test_chapter_list_is_servable_from_the_packs(self, packs):
+        """The Browse drill, entirely offline: book → its chapters."""
+        _, out = packs
+        (book,) = _rows(
+            out / "core.pack", "SELECT file_path FROM books WHERE key='philosophy/Leviathan'"
+        )
+        chapters = _rows(
+            out / "gutenberg.pack",
+            "SELECT id, COALESCE(node_title, name) AS title FROM passages "
+            "WHERE kind='section' AND file_path=? ORDER BY char_start",
+            (book["file_path"],),
+        )
+        assert chapters == [{"id": "sec:1", "title": "Of Man"}]
+
+
+class TestManifest:
+    def test_names_the_embedder_the_packs_require(self, packs):
+        report, out = packs
+        manifest = json.loads((out / "manifest.json").read_text())
+        assert manifest["embedder"]["model"] == "BAAI/bge-small-en-v1.5"
+        assert manifest["embedder"]["dim"] == 384
+        assert manifest["rrf_k"] == 60
+        assert {p["name"] for p in manifest["packs"]} == {
+            "core.pack",
+            "gutenberg.pack",
+            "diaries.pack",
+        }
+        assert manifest["total_bytes"] == report.total_bytes
+
+    def test_every_pack_is_checksummed(self, packs):
+        _, out = packs
+        manifest = json.loads((out / "manifest.json").read_text())
+        for pack in manifest["packs"]:
+            assert len(pack["sha256"]) == 64
+
+
+class TestGuards:
+    def test_refuses_to_clobber_without_force(self, bundle, tmp_path):
+        out = tmp_path / "swift"
+        options = ExportOptions(bundle=bundle, out=out, with_vectors=False, golden=False)
+        export_swift(options)
+        with pytest.raises(ExportError, match="--force"):
+            export_swift(options)
+
+    def test_rejects_an_unknown_dtype(self, bundle, tmp_path):
+        with pytest.raises(ExportError, match="int8"):
+            export_swift(
+                ExportOptions(bundle=bundle, out=tmp_path / "x", dtype="fp16", golden=False)
+            )
+
+
+class TestHelpers:
+    def test_rrf_matches_the_handlers_arithmetic(self):
+        # A hit both channels rank wins over one only the dense channel found.
+        assert rrf_fuse(["a", "b", "c"], ["c", "d"], 3) == ["c", "a", "b"]
+
+    def test_fts_expression_survives_punctuation(self):
+        assert fts_match_expression("What does the Quran say about Moses?").endswith('"Moses"')
+        assert "?" not in fts_match_expression("Moses?")
+
+    def test_fts_expression_of_pure_punctuation_is_empty(self):
+        assert fts_match_expression("!!! ???") == ""
+
+    def test_truncate_cuts_at_a_word_boundary(self):
+        assert _truncate("the quick brown fox", 12) == "the quick…"
+        assert _truncate("short", 100) == "short"
+
+    def test_split_source_path(self):
+        assert split_source_path("philosophy/Leviathan/leviathan.md") == (
+            "philosophy",
+            "Leviathan",
+        )
+        assert split_source_path(None) == (None, None)
+        assert split_source_path("bare.md") == (None, None)
+
+
+@pytest.mark.skipif(
+    find_spec("sqlite_vec") is None or find_spec("numpy") is None,
+    reason="vector packs need sqlite-vec and numpy",
+)
+class TestVectors:
+    def test_vectors_align_with_passage_rowids(self, bundle, tmp_path):
+        """The pack's one structural invariant: passages.rowid == vec_nodes.rowid."""
+        import numpy as np
+
+        from gutenberg_kg.export_swift import EMBED_DIM, _connect_with_vec
+
+        # Give the source store vectors for two of the three passages.
+        store = bundle / ".dockg" / "vectors.sqlite"
+        con = _connect_with_vec(store)
+        con.execute("CREATE TABLE vec_meta(id TEXT PRIMARY KEY, kind TEXT)")
+        con.execute(
+            f"CREATE VIRTUAL TABLE vec_nodes USING vec0(embedding float[{EMBED_DIM}] "
+            "distance_metric=cosine)"
+        )
+        for rowid, node_id in enumerate(["c:1", "c:2"], start=1):
+            vector = np.full(EMBED_DIM, 1.0 / EMBED_DIM**0.5, dtype=np.float32)
+            con.execute(
+                "INSERT INTO vec_meta(rowid, id, kind) VALUES (?, ?, 'chunk')", (rowid, node_id)
+            )
+            con.execute(
+                "INSERT INTO vec_nodes(rowid, embedding) VALUES (?, ?)", (rowid, vector.tobytes())
+            )
+        con.commit()
+        con.close()
+
+        out = tmp_path / "swift"
+        export_swift(ExportOptions(bundle=bundle, out=out, golden=False, force=True))
+
+        pack = _connect_with_vec(out / "gutenberg.pack", read_only=True)
+        try:
+            aligned = pack.execute(
+                "SELECT p.id FROM vec_nodes v JOIN passages p ON p.rowid = v.rowid ORDER BY p.id"
+            ).fetchall()
+        finally:
+            pack.close()
+        assert [row[0] for row in aligned] == ["c:1", "c:2"]
+
+    def test_missing_vectors_are_counted_not_hidden(self, bundle, tmp_path):
+        out = tmp_path / "swift2"
+        report = export_swift(ExportOptions(bundle=bundle, out=out, golden=False, force=True))
+        gutenberg = next(p for p in report.packs if p.name == "gutenberg.pack")
+        # sec:1 has no vector in the source store; it must still be reported.
+        assert gutenberg.missing_vectors == gutenberg.passages - gutenberg.vectors
+
+
+@pytest.mark.skipif(
+    find_spec("sqlite_vec") is None or find_spec("numpy") is None,
+    reason="the reference search needs sqlite-vec and numpy",
+)
+class TestSearchPack:
+    """The reference query path — the specification Swift's engine must match.
+
+    Vectors here are one-hot unit vectors, so the cosine ranking is exactly
+    known and every assertion is about the retrieval logic rather than about an
+    embedder's opinion.
+    """
+
+    @staticmethod
+    def _basis(axis):
+        import numpy as np
+
+        from gutenberg_kg.export_swift import EMBED_DIM
+
+        vector = np.zeros(EMBED_DIM, dtype=np.float32)
+        vector[axis] = 1.0
+        return vector
+
+    @pytest.fixture
+    def searchable(self, bundle, tmp_path):
+        """A pack whose three passages sit on three orthogonal axes."""
+        from gutenberg_kg.export_swift import EMBED_DIM, _connect_with_vec
+
+        store = bundle / ".dockg" / "vectors.sqlite"
+        con = _connect_with_vec(store)
+        con.execute("CREATE TABLE vec_meta(id TEXT PRIMARY KEY, kind TEXT)")
+        con.execute(
+            f"CREATE VIRTUAL TABLE vec_nodes USING vec0(embedding float[{EMBED_DIM}] "
+            "distance_metric=cosine)"
+        )
+        for rowid, (node_id, axis) in enumerate([("c:1", 0), ("c:2", 1), ("s:1", 2)], start=1):
+            con.execute(
+                "INSERT INTO vec_meta(rowid, id, kind) VALUES (?, ?, 'chunk')", (rowid, node_id)
+            )
+            con.execute(
+                "INSERT INTO vec_nodes(rowid, embedding) VALUES (?, ?)",
+                (rowid, self._basis(axis).tobytes()),
+            )
+        con.commit()
+        con.close()
+
+        out = tmp_path / "searchable"
+        export_swift(ExportOptions(bundle=bundle, out=out, golden=False, force=True))
+        return out / "gutenberg.pack"
+
+    def test_dense_channel_ranks_by_cosine(self, searchable):
+        from gutenberg_kg.export_swift import search_pack
+
+        # "zzzz" matches nothing lexically, so this is the dense channel alone.
+        hits = search_pack(searchable, self._basis(2), "zzzz", k=3)
+        assert hits[0]["node_id"] == "s:1"
+        assert hits[0]["score"] == pytest.approx(1.0, abs=0.02)
+
+    def test_hits_carry_the_worker_hit_shape(self, searchable):
+        from gutenberg_kg.export_swift import search_pack
+
+        (hit, *_) = search_pack(searchable, self._basis(2), "zzzz", k=1)
+        assert set(hit) >= {
+            "kg_name",
+            "kg_kind",
+            "node_id",
+            "name",
+            "kind",
+            "score",
+            "source_path",
+            "content",
+            "timestamp",
+            "genre",
+            "title",
+            "author",
+        }
+        assert hit["genre"] == "sacred-texts"
+        assert "pillar of salt" in hit["content"]
+
+    def test_genre_filter_scopes_both_channels(self, searchable):
+        from gutenberg_kg.export_swift import search_pack
+
+        hits = search_pack(searchable, self._basis(2), "pillar of salt", k=5, genre="philosophy")
+        assert {hit["node_id"] for hit in hits} <= {"c:1", "c:2", "sec:1"}
+        assert all(hit["genre"] == "philosophy" for hit in hits)
+
+    def test_lexical_channel_rescues_what_the_embedder_buries(self, searchable):
+        """The 'circles of Hell' case, in miniature.
+
+        The query vector points squarely at ``c:1``, so dense ranking alone
+        returns it. BM25 finds the literal terms in ``s:1``, and RRF promotes
+        it past the dense winner — which is the whole reason the lexical
+        channel exists.
+
+        The query is content words only. ``fts_match_expression`` ORs every
+        term, so in a four-passage fixture a stop word like "of" is a genuine
+        match that shifts the ranks; across 364 K real passages it matches
+        almost everything and BM25's IDF weighting reduces it to noise. The
+        fixture cannot show that, so it does not pretend to.
+        """
+        from gutenberg_kg.export_swift import search_pack
+
+        dense_only = search_pack(searchable, self._basis(0), "zzzz", k=1)
+        assert dense_only[0]["node_id"] == "c:1"
+
+        fused = search_pack(searchable, self._basis(0), "pillar salt", k=1)
+        assert fused[0]["node_id"] == "s:1"
+
+    def test_min_score_drops_weak_hits(self, searchable):
+        from gutenberg_kg.export_swift import search_pack
+
+        # Orthogonal passages score ~0.0; only the on-axis one clears the floor.
+        hits = search_pack(searchable, self._basis(2), "zzzz", k=3, min_score=0.5)
+        assert [hit["node_id"] for hit in hits] == ["s:1"]

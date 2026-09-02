@@ -30,27 +30,16 @@ from pathlib import Path
 
 import numpy as np
 
+# The parity query set lives with the exporter, so the benchmark and the packs
+# it informs can never disagree about what "the hard queries" are.
+from gutenberg_kg.export_swift import GOLDEN_QUERIES
+
 BUNDLE_LANCEDB = Path("bundles/gutenberg-all/.dockg/lancedb")
 TABLE = "dockg_nodes"
 DIM = 384
 K = 10
 EMBED_MODEL = "BAAI/bge-small-en-v1.5"
 WHERE = "kind IN ('chunk', 'section') AND file_path NOT LIKE '%reference.md'"
-
-GOLDEN_QUERIES = [
-    "pillar of salt",
-    "circles of Hell",
-    "What does the Quran say about Moses?",
-    "the whiteness of the whale",
-    "descriptions of the Great Fire of London",
-    "the categorical imperative and moral duty",
-    "a monster assembled from dead body parts",
-    "time travel to the distant future",
-    "the fall of the House of Usher",
-    "how to wire an electric bell",
-    "shipwreck on a desert island",
-    "a dinner party with too much wine in a London diary",
-]
 
 
 def load_eligible_rows() -> tuple[list[str], np.ndarray]:

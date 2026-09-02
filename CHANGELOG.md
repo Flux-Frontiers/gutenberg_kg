@@ -10,6 +10,40 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added
 
+- **`gutenkg export-swift` — the corpus, small enough for a phone.** A new
+  command turns `bundles/gutenberg-all/` into three SQLite packs plus a
+  manifest and a parity file. The reduction is not compression; it is knowing
+  what the query path reads. `_semantic_search` is a dense kNN, an FTS5/BM25
+  query and an RRF fusion over `kind IN ('chunk','section')`, and it never
+  hops the graph — so 324 K topic/entity/keyword nodes, all 5.1 M edges, and
+  the embed-text duplicate of every passage stay behind. Vectors are
+  re-encoded fp32 → int8, L2-normalised first so the ×127 scaling lands
+  inside range instead of clipping. About 5.7 GB in, about 1.3 GB out.
+
+  Column sets differ across the fleet's stores — a diary carries `timestamp`,
+  a book carries `chapter` — and they change as KGs are rebuilt, so every read
+  is driven by `PRAGMA table_info` rather than a hardcoded `SELECT`. A missing
+  column becomes `NULL` in the pack, never a crash three hundred thousand rows
+  into an export.
+
+  Two decisions are load-bearing and easy to get wrong. `passages.rowid` and
+  `vec_nodes.rowid` are the same integer, so a dense search is one join and a
+  genre filter is a plain `WHERE` — which is why the pack drops the `vec_meta`
+  table `SqliteVecBackend` writes. And there are two title columns: `title` is
+  the work's, which hit cards show, while `node_title` is the node's own — a
+  section's chapter name, which Browse lists. Collapsing them loses the
+  chapter list; keeping empty section rows is what keeps it, since a section
+  marker carries no prose but is still a chapter.
+
+  `--verify` measures what quantisation cost, comparing the pack against exact
+  fp32 ground truth computed by brute force over the source vectors, and warns
+  below the 0.9 parity gate. `golden.json` records what the packs themselves
+  return for the twelve hard queries; the Swift engine is correct when it
+  reproduces that file, which localises a failure to either the WordPiece
+  tokenizer or the int8 quantisation rather than leaving it to be eyeballed.
+  `benchmarks/bench_sqlite_vec.py` now imports that query list instead of
+  keeping its own copy.
+
 - **The chat answers on the phone, with the model already in the OS.** The
   native app gained an on-device answer engine built on Apple's Foundation
   Models framework: `OnDeviceSynthesis` streams a grounded answer from the
