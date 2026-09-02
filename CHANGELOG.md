@@ -10,6 +10,46 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Fixed
 
+- **Retrieval lost exact phrases, and lost RRF's ordering.** Two divergences
+  from the worker the pack path claims to translate, both found by asking the
+  running Mac app for "pillar of salt" and getting Ruskin and Nietzsche
+  instead of Lot's wife.
+
+  `GraphStore.search_lexical` searches the exact phrase first and only falls
+  back to an OR of the terms. `export_swift` kept the OR and dropped the
+  phrase, and the Swift port faithfully mirrored `export_swift`, so the query
+  ran as `"pillar" OR "of" OR "salt"` -- and "of" matches nearly every one of
+  364K passages, diluting BM25 until the verse is unreachable. That is the
+  exact failure doc-kg 0.15.6 was released to fix, reintroduced in the export
+  path. Both sides now do phrase, then OR; the Genesis chunk returns to rank 1
+  from 604th on cosine alone.
+
+  Separately, `LocalRetrieval` re-sorted every result by cosine. The worker
+  sorts only when merging books with diaries, because within one corpus the
+  order is already RRF's and cosine is not what RRF ranked by: a literal match
+  floated up by fusion carries a *lower* cosine than the semantic hits under
+  it, so re-sorting buried precisely what fusion surfaced.
+
+- **The golden gate could not catch either of those.** It compared the set of
+  returned passages and their scores, so a result holding the right passages
+  in the wrong order passed -- and it was passing at exactly its own 0.90
+  tolerance floor. It now also bounds how far a shared hit may drift from the
+  reference's fused position (`max_rank_drift`, default 2). Deliberately not
+  an exact-order check: the dense channels differ in their last bits (numpy
+  over dequantised int8 against Accelerate), so near-ties come back either way
+  round and every divergence observed was a single adjacent transposition,
+  while losing the fused order moves a hit much further.
+
+- **The Swift package would not compile on a Mac.** `CorpusStore
+  .matchExpression` chained `query.map` (a `[Character]`) into
+  `split(separator: " ")` and then `map(String.init)`; Swift 6.4 will not
+  finish that overload set and reports "failed to produce diagnostic for
+  expression" instead of a real error. An explicit `String` intermediate types
+  each step unambiguously. This was the *only* failure in the first Mac build
+  of the package -- none of the six that `app/RUNBOOK.md` section 7 predicted
+  occurred -- and the full suite is now 55 tests green with the golden gate
+  armed against the real 389K-passage corpus.
+
 - **The Swift tokenizer mis-segmented CJK, and now cannot.** `WordPieceTokenizer`
   omitted BERT's `_tokenize_chinese_chars` pass, so a run of ideographs was one
   "word" and WordPiece prefixed all but the first with `##` — `中` + `##文`
