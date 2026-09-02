@@ -12,3 +12,4 @@
 216	Tao Te Ching (James Legge translation)
 3283	The Upanishads (Max Müller translation)
 4094	The Analects of Confucius (James Legge translation)
+10	The Bible (King James Version)

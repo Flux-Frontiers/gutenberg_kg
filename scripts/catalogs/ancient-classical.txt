@@ -18,3 +18,17 @@
 47001	On Duties / De Officiis (Cicero)
 785	On the Nature of Things (Lucretius)
 14328	The Consolation of Philosophy (Boethius)
+10661	A Selection from the Discourses of Epictetus with the Encheiridion
+35451	Medea of Euripides
+64576	Minor Dialogues, Together With the Dialogue on Clemency
+27673	Oedipus King of Thebes
+228	The Aeneid
+8688	The Eleven Comedies, Volume 1
+8689	The Eleven Comedies, Volume 2
+7998	The Frogs
+871	The Golden Sayings of Epictetus, with the Hymn of Cleanthes
+6130	The Iliad
+55317	The Meditations of the Emperor Marcus Aurelius Antoninus
+1727	The Odyssey
+39855	The Teaching of Epictetus
+15877	Thoughts of Marcus Aurelius Antoninus
