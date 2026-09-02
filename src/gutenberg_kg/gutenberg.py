@@ -41,6 +41,7 @@ GUTENBERG_PAGE_URL = "https://www.gutenberg.org/ebooks/{ebook_id}"
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 CORPUS_ROOT = os.path.join(REPO_ROOT, "corpus")
+CATALOG_ROOT = os.path.join(REPO_ROOT, "scripts", "catalogs")
 
 START_MARKER = re.compile(r"\*\*\* ?START OF THE PROJECT GUTENBERG EBOOK .+? \*\*\*")
 END_MARKER = re.compile(r"\*\*\* ?END OF THE PROJECT GUTENBERG EBOOK .+? \*\*\*")
@@ -837,6 +838,10 @@ def download_book(
         if existing:
             existing_dir = os.path.basename(os.path.dirname(existing))
             print(f"  [=] already downloaded (Gutenberg #{ebook_id}): {existing_dir} — skipping")
+            # Catalogue on the skip path too: a book already on disk but absent
+            # from the catalog is exactly the pre-existing drift, and re-running
+            # the download is the natural way to repair it.
+            record_in_catalog(genre, ebook_id, existing_dir, dry_run=dry_run)
             return existing
 
     # Fetch metadata (needed for the title before we can check idempotence)
@@ -857,6 +862,7 @@ def download_book(
     # Idempotence check
     if not force and os.path.exists(out_path):
         print(f"  [=] already downloaded: {title} — skipping")
+        record_in_catalog(genre, ebook_id, title, dry_run=dry_run)
         return out_path
 
     if dry_run:
@@ -887,7 +893,108 @@ def download_book(
     ref_path = write_reference(book_dir, meta)
     print(f"  Saved: {ref_path}")
 
+    record_in_catalog(genre, ebook_id, title, dry_run=dry_run)
+
     return out_path
+
+
+def record_in_catalog(
+    genre: str | None,
+    ebook_id: int,
+    title: str,
+    dry_run: bool = False,
+) -> bool:
+    """Record a downloaded book in its genre catalog, if not already there.
+
+    The catalog files under ``scripts/catalogs/`` were originally batch *input*
+    manifests: ``download catalog`` read them and nothing ever wrote them. That
+    left the three ad-hoc paths -- ``download book``, ``download fetch-genre``
+    and ``ia download`` -- adding books to the corpus that no catalog recorded,
+    permanently and silently. The drift is invisible to ``gutenkg audit``, which
+    only checks the catalog-to-corpus direction, and it means a fresh clone
+    replayed through ``download catalog`` reproduces a strict subset of the
+    corpus. Calling this on every successful download closes that loop.
+
+    ``title`` is written as the override column and must be the book's directory
+    name, since :func:`gutenberg_kg.audit.audit_corpus` reports a catalog title
+    that differs from the directory as an error.
+
+    Appending is idempotent on the ID, so re-running a download repairs a
+    missing catalog line rather than duplicating an existing one.
+
+    :param genre: Genre whose catalog to write; ``None`` means the book was
+        downloaded to the corpus root, which no catalog covers, so nothing is
+        written.
+    :param ebook_id: Project Gutenberg numeric book ID.
+    :param title: The book's directory name, written as the title override.
+    :param dry_run: When true, report what would be written but write nothing.
+    :returns: True when a line was appended, or would have been under
+        ``dry_run`` -- so a caller can count pending repairs without writing.
+    """
+    if genre is None:
+        return False
+
+    catalog_path = os.path.join(CATALOG_ROOT, f"{genre}.txt")
+    needs_newline = False
+    if os.path.exists(catalog_path):
+        if any(eid == ebook_id for eid, _ in parse_catalog(catalog_path)):
+            return False
+        with open(catalog_path, encoding="utf-8") as f:
+            needs_newline = not f.read().endswith("\n")
+
+    if dry_run:
+        print(f"  [dry] would catalogue: scripts/catalogs/{genre}.txt <- {ebook_id}\t{title}")
+        return True
+
+    os.makedirs(CATALOG_ROOT, exist_ok=True)
+    with open(catalog_path, "a", encoding="utf-8") as f:
+        if needs_newline:
+            f.write("\n")
+        f.write(f"{ebook_id}\t{title}\n")
+    print(f"  Catalogued: scripts/catalogs/{genre}.txt <- {ebook_id}\t{title}")
+    return True
+
+
+def run_catalog_sync(genres: list[str], dry_run: bool = False) -> int:
+    """Record every downloaded book in its genre catalog.
+
+    The repair counterpart to :func:`record_in_catalog`, for books downloaded
+    before write-back existed. It is the analogue of ``gutenkg re-register``:
+    both rebuild a derived record from what is already on disk, without redoing
+    the expensive work that produced it.
+
+    No downloading is involved. Each book's ``reference.md`` -- written by every
+    download path, Gutenberg and IA alike -- carries the Gutenberg ID, so the
+    catalog can be reconstructed by reading the corpus. The directory name is
+    written as the title override, matching what ``audit`` compares against.
+
+    IA genres are skipped: they have no catalog files, and what an IA catalog
+    should contain is a separate design question.
+
+    :param genres: Genres to process.
+    :param dry_run: Report what would be written without writing.
+    :returns: Number of catalog entries added (or that would be added).
+    """
+    from gutenberg_kg.genres import IA_GENRES
+
+    added = 0
+    for genre in genres:
+        if genre in IA_GENRES:
+            continue
+        genre_dir = os.path.join(CORPUS_ROOT, genre)
+        if not os.path.isdir(genre_dir):
+            continue
+        for book in sorted(os.listdir(genre_dir)):
+            book_dir = os.path.join(genre_dir, book)
+            ref = os.path.join(book_dir, "reference.md")
+            if book.startswith(".") or not os.path.isfile(ref):
+                continue
+            ebook_id = parse_reference(Path(ref)).get("ebook_id")
+            if ebook_id is None:
+                continue
+            if record_in_catalog(genre, int(ebook_id), book, dry_run=dry_run):
+                added += 1
+    return added
 
 
 def parse_catalog(catalog_path: str) -> list[tuple[int, str | None]]:

@@ -30,3 +30,12 @@
 # --- Clark Ashton Smith (pre-1931 verse; his only public-domain work) ---
 53333	Ebony and Crystal: Poems in Verse and Prose
 38410	The Star-Treader, and other poems
+76	Adventures of Huckleberry Finn
+1322	Leaves of Grass
+2701	Moby Dick
+215	The Call of the Wild
+73	The Red Badge of Courage
+33	The Scarlet Letter
+1952	The Yellow Wallpaper
+203	Uncle Toms Cabin
+205	Walden

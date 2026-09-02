@@ -57,6 +57,14 @@ def parse_reference(path: Path) -> dict:
     eid = _field(r"\*\*Project Gutenberg ID\*\*:\s*(\d+)", text)
     meta["ebook_id"] = int(eid) if eid else None
 
+    # Internet Archive items have an identifier here instead of a Gutenberg ID.
+    # It is a string, globally unique and immutable, so it keys an IA book the
+    # same way ebook_id keys a Gutenberg one -- for download idempotence, for
+    # the catalog, and for duplicate detection. ia.write_reference has always
+    # written it; nothing read it until now, which is why every IA-facing check
+    # had to exempt itself rather than key on something.
+    meta["ia_id"] = _field(r"\*\*Internet Archive ID\*\*:\s*(\S+)", text)
+
     # Genre is the grandparent dir name (corpus/<genre>/<book>/reference.md)
     meta["genre"] = path.parent.parent.name
 

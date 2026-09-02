@@ -42,3 +42,24 @@
 
 # --- Chesterton ---
 1695	The Man Who Was Thursday (Chesterton)
+1080	A Modest Proposal
+98	A Tale of Two Cities
+11	Alices Adventures in Wonderland
+345	Dracula
+158	Emma
+1400	Great Expectations
+2591	Grimms Fairy Tales
+829	Gullivers Travels
+219	Heart of Darkness
+1260	Jane Eyre
+145	Middlemarch
+1342	Pride and Prejudice
+521	Robinson Crusoe
+161	Sense and Sensibility
+1661	The Adventures of Sherlock Holmes
+174	The Picture of Dorian Gray
+43	The Strange Case of Dr Jekyll and Mr Hyde
+35	The Time Machine
+36	The War of the Worlds
+120	Treasure Island
+768	Wuthering Heights

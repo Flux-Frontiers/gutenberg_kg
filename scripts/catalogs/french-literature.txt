@@ -17,3 +17,9 @@
 # --- Zola ---
 56528	Germinal (Zola)
 5250	Nana (Zola)
+19942	Candide
+135	Les Miserables
+2413	Madame Bovary
+1184	The Count of Monte Cristo
+1257	The Three Musketeers
+164	Twenty Thousand Leagues Under the Sea

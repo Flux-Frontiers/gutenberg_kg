@@ -11,12 +11,20 @@ to introduce by hand:
 - the same Gutenberg ID assigned to more than one book (a mix-up/swap);
 - a catalog title override that differs from the directory name of the book
   already downloaded for that ID (catalog/corpus naming drift);
+- a downloaded book that its genre catalog does not list at all;
 - a registered KG whose index file no longer exists, or a diary registered to
   a ``.dockg`` index instead of ``.diarykg``.
 
-"Not built" / "not registered" are warnings (expected on a fresh clone before
-``rebuild-indices``); the rest are errors.  ``run_audit`` returns a non-zero
-exit code when any error is found, so it is CI-friendly.
+"Not built" / "not registered" / "not recorded in the catalog" are warnings
+(the first two are expected on a fresh clone before ``rebuild-indices``); the
+rest are errors.  ``run_audit`` returns a non-zero exit code when any error is
+found, so it is CI-friendly.
+
+Note the two catalog checks run in opposite directions and only together cover
+membership.  The title check walks catalog entries and looks up books; the
+uncatalogued check walks books and looks up catalog entries.  Only the first
+existed for a long time, which is how 90 of 243 books came to be missing from
+their catalogs while every book audited clean.
 """
 
 from __future__ import annotations
@@ -31,6 +39,7 @@ from pathlib import Path
 from gutenberg_kg.authors import parse_reference
 from gutenberg_kg.genres import ALL_GENRES, IA_GENRES
 from gutenberg_kg.gutenberg import parse_catalog
+from gutenberg_kg.ia import parse_catalog as parse_ia_catalog
 from gutenberg_kg.ingest import slugify
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
@@ -78,6 +87,7 @@ class BookAudit:
     book: str
     is_diary: bool
     ebook_id: int | None = None
+    ia_id: str | None = None  # Internet Archive identifier, for IA-genre books
     fmt: str | None = None  # diary parser format
     entries: int | None = None  # diary parsed-entry count
     built: bool = False
@@ -235,9 +245,12 @@ def _audit_book(
     else:
         meta = parse_reference(ref)
         res.ebook_id = meta.get("ebook_id")
+        res.ia_id = meta.get("ia_id")
         # Internet Archive books have an IA identifier, not a Gutenberg ID.
         if res.ebook_id is None and genre not in IA_GENRES:
             res.warnings.append("no Gutenberg ID in reference.md")
+        elif res.ia_id is None and genre in IA_GENRES:
+            res.warnings.append("no Internet Archive ID in reference.md")
 
         # Title <-> content check: a wrong Gutenberg ID silently mislabels a
         # whole book; the auto-summary's quoted title reveals the real text.
@@ -334,6 +347,20 @@ def audit_corpus(
             for b in group:
                 b.errors.append(f"duplicate Gutenberg ID {eid} (shared by: {others})")
 
+    # The same check for IA items. This had no coverage: the check above keys on
+    # ebook_id, which is None for every IA book, so two directories holding one
+    # IA item both audited clean. Path-keyed idempotence in ia.download_book
+    # made that reachable by simply passing a different --title.
+    by_ia_id: dict[str, list[BookAudit]] = {}
+    for b in report.books:
+        if b.ia_id is not None:
+            by_ia_id.setdefault(b.ia_id, []).append(b)
+    for ia_id, group in by_ia_id.items():
+        if len(group) > 1:
+            others = ", ".join(f"{g.genre}/{g.book}" for g in group)
+            for b in group:
+                b.errors.append(f"duplicate Internet Archive ID {ia_id} (shared by: {others})")
+
     # Corpus-wide: catalog title override ≠ downloaded directory name. The
     # download path is keyed on the Gutenberg ID, so drift can no longer
     # duplicate books — but the catalog is the source of truth, and an
@@ -357,6 +384,36 @@ def audit_corpus(
                     f"catalog title '{cat_title}' ≠ directory '{b.book}' "
                     f"(fix scripts/catalogs/{genre}.txt or rename the dir)"
                 )
+
+    # Corpus-wide: a downloaded book its catalog does not list. This direction
+    # had no check at all — the block above walks catalog entries and looks up
+    # books, so a book absent from the catalog is never examined by any loop.
+    # That blind spot is why 90 of 243 books could be uncatalogued while the
+    # audit reported every book clean.
+    #
+    # The cost is reproducibility, not correctness: these books are healthy, but
+    # `download catalog` replayed over a fresh clone rebuilds only what the
+    # catalogs list, so the uncatalogued ones are silently absent. A warning,
+    # not an error, for exactly that reason.
+    #
+    # IA genres are covered too, keyed on the Internet Archive identifier. A
+    # genre is either Gutenberg or IA and never both, so which parser reads its
+    # catalog is unambiguous.
+    for genre in genres:
+        catalog = CATALOG_ROOT / f"{genre}.txt"
+        is_ia = genre in IA_GENRES
+        if not catalog.exists():
+            catalogued: set = set()
+        elif is_ia:
+            catalogued = {ident for ident, _ in parse_ia_catalog(catalog)}
+        else:
+            catalogued = {eid for eid, _ in parse_catalog(str(catalog))}
+        for b in report.books:
+            if b.genre != genre:
+                continue
+            key = b.ia_id if is_ia else b.ebook_id
+            if key is not None and key not in catalogued:
+                b.warnings.append(f"not recorded in scripts/catalogs/{genre}.txt")
 
     # Registered KGs (within the audited genres) whose index file is gone.
     if registry_found:
