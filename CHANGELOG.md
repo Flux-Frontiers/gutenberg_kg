@@ -8,6 +8,46 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Fixed
+
+- **The Swift tokenizer mis-segmented CJK, and now cannot.** `WordPieceTokenizer`
+  omitted BERT's `_tokenize_chinese_chars` pass, so a run of ideographs was one
+  "word" and WordPiece prefixed all but the first with `##` — `中` + `##文`
+  where Python produces `中` + `文`. Not a crash and not an obvious break: a
+  different, plausible tokenization that sends the query somewhere else in the
+  embedding space. The source comment claimed CJK "degrades to unknown tokens",
+  which was simply wrong about the behaviour. Both are fixed.
+
+  Found by compiling the file and running it, which had not been possible
+  before: the Apple-free half of the package builds on a Linux Swift 6
+  toolchain, so `WordPieceTokenizer`, `ContextBudgeter`, `SynthesisPrompt`,
+  `QueryOrchestrator` and the protocols now have a clean strict-concurrency
+  type-check and 26 passing tests behind them.
+
+- **Two test messages that would not have compiled.** swift-testing's `Comment`
+  is `ExpressibleByStringInterpolation`, not built from a concatenation, so the
+  `#expect` failure messages in `TokenizerParityTests` and `GoldenParityTests`
+  were type errors. The golden gate has never run on a Mac, so this would have
+  surfaced as a build failure on somebody's first attempt at it.
+
+### Added
+
+- **`TokenizerParityTests` — the tokenizer, pinned to Python's own output.**
+  The unit tests check the algorithm's shape against a toy vocabulary; this
+  runs it over `bge-small-en-v1.5`'s real 30,522-token vocabulary and asserts
+  it reproduces `BertTokenizer` exactly — tokens, ids, and the padded,
+  truncated encoding the Core ML model was traced with — across 36 inputs: the
+  twelve golden queries plus the shapes that break a hand-written WordPiece
+  (contractions, accents, punctuation runs, em dashes, digits, an over-long
+  word, control characters, CJK, and a string long enough to truncate).
+
+  This is the cheapest half of the golden gate, and it runs without a corpus, a
+  device or a network. A divergence here is the tokenizer; a divergence only in
+  the golden gate is the Core ML conversion or the quantisation, which is a
+  distinction worth being able to make before spending an hour on the wrong
+  one. `scripts/make_tokenizer_fixture.py` regenerates the fixture when the
+  embedder changes.
+
 ### Added
 
 - **The corpus searches itself, on the device.** `LocalRetrieval` closes the

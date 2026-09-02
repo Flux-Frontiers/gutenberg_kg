@@ -134,7 +134,8 @@ struct GoldenParityTests {
         // Report every divergence at once: one failing query is a bug in one
         // place, and all twelve failing is a bug in the tokenizer — telling
         // those apart matters more than failing fast.
-        #expect(failures.isEmpty, "\(failures.count) divergence(s):\n" + failures.joined(separator: "\n"))
+        let report = failures.joined(separator: "\n")
+        #expect(failures.isEmpty, "\(failures.count) divergence(s):\n\(report)")
     }
 
     @Test func aScopedQueryStaysInsideItsGenre() async throws {

@@ -134,12 +134,31 @@ swift build
 swift test
 ```
 
-`swift test` runs 40-odd tests: the context budgeter, the WordPiece tokenizer,
-RRF fusion, top-k selection, and the worker schema fixtures. The golden gate
-skips at this point — step 5 turns it on.
+`swift test` runs 45-odd tests: the context budgeter, the WordPiece tokenizer,
+RRF fusion, top-k selection, the worker schema fixtures, and the tokenizer
+parity suite. The golden gate skips at this point — step 5 turns it on.
 
 **When `swift build` fails, go to [Troubleshooting](#7-troubleshooting) before
 changing anything.** The likely failures are known and small.
+
+### What is already verified, and what is not
+
+The Apple-free half of the package — `WordPieceTokenizer`, `ContextBudgeter`,
+`SynthesisPrompt`, `QueryOrchestrator`, `Models`, the protocols, and the
+non-FoundationModels path of `OnDeviceSynthesis` — **compiles clean under Swift
+6 strict concurrency and its 26 tests pass**, checked on a Linux toolchain.
+`TokenizerParityTests` runs the shipped tokenizer over the real 30,522-token
+`bge-small` vocabulary and asserts it reproduces Python's `BertTokenizer`
+exactly on 36 inputs, the twelve golden queries among them.
+
+Untouched by that: everything importing CoreML, Accelerate, SQLite3 or SwiftUI
+— `BGEEmbedder`, `VectorIndex`, `CorpusStore`, `CatalogPack`, `CorpusPacks`,
+`LocalRetrieval`, and the whole UI target. Those are what step 3 is really
+testing.
+
+If you want the same Linux check yourself (useful in CI, no Mac needed), the
+subset builds with a stock `swift-6.0.3` toolchain against a `Package.swift`
+containing only the files above.
 
 ---
 
@@ -204,7 +223,7 @@ Reading a failure:
 
 | What you see | What it means |
 |---|---|
-| All twelve queries diverge | The tokenizer. Query text is being split differently than Python split it, so every query lands in the wrong place. Check `WordPieceTokenizerTests` first. |
+| All twelve queries diverge | Normally the tokenizer — but it is now pinned against Python's own output by `TokenizerParityTests`, so run those first: if they pass, the split is right and the fault is downstream, in the Core ML conversion or the embedding itself. Check the `export-embedder` parity cosine. |
 | A few queries diverge on rank | Usually int8 quantisation at the tail of the ranking. Rebuild with `--dtype float` and re-run; if it goes away, that was it. |
 | Ranks match, scores drift | Norm handling in `VectorIndex`. The reference divides by each row's real norm, not by 127. |
 | One query diverges | Look at it directly — it is probably a genuine tie being broken differently, which is harmless. |
@@ -348,4 +367,5 @@ Honest inventory, so nothing here surprises you:
   Swift equivalent yet; it is Phase 4.
 - **No SwiftData persistence.** Chat history is lost on relaunch.
 - **The golden gate has never run.** It is written and it is the right check;
-  step 5 is the first time it executes.
+  step 5 is the first time it executes. The tokenizer half of what it would
+  catch is now covered separately by `TokenizerParityTests`, which has run.
