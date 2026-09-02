@@ -632,3 +632,94 @@ def test_sura_headings_become_sections():
     )
     md = text_to_markdown(text, {"title": "Quran", "author": "Rodwell"})
     assert md.count("\n## SURA") == 2
+
+
+# ---------------------------------------------------------------------------
+# record_in_catalog — catalog write-back
+# ---------------------------------------------------------------------------
+
+
+def test_record_in_catalog_appends_new_entry(tmp_path: Path, monkeypatch):
+    """A new download is written to its genre catalog as <id>\\t<title>."""
+    monkeypatch.setattr(dg, "CATALOG_ROOT", str(tmp_path))
+    catalog = tmp_path / "letters.txt"
+    catalog.write_text("2811\tLetters of Pliny the Younger\n", encoding="utf-8")
+
+    assert dg.record_in_catalog("letters", 2445, "Letters on England") is True
+    assert catalog.read_text(encoding="utf-8").endswith("2445\tLetters on England\n")
+    assert parse_catalog(str(catalog)) == [
+        (2811, "Letters of Pliny the Younger"),
+        (2445, "Letters on England"),
+    ]
+
+
+def test_record_in_catalog_is_idempotent_on_id(tmp_path: Path, monkeypatch):
+    """Re-recording an ID already present must not duplicate the line."""
+    monkeypatch.setattr(dg, "CATALOG_ROOT", str(tmp_path))
+    catalog = tmp_path / "letters.txt"
+    catalog.write_text("2445\tLetters on England\n", encoding="utf-8")
+
+    assert dg.record_in_catalog("letters", 2445, "Letters on England") is False
+    assert catalog.read_text(encoding="utf-8").count("2445") == 1
+
+
+def test_record_in_catalog_repairs_missing_trailing_newline(tmp_path: Path, monkeypatch):
+    """A catalog whose last line lacks \\n must not get two entries joined."""
+    monkeypatch.setattr(dg, "CATALOG_ROOT", str(tmp_path))
+    catalog = tmp_path / "letters.txt"
+    catalog.write_text("2811\tLetters of Pliny the Younger", encoding="utf-8")  # no \n
+
+    dg.record_in_catalog("letters", 2445, "Letters on England")
+    assert parse_catalog(str(catalog)) == [
+        (2811, "Letters of Pliny the Younger"),
+        (2445, "Letters on England"),
+    ]
+
+
+def test_record_in_catalog_creates_missing_catalog(tmp_path: Path, monkeypatch):
+    """A genre with no catalog yet gets one rather than silently dropping the book."""
+    monkeypatch.setattr(dg, "CATALOG_ROOT", str(tmp_path / "catalogs"))
+    assert dg.record_in_catalog("curiosities", 123, "Some Book") is True
+    assert (tmp_path / "catalogs" / "curiosities.txt").read_text(
+        encoding="utf-8"
+    ) == "123\tSome Book\n"
+
+
+def test_record_in_catalog_skips_dry_run_and_genreless(tmp_path: Path, monkeypatch):
+    """--dry-run and a genre-less download must write nothing at all."""
+    monkeypatch.setattr(dg, "CATALOG_ROOT", str(tmp_path))
+    assert dg.record_in_catalog("letters", 2445, "Letters on England", dry_run=True) is False
+    assert dg.record_in_catalog(None, 2445, "Letters on England") is False
+    assert list(tmp_path.iterdir()) == []
+
+
+def test_download_book_catalogues_the_already_present_book(tmp_path: Path, monkeypatch):
+    """The skip path repairs drift: on disk but uncatalogued becomes catalogued.
+
+    This is the pre-existing breakage -- books added by `download book` before
+    write-back existed are invisible to their catalog, and re-running the
+    download is the natural repair.
+    """
+    monkeypatch.setattr(dg, "CORPUS_ROOT", str(tmp_path / "corpus"))
+    monkeypatch.setattr(dg, "CATALOG_ROOT", str(tmp_path / "catalogs"))
+    _make_downloaded_book(tmp_path / "corpus" / "letters", "Letters on England", 2445)
+
+    def _no_network(*a, **kw):
+        raise AssertionError("network must not be hit when the ID already exists")
+
+    monkeypatch.setattr(dg, "fetch_metadata", _no_network)
+    dg.download_book(2445, genre="letters")
+
+    assert parse_catalog(str(tmp_path / "catalogs" / "letters.txt")) == [
+        (2445, "Letters on England")
+    ]
+
+
+def test_download_book_dry_run_writes_no_catalog(tmp_path: Path, monkeypatch):
+    """--dry-run must leave the catalog untouched on every path."""
+    monkeypatch.setattr(dg, "CORPUS_ROOT", str(tmp_path / "corpus"))
+    monkeypatch.setattr(dg, "CATALOG_ROOT", str(tmp_path / "catalogs"))
+    monkeypatch.setattr(dg, "fetch_metadata", lambda *a, **kw: {"title": "Letters on England"})
+
+    dg.download_book(2445, genre="letters", dry_run=True)
+    assert not (tmp_path / "catalogs").exists()

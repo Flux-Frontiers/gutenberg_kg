@@ -11,12 +11,20 @@ to introduce by hand:
 - the same Gutenberg ID assigned to more than one book (a mix-up/swap);
 - a catalog title override that differs from the directory name of the book
   already downloaded for that ID (catalog/corpus naming drift);
+- a downloaded book that its genre catalog does not list at all;
 - a registered KG whose index file no longer exists, or a diary registered to
   a ``.dockg`` index instead of ``.diarykg``.
 
-"Not built" / "not registered" are warnings (expected on a fresh clone before
-``rebuild-indices``); the rest are errors.  ``run_audit`` returns a non-zero
-exit code when any error is found, so it is CI-friendly.
+"Not built" / "not registered" / "not recorded in the catalog" are warnings
+(the first two are expected on a fresh clone before ``rebuild-indices``); the
+rest are errors.  ``run_audit`` returns a non-zero exit code when any error is
+found, so it is CI-friendly.
+
+Note the two catalog checks run in opposite directions and only together cover
+membership.  The title check walks catalog entries and looks up books; the
+uncatalogued check walks books and looks up catalog entries.  Only the first
+existed for a long time, which is how 90 of 243 books came to be missing from
+their catalogs while every book audited clean.
 """
 
 from __future__ import annotations
@@ -357,6 +365,29 @@ def audit_corpus(
                     f"catalog title '{cat_title}' ≠ directory '{b.book}' "
                     f"(fix scripts/catalogs/{genre}.txt or rename the dir)"
                 )
+
+    # Corpus-wide: a downloaded book its catalog does not list. This direction
+    # had no check at all — the block above walks catalog entries and looks up
+    # books, so a book absent from the catalog is never examined by any loop.
+    # That blind spot is why 90 of 243 books could be uncatalogued while the
+    # audit reported every book clean.
+    #
+    # The cost is reproducibility, not correctness: these books are healthy, but
+    # `download catalog` replayed over a fresh clone rebuilds only what the
+    # catalogs list, so the uncatalogued ones are silently absent. A warning,
+    # not an error, for exactly that reason.
+    #
+    # IA genres are skipped here as they are above: they have no catalog files
+    # at all, so every IA book would trip this. Whether they should have
+    # catalogs is a separate open question.
+    for genre in genres:
+        if genre in IA_GENRES:
+            continue
+        catalog = CATALOG_ROOT / f"{genre}.txt"
+        catalogued = {eid for eid, _ in parse_catalog(str(catalog))} if catalog.exists() else set()
+        for b in report.books:
+            if b.genre == genre and b.ebook_id is not None and b.ebook_id not in catalogued:
+                b.warnings.append(f"not recorded in scripts/catalogs/{genre}.txt")
 
     # Registered KGs (within the audited genres) whose index file is gone.
     if registry_found:

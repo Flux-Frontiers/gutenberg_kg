@@ -56,6 +56,10 @@ def _errors(report, book_name):
     return next(b.errors for b in report.books if b.book == book_name)
 
 
+def _warnings(report, book_name):
+    return next(b.warnings for b in report.books if b.book == book_name)
+
+
 def test_clean_prose_book_has_no_errors(corpus):
     _make_book(corpus, "philosophy", "Apology")
     report = au.audit_corpus(["philosophy"], registry=NO_REGISTRY)
@@ -207,3 +211,45 @@ def test_run_audit_exit_code(corpus):
     (corpus / "philosophy" / "NoText").rmdir()
     _make_book(corpus, "philosophy", "Clean")
     assert au.run_audit(["philosophy"], registry=NO_REGISTRY) == 0
+
+
+# ---------------------------------------------------------------------------
+# uncatalogued books — the direction the audit was previously blind to
+# ---------------------------------------------------------------------------
+
+
+def test_book_absent_from_catalog_warns(corpus, tmp_path):
+    """A downloaded book its catalog does not list is drift the audit missed.
+
+    The pre-existing catalog block walks catalog entries and looks up books, so
+    nothing ever examined a book that no catalog line points at.
+    """
+    _make_book(corpus, "drama", "The sea-gull", ebook_id=1754)
+    (tmp_path / "catalogs" / "drama.txt").write_text("9999	Something Else\n", encoding="utf-8")
+    report = au.audit_corpus(["drama"], registry=NO_REGISTRY)
+    assert any("not recorded in" in w for w in _warnings(report, "The sea-gull"))
+    assert report.n_errors == 0  # a hygiene problem, not a broken book
+
+
+def test_book_present_in_catalog_does_not_warn(corpus, tmp_path):
+    _make_book(corpus, "drama", "The sea-gull", ebook_id=1754)
+    (tmp_path / "catalogs" / "drama.txt").write_text("1754\tThe sea-gull\n", encoding="utf-8")
+    report = au.audit_corpus(["drama"], registry=NO_REGISTRY)
+    assert not any("not recorded in" in w for w in _warnings(report, "The sea-gull"))
+
+
+def test_missing_catalog_file_warns_every_book_in_genre(corpus, tmp_path):
+    """A Gutenberg genre with no catalog at all (shakespeare, spanish) is the
+    same drift in its most complete form."""
+    _make_book(corpus, "drama", "The sea-gull", ebook_id=1754)
+    assert not (tmp_path / "catalogs" / "drama.txt").exists()
+    report = au.audit_corpus(["drama"], registry=NO_REGISTRY)
+    assert any("not recorded in" in w for w in _warnings(report, "The sea-gull"))
+
+
+def test_ia_genre_books_are_exempt(corpus, tmp_path, monkeypatch):
+    """IA genres have no catalogs by design, so they must not trip the check."""
+    monkeypatch.setattr(au, "IA_GENRES", ["curiosities"])
+    _make_book(corpus, "curiosities", "Miracle Mongers", ebook_id=None)
+    report = au.audit_corpus(["curiosities"], registry=NO_REGISTRY)
+    assert not any("not recorded in" in w for w in _warnings(report, "Miracle Mongers"))
