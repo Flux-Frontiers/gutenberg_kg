@@ -4,6 +4,14 @@ Checklist of high-priority additions. Work in cross-genre batches — downloads 
 
 Format: `- [ ] Title — Author (Gutenberg ID #NNNNN | IA)` — check the box when downloaded + ingested.
 
+> **Reconciled against the corpus 2026-09-02.** Every checkbox here was compared
+> to the `Project Gutenberg ID` recorded in each book's `reference.md`, which is
+> the authoritative per-book record -- neither the catalog files nor the titles
+> are reliable for this (books exist on disk that no catalog lists, and several
+> IDs here were simply wrong, including `#5765` given for three different books).
+> 34 boxes were checked, 5 unchecked, 13 IDs corrected. `gutenkg audit` reports
+> the corpus itself clean at 241 books; the drift was in this file alone.
+
 > **Internet Archive:** The entire IA corpus is not yet represented here. The `gutenkg ia` command handles IA downloads separately from Gutenberg. IA is the right source for: technical manuals (Audel, trade catalogues), out-of-print scientific monographs, periodicals, and government documents not on Gutenberg. An IA-focused wishlist section should be built out as a separate planning effort — see `gutenkg ia survey` for discovery.
 
 ---
@@ -11,8 +19,9 @@ Format: `- [ ] Title — Author (Gutenberg ID #NNNNN | IA)` — check the box wh
 ## Sacred Texts *(verse-type — drives doc_kg verse heading work)*
 
 - [x] The Bible — King James Version (#10)
-- [x] Quran — Yusuf Ali translation (#2800)
-- [x] The Torah / Tanakh — JPS 1917 translation (#1097)
+- [x] Quran — Rodwell translation (#2800) *(wishlist said Yusuf Ali; the corpus holds Rodwell)*
+- [x] The Dhammapada — Max Müller translation *(in corpus; was never listed here)*
+- [ ] The Torah / Tanakh — JPS 1917 translation (#1097) *(not in corpus -- never downloaded)*
 - [x] Bhagavad Gita — Edwin Arnold verse translation (#2388)
 - [x] Tao Te Ching — James Legge translation (#216)
 - [x] The Upanishads — Max Müller translation (#3283)
@@ -30,7 +39,7 @@ Format: `- [ ] Title — Author (Gutenberg ID #NNNNN | IA)` — check the box wh
 - [x] Phaedo — Plato (#1658)
 - [x] Critique of Pure Reason — Immanuel Kant (#4280)
 - [x] Groundwork of the Metaphysics of Morals — Kant (#5682)
-- [ ] Meditations on First Philosophy — Descartes (#59) *(download failed — retry)*
+- [x] Meditations on First Philosophy — Descartes (#59) *(download failed — retry)*
 - [x] Discourse on Method — Descartes *(downloaded as alternate Descartes)*
 - [x] On Liberty — John Stuart Mill (#34901)
 - [x] Utilitarianism — John Stuart Mill (#11224)
@@ -51,9 +60,9 @@ Format: `- [ ] Title — Author (Gutenberg ID #NNNNN | IA)` — check the box wh
 - [x] Metamorphoses — Ovid (#21765)
 - [x] The Clouds — Aristophanes (#2562)
 - [x] The Birds — Aristophanes (#3013)
-- [x] Oresteia — Aeschylus (#8714)
+- [x] Oresteia — Aeschylus (#8714) *(in corpus as The House of Atreus)*
 - [x] Medea — Euripides (#35)
-- [x] On Duties (De Officiis) — Cicero (#47001)
+- [ ] On Duties (De Officiis) — Cicero (#47001) *(not in corpus -- never downloaded)*
 - [x] On the Nature of Things — Lucretius (#785)
 - [x] The Consolation of Philosophy — Boethius (#14328)
 
@@ -67,7 +76,7 @@ Format: `- [ ] Title — Author (Gutenberg ID #NNNNN | IA)` — check the box wh
 - [x] The Souls of Black Folk — W.E.B. Du Bois (#408)
 - [x] Up From Slavery — Booker T. Washington (#2376)
 - [x] White Fang — Jack London (#910)
-- [x] The Sea-Wolf — Jack London (#1608)
+- [x] The Sea-Wolf — Jack London (#1074)
 - [x] The Awakening — Kate Chopin (#160)
 - [x] The House of Mirth — Edith Wharton (#284)
 - [x] The Age of Innocence — Edith Wharton (#541)
@@ -85,9 +94,9 @@ Format: `- [ ] Title — Author (Gutenberg ID #NNNNN | IA)` — check the box wh
 - [x] Kim — Rudyard Kipling (#2226)
 - [x] The Jungle Book — Rudyard Kipling (#236)
 - [x] A Room with a View — E.M. Forster (#2641)
-- [x] Howards End — E.M. Forster (#5765)
+- [x] Howards End — E.M. Forster (#2891)
 - [x] The Turn of the Screw — Henry James (#209)
-- [x] The Portrait of a Lady — Henry James (#432)
+- [x] The Portrait of a Lady — Henry James (#432) *(in corpus as Volumes 1 and 2, under their own IDs)*
 - [x] The Man Who Was Thursday — G.K. Chesterton (#1695)
 - [x] Cranford — Elizabeth Gaskell (#394)
 - [x] North and South — Elizabeth Gaskell (#4276)
@@ -101,7 +110,7 @@ Format: `- [ ] Title — Author (Gutenberg ID #NNNNN | IA)` — check the box wh
 ## German Literature
 
 - [x] Faust (Part I) — Johann Wolfgang von Goethe (#2229)
-- [x] Faust (Part II) — Johann Wolfgang von Goethe (#3233)
+- [x] Faust (Part II) — Johann Wolfgang von Goethe (#3233) *(in corpus as Faust: Der Tragodie zweiter Teil -- German text)*
 - [x] The Metamorphosis — Franz Kafka (#5200)
 - [x] The Trial — Franz Kafka (#7849)
 - [x] Siddhartha — Hermann Hesse (#2500)
@@ -114,7 +123,7 @@ Format: `- [ ] Title — Author (Gutenberg ID #NNNNN | IA)` — check the box wh
 - [x] Around the World in Eighty Days — Jules Verne (#103)
 - [x] From the Earth to the Moon — Jules Verne (#83)
 - [x] The Hunchback of Notre-Dame — Victor Hugo (#2610)
-- [x] Germinal — Émile Zola (#5765)
+- [x] Germinal — Émile Zola (#56528)
 - [x] Nana — Émile Zola (#5250)
 
 ---
@@ -122,9 +131,9 @@ Format: `- [ ] Title — Author (Gutenberg ID #NNNNN | IA)` — check the box wh
 ## Russian & Eastern European Literature
 
 - [x] Fathers and Sons — Ivan Turgenev (#30723)
-- [x] On the Eve — Ivan Turgenev (#11571)
-- [x] The Overcoat — Nikolai Gogol (#1022)
-- [x] Oblomov — Ivan Goncharov (#24738)
+- [x] On the Eve — Ivan Turgenev (#6902)
+- [ ] The Overcoat — Nikolai Gogol (#1022) *(not in corpus -- never downloaded)*
+- [x] Oblomov — Ivan Goncharov (#54700)
 - [x] The Possessed (Demons) — Fyodor Dostoevsky (#8117)
 - [x] Notes from Underground — Fyodor Dostoevsky (#600)
 - [x] Childhood, Boyhood, Youth — Leo Tolstoy (#2450)
@@ -134,8 +143,8 @@ Format: `- [ ] Title — Author (Gutenberg ID #NNNNN | IA)` — check the box wh
 ## World Literature
 
 - [x] One Thousand and One Nights — Lane translation (#128)
-- [ ] Don Quixote Vol. II — Cervantes (#996) *(Vol. I already in spanish genre)*
-- [x] The Divine Comedy: Purgatorio — Dante (#8799)
+- [x] Don Quixote Vol. II — Cervantes (#996) *(Vol. I already in spanish genre)*
+- [ ] The Divine Comedy: Purgatorio — Dante (#8799) *(not in corpus; only Paradiso #8800 was ingested, as The Divine Comedy (Cary))*
 - [x] The Divine Comedy: Paradiso — Dante (#8800)
 - [x] Gitanjali — Rabindranath Tagore (#7164)
 
@@ -144,11 +153,11 @@ Format: `- [ ] Title — Author (Gutenberg ID #NNNNN | IA)` — check the box wh
 ## Science Fiction (additions)
 
 - [ ] The Complete Works of Edgar Allan Poe — Poe (#2148) *(Tales of Mystery already in american-literature)*
-- [x] The Food of the Gods — H.G. Wells (#1635)
-- [x] When the World Screamed — Arthur Conan Doyle (#2038)
-- [x] A Journey to Other Worlds — John Jacob Astor (#3935)
-- [x] Pellucidar — Edgar Rice Burroughs (#4358)
-- [x] The Warlord of Mars — Edgar Rice Burroughs (#1538)
+- [x] The Food of the Gods — H.G. Wells (#11696)
+- [ ] When the World Screamed — Arthur Conan Doyle (#2038) *(not in corpus -- never downloaded)*
+- [x] A Journey to Other Worlds — John Jacob Astor (#3935) *(in corpus as A Journey in Other Worlds)*
+- [x] Pellucidar — Edgar Rice Burroughs (#605)
+- [x] The Warlord of Mars — Edgar Rice Burroughs (#68)
 
 ---
 
@@ -170,9 +179,14 @@ Surfaced by an `gutenkg ia search` survey (2026-09-01). Genuine period pieces,
 not modern reprints, unless flagged. Not yet downloaded — parking here for
 later triage.
 
-- [ ] Xiccarph — Clark Ashton Smith, Ballantine Adult Fantasy ed. (IA: `XiccarphClarkAshtonSmithLennySAMouse`)
-- [ ] Hollow Earth Tales (IA: `hollow-earth-tales-free-e-book`) *(2020 upload — verify it's a clean PD compilation, not new editorial matter)*
-- [ ] Miracle Mongers and Their Methods — Harry Houdini, 1920 (IA: `MiracleMongersAndTheirMethodsByHarryHoudini`)
+Rights checked against `https://archive.org/metadata/<identifier>` on 2026-09-02.
+Struck-through entries failed that check and must not be downloaded. An IA search
+hit's year is the *edition* scanned, not evidence the text is free — both
+rejections below looked like period pieces in search results.
+
+- [ ] ~~Xiccarph — Clark Ashton Smith, Ballantine Adult Fantasy ed. (IA: `XiccarphClarkAshtonSmithLennySAMouse`)~~ **REJECTED — in copyright.** A scan of the 1972 Ballantine paperback (cover art by Gervasio Gallardo), uploaded by a personal account to `pulp_misc_sf`. No licence or rights field. Smith died 1961, so life+70 runs to 2031 regardless of the edition. Use the Gutenberg substitutes below.
+- [ ] ~~Hollow Earth Tales (IA: `hollow-earth-tales-free-e-book`)~~ **REJECTED — CC BY-NC-ND 4.0.** A 2020 compilation by "Nighttime Editions" advertising their own six-volume paperback set. The **ND (NoDerivatives)** term is the blocker: chunking, embedding and serving excerpts is exactly the derivative use it forbids. NC conflicts with a public corpus too. Use the Gutenberg substitutes below.
+- [x] Miracle Mongers and Their Methods — Harry Houdini, 1920 (IA: `MiracleMongersAndTheirMethodsByHarryHoudini`) *(rights OK — published 1920, US public domain; folkscanomy scan, full `_djvu.txt` present)*
 - [ ] The Secrets of Stage Conjuring — Robert-Houdin, tr. Hoffmann, 1881 (IA: `TheSecretsOfStageConjuring`)
 - [ ] Struggles and Triumphs — P.T. Barnum, 1883 ed. (IA: `strugglesandtri04barngoog`)
 - [ ] A General History of the Pyrates — Capt. Charles Johnson, 1725 ed. (IA: `bim_eighteenth-century_a-general-history-of-the_johnson-charles_1725`)
@@ -186,6 +200,29 @@ later triage.
 - [ ] Nick Carter Strikes Oil — dime-novel detective pulp, 1912 (IA: `nick-carter-strikes-oil-gunston-classics`)
 - [ ] Nick Carter the Girl Kidnapper — dime-novel detective pulp, 1915 (IA: `nick-carter-the-girl-kidnapper-by-nicholas-carter-gunston-classics`)
 
+### Gutenberg substitutes for the two rejects
+
+Both rejected IA items have clean public-domain equivalents on Gutenberg. The
+hollow-earth set is arguably the better holding anyway: the primary novels
+rather than one modern anthology of them.
+
+Clark Ashton Smith — his pre-1931 verse is the only Smith that is actually free.
+IA carries no clean Smith at all (a search returns modern reference guides and an
+RPG module). Filed under `american-literature`: these are poetry collections, not
+horror fiction, so shelving them with Lovecraft would have mis-stated what they
+are. (Ingested to `horror` first, then moved 2026-09-02 via `kgrag unregister` ->
+`mv` -> `gutenkg re-register`.)
+
+- [x] Ebony and Crystal: Poems in Verse and Prose — Clark Ashton Smith, 1922 (#53333)
+- [x] The Star-Treader, and Other Poems — Clark Ashton Smith, 1912 (#38410)
+
+Hollow earth — proposed genre `science-fiction`, where the corpus already holds
+Pellucidar; *Journey to the Center of the Earth* sits in `french-literature`.
+
+- [x] Symzonia: Voyage of Discovery — Captain Adam Seaborn, 1820 (#54485) *(the founding hollow-earth novel)*
+- [x] Etidorhpa; or, The End of Earth — John Uri Lloyd, 1895 (#37775)
+- [x] The Coming Race — Bulwer-Lytton, 1871 (#1951) *(subterranean race; coined "vril")*
+
 ---
 
 ## Letters & Correspondence *(new genre — `gutenkg genres add letters`)*
@@ -194,10 +231,10 @@ Epistolary works as a distinct genre from diaries; letter collections reveal
 personality and social context in ways essays cannot.  Wide date range: Pliny
 (1st c. AD) → Keats (1820).
 
-- [ ] Letters on England — Voltaire (#2586)
-- [ ] Letters to His Son — Lord Chesterfield (#3352)
-- [ ] Letters — Pliny the Younger (#2811)
-- [ ] Letters of John Keats to His Family and Friends (#35698)
+- [x] Letters on England — Voltaire (#2445)
+- [x] Letters to His Son — Lord Chesterfield (#3352)
+- [x] Letters — Pliny the Younger (#2811)
+- [x] Letters of John Keats to His Family and Friends (#35698)
 - [ ] Turkish Embassy Letters — Lady Mary Wortley Montagu (#16287)
 - [ ] Letters of Charles Lamb (#1633)
 - [ ] Letters and Journals of Lord Byron (#19190)
@@ -209,17 +246,17 @@ personality and social context in ways essays cannot.  Wide date range: Pliny
 First-person life narratives and major literary biographies; overlaps with
 diaries but distinct in retrospective authorial voice.
 
-- [ ] Autobiography — Benjamin Franklin (#148)
+- [x] Autobiography — Benjamin Franklin (#148)
 - [ ] Autobiography of John Stuart Mill (#7223)
-- [ ] Autobiography — Benvenuto Cellini (#4028)
-- [ ] Life of Samuel Johnson — James Boswell (#1564)
-- [ ] Personal Memoirs — Ulysses S. Grant (#4367)
-- [ ] The Education of Henry Adams (#2044)
-- [ ] Confessions — Jean-Jacques Rousseau (#3913)
-- [ ] Confessions — Saint Augustine (#3296) *(also fits Sacred Texts)*
-- [ ] Narrative of the Life of Frederick Douglass (#23) *(also in american-literature)*
-- [ ] Up From Slavery — Booker T. Washington (#2376) *(also in american-literature)*
-- [ ] Incidents in the Life of a Slave Girl — Harriet Jacobs (#11030)
+- [x] Autobiography — Benvenuto Cellini (#4028)
+- [x] Life of Samuel Johnson — James Boswell (#1564)
+- [x] Personal Memoirs — Ulysses S. Grant (#4367)
+- [x] The Education of Henry Adams (#2044)
+- [x] Confessions — Jean-Jacques Rousseau (#3913)
+- [x] Confessions — Saint Augustine (#3296) *(also fits Sacred Texts)*
+- [x] Narrative of the Life of Frederick Douglass (#23) *(also in american-literature)*
+- [x] Up From Slavery — Booker T. Washington (#2376) *(also in american-literature)*
+- [x] Incidents in the Life of a Slave Girl — Harriet Jacobs (#11030)
 
 ---
 
@@ -228,13 +265,13 @@ diaries but distinct in retrospective authorial voice.
 Pre-modern science writing; Darwin's prose is literary, Faraday's lectures are
 canonical, Wallace rivals Darwin.  All pre-1928 on Gutenberg.
 
-- [ ] On the Origin of Species — Charles Darwin (#1228)
-- [ ] The Descent of Man — Charles Darwin (#2300)
-- [ ] The Voyage of the Beagle — Charles Darwin (#944)
-- [ ] Autobiography — Charles Darwin (#2010)
-- [ ] The Malay Archipelago — Alfred Russel Wallace (#2530)
-- [ ] Man's Place in Nature — Thomas H. Huxley (#2931)
-- [ ] The Chemical History of a Candle — Michael Faraday (#14474)
+- [x] On the Origin of Species — Charles Darwin (#1228)
+- [x] The Descent of Man — Charles Darwin (#2300)
+- [x] The Voyage of the Beagle — Charles Darwin (#944)
+- [x] Autobiography — Charles Darwin (#2010)
+- [x] The Malay Archipelago — Alfred Russel Wallace (#2530)
+- [x] Man's Place in Nature — Thomas H. Huxley (#2931)
+- [x] The Chemical History of a Candle — Michael Faraday (#14474)
 - [ ] Principles of Geology (abridged) — Charles Lyell — *verify ID*
 - [ ] Kosmos Vol. I — Alexander von Humboldt — *verify ID / IA*
 
@@ -245,12 +282,12 @@ canonical, Wallace rivals Darwin.  All pre-1928 on Gutenberg.
 Narrative journeys that shaped how the world was understood; blends with
 Natural History (Darwin, Wallace) but includes purely geographic/cultural works.
 
-- [ ] The Travels of Marco Polo (#12410)
-- [ ] A Lady's Life in the Rocky Mountains — Isabella Bird (#2172)
+- [x] The Travels of Marco Polo (#12410)
+- [x] A Lady's Life in the Rocky Mountains — Isabella Bird (#755)
 - [ ] Travels in the Interior Districts of Africa — Mungo Park (#4191)
-- [ ] Two Years Before the Mast — Richard Henry Dana Jr. (#507)
-- [ ] The Innocents Abroad — Mark Twain (#3176)
-- [ ] Typee — Herman Melville (#1900)
+- [x] Two Years Before the Mast — Richard Henry Dana Jr. (#2055)
+- [x] The Innocents Abroad — Mark Twain (#3176)
+- [x] Typee — Herman Melville (#1900)
 - [ ] Voyages of Discovery — Captain James Cook — *verify best Gutenberg edition*
 
 ---
@@ -263,26 +300,26 @@ modern European.
 
 ### Already in Ancient & Classical (no re-ingest needed):
 - [x] Medea — Euripides (#35)
-- [x] Oresteia — Aeschylus (#8714)
+- [x] Oresteia — Aeschylus (#8714) *(in corpus as The House of Atreus)*
 - [x] The Clouds / The Birds — Aristophanes
 
 ### To add under `drama`:
-- [ ] Doctor Faustus — Christopher Marlowe (#779)
-- [ ] Tamburlaine the Great — Christopher Marlowe (#1094)
-- [ ] The Duchess of Malfi — John Webster (#2232)
-- [ ] A Doll's House — Henrik Ibsen (#2542)
-- [ ] Hedda Gabler — Henrik Ibsen (#4093)
-- [ ] Pygmalion — George Bernard Shaw (#3825)
-- [ ] Major Barbara — George Bernard Shaw (#3175)
+- [x] Doctor Faustus — Christopher Marlowe (#779)
+- [x] Tamburlaine the Great — Christopher Marlowe (#1094)
+- [x] The Duchess of Malfi — John Webster (#2232)
+- [x] A Doll's House — Henrik Ibsen (#2542)
+- [x] Hedda Gabler — Henrik Ibsen (#4093)
+- [x] Pygmalion — George Bernard Shaw (#3825)
+- [x] Major Barbara — George Bernard Shaw (#3790)
 - [ ] The Cherry Orchard — Anton Chekhov (#7984)
-- [ ] The Seagull — Anton Chekhov (#7986)
-- [ ] The Importance of Being Earnest — Oscar Wilde (#844)
+- [x] The Seagull — Anton Chekhov (#1754)
+- [x] The Importance of Being Earnest — Oscar Wilde (#844)
 - [ ] The Playboy of the Western World — J.M. Synge (#5765) *(verify ID)*
 
 ---
 
 ## Remaining Items
 
-- [ ] Meditations on First Philosophy — Descartes (#59) — retry download
-- [ ] Don Quixote Vol. II — Cervantes (#996)
+- [x] Meditations on First Philosophy — Descartes (#59) — retry download
+- [x] Don Quixote Vol. II — Cervantes (#996)
 - [ ] Audel volumes (IA — needs curation tooling first)
