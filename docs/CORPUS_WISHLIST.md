@@ -166,8 +166,25 @@ Format: `- [ ] Title — Author (Gutenberg ID #NNNNN | IA)` — check the box wh
 - [ ] Audels Practical Electricity — Richey (IA: `audels_practical_electricity`)
 - [ ] Audels Electric Motors Guide (IA: `audelsmotors`)
 - [ ] Audels Radiomans Guide (IA: `audelsradio`)
-- [ ] Audels New Electric Library Vol. I–X (IA: multiple)
 - [ ] Audels Engineers and Mechanics Guide (IA: multiple volumes)
+
+### Audels Electric Library — 8 of 10 held (2026-09-02)
+
+Consolidated here from `../ia_kg`, which held 8 volumes to this repo's 2 and was
+the better copy. Re-downloaded rather than file-copied: the two repos share the
+same OCR/markdown code (`clean_ocr`, `_is_heading`, `text_to_markdown` and the
+rest are byte-identical between `ia_kg/download_ia.py` and `gutenberg_kg/ia.py`,
+verified by diffing both parses of Vol 1 -- 20,315 lines identical, only the
+title line differed), so the bytes match either way, but re-downloading routes
+through this repo's idempotence, catalog write-back and `reference.md` writer
+and does not depend on the two staying in sync.
+
+All held volumes are the 1929 edition, public domain.
+
+- [x] Vols 1, 2, 3, 4, 7, 8, 9, 10 (IA: `audels-electric-library-vol-<n>`)
+- [ ] Vol 5 — not in `ia_kg` either; needs an IA search
+- [ ] Vol 6 — not in `ia_kg` either; needs an IA search
+- [ ] ~~Audels *New* Electric Library Vol VIII (IA: `audelsnewelectri008004mbp`)~~ **REMOVED 2026-09-02 — rights.** A **1962** edition, not the 1929 set: no licence field, bulk `universallibrary` upload, so not safely public domain the way the 1929 volumes are. It was also the inferior copy of the same volume (25,241 lines against the 1929 scan's 36,611) and its IA title became a 100-character directory name. Replaced by `audels-electric-library-vol-8`.
 
 > **Curation note:** IA plain-text dumps have OCR garbage before the first real chapter heading and scattered artifact lines throughout. Strategy: strip everything before the first `CHAPTER` / `PART` match, then run a noise-filter pass on short garbled lines. Candidate for a dedicated `--source ia --curate` preprocessing flag in the download pipeline.
 
