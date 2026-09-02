@@ -4,8 +4,8 @@
 //
 // Everything except this file lives in the KnowledgePressUI package target,
 // shared with the Mac app. Answers are written by Apple Foundation Models on
-// the device itself; passages come from the worker until an on-device corpus
-// pack is installed (Phase 2 of analysis/APP_ARCHITECTURE.md).
+// the device itself, and passages come from the installed corpus packs — with
+// both in place the app answers with the network off.
 
 import KnowledgePressUI
 import SwiftUI
@@ -22,6 +22,9 @@ struct KnowledgePressApp: App {
                     // Load model weights while the reader is still reading the
                     // suggestions, so the first answer starts without a pause.
                     model.prewarmOnDevice()
+                    // Opening the corpus compiles the Core ML embedder, so it
+                    // happens off the main actor before the first question.
+                    await model.loadCorpusPacks()
                     await model.refreshSidebar()
                 }
         }

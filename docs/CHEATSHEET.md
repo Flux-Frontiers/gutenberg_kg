@@ -219,9 +219,20 @@ gutenkg export-swift --dtype float        # exact vectors, ~3x larger
 gutenkg export-swift --no-vectors --no-golden   # fast schema-only pass
 ```
 
-Produces `core.pack`, `gutenberg.pack`, `diaries.pack`, a `manifest.json`, and
-a `golden.json` parity file. Only chunk and section nodes are carried over —
-the query path reads nothing else — so a 5.7 GB bundle lands around 1.3 GB.
+Produces `core.pack`, `gutenberg.pack` + `gutenberg.vectors`, `diaries.pack` +
+`diaries.vectors`, a `manifest.json`, and a `golden.json` parity file. Only
+chunk and section nodes are carried over — the query path reads nothing else —
+so a 5.7 GB bundle lands under 1 GB.
+
+The app also needs the query encoder, converted once:
+
+```bash
+poetry run pip install torch transformers coremltools   # not project deps
+gutenkg export-embedder                                 # → the same directory
+```
+
+Copy the whole directory into the app's `Application Support/Corpus`; Settings
+▸ Corpus reports what it found.
 
 ## Visualisation and Light-Field Rendering
 

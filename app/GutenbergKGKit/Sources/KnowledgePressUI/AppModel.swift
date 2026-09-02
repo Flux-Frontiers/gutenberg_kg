@@ -95,6 +95,17 @@ public final class AppModel {
     /// The on-device backend, or nil on hardware/OS that cannot run it.
     let onDevice: (any SynthesisBackend)? = makeOnDeviceSynthesis()
 
+    /// The installed corpus, once it has been opened. Nil means the app has
+    /// not found packs — the ordinary state before a download, not a fault.
+    private(set) var packs: CorpusPacks?
+    /// Why an installed corpus would not open, when one is present but broken.
+    private(set) var packsError: String?
+    private(set) var isLoadingPacks = false
+
+    /// True when a question can be answered with the network off: passages
+    /// from the packs, answer from the built-in model.
+    var isFullyLocal: Bool { packs != nil && engine == .onDevice }
+
     public init() {
         if onDeviceAvailability.isAvailable { engine = .onDevice }
     }
@@ -145,13 +156,17 @@ public final class AppModel {
         return WorkerClient(baseURL: url, secret: secret)
     }
 
-    /// Retrieval engine for the next query.
-    ///
-    /// Always the worker today. Phase 2 swaps in `LocalRetrieval` over an
-    /// installed corpus pack, at which point the on-device path is offline
-    /// end to end — this property is the only line that changes.
+    /// Retrieval engine for the next query — the packs when they are
+    /// installed, the worker when they are not.
     private var retrievalEngine: any RetrievalEngine {
-        WorkerRetrieval(client: client)
+        if let packs { return LocalRetrieval(packs: packs) }
+        return WorkerRetrieval(client: client)
+    }
+
+    /// Where the Browse tab reads books from, by the same rule.
+    var browser: any CorpusBrowser {
+        if let packs { return LocalBrowser(packs: packs) }
+        return client
     }
 
     private var synthesisBackend: (any SynthesisBackend)? {
@@ -161,8 +176,33 @@ public final class AppModel {
         }
     }
 
+    /// Open the installed corpus, if there is one.
+    ///
+    /// Off the main actor: opening compiles the Core ML embedder, which takes
+    /// seconds the first time and must not hold up the first frame.
+    public func loadCorpusPacks() async {
+        isLoadingPacks = true
+        defer { isLoadingPacks = false }
+        let opened = await Task.detached(priority: .userInitiated) { () -> (CorpusPacks?, String?) in
+            var failure: String?
+            let packs = CorpusPacks.installed { failure = $0 }
+            return (packs, failure)
+        }.value
+        packs = opened.0
+        packsError = opened.1
+    }
+
     /// Fetch stats + genres for the sidebar; clears/sets `connectionError`.
+    ///
+    /// Prefers the installed corpus, so the header is populated in airplane
+    /// mode and the worker is only consulted when there are no packs.
     public func refreshSidebar() async {
+        if let packs, let catalog = packs.catalog {
+            stats = catalog.stats(embedModel: packs.manifest.embedder.model)
+            genres = catalog.genres()
+            connectionError = nil
+            return
+        }
         do {
             stats = try await client.stats()
             genres = try await client.listGenres()

@@ -13,7 +13,10 @@ app/
 │   │   │                             kg_utils.worker.client.WorkerClient)
 │   │   ├── Models.swift              Codable mirrors of the worker JSON schema
 │   │   ├── QueryOrchestrator.swift   retrieval → budget → synthesis, streamed
-│   │   ├── Retrieval/                RetrievalEngine protocol, WorkerRetrieval
+│   │   ├── Embedding/                WordPieceTokenizer, BGEEmbedder (Core ML)
+│   │   ├── Retrieval/                RetrievalEngine + WorkerRetrieval,
+│   │   │                             CorpusPacks/PassagePack/CatalogPack,
+│   │   │                             VectorIndex (mmap + vDSP), LocalRetrieval
 │   │   └── Synthesis/                SynthesisBackend protocol, ContextBudgeter,
 │   │                                 SynthesisPrompt, OnDeviceSynthesis
 │   ├── Sources/KnowledgePressUI/   shared SwiftUI — chat, browse, settings,
@@ -28,13 +31,14 @@ app/
 | | Runs | Offline |
 |---|---|---|
 | Answer | Apple Foundation Models, on the device | yes |
-| Passages | the GutenbergKG worker | no — Phase 2 |
+| Passages | the installed corpus packs | yes |
+| Browse | the same packs | yes |
 
-On-device inference is in (Phase 3 of the architecture doc). On-device
-retrieval is close: `gutenkg export-swift` now builds the corpus packs
-([docs/ON_DEVICE.md](../docs/ON_DEVICE.md)), and what is left is Swift-side —
-a Core ML `bge-small` query embedder and a `CorpusStore` that reads the packs.
-`AppModel.retrievalEngine` is the one line that changes when it lands.
+With packs installed the app answers with the network off. Build them with
+`gutenkg export-swift` and `gutenkg export-embedder`, then copy the output into
+Application Support ▸ Corpus — see [docs/ON_DEVICE.md](../docs/ON_DEVICE.md).
+With no packs the app falls back to the worker, so nothing breaks before the
+first download.
 
 The on-device engine needs macOS 26 / iOS 26 on Apple Intelligence hardware.
 Everywhere else the app still runs — the provider picker says why the engine

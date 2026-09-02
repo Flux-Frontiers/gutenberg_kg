@@ -9,16 +9,21 @@ draws comes from the `KnowledgePressUI` target in
 | | Where it runs | Needs the network |
 |---|---|---|
 | Answer | Apple Foundation Models, on the phone | no |
-| Passages | the GutenbergKG worker | **yes, today** |
-| Browse | the worker's `list_*` / `get_chapter` ops | yes |
+| Passages | the installed corpus packs | no |
+| Browse | the same packs | no |
 
-On-device *inference* is done (Phase 3). On-device *retrieval* is Phase 2, and
-half of it is done: `gutenkg export-swift` builds the corpus packs the phone
-would search (`core.pack`, `gutenberg.pack`, `diaries.pack` — about 1.3 GB, see
-[docs/ON_DEVICE.md](../../docs/ON_DEVICE.md)). What is missing is the Swift
-side: a Core ML `bge-small` query embedder and a `CorpusStore` that reads the
-packs. Until that exists the phone asks the Mac for passages and writes the
-answer itself. `AppModel.retrievalEngine` is the single line that changes.
+With the packs installed the app is offline end to end. Build them on the Mac:
+
+```sh
+gutenkg export-swift        # core.pack, gutenberg.pack + .vectors, diaries.pack + .vectors
+gutenkg export-embedder     # BGEEmbedder.mlpackage, vocab.txt, embedder.json
+```
+
+…then copy that directory into the app's `Application Support/Corpus`. Settings
+▸ Corpus reports what was found, and why if it would not open.
+
+Without packs the app falls back to the worker for passages, so it is usable
+before the ~800 MB download.
 
 ## Requirements
 

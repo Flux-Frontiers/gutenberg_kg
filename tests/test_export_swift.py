@@ -384,54 +384,139 @@ class TestHelpers:
         assert split_source_path("bare.md") == (None, None)
 
 
+def _seed_source_vectors(bundle, axes):
+    """Give the fixture bundle a vec0 source store, as a real bundle has.
+
+    The *source* is still sqlite-vec — that is what `dockg convert-index`
+    produces — even though the pack it becomes is not.
+    """
+    import numpy as np
+
+    from gutenberg_kg.export_swift import EMBED_DIM, _connect_with_vec
+
+    con = _connect_with_vec(bundle / ".dockg" / "vectors.sqlite")
+    con.execute("CREATE TABLE vec_meta(id TEXT PRIMARY KEY, kind TEXT)")
+    con.execute(
+        f"CREATE VIRTUAL TABLE vec_nodes USING vec0(embedding float[{EMBED_DIM}] "
+        "distance_metric=cosine)"
+    )
+    for rowid, (node_id, axis) in enumerate(axes, start=1):
+        vector = np.zeros(EMBED_DIM, dtype=np.float32)
+        vector[axis] = 1.0
+        con.execute(
+            "INSERT INTO vec_meta(rowid, id, kind) VALUES (?, ?, 'chunk')", (rowid, node_id)
+        )
+        con.execute(
+            "INSERT INTO vec_nodes(rowid, embedding) VALUES (?, ?)", (rowid, vector.tobytes())
+        )
+    con.commit()
+    con.close()
+
+
 @pytest.mark.skipif(
     find_spec("sqlite_vec") is None or find_spec("numpy") is None,
-    reason="vector packs need sqlite-vec and numpy",
+    reason="vector packs need sqlite-vec (to read the source) and numpy",
 )
-class TestVectors:
-    def test_vectors_align_with_passage_rowids(self, bundle, tmp_path):
-        """The pack's one structural invariant: passages.rowid == vec_nodes.rowid."""
-        import numpy as np
+class TestVectorSidecar:
+    """The vectors live beside the pack, not inside it.
 
-        from gutenberg_kg.export_swift import EMBED_DIM, _connect_with_vec
+    A ``vec0`` table cannot be read without the sqlite-vec C extension, and
+    iOS ships stock SQLite — so the pack would be unopenable on the device it
+    was built for. The sidecar is a header plus row-major vectors, which any
+    platform can memory-map.
+    """
 
-        # Give the source store vectors for two of the three passages.
-        store = bundle / ".dockg" / "vectors.sqlite"
-        con = _connect_with_vec(store)
-        con.execute("CREATE TABLE vec_meta(id TEXT PRIMARY KEY, kind TEXT)")
-        con.execute(
-            f"CREATE VIRTUAL TABLE vec_nodes USING vec0(embedding float[{EMBED_DIM}] "
-            "distance_metric=cosine)"
+    def test_sidecar_is_written_with_a_valid_header(self, bundle, tmp_path):
+        from gutenberg_kg.export_swift import (
+            EMBED_DIM,
+            VECTOR_HEADER_BYTES,
+            VECTOR_MAGIC,
+            read_vector_sidecar,
         )
-        for rowid, node_id in enumerate(["c:1", "c:2"], start=1):
-            vector = np.full(EMBED_DIM, 1.0 / EMBED_DIM**0.5, dtype=np.float32)
-            con.execute(
-                "INSERT INTO vec_meta(rowid, id, kind) VALUES (?, ?, 'chunk')", (rowid, node_id)
-            )
-            con.execute(
-                "INSERT INTO vec_nodes(rowid, embedding) VALUES (?, ?)", (rowid, vector.tobytes())
-            )
-        con.commit()
-        con.close()
 
+        _seed_source_vectors(bundle, [("c:1", 0), ("c:2", 1)])
         out = tmp_path / "swift"
         export_swift(ExportOptions(bundle=bundle, out=out, golden=False, force=True))
 
-        pack = _connect_with_vec(out / "gutenberg.pack", read_only=True)
+        sidecar = out / "gutenberg.vectors"
+        assert sidecar.read_bytes()[:8] == VECTOR_MAGIC
+        matrix, dtype = read_vector_sidecar(sidecar)
+        assert matrix.shape == (2, EMBED_DIM)
+        assert dtype == "int8"
+        assert sidecar.stat().st_size == VECTOR_HEADER_BYTES + 2 * EMBED_DIM
+
+    def test_pack_carries_no_vec0_table(self, bundle, tmp_path):
+        """The pack must open on stock SQLite, with no extension loaded."""
+        _seed_source_vectors(bundle, [("c:1", 0), ("c:2", 1)])
+        out = tmp_path / "swift"
+        export_swift(ExportOptions(bundle=bundle, out=out, golden=False, force=True))
+
+        con = sqlite3.connect(str(out / "gutenberg.pack"))
         try:
-            aligned = pack.execute(
-                "SELECT p.id FROM vec_nodes v JOIN passages p ON p.rowid = v.rowid ORDER BY p.id"
-            ).fetchall()
+            names = {
+                row[0] for row in con.execute("SELECT name FROM sqlite_master WHERE type='table'")
+            }
+            # A plain connection can read every table in the pack.
+            for name in names:
+                con.execute(f"SELECT COUNT(*) FROM {name}").fetchone()
         finally:
-            pack.close()
-        assert [row[0] for row in aligned] == ["c:1", "c:2"]
+            con.close()
+        assert "vec_nodes" not in names
+
+    def test_vector_index_is_dense_and_points_at_the_right_row(self, bundle, tmp_path):
+        """A passage with no source vector must not leave a hole in the file."""
+        import numpy as np
+
+        from gutenberg_kg.export_swift import read_vector_sidecar
+
+        _seed_source_vectors(bundle, [("c:1", 0), ("s:1", 7)])
+        out = tmp_path / "swift"
+        export_swift(ExportOptions(bundle=bundle, out=out, golden=False, force=True))
+
+        rows = _rows(
+            out / "gutenberg.pack",
+            "SELECT id, vector_index FROM passages ORDER BY vector_index",
+        )
+        indexed = {r["id"]: r["vector_index"] for r in rows if r["vector_index"] is not None}
+        assert sorted(indexed.values()) == [0, 1]
+        # c:2 and sec:1 had no vector in the source and stay unindexed.
+        assert {r["id"] for r in rows if r["vector_index"] is None} == {"c:2", "sec:1"}
+
+        matrix, _ = read_vector_sidecar(out / "gutenberg.vectors")
+        assert int(np.argmax(matrix[indexed["c:1"]])) == 0
+        assert int(np.argmax(matrix[indexed["s:1"]])) == 7
 
     def test_missing_vectors_are_counted_not_hidden(self, bundle, tmp_path):
-        out = tmp_path / "swift2"
+        _seed_source_vectors(bundle, [("c:1", 0)])
+        out = tmp_path / "swift"
         report = export_swift(ExportOptions(bundle=bundle, out=out, golden=False, force=True))
-        gutenberg = next(p for p in report.packs if p.name == "gutenberg.pack")
-        # sec:1 has no vector in the source store; it must still be reported.
-        assert gutenberg.missing_vectors == gutenberg.passages - gutenberg.vectors
+        pack = next(p for p in report.packs if p.name == "gutenberg.pack")
+        assert pack.vectors == 1
+        assert pack.missing_vectors == pack.passages - 1
+
+    def test_truncated_sidecar_is_rejected(self, bundle, tmp_path):
+        from gutenberg_kg.export_swift import ExportError, read_vector_sidecar
+
+        _seed_source_vectors(bundle, [("c:1", 0), ("c:2", 1)])
+        out = tmp_path / "swift"
+        export_swift(ExportOptions(bundle=bundle, out=out, golden=False, force=True))
+
+        sidecar = out / "gutenberg.vectors"
+        sidecar.write_bytes(sidecar.read_bytes()[:-16])
+        with pytest.raises(ExportError, match="truncated"):
+            read_vector_sidecar(sidecar)
+
+    def test_manifest_lists_the_sidecar(self, bundle, tmp_path):
+        _seed_source_vectors(bundle, [("c:1", 0)])
+        out = tmp_path / "swift"
+        report = export_swift(ExportOptions(bundle=bundle, out=out, golden=False, force=True))
+        manifest = json.loads((out / "manifest.json").read_text())
+        entry = next(p for p in manifest["packs"] if p["name"] == "gutenberg.pack")
+        assert entry["sidecar"]["name"] == "gutenberg.vectors"
+        assert len(entry["sidecar"]["sha256"]) == 64
+        # Total bytes must include the sidecar: it is what has to reach the phone.
+        assert manifest["total_bytes"] == report.total_bytes
+        assert manifest["total_bytes"] >= entry["sidecar"]["bytes"]
 
 
 @pytest.mark.skipif(
@@ -459,26 +544,7 @@ class TestSearchPack:
     @pytest.fixture
     def searchable(self, bundle, tmp_path):
         """A pack whose three passages sit on three orthogonal axes."""
-        from gutenberg_kg.export_swift import EMBED_DIM, _connect_with_vec
-
-        store = bundle / ".dockg" / "vectors.sqlite"
-        con = _connect_with_vec(store)
-        con.execute("CREATE TABLE vec_meta(id TEXT PRIMARY KEY, kind TEXT)")
-        con.execute(
-            f"CREATE VIRTUAL TABLE vec_nodes USING vec0(embedding float[{EMBED_DIM}] "
-            "distance_metric=cosine)"
-        )
-        for rowid, (node_id, axis) in enumerate([("c:1", 0), ("c:2", 1), ("s:1", 2)], start=1):
-            con.execute(
-                "INSERT INTO vec_meta(rowid, id, kind) VALUES (?, ?, 'chunk')", (rowid, node_id)
-            )
-            con.execute(
-                "INSERT INTO vec_nodes(rowid, embedding) VALUES (?, ?)",
-                (rowid, self._basis(axis).tobytes()),
-            )
-        con.commit()
-        con.close()
-
+        _seed_source_vectors(bundle, [("c:1", 0), ("c:2", 1), ("s:1", 2)])
         out = tmp_path / "searchable"
         export_swift(ExportOptions(bundle=bundle, out=out, golden=False, force=True))
         return out / "gutenberg.pack"

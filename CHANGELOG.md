@@ -10,6 +10,44 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added
 
+- **The corpus searches itself, on the device.** `LocalRetrieval` closes the
+  loop: `BGEEmbedder` runs the converted `bge-small` on the Neural Engine,
+  `VectorIndex` scans the memory-mapped vectors with vDSP, `PassagePack` runs
+  BM25 over FTS5, and the two channels fuse with the same RRF constant the
+  worker uses. With packs installed the app answers — and browses — with the
+  network off.
+
+  **The vectors moved out of the pack.** A `vec0` virtual table cannot be read
+  without the sqlite-vec C extension compiled into the reader, and iOS ships
+  stock SQLite, so the original design produced a pack that would not open on
+  the device it was built for. Vendoring ten thousand lines of C would have
+  bought nothing: `vec0`'s search is exhaustive — which is why it beat
+  LanceDB's ANN index on recall — and so is the dot product the app does
+  instead. Vectors now live in a `<pack>.vectors` sidecar: a 32-byte header
+  and row-major rows, memory-mapped and multiplied in place, with
+  `passages.vector_index` as a dense row number so a passage with no vector
+  leaves no hole. The header is there so a truncated download is rejected
+  rather than read as embeddings.
+
+- **`gutenkg export-embedder` — the query encoder, converted once.** The packs
+  hold `bge-small-en-v1.5` vectors, and a query embedded by anything else —
+  Apple's `NLContextualEmbedding` included — lands in a different space and
+  returns fluent, ranked, wrong passages. So the app has to carry that model:
+  the command traces it with CLS pooling and L2 normalisation folded into the
+  graph, converts to fp16 Core ML, writes the tokenizer's own vocabulary
+  beside it, and then checks the converted model against PyTorch on a probe
+  sentence — refusing to ship one that disagrees. `manifest.json` and
+  `embedder.json` name the model at both ends, and `CorpusPacks` refuses to
+  open when they differ, because that failure has no symptom other than bad
+  answers.
+
+  `WordPieceTokenizer` is a port of `tokenization_bert.py` rather than an
+  approximation of it, for the same reason: a word split differently is a
+  query sent somewhere else. Its tests pin the cases that go wrong quietly —
+  greedy longest-match, punctuation splitting, accent stripping, and the one
+  where an unmatchable tail must produce a single unknown token rather than a
+  partial word.
+
 - **`gutenkg export-swift` — the corpus, small enough for a phone.** A new
   command turns `bundles/gutenberg-all/` into three SQLite packs plus a
   manifest and a parity file. The reduction is not compression; it is knowing
@@ -26,10 +64,10 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   column becomes `NULL` in the pack, never a crash three hundred thousand rows
   into an export.
 
-  Two decisions are load-bearing and easy to get wrong. `passages.rowid` and
-  `vec_nodes.rowid` are the same integer, so a dense search is one join and a
-  genre filter is a plain `WHERE` — which is why the pack drops the `vec_meta`
-  table `SqliteVecBackend` writes. And there are two title columns: `title` is
+  Two decisions are load-bearing and easy to get wrong. Vectors live in a
+  memory-mapped sidecar rather than a `vec0` table, indexed by a dense
+  `passages.vector_index` (see above). And there are two title columns:
+  `title` is
   the work's, which hit cards show, while `node_title` is the node's own — a
   section's chapter name, which Browse lists. Collapsing them loses the
   chapter list; keeping empty section rows is what keeps it, since a section

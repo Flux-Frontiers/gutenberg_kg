@@ -11,11 +11,13 @@ Layout produced
 ::
 
     <out>/
-      manifest.json    pack versions, checksums, the embedder the packs require
-      core.pack        catalog: genres, books, the Browse entry points
-      gutenberg.pack   passages + FTS5 + int8 vectors for the 241 books
-      diaries.pack     the same, for the four diaries, with timestamps
-      golden.json      reference top-k per query — the Swift parity gate
+      manifest.json      pack versions, checksums, the embedder the packs require
+      core.pack          catalog: genres, books, the Browse entry points
+      gutenberg.pack     passages + FTS5 for the 241 books
+      gutenberg.vectors  their embeddings, row-major, memory-mappable
+      diaries.pack       the same, for the four diaries, with timestamps
+      diaries.vectors
+      golden.json        reference top-k per query — the Swift parity gate
 
 What is dropped, and why it is safe
 -----------------------------------
@@ -27,28 +29,25 @@ edge, and the structured *embed-text* duplicate of each passage all stay behind.
 Vectors are re-encoded from fp32 to int8, which is where most of the remaining
 size goes.
 
+Why the vectors sit beside the pack, not inside it
+--------------------------------------------------
+A ``vec0`` virtual table cannot be read without the sqlite-vec C extension
+compiled into the reader, and iOS ships stock SQLite — so a pack built that way
+would not open on the device it was built for. Vendoring ten thousand lines of C
+would buy nothing either: vec0's search is exhaustive, and so is the dot product
+the app does instead over a memory-mapped file, with SIMD and no allocation.
+
+The sidecar is therefore a 32-byte header (magic, dtype, dim, count) followed by
+row-major vectors. ``passages.vector_index`` is a *dense* row number into it, so
+a passage whose vector the source store lacks leaves no hole in the file. The
+header lets a reader reject a truncated download instead of interpreting
+whatever bytes it finds as embeddings.
+
 Schema notes
 ------------
-``passages.rowid`` and ``vec_nodes.rowid`` are the same integer, so a dense
-search is one join and a genre filter is a plain ``WHERE`` on ``passages``:
-
-.. code-block:: sql
-
-    SELECT p.id, p.content, v.distance
-      FROM vec_nodes v JOIN passages p ON p.rowid = v.rowid
-     WHERE v.embedding MATCH vec_int8(?) AND k = ?
-       AND v.rowid IN (SELECT rowid FROM passages
-                        WHERE kind IN ('chunk','section') AND genre = ?)
-     ORDER BY distance
-
 Two title columns are deliberate: ``title`` is the *work's* title, which the
 hit cards show, while ``node_title`` is the node's own — a section's chapter
 name, which the Browse tab lists. Collapsing them loses the chapter list.
-
-This deliberately drops the ``vec_meta`` table that
-:class:`kg_utils.vector_backend.SqliteVecBackend` writes: ``passages`` already
-holds every filterable column, and one metadata table beats two that can
-disagree.
 
 The FTS5 index is rebuilt here over *clean* passage text rather than copied,
 because the worker's ``nodes_fts`` indexes the embed-text form. Lexical results
@@ -131,6 +130,17 @@ GOLDEN_QUERIES: tuple[str, ...] = (
     "a dinner party with too much wine in a London diary",
 )
 
+#: Magic for the vector sidecar. The app refuses a file that does not start
+#: with this, rather than reading whatever bytes it finds as embeddings.
+VECTOR_MAGIC = b"GKGVEC01"
+
+#: Header bytes before the vector rows. 32 keeps the data 16-byte aligned, so
+#: the device can mmap it and hand it straight to SIMD.
+VECTOR_HEADER_BYTES = 32
+
+_DTYPE_CODES = {"int8": 0, "float": 1}
+_DTYPE_ITEMSIZE = {"int8": 1, "float": 4}
+
 _CORE_SCHEMA = """
 CREATE TABLE pack_meta (key TEXT PRIMARY KEY, value TEXT);
 
@@ -178,9 +188,11 @@ CREATE TABLE passages (
   char_start INTEGER,           -- chapter reconstruction (Browse)
   chapter    INTEGER,           -- verse-chunked genres with no section nodes
   timestamp  TEXT,              -- diaries only
+  vector_index INTEGER,         -- dense row in the .vectors sidecar; NULL if none
   content    TEXT NOT NULL
 );
 CREATE INDEX idx_passages_scope ON passages(genre, kind);
+CREATE INDEX idx_passages_vec   ON passages(vector_index);
 CREATE INDEX idx_passages_read  ON passages(file_path, kind, char_start);
 CREATE INDEX idx_passages_kg    ON passages(kg_name);
 """
@@ -604,10 +616,19 @@ class PackStats:
     missing_vectors: int = 0
     bytes: int = 0
     sha256: str = ""
+    #: The ``.vectors`` sidecar, when this pack has one.
+    sidecar: Path | None = None
+    sidecar_bytes: int = 0
+    sidecar_sha256: str = ""
 
     @property
     def name(self) -> str:
         return self.path.name
+
+    @property
+    def total_bytes(self) -> int:
+        """Pack plus sidecar — what actually has to reach the device."""
+        return self.bytes + self.sidecar_bytes
 
 
 def _fresh_db(path: Path, schema: str) -> sqlite3.Connection:
@@ -646,12 +667,17 @@ def _finalise(path: Path, stats: PackStats) -> PackStats:
     finally:
         con.close()
     stats.bytes = path.stat().st_size
+    stats.sha256 = _sha256(path)
+    return stats
+
+
+def _sha256(path: Path) -> str:
+    """Streamed SHA-256 of a file, so a 1 GB pack is not read into memory."""
     digest = hashlib.sha256()
     with open(path, "rb") as handle:
         for block in iter(lambda: handle.read(1 << 20), b""):
             digest.update(block)
-    stats.sha256 = digest.hexdigest()
-    return stats
+    return digest.hexdigest()
 
 
 def build_core_pack(
@@ -882,68 +908,139 @@ def build_passage_pack(
         con.close()
 
     if with_vectors:
-        stats.vectors, stats.missing_vectors = _write_vectors(
+        stats.sidecar, stats.vectors, stats.missing_vectors = write_vector_sidecar(
             dest, sources, rowid_by_id, dtype=dtype, progress=say
         )
+        if stats.sidecar is not None:
+            stats.sidecar_bytes = stats.sidecar.stat().st_size
+            stats.sidecar_sha256 = _sha256(stats.sidecar)
 
     return _finalise(dest, stats)
 
 
-def _write_vectors(
-    dest: Path,
+def write_vector_sidecar(
+    pack: Path,
     sources: Sequence[_PassageSource],
     rowid_by_id: dict[str, int],
     *,
     dtype: str,
     progress,
-) -> tuple[int, int]:
-    """Add the ``vec_nodes`` table, aligned to ``passages.rowid``.
+) -> tuple[Path | None, int, int]:
+    """Write ``<pack>.vectors`` and point each passage at its row.
 
-    :param dest: The pack being written.
-    :param sources: The KGs whose vector stores to stream.
+    The sidecar is a header plus row-major vectors — nothing else. The device
+    memory-maps it and multiplies straight out of the mapping, so a query never
+    allocates and the OS pages in only the part it touches. That is also why
+    the vectors do not live in the pack as a ``vec0`` table: reading one needs
+    the sqlite-vec C extension compiled into the app, and vec0's search is
+    brute force regardless, so the extension would buy nothing.
+
+    ``passages.vector_index`` is dense (0..N-1) rather than the passage rowid,
+    because a passage whose vector the source store lacks must not leave a hole
+    in the file.
+
+    :param pack: The pack whose passages were just written.
+    :param sources: KGs whose vector stores to stream.
     :param rowid_by_id: Node id → the rowid its passage got.
     :param dtype: ``"int8"`` or ``"float"``.
     :param progress: Status callable.
-    :returns: ``(vectors_written, passages_left_without_a_vector)``.
+    :returns: ``(sidecar_path, vectors_written, passages_without_a_vector)``.
     """
-    con = _connect_with_vec(dest)
+    _load_numpy()  # fail before writing a partial file, not halfway through one
+    sidecar = pack.with_suffix(".vectors")
+    itemsize = _DTYPE_ITEMSIZE[dtype]
+
+    con = sqlite3.connect(str(pack))
     written = 0
     try:
         con.executescript("PRAGMA journal_mode=OFF; PRAGMA synchronous=OFF;")
-        con.execute(
-            f"CREATE VIRTUAL TABLE IF NOT EXISTS vec_nodes USING vec0("
-            f"embedding {dtype}[{EMBED_DIM}] distance_metric=cosine)"
-        )
-        # int8 blobs must be wrapped or sqlite-vec reads them as float32.
-        match = "vec_int8(?)" if dtype == "int8" else "?"
-        insert = f"INSERT INTO vec_nodes(rowid, embedding) VALUES (?, {match})"
-
-        seen: set[int] = set()
-        batch: list[tuple[int, bytes]] = []
-        for source in sources:
-            if source.vectors is None and source.lancedb is None:
-                progress(f"  {source.kg_name}: no vector store — lexical search only")
-                continue
-            for node_id, vector in iter_source_vectors(source.vectors, source.lancedb):
-                rowid = rowid_by_id.get(node_id)
-                if rowid is None or rowid in seen:
+        with open(sidecar, "wb") as handle:
+            handle.write(b"\0" * VECTOR_HEADER_BYTES)  # backfilled once count is known
+            seen: set[int] = set()
+            assignments: list[tuple[int, int]] = []
+            for source in sources:
+                if source.vectors is None and source.lancedb is None:
+                    progress(f"  {source.kg_name}: no vector store — lexical search only")
                     continue
-                seen.add(rowid)
-                batch.append((rowid, encode_vector(vector, dtype)))
-                if len(batch) >= 1000:
-                    with con:
-                        con.executemany(insert, batch)
-                    written += len(batch)
-                    batch = []
-            if batch:
-                with con:
-                    con.executemany(insert, batch)
-                written += len(batch)
-                batch = []
-            progress(f"  {source.kg_name}: {written:,} vectors written ({dtype})")
+                for node_id, vector in iter_source_vectors(source.vectors, source.lancedb):
+                    rowid = rowid_by_id.get(node_id)
+                    if rowid is None or rowid in seen:
+                        continue
+                    seen.add(rowid)
+                    encoded = encode_vector(vector, dtype)
+                    if len(encoded) != EMBED_DIM * itemsize:
+                        raise ExportError(
+                            f"{node_id} has {len(encoded) // itemsize} dimensions, "
+                            f"expected {EMBED_DIM}"
+                        )
+                    handle.write(encoded)
+                    assignments.append((written, rowid))
+                    written += 1
+                progress(f"  {source.kg_name}: {written:,} vectors written ({dtype})")
+
+            handle.flush()
+            handle.seek(0)
+            handle.write(_vector_header(dtype, EMBED_DIM, written))
+
+        with con:
+            con.executemany("UPDATE passages SET vector_index = ? WHERE rowid = ?", assignments)
     finally:
         con.close()
-    return written, len(rowid_by_id) - written
+
+    if written == 0:
+        sidecar.unlink(missing_ok=True)
+        return None, 0, len(rowid_by_id)
+    return sidecar, written, len(rowid_by_id) - written
+
+
+def _vector_header(dtype: str, dim: int, count: int) -> bytes:
+    """Build the sidecar's fixed 32-byte header.
+
+    :param dtype: ``"int8"`` or ``"float"``.
+    :param dim: Embedding dimensionality.
+    :param count: Vectors in the file.
+    :returns: Exactly :data:`VECTOR_HEADER_BYTES` bytes.
+    """
+    header = bytearray(VECTOR_HEADER_BYTES)
+    header[0:8] = VECTOR_MAGIC
+    header[8] = _DTYPE_CODES[dtype]
+    header[12:16] = int(dim).to_bytes(4, "little")
+    header[16:24] = int(count).to_bytes(8, "little")
+    return bytes(header)
+
+
+def read_vector_sidecar(sidecar: Path):
+    """Memory-map a sidecar and return ``(matrix, dtype)``.
+
+    :param sidecar: A ``.vectors`` file.
+    :returns: An ``(count, dim)`` numpy array viewing the file, and its dtype
+        name.
+    :raises ExportError: If the magic, dimension or length do not agree — a
+        truncated download is the failure this catches.
+    """
+    numpy = _load_numpy()
+    with open(sidecar, "rb") as handle:
+        header = handle.read(VECTOR_HEADER_BYTES)
+    if len(header) < VECTOR_HEADER_BYTES or header[0:8] != VECTOR_MAGIC:
+        raise ExportError(f"{sidecar} is not a GutenbergKG vector sidecar")
+    codes = {code: name for name, code in _DTYPE_CODES.items()}
+    dtype = codes.get(header[8])
+    if dtype is None:
+        raise ExportError(f"{sidecar} has an unknown vector dtype ({header[8]})")
+    dim = int.from_bytes(header[12:16], "little")
+    count = int.from_bytes(header[16:24], "little")
+    expected = VECTOR_HEADER_BYTES + count * dim * _DTYPE_ITEMSIZE[dtype]
+    actual = sidecar.stat().st_size
+    if actual != expected:
+        raise ExportError(
+            f"{sidecar} is {actual} bytes, expected {expected} for "
+            f"{count} x {dim} {dtype} — truncated?"
+        )
+    numpy_dtype = numpy.int8 if dtype == "int8" else numpy.float32
+    matrix = numpy.memmap(
+        sidecar, dtype=numpy_dtype, mode="r", offset=VECTOR_HEADER_BYTES, shape=(count, dim)
+    )
+    return matrix, dtype
 
 
 # --------------------------------------------------------------------------
@@ -992,36 +1089,64 @@ def search_pack(
     k: int = 10,
     genre: str | None = None,
     min_score: float = 0.0,
-    dtype: str = "int8",
 ) -> list[dict]:
     """Run the packed corpus's own hybrid search — dense + BM25, fused by RRF.
 
-    :param pack: A passage pack.
+    A direct translation of ``handler._semantic_search`` onto the pack: same
+    ``k * 3`` oversampling in both channels, same :data:`RRF_K`, same
+    ``round(1 - distance, 4)`` score, and the same hydrate-missing-cosine step
+    so every fused hit carries an honest score.
+
+    The dense channel is a dot product over the memory-mapped sidecar rather
+    than a vec0 query, which is what the Swift engine does with Accelerate.
+    Both are exhaustive, so this is the same ranking by a simpler route.
+
+    :param pack: A passage pack (its sidecar sits beside it).
     :param query_vector: The query embedding (numpy float32, 384-d).
     :param query_text: The raw query, for the lexical channel.
     :param k: Hits to return.
     :param genre: Restrict to one genre, as the worker's ``genre_filter`` does.
     :param min_score: Drop hits below this cosine score.
-    :param dtype: The pack's vector dtype.
     :returns: Hit dicts in the worker's shape, best-first.
     """
-    con = _connect_with_vec(pack, read_only=True)
+    numpy = _load_numpy()
+    con = sqlite3.connect(f"file:{pack}?mode=ro", uri=True)
     con.row_factory = sqlite3.Row
     try:
         scope = _scope_clause(genre=genre)
         params: list[object] = [genre] if genre else []
 
-        match = "vec_int8(?)" if dtype == "int8" else "?"
-        dense_sql = (
-            "SELECT p.id AS id, v.distance AS distance "
-            "FROM vec_nodes v JOIN passages p ON p.rowid = v.rowid "
-            f"WHERE v.embedding MATCH {match} AND k = ? "
-            f"AND v.rowid IN (SELECT rowid FROM passages WHERE {scope}) "
-            "ORDER BY distance"
-        )
-        blob = encode_vector(query_vector, dtype)
-        dense = list(con.execute(dense_sql, [blob, k * 3, *params]))
-        distance_by_id = {row["id"]: float(row["distance"]) for row in dense}
+        dense_ids: list[str] = []
+        distance_by_id: dict[str, float] = {}
+        sidecar = pack.with_suffix(".vectors")
+        if sidecar.exists():
+            matrix, dtype = read_vector_sidecar(sidecar)
+            rows = con.execute(
+                f"SELECT id, vector_index FROM passages WHERE vector_index IS NOT NULL AND {scope}",
+                params,
+            ).fetchall()
+            if rows:
+                ids = [row["id"] for row in rows]
+                indices = numpy.fromiter(
+                    (row["vector_index"] for row in rows), dtype=numpy.int64, count=len(rows)
+                )
+                # int8 rows are unit vectors scaled by 127; the scale cancels
+                # once the similarity is renormalised, so ranking is unaffected.
+                candidates = numpy.asarray(matrix[indices], dtype=numpy.float32)
+                norms = numpy.linalg.norm(candidates, axis=1).clip(min=1e-12)
+                query = numpy.asarray(query_vector, dtype=numpy.float32)
+                query = query / max(float(numpy.linalg.norm(query)), 1e-12)
+                similarity = (candidates @ query) / norms
+                order = numpy.argsort(-similarity)[: k * 3]
+                dense_ids = [ids[i] for i in order]
+                distance_by_id = {ids[i]: 1.0 - float(similarity[i]) for i in order}
+                # Keep every candidate's score available for the lexical
+                # hydration step below, without re-reading the sidecar.
+                _all_scores = {ids[i]: float(similarity[i]) for i in range(len(ids))}
+            else:
+                _all_scores = {}
+        else:
+            _all_scores = {}
 
         lexical_ids: list[str] = []
         expression = fts_match_expression(query_text)
@@ -1039,26 +1164,12 @@ def search_pack(
 
         # Hydrate cosine for lexical-only ids so every fused hit carries an
         # honest score — handler._semantic_search does exactly this.
-        missing = [i for i in lexical_ids if i not in distance_by_id]
-        if missing:
-            placeholders = ", ".join("?" for _ in missing)
-            rows = con.execute(
-                "SELECT p.id AS id, v.distance AS distance "
-                "FROM vec_nodes v JOIN passages p ON p.rowid = v.rowid "
-                f"WHERE v.embedding MATCH {match} AND k = ? "
-                f"AND v.rowid IN (SELECT rowid FROM passages WHERE {scope} "
-                f"AND id IN ({placeholders})) ORDER BY distance",
-                [blob, len(missing), *params, *missing],
-            )
-            for row in rows:
-                distance_by_id.setdefault(row["id"], float(row["distance"]))
-            lexical_ids = [i for i in lexical_ids if i in distance_by_id]
+        for node_id in lexical_ids:
+            if node_id not in distance_by_id and node_id in _all_scores:
+                distance_by_id[node_id] = 1.0 - _all_scores[node_id]
+        lexical_ids = [i for i in lexical_ids if i in distance_by_id]
 
-        ordered = (
-            rrf_fuse([r["id"] for r in dense], lexical_ids, k)
-            if lexical_ids
-            else [r["id"] for r in dense][:k]
-        )
+        ordered = rrf_fuse(dense_ids, lexical_ids, k) if lexical_ids else dense_ids[:k]
         if not ordered:
             return []
 
@@ -1167,7 +1278,7 @@ def build_golden(
     for query, vector in zip(queries, vectors, strict=False):
         record: dict = {"query": query, "packs": {}}
         for name, path in packs.items():
-            hits = search_pack(path, vector, query, k=k, dtype=dtype)
+            hits = search_pack(path, vector, query, k=k)
             record["packs"][name] = [
                 {"rank": rank, "node_id": hit["node_id"], "score": hit["score"]}
                 for rank, hit in enumerate(hits)
@@ -1247,7 +1358,7 @@ def verify_pack(
         top = numpy.argsort(-exact_scores)[:k]
         expected = {ids[i]: float(exact_scores[i]) for i in top}
 
-        got = search_pack(pack, vector, query, k=k, dtype=dtype)
+        got = search_pack(pack, vector, query, k=k)
         got_ids = [hit["node_id"] for hit in got]
         overlap = len(set(got_ids) & set(expected)) / max(len(expected), 1)
         recalls.append(overlap)
@@ -1315,7 +1426,7 @@ class ExportReport:
 
     @property
     def total_bytes(self) -> int:
-        return sum(pack.bytes for pack in self.packs)
+        return sum(pack.total_bytes for pack in self.packs)
 
 
 def export_swift(options: ExportOptions, *, progress=None) -> ExportReport:
@@ -1449,6 +1560,11 @@ def _manifest(report: ExportReport, bundle: BundlePaths, options: ExportOptions)
         "rrf_k": RRF_K,
         "searched_kinds": list(SEARCHED_KINDS),
         "max_passage_chars": options.max_chars or None,
+        "vector_sidecar": {
+            "magic": VECTOR_MAGIC.decode("ascii"),
+            "header_bytes": VECTOR_HEADER_BYTES,
+            "layout": "row-major, one vector per row, indexed by passages.vector_index",
+        },
         "packs": [
             {
                 "name": pack.name,
@@ -1457,6 +1573,15 @@ def _manifest(report: ExportReport, bundle: BundlePaths, options: ExportOptions)
                 "passages": pack.passages,
                 "vectors": pack.vectors,
                 "passages_without_vectors": pack.missing_vectors,
+                "sidecar": (
+                    {
+                        "name": pack.sidecar.name,
+                        "bytes": pack.sidecar_bytes,
+                        "sha256": pack.sidecar_sha256,
+                    }
+                    if pack.sidecar is not None
+                    else None
+                ),
             }
             for pack in report.packs
         ],

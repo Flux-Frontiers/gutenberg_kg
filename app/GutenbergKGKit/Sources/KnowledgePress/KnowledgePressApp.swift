@@ -4,9 +4,9 @@
 // Run from app/GutenbergKGKit with:  swift run KnowledgePress
 //
 // Answers come from Apple Foundation Models when the Mac can run them
-// (macOS 26 on Apple silicon); passages still come from the worker, so
-// `make up` at the repo root is required either way until the on-device
-// corpus pack lands (Phase 2 of analysis/APP_ARCHITECTURE.md).
+// (macOS 26 on Apple silicon), and passages from the corpus packs when they
+// are installed — `gutenkg export-swift` builds them. With no packs the app
+// falls back to the worker, so `make up` at the repo root is needed then.
 
 import AppKit
 import KnowledgePressUI
@@ -30,6 +30,7 @@ struct KnowledgePressApp: App {
                 .frame(minWidth: 900, minHeight: 600)
                 .task {
                     model.prewarmOnDevice()
+                    await model.loadCorpusPacks()
                     await model.refreshSidebar()
                 }
         }

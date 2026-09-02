@@ -1,9 +1,8 @@
 // © 2026 Eric G. Suchanek, PhD — Flux-Frontiers · SPDX-License-Identifier: Elastic-2.0
 //
-// The retrieval seam. Today only `WorkerRetrieval` conforms; `LocalRetrieval`
-// (Core ML bge-small + sqlite-vec + FTS5 + RRF over an on-device corpus pack,
-// Phase 2 of analysis/APP_ARCHITECTURE.md) drops in behind the same protocol
-// without the chat learning about it.
+// The retrieval seam. `LocalRetrieval` (Core ML bge-small + a mapped vector
+// sidecar + FTS5 + RRF over the installed packs) and `WorkerRetrieval` both
+// answer to it, so the chat never learns which one found a passage.
 
 import Foundation
 

@@ -15,11 +15,9 @@ struct BrowseView: View {
     @State private var path: [BrowseStep] = []
     @State private var loadError: String?
 
-    private var client: WorkerClient {
-        WorkerClient(
-            baseURL: URL(string: model.workerURLString) ?? URL(string: "http://localhost:8000")!,
-            secret: model.secret)
-    }
+    /// The packs when they are installed, the worker when they are not —
+    /// Browse does not need to know which, and neither does the reader.
+    private var browser: any CorpusBrowser { model.browser }
 
     var body: some View {
         NavigationStack(path: $path) {
@@ -62,13 +60,13 @@ struct BrowseView: View {
     private func destination(for step: BrowseStep) -> some View {
         switch step {
         case .books(let genre):
-            BookListView(genre: genre, client: client, loadError: $loadError)
+            BookListView(genre: genre, browser: browser, loadError: $loadError)
         case .chapters(let genre, let book, let title):
             ChapterListView(
-                genre: genre, book: book, title: title, client: client, loadError: $loadError)
+                genre: genre, book: book, title: title, browser: browser, loadError: $loadError)
         case .reader(let genre, let book, let sectionId):
             ChapterReaderView(
-                genre: genre, book: book, sectionId: sectionId, client: client,
+                genre: genre, book: book, sectionId: sectionId, browser: browser,
                 loadError: $loadError)
         }
     }
@@ -83,7 +81,7 @@ enum BrowseStep: Hashable {
 
 private struct BookListView: View {
     let genre: String
-    let client: WorkerClient
+    let browser: any CorpusBrowser
     @Binding var loadError: String?
     @State private var books: [Book] = []
 
@@ -104,7 +102,7 @@ private struct BookListView: View {
         .navigationTitle(genre)
         .task {
             do {
-                books = try await client.listBooks(genre: genre)
+                books = try await browser.listBooks(genre: genre)
                 loadError = nil
             } catch { loadError = error.localizedDescription }
         }
@@ -115,7 +113,7 @@ private struct ChapterListView: View {
     let genre: String
     let book: String
     let title: String
-    let client: WorkerClient
+    let browser: any CorpusBrowser
     @Binding var loadError: String?
     @State private var chapters: [Chapter] = []
 
@@ -130,7 +128,7 @@ private struct ChapterListView: View {
         .navigationTitle(title)
         .task {
             do {
-                chapters = try await client.chapters(genre: genre, book: book)
+                chapters = try await browser.chapters(genre: genre, book: book)
                 loadError = nil
             } catch { loadError = error.localizedDescription }
         }
@@ -141,7 +139,7 @@ private struct ChapterReaderView: View {
     let genre: String
     let book: String
     @State var sectionId: String
-    let client: WorkerClient
+    let browser: any CorpusBrowser
     @Binding var loadError: String?
     @State private var content: ChapterContent?
 
@@ -187,7 +185,7 @@ private struct ChapterReaderView: View {
 
     private func load() async {
         do {
-            content = try await client.chapter(genre: genre, book: book, sectionId: sectionId)
+            content = try await browser.chapter(genre: genre, book: book, sectionId: sectionId)
             loadError = nil
         } catch { loadError = error.localizedDescription }
     }

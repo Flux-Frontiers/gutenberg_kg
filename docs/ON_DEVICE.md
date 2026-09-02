@@ -15,10 +15,19 @@ gutenkg export-swift              # bundles/gutenberg-all → bundles/gutenberg-
 | File | Holds | Rough size |
 |---|---|---:|
 | `core.pack` | genres, books, authors, the Browse entry points | ~5 MB |
-| `gutenberg.pack` | 364 K chunk/section passages, their FTS5 index, their vectors | ~0.9–1.3 GB |
-| `diaries.pack` | the four diaries, same schema plus `timestamp` | ~120 MB |
+| `gutenberg.pack` | 364 K chunk/section passages and their FTS5 index | ~600 MB |
+| `gutenberg.vectors` | their embeddings, row-major, memory-mappable | ~140 MB |
+| `diaries.pack` | the four diaries, same schema plus `timestamp` | ~100 MB |
+| `diaries.vectors` | their embeddings | ~20 MB |
 | `manifest.json` | versions, checksums, and the embedder the packs require | — |
 | `golden.json` | reference top-k per query — the Swift parity gate | — |
+
+You also need the query embedder, which is a separate command:
+
+```sh
+poetry run pip install torch transformers coremltools   # not project deps
+gutenkg export-embedder                                 # → the same directory
+```
 
 ## What is left behind, and why that is safe
 
@@ -53,19 +62,27 @@ for int8** on the real 361 K-vector subset, against 0.825 for the production
 LanceDB IvfFlat index — so the packs are not a mobile compromise. Below 0.9,
 the command says so and points at `--dtype float`.
 
+## Why the vectors sit beside the pack
+
+The vectors are a sidecar file, not a table. That is a deliberate reversal of
+the original design, and the reason is the device:
+
+- A `vec0` virtual table cannot be read without the sqlite-vec **C extension
+  compiled into the reader**, and iOS ships stock SQLite. A pack built that way
+  does not open on the device it was built for.
+- Vendoring ten thousand lines of C to fix that would buy nothing. sqlite-vec's
+  `vec0` search is exhaustive — it was chosen over LanceDB's ANN index
+  *because* it is exact — and so is the dot product the app does instead.
+
+So the app memory-maps `gutenberg.vectors` and multiplies straight out of the
+mapping with vDSP: no allocation per query, no C dependency, and the kernel
+pages out what it is not using. The file is a 32-byte header (magic, dtype,
+dim, count) followed by row-major vectors. `passages.vector_index` is a *dense*
+row number into it, so a passage whose vector the source store lacks leaves no
+hole. The header exists so a truncated download is rejected rather than read as
+embeddings.
+
 ## The pack schema
-
-`passages.rowid` and `vec_nodes.rowid` are the same integer, which makes a
-dense search one join and a genre filter a plain `WHERE`:
-
-```sql
-SELECT p.id, p.content, v.distance
-  FROM vec_nodes v JOIN passages p ON p.rowid = v.rowid
- WHERE v.embedding MATCH vec_int8(?) AND k = ?
-   AND v.rowid IN (SELECT rowid FROM passages
-                    WHERE kind IN ('chunk','section') AND genre = ?)
- ORDER BY distance
-```
 
 Two title columns are deliberate. `title` is the **work's** title, which hit
 cards show; `node_title` is the node's own — a section's chapter name, which
@@ -74,6 +91,16 @@ the Browse tab lists. Collapsing them loses the chapter list.
 Empty chunks are dropped. Empty *sections* are not: they carry no prose, but
 they are the chapter markers `get_chapters` lists and `get_chapter` slices
 between.
+
+The dense query is one join against a dense row index:
+
+```sql
+SELECT id, vector_index FROM passages
+ WHERE vector_index IS NOT NULL AND genre = ?
+```
+
+…scored against the mapped sidecar, then fused with an FTS5/BM25 pass over the
+same scope.
 
 ## The parity gate
 
@@ -94,14 +121,27 @@ will therefore not match the worker's token for token. That is why the golden
 file is generated from the pack: it is the contract Swift must reproduce, not a
 record of what the worker happened to return.
 
-## What still has to happen on the Swift side
+## The Swift side
 
-The packs are half of Phase 2. The other half is the query embedder: the pack's
-vectors are `bge-small-en-v1.5`, and a query embedded by any other model —
-including Apple's own `NLContextualEmbedding` — lands in a different space and
-returns noise. `manifest.json` names the model and dimension so the app can
-assert the match before it searches anything.
+`GutenbergKGKit` reads all of this:
 
-Converting `bge-small` to Core ML (~65 MB fp16, Neural Engine) and pairing it
-with a BERT WordPiece tokenizer is the remaining work, tracked as Phase 2 in
-[`analysis/APP_ARCHITECTURE.md`](https://github.com/Flux-Frontiers/gutenberg_kg/blob/main/analysis/APP_ARCHITECTURE.md).
+| Type | Does |
+|---|---|
+| `CorpusPacks` | opens an installed corpus, checks the manifest against the embedder before trusting a single vector |
+| `BGEEmbedder` | runs `BGEEmbedder.mlpackage` on the Neural Engine; CLS pooling and L2 normalisation are baked into the traced graph |
+| `WordPieceTokenizer` | BERT WordPiece, ported from `tokenization_bert.py` |
+| `VectorIndex` | memory-maps a sidecar, precomputes row norms once, scans with vDSP |
+| `PassagePack` | FTS5/BM25, passage hydration, and the Browse queries over plain SQLite |
+| `LocalRetrieval` | embed → dense → lexical → RRF, the same shape as `_semantic_search` |
+
+The app picks it up automatically: copy the export into Application Support ▸
+Corpus and `AppModel` opens it at launch, showing what it found in Settings ▸
+Corpus. With no packs installed it falls back to the worker, so nothing breaks
+in the meantime.
+
+**Install the embedder alongside the packs.** `manifest.json` names the model
+the corpus was built with and `embedder.json` names the one the app carries; if
+they disagree, `CorpusPacks` refuses to open rather than search a
+384-dimensional space with vectors from a different one. That failure would not
+crash — it would return fluent, ranked, wrong passages — which is exactly why
+it is checked up front.

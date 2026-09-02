@@ -125,15 +125,26 @@ struct EngineBadge: View {
     var body: some View {
         let availability = model.onDeviceAvailability
         HStack(spacing: 7) {
-            Image(systemName: availability.isAvailable ? "iphone.gen3" : "exclamationmark.triangle")
-            if let reason = availability.reason {
-                Text("On-device answers unavailable — \(reason).")
-            } else {
-                Text("Answers are written on this device. Nothing is sent anywhere.")
-            }
+            Image(systemName: symbol(availability))
+            Text(message(availability))
         }
         .font(.caption)
         .foregroundStyle(availability.isAvailable ? Color.secondary : Color.orange)
+    }
+
+    private func symbol(_ availability: SynthesisAvailability) -> String {
+        if !availability.isAvailable { return "exclamationmark.triangle" }
+        return model.isFullyLocal ? "airplane" : "iphone.gen3"
+    }
+
+    private func message(_ availability: SynthesisAvailability) -> String {
+        if let reason = availability.reason {
+            return "On-device answers unavailable — \(reason)."
+        }
+        if model.isFullyLocal {
+            return "Passages and answers both come from this device. Works in airplane mode."
+        }
+        return "Answers are written on this device; passages come from the worker."
     }
 }
 

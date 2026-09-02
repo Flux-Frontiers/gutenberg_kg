@@ -4,6 +4,7 @@
 // search sliders, answer engine, clear chat. Renders as the persistent
 // sidebar on macOS and as a sheet on iPhone; same controls either way.
 
+import Foundation
 import GutenbergKGKit
 import SwiftUI
 
@@ -71,17 +72,18 @@ struct SettingsView: View {
                 .disabled(model.turns.isEmpty)
             }
 
-            Section("Worker") {
-                TextField("URL", text: $model.workerURLString)
-                    .textFieldStyle(.roundedBorder)
-                    .font(.caption)
-                    .onSubmit { Task { await model.refreshSidebar() } }
-                // Say plainly where the passages come from. Until a corpus
-                // pack is installed (Phase 2), retrieval is a network call
-                // even when the answer is written on device.
-                Text("Passages are retrieved from the worker. The answer engine is separate.")
-                    .font(.caption2)
-                    .foregroundStyle(.secondary)
+            corpusSection
+
+            if model.packs == nil {
+                Section("Worker") {
+                    TextField("URL", text: $model.workerURLString)
+                        .textFieldStyle(.roundedBorder)
+                        .font(.caption)
+                        .onSubmit { Task { await model.refreshSidebar() } }
+                    Text("With no corpus installed, passages come from the worker.")
+                        .font(.caption2)
+                        .foregroundStyle(.secondary)
+                }
             }
         }
         #if os(macOS)
@@ -140,6 +142,49 @@ struct SettingsView: View {
                 }
             case .off:
                 EmptyView()
+            }
+        }
+    }
+}
+
+extension SettingsView {
+    /// Where the passages come from, and whether the answer needs the network.
+    @ViewBuilder
+    fileprivate var corpusSection: some View {
+        Section("📦 Corpus") {
+            if model.isLoadingPacks {
+                HStack(spacing: 8) {
+                    ProgressView().controlSize(.small)
+                    Text("Opening the installed corpus…")
+                }
+                .font(.caption)
+            } else if let packs = model.packs {
+                LabeledContent("Passages", value: "on this device")
+                LabeledContent("Vectors", value: packs.manifest.vectorDtype)
+                LabeledContent("Embedder", value: packs.manifest.embedder.model)
+                LabeledContent(
+                    "Size",
+                    value: ByteCountFormatter.string(
+                        fromByteCount: Int64(packs.manifest.totalBytes), countStyle: .file))
+                if model.isFullyLocal {
+                    Label(
+                        "Search and answers both run here. Airplane mode changes nothing.",
+                        systemImage: "airplane")
+                        .font(.caption)
+                        .foregroundStyle(Color.green)
+                } else {
+                    Text("Passages are local; the answer engine is not.")
+                        .font(.caption)
+                        .foregroundStyle(.secondary)
+                }
+            } else {
+                Label(
+                    model.packsError
+                        ?? "No corpus installed — passages come from the worker. Build one with `gutenkg export-swift`.",
+                    systemImage: model.packsError == nil ? "info.circle" : "exclamationmark.triangle"
+                )
+                .font(.caption)
+                .foregroundStyle(model.packsError == nil ? Color.secondary : Color.orange)
             }
         }
     }
