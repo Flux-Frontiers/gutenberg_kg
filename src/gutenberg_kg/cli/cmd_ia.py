@@ -16,12 +16,20 @@ def ia_group():
 @ia_group.command("search")
 @click.argument("query")
 @click.option("--max-results", default=25, show_default=True, help="Maximum results to display.")
-def ia_search(query, max_results):
+@click.option(
+    "--export-catalog",
+    default=None,
+    metavar="FILE",
+    type=click.Path(dir_okay=False),
+    help="Also write the results to FILE as a commented draft catalog.",
+)
+def ia_search(query, max_results, export_catalog):
     """Search the Internet Archive catalog.
     \f
 
     :param query: Keyword query sent to the IA full-text search API.
     :param max_results: Maximum number of results to display.
+    :param export_catalog: Optional path to write a commented draft catalog to.
     """
     try:
         results = ia.search_ia(query, max_results=max_results)
@@ -29,6 +37,11 @@ def ia_search(query, max_results):
         click.echo(f"Search failed: {exc}", err=True)
         raise SystemExit(1)
     ia.format_search_results(results)
+
+    if export_catalog:
+        n = ia.export_draft_catalog(query, results, export_catalog)
+        click.echo(f"\nWrote {n} commented entr{'y' if n == 1 else 'ies'} to {export_catalog}")
+        click.echo("Review and uncomment the lines you want, then: gutenkg ia catalog <file>")
 
 
 @ia_group.command("download")

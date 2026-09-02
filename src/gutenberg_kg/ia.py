@@ -774,6 +774,38 @@ def parse_catalog(catalog_path: str | Path) -> list[tuple[str, str | None]]:
     return entries
 
 
+def export_draft_catalog(query: str, results: list[dict], path: str | Path) -> int:
+    """Write search results to a catalog file as commented-out draft entries.
+
+    The curation step between "search returned 25 things" and "download these
+    six". Every line is written commented out, so an un-reviewed draft downloads
+    nothing if handed straight to ``gutenkg ia catalog`` -- IA search is noisy
+    and returns modern reprints alongside period scans, which is exactly what
+    needs a human pass before anything is fetched.
+
+    Appending several searches into one file before curating is the intended
+    workflow; see ``docs/IA_CATALOG_WORKFLOW.md``.
+
+    :param query: The search query, recorded in the file header for provenance.
+    :param results: Search result dicts from :func:`search_ia`.
+    :param path: Destination catalog file; parent directories are created.
+    :returns: Number of entries written.
+    """
+    out = Path(path)
+    out.parent.mkdir(parents=True, exist_ok=True)
+    with out.open("w", encoding="utf-8") as f:
+        f.write(f"# Catalog draft — IA search: {query}\n")
+        f.write("# Every line is commented out. Uncomment the ones you want.\n")
+        f.write("# Format: <identifier>[TAB<title>]  (comment lines start with #)\n")
+        f.write("# Check rights before uncommenting: an IA hit's year is the edition\n")
+        f.write("# scanned, not evidence the text is free.\n\n")
+        for r in results:
+            title = r.get("title") or ""
+            year = r.get("date") or "?"
+            f.write(f"# {r['identifier']}\t{title}\t# {year}\n")
+    return len(results)
+
+
 def record_in_catalog(
     genre: str | None,
     identifier: str,
@@ -855,7 +887,11 @@ def run_catalog(
     """Download all items from a catalog file.
 
     :param catalog_file: Path to a tab-separated catalog file (identifier [title]).
-    :param genre: Genre subdirectory for all items.
+    :param genre: Genre subdirectory for all items; when omitted it is inferred
+        from the catalog's filename stem, since ``scripts/catalogs/<genre>.txt``
+        is the layout every catalog already follows. Without inference an
+        omitted ``--genre`` silently writes books to the corpus root, where no
+        catalog covers them.
     :param force: Re-download even if already present.
     :param dry_run: Print actions without writing files.
     :return: 0 on full success, 1 if any item failed.
@@ -864,6 +900,10 @@ def run_catalog(
     if not catalog_path.exists():
         print(f"ERROR: catalog not found: {catalog_path}", file=sys.stderr)
         return 1
+
+    if genre is None and catalog_path.stem in ALL_GENRES:
+        genre = catalog_path.stem
+        print(f"  Genre inferred from filename: {genre}")
 
     entries = parse_catalog(catalog_path)
 
