@@ -53,8 +53,19 @@ public struct LocalRetrieval: RetrievalEngine {
 
         // Books and diaries are separate packs ranked on the same cosine scale,
         // so merging by score is the whole of the `all` case — the worker does
-        // the same thing across its DocKG and DiaryKG tables.
-        hits.sort { $0.score > $1.score }
+        // the same thing across its DocKG and DiaryKG tables
+        // (`handler.query`, the `corpus == "all"` branch).
+        //
+        // Only that case. Within one pack the order is already RRF's, and
+        // cosine is not what RRF ranked by: a literal BM25 match that fusion
+        // floated to the top carries a *lower* cosine than the semantic hits
+        // beneath it, so re-sorting here would bury exactly the hit fusion was
+        // built to surface. `handler._semantic_search` keeps the fused order
+        // and so does `export_swift.search_pack`, which is what golden.json
+        // records — its ranks are deliberately not score-monotonic.
+        if packsSearched > 1 {
+            hits.sort { $0.score > $1.score }
+        }
         if hits.count > request.k { hits = Array(hits.prefix(request.k)) }
 
         return RetrievalResult(

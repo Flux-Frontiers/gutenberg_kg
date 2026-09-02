@@ -25,10 +25,21 @@ private struct GoldenFile: Decodable {
     struct Tolerance: Decodable {
         let rankOverlap: Double
         let scoreDelta: Double
+        /// How far a shared hit may move between the reference and here.
+        /// Defaulted so a golden file written before this key still loads.
+        let maxRankDrift: Int
 
         enum CodingKeys: String, CodingKey {
             case rankOverlap = "rank_overlap"
             case scoreDelta = "score_delta"
+            case maxRankDrift = "max_rank_drift"
+        }
+
+        init(from decoder: Decoder) throws {
+            let container = try decoder.container(keyedBy: CodingKeys.self)
+            rankOverlap = try container.decode(Double.self, forKey: .rankOverlap)
+            scoreDelta = try container.decode(Double.self, forKey: .scoreDelta)
+            maxRankDrift = try container.decodeIfPresent(Int.self, forKey: .maxRankDrift) ?? 2
         }
     }
 
@@ -113,6 +124,30 @@ struct GoldenParityTests {
                     failures.append(
                         "[\(packName)] \(entry.query): rank overlap \(String(format: "%.2f", overlap)) "
                             + "< \(golden.tolerance.rankOverlap)")
+                }
+
+                // Order, not just membership. The overlap above is a set
+                // test, so a result holding the right passages in the wrong
+                // sequence passes it — which is exactly how an unconditional
+                // sort by cosine survived here. golden.json records the fused
+                // order, and RRF's scores are deliberately not monotonic: a
+                // literal BM25 match sits above semantic hits with a higher
+                // cosine. Comparing only the shared ids keeps this from
+                // double-reporting a miss the overlap check already named.
+                let shared = got.map(\.nodeId).filter(expectedIDs.contains)
+                let sharedSet = Set(shared)
+                let referenceOrder = expected.map(\.nodeID).filter(sharedSet.contains)
+                let referenceRank = Dictionary(
+                    uniqueKeysWithValues: referenceOrder.enumerated().map { ($1, $0) })
+                for (position, id) in shared.enumerated() {
+                    guard let reference = referenceRank[id] else { continue }
+                    let drift = abs(position - reference)
+                    if drift > golden.tolerance.maxRankDrift {
+                        failures.append(
+                            "[\(packName)] \(entry.query): \(id) sits at \(position) "
+                                + "but the reference fused it at \(reference) (drift \(drift) "
+                                + "> \(golden.tolerance.maxRankDrift))")
+                    }
                 }
 
                 // Scores are compared only where both sides found the passage;

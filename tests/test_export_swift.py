@@ -24,6 +24,7 @@ from gutenberg_kg.export_swift import (
     _truncate,
     export_swift,
     fts_match_expression,
+    fts_phrase_expression,
     locate_bundle,
     rrf_fuse,
     split_source_path,
@@ -373,6 +374,11 @@ class TestHelpers:
     def test_fts_expression_of_pure_punctuation_is_empty(self):
         assert fts_match_expression("!!! ???") == ""
 
+    def test_phrase_expression_keeps_the_terms_adjacent(self):
+        assert fts_phrase_expression("pillar of salt") == '"pillar of salt"'
+        assert fts_phrase_expression("Moses?") == '"Moses"'
+        assert fts_phrase_expression("!!! ???") == ""
+
     def test_truncate_cuts_at_a_word_boundary(self):
         assert _truncate("the quick brown fox", 12) == "the quick…"
         assert _truncate("short", 100) == "short"
@@ -616,6 +622,34 @@ class TestSearchPack:
         dense_only = search_pack(searchable, self._basis(0), "zzzz", k=1)
         assert dense_only[0]["node_id"] == "gutenberg:c:1"
 
+        fused = search_pack(searchable, self._basis(0), "pillar salt", k=1)
+        assert fused[0]["node_id"] == "gutenberg:s:1"
+
+    def test_phrase_beats_the_or_fallback(self, searchable):
+        """The "pillar of salt" case — the one that motivated the channel.
+
+        The dense vector points at ``c:1``, so cosine alone returns it. The
+        literal verse lives in ``s:1``. Searching the exact phrase must find
+        ``s:1`` and let RRF promote it: an OR over the terms puts the stop word
+        "of" in play, which across 364 K real passages matches nearly
+        everything and dilutes BM25 until the verse is unreachable. That is the
+        failure this two-step exists to prevent, so it is asserted here rather
+        than left to the corpus to demonstrate.
+        """
+        from gutenberg_kg.export_swift import search_pack
+
+        fused = search_pack(searchable, self._basis(0), "pillar of salt", k=1)
+        assert fused[0]["node_id"] == "gutenberg:s:1"
+
+    def test_or_fallback_runs_when_no_passage_holds_the_phrase(self, searchable):
+        """No passage contains "pillar salt" adjacently, so the phrase misses.
+
+        Falling back to the any-term query is what keeps that from returning
+        nothing — `s:1` is still reachable through the terms it does hold.
+        """
+        from gutenberg_kg.export_swift import search_pack
+
+        assert fts_phrase_expression("pillar salt") == '"pillar salt"'
         fused = search_pack(searchable, self._basis(0), "pillar salt", k=1)
         assert fused[0]["node_id"] == "gutenberg:s:1"
 
