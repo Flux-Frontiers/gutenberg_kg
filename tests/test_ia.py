@@ -598,3 +598,93 @@ def test_ia_parse_catalog_reads_identifier_and_title(tmp_path: Path):
         ("MiracleMongers", "Miracle Mongers"),
         ("BareIdentifier", None),
     ]
+
+
+# ---------------------------------------------------------------------------
+# ported from ia_kg: draft-catalog export and genre inference
+# ---------------------------------------------------------------------------
+
+
+def test_export_draft_catalog_comments_every_entry(tmp_path: Path):
+    """Nothing must download from an un-reviewed draft. IA search returns
+    modern reprints beside period scans, so the human pass is the point."""
+    results = [
+        {"identifier": "audels-electric-library-vol-1", "title": "Audels Vol 1", "date": "1929"},
+        {"identifier": "audelsnewelectri0004unse", "title": "Audels New Vol IV", "date": "1963"},
+    ]
+    out = tmp_path / "catalogs" / "audel-electric.txt"
+    assert _ia.export_draft_catalog("audels electric library", results, out) == 2
+
+    text = out.read_text(encoding="utf-8")
+    assert _ia.parse_catalog(out) == []  # every line commented -> parses to nothing
+    assert "audels-electric-library-vol-1" in text
+    assert "1963" in text  # the year is carried so rights can be judged
+    assert "audels electric library" in text  # query recorded for provenance
+
+
+def test_export_draft_catalog_creates_parent_dirs(tmp_path: Path):
+    out = tmp_path / "a" / "b" / "draft.txt"
+    _ia.export_draft_catalog("q", [{"identifier": "x", "title": "X", "date": "1900"}], out)
+    assert out.exists()
+
+
+def test_export_draft_catalog_round_trips_after_uncommenting(tmp_path: Path):
+    """The documented workflow: export, uncomment, feed straight to catalog."""
+    results = [{"identifier": "vol-1", "title": "Vol 1", "date": "1929"}]
+    out = tmp_path / "d.txt"
+    _ia.export_draft_catalog("q", results, out)
+    # a human uncommenting one line, keeping the title, dropping the year note
+    out.write_text("vol-1\tVol 1\n", encoding="utf-8")
+    assert _ia.parse_catalog(out) == [("vol-1", "Vol 1")]
+
+
+def test_run_catalog_infers_genre_from_filename(tmp_path: Path, monkeypatch, capsys):
+    """Without inference an omitted --genre writes books to the corpus root,
+    where no catalog covers them."""
+    monkeypatch.setattr(_ia, "ALL_GENRES", ["audel-electric"])
+    cat = tmp_path / "audel-electric.txt"
+    cat.write_text("some-identifier\tSome Title\n", encoding="utf-8")
+
+    seen = {}
+
+    def _fake_download(identifier, title=None, genre=None, force=False, dry_run=False):
+        seen["genre"] = genre
+        return "/fake/path.md"
+
+    monkeypatch.setattr(_ia, "download_book", _fake_download)
+    _ia.run_catalog(str(cat), genre=None)
+    assert seen["genre"] == "audel-electric"
+    assert "inferred from filename" in capsys.readouterr().out
+
+
+def test_run_catalog_explicit_genre_wins_over_filename(tmp_path: Path, monkeypatch):
+    monkeypatch.setattr(_ia, "ALL_GENRES", ["audel-electric", "curiosities"])
+    cat = tmp_path / "audel-electric.txt"
+    cat.write_text("some-identifier\tSome Title\n", encoding="utf-8")
+
+    seen = {}
+
+    def _fake_download(identifier, title=None, genre=None, force=False, dry_run=False):
+        seen["genre"] = genre
+        return "/fake/path.md"
+
+    monkeypatch.setattr(_ia, "download_book", _fake_download)
+    _ia.run_catalog(str(cat), genre="curiosities")
+    assert seen["genre"] == "curiosities"
+
+
+def test_run_catalog_does_not_invent_a_genre(tmp_path: Path, monkeypatch):
+    """A filename that is not a known genre must not become one."""
+    monkeypatch.setattr(_ia, "ALL_GENRES", ["audel-electric"])
+    cat = tmp_path / "random-notes.txt"
+    cat.write_text("some-identifier\tSome Title\n", encoding="utf-8")
+
+    seen = {}
+
+    def _fake_download(identifier, title=None, genre=None, force=False, dry_run=False):
+        seen["genre"] = genre
+        return "/fake/path.md"
+
+    monkeypatch.setattr(_ia, "download_book", _fake_download)
+    _ia.run_catalog(str(cat), genre=None)
+    assert seen["genre"] is None

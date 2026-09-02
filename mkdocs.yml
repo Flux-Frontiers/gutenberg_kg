@@ -60,6 +60,7 @@ nav:
       - Books in the corpus: CORPUS.md
       - Corpus wishlist: CORPUS_WISHLIST.md
       - Download pipeline: DOWNLOAD_PIPELINE.md
+      - IA catalog workflow: IA_CATALOG_WORKFLOW.md
       - Ingestion pipeline: ingestion-pipeline.md
   - Interfaces:
       - Chat UI: CHAT_UI.md
