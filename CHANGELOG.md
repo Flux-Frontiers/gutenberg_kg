@@ -56,7 +56,7 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   hops the graph — so 324 K topic/entity/keyword nodes, all 5.1 M edges, and
   the embed-text duplicate of every passage stay behind. Vectors are
   re-encoded fp32 → int8, L2-normalised first so the ×127 scaling lands
-  inside range instead of clipping. About 5.7 GB in, about 1.3 GB out.
+  inside range instead of clipping. About 5.7 GB in, about 640 MB out.
 
   Column sets differ across the fleet's stores — a diary carries `timestamp`,
   a book carries `chapter` — and they change as KGs are rebuilt, so every read
