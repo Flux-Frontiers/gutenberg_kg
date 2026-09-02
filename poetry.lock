@@ -2341,15 +2341,15 @@ type = ["pygobject-stubs", "pytest-mypy (>=1.0.1)", "shtab", "types-pywin32"]
 
 [[package]]
 name = "kg-rag"
-version = "0.14.0"
+version = "0.15.0"
 description = "Orchestration layer for the KGRAG(tm) components."
 optional = true
 python-versions = "<3.14,>=3.12"
 groups = ["main"]
 markers = "extra == \"kgdeps\""
 files = [
-    {file = "kg_rag-0.14.0-py3-none-any.whl", hash = "sha256:ef00a4a37923272f8b7bf43fcece08c4d2118f9097147ab9ba67f9893ee53344"},
-    {file = "kg_rag-0.14.0.tar.gz", hash = "sha256:c106a3166416b52ef8c8daaf9009a13c3725e9ab6fceffe2654190ff358d2e1c"},
+    {file = "kg_rag-0.15.0-py3-none-any.whl", hash = "sha256:13f92378ca806276e1cec4aab8836fe4ec36f681c17cd3ea19e79376f9ed0f7c"},
+    {file = "kg_rag-0.15.0.tar.gz", hash = "sha256:61298f631ede2faaa8ab3a2bf73a6dae96a05089c59b1ea9d026a38d2e24fa5b"},
 ]
 
 [package.dependencies]
@@ -2365,11 +2365,11 @@ torch = ">=2.5.1"
 transformers = ">=5.5.0,<6"
 
 [package.extras]
-all = ["PyQt5 (>=5.15.0)", "diary-kg (>=0.97.0)", "doc-kg (>=0.21.2)", "firecrawl-anydoc (>=0.1.9)", "ftree-kg (>=0.14.0)", "markdown (>=3.6)", "memory-kg (>=0.7.0)", "param (>=2.0.0)", "plotly (>=5.14.0)", "pycode-kg (>=0.23.1)", "pyvis (>=0.3.2)", "pyvista (>=0.44.0)", "pyvistaqt (>=0.11.0)", "streamlit (>=1.35.0)", "trame-vtk (>=2.0.0)"]
+all = ["PyQt5 (>=5.15.0)", "diary-kg (>=0.97.0)", "doc-kg (>=0.22.0)", "firecrawl-anydoc (>=0.1.9)", "ftree-kg (>=0.14.0)", "markdown (>=3.6)", "memory-kg (>=0.7.0)", "param (>=2.0.0)", "plotly (>=5.14.0)", "pycode-kg (>=0.23.1)", "pyvis (>=0.3.2)", "pyvista (>=0.44.0)", "pyvistaqt (>=0.11.0)", "streamlit (>=1.35.0)", "trame-vtk (>=2.0.0)"]
 diary = ["diary-kg (>=0.97.0)"]
 filetree = ["ftree-kg (>=0.14.0)"]
 ingest = ["firecrawl-anydoc (>=0.1.9)"]
-kg = ["doc-kg (>=0.21.2)", "memory-kg (>=0.7.0)", "pycode-kg (>=0.23.1)"]
+kg = ["doc-kg (>=0.22.0)", "memory-kg (>=0.7.0)", "pycode-kg (>=0.23.1)"]
 pi = ["llama-cpp-python (>=0.3.0)"]
 qt = ["PyQt5 (>=5.15.0)"]
 viz = ["plotly (>=5.14.0)", "pyvis (>=0.3.2)", "streamlit (>=1.35.0)"]
@@ -2378,14 +2378,14 @@ viz3d = ["PyQt5 (>=5.15.0)", "markdown (>=3.6)", "param (>=2.0.0)", "pyvista (>=
 
 [[package]]
 name = "kgmodule-utils"
-version = "0.18.0"
+version = "0.18.1"
 description = "Shared types, graph store, semantic index, and pipeline base for the KGModule SDK"
 optional = false
 python-versions = "<3.14,>=3.12"
 groups = ["main"]
 files = [
-    {file = "kgmodule_utils-0.18.0-py3-none-any.whl", hash = "sha256:230adc9bdeb517867c18d9f357d25f619f66a64aee7fef0ee9a7cc125553a818"},
-    {file = "kgmodule_utils-0.18.0.tar.gz", hash = "sha256:b8b02d1f5397e39d1459b8f05af0ae29b218ea183ad21f2a37b533fbe75725c7"},
+    {file = "kgmodule_utils-0.18.1-py3-none-any.whl", hash = "sha256:f79c3894dbff47c25880f8d8164dcccabf06354b9142ea3ef3a6dca1dea27827"},
+    {file = "kgmodule_utils-0.18.1.tar.gz", hash = "sha256:cd6e67029d428c1085e6ad018c9d78205f6e6c9c0a46c6f747f507b78a72f4a5"},
 ]
 
 [package.dependencies]
@@ -2398,12 +2398,12 @@ openai = {version = ">=1.30.0", optional = true, markers = "extra == \"synthesis
 pillow = {version = ">=10.0.0", optional = true, markers = "extra == \"synthesis\""}
 PyQt5 = {version = ">=5.15.0", optional = true, markers = "extra == \"viz3d-qt\""}
 pyvista = {version = ">=0.44.0", optional = true, markers = "extra == \"viz3d-qt\" or extra == \"viz3d-render\""}
-quiltwright = {version = ">=0.6.0", optional = true, markers = "extra == \"viz3d-qt\""}
+quiltwright = {version = ">=0.7.0", optional = true, markers = "extra == \"viz3d-qt\""}
 rich = {version = ">=13.0.0,<15.0.0", optional = true, markers = "extra == \"semantic\""}
 sentence-transformers = {version = ">=5.4.1", optional = true, markers = "extra == \"semantic\""}
 sqlite-vec = [
-    {version = "0.1.9", optional = true, markers = "extra == \"semantic\""},
     {version = "0.1.9", optional = true, markers = "extra == \"sqlite-vec\""},
+    {version = "0.1.9", optional = true, markers = "extra == \"semantic\""},
 ]
 torch = {version = ">=2.5.1", optional = true, markers = "extra == \"semantic\""}
 transformers = {version = ">=5.5.0,<6", optional = true, markers = "extra == \"semantic\""}
@@ -2417,7 +2417,7 @@ synthesis = ["httpx (>=0.27.0)", "openai (>=1.30.0)", "pillow (>=10.0.0)"]
 synthesis-mflux = ["httpx (>=0.27.0)", "mflux (>=0.9.0)", "openai (>=1.30.0)", "pillow (>=10.0.0)"]
 viz = ["pyvis (>=0.3.2)"]
 viz3d = ["numpy (>=1.24.0)"]
-viz3d-qt = ["PyQt5 (>=5.15.0)", "numpy (>=1.24.0)", "pyvista (>=0.44.0)", "quiltwright (>=0.6.0)"]
+viz3d-qt = ["PyQt5 (>=5.15.0)", "numpy (>=1.24.0)", "pyvista (>=0.44.0)", "quiltwright (>=0.7.0)"]
 viz3d-render = ["numpy (>=1.24.0)", "pyvista (>=0.44.0)"]
 
 [[package]]
@@ -7096,4 +7096,4 @@ viz3d = ["PyQt5", "kgmodule-utils", "markdown", "param", "pyvistaqt", "quiltwrig
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.12,<3.14"
-content-hash = "efa0a1d41085505e71b9b5b1243ba655ef3f897130f322177eae9aa0729fc271"
+content-hash = "f284861e70503e7fb5a5fd23b91644602477430168ba24f99e1fe86b82b2325c"

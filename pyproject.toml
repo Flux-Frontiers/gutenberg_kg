@@ -106,7 +106,7 @@ dependencies = [
     # 0.18.0: gutenberg_kg.temporal stamps a book's publication year as the
     # shared kg_utils.temporal contract. A library is the clearest year-precision
     # case in the fleet -- "1876" must stay a year, not become 1876-01-01.
-    "kgmodule-utils[synthesis,sqlite-vec]>=0.18.0",
+    "kgmodule-utils[synthesis,sqlite-vec]>=0.18.1",
     "rich>=14.3.3,<15",
     "doc-kg (>=0.22.0)",  # transformers 5.x — must match kg-rag; see the kgdeps extra
     "diary-kg (>=0.97.0)",
@@ -117,7 +117,7 @@ dependencies = [
 kgdeps = [
     # Floors track the current releases — kg-rag 0.11.0 needs transformers>=5.5.0,
     # which older doc-kg/pycode-kg pins (transformers<4.57) contradict.
-    "kg-rag>=0.14.0",
+    "kg-rag>=0.15.0",
     "pycode-kg>=0.23.1",
 ]
 viz = [
@@ -155,7 +155,7 @@ viz3d = [
     # returns a CastResult where it used to return a (path, error) tuple, and
     # supplies DEFAULT_QUILT_PRESET/DEFAULT_CAST_SCALE, which this module now
     # aliases rather than declaring its own copies of.
-    "kgmodule-utils[viz3d-render,viz3d-qt]>=0.18.0",
+    "kgmodule-utils[viz3d-render,viz3d-qt]>=0.18.1",
     # Light-field output (`gutenkg quilt`). 0.4.0 supplied depth_report() and
     # widened requires-python to <3.14, which retired the old marker gate.
     # 0.6.0 supplies save_and_cast_quilt() and QuiltSpec.scaled(), both
@@ -176,7 +176,7 @@ pov = [
     # install this extra alone and write scenes. `[viz3d]` here is the SDK's
     # NumPy-only geometry extra, NOT `[viz3d-render]`, which is what would pull
     # PyVista back in.
-    "kgmodule-utils[viz3d]>=0.18.0",
+    "kgmodule-utils[viz3d]>=0.18.1",
     "quiltwright>=0.7.0",
 ]
 mcp = [
