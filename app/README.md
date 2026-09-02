@@ -5,6 +5,8 @@ Swift workspace for the native app described in
 
 **Setting it up for the first time? Follow [RUNBOOK.md](RUNBOOK.md)** — build
 the packs, convert the embedder, compile, install, verify.
+**New to Apple platforms?** [docs/APP_INTERNALS.md](../docs/APP_INTERNALS.md)
+explains how the whole thing fits together.
 
 ## Layout
 

@@ -64,6 +64,7 @@ nav:
   - Interfaces:
       - Chat UI: CHAT_UI.md
       - On-device corpus packs: ON_DEVICE.md
+      - Inside the app: APP_INTERNALS.md
       - RunPod deployment: RUNPOD.md
   - Visualization:
       - Ray-tracing the knowledge tree: POVRAY.md
