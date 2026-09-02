@@ -1,0 +1,47 @@
+# XcodeGen spec for the iPhone app.
+#   brew install xcodegen && cd app/ios && xcodegen generate && open KnowledgePress.xcodeproj
+# See README.md for the by-hand alternative.
+name: KnowledgePress
+options:
+  bundleIdPrefix: com.fluxfrontiers
+  deploymentTarget:
+    iOS: "18.0"
+  createIntermediateGroups: true
+
+packages:
+  GutenbergKGKit:
+    path: ../GutenbergKGKit
+
+targets:
+  KnowledgePress:
+    type: application
+    platform: iOS
+    sources:
+      - Sources
+    dependencies:
+      - package: GutenbergKGKit
+        product: KnowledgePressUI
+    info:
+      path: Info.plist
+      properties:
+        CFBundleDisplayName: Knowledge Press
+        CFBundleShortVersionString: "1.0"
+        UILaunchScreen: {}
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
+        # The worker is a Mac on the same network, over plain HTTP.
+        NSAppTransportSecurity:
+          NSAllowsLocalNetworking: true
+        NSLocalNetworkUsageDescription:
+          The Knowledge Press connects to the GutenbergKG worker running on your
+          Mac to retrieve passages. Answers are written on this device.
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.fluxfrontiers.knowledgepress
+        MARKETING_VERSION: "1.0"
+        CURRENT_PROJECT_VERSION: "1"
+        SWIFT_VERSION: "6.0"
+        TARGETED_DEVICE_FAMILY: "1,2"
+        GENERATE_INFOPLIST_FILE: NO

@@ -1,10 +1,15 @@
 // © 2026 Eric G. Suchanek, PhD — Flux-Frontiers · SPDX-License-Identifier: Elastic-2.0
 //
-// The Knowledge Press — macOS thin client (Phase 1 of analysis/APP_ARCHITECTURE.md).
+// The Knowledge Press — macOS shell.
 // Run from app/GutenbergKGKit with:  swift run KnowledgePress
-// (needs a worker on http://localhost:8000 — `make up` at repo root).
+//
+// Answers come from Apple Foundation Models when the Mac can run them
+// (macOS 26 on Apple silicon), and passages from the corpus packs when they
+// are installed — `gutenkg export-swift` builds them. With no packs the app
+// falls back to the worker, so `make up` at the repo root is needed then.
 
 import AppKit
+import KnowledgePressUI
 import SwiftUI
 
 @main
@@ -20,32 +25,14 @@ struct KnowledgePressApp: App {
 
     var body: some Scene {
         WindowGroup("The Knowledge Press") {
-            RootView()
+            MacRootView()
                 .environment(model)
                 .frame(minWidth: 900, minHeight: 600)
                 .task {
+                    model.prewarmOnDevice()
+                    await model.loadCorpusPacks()
                     await model.refreshSidebar()
                 }
-        }
-    }
-}
-
-/// Sidebar (settings) + Chat/Browse tabs — the macOS translation of the
-/// Streamlit layout: the settings sidebar is persistent, like chat.py's.
-struct RootView: View {
-    @Environment(AppModel.self) private var model
-
-    var body: some View {
-        NavigationSplitView {
-            SettingsSidebarView()
-                .navigationSplitViewColumnWidth(min: 260, ideal: 300)
-        } detail: {
-            TabView {
-                ChatView()
-                    .tabItem { Label("Chat", systemImage: "text.bubble") }
-                BrowseView()
-                    .tabItem { Label("Browse", systemImage: "books.vertical") }
-            }
         }
     }
 }

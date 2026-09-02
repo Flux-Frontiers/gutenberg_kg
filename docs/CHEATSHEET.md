@@ -207,6 +207,33 @@ gutenkg query "plague" --registry /path/to/registry.json     # non-default regis
 
 ---
 
+## On-Device Corpus Packs
+
+Build the SQLite packs the native app searches locally (see
+[On-device corpus packs](ON_DEVICE.md)).
+
+```bash
+gutenkg export-swift                      # → bundles/gutenberg-all/swift/
+gutenkg export-swift --verify             # report int8 recall while building
+gutenkg export-swift --dtype float        # exact vectors, ~3x larger
+gutenkg export-swift --no-vectors --no-golden   # fast schema-only pass
+```
+
+Produces `core.pack`, `gutenberg.pack` + `gutenberg.vectors`, `diaries.pack` +
+`diaries.vectors`, a `manifest.json`, and a `golden.json` parity file. Only
+chunk and section nodes are carried over — the query path reads nothing else —
+so a 5.7 GB bundle lands under 1 GB.
+
+The app also needs the query encoder, converted once:
+
+```bash
+poetry run pip install torch transformers coremltools   # not project deps
+gutenkg export-embedder                                 # → the same directory
+```
+
+Copy the whole directory into the app's `Application Support/Corpus`; Settings
+▸ Corpus reports what it found.
+
 ## Visualisation and Light-Field Rendering
 
 `viz3d` and `quilt` need the 3-D extra: `poetry install --extras viz3d`. The
@@ -652,6 +679,7 @@ gutenberg_kg/
 │   ├── CORPUS_WISHLIST.md                  # Curated additions checklist
 │   ├── DOWNLOAD_PIPELINE.md                # End-to-end download pipeline reference
 │   ├── INSTALLATION.md                     # CLI + Docker installation
+│   ├── ON_DEVICE.md                        # On-device corpus packs for the app
 │   ├── PARTNERS.md                         # Collaboration and sponsorship
 │   ├── RUNPOD.md                           # RunPod deployment
 │   ├── SIMILAR_TO_CAP_*.md                 # SIMILAR_TO evaluation record

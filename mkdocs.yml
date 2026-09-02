@@ -63,6 +63,8 @@ nav:
       - Ingestion pipeline: ingestion-pipeline.md
   - Interfaces:
       - Chat UI: CHAT_UI.md
+      - On-device corpus packs: ON_DEVICE.md
+      - Inside the app: APP_INTERNALS.md
       - RunPod deployment: RUNPOD.md
   - Visualization:
       - Ray-tracing the knowledge tree: POVRAY.md
@@ -81,6 +83,7 @@ nav:
           - Diary metadata: api/diary_meta.md
           - Model setup: api/model_setup.md
           - Vector store: api/vector_store.md
+          - Swift corpus packs: api/export_swift.md
       - Diary parsing:
           - Chunking: api/diary_chunk.md
           - Parser: api/diary_parser.md

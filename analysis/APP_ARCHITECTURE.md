@@ -125,6 +125,16 @@ iOS/macOS as a static SQLite extension and keeps the whole corpus in one
 database technology — FTS5 is already SQLite, so dense + lexical + content
 live in one file per pack.
 
+> **Revised at implementation (Phase 0/2).** The packs keep SQLite for content
+> and FTS5, but the vectors moved *out* of `vec0` into a memory-mapped sidecar
+> per pack. A `vec0` table cannot be read without the sqlite-vec C extension
+> compiled into the reader, and iOS ships stock SQLite — a pack built that way
+> would not open on the device it was built for. Vendoring the extension would
+> buy nothing either: `vec0`'s search is exhaustive, which is why it beat
+> LanceDB's ANN index on recall, and so is the vDSP dot product the app does
+> instead. See [docs/ON_DEVICE.md](../docs/ON_DEVICE.md). sqlite-vec is still
+> required at *export* time, to read the bundle's own `vectors.sqlite`.
+
 **Benchmarked 2026-07-14** ([benchmarks/SQLITE_VEC_RESULTS.md](../benchmarks/SQLITE_VEC_RESULTS.md)):
 over the real 361K-vector searched subset, vec0 brute force is *exact*
 (recall@10 = 1.0 fp32 / 0.94 int8) where the production LanceDB IvfFlat
@@ -358,15 +368,22 @@ All phases below target **macOS**; iOS is the last row, not a fork.
 
 | Phase | Deliverable | Depends on |
 |---|---|---|
-| **0. Store spike + export tooling** | sqlite-vec benchmark (`benchmarks/bench_sqlite_vec.py`) → `gutenkg export-swift`: vec0 store conversion, FTS rebuild, golden-query file | bundle exists (`make build-corpus`) |
+| **0. Store spike + export tooling** ✅ | sqlite-vec benchmark (`benchmarks/bench_sqlite_vec.py`) → `gutenkg export-swift`: vec0 store conversion, FTS rebuild, golden-query file — **landed** ([docs/ON_DEVICE.md](../docs/ON_DEVICE.md)) | bundle exists (`make build-corpus`) |
 | **1. Thin client (macOS)** | Full SwiftUI app (Chat/Browse/Settings) in **Remote mode** against the local worker (`make run`) — same look, ships first, validates the UI with zero ML risk | worker runs locally (already true) |
-| **2. Local retrieval** | Core ML embedder + CorpusStore + LocalRetrieval over the converted store on disk, parity gate green; Browse goes local | Phase 0 |
-| **3. Local synthesis** | FoundationModels backend (macOS 26), ContextBudgeter, guardrail fallbacks, streaming turns | Phase 2 |
+| **2. Local retrieval** ✅ | `gutenkg export-swift` + `gutenkg export-embedder` build the packs and the Core ML encoder; `BGEEmbedder`, `WordPieceTokenizer`, `VectorIndex`, `PassagePack` and `LocalRetrieval` read them. Browse goes local through `CorpusBrowser`. Remaining: run the golden gate on real hardware | Phase 0 ✅ |
+| **3. Local synthesis** ✅ | FoundationModels backend (macOS 26 / iOS 26), ContextBudgeter, guardrail fallbacks, streaming turns — **landed**, and ahead of Phase 2: it needs only hits, not where they came from | — |
 | **4. Images** | RemoteImage against localhost image_server/sdxl_server, then Image Playground fallback; on-device vlm_rewrite | Phase 1 (remote) / 3 (rewrite) |
-| **5. iOS target** | Add the iOS destination: pack splitting + hosting + Background Assets, iPhone layout (settings sheet), device context budgets | Phases 2–4 |
+| **5. iOS target** ◐ | iPhone layout (settings sheet) and the app target have **landed** (`app/ios`), sharing every view with the Mac through `KnowledgePressUI`; pack splitting + hosting + Background Assets remain | Phases 2–4 |
 
 Each phase is independently shippable; Phase 1 alone is already "our chat
 interface as a native Mac app".
+
+**Phase 3 landed before Phase 2**, which the dependency column had not
+anticipated. Synthesis consumes `[Hit]` and never asks where the hits came
+from, so the on-device answer engine works against worker retrieval exactly as
+it will against local retrieval — and it is the half a reader can *feel*. The
+app today is the Hybrid row of §2 with the arrow reversed: retrieval remote,
+answer local. Phase 2 turns the last remote call off.
 
 ## 10. Risks & open questions
 
