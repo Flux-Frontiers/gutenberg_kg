@@ -35,6 +35,18 @@ repos:
 
   - repo: local
     hooks:
+      # `--exclude viz3d.py` is not a coverage hole relative to CI, though it
+      # looks like one at a glance. viz3d.py currently carries ~33 real
+      # diagnostics against the installed PyQt5 stubs (Qt.Checked resolution,
+      # a closeEvent override mismatch) — pre-existing, accepted debt, not
+      # something a commit touching an unrelated file should be blocked on.
+      # CI's type-check job (.github/workflows/ci.yml) never sees any of this
+      # either way: it installs `--extras pov`, not `viz3d`, so PyQt5 is
+      # absent there and `[tool.ty.rules] unresolved-import = "ignore"`
+      # (pyproject.toml) swallows the Qt-touching code as untyped rather than
+      # flagging it. This exclusion only matters on a machine that installed
+      # `viz3d` too (docs/INSTALLATION.md's recommended dev setup does), where
+      # PyQt5's real stubs are present and would otherwise surface these.
       - id: ty
         name: ty
         entry: .venv/bin/ty check src/ --exclude src/gutenberg_kg/viz3d.py --python .venv

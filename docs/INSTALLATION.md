@@ -53,17 +53,23 @@ That set is the **recommended default** — everything except dev tooling (KG in
 | `mcp` | fastmcp, structlog (MCP server) | `poetry install --extras mcp` |
 | `chat` | streamlit, httpx, watchdog (reading-room UI) | `poetry install --extras chat` |
 | `image` | fastapi, uvicorn, pydantic (image service) | `poetry install --extras image` |
+| `pov` | quiltwright povgen, kgmodule-utils NumPy-only geometry (analytic POV-Ray output, `gutenkg pov`) — deliberately no PyVista/Qt/GL, so a headless box can install it alone | `poetry install --extras pov` |
 | *(none)* | core runtime only | `poetry install` |
 | *(everything)* | every extra above | `poetry install --all-extras` |
 
-Dev tooling (pytest, ruff, ty, pre-commit) is **not an extra** — it lives in the *optional* Poetry `dev` group, so it stays out of the published wheel metadata and a bare `poetry install` stays core-runtime-only. There is no `.[dev]` to pip-install; development needs Poetry. Contributors who want the test/lint toolchain:
+Dev tooling (pytest, ruff, ty, pre-commit) is **not an extra** — it lives in the *optional* Poetry `dev` group, so it stays out of the published wheel metadata and a bare `poetry install` stays core-runtime-only. There is no `.[dev]` to pip-install; development needs Poetry. Contributors who want the test/lint toolchain, matching every extra CI's own jobs install:
 
 ```bash
-poetry install --with dev --extras "kgdeps viz viz3d mcp image"   # or --with dev --all-extras
+poetry install --with dev --extras "kgdeps viz viz3d mcp image pov"   # or --with dev --all-extras
 pre-commit install
 ```
 
-`--with dev` alone covers `ruff` and `ty`, but the test suite additionally needs the `image` extra: `tests/test_sdxl_server.py` imports fastapi/pydantic at module level, so without it `pytest` aborts during *collection* rather than skipping. That is why CI's test job runs `poetry install --with dev --extras image`. The other extras only turn optional-feature tests from skipped into run.
+`--with dev` alone covers `ruff` and `ty`, but two extras are load-bearing for what the local `ty`/`pytest` pre-commit hooks actually check, and dropping either silently narrows what runs locally versus what CI runs on the same command:
+
+- **`image`** — `tests/test_sdxl_server.py` imports fastapi/pydantic at module level, so without it `pytest` aborts during *collection* rather than skipping. CI's test job runs `poetry install --with dev --extras image --extras pov` for exactly this.
+- **`pov`** — `tests/test_povscene.py` imports `gutenberg_kg.povscene`, which imports `quiltwright.povgen` at module scope; same collection-failure shape as `image` if it is missing. It matters for `ty` too, not just `pytest`: CI's type-check job installs `--extras pov` specifically because an unresolved import is not a type error, so `ty` reported "All checks passed" on `swept_scene(instance_index=<ndarray>)` sitting against a `Sequence[int]` parameter until the extra made the signature visible. Installing `viz3d` already pulls `quiltwright` transitively and happens to satisfy this too — but `pov` is what CI actually names, and a leaner setup that skips `viz3d` (a real path: `pov` explicitly needs no PyVista/Qt/GL) needs it named explicitly.
+
+The other extras only turn optional-feature tests from skipped into run.
 
 > **Watch for a stale venv.** Because the `dev` group is *optional*, a plain `poetry install` in an existing checkout leaves `.venv` without pytest/ruff/ty — and `poetry run pytest` then silently falls through to whatever `pytest` is on your `PATH`, which fails with confusing `ModuleNotFoundError`s. `ls .venv/bin/pytest` to check; re-run the command above to fix.
 
