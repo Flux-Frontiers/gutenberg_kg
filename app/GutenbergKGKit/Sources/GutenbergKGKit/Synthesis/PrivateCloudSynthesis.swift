@@ -114,7 +114,7 @@ import Foundation
                     } catch let error as PrivateCloudComputeLanguageModel.Error {
                         continuation.finish(throwing: Self.translate(error))
                     } catch {
-                        continuation.finish(throwing: SynthesisFailure.backend(error.localizedDescription))
+                        continuation.finish(throwing: translateRemainingError(error))
                     }
                 }
                 continuation.onTermination = { _ in task.cancel() }
@@ -153,12 +153,22 @@ import Foundation
         /// A quota hit is not a bug and not the on-device unavailable case
         /// either, but the chat only distinguishes "try another engine" from
         /// "nothing will help" — `.unavailable` says the former, correctly.
+        ///
+        /// Reads each case's own `debugDescription`, not `errorDescription`:
+        /// found live, the first version of this read `error.errorDescription
+        /// ?? "..."`, and `errorDescription` (the `LocalizedError` half)
+        /// returned nil here, silently falling to the generic fallback string
+        /// and hiding the real reason. `debugDescription` is a plain
+        /// non-optional `String` on every one of these structs — it is what
+        /// actually carries the framework's own explanation.
         static func translate(_ error: PrivateCloudComputeLanguageModel.Error) -> SynthesisFailure {
             switch error {
-            case .quotaLimitReached:
-                return .unavailable(error.errorDescription ?? "today's Private Cloud Compute limit is reached")
-            case .networkFailure, .serviceUnavailable:
-                return .backend(error.errorDescription ?? "Private Cloud Compute request failed")
+            case .quotaLimitReached(let info):
+                return .unavailable(info.debugDescription)
+            case .networkFailure(let info):
+                return .backend(info.debugDescription)
+            case .serviceUnavailable(let info):
+                return .backend(info.debugDescription)
             @unknown default:
                 return .backend(error.errorDescription ?? "Private Cloud Compute request failed")
             }

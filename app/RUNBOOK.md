@@ -257,14 +257,25 @@ promise from on-device — it needs a network connection and draws on your
 iCloud account's daily quota — so it is its own engine rather than a silent
 upgrade path, and "works in airplane mode" above does not apply to it.
 
-What I have not verified, because it needs an actual live PCC round trip to
-find out: `swift run KnowledgePress` launches an unsigned command-line binary,
-not a signed app bundle, and I do not know whether Private Cloud Compute
-requires the entitlements a proper app carries to get past
-`.deviceNotEligible`. On-device Foundation Models works fine unsigned; PCC
-authenticates against your Apple ID and talks to Apple's servers, which is a
-different trust boundary. If Settings reports it unavailable here, try it from
-`app/ios` (a real signed app) before concluding the feature itself is broken.
+**Verified live 2026-09-02: `swift run` can never use Private Cloud Compute.**
+The request fails in ~15 ms — no network round trip happens at all — with a
+raw `NSError` whose root cause, two `underlyingErrors` deep, is
+`ModelManagerServices.ModelManagerError` code 1046: "PCC inference is not
+available in this context." That is `modelmanagerd` refusing an unsigned
+process. PCC requires the `com.apple.developer.private-cloud-compute`
+entitlement in **both** the code signature and the provisioning profile;
+a SwiftPM executable has neither, no matter what the account is entitled to.
+Note the trap that cost an evening: `availability` reports `.available`
+anyway — the check covers device eligibility, not whether *this process* may
+ask.
+
+The app now says all of this in the failed turn instead of the framework's
+boilerplate ("FoundationModels.LanguageModelError error -1"). To actually
+run PCC: the App ID needs the capability granted in the developer portal
+(the eligibility programme from step 0), `app/ios/project.yml` already
+declares the entitlement, and the signed app must run from Xcode on real
+hardware. On-device answers need none of this, which is why they work from
+`swift run`.
 
 If it does run: the context window is 32,768 tokens against on-device's 4,096,
 so up to 12 passages reach the model instead of 5 — the same shape as the
