@@ -20,6 +20,86 @@ feedback loop; the iPhone (step 6) is the same code with a different shell.
 
 ---
 
+## Status checklist
+
+Where this actually stands, as of 2026-09-03 on branch `develop` (`26d9700`).
+Check off what applies to your own run as you go — corpus/embedder are
+per-machine artifacts, not something a commit can carry for you.
+
+**Core app (steps 1–5)**
+
+- [x] Corpus packs build (`gutenkg export-swift --verify`) — recall@10 0.958
+      on the real corpus
+- [x] Embedder converts (needs the isolated venv in step 2 — does **not**
+      work in the project venv, and cannot)
+- [x] Swift package builds clean on Xcode 27 / Swift 6.4 (one fix needed,
+      `CorpusStore.matchExpression`, already applied)
+- [x] Full test suite green — 78 tests, golden gate armed against the real
+      corpus
+- [x] Retrieval verified correct: phrase-first lexical search restored, RRF
+      order preserved within a pack **and** across the `all`-scope merge —
+      "pillar of salt" surfaces Genesis, not Ruskin
+- [x] Diaries browsable by dated entry (874 / 1,426 / 88 / 2,754 across the
+      four)
+- [ ] Corpus + embedder installed at `~/Library/Application Support/Corpus`
+      on *your* machine (step 4 — per-machine, not carried by git)
+
+**Private Cloud Compute (step 5, optional engine)**
+
+- [x] Backend implemented against the real iOS 27 SDK (`Profile`-based
+      session construction, not the API several web sources describe, which
+      does not exist)
+- [x] Compiles on Xcode 26 too — the feature compiles itself out below Swift
+      6.4 rather than breaking the baseline build
+- [x] Root cause of the "-1" failure fully diagnosed: `swift run` is
+      categorically refused (`ModelManagerError` 1046) because PCC needs the
+      `com.apple.developer.private-cloud-compute` entitlement in the code
+      signature *and* the provisioning profile, which no unsigned binary can
+      carry — not a bug in this app, not fixable in this app
+- [x] Entitlement declared in `app/ios/project.yml`, ready for a signed build
+- [x] Failure now explains itself in the chat turn instead of showing
+      Apple's opaque boilerplate
+- [x] Apple Developer account active (renewal submitted 2026-09-02; portal
+      lagged the order confirmation by a few hours, as expected — resolved)
+- [x] App ID registered in Certificates, Identifiers & Profiles —
+      `com.fluxfrontiers.knowledgepress`, explicit, no capabilities enabled
+      (Private Cloud Compute is not selectable until the account holds the
+      entitlement; nothing else the app does needs one)
+- [ ] Enrolled in the App Store Small Business Program — **submitted
+      2026-09-02, pending approval; this is the current blocker.** No
+      published SLA from Apple.
+- [ ] PCC entitlement requested via Apple's [direct
+      form](https://developer.apple.com/contact/request/private-cloud-compute/)
+      — blocked on SBP approval above
+- [ ] Capability granted on the App ID in Certificates, Identifiers & Profiles
+- [ ] Signed `app/ios` build run on real iOS 27 hardware — the actual, only
+      way to get a PCC answer; `swift run` cannot, permanently
+
+A dev-only shortcut exists for testing PCC access itself while the above is
+pending: [TwoMillionKit](https://github.com/insidegui/TwoMillionKit) wraps
+`/usr/bin/fm` (Apple's own signed CLI, ships with macOS 27) as a
+`LanguageModel`, sidestepping the entitlement by delegating to a process that
+already has it. Tried on this machine 2026-09-02 and blocked by an unrelated
+problem: a dyld symbol mismatch between this machine's OS build (`26A5421a`,
+Beta 5) and the SDK bundled in Xcode-beta (`26A5368f`, an earlier snapshot).
+Updating Xcode-beta would likely fix it but is a multi-GB download that could
+shift the SDK under everything else in this document — not attempted without
+asking first. Not part of the shipped app either way; if used, keep it in a
+throwaway scratch package, never in `app/GutenbergKGKit`.
+
+**iPhone app (step 6)**
+
+- [ ] `xcodegen generate` run, project opened, team set
+- [ ] Corpus copied onto the device via the container dance (no in-app
+      download yet — see "What is not built yet")
+- [ ] Verified on real hardware (the Simulator cannot run Foundation Models
+      at all, on-device or PCC)
+
+**Known gaps** — tracked below in "What is not built yet": no in-app corpus
+download, no image generation, no chat persistence.
+
+---
+
 ## 0. Prerequisites
 
 | | Needed for | Notes |
@@ -174,20 +254,24 @@ swift build
 swift test
 ```
 
-`swift test` runs 45-odd tests: the context budgeter, the WordPiece tokenizer,
-RRF fusion, top-k selection, the worker schema fixtures, and the tokenizer
-parity suite. The golden gate skips at this point — step 5 turns it on.
+`swift test` runs the suite (78 tests as of this writing): the context
+budgeter, the WordPiece tokenizer, RRF fusion, top-k selection, the worker
+schema fixtures, the Private Cloud Compute error-translation tests, and the
+tokenizer parity suite. The golden gate and the diary-browse tests both skip
+here — they need the real corpus, which step 5 supplies via
+`GUTENBERG_PACKS`.
 
 **When `swift build` fails, go to [Troubleshooting](#7-troubleshooting) before
 changing anything.** The likely failures are known and small.
 
 ### What is already verified, and what is not
 
-**All of it is verified now.** The whole package builds and 55 tests pass,
-the golden gate among them. That includes everything importing CoreML,
-Accelerate, SQLite3 or SwiftUI -- `BGEEmbedder`, `VectorIndex`, `CorpusStore`,
-`CatalogPack`, `CorpusPacks`, `LocalRetrieval` and the UI target -- which was
-the half this step existed to test.
+**All of it is verified now.** The whole package builds and the full suite
+(78 tests as of this writing) passes, the golden gate and diary-browse tests
+among them. That includes everything importing CoreML, Accelerate, SQLite3
+or SwiftUI -- `BGEEmbedder`, `VectorIndex`, `CorpusStore`, `CatalogPack`,
+`CorpusPacks`, `LocalRetrieval` and the UI target -- which was the half this
+step existed to test.
 
 The one compile failure was `CorpusStore.matchExpression`: chaining
 `query.map` (a `[Character]`) into `split(separator: " ")` and then
