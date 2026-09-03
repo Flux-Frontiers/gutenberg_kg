@@ -41,6 +41,14 @@
 # All the ios-* targets auto-detect the connected phone. With more than one
 # attached, name it: make ios-deploy IOS_DEVICE=<udid|name>
 #
+# The Knowledge Press, Mac app (app/macos) -- see app/RUNBOOK.md section 7:
+#   make mac-generate  -- regenerate KnowledgePress.xcodeproj from project.yml
+#   make mac-build     -- Release .app, Developer ID signed, hardened runtime
+#   make mac-verify    -- prove the signature is distributable before shipping
+#   make mac-notarize  -- submit to Apple, wait, staple the ticket
+#   make mac-dmg       -- package the stapled .app as a .dmg
+#   make mac-release   -- build + verify + notarize + dmg, in order
+#
 # Container runtime — RUNTIME=docker (default) or RUNTIME=apple.
 # RUNTIME=apple drives Apple's native `container` CLI instead of Docker
 # (Apple Silicon + macOS 26; no Docker Desktop). First-time / per-boot setup
@@ -199,7 +207,7 @@ endif
 # `gutenkg` on PATH. Override with e.g. `make GUTENKG=gutenkg build-corpus`.
 GUTENKG     ?= poetry run gutenkg
 
-.PHONY: init chunk-diaries build-diaries build-corpus check-pins setup build build-all rebuild rebuild-all prune kill run image-server sdxl-server sdxl-fetch chat up stop down query logs clean docs ios-devices ios-generate ios-check ios-install-corpus ios-verify-corpus ios-launch ios-deploy
+.PHONY: init chunk-diaries build-diaries build-corpus check-pins setup build build-all rebuild rebuild-all prune kill run image-server sdxl-server sdxl-fetch chat up stop down query logs clean docs ios-devices ios-generate ios-check ios-install-corpus ios-verify-corpus ios-launch ios-deploy mac-generate mac-build mac-verify mac-notarize mac-dmg mac-release
 
 init:
 	$(GUTENKG) init
@@ -604,3 +612,96 @@ ios-launch:
 
 ios-deploy: ios-install-corpus ios-verify-corpus ios-launch
 	@echo "Corpus installed and app relaunched. Settings > Corpus should say 'on this device'."
+
+# ---------------------------------------------------------------------------
+# The Knowledge Press -- Mac app (app/macos)
+#
+# `swift run KnowledgePress` from app/GutenbergKGKit is still the fast loop.
+# These targets produce the thing a SwiftPM executable cannot be: a signed,
+# notarized bundle someone else can install.
+#
+# Deliberately unsandboxed, so the .app reads the same
+# ~/Library/Application Support/Corpus that `swift run` does. Adding the
+# sandbox later moves that into the app's container and costs one re-copy --
+# no code change, since CorpusPacks.defaultDirectory() goes through
+# FileManager.
+# ---------------------------------------------------------------------------
+
+MAC_BUILD_DIR ?= app/macos/build
+MAC_APP = $(MAC_BUILD_DIR)/Build/Products/Release/KnowledgePress.app
+MAC_DMG ?= $(MAC_BUILD_DIR)/KnowledgePress.dmg
+# `notarytool store-credentials <name>` writes this; see RUNBOOK section 7.
+MAC_NOTARY_PROFILE ?= knowledgepress-notary
+
+# Resolve the Developer ID Application identity from the login keychain, so
+# the signer's name is never hardcoded here.
+define mac_resolve_identity
+IDENTITY=$$(security find-identity -v -p codesigning \
+	  | sed -n 's/.*"\(Developer ID Application: .*\)"/\1/p' | head -1); \
+if [ -z "$$IDENTITY" ]; then \
+	echo "No Developer ID Application certificate in the login keychain."; \
+	echo "Xcode > Settings > Accounts > Manage Certificates > + Developer ID Application."; \
+	exit 1; \
+fi; \
+TEAM=$$(printf '%s' "$$IDENTITY" | sed -n 's/.*(\([A-Z0-9]*\))$$/\1/p')
+endef
+
+mac-generate:
+	@command -v xcodegen >/dev/null 2>&1 \
+	  || { echo "xcodegen not found -- brew install xcodegen"; exit 1; }
+	cd app/macos && xcodegen generate
+
+mac-build: mac-generate
+	@$(mac_resolve_identity); \
+	echo "Signing as $$IDENTITY"; \
+	cd app/macos && xcodebuild -project KnowledgePress.xcodeproj \
+	  -scheme KnowledgePress -destination 'platform=macOS' \
+	  -derivedDataPath build -configuration Release \
+	  CODE_SIGN_STYLE=Manual DEVELOPMENT_TEAM="$$TEAM" \
+	  CODE_SIGN_IDENTITY="$$IDENTITY" OTHER_CODE_SIGN_FLAGS="--timestamp" \
+	  build | tail -3
+
+# The checks worth making before spending a notarization round trip. The
+# entitlements check is the one that matters: Xcode injects
+# com.apple.security.get-task-allow unless CODE_SIGN_INJECT_BASE_ENTITLEMENTS
+# is NO, the notary service rejects anything carrying it, and the app signs
+# and passes spctl locally either way.
+mac-verify:
+	@test -d "$(MAC_APP)" || { echo "No app at $(MAC_APP) -- run 'make mac-build'."; exit 1; }
+	@echo "== architectures =="
+	@lipo -archs "$(MAC_APP)/Contents/MacOS/KnowledgePress"
+	@echo "== signature =="
+	@codesign -dvvv "$(MAC_APP)" 2>&1 | grep -E 'Authority|TeamIdentifier|flags|Timestamp'
+	@echo "== hardened runtime =="
+	@codesign -dvvv "$(MAC_APP)" 2>&1 | grep -q '0x10000(runtime)' \
+	  && echo "enabled" \
+	  || { echo "MISSING -- notarization will fail"; exit 1; }
+	@echo "== debug entitlement =="
+	@codesign -d --entitlements - "$(MAC_APP)" 2>&1 | grep -q 'get-task-allow' \
+	  && { echo "PRESENT -- notarization will be rejected"; exit 1; } \
+	  || echo "absent"
+	@echo "== gatekeeper =="
+	@spctl -a -vvv -t exec "$(MAC_APP)" 2>&1 | head -3
+
+mac-notarize: mac-verify
+	@xcrun notarytool history --keychain-profile "$(MAC_NOTARY_PROFILE)" >/dev/null 2>&1 \
+	  || { echo "No notarytool profile '$(MAC_NOTARY_PROFILE)'. Create it once:"; \
+	        echo "  xcrun notarytool store-credentials $(MAC_NOTARY_PROFILE) \\"; \
+	        echo "    --apple-id <your-apple-id> --team-id <team> --password <app-specific-password>"; \
+	        echo "App-specific passwords come from appleid.apple.com, not your Apple ID password."; \
+	        exit 1; }
+	ditto -c -k --keepParent "$(MAC_APP)" "$(MAC_BUILD_DIR)/KnowledgePress.zip"
+	xcrun notarytool submit "$(MAC_BUILD_DIR)/KnowledgePress.zip" \
+	  --keychain-profile "$(MAC_NOTARY_PROFILE)" --wait
+	xcrun stapler staple "$(MAC_APP)"
+	@echo "Stapled. The app now launches on a machine that has never seen it."
+
+mac-dmg:
+	@test -d "$(MAC_APP)" || { echo "No app at $(MAC_APP) -- run 'make mac-build'."; exit 1; }
+	@rm -f "$(MAC_DMG)"
+	hdiutil create -volname "Knowledge Press" -srcfolder "$(MAC_APP)" \
+	  -ov -format UDZO "$(MAC_DMG)"
+	@echo "Wrote $(MAC_DMG)"
+
+mac-release: mac-build mac-verify mac-notarize mac-dmg
+	@echo "Signed, notarized, stapled, packaged: $(MAC_DMG)"

@@ -1,0 +1,69 @@
+# XcodeGen spec for the Mac app.
+#   brew install xcodegen && cd app/macos && xcodegen generate
+#   open KnowledgePress.xcodeproj
+#
+# `swift run KnowledgePress` from app/GutenbergKGKit still works and is still
+# the fastest loop. This target exists for the things a SwiftPM executable
+# cannot be: a double-clickable bundle, signed with a Developer ID and
+# notarized, that someone else can install.
+name: KnowledgePress
+options:
+  bundleIdPrefix: com.fluxfrontiers
+  deploymentTarget:
+    macOS: "14.0"
+  createIntermediateGroups: true
+
+packages:
+  GutenbergKGKit:
+    path: ../GutenbergKGKit
+
+targets:
+  KnowledgePress:
+    type: application
+    platform: macOS
+    # The same file the SwiftPM executable builds -- one macOS shell, two
+    # wrappers around it. Duplicating it here would let the .app and
+    # `swift run` drift apart silently, which is exactly the bug this app
+    # cannot afford: they must answer identically.
+    sources:
+      - path: ../GutenbergKGKit/Sources/KnowledgePress
+        name: Sources
+    dependencies:
+      - package: GutenbergKGKit
+        product: KnowledgePressUI
+    info:
+      path: Info.plist
+      properties:
+        CFBundleDisplayName: Knowledge Press
+        CFBundleShortVersionString: "1.0"
+        LSMinimumSystemVersion: "14.0"
+        NSHumanReadableCopyright: "© 2026 Eric G. Suchanek, PhD. Elastic-2.0."
+        # The worker is reachable over plain HTTP on the LAN, same as iOS.
+        NSAppTransportSecurity:
+          NSAllowsLocalNetworking: true
+    # Same reason as app/ios/project.yml: without a shared scheme xcodebuild
+    # invents one spanning every target in the workspace.
+    scheme: {}
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.fluxfrontiers.knowledgepress
+        MARKETING_VERSION: "1.0"
+        CURRENT_PROJECT_VERSION: "1"
+        SWIFT_VERSION: "6.0"
+        GENERATE_INFOPLIST_FILE: NO
+        # Required for notarization. Deliberately no App Sandbox: the corpus
+        # lives at ~/Library/Application Support/Corpus, shared with
+        # `swift run`. Adding com.apple.security.app-sandbox later moves it
+        # into the app's container and costs one re-copy -- no code change,
+        # since CorpusPacks.defaultDirectory() resolves through FileManager.
+        ENABLE_HARDENED_RUNTIME: YES
+        DEVELOPMENT_TEAM: ""
+      configs:
+        # Xcode injects com.apple.security.get-task-allow -- the entitlement
+        # that lets a debugger attach -- into every signature unless told not
+        # to. Apple's notary service rejects any app carrying it, so a Release
+        # build signed with the default would sign cleanly, pass spctl
+        # locally, and then fail notarization with a message that does not
+        # obviously name this as the cause.
+        Release:
+          CODE_SIGN_INJECT_BASE_ENTITLEMENTS: NO
