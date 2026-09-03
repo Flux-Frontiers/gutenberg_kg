@@ -1,0 +1,87 @@
+name: App
+
+# ci.yml is entirely Python and never looks at app/. That gap matters more
+# than it looks: app/ios/project.yml and app/macos/project.yml are the source
+# of truth for two Xcode projects whose generated .xcodeproj and Info.plist
+# are gitignored on purpose (a .pbxproj is thousands of lines of UUIDs and
+# absolute paths that conflicts on every parallel edit, and silently absorbs
+# hand-edits made in Xcode's target editor). Nothing else in the repo would
+# notice a spec that had stopped generating a working project.
+#
+# One job, not three. macOS runners bill at 10x Linux minutes, so the checkout
+# and toolchain are shared rather than paid for repeatedly, and the whole
+# workflow is path-filtered to the app tree and the Makefile that drives it.
+# `!app/**.md` keeps a RUNBOOK-only edit from spending a macOS runner.
+#
+# Everything here is unsigned. Signing and notarization need a Developer ID
+# certificate that cannot live in CI, and `make mac-build` would fail without
+# one -- see app/RUNBOOK.md section 7. Compiling unsigned is the part CI can
+# usefully own, and it is also what separates a code failure from a signing
+# failure when something does break.
+
+on:
+  push:
+    branches: [main, develop]
+    paths:
+      - "app/**"
+      - "!app/**.md"
+      - "Makefile"
+      - ".github/workflows/app.yml"
+  pull_request:
+    branches: [main, develop]
+    paths:
+      - "app/**"
+      - "!app/**.md"
+      - "Makefile"
+      - ".github/workflows/app.yml"
+  workflow_dispatch:
+
+concurrency:
+  group: app-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  app:
+    name: App Build
+    runs-on: macos-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      # Recorded in the log on purpose. The Swift version decides whether
+      # Synthesis/PrivateCloudSynthesis.swift is compiled at all: it is gated
+      # on `#if compiler(>=6.4)`, which ships only with Xcode 27. On an older
+      # runner the file compiles itself out, and this job is then verifying
+      # exactly the claim that gate makes -- that the baseline still builds
+      # without it.
+      - name: Toolchain
+        run: |
+          xcode-select -p
+          swift --version
+          xcodebuild -version
+
+      - name: Build the Swift package
+        working-directory: app/GutenbergKGKit
+        run: swift build
+
+      # The golden gate and the diary-browse tests skip here by design: both
+      # need the real ~700 MB corpus, which they opt into via GUTENBERG_PACKS
+      # and which CI has no way to carry. Everything else runs -- the context
+      # budgeter, the WordPiece tokenizer, RRF fusion, top-k selection, the
+      # worker schema fixtures, and the tokenizer parity suite that pins the
+      # shipped tokenizer against Python's own BertTokenizer output.
+      - name: Test the Swift package
+        working-directory: app/GutenbergKGKit
+        run: swift test
+
+      - name: Install XcodeGen
+        run: brew install xcodegen
+
+      # Compiles for a real arm64 device with no phone, no Apple account and
+      # no signature attached -- so this passes or fails purely on the code
+      # and the spec.
+      - name: iPhone app builds for device (unsigned)
+        run: make ios-check
+
+      - name: Mac app builds (unsigned)
+        run: make mac-check

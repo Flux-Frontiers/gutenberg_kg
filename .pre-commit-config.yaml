@@ -47,18 +47,26 @@ repos:
       # flagging it. This exclusion only matters on a machine that installed
       # `viz3d` too (docs/INSTALLATION.md's recommended dev setup does), where
       # PyQt5's real stubs are present and would otherwise surface these.
+      #
+      # `files:` without `always_run:` is what scopes these three. They keep
+      # `pass_filenames: false`, so each still runs over its whole target --
+      # the point is only to decide *whether* to run, not what to run. Before
+      # this, a Makefile or app/ edit ran the full 787-test suite and an
+      # mkdocs build for nothing.
       - id: ty
         name: ty
         entry: .venv/bin/ty check src/ --exclude src/gutenberg_kg/viz3d.py --python .venv
         language: system
         pass_filenames: false
-        always_run: true
+        files: '^src/.*\.py$|^pyproject\.toml$'
+      # poetry.lock and pyproject.toml are in here deliberately: a dependency
+      # bump breaks tests without touching a line of src/ or tests/.
       - id: pytest
         name: pytest
         entry: .venv/bin/pytest --tb=short -q
         language: system
         pass_filenames: false
-        always_run: true
+        files: '^(src|tests)/.*\.py$|^pyproject\.toml$|^poetry\.lock$'
       # Plain `mkdocs build` (what docs.yml's CI job runs) exits 0 on a
       # broken internal link or missing nav target -- those are warnings,
       # not errors. This runs --strict instead and only fails on a warning
@@ -66,9 +74,16 @@ repos:
       # docs.yml's own comment. See scripts/check_docs_build.py. Skips
       # cleanly rather than failing when the optional `docs` Poetry group
       # is not installed, since most contributors only have `dev`.
+      #
+      # `^src/` belongs in this pattern even though it looks like Python-only
+      # territory: the api/*.md pages are mkdocstrings directives, so the site
+      # is rendered *from* the docstrings in src/ and a docstring edit really
+      # can break the build. Note app/RUNBOOK.md and the other app/ docs are
+      # deliberately absent -- they are not in docs_dir and mkdocs never sees
+      # them.
       - id: mkdocs-build
         name: mkdocs build
         entry: python3 scripts/check_docs_build.py
         language: system
         pass_filenames: false
-        always_run: true
+        files: '^docs/|^mkdocs\.yml$|^src/.*\.py$|^scripts/check_docs_build\.py$'
