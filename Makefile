@@ -46,9 +46,10 @@
 #   make mac-check     -- compile unsigned; no certificate needed (the CI gate)
 #   make mac-build     -- Release .app, Developer ID signed, hardened runtime
 #   make mac-verify    -- prove the signature is distributable before shipping
-#   make mac-notarize  -- submit to Apple, wait, staple the ticket
-#   make mac-dmg       -- package the stapled .app as a .dmg
-#   make mac-release   -- build + verify + notarize + dmg, in order
+#   make mac-notarize  -- submit the .app to Apple, wait, staple the ticket
+#   make mac-dmg       -- package the stapled .app as a signed .dmg
+#   make mac-notarize-dmg -- notarize and staple the disk image itself
+#   make mac-release   -- all of the above, in order
 #
 # Container runtime — RUNTIME=docker (default) or RUNTIME=apple.
 # RUNTIME=apple drives Apple's native `container` CLI instead of Docker
@@ -208,7 +209,7 @@ endif
 # `gutenkg` on PATH. Override with e.g. `make GUTENKG=gutenkg build-corpus`.
 GUTENKG     ?= poetry run gutenkg
 
-.PHONY: init chunk-diaries build-diaries build-corpus check-pins setup build build-all rebuild rebuild-all prune kill run image-server sdxl-server sdxl-fetch chat up stop down query logs clean docs ios-devices ios-generate ios-check ios-install-corpus ios-verify-corpus ios-launch ios-deploy mac-generate mac-check mac-build mac-verify mac-notarize mac-dmg mac-release
+.PHONY: init chunk-diaries build-diaries build-corpus check-pins setup build build-all rebuild rebuild-all prune kill run image-server sdxl-server sdxl-fetch chat up stop down query logs clean docs ios-devices ios-generate ios-check ios-install-corpus ios-verify-corpus ios-launch ios-deploy mac-generate mac-check mac-build mac-verify mac-notarize mac-dmg mac-notarize-dmg mac-release
 
 init:
 	$(GUTENKG) init
@@ -691,25 +692,54 @@ mac-verify:
 	@echo "== gatekeeper =="
 	@spctl -a -vvv -t exec "$(MAC_APP)" 2>&1 | head -3
 
+define mac_require_notary_profile
+xcrun notarytool history --keychain-profile "$(MAC_NOTARY_PROFILE)" >/dev/null 2>&1 \
+  || { echo "No notarytool profile '$(MAC_NOTARY_PROFILE)'. Create it once:"; \
+	echo "  xcrun notarytool store-credentials $(MAC_NOTARY_PROFILE) \\"; \
+	echo "    --apple-id <your-apple-id> --team-id <team> --password <app-specific-password>"; \
+	echo "App-specific passwords come from appleid.apple.com, not your Apple ID password."; \
+	exit 1; }
+endef
+
 mac-notarize: mac-verify
-	@xcrun notarytool history --keychain-profile "$(MAC_NOTARY_PROFILE)" >/dev/null 2>&1 \
-	  || { echo "No notarytool profile '$(MAC_NOTARY_PROFILE)'. Create it once:"; \
-	        echo "  xcrun notarytool store-credentials $(MAC_NOTARY_PROFILE) \\"; \
-	        echo "    --apple-id <your-apple-id> --team-id <team> --password <app-specific-password>"; \
-	        echo "App-specific passwords come from appleid.apple.com, not your Apple ID password."; \
-	        exit 1; }
+	@$(mac_require_notary_profile)
 	ditto -c -k --keepParent "$(MAC_APP)" "$(MAC_BUILD_DIR)/KnowledgePress.zip"
 	xcrun notarytool submit "$(MAC_BUILD_DIR)/KnowledgePress.zip" \
 	  --keychain-profile "$(MAC_NOTARY_PROFILE)" --wait
 	xcrun stapler staple "$(MAC_APP)"
 	@echo "Stapled. The app now launches on a machine that has never seen it."
 
+# The disk image needs signing in its own right. Stapling the .app inside is
+# not enough: a .dmg downloaded from the internet carries a quarantine flag,
+# and Gatekeeper assesses the *image* when it is mounted. An unsigned one is
+# refused ("source=no usable signature") before the reader ever reaches the
+# app, so `make mac-release` would report success and hand you something that
+# fails on the recipient's machine.
+#
+# hdiutil is deprecated on macOS 26+ in favour of `diskutil image create`,
+# which does not exist on older systems. Keeping hdiutil until the floor
+# rises; the warning is expected.
 mac-dmg:
 	@test -d "$(MAC_APP)" || { echo "No app at $(MAC_APP) -- run 'make mac-build'."; exit 1; }
 	@rm -f "$(MAC_DMG)"
 	hdiutil create -volname "Knowledge Press" -srcfolder "$(MAC_APP)" \
 	  -ov -format UDZO "$(MAC_DMG)"
-	@echo "Wrote $(MAC_DMG)"
+	@$(mac_resolve_identity); \
+	codesign --force --sign "$$IDENTITY" --timestamp "$(MAC_DMG)"
+	@echo "Wrote and signed $(MAC_DMG)"
 
-mac-release: mac-build mac-verify mac-notarize mac-dmg
+# A second round trip, and worth it. Notarizing the image covers the
+# container the recipient actually double-clicks; the app was stapled
+# separately so it still launches offline once copied out of the image, which
+# a dmg-only ticket would not guarantee.
+mac-notarize-dmg:
+	@test -f "$(MAC_DMG)" || { echo "No dmg at $(MAC_DMG) -- run 'make mac-dmg'."; exit 1; }
+	@$(mac_require_notary_profile)
+	xcrun notarytool submit "$(MAC_DMG)" \
+	  --keychain-profile "$(MAC_NOTARY_PROFILE)" --wait
+	xcrun stapler staple "$(MAC_DMG)"
+	@echo "== dmg gatekeeper verdict =="
+	@spctl -a -vvv -t open --context context:primary-signature "$(MAC_DMG)" 2>&1 | head -3
+
+mac-release: mac-build mac-verify mac-notarize mac-dmg mac-notarize-dmg
 	@echo "Signed, notarized, stapled, packaged: $(MAC_DMG)"
