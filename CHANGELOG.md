@@ -8,6 +8,54 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Added
+
+- **Private Cloud Compute as a Foundation Models answer engine.** WWDC26
+  unified the framework's API for the on-device model and Apple's server tier,
+  reachable through the same `LanguageModelSession` -- so this is a peer of
+  `OnDeviceSynthesis`, not a rewrite of it: `PrivateCloudSynthesis.swift`
+  builds a session from `LanguageModelSession.Profile { ... }.model(
+  PrivateCloudComputeLanguageModel())` instead of the plain on-device
+  initializer, and everything downstream of "a session exists" -- streaming,
+  cancellation, error translation, metrics -- is shared code, hoisted out of
+  `OnDeviceSynthesis` into two free functions both backends call.
+
+  It is offered as its own engine (Settings ▸ Answers ▸ **Private Cloud**),
+  not folded into on-device: it needs a network connection and draws on the
+  user's iCloud quota, which is the opposite of on-device's "nothing leaves
+  the phone, works in airplane mode" promise. In exchange it carries a
+  32,768-token context window -- eight times on-device's -- so up to 12
+  passages reach the model instead of 5, the same shape as the worker's
+  server-class synthesis. Settings surfaces a usage caption as the daily quota
+  is approached or reached, with a button to Apple's own upgrade sheet.
+
+  `PrivateCloudComputeLanguageModel` is new in the iOS 27 / macOS 27 SDK, not
+  merely `@available`-gated within an SDK that already had it, so
+  `#if canImport(FoundationModels)` alone would still compile against an
+  Xcode 26 toolchain and fail outright on the missing type. Gated instead on
+  `compiler(>=6.4)`, verified against Apple's own Xcode 27 release notes to
+  ship exclusively with the iOS 27 SDKs -- so `app/RUNBOOK.md`'s Xcode 26
+  baseline keeps building; this engine is just absent until the toolchain
+  catches up.
+
+  Not yet verified: whether Private Cloud Compute requires the entitlements
+  of a signed app to authenticate against the user's Apple ID.
+  `swift run KnowledgePress` -- how this app has been built and run all
+  along -- produces an unsigned binary, and on-device synthesis working fine
+  unsigned is not evidence PCC will too; it is a different trust boundary.
+  `app/RUNBOOK.md` names this as the thing to check first if Settings reports
+  it unavailable on hardware that should support it.
+
+- **Diaries browse by dated entry.** `Browse` used to list the four diaries
+  and show nothing underneath -- the catalog carries no `file_path` for a
+  diary and `diaries.pack` has zero `section` rows, so `LocalBrowser.locate`
+  had nothing to resolve, and the worker cannot resolve one either. Fixed
+  Swift-side, no re-export: `CorpusStore.diaryIdentity(title:)` maps a
+  catalog title to the `kg_name` that identifies it in the pack, and each
+  distinct `timestamp` becomes one browsable entry -- 874, 1,426, 88 and
+  2,754 of them across the four diaries. Pepys's 2,754 render grouped by year
+  in `BrowseView`, rather than as one flat scroll with no landmarks.
+
 ### Fixed
 
 - **The `all` scope buried the literal matches the lexical channel had just

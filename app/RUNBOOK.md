@@ -26,6 +26,7 @@ feedback loop; the iPhone (step 6) is the same code with a different shell.
 |---|---|---|
 | macOS 26, Apple silicon | on-device answers | Apple Intelligence must be **on** in System Settings. Without it everything else still runs and the app says why the answer engine is off. |
 | Xcode 26 | building | `swift test` needs the full Xcode, not Command Line Tools. |
+| Xcode 27 (optional) | Private Cloud Compute answers | Only for the Private Cloud engine (step 5). Everything else builds and runs on Xcode 26 unchanged — `PrivateCloudSynthesis.swift` compiles itself out below Swift 6.4, which ships only with Xcode 27. |
 | A built bundle | steps 1–2 | `bundles/gutenberg-all/` — the output of `make build-corpus`. |
 | ~5 GB free | steps 1–2 | The export reads 5.7 GB and writes under 1 GB. |
 | iPhone 15 Pro or newer, iOS 26 | step 6 | The Simulator cannot run Foundation Models. |
@@ -249,6 +250,28 @@ swift run KnowledgePress
 5. **Turn off Wi-Fi and ask again.** Nothing should change. This is the whole
    point; if it works, the feature is done.
 
+### Trying Private Cloud Compute (needs Xcode 27, step 0)
+
+Pick **Private Cloud** in Settings ▸ Answers. This is a genuinely different
+promise from on-device — it needs a network connection and draws on your
+iCloud account's daily quota — so it is its own engine rather than a silent
+upgrade path, and "works in airplane mode" above does not apply to it.
+
+What I have not verified, because it needs an actual live PCC round trip to
+find out: `swift run KnowledgePress` launches an unsigned command-line binary,
+not a signed app bundle, and I do not know whether Private Cloud Compute
+requires the entitlements a proper app carries to get past
+`.deviceNotEligible`. On-device Foundation Models works fine unsigned; PCC
+authenticates against your Apple ID and talks to Apple's servers, which is a
+different trust boundary. If Settings reports it unavailable here, try it from
+`app/ios` (a real signed app) before concluding the feature itself is broken.
+
+If it does run: the context window is 32,768 tokens against on-device's 4,096,
+so up to 12 passages reach the model instead of 5 — the same shape as the
+worker's server-class synthesis, coincidentally. Settings shows a usage
+caption once you are nearing or have hit the day's quota, with a button to
+Apple's own upgrade sheet.
+
 ### Then run the golden gate
 
 ```sh
@@ -408,24 +431,22 @@ Honest inventory, so nothing here surprises you:
 - **No image generation.** `🎨 Render response` from the Streamlit chat has no
   Swift equivalent yet; it is Phase 4.
 - **No SwiftData persistence.** Chat history is lost on relaunch.
-- **Diaries cannot be browsed, only searched.** Browse lists the four diaries
-  and then shows nothing under them. This is not new and not a packing fault:
-  the catalog carries no `file_path` for a diary, `diaries.pack` holds 27,462
-  chunks and zero `section` rows, and the worker cannot resolve one either
-  (`handler._resolve_book_file_path` looks for a `document` node in the DocKG
-  store, and diaries live in DiaryKG). Their text is fully readable through
-  search, which is where diary passages surface today.
-
-  Everything a fix needs is already in the pack, so it is Swift-only work with
-  no re-export: `title` matches the catalog's `book`, `kg_name` identifies the
-  diary, `timestamp` gives 874 / 1,426 / 88 / 2,754 dated entries, and
-  `char_start` is populated on every chunk. A diary browses by dated entry
-  rather than by chapter. Note that Pepys alone would render 2,754 entries, so
-  the list wants grouping by year rather than one flat scroll.
-The golden gate has now run, and it earned its keep: it was the thing that
-made the "pillar of salt" divergence measurable rather than a matter of
-opinion. Worth knowing what it did *not* catch on its own -- it compared the
-set of returned passages and their scores, so a result carrying the right
-passages in the wrong order passed, and it was doing so at exactly its 0.90
-tolerance floor. It now also bounds how far a shared hit may drift from the
-reference's fused position (`max_rank_drift`, default 2).
+- **Diaries browse by dated entry, fixed.** Browse used to list the four
+  diaries and show nothing under them, because the catalog carries no
+  `file_path` for a diary and `diaries.pack` has zero `section` rows — nothing
+  for `LocalBrowser.locate` to resolve, and the worker cannot resolve one
+  either (`handler._resolve_book_file_path` looks for a `document` node in the
+  DocKG store; diaries live in DiaryKG). Fixed Swift-side, no re-export: a
+  diary's `title` matches the catalog's `book` name, `kg_name` is the identity
+  `CorpusStore.diaryIdentity(title:)` resolves it to, and each distinct
+  `timestamp` is one browsable entry (874 / 1,426 / 88 / 2,754 of them across
+  the four). Pepys's 2,754 render grouped by year rather than one flat scroll.
+  Covered by `DiaryBrowseTests.swift`, opt-in behind `GUTENBERG_PACKS` like the
+  golden gate.
+- **The golden gate has now run**, and it earned its keep: it was the thing
+  that made the "pillar of salt" divergence measurable rather than a matter of
+  opinion. Worth knowing what it did *not* catch on its own -- it compared the
+  set of returned passages and their scores, so a result carrying the right
+  passages in the wrong order passed, and it was doing so at exactly its 0.90
+  tolerance floor. It now also bounds how far a shared hit may drift from the
+  reference's fused position (`max_rank_drift`, default 2).
