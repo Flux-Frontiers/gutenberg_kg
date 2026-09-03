@@ -64,7 +64,9 @@ per-machine artifacts, not something a commit can carry for you.
 - [x] App ID registered in Certificates, Identifiers & Profiles —
       `com.fluxfrontiers.knowledgepress`, explicit, no capabilities enabled
       (Private Cloud Compute is not selectable until the account holds the
-      entitlement; nothing else the app does needs one)
+      entitlement; nothing else the app does needs one). Team ID
+      `552T2QP474` — for reference when filing the PCC request or checking
+      `codesign -d --entitlements :-` against a build.
 - [ ] Enrolled in the App Store Small Business Program — **submitted
       2026-09-02, pending approval; this is the current blocker.** No
       published SLA from Apple.
