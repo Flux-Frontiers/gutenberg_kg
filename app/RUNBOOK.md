@@ -101,15 +101,16 @@ throwaway scratch package, never in `app/GutenbergKGKit`.
       target too and fails on `import AppKit`
 - [x] Compiles for the Simulator **and** for arm64 device, unsigned
       (`CODE_SIGNING_ALLOWED=NO`) — 2026-09-03, Xcode 27.0 (27A5209h)
-- [ ] Apple ID added in Xcode ▸ Settings ▸ Accounts, team set on the target —
-      no account is signed in yet, so automatic signing cannot run
-- [ ] Developer Mode enabled on the iPhone (Settings ▸ Privacy & Security),
+- [x] Apple ID added in Xcode ▸ Settings ▸ Accounts, team set on the target
+- [x] Developer Mode enabled on the iPhone (Settings ▸ Privacy & Security),
       then reboot — the phone pairs and lists without it, and still refuses
       every build
-- [ ] Corpus copied onto the device via the container dance (no in-app
-      download yet — see "What is not built yet")
-- [ ] Verified on real hardware (the Simulator cannot run Foundation Models
-      at all, on-device or PCC)
+- [x] **Signed build installed and running on real hardware** — 2026-09-03,
+      iPhone 17 (`iPhone18,1`), iOS 27
+- [x] Corpus pushed to the device with `devicectl` — 691 MB, all sixteen
+      entries verified in place including the `.mlpackage` weights
+- [ ] Answers verified on the phone with the network off (the Simulator
+      cannot run Foundation Models at all, on-device or PCC)
 
 **Known gaps** — tracked below in "What is not built yet": no in-app corpus
 download, no image generation, no chat persistence.
@@ -470,20 +471,95 @@ is wrong with it.
 
 ### Getting the corpus onto the phone
 
-There is no in-app download yet, so use Xcode's container tooling — this is the
-normal development path:
+There is no in-app download yet. Push it straight into the app's data
+container with `devicectl`, over the USB cable — no Finder, no `.xcappdata`
+round trip. Run the app on the device once first so the container exists,
+then, from `bundles/gutenberg-all/swift/`:
 
-1. Run the app once on the device so its container exists.
-2. **Xcode ▸ Window ▸ Devices and Simulators ▸** your iPhone.
-3. Under *Installed Apps*, select **KnowledgePress**, click the gear ▸
-   **Download Container…**, save the `.xcappdata` bundle.
-4. In Finder, right-click it ▸ *Show Package Contents* ▸
-   `AppData/Library/Application Support/`. Create a `Corpus` folder there and
-   copy in everything from `bundles/gutenberg-all/swift/`.
-5. Back in Xcode, gear ▸ **Replace Container…** and choose the edited bundle.
-6. Relaunch the app. Settings ▸ Corpus should report it.
+```sh
+DEVICE=$(xcrun devicectl list devices --json-output /dev/stdout \
+  | python3 -c 'import json,sys; print(json.load(sys.stdin)["result"]["devices"][0]["identifier"])')
 
-It is about 900 MB, so the replace takes a couple of minutes.
+cd bundles/gutenberg-all/swift
+xcrun devicectl device copy to --device "$DEVICE" \
+  --domain-type appDataContainer \
+  --domain-identifier com.fluxfrontiers.knowledgepress \
+  --destination "Library/Application Support/Corpus" \
+  --source BGEEmbedder.mlpackage --source core.pack \
+  --source diaries.pack --source diaries.vectors \
+  --source embedder.json --source golden.json \
+  --source gutenberg.pack --source gutenberg.vectors \
+  --source manifest.json --source vocab.txt
+```
+
+It creates the intermediate directories itself and skips files that have not
+changed, so re-running it after a re-export only moves what actually differs.
+About 690 MB on the first run.
+
+Check what landed without pulling it back:
+
+```sh
+xcrun devicectl device info files --device "$DEVICE" \
+  --domain-type appDataContainer \
+  --domain-identifier com.fluxfrontiers.knowledgepress \
+  --subdirectory "Library/Application Support/Corpus"
+```
+
+Sixteen entries, because `BGEEmbedder.mlpackage` is a bundle and lists its
+insides — the one to confirm is
+`BGEEmbedder.mlpackage/Data/com.apple.CoreML/weights/weight.bin` at ~63 MB,
+since a flattened copy of that directory is the failure that leaves the app
+reporting a corpus it cannot open.
+
+Then relaunch so it re-reads the directory:
+
+```sh
+xcrun devicectl device process launch --device "$DEVICE" \
+  --terminate-existing com.fluxfrontiers.knowledgepress
+```
+
+The older path — Xcode ▸ Window ▸ Devices and Simulators ▸ gear ▸ **Download
+Container…**, edit the `.xcappdata` in Finder, **Replace Container…** — still
+works and is worth knowing if `devicectl` ever refuses, but it moves the whole
+container both ways for the sake of adding one folder.
+
+### Until the corpus is installed, the app calls a worker that is not there
+
+Expected, and worth recognising so it is not mistaken for a bug. With no packs,
+`AppModel.retrievalEngine` falls through to `WorkerRetrieval`, and the default
+worker URL is `http://localhost:8000` — which on the phone means *the phone*.
+The console fills with:
+
+```
+Connection 1: failed to connect 1:61, reason -1
+... NSErrorFailingURLStringKey=http://localhost:8000/runsync
+```
+
+`61` is `ECONNREFUSED`. Installing the corpus is the fix: `retrievalEngine`
+then takes the `LocalRetrieval` branch and opens no socket at all. Pointing
+Settings at `http://<your-mac>.local:8000` also silences it, but that is the
+pre-packs workaround, not the destination.
+
+### The Private Cloud Compute errors in the Xcode console
+
+Also expected, on every launch, whichever answer engine is selected:
+
+```
+ModelManager received unentitled request. Expected entitlement
+  com.apple.developer.private-cloud-compute
+establishment of session failed with Missing entitlement: ...
+Failed to check usage limit status: ... com.apple.tokengeneration error 24
+```
+
+`AppModel` builds the PCC backend eagerly as a stored property, so
+`PrivateCloudComputeLanguageModel()` is constructed at launch and its
+usage-limit check runs immediately, entitlement or no entitlement. Cosmetic —
+on-device answers are unaffected.
+
+It is also the cleanest confirmation available that **signing was never the
+blocker**: this is a signed build on real hardware and `modelmanagerd` still
+refuses, because the capability is not on the App ID. Nothing about the
+signing setup will change that.
 
 **On the Simulator**, the corpus works but answers do not — Foundation Models
 are unavailable there, which the app says plainly. It is still the fastest way
@@ -587,8 +663,9 @@ Send me:
 
 Honest inventory, so nothing here surprises you:
 
-- **No in-app corpus download.** Installing means the container dance in step 6.
-  Background Assets or a resumable `URLSession` fetch is the Phase 5 item.
+- **No in-app corpus download.** Installing means a `devicectl` push over the
+  cable, step 6. Background Assets or a resumable `URLSession` fetch is the
+  Phase 5 item.
 - **No image generation.** `🎨 Render response` from the Streamlit chat has no
   Swift equivalent yet; it is Phase 4.
 - **No SwiftData persistence.** Chat history is lost on relaunch.
