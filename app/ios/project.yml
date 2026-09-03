@@ -21,6 +21,17 @@ targets:
     dependencies:
       - package: GutenbergKGKit
         product: KnowledgePressUI
+    # Private Cloud Compute needs this entitlement in BOTH the code signature
+    # and the provisioning profile. An unsigned `swift run` binary gets
+    # ModelManagerError 1046 ("PCC inference is not available in this
+    # context") the instant it tries — verified live 2026-09-02. The
+    # provisioning half means the App ID must have the capability granted in
+    # the developer portal first; until it is, Xcode's automatic signing will
+    # refuse to build with this entitlement present.
+    entitlements:
+      path: KnowledgePress.entitlements
+      properties:
+        com.apple.developer.private-cloud-compute: true
     info:
       path: Info.plist
       properties:

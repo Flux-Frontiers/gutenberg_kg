@@ -38,13 +38,16 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   baseline keeps building; this engine is just absent until the toolchain
   catches up.
 
-  Not yet verified: whether Private Cloud Compute requires the entitlements
-  of a signed app to authenticate against the user's Apple ID.
-  `swift run KnowledgePress` -- how this app has been built and run all
-  along -- produces an unsigned binary, and on-device synthesis working fine
-  unsigned is not evidence PCC will too; it is a different trust boundary.
-  `app/RUNBOOK.md` names this as the thing to check first if Settings reports
-  it unavailable on hardware that should support it.
+  Verified live the same day: an unsigned `swift run` binary cannot use PCC,
+  ever. The request dies locally in ~15 ms with
+  `ModelManagerServices.ModelManagerError` 1046 ("PCC inference is not
+  available in this context") buried two `underlyingErrors` deep in a raw
+  `NSError` whose surface says only "error -1" -- and `availability` reports
+  `.available` regardless, because it checks the device, not the process.
+  The generic catch now walks NSError chains to the root cause, names the
+  `com.apple.developer.private-cloud-compute` entitlement requirement in the
+  failed turn, and `app/ios/project.yml` declares that entitlement for the
+  signed build, which is the only build that can answer through PCC.
 
 - **Diaries browse by dated entry.** `Browse` used to list the four diaries
   and show nothing underneath -- the catalog carries no `file_path` for a

@@ -67,7 +67,7 @@ import Foundation
                     } catch let error as LanguageModelSession.GenerationError {
                         continuation.finish(throwing: translateGenerationError(error))
                     } catch {
-                        continuation.finish(throwing: SynthesisFailure.backend(error.localizedDescription))
+                        continuation.finish(throwing: translateRemainingError(error))
                     }
                 }
                 continuation.onTermination = { _ in task.cancel() }
@@ -178,6 +178,98 @@ import Foundation
         default:
             return .backend(error.localizedDescription)
         }
+    }
+
+    #if compiler(>=6.4)
+        /// Map the iOS 27 unified `LanguageModelError` onto the shared failure
+        /// shape. `GenerationError` above is iOS 26's error type for the
+        /// on-device-only session API; this supersedes it once a session can
+        /// be backed by either model, and streamResponse throws it for both
+        /// backends now — found live, not from documentation: Private Cloud
+        /// Compute threw one on its very first real request, and it fell
+        /// through to the generic `.backend(error.localizedDescription)`
+        /// catch-all as an opaque "FoundationModels.LanguageModelError error
+        /// -1", because this type's own `errorDescription` returns nil for
+        /// several cases (case in point) and `debugDescription` — which every
+        /// case actually carries a real message in — is what needed reading
+        /// instead.
+        @available(iOS 27.0, macOS 27.0, *)
+        func translateLanguageModelError(_ error: LanguageModelError) -> SynthesisFailure {
+            switch error {
+            case .contextSizeExceeded:
+                return .contextOverflow
+            case .guardrailViolation, .refusal:
+                return .guardrail
+            case .rateLimited(let info):
+                return .unavailable(info.debugDescription)
+            case .timeout(let info):
+                return .backend(info.debugDescription)
+            case .unsupportedCapability(let info):
+                return .backend(info.debugDescription)
+            case .unsupportedTranscriptContent(let info):
+                return .backend(info.debugDescription)
+            case .unsupportedGenerationGuide(let info):
+                return .backend(info.debugDescription)
+            case .unsupportedLanguageOrLocale(let info):
+                return .backend(info.debugDescription)
+            @unknown default:
+                return .backend("Foundation Models reported an unrecognised error")
+            }
+        }
+    #endif
+
+    /// Walk an `NSError` underlying-error chain to its root.
+    ///
+    /// What Foundation Models actually throws for a refused Private Cloud
+    /// Compute request — found live, not in documentation — is a raw
+    /// `NSError` whose top-level description is boilerplate ("error -1")
+    /// and whose story is nested two levels down in `underlyingErrors`.
+    ///
+    /// :param error: Any error.
+    /// :returns: The deepest underlying `NSError`, or the error itself.
+    func rootCause(of error: Error) -> NSError {
+        var current = error as NSError
+        while let next = current.underlyingErrors.first.map({ $0 as NSError }) {
+            current = next
+        }
+        return current
+    }
+
+    /// The last stop for an error neither backend's typed catches named.
+    ///
+    /// Checks for the iOS 27 unified `LanguageModelError` first, then walks
+    /// the `NSError` underlying chain — the live "-1" failure was a raw
+    /// `NSError` that no typed catch matches, with the real cause
+    /// (`ModelManagerServices.ModelManagerError` 1046, "PCC inference is not
+    /// available in this context") buried beneath two layers of boilerplate.
+    /// 1046 is what an unsigned process gets: Private Cloud Compute requires
+    /// a signed app carrying the `com.apple.developer.private-cloud-compute`
+    /// entitlement in both its signature and its provisioning profile, which
+    /// a `swift run` binary can never have.
+    @available(iOS 26.0, macOS 26.0, *)
+    func translateRemainingError(_ error: Error) -> SynthesisFailure {
+        #if compiler(>=6.4)
+            if #available(iOS 27.0, macOS 27.0, *), let lmError = error as? LanguageModelError {
+                return translateLanguageModelError(lmError)
+            }
+        #endif
+
+        let root = rootCause(of: error)
+        if root.domain == "ModelManagerServices.ModelManagerError", root.code == 1046 {
+            return .backend(
+                "Private Cloud Compute refused this process. It needs a signed app carrying "
+                    + "the com.apple.developer.private-cloud-compute entitlement, which a "
+                    + "`swift run` binary can never have — run the app/ios target from Xcode "
+                    + "instead")
+        }
+        let top = error as NSError
+        if root !== top {
+            // Whatever this is, do not repeat the boilerplate alone — name the
+            // actual root so the next unknown failure is diagnosable from the
+            // turn itself.
+            return .backend("\(top.localizedDescription) [root cause: \(root.domain) \(root.code)]")
+        }
+        return .backend(error.localizedDescription)
     }
 #endif
 
