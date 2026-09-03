@@ -43,6 +43,7 @@
 #
 # The Knowledge Press, Mac app (app/macos) -- see app/RUNBOOK.md section 7:
 #   make mac-generate  -- regenerate KnowledgePress.xcodeproj from project.yml
+#   make mac-check     -- compile unsigned; no certificate needed (the CI gate)
 #   make mac-build     -- Release .app, Developer ID signed, hardened runtime
 #   make mac-verify    -- prove the signature is distributable before shipping
 #   make mac-notarize  -- submit to Apple, wait, staple the ticket
@@ -207,7 +208,7 @@ endif
 # `gutenkg` on PATH. Override with e.g. `make GUTENKG=gutenkg build-corpus`.
 GUTENKG     ?= poetry run gutenkg
 
-.PHONY: init chunk-diaries build-diaries build-corpus check-pins setup build build-all rebuild rebuild-all prune kill run image-server sdxl-server sdxl-fetch chat up stop down query logs clean docs ios-devices ios-generate ios-check ios-install-corpus ios-verify-corpus ios-launch ios-deploy mac-generate mac-build mac-verify mac-notarize mac-dmg mac-release
+.PHONY: init chunk-diaries build-diaries build-corpus check-pins setup build build-all rebuild rebuild-all prune kill run image-server sdxl-server sdxl-fetch chat up stop down query logs clean docs ios-devices ios-generate ios-check ios-install-corpus ios-verify-corpus ios-launch ios-deploy mac-generate mac-check mac-build mac-verify mac-notarize mac-dmg mac-release
 
 init:
 	$(GUTENKG) init
@@ -650,6 +651,13 @@ mac-generate:
 	@command -v xcodegen >/dev/null 2>&1 \
 	  || { echo "xcodegen not found -- brew install xcodegen"; exit 1; }
 	cd app/macos && xcodegen generate
+
+# Compiles without a certificate, so a code failure is never confused with a
+# signing one -- the same role ios-check plays, and what CI runs.
+mac-check: mac-generate
+	cd app/macos && xcodebuild -project KnowledgePress.xcodeproj \
+	  -scheme KnowledgePress -destination 'platform=macOS' \
+	  -derivedDataPath build CODE_SIGNING_ALLOWED=NO build | tail -3
 
 mac-build: mac-generate
 	@$(mac_resolve_identity); \
