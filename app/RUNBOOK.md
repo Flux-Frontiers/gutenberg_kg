@@ -122,10 +122,14 @@ throwaway scratch package, never in `app/GutenbergKGKit`.
 - [x] `CODE_SIGN_INJECT_BASE_ENTITLEMENTS: NO` for Release, so the signature
       carries no `get-task-allow`; `make mac-verify` fails loudly if it
       returns
-- [x] `make mac-dmg` packages it (1.4 MB — the app alone, no corpus)
-- [ ] `notarytool store-credentials` profile created — **this is the current
-      blocker for distribution**; nothing can be notarized without it
-- [ ] Notarized and stapled, then opened on a Mac that has never seen it
+- [x] `make mac-dmg` packages it (1.4 MB — the app alone, no corpus), signed
+      with the same Developer ID
+- [x] `notarytool store-credentials` profile stored as `knowledgepress-notary`
+      — 2026-09-03
+- [x] **Notarized, stapled, and verified under quarantine** — both the `.app`
+      and the `.dmg`, each accepted as `source=Notarized Developer ID`
+      (2026-09-03). The image needed its own pass: with only the app stapled
+      it was `rejected / source=no usable signature`.
 - [ ] App icon — none exists; it ships with the generic one until then
 
 **Known gaps** — tracked below in "What is not built yet": no in-app corpus
@@ -606,12 +610,41 @@ double-clickable `KnowledgePress.app`, signed with a Developer ID and
 notarized, that opens on a machine which has never seen it before.
 
 ```sh
-make mac-build      # Release .app, Developer ID signed, hardened runtime
-make mac-verify     # prove it is distributable before spending a round trip
-make mac-notarize   # submit to Apple, wait, staple the ticket
-make mac-dmg        # package it
-make mac-release    # all four, in order
+make mac-build         # Release .app, Developer ID signed, hardened runtime
+make mac-verify        # prove it is distributable before a round trip
+make mac-notarize      # submit the .app, wait, staple the ticket
+make mac-dmg           # package it as a signed .dmg
+make mac-notarize-dmg  # notarize and staple the image itself
+make mac-release       # all five, in order
 ```
+
+**Both layers are notarized, and both are necessary.** Stapling the app alone
+produces a disk image Gatekeeper refuses:
+
+```
+KnowledgePress.dmg: rejected
+source=no usable signature
+```
+
+A `.dmg` downloaded from the internet carries a quarantine flag, and
+Gatekeeper assesses the *image* when it is mounted -- so an unsigned one stops
+the reader before they ever reach the app. Notarizing the image alone is not
+enough either: the app inside would then have no ticket of its own, and would
+need a network check on first launch after being dragged out. For an app whose
+whole premise is working offline, that is the wrong trade. Two round trips,
+roughly a minute each.
+
+To check it the way the recipient will see it, set the quarantine flag on a
+copy rather than trusting the local verdict:
+
+```sh
+cp app/macos/build/KnowledgePress.dmg /tmp/
+xattr -w com.apple.quarantine "0083;0;Safari;$(uuidgen)" /tmp/KnowledgePress.dmg
+spctl -a -vvv -t open --context context:primary-signature /tmp/KnowledgePress.dmg
+```
+
+Want `accepted` and `source=Notarized Developer ID`. Verified 2026-09-03 on
+both the image and the app inside it.
 
 The signing identity is read out of the login keychain, so no name or team ID
 is written into the repo. `app/macos/project.yml` is the source of truth;
