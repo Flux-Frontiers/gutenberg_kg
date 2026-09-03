@@ -798,8 +798,39 @@ mismatched embedder returns confident nonsense rather than an error.
 
 ### iPhone cannot reach the worker
 
-Only matters before the packs are installed. `localhost` is the *phone*, not
-your Mac — use `http://<your-mac>.local:8000` in Settings.
+**Settings ▸ Worker** (the settings sheet behind the toolbar button — on
+macOS the same view is the sidebar). The field starts empty on iOS and the
+placeholder shows the shape you want, because `localhost` is the *phone*, not
+your Mac. Use the Mac's Bonjour name rather than its address:
+
+```
+http://<your-mac>.local:8000      preferred — survives a DHCP change
+http://192.168.1.42:8000          works until the lease moves
+```
+
+`scutil --get LocalHostName` on the Mac prints the name; `ipconfig getifaddr
+en0` prints the address. Check the worker answers on the LAN and not just
+loopback before blaming the phone —
+
+```sh
+curl -s -o /dev/null -w '%{http_code}\n' http://<your-mac>.local:8000/
+```
+
+— then hit **Test** in Settings, which reports the book and genre counts on
+success and the real error on failure, instead of leaving you to find out at
+query time.
+
+Two first-run traps:
+
+- **iOS asks for Local Network permission** the first time. Denying it makes
+  every address fail forever; the fix is Settings ▸ Knowledge Press ▸ Local
+  Network.
+- **The phone must be on the same Wi-Fi**, not cellular.
+
+The address persists across launches. It did not always: `workerURLString`
+was a plain stored property with no backing store, so anything typed reverted
+to the default on the next launch — which looked like the field not working
+rather than not saving.
 
 ---
 
