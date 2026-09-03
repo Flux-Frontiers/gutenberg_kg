@@ -41,8 +41,9 @@ per-machine artifacts, not something a commit can carry for you.
       "pillar of salt" surfaces Genesis, not Ruskin
 - [x] Diaries browsable by dated entry (874 / 1,426 / 88 / 2,754 across the
       four)
-- [ ] Corpus + embedder installed at `~/Library/Application Support/Corpus`
-      on *your* machine (step 4 — per-machine, not carried by git)
+- [x] Corpus + embedder installed at `~/Library/Application Support/Corpus`
+      on *your* machine (step 4 — per-machine, not carried by git). Verified
+      present on this Mac 2026-09-03: all ten files.
 
 **Private Cloud Compute (step 5, optional engine)**
 
@@ -60,7 +61,11 @@ per-machine artifacts, not something a commit can carry for you.
 - [x] Failure now explains itself in the chat turn instead of showing
       Apple's opaque boilerplate
 - [x] Apple Developer account active (renewal submitted 2026-09-02; portal
-      lagged the order confirmation by a few hours, as expected — resolved)
+      lagged the order confirmation by a few hours, as expected — resolved).
+      A **Developer ID Application** certificate is now in the login keychain,
+      team `552T2QP474`. Note what that is and is not: it signs a Mac app for
+      distribution outside the App Store, it does not sign iOS device builds,
+      and it carries no restricted entitlement, so it moves nothing below.
 - [x] App ID registered in Certificates, Identifiers & Profiles —
       `com.fluxfrontiers.knowledgepress`, explicit, no capabilities enabled
       (Private Cloud Compute is not selectable until the account holds the
@@ -91,11 +96,21 @@ throwaway scratch package, never in `app/GutenbergKGKit`.
 
 **iPhone app (step 6)**
 
-- [ ] `xcodegen generate` run, project opened, team set
-- [ ] Corpus copied onto the device via the container dance (no in-app
-      download yet — see "What is not built yet")
-- [ ] Verified on real hardware (the Simulator cannot run Foundation Models
-      at all, on-device or PCC)
+- [x] `xcodegen generate` run — needed one fix, a shared scheme in
+      `project.yml`; without it `xcodebuild` builds the macOS executable
+      target too and fails on `import AppKit`
+- [x] Compiles for the Simulator **and** for arm64 device, unsigned
+      (`CODE_SIGNING_ALLOWED=NO`) — 2026-09-03, Xcode 27.0 (27A5209h)
+- [x] Apple ID added in Xcode ▸ Settings ▸ Accounts, team set on the target
+- [x] Developer Mode enabled on the iPhone (Settings ▸ Privacy & Security),
+      then reboot — the phone pairs and lists without it, and still refuses
+      every build
+- [x] **Signed build installed and running on real hardware** — 2026-09-03,
+      iPhone 17 Pro (`iPhone18,1`), iOS 27
+- [x] Corpus pushed to the device with `devicectl` — 691 MB, all sixteen
+      entries verified in place including the `.mlpackage` weights
+- [ ] Answers verified on the phone with the network off (the Simulator
+      cannot run Foundation Models at all, on-device or PCC)
 
 **Known gaps** — tracked below in "What is not built yet": no in-app corpus
 download, no image generation, no chat persistence.
@@ -394,6 +409,26 @@ Reading a failure:
 
 ## 6. The iPhone app
 
+Two prerequisites that are easy to miss, because neither produces an error
+until you try to build and then the error names something else:
+
+1. **Sign the Apple ID into Xcode** — Xcode ▸ Settings ▸ Accounts ▸ **+**.
+   A Developer ID certificate sitting in the login keychain does *not* count;
+   that one is for distributing a Mac app outside the App Store and cannot
+   sign an iOS device build. What matters is the account being present, after
+   which automatic signing mints the Apple Development certificate and the
+   provisioning profile itself. Check with
+   `defaults read com.apple.dt.Xcode IDEProvisioningTeams` — it prints
+   nothing until an account is added.
+2. **Enable Developer Mode on the iPhone** — Settings ▸ Privacy & Security ▸
+   Developer Mode, on, then reboot the phone. It only appears in Settings
+   after the phone has been plugged into a Mac running Xcode at least once.
+   Without it the device is visible to `xcrun devicectl list devices` and
+   still refuses every build, with `xcodebuild` reporting only "Timed out
+   waiting for all destinations".
+
+Then:
+
 ```sh
 brew install xcodegen
 cd app/ios
@@ -404,22 +439,136 @@ open KnowledgePress.xcodeproj
 In Xcode: select the **KnowledgePress** target ▸ Signing & Capabilities ▸ set
 your team. Pick your iPhone as the destination. Run.
 
+`KnowledgePress.xcodeproj` and `Info.plist` are both generated and both
+gitignored — `project.yml` is the source of truth. Edit that and re-run
+`xcodegen generate`; anything changed in Xcode's target editor is lost on the
+next generate.
+
+**Private Cloud Compute is commented out of `project.yml` on purpose.** The
+entitlement cannot be present until the capability is granted on the App ID,
+and leaving it in blocks *every* device build rather than just PCC: automatic
+signing cannot produce a profile carrying an entitlement the App ID does not
+hold, so the build fails before it starts. The four lines are commented in
+place; uncomment them once the portal shows the capability.
+
+### Checking it compiles without a phone, an account, or a signature
+
+Useful for CI and for isolating a code failure from a signing one:
+
+```sh
+cd app/ios
+xcodebuild -scheme KnowledgePress -destination 'generic/platform=iOS' \
+  CODE_SIGNING_ALLOWED=NO build
+```
+
+`project.yml` declares a shared scheme, and it has to. Without one,
+`xcodebuild` invents a scheme containing every target in the workspace — the
+package's `KnowledgePress` **macOS** executable among them, which imports
+AppKit and cannot compile for iOS. The failure reads
+`Unable to resolve module dependency: 'AppKit'` and points at the macOS
+shell's source, which makes it look like the shared UI is broken when nothing
+is wrong with it.
+
 ### Getting the corpus onto the phone
 
-There is no in-app download yet, so use Xcode's container tooling — this is the
-normal development path:
+There is no in-app download yet. Push it straight into the app's data
+container with `devicectl`, over the USB cable — no Finder, no `.xcappdata`
+round trip. Run the app on the device once first so the container exists,
+then, from the repo root:
 
-1. Run the app once on the device so its container exists.
-2. **Xcode ▸ Window ▸ Devices and Simulators ▸** your iPhone.
-3. Under *Installed Apps*, select **KnowledgePress**, click the gear ▸
-   **Download Container…**, save the `.xcappdata` bundle.
-4. In Finder, right-click it ▸ *Show Package Contents* ▸
-   `AppData/Library/Application Support/`. Create a `Corpus` folder there and
-   copy in everything from `bundles/gutenberg-all/swift/`.
-5. Back in Xcode, gear ▸ **Replace Container…** and choose the edited bundle.
-6. Relaunch the app. Settings ▸ Corpus should report it.
+```sh
+make ios-deploy     # install the corpus, list what landed, relaunch the app
+```
 
-It is about 900 MB, so the replace takes a couple of minutes.
+`make ios-devices`, `ios-generate`, `ios-check`, `ios-install-corpus`,
+`ios-verify-corpus` and `ios-launch` are the individual steps; the phone is
+auto-detected, and `IOS_DEVICE=<udid|name>` picks one when several are
+attached. What those targets run, written out:
+
+```sh
+DEVICE=$(xcrun devicectl list devices --json-output /dev/stdout \
+  | python3 -c 'import json,sys; print(json.load(sys.stdin)["result"]["devices"][0]["identifier"])')
+
+cd bundles/gutenberg-all/swift
+xcrun devicectl device copy to --device "$DEVICE" \
+  --domain-type appDataContainer \
+  --domain-identifier com.fluxfrontiers.knowledgepress \
+  --destination "Library/Application Support/Corpus" \
+  --source BGEEmbedder.mlpackage --source core.pack \
+  --source diaries.pack --source diaries.vectors \
+  --source embedder.json --source golden.json \
+  --source gutenberg.pack --source gutenberg.vectors \
+  --source manifest.json --source vocab.txt
+```
+
+It creates the intermediate directories itself and skips files that have not
+changed, so re-running it after a re-export only moves what actually differs.
+About 690 MB on the first run.
+
+Check what landed without pulling it back:
+
+```sh
+xcrun devicectl device info files --device "$DEVICE" \
+  --domain-type appDataContainer \
+  --domain-identifier com.fluxfrontiers.knowledgepress \
+  --subdirectory "Library/Application Support/Corpus"
+```
+
+Sixteen entries, because `BGEEmbedder.mlpackage` is a bundle and lists its
+insides — the one to confirm is
+`BGEEmbedder.mlpackage/Data/com.apple.CoreML/weights/weight.bin` at ~63 MB,
+since a flattened copy of that directory is the failure that leaves the app
+reporting a corpus it cannot open.
+
+Then relaunch so it re-reads the directory:
+
+```sh
+xcrun devicectl device process launch --device "$DEVICE" \
+  --terminate-existing com.fluxfrontiers.knowledgepress
+```
+
+The older path — Xcode ▸ Window ▸ Devices and Simulators ▸ gear ▸ **Download
+Container…**, edit the `.xcappdata` in Finder, **Replace Container…** — still
+works and is worth knowing if `devicectl` ever refuses, but it moves the whole
+container both ways for the sake of adding one folder.
+
+### Until the corpus is installed, the app calls a worker that is not there
+
+Expected, and worth recognising so it is not mistaken for a bug. With no packs,
+`AppModel.retrievalEngine` falls through to `WorkerRetrieval`, and the default
+worker URL is `http://localhost:8000` — which on the phone means *the phone*.
+The console fills with:
+
+```
+Connection 1: failed to connect 1:61, reason -1
+... NSErrorFailingURLStringKey=http://localhost:8000/runsync
+```
+
+`61` is `ECONNREFUSED`. Installing the corpus is the fix: `retrievalEngine`
+then takes the `LocalRetrieval` branch and opens no socket at all. Pointing
+Settings at `http://<your-mac>.local:8000` also silences it, but that is the
+pre-packs workaround, not the destination.
+
+### The Private Cloud Compute errors in the Xcode console
+
+Also expected, on every launch, whichever answer engine is selected:
+
+```
+ModelManager received unentitled request. Expected entitlement
+  com.apple.developer.private-cloud-compute
+establishment of session failed with Missing entitlement: ...
+Failed to check usage limit status: ... com.apple.tokengeneration error 24
+```
+
+`AppModel` builds the PCC backend eagerly as a stored property, so
+`PrivateCloudComputeLanguageModel()` is constructed at launch and its
+usage-limit check runs immediately, entitlement or no entitlement. Cosmetic —
+on-device answers are unaffected.
+
+It is also the cleanest confirmation available that **signing was never the
+blocker**: this is a signed build on real hardware and `modelmanagerd` still
+refuses, because the capability is not on the App ID. Nothing about the
+signing setup will change that.
 
 **On the Simulator**, the corpus works but answers do not — Foundation Models
 are unavailable there, which the app says plainly. It is still the fastest way
@@ -523,8 +672,9 @@ Send me:
 
 Honest inventory, so nothing here surprises you:
 
-- **No in-app corpus download.** Installing means the container dance in step 6.
-  Background Assets or a resumable `URLSession` fetch is the Phase 5 item.
+- **No in-app corpus download.** Installing means a `devicectl` push over the
+  cable, step 6. Background Assets or a resumable `URLSession` fetch is the
+  Phase 5 item.
 - **No image generation.** `🎨 Render response` from the Streamlit chat has no
   Swift equivalent yet; it is Phase 4.
 - **No SwiftData persistence.** Chat history is lost on relaunch.

@@ -28,10 +28,15 @@ targets:
     # provisioning half means the App ID must have the capability granted in
     # the developer portal first; until it is, Xcode's automatic signing will
     # refuse to build with this entitlement present.
-    entitlements:
-      path: KnowledgePress.entitlements
-      properties:
-        com.apple.developer.private-cloud-compute: true
+    # DISABLED until the capability is granted on the App ID. Leaving it in
+    # blocks every device build, not just PCC: the profile automatic signing
+    # generates cannot carry an entitlement the App ID does not hold, so the
+    # build fails before it starts. Uncomment all four lines once the portal
+    # shows the capability; nothing else has to change.
+    # entitlements:
+    #   path: KnowledgePress.entitlements
+    #   properties:
+    #     com.apple.developer.private-cloud-compute: true
     info:
       path: Info.plist
       properties:
@@ -48,6 +53,11 @@ targets:
         NSLocalNetworkUsageDescription:
           The Knowledge Press connects to the GutenbergKG worker running on your
           Mac to retrieve passages. Answers are written on this device.
+    # Without a shared scheme, xcodebuild invents one that builds every target
+    # in the workspace -- including the package's `KnowledgePress` executable,
+    # the macOS shell, which imports AppKit and cannot compile for iOS. This
+    # pins the scheme to the app target and its actual dependency chain.
+    scheme: {}
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.fluxfrontiers.knowledgepress

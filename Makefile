@@ -29,6 +29,18 @@
 #   make docs-serve      — serve the mkdocs site locally with live reload
 #   make query Q="..."  — fire a one-shot query against the running worker
 #
+# The Knowledge Press, iPhone app (app/ios) -- see app/RUNBOOK.md section 6:
+#   make ios-devices        -- list connected iPhones and their identifiers
+#   make ios-generate       -- regenerate KnowledgePress.xcodeproj from project.yml
+#   make ios-check          -- compile for arm64 device, unsigned; no phone needed
+#   make ios-install-corpus -- push the corpus packs into the app's container
+#   make ios-verify-corpus  -- list what is actually in that container
+#   make ios-launch         -- relaunch the app so it re-reads the corpus
+#   make ios-deploy         -- install-corpus + verify + launch, in order
+#
+# All the ios-* targets auto-detect the connected phone. With more than one
+# attached, name it: make ios-deploy IOS_DEVICE=<udid|name>
+#
 # Container runtime — RUNTIME=docker (default) or RUNTIME=apple.
 # RUNTIME=apple drives Apple's native `container` CLI instead of Docker
 # (Apple Silicon + macOS 26; no Docker Desktop). First-time / per-boot setup
@@ -187,7 +199,7 @@ endif
 # `gutenkg` on PATH. Override with e.g. `make GUTENKG=gutenkg build-corpus`.
 GUTENKG     ?= poetry run gutenkg
 
-.PHONY: init chunk-diaries build-diaries build-corpus check-pins setup build build-all rebuild rebuild-all prune kill run image-server sdxl-server sdxl-fetch chat up stop down query logs clean docs
+.PHONY: init chunk-diaries build-diaries build-corpus check-pins setup build build-all rebuild rebuild-all prune kill run image-server sdxl-server sdxl-fetch chat up stop down query logs clean docs ios-devices ios-generate ios-check ios-install-corpus ios-verify-corpus ios-launch ios-deploy
 
 init:
 	$(GUTENKG) init
@@ -522,3 +534,73 @@ docs:
 
 docs-serve:
 	poetry run mkdocs serve
+
+# ---------------------------------------------------------------------------
+# The Knowledge Press -- iPhone app (app/ios)
+#
+# Codifies app/RUNBOOK.md section 6. The generated .xcodeproj is gitignored;
+# project.yml is the source of truth, so `ios-generate` is safe to re-run and
+# anything hand-edited in Xcode's target editor is lost by design.
+# ---------------------------------------------------------------------------
+
+IOS_BUNDLE_ID ?= com.fluxfrontiers.knowledgepress
+IOS_CORPUS_DIR ?= bundles/gutenberg-all/swift
+IOS_CONTAINER_PATH = Library/Application Support/Corpus
+IOS_DEVICE ?=
+
+# Resolve the target device inside a recipe: honour IOS_DEVICE when set, else
+# take the single connected phone, else say so and stop.
+define ios_resolve_device
+DEV="$(IOS_DEVICE)"; \
+if [ -z "$$DEV" ]; then \
+	DEV=$$(xcrun devicectl list devices --json-output /dev/stdout 2>/dev/null \
+	  | python3 -c 'import json,sys; d=json.load(sys.stdin)["result"]["devices"]; print(d[0]["identifier"] if d else "")'); \
+fi; \
+if [ -z "$$DEV" ]; then \
+	echo "No iPhone found. Connect one, enable Developer Mode, or pass IOS_DEVICE=<udid|name>."; \
+	exit 1; \
+fi
+endef
+
+ios-devices:
+	@xcrun devicectl list devices
+
+ios-generate:
+	@command -v xcodegen >/dev/null 2>&1 \
+	  || { echo "xcodegen not found -- brew install xcodegen"; exit 1; }
+	cd app/ios && xcodegen generate
+
+# Compiles for a real device without a phone, an Apple account, or a
+# signature -- so a code failure is never confused with a signing one.
+ios-check: ios-generate
+	cd app/ios && xcodebuild -project KnowledgePress.xcodeproj -scheme KnowledgePress \
+	  -destination 'generic/platform=iOS' CODE_SIGNING_ALLOWED=NO build
+
+# Run the app on the device at least once first, so its container exists.
+# Unchanged files are skipped, so re-running after a fresh export only moves
+# what actually differs.
+ios-install-corpus:
+	@test -f "$(IOS_CORPUS_DIR)/manifest.json" \
+	  || { echo "No corpus at $(IOS_CORPUS_DIR) -- run 'gutenkg export-swift --verify' first."; exit 1; }
+	@$(ios_resolve_device); \
+	cd "$(IOS_CORPUS_DIR)" && xcrun devicectl device copy to --device "$$DEV" \
+	  --domain-type appDataContainer --domain-identifier $(IOS_BUNDLE_ID) \
+	  --destination "$(IOS_CONTAINER_PATH)" \
+	  $$(for f in *; do printf -- '--source %s ' "$$f"; done)
+
+# Sixteen entries, because BGEEmbedder.mlpackage lists its insides. The one
+# that matters is .../weights/weight.bin at ~63 MB: a flattened copy of that
+# bundle is what leaves the app reporting a corpus it cannot open.
+ios-verify-corpus:
+	@$(ios_resolve_device); \
+	xcrun devicectl device info files --device "$$DEV" \
+	  --domain-type appDataContainer --domain-identifier $(IOS_BUNDLE_ID) \
+	  --subdirectory "$(IOS_CONTAINER_PATH)"
+
+ios-launch:
+	@$(ios_resolve_device); \
+	xcrun devicectl device process launch --device "$$DEV" \
+	  --terminate-existing $(IOS_BUNDLE_ID)
+
+ios-deploy: ios-install-corpus ios-verify-corpus ios-launch
+	@echo "Corpus installed and app relaunched. Settings > Corpus should say 'on this device'."
