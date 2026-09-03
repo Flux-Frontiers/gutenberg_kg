@@ -22,7 +22,11 @@ let package = Package(
         .executableTarget(name: "KnowledgePress", dependencies: ["KnowledgePressUI"]),
         .testTarget(
             name: "GutenbergKGKitTests",
-            dependencies: ["GutenbergKGKit"],
+            // KnowledgePressUI too, so AppModel is testable. It carries the
+            // worker-connection state, which is ordinary logic that regresses
+            // silently -- a URL that stops persisting looks identical to one
+            // that persists until you relaunch.
+            dependencies: ["GutenbergKGKit", "KnowledgePressUI"],
             // The real bge-small vocabulary and the tokens Python's
             // BertTokenizer produces from it — see TokenizerParityTests.
             resources: [.copy("Fixtures")]),

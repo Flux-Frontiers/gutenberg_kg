@@ -74,21 +74,68 @@ struct SettingsView: View {
 
             corpusSection
 
-            if model.packs == nil {
-                Section("Worker") {
-                    TextField("URL", text: $model.workerURLString)
-                        .textFieldStyle(.roundedBorder)
-                        .font(.caption)
-                        .onSubmit { Task { await model.refreshSidebar() } }
-                    Text("With no corpus installed, passages come from the worker.")
-                        .font(.caption2)
-                        .foregroundStyle(.secondary)
-                }
-            }
+            workerSection
         }
         #if os(macOS)
             .listStyle(.sidebar)
         #endif
+    }
+
+    /// Worker address.
+    ///
+    /// Shown unconditionally. It used to be hidden once packs were installed,
+    /// on the reasoning that a local corpus makes the worker redundant — but
+    /// `.worker` stays a selectable answer engine, and picking it with the
+    /// field hidden left no way to say where the worker is.
+    @ViewBuilder
+    private var workerSection: some View {
+        @Bindable var model = model
+        Section("Worker") {
+            TextField(AppModel.workerURLPlaceholder, text: $model.workerURLString)
+                .textFieldStyle(.roundedBorder)
+                .font(.caption)
+                #if !os(macOS)
+                    .textInputAutocapitalization(.never)
+                    .autocorrectionDisabled()
+                    .keyboardType(.URL)
+                #endif
+                .onSubmit { Task { await model.probeWorker() } }
+
+            HStack {
+                Button("Test") { Task { await model.probeWorker() } }
+                    .disabled(!model.hasWorkerURL)
+                Spacer()
+                switch model.workerProbe {
+                case .idle:
+                    EmptyView()
+                case .probing:
+                    ProgressView().controlSize(.small)
+                case .reachable(let summary):
+                    Label(summary, systemImage: "checkmark.circle.fill")
+                        .font(.caption2)
+                        .foregroundStyle(.green)
+                case .unreachable(let why):
+                    Label(why, systemImage: "xmark.circle.fill")
+                        .font(.caption2)
+                        .foregroundStyle(.orange)
+                        .lineLimit(2)
+                }
+            }
+
+            Text(
+                model.packs == nil
+                    ? "With no corpus installed, passages come from the worker."
+                    : "Passages come from this device. The worker is only used by the Worker answer engine."
+            )
+            .font(.caption2)
+            .foregroundStyle(.secondary)
+
+            #if !os(macOS)
+                Text("`localhost` is this phone, not your Mac — use its name or IP.")
+                    .font(.caption2)
+                    .foregroundStyle(.secondary)
+            #endif
+        }
     }
 
     @ViewBuilder

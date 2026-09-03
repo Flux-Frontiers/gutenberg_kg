@@ -71,8 +71,63 @@ public struct ChatTurn: Identifiable, Sendable {
 public final class AppModel {
 
     // Connection (env-compatible with the Python client)
-    var workerURLString: String =
-        ProcessInfo.processInfo.environment["KGRAG_ENDPOINT"] ?? "http://localhost:8000"
+
+    /// Where the worker lives.
+    ///
+    /// Persisted, and it has to be: an address the reader types in Settings
+    /// that reverts on the next launch is worse than no field at all, because
+    /// it looks like it worked. Written through a computed property rather
+    /// than a `didSet`, whose interaction with the `@Observable` macro's
+    /// synthesised accessors is not something to leave to chance.
+    ///
+    /// `KGRAG_ENDPOINT` still wins when set, so a launch from the shell can
+    /// override a stored value without clearing it.
+    public var workerURLString: String {
+        get { storedWorkerURL }
+        set {
+            storedWorkerURL = newValue
+            AppModel.defaults.set(newValue, forKey: AppModel.workerURLKey)
+        }
+    }
+
+    private var storedWorkerURL: String = AppModel.initialWorkerURL()
+
+    static let workerURLKey = "workerURL"
+    static var defaults: UserDefaults = .standard
+
+    /// The worker address to start from.
+    ///
+    /// The default differs by platform on purpose. `localhost` is right on a
+    /// Mac, where the worker is the same machine. On iOS it names *the
+    /// phone*, so the app spends every query dialling a port nothing is
+    /// listening on and reports "Could not connect to the server" about a
+    /// machine the reader never chose. Better to start empty and say what is
+    /// wanted in the placeholder.
+    static func initialWorkerURL() -> String {
+        if let fromEnv = ProcessInfo.processInfo.environment["KGRAG_ENDPOINT"], !fromEnv.isEmpty {
+            return fromEnv
+        }
+        if let stored = defaults.string(forKey: workerURLKey), !stored.isEmpty {
+            return stored
+        }
+        #if os(macOS)
+            return "http://localhost:8000"
+        #else
+            return ""
+        #endif
+    }
+
+    /// Placeholder for the Settings field — a real example, not a format
+    /// description, since the mistake it exists to prevent is typing
+    /// `localhost`.
+    public static var workerURLPlaceholder: String {
+        #if os(macOS)
+            return "http://localhost:8000"
+        #else
+            return "http://your-mac.local:8000"
+        #endif
+    }
+
     var secret: String = ProcessInfo.processInfo.environment["HANDLER_SECRET"] ?? ""
 
     // Search settings (defaults mirror chat.py's sidebar)
@@ -197,6 +252,48 @@ public final class AppModel {
         return WorkerClient(baseURL: url, secret: secret)
     }
 
+    /// Whether a worker address has been entered at all.
+    ///
+    /// "Not configured" and "configured but unreachable" are different
+    /// problems with different fixes, and collapsing them into one connection
+    /// error is what made an unset iPhone report that it could not reach a
+    /// server the reader never named.
+    public var hasWorkerURL: Bool {
+        !workerURLString.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
+    }
+
+    /// Result of the last Settings ▸ Worker ▸ Test.
+    public enum WorkerProbe: Equatable, Sendable {
+        case idle
+        case probing
+        case reachable(String)
+        case unreachable(String)
+    }
+
+    public private(set) var workerProbe: WorkerProbe = .idle
+
+    /// Ask the worker for its stats and report what came back.
+    ///
+    /// Exists so the reader finds out whether an address works *when they
+    /// type it*, rather than at the first query — the point in the flow where
+    /// a failure is least diagnosable and most annoying.
+    public func probeWorker() async {
+        guard hasWorkerURL else {
+            workerProbe = .unreachable("No address set.")
+            return
+        }
+        workerProbe = .probing
+        do {
+            let found = try await client.stats()
+            stats = found
+            genres = (try? await client.listGenres()) ?? []
+            connectionError = nil
+            workerProbe = .reachable("\(found.books) books · \(found.genres) genres")
+        } catch {
+            workerProbe = .unreachable(error.localizedDescription)
+        }
+    }
+
     /// Retrieval engine for the next query — the packs when they are
     /// installed, the worker when they are not.
     private var retrievalEngine: any RetrievalEngine {
@@ -243,6 +340,10 @@ public final class AppModel {
             stats = catalog.stats(embedModel: packs.manifest.embedder.model)
             genres = catalog.genres()
             connectionError = nil
+            return
+        }
+        guard hasWorkerURL else {
+            connectionError = "No worker address set — Settings ▸ Worker."
             return
         }
         do {
