@@ -1,16 +1,54 @@
 name: CI
 
+# Lint/Type Check/Test duplicate what pre-commit already ran locally before a
+# commit could exist (ruff-check, ruff-format, ty, pytest are all hooks in
+# .pre-commit-config.yaml) — so they are the release gate for main, not a
+# recheck on every push to develop. Each of those three jobs repeats the same
+# `if:` condition below (main push, PR into main, or a manual dispatch) —
+# GitHub Actions has no clean way to share a job-level `if:` across jobs
+# without an extra needs/outputs job, which is not worth it for one boolean.
+# Keep the three in sync by hand if this condition ever changes.
+#
+# Check KG Pins and Installed CLI have no local equivalent — nothing pre-commit
+# runs touches wheel packaging or the cross-file pin drift they catch — so
+# both run unconditionally, on every push and PR to either branch.
+#
+# `paths-ignore` skips the whole workflow when a push or PR touches only
+# Markdown: no Python changed, so nothing here has anything to check.
 on:
   push:
     branches: [main, develop]
+    paths-ignore: ["**.md"]
   pull_request:
     branches: [main, develop]
+    paths-ignore: ["**.md"]
   workflow_dispatch:
 
 jobs:
+  check-pins:
+    name: Check KG Pins
+    runs-on: ubuntu-latest
+    # Stdlib-only (see the run step), so this needs a bare Python and nothing
+    # from Poetry — cheap enough to run unconditionally rather than folded
+    # into a gated job.
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # Catches the KG pins drifting apart across pyproject / poetry.lock /
+      # docker/Dockerfile / runpod/requirements.txt — none of which fails a
+      # build when it happens, which is why it went unnoticed until an audit.
+      - name: Check KG pins
+        run: python scripts/check_pins.py
+
   lint:
     name: Lint & Format
     runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main' || github.base_ref == 'main' || github.event_name == 'workflow_dispatch'
     steps:
       - uses: actions/checkout@v4
 
@@ -40,16 +78,10 @@ jobs:
       - name: Lint
         run: poetry run ruff check .
 
-      # Stdlib-only, so it runs regardless of what the install resolved. Catches
-      # the KG pins drifting apart across pyproject / poetry.lock /
-      # docker/Dockerfile / runpod/requirements.txt — none of which fails a
-      # build when it happens, which is why it went unnoticed until an audit.
-      - name: Check KG pins
-        run: python scripts/check_pins.py
-
   type-check:
     name: Type Check
     runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main' || github.base_ref == 'main' || github.event_name == 'workflow_dispatch'
     steps:
       - uses: actions/checkout@v4
 
@@ -85,6 +117,7 @@ jobs:
   test:
     name: Test
     runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main' || github.base_ref == 'main' || github.event_name == 'workflow_dispatch'
 
     steps:
       - uses: actions/checkout@v4
