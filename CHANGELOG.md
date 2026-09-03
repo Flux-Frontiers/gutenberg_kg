@@ -8,7 +8,133 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Added
+
+- **Private Cloud Compute as a Foundation Models answer engine.** WWDC26
+  unified the framework's API for the on-device model and Apple's server tier,
+  reachable through the same `LanguageModelSession` -- so this is a peer of
+  `OnDeviceSynthesis`, not a rewrite of it: `PrivateCloudSynthesis.swift`
+  builds a session from `LanguageModelSession.Profile { ... }.model(
+  PrivateCloudComputeLanguageModel())` instead of the plain on-device
+  initializer, and everything downstream of "a session exists" -- streaming,
+  cancellation, error translation, metrics -- is shared code, hoisted out of
+  `OnDeviceSynthesis` into two free functions both backends call.
+
+  It is offered as its own engine (Settings ▸ Answers ▸ **Private Cloud**),
+  not folded into on-device: it needs a network connection and draws on the
+  user's iCloud quota, which is the opposite of on-device's "nothing leaves
+  the phone, works in airplane mode" promise. In exchange it carries a
+  32,768-token context window -- eight times on-device's -- so up to 12
+  passages reach the model instead of 5, the same shape as the worker's
+  server-class synthesis. Settings surfaces a usage caption as the daily quota
+  is approached or reached, with a button to Apple's own upgrade sheet.
+
+  `PrivateCloudComputeLanguageModel` is new in the iOS 27 / macOS 27 SDK, not
+  merely `@available`-gated within an SDK that already had it, so
+  `#if canImport(FoundationModels)` alone would still compile against an
+  Xcode 26 toolchain and fail outright on the missing type. Gated instead on
+  `compiler(>=6.4)`, verified against Apple's own Xcode 27 release notes to
+  ship exclusively with the iOS 27 SDKs -- so `app/RUNBOOK.md`'s Xcode 26
+  baseline keeps building; this engine is just absent until the toolchain
+  catches up.
+
+  Verified live the same day: an unsigned `swift run` binary cannot use PCC,
+  ever. The request dies locally in ~15 ms with
+  `ModelManagerServices.ModelManagerError` 1046 ("PCC inference is not
+  available in this context") buried two `underlyingErrors` deep in a raw
+  `NSError` whose surface says only "error -1" -- and `availability` reports
+  `.available` regardless, because it checks the device, not the process.
+  The generic catch now walks NSError chains to the root cause, names the
+  `com.apple.developer.private-cloud-compute` entitlement requirement in the
+  failed turn, and `app/ios/project.yml` declares that entitlement for the
+  signed build, which is the only build that can answer through PCC.
+
+- **Diaries browse by dated entry.** `Browse` used to list the four diaries
+  and show nothing underneath -- the catalog carries no `file_path` for a
+  diary and `diaries.pack` has zero `section` rows, so `LocalBrowser.locate`
+  had nothing to resolve, and the worker cannot resolve one either. Fixed
+  Swift-side, no re-export: `CorpusStore.diaryIdentity(title:)` maps a
+  catalog title to the `kg_name` that identifies it in the pack, and each
+  distinct `timestamp` becomes one browsable entry -- 874, 1,426, 88 and
+  2,754 of them across the four diaries. Pepys's 2,754 render grouped by year
+  in `BrowseView`, rather than as one flat scroll with no landmarks.
+
 ### Fixed
+
+- **The `all` scope buried the literal matches the lexical channel had just
+  rescued.** Restoring phrase-first search put the Lot's-wife verse at rank 1
+  of the books, and then the merge threw it away: the app still answered
+  "the passage does not mention a pillar of salt", correctly, because the verse
+  was not among the passages it was given.
+
+  A literal BM25 match owes its rank to the lexical channel *because* the dense
+  channel buried it, so its cosine is low by construction -- the verse fuses to
+  the top of the books at 0.59, where every diary chunk scores ~0.70. Sorting
+  the merged list by score therefore did not reorder it, it dropped it out of
+  the top k entirely, and the better the lexical channel worked the more
+  reliably the merge undid it.
+
+  Both corpora are now folded together by fused *rank* at the same RRF
+  constant, in the app (`LocalRetrieval`) and in the worker (`handler.query`'s
+  `corpus == "all"` branch). Ids do not repeat across corpora, so equal ranks
+  tie and break on first-seen order: the two interleave and each keeps the
+  order it fused for itself.
+
+  The golden gate could not have caught this either -- `golden.json` records
+  each pack separately, so the merge was never on its path. Covered now by a
+  Swift regression test asserting the verse survives under both `gutenberg` and
+  `all`, and by `tests/test_handler_merge.py` for the worker.
+
+  `runpod/handler.py` has the same line and is deliberately untouched: it has
+  no lexical channel, so both its lists are pure cosine and sorting the union
+  is coherent there.
+
+### Added
+
+- **`gutenberg_kg.serve.fusion`.** Importing `handler` runs its startup --
+  registry, catalog, embedder, vector stores -- so nothing in that module can
+  be unit-tested without loading a model. The rank-merge arithmetic is pure, so
+  it lives here and the handler calls in.
+
+- **Retrieval lost exact phrases, and lost RRF's ordering.** Two divergences
+  from the worker the pack path claims to translate, both found by asking the
+  running Mac app for "pillar of salt" and getting Ruskin and Nietzsche
+  instead of Lot's wife.
+
+  `GraphStore.search_lexical` searches the exact phrase first and only falls
+  back to an OR of the terms. `export_swift` kept the OR and dropped the
+  phrase, and the Swift port faithfully mirrored `export_swift`, so the query
+  ran as `"pillar" OR "of" OR "salt"` -- and "of" matches nearly every one of
+  364K passages, diluting BM25 until the verse is unreachable. That is the
+  exact failure doc-kg 0.15.6 was released to fix, reintroduced in the export
+  path. Both sides now do phrase, then OR; the Genesis chunk returns to rank 1
+  from 604th on cosine alone.
+
+  Separately, `LocalRetrieval` re-sorted every result by cosine. The worker
+  sorts only when merging books with diaries, because within one corpus the
+  order is already RRF's and cosine is not what RRF ranked by: a literal match
+  floated up by fusion carries a *lower* cosine than the semantic hits under
+  it, so re-sorting buried precisely what fusion surfaced.
+
+- **The golden gate could not catch either of those.** It compared the set of
+  returned passages and their scores, so a result holding the right passages
+  in the wrong order passed -- and it was passing at exactly its own 0.90
+  tolerance floor. It now also bounds how far a shared hit may drift from the
+  reference's fused position (`max_rank_drift`, default 2). Deliberately not
+  an exact-order check: the dense channels differ in their last bits (numpy
+  over dequantised int8 against Accelerate), so near-ties come back either way
+  round and every divergence observed was a single adjacent transposition,
+  while losing the fused order moves a hit much further.
+
+- **The Swift package would not compile on a Mac.** `CorpusStore
+  .matchExpression` chained `query.map` (a `[Character]`) into
+  `split(separator: " ")` and then `map(String.init)`; Swift 6.4 will not
+  finish that overload set and reports "failed to produce diagnostic for
+  expression" instead of a real error. An explicit `String` intermediate types
+  each step unambiguously. This was the *only* failure in the first Mac build
+  of the package -- none of the six that `app/RUNBOOK.md` section 7 predicted
+  occurred -- and the full suite is now 55 tests green with the golden gate
+  armed against the real 389K-passage corpus.
 
 - **The Swift tokenizer mis-segmented CJK, and now cannot.** `WordPieceTokenizer`
   omitted BERT's `_tokenize_chinese_chars` pass, so a run of ideographs was one

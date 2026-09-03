@@ -109,5 +109,8 @@ with (FIXTURES / "tokenizer_fixture.json").open("w", encoding="utf-8") as fh:
         ensure_ascii=False,
         indent=1,
     )
+    # json.dump ends without one, and pre-commit's end-of-file-fixer adds it
+    # back on the next commit — so write it here and stop the file flapping.
+    fh.write("\n")
 
 print(f"{len(out)} cases, vocab {len(ordered)} -> {FIXTURES}")

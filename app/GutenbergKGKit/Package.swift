@@ -4,7 +4,8 @@ import PackageDescription
 
 // iOS 18 / macOS 14 are the deployment floors so the thin client still builds
 // on current systems; the Foundation Models path is gated to 26 at the call
-// site (see Synthesis/OnDeviceSynthesis.swift) rather than raised here.
+// site (see Synthesis/OnDeviceSynthesis.swift) rather than raised here, and
+// Private Cloud Compute to 27 (see Synthesis/PrivateCloudSynthesis.swift).
 let package = Package(
     name: "GutenbergKGKit",
     platforms: [.macOS(.v14), .iOS(.v18)],

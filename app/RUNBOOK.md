@@ -3,15 +3,102 @@
 A start-to-finish checklist for the on-device app: build the corpus, convert
 the embedder, compile the Swift, and get it answering with the network off.
 
-**Read this first.** The Python in this branch was written and run — 35 tests
-green. The Swift was written and reviewed but **never compiled**, because the
-environment it was written in has no Swift toolchain. Step 3 is where you find
-out what I got wrong, and [Troubleshooting](#7-troubleshooting) lists the
-failures I consider most likely, with fixes. Budget an hour for that step and
-it will probably take twenty minutes.
+**Read this first.** This has now been run end to end on a Mac (Xcode-beta,
+Swift 6.4, macOS 27), so the warning that used to stand here is retired: the
+Swift compiles and the golden gate passes. Step 3 needed exactly one fix, and
+it was not any of the six that [Troubleshooting](#7-troubleshooting) predicts
+-- those all compiled as written. Section 7 stays because a different
+toolchain may still hit them.
+
+Two things did go wrong, and both are written up where they bite: step 2 does
+not run in the project venv at all (see the note there), and the retrieval
+port had two divergences from the worker that the golden gate was too weak to
+catch. Both are fixed; the gate now checks rank order, not just membership.
 
 Do the steps in order. Steps 1–5 get the Mac app working, which is the fastest
 feedback loop; the iPhone (step 6) is the same code with a different shell.
+
+---
+
+## Status checklist
+
+Where this actually stands, as of 2026-09-03 on branch `develop` (`26d9700`).
+Check off what applies to your own run as you go — corpus/embedder are
+per-machine artifacts, not something a commit can carry for you.
+
+**Core app (steps 1–5)**
+
+- [x] Corpus packs build (`gutenkg export-swift --verify`) — recall@10 0.958
+      on the real corpus
+- [x] Embedder converts (needs the isolated venv in step 2 — does **not**
+      work in the project venv, and cannot)
+- [x] Swift package builds clean on Xcode 27 / Swift 6.4 (one fix needed,
+      `CorpusStore.matchExpression`, already applied)
+- [x] Full test suite green — 78 tests, golden gate armed against the real
+      corpus
+- [x] Retrieval verified correct: phrase-first lexical search restored, RRF
+      order preserved within a pack **and** across the `all`-scope merge —
+      "pillar of salt" surfaces Genesis, not Ruskin
+- [x] Diaries browsable by dated entry (874 / 1,426 / 88 / 2,754 across the
+      four)
+- [ ] Corpus + embedder installed at `~/Library/Application Support/Corpus`
+      on *your* machine (step 4 — per-machine, not carried by git)
+
+**Private Cloud Compute (step 5, optional engine)**
+
+- [x] Backend implemented against the real iOS 27 SDK (`Profile`-based
+      session construction, not the API several web sources describe, which
+      does not exist)
+- [x] Compiles on Xcode 26 too — the feature compiles itself out below Swift
+      6.4 rather than breaking the baseline build
+- [x] Root cause of the "-1" failure fully diagnosed: `swift run` is
+      categorically refused (`ModelManagerError` 1046) because PCC needs the
+      `com.apple.developer.private-cloud-compute` entitlement in the code
+      signature *and* the provisioning profile, which no unsigned binary can
+      carry — not a bug in this app, not fixable in this app
+- [x] Entitlement declared in `app/ios/project.yml`, ready for a signed build
+- [x] Failure now explains itself in the chat turn instead of showing
+      Apple's opaque boilerplate
+- [x] Apple Developer account active (renewal submitted 2026-09-02; portal
+      lagged the order confirmation by a few hours, as expected — resolved)
+- [x] App ID registered in Certificates, Identifiers & Profiles —
+      `com.fluxfrontiers.knowledgepress`, explicit, no capabilities enabled
+      (Private Cloud Compute is not selectable until the account holds the
+      entitlement; nothing else the app does needs one). Team ID
+      `552T2QP474` — for reference when filing the PCC request or checking
+      `codesign -d --entitlements :-` against a build.
+- [ ] Enrolled in the App Store Small Business Program — **submitted
+      2026-09-02, pending approval; this is the current blocker.** No
+      published SLA from Apple.
+- [ ] PCC entitlement requested via Apple's [direct
+      form](https://developer.apple.com/contact/request/private-cloud-compute/)
+      — blocked on SBP approval above
+- [ ] Capability granted on the App ID in Certificates, Identifiers & Profiles
+- [ ] Signed `app/ios` build run on real iOS 27 hardware — the actual, only
+      way to get a PCC answer; `swift run` cannot, permanently
+
+A dev-only shortcut exists for testing PCC access itself while the above is
+pending: [TwoMillionKit](https://github.com/insidegui/TwoMillionKit) wraps
+`/usr/bin/fm` (Apple's own signed CLI, ships with macOS 27) as a
+`LanguageModel`, sidestepping the entitlement by delegating to a process that
+already has it. Tried on this machine 2026-09-02 and blocked by an unrelated
+problem: a dyld symbol mismatch between this machine's OS build (`26A5421a`,
+Beta 5) and the SDK bundled in Xcode-beta (`26A5368f`, an earlier snapshot).
+Updating Xcode-beta would likely fix it but is a multi-GB download that could
+shift the SDK under everything else in this document — not attempted without
+asking first. Not part of the shipped app either way; if used, keep it in a
+throwaway scratch package, never in `app/GutenbergKGKit`.
+
+**iPhone app (step 6)**
+
+- [ ] `xcodegen generate` run, project opened, team set
+- [ ] Corpus copied onto the device via the container dance (no in-app
+      download yet — see "What is not built yet")
+- [ ] Verified on real hardware (the Simulator cannot run Foundation Models
+      at all, on-device or PCC)
+
+**Known gaps** — tracked below in "What is not built yet": no in-app corpus
+download, no image generation, no chat persistence.
 
 ---
 
@@ -21,6 +108,7 @@ feedback loop; the iPhone (step 6) is the same code with a different shell.
 |---|---|---|
 | macOS 26, Apple silicon | on-device answers | Apple Intelligence must be **on** in System Settings. Without it everything else still runs and the app says why the answer engine is off. |
 | Xcode 26 | building | `swift test` needs the full Xcode, not Command Line Tools. |
+| Xcode 27 (optional) | Private Cloud Compute answers | Only for the Private Cloud engine (step 5). Everything else builds and runs on Xcode 26 unchanged — `PrivateCloudSynthesis.swift` compiles itself out below Swift 6.4, which ships only with Xcode 27. |
 | A built bundle | steps 1–2 | `bundles/gutenberg-all/` — the output of `make build-corpus`. |
 | ~5 GB free | steps 1–2 | The export reads 5.7 GB and writes under 1 GB. |
 | iPhone 15 Pro or newer, iOS 26 | step 6 | The Simulator cannot run Foundation Models. |
@@ -104,10 +192,44 @@ The packs hold `bge-small-en-v1.5` vectors. A query embedded by any other model
 lands somewhere else in the space and returns fluent, ranked, **wrong**
 passages — so the app has to carry this exact model.
 
-```sh
-poetry run pip install torch transformers coremltools   # deliberately not project deps
-poetry run gutenkg export-embedder
+**This does not work in the project venv, and cannot.** transformers 5.x
+routes BERT through its unified `masking_utils`, which emits a non-scalar
+`aten::Int` that coremltools 9.0 cannot fold to a constant:
+
 ```
+TypeError: only 0-dimensional arrays can be converted to Python scalars
+```
+
+Downgrading is not an option either -- `doc-kg (>=0.22.0)` and `kg-rag 0.11.0`
+require `transformers>=5.5.0`, which `pyproject.toml` documents. It is not
+attention-dependent; `eager` and `sdpa` fail identically.
+
+Use a throwaway venv pinned to the stack coremltools is tested against, which
+is what "deliberately not project deps" was always pointing at:
+
+```sh
+python3.12 -m venv /tmp/mlenv
+/tmp/mlenv/bin/pip install torch==2.7.1 transformers==4.46.3 "numpy<2" coremltools
+```
+
+`export_embedder.py` imports torch, transformers and coremltools lazily inside
+the function and needs nothing else from the package, so drive it by loading
+the file directly rather than importing `gutenberg_kg` -- that keeps the
+transformers 5.x chain out of the process:
+
+```python
+import importlib.util, sys
+from pathlib import Path
+
+src = Path("src/gutenberg_kg/export_embedder.py")
+spec = importlib.util.spec_from_file_location("export_embedder", src)
+mod = importlib.util.module_from_spec(spec)
+sys.modules[spec.name] = mod        # @dataclass resolves through sys.modules
+spec.loader.exec_module(mod)
+mod.export_embedder(Path("bundles/gutenberg-all/swift"), progress=print)
+```
+
+Expect 66 MB at parity 0.9999.
 
 Writes into the same directory as step 1:
 
@@ -134,27 +256,34 @@ swift build
 swift test
 ```
 
-`swift test` runs 45-odd tests: the context budgeter, the WordPiece tokenizer,
-RRF fusion, top-k selection, the worker schema fixtures, and the tokenizer
-parity suite. The golden gate skips at this point — step 5 turns it on.
+`swift test` runs the suite (78 tests as of this writing): the context
+budgeter, the WordPiece tokenizer, RRF fusion, top-k selection, the worker
+schema fixtures, the Private Cloud Compute error-translation tests, and the
+tokenizer parity suite. The golden gate and the diary-browse tests both skip
+here — they need the real corpus, which step 5 supplies via
+`GUTENBERG_PACKS`.
 
 **When `swift build` fails, go to [Troubleshooting](#7-troubleshooting) before
 changing anything.** The likely failures are known and small.
 
 ### What is already verified, and what is not
 
-The Apple-free half of the package — `WordPieceTokenizer`, `ContextBudgeter`,
-`SynthesisPrompt`, `QueryOrchestrator`, `Models`, the protocols, and the
-non-FoundationModels path of `OnDeviceSynthesis` — **compiles clean under Swift
-6 strict concurrency and its 26 tests pass**, checked on a Linux toolchain.
+**All of it is verified now.** The whole package builds and the full suite
+(78 tests as of this writing) passes, the golden gate and diary-browse tests
+among them. That includes everything importing CoreML, Accelerate, SQLite3
+or SwiftUI -- `BGEEmbedder`, `VectorIndex`, `CorpusStore`, `CatalogPack`,
+`CorpusPacks`, `LocalRetrieval` and the UI target -- which was the half this
+step existed to test.
+
+The one compile failure was `CorpusStore.matchExpression`: chaining
+`query.map` (a `[Character]`) into `split(separator: " ")` and then
+`map(String.init)` gives the type checker an overload set it will not finish,
+and it reports "failed to produce diagnostic for expression" rather than a
+real error. Making the intermediate an explicit `String` fixes it.
+
 `TokenizerParityTests` runs the shipped tokenizer over the real 30,522-token
 `bge-small` vocabulary and asserts it reproduces Python's `BertTokenizer`
 exactly on 36 inputs, the twelve golden queries among them.
-
-Untouched by that: everything importing CoreML, Accelerate, SQLite3 or SwiftUI
-— `BGEEmbedder`, `VectorIndex`, `CorpusStore`, `CatalogPack`, `CorpusPacks`,
-`LocalRetrieval`, and the whole UI target. Those are what step 3 is really
-testing.
 
 If you want the same Linux check yourself (useful in CI, no Mac needed), the
 subset builds with a stock `swift-6.0.3` toolchain against a `Package.swift`
@@ -206,6 +335,39 @@ swift run KnowledgePress
    Evelyn, and an answer that streams in.
 5. **Turn off Wi-Fi and ask again.** Nothing should change. This is the whole
    point; if it works, the feature is done.
+
+### Trying Private Cloud Compute (needs Xcode 27, step 0)
+
+Pick **Private Cloud** in Settings ▸ Answers. This is a genuinely different
+promise from on-device — it needs a network connection and draws on your
+iCloud account's daily quota — so it is its own engine rather than a silent
+upgrade path, and "works in airplane mode" above does not apply to it.
+
+**Verified live 2026-09-02: `swift run` can never use Private Cloud Compute.**
+The request fails in ~15 ms — no network round trip happens at all — with a
+raw `NSError` whose root cause, two `underlyingErrors` deep, is
+`ModelManagerServices.ModelManagerError` code 1046: "PCC inference is not
+available in this context." That is `modelmanagerd` refusing an unsigned
+process. PCC requires the `com.apple.developer.private-cloud-compute`
+entitlement in **both** the code signature and the provisioning profile;
+a SwiftPM executable has neither, no matter what the account is entitled to.
+Note the trap that cost an evening: `availability` reports `.available`
+anyway — the check covers device eligibility, not whether *this process* may
+ask.
+
+The app now says all of this in the failed turn instead of the framework's
+boilerplate ("FoundationModels.LanguageModelError error -1"). To actually
+run PCC: the App ID needs the capability granted in the developer portal
+(the eligibility programme from step 0), `app/ios/project.yml` already
+declares the entitlement, and the signed app must run from Xcode on real
+hardware. On-device answers need none of this, which is why they work from
+`swift run`.
+
+If it does run: the context window is 32,768 tokens against on-device's 4,096,
+so up to 12 passages reach the model instead of 5 — the same shape as the
+worker's server-class synthesis, coincidentally. Settings shows a usage
+caption once you are nearing or have hit the day's quota, with a button to
+Apple's own upgrade sheet.
 
 ### Then run the golden gate
 
@@ -366,6 +528,22 @@ Honest inventory, so nothing here surprises you:
 - **No image generation.** `🎨 Render response` from the Streamlit chat has no
   Swift equivalent yet; it is Phase 4.
 - **No SwiftData persistence.** Chat history is lost on relaunch.
-- **The golden gate has never run.** It is written and it is the right check;
-  step 5 is the first time it executes. The tokenizer half of what it would
-  catch is now covered separately by `TokenizerParityTests`, which has run.
+- **Diaries browse by dated entry, fixed.** Browse used to list the four
+  diaries and show nothing under them, because the catalog carries no
+  `file_path` for a diary and `diaries.pack` has zero `section` rows — nothing
+  for `LocalBrowser.locate` to resolve, and the worker cannot resolve one
+  either (`handler._resolve_book_file_path` looks for a `document` node in the
+  DocKG store; diaries live in DiaryKG). Fixed Swift-side, no re-export: a
+  diary's `title` matches the catalog's `book` name, `kg_name` is the identity
+  `CorpusStore.diaryIdentity(title:)` resolves it to, and each distinct
+  `timestamp` is one browsable entry (874 / 1,426 / 88 / 2,754 of them across
+  the four). Pepys's 2,754 render grouped by year rather than one flat scroll.
+  Covered by `DiaryBrowseTests.swift`, opt-in behind `GUTENBERG_PACKS` like the
+  golden gate.
+- **The golden gate has now run**, and it earned its keep: it was the thing
+  that made the "pillar of salt" divergence measurable rather than a matter of
+  opinion. Worth knowing what it did *not* catch on its own -- it compared the
+  set of returned passages and their scores, so a result carrying the right
+  passages in the wrong order passed, and it was doing so at exactly its 0.90
+  tolerance floor. It now also bounds how far a shared hit may drift from the
+  reference's fused position (`max_rank_drift`, default 2).

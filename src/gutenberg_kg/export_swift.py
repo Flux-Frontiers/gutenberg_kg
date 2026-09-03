@@ -1069,8 +1069,37 @@ def read_vector_sidecar(sidecar: Path):
 # --------------------------------------------------------------------------
 
 
+def fts_terms(query: str) -> list[str]:
+    """Tokenise a query into bare alphanumeric terms for FTS5.
+
+    Strips apostrophes, quotes and punctuation that would otherwise be read as
+    FTS5 query syntax, so ``Lot's`` becomes ``lot``, ``s``. Mirrors
+    ``doc_kg.store._fts_terms``.
+
+    :param query: The user's query text.
+    :returns: The searchable terms, in order; empty when nothing is searchable.
+    """
+    return [t for t in ("".join(c if c.isalnum() else " " for c in query)).split() if t]
+
+
+def fts_phrase_expression(query: str) -> str:
+    """The exact-phrase FTS5 expression: every term, adjacent and in order.
+
+    Tried *before* :func:`fts_match_expression`, because a rare phrase diluted
+    in a long chunk is exactly what the dense channel buries — "pillar of salt"
+    ranks the Lot's-wife verse 604th on cosine alone, and only a phrase match
+    recovers it. ``doc_kg.store.GraphStore.search_lexical`` does the same two
+    steps in the same order; this is the pack's copy of that behaviour.
+
+    :param query: The user's query text.
+    :returns: A quoted phrase expression, or ``""`` when nothing is searchable.
+    """
+    terms = fts_terms(query)
+    return '"' + " ".join(terms) + '"' if terms else ""
+
+
 def fts_match_expression(query: str) -> str:
-    """Turn a natural-language query into a safe FTS5 MATCH expression.
+    """The any-term FTS5 expression — the recall fallback behind the phrase.
 
     Every term is quoted and the terms are OR-ed, so an apostrophe or a
     question mark in the query cannot become FTS5 syntax — and a query is never
@@ -1079,8 +1108,7 @@ def fts_match_expression(query: str) -> str:
     :param query: The user's query text.
     :returns: An FTS5 MATCH expression, or ``""`` when nothing is searchable.
     """
-    terms = [t for t in ("".join(c if c.isalnum() else " " for c in query)).split() if t]
-    return " OR ".join(f'"{term}"' for term in terms)
+    return " OR ".join(f'"{term}"' for term in fts_terms(query))
 
 
 def _scope_clause(*, genre: str | None, prefix: str = "") -> str:
@@ -1170,18 +1198,29 @@ def search_pack(
             _all_scores = {}
 
         lexical_ids: list[str] = []
-        expression = fts_match_expression(query_text) if lexical else ""
-        if expression:
+        if lexical:
             lex_sql = (
                 "SELECT p.id AS id FROM passages_fts f "
                 "JOIN passages p ON p.rowid = f.rowid "
                 f"WHERE passages_fts MATCH ? AND {_scope_clause(genre=genre, prefix='p.')} "
                 "ORDER BY bm25(passages_fts) LIMIT ?"
             )
-            try:
-                lexical_ids = [r["id"] for r in con.execute(lex_sql, [expression, *params, k * 3])]
-            except sqlite3.Error:
-                lexical_ids = []
+
+            def run_lexical(expression: str) -> list[str]:
+                if not expression:
+                    return []
+                try:
+                    return [r["id"] for r in con.execute(lex_sql, [expression, *params, k * 3])]
+                except sqlite3.Error:
+                    return []
+
+            # Phrase first, then any-term for recall — the order
+            # ``GraphStore.search_lexical`` uses. A phrase hit is a literal
+            # match and deserves to seed the fusion; the OR form is what keeps
+            # a query with no adjacent match from returning nothing at all.
+            lexical_ids = run_lexical(fts_phrase_expression(query_text))
+            if not lexical_ids:
+                lexical_ids = run_lexical(fts_match_expression(query_text))
 
         # Hydrate cosine for lexical-only ids so every fused hit carries an
         # honest score — handler._semantic_search does exactly this.
@@ -1313,7 +1352,15 @@ def build_golden(
         "vector_dtype": dtype,
         "rrf_k": RRF_K,
         "k": k,
-        "tolerance": {"rank_overlap": 0.9, "score_delta": 0.02},
+        # max_rank_drift bounds how far a shared hit may move between the
+        # reference and the Swift engine. It is not zero because the dense
+        # channels differ in their last bits — numpy's argsort over
+        # dequantised int8 against Accelerate's dot product — so near-ties
+        # come back in either order, and a tie swapped is not a ranking
+        # fault. It is small because losing the fused order altogether (say,
+        # by re-sorting on cosine) moves a lexically-promoted hit much
+        # further than a place or two.
+        "tolerance": {"rank_overlap": 0.9, "score_delta": 0.02, "max_rank_drift": 2},
         "queries": entries,
     }
 

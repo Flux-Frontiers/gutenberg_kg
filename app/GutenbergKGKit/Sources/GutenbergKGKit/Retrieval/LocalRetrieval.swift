@@ -33,14 +33,12 @@ public struct LocalRetrieval: RetrievalEngine {
         let scope = Self.genreScope(for: request.corpus)
         let oversample = max(request.k * 3, request.k)
 
-        var hits: [Hit] = []
-        var packsSearched = 0
+        var perPack: [[Hit]] = []
 
         for pack in packs.packs {
             guard Self.pack(pack, matches: request.corpus) else { continue }
-            packsSearched += 1
-            hits.append(
-                contentsOf: try search(
+            perPack.append(
+                try search(
                     pack: pack,
                     query: query,
                     text: request.query,
@@ -50,11 +48,30 @@ public struct LocalRetrieval: RetrievalEngine {
                     minScore: request.minScore,
                     semanticFloor: request.semanticFloor))
         }
+        let packsSearched = perPack.count
 
-        // Books and diaries are separate packs ranked on the same cosine scale,
-        // so merging by score is the whole of the `all` case — the worker does
-        // the same thing across its DocKG and DiaryKG tables.
-        hits.sort { $0.score > $1.score }
+        // Each list is already in RRF order, and cosine is not what RRF ranked
+        // by, so neither the one-pack case nor the merge may re-sort on score.
+        //
+        // The merge is where this bites hardest. A literal match owes its place
+        // to BM25 precisely *because* the dense channel buried it, so its
+        // cosine is low by construction: "pillar of salt" fuses the Lot's-wife
+        // verse to rank 1 of the books at 0.59, where every diary chunk scores
+        // ~0.70. Sorting the combined list by score therefore does not just
+        // reorder it, it drops the verse off the end of the top k -- it buries
+        // exactly the hit the lexical channel exists to rescue, and the deeper
+        // the fusion reached, the more certainly it is lost.
+        //
+        // So the packs are folded together by fused *rank* instead, with the
+        // same RRF constant. Disjoint ids at equal rank tie and fall back to
+        // first-seen order, which interleaves the packs and keeps each one's
+        // internal order intact. Note this is deliberately *not* what
+        // `handler.query` does in its `corpus == "all"` branch, which sorts by
+        // score and has the same defect.
+        var hits =
+            packsSearched > 1
+            ? Self.mergeByFusedRank(perPack, k: request.k, rrfK: rrfK)
+            : (perPack.first ?? [])
         if hits.count > request.k { hits = Array(hits.prefix(request.k)) }
 
         return RetrievalResult(
@@ -130,6 +147,44 @@ public struct LocalRetrieval: RetrievalEngine {
     }
 
     // MARK: - Fusion and scope
+
+    /// Fold per-pack results, each already RRF-ordered, into one ranking.
+    ///
+    /// Same arithmetic as :func:`fuse`, applied to whole packs rather than to
+    /// the two channels inside one: a hit contributes `1 / (rrfK + rank)` from
+    /// the list it came from. Ids do not repeat across packs, so every hit
+    /// scores from exactly one list and equal ranks tie; the tie breaks on
+    /// first-seen order, which interleaves the packs fairly while preserving
+    /// the order each one fused for itself.
+    ///
+    /// :param lists: One best-first list per pack.
+    /// :param k: How many hits to return.
+    /// :param rrfK: The rank-damping constant, from the manifest.
+    /// :returns: The merged ranking, best-first.
+    static func mergeByFusedRank(_ lists: [[Hit]], k: Int, rrfK: Int) -> [Hit] {
+        var scores: [String: Double] = [:]
+        var hitByID: [String: Hit] = [:]
+        var order: [String] = []
+        for list in lists {
+            for (rank, hit) in list.enumerated() {
+                if hitByID[hit.nodeId] == nil {
+                    order.append(hit.nodeId)
+                    hitByID[hit.nodeId] = hit
+                }
+                scores[hit.nodeId, default: 0] += 1.0 / Double(rrfK + rank)
+            }
+        }
+        return
+            order
+            .enumerated()
+            .sorted {
+                let left = scores[$0.element] ?? 0
+                let right = scores[$1.element] ?? 0
+                return left == right ? $0.offset < $1.offset : left > right
+            }
+            .prefix(k)
+            .compactMap { hitByID[$0.element] }
+    }
 
     /// Reciprocal rank fusion — `handler._rrf_fuse`, arithmetic for arithmetic.
     ///

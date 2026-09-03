@@ -125,6 +125,14 @@ private let lorem = String(repeating: "conformity to universal law ", count: 200
         // SYNTH_MAX_K = 12 in serve/handler.py.
         #expect(ContextBudgeter.Budget.worker.maxPassages == 12)
     }
+
+    @Test func privateCloudBudgetMatchesItsOwnContextWindow() {
+        // PrivateCloudComputeLanguageModel().contextSize is 32,768 — not the
+        // worker's number by coincidence, but its own, so this is asserted
+        // independently rather than as "== .worker".
+        #expect(ContextBudgeter.Budget.privateCloudCompute.contextWindow == 32_768)
+        #expect(ContextBudgeter.Budget.privateCloudCompute.maxPassages == 12)
+    }
 }
 
 @Suite struct SynthesisPromptTests {
