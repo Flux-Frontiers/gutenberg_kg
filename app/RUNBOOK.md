@@ -106,7 +106,7 @@ throwaway scratch package, never in `app/GutenbergKGKit`.
       then reboot — the phone pairs and lists without it, and still refuses
       every build
 - [x] **Signed build installed and running on real hardware** — 2026-09-03,
-      iPhone 17 (`iPhone18,1`), iOS 27
+      iPhone 17 Pro (`iPhone18,1`), iOS 27
 - [x] Corpus pushed to the device with `devicectl` — 691 MB, all sixteen
       entries verified in place including the `.mlpackage` weights
 - [ ] Answers verified on the phone with the network off (the Simulator
@@ -474,7 +474,16 @@ is wrong with it.
 There is no in-app download yet. Push it straight into the app's data
 container with `devicectl`, over the USB cable — no Finder, no `.xcappdata`
 round trip. Run the app on the device once first so the container exists,
-then, from `bundles/gutenberg-all/swift/`:
+then, from the repo root:
+
+```sh
+make ios-deploy     # install the corpus, list what landed, relaunch the app
+```
+
+`make ios-devices`, `ios-generate`, `ios-check`, `ios-install-corpus`,
+`ios-verify-corpus` and `ios-launch` are the individual steps; the phone is
+auto-detected, and `IOS_DEVICE=<udid|name>` picks one when several are
+attached. What those targets run, written out:
 
 ```sh
 DEVICE=$(xcrun devicectl list devices --json-output /dev/stdout \
