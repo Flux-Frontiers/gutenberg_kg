@@ -77,6 +77,7 @@ from kg_utils.worker import handle_aux_ops
 import runpod
 from gutenberg_kg.diary_meta import DIARY_META as _DIARY_META
 from gutenberg_kg.diary_meta import diary_slug as _diary_slug
+from gutenberg_kg.serve.fusion import merge_by_rank as _merge_by_rank
 from gutenberg_kg.vector_store import resolve_vector_paths
 
 # ---------------------------------------------------------------------------
@@ -948,13 +949,23 @@ def handler(job: dict) -> dict:
         _enrich_catalog(hits)
         kgs_queried = 1  # the consolidated 'gutenberg' DocKG
         if corpus == "all":
-            # Fold in the diaries on the *same* true-cosine scale, then re-rank
-            # the merged set by score so neither corpus's scoring dominates.
+            # Fold in the diaries by fused *rank*, not by score.
+            #
+            # Both lists arrive ranked already -- the books by RRF, the diaries
+            # by cosine -- and re-sorting the union on score discards that. It
+            # does so in the one place it hurts most: a literal BM25 match owes
+            # its rank to the lexical channel precisely because the dense
+            # channel buried it, so its cosine is low by construction. "pillar
+            # of salt" fuses the Lot's-wife verse to the top of the books at
+            # 0.59, where every diary chunk scores ~0.70; sorting the union by
+            # score does not reorder the verse, it drops it out of the top k
+            # entirely. The better the lexical channel works, the more reliably
+            # the merge threw its result away.
             dhits = _semantic_search_diaries(
                 query, k=k, min_score=min_score, semantic_floor=semantic_floor
             )
             _enrich_catalog(dhits)
-            hits = sorted(hits + dhits, key=lambda h: h.get("score", 0.0), reverse=True)[:k]
+            hits = _merge_by_rank(hits, dhits, k, rrf_k=_RRF_K)
             kgs_queried += len(_DIARY_TABLES)
 
     search_ms = (time.perf_counter() - t0_search) * 1000

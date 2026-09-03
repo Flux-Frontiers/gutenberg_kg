@@ -10,6 +10,41 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Fixed
 
+- **The `all` scope buried the literal matches the lexical channel had just
+  rescued.** Restoring phrase-first search put the Lot's-wife verse at rank 1
+  of the books, and then the merge threw it away: the app still answered
+  "the passage does not mention a pillar of salt", correctly, because the verse
+  was not among the passages it was given.
+
+  A literal BM25 match owes its rank to the lexical channel *because* the dense
+  channel buried it, so its cosine is low by construction -- the verse fuses to
+  the top of the books at 0.59, where every diary chunk scores ~0.70. Sorting
+  the merged list by score therefore did not reorder it, it dropped it out of
+  the top k entirely, and the better the lexical channel worked the more
+  reliably the merge undid it.
+
+  Both corpora are now folded together by fused *rank* at the same RRF
+  constant, in the app (`LocalRetrieval`) and in the worker (`handler.query`'s
+  `corpus == "all"` branch). Ids do not repeat across corpora, so equal ranks
+  tie and break on first-seen order: the two interleave and each keeps the
+  order it fused for itself.
+
+  The golden gate could not have caught this either -- `golden.json` records
+  each pack separately, so the merge was never on its path. Covered now by a
+  Swift regression test asserting the verse survives under both `gutenberg` and
+  `all`, and by `tests/test_handler_merge.py` for the worker.
+
+  `runpod/handler.py` has the same line and is deliberately untouched: it has
+  no lexical channel, so both its lists are pure cosine and sorting the union
+  is coherent there.
+
+### Added
+
+- **`gutenberg_kg.serve.fusion`.** Importing `handler` runs its startup --
+  registry, catalog, embedder, vector stores -- so nothing in that module can
+  be unit-tested without loading a model. The rank-merge arithmetic is pure, so
+  it lives here and the handler calls in.
+
 - **Retrieval lost exact phrases, and lost RRF's ordering.** Two divergences
   from the worker the pack path claims to translate, both found by asking the
   running Mac app for "pillar of salt" and getting Ruskin and Nietzsche

@@ -173,6 +173,26 @@ struct GoldenParityTests {
         #expect(failures.isEmpty, "\(failures.count) divergence(s):\n\(report)")
     }
 
+    @Test func theLiteralMatchSurvivesTheAllScope() async throws {
+        // The regression that shipped: "pillar of salt" fuses the Lot's-wife
+        // verse to the top of the books at cosine ~0.59, because BM25 found it
+        // where the dense channel could not. Every diary chunk scores ~0.70, so
+        // merging the two packs by score dropped the verse clean out of the top
+        // ten and the answer said the passages did not mention a pillar of salt
+        // -- which was true, and the point. Merging by fused rank keeps it.
+        let (packs, _) = try load()
+        let retrieval = LocalRetrieval(packs: packs)
+        let verse = "the_bible.md:0102"
+
+        for scope in ["gutenberg", "all"] {
+            let result = try await retrieval.retrieve(
+                RetrievalRequest(query: "pillar of salt", corpus: scope, k: 10, minScore: 0.5))
+            let rank = result.hits.firstIndex { $0.nodeId.contains(verse) }
+            let found = result.hits.map(\.nodeId).joined(separator: ", ")
+            #expect(rank != nil, "[\(scope)] the verse is absent from the top 10: \(found)")
+        }
+    }
+
     @Test func aScopedQueryStaysInsideItsGenre() async throws {
         let (packs, _) = try load()
         let retrieval = LocalRetrieval(packs: packs)
