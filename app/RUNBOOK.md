@@ -41,8 +41,9 @@ per-machine artifacts, not something a commit can carry for you.
       "pillar of salt" surfaces Genesis, not Ruskin
 - [x] Diaries browsable by dated entry (874 / 1,426 / 88 / 2,754 across the
       four)
-- [ ] Corpus + embedder installed at `~/Library/Application Support/Corpus`
-      on *your* machine (step 4 — per-machine, not carried by git)
+- [x] Corpus + embedder installed at `~/Library/Application Support/Corpus`
+      on *your* machine (step 4 — per-machine, not carried by git). Verified
+      present on this Mac 2026-09-03: all ten files.
 
 **Private Cloud Compute (step 5, optional engine)**
 
@@ -60,7 +61,11 @@ per-machine artifacts, not something a commit can carry for you.
 - [x] Failure now explains itself in the chat turn instead of showing
       Apple's opaque boilerplate
 - [x] Apple Developer account active (renewal submitted 2026-09-02; portal
-      lagged the order confirmation by a few hours, as expected — resolved)
+      lagged the order confirmation by a few hours, as expected — resolved).
+      A **Developer ID Application** certificate is now in the login keychain,
+      team `552T2QP474`. Note what that is and is not: it signs a Mac app for
+      distribution outside the App Store, it does not sign iOS device builds,
+      and it carries no restricted entitlement, so it moves nothing below.
 - [x] App ID registered in Certificates, Identifiers & Profiles —
       `com.fluxfrontiers.knowledgepress`, explicit, no capabilities enabled
       (Private Cloud Compute is not selectable until the account holds the
@@ -91,7 +96,16 @@ throwaway scratch package, never in `app/GutenbergKGKit`.
 
 **iPhone app (step 6)**
 
-- [ ] `xcodegen generate` run, project opened, team set
+- [x] `xcodegen generate` run — needed one fix, a shared scheme in
+      `project.yml`; without it `xcodebuild` builds the macOS executable
+      target too and fails on `import AppKit`
+- [x] Compiles for the Simulator **and** for arm64 device, unsigned
+      (`CODE_SIGNING_ALLOWED=NO`) — 2026-09-03, Xcode 27.0 (27A5209h)
+- [ ] Apple ID added in Xcode ▸ Settings ▸ Accounts, team set on the target —
+      no account is signed in yet, so automatic signing cannot run
+- [ ] Developer Mode enabled on the iPhone (Settings ▸ Privacy & Security),
+      then reboot — the phone pairs and lists without it, and still refuses
+      every build
 - [ ] Corpus copied onto the device via the container dance (no in-app
       download yet — see "What is not built yet")
 - [ ] Verified on real hardware (the Simulator cannot run Foundation Models
@@ -394,6 +408,26 @@ Reading a failure:
 
 ## 6. The iPhone app
 
+Two prerequisites that are easy to miss, because neither produces an error
+until you try to build and then the error names something else:
+
+1. **Sign the Apple ID into Xcode** — Xcode ▸ Settings ▸ Accounts ▸ **+**.
+   A Developer ID certificate sitting in the login keychain does *not* count;
+   that one is for distributing a Mac app outside the App Store and cannot
+   sign an iOS device build. What matters is the account being present, after
+   which automatic signing mints the Apple Development certificate and the
+   provisioning profile itself. Check with
+   `defaults read com.apple.dt.Xcode IDEProvisioningTeams` — it prints
+   nothing until an account is added.
+2. **Enable Developer Mode on the iPhone** — Settings ▸ Privacy & Security ▸
+   Developer Mode, on, then reboot the phone. It only appears in Settings
+   after the phone has been plugged into a Mac running Xcode at least once.
+   Without it the device is visible to `xcrun devicectl list devices` and
+   still refuses every build, with `xcodebuild` reporting only "Timed out
+   waiting for all destinations".
+
+Then:
+
 ```sh
 brew install xcodegen
 cd app/ios
@@ -403,6 +437,36 @@ open KnowledgePress.xcodeproj
 
 In Xcode: select the **KnowledgePress** target ▸ Signing & Capabilities ▸ set
 your team. Pick your iPhone as the destination. Run.
+
+`KnowledgePress.xcodeproj` and `Info.plist` are both generated and both
+gitignored — `project.yml` is the source of truth. Edit that and re-run
+`xcodegen generate`; anything changed in Xcode's target editor is lost on the
+next generate.
+
+**Private Cloud Compute is commented out of `project.yml` on purpose.** The
+entitlement cannot be present until the capability is granted on the App ID,
+and leaving it in blocks *every* device build rather than just PCC: automatic
+signing cannot produce a profile carrying an entitlement the App ID does not
+hold, so the build fails before it starts. The four lines are commented in
+place; uncomment them once the portal shows the capability.
+
+### Checking it compiles without a phone, an account, or a signature
+
+Useful for CI and for isolating a code failure from a signing one:
+
+```sh
+cd app/ios
+xcodebuild -scheme KnowledgePress -destination 'generic/platform=iOS' \
+  CODE_SIGNING_ALLOWED=NO build
+```
+
+`project.yml` declares a shared scheme, and it has to. Without one,
+`xcodebuild` invents a scheme containing every target in the workspace — the
+package's `KnowledgePress` **macOS** executable among them, which imports
+AppKit and cannot compile for iOS. The failure reads
+`Unable to resolve module dependency: 'AppKit'` and points at the macOS
+shell's source, which makes it look like the shared UI is broken when nothing
+is wrong with it.
 
 ### Getting the corpus onto the phone
 
