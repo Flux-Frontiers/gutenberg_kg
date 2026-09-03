@@ -65,7 +65,7 @@ import Foundation
                     } catch let failure as SynthesisFailure {
                         continuation.finish(throwing: failure)
                     } catch let error as LanguageModelSession.GenerationError {
-                        continuation.finish(throwing: Self.translate(error))
+                        continuation.finish(throwing: translateGenerationError(error))
                     } catch {
                         continuation.finish(throwing: SynthesisFailure.backend(error.localizedDescription))
                     }
@@ -94,45 +94,9 @@ import Foundation
             // session would spend the 4K budget on history that the passages
             // need — and each turn is independently grounded anyway.
             let session = LanguageModelSession { SynthesisPrompt.ragInstructions }
-            let prompt = SynthesisPrompt.ragUserPrompt(question: question, passages: packed.passages)
-            let options = GenerationOptions(temperature: temperature)
-
-            let started = Date()
-            var latest = ""
-
-            for try await partial in session.streamResponse(to: prompt, options: options) {
-                try Task.checkCancellation()
-                // `content` is the whole answer so far, not a delta. (Early
-                // iOS 26 betas yielded a bare String here; if this line fails
-                // to compile against your SDK, drop `.content`.)
-                latest = partial.content
-                continuation.yield(.partial(latest))
-            }
-
-            let metrics = SynthesisMetrics(
-                elapsedMs: Int(Date().timeIntervalSince(started) * 1000),
-                passagesUsed: packed.passages.count,
-                passagesDropped: packed.dropped,
-                estimatedPromptTokens: packed.estimatedPromptTokens,
-                model: modelDescription)
-            continuation.yield(.completed(latest, metrics))
-        }
-
-        /// Map framework errors onto the two the chat handles specially.
-        ///
-        /// Guardrail refusals are expected against a corpus that contains the
-        /// Inferno, the Old Testament and Frankenstein — the UI degrades to
-        /// "read the passages yourself", which is the honest fallback and is
-        /// the same shape as chat.py's `synthesis_error` state.
-        static func translate(_ error: LanguageModelSession.GenerationError) -> SynthesisFailure {
-            switch error {
-            case .guardrailViolation:
-                return .guardrail
-            case .exceededContextWindowSize:
-                return .contextOverflow
-            default:
-                return .backend(error.localizedDescription)
-            }
+            try await streamFoundationModelsAnswer(
+                session: session, question: question, packed: packed, temperature: temperature,
+                modelDescription: modelDescription, into: continuation)
         }
 
         static func describe(_ reason: SystemLanguageModel.Availability.UnavailableReason) -> String {
@@ -146,6 +110,73 @@ import Foundation
             @unknown default:
                 return "the built-in model is unavailable"
             }
+        }
+    }
+
+    /// Stream a grounded answer from an already-configured session.
+    ///
+    /// Shared by every `SynthesisBackend` built on the Foundation Models
+    /// framework. On-device and Private Cloud Compute differ only in which
+    /// model backs the session — the packing already happened by the time this
+    /// runs, and streaming, cancellation and metrics are identical either way,
+    /// so that code lives here once rather than twice.
+    ///
+    /// :param session: A session already configured with the right model.
+    /// :param question: The user's question, verbatim — used only for the
+    ///     prompt text, not for packing (the caller already packed).
+    /// :param packed: The passages the caller's budgeter fit to its window.
+    /// :param temperature: Sampling temperature.
+    /// :param modelDescription: Provenance string recorded on the turn.
+    /// :param continuation: Where partial and final events are yielded.
+    @available(iOS 26.0, macOS 26.0, *)
+    func streamFoundationModelsAnswer(
+        session: LanguageModelSession,
+        question: String,
+        packed: ContextBudgeter.Packed,
+        temperature: Double,
+        modelDescription: String,
+        into continuation: AsyncThrowingStream<SynthesisEvent, Error>.Continuation
+    ) async throws {
+        let prompt = SynthesisPrompt.ragUserPrompt(question: question, passages: packed.passages)
+        let options = GenerationOptions(temperature: temperature)
+
+        let started = Date()
+        var latest = ""
+
+        for try await partial in session.streamResponse(to: prompt, options: options) {
+            try Task.checkCancellation()
+            // `content` is the whole answer so far, not a delta. (Early
+            // iOS 26 betas yielded a bare String here; if this line fails to
+            // compile against your SDK, drop `.content`.)
+            latest = partial.content
+            continuation.yield(.partial(latest))
+        }
+
+        let metrics = SynthesisMetrics(
+            elapsedMs: Int(Date().timeIntervalSince(started) * 1000),
+            passagesUsed: packed.passages.count,
+            passagesDropped: packed.dropped,
+            estimatedPromptTokens: packed.estimatedPromptTokens,
+            model: modelDescription)
+        continuation.yield(.completed(latest, metrics))
+    }
+
+    /// Map a `GenerationError` onto the two failures the chat handles
+    /// specially. Shared by every Foundation-Models-backed synthesis backend.
+    ///
+    /// Guardrail refusals are expected against a corpus that contains the
+    /// Inferno, the Old Testament and Frankenstein — the UI degrades to "read
+    /// the passages yourself", which is the honest fallback and is the same
+    /// shape as chat.py's `synthesis_error` state.
+    @available(iOS 26.0, macOS 26.0, *)
+    func translateGenerationError(_ error: LanguageModelSession.GenerationError) -> SynthesisFailure {
+        switch error {
+        case .guardrailViolation:
+            return .guardrail
+        case .exceededContextWindowSize:
+            return .contextOverflow
+        default:
+            return .backend(error.localizedDescription)
         }
     }
 #endif

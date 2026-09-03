@@ -8,6 +8,10 @@ import Observation
 public enum AnswerEngine: String, CaseIterable, Sendable {
     /// Apple Foundation Models, on this device. Nothing leaves the phone.
     case onDevice
+    /// Apple Foundation Models, on Private Cloud Compute. Leaves the device —
+    /// needs a network connection and draws on the user's iCloud quota — in
+    /// exchange for a context window eight times the on-device model's.
+    case privateCloud
     /// The worker's oMLX/Ollama/vLLM backend.
     case worker
     /// Passages only — chat.py's "Synthesize" toggle, off.
@@ -16,6 +20,7 @@ public enum AnswerEngine: String, CaseIterable, Sendable {
     var label: String {
         switch self {
         case .onDevice: return "On-device"
+        case .privateCloud: return "Private Cloud"
         case .worker: return "Worker"
         case .off: return "Passages only"
         }
@@ -24,6 +29,7 @@ public enum AnswerEngine: String, CaseIterable, Sendable {
     var detail: String {
         switch self {
         case .onDevice: return "Apple Foundation Models · nothing leaves this device"
+        case .privateCloud: return "Apple Foundation Models · Private Cloud Compute · needs internet"
         case .worker: return "oMLX / Ollama / vLLM on the worker"
         case .off: return "Retrieve passages without writing an answer"
         }
@@ -95,6 +101,9 @@ public final class AppModel {
     /// The on-device backend, or nil on hardware/OS that cannot run it.
     let onDevice: (any SynthesisBackend)? = makeOnDeviceSynthesis()
 
+    /// The Private Cloud Compute backend, or nil below iOS 27 / macOS 27.
+    let privateCloud: (any SynthesisBackend)? = makePrivateCloudSynthesis()
+
     /// The installed corpus, once it has been opened. Nil means the app has
     /// not found packs — the ordinary state before a download, not a fault.
     private(set) var packs: CorpusPacks?
@@ -115,6 +124,38 @@ public final class AppModel {
     var onDeviceAvailability: SynthesisAvailability {
         onDevice?.availability
             ?? .unavailable(reason: "this build targets a system older than iOS 26 / macOS 26")
+    }
+
+    /// Whether Private Cloud Compute can answer right now, and why not if it
+    /// cannot — shown verbatim under the provider picker.
+    var privateCloudAvailability: SynthesisAvailability {
+        privateCloud?.availability
+            ?? .unavailable(reason: "this build targets a system older than iOS 27 / macOS 27")
+    }
+
+    /// The day's usage caption for Private Cloud Compute, or nil when there
+    /// is nothing worth telling the user.
+    ///
+    /// The `compiler(>=6.4)` half of the guard matches `PrivateCloudSynthesis`
+    /// itself — see that file's header — so this still compiles against an
+    /// Xcode 26 toolchain that lacks the type entirely; it just always
+    /// returns nil there, same as `privateCloud` being nil in the first place.
+    var privateCloudQuotaCaption: String? {
+        #if canImport(FoundationModels) && compiler(>=6.4)
+            if #available(iOS 27.0, macOS 27.0, *), let backend = privateCloud as? PrivateCloudSynthesis {
+                return backend.quotaCaption
+            }
+        #endif
+        return nil
+    }
+
+    /// Present Apple's own "raise my limit" sheet, when one is offered.
+    func presentPrivateCloudLimitIncrease() {
+        #if canImport(FoundationModels) && compiler(>=6.4)
+            if #available(iOS 27.0, macOS 27.0, *), let backend = privateCloud as? PrivateCloudSynthesis {
+                backend.presentLimitIncrease()
+            }
+        #endif
     }
 
     /// Remote synthesis providers, label → backend key (chat.py's
@@ -172,6 +213,7 @@ public final class AppModel {
     private var synthesisBackend: (any SynthesisBackend)? {
         switch engine {
         case .onDevice: return onDevice
+        case .privateCloud: return privateCloud
         case .worker, .off: return nil
         }
     }

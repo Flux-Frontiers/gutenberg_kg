@@ -63,6 +63,18 @@ public struct ContextBudgeter: Sendable {
             reservedForOverhead: 240,
             maxPassages: 12,
             maxCharactersPerPassage: 2_000)
+
+        /// Apple's Private Cloud Compute model — 32,768 tokens, the same
+        /// ceiling as `.worker`. Named separately rather than reused: the two
+        /// happen to share a context window today, but they are different
+        /// models with independently-set numbers, and reusing one for the
+        /// other would silently couple them.
+        public static let privateCloudCompute = Budget(
+            contextWindow: 32_768,
+            reservedForResponse: 1_024,
+            reservedForOverhead: 240,
+            maxPassages: 12,
+            maxCharactersPerPassage: 2_000)
     }
 
     /// One passage as the model will see it.

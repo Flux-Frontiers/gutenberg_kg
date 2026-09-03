@@ -122,6 +122,25 @@ struct SettingsView: View {
                         .font(.caption2)
                         .foregroundStyle(.secondary)
                 }
+            case .privateCloud:
+                if let reason = model.privateCloudAvailability.reason {
+                    Label(
+                        "Unavailable — \(reason). Pick another engine to get answers.",
+                        systemImage: "exclamationmark.triangle")
+                        .font(.caption)
+                        .foregroundStyle(.orange)
+                } else {
+                    Text("Context window 32,768 tokens — up to 12 passages reach the model.")
+                        .font(.caption2)
+                        .foregroundStyle(.secondary)
+                    if let quota = model.privateCloudQuotaCaption {
+                        Label(quota, systemImage: "gauge.with.needle")
+                            .font(.caption)
+                            .foregroundStyle(.orange)
+                        Button("Show usage options") { model.presentPrivateCloudLimitIncrease() }
+                            .font(.caption)
+                    }
+                }
             case .worker:
                 Picker("Provider", selection: $model.backend) {
                     ForEach(AppModel.providers, id: \.key) { provider in
