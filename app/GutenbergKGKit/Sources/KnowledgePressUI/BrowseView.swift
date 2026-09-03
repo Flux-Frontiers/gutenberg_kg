@@ -117,12 +117,42 @@ private struct ChapterListView: View {
     @Binding var loadError: String?
     @State private var chapters: [Chapter] = []
 
+    /// Diary entries are dated (`Chapter.id` is a `"YYYY-MM-DD…"` timestamp),
+    /// and one diary can hold thousands of them — Pepys alone has 2,754. A
+    /// flat list at that length has no landmarks to jump by, so a diary's
+    /// entries are shown by year; every other book's chapters, too few to need
+    /// it, stay a single flat list exactly as before.
+    private var byYear: [(year: String, entries: [Chapter])]? {
+        guard genre == "diaries" else { return nil }
+        let grouped = Dictionary(grouping: chapters) { String($0.id.prefix(4)) }
+        return grouped.keys.sorted().map { ($0, grouped[$0] ?? []) }
+    }
+
     var body: some View {
-        List(chapters) { chapter in
-            NavigationLink(
-                value: BrowseStep.reader(genre: genre, book: book, sectionId: chapter.id)
-            ) {
-                Text(chapter.title ?? chapter.id)
+        Group {
+            if let byYear {
+                List {
+                    ForEach(byYear, id: \.year) { group in
+                        Section(group.year) {
+                            ForEach(group.entries) { chapter in
+                                NavigationLink(
+                                    value: BrowseStep.reader(
+                                        genre: genre, book: book, sectionId: chapter.id)
+                                ) {
+                                    Text(chapter.title ?? chapter.id)
+                                }
+                            }
+                        }
+                    }
+                }
+            } else {
+                List(chapters) { chapter in
+                    NavigationLink(
+                        value: BrowseStep.reader(genre: genre, book: book, sectionId: chapter.id)
+                    ) {
+                        Text(chapter.title ?? chapter.id)
+                    }
+                }
             }
         }
         .navigationTitle(title)

@@ -55,6 +55,7 @@ public struct LocalBrowser: CorpusBrowser {
     }
 
     public func chapters(genre: String, book: String) async throws -> [Chapter] {
+        if genre == "diaries" { return try diaryChapters(book: book) }
         let (pack, path) = try locate(genre: genre, book: book)
         return try pack.chapters(filePath: path)
     }
@@ -62,6 +63,12 @@ public struct LocalBrowser: CorpusBrowser {
     public func chapter(genre: String, book: String, sectionId: String) async throws
         -> ChapterContent
     {
+        if genre == "diaries" {
+            guard let content = try diaryChapter(book: book, sectionId: sectionId) else {
+                throw BrowseError.unknownChapter(sectionId)
+            }
+            return content
+        }
         let (pack, path) = try locate(genre: genre, book: book)
         guard let content = try pack.chapter(filePath: path, sectionID: sectionId) else {
             throw BrowseError.unknownChapter(sectionId)
@@ -83,5 +90,31 @@ public struct LocalBrowser: CorpusBrowser {
         }
         guard let first = packs.packs.first else { throw BrowseError.unknownBook(book) }
         return (first, path)
+    }
+
+    // MARK: - Diaries
+    //
+    // A diary has no `file_path` in `core.pack` (every chunk has its own) and
+    // no `section` rows, so `locate(genre:book:)` cannot resolve one — this is
+    // the gap `app/RUNBOOK.md` used to log as "diaries cannot be browsed".
+    // `title` in `diaries.pack` matches the catalog's book name exactly, so it
+    // stands in for the path lookup `locate` uses for everything else.
+
+    private func diaryPack() -> PassagePack? {
+        packs.packs.first { $0.isDiaries }
+    }
+
+    private func diaryChapters(book: String) throws -> [Chapter] {
+        guard let pack = diaryPack(), let kgName = try pack.diaryIdentity(title: book) else {
+            throw BrowseError.unknownBook("diaries/\(book)")
+        }
+        return try pack.diaryEntries(kgName: kgName)
+    }
+
+    private func diaryChapter(book: String, sectionId: String) throws -> ChapterContent? {
+        guard let pack = diaryPack(), let kgName = try pack.diaryIdentity(title: book) else {
+            throw BrowseError.unknownBook("diaries/\(book)")
+        }
+        return try pack.diaryEntry(kgName: kgName, timestamp: sectionId)
     }
 }

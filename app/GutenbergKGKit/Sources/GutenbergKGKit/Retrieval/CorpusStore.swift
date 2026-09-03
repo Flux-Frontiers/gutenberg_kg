@@ -302,6 +302,111 @@ public final class PassagePack: @unchecked Sendable {
             nextId: next)
     }
 
+    // MARK: - Diary entries
+
+    /// The diary identity (`kg_name`) behind a catalog title.
+    ///
+    /// Diaries carry no `file_path` in `core.pack` — every chunk of a diary
+    /// has its own per-entry `file_path` (`entry_0144_chunk_8.md`), so there
+    /// is no single document path to hang chapters off the way a book has.
+    /// `kg_name` is the shared identity instead, and `title` is the one column
+    /// that already matches the catalog's book name exactly.
+    ///
+    /// :param title: The catalog's book title for this diary.
+    /// :returns: The `kg_name` this pack knows it by, or nil if this pack does
+    ///     not hold a diary by that title (e.g. it is `gutenberg.pack`).
+    public func diaryIdentity(title: String) throws -> String? {
+        var kgName: String?
+        try each(
+            "SELECT kg_name FROM passages WHERE title = ? AND kg_name IS NOT NULL LIMIT 1",
+            bind: [title]
+        ) { statement in
+            kgName = Self.text(statement, 0)
+        }
+        return kgName
+    }
+
+    /// One diary's dated entries, earliest first.
+    ///
+    /// A diary has no `section` rows, so there is no chapter marker to read —
+    /// the entry boundary is a change of `timestamp`. `Chapter.id` carries the
+    /// raw timestamp, so ``diaryEntry(kgName:timestamp:)`` can look chunks back
+    /// up by it; `Chapter.title` is the same date, formatted for reading.
+    ///
+    /// :param kgName: The diary's identity in this pack.
+    /// :returns: One chapter per dated entry.
+    public func diaryEntries(kgName: String) throws -> [Chapter] {
+        var chapters: [Chapter] = []
+        try each(
+            """
+            SELECT DISTINCT timestamp FROM passages
+             WHERE kg_name = ? AND timestamp IS NOT NULL
+             ORDER BY timestamp
+            """,
+            bind: [kgName]
+        ) { statement in
+            guard let timestamp = Self.text(statement, 0) else { return }
+            chapters.append(
+                Chapter(
+                    id: timestamp, title: Self.formatDiaryDate(timestamp), index: chapters.count))
+        }
+        return chapters
+    }
+
+    /// One dated entry's text, rebuilt from the chunks it spans.
+    ///
+    /// A day's chunks are not necessarily one contiguous `file_path` — an
+    /// entry can straddle more than one `entry_NNNN_chunk_M.md` file — so they
+    /// are ordered by `file_path` first and `char_start` second, matching the
+    /// order they were chunked in rather than a lexical accident.
+    ///
+    /// :param kgName: The diary's identity in this pack.
+    /// :param timestamp: An entry id from ``diaryEntries(kgName:)``.
+    /// :returns: The entry, or nil when the timestamp is unknown here.
+    public func diaryEntry(kgName: String, timestamp: String) throws -> ChapterContent? {
+        let all = try diaryEntries(kgName: kgName)
+        guard let index = all.firstIndex(where: { $0.id == timestamp }) else { return nil }
+        let previous = index > 0 ? all[index - 1].id : nil
+        let next = index + 1 < all.count ? all[index + 1].id : nil
+
+        var text = ""
+        try each(
+            """
+            SELECT content FROM passages
+             WHERE kg_name = ? AND timestamp = ?
+             ORDER BY file_path, char_start
+            """,
+            bind: [kgName, timestamp]
+        ) { statement in
+            text += (text.isEmpty ? "" : "\n\n") + (Self.text(statement, 0) ?? "")
+        }
+        guard !text.isEmpty else { return nil }
+
+        return ChapterContent(
+            title: all[index].title,
+            text: text,
+            index: index,
+            total: all.count,
+            prevId: previous,
+            nextId: next)
+    }
+
+    /// A diary timestamp (`"1645-02-15T00:00"`) as a reading date.
+    ///
+    /// The stored value is not full ISO 8601 — no seconds, no timezone — so a
+    /// generic parser is the wrong tool; the shape is fixed by the pipeline
+    /// that wrote it, and this parses exactly that shape.
+    ///
+    /// :param timestamp: The raw value from the `timestamp` column.
+    /// :returns: A long-form date, or the raw value if it does not parse.
+    static func formatDiaryDate(_ timestamp: String) -> String {
+        let parser = DateFormatter()
+        parser.locale = Locale(identifier: "en_US_POSIX")
+        parser.dateFormat = "yyyy-MM-dd'T'HH:mm"
+        guard let date = parser.date(from: timestamp) else { return timestamp }
+        return date.formatted(.dateTime.day().month(.wide).year())
+    }
+
     private func sectionStart(filePath: String, sectionID: String) throws -> Int? {
         var start: Int?
         try each(
