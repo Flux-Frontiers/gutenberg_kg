@@ -6,7 +6,7 @@ the embedder, compile the Swift, and get it answering with the network off.
 **Read this first.** This has now been run end to end on a Mac (Xcode-beta,
 Swift 6.4, macOS 27), so the warning that used to stand here is retired: the
 Swift compiles and the golden gate passes. Step 3 needed exactly one fix, and
-it was not any of the six that [Troubleshooting](#7-troubleshooting) predicts
+it was not any of the six that [Troubleshooting](#8-troubleshooting) predicts
 -- those all compiled as written. Section 7 stays because a different
 toolchain may still hit them.
 
@@ -111,6 +111,22 @@ throwaway scratch package, never in `app/GutenbergKGKit`.
       entries verified in place including the `.mlpackage` weights
 - [ ] Answers verified on the phone with the network off (the Simulator
       cannot run Foundation Models at all, on-device or PCC)
+
+**Mac app, signed and notarized (step 7)**
+
+- [x] `app/macos/project.yml` builds a real `KnowledgePress.app` — universal
+      (arm64 + x86_64), reusing the same `KnowledgePressApp.swift` that
+      `swift run` compiles, so the two cannot drift
+- [x] Developer ID signed with hardened runtime, timestamped; `spctl` accepts
+      it locally — 2026-09-03
+- [x] `CODE_SIGN_INJECT_BASE_ENTITLEMENTS: NO` for Release, so the signature
+      carries no `get-task-allow`; `make mac-verify` fails loudly if it
+      returns
+- [x] `make mac-dmg` packages it (1.4 MB — the app alone, no corpus)
+- [ ] `notarytool store-credentials` profile created — **this is the current
+      blocker for distribution**; nothing can be notarized without it
+- [ ] Notarized and stapled, then opened on a Mac that has never seen it
+- [ ] App icon — none exists; it ships with the generic one until then
 
 **Known gaps** — tracked below in "What is not built yet": no in-app corpus
 download, no image generation, no chat persistence.
@@ -278,7 +294,7 @@ tokenizer parity suite. The golden gate and the diary-browse tests both skip
 here — they need the real corpus, which step 5 supplies via
 `GUTENBERG_PACKS`.
 
-**When `swift build` fails, go to [Troubleshooting](#7-troubleshooting) before
+**When `swift build` fails, go to [Troubleshooting](#8-troubleshooting) before
 changing anything.** The likely failures are known and small.
 
 ### What is already verified, and what is not
@@ -582,7 +598,105 @@ xcrun simctl get_app_container booted com.fluxfrontiers.knowledgepress data
 
 ---
 
-## 7. Troubleshooting
+## 7. Ship the Mac app
+
+Everything above runs the Mac app through `swift run`, which is the fastest
+loop and needs no certificate. This section produces the other thing: a
+double-clickable `KnowledgePress.app`, signed with a Developer ID and
+notarized, that opens on a machine which has never seen it before.
+
+```sh
+make mac-build      # Release .app, Developer ID signed, hardened runtime
+make mac-verify     # prove it is distributable before spending a round trip
+make mac-notarize   # submit to Apple, wait, staple the ticket
+make mac-dmg        # package it
+make mac-release    # all four, in order
+```
+
+The signing identity is read out of the login keychain, so no name or team ID
+is written into the repo. `app/macos/project.yml` is the source of truth;
+`KnowledgePress.xcodeproj`, `Info.plist` and `build/` are all generated and
+gitignored.
+
+### It shares one source file with `swift run`, on purpose
+
+The target compiles
+`app/GutenbergKGKit/Sources/KnowledgePress/KnowledgePressApp.swift` directly
+rather than keeping its own copy. Two shells, one macOS app. A duplicate would
+let the bundle and `swift run` drift apart silently, and "the .app answers
+differently from the executable" is the single worst bug this project could
+ship.
+
+### Notarization credentials, once
+
+Nothing can be notarized until a keychain profile exists:
+
+```sh
+xcrun notarytool store-credentials knowledgepress-notary \
+  --apple-id <your-apple-id> --team-id 552T2QP474 \
+  --password <app-specific-password>
+```
+
+The password is an **app-specific password** from
+[appleid.apple.com](https://appleid.apple.com), not the Apple ID password
+itself. `make mac-notarize` checks for the profile and prints this if it is
+missing, rather than failing inside `notarytool`.
+
+### The one trap that costs a round trip
+
+Xcode injects `com.apple.security.get-task-allow` — the entitlement that lets
+a debugger attach — into every signature unless
+`CODE_SIGN_INJECT_BASE_ENTITLEMENTS` is `NO`. Apple's notary service rejects
+anything carrying it. The failure is nasty because everything *local* passes:
+the app signs cleanly, `codesign --verify` is happy, and `spctl` accepts it.
+Only the submission fails, minutes later, with a message that does not
+obviously name the entitlement as the cause.
+
+`app/macos/project.yml` sets it `NO` for Release, and `make mac-verify` fails
+loudly if it ever reappears. That check is the reason the target exists.
+
+### No sandbox, deliberately
+
+The app reads `~/Library/Application Support/Corpus` — the same directory
+`swift run` uses, so one corpus serves both. Adding
+`com.apple.security.app-sandbox` later relocates it to
+
+```
+~/Library/Containers/com.fluxfrontiers.knowledgepress/
+    Data/Library/Application Support/Corpus
+```
+
+which costs one re-copy and **no code change**, since
+`CorpusPacks.defaultDirectory()` resolves through `FileManager`'s
+`.applicationSupportDirectory` and follows the container automatically. That
+is the same property that makes the iOS build work. Note macOS only
+auto-migrates data for bundle-ID-keyed paths, and `Corpus` is not one, so the
+migration would be a manual copy — trivial for reproducible data.
+
+Choosing unsandboxed now does not foreclose the Mac App Store. Sandboxing is a
+per-build entitlement, not a one-way door; an App Store build would flip it on
+and sign with Apple Distribution instead.
+
+### What is signed, and what that is worth
+
+`make mac-verify` reports:
+
+```
+== architectures ==     x86_64 arm64
+== signature ==         Developer ID Application: … (552T2QP474)
+                        flags=0x10000(runtime)
+== debug entitlement == absent
+== gatekeeper ==        accepted, source=Developer ID
+```
+
+`spctl` accepting the app **before** notarization only means the signature is
+well-formed and the certificate is trusted on *this* machine. A Mac that has
+never seen the app still refuses it until the notarization ticket is stapled.
+Do not read a local `accepted` as "ready to send someone."
+
+---
+
+## 8. Troubleshooting
 
 These are the failures I expect, in the order I think they are likely.
 
@@ -656,7 +770,7 @@ your Mac — use `http://<your-mac>.local:8000` in Settings.
 
 ---
 
-## 8. If you get stuck
+## 9. If you get stuck
 
 Send me:
 
