@@ -17,7 +17,7 @@ illustration use 'visiter'.
 
 ### THE RAVEN BY EDGAR ALLAN POE
 
-### ILLUSTRATED BY GUSTAVE DORE
+### ILLUSTRATED BY GUSTAVE DORÉ
 
 WITH COMMENT BY EDMUND C. STEDMAN
 
@@ -197,7 +197,7 @@ Goethe, "Manfred," or even those ethereal masterpieces, "The Tempest" and
 "A Midsummer Night's Dream." More than one, while otherwise unique, has
 some burden or refrain which haunts the memory,--once heard, never
 forgotten, like the tone of a rarely used but distinctive organ-stop.
-Notable among them is Buerger's "Lenore," that ghostly and resonant ballad,
+Notable among them is Bürger's "Lenore," that ghostly and resonant ballad,
 the lure and foil of the translators. Few will deny that Coleridge's
 wondrous "Rime of the Ancient Mariner" stands at their very head. "Le
 Juif-Errant" would have claims, had Beranger been a greater poet; and, but
@@ -225,7 +225,7 @@ Streams up the turrets silently--
 * * *
 
 Up many and many a marvellous shrine
-Whose wreathed friezes intertwine
+Whose wreathéd friezes intertwine
 The viol, the violet, and the vine.
 
 * * *
@@ -356,7 +356,7 @@ foundation did it rise slowly to a music slowly breathed? As usual, more
 than one thing went to the building of so notable a poem. Considering the
 longer sermons often preached on brief and less suggestive texts, I hope
 not to be blamed for this discussion of a single lyric,--especially one
-which an artist like Dore has made the subject of prodigal illustration.
+which an artist like Doré has made the subject of prodigal illustration.
 Until recently I had supposed that this piece, and a few which its author
 composed after its appearance, were exceptional in not having grown from
 germs in his boyish verse. But Mr. Fearing Gill has shown me some
@@ -575,7 +575,7 @@ the keenest earthly pleasure, then the sorrow and darkness of his broken
 life were not without their frequent compensation.
 
 In the following pages, we have a fresh example of an artist's genius
-characterizing his interpretation of a famous poem. Gustave Dore, the last
+characterizing his interpretation of a famous poem. Gustave Doré, the last
 work of whose pencil is before us, was not the painter, or even the
 draughtsman, for realists demanding truth of tone, figure, and perfection.
 Such matters concerned him less than to make shape and distance, light and
@@ -604,15 +604,15 @@ or Miranda. Beauty pure and simple, and the perfect excellence thereof, he
 rarely seemed to comprehend.
 
 Yet there is beauty in his designs for the "Ancient Mariner," unreal as
-they are, and a consecutiveness rare in a series by Dore. The Rime afforded
+they are, and a consecutiveness rare in a series by Doré. The Rime afforded
 him a prolonged story, with many shiftings of the scene. In _The Raven_
 sound and color preserve their monotone and we have no change of place or
-occasion. What is the result? Dore proffers a series of variations upon the
+occasion. What is the result? Doré proffers a series of variations upon the
 theme as he conceived it, "the enigma of death and the hallucination of an
 inconsolable soul." In some of these drawings his faults are evident;
 others reveal his powerful originality, and the best qualities in which, as
 a draughtsman, he stood alone. Plainly there was something in common
-between the working moods of Poe and Dore. This would appear more clearly
+between the working moods of Poe and Doré. This would appear more clearly
 had the latter tried his hand upon the "Tales of the Grotesque and
 Arabesque." Both resorted often to the elf-land of fantasy and romance. In
 melodramatic feats they both, through their command of the supernatural,

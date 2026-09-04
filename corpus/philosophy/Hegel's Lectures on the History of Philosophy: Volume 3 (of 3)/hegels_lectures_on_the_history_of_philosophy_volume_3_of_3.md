@@ -4,12 +4,7 @@
 
 ---
 
-HEGEL’S LECTURES ON THE
-HISTORY OF PHILOSOPHY
-
-### VOLUME THREE
-
-*Hegel’s Lectures on*
+Hegel’s Lectures on
 
 ### THE HISTORY OF PHILOSOPHY
 
@@ -36,12 +31,6 @@ London, E.C.4_
 
 _Reprinted by lithography in Great Britain by
 Jarrold and Sons Limited, Norwich_
-
-2. Hume                                                        369
-
-B. Scottish Philosophy                                            375
-
-1. Thomas Reid                                                 376
 
 2. James Beattie                                               377
 
@@ -91,7 +80,7 @@ INDEX                                                             555
 
 CORRIGENDA IN VOLS. I. AND II.                                    570
 
-### PART TWO PHILOSOPHY OF THE MIDDLE AGES
+## PART TWO PHILOSOPHY OF THE MIDDLE AGES
 
 ### INTRODUCTION
 
@@ -4513,7 +4502,7 @@ the third period of our treatise, into which we properly step with the
 Reformation, although Bruno, Vanini and Ramus, who lived later, still
 belong to the Middle Ages.
 
-### PART THREE MODERN PHILOSOPHY
+## PART THREE MODERN PHILOSOPHY
 
 ### INTRODUCTION
 

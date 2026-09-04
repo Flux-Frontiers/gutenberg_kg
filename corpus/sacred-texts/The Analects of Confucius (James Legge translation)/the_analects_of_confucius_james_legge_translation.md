@@ -4,6 +4,10 @@
 
 ---
 
+Ver.10/04/01*END*
+
+This etext was produced by Rick Davis
+
 A note from the digitizer for the Big 5 version
 
 Your computer must have the Big 5 character set (Traditional

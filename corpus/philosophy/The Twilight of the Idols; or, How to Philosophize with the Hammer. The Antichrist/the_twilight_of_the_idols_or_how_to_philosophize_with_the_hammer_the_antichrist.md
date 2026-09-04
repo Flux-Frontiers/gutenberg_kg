@@ -4,11 +4,7 @@
 
 ---
 
-### THE TWILIGHT OF THE IDOLS BY
-
-### FRIEDRICH NIETZSCHE
-
-*Or, How to Philosophise with the Hammer*
+Or, How to Philosophise with the Hammer
 
 ### THE ANTICHRIST _NOTES TO ZARATHUSTRA, AND ETERNAL RECURRENCE_
 

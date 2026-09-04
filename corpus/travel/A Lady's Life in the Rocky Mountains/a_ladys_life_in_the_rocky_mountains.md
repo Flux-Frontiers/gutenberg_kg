@@ -4,11 +4,7 @@
 
 ---
 
-### A LADY'S LIFE IN THE
-
-### ROCKY MOUNTAINS
-
-*Isabella L. Bird*
+Isabella L. Bird
 
 Introduction by
 

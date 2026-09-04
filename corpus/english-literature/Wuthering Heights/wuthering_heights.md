@@ -3949,7 +3949,7 @@ because I swear at him.”
 
 “Heathcliff.”
 
-“I asked if he liked Mr. Heathcliff.”
+I asked if he liked Mr. Heathcliff.
 
 “Ay!” he answered again.
 

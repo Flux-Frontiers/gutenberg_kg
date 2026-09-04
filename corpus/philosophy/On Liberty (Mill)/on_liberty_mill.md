@@ -4,6 +4,11 @@
 
 ---
 
+</pre>
+
+Produced by Curtis Weyant, Martin Pettit and the Online
+Distributed Proofreading Team at http://www.pgdp.net
+
 On Liberty.
 
 By John Stuart Mill.
@@ -4637,3 +4642,5 @@ accomplished; and that the perfection of machinery to which it has
 sacrificed everything, will in the end avail it nothing, for want of the
 vital power which, in order that the machine might work more smoothly,
 it has preferred to banish.
+
+<pre id="pg-footer">

@@ -4,10 +4,6 @@
 
 ---
 
-### THE THOUGHTS OF
-
-### THE EMPEROR MARCUS AURELIUS ANTONINUS
-
 ### BIOGRAPHICAL SKETCH OF
 
 MARCUS AURELIUS ANTONINUS.
@@ -349,7 +345,7 @@ when Rusticus was praefect of the city.[A]
 Justinus, ed. Otto, vol. ii. 559. "Junius Rusticus Praefectus
 Urbi erat sub imperatoribus M. Aurelio et L. Vero, id quod
 liquet ex Themistii Orat. xxxiv Dindorf. p. 451, et ex quodam
-illorum rescripto, Dig. 49. 1. I, Sec. 2" (Otto). The rescript
+illorum rescripto, Dig. 49. 1. I, § 2" (Otto). The rescript
 contains the words "Junium Rusticum amicum nostrum Praefectum
 Urbi." The Martyrium of Justinus and others is written in
 Greek. It begins, "In the time of the wicked defenders of
@@ -478,7 +474,7 @@ renunciation of it by acknowledging the heathen religion. This was
 Trajan's rule, and we have no reason for supposing that Hadrian granted
 more to the Christians than Trajan did. There is also printed at the end
 of Justin's first Apology a rescript of Antoninus Pius to the Commune of
-([Greek: to koinon tes Asias]), and it is also in Eusebius (E.H. iv.
+([Greek: to koinon tês Asias]), and it is also in Eusebius (E.H. iv.
 13). The date of the rescript is the third consulship of Antoninus
 Pius.[C] The rescript declares that the Christians--for they are meant,
 though the name Christians does not occur in the rescript--were not to
@@ -504,7 +500,7 @@ Fundanus in the government of _Asia_.
 
 This rescript of Hadrian has clearly been added to the Apology
 by some editor. The Apology ends with the words: [Greek: ho
-philon to Oeo, touto genestho]
+philon tô Oeô, touto genesthô]
 
 [C] Eusebius (E.H. iv. 12), after giving the beginning of
 Justinus' first Apology, which contains the address to T.
@@ -701,7 +697,7 @@ the book under several words in his Dictionary, giving the emperor's
 name, but not the title of the work. There are also passages cited by
 Suidas from Antoninus without mention of the emperor's name. The true
 title of the work is unknown. Xylander, who published the first edition
-of this book (Zuerich, 1558, 8vo, with a Latin version), used a
+of this book (Zürich, 1558, 8vo, with a Latin version), used a
 manuscript which contained the twelve books, but it is not known where
 the manuscript is now. The only other complete manuscript which is known
 to exist is in the Vatican library, but it has no title and no
@@ -710,7 +706,7 @@ inscription, [Greek: Markou autokratoros] marked with an asterisk. The
 other Vatican manuscripts and the three Florentine contain only excerpts
 from the emperor's book. All the titles of the excerpts nearly agree
 with that which Xylander prefixed to his edition, [Greek: Markou
-Antoninou Autokratoros ton eis heauton biblia ib.] This title has been
+Antôninou Autokratoros tôn eis heauton biblia ib.] This title has been
 used by all subsequent editors. We cannot tell whether Antoninus divided
 his work into books or somebody else did it. If the inscriptions at the
 end of the first and second books are genuine, he may have made the
@@ -801,7 +797,7 @@ hear no more of it till the revival of letters in Italy. Angelo
 Poliziano met with two very inaccurate and incomplete manuscripts of
 Epictetus' Enchiridion, which he translated into Latin and dedicated to
 his great patron Lorenzo de' Medici, in whose collection he had found
-the book. Poliziano's version was printed in the first Bale edition of
+the book. Poliziano's version was printed in the first Bâle edition of
 the Enchiridion, A.D. 1531 (apud And. Cratandrum). Poliziano recommends
 the Enchiridion to Lorenzo as a work well suited to his temper, and
 useful in the difficulties by which he was surrounded.
@@ -903,7 +899,7 @@ Antoninus wrote down his reflections for his own use only, in short,
 unconnected paragraphs, which are often obscure.
 
 The Stoics made three divisions of philosophy,--Physic ([Greek:
-phusikon]), Ethic ([Greek: ethikon]), and Logic ([Greek: logikon])
+phusikon]), Ethic ([Greek: êthikon]), and Logic ([Greek: logikon])
 (viii. 13). This division, we are told by Diogenes, was made by Zeno of
 Citium, the founder of the Stoic sect, and by Chrysippus; but these
 philosophers placed the three divisions in the following order,--Logic,
@@ -960,7 +956,7 @@ will be resolved." Such an examination implies a use of Dialectic, which
 Antoninus accordingly employed as a means toward establishing his
 Physical, Theological, and Ethical principles.
 
-[A] The original is [Greek: epi pases phantasias]. We have no word
+[A] The original is [Greek: epi pasês phantasias]. We have no word
 which expresses [Greek: phantasia], for it is not only the sensuous
 appearance which comes from an external object, which object is
 called [Greek: to phantaston], but it is also the thought or feeling
@@ -1060,19 +1056,19 @@ according to nature."
 
 The Physic of Antoninus is the knowledge of the Nature of the Universe,
 of its government, and of the relation of man's nature to both. He names
-the universe ([Greek: he ton hylon ousia], vi. 1),[A] "the universal
+the universe ([Greek: hê tôn hylôn ousia], vi. 1),[A] "the universal
 substance," and he adds that "reason" ([Greek: logos]) governs the
 universe. He also (vi. 9) uses the terms "universal nature" or "nature
 of the universe." He (vi. 25) calls the universe "the one and all, which
 we name Cosmos or Order" ([Greek: kosmos]). If he ever seems to use
 these general terms as significant of the All, of all that man can in
 any way conceive to exist, he still on other occasions plainly
-distinguishes between Matter, Material things ([Greek: hyle, hylikon]),
-and Cause, Origin, Reason ([Greek: aitia, aitiodes, logos]).[B] This is
+distinguishes between Matter, Material things ([Greek: hylê, hylikon]),
+and Cause, Origin, Reason ([Greek: aitia, aitiôdes, logos]).[B] This is
 conformable to Zeno's doctrine that there are two original principles
 ([Greek: archai]) of all things, that which acts ([Greek: to poioun])
 and that which is acted upon ([Greek: to paschon]). That which is acted
-on is the formless matter ([Greek: hyle]): that which acts is the reason
+on is the formless matter ([Greek: hylê]): that which acts is the reason
 ([Greek: logos]), God, who is eternal and operates through all matter,
 and produces all things. So Antoninus (v. 32) speaks of the reason
 ([Greek: logos])which pervades all substance ([Greek: ousia]), and
@@ -1090,15 +1086,15 @@ I have endeavored to explain the meaning of one difficult passage (vii.
 
 [A] As to the word [Greek: ousia], the reader may see the
 Index. I add here a few examples of the use of the word;
-Antoninus has (v. 24), [Greek: he sumpasa ousia], "the
+Antoninus has (v. 24), [Greek: hê sumpasa ousia], "the
 universal substance." He says (xii. 30 and iv. 40), "there is
 one common substance" ([Greek: ousia]), distributed among
 countless bodies. In Stobaeus (tom. 1, lib. 1, tit. 14) there
-is this definition, [Greek: ousian de phasin ton onton hapanton
-ten proten hylen]. In viii. II, Antoninus speaks of [Greek: to
-ousiodes kai hyulikon], "the substantial and the material;" and
+is this definition, [Greek: ousian de phasin tôn ontôn hapantôn
+tên prôtên hylên]. In viii. II, Antoninus speaks of [Greek: to
+ousiôdes kai hyulikon], "the substantial and the material;" and
 (vii. 10) he says that "everything material" ([Greek: enulon])
-disappears in the substance of the whole ([Greek: te ton holon
+disappears in the substance of the whole ([Greek: tê tôn holôn
 ousia]). The [Greek: ousia] is the generic name of that existence
 which we assume as the highest or ultimate, because we conceive
 no existence which can be coordinated with it and none above
@@ -1146,7 +1142,7 @@ separated the elements of matter and gave them order; but he
 probably only assumed a beginning, as Simplicius says, as a
 foundation of his philosophical teaching. Empedocles said, "The
 universe always existed." He had no idea of what is called
-creation. Ocellus Lucanus (i, Sec. 2) maintained that the Universe
+creation. Ocellus Lucanus (i, § 2) maintained that the Universe
 ([Greek: to pan]) was imperishable and uncreated. Consequently
 it is eternal. He admitted the existence of God; but his
 theology would require some discussion. On the contrary, the
@@ -1158,7 +1154,7 @@ world of matter without form," which may mean that matter
 existed already.
 
 The common Greek word which we translate "matter" is [Greek:
-hyle]. It is the stuff that things are made of.
+hylê]. It is the stuff that things are made of.
 
 Matter consists of elemental parts ([Greek: stoicheia]) of which all
 material objects are made. But nothing is permanent in form. The nature
@@ -1217,8 +1213,8 @@ early Christian writers were familiar with the Stoic terms, and
 their writings show that the contest was begun between the
 Christian expositors and the Greek philosophy. Even in the
 second Epistle of St. Peter (ii. I, v. 4) we find a Stoic
-expression, [Greek: Ina dia touton genesthe theias koinonoi
-physeos.]
+expression, [Greek: Ina dia toutôn genêsthe theias koinônoi
+physeôs.]
 
 When we look at the motions of the planets, the action of what we call
 gravitation, the elemental combination of unorganized bodies and their
@@ -1293,11 +1289,11 @@ said that he did not fully comprehend all that he wrote; which would
 however be in no way remarkable, for it happens now that a man may write
 what neither he nor anybody can understand. Antoninus tells us (xii. 10)
 to look at things and see what they are, resolving them into the
-material [Greek: hyle], the casual [Greek: aition], and the relation
+material [Greek: hylê], the casual [Greek: aition], and the relation
 [Greek: anaphora], or the purpose, by which he seems to mean something
 in the nature of what we call effect, or end. The word Caus ([Greek:
 aitia]) is the difficulty. There is the same word in the Sanscrit
-(hetu); and the subtle philosophers of India and of Greece, and
+(hétu); and the subtle philosophers of India and of Greece, and
 the less subtle philosophers of modern times, have all used this word,
 or an equivalent word, in a vague way. Yet the confusion sometimes may
 be in the inevitable ambiguity of language rather than in the mind of
@@ -1381,7 +1377,7 @@ state a fact--from this power which he has in himself, he is led, as
 Antoninus says, to believe that there is a greater power, which, as the
 old Stoics tell us, pervades the whole universe as the intellect[A]
 ([Greek: nous]) pervades man. (Compare Epictetus' Discourses, i. 14;
-and Voltaire a Mad^e. Necker, vol. lxvii., p. 278, ed. Lequien.)
+and Voltaire à Mad^e. Necker, vol. lxvii., p. 278, ed. Lequien.)
 
 [A] I have always translated the word [Greek: nous],
 "intelligence" or "intellect." It appears to be the word used
@@ -1405,7 +1401,7 @@ cannot conceive as being other than what they are. Such are
 what some people have called the laws of thought, the
 conceptions of space and of time, and axioms or first
 principles, which need no proof and cannot be proved or denied.
-Accordingly the Germans can say, "Gott ist die hoechste
+Accordingly the Germans can say, "Gott ist die höchste
 Vernunft," the Supreme Reason. The Germans have also a word
 Verstand, which seems to represent our word "understanding,"
 "intelligence," "intellect," not as a thing absolute which
@@ -1441,9 +1437,9 @@ more precise.
 God exists then, but what do we know of his nature? Antoninus says that
 the soul of man is an efflux from the divinity. We have bodies like
 animals, but we have reason, intelligence, as the gods. Animals have
-life ([Greek: psyche]) and what we call instincts or natural principles
+life ([Greek: psychê]) and what we call instincts or natural principles
 of action: but the rational animal man alone has a rational, intelligent
-soul ([Greek: psyche logike noera]). Antoninus insists on this
+soul ([Greek: psychê logikê noera]). Antoninus insists on this
 continually: God is in man,[A] and so we must constantly attend to the
 divinity within us, for it is only in this way that we can have any
 knowledge of the nature of God. The human soul is in a sense a portion
@@ -1458,13 +1454,13 @@ diffused for him who is able to respire; and so for him who is willing
 to partake of it the intelligent power, which holds within it all
 things, is diffused as wide and free as the air (viii. 54). It is by
 living a divine life that man approaches to a knowledge of the
-divinity.[C] It is by following the divinity within [Greek: daimon] or
+divinity.[C] It is by following the divinity within [Greek: daimôn] or
 [Greek: theos], as Antonius calls it, that man comes nearest to the
 Deity, the supreme good; for man can never attain to perfect agreement
-with his internal guide ([Greek: to hegemonikon]). "Live with the gods.
+with his internal guide ([Greek: to hêgemonikon]). "Live with the gods.
 And he does live with the gods who constantly shows to them that his own
 soul is satisfied with that which is assigned to him, and that it does
-all the daemon ([Greek: daimon]) wishes, which Zeus hath given to every
+all the daemon ([Greek: daimôn]) wishes, which Zeus hath given to every
 man for his guardian and guide, a portion of himself. And this daemon is
 every man's understanding and reason" (v. 27).
 
@@ -1501,7 +1497,7 @@ us." (Compare Anton, x. 38).
 [C] The reader may consult Discourse V., "Of the existence and
 nature of God," in John Smith's "Select Discourses." He has
 prefixed as a text to this Discourse, the striking passage of
-Agapetus, Paraenes. Sec. 3: "He who knows himself will know God;
+Agapetus, Paraenes. § 3: "He who knows himself will know God;
 and he who knows God will be made like to God; and he will be
 made like to God, who has become worthy of God; and he becomes
 worthy of God, who does nothing unworthy of God, but thinks the
@@ -1514,7 +1510,7 @@ contains also the Paraeneses of Nilus.)
 
 There is in man, that is in the reason, the intelligence, a superior
 faculty which if it is exercised rules all the rest. This is the ruling
-faculty ([Greek: to hegemonikon]), which Cicero (De Natura Deorum, ii.
+faculty ([Greek: to hêgemonikon]), which Cicero (De Natura Deorum, ii.
 11) renders by the Latin word Principatus, "to which nothing can or
 ought to be superior." Antoninus often uses this term and others which
 are equivalent. He names it (vii. 64) "the governing intelligence." The
@@ -1611,7 +1607,7 @@ any apparent irregularities in the order of things. That these disorders
 exist is a fact, and those who would conclude from them against the
 being and government of God conclude too hastily. We all admit that
 there is an order in the material world, a Nature, in the sense in which
-that word has been explained, a constitution ([Greek: kataskeue]), what we
+that word has been explained, a constitution ([Greek: kataskeuê]), what we
 call a system, a relation of parts to one another and a fitness of the
 whole for something. So in the constitution of plants and of animals
 there is an order, a fitness for some end. Sometimes the order, as we
@@ -1680,7 +1676,7 @@ assumes, has not ordered all things so that his purpose shall fail.
 Whatever there may be of what we call evil, the nature of evil, as he
 expresses it, does not exist; that is, evil is not a part of the
 constitution or nature of things. If there were a principle of evil
-([Greek: arche]) in the constitution of things, evil would no longer be
+([Greek: archê]) in the constitution of things, evil would no longer be
 evil, as Simplicius argues, but evil would be good. Simplicius (c. 34,
 [27]) has a long and curious discourse on this text of Epictetus, and it
 is amusing and instructive.
@@ -1838,7 +1834,7 @@ them, nor do anything else which we do as if the gods were present and
 lived with us; but if however the gods determine about none of the
 things which concern us, I am able to determine about myself, and I can
 inquire about that which is useful: and that is useful to every man
-which is conformable to his own constitution ([Greek: kataskeue]) and
+which is conformable to his own constitution ([Greek: kataskeuê]) and
 nature. But my nature is rational and social; and my city and country,
 so far as I am Antoninus, is Rome; but so far as I am a man, it is the
 world. The things then which are useful to these cities are alone useful
@@ -1949,8 +1945,8 @@ that there is one event unto all." In what sense "evil" is
 meant here seems rather doubtful. There is no doubt about the
 emperor's meaning. Compare Epictetus, Enchiridion, c. i., &c.;
 and the doctrine of the Brachmans (Strabo p. 713, ed. Cas.):
-[Greek: agathon de e kakon meden einai ton sumbainonton
-anthropois].
+[Greek: agathon de ê kakon mêden einai tôn sumbainontôn
+anthrôpois].
 
 [B] Seneca (Ep. 102) has the same, whether an expression of his
 own opinion, or merely a fine saying of others employed to
@@ -2127,11 +2123,11 @@ to me out of his own collection.
 valued highly, and often took his advice (Capitol. _M. Antonin_.
 iii).
 
-Antoninus says, [Greek: tois Epikteteiois hypomnemasin] which
+Antoninus says, [Greek: tois Epiktêteiois hypomnêmasin] which
 must not be translated, "the writings of Epictetus," for
 Epictetus wrote nothing. His pupil Arrian, who has preserved
 for us all that we know of Epictetus, says, [Greek: tauta
-epeirathen hypomnemata emauto diaphylaxai tes ekeinou dianoias]
+epeirathên hypomnêmata emautô diaphylaxai tês ekeinou dianoias]
 (_Ep. ad. Gell_.)
 
 8. From Apollonius[A] I learned freedom of will and undeviating
@@ -2318,7 +2314,7 @@ in the illness of Maximus.
 [A] He means his adoptive father, his predecessor, the Emperor
 Antoninus Pius. Compare vi. 30.
 
-[B] He uses the word [Greek: koinonoemosune]. See Gataker's
+[B] He uses the word [Greek: koinonoêmosunê]. See Gataker's
 note.
 
 [C] This passage is corrupt, and the exact meaning is
@@ -2860,7 +2856,7 @@ Hasten then to the end which thou hast before thee, and, throwing away
 idle hopes, come to thy own aid, if thou carest at all for thyself,
 while it is in thy power.
 
-[A] [Greek: hypomnemata]: or memoranda, notes, and the like.
+[A] [Greek: hypomnêmata]: or memoranda, notes, and the like.
 See i. 17.
 
 [B] Compare Fronto, ii. 9; a letter of Marcus to Fronto, who
@@ -2893,7 +2889,7 @@ end of life, to which a man ought to come pure, tranquil, ready to
 depart, and without any compulsion perfectly reconciled to his lot.
 
 [A] Compare Plato, De Legibus, i. p. 644, [Greek: oti tauta ta
-pathe] etc.; and Antoninus, ii. 2; vii. 3; xii. 19.
+pathê] etc.; and Antoninus, ii. 2; vii. 3; xii. 19.
 
 ### IV.
 
@@ -2907,7 +2903,7 @@ small light would have been extinguished; but when the fire is strong,
 it soon appropriates to itself the matter which is heaped on it, and
 consumes it, and rises higher by means of this very material.
 
-[A] [Greek: pros tha hegoumena] literally "towards that which
+[A] [Greek: pros tha hêgoumena] literally "towards that which
 leads." The exact translation is doubtful. See Gataker's note.
 
 2. Let no act be done without a purpose, nor otherwise than according to
@@ -3331,10 +3327,10 @@ lives three generations?[A]
 Troy among the third generation, like old Parr with his hundred
 and fifty-two years, and some others in modern times who have
 beaten Parr by twenty or thirty years if it is true; and yet
-they died at last. The word is [Greek: trigereniou] in
-Antoninus. Nestor is named [Greek: trigeron] by some writers;
+they died at last. The word is [Greek: trigerêniou] in
+Antoninus. Nestor is named [Greek: trigerôn] by some writers;
 but here perhaps there is an allusion to Homer's [Greek:
-Gerenios hippota Nestor].
+Gerênios hippota Nestôr].
 
 51. Always run to the short way; and the short way is the natural:
 accordingly say and do everything in conformity with the soundest
@@ -3665,9 +3661,9 @@ need of anger. [+ Neither tragic actor nor whore. +][A]
 
 [A] This is imperfect or corrupt, or both. There is also
 something wrong or incomplete in the beginning of S. 29, where
-he says [Greek: hos exelthon zen dianoe], which Gataker
+he says [Greek: hôs exelthôn zên dianoê], which Gataker
 translates "as if thou wast about to quit life;" but we cannot
-translate [Greek: exelthon] in that way. Other translations are
+translate [Greek: exelthôn] in that way. Other translations are
 not much more satisfactory. I have translated it literally and
 left it imperfect.
 
@@ -4303,8 +4299,8 @@ dost not yet love men from thy heart; beneficence does not yet delight
 thee for its own sake;[A] thou still doest it barely as a thing of
 propriety, and not yet as doing good to thyself.
 
-[A] I have used Gataker's conjecture [Greek: katalektikos]
-instead of the common reading [Greek: kataleptikos]: compare
+[A] I have used Gataker's conjecture [Greek: katalêktikôs]
+instead of the common reading [Greek: katalêptikôs]: compare
 iv. 20; ix. 42.
 
 14. Let there fall externally what will on the parts which can feel the
@@ -4513,8 +4509,8 @@ combination of contraries.
 
 [A] Plato, Gorgias, c. 68 (512). In this passage the text of
 Antoninus has [Greek: eateon], which is perhaps right; but
-there is a difficulty in the words [Greek: me gar touto men,
-to zen hoposonde chronon tonge hos alethos andra eateon esti, kai
+there is a difficulty in the words [Greek: mê gar touto men,
+to zên hoposondê chronon tonge hôs alêthos andra eateon esti, kai
 ou] &C. The conjecture [Greek: eukteon] for [Greek: eateon]
 does not mend the matter.
 
@@ -4657,20 +4653,20 @@ ignorance, nor receiving as strange anything that fell to his share out
 of the universal, nor enduring it as intolerable, nor allowing his
 understanding to sympathize with the affects of the miserable flesh.
 
-[A] The text has [Greek: hylike], which it has been proposed to
-alter to [Greek: logike], and this change is necessary. We
-shall then have in this section [Greek: logike] and [Greek:
-koinonike] associated, as we have in s. 68 [Greek: logike] and
-[Greek: politike], and in s. 72.
+[A] The text has [Greek: hylikê], which it has been proposed to
+alter to [Greek: logikê], and this change is necessary. We
+shall then have in this section [Greek: logikê] and [Greek:
+koinônikê] associated, as we have in s. 68 [Greek: logikê] and
+[Greek: politikê], and in s. 72.
 
 [B] I have followed Gataker's conjecture [Greek: ohi
-apanthropoi] instead of the MSS. reading [Greek: ohi anthropoi]
+apanthrôpoi] instead of the MSS. reading [Greek: ohi anthrôpoi]
 
 [C] Leon of Salamis. See Plato, Epist. 7; Apolog. c. 20;
 Epictetus, iv. I, 160; iv. 7, 30.
 
 [D] Aristophan. Nub. 362. [Greek: hoti brenthuei t' en taisis
-hodois kai to ophthalmo paraballei.]
+hodois kai tô ophthalmô paraballei.]
 
 67. Nature has not so mingled+ [the intelligence] with the composition
 of the body, as not to have allowed thee the power of circumscribing
@@ -4733,7 +4729,7 @@ is remembered, it will make thee more tranquil in many things (vi. 44;
 ix. 28).[A]
 
 [A] It is not easy to understand this section. It has been
-suggested that there is some error in [Greek: e alogista] &c.
+suggested that there is some error in [Greek: ê alogista] &c.
 Some of the translators have made nothing of the passage, and
 they have somewhat perverted the words. The first proposition
 is, that the universe was made by some sufficient power. A
@@ -4774,7 +4770,7 @@ certainly other passages from which I think that we may collect
 that he had notions of production something like what I have
 expressed. We now come to the alternate: "or even the chief
 things ... principle." I do not exactly know what he means by
-[Greek: ta kureotata] "the chief," or "the most excellent," or
+[Greek: ta kureôtata] "the chief," or "the most excellent," or
 whatever it is. But as he speaks elsewhere of inferior and
 superior things, and of the inferior being for the use of the
 superior, and of rational beings being the highest, he may here
@@ -4782,8 +4778,8 @@ mean rational beings. He also in this alternative assumes a
 governing power of the universe, and that it acts by directing
 its power towards these chief objects, or making its special,
 proper motion towards them. And here he uses the noun ([Greek:
-horme]) "movement," which contains the same notion as the verb
-([Greek: ormese]) "moved," which he used at the beginning of
+hormê]) "movement," which contains the same notion as the verb
+([Greek: ôrmêse]) "moved," which he used at the beginning of
 the paragraph, when he was speaking of the making of the
 universe. If we do not accept the first hypothesis, he says, we
 must take the conclusion of the second, that the "chief things
@@ -4925,8 +4921,8 @@ ignominy, death and life, he has such and such opinions, it will seem
 nothing wonderful or strange to me if he does such and such things; and
 I shall bear in mind that he is compelled to do so.[A]
 
-[A] Antoninus v. 16. Thucydides, iii 10: [Greek: en gar to
-diallassonti tes gnomes kai ai diaphorai ton ergon
+[A] Antoninus v. 16. Thucydides, iii 10: [Greek: en gar tô
+diallassonti tês gnômês kai ai diaphorai tôn ergôn
 kathistantai].
 
 15. Remember that as it is a shame to be surprised if the fig-tree
@@ -5013,8 +5009,8 @@ which all things come to all; and the third to those who live with thee.
 
 [A] The text has [Greek: aition], which in Antoninus means
 "form," "formal." Accordingly Schultz recommends either
-Valkenaer's emendation [Greek: angeion], "body," or Corais'
-[Greek: somation]. Compare xii. 13; x. 38.
+Valkenaer's emendation [Greek: angeion], "body," or Coraïs'
+[Greek: sômation]. Compare xii. 13; x. 38.
 
 28. Pain is either an evil to the body--then let the body say what it
 thinks of it--or to the soul; but it is in the power of the soul to
@@ -5099,8 +5095,8 @@ women and old men and then die? What then would those do after these
 were dead? All this is foul smell and blood in a bag.
 
 [A] The text is corrupt at the beginning of the paragraph, but
-the meaning will appear if the second [Greek: logikon] is
-changed into [Greek: holon] though this change alone will not
+the meaning will appear if the second [Greek: logikôn] is
+changed into [Greek: holôn] though this change alone will not
 establish the grammatical completeness of the text.
 
 [B] "Verus" is a conjecture of Saumaise, and perhaps the true
@@ -5157,7 +5153,7 @@ sufficient reason why my soul should be unhappy and worse than it was,
 depressed, expanded, shrinking, affrighted? and what wilt thou find
 which is sufficient reason for this?[A]
 
-[A] [Greek: oregomene] in this passage seems to have a passive
+[A] [Greek: oregomenê] in this passage seems to have a passive
 sense. It is difficult to find an apt expression for it and
 some of the other words. A comparison with xi. 12, will help to
 explain the meaning.
@@ -5351,7 +5347,7 @@ know to the contrary, be a necessary condition to any
 other."--Butler's Analogy, Chap. 7. See all the chapter. Some
 critics take [Greek: ta hyparchonta] in this passage of
 Antoninus to be the same as [Greek: ta honta]: but if that were
-so he might have said [Greek: pros allela] instead of [Greek:
+so he might have said [Greek: pros allêla] instead of [Greek:
 pros ta hyparchonta]. Perhaps the meaning of [Greek: pros ta
 hyparchonta] may be "to all prior things." If so, the
 translation is still correct. See vi. 38.
@@ -5523,7 +5519,7 @@ carrying about dead bodies [such is everything]; and so what is
 exhibited in the representation of the mansions of the dead[A] strikes
 our eyes more clearly.
 
-[A] [Greek: to tes Nekuias] may be, as Gataker conjectures, a
+[A] [Greek: to tês Nekuias] may be, as Gataker conjectures, a
 dramatic representation of the state of the dead. Schultz
 supposes that it may be also a reference to the [Greek: Nekuia]
 of the Odyssey (lib. xi.).
@@ -5555,7 +5551,7 @@ word, if there is a god, all is well; and if chance rules, do not thou
 also be governed by it (vi. 44; vii. 75).
 
 [A] The words which immediately follow [Greek: kat'
-epakolouthesin] are corrupt. But the meaning is hardly
+epakolouthêsin] are corrupt. But the meaning is hardly
 doubtful. (Compare vii. 75.)
 
 Soon will the earth cover us all: then the earth, too, will change, and
@@ -5845,7 +5841,7 @@ that the essential part of man is unchangeable, and that the
 other parts, if they change or perish, do not affect that which
 really constitutes the man. See the Philosophy of Antoninus, p.
 56, note 2. Schultz supposed "thy mother" to mean nature,
-[Greek: he physis]. But I doubt about that.
+[Greek: hê physis]. But I doubt about that.
 
 8. When thou hast assumed these names, good, modest, true, rational, a
 man of equanimity, and magnanimous, take care that thou dost not change
@@ -6136,7 +6132,7 @@ Hadrian to drink poison, because he was old and in bad health
 
 [B] Crito is the friend of Socrates; and he was, it appears,
 also a friend of Xenophon. When the emperor says "seen"
-([Greek: idon]), he does not mean with the eyes.
+([Greek: idôn]), he does not mean with the eyes.
 
 [C] Compare Epictetus, i. 29, 28.
 
@@ -6264,7 +6260,7 @@ rational soul, love of one's neighbor, and truth and modesty, and to
 value nothing more than itself, which is also the property of Law.[B]
 Thus the right reason differs not at all from the reason of justice.
 
-[A] [Greek: Ten periodiken palingenesian]. See v. 13, 32; x.
+[A] [Greek: Tên periodikên palingenesian]. See v. 13, 32; x.
 7.
 
 [B] Law is the order by which all things are governed.
@@ -6420,7 +6416,7 @@ more disgraceful than a wolfish friendship [false friendship]. Avoid
 this most of all. The good and simple and benevolent show all these
 things in the eyes, and there is no mistaking.
 
-[A] Instead of [Greek: skalme] Saumaise reads [Greek: skambe].
+[A] Instead of [Greek: skalmê] Saumaise reads [Greek: skambê].
 There is a Greek proverb, [Greek: skambon xylon oudepot
 orthon]: "You cannot make a crooked stick straight."
 
@@ -6623,8 +6619,8 @@ others since but not better.
 say that it was Archelaus, the son of Perdiccas, who invited
 Socrates to Macedonia.
 
-[C] Gataker suggested [Greek: Epekoureion] for [Greek:
-Ephesion].
+[C] Gataker suggested [Greek: Epekoureiôn] for [Greek:
+Ephesiôn].
 
 27. The Pythagoreans bid us in the morning look to the heavens that we
 may be reminded of those bodies which continually do the same things
@@ -6748,7 +6744,7 @@ of ourselves.
 [A] The verse of Empedocles is corrupt in Antoninus. It has
 been restored by Peyron from a Turin manuscript, thus:--
 
-[Greek: Sphairos kykloteres monie perigethei gaion.]
+[Greek: Sphairos kykloterês moniê perigêthei gaiôn.]
 
 [B] iii. 4.
 
@@ -6931,7 +6927,7 @@ temperate, obedient to the gods, and to do this with all simplicity: for
 the pride which is proud of its want of pride is the most intolerable of
 all.
 
-[A] [Greek: met' oieseos. Oiesis kai typhos], Epict. i. 8, 6.
+[A] [Greek: met' oiêseôs. Oiêsis kai typhos], Epict. i. 8, 6.
 
 28. To those who ask, Where hast thou seen the gods, or how dost thou
 comprehend that they exist and so worshippest them, I answer, in the
@@ -7045,21 +7041,21 @@ indifferent, neither good nor bad; the same as [Greek: mesa].
 
 [Greek: aitia], cause.
 
-[Greek: aitiodes], [Greek: aition], [Greek: to], the formal or formative
+[Greek: aitiôdes], [Greek: aition], [Greek: to], the formal or formative
 principle, the cause.
 
-[Greek: akoinonetos], unsocial.
+[Greek: akoinônêtos], unsocial.
 
 [Greek: anaphora], reference, relation to a purpose.
 
-[Greek: anypexairetos], unconditionally.
+[Greek: anypexairetôs], unconditionally.
 
 [Greek: aporroia], efflux.
 
 [Greek: aproaireta], [Greek: ta], the things which are not in our will
 or power.
 
-[Greek: arche], a first principle.
+[Greek: archê], a first principle.
 
 [Greek: atomoi] (corpora individua, Cic.), atoms.
 
@@ -7074,14 +7070,14 @@ significations in Epictetus. Index ed. Schweig.
 [Greek: gignomena], [Greek: ta], things which are produced, come into
 existence.
 
-[Greek: daimon], god, god in man, man's intelligent principle.
+[Greek: daimôn], god, god in man, man's intelligent principle.
 
 [Greek: diathesis], disposition, affection of the mind.
 
 [Greek: diairesis], division of things into their parts, dissection,
 resolution, analysis.
 
-[Greek: dialektike], ars bene disserendi et vera ac falsa dijudicandi
+[Greek: dialektikê], ars bene disserendi et vera ac falsa dijudicandi
 (Cic.).
 
 [Greek: dialysis], dissolution, the opposite of [Greek: sygkrisis].
@@ -7095,15 +7091,15 @@ the whole intellectual power.
 
 [Greek: enkrateia], temperance, self-restraint.
 
-[Greek: eidos] in divisione formae sunt, quas Graeci [Greek: eide]
+[Greek: eidos] in divisione formae sunt, quas Graeci [Greek: eidê]
 vocant; nostri, si qui haec forte tractant, species appellant (Cic.).
 But [Greek: eidos] is used by Epictetus and Antoninus less exactly and
 as a general term, like _genus_. Index Epict. ed. Schweig.--[Greek:
-Hos de ge ahi protai ousiai pros ta alla echousin, outo kai to eidos
-pros to genos echei hypokeitai gar to eidos to genei]. (Aristot. Cat.
+Hôs de ge ahi prôtai ousiai pros ta alla echousin, outô kai to eidos
+pros to genos echei hypokeitai gar to eidos tô genei]. (Aristot. Cat.
 c. 5.)
 
-[Greek: eimarmene] (fatalis necessitas, fatum, Cic.), destiny,
+[Greek: eimarmenê] (fatalis necessitas, fatum, Cic.), destiny,
 necessity.
 
 [Greek: ekkliseis], aversions, avoidance, the turning away from
@@ -7115,39 +7111,39 @@ things; the opposite of [Greek: orexeiz.]
 
 [Greek: ennoia], [Greek: ennoiai], notio, notiones (Cic.), or "notitiae
 rerum;" notions of things. (Notionem appello quam Graeci tum [Greek:
-ennoian], tum [Greek: prolepsin], Cic.).
+ennoian], tum [Greek: prolêpsin], Cic.).
 
-[Greek: enosis], [Greek: e], the unity.
+[Greek: enôsis], [Greek: ê], the unity.
 
-[Greek: epistrophe], attention to an object.
+[Greek: epistrophê], attention to an object.
 
 [Greek: euthymia], animi tranquillitas (Cic.).
 
 [Greek: eumenes], [Greek: to], [Greek: eumeneia], benevolence; [Greek:
-eumenes] sometimes means well-contented.
+eumenês] sometimes means well-contented.
 
 [Greek: eunoia], benevolence.
 
 [Greek: exousia], power, faculty.
 
-[Greek: epakolouthesin], [Greek: kata], by way of sequence.
+[Greek: epakolouthêsin], [Greek: kata], by way of sequence.
 
-[Greek: hegemonikon], [Greek: to], the ruling faculty or part; principatus
+[Greek: hêgemonikon], [Greek: to], the ruling faculty or part; principatus
 (Cic.).
 
-[Greek: theoremata], percepta (Cic.), things perceived, general
+[Greek: theôrêmata], percepta (Cic.), things perceived, general
 principles.
 
-[Greek: kathekein], [Greek: to], duty, "officium."
+[Greek: kathêkein], [Greek: to], duty, "officium."
 
 [Greek: kalos], beautiful.
 
-[Greek: katalepsis], comprehension; cognitio, perceptio, comprehensio
+[Greek: katalêpsis], comprehension; cognitio, perceptio, comprehensio
 (Cic.).
 
-[Greek: kataskeue], constitution.
+[Greek: kataskeuê], constitution.
 
-[Greek: katorthoseis, katorthomata]; recta, recte facta (Cic.); right
+[Greek: katorthôseis, katorthômata]; recta, recte facta (Cic.); right
 acts, those acts to which we proceed by the right or straight road.
 
 [Greek: kosmos], order, world, universe.
@@ -7158,8 +7154,8 @@ the all (vi. 25).
 [Greek: krima], a judgment.
 
 [Greek: kyrieuon, to endon], that which rules within (iv. 1), the same
-as [Greek: to hegemonikon]. Diogenes Laertius vii., Zeno. [Greek:
-hegemonikon de einai to kyriotaton tes psyches].
+as [Greek: to hêgemonikon]. Diogenes Laertius vii., Zeno. [Greek:
+hêgemonikon de einai to kyriôtaton tês psychês].
 
 [Greek: logika, ta], the things which have reason.
 
@@ -7178,31 +7174,31 @@ virtue.
 
 [Greek: nous], intelligence, understanding.
 
-[Greek: oiesis], arrogance, pride. It sometimes means in Antoninus
+[Greek: oiêsis], arrogance, pride. It sometimes means in Antoninus
 the same as [Greek: typhos]; but it also means "opinion."
 
 [Greek: oikonomia] (dispositio, ordo, Cic.) has sometimes the peculiar
 sense of artifice, or doing something with an apparent purpose
 different from the real purpose.
 
-[Greek: holon, to], the universe, the whole: [Greek: he ton olon physis].
+[Greek: holon, to], the universe, the whole: [Greek: hê tôn olôn physis].
 
 [Greek: onta, ta], things which exist; existence, being.
 
 [Greek: orexis], desire of a thing, which is opposed to [Greek: ekklisis],
 aversion.
 
-[Greek: horme], movement towards an object, appetite; appetitio,
+[Greek: hormê], movement towards an object, appetite; appetitio,
 naturalis appetitus, appetitus animi (Cic.).
 
 [Greek: ousia], substance (vi. 49). Modern writers sometimes incorrectly
 translate it "essentia." It is often used by Epictetus in the same
-sense as [Greek: hyle]. Aristotle (Cat. c. 5) defines [Greek: ousia],
+sense as [Greek: hylê]. Aristotle (Cat. c. 5) defines [Greek: ousia],
 and it is properly translated "substantia" (ed. Jul. Pacius).
-Porphyrius (Isag. c. 2): [Greek: he ousia anotato ousa to meden pro
-autes genos hen to genikotaton].
+Porphyrius (Isag. c. 2): [Greek: hê ousia anôtatô ousa tô mêden pro
+autês genos hên to genikôtaton].
 
-[Greek: parakolouthetike dynamis, he], the power which enables us
+[Greek: parakolouthêtikê dynamis, hê], the power which enables us
 to observe and understand.
 
 [Greek: peisis], passivity, opposed to [Greek: energeia]: also, affect.
@@ -7210,7 +7206,7 @@ to observe and understand.
 [Greek: peristaseis], circumstances, the things which surround
 us; troubles, difficulties.
 
-[Greek: pepromene, he], destiny.
+[Greek: peprômenê, hê], destiny.
 
 [Greek: proairesis], purpose, free will (Aristot. Rhet. i. 13).
 
@@ -7236,15 +7232,15 @@ a body is produced, combination.
 
 [Greek: synthesis], ordering, arrangement (compositio).
 
-[Greek: systema], system, a thing compounded of parts which
+[Greek: systêma], system, a thing compounded of parts which
 have a certain relation to one another.
 
-[Greek: hyle], matter, material.
+[Greek: hylê], matter, material.
 
 [Greek: hylikon, to], the material principle.
 
 [Greek: hypexairesis], exception, reservation; [Greek: meth'
-hypexaireseos], conditionally.
+hypexaireseôs], conditionally.
 
 [Greek: hypothesis], material to work on; thing to employ the reason on;
 proposition, thing assumed as matter for argument and to lead to
@@ -7257,31 +7253,31 @@ i. c. 2).
 [Greek: hypokeimena, ta], things present or existing, vi. 4; or
 things which are a basis or foundation.
 
-[Greek: hypolepsis], opinion.
+[Greek: hypolêpsis], opinion.
 
 [Greek: hypostasis], basis, substance, being, foundation (x. 5).
-Epictetus has [Greek: to hypostatikon kai ousiodes]. (Justinus
+Epictetus has [Greek: to hypostatikon kai ousiôdes]. (Justinus
 ad Diogn. c. 2.)
 
 [Greek: hyphistasthai], to subsist, to be.
 
 [Greek: phantasiai] (visus, Cic.); appearances, thoughts, impressions
 (visa animi, Gellius, xix. 1): [Greek: phantasia esti
-typosis en psyche].
+typôsis en psychê].
 
 [Greek: phantasma], seems to be used by Antoninus in the same
 sense as [Greek: phantasia]. Epictetus uses only [Greek: phantasia].
 
 [Greek: phantaston], that which produces a [Greek: phantasia: phantaston
-to tepsiekos ten phantasian aistheton]
+to tepsiêkos tên phantasian aisthêton]
 
 [Greek: physis], nature.
 
-[Greek: physis he ton olon], the nature of the universe.
+[Greek: physis hê tôn olôn], the nature of the universe.
 
-[Greek: psyche], soul, life, living principle.
+[Greek: psychê], soul, life, living principle.
 
-[Greek: psyche logike, noera], a rational soul, an intelligent soul
+[Greek: psychê logikê, noera], a rational soul, an intelligent soul
 
 GENERAL INDEX.
 

@@ -37,9 +37,8 @@ Where these and their creations lie!
 
 ### TREASURE ISLAND
 
-*PART ONE--The Old Buccaneer*
+## PART ONE--The Old Buccaneer
 
-I
 The Old Sea-dog at the Admiral Benbow
 
 Squire Trelawney, Dr. Livesey, and the rest of these gentlemen having
@@ -1329,7 +1328,7 @@ found.”
 “Livesey,” returned the squire, “you are always in the right of it. I’ll
 be as silent as the grave.”
 
-PART TWO--The Sea-cook
+## PART TWO--The Sea-cook
 
 ### VII
 
@@ -2588,7 +2587,7 @@ were only seven out of the twenty-six on whom we knew we could rely; and
 out of these seven one was a boy, so that the grown men on our side were
 six to their nineteen.
 
-PART THREE--My Shore Adventure
+## PART THREE--My Shore Adventure
 
 ### XIII
 
@@ -3213,7 +3212,7 @@ of small arms.
 Another pause, and then, not a quarter of a mile in front of me, I
 beheld the Union Jack flutter in the air above a wood.
 
-PART FOUR--The Stockade
+## PART FOUR--The Stockade
 
 ### XVI
 
@@ -4405,7 +4404,7 @@ bear.” *
 Trelawney on board the schooner died that same evening of his wound. But
 this was, of course, not known till after by the faithful party.
 
-PART FIVE--My Sea Adventure
+## PART FIVE--My Sea Adventure
 
 ### XXII
 
@@ -5645,7 +5644,7 @@ tight.
 And one of the men left the log-house and presently returned with a
 lighted brand.
 
-PART SIX--Captain Silver
+## PART SIX--Captain Silver
 
 ### XXVIII
 
