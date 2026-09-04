@@ -27932,8 +27932,7 @@ LUXEMBURG.
 
 _Latin_
 
-## Volume containing several works; and among them _Marchi_ (Pauli)
-
+Volume containing several works; and among them _Marchi_ (Pauli)
 _Veneti Liber Narrationum Morum_, etc.
 Paper; written 1448 by Tilman Pluntsch, “canonicus ecclesie SS.
 Chresanti et Darie monasterii Eyfflie.”
