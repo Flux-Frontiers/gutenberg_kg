@@ -18,9 +18,10 @@ By
 
 ### SIR ARTHUR CONAN DOYLE COPYRIGHT, 1912
 
-Foreword
+### Foreword
 
-Mr. E. D. Malone desires to state that
+*Mr. E. D. Malone desires to state that*
+
 both the injunction for restraint and the
 libel action have been withdrawn unreservedly
 by Professor G. E. Challenger, who, being

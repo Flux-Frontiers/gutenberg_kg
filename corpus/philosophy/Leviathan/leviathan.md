@@ -2828,7 +2828,7 @@ command, are enclined to continue the causes of warre; and to stirre up
 trouble and sedition: for there is no honour Military but by warre; nor
 any such hope to mend an ill game, as by causing a new shuffle.
 
-And From Love Of Arts
+## And From Love Of Arts
 
 Desire of Knowledge, and Arts of Peace, enclineth men to obey a common
 Power: For such Desire, containeth a desire of leasure; and consequently
@@ -2866,7 +2866,7 @@ an Emulation of who shall exceed in benefiting; the most noble and
 profitable contention possible; wherein the victor is pleased with his
 victory, and the other revenged by confessing it.
 
-And From Conscience Of Deserving To Be Hated
+## And From Conscience Of Deserving To Be Hated
 
 To have done more hurt to a man, than he can, or is willing to expiate,
 enclineth the doer to hate the sufferer. For he must expect revenge, or
@@ -2878,7 +2878,7 @@ Feare of oppression, disposeth a man to anticipate, or to seek ayd by
 society: for there is no other way by which a man can secure his life
 and liberty.
 
-And From Distrust Of Their Own Wit
+## And From Distrust Of Their Own Wit
 
 Men that distrust their own subtilty, are in tumult, and sedition,
 better disposed for victory, than they that suppose themselves wise,
@@ -2935,7 +2935,7 @@ adhaere, and subject themselves to those men that have them. The two
 former, having given them caution against danger from him; the later
 gives them caution against danger from others.
 
-And From The Ignorance Of Naturall Causes
+## And From The Ignorance Of Naturall Causes
 
 Want of Science, that is, Ignorance of causes, disposeth, or rather
 constraineth a man to rely on the advise, and authority of others. For
@@ -2943,7 +2943,7 @@ all men whom the truth concernes, if they rely not on their own,
 must rely on the opinion of some other, whom they think wiser than
 themselves, and see not why he should deceive them.
 
-And From Want Of Understanding
+## And From Want Of Understanding
 
 Ignorance of the signification of words; which is, want of
 understanding, disposeth men to take on trust, not onely the truth they
@@ -4911,7 +4911,7 @@ all Man-kind to do the same; and then there neither would be nor need to
 be any Civill Government, or Common-wealth at all; because there would
 be Peace without subjection.
 
-And That Continually
+## And That Continually
 
 Nor is it enough for the security, which men desire should last all
 the time of their life, that they be governed, and directed by one
@@ -5618,7 +5618,7 @@ government is called a Democracy, or Aristocracy; yet when they are
 governed by an Assembly, not of their own choosing, ’tis a Monarchy; not
 of One man, over another man; but of one people, over another people.
 
-Of The Right Of Succession
+## Of The Right Of Succession
 
 Of all these Formes of Government, the matter being mortall, so that not
 onely Monarchs, but also whole Assemblies dy, it is necessary for the
@@ -9876,7 +9876,7 @@ Contempt with his People, and their Obedience (in which the safety
 of the Common-wealth consisteth) slackened. Which doctrine the third
 Commandement by resemblance pointeth to.
 
-And To Have Dayes Set Apart To Learn Their Duty
+## And To Have Dayes Set Apart To Learn Their Duty
 
 Fourthly, seeing people cannot be taught this, nor when ’tis taught,
 remember it, nor after one generation past, so much as know in whom the
@@ -9900,7 +9900,7 @@ but as King by pact, (in peculiar) of the Jewes; and may therefore give
 light, to those that have the Soveraign Power conferred on them by the
 consent of men, to see what doctrine they Ought to teach their Subjects.
 
-And To Honour Their Parents
+## And To Honour Their Parents
 
 And because the first instruction of Children, dependeth on the care
 of their Parents; it is necessary that they should be obedient to them,
@@ -9936,7 +9936,7 @@ Judges or Witnesses, whereby the distinction of propriety is taken away,
 and Justice becomes of no effect: all which things are intimated in the
 sixth, seventh, eighth, and ninth Commandements.
 
-And To Do All This Sincerely From The Heart
+## And To Do All This Sincerely From The Heart
 
 Lastly, they are to be taught, that not onely the unjust facts, but the
 designes and intentions to do them, (though by accident hindred,) are
@@ -10917,7 +10917,7 @@ Books, Writers, Scope and Authority of the Bible.
 
 ## CHAPTER XXXIII. OF THE NUMBER, ANTIQUITY, SCOPE, AUTHORITY, AND INTERPRETERS OF THE BOOKS OF HOLY SCRIPTURE
 
-Of The Books Of Holy Scripture
+## Of The Books Of Holy Scripture
 
 By the Books of Holy SCRIPTURE, are understood those, which ought to be
 the Canon, that is to say, the Rules of Christian life. And because all
@@ -13128,7 +13128,7 @@ Gehenna, is that word, which is usually now translated HELL; and
 from the fires from time to time there burning, we have the notion of
 Everlasting, and Unquenchable Fire.
 
-Of The Literall Sense Of The Scripture Concerning Hell
+## Of The Literall Sense Of The Scripture Concerning Hell
 
 Seeing now there is none, that so interprets the Scripture, as that
 after the day of Judgment, the wicked are all Eternally to be punished
@@ -13708,7 +13708,7 @@ Ecclesiasticall Power were both joined together in one and the same
 person, the High Priest; and ought to bee so, in whosoever governeth by
 Divine Right; that is, by Authority immediate from God.
 
-Of The Soveraign Power Between The Time Of Joshua And Of Saul
+## Of The Soveraign Power Between The Time Of Joshua And Of Saul
 
 After the death of Joshua, till the time of Saul, the time between is
 noted frequently in the Book of Judges, "that there was in those dayes
@@ -13738,7 +13738,7 @@ with God, appearing in their wisdome, courage, or felicity. Hitherto
 therefore the Right of Regulating both the Policy, and the Religion,
 were inseparable.
 
-Of The Rights Of The Kings Of Israel
+## Of The Rights Of The Kings Of Israel
 
 To the Judges, succeeded Kings; And whereas before, all authority, both
 in Religion, and Policy, was in the High Priest; so now it was all in
@@ -14145,7 +14145,7 @@ Soveraign Civill Power; the other after their Conversion. For it was
 long after the Ascension, before any King, or Civill Soveraign embraced,
 and publiquely allowed the teaching of Christian Religion.
 
-Of The Holy Spirit That Fel On The Apostles
+## Of The Holy Spirit That Fel On The Apostles
 
 And for the time between, it is manifest, that the Power
 Ecclesiasticall, was in the Apostles; and after them in such as were by
@@ -14173,7 +14173,7 @@ remained, in those first times, where there was not any Christian
 Common-wealth; namely, in them that received the same from the Apostles,
 by successive laying on of hands.
 
-Of The Trinity
+## Of The Trinity
 
 Here wee have the Person of God born now the third time. For as Moses,
 and the High Priests, were Gods Representative in the Old Testament;
@@ -14517,7 +14517,7 @@ authority, by which our externall actions are to be governed in this
 life; but promise to take the doctrine of the Apostles for our direction
 in the way to life eternall.
 
-And To Forgive, And Retain Sinnes
+## And To Forgive, And Retain Sinnes
 
 The Power of Remission, And Retention Of Sinnes, called also the Power
 of Loosing, and Binding, and sometimes the Keyes Of The Kingdome Of
@@ -14877,7 +14877,7 @@ there should be Pastors, that could authorise an Interpreter, whose
 Interpretation should generally be stood to: But that could not be till
 Kings were Pastors, or Pastors Kings.
 
-Of The Power To Make Scripture Law
+## Of The Power To Make Scripture Law
 
 There be two senses, wherein a Writing may be said to be Canonicall;
 for Canon, signifieth a Rule; and a Rule is a Precept, by which a man
@@ -14889,7 +14889,7 @@ receiveth them is bound to obey, then are those Canons, not onely Rules,
 but Laws: The question therefore here, is of the Power to make the
 Scriptures (which are the Rules of Christian Faith) Laws.
 
-Of The Ten Commandements
+## Of The Ten Commandements
 
 That part of the Scripture, which was first Law, was the Ten
 Commandements, written in two Tables of Stone, and delivered by God
@@ -14937,7 +14937,7 @@ succeeding High Priests were the Civill Soveraigns. Therefore hitherto,
 the Canonizing, or making of the Scripture Law, belonged to the Civill
 Soveraigne.
 
-Of The Judicial, And Leviticall Law
+## Of The Judicial, And Leviticall Law
 
 The Judiciall Law, that is to say, the Laws that God prescribed to the
 Magistrates of Israel, for the rule of their administration of Justice,
@@ -15086,7 +15086,7 @@ himselfe, not to the Doctor, or Apostle, that converted him, but to God
 himself, and his Son Jesus Christ, as immediately as did the Apostles
 themselves.
 
-Of The Power Of Councells To Make The Scripture Law
+## Of The Power Of Councells To Make The Scripture Law
 
 That which may seem to give the New Testament, in respect of those that
 have embraced Christian Doctrine, the force of Laws, in the times, and
@@ -16478,7 +16478,7 @@ Neverthelesse, they should therein but doe, as Innocent, and Leo did,
 bear witnesse of themselves, and therefore their witness should not be
 good.
 
-Of The Popes Temporall Power
+## Of The Popes Temporall Power
 
 In the fift Book he hath four Conclusions. The first is, "That the Pope
 in not Lord of all the world:" the second, "that the Pope is not Lord
@@ -16868,7 +16868,7 @@ as himself, hath all the Obedience Necessary to his Reception into the
 Kingdome of God: For if God should require perfect Innocence, there
 could no flesh be saved.
 
-And To What Laws
+## And To What Laws
 
 But what Commandements are those that God hath given us? Are all
 those Laws which were given to the Jews by the hand of Moses, the
@@ -17442,7 +17442,7 @@ that it putteth out the Light of Nature, and causeth so great a
 Darknesse in mens understanding, that they see not who it is to whom
 they have engaged their obedience.
 
-And That The Pope Is His Vicar Generall
+## And That The Pope Is His Vicar Generall
 
 Consequent to this claim of the Pope to Vicar Generall of Christ in the
 present Church, (supposed to be that Kingdom of his, to which we are
@@ -17468,7 +17468,7 @@ had themselves placed there; and in this Darknesse of mind, are made to
 fight one against another, without discerning their enemies from their
 friends, under the conduct of another mans ambition.
 
-And That The Pastors Are The Clergy
+## And That The Pastors Are The Clergy
 
 From the same opinion, that the present Church is the Kingdome of God,
 it proceeds that Pastours, Deacons, and all other Ministers of the
@@ -19019,7 +19019,7 @@ Nor that which is gotten by Reasoning from the Authority of Books;
 because it is not by Reasoning from the Cause to the Effect, nor from
 the Effect to the Cause; and is not Knowledge, but Faith.
 
-Of The Beginnings And Progresse Of Philosophy
+## Of The Beginnings And Progresse Of Philosophy
 
 The faculty of Reasoning being consequent to the use of Speech, it was
 not possible, but that there should have been some generall Truthes
@@ -19055,7 +19055,7 @@ others for the learning of the Chaldeans and Egyptians, which was
 Astronomy, and Geometry. But we hear not yet of any Schools of
 Philosophy.
 
-Of The Schools Of Philosophy Amongst The Athenians
+## Of The Schools Of Philosophy Amongst The Athenians
 
 After the Athenians by the overthrow of the Persian Armies, had gotten
 the Dominion of the Sea; and thereby, of all the Islands, and Maritime
@@ -19090,7 +19090,7 @@ it spread it selfe over all Europe, and the best part of Afrique; so as
 there were Schools publiquely erected, and maintained for Lectures, and
 Disputations, almost in every Common-wealth.
 
-Of The Schools Of The Jews
+## Of The Schools Of The Jews
 
 There were also Schools, anciently, both before, and after the time of
 our Saviour, amongst the Jews: but they were Schools of their Law. For
@@ -19475,7 +19475,7 @@ the Law of Nature to the Civill Soveraign. And this private measure of
 Good, is a Doctrine, not onely Vain, but also Pernicious to the Publique
 State.
 
-And That Lawfull Marriage Is Unchastity
+## And That Lawfull Marriage Is Unchastity
 
 It is also Vain and false Philosophy, to say the work of Marriage is
 repugnant to Chastity, or Continence, and by consequence to make them
@@ -19511,7 +19511,7 @@ then they had taken on them the name of Spirituall, to have allowed
 themselves (when there was no need) the propriety of Wives, had been an
 Incongruity.
 
-And That All Government But Popular, Is Tyranny
+## And That All Government But Popular, Is Tyranny
 
 From Aristotles Civill Philosophy, they have learned, to call all manner
 of Common-wealths but the Popular, (such as was at that time the state

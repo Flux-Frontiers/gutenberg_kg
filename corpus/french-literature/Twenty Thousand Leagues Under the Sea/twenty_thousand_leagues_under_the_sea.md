@@ -23,7 +23,7 @@ The _Nautilus_ was blocked up
 One of these long arms glided through the opening
 The unfortunate vessel sank more rapidly
 
-### PART ONE CHAPTER I A SHIFTING REEF
+## PART ONE CHAPTER I A SHIFTING REEF
 
 The year 1866 was signalised by a remarkable incident, a mysterious and
 puzzling phenomenon, which doubtless no one has yet forgotten. Not to
@@ -5838,7 +5838,7 @@ sharks.”
 
 “Yes, sir, of sharks and men,” gravely replied the Captain.
 
-### PART TWO CHAPTER I THE INDIAN OCEAN
+## PART TWO CHAPTER I THE INDIAN OCEAN
 
 We now come to the second part of our journey under the sea. The first
 ended with the moving scene in the coral cemetery which left such a

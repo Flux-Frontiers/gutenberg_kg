@@ -1235,7 +1235,7 @@ time, the requisite elegance also.
 
 KÖNIGSBERG, _April_ 1787.
 
-Introduction
+### Introduction
 
 I. Of the difference between Pure and Empirical Knowledge
 

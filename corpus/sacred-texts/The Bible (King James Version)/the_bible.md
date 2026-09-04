@@ -91433,7 +91433,7 @@ to the commandment of the everlasting God, made known to all nations
 for the obedience of faith: 16:27 To God only wise, be glory through
 Jesus Christ for ever. Amen.
 
-The First Epistle of Paul the Apostle to the Corinthians
+## The First Epistle of Paul the Apostle to the Corinthians
 
 1:1 Paul, called to be an apostle of Jesus Christ through the will of
 God, and Sosthenes our brother, 1:2 Unto the church of God which is at
@@ -92643,7 +92643,7 @@ Anathema Maranatha.
 
 16:24 My love be with you all in Christ Jesus. Amen.
 
-The Second Epistle of Paul the Apostle to the Corinthians
+## The Second Epistle of Paul the Apostle to the Corinthians
 
 1:1 Paul, an apostle of Jesus Christ by the will of God, and Timothy
 our brother, unto the church of God which is at Corinth, with all the
@@ -94703,7 +94703,7 @@ received in the Lord, that thou fulfil it.
 4:18 The salutation by the hand of me Paul. Remember my bonds. Grace be
 with you. Amen.
 
-The First Epistle of Paul the Apostle to the Thessalonians
+## The First Epistle of Paul the Apostle to the Thessalonians
 
 1:1 Paul, and Silvanus, and Timotheus, unto the church of the
 Thessalonians which is in God the Father and in the Lord Jesus Christ:
@@ -94944,7 +94944,7 @@ holy brethren.
 
 5:28 The grace of our Lord Jesus Christ be with you. Amen.
 
-The Second Epistle of Paul the Apostle to the Thessalonians
+## The Second Epistle of Paul the Apostle to the Thessalonians
 
 1:1 Paul, and Silvanus, and Timotheus, unto the church of the
 Thessalonians in God our Father and the Lord Jesus Christ: 1:2 Grace
@@ -95065,7 +95065,7 @@ every epistle: so I write.
 
 3:18 The grace of our Lord Jesus Christ be with you all. Amen.
 
-The First Epistle of Paul the Apostle to Timothy
+## The First Epistle of Paul the Apostle to Timothy
 
 1:1 Paul, an apostle of Jesus Christ by the commandment of God our
 Saviour, and Lord Jesus Christ, which is our hope; 1:2 Unto Timothy,
@@ -95379,7 +95379,7 @@ profane and vain babblings, and oppositions of science falsely so
 called: 6:21 Which some professing have erred concerning the faith.
 Grace be with thee. Amen.
 
-The Second Epistle of Paul the Apostle to Timothy
+## The Second Epistle of Paul the Apostle to Timothy
 
 1:1 Paul, an apostle of Jesus Christ by the will of God, according to
 the promise of life which is in Christ Jesus, 1:2 To Timothy,
@@ -96956,7 +96956,7 @@ him; 5:20 Let him know, that he which converteth the sinner from the
 error of his way shall save a soul from death, and shall hide a
 multitude of sins.
 
-The First Epistle General of Peter
+## The First Epistle General of Peter
 
 1:1 Peter, an apostle of Jesus Christ, to the strangers scattered
 throughout Pontus, Galatia, Cappadocia, Asia, and Bithynia, 1:2 Elect
@@ -97241,7 +97241,7 @@ saluteth you; and so doth Marcus my son.
 5:14 Greet ye one another with a kiss of charity. Peace be with you
 all that are in Christ Jesus. Amen.
 
-The Second General Epistle of Peter
+## The Second General Epistle of Peter
 
 1:1 Simon Peter, a servant and an apostle of Jesus Christ, to them
 that have obtained like precious faith with us through the
@@ -97424,7 +97424,7 @@ your own stedfastness.
 3:18 But grow in grace, and in the knowledge of our Lord and Saviour
 Jesus Christ. To him be glory both now and for ever. Amen.
 
-The First Epistle General of John
+## The First Epistle General of John
 
 1:1 That which was from the beginning, which we have heard, which we
 have seen with our eyes, which we have looked upon, and our hands have
@@ -97763,7 +97763,7 @@ eternal life.
 
 5:21 Little children, keep yourselves from idols. Amen.
 
-The Second Epistle General of John
+## The Second Epistle General of John
 
 1:1 The elder unto the elect lady and her children, whom I love in
 the truth; and not I only, but also all they that have known the

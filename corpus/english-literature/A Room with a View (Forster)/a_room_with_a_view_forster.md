@@ -8,7 +8,7 @@ A Room With A View
 
 By E. M. Forster
 
-### PART ONE
+## PART ONE
 
 ## Chapter I
 
@@ -3161,7 +3161,7 @@ Miss Bartlett tapped on the wall.
 
 In the morning they left for Rome.
 
-### PART TWO
+## PART TWO
 
 ## Chapter VIII
 

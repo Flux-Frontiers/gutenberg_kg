@@ -358,7 +358,7 @@ ladies; and so, farewell to Chiswick Mall.
 
 ## CHAPTER II
 
-In Which Miss Sharp and Miss Sedley Prepare to Open the Campaign
+## In Which Miss Sharp and Miss Sedley Prepare to Open the Campaign
 
 When Miss Sharp had performed the heroical act mentioned in the last
 chapter, and had seen the Dixonary, flying over the pavement of the
@@ -6091,7 +6091,7 @@ eyes.
 
 ## CHAPTER XV
 
-In Which Rebecca's Husband Appears for a Short Time
+## In Which Rebecca's Husband Appears for a Short Time
 
 Every reader of a sentimental turn (and we desire no other) must have
 been pleased with the tableau with which the last act of our little
@@ -8086,7 +8086,7 @@ recommended Brighton very strongly.
 
 ## CHAPTER XX
 
-In Which Captain Dobbin Acts as the Messenger of Hymen
+## In Which Captain Dobbin Acts as the Messenger of Hymen
 
 Without knowing how, Captain William Dobbin found himself the great
 promoter, arranger, and manager of the match between George Osborne and
@@ -10043,7 +10043,7 @@ the events of the past two days had visibly shattered him.
 
 ## CHAPTER XXV
 
-In Which All the Principal Personages Think Fit to Leave Brighton
+## In Which All the Principal Personages Think Fit to Leave Brighton
 
 Conducted to the ladies, at the Ship Inn, Dobbin assumed a jovial and
 rattling manner, which proved that this young officer was becoming a
@@ -13266,7 +13266,7 @@ as if the whole population of the city rushed into the streets.
 
 ## CHAPTER XXXII
 
-In Which Jos Takes Flight, and the War Is Brought to a Close
+## In Which Jos Takes Flight, and the War Is Brought to a Close
 
 We of peaceful London City have never beheld--and please God never
 shall witness--such a scene of hurry and alarm, as that which Brussels
@@ -13954,7 +13954,7 @@ heart.
 
 ## CHAPTER XXXIII
 
-In Which Miss Crawley's Relations Are Very Anxious About Her
+## In Which Miss Crawley's Relations Are Very Anxious About Her
 
 The kind reader must please to remember--while the army is marching
 from Flanders, and, after its heroic actions there, is advancing to
@@ -17759,7 +17759,7 @@ months were over.
 
 ## CHAPTER XLI
 
-In Which Becky Revisits the Halls of Her Ancestors
+## In Which Becky Revisits the Halls of Her Ancestors
 
 So the mourning being ready, and Sir Pitt Crawley warned of their
 arrival, Colonel Crawley and his wife took a couple of places in the
@@ -20314,7 +20314,7 @@ go if we had an invitation.
 
 ## CHAPTER XLVIII
 
-In Which the Reader Is Introduced to the Very Best of Company
+## In Which the Reader Is Introduced to the Very Best of Company
 
 At last Becky's kindness and attention to the chief of her husband's
 family were destined to meet with an exceeding great reward, a reward
@@ -21443,7 +21443,7 @@ him for awhile, through the mist that dimmed her eyes.
 
 ## CHAPTER LI
 
-In Which a Charade Is Acted Which May or May Not Puzzle the Reader
+## In Which a Charade Is Acted Which May or May Not Puzzle the Reader
 
 After Becky's appearance at my Lord Steyne's private and select
 parties, the claims of that estimable woman as regards fashion were
@@ -22181,7 +22181,7 @@ Crawley finished his cigar as the cab drove under Temple Bar.
 
 ## CHAPTER LII
 
-In Which Lord Steyne Shows Himself in a Most Amiable Light
+## In Which Lord Steyne Shows Himself in a Most Amiable Light
 
 When Lord Steyne was benevolently disposed, he did nothing by halves,
 and his kindness towards the Crawley family did the greatest honour to
