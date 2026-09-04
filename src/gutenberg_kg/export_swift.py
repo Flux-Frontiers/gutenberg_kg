@@ -74,8 +74,10 @@ Usage
 
 from __future__ import annotations
 
+import bisect
 import hashlib
 import json
+import math
 import sqlite3
 import time
 from collections.abc import Iterator, Sequence
@@ -107,6 +109,11 @@ EMBED_DIM = 384
 #: The node kinds ``_semantic_search`` ranks. Nothing else is searchable, so
 #: nothing else is shipped.
 SEARCHED_KINDS = ("chunk", "section")
+
+#: Most chunks Browse should render as one chapter before the section is split
+#: into synthetic parts. 60 chunks is roughly 25 K characters. See
+#: :func:`window_oversized_sections`.
+BROWSE_WINDOW_CHUNKS = 60
 
 #: Reciprocal-rank-fusion constant. Must match ``handler._RRF_K`` and doc_kg's
 #: ``_fused_seeds`` or the packs rank differently from the worker.
@@ -806,6 +813,107 @@ class _PassageSource:
     fixed_meta: dict | None = None
 
 
+#: Marks a synthetic Browse-only section id: "<parent id>#part3".
+_PART_MARKER = "#part"
+
+
+def window_oversized_sections(con: sqlite3.Connection, *, max_chunks: int) -> int:
+    """Split sections too large to read as one chapter into synthetic parts.
+
+    Browse lists ``kind='section'`` rows by ``char_start`` and slices the chunks
+    between consecutive markers, so a book whose whole text sits under one
+    heading renders as a single scroll — 897 chunks for Franklin's
+    Autobiography, 2,847 for Boswell's *Johnson*. Works like those have no
+    divisions the converter can find, so the markers have to be manufactured
+    here.
+
+    The extra rows carry no content and get no vector, which keeps this to the
+    Browse tab: retrieval ranks chunks, and a marker with no text and no
+    embedding can never be a hit. The parent section keeps its id, so anything
+    holding one still resolves.
+
+    :param con: Open connection to a passage pack.
+    :param max_chunks: Chunks per part; a section at or under this is untouched.
+    :returns: Number of synthetic sections inserted.
+    """
+    if max_chunks <= 0:
+        return 0
+
+    chunks: dict[str, list[int]] = {}
+    for file_path, char_start in con.execute(
+        "SELECT file_path, char_start FROM passages "
+        "WHERE kind = 'chunk' AND file_path IS NOT NULL AND char_start IS NOT NULL "
+        "ORDER BY file_path, char_start"
+    ):
+        chunks.setdefault(file_path, []).append(char_start)
+
+    sections: dict[str, list[sqlite3.Row]] = {}
+    con.row_factory = sqlite3.Row
+    for row in con.execute(
+        "SELECT rowid, id, kg_name, kg_kind, name, title, node_title, author, genre, "
+        "       book, file_path, char_start "
+        "  FROM passages "
+        " WHERE kind = 'section' AND file_path IS NOT NULL AND char_start IS NOT NULL "
+        " ORDER BY file_path, char_start"
+    ):
+        sections.setdefault(row["file_path"], []).append(row)
+    con.row_factory = None
+
+    insert = (
+        "INSERT INTO passages"
+        "(id, kg_name, kg_kind, kind, name, title, node_title, author, genre, "
+        " book, file_path, char_start, chapter, timestamp, content) "
+        "VALUES (?, ?, ?, 'section', ?, ?, ?, ?, ?, ?, ?, ?, NULL, NULL, '')"
+    )
+    added: list[tuple] = []
+    retitled: list[tuple[str, int]] = []
+
+    for file_path, rows in sections.items():
+        starts = chunks.get(file_path)
+        if not starts:
+            continue
+        for index, row in enumerate(rows):
+            begin = bisect.bisect_left(starts, row["char_start"])
+            if index + 1 < len(rows):
+                stop = bisect.bisect_left(starts, rows[index + 1]["char_start"])
+            else:
+                stop = len(starts)
+            count = stop - begin
+            if count <= max_chunks:
+                continue
+
+            parts = math.ceil(count / max_chunks)
+            per_part = math.ceil(count / parts)
+            base = row["node_title"] or row["name"] or row["book"] or "Untitled"
+            retitled.append((f"{base} (Part 1 of {parts})", row["rowid"]))
+            for part in range(2, parts + 1):
+                offset = begin + (part - 1) * per_part
+                if offset >= stop:
+                    break
+                added.append(
+                    (
+                        f"{row['id']}{_PART_MARKER}{part}",
+                        row["kg_name"],
+                        row["kg_kind"],
+                        row["name"],
+                        row["title"],
+                        f"{base} (Part {part} of {parts})",
+                        row["author"],
+                        row["genre"],
+                        row["book"],
+                        file_path,
+                        starts[offset],
+                    )
+                )
+
+    if retitled:
+        con.executemany("UPDATE passages SET node_title = ? WHERE rowid = ?", retitled)
+    if added:
+        con.executemany(insert, added)
+    con.commit()
+    return len(added)
+
+
 def build_passage_pack(
     dest: Path,
     sources: Sequence[_PassageSource],
@@ -814,6 +922,7 @@ def build_passage_pack(
     dtype: str = "int8",
     max_chars: int = 0,
     with_vectors: bool = True,
+    browse_window: int = BROWSE_WINDOW_CHUNKS,
     progress=None,
 ) -> PackStats:
     """Write a passage pack: content, an FTS5 index over it, and the vectors.
@@ -893,7 +1002,16 @@ def build_passage_pack(
             stats.passages += written
             say(f"  {source.kg_name}: {written:,} passages")
 
-        for node_id, rowid in con.execute("SELECT id, rowid FROM passages"):
+        windowed = window_oversized_sections(con, max_chunks=browse_window)
+        if windowed:
+            stats.passages += windowed
+            say(f"  {windowed:,} synthetic Browse sections (>{browse_window} chunks)")
+
+        # Synthetic sections are deliberately excluded: they have no source
+        # vector, and counting them would report thousands of phantom misses.
+        for node_id, rowid in con.execute(
+            "SELECT id, rowid FROM passages WHERE id NOT LIKE ?", (f"%{_PART_MARKER}%",)
+        ):
             rowid_by_id[node_id] = rowid
 
         say("  building the FTS5 index over clean passage text…")
