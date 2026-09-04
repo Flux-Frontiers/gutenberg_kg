@@ -358,7 +358,7 @@ Ist auf der Erde ewig dir nichts recht?
 MEPHISTOPHELES.
 Nein Herr! ich find es dort, wie immer, herzlich schlecht.
 Die Menschen dauern mich in ihren Jammertagen,
-Ich mag sogar die armen selbst nicht plagen.
+Ich mag sogar die Armen selbst nicht plagen.
 
 DER HERR.
 Kennst du den Faust?
@@ -399,7 +399,7 @@ MEPHISTOPHELES.
 Da dank ich Euch; denn mit den Toten
 Hab ich mich niemals gern befangen.
 Am meisten lieb ich mir die vollen, frischen Wangen.
-Für einem Leichnam bin ich nicht zu Haus;
+Für einen Leichnam bin ich nicht zu Haus;
 Mir geht es wie der Katze mit der Maus.
 
 DER HERR.

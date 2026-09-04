@@ -7591,7 +7591,7 @@ yield. I will not stir a single foot backwards, and it will be seen
 whether man or nature is to have the upper hand!"
 
 Erect upon the rock, angry and threatening, Otto Liedenbrock was a
-rather grotesque fierce parody upon the fierce Achilles defying the
+rather grotesque fierce parody upon the fierce Ajax defying the
 lightning. But I thought it my duty to interpose and attempt to lay
 some restraint upon this unmeasured fanaticism.
 

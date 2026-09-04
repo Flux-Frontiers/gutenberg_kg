@@ -4,8 +4,6 @@
 
 ---
 
-### THE TEACHING OF EPICTETUS: BEING THE 'ENCHEIRIDION OF EPICTETUS,' WITH SELECTIONS FROM THE DISSERTATIONS' AND 'FRAGMENTS.'
-
 The name Epictetus is pronounced _ep''ik-ti'tus--e_ as in
 _get_, first _i_ as in _habit_, second _i_ as in
 _police_, _u_ as in _but_.
@@ -94,7 +92,7 @@ small handbook of the Stoic philosophy known as the _Encheiridion of
 Epictetus_. This little work has made Epictetus known to very many whom
 the _Dissertations_ would never have reached. It had the
 distinction--unparalleled in the case of any other Pagan writing, if we
-except the doubtful _Sententiæ_ of Xystus--of being adopted as a
+except the doubtful _Sententiae_ of Xystus--of being adopted as a
 religious work in the early Christian Church. Two paraphrases of
 it--still extant--one of which was specially designed for the use of
 monastic bodies, were produced about the sixth century A. D., in which
@@ -153,7 +151,7 @@ Greek text arranged on the same lines.
 I may add here that the reader will find an Index at the end of this
 volume, in which every paragraph is referred to its original source in
 the _Dissertations_, _Encheiridion_, or _Fragments_--the references
-applying to Schweighäuser's standard edition of Epictetus.[2]
+applying to Schweighaeuser's standard edition of Epictetus.[2]
 
 As regards the style of my translation, I hope the tinge of archaism I
 have given it will be felt to suit the matter. I could think of no idiom
@@ -245,7 +243,7 @@ doctrines.
 Epicurus was an Athenian. After some residence in Lesbos and Lampsacus,
 he began to teach in his native city about the year 306 B. C. His ethical
 views, which are all that concern us here, were of a distinctly
-unelevating nature. Pleasure, [Greek: hêdonê], was pronounced to be for
+unelevating nature. Pleasure, [Greek: hedone], was pronounced to be for
 each man the end and aim of his being, and the only rational motive of
 action. This, however, was not the pleasure of the voluptuary--its
 highest forms, according to Epicurus, were gained in [Greek: ataraxia]
@@ -329,7 +327,7 @@ especially to be regretted, as he appears to have taken the main part in
 giving shape and system to the Stoic philosophy. "Had Chrysippus not
 been, the Stoa had not been," was a proverbial saying which testifies to
 his fame. However, from the accounts of ancient philosophers in Diogenes
-Läertius, from Plutarch, Seneca, Cicero, and a few other authorities, we
+Laeertius, from Plutarch, Seneca, Cicero, and a few other authorities, we
 can learn pretty clearly what the framework of the Stoic system had
 grown to be long before Epictetus began to study it.
 
@@ -350,7 +348,7 @@ was that the universe was an eternal flux and transition; everything was
 in a state of becoming, _ein Werdendes_. At the beginning of things, so
 far as they can be said to have any beginning, is the Deity in his
 purest manifestation, which, be it observed, is a strictly material one,
-a sublimated and ethereal fire, [Greek: aitherôdes pyr]. In this fire
+a sublimated and ethereal fire, [Greek: aitherodes pyr]. In this fire
 dwelt the divine creative thought and impulse. The first step in that
 process of differentiation in which development consists is the
 production of vapor, which condensed into water. Two elementary forces
@@ -387,7 +385,7 @@ includes them all. One by one the steps by which it was formed shall be
 retraced, and the derived substances which compose it consumed and
 re-absorbed by that from which they sprang. From matter in its grossest
 form to its purest, from earth and stone and water to the highest
-intelligence in men and dæmons and Gods, nothing shall escape this doom
+intelligence in men and daemons and Gods, nothing shall escape this doom
 of dissolution; everything shall yield up its separate existence, until
 at last the indestructible element of that primeval fire is again the
 sole being that remains, and Zeus is "alone in the conflagration,"
@@ -471,11 +469,11 @@ interpreted through the observation in a reverent and faithful spirit of
 the facts of life.
 
 Going into the subject more precisely we find certain criteria of moral
-truth established, [Greek: prolêpseis], as they were called, that is,
+truth established, [Greek: prolepseis], as they were called, that is,
 primitive, original conceptions, or, as I have rendered them in my
 translation, "natural conceptions," dogmas by which all moral questions
 can be tried. If we inquire into the source of these [Greek:
-prolêpseis], we shall find ourselves mistaken in our disposition to
+prolepseis], we shall find ourselves mistaken in our disposition to
 think that the Stoics regarded them as innate ideas. Innate they are
 not, for the Stoics held the soul at birth to be a _tabula rasa_, or
 blank page, which only experience could fill with character and meaning.
@@ -485,7 +483,7 @@ things, could not equip us with the knowledge of them before we entered
 upon life, yet the "seeds" of this knowledge she does give us; the soul
 of every man has implanted in it a certain aptness or, indeed, necessity
 to deduce certain universal truths from such observation and experience
-as are common to all mankind; and these truths, the [Greek: prolêpseis],
+as are common to all mankind; and these truths, the [Greek: prolepseis],
 though not strictly innate, have thus an inevitableness and dogmatic
 force not possessed by those which one man may reach and another miss in
 the exercise of the ordinary faculties, by argument, study, and so
@@ -539,7 +537,7 @@ freedom from passions, is again and again represented by Epictetus as
 the mark of the perfect sage, we are told that this [Greek: apatheia]
 is something quite different from "apathy"--a man is not to be
 emotionless "like a statue." And a third passage confirming this view is
-to be found in Book I., ch. xi. (Schweighäuser), where the conduct of a
+to be found in Book I., ch. xi. (Schweighaeuser), where the conduct of a
 man who was so afflicted by the illness of his little daughter that he
 ran away from the house, and would hear news of her only through
 messages, is condemned, not for the affection and anxiety it proved, but
@@ -660,10 +658,10 @@ English by T. W. Rolleston. Kegan Paul, Trench, & Co., 1881.]
 [Footnote 2: Epicteti Dissertationum ab Arriano Digestarum Libri IV.
 et ex Deperditis Sermonibus Fragmenta. Post Io. Uptoni aliorumque
 curas, denuo ad Codicum M Storum fidem recensuit, Latina Versione,
-Adnotationibus, Indicibus illustravit Johannes Schweighäuser,
-Lipsiæ. MDCCXCIX.
+Adnotationibus, Indicibus illustravit Johannes Schweighaeuser,
+Lipsiae. MDCCXCIX.
 
-Epicteti Manuale et Cebetis Tabula Græce et Latine. Schw.
+Epicteti Manuale et Cebetis Tabula Graece et Latine. Schw.
 MDCCXCVIII.
 
 There are two excellent English translations of the whole extant
@@ -974,8 +972,8 @@ friend, and child and slave. And being thus bound to many things, they
 lie heavy on us and drag us down. So, if the weather be not fair for
 sailing, we sit down distraught and are ever peering forth to see how
 stands the wind. _It is north._ And what is that to us? _When will the
-west wind blow?_ When it shall seem good to it, friend; or to Æolus. For
-it was not thee, but Æolus whom God made "steward of the winds."[2] What
+west wind blow?_ When it shall seem good to it, friend; or to AEolus. For
+it was not thee, but AEolus whom God made "steward of the winds."[2] What
 then? It is right to devise how we may perfect the things that are our
 own, and to use the others as their nature is. And what, then, is their
 nature? As it may please God.
@@ -990,11 +988,11 @@ to consent to what is good and to reject what is evil, and to hold back
 about what is uncertain; and thus to be moved to pursue the good and to
 avoid the evil, and neither way towards what is neither good nor evil.
 For as it is not lawful for the money-changer or the seller of herbs to
-reject Cæsar's coin, but if one present it, then, whether he will or no,
+reject Caesar's coin, but if one present it, then, whether he will or no,
 he must give up what is sold for it, so it is also with the soul. When
 the Good appears, straightway the soul is moved towards it, and from the
 Evil. And never doth the soul reject any clear appearance of the good,
-no more than Cæsar's coin. On this hangeth every movement both of God
+no more than Caesar's coin. On this hangeth every movement both of God
 and man.
 
 2. The nature and essence of the Good is in a certain disposition of the
@@ -1125,7 +1123,7 @@ whether we understand it. But it is hateful to be confuted, for a man
 now old, and one who, perhaps, hath served his three campaigns! And I
 too know this. For you have come to me now as one who lacketh nothing.
 And what could you suppose to be lacking to you? Wealth have you, and
-children, and it may be a wife, and many servants; Cæsar knows you, you
+children, and it may be a wife, and many servants; Caesar knows you, you
 have won many friends in Rome, you give every man his due, you reward
 with good him that doeth good to you, and with evil him that doeth evil.
 What is still lacking to you? If, now, I shall show you that you lack
@@ -1322,7 +1320,7 @@ herald from God to men, declaring to them the truth about good and evil
 things; that they have erred, and are seeking the reality of good and
 evil where it is not; and where it is, they do not consider; and he is a
 spy, like Diogenes, when he was led captive to Philip after the battle
-of Chæronea.[6] For the Cynic is, in truth, a spy of the things that are
+of Chaeronea.[6] For the Cynic is, in truth, a spy of the things that are
 friendly to men, and that are hostile; and having closely spied out all,
 he must come back and declare the truth. And he must neither be stricken
 with terror and report of enemies where none are; nor be in any
@@ -1432,7 +1430,7 @@ Take first a mirror, look upon thy shoulders, mark well thy loins and
 thighs. Thou art about to enter thy name for the Olympic games, O man;
 no cold and paltry contest. Nor canst thou then be merely overcome and
 then depart; but first thou must be shamed in the sight of all the
-world; and not alone of the Athenians, or Lacedæmonians, or
+world; and not alone of the Athenians, or Lacedaemonians, or
 Nicopolitans. And then if thou hast too rashly entered upon the contest
 thou must be thrashed, and before being thrashed must suffer thirst and
 scorching heat, and swallow much dust.
@@ -1443,9 +1441,9 @@ wills thee either to be great or to be greatly plagued. For this very
 agreeable circumstance is linked with the calling of a Cynic; he must be
 flogged like an ass, and, being flogged, must love those who flog him,
 as though he were the father or brother of all mankind. Not so, but if
-one shall flog thee, stand in the midst and shriek out, _O Cæsar, what
+one shall flog thee, stand in the midst and shriek out, _O Caesar, what
 things do I suffer in the Emperor's peace! Let us take him before the
-pro-consul._ But what is Cæsar to the Cynic? or what is a pro-consul? or
+pro-consul._ But what is Caesar to the Cynic? or what is a pro-consul? or
 what is any other than He that hath sent him hither, and whom he
 serveth, which is Zeus? Doth he call upon any other than God? Is he not
 persuaded, whatsoever things he may suffer, that he is being trained and
@@ -1537,7 +1535,7 @@ those who, as far they may, oversee all men, what they do, how they
 live, wherewith they concern themselves, and what duties they neglect?
 And were the Thebans more benefited by as many as left their little
 children behind, or by Epaminondas, who died childless? And did Priam,
-who begat fifty good-for-nothing sons, or Danaus, or Æolus,[12] better
+who begat fifty good-for-nothing sons, or Danaus, or AEolus,[12] better
 serve the community than Homer? Shall, then, the command of an army or
 the writing of poems withdraw a man from marriage and fatherhood, and he
 shall not be thought to have gained nothing for his childlessness, but
@@ -1730,10 +1728,10 @@ to be shipwrecked? Hath it anything of the nature of vice?"
 
 Would you not lay hold of a stick and shake it in his face: _Let us
 alone, man; we are perishing, and you come to mock us!_ And do you
-remember the difference if you are accused of something and Cæsar sends
+remember the difference if you are accused of something and Caesar sends
 for you? If one should come to you when you enter, pale and trembling,
 and should say, Why do you tremble, man? what is your business
-concerned with? Doth Cæsar there within dispense virtue and vice to
+concerned with? Doth Caesar there within dispense virtue and vice to
 those who go in to him? _Why_, you will say; _must you too mock me in my
 calamities?_
 
@@ -1889,7 +1887,7 @@ order of the game? One will call "Throw," "Do not throw," and another,
 
 8. Thus Socrates knew how to play ball. How? When he jested in the
 court of justice. "Tell me, Anytus," he said, "how say you that I
-believe there is no God? The Dæmons, who are they, think you? Are they
+believe there is no God? The Daemons, who are they, think you? Are they
 not sons of God, or a mixed nature between Gods and men?" And when this
 was admitted--"Who, do you think, can hold that mules exist, but not
 asses?"[2] And thus he played with the ball. And what was the ball that
@@ -2102,9 +2100,9 @@ very thing released from slavery. How, then, shall we still believe you,
 most excellent legislators, when ye say, "We permit none to be taught,
 save freemen?"[4] for the philosophers say, "We permit none to be free
 save those who have been taught"--that is, God permits it not. _So, when
-a man turns round his slave before the Prætor,[5] has he done nothing?_
+a man turns round his slave before the Praetor,[5] has he done nothing?_
 He has done something. _And what?_ He has turned round his slave before
-the Prætor. _Nothing else at all?_ Yea, this too--he must pay for him
+the Praetor. _Nothing else at all?_ Yea, this too--he must pay for him
 the tax of the twentieth. _What then? has the man thus treated not
 gained his freedom?_ No more than he has gained tranquillity of mind.
 For thou, who art able to emancipate others, hast thou no master? is
@@ -2238,7 +2236,7 @@ these alone hath nature given it to have communion and intercourse with
 God, being linked with Him through Reason),--wherefore should such a one
 not name himself a citizen of the universe? wherefore not a son of God?
 wherefore shall he fear anything that may come to pass among men? And
-shall kinship with Cæsar, or with some other of those that are mighty at
+shall kinship with Caesar, or with some other of those that are mighty at
 Rome, be enough to let us live in safety and undespised and fearing
 nothing at all; but to have God for our maker and father and guardian,
 shall this not avail to deliver us from griefs and fears?
@@ -2366,9 +2364,9 @@ the praise of God, both alone to myself, and to single persons, and in
 presence of many. He doth not provide me with many things, nor with
 great abundance of goods; He will not have me live delicately. For
 neither did He provide so for Hercules, His own son, but another man
-reigned over Argos and Mycenæ, while he obeyed and labored and was
+reigned over Argos and Mycenae, while he obeyed and labored and was
 disciplined. And Eurystheus was what he was--no king of Argos and
-Mycenæ, who was not king even of himself; and Hercules was lord and
+Mycenae, who was not king even of himself; and Hercules was lord and
 leader of all the earth and sea, for he purged them of lawlessness and
 wrong, and brought in righteousness and holiness; naked and alone did he
 this. And when Odysseus was shipwrecked and cast away, did his need
@@ -2555,7 +2553,7 @@ with His, my pursuit is one with His; in a word, my will is one with
 His. There is no shutting out for me--nay, but for those who would force
 their way in. And wherefore do I not force my way? Because I know that
 no good thing is dealt out within to those that enter. But when I hear
-some one congratulated on being honored by Cæsar, I say, What hath
+some one congratulated on being honored by Caesar, I say, What hath
 fortune brought him? A government? Has it also, then, brought him such
 an opinion as he ought to have? A magistracy? Hath he also gained the
 power to be a good magistrate? Why will I still push myself forward? A
@@ -3077,7 +3075,7 @@ dealings of every kind.[4]
 7. Consider these things--whether you are willing at such a price to
 gain peace, freedom, and an untroubled spirit. And if not, then attempt
 it not, nor, like a child, play now the philosopher, then the
-tax-gatherer, then the orator, then the Procurator of Cæsar. For these
+tax-gatherer, then the orator, then the Procurator of Caesar. For these
 things agree not among themselves; and, good or bad, it behooves you to
 be one man. You should be perfecting either your own ruling faculty, or
 your outward well-being; spending your art either on the life within or
@@ -3280,7 +3278,7 @@ teachings have grown our well-governed States, from these did Sparta
 spring, and these beliefs, by his laws and discipline, did Lycurgus
 plant among his people:--That slavery is no more base than honorable,
 nor to be free men more honorable than base. Through these opinions died
-those who fell at Thermopylæ, and through what others did the Athenians
+those who fell at Thermopylae, and through what others did the Athenians
 forsake their city?[8]
 
 9. Then those who speak such things marry, and beget children, and take
@@ -3411,7 +3409,7 @@ marry. Nor I; for it is not right to marry, nor beget children, nor take
 part in public affairs._ What will come to pass then? Whence shall we
 have citizens? who shall educate them? who shall be the overseer of
 youth?[4] who the director of gymnastics? and how shall the youth be
-trained up? as the Lacedæmonians? or as the Athenians? Take me a youth,
+trained up? as the Lacedaemonians? or as the Athenians? Take me a youth,
 and bring him up after these doctrines of thine! Evil are they,
 subversive of States, mischievous to households, unbecoming to women.
 Abandon them, man! Thou dwellest in a chief city; it is thy part to
@@ -3449,7 +3447,7 @@ of silver are enough for thee; what need hast thou of doctrines?
 
 Dost thou know how to judge--who made thee know?
 
-----"Cæsar wrote me a commission."
+----"Caesar wrote me a commission."
 
 Let him write thee a commission to be a judge of music, and what help
 will it be to thee? And how didst thou become a judge? by kissing of
@@ -3492,11 +3490,11 @@ court and set up lofty towers, but confirm the dwellers in the house
 with good-will, and faith, and friendliness, and no harmful thing shall
 enter; no, not if the whole army of evil were arrayed against it.
 
-3. Which of us will not admire Lycurgus, the Lacedæmonian? For having
+3. Which of us will not admire Lycurgus, the Lacedaemonian? For having
 lost an eye at the hands of one of the citizens, and having received the
 young man from the people that he should punish him as he would, he
 refrained from this; but having taught him and proved him to be a good
-man, he brought him into the theater. And when the Lacedæmonians
+man, he brought him into the theater. And when the Lacedaemonians
 marveled, _I received this man from you_, he said, _insolent and
 violent; I give him back to you mild and civil_.
 
@@ -3604,10 +3602,10 @@ of relation. But if I set Myself in one place and Virtue some
 otherwhere, then the word of Epicurus waxeth strong, which declareth
 that there is no Virtue, or, at least, that Virtue is but conceit.
 
-6. Through this ignorance did Athenians and Lacedæmonians quarrel with
+6. Through this ignorance did Athenians and Lacedaemonians quarrel with
 each other, and Thebans with both of them, and the Great King with
 Hellas, and Macedonians with both of them, and even now Romans with
-Getæ; and through this yet earlier the wars of Ilion arose. Paris was
+Getae; and through this yet earlier the wars of Ilion arose. Paris was
 the guest of Menelaus; and if any one had seen how friendly-minded
 towards each other they were, he would have disbelieved any one who said
 they were not friends. But a morsel was flung between them--a fair
@@ -3952,7 +3950,7 @@ befall us, and how we stand now; what things they are that still afflict
 us; how these, too, may be healed, how removed; and if aught should need
 perfecting, to perfect it according to the reason of the case.
 
-2. Ye see now how that Cæsar seemeth to have given us a great peace;
+2. Ye see now how that Caesar seemeth to have given us a great peace;
 how there are no longer wars nor battles nor bands of robbers nor of
 pirates, but a man may travel at every season, and sail from east to
 west. But can he give us peace from fever? or from shipwreck? or from
@@ -3963,7 +3961,7 @@ philosophers doth promise us peace even from these things. And what
 saith it? _If ye will hearken unto me, O men, wheresoever ye be,
 whatsoever ye do, ye shall not grieve, ye shall not be wroth, ye shall
 not be compelled or hindered, but ye shall live untroubled and free from
-every ill._ Whosoever hath this peace, which Cæsar never proclaimed (for
+every ill._ Whosoever hath this peace, which Caesar never proclaimed (for
 how could he proclaim it?), but which God proclaimed through His word,
 shall he not suffice to himself when he may be alone? for he beholdeth
 and considereth, _Now can no evil happen to me; for me there is no
@@ -4093,7 +4091,7 @@ and gratitude towards God, with boldness in every place, as of one who
 hath to do with things alien to him, and of no estimation. And we are
 the men to write and read these things, and to applaud them when they
 are delivered to us, but to the belief of them we have not even come
-near. And therefore that saying concerning the Lacedæmonians,
+near. And therefore that saying concerning the Lacedaemonians,
 
 "Lions at home, but in Ephesus foxes,"[3]
 
@@ -4210,14 +4208,14 @@ guardian could He have committed us? So, when ye have shut the doors,
 and made darkness in the house, remember never to say that ye are alone;
 for ye are not alone, but God is there, and your Genius is there; and
 what need have these of light to mark what ye are doing? To this God it
-were fitting also that ye should swear an oath, as soldiers do to Cæsar.
-But those indeed who receive pay swear to prefer the safety of Cæsar
+were fitting also that ye should swear an oath, as soldiers do to Caesar.
+But those indeed who receive pay swear to prefer the safety of Caesar
 before all things; but ye, receiving so many and great things, will ye
 not swear? or swearing, will ye not abide by it? And what shall ye
 swear? Never to disobey, never to accuse, never to blame aught that He
 hath given, never unwillingly to do or suffer any necessary thing. Is
 this oath like unto that other? The soldiers swear to esteem no other
-man before Cæsar; ye to esteem yourselves above all.
+man before Caesar; ye to esteem yourselves above all.
 
 ## CHAPTER III. OF PROVIDENCE.
 
@@ -5342,9 +5340,9 @@ the full text of this noble Hymn, which, he thinks, "would
 alone redeem the Hellenistic age, as it stands before us, from
 the charge of mere artificiality and pedantry."
 
-[2] [Greek: iês mimêma lachontes mounon]. This is Zeller's
+[2] [Greek: ies mimema lachontes mounon]. This is Zeller's
 reading, but not Professor Mahaffy's, who has [Greek: henos
-mimêma].
+mimema].
 
 NOTES.
 
@@ -5355,40 +5353,40 @@ thought and expression between Epictetus and the New Testament have
 often been noticed, and the reader will discover many others, to which I
 have not thought it necessary to draw attention.
 
-"Conceit:" [Greek: oiêsis], _Einbildung_.
+"Conceit:" [Greek: oiesis], _Einbildung_.
 
 3. "To be elated:" [Greek: epairesthai]. One might translate, "to be
 puffed up," except that that expression is only used in a bad sense, and
 one may be "elated" in anything that is truly of the nature of the good.
 The Stoics distinguished between [Greek: chara], joy, and [Greek:
-hêdonê], pleasure; not rejecting or despising the former.
+hedone], pleasure; not rejecting or despising the former.
 
 ## CHAPTER II.
 
-1. [Greek: ta men eisin eph' hêmin, ta de ouk eph' hêmin]. A
+1. [Greek: ta men eisin eph' hemin, ta de ouk eph' hemin]. A
 fundamental distinction in the Epictetean system, which he sometimes
-expresses by the phrases, [Greek: ta hêmetera] and [Greek: ta tôn
-allôn]--things that are our own and things that belong to others; or
+expresses by the phrases, [Greek: ta hemetera] and [Greek: ta ton
+allon]--things that are our own and things that belong to others; or
 [Greek: ta idia] and [Greek: ta allotria]--things that are our
 proper concern, and things that are alien to us.
 
 2. On the Mons Palatinus in Rome there stood a temple to Fever. Upton
 quotes from Gruter, p. xcvii., an interesting inscription to this
-divinity: Febri. Divæ. Febri. Sanctæ. Febri. Magnæ. Camilla. Amata. Pro.
+divinity: Febri. Divae. Febri. Sanctae. Febri. Magnae. Camilla. Amata. Pro.
 Filio. Male. Affecto. P.
 
 ## CHAPTER III.
 
 1. There is excellent MS. authority for this reading of the passage,
-which, however, is not Schweighäuser's. The latter reads: "Be content
+which, however, is not Schweighaeuser's. The latter reads: "Be content
 with them, and pray to the Gods."
 
 2. "Steward of the winds." A quotation from Homer, _Od._ x. 21.
 
 ## CHAPTER IV.
 
-1. "Through not being dazzled," etc. [Greek: An tas hylas mê
-thaumasê].
+1. "Through not being dazzled," etc. [Greek: An tas hylas me
+thaumase].
 
 ## CHAPTER VI.
 
@@ -5407,7 +5405,7 @@ application by Luther's "Pecca fortiter."
 2. A complex or conjunctive proposition is one which contains several
 assertions so united as to form a single statement which will be false
 if any one of its parts is false--_e.g._, "Brutus was the lover and
-destroyer both of Cæsar and of his country." The disjunctive is when
+destroyer both of Caesar and of his country." The disjunctive is when
 alternative propositions are made, as "Pleasure is either good or bad,
 or neither good nor bad."
 
@@ -5436,7 +5434,7 @@ went to live at Walden, the Cynic tries the extreme of abnegation in
 order to demonstrate practically that man has resources within himself
 which make him equal to any fate that circumstances can inflict.
 
-2. [Greek: tribônion], a coarse garment especially affected by the
+2. [Greek: tribonion], a coarse garment especially affected by the
 Cynics, as also by the early Christian ascetics.
 
 3. "Nor pity." Upton, in a note on _Diss._ i. 18. 3. (Schw.), refers to
@@ -5458,10 +5456,10 @@ bearing on the Stoic doctrine of pity (_De Civ. Dei._ ix. 5; _Schw._ iv.
 
 "Misericordiam Cicero non dubitavit appellare virtutem, quam Stoicos
 inter vitia numerare non pudet, qui tamen, ut docuit liber Epicteti
-nobilissimi Stoici ex decretis Zenonis et Chrysippi, qui hujus sectæ
+nobilissimi Stoici ex decretis Zenonis et Chrysippi, qui hujus sectae
 primas partes habuerunt, hujuscemodi passiones in animum Sapientis
 admittunt, quem vitiis omnibus liberam esse volunt. Unde fit consequens,
-ut hæc ipsa non putent vitia, quando Sapienti sic accidunt, ut contra
+ut haec ipsa non putent vitia, quando Sapienti sic accidunt, ut contra
 virtutem mentis rationemque nihil possunt."
 
 The particular utterances of Epictetus here alluded to by St. Augustine
@@ -5515,10 +5513,10 @@ the genius or divine spirit by which Socrates felt himself guided.
 Upton quotes Menander (_apud Diog. L._), "Thou wilt walk about with me
 in a cloak as once did his wife with Crates the Cynic."
 
-12. Danaus, father of the fifty Danaidæ. Æolus is mentioned in _Od._ x.
+12. Danaus, father of the fifty Danaidae. AEolus is mentioned in _Od._ x.
 as having six sons and six daughters.
 
-13. [Greek: trapezêas pylaôrous]. _Il._ xxi. 69.
+13. [Greek: trapezeas pylaorous]. _Il._ xxi. 69.
 
 14. That is, he capped the quotation by quoting the following line
 (_Il._ ii. 24, 25). Not a very striking intellectual effort; but
@@ -5566,7 +5564,7 @@ _circumstances_, but the word is evidently used in a bad sense, as
 equivalent to afflictions. Doom is likewise etymologically a neutral
 word, but one which has received an evil meaning.
 
-2. Socrates's faith in his genius or "Dæmon" was well known. In this
+2. Socrates's faith in his genius or "Daemon" was well known. In this
 passage from his _Apologia_ (which Epictetus gives from a bad text), it
 is doubtless the manner only that conveyed the idea of mockery. Neither
 Socrates nor any one else ever had better evidence of God's existence
@@ -5580,7 +5578,7 @@ penetration of fallacies, etc., by which means a man is to arrive at
 such an inward and vital conviction of the truth that he can never for a
 moment be taken off his guard by the delusion of Appearance.
 
-2. Passions, passionless, [Greek: ta pathê, apathês].--See Index of
+2. Passions, passionless, [Greek: ta pathe, apathes].--See Index of
 Philosophic Terms.
 
 ## CHAPTER V.
@@ -5602,7 +5600,7 @@ generally when old age had begun to render them a burden to their
 friends.
 
 3. _Nay, thou shalt exist_, etc.--This is the sense given by Zeller's
-punctuation. Schweighäuser's text would be rendered, "Thou shalt not
+punctuation. Schweighaeuser's text would be rendered, "Thou shalt not
 exist, but something else will," etc. Upton changes the text (on his own
 authority) by transposing an [Greek: ouk]. "Thou shalt exist, but as
 something else, whereof the universe has now no need."
@@ -5625,7 +5623,7 @@ Fifth Book of Epictetus, and read this passage.
 
 2. The third Earl of Shaftesbury, an enthusiastic student of Epictetus,
 had this dish of water and ray of light engraved, and placed, with the
-inscription, [Greek: panta hypolêpsis]--All is Opinion--as an emblem
+inscription, [Greek: panta hypolepsis]--All is Opinion--as an emblem
 at the front of his _Characteristics_. The passage, though interesting,
 is obscure. At one time the "appearances," [Greek: phantasiai], are
 compared to the ray of light; at another, the doctrines (literally
@@ -5668,14 +5666,14 @@ favorably with Plato's banishment of the poets from his Republic for
 
 ## CHAPTER IX.
 
-1. Gyara, an island in the Ægean, used as a penal settlement.
+1. Gyara, an island in the AEgean, used as a penal settlement.
 
 ## CHAPTER X.
 
 1. _The captain ... the driver_--literally, "to him who has knowledge"
 (of the given art).
 
-2. Liberator--[Greek: karpistês]. The person appointed by law to carry
+2. Liberator--[Greek: karpistes]. The person appointed by law to carry
 out the ceremony of the manumission of slaves.
 
 ## CHAPTER XI.
@@ -5686,7 +5684,7 @@ the truth or falsehood according as he is or is not capable of reading
 Epictetus with understanding.
 
 2. This earthen lamp was sold, according to Lucian, at the death of
-Epictetus for 3,000 drachmæ (about £120).--_Adv. Indoct._ 13.
+Epictetus for 3,000 drachmae (about L120).--_Adv. Indoct._ 13.
 
 ## CHAPTER XIII.
 
@@ -5703,7 +5701,7 @@ koilia].
 ## CHAPTER XXV.
 
 1. This is the reading of one of the Christian Paraphrases. The other
-versions add the words [Greek: pros allêlous] after [Greek: ex hôn
+versions add the words [Greek: pros allelous] after [Greek: ex hon
 ou diapherometha], giving the sense "from things in which we do not
 differ from each other." It is no uncommon thing for all the versions of
 Epictetus to unite in a manifestly corrupt reading, and though in this
@@ -5714,7 +5712,7 @@ justified in following the variant of the Paraphrase.
 
 1. There is an allusion to this curious feature of the Olympic contests
 in the Fourth Idyll of Theocritus. Casaubon (_Lect. Theocr._ ad Idyll.
-4) quoted by Schweighäuser, in his note on this passage (_Diss._ III.
+4) quoted by Schweighaeuser, in his note on this passage (_Diss._ III.
 xv. 4), shows from Festus Pompeius that there was a statue in the
 Capitol of a youth bearing a spade after the manner of the Olympic
 combatants.
@@ -5736,27 +5734,25 @@ his affairs, or his duties as a citizen, nor even justified in doing so.
 made the ease of this our only proper pursuit, of course the altruistic,
 or social instincts have to be rejected and denied.
 
-2. The text is here almost certainly corrupt. It runs [Greek: pôs oun
-hyponoêtikoi esmen, hois mê physikê esti pros ta ekgona
-philostorgia]. All the MSS. agree in [Greek: hyponoêtikoi], for which
-Schweighäuser desires to read [Greek: pronoêtikoi], and Wolf, [Greek:
-eti koinônikoi]. Salmasius declares emphatically for [Greek: pôs
-oun epinoeis hoti koinônikoi esmen], and this, with a slight
+2. The text is here almost certainly corrupt. It runs [Greek: pos oun
+hyponoetikoi esmen, hois me physike esti pros ta ekgona
+philostorgia]. All the MSS. agree in [Greek: hyponoetikoi], for which
+Schweighaeuser desires to read [Greek: pronoetikoi], and Wolf, [Greek:
+eti koinonikoi]. Salmasius declares emphatically for [Greek: pos
+oun epinoeis hoti koinonikoi esmen], and this, with a slight
 alteration suggested to me by an eminent living scholar, is the reading
-I have adopted: Let us suppose that Epictetus said [Greek: pôs oun
+I have adopted: Let us suppose that Epictetus said [Greek: pos oun
 hyponoeis hoti k.e.], and that this was written in the short lines
 common in Greek MSS.:--
 
 [Greek:
 
-PÔSOUNYPO
-NOEISOTIKOI
-NÔNIKOI]
+### POSOUNYPO NOEISOTIKOI NONIKOI]
 
 The second line, beginning with the same letter as the third, might
 easily be dropped by a transcriber, and the next transcriber would
-certainly change the resulting [Greek: hyponônikoi] to [Greek:
-hyponoêtikoi]. The existing reading might give the sense, "How are we,
+certainly change the resulting [Greek: hypononikoi] to [Greek:
+hyponoetikoi]. The existing reading might give the sense, "How are we,
 then, suspicious of those (if any there be) to whom Nature has given no
 affection for their offspring?"
 
@@ -5778,7 +5774,7 @@ practical results of each system are exhibited.
 be plundered, and took to their fleet, the victory at Salamis rewarding
 their resolve.
 
-Those who died at Thermopylæ were the three hundred Spartans under
+Those who died at Thermopylae were the three hundred Spartans under
 Leonidas, who held the pass against the Persian host till all were
 slain. Often as their heroism has been celebrated, perhaps nothing more
 worthy of their valor has been written than the truly laconic epitaph
@@ -5804,7 +5800,7 @@ exaggerate its discomforts, is noteworthy enough.
 
 ## CHAPTER V.
 
-1. Administrator, [Greek: diorthôtês]; in Latin, _Corrector_--a State
+1. Administrator, [Greek: diorthotes]; in Latin, _Corrector_--a State
 officer of whom inscriptions, etc., make frequent mention, but of whose
 functions not much appears to be known beyond what the present chapter
 of Epictetus reveals.
@@ -5825,8 +5821,8 @@ Mahaffy's _Greek Life and Thought_, ch. xvii., on the organization of
 the _ephebi_.
 
 5. _Aid in works that are according to Nature._--The Greek is--[Greek:
-en tois kata physin ergois parakratê]. There is some difference
-of opinion among commentators as to the meaning of [Greek: parakratê].
+en tois kata physin ergois parakrate]. There is some difference
+of opinion among commentators as to the meaning of [Greek: parakrate].
 Wolf translates, "hold the chief place" in natural works. Upton, Schw.,
 and Long render it by "keep us constant," "sustain us," in such works. I
 do not see why we should not take the word in its plainest sense--that
@@ -5853,12 +5849,12 @@ second is not found in any extant version of that play.
 about the inheritance of their father's kingdom. Eteocles having gained
 possession of it, Polyneices brought up the famous seven kings, his
 allies, against Thebes, and fell in battle there by his brother's hand,
-whom he also killed. The verses quoted are from the _Phoenissæ_ of
+whom he also killed. The verses quoted are from the _Phoenissae_ of
 Euripides.
 
-5. Schweighäuser interprets this passage to mean that these men occupy
+5. Schweighaeuser interprets this passage to mean that these men occupy
 the public places as wild beasts do the mountains, to prey on others. If
-we might read [Greek: hôs ta thêria] for [Greek: hôs ta orê], we
+we might read [Greek: hos ta theria] for [Greek: hos ta ore], we
 should get a less obscure sense, "haunt the wilderness--I should say the
 public places--like wild beasts." The passage is clearly corrupt
 somewhere.
@@ -5888,7 +5884,7 @@ Stoic teaching, which admitted no existence that was not material. As a
 matter of fact, if any of the terms in this enumeration is to be
 understood as meaning soul or spirit, it will be fire rather than air.
 
-3. Gods and Powers.--[Greek: theôn kai Daimonôn].
+3. Gods and Powers.--[Greek: theon kai Daimonon].
 
 ## CHAPTER X.
 
@@ -5900,7 +5896,7 @@ way of showing their power of endurance.
 any rejection of Nero's coins, and those which have come down to us are
 of perfectly good quality. He was declared a public enemy by the Senate,
 and possibly it was decreed at the same time that his coins should be
-withdrawn from circulation. Dion, quoted by Wise (_apud_ Schweighäuser),
+withdrawn from circulation. Dion, quoted by Wise (_apud_ Schweighaeuser),
 reports that this was done in the case of Caligula, after the death of
 that tyrant.
 
@@ -5925,9 +5921,9 @@ Christianity (_e. g._, _Acts_ xxii. 4, and xix. 9, 23).
 ## CHAPTER IV.
 
 1. _Nor have any object in themselves._--Readers of Lotze will be
-reminded of the term Fürsichseinheit, used by him to denote the
+reminded of the term Fuersichseinheit, used by him to denote the
 self-centered quality of true Being. The Greek here is [Greek: ouk
-auta proêgoumena], [Greek: proêgoumena], being the word used in Bk. I. viii.
+auta proegoumena], [Greek: proegoumena], being the word used in Bk. I. viii.
 13, and Bk. III. v. 5, for the leading objects or obligations of man.
 
 2. _Would that I had you with me!_--In Long's translation the pronoun
@@ -5981,7 +5977,7 @@ was not improper to add the confirmation of an oath.
 
 2. Upton quotes allusions to these recitations from Juvenal, Martial,
 and Pliny. Authors would read their own works and invite crowds of
-flatterers to attend. Epict. _Diss._ iii. 23. (Schweighäuser) is a
+flatterers to attend. Epict. _Diss._ iii. 23. (Schweighaeuser) is a
 scornful diatribe against the pretentious people who held forth on
 these occasions, and the people who assembled to hear and applaud them.
 He contrasts with fashionable reciters and lecturers his own master,
@@ -5990,13 +5986,13 @@ to praise me_. And, verily, he spoke in such a way that every man who
 sat there thought that some one had accused him to Rufus, he so handled
 all that was going on, he so set before each man's eyes his faults."
 
-3. Into vulgarity--[Greek: eis idiôtismon].
+3. Into vulgarity--[Greek: eis idiotismon].
 
 ## CHAPTER II.
 
 1. The sophism, or puzzle, called the Liar, ran thus:--A liar says he
 lies: if it is true, he is no liar; and if he lies, he is speaking
-truth. The Quiescent ([Greek: ho hêsychazôn]) was an invention
+truth. The Quiescent ([Greek: ho hesychazon]) was an invention
 attributed by Cicero to Chrysippus (Acad. ii. 29). When asked of a
 gradually-increasing number of things to say when they ceased to be few
 and became many, he was wont to cease replying, or be "quiescent,"
@@ -6014,7 +6010,7 @@ company of evil men, fly without a look behind. And if in doing these
 things thy disease give ground, well; but if not, hold death the better
 choice, and depart from life."
 
-3. _The true athlete._--Literally, ascetic, [Greek: askêtês]; _i. e._,
+3. _The true athlete._--Literally, ascetic, [Greek: asketes]; _i. e._,
 practicer.
 
 4. The Dioscuri, or Twins, Castor and Pollux, were the patron deities of
@@ -6055,8 +6051,8 @@ being imposed on, or taken captive, by the outward shows of things.
 
 ## CHAPTER XX.
 
-1. The Greek is [Greek: Epeidê logos estin ho diarthrôn kai
-exergazomenos ta loipa]. [Greek: diarthroô] means, literally, to
+1. The Greek is [Greek: Epeide logos estin ho diarthron kai
+exergazomenos ta loipa]. [Greek: diarthroo] means, literally, to
 fashion with joints, hence constitute organically, with interdependence
 of parts. Long translates "analyze."
 
@@ -6081,7 +6077,7 @@ characteristic of philosophic writers of the Hellenistic period, which
 was by no means confined to the Epicureans.
 
 2. This passage is corrupt. I follow the reading adopted by
-Schweighäuser (after Wolf); but it may be noted that Schweighäuser's
+Schweighaeuser (after Wolf); but it may be noted that Schweighaeuser's
 translation follows another reading than that which he adopts in his
 text, viz.--[Greek: kinoumenou] (being moved), instead of [Greek:
 teinomenou] (being strained). The original, in all versions, is [Greek:
@@ -6120,8 +6116,8 @@ NOTES ON PRINCIPAL PHILOSOPHIC TERMS USED BY EPICTETUS.
 of which may not be apparent to the reader in a mere
 translation.]
 
-[Greek: Aidêmôn].--Pious, reverent, modest. The
-substantive is [Greek: aidôs], the German Ehrfurcht
+[Greek: Aidemon].--Pious, reverent, modest. The
+substantive is [Greek: aidos], the German Ehrfurcht
 (_Wilhelm Meister_, _Wanderjahre_, Bk. II. ch. ii.), a
 virtue in high regard with Epictetus, who generally
 mentions it in connection with that of "faithfulness,"
@@ -6129,19 +6125,19 @@ mentions it in connection with that of "faithfulness,"
 up when I behold a rainbow in the sky," the "natural
 piety" which he prays may abide with him in his old age
 seems to be just that moral sensitiveness or [Greek:
-aidôs] which passes into reverence and worship in the
+aidos] which passes into reverence and worship in the
 presence of certain things, and into shame and dread in
 that of others.
 
 [Greek: Apatheia].--Peace--that is, peace from passion,
-[Greek: pathê]. [Greek: Pathos] was any affection of
+[Greek: pathe]. [Greek: Pathos] was any affection of
 the mind causing joy or grief. As it appears from Bk. II.
 iii. I., [Greek: apatheia] is not, in Epictetus, the
 state of absolute freedom from these passions, but that
 of being able to master them so that they shall not
 overwhelm the inner man.
 
-[Greek: Diarthrôtikos].--That which _organizes_,
+[Greek: Diarthrotikos].--That which _organizes_,
 constitutes organically, forms into a system. From
 [Greek: arthron], a joint. The word "analyze," by which
 Long translates [Greek: diarthroun], seems to me wanting
@@ -6160,7 +6156,7 @@ sebomai]--"_to feel awe_ or _fear_ before God and man,
 especially when about to do something disgraceful"
 (_Liddell and Scott_); to worship, respect, reverence.
 
-[Greek: Hêgemonikon to].--The Ruling Faculty--that in
+[Greek: Hegemonikon to].--The Ruling Faculty--that in
 a man which chooses, determines, takes cognizance of good
 and evil, and sways the inferior faculties ([Greek:
 dynameis], powers) to its will. Lotze notes this
@@ -6173,13 +6169,13 @@ admiration by, to worship, to be taken up with a thing so
 as to lose the power of cool judgment. A frequent word in
 Epictetus, the sense of which is precisely rendered in
 Hor. _Sat._ I, 4, 28, "Hunc capit argenti splendor,
-_stupet_ Albius ære."
+_stupet_ Albius aere."
 
-[Greek: Idiôtês].--One of the vulgar, an unlettered
+[Greek: Idiotes].--One of the vulgar, an unlettered
 person; in Epictetus, one uninstructed in philosophy.
 Originally the word meant one who remained in private
 life, not filling any public office, or taking part in
-State affairs. A man might be an [Greek: idiôtês], or
+State affairs. A man might be an [Greek: idiotes], or
 "layman," with respect to any branch of science or art.
 
 [Greek: Kalos kai agathos].--The good and wise
@@ -6189,21 +6185,21 @@ is a word sometimes difficult to render. Curtius connects
 it etymologically with Sanscrit, _kalyas_; Gothic,
 _hails_=healthy.
 
-[Greek: Oiêsis].--"Conceit"--defined by Cicero as
+[Greek: Oiesis].--"Conceit"--defined by Cicero as
 "Opinatio"--intellectual self-sufficiency, the supposing
 one's self to know something when one does not. "The first
 business of a philosopher," says Epictetus, "is to cast
-away [Greek: oiêsis], for it is impossible that one can
+away [Greek: oiesis], for it is impossible that one can
 begin to learn the things that he thinks he knows"
 (_Diss._ II. xvii. 1.) He is not, in short, to be "wise in
 his own conceit."
 
-[Greek: orexis, ekklisis, hormê, aphormê].--Pursuit,
+[Greek: orexis, ekklisis, horme, aphorme].--Pursuit,
 avoidance, desire, aversion. According to Simplicius
 (Comment. _Ench._ i.), [Greek: orexis] and [Greek: ekklisis]
 were used by the Stoics to express the counterparts
-in outward action of the mental affections, [Greek: hormê]
-and [Greek: aphormê], and were regarded as consequent upon
+in outward action of the mental affections, [Greek: horme]
+and [Greek: aphorme], and were regarded as consequent upon
 the latter.
 
 [Greek: proairesis].--The Will; but as used in
@@ -6212,9 +6208,9 @@ faculty of volition. Literally, it means a choosing of
 one thing before another; in Epictetus, the power of
 deliberately resolving or purposing, the exercise of the
 reflective faculty being implied. It is hardly to be
-distinguished from [Greek: to hêgemonikon], _q. v._
+distinguished from [Greek: to hegemonikon], _q. v._
 
-[Greek: prolêpseis].--"Natural Conceptions." See
+[Greek: prolepseis].--"Natural Conceptions." See
 Preface, xxviii., xxix. The "primary truths" of Lord
 Herbert of Cherbury.
 
@@ -6240,7 +6236,7 @@ INDEX OF REFERENCES.
 [The references in the right-hand column are to the
 books, chapters, and verses of the _Dissertations_, to
 the chapters of the _Encheiridion_, and to the
-_Fragments_, in Schweighäuser's edition of Epictetus.]
+_Fragments_, in Schweighaeuser's edition of Epictetus.]
 
 ## BOOK I.
 
@@ -6332,7 +6328,7 @@ Chap. X. 1            _Frag._ LXX.
 Chap. X. 2            _Diss._ IV. v. 1-4.
 Chap. X. 3-5          _Diss._ IV. v. 8-21.
 Chap. X. 6            _Diss._ IV. v. 30-32.
-Chap. X. 7            _Diss._ IV. v.  { 33 to [Greek: agnômonos].
+Chap. X. 7            _Diss._ IV. v.  { 33 to [Greek: agnomonos].
 { 35-37.
 
 ## BOOK IV.
@@ -6351,7 +6347,7 @@ Chap. V.              _Ench._ XXXII.
 Chap. I. 1-5          _Ench._ XXXIII. 1-6,
 Chap. I. 6            _Diss._ III. xvi. 5-9.
 Chap. I. 7-16         _Ench._ XXXIII. 7-16.
-Chap. II. 1-4         _Diss._ II., xviii. 1-21 to [Greek: apothanontôn]
+Chap. II. 1-4         _Diss._ II., xviii. 1-21 to [Greek: apothanonton]
 Chap. II. 5, 6        _Diss._ II. xviii. 23-32.
 Chap. II. 7           _Diss._ IV. xii. 19-21.
 Chap. III. 1, 2       _Diss._ II. xii. 1-4.

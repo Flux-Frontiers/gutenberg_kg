@@ -4,14 +4,10 @@
 
 ---
 
-### THE TRIAL
-
-*Franz Kafka*
-
 Translation Copyright © by David Wyllie
 Translator contact email: dandelion@post.cz
 
-Chapter One
+## Chapter One
 
 Arrest--Conversation with Mrs. Grubach--Then Miss Bürstner
 
@@ -891,9 +887,9 @@ before he did he thought a little while about his behaviour, he was
 satisfied with it but felt some surprise that he was not more satisfied;
 he was seriously worried about Miss Bürstner because of the captain.
 
-Chapter Two
+## Chapter Two
 
-First Cross-examination
+*First Cross-examination*
 
 K. was informed by telephone that there would be a small hearing
 concerning his case the following Sunday. He was made aware that these
@@ -1421,9 +1417,9 @@ the noise of the assembly rose as it became lively once more and
 probably began to discuss these events as if making a scientific study
 of them.
 
-Chapter Three
+## Chapter Three
 
-In the empty Courtroom--The Student--The Offices
+*In the empty Courtroom--The Student--The Offices*
 
 Every day over the following week, K. expected another summons to
 arrive, he could not believe that his rejection of any more hearings had
@@ -2143,9 +2139,9 @@ time he had the chance, but whatever he did--and this was something on
 which he could advise himself--he wanted to spend all Sunday mornings in
 future better than he had spent this one.
 
-Chapter Four
+## Chapter Four
 
-Miss Bürstner's Friend
+*Miss Bürstner's Friend*
 
 For some time after this, K. found it impossible to exchange even just a
 few words with Miss Bürstner. He tried to reach her in many and various
@@ -2381,9 +2377,9 @@ followed his movements with glances, the absent minded glances to the
 side such as you make during a conversation. But these glances were
 heavy for K., and he rushed alongside the wall back into his own room.
 
-Chapter Five
+## Chapter Five
 
-The whip-man
+*The whip-man*
 
 One evening, a few days later, K. was walking along one of the corridors
 that separated his office from the main stairway--he was nearly the last
@@ -2596,9 +2592,9 @@ that he was checking them and then, as he saw that they would not dare
 to leave at the same time as himself, went home tired and with his mind
 numb.
 
-Chapter Six
+## Chapter Six
 
-K.'s uncle--Leni
+*K.'s uncle--Leni*
 
 One afternoon--K. was very busy at the time, getting the post
 ready--K.'s Uncle Karl, a small country land owner, came into the room,
@@ -3231,9 +3227,9 @@ and so brought the very man who you are dependent on closer to his
 death. And me, your own uncle, you leave me here in the rain--just feel
 this, I'm wet right through--waiting here for hours, sick with worry."
 
-Chapter Seven
+## Chapter Seven
 
-Lawyer--Manufacturer--Painter
+*Lawyer--Manufacturer--Painter*
 
 One winter morning--snow was falling in the dull light outside--K. was
 sitting in his office, already extremely tired despite the early hour.
@@ -4809,9 +4805,9 @@ he still had them. So he had the pictures taken to his office and locked
 them in the lowest drawer of his desk so that he could at least keep
 them safe from the deputy director's view for the next few days.
 
-Chapter Eight
+## Chapter Eight
 
-Block, the businessman--Dismissing the lawyer
+*Block, the businessman--Dismissing the lawyer*
 
 K. had at last made the decision to withdraw his defence from the
 lawyer. It was impossible to remove his doubts as to whether this was
@@ -5735,9 +5731,9 @@ lawyer is saying."
 
 _This chapter was left unfinished._
 
-Chapter Nine
+## Chapter Nine
 
-In the Cathedral
+*In the Cathedral*
 
 A very important Italian business contact of the bank had come to visit
 the city for the first time and K. was given the task of showing him
@@ -6464,9 +6460,9 @@ court," said the priest. "So why would I want anything from you? The
 court doesn't want anything from you. It accepts you when you come and
 it lets you go when you leave."
 
-Chapter Ten
+## Chapter Ten
 
-End
+*End*
 
 The evening before K.'s thirty-first birthday--it was about nine
 o'clock in the evening, the time when the streets were quiet--two men
@@ -6479,7 +6475,7 @@ door, dressed in black as they were, and slowly put on new gloves which
 stretched tightly over his fingers and behaved as if he were expecting
 visitors. He immediately stood up and looked at the gentlemen
 inquisitively. "You've come for me then, have you?" he asked. The
-gentlemen nodded, one of them indicated the other with the top hand now
+gentlemen nodded, one of them indicated the other with the top hat now
 in his hand. K. told them he had been expecting a different visitor. He
 went to the window and looked once more down at the dark street. Most
 of the windows on the other side of the street were also dark already,

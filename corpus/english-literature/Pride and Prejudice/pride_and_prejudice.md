@@ -4,22 +4,6 @@
 
 ---
 
-[Illustration:
-
-### GEORGE ALLEN PUBLISHER
-
-156 CHARING CROSS ROAD
-LONDON
-
-### RUSKIN HOUSE
-
-]
-
-[Illustration:
-
-_Reading Jane’s Letters._      _Chap 34._
-]
-
 PRIDE.
 and
 PREJUDICE
@@ -1070,7 +1054,7 @@ When Jane and Elizabeth were alone, the former, who had been cautious in
 her praise of Mr. Bingley before, expressed to her sister how very much
 she admired him.
 
-“He is just what a young-man ought to be,” said she, “sensible,
+“He is just what a young man ought to be,” said she, “sensible,
 good-humoured, lively; and I never saw such happy manners! so much ease,
 with such perfect good breeding!”
 
@@ -3294,7 +3278,7 @@ Elizabeth felt that she had neither been seeing him before, nor thinking
 of him since, with the smallest degree of unreasonable admiration. The
 officers of the ----shire were in general a very creditable,
 gentlemanlike set and the best of them were of the present party; but
-Mr, Wickham was as far beyond them all in person, countenance, air, and
+Mr. Wickham was as far beyond them all in person, countenance, air, and
 walk, as _they_ were superior to the broad-faced stuffy uncle Philips,
 breathing port wine, who followed them into the room.
 

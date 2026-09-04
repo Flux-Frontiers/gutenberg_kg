@@ -22,7 +22,7 @@ got on board the vessel between Cape Morgiou and Rion island.
 Immediately, and according to custom, the ramparts of Fort Saint-Jean
 were covered with spectators; it is always an event at Marseilles for a
 ship to come into port, especially when this ship, like the _Pharaon_,
-has been built, rigged, and laden at the old Phocee docks, and belongs
+has been built, rigged, and laden at the old Phocée docks, and belongs
 to an owner of the city.
 
 The ship drew on and had safely passed the strait, which some volcanic

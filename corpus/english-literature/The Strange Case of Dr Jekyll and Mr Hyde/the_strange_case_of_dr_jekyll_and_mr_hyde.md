@@ -111,7 +111,7 @@ boisterous and decided manner. At sight of Mr. Utterson, he sprang up
 from his chair and welcomed him with both hands. The geniality, as was
 the way of the man, was somewhat theatrical to the eye; but it reposed
 on genuine feeling. For these two were old friends, old mates both at
-school and college, both thorough respectors of themselves and of each
+school and college, both thorough respecters of themselves and of each
 other, and what does not always follow, men who thoroughly enjoyed each
 other’s company.
 
@@ -152,16 +152,16 @@ by questions.
 Six o’clock struck on the bells of the church that was so conveniently
 near to Mr. Utterson’s dwelling, and still he was digging at the
 problem. Hitherto it had touched him on the intellectual side alone;
-but now his imagination also was engaged, or rather enslaved; and as he
-lay and tossed in the gross darkness of the night and the curtained
-room, Mr. Enfield’s tale went by before his mind in a scroll of lighted
-pictures. He would be aware of the great field of lamps of a nocturnal
-city; then of the figure of a man walking swiftly; then of a child
-running from the doctor’s; and then these met, and that human
-Juggernaut trod the child down and passed on regardless of her screams.
-Or else he would see a room in a rich house, where his friend lay
-asleep, dreaming and smiling at his dreams; and then the door of that
-room would be opened, the curtains of the bed plucked apart, the
+but now his imagination also was engaged, or rather enslaved; and as
+he lay and tossed in the gross darkness of the night and the curtained
+room, Mr. Enfield’s tale went by before his mind in a scroll of
+lighted pictures. He would be aware of the great field of lamps of
+a nocturnal city; then of the figure of a man walking swiftly; then
+of a child running from the doctor’s; and then these met, and that
+human Juggernaut trod the child down and passed on regardless of her
+screams. Or else he would see a room in a rich house, where his friend
+lay asleep, dreaming and smiling at his dreams; and then the door of
+that room would be opened, the curtains of the bed plucked apart, the
 sleeper recalled, and lo! there would stand by his side a figure to
 whom power was given, and even at that dead hour, he must rise and do
 its bidding. The figure in these two phases haunted the lawyer all
@@ -177,11 +177,11 @@ curiosity to behold the features of the real Mr. Hyde. If he could but
 once set eyes on him, he thought the mystery would lighten and perhaps
 roll altogether away, as was the habit of mysterious things when well
 examined. He might see a reason for his friend’s strange preference or
-bondage (call it which you please) and even for the startling clause of
-the will. At least it would be a face worth seeing: the face of a man
-who was without bowels of mercy: a face which had but to show itself to
-raise up, in the mind of the unimpressionable Enfield, a spirit of
-enduring hatred.
+bondage (call it which you please) and even for the startling clauses
+of the will. At least it would be a face worth seeing: the face of
+a man who was without bowels of mercy: a face which had but to show
+itself to raise up, in the mind of the unimpressionable Enfield, a
+spirit of enduring hatred.
 
 From that time forward, Mr. Utterson began to haunt the door in the
 by-street of shops. In the morning before office hours, at noon when
@@ -318,7 +318,7 @@ firelight on the polished cabinets and the uneasy starting of the
 shadow on the roof. He was ashamed of his relief, when Poole presently
 returned to announce that Dr. Jekyll was gone out.
 
-“I saw Mr. Hyde go in by the old dissecting room, Poole,” he said. “Is
+“I saw Mr. Hyde go in by the old dissecting room door, Poole,” he said. “Is
 that right, when Dr. Jekyll is from home?”
 
 “Quite right, Mr. Utterson, sir,” replied the servant. “Mr. Hyde has a
@@ -343,7 +343,7 @@ and goes by the laboratory.”
 And the lawyer set out homeward with a very heavy heart. “Poor Harry
 Jekyll,” he thought, “my mind misgives me he is in deep waters! He was
 wild when he was young; a long while ago to be sure; but in the law of
-God, there is no statute of limitations. Ay, it must be that; the ghost
+God, there is no statute of limitations. Ah, it must be that; the ghost
 of some old sin, the cancer of some concealed disgrace: punishment
 coming, _pede claudo_, years after memory has forgotten and self-love
 condoned the fault.” And the lawyer, scared by the thought, brooded
@@ -360,7 +360,7 @@ to which poor Jekyll’s worst would be like sunshine. Things cannot
 continue as they are. It turns me cold to think of this creature
 stealing like a thief to Harry’s bedside; poor Harry, what a wakening!
 And the danger of it; for if this Hyde suspects the existence of the
-will, he may grow impatient to inherit. Ay, I must put my shoulders to
+will, he may grow impatient to inherit. Ah, I must put my shoulder to
 the wheel—if Jekyll will but let me,” he added, “if Jekyll will only
 let me.” For once more he saw before his mind’s eye, as clear as
 transparency, the strange clauses of the will.
@@ -584,7 +584,7 @@ otherwise empty, Mr. Hyde had only used a couple of rooms; but these
 were furnished with luxury and good taste. A closet was filled with
 wine; the plate was of silver, the napery elegant; a good picture hung
 upon the walls, a gift (as Utterson supposed) from Henry Jekyll, who
-was much of a connoisseur; and the carpets were of many plies and
+was much of a connoisseur; and the carpets were of many piles and
 agreeable in colour. At this moment, however, the rooms bore every mark
 of having been recently and hurriedly ransacked; clothes lay about the
 floor, with their pockets inside out; lock-fast drawers stood open; and
@@ -743,7 +743,7 @@ kept as many as he meant. Guest had often been on business to the
 doctor’s; he knew Poole; he could scarce have failed to hear of Mr.
 Hyde’s familiarity about the house; he might draw conclusions: was it
 not as well, then, that he should see a letter which put that mystery
-to right? and above all since Guest, being a great student and critic
+to rights? and above all since Guest, being a great student and critic
 of handwriting, would consider the step natural and obliging? The
 clerk, besides, was a man of counsel; he could scarce read so strange a
 document without dropping a remark; and by that remark Mr. Utterson
@@ -908,7 +908,7 @@ likewise sealed, and marked upon the cover as “not to be opened till
 the death or disappearance of Dr. Henry Jekyll.” Utterson could not
 trust his eyes. Yes, it was disappearance; here again, as in the mad
 will which he had long ago restored to its author, here again were the
-idea of a disappearance and the name of Henry Jekyll bracketted. But in
+idea of a disappearance and the name of Henry Jekyll bracketed. But in
 the will, that idea had sprung from the sinister suggestion of the man
 Hyde; it was set there with a purpose all too plain and horrible.
 Written by the hand of Lanyon, what should it mean? A great curiosity
@@ -961,7 +961,7 @@ sunset. The middle one of the three windows was half-way open; and
 sitting close beside it, taking the air with an infinite sadness of
 mien, like some disconsolate prisoner, Utterson saw Dr. Jekyll.
 
-“What! Jekyll!” he cried. “I trust you are better.”
+“What! Jekyll! Jekyll!” he cried. “I trust you are better.”
 
 “I am very low, Utterson,” replied the doctor drearily, “very low. It
 will not last long, thank God.”
@@ -1131,7 +1131,7 @@ heard him cry out upon the name of God; and _who’s_ in there instead of
 him, and _why_ it stays there, is a thing that cries to Heaven, Mr.
 Utterson!”
 
-“This is a very strange tale, Poole; this is rather a wild tale my
+“That is a very strange tale, Poole; this is rather a wild tale my
 man,” said Mr. Utterson, biting his finger. “Suppose it were as you
 suppose, supposing Dr. Jekyll to have been—well, murdered, what could
 induce the murderer to stay? That won’t hold water; it doesn’t commend
@@ -1347,7 +1347,7 @@ have said, and, but for the glazed presses full of chemicals, the most
 commonplace that night in London.
 
 Right in the middle there lay the body of a man sorely contorted and
-still twitching. They drew near on tiptoe, turned it on its back and
+still twitching. They drew near on tiptoe, turned it on his back and
 beheld the face of Edward Hyde. He was dressed in clothes far too large
 for him, clothes of the doctor’s bigness; the cords of his face still
 moved with a semblance of life, but life was quite gone; and by the
@@ -1914,7 +1914,7 @@ wholly evil, and the other was still the old Henry Jekyll, that
 incongruous compound of whose reformation and improvement I had already
 learned to despair. The movement was thus wholly toward the worse.
 
-Even at that time, I had not conquered my aversions to the dryness of a
+Even at that time, I had not conquered my aversion to the dryness of a
 life of study. I would still be merrily disposed at times; and as my
 pleasures were (to say the least) undignified, and I was not only well
 known and highly considered, but growing towards the elderly man, this
@@ -2008,7 +2008,7 @@ changed into something exquisitely thin and icy. Yes, I had gone to bed
 Henry Jekyll, I had awakened Edward Hyde. How was this to be explained?
 I asked myself; and then, with another bound of terror—how was it to be
 remedied? It was well on in the morning; the servants were up; all my
-drugs were in the cabinet—a long journey down two pairs of stairs,
+drugs were in the cabinet—a long journey down two pair of stairs,
 through the back passage, across the open court and through the
 anatomical theatre, from where I was then standing horror-struck. It
 might indeed be possible to cover my face; but of what use was that,

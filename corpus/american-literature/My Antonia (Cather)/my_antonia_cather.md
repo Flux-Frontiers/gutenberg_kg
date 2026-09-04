@@ -4,10 +4,6 @@
 
 ---
 
-MY ÁNTONIA
-
-By Willa Cather
-
 ### TO CARRIE AND IRENE MINER
 
 *In memory of affections old and true*
@@ -1513,7 +1509,7 @@ or cake for us every day, unless, for a change, she made my favourite
 pudding, striped with currants and boiled in a bag.
 
 Next to getting warm and keeping warm, dinner and supper were the most
-interesting things we had to think about. Our lives centred around
+interesting things we had to think about. Our lives centered around
 warmth and food and the return of the men at nightfall. I used to
 wonder, when they came in tired from the fields, their feet numb and
 their hands cracked and sore, how they could do all the chores so
@@ -5577,7 +5573,7 @@ avouched, nodding her horse-like head and rolling her eyes.
 Grandmother said she hadn’t a doubt of it.
 
 Certainly Cutter liked to have his wife think him a devil. In some way
-he depended upon the excitement He could arouse in her hysterical
+he depended upon the excitement he could arouse in her hysterical
 nature. Perhaps he got the feeling of being a rake more from his wife’s
 rage and amazement than from any experiences of his own. His zest in
 debauchery might wane, but never Mrs. Cutter’s belief in it. The

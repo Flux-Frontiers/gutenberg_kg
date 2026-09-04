@@ -4,26 +4,22 @@
 
 ---
 
-The Time Machine
-
-An Invention
-
 by H. G. Wells
 
 ### I.
 
-*Introduction*
+### Introduction
 
-The Time Traveller (for so it will be convenient to speak of him) was
-expounding a recondite matter to us. His pale grey eyes shone and
-twinkled, and his usually pale face was flushed and animated. The fire
-burnt brightly, and the soft radiance of the incandescent lights in the
-lilies of silver caught the bubbles that flashed and passed in our
-glasses. Our chairs, being his patents, embraced and caressed us rather
-than submitted to be sat upon, and there was that luxurious
-after-dinner atmosphere, when thought runs gracefully free of the
-trammels of precision. And he put it to us in this way—marking the
-points with a lean forefinger—as we sat and lazily admired his
+The Time Traveller (for so it will be convenient to speak of him)
+was expounding a recondite matter to us. His grey eyes shone and
+twinkled, and his usually pale face was flushed and animated. The
+fire burnt brightly, and the soft radiance of the incandescent
+lights in the lilies of silver caught the bubbles that flashed and
+passed in our glasses. Our chairs, being his patents, embraced and
+caressed us rather than submitted to be sat upon, and there was that
+luxurious after-dinner atmosphere, when thought runs gracefully free
+of the trammels of precision. And he put it to us in this way—marking
+the points with a lean forefinger—as we sat and lazily admired his
 earnestness over this new paradox (as we thought it) and his fecundity.
 
 “You must follow me carefully. I shall have to controvert one or two
@@ -106,7 +102,7 @@ instance, here is a portrait of a man at eight years old, another at
 fifteen, another at seventeen, another at twenty-three, and so on. All
 these are evidently sections, as it were, Three-Dimensional
 representations of his Four-Dimensioned being, which is a fixed and
-unalterable thing.
+unalterable thing.”
 
 “Scientific people,” proceeded the Time Traveller, after the pause
 required for the proper assimilation of this, “know very well that Time
@@ -121,7 +117,7 @@ line, therefore, we must conclude, was along the Time-Dimension.”
 “But,” said the Medical Man, staring hard at a coal in the fire, “if
 Time is really only a fourth dimension of Space, why is it, and why has
 it always been, regarded as something different? And why cannot we move
-in Time as we move about in the other dimensions of Space?”
+about in Time as we move about in the other dimensions of Space?”
 
 The Time Traveller smiled. “Are you so sure we can move freely in
 Space? Right and left we can go, backward and forward freely enough,
@@ -147,7 +143,7 @@ dimensions, are passing along the Time-Dimension with a uniform
 velocity from the cradle to the grave. Just as we should travel _down_
 if we began our existence fifty miles above the earth’s surface.”
 
-“But the great difficulty is this,” interrupted the Psychologist. ’You
+“But the great difficulty is this,” interrupted the Psychologist. “You
 _can_ move about in all directions of Space, but you cannot move about
 in Time.”
 
@@ -236,20 +232,20 @@ anecdote collapsed.
 The thing the Time Traveller held in his hand was a glittering metallic
 framework, scarcely larger than a small clock, and very delicately
 made. There was ivory in it, and some transparent crystalline
-substance. And now I must be explicit, for this that follows—unless his
-explanation is to be accepted—is an absolutely unaccountable thing. He
-took one of the small octagonal tables that were scattered about the
-room, and set it in front of the fire, with two legs on the hearthrug.
-On this table he placed the mechanism. Then he drew up a chair, and sat
-down. The only other object on the table was a small shaded lamp, the
-bright light of which fell upon the model. There were also perhaps a
-dozen candles about, two in brass candlesticks upon the mantel and
-several in sconces, so that the room was brilliantly illuminated. I sat
-in a low arm-chair nearest the fire, and I drew this forward so as to
-be almost between the Time Traveller and the fireplace. Filby sat
-behind him, looking over his shoulder. The Medical Man and the
-Provincial Mayor watched him in profile from the right, the
-Psychologist from the left. The Very Young Man stood behind the
+substance. And now I must be explicit, for this that follows—unless
+his explanation is to be accepted—is an absolutely unaccountable
+thing. He took one of the small octagonal tables that were scattered
+about the room, and set it in front of the fire, with two legs on the
+hearthrug. On this table he placed the mechanism. Then he drew up a
+chair, and sat down. The only other object on the table was a small
+shaded lamp, the bright light of which fell full upon the model. There
+were also perhaps a dozen candles about, two in brass candlesticks upon
+the mantel and several in sconces, so that the room was brilliantly
+illuminated. I sat in a low arm-chair nearest the fire, and I drew
+this forward so as to be almost between the Time Traveller and the
+fireplace. Filby sat behind him, looking over his shoulder. The Medical
+Man and the Provincial Mayor watched him in profile from the right,
+the Psychologist from the left. The Very Young Man stood behind the
 Psychologist. We were all on the alert. It appears incredible to me
 that any kind of trick, however subtly conceived and however adroitly
 done, could have been played upon us under these conditions.
@@ -338,7 +334,7 @@ think. _You_ can explain that. It’s presentation below the threshold,
 you know, diluted presentation.”
 
 “Of course,” said the Psychologist, and reassured us. “That’s a simple
-point of psychology. I should have thought of it. It’s plain enough,
+point in psychology. I should have thought of it. It’s plain enough,
 and helps the paradox delightfully. We cannot see it, nor can we
 appreciate this machine, any more than we can the spoke of a wheel
 spinning, or a bullet flying through the air. If it is travelling
@@ -2253,7 +2249,7 @@ thick darkness. I hesitated, and then, as I looked round me, I saw that
 the dust was less abundant and its surface less even. Further away
 towards the dimness, it appeared to be broken by a number of small
 narrow footprints. My sense of the immediate presence of the Morlocks
-revived at that. I felt that I was wasting my time in the academic
+revived at that. I felt that I was wasting my time in this academic
 examination of machinery. I called to mind that it was already far
 advanced in the afternoon, and that I had still no weapon, no refuge,
 and no means of making a fire. And then down in the remote blackness of
@@ -3080,7 +3076,7 @@ with him. But I am beginning now to fear that I must wait a lifetime.
 The Time Traveller vanished three years ago. And, as everybody knows
 now, he has never returned.
 
-Epilogue
+### Epilogue
 
 One cannot choose but wonder. Will he ever return? It may be that he
 swept back into the past, and fell among the blood-drinking, hairy

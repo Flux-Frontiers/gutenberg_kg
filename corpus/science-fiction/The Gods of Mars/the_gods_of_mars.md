@@ -5598,7 +5598,7 @@ buoyancy, but I was none the less determined to reach the outer world
 far in advance of them or die a death of my own choosing in event of
 failure.
 
-“Reverse?” screamed Xodar, behind me. “For the love of your first
+“Reverse!” screamed Xodar, behind me. “For the love of your first
 ancestor, reverse. We are at the shaft.”
 
 “Hold tight!” I screamed in reply. “Grasp the boy and hold tight—we are
@@ -9148,3 +9148,5 @@ best reopen the terrible wound within my heart.
 Ah! If I could but know one thing, what a burden of suspense would be
 lifted from my shoulders! But whether the assassin’s dagger reached one
 fair bosom or another, only time will divulge.
+
+*** x-header ***

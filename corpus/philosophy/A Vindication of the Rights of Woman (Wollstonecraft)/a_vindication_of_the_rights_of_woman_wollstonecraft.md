@@ -4,11 +4,32 @@
 
 ---
 
+Ver.12.12.00*END*
+
+This etext was produced by
+Amy E Zelmer  <a.zelmer@cqu.edu.au>
+Col Choat  <CChoat@sanderson.net.au>
+Sue Asscher  <asschers@dingoblue.net.au>
+
 A VINDICATION OF THE RIGHTS OF WOMAN,
 WITH STRICTURES ON POLITICAL AND MORAL SUBJECTS,
 BY MARY WOLLSTONECRAFT.
 
 WITH A BIOGRAPHICAL SKETCH OF THE AUTHOR.
+
+they now met under circumstances which permitted a mutual and just
+appreciation of character.  Their intimacy increased by regular and
+almost imperceptible degrees.  The partiality they conceived for
+each other was, according to her biographer, "In the most refined
+style of love.  It grew with equal advances in the mind of each.
+It would have been impossible for the most minute observer to have
+said who was before, or who after.  One sex did not take the
+priority which long established custom has awarded it, nor the
+other overstep that delicacy which is so severely imposed.  Neither
+party could assume to have been the agent or the patient, the
+toil-spreader or the prey in the affair.  When in the course of
+things the disclosure came, there was nothing in a manner for
+either to disclose to the other."
 
 Mary lived but a few months after her marriage, and died in
 child-bed; having given birth to a daughter who is now known to the
