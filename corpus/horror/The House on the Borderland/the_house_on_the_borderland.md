@@ -4,10 +4,6 @@
 
 ---
 
-### THE HOUSE ON THE BORDERLAND
-
-*William Hope Hodgson*
-
 _From the Manuscript discovered in 1877 by Messrs. Tonnison and
 Berreggnog in the Ruins that lie to the South of the Village of
 Kraighten, in the West of Ireland. Set out here, with Notes_.

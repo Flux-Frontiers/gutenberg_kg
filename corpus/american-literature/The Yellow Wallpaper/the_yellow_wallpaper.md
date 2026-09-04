@@ -4,10 +4,6 @@
 
 ---
 
-The Yellow Wallpaper
-
-By Charlotte Perkins Gilman
-
 It is very seldom that mere ordinary people like John and myself secure
 ancestral halls for the summer.
 

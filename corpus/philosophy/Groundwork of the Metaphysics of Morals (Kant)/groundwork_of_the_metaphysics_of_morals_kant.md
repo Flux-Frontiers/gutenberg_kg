@@ -4,10 +4,6 @@
 
 ---
 
-1785
-
-### FUNDAMENTAL PRINCIPLES OF THE METAPHYSIC OF MORALS
-
 by Immanuel Kant
 
 translated by Thomas Kingsmill Abbott

@@ -4,10 +4,6 @@
 
 ---
 
-### THE JUNGLE BOOK
-
-*By Rudyard Kipling*
-
 Mowgli’s Brothers
 
 Now Rann the Kite brings home the night

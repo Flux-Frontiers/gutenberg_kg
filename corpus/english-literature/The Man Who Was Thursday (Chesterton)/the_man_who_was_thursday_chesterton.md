@@ -4,10 +4,6 @@
 
 ---
 
-The Man Who Was Thursday
-
-A Nightmare
-
 by G. K. Chesterton
 
 ### A WILD, MAD, HILARIOUS AND PROFOUNDLY MOVING TALE

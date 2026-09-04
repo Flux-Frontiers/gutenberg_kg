@@ -4,10 +4,6 @@
 
 ---
 
-### BOSWELL'S LIFE OF JOHNSON
-
-*By James Boswell*
-
 Abridged and edited, with an introduction
 
 by Charles Grosvenor Osgood

@@ -4,12 +4,6 @@
 
 ---
 
-The Shadow Over Innsmouth
-
-_Horrifying Novelette_
-
-By H. P. LOVECRAFT
-
 _Unspeakable monstrousness over-hung
 the crumbling, stench-cursed town of
 Innsmouth ... and folks there had somehow

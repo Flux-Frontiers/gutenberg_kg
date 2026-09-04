@@ -4,10 +4,6 @@
 
 ---
 
-### DEAD SOULS
-
-*By Nikolai Vasilievich Gogol*
-
 Translated by D. J. Hogarth
 
 Introduction By John Cournos

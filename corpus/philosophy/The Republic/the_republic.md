@@ -4,10 +4,6 @@
 
 ---
 
-### THE REPUBLIC
-
-*By Plato*
-
 Translated by Benjamin Jowett
 
 Note: See also “The Republic” by Plato, Jowett, eBook #150

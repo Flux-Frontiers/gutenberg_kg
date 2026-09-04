@@ -4,12 +4,6 @@
 
 ---
 
-### OBLOMOV
-
-*By Ivan Goncharov*
-
-Translated From The Russian By C. J. Hogarth
-
 London: George Allen & Unwin, Ltd.
 
 1915

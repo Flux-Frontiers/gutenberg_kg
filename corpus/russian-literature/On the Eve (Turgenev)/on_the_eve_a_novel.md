@@ -4,10 +4,6 @@
 
 ---
 
-### ON THE EVE
-
-*A Novel*
-
 By Ivan Turgenev
 
 Translated from the Russian By Constance Garnett

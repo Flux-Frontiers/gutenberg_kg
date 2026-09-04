@@ -4,8 +4,6 @@
 
 ---
 
-### TYPEE A ROMANCE OF THE SOUTH SEAS
-
 By Herman Melville
 
 ### PREFACE

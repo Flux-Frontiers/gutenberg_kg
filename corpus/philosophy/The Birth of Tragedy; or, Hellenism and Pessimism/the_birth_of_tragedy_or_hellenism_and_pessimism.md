@@ -4,14 +4,6 @@
 
 ---
 
-### FRIEDRICH NIETZSCHE THE
-
-### BIRTH OF TRAGEDY OR
-
-_HELLENISM AND PESSIMISM_
-
-### TRANSLATED BY WM. A. HAUSSMANN, PH.D.
-
 The Complete Works of Friedrich Nietzsche
 
 The First Complete and Authorised English Translation

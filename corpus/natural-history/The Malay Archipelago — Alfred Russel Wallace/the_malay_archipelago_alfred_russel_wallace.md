@@ -4,10 +4,6 @@
 
 ---
 
-THE MALAY ARCHIPELAGO, VOLUME I. (of II.)
-
-By Alfred Russel Wallace
-
 The land of the orang-utan, and the bird of paradise.
 
 A narrative of travel, with sketches of man and nature.
@@ -23,10 +19,6 @@ To express my deep admiration
 For
 His genius and his works.
 
-310 specimens of Mammalia.
-100 specimens of Reptiles.
-8,050 specimens of Birds.
-7,500 specimens of Shells.
 13,100 specimens of Lepidoptera.
 83,200 specimens of Coleoptera.
 13,400 specimens of other Insects.

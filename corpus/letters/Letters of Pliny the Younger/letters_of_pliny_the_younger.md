@@ -4,10 +4,6 @@
 
 ---
 
-### LETTERS OF PLINY
-
-*By Gaius Plinius Caecilius Secundus*
-
 Translated by William Melmoth
 
 Revised by F. C. T. Bosanquet

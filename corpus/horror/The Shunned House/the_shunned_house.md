@@ -4,11 +4,6 @@
 
 ---
 
-The
-Shunned House
-
-By H. P. LOVECRAFT
-
 _A posthumous story of immense power, written by a master of weird
 fiction--a tale of a revolting horror in the cellar of an old
 house in New England_

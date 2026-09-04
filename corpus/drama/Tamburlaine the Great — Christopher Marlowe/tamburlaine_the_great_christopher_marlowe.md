@@ -4,10 +4,6 @@
 
 ---
 
-TAMBURLAINE THE GREAT,
-
-IN TWO PARTS.
-
 This is Part I.
 
 By Christopher Marlowe

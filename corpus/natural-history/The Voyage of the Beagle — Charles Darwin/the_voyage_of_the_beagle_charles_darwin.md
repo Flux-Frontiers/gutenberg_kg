@@ -4,8 +4,6 @@
 
 ---
 
-### THE VOYAGE OF THE BEAGLE BY CHARLES DARWIN
-
 About the online edition.
 
 The degree symbol is represented as "degs." Italics are represented as

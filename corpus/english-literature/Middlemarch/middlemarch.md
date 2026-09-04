@@ -4,10 +4,6 @@
 
 ---
 
-Middlemarch
-
-George Eliot
-
 New York and Boston
 H. M. Caldwell Company Publishers
 

@@ -4,10 +4,6 @@
 
 ---
 
-### A TALE OF TWO CITIES A STORY OF THE FRENCH REVOLUTION
-
-By Charles Dickens
-
 ## Book the First--Recalled to Life
 
 ## CHAPTER I.

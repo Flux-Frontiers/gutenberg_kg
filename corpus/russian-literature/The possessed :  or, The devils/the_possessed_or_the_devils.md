@@ -4,16 +4,6 @@
 
 ---
 
-THE POSSESSED (The Devils)
-
-A Novel In Three Parts
-
-By Fyodor Dostoevsky
-
-Translated From The Russian By Constance Garnett
-
-1916
-
 ### CONTENTS: * PART I * CHAPTER I. INTRODUCTORY * CHAPTER II. PRINCE HARRY. MATCHMAKING. * CHAPTER III. THE SINS OF OTHERS * CHAPTER IV. THE CRIPPLE * CHAPTER V. THE SUBTLE SERPENT
 
 * PART II

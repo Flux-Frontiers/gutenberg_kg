@@ -4,10 +4,6 @@
 
 ---
 
-### THE CLOUDS
-
-*By Aristophanes*
-
 Trans. William James Hickie
 
 * All Greek from the original edition has been

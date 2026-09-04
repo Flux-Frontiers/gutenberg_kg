@@ -4,10 +4,6 @@
 
 ---
 
-Siddhartha
-
-An Indian Tale
-
 by Herman Hesse
 
 ### FIRST PART

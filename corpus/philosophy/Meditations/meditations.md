@@ -4,10 +4,6 @@
 
 ---
 
-### MEDITATIONS
-
-*By Marcus Aurelius*
-
 ### INTRODUCTION
 
 MARCUS AURELIUS ANTONINUS was born on April 26, A.D. 121. His real name

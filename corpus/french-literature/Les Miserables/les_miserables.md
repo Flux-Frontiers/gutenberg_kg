@@ -4,10 +4,6 @@
 
 ---
 
-LES MISÉRABLES
-
-By Victor Hugo
-
 Translated by Isabel F. Hapgood
 
 Thomas Y. Crowell & Co.

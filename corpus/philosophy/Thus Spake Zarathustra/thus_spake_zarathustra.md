@@ -4,8 +4,6 @@
 
 ---
 
-### THUS SPAKE ZARATHUSTRA A BOOK FOR ALL AND NONE
-
 By Friedrich Nietzsche
 
 Translated By Thomas Common

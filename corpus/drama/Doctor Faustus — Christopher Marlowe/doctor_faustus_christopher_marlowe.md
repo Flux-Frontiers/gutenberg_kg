@@ -4,10 +4,6 @@
 
 ---
 
-### THE TRAGICAL HISTORY OF DOCTOR FAUSTUS
-
-*By Christopher Marlowe*
-
 From The Quarto of 1604
 
 Edited by The Rev. Alexander Dyce

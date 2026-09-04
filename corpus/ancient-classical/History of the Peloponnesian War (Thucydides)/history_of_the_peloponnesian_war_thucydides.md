@@ -4,10 +4,6 @@
 
 ---
 
-### THE HISTORY OF THE PELOPONNESIAN WAR
-
-*By Thucydides 431 BC*
-
 Translated by Richard Crawley
 
 With Permission

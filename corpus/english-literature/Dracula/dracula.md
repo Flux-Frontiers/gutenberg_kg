@@ -4,12 +4,6 @@
 
 ---
 
-### DRACULA
-
-_by_
-
-Bram Stoker
-
 ### NEW YORK GROSSET & DUNLAP
 
 _Publishers_

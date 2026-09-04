@@ -4,8 +4,6 @@
 
 ---
 
-### THE AUTOBIOGRAPHY OF CHARLES DARWIN
-
 From The Life and Letters of Charles Darwin
 
 By Charles Darwin

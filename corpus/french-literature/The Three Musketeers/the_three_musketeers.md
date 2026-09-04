@@ -4,10 +4,6 @@
 
 ---
 
-The Three Musketeers
-
-By Alexandre Dumas, Père
-
 First Volume of the D’Artagnan Series
 
 AUTHOR’S PREFACE
