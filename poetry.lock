@@ -1285,14 +1285,14 @@ wmi = ["wmi (>=1.5.1) ; platform_system == \"Windows\""]
 
 [[package]]
 name = "doc-kg"
-version = "0.22.0"
+version = "0.23.0"
 description = "A tool to build a semantically searchable knowledge graph from markdown and text documents"
 optional = false
 python-versions = "<3.14,>=3.12"
 groups = ["main"]
 files = [
-    {file = "doc_kg-0.22.0-py3-none-any.whl", hash = "sha256:9ad50cad83ac37518ff916b44342c72cbb1972034963b3ab4ebbfd21e8361a43"},
-    {file = "doc_kg-0.22.0.tar.gz", hash = "sha256:77ccf66da16dee6c79ce22cebd08d9c27f1ec907f5f9bb32c67f096cb258dcc0"},
+    {file = "doc_kg-0.23.0-py3-none-any.whl", hash = "sha256:4e2b58b2c8ffea1e53b78d98a3045e10775f4439784b92b54803defdb2643b5c"},
+    {file = "doc_kg-0.23.0.tar.gz", hash = "sha256:c8b3b76ff9883db3c27f78cf138e20ac1db7213b04920bf74022a186be4c4e97"},
 ]
 
 [package.dependencies]
@@ -2402,8 +2402,8 @@ quiltwright = {version = ">=0.7.0", optional = true, markers = "extra == \"viz3d
 rich = {version = ">=13.0.0,<15.0.0", optional = true, markers = "extra == \"semantic\""}
 sentence-transformers = {version = ">=5.4.1", optional = true, markers = "extra == \"semantic\""}
 sqlite-vec = [
-    {version = "0.1.9", optional = true, markers = "extra == \"sqlite-vec\""},
     {version = "0.1.9", optional = true, markers = "extra == \"semantic\""},
+    {version = "0.1.9", optional = true, markers = "extra == \"sqlite-vec\""},
 ]
 torch = {version = ">=2.5.1", optional = true, markers = "extra == \"semantic\""}
 transformers = {version = ">=5.5.0,<6", optional = true, markers = "extra == \"semantic\""}
@@ -7096,4 +7096,4 @@ viz3d = ["PyQt5", "kgmodule-utils", "markdown", "param", "pyvistaqt", "quiltwrig
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.12,<3.14"
-content-hash = "f284861e70503e7fb5a5fd23b91644602477430168ba24f99e1fe86b82b2325c"
+content-hash = "c6e34e2380a18f9b5eb721c339bbde05decade70a14a2fd91323d6bf7c89736c"
