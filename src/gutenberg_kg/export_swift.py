@@ -110,10 +110,17 @@ EMBED_DIM = 384
 #: nothing else is shipped.
 SEARCHED_KINDS = ("chunk", "section")
 
-#: Most chunks Browse should render as one chapter before the section is split
-#: into synthetic parts. 60 chunks is roughly 25 K characters. See
-#: :func:`window_oversized_sections`.
-BROWSE_WINDOW_CHUNKS = 60
+#: A section longer than this is past the scale of any chapter a reader sits
+#: down with, so Browse splits it. Sized against the corpus itself: a real
+#: chapter here runs to a median of 3,276 characters and a 75th percentile of
+#: 10,370, so 12,000 leaves genuine chapters whole — without a trigger this
+#: high, windowing shatters books that were already right (War and Peace's 370
+#: chapters became 1,118 fragments at a flat 3,500 ceiling).
+BROWSE_WINDOW_TRIGGER_CHARS = 12_000
+
+#: What a split section's parts aim for, close to the corpus's own median
+#: chapter. Only sections past :data:`BROWSE_WINDOW_TRIGGER_CHARS` are cut.
+BROWSE_WINDOW_PART_CHARS = 3_500
 
 #: Reciprocal-rank-fusion constant. Must match ``handler._RRF_K`` and doc_kg's
 #: ``_fused_seeds`` or the packs rank differently from the worker.
@@ -817,15 +824,30 @@ class _PassageSource:
 _PART_MARKER = "#part"
 
 
-def window_oversized_sections(con: sqlite3.Connection, *, max_chunks: int) -> int:
-    """Split sections too large to read as one chapter into synthetic parts.
+def window_oversized_sections(
+    con: sqlite3.Connection,
+    *,
+    trigger_chars: int,
+    part_chars: int = BROWSE_WINDOW_PART_CHARS,
+) -> int:
+    """Split sections too long to read as one chapter into synthetic parts.
 
     Browse lists ``kind='section'`` rows by ``char_start`` and slices the chunks
     between consecutive markers, so a book whose whole text sits under one
-    heading renders as a single scroll — 897 chunks for Franklin's
-    Autobiography, 2,847 for Boswell's *Johnson*. Works like those have no
+    heading renders as a single scroll — 373 K characters for Franklin's
+    Autobiography, 1.2 M for Boswell's *Johnson*. Works like those have no
     divisions the converter can find, so the markers have to be manufactured
     here.
+
+    Only sections past *trigger_chars* are touched, and those are divided into
+    equal parts of roughly *part_chars*, cut at chunk boundaries. The two
+    numbers have to differ: cutting everything down to part size fragments the
+    real chapters of books that were already correct, which is a worse result
+    than the monolith it fixes.
+
+    Measuring in characters rather than chunks keeps a part the same length to
+    read across genres, since chunk sizes vary (a tenth are under 268
+    characters, a tenth over 510) and the verse chunker's are smaller again.
 
     The extra rows carry no content and get no vector, which keeps this to the
     Browse tab: retrieval ranks chunks, and a marker with no text and no
@@ -833,19 +855,21 @@ def window_oversized_sections(con: sqlite3.Connection, *, max_chunks: int) -> in
     holding one still resolves.
 
     :param con: Open connection to a passage pack.
-    :param max_chunks: Chunks per part; a section at or under this is untouched.
+    :param trigger_chars: Only sections longer than this are split. Values
+        <= 0 disable windowing.
+    :param part_chars: Length each part aims for.
     :returns: Number of synthetic sections inserted.
     """
-    if max_chunks <= 0:
+    if trigger_chars <= 0 or part_chars <= 0:
         return 0
 
-    chunks: dict[str, list[int]] = {}
-    for file_path, char_start in con.execute(
-        "SELECT file_path, char_start FROM passages "
+    chunks: dict[str, list[tuple[int, int]]] = {}
+    for file_path, char_start, length in con.execute(
+        "SELECT file_path, char_start, length(content) FROM passages "
         "WHERE kind = 'chunk' AND file_path IS NOT NULL AND char_start IS NOT NULL "
         "ORDER BY file_path, char_start"
     ):
-        chunks.setdefault(file_path, []).append(char_start)
+        chunks.setdefault(file_path, []).append((char_start, length or 0))
 
     sections: dict[str, list[sqlite3.Row]] = {}
     con.row_factory = sqlite3.Row
@@ -869,35 +893,51 @@ def window_oversized_sections(con: sqlite3.Connection, *, max_chunks: int) -> in
     retitled: list[tuple[str, int]] = []
 
     for file_path, rows in sections.items():
-        starts = chunks.get(file_path)
-        if not starts:
+        spans = chunks.get(file_path)
+        if not spans:
             continue
+        starts = [start for start, _length in spans]
         for index, row in enumerate(rows):
             begin = bisect.bisect_left(starts, row["char_start"])
             if index + 1 < len(rows):
                 stop = bisect.bisect_left(starts, rows[index + 1]["char_start"])
             else:
                 stop = len(starts)
-            count = stop - begin
-            if count <= max_chunks:
+            if stop - begin < 2:
+                continue
+            total = sum(length for _start, length in spans[begin:stop])
+            if total <= trigger_chars:
                 continue
 
-            parts = math.ceil(count / max_chunks)
-            per_part = math.ceil(count / parts)
+            parts = math.ceil(total / part_chars)
+            target = total / parts
             base = row["node_title"] or row["name"] or row["book"] or "Untitled"
+
+            # Cut where the running length crosses each part's share, so parts
+            # come out even rather than leaving a stub at the end.
+            boundaries: list[int] = []
+            running = 0
+            wanted = 1
+            for offset in range(begin, stop):
+                running += spans[offset][1]
+                if wanted < parts and running >= target * wanted:
+                    boundaries.append(offset + 1)
+                    wanted += 1
+            boundaries = [b for b in boundaries if begin < b < stop][: parts - 1]
+            if not boundaries:
+                continue
+
+            parts = len(boundaries) + 1
             retitled.append((f"{base} (Part 1 of {parts})", row["rowid"]))
-            for part in range(2, parts + 1):
-                offset = begin + (part - 1) * per_part
-                if offset >= stop:
-                    break
+            for number, offset in enumerate(boundaries, start=2):
                 added.append(
                     (
-                        f"{row['id']}{_PART_MARKER}{part}",
+                        f"{row['id']}{_PART_MARKER}{number}",
                         row["kg_name"],
                         row["kg_kind"],
                         row["name"],
                         row["title"],
-                        f"{base} (Part {part} of {parts})",
+                        f"{base} (Part {number} of {parts})",
                         row["author"],
                         row["genre"],
                         row["book"],
@@ -922,7 +962,7 @@ def build_passage_pack(
     dtype: str = "int8",
     max_chars: int = 0,
     with_vectors: bool = True,
-    browse_window: int = BROWSE_WINDOW_CHUNKS,
+    browse_window: int = BROWSE_WINDOW_TRIGGER_CHARS,
     progress=None,
 ) -> PackStats:
     """Write a passage pack: content, an FTS5 index over it, and the vectors.
@@ -1002,10 +1042,10 @@ def build_passage_pack(
             stats.passages += written
             say(f"  {source.kg_name}: {written:,} passages")
 
-        windowed = window_oversized_sections(con, max_chunks=browse_window)
+        windowed = window_oversized_sections(con, trigger_chars=browse_window)
         if windowed:
             stats.passages += windowed
-            say(f"  {windowed:,} synthetic Browse sections (>{browse_window} chunks)")
+            say(f"  {windowed:,} synthetic Browse sections (split over {browse_window:,} chars)")
 
         # Synthetic sections are deliberately excluded: they have no source
         # vector, and counting them would report thousands of phantom misses.
