@@ -105,6 +105,55 @@ London,
 
 _July_, 1912.
 
+### CONTENTS INTRODUCTORY
+
+The origin of the present investigation, p. 1.--Its subject-matter,
+p. 1 _sq._--Its practical usefulness, p. 2 _sq._
+
+## CHAPTER I THE EMOTIONAL ORIGIN OF MORAL JUDGMENTS
+
+The moral concepts essentially generalisations of tendencies in
+certain phenomena to call forth moral emotions, pp. 4-6.--The assumed
+universality or "objectivity" of moral judgments, p. 6 _sq._--Theories
+according to which the moral predicates derive all their import from
+reason, "theoretical" or "practical," p. 7 _sq._--Our tendency to
+objectivise moral judgments, no sufficient ground for referring them
+to the province of reason, p. 8 _sq._--This tendency partly due to the
+comparatively uniform nature of the moral consciousness, p.
+9.--Differences of moral estimates resulting from circumstances of a
+purely intellectual character, pp. 9-11.--Differences of an emotional
+origin, pp. 11-13.--Quantitative, as well as qualitative, differences,
+p. 13.--The tendency to objectivise moral judgments partly due to the
+authority ascribed to moral rules, p. 14.--The origin and nature of
+this authority, pp. 14-17.--General moral truths non-existent, p. 17
+_sq._--The object of scientific ethics not to fix rules for human
+conduct, but to study the moral consciousness as a fact, p. 18.--The
+supposed dangers of ethical subjectivism, pp. 18-20.
+
+## CHAPTER II THE NATURE OF THE MORAL EMOTIONS
+
+The moral emotions of two kinds: disapproval, or indignation, and
+approval, p. 21.--The moral emotions retributive emotions, disapproval
+forming a sub-species of resentment, and approval a sub-species of
+retributive kindly emotion, _ibid._--Resentment an aggressive attitude
+of mind toward a cause of pain, p. 22 _sq._--Dr. Steinmetz's
+suggestion that revenge is essentially rooted in the feeling of power
+and superiority, and originally "undirected," pp. 23-27.--The true
+import of the facts adduced as evidence for this hypothesis,
+pp. 27-30.--The collective responsibility usually involved in the
+institution of the blood-feud, pp. 30-32.--Explanation of it,
+pp. 32-35.-- {viii} The strong tendency to discrimination which
+characterises resentment not wholly lost even behind the veil of
+common responsibility, p. 35 _sq._--Revenge among the lower animals,
+p. 37 _sq._--Violation of the "self-feeling" a common incentive to
+resentment, p. 38 _sq._--But the reaction of the wounded
+"self-feeling" not necessarily, in the first place, concerned with the
+infliction of pain, p. 39 _sq._--Revenge only a link in a chain of
+emotional phenomena for which "non-moral resentment" may be used as a
+common name, p. 40.--The origin of these phenomena, pp. 40-42.--Moral
+indignation closely connected with anger, p. 42 _sq._--Moral
+indignation, like non-moral resentment, a reactionary attitude of mind
+directed towards the cause of inflicted pain, though the reaction
 sometimes turns against innocent persons, pp. 43-48.--In their
 administration of justice gods still more indiscriminate than men,
 pp. 48-51.--Reasons for this, p. 51 _sq._--Sin looked upon in the light

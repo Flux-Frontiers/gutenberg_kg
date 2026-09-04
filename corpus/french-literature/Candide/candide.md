@@ -146,6 +146,38 @@ lightness, not inappropriate to a philosophic tale. In Voltaire's
 fingers, as Anatole France has said, the pen runs and laughs. PHILIP
 LITTELL.
 
+### CONTENTS CHAPTER                                                       PAGE
+
+I. How Candide was brought up in a
+Magnificent Castle, and how he was
+expelled thence                                          1
+
+II. What became of Candide among the
+Bulgarians                                               5
+
+III. How Candide made his escape from the
+Bulgarians, and what afterwards became
+of him                                                   9
+
+IV. How Candide found his old Master
+Pangloss, and what happened to them                     13
+
+V. Tempest, Shipwreck, Earthquake, and
+what became of Doctor Pangloss,
+Candide, and James the Anabaptist                       18
+
+VI. How the Portuguese made a Beautiful
+Auto-da-fé, to prevent any further
+Earthquakes: and how Candide was
+publicly whipped                                        23
+
+VII. How the Old Woman took care of
+Candide, and how he found the Object
+he loved                                                26
+
+VIII. The History of Cunegonde                                30
+
+IX. What became of Cunegonde, Candide,
 the Grand Inquisitor, and the Jew                       35
 
 X. In what distress Candide, Cunegonde,

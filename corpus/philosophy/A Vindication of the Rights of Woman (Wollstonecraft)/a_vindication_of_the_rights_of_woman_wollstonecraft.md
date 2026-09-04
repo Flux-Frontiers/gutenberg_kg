@@ -17,6 +17,165 @@ BY MARY WOLLSTONECRAFT.
 
 WITH A BIOGRAPHICAL SKETCH OF THE AUTHOR.
 
+CONTENTS.
+
+INTRODUCTION.
+
+## CHAPTER 1.  THE RIGHTS AND INVOLVED DUTIES OF MANKIND CONSIDERED. CHAPTER 2.  THE PREVAILING OPINION OF A SEXUAL CHARACTER DISCUSSED.
+
+## CHAPTER 3.  THE SAME SUBJECT CONTINUED. CHAPTER 4.  OBSERVATIONS ON THE STATE OF DEGRADATION TO WHICH WOMAN IS REDUCED BY VARIOUS CAUSES.
+
+## CHAPTER 5.  ANIMADVERSIONS ON SOME OF THE WRITERS WHO HAVE RENDERED WOMEN OBJECTS OF PITY, BORDERING ON CONTEMPT.
+
+## CHAPTER 6.  THE EFFECT WHICH AN EARLY ASSOCIATION OF IDEAS HAS UPON THE CHARACTER.
+
+## CHAPTER 7.  MODESTY.  COMPREHENSIVELY CONSIDERED, AND NOT AS A SEXUAL VIRTUE.
+
+## CHAPTER 8.  MORALITY UNDERMINED BY SEXUAL NOTIONS OF THE IMPORTANCE OF A GOOD REPUTATION
+
+## CHAPTER 9. OF THE PERNICIOUS EFFECTS WHICH ARISE FROM THE UNNATURAL DISTINCTIONS ESTABLISHED IN SOCIETY.
+
+## CHAPTER 10.  PARENTAL AFFECTION. CHAPTER 11.  DUTY TO PARENTS
+
+## CHAPTER 12.  ON NATIONAL EDUCATION CHAPTER 13.  SOME INSTANCES OF THE FOLLY WHICH THE IGNORANCE OF WOMEN GENERATES; WITH CONCLUDING REFLECTIONS ON THE MORAL IMPROVEMENT THAT A REVOLUTION IN FEMALE MANNERS MAY NATURALLY BE EXPECTED TO PRODUCE.
+
+8 April, 2001
+
+A BRIEF SKETCH OF THE LIFE OF MARY WOLLSTONECRAFT.
+
+M. Wollstonecraft was born in 1759.  Her father was so great a
+wanderer, that the place of her birth is uncertain; she supposed,
+however, it was London, or Epping Forest:  at the latter place she
+spent the first five years of her life.  In early youth she
+exhibited traces of exquisite sensibility, soundness of
+understanding, and decision of character; but her father being a
+despot in his family, and her mother one of his subjects, Mary,
+derived little benefit from their parental training.  She received
+no literary instructions but such as were to be had in ordinary day
+schools.  Before her sixteenth year she became acquainted with Mr.
+Clare a clergyman, and Miss Frances Blood; the latter, two years
+older than herself; who possessing good taste and some knowledge of
+the fine arts, seems to have given the first impulse to the
+formation of her character.  At the age of nineteen, she left her
+parents, and resided with a Mrs. Dawson for two years; when she
+returned to the parental roof to give attention to her mother,
+whose ill health made her presence necessary.  On the death of her
+mother, Mary bade a final adieu to her father's house, and became
+the inmate of F. Blood; thus situated, their intimacy increased,
+and a strong attachment was reciprocated.  In 1783 she commenced a
+day school at Newington green, in conjunction with her friend, F.
+Blood.  At this place she became acquainted with Dr. Price, to whom
+she became strongly attached; the regard was mutual.
+
+It is said that she became a teacher from motives of benevolence,
+or rather philanthropy, and during the time she continued in the
+profession, she gave proof of superior qualification for the
+performance of its arduous and important duties.  Her friend and
+coadjutor married and removed to Lisbon, in Portugal, where she
+died of a pulmonary disease; the symptoms of which were visible
+before her marriage.  So true was Mary's attachment to her, that
+she entrusted her school to the care of others, for the purpose of
+attending Frances in her closing scene.  She aided, as did Dr.
+Young, in "Stealing Narcissa a grave."  Her mind was expanded by
+this residence in a foreign country, and though clear of religious
+bigotry before, she took some instructive lessons on the evils of
+superstition, and intolerance.
+
+On her return she found the school had suffered by her absence, and
+having previously decided to apply herself to literature, she now
+resolved to commence.  In 1787 she made, or received, proposals
+from Johnson, a publisher in London, who was already acquainted
+with her talents as an author.  During the three subsequent years,
+she was actively engaged, more in translating, condensing, and
+compiling, than in the production of original works.  At this time
+she laboured under much depression of spirits, for the loss of her
+friend; this rather increased, perhaps, by the publication of
+"Mary, a novel," which was mostly composed of incidents and
+reflections connected with their intimacy.
+
+The pecuniary concerns of her father becoming embarrassed, Mary
+practised a rigid economy in her expenditures, and with her savings
+was enabled to procure her sisters and brothers situations, to
+which without her aid, they could not have had access; her father
+was sustained at length from her funds; she even found means to
+take under her protection an orphan child.
+
+She had acquired a facility in the arrangement and expression of
+thoughts, in her avocation of translator, and compiler, which was
+no doubt of great use to her afterward.  It was not long until she
+had occasion for them.  The eminent Burke produced his celebrated
+"Reflections on the Revolution in France."  Mary full of sentiments
+of liberty, and indignant at what she thought subversive of it,
+seized her pen and produced the first attack upon that famous work.
+It succeeded well, for though intemperate and contemptuous, it was
+vehemently and impetuously eloquent; and though Burke was beloved
+by the enlightened friends of freedom, they were dissatisfied and
+disgusted with what they deemed an outrage upon it.
+
+It is said that Mary, had not wanted confidence in her own powers
+before, but the reception this work met from the public, gave her
+an opportunity of judging what those powers were, in the estimation
+of others.  It was shortly after this, that she commenced the work
+to which these remarks are prefixed.  What are its merits will be
+decided in the judgment of each reader; suffice it to say she
+appears to have stept forth boldly, and singly, in defence of that
+half of the human race, which by the usages of all society, whether
+savage or civilized, have been kept from attaining their proper
+dignity--their equal rank as rational beings.  It would appear that
+the disguise used in placing on woman the silken fetters which
+bribed her into endurance, and even love of slavery, but increased
+the opposition of our authoress:  she would have had more patience
+with rude, brute coercion, than with that imposing gallantry,
+which, while it affects to consider woman as the pride, and
+ornament of creation, degrades her to a toy--an appendage--a
+cypher.  The work was much reprehended, and as might well be
+expected, found its greatest enemies in the pretty soft
+creatures--the spoiled children of her own sex.  She accomplished
+it in six weeks.
+
+In 1792 she removed to Paris, where she became acquainted with
+Gilbert Imlay, of the United States.  And from this acquaintance
+grew an attachment, which brought the parties together, without
+legal formalities, to which she objected on account of some family
+embarrassments, in which he would thereby become involved.  The
+engagement was however considered by her of the most sacred nature,
+and they formed the plan of emigrating to America, where they
+should be enabled to accomplish it.  These were the days of
+Robespierrean cruelty, and Imlay left Paris for Havre, whither
+after a time Mary followed him.  They continued to reside there,
+until he left Havre for London, under pretence of business, and
+with a promise of rejoining her soon at Paris, which however he did
+not, but in 1795 sent for her to London.  In the mean time she had
+become the mother of a female child, whom she called Frances in
+commemoration of her early friendship.
+
+Before she went to England, she had some gloomy forebodings that
+the affections of Imlay, had waned, if they were not estranged from
+her; on her arrival, those forebodings were sorrowfully confirmed.
+His attentions were too formal and constrained to pass unobserved
+by her penetration, and though he ascribed his manner, and his
+absence, to business duties, she saw his affection for her was only
+something to be remembered.  To use her own expression, "Love, dear
+delusion!  Rigorous reason has forced me to resign; and now my
+rational prospects are blasted, just as I have learned to be
+contented with rational enjoyments."  To pretend to depict her
+misery at this time would be futile; the best idea can be formed of
+it from the fact that she had planned her own destruction, from
+which Imlay prevented her.  She conceived the idea of suicide a
+second time, and threw herself into the Thames; she remained in the
+water, until consciousness forsook her, but she was taken up and
+resuscitated.  After divers attempts to revive the affections of
+Imlay, with sundry explanations and professions on his part,
+through the lapse of two years, she resolved finally to forgo all
+hope of reclaiming him, and endeavour to think of him no more in
+connexion with her future prospects.  In this she succeeded so
+well, that she afterwards had a private interview with him, which
+did not produce any painful emotions.
+
+In 1796 she revived or improved an acquaintance which commenced
+years before with Wm. Godwin, author of "Political Justice," and
+other works of great notoriety.  Though they had not been
+favourably impressed with each other on their former acquaintance,
 they now met under circumstances which permitted a mutual and just
 appreciation of character.  Their intimacy increased by regular and
 almost imperceptible degrees.  The partiality they conceived for

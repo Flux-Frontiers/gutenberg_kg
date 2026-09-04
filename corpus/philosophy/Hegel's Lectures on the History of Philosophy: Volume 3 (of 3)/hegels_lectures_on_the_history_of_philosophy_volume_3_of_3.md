@@ -32,6 +32,146 @@ London, E.C.4_
 _Reprinted by lithography in Great Britain by
 Jarrold and Sons Limited, Norwich_
 
+### CONTENTS PART TWO
+
+### PHILOSOPHY OF THE MIDDLE AGES PAGE
+
+INTRODUCTION                                                        1
+
+1. The Idea of Christianity                                      1
+
+2. The Fathers and Heterodoxies                                 10
+
+3. Church and State                                             23
+
+### SECTION ONE ARABIAN PHILOSOPHY                                                 26
+
+A. The Philosophy of the Medabberim                                30
+
+B. Commentators of Aristotle                                       34
+
+C. Jewish Philosophers: Moses Maimonides                           35
+
+### SECTION TWO THE SCHOLASTIC PHILOSOPHY                                          37
+
+A. Relationship of the Scholastic Philosophy to Christianity       45
+
+B. General Historical Points of View                               60
+
+1. The Building up of Dogmas on Metaphysical Grounds            61
+_a._ Anselm                                                   61
+_b._ Abelard                                                  67
+
+2. Methodical Representation of the Doctrinal System of the
+Church                                                      68
+_a._ Peter Lombard                                            69
+_b._ Thomas Aquinas                                           71
+_c._ John Duns Scotus                                         72
+
+3. Acquaintanceship with Aristotelian Writings                  73
+_a._ Alexander of Hales                                       73
+_b._ Albertus Magnus                                          75
+
+4. Opposition between Realism and Nominalism                    77
+_a._ Roscelinus                                               78
+_b._ Walter of Mortagne                                       80
+_c._ William Occam                                            82
+_d._ Buridan                                                  85
+
+5. Formal Dialectic                                             86
+_a._ Julian, Archbishop of Toledo                             87
+_b._ Paschasius Radbertus                                     88
+
+6. Mystics                                                      91
+_a._ John Charlier                                            91
+_b._ Raymundus of Sabunde                                     91
+_c._ Roger Bacon                                              92
+_d._ Raymundus Lullus                                         92
+
+C. General Standpoint of the Scholastics                           94
+
+### SECTION THREE REVIVAL OF THE SCIENCES                                           108
+
+A. Study of the Ancients                                          109
+
+1. Pomponatius                                                 111
+
+2. Bessarion, Ficinus, Picus                                   112
+
+3. Gassendi, Lipsius, Reuchlin, Helmont                        112
+
+4. Ciceronian Popular Philosophy                               113
+
+B. Certain Attempts in Philosophy                                 115
+
+1. Cardanus                                                    116
+
+2. Campanella                                                  119
+
+3. Bruno                                                       119
+
+4. Vanini                                                      137
+
+5. Petrus Ramus                                                143
+
+C. The Reformation                                                146
+
+## PART THREE MODERN PHILOSOPHY
+
+INTRODUCTION                                                      157
+
+### SECTION ONE MODERN PHILOSOPHY IN ITS FIRST STATEMENT                          170
+
+A. Bacon                                                          170
+
+B. Jacob Boehme                                                   188
+
+### SECTION TWO PERIOD OF THE THINKING UNDERSTANDING                              217
+
+## CHAPTER I.—THE METAPHYSICS OF THE UNDERSTANDING                   220
+
+A. First Division                                                 220
+
+1. Descartes                                                   220
+
+2. Spinoza                                                     252
+
+3. Malebranche                                                 290
+
+B. Second Division                                                295
+
+1. Locke                                                       295
+
+2. Hugo Grotius                                                313
+
+3. Thomas Hobbes                                               315
+
+4. Cudworth, Clarke, Wollaston                                 319
+
+5. Puffendorf                                                  321
+
+6. Newton                                                      322
+
+C. Third Division                                                 325
+
+1. Leibnitz                                                    325
+
+2. Wolff                                                       348
+
+3. German Popular Philosophy                                   356
+
+## CHAPTER II.—TRANSITION PERIOD                                     360
+
+A. Idealism and Scepticism                                        363
+
+1. Berkeley                                                    364
+
+2. Hume                                                        369
+
+B. Scottish Philosophy                                            375
+
+1. Thomas Reid                                                 376
+
 2. James Beattie                                               377
 
 3. James Oswald                                                377
