@@ -11,6 +11,8 @@ from gutenberg_kg.gutenberg import (
     _detect_toc,
     _find_book_by_id,
     _is_heading,
+    _looks_like_story_title,
+    _repeated_title_lines,
     _skip_front_matter,
     _survey_book_dir,
     parse_catalog,
@@ -971,3 +973,109 @@ def test_catalog_sync_title_matches_directory_so_audit_stays_clean(tmp_path, mon
 
     dg.run_catalog_sync(["drama"])
     assert parse_catalog(str(catalogs / "drama.txt")) == [(1754, "The sea-gull")]
+
+
+# ---------------------------------------------------------------------------
+# Phase 2: heading shapes the converter used to walk past
+# ---------------------------------------------------------------------------
+
+
+def test_is_heading_chapter_word_numeral():
+    result = _is_heading("Chapter One")
+    assert result is not None
+    assert result[0] == 2
+
+
+def test_is_heading_chapter_word_numeral_all_caps_compound():
+    result = _is_heading("CHAPTER TWENTY-THREE")
+    assert result is not None
+    assert result[0] == 2
+
+
+def test_is_heading_part_word_numeral_with_title():
+    result = _is_heading("PART ONE--The Old Buccaneer")
+    assert result is not None
+    assert result[0] == 2
+
+
+def test_is_heading_word_numeral_needs_a_separator():
+    """ "Chapter One" is a heading; "Chapter One was ..." is a sentence."""
+    assert _is_heading("Chapter One was the longest of them all") is None
+
+
+def test_is_heading_ignores_spelled_out_volume():
+    """A publisher's series label on a title page, not a division.
+
+    Matching it would also stop _skip_title_page, which reads a recognised
+    heading as the end of the front matter.
+    """
+    assert _is_heading("Volume Seventeen") is None
+
+
+def test_is_heading_title_case_front_matter():
+    for line in ("Preface", "Introduction.", "Epilogue"):
+        result = _is_heading(line)
+        assert result is not None, line
+        assert result[0] == 3
+
+
+def test_is_heading_front_matter_word_must_stand_alone():
+    assert _is_heading("Introduction to the study of history") is None
+
+
+# ---------------------------------------------------------------------------
+# _repeated_title_lines
+# ---------------------------------------------------------------------------
+
+
+def _titled(*titles):
+    lines = ["CHAPTER I", "", "Some opening prose here.", ""]
+    for title in titles:
+        lines += [title, "", "Body text for that piece.", ""]
+    return lines
+
+
+def test_repeated_title_lines_promotes_a_templated_run():
+    lines = _titled(
+        "The Story of the Merchant and the Genius",
+        "The Story of the Fisherman",
+        "The Story of the Husband and the Parrot",
+        "The Story of the Envious Man",
+        "The Story of the Three Calenders",
+    )
+    found = _repeated_title_lines(lines, 0, range(0))
+    assert len(found) == 5
+    assert all(lines[i].startswith("The Story of") for i in found)
+
+
+def test_repeated_title_lines_needs_the_threshold():
+    lines = _titled(
+        "The Story of the Merchant and the Genius",
+        "The Story of the Fisherman",
+        "The Story of the Husband and the Parrot",
+    )
+    assert _repeated_title_lines(lines, 0, range(0)) == set()
+
+
+def test_repeated_title_lines_ignores_one_line_repeated():
+    """Don Quixote prints "Full Size" under 260 plates; none is a title."""
+    lines = _titled(*["Full Size"] * 8)
+    assert _repeated_title_lines(lines, 0, range(0)) == set()
+
+
+def test_repeated_title_lines_skips_the_toc_region():
+    lines = _titled(
+        "The Story of the Merchant and the Genius",
+        "The Story of the Fisherman",
+        "The Story of the Husband and the Parrot",
+        "The Story of the Envious Man",
+        "The Story of the Three Calenders",
+    )
+    assert _repeated_title_lines(lines, 0, range(0, len(lines))) == set()
+
+
+def test_looks_like_story_title_rejects_prose_and_captions():
+    assert _looks_like_story_title("The Story of the Fisherman")
+    assert not _looks_like_story_title("Frontispiece Volume One")
+    assert not _looks_like_story_title("he went down to the sea again")
+    assert not _looks_like_story_title("She turned and walked away slowly.")
