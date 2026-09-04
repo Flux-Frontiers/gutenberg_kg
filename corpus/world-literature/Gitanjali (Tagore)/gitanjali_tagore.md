@@ -4,10 +4,6 @@
 
 ---
 
-Gitanjali
-
-Song Offerings
-
 by Rabindranath Tagore
 
 A collection of prose translations made by the author from the original

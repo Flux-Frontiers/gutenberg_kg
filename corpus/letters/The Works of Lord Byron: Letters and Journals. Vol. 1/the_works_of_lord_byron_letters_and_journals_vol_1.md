@@ -4,10 +4,6 @@
 
 ---
 
-### THE WORKS OF
-
-LORD BYRON.
-
 A NEW, REVISED AND ENLARGED EDITION, WITH ILLUSTRATIONS.
 
 Letters and Journals. Vol. I.

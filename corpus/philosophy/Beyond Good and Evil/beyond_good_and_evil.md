@@ -4,10 +4,6 @@
 
 ---
 
-### BEYOND GOOD AND EVIL
-
-*By Friedrich Nietzsche*
-
 Translated by Helen Zimmern
 
 ### TRANSCRIBER'S NOTE ABOUT THIS E-TEXT EDITION:

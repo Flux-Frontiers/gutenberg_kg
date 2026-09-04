@@ -4,10 +4,6 @@
 
 ---
 
-### LEAVES OF GRASS
-
-*By Walt Whitman*
-
 Come, said my soul,
 Such verses for my Body let us write, (for we are one,)
 That should I after return,

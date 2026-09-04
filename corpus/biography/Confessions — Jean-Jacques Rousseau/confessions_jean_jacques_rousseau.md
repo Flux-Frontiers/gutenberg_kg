@@ -4,10 +4,6 @@
 
 ---
 
-### THE CONFESSIONS OF JEAN JACQUES ROUSSEAU
-
-*By Jean Jacques Rousseau*
-
 (In 12 books)
 
 Privately Printed for the Members of the Aldus Society

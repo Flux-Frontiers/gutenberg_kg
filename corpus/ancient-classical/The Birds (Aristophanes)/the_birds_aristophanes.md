@@ -4,10 +4,6 @@
 
 ---
 
-### THE BIRDS
-
-*By Aristophanes*
-
 (Translator uncredited. Footnotes have been retained because they
 provide the meanings of Greek names, terms and ceremonies and explain
 puns and references otherwise lost in translation. Occasional Greek

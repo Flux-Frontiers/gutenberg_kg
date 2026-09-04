@@ -4,18 +4,6 @@
 
 ---
 
-### THE FROGS OF ARISTOPHANES
-
-*By Aristophanes*
-
-The Harvard Classics
-
-Edited By Charles W Eliot Lld
-
-Nine Greek Dramas
-
-By Æschylus, Sophocles, Euripides And Aristophanes
-
 Translations By
 
 E D A Morshead

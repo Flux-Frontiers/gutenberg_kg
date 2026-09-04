@@ -74,8 +74,10 @@ Usage
 
 from __future__ import annotations
 
+import bisect
 import hashlib
 import json
+import math
 import sqlite3
 import time
 from collections.abc import Iterator, Sequence
@@ -107,6 +109,18 @@ EMBED_DIM = 384
 #: The node kinds ``_semantic_search`` ranks. Nothing else is searchable, so
 #: nothing else is shipped.
 SEARCHED_KINDS = ("chunk", "section")
+
+#: A section longer than this is past the scale of any chapter a reader sits
+#: down with, so Browse splits it. Sized against the corpus itself: a real
+#: chapter here runs to a median of 3,276 characters and a 75th percentile of
+#: 10,370, so 12,000 leaves genuine chapters whole — without a trigger this
+#: high, windowing shatters books that were already right (War and Peace's 370
+#: chapters became 1,118 fragments at a flat 3,500 ceiling).
+BROWSE_WINDOW_TRIGGER_CHARS = 12_000
+
+#: What a split section's parts aim for, close to the corpus's own median
+#: chapter. Only sections past :data:`BROWSE_WINDOW_TRIGGER_CHARS` are cut.
+BROWSE_WINDOW_PART_CHARS = 3_500
 
 #: Reciprocal-rank-fusion constant. Must match ``handler._RRF_K`` and doc_kg's
 #: ``_fused_seeds`` or the packs rank differently from the worker.
@@ -806,6 +820,140 @@ class _PassageSource:
     fixed_meta: dict | None = None
 
 
+#: Marks a synthetic Browse-only section id: "<parent id>#part3".
+_PART_MARKER = "#part"
+
+
+def window_oversized_sections(
+    con: sqlite3.Connection,
+    *,
+    trigger_chars: int,
+    part_chars: int = BROWSE_WINDOW_PART_CHARS,
+) -> int:
+    """Split sections too long to read as one chapter into synthetic parts.
+
+    Browse lists ``kind='section'`` rows by ``char_start`` and slices the chunks
+    between consecutive markers, so a book whose whole text sits under one
+    heading renders as a single scroll — 373 K characters for Franklin's
+    Autobiography, 1.2 M for Boswell's *Johnson*. Works like those have no
+    divisions the converter can find, so the markers have to be manufactured
+    here.
+
+    Only sections past *trigger_chars* are touched, and those are divided into
+    equal parts of roughly *part_chars*, cut at chunk boundaries. The two
+    numbers have to differ: cutting everything down to part size fragments the
+    real chapters of books that were already correct, which is a worse result
+    than the monolith it fixes.
+
+    Measuring in characters rather than chunks keeps a part the same length to
+    read across genres, since chunk sizes vary (a tenth are under 268
+    characters, a tenth over 510) and the verse chunker's are smaller again.
+
+    The extra rows carry no content and get no vector, which keeps this to the
+    Browse tab: retrieval ranks chunks, and a marker with no text and no
+    embedding can never be a hit. The parent section keeps its id, so anything
+    holding one still resolves.
+
+    :param con: Open connection to a passage pack.
+    :param trigger_chars: Only sections longer than this are split. Values
+        <= 0 disable windowing.
+    :param part_chars: Length each part aims for.
+    :returns: Number of synthetic sections inserted.
+    """
+    if trigger_chars <= 0 or part_chars <= 0:
+        return 0
+
+    chunks: dict[str, list[tuple[int, int]]] = {}
+    for file_path, char_start, length in con.execute(
+        "SELECT file_path, char_start, length(content) FROM passages "
+        "WHERE kind = 'chunk' AND file_path IS NOT NULL AND char_start IS NOT NULL "
+        "ORDER BY file_path, char_start"
+    ):
+        chunks.setdefault(file_path, []).append((char_start, length or 0))
+
+    sections: dict[str, list[sqlite3.Row]] = {}
+    con.row_factory = sqlite3.Row
+    for row in con.execute(
+        "SELECT rowid, id, kg_name, kg_kind, name, title, node_title, author, genre, "
+        "       book, file_path, char_start "
+        "  FROM passages "
+        " WHERE kind = 'section' AND file_path IS NOT NULL AND char_start IS NOT NULL "
+        " ORDER BY file_path, char_start"
+    ):
+        sections.setdefault(row["file_path"], []).append(row)
+    con.row_factory = None
+
+    insert = (
+        "INSERT INTO passages"
+        "(id, kg_name, kg_kind, kind, name, title, node_title, author, genre, "
+        " book, file_path, char_start, chapter, timestamp, content) "
+        "VALUES (?, ?, ?, 'section', ?, ?, ?, ?, ?, ?, ?, ?, NULL, NULL, '')"
+    )
+    added: list[tuple] = []
+    retitled: list[tuple[str, int]] = []
+
+    for file_path, rows in sections.items():
+        spans = chunks.get(file_path)
+        if not spans:
+            continue
+        starts = [start for start, _length in spans]
+        for index, row in enumerate(rows):
+            begin = bisect.bisect_left(starts, row["char_start"])
+            if index + 1 < len(rows):
+                stop = bisect.bisect_left(starts, rows[index + 1]["char_start"])
+            else:
+                stop = len(starts)
+            if stop - begin < 2:
+                continue
+            total = sum(length for _start, length in spans[begin:stop])
+            if total <= trigger_chars:
+                continue
+
+            parts = math.ceil(total / part_chars)
+            target = total / parts
+            base = row["node_title"] or row["name"] or row["book"] or "Untitled"
+
+            # Cut where the running length crosses each part's share, so parts
+            # come out even rather than leaving a stub at the end.
+            boundaries: list[int] = []
+            running = 0
+            wanted = 1
+            for offset in range(begin, stop):
+                running += spans[offset][1]
+                if wanted < parts and running >= target * wanted:
+                    boundaries.append(offset + 1)
+                    wanted += 1
+            boundaries = [b for b in boundaries if begin < b < stop][: parts - 1]
+            if not boundaries:
+                continue
+
+            parts = len(boundaries) + 1
+            retitled.append((f"{base} (Part 1 of {parts})", row["rowid"]))
+            for number, offset in enumerate(boundaries, start=2):
+                added.append(
+                    (
+                        f"{row['id']}{_PART_MARKER}{number}",
+                        row["kg_name"],
+                        row["kg_kind"],
+                        row["name"],
+                        row["title"],
+                        f"{base} (Part {number} of {parts})",
+                        row["author"],
+                        row["genre"],
+                        row["book"],
+                        file_path,
+                        starts[offset],
+                    )
+                )
+
+    if retitled:
+        con.executemany("UPDATE passages SET node_title = ? WHERE rowid = ?", retitled)
+    if added:
+        con.executemany(insert, added)
+    con.commit()
+    return len(added)
+
+
 def build_passage_pack(
     dest: Path,
     sources: Sequence[_PassageSource],
@@ -814,6 +962,7 @@ def build_passage_pack(
     dtype: str = "int8",
     max_chars: int = 0,
     with_vectors: bool = True,
+    browse_window: int = BROWSE_WINDOW_TRIGGER_CHARS,
     progress=None,
 ) -> PackStats:
     """Write a passage pack: content, an FTS5 index over it, and the vectors.
@@ -893,7 +1042,16 @@ def build_passage_pack(
             stats.passages += written
             say(f"  {source.kg_name}: {written:,} passages")
 
-        for node_id, rowid in con.execute("SELECT id, rowid FROM passages"):
+        windowed = window_oversized_sections(con, trigger_chars=browse_window)
+        if windowed:
+            stats.passages += windowed
+            say(f"  {windowed:,} synthetic Browse sections (split over {browse_window:,} chars)")
+
+        # Synthetic sections are deliberately excluded: they have no source
+        # vector, and counting them would report thousands of phantom misses.
+        for node_id, rowid in con.execute(
+            "SELECT id, rowid FROM passages WHERE id NOT LIKE ?", (f"%{_PART_MARKER}%",)
+        ):
             rowid_by_id[node_id] = rowid
 
         say("  building the FTS5 index over clean passage text…")

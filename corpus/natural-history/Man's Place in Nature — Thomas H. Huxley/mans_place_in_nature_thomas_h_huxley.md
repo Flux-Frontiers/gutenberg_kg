@@ -4,10 +4,6 @@
 
 ---
 
-### EVIDENCE AS TO MAN'S PLACE IN NATURE
-
-*By Thomas H. Huxley*
-
 1863
 
 [entire page is illustration with caption as follows]

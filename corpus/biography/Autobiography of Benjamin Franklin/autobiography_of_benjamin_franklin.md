@@ -4,23 +4,6 @@
 
 ---
 
-### THE AUTOBIOGRAPHY OF BENJAMIN FRANKLIN
-
-*The Harvard Classics*
-
-### WITH INTRODUCTION AND NOTES EDITED BY
-
-### CHARLES W ELIOT LLD P F COLLIER & SON COMPANY NEW YORK
-
-1909
-
-Navigation
-
-Letter from Mr. Abel James.
-Publishes the first number of "Poor Richard's Almanac.
-Proposes a Plan of Union for the colonies
-Chief events in Franklin's life.
-
 ### INTRODUCTORY NOTE
 
 Benjamin Franklin was born in Milk Street, Boston, on January 6, 1706.

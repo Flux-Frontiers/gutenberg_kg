@@ -4,10 +4,6 @@
 
 ---
 
-### THE COLOUR OUT OF SPACE
-
-*By H. P. Lovecraft*
-
 [Transcriber's Note: This etext was produced from
 Amazing Stories September 1927.
 Extensive research did not uncover any evidence that

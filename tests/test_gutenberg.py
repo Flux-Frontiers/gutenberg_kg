@@ -223,8 +223,123 @@ def test_skip_front_matter_respects_start_idx():
 
 
 # ---------------------------------------------------------------------------
+# _skip_front_matter — title page (Phase 1: analysis/MONOLITHIC_SECTIONS_PLAN.md)
+# ---------------------------------------------------------------------------
+
+
+def test_skip_front_matter_skips_harvard_classics_title_page():
+    # Mirrors the raw structure of pg148.txt (Franklin's Autobiography):
+    # single blank lines between title-page fields, then a wider gap before
+    # the real body heading -- the signal that ends the title page.
+    lines = [
+        "THE AUTOBIOGRAPHY OF BENJAMIN FRANKLIN",
+        "",
+        "The Harvard Classics",
+        "",
+        "WITH INTRODUCTION AND NOTES",
+        "",
+        "EDITED BY",
+        "",
+        "CHARLES W ELIOT LLD",
+        "",
+        "P F COLLIER & SON COMPANY",
+        "NEW YORK",
+        "1909",
+        "",
+        "",
+        "",
+        "INTRODUCTORY NOTE",
+        "",
+        "Benjamin Franklin was born in Milk Street, Boston, on January 6, 1706.",
+    ]
+    idx = _skip_front_matter(lines, 0)
+    next_line = next(line for line in lines[idx:] if line.strip())
+    assert next_line.strip() == "INTRODUCTORY NOTE"
+
+
+def test_skip_front_matter_single_all_caps_heading_is_not_a_title_page():
+    # A real chapter opener, not a title page: only one short line precedes
+    # the prose, so it must be left alone for _is_heading to promote.
+    lines = [
+        "INTRODUCTION",
+        "",
+        "This is the actual introductory text that goes on for a while and",
+        "reads like a real paragraph rather than a title-page field.",
+    ]
+    idx = _skip_front_matter(lines, 0)
+    assert lines[idx].strip() == "INTRODUCTION"
+
+
+def test_skip_front_matter_title_page_stops_before_contents():
+    lines = [
+        "A SHORT BOOK",
+        "",
+        "By Someone",
+        "",
+        "CONTENTS",
+        "",
+        "Chapter I . . . . 1",
+    ]
+    idx = _skip_front_matter(lines, 0)
+    assert lines[idx].strip() == "CONTENTS"
+
+
+def test_skip_front_matter_title_page_leaves_chapter_heading_alone():
+    # A keyword-anchored heading (CHAPTER) always ends the title-page scan,
+    # even mid-run, so it is never swallowed as a field.
+    lines = ["A SHORT BOOK", "", "By Someone", "", "CHAPTER I", "", "Some text."]
+    idx = _skip_front_matter(lines, 0)
+    assert lines[idx].strip() == "CHAPTER I"
+
+
+# ---------------------------------------------------------------------------
 # _detect_toc
 # ---------------------------------------------------------------------------
+
+
+def test_detect_toc_finds_navigation_heading():
+    lines = [
+        "Navigation",
+        "",
+        "    Letter from Mr. Abel James.",
+        "    Publishes the first number of \"Poor Richard's Almanac.",
+        "    Proposes a Plan of Union for the colonies",
+        "    Chief events in Franklin's life.",
+        "",
+        "INTRODUCTORY NOTE",
+    ]
+    result = _detect_toc(lines, 0, len(lines))
+    assert result is not None
+    toc_start, toc_end = result
+    assert toc_start == 0
+    assert "INTRODUCTORY NOTE" not in [lines[i].strip() for i in range(toc_start, toc_end)]
+    next_line = next(line for line in lines[toc_end:] if line.strip())
+    assert next_line.strip() == "INTRODUCTORY NOTE"
+
+
+def test_detect_toc_navigation_does_not_swallow_single_blank_paragraphs():
+    # Regression guard: with only single blank lines between paragraphs (the
+    # common case), the CONTENTS end-heuristic needs a double blank or a
+    # 60+ char line to terminate and would otherwise run past the Navigation
+    # block into real content. Navigation must end at the first flush-left
+    # line instead.
+    lines = [
+        "Navigation",
+        "",
+        "    Letter from Mr. Abel James.",
+        "",
+        "INTRODUCTORY NOTE",
+        "",
+        "Short line.",
+        "",
+        "Another short line.",
+    ]
+    result = _detect_toc(lines, 0, len(lines))
+    assert result is not None
+    toc_start, toc_end = result
+    assert "INTRODUCTORY NOTE" not in [lines[i].strip() for i in range(toc_start, toc_end)]
+    next_line = next(line for line in lines[toc_end:] if line.strip())
+    assert next_line.strip() == "INTRODUCTORY NOTE"
 
 
 def test_detect_toc_finds_contents_heading():
@@ -290,6 +405,41 @@ def test_text_to_markdown_ends_with_newline():
 def test_text_to_markdown_untitled_fallback():
     result = text_to_markdown("Text.", {})
     assert "# Untitled" in result
+
+
+def test_text_to_markdown_harvard_classics_title_page_produces_no_headings():
+    text = (
+        "THE AUTOBIOGRAPHY OF BENJAMIN FRANKLIN\n\n"
+        "The Harvard Classics\n\n"
+        "WITH INTRODUCTION AND NOTES\n\n"
+        "EDITED BY\n\n"
+        "CHARLES W ELIOT LLD\n\n"
+        "P F COLLIER & SON COMPANY\nNEW YORK\n1909\n\n\n\n"
+        "Navigation\n\n"
+        "    Letter from Mr. Abel James.\n"
+        "    Chief events in Franklin's life.\n\n"
+        "INTRODUCTORY NOTE\n\n"
+        "Benjamin Franklin was born in Milk Street, Boston, on January 6, 1706. "
+        "His father was a tallow chandler.\n"
+    )
+    meta = {"title": "The Autobiography of Benjamin Franklin", "author": "Benjamin Franklin"}
+    result = text_to_markdown(text, meta)
+    headings = [line for line in result.splitlines() if line.startswith("#")]
+    assert headings == ["# The Autobiography of Benjamin Franklin", "### INTRODUCTORY NOTE"]
+    assert "ELIOT" not in result
+    assert "Navigation" not in result
+
+
+def test_text_to_markdown_lone_all_caps_heading_is_preserved():
+    text = (
+        "INTRODUCTION\n\n"
+        "This is the actual introductory text that goes on for a while and "
+        "reads like a real paragraph rather than a title-page field, well "
+        "past the length a short label would ever reach.\n"
+    )
+    meta = {"title": "T", "author": "A"}
+    result = text_to_markdown(text, meta)
+    assert "### INTRODUCTION" in result
 
 
 # ---------------------------------------------------------------------------

@@ -4,12 +4,6 @@
 
 ---
 
-Metamorphosis
-
-by Franz Kafka
-
-Translated by David Wyllie
-
 I
 
 One morning, when Gregor Samsa woke from troubled dreams, he found

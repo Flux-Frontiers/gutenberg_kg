@@ -4,10 +4,6 @@
 
 ---
 
-THE DESCENT OF MAN AND SELECTION IN RELATION TO SEX
-
-By Charles Darwin
-
 PREFACE TO THE SECOND EDITION.
 
 During the successive reprints of the first edition of this work,

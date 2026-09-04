@@ -4,14 +4,6 @@
 
 ---
 
-### THE WORKS OF
-
-AURELIUS AUGUSTINE,
-
-BISHOP OF HIPPO.
-
-_A NEW TRANSLATION._
-
 =Edited by the=
 
 REV. MARCUS DODS, M.A.

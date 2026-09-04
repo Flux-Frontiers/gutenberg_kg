@@ -4,10 +4,6 @@
 
 ---
 
-SYMZONIA;
-
-VOYAGE OF DISCOVERY.
-
 BY CAPTAIN ADAM SEABORN.
 
 ### NEW-YORK: PRINTED BY J. SEYMOUR, 49 JOHN-STREET.
@@ -58,10 +54,6 @@ book. He gives notice that he has no intention to relinquish his
 right to the invention of oblique paddles for steam ships, though
 the circumstances narrated at the close of the volume hinder him from
 taking out a patent at present.
-
-employments of the women of Symzonia.                     Page 181
-
-## CHAPTER XIV.
 
 The Author examines the records of the Assembly.--Grounds of
 proposal for admittance to the order of Worthies.--Shell fish of

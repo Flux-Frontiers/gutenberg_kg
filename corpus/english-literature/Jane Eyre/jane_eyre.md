@@ -4,8 +4,6 @@
 
 ---
 
-### JANE EYRE AN AUTOBIOGRAPHY
-
 by Charlotte Brontë
 
 _ILLUSTRATED BY F. H. TOWNSEND_

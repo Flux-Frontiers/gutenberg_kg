@@ -4,12 +4,6 @@
 
 ---
 
-THE TAO TEH KING,
-
-OR
-
-### THE TAO AND ITS CHARACTERISTICS
-
 by Lao-Tse
 
 Translated by James Legge

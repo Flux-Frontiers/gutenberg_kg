@@ -4,10 +4,6 @@
 
 ---
 
-### PHAEDO
-
-*By Plato*
-
 Translated by Benjamin Jowett
 
 INTRODUCTION.

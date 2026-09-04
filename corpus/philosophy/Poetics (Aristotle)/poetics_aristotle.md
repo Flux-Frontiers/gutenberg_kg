@@ -4,12 +4,6 @@
 
 ---
 
-### THE POETICS OF ARISTOTLE
-
-*By Aristotle*
-
-A Translation By S. H. Butcher
-
 [Transcriber's Annotations and Conventions: the translator left
 intact some Greek words to illustrate a specific point of the original
 discourse. In this transcription, in order to retain the accuracy of

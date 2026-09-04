@@ -4,10 +4,6 @@
 
 ---
 
-### CRIME AND PUNISHMENT
-
-*By Fyodor Dostoevsky*
-
 Translated By Constance Garnett
 
 TRANSLATOR’S PREFACE

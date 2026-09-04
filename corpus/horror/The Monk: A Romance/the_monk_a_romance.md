@@ -4,9 +4,6 @@
 
 ---
 
-The Monk:
-A Romance
-
 by M. G. Lewis, Esq. M.P.
 
 Somnia, terrores magicos, miracula, sagas,

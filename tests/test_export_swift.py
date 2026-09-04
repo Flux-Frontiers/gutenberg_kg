@@ -19,6 +19,7 @@ from importlib.util import find_spec
 import pytest
 
 from gutenberg_kg.export_swift import (
+    _PASSAGE_SCHEMA,
     ExportError,
     ExportOptions,
     _truncate,
@@ -28,6 +29,7 @@ from gutenberg_kg.export_swift import (
     locate_bundle,
     rrf_fuse,
     split_source_path,
+    window_oversized_sections,
 )
 
 BOOK_COLUMNS = (
@@ -773,3 +775,95 @@ class TestCrossDiaryIdCollisions:
         matrix, _ = read_vector_sidecar(out / "diaries.vectors")
         assert int(np.argmax(matrix[indexed["evelyn-volume-1:p:1"]])) == 3
         assert int(np.argmax(matrix[indexed["pepys-complete:p:1"]])) == 5
+
+
+class TestWindowOversizedSections:
+    """Browse-only splitting of sections too long to read as one chapter."""
+
+    @staticmethod
+    def _pack(path, chunk_count, chunk_chars=100):
+        con = sqlite3.connect(str(path))
+        con.executescript(_PASSAGE_SCHEMA)
+        con.execute(
+            "INSERT INTO passages (id, kg_name, kg_kind, kind, name, title, node_title, "
+            " author, genre, book, file_path, char_start, content) "
+            "VALUES ('g:sec:1','gutenberg','doc','section','body','A Book','THE BODY',"
+            " 'A. Author','biography','A Book',?,0,'')",
+            (DOC,),
+        )
+        con.executemany(
+            "INSERT INTO passages (id, kg_name, kg_kind, kind, name, title, file_path, "
+            " char_start, content) VALUES (?,'gutenberg','doc','chunk','c','A Book',?,?,?)",
+            [(f"g:c:{i}", DOC, i * chunk_chars, "x" * chunk_chars) for i in range(chunk_count)],
+        )
+        con.commit()
+        return con
+
+    def test_splits_a_long_section_into_even_parts(self, tmp_path):
+        # 25 chunks x 100 chars = 2,500; a 1,000-char ceiling wants 3 parts.
+        con = self._pack(tmp_path / "p.pack", 25)
+        assert window_oversized_sections(con, trigger_chars=1000, part_chars=1000) == 2
+
+        rows = list(
+            con.execute(
+                "SELECT id, node_title, char_start, content FROM passages "
+                "WHERE kind='section' ORDER BY char_start"
+            )
+        )
+        assert [r[1] for r in rows] == [
+            "THE BODY (Part 1 of 3)",
+            "THE BODY (Part 2 of 3)",
+            "THE BODY (Part 3 of 3)",
+        ]
+        # The parent keeps its id, so anything holding one still resolves.
+        assert rows[0][0] == "g:sec:1"
+        # Cuts land on real chunk boundaries, evenly, and carry no prose.
+        assert [r[2] for r in rows] == [0, 900, 1700]
+        assert all(r[3] == "" for r in rows[1:])
+        con.close()
+
+    def test_measures_characters_not_chunks(self, tmp_path):
+        """Many small chunks stay one chapter; few large ones get split."""
+        many_small = self._pack(tmp_path / "small.pack", 40, chunk_chars=10)
+        assert window_oversized_sections(many_small, trigger_chars=1000, part_chars=1000) == 0
+        many_small.close()
+
+        few_large = self._pack(tmp_path / "large.pack", 4, chunk_chars=1000)
+        assert window_oversized_sections(few_large, trigger_chars=1000, part_chars=1000) > 0
+        few_large.close()
+
+    def test_leaves_a_section_within_budget_alone(self, tmp_path):
+        con = self._pack(tmp_path / "p.pack", 10)
+        assert window_oversized_sections(con, trigger_chars=100_000) == 0
+        (title,) = con.execute("SELECT node_title FROM passages WHERE kind='section'").fetchone()
+        assert title == "THE BODY"
+        con.close()
+
+    def test_a_single_chunk_is_never_split(self, tmp_path):
+        """No boundary exists inside one chunk, however long it is."""
+        con = self._pack(tmp_path / "p.pack", 1, chunk_chars=50_000)
+        assert window_oversized_sections(con, trigger_chars=1000, part_chars=1000) == 0
+        con.close()
+
+    def test_a_real_chapter_near_the_trigger_is_left_whole(self, tmp_path):
+        """The trigger sits above chapter scale on purpose.
+
+        A flat ceiling shattered books that were already right: War and Peace's
+        370 real chapters came out as 1,118 "CHAPTER I (Part 1 of 4)" fragments.
+        """
+        con = self._pack(tmp_path / "p.pack", 90)  # 9,000 chars, a long chapter
+        assert window_oversized_sections(con, trigger_chars=12_000, part_chars=3_500) == 0
+        (title,) = con.execute("SELECT node_title FROM passages WHERE kind='section'").fetchone()
+        assert title == "THE BODY"
+        con.close()
+
+    def test_past_the_trigger_parts_aim_at_part_chars_not_the_trigger(self, tmp_path):
+        con = self._pack(tmp_path / "p.pack", 200)  # 20,000 chars
+        added = window_oversized_sections(con, trigger_chars=12_000, part_chars=3_500)
+        assert added == 5  # 20,000 / 3,500 -> 6 parts
+        con.close()
+
+    def test_disabled_by_a_non_positive_budget(self, tmp_path):
+        con = self._pack(tmp_path / "p.pack", 500)
+        assert window_oversized_sections(con, trigger_chars=0) == 0
+        con.close()

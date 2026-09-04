@@ -4,10 +4,6 @@
 
 ---
 
-### HEDDA GABLER
-
-*By Henrik Ibsen*
-
 Translated by Edmund Gosse and William Archer
 
 Introduction by William Archer

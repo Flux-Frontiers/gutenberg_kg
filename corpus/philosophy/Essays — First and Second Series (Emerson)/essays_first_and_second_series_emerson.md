@@ -4,10 +4,6 @@
 
 ---
 
-### ESSAYS, FIRST SERIES
-
-*By Ralph Waldo Emerson*
-
 ### I. HISTORY
 
 There is no great and no small

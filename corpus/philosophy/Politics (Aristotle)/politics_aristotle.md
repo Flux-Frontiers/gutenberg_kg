@@ -4,10 +4,6 @@
 
 ---
 
-### A TREATISE ON GOVERNMENT
-
-*By Aristotle*
-
 Translated From The Greek Of Aristotle By William Ellis, A.M.
 
 London & Toronto Published By J M Dent & Sons Ltd. & In New York By E.

@@ -4,10 +4,6 @@
 
 ---
 
-### OF THE NATURE OF THINGS
-
-*By Titus Lucretius Carus*
-
 A Metrical Translation
 
 By William Ellery Leonard

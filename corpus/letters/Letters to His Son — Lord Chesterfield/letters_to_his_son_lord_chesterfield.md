@@ -4,10 +4,6 @@
 
 ---
 
-### LETTERS TO HIS SON
-
-1748
-
 By the EARL OF CHESTERFIELD
 
 on the Fine Art of becoming a

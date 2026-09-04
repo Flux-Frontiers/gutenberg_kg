@@ -4,10 +4,6 @@
 
 ---
 
-Madame Bovary
-
-By Gustave Flaubert
-
 Translated from the French by Eleanor Marx-Aveling
 
 To

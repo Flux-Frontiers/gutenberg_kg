@@ -4,8 +4,6 @@
 
 ---
 
-### MAJOR BARBARA BERNARD SHAW
-
 ## ACT I
 
 It is after dinner on a January night, in the library in

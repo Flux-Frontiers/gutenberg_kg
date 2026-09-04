@@ -217,6 +217,21 @@ FRONT_MATTER_SKIP = re.compile(
     re.IGNORECASE,
 )
 
+# Literal lines that open a table-of-contents-shaped block. "Navigation" is
+# Gutenberg's own auto-generated nav list (an HTML-to-text artefact seen in
+# some editions, e.g. #148 Franklin); it is handled separately from
+# CONTENTS because its entries are indented list items rather than
+# dot-leader chapter listings, and blank-line-count heuristics that work for
+# CONTENTS badly over-consume a Navigation block (see _detect_toc).
+_TOC_CONTENTS_LINES = {"CONTENTS", "CONTENTS.", "TABLE OF CONTENTS", "TABLE OF CONTENTS."}
+_TOC_NAVIGATION_LINES = {"NAVIGATION", "NAVIGATION."}
+
+# HEADING_PATTERNS entries that require a specific structural keyword
+# (CHAPTER, BOOK, PART, ACT, ...) rather than bare line shape. Used to tell
+# a real body heading apart from a title-page field that merely happens to
+# look like one (see _skip_title_page).
+_STRUCTURAL_HEADING_PATTERNS = HEADING_PATTERNS[:-1]
+
 
 # ---------------------------------------------------------------------------
 # Utilities
@@ -528,8 +543,94 @@ def _is_heading(line: str) -> tuple[int, str] | None:
     return None
 
 
+def _is_structural_heading(line: str) -> bool:
+    """Whether *line* matches a keyword-anchored heading pattern (CHAPTER,
+    BOOK, PART, ACT, ...), as opposed to the generic standalone ALL-CAPS
+    catch-all. Used to recognise a real body heading even when it is short
+    enough to otherwise look like a title-page field."""
+    return any(pattern.match(line) for pattern, _level in _STRUCTURAL_HEADING_PATTERNS)
+
+
+def _looks_like_title_field(line: str) -> bool:
+    """Whether *line* has the shape of a title-page field: a short
+    standalone label (ALL-CAPS, a Title-Case phrase, or a bare
+    number/date), not a real heading and not a line of prose."""
+    if not line or len(line) > 60:
+        return False
+    if _is_structural_heading(line):
+        return False
+    if line.isupper():
+        return True
+    if re.match(r"^[\d\W]+$", line):
+        return True
+    words = line.split()
+    if 0 < len(words) <= 8 and line[-1] not in ".!?;,":
+        return all(not w[0].isalpha() or w[0].isupper() for w in words)
+    return False
+
+
+# Safety bounds on _skip_title_page: real title pages are a handful of
+# fields within the first couple dozen lines. These just stop a pathological
+# run of short lines (e.g. a page of verse) from being consumed wholesale.
+_TITLE_PAGE_MAX_LINES = 60
+_TITLE_PAGE_MAX_FIELDS = 20
+
+# A title page must have at least this many standalone fields before the
+# region is treated as front matter rather than a real (single-line) body
+# heading -- so "CHAPTER I" or a lone "INTRODUCTION" immediately followed by
+# prose is left alone, per test_skip_front_matter_no_front_matter and
+# friends.
+_TITLE_PAGE_MIN_FIELDS = 2
+
+
+def _skip_title_page(lines: list[str], start_idx: int) -> int:
+    """Skip a title page (title, subtitle, editor, publisher, year) that
+    precedes the real body -- e.g. the Harvard Classics front page ahead of
+    Franklin's Autobiography (#148), which the standalone ALL-CAPS heading
+    rule would otherwise turn into its own section.
+
+    Stops at the first line that is not title-field-shaped, at a
+    table-of-contents marker, or at a run of 2+ blank lines -- Gutenberg
+    editions commonly widen the gap to mark a structural boundary (e.g. the
+    four blank lines between Franklin's title page and its Navigation
+    block), which distinguishes it from the single blank line that
+    separates ordinary paragraphs. Only commits the skip if at least
+    _TITLE_PAGE_MIN_FIELDS fields were found, so a single ALL-CAPS heading
+    immediately followed by prose -- a real chapter opener -- is never
+    eaten.
+    """
+    i = start_idx
+    fields = 0
+    blank_run = 0
+    while (
+        i < len(lines)
+        and (i - start_idx) < _TITLE_PAGE_MAX_LINES
+        and fields < _TITLE_PAGE_MAX_FIELDS
+    ):
+        stripped = lines[i].strip()
+        if not stripped:
+            blank_run += 1
+            if blank_run >= 2:
+                break
+            i += 1
+            continue
+        blank_run = 0
+        upper = stripped.upper()
+        if upper in _TOC_CONTENTS_LINES or upper in _TOC_NAVIGATION_LINES:
+            break
+        if not _looks_like_title_field(stripped):
+            break
+        i += 1
+        fields += 1
+
+    if fields < _TITLE_PAGE_MIN_FIELDS:
+        return start_idx
+    return i
+
+
 def _skip_front_matter(lines: list[str], start_idx: int) -> int:
-    """Skip producer/transcriber credits that appear before the actual text."""
+    """Skip producer/transcriber credits and a title page that appear before
+    the actual text."""
     i = start_idx
     # Skip blank lines
     while i < len(lines) and not lines[i].strip():
@@ -548,20 +649,39 @@ def _skip_front_matter(lines: list[str], start_idx: int) -> int:
                 i += 1
         else:
             break
-    return i
+    return _skip_title_page(lines, i)
 
 
 def _detect_toc(lines: list[str], start: int, end: int) -> tuple[int, int] | None:
     """Detect a table of contents block and return its (start, end) indices."""
     toc_start = None
+    is_navigation = False
     for i in range(start, min(start + 200, end)):
         line = lines[i].strip().upper()
-        if line in ("CONTENTS", "CONTENTS.", "TABLE OF CONTENTS", "TABLE OF CONTENTS."):
+        if line in _TOC_CONTENTS_LINES:
             toc_start = i
+            break
+        if line in _TOC_NAVIGATION_LINES:
+            toc_start = i
+            is_navigation = True
             break
 
     if toc_start is None:
         return None
+
+    if is_navigation:
+        # Gutenberg's auto-generated "Navigation" block: a short list of
+        # indented entries. Blank-line-count heuristics badly over-consume
+        # here since these editions use plain single blank lines between
+        # paragraphs throughout, so end at the first flush-left
+        # (non-indented) line instead -- a real list item is always
+        # indented in the raw text.
+        i = toc_start + 1
+        while i < min(toc_start + 100, end) and not lines[i].strip():
+            i += 1
+        while i < min(toc_start + 100, end) and lines[i].strip() and lines[i][:1].isspace():
+            i += 1
+        return (toc_start, i)
 
     # TOC ends at the first substantial paragraph or heading after a blank section
     i = toc_start + 1

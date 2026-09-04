@@ -4,10 +4,6 @@
 
 ---
 
-### THE HISTORY OF HERODOTUS
-
-*By Herodotus*
-
 Translated into English by G. C. Macaulay
 
 ### IN TWO VOLUMES VOLUME I.

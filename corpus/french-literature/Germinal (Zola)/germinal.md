@@ -4,10 +4,6 @@
 
 ---
 
-### GERMINAL BY
-
-ÉMILE ZOLA
-
 Translated and Introduced
 
 By
