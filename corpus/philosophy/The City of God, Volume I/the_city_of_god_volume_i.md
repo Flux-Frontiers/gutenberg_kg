@@ -38,6 +38,8 @@ Of the following Work, Books IV. XVII. and XVIII. have been
 translated by the Rev. GEORGE WILSON, Glenluce; Books V. VI. VII. and
 VIII. by the Rev. J. J. SMITH.
 
+That death is penal, and had its origin in Adam's sin,        521
+
 EDITOR'S PREFACE.
 
 "Rome having been stormed and sacked by the Goths under Alaric

@@ -8,6 +8,10 @@ By Friedrich Nietzsche
 
 Translated By Thomas Common
 
+APPENDIX.
+
+Notes on “Thus Spake Zarathustra” by Anthony M. Ludovici.
+
 INTRODUCTION BY MRS FORSTER-NIETZSCHE.
 
 HOW ZARATHUSTRA CAME INTO BEING.

@@ -10,6 +10,8 @@ A Grotesque Romance
 
 by H. G. Wells
 
+The Epilogue
+
 ## CHAPTER I. THE STRANGE MAN’S ARRIVAL
 
 The stranger came early in February, one wintry day, through a biting

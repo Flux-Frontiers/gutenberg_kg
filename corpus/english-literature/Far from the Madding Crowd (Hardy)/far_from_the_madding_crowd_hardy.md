@@ -18,6 +18,8 @@ Far from the Madding Crowd
 
 by Thomas Hardy
 
+Notes
+
 ### PREFACE
 
 In reprinting this story for a new edition I am reminded that it was in

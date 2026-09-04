@@ -6,7 +6,7 @@
 
 First Volume of the D’Artagnan Series
 
-AUTHOR’S PREFACE
+### EPILOGUE AUTHOR’S PREFACE
 
 In which it is proved that, notwithstanding their names’ ending in _os_
 and _is_, the heroes of the story which we are about to have the honor

@@ -116,6 +116,8 @@ Britannica_, Ninth Edition.
 volume, p. 180, and also note to p. 288. Richard Baxter
 again is always quoting the _Moralia_.
 
+INDEX                                                         401
+
 PLUTARCH'S MORALS.
 
 ON EDUCATION.

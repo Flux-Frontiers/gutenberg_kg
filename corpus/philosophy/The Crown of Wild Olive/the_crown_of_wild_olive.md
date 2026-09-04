@@ -35,54 +35,6 @@ Boston and New York
 Colonial Press Company
 Publishers
 
-LIST OF ILLUSTRATIONS.
-
-ARATRA PENTELICI.
-
-PLATES                                            FACING PAGE
-
-I. PORCH OF SAN ZENONE. VERONA,                           300
-
-II. THE ARETHUSA OF SYRACUSE,                             302
-
-III. THE WARNING TO THE KINGS,                            302
-
-IV. THE NATIVITY OF ATHENA,                               308
-
-V. TOMB OF THE DOGES JACOPO AND LORENZO TIEPOLO,          333
-
-VI. ARCHAIC ATHENA OF ATHENS AND CORINTH,                 334
-
-VII. ARCHAIC, CENTRAL AND DECLINING ART OF GREECE,        355
-
-VIII. THE APOLLO OF SYRACUSE AND THE SELF-MADE MAN,       366
-
-IX. APOLLO CHRYSOCOMES OF CLAZOMENAE,                      368
-
-X. MARBLE MASONRY IN THE DUOMO OF VERONA,                 381
-
-XI. THE FIRST ELEMENTS OF SCULPTURE,                      382
-
-XII. BRANCH OF PHILLYREA. DARK PURPLE,                    390
-
-XIII. GREEK FLAT RELIEF AND SCULPTURE BY EDGED INCISION,  392
-
-XIV. APOLLO AND THE PYTHON. HERACLES AND THE NEMEAN LION, 400
-
-XV. HERA OF ARGOS. ZEUS OF SYRACUSE,                      401
-
-XVI. DEMETER OF MESSENE. HERA OF CROSSUS,                 402
-
-XVII. ATHENA OF THURIUM. SEREIE LIGEIA OF TERINA,         402
-
-XVIII. ARTEMIS OF SYRACUSE. HERA OF LACINIAN CAPE,        404
-
-XIX. ZEUS OF MESSENE. AJAX OF OPUS,                       405
-
-XX. GREEK AND BARBARIAN SCULPTURE,                        407
-
-XXI. THE BEGINNINGS OF CHIVALRY,                          409
-
 FIGURE                                                   PAGE
 
 1. SPECIMEN OF PLATE,                                     293

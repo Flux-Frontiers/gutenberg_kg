@@ -43,7 +43,7 @@ The Macmillan Company
 Copyright, 1917
 By P. F. Collier & Son
 
-### BIOGRAPHICAL NOTE
+## CHAPTER XXVI BIOGRAPHICAL NOTE
 
 Ivan Sergyevitch Turgenev came of an old stock of the Russian nobility.
 He was born in Orel, in the province of Orel, which lies more than a

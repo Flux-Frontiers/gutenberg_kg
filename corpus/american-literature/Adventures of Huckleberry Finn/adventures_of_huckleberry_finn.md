@@ -4,6 +4,12 @@
 
 ---
 
+Tom Sawyer Wounded.—The Doctor’s Story.—Tom Confesses.—Aunt Polly
+Arrives.—Hand Out Them Letters.
+
+CHAPTER THE LAST.
+Out of Bondage.—Paying the Captive.—Yours Truly, Huck Finn.
+
 ILLUSTRATIONS.
 
 The Widows
