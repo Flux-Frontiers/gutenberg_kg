@@ -369,7 +369,7 @@ Printed in the United States of America
 
 —
 
-Foreword
+### Foreword
 
 This series is dedicated to Electrical
 Progress—to all who have helped and
@@ -8348,8 +8348,7 @@ the fault to be distinguished from a short circuit. The faulty
 
 Armature Troubles 669
 
-## part can always be readily located by the '"'flat'' which it pro-
-
+part can always be readily located by the '"'flat'' which it pro-
 duces upon the surface of the commutator. The armature
 circuit being open at the faulty part, heavy sparking results at
 every half revolution as the brushes pass over it, and as a con-

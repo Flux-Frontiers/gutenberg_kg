@@ -308,7 +308,7 @@ Theo. Audel & Co.
 
 Printed in the United States of America
 
-Foreword
+### Foreword
 
 This series is dedicated to Electrical
 Progress—to all who have helped and

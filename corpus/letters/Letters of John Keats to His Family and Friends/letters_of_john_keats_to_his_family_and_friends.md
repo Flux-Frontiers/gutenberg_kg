@@ -44,7 +44,7 @@ Reprinted (Crown 8vo) 1925
 
 Printed in Great Britain
 
-## LETTER                                         DATE        PAGE
+LETTER                                         DATE        PAGE
 
 PREFACE                                                      xi
 

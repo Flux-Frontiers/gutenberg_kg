@@ -368,7 +368,7 @@ Dapatecrr ds wees Sar Maciel
 
 Brae Be a BE A tes
 
-Foreword
+### Foreword
 
 This series is dedicated to Electrical
 Progress—to all who have helped and
