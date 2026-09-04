@@ -8,6 +8,8 @@ A MIDSUMMER NIGHT’S DREAM
 
 by William Shakespeare
 
+Athens. An Apartment in the Palace of Theseus
+
 Dramatis Personæ
 
 THESEUS, Duke of Athens

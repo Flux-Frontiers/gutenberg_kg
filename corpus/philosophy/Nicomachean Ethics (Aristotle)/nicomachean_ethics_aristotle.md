@@ -10,7 +10,7 @@ By Aristotle
 
 Introduction by J. A. Smith
 
-### INTRODUCTION
+### NOTES INTRODUCTION
 
 The _Ethics_ of Aristotle is one half of a single treatise of which his
 _Politics_ is the other half. Both deal with one and the same subject.

@@ -16,6 +16,8 @@ The Lowell Press
 
 New York
 
+Footnotes
+
 ## PART I
 
 ## Book I. The History Of A Family

@@ -1,9 +1,9 @@
 """Report the numbered sequences gutenberg_kg.spine finds in the corpus.
 
 Step 1 of analysis/STRUCTURAL_PARSER_PLAN.md: read-only, no behaviour
-change. Converts nothing; prints what spine and contents runs each book's
-raw text contains, so the density-separation hypothesis can be read against
-the whole corpus before anything is built on it.
+change. Converts nothing; prints the numbered-heading clusters each book's
+raw text contains and which of them are contents-shaped, so the profile can
+be read against the whole corpus before anything is built on it.
 
 Needs raw Gutenberg text, which this repo does not cache (conversion happens
 at download time -- see the plan). Point --raw-dir at a directory of
@@ -28,7 +28,7 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(REPO_ROOT / "src"))
 
 from gutenberg_kg.gutenberg import strip_boilerplate  # noqa: E402
-from gutenberg_kg.spine import Classification, classify, profile  # noqa: E402
+from gutenberg_kg.spine import contents_regions, profile  # noqa: E402
 
 
 def load_raw(path: Path) -> str:
@@ -40,37 +40,31 @@ def load_raw(path: Path) -> str:
 
 
 def report_book(book: str, genre: str, lines: list[str], verbose: bool) -> dict:
-    result = profile(lines)
-    classifications: dict[str, Classification] = {}
-    for template, runs in result.items():
-        c = classify(runs)
-        if c is not None:
-            classifications[template] = c
-
-    with_contents = [c for c in classifications.values() if c.contents is not None]
+    clusters = profile(lines)
+    regions = contents_regions(lines)
     print(f"[{genre}] {book}")
-    if not classifications:
+    if not clusters:
         print("    no numbered sequence found")
-    for template, c in sorted(
-        classifications.items(), key=lambda kv: -len(kv[1].spine.hits) if kv[1].spine else 0
+    for region_start, region_end in regions:
+        print(f"    contents-shaped region  lines {region_start:>7}-{region_end:<7}")
+    for template, found in sorted(
+        clusters.items(), key=lambda kv: -sum(len(c.hits) for c in kv[1])
     ):
-        s = c.spine
-        tag = "spine+contents" if c.contents else "spine only"
-        print(
-            f"    {template:9s} {tag:15s} {len(s.hits):4d} hits  "
-            f"lines {s.start:>7}-{s.end:<7}  density {s.density:.3f}  nums {s.first_number}..{s.last_number}"
-        )
-        if c.contents and verbose:
-            k = c.contents
-            print(
-                f"    {'':9s} {'  contents':15s} {len(k.hits):4d} hits  "
-                f"lines {k.start:>7}-{k.end:<7}  density {k.density:.3f}  nums {k.first_number}..{k.last_number}"
-            )
+        spine_hits = sum(len(c.hits) for c in found if not c.is_contents_shaped)
+        listing = sum(1 for c in found if c.is_contents_shaped)
+        print(f"    {template:9s} {spine_hits:4d} spine hits  {listing} contents-shaped cluster(s)")
+        if verbose:
+            for c in found:
+                tag = "contents" if c.is_contents_shaped else "spine"
+                print(
+                    f"    {'':9s} {tag:8s} {len(c.hits):4d} hits  "
+                    f"lines {c.start:>7}-{c.end:<7}  density {c.density:.3f}"
+                )
     return {
         "book": book,
         "genre": genre,
-        "templates_found": len(classifications),
-        "spine_and_contents_found": len(with_contents),
+        "templates_found": len(clusters),
+        "contents_regions": len(regions),
     }
 
 
@@ -100,11 +94,11 @@ def main() -> int:
 
     total = len(summaries)
     with_any = sum(1 for s in summaries if s["templates_found"] > 0)
-    with_pair = sum(1 for s in summaries if s["spine_and_contents_found"] > 0)
+    with_contents = sum(1 for s in summaries if s["contents_regions"] > 0)
     print("\n=== summary ===")
     print(f"{total} books profiled ({missing} skipped, no raw text found)")
     print(f"{with_any} have at least one numbered sequence")
-    print(f"{with_pair} have a spine paired with its own contents list")
+    print(f"{with_contents} have a contents-shaped region")
     return 0
 
 

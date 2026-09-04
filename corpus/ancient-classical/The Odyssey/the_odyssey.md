@@ -11,6 +11,8 @@ by Homer
 rendered into English prose for the use of those who cannot read the
 original
 
+### FOOTNOTES: AL PROFESSORE CAV. BIAGIO INGROIA, PREZIOSO ALLEATO L’AUTORE RICONOSCENTE.
+
 ### PREFACE TO FIRST EDITION
 
 This translation is intended to supplement a work entitled “The

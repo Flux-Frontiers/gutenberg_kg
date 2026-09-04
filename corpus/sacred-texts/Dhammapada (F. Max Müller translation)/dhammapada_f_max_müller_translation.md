@@ -20,6 +20,8 @@ Part I
 
 [Note: The introduction, notes and index have been omitted.]
 
+## Chapter 26 The Brahmana (Arhat)
+
 ### DHAMMAPADA
 
 ## Chapter I. The Twin-Verses

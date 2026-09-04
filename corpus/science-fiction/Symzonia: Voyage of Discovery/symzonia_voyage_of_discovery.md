@@ -159,34 +159,6 @@ into their language.--Proposition of a Wise man to make slaves
 of the Author and his people.--The Author's remonstrance.--The
 Wise man disgraced.                                       Page 176
 
-## CHAPTER XIII.
-
-Recreations of the Symzonians.--Wonderful provision of nature
-for supplying the internal world with light.--Character and
-employments of the women of Symzonia.                     Page 181
-
-## CHAPTER XIV.
-
-The Author examines the records of the Assembly.--Grounds of
-proposal for admittance to the order of Worthies.--Shell fish of
-Symzonia.--Great quantities of Pearls, and the use to which they
-are applied.                                              Page 188
-
-## CHAPTER XV.
-
-The Author is ordered to depart from Symzonia.--The Best Man's
-reasons for sending him away.--His ineffectual efforts to obtain
-a place of rendezvous for purposes of trade.              Page 195
-
-## CHAPTER XVI.
-
-The Author returns to the Explorer.--Holds a council of
-officers--Determines to return to Seaborn's Land.--Takes leave
-of Surui--Sails from Symzonia.--Touches at Token Island.--Arrives
-at Boneto's station.                                      Page 205
-
-## CHAPTER XVII.
-
 The Author loads the Explorer with seal skins, and sails from
 Seaborn's Land.--Discovers Albicore's Islands.--Transactions at
 those islands.--He determines to conceal his discoveries from

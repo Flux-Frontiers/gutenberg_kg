@@ -43,6 +43,7 @@ from gutenberg_kg.headings import (
 from gutenberg_kg.headings import (
     skip_title_page as _skip_title_page,
 )
+from gutenberg_kg.spine import contents_regions
 
 # ---------------------------------------------------------------------------
 # Constants
@@ -372,7 +373,9 @@ def text_to_markdown(text: str, meta: dict) -> str:
     start_idx = _skip_front_matter(lines, 0)
 
     # Detect and skip table of contents
-    toc = _detect_toc(lines, start_idx, min(start_idx + 200, total))
+    # Where the contents list ends comes from the structural profile, not
+    # from counting blank lines; detect_toc anchors it to the marker line.
+    toc = _detect_toc(lines, start_idx, min(start_idx + 200, total), contents_regions(lines))
     toc_range = range(toc[0], toc[1]) if toc else range(0)
 
     # Title-Case work titles, honoured only where they recur (see
