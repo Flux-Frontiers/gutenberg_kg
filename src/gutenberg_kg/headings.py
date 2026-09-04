@@ -212,6 +212,23 @@ STRUCTURAL_PATTERNS = [(p, lvl) for p, lvl in HEADING_PATTERNS if p is not ALL_C
 _TOC_CONTENTS_LINES = {"CONTENTS", "CONTENTS.", "TABLE OF CONTENTS", "TABLE OF CONTENTS."}
 _TOC_NAVIGATION_LINES = {"NAVIGATION", "NAVIGATION."}
 
+#: How far past a CONTENTS marker a profiled contents region may begin and
+#: still be the listing that marker announces. Kant's Critique opens its
+#: numbered listing 185 lines after the word "CONTENTS", Symzonia 116; the
+#: numbered lists in Ruskin's and Diogenes Laertius' prefaces -- which are
+#: not contents and must never be deleted -- sit 660 and 1,900 lines from
+#: theirs. Measured across all 243 cached texts.
+_CONTENTS_ANCHOR_WINDOW = 250
+
+#: When the region begins within this many lines of the marker, everything
+#: between is listing preamble -- "VOLUME I." in Emma, "LES MISÉRABLES /
+#: PREFACE / VOLUME I—FANTINE / BOOK FIRST" in Les Miserables -- and is
+#: skipped with it. Further away, the intervening lines are kept: they are
+#: as likely a preface as a preamble, and deleting a preface is the worse
+#: mistake by far. The cost of keeping them is the marker line leaking in as
+#: text.
+_CONTENTS_PREAMBLE = 60
+
 
 # Safety bounds on _skip_title_page: real title pages are a handful of
 # fields within the first couple dozen lines. These just stop a pathological
@@ -481,8 +498,53 @@ def skip_title_page(lines: list[str], start_idx: int, structural=None) -> int:
     return i
 
 
-def detect_toc(lines: list[str], start: int, end: int) -> tuple[int, int] | None:
-    """Detect a table of contents block and return its (start, end) indices."""
+def detect_toc(
+    lines: list[str],
+    start: int,
+    end: int,
+    regions: list[tuple[int, int]] | None = None,
+) -> tuple[int, int] | None:
+    """Locate a table of contents and return the line range to skip.
+
+    The marker line -- ``CONTENTS``, ``TABLE OF CONTENTS`` or Gutenberg's
+    generated ``Navigation`` -- is found the same way it always was. Where
+    a ``CONTENTS`` listing *ends* is answered two ways, in order:
+
+    1. From the structural profile. The caller passes the contents-shaped
+       regions :func:`gutenberg_kg.spine.contents_regions` found, and the
+       listing is the first of them beginning within
+       :data:`_CONTENTS_ANCHOR_WINDOW` lines of the marker. This bounds a
+       numbered listing exactly, whatever its blank lines do: Moby Dick's
+       135 chapters, Les Miserables' 365 across 48 books, Emma's three
+       restarts. It also stops the blank-line rule short of text it used
+       to take -- the editor's preface of The Education of Henry Adams sat
+       between the listing's last entry and the first triple blank.
+    2. Failing that, by counting blank lines: the listing ends at a triple
+       blank, or at a long line after a double one. The profile sees only
+       numbered sequences, and the listings it cannot see -- named
+       chapters, stories, poems, dialogues, about a fifth of the corpus --
+       are exactly the ones this rule has always bounded. Its one way of
+       deleting text, running to its bound when no blank pattern ever
+       fired, was closed in #103: it declines instead.
+
+    The marker is a hard requirement for the first, not a convenience. The
+    profile also reports dense numbered regions deep inside books --
+    Marcus Aurelius's numbered paragraphs, Ruskin's lettered sections --
+    that are the book, not its contents. Anchoring to the marker is what
+    keeps them out of reach.
+
+    With no marker, or neither rule finding an end, this returns None:
+    nothing is skipped and the listing leaks in as text, which costs a
+    duplicate heading or two rather than a chapter.
+
+    :param lines: The book's lines.
+    :param start: Line to begin searching for the marker.
+    :param end: Line to stop searching (exclusive).
+    :param regions: Contents-shaped regions from the structural profile, as
+        ``(first, last)`` line indices inclusive. None or empty means none
+        were found.
+    :returns: ``(start, end)`` line indices to skip, end exclusive, or None.
+    """
     toc_start = None
     is_navigation = False
     for i in range(start, min(start + 200, end)):
@@ -512,7 +574,16 @@ def detect_toc(lines: list[str], start: int, end: int) -> tuple[int, int] | None
             i += 1
         return (toc_start, i)
 
-    # TOC ends at the first substantial paragraph or heading after a blank section
+    for region_start, region_end in regions or ():
+        if toc_start < region_start <= toc_start + _CONTENTS_ANCHOR_WINDOW:
+            skip_from = (
+                toc_start if region_start - toc_start <= _CONTENTS_PREAMBLE else region_start
+            )
+            return (skip_from, region_end + 1)
+
+    # No numbered listing to anchor. The listings the profile cannot see --
+    # named chapters, stories, poems -- end at a triple blank, or at a long
+    # line after a double one.
     i = toc_start + 1
     blank_count = 0
     while i < min(toc_start + 300, end):

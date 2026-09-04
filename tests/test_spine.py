@@ -242,6 +242,38 @@ def test_cluster_hits_empty():
 # ---------------------------------------------------------------------------
 
 
+def test_cluster_hits_trims_a_title_followed_by_its_own_part_number():
+    """The Adventures of Sherlock Holmes: the contents list twelve stories;
+    the body opens ``I. A SCANDAL IN BOHEMIA``, then two lines on its part
+    number ``I.``, then the prose. Bounding the title's "what follows" by
+    its own part number found no prose there and left the title in the
+    listing. Both are body headings."""
+    lines = [""] * 220
+    for i in range(21, 60):
+        lines[i] = PROSE
+    listing = [(n, n - 1) for n in range(1, 13)]
+    hits = _spaced_hits(listing + [(1, 16), (1, 19), (2, 200)])
+    clusters = cluster_hits(lines, hits, "ROMAN")
+    assert [len(c.hits) for c in clusters] == [12, 1, 1, 1]
+    assert clusters[0].end == 11
+
+
+def test_cluster_hits_trims_a_body_heading_followed_by_a_poem_epigraph():
+    """Emerson's Essays: the body's ``I.`` before "History" is followed by
+    two stanzas of epigraph, and the prose that proves it a body heading
+    begins some twenty-five lines later. A fixed twenty-line window never
+    saw it."""
+    lines = [""] * 900
+    for i in range(21, 45):
+        lines[i] = "To the Soul that maketh all:"
+    for i in range(46, 90):
+        lines[i] = PROSE
+    listing = [(n, n - 1) for n in range(1, 13)]
+    hits = _spaced_hits(listing + [(1, 19), (2, 800)])
+    clusters = cluster_hits(lines, hits, "ROMAN")
+    assert [len(c.hits) for c in clusters] == [12, 1, 1]
+
+
 def _moby_dick_shaped_lines():
     """A contents list (dense) followed by the body (sparse) for the same
     CHAPTER 1..135 sequence -- the exact shape measured in Moby Dick, with
@@ -284,9 +316,25 @@ def test_contents_regions_merges_adjacent_templates():
     lines = [""] * 200
     for n in range(1, 6):
         lines[n * 2] = f"Canto {n}. A Title."
-    for n in range(1, 6):
-        lines[15 + n * 2] = f"{n}. A Title."
-    assert len(contents_regions(lines)) == 1
+    for n, roman in enumerate(["I", "II", "III", "IV", "V"], start=1):
+        lines[15 + n * 2] = f"{roman}. A Title."
+    assert contents_regions(lines) == [(2, 25)]
+
+
+def test_contents_regions_does_not_merge_across_prose():
+    """Wallace's Malay Archipelago: twenty chapters listed, then the
+    preface, and in the preface a five-item list of island groups. The two
+    lists are seventy lines apart; the seventy lines are the preface, and
+    merging across them deleted it."""
+    lines = [""] * 100
+    for n in range(1, 9):
+        lines[1 + n] = f"CHAPTER {n}. A Title."
+    lines[12] = "PREFACE."
+    for i in range(14, 80):
+        lines[i] = PROSE
+    for n, roman in enumerate(["I", "II", "III", "IV", "V"], start=1):
+        lines[84 + n] = f"{roman}. A Title."
+    assert contents_regions(lines) == [(2, 9), (85, 89)]
 
 
 def test_spine_hits_excludes_the_contents_and_keeps_every_body_chapter():

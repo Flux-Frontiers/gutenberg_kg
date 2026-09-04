@@ -130,9 +130,57 @@ no rule available today can satisfy at once.
 1. Pass 1 as a *reporting* script only: profile all 252 books, print the
    spines and contents runs it finds. No behaviour change. Read the output
    for books whose structure is already known and check it agrees.
-2. Contents detection from the dense run, replacing `detect_toc`. Gate: the
-   16 books that recovered text in #103 keep it, and Moby Dick loses its
-   duplicates.
-3. Spine-membership as the heading test, retiring the numeral lookaheads and
-   the repeat-count guards those patches added.
+2. Contents detection from the profiled region, tried ahead of `detect_toc`'s
+   blank-line rule (not replacing it; see Outcome). Gate: the 16 books that
+   recovered text in #103 keep it, and Moby Dick loses its duplicates.
+3. Dropped (see Outcome). Spine-membership as the heading test cannot
+   retire the repeat-count guard, and retiring the numeral lookaheads is a
+   no-behaviour refactor that belongs with step 4.
 4. Retire whatever of `HEADING_PATTERNS` the evidence says is dead.
+
+## Outcome (2026-09-04)
+
+Step 1 shipped as #105; step 2 followed on the same profiler. Where the
+implementation diverged from the design above:
+
+- **Clustering by position, not by monotonic run.** Runs split at every
+  numbering restart, so Emma's three volumes and Les Miserables'
+  forty-eight books shattered into fragments and the density pairing chose
+  the wrong ones. Hits are now clustered by line gap with a prose-count
+  break between them (`spine.cluster_hits`); a cluster of five or more is
+  contents-shaped. Density is not used.
+- **The profiled region precedes the blank-line rule; it does not replace
+  it.** The profile sees numbered sequences only. Forty-four books list
+  named chapters, stories or poems, and the blank-line rule bounds those as
+  it always has. `detect_toc` now tries the profiled region first, anchored
+  to the CONTENTS marker (within 250 lines of it: the thirty dense regions
+  deep inside Marcus Aurelius, Ruskin and Diogenes Laertius are the book,
+  not its contents, and stay out of reach), then the blank-line rule, then
+  #103's decline.
+- **Step 3 is dropped.** The repeat-count guard is for Title-Case story
+  titles, which the spine cannot see. The numeral lookaheads are equivalent
+  to the profile's whole-token parse; retiring them changes no behaviour and
+  goes with step 4.
+- **Gate result** (243 books against a pristine worktree): 13 books lose
+  listing text only -- Moby Dick 807 words and 136 duplicate headings; Les
+  Miserables, War and Peace, Innocents Abroad, Hunchback, Mungo Park,
+  Longfellow, Candide and others. The Education of Henry Adams gets its
+  editor's preface back, 663 words the blank-line rule had deleted. 27
+  books leak a stray trailing entry or a partial listing (A Lady's Life in
+  the Rocky Mountains, 12 duplicate LETTER headings, its descriptive entries
+  reading as prose; White Fang 5; Kant). No book loses body text. Moby
+  Dick: 135 chapter headings once each, "Call me Ishmael." intact.
+- **Three defects the gate caught that no test did.** Cross-template
+  merging within 100 lines deleted Wallace's preface, which sits between
+  his contents and a five-item list inside the preface; it now requires
+  the same prose check as within-template merging. The trim's "followed by
+  prose" horizon stopped at the trailing hit's neighbour, which in Sherlock
+  Holmes is the story's own part number, and was capped at twenty lines,
+  short of the prose beyond Emerson's poem epigraph; it now runs to the
+  first hit beyond the cluster.
+- **Known residual leaks**, all in the accepted direction: the last entry's
+  wrapped continuation lines (Twain, Wollstonecraft, Verne); unnumbered
+  trailing entries ("Epilogue", "Notes", "Footnotes"), which the converter's
+  heading continuation then merges into the body's first heading
+  (Aristotle's "NOTES INTRODUCTION"); and periodless bare romans (Cary's
+  Divine Comedy, The Awakening), which the profile does not recognise.

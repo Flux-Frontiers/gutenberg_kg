@@ -328,11 +328,19 @@ def cluster_hits(lines: list[str], hits: list[Hit], template: str) -> list[Clust
     split off as a cluster of its own, and the check repeats in case the
     new last hit is one too.
 
-    "After" means up to the next hit of the same template, not a fixed
-    distance. A listing entry whose next entry is one line away has nothing
-    after it, whatever lies twenty lines further on; scanning a fixed
-    window past the next hit read the body's prose back onto the last
-    dozen listing entries and trimmed them all.
+    "After" means up to the first hit beyond the cluster, however far that
+    is. A listing entry whose next entry is one line away has nothing after
+    it, whatever lies twenty lines further on; scanning a fixed window past
+    the next hit read the body's prose back onto the last dozen listing
+    entries and trimmed them all. But the bound is the first hit that will
+    *remain* outside the cluster, not the trailing hit's own neighbour:
+    the first story in The Adventures of Sherlock Holmes opens ``I. A
+    SCANDAL IN BOHEMIA`` and, two lines on, its part number ``I.``, and
+    only after that the prose. Bounding the title by its own part number
+    found no prose and left the title in the listing. Nor is the bound a
+    fixed distance on: Emerson's ``I.`` before "History" is followed by a
+    poem epigraph, and the prose that proves it a body heading begins some
+    twenty lines later.
 
     Prose after a trailing hit is necessary but not sufficient: the
     listing's own last entry is followed by prose too whenever a preface or
@@ -352,16 +360,6 @@ def cluster_hits(lines: list[str], hits: list[Hit], template: str) -> list[Clust
     if not hits:
         return []
     by_line = sorted(hits, key=lambda h: h.line)
-    # For each hit, how far "what follows it" extends: to the next hit, or
-    # one cluster gap on if there is none close enough to bound it.
-    horizons = [
-        min(nxt.line, cur.line + _CLUSTER_GAP + 1) for cur, nxt in zip(by_line, by_line[1:])
-    ]
-    horizons.append(by_line[-1].line + _CLUSTER_GAP + 1)
-    followed_by_prose = [
-        _prose_lines_between(lines, hit.line, horizon) >= _PROSE_BREAK
-        for hit, horizon in zip(by_line, horizons)
-    ]
 
     groups: list[list[int]] = [[0]]
     for i in range(1, len(by_line)):
@@ -374,11 +372,15 @@ def cluster_hits(lines: list[str], hits: list[Hit], template: str) -> list[Clust
 
     result: list[list[int]] = []
     for group in groups:
+        # What follows a trailing hit runs to the first hit beyond this
+        # cluster, not to a neighbour that is itself about to be split off.
+        after = group[-1] + 1
+        horizon = by_line[after].line if after < len(by_line) else len(lines)
         split_off: list[int] = []
         while (
             len(group) > 1
-            and followed_by_prose[group[-1]]
             and by_line[group[-1]].number <= by_line[group[-2]].number
+            and _prose_lines_between(lines, by_line[group[-1]].line, horizon) >= _PROSE_BREAK
         ):
             split_off.append(group.pop())
         result.append(group)
@@ -409,12 +411,20 @@ def contents_regions(lines: list[str]) -> list[tuple[int, int]]:
     """Every contents-shaped region found, across all templates.
 
     Regions from *different* templates within :data:`_CONTENTS_MERGE_GAP`
-    of each other are combined -- Longfellow's Divine Comedy lists
-    Inferno's contents as ``CANTO I..XXXIV`` and Purgatorio's a few lines
-    later as a bare ``I..XXXIII``, five lines apart and each its own
-    template, but unmistakably one contents listing. Only regions that are
-    already contents-shaped on their own take part, so this can never pull
-    a lone real heading into the deleted range.
+    of each other, with nothing but listing between them, are combined --
+    Longfellow's Divine Comedy lists Inferno's contents as ``CANTO
+    I..XXXIV`` and Purgatorio's a few lines later as a bare ``I..XXXIII``,
+    five lines apart and each its own template, but unmistakably one
+    contents listing. Only regions that are already contents-shaped on
+    their own take part, so this can never pull a lone real heading into
+    the deleted range.
+
+    Proximity alone is not enough. Wallace's Malay Archipelago lists its
+    twenty chapters, then prints its preface, and in that preface a
+    five-item list of island groups, ``I. THE INDO-MALAY ISLANDS`` on. The
+    two lists are seventy lines apart and the seventy lines are the
+    preface. The prose test that keeps a body chapter out of a cluster
+    keeps the preface out of the region.
 
     :param lines: A book's lines, split on ``\\n``.
     :returns: ``(start, end)`` line ranges (inclusive), merged where they
@@ -428,7 +438,11 @@ def contents_regions(lines: list[str]) -> list[tuple[int, int]]:
     )
     merged: list[tuple[int, int]] = []
     for start, end in spans:
-        if merged and start - merged[-1][1] <= _CONTENTS_MERGE_GAP:
+        if (
+            merged
+            and start - merged[-1][1] <= _CONTENTS_MERGE_GAP
+            and _prose_lines_between(lines, merged[-1][1], start) < _PROSE_BREAK
+        ):
             merged[-1] = (merged[-1][0], max(merged[-1][1], end))
         else:
             merged.append((start, end))
