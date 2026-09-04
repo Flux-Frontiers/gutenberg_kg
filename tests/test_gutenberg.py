@@ -1083,3 +1083,27 @@ def test_looks_like_story_title_rejects_prose_and_captions():
     assert not _looks_like_story_title("Frontispiece Volume One")
     assert not _looks_like_story_title("he went down to the sea again")
     assert not _looks_like_story_title("She turned and walked away slowly.")
+
+
+def test_text_to_markdown_keeps_the_book_when_the_contents_end_cannot_be_found():
+    """Declining to skip must never cost the reader text.
+
+    detect_toc deletes everything it returns, and its end-rule wants three
+    consecutive blank lines. Books that separate paragraphs with one never
+    satisfy it, so the scan ran to its bound and took the start of the book
+    with it: Jekyll and Hyde lost its chapter heading and Stevenson's
+    opening, and the committed text began mid-scene on Enfield talking.
+    A contents list leaking in as text is the cheaper failure.
+    """
+    entries = [f"CHAPTER {n}. Chapter number {n}." for n in range(1, 60)]
+    text = "\n\n".join(
+        [
+            "CONTENTS",
+            *entries,
+            "STORY OF THE DOOR",
+            "Mr. Utterson the lawyer was a man of a rugged countenance.",
+        ]
+    )
+    result = text_to_markdown(text, {"title": "T", "author": "A"})
+    assert "Mr. Utterson the lawyer was a man of a rugged countenance." in result
+    assert "STORY OF THE DOOR" in result
