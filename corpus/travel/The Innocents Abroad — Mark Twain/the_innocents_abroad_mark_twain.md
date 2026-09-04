@@ -10,6 +10,223 @@ by Mark Twain
 
 [From an 1869--1st Edition]
 
+### CONTENTS CHAPTER I.
+
+Popular Talk of the Excursion--Programme of the Trip--Duly Ticketed for
+the Excursion--Defection of the Celebrities
+
+## CHAPTER II.
+
+Grand Preparations--An Imposing Dignitary--The European Exodus
+--Mr. Blucher's Opinion--Stateroom No. 10--The Assembling of the Clans
+--At Sea at Last
+
+## CHAPTER III.
+
+“Averaging” the Passengers--Far, far at Sea.--Tribulation among the
+Patriarchs--Seeking Amusement under Difficulties--Five Captains in the
+Ship
+
+## CHAPTER IV.
+
+The Pilgrims Becoming Domesticated--Pilgrim Life at Sea
+--“Horse-Billiards”--The “Synagogue”--The Writing School--Jack's “Journal”
+--The “Q. C. Club”--The Magic Lantern--State Ball on Deck--Mock Trials
+--Charades--Pilgrim Solemnity--Slow Music--The Executive Officer Delivers
+an Opinion
+
+## CHAPTER V.
+
+Summer in Mid-Atlantic--An Eccentric Moon--Mr. Blucher Loses Confidence
+--The Mystery of “Ship Time”--The Denizens of the Deep--“Land Hoh”
+--The First Landing on a Foreign Shore--Sensation among the Natives
+--Something about the Azores Islands--Blucher's Disastrous Dinner
+--The Happy Result
+
+## CHAPTER VI.
+
+Solid Information--A Fossil Community--Curious Ways and Customs
+--Jesuit Humbuggery--Fantastic Pilgrimizing--Origin of the Russ Pavement
+--Squaring Accounts with the Fossils--At Sea Again
+
+## CHAPTER VII.
+
+A Tempest at Night--Spain and Africa on Exhibition--Greeting a Majestic
+Stranger--The Pillars of Hercules--The Rock of Gibraltar--Tiresome
+Repetition--“The Queen's Chair”--Serenity Conquered--Curiosities of
+the Secret Caverns--Personnel of Gibraltar--Some Odd Characters
+--A Private Frolic in Africa--Bearding a Moorish Garrison (without loss
+of life)--Vanity Rebuked--Disembarking in the Empire of Morocco
+
+## CHAPTER VIII.
+
+The Ancient City of Tangier, Morocco--Strange Sights--A Cradle of
+Antiquity--We become Wealthy--How they Rob the Mail in Africa--The Danger
+of being Opulent in Morocco
+
+## CHAPTER IX.
+
+A Pilgrim--in Deadly Peril--How they Mended the Clock--Moorish
+Punishments for Crime--Marriage Customs--Looking Several ways for Sunday
+--Shrewd, Practice of Mohammedan Pilgrims--Reverence for Cats--Bliss of
+being a Consul-General
+
+## CHAPTER X.
+
+Fourth of July at Sea--Mediterranean Sunset--The “Oracle” is Delivered
+of an Opinion--Celebration Ceremonies--The Captain's Speech--France in
+Sight--The Ignorant Native--In Marseilles--Another Blunder--Lost in
+the Great City--Found Again--A Frenchy Scene
+
+## CHAPTER XI.
+
+Getting used to it--No Soap--Bill of Fare, Table d'hote--“An American
+Sir”--A Curious Discovery--The “Pilgrim” Bird--Strange Companionship
+--A Grave of the Living--A Long Captivity--Some of Dumas' Heroes--Dungeon
+of the Famous “Iron Mask.”
+
+## CHAPTER XII.
+
+A Holiday Flight through France--Summer Garb of the Landscape--Abroad
+on the Great Plains--Peculiarities of French Cars--French Politeness
+American Railway Officials--“Twenty Minutes to Dinner!”--Why there
+are no Accidents--The “Old Travellers”--Still on the Wing--Paris at
+Last----French Order and Quiet--Place of the Bastile--Seeing the Sights
+--A Barbarous Atrocity--Absurd Billiards
+
+## CHAPTER XIII.
+
+More Trouble--Monsieur Billfinger--Re-Christening the Frenchman--In the
+Clutches of a Paris Guide--The International Exposition--Fine Military
+Review--Glimpse of the Emperor Napoleon and the Sultan of Turkey
+
+## CHAPTER XIV.
+
+The Venerable Cathedral of Notre-Dame--Jean Sanspeur's Addition
+--Treasures and Sacred Relics--The Legend of the Cross--The Morgue--The
+Outrageious 'Can-Can'--Blondin Aflame--The Louvre Palace--The Great Park
+--Showy Pageantry--Preservation of Noted Things
+
+## CHAPTER XV.
+
+French National Burying--Ground--Among the Great Dead--The Shrine of
+Disappointed Love--The Story of Abelard and Heloise--“English Spoken
+Here”--“American Drinks Compounded Here”--Imperial Honors to an
+American--The Over-estimated Grisette--Departure from Paris--A Deliberate
+Opinion Concerning the Comeliness of American Women
+
+## CHAPTER XVI.
+
+Versailles--Paradise Regained--A Wonderful Park--Paradise Lost
+--Napoleonic Strategy
+
+## CHAPTER XVII.
+
+War--The American Forces Victorious--” Home Again”--Italy in Sight
+The “City of Palaces”--Beauty of the Genoese Women--The “Stub-Hunters”
+--Among the Palaces--Gifted Guide--Church Magnificence--“Women not
+Admitted”--How the Genoese Live--Massive Architecture--A Scrap of Ancient
+History--Graves for 60,000
+
+## CHAPTER XVIII.
+
+Flying Through Italy--Marengo--First Glimpse of the Famous Cathedral
+--Description of some of its Wonders--A Horror Carved in Stone----An
+Unpleasant Adventure--A Good Man--A Sermon from the Tomb--Tons of Gold
+and Silver--Some More Holy Relics--Solomon's Temple
+
+## CHAPTER XIX
+
+“Do You Wiz zo Haut can be?”--La Scala--Petrarch and Laura--Lucrezia
+Borgia--Ingenious Frescoes--Ancient Roman Amphitheatre--A Clever
+Delusion--Distressing Billiards--The Chief Charm of European Life--An
+Italian Bath--Wanted: Soap--Crippled French--Mutilated English--The Most
+Celebrated Painting in the World--Amateur Raptures--Uninspired Critics
+--Anecdote--A Wonderful Echo--A Kiss for a Franc
+
+## CHAPTER XX
+
+Rural Italy by Rail--Fumigated, According to Law--The Sorrowing
+Englishman--Night by the Lake of Como--The Famous Lake--Its Scenery
+--Como compared with Tahoe--Meeting a Shipmate
+
+## CHAPTER XXI.
+
+The Pretty Lago di Lecco--A Carriage Drive in the Country--Astonishing
+Sociability in a Coachman--Sleepy Land--Bloody Shrines--The Heart and
+Home of Priestcraft--A Thrilling Mediaeval Romance--The Birthplace of
+Harlequin--Approaching Venice
+
+## CHAPTER XXII.
+
+Night in Venice--The “Gay Gondolier”--The Grand Fete by Moonlight
+--The Notable Sights of Venice--The Mother of the Republics Desolate
+
+CHANTER XXIII.
+The Famous Gondola--The Gondola in an Unromantic Aspect--The Great Square
+of St. Mark and the Winged Lion--Snobs, at Home and Abroad--Sepulchres of
+the Great Dead--A Tilt at the “Old Masters”--A Contraband Guide
+--The Conspiracy--Moving Again
+
+## CHAPTER XXIV.
+
+Down Through Italy by Rail--Idling in Florence--Dante and Galileo--An
+Ungrateful City--Dazzling Generosity--Wonderful Mosaics--The Historical
+Arno--Lost Again--Found Again, but no Fatted Calf Ready--The Leaning
+Tower of Pisa--The Ancient Duomo--The Old Original First Pendulum that
+Ever Swung--An Enchanting Echo--A New Holy Sepulchre--A Relic of
+Antiquity--A Fallen Republic--At Leghorn--At Home Again, and Satisfied,
+on Board the Ship--Our Vessel an Object of Grave Suspicion--Garibaldi
+Visited--Threats of Quarantine
+
+## CHAPTER XXV.
+
+The Works of Bankruptcy--Railway Grandeur--How to Fill an Empty
+Treasury--The Sumptuousness of Mother Church--Ecclesiastical Splendor
+--Magnificence and Misery--General Execration--More Magnificence
+A Good Word for the Priests--Civita Vecchia the Dismal--Off for Rome
+
+## CHAPTER XXVI.
+
+The Modern Roman on His Travels--The Grandeur of St. Peter's--Holy Relics
+--Grand View from the Dome--The Holy Inquisition--Interesting Old Monkish
+Frauds--The Ruined Coliseum--The Coliseum in the Days of its Prime
+--Ancient Playbill of a Coliseum Performance--A Roman Newspaper Criticism
+1700 Years Old
+
+## CHAPTER XXVII.
+
+“Butchered to Make a Roman Holiday”--The Man who Never Complained
+--An Exasperating Subject--Asinine Guides--The Roman Catacombs
+The Saint Whose Fervor Burst his Ribs--The Miracle of the Bleeding Heart
+--The Legend of Ara Coeli
+
+## CHAPTER XXVIII.
+
+Picturesque Horrors--The Legend of Brother Thomas--Sorrow Scientifically
+Analyzed--A Festive Company of the Dead--The Great Vatican Museum
+Artist Sins of Omission--The Rape of the Sabines--Papal Protection of
+Art--High Price of “Old Masters”--Improved Scripture--Scale of Rank
+of the Holy Personages in Rome--Scale of Honors Accorded Them
+--Fossilizing--Away for Naples
+
+## CHAPTER XXIX.
+
+Naples--In Quarantine at Last--Annunciation--Ascent of Mount Vesuvius--A
+Two Cent Community--The Black Side of Neapolitan Character--Monkish
+Miracles--Ascent of Mount Vesuvius Continued--The Stranger and the
+Hackman--Night View of Naples from the Mountain-side---Ascent of Mount
+Vesuvius Continued
+
+## CHAPTER XXX.
+
+Ascent of Mount Vesuvius Continued--Beautiful View at Dawn--Less
+Beautiful in the Back Streets--Ascent of Vesuvius Continued--Dwellings a
+Hundred Feet High--A Motley Procession--Bill of Fare for a Peddler's
+Breakfast--Princely Salaries--Ascent of Vesuvius Continued--An Average of
+Prices--The wonderful “Blue Grotto”--Visit to Celebrated Localities in
+the Bay of Naples--The Poisoned “Grotto of the Dog”--A Petrified Sea of
+Lava--Ascent of Mount Vesuvius Continued--The Summit Reached--Description
 of the Crater--Descent of Vesuvius
 
 ## CHAPTER XXXI.

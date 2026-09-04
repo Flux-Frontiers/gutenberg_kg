@@ -527,4 +527,12 @@ def detect_toc(lines: list[str], start: int, end: int) -> tuple[int, int] | None
             blank_count = 0
         i += 1
 
-    return (toc_start, i)
+    # No end found. Everything this function returns gets deleted from the
+    # document, so guessing here is not a neutral act: Jekyll and Hyde's
+    # contents are separated by single blank lines, neither rule above ever
+    # fired, and the run to the bound swallowed the chapter heading and the
+    # opening of the story -- the committed text begins mid-scene, on
+    # Enfield already talking. Declining costs a duplicate heading or two
+    # where the contents leak in as text; guessing costs the reader a
+    # chapter.
+    return None

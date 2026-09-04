@@ -107,6 +107,63 @@ the Society itself, and the progress of discovery, previous to my
 expedition, the fullest information has already been given in the
 various publications which the Society have caused to be made.]
 
+CONTENTS.
+* * * * *
+
+## CHAPTER I.
+
+_The Author’s Motives for undertaking the Voyage — his
+Instructions and Departure — arrives at Jillifree, on the
+Gambia River — proceeds to Vintain. — Some Account of the
+Feloops. — Proceeds up the River for Jonkakonda — arrives
+at Dr. Laidley’s. — Some Account of Pisania, and the
+British Factory established at that Place. — The Author’s
+Employment during his Stay at Pisania — his Sickness and
+Recovery — the Country described — prepares to set out for
+the Interior._                                                _page_ 1
+
+## CHAPTER II.
+
+_Description of the Feloops, the Jaloffs, the Foulahs, and
+Mandingoes. — Some Account of the Trade between the Nations
+of Europe and the Natives of Africa by the Way of the
+Gambia, and between the Native Inhabitants of the Coast and
+the Nations of the interior Countries — their Mode of
+selling and buying, &c._                                       _p._ 15
+
+## CHAPTER III.
+
+_The Author sets out from Pisania — his Attendants —
+reaches Jindey. — Story related by a Mandingo Negro. —
+Proceeds to Medina, the Capital of Woolli. — Interview with
+the King. — Saphies or Charms. — Proceeds to Kolor. —
+Description of Mumbo Jumbo — arrives at Koojar — wrestling
+Match. — Crosses the Wilderness, and arrives at Tallika, in
+the Kingdom of Bondou._                                        _p._ 29
+
+## CHAPTER IV.
+
+_Some Account of the Inhabitants of Tallika. — The Author
+proceeds for Fatteconda — Incidents on the Road. — Crosses
+the Neriko, arrives at Koorkarany — reaches the River
+Falemé — Fishery on that River — proceeds along its Bank to
+Naye or Nayemow — crosses the Falemé and arrives at
+Fatteconda. — Has an Interview with Almami, the Sovereign
+of Bondou. — Description of the King’s Dwelling — has a
+second Interview with the King, who begs the Author’s Coat.
+— Author visits the King’s Wives — is permitted to depart
+on friendly Terms. — Journey by Night — arrives at Joag. —
+Some Account of Bondou and its Inhabitants the
+Foulahs._                                                      _p._ 46
+
+## CHAPTER V.
+
+_Account of Kajaaga. — Serawoollies — their Manners and
+Language. — Account of Joag. — The Author is ill treated,
+and robbed of half of his Effects, by Order of Batcheri,
+the King. — Charity of a female Slave. — The Author is
+visited by Demba Sego, Nephew of the King of Kasson, who
+offers to conduct him in safety to that Kingdom. — Offer
 accepted. — The Author and his Protector, with a numerous
 Retinue, set out and reach Samee, on the Banks of the
 Senegal. — Proceed to Kayee, and crossing the Senegal,
