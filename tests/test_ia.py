@@ -688,3 +688,43 @@ def test_run_catalog_does_not_invent_a_genre(tmp_path: Path, monkeypatch):
     monkeypatch.setattr(_ia, "download_book", _fake_download)
     _ia.run_catalog(str(cat), genre=None)
     assert seen["genre"] is None
+
+
+# ---------------------------------------------------------------------------
+# Shared heading vocabulary (see gutenberg_kg.headings)
+# ---------------------------------------------------------------------------
+
+
+def test_ia_inherits_the_shared_word_numeral_rule():
+    """Scans get the Gutenberg heading work now, not a weaker fork of it."""
+    result = _is_heading("CHAPTER ONE")
+    assert result is not None
+    assert result[0] == 2
+
+
+def test_ia_inherits_title_case_front_matter():
+    result = _is_heading("Foreword")
+    assert result is not None
+
+
+def test_ia_keeps_its_ques_pattern():
+    result = _is_heading("Ques. What is an ampere?")
+    assert result is not None
+    assert result[0] == 4
+
+
+def test_ia_section_numeral_must_be_a_whole_token():
+    """ "Section locking, 3,954." is prose; IGNORECASE made 'l' a roman numeral."""
+    assert _is_heading("SECTION 3") is not None
+    assert _is_heading("Section locking, 3,954.") is None
+
+
+def test_ia_drops_the_bare_roman_divider():
+    """In a scan a lone "I." is a page number far more often than a heading."""
+    assert _is_heading("I.") is None
+
+
+def test_ia_ocr_guards_still_reject_noise():
+    assert _is_heading("A") is None
+    assert _is_heading("1234") is None
+    assert _is_heading("THE END.") is None

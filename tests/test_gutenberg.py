@@ -11,8 +11,6 @@ from gutenberg_kg.gutenberg import (
     _detect_toc,
     _find_book_by_id,
     _is_heading,
-    _looks_like_story_title,
-    _repeated_title_lines,
     _skip_front_matter,
     _survey_book_dir,
     parse_catalog,
@@ -20,6 +18,12 @@ from gutenberg_kg.gutenberg import (
     strip_boilerplate,
     text_to_markdown,
     write_reference,
+)
+from gutenberg_kg.headings import (
+    looks_like_story_title as _looks_like_story_title,
+)
+from gutenberg_kg.headings import (
+    repeated_title_lines as _repeated_title_lines,
 )
 
 # ---------------------------------------------------------------------------

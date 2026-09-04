@@ -28,6 +28,8 @@ from pathlib import Path
 
 from gutenberg_kg.authors import parse_reference
 from gutenberg_kg.genres import IA_GENRES as ALL_GENRES
+from gutenberg_kg.headings import HEADING_PATTERNS as SHARED_HEADING_PATTERNS
+from gutenberg_kg.headings import ROMAN_STANDALONE_PATTERN, is_heading
 
 # ---------------------------------------------------------------------------
 # Constants
@@ -60,45 +62,33 @@ LIGATURES: dict[str, str] = {
 # Each tuple: (compiled regex, markdown heading level)
 # ---------------------------------------------------------------------------
 
-HEADING_PATTERNS = [
-    # CHAPTER I / CHAPTER 1 / CHAPTER XIV — optional subtitle after separator
-    (
-        re.compile(
-            r"^CHAPTER\s+(?:[IVXLCDM]{1,7}|\d+)\.?"
-            r"(?:\s*[-—:.]?\s*(.+))?$",
-            re.IGNORECASE,
-        ),
-        2,
-    ),
-    # PART ONE / PART I / PART 1 — optional subtitle
-    (
-        re.compile(
-            r"^PART\s+(?:ONE|TWO|THREE|FOUR|FIVE|SIX|SEVEN|EIGHT|NINE|TEN|"
-            r"[IVXLCDM]{1,7}|\d+)\.?"
-            r"(?:\s*[-—:.]?\s*(.+))?$",
-            re.IGNORECASE,
-        ),
-        2,
-    ),
-    # SECTION / DIVISION — numbered
-    (
-        re.compile(
-            r"^(?:SECTION|DIVISION)\s+(?:[IVXLCDM]{1,7}|\d+)\.?"
-            r"(?:\s*[-—:.]?\s*(.+))?$",
-            re.IGNORECASE,
-        ),
-        2,
-    ),
-    # Standalone ALL-CAPS heading: 3-60 chars, only uppercase letters/spaces/basic punct
-    # e.g. "DIRECT CURRENTS", "OHM'S LAW AND ITS APPLICATIONS"
-    (re.compile(r"^([A-Z][A-Z\s\-\',:]{2,59})$"), 3),
-    # Q&A format: "Ques. <question text>" — each question becomes an h4 graph node
-    (re.compile(r"^Ques\.\s+(.{5,120})$", re.IGNORECASE), 4),
-]
+#: The Q&A form the Audels manuals are written in; every question becomes a
+#: node of its own. Nothing outside these scans uses it, so it stays here.
+QUES_PATTERN = re.compile(r"^Ques\.\s+(.{5,120})$", re.IGNORECASE)
 
-# Indices into HEADING_PATTERNS for special handling
-_PAT_ALL_CAPS = 3
-_PAT_QUES = 4
+#: SECTION / DIVISION numbering, which these manuals use and Gutenberg texts
+#: do not. The numeral must be a whole token: without that guard IGNORECASE
+#: lets the roman class match an ordinary letter, and "Section locking, 3,954."
+#: became a heading -- five such lines in Vol 8 alone.
+SECTION_PATTERN = re.compile(
+    r"^(?:SECTION|DIVISION)\s+(?:[IVXLCDM]+|\d+)(?![A-Za-z])\.?"
+    r"(?:\s*[-—:.]?\s*(.+))?$",
+    re.IGNORECASE,
+)
+
+#: The Archive's vocabulary: the shared one, plus Q&A. It used to be a
+#: separate list knowing only CHAPTER, PART, SECTION and DIVISION, so a
+#: scanned book got none of the work done on title pages, word numerals or
+#: templated titles. Ques. leads so a question is never claimed by a
+#: broader rule.
+#: A bare roman numeral ("I.") divides sections in typed prose, but in a
+#: scan it is a page number or a list marker far more often than a heading,
+#: so it is dropped here.
+HEADING_PATTERNS = [
+    (QUES_PATTERN, 4),
+    (SECTION_PATTERN, 2),
+    *((p, lvl) for p, lvl in SHARED_HEADING_PATTERNS if p is not ROMAN_STANDALONE_PATTERN),
+]
 
 # Illustration / figure markers to strip
 FIGURE_RE = re.compile(
@@ -334,43 +324,30 @@ def clean_ocr(text: str) -> str:
 # ---------------------------------------------------------------------------
 
 
+def _ocr_all_caps_guard(stripped: str) -> bool:
+    """Extra rejection for ALL-CAPS lines in scanned text.
+
+    OCR turns page furniture into things that look like headings: a stray
+    letter, a run of digits, a full stop the typesetter never wrote. Typed
+    Gutenberg text needs none of this, so it is applied only here.
+
+    :param stripped: The candidate heading line.
+    :returns: ``True`` if the line still looks like a heading.
+    """
+    if stripped.endswith((".", "!", "?")):
+        return False
+    words = stripped.split()
+    if len(words) == 1 and len(stripped) < 5:
+        return False
+    return any(c.isalpha() for c in stripped)
+
+
 def _is_heading(line: str) -> tuple[int, str] | None:
     """Check if a stripped line is a structural heading.
 
     Returns (level, heading_text) or None.
     """
-    stripped = line.strip()
-    if not stripped or len(stripped) > 120:
-        return None
-
-    for idx, (pattern, level) in enumerate(HEADING_PATTERNS):
-        m = pattern.match(stripped)
-        if not m:
-            continue
-
-        if idx == _PAT_ALL_CAPS:
-            # Reject sentence-like lines and noise
-            if stripped.endswith((".", "!", "?", ",", ";")):
-                continue
-            if len(stripped) > 60:
-                continue
-            words = stripped.split()
-            if len(words) > 8:
-                continue
-            # Reject single very short words (OCR noise)
-            if len(words) == 1 and len(stripped) < 5:
-                continue
-            # Must contain at least one alphabetic char
-            if not any(c.isalpha() for c in stripped):
-                continue
-
-        # For Ques. pattern, return the full line as heading text
-        if idx == _PAT_QUES:
-            return (level, stripped)
-
-        return (level, stripped)
-
-    return None
+    return is_heading(line, HEADING_PATTERNS, all_caps_guard=_ocr_all_caps_guard)
 
 
 _STRUCTURAL_HEADING_RE = re.compile(r"^(?:CHAPTER|PART|SECTION|DIVISION)\s+", re.IGNORECASE)
