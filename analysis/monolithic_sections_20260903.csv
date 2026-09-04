@@ -1,0 +1,249 @@
+share_in_largest_section,sections,chunks_in_largest,largest_chars,total_chars,largest_section_title,genre,book
+1.0000,1,1451,598071,598071,One Thousand and One Nights (Lane translation),world-literature,One Thousand and One Nights (Lane translation)
+1.0000,1,1099,458337,458337,THE TRIAL,german-literature,The Trial (Kafka)
+1.0000,1,429,179568,179568,SYMPOSIUM,philosophy,The Symposium (Plato)
+1.0000,1,314,127330,127330,THE AUTOBIOGRAPHY OF CHARLES DARWIN,natural-history,Autobiography of Charles Darwin
+1.0000,1,240,102239,102239,The Dunwich Horror,horror,The Dunwich Horror
+1.0000,1,172,69879,69879,The Legend of Sleepy Hollow (Irving),american-literature,The Legend of Sleepy Hollow (Irving)
+1.0000,1,163,70283,70283,THE COLOUR OUT OF SPACE,horror,The Colour Out of Space
+1.0000,1,156,64066,64066,The Shunned House,horror,The Shunned House
+1.0000,1,127,52160,52160,On the Duty of Civil Disobedience (Thoreau),philosophy,On the Duty of Civil Disobedience (Thoreau)
+1.0000,1,71,32345,32345,The Yellow Wallpaper,american-literature,The Yellow Wallpaper
+1.0000,1,47,19482,19482,A Modest Proposal,english-literature,A Modest Proposal
+0.9985,2,196,87969,88101,DRAMATIS PERSONAE,ancient-classical,The Clouds (Aristophanes)
+0.9940,2,382,180521,181614,HEDDA GABLER,drama,Hedda Gabler — Henrik Ibsen
+0.9915,2,535,222389,224286,THE CHEMICAL HISTORY OF A CANDLE LECTURE I.,natural-history,The Chemical History of a Candle — Michael Faraday
+0.9873,3,1015,451772,457587,"INCIDENTS IN THE LIFE OF A SLAVE GIRL, SEVEN YEARS CONCEALED.",biography,Incidents in the Life of a Slave Girl — Harriet Jacobs
+0.9870,3,885,375758,380699,BENJAMIN FRANKLIN HIS AUTOBIOGRAPHY,biography,Autobiography of Benjamin Franklin
+0.9868,3,95,42047,42608,LIST OF ILLUSTRATIONS WITH NAMES OF ENGRAVERS,american-literature,The Raven and Other Poems (Poe)
+0.9819,5,650,309016,314711,Book II,philosophy,Second Treatise of Government
+0.9801,5,289,124579,127113,AUTHOR,philosophy,Common Sense
+0.9793,4,352,167761,171299,BUILDING-PLANS,drama,The Master Builder
+0.9761,3,176,81501,83500,A CHORUS OF FROGS A CHORUS OF INITIATED PERSONS,ancient-classical,The Frogs
+0.9740,3,2847,1212771,1245130,INTRODUCTION,biography,The Life of Samuel Johnson — James Boswell
+0.9553,3,267,120207,125838,EUELPIDES PISTHETAERUS,ancient-classical,The Birds (Aristophanes)
+0.9191,3,221,92082,100191,ON THE NATURAL HISTORY OF THE MAN-LIKE APES,natural-history,Man's Place in Nature — Thomas H. Huxley
+0.9155,2,393,179308,195861,Faust Part I (Goethe),german-literature,Faust Part I (Goethe)
+0.8750,59,1270,564799,645487,THUS SPAKE ZARATHUSTRA A BOOK FOR ALL AND NONE,philosophy,Thus Spake Zarathustra
+0.8700,53,672,290314,333689,TRANSLATED BY GEORGE LONG CONTENTS.,ancient-classical,A Selection from the Discourses of Epictetus with the Encheiridion
+0.8293,4,141,63533,76607,GITANJALI,world-literature,Gitanjali (Tagore)
+0.8275,4,645,270856,327302,THE BIRTH OF TRAGEDY FROM THE SPIRIT OF MUSIC,philosophy,"The Birth of Tragedy; or, Hellenism and Pessimism"
+0.8047,7,187,84158,104587,"OEDIPUS, KING OF THEBES",ancient-classical,Oedipus King of Thebes
+0.7437,2,474,196123,263712,The Case of Charles Dexter Ward,horror,The Case of Charles Dexter Ward
+0.7337,4,1439,607370,827823,Book III.,ancient-classical,"Minor Dialogues, Together With the Dialogue on Clemency"
+0.6997,4,1063,449103,641835,COMPLEMENTAL VERSES,american-literature,Walden
+0.6985,2,157,67894,97201,III,horror,The Shadow over Innsmouth
+0.6928,2,351,149806,216218,Heart of Darkness,english-literature,Heart of Darkness
+0.6916,2,143,59930,86658,APOLOGY,philosophy,Apology (Plato)
+0.6782,2,120,48140,70985,The Call of Cthulhu,horror,The Call of Cthulhu
+0.6587,2,190,79030,119984,The Metamorphosis (Kafka),german-literature,The Metamorphosis (Kafka)
+0.6456,5,170,80676,124972,SCENE,drama,The Importance of Being Earnest — Oscar Wilde
+0.6339,2,358,149781,236286,PHAEDO PERSONS OF THE DIALOGUE:,philosophy,Phaedo (Plato)
+0.6282,6,169,74808,119075,THE TRAGICAL HISTORY OF DOCTOR FAUSTUS FROM THE QUARTO OF 1604.,drama,Doctor Faustus — Christopher Marlowe
+0.6155,59,799,319734,519439,XIV -- TO CORNELIUS TACITUS,letters,Letters of Pliny the Younger
+0.6040,6,498,203597,337088,III,russian-literature,Oblomov
+0.6033,8,156,69574,115325,D.,ancient-classical,Medea of Euripides
+0.5937,5,189,77327,130251,THE LAST NIGHT,english-literature,The Strange Case of Dr Jekyll and Mr Hyde
+0.5757,5,1632,661246,1148572,HAMILTON,philosophy,The Federalist Papers
+0.5708,12,1058,454445,796150,ON THE SEA,letters,Letters of John Keats to His Family and Friends
+0.5662,35,2367,1008199,1780651,FOOTNOTES:,philosophy,The Crown of Wild Olive
+0.5565,18,529,225169,404629,III,horror,The King in Yellow
+0.5459,2,75,32335,59233,PART II.,sacred-texts,Tao Te Ching (James Legge translation)
+0.5380,8,359,149049,277031,"The Song of Mowgli—I, Mowgli, am singing. Let the jungle listen to the",english-literature,The Jungle Book (Kipling)
+0.5190,5,214,91434,176163,TO THE METAPHYSIC OF MORALS,philosophy,Groundwork of the Metaphysics of Morals (Kant)
+0.4899,4,139,58365,119130,III THE CITY OF RESURRECTIONS,horror,The Great God Pan
+0.4811,3,463,201271,418338,"MY DEAR WIFE,--",horror,Tales of Terror and Mystery
+0.4756,4,223,96549,203020,PART II:  OTHER WORLDS,science-fiction,Flatland
+0.4671,4,736,311275,666424,Part II,french-literature,Madame Bovary
+0.4573,6,120,50821,111134,IV.,horror,The Willows
+0.4210,25,250,74299,176501,CHORUS,ancient-classical,"The House of Atreus; Being the Agamemnon, the Libation bearers, and the Furies"
+0.4198,11,296,129725,309026,III,american-literature,O Pioneers! (Cather)
+0.4149,28,1426,610814,1472167,III,russian-literature,"The possessed :  or, The devils"
+0.4068,14,397,171773,422237,PREFACE,philosophy,"The Twilight of the Idols; or, How to Philosophize with the Hammer. The Antichrist"
+0.3941,4,128,59719,151542,ACT I,drama,A Doll's House — Henrik Ibsen
+0.3907,3,165,75720,193815,ACT III,drama,Major Barbara
+0.3801,7,684,285344,750622,"CHAPTER IV. TRAVELS IN ALBANIA, GREECE, ETC.--DEATH OF MRS. BYRON.",letters,The Works of Lord Byron: Letters and Journals. Vol. 1
+0.3759,8,467,197862,526368,THE MURDERS IN THE RUE MORGUE,american-literature,Tales of Mystery and Imagination (Poe)
+0.3732,6,210,91884,246226,III,russian-literature,Notes from Underground (Dostoevsky)
+0.3696,10,872,375935,1017034,"CHAPTER VIII. JOURNAL: NOVEMBER 14, 1813--APRIL 19, 1814.",letters,The Works of Lord Byron: Letters and Journals. Vol. 2
+0.3623,7,164,71852,198335,ACT V,drama,Pygmalion — George Bernard Shaw
+0.3553,6,142,56914,160168,CHAPTER V. ON THE CONNEXION BETWEEN JUSTICE AND UTILITY.,philosophy,Utilitarianism (Mill)
+0.3358,35,222,91783,273341,WHY I WRITE SUCH EXCELLENT BOOKS,philosophy,Ecce Homo
+0.3331,6,471,203782,611861,PURGATORIO,world-literature,The Divine Comedy (Longfellow)
+0.3212,11,20,21587,67200,TIMOTHY DEXTER,philosophy,A Pickle for the Knowing Ones
+0.3126,9,641,279819,895122,VIII,french-literature,Nana (Zola)
+0.3086,16,156,70888,229702,CHAPTER X,biography,Narrative of the Life of Frederick Douglass
+0.3030,12,236,92713,305965,CHAPTER II. OF THE LIBERTY OF THOUGHT AND DISCUSSION.,philosophy,On Liberty (Mill)
+0.2958,9,651,269891,912556,LONDON GEORGE BELL AND SONS,philosophy,Plutarch's Morals
+0.2948,14,64,29271,99284,SCENE II. Another part of the wood,shakespeare,A Midsummer Nights Dream
+0.2918,9,313,128057,438892,CHAPTER VII. GENERAL VIEW OF THE REMAINDER OF MY LIFE.,biography,Autobiography
+0.2910,6,66,31414,107945,ACT IV,drama,The sea-gull
+0.2779,9,182,75232,270692,VIII THE MAHAR TEMPLE,science-fiction,At the Earth's Core
+0.2736,12,543,240650,879714,"THE HISTORY OF HERODOTUS BOOK I. THE FIRST BOOK OF THE HISTORIES, CALLED CLIO",ancient-classical,Histories (Herodotus)
+0.2608,17,269,117648,451147,III,american-literature,My Antonia (Cather)
+0.2519,8,147,63488,252083,THE ASH-TREE,horror,Ghost Stories of an Antiquary
+0.2479,7,54,31691,127841,PART V,philosophy,Discourse on the Method of Rightly Conducting One's Reason and of Seeking Truth in the Sciences
+0.2432,18,686,280364,1152730,SECTION THREE RECENT GERMAN PHILOSOPHY,philosophy,Hegel's Lectures on the History of Philosophy: Volume 3 (of 3)
+0.2331,10,242,101447,435154,I.,science-fiction,The Food of the Gods (Wells)
+0.2303,16,444,188852,820196,CHAPTER IV,russian-literature,Dead Souls
+0.2256,16,168,71016,314746,INTRODUCTION,philosophy,The Art of War (Sun Tzu)
+0.2189,44,32,14634,66846,XLIX,philosophy,The Enchiridion
+0.2170,29,55,22076,101754,III,sacred-texts,The Upanishads (Max Müller translation)
+0.2117,20,86,39104,184747,SCENE II. A hall in the Castle.,shakespeare,Hamlet
+0.2104,32,144,58518,278167,THE LIFE OF CASTRUCCIO CASTRACANI OF LUCCA WRITTEN BY NICOLO MACHIAVELLI,philosophy,The Prince
+0.2044,17,72,30519,149333,"NOW, LEAST SUCH FRIGHTFULL SHOWES OF FORTUNE'S FALL AND BLOUDY TYRANTS' RAGE SHOULD CHANCE APALL THE DEAD-STROKE AUDIENCE, MIDST THE SILENT ROUT COMES LEAPING IN A SELFE-MISFORMED LOUT, AND LAUGHES, AND GRINS, AND FRAMES HIS MIMIK FACE, AND IUSTLES STRAIGHT INTO THE PRINCE'S PLACE: THEN DOTH THE THEATRE ECCHO ALL ALOUD WITH GLADSOME NOYSE OF THAT APPLAUDING CROWD: A GOODLY HOCH-POCH, WHEN VILE RUSSETTINGS",drama,Tamburlaine the Great — Christopher Marlowe
+0.2019,19,238,107371,531803,THE CLOUDS,ancient-classical,"The Eleven Comedies, Volume 1"
+0.1969,16,273,123342,626356,THE BIRDS,ancient-classical,"The Eleven Comedies, Volume 2"
+0.1954,14,460,199805,1022487,CHAPTER V,french-literature,Germinal (Zola)
+0.1952,8,83,34782,178196,Chapter VII. The Sounding of the Call,american-literature,The Call of the Wild
+0.1934,16,103,44615,230744,III,english-literature,The Turn of the Screw (Henry James)
+0.1923,15,243,95781,497986,"CHAPTER 5. ANIMADVERSIONS ON SOME OF THE WRITERS WHO HAVE RENDERED WOMEN OBJECTS OF PITY, BORDERING ON CONTEMPT.",philosophy,A Vindication of the Rights of Woman (Wollstonecraft)
+0.1835,173,200,50386,274558,MEPHISTOPHELES:,german-literature,Faust: Der Tragödie zweiter Teil
+0.1781,26,217,86470,485411,THE CUSTOM-HOUSE INTRODUCTORY TO “THE SCARLET LETTER”,american-literature,The Scarlet Letter
+0.1781,14,184,75744,425232,MARCUS AURELIUS ANTONIUS,ancient-classical,Thoughts of Marcus Aurelius Antoninus
+0.1772,136,54,24827,140132,SYMBOLS,american-literature,Ebony and Crystal: Poems in Verse and Prose
+0.1761,69,299,124746,708437,THE SECOND PART,philosophy,The Social Contract (Rousseau)
+0.1728,14,233,98766,571663,VIII. THE ADVENTURE OF THE SPECKLED BAND,english-literature,The Adventures of Sherlock Holmes
+0.1697,21,502,205550,1211438,"BOOK X. Many things pleased me in the order of our State, but there was",philosophy,The Republic
+0.1693,29,538,214455,1266939,Chapter II. The Antinomy of Pure Reason,philosophy,Critique of Pure Reason (Kant)
+0.1681,25,97,41166,244857,IV.,ancient-classical,The Consolation of Philosophy (Boethius)
+0.1634,14,144,62530,382776,CHAPTER IX. WHAT IS NOBLE?,philosophy,Beyond Good and Evil
+0.1630,15,445,190548,1169273,CHAPTER V,russian-literature,Crime and Punishment
+0.1606,18,287,116752,726881,BOOK THE FIRST. THE ARGUMENT. [I.1-4],ancient-classical,Metamorphoses (Ovid)
+0.1575,18,33,13841,87887,III,philosophy,Poetics (Aristotle)
+0.1546,12,89,37866,244894,II.,horror,At the Mountains of Madness
+0.1545,67,28,11085,71728,SATURN,american-literature,"The Star-Treader, and other poems"
+0.1468,24,275,117773,802507,CHAPTER IV.,horror,The Monk: A Romance
+0.1445,14,211,87831,607776,BOOK X,biography,Confessions — Saint Augustine
+0.1421,13,74,31098,218843,THE SON,german-literature,Siddhartha (Hesse)
+0.1412,27,588,264317,1871511,CHAPTER XXI. GENERAL A SUMMARY AND CONCLUSION.,natural-history,The Descent of Man — Charles Darwin
+0.1395,23,49,21822,156421,SCENE II[3],drama,The Duchess of Malfi — John Webster
+0.1390,74,528,223550,1608340,CHAPTER LXX. THE END OF THE WAR--THE MARCH TO WASHINGTON--ONE OF LINCOLN'S ANECDOTES --GRAND REVIEW AT WASHINGTON--CHARACTERISTICS OF LINCOLN AND STANTON --ESTIMATE OF THE DIFFERENT CORPS COMMANDERS.,biography,Personal Memoirs of Ulysses S. Grant — Volume 1
+0.1388,17,663,276081,1989183,Chapter V.,russian-literature,The Brothers Karamazov
+0.1357,24,134,57077,420706,SELF-RELIANCE,philosophy,Essays — First and Second Series (Emerson)
+0.1352,15,514,209197,1547821,BOOK IX.,biography,Confessions — Jean-Jacques Rousseau
+0.1301,17,55,23775,182805,VIII.,english-literature,The Time Machine
+0.1277,17,334,140042,1096636,BOOK VII. LIFE OF ZENO.,philosophy,The Lives and Opinions of Eminent Philosophers
+0.1272,39,505,214262,1684677,CHAPTER VI,horror,The Mysteries of Udolpho
+0.1251,18,46,19729,157676,IV.,horror,Carmilla
+0.1239,36,166,87053,702445,BOOK III,american-literature,Leaves of Grass
+0.1226,21,34,14666,119667,CHAPTER XVIII,sacred-texts,The Bhagavad Gita (Edwin Arnold verse translation)
+0.1186,16,91,36978,311843,THE PIT OF PLENTY,science-fiction,The warlord of Mars
+0.1179,25,103,43189,366376,III,english-literature,Treasure Island
+0.1138,109,98,40003,351472,"NEW YORK HOME BOOK COMPANY, 45 VESEY STREET.",ancient-classical,The Teaching of Epictetus
+0.1136,37,97,41868,368550,III,american-literature,The Awakening (Chopin)
+0.1115,29,28,11817,105981,SCENE III. England. Before the King’s Palace.,shakespeare,Macbeth
+0.1106,18,132,64314,581756,CHAPTER VI.,english-literature,Gullivers Travels
+0.1096,15,103,44048,401933,VIII.,american-literature,The Souls of Black Folk (Du Bois)
+0.1090,29,109,46159,423399,Chapter 24,science-fiction,Frankenstein
+0.1086,28,86,36976,340394,VIII,russian-literature,On the Eve (Turgenev)
+0.1064,19,104,45598,428661,CHAPTER IX,science-fiction,The Lost World
+0.1059,68,268,116102,1096126,"HOMER INVOKING THE MUSE MARS MINERVA REPRESSING THE FURY OF ACHILLES THE DEPARTURE OF BRISEIS FROM THE TENT OF ACHILLES THETIS CALLING BRIAREUS TO THE ASSISTANCE OF JUPITER THETIS ENTREATING JUPITER TO HONOUR ACHILLES VULCAN JUPITER THE APOTHEOSIS OF HOMER JUPITER SENDING THE EVIL DREAM TO AGAMEMNON NEPTUNE VENUS, DISGUISED, INVITING HELEN TO THE CHAMBER OF PARIS VENUS PRESENTING HELEN TO PARIS VENUS",ancient-classical,The Iliad
+0.1056,26,34,15681,148452,SCENE III. A churchyard; in it a Monument belonging to the Capulets.,shakespeare,Romeo and Juliet
+0.1041,29,76,31420,301872,Chapter XXV.,science-fiction,The Coming Race
+0.1033,17,331,142160,1376537,VIII.,russian-literature,The Idiot
+0.1032,158,180,231322,2240601,INDEX,travel,The Travels of Marco Polo
+0.1018,13,54,23447,230260,BOOK VIII.,ancient-classical,The Meditations of the Emperor Marcus Aurelius Antoninus
+0.1009,30,235,94311,934590,CHAPTER IV. NATURAL SELECTION.,natural-history,On the Origin of Species — Charles Darwin
+0.1007,22,155,64216,637735,CHAPTER IV. BORNEO--THE ORANGUTAN.,natural-history,The Malay Archipelago — Alfred Russel Wallace
+0.1004,12,151,61712,614705,BOOK XII THE ARGUMENT.,ancient-classical,The Aeneid
+0.1003,52,551,222555,2218420,PART III. Of the Expense of public Works and public Institutions.,philosophy,The Wealth of Nations
+0.0976,27,15,6384,65416,Chapter XXVI. The Brahmana (Arhat),sacred-texts,Dhammapada (F. Max Müller translation)
+0.0973,13,35,14059,144424,CHAPTER IV.,english-literature,Alices Adventures in Wonderland
+0.0959,26,46,19738,205753,XXII WHAT HAPPENED IN FRANCE TO CANDIDE AND MARTIN.,french-literature,Candide
+0.0957,19,94,37290,389576,CHAPTER XIV. FRIENDS IN NEED,english-literature,Cranford (Gaskell)
+0.0951,23,54,23351,245527,XVI. HOW THE BEAST FOLK TASTE BLOOD.,science-fiction,The island of Doctor Moreau
+0.0943,22,91,42194,447300,CHAPTER XI.,english-literature,The Picture of Dorian Gray
+0.0933,18,70,30447,326446,CHAPTER X. THE DUEL,english-literature,The Man Who Was Thursday (Chesterton)
+0.0928,19,266,121011,1303547,BOOK TENTH. ARGUMENT.,philosophy,"The City of God, Volume I"
+0.0922,28,71,31520,341772,VII. THE MAN ON PUTNEY HILL.,english-literature,The War of the Worlds
+0.0914,19,93,38848,424996,Chapter XV.,biography,Up From Slavery — Booker T. Washington
+0.0911,24,54,23255,255280,CHAPTER III.,science-fiction,Symzonia: Voyage of Discovery
+0.0895,31,86,37124,414786,BOOK VI PROEM,ancient-classical,On the Nature of Things (Lucretius)
+0.0893,17,53,22004,246317,CHAPTER V. KNOWLEDGE BY ACQUAINTANCE AND KNOWLEDGE BY DESCRIPTION,philosophy,The Problems of Philosophy (Russell)
+0.0880,18,84,36280,412050,Letter X,travel,A Lady's Life in the Rocky Mountains
+0.0870,15,128,51679,594261,CHAPTER I,english-literature,Kim (Kipling)
+0.0868,23,80,35033,403460,APPENDIX CORRESPONDENCE OF M. AURELIUS ANTONINUS AND M. CORNELIUS FRONTO[1],philosophy,Meditations
+0.0863,30,132,54824,635204,Chapter VIII.,philosophy,Nicomachean Ethics (Aristotle)
+0.0859,395,206,84184,979993,I PORCH,audel-electric,Audels Electric Library Vol 7
+0.0857,26,46,18524,216142,LETTER XV.--ON ATTRACTION,letters,Letters on England
+0.0842,16,150,62352,740606,Chapter 3,american-literature,The House of Mirth (Wharton)
+0.0837,21,176,75608,903327,CHAPTER VIII,english-literature,Emma
+0.0837,29,105,47782,571040,CHAPTER IV,philosophy,Politics (Aristotle)
+0.0836,23,37,16098,192585,BOOK XIV. HSIEN WAN.,sacred-texts,The Analects of Confucius (James Legge translation)
+0.0830,27,80,32184,387578,XXIV.,science-fiction,The First Men in the Moon
+0.0824,28,33,13138,159516,I. A SLOW JOURNEY,russian-literature,"Childhood, Boyhood, Youth (Tolstoy)"
+0.0819,24,149,62879,768211,CHAPTER VI.,english-literature,A Tale of Two Cities
+0.0806,16,60,25432,315691,CHAPTER XV CONQUEST AND PEACE,science-fiction,Pellucidar (Burroughs)
+0.0797,40,911,332028,4163783,The Book of Psalms,sacred-texts,The Bible (King James Version)
+0.0790,35,82,34581,437897,CHAPTER XXIV,russian-literature,Fathers and Sons (Turgenev)
+0.0785,25,49,20945,266808,Chapter I.,american-literature,The Red Badge of Courage
+0.0785,41,171,71945,916876,TWENTY-FOUR YEARS AFTER,travel,Two Years Before the Mast
+0.0773,28,125,52427,678337,FOOTNOTES:,ancient-classical,The Odyssey
+0.0764,21,71,29601,387402,Chapter XVIII,english-literature,A Room with a View (Forster)
+0.0763,46,156,64872,850154,III,english-literature,Tess of the d'Urbervilles (Hardy)
+0.0756,37,149,62560,827406,CHAPTER V.,travel,"Travels in the interior districts of Africa: performed under the direction and patronage of the African Association, in the years 1795, 1796, and 1797"
+0.0753,52,43,17823,236765,STONE-SWALLOWING,curiosities,Miracle Mongers and Their Methods
+0.0730,31,51,20932,286737,THE FINDING OF THE MANUSCRIPT,horror,The House on the Borderland
+0.0724,21,106,44880,619478,CHAPTER IV. FIRST WEEKS ON THE ISLAND,english-literature,Robinson Crusoe
+0.0724,117,183,80783,1115243,SURA II.-THE COW1 [XCI.],sacred-texts,The Quran (Rodwell translation)
+0.0723,76,628,293916,4064063,CHAPTER LIII CONCLUSION,philosophy,The origin and development of the moral ideas
+0.0706,23,201,84065,1191019,CHAPTER XVI NORTHERN CHILE AND PERU,natural-history,The Voyage of the Beagle — Charles Darwin
+0.0691,57,118,48414,700654,CHAPTER XLIII. THE LAST CONTEST.,science-fiction,"Etidorhpa; or, The End of Earth."
+0.0690,30,44,19254,278936,CHAPTER XX. AT THE HOUSE IN GREAT PORTLAND STREET,science-fiction,The Invisible Man
+0.0689,28,107,45887,665531,CHAPTER XIX,english-literature,The Portrait of a Lady — Volume 1
+0.0662,25,61,27119,409649,CHAPTER VI THE LOVE-MASTER,american-literature,White Fang (London)
+0.0660,62,163,70771,1072663,BOOK ELEVENTH. CHAPTER I. THE LITTLE SHOE.,french-literature,The Hunchback of Notre-Dame (Hugo)
+0.0658,27,195,77661,1179619,CHAPTER XVI,ancient-classical,History of the Peloponnesian War (Thucydides)
+0.0620,38,79,32349,521880,CHAPTER V. DR. CORTLANDT'S HISTORY CONTINUED.,science-fiction,A Journey in Other Worlds: A Romance of the Future
+0.0602,36,95,39256,651827,PREFACE,travel,Typee: A Peep at Polynesian Life — Herman Melville
+0.0596,24,62,27135,455251,CHAPTER XIV THE EYES IN THE DARK,science-fiction,The Gods of Mars
+0.0590,63,72,30531,517811,THE SALAD,english-literature,Grimms Fairy Tales
+0.0586,41,138,60882,1038376,CHAPTER XXVII,english-literature,Jane Eyre
+0.0586,35,89,38561,657875,CHAPTER XVII,english-literature,Wuthering Heights
+0.0568,32,111,46151,813026,CHAPTER I,american-literature,The Jungle (Sinclair)
+0.0558,31,49,20610,369316,CHAPTER XVI WE PLAN ESCAPE,science-fiction,A Princess of Mars
+0.0543,35,76,32066,590032,XXXIV.,american-literature,The Age of Innocence (Wharton)
+0.0542,47,424,175846,3242863,CHAPTER IV,russian-literature,War and Peace
+0.0540,28,80,34442,638064,CHAPTER LI,english-literature,The Portrait of a Lady — Volume 2
+0.0536,138,239,121460,2265266,SONNET,spanish,Don Quixote
+0.0519,43,30,12913,248698,LETTER LII,letters,Letters to His Son — Lord Chesterfield
+0.0504,282,106,44780,888977,TUBE CHECKER,audel-electric,Audels Electric Library Vol 9
+0.0501,53,40,16426,328090,"CHAPTER II. OF THE WAYS OF EXCITING DESIRE, AND MISCELLANEOUS EXPERIMENTS, AND RECIPES.",philosophy,The Kama Sutra of Vatsyayana
+0.0496,41,68,29220,589696,CHAPTER XVII,american-literature,The Sea-Wolf (London)
+0.0480,72,123,58007,1208422,CHAPTER XLIV. OF SPIRITUALL DARKNESSE FROM MISINTERPRETATION OF SCRIPTURE,philosophy,Leviathan
+0.0474,45,68,30068,634101,Chapter 26,english-literature,Howards End
+0.0466,449,56,26949,578057,Ques. In wiring a dynamo what are the considerations,audel-electric,Audels Electric Library Vol 2
+0.0465,32,92,39970,859302,CHAPTER XXVII MINA HARKER’S JOURNAL,english-literature,Dracula
+0.0463,62,74,36082,779553,CHAPTER VIII THE MALTHOUSE—THE CHAT—NEWS,english-literature,Far from the Madding Crowd (Hardy)
+0.0454,68,480,191458,4220506,POMPEY,ancient-classical,Parallel Lives (Plutarch)
+0.0454,49,64,27501,606348,CHAPTER X THE MAN OF THE SEAS,french-literature,Twenty Thousand Leagues Under the Sea
+0.0451,51,72,30744,681177,CHAPTER XLIV.,english-literature,Sense and Sensibility
+0.0451,46,111,45849,1016799,VOLUME II CHAPTER XIX,american-literature,Uncle Toms Cabin
+0.0437,46,72,28538,653398,XXXVII.,english-literature,The Mayor of Casterbridge (Hardy)
+0.0425,46,56,24550,578026,CHAPTER XVIII.,american-literature,Adventures of Huckleberry Finn
+0.0417,39,37,15396,368978,CHAPTER XI. IN WHICH PHILEAS FOGG SECURES A CURIOUS MEANS OF CONVEYANCE AT A FABULOUS PRICE,french-literature,Around the World in Eighty Days (Verne)
+0.0413,35,203,82420,1996477,Chapter 14,russian-literature,Anna Karenina
+0.0412,53,102,41705,1012436,CHAPTER XLVI. ONCE AND NOW.,english-literature,North and South (Gaskell)
+0.0411,169,12,5210,126721,XXIV,ancient-classical,"The Golden Sayings of Epictetus, with the Hymn of Cleanthes"
+0.0408,40,102,42242,1034157,THE EDUCATION OF HENRY ADAMS CHAPTER I,biography,The Education of Henry Adams
+0.0408,64,71,30135,739391,CHAPTER XVIII.,english-literature,Pride and Prejudice
+0.0403,150,104,49330,1223322,CHAPTER 135. The Chase.—Third Day.,american-literature,Moby Dick
+0.0402,55,51,22015,548125,CHAPTER II. THE FIRST HALF-HOUR,french-literature,From the Earth to the Moon (Verne)
+0.0377,361,46,23976,635249,HS HID,audel-electric,Audels Electric Library Vol 1
+0.0342,316,75,34199,998886,CANDLE POWER,audel-electric,Audels Electric Library Vol 10
+0.0338,48,35,14352,424777,CHAPTER VI. EXCITING DISCUSSIONS ABOUT AN UNPARALLELED ENTERPRISE,french-literature,Journey to the Center of the Earth (Verne)
+0.0334,67,84,36873,1104669,CHAPTER XXVI.,travel,The Innocents Abroad — Mark Twain
+0.0331,109,81,33583,1015035,VIII,biography,Autobiography of Benvenuto Cellini
+0.0326,39,48,19784,606292,CANTO XXIV,world-literature,The Divine Comedy (Cary)
+0.0307,60,74,30931,1008052,Chapter XIX.,english-literature,Great Expectations
+0.0303,70,94,39670,1311111,Chapter VI.,french-literature,The Three Musketeers
+0.0273,66,129,53756,1972601,CHAPTER 52. I ASSIST AT AN EXPLOSION,english-literature,David Copperfield (Dickens)
+0.0270,71,111,47039,1744139,CHAPTER XXV,english-literature,Vanity Fair (Thackeray)
+0.0265,87,112,47987,1811288,CHAPTER XXXVII.,english-literature,Middlemarch
+0.0249,69,116,49463,1988033,CHAPTER LIV,english-literature,Bleak House (Dickens)
+0.0249,454,67,28202,1134451,Ques. Describe a double worm gear.,audel-electric,Audels Electric Library Vol 8
+0.0248,367,38,17166,693521,RRRAR YS,audel-electric,Audels Electric Library Vol 3
+0.0238,118,126,62700,2637386,Chapter 33. Roman Bandits,french-literature,The Count of Monte Cristo
+0.0191,415,29,12302,643506,PBR HT SER RIBS OR ES,audel-electric,Audels Electric Library Vol 4
+0.0164,371,127,53874,3280255,CHAPTER XX—THE TRAP,french-literature,Les Miserables
