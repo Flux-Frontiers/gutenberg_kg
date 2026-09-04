@@ -96,9 +96,9 @@ By Herman Melville
 
 ## CHAPTER 135. The Chase.—Third Day.
 
-*Epilogue*
+### Epilogue
 
-Original Transcriber’s Notes:
+*Original Transcriber’s Notes:*
 
 This text is a combination of etexts, one from the now-defunct ERIS
 project at Virginia Tech and one from Project Gutenberg’s archives. The
@@ -21516,7 +21516,7 @@ Now small fowls flew screaming over the yet yawning gulf; a sullen
 white surf beat against its steep sides; then all collapsed, and the
 great shroud of the sea rolled on as it rolled five thousand years ago.
 
-Epilogue
+### Epilogue
 
 “AND I ONLY AM ESCAPED ALONE TO TELL THEE” Job.
 

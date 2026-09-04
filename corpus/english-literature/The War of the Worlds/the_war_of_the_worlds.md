@@ -15,7 +15,7 @@ by H. G. Wells
 how are all things made for man?’
 KEPLER (quoted in _The Anatomy of Melancholy_)
 
-### BOOK ONE THE COMING OF THE MARTIANS
+## BOOK ONE THE COMING OF THE MARTIANS
 
 ### I. THE EVE OF THE WAR.
 
@@ -3852,7 +3852,7 @@ vast curve, grew smaller, sank slowly, and vanished again into the grey
 mystery of the night. And as it flew it rained down darkness upon the
 land.
 
-### BOOK TWO THE EARTH UNDER THE MARTIANS.
+## BOOK TWO THE EARTH UNDER THE MARTIANS.
 
 ### I. UNDER FOOT.
 

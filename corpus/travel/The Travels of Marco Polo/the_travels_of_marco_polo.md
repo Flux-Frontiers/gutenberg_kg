@@ -27569,8 +27569,10 @@ R. Townley Nordman, 22nd June, 1872.
 Yule, 2nd ed., II. p. 517.
 
 8
-OXFORD
-Bodleian, No. 264
+### OXFORD
+
+*Bodleian, No. 264*
+
 _French_
 
 This is bound up with the celebrated Alexander MS. It is a beautiful
@@ -27599,8 +27601,10 @@ MS., as one of Marco Polo, has been overlooked.
 Personal.—H. C.]
 
 9
-OXFORD
-Merton College, No. 312
+### OXFORD
+
+*Merton College, No. 312*
+
 _Latin_
 
 Pipino’s; followed by Hayton, and Palladius _de Agriculturâ_.
@@ -27608,8 +27612,10 @@ Pipino’s; followed by Hayton, and Palladius _de Agriculturâ_.
 _Coxe, Catal. Codd. MSS. Oxon_. Pt. I., p. 123.
 
 10
-CAMBRIDGE
-University Library, D. d. I. 17, No. 12
+### CAMBRIDGE
+
+*University Library, D. d. I. 17, No. 12*
+
 _Latin_
 
 Pipino’s.
@@ -27621,8 +27627,10 @@ Mahommedanism, among others that of William of Tripoli (vol. i. p.
 _Catal. of MSS. in Lib. of Camb. University_, I. 22.
 
 11
-CAMBRIDGE
-University Library, D. d. VIII. 7
+### CAMBRIDGE
+
+*University Library, D. d. VIII. 7*
+
 _Latin_
 
 Fragment of _Marci Pauli Veneti Historia Tartarorum_ (probably
@@ -27631,8 +27639,10 @@ Pipino’s.).
 _Catal. of MSS. in Lib. of Camb. University_, I. 22.
 
 12
-CAMBRIDGE
-Gonville and Caius College, No. 162
+### CAMBRIDGE
+
+*Gonville and Caius College, No. 162*
+
 _Latin_
 
 Pipino’s; with Odoric, and other works relating to Asia. [_H.
@@ -27642,8 +27652,10 @@ _Catal. of MSS. of Gonville and Caius Coll. Library, by Rev. J. J.
 Smith_, 1849.
 
 13
-GLASGOW
-Hunterian Collection, S. 5. 7
+### GLASGOW
+
+*Hunterian Collection, S. 5. 7*
+
 _Latin_
 
 Pipino’s Version, with illuminated initials, in a volume containing
@@ -27654,8 +27666,10 @@ Tartariæ._ Parchment, 4to.
 _Note by Rev. Prof. W. P. Dickson, D.D._
 
 14
-GLASGOW
-Hunterian Collection, Q. 6. 21
+### GLASGOW
+
+*Hunterian Collection, Q. 6. 21*
+
 _Latin_
 
 Pipino’s also with illuminated initials, and also followed by Odoric.
@@ -27664,7 +27678,8 @@ Parchment, 4to.
 _Note by Rev. Prof. W. P. Dickson, D.D._
 
 15
-IRELAND
+### IRELAND
+
 Lismore Castle, and a transcript in Library of Royal Irish Academy,
 Dublin
 _Irish_
@@ -27689,8 +27704,10 @@ Abbott_, 1900, p. 105.
 FRANCE.
 
 17
-PARIS
-Bib. nationale, No. 7367 (now Fr. 1116)
+### PARIS
+
+*Bib. nationale, No. 7367 (now Fr. 1116)*
+
 _French_
 
 This is the most precious of all MSS. of Polo. It has been fully
@@ -27705,8 +27722,10 @@ A facsimile of this MS. has been made this year (1902) at Karlsruhe.
 *
 
 18
-PARIS
-Bib. nationale, No. 8329 (now Fr. 2810)
+### PARIS
+
+*Bib. nationale, No. 8329 (now Fr. 2810)*
+
 _French_
 
 “Ce Liure est des // Merueilles du Monde. Cest assavoir de la Terre
@@ -27743,8 +27762,10 @@ Large folio on vellum.
 *
 
 19
-PARIS
-Bib. Nationale, No. 10260 (now Fr. 5631)
+### PARIS
+
+*Bib. Nationale, No. 10260 (now Fr. 5631)*
+
 _French_
 
 “Ci commencent les rebriches de cest Livre qui est appelez le
@@ -27761,8 +27782,10 @@ _livres 5 sols_. [Second half of the 14th cent.].
 *
 
 20
-PARIS
-Bib. nationale, No. 10,270 (now Fr. 5649)
+### PARIS
+
+*Bib. nationale, No. 10,270 (now Fr. 5649)*
+
 _French_
 
 This is Pauthier’s MS. C. (See as before.) It is that which has the
@@ -27776,7 +27799,8 @@ century.]
 *
 
 21
-PARIS
+### PARIS
+
 Bib. nationale (675)?
 _French_
 
@@ -27789,8 +27813,10 @@ the Bibliothèque nationale.—H. C.]
 See _preceding column_.
 
 22
-PARIS
-Bib. nationale, Fr. nouv. acq. 1880
+### PARIS
+
+*Bib. nationale, Fr. nouv. acq. 1880*
+
 _French_
 
 This is a copy of the time of King Louis XII., made apparently for
@@ -27805,8 +27831,10 @@ Purchased in 1870.
 _L. Delisle, Bib. Ec. Chartes_, xliii. p. 219.
 
 23
-PARIS
-Bib. de l’Arsenal, No. 5219
+### PARIS
+
+*Bib. de l’Arsenal, No. 5219*
+
 _French_
 
 Translated by Robert Frescher.—Fol. 1. “_Prologue du present livre,
@@ -27825,8 +27853,10 @@ Costumes du Moyen Age, par le Bibliophile Jacob_, pp. 411–413.
 _Cat. des MSS. de l’Arsenal_, V. p. 163.
 
 24
-PARIS
-Bib. nationale, No. 3195
+### PARIS
+
+*Bib. nationale, No. 3195*
+
 _Latin_
 
 This is the old Latin version, published by the Soc. de Géog., and
@@ -27841,8 +27871,10 @@ Cordier, Odoric_, p. lxxxiii—H. C.].
 _Printed Text.—H. Cordier_.
 
 25
-PARIS
-Bib. nationale, No. 1616
+### PARIS
+
+*Bib. nationale, No. 1616*
+
 _Latin_
 
 Pipino’s. [Paper; fol. cccvii. _et seqq._].
@@ -27850,7 +27882,8 @@ Pipino’s. [Paper; fol. cccvii. _et seqq._].
 _Table in the G. T._
 
 26
-PARIS
+### PARIS
+
 Bib. nationale, No. 6244 A.
 _Latin_
 
@@ -27859,8 +27892,10 @@ Pipino’s. [Paper.]
 _Table in the G. T._
 
 27
-PARIS
-Bib. Nationale, Codd. Ital., No. 10,259 [now 434]
+### PARIS
+
+*Bib. Nationale, Codd. Ital., No. 10,259 [now 434]*
+
 _Italian_
 
 Paper, 4to, of 14th century. Seen, but not examined with any care,
@@ -27877,8 +27912,10 @@ _I Manoscritti Italiani ... della R. Bib. Parigina ... dal Ant.
 Marsand_, 1835, 4to.
 
 28
-PARIS
-Former Library of Baron C. Walckenaer
+### PARIS
+
+*Former Library of Baron C. Walckenaer*
+
 _Latin_
 
 A miscellaneous volume, containing an imperfect copy of Pipino’s
@@ -27889,8 +27926,10 @@ _Table in the G. T._
 LUXEMBURG.
 
 29
-LUXEMBURG
-City Library, No. 50
+### LUXEMBURG
+
+*City Library, No. 50*
+
 _Latin_
 
 ## Volume containing several works; and among them _Marchi_ (Pauli)
@@ -27904,8 +27943,10 @@ _Pertz, Archiv_, viii. 594.
 BELGIUM.
 
 30
-BRUSSELS
-Royal Library, No. 9309
+### BRUSSELS
+
+*Royal Library, No. 9309*
+
 _French_
 
 Derives from the Paris 5631 and 2810 and the Stockholm MS., 14th
@@ -27916,8 +27957,10 @@ _G. Raynaud, Romania_, xi. pp. 429–430.
 ITALY.
 
 31
-VENICE
-St. Mark’s Library, Cl. X. Codd. Lat. 72
+### VENICE
+
+*St. Mark’s Library, Cl. X. Codd. Lat. 72*
+
 _Latin_
 
 Pipino’s.
@@ -27929,8 +27972,10 @@ Padua, p. lv.)
 _Lazari_.
 
 32
-VENICE
-St. Mark’s Library, Cl. X. Codd. Lat. 128
+### VENICE
+
+*St. Mark’s Library, Cl. X. Codd. Lat. 128*
+
 _Latin_
 
 Another of Pipino’s. Paper, 4to, of 15th century.
@@ -27938,8 +27983,10 @@ Another of Pipino’s. Paper, 4to, of 15th century.
 _Lazari_.
 
 33
-VENICE
-St. Mark’s Library, Cl. VI. Codd. Ital., 56
+### VENICE
+
+*St. Mark’s Library, Cl. VI. Codd. Ital., 56*
+
 _Italian (Ven. dialect)_
 
 A rude translation of Pipino’s version, written late in the 15th
@@ -27950,8 +27997,10 @@ Terrae Sanctae_. Belonged to T. G. Farsetti. Paper, folio.
 _Lazari_.
 
 34
-VENICE
-St. Mark’s Library, Cl. VI. Codd. Ital., 208
+### VENICE
+
+*St. Mark’s Library, Cl. VI. Codd. Ital., 208*
+
 _Italian (Ven. dialect)_
 
 Corresponds to the Venetian edition of 1496, but even more
@@ -27963,7 +28012,8 @@ Paper, 4to. Belonged to Morelli.
 * _Lazari_.
 
 35
-VENICE
+### VENICE
+
 Museo Civico, _Coll. Cicogna_, No. 2389, now 2408.
 _Latin_
 
@@ -27980,8 +28030,10 @@ Rhetoric at Padua.
 * [_H. Cordier_, _Odoric_, pp. xci.–xcii.]
 
 36
-VENICE
-Library of Count Donà delle Rose
+### VENICE
+
+*Library of Count Donà delle Rose*
+
 _Italian, with a Venetian tinge_
 
 It begins: “Quegli che desiderano d’entendere le maraviglose chose
@@ -27996,8 +28048,10 @@ Sloane MS. No. 6, in our list.
 Note by Comm. Nicolò Barozzi, Director of the Museo Civico at Venice.
 
 37
-FERRARA
-Public Library, No. 35n (336, N.B. 5)
+### FERRARA
+
+*Public Library, No. 35n (336, N.B. 5)*
+
 _Italian, with a Venetian tinge_
 
 _Incipit prologus Libri qui vulgari hominum dicitur “El Milione.”_
@@ -28006,7 +28060,8 @@ This looks as if it were _not_ Pipino’s.
 _Note by the Abate S. B. Mondino_.
 
 38
-MILAN
+### MILAN
+
 Ambrosian Library, M. 526, Sc. D.
 _Latin_
 
@@ -28018,8 +28073,10 @@ Paper, folio. 14th century.
 _Lazari_.
 
 39
-MODENA
-Este Library
+### MODENA
+
+*Este Library*
+
 _Latin_
 
 Pipino’s Parchment of 14th century. Muratori speaks of this.
@@ -28028,7 +28085,8 @@ Pipino’s Parchment of 14th century. Muratori speaks of this.
 _Muratori;_ and _Prof. Bianconi, Degli Scritta di Marco Polo, etc._
 
 40
-FLORENCE
+### FLORENCE
+
 Bib. Magliabecchiana (now Nationale), Cl. XIII., Plut. IV. c. 104
 _Italian (Tuscan)_
 
@@ -28039,7 +28097,8 @@ Paper, folio, early in 14th century.
 *
 
 41
-FLORENCE
+### FLORENCE
+
 Bib. Magliabecchiana (now Nazionale), Cl. XIII., Plut. IV. c. 73
 _Italian_
 
@@ -28057,7 +28116,8 @@ viene il reubarbero herba medicinale.” Completed by Dolfo Spini,
 *
 
 42
-FLORENCE
+### FLORENCE
+
 Bib. Magliabecchiana (now Nazionale), Cl. XIII., Plut. IV., c. 61
 _Italian_
 
@@ -28071,7 +28131,8 @@ Ex. Bibl. Gaddianâ.
 * _Baldelli-Boni_.
 
 43
-FLORENCE
+### FLORENCE
+
 Bib. Magliabecchiana (now Nazionale), Cl. XIII., Plut. IV., c. 136
 _Italian_
 
@@ -28082,8 +28143,10 @@ Crusca.
 * _Baldelli-Boni_.
 
 44
-FLORENCE
-Riccardian Library
+### FLORENCE
+
+*Riccardian Library*
+
 _Italian_
 
 Ends with chapter on Russia. Followed by an extract of Mandevile and
@@ -28094,8 +28157,10 @@ Paper 4to, 16th century.
 *
 
 45
-FLORENCE
-Riccardian Library
+### FLORENCE
+
+*Riccardian Library*
+
 _Latin_
 
 Pipino’s; but reaching only to Bk. III. ch. 31.
@@ -28104,8 +28169,10 @@ Paper, 14th century.
 *
 
 46
-FLORENCE
-Riccardian Library
+### FLORENCE
+
+*Riccardian Library*
+
 _Italian (Ven. dialect)_, No. 1924
 
 Partial and defective transcript under the title of _Itinerario di
@@ -28114,8 +28181,10 @@ Levante_.
 _G. Uzielli, Note_.
 
 47
-FLORENCE
-Library of Pucci family
+### FLORENCE
+
+*Library of Pucci family*
+
 _Italian_
 
 See remarks at vol. i. _Int., Various Types of the Text_. Completed
@@ -28124,8 +28193,10 @@ See remarks at vol. i. _Int., Various Types of the Text_. Completed
 *
 
 48
-FLORENCE
-Bib. Palatina (now united to Nazionale), Cod. 572
+### FLORENCE
+
+*Bib. Palatina (now united to Nazionale), Cod. 572*
+
 _Italian_
 
 The language differs slightly from that of the Crusca, and, where I
@@ -28138,7 +28209,8 @@ _d’Oro_.”
 *
 
 49
-LUCCA
+### LUCCA
+
 Bib. governativa, Coll. (Lucchesini, Giacomo), No. 26 (now No. 296)
 _Italian (Ven. dialect)_
 
@@ -28155,8 +28227,10 @@ _H. Cordier_, _Odoric_, pp. xcvi.–xcviii.]
 _Baldelli-Boni_.
 
 50
-SIENA
-Public Library, c. V. 14
+### SIENA
+
+*Public Library, c. V. 14*
+
 _Italian_
 
 This is a miscellaneous MS. which, among other things, contains a
@@ -28169,8 +28243,10 @@ A. IV. 8. I assume that it is the same that I saw.
 *
 
 51
-ROME
-Vatican Library, Cod. 2207, _Ottoboniano_
+### ROME
+
+*Vatican Library, Cod. 2207, _Ottoboniano_*
+
 _French_
 
 A fragment, going no further than the chapter on Georgia, and ending
@@ -28182,8 +28258,10 @@ Parchment, 14 cent.
 _Baldelli-Boni_.
 
 52
-ROME
-Vatican Library, No. 2935
+### ROME
+
+*Vatican Library, No. 2935*
+
 _Latin_
 
 An old Latin abridgment of Polo, entitled _De Mirabilibus Mundi_. The
@@ -28194,8 +28272,10 @@ Paper, 14th cent.
 _Baldelli-Boni_ and _Lazari_.
 
 53
-ROME
-Vatican Library, No. 3153
+### ROME
+
+*Vatican Library, No. 3153*
+
 _Latin_
 
 Pipino’s. Very neat and clean; apparently of 14th cent.
@@ -28204,8 +28284,10 @@ Parchment.
 *
 
 54
-ROME
-Vatican Library, No. 5260
+### ROME
+
+*Vatican Library, No. 5260*
+
 _Latin_
 
 Pipino’s. Very clearly and regularly written. Apparently 15th cent.
@@ -28213,8 +28295,10 @@ Pipino’s. Very clearly and regularly written. Apparently 15th cent.
 *
 
 55
-ROME
-Barberini Library, XXXIV. 4
+### ROME
+
+*Barberini Library, XXXIV. 4*
+
 _Latin_
 
 A MS. volume, containing Ricold of Monte Croce; Tractatus divisionis
@@ -28231,8 +28315,10 @@ Parchment, large thin 4to, 14th cent.
 *
 
 56
-ROME
-Barberini Library, LVIII. 40
+### ROME
+
+*Barberini Library, LVIII. 40*
+
 _Italian (Venetian dial.)_
 
 This is the fragment spoken of, vol. i. p. _101_, note. It is a
@@ -28242,8 +28328,10 @@ transcript made apparently in the 17th cent., from a MS. written in
 *
 
 57
-ROME
-Barberini Library, No. 934
+### ROME
+
+*Barberini Library, No. 934*
+
 _Italian_
 
 I give this on Baldelli’s authority. I did not see it on my visit
@@ -28252,8 +28340,10 @@ to the Barberini.
 _Baldelli-Boni_.
 
 58
-ROME
-Corsini Library, No. 1111
+### ROME
+
+*Corsini Library, No. 1111*
+
 _Italian_ (?)
 
 . . .
@@ -28261,8 +28351,10 @@ _Italian_ (?)
 _Baldelli-Boni_.
 
 59
-ROME
-Chigi Library, M. VI. 140
+### ROME
+
+*Chigi Library, M. VI. 140*
+
 _Italian_
 
 Bears a note in the handwriting of Pope Alexander VII. (Fabio
@@ -28275,8 +28367,10 @@ _Baldelli-Boni_.
 SPAIN.
 
 60
-ESCURIAL
-Library
+### ESCURIAL
+
+*Library*
+
 _Latin_
 
 Pipino’s
@@ -28284,8 +28378,10 @@ Pipino’s
 (?)
 
 61
-TOLEDO
-Cathedral Library
+### TOLEDO
+
+*Cathedral Library*
+
 _Latin_
 
 Seems to be different from any of the other Latin versions. It has
@@ -28295,8 +28391,10 @@ the prefatory address to _Domini Imperatores, Reges, Duces_, etc.
 _Baldelli-Boni_.
 
 62
-TOLEDO
-Cathedral Library
+### TOLEDO
+
+*Cathedral Library*
+
 _Italian (Venetian)_
 
 This is a copy of the Soranzo MS., of which Marsden has given an
@@ -28308,8 +28406,10 @@ _Baldelli-Boni_.
 SWITZERLAND.
 
 63
-BERN
-Canton Library, No. 125
+### BERN
+
+*Canton Library, No. 125*
+
 _French_
 
 I have examined this MS. minutely, and am satisfied that it is a copy
@@ -28327,8 +28427,10 @@ cxiv.–cxv.]
 *
 
 64
-BERN
-Canton Library
+### BERN
+
+*Canton Library*
+
 _Italian (Venetian)_
 
 In a neat running hand resembling italic type. It is much abridged,
@@ -28339,8 +28441,10 @@ Mr. Aurel, tiré de la biblioteque de Mr. de Vutron_(?).”
 *
 
 65
-VEVEY
-City Museum
+### VEVEY
+
+*City Museum*
+
 _French_
 
 [A double sheet; parchment, and of 14th century. Fragment: 1st sheet,
@@ -28354,8 +28458,10 @@ _Ernest Muret, Romania_, t. xxx. 1901.
 GERMANY.
 
 66
-MUNICH
-Royal Library, Codd. Lat. 249
+### MUNICH
+
+*Royal Library, Codd. Lat. 249*
+
 _Latin_
 
 Pipino’s.
@@ -28366,8 +28472,10 @@ Casibus Virorum Illustrium_.
 _Lazari_.
 
 67
-MUNICH
-Royal Library, Codd. Lat. 850
+### MUNICH
+
+*Royal Library, Codd. Lat. 850*
+
 _Latin_
 
 Pipino’s.
@@ -28377,7 +28485,8 @@ Also Pipino’s tract, _De Locis Terrae Sctae._, etc.
 _Lazari_.
 
 68
-MUNICH
+### MUNICH
+
 Royal Library?
 _Latin_
 
@@ -28386,7 +28495,8 @@ _Excerpta de ejus Historia, principaliter Orientalis_
 _Private Memo_.
 
 69
-MUNICH
+### MUNICH
+
 Royal Library?
 _Latin_
 
@@ -28395,8 +28505,10 @@ _Narrationes ex ejus libro de partibus transmarinis_
 _Private Memo_.
 
 70
-MUNICH
-Royal Library, Cod. Germ. 696
+### MUNICH
+
+*Royal Library, Cod. Germ. 696*
+
 _German_
 
 The version published at Nuremberg in 1477.
@@ -28405,8 +28517,10 @@ Paper, 4to. [See _Bibliography_, p. 554.]
 _Lazari_.
 
 71
-MUNICH
-Royal Library, 252
+### MUNICH
+
+*Royal Library, 252*
+
 _German_
 
 Fragment.
@@ -28414,7 +28528,8 @@ Fragment.
 _Lazari_.
 
 72
-MUNICH
+### MUNICH
+
 ?
 _German_
 
@@ -28423,7 +28538,8 @@ The whole.
 _Private Memo_.
 
 73
-MUNICH
+### MUNICH
+
 ?
 _German_
 
@@ -28456,8 +28572,10 @@ Paper 15th cent, fol., ff. 253.]
 _H. Cordier, Odoric_, pp. lxxv.–vi.
 
 76
-BERLIN
-Royal Library
+### BERLIN
+
+*Royal Library*
+
 _Latin_
 
 Pipino’s. Also contains _Mappa-Mundi, Expositio Libri Mateorum_, etc.
@@ -28467,8 +28585,10 @@ Müller in his edition (1671).
 _Private Memo._
 
 77
-BERLIN
-Royal Library
+### BERLIN
+
+*Royal Library*
+
 _German_
 
 A modern MS., said to be a copy of the _Wiener MS. _(?).
@@ -28485,8 +28605,10 @@ _Marcus Paulus de Mirabilibus Mundi_. Paper.
 _Pertz, Archiv._, viii. 100.
 
 79
-GIESSEN
-University Library, No. 218
+### GIESSEN
+
+*University Library, No. 218*
+
 _Latin_
 
 _M. Paulus de Venetiis de Regionibus Orientis_ (with other matter),
@@ -28500,8 +28622,10 @@ _M. P. de Ven. de condit. et consuet. Orient. Regionum_.
 _Pertz, Archiv._, ix. 576.
 
 80
-JENA
-University Library
+### JENA
+
+*University Library*
+
 _Latin_
 
 Pipino’s. Followed by H. of Alexander
@@ -28509,8 +28633,10 @@ Pipino’s. Followed by H. of Alexander
 _Pertz, Archiv._, viii. 698.
 
 81
-MENTZ
-Metropolitan Chapter, No. 52
+### MENTZ
+
+*Metropolitan Chapter, No. 52*
+
 _Latin_
 
 Pipino’s. A collection containing in Latin, besides Polo, Odoric,
@@ -28522,8 +28648,10 @@ Frankf. 1728, p. 381.
 AUSTRIA.
 
 82
-PRAGUE
-Chapter of St. Vitus
+### PRAGUE
+
+*Chapter of St. Vitus*
+
 _Latin_
 
 Pipino’s
@@ -28531,7 +28659,8 @@ Pipino’s
 _Pertz, Archiv._, ix. 474.
 
 83
-VIENNA
+### VIENNA
+
 . . .
 _German?_
 
@@ -28544,8 +28673,10 @@ but I have not been able to get any particulars regarding it.
 SWEDEN.
 
 84
-STOCKHOLM
-Royal Library, French, No. 37
+### STOCKHOLM
+
+*Royal Library, French, No. 37*
+
 _French_
 
 This MS., published in facsimile by Baron A. E. Nordenskiöld,
@@ -28569,8 +28700,10 @@ folio, “Pour Symon du Solier demorant à Honnefleu,” who was
 _H. Cordier_.
 
 85
-STOCKHOLM
-Royal Library, French, No. 38
+### STOCKHOLM
+
+*Royal Library, French, No. 38*
+
 _French_
 
 Translated from the Latin version.

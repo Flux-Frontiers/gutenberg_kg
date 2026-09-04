@@ -11510,11 +11510,8 @@ It will do you good.                _aee kissi_.
 APPENDIX.
 
 * * * * *
-GEOGRAPHICAL ILLUSTRATIONS
-OF
-MR. PARK’S JOURNEY.
-BY
-MAJOR RENNELL.
+### GEOGRAPHICAL ILLUSTRATIONS OF MR. PARK’S JOURNEY. BY MAJOR RENNELL.
+
 * * * * *
 
 [Illustration: A MAP, _shewing the_ Progress _of DISCOVERY_ &

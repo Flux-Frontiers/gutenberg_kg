@@ -10,7 +10,7 @@ by Leo Tolstoy
 
 Translated by Constance Garnett
 
-### PART ONE
+## PART ONE
 
 ## Chapter 1
 
@@ -5741,7 +5741,7 @@ several visits with a view to beginning to go into that society where
 he might meet Madame Karenina. As he always did in Petersburg, he left
 home not meaning to return till late at night.
 
-### PART TWO
+## PART TWO
 
 ## Chapter 1
 
@@ -11734,7 +11734,7 @@ The doctor’s prediction was fulfilled. Kitty returned home to Russia
 cured. She was not so gay and thoughtless as before, but she was
 serene. Her Moscow troubles had become a memory to her.
 
-### PART THREE
+## PART THREE
 
 ## Chapter 1
 
@@ -17262,7 +17262,7 @@ just because of this darkness he felt that the one guiding clue in the
 darkness was his work, and he clutched it and clung to it with all his
 strength.
 
-### PART FOUR
+## PART FOUR
 
 ## Chapter 1
 
@@ -21319,7 +21319,7 @@ A month later Alexey Alexandrovitch was left alone with his son in his
 house at Petersburg, while Anna and Vronsky had gone abroad, not having
 obtained a divorce, but having absolutely declined all idea of one.
 
-### PART FIVE
+## PART FIVE
 
 ## Chapter 1
 
@@ -26722,7 +26722,7 @@ he was ashamed to utter them, she drank in eagerly, and gradually
 became calmer. The next day, completely reconciled, they left for the
 country.
 
-### PART SIX
+## PART SIX
 
 ## Chapter 1
 
@@ -32493,7 +32493,7 @@ Petersburg, she went with Vronsky to Moscow. Expecting every day an
 answer from Alexey Alexandrovitch, and after that the divorce, they now
 established themselves together like married people.
 
-### PART SEVEN
+## PART SEVEN
 
 ## Chapter 1
 
@@ -37229,7 +37229,7 @@ and evil, flared up more brightly than ever before, lighted up for her
 all that had been in darkness, flickered, began to grow dim, and was
 quenched forever.
 
-### PART EIGHT
+## PART EIGHT
 
 ## Chapter 1
 

@@ -10,7 +10,7 @@ by Charles Grosvenor Osgood
 
 Professor of English at Princeton University
 
-Preface
+### Preface
 
 In making this abridgement of Boswell's Life of Johnson I have omitted
 most of Boswell's criticisms, comments, and notes, all of Johnson's

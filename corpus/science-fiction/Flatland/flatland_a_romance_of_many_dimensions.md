@@ -381,7 +381,7 @@ _/
 Men's door                 _   Women's door
 _             /
 \____________/
-A            B
+### A            B
 
 At this period, square houses were still everywhere permitted, though
 discouraged by a special tax.  But, about three centuries afterwards,

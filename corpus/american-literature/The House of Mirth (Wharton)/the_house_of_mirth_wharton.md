@@ -7668,7 +7668,7 @@ Lily tore it open with shaking hands, and read Bertha Dorset’s name
 below the message: “Sailing unexpectedly tomorrow. Will you join us
 on a cruise in Mediterranean?”
 
-### BOOK TWO
+## BOOK TWO
 
 ## Chapter 1
 

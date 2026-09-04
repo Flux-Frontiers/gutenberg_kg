@@ -26,33 +26,33 @@ Authorities
 
 ### THE KNIGHTS
 
-*Introduction*
+### Introduction
 
-Text And Notes
+*Text And Notes*
 
 ### THE ACHARNIANS
 
-*Introduction*
+### Introduction
 
-Text And Notes
+*Text And Notes*
 
 ### PEACE
 
-*Introduction*
+### Introduction
 
-Text And Notes
+*Text And Notes*
 
 ### LYSISTRATA
 
-*Introduction*
+### Introduction
 
-Text And Notes
+*Text And Notes*
 
 ### THE CLOUDS
 
-*Introduction*
+### Introduction
 
-Text And Notes
+*Text And Notes*
 
 ### INDEX
 

@@ -62,6 +62,14 @@ RDF_NS = {
 _RDF_ABOUT = "{http://www.w3.org/1999/02/22-rdf-syntax-ns#}about"
 _RDF_RESOURCE = "{http://www.w3.org/1999/02/22-rdf-syntax-ns#}resource"
 
+# Three patterns _is_heading has to post-process rather than accept verbatim.
+# They are named because it used to reach for them by position
+# (HEADING_PATTERNS[-1], [-2], [-3]), which silently rewired itself the moment
+# a new pattern was appended near the end.
+ALL_CAPS_PATTERN = re.compile(r"^([A-Z][A-Z\s\-',:]{2,60})$")
+ROMAN_STANDALONE_PATTERN = re.compile(r"^([IVXLCDM]{1,6})\.\s*$")
+ROMAN_TITLED_PATTERN = re.compile(r"^([IVXLCDM]{1,6})\.\s+([A-Z][A-Z\s\-',:]{2,60})$")
+
 # Common heading patterns found in Gutenberg texts, ordered by specificity.
 # Each tuple: (compiled regex, markdown heading level, group index for title)
 HEADING_PATTERNS = [
@@ -117,6 +125,31 @@ HEADING_PATTERNS = [
         re.compile(
             r"^Chapter\s+(?:[IVXLCDM]+|\d+)\.?"
             r"(?:\s*[-—:.]?\s*(.+))?$",
+        ),
+        2,
+    ),
+    # Word numerals: "Chapter One", "CHAPTER TWENTY-THREE", "PART TWO".
+    # Kafka's Trial carries all ten of its chapter lines this way and the
+    # converter walked past every one.  Unlike the numeral forms above, a
+    # separator or the end of the line is required after the numeral: "Chapter
+    # One" is a heading, "Chapter One was the longest" is a sentence, and only
+    # the punctuation tells them apart.
+    #
+    # VOLUME is deliberately absent.  Spelled out it is nearly always a
+    # publisher's series label on the title page -- "Volume Seventeen" sits
+    # between the editor and the printer in Nietzsche's collected works -- and
+    # matching it there stops _skip_title_page, which treats a recognised
+    # heading as the end of the front matter.  Roman "VOLUME I" is already
+    # covered above.
+    (
+        re.compile(
+            r"^(?:CHAPTER|BOOK|PART)\s+"
+            r"(?:TWENTY|THIRTY|FORTY)?[-\s]?"
+            r"(?:ONE|TWO|THREE|FOUR|FIVE|SIX|SEVEN|EIGHT|NINE|TEN|ELEVEN|TWELVE|"
+            r"THIRTEEN|FOURTEEN|FIFTEEN|SIXTEEN|SEVENTEEN|EIGHTEEN|NINETEEN|"
+            r"TWENTY|THIRTY|FORTY|FIFTY)"
+            r"(?:\s*[-—:.]\s*(.+)|\.?)$",
+            re.IGNORECASE,
         ),
         2,
     ),
@@ -182,25 +215,24 @@ HEADING_PATTERNS = [
         2,
     ),
     # "I. A SCANDAL IN BOHEMIA" — Roman numeral + period + ALL CAPS TITLE
-    (
-        re.compile(
-            r"^([IVXLCDM]{1,6})\.\s+([A-Z][A-Z\s\-',:]{2,60})$",
-        ),
-        2,
-    ),
+    (ROMAN_TITLED_PATTERN, 2),
     # Roman numeral standalone: "I.", "II.", "XIV." (section breaks within stories)
     # Must have a period to distinguish "I." from "I think..."
+    (ROMAN_STANDALONE_PATTERN, 3),
+    # Title-Case front and back matter: "Preface", "Introduction.",
+    # "Epilogue".  A closed vocabulary standing alone on its line, so it
+    # cannot fire inside prose the way a general Title-Case rule would.  The
+    # ALL-CAPS spellings are already caught by the catch-all below.
     (
         re.compile(
-            r"^([IVXLCDM]{1,6})\.\s*$",
+            r"^(?:Preface|Foreword|Prologue|Introduction|Epilogue|Afterword|"
+            r"Postscript|Conclusion|Dedication|Envoi)\.?$",
         ),
         3,
     ),
     # Standalone ALL-CAPS heading (at least 3 chars, max ~60, not a sentence)
     (
-        re.compile(
-            r"^([A-Z][A-Z\s\-',:]{2,60})$",
-        ),
+        ALL_CAPS_PATTERN,
         3,
     ),
 ]
@@ -505,10 +537,9 @@ def _is_heading(line: str) -> tuple[int, str] | None:
     if not stripped or len(stripped) > 120:
         return None
 
-    # Reference the last two patterns by index for special handling
-    all_caps_pattern = HEADING_PATTERNS[-1][0]
-    roman_standalone_pattern = HEADING_PATTERNS[-2][0]
-    roman_titled_pattern = HEADING_PATTERNS[-3][0]
+    all_caps_pattern = ALL_CAPS_PATTERN
+    roman_standalone_pattern = ROMAN_STANDALONE_PATTERN
+    roman_titled_pattern = ROMAN_TITLED_PATTERN
 
     for pattern, level in HEADING_PATTERNS:
         m = pattern.match(stripped)
@@ -581,6 +612,112 @@ _TITLE_PAGE_MAX_FIELDS = 20
 # prose is left alone, per test_skip_front_matter_no_front_matter and
 # friends.
 _TITLE_PAGE_MIN_FIELDS = 2
+
+
+#: Words allowed to stay lowercase inside a Title-Case line.
+_TITLE_CASE_SMALL_WORDS = frozenset(
+    "a an and as at but by for from in into nor of on onto or over the to up "
+    "upon with within without".split()
+)
+
+#: How many standalone Title-Case lines must open with the *same* phrase
+#: before they are read as titles rather than one-line paragraphs.  A bare
+#: count of Title-Case lines is far too loose a guard -- it promotes 552 of
+#: Hobbes's marginal notes in Leviathan and 292 lines of Leaves of Grass.
+#: What marks a collection's titles is that they are built to a template:
+#: Lane's Nights prints nineteen lines opening "The Story of", while
+#: Hobbes's notes and Whitman's poem titles share no opening at all.
+_REPEATED_TITLE_THRESHOLD = 5
+
+#: Words of a title line taken as its template key.
+_TITLE_PREFIX_WORDS = 2
+
+#: Opening words of a plate caption.  Illustration captions are Title-Case,
+#: stand alone between blanks and come in templated runs -- "Frontispiece
+#: Volume One", "Titlepage Volume Two" through Les Miserables -- so they clear
+#: every other test here and have to be named.
+_CAPTION_FIRST_WORDS = frozenset(
+    "frontispiece titlepage illustration illustrations plate plates facsimile "
+    "portrait map maps figure diagram engraving".split()
+)
+
+
+def _looks_like_story_title(line: str) -> bool:
+    """Whether *line* has the shape of a Title-Case work title.
+
+    Deliberately shape-only: the decision to honour it is
+    :func:`_repeated_title_lines`'s, and rests on how often the shape recurs.
+
+    :param line: A stripped source line.
+    :return: ``True`` if the line reads as a title rather than prose.
+    """
+    if not 4 <= len(line) <= 70 or line[-1] in ".!?;:":
+        return False
+    if line.isupper() or not line[0].isupper():
+        return False
+    words = line.split()
+    if len(words) < 2:
+        return False
+    if words[0].strip("“”\"'(),").lower() in _CAPTION_FIRST_WORDS:
+        return False
+    capitalised = 0
+    for word in words:
+        bare = word.strip("“”\"'(),")
+        if not bare:
+            continue
+        if bare[0].isupper():
+            capitalised += 1
+        elif bare.lower() not in _TITLE_CASE_SMALL_WORDS:
+            return False
+    return capitalised >= 2
+
+
+def _repeated_title_lines(lines: list[str], start: int, skip: range) -> set[int]:
+    """Find Title-Case lines frequent enough to be a collection's titles.
+
+    A Title-Case line standing alone between blank lines is also what a
+    one-line paragraph looks like, so shape alone cannot decide it, and
+    neither can how many such lines a file holds. What marks a collection's
+    titles is a shared template: Lane's *One Thousand and One Nights* prints
+    nineteen lines opening ``The Story of`` and the converter walked past
+    every one, collapsing the book into a single section. Grouping by that
+    opening is what separates them from Hobbes's marginal notes and Whitman's
+    poem titles, which are equally Title-Case and equally standalone but
+    share no phrasing.
+
+    :param lines: All source lines.
+    :param start: First line of the body.
+    :param skip: Line range already claimed by a table of contents.
+    :returns: Indices to treat as headings, empty when no template recurs.
+    """
+    by_prefix: dict[str, dict[str, set[int]]] = {}
+    for i in range(start, len(lines)):
+        if i in skip:
+            continue
+        stripped = lines[i].strip()
+        if not stripped:
+            continue
+        if i and lines[i - 1].strip():
+            continue
+        if i + 1 < len(lines) and lines[i + 1].strip():
+            continue
+        if _is_heading(stripped):
+            continue
+        if not _looks_like_story_title(stripped):
+            continue
+        prefix = " ".join(stripped.lower().split()[:_TITLE_PREFIX_WORDS])
+        by_prefix.setdefault(prefix, {}).setdefault(stripped.lower(), set()).add(i)
+
+    found: set[int] = set()
+    for variants in by_prefix.values():
+        # Distinct titles, not repetitions of one line: a table of contents
+        # names each story once, while Don Quixote's 260 "Full Size" plate
+        # captions and the Quran's bismillah before every sura are the same
+        # line over and over, and are not titles at all.
+        if len(variants) >= _REPEATED_TITLE_THRESHOLD:
+            for group in variants.values():
+                found |= group
+    return found
 
 
 def _skip_title_page(lines: list[str], start_idx: int) -> int:
@@ -720,6 +857,11 @@ def text_to_markdown(text: str, meta: dict) -> str:
     toc = _detect_toc(lines, start_idx, min(start_idx + 200, total))
     toc_range = range(toc[0], toc[1]) if toc else range(0)
 
+    # Title-Case work titles, honoured only where they recur (see
+    # _repeated_title_lines). File-level knowledge, so it cannot live in the
+    # per-line _is_heading.
+    title_lines = _repeated_title_lines(lines, start_idx, toc_range)
+
     # Build the markdown
     md_lines = []
 
@@ -765,6 +907,8 @@ def text_to_markdown(text: str, meta: dict) -> str:
 
         # Check for heading
         heading = _is_heading(stripped)
+        if heading is None and i in title_lines:
+            heading = (2, stripped)
         if heading and (prev_blank or _breaks_before_heading(prev_line)):
             level, heading_text = heading
 

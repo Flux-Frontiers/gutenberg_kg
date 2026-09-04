@@ -20,38 +20,39 @@ The Second Of Two Volumes
 
 ### CONTENTS OF THE SECOND VOLUME THE WASPS
 
-Introduction
-Text And Notes
+### Introduction
+
+*Text And Notes*
 
 ### THE BIRDS
 
-*Introduction*
+### Introduction
 
-Text And Notes
+*Text And Notes*
 
 ### THE FROGS
 
-*Introduction*
+### Introduction
 
-Text And Notes
+*Text And Notes*
 
 ### THE THESMOPHORIAZUSAE
 
-*Introduction*
+### Introduction
 
-Text And Notes
+*Text And Notes*
 
 ### THE ECCLESIAZUSAE
 
-*Introduction*
+### Introduction
 
-Text And Notes
+*Text And Notes*
 
 ### PLUTUS
 
-*Introduction*
+### Introduction
 
-Text And Notes
+*Text And Notes*
 
 ### INDEX THE WASPS
 
