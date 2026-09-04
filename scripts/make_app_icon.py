@@ -68,8 +68,18 @@ FONT_CANDIDATES = [
     "/System/Library/Fonts/Times.ttc",
 ]
 
-MACOS_SIZES = [(16, 1), (16, 2), (32, 1), (32, 2), (128, 1), (128, 2),
-               (256, 1), (256, 2), (512, 1), (512, 2)]
+MACOS_SIZES = [
+    (16, 1),
+    (16, 2),
+    (32, 1),
+    (32, 2),
+    (128, 1),
+    (128, 2),
+    (256, 1),
+    (256, 2),
+    (512, 1),
+    (512, 2),
+]
 
 
 def _blend(colour: tuple[int, int, int], alpha: float) -> tuple[int, int, int]:
@@ -245,8 +255,7 @@ def write_catalogs() -> None:
             {"idiom": "mac", "size": f"{pt}x{pt}", "scale": f"{scale}x", "filename": name}
         )
     (mac / "Contents.json").write_text(
-        json.dumps({"images": entries, "info": {"author": "xcode", "version": 1}}, indent=2)
-        + "\n"
+        json.dumps({"images": entries, "info": {"author": "xcode", "version": 1}}, indent=2) + "\n"
     )
 
     for catalog in (ios.parent, mac.parent):
