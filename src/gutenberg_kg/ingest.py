@@ -221,7 +221,21 @@ def build_dockg(
         kg.build_graph(wipe=True, quiet=quiet)
         cache_path = kg.db_path.parent / "embeddings.json"
         kg.build_embeddings(out=cache_path, n_workers=4, quiet=quiet)
-        kg.build_index_from_cache(cache_path, wipe=True, similar_max_degree=8, quiet=quiet)
+        # SIMILAR_TO stays on here, unlike `gutenkg build-corpus`, which ships a
+        # served bundle whose handler is semantic-first and never traverses edges.
+        # Per-book KGs are reached through KGRAG federation, which calls
+        # DocKG.query() -- and DEFAULT_RELS expands over SIMILAR_TO, so these
+        # edges are the only thing that path gains from. similar_k=5 with
+        # similar_max_degree=8 is the exact configuration the cap evaluation
+        # measured; see analysis/SIMILAR_TO_CAP_RECOMMENDATION.md.
+        kg.build_index_from_cache(
+            cache_path,
+            wipe=True,
+            discover_similar=True,
+            similar_k=5,
+            similar_max_degree=8,
+            quiet=quiet,
+        )
         db_path = kg.db_path
         kg.close()
         cache_path.unlink(missing_ok=True)

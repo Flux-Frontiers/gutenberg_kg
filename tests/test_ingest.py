@@ -254,8 +254,20 @@ def test_build_dockg_passes_embedder_to_dockg(tmp_path: Path, monkeypatch):
         def build_embeddings(self, out=None, n_workers=None, quiet=False):
             return out
 
-        def build_index_from_cache(self, cache_path, wipe=False, similar_max_degree=0, quiet=False):
-            pass
+        def build_index_from_cache(
+            self,
+            cache_path,
+            wipe=False,
+            discover_similar=True,
+            similar_k=5,
+            similar_max_degree=0,
+            quiet=False,
+        ):
+            received["index_kwargs"] = {
+                "discover_similar": discover_similar,
+                "similar_k": similar_k,
+                "similar_max_degree": similar_max_degree,
+            }
 
         def close(self):
             pass
@@ -266,6 +278,13 @@ def test_build_dockg_passes_embedder_to_dockg(tmp_path: Path, monkeypatch):
     sentinel = object()
     assert build_dockg(tmp_path, dry_run=False, embedder=sentinel) is True
     assert received["embedder"] is sentinel
+    # Per-book ingest keeps SIMILAR_TO on for the KGRAG federated hop path, at the
+    # cap the evaluation measured. See analysis/SIMILAR_TO_CAP_RECOMMENDATION.md.
+    assert received["index_kwargs"] == {
+        "discover_similar": True,
+        "similar_k": 5,
+        "similar_max_degree": 8,
+    }
 
 
 def test_build_dockg_none_embedder_accepted(tmp_path: Path, monkeypatch):
@@ -286,8 +305,20 @@ def test_build_dockg_none_embedder_accepted(tmp_path: Path, monkeypatch):
         def build_embeddings(self, out=None, n_workers=None, quiet=False):
             return out
 
-        def build_index_from_cache(self, cache_path, wipe=False, similar_max_degree=0, quiet=False):
-            pass
+        def build_index_from_cache(
+            self,
+            cache_path,
+            wipe=False,
+            discover_similar=True,
+            similar_k=5,
+            similar_max_degree=0,
+            quiet=False,
+        ):
+            received["index_kwargs"] = {
+                "discover_similar": discover_similar,
+                "similar_k": similar_k,
+                "similar_max_degree": similar_max_degree,
+            }
 
         def close(self):
             pass
