@@ -16,11 +16,14 @@ gutenberg_kg.diary.chunk).  Chunk strategy and flags match docs/ingestion-pipeli
 from __future__ import annotations
 
 import sqlite3
+import textwrap
 import time
+import traceback
 from dataclasses import dataclass
 from pathlib import Path
 
 from gutenberg_kg.build_corpus import fmt_duration
+from gutenberg_kg.ingest import dockg_defect
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 CORPUS_ROOT = REPO_ROOT / "corpus"
@@ -179,7 +182,13 @@ def build_diary_index(
             message=f".diary/ not found or empty: {diary_chunks_dir}",
         )
 
-    already_built = sqlite_path.exists()
+    # A store is "already built" only if it is *complete*. Checking that
+    # graph.sqlite merely exists would skip a half-built index -- rebuild_index()
+    # writes the graph before the vector store, so an interrupted run leaves a
+    # graph with no vectors, which then gets registered with no semantic search.
+    # Same check the DocKG path uses; .diarykg has the same on-disk shape.
+    defect = dockg_defect(diarykg_dir) if sqlite_path.exists() else None
+    already_built = sqlite_path.exists() and defect is None
     if already_built and not opts.force:
         nodes, edges = _sqlite_counts(sqlite_path)
         return DiaryBuildResult(
@@ -190,6 +199,8 @@ def build_diary_index(
             edges=edges,
             message="already built (use --force to rebuild)",
         )
+    if defect is not None:
+        print(f"  [!] {name}: {defect} — wiping and rebuilding")
 
     if opts.dry_run:
         chunk_count = sum(1 for _ in diary_chunks_dir.glob("entry_*.md"))
@@ -200,7 +211,9 @@ def build_diary_index(
             message=f"[dry-run] would build from {chunk_count} chunk files in {diary_chunks_dir}",
         )
 
-    if already_built and opts.force:
+    # Wipe on an explicit --force, and also on a defective store: building on
+    # top of a stale .diarykg would leave whatever the last run wrote behind.
+    if diarykg_dir.exists() and (already_built and opts.force or defect is not None):
         shutil.rmtree(diarykg_dir)
 
     diarykg_dir.mkdir(parents=True, exist_ok=True)
@@ -224,12 +237,17 @@ def build_diary_index(
         kg = DiaryKG(root=diary_dir, model=DIARY_EMBED_MODEL)
         kg.rebuild_index()
         _clean_chunk_texts(sqlite_path)
+    except (AttributeError, TypeError, NameError):
+        # Signature drift against diary_kg. Identical for every diary, so let it
+        # abort with a traceback rather than be reported as a per-diary failure.
+        # ImportError is handled above, with a friendlier "not installed" message.
+        raise
     except Exception as exc:  # noqa: BLE001
         return DiaryBuildResult(
             name=name,
             status="failed",
             elapsed=time.perf_counter() - t0,
-            message=str(exc),
+            message=f"{exc}\n{textwrap.indent(traceback.format_exc().rstrip(), '      ')}",
         )
 
     nodes, edges = _sqlite_counts(sqlite_path)
