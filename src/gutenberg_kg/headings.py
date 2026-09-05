@@ -42,7 +42,14 @@ HEADING_PATTERNS = [
         ),
         2,
     ),
-    # VOLUME / BOOK / PART + numeral (h2)
+    # VOLUME / BOOK / PART + numeral (h2).
+    #
+    # The optional ``THE`` and the spelled-out ordinals mean this also covers
+    # Dickens' "Book the First--Recalled to Life", which used to have a rule
+    # of its own. That rule never fired: this one is earlier in the list and
+    # matches the same lines to the same level, so first-match-wins gave it
+    # every hit. A Tale of Two Cities' three book divisions are the corpus
+    # evidence -- see the shadowing tests in tests/test_headings.py.
     (
         re.compile(
             r"^(?:VOLUME|BOOK|PART)\s+"
@@ -50,14 +57,6 @@ HEADING_PATTERNS = [
             r"(?:[IVXLCDM]+|FIRST|SECOND|THIRD|FOURTH|FIFTH|SIXTH|SEVENTH|EIGHTH|"
             r"NINTH|TENTH|ELEVENTH|TWELFTH|\d+)(?![A-Za-z])"
             r"(?:\.?\s*[-—:.]?\s*(.+))?$",
-            re.IGNORECASE,
-        ),
-        2,
-    ),
-    # "Book the First--Recalled to Life" (Dickens style)
-    (
-        re.compile(
-            r"^Book\s+the\s+\w+[-—].+$",
             re.IGNORECASE,
         ),
         2,
@@ -71,20 +70,15 @@ HEADING_PATTERNS = [
         ),
         2,
     ),
-    # CHAPTER level (h2) — "CHAPTER I.", "CHAPTER XIV", "CHAPTER 3"
+    # CHAPTER level (h2) — "CHAPTER I.", "CHAPTER XIV", "CHAPTER 3".
+    # IGNORECASE, so Title Case "Chapter 1" comes here too; the separate
+    # Title Case rule that used to follow was identical apart from the flag
+    # and never saw a line.
     (
         re.compile(
             r"^CHAPTER\s+(?:[IVXLCDM]+|\d+)(?![A-Za-z])\.?"
             r"(?:\s*[-—:.]?\s*(.+))?$",
             re.IGNORECASE,
-        ),
-        2,
-    ),
-    # "Chapter 1" style Title Case
-    (
-        re.compile(
-            r"^Chapter\s+(?:[IVXLCDM]+|\d+)(?![A-Za-z])\.?"
-            r"(?:\s*[-—:.]?\s*(.+))?$",
         ),
         2,
     ),
@@ -165,7 +159,13 @@ HEADING_PATTERNS = [
         ),
         2,
     ),
-    # STAVE I / STAVE 1 (A Christmas Carol)
+    # STAVE I / STAVE 1 (A Christmas Carol).
+    #
+    # No book in the corpus uses this, so unlike the rules removed above it
+    # earns its place on expectation rather than evidence. It is kept anyway:
+    # nothing else claims "STAVE I" (the ALL-CAPS catch-all would, but later
+    # and at the wrong level), so deleting it saves two lines and silently
+    # costs A Christmas Carol its divisions the day it is downloaded.
     (
         re.compile(
             r"^STAVE\s+(?:[IVXLCDM]+|\d+)(?![A-Za-z])"
