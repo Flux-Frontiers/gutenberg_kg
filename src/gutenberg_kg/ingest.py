@@ -253,7 +253,7 @@ def build_dockg(
     """Build DocKG for book_dir in-process, reusing a shared embedder if provided.
 
     Mirrors the three-step pipeline used by ``dockg build``:
-    corpus → SQLite, SQLite → JSON embedding cache, cache → sqlite-vec.
+    corpus → SQLite, SQLite → JSONL embedding cache, cache → sqlite-vec.
 
     Programming errors (a bad import, a signature drift against doc_kg) are
     re-raised rather than reported per book: they fail identically for every
@@ -272,7 +272,12 @@ def build_dockg(
     try:
         kg = DocKG(book_dir, embedder=embedder)
         db_path = kg.db_path
-        cache_path = db_path.parent / "embeddings.json"
+        # .jsonl, not .json: the suffix picks the code path. The JSONL branch
+        # streams and reuses the embedder passed in above, while the .json
+        # branch builds its own CorpusEmbedder from the shared embedder's
+        # model_name -- a second model load per book, which on MPS is the
+        # double-load SIGBUS doc_kg added the streaming path to avoid.
+        cache_path = db_path.parent / "embeddings.jsonl"
         kg.build_graph(wipe=True, quiet=quiet)
         kg.build_embeddings(out=cache_path, n_workers=4, quiet=quiet)
         # SIMILAR_TO stays on here, unlike `gutenkg build-corpus`, which ships a

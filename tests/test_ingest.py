@@ -294,7 +294,7 @@ def test_build_dockg_closes_kg_on_failure(tmp_path: Path, monkeypatch):
 
     assert build_dockg(tmp_path, dry_run=False, quiet=True) is False
     assert closed == [True], "kg.close() must run even when the build raises"
-    assert not (tmp_path / ".dockg" / "embeddings.json").exists(), (
+    assert not (tmp_path / ".dockg" / "embeddings.jsonl").exists(), (
         "partial embedding cache must not survive a failed build"
     )
 
