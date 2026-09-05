@@ -24,6 +24,7 @@ Examples:
 
 from __future__ import annotations
 
+import contextlib
 import os
 import platform
 import re
@@ -32,8 +33,10 @@ import shutil
 import socket
 import subprocess
 import sys
+import textwrap
 import threading
 import time
+import traceback
 from collections import deque
 from dataclasses import dataclass, field
 from datetime import UTC, date, datetime
@@ -200,6 +203,47 @@ def is_sqlite_valid(path: Path) -> bool:
         return False
 
 
+def dockg_defect(store_dir: Path) -> str | None:
+    """Return why a ``.dockg`` store is unusable, or ``None`` if it is complete.
+
+    :meth:`build_dockg` writes ``graph.sqlite`` before it builds the vector
+    store, so a run that dies in between leaves a *valid* graph with no vectors.
+    Checking the graph alone would call that shape "already built": the book
+    would be skipped on the next run and then registered with no semantic
+    search, which fails silently at query time rather than at ingest time.
+
+    The vector row count comes from the ``vec_nodes_rowids`` shadow table rather
+    than ``vec_nodes`` itself, because the latter is a ``vec0`` virtual table
+    and cannot be opened without the sqlite-vec extension loaded.
+
+    :param store_dir: The book's ``.dockg`` directory.
+    :return: A short reason string, or ``None`` when the store is complete.
+    """
+    if not is_sqlite_valid(store_dir / "graph.sqlite"):
+        return "corrupt/empty graph.sqlite"
+
+    vectors, lancedb = resolve_vector_paths(store_dir)
+    if vectors is None and lancedb is None:
+        return "no vector store"
+    if vectors is None:
+        return None  # LanceDB store: pre-migration shape, presence is all we check
+
+    import sqlite3
+
+    try:
+        with sqlite3.connect(f"file:{vectors}?mode=ro", uri=True) as con:
+            if not con.execute(
+                "SELECT COUNT(*) FROM sqlite_master WHERE name='vec_nodes'"
+            ).fetchone()[0]:
+                return "vector store has no vec_nodes table"
+            (rows,) = con.execute("SELECT COUNT(*) FROM vec_nodes_rowids").fetchone()
+    except Exception as exc:  # noqa: BLE001
+        return f"unreadable vector store ({exc})"
+    if not rows:
+        return "empty vector store"
+    return None
+
+
 def build_dockg(
     book_dir: Path,
     dry_run: bool = False,
@@ -209,17 +253,27 @@ def build_dockg(
     """Build DocKG for book_dir in-process, reusing a shared embedder if provided.
 
     Mirrors the three-step pipeline used by ``dockg build``:
-    corpus → SQLite, SQLite → JSON embedding cache, cache → LanceDB.
+    corpus → SQLite, SQLite → JSON embedding cache, cache → sqlite-vec.
+
+    Programming errors (a bad import, a signature drift against doc_kg) are
+    re-raised rather than reported per book: they fail identically for every
+    book, so surfacing them once aborts the run instead of printing the same
+    message 249 times. Per-book data failures are caught and reported.
     """
     if dry_run:
         print(f"    [dry] dockg build --repo {book_dir}")
         return True
-    try:
-        from doc_kg.kg import DocKG
+    from doc_kg.kg import DocKG
 
+    # Bound before the try so the finally can clean up whatever got as far as
+    # being created, including when the constructor itself raises.
+    kg = None
+    cache_path = None
+    try:
         kg = DocKG(book_dir, embedder=embedder)
+        db_path = kg.db_path
+        cache_path = db_path.parent / "embeddings.json"
         kg.build_graph(wipe=True, quiet=quiet)
-        cache_path = kg.db_path.parent / "embeddings.json"
         kg.build_embeddings(out=cache_path, n_workers=4, quiet=quiet)
         # SIMILAR_TO stays on here, unlike `gutenkg build-corpus`, which ships a
         # served bundle whose handler is semantic-first and never traverses edges.
@@ -236,23 +290,33 @@ def build_dockg(
             similar_max_degree=8,
             quiet=quiet,
         )
-        db_path = kg.db_path
-        kg.close()
-        cache_path.unlink(missing_ok=True)
-
-        # Stamp the book's publication year as the shared temporal contract, so
-        # a federated time-scoped query can reach this book at all. Books with
-        # no usable date -- common for Gutenberg texts, which carry no IA
-        # metadata sheet -- are simply left undated rather than guessed at.
-        year = publication_year(book_dir)
-        if year:
-            stamped = stamp_publication_year(db_path, year)
-            if stamped and not quiet:
-                print(f"    [+] dated {stamped} nodes to {year}")
-        return True
+    except (ImportError, AttributeError, TypeError, NameError):
+        # Signature drift against doc_kg, or a missing dependency. Identical for
+        # every book, so let it abort the run with a traceback instead of being
+        # laundered into a per-book "build failed".
+        raise
     except Exception as exc:  # noqa: BLE001
         print(f"    [x] dockg build failed: {exc}")
+        if not quiet:
+            print(textwrap.indent(traceback.format_exc().rstrip(), "        "))
         return False
+    finally:
+        if kg is not None:
+            with contextlib.suppress(Exception):
+                kg.close()
+        if cache_path is not None:
+            cache_path.unlink(missing_ok=True)
+
+    # Stamp the book's publication year as the shared temporal contract, so
+    # a federated time-scoped query can reach this book at all. Books with
+    # no usable date -- common for Gutenberg texts, which carry no IA
+    # metadata sheet -- are simply left undated rather than guessed at.
+    year = publication_year(book_dir)
+    if year:
+        stamped = stamp_publication_year(db_path, year)
+        if stamped and not quiet:
+            print(f"    [+] dated {stamped} nodes to {year}")
+    return True
 
 
 def register_book(
@@ -637,9 +701,10 @@ def process_book(
     dockg_dir = book_dir / ".dockg"
     already_built = dockg_sqlite.exists()
 
-    # Auto-wipe if sqlite exists but is corrupt or empty
-    if already_built and not is_sqlite_valid(dockg_sqlite):
-        print("    [!] corrupt/empty graph.sqlite — wiping and rebuilding")
+    # Auto-wipe if the store is corrupt, or half-built from an interrupted run
+    defect = dockg_defect(dockg_dir) if already_built else None
+    if defect:
+        print(f"    [!] {defect} — wiping and rebuilding")
         if not opts.dry_run:
             shutil.rmtree(dockg_dir)
         already_built = False
