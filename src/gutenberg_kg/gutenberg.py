@@ -28,6 +28,22 @@ from pathlib import Path
 
 from gutenberg_kg.authors import parse_reference
 from gutenberg_kg.genres import GUTENBERG_GENRES as ALL_GENRES
+from gutenberg_kg.headings import (
+    breaks_before_heading as _breaks_before_heading,
+)
+from gutenberg_kg.headings import (
+    detect_toc as _detect_toc,
+)
+from gutenberg_kg.headings import (
+    is_heading as _is_heading,
+)
+from gutenberg_kg.headings import (
+    repeated_title_lines as _repeated_title_lines,
+)
+from gutenberg_kg.headings import (
+    skip_title_page as _skip_title_page,
+)
+from gutenberg_kg.spine import contents_regions
 
 # ---------------------------------------------------------------------------
 # Constants
@@ -62,149 +78,6 @@ RDF_NS = {
 _RDF_ABOUT = "{http://www.w3.org/1999/02/22-rdf-syntax-ns#}about"
 _RDF_RESOURCE = "{http://www.w3.org/1999/02/22-rdf-syntax-ns#}resource"
 
-# Common heading patterns found in Gutenberg texts, ordered by specificity.
-# Each tuple: (compiled regex, markdown heading level, group index for title)
-HEADING_PATTERNS = [
-    # "THE FIRST BOOK" / "THE SECOND BOOK" (ordinal, e.g. Meditations)
-    (
-        re.compile(
-            r"^THE\s+(?:FIRST|SECOND|THIRD|FOURTH|FIFTH|SIXTH|SEVENTH|EIGHTH|"
-            r"NINTH|TENTH|ELEVENTH|TWELFTH|THIRTEENTH)\s+BOOK$",
-            re.IGNORECASE,
-        ),
-        2,
-    ),
-    # VOLUME / BOOK / PART + numeral (h2)
-    (
-        re.compile(
-            r"^(?:VOLUME|BOOK|PART)\s+"
-            r"(?:THE\s+)?"
-            r"(?:[IVXLCDM]+|FIRST|SECOND|THIRD|FOURTH|FIFTH|SIXTH|SEVENTH|EIGHTH|"
-            r"NINTH|TENTH|ELEVENTH|TWELFTH|\d+)"
-            r"(?:\.?\s*[-—:.]?\s*(.+))?$",
-            re.IGNORECASE,
-        ),
-        2,
-    ),
-    # "Book the First--Recalled to Life" (Dickens style)
-    (
-        re.compile(
-            r"^Book\s+the\s+\w+[-—].+$",
-            re.IGNORECASE,
-        ),
-        2,
-    ),
-    # ACT (for plays, h2)
-    (
-        re.compile(
-            r"^ACT\s+(?:[IVXLCDM]+|\d+)"
-            r"(?:\.?\s*[-—:.]?\s*(.+))?$",
-            re.IGNORECASE,
-        ),
-        2,
-    ),
-    # CHAPTER level (h2) — "CHAPTER I.", "CHAPTER XIV", "CHAPTER 3"
-    (
-        re.compile(
-            r"^CHAPTER\s+(?:[IVXLCDM]+|\d+)\.?"
-            r"(?:\s*[-—:.]?\s*(.+))?$",
-            re.IGNORECASE,
-        ),
-        2,
-    ),
-    # "Chapter 1" style Title Case
-    (
-        re.compile(
-            r"^Chapter\s+(?:[IVXLCDM]+|\d+)\.?"
-            r"(?:\s*[-—:.]?\s*(.+))?$",
-        ),
-        2,
-    ),
-    # SCENE (for plays, h3)
-    (
-        re.compile(
-            r"^SCENE\s+(?:[IVXLCDM]+|\d+)"
-            r"(?:\.?\s*[-—:.]?\s*(.+))?$",
-            re.IGNORECASE,
-        ),
-        3,
-    ),
-    # LETTER I / LETTER 1 / "Letter 1" (epistolary novels)
-    (
-        re.compile(
-            r"^Letter\s+(?:[IVXLCDM]+|\d+)"
-            r"(?:\.?\s*[-—:.]?\s*(.+))?$",
-            re.IGNORECASE,
-        ),
-        2,
-    ),
-    # Bible book headings: "The First Book of Moses: Called Genesis",
-    # "The Book of Joshua", "The Gospel According to Saint Matthew", etc.
-    (
-        re.compile(
-            r"^The\s+(?:First|Second|Third|Fourth|Fifth)\s+Book\s+of\s+.+$",
-        ),
-        2,
-    ),
-    (
-        re.compile(
-            r"^The\s+(?:Book\s+of|Gospel\s+According|Epistle|General\s+Epistle|"
-            r"Revelation|Acts|Song|Lamentations)\s+.+$",
-        ),
-        2,
-    ),
-    # Testament dividers (Bible)
-    (
-        re.compile(
-            r"^The\s+(?:Old|New)\s+Testament.*$",
-        ),
-        2,
-    ),
-    # SURA headings (Quran).  Rodwell prints a footnote digit straight after
-    # the word or the numeral and an edition-order marker in brackets at the
-    # end: "SURA1 XCVI.-THICK BLOOD, OR CLOTS OF BLOOD [I.]".  A separator
-    # after the numeral is required so prose like "SURA I saw ..." is not
-    # mistaken for a heading.
-    (
-        re.compile(
-            r"^SURA\d*\s+([IVXLCDM]+)\d*\s*[.\-—]+\s*(.*?)\s*(?:\[[IVXLCDM]+\.?\])?$",
-            re.IGNORECASE,
-        ),
-        2,
-    ),
-    # STAVE I / STAVE 1 (A Christmas Carol)
-    (
-        re.compile(
-            r"^STAVE\s+(?:[IVXLCDM]+|\d+)"
-            r"(?:\.?\s*[-—:.]?\s*(.+))?$",
-            re.IGNORECASE,
-        ),
-        2,
-    ),
-    # "I. A SCANDAL IN BOHEMIA" — Roman numeral + period + ALL CAPS TITLE
-    (
-        re.compile(
-            r"^([IVXLCDM]{1,6})\.\s+([A-Z][A-Z\s\-',:]{2,60})$",
-        ),
-        2,
-    ),
-    # Roman numeral standalone: "I.", "II.", "XIV." (section breaks within stories)
-    # Must have a period to distinguish "I." from "I think..."
-    (
-        re.compile(
-            r"^([IVXLCDM]{1,6})\.\s*$",
-        ),
-        3,
-    ),
-    # Standalone ALL-CAPS heading (at least 3 chars, max ~60, not a sentence)
-    (
-        re.compile(
-            r"^([A-Z][A-Z\s\-',:]{2,60})$",
-        ),
-        3,
-    ),
-]
-
 # Illustration markers to clean up
 ILLUSTRATION_RE = re.compile(r"\[Illustration[^\]]*\]")
 
@@ -216,21 +89,6 @@ FRONT_MATTER_SKIP = re.compile(
     r"\*\*\*)",
     re.IGNORECASE,
 )
-
-# Literal lines that open a table-of-contents-shaped block. "Navigation" is
-# Gutenberg's own auto-generated nav list (an HTML-to-text artefact seen in
-# some editions, e.g. #148 Franklin); it is handled separately from
-# CONTENTS because its entries are indented list items rather than
-# dot-leader chapter listings, and blank-line-count heuristics that work for
-# CONTENTS badly over-consume a Navigation block (see _detect_toc).
-_TOC_CONTENTS_LINES = {"CONTENTS", "CONTENTS.", "TABLE OF CONTENTS", "TABLE OF CONTENTS."}
-_TOC_NAVIGATION_LINES = {"NAVIGATION", "NAVIGATION."}
-
-# HEADING_PATTERNS entries that require a specific structural keyword
-# (CHAPTER, BOOK, PART, ACT, ...) rather than bare line shape. Used to tell
-# a real body heading apart from a title-page field that merely happens to
-# look like one (see _skip_title_page).
-_STRUCTURAL_HEADING_PATTERNS = HEADING_PATTERNS[:-1]
 
 
 # ---------------------------------------------------------------------------
@@ -475,159 +333,6 @@ def strip_boilerplate(text: str) -> str:
 # ---------------------------------------------------------------------------
 
 
-def _breaks_before_heading(prev_line: str) -> bool:
-    """
-    Whether *prev_line* separates a heading from body text as a blank line would.
-
-    A heading is normally only honoured after a blank line, which keeps
-    mid-paragraph phrases from being promoted.  Bilingual editions break that
-    assumption: Legge's Analects prints the Chinese heading immediately above
-    the English one with nothing between, so every ``BOOK I.`` in the volume
-    was silently swallowed into the body and the whole work collapsed into one
-    section.  A line carrying no Latin letters is not prose in these texts, so
-    it can stand in for the blank.
-
-    :param prev_line: The preceding source line.
-    :return: ``True`` if a heading may follow it.
-    """
-    stripped = prev_line.strip()
-    if not stripped:
-        return True
-    return not any(ch.isalpha() and ch.isascii() for ch in stripped)
-
-
-def _is_heading(line: str) -> tuple[int, str] | None:
-    """Check if a line is a structural heading.
-
-    Returns (level, heading_text) or None.
-    """
-    stripped = line.strip()
-    if not stripped or len(stripped) > 120:
-        return None
-
-    # Reference the last two patterns by index for special handling
-    all_caps_pattern = HEADING_PATTERNS[-1][0]
-    roman_standalone_pattern = HEADING_PATTERNS[-2][0]
-    roman_titled_pattern = HEADING_PATTERNS[-3][0]
-
-    for pattern, level in HEADING_PATTERNS:
-        m = pattern.match(stripped)
-        if not m:
-            continue
-
-        # ALL-CAPS standalone: reject sentence-like lines
-        if pattern is all_caps_pattern:
-            if len(stripped) > 60 or stripped.endswith(",") or stripped.endswith(";"):
-                continue
-            words = stripped.split()
-            if len(words) > 8:
-                continue
-
-        # Bare roman numeral "IV." — sub-section divider
-        if pattern is roman_standalone_pattern:
-            roman = m.group(1)
-            if not re.match(r"^[IVXLCDM]+$", roman):
-                continue
-            return (level, f"{roman}.")
-
-        # "I. A SCANDAL IN BOHEMIA" — roman + titled
-        if pattern is roman_titled_pattern:
-            roman = m.group(1)
-            if not re.match(r"^[IVXLCDM]+$", roman):
-                continue
-            title_part = m.group(2).strip() if m.lastindex and m.lastindex >= 2 else ""
-            heading = f"{roman}. {title_part}".strip()
-            return (level, heading)
-
-        return (level, stripped)
-    return None
-
-
-def _is_structural_heading(line: str) -> bool:
-    """Whether *line* matches a keyword-anchored heading pattern (CHAPTER,
-    BOOK, PART, ACT, ...), as opposed to the generic standalone ALL-CAPS
-    catch-all. Used to recognise a real body heading even when it is short
-    enough to otherwise look like a title-page field."""
-    return any(pattern.match(line) for pattern, _level in _STRUCTURAL_HEADING_PATTERNS)
-
-
-def _looks_like_title_field(line: str) -> bool:
-    """Whether *line* has the shape of a title-page field: a short
-    standalone label (ALL-CAPS, a Title-Case phrase, or a bare
-    number/date), not a real heading and not a line of prose."""
-    if not line or len(line) > 60:
-        return False
-    if _is_structural_heading(line):
-        return False
-    if line.isupper():
-        return True
-    if re.match(r"^[\d\W]+$", line):
-        return True
-    words = line.split()
-    if 0 < len(words) <= 8 and line[-1] not in ".!?;,":
-        return all(not w[0].isalpha() or w[0].isupper() for w in words)
-    return False
-
-
-# Safety bounds on _skip_title_page: real title pages are a handful of
-# fields within the first couple dozen lines. These just stop a pathological
-# run of short lines (e.g. a page of verse) from being consumed wholesale.
-_TITLE_PAGE_MAX_LINES = 60
-_TITLE_PAGE_MAX_FIELDS = 20
-
-# A title page must have at least this many standalone fields before the
-# region is treated as front matter rather than a real (single-line) body
-# heading -- so "CHAPTER I" or a lone "INTRODUCTION" immediately followed by
-# prose is left alone, per test_skip_front_matter_no_front_matter and
-# friends.
-_TITLE_PAGE_MIN_FIELDS = 2
-
-
-def _skip_title_page(lines: list[str], start_idx: int) -> int:
-    """Skip a title page (title, subtitle, editor, publisher, year) that
-    precedes the real body -- e.g. the Harvard Classics front page ahead of
-    Franklin's Autobiography (#148), which the standalone ALL-CAPS heading
-    rule would otherwise turn into its own section.
-
-    Stops at the first line that is not title-field-shaped, at a
-    table-of-contents marker, or at a run of 2+ blank lines -- Gutenberg
-    editions commonly widen the gap to mark a structural boundary (e.g. the
-    four blank lines between Franklin's title page and its Navigation
-    block), which distinguishes it from the single blank line that
-    separates ordinary paragraphs. Only commits the skip if at least
-    _TITLE_PAGE_MIN_FIELDS fields were found, so a single ALL-CAPS heading
-    immediately followed by prose -- a real chapter opener -- is never
-    eaten.
-    """
-    i = start_idx
-    fields = 0
-    blank_run = 0
-    while (
-        i < len(lines)
-        and (i - start_idx) < _TITLE_PAGE_MAX_LINES
-        and fields < _TITLE_PAGE_MAX_FIELDS
-    ):
-        stripped = lines[i].strip()
-        if not stripped:
-            blank_run += 1
-            if blank_run >= 2:
-                break
-            i += 1
-            continue
-        blank_run = 0
-        upper = stripped.upper()
-        if upper in _TOC_CONTENTS_LINES or upper in _TOC_NAVIGATION_LINES:
-            break
-        if not _looks_like_title_field(stripped):
-            break
-        i += 1
-        fields += 1
-
-    if fields < _TITLE_PAGE_MIN_FIELDS:
-        return start_idx
-    return i
-
-
 def _skip_front_matter(lines: list[str], start_idx: int) -> int:
     """Skip producer/transcriber credits and a title page that appear before
     the actual text."""
@@ -652,55 +357,6 @@ def _skip_front_matter(lines: list[str], start_idx: int) -> int:
     return _skip_title_page(lines, i)
 
 
-def _detect_toc(lines: list[str], start: int, end: int) -> tuple[int, int] | None:
-    """Detect a table of contents block and return its (start, end) indices."""
-    toc_start = None
-    is_navigation = False
-    for i in range(start, min(start + 200, end)):
-        line = lines[i].strip().upper()
-        if line in _TOC_CONTENTS_LINES:
-            toc_start = i
-            break
-        if line in _TOC_NAVIGATION_LINES:
-            toc_start = i
-            is_navigation = True
-            break
-
-    if toc_start is None:
-        return None
-
-    if is_navigation:
-        # Gutenberg's auto-generated "Navigation" block: a short list of
-        # indented entries. Blank-line-count heuristics badly over-consume
-        # here since these editions use plain single blank lines between
-        # paragraphs throughout, so end at the first flush-left
-        # (non-indented) line instead -- a real list item is always
-        # indented in the raw text.
-        i = toc_start + 1
-        while i < min(toc_start + 100, end) and not lines[i].strip():
-            i += 1
-        while i < min(toc_start + 100, end) and lines[i].strip() and lines[i][:1].isspace():
-            i += 1
-        return (toc_start, i)
-
-    # TOC ends at the first substantial paragraph or heading after a blank section
-    i = toc_start + 1
-    blank_count = 0
-    while i < min(toc_start + 300, end):
-        line = lines[i].strip()
-        if not line:
-            blank_count += 1
-            if blank_count >= 3:
-                return (toc_start, i)
-        else:
-            if blank_count >= 2 and len(line) > 60:
-                return (toc_start, i)
-            blank_count = 0
-        i += 1
-
-    return (toc_start, i)
-
-
 def text_to_markdown(text: str, meta: dict) -> str:
     """Convert plain Gutenberg text to structured Markdown.
 
@@ -717,8 +373,15 @@ def text_to_markdown(text: str, meta: dict) -> str:
     start_idx = _skip_front_matter(lines, 0)
 
     # Detect and skip table of contents
-    toc = _detect_toc(lines, start_idx, min(start_idx + 200, total))
+    # Where the contents list ends comes from the structural profile, not
+    # from counting blank lines; detect_toc anchors it to the marker line.
+    toc = _detect_toc(lines, start_idx, min(start_idx + 200, total), contents_regions(lines))
     toc_range = range(toc[0], toc[1]) if toc else range(0)
+
+    # Title-Case work titles, honoured only where they recur (see
+    # _repeated_title_lines). File-level knowledge, so it cannot live in the
+    # per-line _is_heading.
+    title_lines = _repeated_title_lines(lines, start_idx, toc_range)
 
     # Build the markdown
     md_lines = []
@@ -765,6 +428,8 @@ def text_to_markdown(text: str, meta: dict) -> str:
 
         # Check for heading
         heading = _is_heading(stripped)
+        if heading is None and i in title_lines:
+            heading = (2, stripped)
         if heading and (prev_blank or _breaks_before_heading(prev_line)):
             level, heading_text = heading
 

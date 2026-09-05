@@ -16,6 +16,8 @@ The Lowell Press
 
 New York
 
+Footnotes
+
 ## PART I
 
 ## Book I. The History Of A Family
@@ -69,7 +71,7 @@ feminine independence, to override class distinctions and the despotism
 of her family. And a pliable imagination persuaded her, we must
 suppose, for a brief moment, that Fyodor Pavlovitch, in spite of his
 parasitic position, was one of the bold and ironical spirits of that
-progressive epoch, though he was, in fact, an ill‐natured buffoon and
+progressive epoch, though he was, in fact, an ill-natured buffoon and
 nothing more. What gave the marriage piquancy was that it was preceded
 by an elopement, and this greatly captivated Adelaïda Ivanovna’s fancy.
 Fyodor Pavlovitch’s position at the time made him specially eager for
@@ -91,7 +93,7 @@ apportioned the runaway bride her dowry, the husband and wife began to
 lead a most disorderly life, and there were everlasting scenes between
 them. It was said that the young wife showed incomparably more
 generosity and dignity than Fyodor Pavlovitch, who, as is now known,
-got hold of all her money up to twenty‐five thousand roubles as soon as
+got hold of all her money up to twenty-five thousand roubles as soon as
 she received it, so that those thousands were lost to her for ever. The
 little village and the rather fine town house which formed part of her
 dowry he did his utmost for a long time to transfer to his name, by
@@ -102,7 +104,7 @@ importunity. But, fortunately, Adelaïda Ivanovna’s family intervened
 and circumvented his greediness. It is known for a fact that frequent
 fights took place between the husband and wife, but rumor had it that
 Fyodor Pavlovitch did not beat his wife but was beaten by her, for she
-was a hot‐tempered, bold, dark‐browed, impatient woman, possessed of
+was a hot-tempered, bold, dark-browed, impatient woman, possessed of
 remarkable physical strength. Finally, she left the house and ran away
 from Fyodor Pavlovitch with a destitute divinity student, leaving
 Mitya, a child of three years old, in her husband’s hands. Immediately
@@ -111,7 +113,7 @@ abandoned himself to orgies of drunkenness. In the intervals he used to
 drive all over the province, complaining tearfully to each and all of
 Adelaïda Ivanovna’s having left him, going into details too disgraceful
 for a husband to mention in regard to his own married life. What seemed
-to gratify him and flatter his self‐love most was to play the
+to gratify him and flatter his self-love most was to play the
 ridiculous part of the injured husband, and to parade his woes with
 embellishments.
 
@@ -139,7 +141,7 @@ that people were sorry for him, in spite of the repulsion he inspired.
 It is quite possible that both versions were true, that he rejoiced at
 his release, and at the same time wept for her who released him. As a
 general rule, people, even the wicked, are much more naïve and
-simple‐hearted than we suppose. And we ourselves are, too.
+simple-hearted than we suppose. And we ourselves are, too.
 
 ## Chapter II.
 
@@ -152,7 +154,7 @@ with Adelaïda Ivanovna, not from malice, nor because of his matrimonial
 grievances, but simply because he forgot him. While he was wearying
 every one with his tears and complaints, and turning his house into a
 sink of debauchery, a faithful servant of the family, Grigory, took the
-three‐year‐old Mitya into his care. If he hadn’t looked after him there
+three-year-old Mitya into his care. If he hadn’t looked after him there
 would have been no one even to change the baby’s little shirt.
 
 It happened moreover that the child’s relations on his mother’s side
@@ -180,7 +182,7 @@ about a thousand souls, to reckon in the old style. His splendid estate
 lay on the outskirts of our little town and bordered on the lands of
 our famous monastery, with which Pyotr Alexandrovitch began an endless
 lawsuit, almost as soon as he came into the estate, concerning the
-rights of fishing in the river or wood‐cutting in the forest, I don’t
+rights of fishing in the river or wood-cutting in the forest, I don’t
 know exactly which. He regarded it as his duty as a citizen and a man
 of culture to open an attack upon the “clericals.” Hearing all about
 Adelaïda Ivanovna, whom he, of course, remembered, and in whom he had
@@ -259,14 +261,14 @@ sons, and of their origin.
 
 *The Second Marriage And The Second Family*
 
-Very shortly after getting his four‐year‐old Mitya off his hands Fyodor
+Very shortly after getting his four-year-old Mitya off his hands Fyodor
 Pavlovitch married a second time. His second marriage lasted eight
 years. He took this second wife, Sofya Ivanovna, also a very young
 girl, from another province, where he had gone upon some small piece of
 business in company with a Jew. Though Fyodor Pavlovitch was a drunkard
 and a vicious debauchee he never neglected investing his capital, and
 managed his business affairs very successfully, though, no doubt, not
-over‐ scrupulously. Sofya Ivanovna was the daughter of an obscure
+over-scrupulously. Sofya Ivanovna was the daughter of an obscure
 deacon, and was left from childhood an orphan without relations. She
 grew up in the house of a general’s widow, a wealthy old lady of good
 position, who was at once her benefactress and tormentor. I do not know
@@ -274,7 +276,7 @@ the details, but I have only heard that the orphan girl, a meek and
 gentle creature, was once cut down from a halter in which she was
 hanging from a nail in the loft, so terrible were her sufferings from
 the caprice and everlasting nagging of this old woman, who was
-apparently not bad‐hearted but had become an insufferable tyrant
+apparently not bad-hearted but had become an insufferable tyrant
 through idleness.
 
 Fyodor Pavlovitch made her an offer; inquiries were made about him and
@@ -352,7 +354,7 @@ had given him, he drove all over the town telling the story.
 It happened that the old lady died soon after this, but she left the
 boys in her will a thousand roubles each “for their instruction, and so
 that all be spent on them exclusively, with the condition that it be so
-portioned out as to last till they are twenty‐one, for it is more than
+portioned out as to last till they are twenty-one, for it is more than
 adequate provision for such children. If other people think fit to
 throw away their money, let them.” I have not read the will myself, but
 I heard there was something queer of the sort, very whimsically
@@ -399,7 +401,7 @@ such a father he would get no real assistance. However that may have
 been, the young man was by no means despondent and succeeded in getting
 work, at first giving sixpenny lessons and afterwards getting
 paragraphs on street incidents into the newspapers under the signature
-of “Eye‐Witness.” These paragraphs, it was said, were so interesting
+of “Eye-Witness.” These paragraphs, it was said, were so interesting
 and piquant that they were soon taken. This alone showed the young
 man’s practical and intellectual superiority over the masses of needy
 and unfortunate students of both sexes who hang about the offices of
@@ -491,8 +493,8 @@ be cloistered there for the rest of his life.
 
 *The Third Son, Alyosha*
 
-He was only twenty, his brother Ivan was in his twenty‐fourth year at
-the time, while their elder brother Dmitri was twenty‐seven. First of
+He was only twenty, his brother Ivan was in his twenty-fourth year at
+the time, while their elder brother Dmitri was twenty-seven. First of
 all, I must explain that this young man, Alyosha, was not a fanatic,
 and, in my opinion at least, was not even a mystic. I may as well give
 my full opinion from the beginning. He was simply an early lover of
@@ -562,7 +564,7 @@ instance, and rather solitary. From his earliest childhood he was fond
 of creeping into a corner to read, and yet he was a general favorite
 all the while he was at school. He was rarely playful or merry, but any
 one could see at the first glance that this was not from any
-sullenness. On the contrary he was bright and good‐tempered. He never
+sullenness. On the contrary he was bright and good-tempered. He never
 tried to show off among his schoolfellows. Perhaps because of this, he
 was never afraid of any one, yet the boys immediately understood that
 he was not proud of his fearlessness and seemed to be unaware that he
@@ -614,7 +616,7 @@ enthusiast, who, if they were suddenly to come into possession of a
 large fortune, would not hesitate to give it away for the asking,
 either for good works or perhaps to a clever rogue. In general he
 seemed scarcely to know the value of money, not, of course, in a
-literal sense. When he was given pocket‐money, which he never asked
+literal sense. When he was given pocket-money, which he never asked
 for, he was either terribly careless of it so that it was gone in a
 moment, or he kept it for weeks together, not knowing what to do with
 it.
@@ -680,13 +682,13 @@ something had awakened in this prematurely old man which had long been
 dead in his soul.
 
 “Do you know,” he used often to say, looking at Alyosha, “that you are
-like her, ‘the crazy woman’ ”—that was what he used to call his dead
+like her, ‘the crazy woman’”—that was what he used to call his dead
 wife, Alyosha’s mother. Grigory it was who pointed out the “crazy
 woman’s” grave to Alyosha. He took him to our town cemetery and showed
-him in a remote corner a cast‐iron tombstone, cheap but decently kept,
+him in a remote corner a cast-iron tombstone, cheap but decently kept,
 on which were inscribed the name and age of the deceased and the date
-of her death, and below a four‐lined verse, such as are commonly used
-on old‐fashioned middle‐class tombs. To Alyosha’s amazement this tomb
+of her death, and below a four-lined verse, such as are commonly used
+on old-fashioned middle-class tombs. To Alyosha’s amazement this tomb
 turned out to be Grigory’s doing. He had put it up on the poor “crazy
 woman’s” grave at his own expense, after Fyodor Pavlovitch, whom he had
 often pestered about the grave, had gone to Odessa, abandoning the
@@ -731,7 +733,7 @@ after listening in thoughtful silence to Alyosha, and seeming scarcely
 surprised at his request. “H’m!... So that’s where you want to be, my
 gentle boy?”
 
-He was half drunk, and suddenly he grinned his slow half‐drunken grin,
+He was half drunk, and suddenly he grinned his slow half-drunken grin,
 which was not without a certain cunning and tipsy slyness. “H’m!... I
 had a presentiment that you would end in something like this. Would you
 believe it? You were making straight for it. Well, to be sure you have
@@ -798,15 +800,15 @@ sentimental.
 
 Some of my readers may imagine that my young man was a sickly,
 ecstatic, poorly developed creature, a pale, consumptive dreamer. On
-the contrary, Alyosha was at this time a well‐grown, red‐cheeked,
-clear‐eyed lad of nineteen, radiant with health. He was very handsome,
+the contrary, Alyosha was at this time a well-grown, red-cheeked,
+clear-eyed lad of nineteen, radiant with health. He was very handsome,
 too, graceful, moderately tall, with hair of a dark brown, with a
-regular, rather long, oval‐shaped face, and wide‐set dark gray, shining
+regular, rather long, oval-shaped face, and wide-set dark gray, shining
 eyes; he was very thoughtful, and apparently very serene. I shall be
 told, perhaps, that red cheeks are not incompatible with fanaticism and
 mysticism; but I fancy that Alyosha was more of a realist than any one.
 Oh! no doubt, in the monastery he fully believed in miracles, but, to
-my thinking, miracles are never a stumbling‐block to the realist. It is
+my thinking, miracles are never a stumbling-block to the realist. It is
 not miracles that dispose realists to belief. The genuine realist, if
 he is an unbeliever, will always find strength and ability to
 disbelieve in the miraculous, and if he is confronted with a miracle as
@@ -846,14 +848,14 @@ will accept no compromise.” In the same way, if he had decided that God
 and immortality did not exist, he would at once have become an atheist
 and a socialist. For socialism is not merely the labor question, it is
 before all things the atheistic question, the question of the form
-taken by atheism to‐day, the question of the tower of Babel built
+taken by atheism to-day, the question of the tower of Babel built
 without God, not to mount to heaven from earth but to set up heaven on
 earth. Alyosha would have found it strange and impossible to go on
 living as before. It is written: “Give all that thou hast to the poor
 and follow Me, if thou wouldst be perfect.”
 
 Alyosha said to himself: “I can’t give two roubles instead of ‘all,’
-and only go to mass instead of ‘following Him.’ ” Perhaps his memories
+and only go to mass instead of ‘following Him.’” Perhaps his memories
 of childhood brought back our monastery, to which his mother may have
 taken him to mass. Perhaps the slanting sunlight and the holy image to
 which his poor “crazy” mother had held him up still acted upon his
@@ -880,16 +882,16 @@ already been three such elders and Zossima was the last of them. But he
 was almost dying of weakness and disease, and they had no one to take
 his place. The question for our monastery was an important one, for it
 had not been distinguished by anything in particular till then: they
-had neither relics of saints, nor wonder‐working ikons, nor glorious
+had neither relics of saints, nor wonder-working ikons, nor glorious
 traditions, nor historical exploits. It had flourished and been
 glorious all over Russia through its elders, to see and hear whom
 pilgrims had flocked for thousands of miles from all parts.
 
 What was such an elder? An elder was one who took your soul, your will,
 into his soul and his will. When you choose an elder, you renounce your
-own will and yield it to him in complete submission, complete self‐
-abnegation. This novitiate, this terrible school of abnegation, is
-undertaken voluntarily, in the hope of self‐conquest, of self‐mastery,
+own will and yield it to him in complete submission, complete
+self-abnegation. This novitiate, this terrible school of abnegation, is
+undertaken voluntarily, in the hope of self-conquest, of self-mastery,
 in order, after a life of obedience, to attain perfect freedom, that
 is, from self; to escape the lot of those who have lived their whole
 life without finding their true selves in themselves. This institution
@@ -937,11 +939,11 @@ of the character of the sacrament. In the end, however, the institution
 of elders has been retained and is becoming established in Russian
 monasteries. It is true, perhaps, that this instrument which had stood
 the test of a thousand years for the moral regeneration of a man from
-slavery to freedom and to moral perfectibility may be a two‐edged
-weapon and it may lead some not to humility and complete self‐control
+slavery to freedom and to moral perfectibility may be a two-edged
+weapon and it may lead some not to humility and complete self-control
 but to the most Satanic pride, that is, to bondage and not to freedom.
 
-The elder Zossima was sixty‐five. He came of a family of landowners,
+The elder Zossima was sixty-five. He came of a family of landowners,
 had been in the army in early youth, and served in the Caucasus as an
 officer. He had, no doubt, impressed Alyosha by some peculiar quality
 of his soul. Alyosha lived in the cell of the elder, who was very fond
@@ -953,7 +955,7 @@ youthful imagination was deeply stirred by the power and fame of his
 elder. It was said that so many people had for years past come to
 confess their sins to Father Zossima and to entreat him for words of
 advice and healing, that he had acquired the keenest intuition and
-could tell from an unknown face what a new‐comer wanted, and what was
+could tell from an unknown face what a new-comer wanted, and what was
 the suffering on his conscience. He sometimes astounded and almost
 alarmed his visitors by his knowledge of their secrets before they had
 spoken a word.
@@ -1027,7 +1029,7 @@ the dream in Alyosha’s heart.
 
 The arrival of his two brothers, whom he had not known till then,
 seemed to make a great impression on Alyosha. He more quickly made
-friends with his half‐brother Dmitri (though he arrived later) than
+friends with his half-brother Dmitri (though he arrived later) than
 with his own brother Ivan. He was extremely interested in his brother
 Ivan, but when the latter had been two months in the town, though they
 had met fairly often, they were still not intimate. Alyosha was
@@ -1099,7 +1101,7 @@ one thought him. He awaited the day with a heavy heart. No doubt he was
 always pondering in his mind how the family discord could be ended. But
 his chief anxiety concerned the elder. He trembled for him, for his
 glory, and dreaded any affront to him, especially the refined,
-courteous irony of Miüsov and the supercilious half‐utterances of the
+courteous irony of Miüsov and the supercilious half-utterances of the
 highly educated Ivan. He even wanted to venture on warning the elder,
 telling him something about them, but, on second thoughts, said
 nothing. He only sent word the day before, through a friend, to his
@@ -1121,7 +1123,7 @@ conclusion. Alyosha was not greatly cheered by the letter.
 *They Arrive At The Monastery*
 
 It was a warm, bright day at the end of August. The interview with the
-elder had been fixed for half‐past eleven, immediately after late mass.
+elder had been fixed for half-past eleven, immediately after late mass.
 Our visitors did not take part in the service, but arrived just as it
 was over. First an elegant open carriage, drawn by two valuable horses,
 drove up with Miüsov and a distant relative of his, a young man of
@@ -1129,9 +1131,9 @@ twenty, called Pyotr Fomitch Kalganov. This young man was preparing to
 enter the university. Miüsov, with whom he was staying for the time,
 was trying to persuade him to go abroad to the university of Zurich or
 Jena. The young man was still undecided. He was thoughtful and
-absent‐minded. He was nice‐ looking, strongly built, and rather tall.
+absent-minded. He was nice-looking, strongly built, and rather tall.
 There was a strange fixity in his gaze at times. Like all very
-absent‐minded people he would sometimes stare at a person without
+absent-minded people he would sometimes stare at a person without
 seeing him. He was silent and rather awkward, but sometimes, when he
 was alone with any one, he became talkative and effusive, and would
 laugh at anything or nothing. But his animation vanished as quickly as
@@ -1140,7 +1142,7 @@ already some independent fortune and expectations of much more. He was
 a friend of Alyosha’s.
 
 In an ancient, jolting, but roomy, hired carriage, with a pair of old
-pinkish‐gray horses, a long way behind Miüsov’s carriage, came Fyodor
+pinkish-gray horses, a long way behind Miüsov’s carriage, came Fyodor
 Pavlovitch, with his son Ivan. Dmitri was late, though he had been
 informed of the time the evening before. The visitors left their
 carriage at the hotel, outside the precincts, and went to the gates of
@@ -1154,7 +1156,7 @@ out of the church, bareheaded and crossing themselves. Among the
 humbler people were a few of higher rank—two or three ladies and a very
 old general. They were all staying at the hotel. Our visitors were at
 once surrounded by beggars, but none of them gave them anything, except
-young Kalganov, who took a ten‐ copeck piece out of his purse, and,
+young Kalganov, who took a ten-copeck piece out of his purse, and,
 nervous and embarrassed—God knows why!—hurriedly gave it to an old
 woman, saying: “Divide it equally.” None of his companions made any
 remark upon it, so that he had no reason to be embarrassed; but,
@@ -1167,7 +1169,7 @@ and highly cultured landowner, upon whom all in the monastery were in a
 sense dependent, as a decision of the lawsuit might at any moment put
 their fishing rights in his hands. Yet no official personage met them.
 
-Miüsov looked absent‐mindedly at the tombstones round the church, and
+Miüsov looked absent-mindedly at the tombstones round the church, and
 was on the point of saying that the dead buried here must have paid a
 pretty penny for the right of lying in this “holy place,” but
 refrained. His liberal irony was rapidly changing almost into anger.
@@ -1176,7 +1178,7 @@ refrained. His liberal irony was rapidly changing almost into anger.
 out, for time is passing,” he observed suddenly, as though speaking to
 himself.
 
-All at once there came up a bald‐headed, elderly man with ingratiating
+All at once there came up a bald-headed, elderly man with ingratiating
 little eyes, wearing a full, summer overcoat. Lifting his hat, he
 introduced himself with a honeyed lisp as Maximov, a landowner of Tula.
 He at once entered into our visitors’ difficulty.
@@ -1210,7 +1212,7 @@ Maximov snapped his fingers in the air.
 “The elder, the splendid elder, the elder! The honor and glory of the
 monastery, Zossima. Such an elder!”
 
-But his incoherent talk was cut short by a very pale, wan‐looking monk
+But his incoherent talk was cut short by a very pale, wan-looking monk
 of medium height, wearing a monk’s cap, who overtook them. Fyodor
 Pavlovitch and Miüsov stopped.
 
@@ -1228,7 +1230,7 @@ too?”
 “Yes, of course. What have I come for but to study all the customs
 here? The only obstacle to me is your company....”
 
-“Yes, Dmitri Fyodorovitch is non‐existent as yet.”
+“Yes, Dmitri Fyodorovitch is non-existent as yet.”
 
 “It would be a capital thing if he didn’t turn up. Do you suppose I
 like all this business, and in your company, too? So we will come to
@@ -1275,7 +1277,7 @@ And he repeatedly made the sign of the cross to the saints painted
 above and on the sides of the gates.
 
 “When you go to Rome you must do as the Romans do. Here in this
-hermitage there are twenty‐five saints being saved. They look at one
+hermitage there are twenty-five saints being saved. They look at one
 another, and eat cabbages. And not one woman goes in at this gate.
 That’s what is remarkable. And that really is so. But I did hear that
 the elder receives ladies,” he remarked suddenly to the monk.
@@ -1292,7 +1294,7 @@ so weak that he has hardly shown himself even to the people.”
 “So then there are loopholes, after all, to creep out of the hermitage
 to the ladies. Don’t suppose, holy father, that I mean any harm. But do
 you know that at Athos not only the visits of women are not allowed,
-but no creature of the female sex—no hens, nor turkey‐hens, nor cows.”
+but no creature of the female sex—no hens, nor turkey-hens, nor cows.”
 
 “Fyodor Pavlovitch, I warn you I shall go back and leave you here.
 They’ll turn you out when I’m gone.”
@@ -1303,8 +1305,8 @@ they live in!”
 
 Though there were no roses now, there were numbers of rare and
 beautiful autumn flowers growing wherever there was space for them, and
-evidently tended by a skillful hand; there were flower‐beds round the
-church, and between the tombs; and the one‐storied wooden house where
+evidently tended by a skillful hand; there were flower-beds round the
+church, and between the tombs; and the one-storied wooden house where
 the elder lived was also surrounded with flowers.
 
 “And was it like this in the time of the last elder, Varsonofy? He
@@ -1345,7 +1347,7 @@ and twenty, standing in the corner throughout the interview. He had a
 broad, fresh face, and clever, observant, narrow brown eyes, and was
 wearing ordinary dress. He was a divinity student, living under the
 protection of the monastery. His expression was one of unquestioning,
-but self‐respecting, reverence. Being in a subordinate and dependent
+but self-respecting, reverence. Being in a subordinate and dependent
 position, and so not on an equality with the guests, he did not greet
 them with a bow.
 
@@ -1369,7 +1371,7 @@ the hand raised to bless them, and bowing to them again, asked them all
 to sit down. The blood rushed to Alyosha’s cheeks. He was ashamed. His
 forebodings were coming true.
 
-Father Zossima sat down on a very old‐fashioned mahogany sofa, covered
+Father Zossima sat down on a very old-fashioned mahogany sofa, covered
 with leather, and made his visitors sit down in a row along the
 opposite wall on four mahogany chairs, covered with shabby black
 leather. The monks sat, one at the door and the other at the window.
@@ -1394,10 +1396,10 @@ which a clever man of the world of established position can hardly help
 taking himself rather seriously. At the first moment he did not like
 Zossima. There was, indeed, something in the elder’s face which many
 people besides Miüsov might not have liked. He was a short, bent,
-little man, with very weak legs, and though he was only sixty‐five, he
+little man, with very weak legs, and though he was only sixty-five, he
 looked at least ten years older. His face was very thin and covered
 with a network of fine wrinkles, particularly numerous about his eyes,
-which were small, light‐colored, quick, and shining like two bright
+which were small, light-colored, quick, and shining like two bright
 points. He had a sprinkling of gray hair about his temples. His pointed
 beard was small and scanty, and his lips, which smiled frequently, were
 as thin as two threads. His nose was not long, but sharp, like a bird’s
@@ -1414,8 +1416,8 @@ son, Dmitri. I apologize for him, sacred elder!” (Alyosha shuddered all
 over at “sacred elder.”) “I am always punctual myself, minute for
 minute, remembering that punctuality is the courtesy of kings....”
 
-“But you are not a king, anyway,” Miüsov muttered, losing his self‐
-restraint at once.
+“But you are not a king, anyway,” Miüsov muttered, losing his
+self-restraint at once.
 
 “Yes; that’s true. I’m not a king, and, would you believe it, Pyotr
 Alexandrovitch, I was aware of that myself. But, there! I always say
@@ -1430,9 +1432,9 @@ him about something, and to ask him to dine with us. He was a tall,
 fat, fair, sulky man, the most dangerous type in such cases. It’s their
 liver. I went straight up to him, and with the ease of a man of the
 world, you know, ‘Mr. Ispravnik,’ said I, ‘be our Napravnik.’ ‘What do
-you mean by Napravnik?’ said he. I saw, at the first half‐second, that
+you mean by Napravnik?’ said he. I saw, at the first half-second, that
 it had missed fire. He stood there so glum. ‘I wanted to make a joke,’
-said I, ‘for the general diversion, as Mr. Napravnik is our well‐known
+said I, ‘for the general diversion, as Mr. Napravnik is our well-known
 Russian orchestra conductor and what we need for the harmony of our
 undertaking is some one of that sort.’ And I explained my comparison
 very reasonably, didn’t I? ‘Excuse me,’ said he, ‘I am an Ispravnik,
@@ -1558,7 +1560,7 @@ I am lower than all, and that they all take me for a buffoon. So I say,
 ‘Let me really play the buffoon. I am not afraid of your opinion, for
 you are every one of you worse than I am.’ That is why I am a buffoon.
 It is from shame, great elder, from shame; it’s simply
-over‐sensitiveness that makes me rowdy. If I had only been sure that
+over-sensitiveness that makes me rowdy. If I had only been sure that
 every one would accept me as the kindest and wisest of men, oh, Lord,
 what a good man I should have been then! Teacher!” he fell suddenly on
 his knees, “what must I do to gain eternal life?”
@@ -1659,9 +1661,9 @@ The elder suddenly rose from his seat. “Excuse me, gentlemen, for
 leaving you a few minutes,” he said, addressing all his guests. “I have
 visitors awaiting me who arrived before you. But don’t you tell lies
 all the same,” he added, turning to Fyodor Pavlovitch with a
-good‐humored face. He went out of the cell. Alyosha and the novice flew
+good-humored face. He went out of the cell. Alyosha and the novice flew
 to escort him down the steps. Alyosha was breathless: he was glad to
-get away, but he was glad, too, that the elder was good‐humored and not
+get away, but he was glad, too, that the elder was good-humored and not
 offended. Father Zossima was going towards the portico to bless the
 people waiting for him there. But Fyodor Pavlovitch persisted in
 stopping him at the door of the cell.
@@ -1690,7 +1692,7 @@ separate part of it set aside for women of rank.
 
 Madame Hohlakov was a wealthy lady, still young and attractive, and
 always dressed with taste. She was rather pale, and had lively black
-eyes. She was not more than thirty‐three, and had been five years a
+eyes. She was not more than thirty-three, and had been five years a
 widow. Her daughter, a girl of fourteen, was partially paralyzed. The
 poor child had not been able to walk for the last six months, and was
 wheeled about in a long reclining chair. She had a charming little
@@ -1752,7 +1754,7 @@ elder touched the sick woman with the stole.
 
 Many of the women in the crowd were moved to tears of ecstasy by the
 effect of the moment: some strove to kiss the hem of his garment,
-others cried out in sing‐song voices.
+others cried out in sing-song voices.
 
 He blessed them all and talked with some of them. The “possessed” woman
 he knew already. She came from a village only six versts from the
@@ -1765,10 +1767,10 @@ at the elder; there was something almost frenzied in her eyes.
 
 “From afar off, Father, from afar off! From two hundred miles from
 here. From afar off, Father, from afar off!” the woman began in a
-sing‐song voice as though she were chanting a dirge, swaying her head
+sing-song voice as though she were chanting a dirge, swaying her head
 from side to side with her cheek resting in her hand.
 
-There is silent and long‐suffering sorrow to be met with among the
+There is silent and long-suffering sorrow to be met with among the
 peasantry. It withdraws into itself and is still. But there is a grief
 that breaks out, and from that minute it bursts into tears and finds
 vent in wailing. This is particularly common with women. But it is no
@@ -1785,7 +1787,7 @@ in the town. I have come to see you, O Father! We heard of you, Father,
 we heard of you. I have buried my little son, and I have come on a
 pilgrimage. I have been in three monasteries, but they told me, ‘Go,
 Nastasya, go to them’—that is to you. I have come; I was yesterday at
-the service, and to‐day I have come to you.”
+the service, and to-day I have come to you.”
 
 “What are you weeping for?”
 
@@ -1878,10 +1880,10 @@ to your husband, mother; go this very day.”
 
 “I will go, Father, at your word. I will go. You’ve gone straight to my
 heart. My Nikita, my Nikita, you are waiting for me,” the woman began
-in a sing‐song voice; but the elder had already turned away to a very
+in a sing-song voice; but the elder had already turned away to a very
 old woman, dressed like a dweller in the town, not like a pilgrim. Her
 eyes showed that she had come with an object, and in order to say
-something. She said she was the widow of a non‐commissioned officer,
+something. She said she was the widow of a non-commissioned officer,
 and lived close by in the town. Her son Vasenka was in the commissariat
 service, and had gone to Irkutsk in Siberia. He had written twice from
 there, but now a year had passed since he had written. She did inquire
@@ -1908,7 +1910,7 @@ henceforward be in peace. Your son is alive, I tell you.”
 and for our sins!”
 
 But the elder had already noticed in the crowd two glowing eyes fixed
-upon him. An exhausted, consumptive‐looking, though young peasant woman
+upon him. An exhausted, consumptive-looking, though young peasant woman
 was gazing at him in silence. Her eyes besought him, but she seemed
 afraid to approach.
 
@@ -1921,7 +1923,7 @@ afraid of my sin.”
 The elder sat down on the lower step. The woman crept closer to him,
 still on her knees.
 
-“I am a widow these three years,” she began in a half‐whisper, with a
+“I am a widow these three years,” she began in a half-whisper, with a
 sort of shudder. “I had a hard life with my husband. He was an old man.
 He used to beat me cruelly. He lay ill; I thought looking at him, if he
 were to get well, if he were to get up again, what then? And then the
@@ -2119,7 +2121,7 @@ ill, and I know that my days are numbered.”
 time yet,” cried the lady. “And in what way are you ill? You look so
 well, so gay and happy.”
 
-“I am extraordinarily better to‐day. But I know that it’s only for a
+“I am extraordinarily better to-day. But I know that it’s only for a
 moment. I understand my disease now thoroughly. If I seem so happy to
 you, you could never say anything that would please me so much. For men
 are made for happiness, and any one who is completely happy has a right
@@ -2129,7 +2131,7 @@ all the saints, all the holy martyrs were happy.”
 “Oh, how you speak! What bold and lofty words!” cried the lady. “You
 seem to pierce with your words. And yet—happiness, happiness—where is
 it? Who can say of himself that he is happy? Oh, since you have been so
-good as to let us see you once more to‐day, let me tell you what I
+good as to let us see you once more to-day, let me tell you what I
 could not utter last time, what I dared not say, all I am suffering and
 have been for so long! I am suffering! Forgive me! I am suffering!”
 
@@ -2178,7 +2180,7 @@ it.”
 “By the experience of active love. Strive to love your neighbor
 actively and indefatigably. In as far as you advance in love you will
 grow surer of the reality of God and of the immortality of your soul.
-If you attain to perfect self‐forgetfulness in the love of your
+If you attain to perfect self-forgetfulness in the love of your
 neighbor, then you will believe without doubt, and no doubt can
 possibly enter your soul. This has been tried. This is certain.”
 
@@ -2209,7 +2211,7 @@ a hired servant, I expect my payment at once—that is, praise, and the
 repayment of love with love. Otherwise I am incapable of loving any
 one.”
 
-She was in a very paroxysm of self‐castigation, and, concluding, she
+She was in a very paroxysm of self-castigation, and, concluding, she
 looked with defiant resolution at the elder.
 
 “It’s just the same story as a doctor once told me,” observed the
@@ -2222,12 +2224,12 @@ humanity, and perhaps I might actually have faced crucifixion if it had
 been suddenly necessary; and yet I am incapable of living in the same
 room with any one for two days together, as I know by experience. As
 soon as any one is near me, his personality disturbs my
-self‐complacency and restricts my freedom. In twenty‐four hours I begin
+self-complacency and restricts my freedom. In twenty-four hours I begin
 to hate the best of men: one because he’s too long over his dinner;
 another because he has a cold and keeps on blowing his nose. I become
 hostile to people the moment they come close to me. But it has always
 happened that the more I detest men individually the more ardent
-becomes my love for humanity.’ ”
+becomes my love for humanity.’”
 
 “But what’s to be done? What can one do in such a case? Must one
 despair?”
@@ -2256,7 +2258,7 @@ look into it every hour, every minute. Avoid being scornful, both to
 others and to yourself. What seems to you bad within you will grow
 purer from the very fact of your observing it in yourself. Avoid fear,
 too, though fear is only the consequence of every sort of falsehood.
-Never be frightened at your own faint‐heartedness in attaining love.
+Never be frightened at your own faint-heartedness in attaining love.
 Don’t be frightened overmuch even at your evil actions. I am sorry I
 can say nothing more consoling to you, for love in action is a harsh
 and dreadful thing compared with love in dreams. Love in dreams is
@@ -2270,7 +2272,7 @@ your goal instead of nearer to it—at that very moment I predict that
 you will reach it and behold clearly the miraculous power of the Lord
 who has been all the time loving and mysteriously guiding you. Forgive
 me for not being able to stay longer with you. They are waiting for me.
-Good‐by.”
+Good-by.”
 
 The lady was weeping.
 
@@ -2324,8 +2326,8 @@ ridiculous girl.”
 
 So Be It! So Be It!
 
-The elder’s absence from his cell had lasted for about twenty‐five
-minutes. It was more than half‐past twelve, but Dmitri, on whose
+The elder’s absence from his cell had lasted for about twenty-five
+minutes. It was more than half-past twelve, but Dmitri, on whose
 account they had all met there, had still not appeared. But he seemed
 almost to be forgotten, and when the elder entered the cell again, he
 found his guests engaged in eager conversation. Ivan and the two monks
@@ -2387,7 +2389,7 @@ quite opposed to the separation of Church from State.”
 
 The latter, at last, answered him, not condescendingly, as Alyosha had
 feared, but with modesty and reserve, with evident goodwill and
-apparently without the slightest _arrière‐pensée_.
+apparently without the slightest _arrière-pensée_.
 
 “I start from the position that this confusion of elements, that is, of
 the essential principles of Church and State, will, of course, go on
@@ -2418,7 +2420,7 @@ rights of its members.’ Secondly, that ‘criminal and civil jurisdiction
 ought not to belong to the Church, and is inconsistent with its nature,
 both as a divine institution and as an organization of men for
 religious objects,’ and, finally, in the third place, ‘the Church is a
-kingdom not of this world.’ ”
+kingdom not of this world.’”
 
 “A most unworthy play upon words for an ecclesiastic!” Father Païssy
 could not refrain from breaking in again. “I have read the book which
@@ -2507,10 +2509,10 @@ on. “I ask you, what would become of the excluded? He would be cut off
 then not only from men, as now, but from Christ. By his crime he would
 have transgressed not only against men but against the Church of
 Christ. This is so even now, of course, strictly speaking, but it is
-not clearly enunciated, and very, very often the criminal of to‐day
+not clearly enunciated, and very, very often the criminal of to-day
 compromises with his conscience: ‘I steal,’ he says, ‘but I don’t go
 against the Church. I’m not an enemy of Christ.’ That’s what the
-criminal of to‐day is continually saying to himself, but when the
+criminal of to-day is continually saying to himself, but when the
 Church takes the place of the State it will be difficult for him, in
 opposition to the Church all over the world, to say: ‘All men are
 mistaken, all in error, all mankind are the false Church. I, a thief
@@ -2530,7 +2532,7 @@ suspect you are simply amusing yourself, Ivan Fyodorovitch.”
 
 “Yes, but you know, in reality it is so now,” said the elder suddenly,
 and all turned to him at once. “If it were not for the Church of Christ
-there would be nothing to restrain the criminal from evil‐doing, no
+there would be nothing to restrain the criminal from evil-doing, no
 real chastisement for it afterwards; none, that is, but the mechanical
 punishment spoken of just now, which in the majority of cases only
 embitters the heart; and not the real punishment, the only effectual
@@ -2548,11 +2550,11 @@ member is mechanically cut off and sent far away out of sight, another
 criminal always comes to take his place at once, and often two of them.
 If anything does preserve society, even in our time, and does
 regenerate and transform the criminal, it is only the law of Christ
-speaking in his conscience. It is only by recognizing his wrong‐doing
+speaking in his conscience. It is only by recognizing his wrong-doing
 as a son of a Christian society—that is, of the Church—that he
 recognizes his sin against society—that is, against the Church. So that
 it is only against the Church, and not against the State, that the
-criminal of to‐day can recognize that he has sinned. If society, as a
+criminal of to-day can recognize that he has sinned. If society, as a
 Church, had jurisdiction, then it would know when to bring back from
 exclusion and to reunite to itself. Now the Church having no real
 jurisdiction, but only the power of moral condemnation, withdraws of
@@ -2577,7 +2579,7 @@ because its judgment is the only one that contains the truth, and
 therefore cannot practically and morally be united to any other
 judgment even as a temporary compromise. She can enter into no compact
 about that. The foreign criminal, they say, rarely repents, for the
-very doctrines of to‐day confirm him in the idea that his crime is not
+very doctrines of to-day confirm him in the idea that his crime is not
 a crime, but only a reaction against an unjustly oppressive force.
 Society cuts him off completely by a force that triumphs over him
 mechanically and (so at least they say of themselves in Europe)
@@ -2613,7 +2615,7 @@ Father Zossima, with a smile, “the Christian society now is not ready
 and is only resting on some seven righteous men, but as they are never
 lacking, it will continue still unshaken in expectation of its complete
 transformation from a society almost heathen in character into a single
-universal and all‐powerful Church. So be it, so be it! Even though at
+universal and all-powerful Church. So be it, so be it! Even though at
 the end of the ages, for it is ordained to come to pass! And there is
 no need to be troubled about times and seasons, for the secret of the
 times and seasons is in the wisdom of God, in His foresight, and His
@@ -2630,7 +2632,7 @@ as with latent indignation.
 
 “Why, it’s beyond anything!” cried Miüsov, suddenly breaking out; “the
 State is eliminated and the Church is raised to the position of the
-State. It’s not simply Ultramontanism, it’s arch‐Ultramontanism! It’s
+State. It’s not simply Ultramontanism, it’s arch-Ultramontanism! It’s
 beyond the dreams of Pope Gregory the Seventh!”
 
 “You are completely misunderstanding it,” said Father Païssy sternly.
@@ -2700,7 +2702,7 @@ his mood, but betrayed something else, sometimes quite incongruous with
 what was passing. “It’s hard to tell what he’s thinking,” those who
 talked to him sometimes declared. People who saw something pensive and
 sullen in his eyes were startled by his sudden laugh, which bore
-witness to mirthful and light‐ hearted thoughts at the very time when
+witness to mirthful and light-hearted thoughts at the very time when
 his eyes were so gloomy. A certain strained look in his face was easy
 to understand at this moment. Every one knew, or had heard of, the
 extremely restless and dissipated life which he had been leading of
@@ -2711,7 +2713,7 @@ unstable and unbalanced mind,” as our justice of the peace,
 Katchalnikov, happily described him.
 
 He was stylishly and irreproachably dressed in a carefully buttoned
-frock‐ coat. He wore black gloves and carried a top‐hat. Having only
+frock-coat. He wore black gloves and carried a top-hat. Having only
 lately left the army, he still had mustaches and no beard. His dark
 brown hair was cropped short, and combed forward on his temples. He had
 the long, determined stride of a military man. He stood still for a
@@ -2752,7 +2754,7 @@ conversation was resumed. But this time Miüsov thought it unnecessary
 to reply to Father Païssy’s persistent and almost irritable question.
 
 “Allow me to withdraw from this discussion,” he observed with a certain
-well‐bred nonchalance. “It’s a subtle question, too. Here Ivan
+well-bred nonchalance. “It’s a subtle question, too. Here Ivan
 Fyodorovitch is smiling at us. He must have something interesting to
 say about that also. Ask him.”
 
@@ -2864,7 +2866,7 @@ obviously getting more and more fatigued, and his strength was failing.
 indignantly. He too leapt up. “Forgive it, reverend Father,” he added,
 addressing the elder. “I am not a cultivated man, and I don’t even know
 how to address you properly, but you have been deceived and you have
-been too good‐natured in letting us meet here. All my father wants is a
+been too good-natured in letting us meet here. All my father wants is a
 scandal. Why he wants it only he can tell. He always has some motive.
 But I believe I know why—”
 
@@ -2914,7 +2916,7 @@ what then?”
 “He says that to his father! his father! What would he be with others?
 Gentlemen, only fancy; there’s a poor but honorable man living here,
 burdened with a numerous family, a captain who got into trouble and was
-discharged from the army, but not publicly, not by court‐martial, with
+discharged from the army, but not publicly, not by court-martial, with
 no slur on his honor. And three weeks ago, Dmitri seized him by the
 beard in a tavern, dragged him out into the street and beat him
 publicly, and all because he is an agent in a little business of mine.”
@@ -3011,7 +3013,7 @@ rushing up to Father Iosif. “That’s the answer to your ‘shameful!’ What
 is shameful? That ‘creature,’ that ‘woman of loose behavior’ is perhaps
 holier than you are yourselves, you monks who are seeking salvation!
 She fell perhaps in her youth, ruined by her environment. But she loved
-much, and Christ himself forgave the woman ‘who loved much.’ ”
+much, and Christ himself forgave the woman ‘who loved much.’”
 
 “It was not for such love Christ forgave her,” broke impatiently from
 the gentle Father Iosif.
@@ -3032,13 +3034,13 @@ bowed down at Dmitri’s feet till his forehead touched the floor.
 Alyosha was so astounded that he failed to assist him when he got up
 again. There was a faint smile on his lips.
 
-“Good‐by! Forgive me, all of you!” he said, bowing on all sides to his
+“Good-by! Forgive me, all of you!” he said, bowing on all sides to his
 guests.
 
 Dmitri stood for a few moments in amazement. Bowing down to him—what
 did it mean? Suddenly he cried aloud, “Oh, God!” hid his face in his
 hands, and rushed out of the room. All the guests flocked out after
-him, in their confusion not saying good‐by, or bowing to their host.
+him, in their confusion not saying good-by, or bowing to their host.
 Only the monks went up to him again for a blessing.
 
 “What did it mean, falling at his feet like that? Was it symbolic or
@@ -3047,7 +3049,7 @@ conversation without venturing to address anybody in particular. They
 were all passing out of the precincts of the hermitage at the moment.
 
 “I can’t answer for a madhouse and for madmen,” Miüsov answered at once
-ill‐humoredly, “but I will spare myself your company, Fyodor
+ill-humoredly, “but I will spare myself your company, Fyodor
 Pavlovitch, and, trust me, for ever. Where’s that monk?”
 
 “That monk,” that is, the monk who had invited them to dine with the
@@ -3124,7 +3126,7 @@ thought. “A brazen face, and the conscience of a Karamazov!”
 Alyosha helped Father Zossima to his bedroom and seated him on his bed.
 It was a little room furnished with the bare necessities. There was a
 narrow iron bedstead, with a strip of felt for a mattress. In the
-corner, under the ikons, was a reading‐desk with a cross and the Gospel
+corner, under the ikons, was a reading-desk with a cross and the Gospel
 lying on it. The elder sank exhausted on the bed. His eyes glittered
 and he breathed hard. He looked intently at Alyosha, as though
 considering something.
@@ -3248,7 +3250,7 @@ aback.
 you began speaking so strangely, I fancied I had thought of it myself.”
 
 “You see? (And how well you expressed it!) Looking at your father and
-your brother Mitya to‐day you thought of a crime. Then I’m not
+your brother Mitya to-day you thought of a crime. Then I’m not
 mistaken?”
 
 “But wait, wait a minute,” Alyosha broke in uneasily. “What has led you
@@ -3330,7 +3332,7 @@ vileness and goes on with it! Let me tell you, too, the old man, your
 father, is standing in Mitya’s way now. He has suddenly gone crazy over
 Grushenka. His mouth waters at the sight of her. It’s simply on her
 account he made that scene in the cell just now, simply because Miüsov
-called her an ‘abandoned creature.’ He’s worse than a tom‐cat in love.
+called her an ‘abandoned creature.’ He’s worse than a tom-cat in love.
 At first she was only employed by him in connection with his taverns
 and in some other shady business, but now he has suddenly realized all
 she is and has gone wild about her. He keeps pestering her with his
@@ -3442,7 +3444,7 @@ the new stone bridge across the Neva, which they say is to be built in
 Petersburg.”
 
 “Ah, Misha, that’s just what will really happen, every word of it,”
-cried Alyosha, unable to restrain a good‐humored smile.
+cried Alyosha, unable to restrain a good-humored smile.
 
 “You are pleased to be sarcastic, too, Alexey Fyodorovitch.”
 
@@ -3517,33 +3519,33 @@ politeness, and ... and ... show them that I’ve nothing to do with that
 this affair, just as they have.”
 
 He determined to drop his litigation with the monastery, and relinquish
-his claims to the wood‐cutting and fishery rights at once. He was the
+his claims to the wood-cutting and fishery rights at once. He was the
 more ready to do this because the rights had become much less valuable,
 and he had indeed the vaguest idea where the wood and river in question
 were.
 
 These excellent intentions were strengthened when he entered the Father
-Superior’s dining‐room, though, strictly speaking, it was not a dining‐
-room, for the Father Superior had only two rooms altogether; they were,
+Superior’s dining-room, though, strictly speaking, it was not a
+dining-room, for the Father Superior had only two rooms altogether; they were,
 however, much larger and more comfortable than Father Zossima’s. But
 there was no great luxury about the furnishing of these rooms either.
 The furniture was of mahogany, covered with leather, in the
-old‐fashioned style of 1820; the floor was not even stained, but
+old-fashioned style of 1820; the floor was not even stained, but
 everything was shining with cleanliness, and there were many choice
 flowers in the windows; the most sumptuous thing in the room at the
 moment was, of course, the beautifully decorated table. The cloth was
-clean, the service shone; there were three kinds of well‐baked bread,
+clean, the service shone; there were three kinds of well-baked bread,
 two bottles of wine, two of excellent mead, and a large glass jug of
 kvas—both the latter made in the monastery, and famous in the
 neighborhood. There was no vodka. Rakitin related afterwards that there
-were five dishes: fish‐soup made of sterlets, served with little fish
+were five dishes: fish-soup made of sterlets, served with little fish
 patties; then boiled fish served in a special way; then salmon cutlets,
-ice pudding and compote, and finally, blanc‐mange. Rakitin found out
+ice pudding and compote, and finally, blanc-mange. Rakitin found out
 about all these good things, for he could not resist peeping into the
 kitchen, where he already had a footing. He had a footing everywhere,
 and got information about everything. He was of an uneasy and envious
 temper. He was well aware of his own considerable abilities, and
-nervously exaggerated them in his self‐conceit. He knew he would play a
+nervously exaggerated them in his self-conceit. He knew he would play a
 prominent part of some sort, but Alyosha, who was attached to him, was
 distressed to see that his friend Rakitin was dishonorable, and quite
 unconscious of being so himself, considering, on the contrary, that
@@ -3562,7 +3564,7 @@ gray, and a long, grave, ascetic face. He bowed to his guests in
 silence. But this time they approached to receive his blessing. Miüsov
 even tried to kiss his hand, but the Father Superior drew it back in
 time to avoid the salute. But Ivan and Kalganov went through the
-ceremony in the most simple‐hearted and complete manner, kissing his
+ceremony in the most simple-hearted and complete manner, kissing his
 hand as peasants do.
 
 “We must apologize most humbly, your reverence,” began Miüsov,
@@ -3580,7 +3582,7 @@ hopes and desires to make amends later. He asks your blessing, and begs
 you to forget what has taken place.”
 
 As he uttered the last word of his tirade, Miüsov completely recovered
-his self‐complacency, and all traces of his former irritation
+his self-complacency, and all traces of his former irritation
 disappeared. He fully and sincerely loved humanity again.
 
 The Father Superior listened to him with dignity, and, with a slight
@@ -3626,7 +3628,7 @@ that a touch might drive him to the utmost limits of obscenity, but
 only to obscenity, to nothing criminal, nothing for which he could be
 legally punished. In the last resort, he could always restrain himself,
 and had marveled indeed at himself, on that score, sometimes. He
-appeared in the Father Superior’s dining‐room, at the moment when the
+appeared in the Father Superior’s dining-room, at the moment when the
 prayer was over, and all were moving to the table. Standing in the
 doorway, he scanned the company, and laughing his prolonged, impudent,
 malicious chuckle, looked them all boldly in the face. “They thought I
@@ -3756,7 +3758,7 @@ Eliseyev Brothers. Fie, fie, fathers! That is something beyond gudgeon.
 Look at the bottles the fathers have brought out, he he he! And who has
 provided it all? The Russian peasant, the laborer, brings here the
 farthing earned by his horny hand, wringing it from his family and the
-tax‐gatherer! You bleed the people, you know, holy fathers.”
+tax-gatherer! You bleed the people, you know, holy fathers.”
 
 “This is too disgraceful!” said Father Iosif.
 
@@ -3796,19 +3798,19 @@ away from here for ever, on my parental authority. Ivan Fyodorovitch,
 my most dutiful son, permit me to order you to follow me. Von Sohn,
 what have you to stay for? Come and see me now in the town. It is fun
 there. It is only one short verst; instead of lenten oil, I will give
-you sucking‐pig and kasha. We will have dinner with some brandy and
+you sucking-pig and kasha. We will have dinner with some brandy and
 liqueur to it.... I’ve cloudberry wine. Hey, von Sohn, don’t lose your
 chance.” He went out, shouting and gesticulating.
 
 It was at that moment Rakitin saw him and pointed him out to Alyosha.
 
 “Alexey!” his father shouted, from far off, catching sight of him. “You
-come home to me to‐day, for good, and bring your pillow and mattress,
+come home to me to-day, for good, and bring your pillow and mattress,
 and leave no trace behind.”
 
 Alyosha stood rooted to the spot, watching the scene in silence.
 Meanwhile, Fyodor Pavlovitch had got into the carriage, and Ivan was
-about to follow him in grim silence without even turning to say good‐by
+about to follow him in grim silence without even turning to say good-by
 to Alyosha. But at this point another almost incredible scene of
 grotesque buffoonery gave the finishing touch to the episode. Maximov
 suddenly appeared by the side of the carriage. He ran up, panting,
@@ -3822,7 +3824,7 @@ face. “Take me, too.”
 “There!” cried Fyodor Pavlovitch, delighted. “Did I not say he was von
 Sohn. It is von Sohn himself, risen from the dead. Why, how did you
 tear yourself away? What did you _vonsohn_ there? And how could you get
-away from the dinner? You must be a brazen‐faced fellow! I am that
+away from the dinner? You must be a brazen-faced fellow! I am that
 myself, but I am surprised at you, brother! Jump in, jump in! Let him
 pass, Ivan. It will be fun. He can lie somewhere at our feet. Will you
 lie at our feet, von Sohn? Or perch on the box with the coachman. Skip
@@ -3872,7 +3874,7 @@ the road. And they did not speak again all the way home.
 *In The Servants’ Quarters*
 
 The Karamazovs’ house was far from being in the center of the town, but
-it was not quite outside it. It was a pleasant‐looking old house of two
+it was not quite outside it. It was a pleasant-looking old house of two
 stories, painted gray, with a red iron roof. It was roomy and snug, and
 might still last many years. There were all sorts of unexpected little
 cupboards and closets and staircases. There were rats in it, but Fyodor
@@ -4006,15 +4008,15 @@ its birth. When it was born, he was overwhelmed with grief and horror.
 The baby had six fingers. Grigory was so crushed by this, that he was
 not only silent till the day of the christening, but kept away in the
 garden. It was spring, and he spent three days digging the kitchen
-garden. The third day was fixed for christening the baby: mean‐time
+garden. The third day was fixed for christening the baby: mean-time
 Grigory had reached a conclusion. Going into the cottage where the
 clergy were assembled and the visitors had arrived, including Fyodor
-Pavlovitch, who was to stand god‐ father, he suddenly announced that
+Pavlovitch, who was to stand god-father, he suddenly announced that
 the baby “ought not to be christened at all.” He announced this
 quietly, briefly, forcing out his words, and gazing with dull
 intentness at the priest.
 
-“Why not?” asked the priest with good‐humored surprise.
+“Why not?” asked the priest with good-humored surprise.
 
 “Because it’s a dragon,” muttered Grigory.
 
@@ -4024,7 +4026,7 @@ Grigory did not speak for some time. “It’s a confusion of nature,” he
 muttered vaguely, but firmly, and obviously unwilling to say more.
 
 They laughed, and of course christened the poor baby. Grigory prayed
-earnestly at the font, but his opinion of the new‐born child remained
+earnestly at the font, but his opinion of the new-born child remained
 unchanged. Yet he did not interfere in any way. As long as the sickly
 infant lived he scarcely looked at it, tried indeed not to notice it,
 and for the most part kept out of the cottage. But when, at the end of
@@ -4036,10 +4038,10 @@ did Marfa speak of the baby before him, and, even if Grigory were not
 present, she never spoke of it above a whisper. Marfa observed that,
 from the day of the burial, he devoted himself to “religion,” and took
 to reading the _Lives of the Saints_, for the most part sitting alone
-and in silence, and always putting on his big, round, silver‐rimmed
+and in silence, and always putting on his big, round, silver-rimmed
 spectacles. He rarely read aloud, only perhaps in Lent. He was fond of
 the Book of Job, and had somehow got hold of a copy of the sayings and
-sermons of “the God‐fearing Father Isaac the Syrian,” which he read
+sermons of “the God-fearing Father Isaac the Syrian,” which he read
 persistently for years together, understanding very little of it, but
 perhaps prizing and loving it the more for that. Of late he had begun
 to listen to the doctrines of the sect of Flagellants settled in the
@@ -4052,7 +4054,7 @@ child, and its death, had, as though by special design, been
 accompanied by another strange and marvelous event, which, as he said
 later, had left a “stamp” upon his soul. It happened that, on the very
 night after the burial of his child, Marfa was awakened by the wail of
-a new‐born baby. She was frightened and waked her husband. He listened
+a new-born baby. She was frightened and waked her husband. He listened
 and said he thought it was more like some one groaning, “it might be a
 woman.” He got up and dressed. It was a rather warm night in May. As he
 went down the steps, he distinctly heard groans coming from the garden.
@@ -4063,11 +4065,11 @@ lantern, took the garden key, and taking no notice of the hysterical
 fears of his wife, who was still persuaded that she heard a child
 crying, and that it was her own baby crying and calling for her, went
 into the garden in silence. There he heard at once that the groans came
-from the bath‐house that stood near the garden gate, and that they were
-the groans of a woman. Opening the door of the bath‐house, he saw a
+from the bath-house that stood near the garden gate, and that they were
+the groans of a woman. Opening the door of the bath-house, he saw a
 sight which petrified him. An idiot girl, who wandered about the
 streets and was known to the whole town by the nickname of Lizaveta
-Smerdyastchaya (Stinking Lizaveta), had got into the bath‐ house and
+Smerdyastchaya (Stinking Lizaveta), had got into the bath-house and
 had just given birth to a child. She lay dying with the baby beside
 her. She said nothing, for she had never been able to speak. But her
 story needs a chapter to itself.
@@ -4088,7 +4090,7 @@ wool, and formed a sort of huge cap on her head. It was always crusted
 with mud, and had leaves, bits of stick, and shavings clinging to it,
 as she always slept on the ground and in the dirt. Her father, a
 homeless, sickly drunkard, called Ilya, had lost everything and lived
-many years as a workman with some well‐to‐do tradespeople. Her mother
+many years as a workman with some well-to-do tradespeople. Her mother
 had long been dead. Spiteful and diseased, Ilya used to beat Lizaveta
 inhumanly whenever she returned to him. But she rarely did so, for
 every one in the town was ready to look after her as being an idiot,
@@ -4111,7 +4113,7 @@ orphan. In fact, every one seemed to like her; even the boys did not
 tease her, and the boys of our town, especially the schoolboys, are a
 mischievous set. She would walk into strange houses, and no one drove
 her away. Every one was kind to her and gave her something. If she were
-given a copper, she would take it, and at once drop it in the alms‐jug
+given a copper, she would take it, and at once drop it in the alms-jug
 of the church or prison. If she were given a roll or bun in the market,
 she would hand it to the first child she met. Sometimes she would stop
 one of the richest ladies in the town and give it to her, and the lady
@@ -4135,7 +4137,7 @@ could she have been proud?
 It happened one clear, warm, moonlight night in September (many years
 ago) five or six drunken revelers were returning from the club at a
 very late hour, according to our provincial notions. They passed
-through the “back‐ way,” which led between the back gardens of the
+through the “back-way,” which led between the back gardens of the
 houses, with hurdles on either side. This way leads out on to the
 bridge over the long, stinking pool which we were accustomed to call a
 river. Among the nettles and burdocks under the hurdle our revelers saw
@@ -4165,7 +4167,7 @@ her. Then suddenly a terrible rumor was all over the town that this
 miscreant was no other than Fyodor Pavlovitch. Who set the rumor going?
 Of that drunken band five had left the town and the only one still
 among us was an elderly and much respected civil councilor, the father
-of grown‐up daughters, who could hardly have spread the tale, even if
+of grown-up daughters, who could hardly have spread the tale, even if
 there had been any foundation for it. But rumor pointed straight at
 Fyodor Pavlovitch, and persisted in pointing at him. Of course this was
 no great grievance to him: he would not have troubled to contradict a
@@ -4182,7 +4184,7 @@ hidden in our town. This conjecture sounded plausible, for it was
 remembered that Karp had been in the neighborhood just at that time in
 the autumn, and had robbed three people. But this affair and all the
 talk about it did not estrange popular sympathy from the poor idiot.
-She was better looked after than ever. A well‐to‐do merchant’s widow
+She was better looked after than ever. A well-to-do merchant’s widow
 named Kondratyev arranged to take her into her house at the end of
 April, meaning not to let her go out until after the confinement. They
 kept a constant watch over her, but in spite of their vigilance she
@@ -4231,7 +4233,7 @@ tormenting him. I hasten to add that his father’s shouts, commanding
 him to return home “with his mattress and pillow” did not frighten him
 in the least. He understood perfectly that those peremptory shouts were
 merely “a flourish” to produce an effect. In the same way a tradesman
-in our town who was celebrating his name‐day with a party of friends,
+in our town who was celebrating his name-day with a party of friends,
 getting angry at being refused more vodka, smashed up his own crockery
 and furniture and tore his own and his wife’s clothes, and finally
 broke his windows, all for the sake of effect. Next day, of course,
@@ -4279,20 +4281,20 @@ Crossing himself with a rapid and accustomed gesture, and at once
 smiling, he turned resolutely in the direction of his terrible lady.
 
 He knew her house. If he went by the High Street and then across the
-market‐place, it was a long way round. Though our town is small, it is
+market-place, it was a long way round. Though our town is small, it is
 scattered, and the houses are far apart. And meanwhile his father was
 expecting him, and perhaps had not yet forgotten his command. He might
 be unreasonable, and so he had to make haste to get there and back. So
-he decided to take a short cut by the back‐way, for he knew every inch
+he decided to take a short cut by the back-way, for he knew every inch
 of the ground. This meant skirting fences, climbing over hurdles, and
-crossing other people’s back‐yards, where every one he met knew him and
+crossing other people’s back-yards, where every one he met knew him and
 greeted him. In this way he could reach the High Street in half the
 time.
 
 He had to pass the garden adjoining his father’s, and belonging to a
 little tumbledown house with four windows. The owner of this house, as
 Alyosha knew, was a bedridden old woman, living with her daughter, who
-had been a genteel maid‐servant in generals’ families in Petersburg.
+had been a genteel maid-servant in generals’ families in Petersburg.
 Now she had been at home a year, looking after her sick mother. She
 always dressed up in fine clothes, though her old mother and she had
 sunk into such poverty that they went every day to Fyodor Pavlovitch’s
@@ -4316,7 +4318,7 @@ that you’ve come! I was just thinking of you!”
 Alyosha was delighted too, but he did not know how to get over the
 hurdle. Mitya put his powerful hand under his elbow to help him jump.
 Tucking up his cassock, Alyosha leapt over the hurdle with the agility
-of a bare‐ legged street urchin.
+of a bare-legged street urchin.
 
 “Well done! Now come along,” said Mitya in an enthusiastic whisper.
 
@@ -4338,8 +4340,8 @@ Glory to God in me ...
 I was just repeating that, sitting here, before you came.”
 
 The garden was about three acres in extent, and planted with trees only
-along the fence at the four sides. There were apple‐trees, maples,
-limes and birch‐trees. The middle of the garden was an empty grass
+along the fence at the four sides. There were apple-trees, maples,
+limes and birch-trees. The middle of the garden was an empty grass
 space, from which several hundredweight of hay was carried in the
 summer. The garden was let out for a few roubles for the summer. There
 were also plantations of raspberries and currants and gooseberries laid
@@ -4347,15 +4349,15 @@ out along the sides; a kitchen garden had been planted lately near the
 house.
 
 Dmitri led his brother to the most secluded corner of the garden.
-There, in a thicket of lime‐trees and old bushes of black currant,
-elder, snowball‐tree, and lilac, there stood a tumble‐down green
-summer‐house, blackened with age. Its walls were of lattice‐work, but
+There, in a thicket of lime-trees and old bushes of black currant,
+elder, snowball-tree, and lilac, there stood a tumble-down green
+summer-house, blackened with age. Its walls were of lattice-work, but
 there was still a roof which could give shelter. God knows when this
-summer‐house was built. There was a tradition that it had been put up
+summer-house was built. There was a tradition that it had been put up
 some fifty years before by a retired colonel called von Schmidt, who
 owned the house at that time. It was all in decay, the floor was
 rotting, the planks were loose, the woodwork smelled musty. In the
-summer‐house there was a green wooden table fixed in the ground, and
+summer-house there was a green wooden table fixed in the ground, and
 round it were some green benches upon which it was still possible to
 sit. Alyosha had at once observed his brother’s exhilarated condition,
 and on entering the arbor he saw half a bottle of brandy and a
@@ -4371,7 +4373,7 @@ I’m not drinking, I’m only ‘indulging,’ as that pig, your Rakitin,
 says. He’ll be a civil councilor one day, but he’ll always talk about
 ‘indulging.’ Sit down. I could take you in my arms, Alyosha, and press
 you to my bosom till I crush you, for in the whole world—in reality—in
-re‐al‐ i‐ty—(can you take it in?) I love no one but you!”
+re-al-i-ty—(can you take it in?) I love no one but you!”
 
 He uttered the last words in a sort of exaltation.
 
@@ -4386,7 +4388,7 @@ everything; as they say, ‘the story will be continued.’ Why have I been
 longing for you? Why have I been thirsting for you all these days, and
 just now? (It’s five days since I’ve cast anchor here.) Because it’s
 only to you I can tell everything; because I must, because I need you,
-because to‐morrow I shall fly from the clouds, because to‐morrow life
+because to-morrow I shall fly from the clouds, because to-morrow life
 is ending and beginning. Have you ever felt, have you ever dreamt of
 falling down a precipice into a pit? That’s just how I’m falling, but
 not in a dream. And I’m not afraid, and don’t you be afraid. At least,
@@ -4420,8 +4422,8 @@ you’re going to her? You wouldn’t be going except for that?”
 “Here is her note.” Alyosha took it out of his pocket. Mitya looked
 through it quickly.
 
-“And you were going the back‐way! Oh, gods, I thank you for sending him
-by the back‐way, and he came to me like the golden fish to the silly
+“And you were going the back-way! Oh, gods, I thank you for sending him
+by the back-way, and he came to me like the golden fish to the silly
 old fishermen in the fable! Listen, Alyosha, listen, brother! Now I
 mean to tell you everything, for I must tell some one. An angel in
 heaven I’ve told already; but I want to tell an angel on earth. You are
@@ -4457,7 +4459,7 @@ Upon his stumbling ass.
 But I’ve not drunk a quarter of a bottle, and I’m not Silenus. I’m not
 Silenus, though I am strong,[1] for I’ve made a decision once for all.
 Forgive me the pun; you’ll have to forgive me a lot more than puns
-to‐day. Don’t be uneasy. I’m not spinning it out. I’m talking sense,
+to-day. Don’t be uneasy. I’m not spinning it out. I’m talking sense,
 and I’ll come to the point in a minute. I won’t keep you in suspense.
 Stay, how does it go?”
 
@@ -4484,7 +4486,7 @@ To the worship of the gods.
 “From the fields and from the vineyards
 Came no fruits to deck the feasts,
 Only flesh of bloodstained victims
-Smoldered on the altar‐fires,
+Smoldered on the altar-fires,
 And where’er the grieving goddess
 Turns her melancholy gaze,
 Sunk in vilest degradation
@@ -4577,16 +4579,16 @@ man always talks of his own ache. Listen, now to come to facts.”
 several thousand roubles in seducing young girls. That’s a swinish
 invention, and there was nothing of the sort. And if there was, I
 didn’t need money simply for _that_. With me money is an accessory, the
-overflow of my heart, the framework. To‐day she would be my lady,
-to‐morrow a wench out of the streets in her place. I entertained them
+overflow of my heart, the framework. To-day she would be my lady,
+to-morrow a wench out of the streets in her place. I entertained them
 both. I threw away money by the handful on music, rioting, and gypsies.
 Sometimes I gave it to the ladies, too, for they’ll take it greedily,
 that must be admitted, and be pleased and thankful for it. Ladies used
 to be fond of me: not all of them, but it happened, it happened. But I
-always liked side‐paths, little dark back‐alleys behind the main
+always liked side-paths, little dark back-alleys behind the main
 road—there one finds adventures and surprises, and precious metal in
 the dirt. I am speaking figuratively, brother. In the town I was in,
-there were no such back‐alleys in the literal sense, but morally there
+there were no such back-alleys in the literal sense, but morally there
 were. If you were like me, you’d know what that means. I loved vice, I
 loved the ignominy of vice. I loved cruelty; am I not a bug, am I not a
 noxious insect? In fact a Karamazov! Once we went, a whole lot of us,
@@ -4660,14 +4662,14 @@ colonel, who was an old man, took a sudden dislike to me. He was always
 down upon me, but I had powerful friends, and, moreover, all the town
 was on my side, so he couldn’t do me much harm. I was in fault myself
 for refusing to treat him with proper respect. I was proud. This
-obstinate old fellow, who was really a very good sort, kind‐hearted and
+obstinate old fellow, who was really a very good sort, kind-hearted and
 hospitable, had had two wives, both dead. His first wife, who was of a
 humble family, left a daughter as unpretentious as herself. She was a
 young woman of four and twenty when I was there, and was living with
 her father and an aunt, her mother’s sister. The aunt was simple and
 illiterate; the niece was simple but lively. I like to say nice things
 about people. I never knew a woman of more charming character than
-Agafya—fancy, her name was Agafya Ivanovna! And she wasn’t bad‐looking
+Agafya—fancy, her name was Agafya Ivanovna! And she wasn’t bad-looking
 either, in the Russian style: tall, stout, with a full figure, and
 beautiful eyes, though a rather coarse face. She had not married,
 although she had had two suitors. She refused them, but was as cheerful
@@ -4693,7 +4695,7 @@ good authority, she too brought the colonel no money. She had
 connections, and that was all. There may have been expectations, but
 they had come to nothing.
 
-“Yet, when the young lady came from boarding‐school on a visit, the
+“Yet, when the young lady came from boarding-school on a visit, the
 whole town revived. Our most distinguished ladies—two ‘Excellencies’
 and a colonel’s wife—and all the rest following their lead, at once
 took her up and gave entertainments in her honor. She was the belle of
@@ -4707,14 +4709,14 @@ scarcely looked at me, and compressed her lips scornfully. ‘Wait a bit.
 I’ll have my revenge,’ thought I. I behaved like an awful fool on many
 occasions at that time, and I was conscious of it myself. What made it
 worse was that I felt that ‘Katenka’ was not an innocent
-boarding‐school miss, but a person of character, proud and really
-high‐principled; above all, she had education and intellect, and I had
+boarding-school miss, but a person of character, proud and really
+high-principled; above all, she had education and intellect, and I had
 neither. You think I meant to make her an offer? No, I simply wanted to
 revenge myself, because I was such a hero and she didn’t seem to feel
 it.
 
 “Meanwhile, I spent my time in drink and riot, till the
-lieutenant‐colonel put me under arrest for three days. Just at that
+lieutenant-colonel put me under arrest for three days. Just at that
 time father sent me six thousand roubles in return for my sending him a
 deed giving up all claims upon him—settling our accounts, so to speak,
 and saying that I wouldn’t expect anything more. I didn’t understand a
@@ -4725,7 +4727,7 @@ of it later.
 
 “Just as I received the money, I got a letter from a friend telling me
 something that interested me immensely. The authorities, I learnt, were
-dissatisfied with our lieutenant‐colonel. He was suspected of
+dissatisfied with our lieutenant-colonel. He was suspected of
 irregularities; in fact, his enemies were preparing a surprise for him.
 And then the commander of the division arrived, and kicked up the devil
 of a shindy. Shortly afterwards he was ordered to retire. I won’t tell
@@ -4736,16 +4738,16 @@ Ivanovna, with whom I’d always kept up a friendship, and said, ‘Do you
 know there’s a deficit of 4,500 roubles of government money in your
 father’s accounts?’
 
-“ ‘What do you mean? What makes you say so? The general was here not
+“‘What do you mean? What makes you say so? The general was here not
 long ago, and everything was all right.’
 
-“ ‘Then it was, but now it isn’t.’
+“‘Then it was, but now it isn’t.’
 
 “She was terribly scared.
 
-“ ‘Don’t frighten me!’ she said. ‘Who told you so?’
+“‘Don’t frighten me!’ she said. ‘Who told you so?’
 
-“ ‘Don’t be uneasy,’ I said, ‘I won’t tell any one. You know I’m as
+“‘Don’t be uneasy,’ I said, ‘I won’t tell any one. You know I’m as
 silent as the tomb. I only wanted, in view of “possibilities,” to add,
 that when they demand that 4,500 roubles from your father, and he can’t
 produce it, he’ll be tried, and made to serve as a common soldier in
@@ -4753,7 +4755,7 @@ his old age, unless you like to send me your young lady secretly. I’ve
 just had money paid me. I’ll give her four thousand, if you like, and
 keep the secret religiously.’
 
-“ ‘Ah, you scoundrel!’—that’s what she said. ‘You wicked scoundrel! How
+“‘Ah, you scoundrel!’—that’s what she said. ‘You wicked scoundrel! How
 dare you!’
 
 “She went away furiously indignant, while I shouted after her once more
@@ -4765,28 +4767,28 @@ Agafya told her of our conversation. I found that out afterwards. She
 didn’t keep it back, and of course that was all I wanted.
 
 “Suddenly the new major arrived to take command of the battalion. The
-old lieutenant‐colonel was taken ill at once, couldn’t leave his room
+old lieutenant-colonel was taken ill at once, couldn’t leave his room
 for two days, and didn’t hand over the government money. Dr. Kravchenko
 declared that he really was ill. But I knew for a fact, and had known
 for a long time, that for the last four years the money had never been
 in his hands except when the Commander made his visits of inspection.
 He used to lend it to a trustworthy person, a merchant of our town
-called Trifonov, an old widower, with a big beard and gold‐rimmed
+called Trifonov, an old widower, with a big beard and gold-rimmed
 spectacles. He used to go to the fair, do a profitable business with
 the money, and return the whole sum to the colonel, bringing with it a
 present from the fair, as well as interest on the loan. But this time
 (I heard all about it quite by chance from Trifonov’s son and heir, a
 driveling youth and one of the most vicious in the world)—this time, I
 say, Trifonov brought nothing back from the fair. The
-lieutenant‐colonel flew to him. ‘I’ve never received any money from
+lieutenant-colonel flew to him. ‘I’ve never received any money from
 you, and couldn’t possibly have received any.’ That was all the answer
-he got. So now our lieutenant‐colonel is confined to the house, with a
+he got. So now our lieutenant-colonel is confined to the house, with a
 towel round his head, while they’re all three busy putting ice on it.
 All at once an orderly arrives on the scene with the book and the order
 to ‘hand over the battalion money immediately, within two hours.’ He
 signed the book (I saw the signature in the book afterwards), stood up,
 saying he would put on his uniform, ran to his bedroom, loaded his
-double‐barreled gun with a service bullet, took the boot off his right
+double-barreled gun with a service bullet, took the boot off his right
 foot, fixed the gun against his chest, and began feeling for the
 trigger with his foot. But Agafya, remembering what I had told her, had
 her suspicions. She stole up and peeped into the room just in time. She
@@ -4802,12 +4804,12 @@ facing me in the room stood Katerina Ivanovna.
 street, so that no one knew of it in the town. I lodged with two
 decrepit old ladies, who looked after me. They were most obliging old
 things, ready to do anything for me, and at my request were as silent
-afterwards as two cast‐iron posts. Of course I grasped the position at
+afterwards as two cast-iron posts. Of course I grasped the position at
 once. She walked in and looked straight at me, her dark eyes
 determined, even defiant, but on her lips and round her mouth I saw
 uncertainty.
 
-“ ‘My sister told me,’ she began, ‘that you would give me 4,500 roubles
+“‘My sister told me,’ she began, ‘that you would give me 4,500 roubles
 if I came to you for it—myself. I have come ... give me the money!’
 
 “She couldn’t keep it up. She was breathless, frightened, her voice
@@ -4834,17 +4836,17 @@ I could scarcely breathe. Understand, I should have gone next day to
 ask for her hand, so that it might end honorably, so to speak, and that
 nobody would or could know. For though I’m a man of base desires, I’m
 honest. And at that very second some voice seemed to whisper in my ear,
-‘But when you come to‐morrow to make your proposal, that girl won’t
+‘But when you come to-morrow to make your proposal, that girl won’t
 even see you; she’ll order her coachman to kick you out of the yard.
 “Publish it through all the town,” she would say, “I’m not afraid of
-you.” ’ I looked at the young lady, my voice had not deceived me. That
+you.”’ I looked at the young lady, my voice had not deceived me. That
 is how it would be, not a doubt of it. I could see from her face now
 that I should be turned out of the house. My spite was roused. I longed
 to play her the nastiest swinish cad’s trick: to look at her with a
 sneer, and on the spot where she stood before me to stun her with a
 tone of voice that only a shopman could use.
 
-“ ‘Four thousand! What do you mean? I was joking. You’ve been counting
+“‘Four thousand! What do you mean? I was joking. You’ve been counting
 your chickens too easily, madam. Two hundred, if you like, with all my
 heart. But four thousand is not a sum to throw away on such frivolity.
 You’ve put yourself out to no purpose.’
@@ -4855,7 +4857,7 @@ I’d have howled with regret all the rest of my life, only to have
 played that trick. Would you believe it, it has never happened to me
 with any other woman, not one, to look at her at such a moment with
 hatred. But, on my oath, I looked at her for three seconds, or five
-perhaps, with fearful hatred—that hate which is only a hair’s‐breadth
+perhaps, with fearful hatred—that hate which is only a hair’s-breadth
 from love, from the maddest love!
 
 “I went to the window, put my forehead against the frozen pane, and I
@@ -4867,7 +4869,7 @@ handed it to her, opened the door into the passage, and, stepping back,
 made her a deep bow, a most respectful, a most impressive bow, believe
 me! She shuddered all over, gazed at me for a second, turned horribly
 pale—white as a sheet, in fact—and all at once, not impetuously but
-softly, gently, bowed down to my feet—not a boarding‐school curtsey,
+softly, gently, bowed down to my feet—not a boarding-school curtsey,
 but a Russian bow, with her forehead to the floor. She jumped up and
 ran away. I was wearing my sword. I drew it and nearly stabbed myself
 with it on the spot; why, I don’t know. It would have been frightfully
@@ -4906,16 +4908,16 @@ adventure. The next day I told myself that the incident was closed,
 concluded, that there would be no sequel. It seemed to me caddish to
 make her an offer. On her side she gave no sign of life for the six
 weeks that she remained in the town; except, indeed, for one action.
-The day after her visit the maid‐servant slipped round with an envelope
+The day after her visit the maid-servant slipped round with an envelope
 addressed to me. I tore it open: it contained the change out of the
 banknote. Only four thousand five hundred roubles was needed, but there
 was a discount of about two hundred on changing it. She only sent me
 about two hundred and sixty. I don’t remember exactly, but not a note,
 not a word of explanation. I searched the packet for a pencil
-mark—n‐nothing! Well, I spent the rest of the money on such an orgy
+mark—n-nothing! Well, I spent the rest of the money on such an orgy
 that the new major was obliged to reprimand me.
 
-“Well, the lieutenant‐colonel produced the battalion money, to the
+“Well, the lieutenant-colonel produced the battalion money, to the
 astonishment of every one, for nobody believed that he had the money
 untouched. He’d no sooner paid it than he fell ill, took to his bed,
 and, three weeks later, softening of the brain set in, and he died five
@@ -4929,9 +4931,9 @@ was all.
 
 “I’ll explain the rest now, in two words. In Moscow their fortunes
 changed with the swiftness of lightning and the unexpectedness of an
-Arabian fairy‐tale. That general’s widow, their nearest relation,
+Arabian fairy-tale. That general’s widow, their nearest relation,
 suddenly lost the two nieces who were her heiresses and
-next‐of‐kin—both died in the same week of small‐pox. The old lady,
+next-of-kin—both died in the same week of small-pox. The old lady,
 prostrated with grief, welcomed Katya as a daughter, as her one hope,
 clutched at her, altered her will in Katya’s favor. But that concerned
 the future. Meanwhile she gave her, for present use, eighty thousand
@@ -4951,7 +4953,7 @@ that I can never cure myself of. That letter stabs me even now. Do you
 think I don’t mind—that I don’t mind still? I wrote her an answer at
 once, as it was impossible for me to go to Moscow. I wrote to her with
 tears. One thing I shall be ashamed of for ever. I referred to her
-being rich and having a dowry while I was only a stuck‐up beggar! I
+being rich and having a dowry while I was only a stuck-up beggar! I
 mentioned money! I ought to have borne it in silence, but it slipped
 from my pen. Then I wrote at once to Ivan, and told him all I could
 about it in a letter of six pages, and sent him to her. Why do you look
@@ -4986,11 +4988,11 @@ why? Because a girl wants to sacrifice her life and destiny out of
 gratitude. It’s ridiculous! I’ve never said a word of this to Ivan, and
 Ivan of course has never dropped a hint of the sort to me. But destiny
 will be accomplished, and the best man will hold his ground while the
-undeserving one will vanish into his back‐ alley for ever—his filthy
-back‐alley, his beloved back‐alley, where he is at home and where he
+undeserving one will vanish into his back-alley for ever—his filthy
+back-alley, his beloved back-alley, where he is at home and where he
 will sink in filth and stench at his own free will and with enjoyment.
 I’ve been talking foolishly. I’ve no words left. I use them at random,
-but it will be as I have said. I shall drown in the back‐ alley, and
+but it will be as I have said. I shall drown in the back-alley, and
 she will marry Ivan.”
 
 “Stop, Dmitri,” Alyosha interrupted again with great anxiety. “There’s
@@ -5014,14 +5016,14 @@ promise to reform. I gave my promise, and here—”
 
 “What?”
 
-“Why, I called to you and brought you out here to‐day, this very
+“Why, I called to you and brought you out here to-day, this very
 day—remember it—to send you—this very day again—to Katerina Ivanovna,
 and—”
 
 “What?”
 
 “To tell her that I shall never come to see her again. Say, ‘He sends
-you his compliments.’ ”
+you his compliments.’”
 
 “But is that possible?”
 
@@ -5030,7 +5032,7 @@ impossible. And, how could I tell her myself?”
 
 “And where are you going?”
 
-“To the back‐alley.”
+“To the back-alley.”
 
 “To Grushenka, then!” Alyosha exclaimed mournfully, clasping his hands.
 “Can Rakitin really have told the truth? I thought that you had just
@@ -5050,11 +5052,11 @@ leaving her a decent little sum. I knew, too, that she was fond of
 money, that she hoarded it, and lent it at a wicked rate of interest,
 that she’s a merciless cheat and swindler. I went to beat her, and I
 stayed. The storm broke—it struck me down like the plague. I’m
-plague‐stricken still, and I know that everything is over, that there
+plague-stricken still, and I know that everything is over, that there
 will never be anything more for me. The cycle of the ages is
 accomplished. That’s my position. And though I’m a beggar, as fate
 would have it, I had three thousand just then in my pocket. I drove
-with Grushenka to Mokroe, a place twenty‐five versts from here. I got
+with Grushenka to Mokroe, a place twenty-five versts from here. I got
 gypsies there and champagne and made all the peasants there drunk on
 it, and all the women and girls. I sent the thousands flying. In three
 days’ time I was stripped bare, but a hero. Do you suppose the hero had
@@ -5088,15 +5090,15 @@ pocket when I went to see Grushenka, and it was that money we spent at
 Mokroe. Afterwards I pretended I had been to the town, but did not show
 her the post office receipt. I said I had sent the money and would
 bring the receipt, and so far I haven’t brought it. I’ve forgotten it.
-Now what do you think you’re going to her to‐day to say? ‘He sends his
+Now what do you think you’re going to her to-day to say? ‘He sends his
 compliments,’ and she’ll ask you, ‘What about the money?’ You might
 still have said to her, ‘He’s a degraded sensualist, and a low
 creature, with uncontrolled passions. He didn’t send your money then,
 but wasted it, because, like a low brute, he couldn’t control himself.’
 But still you might have added, ‘He isn’t a thief though. Here is your
 three thousand; he sends it back. Send it yourself to Agafya Ivanovna.
-But he told me to say “he sends his compliments.” ’ But, as it is, she
-will ask, ‘But where is the money?’ ”
+But he told me to say “he sends his compliments.”’ But, as it is, she
+will ask, ‘But where is the money?’”
 
 “Mitya, you are unhappy, yes! But not as unhappy as you think. Don’t
 worry yourself to death with despair.”
@@ -5130,8 +5132,8 @@ you another thousand—that makes three. Take it and pay it back.”
 
 “And when would you get it, your three thousand? You’re not of age,
 besides, and you must—you absolutely must—take my farewell to her
-to‐day, with the money or without it, for I can’t drag on any longer,
-things have come to such a pass. To‐morrow is too late. I shall send
+to-day, with the money or without it, for I can’t drag on any longer,
+things have come to such a pass. To-morrow is too late. I shall send
 you to father.”
 
 “To father?”
@@ -5147,9 +5149,9 @@ despair, Alexey?”
 
 “Listen. Legally he owes me nothing. I’ve had it all from him, I know
 that. But morally he owes me something, doesn’t he? You know he started
-with twenty‐eight thousand of my mother’s money and made a hundred
+with twenty-eight thousand of my mother’s money and made a hundred
 thousand with it. Let him give me back only three out of the
-twenty‐eight thousand, and he’ll draw my soul out of hell, and it will
+twenty-eight thousand, and he’ll draw my soul out of hell, and it will
 atone for many of his sins. For that three thousand—I give you my
 solemn word—I’ll make an end of everything, and he shall hear nothing
 more of me. For the last time I give him the chance to be a father.
@@ -5181,8 +5183,8 @@ secret and what I’m on the watch for.”
 
 “Yes, for her. Foma has a room in the house of these sluts here. Foma
 comes from our parts; he was a soldier in our regiment. He does jobs
-for them. He’s watchman at night and goes grouse‐shooting in the
-day‐time; and that’s how he lives. I’ve established myself in his room.
+for them. He’s watchman at night and goes grouse-shooting in the
+day-time; and that’s how he lives. I’ve established myself in his room.
 Neither he nor the women of the house know the secret—that is, that I
 am on the watch here.”
 
@@ -5199,9 +5201,9 @@ eight thousand for the timber. So the old man keeps asking Ivan to help
 him by going to arrange it. It will take him two or three days. That’s
 what the old man wants, so that Grushenka can come while he’s away.”
 
-“Then he’s expecting Grushenka to‐day?”
+“Then he’s expecting Grushenka to-day?”
 
-“No, she won’t come to‐day; there are signs. She’s certain not to
+“No, she won’t come to-day; there are signs. She’s certain not to
 come,” cried Mitya suddenly. “Smerdyakov thinks so, too. Father’s
 drinking now. He’s sitting at table with Ivan. Go to him, Alyosha, and
 ask for the three thousand.”
@@ -5224,12 +5226,12 @@ happen. Alyosha, I believe in miracles. Go!”
 
 “Yes. I know it will take some time. You can’t go at him point blank.
 He’s drunk now. I’ll wait three hours—four, five, six, seven. Only
-remember you must go to Katerina Ivanovna to‐day, if it has to be at
+remember you must go to Katerina Ivanovna to-day, if it has to be at
 midnight, _with the money or without the money_, and say, ‘He sends his
 compliments to you.’ I want you to say that verse to her: ‘He sends his
-compliments to you.’ ”
+compliments to you.’”
 
-“Mitya! And what if Grushenka comes to‐day—if not to‐day, to‐morrow, or
+“Mitya! And what if Grushenka comes to-day—if not to-day, to-morrow, or
 the next day?”
 
 “Grushenka? I shall see her. I shall rush out and prevent it.”
@@ -5263,12 +5265,12 @@ Alyosha went thoughtfully towards his father’s house.
 *Smerdyakov*
 
 He did in fact find his father still at table. Though there was a
-dining‐ room in the house, the table was laid as usual in the
-drawing‐room, which was the largest room, and furnished with
-old‐fashioned ostentation. The furniture was white and very old,
+dining-room in the house, the table was laid as usual in the
+drawing-room, which was the largest room, and furnished with
+old-fashioned ostentation. The furniture was white and very old,
 upholstered in old, red, silky material. In the spaces between the
 windows there were mirrors in elaborate white and gilt frames, of
-old‐fashioned carving. On the walls, covered with white paper, which
+old-fashioned carving. On the walls, covered with white paper, which
 was torn in many places, there hung two large portraits—one of some
 prince who had been governor of the district thirty years before, and
 the other of some bishop, also long since dead. In the corner opposite
@@ -5276,7 +5278,7 @@ the door there were several ikons, before which a lamp was lighted at
 nightfall ... not so much for devotional purposes as to light the room.
 Fyodor Pavlovitch used to go to bed very late, at three or four o’clock
 in the morning, and would wander about the room at night or sit in an
-arm‐chair, thinking. This had become a habit with him. He often slept
+arm-chair, thinking. This had become a habit with him. He often slept
 quite alone in the house, sending his servants to the lodge; but
 usually Smerdyakov remained, sleeping on a bench in the hall.
 
@@ -5287,7 +5289,7 @@ and Smerdyakov, were standing by. Both the gentlemen and the servants
 seemed in singularly good spirits. Fyodor Pavlovitch was roaring with
 laughter. Before he entered the room, Alyosha heard the shrill laugh he
 knew so well, and could tell from the sound of it that his father had
-only reached the good‐humored stage, and was far from being completely
+only reached the good-humored stage, and was far from being completely
 drunk.
 
 “Here he is! Here he is!” yelled Fyodor Pavlovitch, highly delighted at
@@ -5345,7 +5347,7 @@ diversion and gave him a sound beating. He shrank into a corner and
 sulked there for a week. “He doesn’t care for you or me, the monster,”
 Grigory used to say to Marfa, “and he doesn’t care for any one. Are you
 a human being?” he said, addressing the boy directly. “You’re not a
-human being. You grew from the mildew in the bath‐house.[2] That’s what
+human being. You grew from the mildew in the bath-house.[2] That’s what
 you are.” Smerdyakov, it appeared afterwards, could never forgive him
 those words. Grigory taught him to read and write, and when he was
 twelve years old, began teaching him the Scriptures. But this teaching
@@ -5434,7 +5436,7 @@ hand, he came back to us from Moscow well dressed, in a clean coat and
 clean linen. He brushed his clothes most scrupulously twice a day
 invariably, and was very fond of cleaning his smart calf boots with a
 special English polish, so that they shone like mirrors. He turned out
-a first‐rate cook. Fyodor Pavlovitch paid him a salary, almost the
+a first-rate cook. Fyodor Pavlovitch paid him a salary, almost the
 whole of which Smerdyakov spent on clothes, pomade, perfumes, and such
 things. But he seemed to have as much contempt for the female sex as
 for men; he was discreet, almost unapproachable, with them. Fyodor
@@ -5450,7 +5452,7 @@ But Smerdyakov turned pale with anger, and made no reply. Fyodor
 Pavlovitch left him with an impatient gesture. The great thing was that
 he had absolute confidence in his honesty. It happened once, when
 Fyodor Pavlovitch was drunk, that he dropped in the muddy courtyard
-three hundred‐rouble notes which he had only just received. He only
+three hundred-rouble notes which he had only just received. He only
 missed them next day, and was just hastening to search his pockets when
 he saw the notes lying on the table. Where had they come from?
 Smerdyakov had picked them up and brought them in the day before.
@@ -5499,7 +5501,7 @@ follow Islam. He refused to deny his faith, and was tortured, flayed
 alive, and died, praising and glorifying Christ. Grigory had related
 the story at table. Fyodor Pavlovitch always liked, over the dessert
 after dinner, to laugh and talk, if only with Grigory. This afternoon
-he was in a particularly good‐humored and expansive mood. Sipping his
+he was in a particularly good-humored and expansive mood. Sipping his
 brandy and listening to the story, he observed that they ought to make
 a saint of a soldier like that, and to take his skin to some monastery.
 “That would make the people flock, and bring the money in.”
@@ -5550,9 +5552,9 @@ there would be no sin in it.”
 “But you’ve said that before. Don’t waste words. Prove it,” cried
 Fyodor Pavlovitch.
 
-“Soup‐maker!” muttered Grigory contemptuously.
+“Soup-maker!” muttered Grigory contemptuously.
 
-“As for being a soup‐maker, wait a bit, too, and consider for yourself,
+“As for being a soup-maker, wait a bit, too, and consider for yourself,
 Grigory Vassilyevitch, without abusing me. For as soon as I say to
 those enemies, ‘No, I’m not a Christian, and I curse my true God,’ then
 at once, by God’s high judgment, I become immediately and specially
@@ -5598,7 +5600,7 @@ heathen, and my christening is taken off me and becomes of no avail.
 Isn’t that so?”
 
 “Make haste and finish, my boy,” Fyodor Pavlovitch urged him, sipping
-from his wine‐glass with relish.
+from his wine-glass with relish.
 
 “And if I’ve ceased to be a Christian, then I told no lie to the enemy
 when they asked whether I was a Christian or not a Christian, seeing I
@@ -5665,7 +5667,7 @@ two, and they most likely are saving their souls in secret somewhere in
 the Egyptian desert, so you wouldn’t find them—if so it be, if all the
 rest have no faith, will God curse all the rest? that is, the
 population of the whole earth, except about two hermits in the desert,
-and in His well‐known mercy will He not forgive one of them? And so I’m
+and in His well-known mercy will He not forgive one of them? And so I’m
 persuaded that though I may once have doubted I shall be forgiven if I
 shed tears of repentance.”
 
@@ -5688,11 +5690,11 @@ that idea. Surely that’s Russian, isn’t it?”
 “Yes, that’s purely Russian,” said Alyosha smiling.
 
 “Your words are worth a gold piece, O ass, and I’ll give it to you
-to‐day. But as to the rest you talk nonsense, nonsense, nonsense. Let
+to-day. But as to the rest you talk nonsense, nonsense, nonsense. Let
 me tell you, stupid, that we here are all of little faith, only from
 carelessness, because we haven’t time; things are too much for us, and,
 in the second place, the Lord God has given us so little time, only
-twenty‐four hours in the day, so that one hasn’t even time to get sleep
+twenty-four hours in the day, so that one hasn’t even time to get sleep
 enough, much less to repent of one’s sins. While you have denied your
 faith to your enemies when you’d nothing else to think about but to
 show your faith! So I consider, brother, that it constitutes a sin.”
@@ -5705,7 +5707,7 @@ over to the pagan Mohammedan faith. But, of course, it wouldn’t have
 come to torture then, because I should only have had to say at that
 instant to the mountain, ‘Move and crush the tormentor,’ and it would
 have moved and at the very instant have crushed him like a
-black‐beetle, and I should have walked away as though nothing had
+black-beetle, and I should have walked away as though nothing had
 happened, praising and glorifying God. But, suppose at that very moment
 I had tried all that, and cried to that mountain, ‘Crush these
 tormentors,’ and it hadn’t crushed them, how could I have helped
@@ -5733,7 +5735,7 @@ had been so gay, suddenly began frowning. He frowned and gulped brandy,
 and it was already a glass too much.
 
 “Get along with you, Jesuits!” he cried to the servants. “Go away,
-Smerdyakov. I’ll send you the gold piece I promised you to‐day, but be
+Smerdyakov. I’ll send you the gold piece I promised you to-day, but be
 off! Don’t cry, Grigory. Go to Marfa. She’ll comfort you and put you to
 bed. The rascals won’t let us sit in peace after dinner,” he snapped
 peevishly, as the servants promptly withdrew at his word.
@@ -5753,7 +5755,7 @@ as well. His kind will come first, and better ones after.”
 “And when will the time come?”
 
 “The rocket will go off and fizzle out, perhaps. The peasants are not
-very fond of listening to these soup‐makers, so far.”
+very fond of listening to these soup-makers, so far.”
 
 “Ah, brother, but a Balaam’s ass like that thinks and thinks, and the
 devil knows where he gets to.”
@@ -5788,8 +5790,8 @@ c’est de la cochonnerie_.... Do you know what I like? I like wit.”
 No, stay, you interrupted me. At Mokroe I was talking to an old man,
 and he told me: ‘There’s nothing we like so much as sentencing girls to
 be thrashed, and we always give the lads the job of thrashing them. And
-the girl he has thrashed to‐day, the young man will ask in marriage
-to‐morrow. So it quite suits the girls, too,’ he said. There’s a set of
+the girl he has thrashed to-day, the young man will ask in marriage
+to-morrow. So it quite suits the girls, too,’ he said. There’s a set of
 de Sades for you! But it’s clever, anyway. Shall we go over and have a
 look at it, eh? Alyosha, are you blushing? Don’t be bashful, child. I’m
 sorry I didn’t stay to dinner at the Superior’s and tell the monks
@@ -5838,7 +5840,7 @@ mountains.”
 “Well, that shows I’m a Russian, too, and I have a Russian
 characteristic. And you may be caught in the same way, though you are a
 philosopher. Shall I catch you? What do you bet that I’ll catch you
-to‐morrow. Speak, all the same, is there a God, or not? Only, be
+to-morrow. Speak, all the same, is there a God, or not? Only, be
 serious. I want you to be serious now.”
 
 “No, there is no God.”
@@ -5913,7 +5915,7 @@ excited. But there’s wit in that elder, don’t you think, Ivan?”
 
 “Very likely.”
 
-“There is, there is. _Il y a du Piron là‐dedans._ He’s a Jesuit, a
+“There is, there is. _Il y a du Piron là-dedans._ He’s a Jesuit, a
 Russian one, that is. As he’s an honorable person there’s a hidden
 indignation boiling within him at having to pretend and affect
 holiness.”
@@ -5923,7 +5925,7 @@ holiness.”
 “Not a bit of it. Didn’t you know? Why, he tells every one so, himself.
 That is, not every one, but all the clever people who come to him. He
 said straight out to Governor Schultz not long ago: ‘_Credo_, but I
-don’t know in what.’ ”
+don’t know in what.’”
 
 “Really?”
 
@@ -5943,9 +5945,9 @@ merchant, out of sixty thousand.”
 
 “He brought him the money as a man he could trust, saying, ‘Take care
 of it for me, friend, there’ll be a police search at my place
-to‐morrow.’ And he kept it. ‘You have given it to the Church,’ he
+to-morrow.’ And he kept it. ‘You have given it to the Church,’ he
 declared. I said to him: ‘You’re a scoundrel,’ I said. ‘No,’ said he,
-‘I’m not a scoundrel, but I’m broad‐minded.’ But that wasn’t he, that
+‘I’m not a scoundrel, but I’m broad-minded.’ But that wasn’t he, that
 was some one else. I’ve muddled him with some one else ... without
 noticing it. Come, another glass and that’s enough. Take away the
 bottle, Ivan. I’ve been telling lies. Why didn’t you stop me, Ivan, and
@@ -5961,7 +5963,7 @@ despise me. You have come to me and despised me in my own house.”
 “I’ve begged you for Christ’s sake to go to Tchermashnya for a day or
 two, and you don’t go.”
 
-“I’ll go to‐morrow if you’re so set upon it.”
+“I’ll go to-morrow if you’re so set upon it.”
 
 “You won’t go. You want to keep an eye on me. That’s what you want,
 spiteful fellow. That’s why you won’t go.”
@@ -5976,7 +5978,7 @@ contemptuous.... You’ve come here with some design. Alyosha, here,
 looks at me and his eyes shine. Alyosha doesn’t despise me. Alexey, you
 mustn’t love Ivan.”
 
-“Don’t be ill‐tempered with my brother. Leave off attacking him,”
+“Don’t be ill-tempered with my brother. Leave off attacking him,”
 Alyosha said emphatically.
 
 “Oh, all right. Ugh, my head aches. Take away the brandy, Ivan. It’s
@@ -5988,14 +5990,14 @@ He mused, and suddenly a slow, cunning grin spread over his face.
 but don’t be angry all the same. You’ve nothing to love me for. You go
 to Tchermashnya. I’ll come to you myself and bring you a present. I’ll
 show you a little wench there. I’ve had my eye on her a long time.
-She’s still running about bare‐foot. Don’t be afraid of bare‐footed
+She’s still running about bare-foot. Don’t be afraid of bare-footed
 wenches—don’t despise them—they’re pearls!”
 
 And he kissed his hand with a smack.
 
 “To my thinking,” he revived at once, seeming to grow sober the instant
 he touched on his favorite topic. “To my thinking ... Ah, you boys! You
-children, little sucking‐pigs, to my thinking ... I never thought a
+children, little sucking-pigs, to my thinking ... I never thought a
 woman ugly in my life—that’s been my rule! Can you understand that? How
 could you understand it? You’ve milk in your veins, not blood. You’re
 not out of your shells yet. My rule has been that you can always find
@@ -6005,18 +6007,18 @@ That’s a talent! To my mind there are no ugly women. The very fact that
 she is a woman is half the battle ... but how could you understand
 that? Even in _vieilles filles_, even in them you may discover
 something that makes you simply wonder that men have been such fools as
-to let them grow old without noticing them. Bare‐footed girls or
+to let them grow old without noticing them. Bare-footed girls or
 unattractive ones, you must take by surprise. Didn’t you know that? You
 must astound them till they’re fascinated, upset, ashamed that such a
 gentleman should fall in love with such a little slut. It’s a jolly
 good thing that there always are and will be masters and slaves in the
-world, so there always will be a little maid‐ of‐all‐work and her
+world, so there always will be a little maid-of-all-work and her
 master, and you know, that’s all that’s needed for happiness. Stay ...
 listen, Alyosha, I always used to surprise your mother, but in a
 different way. I paid no attention to her at all, but all at once, when
 the minute came, I’d be all devotion to her, crawl on my knees, kiss
 her feet, and I always, always—I remember it as though it were
-to‐day—reduced her to that tinkling, quiet, nervous, queer little
+to-day—reduced her to that tinkling, quiet, nervous, queer little
 laugh. It was peculiar to her. I knew her attacks always used to begin
 like that. The next day she would begin shrieking hysterically, and
 this little laugh was not a sign of delight, though it made a very good
@@ -6069,7 +6071,7 @@ Alyosha’s mother actually was the mother of Ivan too.
 mother are you talking about? Was she?... Why, damn it! of course she
 was yours too! Damn it! My mind has never been so darkened before.
 Excuse me, why, I was thinking, Ivan.... He he he!” He stopped. A
-broad, drunken, half‐senseless grin overspread his face.
+broad, drunken, half-senseless grin overspread his face.
 
 At that moment a fearful noise and clamor was heard in the hall, there
 were violent shouts, the door was flung open, and Dmitri burst into the
@@ -6135,7 +6137,7 @@ all over. He seemed frantic.
 
 “You know that entrance is locked, and you have the key.”
 
-Dmitri suddenly reappeared in the drawing‐room. He had, of course,
+Dmitri suddenly reappeared in the drawing-room. He had, of course,
 found the other entrance locked, and the key actually was in Fyodor
 Pavlovitch’s pocket. The windows of all the rooms were also closed, so
 Grushenka could not have come in anywhere nor have run out anywhere.
@@ -6164,13 +6166,13 @@ lane. I shouted, she ran away.”
 “I swear she’s not been here, and no one expected her.”
 
 “But I saw her.... So she must ... I’ll find out at once where she
-is.... Good‐by, Alexey! Not a word to Æsop about the money now. But go
+is.... Good-by, Alexey! Not a word to Æsop about the money now. But go
 to Katerina Ivanovna at once and be sure to say, ‘He sends his
 compliments to you!’ Compliments, his compliments! Just compliments and
 farewell! Describe the scene to her.”
 
 Meanwhile Ivan and Grigory had raised the old man and seated him in an
-arm‐chair. His face was covered with blood, but he was conscious and
+arm-chair. His face was covered with blood, but he was conscious and
 listened greedily to Dmitri’s cries. He was still fancying that
 Grushenka really was somewhere in the house. Dmitri looked at him with
 hatred as he went out.
@@ -6191,7 +6193,7 @@ Smerdyakov ran for water. At last they got the old man undressed, and
 put him to bed. They wrapped a wet towel round his head. Exhausted by
 the brandy, by his violent emotion, and the blows he had received, he
 shut his eyes and fell asleep as soon as his head touched the pillow.
-Ivan and Alyosha went back to the drawing‐room. Smerdyakov removed the
+Ivan and Alyosha went back to the drawing-room. Smerdyakov removed the
 fragments of the broken vase, while Grigory stood by the table looking
 gloomily at the floor.
 
@@ -6230,9 +6232,9 @@ meditating. All at once his face betrayed extraordinary excitement.
 
 “In the yard. He’s got a headache. He’s on the watch.”
 
-“Give me that looking‐glass. It stands over there. Give it me.”
+“Give me that looking-glass. It stands over there. Give it me.”
 
-Alyosha gave him a little round folding looking‐glass which stood on
+Alyosha gave him a little round folding looking-glass which stood on
 the chest of drawers. The old man looked at himself in it; his nose was
 considerably swollen, and on the left side of his forehead there was a
 rather large crimson bruise.
@@ -6290,8 +6292,8 @@ deceitful, shameless hussy. You mustn’t go to her, you mustn’t!”
 
 “He’s no money; not a farthing. I’ll settle down for the night, and
 think things over, and you can go. Perhaps you’ll meet her.... Only be
-sure to come to me to‐morrow in the morning. Be sure to. I have a word
-to say to you to‐morrow. Will you come?”
+sure to come to me to-morrow in the morning. Be sure to. I have a word
+to say to you to-morrow. Will you come?”
 
 “Yes.”
 
@@ -6300,27 +6302,27 @@ Don’t tell any one I told you to. Don’t say a word to Ivan.”
 
 “Very well.”
 
-“Good‐by, my angel. You stood up for me, just now. I shall never forget
-it. I’ve a word to say to you to‐morrow—but I must think about it.”
+“Good-by, my angel. You stood up for me, just now. I shall never forget
+it. I’ve a word to say to you to-morrow—but I must think about it.”
 
 “And how do you feel now?”
 
-“I shall get up to‐morrow and go out, perfectly well, perfectly well!”
+“I shall get up to-morrow and go out, perfectly well, perfectly well!”
 
 Crossing the yard Alyosha found Ivan sitting on the bench at the
-gateway. He was sitting writing something in pencil in his note‐book.
+gateway. He was sitting writing something in pencil in his note-book.
 Alyosha told Ivan that their father had waked up, was conscious, and
 had let him go back to sleep at the monastery.
 
-“Alyosha, I should be very glad to meet you to‐morrow morning,” said
+“Alyosha, I should be very glad to meet you to-morrow morning,” said
 Ivan cordially, standing up. His cordiality was a complete surprise to
 Alyosha.
 
-“I shall be at the Hohlakovs’ to‐morrow,” answered Alyosha, “I may be
+“I shall be at the Hohlakovs’ to-morrow,” answered Alyosha, “I may be
 at Katerina Ivanovna’s, too, if I don’t find her now.”
 
 “But you’re going to her now, anyway? For that ‘compliments and
-farewell,’ ” said Ivan smiling. Alyosha was disconcerted.
+farewell,’” said Ivan smiling. Alyosha was disconcerted.
 
 “I think I quite understand his exclamations just now, and part of what
 went before. Dmitri has asked you to go to her and say that he—well, in
@@ -6353,7 +6355,7 @@ think Dmitri is capable of it, either.”
 
 “Thanks, if only for that,” smiled Ivan. “Be sure, I should always
 defend him. But in my wishes I reserve myself full latitude in this
-case. Good‐by till to‐morrow. Don’t condemn me, and don’t look on me as
+case. Good-by till to-morrow. Don’t condemn me, and don’t look on me as
 a villain,” he added with a smile.
 
 They shook hands warmly as they had never done before. Alyosha felt
@@ -6392,9 +6394,9 @@ Ivanovna the scene which had just taken place with his father.
 It was by now seven o’clock, and it was getting dark as Alyosha entered
 the very spacious and convenient house in the High Street occupied by
 Katerina Ivanovna. Alyosha knew that she lived with two aunts. One of
-them, a woman of little education, was that aunt of her half‐sister
+them, a woman of little education, was that aunt of her half-sister
 Agafya Ivanovna who had looked after her in her father’s house when she
-came from boarding‐school. The other aunt was a Moscow lady of style
+came from boarding-school. The other aunt was a Moscow lady of style
 and consequence, though in straitened circumstances. It was said that
 they both gave way in everything to Katerina Ivanovna, and that she
 only kept them with her as chaperons. Katerina Ivanovna herself gave
@@ -6409,7 +6411,7 @@ Alyosha heard a noise, caught the sound of flying footsteps and
 rustling skirts. Two or three women, perhaps, had run out of the room.
 
 Alyosha thought it strange that his arrival should cause such
-excitement. He was conducted however to the drawing‐room at once. It
+excitement. He was conducted however to the drawing-room at once. It
 was a large room, elegantly and amply furnished, not at all in
 provincial style. There were many sofas, lounges, settees, big and
 little tables. There were pictures on the walls, vases and lamps on the
@@ -6433,7 +6435,7 @@ request, to be introduced to her. There had been no conversation
 between them at that interview, however. Supposing Alyosha to be very
 shy, Katerina Ivanovna had talked all the time to Dmitri to spare him.
 Alyosha had been silent, but he had seen a great deal very clearly. He
-was struck by the imperiousness, proud ease, and self‐confidence of the
+was struck by the imperiousness, proud ease, and self-confidence of the
 haughty girl. And all that was certain, Alyosha felt that he was not
 exaggerating it. He thought her great glowing black eyes were very
 fine, especially with her pale, even rather sallow, longish face. But
@@ -6459,8 +6461,8 @@ foolish immediately after he had uttered it. He felt ashamed too of
 having given so confident an opinion about a woman. It was with the
 more amazement that he felt now, at the first glance at Katerina
 Ivanovna as she ran in to him, that he had perhaps been utterly
-mistaken. This time her face was beaming with spontaneous good‐natured
-kindliness, and direct warm‐hearted sincerity. The “pride and
+mistaken. This time her face was beaming with spontaneous good-natured
+kindliness, and direct warm-hearted sincerity. The “pride and
 haughtiness,” which had struck Alyosha so much before, was only
 betrayed now in a frank, generous energy and a sort of bright, strong
 faith in herself. Alyosha realized at the first glance, at the first
@@ -6486,7 +6488,7 @@ for you to tell me anything. I’ll tell you what I want from you. I want
 to know your own last impression of him. I want you to tell me most
 directly, plainly, coarsely even (oh, as coarsely as you like!), what
 you thought of him just now and of his position after your meeting with
-him to‐day. That will perhaps be better than if I had a personal
+him to-day. That will perhaps be better than if I had a personal
 explanation with him, as he does not want to come to me. Do you
 understand what I want from you? Now, tell me simply, tell me every
 word of the message he sent you with (I knew he would send you).”
@@ -6582,24 +6584,24 @@ came up to the table. A violent revulsion passed over Alyosha. He fixed
 his eyes on her and could not take them off. Here she was, that awful
 woman, the “beast,” as Ivan had called her half an hour before. And yet
 one would have thought the creature standing before him most simple and
-ordinary, a good‐natured, kind woman, handsome certainly, but so like
+ordinary, a good-natured, kind woman, handsome certainly, but so like
 other handsome ordinary women! It is true she was very, very
-good‐looking with that Russian beauty so passionately loved by many
+good-looking with that Russian beauty so passionately loved by many
 men. She was a rather tall woman, though a little shorter than Katerina
 Ivanovna, who was exceptionally tall. She had a full figure, with soft,
 as it were, noiseless, movements, softened to a peculiar
-over‐sweetness, like her voice. She moved, not like Katerina Ivanovna,
+over-sweetness, like her voice. She moved, not like Katerina Ivanovna,
 with a vigorous, bold step, but noiselessly. Her feet made absolutely
 no sound on the floor. She sank softly into a low chair, softly
 rustling her sumptuous black silk dress, and delicately nestling her
-milk‐white neck and broad shoulders in a costly cashmere shawl. She was
-twenty‐two years old, and her face looked exactly that age. She was
+milk-white neck and broad shoulders in a costly cashmere shawl. She was
+twenty-two years old, and her face looked exactly that age. She was
 very white in the face, with a pale pink tint on her cheeks. The
 modeling of her face might be said to be too broad, and the lower jaw
 was set a trifle forward. Her upper lip was thin, but the slightly
 prominent lower lip was at least twice as full, and looked pouting. But
-her magnificent, abundant dark brown hair, her sable‐colored eyebrows
-and charming gray‐blue eyes with their long lashes would have made the
+her magnificent, abundant dark brown hair, her sable-colored eyebrows
+and charming gray-blue eyes with their long lashes would have made the
 most indifferent person, meeting her casually in a crowd in the street,
 stop at the sight of her face and remember it long after. What struck
 Alyosha most in that face was its expression of childlike good nature.
@@ -6629,7 +6631,7 @@ only a bad, underbred habit that showed bad education and a false idea
 of good manners. And yet this intonation and manner of speaking
 impressed Alyosha as almost incredibly incongruous with the childishly
 simple and happy expression of her face, the soft, babyish joy in her
-eyes. Katerina Ivanovna at once made her sit down in an arm‐ chair
+eyes. Katerina Ivanovna at once made her sit down in an arm-chair
 facing Alyosha, and ecstatically kissed her several times on her
 smiling lips. She seemed quite in love with her.
 
@@ -6643,7 +6645,7 @@ to me, told me all she means to do. She flew here like an angel of
 goodness and brought us peace and joy.”
 
 “You did not disdain me, sweet, excellent young lady,” drawled
-Grushenka in her sing‐song voice, still with the same charming smile of
+Grushenka in her sing-song voice, still with the same charming smile of
 delight.
 
 “Don’t dare to speak to me like that, you sorceress, you witch! Disdain
@@ -6660,7 +6662,7 @@ worthy of your kindness.”
 
 “Not worthy! She’s not worthy of it!” Katerina Ivanovna cried again
 with the same warmth. “You know, Alexey Fyodorovitch, we’re fanciful,
-we’re self‐willed, but proudest of the proud in our little heart. We’re
+we’re self-willed, but proudest of the proud in our little heart. We’re
 noble, we’re generous, Alexey Fyodorovitch, let me tell you. We have
 only been unfortunate. We were too ready to make every sacrifice for an
 unworthy, perhaps, or fickle man. There was one man—one, an officer
@@ -6725,7 +6727,7 @@ I’m so changeable.”
 “Just now you said—something quite different,” Katerina Ivanovna
 whispered faintly.
 
-“Ah, just now! But, you know. I’m such a soft‐hearted, silly creature.
+“Ah, just now! But, you know. I’m such a soft-hearted, silly creature.
 Only think what he’s gone through on my account! What if when I go home
 I feel sorry for him? What then?”
 
@@ -6750,7 +6752,7 @@ of “being even” with her in kisses.
 Katerina Ivanovna did not take her hand away. She listened with timid
 hope to the last words, though Grushenka’s promise to do her bidding
 like a slave was very strangely expressed. She looked intently into her
-eyes; she still saw in those eyes the same simple‐hearted, confiding
+eyes; she still saw in those eyes the same simple-hearted, confiding
 expression, the same bright gayety.
 
 “She’s perhaps too naïve,” thought Katerina Ivanovna, with a gleam of
@@ -6799,7 +6801,7 @@ held her with all his strength.
 away—she’ll go at once.”
 
 At that instant Katerina Ivanovna’s two aunts ran in at her cry, and
-with them a maid‐servant. All hurried to her.
+with them a maid-servant. All hurried to her.
 
 “I will go away,” said Grushenka, taking up her mantle from the sofa.
 “Alyosha, darling, see me home!”
@@ -6820,7 +6822,7 @@ shaken with convulsions. Every one fussed round her.
 “I warned you,” said the elder of her aunts. “I tried to prevent your
 doing this. You’re too impulsive. How could you do such a thing? You
 don’t know these creatures, and they say she’s worse than any of them.
-You are too self‐willed.”
+You are too self-willed.”
 
 “She’s a tigress!” yelled Katerina Ivanovna. “Why did you hold me,
 Alexey Fyodorovitch? I’d have beaten her—beaten her!”
@@ -6841,15 +6843,15 @@ Alexey Fyodorovitch.”
 Alyosha wanted to say something, but he couldn’t find a word. His heart
 ached.
 
-“Go away, Alexey Fyodorovitch! It’s shameful, it’s awful for me! To‐
-morrow, I beg you on my knees, come to‐morrow. Don’t condemn me.
+“Go away, Alexey Fyodorovitch! It’s shameful, it’s awful for me!
+To-morrow, I beg you on my knees, come to-morrow. Don’t condemn me.
 Forgive me. I don’t know what I shall do with myself now!”
 
 Alyosha walked out into the street reeling. He could have wept as she
 did. Suddenly he was overtaken by the maid.
 
 “The young lady forgot to give you this letter from Madame Hohlakov;
-it’s been left with us since dinner‐time.”
+it’s been left with us since dinner-time.”
 
 Alyosha took the little pink envelope mechanically and put it, almost
 unconsciously, into his pocket.
@@ -6858,12 +6860,12 @@ unconsciously, into his pocket.
 
 *Another Reputation Ruined*
 
-It was not much more than three‐quarters of a mile from the town to the
+It was not much more than three-quarters of a mile from the town to the
 monastery. Alyosha walked quickly along the road, at that hour
 deserted. It was almost night, and too dark to see anything clearly at
-thirty paces ahead. There were cross‐roads half‐way. A figure came into
-sight under a solitary willow at the cross‐roads. As soon as Alyosha
-reached the cross‐ roads the figure moved out and rushed at him,
+thirty paces ahead. There were cross-roads half-way. A figure came into
+sight under a solitary willow at the cross-roads. As soon as Alyosha
+reached the cross-roads the figure moved out and rushed at him,
 shouting savagely:
 
 “Your money or your life!”
@@ -6881,7 +6883,7 @@ beetle. But what’s the matter?”
 blood just now.” (Alyosha began to cry, he had been on the verge of
 tears for a long time, and now something seemed to snap in his soul.)
 “You almost killed him—cursed him—and now—here—you’re making
-jokes—‘Your money or your life!’ ”
+jokes—‘Your money or your life!’”
 
 “Well, what of that? It’s not seemly—is that it? Not suitable in my
 position?”
@@ -6939,7 +6941,7 @@ flogged on a scaffold? Yes, yes, so she ought. That’s just what I
 think; she ought to have been long ago. It’s like this, brother, let
 her be punished, but I must get better first. I understand the queen of
 impudence. That’s her all over! You saw her all over in that
-hand‐kissing, the she‐devil! She’s magnificent in her own line! So she
+hand-kissing, the she-devil! She’s magnificent in her own line! So she
 ran home? I’ll go—ah—I’ll run to her! Alyosha, don’t blame me, I agree
 that hanging is too good for her.”
 
@@ -6952,7 +6954,7 @@ afraid to face a coarse, unmannerly officer and risk a deadly insult on
 a generous impulse to save her father! But the pride, the recklessness,
 the defiance of fate, the unbounded defiance! You say that aunt tried
 to stop her? That aunt, you know, is overbearing, herself. She’s the
-sister of the general’s widow in Moscow, and even more stuck‐up than
+sister of the general’s widow in Moscow, and even more stuck-up than
 she. But her husband was caught stealing government money. He lost
 everything, his estate and all, and the proud wife had to lower her
 colors, and hasn’t raised them since. So she tried to prevent Katya,
@@ -6992,9 +6994,9 @@ He looked down and sank into thought.
 “Yes, I am a scoundrel, a thorough scoundrel!” he said suddenly, in a
 gloomy voice. “It doesn’t matter whether I cried or not, I’m a
 scoundrel! Tell her I accept the name, if that’s any comfort. Come,
-that’s enough. Good‐by. It’s no use talking! It’s not amusing. You go
+that’s enough. Good-by. It’s no use talking! It’s not amusing. You go
 your way and I mine. And I don’t want to see you again except as a last
-resource. Good‐ by, Alexey!”
+resource. Good-by, Alexey!”
 
 He warmly pressed Alyosha’s hand, and still looking down, without
 raising his head, as though tearing himself away, turned rapidly
@@ -7017,10 +7019,10 @@ it. I can stop it or carry it through, note that. Well, let me tell
 you, I shall carry it through. I shan’t stop it. I told you everything
 just now, but I didn’t tell you this, because even I had not brass
 enough for it. I can still pull up; if I do, I can give back the full
-half of my lost honor to‐morrow. But I shan’t pull up. I shall carry
+half of my lost honor to-morrow. But I shan’t pull up. I shall carry
 out my base plan, and you can bear witness that I told you so
 beforehand. Darkness and destruction! No need to explain. You’ll find
-out in due time. The filthy back‐alley and the she‐ devil. Good‐by.
+out in due time. The filthy back-alley and the she-devil. Good-by.
 Don’t pray for me, I’m not worth it. And there’s no need, no need at
 all.... I don’t need it! Away!”
 
@@ -7028,10 +7030,10 @@ And he suddenly retreated, this time finally. Alyosha went towards the
 monastery.
 
 “What? I shall never see him again! What is he saying?” he wondered
-wildly. “Why, I shall certainly see him to‐morrow. I shall look him up.
+wildly. “Why, I shall certainly see him to-morrow. I shall look him up.
 I shall make a point of it. What does he mean?”
 
-He went round the monastery, and crossed the pine‐wood to the
+He went round the monastery, and crossed the pine-wood to the
 hermitage. The door was opened to him, though no one was admitted at
 that hour. There was a tremor in his heart as he went into Father
 Zossima’s cell.
@@ -7139,23 +7141,23 @@ laughing and being naughty. I made you angry this morning, but I assure
 you before I took up my pen, I prayed before the Image of the Mother of
 God, and now I’m praying, and almost crying.
 
-“My secret is in your hands. When you come to‐morrow, I don’t know how
+“My secret is in your hands. When you come to-morrow, I don’t know how
 I shall look at you. Ah, Alexey Fyodorovitch, what if I can’t restrain
-myself like a silly and laugh when I look at you as I did to‐day.
+myself like a silly and laugh when I look at you as I did to-day.
 You’ll think I’m a nasty girl making fun of you, and you won’t believe
 my letter. And so I beg you, dear one, if you’ve any pity for me, when
-you come to‐ morrow, don’t look me straight in the face, for if I meet
+you come to-morrow, don’t look me straight in the face, for if I meet
 your eyes, it will be sure to make me laugh, especially as you’ll be in
 that long gown. I feel cold all over when I think of it, so when you
 come, don’t look at me at all for a time, look at mamma or at the
 window....
 
-“Here I’ve written you a love‐letter. Oh, dear, what have I done?
+“Here I’ve written you a love-letter. Oh, dear, what have I done?
 Alyosha, don’t despise me, and if I’ve done something very horrid and
 wounded you, forgive me. Now the secret of my reputation, ruined
 perhaps for ever, is in your hands.
 
-“I shall certainly cry to‐day. Good‐by till our meeting, our _awful_
+“I shall certainly cry to-day. Good-by till our meeting, our _awful_
 meeting.—LISE.
 
 “P.S.—Alyosha! You must, must, must come!—LISE.”
@@ -7192,7 +7194,7 @@ was daylight. People began coming from the monastery. After the service
 was over the elder desired to kiss and take leave of every one. As the
 cell was so small the earlier visitors withdrew to make room for
 others. Alyosha stood beside the elder, who was seated again in his
-arm‐chair. He talked as much as he could. Though his voice was weak, it
+arm-chair. He talked as much as he could. Though his voice was weak, it
 was fairly steady.
 
 “I’ve been teaching you so many years, and therefore I’ve been talking
@@ -7336,7 +7338,7 @@ But it was just his craziness attracted them.
 
 Father Ferapont never went to see the elder. Though he lived in the
 hermitage they did not worry him to keep its regulations, and this too
-because he behaved as though he were crazy. He was seventy‐five or
+because he behaved as though he were crazy. He was seventy-five or
 more, and he lived in a corner beyond the apiary in an old decaying
 wooden cell which had been built long ago for another great ascetic,
 Father Iona, who had lived to be a hundred and five, and of whose
@@ -7483,7 +7485,7 @@ the Holy Ghost?”
 
 “There’s the Holy Ghost and there’s the Holy Spirit. The Holy Spirit
 can appear as other birds—sometimes as a swallow, sometimes a goldfinch
-and sometimes as a blue‐tit.”
+and sometimes as a blue-tit.”
 
 “How do you know him from an ordinary tit?”
 
@@ -7495,7 +7497,7 @@ and sometimes as a blue‐tit.”
 
 “And what does he tell you?”
 
-“Why, to‐day he told me that a fool would visit me and would ask me
+“Why, to-day he told me that a fool would visit me and would ask me
 unseemly questions. You want to know too much, monk.”
 
 “Terrible are your words, most holy and blessed Father,” the monk shook
@@ -7558,7 +7560,7 @@ Alyosha, asked him suddenly:
 Alyosha hesitated.
 
 “Haven’t they need of you? Didn’t you promise some one yesterday to see
-them to‐day?”
+them to-day?”
 
 “I did promise—to my father—my brothers—others too.”
 
@@ -7640,7 +7642,7 @@ look. The old man was aware of this, and turned a hostile glance on
 Alyosha as he came in.
 
 “The coffee is cold,” he cried harshly; “I won’t offer you any. I’ve
-ordered nothing but a Lenten fish soup to‐day, and I don’t invite any
+ordered nothing but a Lenten fish soup to-day, and I don’t invite any
 one to share it. Why have you come?”
 
 “To find out how you are,” said Alyosha.
@@ -7650,14 +7652,14 @@ consequence. You need not have troubled. But I knew you’d come poking
 in directly.”
 
 He said this with almost hostile feeling. At the same time he got up
-and looked anxiously in the looking‐glass (perhaps for the fortieth
+and looked anxiously in the looking-glass (perhaps for the fortieth
 time that morning) at his nose. He began, too, binding his red
 handkerchief more becomingly on his forehead.
 
 “Red’s better. It’s just like the hospital in a white one,” he observed
 sententiously. “Well, how are things over there? How is your elder?”
 
-“He is very bad; he may die to‐day,” answered Alyosha. But his father
+“He is very bad; he may die to-day,” answered Alyosha. But his father
 had not listened, and had forgotten his own question at once.
 
 “Ivan’s gone out,” he said suddenly. “He is doing his utmost to carry
@@ -7713,9 +7715,9 @@ down,” said Alyosha.
 “There! you say that,” the old man observed suddenly, as though it had
 struck him for the first time, “and I am not angry with you. But if
 Ivan said it, I should be angry with him. It is only with you I have
-good moments, else you know I am an ill‐natured man.”
+good moments, else you know I am an ill-natured man.”
 
-“You are not ill‐natured, but distorted,” said Alyosha with a smile.
+“You are not ill-natured, but distorted,” said Alyosha with a smile.
 
 “Listen. I meant this morning to get that ruffian Mitya locked up and I
 don’t know now what I shall decide about it. Of course in these
@@ -7731,7 +7733,7 @@ yesterday.”
 “Ivan has dissuaded me. I shouldn’t care about Ivan, but there’s
 another thing.”
 
-And bending down to Alyosha, he went on in a confidential half‐whisper.
+And bending down to Alyosha, he went on in a confidential half-whisper.
 
 “If I send the ruffian to prison, she’ll hear of it and run to see him
 at once. But if she hears that he has beaten me, a weak old man, within
@@ -7761,17 +7763,17 @@ spy how much I give Grushenka if she comes. They are all scoundrels!
 But I don’t recognize Ivan, I don’t know him at all. Where does he come
 from? He is not one of us in soul. As though I’d leave him anything! I
 shan’t leave a will at all, you may as well know. And I’ll crush Mitya
-like a beetle. I squash black‐beetles at night with my slipper; they
+like a beetle. I squash black-beetles at night with my slipper; they
 squelch when you tread on them. And your Mitya will squelch too. _Your_
 Mitya, for you love him. Yes, you love him and I am not afraid of your
 loving him. But if Ivan loved him I should be afraid for myself at his
 loving him. But Ivan loves nobody. Ivan is not one of us. People like
 Ivan are not our sort, my boy. They are like a cloud of dust. When the
 wind blows, the dust will be gone.... I had a silly idea in my head
-when I told you to come to‐day; I wanted to find out from you about
+when I told you to come to-day; I wanted to find out from you about
 Mitya. If I were to hand him over a thousand or maybe two now, would
 the beggarly wretch agree to take himself off altogether for five years
-or, better still, thirty‐five, and without Grushenka, and give her up
+or, better still, thirty-five, and without Grushenka, and give her up
 once for all, eh?”
 
 “I—I’ll ask him,” muttered Alyosha. “If you would give him three
@@ -7791,16 +7793,16 @@ not? You went to see her yesterday, I believe?”
 “There you see how dearly these fine young ladies love a rake and a
 scoundrel. They are poor creatures I tell you, those pale young ladies,
 very different from—Ah, if I had his youth and the looks I had then
-(for I was better‐looking than he at eight and twenty) I’d have been a
+(for I was better-looking than he at eight and twenty) I’d have been a
 conquering hero just as he is. He is a low cad! But he shan’t have
 Grushenka, anyway, he shan’t! I’ll crush him!”
 
 His anger had returned with the last words.
 
-“You can go. There’s nothing for you to do here to‐day,” he snapped
+“You can go. There’s nothing for you to do here to-day,” he snapped
 harshly.
 
-Alyosha went up to say good‐by to him, and kissed him on the shoulder.
+Alyosha went up to say good-by to him, and kissed him on the shoulder.
 
 “What’s that for?” The old man was a little surprised. “We shall see
 each other again, or do you think we shan’t?”
@@ -7809,11 +7811,11 @@ each other again, or do you think we shan’t?”
 
 “Nor did I, I did not mean anything,” said the old man, looking at him.
 “Listen, listen,” he shouted after him, “make haste and come again and
-I’ll have a fish soup for you, a fine one, not like to‐day. Be sure to
-come! Come to‐morrow, do you hear, to‐morrow!”
+I’ll have a fish soup for you, a fine one, not like to-day. Be sure to
+come! Come to-morrow, do you hear, to-morrow!”
 
 And as soon as Alyosha had gone out of the door, he went to the
-cupboard again and poured out another half‐glass.
+cupboard again and poured out another half-glass.
 
 “I won’t have more!” he muttered, clearing his throat, and again he
 locked the cupboard and put the key in his pocket. Then he went into
@@ -7833,7 +7835,7 @@ their energies, and that their hearts had grown hard again. “Father is
 spiteful and angry, he’s made some plan and will stick to it. And what
 of Dmitri? He too will be harder than yesterday, he too must be
 spiteful and angry, and he too, no doubt, has made some plan. Oh, I
-must succeed in finding him to‐day, whatever happens.”
+must succeed in finding him to-day, whatever happens.”
 
 But Alyosha had not long to meditate. An incident occurred on the road,
 which, though apparently of little consequence, made a great impression
@@ -7850,16 +7852,16 @@ something, apparently holding a council. Alyosha had never from his
 Moscow days been able to pass children without taking notice of them,
 and although he was particularly fond of children of three or
 thereabout, he liked schoolboys of ten and eleven too. And so, anxious
-as he was to‐day, he wanted at once to turn aside to talk to them. He
+as he was to-day, he wanted at once to turn aside to talk to them. He
 looked into their excited rosy faces, and noticed at once that all the
 boys had stones in their hands. Behind the ditch some thirty paces
 away, there was another schoolboy standing by a fence. He too had a
-satchel at his side. He was about ten years old, pale, delicate‐looking
+satchel at his side. He was about ten years old, pale, delicate-looking
 and with sparkling black eyes. He kept an attentive and anxious watch
 on the other six, obviously his schoolfellows with whom he had just
 come out of school, but with whom he had evidently had a feud.
 
-Alyosha went up and, addressing a fair, curly‐headed, rosy boy in a
+Alyosha went up and, addressing a fair, curly-headed, rosy boy in a
 black jacket, observed:
 
 “When I used to wear a satchel like yours, I always used to carry it on
@@ -7867,22 +7869,22 @@ my left side, so as to have my right hand free, but you’ve got yours on
 your right side. So it will be awkward for you to get at it.”
 
 Alyosha had no art or premeditation in beginning with this practical
-remark. But it is the only way for a grown‐up person to get at once
+remark. But it is the only way for a grown-up person to get at once
 into confidential relations with a child, or still more with a group of
 children. One must begin in a serious, businesslike way so as to be on
 a perfectly equal footing. Alyosha understood it by instinct.
 
-“But he is left‐handed,” another, a fine healthy‐looking boy of eleven,
+“But he is left-handed,” another, a fine healthy-looking boy of eleven,
 answered promptly. All the others stared at Alyosha.
 
 “He even throws stones with his left hand,” observed a third.
 
 At that instant a stone flew into the group, but only just grazed the
-left‐handed boy, though it was well and vigorously thrown by the boy
+left-handed boy, though it was well and vigorously thrown by the boy
 standing the other side of the ditch.
 
 “Give it him, hit him back, Smurov,” they all shouted. But Smurov, the
-left‐handed boy, needed no telling, and at once revenged himself; he
+left-handed boy, needed no telling, and at once revenged himself; he
 threw a stone, but it missed the boy and hit the ground. The boy the
 other side of the ditch, the pocket of whose coat was visibly bulging
 with stones, flung another stone at the group; this time it flew
@@ -7920,7 +7922,7 @@ running away. Wisp of tow!”
 him,” said the boy in the jacket, with flashing eyes. He seemed to be
 the eldest.
 
-“What’s wrong with him?” asked Alyosha, “is he a tell‐tale or what?”
+“What’s wrong with him?” asked Alyosha, “is he a tell-tale or what?”
 
 The boys looked at one another as though derisively.
 
@@ -7958,7 +7960,7 @@ vindictively. He was dressed in a rather shabby old overcoat, which he
 had monstrously outgrown. His bare arms stuck out beyond his sleeves.
 There was a large patch on the right knee of his trousers, and in his
 right boot just at the toe there was a big hole in the leather,
-carefully blackened with ink. Both the pockets of his great‐coat were
+carefully blackened with ink. Both the pockets of his great-coat were
 weighed down with stones. Alyosha stopped two steps in front of him,
 looking inquiringly at him. The boy, seeing at once from Alyosha’s eyes
 that he wouldn’t beat him, became less defiant, and addressed him
@@ -7984,7 +7986,7 @@ his eyes.
 
 “Very well, I am going,” said Alyosha; “only I don’t know you and I
 don’t tease you. They told me how they tease you, but I don’t want to
-tease you. Good‐by!”
+tease you. Good-by!”
 
 “Monk in silk trousers!” cried the boy, following Alyosha with the same
 vindictive and defiant expression, and he threw himself into an
@@ -8050,7 +8052,7 @@ nervously.
 
 “Did you show it to every one? He restored the son to his mother!”
 
-“He is dying to‐day,” said Alyosha.
+“He is dying to-day,” said Alyosha.
 
 “I have heard, I know, oh, how I long to talk to you, to you or some
 one, about all this. No, to you, to you! And how sorry I am I can’t see
@@ -8058,7 +8060,7 @@ him! The whole town is in excitement, they are all suspense. But now—do
 you know Katerina Ivanovna is here now?”
 
 “Ah, that’s lucky,” cried Alyosha. “Then I shall see her here. She told
-me yesterday to be sure to come and see her to‐day.”
+me yesterday to be sure to come and see her to-day.”
 
 “I know, I know all. I’ve heard exactly what happened yesterday—and the
 atrocious behavior of that—creature. _C’est tragique_, and if I’d been
@@ -8097,7 +8099,7 @@ here.”
 be wheeled into this room.”
 
 “That’s not true, Lise, Yulia ran to tell you that Alexey Fyodorovitch
-was coming. She was on the look‐out for you.”
+was coming. She was on the look-out for you.”
 
 “My darling mamma, it’s not at all clever of you. But if you want to
 make up for it and say something very clever, dear mamma, you’d better
@@ -8116,9 +8118,9 @@ night of fever, that awful everlasting Herzenstube, everlasting,
 everlasting, that’s the worst of it! Everything, in fact,
 everything.... Even that miracle, too! Oh, how it has upset me, how it
 has shattered me, that miracle, dear Alexey Fyodorovitch! And that
-tragedy in the drawing‐room, it’s more than I can bear, I warn you. I
+tragedy in the drawing-room, it’s more than I can bear, I warn you. I
 can’t bear it. A comedy, perhaps, not a tragedy. Tell me, will Father
-Zossima live till to‐morrow, will he? Oh, my God! What is happening to
+Zossima live till to-morrow, will he? Oh, my God! What is happening to
 me? Every minute I close my eyes and see that it’s all nonsense, all
 nonsense.”
 
@@ -8139,7 +8141,7 @@ heavens, why did you stand there saying nothing about it all this time?
 He might have bled to death, mamma! How did you do it? Water, water!
 You must wash it first of all, simply hold it in cold water to stop the
 pain, and keep it there, keep it there.... Make haste, mamma, some
-water in a slop‐basin. But do make haste,” she finished nervously. She
+water in a slop-basin. But do make haste,” she finished nervously. She
 was quite frightened at the sight of Alyosha’s wound.
 
 “Shouldn’t we send for Herzenstube?” cried Madame Hohlakov.
@@ -8155,7 +8157,7 @@ Yulia ran in with water and Alyosha put his finger in it.
 
 “Some lint, mamma, for mercy’s sake, bring some lint and that muddy
 caustic lotion for wounds, what’s it called? We’ve got some. You know
-where the bottle is, mamma; it’s in your bedroom in the right‐hand
+where the bottle is, mamma; it’s in your bedroom in the right-hand
 cupboard, there’s a big bottle of it there with the lint.”
 
 “I’ll bring everything in a minute, Lise, only don’t scream and don’t
@@ -8200,10 +8202,10 @@ letter at once, give it me.”
 
 “But you can’t consider me as a child, a little girl, after that silly
 joke! I beg your pardon for that silliness, but you must bring me the
-letter, if you really haven’t got it—bring it to‐day, you must, you
+letter, if you really haven’t got it—bring it to-day, you must, you
 must.”
 
-“To‐day I can’t possibly, for I am going back to the monastery and I
+“To-day I can’t possibly, for I am going back to the monastery and I
 shan’t come and see you for the next two days—three or four perhaps—for
 Father Zossima—”
 
@@ -8301,7 +8303,7 @@ if you like,” muttered Alyosha.
 “Even five! Do take him away quickly, mamma, he is a monster.”
 
 “Lise, you are crazy. Let us go, Alexey Fyodorovitch, she is too
-capricious to‐day. I am afraid to cross her. Oh, the trouble one has
+capricious to-day. I am afraid to cross her. Oh, the trouble one has
 with nervous girls! Perhaps she really will be able to sleep after
 seeing you. How quickly you have made her sleepy, and how fortunate it
 is!”
@@ -8319,9 +8321,9 @@ I’ll stay to the end.”
 
 ## Chapter V.
 
-*A Laceration In The Drawing‐Room*
+*A Laceration In The Drawing-Room*
 
-But in the drawing‐room the conversation was already over. Katerina
+But in the drawing-room the conversation was already over. Katerina
 Ivanovna was greatly excited, though she looked resolute. At the moment
 Alyosha and Madame Hohlakov entered, Ivan Fyodorovitch stood up to take
 leave. His face was rather pale, and Alyosha looked at him anxiously.
@@ -8350,7 +8352,7 @@ to his dream. He had been dreaming all night of the previous day’s
 scene at Katerina Ivanovna’s. Now Alyosha was impressed by Madame
 Hohlakov’s blunt and persistent assertion that Katerina Ivanovna was in
 love with Ivan, and only deceived herself through some sort of pose,
-from “self‐laceration,” and tortured herself by her pretended love for
+from “self-laceration,” and tortured herself by her pretended love for
 Dmitri from some fancied duty of gratitude. “Yes,” he thought, “perhaps
 the whole truth lies in those words.” But in that case what was Ivan’s
 position? Alyosha felt instinctively that a character like Katerina
@@ -8360,7 +8362,7 @@ her domination “to his own happiness” (which was what Alyosha would
 have desired), but Ivan—no, Ivan could not submit to her, and such
 submission would not give him happiness. Alyosha could not help
 believing that of Ivan. And now all these doubts and reflections
-flitted through his mind as he entered the drawing‐room. Another idea,
+flitted through his mind as he entered the drawing-room. Another idea,
 too, forced itself upon him: “What if she loved neither of them—neither
 Ivan nor Dmitri?”
 
@@ -8404,7 +8406,7 @@ tears of suffering, and Alyosha’s heart warmed to her at once. “You,
 Alexey Fyodorovitch, were witness yesterday of that abominable scene,
 and saw what I did. You did not see it, Ivan Fyodorovitch, he did. What
 he thought of me yesterday I don’t know. I only know one thing, that if
-it were repeated to‐day, this minute, I should express the same
+it were repeated to-day, this minute, I should express the same
 feelings again as yesterday—the same feelings, the same words, the same
 actions. You remember my actions, Alexey Fyodorovitch; you checked me
 in one of them” ... (as she said that, she flushed and her eyes shone).
@@ -8422,7 +8424,7 @@ shuddered inwardly. “That girl is truthful and sincere,” he thought,
 “Wait, dear. I haven’t told you the chief, the final decision I came to
 during the night. I feel that perhaps my decision is a terrible one—for
 me, but I foresee that nothing will induce me to change it—nothing. It
-will be so all my life. My dear, kind, ever‐faithful and generous
+will be so all my life. My dear, kind, ever-faithful and generous
 adviser, the one friend I have in the world, Ivan Fyodorovitch, with
 his deep insight into the heart, approves and commends my decision. He
 knows it.”
@@ -8518,16 +8520,16 @@ didn’t sleep last night. But by the side of two such friends as you and
 your brother I still feel strong—for I know—you two will never desert
 me.”
 
-“Unluckily I am obliged to return to Moscow—perhaps to‐morrow—and to
+“Unluckily I am obliged to return to Moscow—perhaps to-morrow—and to
 leave you for a long time—And, unluckily, it’s unavoidable,” Ivan said
 suddenly.
 
-“To‐morrow—to Moscow!” her face was suddenly contorted; “but—but, dear
+“To-morrow—to Moscow!” her face was suddenly contorted; “but—but, dear
 me, how fortunate!” she cried in a voice suddenly changed. In one
 instant there was no trace left of her tears. She underwent an
 instantaneous transformation, which amazed Alyosha. Instead of a poor,
 insulted girl, weeping in a sort of “laceration,” he saw a woman
-completely self‐ possessed and even exceedingly pleased, as though
+completely self-possessed and even exceedingly pleased, as though
 something agreeable had just happened.
 
 “Oh, not fortunate that I am losing you, of course not,” she corrected
@@ -8592,7 +8594,7 @@ in her voice.
 were jumping from the top of a house. “Call Dmitri; I will fetch
 him—and let him come here and take your hand and take Ivan’s and join
 your hands. For you’re torturing Ivan, simply because you love him—and
-torturing him, because you love Dmitri through ‘self‐laceration’—with
+torturing him, because you love Dmitri through ‘self-laceration’—with
 an unreal love—because you’ve persuaded yourself.”
 
 Alyosha broke off and was silent.
@@ -8621,21 +8623,21 @@ love him for insulting you. If he reformed, you’d give him up at once
 and cease to love him. But you need him so as to contemplate
 continually your heroic fidelity and to reproach him for infidelity.
 And it all comes from your pride. Oh, there’s a great deal of
-humiliation and self‐abasement about it, but it all comes from
+humiliation and self-abasement about it, but it all comes from
 pride.... I am too young and I’ve loved you too much. I know that I
 ought not to say this, that it would be more dignified on my part
 simply to leave you, and it would be less offensive for you. But I am
 going far away, and shall never come back.... It is for ever. I don’t
 want to sit beside a ‘laceration.’... But I don’t know how to speak
-now. I’ve said everything.... Good‐by, Katerina Ivanovna; you can’t be
+now. I’ve said everything.... Good-by, Katerina Ivanovna; you can’t be
 angry with me, for I am a hundred times more severely punished than
-you, if only by the fact that I shall never see you again. Good‐by! I
+you, if only by the fact that I shall never see you again. Good-by! I
 don’t want your hand. You have tortured me too deliberately for me to
 be able to forgive you at this moment. I shall forgive you later, but
-now I don’t want your hand. ‘Den Dank, Dame, begehr ich nicht,’ ” he
+now I don’t want your hand. ‘Den Dank, Dame, begehr ich nicht,’” he
 added, with a forced smile, showing, however, that he could read
 Schiller, and read him till he knew him by heart—which Alyosha would
-never have believed. He went out of the room without saying good‐by
+never have believed. He went out of the room without saying good-by
 even to his hostess, Madame Hohlakov. Alyosha clasped his hands.
 
 “Ivan!” he cried desperately after him. “Come back, Ivan! No, nothing
@@ -8651,7 +8653,7 @@ Hohlakov whispered rapidly and ecstatically to Alyosha. “I will do my
 utmost to prevent Ivan Fyodorovitch from going.”
 
 Her face beamed with delight, to the great distress of Alyosha, but
-Katerina Ivanovna suddenly returned. She had two hundred‐rouble notes
+Katerina Ivanovna suddenly returned. She had two hundred-rouble notes
 in her hand.
 
 “I have a great favor to ask of you, Alexey Fyodorovitch,” she began,
@@ -8689,7 +8691,7 @@ from me, Dmitri Fyodorovitch’s betrothed, not from himself.... But you
 know.... I would go myself, but you’ll know how to do it ever so much
 better. He lives in Lake Street, in the house of a woman called
 Kalmikov.... For God’s sake, Alexey Fyodorovitch, do it for me, and now
-... now I am rather ... tired. Good‐ by!”
+... now I am rather ... tired. Good-by!”
 
 She turned and disappeared behind the portière so quickly that Alyosha
 had not time to utter a word, though he wanted to speak. He longed to
@@ -8699,7 +8701,7 @@ Hohlakov took him by the hand and drew him along with her. In the hall
 she stopped him again as before.
 
 “She is proud, she is struggling with herself; but kind, charming,
-generous,” she exclaimed, in a half‐whisper. “Oh, how I love her,
+generous,” she exclaimed, in a half-whisper. “Oh, how I love her,
 especially sometimes, and how glad I am again of everything! Dear
 Alexey Fyodorovitch, you didn’t know, but I must tell you, that we all,
 all—both her aunts, I and all of us, Lise, even—have been hoping and
@@ -8743,7 +8745,7 @@ At the moment the maid ran in.
 shall be having hysterics, and not she!”
 
 “Lise, for mercy’s sake, don’t scream, don’t persecute me. At your age
-one can’t know everything that grown‐up people know. I’ll come and tell
+one can’t know everything that grown-up people know. I’ll come and tell
 you everything you ought to know. Oh, mercy on us! I am coming, I am
 coming.... Hysterics is a good sign, Alexey Fyodorovitch; it’s an
 excellent thing that she is hysterical. That’s just as it ought to be.
@@ -8770,7 +8772,7 @@ opened the door to see Lise.
 door. How have you come to be an angel? That’s the only thing I want to
 know.”
 
-“For an awful piece of stupidity, Lise! Good‐by!”
+“For an awful piece of stupidity, Lise! Good-by!”
 
 “Don’t dare to go away like that!” Lise was beginning.
 
@@ -8784,7 +8786,7 @@ And he ran out of the room.
 *A Laceration In The Cottage*
 
 He certainly was really grieved in a way he had seldom been before. He
-had rushed in like a fool, and meddled in what? In a love‐affair. “But
+had rushed in like a fool, and meddled in what? In a love-affair. “But
 what do I know about it? What can I tell about such things?” he
 repeated to himself for the hundredth time, flushing crimson. “Oh,
 being ashamed would be nothing; shame is only the punishment I deserve.
@@ -8816,7 +8818,7 @@ thought he was completely comforted. Turning to the street where Dmitri
 lodged, he felt hungry, and taking out of his pocket the roll he had
 brought from his father’s, he ate it. It made him feel stronger.
 
-Dmitri was not at home. The people of the house, an old cabinet‐maker,
+Dmitri was not at home. The people of the house, an old cabinet-maker,
 his son, and his old wife, looked with positive suspicion at Alyosha.
 “He hasn’t slept here for the last three nights. Maybe he has gone
 away,” the old man said in answer to Alyosha’s persistent inquiries.
@@ -8851,7 +8853,7 @@ several people in it. On the left was a large Russian stove. From the
 stove to the window on the left was a string running across the room,
 and on it there were rags hanging. There was a bedstead against the
 wall on each side, right and left, covered with knitted quilts. On the
-one on the left was a pyramid of four print‐covered pillows, each
+one on the left was a pyramid of four print-covered pillows, each
 smaller than the one beneath. On the other there was only one very
 small pillow. The opposite corner was screened off by a curtain or a
 sheet hung on a string. Behind this curtain could be seen a bed made up
@@ -8859,8 +8861,8 @@ on a bench and a chair. The rough square table of plain wood had been
 moved into the middle window. The three windows, which consisted each
 of four tiny greenish mildewy panes, gave little light, and were close
 shut, so that the room was not very light and rather stuffy. On the
-table was a frying‐pan with the remains of some fried eggs, a
-half‐eaten piece of bread, and a small bottle with a few drops of
+table was a frying-pan with the remains of some fried eggs, a
+half-eaten piece of bread, and a small bottle with a few drops of
 vodka.
 
 A woman of genteel appearance, wearing a cotton gown, was sitting on a
@@ -8877,9 +8879,9 @@ was a very sad sight, a young girl of about twenty, but hunchback and
 crippled “with withered legs,” as Alyosha was told afterwards. Her
 crutches stood in the corner close by. The strikingly beautiful and
 gentle eyes of this poor girl looked with mild serenity at Alyosha. A
-man of forty‐five was sitting at the table, finishing the fried eggs.
+man of forty-five was sitting at the table, finishing the fried eggs.
 He was spare, small and weakly built. He had reddish hair and a scanty
-light‐colored beard, very much like a wisp of tow (this comparison and
+light-colored beard, very much like a wisp of tow (this comparison and
 the phrase “a wisp of tow” flashed at once into Alyosha’s mind for some
 reason, he remembered it afterwards). It was obviously this gentleman
 who had shouted to him, as there was no other man in the room. But when
@@ -8923,7 +8925,7 @@ sir, but I am still desirous to know precisely what has led you—”
 only you allow me.”
 
 “In that case, here is a chair, sir; kindly be seated. That’s what they
-used to say in the old comedies, ‘kindly be seated,’ ” and with a rapid
+used to say in the old comedies, ‘kindly be seated,’” and with a rapid
 gesture he seized an empty chair (it was a rough wooden chair, not
 upholstered) and set it for him almost in the middle of the room; then,
 taking another similar chair for himself, he sat down facing Alyosha,
@@ -9008,7 +9010,7 @@ he thinks that will be a satisfactory finish, doesn’t he?”
 you like.”
 
 “So if I were to ask his highness to go down on his knees before me in
-that very tavern—‘The Metropolis’ it’s called—or in the market‐place,
+that very tavern—‘The Metropolis’ it’s called—or in the market-place,
 he would do it?”
 
 “Yes, he would even go down on his knees.”
@@ -9036,7 +9038,7 @@ That could find favor in his eyes—
 
 or rather in the feminine: that could find favor in her eyes. But now
 let me present you to my wife, Arina Petrovna. She is crippled, she is
-forty‐ three; she can move, but very little. She is of humble origin.
+forty-three; she can move, but very little. She is of humble origin.
 Arina Petrovna, compose your countenance. This is Alexey Fyodorovitch
 Karamazov. Get up, Alexey Fyodorovitch.” He took him by the hand and
 with unexpected force pulled him up. “You must stand up to be
@@ -9081,7 +9083,7 @@ officers whether my breath is unclean.’ And ever since then I had it in
 my mind. Not long ago I was sitting here as I am now, when I saw that
 very general come in who came here for Easter, and I asked him: ‘Your
 Excellency,’ said I, ‘can a lady’s breath be unpleasant?’ ‘Yes,’ he
-answered; ‘you ought to open a window‐ pane or open the door, for the
+answered; ‘you ought to open a window-pane or open the door, for the
 air is not fresh here.’ And they all go on like that! And what is my
 breath to them? The dead smell worse still! ‘I won’t spoil the air,’
 said I, ‘I’ll order some slippers and go away.’ My darlings, don’t
@@ -9095,7 +9097,7 @@ cheeks. The captain rushed up to her.
 
 “Mamma, mamma, my dear, give over! You are not lonely. Every one loves
 you, every one adores you.” He began kissing both her hands again and
-tenderly stroking her face; taking the dinner‐napkin, he began wiping
+tenderly stroking her face; taking the dinner-napkin, he began wiping
 away her tears. Alyosha fancied that he too had tears in his eyes.
 “There, you see, you hear?” he turned with a sort of fury to Alyosha,
 pointing to the poor imbecile.
@@ -9143,7 +9145,7 @@ to you. My tow was thicker a week ago—I mean my beard. That’s the
 nickname they give to my beard, the schoolboys most of all. Well, your
 brother Dmitri Fyodorovitch was pulling me by my beard, I’d done
 nothing, he was in a towering rage and happened to come upon me. He
-dragged me out of the tavern into the market‐place; at that moment the
+dragged me out of the tavern into the market-place; at that moment the
 boys were coming out of school, and with them Ilusha. As soon as he saw
 me in such a state he rushed up to me. ‘Father,’ he cried, ‘father!’ He
 caught hold of me, hugged me, tried to pull me away, crying to my
@@ -9154,7 +9156,7 @@ that moment, I haven’t forgotten it and I never shall!”
 
 “I swear,” cried Alyosha, “that my brother will express his most deep
 and sincere regret, even if he has to go down on his knees in that same
-market‐place.... I’ll make him or he is no brother of mine!”
+market-place.... I’ll make him or he is no brother of mine!”
 
 “Aha, then it’s only a suggestion! And it does not come from him but
 simply from the generosity of your own warm heart. You should have said
@@ -9168,7 +9170,7 @@ indeed! I retired with Ilusha, and that scene is a family record
 imprinted for ever on Ilusha’s soul. No, it’s not for us to claim the
 privileges of noblemen. Judge for yourself. You’ve just been in our
 mansion, what did you see there? Three ladies, one a cripple and
-weak‐minded, another a cripple and hunchback and the third not crippled
+weak-minded, another a cripple and hunchback and the third not crippled
 but far too clever. She is a student, dying to get back to Petersburg,
 to work for the emancipation of the Russian woman on the banks of the
 Neva. I won’t speak of Ilusha, he is only nine. I am alone in the
@@ -9181,7 +9183,7 @@ from school and send him to beg in the streets? That’s what it means
 for me to challenge him to a duel. It’s silly talk and nothing else.”
 
 “He will beg your forgiveness, he will bow down at your feet in the
-middle of the market‐place,” cried Alyosha again, with glowing eyes.
+middle of the market-place,” cried Alyosha again, with glowing eyes.
 
 “I did think of prosecuting him,” the captain went on, “but look in our
 code, could I get much compensation for a personal injury? And then
@@ -9202,16 +9204,16 @@ much? I didn’t like to go into it in our mansion before him.”
 
 “Yes, very much, and he was in a great fury. He was avenging you on me
 as a Karamazov, I see that now. But if only you had seen how he was
-throwing stones at his school‐fellows! It’s very dangerous. They might
+throwing stones at his school-fellows! It’s very dangerous. They might
 kill him. They are children and stupid. A stone may be thrown and break
 somebody’s head.”
 
-“That’s just what has happened. He has been bruised by a stone to‐day.
+“That’s just what has happened. He has been bruised by a stone to-day.
 Not on the head but on the chest, just above the heart. He came home
 crying and groaning and now he is ill.”
 
 “And you know he attacks them first. He is bitter against them on your
-account. They say he stabbed a boy called Krassotkin with a pen‐knife
+account. They say he stabbed a boy called Krassotkin with a pen-knife
 not long ago.”
 
 “I’ve heard about that too, it’s dangerous. Krassotkin is an official
@@ -9251,7 +9253,7 @@ despise me for that, sir, in Russia men who drink are the best. The
 best men amongst us are the greatest drunkards. I lay down and I don’t
 remember about Ilusha, though all that day the boys had been jeering at
 him at school. ‘Wisp of tow,’ they shouted, ‘your father was pulled out
-of the tavern by his wisp of tow, you ran by and begged forgiveness.’ ”
+of the tavern by his wisp of tow, you ran by and begged forgiveness.’”
 
 “On the third day when he came back from school, I saw he looked pale
 and wretched. ‘What is it?’ I asked. He wouldn’t answer. Well, there’s
@@ -9282,7 +9284,7 @@ I am his father, and I had to put in a word: ‘It’s a sin to kill,’ I
 said, ‘even in a duel.’ ‘Father,’ he said, ‘when I grow up, I’ll knock
 him down, knock the sword out of his hand, I’ll fall on him, wave my
 sword over him and say: “I could kill you, but I forgive you, so
-there!” ’ You see what the workings of his little mind have been during
+there!”’ You see what the workings of his little mind have been during
 these two days; he must have been planning that vengeance all day, and
 raving about it at night.
 
@@ -9352,7 +9354,7 @@ could arrange it—”
 
 “But now listen to something quite different!” Alyosha went on. “I have
 a message for you. That same brother of mine, Dmitri, has insulted his
-betrothed, too, a noble‐hearted girl of whom you have probably heard. I
+betrothed, too, a noble-hearted girl of whom you have probably heard. I
 have a right to tell you of her wrong; I ought to do so, in fact, for
 hearing of the insult done to you and learning all about your
 unfortunate position, she commissioned me at once—just now—to bring you
@@ -9368,7 +9370,7 @@ it, it can give rise to no unjust slander. There are the two hundred
 roubles, and I swear you must take them unless—unless all men are to be
 enemies on earth! But there are brothers even on earth.... You have a
 generous heart ... you must see that, you must,” and Alyosha held out
-two new rainbow‐colored hundred‐rouble notes.
+two new rainbow-colored hundred-rouble notes.
 
 They were both standing at the time by the great stone close to the
 fence, and there was no one near. The notes seemed to produce a
@@ -9444,7 +9446,7 @@ Alyosha was delighted that he had brought him such happiness and that
 the poor fellow had consented to be made happy.
 
 “Stay, Alexey Fyodorovitch, stay,” the captain began to talk with
-frenzied rapidity, carried away by a new day‐dream. “Do you know that
+frenzied rapidity, carried away by a new day-dream. “Do you know that
 Ilusha and I will perhaps really carry out our dream. We will buy a
 horse and cart, a black horse, he insists on its being black, and we
 will set off as we pretended the other day. I have an old friend, a
@@ -9551,7 +9553,7 @@ for her there.
 “Lise,” she whispered almost in his ear, “Lise has greatly surprised me
 just now, dear Alexey Fyodorovitch. She touched me, too, and so my
 heart forgives her everything. Only fancy, as soon as you had gone, she
-began to be truly remorseful for having laughed at you to‐day and
+began to be truly remorseful for having laughed at you to-day and
 yesterday, though she was not laughing at you, but only joking. But she
 was seriously sorry for it, almost ready to cry, so that I was quite
 surprised. She has never been really sorry for laughing at me, but has
@@ -9564,14 +9566,14 @@ were a friend of her childhood, ‘the greatest friend of her
 childhood’—just think of that—‘greatest friend’—and what about me? She
 has very strong feelings and memories, and, what’s more, she uses these
 phrases, most unexpected words, which come out all of a sudden when you
-least expect them. She spoke lately about a pine‐tree, for instance:
-there used to be a pine‐tree standing in our garden in her early
+least expect them. She spoke lately about a pine-tree, for instance:
+there used to be a pine-tree standing in our garden in her early
 childhood. Very likely it’s standing there still; so there’s no need to
-speak in the past tense. Pine‐trees are not like people, Alexey
+speak in the past tense. Pine-trees are not like people, Alexey
 Fyodorovitch, they don’t change quickly. ‘Mamma,’ she said, ‘I remember
-this pine‐tree as in a dream,’ only she said something so original
+this pine-tree as in a dream,’ only she said something so original
 about it that I can’t repeat it. Besides, I’ve forgotten it. Well,
-good‐by! I am so worried I feel I shall go out of my mind. Ah! Alexey
+good-by! I am so worried I feel I shall go out of my mind. Ah! Alexey
 Fyodorovitch, I’ve been out of my mind twice in my life. Go to Lise,
 cheer her up, as you always can so charmingly. Lise,” she cried, going
 to her door, “here I’ve brought you Alexey Fyodorovitch, whom you
@@ -9604,7 +9606,7 @@ the strong impression he had just received, and he succeeded in telling
 his story well and circumstantially. In old days in Moscow he had been
 fond of coming to Lise and describing to her what had just happened to
 him, what he had read, or what he remembered of his childhood.
-Sometimes they had made day‐dreams and woven whole romances
+Sometimes they had made day-dreams and woven whole romances
 together—generally cheerful and amusing ones. Now they both felt
 suddenly transported to the old days in Moscow, two years before. Lise
 was extremely touched by his story. Alyosha described Ilusha with warm
@@ -9621,7 +9623,7 @@ up from his chair and walking thoughtfully across the room.
 hopeless?”
 
 “Not hopeless, for the two hundred roubles will still come to them.
-He’ll take the money to‐morrow. To‐morrow he will be sure to take it,”
+He’ll take the money to-morrow. To-morrow he will be sure to take it,”
 said Alyosha, pacing up and down, pondering. “You see, Lise,” he went
 on, stopping suddenly before her, “I made one blunder, but that, even
 that, is all for the best.”
@@ -9629,7 +9631,7 @@ that, is all for the best.”
 “What blunder, and why is it for the best?”
 
 “I’ll tell you. He is a man of weak and timorous character; he has
-suffered so much and is very good‐natured. I keep wondering why he took
+suffered so much and is very good-natured. I keep wondering why he took
 offense so suddenly, for I assure you, up to the last minute, he did
 not know that he was going to trample on the notes. And I think now
 that there was a great deal to offend him ... and it could not have
@@ -9672,17 +9674,17 @@ great surprise at Alyosha.
 
 “Because if he had taken the money, in an hour after getting home, he
 would be crying with mortification, that’s just what would have
-happened. And most likely he would have come to me early to‐morrow, and
+happened. And most likely he would have come to me early to-morrow, and
 perhaps have flung the notes at me and trampled upon them as he did
 just now. But now he has gone home awfully proud and triumphant, though
 he knows he has ‘ruined himself.’ So now nothing could be easier than
-to make him accept the two hundred roubles by to‐morrow, for he has
+to make him accept the two hundred roubles by to-morrow, for he has
 already vindicated his honor, tossed away the money, and trampled it
 under foot.... He couldn’t know when he did it that I should bring it
-to him again to‐morrow, and yet he is in terrible need of that money.
-Though he is proud of himself now, yet even to‐day he’ll be thinking
+to him again to-morrow, and yet he is in terrible need of that money.
+Though he is proud of himself now, yet even to-day he’ll be thinking
 what a help he has lost. He will think of it more than ever at night,
-will dream of it, and by to‐morrow morning he may be ready to run to me
+will dream of it, and by to-morrow morning he may be ready to run to me
 to ask forgiveness. It’s just then that I’ll appear. ‘Here, you are a
 proud man,’ I shall say: ‘you have shown it; but now take the money and
 forgive us!’ And then he will take it!”
@@ -9698,7 +9700,7 @@ should never have worked it out.”
 with us, in spite of his taking money from us,” Alyosha went on in his
 excitement, “and not only on an equal, but even on a higher footing.”
 
-“ ‘On a higher footing’ is charming, Alexey Fyodorovitch; but go on, go
+“‘On a higher footing’ is charming, Alexey Fyodorovitch; but go on, go
 on!”
 
 “You mean there isn’t such an expression as ‘on a higher footing’; but
@@ -9756,7 +9758,7 @@ perfectly sure you were in earnest.”
 
 “Sure? Upon my word!” She put aside his hand, but did not leave go of
 it, blushing hotly, and laughing a little happy laugh. “I kiss his hand
-and he says, ‘What a good thing!’ ”
+and he says, ‘What a good thing!’”
 
 But her reproach was undeserved. Alyosha, too, was greatly overcome.
 
@@ -9796,7 +9798,7 @@ days. If I go into the world, I must marry. I know that. _He_ told me
 to marry, too. Whom could I marry better than you—and who would have me
 except you? I have been thinking it over. In the first place, you’ve
 known me from a child and you’ve a great many qualities I haven’t. You
-are more light‐ hearted than I am; above all, you are more innocent
+are more light-hearted than I am; above all, you are more innocent
 than I am. I have been brought into contact with many, many things
 already.... Ah, you don’t know, but I, too, am a Karamazov. What does
 it matter if you do laugh and make jokes, and at me, too? Go on
@@ -9898,7 +9900,7 @@ never to spy on you, never once, never to read one of your letters. For
 you are right and I am not. And though I shall be awfully tempted to
 spy, I know that I won’t do it since you consider it dishonorable. You
 are my conscience now.... Listen, Alexey Fyodorovitch, why have you
-been so sad lately—both yesterday and to‐day? I know you have a lot of
+been so sad lately—both yesterday and to-day? I know you have a lot of
 anxiety and trouble, but I see you have some special grief besides,
 some secret one, perhaps?”
 
@@ -9947,13 +9949,13 @@ Alyosha kissed her.
 
 “Come, now go. Christ be with you!” and she made the sign of the cross
 over him. “Make haste back to _him_ while he is alive. I see I’ve kept
-you cruelly. I’ll pray to‐day for him and you. Alyosha, we shall be
+you cruelly. I’ll pray to-day for him and you. Alyosha, we shall be
 happy! Shall we be happy, shall we?”
 
 “I believe we shall, Lise.”
 
 Alyosha thought it better not to go in to Madame Hohlakov and was going
-out of the house without saying good‐by to her. But no sooner had he
+out of the house without saying good-by to her. But no sooner had he
 opened the door than he found Madame Hohlakov standing before him. From
 the first word Alyosha guessed that she had been waiting on purpose to
 meet him.
@@ -10005,8 +10007,8 @@ Alexey Fyodorovitch. I’m her mother. Hold it in your hand, if you like,
 and I will read it so.”
 
 “No, I won’t show it to you. Even if she sanctioned it, I wouldn’t. I
-am coming to‐morrow, and if you like, we can talk over many things, but
-now good‐by!”
+am coming to-morrow, and if you like, we can talk over many things, but
+now good-by!”
 
 And Alyosha ran downstairs and into the street.
 
@@ -10014,7 +10016,7 @@ And Alyosha ran downstairs and into the street.
 
 *Smerdyakov With A Guitar*
 
-He had no time to lose indeed. Even while he was saying good‐by to
+He had no time to lose indeed. Even while he was saying good-by to
 Lise, the thought had struck him that he must attempt some stratagem to
 find his brother Dmitri, who was evidently keeping out of his way. It
 was getting late, nearly three o’clock. Alyosha’s whole soul turned to
@@ -10030,24 +10032,24 @@ shall be following his great precept.”
 
 His plan was to catch his brother Dmitri unawares, to climb over the
 fence, as he had the day before, get into the garden and sit in the
-summer‐house. If Dmitri were not there, thought Alyosha, he would not
+summer-house. If Dmitri were not there, thought Alyosha, he would not
 announce himself to Foma or the women of the house, but would remain
-hidden in the summer‐house, even if he had to wait there till evening.
+hidden in the summer-house, even if he had to wait there till evening.
 If, as before, Dmitri were lying in wait for Grushenka to come, he
-would be very likely to come to the summer‐house. Alyosha did not,
+would be very likely to come to the summer-house. Alyosha did not,
 however, give much thought to the details of his plan, but resolved to
 act upon it, even if it meant not getting back to the monastery that
 day.
 
 Everything happened without hindrance, he climbed over the hurdle
 almost in the same spot as the day before, and stole into the
-summer‐house unseen. He did not want to be noticed. The woman of the
+summer-house unseen. He did not want to be noticed. The woman of the
 house and Foma too, if he were here, might be loyal to his brother and
 obey his instructions, and so refuse to let Alyosha come into the
 garden, or might warn Dmitri that he was being sought and inquired for.
 
-There was no one in the summer‐house. Alyosha sat down and began to
-wait. He looked round the summer‐house, which somehow struck him as a
+There was no one in the summer-house. Alyosha sat down and began to
+wait. He looked round the summer-house, which somehow struck him as a
 great deal more ancient than before. Though the day was just as fine as
 yesterday, it seemed a wretched little place this time. There was a
 circle on the table, left no doubt from the glass of brandy having been
@@ -10059,8 +10061,8 @@ suspense and uncertainty. But he had not sat there more than a quarter
 of an hour, when he suddenly heard the thrum of a guitar somewhere
 quite close. People were sitting, or had only just sat down, somewhere
 in the bushes not more than twenty paces away. Alyosha suddenly
-recollected that on coming out of the summer‐house the day before, he
-had caught a glimpse of an old green low garden‐seat among the bushes
+recollected that on coming out of the summer-house the day before, he
+had caught a glimpse of an old green low garden-seat among the bushes
 on the left, by the fence. The people must be sitting on it now. Who
 were they?
 
@@ -10102,7 +10104,7 @@ On her and on me!
 
 “It was even better last time,” observed the woman’s voice. “You sang
 ‘If my darling be in health’; it sounded more tender. I suppose you’ve
-forgotten to‐day.”
+forgotten to-day.”
 
 “Poetry is rubbish!” said Smerdyakov curtly.
 
@@ -10171,8 +10173,8 @@ though he is mad, and all his children.”
 He is mistaken there. If I had a certain sum in my pocket, I would have
 left here long ago. Dmitri Fyodorovitch is lower than any lackey in his
 behavior, in his mind, and in his poverty. He doesn’t know how to do
-anything, and yet he is respected by every one. I may be only a soup‐
-maker, but with luck I could open a café restaurant in Petrovka, in
+anything, and yet he is respected by every one. I may be only a
+soup-maker, but with luck I could open a café restaurant in Petrovka, in
 Moscow, for my cookery is something special, and there’s no one in
 Moscow, except the foreigners, whose cookery is anything special.
 Dmitri Fyodorovitch is a beggar, but if he were to challenge the son of
@@ -10208,9 +10210,9 @@ I don’t intend to grieve at all.
 Then something unexpected happened. Alyosha suddenly sneezed. They were
 silent. Alyosha got up and walked towards them. He found Smerdyakov
 dressed up and wearing polished boots, his hair pomaded, and perhaps
-curled. The guitar lay on the garden‐seat. His companion was the
-daughter of the house, wearing a light‐blue dress with a train two
-yards long. She was young and would not have been bad‐looking, but that
+curled. The guitar lay on the garden-seat. His companion was the
+daughter of the house, wearing a light-blue dress with a train two
+yards long. She was young and would not have been bad-looking, but that
 her face was so round and terribly freckled.
 
 “Will my brother Dmitri soon be back?” asked Alyosha with as much
@@ -10233,14 +10235,14 @@ Smerdyakov turned a deliberate, unmoved glance upon him.
 “And how did you get in this time, since the gate was bolted an hour
 ago?” he asked, looking at Alyosha.
 
-“I came in from the back‐alley, over the fence, and went straight to
-the summer‐house. I hope you’ll forgive me,” he added, addressing Marya
+“I came in from the back-alley, over the fence, and went straight to
+the summer-house. I hope you’ll forgive me,” he added, addressing Marya
 Kondratyevna. “I was in a hurry to find my brother.”
 
 “Ach, as though we could take it amiss in you!” drawled Marya
 Kondratyevna, flattered by Alyosha’s apology. “For Dmitri Fyodorovitch
-often goes to the summer‐house in that way. We don’t know he is here
-and he is sitting in the summer‐house.”
+often goes to the summer-house in that way. We don’t know he is here
+and he is sitting in the summer-house.”
 
 “I am very anxious to find him, or to learn from you where he is now.
 Believe me, it’s on business of great importance to him.”
@@ -10262,7 +10264,7 @@ suffer for it. I am terribly afraid of him, and if I were not even more
 afraid of doing so, I ought to let the police know. God only knows what
 he might not do!”
 
-“His honor said to him the other day, ‘I’ll pound you in a mortar!’ ”
+“His honor said to him the other day, ‘I’ll pound you in a mortar!’”
 added Marya Kondratyevna.
 
 “Oh, if it’s pounding in a mortar, it may be only talk,” observed
@@ -10274,7 +10276,7 @@ and it would be odd if I didn’t come. On the other hand, Ivan
 Fyodorovitch sent me first thing this morning to your brother’s lodging
 in Lake Street, without a letter, but with a message to Dmitri
 Fyodorovitch to go to dine with him at the restaurant here, in the
-market‐place. I went, but didn’t find Dmitri Fyodorovitch at home,
+market-place. I went, but didn’t find Dmitri Fyodorovitch at home,
 though it was eight o’clock. ‘He’s been here, but he is quite gone,’
 those were the very words of his landlady. It’s as though there was an
 understanding between them. Perhaps at this moment he is in the
@@ -10283,12 +10285,12 @@ home to dinner and Fyodor Pavlovitch dined alone an hour ago, and is
 gone to lie down. But I beg you most particularly not to speak of me
 and of what I have told you, for he’d kill me for nothing at all.”
 
-“Brother Ivan invited Dmitri to the restaurant to‐day?” repeated
+“Brother Ivan invited Dmitri to the restaurant to-day?” repeated
 Alyosha quickly.
 
 “That’s so.”
 
-“The Metropolis tavern in the market‐place?”
+“The Metropolis tavern in the market-place?”
 
 “The very same.”
 
@@ -10357,14 +10359,14 @@ whether I was fond of you even. When I went away to Moscow for the
 first few years I never thought of you at all. Then, when you came to
 Moscow yourself, we only met once somewhere, I believe. And now I’ve
 been here more than three months, and so far we have scarcely said a
-word to each other. To‐morrow I am going away, and I was just thinking
-as I sat here how I could see you to say good‐by and just then you
+word to each other. To-morrow I am going away, and I was just thinking
+as I sat here how I could see you to say good-by and just then you
 passed.”
 
 “Were you very anxious to see me, then?”
 
 “Very. I want to get to know you once for all, and I want you to know
-me. And then to say good‐by. I believe it’s always best to get to know
+me. And then to say good-by. I believe it’s always best to get to know
 people just before leaving them. I’ve noticed how you’ve been looking
 at me these three months. There has been a continual look of
 expectation in your eyes, and I can’t endure that. That’s how it is
@@ -10391,13 +10393,13 @@ that you are just a young and fresh and nice boy, green in fact! Now,
 have I insulted you dreadfully?”
 
 “On the contrary, I am struck by a coincidence,” cried Ivan, warmly and
-good‐humoredly. “Would you believe it that ever since that scene with
+good-humoredly. “Would you believe it that ever since that scene with
 her, I have thought of nothing else but my youthful greenness, and just
 as though you guessed that, you begin about it. Do you know I’ve been
 sitting here thinking to myself: that if I didn’t believe in life, if I
 lost faith in the woman I love, lost faith in the order of things, were
 convinced in fact that everything is a disorderly, damnable, and
-perhaps devil‐ridden chaos, if I were struck by every horror of man’s
+perhaps devil-ridden chaos, if I were struck by every horror of man’s
 disillusionment—still I should want to live and, having once tasted of
 the cup, I would not turn away from it till I had drained it! At
 thirty, though, I shall be sure to leave the cup, even if I’ve not
@@ -10418,7 +10420,7 @@ open in spring. I love the blue sky, I love some people, whom one loves
 you know sometimes without knowing why. I love some great deeds done by
 men, though I’ve long ceased perhaps to have faith in them, yet from
 old habit one’s heart prizes them. Here they have brought the soup for
-you, eat it, it will do you good. It’s first‐rate soup, they know how
+you, eat it, it will do you good. It’s first-rate soup, they know how
 to make it here. I want to travel in Europe, Alyosha, I shall set off
 from here. And yet I know that I am only going to a graveyard, but it’s
 a most precious graveyard, that’s what it is! Precious are the dead
@@ -10467,7 +10469,7 @@ seriously, though he is a buffoon. He stands on a firm rock, too, he
 stands on his sensuality—though after we are thirty, indeed, there may
 be nothing else to stand on.... But to hang on to seventy is nasty,
 better only to thirty; one might retain ‘a shadow of nobility’ by
-deceiving oneself. Have you seen Dmitri to‐day?”
+deceiving oneself. Have you seen Dmitri to-day?”
 
 “No, but I saw Smerdyakov,” and Alyosha rapidly, though minutely,
 described his meeting with Smerdyakov. Ivan began listening anxiously
@@ -10535,11 +10537,11 @@ unseemly for you. How you rushed into the discussion this morning! I’ve
 forgotten to kiss you for it.... But how she tormented me! It certainly
 was sitting by a ‘laceration.’ Ah, she knew how I loved her! She loved
 me and not Dmitri,” Ivan insisted gayly. “Her feeling for Dmitri was
-simply a self‐ laceration. All I told her just now was perfectly true,
+simply a self-laceration. All I told her just now was perfectly true,
 but the worst of it is, it may take her fifteen or twenty years to find
 out that she doesn’t care for Dmitri, and loves me whom she torments,
 and perhaps she may never find it out at all, in spite of her lesson
-to‐day. Well, it’s better so; I can simply go away for good. By the
+to-day. Well, it’s better so; I can simply go away for good. By the
 way, how is she now? What happened after I departed?”
 
 Alyosha told him she had been hysterical, and that she was now, he
@@ -10563,15 +10565,15 @@ I feel somehow depressed.”
 
 “Yes, you’ve been depressed a long time, I’ve noticed it.”
 
-“Have you settled to go to‐morrow morning, then?”
+“Have you settled to go to-morrow morning, then?”
 
 “Morning? I didn’t say I should go in the morning.... But perhaps it
-may be the morning. Would you believe it, I dined here to‐day only to
+may be the morning. Would you believe it, I dined here to-day only to
 avoid dining with the old man, I loathe him so. I should have left long
 ago, so far as he is concerned. But why are you so worried about my
 going away? We’ve plenty of time before I go, an eternity!”
 
-“If you are going away to‐morrow, what do you mean by an eternity?”
+“If you are going away to-morrow, what do you mean by an eternity?”
 
 “But what does it matter to us?” laughed Ivan. “We’ve time enough for
 our talk, for what brought us here. Why do you look so surprised?
@@ -10728,7 +10730,7 @@ once read somewhere of John the Merciful, a saint, that when a hungry,
 frozen beggar came to him, he took him into his bed, held him in his
 arms, and began breathing into his mouth, which was putrid and
 loathsome from some awful disease. I am convinced that he did that from
-‘self‐laceration,’ from the self‐laceration of falsity, for the sake of
+‘self-laceration,’ from the self-laceration of falsity, for the sake of
 the charity imposed by duty, as a penance laid on him. For any one to
 love a man, he must be hidden, for as soon as he shows his face, love
 is gone.”
@@ -10736,13 +10738,13 @@ is gone.”
 “Father Zossima has talked of that more than once,” observed Alyosha;
 “he, too, said that the face of a man often hinders many people not
 practiced in love, from loving him. But yet there’s a great deal of
-love in mankind, and almost Christ‐like love. I know that myself,
+love in mankind, and almost Christ-like love. I know that myself,
 Ivan.”
 
 “Well, I know nothing of it so far, and can’t understand it, and the
 innumerable mass of mankind are with me there. The question is, whether
 that’s due to men’s bad qualities or whether it’s inherent in their
-nature. To my thinking, Christ‐like love for men is a miracle
+nature. To my thinking, Christ-like love for men is a miracle
 impossible on earth. He was God. But we are not gods. Suppose I, for
 instance, suffer intensely. Another can never know how much I suffer,
 because he is another and not I. And what’s more, a man is rarely ready
@@ -10769,7 +10771,7 @@ to a tenth of what it would be. Still we’d better keep to the children,
 though it does weaken my case. But, in the first place, children can be
 loved even at close quarters, even when they are dirty, even when they
 are ugly (I fancy, though, children never are ugly). The second reason
-why I won’t speak of grown‐up people is that, besides being disgusting
+why I won’t speak of grown-up people is that, besides being disgusting
 and unworthy of love, they have a compensation—they’ve eaten the apple
 and know good and evil, and they have become ‘like gods.’ They go on
 eating it still. But the children haven’t eaten anything, and are so
@@ -10783,7 +10785,7 @@ and especially such innocents! You may be surprised at me, Alyosha, but
 I am awfully fond of children, too. And observe, cruel people, the
 violent, the rapacious, the Karamazovs are sometimes very fond of
 children. Children while they are quite little—up to seven, for
-instance—are so remote from grown‐up people; they are different
+instance—are so remote from grown-up people; they are different
 creatures, as it were, of a different species. I knew a criminal in
 prison who had, in the course of his career as a burglar, murdered
 whole families, including several children. But when he was in prison,
@@ -10827,7 +10829,7 @@ created him in his own image and likeness.”
 
 “Just as he did God, then?” observed Alyosha.
 
-“ ‘It’s wonderful how you can turn words,’ as Polonius says in
+“‘It’s wonderful how you can turn words,’ as Polonius says in
 _Hamlet_,” laughed Ivan. “You turn my words against me. Well, I am
 glad. Yours must be a fine God, if man created Him in his image and
 likeness. You asked just now what I was driving at. You see, I am fond
@@ -10872,7 +10874,7 @@ drummed at him incessantly, till at last he solemnly confessed his
 crime. He was converted. He wrote to the court himself that he was a
 monster, but that in the end God had vouchsafed him light and shown
 grace. All Geneva was in excitement about him—all philanthropic and
-religious Geneva. All the aristocratic and well‐bred society of the
+religious Geneva. All the aristocratic and well-bred society of the
 town rushed to the prison, kissed Richard and embraced him; ‘You are
 our brother, you have found grace.’ And Richard does nothing but weep
 with emotion, ‘Yes, I’ve found grace! All my youth and childhood I was
@@ -10911,8 +10913,8 @@ gasping for breath, moving sideways, with a sort of unnatural spasmodic
 action—it’s awful in Nekrassov. But that’s only a horse, and God has
 given horses to be beaten. So the Tatars have taught us, and they left
 us the knout as a remembrance of it. But men, too, can be beaten. A
-well‐educated, cultured gentleman and his wife beat their own child
-with a birch‐rod, a girl of seven. I have an exact account of it. The
+well-educated, cultured gentleman and his wife beat their own child
+with a birch-rod, a girl of seven. I have an exact account of it. The
 papa was glad that the birch was covered with twigs. ‘It stings more,’
 said he, and so he began stinging his daughter. I know for a fact there
 are people who at every blow are worked up to sensuality, to literal
@@ -10963,7 +10965,7 @@ Without it, I am told, man could not have existed on earth, for he
 could not have known good and evil. Why should he know that diabolical
 good and evil when it costs so much? Why, the whole world of knowledge
 is not worth that child’s prayer to ‘dear, kind God’! I say nothing of
-the sufferings of grown‐up people, they have eaten the apple, damn
+the sufferings of grown-up people, they have eaten the apple, damn
 them, and the devil take them all! But these little ones! I am making
 you suffer, Alyosha, you are not yourself. I’ll leave off if you like.”
 
@@ -10981,20 +10983,20 @@ absolute power over the lives of their subjects. There were such men
 then. So our general, settled on his property of two thousand souls,
 lives in pomp, and domineers over his poor neighbors as though they
 were dependents and buffoons. He has kennels of hundreds of hounds and
-nearly a hundred dog‐boys—all mounted, and in uniform. One day a
-serf‐boy, a little child of eight, threw a stone in play and hurt the
+nearly a hundred dog-boys—all mounted, and in uniform. One day a
+serf-boy, a little child of eight, threw a stone in play and hurt the
 paw of the general’s favorite hound. ‘Why is my favorite dog lame?’ He
 is told that the boy threw a stone that hurt the dog’s paw. ‘So you did
 it.’ The general looked the child up and down. ‘Take him.’ He was
 taken—taken from his mother and kept shut up all night. Early that
 morning the general comes out on horseback, with the hounds, his
-dependents, dog‐boys, and huntsmen, all mounted around him in full
+dependents, dog-boys, and huntsmen, all mounted around him in full
 hunting parade. The servants are summoned for their edification, and in
 front of them all stands the mother of the child. The child is brought
-from the lock‐up. It’s a gloomy, cold, foggy autumn day, a capital day
+from the lock-up. It’s a gloomy, cold, foggy autumn day, a capital day
 for hunting. The general orders the child to be undressed; the child is
 stripped naked. He shivers, numb with terror, not daring to cry....
-‘Make him run,’ commands the general. ‘Run! run!’ shout the dog‐boys.
+‘Make him run,’ commands the general. ‘Run! run!’ shout the dog-boys.
 The boy runs.... ‘At him!’ yells the general, and he sets the whole
 pack of hounds on the child. The hounds catch him, and tear him to
 pieces before his mother’s eyes!... I believe the general was
@@ -11139,7 +11141,7 @@ have the right to forgive and could forgive? But there is a Being and
 He can forgive everything, all and for all, because He gave His
 innocent blood for all and everything. You have forgotten Him, and on
 Him is built the edifice, and it is to Him they cry aloud, ‘Thou art
-just, O Lord, for Thy ways are revealed!’ ”
+just, O Lord, for Thy ways are revealed!’”
 
 “Ah! the One without sin and His blood! No, I have not forgotten Him;
 on the contrary I’ve been wondering all the time how it was you did not
@@ -11212,7 +11214,7 @@ him with the same faith and with the same love. Oh, with greater faith,
 for it is fifteen centuries since man has ceased to see signs from
 heaven.
 
-No signs from heaven come to‐day
+No signs from heaven come to-day
 To add to what the heart doth say.
 
 There was nothing left but faith in what the heart doth say. It is true
@@ -11284,7 +11286,7 @@ cries, holding out her hands to Him. The procession halts, the coffin
 is laid on the steps at His feet. He looks with compassion, and His
 lips once more softly pronounce, ‘Maiden, arise!’ and the maiden
 arises. The little girl sits up in the coffin and looks round, smiling
-with wide‐ open wondering eyes, holding a bunch of white roses they had
+with wide-open wondering eyes, holding a bunch of white roses they had
 put in her hand.
 
 “There are cries, sobs, confusion among the people, and at that moment
@@ -11315,15 +11317,15 @@ once behind him. He stands in the doorway and for a minute or two gazes
 into His face. At last he goes up slowly, sets the light on the table
 and speaks.
 
-“ ‘Is it Thou? Thou?’ but receiving no answer, he adds at once, ‘Don’t
+“‘Is it Thou? Thou?’ but receiving no answer, he adds at once, ‘Don’t
 answer, be silent. What canst Thou say, indeed? I know too well what
 Thou wouldst say. And Thou hast no right to add anything to what Thou
 hadst said of old. Why, then, art Thou come to hinder us? For Thou hast
 come to hinder us, and Thou knowest that. But dost Thou know what will
-be to‐ morrow? I know not who Thou art and care not to know whether it
-is Thou or only a semblance of Him, but to‐morrow I shall condemn Thee
+be to-morrow? I know not who Thou art and care not to know whether it
+is Thou or only a semblance of Him, but to-morrow I shall condemn Thee
 and burn Thee at the stake as the worst of heretics. And the very
-people who have to‐day kissed Thy feet, to‐morrow at the faintest sign
+people who have to-day kissed Thy feet, to-morrow at the faintest sign
 from me will rush to heap up the embers of Thy fire. Knowest Thou that?
 Yes, maybe Thou knowest it,’ he added with thoughtful penetration,
 never for a moment taking his eyes off the Prisoner.”
@@ -11339,7 +11341,7 @@ a case of mistaken identity, let it be so. It is true,” he went on,
 laughing, “the old man was ninety, and he might well be crazy over his
 set idea. He might have been struck by the appearance of the Prisoner.
 It might, in fact, be simply his ravings, the delusion of an old man of
-ninety, over‐excited by the _auto da fé_ of a hundred heretics the day
+ninety, over-excited by the _auto da fé_ of a hundred heretics the day
 before. But does it matter to us after all whether it was a mistake of
 identity or a wild fantasy? All that matters is that the old man should
 speak out, should speak openly of what he has thought in silence for
@@ -11371,10 +11373,10 @@ have completed that work in Thy name. For fifteen centuries we have
 been wrestling with Thy freedom, but now it is ended and over for good.
 Dost Thou not believe that it’s over for good? Thou lookest meekly at
 me and deignest not even to be wroth with me. But let me tell Thee that
-now, to‐day, people are more persuaded than ever that they have perfect
+now, to-day, people are more persuaded than ever that they have perfect
 freedom, yet they have brought their freedom to us and laid it humbly
 at our feet. But that has been our doing. Was this what Thou didst? Was
-this Thy freedom?’ ”
+this Thy freedom?’”
 
 “I don’t understand again,” Alyosha broke in. “Is he ironical, is he
 jesting?”
@@ -11390,14 +11392,14 @@ reject the only way by which men might be made happy. But, fortunately,
 departing Thou didst hand on the work to us. Thou hast promised, Thou
 hast established by Thy word, Thou hast given to us the right to bind
 and to unbind, and now, of course, Thou canst not think of taking it
-away. Why, then, hast Thou come to hinder us?’ ”
+away. Why, then, hast Thou come to hinder us?’”
 
 “And what’s the meaning of ‘no lack of admonitions and warnings’?”
 asked Alyosha.
 
 “Why, that’s the chief part of what the old man must say.
 
-“ ‘The wise and dread spirit, the spirit of self‐destruction and non‐
+“‘The wise and dread spirit, the spirit of self-destruction and non-
 existence,’ the old man goes on, ‘the great spirit talked with Thee in
 the wilderness, and we are told in the books that he “tempted” Thee. Is
 that so? And could anything truer be said than what he revealed to Thee
@@ -11427,7 +11429,7 @@ passed, we see that everything in those three questions was so justly
 divined and foretold, and has been so truly fulfilled, that nothing can
 be added to them or taken from them.
 
-“ ‘Judge Thyself who was right—Thou or he who questioned Thee then?
+“‘Judge Thyself who was right—Thou or he who questioned Thee then?
 Remember the first question; its meaning, in other words, was this:
 “Thou wouldst go into the world, and art going with empty hands, with
 some promise of freedom which men in their simplicity and their natural
@@ -11483,7 +11485,7 @@ shall tell them that we are Thy servants and rule them in Thy name. We
 shall deceive them again, for we will not let Thee come to us again.
 That deception will be our suffering, for we shall be forced to lie.
 
-“ ‘This is the significance of the first question in the wilderness,
+“‘This is the significance of the first question in the wilderness,
 and this is what Thou hast rejected for the sake of that freedom which
 Thou hast exalted above everything. Yet in this question lies hid the
 great secret of this world. Choosing “bread,” Thou wouldst have
@@ -11508,7 +11510,7 @@ down to Thee alone—the banner of earthly bread; and Thou hast rejected
 it for the sake of freedom and the bread of Heaven. Behold what Thou
 didst further. And all again in the name of freedom! I tell Thee that
 man is tormented by no greater anxiety than to find some one quickly to
-whom he can hand over that gift of freedom with which the ill‐fated
+whom he can hand over that gift of freedom with which the ill-fated
 creature is born. But only one who can appease their conscience can
 take over their freedom. In bread there was offered Thee an invincible
 banner; give bread, and man will worship thee, for nothing is more
@@ -11541,7 +11543,7 @@ Thee, for they could not have been left in greater confusion and
 suffering than Thou hast caused, laying upon them so many cares and
 unanswerable problems.
 
-“ ‘So that, in truth, Thou didst Thyself lay the foundation for the
+“‘So that, in truth, Thou didst Thyself lay the foundation for the
 destruction of Thy kingdom, and no one is more to blame for it. Yet
 what was offered Thee? There are three powers, three powers alone, able
 to conquer and to hold captive for ever the conscience of these
@@ -11643,13 +11645,13 @@ mightest have taken even then the sword of Cæsar. Why didst Thou reject
 that last gift? Hadst Thou accepted that last counsel of the mighty
 spirit, Thou wouldst have accomplished all that man seeks on earth—that
 is, some one to worship, some one to keep his conscience, and some
-means of uniting all in one unanimous and harmonious ant‐heap, for the
+means of uniting all in one unanimous and harmonious ant-heap, for the
 craving for universal unity is the third and last anguish of men.
 Mankind as a whole has always striven to organize a universal state.
 There have been many great nations with great histories, but the more
 highly they were developed the more unhappy they were, for they felt
-more acutely than other people the craving for world‐wide union. The
-great conquerors, Timours and Ghenghis‐Khans, whirled like hurricanes
+more acutely than other people the craving for world-wide union. The
+great conquerors, Timours and Ghenghis-Khans, whirled like hurricanes
 over the face of the earth striving to subdue its people, and they too
 were but the unconscious expression of the same craving for universal
 unity. Hadst Thou taken the world and Cæsar’s purple, Thou wouldst have
@@ -11683,7 +11685,7 @@ crawl fawning to our feet and whine to us: “Yes, you were right, you
 alone possess His mystery, and we come back to you, save us from
 ourselves!”
 
-“ ‘Receiving bread from us, they will see clearly that we take the
+“‘Receiving bread from us, they will see clearly that we take the
 bread made by their hands from them, to give it to them, without any
 miracle. They will see that we do not change the stones to bread, but
 in truth they will be more thankful for taking it from our hands than
@@ -11702,7 +11704,7 @@ them to be proud. We shall show them that they are weak, that they are
 only pitiful children, but that childlike happiness is the sweetest of
 all. They will become timid and will look to us and huddle close to us
 in fear, as chicks to the hen. They will marvel at us and will be
-awe‐stricken before us, and will be proud at our being so powerful and
+awe-stricken before us, and will be proud at our being so powerful and
 clever, that we have been able to subdue such a turbulent flock of
 thousands of millions. They will tremble impotently before our wrath,
 their minds will grow fearful, they will be quick to shed tears like
@@ -11751,11 +11753,11 @@ make up the number.” But I awakened and would not serve madness. I
 turned back and joined the ranks of those _who have corrected Thy
 work_. I left the proud and went back to the humble, for the happiness
 of the humble. What I say to Thee will come to pass, and our dominion
-will be built up. I repeat, to‐morrow Thou shalt see that obedient
+will be built up. I repeat, to-morrow Thou shalt see that obedient
 flock who at a sign from me will hasten to heap up the hot cinders
 about the pile on which I shall burn Thee for coming to hinder us. For
-if any one has ever deserved our fires, it is Thou. To‐morrow I shall
-burn Thee. _Dixi._’ ”
+if any one has ever deserved our fires, it is Thou. To-morrow I shall
+burn Thee. _Dixi._’”
 
 Ivan stopped. He was carried away as he talked, and spoke with
 excitement; when he had finished, he suddenly smiled.
@@ -11906,7 +11908,7 @@ with your ideas.”
 
 “In the Karamazov way, again.”
 
-“ ‘Everything is lawful,’ you mean? Everything is lawful, is that it?”
+“‘Everything is lawful,’ you mean? Everything is lawful, is that it?”
 
 Ivan scowled, and all at once turned strangely pale.
 
@@ -11937,7 +11939,7 @@ remembering you. It’s enough for me that you are somewhere here, and I
 shan’t lose my desire for life yet. Is that enough for you? Take it as
 a declaration of love if you like. And now you go to the right and I to
 the left. And it’s enough, do you hear, enough. I mean even if I don’t
-go away to‐morrow (I think I certainly shall go) and we meet again,
+go away to-morrow (I think I certainly shall go) and we meet again,
 don’t say a word more on these subjects. I beg that particularly. And
 about Dmitri too, I ask you specially, never speak to me again,” he
 added, with sudden irritation; “it’s all exhausted, it has all been
@@ -11949,7 +11951,7 @@ will be very interesting to have a look at you, to see what you’ll be
 by that time. It’s rather a solemn promise, you see. And we really may
 be parting for seven years or ten. Come, go now to your Pater
 Seraphicus, he is dying. If he dies without you, you will be angry with
-me for having kept you. Good‐by, kiss me once more; that’s right, now
+me for having kept you. Good-by, kiss me once more; that’s right, now
 go.”
 
 Ivan turned suddenly and went his way without looking back. It was just
@@ -12018,7 +12020,7 @@ removes the offending object, often quite a trifling and ridiculous
 one—some article left about in the wrong place, a handkerchief on the
 floor, a book not replaced on the shelf, and so on.
 
-At last, feeling very cross and ill‐humored, Ivan arrived home, and
+At last, feeling very cross and ill-humored, Ivan arrived home, and
 suddenly, about fifteen paces from the garden gate, he guessed what was
 fretting and worrying him.
 
@@ -12108,7 +12110,7 @@ have gone away without satisfying it.
 
 “Why don’t you go to Tchermashnya, sir?” Smerdyakov suddenly raised his
 eyes and smiled familiarly. “Why I smile you must understand of
-yourself, if you are a clever man,” his screwed‐up left eye seemed to
+yourself, if you are a clever man,” his screwed-up left eye seemed to
 say.
 
 “Why should I go to Tchermashnya?” Ivan asked in surprise.
@@ -12144,11 +12146,11 @@ Dmitri Fyodorovitch. Here Fyodor Pavlovitch will get up directly and
 begin worrying me every minute, ‘Has she come? Why hasn’t she come?’
 and so on up till midnight and even after midnight. And if Agrafena
 Alexandrovna doesn’t come (for very likely she does not mean to come at
-all) then he will be at me again to‐morrow morning, ‘Why hasn’t she
+all) then he will be at me again to-morrow morning, ‘Why hasn’t she
 come? When will she come?’—as though I were to blame for it. On the
 other side it’s no better. As soon as it gets dark, or even before,
 your brother will appear with his gun in his hands: ‘Look out, you
-rogue, you soup‐maker. If you miss her and don’t let me know she’s
+rogue, you soup-maker. If you miss her and don’t let me know she’s
 been—I’ll kill you before any one.’ When the night’s over, in the
 morning, he, too, like Fyodor Pavlovitch, begins worrying me to death.
 ‘Why hasn’t she come? Will she come soon?’ And he, too, thinks me to
@@ -12164,7 +12166,7 @@ if you want to know the truth of the matter. I kept quiet from the very
 beginning, not daring to answer; but he pitched on me to be his
 servant. He has had only one thing to say since: ‘I’ll kill you, you
 scoundrel, if you miss her,’ I feel certain, sir, that I shall have a
-long fit to‐ morrow.”
+long fit to-morrow.”
 
 “What do you mean by ‘a long fit’?”
 
@@ -12176,7 +12178,7 @@ Herzenstube, the doctor here, and he put ice on my head and tried
 another remedy, too.... I might have died.”
 
 “But they say one can’t tell with epilepsy when a fit is coming. What
-makes you say you will have one to‐morrow?” Ivan inquired, with a
+makes you say you will have one to-morrow?” Ivan inquired, with a
 peculiar, irritable curiosity.
 
 “That’s just so. You can’t tell beforehand.”
@@ -12184,14 +12186,14 @@ peculiar, irritable curiosity.
 “Besides, you fell from the garret then.”
 
 “I climb up to the garret every day. I might fall from the garret again
-to‐morrow. And, if not, I might fall down the cellar steps. I have to
+to-morrow. And, if not, I might fall down the cellar steps. I have to
 go into the cellar every day, too.”
 
 Ivan took a long look at him.
 
 “You are talking nonsense, I see, and I don’t quite understand you,” he
 said softly, but with a sort of menace. “Do you mean to pretend to be
-ill to‐morrow for three days, eh?”
+ill to-morrow for three days, eh?”
 
 Smerdyakov, who was looking at the ground again, and playing with the
 toe of his right foot, set the foot down, moved the left one forward,
@@ -12230,13 +12232,13 @@ don’t know how carefully he has begun to lock himself in at night, and
 even if Grigory Vassilyevitch comes to the door he won’t open to him
 till he hears his voice. But Grigory Vassilyevitch does not come,
 because I wait upon him alone in his room now. That’s the arrangement
-he made himself ever since this to‐do with Agrafena Alexandrovna began.
+he made himself ever since this to-do with Agrafena Alexandrovna began.
 But at night, by his orders, I go away to the lodge so that I don’t get
 to sleep till midnight, but am on the watch, getting up and walking
 about the yard, waiting for Agrafena Alexandrovna to come. For the last
 few days he’s been perfectly frantic expecting her. What he argues is,
 she is afraid of him, Dmitri Fyodorovitch (Mitya, as he calls him),
-‘and so,’ says he, ‘she’ll come the back‐way, late at night, to me. You
+‘and so,’ says he, ‘she’ll come the back-way, late at night, to me. You
 look out for her,’ says he, ‘till midnight and later; and if she does
 come, you run up and knock at my door or at the window from the garden.
 Knock at first twice, rather gently, and then three times more quickly,
@@ -12288,7 +12290,7 @@ Grigory know beforehand; he will be sure not to let him in.”
 “I should never dare to tell Grigory Vassilyevitch about the signals
 without orders from my master. And as for Grigory Vassilyevitch hearing
 him and not admitting him, he has been ill ever since yesterday, and
-Marfa Ignatyevna intends to give him medicine to‐morrow. They’ve just
+Marfa Ignatyevna intends to give him medicine to-morrow. They’ve just
 arranged it. It’s a very strange remedy of hers. Marfa Ignatyevna knows
 of a preparation and always keeps it. It’s a strong thing made from
 some herb. She has the secret of it, and she always gives it to Grigory
@@ -12301,7 +12303,7 @@ herself, and drinks it herself. And as they never take strong drink, I
 assure you they both drop asleep at once and sleep sound a very long
 time. And when Grigory Vassilyevitch wakes up he is perfectly well
 after it, but Marfa Ignatyevna always has a headache from it. So, if
-Marfa Ignatyevna carries out her intention to‐ morrow, they won’t hear
+Marfa Ignatyevna carries out her intention to-morrow, they won’t hear
 anything and hinder Dmitri Fyodorovitch. They’ll be asleep.”
 
 “What a rigmarole! And it all seems to happen at once, as though it
@@ -12385,8 +12387,8 @@ moment, started, and shrank back. But the moment passed without
 mischief to Smerdyakov, and Ivan turned in silence, as it seemed in
 perplexity, to the gate.
 
-“I am going away to Moscow to‐morrow, if you care to know—early
-to‐morrow morning. That’s all!” he suddenly said aloud angrily, and
+“I am going away to Moscow to-morrow, if you care to know—early
+to-morrow morning. That’s all!” he suddenly said aloud angrily, and
 wondered himself afterwards what need there was to say this then to
 Smerdyakov.
 
@@ -12427,13 +12429,13 @@ instant. He moved and walked as though in a nervous frenzy.
 “It’s Always Worth While Speaking To A Clever Man”
 
 And in the same nervous frenzy, too, he spoke. Meeting Fyodor
-Pavlovitch in the drawing‐room directly he went in, he shouted to him,
+Pavlovitch in the drawing-room directly he went in, he shouted to him,
 waving his hands, “I am going upstairs to my room, not in to you.
-Good‐by!” and passed by, trying not even to look at his father. Very
+Good-by!” and passed by, trying not even to look at his father. Very
 possibly the old man was too hateful to him at that moment; but such an
 unceremonious display of hostility was a surprise even to Fyodor
 Pavlovitch. And the old man evidently wanted to tell him something at
-once and had come to meet him in the drawing‐room on purpose. Receiving
+once and had come to meet him in the drawing-room on purpose. Receiving
 this amiable greeting, he stood still in silence and with an ironical
 air watched his son going upstairs, till he passed out of sight.
 
@@ -12526,9 +12528,9 @@ Tchermashnya on the way. It’s only to turn to the left from the station
 at Volovya, only another twelve versts and you come to Tchermashnya.”
 
 “I’m sorry, I can’t. It’s eighty versts to the railway and the train
-starts for Moscow at seven o’clock to‐night. I can only just catch it.”
+starts for Moscow at seven o’clock to-night. I can only just catch it.”
 
-“You’ll catch it to‐morrow or the day after, but to‐day turn off to
+“You’ll catch it to-morrow or the day after, but to-day turn off to
 Tchermashnya. It won’t put you out much to humor your father! If I
 hadn’t had something to keep me here, I would have run over myself long
 ago, for I’ve some business there in a hurry. But here I ... it’s not
@@ -12612,7 +12614,7 @@ The priest will give you horses back to Volovya station.”
 
 The old man was quite delighted. He wrote the note, and sent for the
 horses. A light lunch was brought in, with brandy. When Fyodor
-Pavlovitch was pleased, he usually became expansive, but to‐day he
+Pavlovitch was pleased, he usually became expansive, but to-day he
 seemed to restrain himself. Of Dmitri, for instance, he did not say a
 word. He was quite unmoved by the parting, and seemed, in fact, at a
 loss for something to say. Ivan noticed this particularly. “He must be
@@ -12627,7 +12629,7 @@ be glad to see you. Well, Christ be with you!”
 
 Ivan got into the carriage.
 
-“Good‐by, Ivan! Don’t be too hard on me!” the father called for the
+“Good-by, Ivan! Don’t be too hard on me!” the father called for the
 last time.
 
 The whole household came out to take leave—Smerdyakov, Marfa and
@@ -12640,7 +12642,7 @@ he laughed, too, a peculiar, nervous laugh. He remembered it long
 after.
 
 “It’s a true saying then, that ‘it’s always worth while speaking to a
-clever man,’ ” answered Smerdyakov firmly, looking significantly at
+clever man,’” answered Smerdyakov firmly, looking significantly at
 Ivan.
 
 The carriage rolled away. Nothing was clear in Ivan’s soul, but he
@@ -12668,7 +12670,7 @@ seven, brothers?”
 
 “We shall just do it. Shall we get the carriage out?”
 
-“At once. Will any one of you be going to the town to‐morrow?”
+“At once. Will any one of you be going to the town to-morrow?”
 
 “To be sure. Mitri here will.”
 
@@ -12725,13 +12727,13 @@ once. He was a most estimable old man, and the most careful and
 conscientious doctor in the province. After careful examination, he
 concluded that the fit was a very violent one and might have serious
 consequences; that meanwhile he, Herzenstube, did not fully understand
-it, but that by to‐morrow morning, if the present remedies were
+it, but that by to-morrow morning, if the present remedies were
 unavailing, he would venture to try something else. The invalid was
 taken to the lodge, to a room next to Grigory’s and Marfa Ignatyevna’s.
 
 Then Fyodor Pavlovitch had one misfortune after another to put up with
 that day. Marfa Ignatyevna cooked the dinner, and the soup, compared
-with Smerdyakov’s, was “no better than dish‐water,” and the fowl was so
+with Smerdyakov’s, was “no better than dish-water,” and the fowl was so
 dried up that it was impossible to masticate it. To her master’s
 bitter, though deserved, reproaches, Marfa Ignatyevna replied that the
 fowl was a very old one to begin with, and that she had never been
@@ -12772,7 +12774,7 @@ get up, and as he had himself promised in the morning, converse once
 more with those dear to his heart.” This promise and indeed every word
 of the dying elder Father Païssy put implicit trust in. If he had seen
 him unconscious, if he had seen him breathe his last, and yet had his
-promise that he would rise up and say good‐by to him, he would not have
+promise that he would rise up and say good-by to him, he would not have
 believed perhaps even in death, but would still have expected the dead
 man to recover and fulfill his promise. In the morning as he lay down
 to sleep, Father Zossima had told him positively: “I shall not die
@@ -12802,7 +12804,7 @@ monastery.
 The whole party were in the bedroom which, as we mentioned before, was
 very small, so that there was scarcely room for the four of them (in
 addition to Porfiry, the novice, who stood) to sit round Father Zossima
-on chairs brought from the sitting‐room. It was already beginning to
+on chairs brought from the sitting-room. It was already beginning to
 get dark, the room was lighted up by the lamps and the candles before
 the ikons.
 
@@ -12824,7 +12826,7 @@ mother and the little girl Lizaveta,” he crossed himself. “Porfiry, did
 you take her offering where I told you?”
 
 He meant the sixty copecks brought him the day before by the
-good‐humored woman to be given “to some one poorer than me.” Such
+good-humored woman to be given “to some one poorer than me.” Such
 offerings, always of money gained by personal toil, are made by way of
 penance voluntarily undertaken. The elder had sent Porfiry the evening
 before to a widow, whose house had been burnt down lately, and who
@@ -12836,15 +12838,15 @@ instructed, “from an unknown benefactress.”
 you. Have you been home and seen your brother?” It seemed strange to
 Alyosha that he asked so confidently and precisely, about one of his
 brothers only—but which one? Then perhaps he had sent him out both
-yesterday and to‐day for the sake of that brother.
+yesterday and to-day for the sake of that brother.
 
 “I have seen one of my brothers,” answered Alyosha.
 
 “I mean the elder one, to whom I bowed down.”
 
-“I only saw him yesterday and could not find him to‐day,” said Alyosha.
+“I only saw him yesterday and could not find him to-day,” said Alyosha.
 
-“Make haste to find him, go again to‐morrow and make haste, leave
+“Make haste to find him, go again to-morrow and make haste, leave
 everything and make haste. Perhaps you may still have time to prevent
 something terrible. I bowed down yesterday to the great suffering in
 store for him.”
@@ -12858,7 +12860,7 @@ too obscure.... What is this suffering in store for him?”
 
 “Don’t inquire. I seemed to see something terrible yesterday ... as
 though his whole future were expressed in his eyes. A look came into
-his eyes—so that I was instantly horror‐stricken at what that man is
+his eyes—so that I was instantly horror-stricken at what that man is
 preparing for himself. Once or twice in my life I’ve seen such a look
 in a man’s face ... reflecting as it were his future fate, and that
 fate, alas, came to pass. I sent you to him, Alexey, for I thought your
@@ -12873,7 +12875,7 @@ you. Life will bring you many misfortunes, but you will find your
 happiness in them, and will bless life and will make others bless
 it—which is what matters most. Well, that is your character. Fathers
 and teachers,” he addressed his friends with a tender smile, “I have
-never till to‐day told even him why the face of this youth is so dear
+never till to-day told even him why the face of this youth is so dear
 to me. Now I will tell you. His face has been as it were a remembrance
 and a prophecy for me. At the dawn of my life when I was a child I had
 an elder brother who died before my eyes at seventeen. And later on in
@@ -12938,7 +12940,7 @@ and I don’t remember him at all. He left my mother a small house built
 of wood, and a fortune, not large, but sufficient to keep her and her
 children in comfort. There were two of us, my elder brother Markel and
 I. He was eight years older than I was, of hasty irritable temperament,
-but kind‐hearted and never ironical. He was remarkably silent,
+but kind-hearted and never ironical. He was remarkably silent,
 especially at home with me, his mother, and the servants. He did well
 at school, but did not get on with his schoolfellows, though he never
 quarreled, at least so my mother has told me. Six months before his
@@ -12961,7 +12963,7 @@ hiring a free servant to take her place.
 
 In the sixth week in Lent, my brother, who was never strong and had a
 tendency to consumption, was taken ill. He was tall but thin and
-delicate‐ looking, and of very pleasing countenance. I suppose he
+delicate-looking, and of very pleasing countenance. I suppose he
 caught cold, anyway the doctor, who came, soon whispered to my mother
 that it was galloping consumption, that he would not live through the
 spring. My mother began weeping, and, careful not to alarm my brother,
@@ -12984,7 +12986,7 @@ his bed, so he had to confess and take the sacrament at home.
 
 It was a late Easter, and the days were bright, fine, and full of
 fragrance. I remember he used to cough all night and sleep badly, but
-in the morning he dressed and tried to sit up in an arm‐chair. That’s
+in the morning he dressed and tried to sit up in an arm-chair. That’s
 how I remember him sitting, sweet and gentle, smiling, his face bright
 and joyous, in spite of his illness. A marvelous change passed over
 him, his spirit seemed transformed. The old nurse would come in and
@@ -13124,7 +13126,7 @@ precious relic of the past. But even before I learned to read, I
 remember first being moved to devotional feeling at eight years old. My
 mother took me alone to mass (I don’t remember where my brother was at
 the time) on the Monday before Easter. It was a fine day, and I
-remember to‐day, as though I saw it now, how the incense rose from the
+remember to-day, as though I saw it now, how the incense rose from the
 censer and softly floated upwards and, overhead in the cupola, mingled
 in rising waves with the sunlight that streamed in at the little
 window. I was stirred by the sight, and for the first time in my life I
@@ -13133,7 +13135,7 @@ out into the middle of the church carrying a big book, so large that at
 the time I fancied he could scarcely carry it. He laid it on the
 reading desk, opened it, and began reading, and suddenly for the first
 time I understood something read in the church of God. In the land of
-Uz, there lived a man, righteous and God‐fearing, and he had great
+Uz, there lived a man, righteous and God-fearing, and he had great
 wealth, so many camels, so many sheep and asses, and his children
 feasted, and he loved them very much and prayed for them. “It may be
 that my sons have sinned in their feasting.” Now the devil came before
@@ -13165,8 +13167,8 @@ unfathomable there is in it! Afterwards I heard the words of mockery
 and blame, proud words, “How could God give up the most loved of His
 saints for the diversion of the devil, take from him his children,
 smite him with sore boils so that he cleansed the corruption from his
-sores with a pot‐sherd—and for no object except to boast to the devil!
-‘See what My saint can suffer for My sake.’ ” But the greatness of it
+sores with a pot-sherd—and for no object except to boast to the devil!
+‘See what My saint can suffer for My sake.’” But the greatness of it
 lies just in the fact that it is a mystery—that the passing earthly
 show and the eternal verity are brought together in it. In the face of
 the earthly truth, the eternal truth is accomplished. The Creator, just
@@ -13226,7 +13228,7 @@ his dream and said, “This place is holy”—and he will impress the devout
 mind of the peasant. Let him read, especially to the children, how the
 brothers sold Joseph, the tender boy, the dreamer and prophet, into
 bondage, and told their father that a wild beast had devoured him, and
-showed him his blood‐ stained clothes. Let him read them how the
+showed him his blood-stained clothes. Let him read them how the
 brothers afterwards journeyed into Egypt for corn, and Joseph, already
 a great ruler, unrecognized by them, tormented them, accused them, kept
 his brother Benjamin, and all through love: “I love you, and loving you
@@ -13265,11 +13267,11 @@ life of Alexey, the man of God and, greatest of all, the happy martyr
 and the seer of God, Mary of Egypt—and you will penetrate their hearts
 with these simple tales. Give one hour a week to it in spite of your
 poverty, only one little hour. And you will see for yourselves that our
-people is gracious and grateful, and will repay you a hundred‐fold.
+people is gracious and grateful, and will repay you a hundred-fold.
 Mindful of the kindness of their priest and the moving words they have
 heard from him, they will of their own accord help him in his fields
 and in his house, and will treat him with more respect than before—so
-that it will even increase his worldly well‐being too. The thing is so
+that it will even increase his worldly well-being too. The thing is so
 simple that sometimes one is even afraid to put it into words, for fear
 of being laughed at, and yet how true it is! One who does not believe
 in God will not believe in God’s people. He who believes in God’s
@@ -13285,7 +13287,7 @@ Word and for all that is good.
 In my youth, long ago, nearly forty years ago, I traveled all over
 Russia with Father Anfim, collecting funds for our monastery, and we
 stayed one night on the bank of a great navigable river with some
-fishermen. A good‐ looking peasant lad, about eighteen, joined us; he
+fishermen. A good-looking peasant lad, about eighteen, joined us; he
 had to hurry back next morning to pull a merchant’s barge along the
 bank. I noticed him looking straight before him with clear and tender
 eyes. It was a bright, warm, still, July night, a cool mist rose from
@@ -13297,7 +13299,7 @@ grass, every insect, ant, and golden bee, all so marvelously know their
 path, though they have not intelligence, they bear witness to the
 mystery of God and continually accomplish it themselves. I saw the dear
 lad’s heart was moved. He told me that he loved the forest and the
-forest birds. He was a bird‐catcher, knew the note of each of them,
+forest birds. He was a bird-catcher, knew the note of each of them,
 could call each bird. “I know nothing better than to be in the forest,”
 said he, “though all things are good.”
 
@@ -13370,7 +13372,7 @@ circumstance happened which was the beginning of it all.
 
 I formed an attachment to a beautiful and intelligent young girl of
 noble and lofty character, the daughter of people much respected. They
-were well‐to‐do people of influence and position. They always gave me a
+were well-to-do people of influence and position. They always gave me a
 cordial and friendly reception. I fancied that the young lady looked on
 me with favor and my heart was aflame at such an idea. Later on I saw
 and fully realized that I perhaps was not so passionately in love with
@@ -13398,7 +13400,7 @@ been on the point of declaring my love to her, and as she had not
 attempted to stop me or to warn me, she must, I concluded, have been
 laughing at me all the time. Later on, of course, I reflected and
 remembered that she had been very far from laughing at me; on the
-contrary, she used to turn off any love‐making on my part with a jest
+contrary, she used to turn off any love-making on my part with a jest
 and begin talking of other subjects; but at that moment I was incapable
 of reflecting and was all eagerness for revenge. I am surprised to
 remember that my wrath and revengeful feelings were extremely repugnant
@@ -13426,7 +13428,7 @@ be.
 
 It was the end of June, and our meeting was to take place at seven
 o’clock the next day on the outskirts of the town—and then something
-happened that in very truth was the turning‐point of my life. In the
+happened that in very truth was the turning-point of my life. In the
 evening, returning home in a savage and brutal humor, I flew into a
 rage with my orderly Afanasy, and gave him two blows in the face with
 all my might, so that it was covered with blood. He had not long been
@@ -13454,7 +13456,7 @@ dagger had pierced me right through. I stood as if I were struck dumb,
 while the sun was shining, the leaves were rejoicing and the birds were
 trilling the praise of God.... I hid my face in my hands, fell on my
 bed and broke into a storm of tears. And then I remembered my brother
-Markel and what he said on his death‐bed to his servants: “My dear
+Markel and what he said on his death-bed to his servants: “My dear
 ones, why do you wait on me, why do you love me, am I worth your
 waiting on me?”
 
@@ -13535,9 +13537,9 @@ I had no sooner said this than they all three shouted at me.
 “Upon my word,” cried my adversary, annoyed, “if you did not want to
 fight, why did not you let me alone?”
 
-“Yesterday I was a fool, to‐day I know better,” I answered him gayly.
+“Yesterday I was a fool, to-day I know better,” I answered him gayly.
 
-“As to yesterday, I believe you, but as for to‐day, it is difficult to
+“As to yesterday, I believe you, but as for to-day, it is difficult to
 agree with your opinion,” said he.
 
 “Bravo,” I cried, clapping my hands. “I agree with you there too. I
@@ -13663,7 +13665,7 @@ you for your action then.”
 
 Her husband, too, came up and then they all approached me and almost
 kissed me. My heart was filled with joy, but my attention was
-especially caught by a middle‐aged man who came up to me with the
+especially caught by a middle-aged man who came up to me with the
 others. I knew him by name already, but had never made his acquaintance
 nor exchanged a word with him till that evening.
 
@@ -13754,7 +13756,7 @@ I listened to him and thought that he evidently wanted to tell me
 something.
 
 “Heaven,” he went on, “lies hidden within all of us—here it lies hidden
-in me now, and if I will it, it will be revealed to me to‐morrow and
+in me now, and if I will it, it will be revealed to me to-morrow and
 for all time.”
 
 I looked at him; he was speaking with great emotion and gazing
@@ -13790,14 +13792,14 @@ has not fully developed, it has not reached its limit yet. For every
 one strives to keep his individuality as apart as possible, wishes to
 secure the greatest possible fullness of life for himself; but meantime
 all his efforts result not in attaining fullness of life but
-self‐destruction, for instead of self‐realization he ends by arriving
+self-destruction, for instead of self-realization he ends by arriving
 at complete solitude. All mankind in our age have split up into units,
 they all keep apart, each in his own groove; each one holds aloof,
 hides himself and hides what he has, from the rest, and he ends by
 being repelled by others and repelling them. He heaps up riches by
 himself and thinks, ‘How strong I am now and how secure,’ and in his
 madness he does not understand that the more he heaps up, the more he
-sinks into self‐destructive impotence. For he is accustomed to rely
+sinks into self-destructive impotence. For he is accustomed to rely
 upon himself alone and to cut himself off from the whole; he has
 trained himself not to believe in the help of others, in men and in
 humanity, and only trembles for fear he should lose his money and the
@@ -13817,7 +13819,7 @@ them to some act of brotherly love, that the great idea may not die.”
 Our evenings, one after another, were spent in such stirring and
 fervent talk. I gave up society and visited my neighbors much less
 frequently. Besides, my vogue was somewhat over. I say this, not as
-blame, for they still loved me and treated me good‐humoredly, but
+blame, for they still loved me and treated me good-humoredly, but
 there’s no denying that fashion is a great power in society. I began to
 regard my mysterious visitor with admiration, for besides enjoying his
 intelligence, I began to perceive that he was brooding over some plan
@@ -13880,9 +13882,9 @@ knowing that the door at the bottom of it was sometimes, through the
 negligence of the servants, left unlocked. He hoped to find it so, and
 so it was. He made his way in the dark to her bedroom, where a light
 was burning. As though on purpose, both her maids had gone off to a
-birthday‐party in the same street, without asking leave. The other
+birthday-party in the same street, without asking leave. The other
 servants slept in the servants’ quarters or in the kitchen on the
-ground‐floor. His passion flamed up at the sight of her asleep, and
+ground-floor. His passion flamed up at the sight of her asleep, and
 then vindictive, jealous anger took possession of his heart, and like a
 drunken man, beside himself, he thrust a knife into her heart, so that
 she did not even cry out. Then with devilish and criminal cunning he
@@ -13912,7 +13914,7 @@ town. The day after the murder, he was found on the road leading out of
 the town, dead drunk, with a knife in his pocket, and his right hand
 happened to be stained with blood. He declared that his nose had been
 bleeding, but no one believed him. The maids confessed that they had
-gone to a party and that the street‐door had been left open till they
+gone to a party and that the street-door had been left open till they
 returned. And a number of similar details came to light, throwing
 suspicion on the innocent servant.
 
@@ -14059,7 +14061,7 @@ of tears. I could not sleep at night.
 
 “I have just come from my wife,” he went on. “Do you understand what
 the word ‘wife’ means? When I went out, the children called to me,
-‘Good‐by, father, make haste back to read _The Children’s Magazine_
+‘Good-by, father, make haste back to read _The Children’s Magazine_
 with us.’ No, you don’t understand that! No one is wise from another
 man’s woe.”
 
@@ -14113,10 +14115,10 @@ Epistle to the Hebrews, chapter x. verse 31. He read:
 He read it and simply flung down the book. He was trembling all over.
 
 “An awful text,” he said. “There’s no denying you’ve picked out fitting
-ones.” He rose from the chair. “Well!” he said, “good‐by, perhaps I
+ones.” He rose from the chair. “Well!” he said, “good-by, perhaps I
 shan’t come again ... we shall meet in heaven. So I have been for
 fourteen years ‘in the hands of the living God,’ that’s how one must
-think of those fourteen years. To‐morrow I will beseech those hands to
+think of those fourteen years. To-morrow I will beseech those hands to
 let me go.”
 
 I wanted to take him in my arms and kiss him, but I did not dare—his
@@ -14147,7 +14149,7 @@ remember it!”
 
 And he went out.
 
-“To‐morrow,” I thought.
+“To-morrow,” I thought.
 
 And so it was. I did not know that evening that the next day was his
 birthday. I had not been out for the last few days, so I had no chance
@@ -14204,7 +14206,7 @@ rejoiced at heart, for I saw plainly God’s mercy to the man who had
 turned against himself and punished himself. I could not believe in his
 insanity.
 
-They let me see him at last, he insisted upon saying good‐by to me. I
+They let me see him at last, he insisted upon saying good-by to me. I
 went in to him and saw at once, that not only his days, but his hours
 were numbered. He was weak, yellow, his hands trembled, he gasped for
 breath, but his face was full of tender and happy feeling.
@@ -14236,7 +14238,7 @@ I started.
 “I went out from you then into the darkness, I wandered about the
 streets, struggling with myself. And suddenly I hated you so that I
 could hardly bear it. Now, I thought, he is all that binds me, and he
-is my judge. I can’t refuse to face my punishment to‐morrow, for he
+is my judge. I can’t refuse to face my punishment to-morrow, for he
 knows all. It was not that I was afraid you would betray me (I never
 even thought of that), but I thought, ‘How can I look him in the face
 if I don’t confess?’ And if you had been at the other end of the earth,
@@ -14298,7 +14300,7 @@ sense. The spiritual world, the higher part of man’s being is rejected
 altogether, dismissed with a sort of triumph, even with hatred. The
 world has proclaimed the reign of freedom, especially of late, but what
 do we see in this freedom of theirs? Nothing but slavery and
-self‐destruction! For the world says:
+self-destruction! For the world says:
 
 “You have desires and so satisfy them, for you have the same rights as
 the most rich and powerful. Don’t be afraid of satisfying them and even
@@ -14372,7 +14374,7 @@ to be Brothers in the Spirit_
 Of course, I don’t deny that there is sin in the peasants too. And the
 fire of corruption is spreading visibly, hourly, working from above
 downwards. The spirit of isolation is coming upon the people too.
-Money‐ lenders and devourers of the commune are rising up. Already the
+Money-lenders and devourers of the commune are rising up. Already the
 merchant grows more and more eager for rank, and strives to show
 himself cultured though he has not a trace of culture, and to this end
 meanly despises his old traditions, and is even ashamed of the faith of
@@ -14407,7 +14409,7 @@ Fathers and teachers, watch over the people’s faith and this will not
 be a dream. I’ve been struck all my life in our great people by their
 dignity, their true and seemly dignity. I’ve seen it myself, I can
 testify to it, I’ve seen it and marveled at it, I’ve seen it in spite
-of the degraded sins and poverty‐stricken appearance of our peasantry.
+of the degraded sins and poverty-stricken appearance of our peasantry.
 They are not servile, and even after two centuries of serfdom they are
 free in manner and bearing, yet without insolence, and not revengeful
 and not envious. “You are rich and noble, you are clever and talented,
@@ -14436,13 +14438,13 @@ diamond to the whole world. So may it be, so may it be!
 Fathers and teachers, a touching incident befell me once. In my
 wanderings I met in the town of K. my old orderly, Afanasy. It was
 eight years since I had parted from him. He chanced to see me in the
-market‐place, recognized me, ran up to me, and how delighted he was! He
+market-place, recognized me, ran up to me, and how delighted he was! He
 simply pounced on me: “Master dear, is it you? Is it really you I see?”
 He took me home with him.
 
 He was no longer in the army, he was married and already had two little
 children. He and his wife earned their living as costermongers in the
-market‐place. His room was poor, but bright and clean. He made me sit
+market-place. His room was poor, but bright and clean. He made me sit
 down, set the samovar, sent for his wife, as though my appearance were
 a festival for them. He brought me his children: “Bless them, Father.”
 
@@ -14463,12 +14465,12 @@ tenderly.
 
 “I gave it to the monastery,” I answered; “we live in common.”
 
-After tea I began saying good‐by, and suddenly he brought out half a
-rouble as an offering to the monastery, and another half‐rouble I saw
+After tea I began saying good-by, and suddenly he brought out half a
+rouble as an offering to the monastery, and another half-rouble I saw
 him thrusting hurriedly into my hand: “That’s for you in your
 wanderings, it may be of use to you, Father.”
 
-I took his half‐rouble, bowed to him and his wife, and went out
+I took his half-rouble, bowed to him and his wife, and went out
 rejoicing. And on my way I thought: “Here we are both now, he at home
 and I on the road, sighing and shaking our heads, no doubt, and yet
 smiling joyfully in the gladness of our hearts, remembering how God
@@ -14478,7 +14480,7 @@ I have never seen him again since then. I had been his master and he my
 servant, but now when we exchanged a loving kiss with softened hearts,
 there was a great human bond between us. I have thought a great deal
 about that, and now what I think is this: Is it so inconceivable that
-that grand and simple‐hearted unity might in due time become universal
+that grand and simple-hearted unity might in due time become universal
 among the Russian people? I believe that it will come to pass and that
 the time is at hand.
 
@@ -14488,7 +14490,7 @@ orderly had not brushed my clothes.” But what taught me better then was
 a thought of my dear brother’s, which I had heard from him in
 childhood: “Am I worth it, that another should serve me and be ordered
 about by me in his poverty and ignorance?” And I wondered at the time
-that such simple and self‐ evident ideas should be so slow to occur to
+that such simple and self-evident ideas should be so slow to occur to
 our minds.
 
 It is impossible that there should be no servants in the world, but act
@@ -14513,12 +14515,12 @@ history of man which were unthinkable ten years before they appeared!
 Yet when their destined hour had come, they came forth and spread over
 the whole earth. So it will be with us, and our people will shine forth
 in the world, and all men will say: “The stone which the builders
-rejected has become the corner‐stone of the building.”
+rejected has become the corner-stone of the building.”
 
 And we may ask the scornful themselves: If our hope is a dream, when
 will you build up your edifice and order things justly by your
 intellect alone, without Christ? If they declare that it is they who
-are advancing towards unity, only the most simple‐hearted among them
+are advancing towards unity, only the most simple-hearted among them
 believe it, so that one may positively marvel at such simplicity. Of a
 truth, they have more fantastic dreams than we. They aim at justice,
 but, denying Christ, they will end by flooding the earth with blood,
@@ -14543,7 +14545,7 @@ Young man, be not forgetful of prayer. Every time you pray, if your
 prayer is sincere, there will be new feeling and new meaning in it,
 which will give you fresh courage, and you will understand that prayer
 is an education. Remember, too, every day, and whenever you can, repeat
-to yourself, “Lord, have mercy on all who appear before Thee to‐day.”
+to yourself, “Lord, have mercy on all who appear before Thee to-day.”
 For every hour and every moment thousands of men leave life on this
 earth, and their souls appear before God. And how many of them depart
 in solitude, unknown, sad, dejected that no one mourns for them or even
@@ -14564,7 +14566,7 @@ every leaf, every ray of God’s light. Love the animals, love the
 plants, love everything. If you love everything, you will perceive the
 divine mystery in things. Once you perceive it, you will begin to
 comprehend it better every day. And you will come at last to love the
-whole world with an all‐ embracing love. Love the animals: God has
+whole world with an all-embracing love. Love the animals: God has
 given them the rudiments of thought and joy untroubled. Do not trouble
 it, don’t harass them, don’t deprive them of their happiness, don’t
 work against God’s intent. Man, do not pride yourself on superiority to
@@ -14604,7 +14606,7 @@ may be senseless to beg forgiveness of the birds, but birds would be
 happier at your side—a little happier, anyway—and children and all
 animals, if you were nobler than you are now. It’s all like an ocean, I
 tell you. Then you would pray to the birds too, consumed by an
-all‐embracing love, in a sort of transport, and pray that they too will
+all-embracing love, in a sort of transport, and pray that they too will
 forgive you your sin. Treasure this ecstasy, however senseless it may
 seem to men.
 
@@ -14626,7 +14628,7 @@ Of the pride of Satan what I think is this: it is hard for us on earth
 to comprehend it, and therefore it is so easy to fall into error and to
 share it, even imagining that we are doing something grand and fine.
 Indeed, many of the strongest feelings and movements of our nature we
-cannot comprehend on earth. Let not that be a stumbling‐block, and
+cannot comprehend on earth. Let not that be a stumbling-block, and
 think not that it may serve as a justification to you for anything. For
 the Eternal Judge asks of you what you can comprehend and not what you
 cannot. You will know that yourself hereafter, for you will behold all
@@ -14661,7 +14663,7 @@ yourself, and let him go without reproach. And even if the law itself
 makes you his judge, act in the same spirit so far as possible, for he
 will go away and condemn himself more bitterly than you have done. If,
 after your kiss, he goes away untouched, mocking at you, do not let
-that be a stumbling‐block to you. It shows his time has not yet come,
+that be a stumbling-block to you. It shows his time has not yet come,
 but it will come in due course. And if it come not, no matter; if not
 he, then another in his place will understand and suffer, and judge and
 condemn himself, and the truth will be fulfilled. Believe that, believe
@@ -14689,15 +14691,15 @@ your sudden sin, then rejoice for others, rejoice for the righteous
 man, rejoice that if you have sinned, he is righteous and has not
 sinned.
 
-If the evil‐doing of men moves you to indignation and overwhelming
-distress, even to a desire for vengeance on the evil‐doers, shun above
+If the evil-doing of men moves you to indignation and overwhelming
+distress, even to a desire for vengeance on the evil-doers, shun above
 all things that feeling. Go at once and seek suffering for yourself, as
 though you were yourself guilty of that wrong. Accept that suffering
 and bear it and your heart will find comfort, and you will understand
 that you too are guilty, for you might have been a light to the
-evil‐doers, even as the one man sinless, and you were not a light to
+evil-doers, even as the one man sinless, and you were not a light to
 them. If you had been a light, you would have lightened the path for
-others too, and the evil‐doer might perhaps have been saved by your
+others too, and the evil-doer might perhaps have been saved by your
 light from his sin. And even though your light was shining, yet you see
 men were not saved by it, hold firm and doubt not the power of the
 heavenly light. Believe that if they were not saved, they will be saved
@@ -14836,7 +14838,7 @@ breast, on the hands and feet and on the knees, and that is enough.”
 All this was done by Father Païssy, who then clothed the deceased in
 his monastic garb and wrapped him in his cloak, which was, according to
 custom, somewhat slit to allow of its being folded about him in the
-form of a cross. On his head he put a hood with an eight‐cornered
+form of a cross. On his head he put a hood with an eight-cornered
 cross. The hood was left open and the dead man’s face was covered with
 black gauze. In his hands was put an ikon of the Saviour. Towards
 morning he was put in the coffin which had been made ready long before.
@@ -14848,7 +14850,7 @@ orders. The reading was begun by Father Iosif immediately after the
 requiem service. Father Païssy desired later on to read the Gospel all
 day and night over his dead friend, but for the present he, as well as
 the Father Superintendent of the Hermitage, was very busy and occupied,
-for something extraordinary, an unheard‐of, even “unseemly” excitement
+for something extraordinary, an unheard-of, even “unseemly” excitement
 and impatient expectation began to be apparent in the monks, and the
 visitors from the monastery hostels, and the crowds of people flocking
 from the town. And as time went on, this grew more and more marked.
@@ -14877,7 +14879,7 @@ But little attention was paid him and Father Païssy noticed it
 uneasily. Yet he himself (if the whole truth must be told), secretly at
 the bottom of his heart, cherished almost the same hopes and could not
 but be aware of it, though he was indignant at the too impatient
-expectation around him, and saw in it light‐mindedness and vanity.
+expectation around him, and saw in it light-mindedness and vanity.
 Nevertheless, it was particularly unpleasant to him to meet certain
 persons, whose presence aroused in him great misgivings. In the crowd
 in the dead man’s cell he noticed with inward aversion (for which he
@@ -14894,11 +14896,11 @@ impatience and even a sort of irritation.
 
 As for Rakitin, he, as appeared later, had come so early to the
 hermitage at the special request of Madame Hohlakov. As soon as that
-good‐hearted but weak‐minded woman, who could not herself have been
+good-hearted but weak-minded woman, who could not herself have been
 admitted to the hermitage, waked and heard of the death of Father
 Zossima, she was overtaken with such intense curiosity that she
 promptly dispatched Rakitin to the hermitage, to keep a careful look
-out and report to her by letter every half‐hour or so “_everything that
+out and report to her by letter every half-hour or so “_everything that
 takes place_.” She regarded Rakitin as a most religious and devout
 young man. He was particularly clever in getting round people and
 assuming whatever part he thought most to their taste, if he detected
@@ -14942,12 +14944,12 @@ all of us and so contrary to the general hope, that, I repeat, this
 trivial incident has been minutely remembered to this day in our town
 and all the surrounding neighborhood. I may add here, for myself
 personally, that I feel it almost repulsive to recall that event which
-caused such frivolous agitation and was such a stumbling‐block to many,
+caused such frivolous agitation and was such a stumbling-block to many,
 though in reality it was the most natural and trivial matter. I should,
 of course, have omitted all mention of it in my story, if it had not
 exerted a very strong influence on the heart and soul of the chief,
 though future, hero of my story, Alyosha, forming a crisis and
-turning‐point in his spiritual development, giving a shock to his
+turning-point in his spiritual development, giving a shock to his
 intellect, which finally strengthened it for the rest of his life and
 gave it a definite aim.
 
@@ -14983,7 +14985,7 @@ immediately after this discovery among the very monks themselves.
 Afterwards, even many years afterwards, some sensible monks were amazed
 and horrified, when they recalled that day, that the scandal could have
 reached such proportions. For in the past, monks of very holy life had
-died, God‐fearing old men, whose saintliness was acknowledged by all,
+died, God-fearing old men, whose saintliness was acknowledged by all,
 yet from their humble coffins, too, the breath of corruption had come,
 naturally, as from all dead bodies, but that had caused no scandal nor
 even the slightest excitement. Of course there had been, in former
@@ -15013,7 +15015,7 @@ Yet, in spite of these edifying memories, it would be difficult to
 explain the frivolity, absurdity and malice that were manifested beside
 the coffin of Father Zossima. It is my private opinion that several
 different causes were simultaneously at work, one of which was the
-deeply‐rooted hostility to the institution of elders as a pernicious
+deeply-rooted hostility to the institution of elders as a pernicious
 innovation, an antipathy hidden deep in the hearts of many of the
 monks. Even more powerful was jealousy of the dead man’s saintliness,
 so firmly established during his lifetime that it was almost a
@@ -15072,7 +15074,7 @@ dried up on his bones, what was there to decay?”
 opinion was adopted at once without protest. For it was pointed out,
 too, that if the decomposition had been natural, as in the case of
 every dead sinner, it would have been apparent later, after a lapse of
-at least twenty‐four hours, but this premature corruption “was in
+at least twenty-four hours, but this premature corruption “was in
 excess of nature,” and so the finger of God was evident. It was meant
 for a sign. This conclusion seemed irresistible.
 
@@ -15154,7 +15156,7 @@ Zossima. And now the news had reached him in his hut that “God’s
 judgment is not the same as man’s,” and that something had happened
 which was “in excess of nature.” It may well be supposed that among the
 first to run to him with the news was the monk from Obdorsk, who had
-visited him the evening before and left his cell terror‐stricken.
+visited him the evening before and left his cell terror-stricken.
 
 I have mentioned above, that though Father Païssy, standing firm and
 immovable reading the Gospel over the coffin, could not hear nor see
@@ -15209,7 +15211,7 @@ have been away. I want to sweep them out with a birch broom.”
 yourself,” Father Païssy went on fearlessly. “And who can say of
 himself ‘I am holy’? Can you, Father?”
 
-“I am unclean, not holy. I would not sit in an arm‐chair and would not
+“I am unclean, not holy. I would not sit in an arm-chair and would not
 have them bow down to me as an idol,” thundered Father Ferapont.
 “Nowadays folk destroy the true faith. The dead man, your saint,” he
 turned to the crowd, pointing with his finger to the coffin, “did not
@@ -15253,10 +15255,10 @@ from your subtlety.”
 
 Father Païssy stood over him, waiting resolutely. Father Ferapont
 paused and, suddenly leaning his cheek on his hand despondently,
-pronounced in a sing‐song voice, looking at the coffin of the dead
+pronounced in a sing-song voice, looking at the coffin of the dead
 elder:
 
-“To‐morrow they will sing over him ‘Our Helper and Defender’—a splendid
+“To-morrow they will sing over him ‘Our Helper and Defender’—a splendid
 anthem—and over me when I die all they’ll sing will be ‘What earthly
 joy’—a little canticle,”[6] he added with tearful regret. “You are
 proud and puffed up, this is a vain place!” he shouted suddenly like a
@@ -15461,13 +15463,13 @@ one side of him.
 
 “Do you know your face is quite changed? There’s none of your famous
 mildness to be seen in it. Are you angry with some one? Have they been
-ill‐treating you?”
+ill-treating you?”
 
 “Let me alone,” said Alyosha suddenly, with a weary gesture of his
 hand, still looking away from him.
 
 “Oho! So that’s how we are feeling! So you can shout at people like
-other mortals. That is a come‐down from the angels. I say, Alyosha, you
+other mortals. That is a come-down from the angels. I say, Alyosha, you
 have surprised me, do you hear? I mean it. It’s long since I’ve been
 surprised at anything here. I always took you for an educated man....”
 
@@ -15489,8 +15491,8 @@ hasn’t bestowed the order of merit! Eh, you are a set!”
 Alyosha gazed a long while with his eyes half closed at Rakitin, and
 there was a sudden gleam in his eyes ... but not of anger with Rakitin.
 
-“I am not rebelling against my God; I simply ‘don’t accept His world.’
-” Alyosha suddenly smiled a forced smile.
+“I am not rebelling against my God; I simply ‘don’t accept His world.’”
+Alyosha suddenly smiled a forced smile.
 
 “How do you mean, you don’t accept the world?” Rakitin thought a moment
 over his answer. “What idiocy is this?”
@@ -15498,7 +15500,7 @@ over his answer. “What idiocy is this?”
 Alyosha did not answer.
 
 “Come, enough nonsense, now to business. Have you had anything to eat
-to‐ day?”
+to-day?”
 
 “I don’t remember.... I think I have.”
 
@@ -15631,7 +15633,7 @@ positive fact, for there had been a good many, especially during the
 last two years, who had attempted to obtain those favors. But all their
 efforts had been in vain and some of these suitors had been forced to
 beat an undignified and even comic retreat, owing to the firm and
-ironical resistance they met from the strong‐willed young person. It
+ironical resistance they met from the strong-willed young person. It
 was known, too, that the young person had, especially of late, been
 given to what is called “speculation,” and that she had shown marked
 abilities in that direction, so that many people began to say that she
@@ -15642,7 +15644,7 @@ bad debts for a trifle, a tenth of their nominal value, and afterwards
 had made out of them ten times their value.
 
 The old widower Samsonov, a man of large fortune, was stingy and
-merciless. He tyrannized over his grown‐up sons, but, for the last year
+merciless. He tyrannized over his grown-up sons, but, for the last year
 during which he had been ill and lost the use of his swollen legs, he
 had fallen greatly under the influence of his protégée, whom he had at
 first kept strictly and in humble surroundings, “on Lenten fare,” as
@@ -15702,7 +15704,7 @@ with mahogany furniture in the fashion of 1820, belonging to her
 landlady.
 
 It was quite dark when Rakitin and Alyosha entered her rooms, yet they
-were not lighted up. Grushenka was lying down in her drawing‐room on
+were not lighted up. Grushenka was lying down in her drawing-room on
 the big, hard, clumsy sofa, with a mahogany back. The sofa was covered
 with shabby and ragged leather. Under her head she had two white down
 pillows taken from her bed. She was lying stretched out motionless on
@@ -15720,7 +15722,7 @@ maid met the visitors and at once called back to her mistress.
 “It’s not he, it’s nothing, only other visitors.”
 
 “What can be the matter?” muttered Rakitin, leading Alyosha into the
-drawing‐room.
+drawing-room.
 
 Grushenka was standing by the sofa as though still alarmed. A thick
 coil of her dark brown hair escaped from its lace covering and fell on
@@ -15731,12 +15733,12 @@ till she had gazed at her visitors and recognized them.
 Who is this with you? Good heavens, you have brought him!” she
 exclaimed, recognizing Alyosha.
 
-“Do send for candles!” said Rakitin, with the free‐and‐easy air of a
+“Do send for candles!” said Rakitin, with the free-and-easy air of a
 most intimate friend, who is privileged to give orders in the house.
 
 “Candles ... of course, candles.... Fenya, fetch him a candle.... Well,
 you have chosen a moment to bring him!” she exclaimed again, nodding
-towards Alyosha, and turning to the looking‐glass she began quickly
+towards Alyosha, and turning to the looking-glass she began quickly
 fastening up her hair with both hands. She seemed displeased.
 
 “Haven’t I managed to please you?” asked Rakitin, instantly almost
@@ -15764,12 +15766,12 @@ myself.”
 
 “Are the shutters fastened, Fenya? And we must draw the curtains—that’s
 better!” She drew the heavy curtains herself. “He’d rush in at once if
-he saw a light. I am afraid of your brother Mitya to‐day, Alyosha.”
+he saw a light. I am afraid of your brother Mitya to-day, Alyosha.”
 
 Grushenka spoke aloud, and, though she was alarmed, she seemed very
 happy about something.
 
-“Why are you so afraid of Mitya to‐day?” inquired Rakitin. “I should
+“Why are you so afraid of Mitya to-day?” inquired Rakitin. “I should
 have thought you were not timid with him, you’d twist him round your
 little finger.”
 
@@ -15817,7 +15819,7 @@ not the day before yesterday.”
 
 She gayly sat down beside Alyosha on the sofa, looking at him with
 positive delight. And she really was glad, she was not lying when she
-said so. Her eyes glowed, her lips laughed, but it was a good‐hearted
+said so. Her eyes glowed, her lips laughed, but it was a good-hearted
 merry laugh. Alyosha had not expected to see such a kind expression in
 her face.... He had hardly met her till the day before, he had formed
 an alarming idea of her, and had been horribly distressed the day
@@ -15827,10 +15829,10 @@ from what he had expected. And, crushed as he was by his own sorrow,
 his eyes involuntarily rested on her with attention. Her whole manner
 seemed changed for the better since yesterday, there was scarcely any
 trace of that mawkish sweetness in her speech, of that voluptuous
-softness in her movements. Everything was simple and good‐natured, her
+softness in her movements. Everything was simple and good-natured, her
 gestures were rapid, direct, confiding, but she was greatly excited.
 
-“Dear me, how everything comes together to‐day!” she chattered on
+“Dear me, how everything comes together to-day!” she chattered on
 again. “And why I am so glad to see you, Alyosha, I couldn’t say
 myself! If you ask me, I couldn’t tell you.”
 
@@ -15839,14 +15841,14 @@ used to be always pestering me to bring him, you’d some object, I
 suppose.”
 
 “I had a different object once, but now that’s over, this is not the
-moment. I say, I want you to have something nice. I am so good‐natured
+moment. I say, I want you to have something nice. I am so good-natured
 now. You sit down, too, Rakitin; why are you standing? You’ve sat down
 already? There’s no fear of Rakitin’s forgetting to look after himself.
 Look, Alyosha, he’s sitting there opposite us, so offended that I
 didn’t ask him to sit down before you. Ugh, Rakitin is such a one to
 take offense!” laughed Grushenka. “Don’t be angry, Rakitin, I’m kind
-to‐day. Why are you so depressed, Alyosha? Are you afraid of me?” She
-peeped into his eyes with merry mockery”
+to-day. Why are you so depressed, Alyosha? Are you afraid of me?” She
+peeped into his eyes with merry mockery.
 
 “He’s sad. The promotion has not been given,” boomed Rakitin.
 
@@ -15902,7 +15904,7 @@ round his neck. “My officer is coming, Rakitin, my officer is coming.”
 “I heard he was coming, but is he so near?”
 
 “He is at Mokroe now; he’ll send a messenger from there, so he wrote; I
-got a letter from him to‐day. I am expecting the messenger every
+got a letter from him to-day. I am expecting the messenger every
 minute.”
 
 “You don’t say so! Why at Mokroe?”
@@ -15994,7 +15996,7 @@ sausage....”
 
 “How so?”
 
-“His elder died to‐day, Father Zossima, the saint.”
+“His elder died to-day, Father Zossima, the saint.”
 
 “So Father Zossima is dead,” cried Grushenka. “Good God, I did not
 know!” She crossed herself devoutly. “Goodness, what have I been doing,
@@ -16076,10 +16078,10 @@ that’s the only good deed I’ve done.’ So don’t praise me, Alyosha,
 don’t think me good, I am bad, I am a wicked woman and you make me
 ashamed if you praise me. Eh, I must confess everything. Listen,
 Alyosha. I was so anxious to get hold of you that I promised Rakitin
-twenty‐five roubles if he would bring you to me. Stay, Rakitin, wait!”
+twenty-five roubles if he would bring you to me. Stay, Rakitin, wait!”
 
 She went with rapid steps to the table, opened a drawer, pulled out a
-purse and took from it a twenty‐five rouble note.
+purse and took from it a twenty-five rouble note.
 
 “What nonsense! What nonsense!” cried Rakitin, disconcerted.
 
@@ -16094,8 +16096,8 @@ handy; fools are made for wise men’s profit.”
 for your ears. Sit down in that corner and keep quiet. You don’t like
 us, so hold your tongue.”
 
-“What should I like you for?” Rakitin snarled, not concealing his ill‐
-humor. He put the twenty‐five rouble note in his pocket and he felt
+“What should I like you for?” Rakitin snarled, not concealing his
+ill-humor. He put the twenty-five rouble note in his pocket and he felt
 ashamed at Alyosha’s seeing it. He had reckoned on receiving his
 payment later, without Alyosha’s knowing of it, and now, feeling
 ashamed, he lost his temper. Till that moment he had thought it
@@ -16123,7 +16125,7 @@ the holy truth; I quite meant to. I wanted to so much, that I bribed
 Rakitin to bring you. And why did I want to do such a thing? You knew
 nothing about it, Alyosha, you turned away from me; if you passed me,
 you dropped your eyes. And I’ve looked at you a hundred times before
-to‐day; I began asking every one about you. Your face haunted my heart.
+to-day; I began asking every one about you. Your face haunted my heart.
 ‘He despises me,’ I thought; ‘he won’t even look at me.’ And I felt it
 so much at last that I wondered at myself for being so frightened of a
 boy. I’ll get him in my clutches and laugh at him. I was full of spite
@@ -16149,7 +16151,7 @@ then, or perhaps had utterly forgotten me, I would fling myself on the
 floor, melt into helpless tears, and lie there shaking till dawn. In
 the morning I would get up more spiteful than a dog, ready to tear the
 whole world to pieces. And then what do you think? I began saving
-money, I became hard‐hearted, grew stout—grew wiser, would you say? No,
+money, I became hard-hearted, grew stout—grew wiser, would you say? No,
 no one in the whole world sees it, no one knows it, but when night
 comes on, I sometimes lie as I did five years ago, when I was a silly
 girl, clenching my teeth and crying all night, thinking, ‘I’ll pay him
@@ -16168,7 +16170,7 @@ future life, and you can never know what was in my heart. Yes, Alyosha,
 tell your young lady not to be angry with me for what happened the day
 before yesterday.... Nobody in the whole world knows what I am going
 through now, and no one ever can know.... For perhaps I shall take a
-knife with me to‐day, I can’t make up my mind ...”
+knife with me to-day, I can’t make up my mind ...”
 
 And at this “tragic” phrase Grushenka broke down, hid her face in her
 hands, flung herself on the sofa pillows, and sobbed like a little
@@ -16208,7 +16210,7 @@ shall know.... This soul is not yet at peace with itself, one must be
 tender with it ... there may be a treasure in that soul....”
 
 Alyosha stopped, because he caught his breath. In spite of his
-ill‐humor Rakitin looked at him with astonishment. He had never
+ill-humor Rakitin looked at him with astonishment. He had never
 expected such a tirade from the gentle Alyosha.
 
 “She’s found some one to plead her cause! Why, are you in love with
@@ -16216,7 +16218,7 @@ her? Agrafena Alexandrovna, our monk’s really in love with you, you’ve
 made a conquest!” he cried, with a coarse laugh.
 
 Grushenka lifted her head from the pillow and looked at Alyosha with a
-tender smile shining on her tear‐stained face.
+tender smile shining on her tear-stained face.
 
 “Let him alone, Alyosha, my cherub; you see what he is, he is not a
 person for you to speak to. Mihail Osipovitch,” she turned to Rakitin,
@@ -16258,7 +16260,7 @@ in my heart! If I choose to tear off my finery, I’ll tear it off at
 once, this minute,” she cried in a resonant voice. “You don’t know what
 that finery is for, Rakitin! Perhaps I shall see him and say: ‘Have you
 ever seen me look like this before?’ He left me a thin, consumptive
-cry‐baby of seventeen. I’ll sit by him, fascinate him and work him up.
+cry-baby of seventeen. I’ll sit by him, fascinate him and work him up.
 ‘Do you see what I am like now?’ I’ll say to him; ‘well, and that’s
 enough for you, my dear sir, there’s many a slip twixt the cup and the
 lip!’ That may be what the finery is for, Rakitin.” Grushenka finished
@@ -16266,7 +16268,7 @@ with a malicious laugh. “I’m violent and resentful, Alyosha, I’ll tear
 off my finery, I’ll destroy my beauty, I’ll scorch my face, slash it
 with a knife, and turn beggar. If I choose, I won’t go anywhere now to
 see any one. If I choose, I’ll send Kuzma back all he has ever given
-me, to‐morrow, and all his money and I’ll go out charing for the rest
+me, to-morrow, and all his money and I’ll go out charing for the rest
 of my life. You think I wouldn’t do it, Rakitin, that I would not dare
 to do it? I would, I would, I could do it directly, only don’t
 exasperate me ... and I’ll send him about his business, I’ll snap my
@@ -16328,7 +16330,7 @@ wan smile; “he whistles! Crawl back, little dog!”
 But only for one instant she stood as though hesitating; suddenly the
 blood rushed to her head and sent a glow to her cheeks.
 
-“I will go,” she cried; “five years of my life! Good‐by! Good‐by,
+“I will go,” she cried; “five years of my life! Good-by! Good-by,
 Alyosha, my fate is sealed. Go, go, leave me all of you, don’t let me
 see you again! Grushenka is flying to a new life.... Don’t you remember
 evil against me either, Rakitin. I may be going to my death! Ugh! I
@@ -16352,7 +16354,7 @@ remember evil against me, though I have brought him misery. And tell
 him, too, in my words: ‘Grushenka has fallen to a scoundrel, and not to
 you, noble heart.’ And add, too, that Grushenka loved him only one
 hour, only one short hour she loved him—so let him remember that hour
-all his life—say, ‘Grushenka tells you to!’ ”
+all his life—say, ‘Grushenka tells you to!’”
 
 She ended in a voice full of sobs. The window was shut with a slam.
 
@@ -16382,7 +16384,7 @@ to pass!”
 
 “Hush, Rakitin,” Alyosha answered with an aching heart.
 
-“So you despise me now for those twenty‐five roubles? I’ve sold my
+“So you despise me now for those twenty-five roubles? I’ve sold my
 friend, you think. But you are not Christ, you know, and I am not
 Judas.”
 
@@ -16404,7 +16406,7 @@ the monastery.
 *Cana Of Galilee*
 
 It was very late, according to the monastery ideas, when Alyosha
-returned to the hermitage; the door‐keeper let him in by a special
+returned to the hermitage; the door-keeper let him in by a special
 entrance. It had struck nine o’clock—the hour of rest and repose after
 a day of such agitation for all. Alyosha timidly opened the door and
 went into the elder’s cell where his coffin was now standing. There was
@@ -16532,7 +16534,7 @@ the feast, he is tasting the new wine. Why do you wonder at me? I gave
 an onion to a beggar, so I, too, am here. And many here have given only
 an onion each—only one little onion.... What are all our deeds? And
 you, my gentle one, you, my kind boy, you too have known how to give a
-famished woman an onion to‐day. Begin your work, dear one, begin it,
+famished woman an onion to-day. Begin your work, dear one, begin it,
 gentle one!... Do you see our Sun, do you see Him?”
 
 “I am afraid ... I dare not look,” whispered Alyosha.
@@ -16671,7 +16673,7 @@ the time. He simply did not believe in a suitor who suddenly turned up
 again after five years’ disappearance, still less in his speedy
 arrival. Moreover, in the “officer’s” first letter which had been shown
 to Mitya, the possibility of his new rival’s visit was very vaguely
-suggested. The letter was very indefinite, high‐flown, and full of
+suggested. The letter was very indefinite, high-flown, and full of
 sentimentality. It must be noted that Grushenka had concealed from him
 the last lines of the letter, in which his return was alluded to more
 definitely. He had, besides, noticed at that moment, he remembered
@@ -16747,7 +16749,7 @@ decided. And so he made up his mind to move heaven and earth to return
 Katerina Ivanovna that three thousand, and that _first of all_. The
 final stage of this decision, so to say, had been reached only during
 the last hours, that is, after his last interview with Alyosha, two
-days before, on the high‐road, on the evening when Grushenka had
+days before, on the high-road, on the evening when Grushenka had
 insulted Katerina Ivanovna, and Mitya, after hearing Alyosha’s account
 of it, had admitted that he was a scoundrel, and told him to tell
 Katerina Ivanovna so, if it could be any comfort to her. After parting
@@ -16804,21 +16806,21 @@ They would forgive one another and would begin their lives afresh. As
 for Kuzma Samsonov, Dmitri looked upon him as a man who had exercised a
 fateful influence in that remote past of Grushenka’s, though she had
 never loved him, and who was now himself a thing of the past,
-completely done with, and, so to say, non‐existent. Besides, Mitya
+completely done with, and, so to say, non-existent. Besides, Mitya
 hardly looked upon him as a man at all, for it was known to every one
 in the town that he was only a shattered wreck, whose relations with
 Grushenka had changed their character and were now simply paternal, and
 that this had been so for a long time.
 
 In any case there was much simplicity on Mitya’s part in all this, for
-in spite of all his vices, he was a very simple‐hearted man. It was an
+in spite of all his vices, he was a very simple-hearted man. It was an
 instance of this simplicity that Mitya was seriously persuaded that,
 being on the eve of his departure for the next world, old Kuzma must
 sincerely repent of his past relations with Grushenka, and that she had
-no more devoted friend and protector in the world than this, now
+no more devoted friend and protector in the world than this now
 harmless old man.
 
-After his conversation with Alyosha, at the cross‐roads, he hardly
+After his conversation with Alyosha, at the cross-roads, he hardly
 slept all night, and at ten o’clock next morning, he was at the house
 of Samsonov and telling the servant to announce him. It was a very
 large and gloomy old house of two stories, with a lodge and outhouses.
@@ -16832,7 +16834,7 @@ obliged at certain fixed hours, and at any time he might call her, to
 run upstairs to him from below.
 
 This upper floor contained a number of large rooms kept purely for
-show, furnished in the old‐fashioned merchant style, with long
+show, furnished in the old-fashioned merchant style, with long
 monotonous rows of clumsy mahogany chairs along the walls, with glass
 chandeliers under shades, and gloomy mirrors on the walls. All these
 rooms were entirely empty and unused, for the old man kept to one room,
@@ -16840,7 +16842,7 @@ a small, remote bedroom, where he was waited upon by an old servant
 with a kerchief on her head, and by a lad, who used to sit on the
 locker in the passage. Owing to his swollen legs, the old man could
 hardly walk at all, and was only rarely lifted from his leather
-arm‐chair, when the old woman supporting him led him up and down the
+arm-chair, when the old woman supporting him led him up and down the
 room once or twice. He was morose and taciturn even with this old
 woman.
 
@@ -16855,17 +16857,17 @@ most important business closely concerning Agrafena Alexandrovna,” and
 sent it up to the old man.
 
 After thinking a little Samsonov told the lad to take the visitor to
-the drawing‐room, and sent the old woman downstairs with a summons to
+the drawing-room, and sent the old woman downstairs with a summons to
 his younger son to come upstairs to him at once. This younger son, a
 man over six foot and of exceptional physical strength, who was
-closely‐shaven and dressed in the European style, though his father
+closely-shaven and dressed in the European style, though his father
 still wore a kaftan and a beard, came at once without a comment. All
 the family trembled before the father. The old man had sent for this
 giant, not because he was afraid of the “captain” (he was by no means
 of a timorous temper), but in order to have a witness in case of any
-emergency. Supported by his son and the servant‐lad, he waddled at last
-into the drawing‐room. It may be assumed that he felt considerable
-curiosity. The drawing‐room in which Mitya was awaiting him was a vast,
+emergency. Supported by his son and the servant-lad, he waddled at last
+into the drawing-room. It may be assumed that he felt considerable
+curiosity. The drawing-room in which Mitya was awaiting him was a vast,
 dreary room that laid a weight of depression on the heart. It had a
 double row of windows, a gallery, marbled walls, and three immense
 chandeliers with glass lusters covered with shades.
@@ -16874,7 +16876,7 @@ Mitya was sitting on a little chair at the entrance, awaiting his fate
 with nervous impatience. When the old man appeared at the opposite
 door, seventy feet away, Mitya jumped up at once, and with his long,
 military stride walked to meet him. Mitya was well dressed, in a
-frock‐coat, buttoned up, with a round hat and black gloves in his
+frock-coat, buttoned up, with a round hat and black gloves in his
 hands, just as he had been three days before at the elder’s, at the
 family meeting with his father and brothers. The old man waited for
 him, standing dignified and unbending, and Mitya felt at once that he
@@ -16927,11 +16929,11 @@ Mitya, from his mother, and so checkmate the old villain, his father
 ... “because every door was not closed and justice might still find a
 loophole.” In fact, he might reckon on an additional sum of six or even
 seven thousand roubles from Fyodor Pavlovitch, as Tchermashnya was
-worth, at least, twenty‐five thousand, he might say twenty‐eight
+worth, at least, twenty-five thousand, he might say twenty-eight
 thousand, in fact, “thirty, thirty, Kuzma Kuzmitch, and would you
 believe it, I didn’t get seventeen from that heartless man!” So he,
 Mitya, had thrown the business up, for the time, knowing nothing about
-the law, but on coming here was struck dumb by a cross‐claim made upon
+the law, but on coming here was struck dumb by a cross-claim made upon
 him (here Mitya went adrift again and again took a flying leap
 forward), “so will not you, excellent and honored Kuzma Kuzmitch, be
 willing to take up all my claims against that unnatural monster, and
@@ -16952,7 +16954,7 @@ certain person, whom you know well, and care for as a father. I would
 not have come, indeed, if it had not been as a father. And, indeed,
 it’s a struggle of three in this business, for it’s fate—that’s a
 fearful thing, Kuzma Kuzmitch! A tragedy, Kuzma Kuzmitch, a tragedy!
-And as you’ve dropped out long ago, it’s a tug‐ of‐war between two. I’m
+And as you’ve dropped out long ago, it’s a tug-of-war between two. I’m
 expressing it awkwardly, perhaps, but I’m not a literary man. You see,
 I’m on the one side, and that monster on the other. So you must choose.
 It’s either I or the monster. It all lies in your hands—the fate of
@@ -17021,7 +17023,7 @@ brought me to you.... So now to this priest!”
 
 “I’ll make haste and fly there. I’m afraid I’ve overtaxed your
 strength. I shall never forget it. It’s a Russian says that, Kuzma
-Kuzmitch, a R‐r‐ russian!”
+Kuzmitch, a R-r-russian!”
 
 “To be sure!”
 
@@ -17053,12 +17055,12 @@ that he had made a fool of the “captain.” He was a cold, spiteful and
 sarcastic man, liable to violent antipathies. Whether it was the
 “captain’s” excited face, or the foolish conviction of the “rake and
 spendthrift,” that he, Samsonov, could be taken in by such a
-cock‐and‐bull story as his scheme, or his jealousy of Grushenka, in
+cock-and-bull story as his scheme, or his jealousy of Grushenka, in
 whose name this “scapegrace” had rushed in on him with such a tale to
 get money which worked on the old man, I can’t tell. But at the instant
 when Mitya stood before him, feeling his legs grow weak under him, and
 frantically exclaiming that he was ruined, at that moment the old man
-looked at him with intense spite, and resolved to make a laughing‐stock
+looked at him with intense spite, and resolved to make a laughing-stock
 of him. When Mitya had gone, Kuzma Kuzmitch, white with rage, turned to
 his son and bade him see to it that that beggar be never seen again,
 and never admitted even into the yard, or else he’d—
@@ -17076,7 +17078,7 @@ So he must drive at full speed, and he had not the money for horses. He
 had forty kopecks, and that was all, all that was left after so many
 years of prosperity! But he had at home an old silver watch which had
 long ceased to go. He snatched it up and carried it to a Jewish
-watchmaker who had a shop in the market‐place. The Jew gave him six
+watchmaker who had a shop in the market-place. The Jew gave him six
 roubles for it.
 
 “And I didn’t expect that,” cried Mitya, ecstatically. (He was still in
@@ -17089,7 +17091,7 @@ scheme he had put before Samsonov, the latter’s decision, his own hopes
 for the future, and so on. These people had been told many of their
 lodger’s secrets before, and so looked upon him as a gentleman who was
 not at all proud, and almost one of themselves. Having thus collected
-nine roubles Mitya sent for posting‐horses to take him to the Volovya
+nine roubles Mitya sent for posting-horses to take him to the Volovya
 station. This was how the fact came to be remembered and established
 that “at midday, on the day before the event, Mitya had not a farthing,
 and that he had sold his watch to get money and had borrowed three
@@ -17100,12 +17102,12 @@ I note this fact, later on it will be apparent why I do so.
 Though he was radiant with the joyful anticipation that he would at
 last solve all his difficulties, yet, as he drew near Volovya station,
 he trembled at the thought of what Grushenka might be doing in his
-absence. What if she made up her mind to‐day to go to Fyodor
+absence. What if she made up her mind to-day to go to Fyodor
 Pavlovitch? This was why he had gone off without telling her and why he
 left orders with his landlady not to let out where he had gone, if any
 one came to inquire for him.
 
-“I must, I must get back to‐night,” he repeated, as he was jolted along
+“I must, I must get back to-night,” he repeated, as he was jolted along
 in the cart, “and I dare say I shall have to bring this Lyagavy back
 here ... to draw up the deed.” So mused Mitya, with a throbbing heart,
 but alas! his dreams were not fated to be carried out.
@@ -17124,7 +17126,7 @@ that he would take him to Lyagavy at once, and by so doing “save him,
 so to speak,” the priest agreed, after some demur, to conduct him to
 Suhoy Possyolok; his curiosity was obviously aroused. But, unluckily,
 he advised their going on foot, as it would not be “much over” a verst.
-Mitya, of course, agreed, and marched off with his yard‐long strides,
+Mitya, of course, agreed, and marched off with his yard-long strides,
 so that the poor priest almost ran after him. He was a very cautious
 man, though not old.
 
@@ -17135,7 +17137,7 @@ Mitya’s questions with: “I don’t know. Ah, I can’t say. How can I
 tell?” and so on. When Mitya began to speak of his quarrel with his
 father over his inheritance, the priest was positively alarmed, as he
 was in some way dependent on Fyodor Pavlovitch. He inquired, however,
-with surprise, why he called the peasant‐trader Gorstkin, Lyagavy, and
+with surprise, why he called the peasant-trader Gorstkin, Lyagavy, and
 obligingly explained to Mitya that, though the man’s name really was
 Lyagavy, he was never called so, as he would be grievously offended at
 the name, and that he must be sure to call him Gorstkin, “or you’ll do
@@ -17157,13 +17159,13 @@ Gorstkin was lodging in the other, the better room the other side of
 the passage. They went into that room and lighted a tallow candle. The
 hut was extremely overheated. On the table there was a samovar that had
 gone out, a tray with cups, an empty rum bottle, a bottle of vodka
-partly full, and some half‐eaten crusts of wheaten bread. The visitor
+partly full, and some half-eaten crusts of wheaten bread. The visitor
 himself lay stretched at full length on the bench, with his coat
 crushed up under his head for a pillow, snoring heavily. Mitya stood in
 perplexity.
 
 “Of course I must wake him. My business is too important. I’ve come in
-such haste. I’m in a hurry to get back to‐day,” he said in great
+such haste. I’m in a hurry to get back to-day,” he said in great
 agitation. But the priest and the forester stood in silence, not giving
 their opinion. Mitya went up and began trying to wake him himself; he
 tried vigorously, but the sleeper did not wake.
@@ -17206,7 +17208,7 @@ Karamazov. Only, Father, I don’t know what we’re to do with you. Where
 will you sleep?”
 
 “No, I’m going home. I’ll take his horse and get home,” he said,
-indicating the forester. “And now I’ll say good‐by. I wish you all
+indicating the forester. “And now I’ll say good-by. I wish you all
 success.”
 
 So it was settled. The priest rode off on the forester’s horse,
@@ -17226,7 +17228,7 @@ mysteriously opening and Grushenka running in. He leapt up from the
 bench.
 
 “It’s a tragedy!” he said, grinding his teeth. Mechanically he went up
-to the sleeping man and looked in his face. He was a lean, middle‐aged
+to the sleeping man and looked in his face. He was a lean, middle-aged
 peasant, with a very long face, flaxen curls, and a long, thin, reddish
 beard, wearing a blue cotton shirt and a black waistcoat, from the
 pocket of which peeped the chain of a silver watch. Mitya looked at his
@@ -17248,7 +17250,7 @@ despair, and sat down.
 “Stupid! Stupid!” cried Mitya. “And how dishonorable it all is!”
 something made him add. His head began to ache horribly. “Should he
 fling it up and go away altogether?” he wondered. “No, wait till
-to‐morrow now. I’ll stay on purpose. What else did I come for? Besides,
+to-morrow now. I’ll stay on purpose. What else did I come for? Besides,
 I’ve no means of going. How am I to get away from here now? Oh, the
 idiocy of it!”
 
@@ -17287,7 +17289,7 @@ the dead.
 
 It was dreadfully late when he waked. It was somewhere about nine
 o’clock. The sun was shining brightly in the two little windows of the
-hut. The curly‐headed peasant was sitting on the bench and had his coat
+hut. The curly-headed peasant was sitting on the bench and had his coat
 on. He had another samovar and another bottle in front of him.
 Yesterday’s bottle had already been finished, and the new one was more
 than half empty. Mitya jumped up and saw at once that the cursed
@@ -17312,7 +17314,7 @@ and collect yourself. Father Pavel of Ilyinskoe brought me here. You
 wrote to Samsonov, and he has sent me to you,” Mitya gasped
 breathlessly.
 
-“You’re l‐lying!” Lyagavy blurted out again. Mitya’s legs went cold.
+“You’re l-lying!” Lyagavy blurted out again. Mitya’s legs went cold.
 
 “For mercy’s sake! It isn’t a joke! You’re drunk, perhaps. Yet you can
 speak and understand ... or else ... I understand nothing!”
@@ -17340,7 +17342,7 @@ on the head,” as he said afterwards. In an instant a light seemed to
 dawn in his mind, “a light was kindled and I grasped it all.” He stood,
 stupefied, wondering how he, after all a man of intelligence, could
 have yielded to such folly, have been led into such an adventure, and
-have kept it up for almost twenty‐four hours, fussing round this
+have kept it up for almost twenty-four hours, fussing round this
 Lyagavy, wetting his head.
 
 “Why, the man’s drunk, dead drunk, and he’ll go on drinking now for a
@@ -17370,7 +17372,7 @@ He was saved by meeting an old merchant who was being driven across
 country in a hired trap. When he overtook him, Mitya asked the way, and
 it turned out that the old merchant, too, was going to Volovya. After
 some discussion Mitya got into the trap. Three hours later they
-arrived. At Volovya, Mitya at once ordered posting‐horses to drive to
+arrived. At Volovya, Mitya at once ordered posting-horses to drive to
 the town, and suddenly realized that he was appallingly hungry. While
 the horses were being harnessed, an omelette was prepared for him. He
 ate it all in an instant, ate a huge hunk of bread, ate a sausage, and
@@ -17379,7 +17381,7 @@ heart grew lighter. He flew towards the town, urged on the driver, and
 suddenly made a new and “unalterable” plan to procure that “accursed
 money” before evening. “And to think, only to think that a man’s life
 should be ruined for the sake of that paltry three thousand!” he cried,
-contemptuously. “I’ll settle it to‐ day.” And if it had not been for
+contemptuously. “I’ll settle it to-day.” And if it had not been for
 the thought of Grushenka and of what might have happened to her, which
 never left him, he would perhaps have become quite cheerful again....
 But the thought of her was stabbing him to the heart every moment, like
@@ -17389,7 +17391,7 @@ At last they arrived, and Mitya at once ran to Grushenka.
 
 ## Chapter III.
 
-*Gold‐Mines*
+*Gold-Mines*
 
 This was the visit of Mitya of which Grushenka had spoken to Rakitin
 with such horror. She was just then expecting the “message,” and was
@@ -17398,7 +17400,7 @@ before. She hoped that “please God he won’t come till I’m gone away,”
 and he suddenly burst in on her. The rest we know already. To get him
 off her hands she suggested at once that he should walk with her to
 Samsonov’s, where she said she absolutely must go “to settle his
-accounts,” and when Mitya accompanied her at once, she said good‐by to
+accounts,” and when Mitya accompanied her at once, she said good-by to
 him at the gate, making him promise to come at twelve o’clock to take
 her home again. Mitya, too, was delighted at this arrangement. If she
 was sitting at Samsonov’s she could not be going to Fyodor
@@ -17435,7 +17437,7 @@ impossible to picture to oneself the shame and moral degradation to
 which the jealous man can descend without a qualm of conscience. And
 yet it’s not as though the jealous were all vulgar and base souls. On
 the contrary, a man of lofty feelings, whose love is pure and full of
-self‐sacrifice, may yet hide under tables, bribe the vilest people, and
+self-sacrifice, may yet hide under tables, bribe the vilest people, and
 be familiar with the lowest ignominy of spying and eavesdropping.
 
 Othello was incapable of making up his mind to faithlessness—not
@@ -17510,7 +17512,7 @@ greedily questioning the women whether they had seen anything the
 evening before. They quite understood what he was trying to find out,
 and completely reassured him. No one had been there. Ivan Fyodorovitch
 had been there the night; everything had been perfectly as usual. Mitya
-grew thoughtful. He would certainly have to keep watch to‐day, but
+grew thoughtful. He would certainly have to keep watch to-day, but
 where? Here or at Samsonov’s gate? He decided that he must be on the
 look out both here and there, and meanwhile ... meanwhile.... The
 difficulty was that he had to carry out the new plan that he had made
@@ -17558,12 +17560,12 @@ Madame Hohlakov’s house he felt a shiver of fear run down his spine. At
 that moment he saw fully, as a mathematical certainty, that this was
 his last hope, that if this broke down, nothing else was left him in
 the world, but to “rob and murder some one for the three thousand.” It
-was half‐past seven when he rang at the bell.
+was half-past seven when he rang at the bell.
 
 At first fortune seemed to smile upon him. As soon as he was announced
 he was received with extraordinary rapidity. “As though she were
 waiting for me,” thought Mitya, and as soon as he had been led to the
-drawing‐room, the lady of the house herself ran in, and declared at
+drawing-room, the lady of the house herself ran in, and declared at
 once that she was expecting him.
 
 “I was expecting you! I was expecting you! Though I’d no reason to
@@ -17616,8 +17618,8 @@ you.... I have come, madam—”
 you’re not the first I have helped, Dmitri Fyodorovitch. You have most
 likely heard of my cousin, Madame Belmesov. Her husband was ruined,
 ‘had come to grief,’ as you characteristically express it, Dmitri
-Fyodorovitch. I recommended him to take to horse‐breeding, and now he’s
-doing well. Have you any idea of horse‐breeding, Dmitri Fyodorovitch?”
+Fyodorovitch. I recommended him to take to horse-breeding, and now he’s
+doing well. Have you any idea of horse-breeding, Dmitri Fyodorovitch?”
 
 “Not the faintest, madam; ah, madam, not the faintest!” cried Mitya, in
 nervous impatience, positively starting from his seat. “I simply
@@ -17652,14 +17654,14 @@ gratitude, and I propose a plan which—”
 “Enough, Dmitri Fyodorovitch, it’s said and done.” Madame Hohlakov cut
 him short, with the modest triumph of beneficence: “I have promised to
 save you, and I will save you. I will save you as I did Belmesov. What
-do you think of the gold‐mines, Dmitri Fyodorovitch?”
+do you think of the gold-mines, Dmitri Fyodorovitch?”
 
-“Of the gold‐mines, madam? I have never thought anything about them.”
+“Of the gold-mines, madam? I have never thought anything about them.”
 
 “But I have thought of them for you. Thought of them over and over
 again. I have been watching you for the last month. I’ve watched you a
 hundred times as you’ve walked past, saying to myself: that’s a man of
-energy who ought to be at the gold‐mines. I’ve studied your gait and
+energy who ought to be at the gold-mines. I’ve studied your gait and
 come to the conclusion: that’s a man who would find gold.”
 
 “From my gait, madam?” said Mitya, smiling.
@@ -17676,7 +17678,7 @@ Turgenev says.”
 “It is yours, Dmitri Fyodorovitch,” Madame Hohlakov cut in at once.
 “The money is as good as in your pocket, not three thousand, but three
 million, Dmitri Fyodorovitch, in less than no time. I’ll make you a
-present of the idea: you shall find gold‐mines, make millions, return
+present of the idea: you shall find gold-mines, make millions, return
 and become a leading man, and wake us up and lead us to better things.
 Are we to leave it all to the Jews? You will found institutions and
 enterprises of all sorts. You will help the poor, and they will bless
@@ -17687,13 +17689,13 @@ night, Dmitri Fyodorovitch; people don’t know that side of me—”
 
 “Madam, madam!” Dmitri interrupted with an uneasy presentiment. “I
 shall indeed, perhaps, follow your advice, your wise advice, madam....
-I shall perhaps set off ... to the gold‐mines.... I’ll come and see you
+I shall perhaps set off ... to the gold-mines.... I’ll come and see you
 again about it ... many times, indeed ... but now, that three thousand
 you so generously ... oh, that would set me free, and if you could
-to‐day ... you see, I haven’t a minute, a minute to lose to‐day—”
+to-day ... you see, I haven’t a minute, a minute to lose to-day—”
 
 “Enough, Dmitri Fyodorovitch, enough!” Madame Hohlakov interrupted
-emphatically. “The question is, will you go to the gold‐mines or not;
+emphatically. “The question is, will you go to the gold-mines or not;
 have you quite made up your mind? Answer yes or no.”
 
 “I will go, madam, afterwards.... I’ll go where you like ... but now—”
@@ -17719,7 +17721,7 @@ myself, and with it dedicate you to a new life, to a new career.”
 
 And she actually put the cord round his neck, and began arranging it.
 In extreme embarrassment, Mitya bent down and helped her, and at last
-he got it under his neck‐tie and collar through his shirt to his chest.
+he got it under his neck-tie and collar through his shirt to his chest.
 
 “Now you can set off,” Madame Hohlakov pronounced, sitting down
 triumphantly in her place again.
@@ -17737,7 +17739,7 @@ you know everything already, but whom I cannot leave on any account,
 and therefore that three thousand now—”
 
 “Leave everything, Dmitri Fyodorovitch,” Madame Hohlakov interrupted in
-the most decisive tone. “Leave everything, especially women. Gold‐mines
+the most decisive tone. “Leave everything, especially women. Gold-mines
 are your goal, and there’s no place for women there. Afterwards, when
 you come back rich and famous, you will find the girl of your heart in
 the highest society. That will be a modern girl, a girl of education
@@ -17773,7 +17775,7 @@ on you will return rejoicing. You will hasten to me from Siberia on
 purpose to share your joy with me—”
 
 “But allow me, too!” Mitya cried suddenly. “For the last time I entreat
-you, tell me, can I have the sum you promised me to‐day, if not, when
+you, tell me, can I have the sum you promised me to-day, if not, when
 may I come for it?”
 
 “What sum, Dmitri Fyodorovitch?”
@@ -17787,9 +17789,9 @@ Hohlakov announced with serene amazement. Mitya was stupefied.
 my hands—”
 
 “Oh, no, you misunderstood me, Dmitri Fyodorovitch. In that case you
-misunderstood me. I was talking of the gold‐mines. It’s true I promised
+misunderstood me. I was talking of the gold-mines. It’s true I promised
 you more, infinitely more than three thousand, I remember it all now,
-but I was referring to the gold‐mines.”
+but I was referring to the gold-mines.”
 
 “But the money? The three thousand?” Mitya exclaimed, awkwardly.
 
@@ -17800,13 +17802,13 @@ money. And, do you know, Dmitri Fyodorovitch, if I had, I wouldn’t give
 it to you. In the first place I never lend money. Lending money means
 losing friends. And I wouldn’t give it to you particularly. I wouldn’t
 give it you, because I like you and want to save you, for all you need
-is the gold‐mines, the gold‐mines, the gold‐mines!”
+is the gold-mines, the gold-mines, the gold-mines!”
 
 “Oh, the devil!” roared Mitya, and with all his might brought his fist
 down on the table.
 
 “Aie! Aie!” cried Madame Hohlakov, alarmed, and she flew to the other
-end of the drawing‐room.
+end of the drawing-room.
 
 Mitya spat on the ground, and strode rapidly out of the room, out of
 the house, into the street, into the darkness! He walked like one
@@ -17869,7 +17871,7 @@ seeing him.
 
 “You scream?” roared Mitya, “where is she?”
 
-But without giving the terror‐stricken Fenya time to utter a word, he
+But without giving the terror-stricken Fenya time to utter a word, he
 fell all of a heap at her feet.
 
 “Fenya, for Christ’s sake, tell me, where is she?”
@@ -17891,7 +17893,7 @@ Fenya and old Matryona by an unexpected action. On the table stood a
 brass mortar, with a pestle in it, a small brass pestle, not much more
 than six inches long. Mitya already had opened the door with one hand
 when, with the other, he snatched up the pestle, and thrust it in his
-side‐pocket.
+side-pocket.
 
 “Oh, Lord! He’s going to murder some one!” cried Fenya, flinging up her
 hands.
@@ -17913,14 +17915,14 @@ He formed another plan of action: he ran a long way round Fyodor
 Pavlovitch’s house, crossing the lane, running down Dmitrovsky Street,
 then over the little bridge, and so came straight to the deserted alley
 at the back, which was empty and uninhabited, with, on one side the
-hurdle fence of a neighbor’s kitchen‐garden, on the other the strong
+hurdle fence of a neighbor’s kitchen-garden, on the other the strong
 high fence, that ran all round Fyodor Pavlovitch’s garden. Here he
 chose a spot, apparently the very place, where according to the
 tradition, he knew Lizaveta had once climbed over it: “If she could
 climb over it,” the thought, God knows why, occurred to him, “surely I
 can.” He did in fact jump up, and instantly contrived to catch hold of
 the top of the fence. Then he vigorously pulled himself up and sat
-astride on it. Close by, in the garden stood the bath‐house, but from
+astride on it. Close by, in the garden stood the bath-house, but from
 the fence he could see the lighted windows of the house too.
 
 “Yes, the old man’s bedroom is lighted up. She’s there!” and he leapt
@@ -17937,7 +17939,7 @@ the garden, avoiding the trees and shrubs. He walked slowly, creeping
 stealthily at every step, listening to his own footsteps. It took him
 five minutes to reach the lighted window. He remembered that just under
 the window there were several thick and high bushes of elder and
-whitebeam. The door from the house into the garden on the left‐hand
+whitebeam. The door from the house into the garden on the left-hand
 side, was shut; he had carefully looked on purpose to see, in passing.
 At last he reached the bushes and hid behind them. He held his breath.
 “I must wait now,” he thought, “to reassure them, in case they heard my
@@ -17956,10 +17958,10 @@ before him. It was not a large room, and was divided in two parts by a
 red screen, “Chinese,” as Fyodor Pavlovitch used to call it. The word
 “Chinese” flashed into Mitya’s mind, “and behind the screen, is
 Grushenka,” thought Mitya. He began watching Fyodor Pavlovitch, who was
-wearing his new striped‐silk dressing‐gown, which Mitya had never seen,
+wearing his new striped-silk dressing-gown, which Mitya had never seen,
 and a silk cord with tassels round the waist. A clean, dandified shirt
 of fine linen with gold studs peeped out under the collar of the
-dressing‐gown. On his head Fyodor Pavlovitch had the same red bandage
+dressing-gown. On his head Fyodor Pavlovitch had the same red bandage
 which Alyosha had seen.
 
 “He has got himself up,” thought Mitya.
@@ -17968,13 +17970,13 @@ His father was standing near the window, apparently lost in thought.
 Suddenly he jerked up his head, listened a moment, and hearing nothing
 went up to the table, poured out half a glass of brandy from a decanter
 and drank it off. Then he uttered a deep sigh, again stood still a
-moment, walked carelessly up to the looking‐glass on the wall, with his
+moment, walked carelessly up to the looking-glass on the wall, with his
 right hand raised the red bandage on his forehead a little, and began
 examining his bruises and scars, which had not yet disappeared.
 
 “He’s alone,” thought Mitya, “in all probability he’s alone.”
 
-Fyodor Pavlovitch moved away from the looking‐glass, turned suddenly to
+Fyodor Pavlovitch moved away from the looking-glass, turned suddenly to
 the window and looked out. Mitya instantly slipped away into the
 shadow.
 
@@ -18008,7 +18010,7 @@ to the window. Mitya slipped away into the shadow. Fyodor Pavlovitch
 opened the window and thrust his whole head out.
 
 “Grushenka, is it you? Is it you?” he said, in a sort of trembling
-half‐ whisper. “Where are you, my angel, where are you?” He was
+half-whisper. “Where are you, my angel, where are you?” He was
 fearfully agitated and breathless.
 
 “He’s alone.” Mitya decided.
@@ -18081,7 +18083,7 @@ fast.
 “Good Lord!” cried Grigory beside himself, and forgetting the pain in
 his back, he hurried to intercept the running figure. He took a short
 cut, evidently he knew the garden better; the flying figure went
-towards the bath‐house, ran behind it and rushed to the garden fence.
+towards the bath-house, ran behind it and rushed to the garden fence.
 Grigory followed, not losing sight of him, and ran, forgetting
 everything. He reached the fence at the very moment the man was
 climbing over it. Grigory cried out, beside himself, pounced on him,
@@ -18117,20 +18119,20 @@ you must lie!” he said aloud. And suddenly turning to the fence, he
 vaulted over it into the lane and fell to running—the handkerchief
 soaked with blood he held, crushed up in his right fist, and as he ran
 he thrust it into the back pocket of his coat. He ran headlong, and the
-few passers‐by who met him in the dark, in the streets, remembered
+few passers-by who met him in the dark, in the streets, remembered
 afterwards that they had met a man running that night. He flew back
 again to the widow Morozov’s house.
 
 Immediately after he had left it that evening, Fenya had rushed to the
 chief porter, Nazar Ivanovitch, and besought him, for Christ’s sake,
-“not to let the captain in again to‐day or to‐morrow.” Nazar Ivanovitch
+“not to let the captain in again to-day or to-morrow.” Nazar Ivanovitch
 promised, but went upstairs to his mistress who had suddenly sent for
 him, and meeting his nephew, a boy of twenty, who had recently come
 from the country, on the way up told him to take his place, but forgot
 to mention “the captain.” Mitya, running up to the gate, knocked. The
 lad instantly recognized him, for Mitya had more than once tipped him.
 Opening the gate at once, he let him in, and hastened to inform him
-with a good‐humored smile that “Agrafena Alexandrovna is not at home
+with a good-humored smile that “Agrafena Alexandrovna is not at home
 now, you know.”
 
 “Where is she then, Prohor?” asked Mitya, stopping short.
@@ -18175,16 +18177,16 @@ the whole position. Poor Fenya was not in a condition at that moment to
 observe whether he understood or not. She remained sitting on the trunk
 as she had been when he ran into the room, trembling all over, holding
 her hands out before her as though trying to defend herself. She seemed
-to have grown rigid in that position. Her wide‐opened, scared eyes were
+to have grown rigid in that position. Her wide-opened, scared eyes were
 fixed immovably upon him. And to make matters worse, both his hands
 were smeared with blood. On the way, as he ran, he must have touched
 his forehead with them, wiping off the perspiration, so that on his
-forehead and his right cheek were blood‐stained patches. Fenya was on
+forehead and his right cheek were blood-stained patches. Fenya was on
 the verge of hysterics. The old cook had jumped up and was staring at
 him like a mad woman, almost unconscious with terror.
 
 Mitya stood for a moment, then mechanically sank on to a chair next to
-Fenya. He sat, not reflecting but, as it were, terror‐stricken,
+Fenya. He sat, not reflecting but, as it were, terror-stricken,
 benumbed. Yet everything was clear as day: that officer, he knew about
 him, he knew everything perfectly, he had known it from Grushenka
 herself, had known that a letter had come from him a month before. So
@@ -18200,7 +18202,7 @@ But suddenly, as gently and mildly as a gentle and affectionate child,
 he began speaking to Fenya as though he had utterly forgotten how he
 had scared and hurt her just now. He fell to questioning Fenya with an
 extreme preciseness, astonishing in his position, and though the girl
-looked wildly at his blood‐stained hands, she, too, with wonderful
+looked wildly at his blood-stained hands, she, too, with wonderful
 readiness and rapidity, answered every question as though eager to put
 the whole truth and nothing but the truth before him. Little by little,
 even with a sort of enjoyment, she began explaining every detail, not
@@ -18233,9 +18235,9 @@ now in his grief. Mitya looked at his hands again.
 expression. “That’s human blood, and my God! why was it shed? But ...
 Fenya ... there’s a fence here” (he looked at her as though setting her
 a riddle), “a high fence, and terrible to look at. But at dawn
-to‐morrow, when the sun rises, Mitya will leap over that fence.... You
+to-morrow, when the sun rises, Mitya will leap over that fence.... You
 don’t understand what fence, Fenya, and, never mind.... You’ll hear
-to‐morrow and understand ... and now, good‐by. I won’t stand in her
+to-morrow and understand ... and now, good-by. I won’t stand in her
 way. I’ll step aside, I know how to step aside. Live, my joy.... You
 loved me for an hour, remember Mityenka Karamazov so for ever.... She
 always used to call me Mityenka, do you remember?”
@@ -18246,7 +18248,7 @@ he ran in and attacked her.
 
 Just ten minutes later Dmitri went in to Pyotr Ilyitch Perhotin, the
 young official with whom he had pawned his pistols. It was by now
-half‐past eight, and Pyotr Ilyitch had finished his evening tea, and
+half-past eight, and Pyotr Ilyitch had finished his evening tea, and
 had just put his coat on again to go to the “Metropolis” to play
 billiards. Mitya caught him coming out.
 
@@ -18259,14 +18261,14 @@ a cry of surprise.
 thanks very much. I’m in a hurry, Pyotr Ilyitch, please make haste.”
 
 Pyotr Ilyitch grew more and more surprised; he suddenly caught sight of
-a bundle of bank‐notes in Mitya’s hand, and what was more, he had
+a bundle of bank-notes in Mitya’s hand, and what was more, he had
 walked in holding the notes as no one walks in and no one carries
 money: he had them in his right hand, and held them outstretched as if
-to show them. Perhotin’s servant‐boy, who met Mitya in the passage,
+to show them. Perhotin’s servant-boy, who met Mitya in the passage,
 said afterwards that he walked into the passage in the same way, with
 the money outstretched in his hand, so he must have been carrying them
-like that even in the streets. They were all rainbow‐colored
-hundred‐rouble notes, and the fingers holding them were covered with
+like that even in the streets. They were all rainbow-colored
+hundred-rouble notes, and the fingers holding them were covered with
 blood.
 
 When Pyotr Ilyitch was questioned later on as to the sum of money, he
@@ -18285,7 +18287,7 @@ blood? Have you had a fall? Look at yourself!”
 
 He took him by the elbow and led him to the glass.
 
-Seeing his blood‐stained face, Mitya started and scowled wrathfully.
+Seeing his blood-stained face, Mitya started and scowled wrathfully.
 
 “Damnation! That’s the last straw,” he muttered angrily, hurriedly
 changing the notes from his right hand to the left, and impulsively
@@ -18299,11 +18301,11 @@ could not be pulled apart. Mitya threw it angrily on the floor.
 face?”
 
 “So you’re only stained, not wounded? You’d better wash,” said Pyotr
-Ilyitch. “Here’s a wash‐stand. I’ll pour you out some water.”
+Ilyitch. “Here’s a wash-stand. I’ll pour you out some water.”
 
-“A wash‐stand? That’s all right ... but where am I to put this?”
+“A wash-stand? That’s all right ... but where am I to put this?”
 
-With the strangest perplexity he indicated his bundle of hundred‐rouble
+With the strangest perplexity he indicated his bundle of hundred-rouble
 notes, looking inquiringly at Pyotr Ilyitch as though it were for him
 to decide what he, Mitya, was to do with his own money.
 
@@ -18330,7 +18332,7 @@ Pyotr Ilyitch.
 to Plotnikov’s, they close late—to see if they won’t change it. Here,
 Misha!” he called into the passage.
 
-“To Plotnikov’s shop—first‐rate!” cried Mitya, as though struck by an
+“To Plotnikov’s shop—first-rate!” cried Mitya, as though struck by an
 idea. “Misha,” he turned to the boy as he came in, “look here, run to
 Plotnikov’s and tell them that Dmitri Fyodorovitch sends his greetings,
 and will be there directly.... But listen, listen, tell them to have
@@ -18341,7 +18343,7 @@ trouble, Misha,” he turned again to the boy. “Stay, listen; tell them
 to put in cheese, Strasburg pies, smoked fish, ham, caviare, and
 everything, everything they’ve got, up to a hundred roubles, or a
 hundred and twenty as before.... But wait: don’t let them forget
-dessert, sweets, pears, water‐melons, two or three or four—no, one
+dessert, sweets, pears, water-melons, two or three or four—no, one
 melon’s enough, and chocolate, candy, toffee, fondants; in fact,
 everything I took to Mokroe before, three hundred roubles’ worth with
 the champagne ... let it be just the same again. And remember, Misha,
@@ -18365,7 +18367,7 @@ best leg forward!”
 Pyotr Ilyitch seemed to hurry Misha off on purpose, because the boy
 remained standing with his mouth and eyes wide open, apparently
 understanding little of Mitya’s orders, gazing up with amazement and
-terror at his blood‐stained face and the trembling bloodstained fingers
+terror at his blood-stained face and the trembling bloodstained fingers
 that held the notes.
 
 “Well, now come and wash,” said Pyotr Ilyitch sternly. “Put the money
@@ -18416,7 +18418,7 @@ you been beating now ... or killing, perhaps?”
 “Why ‘nonsense’?”
 
 “Don’t worry,” said Mitya, and he suddenly laughed. “I smashed an old
-woman in the market‐place just now.”
+woman in the market-place just now.”
 
 “Smashed? An old woman?”
 
@@ -18448,21 +18450,21 @@ pistols. It’s an odd thing, at six o’clock you pledged them for ten
 roubles, and now you’ve got thousands. Two or three I should say.”
 
 “Three, you bet,” laughed Mitya, stuffing the notes into the
-side‐pocket of his trousers.
+side-pocket of his trousers.
 
-“You’ll lose it like that. Have you found a gold‐mine?”
+“You’ll lose it like that. Have you found a gold-mine?”
 
-“The mines? The gold‐mines?” Mitya shouted at the top of his voice and
+“The mines? The gold-mines?” Mitya shouted at the top of his voice and
 went off into a roar of laughter. “Would you like to go to the mines,
 Perhotin? There’s a lady here who’ll stump up three thousand for you,
 if only you’ll go. She did it for me, she’s so awfully fond of
-gold‐mines. Do you know Madame Hohlakov?”
+gold-mines. Do you know Madame Hohlakov?”
 
 “I don’t know her, but I’ve heard of her and seen her. Did she really
 give you three thousand? Did she really?” said Pyotr Ilyitch, eyeing
 him dubiously.
 
-“As soon as the sun rises to‐morrow, as soon as Phœbus, ever young,
+“As soon as the sun rises to-morrow, as soon as Phœbus, ever young,
 flies upwards, praising and glorifying God, you go to her, this Madame
 Hohlakov, and ask her whether she did stump up that three thousand or
 not. Try and find out.”
@@ -18501,7 +18503,7 @@ enough!”
 
 “I’m loading the pistol.”
 
-Unfastening the pistol‐case, Mitya actually opened the powder horn, and
+Unfastening the pistol-case, Mitya actually opened the powder horn, and
 carefully sprinkled and rammed in the charge. Then he took the bullet
 and, before inserting it, held it in two fingers in front of the
 candle.
@@ -18523,7 +18525,7 @@ now.”
 
 “Here’s some paper.”
 
-“No, a clean new piece, writing‐paper. That’s right.”
+“No, a clean new piece, writing-paper. That’s right.”
 
 And taking a pen from the table, Mitya rapidly wrote two lines, folded
 the paper in four, and thrust it in his waistcoat pocket. He put the
@@ -18536,7 +18538,7 @@ looked at Pyotr Ilyitch with a slow, thoughtful smile.
 that bullet in your brain, perhaps?” Pyotr Ilyitch asked uneasily.
 
 “I was fooling about the bullet! I want to live. I love life! You may
-be sure of that. I love golden‐haired Phœbus and his warm light....
+be sure of that. I love golden-haired Phœbus and his warm light....
 Dear Pyotr Ilyitch, do you know how to step aside?”
 
 “What do you mean by ‘stepping aside’?”
@@ -18561,17 +18563,17 @@ anxious.”
 what I am always saying. Savages! Why, here’s Misha! I was forgetting
 him.”
 
-Misha ran in, post‐haste, with a handful of notes in change, and
+Misha ran in, post-haste, with a handful of notes in change, and
 reported that every one was in a bustle at the Plotnikovs’; “They’re
 carrying down the bottles, and the fish, and the tea; it will all be
 ready directly.” Mitya seized ten roubles and handed it to Pyotr
-Ilyitch, then tossed another ten‐rouble note to Misha.
+Ilyitch, then tossed another ten-rouble note to Misha.
 
 “Don’t dare to do such a thing!” cried Pyotr Ilyitch. “I won’t have it
 in my house, it’s a bad, demoralizing habit. Put your money away. Here,
-put it here, why waste it? It would come in handy to‐morrow, and I dare
+put it here, why waste it? It would come in handy to-morrow, and I dare
 say you’ll be coming to me to borrow ten roubles again. Why do you keep
-putting the notes in your side‐pocket? Ah, you’ll lose them!”
+putting the notes in your side-pocket? Ah, you’ll lose them!”
 
 “I say, my dear fellow, let’s go to Mokroe together.”
 
@@ -18602,7 +18604,7 @@ Pyotr Ilyitch’s. It was the largest grocery shop in our town, and by no
 means a bad one, belonging to some rich merchants. They kept everything
 that could be got in a Petersburg shop, grocery of all sort, wines
 “bottled by the brothers Eliseyev,” fruits, cigars, tea, coffee, sugar,
-and so on. There were three shop‐assistants and two errand boys always
+and so on. There were three shop-assistants and two errand boys always
 employed. Though our part of the country had grown poorer, the
 landowners had gone away, and trade had got worse, yet the grocery
 stores flourished as before, every year with increasing prosperity;
@@ -18613,7 +18615,7 @@ recollections of how he had bought, three or four weeks ago, wine and
 goods of all sorts to the value of several hundred roubles, paid for in
 cash (they would never have let him have anything on credit, of
 course). They remembered that then, as now, he had had a bundle of
-hundred‐rouble notes in his hand, and had scattered them at random,
+hundred-rouble notes in his hand, and had scattered them at random,
 without bargaining, without reflecting, or caring to reflect what use
 so much wine and provisions would be to him. The story was told all
 over the town that, driving off then with Grushenka to Mokroe, he had
@@ -18622,7 +18624,7 @@ back from the spree without a penny.” He had picked up a whole troop of
 gypsies (encamped in our neighborhood at the time), who for two days
 got money without stint out of him while he was drunk, and drank
 expensive wine without stint. People used to tell, laughing at Mitya,
-how he had given champagne to grimy‐ handed peasants, and feasted the
+how he had given champagne to grimy-handed peasants, and feasted the
 village women and girls on sweets and Strasburg pies. Though to laugh
 at Mitya to his face was rather a risky proceeding, there was much
 laughter behind his back, especially in the tavern, at his own
@@ -18647,8 +18649,8 @@ late, Andrey?”
 “They’ll only get there an hour at most before us, not even that maybe.
 I got Timofey ready to start. I know how he’ll go. Their pace won’t be
 ours, Dmitri Fyodorovitch. How could it be? They won’t get there an
-hour earlier!” Andrey, a lanky, red‐haired, middle‐aged driver, wearing
-a full‐ skirted coat, and with a kaftan on his arm, replied warmly.
+hour earlier!” Andrey, a lanky, red-haired, middle-aged driver, wearing
+a full-skirted coat, and with a kaftan on his arm, replied warmly.
 
 “Fifty roubles for vodka if we’re only an hour behind them.”
 
@@ -18696,9 +18698,9 @@ directly. We’ll taste it. Ech, Pyotr Ilyitch, come along with me, for
 you’re a nice fellow, the sort I like.”
 
 Mitya sat down on a wicker chair, before a little table, covered with a
-dirty dinner‐napkin. Pyotr Ilyitch sat down opposite, and the champagne
+dirty dinner-napkin. Pyotr Ilyitch sat down opposite, and the champagne
 soon appeared, and oysters were suggested to the gentlemen.
-“First‐class oysters, the last lot in.”
+“First-class oysters, the last lot in.”
 
 “Hang the oysters. I don’t eat them. And we don’t need anything,” cried
 Pyotr Ilyitch, almost angrily.
@@ -18748,7 +18750,7 @@ he was melancholy, too. It was as though some heavy, overwhelming
 anxiety were weighing upon him.
 
 “Misha ... here’s your Misha come! Misha, come here, my boy, drink this
-glass to Phœbus, the golden‐haired, of to‐morrow morn....”
+glass to Phœbus, the golden-haired, of to-morrow morn....”
 
 “What are you giving it him for?” cried Pyotr Ilyitch, irritably.
 
@@ -18767,7 +18769,7 @@ a skull afterwards.”
 Pyotr Ilyitch listened in silence. Mitya, too, was silent for a while.
 
 “What dog’s that you’ve got here?” he asked the shopman, casually,
-noticing a pretty little lap‐dog with dark eyes, sitting in the corner.
+noticing a pretty little lap-dog with dark eyes, sitting in the corner.
 
 “It belongs to Varvara Alexyevna, the mistress,” answered the clerk.
 “She brought it and forgot it here. It must be taken back to her.”
@@ -18814,10 +18816,10 @@ of the shop.
 
 “Are you ready? We’ll come!” Mitya started. “A few more last words
 and—Andrey, a glass of vodka at starting. Give him some brandy as well!
-That box” (the one with the pistols) “put under my seat. Good‐by, Pyotr
+That box” (the one with the pistols) “put under my seat. Good-by, Pyotr
 Ilyitch, don’t remember evil against me.”
 
-“But you’re coming back to‐morrow?”
+“But you’re coming back to-morrow?”
 
 “Of course.”
 
@@ -18855,7 +18857,7 @@ look alive, fly along full speed!”
 
 Andrey whipped up the horses, and the bells began ringing.
 
-“Good‐by, Pyotr Ilyitch! My last tear is for you!...”
+“Good-by, Pyotr Ilyitch! My last tear is for you!...”
 
 “He’s not drunk, but he keeps babbling like a lunatic,” Pyotr Ilyitch
 thought as he watched him go. He had half a mind to stay and see the
@@ -18905,7 +18907,7 @@ though he had meant to speak of it at first.
 They began a third game, and by degrees the talk about Mitya died away.
 But by the end of the third game, Pyotr Ilyitch felt no more desire for
 billiards; he laid down the cue, and without having supper as he had
-intended, he walked out of the tavern. When he reached the market‐place
+intended, he walked out of the tavern. When he reached the market-place
 he stood still in perplexity, wondering at himself. He realized that
 what he wanted was to go to Fyodor Pavlovitch’s and find out if
 anything had happened there. “On account of some stupid nonsense—as
@@ -18916,7 +18918,7 @@ In a very bad humor he went straight home, and suddenly remembered
 Fenya. “Damn it all! I ought to have questioned her just now,” he
 thought with vexation, “I should have heard everything.” And the desire
 to speak to her, and so find out, became so pressing and importunate
-that when he was half‐way home he turned abruptly and went towards the
+that when he was half-way home he turned abruptly and went towards the
 house where Grushenka lodged. Going up to the gate he knocked. The
 sound of the knock in the silence of the night sobered him and made him
 feel annoyed. And no one answered him; every one in the house was
@@ -18972,7 +18974,7 @@ seemed strange to him, at moments, to think that he had written his own
 sentence of death with pen and paper: “I punish myself,” and the paper
 was lying there in his pocket, ready; the pistol was loaded; he had
 already resolved how, next morning, he would meet the first warm ray of
-“golden‐haired Phœbus.”
+“golden-haired Phœbus.”
 
 And yet he could not be quit of the past, of all that he had left
 behind and that tortured him. He felt that miserably, and the thought
@@ -18989,7 +18991,7 @@ longed to look upon her, if only for a moment, if only from a distance!
 like with him, her first love, and that’s all I want.” Never had this
 woman, who was such a fateful influence in his life, aroused such love
 in his breast, such new and unknown feeling, surprising even to
-himself, a feeling tender to devoutness, to self‐effacement before her!
+himself, a feeling tender to devoutness, to self-effacement before her!
 “I will efface myself!” he said, in a rush of almost hysterical
 ecstasy.
 
@@ -19017,7 +19019,7 @@ said they were a lot of them there—”
 
 “At the station?”
 
-“Not at the posting‐station, but at Plastunov’s, at the inn, where they
+“Not at the posting-station, but at Plastunov’s, at the inn, where they
 let out horses, too.”
 
 “I know. So you say there are a lot of them? How’s that? Who are they?”
@@ -19085,7 +19087,7 @@ all the ages till I come again.’ Those were His very words ...”
 
 “So you see, sir, who it is hell’s for,” said Andrey, whipping up the
 left horse, “but you’re like a little child ... that’s how we look on
-you ... and though you’re hasty‐tempered, sir, yet God will forgive you
+you ... and though you’re hasty-tempered, sir, yet God will forgive you
 for your kind heart.”
 
 “And you, do you forgive me, Andrey?”
@@ -19110,7 +19112,7 @@ the first light of Thy day ... for I love the queen of my soul ... I
 love her and I cannot help loving her. Thou seest my whole heart.... I
 shall gallop up, I shall fall before her and say, ‘You are right to
 pass on and leave me. Farewell and forget your victim ... never fret
-yourself about me!’ ”
+yourself about me!’”
 
 “Mokroe!” cried Andrey, pointing ahead with his whip.
 
@@ -19142,18 +19144,18 @@ rushed up to the guest with obsequious delight.
 
 “Dmitri Fyodorovitch, your honor! Do I see you again?”
 
-Trifon Borissovitch was a thick‐set, healthy peasant, of middle height,
+Trifon Borissovitch was a thick-set, healthy peasant, of middle height,
 with a rather fat face. His expression was severe and uncompromising,
 especially with the peasants of Mokroe, but he had the power of
 assuming the most obsequious countenance, when he had an inkling that
 it was to his interest. He dressed in Russian style, with a shirt
-buttoning down on one side, and a full‐skirted coat. He had saved a
+buttoning down on one side, and a full-skirted coat. He had saved a
 good sum of money, but was for ever dreaming of improving his position.
 More than half the peasants were in his clutches, every one in the
 neighborhood was in debt to him. From the neighboring landowners he
 bought and rented lands which were worked by the peasants, in payment
 of debts which they could never shake off. He was a widower, with four
-grown‐up daughters. One of them was already a widow and lived in the
+grown-up daughters. One of them was already a widow and lived in the
 inn with her two children, his grandchildren, and worked for him like a
 charwoman. Another of his daughters was married to a petty official,
 and in one of the rooms of the inn, on the wall could be seen, among
@@ -19162,11 +19164,11 @@ uniform and official epaulettes. The two younger daughters used to wear
 fashionable blue or green dresses, fitting tight at the back, and with
 trains a yard long, on Church holidays or when they went to pay visits.
 But next morning they would get up at dawn, as usual, sweep out the
-rooms with a birch‐broom, empty the slops, and clean up after lodgers.
+rooms with a birch-broom, empty the slops, and clean up after lodgers.
 
 In spite of the thousands of roubles he had saved, Trifon Borissovitch
 was very fond of emptying the pockets of a drunken guest, and
-remembering that not a month ago he had, in twenty‐four hours, made two
+remembering that not a month ago he had, in twenty-four hours, made two
 if not three hundred roubles out of Dmitri, when he had come on his
 escapade with Grushenka, he met him now with eager welcome, scenting
 his prey the moment Mitya drove up to the steps.
@@ -19176,7 +19178,7 @@ his prey the moment Mitya drove up to the steps.
 “Stay, Trifon Borissovitch,” began Mitya, “first and foremost, where is
 she?”
 
-“Agrafena Alexandrovna?” The inn‐keeper understood at once, looking
+“Agrafena Alexandrovna?” The inn-keeper understood at once, looking
 sharply into Mitya’s face. “She’s here, too ...”
 
 “With whom? With whom?”
@@ -19250,7 +19252,7 @@ you. You gave the peasants champagne to drink the other day, e—ech!”
 
 For all his pretended compassion for Mitya, Trifon Borissovitch had
 hidden half a dozen bottles of champagne on that last occasion, and had
-picked up a hundred‐rouble note under the table, and it had remained in
+picked up a hundred-rouble note under the table, and it had remained in
 his clutches.
 
 “Trifon Borissovitch, I sent more than one thousand flying last time I
@@ -19300,11 +19302,11 @@ her, was saying something in a loud voice to Maximov, who sat the other
 side of the table, facing Grushenka. Maximov was laughing violently at
 something. On the sofa sat _he_, and on a chair by the sofa there was
 another stranger. The one on the sofa was lolling backwards, smoking a
-pipe, and Mitya had an impression of a stoutish, broad‐faced, short
+pipe, and Mitya had an impression of a stoutish, broad-faced, short
 little man, who was apparently angry about something. His friend, the
 other stranger, struck Mitya as extraordinarily tall, but he could make
 out nothing more. He caught his breath. He could not bear it for a
-minute, he put the pistol‐ case on a chest, and with a throbbing heart
+minute, he put the pistol-case on a chest, and with a throbbing heart
 he walked, feeling cold all over, straight into the blue room to face
 the company.
 
@@ -19445,10 +19447,10 @@ formed no definite conception of them yet.
 The Pole on the sofa struck him by his dignified demeanor and his
 Polish accent; and, above all, by his pipe. “Well, what of it? It’s a
 good thing he’s smoking a pipe,” he reflected. The Pole’s puffy,
-middle‐aged face, with its tiny nose and two very thin, pointed, dyed
-and impudent‐looking mustaches, had not so far roused the faintest
+middle-aged face, with its tiny nose and two very thin, pointed, dyed
+and impudent-looking mustaches, had not so far roused the faintest
 doubts in Mitya. He was not even particularly struck by the Pole’s
-absurd wig made in Siberia, with love‐locks foolishly combed forward
+absurd wig made in Siberia, with love-locks foolishly combed forward
 over the temples. “I suppose it’s all right since he wears a wig,” he
 went on, musing blissfully. The other, younger Pole, who was staring
 insolently and defiantly at the company and listening to the
@@ -19494,7 +19496,7 @@ before, and had once been with some one to see her; but she had not
 taken to him. But here she looked at him very affectionately: before
 Mitya’s arrival, she had been making much of him, but he seemed somehow
 to be unmoved by it. He was a boy, not over twenty, dressed like a
-dandy, with a very charming fair‐ skinned face, and splendid thick,
+dandy, with a very charming fair-skinned face, and splendid thick,
 fair hair. From his fair face looked out beautiful pale blue eyes, with
 an intelligent and sometimes even deep expression, beyond his age
 indeed, although the young man sometimes looked and talked quite like a
@@ -19532,7 +19534,7 @@ there were no knowing what he might hear from each.
 “No, you see,” Maximov turned to him. “What I mean is that those pretty
 Polish ladies ... when they danced the mazurka with our Uhlans ... when
 one of them dances a mazurka with a Uhlan she jumps on his knee like a
-kitten ... a little white one ... and the _pan_‐father and _pan_‐mother
+kitten ... a little white one ... and the _pan_-father and _pan_-mother
 look on and allow it.... They allow it ... and next day the Uhlan comes
 and offers her his hand.... That’s how it is ... offers her his hand,
 he he!” Maximov ended, tittering.
@@ -19565,7 +19567,7 @@ Poland, were you?”
 
 “No, in the Province of Smolensk. Only, a Uhlan had brought her to
 Russia before that, my future wife, with her mamma and her aunt, and
-another female relation with a grown‐up son. He brought her straight
+another female relation with a grown-up son. He brought her straight
 from Poland and gave her up to me. He was a lieutenant in our regiment,
 a very nice young man. At first he meant to marry her himself. But he
 didn’t marry her, because she turned out to be lame.”
@@ -19602,13 +19604,13 @@ modestly assented, “with a _monsieur_. And what was worse, she’d had
 all my little property transferred to her beforehand. ‘You’re an
 educated man,’ she said to me. ‘You can always get your living.’ She
 settled my business with that. A venerable bishop once said to me: ‘One
-of your wives was lame, but the other was too light‐footed.’ He he!”
+of your wives was lame, but the other was too light-footed.’ He he!”
 
 “Listen, listen!” cried Kalganov, bubbling over, “if he’s telling
 lies—and he often is—he’s only doing it to amuse us all. There’s no
 harm in that, is there? You know, I sometimes like him. He’s awfully
 low, but it’s natural to him, eh? Don’t you think so? Some people are
-low from self‐ interest, but he’s simply so, from nature. Only fancy,
+low from self-interest, but he’s simply so, from nature. Only fancy,
 he claims (he was arguing about it all the way yesterday) that Gogol
 wrote _Dead Souls_ about him. Do you remember, there’s a landowner
 called Maximov in it, whom Nozdryov thrashed. He was charged, do you
@@ -19663,7 +19665,7 @@ every one...”
 “The famous French writer, Piron. We were all drinking then, a big
 party of us, in a tavern at that very fair. They’d invited me, and
 first of all I began quoting epigrams. ‘Is that you, Boileau? What a
-funny get‐up!’ and Boileau answers that he’s going to a masquerade,
+funny get-up!’ and Boileau answers that he’s going to a masquerade,
 that is to the baths, he he! And they took it to themselves, so I made
 haste to repeat another, very sarcastic, well known to all educated
 people:
@@ -19673,11 +19675,11 @@ But one grief is weighing on me.
 You don’t know your way to the sea!
 
 They were still more offended and began abusing me in the most unseemly
-way for it. And as ill‐luck would have it, to set things right, I began
+way for it. And as ill-luck would have it, to set things right, I began
 telling a very cultivated anecdote about Piron, how he was not accepted
 into the French Academy, and to revenge himself wrote his own epitaph:
 
-Ci‐gît Piron qui ne fut rien,
+Ci-gît Piron qui ne fut rien,
 Pas même académicien.
 
 They seized me and thrashed me.”
@@ -19795,11 +19797,11 @@ others to be dull. Before you came, Mitya, they were just as silent and
 kept turning up their noses at me.”
 
 “My goddess!” cried the Pole on the sofa, “I see you’re not
-well‐disposed to me, that’s why I’m gloomy. I’m ready, _panie_,” added
+well-disposed to me, that’s why I’m gloomy. I’m ready, _panie_,” added
 he, addressing Mitya.
 
 “Begin, _panie_,” Mitya assented, pulling his notes out of his pocket,
-and laying two hundred‐rouble notes on the table. “I want to lose a lot
+and laying two hundred-rouble notes on the table. “I want to lose a lot
 to you. Take your cards. Make the bank.”
 
 “We’ll have cards from the landlord, _panie_,” said the little Pole,
@@ -19932,7 +19934,7 @@ Kalganov.
 “How dare you!” Pan Vrublevsky, too, growled at Kalganov.
 
 “Don’t dare to shout like that,” cried Grushenka. “Ah, you
-turkey‐cocks!”
+turkey-cocks!”
 
 Mitya looked at each of them in turn. But something in Grushenka’s face
 suddenly struck him, and at the same instant something new flashed into
@@ -19978,7 +19980,7 @@ looked severe but were evidently inquisitive.
 you,” he pulled out his notes. “Would you like three thousand? Take it
 and go your way.”
 
-The Pole gazed open‐eyed at Mitya, with a searching look.
+The Pole gazed open-eyed at Mitya, with a searching look.
 
 “Three thousand, _panie_?” He exchanged glances with Vrublevsky.
 
@@ -19986,8 +19988,8 @@ The Pole gazed open‐eyed at Mitya, with a searching look.
 Take three thousand and go to the devil, and Vrublevsky with you—d’you
 hear? But, at once, this very minute, and for ever. You understand
 that, _panie_, for ever. Here’s the door, you go out of it. What have
-you got there, a great‐coat, a fur coat? I’ll bring it out to you.
-They’ll get the horses out directly, and then—good‐by, _panie_!”
+you got there, a great-coat, a fur coat? I’ll bring it out to you.
+They’ll get the horses out directly, and then—good-by, _panie_!”
 
 Mitya awaited an answer with assurance. He had no doubts. An expression
 of extraordinary resolution passed over the Pole’s face.
@@ -19996,7 +19998,7 @@ of extraordinary resolution passed over the Pole’s face.
 
 “The money, _panie_? Five hundred roubles I’ll give you this moment for
 the journey, and as a first installment, and two thousand five hundred
-to‐ morrow, in the town—I swear on my honor, I’ll get it, I’ll get it
+to-morrow, in the town—I swear on my honor, I’ll get it, I’ll get it
 at any cost!” cried Mitya.
 
 The Poles exchanged glances again. The short man’s face looked more
@@ -20005,7 +20007,7 @@ forbidding.
 “Seven hundred, seven hundred, not five hundred, at once, this minute,
 cash down!” Mitya added, feeling something wrong. “What’s the matter,
 _panie_? Don’t you trust me? I can’t give you the whole three thousand
-straight off. If I give it, you may come back to her to‐morrow....
+straight off. If I give it, you may come back to her to-morrow....
 Besides, I haven’t the three thousand with me. I’ve got it at home in
 the town,” faltered Mitya, his spirit sinking at every word he uttered.
 “Upon my word, the money’s there, hidden.”
@@ -20044,7 +20046,7 @@ The Pole gasped with offended dignity, and quickly and pompously
 delivered himself in broken Russian:
 
 “_Pani_ Agrafena, I came here to forget the past and forgive it, to
-forget all that has happened till to‐day—”
+forget all that has happened till to-day—”
 
 “Forgive? Came here to forgive me?” Grushenka cut him short, jumping up
 from her seat.
@@ -20152,7 +20154,7 @@ The little _pan_, crimson with fury but still mindful of his dignity,
 was making for the door, but he stopped short and said suddenly,
 addressing Grushenka:
 
-“_Pani_, if you want to come with me, come. If not, good‐by.”
+“_Pani_, if you want to come with me, come. If not, good-by.”
 
 And swelling with indignation and importance he went to the door. This
 was a man of character: he had so good an opinion of himself that after
@@ -20209,7 +20211,7 @@ pulled out his notes and given them away right and left. This was
 probably why the landlord, Trifon Borissovitch, kept hovering about
 Mitya to protect him. He seemed to have given up all idea of going to
 bed that night; but he drank little, only one glass of punch, and kept
-a sharp look‐out on Mitya’s interests after his own fashion. He
+a sharp look-out on Mitya’s interests after his own fashion. He
 intervened in the nick of time, civilly and obsequiously persuading
 Mitya not to give away “cigars and Rhine wine,” and, above all, money
 to the peasants as he had done before. He was very indignant, too, at
@@ -20264,13 +20266,13 @@ feverishly. He spoke strangely, often frowning, and stopping abruptly.
 “Nothing.... I left a man ill there. I’d give ten years of my life for
 him to get well, to know he was all right!”
 
-“Well, never mind him, if he’s ill. So you meant to shoot yourself to‐
-morrow! What a silly boy! What for? I like such reckless fellows as
+“Well, never mind him, if he’s ill. So you meant to shoot yourself
+to-morrow! What a silly boy! What for? I like such reckless fellows as
 you,” she lisped, with a rather halting tongue. “So you would go any
-length for me, eh? Did you really mean to shoot yourself to‐morrow, you
-stupid? No, wait a little. To‐morrow I may have something to say to
-you.... I won’t say it to‐day, but to‐morrow. You’d like it to be
-to‐day? No, I don’t want to to‐day. Come, go along now, go and amuse
+length for me, eh? Did you really mean to shoot yourself to-morrow, you
+stupid? No, wait a little. To-morrow I may have something to say to
+you.... I won’t say it to-day, but to-morrow. You’d like it to be
+to-day? No, I don’t want to to-day. Come, go along now, go and amuse
 yourself.”
 
 Once, however, she called him, as it were, puzzled and uneasy.
@@ -20293,7 +20295,7 @@ them.”
 “Look alive, Marya, or you’ll get the stick!”
 
 The bears rolled on the ground at last in the most unseemly fashion,
-amid roars of laughter from the closely‐packed crowd of men and women.
+amid roars of laughter from the closely-packed crowd of men and women.
 
 “Well, let them! Let them!” said Grushenka sententiously, with an
 ecstatic expression on her face. “When they do get a day to enjoy
@@ -20304,7 +20306,7 @@ Kalganov looked as though he had been besmirched with dirt.
 “It’s swinish, all this peasant foolery,” he murmured, moving away;
 “it’s the game they play when it’s light all night in summer.”
 
-He particularly disliked one “new” song to a jaunty dance‐tune. It
+He particularly disliked one “new” song to a jaunty dance-tune. It
 described how a gentleman came and tried his luck with the girls, to
 see whether they would love him:
 
@@ -20343,7 +20345,7 @@ And it appears that he wins their love because:
 The merchant will make gold for me
 And his queen I’ll gladly be.
 
-Kalvanov was positively indignant.
+Kalganov was positively indignant.
 
 “That’s just a song of yesterday,” he said aloud. “Who writes such
 things for them? They might just as well have had a railwayman or a Jew
@@ -20371,7 +20373,7 @@ He had drunk two cups of chocolate. His face was red, and his nose was
 crimson; his eyes were moist and mawkishly sweet. He ran up and
 announced that he was going to dance the “sabotière.”
 
-“They taught me all those well‐bred, aristocratic dances when I was
+“They taught me all those well-bred, aristocratic dances when I was
 little....”
 
 “Go, go with him, Mitya, and I’ll watch from here how he dances,” said
@@ -20529,12 +20531,12 @@ her tightly in his arms and kissed her passionately.
 “You will forgive me for having tormented you? It was through spite I
 tormented you all. It was for spite I drove the old man out of his
 mind.... Do you remember how you drank at my house one day and broke
-the wine‐glass? I remembered that and I broke a glass to‐day and drank
+the wine-glass? I remembered that and I broke a glass to-day and drank
 ‘to my vile heart.’ Mitya, my falcon, why don’t you kiss me? He kissed
 me once, and now he draws back and looks and listens. Why listen to me?
 Kiss me, kiss me hard, that’s right. If you love, well, then, love!
 I’ll be your slave now, your slave for the rest of my life. It’s sweet
-to be a slave. Kiss me! Beat me, ill‐treat me, do what you will with
+to be a slave. Kiss me! Beat me, ill-treat me, do what you will with
 me.... And I do deserve to suffer. Stay, wait, afterwards, I won’t have
 that....” she suddenly thrust him away. “Go along, Mitya, I’ll come and
 have some wine, I want to be drunk, I’m going to get drunk and dance; I
@@ -20563,7 +20565,7 @@ that moment he had been quite sober, he remembered that. From that
 moment everything whirled about him, as though he were delirious. He
 walked, laughed, talked to everybody, without knowing what he was
 doing. Only one persistent burning sensation made itself felt
-continually, “like a red‐hot coal in his heart,” he said afterwards. He
+continually, “like a red-hot coal in his heart,” he said afterwards. He
 went up to her, sat beside her, gazed at her, listened to her.... She
 became very talkative, kept calling every one to her, and beckoned to
 different girls out of the chorus. When the girl came up, she either
@@ -20578,15 +20580,15 @@ The little calf says—moo, moo, moo,
 The little duck says—quack, quack, quack,
 The little goose says—ga, ga, ga.
 The hen goes strutting through the porch;
-Troo‐roo‐roo‐roo‐roo, she’ll say,
-Troo‐roo‐roo‐roo‐roo, she’ll say!
+Troo-roo-roo-roo-roo, she’ll say,
+Troo-roo-roo-roo-roo, she’ll say!
 
 “Give him something, Mitya,” said Grushenka. “Give him a present, he’s
 poor, you know. Ah, the poor, the insulted!... Do you know, Mitya, I
 shall go into a nunnery. No, I really shall one day, Alyosha said
-something to me to‐day that I shall remember all my life.... Yes....
-But to‐day let us dance. To‐morrow to the nunnery, but to‐day we’ll
-dance. I want to play to‐day, good people, and what of it? God will
+something to me to-day that I shall remember all my life.... Yes....
+But to-day let us dance. To-morrow to the nunnery, but to-day we’ll
+dance. I want to play to-day, good people, and what of it? God will
 forgive us. If I were God, I’d forgive every one: ‘My dear sinners,
 from this day forth I forgive you.’ I’m going to beg forgiveness:
 ‘Forgive me, good people, a silly wench.’ I’m a beast, that’s what I
@@ -20617,7 +20619,7 @@ And its little tail curled tight.
 
 But Grushenka waved her handkerchief at him and drove him away.
 
-“Sh‐h! Mitya, why don’t they come? Let every one come ... to look on.
+“Sh-h! Mitya, why don’t they come? Let every one come ... to look on.
 Call them in, too, that were locked in.... Why did you lock them in?
 Tell them I’m going to dance. Let them look on, too....”
 
@@ -20747,8 +20749,8 @@ Mitya passed to the other side of the curtain and stood stock still.
 The room was filled with people, but not those who had been there
 before. An instantaneous shiver ran down his back, and he shuddered. He
 recognized all those people instantly. That tall, stout old man in the
-overcoat and forage‐cap with a cockade—was the police captain, Mihail
-Makarovitch. And that “consumptive‐looking” trim dandy, “who always has
+overcoat and forage-cap with a cockade—was the police captain, Mihail
+Makarovitch. And that “consumptive-looking” trim dandy, “who always has
 such polished boots”—that was the deputy prosecutor. “He has a
 chronometer worth four hundred roubles; he showed it to me.” And that
 small young man in spectacles.... Mitya forgot his surname though he
@@ -20800,7 +20802,7 @@ captain, “or I shall be forced to resort to—”
 But the little lawyer did not allow him to finish. He turned to Mitya,
 and delivered himself in a loud, firm, dignified voice:
 
-“Ex‐Lieutenant Karamazov, it is my duty to inform you that you are
+“Ex-Lieutenant Karamazov, it is my duty to inform you that you are
 charged with the murder of your father, Fyodor Pavlovitch Karamazov,
 perpetrated this night....”
 
@@ -20821,12 +20823,12 @@ before, and too much “upset” to go to bed, was almost frightened into
 hysterics on hearing the furious knocking at the gate. Though she had
 herself seen him drive away, she fancied that it must be Dmitri
 Fyodorovitch knocking again, no one else could knock so savagely. She
-ran to the house‐porter, who had already waked up and gone out to the
+ran to the house-porter, who had already waked up and gone out to the
 gate, and began imploring him not to open it. But having questioned
 Pyotr Ilyitch, and learned that he wanted to see Fenya on very
 “important business,” the man made up his mind at last to open. Pyotr
 Ilyitch was admitted into Fenya’s kitchen, but the girl begged him to
-allow the house‐porter to be present, “because of her misgivings.” He
+allow the house-porter to be present, “because of her misgivings.” He
 began questioning her and at once learnt the most vital fact, that is,
 that when Dmitri Fyodorovitch had run out to look for Grushenka, he had
 snatched up a pestle from the mortar, and that when he returned, the
@@ -20931,10 +20933,10 @@ The maid, gazing at him in amazement, went to take his message again.
 Madame Hohlakov was impressed. She thought a little, asked what he
 looked like, and learned that he was “very well dressed, young and so
 polite.” We may note, parenthetically, that Pyotr Ilyitch was a rather
-good‐looking young man, and well aware of the fact. Madame Hohlakov
-made up her mind to see him. She was in her dressing‐gown and slippers,
+good-looking young man, and well aware of the fact. Madame Hohlakov
+made up her mind to see him. She was in her dressing-gown and slippers,
 but she flung a black shawl over her shoulders. “The official” was
-asked to walk into the drawing‐room, the very room in which Mitya had
+asked to walk into the drawing-room, the very room in which Mitya had
 been received shortly before. The lady came to meet her visitor, with a
 sternly inquiring countenance, and, without asking him to sit down,
 began at once with the question:
@@ -20952,7 +20954,7 @@ fury:
 hysterically. “How dare you, sir, how could you venture to disturb a
 lady who is a stranger to you, in her own house at such an hour!... And
 to force yourself upon her to talk of a man who came here, to this very
-drawing‐room, only three hours ago, to murder me, and went stamping out
+drawing-room, only three hours ago, to murder me, and went stamping out
 of the room, as no one would go out of a decent house. Let me tell you,
 sir, that I shall lodge a complaint against you, that I will not let it
 pass. Kindly leave me at once.... I am a mother.... I ... I—”
@@ -20965,11 +20967,11 @@ pass. Kindly leave me at once.... I am a mother.... I ... I—”
 all in a couple of words,” answered Perhotin, firmly. “At five o’clock
 this afternoon Dmitri Fyodorovitch borrowed ten roubles from me, and I
 know for a fact he had no money. Yet at nine o’clock, he came to see me
-with a bundle of hundred‐rouble notes in his hand, about two or three
+with a bundle of hundred-rouble notes in his hand, about two or three
 thousand roubles. His hands and face were all covered with blood, and
 he looked like a madman. When I asked him where he had got so much
 money, he answered that he had just received it from you, that you had
-given him a sum of three thousand to go to the gold‐mines....”
+given him a sum of three thousand to go to the gold-mines....”
 
 Madame Hohlakov’s face assumed an expression of intense and painful
 excitement.
@@ -21034,13 +21036,13 @@ thought of it in your place!”
 “Especially as I know the police captain very well, too,” observed
 Pyotr Ilyitch, who still continued to stand, and was obviously anxious
 to escape as quickly as possible from the impulsive lady, who would not
-let him say good‐by and go away.
+let him say good-by and go away.
 
 “And be sure, be sure,” she prattled on, “to come back and tell me what
 you see there, and what you find out ... what comes to light ... how
 they’ll try him ... and what he’s condemned to.... Tell me, we have no
 capital punishment, have we? But be sure to come, even if it’s at three
-o’clock at night, at four, at half‐past four.... Tell them to wake me,
+o’clock at night, at four, at half-past four.... Tell them to wake me,
 to wake me, to shake me, if I don’t get up.... But, good heavens, I
 shan’t sleep! But wait, hadn’t I better come with you?”
 
@@ -21058,7 +21060,7 @@ following lines:
 
 I’ve never in my life lent to that unhappy man, Dmitri Fyodorovitch
 Karamazov (for, in spite of all, he is unhappy), three thousand roubles
-to‐day. I’ve never given him money, never: That I swear by all that’s
+to-day. I’ve never given him money, never: That I swear by all that’s
 holy!
 
 K. HOHLAKOV.
@@ -21088,7 +21090,7 @@ have taken her for her daughter.”
 As for Madame Hohlakov, she was simply enchanted by the young man.
 “Such sense! such exactness! in so young a man! in our day! and all
 that with such manners and appearance! People say the young people of
-to‐day are no good for anything, but here’s an example!” etc. So she
+to-day are no good for anything, but here’s an example!” etc. So she
 simply forgot this “dreadful affair,” and it was only as she was
 getting into bed, that, suddenly recalling “how near death she had
 been,” she exclaimed: “Ah, it is awful, awful!”
@@ -21107,25 +21109,25 @@ long history of the Brothers Karamazov.
 
 *The Alarm*
 
-Our police captain, Mihail Makarovitch Makarov, a retired lieutenant‐
-colonel, was a widower and an excellent man. He had only come to us
+Our police captain, Mihail Makarovitch Makarov, a retired lieutenant-colonel,
+was a widower and an excellent man. He had only come to us
 three years previously, but had won general esteem, chiefly because he
 “knew how to keep society together.” He was never without visitors, and
 could not have got on without them. Some one or other was always dining
 with him; he never sat down to table without guests. He gave regular
 dinners, too, on all sorts of occasions, sometimes most surprising
 ones. Though the fare was not _recherché_, it was abundant. The
-fish‐pies were excellent, and the wine made up in quantity for what it
+fish-pies were excellent, and the wine made up in quantity for what it
 lacked in quality.
 
-The first room his guests entered was a well‐fitted billiard‐room, with
-pictures of English race‐horses, in black frames on the walls, an
-essential decoration, as we all know, for a bachelor’s billiard‐room.
-There was card‐playing every evening at his house, if only at one
+The first room his guests entered was a well-fitted billiard-room, with
+pictures of English race-horses, in black frames on the walls, an
+essential decoration, as we all know, for a bachelor’s billiard-room.
+There was card-playing every evening at his house, if only at one
 table. But at frequent intervals, all the society of our town, with the
 mammas and young ladies, assembled at his house to dance. Though Mihail
 Makarovitch was a widower, he did not live alone. His widowed daughter
-lived with him, with her two unmarried daughters, grown‐up girls, who
+lived with him, with her two unmarried daughters, grown-up girls, who
 had finished their education. They were of agreeable appearance and
 lively character, and though every one knew they would have no dowry,
 they attracted all the young men of fashion to their grandfather’s
@@ -21190,10 +21192,10 @@ merriment, many playful jests about her age, and her being afraid to
 reveal it, about his knowing her secret and telling everybody, and so
 on. The charming young man was a great adept at such teasing; the
 ladies had christened him “the naughty man,” and he seemed to be
-delighted at the name. He was extremely well‐bred, however, of good
+delighted at the name. He was extremely well-bred, however, of good
 family, education and feelings, and, though leading a life of pleasure,
 his sallies were always innocent and in good taste. He was short, and
-delicate‐looking. On his white, slender, little fingers he always wore
+delicate-looking. On his white, slender, little fingers he always wore
 a number of big, glittering rings. When he was engaged in his official
 duties, he always became extraordinarily grave, as though realizing his
 position and the sanctity of the obligations laid upon him. He had a
@@ -21217,7 +21219,7 @@ of a sudden she waked up, no doubt roused by a fearful epileptic scream
 from Smerdyakov, who was lying in the next room unconscious. That
 scream always preceded his fits, and always terrified and upset Marfa
 Ignatyevna. She could never get accustomed to it. She jumped up and ran
-half‐awake to Smerdyakov’s room. But it was dark there, and she could
+half-awake to Smerdyakov’s room. But it was dark there, and she could
 only hear the invalid beginning to gasp and struggle. Then Marfa
 Ignatyevna herself screamed out and was going to call her husband, but
 suddenly realized that when she had got up, he was not beside her in
@@ -21252,9 +21254,9 @@ But Marfa continued screaming, and seeing that her master’s window was
 open and that there was a candle alight in the window, she ran there
 and began calling Fyodor Pavlovitch. But peeping in at the window, she
 saw a fearful sight. Her master was lying on his back, motionless, on
-the floor. His light‐colored dressing‐gown and white shirt were soaked
+the floor. His light-colored dressing-gown and white shirt were soaked
 with blood. The candle on the table brightly lighted up the blood and
-the motionless dead face of Fyodor Pavlovitch. Terror‐stricken, Marfa
+the motionless dead face of Fyodor Pavlovitch. Terror-stricken, Marfa
 rushed away from the window, ran out of the garden, drew the bolt of
 the big gate and ran headlong by the back way to the neighbor, Marya
 Kondratyevna. Both mother and daughter were asleep, but they waked up
@@ -21311,7 +21313,7 @@ Pavlovitch was lying. But by the bed, behind the screen, they picked up
 from the floor a big and thick envelope with the inscription: “A
 present of three thousand roubles for my angel Grushenka, if she is
 willing to come.” And below had been added by Fyodor Pavlovitch, “For
-my little chicken.” There were three seals of red sealing‐wax on the
+my little chicken.” There were three seals of red sealing-wax on the
 envelope, but it had been torn open and was empty: the money had been
 removed. They found also on the floor a piece of narrow pink ribbon,
 with which the envelope had been tied up.
@@ -21328,7 +21330,7 @@ find the criminal, before he really did shoot himself.
 
 “That’s clear, that’s clear!” repeated the prosecutor in great
 excitement. “That’s just the way with mad fellows like that: ‘I shall
-kill myself to‐ morrow, so I’ll make merry till I die!’ ”
+kill myself to-morrow, so I’ll make merry till I die!’”
 
 The story of how he had bought the wine and provisions excited the
 prosecutor more than ever.
@@ -21357,11 +21359,11 @@ off by Trifon Borissovitch and put in a suitable place. Only after four
 o’clock, almost at sunrise, all the officials, the police captain, the
 prosecutor, the investigating lawyer, drove up in two carriages, each
 drawn by three horses. The doctor remained at Fyodor Pavlovitch’s to
-make a post‐mortem next day on the body. But he was particularly
+make a post-mortem next day on the body. But he was particularly
 interested in the condition of the servant, Smerdyakov.
 
 “Such violent and protracted epileptic fits, recurring continually for
-twenty‐four hours, are rarely to be met with, and are of interest to
+twenty-four hours, are rarely to be met with, and are of interest to
 science,” he declared enthusiastically to his companions, and as they
 left they laughingly congratulated him on his find. The prosecutor and
 the investigating lawyer distinctly remembered the doctor’s saying that
@@ -21427,8 +21429,8 @@ of interrogation, so that he was utterly unable to tear himself away
 from them and dismiss them, as things that had nothing to do with his
 position. On Mitya’s left side, in the place where Maximov had been
 sitting at the beginning of the evening, the prosecutor was now seated,
-and on Mitya’s right hand, where Grushenka had been, was a rosy‐cheeked
-young man in a sort of shabby hunting‐jacket, with ink and paper before
+and on Mitya’s right hand, where Grushenka had been, was a rosy-cheeked
+young man in a sort of shabby hunting-jacket, with ink and paper before
 him. This was the secretary of the investigating lawyer, who had
 brought him with him. The police captain was now standing by the window
 at the other end of the room, beside Kalganov, who was sitting there.
@@ -21438,7 +21440,7 @@ time.
 
 “I have drunk it, gentlemen, I have ... but ... come, gentlemen, crush
 me, punish me, decide my fate!” cried Mitya, staring with terribly
-fixed wide‐ open eyes at the investigating lawyer.
+fixed wide-open eyes at the investigating lawyer.
 
 “So you positively declare that you are not guilty of the death of your
 father, Fyodor Pavlovitch?” asked the investigating lawyer, softly but
@@ -21448,7 +21450,7 @@ insistently.
 of my father’s. And I weep for it! I killed, I killed the old man and
 knocked him down.... But it’s hard to have to answer for that murder
 with another, a terrible murder of which I am not guilty.... It’s a
-terrible accusation, gentlemen, a knock‐down blow. But who has killed
+terrible accusation, gentlemen, a knock-down blow. But who has killed
 my father, who has killed him? Who can have killed him if I didn’t?
 It’s marvelous, extraordinary, impossible.”
 
@@ -21554,7 +21556,7 @@ on with our inquiry, I should like, if you will consent to answer, to
 hear you confirm the statement that you disliked your father, Fyodor
 Pavlovitch, that you were involved in continual disputes with him. Here
 at least, a quarter of an hour ago, you exclaimed that you wanted to
-kill him: ‘I didn’t kill him,’ you said, ‘but I wanted to kill him.’ ”
+kill him: ‘I didn’t kill him,’ you said, ‘but I wanted to kill him.’”
 
 “Did I exclaim that? Ach, that may be so, gentlemen! Yes, unhappily, I
 did want to kill him ... many times I wanted to ... unhappily,
@@ -21697,7 +21699,7 @@ time. And I soothed her, do you hear? I soothed and calmed her. I
 impressed on her that you have to clear yourself, so she mustn’t hinder
 you, must not depress you, or you may lose your head and say the wrong
 thing in your evidence. In fact, I talked to her and she understood.
-She’s a sensible girl, my boy, a good‐hearted girl, she would have
+She’s a sensible girl, my boy, a good-hearted girl, she would have
 kissed my old hands, begging help for you. She sent me herself, to tell
 you not to worry about her. And I must go, my dear fellow, I must go
 and tell her that you are calm and comforted about her. And so you must
@@ -21706,9 +21708,9 @@ soul, gentlemen, yes, I tell you, she’s a gentle soul, and not to blame
 for anything. So what am I to tell her, Dmitri Fyodorovitch? Will you
 sit quiet or not?”
 
-The good‐natured police captain said a great deal that was irregular,
+The good-natured police captain said a great deal that was irregular,
 but Grushenka’s suffering, a fellow creature’s suffering, touched his
-good‐ natured heart, and tears stood in his eyes. Mitya jumped up and
+good-natured heart, and tears stood in his eyes. Mitya jumped up and
 rushed towards him.
 
 “Forgive me, gentlemen, oh, allow me, allow me!” he cried. “You’ve the
@@ -21755,7 +21757,7 @@ So spoke Mitya. The interrogation began again.
 
 “You don’t know how you encourage us, Dmitri Fyodorovitch, by your
 readiness to answer,” said Nikolay Parfenovitch, with an animated air,
-and obvious satisfaction beaming in his very prominent, short‐sighted,
+and obvious satisfaction beaming in his very prominent, short-sighted,
 light gray eyes, from which he had removed his spectacles a moment
 before. “And you have made a very just remark about the mutual
 confidence, without which it is sometimes positively impossible to get
@@ -21777,7 +21779,7 @@ in the justice of his grievance. He had heard of him in Petersburg. On
 the other hand, young Nikolay Parfenovitch was the only person in the
 whole world whom our “unappreciated” prosecutor genuinely liked. On
 their way to Mokroe they had time to come to an understanding about the
-present case. And now as they sat at the table, the sharp‐witted junior
+present case. And now as they sat at the table, the sharp-witted junior
 caught and interpreted every indication on his senior colleague’s
 face—half a word, a glance, or a wink.
 
@@ -21821,7 +21823,7 @@ you in such pressing need for just that sum, three thousand?”
 just so much money, and not so much, and all that rigmarole. Why, it’ll
 run to three volumes, and then you’ll want an epilogue!”
 
-Mitya said all this with the good‐natured but impatient familiarity of
+Mitya said all this with the good-natured but impatient familiarity of
 a man who is anxious to tell the whole truth and is full of the best
 intentions.
 
@@ -21856,7 +21858,7 @@ you murder? Whom did you rob?’ Ha ha! That’s your regulation method,
 that’s where all your cunning comes in. You can put peasants off their
 guard like that, but not me. I know the tricks. I’ve been in the
 service, too. Ha ha ha! You’re not angry, gentlemen? You forgive my
-impertinence?” he cried, looking at them with a good‐nature that was
+impertinence?” he cried, looking at them with a good-nature that was
 almost surprising. “It’s only Mitya Karamazov, you know, so you can
 overlook it. It would be inexcusable in a sensible man; but you can
 forgive it in Mitya. Ha ha!”
@@ -21874,7 +21876,7 @@ began, indeed, with questions of the greatest importance.”
 “I understand. I saw it and appreciated it, and I appreciate still more
 your present kindness to me, an unprecedented kindness, worthy of your
 noble hearts. We three here are gentlemen, and let everything be on the
-footing of mutual confidence between educated, well‐bred people, who
+footing of mutual confidence between educated, well-bred people, who
 have the common bond of noble birth and honor. In any case, allow me to
 look upon you as my best friends at this moment of my life, at this
 moment when my honor is assailed. That’s no offense to you, gentlemen,
@@ -21933,7 +21935,7 @@ reader already. Mitya was impatiently anxious not to omit the slightest
 detail. At the same time he was in a hurry to get it over. But as he
 gave his evidence it was written down, and therefore they had
 continually to pull him up. Mitya disliked this, but submitted; got
-angry, though still good‐humoredly. He did, it is true, exclaim, from
+angry, though still good-humoredly. He did, it is true, exclaim, from
 time to time, “Gentlemen, that’s enough to make an angel out of
 patience!” Or, “Gentlemen, it’s no good your irritating me.”
 
@@ -21966,7 +21968,7 @@ considerably.
 “That boy, Nikolay Parfenovitch, to whom I was talking nonsense about
 women only a few days ago, and that sickly prosecutor are not worth my
 telling this to,” he reflected mournfully. “It’s ignominious. ‘Be
-patient, humble, hold thy peace.’ ” He wound up his reflections with
+patient, humble, hold thy peace.’” He wound up his reflections with
 that line. But he pulled himself together to go on again. When he came
 to telling of his visit to Madame Hohlakov, he regained his spirits and
 even wished to tell a little anecdote of that lady which had nothing to
@@ -22077,8 +22079,8 @@ real life! I’m a wolf and you’re the hunters. Well, hunt him down!”
 Parfenovitch, with extraordinary softness.
 
 “No, I’m not wrong, not at all!” Mitya flared up again, though his
-outburst of wrath had obviously relieved his heart. He grew more good‐
-humored at every word. “You may not trust a criminal or a man on trial
+outburst of wrath had obviously relieved his heart. He grew more
+good-humored at every word. “You may not trust a criminal or a man on trial
 tortured by your questions, but an honorable man, the honorable
 impulses of the heart (I say that boldly!)—no! That you must believe
 you have no right indeed ... but—
@@ -22247,7 +22249,7 @@ murderer.’ Confess that’s what you thought. Confess, and I’ll go on.”
 
 But the prosecutor did not confess. He held his tongue and waited.
 
-“You’re mistaken. I’m not going to shout ‘It’s Smerdyakov,’ ” said
+“You’re mistaken. I’m not going to shout ‘It’s Smerdyakov,’” said
 Mitya.
 
 “And you don’t even suspect him?”
@@ -22283,7 +22285,7 @@ should kill him, though I never raised my hand against him. He fell at
 my feet and blubbered; he has kissed these very boots, literally,
 beseeching me ‘not to frighten him.’ Do you hear? ‘Not to frighten
 him.’ What a thing to say! Why, I offered him money. He’s a puling
-chicken—sickly, epileptic, weak‐minded—a child of eight could thrash
+chicken—sickly, epileptic, weak-minded—a child of eight could thrash
 him. He has no character worth talking about. It’s not Smerdyakov,
 gentlemen. He doesn’t care for money; he wouldn’t take my presents.
 Besides, what motive had he for murdering the old man? Why, he’s very
@@ -22430,7 +22432,7 @@ after five years, and atone for the wrong with marriage.... So I knew
 it was all over for me.... And behind me disgrace, and that
 blood—Grigory’s.... What had I to live for? So I went to redeem the
 pistols I had pledged, to load them and put a bullet in my brain
-to‐morrow.”
+to-morrow.”
 
 “And a grand feast the night before?”
 
@@ -22455,8 +22457,8 @@ was through the devil that you found it out so soon. How did you manage
 to get here so quick? It’s marvelous, a dream!”
 
 “Mr. Perhotin informed us that when you came to him, you held in your
-hands ... your blood‐stained hands ... your money ... a lot of money
-... a bundle of hundred‐rouble notes, and that his servant‐boy saw it
+hands ... your blood-stained hands ... your money ... a lot of money
+... a bundle of hundred-rouble notes, and that his servant-boy saw it
 too.”
 
 “That’s true, gentlemen. I remember it was so.”
@@ -22511,7 +22513,7 @@ evidence, it was all still far away and misty; it was all floating, and
 I was so simple that I began with the supposition of mutual confidence
 existing between us. Now I can see for myself that such confidence is
 out of the question, for in any case we were bound to come to this
-cursed stumbling‐ block. And now we’ve come to it! It’s impossible and
+cursed stumbling-block. And now we’ve come to it! It’s impossible and
 there’s an end of it! But I don’t blame you. You can’t believe it all
 simply on my word. I understand that, of course.”
 
@@ -22524,7 +22526,7 @@ you to refuse to answer, at a crisis so full of danger to you?”
 
 Mitya smiled mournfully, almost dreamily.
 
-“I’m much more good‐natured than you think, gentlemen. I’ll tell you
+“I’m much more good-natured than you think, gentlemen. I’ll tell you
 the reason why and give you that hint, though you don’t deserve it. I
 won’t speak of that, gentlemen, because it would be a stain on my
 honor. The answer to the question where I got the money would expose me
@@ -22589,7 +22591,7 @@ seen. But here’s my money—count it—take it. That’s all, I think.”
 
 He turned it all out of his pockets; even the small change—two pieces
 of twenty copecks—he pulled out of his waistcoat pocket. They counted
-the money, which amounted to eight hundred and thirty‐six roubles, and
+the money, which amounted to eight hundred and thirty-six roubles, and
 forty copecks.
 
 “And is that all?” asked the investigating lawyer.
@@ -22691,10 +22693,10 @@ frankness. The secretary, for instance, who was also behind the
 curtain, fussing about and listening, called Nikolay Parfenovitch’s
 attention to the cap, which they were also fingering.
 
-“You remember Gridyenko, the copying‐clerk,” observed the secretary.
+“You remember Gridyenko, the copying-clerk,” observed the secretary.
 “Last summer he received the wages of the whole office, and pretended
 to have lost the money when he was drunk. And where was it found? Why,
-in just such pipings in his cap. The hundred‐rouble notes were screwed
+in just such pipings in his cap. The hundred-rouble notes were screwed
 up in little rolls and sewed in the piping.”
 
 Both the lawyers remembered Gridyenko’s case perfectly, and so laid
@@ -22900,16 +22902,16 @@ bears witness that you must have run from that door, though, of course,
 he did not see you do so with his own eyes, since he only noticed you
 first some distance away in the garden, running towards the fence.”
 
-Mitya had leapt up from his chair half‐way through this speech.
+Mitya had leapt up from his chair half-way through this speech.
 
 “Nonsense!” he yelled, in a sudden frenzy, “it’s a barefaced lie. He
 couldn’t have seen the door open because it was shut. He’s lying!”
 
 “I consider it my duty to repeat that he is firm in his statement. He
-does not waver. He adheres to it. We’ve cross‐examined him several
+does not waver. He adheres to it. We’ve cross-examined him several
 times.”
 
-“Precisely. I have cross‐examined him several times,” Nikolay
+“Precisely. I have cross-examined him several times,” Nikolay
 Parfenovitch confirmed warmly.
 
 “It’s false, false! It’s either an attempt to slander me, or the
@@ -23159,7 +23161,7 @@ thousand entrusted to my honor, I spend it on a spree, say I spend it
 all, and next morning I go to her and say, ‘Katya, I’ve done wrong,
 I’ve squandered your three thousand,’ well, is that right? No, it’s not
 right—it’s dishonest and cowardly, I’m a beast, with no more
-self‐control than a beast, that’s so, isn’t it? But still I’m not a
+self-control than a beast, that’s so, isn’t it? But still I’m not a
 thief? Not a downright thief, you’ll admit! I squandered it, but I
 didn’t steal it. Now a second, rather more favorable alternative:
 follow me carefully, or I may get confused again—my head’s going
@@ -23182,10 +23184,10 @@ difference.”
 
 “Yes, I see a vital difference! Every man may be a scoundrel, and
 perhaps every man is a scoundrel, but not every one can be a thief, it
-takes an arch‐scoundrel to be that. Oh, of course, I don’t know how to
+takes an arch-scoundrel to be that. Oh, of course, I don’t know how to
 make these fine distinctions ... but a thief is lower than a scoundrel,
 that’s my conviction. Listen, I carry the money about me a whole month,
-I may make up my mind to give it back to‐morrow, and I’m a scoundrel no
+I may make up my mind to give it back to-morrow, and I’m a scoundrel no
 longer, but I cannot make up my mind, you see, though I’m making up my
 mind every day, and every day spurring myself on to do it, and yet for
 a whole month I can’t bring myself to it, you see. Is that right to
@@ -23391,7 +23393,7 @@ that ‘amulet,’ as you call it, on your neck, a big thing?”
 
 “How big, for instance?”
 
-“If you fold a hundred‐rouble note in half, that would be the size.”
+“If you fold a hundred-rouble note in half, that would be the size.”
 
 “You’d better show us the remains of it. You must have them somewhere.”
 
@@ -23410,7 +23412,7 @@ minute.”
 
 “Without scissors, in the street?”
 
-“In the market‐place I think it was. Why scissors? It was an old rag.
+“In the market-place I think it was. Why scissors? It was an old rag.
 It was torn in a minute.”
 
 “Where did you put it afterwards?”
@@ -23419,7 +23421,7 @@ It was torn in a minute.”
 
 “Where was it, exactly?”
 
-“In the market‐place, in the market‐place! The devil knows whereabouts.
+“In the market-place, in the market-place! The devil knows whereabouts.
 What do you want to know for?”
 
 “That’s extremely important, Dmitri Fyodorovitch. It would be material
@@ -23445,7 +23447,7 @@ the money?”
 
 “Upon my word, I don’t remember. I might have torn a bit off my linen.”
 
-“That’s very interesting. We might find in your lodgings to‐morrow the
+“That’s very interesting. We might find in your lodgings to-morrow the
 shirt or whatever it is from which you tore the rag. What sort of rag
 was it, cloth or linen?”
 
@@ -23481,9 +23483,9 @@ old rag not worth a farthing.”
 his temper at last.
 
 “It’s strange that you should have so completely forgotten where you
-threw the pieces in the market‐place.”
+threw the pieces in the market-place.”
 
-“Give orders for the market‐place to be swept to‐morrow, and perhaps
+“Give orders for the market-place to be swept to-morrow, and perhaps
 you’ll find it,” said Mitya, sneering. “Enough, gentlemen, enough!” he
 decided, in an exhausted voice. “I see you don’t believe me! Not for a
 moment! It’s my fault, not yours. I ought not to have been so ready.
@@ -23514,7 +23516,7 @@ Mitya got up and went to the window.... The rain lashed against its
 little greenish panes. He could see the muddy road just below the
 house, and farther away, in the rain and mist, a row of poor, black,
 dismal huts, looking even blacker and poorer in the rain. Mitya thought
-of “Phœbus the golden‐haired,” and how he had meant to shoot himself at
+of “Phœbus the golden-haired,” and how he had meant to shoot himself at
 his first ray. “Perhaps it would be even better on a morning like
 this,” he thought with a smile, and suddenly, flinging his hand
 downwards, he turned to his “torturers.”
@@ -23533,7 +23535,7 @@ are so interested. I trust that it may be the same in the later
 development of the case.... On the contrary, we’ll do everything that
 lies in our power in that matter. Set your mind completely at rest.”
 
-“Gentlemen, I thank you. I knew that you were honest, straight‐forward
+“Gentlemen, I thank you. I knew that you were honest, straight-forward
 people in spite of everything. You’ve taken a load off my heart....
 Well, what are we to do now? I’m ready.”
 
@@ -23598,7 +23600,7 @@ gloomily, with a melancholy and exhausted air, as though he would say:
 
 “More than a thousand went on them, Dmitri Fyodorovitch,” retorted
 Trifon Borissovitch firmly. “You flung it about at random and they
-picked it up. They were a rascally, thievish lot, horse‐stealers,
+picked it up. They were a rascally, thievish lot, horse-stealers,
 they’ve been driven away from here, or maybe they’d bear witness
 themselves how much they got from you. I saw the sum in your hands,
 myself—count it I didn’t, you didn’t let me, that’s true enough—but by
@@ -23629,15 +23631,15 @@ They questioned all the peasants suggested by Trifon Borissovitch,
 Stepan and Semyon, the driver Andrey, and Kalganov. The peasants and
 the driver unhesitatingly confirmed Trifon Borissovitch’s evidence.
 They noted down, with particular care, Andrey’s account of the
-conversation he had had with Mitya on the road: “ ‘Where,’ says he, ‘am
+conversation he had had with Mitya on the road: “‘Where,’ says he, ‘am
 I, Dmitri Fyodorovitch, going, to heaven or to hell, and shall I be
-forgiven in the next world or not?’ ”
+forgiven in the next world or not?’”
 
 The psychological Ippolit Kirillovitch heard this with a subtle smile,
 and ended by recommending that these remarks as to where Dmitri
 Fyodorovitch would go should be “included in the case.”
 
-Kalganov, when called, came in reluctantly, frowning and ill‐humored,
+Kalganov, when called, came in reluctantly, frowning and ill-humored,
 and he spoke to the lawyers as though he had never met them before in
 his life, though they were acquaintances whom he had been meeting every
 day for a long time past. He began by saying that “he knew nothing
@@ -23754,8 +23756,8 @@ Nikolay Parfenovitch, with a smile.
 
 “To be sure I have, not twenty, but seven, when my wife mortgaged my
 little property. She’d only let me look at it from a distance, boasting
-of it to me. It was a very thick bundle, all rainbow‐colored notes. And
-Dmitri Fyodorovitch’s were all rainbow‐colored....”
+of it to me. It was a very thick bundle, all rainbow-colored notes. And
+Dmitri Fyodorovitch’s were all rainbow-colored....”
 
 He was not kept long. At last it was Grushenka’s turn. Nikolay
 Parfenovitch was obviously apprehensive of the effect her appearance
@@ -23947,7 +23949,7 @@ yet he wanted to ask just that, and he had to ask it just in that way.
 And he felt that a passion of pity, such as he had never known before,
 was rising in his heart, that he wanted to cry, that he wanted to do
 something for them all, so that the babe should weep no more, so that
-the dark‐ faced, dried‐up mother should not weep, that no one should
+the dark-faced, dried-up mother should not weep, that no one should
 shed tears again from that moment, and he wanted to do it at once, at
 once, regardless of all obstacles, with all the recklessness of the
 Karamazovs.
@@ -23988,15 +23990,15 @@ new light, as of joy, in his face.
 When the protocol had been signed, Nikolay Parfenovitch turned solemnly
 to the prisoner and read him the “Committal,” setting forth, that in
 such a year, on such a day, in such a place, the investigating lawyer
-of such‐ and‐such a district court, having examined so‐and‐so (to wit,
+of such-and-such a district court, having examined so-and-so (to wit,
 Mitya) accused of this and of that (all the charges were carefully
 written out) and having considered that the accused, not pleading
 guilty to the charges made against him, had brought forward nothing in
-his defense, while the witnesses, so‐and‐so, and so‐and‐so, and the
-circumstances such‐and‐such testify against him, acting in accordance
-with such‐and‐such articles of the Statute Book, and so on, has ruled,
-that, in order to preclude so‐and‐ so (Mitya) from all means of evading
-pursuit and judgment he be detained in such‐and‐such a prison, which he
+his defense, while the witnesses, so-and-so, and so-and-so, and the
+circumstances such-and-such testify against him, acting in accordance
+with such-and-such articles of the Statute Book, and so on, has ruled,
+that, in order to preclude so-and-so (Mitya) from all means of evading
+pursuit and judgment he be detained in such-and-such a prison, which he
 hereby notifies to the accused and communicates a copy of this same
 “Committal” to the deputy prosecutor, and so on, and so on.
 
@@ -24028,11 +24030,11 @@ for the last time, I am not guilty of my father’s blood. I accept my
 punishment, not because I killed him, but because I meant to kill him,
 and perhaps I really might have killed him. Still I mean to fight it
 out with you. I warn you of that. I’ll fight it out with you to the
-end, and then God will decide. Good‐by, gentlemen, don’t be vexed with
+end, and then God will decide. Good-by, gentlemen, don’t be vexed with
 me for having shouted at you during the examination. Oh, I was still
 such a fool then.... In another minute I shall be a prisoner, but now,
 for the last time, as a free man, Dmitri Karamazov offers you his hand.
-Saying good‐by to you, I say it to all men.”
+Saying good-by to you, I say it to all men.”
 
 His voice quivered and he stretched out his hand, but Nikolay
 Parfenovitch, who happened to stand nearest to him, with a sudden,
@@ -24057,7 +24059,7 @@ inappropriate thoughts sometimes occur even to a prisoner when he is
 being led out to execution.
 
 “Gentlemen, you are good, you are humane, may I see _her_ to say
-‘good‐by’ for the last time?” asked Mitya.
+‘good-by’ for the last time?” asked Mitya.
 
 “Certainly, but considering ... in fact, now it’s impossible except in
 the presence of—”
@@ -24080,7 +24082,7 @@ Mitya would have said something more, but he broke off and went out. He
 was at once surrounded by men who kept a constant watch on him. At the
 bottom of the steps to which he had driven up with such a dash the day
 before with Andrey’s three horses, two carts stood in readiness.
-Mavriky Mavrikyevitch, a sturdy, thick‐set man with a wrinkled face,
+Mavriky Mavrikyevitch, a sturdy, thick-set man with a wrinkled face,
 was annoyed about something, some sudden irregularity. He was shouting
 angrily. He asked Mitya to get into the cart with somewhat excessive
 surliness.
@@ -24095,7 +24097,7 @@ cart.
 
 “Forgive us too!” he heard two or three voices.
 
-“Good‐by to you, too, Trifon Borissovitch!”
+“Good-by to you, too, Trifon Borissovitch!”
 
 But Trifon Borissovitch did not even turn round. He was, perhaps, too
 busy. He, too, was shouting and fussing about something. It appeared
@@ -24107,9 +24109,9 @@ not to be seen. They ran to look for him. The peasant persisted and
 besought them to wait.
 
 “You see what our peasants are, Mavriky Mavrikyevitch. They’ve no
-shame!” exclaimed Trifon Borissovitch. “Akim gave you twenty‐five
+shame!” exclaimed Trifon Borissovitch. “Akim gave you twenty-five
 copecks the day before yesterday. You’ve drunk it all and now you cry
-out. I’m simply surprised at your good‐nature, with our low peasants,
+out. I’m simply surprised at your good-nature, with our low peasants,
 Mavriky Mavrikyevitch, that’s all I can say.”
 
 “But what do we want a second cart for?” Mitya put in. “Let’s start
@@ -24133,21 +24135,21 @@ heavily, and, as though without noticing it, squeezed Mitya into the
 corner. It is true that he was out of humor and greatly disliked the
 task that had been laid upon him.
 
-“Good‐by, Trifon Borissovitch!” Mitya shouted again, and felt himself,
-that he had not called out this time from good‐nature, but
+“Good-by, Trifon Borissovitch!” Mitya shouted again, and felt himself,
+that he had not called out this time from good-nature, but
 involuntarily, from resentment.
 
 But Trifon Borissovitch stood proudly, with both hands behind his back,
 and staring straight at Mitya with a stern and angry face, he made no
 reply.
 
-“Good‐by, Dmitri Fyodorovitch, good‐by!” he heard all at once the voice
+“Good-by, Dmitri Fyodorovitch, good-by!” he heard all at once the voice
 of Kalganov, who had suddenly darted out. Running up to the cart he
 held out his hand to Mitya. He had no cap on.
 
 Mitya had time to seize and press his hand.
 
-“Good‐by, dear fellow! I shan’t forget your generosity,” he cried
+“Good-by, dear fellow! I shan’t forget your generosity,” he cried
 warmly.
 
 But the cart moved and their hands parted. The bell began ringing and
@@ -24176,13 +24178,13 @@ It was the beginning of November. There had been a hard frost, eleven
 degrees Réaumur, without snow, but a little dry snow had fallen on the
 frozen ground during the night, and a keen dry wind was lifting and
 blowing it along the dreary streets of our town, especially about the
-market‐place. It was a dull morning, but the snow had ceased.
+market-place. It was a dull morning, but the snow had ceased.
 
-Not far from the market‐place, close to Plotnikov’s shop, there stood a
+Not far from the market-place, close to Plotnikov’s shop, there stood a
 small house, very clean both without and within. It belonged to Madame
 Krassotkin, the widow of a former provincial secretary, who had been
-dead for fourteen years. His widow, still a nice‐looking woman of
-thirty‐two, was living in her neat little house on her private means.
+dead for fourteen years. His widow, still a nice-looking woman of
+thirty-two, was living in her neat little house on her private means.
 She lived in respectable seclusion; she was of a soft but fairly
 cheerful disposition. She was about eighteen at the time of her
 husband’s death; she had been married only a year and had just borne
@@ -24203,7 +24205,7 @@ began to mock at him on her account and taunt him with being a
 
 But the boy could take his own part. He was a resolute boy,
 “tremendously strong,” as was rumored in his class, and soon proved to
-be the fact; he was agile, strong‐willed, and of an audacious and
+be the fact; he was agile, strong-willed, and of an audacious and
 enterprising temper. He was good at lessons, and there was a rumor in
 the school that he could beat the teacher, Dardanelov, at arithmetic
 and universal history. Though he looked down upon every one, he was a
@@ -24241,7 +24243,7 @@ alarm. It is true there was nothing vicious in what he did, but a wild
 mad recklessness.
 
 It happened that July, during the summer holidays, that the mother and
-son went to another district, forty‐five miles away, to spend a week
+son went to another district, forty-five miles away, to spend a week
 with a distant relation, whose husband was an official at the railway
 station (the very station, the nearest one to our town, from which a
 month later Ivan Fyodorovitch Karamazov set off for Moscow). There
@@ -24270,7 +24272,7 @@ insult.
 
 And so it was resolved to go in the evening, half a mile from the
 station, so that the train might have time to get up full speed after
-leaving the station. The boys assembled. It was a pitch‐dark night
+leaving the station. The boys assembled. It was a pitch-dark night
 without a moon. At the time fixed, Kolya lay down between the rails.
 The five others who had taken the bet waited among the bushes below the
 embankment, their hearts beating with suspense, which was followed by
@@ -24295,14 +24297,14 @@ to entreat the masters on her boy’s behalf, and in the end Dardanelov,
 a respected and influential teacher, exerted himself in his favor, and
 the affair was ignored.
 
-Dardanelov was a middle‐aged bachelor, who had been passionately in
+Dardanelov was a middle-aged bachelor, who had been passionately in
 love with Madame Krassotkin for many years past, and had once already,
 about a year previously, ventured, trembling with fear and the delicacy
 of his sentiments, to offer her most respectfully his hand in marriage.
 But she refused him resolutely, feeling that to accept him would be an
 act of treachery to her son, though Dardanelov had, to judge from
 certain mysterious symptoms, reason for believing that he was not an
-object of aversion to the charming but too chaste and tender‐hearted
+object of aversion to the charming but too chaste and tender-hearted
 widow. Kolya’s mad prank seemed to have broken the ice, and Dardanelov
 was rewarded for his intercession by a suggestion of hope. The
 suggestion, it is true, was a faint one, but then Dardanelov was such a
@@ -24414,7 +24416,7 @@ sternly at the luckless dog, who relapsed again into obedient rigidity.
 The one thing that troubled Kolya was “the kids.” He looked, of course,
 with the utmost scorn on Katerina’s unexpected adventure, but he was
 very fond of the bereaved “kiddies,” and had already taken them a
-picture‐book. Nastya, the elder, a girl of eight, could read, and
+picture-book. Nastya, the elder, a girl of eight, could read, and
 Kostya, the boy, aged seven, was very fond of being read to by her.
 Krassotkin could, of course, have provided more diverting entertainment
 for them. He could have made them stand side by side and played
@@ -24422,7 +24424,7 @@ soldiers with them, or sent them hiding all over the house. He had done
 so more than once before and was not above doing it, so much so that a
 report once spread at school that Krassotkin played horses with the
 little lodgers at home, prancing with his head on one side like a
-trace‐horse. But Krassotkin haughtily parried this thrust, pointing out
+trace-horse. But Krassotkin haughtily parried this thrust, pointing out
 that to play horses with boys of one’s own age, boys of thirteen, would
 certainly be disgraceful “at this date,” but that he did it for the
 sake of “the kids” because he liked them, and no one had a right to
@@ -24466,7 +24468,7 @@ in the passage to listen. The children saw he was listening and that
 made them dispute with even greater energy.
 
 “I shall never, never believe,” Nastya prattled, “that the old women
-find babies among the cabbages in the kitchen‐garden. It’s winter now
+find babies among the cabbages in the kitchen-garden. It’s winter now
 and there are no cabbages, and so the old woman couldn’t have taken
 Katerina a daughter.”
 
@@ -24485,7 +24487,7 @@ Nastya was exasperated.
 “You know nothing about it,” she snapped irritably. “Perhaps she has a
 husband, only he is in prison, so now she’s got a baby.”
 
-“But is her husband in prison?” the matter‐of‐fact Kostya inquired
+“But is her husband in prison?” the matter-of-fact Kostya inquired
 gravely.
 
 “Or, I tell you what,” Nastya interrupted impulsively, completely
@@ -24533,7 +24535,7 @@ with shot and fired off.”
 
 “It can kill any one; you’ve only got to aim at anybody,” and
 Krassotkin explained where the powder had to be put, where the shot
-should be rolled in, showing a tiny hole like a touch‐hole, and told
+should be rolled in, showing a tiny hole like a touch-hole, and told
 them that it kicked when it was fired.
 
 The children listened with intense interest. What particularly struck
@@ -24553,7 +24555,7 @@ palm of his hand.
 “One has to be careful there’s no fire about, or it would blow up and
 kill us all,” Krassotkin warned them sensationally.
 
-The children gazed at the powder with an awe‐stricken alarm that only
+The children gazed at the powder with an awe-stricken alarm that only
 intensified their enjoyment. But Kostya liked the shot better.
 
 “And does the shot burn?” he inquired.
@@ -24587,12 +24589,12 @@ how long. And time is passing, time is passing, oogh!”
 Perezvon.” And Kolya began giving orders to the dog, who performed all
 his tricks.
 
-He was a rough‐haired dog, of medium size, with a coat of a sort of
-lilac‐ gray color. He was blind in his right eye, and his left ear was
+He was a rough-haired dog, of medium size, with a coat of a sort of
+lilac-gray color. He was blind in his right eye, and his left ear was
 torn. He whined and jumped, stood and walked on his hind legs, lay on
 his back with his paws in the air, rigid as though he were dead. While
 this last performance was going on, the door opened and Agafya, Madame
-Krassotkin’s servant, a stout woman of forty, marked with small‐pox,
+Krassotkin’s servant, a stout woman of forty, marked with small-pox,
 appeared in the doorway. She had come back from market and had a bag
 full of provisions in her hand. Holding up the bag of provisions in her
 left hand she stood still to watch the dog. Though Kolya had been so
@@ -24635,7 +24637,7 @@ something, Agafya, won’t you?”
 
 “That I can do.”
 
-“Good‐by, chickens, I go with my heart at rest. And you, granny,” he
+“Good-by, chickens, I go with my heart at rest. And you, granny,” he
 added gravely, in an undertone, as he passed Agafya, “I hope you’ll
 spare their tender years and not tell them any of your old woman’s
 nonsense about Katerina. _Ici_, Perezvon!”
@@ -24651,13 +24653,13 @@ what you want!”
 But Kolya did not hear her. At last he could go out. As he went out at
 the gate he looked round him, shrugged up his shoulders, and saying “It
 is freezing,” went straight along the street and turned off to the
-right towards the market‐place. When he reached the last house but one
-before the market‐place he stopped at the gate, pulled a whistle out of
+right towards the market-place. When he reached the last house but one
+before the market-place he stopped at the gate, pulled a whistle out of
 his pocket, and whistled with all his might as though giving a signal.
-He had not to wait more than a minute before a rosy‐cheeked boy of
+He had not to wait more than a minute before a rosy-cheeked boy of
 about eleven, wearing a warm, neat and even stylish coat, darted out to
 meet him. This was Smurov, a boy in the preparatory class (two classes
-below Kolya Krassotkin), son of a well‐to‐do official. Apparently he
+below Kolya Krassotkin), son of a well-to-do official. Apparently he
 was forbidden by his parents to associate with Krassotkin, who was well
 known to be a desperately naughty boy, so Smurov was obviously slipping
 out on the sly. He was—if the reader has not forgotten—one of the group
@@ -24665,7 +24667,7 @@ of boys who two months before had thrown stones at Ilusha. He was the
 one who told Alyosha Karamazov about Ilusha.
 
 “I’ve been waiting for you for the last hour, Krassotkin,” said Smurov
-stolidly, and the boys strode towards the market‐place.
+stolidly, and the boys strode towards the market-place.
 
 “I am late,” answered Krassotkin. “I was detained by circumstances. You
 won’t be thrashed for coming with me?”
@@ -24680,11 +24682,11 @@ won’t be thrashed for coming with me?”
 
 “Ah! if it were only Zhutchka!”
 
-“That’s impossible. Zhutchka’s non‐existent. Zhutchka is lost in the
+“That’s impossible. Zhutchka’s non-existent. Zhutchka is lost in the
 mists of obscurity.”
 
 “Ah! couldn’t we do this?” Smurov suddenly stood still. “You see Ilusha
-says that Zhutchka was a shaggy, grayish, smoky‐looking dog like
+says that Zhutchka was a shaggy, grayish, smoky-looking dog like
 Perezvon. Couldn’t you tell him this is Zhutchka, and he might believe
 you?”
 
@@ -24695,7 +24697,7 @@ coming.”
 “Heaven forbid! I know what I am about. But you won’t comfort him with
 Perezvon,” said Smurov, with a sigh. “You know his father, the captain,
 ‘the wisp of tow,’ told us that he was going to bring him a real
-mastiff pup, with a black nose, to‐day. He thinks that would comfort
+mastiff pup, with a black nose, to-day. He thinks that would comfort
 Ilusha; but I doubt it.”
 
 “And how is Ilusha?”
@@ -24722,7 +24724,7 @@ you’ve got up there? The whole class seems to be there every day.”
 every day. There’s nothing in that.”
 
 “What I don’t understand in all this is the part that Alexey Karamazov
-is taking in it. His brother’s going to be tried to‐morrow or next day
+is taking in it. His brother’s going to be tried to-morrow or next day
 for such a crime, and yet he has so much time to spend on
 sentimentality with boys.”
 
@@ -24761,7 +24763,7 @@ of course, worshiped Krassotkin and never dreamed of putting himself on
 a level with him. Now he was tremendously interested at Kolya’s saying
 that he was “going of himself” to see Ilusha. He felt that there must
 be some mystery in Kolya’s suddenly taking it into his head to go to
-him that day. They crossed the market‐place, in which at that hour were
+him that day. They crossed the market-place, in which at that hour were
 many loaded wagons from the country and a great number of live fowls.
 The market women were selling rolls, cottons and threads, etc., in
 their booths. These Sunday markets were naïvely called “fairs” in the
@@ -24801,9 +24803,9 @@ do now, in the beginning of winter, when there is a sudden frost of
 twelve degrees, especially when there is not much snow. It’s because
 people are not used to it. Everything is habit with men, everything
 even in their social and political relations. Habit is the great
-motive‐power. What a funny‐looking peasant!”
+motive-power. What a funny-looking peasant!”
 
-Kolya pointed to a tall peasant, with a good‐natured countenance in a
+Kolya pointed to a tall peasant, with a good-natured countenance in a
 long sheepskin coat, who was standing by his wagon, clapping together
 his hands, in their shapeless leather gloves, to warm them. His long
 fair beard was all white with frost.
@@ -24816,10 +24818,10 @@ sententiously.
 
 “Don’t provoke him,” observed Smurov.
 
-“It’s all right; he won’t be cross; he’s a nice fellow. Good‐by,
+“It’s all right; he won’t be cross; he’s a nice fellow. Good-by,
 Matvey.”
 
-“Good‐by.”
+“Good-by.”
 
 “Is your name Matvey?”
 
@@ -24842,9 +24844,9 @@ Matvey.”
 “Ech, what a life!” The peasant heaved a sigh from the bottom of his
 heart.
 
-“Good‐by, Matvey.”
+“Good-by, Matvey.”
 
-“Good‐by. You are a nice chap, that you are.”
+“Good-by. You are a nice chap, that you are.”
 
 The boys went on.
 
@@ -24875,10 +24877,10 @@ cross. I am strictly forbidden to go out with you.”
 “Don’t be uneasy, nothing will happen this time. Hallo, Natasha!” he
 shouted to a market woman in one of the booths.
 
-“Call me Natasha! What next! My name is Marya,” the middle‐aged market
+“Call me Natasha! What next! My name is Marya,” the middle-aged market
 woman shouted at him.
 
-“I am so glad it’s Marya. Good‐by!”
+“I am so glad it’s Marya. Good-by!”
 
 “Ah, you young rascal! A brat like you to carry on so!”
 
@@ -24907,7 +24909,7 @@ could hardly remember them all.
 
 “I know you! I know you!” the man repeated idiotically.
 
-“So much the better for you. Well, it’s time I was going. Good‐by!”
+“So much the better for you. Well, it’s time I was going. Good-by!”
 
 “You are at your saucy pranks again?” cried the man. “You are at your
 saucy pranks again? I know, you are at it again!”
@@ -24974,7 +24976,7 @@ confirmed the statement.
 The bewildered youth gazed from one to another.
 
 “But what did he ask for, what did he ask for, good people?” he cried
-almost in desperation. “ ‘Do you know Sabaneyev?’ says he. And who the
+almost in desperation. “‘Do you know Sabaneyev?’ says he. And who the
 devil’s to know who is Sabaneyev?”
 
 “You’re a senseless fellow. I tell you it’s not Sabaneyev, but
@@ -25025,7 +25027,7 @@ peasant, eh?”
 
 “Nothing could stop me, now I am once off. Hey, good morning, peasant!”
 
-A sturdy‐looking peasant, with a round, simple face and grizzled beard,
+A sturdy-looking peasant, with a round, simple face and grizzled beard,
 who was walking by, raised his head and looked at the boy. He seemed
 not quite sober.
 
@@ -25058,15 +25060,15 @@ gravity.
 
 “It is, brother.”
 
-“Good‐by, peasant!”
+“Good-by, peasant!”
 
-“Good‐by!”
+“Good-by!”
 
 “There are all sorts of peasants,” Kolya observed to Smurov after a
 brief silence. “How could I tell I had hit on a clever one? I am always
 ready to recognize intelligence in the peasantry.”
 
-In the distance the cathedral clock struck half‐past eleven. The boys
+In the distance the cathedral clock struck half-past eleven. The boys
 made haste and they walked as far as Captain Snegiryov’s lodging, a
 considerable distance, quickly and almost in silence. Twenty paces from
 the house Kolya stopped and told Smurov to go on ahead and ask
@@ -25098,7 +25100,7 @@ himself at his best, to show his independence, “Or he’ll think of me as
 thirteen and take me for a boy, like the rest of them. And what are
 these boys to him? I shall ask him when I get to know him. It’s a pity
 I am so short, though. Tuzikov is younger than I am, yet he is half a
-head taller. But I have a clever face. I am not good‐looking. I know
+head taller. But I have a clever face. I am not good-looking. I know
 I’m hideous, but I’ve a clever face. I mustn’t talk too freely; if I
 fall into his arms all at once, he may think—Tfoo! how horrible if he
 should think—!”
@@ -25107,7 +25109,7 @@ Such were the thoughts that excited Kolya while he was doing his utmost
 to assume the most independent air. What distressed him most was his
 being so short; he did not mind so much his “hideous” face, as being so
 short. On the wall in a corner at home he had the year before made a
-pencil‐mark to show his height, and every two months since he anxiously
+pencil-mark to show his height, and every two months since he anxiously
 measured himself against it to see how much he had gained. But alas! he
 grew very slowly, and this sometimes reduced him almost to despair. His
 face was in reality by no means “hideous”; on the contrary, it was
@@ -25116,11 +25118,11 @@ gray eyes had a fearless look, and often glowed with feeling. He had
 rather high cheekbones; small, very red, but not very thick, lips; his
 nose was small and unmistakably turned up. “I’ve a regular pug nose, a
 regular pug nose,” Kolya used to mutter to himself when he looked in
-the looking‐glass, and he always left it with indignation. “But perhaps
+the looking-glass, and he always left it with indignation. “But perhaps
 I haven’t got a clever face?” he sometimes thought, doubtful even of
 that. But it must not be supposed that his mind was preoccupied with
 his face and his height. On the contrary, however bitter the moments
-before the looking‐glass were to him, he quickly forgot them, and
+before the looking-glass were to him, he quickly forgot them, and
 forgot them for a long time, “abandoning himself entirely to ideas and
 to real life,” as he formulated it to himself.
 
@@ -25128,11 +25130,11 @@ Alyosha came out quickly and hastened up to Kolya. Before he reached
 him, Kolya could see that he looked delighted. “Can he be so glad to
 see me?” Kolya wondered, feeling pleased. We may note here, in passing,
 that Alyosha’s appearance had undergone a complete change since we saw
-him last. He had abandoned his cassock and was wearing now a well‐cut
+him last. He had abandoned his cassock and was wearing now a well-cut
 coat, a soft, round hat, and his hair had been cropped short. All this
 was very becoming to him, and he looked quite handsome. His charming
-face always had a good‐humored expression; but there was a gentleness
-and serenity in his good‐humor. To Kolya’s surprise, Alyosha came out
+face always had a good-humored expression; but there was a gentleness
+and serenity in his good-humor. To Kolya’s surprise, Alyosha came out
 to him just as he was, without an overcoat. He had evidently come in
 haste. He held out his hand to Kolya at once.
 
@@ -25180,7 +25182,7 @@ they jeered at him. That I can’t stand. I stood up for him at once, and
 gave it to them hot. I beat them, but they adore me, do you know,
 Karamazov?” Kolya boasted impulsively; “but I am always fond of
 children. I’ve two chickens in my hands at home now—that’s what
-detained me to‐day. So they left off beating Ilusha and I took him
+detained me to-day. So they left off beating Ilusha and I took him
 under my protection. I saw the boy was proud. I tell you that, the boy
 was proud; but in the end he became slavishly devoted to me: he did my
 slightest bidding, obeyed me as though I were God, tried to copy me. In
@@ -25324,7 +25326,7 @@ though, and, by the way, what is your name? I know you are called
 Kolya, but what else?”
 
 “Nikolay—Nikolay Ivanovitch Krassotkin, or, as they say in official
-documents, ‘Krassotkin son.’ ” Kolya laughed for some reason, but added
+documents, ‘Krassotkin son.’” Kolya laughed for some reason, but added
 suddenly, “Of course I hate my name Nikolay.”
 
 “Why so?”
@@ -25350,7 +25352,7 @@ harm?”
 
 “Come, I say, for my own amusement! You don’t play horses, do you?”
 
-“But you must look at it like this,” said Alyosha, smiling. “Grown‐up
+“But you must look at it like this,” said Alyosha, smiling. “Grown-up
 people go to the theater and there the adventures of all sorts of
 heroes are represented—sometimes there are robbers and battles, too—and
 isn’t that just the same thing, in a different form, of course? And
@@ -25453,7 +25455,7 @@ memory of the “wisp of tow” and that “terrible day.”
 
 Nina, Ilusha’s gentle, crippled sister, did not like her father’s
 buffoonery either (Varvara had been gone for some time past to
-Petersburg to study at the university). But the half‐imbecile mother
+Petersburg to study at the university). But the half-imbecile mother
 was greatly diverted and laughed heartily when her husband began
 capering about or performing something. It was the only way she could
 be amused; all the rest of the time she was grumbling and complaining
@@ -25486,8 +25488,8 @@ of money. He had taken the two hundred roubles from Katerina Ivanovna
 just as Alyosha had predicted he would. And afterwards Katerina
 Ivanovna, learning more about their circumstances and Ilusha’s illness,
 visited them herself, made the acquaintance of the family, and
-succeeded in fascinating the half‐ imbecile mother. Since then she had
-been lavish in helping them, and the captain, terror‐stricken at the
+succeeded in fascinating the half-imbecile mother. Since then she had
+been lavish in helping them, and the captain, terror-stricken at the
 thought that his boy might be dying, forgot his pride and humbly
 accepted her assistance.
 
@@ -25530,7 +25532,7 @@ Krassotkin has come to see you!”
 
 But Krassotkin, shaking hands with him hurriedly, instantly showed his
 complete knowledge of the manners of good society. He turned first to
-the captain’s wife sitting in her arm‐chair, who was very ill‐humored
+the captain’s wife sitting in her arm-chair, who was very ill-humored
 at the moment, and was grumbling that the boys stood between her and
 Ilusha’s bed and did not let her see the new puppy. With the greatest
 courtesy he made her a bow, scraping his foot, and turning to Nina, he
@@ -25577,7 +25579,7 @@ callous voice.
 
 “Ye—es,” answered Ilusha in a long whisper, gasping for breath.
 
-“A black nose, that means he’ll be fierce, a good house‐dog,” Kolya
+“A black nose, that means he’ll be fierce, a good house-dog,” Kolya
 observed gravely and stolidly, as if the only thing he cared about was
 the puppy and its black nose. But in reality he still had to do his
 utmost to control his feelings not to burst out crying like a child,
@@ -25597,7 +25599,7 @@ we’ve been hoping to see you a long time.... You were so kind as to
 come with Alexey Fyodorovitch?”
 
 Krassotkin sat on the edge of the bed, at Ilusha’s feet. Though he had
-perhaps prepared a free‐and‐easy opening for the conversation on his
+perhaps prepared a free-and-easy opening for the conversation on his
 way, now he completely lost the thread of it.
 
 “No ... I came with Perezvon. I’ve got a dog now, called Perezvon. A
@@ -25639,7 +25641,7 @@ Smurov, “Open the door,” and as soon as it was open, he blew his
 whistle. Perezvon dashed headlong into the room.
 
 “Jump, Perezvon, beg! Beg!” shouted Kolya, jumping up, and the dog
-stood erect on its hind‐legs by Ilusha’s bedside. What followed was a
+stood erect on its hind-legs by Ilusha’s bedside. What followed was a
 surprise to every one: Ilusha started, lurched violently forward, bent
 over Perezvon and gazed at him, faint with suspense.
 
@@ -25654,7 +25656,7 @@ lifted him up to Ilusha.
 just the marks you described to me. It was by that I found him. I found
 him directly. He did not belong to any one!” he explained, turning
 quickly to the captain, to his wife, to Alyosha and then again to
-Ilusha. “He used to live in the Fedotovs’ back‐yard. Though he made his
+Ilusha. “He used to live in the Fedotovs’ back-yard. Though he made his
 home there, they did not feed him. He was a stray dog that had run away
 from the village ... I found him.... You see, old man, he couldn’t have
 swallowed what you gave him. If he had, he must have died, he must
@@ -25664,7 +25666,7 @@ ran away squealing and you thought he’d swallowed it. He might well
 squeal, because the skin of dogs’ mouths is so tender ... tenderer than
 in men, much tenderer!” Kolya cried impetuously, his face glowing and
 radiant with delight. Ilusha could not speak. White as a sheet, he
-gazed open‐mouthed at Kolya, with his great eyes almost starting out of
+gazed open-mouthed at Kolya, with his great eyes almost starting out of
 his head. And if Krassotkin, who had no suspicion of it, had known what
 a disastrous and fatal effect such a moment might have on the sick
 child’s health, nothing would have induced him to play such a trick on
@@ -25688,11 +25690,11 @@ clapping.
 “Wait, wait,” Krassotkin did his utmost to shout above them all. “I’ll
 tell you how it happened, that’s the whole point. I found him, I took
 him home and hid him at once. I kept him locked up at home and did not
-show him to any one till to‐day. Only Smurov has known for the last
+show him to any one till to-day. Only Smurov has known for the last
 fortnight, but I assured him this dog was called Perezvon and he did
 not guess. And meanwhile I taught the dog all sorts of tricks. You
 should only see all the things he can do! I trained him so as to bring
-you a well‐trained dog, in good condition, old man, so as to be able to
+you a well-trained dog, in good condition, old man, so as to be able to
 say to you, ‘See, old man, what a fine dog your Zhutchka is now!’
 Haven’t you a bit of meat? He’ll show you a trick that will make you
 die with laughing. A piece of meat, haven’t you got any?”
@@ -25711,7 +25713,7 @@ but if I call to him, he’ll jump up in a minute. Ici, Perezvon!” The
 dog leapt up and bounded about, whining with delight. The captain ran
 back with a piece of cooked beef.
 
-“Is it hot?” Kolya inquired hurriedly, with a business‐like air, taking
+“Is it hot?” Kolya inquired hurriedly, with a business-like air, taking
 the meat. “Dogs don’t like hot things. No, it’s all right. Look,
 everybody, look, Ilusha, look, old man; why aren’t you looking? He does
 not look at him, now I’ve brought him.”
@@ -25758,7 +25760,7 @@ enchanted himself.
 
 “I’ve been coveting this thing for a long while; it’s for you, old man,
 it’s for you. It belonged to Morozov, it was no use to him, he had it
-from his brother. I swopped a book from father’s book‐case for it, _A
+from his brother. I swopped a book from father’s book-case for it, _A
 Kinsman of Mahomet or Salutary Folly_, a scandalous book published in
 Moscow a hundred years ago, before they had any censorship. And Morozov
 has a taste for such things. He was grateful to me, too....”
@@ -25776,7 +25778,7 @@ and the shot. The captain, as a military man, undertook to load it,
 putting in a minute quantity of powder. He asked that the shot might be
 put off till another time. The cannon was put on the floor, aiming
 towards an empty part of the room, three grains of powder were thrust
-into the touch‐hole and a match was put to it. A magnificent explosion
+into the touch-hole and a match was put to it. A magnificent explosion
 followed. Mamma was startled, but at once laughed with delight. The
 boys gazed in speechless triumph. But the captain, looking at Ilusha,
 was more enchanted than any of them. Kolya picked up the cannon and
@@ -25817,7 +25819,7 @@ and did so.
 grateful lady, pointing to Krassotkin.
 
 “And I’ll bring you as much powder as you like, Ilusha. We make the
-powder ourselves now. Borovikov found out how it’s made—twenty‐four
+powder ourselves now. Borovikov found out how it’s made—twenty-four
 parts of saltpeter, ten of sulphur and six of birchwood charcoal. It’s
 all pounded together, mixed into a paste with water and rubbed through
 a tammy sieve—that’s how it’s done.”
@@ -25845,7 +25847,7 @@ bed. His father saw it. He said it might explode, and thrashed him on
 the spot. He was going to make a complaint against me to the masters.
 He is not allowed to go about with me now, no one is allowed to go
 about with me now. Smurov is not allowed to either, I’ve got a bad name
-with every one. They say I’m a ‘desperate character,’ ” Kolya smiled
+with every one. They say I’m a ‘desperate character,’” Kolya smiled
 scornfully. “It all began from what happened on the railway.”
 
 “Ah, we’ve heard of that exploit of yours, too,” cried the captain.
@@ -25866,16 +25868,16 @@ court?”
 
 “The most stupid, trivial affair, they made a mountain of a molehill as
 they always do,” Kolya began carelessly. “I was walking through the
-market‐place here one day, just when they’d driven in the geese. I
-stopped and looked at them. All at once a fellow, who is an errand‐boy
+market-place here one day, just when they’d driven in the geese. I
+stopped and looked at them. All at once a fellow, who is an errand-boy
 at Plotnikov’s now, looked at me and said, ‘What are you looking at the
-geese for?’ I looked at him; he was a stupid, moon‐faced fellow of
+geese for?’ I looked at him; he was a stupid, moon-faced fellow of
 twenty. I am always on the side of the peasantry, you know. I like
 talking to the peasants.... We’ve dropped behind the peasants—that’s an
 axiom. I believe you are laughing, Karamazov?”
 
 “No, Heaven forbid, I am listening,” said Alyosha with a most
-good‐natured air, and the sensitive Kolya was immediately reassured.
+good-natured air, and the sensitive Kolya was immediately reassured.
 
 “My theory, Karamazov, is clear and simple,” he hurried on again,
 looking pleased. “I believe in the people and am always glad to give
@@ -25922,7 +25924,7 @@ particularly shocked about it, but Dardanelov got me off again. But
 Kolbasnikov is savage with every one now like a green ass. Did you
 know, Ilusha, he is just married, got a dowry of a thousand roubles,
 and his bride’s a regular fright of the first rank and the last degree.
-The third‐class fellows wrote an epigram on it:
+The third-class fellows wrote an epigram on it:
 
 Astounding news has reached the class,
 Kolbasnikov has been an ass.
@@ -26069,7 +26071,7 @@ the bed.
 wait in the passage and come back when the doctor’s gone, I’ll come
 back with Perezvon.”
 
-But by now the doctor had entered, an important‐looking person with
+But by now the doctor had entered, an important-looking person with
 long, dark whiskers and a shiny, shaven chin, wearing a bearskin coat.
 As he crossed the threshold he stopped, taken aback; he probably
 fancied he had come to the wrong place. “How is this? Where am I?” he
@@ -26080,7 +26082,7 @@ puzzled him. The captain, bent double, was bowing low before him.
 “It’s here, sir, here, sir,” he muttered cringingly; “it’s here, you’ve
 come right, you were coming to us...”
 
-“Sne‐gi‐ryov?” the doctor said loudly and pompously. “Mr. Snegiryov—is
+“Sne-gi-ryov?” the doctor said loudly and pompously. “Mr. Snegiryov—is
 that you?”
 
 “That’s me, sir!”
@@ -26186,7 +26188,7 @@ cried Alyosha.
 
 “I say, what makes you think I read it? And certainly no one told me
 so. I can think for myself.... I am not opposed to Christ, if you like.
-He was a most humane person, and if He were alive to‐day, He would be
+He was a most humane person, and if He were alive to-day, He would be
 found in the ranks of the revolutionists, and would perhaps play a
 conspicuous part.... There’s no doubt about that.”
 
@@ -26216,7 +26218,7 @@ often disagree with Mr. Rakitin. Though I mention Tatyana, I am not at
 all for the emancipation of women. I acknowledge that women are a
 subject race and must obey. _Les femmes tricottent_, as Napoleon said.”
 Kolya, for some reason, smiled, “And on that question at least I am
-quite of one mind with that pseudo‐great man. I think, too, that to
+quite of one mind with that pseudo-great man. I think, too, that to
 leave one’s own country and fly to America is mean, worse than
 mean—silly. Why go to America when one may be of great service to
 humanity here? Now especially. There’s a perfect mass of fruitful
@@ -26262,7 +26264,7 @@ sensitive. You smiled just now, and I fancied you seemed to—”
 
 “Oh, my smile meant something quite different. I’ll tell you why I
 smiled. Not long ago I read the criticism made by a German who had
-lived in Russia, on our students and schoolboys of to‐day. ‘Show a
+lived in Russia, on our students and schoolboys of to-day. ‘Show a
 Russian schoolboy,’ he writes, ‘a map of the stars, which he knows
 nothing about, and he will give you back the map next day with
 corrections on it.’ No knowledge and unbounded conceit—that’s what the
@@ -26359,7 +26361,7 @@ others. Only you must not be like everybody else, that’s all.”
 You really are not like every one else, here you are not ashamed to
 confess to something bad and even ridiculous. And who will admit so
 much in these days? No one. And people have even ceased to feel the
-impulse to self‐ criticism. Don’t be like every one else, even if you
+impulse to self-criticism. Don’t be like every one else, even if you
 are the only one.”
 
 “Splendid! I was not mistaken in you. You know how to console one. Oh,
@@ -26405,7 +26407,7 @@ Karamazov! Do you know, what delights me most, is that you treat me
 quite like an equal. But we are not equals, no, we are not, you are
 better! But we shall get on. Do you know, all this last month, I’ve
 been saying to myself, ‘Either we shall be friends at once, for ever,
-or we shall part enemies to the grave!’ ”
+or we shall part enemies to the grave!’”
 
 “And saying that, of course, you loved me,” Alyosha laughed gayly.
 
@@ -26440,7 +26442,7 @@ with the customary impressiveness.
 incisive tones, and dropping his eyes, he was about to step out to the
 coach.
 
-“Your Excellency, for Christ’s sake!” the terror‐stricken captain
+“Your Excellency, for Christ’s sake!” the terror-stricken captain
 stopped him again. “Your Excellency! but can nothing, absolutely
 nothing save him now?”
 
@@ -26448,7 +26450,7 @@ nothing save him now?”
 he stopped suddenly. “If you could, for instance ... send ... your
 patient ... at once, without delay” (the words “at once, without
 delay,” the doctor uttered with an almost wrathful sternness that made
-the captain start) “to Syracuse, the change to the new be‐ne‐ficial
+the captain start) “to Syracuse, the change to the new be-ne-ficial
 climatic conditions might possibly effect—”
 
 “To Syracuse!” cried the captain, unable to grasp what was said.
@@ -26489,7 +26491,7 @@ again.
 
 “Perezvon?”[7] repeated the doctor, perplexed.
 
-“He hears the bell, but where it is he cannot tell. Good‐by, we shall
+“He hears the bell, but where it is he cannot tell. Good-by, we shall
 meet in Syracuse.”
 
 “Who’s this? Who’s this?” The doctor flew into a terrible rage.
@@ -26510,7 +26512,7 @@ you,” Alyosha cried peremptorily.
 
 “There is only one man in the world who can command Nikolay
 Krassotkin—this is the man”; Kolya pointed to Alyosha. “I obey him,
-good‐ by!”
+good-by!”
 
 He stepped forward, opened the door, and quickly went into the inner
 room. Perezvon flew after him. The doctor stood still for five seconds
@@ -26556,12 +26558,12 @@ crying quietly in her chair, and at last seeing them all crying,
 
 Krassotkin suddenly released himself from Ilusha’s embrace.
 
-“Good‐by, old man, mother expects me back to dinner,” he said quickly.
+“Good-by, old man, mother expects me back to dinner,” he said quickly.
 “What a pity I did not tell her! She will be dreadfully anxious.... But
 after dinner I’ll come back to you for the whole day, for the whole
 evening, and I’ll tell you all sorts of things, all sorts of things.
 And I’ll bring Perezvon, but now I will take him with me, because he
-will begin to howl when I am away and bother you. Good‐by!”
+will begin to howl when I am away and bother you. Good-by!”
 
 And he ran out into the passage. He didn’t want to cry, but in the
 passage he burst into tears. Alyosha found him crying.
@@ -26585,7 +26587,7 @@ not be heard in the room.
 
 Kolya ran out into the street.
 
-“Good‐by, Karamazov? Will you come yourself?” he cried sharply and
+“Good-by, Karamazov? Will you come yourself?” he cried sharply and
 angrily to Alyosha.
 
 “I will certainly come in the evening.”
@@ -26646,15 +26648,15 @@ returned from seeing Mitya half an hour before, and from the rapid
 movement with which she leapt up from her chair to meet him he saw that
 she had been expecting him with great impatience. A pack of cards dealt
 for a game of “fools” lay on the table. A bed had been made up on the
-leather sofa on the other side and Maximov lay, half‐reclining, on it.
-He wore a dressing‐ gown and a cotton nightcap, and was evidently ill
+leather sofa on the other side and Maximov lay, half-reclining, on it.
+He wore a dressing-gown and a cotton nightcap, and was evidently ill
 and weak, though he was smiling blissfully. When the homeless old man
 returned with Grushenka from Mokroe two months before, he had simply
 stayed on and was still staying with her. He arrived with her in rain
 and sleet, sat down on the sofa, drenched and scared, and gazed mutely
 at her with a timid, appealing smile. Grushenka, who was in terrible
 grief and in the first stage of fever, almost forgot his existence in
-all she had to do the first half‐ hour after her arrival. Suddenly she
+all she had to do the first half-hour after her arrival. Suddenly she
 chanced to look at him intently: he laughed a pitiful, helpless little
 laugh. She called Fenya and told her to give him something to eat. All
 that day he sat in the same place, almost without stirring. When it got
@@ -26678,7 +26680,7 @@ on the sofa. Grushenka had grown used to him, and coming back from
 seeing Mitya (whom she had begun to visit in prison before she was
 really well) she would sit down and begin talking to “Maximushka” about
 trifling matters, to keep her from thinking of her sorrow. The old man
-turned out to be a good story‐teller on occasions, so that at last he
+turned out to be a good story-teller on occasions, so that at last he
 became necessary to her. Grushenka saw scarcely any one else beside
 Alyosha, who did not come every day and never stayed long. Her old
 merchant lay seriously ill at this time, “at his last gasp” as they
@@ -26700,7 +26702,7 @@ hungry.”
 
 “That’s right. Fenya, Fenya, coffee,” cried Grushenka. “It’s been made
 a long time ready for you. And bring some little pies, and mind they
-are hot. Do you know, we’ve had a storm over those pies to‐day. I took
+are hot. Do you know, we’ve had a storm over those pies to-day. I took
 them to the prison for him, and would you believe it, he threw them
 back to me: he would not eat them. He flung one of them on the floor
 and stamped on it. So I said to him: ‘I shall leave them with the
@@ -26722,7 +26724,7 @@ week.”
 “But he knew about the Pole before?”
 
 “Yes, but there it is. He has known about him from the very beginning,
-but to‐day he suddenly got up and began scolding about him. I am
+but to-day he suddenly got up and began scolding about him. I am
 ashamed to repeat what he said. Silly fellow! Rakitin went in as I came
 out. Perhaps Rakitin is egging him on. What do you think?” she added
 carelessly.
@@ -26730,8 +26732,8 @@ carelessly.
 “He loves you, that’s what it is: he loves you so much. And now he is
 particularly worried.”
 
-“I should think he might be, with the trial to‐morrow. And I went to
-him to say something about to‐morrow, for I dread to think what’s going
+“I should think he might be, with the trial to-morrow. And I went to
+him to say something about to-morrow, for I dread to think what’s going
 to happen then. You say that he is worried, but how worried I am! And
 he talks about the Pole! He’s too silly! He is not jealous of
 Maximushka yet, anyway.”
@@ -26754,7 +26756,7 @@ kindness on people of more use than me.”
 
 “Ech, every one is of use, Maximushka, and how can we tell who’s of
 most use? If only that Pole didn’t exist, Alyosha. He’s taken it into
-his head to fall ill, too, to‐day. I’ve been to see him also. And I
+his head to fall ill, too, to-day. I’ve been to see him also. And I
 shall send him some pies, too, on purpose. I hadn’t sent him any, but
 Mitya accused me of it, so now I shall send some! Ah, here’s Fenya with
 a letter! Yes, it’s from the Poles—begging again!”
@@ -26775,7 +26777,7 @@ day by another in which Pan Mussyalovitch begged her for a loan of two
 thousand roubles for a very short period. Grushenka left that letter,
 too, unanswered. A whole series of letters had followed—one every
 day—all as pompous and rhetorical, but the loan asked for, gradually
-diminishing, dropped to a hundred roubles, then to twenty‐five, to ten,
+diminishing, dropped to a hundred roubles, then to twenty-five, to ten,
 and finally Grushenka received a letter in which both the Poles begged
 her for only one rouble and included a receipt signed by both.
 
@@ -26784,7 +26786,7 @@ herself to their lodging. She found the two Poles in great poverty,
 almost destitution, without food or fuel, without cigarettes, in debt
 to their landlady. The two hundred roubles they had carried off from
 Mitya at Mokroe had soon disappeared. But Grushenka was surprised at
-their meeting her with arrogant dignity and self‐assertion, with the
+their meeting her with arrogant dignity and self-assertion, with the
 greatest punctilio and pompous speeches. Grushenka simply laughed, and
 gave her former admirer ten roubles. Then, laughing, she told Mitya of
 it and he was not in the least jealous. But ever since, the Poles had
@@ -26837,16 +26839,16 @@ sorrowfully that from being mild and serene, it had become sullen and
 spiteful.
 
 “Enough of this foolishness,” she said suddenly; “it’s not for that I
-sent for you. Alyosha, darling, to‐morrow—what will happen to‐morrow?
+sent for you. Alyosha, darling, to-morrow—what will happen to-morrow?
 That’s what worries me! And it’s only me it worries! I look at every
 one and no one is thinking of it. No one cares about it. Are you
-thinking about it even? To‐morrow he’ll be tried, you know. Tell me,
+thinking about it even? To-morrow he’ll be tried, you know. Tell me,
 how will he be tried? You know it’s the valet, the valet killed him!
 Good heavens! Can they condemn him in place of the valet and will no
 one stand up for him? They haven’t troubled the valet at all, have
 they?”
 
-“He’s been severely cross‐examined,” observed Alyosha thoughtfully;
+“He’s been severely cross-examined,” observed Alyosha thoughtfully;
 “but every one came to the conclusion it was not he. Now he is lying
 very ill. He has been ill ever since that attack. Really ill,” added
 Alyosha.
@@ -26908,7 +26910,7 @@ me. What did it mean, Alyosha, tell me? What is this babe?”
 
 “It must be Rakitin, who’s been going to see him lately,” smiled
 Alyosha, “though ... that’s not Rakitin’s doing. I didn’t see Mitya
-yesterday. I’ll see him to‐day.”
+yesterday. I’ll see him to-day.”
 
 “No, it’s not Rakitin; it’s his brother Ivan Fyodorovitch upsetting
 him. It’s his going to see him, that’s what it is,” Grushenka began,
@@ -26941,7 +26943,7 @@ cheerful—and, indeed, he is cheerful now—but when he shakes his head
 like that, you know, and strides about the room and keeps pulling at
 the hair on his right temple with his right hand, I know there is
 something on his mind worrying him.... I know! He was cheerful before,
-though, indeed, he is cheerful to‐day.”
+though, indeed, he is cheerful to-day.”
 
 “But you said he was worried.”
 
@@ -26999,11 +27001,11 @@ And again she cried bitterly.
 “First, that he loves you, loves you more than any one in the world,
 and you only, believe me. I know. I do know. The second thing is that I
 don’t want to worm his secret out of him, but if he’ll tell me of
-himself to‐ day, I shall tell him straight out that I have promised to
-tell you. Then I’ll come to you to‐day, and tell you. Only ... I fancy
+himself to-day, I shall tell him straight out that I have promised to
+tell you. Then I’ll come to you to-day, and tell you. Only ... I fancy
 ... Katerina Ivanovna has nothing to do with it, and that the secret is
 about something else. That’s certain. It isn’t likely it’s about
-Katerina Ivanovna, it seems to me. Good‐by for now.”
+Katerina Ivanovna, it seems to me. Good-by for now.”
 
 Alyosha shook hands with her. Grushenka was still crying. He saw that
 she put little faith in his consolation, but she was better for having
@@ -27019,10 +27021,10 @@ The first of these things was at the house of Madame Hohlakov, and he
 hurried there to get it over as quickly as possible and not be too late
 for Mitya. Madame Hohlakov had been slightly ailing for the last three
 weeks: her foot had for some reason swollen up, and though she was not
-in bed, she lay all day half‐reclining on the couch in her boudoir, in
+in bed, she lay all day half-reclining on the couch in her boudoir, in
 a fascinating but decorous _déshabillé_. Alyosha had once noted with
 innocent amusement that, in spite of her illness, Madame Hohlakov had
-begun to be rather dressy—top‐knots, ribbons, loose wrappers, had made
+begun to be rather dressy—top-knots, ribbons, loose wrappers, had made
 their appearance, and he had an inkling of the reason, though he
 dismissed such ideas from his mind as frivolous. During the last two
 months the young official, Perhotin, had become a regular visitor at
@@ -27061,8 +27063,8 @@ Lise took back her promise—her childish promise, Alexey Fyodorovitch—to
 marry you, you’ve realized, of course, that it was only the playful
 fancy of a sick child who had been so long confined to her chair—thank
 God, she can walk now!... that new doctor Katya sent for from Moscow
-for your unhappy brother, who will to‐morrow—But why speak of to‐
-morrow? I am ready to die at the very thought of to‐morrow. Ready to
+for your unhappy brother, who will to-morrow—But why speak of
+to-morrow? I am ready to die at the very thought of to-morrow. Ready to
 die of curiosity.... That doctor was with us yesterday and saw Lise....
 I paid him fifty roubles for the visit. But that’s not the point,
 that’s not the point again. You see, I’m mixing everything up. I am in
@@ -27139,12 +27141,12 @@ stated that the criminal, whose approaching trial was making such a
 sensation—retired army captain, an idle swaggerer, and reactionary
 bully—was continually involved in amorous intrigues, and particularly
 popular with certain ladies “who were pining in solitude.” One such
-lady, a pining widow, who tried to seem young though she had a grown‐up
+lady, a pining widow, who tried to seem young though she had a grown-up
 daughter, was so fascinated by him that only two hours before the crime
 she offered him three thousand roubles, on condition that he would
 elope with her to the gold mines. But the criminal, counting on
 escaping punishment, had preferred to murder his father to get the
-three thousand rather than go off to Siberia with the middle‐aged
+three thousand rather than go off to Siberia with the middle-aged
 charms of his pining lady. This playful paragraph finished, of course,
 with an outburst of generous indignation at the wickedness of parricide
 and at the lately abolished institution of serfdom. Reading it with
@@ -27153,9 +27155,9 @@ Hohlakov.
 
 “Well, that must be me,” she hurried on again. “Of course I am meant.
 Scarcely more than an hour before, I suggested gold mines to him, and
-here they talk of ‘middle‐aged charms’ as though that were my motive!
+here they talk of ‘middle-aged charms’ as though that were my motive!
 He writes that out of spite! God Almighty forgive him for the
-middle‐aged charms, as I forgive him! You know it’s— Do you know who it
+middle-aged charms, as I forgive him! You know it’s— Do you know who it
 is? It’s your friend Rakitin.”
 
 “Perhaps,” said Alyosha, “though I’ve heard nothing about it.”
@@ -27267,7 +27269,7 @@ sent it, and they put it in. It was a fortnight ago, you see. But,
 Alyosha, it’s awful how I keep talking and don’t say what I want to
 say. Ah! the words come of themselves!”
 
-“It’s very important for me to be in time to see my brother to‐day,”
+“It’s very important for me to be in time to see my brother to-day,”
 Alyosha faltered.
 
 “To be sure, to be sure! You bring it all back to me. Listen, what is
@@ -27344,7 +27346,7 @@ something annoys him, he takes a pistol and shoots the first person he
 comes across, and no one blames him for it. I read that lately, and all
 the doctors confirm it. The doctors are always confirming; they confirm
 anything. Why, my Lise is in a state of aberration. She made me cry
-again yesterday, and the day before, too, and to‐day I suddenly
+again yesterday, and the day before, too, and to-day I suddenly
 realized that it’s all due to aberration. Oh, Lise grieves me so! I
 believe she’s quite mad. Why did she send for you? Did she send for you
 or did you come of yourself?”
@@ -27426,7 +27428,7 @@ already left the room.
 
 *A Little Demon*
 
-Going in to Lise, he found her half reclining in the invalid‐chair, in
+Going in to Lise, he found her half reclining in the invalid-chair, in
 which she had been wheeled when she was unable to walk. She did not
 move to meet him, but her sharp, keen eyes were simply riveted on his
 face. There was a feverish look in her eyes, her face was pale and
@@ -27451,14 +27453,14 @@ the thirtieth time what a good thing it is I refused you and shall not
 be your wife. You are not fit to be a husband. If I were to marry you
 and give you a note to take to the man I loved after you, you’d take it
 and be sure to give it to him and bring an answer back, too. If you
-were forty, you would still go on taking my love‐letters for me.”
+were forty, you would still go on taking my love-letters for me.”
 
 She suddenly laughed.
 
-“There is something spiteful and yet open‐hearted about you,” Alyosha
+“There is something spiteful and yet open-hearted about you,” Alyosha
 smiled to her.
 
-“The open‐heartedness consists in my not being ashamed of myself with
+“The open-heartedness consists in my not being ashamed of myself with
 you. What’s more, I don’t want to feel ashamed with you, just with you.
 Alyosha, why is it I don’t respect you? I am very fond of you, but I
 don’t respect you. If I respected you, I shouldn’t talk to you without
@@ -27476,7 +27478,7 @@ Lise laughed nervously again; she spoke rapidly.
 Alyosha, you know, you are quite pretty! I shall love you awfully for
 having so quickly allowed me not to love you.”
 
-“Why did you send for me to‐day, Lise?”
+“Why did you send for me to-day, Lise?”
 
 “I wanted to tell you of a longing I have. I should like some one to
 torture me, marry me and then torture me, deceive me and go away. I
@@ -27750,7 +27752,7 @@ and instantly read the address, “To Ivan Fyodorovitch Karamazov.” He
 looked quickly at Lise. Her face had become almost menacing.
 
 “Give it to him, you must give it to him!” she ordered him, trembling
-and beside herself. “To‐day, at once, or I’ll poison myself! That’s why
+and beside herself. “To-day, at once, or I’ll poison myself! That’s why
 I sent for you.”
 
 And she slammed the door quickly. The bolt clicked. Alyosha put the
@@ -27778,7 +27780,7 @@ obtain interviews with Mitya by going through certain inevitable
 formalities. But later, though the formalities were not relaxed,
 exceptions were made for some, at least, of Mitya’s visitors. So much
 so, that sometimes the interviews with the prisoner in the room set
-aside for the purpose were practically _tête‐à‐tête_.
+aside for the purpose were practically _tête-à-tête_.
 
 These exceptions, however, were few in number; only Grushenka, Alyosha
 and Rakitin were treated like this. But the captain of the police,
@@ -27795,11 +27797,11 @@ taken to coming very often to see the prisoner, was one of the most
 intimate acquaintances of the “police captain’s young ladies,” as he
 called them, and was always hanging about their house. He gave lessons
 in the house of the prison superintendent, too, who, though scrupulous
-in the performance of his duties, was a kind‐ hearted old man. Alyosha,
+in the performance of his duties, was a kind-hearted old man. Alyosha,
 again, had an intimate acquaintance of long standing with the
 superintendent, who was fond of talking to him, generally on sacred
 subjects. He respected Ivan Fyodorovitch, and stood in awe of his
-opinion, though he was a great philosopher himself; “self‐ taught,” of
+opinion, though he was a great philosopher himself; “self-taught,” of
 course. But Alyosha had an irresistible attraction for him. During the
 last year the old man had taken to studying the Apocryphal Gospels, and
 constantly talked over his impressions with his young friend. He used
@@ -27817,7 +27819,7 @@ talking loudly. Mitya was laughing heartily as he saw him out, while
 Rakitin seemed grumbling. Rakitin did not like meeting Alyosha,
 especially of late. He scarcely spoke to him, and bowed to him stiffly.
 Seeing Alyosha enter now, he frowned and looked away, as though he were
-entirely absorbed in buttoning his big, warm, fur‐trimmed overcoat.
+entirely absorbed in buttoning his big, warm, fur-trimmed overcoat.
 Then he began looking at once for his umbrella.
 
 “I must mind not to forget my belongings,” he muttered, simply to say
@@ -27827,7 +27829,7 @@ something.
 joke, and laughed at once at his own wit. Rakitin fired up instantly.
 
 “You’d better give that advice to your own family, who’ve always been a
-slave‐driving lot, and not to Rakitin,” he cried, suddenly trembling
+slave-driving lot, and not to Rakitin,” he cried, suddenly trembling
 with anger.
 
 “What’s the matter? I was joking,” cried Mitya. “Damn it all! They are
@@ -27851,13 +27853,13 @@ fellow, very clever. Well, Alexey, it’s all over with me now.”
 
 He sat down on the bench and made Alyosha sit down beside him.
 
-“Yes, the trial’s to‐morrow. Are you so hopeless, brother?” Alyosha
+“Yes, the trial’s to-morrow. Are you so hopeless, brother?” Alyosha
 said, with an apprehensive feeling.
 
 “What are you talking about?” said Mitya, looking at him rather
 uncertainly. “Oh, you mean the trial! Damn it all! Till now we’ve been
 talking of things that don’t matter, about this trial, but I haven’t
-said a word to you about the chief thing. Yes, the trial is to‐morrow;
+said a word to you about the chief thing. Yes, the trial is to-morrow;
 but it wasn’t the trial I meant, when I said it was all over with me.
 Why do you look at me so critically?”
 
@@ -27875,7 +27877,7 @@ you what sort of science it is.”
 “Rakitin knows. Rakitin knows a lot, damn him! He’s not going to be a
 monk. He means to go to Petersburg. There he’ll go in for criticism of
 an elevating tendency. Who knows, he may be of use and make his own
-career, too. Ough! they are first‐rate, these people, at making a
+career, too. Ough! they are first-rate, these people, at making a
 career! Damn ethics, I am done for, Alexey, I am, you man of God! I
 love you more than any one. It makes my heart yearn to look at you. Who
 was Karl Bernard?”
@@ -27954,7 +27956,7 @@ copied out three lines of it. Wait a minute. Here it is.”
 
 Mitya hurriedly pulled out a piece of paper from his pocket and read:
 
-“ ‘In order to determine this question, it is above all essential to
+“‘In order to determine this question, it is above all essential to
 put one’s personality in contradiction to one’s reality.’ Do you
 understand that?”
 
@@ -28031,7 +28033,7 @@ H’m!”
 
 He walked across the room with a harassed air.
 
-“Brother, I cannot stay long,” Alyosha said, after a pause. “To‐morrow
+“Brother, I cannot stay long,” Alyosha said, after a pause. “To-morrow
 will be a great and awful day for you, the judgment of God will be
 accomplished ... I am amazed at you, you walk about here, talking of I
 don’t know what ...”
@@ -28054,7 +28056,7 @@ was hidden in me, but would never have come to the surface, if it
 hadn’t been for this blow from heaven. I am afraid! And what do I care
 if I spend twenty years in the mines, breaking ore with a hammer? I am
 not a bit afraid of that—it’s something else I am afraid of now: that
-that new man may leave me. Even there, in the mines, under‐ground, I
+that new man may leave me. Even there, in the mines, under-ground, I
 may find a human heart in another convict and murderer by my side, and
 I may make friends with him, for even there one may live and love and
 suffer. One may thaw and revive a frozen heart in that convict, one may
@@ -28126,7 +28128,7 @@ relative thing. Or isn’t it? Is it not relative? A treacherous
 question! You won’t laugh if I tell you it’s kept me awake two nights.
 I only wonder now how people can live and think nothing about it.
 Vanity! Ivan has no God. He has an idea. It’s beyond me. But he is
-silent. I believe he is a free‐mason. I asked him, but he is silent. I
+silent. I believe he is a free-mason. I asked him, but he is silent. I
 wanted to drink from the springs of his soul—he was silent. But once he
 did drop a word.”
 
@@ -28144,18 +28146,18 @@ about Ivan to you before. I put it off to the last. When my business
 here is over and the verdict has been given, then I’ll tell you
 something. I’ll tell you everything. We’ve something tremendous on
 hand.... And you shall be my judge in it. But don’t begin about that
-now; be silent. You talk of to‐morrow, of the trial; but, would you
+now; be silent. You talk of to-morrow, of the trial; but, would you
 believe it, I know nothing about it.”
 
 “Have you talked to the counsel?”
 
 “What’s the use of the counsel? I told him all about it. He’s a soft,
-city‐bred rogue—a Bernard! But he doesn’t believe me—not a bit of it.
+city-bred rogue—a Bernard! But he doesn’t believe me—not a bit of it.
 Only imagine, he believes I did it. I see it. ‘In that case,’ I asked
 him, ‘why have you come to defend me?’ Hang them all! They’ve got a
 doctor down, too, want to prove I’m mad. I won’t have that! Katerina
 Ivanovna wants to do her ‘duty’ to the end, whatever the strain!” Mitya
-smiled bitterly. “The cat! Hard‐hearted creature! She knows that I said
+smiled bitterly. “The cat! Hard-hearted creature! She knows that I said
 of her at Mokroe that she was a woman of ‘great wrath.’ They repeated
 it. Yes, the facts against me have grown numerous as the sands of the
 sea. Grigory sticks to his point. Grigory’s honest, but a fool. Many
@@ -28173,7 +28175,7 @@ only Grusha, Grusha! Good Lord! Why should she have such suffering to
 bear?” he exclaimed suddenly, with tears. “Grusha’s killing me; the
 thought of her’s killing me, killing me. She was with me just now....”
 
-“She told me she was very much grieved by you to‐day.”
+“She told me she was very much grieved by you to-day.”
 
 “I know. Confound my temper! It was jealousy. I was sorry, I kissed her
 as she was going. I didn’t ask her forgiveness.”
@@ -28255,7 +28257,7 @@ should I do there underground with a hammer? I should only smash my
 skull with the hammer! But, on the other hand, my conscience? I should
 have run away from suffering. A sign has come, I reject the sign. I
 have a way of salvation and I turn my back on it. Ivan says that in
-America, ‘with the good‐will,’ I can be of more use than underground.
+America, ‘with the good-will,’ I can be of more use than underground.
 But what becomes of our hymn from underground? What’s America? America
 is vanity again! And there’s a lot of swindling in America, too, I
 expect. I should have run away from crucifixion! I tell you, you know,
@@ -28310,7 +28312,7 @@ darling, it’s time you were going,” he said, with a sudden haste.
 “There’s the superintendent shouting in the yard. He’ll be here
 directly. We are late; it’s irregular. Embrace me quickly. Kiss me!
 Sign me with the cross, darling, for the cross I have to bear
-to‐morrow.”
+to-morrow.”
 
 They embraced and kissed.
 
@@ -28322,7 +28324,7 @@ A mournful smile came on to his lips.
 “Have you asked him whether he believes it?” asked Alyosha.
 
 “No, I haven’t. I wanted to, but I couldn’t. I hadn’t the courage. But
-I saw it from his eyes. Well, good‐by!”
+I saw it from his eyes. Well, good-by!”
 
 Once more they kissed hurriedly, and Alyosha was just going out, when
 Mitya suddenly called him back.
@@ -28352,7 +28354,7 @@ Mitya’s whole face was lighted up with bliss.
 “Thank you!” he articulated slowly, as though letting a sigh escape him
 after fainting. “Now you have given me new life. Would you believe it,
 till this moment I’ve been afraid to ask you, you, even you. Well, go!
-You’ve given me strength for to‐morrow. God bless you! Come, go along!
+You’ve given me strength for to-morrow. God bless you! Come, go along!
 Love Ivan!” was Mitya’s last word.
 
 Alyosha went out in tears. Such distrustfulness in Mitya, such lack of
@@ -28377,7 +28379,7 @@ was dimly lighted by a Chinese lantern, he saw a man coming down, and
 as they met, he recognized him as his brother. So he was just coming
 from Katerina Ivanovna.
 
-“Ah, it’s only you,” said Ivan dryly. “Well, good‐by! You are going to
+“Ah, it’s only you,” said Ivan dryly. “Well, good-by! You are going to
 her?”
 
 “Yes.”
@@ -28399,8 +28401,8 @@ moment’s hesitation, made up his mind to go back with Alyosha.
 “She was listening,” he murmured angrily to himself, but Alyosha heard
 it.
 
-“Excuse my keeping my greatcoat on,” said Ivan, going into the drawing‐
-room. “I won’t sit down. I won’t stay more than a minute.”
+“Excuse my keeping my greatcoat on,” said Ivan, going into the
+drawing-room. “I won’t sit down. I won’t stay more than a minute.”
 
 “Sit down, Alexey Fyodorovitch,” said Katerina Ivanovna, though she
 remained standing. She had changed very little during this time, but
@@ -28428,7 +28430,7 @@ blushed.
 
 “You don’t know me yet, Alexey Fyodorovitch,” she said menacingly. “And
 I don’t know myself yet. Perhaps you’ll want to trample me under foot
-after my examination to‐morrow.”
+after my examination to-morrow.”
 
 “You will give your evidence honorably,” said Alyosha; “that’s all
 that’s wanted.”
@@ -28448,7 +28450,7 @@ addressing Ivan. He gave her a sort of strained smile. Alyosha started
 at her tone. He had not suspected such familiar intimacy between them.
 
 “Well, that’s enough, anyway,” Ivan cut short the conversation. “I am
-going. I’ll come to‐morrow.” And turning at once, he walked out of the
+going. I’ll come to-morrow.” And turning at once, he walked out of the
 room and went straight downstairs.
 
 With an imperious gesture, Katerina Ivanovna seized Alyosha by both
@@ -28490,7 +28492,7 @@ suddenly.
 
 “Oh, while I think of it, I have a letter for you,” said Alyosha
 timidly, and he took Lise’s note from his pocket and held it out to
-Ivan. They were just under a lamp‐post. Ivan recognized the handwriting
+Ivan. They were just under a lamp-post. Ivan recognized the handwriting
 at once.
 
 “Ah, from that little demon!” he laughed maliciously, and, without
@@ -28515,7 +28517,7 @@ quiet, Alexey. Don’t go on about her. I am not even thinking about it.”
 They were silent again for a moment.
 
 “She will be praying all night now to the Mother of God to show her how
-to act to‐morrow at the trial,” he said sharply and angrily again.
+to act to-morrow at the trial,” he said sharply and angrily again.
 
 “You ... you mean Katerina Ivanovna?”
 
@@ -28535,7 +28537,7 @@ given her hope. Forgive me for speaking to you like this,” he added.
 “I can’t behave to her as I ought—break off altogether and tell her so
 straight out,” said Ivan, irritably. “I must wait till sentence is
 passed on the murderer. If I break off with her now, she will avenge
-herself on me by ruining that scoundrel to‐morrow at the trial, for she
+herself on me by ruining that scoundrel to-morrow at the trial, for she
 hates him and knows she hates him. It’s all a lie—lie upon lie! As long
 as I don’t break off with her, she goes on hoping, and she won’t ruin
 that monster, knowing how I want to get him out of trouble. If only
@@ -28578,7 +28580,7 @@ vanished.
 “I only know one thing,” Alyosha went on, still almost in a whisper,
 “_it wasn’t you_ killed father.”
 
-“ ‘Not you’! What do you mean by ‘not you’?” Ivan was thunderstruck.
+“‘Not you’! What do you mean by ‘not you’?” Ivan was thunderstruck.
 
 “It was not you killed father, not you!” Alyosha repeated firmly.
 
@@ -28586,7 +28588,7 @@ The silence lasted for half a minute.
 
 “I know I didn’t. Are you raving?” said Ivan, with a pale, distorted
 smile. His eyes were riveted on Alyosha. They were standing again under
-a lamp‐post.
+a lamp-post.
 
 “No, Ivan. You’ve told yourself several times that you are the
 murderer.”
@@ -28631,28 +28633,28 @@ and for all, it’s not you. You hear, once for all! God has put it into
 my heart to say this to you, even though it may make you hate me from
 this hour.”
 
-But by now Ivan had apparently regained his self‐control.
+But by now Ivan had apparently regained his self-control.
 
 “Alexey Fyodorovitch,” he said, with a cold smile, “I can’t endure
 prophets and epileptics—messengers from God especially—and you know
 that only too well. I break off all relations with you from this moment
 and probably for ever. I beg you to leave me at this turning. It’s the
 way to your lodgings, too. You’d better be particularly careful not to
-come to me to‐day! Do you hear?”
+come to me to-day! Do you hear?”
 
 He turned and walked on with a firm step, not looking back.
 
 “Brother,” Alyosha called after him, “if anything happens to you
-to‐day, turn to me before any one!”
+to-day, turn to me before any one!”
 
-But Ivan made no reply. Alyosha stood under the lamp‐post at the cross
+But Ivan made no reply. Alyosha stood under the lamp-post at the cross
 roads, till Ivan had vanished into the darkness. Then he turned and
 walked slowly homewards. Both Alyosha and Ivan were living in lodgings;
 neither of them was willing to live in Fyodor Pavlovitch’s empty house.
 Alyosha had a furnished room in the house of some working people. Ivan
 lived some distance from him. He had taken a roomy and fairly
 comfortable lodge attached to a fine house that belonged to a
-well‐to‐do lady, the widow of an official. But his only attendant was a
+well-to-do lady, the widow of an official. But his only attendant was a
 deaf and rheumatic old crone who went to bed at six o’clock every
 evening and got up at six in the morning. Ivan had become remarkably
 indifferent to his comforts of late, and very fond of being alone. He
@@ -28690,7 +28692,7 @@ address, had to apply to Katerina Ivanovna to telegraph to him, and
 she, not knowing his address either, telegraphed to her sister and
 aunt, reckoning on Ivan’s going to see them as soon as he arrived in
 Moscow. But he did not go to them till four days after his arrival.
-When he got the telegram, he had, of course, set off post‐haste to our
+When he got the telegram, he had, of course, set off post-haste to our
 town. The first to meet him was Alyosha, and Ivan was greatly surprised
 to find that, in opposition to the general opinion of the town, he
 refused to entertain a suspicion against Mitya, and spoke openly of
@@ -28709,7 +28711,7 @@ Ivanovna’s love for his brother. Yet he went to see Mitya on the first
 day of his arrival, and that interview, far from shaking Ivan’s belief
 in his guilt, positively strengthened it. He found his brother
 agitated, nervously excited. Mitya had been talkative, but very
-absent‐minded and incoherent. He used violent language, accused
+absent-minded and incoherent. He used violent language, accused
 Smerdyakov, and was fearfully muddled. He talked principally about the
 three thousand roubles, which he said had been “stolen” from him by his
 father.
@@ -28755,7 +28757,7 @@ certain abnormalities were perceptible. Ivan decided to find out for
 himself what those abnormalities were.
 
 At the hospital he was at once allowed to see the patient. Smerdyakov
-was lying on a truckle‐bed in a separate ward. There was only one other
+was lying on a truckle-bed in a separate ward. There was only one other
 bed in the room, and in it lay a tradesman of the town, swollen with
 dropsy, who was obviously almost dying; he could be no hindrance to
 their conversation. Smerdyakov grinned uncertainly on seeing Ivan, and
@@ -28781,7 +28783,7 @@ and did not even look much interested.
 honor been back long?” he added patronizingly, as though encouraging a
 nervous visitor.
 
-“I only arrived to‐day.... To see the mess you are in here.”
+“I only arrived to-day.... To see the mess you are in here.”
 
 Smerdyakov sighed.
 
@@ -28963,7 +28965,7 @@ did you say that for?”
 
 “It was just through my simplicity, and I never have shammed a fit on
 purpose in my life. And I only said so then to boast to you. It was
-just foolishness. I liked you so much then, and was open‐hearted with
+just foolishness. I liked you so much then, and was open-hearted with
 you.”
 
 “My brother directly accuses you of the murder and theft.”
@@ -28986,20 +28988,20 @@ Upon my word! Is that likely? As if that could be, such a thing has
 never happened. No one hears this talk of ours now, except Providence
 itself, and if you were to tell of it to the prosecutor and Nikolay
 Parfenovitch you might defend me completely by doing so, for who would
-be likely to be such a criminal, if he is so open‐hearted beforehand?
+be likely to be such a criminal, if he is so open-hearted beforehand?
 Any one can see that.”
 
 “Well,” and Ivan got up to cut short the conversation, struck by
 Smerdyakov’s last argument. “I don’t suspect you at all, and I think
 it’s absurd, indeed, to suspect you. On the contrary, I am grateful to
 you for setting my mind at rest. Now I am going, but I’ll come again.
-Meanwhile, good‐by. Get well. Is there anything you want?”
+Meanwhile, good-by. Get well. Is there anything you want?”
 
 “I am very thankful for everything. Marfa Ignatyevna does not forget
 me, and provides me anything I want, according to her kindness. Good
 people visit me every day.”
 
-“Good‐by. But I shan’t say anything of your being able to sham a fit,
+“Good-by. But I shan’t say anything of your being able to sham a fit,
 and I don’t advise you to, either,” something made Ivan say suddenly.
 
 “I quite understand. And if you don’t speak of that, I shall say
@@ -29035,7 +29037,7 @@ was not mad, but only rather weak, Ivan only evoked from the old man a
 subtle smile.
 
 “Do you know how he spends his time now?” he asked; “learning lists of
-French words by heart. He has an exercise‐book under his pillow with
+French words by heart. He has an exercise-book under his pillow with
 the French words written out in Russian letters for him by some one, he
 he he!”
 
@@ -29144,12 +29146,12 @@ a pot of geranium on each of the two little windows. In the corner
 there was a case of ikons. On the table stood a little copper samovar
 with many dents in it, and a tray with two cups. But Smerdyakov had
 finished tea and the samovar was out. He was sitting at the table on a
-bench. He was looking at an exercise‐book and slowly writing with a
+bench. He was looking at an exercise-book and slowly writing with a
 pen. There was a bottle of ink by him and a flat iron candlestick, but
 with a composite candle. Ivan saw at once from Smerdyakov’s face that
 he had completely recovered from his illness. His face was fresher,
 fuller, his hair stood up jauntily in front, and was plastered down at
-the sides. He was sitting in a parti‐colored, wadded dressing‐gown,
+the sides. He was sitting in a parti-colored, wadded dressing-gown,
 rather dirty and frayed, however. He had spectacles on his nose, which
 Ivan had never seen him wearing before. This trifling circumstance
 suddenly redoubled Ivan’s anger: “A creature like that and wearing
@@ -29189,7 +29191,7 @@ Ivan said this in a perfect fury, giving him to understand with obvious
 intention that he scorned any subterfuge or indirectness and meant to
 show his cards. Smerdyakov’s eyes gleamed resentfully, his left eye
 winked, and he at once gave his answer, with his habitual composure and
-deliberation. “You want to have everything above‐board; very well, you
+deliberation. “You want to have everything above-board; very well, you
 shall have it,” he seemed to say.
 
 “This is what I meant then, and this is why I said that, that you,
@@ -29285,7 +29287,7 @@ very likely more, but if Fyodor Pavlovitch got married then to that
 lady, Agrafena Alexandrovna, she would have had all his capital made
 over to her directly after the wedding, for she’s plenty of sense, so
 that your parent would not have left you two roubles between the three
-of you. And were they far from a wedding, either? Not a hair’s‐breadth:
+of you. And were they far from a wedding, either? Not a hair’s-breadth:
 that lady had only to lift her little finger and he would have run
 after her to church, with his tongue out.”
 
@@ -29311,7 +29313,7 @@ impression!”
 me as well,” said Smerdyakov, with a sarcastic grin. “So that it was
 just by that more than anything you showed me what was in your mind.
 For if you had a foreboding about me and yet went away, you as good as
-said to me, ‘You can murder my parent, I won’t hinder you!’ ”
+said to me, ‘You can murder my parent, I won’t hinder you!’”
 
 “You scoundrel! So that’s how you understood it!”
 
@@ -29325,7 +29327,7 @@ have expected something from me.”
 “No, I swear I didn’t!” shouted Ivan, grinding his teeth.
 
 “You didn’t? Then you ought, as your father’s son, to have had me taken
-to the lock‐up and thrashed at once for my words then ... or at least,
+to the lock-up and thrashed at once for my words then ... or at least,
 to have given me a punch in the face on the spot, but you were not a
 bit angry, if you please, and at once in a friendly way acted on my
 foolish word and went away, which was utterly absurd, for you ought to
@@ -29335,7 +29337,7 @@ conclusions?”
 Ivan sat scowling, both his fists convulsively pressed on his knees.
 
 “Yes, I am sorry I didn’t punch you in the face,” he said with a bitter
-smile. “I couldn’t have taken you to the lock‐up just then. Who would
+smile. “I couldn’t have taken you to the lock-up just then. Who would
 have believed me and what charge could I bring against you? But the
 punch in the face ... oh, I’m sorry I didn’t think of it. Though blows
 are forbidden, I should have pounded your ugly face to a jelly.”
@@ -29353,7 +29355,7 @@ they never will leave off, but you, even in an exceptional case, did
 not dare.”
 
 “What are you learning French words for?” Ivan nodded towards the
-exercise‐book lying on the table.
+exercise-book lying on the table.
 
 “Why shouldn’t I learn them so as to improve my education, supposing
 that I may myself chance to go some day to those happy parts of
@@ -29407,7 +29409,7 @@ don’t know yet. But if he is the murderer, and not Dmitri, then, of
 course, I am the murderer, too.”
 
 When Katerina Ivanovna heard that, she got up from her seat without a
-word, went to her writing‐table, opened a box standing on it, took out
+word, went to her writing-table, opened a box standing on it, took out
 a sheet of paper and laid it before Ivan. This was the document of
 which Ivan spoke to Alyosha later on as a “conclusive proof” that
 Dmitri had killed his father. It was the letter written by Mitya to
@@ -29431,9 +29433,9 @@ not space enough for his drunken verbosity and Mitya not only filled
 the margins but had written the last line right across the rest. The
 letter ran as follows:
 
-FATAL KATYA: To‐morrow I will get the money and repay your three
+FATAL KATYA: To-morrow I will get the money and repay your three
 thousand and farewell, woman of great wrath, but farewell, too, my
-love! Let us make an end! To‐morrow I shall try and get it from every
+love! Let us make an end! To-morrow I shall try and get it from every
 one, and if I can’t borrow it, I give you my word of honor I shall go
 to my father and break his skull and take the money from under the
 pillow, if only Ivan has gone. If I have to go to Siberia for it, I’ll
@@ -29441,7 +29443,7 @@ give you back your three thousand. And farewell. I bow down to the
 ground before you, for I’ve been a scoundrel to you. Forgive me! No,
 better not forgive me, you’ll be happier and so shall I! Better Siberia
 than your love, for I love another woman and you got to know her too
-well to‐day, so how can you forgive? I will murder the man who’s robbed
+well to-day, so how can you forgive? I will murder the man who’s robbed
 me! I’ll leave you all and go to the East so as to see no one again.
 Not _her_ either, for you are not my only tormentress; she is too.
 Farewell!
@@ -29530,11 +29532,11 @@ shall kill him, perhaps, this time,” he thought on the way.
 
 *The Third And Last Interview With Smerdyakov*
 
-When he was half‐way there, the keen dry wind that had been blowing
+When he was half-way there, the keen dry wind that had been blowing
 early that morning rose again, and a fine dry snow began falling
 thickly. It did not lie on the ground, but was whirled about by the
 wind, and soon there was a regular snowstorm. There were scarcely any
-lamp‐posts in the part of the town where Smerdyakov lived. Ivan strode
+lamp-posts in the part of the town where Smerdyakov lived. Ivan strode
 alone in the darkness, unconscious of the storm, instinctively picking
 out his way. His head ached and there was a painful throbbing in his
 temples. He felt that his hands were twitching convulsively. Not far
@@ -29568,11 +29570,11 @@ take the tea away; he wouldn’t have any.”
 talk to him too long,” Marya Kondratyevna begged him. Ivan opened the
 door and stepped into the room.
 
-It was over‐heated as before, but there were changes in the room. One
+It was over-heated as before, but there were changes in the room. One
 of the benches at the side had been removed, and in its place had been
 put a large old mahogany leather sofa, on which a bed had been made up,
 with fairly clean white pillows. Smerdyakov was sitting on the sofa,
-wearing the same dressing‐gown. The table had been brought out in front
+wearing the same dressing-gown. The table had been brought out in front
 of the sofa, so that there was hardly room to move. On the table lay a
 thick book in yellow cover, but Smerdyakov was not reading it. He
 seemed to be sitting doing nothing. He met Ivan with a slow silent
@@ -29631,10 +29633,10 @@ go away.”
 
 “Why are you so uneasy?” Smerdyakov stared at him, not simply with
 contempt, but almost with repulsion. “Is this because the trial begins
-to‐ morrow? Nothing will happen to you; can’t you believe that at last?
+to-morrow? Nothing will happen to you; can’t you believe that at last?
 Go home, go to bed and sleep in peace, don’t be afraid of anything.”
 
-“I don’t understand you.... What have I to be afraid of to‐morrow?”
+“I don’t understand you.... What have I to be afraid of to-morrow?”
 Ivan articulated in astonishment, and suddenly a chill breath of fear
 did in fact pass over his soul. Smerdyakov measured him with his eyes.
 
@@ -29744,7 +29746,7 @@ contact with a loathsome reptile.
 
 “Your hands keep twitching,” observed Smerdyakov, and he deliberately
 unfolded the bundle himself. Under the wrapper were three packets of
-hundred‐rouble notes.
+hundred-rouble notes.
 
 “They are all here, all the three thousand roubles; you need not count
 them. Take them,” Smerdyakov suggested to Ivan, nodding at the notes.
@@ -29796,7 +29798,7 @@ him _all_ about it.
 way, following your very words.”
 
 “Of my words later,” Ivan broke in again, apparently with complete
-self‐ possession, firmly uttering his words, and not shouting as
+self-possession, firmly uttering his words, and not shouting as
 before. “Only tell me in detail how you did it. Everything, as it
 happened. Don’t forget anything. The details, above everything, the
 details, I beg you.”
@@ -29957,7 +29959,7 @@ come, wants to be let in.’ And he started like a baby. ‘Where is she?’
 he fairly gasped, but couldn’t believe it. ‘She’s standing there,’ said
 I. ‘Open.’ He looked out of the window at me, half believing and half
 distrustful, but afraid to open. ‘Why, he is afraid of me now,’ I
-thought. And it was funny. I bethought me to knock on the window‐frame
+thought. And it was funny. I bethought me to knock on the window-frame
 those taps we’d agreed upon as a signal that Grushenka had come, in his
 presence, before his eyes. He didn’t seem to believe my word, but as
 soon as he heard the taps, he ran at once to open the door. He opened
@@ -29974,28 +29976,28 @@ noise, she’s hidden in the bushes; go and call to her yourself from the
 study.’ He ran to the window, put the candle in the window.
 ‘Grushenka,’ he cried, ‘Grushenka, are you here?’ Though he cried that,
 he didn’t want to lean out of the window, he didn’t want to move away
-from me, for he was panic‐stricken; he was so frightened he didn’t dare
+from me, for he was panic-stricken; he was so frightened he didn’t dare
 to turn his back on me. ‘Why, here she is,’ said I. I went up to the
 window and leaned right out of it. ‘Here she is; she’s in the bush,
 laughing at you, don’t you see her?’ He suddenly believed it; he was
 all of a shake—he was awfully crazy about her—and he leaned right out
-of the window. I snatched up that iron paper‐weight from his table; do
+of the window. I snatched up that iron paper-weight from his table; do
 you remember, weighing about three pounds? I swung it and hit him on
 the top of the skull with the corner of it. He didn’t even cry out. He
 only sank down suddenly, and I hit him again and a third time. And the
 third time I knew I’d broken his skull. He suddenly rolled on his back,
 face upwards, covered with blood. I looked round. There was no blood on
-me, not a spot. I wiped the paper‐weight, put it back, went up to the
+me, not a spot. I wiped the paper-weight, put it back, went up to the
 ikons, took the money out of the envelope, and flung the envelope on
 the floor and the pink ribbon beside it. I went out into the garden all
-of a tremble, straight to the apple‐tree with a hollow in it—you know
+of a tremble, straight to the apple-tree with a hollow in it—you know
 that hollow. I’d marked it long before and put a rag and a piece of
 paper ready in it. I wrapped all the notes in the rag and stuffed it
 deep down in the hole. And there it stayed for over a fortnight. I took
 it out later, when I came out of the hospital. I went back to my bed,
 lay down and thought, ‘If Grigory Vassilyevitch has been killed
 outright it may be a bad job for me, but if he is not killed and
-recovers, it will be first‐rate, for then he’ll bear witness that
+recovers, it will be first-rate, for then he’ll bear witness that
 Dmitri Fyodorovitch has been here, and so he must have killed him and
 taken the money.’ Then I began groaning with suspense and impatience,
 so as to wake Marfa Ignatyevna as soon as possible. At last she got up
@@ -30079,11 +30081,11 @@ before.
 
 “Listen, you miserable, contemptible creature! Don’t you understand
 that if I haven’t killed you, it’s simply because I am keeping you to
-answer to‐morrow at the trial. God sees,” Ivan raised his hand,
+answer to-morrow at the trial. God sees,” Ivan raised his hand,
 “perhaps I, too, was guilty; perhaps I really had a secret desire for
 my father’s ... death, but I swear I was not as guilty as you think,
 and perhaps I didn’t urge you on at all. No, no, I didn’t urge you on!
-But no matter, I will give evidence against myself to‐morrow at the
+But no matter, I will give evidence against myself to-morrow at the
 trial. I’m determined to! I shall tell everything, everything. But
 we’ll make our appearance together. And whatever you may say against me
 at the trial, whatever evidence you give, I’ll face it; I am not afraid
@@ -30170,23 +30172,23 @@ Smerdyakov with a different expression.
 Ivan took the three rolls of notes and put them in his pocket without
 wrapping them in anything.
 
-“I shall show them at the court to‐morrow,” he said.
+“I shall show them at the court to-morrow,” he said.
 
 “Nobody will believe you, as you’ve plenty of money of your own; you
-may simply have taken it out of your cash‐box and brought it to the
+may simply have taken it out of your cash-box and brought it to the
 court.”
 
 Ivan rose from his seat.
 
 “I repeat,” he said, “the only reason I haven’t killed you is that I
-need you for to‐morrow, remember that, don’t forget it!”
+need you for to-morrow, remember that, don’t forget it!”
 
 “Well, kill me. Kill me now,” Smerdyakov said, all at once looking
 strangely at Ivan. “You won’t dare do that even!” he added, with a
 bitter smile. “You won’t dare to do anything, you, who used to be so
 bold!”
 
-“Till to‐morrow,” cried Ivan, and moved to go out.
+“Till to-morrow,” cried Ivan, and moved to go out.
 
 “Stay a moment.... Show me those notes again.”
 
@@ -30198,9 +30200,9 @@ Fyodorovitch!” he called after him again.
 
 “What do you want?” Ivan turned without stopping.
 
-“Good‐by!”
+“Good-by!”
 
-“Till to‐morrow!” Ivan cried again, and he walked out of the cottage.
+“Till to-morrow!” Ivan cried again, and he walked out of the cottage.
 
 The snowstorm was still raging. He walked the first few steps boldly,
 but suddenly began staggering. “It’s something physical,” he thought
@@ -30214,14 +30216,14 @@ senseless and motionless. The snow had almost covered his face. Ivan
 seized him and lifted him in his arms. Seeing a light in the little
 house to the right he went up, knocked at the shutters, and asked the
 man to whom the house belonged to help him carry the peasant to the
-police‐station, promising him three roubles. The man got ready and came
+police-station, promising him three roubles. The man got ready and came
 out. I won’t describe in detail how Ivan succeeded in his object,
-bringing the peasant to the police‐station and arranging for a doctor
+bringing the peasant to the police-station and arranging for a doctor
 to see him at once, providing with a liberal hand for the expenses. I
 will only say that this business took a whole hour, but Ivan was well
 content with it. His mind wandered and worked incessantly.
 
-“If I had not taken my decision so firmly for to‐morrow,” he reflected
+“If I had not taken my decision so firmly for to-morrow,” he reflected
 with satisfaction, “I should not have stayed a whole hour to look after
 the peasant, but should have passed by, without caring about his being
 frozen. I am quite capable of watching myself, by the way,” he thought
@@ -30231,8 +30233,8 @@ have decided that I am going out of my mind!”
 Just as he reached his own house he stopped short, asking himself
 suddenly hadn’t he better go at once to the prosecutor and tell him
 everything. He decided the question by turning back to the house.
-“Everything together to‐morrow!” he whispered to himself, and, strange
-to say, almost all his gladness and self‐satisfaction passed in one
+“Everything together to-morrow!” he whispered to himself, and, strange
+to say, almost all his gladness and self-satisfaction passed in one
 instant.
 
 As he entered his own room he felt something like a touch of ice on his
@@ -30295,9 +30297,9 @@ French say, with rather long, still thick, dark hair, slightly streaked
 with gray and a small pointed beard. He was wearing a brownish reefer
 jacket, rather shabby, evidently made by a good tailor though, and of a
 fashion at least three years old, that had been discarded by smart and
-well‐to‐do people for the last two years. His linen and his long
-scarf‐like neck‐tie were all such as are worn by people who aim at
-being stylish, but on closer inspection his linen was not over‐clean
+well-to-do people for the last two years. His linen and his long
+scarf-like neck-tie were all such as are worn by people who aim at
+being stylish, but on closer inspection his linen was not over-clean
 and his wide scarf was very threadbare. The visitor’s check trousers
 were of excellent cut, but were too light in color and too tight for
 the present fashion. His soft fluffy white hat was out of keeping with
@@ -30324,9 +30326,9 @@ the relationship. They gradually lose sight of their children
 altogether, though at intervals they receive a birthday or Christmas
 letter from them and sometimes even answer it.
 
-The countenance of the unexpected visitor was not so much good‐natured,
+The countenance of the unexpected visitor was not so much good-natured,
 as accommodating and ready to assume any amiable expression as occasion
-might arise. He had no watch, but he had a tortoise‐shell lorgnette on
+might arise. He had no watch, but he had a tortoise-shell lorgnette on
 a black ribbon. On the middle finger of his right hand was a massive
 gold ring with a cheap opal stone in it.
 
@@ -30343,7 +30345,7 @@ came away without finding out anything about her, you probably forgot—”
 
 “Ah, yes,” broke from Ivan and his face grew gloomy with uneasiness.
 “Yes, I’d forgotten ... but it doesn’t matter now, never mind, till
-to‐morrow,” he muttered to himself, “and you,” he added, addressing his
+to-morrow,” he muttered to himself, “and you,” he added, addressing his
 visitor, “I should have remembered that myself in a minute, for that
 was just what was tormenting me! Why do you interfere, as if I should
 believe that you prompted me, and that I didn’t remember it of myself?”
@@ -30382,7 +30384,7 @@ and in the top of my head ... only please don’t talk philosophy, as you
 did last time. If you can’t take yourself off, talk of something
 amusing. Talk gossip, you are a poor relation, you ought to talk
 gossip. What a nightmare to have! But I am not afraid of you. I’ll get
-the better of you. I won’t be taken to a mad‐house!”
+the better of you. I won’t be taken to a mad-house!”
 
 “_C’est charmant_, poor relation. Yes, I am in my natural shape. For
 what am I on earth but a poor relation? By the way, I am listening to
@@ -30399,7 +30401,7 @@ only the nastiest and stupidest of them. From that point of view you
 might be of interest to me, if only I had time to waste on you—”
 
 “Excuse me, excuse me, I’ll catch you. When you flew out at Alyosha
-under the lamp‐post this evening and shouted to him, ‘You learnt it
+under the lamp-post this evening and shouted to him, ‘You learnt it
 from _him_! How do you know that _he_ visits me?’ you were thinking of
 me then. So for one brief moment you did believe that I really exist,”
 the gentleman laughed blandly.
@@ -30445,7 +30447,7 @@ his clenched teeth.
 
 “My dear friend, above all things I want to behave like a gentleman and
 to be recognized as such,” the visitor began in an excess of
-deprecating and simple‐hearted pride, typical of a poor relation. “I am
+deprecating and simple-hearted pride, typical of a poor relation. “I am
 poor, but ... I won’t say very honest, but ... it’s an axiom generally
 accepted in society that I am a fallen angel. I certainly can’t
 conceive how I can ever have been an angel. If I ever was, it must have
@@ -30464,7 +30466,7 @@ fond of going to the public baths, would you believe it? and I go and
 steam myself with merchants and priests. What I dream of is becoming
 incarnate once for all and irrevocably in the form of some merchant’s
 wife weighing eighteen stone, and of believing all she believes. My
-ideal is to go to church and offer a candle in simple‐hearted faith,
+ideal is to go to church and offer a candle in simple-hearted faith,
 upon my word it is. Then there would be an end to my sufferings. I like
 being doctored too; in the spring there was an outbreak of smallpox and
 I went and was vaccinated in a foundling hospital—if only you knew how
@@ -30497,7 +30499,7 @@ devil!”
 “But you didn’t get that from me.” Ivan stopped suddenly, seeming
 struck. “That never entered my head, that’s strange.”
 
-“_C’est du nouveau, n’est‐ce pas?_ This time I’ll act honestly and
+“_C’est du nouveau, n’est-ce pas?_ This time I’ll act honestly and
 explain to you. Listen, in dreams and especially in nightmares, from
 indigestion or anything, a man sees sometimes such artistic visions,
 such complex and real actuality, such events, even a whole world of
@@ -30515,7 +30517,7 @@ nothing more.”
 “You are lying, your aim is to convince me you exist apart and are not
 my nightmare, and now you are asserting you are a dream.”
 
-“My dear fellow, I’ve adopted a special method to‐day, I’ll explain it
+“My dear fellow, I’ve adopted a special method to-day, I’ll explain it
 to you afterwards. Stay, where did I break off? Oh, yes! I caught cold
 then, only not here but yonder.”
 
@@ -30574,11 +30576,11 @@ what I can—”
 
 “Philosophy, indeed, when all my right side is numb and I am moaning
 and groaning. I’ve tried all the medical faculty: they can diagnose
-beautifully, they have the whole of your disease at their finger‐tips,
+beautifully, they have the whole of your disease at their finger-tips,
 but they’ve no idea how to cure you. There was an enthusiastic little
 student here, ‘You may die,’ said he, ‘but you’ll know perfectly what
 disease you are dying of!’ And then what a way they have sending people
-to specialists! ‘We only diagnose,’ they say, ‘but go to such‐and‐such
+to specialists! ‘We only diagnose,’ they say, ‘but go to such-and-such
 a specialist, he’ll cure you.’ The old doctor who used to cure all
 sorts of disease has completely disappeared, I assure you, now there
 are only specialists and they all advertise in the newspapers. If
@@ -30588,7 +30590,7 @@ he’ll look at your nose; I can only cure your right nostril, he’ll tell
 you, for I don’t cure the left nostril, that’s not my speciality, but
 go to Vienna, there there’s a specialist who will cure your left
 nostril. What are you to do? I fell back on popular remedies, a German
-doctor advised me to rub myself with honey and salt in the bath‐house.
+doctor advised me to rub myself with honey and salt in the bath-house.
 Solely to get an extra bath I went, smeared myself all over and it did
 me no good at all. In despair I wrote to Count Mattei in Milan. He sent
 me a book and some drops, bless him, and, only fancy, Hoff’s malt
@@ -30616,8 +30618,8 @@ can see you are young. My dear fellow, intelligence isn’t the only
 thing! I have naturally a kind and merry heart. ‘I also write
 vaudevilles of all sorts.’ You seem to take me for Hlestakov grown old,
 but my fate is a far more serious one. Before time was, by some decree
-which I could never make out, I was pre‐destined ‘to deny’ and yet I am
-genuinely good‐hearted and not at all inclined to negation. ‘No, you
+which I could never make out, I was pre-destined ‘to deny’ and yet I am
+genuinely good-hearted and not at all inclined to negation. ‘No, you
 must go and deny, without denial there’s no criticism and what would a
 journal be without a column of criticism?’ Without criticism it would
 be nothing but one ‘hosannah.’ But nothing but hosannah is not enough
@@ -30641,7 +30643,7 @@ sort of phantom in life who has lost all beginning and end, and who has
 even forgotten his own name. You are laughing— no, you are not
 laughing, you are angry again. You are for ever angry, all you care
 about is intelligence, but I repeat again that I would give away all
-this super‐stellar life, all the ranks and honors, simply to be
+this super-stellar life, all the ranks and honors, simply to be
 transformed into the soul of a merchant’s wife weighing eighteen stone
 and set candles at God’s shrine.”
 
@@ -30775,13 +30777,13 @@ gentleman, “I am convinced that you believe in me.”
 in you!”
 
 “But you have the thousandth of a grain. Homeopathic doses perhaps are
-the strongest. Confess that you have faith even to the ten‐thousandth
+the strongest. Confess that you have faith even to the ten-thousandth
 of a grain.”
 
 “Not for one minute,” cried Ivan furiously. “But I should like to
 believe in you,” he added strangely.
 
-“Aha! There’s an admission! But I am good‐natured. I’ll come to your
+“Aha! There’s an admission! But I am good-natured. I’ll come to your
 assistance again. Listen, it was I caught you, not you me. I told you
 your anecdote you’d forgotten, on purpose, so as to destroy your faith
 in me completely.”
@@ -30798,7 +30800,7 @@ my motive in it. It’s the new method. As soon as you disbelieve in me
 completely, you’ll begin assuring me to my face that I am not a dream
 but a reality. I know you. Then I shall have attained my object, which
 is an honorable one. I shall sow in you only a tiny grain of faith and
-it will grow into an oak‐tree—and such an oak‐tree that, sitting on it,
+it will grow into an oak-tree—and such an oak-tree that, sitting on it,
 you will long to enter the ranks of ‘the hermits in the wilderness and
 the saintly women,’ for that is what you are secretly longing for.
 You’ll dine on locusts, you’ll wander into the wilderness to save your
@@ -30807,7 +30809,7 @@ soul!”
 “Then it’s for the salvation of my soul you are working, is it, you
 scoundrel?”
 
-“One must do a good work sometimes. How ill‐humored you are!”
+“One must do a good work sometimes. How ill-humored you are!”
 
 “Fool! did you ever tempt those holy men who ate locusts and prayed
 seventeen years in the wilderness till they were overgrown with moss?”
@@ -30819,7 +30821,7 @@ constellation. We have our system of reckoning, you know. The conquest
 is priceless! And some of them, on my word, are not inferior to you in
 culture, though you won’t believe it. They can contemplate such depths
 of belief and disbelief at the same moment that sometimes it really
-seems that they are within a hair’s‐breadth of being ‘turned upside
+seems that they are within a hair’s-breadth of being ‘turned upside
 down,’ as the actor Gorbunov says.”
 
 “Well, did you get your nose pulled?”[8]
@@ -30842,7 +30844,7 @@ against Providence, who even in this has not forgotten you, for if you
 repine as you repined just now, declaring you’d be glad to have your
 nose pulled for the rest of your life, your desire has already been
 fulfilled indirectly, for when you lost your nose, you were led by the
-nose.’ ”
+nose.’”
 
 “Fool, how stupid!” cried Ivan.
 
@@ -30965,7 +30967,7 @@ come to pass—the old conception of the universe will fall of itself
 without cannibalism, and, what’s more, the old morality, and everything
 will begin anew. Men will unite to take from life all it can give, but
 only for joy and happiness in the present world. Man will be lifted up
-with a spirit of divine Titanic pride and the man‐ god will appear.
+with a spirit of divine Titanic pride and the man-god will appear.
 From hour to hour extending his conquest of nature infinitely by his
 will and his science, man will feel such lofty joy from hour to hour in
 doing it that it will make up for all his old dreams of the joys of
@@ -30988,9 +30990,9 @@ one who recognizes the truth even now may legitimately order his life
 as he pleases, on the new principles. In that sense, ‘all things are
 lawful’ for him. What’s more, even if this period never comes to pass,
 since there is anyway no God and no immortality, the new man may well
-become the man‐god, even if he is the only one in the whole world, and
+become the man-god, even if he is the only one in the whole world, and
 promoted to his new position, he may lightheartedly overstep all the
-barriers of the old morality of the old slave‐man, if necessary. There
+barriers of the old morality of the old slave-man, if necessary. There
 is no law for God. Where God stands, the place is holy. Where I stand
 will be at once the foremost place ... ‘all things are lawful’ and
 that’s the end of it! That’s all very charming; but if you want to
@@ -31016,11 +31018,11 @@ jumped up from the sofa.
 Alyosha with the most interesting and surprising news, I’ll be bound!”
 
 “Be silent, deceiver, I knew it was Alyosha, I felt he was coming, and
-of course he has not come for nothing; of course he brings ‘news,’ ”
+of course he has not come for nothing; of course he brings ‘news,’”
 Ivan exclaimed frantically.
 
 “Open, open to him. There’s a snowstorm and he is your brother.
-_Monsieur sait‐il le temps qu’il fait? C’est à ne pas mettre un chien
+_Monsieur sait-il le temps qu’il fait? C’est à ne pas mettre un chien
 dehors_.”
 
 The knocking continued. Ivan wanted to rush to the window, but
@@ -31102,7 +31104,7 @@ there.”
 
 “It’s not here. Don’t worry yourself. I know where it is—here,” said
 Alyosha, finding a clean towel, folded up and unused, by Ivan’s
-dressing‐ table in the other corner of the room. Ivan looked strangely
+dressing-table in the other corner of the room. Ivan looked strangely
 at the towel: recollection seemed to come back to him for an instant.
 
 “Stay”—he got up from the sofa—“an hour ago I took that new towel from
@@ -31138,17 +31140,17 @@ dog’s, a yard long, dun color.... Alyosha, you are cold. You’ve been in
 the snow. Would you like some tea? What? Is it cold? Shall I tell her
 to bring some? _C’est à ne pas mettre un chien dehors._...”
 
-Alyosha ran to the washing‐stand, wetted the towel, persuaded Ivan to
+Alyosha ran to the washing-stand, wetted the towel, persuaded Ivan to
 sit down again, and put the wet towel round his head. He sat down
 beside him.
 
 “What were you telling me just now about Lise?” Ivan began again. (He
 was becoming very talkative.) “I like Lise. I said something nasty
 about her. It was a lie. I like her ... I am afraid for Katya
-to‐morrow. I am more afraid of her than of anything. On account of the
-future. She will cast me off to‐morrow and trample me under foot. She
+to-morrow. I am more afraid of her than of anything. On account of the
+future. She will cast me off to-morrow and trample me under foot. She
 thinks that I am ruining Mitya from jealousy on her account! Yes, she
-thinks that! But it’s not so. To‐morrow the cross, but not the gallows.
+thinks that! But it’s not so. To-morrow the cross, but not the gallows.
 No, I shan’t hang myself. Do you know, I can never commit suicide,
 Alyosha. Is it because I am base? I am not a coward. Is it from love of
 life? How did I know that Smerdyakov had hanged himself? Yes, it was
@@ -31188,7 +31190,7 @@ back!”
 Ivan said, with a shudder of offense. “But he was unfair to me, unfair
 to me about lots of things. He told lies about me to my face. ‘Oh, you
 are going to perform an act of heroic virtue: to confess you murdered
-your father, that the valet murdered him at your instigation.’ ”
+your father, that the valet murdered him at your instigation.’”
 
 “Brother,” Alyosha interposed, “restrain yourself. It was not you
 murdered him. It’s not true!”
@@ -31206,7 +31208,7 @@ it because you are ill and delirious, tormenting yourself.”
 with horror? You are lying! I despise your opinion, I despise your
 horror!’ He said that about me. ‘And do you know you are longing for
 their praise—“he is a criminal, a murderer, but what a generous soul;
-he wanted to save his brother and he confessed.” ’ That’s a lie,
+he wanted to save his brother and he confessed.”’ That’s a lie,
 Alyosha!” Ivan cried suddenly, with flashing eyes. “I don’t want the
 low rabble to praise me, I swear I don’t! That’s a lie! That’s why I
 threw the glass at him and it broke against his ugly face.”
@@ -31250,7 +31252,7 @@ Lise will begin to despise me! ‘You are going in order to be praised.’
 That’s a brutal lie! And you despise me too, Alyosha. Now I am going to
 hate you again! And I hate the monster, too! I hate the monster! I
 don’t want to save the monster. Let him rot in Siberia! He’s begun
-singing a hymn! Oh, to‐morrow I’ll go, stand before them, and spit in
+singing a hymn! Oh, to-morrow I’ll go, stand before them, and spit in
 their faces!”
 
 He jumped up in a frenzy, flung off the towel, and fell to pacing up
@@ -31317,7 +31319,7 @@ Petersburg. Among them were lawyers, ladies, and even several
 distinguished personages. Every ticket of admission had been snatched
 up. A special place behind the table at which the three judges sat was
 set apart for the most distinguished and important of the men visitors;
-a row of arm‐chairs had been placed there—something exceptional, which
+a row of arm-chairs had been placed there—something exceptional, which
 had never been allowed before. A large proportion—not less than half of
 the public—were ladies. There was such a large number of lawyers from
 all parts that they did not know where to seat them, for every ticket
@@ -31383,7 +31385,7 @@ appreciated, was keenly excited over the Karamazov case, and was even
 dreaming of rebuilding his flagging fortunes by means of it,
 Fetyukovitch, they said, was his one anxiety. But these rumors were not
 quite just. Our prosecutor was not one of those men who lose heart in
-face of danger. On the contrary, his self‐confidence increased with the
+face of danger. On the contrary, his self-confidence increased with the
 increase of danger. It must be noted that our prosecutor was in general
 too hasty and morbidly impressionable. He would put his whole soul into
 some case and work at it as though his whole fate and his whole fortune
@@ -31417,9 +31419,9 @@ platform, a table and two rows of chairs had been put ready for the
 jury. On the left was the place for the prisoner and the counsel for
 the defense. In the middle of the court, near the judges, was a table
 with the “material proofs.” On it lay Fyodor Pavlovitch’s white silk
-dressing‐gown, stained with blood; the fatal brass pestle with which
+dressing-gown, stained with blood; the fatal brass pestle with which
 the supposed murder had been committed; Mitya’s shirt, with a
-blood‐stained sleeve; his coat, stained with blood in patches over the
+blood-stained sleeve; his coat, stained with blood in patches over the
 pocket in which he had put his handkerchief; the handkerchief itself,
 stiff with blood and by now quite yellow; the pistol loaded by Mitya at
 Perhotin’s with a view to suicide, and taken from him on the sly at
@@ -31432,7 +31434,7 @@ witnesses who remained in the court after giving their evidence.
 
 At ten o’clock the three judges arrived—the President, one honorary
 justice of the peace, and one other. The prosecutor, of course, entered
-immediately after. The President was a short, stout, thick‐set man of
+immediately after. The President was a short, stout, thick-set man of
 fifty, with a dyspeptic complexion, dark hair turning gray and cut
 short, and a red ribbon, of what Order I don’t remember. The prosecutor
 struck me and the others, too, as looking particularly pale, almost
@@ -31454,18 +31456,18 @@ submitted for decision to petty officials and even peasants?” and “What
 can an official, still more a peasant, understand in such an affair?”
 All the four officials in the jury were, in fact, men of no consequence
 and of low rank. Except one who was rather younger, they were
-gray‐headed men, little known in society, who had vegetated on a
+gray-headed men, little known in society, who had vegetated on a
 pitiful salary, and who probably had elderly, unpresentable wives and
 crowds of children, perhaps even without shoes and stockings. At most,
 they spent their leisure over cards and, of course, had never read a
 single book. The two merchants looked respectable, but were strangely
-silent and stolid. One of them was close‐shaven, and was dressed in
+silent and stolid. One of them was close-shaven, and was dressed in
 European style; the other had a small, gray beard, and wore a red
 ribbon with some sort of a medal upon it on his neck. There is no need
 to speak of the artisans and the peasants. The artisans of
 Skotoprigonyevsk are almost peasants, and even work on the land. Two of
 them also wore European dress, and, perhaps for that reason, were
-dirtier and more uninviting‐looking than the others. So that one might
+dirtier and more uninviting-looking than the others. So that one might
 well wonder, as I did as soon as I had looked at them, “what men like
 that could possibly make of such a case?” Yet their faces made a
 strangely imposing, almost menacing, impression; they were stern and
@@ -31476,17 +31478,17 @@ Pavlovitch Karamazov. I don’t quite remember how he described him. The
 court usher was told to bring in the prisoner, and Mitya made his
 appearance. There was a hush through the court. One could have heard a
 fly. I don’t know how it was with others, but Mitya made a most
-unfavorable impression on me. He looked an awful dandy in a brand‐new
-frock‐coat. I heard afterwards that he had ordered it in Moscow
+unfavorable impression on me. He looked an awful dandy in a brand-new
+frock-coat. I heard afterwards that he had ordered it in Moscow
 expressly for the occasion from his own tailor, who had his measure. He
 wore immaculate black kid gloves and exquisite linen. He walked in with
-his yard‐long strides, looking stiffly straight in front of him, and
+his yard-long strides, looking stiffly straight in front of him, and
 sat down in his place with a most unperturbed air.
 
 At the same moment the counsel for defense, the celebrated
 Fetyukovitch, entered, and a sort of subdued hum passed through the
 court. He was a tall, spare man, with long thin legs, with extremely
-long, thin, pale fingers, clean‐shaven face, demurely brushed, rather
+long, thin, pale fingers, clean-shaven face, demurely brushed, rather
 short hair, and thin lips that were at times curved into something
 between a sneer and a smile. He looked about forty. His face would have
 been pleasant, if it had not been for his eyes, which, in themselves
@@ -31597,7 +31599,7 @@ by step, with concentrated attention.
 But Fetyukovitch remained an enigma to all up to the very end, up to
 his speech. Persons of experience suspected that he had some design,
 that he was working towards some object, but it was almost impossible
-to guess what it was. His confidence and self‐reliance were
+to guess what it was. His confidence and self-reliance were
 unmistakable, however. Every one noticed with pleasure, moreover, that
 he, after so short a stay, not more than three days, perhaps, among us,
 had so wonderfully succeeded in mastering the case and “had studied it
@@ -31644,7 +31646,7 @@ inheritance with marked persistence of all the witnesses who could be
 asked it, not excepting Alyosha and Ivan, but he obtained no exact
 information from any one; all alleged that it was so, but were unable
 to bring forward any distinct proof. Grigory’s description of the scene
-at the dinner‐table, when Dmitri had burst in and beaten his father,
+at the dinner-table, when Dmitri had burst in and beaten his father,
 threatening to come back to kill him, made a sinister impression on the
 court, especially as the old servant’s composure in telling it, his
 parsimony of words and peculiar phraseology, were as effective as
@@ -31661,7 +31663,7 @@ trusted him implicitly from that time forward. He maintained
 obstinately that the door into the garden had been open. But he was
 asked so many questions that I can’t recall them all.
 
-At last the counsel for the defense began to cross‐examine him, and the
+At last the counsel for the defense began to cross-examine him, and the
 first question he asked was about the envelope in which Fyodor
 Pavlovitch was supposed to have put three thousand roubles for “a
 certain person.” “Have you ever seen it, you, who were for so many
@@ -31702,11 +31704,11 @@ wife?”
 
 “I did.”
 
-“Did you drink much? Roughly speaking, a wine‐glass or two?”
+“Did you drink much? Roughly speaking, a wine-glass or two?”
 
-“It might have been a tumbler‐full.”
+“It might have been a tumbler-full.”
 
-“A tumbler‐full, even. Perhaps a tumbler and a half?”
+“A tumbler-full, even. Perhaps a tumbler and a half?”
 
 Grigory did not answer. He seemed to see what was meant.
 
@@ -31844,11 +31846,11 @@ beautiful woman who would readily entertain the _élite_ of the youth of
 the neighborhood, but ... I only wanted to know ... It has come to my
 knowledge that Madame Svyetlov was particularly anxious a couple of
 months ago to make the acquaintance of the younger Karamazov, Alexey
-Fyodorovitch, and promised you twenty‐five roubles, if you would bring
+Fyodorovitch, and promised you twenty-five roubles, if you would bring
 him to her in his monastic dress. And that actually took place on the
 evening of the day on which the terrible crime, which is the subject of
 the present investigation, was committed. You brought Alexey Karamazov
-to Madame Svyetlov, and did you receive the twenty‐five roubles from
+to Madame Svyetlov, and did you receive the twenty-five roubles from
 Madame Svyetlov as a reward, that’s what I wanted to hear from you?”
 
 “It was a joke.... I don’t see of what interest that can be to you....
@@ -31861,15 +31863,15 @@ you?”
 questions.... Of course I shall give it back.”
 
 The President intervened, but Fetyukovitch declared he had no more
-questions to ask of the witness. Mr. Rakitin left the witness‐box not
+questions to ask of the witness. Mr. Rakitin left the witness-box not
 absolutely without a stain upon his character. The effect left by the
 lofty idealism of his speech was somewhat marred, and Fetyukovitch’s
 expression, as he watched him walk away, seemed to suggest to the
-public “this is a specimen of the lofty‐minded persons who accuse him.”
+public “this is a specimen of the lofty-minded persons who accuse him.”
 I remember that this incident, too, did not pass off without an
 outbreak from Mitya. Enraged by the tone in which Rakitin had referred
 to Grushenka, he suddenly shouted “Bernard!” When, after Rakitin’s
-cross‐ examination, the President asked the prisoner if he had anything
+cross-examination, the President asked the prisoner if he had anything
 to say, Mitya cried loudly:
 
 “Since I’ve been arrested, he has borrowed money from me! He is a
@@ -31905,7 +31907,7 @@ first visit to Mokroe, Mitya must have spent three thousand roubles,
 “or very little less. Just think what he squandered on those gypsy
 girls alone! And as for our lousy peasants, it wasn’t a case of
 flinging half a rouble in the street, he made them presents of
-twenty‐five roubles each, at least, he didn’t give them less. And what
+twenty-five roubles each, at least, he didn’t give them less. And what
 a lot of money was simply stolen from him! And if any one did steal, he
 did not leave a receipt. How could one catch the thief when he was
 flinging his money away all the time? Our peasants are robbers, you
@@ -31920,7 +31922,7 @@ inconceivable.
 my own eyes; I should think I ought to know how to reckon money,” cried
 Trifon Borissovitch, doing his best to satisfy “his betters.”
 
-When Fetyukovitch had to cross‐examine him, he scarcely tried to refute
+When Fetyukovitch had to cross-examine him, he scarcely tried to refute
 his evidence, but began asking him about an incident at the first
 carousal at Mokroe, a month before the arrest, when Timofey and another
 peasant called Akim had picked up on the floor in the passage a hundred
@@ -31950,7 +31952,7 @@ Fetyukovitch caught them, too, in his snares. Trifon Borissovitch,
 recalled, was forced, in spite of his evasions, to admit that Pan
 Vrublevsky had substituted another pack of cards for the one he had
 provided, and that Pan Mussyalovitch had cheated during the game.
-Kalganov confirmed this, and both the Poles left the witness‐box with
+Kalganov confirmed this, and both the Poles left the witness-box with
 damaged reputations, amidst laughter from the public.
 
 Then exactly the same thing happened with almost all the most dangerous
@@ -31985,14 +31987,14 @@ height and sturdy build. He was much esteemed and respected by every
 one in the town. He was a conscientious doctor and an excellent and
 pious man, a Hernguter or Moravian brother, I am not quite sure which.
 He had been living amongst us for many years and behaved with wonderful
-dignity. He was a kind‐hearted and humane man. He treated the sick poor
+dignity. He was a kind-hearted and humane man. He treated the sick poor
 and peasants for nothing, visited them in their slums and huts, and
 left money for medicine, but he was as obstinate as a mule. If once he
 had taken an idea into his head, there was no shaking it. Almost every
 one in the town was aware, by the way, that the famous doctor had,
 within the first two or three days of his presence among us, uttered
 some extremely offensive allusions to Doctor Herzenstube’s
-qualifications. Though the Moscow doctor asked twenty‐five roubles for
+qualifications. Though the Moscow doctor asked twenty-five roubles for
 a visit, several people in the town were glad to take advantage of his
 arrival, and rushed to consult him regardless of expense. All these
 had, of course, been previously patients of Doctor Herzenstube, and the
@@ -32003,11 +32005,11 @@ Herzenstube, of course, heard all this, and now all the three doctors
 made their appearance, one after another, to be examined.
 
 Doctor Herzenstube roundly declared that the abnormality of the
-prisoner’s mental faculties was self‐evident. Then giving his grounds
+prisoner’s mental faculties was self-evident. Then giving his grounds
 for this opinion, which I omit here, he added that the abnormality was
 not only evident in many of the prisoner’s actions in the past, but was
 apparent even now at this very moment. When he was asked to explain how
-it was apparent now at this moment, the old doctor, with simple‐hearted
+it was apparent now at this moment, the old doctor, with simple-hearted
 directness, pointed out that the prisoner on entering the court had “an
 extraordinary air, remarkable in the circumstances”; that he had
 “marched in like a soldier, looking straight before him, though it
@@ -32022,7 +32024,7 @@ been a weakness of his to believe that he spoke Russian perfectly,
 better indeed than Russians. And he was very fond of using Russian
 proverbs, always declaring that the Russian proverbs were the best and
 most expressive sayings in the whole world. I may remark, too, that in
-conversation, through absent‐mindedness he often forgot the most
+conversation, through absent-mindedness he often forgot the most
 ordinary words, which sometimes went out of his head, though he knew
 them perfectly. The same thing happened, though, when he spoke German,
 and at such times he always waved his hand before his face as though
@@ -32108,7 +32110,7 @@ as though recalling something, he added:
 had a good heart both in childhood and after childhood, that I know.
 But the Russian proverb says, ‘If a man has one head, it’s good, but if
 another clever man comes to visit him, it would be better still, for
-then there will be two heads and not only one.’ ”
+then there will be two heads and not only one.’”
 
 “One head is good, but two are better,” the prosecutor put in
 impatiently. He knew the old man’s habit of talking slowly and
@@ -32134,7 +32136,7 @@ A note of feeling and tenderness suddenly came into the honest old
 man’s voice. Fetyukovitch positively started, as though scenting
 something, and caught at it instantly.
 
-“Oh, yes, I was a young man then.... I was ... well, I was forty‐five
+“Oh, yes, I was a young man then.... I was ... well, I was forty-five
 then, and had only just come here. And I was so sorry for the boy then;
 I asked myself why shouldn’t I buy him a pound of ... a pound of what?
 I’ve forgotten what it’s called. A pound of what children are very fond
@@ -32159,8 +32161,8 @@ away, and two days after I happened to be passing, and he shouted to me
 of himself, ‘Uncle, _Gott der Vater, Gott der Sohn_,’ and he had only
 forgotten ‘_Gott der heilige Geist_.’ But I reminded him of it and I
 felt very sorry for him again. But he was taken away, and I did not see
-him again. Twenty‐ three years passed. I am sitting one morning in my
-study, a white‐haired old man, when there walks into the room a
+him again. Twenty-three years passed. I am sitting one morning in my
+study, a white-haired old man, when there walks into the room a
 blooming young man, whom I should never have recognized, but he held up
 his finger and said, laughing, ‘_Gott der Vater, Gott der Sohn_, and
 _Gott der heilige Geist_. I have just arrived and have come to thank
@@ -32197,9 +32199,9 @@ very gently and sympathetically. It was evident that his reputation for
 goodness had preceded him. Alyosha gave his evidence modestly and with
 restraint, but his warm sympathy for his unhappy brother was
 unmistakable. In answer to one question, he sketched his brother’s
-character as that of a man, violent‐tempered perhaps and carried away
+character as that of a man, violent-tempered perhaps and carried away
 by his passions, but at the same time honorable, proud and generous,
-capable of self‐sacrifice, if necessary. He admitted, however, that,
+capable of self-sacrifice, if necessary. He admitted, however, that,
 through his passion for Grushenka and his rivalry with his father, his
 brother had been of late in an intolerable position. But he repelled
 with indignation the suggestion that his brother might have committed a
@@ -32231,7 +32233,7 @@ feeling would always save him at the fatal moment, as it has indeed
 saved him, for it was not he killed my father,” Alyosha said firmly, in
 a loud voice that was heard throughout the court.
 
-The prosecutor started like a war‐horse at the sound of a trumpet.
+The prosecutor started like a war-horse at the sound of a trumpet.
 
 “Let me assure you that I fully believe in the complete sincerity of
 your conviction and do not explain it by or identify it with your
@@ -32279,7 +32281,7 @@ brother’s innocence and Smerdyakov’s guilt, and after all there was
 nothing, no evidence except certain moral convictions so natural in a
 brother.
 
-But Fetyukovitch began his cross‐examination. On his asking Alyosha
+But Fetyukovitch began his cross-examination. On his asking Alyosha
 when it was that the prisoner had told him of his hatred for his father
 and that he might kill him, and whether he had heard it, for instance,
 at their last meeting before the catastrophe, Alyosha started as he
@@ -32361,7 +32363,7 @@ eyes rather than give it back. And the most shameful part of it was
 that I knew beforehand I shouldn’t give it back! You are right,
 Alyosha! Thanks, Alyosha!”
 
-So Alyosha’s cross‐examination ended. What was important and striking
+So Alyosha’s cross-examination ended. What was important and striking
 about it was that one fact at least had been found, and even though
 this were only one tiny bit of evidence, a mere hint at evidence, it
 did go some little way towards proving that the bag had existed and had
@@ -32372,9 +32374,9 @@ flushed face he moved away to the seat assigned to him. He kept
 repeating to himself: “How was it I forgot? How could I have forgotten
 it? And what made it come back to me now?”
 
-Katerina Ivanovna was called to the witness‐box. As she entered
+Katerina Ivanovna was called to the witness-box. As she entered
 something extraordinary happened in the court. The ladies clutched
-their lorgnettes and opera‐glasses. There was a stir among the men:
+their lorgnettes and opera-glasses. There was a stir among the men:
 some stood up to get a better view. Everybody alleged afterwards that
 Mitya had turned “white as a sheet” on her entrance. All in black, she
 advanced modestly, almost timidly. It was impossible to tell from her
@@ -32417,7 +32419,7 @@ although I could not at that time foresee that I should ever be in a
 position to repay my debt.”
 
 There was a note of defiance in her voice. It was then Fetyukovitch
-began his cross‐examination.
+began his cross-examination.
 
 “Did that take place not here, but at the beginning of your
 acquaintance?” Fetyukovitch suggested cautiously, feeling his way,
@@ -32441,9 +32443,9 @@ and was not ashamed to make it appear as though she had of her own
 impulse run to the young officer, relying on something ... to beg him
 for the money. It was something tremendous! I turned cold and trembled
 as I listened. The court was hushed, trying to catch each word. It was
-something unexampled. Even from such a self‐willed and contemptuously
+something unexampled. Even from such a self-willed and contemptuously
 proud girl as she was, such an extremely frank avowal, such sacrifice,
-such self‐immolation, seemed incredible. And for what, for whom? To
+such self-immolation, seemed incredible. And for what, for whom? To
 save the man who had deceived and insulted her and to help, in however
 small a degree, in saving him, by creating a strong impression in his
 favor. And, indeed, the figure of the young officer who, with a
@@ -32467,7 +32469,7 @@ that? She must have understood it, yet she made up her mind to tell
 everything. Of course, all these nasty little suspicions as to the
 truth of her story only arose afterwards and at the first moment all
 were deeply impressed by it. As for the judges and the lawyers, they
-listened in reverent, almost shame‐faced silence to Katerina Ivanovna.
+listened in reverent, almost shame-faced silence to Katerina Ivanovna.
 The prosecutor did not venture upon even one question on the subject.
 Fetyukovitch made a low bow to her. Oh, he was almost triumphant! Much
 ground had been gained. For a man to give his last four thousand on a
@@ -32498,7 +32500,7 @@ the prisoner would at least have been recommended to mercy. But of that
 later. A few words first about Grushenka.
 
 She, too, was dressed entirely in black, with her magnificent black
-shawl on her shoulders. She walked to the witness‐box with her smooth,
+shawl on her shoulders. She walked to the witness-box with her smooth,
 noiseless tread, with the slightly swaying gait common in women of full
 figure. She looked steadily at the President, turning her eyes neither
 to the right nor to the left. To my thinking she looked very handsome
@@ -32506,13 +32508,13 @@ at that moment, and not at all pale, as the ladies alleged afterwards.
 They declared, too, that she had a concentrated and spiteful
 expression. I believe that she was simply irritated and painfully
 conscious of the contemptuous and inquisitive eyes of our
-scandal‐loving public. She was proud and could not stand contempt. She
+scandal-loving public. She was proud and could not stand contempt. She
 was one of those people who flare up, angry and eager to retaliate, at
 the mere suggestion of contempt. There was an element of timidity, too,
 of course, and inward shame at her own timidity, so it was not strange
 that her tone kept changing. At one moment it was angry, contemptuous
-and rough, and at another there was a sincere note of self‐
-condemnation. Sometimes she spoke as though she were taking a desperate
+and rough, and at another there was a sincere note of self-condemnation.
+Sometimes she spoke as though she were taking a desperate
 plunge; as though she felt, “I don’t care what happens, I’ll say
 it....” Apropos of her acquaintance with Fyodor Pavlovitch, she
 remarked curtly, “That’s all nonsense, and was it my fault that he
@@ -32568,8 +32570,8 @@ was my fault, that it was on my account he had murdered him. But when
 he said he wasn’t guilty, I believed him at once, and I believe him now
 and always shall believe him. He is not the man to tell a lie.”
 
-Fetyukovitch began his cross‐examination. I remember that among other
-things he asked about Rakitin and the twenty‐five roubles “you paid him
+Fetyukovitch began his cross-examination. I remember that among other
+things he asked about Rakitin and the twenty-five roubles “you paid him
 for bringing Alexey Fyodorovitch Karamazov to see you.”
 
 “There was nothing strange about his taking the money,” sneered
@@ -32592,7 +32594,7 @@ Mitya, and so she was angry. The whole effect on the public, of
 Rakitin’s speech, of his noble sentiments, of his attacks upon serfdom
 and the political disorder of Russia, was this time finally ruined.
 Fetyukovitch was satisfied: it was another godsend. Grushenka’s
-cross‐examination did not last long and, of course, there could be
+cross-examination did not last long and, of course, there could be
 nothing particularly new in her evidence. She left a very disagreeable
 impression on the public; hundreds of contemptuous eyes were fixed upon
 her, as she finished giving her evidence and sat down again in the
@@ -32709,7 +32711,7 @@ audience. “My father has been murdered and they pretend they are
 horrified,” he snarled, with furious contempt. “They keep up the sham
 with one another. Liars! They all desire the death of their fathers.
 One reptile devours another.... If there hadn’t been a murder, they’d
-have been angry and gone home ill‐humored. It’s a spectacle they want!
+have been angry and gone home ill-humored. It’s a spectacle they want!
 _Panem et circenses_. Though I am one to talk! Have you any water? Give
 me a drink for Christ’s sake!” He suddenly clutched his head.
 
@@ -32876,7 +32878,7 @@ but I swear, I swear I loved you even while I hated you, and you didn’t
 love me!”
 
 He sank back on his seat, wringing his hands in despair. The prosecutor
-and counsel for the defense began cross‐examining her, chiefly to
+and counsel for the defense began cross-examining her, chiefly to
 ascertain what had induced her to conceal such a document and to give
 her evidence in quite a different tone and spirit just before.
 
@@ -32910,14 +32912,14 @@ to her, “We understand how hard it is for you; be sure we are able to
 feel for you,” and so on, and so on. And yet they dragged the evidence
 out of the raving, hysterical woman. She described at last with
 extraordinary clearness, which is so often seen, though only for a
-moment, in such over‐wrought states, how Ivan had been nearly driven
+moment, in such over-wrought states, how Ivan had been nearly driven
 out of his mind during the last two months trying to save “the monster
 and murderer,” his brother.
 
 “He tortured himself,” she exclaimed, “he was always trying to minimize
 his brother’s guilt and confessing to me that he, too, had never loved
 his father, and perhaps desired his death himself. Oh, he has a tender,
-over‐ tender conscience! He tormented himself with his conscience! He
+over-tender conscience! He tormented himself with his conscience! He
 told me everything, everything! He came every day and talked to me as
 his only friend. I have the honor to be his only friend!” she cried
 suddenly with a sort of defiance, and her eyes flashed. “He had been
@@ -32958,7 +32960,7 @@ description of her former relations with Mitya?—that was the question.
 No, she had not intentionally slandered him when she cried that Mitya
 despised her for her bowing down to him! She believed it herself. She
 had been firmly convinced, perhaps ever since that bow, that the
-simple‐hearted Mitya, who even then adored her, was laughing at her and
+simple-hearted Mitya, who even then adored her, was laughing at her and
 despising her. She had loved him with an hysterical, “lacerated” love
 only from pride, from wounded pride, and that love was not like love,
 but more like revenge. Oh! perhaps that lacerated love would have grown
@@ -33019,7 +33021,7 @@ seat and our prosecutor, Ippolit Kirillovitch, began his speech.
 Ippolit Kirillovitch began his speech, trembling with nervousness, with
 cold sweat on his forehead, feeling hot and cold all over by turns. He
 described this himself afterwards. He regarded this speech as his
-_chef‐d’œuvre_, the _chef‐d’œuvre_ of his whole life, as his swan‐song.
+_chef-d’œuvre_, the _chef-d’œuvre_ of his whole life, as his swan-song.
 He died, it is true, nine months later of rapid consumption, so that he
 had the right, as it turned out, to compare himself to a swan singing
 his last song. He had put his whole heart and all the brain he had into
@@ -33093,7 +33095,7 @@ lived among us!’...
 “Yes, one day perhaps the leading intellects of Russia and of Europe
 will study the psychology of Russian crime, for the subject is worth
 it. But this study will come later, at leisure, when all the tragic
-topsy‐turvydom of to‐day is farther behind us, so that it’s possible to
+topsy-turvydom of to-day is farther behind us, so that it’s possible to
 examine it with more insight and more impartiality than I can do. Now
 we are either horrified or pretend to be horrified, though we really
 gloat over the spectacle, and love strong and eccentric sensations
@@ -33128,7 +33130,7 @@ securing the ear of all Russia.
 “What, after all, is this Karamazov family, which has gained such an
 unenviable notoriety throughout Russia?” he continued. “Perhaps I am
 exaggerating, but it seems to me that certain fundamental features of
-the educated class of to‐day are reflected in this family picture—only,
+the educated class of to-day are reflected in this family picture—only,
 of course, in miniature, ‘like the sun in a drop of water.’ Think of
 that unhappy, vicious, unbridled old man, who has met with such a
 melancholy end, the head of a family! Beginning life of noble birth,
@@ -33156,7 +33158,7 @@ against him.
 
 “But enough, enough of that unhappy old man; he has paid the penalty.
 Let us remember, however, that he was a father, and one of the typical
-fathers of to‐day. Am I unjust, indeed, in saying that he is typical of
+fathers of to-day. Am I unjust, indeed, in saying that he is typical of
 many modern fathers? Alas! many of them only differ in not openly
 professing such cynicism, for they are better educated, more cultured,
 but their philosophy is essentially the same as his. Perhaps I am a
@@ -33192,7 +33194,7 @@ Pavlovitch in character, it is Ivan Fyodorovitch.’
 “With that remark I conclude my sketch of his character, feeling it
 indelicate to continue further. Oh, I don’t want to draw any further
 conclusions and croak like a raven over the young man’s future. We’ve
-seen to‐day in this court that there are still good impulses in his
+seen to-day in this court that there are still good impulses in his
 young heart, that family feeling has not been destroyed in him by lack
 of faith and cynicism, which have come to him rather by inheritance
 than by the exercise of independent thought.
@@ -33256,7 +33258,7 @@ great need of it. But all this later, let us take events in their
 chronological order.
 
 “First, we have before us a poor abandoned child, running about the
-back‐ yard ‘without boots on his feet,’ as our worthy and esteemed
+back-yard ‘without boots on his feet,’ as our worthy and esteemed
 fellow citizen, of foreign origin, alas! expressed it just now. I
 repeat it again, I yield to no one the defense of the criminal. I am
 here to accuse him, but to defend him also. Yes, I, too, am human; I,
@@ -33272,13 +33274,13 @@ inheritance on the payment of this six thousand.
 
 “Then came his meeting with a young girl of lofty character and
 brilliant education. Oh, I do not venture to repeat the details; you
-have only just heard them. Honor, self‐sacrifice were shown there, and
+have only just heard them. Honor, self-sacrifice were shown there, and
 I will be silent. The figure of the young officer, frivolous and
 profligate, doing homage to true nobility and a lofty ideal, was shown
 in a very sympathetic light before us. But the other side of the medal
 was unexpectedly turned to us immediately after in this very court.
 Again I will not venture to conjecture why it happened so, but there
-were causes. The same lady, bathed in tears of long‐concealed
+were causes. The same lady, bathed in tears of long-concealed
 indignation, alleged that he, he of all men, had despised her for her
 action, which, though incautious, reckless perhaps, was still dictated
 by lofty and generous motives. He, he, the girl’s betrothed, looked at
@@ -33466,20 +33468,20 @@ after dinner.
 prisoner fully intended to murder his father before that incident. Yet
 the idea had several times presented itself to him, and he had
 deliberated on it—for that we have facts, witnesses, and his own words.
-I confess, gentlemen of the jury,” he added, “that till to‐day I have
+I confess, gentlemen of the jury,” he added, “that till to-day I have
 been uncertain whether to attribute to the prisoner conscious
 premeditation. I was firmly convinced that he had pictured the fatal
 moment beforehand, but had only pictured it, contemplating it as a
 possibility. He had not definitely considered when and how he might
 commit the crime.
 
-“But I was only uncertain till to‐day, till that fatal document was
+“But I was only uncertain till to-day, till that fatal document was
 presented to the court just now. You yourselves heard that young lady’s
 exclamation, ‘It is the plan, the program of the murder!’ That is how
 she defined that miserable, drunken letter of the unhappy prisoner.
 And, in fact, from that letter we see that the whole fact of the murder
 was premeditated. It was written two days before, and so we know now
-for a fact that, forty‐eight hours before the perpetration of his
+for a fact that, forty-eight hours before the perpetration of his
 terrible design, the prisoner swore that, if he could not get money
 next day, he would murder his father in order to take the envelope with
 the notes from under his pillow, as soon as Ivan had left. ‘As soon as
@@ -33508,9 +33510,9 @@ arrest and prosecution afterwards. But there was nothing for it; he
 could not take his words back, but his luck had served him before, it
 would serve him again. He believed in his star, you know! I must
 confess, too, that he did a great deal to avoid the fatal catastrophe.
-‘To‐morrow I shall try and borrow the money from every one,’ as he
+‘To-morrow I shall try and borrow the money from every one,’ as he
 writes in his peculiar language, ‘and if they won’t give it to me,
-there will be bloodshed.’ ”
+there will be bloodshed.’”
 
 Here Ippolit Kirillovitch passed to a detailed description of all
 Mitya’s efforts to borrow the money. He described his visit to
@@ -33529,10 +33531,10 @@ a temptation! Still he resists it; he goes off to a lady who has for
 some time been residing in the town, and who is highly esteemed among
 us, Madame Hohlakov. That lady, who had long watched his career with
 compassion, gave him the most judicious advice, to give up his
-dissipated life, his unseemly love‐affair, the waste of his youth and
-vigor in pot‐house debauchery, and to set off to Siberia to the gold‐
-mines: ‘that would be an outlet for your turbulent energies, your
-romantic character, your thirst for adventure.’ ”
+dissipated life, his unseemly love-affair, the waste of his youth and
+vigor in pot-house debauchery, and to set off to Siberia to the
+gold-mines: ‘that would be an outlet for your turbulent energies, your
+romantic character, your thirst for adventure.’”
 
 After describing the result of this conversation and the moment when
 the prisoner learnt that Grushenka had not remained at Samsonov’s, the
@@ -33580,14 +33582,14 @@ arrest, yet from that time to this he had not brought forward a single
 fact to confirm the charge, nor the faintest suggestion of a fact. The
 charge is confirmed by three persons only—the two brothers of the
 prisoner and Madame Svyetlov. The elder of these brothers expressed his
-suspicions only to‐day, when he was undoubtedly suffering from brain
+suspicions only to-day, when he was undoubtedly suffering from brain
 fever. But we know that for the last two months he has completely
 shared our conviction of his brother’s guilt and did not attempt to
 combat that idea. But of that later. The younger brother has admitted
 that he has not the slightest fact to support his notion of
 Smerdyakov’s guilt, and has only been led to that conclusion from the
 prisoner’s own words and the expression of his face. Yes, that
-astounding piece of evidence has been brought forward twice to‐ day by
+astounding piece of evidence has been brought forward twice to-day by
 him. Madame Svyetlov was even more astounding. ‘What the prisoner tells
 you, you must believe; he is not a man to tell a lie.’ That is all the
 evidence against Smerdyakov produced by these three persons, who are
@@ -33634,11 +33636,11 @@ his master, ever since he had restored him some money he had lost. So
 it may be supposed that the poor fellow suffered pangs of remorse at
 having deceived his master, whom he loved as his benefactor. Persons
 severely afflicted with epilepsy are, so the most skillful doctors tell
-us, always prone to continual and morbid self‐reproach. They worry over
+us, always prone to continual and morbid self-reproach. They worry over
 their ‘wickedness,’ they are tormented by pangs of conscience, often
 entirely without cause; they exaggerate and often invent all sorts of
 faults and crimes. And here we have a man of that type who had really
-been driven to wrong‐doing by terror and intimidation.
+been driven to wrong-doing by terror and intimidation.
 
 “He had, besides, a strong presentiment that something terrible would
 be the outcome of the situation that was developing before his eyes.
@@ -33750,7 +33752,7 @@ the kitchen, where he always slept, apart from all the rest, and where
 he could go in and out as he liked, to Grigory’s room at the other end
 of the lodge, where he was always put, shut off by a screen three paces
 from their own bed. This was the immemorial custom established by his
-master and the kind‐hearted Marfa Ignatyevna, whenever he had a fit.
+master and the kind-hearted Marfa Ignatyevna, whenever he had a fit.
 There, lying behind the screen, he would most likely, to keep up the
 sham, have begun groaning, and so keeping them awake all night (as
 Grigory and his wife testified). And all this, we are to believe, that
@@ -33780,7 +33782,7 @@ said, ‘Why not go and kill the master?’ And how did he know what had
 happened, since he had been lying unconscious till that moment? But
 there’s a limit to these flights of fancy.
 
-“ ‘Quite so,’ some astute people will tell me, ‘but what if they were
+“‘Quite so,’ some astute people will tell me, ‘but what if they were
 in agreement? What if they murdered him together and shared the
 money—what then?’ A weighty question, truly! And the facts to confirm
 it are astounding. One commits the murder and takes all the trouble
@@ -33810,7 +33812,7 @@ says. ‘He murdered and robbed him. It was the work of his hands.’
 Strange sort of accomplices who begin to accuse one another at once!
 And think of the risk for Karamazov. After committing the murder while
 his accomplice lay in bed, he throws the blame on the invalid, who
-might well have resented it and in self‐preservation might well have
+might well have resented it and in self-preservation might well have
 confessed the truth. For he might well have seen that the court would
 at once judge how far he was responsible, and so he might well have
 reckoned that if he were punished, it would be far less severely than
@@ -33864,7 +33866,7 @@ right to conjecture why. His health had been giving way for a week
 past: he had admitted to a doctor and to his most intimate friends that
 he was suffering from hallucinations and seeing phantoms of the dead:
 he was on the eve of the attack of brain fever by which he has been
-stricken down to‐day. In this condition he suddenly heard of
+stricken down to-day. In this condition he suddenly heard of
 Smerdyakov’s death, and at once reflected, ‘The man is dead, I can
 throw the blame on him and save my brother. I have money. I will take a
 roll of notes and say that Smerdyakov gave them me before his death.’
@@ -33986,7 +33988,7 @@ sure, he was a poet and had burnt the candle at both ends all his life.
 world, such as never was before, that will be remembered and talked of
 long after! In the midst of shouts of wild merriment, reckless gypsy
 songs and dances I shall raise the glass and drink to the woman I adore
-and her new‐found happiness! And then, on the spot, at her feet, I
+and her new-found happiness! And then, on the spot, at her feet, I
 shall dash out my brains before her and punish myself! She will
 remember Mitya Karamazov sometimes, she will see how Mitya loved her,
 she will feel for Mitya!’
@@ -34016,7 +34018,7 @@ drove him, ‘Do you know, you are driving a murderer!’ But it was
 impossible for him to speak out, he had to get to Mokroe and there to
 finish his romance. But what was awaiting the luckless man? Almost from
 the first minute at Mokroe he saw that his invincible rival was perhaps
-by no means so invincible, that the toast to their new‐found happiness
+by no means so invincible, that the toast to their new-found happiness
 was not desired and would not be acceptable. But you know the facts,
 gentlemen of the jury, from the preliminary inquiry. Karamazov’s
 triumph over his rival was complete and his soul passed into quite a
@@ -34115,13 +34117,13 @@ judges, the arbiters of his destiny.
 duties when it is terrible for us to face a man, terrible on his
 account, too! The moments of contemplating that animal fear, when the
 criminal sees that all is lost, but still struggles, still means to
-struggle, the moments when every instinct of self‐preservation rises up
+struggle, the moments when every instinct of self-preservation rises up
 in him at once and he looks at you with questioning and suffering eyes,
 studies you, your face, your thoughts, uncertain on which side you will
 strike, and his distracted mind frames thousands of plans in an
 instant, but he is still afraid to speak, afraid of giving himself
 away! This purgatory of the spirit, this animal thirst for
-self‐preservation, these humiliating moments of the human soul, are
+self-preservation, these humiliating moments of the human soul, are
 awful, and sometimes arouse horror and compassion for the criminal even
 in the lawyer. And this was what we all witnessed then.
 
@@ -34196,7 +34198,7 @@ Smerdyakov behind the screen as he came out of his bedroom—Karamazov
 was positively crushed. My esteemed and witty colleague, Nikolay
 Parfenovitch, told me afterwards that he was almost moved to tears at
 the sight of him. And to improve matters, the prisoner hastened to tell
-us about the much‐talked‐of little bag—so be it, you shall hear this
+us about the much-talked-of little bag—so be it, you shall hear this
 romance!
 
 “Gentlemen of the jury, I have told you already why I consider this
@@ -34206,7 +34208,7 @@ a bet to invent the most unlikely story, one could hardly find anything
 more incredible. The worst of such stories is that the triumphant
 romancers can always be put to confusion and crushed by the very
 details in which real life is so rich and which these unhappy and
-involuntary story‐tellers neglect as insignificant trifles. Oh, they
+involuntary story-tellers neglect as insignificant trifles. Oh, they
 have no thought to spare for such details, their minds are concentrated
 on their grand invention as a whole, and fancy any one daring to pull
 them up for a trifle! But that’s how they are caught. The prisoner was
@@ -34215,7 +34217,7 @@ and who made it for you?’ ‘I made it myself.’ ‘And where did you get
 the linen?’ The prisoner was positively offended, he thought it almost
 insulting to ask him such a trivial question, and would you believe it,
 his resentment was genuine! But they are all like that. ‘I tore it off
-my shirt.’ ‘Then we shall find that shirt among your linen to‐morrow,
+my shirt.’ ‘Then we shall find that shirt among your linen to-morrow,
 with a piece torn off.’ And only fancy, gentlemen of the jury, if we
 really had found that torn shirt (and how could we have failed to find
 it in his chest of drawers or trunk?) that would have been a fact, a
@@ -34445,7 +34447,7 @@ these facts formed a whole. His speech might be divided into two parts,
 the first consisting of criticism in refutation of the charge,
 sometimes malicious and sarcastic. But in the second half he suddenly
 changed his tone, and even his manner, and at once rose to pathos. The
-audience seemed on the look‐out for it, and quivered with enthusiasm.
+audience seemed on the look-out for it, and quivered with enthusiasm.
 
 He went straight to the point, and began by saying that although he
 practiced in Petersburg, he had more than once visited provincial towns
@@ -34539,13 +34541,13 @@ and two minutes later, when he has killed another man, we are entitled
 to assume the most heartless and calculating foresight in him. But even
 admitting this was so, it is psychological subtlety, I suppose, that
 discerns that under certain circumstances I become as bloodthirsty and
-keen‐sighted as a Caucasian eagle, while at the next I am as timid and
+keen-sighted as a Caucasian eagle, while at the next I am as timid and
 blind as a mole. But if I am so bloodthirsty and cruelly calculating
 that when I kill a man I only run back to find out whether he is alive
 to witness against me, why should I spend five minutes looking after my
 victim at the risk of encountering other witnesses? Why soak my
 handkerchief, wiping the blood off his head so that it may be evidence
-against me later? If he were so cold‐hearted and calculating, why not
+against me later? If he were so cold-hearted and calculating, why not
 hit the servant on the head again and again with the same pestle so as
 to kill him outright and relieve himself of all anxiety about the
 witness?
@@ -34564,10 +34566,10 @@ if he was capable of feeling grief and pity at having killed a man, it
 shows that he was innocent of his father’s murder. Had he murdered him,
 he would never have run to another victim out of pity; then he would
 have felt differently; his thoughts would have been centered on
-self‐preservation. He would have had none to spare for pity, that is
+self-preservation. He would have had none to spare for pity, that is
 beyond doubt. On the contrary, he would have broken his skull instead
 of spending five minutes looking after him. There was room for pity and
-good‐feeling just because his conscience had been clear till then. Here
+good-feeling just because his conscience had been clear till then. Here
 we have a different psychology. I have purposely resorted to this
 method, gentlemen of the jury, to show that you can prove anything by
 it. It all depends on who makes use of it. Psychology lures even most
@@ -34602,12 +34604,12 @@ Smerdyakov had seen them.
 “Here the question arises, if it’s true that they did exist, and that
 Smerdyakov had seen them, when did he see them for the last time? What
 if his master had taken the notes from under his bed and put them back
-in his cash‐box without telling him? Note, that according to
+in his cash-box without telling him? Note, that according to
 Smerdyakov’s story the notes were kept under the mattress; the prisoner
 must have pulled them out, and yet the bed was absolutely unrumpled;
 that is carefully recorded in the protocol. How could the prisoner have
 found the notes without disturbing the bed? How could he have helped
-soiling with his blood‐ stained hands the fine and spotless linen with
+soiling with his blood-stained hands the fine and spotless linen with
 which the bed had been purposely made?
 
 “But I shall be asked: What about the envelope on the floor? Yes, it’s
@@ -34630,7 +34632,7 @@ and hysterical expectation of the object of his adoration, may have
 whiled away the time by breaking open the envelope and taking out the
 notes. ‘What’s the use of the envelope?’ he may have asked himself.
 ‘She won’t believe the notes are there, but when I show her the thirty
-rainbow‐colored notes in one roll, it will make more impression, you
+rainbow-colored notes in one roll, it will make more impression, you
 may be sure, it will make her mouth water.’ And so he tears open the
 envelope, takes out the money, and flings the envelope on the floor,
 conscious of being the owner and untroubled by any fears of leaving
@@ -34647,7 +34649,7 @@ the money had been taken from it by its owner?
 “But I shall be asked what became of the money if Fyodor Pavlovitch
 took it out of the envelope since it was not found when the police
 searched the house? In the first place, part of the money was found in
-the cash‐box, and secondly, he might have taken it out that morning or
+the cash-box, and secondly, he might have taken it out that morning or
 the evening before to make some other use of it, to give or send it
 away; he may have changed his idea, his plan of action completely,
 without thinking it necessary to announce the fact to Smerdyakov
@@ -34718,7 +34720,7 @@ already. Besides, in another man’s hand a crust always seems larger,
 and no one of these witnesses counted that money; they all judged
 simply at sight. And the witness Maximov has testified that the
 prisoner had twenty thousand in his hand. You see, gentlemen of the
-jury, psychology is a two‐ edged weapon. Let me turn the other edge now
+jury, psychology is a two-edged weapon. Let me turn the other edge now
 and see what comes of it.
 
 “A month before the catastrophe the prisoner was entrusted by Katerina
@@ -34727,12 +34729,12 @@ question is: is it true that they were entrusted to him in such an
 insulting and degrading way as was proclaimed just now? The first
 statement made by the young lady on the subject was different,
 perfectly different. In the second statement we heard only cries of
-resentment and revenge, cries of long‐concealed hatred. And the very
+resentment and revenge, cries of long-concealed hatred. And the very
 fact that the witness gave her first evidence incorrectly, gives us a
 right to conclude that her second piece of evidence may have been
 incorrect also. The prosecutor will not, dare not (his own words) touch
 on that story. So be it. I will not touch on it either, but will only
-venture to observe that if a lofty and high‐ principled person, such as
+venture to observe that if a lofty and high-principled person, such as
 that highly respected young lady unquestionably is, if such a person, I
 say, allows herself suddenly in court to contradict her first
 statement, with the obvious motive of ruining the prisoner, it is clear
@@ -34740,7 +34742,7 @@ that this evidence has been given not impartially, not coolly. Have not
 we the right to assume that a revengeful woman might have exaggerated
 much? Yes, she may well have exaggerated, in particular, the insult and
 humiliation of her offering him the money. No, it was offered in such a
-way that it was possible to take it, especially for a man so easy‐going
+way that it was possible to take it, especially for a man so easy-going
 as the prisoner, above all, as he expected to receive shortly from his
 father the three thousand roubles that he reckoned was owing to him. It
 was unreflecting of him, but it was just his irresponsible want of
@@ -34753,7 +34755,7 @@ set aside half the money and sewn it up in a little bag. That’s not his
 character, he tells us, he couldn’t have had such feelings. But yet he
 talked himself of the broad Karamazov nature; he cried out about the
 two extremes which a Karamazov can contemplate at once. Karamazov is
-just such a two‐sided nature, fluctuating between two extremes, that
+just such a two-sided nature, fluctuating between two extremes, that
 even when moved by the most violent craving for riotous gayety, he can
 pull himself up, if something strikes him on the other side. And on the
 other side is love—that new love which had flamed up in his heart, and
@@ -34797,7 +34799,7 @@ part of the breast where the little bag was, and swore to his brother
 that he had the means of not being a scoundrel, but that still he would
 remain a scoundrel, for he foresaw that he would not use that means,
 that he wouldn’t have the character, that he wouldn’t have the
-will‐power to do it. Why, why does the prosecutor refuse to believe the
+will-power to do it. Why, why does the prosecutor refuse to believe the
 evidence of Alexey Karamazov, given so genuinely and sincerely, so
 spontaneously and convincingly? And why, on the contrary, does he force
 me to believe in money hidden in a crevice, in the dungeons of the
@@ -34817,7 +34819,7 @@ has heard from Smerdyakov again, for he has not seen the envelope
 himself; and thirdly, he wrote it indeed, but how can you prove that he
 did it? Did the prisoner take the envelope from under the pillow, did
 he find the money, did that money exist indeed? And was it to get money
-that the prisoner ran off, if you remember? He ran off post‐haste not
+that the prisoner ran off, if you remember? He ran off post-haste not
 to steal, but to find out where she was, the woman who had crushed him.
 He was not running to carry out a program, to carry out what he had
 written, that is, not for an act of premeditated robbery, but he ran
@@ -34835,9 +34837,9 @@ that, too, a romance?”
 
 “Allow me, gentlemen of the jury, to remind you that a man’s life is at
 stake and that you must be careful. We have heard the prosecutor
-himself admit that until to‐day he hesitated to accuse the prisoner of
+himself admit that until to-day he hesitated to accuse the prisoner of
 a full and conscious premeditation of the crime; he hesitated till he
-saw that fatal drunken letter which was produced in court to‐day. ‘All
+saw that fatal drunken letter which was produced in court to-day. ‘All
 was done as written.’ But, I repeat again, he was running to her, to
 seek her, solely to find out where she was. That’s a fact that can’t be
 disputed. Had she been at home, he would not have run away, but would
@@ -34865,7 +34867,7 @@ probably would not have gone into the tavern at all, because a person
 plotting such a crime seeks quiet and retirement, seeks to efface
 himself, to avoid being seen and heard, and that not from calculation,
 but from instinct. Gentlemen of the jury, the psychological method is a
-two‐edged weapon, and we, too, can use it. As for all this shouting in
+two-edged weapon, and we, too, can use it. As for all this shouting in
 taverns throughout the month, don’t we often hear children, or
 drunkards coming out of taverns shout, ‘I’ll kill you’? but they don’t
 murder any one. And that fatal letter—isn’t that simply drunken
@@ -34902,12 +34904,12 @@ everything as we imagine it, as we make up our minds to imagine it? A
 thousand things may happen in reality which elude the subtlest
 imagination.
 
-“ ‘Yes, but Grigory saw the door open and so the prisoner certainly was
+“‘Yes, but Grigory saw the door open and so the prisoner certainly was
 in the house, therefore he killed him.’ Now about that door, gentlemen
 of the jury.... Observe that we have only the statement of one witness
 as to that door, and he was at the time in such a condition, that— But
 supposing the door was open; supposing the prisoner has lied in denying
-it, from an instinct of self‐defense, natural in his position;
+it, from an instinct of self-defense, natural in his position;
 supposing he did go into the house—well, what then? How does it follow
 that because he was there he committed the murder? He might have dashed
 in, run through the rooms; might have pushed his father away; might
@@ -34976,8 +34978,8 @@ the first place we have precisely on the day of the catastrophe that
 fit, for the genuineness of which the prosecutor, for some reason, has
 felt obliged to make a careful defense. Then Smerdyakov’s sudden
 suicide on the eve of the trial. Then the equally startling evidence
-given in court to‐day by the elder of the prisoner’s brothers, who had
-believed in his guilt, but has to‐day produced a bundle of notes and
+given in court to-day by the elder of the prisoner’s brothers, who had
+believed in his guilt, but has to-day produced a bundle of notes and
 proclaimed Smerdyakov as the murderer. Oh, I fully share the court’s
 and the prosecutor’s conviction that Ivan Karamazov is suffering from
 brain fever, that his statement may really be a desperate effort,
@@ -34988,7 +34990,7 @@ perhaps it may one day be explained. But we won’t go into that now. Of
 that later.
 
 “The court has resolved to go on with the trial, but, meantime, I might
-make a few remarks about the character‐sketch of Smerdyakov drawn with
+make a few remarks about the character-sketch of Smerdyakov drawn with
 subtlety and talent by the prosecutor. But while I admire his talent I
 cannot agree with him. I have visited Smerdyakov, I have seen him and
 talked to him, and he made a very different impression on me. He was
@@ -34998,7 +35000,7 @@ him no trace of the timidity on which the prosecutor so insisted. There
 was no simplicity about him, either. I found in him, on the contrary,
 an extreme mistrustfulness concealed under a mask of _naïveté_, and an
 intelligence of considerable range. The prosecutor was too simple in
-taking him for weak‐minded. He made a very definite impression on me: I
+taking him for weak-minded. He made a very definite impression on me: I
 left him with the conviction that he was a distinctly spiteful
 creature, excessively ambitious, vindictive, and intensely envious. I
 made some inquiries: he resented his parentage, was ashamed of it, and
@@ -35008,7 +35010,7 @@ his wife, who had cared for him in his childhood. He cursed and jeered
 at Russia. He dreamed of going to France and becoming a Frenchman. He
 used often to say that he hadn’t the means to do so. I fancy he loved
 no one but himself and had a strangely high opinion of himself. His
-conception of culture was limited to good clothes, clean shirt‐fronts
+conception of culture was limited to good clothes, clean shirt-fronts
 and polished boots. Believing himself to be the illegitimate son of
 Fyodor Pavlovitch (there is evidence of this), he might well have
 resented his position, compared with that of his master’s legitimate
@@ -35017,10 +35019,10 @@ had the inheritance, while he was only the cook. He told me himself
 that he had helped Fyodor Pavlovitch to put the notes in the envelope.
 The destination of that sum—a sum which would have made his career—must
 have been hateful to him. Moreover, he saw three thousand roubles in
-new rainbow‐colored notes. (I asked him about that on purpose.) Oh,
+new rainbow-colored notes. (I asked him about that on purpose.) Oh,
 beware of showing an ambitious and envious man a large sum of money at
 once! And it was the first time he had seen so much money in the hands
-of one man. The sight of the rainbow‐colored notes may have made a
+of one man. The sight of the rainbow-colored notes may have made a
 morbid impression on his imagination, but with no immediate results.
 
 “The talented prosecutor, with extraordinary subtlety, sketched for us
@@ -35176,12 +35178,12 @@ was my opponent before I opened my lips) exclaimed several times, ‘Oh,
 I will not yield the defense of the prisoner to the lawyer who has come
 down from Petersburg. I accuse, but I defend also!’ He exclaimed that
 several times, but forgot to mention that if this terrible prisoner was
-for twenty‐three years so grateful for a mere pound of nuts given him
+for twenty-three years so grateful for a mere pound of nuts given him
 by the only man who had been kind to him, as a child in his father’s
-house, might not such a man well have remembered for twenty‐three years
-how he ran in his father’s back‐yard, ‘without boots on his feet and
+house, might not such a man well have remembered for twenty-three years
+how he ran in his father’s back-yard, ‘without boots on his feet and
 with his little trousers hanging by one button’—to use the expression
-of the kind‐hearted doctor, Herzenstube?
+of the kind-hearted doctor, Herzenstube?
 
 “Oh, gentlemen of the jury, why need we look more closely at this
 misfortune, why repeat what we all know already? What did my client
@@ -35208,7 +35210,7 @@ unpaid debts to get him thrown into prison.
 
 “Gentlemen of the jury, people like my client, who are fierce, unruly,
 and uncontrolled on the surface, are sometimes, most frequently indeed,
-exceedingly tender‐hearted, only they don’t express it. Don’t laugh,
+exceedingly tender-hearted, only they don’t express it. Don’t laugh,
 don’t laugh at my idea! The talented prosecutor laughed mercilessly
 just now at my client for loving Schiller—loving the sublime and
 beautiful! I should not have laughed at that in his place. Yes, such
@@ -35247,7 +35249,7 @@ to be. Filial love for an unworthy father is an absurdity, an
 impossibility. Love cannot be created from nothing: only God can create
 something from nothing.
 
-“ ‘Fathers, provoke not your children to wrath,’ the apostle writes,
+“‘Fathers, provoke not your children to wrath,’ the apostle writes,
 from a heart glowing with love. It’s not for the sake of my client that
 I quote these sacred words, I mention them for all fathers. Who has
 authorized me to preach to fathers? No one. But as a man and a citizen
@@ -35270,7 +35272,7 @@ according to our measure?
 “Not long ago a servant girl in Finland was suspected of having
 secretly given birth to a child. She was watched, and a box of which no
 one knew anything was found in the corner of the loft, behind some
-bricks. It was opened and inside was found the body of a new‐born child
+bricks. It was opened and inside was found the body of a new-born child
 which she had killed. In the same box were found the skeletons of two
 other babies which, according to her own confession, she had killed at
 the moment of their birth.
@@ -35299,7 +35301,7 @@ sphere, if we want to be humane—Christian, in fact—we must, or ought
 to, act only upon convictions justified by reason and experience, which
 have been passed through the crucible of analysis; in a word, we must
 act rationally, and not as though in dream and delirium, that we may
-not do harm, that we may not ill‐treat and ruin a man. Then it will be
+not do harm, that we may not ill-treat and ruin a man. Then it will be
 real Christian work, not only mystic, but rational and
 philanthropic....”
 
@@ -35353,7 +35355,7 @@ the court, and Fetyukovitch, excited and triumphant, continued his
 speech.)
 
 “Gentlemen of the jury, you remember that awful night of which so much
-has been said to‐day, when the son got over the fence and stood face to
+has been said to-day, when the son got over the fence and stood face to
 face with the enemy and persecutor who had begotten him. I insist most
 emphatically it was not for money he ran to his father’s house: the
 charge of robbery is an absurdity, as I proved before. And it was not
@@ -35366,7 +35368,7 @@ for a moment believe that legend, but let it be so, let us suppose it
 for a moment. Gentlemen, I swear to you by all that’s holy, if it had
 not been his father, but an ordinary enemy, he would, after running
 through the rooms and satisfying himself that the woman was not there,
-have made off, post‐haste, without doing any harm to his rival. He
+have made off, post-haste, without doing any harm to his rival. He
 would have struck him, pushed him away perhaps, nothing more, for he
 had no thought and no time to spare for that. What he wanted to know
 was where she was. But his father, his father! The mere sight of the
@@ -35405,7 +35407,7 @@ he will remain in his wickedness and blindness all his life.
 “But do you want to punish him fearfully, terribly, with the most awful
 punishment that could be imagined, and at the same time to save him and
 regenerate his soul? If so, overwhelm him with your mercy! You will
-see, you will hear how he will tremble and be horror‐struck. ‘How can I
+see, you will hear how he will tremble and be horror-struck. ‘How can I
 endure this mercy? How can I endure so much love? Am I worthy of it?’
 That’s what he will exclaim.
 
@@ -35415,7 +35417,7 @@ loving action, it will melt and mount upwards. There are souls which,
 in their limitation, blame the whole world. But subdue such a soul with
 mercy, show it love, and it will curse its past, for there are many
 good impulses in it. Such a heart will expand and see that God is
-merciful and that men are good and just. He will be horror‐stricken; he
+merciful and that men are good and just. He will be horror-stricken; he
 will be crushed by remorse and the vast obligation laid upon him
 henceforth. And he will not say then, ‘I am quits,’ but will say, ‘I am
 guilty in the sight of all men and am more unworthy than all.’ With
@@ -35468,7 +35470,7 @@ was poetry. Fyodor Pavlovitch, while waiting for his mistress, tears
 open the envelope and throws it on the floor. We are even told what he
 said while engaged in this strange act. Is not this a flight of fancy?
 And what proof have we that he had taken out the money? Who heard what
-he said? The weak‐minded idiot, Smerdyakov, transformed into a Byronic
+he said? The weak-minded idiot, Smerdyakov, transformed into a Byronic
 hero, avenging society for his illegitimate birth—isn’t this a romance
 in the Byronic style? And the son who breaks into his father’s house
 and murders him without murdering him is not even a romance—this is a
@@ -35488,7 +35490,7 @@ and future of Russian justice are presented to us in a perverted and
 frivolous form, simply to attain an object—to obtain the justification
 of something which cannot be justified. ‘Oh, crush him by mercy,’ cries
 the counsel for the defense; but that’s all the criminal wants, and
-to‐morrow it will be seen how much he is crushed. And is not the
+to-morrow it will be seen how much he is crushed. And is not the
 counsel for the defense too modest in asking only for the acquittal of
 the prisoner? Why not found a charity in the honor of the parricide to
 commemorate his exploit among future generations? Religion and the
@@ -35510,9 +35512,9 @@ forbid children to murder their fathers is a prejudice. And we will not
 from the tribune of truth and good sense correct the Gospel of our
 Lord, Whom the counsel for the defense deigns to call only ‘the
 crucified lover of humanity,’ in opposition to all orthodox Russia,
-which calls to Him, ‘For Thou art our God!’ ”
+which calls to Him, ‘For Thou art our God!’”
 
-At this the President intervened and checked the over‐zealous speaker,
+At this the President intervened and checked the over-zealous speaker,
 begging him not to exaggerate, not to overstep the bounds, and so on,
 as presidents always do in such cases. The audience, too, was uneasy.
 The public was restless: there were even exclamations of indignation.
@@ -35589,8 +35591,8 @@ invisible threads binding the counsel for the defense with the jury.
 One feels during one’s speech if they are being formed. I was aware of
 them. They exist. Our cause is won. Set your mind at rest.”
 
-“What will our peasants say now?” said one stout, cross‐looking, pock‐
-marked gentleman, a landowner of the neighborhood, approaching a group
+“What will our peasants say now?” said one stout, cross-looking,
+pock-marked gentleman, a landowner of the neighborhood, approaching a group
 of gentlemen engaged in conversation.
 
 “But they are not all peasants. There are four government clerks among
@@ -35624,9 +35626,9 @@ nothing but swing the pestle in the air, and so knocked the old man
 down. But it was a pity they dragged the valet in. That was simply an
 absurd theory! If I’d been in Fetyukovitch’s place, I should simply
 have said straight out: ‘He murdered him; but he is not guilty, hang it
-all!’ ”
+all!’”
 
-“That’s what he did, only without saying, ‘Hang it all!’ ”
+“That’s what he did, only without saying, ‘Hang it all!’”
 
 “No, Mihail Semyonovitch, he almost said that, too,” put in a third
 voice.
@@ -35647,7 +35649,7 @@ it?”
 
 “Oh, drop mysticism, do!” cried some one else; “think of Ippolit and
 his fate from this day forth. His wife will scratch his eyes out
-to‐morrow for Mitya’s sake.”
+to-morrow for Mitya’s sake.”
 
 “Is she here?”
 
@@ -35660,8 +35662,8 @@ In a third group:
 
 “I dare say they will acquit Mitenka, after all.”
 
-“I should not be surprised if he turns the ‘Metropolis’ upside down to‐
-morrow. He will be drinking for ten days!”
+“I should not be surprised if he turns the ‘Metropolis’ upside down
+to-morrow. He will be drinking for ten days!”
 
 “Oh, the devil!”
 
@@ -35675,7 +35677,7 @@ to break your father’s head with a pestle! Or what are we coming to?”
 
 “Yes; he turned a cart into a chariot!”
 
-“And to‐morrow he will turn a chariot into a cart, just to suit his
+“And to-morrow he will turn a chariot into a cart, just to suit his
 purpose.”
 
 “What cunning chaps there are nowadays! Is there any justice to be had
@@ -35780,10 +35782,10 @@ from here, when the party of prisoners is being taken to Siberia. Oh,
 it’s a long way off yet. Ivan Fyodorovitch has already visited the
 superintendent of the third _étape_. But we don’t know yet who will be
 in charge of the party, and it’s impossible to find that out so long
-beforehand. To‐morrow perhaps I will show you in detail the whole plan
+beforehand. To-morrow perhaps I will show you in detail the whole plan
 which Ivan Fyodorovitch left me on the eve of the trial in case of
 need.... That was when—do you remember?—you found us quarreling. He had
-just gone down‐stairs, but seeing you I made him come back; do you
+just gone down-stairs, but seeing you I made him come back; do you
 remember? Do you know what we were quarreling about then?”
 
 “No, I don’t,” said Alyosha.
@@ -35814,7 +35816,7 @@ changed. I was tremendously impressed to find that Ivan Fyodorovitch
 had not given up his idea of saving his brother, and was confiding this
 plan of escape to me, though he was still jealous of me and still
 convinced that I loved Mitya. Oh, that was a sacrifice! No, you cannot
-understand the greatness of such self‐sacrifice, Alexey Fyodorovitch. I
+understand the greatness of such self-sacrifice, Alexey Fyodorovitch. I
 wanted to fall at his feet in reverence, but I thought at once that he
 would take it only for my joy at the thought of Mitya’s being saved
 (and he certainly would have imagined that!), and I was so exasperated
@@ -35884,7 +35886,7 @@ dishonorable, cowardly, or something ... unchristian, perhaps?” Katya
 added, even more defiantly.
 
 “Oh, no. I’ll tell him everything,” muttered Alyosha. “He asks you to
-come and see him to‐day,” he blurted out suddenly, looking her steadily
+come and see him to-day,” he blurted out suddenly, looking her steadily
 in the face. She started, and drew back a little from him on the sofa.
 
 “Me? Can that be?” she faltered, turning pale.
@@ -35927,10 +35929,10 @@ make up your mind to do it now?”
 “You ought to go, you ought to go,” Alyosha repeated with merciless
 emphasis.
 
-“But why to‐day, why at once?... I can’t leave our patient—”
+“But why to-day, why at once?... I can’t leave our patient—”
 
 “You can for a moment. It will only be a moment. If you don’t come, he
-will be in delirium by to‐night. I would not tell you a lie; have pity
+will be in delirium by to-night. I would not tell you a lie; have pity
 on him!”
 
 “Have pity on _me!_” Katya said, with bitter reproach, and she burst
@@ -35965,7 +35967,7 @@ little room, the one where Smerdyakov had been. It is true that there
 was a sentinel at the other end of the corridor, and there was a
 grating over the window, so that Varvinsky could be at ease about the
 indulgence he had shown, which was not quite legal, indeed; but he was
-a kind‐hearted and compassionate young man. He knew how hard it would
+a kind-hearted and compassionate young man. He knew how hard it would
 be for a man like Mitya to pass at once so suddenly into the society of
 robbers and murderers, and that he must get used to it by degrees. The
 visits of relations and friends were informally sanctioned by the
@@ -35973,7 +35975,7 @@ doctor and overseer, and even by the police captain. But only Alyosha
 and Grushenka had visited Mitya. Rakitin had tried to force his way in
 twice, but Mitya persistently begged Varvinsky not to admit him.
 
-Alyosha found him sitting on his bed in a hospital dressing‐gown,
+Alyosha found him sitting on his bed in a hospital dressing-gown,
 rather feverish, with a towel, soaked in vinegar and water, on his
 head. He looked at Alyosha as he came in with an undefined expression,
 but there was a shade of something like dread discernible in it. He had
@@ -36002,7 +36004,7 @@ got home. Serve him right, the swindler! The guard here told me
 yesterday; he comes from there.”
 
 “Listen,” began Alyosha. “She will come, but I don’t know when. Perhaps
-to‐day, perhaps in a few days, that I can’t tell. But she will come,
+to-day, perhaps in a few days, that I can’t tell. But she will come,
 she will, that’s certain.”
 
 Mitya started, would have said something, but was silent. The news had
@@ -36124,7 +36126,7 @@ somewhere, on the edge of the horizon. So to the country of the _Last
 of the Mohicans_, and there we’ll tackle the grammar at once, Grusha
 and I. Work and grammar—that’s how we’ll spend three years. And by that
 time we shall speak English like any Englishman. And as soon as we’ve
-learnt it—good‐by to America! We’ll run here to Russia as American
+learnt it—good-by to America! We’ll run here to Russia as American
 citizens. Don’t be uneasy—we would not come to this little town. We’d
 hide somewhere, a long way off, in the north or in the south. I shall
 be changed by that time, and she will, too, in America. The doctors
@@ -36153,7 +36155,7 @@ moaned miserably. Again there was silence for a minute.
 she say it?”
 
 “She said she would come, but I don’t know whether she will come
-to‐day. It’s hard for her, you know,” Alyosha looked timidly at his
+to-day. It’s hard for her, you know,” Alyosha looked timidly at his
 brother.
 
 “I should think it is hard for her! Alyosha, it will drive me out of my
@@ -36285,19 +36287,19 @@ the service.... Leave me, please!”
 *Ilusha’s Funeral. The Speech At The Stone*
 
 He really was late. They had waited for him and had already decided to
-bear the pretty flower‐decked little coffin to the church without him.
+bear the pretty flower-decked little coffin to the church without him.
 It was the coffin of poor little Ilusha. He had died two days after
 Mitya was sentenced. At the gate of the house Alyosha was met by the
 shouts of the boys, Ilusha’s schoolfellows. They had all been
 impatiently expecting him and were glad that he had come at last. There
-were about twelve of them, they all had their school‐bags or satchels
+were about twelve of them, they all had their school-bags or satchels
 on their shoulders. “Father will cry, be with father,” Ilusha had told
 them as he lay dying, and the boys remembered it. Kolya Krassotkin was
 the foremost of them.
 
 “How glad I am you’ve come, Karamazov!” he cried, holding out his hand
 to Alyosha. “It’s awful here. It’s really horrible to see it. Snegiryov
-is not drunk, we know for a fact he’s had nothing to drink to‐day, but
+is not drunk, we know for a fact he’s had nothing to drink to-day, but
 he seems as if he were drunk ... I am always manly, but this is awful.
 Karamazov, if I am not keeping you, one question before you go in?”
 
@@ -36391,7 +36393,7 @@ will reach him every time just as though it were read over his grave.”
 At last the captain made a gesture of despair as though to say, “Take
 him where you will.” The boys raised the coffin, but as they passed the
 mother, they stopped for a moment and lowered it that she might say
-good‐ by to Ilusha. But on seeing that precious little face, which for
+good-by to Ilusha. But on seeing that precious little face, which for
 the last three days she had only looked at from a distance, she
 trembled all over and her gray head began twitching spasmodically over
 the coffin.
@@ -36412,7 +36414,7 @@ They had not far to carry the coffin to the church, not more than three
 hundred paces. It was a still, clear day, with a slight frost. The
 church bells were still ringing. Snegiryov ran fussing and distracted
 after the coffin, in his short old summer overcoat, with his head bare
-and his soft, old, wide‐brimmed hat in his hand. He seemed in a state
+and his soft, old, wide-brimmed hat in his hand. He seemed in a state
 of bewildered anxiety. At one minute he stretched out his hand to
 support the head of the coffin and only hindered the bearers, at
 another he ran alongside and tried to find a place for himself there. A
@@ -36428,7 +36430,7 @@ pulled it out and was reassured.
 sitting by him one night and he suddenly told me: ‘Father, when my
 grave is filled up crumble a piece of bread on it so that the sparrows
 may fly down, I shall hear and it will cheer me up not to be lying
-alone.’ ”
+alone.’”
 
 “That’s a good thing,” said Alyosha, “we must often take some.”
 
@@ -36467,7 +36469,7 @@ dawn upon him, so that he apparently forgot his grief for a minute.
 Gradually he seemed to sink into brooding and did not resist when the
 coffin was lifted up and carried to the grave. It was an expensive one
 in the churchyard close to the church, Katerina Ivanovna had paid for
-it. After the customary rites the grave‐ diggers lowered the coffin.
+it. After the customary rites the grave-diggers lowered the coffin.
 Snegiryov with his flowers in his hands bent down so low over the open
 grave that the boys caught hold of his coat in alarm and pulled him
 back. He did not seem to understand fully what was happening. When they
@@ -36502,7 +36504,7 @@ who discovered about Troy most of all. Though Smurov, with the
 captain’s hat in his hand, was crying bitterly too, he managed, as he
 ran, to snatch up a piece of red brick that lay on the snow of the
 path, to fling it at the flock of sparrows that was flying by. He
-missed them, of course, and went on crying as he ran. Half‐way,
+missed them, of course, and went on crying as he ran. Half-way,
 Snegiryov suddenly stopped, stood still for half a minute, as though
 struck by something, and suddenly turning back to the church, ran
 towards the deserted grave. But the boys instantly overtook him and
@@ -36529,7 +36531,7 @@ cried, holding out to her a little bunch of flowers that had been
 frozen and broken while he was struggling in the snow. But at that
 instant he saw in the corner, by the little bed, Ilusha’s little boots,
 which the landlady had put tidily side by side. Seeing the old,
-patched, rusty‐ looking, stiff boots he flung up his hands and rushed
+patched, rusty-looking, stiff boots he flung up his hands and rushed
 to them, fell on his knees, snatched up one boot and, pressing his lips
 to it, began kissing it greedily, crying, “Ilusha, old man, dear old
 man, where are your little feet?”
@@ -36548,7 +36550,7 @@ I’d give anything in the world to do it.”
 
 “Ah, so would I,” said Alyosha.
 
-“What do you think, Karamazov? Had we better come back here to‐night?
+“What do you think, Karamazov? Had we better come back here to-night?
 He’ll be drunk, you know.”
 
 “Perhaps he will. Let us come together, you and I, that will be enough,
@@ -36599,7 +36601,7 @@ that we will never forget Ilusha and one another. And whatever happens
 to us later in life, if we don’t meet for twenty years afterwards, let
 us always remember how we buried the poor boy at whom we once threw
 stones, do you remember, by the bridge? and afterwards we all grew so
-fond of him. He was a fine boy, a kind‐hearted, brave boy, he felt for
+fond of him. He was a fine boy, a kind-hearted, brave boy, he felt for
 his father’s honor and resented the cruel insult to him and stood up
 for him. And so in the first place, we will remember him, boys, all our
 lives. And even if we are occupied with most important things, if we
@@ -36632,7 +36634,7 @@ one memory may keep him from great evil and he will reflect and say,
 that’s no matter, a man often laughs at what’s good and kind. That’s
 only from thoughtlessness. But I assure you, boys, that as he laughs he
 will say at once in his heart, ‘No, I do wrong to laugh, for that’s not
-a thing to laugh at.’ ”
+a thing to laugh at.’”
 
 “That will be so, I understand you, Karamazov!” cried Kolya, with
 flashing eyes.

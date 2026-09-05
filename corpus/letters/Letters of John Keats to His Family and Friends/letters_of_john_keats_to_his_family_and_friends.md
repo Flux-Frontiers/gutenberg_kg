@@ -4,6 +4,11 @@
 
 ---
 
+</pre>
+
+E-text prepared by Jonathan Ingram and the Online Distributed Proofreading
+Team (http://www.pgdp.net)
+
 Note: Project Gutenberg also has an HTML version of this
 file which includes the original illustration.
 See 35698-h.htm or 35698-h.zip:
@@ -39,7 +44,7 @@ Reprinted (Crown 8vo) 1925
 
 Printed in Great Britain
 
-## LETTER                                         DATE        PAGE
+LETTER                                         DATE        PAGE
 
 PREFACE                                                      xi
 
@@ -16034,3 +16039,5 @@ for a night's visit to the Snooks of Bedhampton.
 hemorrhage, extinguishing the last hope of recovery: and after eleven more
 weeks of suffering, only alleviated by the devoted care of Severn, the
 poet died in his friend's arms on the 23d of February 1821.
+
+<pre id="pg-footer">

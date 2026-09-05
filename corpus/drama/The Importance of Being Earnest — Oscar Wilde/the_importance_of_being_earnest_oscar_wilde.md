@@ -1375,7 +1375,7 @@ Nobody ever does.
 [Jack looks indignantly at him, and leaves the room. Algernon lights a
 cigarette, reads his shirt-cuff, and smiles.]
 
-## ACT DROP SECOND ACT
+### ACT DROP SECOND ACT
 
 ### SCENE
 
@@ -3056,7 +3056,7 @@ I haven’t quite finished my tea yet! and there is still one muffin
 left. [Jack groans, and sinks into a chair. Algernon still continues
 eating.]
 
-## ACT DROP THIRD ACT
+### ACT DROP THIRD ACT
 
 ### SCENE
 

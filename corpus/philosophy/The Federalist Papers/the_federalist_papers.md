@@ -4855,7 +4855,7 @@ limits of the present Confederacy.
 
 *FEDERALIST No. 24*
 
-The Powers Necessary to the Common Defense Further Considered
+## The Powers Necessary to the Common Defense Further Considered
 
 For the Independent Journal. Wednesday, December 19, 1787
 
@@ -8906,7 +8906,7 @@ condemnation!
 
 *FEDERALIST No. 42*
 
-The Powers Conferred by the Constitution Further Considered
+## The Powers Conferred by the Constitution Further Considered
 
 From the New York Packet. Tuesday, January 22, 1788.
 
@@ -13792,7 +13792,7 @@ themselves.
 
 *FEDERALIST No. 64*
 
-The Powers of the Senate
+## The Powers of the Senate
 
 From The Independent Journal. Wednesday, March 5, 1788.
 
@@ -14019,7 +14019,7 @@ amply afforded by the article on the subject of impeachments.
 
 *FEDERALIST No. 65*
 
-The Powers of the Senate Continued
+## The Powers of the Senate Continued
 
 From the New York Packet. Friday, March 7, 1788.
 
@@ -17092,7 +17092,7 @@ imaginary danger of a superannuated bench.
 
 FEDERALIST No. 80
 
-The Powers of the Judiciary
+## The Powers of the Judiciary
 
 From McLEAN's Edition, New York. Wednesday, May 28, 1788.
 

@@ -17,7 +17,7 @@ to make the work at Tuskegee successful.
 
 ### UP FROM SLAVERY:
 
-*Preface*
+### Preface
 
 This volume is the outgrowth of a series of articles, dealing with
 incidents in my life, which were published consecutively in the
@@ -39,7 +39,7 @@ work while at Tuskegee. Without the painstaking and generous assistance
 of Mr. Max Bennett Thrasher I could not have succeeded in any
 satisfactory degree.
 
-Introduction
+### Introduction
 
 The details of Mr. Washington’s early life, as frankly set down in “Up
 from Slavery,” do not give quite a whole view of his education. He had

@@ -32,6 +32,162 @@ Auburn, Calif.
 
 ### SAMUEL LOVEMAN CONTENTS
 
+PREFACE, by George Sterling.
+
+### POEMS
+
+*Arabesque         1*
+
+Beyond the Great Wall         2
+
+To Omar Khayyam         3
+
+Strangeness         5
+
+The Infinite Quest         6
+
+Rosa Mystica         7
+
+The Nereid         8
+
+In Saturn         9
+
+Impression         10
+
+Triple Aspect        11
+
+Desolation         12
+
+The Orchid         13
+
+A Fragment         14
+
+Crepuscle         15
+
+Inferno         16
+
+Mirrors         17
+
+Belated Love         18
+
+The Absence of the Muse         19
+
+Dissonance         20
+
+To Nora May French        21
+
+In Lemuria         24
+
+Recompense         25
+
+Exotique         26
+
+Transcendence         27
+
+Satiety         28
+
+The Ministers of Law         29
+
+Coldness         30
+
+The Desert Garden         31
+
+The Crucifixion of Eros         32
+
+The Exile         33
+
+Ave Atque Vale         34
+
+Solution         35
+
+The Tears of Lilith         36
+
+A Precept         37
+
+Remembered Light         38
+
+Song                39
+
+Haunting         40
+
+The Hidden Paradise         41
+
+Cleopatra         42
+
+Ecstasy         43
+
+Union         44
+
+Psalm         45
+
+In November         47
+
+Symbols      48
+
+The Hashish-Eater; or, the Apocalypse of Evil      49
+
+The Sorrow of the Winds      65
+
+Artemis      66
+
+Love is Not Yours, Love is Not Mine      67
+
+The City in the Desert      68
+
+The Melancholy Pool      69
+
+The Mirrors of Beauty      70
+
+Winter Moonlight      71
+
+To the Beloved      72
+
+Requiescat      73
+
+Mirage      74
+
+Inheritance      75
+
+Autumnal      76
+
+Chant of Autumn      77
+
+Echo of Memnon      78
+
+Twilight on the Snow      79
+
+Image      80
+
+The Refuge of Beauty      81
+
+Nightmare      82
+
+The Mummy      83
+
+Forgetfulness      84
+
+Flamingoes      85
+
+The Chimaera      86
+
+Satan Unrepentant      87
+
+The Abyss Triumphant      90
+
+The Motes      91
+
+The Medusa of Despair      92
+
+Laus Mortis      93
+
+The Ghoul and the Seraph      94
+
+At Sunrise      99
+
+The Land of Evil Stars      100
+
+The Harlot of the World      102
+
 The Hope of the Infinite      103
 
 Love Malevolent      104

@@ -55,25 +55,109 @@ right to the invention of oblique paddles for steam ships, though
 the circumstances narrated at the close of the volume hinder him from
 taking out a patent at present.
 
-The Author examines the records of the Assembly.--Grounds of
-proposal for admittance to the order of Worthies.--Shell fish of
-Symzonia.--Great quantities of Pearls, and the use to which they
-are applied.                                              Page 188
+CONTENTS.
 
-## CHAPTER XV.
+## CHAPTER I.
 
-The Author is ordered to depart from Symzonia.--The Best Man's
-reasons for sending him away.--His ineffectual efforts to obtain
-a place of rendezvous for purposes of trade.              Page 195
+The Author's reasons for undertaking a voyage of discovery.--He
+builds a vessel for his purpose upon a new plan.--His departure
+from the United States.                                    Page 13
 
-## CHAPTER XVI.
+## CHAPTER II.
 
-The Author returns to the Explorer.--Holds a council of
-officers--Determines to return to Seaborn's Land.--Takes leave
-of Surui--Sails from Symzonia.--Touches at Token Island.--Arrives
-at Boneto's station.                                      Page 205
+The Author arrives at the Falkland Islands--Describes West Point
+Island, and States harbour--Visits the city of the Gentoo Penguins
+on the Grand Jason--Gives some account of the polity and habits
+of those civilized amphibia--Sails for South Georgia.      Page 21
 
-## CHAPTER XVII.
+## CHAPTER III.
+
+The Author passes South Georgia, and proceeds in search of Sandwich
+land--States to his officers and men his reasons for believing
+in the existence of great bodies of land within the antarctic
+circle, and for the opinion that the polar region is subject to
+great heat in summer.--Crew mutiny at the instigation of Mr. Slim,
+third mate.--Happy discovery of a southern continent, which, at
+the unanimous and earnest solicitation of his officers and men,
+he names Seaborn's Land.                                   Page 37
+
+## CHAPTER IV.
+
+The Author in great peril, from the vast rise and fall of the
+tide in the polar sea--Brief account of his observations at
+Seaborn's Land.--He takes formal possession of the country, in
+the manner usual in such cases, in the name and on behalf of the
+United States.--Leaves a sealing party on one of the islands near
+the coast, and proceeds to the south, to extend his discoveries.
+Page 58
+
+## CHAPTER V.
+
+The Author discovers the south extremity of Seaborn's Land,
+which he names Cape Worldsend.--The compass becomes useless.--He
+states the manner in which he obviated the difficulty occasioned
+thereby.--He enters the internal world: describes the phenomena
+which occur.--Discovers Token Island.--Occurrences at that Island.
+Page 76
+
+## CHAPTER VI.
+
+The Author departs from Token Island, in search of an internal
+continent.--Wind, weather, and other phenomena of the internal
+seas.--Great alarm of the crew.--Discovery of an inhabited country.
+Page 89
+
+## CHAPTER VII.
+
+Description of the first view of the coast.--The Author names
+the discovered country Symzonia.--Enters the harbour.--His first
+interview with the Symzonians.--Sketch of their appearance.--He
+commences the study of the Symzonian language.--Wonderful powers
+of mind displayed by the natives.--Account of an ærial vessel.
+Page 99
+
+## CHAPTER VIII.
+
+*The Author leaves the ship to visit the seat of*
+
+government.--Description of the country.--Account of the polity
+of the Symzonians, as stated by his conductor.--Comparison of
+the industry, its objects and ends in the two worlds, and of the
+necessities and habits of the internals and externals.--Expulsion
+of the unworthy from Symzonia, to a place of exile near the
+north pole.--External world supposed to have been peopled by
+the outcasts.                                             Page 117
+
+## CHAPTER IX.
+
+The Author arrives at the seat of government.--Description of the
+Auditory.--Symzonian manner of assembling for devotion and public
+business.--Etiquette of the Symzonian Court.--He is admitted to
+an audience by the Best Man.--Account of the interview, and of
+his unfortunate efforts to exalt the character of the externals,
+by describing some of their splendid follies.             Page 135
+
+## CHAPTER X.
+
+Containing some account of the strange rationality of the
+Symzonians.--Their simplicity of dress.--Manner of making
+cloth.--Circulating medium.--Taxes.                       Page 156
+
+## CHAPTER XI.
+
+Containing some account of the Symzonian engine of defence.--Story
+of a very ancient war with an internal nation called Belzubians,
+which caused the invention of this engine.--Opposition of the
+Good men to its being used.--Fultria the inventor's speech in
+defence of it.--Deliberations of the Council.--Termination of the
+war.--Sentiments of the people on the subject.            Page 165
+
+## CHAPTER XII.
+
+Wonderful faculties of the Symzonians.--Translation of my books
+into their language.--Proposition of a Wise man to make slaves
+of the Author and his people.--The Author's remonstrance.--The
+Wise man disgraced.                                       Page 176
 
 The Author loads the Explorer with seal skins, and sails from
 Seaborn's Land.--Discovers Albicore's Islands.--Transactions at

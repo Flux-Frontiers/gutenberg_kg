@@ -3272,9 +3272,9 @@ pity of it. An immeasurable social chasm was to divide our heroine’s
 personality thereafter from that previous self of hers who stepped from
 her mother’s door to try her fortune at Trantridge poultry-farm.
 
-End of Phase the First
+## End of Phase the First
 
-Phase the Second:
+*Phase the Second:*
 
 Maiden No More
 
@@ -4368,9 +4368,9 @@ rose automatically as the sap in the twigs. It was unexpected youth,
 surging up anew after its temporary check, and bringing with it hope,
 and the invincible instinct towards self-delight.
 
-End of Phase the Second
+## End of Phase the Second
 
-Phase the Third:
+*Phase the Third:*
 
 The Rally
 
@@ -6511,9 +6511,9 @@ and resistless tendency than a whole heap of so-called practicalities.
 A veil had been whisked aside; the tract of each one’s outlook was to
 have a new horizon thenceforward—for a short time or for a long.
 
-End of Phase the Third
+## End of Phase the Third
 
-Phase the Fourth:
+*Phase the Fourth:*
 
 The Consequence
 
@@ -9680,9 +9680,9 @@ against his temple she entered on her story of her acquaintance with
 Alec d’Urberville and its results, murmuring the words without
 flinching, and with her eyelids drooping down.
 
-End of Phase the Fourth
+## End of Phase the Fourth
 
-Phase the Fifth:
+*Phase the Fifth:*
 
 The Woman Pays
 
@@ -12974,9 +12974,9 @@ that her seducer confronted her, which had been gaining ground in Tess
 ever since she had heard his words distinctly, was at last established
 as a fact indeed.
 
-End of Phase the Fifth
+## End of Phase the Fifth
 
-Phase the Sixth:
+*Phase the Sixth:*
 
 The Convert
 
@@ -15651,9 +15651,9 @@ him to be connected with, Emminster Vicarage; after which they
 continued in a mood of emotional exaltation at their own generosity,
 which made them sing in hysterical snatches and weep at the same time.
 
-End of Phase the Sixth
+## End of Phase the Sixth
 
-Phase the Seventh:
+*Phase the Seventh:*
 
 Fulfilment
 

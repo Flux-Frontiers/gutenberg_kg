@@ -888,7 +888,7 @@ threw up the skirt of her mantle and revealed a sight from which the
 aghast Frenchmen retreated precipitately, and tumbling into their boats,
 fled the scene of so shocking a catastrophe.
 
-### CHAPTER TWO PASSAGE FROM THE CRUISING GROUND TO THE MARQUESAS--SLEEPY TIMES ABOARD SHIP--SOUTH SEA SCENERY--LAND HO--THE FRENCH SQUADRON DISCOVERED AT ANCHOR IN THE BAY OF NUKUHEVA--STRANGE PILOT--ESCORT OF CANOES--A FLOTILLA OF COCOANUTS--SWIMMING VISITORS--THE DOLLY BOARDED BY THEM--STATE OF AFFAIRS THAT ENSUE
+## CHAPTER TWO PASSAGE FROM THE CRUISING GROUND TO THE MARQUESAS--SLEEPY TIMES ABOARD SHIP--SOUTH SEA SCENERY--LAND HO--THE FRENCH SQUADRON DISCOVERED AT ANCHOR IN THE BAY OF NUKUHEVA--STRANGE PILOT--ESCORT OF CANOES--A FLOTILLA OF COCOANUTS--SWIMMING VISITORS--THE DOLLY BOARDED BY THEM--STATE OF AFFAIRS THAT ENSUE
 
 I can never forget the eighteen or twenty days during which the light
 trade-winds were silently sweeping us towards the islands. In pursuit of
@@ -1160,7 +1160,7 @@ The varied dances of the Marquesan girls are beautiful in the extreme,
 but there is an abandoned voluptuousness in their character which I dare
 not attempt to describe.
 
-### CHAPTER THREE SOME ACCOUNT OF THE LATE OPERATIONS OF THE FRENCH AT THE MARQUESAS--PRUDENT CONDUCT OF THE ADMIRAL--SENSATION PRODUCED BY THE ARRIVAL OF THE STRANGERS--THE FIRST HORSE SEEN BY THE ISLANDERS--REFLECTIONS--MISERABLE SUBTERFUGE OF THE FRENCH--DIGRESSION CONCERNING TAHITI--SEIZURE OF THE ISLAND BY THE ADMIRAL--SPIRITED CONDUCT OF AN ENGLISH LADY
+## CHAPTER THREE SOME ACCOUNT OF THE LATE OPERATIONS OF THE FRENCH AT THE MARQUESAS--PRUDENT CONDUCT OF THE ADMIRAL--SENSATION PRODUCED BY THE ARRIVAL OF THE STRANGERS--THE FIRST HORSE SEEN BY THE ISLANDERS--REFLECTIONS--MISERABLE SUBTERFUGE OF THE FRENCH--DIGRESSION CONCERNING TAHITI--SEIZURE OF THE ISLAND BY THE ADMIRAL--SPIRITED CONDUCT OF AN ENGLISH LADY
 
 It was in the summer of 1842 that we arrived at the islands; the French
 had then held possession of them for several weeks. During this time
@@ -1288,7 +1288,7 @@ sat the lady from whom he had just parted, tranquilly engaged in
 knitting. Was that flag hauled down? Mrs Pritchard thinks not; and
 Rear-Admiral Du Petit Thouars is believed to be of the same opinion.
 
-### CHAPTER FOUR STATE OF AFFAIRS ABOARD THE SHIP--CONTENTS OF HER LARDER--LENGTH OF SOUTH SEAMEN’S VOYAGES--ACCOUNT OF A FLYING WHALE-MAN--DETERMINATION TO LEAVE THE VESSEL--THE BAY OF NUKUHEVA--THE TYPEES--INVASION OF THEIR VALLEY BY PORTER--REFLECTIONS--GLEN OF TIOR--INTERVIEW BETWEEN THE OLD KING AND THE FRENCH ADMIRAL
+## CHAPTER FOUR STATE OF AFFAIRS ABOARD THE SHIP--CONTENTS OF HER LARDER--LENGTH OF SOUTH SEAMEN’S VOYAGES--ACCOUNT OF A FLYING WHALE-MAN--DETERMINATION TO LEAVE THE VESSEL--THE BAY OF NUKUHEVA--THE TYPEES--INVASION OF THEIR VALLEY BY PORTER--REFLECTIONS--GLEN OF TIOR--INTERVIEW BETWEEN THE OLD KING AND THE FRENCH ADMIRAL
 
 Our ship had not been many days in the harbour of Nukuheva before I came
 to the determination of leaving her. That my reasons for resolving to
@@ -1711,7 +1711,7 @@ even the golden-hued bunch of bananas that I held in my hand at the
 time, and of which I occasionally partook while making the aforesaid
 philosophical reflections.
 
-### CHAPTER FIVE THOUGHTS PREVIOUS TO ATTEMPTING AN ESCAPE--TOBY, A FELLOW SAILOR, AGREES TO SHARE THE ADVENTURE--LAST NIGHT ABOARD THE SHIP
+## CHAPTER FIVE THOUGHTS PREVIOUS TO ATTEMPTING AN ESCAPE--TOBY, A FELLOW SAILOR, AGREES TO SHARE THE ADVENTURE--LAST NIGHT ABOARD THE SHIP
 
 Having fully resolved to leave the vessel clandestinely, and having
 acquired all the knowledge concerning the bay that I could obtain under
@@ -1869,7 +1869,7 @@ to the reception the Nukuheva natives might give us; and after remaining
 upon the island as long as we found our stay agreeable, to leave it the
 first favourable opportunity that offered.
 
-### CHAPTER SIX A SPECIMEN OF NAUTICAL ORATORY--CRITICISMS OF THE SAILORS--THE STARBOARD WATCH ARE GIVEN A HOLIDAY--THE ESCAPE TO THE MOUNTAINS
+## CHAPTER SIX A SPECIMEN OF NAUTICAL ORATORY--CRITICISMS OF THE SAILORS--THE STARBOARD WATCH ARE GIVEN A HOLIDAY--THE ESCAPE TO THE MOUNTAINS
 
 Early the next morning the starboard watch were mustered upon the
 quarter-deck, and our worthy captain, standing in the cabin gangway,
@@ -2138,7 +2138,7 @@ deep glens or diversified with smiling valleys, formed altogether the
 loveliest view I ever beheld, and were I to live a hundred years, I
 shall never forget the feeling of admiration which I then experienced.
 
-### CHAPTER SEVEN THE OTHER SIDE OF THE MOUNTAIN--DISAPPOINTMENT--INVENTORY OF ARTICLES BROUGHT FROM THE SHIP--DIVISION OF THE STOCK OF BREAD--APPEARANCE OF THE INTERIOR OF THE ISLAND--A DISCOVERY--A RAVINE AND WATERFALLS--A SLEEPLESS NIGHT--FURTHER DISCOVERIES--MY ILLNESS--A MARQUESAN LANDSCAPE
+## CHAPTER SEVEN THE OTHER SIDE OF THE MOUNTAIN--DISAPPOINTMENT--INVENTORY OF ARTICLES BROUGHT FROM THE SHIP--DIVISION OF THE STOCK OF BREAD--APPEARANCE OF THE INTERIOR OF THE ISLAND--A DISCOVERY--A RAVINE AND WATERFALLS--A SLEEPLESS NIGHT--FURTHER DISCOVERIES--MY ILLNESS--A MARQUESAN LANDSCAPE
 
 My curiosity had been not a little raised with regard to the description
 of country we should meet on the other side of the mountains; and I had
@@ -2523,7 +2523,7 @@ slumbering companion, I remained gazing around me, hardly able to
 comprehend by what means I had thus suddenly been made a spectator of
 such a scene.
 
-### CHAPTER EIGHT THE IMPORTANT QUESTION, TYPEE OR HAPPAR?--A WILD GOOSE CHASE--MY SUFFERINGS--DISHEARTENING SITUATION--A NIGHT IN A RAVINE--MORNING MEAL--HAPPY IDEA OF TOBY--JOURNEY TOWARDS THE VALLEY
+## CHAPTER EIGHT THE IMPORTANT QUESTION, TYPEE OR HAPPAR?--A WILD GOOSE CHASE--MY SUFFERINGS--DISHEARTENING SITUATION--A NIGHT IN A RAVINE--MORNING MEAL--HAPPY IDEA OF TOBY--JOURNEY TOWARDS THE VALLEY
 
 Recovering from my astonishment at the beautiful scene before me, I
 quickly awakened Toby, and informed him of the discovery I had made.
@@ -2835,7 +2835,7 @@ ravine like a madman, forgetting my inability to keep up with him. In a
 few minutes, however, the exuberance of his spirits abated, and, pausing
 for a while, he permitted me to overtake him.
 
-### CHAPTER NINE PERILOUS PASSAGE OF THE RAVINE--DESCENT INTO THE VALLEY
+## CHAPTER NINE PERILOUS PASSAGE OF THE RAVINE--DESCENT INTO THE VALLEY
 
 The fearless confidence of Toby was contagious, and I began to adopt the
 Happar side of the question. I could not, however, overcome a certain
@@ -3160,7 +3160,7 @@ limbs broken at the head of that magnificent vale which five days before
 had so suddenly burst upon my sight, and almost beneath the shadow of
 those very cliffs from whose summits we had gazed upon the prospect.
 
-### CHAPTER TEN THE HEAD OF THE VALLEY--CAUTIOUS ADVANCE--A PATH--FRUIT--DISCOVERY OF TWO OF THE NATIVES--THEIR SINGULAR CONDUCT--APPROACH TOWARDS THE INHABITED PARTS OF THE VALE--SENSATION PRODUCED BY OUR APPEARANCE--RECEPTION AT THE HOUSE OF ONE OF THE NATIVES
+## CHAPTER TEN THE HEAD OF THE VALLEY--CAUTIOUS ADVANCE--A PATH--FRUIT--DISCOVERY OF TWO OF THE NATIVES--THEIR SINGULAR CONDUCT--APPROACH TOWARDS THE INHABITED PARTS OF THE VALE--SENSATION PRODUCED BY OUR APPEARANCE--RECEPTION AT THE HOUSE OF ONE OF THE NATIVES
 
 How to obtain the fruit which we felt convinced must grow near at hand
 was our first thought.
@@ -3573,7 +3573,7 @@ extinguishing the tapers that had been burning, threw themselves down
 beside us, and after a little desultory conversation were soon sound
 asleep.
 
-### CHAPTER ELEVEN MIDNIGHT REFLECTIONS--MORNING VISITORS--A WARRIOR IN COSTUME--A SAVAGE AESCULAPIUS--PRACTICE OF THE HEALING ART--BODY SERVANT--A DWELLING-HOUSE OF THE VALLEY DESCRIBED--PORTRAITS OF ITS INMATES
+## CHAPTER ELEVEN MIDNIGHT REFLECTIONS--MORNING VISITORS--A WARRIOR IN COSTUME--A SAVAGE AESCULAPIUS--PRACTICE OF THE HEALING ART--BODY SERVANT--A DWELLING-HOUSE OF THE VALLEY DESCRIBED--PORTRAITS OF ITS INMATES
 
 Various and conflicting were the thoughts which oppressed me during the
 silent hours that followed the events related in the preceding chapter.
@@ -4083,7 +4083,7 @@ some measure apply to nearly all the youthful portion of her sex in the
 valley. Judge ye then, reader, what beautiful creatures they must have
 been.
 
-### CHAPTER TWELVE OFFICIOUSNESS OF KORY-KORY--HIS DEVOTION--A BATH IN THE STREAM--WANT OF REFINEMENT OF THE TYPEE DAMSELS--STROLL WITH MEHEVI--A TYPEE HIGHWAY--THE TABOO GROVES--THE HOOLAH HOOLAH GROUND--THE TI--TIMEWORN SAVAGES--HOSPITALITY OF MEHEVI--MIDNIGHT MUSINGS--ADVENTURES IN THE DARK--DISTINGUISHED HONOURS PAID TO THE VISITORS--STRANGE PROCESSION AND RETURN TO THE HOUSE OF MARHEYO
+## CHAPTER TWELVE OFFICIOUSNESS OF KORY-KORY--HIS DEVOTION--A BATH IN THE STREAM--WANT OF REFINEMENT OF THE TYPEE DAMSELS--STROLL WITH MEHEVI--A TYPEE HIGHWAY--THE TABOO GROVES--THE HOOLAH HOOLAH GROUND--THE TI--TIMEWORN SAVAGES--HOSPITALITY OF MEHEVI--MIDNIGHT MUSINGS--ADVENTURES IN THE DARK--DISTINGUISHED HONOURS PAID TO THE VISITORS--STRANGE PROCESSION AND RETURN TO THE HOUSE OF MARHEYO
 
 When Mehevi had departed from the house, as related in the preceding
 chapter, Kory-Kory commenced the functions of the post assigned him.
@@ -4448,7 +4448,7 @@ the superannuated warrior did the honours of his mansion with all the
 warmth of hospitality evinced by an English squire when he regales his
 friends at some fine old patrimonial mansion.
 
-### CHAPTER THIRTEEN ATTEMPT TO PROCURE RELIEF FROM NUKUHEVA--PERILOUS ADVENTURE OF TOBY IN THE HAPPAR MOUNTAINS--ELOQUENCE OF KORY-KORY
+## CHAPTER THIRTEEN ATTEMPT TO PROCURE RELIEF FROM NUKUHEVA--PERILOUS ADVENTURE OF TOBY IN THE HAPPAR MOUNTAINS--ELOQUENCE OF KORY-KORY
 
 Amidst these novel scenes a week passed away almost imperceptibly. The
 natives, actuated by some mysterious impulse, day after day redoubled
@@ -4720,7 +4720,7 @@ it suggested; and proceeded in such a strain of unintelligible and
 stunning gibberish, that he actually gave me the headache for the rest
 of the day.
 
-### CHAPTER FOURTEEN A GREAT EVENT HAPPENS IN THE VALLEY--THE ISLAND TELEGRAPH--SOMETHING BEFALLS TOBY--FAYAWAY DISPLAYS A TENDER HEART--MELANCHOLY REFLECTIONS--MYSTERIOUS CONDUCT OF THE ISLANDERS--DEVOTION OF KORY-KORY--A RURAL COUCH--A LUXURY--KORY-KORY STRIKES A LIGHT A LA TYPEE
+## CHAPTER FOURTEEN A GREAT EVENT HAPPENS IN THE VALLEY--THE ISLAND TELEGRAPH--SOMETHING BEFALLS TOBY--FAYAWAY DISPLAYS A TENDER HEART--MELANCHOLY REFLECTIONS--MYSTERIOUS CONDUCT OF THE ISLANDERS--DEVOTION OF KORY-KORY--A RURAL COUCH--A LUXURY--KORY-KORY STRIKES A LIGHT A LA TYPEE
 
 In the course of a few days Toby had recovered from the effects of
 his adventure with the Happar warriors; the wound on his head rapidly
@@ -5076,7 +5076,7 @@ end to provide for his starving offspring that food which the children
 of a Polynesian father, without troubling their parents, pluck from the
 branches of every tree around them.
 
-### CHAPTER FIFTEEN KINDNESS OF MARHEYO AND THE REST OF THE ISLANDERS--A FULL DESCRIPTION OF THE BREAD-FRUIT TREE--DIFFERENT MODES OF PREPARING THE FRUIT
+## CHAPTER FIFTEEN KINDNESS OF MARHEYO AND THE REST OF THE ISLANDERS--A FULL DESCRIPTION OF THE BREAD-FRUIT TREE--DIFFERENT MODES OF PREPARING THE FRUIT
 
 All the inhabitants of the valley treated me with great kindness; but as
 to the household of Marheyo, with whom I was now permanently domiciled,
@@ -5259,7 +5259,7 @@ attains its greatest excellence in the genial climate of the Marquesan
 group, where it grows to an enormous magnitude, and flourishes in the
 utmost abundance.
 
-### CHAPTER SIXTEEN MELANCHOLY CONDITION--OCCURRENCE AT THE TI--ANECDOTE OF MARHEYO--SHAVING THE HEAD OF A WARRIOR
+## CHAPTER SIXTEEN MELANCHOLY CONDITION--OCCURRENCE AT THE TI--ANECDOTE OF MARHEYO--SHAVING THE HEAD OF A WARRIOR
 
 In looking back to this period, and calling to remembrance the
 numberless proofs of kindness and respect which I received from the
@@ -5450,7 +5450,7 @@ a little a stubble field after being gone over with a harrow. However,
 as the chief expressed the liveliest satisfaction at the result, I was
 too wise to dissent from his opinion.
 
-### CHAPTER SEVENTEEN IMPROVEMENT IN HEALTH AND SPIRITS--FELICITY OF THE TYPEES--THEIR ENJOYMENTS COMPARED WITH THOSE OF MORE ENLIGHTENED COMMUNITIES--COMPARATIVE WICKEDNESS OF CIVILIZED AND UNENLIGHTENED PEOPLE--A SKIRMISH IN THE MOUNTAIN WITH THE WARRIORS OF HAPPAR
+## CHAPTER SEVENTEEN IMPROVEMENT IN HEALTH AND SPIRITS--FELICITY OF THE TYPEES--THEIR ENJOYMENTS COMPARED WITH THOSE OF MORE ENLIGHTENED COMMUNITIES--COMPARATIVE WICKEDNESS OF CIVILIZED AND UNENLIGHTENED PEOPLE--A SKIRMISH IN THE MOUNTAIN WITH THE WARRIORS OF HAPPAR
 
 Day after day wore on, and still there was no perceptible change in the
 conduct of the islanders towards me. Gradually I lost all knowledge of
@@ -5775,7 +5775,7 @@ For two or three days the late event was the theme of general comment;
 after which the excitement gradually wore away, and the valley resumed
 its accustomed tranquility.
 
-### CHAPTER EIGHTEEN SWIMMING IN COMPANY WITH THE GIRLS OF THE VALLEY--A CANOE--EFFECTS OF THE TABOO--A PLEASURE EXCURSION ON THE POND--BEAUTIFUL FREAK OF FAYAWAY--MANTUA-MAKING--A STRANGER ARRIVES IN THE VALLEY--HIS MYSTERIOUS CONDUCT--NATIVE ORATORY--THE INTERVIEW--ITS RESULTS--DEPARTURE OF THE STRANGER
+## CHAPTER EIGHTEEN SWIMMING IN COMPANY WITH THE GIRLS OF THE VALLEY--A CANOE--EFFECTS OF THE TABOO--A PLEASURE EXCURSION ON THE POND--BEAUTIFUL FREAK OF FAYAWAY--MANTUA-MAKING--A STRANGER ARRIVES IN THE VALLEY--HIS MYSTERIOUS CONDUCT--NATIVE ORATORY--THE INTERVIEW--ITS RESULTS--DEPARTURE OF THE STRANGER
 
 Returning health and peace of mind gave a new interest to everything
 around me. I sought to diversify my time by as many enjoyments as lay
@@ -6287,7 +6287,7 @@ himself into the path which led from the house. I watched his receding
 figure until it was lost in the obscurity of the grove, and then gave
 myself up to the most desponding reflections.
 
-### CHAPTER NINETEEN REFLECTIONS AFTER MARNOO’S DEPARTURE-BATTLE OF THE POP-GUNS--STRANGE CONCEIT OF MARHEYO--PROCESS OF MAKING TAPPA
+## CHAPTER NINETEEN REFLECTIONS AFTER MARNOO’S DEPARTURE-BATTLE OF THE POP-GUNS--STRANGE CONCEIT OF MARHEYO--PROCESS OF MAKING TAPPA
 
 The knowledge I had now obtained as to the intention of the savages
 deeply affected me.
@@ -6519,7 +6519,7 @@ When several of these implements happen to be in operation at the same
 time, near one another, the effect upon the ear of a person, at a little
 distance, is really charming.
 
-### CHAPTER TWENTY HISTORY OF A DAY AS USUALLY SPENT IN TYPEE VALLEY--DANCES OF THE MARQUESAN GIRLS
+## CHAPTER TWENTY HISTORY OF A DAY AS USUALLY SPENT IN TYPEE VALLEY--DANCES OF THE MARQUESAN GIRLS
 
 Nothing can be more uniform and undiversified than the life of the
 Typees; one tranquil day of ease and happiness follows another in quiet
@@ -6675,7 +6675,7 @@ constitution is no way shown more emphatically than in the quantity of
 sleep they can endure. To many of them, indeed, life is little else than
 an often interrupted and luxurious nap.
 
-### CHAPTER TWENTY-ONE THE SPRING OF ARVA WAI--REMARKABLE MONUMENTAL REMAINS--SOME IDEAS WITH REGARD TO THE HISTORY OF THE PI-PIS FOUND IN THE VALLEY
+## CHAPTER TWENTY-ONE THE SPRING OF ARVA WAI--REMARKABLE MONUMENTAL REMAINS--SOME IDEAS WITH REGARD TO THE HISTORY OF THE PI-PIS FOUND IN THE VALLEY
 
 Almost every country has its medicinal springs famed for their healing
 virtues. The Cheltenham of Typee is embosomed in the deepest solitude,
@@ -6817,7 +6817,7 @@ establish himself in some new locality, is to select one of the many
 unappropriated pi-pis, and without further ceremony pitch his bamboo
 tent upon it.
 
-### CHAPTER TWENTY-TWO PREPARATIONS FOR A GRAND FESTIVAL IN THE VALLEY--STRANGE DOINGS IN THE TABOO GROVES--MONUMENT OF CALABASHES--GALA COSTUME OF THE TYPEE DAMSELS--DEPARTURE FOR THE FESTIVAL
+## CHAPTER TWENTY-TWO PREPARATIONS FOR A GRAND FESTIVAL IN THE VALLEY--STRANGE DOINGS IN THE TABOO GROVES--MONUMENT OF CALABASHES--GALA COSTUME OF THE TYPEE DAMSELS--DEPARTURE FOR THE FESTIVAL
 
 From the time that my lameness had decreased I had made a daily practice
 of visiting Mehevi at the Ti, who invariably gave me a most cordial
@@ -7035,7 +7035,7 @@ myself out of palmetto-leaves, and some of the others I converted into a
 splendid girdle. These operations finished, with the slow and dignified
 step of a full-dressed beau I ascended the rock.
 
-### CHAPTER TWENTY-THREE THE FEAST OF CALABASHES
+## CHAPTER TWENTY-THREE THE FEAST OF CALABASHES
 
 The whole population of the valley seemed to be gathered within the
 precincts of the grove. In the distance could be seen the long front of
@@ -7265,7 +7265,7 @@ when the throng dispersed, and the Taboo Groves were again abandoned to
 quiet and repose. The next day the same scene was repeated until night,
 when this singular festival terminated.
 
-### CHAPTER TWENTY-FOUR IDEAS SUGGESTED BY THE FEAST OF CALABASHES--INACCURACY OF CERTAIN PUBLISHED ACCOUNTS OF THE ISLANDS--A REASON--NEGLECTED STATE OF HEATHENISM IN THE VALLEY--EFFIGY OF A DEAD WARRIOR--A SINGULAR SUPERSTITION--THE PRIEST KOLORY AND THE GOD MOA ARTUA--AMAZING RELIGIOUS OBSERVANCE--A DILAPIDATED SHRINE--KORY-KORY AND THE IDOL--AN INFERENCE
+## CHAPTER TWENTY-FOUR IDEAS SUGGESTED BY THE FEAST OF CALABASHES--INACCURACY OF CERTAIN PUBLISHED ACCOUNTS OF THE ISLANDS--A REASON--NEGLECTED STATE OF HEATHENISM IN THE VALLEY--EFFIGY OF A DEAD WARRIOR--A SINGULAR SUPERSTITION--THE PRIEST KOLORY AND THE GOD MOA ARTUA--AMAZING RELIGIOUS OBSERVANCE--A DILAPIDATED SHRINE--KORY-KORY AND THE IDOL--AN INFERENCE
 
 Although I had been baffled in my attempts to learn the origin of
 the Feast of Calabashes, yet it seemed very plain to me that it was
@@ -7703,7 +7703,7 @@ is becoming offensive--the temples themselves need rethatching--the
 tattooed clergy are altogether too light-hearted and lazy--and their
 flocks are going astray.
 
-### CHAPTER TWENTY-FIVE GENERAL INFORMATION GATHERED AT THE FESTIVAL--PERSONAL BEAUTY OF THE TYPEES--THEIR SUPERIORITY OVER THE INHABITANTS OF THE OTHER ISLANDS--DIVERSITY OF COMPLEXION--A VEGETABLE COSMETIC AND OINTMENT--TESTIMONY OF VOYAGERS TO THE UNCOMMON BEAUTY OF THE MARQUESANS--FEW EVIDENCES OF INTERCOURSE WITH CIVILIZED BEINGS--DILAPIDATED MUSKET--PRIMITIVE SIMPLICITY OF GOVERNMENT--REGAL DIGNITY OF MEHEVI
+## CHAPTER TWENTY-FIVE GENERAL INFORMATION GATHERED AT THE FESTIVAL--PERSONAL BEAUTY OF THE TYPEES--THEIR SUPERIORITY OVER THE INHABITANTS OF THE OTHER ISLANDS--DIVERSITY OF COMPLEXION--A VEGETABLE COSMETIC AND OINTMENT--TESTIMONY OF VOYAGERS TO THE UNCOMMON BEAUTY OF THE MARQUESANS--FEW EVIDENCES OF INTERCOURSE WITH CIVILIZED BEINGS--DILAPIDATED MUSKET--PRIMITIVE SIMPLICITY OF GOVERNMENT--REGAL DIGNITY OF MEHEVI
 
 Although I had been unable during the late festival to obtain
 information on many interesting subjects which had much excited my
@@ -8010,7 +8010,7 @@ regard, as far at least as I was enabled to judge from appearances. For
 the future I determined to pay most assiduous court to him, hoping that
 eventually through his kindness I might obtain my liberty.
 
-### CHAPTER TWENTY-SIX KING MEHEVI--ALLUSION TO HIS HAWAIIAN MAJESTY--CONDUCT OF MARHEYO AND MEHEVI IN CERTAIN DELICATE MATTERS--PECULIAR SYSTEM OF MARRIAGE--NUMBER OF POPULATION--UNIFORMITY--EMBALMING--PLACES OF SEPULTURE--FUNERAL OBSEQUIES AT NUKUHEVA-NUMBER OF INHABITANTS IN TYPEE--LOCATION OF THE DWELLINGS--HAPPINESS ENJOYED IN THE VALLEY--A WARNING--SOME IDEAS WITH REGARD TO THE PRESENT STATE OF THE HAWAIIANS--STORY OF A MISSIONARY’S WIFE--FASHIONABLE EQUIPAGES AT OAHU--REFLECTIONS
+## CHAPTER TWENTY-SIX KING MEHEVI--ALLUSION TO HIS HAWAIIAN MAJESTY--CONDUCT OF MARHEYO AND MEHEVI IN CERTAIN DELICATE MATTERS--PECULIAR SYSTEM OF MARRIAGE--NUMBER OF POPULATION--UNIFORMITY--EMBALMING--PLACES OF SEPULTURE--FUNERAL OBSEQUIES AT NUKUHEVA-NUMBER OF INHABITANTS IN TYPEE--LOCATION OF THE DWELLINGS--HAPPINESS ENJOYED IN THE VALLEY--A WARNING--SOME IDEAS WITH REGARD TO THE PRESENT STATE OF THE HAWAIIANS--STORY OF A MISSIONARY’S WIFE--FASHIONABLE EQUIPAGES AT OAHU--REFLECTIONS
 
 King Mehevi!--A goodly sounding title--and why should I not bestow
 it upon the foremost man in the valley of Typee? The republican
@@ -8441,7 +8441,7 @@ reflections, however, on those facts may not be free from error. If such
 be the case, I claim no further indulgence than should be conceded to
 every man whose object is to do good.
 
-### CHAPTER TWENTY-SEVEN THE SOCIAL CONDITION AND GENERAL CHARACTER OF THE TYPEES
+## CHAPTER TWENTY-SEVEN THE SOCIAL CONDITION AND GENERAL CHARACTER OF THE TYPEES
 
 I have already mentioned that the influence exerted over the people
 of the valley by their chiefs was mild in the extreme; and as to any
@@ -8683,7 +8683,7 @@ enemies alone, and horrible and fearful as the custom is, immeasurably
 as it is to be abhorred and condemned, still I assert that those who
 indulge in it are in other respects humane and virtuous.
 
-### CHAPTER TWENTY-EIGHT FISHING PARTIES--MODE OF DISTRIBUTING THE FISH--MIDNIGHT BANQUET--TIME-KEEPING TAPERS--UNCEREMONIOUS STYLE OF EATING THE FISH
+## CHAPTER TWENTY-EIGHT FISHING PARTIES--MODE OF DISTRIBUTING THE FISH--MIDNIGHT BANQUET--TIME-KEEPING TAPERS--UNCEREMONIOUS STYLE OF EATING THE FISH
 
 There was no instance in which the social and kindly dispositions of the
 Typees were more forcibly evinced than in the manner the conducted their
@@ -8809,7 +8809,7 @@ the undertaking was not so disagreeable in the main, and after a few
 trials I positively began to relish them; however, I subjected them to a
 slight operation with a knife previously to making my repast.
 
-### CHAPTER TWENTY-NINE NATURAL HISTORY OF THE VALLEY--GOLDEN LIZARDS--TAMENESS OF THE BIRDS--MOSQUITOES--FLIES--DOGS--A SOLITARY CAT--THE CLIMATE--THE COCOANUT TREE--SINGULAR MODES OF CLIMBING IT--AN AGILE YOUNG CHIEF--FEARLESSNESS OF THE CHILDREN--TOO-TOO AND THE COCOANUT TREE--THE BIRDS OF THE VALLEY
+## CHAPTER TWENTY-NINE NATURAL HISTORY OF THE VALLEY--GOLDEN LIZARDS--TAMENESS OF THE BIRDS--MOSQUITOES--FLIES--DOGS--A SOLITARY CAT--THE CLIMATE--THE COCOANUT TREE--SINGULAR MODES OF CLIMBING IT--AN AGILE YOUNG CHIEF--FEARLESSNESS OF THE CHILDREN--TOO-TOO AND THE COCOANUT TREE--THE BIRDS OF THE VALLEY
 
 I think I must enlighten the reader a little about the natural history
 of the valley.
@@ -9057,7 +9057,7 @@ me with steady curious eyes from out the foliage, I was almost inclined
 to fancy that they knew they were gazing upon a stranger, and that they
 commiserated his fate.
 
-### CHAPTER THIRTY A PROFESSOR OF THE FINE ARTS--HIS PERSECUTIONS--SOMETHING ABOUT TATTOOING AND TABOOING--TWO ANECDOTES IN ILLUSTRATION OF THE LATTER--A FEW THOUGHTS ON THE TYPEE DIALECT
+## CHAPTER THIRTY A PROFESSOR OF THE FINE ARTS--HIS PERSECUTIONS--SOMETHING ABOUT TATTOOING AND TABOOING--TWO ANECDOTES IN ILLUSTRATION OF THE LATTER--A FEW THOUGHTS ON THE TYPEE DIALECT
 
 In one of my strolls with Kory-Kory, in passing along the border of a
 thick growth of bushes, my attention was arrested by a singular noise.
@@ -9402,7 +9402,7 @@ through all its moods and tenses. It covered the side of a considerable
 apartment, and I doubt whether Sir William Jones himself would not have
 despaired of mastering it.
 
-### CHAPTER THIRTY-ONE STRANGE CUSTOM OF THE ISLANDERS--THEIR CHANTING, AND THE PECULIARITY OF THEIR VOICE--RAPTURE OF THE KING AT FIRST HEARING A SONG--A NEW DIGNITY CONFERRED ON THE AUTHOR--MUSICAL INSTRUMENTS IN THE VALLEY--ADMIRATION OF THE SAVAGES AT BEHOLDING A PUGILISTIC PERFORMANCE--SWIMMING INFANT--BEAUTIFUL TRESSES OF THE GIRLS--OINTMENT FOR THE HAIR
+## CHAPTER THIRTY-ONE STRANGE CUSTOM OF THE ISLANDERS--THEIR CHANTING, AND THE PECULIARITY OF THEIR VOICE--RAPTURE OF THE KING AT FIRST HEARING A SONG--A NEW DIGNITY CONFERRED ON THE AUTHOR--MUSICAL INSTRUMENTS IN THE VALLEY--ADMIRATION OF THE SAVAGES AT BEHOLDING A PUGILISTIC PERFORMANCE--SWIMMING INFANT--BEAUTIFUL TRESSES OF THE GIRLS--OINTMENT FOR THE HAIR
 
 Sadly discursive as I have already been, I must still further entreat
 the reader’s patience, as I am about to string together, without any
@@ -9578,7 +9578,7 @@ not be out of place even upon the toilette of a queen. Its merits as a
 preparation for the hair are undeniable--it imparts to it a superb gloss
 and a silky fineness.
 
-### CHAPTER THIRTY-TWO APPREHENSIONS OF EVIL--FRIGHTFUL DISCOVERY--SOME REMARKS ON CANNIBALISM--SECOND BATTLE WITH THE HAPPARS--SAVAGE SPECTACLE--MYSTERIOUS FEAST--SUBSEQUENT DISCLOSURES
+## CHAPTER THIRTY-TWO APPREHENSIONS OF EVIL--FRIGHTFUL DISCOVERY--SOME REMARKS ON CANNIBALISM--SECOND BATTLE WITH THE HAPPARS--SAVAGE SPECTACLE--MYSTERIOUS FEAST--SUBSEQUENT DISCLOSURES
 
 From the time of my casual encounter with Karky the artist, my life was
 one of absolute wretchedness. Not a day passed but I was persecuted by
@@ -9932,7 +9932,7 @@ existence from them. But what reason had I to suppose that I should be
 spared until such an event occurred, an event which might be postponed
 by a hundred different contingencies?
 
-### CHAPTER THIRTY-THREE THE STRANGER AGAIN ARRIVES IN THE VALLEY--SINGULAR INTERVIEW WITH HIM--ATTEMPT TO ESCAPE--FAILURE--MELANCHOLY SITUATION--SYMPATHY OF MARHEYO
+## CHAPTER THIRTY-THREE THE STRANGER AGAIN ARRIVES IN THE VALLEY--SINGULAR INTERVIEW WITH HIM--ATTEMPT TO ESCAPE--FAILURE--MELANCHOLY SITUATION--SYMPATHY OF MARHEYO
 
 ‘Marnoo, Marnoo pemi!’ Such were the welcome sounds which fell upon my
 ear some ten days after the events related in the preceding chapter.
@@ -10107,7 +10107,7 @@ to come as vividly before my eyes as if they were actually present, and
 I still feel the soothing quiet pleasure which I then had in watching
 hour after hour their topmost boughs waving gracefully in the breeze.
 
-### CHAPTER THIRTY-FOUR THE ESCAPE
+## CHAPTER THIRTY-FOUR THE ESCAPE
 
 Nearly three weeks had elapsed since the second visit of Marnoo, and it
 must have been more than four months since I entered the valley, when

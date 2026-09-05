@@ -10,6 +10,8 @@ H. M. Caldwell Company Publishers
 To my dear Husband, George Henry Lewes,
 in this nineteenth year of our blessed union.
 
+FINALE.
+
 PRELUDE.
 
 Who that cares much to know the history of man, and how the mysterious

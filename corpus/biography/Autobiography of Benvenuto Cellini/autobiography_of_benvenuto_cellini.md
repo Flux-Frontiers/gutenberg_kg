@@ -4,6 +4,10 @@
 
 ---
 
+Ver.10/04/01*END*
+
+This etext was produced by Norman Wolcott.
+
 Autobiography of Benvenuto Cellini
 
 [Redactor’s Note: This version of the Autobiography, one of the most

@@ -10234,11 +10234,12 @@ would not say so to every body, Mrs. Elton, but I have not much faith
 in Mrs. Churchill’s illness.”
 
 “If she is really ill, why not go to Bath, Mr. Weston?—To Bath, or to
-Clifton?” “She has taken it into her head that Enscombe is too cold for
-her. The fact is, I suppose, that she is tired of Enscombe. She has now
-been a longer time stationary there, than she ever was before, and she
-begins to want change. It is a retired place. A fine place, but very
-retired.”
+Clifton?”
+
+“She has taken it into her head that Enscombe is too cold for her. The
+fact is, I suppose, that she is tired of Enscombe. She has now been a
+longer time stationary there, than she ever was before, and she begins
+to want change. It is a retired place. A fine place, but very retired.”
 
 “Aye—like Maple Grove, I dare say. Nothing can stand more retired from
 the road than Maple Grove. Such an immense plantation all round it! You

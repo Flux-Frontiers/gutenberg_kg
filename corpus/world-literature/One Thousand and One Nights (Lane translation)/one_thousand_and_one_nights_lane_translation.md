@@ -16,7 +16,7 @@ after the edition of
 
 Longmans, Green and Co, 1918 (1898)
 
-Preface
+### Preface
 
 The stories in the Fairy Books have generally been such as old women in
 country places tell to their grandchildren.  Nobody knows how old they
@@ -239,7 +239,7 @@ Scheherazade did not answer her sister, but turned to the Sultan.
 
 "Willingly," he answered.  So Scheherazade began.
 
-The Story of the Merchant and the Genius
+## The Story of the Merchant and the Genius
 
 Sire, there was once upon a time a merchant who possessed great wealth,
 in land and merchandise, as well as in ready money.  He was obliged
@@ -410,7 +410,7 @@ a third part of his punishment?"
 The genius considered some time, and then he said, "Very well, I agree
 to this."
 
-The Story of the First Old Man and of the Hind
+## The Story of the First Old Man and of the Hind
 
 I am now going to begin my story (said the old man), so please attend.
 
@@ -540,7 +540,7 @@ the hind."
 
 With this agreement the second old man began in this way.
 
-The Story of the Second Old Man, and of the Two Black Dogs
+## The Story of the Second Old Man, and of the Two Black Dogs
 
 Great prince of the genii, you must know that we are three
 brothers--these two black dogs and myself.  Our father died, leaving us
@@ -654,7 +654,7 @@ rest of his days happily with them.
 have just told you, they cannot compare with the story of the
 Fisherman."
 
-The Story of the Fisherman
+## The Story of the Fisherman
 
 Sire, there was once upon a time a fisherman so old and so poor that he
 could scarcely manage to support his wife and three children.  He went
@@ -786,7 +786,7 @@ Then he tried to get out by cunning.
 will treat me as a certain Greek king treated the physician Douban.
 Listen, and I will tell you."
 
-The Story of the Greek King and the Physician Douban
+## The Story of the Greek King and the Physician Douban
 
 In the country of Zouman, in Persia, there lived a Greek king.  This
 king was a leper, and all his doctors had been unable to cure him, when
@@ -863,7 +863,7 @@ what the vizir said to King Sindbad."
 "This vizir," he replied, "told King Sindbad that one ought not believe
 everything that a mother-in-law says, and told him this story."
 
-The Story of the Husband and the Parrot
+## The Story of the Husband and the Parrot
 
 A good man had a beautiful wife, whom he loved passionately, and never
 left if possible.  One day, when he was obliged by important business
@@ -910,7 +910,7 @@ vizir done," said the Greek king, "to merit the punishment?" "I will
 tell your Majesty, if you will do me the honour to listen," answered
 the vizir."
 
-The Story of the Vizir Who Was Punished
+## The Story of the Vizir Who Was Punished
 
 There was once upon a time a king who had a son who was very fond of
 hunting.  He often allowed him to indulge in this pastime, but he had
@@ -1267,7 +1267,7 @@ story.
 
 "Willingly I will tell you my sad history," said the young man.
 
-The Story of the Young King of the Black Isles
+## The Story of the Young King of the Black Isles
 
 You must know, sire, that my father was Mahmoud, the king of this
 country, the Black Isles, so called from the four little mountains
@@ -1761,7 +1761,7 @@ on the carpet, and the slaves stood against the wall.
 Then one of the Calenders, addressing himself to Zobeida as the
 principal lady, began his story.
 
-The Story of the First Calender, Son of a King
+## The Story of the First Calender, Son of a King
 
 In order, madam, to explain how I came to lose my right eye, and to
 wear the dress of a Calender, you must first know that I am the son of
@@ -1961,7 +1961,7 @@ The calender, however, begged leave to stay and to hear the histories
 of his two friends and of the three other persons of the company, which
 he was allowed to do.
 
-The Story of the Second Calendar, Son of a King
+## The Story of the Second Calendar, Son of a King
 
 "Madam," said the young man, addressing Zobeida, "if you wish to know
 how I lost my right eye, I shall have to tell you the story of my whole
@@ -2245,7 +2245,7 @@ interested in my words, and said he would like to hear the story of the
 two neighbours; and as I think, madam, it may please you, I will tell
 it to you also.
 
-The Story of the Envious Man and of Him Who Was Envied
+## The Story of the Envious Man and of Him Who Was Envied
 
 In a town of moderate size, two men lived in neighbouring houses; but
 they had not been there very long before one man took such a hatred of
@@ -2693,7 +2693,7 @@ And that, madam, is my story.
 
 The other Calender then told his story.
 
-The Story of the Third Calendar, Son of a King
+## The Story of the Third Calendar, Son of a King
 
 My story, said the Third Calender, is quite different from those of my
 two friends.  It was fate that deprived them of the sight of their
@@ -4896,7 +4896,7 @@ The Sultan asked everybody concerned in the hunchback's affair to tell
 him their stories.  Among others was a prating barber, whose tale of
 one of his brothers follows.
 
-The Story of the Barber's Fifth Brother
+## The Story of the Barber's Fifth Brother
 
 As long as our father lived Alnaschar was very idle.  Instead of
 working for his bread he was not ashamed to ask for it every evening,
@@ -5226,7 +5226,7 @@ best robe.  I then brought him back disguised, under cover of night, to
 my house, where I have since given him all the care I bestow on my
 other brothers.
 
-The Story of the Barber's Sixth Brother
+## The Story of the Barber's Sixth Brother
 
 There now remains for me to relate to you the story of my sixth
 brother, whose name was Schacabac.  Like the rest of us, he inherited a
@@ -8382,7 +8382,7 @@ look on it as a slight expiation for a fearful sin of which I have been
 guilty, and if your Highness will deign to listen to my tale, you will
 see that no punishment could atone for the crime."
 
-The Story of the Blind Baba-Abdalla
+## The Story of the Blind Baba-Abdalla
 
 I was born, Commander of the Faithful, in Bagdad, and was left an
 orphan while I was yet a very young man, for my parents died within a
@@ -8645,7 +8645,7 @@ day for all your wants."
 At these words Baba-Abdalla flung himself at the Caliph's feet, and
 prayed that honour and happiness might be his portion for ever.
 
-The Story of Sidi-Nouman
+## The Story of Sidi-Nouman
 
 The Caliph, Haroun-al-Raschid, was much pleased with the tale of the
 blind man and the dervish, and when it was finished he turned to the
@@ -9036,7 +9036,7 @@ because I know that when once women such as she begin to work evil they
 never leave off, and I should only bring down on your head a vengeance
 far worse than the one you have undergone already."
 
-The Story of Ali Colia, Merchant of Bagdad
+## The Story of Ali Colia, Merchant of Bagdad
 
 In the reign of Haroun-al-Raschid, there lived in Bagdad a merchant
 named Ali Cogia, who, having neither wife nor child, contented himself
@@ -10196,7 +10196,7 @@ soon as the rejoicings were over, an ambassador was sent to the King of
 Bengal, to inform him of what had passed, and to ask his approbation of
 the alliance between the two countries, which he heartily gave.
 
-The Story of Two Sisters Who Were Jealous of Their Younger Sister
+## The Story of Two Sisters Who Were Jealous of Their Younger Sister
 
 Once upon a time there reigned over Persia a Sultan named Kosrouschah,
 who from his boyhood had been fond of putting on a disguise and seeking

@@ -28,6 +28,8 @@ History, Queen’s College, Belfast._
 
 [_Reprinted from Stereotype plates._]
 
+EPICURUS                         424
+
 PREFACE.
 
 Diogenes, the author of the following work, was a native (as is generally

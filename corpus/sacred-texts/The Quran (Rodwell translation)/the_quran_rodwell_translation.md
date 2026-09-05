@@ -162,7 +162,7 @@ To Moslems he is, of course, the prophet par excellence, and the Koran is
 regarded by the orthodox as nothing less than the eternal utterance of Allah.
 The eulogy pronounced by Carlyle on Muhammed in Heroes and Hero Worship will
 probably be endorsed by not a few at the present day. The extreme contrary
-opinion, which in a fresh form has recently been revived1 by an able writer,
+opinion, which in a fresh form has recently been revived[1] by an able writer,
 is hardly likely to find much lasting support. The correct view very probably
 lies between the two extremes. The relative value of any given system of
 religious thought must depend on the amount of truth which it embodies as
@@ -170,6 +170,8 @@ well as on the ethical standard which its adherents are bidden to follow.
 Another important test is the degree of originality that is to be assigned to
 it, for it can manifestly only claim credit for that which is new in it, not
 for that which it borrowed from other systems.
+
+[1] Mahommed and the Rise of Islam, in “Heroes of Nations” series.
 
 With regard to the first-named criterion, there is a growing opinion among
 students of religious history that Muhammed may in a real sense be regarded
@@ -185,7 +187,7 @@ requires to be treated with discrimination. From the first flash of prophetic
 inspiration which is clearly discernible in the earlier portions of the book
 he, later on, frequently descended to deliberate invention and artful
 rhetoric. He, in fact, accommodated his moral sense to the circumstances in
-which the r\oc\le he had to play involved him.
+which the _rôle_ he had to play involved him.
 
 On the question of originality there can hardly be two opinions now that the
 Koran has been thoroughly compared with the Christian and Jewish traditions
@@ -277,38 +279,37 @@ in the main based on the best available historical and literary evidence; and
 in following the order of the chapters as here printed, the reader will be
 able to trace the development of the prophet's mind as he gradually advanced
 from the early flush of inspiration to the less spiritual and more equivocal
-r\oc\le of warrior, politician, and founder of an empire.
+_rôle_ of warrior, politician, and founder of an empire.
 
 G. Margoliouth.
-
-1  Mahommed and the Rise of Islam, in “Heroes of Nations” series.
 
 ### SELECT BIBLIOGRAPHY
 
 ENGLISH TRANSLATIONS.  From the original Arabic by G. Sale, 1734, 1764, 1795,
 1801; many later editions, which include a memoir of the translator by R. A.
 Davenport, and notes from Savary's version of the Koran; an edition issued by
-E. M. Wherry, with additional notes and commentary (Tr\du\ubner's Oriental
+E. M. Wherry, with additional notes and commentary (Trübner's Oriental
 Series), 1882, etc.; Sale's translation has also been edited in the Chandos
-Classics, and among Lubbock's Hundred Books (No. 22). The Holy Qur\da\an,
+Classics, and among Lubbock's Hundred Books (No. 22). The Holy Qurán,
 translated by Dr. Mohammad Abdul Hakim Khan, with short notes, 1905;
 Translation by J. M. Rodwell, with notes and index (the Suras arranged in
 chronological order), 1861, 2nd ed., 1876; by E. H. Palmer (Sacred Books of
 the East, vols. vi., ix.).
 
 SELECTIONS: Chiefly from Sale's edition, by E. W. Lane, 1843; revised and
-enlarged with introduction by S. Lane-Poole. (Tr\du\ubner's Oriental Series),
+enlarged with introduction by S. Lane-Poole. (Trübner's Oriental Series),
 1879; The Speeches and Table-Talk of the Prophet Mohammad, etc., chosen and
 translated, with introduction and notes by S. Lane-Poole, 1882 (Golden
 Treasury Series); Selections with introduction and explanatory notes (from
 Sale and other writers), by J. Murdock (Sacred Books of the East), 2nd ed.,
 1902; The Religion of the Koran, selections with an introduction by A. N.
 Wollaston (The Wisdom of the East), 1904.
+
 See also: Sir W. Muir: The Koran, its Composition and Teaching, 1878;
 H. Hirschfeld: New Researches into the Composition and Exegesis of the Qoran,
-1902; W. St C. Tisdale: Sources of the Qur’ân, 1905; H. U. W. Stanton: The
+1902; W. St C. Tisdale: Sources of the Qur’án, 1905; H. U. W. Stanton: The
 Teaching of the Qur’án, 1919; A. Mingana: Syriac Influence on the Style of
-the Kur’ân, 1927.
+the Kur’án, 1927.
 
 TO
 

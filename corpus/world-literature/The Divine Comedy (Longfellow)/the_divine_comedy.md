@@ -11,15 +11,6 @@ of Dante Alighieri
 Translated by
 HENRY WADSWORTH LONGFELLOW
 
-XXVIII. God and the Angelic Hierarchies.
-XXIX. Beatrice’s Discourse of the Creation of the Angels, and of
-the Fall of Lucifer. Her Reproof of Foolish and Avaricious
-Preachers.
-XXX. The Tenth Heaven, or Empyrean. The River of Light. The Two
-Courts of Heaven. The White Rose of Paradise. The great Throne.
-XXXI. The Glory of Paradise. Departure of Beatrice. St. Bernard.
-XXXII. St. Bernard points out the Saints in the White Rose.
-XXXIII. Prayer to the Virgin. The Threefold Circle of the Trinity.
 Mystery of the Divine and Human Nature.
 APPENDIX
 
@@ -209,9 +200,10 @@ And those thou makest so disconsolate.”
 
 Then he moved on, and I behind him followed.
 
-Inferno: Canto II
+## Inferno: Canto II
 
-Day was departing, and the embrowned air
+*Day was departing, and the embrowned air*
+
 Released the animals that are on earth
 From their fatigues; and I the only one
 
@@ -401,7 +393,7 @@ Thus said I to him; and when he had moved,
 
 I entered on the deep and savage way.
 
-Inferno: Canto III
+## Inferno: Canto III
 
 “Through me the way is to the city dolent;
 Through me the way is to eternal dole;
@@ -585,9 +577,10 @@ Which overmastered in me every sense,
 
 And as a man whom sleep hath seized I fell.
 
-Inferno: Canto IV
+## Inferno: Canto IV
 
-Broke the deep lethargy within my head
+*Broke the deep lethargy within my head*
+
 A heavy thunder, so that I upstarted,
 Like to a person who by force is wakened;
 
@@ -789,9 +782,10 @@ Forth from the quiet to the air that trembles;
 
 And to a place I come where nothing shines.
 
-Inferno: Canto V
+## Inferno: Canto V
 
-Thus I descended out of the first circle
+*Thus I descended out of the first circle*
+
 Down to the second, that less space begirds,
 And so much greater dole, that goads to wailing.
 
@@ -981,9 +975,10 @@ I swooned away as if I had been dying,
 
 And fell, even as a dead body falls.
 
-Inferno: Canto VI
+## Inferno: Canto VI
 
-At the return of consciousness, that closed
+*At the return of consciousness, that closed*
+
 Before the pity of those two relations,
 Which utterly with sadness had confused me,
 
@@ -1137,7 +1132,7 @@ We came unto the point where the descent is;
 
 There we found Plutus the great enemy.
 
-Inferno: Canto VII
+## Inferno: Canto VII
 
 “Pape Satan, Pape Satan, Aleppe!”
 Thus Plutus with his clucking voice began;
@@ -1313,9 +1308,10 @@ With eyes turned unto those who gorge the mire;
 
 Unto the foot of a tower we came at last.
 
-Inferno: Canto VIII
+## Inferno: Canto VIII
 
-I say, continuing, that long before
+*I say, continuing, that long before*
+
 We to the foot of that high tower had come,
 Our eyes went upward to the summit of it,
 
@@ -1489,7 +1485,7 @@ Passing across the circles without escort,
 
 One by whose means the city shall be opened.”
 
-Inferno: Canto IX
+## Inferno: Canto IX
 
 That hue which cowardice brought out on me,
 Beholding my Conductor backward turn,
@@ -1669,9 +1665,10 @@ And when he to the right had turned, we passed
 
 Between the torments and high parapets.
 
-Inferno: Canto X
+## Inferno: Canto X
 
-Now onward goes, along a narrow path
+*Now onward goes, along a narrow path*
+
 Between the torments and the city wall,
 My Master, and I follow at his back.
 
@@ -1853,9 +1850,10 @@ Along a path that strikes into a valley,
 
 Which even up there unpleasant made its stench.
 
-Inferno: Canto XI
+## Inferno: Canto XI
 
-Upon the margin of a lofty bank
+*Upon the margin of a lofty bank*
+
 Which great rocks broken in a circle made,
 We came upon a still more cruel throng;
 
@@ -2009,9 +2007,10 @@ And the Wain wholly over Caurus lies,
 
 And far beyond there we descend the crag.”
 
-Inferno: Canto XII
+## Inferno: Canto XII
 
-The place where to descend the bank we came
+*The place where to descend the bank we came*
+
 Was alpine, and from what was there, moreover,
 Of such a kind that every eye would shun it.
 
@@ -2197,7 +2196,7 @@ Who made upon the highways so much war.”
 
 Then back he turned, and passed again the ford.
 
-Inferno: Canto XIII
+## Inferno: Canto XIII
 
 Not yet had Nessus reached the other side,
 When we had put ourselves within a wood,
@@ -2401,9 +2400,10 @@ In vain had caused their labour to be done.
 
 Of my own house I made myself a gibbet.”
 
-Inferno: Canto XIV
+## Inferno: Canto XIV
 
-Because the charity of my native place
+*Because the charity of my native place*
+
 Constrained me, gathered I the scattered leaves,
 And gave them back to him, who now was hoarse.
 
@@ -2593,7 +2593,7 @@ A way the margins make that are not burning,
 
 And over them all vapours are extinguished.”
 
-Inferno: Canto XV
+## Inferno: Canto XV
 
 Now bears us onward one of the hard margins,
 And so the brooklet’s mist o’ershadows it,
@@ -2761,9 +2761,10 @@ Across the plain; and seemed to be among them
 
 The one who wins, and not the one who loses.
 
-Inferno: Canto XVI
+## Inferno: Canto XVI
 
-Now was I where was heard the reverberation
+*Now was I where was heard the reverberation*
+
 Of water falling into the next round,
 Like to that humming which the beehives make,
 
@@ -2945,7 +2946,7 @@ Reef, or aught else that in the sea is hidden,
 
 Who upward stretches, and draws in his feet.
 
-Inferno: Canto XVII
+## Inferno: Canto XVII
 
 “Behold the monster with the pointed tail,
 Who cleaves the hills, and breaketh walls and weapons,
@@ -3129,7 +3130,7 @@ And being disencumbered of our persons,
 
 He sped away as arrow from the string.
 
-Inferno: Canto XVIII
+## Inferno: Canto XVIII
 
 There is a place in Hell called Malebolge,
 Wholly of stone and of an iron colour,
@@ -3313,7 +3314,7 @@ Great gratitude from thee?’—‘Nay, marvellous;’
 
 And herewith let our sight be satisfied.”
 
-Inferno: Canto XIX
+## Inferno: Canto XIX
 
 O Simon Magus, O forlorn disciples,
 Ye who the things of God, which ought to be
@@ -3493,9 +3494,10 @@ That would have been hard passage for the goats:
 
 Thence was unveiled to me another valley.
 
-Inferno: Canto XX
+## Inferno: Canto XX
 
-Of a new pain behoves me to make verses
+*Of a new pain behoves me to make verses*
+
 And give material to the twentieth canto
 Of the first song, which is of the submerged.
 
@@ -3669,9 +3671,10 @@ From time to time within the forest deep.”
 
 Thus spake he to me, and we walked the while.
 
-Inferno: Canto XXI
+## Inferno: Canto XXI
 
-From bridge to bridge thus, speaking other things
+*From bridge to bridge thus, speaking other things*
+
 Of which my Comedy cares not to sing,
 We came along, and held the summit, when
 
@@ -3857,7 +3860,7 @@ His teeth towards their leader for a signal;
 
 And he had made a trumpet of his rump.
 
-Inferno: Canto XXII
+## Inferno: Canto XXII
 
 I have erewhile seen horsemen moving camp,
 Begin the storming, and their muster make,
@@ -4061,9 +4064,10 @@ Who were already baked within the crust,
 
 And in this manner busied did we leave them.
 
-Inferno: Canto XXIII
+## Inferno: Canto XXIII
 
-Silent, alone, and without company
+*Silent, alone, and without company*
+
 We went, the one in front, the other after,
 As go the Minor Friars along their way.
 
@@ -4261,9 +4265,10 @@ Whence from the heavy-laden I departed
 
 After the prints of his beloved feet.
 
-Inferno: Canto XXIV
+## Inferno: Canto XXIV
 
-In that part of the youthful year wherein
+*In that part of the youthful year wherein*
+
 The Sun his locks beneath Aquarius tempers,
 And now the nights draw near to half the day,
 
@@ -4465,9 +4470,10 @@ So that each Bianco shall thereby be smitten.
 
 And this I’ve said that it may give thee pain.”
 
-Inferno: Canto XXV
+## Inferno: Canto XXV
 
-At the conclusion of his words, the thief
+*At the conclusion of his words, the thief*
+
 Lifted his hands aloft with both the figs,
 Crying: “Take that, God, for at thee I aim them.”
 
@@ -4669,7 +4675,7 @@ Which came in the beginning, was not changed;
 
 The other was he whom thou, Gaville, weepest.
 
-Inferno: Canto XXVI
+## Inferno: Canto XXVI
 
 Rejoice, O Florence, since thou art so great,
 That over sea and land thou beatest thy wings,
@@ -4861,7 +4867,7 @@ And the prow downward go, as pleased Another,
 
 Until the sea above us closed again.”
 
-Inferno: Canto XXVII
+## Inferno: Canto XXVII
 
 Already was the flame erect and quiet,
 To speak no more, and now departed from us
@@ -5045,7 +5051,7 @@ Which the moat covers, where is paid the fee
 
 By those who, sowing discord, win their burden.
 
-Inferno: Canto XXVIII
+## Inferno: Canto XXVIII
 
 Who ever could, e’en with untrammelled words,
 Tell of the blood and of the wounds in full
@@ -5237,9 +5243,10 @@ From its beginning, which is in this trunk.
 
 Thus is observed in me the counterpoise.”
 
-Inferno: Canto XXIX
+## Inferno: Canto XXIX
 
-The many people and the divers wounds
+*The many people and the divers wounds*
+
 These eyes of mine had so inebriated,
 That they were wishful to stand still and weep;
 
@@ -5425,7 +5432,7 @@ Thou must remember, if I well descry thee,
 
 How I a skilful ape of nature was.”
 
-Inferno: Canto XXX
+## Inferno: Canto XXX
 
 ’Twas at the time when Juno was enraged,
 For Semele, against the Theban blood,
@@ -5625,7 +5632,7 @@ Where there are people in a like dispute;
 
 For a base wish it is to wish to hear it.”
 
-Inferno: Canto XXXI
+## Inferno: Canto XXXI
 
 One and the selfsame tongue first wounded me,
 So that it tinged the one cheek and the other,
@@ -5821,7 +5828,7 @@ Nor thus bowed downward made he there delay,
 
 But, as a mast does in a ship, uprose.
 
-Inferno: Canto XXXII
+## Inferno: Canto XXXII
 
 If I had rhymes both rough and stridulous,
 As were appropriate to the dismal hole
@@ -6009,7 +6016,7 @@ I in the world above repay thee for it,
 
 If that wherewith I speak be not dried up.”
 
-Inferno: Canto XXXIII
+## Inferno: Canto XXXIII
 
 His mouth uplifted from his grim repast,
 That sinner, wiping it upon the hair
@@ -6221,7 +6228,7 @@ In soul already in Cocytus bathes,
 
 And still above in body seems alive!
 
-Inferno: Canto XXXIV
+## Inferno: Canto XXXIV
 
 “‘Vexilla Regis prodeunt Inferni’
 Towards us; therefore look in front of thee,”
@@ -6595,9 +6602,10 @@ The humble plant, such it sprang up again
 
 Suddenly there where he uprooted it.
 
-Purgatorio: Canto II
+## Purgatorio: Canto II
 
-Already had the sun the horizon reached
+*Already had the sun the horizon reached*
+
 Whose circle of meridian covers o’er
 Jerusalem with its most lofty point,
 
@@ -6775,9 +6783,10 @@ As one who goes, and knows not whitherward;
 
 Nor was our own departure less in haste.
 
-Purgatorio: Canto III
+## Purgatorio: Canto III
 
-Inasmuch as the instantaneous flight
+*Inasmuch as the instantaneous flight*
+
 Had scattered them asunder o’er the plain,
 Turned to the mountain whither reason spurs us,
 
@@ -6971,7 +6980,7 @@ How thou hast seen me, and this ban beside,
 
 For those on earth can much advance us here.”
 
-Purgatorio: Canto IV
+## Purgatorio: Canto IV
 
 Whenever by delight or else by pain,
 That seizes any faculty of ours,
@@ -7159,7 +7168,7 @@ Meridian, and from the shore the night
 
 Covers already with her foot Morocco.”
 
-Purgatorio: Canto V
+## Purgatorio: Canto V
 
 I had already from those shades departed,
 And followed in the footsteps of my Guide,
@@ -7343,7 +7352,7 @@ He knoweth it, who had encircled first,
 
 Espousing me, my finger with his gem.”
 
-Purgatorio: Canto VI
+## Purgatorio: Canto VI
 
 Whene’er is broken up the game of Zara,
 He who has lost remains behind despondent,
@@ -7547,9 +7556,10 @@ Who cannot find repose upon her down,
 
 But by her tossing wardeth off her pain.
 
-Purgatorio: Canto VII
+## Purgatorio: Canto VII
 
-After the gracious and glad salutations
+*After the gracious and glad salutations*
+
 Had three and four times been reiterated,
 Sordello backward drew and said, “Who are you?”
 
@@ -7731,7 +7741,7 @@ For whose sake Alessandria and her war
 
 Make Monferrat and Canavese weep.”
 
-Purgatorio: Canto VIII
+## Purgatorio: Canto VIII
 
 ’Twas now the hour that turneth back desire
 In those who sail the sea, and melts the heart,
@@ -7919,9 +7929,10 @@ With greater nails than of another’s speech,
 
 Unless the course of justice standeth still.”
 
-Purgatorio: Canto IX
+## Purgatorio: Canto IX
 
-The concubine of old Tithonus now
+*The concubine of old Tithonus now*
+
 Gleamed white upon the eastern balcony,
 Forth from the arms of her sweet paramour;
 
@@ -8115,9 +8126,10 @@ When people singing with the organ stand;
 
 For now we hear, and now hear not, the words.
 
-Purgatorio: Canto X
+## Purgatorio: Canto X
 
-When we had crossed the threshold of the door
+*When we had crossed the threshold of the door*
+
 Which the perverted love of souls disuses,
 Because it makes the crooked way seem straight,
 
@@ -8303,7 +8315,7 @@ And he who had most patience in his looks
 
 Weeping did seem to say, “I can no more!”
 
-Purgatorio: Canto XI
+## Purgatorio: Canto XI
 
 “Our Father, thou who dwellest in the heavens,
 Not circumscribed, but from the greater love
@@ -8495,7 +8507,7 @@ Will so demean themselves that thou canst gloss it.
 
 This action has released him from those confines.”
 
-Purgatorio: Canto XII
+## Purgatorio: Canto XII
 
 Abreast, like oxen going in a yoke,
 I with that heavy-laden soul went on,
@@ -8679,7 +8691,7 @@ Upon my temples he who bore the keys;
 
 Upon beholding which my Leader smiled.
 
-Purgatorio: Canto XIII
+## Purgatorio: Canto XIII
 
 We were upon the summit of the stairs,
 Where for the second time is cut away
@@ -8887,7 +8899,7 @@ More hope than in discovering the Diana;
 
 But there still more the admirals will lose.”
 
-Purgatorio: Canto XIV
+## Purgatorio: Canto XIV
 
 “Who is this one that goes about our mountain,
 Or ever Death has given him power of flight,
@@ -9091,9 +9103,10 @@ And still your eye is looking on the ground;
 
 Whence He, who all discerns, chastises you.”
 
-Purgatorio: Canto XV
+## Purgatorio: Canto XV
 
-As much as ’twixt the close of the third hour
+*As much as ’twixt the close of the third hour*
+
 And dawn of day appeareth of that sphere
 Which aye in fashion of a child is playing,
 
@@ -9287,9 +9300,10 @@ Nor was there place to hide one’s self therefrom.
 
 This of our eyes and the pure air bereft us.
 
-Purgatorio: Canto XVI
+## Purgatorio: Canto XVI
 
-Darkness of hell, and of a night deprived
+*Darkness of hell, and of a night deprived*
+
 Of every planet under a poor sky,
 As much as may be tenebrous with cloud,
 
@@ -9483,9 +9497,10 @@ Yonder the Angel is—ere he appear.”
 
 Thus did he speak, and would no farther hear me.
 
-Purgatorio: Canto XVII
+## Purgatorio: Canto XVII
 
-Remember, Reader, if e’er in the Alps
+*Remember, Reader, if e’er in the Alps*
+
 A mist o’ertook thee, through which thou couldst see
 Not otherwise than through its membrane mole,
 
@@ -9671,9 +9686,10 @@ But how tripartite it may be described,
 
 I say not, that thou seek it for thyself.”
 
-Purgatorio: Canto XVIII
+## Purgatorio: Canto XVIII
 
-An end had put unto his reasoning
+*An end had put unto his reasoning*
+
 The lofty Teacher, and attent was looking
 Into my face, if I appeared content;
 
@@ -9867,9 +9883,10 @@ That in a reverie mine eyes I closed,
 
 And meditation into dream transmuted.
 
-Purgatorio: Canto XIX
+## Purgatorio: Canto XIX
 
-It was the hour when the diurnal heat
+*It was the hour when the diurnal heat*
+
 No more can warm the coldness of the moon,
 Vanquished by earth, or peradventure Saturn,
 
@@ -10063,7 +10080,7 @@ Malevolent may make her by example,
 
 And she alone remains to me on earth.”
 
-Purgatorio: Canto XX
+## Purgatorio: Canto XX
 
 Ill strives the will against a better will;
 Therefore, to pleasure him, against my pleasure
@@ -10267,9 +10284,10 @@ Nor of myself I there could aught perceive;
 
 So I went onward timorous and thoughtful.
 
-Purgatorio: Canto XXI
+## Purgatorio: Canto XXI
 
-The natural thirst, that ne’er is satisfied
+*The natural thirst, that ne’er is satisfied*
+
 Excepting with the water for whose grace
 The woman of Samaria besought,
 
@@ -10451,7 +10469,7 @@ When this our vanity I disremember,
 
 Treating a shadow as substantial thing.”
 
-Purgatorio: Canto XXII
+## Purgatorio: Canto XXII
 
 Already was the Angel left behind us,
 The Angel who to the sixth round had turned us,
@@ -10659,9 +10677,10 @@ Whence he is glorious, and so magnified
 
 As by the Evangel is revealed to you.”
 
-Purgatorio: Canto XXIII
+## Purgatorio: Canto XXIII
 
-The while among the verdant leaves mine eyes
+*The while among the verdant leaves mine eyes*
+
 I riveted, as he is wont to do
 Who wastes his life pursuing little birds,
 
@@ -10839,9 +10858,10 @@ That shade for whom just now shook every slope
 
 Your realm, that from itself discharges him.”
 
-Purgatorio: Canto XXIV
+## Purgatorio: Canto XXIV
 
-Nor speech the going, nor the going that
+*Nor speech the going, nor the going that*
+
 Slackened; but talking we went bravely on,
 Even as a vessel urged by a good wind.
 
@@ -11047,7 +11067,7 @@ Excites not in their breasts too great desire,
 
 Hungering at all times so far as is just.”
 
-Purgatorio: Canto XXV
+## Purgatorio: Canto XXV
 
 Now was it the ascent no hindrance brooked,
 Because the sun had his meridian circle
@@ -11235,9 +11255,10 @@ With such care is it needful, and such food,
 
 That the last wound of all should be closed up.
 
-Purgatorio: Canto XXVI
+## Purgatorio: Canto XXVI
 
-While on the brink thus one before the other
+*While on the brink thus one before the other*
+
 We went upon our way, oft the good Master
 Said: “Take thou heed! suffice it that I warn thee.”
 
@@ -11444,7 +11465,7 @@ Therefore do I implore you, by that power
 Which guides you to the summit of the stairs,
 Be mindful to assuage my suffering!
 
-Purgatorio: Canto XXVII
+## Purgatorio: Canto XXVII
 
 As when he vibrates forth his earliest rays,
 In regions where his Maker shed his blood,
@@ -11636,9 +11657,10 @@ And error were it not to do its bidding;
 
 Thee o’er thyself I therefore crown and mitre!”
 
-Purgatorio: Canto XXVIII
+## Purgatorio: Canto XXVIII
 
-Eager already to search in and round
+*Eager already to search in and round*
+
 The heavenly forest, dense and living-green,
 Which tempered to the eyes the new-born day,
 
@@ -11836,9 +11858,10 @@ They had been listening to these closing words;
 
 Then to the beautiful lady turned mine eyes.
 
-Purgatorio: Canto XXIX
+## Purgatorio: Canto XXIX
 
-Singing like unto an enamoured lady
+*Singing like unto an enamoured lady*
+
 She, with the ending of her words, continued:
 “Beati quorum tecta sunt peccata.”
 
@@ -12044,9 +12067,10 @@ Seemed to have further progress interdicted,
 
 There with the vanward ensigns standing still.
 
-Purgatorio: Canto XXX
+## Purgatorio: Canto XXX
 
-When the Septentrion of the highest heaven
+*When the Septentrion of the highest heaven*
+
 (Which never either setting knew or rising,
 Nor veil of other cloud than that of sin,
 
@@ -12240,7 +12264,7 @@ Should tasted be, withouten any scot
 
 Of penitence, that gushes forth in tears.”
 
-Purgatorio: Canto XXXI
+## Purgatorio: Canto XXXI
 
 “O thou who art beyond the sacred river,”
 Turning to me the point of her discourse,
@@ -12436,9 +12460,10 @@ Where the harmonious heaven o’ershadowed thee,
 
 When in the open air thou didst unveil?
 
-Purgatorio: Canto XXXII
+## Purgatorio: Canto XXXII
 
-So steadfast and attentive were mine eyes
+*So steadfast and attentive were mine eyes*
+
 In satisfying their decennial thirst,
 That all my other senses were extinct,
 
@@ -12652,7 +12677,7 @@ Dragged it so far, he made of that alone
 
 A shield unto the whore and the strange beast.
 
-Purgatorio: Canto XXXIII
+## Purgatorio: Canto XXXIII
 
 “Deus venerunt gentes,” alternating
 Now three, now four, melodious psalmody
@@ -13042,7 +13067,7 @@ As if on earth the living fire were quiet.”
 
 Thereat she heavenward turned again her face.
 
-Paradiso: Canto II
+## Paradiso: Canto II
 
 O Ye, who in some pretty little boat,
 Eager to listen, have been following
@@ -13242,7 +13267,7 @@ This is the formal principle that produces,
 
 According to its goodness, dark and bright.”
 
-Paradiso: Canto III
+## Paradiso: Canto III
 
 That Sun, which erst with love my bosom warmed,
 Of beauteous truth had unto me discovered,
@@ -13418,9 +13443,10 @@ That at the first my sight endured it not;
 
 And this in questioning more backward made me.
 
-Paradiso: Canto IV
+## Paradiso: Canto IV
 
-Between two viands, equally removed
+*Between two viands, equally removed*
+
 And tempting, a free man would die of hunger
 Ere either he could bring unto his teeth.
 
@@ -13610,7 +13636,7 @@ That, overcome my power, I turned my back
 
 And almost lost myself with eyes downcast.
 
-Paradiso: Canto V
+## Paradiso: Canto V
 
 “If in the heat of love I flame upon thee
 Beyond the measure that on earth is seen,
@@ -13798,7 +13824,7 @@ And thus close, close enfolded answered me
 
 In fashion as the following Canto sings.
 
-Paradiso: Canto VI
+## Paradiso: Canto VI
 
 “After that Constantine the eagle turned
 Against the course of heaven, which it had followed
@@ -13990,7 +14016,7 @@ In begging bit by bit his livelihood,
 
 Though much it laud him, it would laud him more.”
 
-Paradiso: Canto VII
+## Paradiso: Canto VII
 
 “Osanna sanctus Deus Sabaoth,
 Superillustrans claritate tua
@@ -14190,9 +14216,10 @@ How human flesh was fashioned at that time
 
 When the first parents both of them were made.”
 
-Paradiso: Canto VIII
+## Paradiso: Canto VIII
 
-The world used in its peril to believe
+*The world used in its peril to believe*
+
 That the fair Cypria delirious love
 Rayed out, in the third epicycle turning;
 
@@ -14390,9 +14417,10 @@ And make a king of him who is for sermons;
 
 Therefore your footsteps wander from the road.”
 
-Paradiso: Canto IX
+## Paradiso: Canto IX
 
-Beautiful Clemence, after that thy Charles
+*Beautiful Clemence, after that thy Charles*
+
 Had me enlightened, he narrated to me
 The treacheries his seed should undergo;
 
@@ -14582,9 +14610,10 @@ Unto the soldiery that followed Peter
 
 Shall soon be free from this adultery.”
 
-Paradiso: Canto X
+## Paradiso: Canto X
 
-Looking into his Son with all the Love
+*Looking into his Son with all the Love*
+
 Which each of them eternally breathes forth,
 The Primal and unutterable Power
 
@@ -14782,7 +14811,7 @@ And sweetness that can not be comprehended,
 
 Excepting there where joy is made eternal.
 
-Paradiso: Canto XI
+## Paradiso: Canto XI
 
 O Thou insensate care of mortal men,
 How inconclusive are the syllogisms
@@ -14970,9 +14999,10 @@ And the rebuke that lieth in the words,
 
 ‘Where well one fattens, if he strayeth not.’”
 
-Paradiso: Canto XII
+## Paradiso: Canto XII
 
-Soon as the blessed flame had taken up
+*Soon as the blessed flame had taken up*
+
 The final word to give it utterance,
 Began the holy millstone to revolve,
 
@@ -15166,9 +15196,10 @@ And the discreet discourses of Friar Thomas,
 
 And with me they have moved this company.”
 
-Paradiso: Canto XIII
+## Paradiso: Canto XIII
 
-Let him imagine, who would well conceive
+*Let him imagine, who would well conceive*
+
 What now I saw, and let him while I speak
 Retain the image as a steadfast rock,
 
@@ -15358,7 +15389,7 @@ To see them in the arbitrament divine;
 
 For one may rise, and fall the other may.”
 
-Paradiso: Canto XIV
+## Paradiso: Canto XIV
 
 From centre unto rim, from rim to centre,
 In a round vase the water moves itself,
@@ -15546,9 +15577,10 @@ For here the holy joy is not disclosed,
 
 Because ascending it becomes more pure.
 
-Paradiso: Canto XV
+## Paradiso: Canto XV
 
-A will benign, in which reveals itself
+*A will benign, in which reveals itself*
+
 Ever the love that righteously inspires,
 As in the iniquitous, cupidity,
 
@@ -15746,7 +15778,7 @@ The love of which defileth many souls,
 
 And came from martyrdom unto this peace.”
 
-Paradiso: Canto XVI
+## Paradiso: Canto XVI
 
 O thou our poor nobility of blood,
 If thou dost make the people glory in thee
@@ -15954,9 +15986,10 @@ Never upon the spear was placed reversed,
 
 Nor by division was vermilion made.”
 
-Paradiso: Canto XVII
+## Paradiso: Canto XVII
 
-As came to Clymene, to be made certain
+*As came to Clymene, to be made certain*
+
 Of that which he had heard against himself,
 He who makes fathers chary still to children,
 
@@ -16146,9 +16179,10 @@ Which has the root of it unknown and hidden,
 
 Or other reason that is not apparent.”
 
-Paradiso: Canto XVIII
+## Paradiso: Canto XVIII
 
-Now was alone rejoicing in its word
+*Now was alone rejoicing in its word*
+
 That soul beatified, and I was tasting
 My own, the bitter tempering with the sweet,
 
@@ -16330,9 +16364,10 @@ And for a dance was led to martyrdom,
 
 That I know not the Fisherman nor Paul.”
 
-Paradiso: Canto XIX
+## Paradiso: Canto XIX
 
-Appeared before me with its wings outspread
+*Appeared before me with its wings outspread*
+
 The beautiful image that in sweet fruition
 Made jubilant the interwoven souls;
 
@@ -16530,9 +16565,10 @@ Lament and rage because of their own beast,
 
 Who from the others’ flank departeth not.”
 
-Paradiso: Canto XX
+## Paradiso: Canto XX
 
-When he who all the world illuminates
+*When he who all the world illuminates*
+
 Out of our hemisphere so far descends
 That on all sides the daylight is consumed,
 
@@ -16730,9 +16766,10 @@ Even as the winking of the eyes concords,
 
 Moving unto the words their little flames.
 
-Paradiso: Canto XXI
+## Paradiso: Canto XXI
 
-Already on my Lady’s face mine eyes
+*Already on my Lady’s face mine eyes*
+
 Again were fastened, and with these my mind,
 And from all other purpose was withdrawn;
 
@@ -16922,9 +16959,10 @@ It here could find no parallel, nor I
 
 Distinguished it, the thunder so o’ercame me.
 
-Paradiso: Canto XXII
+## Paradiso: Canto XXII
 
-Oppressed with stupor, I unto my guide
+*Oppressed with stupor, I unto my guide*
+
 Turned like a little child who always runs
 For refuge there where he confideth most;
 
@@ -17130,7 +17168,7 @@ Was all apparent made from hill to harbour!
 
 Then to the beauteous eyes mine eyes I turned.
 
-Paradiso: Canto XXIII
+## Paradiso: Canto XXIII
 
 Even as a bird, ’mid the beloved leaves,
 Quiet upon the nest of her sweet brood
@@ -17318,7 +17356,7 @@ Both with the ancient council and the new,
 
 He who doth keep the keys of such a glory.
 
-Paradiso: Canto XXIV
+## Paradiso: Canto XXIV
 
 “O company elect to the great supper
 Of the Lamb benedight, who feedeth you
@@ -17526,7 +17564,7 @@ The apostolic light, at whose command
 
 I spoken had, in speaking I so pleased him.
 
-Paradiso: Canto XXV
+## Paradiso: Canto XXV
 
 If e’er it happen that the Poem Sacred,
 To which both heaven and earth have set their hand,
@@ -17714,7 +17752,7 @@ That her I could not see, although I was
 
 Close at her side and in the Happy World!
 
-Paradiso: Canto XXVI
+## Paradiso: Canto XXVI
 
 While I was doubting for my vision quenched,
 Out of the flame refulgent that had quenched it
@@ -17906,7 +17944,7 @@ From the first hour to that which is the second,
 
 As the sun changes quadrant, to the sixth.”
 
-Paradiso: Canto XXVII
+## Paradiso: Canto XXVII
 
 “Glory be to the Father, to the Son,
 And Holy Ghost!” all Paradise began,
@@ -18106,9 +18144,10 @@ So that the fleet shall run its course direct,
 
 And the true fruit shall follow on the flower.”
 
-Paradiso: Canto XXVIII
+## Paradiso: Canto XXVIII
 
-After the truth against the present life
+*After the truth against the present life*
+
 Of miserable mortals was unfolded
 By her who doth imparadise my mind,
 
@@ -18294,7 +18333,7 @@ For he who saw it here revealed it to him,
 
 With much more of the truth about these circles.”
 
-Paradiso: Canto XXIX
+## Paradiso: Canto XXIX
 
 At what time both the children of Latona,
 Surmounted by the Ram and by the Scales,
@@ -18490,9 +18529,10 @@ Itself so many mirrors, where ’tis broken,
 
 One in itself remaining as before.”
 
-Paradiso: Canto XXX
+## Paradiso: Canto XXX
 
-Perchance six thousand miles remote from us
+*Perchance six thousand miles remote from us*
+
 Is glowing the sixth hour, and now this world
 Inclines its shadow almost to a level,
 
@@ -18690,9 +18730,10 @@ Where Simon Magus is for his deserts,
 
 And make him of Alagna lower go!”
 
-Paradiso: Canto XXXI
+## Paradiso: Canto XXXI
 
-In fashion then as of a snow-white rose
+*In fashion then as of a snow-white rose*
+
 Displayed itself to me the saintly host,
 Whom Christ in his own blood had made his bride,
 
@@ -18882,9 +18923,10 @@ His own with such affection turned to her
 
 That it made mine more ardent to behold.
 
-Paradiso: Canto XXXII
+## Paradiso: Canto XXXII
 
-Absorbed in his delight, that contemplator
+*Absorbed in his delight, that contemplator*
+
 Assumed the willing office of a teacher,
 And gave beginning to these holy words:
 
@@ -19086,7 +19128,7 @@ That from my words thy heart turn not aside.”
 
 And he began this holy orison.
 
-Paradiso: Canto XXXIII
+## Paradiso: Canto XXXIII
 
 “Thou Virgin Mother, daughter of thy Son,
 Humble and high beyond all other creature,

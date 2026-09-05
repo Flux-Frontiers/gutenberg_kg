@@ -4,9 +4,11 @@
 
 ---
 
-_BOHN'S CLASSICAL LIBRARY_
-
-### PLUTARCH'S MORALS GEORGE BELL & SONS, LONDON: YORK STREET, COVENT GARDEN NEW YORK: 66, FIFTH AVENUE, AND BOMBAY: 53, ESILANADE ROAD CAMBRIDGE: DEIGHTON, BELL & CO.
+GEORGE BELL & SONS,
+LONDON: YORK STREET, COVENT GARDEN
+NEW YORK: 66, FIFTH AVENUE, AND
+BOMBAY: 53, ESILANADE ROAD
+CAMBRIDGE: DEIGHTON, BELL & CO.
 
 ### PLUTARCH'S MORALS ETHICAL ESSAYS
 
@@ -36,7 +38,7 @@ CHANCERY LANE.
 
 PREFACE.
 
-Plutarch, who was born at Chæronea in Boeotia, probably about A.D. 50,
+Plutarch, who was born at Chaeronea in Boeotia, probably about A.D. 50,
 and was a contemporary of Tacitus and Pliny, has written two works still
 extant, the well-known _Lives_, and the less-known _Moralia_. The
 _Lives_ have often been translated, and have always been a popular work.
@@ -89,7 +91,7 @@ of him by Wyttenbach is perhaps substantially correct. "In nullo
 auctore habitabat; vagabatur per omnes: nec apud quemquam tamdiu
 divertebat, ut in paulo interiorem ejus consuetudinem se insinuaret." I
 have also had constantly before me the Didot Edition of the _Moralia_,
-edited by Frederic Dübner.
+edited by Frederic Duebner.
 
 Let any reader who wishes to know more about Plutarch, consult the
 article on Plutarch, in the Ninth Edition of the _Encyclopaedia
@@ -114,14 +116,16 @@ Britannica_, Ninth Edition.
 volume, p. 180, and also note to p. 288. Richard Baxter
 again is always quoting the _Moralia_.
 
+INDEX                                                         401
+
 PLUTARCH'S MORALS.
 
 ON EDUCATION.
 
-§ I. Come let us consider what one might say on the education of free
+Sec. I. Come let us consider what one might say on the education of free
 children, and by what training they would become good citizens.
 
-§ II. It is perhaps best to begin with birth: I would therefore warn
+Sec. II. It is perhaps best to begin with birth: I would therefore warn
 those who desire to be fathers of notable sons, not to form connections
 with any kind of women, such as courtesans or mistresses: for those who
 either on the father or mother's side are ill-born have the disgrace of
@@ -140,11 +144,11 @@ son of Themistocles, that he often used to say to various people "that
 he could do what he pleased with the Athenian people, for what he wished
 his mother wished, and what she wished Themistocles wished, and what
 Themistocles wished all the Athenians wished." All praise also ought we
-to bestow on the Lacedæmonians for their loftiness of soul in fining
+to bestow on the Lacedaemonians for their loftiness of soul in fining
 their king Archidamus for venturing to marry a small woman, for they
 charged him with intending to furnish them not with kings but kinglets.
 
-§ III. Next must we mention, what was not overlooked even by those who
+Sec. III. Next must we mention, what was not overlooked even by those who
 handled this subject before us, that those who approach their wives for
 procreation must do so either without having drunk any wine or at least
 very little. For those children, that their parents begot in drink, are
@@ -153,7 +157,7 @@ seeing a youth out of his mind and crazy, said, "Young man, your father
 was drunk when he begot you." Let this hint serve as to procreation: now
 let us discuss education.
 
-§ IV. To speak generally, what we are wont to say about the arts and
+Sec. IV. To speak generally, what we are wont to say about the arts and
 sciences is also true of moral excellence, for to its perfect
 development three things must meet together, natural ability, theory,
 and practice. By theory I mean training, and by practice working at
@@ -202,21 +206,21 @@ the line of argument further? For the Greek name for moral virtue is
 only habit: and if anyone defines moral virtues as habitual virtues, he
 will not be beside the mark. But I will employ only one more
 illustration, and dwell no longer on this topic. Lycurgus, the
-Lacedæmonian legislator, took two puppies of the same parents, and
+Lacedaemonian legislator, took two puppies of the same parents, and
 brought them up in an entirely different way: the one he pampered and
 cosseted up, while he taught the other to hunt and be a retriever. Then
-on one occasion, when the Lacedæmonians were convened in assembly, he
-said, "Mighty, O Lacedæmonians, is the influence on moral excellence of
+on one occasion, when the Lacedaemonians were convened in assembly, he
+said, "Mighty, O Lacedaemonians, is the influence on moral excellence of
 habit, and education, and training, and modes of life, as I will prove
 to you at once." So saying he produced the two puppies, and set before
 them a platter and a hare: the one darted on the hare, while the other
-made for the platter. And when the Lacedæmonians could not guess what
+made for the platter. And when the Lacedaemonians could not guess what
 his meaning was, or with what intent he had produced the puppies, he
 said, "These puppies are of the same parents, but by virtue of a
 different bringing up the one is pampered, and the other a good hound."
 Let so much suffice for habit and modes of life.
 
-§ V. The next point to discuss will be nutrition. In my opinion mothers
+Sec. V. The next point to discuss will be nutrition. In my opinion mothers
 ought to nurse and suckle their own children. For they will bring them
 up with more sympathy and care, if they love them so intimately and, as
 the proverb puts it, "from their first growing their nails."[8] Whereas
@@ -249,14 +253,14 @@ be full of folly or corruption.[9] Phocylides the poet also seems to
 give admirable advice when he says, "We must teach good habits while the
 pupil is still a boy."
 
-§VI. Attention also must be given to this point, that the lads that are
+Sec.VI. Attention also must be given to this point, that the lads that are
 to wait upon and be with young people must be first and foremost of good
 morals, and able to speak Greek distinctly and idiomatically, that they
 may not by contact with foreigners of loose morals contract any of their
 viciousness. For as those who are fond of quoting proverbs say not
 amiss, "If you live with a lame man, you will learn to halt."[10]
 
-§VII. Next, when our boys are old enough to be put into the hands of
+Sec.VII. Next, when our boys are old enough to be put into the hands of
 tutors,[11] great care must be taken that we do not hand them over to
 slaves, or foreigners, or flighty persons. For what happens nowadays in
 many cases is highly ridiculous: good slaves are made farmers, or
@@ -296,7 +300,7 @@ children, practising a vile economy at the expense of their children's
 ignorance. _Apropos_ of this, Aristippus on one occasion rebuked an
 empty-headed parent neatly and wittily. For being asked how much money a
 parent ought to pay for his son's education, he answered, "A thousand
-drachmæ." And he replying, "Hercules, what a price! I could buy a slave
+drachmae." And he replying, "Hercules, what a price! I could buy a slave
 for as much;" Aristippus answered, "You shall have two slaves then, your
 son and the slave you buy."[13] And is it not altogether strange that
 you accustom your son to take his food in his right hand, and chide him
@@ -319,7 +323,7 @@ precept of Diogenes, whose advice sounds rather low, but is really of
 excellent moral intent,[15] "Go into a brothel, my lad, that you may see
 the little difference between vice and virtue."
 
-§ VIII. I say, then, to speak comprehensively (and I might be justly
+Sec. VIII. I say, then, to speak comprehensively (and I might be justly
 considered in so saying to speak as an oracle, not to be delivering a
 mere precept), that a good education and sound bringing-up is of the
 first and middle and last importance; and I declare it to be most
@@ -354,7 +358,7 @@ conception as to the happiness of the King of Persia, replied, "I do not
 know his position in regard to virtue and education: for happiness lies
 in these, and not in adventitious advantages."
 
-§ IX. And as I advise parents to think nothing more important than the
+Sec. IX. And as I advise parents to think nothing more important than the
 education of their children, so I maintain that it must be a sound and
 healthy education, and that our sons must be kept as far as possible
 from vulgar twaddle. For what pleases the vulgar displeases the wise. I
@@ -415,7 +419,7 @@ certain not to please long. For to harp on one string is always tiresome
 and brings satiety; whereas variety is pleasant always whether to the
 ear or eye.
 
-§ X. Next our freeborn lad ought to go in for a course of what is called
+Sec. X. Next our freeborn lad ought to go in for a course of what is called
 general knowledge, but a smattering of this will be sufficient, a taste
 as it were (for perfect knowledge of all subjects would be impossible);
 but he must seriously cultivate philosophy. I borrow an illustration to
@@ -461,7 +465,7 @@ make a collection of them, as is usual in agriculture. For the use of
 books is an instrument in education, and it is profitable in learning to
 go to the fountain head.
 
-§ XI. Exercise also ought not to be neglected, but we ought to send our
+Sec. XI. Exercise also ought not to be neglected, but we ought to send our
 boys to the master of the gymnasium to train them duly, partly with a
 view to carrying the body well, partly with a view to strength. For good
 habit of body in boys is the foundation of a good old age. For as in
@@ -490,7 +494,7 @@ inserted those matters into my discourse here, that I might hereafter
 confine myself to all that appertains to the right education of the
 young.
 
-§ XII. And this I say that we ought to try to draw our boys to good
+Sec. XII. And this I say that we ought to try to draw our boys to good
 pursuits by entreaties and exhortation, but certainly not by blows or
 abusive language. For that seems to be more fitting for slaves than the
 freeborn. For slaves try to shirk and avoid their work, partly because
@@ -504,7 +508,7 @@ the breast to comfort them. But we must not puff them up and make them
 conceited with excessive praise, for that will make them vain and give
 themselves airs.
 
-§ XIII. And I have ere now seen some fathers, whose excessive love for
+Sec. XIII. And I have ere now seen some fathers, whose excessive love for
 their children has turned into hatred. My meaning I will endeavour to
 make clearer by illustration. While they are in too great a hurry to
 make their sons take the lead in everything, they lay too much work upon
@@ -543,7 +547,7 @@ good for education, but is also a great aid in the business of life. For
 the remembrance of past actions gives a good model how to deal wisely in
 future ones.
 
-§ XIV. We must also keep our sons from filthy language. For, as
+Sec. XIV. We must also keep our sons from filthy language. For, as
 Democritus says, Language is the shadow of action. They must also be
 taught to be affable and courteous. For as want of affability is justly
 hateful, so boys will not be disagreeable to those they associate with,
@@ -559,7 +563,7 @@ even more important. That is, that life must be spent without luxury,
 the tongue must be under control, so must the temper and the hands. All
 this is of extreme importance, as I will show by examples. To begin with
 the last case, some who have put their hands to unjust gains, have lost
-all the fruits of their former life, as the Lacedæmonian Gylippus,[28]
+all the fruits of their former life, as the Lacedaemonian Gylippus,[28]
 who was exiled from Sparta for embezzling the public money. To be able
 to govern the temper also argues a wise man. For Socrates, when a very
 impudent and disgusting young fellow kicked him on one occasion, seeing
@@ -619,7 +623,7 @@ head taken off. Our boys must also be taught to speak the truth as a
 most sacred duty; for to lie is servile, and most hateful in all men,
 hardly to be pardoned even in poor slaves.
 
-§ XV. Thus much have I said about the good conduct and self-control of
+Sec. XV. Thus much have I said about the good conduct and self-control of
 boys without any doubt or hesitation: but as to what I am now going to
 say I am doubtful and undecided, and like a person weighed in the scales
 against exactly his weight, and feel great hesitation as to whether I
@@ -629,7 +633,7 @@ associate and be with them, or on the contrary, debar them from their
 company and scare them off. For when I look at fathers self-opinionated
 sour and austere, who think their sons having lovers a disgrace not to
 be borne, I am rather afraid of recommending the practice. But when, on
-the other hand, I think of Socrates, Xenophon, Æschines, Cebes, and all
+the other hand, I think of Socrates, Xenophon, AEschines, Cebes, and all
 the company of those men who have approved of male loves, and who have
 introduced their minions to learning, to high positions in the State,
 and to good morals, I change my opinion, and am moved to emulate those
@@ -641,9 +645,9 @@ ought to be permitted to kiss any handsome boy they like."[33] Those
 then that seek only carnal enjoyment must be kept off, but those that
 love the soul must be encouraged. And while the loves common at Thebes
 and Elis, and the so-called rape at Crete, must be avoided, the loves of
-Athens and Lacedæmon should be emulated.
+Athens and Lacedaemon should be emulated.
 
-§ XVI. As to this matter, therefore, let every parent follow his
+Sec. XVI. As to this matter, therefore, let every parent follow his
 inclination. And now, as I have spoken about the good and decent
 behaviour of boys, I shall change my subject and speak a little about
 youths. For I have often censured the introducers of bad habits, who
@@ -667,7 +671,7 @@ praise and good report. For these are, as it were, the two elements of
 virtue, hope of honour, and fear of punishment; the former inciting to
 good practices, the latter deterring from bad.
 
-§ XVII. We ought, at all hazards, to keep our boys also from association
+Sec. XVII. We ought, at all hazards, to keep our boys also from association
 with bad men, for they will catch some of their villany. This was the
 meaning of Pythagoras' enigmatical precepts, which I shall quote and
 explain, as they give no slight momentum towards the acquisition of
@@ -715,7 +719,7 @@ from his house this abominable race. He must also be on his guard
 against the viciousness of his sons' schoolfellows, for they are quite
 sufficient to corrupt the best morals.
 
-§ XVIII. What I have said hitherto is _apropos_ to my subject: I will
+Sec. XVIII. What I have said hitherto is _apropos_ to my subject: I will
 now speak a word to the men. Parents must not be over harsh and rough in
 their natures, but must often forgive their sons' offences, remembering
 that they themselves were once young. And just as doctors by infusing a
@@ -736,7 +740,7 @@ slave? do not be angry. Did he take a yoke of oxen from the field, did
 he come home smelling of yesterday's debauch? wink at it. Is he scented
 like a perfume shop? say nothing. Thus frisky youth gets broken in.[40]
 
-§ XIX. Those of our sons who are given to pleasure and pay little heed
+Sec. XIX. Those of our sons who are given to pleasure and pay little heed
 to rebuke, we must endeavour to marry, for marriage is the surest
 restraint upon youth. And we must marry our sons to wives not much
 richer or better born, for the proverb is a sound one, "Marry in your
@@ -744,7 +748,7 @@ own walk of life."[41] For those who marry wives superior to themselves
 in rank are not so much the husbands of their wives as unawares slaves
 to their dowries.[42]
 
-§ XX. I shall add a few remarks, and then bring my subject to a close.
+Sec. XX. I shall add a few remarks, and then bring my subject to a close.
 Before all things fathers must, by a good behaviour, set a good example
 to their sons, that, looking at their lives as a mirror, they may turn
 away from bad deeds and words. For those fathers who censure their
@@ -787,7 +791,7 @@ earliest childhood. See Erasmus, "Adagia."
 [10] See Erasmus, "Adagia."
 
 [11] It is difficult to know how to render the word
-[Greek: paidagôgos] in English. He was the slave who
+[Greek: paidagogos] in English. He was the slave who
 took the boy to school, and generally looked after him
 from his seventh year upward. Tutor or governor seems
 the best rendering. He had great power over the boy
@@ -813,9 +817,9 @@ all ages smack of this vice."
 
 [17] "Hippolytus," 986-989.
 
-[18] Cf. Plato, "Cratylus," p. 257, E. [Greek: ô pai
+[18] Cf. Plato, "Cratylus," p. 257, E. [Greek: o pai
 Hipponikou Hermogenes, palaia paroimia, oti chalepa ta
-kala estin opê echei mathein]. So Horace, "Sat." i. ix.
+kala estin ope echei mathein]. So Horace, "Sat." i. ix.
 59, 60, "Nil sine magno Vita labore dedit mortalibus."
 
 [19] "Midias," p. 411, C.
@@ -823,7 +827,7 @@ kala estin opê echei mathein]. So Horace, "Sat." i. ix.
 [20] _i.e._, occasionally and sparingly.
 
 [21] Diogenes Laertius assigns the remark to Aristippus,
-while Stobæus fathers it on Aristo.
+while Stobaeus fathers it on Aristo.
 
 [22] A favourite thought with the ancients. Compare
 Isocrates, "Admonitio ad Demonicum," p. 18; and
@@ -836,7 +840,7 @@ generally, as in Xenophon, "Oeconom." xii. 20; and
 Aristotle, "Oeconom." i. 6.
 
 [25] "Works and Days," 361, 362. The lines were
-favourite ones with our author. He quotes them again, §
+favourite ones with our author. He quotes them again, Sec.
 3, of "How one may be aware of one's Progress in
 Virtue."
 
@@ -852,7 +856,7 @@ taken.
 
 [30] I have softened his phrase. His actual words were
 very coarse, and would naturally be resented by Ptolemy.
-See Athenæus, 621, A.
+See Athenaeus, 621, A.
 
 [31] See "Iliad," v. 83; xvi. 334; xx, 477.
 
@@ -871,8 +875,8 @@ iv. 105-129.
 [37] From Simonides. Cf. Seneca, "Epist." xlix. "Punctum
 est quod vivimus, et adhuc puncto minus."
 
-[38] Reading with Wyttenbach, [Greek: hôs ek logikês
-technês.]
+[38] Reading with Wyttenbach, [Greek: hos ek logikes
+technes.]
 
 [39] Like _Carker_ in Dombey.
 
@@ -884,11 +888,11 @@ Pittacus.
 
 [42] Compare Plautus, "Asinaria," i. l. 74. "Argentum
 accepi: dote imperum vendidi." Compare also our author,
-"Whether Vice is sufficient to cause Unhappiness," § i.
+"Whether Vice is sufficient to cause Unhappiness," Sec. i.
 
 [43] Wyttenbach thinks this treatise is not Plutarch's.
 He bases his conclusion partly on external, partly on
-internal, grounds. It is not quoted by Stobæus, or any
+internal, grounds. It is not quoted by Stobaeus, or any
 of the ancients, before the fourteenth century. And its
 style is not Plutarch's; it has many words foreign to
 Plutarch: it has "nescio quid novum ac peregrinum, ab
@@ -897,7 +901,7 @@ inane." Certainly its matter is superior to its manner.
 
 ON LOVE TO ONE'S OFFSPRING.
 
-§ I. Appeals to foreign law-courts were first devised among the Greeks
+Sec. I. Appeals to foreign law-courts were first devised among the Greeks
 through mistrust of one another's justice, for they looked on justice as
 a necessity not indigenous among them. Is it not on much the same
 principle that the philosophers, in regard to some of their questions,
@@ -927,7 +931,7 @@ going straight under bit and bridle. But in man reason, which is
 absolute master, inventing different modes and fashions of life, has
 left no plain or evident trace of nature.[44]
 
-§ II. Consider in their marriages how much the animals follow nature.
+Sec. II. Consider in their marriages how much the animals follow nature.
 For they do not wait for any legislation about bachelor or late-married,
 like the citizens of Lycurgus and Solon, nor do they fear penalties for
 childlessness, nor are they anxious for the _jus trium liberorum_,[45]
@@ -999,7 +1003,7 @@ Why it would be disgraceful, great God, that birth and travail and
 procreation should be gratis and mere nature among the beasts, while
 among mankind they should be merely mercenary transactions!
 
-§ III. But such a statement is not true or worthy of credit. For as
+Sec. III. But such a statement is not true or worthy of credit. For as
 nature, in wild growths, such as wild vines, wild figs, or wild olives,
 makes the fruit imperfect and inferior to the fruit of cultivated trees,
 so has she given to the brutes an imperfect affection for their kind,
@@ -1044,13 +1048,13 @@ alone have their breasts high on their bodies, that they can lift up
 their babes to kiss, to dandle, and to fondle: seeing that their bearing
 and rearing children comes not from necessity but love.
 
-§ IV. Refer the question to the ancient inhabitants of the earth, to the
+Sec. IV. Refer the question to the ancient inhabitants of the earth, to the
 first mothers and fathers. There was no law ordering them to have
 families, no expectation of advantage or return to be got out of them. I
 should rather say that mothers would be likely to be hostile and bear
 malice to their babes, owing to the great danger and pains of travail.
 And women say the lines, "When the sharp pangs of travail seize on the
-pregnant woman, then come to her aid the Ilithyiæ, who help women in
+pregnant woman, then come to her aid the Ilithyiae, who help women in
 hard childbirth, those daughters of Hera, goddesses of travail,"[55]
 were not written by Homer, but by some Homerid who had been a mother, or
 was even then in the throes of travail, and who vividly felt the sharp
@@ -1100,7 +1104,7 @@ unloved and insignificant. Whence we see that there is no power or
 advantage to be got from children, but that the love of them, alike in
 mankind as among the animals, proceeds entirely from nature.
 
-§ V. What if this natural affection, like many other virtues, is
+Sec. V. What if this natural affection, like many other virtues, is
 obscured by badness, as a wilderness chokes a garden? Are we to say that
 man does not love himself by nature, because many cut their throats or
 throw themselves down precipices? Did not Oedipus put out his eyes? And
@@ -1136,12 +1140,12 @@ by the ancient writers.
 [47] A quotation from Simonides.
 
 [48] We are not bound to swallow all the ancients tell
-us. Credat Judæus Apella!
+us. Credat Judaeus Apella!
 
 [49] "Iliad," xvii. 134-136.
 
 [50] "Iliad," ix. 324. Quoted again in "How one may be
-aware of one's Progress in Virtue," § 8.
+aware of one's Progress in Virtue," Sec. 8.
 
 [51] "Odyssey," xx. 14, 15.
 
@@ -1168,7 +1172,7 @@ inevitable. _Verbum sat sapienti._
 [59] See Cicero "Tuscul." i. 34.
 
 [60] Euripides, "Alcestis," 1159; "Helena," 1688;
-"Andromache," 1284; "Bacchæ," 1388.
+"Andromache," 1284; "Bacchae," 1388.
 
 [61] The discourse breaks off abruptly. It is directed
 against the Epicureans. It throws ridicule on appealing
@@ -1179,7 +1183,7 @@ ON LOVE.
 
 FLAVIANUS AND AUTOBULUS, THE OPENERS OF THE DIALOGUE,
 ARE BROTHERS. THE OTHER SPEAKERS ARE THEIR FATHER,
-DAPHNÆUS, PROTOGENES, PISIAS, AND OTHERS.
+DAPHNAEUS, PROTOGENES, PISIAS, AND OTHERS.
 
 I. _Flavianus._--You say that it was on Mount Helicon, Autobulus, that
 those conversations took place about Love, which you are now about to
@@ -1187,7 +1191,7 @@ narrate to us at our request, as you either wrote them down, or at least
 remember them from frequently asking our father about them.
 
 _Autobulus._--It was on Mount Helicon among the Muses, Flavianus, when
-the people of Thespiæ were celebrating their Festival to the God of
+the people of Thespiae were celebrating their Festival to the God of
 Love, which they celebrate very magnificently and splendidly every five
 years to that God, as also to the Muses.
 
@@ -1208,13 +1212,13 @@ chorus for the action and a stage, nothing else is wanting to the drama,
 let us only pray to the Mother of the Muses to be propitious, and give
 me memory for my narrative.
 
-§ II. Long ago our father, before we were born, having lately married
+Sec. II. Long ago our father, before we were born, having lately married
 our mother, had gone to sacrifice to the God of Love, in consequence of
 a dispute and variance that broke out among their parents, and took our
 mother to the Festival, for she also had her part in the vow and
 sacrifice. Some of their intimate friends journeyed with them from the
-town where they lived, and when they got to Thespiæ they found there
-Daphnæus the son of Archidamus, a lover of Lysandra the daughter of
+town where they lived, and when they got to Thespiae they found there
+Daphnaeus the son of Archidamus, a lover of Lysandra the daughter of
 Simo, and of all her suitors the one who stood highest in her favour,
 and Soclarus the son of Aristio, who had come from Tithorea. And there
 were there also Protogenes of Tarsus, and Zeuxippus from Sparta,
@@ -1228,7 +1232,7 @@ hostile country, and removed to Mount Helicon, and bivouacked there with
 the Muses. In the morning they were visited by Anthemion and Pisias,
 both men of good repute, and very great friends of Baccho, who was
 surnamed the Handsome, and also rivals of one another somewhat through
-their affection for him. Now you must know that there was at Thespiæ a
+their affection for him. Now you must know that there was at Thespiae a
 lady called Ismenodora, famous for her wealth and good family, and of
 uncommon good repute for her virtuous life: for she had been a widow
 some time without a breath of slander lighting upon her, though she was
@@ -1257,12 +1261,12 @@ out his friend from house and marriage and wealth, merely that he might
 enjoy the sight of him as long as possible naked and in all his virgin
 bloom at the wrestling-schools.
 
-§ III. To avoid getting estranged by provoking one another on the
+Sec. III. To avoid getting estranged by provoking one another on the
 question, they came and chose our father and his companions as umpires
 on the matter. And of the other friends, as if by concerted arrangement,
-Daphnæus espoused the view of Anthemion, and Protogenes the view of
+Daphnaeus espoused the view of Anthemion, and Protogenes the view of
 Pisias. And Protogenes inveighing somewhat too freely against
-Ismenodora, Daphnæus took him up and said, "Hercules, what are we not to
+Ismenodora, Daphnaeus took him up and said, "Hercules, what are we not to
 expect, if Protogenes is going to be hostile to love? he whose whole
 life, whether in work or at play, has been devoted to love, in
 forgetfulness of letters, in forgetfulness of his country, not like
@@ -1272,10 +1276,10 @@ sea from Cilicia to Athens, merely to gaze at and saunter about with
 handsome boys. For that was the original reason, doubtless, of
 Protogenes' journey abroad."
 
-§ IV. And some laughter ensuing, Protogenes replied, "Do I really seem
+Sec. IV. And some laughter ensuing, Protogenes replied, "Do I really seem
 to you now to be hostile to love, and not to be fighting for love
 against ungovernable lust, which with most disgraceful acts and emotions
-assumes the most honourable of titles?" Whereupon Daphnæus, "Do you call
+assumes the most honourable of titles?" Whereupon Daphnaeus, "Do you call
 the marriage and union of man and woman most disgraceful, than which no
 holier tie exists nor ever did?" Protogenes replied, "Why, as all this
 is necessary for the human race to continue, our legislators do not act
@@ -1323,12 +1327,12 @@ is noble and refined, whereas pleasure is vulgar and illiberal.
 Therefore, for a slave to love boys is neither liberal or refined: for
 it is merely the love of copulation, as the love of women."
 
-§ V. Protogenes was intending to go on at greater length, when Daphnæus
+Sec. V. Protogenes was intending to go on at greater length, when Daphnaeus
 stopped him and said, "You do well, by Zeus, to mention Solon, and we
 too may use him as the test of an amorous man. Does he not define such a
 one in the lines, 'As long as you love boys in the glorious flower of
 their youth for their kisses and embraces.' And add to Solon the lines
-of Æschylus, 'You did not disdain the honour of the thighs, O thankless
+of AEschylus, 'You did not disdain the honour of the thighs, O thankless
 one after all my frequent kisses.'[68] For some laugh at them if they
 bid lovers, like sacrificing priests and seers, to inspect thighs and
 loins; but I think this a mighty argument in behalf of the love of
@@ -1336,7 +1340,7 @@ women. For if the unnatural commerce with males does not take away or
 mar the amorous propensity, much more likely is it that the natural love
 of women will end in friendship after the favour. For, Protogenes, the
 yielding of the female to the male was called by the ancients the
-favour. Thus Pindar says Hephæstus was the son of Hera 'without any
+favour. Thus Pindar says Hephaestus was the son of Hera 'without any
 favours':[69] and Sappho, addressing a girl not yet ripe for marriage,
 says to her, 'You seemed to me a little girl, too young for the favour.'
 And someone asks Hercules, 'Did you obtain the girl's favour by force or
@@ -1378,8 +1382,8 @@ Love without Aphrodite, as there is drunkenness without wine in drinks
 made from figs and barley, the disturbing it will be fruitless and
 without effect, and surfeiting and disgusting."
 
-§ VI. At the conclusion of this speech, it was clear that Pisias was
-vexed and indignant with Daphnæus; and after a moment's silence he
+Sec. VI. At the conclusion of this speech, it was clear that Pisias was
+vexed and indignant with Daphnaeus; and after a moment's silence he
 began: "O Hercules! what levity and audacity for men to state that they
 are tied to women as dogs to bitches, and to banish the god of Love from
 the gymnasiums and public walks, and light of day and open intercourse,
@@ -1390,12 +1394,12 @@ took Protogenes by the hand, and said to him:
 
 "'This word of yours rouses the Argive host,'
 
-and of a verity Pisias makes us to side with Daphnæus by his extravagant
+and of a verity Pisias makes us to side with Daphnaeus by his extravagant
 language, charging marriage with being a loveless intercourse, and one
 that has no participation in divine friendship, although we can see that
 it is an intercourse, if erotic persuasion and favour fail, that cannot
 be restrained by shame and fear as by bit and bridle." Thereupon Pisias
-said, "I care little about his arguments; but I see that Daphnæus is in
+said, "I care little about his arguments; but I see that Daphnaeus is in
 the same condition as brass: for, just as it is not worked upon so much
 by the agency of fire as by the molten and liquid brass fused with it,
 so is he not so much captivated by the beauty of Lysandra as by his
@@ -1405,7 +1409,7 @@ in the flame altogether. But I see, what Anthemion would very much like,
 that I am offending the Court, so I stop." "You amuse us," said
 Anthemion: "but you ought from the first to have spoken to the point."
 
-§ VII. "I say then," continued Pisias, "and give it out boldly, as far
+Sec. VII. "I say then," continued Pisias, "and give it out boldly, as far
 as I am concerned, let every woman have a lover; but we ought to guard
 against giving the wealth of Ismenodora to Baccho, lest, if we involve
 him in so much grandeur and magnificence, we unwittingly lose him in it,
@@ -1421,7 +1425,7 @@ them luxury, caprice, and vanity, by which they are often elated and fly
 away altogether: but if they remain, it would be better to be bound by
 golden fetters, as in Ethiopia, than to a woman's wealth."
 
-§ VIII. Here Protogenes put in, "You say nothing about the risk we run
+Sec. VIII. Here Protogenes put in, "You say nothing about the risk we run
 of unseasonably and ridiculously reversing the well-known advice of
 Hesiod:
 
@@ -1442,7 +1446,7 @@ sensible man would be disgusted and flee from a woman who took the
 initiative in love, far less would he be likely to marry her after such
 a barefaced wooing."
 
-§ IX. When Protogenes had done speaking, my father said, "Do you see,
+Sec. IX. When Protogenes had done speaking, my father said, "Do you see,
 Anthemion, that they force us to intervene again, who have no objection
 to dance in the retinue of conjugal Love?" "I do," said Anthemion, "but
 pray defend Love at some length, as you are on his side, and moreover
@@ -1522,7 +1526,7 @@ inequality of age in marriages, seeing that he gave his own wife Megara
 in marriage to Iolaus, though he was only sixteen and she
 three-and-thirty."[79]
 
-§ X. As the conversation was going on, our father said that a friend of
+Sec. X. As the conversation was going on, our father said that a friend of
 Pisias came galloping up from the town to report an act of marvellous
 audacity. Ismenodora, it appears, thinking Baccho had no personal
 dislike to the match, but only stood in awe of his friends who tried to
@@ -1540,15 +1544,15 @@ the doors. And the women inside at once divested him of his cloak and
 put on him a bridal robe; and the servants ran about the town and put
 olive wreaths and laurel garlands at the doors of Baccho's house as well
 as Ismenodora's, and a flute-girl went up and down the street playing
-and singing the wedding-song. And some of the inhabitants of Thespiæ and
+and singing the wedding-song. And some of the inhabitants of Thespiae and
 the strangers laughed, others were indignant and tried to make the
 superintendents of the gymnasium move in the matter, for they have great
-power in Thespiæ over the youths, and pay great attention to their
+power in Thespiae over the youths, and pay great attention to their
 actions. And now there was no more talk about the sports, but everyone
 left the theatre for the neighbourhood of Ismenodora's house, and there
 stood in groups talking and disputing about what had happened.
 
-§ XI. Now when Pisias' friend had come up like an _aide-de-camp_ in war,
+Sec. XI. Now when Pisias' friend had come up like an _aide-de-camp_ in war,
 "bloody with spurring, fiery red with haste," to report this news that
 Ismenodora had seized Baccho, my father said that Zeuxippus smiled, and
 being a great lover of Euripides repeated the line,
@@ -1572,7 +1576,7 @@ and stratagem on the part of a wily young man to escape from the
 clutches of his lovers, and fly of his own volition to the arms of a
 rich and handsome widow?" "Pray don't say so, Soclarus," said Anthemion,
 "pray don't entertain any such suspicions of Baccho, for even if he were
-not by nature most simple and naïve, he would not have concealed the
+not by nature most simple and naive, he would not have concealed the
 matter from me to whom he divulges all his secrets, especially as he
 knows that I have always been very anxious he should marry Ismenodora.
 But as Heraclitus says truly, It is more difficult to control love than
@@ -1582,7 +1586,7 @@ than Ismenodora? When did ever any ugly rumour attach itself to her?
 When did ever any breath of suspicion sully her house? Some divine
 inspiration, beyond human calculation, seems now to have possessed her."
 
-§ XII. Then Pemptides laughed and said, "Of course you know that there
+Sec. XII. Then Pemptides laughed and said, "Of course you know that there
 is a certain disease of the body called the sacred disease.[83] It is no
 wonder, therefore, if some call the greatest and most insane passion of
 the soul sacred and divine. However, as in Egypt I once saw two
@@ -1598,7 +1602,7 @@ discussion turned rather on private than public interests, but now that
 we have got rid of Pisias, I would gladly hear from you to what they had
 an eye who first called Love a god."
 
-§ XIII. Just as Pemptides had left off, and our father was about to
+Sec. XIII. Just as Pemptides had left off, and our father was about to
 answer his question, another messenger came from the town, sent by
 Ismenodora to summon Anthemion, for the tumult had increased, and there
 was a difference of opinion between the superintendents of the
@@ -1695,7 +1699,7 @@ eloquence, and the Muses the arts and sciences, and Athene wisdom. You
 see what an abyss of impiety opens up before us, if we describe each of
 the gods, as only a passion, a power, or a virtue!"
 
-§ XIV. "I see it," said Pemptides, "and it is impious either to make the
+Sec. XIV. "I see it," said Pemptides, "and it is impious either to make the
 gods passions, or to do just the contrary, and make the passions gods."
 "What then?" said my father, "do you consider Ares a god, or only a
 human passion?" And Pemptides, answering that he looked on Ares as god
@@ -1707,24 +1711,24 @@ war and sieges and sacks of cities, and shall there be no god to witness
 and preside over, to direct and guide, conjugal affection, that
 friendship of closest union and communion? Why even those who hunt
 gazelles and hares and deer have a silvan deity who harks and halloos
-them on, for to Aristæus[96] they pay their vows when in pitfalls and
+them on, for to Aristaeus[96] they pay their vows when in pitfalls and
 snares they trap wolves and bears,
 
-'For Aristæus first set traps for animals.'
+'For Aristaeus first set traps for animals.'
 
 And Hercules invoked another god, when he was about to shoot at the
-bird, as the line of Æschylus shows,
+bird, as the line of AEschylus shows,
 
 'Hunter Apollo, make my bolt go straight!'[97]
 
 And shall no god or good genius assist and prosper the man who hunts in
 the best chase of all, the chase of friendship? For I cannot for my
-part, my dear Daphnæus, consider man a less beautiful or important plant
+part, my dear Daphnaeus, consider man a less beautiful or important plant
 than the oak, or sacred olive, or the vine which Homer glorifies,[98]
 seeing that man too has his growth and glorious prime alike of soul and
 body."
 
-§ XV. Then said Daphnæus, "In the name of the gods, who thinks
+Sec. XV. Then said Daphnaeus, "In the name of the gods, who thinks
 differently?" "All those certainly must," answered my father, "who think
 that the gods care only about ploughing and planting and sowing. Have
 they not Nymphs attending upon them, called Dryads, 'whose age is coeval
@@ -1764,7 +1768,7 @@ Love 'sowing in the heart of man the sweet harvest of desire,' to borrow
 the language of Melanippides, mixes the sweetest and most beautiful
 things together. But perhaps you are of a different opinion, Zeuxippus."
 
-§ XVI. "Not I, by Zeus," replied Zeuxippus. "To have a different opinion
+Sec. XVI. "Not I, by Zeus," replied Zeuxippus. "To have a different opinion
 would be ridiculous." "Then," continued my father, "is it not also
 ridiculous, if there are four kinds of friendship, for so the ancients
 distinguished, the natural first, the second that to one's kindred, the
@@ -1783,7 +1787,7 @@ madness is not uninspired or from within, but an afflatus from without,
 a deviation from sober reason, originated and set in motion by some
 higher power, the ordinary characteristic of which is called enthusiasm.
 For, as one full of breath is called [Greek: empnoos], and as one full
-of sense is called [Greek: emphrôn], so the name enthusiasm is given to
+of sense is called [Greek: emphron], so the name enthusiasm is given to
 the commotion of the soul caused by some Divine agency.[102] Thus there
 is the prophetic enthusiasm which proceeds from Apollo, and the Bacchic
 enthusiasm which comes from Dionysus, to which Sophocles alludes where
@@ -1793,7 +1797,7 @@ proceeds from the Muses, and possesses an impressionable and pure soul,
 and stirs up the poetry and music in a man. As to the martial and
 warlike madness, it is well known from what god it proceeds, namely,
 Ares, 'kindling tearful war, that puts an end to the dance and the song,
-and exciting civic strife.'[103] There remains, Daphnæus, one more kind
+and exciting civic strife.'[103] There remains, Daphnaeus, one more kind
 of madness in man, neither obscure nor tranquil, as to which I should
 like to ask Pemptides here,
 
@@ -1845,7 +1849,7 @@ idea of Plato. Let us consider, then, to begin with, that the venereal
 delight can be purchased for six obols, and that no one ever yet put
 himself into any trouble or danger about it, unless he was in love. And
 not to mention here such famous courtesans as Phryne or Lais,
-Gnathænium, 'kindling her lamp at evening time,' on the look-out for
+Gnathaenium, 'kindling her lamp at evening time,' on the look-out for
 lovers and inviting them, is often passed by; 'yet, if some sudden whiff
 arise' of mighty love and desire, it makes this very delight seem equal
 to the fabled wealth of Tantalus and his domains. So feeble and cloying
@@ -1853,11 +1857,11 @@ is the venereal indulgence, if Love inspires it not. And you will see
 this more plainly still from the following consideration. Many have
 allowed others to share in their venereal enjoyments, prostituting not
 only their mistresses but their wives, like that Roman Galba, who used
-to ask Mæcenas to dinner, and when he saw from his nods and winks that
+to ask Maecenas to dinner, and when he saw from his nods and winks that
 he had a mind to do with his wife, turned his head gently aside as if
 asleep; but when one of his slaves came up to the table and stole some
 wine, his eyes were wide open enough, and he said, 'Villain, don't you
-know that I am asleep only for Mæcenas?'[107] But this is not perhaps so
+know that I am asleep only for Maecenas?'[107] But this is not perhaps so
 strange, considering Galba was a buffoon. But at Argos Nicostratus and
 Phayllus were great political rivals: so when King Philip visited that
 city, Phayllus thought if he prostituted his wife, who was very
@@ -1885,7 +1889,7 @@ little, and asked Antipatridas if he cared very much about her. And when
 he replied that he did immensely, Alexander said, 'Plague take you,' but
 nevertheless abstained from touching the girl.
 
-§ XVII. "Consider also how Love excels in warlike feats, and is by no
+Sec. XVII. "Consider also how Love excels in warlike feats, and is by no
 means idle, as Euripides called him,[108] nor a carpet-knight, nor
 'sleeping on a maiden's soft cheeks.'[109] For a man inspired by Love
 needs not Ares to help him when he goes out as a warrior against the
@@ -1927,7 +1931,7 @@ was Philistus. And among you Thebans, Pemptides, is it not usual for the
 lover to give his boy-love a complete suit of armour when he is enrolled
 among the men? And did not the erotic Pammenes change the disposition of
 the heavy-armed infantry, censuring Homer as knowing nothing about love,
-because he drew up the Achæans in order of battle in tribes and clans,
+because he drew up the Achaeans in order of battle in tribes and clans,
 and did not put lover and love together, that so
 
 'Spear should be next to spear, helmet to helmet,'[112]
@@ -1942,7 +1946,7 @@ challenged his rival to do the same. And another in battle falling on
 his face, as his enemy was about to give him the _coup-de-grace_, begged
 him to wait a little till he could turn round, that his love should not
 see him with a wound in his back. And not only are the most warlike
-nations most amorous, as the Boeotians the Lacedæmonians and the
+nations most amorous, as the Boeotians the Lacedaemonians and the
 Cretans, but also of the old heroes, who were more amorous than
 Meleager, Achilles, Aristomenes, Cimon, and Epaminondas. Why,
 Epaminondas had as his boy-loves Asopichus and Cephisodorus, the latter
@@ -2004,7 +2008,7 @@ most insolently and contemptuously,' Anytus replied, 'Nay, rather, he
 has dealt kindly with me, for when he might have taken all he has left
 me half.'"
 
-§ XVIII. Zeuxippus was pleased with this story, and said, "O Hercules,
+Sec. XVIII. Zeuxippus was pleased with this story, and said, "O Hercules,
 you have been within an ace of making me forget my hereditary hatred to
 Anytus for his behaviour to Socrates and philosophy,[116] since he was
 so mild and noble to his love." "Be it so," said my father, "Love also
@@ -2016,7 +2020,7 @@ house, they look on it with admiration and wonder; but if they see a
 little, mean, and ignoble soul suddenly filled with noble-mindedness,
 freedom, dignity, grace, and liberality, they do not feel constrained to
 say with Telemachus, 'Surely, some god is there within.'[118] And is it
-not wonderful, Daphnæus," continued my father,[119] "in the name of the
+not wonderful, Daphnaeus," continued my father,[119] "in the name of the
 Graces, that the lover who cares about hardly anything, either his
 companions and friends, or even the laws and magistrates and kings, who
 fears nothing, admires nothing, courts nothing, but can even endure to
@@ -2024,14 +2028,14 @@ gaze on 'the forked lightning,'[120] yet directly he looks on his love
 'he crouches like a cock with drooping feathers,' and his boldness is
 broken and his pride is cowed. And among the Muses it would not be
 amiss to mention Sappho; for as the Romans say Cacus the son of
-Hephæstus vomited out of his mouth fire and flames, so she really speaks
+Hephaestus vomited out of his mouth fire and flames, so she really speaks
 words that burn like fire, and in her songs shows the warmth of her
 heart, as Philoxenus puts it, 'by euphonious songs assuaging the pains
 of love.' And if you have not in your love for Lysandra forgot all your
-old love-songs, do repeat to us, Daphnæus, the lines in which beautiful
+old love-songs, do repeat to us, Daphnaeus, the lines in which beautiful
 Sappho says that 'when her love appeared her voice failed and her body
 burned, and she was seized with paleness and trembling and vertigo.'"
-And when Daphnæus had repeated the lines, my father resumed, "In the
+And when Daphnaeus had repeated the lines, my father resumed, "In the
 name of Zeus, is not this plainly a divine seizure? Is not this a
 wonderful commotion of soul? Why, the Pythian priestess on the tripod is
 not moved so much as this! Who of those inspired by Cybele are made
@@ -2041,7 +2045,7 @@ lover is taken by it. Why is this the case? We get no light on it from
 Menander's words, 'Love is opportunity; and he that is smitten is the
 only one wounded.' But the god is the cause of it, striking one and
 letting another go scot-free. But I will not pass over now, 'since it
-has come into my mouth,' as Æschylus says, what perhaps would have been
+has come into my mouth,' as AEschylus says, what perhaps would have been
 better spoken before, for it is a very important point. Perhaps, my
 friend, of all other things which we do not perceive through the senses,
 some got believed through legend, some through the law, some through
@@ -2065,7 +2069,7 @@ mediator and ruler and lawgiver, as he seemed indisputably to hold the
 first place in merit; so the three parties that entertain different
 views about the gods are all unanimous on one point, for poets
 legislators and philosophers all alike register Love as one of the gods,
-'loudly singing his praises with one voice,' as Alcæus says the people
+'loudly singing his praises with one voice,' as Alcaeus says the people
 of Mitylene chose Pittacus as their monarch. But our king and ruler and
 governor, Love, is brought down crowned from Helicon to the Academy by
 Hesiod and Plato and Solon, and in royal apparel rides in a chariot
@@ -2075,7 +2079,7 @@ throwing round him cold and heavy necessity), and soars aloft to the
 most beautiful and divine things, about which others have spoken better
 than I can."
 
-§ XIX. When my father had spoken thus much, Soclarus began, "Do you see
+Sec. XIX. When my father had spoken thus much, Soclarus began, "Do you see
 that a second time you have committed the same fault, not cancelling
 your debts as you ought to do--for I must speak my mind--but evading
 them on purpose, and not delivering to us your promised ideas on a
@@ -2162,14 +2166,14 @@ trace or emanation or pleasing resemblance of the divine, in an ecstasy
 of pleasure and delight they indulge their memory, and revive to
 whatever is truly lovely and felicitous and admired by everybody."
 
-§ XX. "The poets indeed seem for the most part to have written and sung
+Sec. XX. "The poets indeed seem for the most part to have written and sung
 about Love in a playful and merry manner, but have sometimes spoken
 seriously about him, whether out of their own mind, or the god helping
 them to truth. Among these are the lines about his birth,
 'Well-sandalled Iris bare the most powerful of the gods to golden-haired
 Zephyr.'[126] But perhaps the learned have persuaded you that these
 lines are only a fanciful illustration of the variety and beauty of
-love." "Certainly," said Daphnæus, "what else could they mean?" "Hear
+love." "Certainly," said Daphnaeus, "what else could they mean?" "Hear
 me," said my father, "for the heavenly phenomenon compels us so to
 speak. The rainbow[127] is, I suppose, a reflection caused by the sun's
 rays falling on a moist cloud, making us think the appearance is in the
@@ -2215,7 +2219,7 @@ a relation of hers, and though he had many rivals, as she was much run
 after for her wealth belike, yet he had won the esteem of all the
 guardians and relations of the young girl.[130] * * * *
 
-§ XXI. * * * Now the origins and causes of Love are not peculiar to
+Sec. XXI. * * * Now the origins and causes of Love are not peculiar to
 either sex, but common to both. For those attractions that make men
 amorous may as well proceed from women as from boys.[131] And as to
 those beautiful and holy reminiscences and invitations to the divine and
@@ -2231,14 +2235,14 @@ whether "he was most given to the love of women or boys," and answered,
 an appropriate answer as to his erotic desires, shall the noble lover of
 beauty neglect beauty and nobility of nature, and make love only with an
 eye to the sexual parts? Why, the lover of horses will take just as much
-pleasure in the good points of Podargus, as in those of Æthe,
+pleasure in the good points of Podargus, as in those of AEthe,
 Agamemnon's mare,[134] and the sportsman rejoices not only in dogs, but
 also rears Cretan and Spartan bitches,[135] and shall the lover of the
 beautiful and of humanity be unfair and deal unequally with either sex,
 and think that the difference between the loves of boys and women is
 only their different dress? And yet they say that beauty is a flower of
 virtue; and it is ridiculous to assert that the female sex never
-blossoms nor make a goodly show of virtue, for as Æschylus truly says,
+blossoms nor make a goodly show of virtue, for as AEschylus truly says,
 
 'I never can mistake the burning eye
 Of the young woman that has once known man.'[136]
@@ -2248,7 +2252,7 @@ found in the faces of women, and shall there be no gleam of chastity and
 modesty in their appearance? Nay, there are many such, and shall they
 not move and provoke love? To doubt it would be neither sensible nor in
 accordance with the facts, for generally speaking, as has been pointed
-out, all these attractions are the same in both sexes.... But, Daphnæus,
+out, all these attractions are the same in both sexes.... But, Daphnaeus,
 let us combat those views which Zeuxippus lately advanced, making Love
 to be only irregular desire carrying the soul away to licentiousness,
 not that this was so much his own view as what he had often heard from
@@ -2297,7 +2301,7 @@ their lives dedicate to the god and slaves in his temple. For a noble
 woman united by Love to her lawful husband would prefer the embraces of
 bears and dragons to those of any other man."
 
-§ XXII. "Although there are plenty of examples of this virtue of
+Sec. XXII. "Although there are plenty of examples of this virtue of
 constancy, yet to you, that are the festive votaries of the god,[143] it
 will not be amiss to relate the story of the Galatian Camma. She was a
 woman of most remarkable beauty, and the wife of the tetrarch Sinatus,
@@ -2323,7 +2327,7 @@ and soon after gave up the ghost, and Camma lived the rest of that day
 and following night, and is said to have died with a good courage and
 even with gaiety."[144]
 
-§ XXIII. "As many similar examples might be adduced, both among
+Sec. XXIII. "As many similar examples might be adduced, both among
 ourselves and foreigners, who can feel any patience with those that
 reproach Aphrodite with hindering friendship when she associates herself
 with Love as a partner? Whereas any reflecting person would call the
@@ -2342,7 +2346,7 @@ But as for those who, not being by nature vicious, have been seduced or
 forced, they are apt all their life to despise and hate their seducers,
 and when an opportunity has presented itself to take fierce vengeance.
 As Crateus, who murdered Archelaus, and Pytholaus, who murdered
-Alexander of Pheræ. And Periander, the tyrant of the Ambraciotes,
+Alexander of Pherae. And Periander, the tyrant of the Ambraciotes,
 having asked a most insulting question of his minion, was murdered by
 him, so exasperated was he. But with women and wives all this is the
 beginning of friendship, and as it were an initiation into the sacred
@@ -2388,7 +2392,7 @@ a wretch I am to ill-treat such a woman!' For to love in marriage is far
 better than to be loved, for it prevents many, nay all, of those
 offences which spoil and mar marriage.
 
-§ XXIV. As to the passionate affection in the early days of
+Sec. XXIV. As to the passionate affection in the early days of
 marriage,[148] my dear Zeuxippus, do not fear that it will leave any
 sore or irritation, though it is not wonderful that there should be some
 friction at the commencement of union with a virtuous woman, just as at
@@ -2436,7 +2440,7 @@ thousand such instances of the love of women, who have kept their
 fidelity to the end of their lives. One such case I will relate, which
 happened in my time in the reign of the Emperor Vespasian.
 
-§ XXV. Julius, who stirred up a revolt in Galatia, among several other
+Sec. XXV. Julius, who stirred up a revolt in Galatia, among several other
 confederates had one Sabinus, a young man of good family, and for wealth
 and renown the most conspicuous of all the men in those parts. But
 having attempted what was too much for them they were foiled, and
@@ -2485,8 +2489,8 @@ Vespasian, for, despairing of her safety, she bade them go and tell the
 Emperor, 'that it was sweeter to live in darkness and underground than
 to wear his crown.'"[153]
 
-§ XXVI. Here my father said that the conversation about Love which took
-place at Thespiæ ended. And at this moment Diogenes, one of Pisias'
+Sec. XXVI. Here my father said that the conversation about Love which took
+place at Thespiae ended. And at this moment Diogenes, one of Pisias'
 companions, was noticed coming up at a faster pace than walking. And
 while he was yet a little way off, Soclarus hailed him with, "You don't
 announce war, Diogenes," and he replied, "Hush! it is a marriage; come
@@ -2500,12 +2504,12 @@ Heaven's name, let us go and laugh at him, and worship the god; for it
 is clear that the god has taken delight in what has happened, and been
 propitious."
 
-[62] The allusion is to Plato's "Phædrus," p. 230, B.
+[62] The allusion is to Plato's "Phaedrus," p. 230, B.
 Much, indeed, of the subject-matter here is, we shall
-find, somewhat similar to that of the Phædrus.
+find, somewhat similar to that of the Phaedrus.
 
 [63] It is difficult to know what the best English word
-here is. From the sly thrust in § ix. Pisias was
+here is. From the sly thrust in Sec. ix. Pisias was
 evidently grey. I have therefore selected the word
 _gravest_. But _the most austere_, _the most sensible_,
 _the most solid_, _the most sedate_, all might express
@@ -2525,15 +2529,15 @@ to explain the allusion.
 a Temple of Hercules called Cynosarges. But the matter
 is obscure. What the exact allusion is I cannot say.
 
-[68] Fragment of Æschylus. See Athenæus, xiii. p. 602,
+[68] Fragment of AEschylus. See Athenaeus, xiii. p. 602,
 E, which explains the otherwise obscure allusion.
 
 [69] That is the son of Hera alone, who was unwilling to
 be outdone by Zeus, who had given birth to Pallas Athene
 alone. Hesiod has the same view, "Theog." 927.
 
-[70] [Greek: opôra] is so used also in Æsch. "Suppl.,"
-998, 1015. See also "Athenæus," 608, F. Daphnæus implies
+[70] [Greek: opora] is so used also in AEsch. "Suppl.,"
+998, 1015. See also "Athenaeus," 608, F. Daphnaeus implies
 these very nice gentlemen, like the same class described
 by Juvenal, "Curios simulant et Bacchanalia vivunt."
 
@@ -2547,7 +2551,7 @@ kai kopidas] in the context.
 [73] I follow here the reading of Wyttenbach. Through
 the whole of this essay the reading is very uncertain
 frequently. My text in it has been formed from a careful
-collation of Wyttenbach, Reiske, and Dübner. I mention
+collation of Wyttenbach, Reiske, and Duebner. I mention
 this here once for all, for it is unnecessary in a
 translation to minutely specify the various readings on
 every occasion. I am not editing the "Moralia."
@@ -2555,11 +2559,11 @@ every occasion. I am not editing the "Moralia."
 [74] "De Oenantha et Agathoclea, v. Polyb. excerpt, l.
 xv."--_Reiske._
 
-[75] Thespiæ. The allusion is to Phryne. See Pausanias,
+[75] Thespiae. The allusion is to Phryne. See Pausanias,
 ix. 27; x. 15.
 
-[76] Reading with Wyttenbach, [Greek: hôsper daktylion
-ischnou, hô mê perirrhuê dediôs.]
+[76] Reading with Wyttenbach, [Greek: hosper daktylion
+ischnou, ho me perirrhue dedios.]
 
 [77] Perhaps _cur_ = coward, was originally _cur-tail_.
 
@@ -2571,7 +2575,7 @@ associated with him in many of his Labours. See
 Pausanias, i. 19; vii. 2; viii. 14, 45.
 
 [80] I read [Greek: synoarizontas]. The general reading
-[Greek: synerôntas] will hardly do here. Wyttenbach
+[Greek: synerontas] will hardly do here. Wyttenbach
 suggests [Greek: synearizontas].
 
 [81] What the [Greek: dibolia] was is not quite clear. I
@@ -2599,7 +2603,7 @@ here.
 
 [88] The first line is the first line of a passage from
 Euripides, consisting of thirteen lines, containing
-similar sentiments to this. See Athenæus, xiii. p. 599,
+similar sentiments to this. See Athenaeus, xiii. p. 599,
 F. The last two lines are from Euripides, "Hippolytus,"
 449, 450.
 
@@ -2618,11 +2622,11 @@ Reiske.
 
 [94] Iliad, v. 831.
 
-[95] Connecting [Greek: Arês] with [Greek: anairein].
+[95] Connecting [Greek: Ares] with [Greek: anairein].
 
 [96] The _Saint Hubert_ of the Middle Ages.
 
-[97] Æschylus, Frag. 1911. Dindorf.
+[97] AEschylus, Frag. 1911. Dindorf.
 
 [98] Odyssey, v. 69.
 
@@ -2637,7 +2641,7 @@ distinctive and definite idea to an English reader.
 [102] Enthusiasm is the being [Greek: entheos], or
 inspired by some god.
 
-[103] From Æschylus, "Supplices," 681, 682.
+[103] From AEschylus, "Supplices," 681, 682.
 
 [104] "Iliad," vii. 121, 122.
 
@@ -2650,11 +2654,11 @@ is, of course, Aphrodite.
 [107] Hence the famous Proverb, "Non omnibus dormio."
 See Cic. "Ad. Fam." vii. 24.
 
-[108] Above, in § xiii.
+[108] Above, in Sec. xiii.
 
 [109] See Sophocles, "Antigone," 783, 784. And compare
 Horace, "Odes," Book iv. Ode xiii. 6-8, "Ille virentis
-et Doctæ psallere Chiæ _Pulchris excubat in genis_."
+et Doctae psallere Chiae _Pulchris excubat in genis_."
 
 [110] The "Niobe," which exists only in a few fragments.
 
@@ -2664,10 +2668,10 @@ Corinthian poet.
 [112] "Iliad," xiii. 131.
 
 [113] Reading according to the conjecture of Wyttenbach,
-[Greek: hôs ton Erôta uonon aêttêton onta tôn
-stratêgôn].
+[Greek: hos ton Erota uonon aetteton onta ton
+strategon].
 
-[114] Something has probably dropped out here, as Dübner
+[114] Something has probably dropped out here, as Duebner
 suspects.
 
 [115] Fragment from the "Stheneboea" of Euripides.
@@ -2677,12 +2681,12 @@ one of the causers of his death. So Horace calls
 Socrates "Anyti reum," "Sat." ii. 4, 3.
 
 [117] Homeric Epigrammata, xiii. 5. Quoted also in "On
-Virtue and Vice," § 1.
+Virtue and Vice," Sec. 1.
 
 [118] Odyssey, xix. 40.
 
 [119] I adopt the suggestion of Wyttenbach, [Greek:
-eipen, ô Daphnaie].
+eipen, o Daphnaie].
 
 [120] Pinder, "Pyth." i. 8.
 
@@ -2692,12 +2696,12 @@ eipen, ô Daphnaie].
 
 [123] An allusion to Homer, "Odyssey," xii. 453.
 
-[124] So Terence, "Andria," 555. "Amantium iræ amoris
+[124] So Terence, "Andria," 555. "Amantium irae amoris
 integratiost."
 
 [125] Euripides, "Hippolytus," 194-196.
 
-[126] The lines are from Alcæus. Thus Love was the child
+[126] The lines are from Alcaeus. Thus Love was the child
 of the Rainbow and the West Wind. A pretty conceit.
 
 [127] Greek _iris_.
@@ -2716,7 +2720,7 @@ esse finitam, et multa, ut et alias, periisse."
 
 [131] Like Reiske we condense here a little.
 
-[132] Reading with Reiske [Greek: orthês kai
+[132] Reading with Reiske [Greek: orthes kai
 athruptou.]
 
 [133] I read [Greek: ei gar].
@@ -2726,7 +2730,7 @@ horse.
 
 [135] See Ovid, "Metamorph." iii. 206-208.
 
-[136] Æschylus, "Toxotides," Fragm. 224.
+[136] AEschylus, "Toxotides," Fragm. 224.
 
 [137] A very favourite proverb among the ancients. See
 Plat. "Phaedr." fin. Martial, ii. 43.
@@ -2738,22 +2742,22 @@ lover is there called Hippostratus. Her favours were so
 costly that the famous proverb is said to owe its origin
 to her, "Non cuivis homini contingit adire Corinthum."
 
-[140] The Ægean and Ionian. Cf. Horace, "Odes," i. 7, 2.
+[140] The AEgean and Ionian. Cf. Horace, "Odes," i. 7, 2.
 
 [141] On Acro-Corinthus, see Pausanias, ii. 4. The words
 in inverted commas are from Euripides, Fragm. 921.
 
-[142] On Lais generally, and her end, see Athenæus,
+[142] On Lais generally, and her end, see Athenaeus,
 xiii. 54, 55.
 
-[143] See § I. The Festival of Love was being kept at
+[143] See Sec. I. The Festival of Love was being kept at
 this very time.
 
 [144] This story is also told by Plutarch, "De Mulierum
-Virtutibus," § xx.
+Virtutibus," Sec. xx.
 
 [145] Sophocles, Fragm. 741. Quoted again in "On
-Abundance of Friends," § iii.
+Abundance of Friends," Sec. iii.
 
 [146] A Delphic word for love. Can it be connected with
 [Greek: arma]?
@@ -2781,7 +2785,7 @@ Domitiani."--_Reiske._
 [153] Vespasian certainly was not cruel generally. "Non
 temere quis punitus insons reperietur, nisi absente eo
 et ignaro aut certe invito atque decepto..... Sola est,
-in qua merito culpetur, pecuniæ cupiditas."--Suetonius,
+in qua merito culpetur, pecuniae cupiditas."--Suetonius,
 "Divus Vespasianus," 15, 16.
 
 CONJUGAL PRECEPTS.
@@ -2808,11 +2812,11 @@ conversation was one of the great charms of marriage, and also statues
 of Peitho[155] and the Graces, to teach married people to gain their way
 with one another by persuasion, and not by wrangling or contention.
 
-§ I. Solon bade the bride eat a quince the first night of marriage,
+Sec. I. Solon bade the bride eat a quince the first night of marriage,
 intimating thereby, it seems, that the bridegroom, was to expect his
 first pleasure from the bride's mouth and conversation.
 
-§ II. In Boeotia they dress up the bride with a chaplet of asparagus,
+Sec. II. In Boeotia they dress up the bride with a chaplet of asparagus,
 for as the asparagus gives most excellent fruit from a thorny stalk, so
 the bride, by not being too reluctant and coy in the first approaches,
 will make the married state more agreeable and pleasant. But those
@@ -2822,13 +2826,13 @@ leave the ripe grapes for others.[156] On the other hand, many brides,
 being at first disgusted with their husbands, are like those that stand
 the bee's sting but neglect the honey.
 
-§ III. Married people should especially at the outset beware of the
+Sec. III. Married people should especially at the outset beware of the
 first quarrel and collision, observing that vessels when first
 fabricated are easily broken up into their component parts, but in
 process of time, getting compact and firmly welded together, are proof
 against either fire or steel.
 
-§ IV. As fire gets kindled easily in chaff or in a wick or in the fur of
+Sec. IV. As fire gets kindled easily in chaff or in a wick or in the fur of
 hares, but is easily extinguished again, if it find no material to keep
 it in and feed it, so we must not consider that the love of
 newly-married people, that blazes out so fiercely in consequence of the
@@ -2836,7 +2840,7 @@ attractions of youth and beauty, will be durable and lasting, unless it
 be fixed in the character, and occupy the mind, and make a living
 impression.[157]
 
-§ V. As catching fish by drugged bait is easy, but makes the fish poor
+Sec. V. As catching fish by drugged bait is easy, but makes the fish poor
 to eat and insipid, so those wives that lay traps for their husbands by
 philtres and charms, and become their masters by pleasure, have stupid
 senseless and spoiled husbands to live with. For those that were
@@ -2844,37 +2848,37 @@ bewitched by Circe did her no good, nor could she make any use of them
 when they were turned into swine and asses, but she was greatly in love
 with the prudent Odysseus who dwelt with her sensibly.
 
-§ VI. Those women who would rather lord it over fools than obey sensible
+Sec. VI. Those women who would rather lord it over fools than obey sensible
 men, resemble those people who would rather lead the blind on a road,
 and not people who have eyesight and know how to follow.
 
-§ VII. Women disbelieve that Pasiphäe, a king's wife, was enamoured of
+Sec. VII. Women disbelieve that Pasiphaee, a king's wife, was enamoured of
 a bull, although they see some of their sex despising grave and sober
 men, and preferring to associate with men who are the slaves of
 intemperance and pleasure, and like dogs and he-goats.
 
-§ VIII. Men who through weakness or effeminacy cannot vault upon their
+Sec. VIII. Men who through weakness or effeminacy cannot vault upon their
 horses' backs, teach them to kneel and so receive their riders.
 Similarly, some men that marry noble or rich wives, instead of making
 themselves better humble their wives, thinking to rule them easier by
 lowering them. But one ought to govern with an eye to the merit of a
 woman, as much as to the size of a horse.
 
-§ IX. We see that the moon when it is far from the sun is bright and
+Sec. IX. We see that the moon when it is far from the sun is bright and
 glorious, but pales and hides its light when it is near. A modest wife
 on the contrary ought to be seen chiefly with her husband, and to stay
 at home and in retirement in his absence.
 
-§ X. It is not a true observation of Herodotus, that a woman puts off
+Sec. X. It is not a true observation of Herodotus, that a woman puts off
 her modesty with her shift.[158] On the contrary, the modest woman puts
 on her modesty instead, and great modesty is a sign of great conjugal
 love.
 
-§ XI. As where two voices are in unison the loudest prevails; so in a
+Sec. XI. As where two voices are in unison the loudest prevails; so in a
 well-managed household everything is done by mutual consent, but the
 husband's supremacy is exhibited, and his wishes are consulted.
 
-§ XII. The Sun beat the North Wind.[159] For when it blew a strong and
+Sec. XII. The Sun beat the North Wind.[159] For when it blew a strong and
 terrible blast, and tried to make the man remove his cloak, he only drew
 it round him more closely, but when the Sun came out with its warm rays,
 at first warmed and afterwards scorched, he stripped himself of coat as
@@ -2883,7 +2887,7 @@ curtail by force their luxury and extravagance, they are vexed and fight
 for their rights, but if they are convinced by reason, they quietly drop
 their expensive habits, and keep within bounds.
 
-§ XIII. Cato turned out of the Senate a man who kissed his own wife in
+Sec. XIII. Cato turned out of the Senate a man who kissed his own wife in
 the presence of his daughter. This was perhaps too strong a step, but if
 it is unseemly, as indeed it is, for husband and wife in the presence of
 others to fondle and kiss and embrace one another, is it not far more
@@ -2891,7 +2895,7 @@ unseemly in the presence of others to quarrel and jangle? Just as
 conjugal caresses and endearments ought to be private, so ought
 admonition and scolding and plain speaking.
 
-§ XIV. Just as there is little use in a mirror adorned with gold or
+Sec. XIV. Just as there is little use in a mirror adorned with gold or
 precious stones, unless it conveys a true likeness, so there is no
 advantage in a rich wife, unless she conforms her life and habits to her
 husband's position. For if when a man is joyful the mirror makes him
@@ -2905,13 +2909,13 @@ only in connection with bodies, so the wife ought to have no private
 emotions of her own, but share in her husband's gravity or mirth,
 anxiety or gaiety.
 
-§ XV. As those husbands who do not like to see their wives eating and
+Sec. XV. As those husbands who do not like to see their wives eating and
 drinking in their company only teach them to take their food on the sly,
 so those husbands who are not gay and jolly with their wives, and never
 joke or smile with them, only teach them to seek their pleasures out of
 their company.
 
-§ XVI. The kings of Persia have their wedded wives at their side at
+Sec. XVI. The kings of Persia have their wedded wives at their side at
 banquets and entertainments; but when they have a mind for a drunken
 debauch they send them away,[161] and call for singing-girls and
 concubines, rightly so doing, for so they do not mix up their wives with
@@ -2920,27 +2924,27 @@ lustful and dissolute, goes astray with a courtesan or maid-servant, the
 wife should not be vexed or impatient, but consider that it is out of
 respect to her that he bestows upon another all his wanton depravity.
 
-§ XVII. As kings make[162] if fond of music many musicians, if lovers of
+Sec. XVII. As kings make[162] if fond of music many musicians, if lovers of
 learning many men of letters, and many athletes if fond of gymnastics,
 so the man who has an eye for female charms teaches his wife to dress
 well, the man of pleasure teaches his meretricious tricks and
 wantonness, while the true gentleman makes his virtuous and decorous.
 
-§ XVIII. A Lacedæmonian maiden, when someone asked her if she had yet
+Sec. XVIII. A Lacedaemonian maiden, when someone asked her if she had yet
 had dealings with a man, replied, "No, but he has with me." This
 methinks is the line of conduct a matron should pursue, neither to
 decline the embraces of a husband when he takes the initiative, nor to
 provoke them herself, for the one is forward and savours of the
 courtesan, the other is haughty and unnatural.
 
-§ XIX. The wife ought not to have her own private friends, but cultivate
+Sec. XIX. The wife ought not to have her own private friends, but cultivate
 only those of the husband. Now the gods are our first and greatest
 friends, so the wife ought only to worship and recognize her husband's
 gods, and the door ought to be shut on all superfluous worship and
 strange superstitions, for none of the gods are pleased with stealthy
 and secret sacrifices on the part of a wife.
 
-§ XX. Plato says that is a happy and fortunate state, where the words
+Sec. XX. Plato says that is a happy and fortunate state, where the words
 _Meum_ and _Tuum_ are least heard,[163] because the citizens regard the
 common interest in all matters of importance. Far more essential is it
 in marriage that the words should have no place. For, as the doctors
@@ -2959,12 +2963,12 @@ though the water should preponderate,[166] so we say that the house and
 property belongs to the man, even though the wife contribute most of the
 money.
 
-§ XXI. Helen was fond of wealth, Paris of pleasure, whereas Odysseus was
+Sec. XXI. Helen was fond of wealth, Paris of pleasure, whereas Odysseus was
 prudent, Penelope chaste. So the marriage of the last two was happy and
 enviable, while that of the former two brought an Iliad of woe on Greeks
 and barbarians alike.
 
-§ XXII. The Roman who was taken to task by his friends for repudiating a
+Sec. XXII. The Roman who was taken to task by his friends for repudiating a
 chaste wealthy and handsome wife, showed them his shoe and said,
 "Although this is new and handsome, none of you know where it pinches
 me."[167] A wife ought not therefore to put her trust in her dowry, or
@@ -2978,7 +2982,7 @@ small and continual and daily matters of offence between husband and
 wife, that the world knows nothing about, set the household most at
 variance, and do it the greatest injury.
 
-§ XXIII. King Philip was desperately enamoured of a Thessalian
+Sec. XXIII. King Philip was desperately enamoured of a Thessalian
 woman,[168] who was accused of bewitching him; his wife Olympias
 therefore wished to get this woman into her power. But when she came
 before her, and was evidently very handsome, and talked to her in a
@@ -2988,14 +2992,14 @@ wife to win her husband's affection by her virtuous character, bringing
 to him in herself dowry, and family, and philtres, and even Aphrodite's
 cestus.[170]
 
-§ XXIV. Olympias, on another occasion, when a young courtier had married
+Sec. XXIV. Olympias, on another occasion, when a young courtier had married
 a wife who was very handsome, but whose reputation was not very good,
 remarked, "This fellow has no sense, or he would not have married with
 his eyes." We ought neither to marry with our eyes, nor with our
 fingers, as some do, who reckon up on their fingers what dowry the wife
 will bring, not what sort of partner she will make.
 
-§ XXV. It was advice of Socrates, that when young men looked at
+Sec. XXV. It was advice of Socrates, that when young men looked at
 themselves in the mirror, those who were not handsome should become so
 through virtue, and those who were so should not by vice deform their
 beauty. Good also is it for the matron, when she has the mirror in her
@@ -3004,7 +3008,7 @@ not virtuous?" and if handsome to say to herself, "How good it were to
 add virtue to beauty!" for it is a feather in the cap of a woman not
 handsome to be loved for herself and not for good looks.
 
-§ XXVI. Dionysius, the tyrant of Sicily, sent some costly dresses and
+Sec. XXVI. Dionysius, the tyrant of Sicily, sent some costly dresses and
 necklaces to the daughters of Lysander, but he would not receive them,
 and said, "These presents will bring my daughters more shame than
 adornment." And Sophocles said still earlier than Lysander, "Your
@@ -3014,14 +3018,14 @@ woman that makes her more comely; and it is not gold or diamonds or
 scarlet robes that make her so, but her dignity, her correct conduct,
 and her modesty.
 
-§ XXVII. Those who sacrifice to Hera as goddess of marriage,[171] do
+Sec. XXVII. Those who sacrifice to Hera as goddess of marriage,[171] do
 not burn the gall with the other parts of the victim, but when they have
 drawn it throw it away beside the altar: the lawgiver thus hinting that
 gall and rage have no place in marriage. For the austerity of a matron
 should be, like that of wine, wholesome and pleasant, not bitter as
 aloes, or like a drug.
 
-§ XXVIII. Plato advised Xenocrates, a man rather austere but in all
+Sec. XXVIII. Plato advised Xenocrates, a man rather austere but in all
 other respects a fine fellow, to sacrifice to the Graces. I think also
 that a chaste wife needs the graces with her husband that, as Metrodorus
 said, "she may live agreeably with him, and not be bad-tempered because
@@ -3030,7 +3034,7 @@ the virtuous one neglect to make herself attractive, for peevishness
 makes a wife's good conduct disagreeable, as untidiness makes one
 disgusted with simplicity.
 
-§ XXIX. The wife who is afraid to laugh and jest with her husband, lest
+Sec. XXIX. The wife who is afraid to laugh and jest with her husband, lest
 she should appear bold and wanton, resembles one that will not anoint
 herself with oil lest she should be thought to use cosmetics, and will
 not wash her face lest she should be thought to paint. We see also in
@@ -3047,12 +3051,12 @@ action neither honourable nor becoming, "You cannot have me as a friend
 and flatterer both," so he must say to himself about his strict and
 austere wife, "I cannot have in the same woman wife and mistress."
 
-§ XXX. It was a custom among the Egyptian ladies not to wear shoes, that
+Sec. XXX. It was a custom among the Egyptian ladies not to wear shoes, that
 they might stay at home all day and not go abroad. But most of our women
 will only stay at home if you strip them of their golden shoes, and
 bracelets, and shoe-buckles, and purple robes, and pearls.
 
-§ XXXI. Theano, as she was putting on her shawl, displayed her arm, and
+Sec. XXXI. Theano, as she was putting on her shawl, displayed her arm, and
 somebody observing, "What a handsome arm!" she replied, "But not
 common." So ought not even the speech, any more than the arm, of a
 chaste woman, to be common, for speech must be considered as it were the
@@ -3060,13 +3064,13 @@ exposing of the mind, especially in the presence of strangers. For in
 words are seen the state of mind and character and disposition of the
 speaker.
 
-§ XXXII. Phidias made a statue of Aphrodite at Elis, with one foot on a
+Sec. XXXII. Phidias made a statue of Aphrodite at Elis, with one foot on a
 tortoise,[172] as a symbol that women should stay at home and be silent.
 For the wife ought only to speak either to her husband, or by her
 husband, not being vexed if, like a flute-player, she speaks more
 decorously by another mouth-piece.
 
-§ XXXIII. When rich men and kings honour philosophers, they really pay
+Sec. XXXIII. When rich men and kings honour philosophers, they really pay
 homage to themselves as well; but when philosophers pay court to the
 rich, they lower themselves without advancing their patrons. The same is
 the case with women. If they submit themselves to their husbands they
@@ -3077,7 +3081,7 @@ the body, by sympathy and goodwill. As he ought to govern the body by
 not being a slave to its pleasures and desires, so he ought to rule his
 wife by cheerfulness and complaisance.
 
-§ XXXIV. The philosophers tell us that some bodies are composed of
+Sec. XXXIV. The philosophers tell us that some bodies are composed of
 distinct parts, as a fleet or army; others of connected parts, as a
 house or ship; others united and growing together, as every animal is.
 The marriage of lovers is like this last class, that of those who marry
@@ -3091,7 +3095,7 @@ people to exchange presents with one another, not that they should not
 go shares with one another, but that they should consider everything as
 common property.
 
-§ XXXV. At Leptis, a town in Libya, it is the custom for the bride the
+Sec. XXXV. At Leptis, a town in Libya, it is the custom for the bride the
 day after marriage to send to her mother-in-law's house for a pipkin,
 who does not lend her one, but says she has not got one, that from the
 first the daughter-in-law may know her mother-in-law's stepmotherly
@@ -3102,7 +3106,7 @@ jealous of his affection to his wife. But there is one cure for this
 condition of mind, to conciliate privately the husband's affection, and
 not to divert or diminish his love for his mother.
 
-§ XXXVI. Mothers seem to love their sons best as able to help them, and
+Sec. XXXVI. Mothers seem to love their sons best as able to help them, and
 fathers their daughters as needing their help; perhaps also it is in
 compliment to one another, that each prefers the other sex in their
 children, and openly favours it. This, however, is a matter perhaps of
@@ -3111,13 +3115,13 @@ respect to her husband's parents than to her own, and if anything
 unpleasant has happened to confide it to them rather than to her own
 people. For trust begets trust,[174] and love love.
 
-§ XXXVII. The generals of the Greeks in Cyrus's army ordered their men
+Sec. XXXVII. The generals of the Greeks in Cyrus's army ordered their men
 to receive the enemy silently if they came up shouting, but if they came
 up silently to rush out to meet them with a shout. So sensible wives, in
 their husband's tantrums, are quiet when they storm, but if they are
 silent and sullen talk them round and appease them.
 
-§ XXXVIII. Rightly does Euripides[175] censure those who introduce the
+Sec. XXXVIII. Rightly does Euripides[175] censure those who introduce the
 lyre at wine-parties, for music ought to be called in to assuage anger
 and grief, rather than to enervate the voluptuous still more than
 before. Think, therefore, those in error who sleep together for
@@ -3129,7 +3133,7 @@ teaches us, where he introduces Hera, saying:
 "Their long-continued strife I now will end,
 For to the bed of love I will them send."[176]
 
-§ XXXIX. Everywhere and at all times should husband and wife avoid
+Sec. XXXIX. Everywhere and at all times should husband and wife avoid
 giving one another cause of offence, but most especially when they are
 in bed together. The woman who was in labour and had a bad time said to
 those that urged her to go to bed, "How shall the bed cure me, which was
@@ -3137,7 +3141,7 @@ the very cause of this trouble?"[177] And those differences and quarrels
 which the bed generates will not easily be put an end to at any other
 time or place.
 
-§ XL. Hermione seems to speak the truth where she says:
+Sec. XL. Hermione seems to speak the truth where she says:
 
 "The visits of bad women ruined me."[178]
 
@@ -3153,7 +3157,7 @@ calumniating women come and say to a wife, "How badly your husband
 treats you, though a chaste and loving wife!" let her answer, "How would
 he act then, if I were to begin to hate him and injure him?"
 
-§ XLI. The master who saw his runaway slave a long time after he had
+Sec. XLI. The master who saw his runaway slave a long time after he had
 run away, and chased him, and came up with him just as he had got to the
 mill, said to him, "In what more appropriate place could I have wished
 to find you?"[180] So let the wife, who is jealous of her husband, and
@@ -3162,7 +3166,7 @@ on the point of writing a bill of divorce in her anger, say to herself,
 vexed and at variance with my husband, and on the point of abandoning
 his house and bed?"
 
-§ XLII. The Athenians have three sacred seedtimes: the first at Scirus,
+Sec. XLII. The Athenians have three sacred seedtimes: the first at Scirus,
 as a remembrance of the original sowing of corn, the second at Rharia,
 the third under Pelis, which is called Buzygium.[181] But a more sacred
 seedtime than all these is the procreation of children, and therefore
@@ -3173,7 +3177,7 @@ from sowing in quarters where they desire no produce, or where, if any
 produce should come, they would be ashamed of it and desire to conceal
 it.[182]
 
-§ XLIII. When Gorgias the Rhetorician recited his speech at Olympia
+Sec. XLIII. When Gorgias the Rhetorician recited his speech at Olympia
 recommending harmony to the Greeks, Melanthius cried out, "He recommend
 harmony to us! Why, he can't persuade his wife and maid to live in
 harmony, though there are only three of them in the house!" Gorgias
@@ -3183,7 +3187,7 @@ affairs of his friends and the public, for any ill-doings on the part of
 husbands to their wives is far more likely to come out and be known to
 the public than the ill-doings of wives to their husbands.
 
-§ XLIV. They say the cat is driven mad by the smell of perfumes. If it
+Sec. XLIV. They say the cat is driven mad by the smell of perfumes. If it
 happens that wives are equally affected by perfumes, it is monstrous
 that their husbands should not abstain from using perfumes, rather than
 for so small a pleasure to incommode so grievously their wives. And
@@ -3193,7 +3197,7 @@ abstain from connection with other women, when even bee-keepers will do
 as much, because bees are supposed to dislike and sting those that have
 had dealings with women.
 
-§ XLV. Those that approach elephants do not dress in white, nor those
+Sec. XLV. Those that approach elephants do not dress in white, nor those
 that approach bulls in red, for these colours render those animals
 savage; and tigers they say at the beating of drums go quite wild, and
 tear themselves in their rage. Similarly, as some men cannot bear to see
@@ -3202,14 +3206,14 @@ drums,[183] what harm would it do wives to abstain from these things,
 and not to vex or provoke husbands, but to live with them quietly and
 meekly?
 
-§ XLVI. A woman said to Philip, who against her will was pulling her
+Sec. XLVI. A woman said to Philip, who against her will was pulling her
 about, "Let me go, all women are alike when the lamp is put out."[184] A
 good remark to adulterers and debauchees. But the married woman ought to
 show when the light is put out that she is not like all other women, for
 then, when her body is not visible, she ought to exhibit her chastity
 and modesty as well as her personal affection to her husband.
 
-§ XLVII. Plato[185] recommended old men to act with decorum especially
+Sec. XLVII. Plato[185] recommended old men to act with decorum especially
 before young men, that they too might show respect to them; for where
 the old behave shamelessly, no modesty or reverence will be exhibited by
 the young. The husband ought to remember this, and show no one more
@@ -3218,7 +3222,7 @@ either a school of virtue or of vice. And he who enjoys pleasures that
 he forbids his wife, is like a man that orders his wife to go on
 fighting against an enemy to whom he has himself surrendered.
 
-§ XLVIII. As to love of show, Eurydice, read and try to remember what
+Sec. XLVIII. As to love of show, Eurydice, read and try to remember what
 was written by Timoxena to Aristylla: and do you, Pollianus, not suppose
 that your wife will abstain from extravagance and expense, if she sees
 that you do not despise such vanities in others, but delight in gilt
@@ -3275,10 +3279,10 @@ part not in the roses but in the fruits which the Muses bring, and which
 they freely bestow on those that admire learning and philosophy?[190]
 
 [154] This tune is again alluded to by Plutarch in
-"Quæstion. Convival.", p. 704, F. See also Clemens
-Alexandrinus, "Pædagog." ii. p. 164, [Greek: A tais de
+"Quaestion. Convival.", p. 704, F. See also Clemens
+Alexandrinus, "Paedagog." ii. p. 164, [Greek: A tais de
 hippois mignumenais oion hymenaios epauleitai nomos
-aulôdias hippothoron touton keklêkasin oi Mousikoi.]
+aulodias hippothoron touton keklekasin oi Mousikoi.]
 
 [155] Peitho means Persuasion, and is represented as one
 of the Graces by Hermes anax. See Pausanias, ix. 35.
@@ -3292,7 +3296,7 @@ crescentibus uvis?"
 
 [158] Herodotus, i. 8.
 
-[159] An allusion to the well-known Fable of Æsop, No.
+[159] An allusion to the well-known Fable of AEsop, No.
 82 in Halm's edition.
 
 [160] This comparison of the mirror is beautifully used
@@ -3311,7 +3315,7 @@ _Wednesday before Easter._
 [164] By the power of sympathy. This is especially true
 of eyes. Wyttenbach compares the Epigram in the
 Anthology, i. 46. 9. [Greek: Kai gar dexion omma
-kakoumenon ommati laiô Pollaki tous idious antididôsi
+kakoumenon ommati laio Pollaki tous idious antididosi
 ponous.]
 
 [165] Reading [Greek: kalon] with Hercher.
@@ -3330,13 +3334,13 @@ enchantments and spells. So Juvenal, vi. 610, speaks of
 
 [169] Wyttenbach well compares the lines of Menander:--
 
-[Greek: enest alêthes philtron eugnômôn tropos, toutô
-katakratein andros eiôthen gunê.]
+[Greek: enest alethes philtron eugnomon tropos, touto
+katakratein andros eiothen gune.]
 
 [170] An allusion to Homer, "Iliad," xiv. 214-217.
 
 [171] Called by the Romans "pronuba Juno." See Verg.
-"Æneid," iv. 166; Ovid, "Heroides," vi. 43.
+"AEneid," iv. 166; Ovid, "Heroides," vi. 43.
 
 [172] See Pausanias, vi. 25. The statue was made of
 ivory and gold.
@@ -3345,7 +3349,7 @@ ivory and gold.
 socrus oderunt nurus." As to stepmotherly feelings, the
 "injusta noverca" has passed into a proverb with all
 nations. See for example Hesiod, "Works and Days," 823,
-[Greek: allote mêtruiê pelei hêmerê, allote mêtêr].
+[Greek: allote metruie pelei hemere, allote meter].
 
 [174] Wyttenbach compares Seneca's "Fidelem si putaveris
 facies." "Ep." iii. p. 6.
@@ -3361,8 +3365,8 @@ facies." "Ep." iii. p. 6.
 [179] Proverb. Cf. Horace, "Oleum adde camino," ii.
 "Sat." iii. 321.
 
-[180] See Æsop's Fables, No. 121. Halme. [Greek:
-Drapetês] is the title. All readers of Plautus and
+[180] See AEsop's Fables, No. 121. Halme. [Greek:
+Drapetes] is the title. All readers of Plautus and
 Terence know what a bugbear to slaves the threat of
 being sent to the mill was. They would have to turn it
 instead of horses, or other cattle.
@@ -3402,7 +3406,7 @@ philosopher, and not as a grammarian.
 
 CONSOLATORY LETTER TO HIS WIFE.
 
-§ I. Plutarch to his wife sends greeting. The messenger that you sent to
+Sec. I. Plutarch to his wife sends greeting. The messenger that you sent to
 me to announce the death of our little girl seems to have missed his way
 _en route_ for Athens; but when I got to Tanagra I heard the news from
 my niece. I suppose the funeral has already taken place, and I hope
@@ -3412,7 +3416,7 @@ my opinion, and thinking your grief would then be lighter, be it without
 ceremoniousness or superstition, both which things are indeed foreign to
 your character.
 
-§ II. Only, my dear wife, let us both be patient at this calamity. I
+Sec. II. Only, my dear wife, let us both be patient at this calamity. I
 know and can see very clearly how great it is, but should I find your
 grief too excessive, it would trouble me even more than the event
 itself. And yet I have not a heart hard as heart of oak or flintstone,
@@ -3432,7 +3436,7 @@ as it were to her table in kindliness of heart, and gave them a share of
 her good things, and provided the best entertainment for those that
 pleased her.
 
-§ III. But I see no reason, my dear wife, why these and similar traits
+Sec. III. But I see no reason, my dear wife, why these and similar traits
 in her character, that gave us delight in her lifetime, should now,
 when recalled to the memory, grieve and trouble us. Though, on the other
 hand, I fear that if we cease to grieve we may also cease to remember
@@ -3451,7 +3455,7 @@ ought to be profitable to us in the present conjuncture, nor should we
 sit down and rail against fortune, opposing to those joys many more
 griefs.
 
-§ IV. Those who were present at the funeral tell me with evident
+Sec. IV. Those who were present at the funeral tell me with evident
 surprise that you put on no mourning, and that you bedizened up neither
 yourself nor your maids with the trappings of woe, and that there was no
 ostentatious expenditure of money at the funeral, but that everything
@@ -3482,14 +3486,14 @@ immoderately or without sufficient cause, yet allow them to ill-treat
 themselves cruelly in cases and conjunctures that require repose and
 kindness!
 
-§ V. But between us, my dear wife, there never was any occasion for such
+Sec. V. But between us, my dear wife, there never was any occasion for such
 a contest, nor do I think there ever will be. For as to your economy in
 dress and simple way of living, there is no philosopher with whom you
 are acquainted whom you did not amaze, nor is there any citizen who has
 not observed[196] how plainly you dressed at sacred rites, and
 sacrifices, and theatres. You have also already on similar painful
 occasions exhibited great fortitude, as when you lost your eldest son,
-and again when our handsome Chæron died. For when I was informed of his
+and again when our handsome Chaeron died. For when I was informed of his
 death, I well remember some guests from the sea were coming home with me
 to my house as well as some others, but when they saw the great quiet
 and tranquillity of the household, they thought, as they afterwards told
@@ -3500,13 +3504,13 @@ had suckled that son, though your breast had had to be lanced owing to a
 contusion. This was noble conduct and showed your great natural
 affection.
 
-§ VI. But most mothers we see, when their children are brought to them
+Sec. VI. But most mothers we see, when their children are brought to them
 clean and tidy, take them into their hands as playthings, and when they
 die burst out into idle and unthankful grief, not so much out of
 affection--for affection is thoughtful and noble--but a great yearning
 for vain glory[197] mixed with a little natural affection makes their
 grief fierce and vehement and hard to appease. And this does not seem to
-have escaped Æsop's notice, for he says that when Zeus assigned their
+have escaped AEsop's notice, for he says that when Zeus assigned their
 honours to various gods, Grief also claimed his. And Zeus granted his
 wish, with this limitation that only those who chose and wished need pay
 him honour.[198] It is thus with grief at the outset, everyone welcomes
@@ -3530,7 +3534,7 @@ were with bitter and injurious exhalations, it cannot easily recover its
 tone however people may wish it should. Such is the state of the soul
 that has been so ill-treated.
 
-§ VII. Moreover, I should not hesitate to assert[199] that the most
+Sec. VII. Moreover, I should not hesitate to assert[199] that the most
 formidable peril in connection with this is "the visits of bad
 women,"[200] and their chatter, and joint lamentation, all which things
 fan the fire of sorrow and aggravate it, and suffer it not to be
@@ -3549,7 +3553,7 @@ and aggravate the sore, so that from a little tickling and discomfort it
 grows into a great and terrible disease. However, as to all this I know
 you will be on your guard.
 
-§ VIII. Try also often to carry yourself back in memory to that time
+Sec. VIII. Try also often to carry yourself back in memory to that time
 when, this little girl not having been then born, we had nothing to
 charge Fortune with, and to compare that time and this together, as if
 our circumstances had gone back to what they were then. Otherwise, my
@@ -3574,7 +3578,7 @@ certainly ought not to be our case, that we should slander all our past
 life because, like a book, it has one erasure in it, when all the other
 pages have been bright and clean.
 
-§ IX. You have often heard that happiness consists in right calculations
+Sec. IX. You have often heard that happiness consists in right calculations
 resulting in a healthy state of mind, and that the changes which Fortune
 brings about need not upset it, and introduce confusion into our life.
 But if we too must, like most people, be governed by external events,
@@ -3604,7 +3608,7 @@ only she knew, and in little things only did she rejoice; and how can
 one be said to be deprived of things of which one had no conception, nor
 experience, nor even desire for?
 
-§ X. As to what you hear from some people, who get many to credit their
+Sec. X. As to what you hear from some people, who get many to credit their
 notion, that the dead suffer no evil or pain, I know that you are
 prevented from believing that by the tradition of our fathers and by the
 mystic symbols of the mysteries of Dionysus, for we are both initiated.
@@ -3633,7 +3637,7 @@ of Hades,"[202] nothing remains but a great passion for the things of
 this life, and a softening of the soul through contact with the body,
 and a melting away of it as if by the agency of drugs.[203]
 
-§ XI. And the truth of this is rendered more apparent in our hereditary
+Sec. XI. And the truth of this is rendered more apparent in our hereditary
 and time-honoured customs and laws. For when infants die no libations
 are poured out for them, nor are any other rites performed for them,
 such as are always performed for adults. For they have no share in the
@@ -3646,7 +3650,7 @@ but since to doubt is harder for them than to believe, let us do
 externally as the laws enjoin, and internally let us be more holy and
 pure and chaste.[204]
 
-[191] Timoxena, as we see later on, § ix.
+[191] Timoxena, as we see later on, Sec. ix.
 
 [192] Adopting Reiske's reading, [Greek: maston
 keleuousa, proekaleito kathaper].
@@ -3655,11 +3659,11 @@ keleuousa, proekaleito kathaper].
 fragments. Clymene was the daughter of Oceanus, and
 mother of Phaethon.
 
-[194] An allusion to Euripides, "Bacchæ," 317, 318.
+[194] An allusion to Euripides, "Bacchae," 317, 318.
 
-[195] Reading with Reiske [Greek: oudeni logô de], or
-[Greek: alogôs de]. Some such reading seems necessary to
-comport with the [Greek: ti gar alogôteron] two lines
+[195] Reading with Reiske [Greek: oudeni logo de], or
+[Greek: alogos de]. Some such reading seems necessary to
+comport with the [Greek: ti gar alogoteron] two lines
 later.
 
 [196] Reading [Greek: pareiches] with Xylander.
@@ -3667,19 +3671,19 @@ later.
 [197] A great craving for sympathy would be the modern
 way of putting it.
 
-[198] See the Fable of Æsop, entitled [Greek: Penthous
+[198] See the Fable of AEsop, entitled [Greek: Penthous
 geras], No. 355. Halme. See also Plutarch's "Consolation
-to Apollonius," § xix., where the Fable is told at some
+to Apollonius," Sec. xix., where the Fable is told at some
 length.
 
 [199] Reading with Reiske [Greek: ouk an eipein
-phobêtheiên].
+phobetheien].
 
 [200] An allusion to Euripides, "Andromache," 930. See
-Plutarch's "Conjugal Precepts," § xl.
+Plutarch's "Conjugal Precepts," Sec. xl.
 
 [201] The whole subject is discussed in full by
-Athenæus, p. 632, F. F. A false quantity we see was a
+Athenaeus, p. 632, F. F. A false quantity we see was a
 bugbear even before the days of Universities.
 
 [202] Homer, "Iliad," v. 646; xxiii. 71.
@@ -3692,7 +3696,7 @@ is probable that there was more of it.
 
 THAT VIRTUE MAY BE TAUGHT.
 
-§ I. As to virtue we deliberate and dispute whether good sense, and
+Sec. I. As to virtue we deliberate and dispute whether good sense, and
 justice, and rectitude can be taught: and then we are not surprised
 that, while the works of orators, and pilots, and musicians, and
 house-builders, and farmers, are innumerable, good men are only a name
@@ -3708,7 +3712,7 @@ learned. The art of good living alone, though all those things I have
 mentioned only exist on its account, is untaught, unmethodical,
 inartistic, and supposed to come by the light of nature!
 
-§ II. O sirs, by asserting that virtue is not a thing to be taught, why
+Sec. II. O sirs, by asserting that virtue is not a thing to be taught, why
 are we making it unreal? For if teaching produces it, the deprivation of
 teaching prevents it. And yet, as Plato says, a discord and false note
 on the lyre makes not brother go to war with brother, nor sets friends
@@ -3735,14 +3739,14 @@ everywhere, I lose my passage money."[207] Why should not you also say,
 "If men are not better for learning, the money paid to tutors is also
 lost?" For just as nurses mould with their hands the child's body, so
 tutors, receiving it immediately it is weaned, mould its soul, teaching
-it by habit the first vestiges of virtue. And the Lacedæmonian, who was
+it by habit the first vestiges of virtue. And the Lacedaemonian, who was
 asked, what good he did as a tutor, replied, "I make what is good
 pleasant to boys." Moreover tutors teach boys to walk in the streets
 with their heads down,[208] to touch salt fish with one finger only,
 other fish bread and meat with two, to scratch themselves in such a way,
 and in such a way to put on their cloak.[209]
 
-§ III. What then? He that says that the doctor's skill is wanted in the
+Sec. III. What then? He that says that the doctor's skill is wanted in the
 case of a slight skin-eruption or whitlow, but is not needed in the case
 of pleurisy, fever, or lunacy, in what respect does he differ from the
 man that says that schools and teaching and precepts are only for small
@@ -3786,11 +3790,11 @@ other reasons for blinding them.
 [212] "Malim [Greek: daitumonas]." Wyttenbach, who
 remarks generally on this short treatise, "Non integra
 videtur esse nec continua disputatio, sed disputationis,
-Plutarcheæ tamen, excerptum compendium."
+Plutarcheae tamen, excerptum compendium."
 
 ON VIRTUE AND VICE.
 
-§ I. Clothes seem to warm a man, not by throwing out heat themselves
+Sec. I. Clothes seem to warm a man, not by throwing out heat themselves
 (for in itself every garment is cold, whence in great heat or in fevers
 people frequently change and shift them), but the heat which a man
 throws out from his own body is retained and wrapped in by a dress
@@ -3810,7 +3814,7 @@ man has joy in his heart, seeing that men can bear easily and quietly
 poverty and exile and old age if their character is a contented and mild
 one.
 
-§ II. For as perfumes make threadbare coats and rags to smell sweet,
+Sec. II. For as perfumes make threadbare coats and rags to smell sweet,
 while the body of Anchises sent forth a fetid discharge, "distilling
 from his back on to his linen robe," so every kind of life with virtue
 is painless and pleasurable, whereas vice if infused into it makes
@@ -3849,7 +3853,7 @@ whatever," and enjoys lawlessness as far as is practicable in visions
 and phantasies, that end in no complete pleasure or satisfaction, but
 can only stir up and inflame the passions and morbid emotions.
 
-§ III. Where then is the pleasure of vice, if there is nowhere in it
+Sec. III. Where then is the pleasure of vice, if there is nowhere in it
 freedom from anxiety and pain, or independence, or tranquillity, or
 rest?[218] A healthy and sound constitution does indeed augment the
 pleasures of the body, but for the soul there can be no lasting joy or
@@ -3858,7 +3862,7 @@ calm serenity free from storms; for otherwise, even if hope or delight
 smile on the soul, it is soon confused and disturbed by care lifting up
 its head again, so that it is but the calm of a sunken rock.
 
-§ IV. Pile up gold, heap up silver, build covered walks, fill your house
+Sec. IV. Pile up gold, heap up silver, build covered walks, fill your house
 with slaves and the town with debtors, unless you lay to rest the
 passions of the soul, and put a curb on your insatiable desires, and rid
 yourself of fear and anxiety, you are but pouring out wine for a man in
@@ -3891,13 +3895,13 @@ Can make a Heaven of Hell, a Hell of Heaven."
 [214] Homeric Epigrammata, xiii. 5.
 
 [215] Wyttenbach thinks these lines are by Menander.
-Plutarch quotes them again "On Contentedness of Mind," §
+Plutarch quotes them again "On Contentedness of Mind," Sec.
 xi.
 
 [216] Hesiod, "Works and Days," 705.
 
 [217] Plato, "Republic," ix. p. 571, D. Quoted again,
-"How one may be aware of one's Progress in Virtue," §
+"How one may be aware of one's Progress in Virtue," Sec.
 xii.
 
 [218] And so Dr. Young truly says,--
@@ -3908,7 +3912,7 @@ _Night Thoughts._
 
 ON MORAL VIRTUE.
 
-§ I. I propose to discuss what is called and appears to be moral virtue
+Sec. I. I propose to discuss what is called and appears to be moral virtue
 (which differs mainly from contemplative virtue in that it has emotion
 for its matter, and reason for its form), what its nature is, and how it
 subsists, and whether that part of the soul which takes it in is
@@ -3922,7 +3926,7 @@ to run briefly over the views of others, not so much to display my
 research as because, when their ideas have been set forth, mine will
 become more clear and be on a firmer basis.
 
-§ II. Menedemus of Eretria took away the number and differences of
+Sec. II. Menedemus of Eretria took away the number and differences of
 virtues, on the ground that virtue was one though it had many names; for
 that just as mortal is synonymous with man, so temperance and bravery
 and justice were the same thing. And Aristo of Chios also made virtue
@@ -3949,7 +3953,7 @@ from the honourable honourableness, and he made virtues of many other
 such clevernesses, affabilities, and versatilities, and filled
 philosophy, which did not at all require it, with many strange names.
 
-§ III. Now all these agree in supposing virtue to be a disposition and
+Sec. III. Now all these agree in supposing virtue to be a disposition and
 faculty of the governing part of the soul set in motion by reason, or
 rather to be reason itself conformable and firm and immutable. They
 think further that the emotional and unreasoning part of the soul is not
@@ -4006,7 +4010,7 @@ to reason and sense, and turn and submit and mould itself accordingly,
 unless it be entirely corrupted by brute pleasure and a life of
 indulgence.
 
-§ IV. As for those who wonder that what is unreasoning should obey
+Sec. IV. As for those who wonder that what is unreasoning should obey
 reason, they do not seem to me to recognize the power of reason, how
 great it is, and how far-reaching its dominion is--a power not gained by
 harsh and repelling methods, but by attractive ones, as mild persuasion
@@ -4058,8 +4062,8 @@ seeing that those elements are not apart from us or detached from us, or
 formed from outside, or hammered into us by force, but are innate in us,
 and ever associate with us, and are nourished within us, and abound in
 us through habit. Accordingly moral character is well called by the
-Greeks [Greek: êthos], for it is, to speak generally, a quality of the
-unreasoning element in man, and is called [Greek: êthos] because the
+Greeks [Greek: ethos], for it is, to speak generally, a quality of the
+unreasoning element in man, and is called [Greek: ethos] because the
 unreasoning element moulded by reason receives this quality and
 difference by habit, which is called [Greek: ethos].[226] Not that
 reason wishes to expel passion altogether (that is neither possible,
@@ -4075,7 +4079,7 @@ formation of power in the unreasoning element engendered by use, being
 vice if the passions are badly tutored by reason, virtue if they are
 well tutored.
 
-§ V. But since they do not regard every virtue as a mean, nor call it
+Sec. V. But since they do not regard every virtue as a mean, nor call it
 moral, we must discuss this difference by approaching the matter more
 from first principles. Some things in the world exist absolutely, as the
 earth, the sky, the stars, and the sea; others have relation to us, as
@@ -4128,7 +4132,7 @@ the unreasoning part of the soul, is perfection as regards its power and
 quality, but in quantity it is a mean correcting both excess and
 deficiency.
 
-§ VI. But since the word mean has a variety of meanings--for there is
+Sec. VI. But since the word mean has a variety of meanings--for there is
 one kind of mean compounded of two simple extremes, as grey is the mean
 between white and black; and there is another kind of mean, where that
 which contains and is contained is the mean between the containing and
@@ -4243,7 +4247,7 @@ the other is not vexed at what is bad. Incontinence, therefore, is a
 mark of a sophistical soul, endued with reason which cannot abide by
 what it knows to be right.
 
-§ VII. Such, then, are the differences between incontinence and
+Sec. VII. Such, then, are the differences between incontinence and
 intemperance, and continence and temperance have their counterpart and
 analogous differences; for remorse and trouble and annoyance are
 companions of continence, whereas in the soul of the temperate person
@@ -4351,7 +4355,7 @@ when the unreasoning has a controversy with reason, since there can be
 no victory or defeat without pain, forthwith they tear the soul in
 two,[235] and make the difference between them apparent.
 
-§ VIII. And not only from their contest, but quite as much from their
+Sec. VIII. And not only from their contest, but quite as much from their
 agreement, can we see that the source of the passions is something quite
 distinct from that of reason. For since[236] one may love either a good
 and excellent child or a bad and vicious one, and be unreasonably angry
@@ -4380,7 +4384,7 @@ is it not clear that he felt this emotion in himself often contrary to
 reason and detrimental by hesitation and delay to opportunities and
 actions?
 
-§ IX. In a certain sense yielding to the force of these arguments, they
+Sec. IX. In a certain sense yielding to the force of these arguments, they
 call shame modesty, pleasure joy, and timidity caution; nor would anyone
 blame them for this euphemism, if they only gave those specious names to
 the emotions that are consistent with reason, while they gave other
@@ -4411,7 +4415,7 @@ reason, proves that he is compelled by the facts to admit, that that
 element in us which follows absolutely is something different from that
 which follows when persuaded, but resists when not persuaded.
 
-§ X. Now as to those who make all sins and offences equal, it is not now
+Sec. X. Now as to those who make all sins and offences equal, it is not now
 the occasion to discuss if in other respects they deviate from truth:
 but as regards the passions[238] they seem to go clean contrary to
 reason and evidence. For according to them every passion is a sin, and
@@ -4474,7 +4478,7 @@ For otherwise it is ridiculous, as Plato says, to argue that a man is
 sometimes better than himself, sometimes worse, sometimes master of
 himself, sometimes not master of himself.
 
-§ XI. For how is it possible that the same person can be both better and
+Sec. XI. For how is it possible that the same person can be both better and
 worse than himself, both master of himself and not master, unless
 everyone is in some way twofold, having in himself both a better and
 worse self? For so he that makes the baser element subject to the better
@@ -4509,7 +4513,7 @@ unreasoning element call it in. So that it is clear that there are two
 distinct parts of the soul differing from one another in their
 faculties.
 
-§ XII. And generally speaking of all existing things, as they themselves
+Sec. XII. And generally speaking of all existing things, as they themselves
 admit and is clear, some are governed by nature, some by habit, some by
 an unreasoning soul, some by a soul that has reason and intelligence.
 Man too participates in all this, and is subject to all those
@@ -4593,7 +4597,7 @@ Xenocrates, that the mathematics are such handles to philosophy as are
 the emotions of young men, such as shame, desire, repentance, pleasure,
 pain, ambition, whereon reason and the law laying a suitable grip
 succeed in putting the young man on the right road. So that it was no
-bad remark of the Lacedæmonian tutor, that he would make the boy
+bad remark of the Lacedaemonian tutor, that he would make the boy
 entrusted to his charge pleased with what was good and displeased with
 what was bad,[248] for a higher or nobler aim cannot be proposed in the
 education fit for a freeborn lad.
@@ -4603,7 +4607,7 @@ education fit for a freeborn lad.
 [220] Omitting [Greek: hetera], which Reiske justly
 suspects.
 
-[221] Reading [Greek: prôton] with Wyttenbach.
+[221] Reading [Greek: proton] with Wyttenbach.
 
 [222] Homer, "Odyssey," xix. 208-212.
 
@@ -4611,21 +4615,21 @@ suspects.
 after eating a ragout of rabbit, was told it was a
 ragout of cat.--Book X. chapter xii.
 
-[224] As to Amoebeus, see Athenæus, p. 623. D.
+[224] As to Amoebeus, see Athenaeus, p. 623. D.
 
 [225] "Iliad," xvi. 167.
 
 [226] Generally speaking [Greek: ethos] is the habit,
-[Greek: êthos] the moral character generated by habit.
+[Greek: ethos] the moral character generated by habit.
 The former is Aristotle's [Greek: energeia], the latter
 his [Greek: hexis].
 
 [227] I have adopted, it will be seen, the suggestion of
-Wyttenbach, "[Greek: tô logismô] mutandum videtur in
+Wyttenbach, "[Greek: to logismo] mutandum videtur in
 [Greek: ton chalinon]."
 
 [228] Sophocles, "Oedipus Tyrannus," 4, 5. Quoted by our
-author again "On Abundance of Friends," § vi.
+author again "On Abundance of Friends," Sec. vi.
 
 [229] Reading with "Reiske," [Greek: exagetai pros to
 epithymein ta aischra].
@@ -4637,7 +4641,7 @@ epithymein ta aischra].
 [232] "Odyssey," xii. 168, 169.
 
 [233] This line is from Simonides, and is quoted again
-in "How one may be aware of one's Progress in Virtue," §
+in "How one may be aware of one's Progress in Virtue," Sec.
 xiv.
 
 [234] "Iliad," vii. 93.
@@ -4656,20 +4660,20 @@ pleiosi].
 [240] "Iliad," xi. 547.
 
 [241] "De Anaxarchi supplicio nota res. v. Menage ad
-Diog. Läert. 9, 59. De Magae, reguli Cyrenarum, adversus
-Philemonem lenitate v. De Cohibenda Ira, §
+Diog. Laeert. 9, 59. De Magae, reguli Cyrenarum, adversus
+Philemonem lenitate v. De Cohibenda Ira, Sec.
 ix."--_Reiske._
 
 [242] "Celebres fuere quondam Chrysippi sex libri
-[Greek: peri tês kata tas lêzeis anômalias], in quibus
+[Greek: peri tes kata tas lezeis anomalias], in quibus
 auctore Varrone, _propositum habuit ostendere, similes
 res dissimilibus verbis et similibus dissimiles esse
-notatas vocabulis_. v. Menage ad Diog. Läert. 7,
+notatas vocabulis_. v. Menage ad Diog. Laeert. 7,
 192."--_Reiske._
 
-[243] Compare "On Contentedness of Mind," § xiii.
+[243] Compare "On Contentedness of Mind," Sec. xiii.
 
-[244] Reading with _Reiske_, [Greek: aporrêzeien].
+[244] Reading with _Reiske_, [Greek: aporrezeien].
 
 [245] "Iliad," xiii. 284, 285.
 
@@ -4677,11 +4681,11 @@ notatas vocabulis_. v. Menage ad Diog. Läert. 7,
 
 [247] "Iliad," v. 185.
 
-[248] Compare "That Virtue may be Taught," § ii.
+[248] Compare "That Virtue may be Taught," Sec. ii.
 
 ### HOW ONE MAY BE AWARE OF ONE'S PROGRESS IN VIRTUE.
 
-§ I. What amount of argument, Sossius Senecio, will make a man know that
+Sec. I. What amount of argument, Sossius Senecio, will make a man know that
 he is improving in respect to virtue, if his advances in it do not
 bring about some diminution in folly, but vice, weighing equally with
 all his good intentions, "acts like the lead that makes the net go
@@ -4723,7 +4727,7 @@ cowardly and senseless person with no powers of self-control, brave and
 sensible and perfect master of himself, and should in a moment change
 from a brutish life to a divine without being aware of it.
 
-§ II. That was an excellent observation, Measure the stone by the
+Sec. II. That was an excellent observation, Measure the stone by the
 mason's rule, not the rule by the stone.[252] But the Stoics, not
 applying dogmas to facts but facts to their own preconceived opinions,
 and forcing things to agree that do not by nature, have filled
@@ -4739,7 +4743,7 @@ Meletus, in life and its affairs they turn away from and avoid one class
 as implacable, while they make use of the others and trust them in most
 important matters as most worthy people.
 
-§ III. But we who see that in every kind of evil, but especially in a
+Sec. III. But we who see that in every kind of evil, but especially in a
 disordered and unsettled state of mind, there are degrees of more and
 less (so that the progress made differs in different cases, badness
 abating, as a shadow flees away, under the influence of reason, which
@@ -4774,7 +4778,7 @@ off your guard, or receiving as heralds to treat of peace[257] the
 pleasures, or idleness, or stress of business, you may reasonably go
 forward to the future courageously and confidently.
 
-§ IV. Moreover, if there be any intermissions in philosophy, and yet
+Sec. IV. Moreover, if there be any intermissions in philosophy, and yet
 your later studies are firmer and more continuous than your former ones,
 it is no bad indication that your sloth has been expelled by labour and
 exercise; for the contrary is a bad sign, when after a short time your
@@ -4811,7 +4815,7 @@ or military service, strike in and produce a separation. For just as
 more is to be got from philosophy, so much the more does what we fail
 to obtain trouble us.
 
-§ V. Either precisely the same as this or very similar is Hesiod's[261]
+Sec. V. Either precisely the same as this or very similar is Hesiod's[261]
 very ancient definition of progress in virtue, namely, that the road is
 no longer very steep or arduous, but easy and smooth and level, its
 roughness being toned down by exercise, and casting the bright light of
@@ -4843,7 +4847,7 @@ having put them to flight as it were, and when such annoyance and
 distraction is easily got rid of, then one may consider one's progress
 in virtue as a certainty.
 
-§ VI. And since not only the things that in themselves shake and turn
+Sec. VI. And since not only the things that in themselves shake and turn
 them in the opposite direction are more powerful in the case of weak
 philosophers, but also the serious advice of friends, and the playful
 and jeering objections of adversaries bend and soften people, and have
@@ -4875,7 +4879,7 @@ Zeno, observing that Theophrastus was admired for the number of his
 pupils,[264] said, "His choir is, I admit, larger than mine, but mine
 is more harmonious."
 
-§ VII. Whenever then, by thus comparing the advantages of virtue with
+Sec. VII. Whenever then, by thus comparing the advantages of virtue with
 external things, you get rid of envies and jealousies and those things
 which fret and depress the minds of many who are novices in philosophy,
 this also is a great indication of your progress in virtue. Another and
@@ -4900,8 +4904,8 @@ the condition people are in in respect to all philosophy, until the
 judgement gets into a sound and healthy state, and begins to adapt
 itself to those things which can produce character and greatness of
 mind, and to seek discourses whose footsteps turn inwards rather than
-outwards, to borrow the language of Æsop.[267] For as Sophocles said he
-had first toned down the pompous style of Æschylus, then his harsh and
+outwards, to borrow the language of AEsop.[267] For as Sophocles said he
+had first toned down the pompous style of AEschylus, then his harsh and
 over-artificial method, and had in the third place changed his manner
 of diction, a most important point and one that is most intimately
 connected with the character, so those who go in for philosophy, when
@@ -4909,7 +4913,7 @@ they have passed from flattering and artificial discourses to such as
 deal with character and emotion, are beginning to make genuine and
 modest progress in virtue.
 
-§ VIII. Furthermore, take care, in reading the writings of philosophers
+Sec. VIII. Furthermore, take care, in reading the writings of philosophers
 or hearing their speeches, that you do not attend to words more than
 things, nor get attracted more by what is difficult and curious than by
 what is serviceable and solid and useful. And also, in studying poems or
@@ -4926,8 +4930,8 @@ bloom, do they not resemble people who love drugs for their smell and
 colour, but care not for them as anodynes or purges, and are not aware
 of those properties? Whereas those who have more proficiency can derive
 benefit not from discourses only, but from sights and actions, and cull
-what is good and useful, as is recorded of Æschylus and other similar
-kind of men. As to Æschylus, when he was watching a contest in boxing at
+what is good and useful, as is recorded of AEschylus and other similar
+kind of men. As to AEschylus, when he was watching a contest in boxing at
 the Isthmus, and the whole theatre cried out upon one of the boxers
 being beaten, he nudged with his elbow Ion of Chios, and said, "Do you
 observe the power of training? The beaten man holds his peace, while the
@@ -4953,7 +4957,7 @@ scholars like it whatever he has got, and as it feeds its callow young
 from its own mouth, "though it goes ill with itself," so he gets no
 advantage or food from what he has got for himself.
 
-§ IX. We must therefore see to it that our discourse be serviceable to
+Sec. IX. We must therefore see to it that our discourse be serviceable to
 ourselves, and that it may not appear to others to be vain-glorious or
 ambitious, and we must show that we are as willing to listen as to
 teach, and especially must we lay aside all disputatiousness and love of
@@ -4985,7 +4989,7 @@ who aim at virtue and what is noble to lose no opportunity of public
 speaking, paying very little attention to either uproar or applause at
 their speeches.
 
-§ X. And not only ought each to see to his discourses but also to his
+Sec. X. And not only ought each to see to his discourses but also to his
 actions whether he regards utility more than show, and truth more than
 display. For if a genuine love for youth or maiden seeks no witnesses,
 but is content to enjoy its delights privately, far more does it become
@@ -5030,7 +5034,7 @@ eagerly snatch at the name and reputation of philosopher, nor do they
 write themselves down as such, but even if he were addressed by that
 title by anyone else, an ingenuous young man would say, smiling and
 blushing, "I am not a god: why do you liken me to the immortals?"[279]
-For as Æschylus says,
+For as AEschylus says,
 
 "I never can mistake the burning eye
 Of the young woman that has once known man,"[280]
@@ -5054,7 +5058,7 @@ as time went on became ordinary kind of people, the more they had to do
 with learning, so much the more laying aside their pride and high
 estimate of themselves.
 
-§ XI. Of people that need the help of the physician some, if their tooth
+Sec. XI. Of people that need the help of the physician some, if their tooth
 ache or even finger smart, run at once to the doctor, others if they are
 feverish send for one and implore his assistance at their own home,
 others who are melancholy or crazy or delirious will not sometimes even
@@ -5111,7 +5115,7 @@ companions that the man who did not wish to be disturbed by the changes
 and chances of life should attain a similar composedness of mind through
 reason and philosophy.
 
-§ XII. Look also at the opinion of Zeno, who thought that everybody
+Sec. XII. Look also at the opinion of Zeno, who thought that everybody
 might gauge his progress in virtue by his dreams, if he saw himself in
 his dreams pleasing himself with nothing disgraceful, and neither doing
 nor wishing to do anything dreadful or unjust, but that, as in the clear
@@ -5156,7 +5160,7 @@ to the passions. Do you investigate all these points too, as to whether
 they are signs of progress in virtue, or of some habit which has already
 a settled constancy and strength through reason.
 
-§ XIII. Now since entire freedom from the passions is a great and divine
+Sec. XIII. Now since entire freedom from the passions is a great and divine
 thing, and progress in virtue seems, as we say, to consist in a certain
 remissness and mildness of the passions, we must observe the passions
 both in themselves and in reference to one another to gauge the
@@ -5184,7 +5188,7 @@ passions,
 
 as Sophocles says.
 
-§ XIV. I have already said that it is a very great indication of
+Sec. XIV. I have already said that it is a very great indication of
 progress in virtue to transfer our judgement to action, and not to let
 our words remain merely words, but to make deeds of them. A
 manifestation of this is in the first place emulation as regards what we
@@ -5217,7 +5221,7 @@ is steeped in contentiousness and envy against his betters, let him know
 that he may be pricked on by a jealous desire for glory or power, but
 that he neither honours nor admires virtue.
 
-§ XV. Whenever, then, we begin so much to love good men that we deem
+Sec. XV. Whenever, then, we begin so much to love good men that we deem
 happy, "not only," as Plato[292] says, "the temperate man himself, but
 also the man who hears the words that flow from his wise lips," and
 even admire and are pleased with his figure and walk and look and smile,
@@ -5244,14 +5248,14 @@ occasion, what Epaminondas would have said, how Lycurgus or Agesilaus
 would have dealt; that so, adjusting and re-modelling themselves, as it
 were, at their mirrors, they may correct any ignoble expression, and
 repress any ignoble passion. For as those that have learnt the names of
-the Idæan Dactyli[296] make use of them to banish their fear by quietly
+the Idaean Dactyli[296] make use of them to banish their fear by quietly
 repeating them over, so the bearing in mind and remembering good men,
 which soon suggests itself forcibly to those who have made some progress
 in virtue in all their emotions and difficulties, keeps them upright and
 not liable to fall. Let this also then be a sign to you of progress in
 virtue.
 
-§ XVI. In addition to this, not to be too much disturbed, nor to blush,
+Sec. XVI. In addition to this, not to be too much disturbed, nor to blush,
 nor to try and conceal oneself, or make any change in one's dress, on
 the sudden appearance of a man of distinction and virtue, but to feel
 confident and go and meet such a one, is the confirmation of a good
@@ -5270,7 +5274,7 @@ again, and be spectators of his life and actions; as, on the contrary,
 those that have neglected their affairs, and come to ruin, cannot look
 upon their relatives even in dreams without fear and trembling.
 
-§ XVII. Add, if you please, to what I have already said, as no small
+Sec. XVII. Add, if you please, to what I have already said, as no small
 indication of progress in virtue, the thinking no wrong-doing small, but
 being on your guard and heed against all. For as people who despair of
 ever being rich make no account of small expenses, thinking they will
@@ -5307,7 +5311,7 @@ nail.[303]
 "And gape at widest to glut him."
 
 [254] Hesiod, "Works and Days," 361, 362. Quoted again
-by our author, "On Education," § 13.
+by our author, "On Education," Sec. 13.
 
 [255] "In via ad virtutem qui non progreditur, is non
 stat et manet, sed regreditur."--_Wyttenbach._
@@ -5320,8 +5324,8 @@ stat et manet, sed regreditur."--_Wyttenbach._
 [258] From Homer, "Iliad," xix. 386.
 
 [259] Compare Aristotle, _Rhetoric_, i. 11. [Greek: kai
-archê de tou erôtos gignetai autê pasin, otan mê monon
-parontos chairôsin, alla kai apontos memnêmenoi erôsin.]
+arche de tou erotos gignetai aute pasin, otan me monon
+parontos chairosin, alla kai apontos memnemenoi erosin.]
 
 [260] The line is a Fragment of Sophocles.
 
@@ -5330,9 +5334,9 @@ parontos chairôsin, alla kai apontos memnêmenoi erôsin.]
 [262] The well-known Cynic philosopher.
 
 [263] Bergk. fr. 15. Compare Homer, "Iliad," vi. 339.
-[Greek: nikê d' epameibetai andras].
+[Greek: nike d' epameibetai andras].
 
-[264] We are told by Diogenes Läertius, v. 37, that
+[264] We are told by Diogenes Laeertius, v. 37, that
 Theophrastus had 2000 hearers sometimes at once.
 
 [265] "Republic," vii. p. 539, B.
@@ -5340,33 +5344,33 @@ Theophrastus had 2000 hearers sometimes at once.
 [266] Sentences borrowed from some author or other,
 such, as we still possess from the hands of Hermogenes
 and Aphthonius; compare the collection of bon-mots of
-Greek courtesans in Athenæus.
+Greek courtesans in Athenaeus.
 
-[267] A reference to Æsop's Fable, [Greek: Leôn kai
-Halôpêz]. Cf. Horace, "Epistles," i. i. 73-75.
+[267] A reference to AEsop's Fable, [Greek: Leon kai
+Halopez]. Cf. Horace, "Epistles," i. i. 73-75.
 
 [268] This passage is alluded to also in "On Love to
-one's Offspring." § ii.
+one's Offspring." Sec. ii.
 
 [269] Madvig's text.
 
 [270] Thucydides, i. 18.
 
 [271] Homer, "Iliad," ix. 323, 324. Quoted also in "On
-Love to One's Offspring," § ii.
+Love to One's Offspring," Sec. ii.
 
 [272] The remark about Demosthenes has somehow slipped
 out, as Wyttenbach has suggested.
 
-[273] Does this refer to [Greek: Pêlêiadeô] before
-[Greek: Hachilêos] in "Iliad," i. 1?
+[273] Does this refer to [Greek: Peleiadeo] before
+[Greek: Hachileos] in "Iliad," i. 1?
 
 [274] An allusion to some passage in a Play that has not
 come down to us.
 
-[275] Compare our Author, _De Audiendis Poetis_, § xi.
-[Greek: hôsper ho Agêsilaos ouk hypemeinen hypo tou
-kalou philêthênai prosiontos].
+[275] Compare our Author, _De Audiendis Poetis_, Sec. xi.
+[Greek: hosper ho Agesilaos ouk hypemeinen hypo tou
+kalou philethenai prosiontos].
 
 [276] Reading with Madvig and Hercher, [Greek: to gar
 auton], sq.
@@ -5376,22 +5380,22 @@ auton], sq.
 
 [278] Marks of a philosopher among the ancients. Compare
 our Author, "How one may discern a flatterer from a
-friend," § vii.
+friend," Sec. vii.
 
 [279] "Odyssey," xvi. 187.
 
-[280] Æschylus, "Toxotides," Fragm. 224. Quoted again by
-our author, "On Love," § xxi.
+[280] AEschylus, "Toxotides," Fragm. 224. Quoted again by
+our author, "On Love," Sec. xxi.
 
 [281] "Turpe habitum fuisse in caupona conspici, et hoc
 exemplo apparet, et alia sunt indicia. Isocrates Orat.
 Areopagitica laudans antiquorum Atheniensium mores, p.
-257: [Greek: en kapêleiô de phagein ê piein oudeis han
-oiketês epieikês etolmêse]: quem locum citans Athenæus
+257: [Greek: en kapeleio de phagein e piein oudeis han
+oiketes epieikes etolmese]: quem locum citans Athenaeus
 alia etiam adfert xiii. p. 566, F."--_Wyttenbach._
 
 [282] Wyttenbach compares Quintilian, "Institut. Orat."
-iii. 6, p. 255: "Nam et Hippocrates clarus arte medicinæ
+iii. 6, p. 255: "Nam et Hippocrates clarus arte medicinae
 videtur honestissime fecisse, qui quosdam errores suos,
 ne posteri errarent, confessus est."
 
@@ -5402,7 +5406,7 @@ ne posteri errarent, confessus est."
 [285] Plato, "Republic," ix. p. 571, D.
 
 [286] A somewhat similar story about Stilpo is told in
-Athenæus, x. p. 423, D.
+Athenaeus, x. p. 423, D.
 
 [287] So Haupt and Herscher very ingeniously for [Greek:
 hiereusin].
@@ -5417,7 +5421,7 @@ C.
 [290] Plato, "Symposium," p. 25, E.
 
 [291] This line is quoted again by our author, "On Moral
-Virtue," § vii.
+Virtue," Sec. vii.
 
 [292] Plato, "Laws," iv. p. 711, E.
 
@@ -5435,8 +5439,8 @@ of Euripides. Dind. (328).
 [297] Such as Homer could have brought. Compare Horace,
 "Odes," iv. ix. 25-28; and Cicero, "pro Archia," x.
 "Magnus ille Alexander--cum in Sigeo ad Achillis tumulum
-adstitisset, O fortunate, inquit, adolescens, qui tuæ
-virtutis Homerum præconem inveneris."
+adstitisset, O fortunate, inquit, adolescens, qui tuae
+virtutis Homerum praeconem inveneris."
 
 [298] Contrary to Hesiod's saw, "Works and Days," 361,
 362.
@@ -5458,7 +5462,7 @@ by drawing his nail over the surface. Casaub. Pers. i.
 
 ### WHETHER VICE IS SUFFICIENT TO CAUSE UNHAPPINESS.[304]
 
-§ I. ... He who gets a dowry with his wife sells himself for it, as
+Sec. I. ... He who gets a dowry with his wife sells himself for it, as
 Euripides says,[305] but his gains are few and uncertain; but he who
 does not go all on fire through many a funeral pile, but through a regal
 pyre, full of panting and fear and sweat got from travelling over the
@@ -5479,7 +5483,7 @@ Fortune's rope-dance, he seeks retirement, and deems those happy who
 live obscure and in security, while they again look up admiringly at him
 who soars so high above their heads.[308]
 
-§ II. Vice has universally an ill effect on everybody, being in itself a
+Sec. II. Vice has universally an ill effect on everybody, being in itself a
 sufficient producer of infelicity, needing no instruments nor ministers.
 For tyrants, anxious to make those whom they punish wretched, keep
 executioners and torturers, and contrive branding-irons and other
@@ -5494,7 +5498,7 @@ can never quiet anger or smother grief, or persuade a timid person not
 to run away, or one suffering from remorse not to cry out, nor tear his
 hair, nor smite his thigh. Thus vice is stronger than fire and sword.
 
-§ III. You know of course that cities, when they desire to publicly
+Sec. III. You know of course that cities, when they desire to publicly
 contract for the building of temples or colossuses, listen to the
 estimates of the contractors who compete for the job, and bring their
 plans and charges, and finally select the contractor who will do the
@@ -5540,7 +5544,7 @@ was the happy mode of burial amongst the Scythians,[311] and among the
 Hyrcanians dogs, among the Bactrians birds, devour according to the laws
 the dead bodies of those who have made a happy end.
 
-§ IV. Who then are made unhappy by these things? Those who have no
+Sec. IV. Who then are made unhappy by these things? Those who have no
 manliness or reason, the enervated and untrained, who retain the
 opinions they had as children. Fortune therefore does not produce
 perfect infelicity, unless Vice co-operate. For as a thread saws through
@@ -5555,12 +5559,12 @@ receive its essence, so he who will be upset in soul by Fortune must
 have some secret internal ulcer or sore to make external things so
 piteous and lamentable.
 
-§ V. Does then Vice need Fortune to bring about infelicity? By no means.
+Sec. V. Does then Vice need Fortune to bring about infelicity? By no means.
 She lashes not up the rough and stormy sea, she girds not lonely
 mountain passes with robbers lying in wait by the way, she makes not
 clouds of hail to burst on the fruitful plains, she suborns not Meletus
 or Anytus or Callixenus as accusers, she takes not away wealth, excludes
-not people from the prætorship to make them wretched; but she scares the
+not people from the praetorship to make them wretched; but she scares the
 rich, the well-to-do, and great heirs; by land and sea she insinuates
 herself and sticks to people, infusing lust, inflaming with anger,
 afflicting them with superstitious fears, tearing them in pieces with
@@ -5571,7 +5575,7 @@ is the first paragraph at all clear. We have to guess
 somewhat at the meaning.
 
 [305] In a fragment of the "Phaethon." Compare also "On
-Education," § 19.
+Education," Sec. 19.
 
 [306] "Iliad," xxiii. 297, 298.
 
@@ -5588,7 +5592,7 @@ Education," § 19.
 
 ### WHETHER THE DISORDERS OF MIND OR BODY ARE WORSE.
 
-§ I. Homer, looking at the mortality of all living creatures, and
+Sec. I. Homer, looking at the mortality of all living creatures, and
 comparing them with one another in their lives and habits, gave vent to
 his thoughts in the words,
 
@@ -5606,7 +5610,7 @@ first its own doing, then its settled condition. And it is no slight aid
 to tranquillity of mind if what is bad be capable of cure, and lighter
 and less violent.
 
-§ II. The fox in Æsop[313] disputing with the leopard as to their
+Sec. II. The fox in AEsop[313] disputing with the leopard as to their
 respective claims to variety, the latter showed its body and appearance
 all bright and spotted, while the tawny skin of the former was dirty and
 not pleasant to look at. Then the fox said, "Look inside me, sir judge,
@@ -5638,7 +5642,7 @@ disturb the brain as in the case of a musical instrument,
 
 "And move the mind's strings hitherto untouched."[316]
 
-§ III. And so doctors wish a man not to be ill, or if he is ill to be
+Sec. III. And so doctors wish a man not to be ill, or if he is ill to be
 ignorant of it, as is the case with all diseases of the soul. For
 neither those who are out of their minds, nor the licentious, nor the
 unjust think themselves faulty--some even think themselves perfect. For
@@ -5671,7 +5675,7 @@ then is he dragged into the open air, and becomes the victim of anger,
 contentiousness, lust, and grief, and is compelled to do and say many
 lawless things unsuitable to the occasion.
 
-§ IV. As therefore the storm which prevents one's putting into harbour
+Sec. IV. As therefore the storm which prevents one's putting into harbour
 is more dangerous than the storm which will not let one sail, so those
 storms of the soul are more formidable which do not allow a man to take
 in sail, or to calm his reason when it is disturbed, but without a pilot
@@ -5684,7 +5688,7 @@ passions? The very times bring them to our mind. Do you see yon great
 and promiscuous crowd jostling against one another and surging round the
 rostrum and forum? They have not assembled here to sacrifice to their
 country's gods, nor to share in one another's rites; they are not
-bringing to Ascræan Zeus the firstfruits of Lydian produce,[319] nor are
+bringing to Ascraean Zeus the firstfruits of Lydian produce,[319] nor are
 they celebrating in honour of Dionysus the Bacchic orgies on festival
 nights with common revellings; but a mighty plague stirring up Asia in
 annual cycles drives them here for litigation and suits at law at stated
@@ -5699,15 +5703,15 @@ by frantic love of strife, a third by some sordid desire.[320]
 
 [312] Homer, "Iliad," xvii. 446, 447.
 
-[313] See the Fable [Greek: Alôpêx kai Pardalis]. No.
+[313] See the Fable [Greek: Alopex kai Pardalis]. No.
 42, Ed. Halme.
 
-[314] Reading with Wyttenbach, [Greek: ôchriasesi kai
-erythêmasi].
+[314] Reading with Wyttenbach, [Greek: ochriasesi kai
+erythemasi].
 
 [315] Forte [Greek: agnoian]."--_Wyttenbach._ The
 ordinary reading is [Greek: anoian]. "E coelo descendit
-[Greek: gnôthi seauton]," says Juvenal truly, xi. 27.
+[Greek: gnothi seauton]," says Juvenal truly, xi. 27.
 
 [316] Compare the image in Shakspere, "Hamlet," A. iii.
 Sc. I. 165, 166.
@@ -5715,7 +5719,7 @@ Sc. I. 165, 166.
 "Now see that noble and most sovereign reason,
 Like sweet bells jangled, out of tune and harsh."
 
-[317] Euripides, "Bacchæ," 1170-1172. Agave's treatment
+[317] Euripides, "Bacchae," 1170-1172. Agave's treatment
 of her son Pentheus was a stock philosophical
 comparison. See for example Horace, ii. "Sat." iii. 303,
 304, and context.
@@ -5731,7 +5735,7 @@ Xylandro fuerit, non intelligo."--_Reiske._
 
 ON ABUNDANCE OF FRIENDS.
 
-§ I. Menon the Thessalian, who thought he was a perfect adept in
+Sec. I. Menon the Thessalian, who thought he was a perfect adept in
 discourse, and, to borrow the language of Empedocles, "had attained the
 heights of wisdom," was asked by Socrates, what virtue was, and upon his
 answering quickly and glibly, that virtue was a different thing in boy
@@ -5747,7 +5751,7 @@ Briareus or all eyes like Argus. And yet we wonderfully praise the young
 man in Menander, who said that he thought anyone wonderfully good, if he
 had even the shadow of a friend.[322]
 
-§ II. But among many other things what stands chiefly in the way of
+Sec. II. But among many other things what stands chiefly in the way of
 getting a friend is the desire for many friends, like a licentious woman
 who, through giving her favours indiscriminately, cannot retain her old
 lovers, who are neglected and drop off;[323] or rather like the
@@ -5778,7 +5782,7 @@ only one, as Homer calls a beloved son "the only one, the child of old
 age,"[328] that is, when the parents neither have nor are likely to have
 another child.
 
-§ III. Not that we insist on only one friend, but among the rest there
+Sec. III. Not that we insist on only one friend, but among the rest there
 should be one eminently so, like a child of old age, who according to
 that well-known proverb has eaten a bushel of salt with one,[329] not as
 nowadays many so-called friends contract friendship from drinking
@@ -5818,7 +5822,7 @@ mixed up and changed form, so a bad friend is troublesome both to others
 and himself if retained, and if he be got rid of forcibly it is with
 hostility and hatred, and like the voiding of bile.
 
-§ IV. We ought not, therefore, lightly to welcome or strike up an
+Sec. IV. We ought not, therefore, lightly to welcome or strike up an
 intimate friendship with any chance comers, or love those who attach
 themselves to us, but attach ourselves to those who are worthy of our
 friendship. For what is easily got is not always desirable: and we pass
@@ -5828,7 +5832,7 @@ friend of the person who is expert in twining himself around us, but
 after testing them to attach ourselves to those who are worthy of our
 affection and likely to be serviceable to us.
 
-§ V. As therefore Zeuxis, when some people accused him of painting
+Sec. V. As therefore Zeuxis, when some people accused him of painting
 slowly, replied, "I admit that I do, but then I paint to last," so ought
 we to test for a long time the friendship and intimacy that we take up
 and mean to keep. Is it not easy then to put to the test many friends,
@@ -5856,7 +5860,7 @@ in the same directions, nor are our fortunes in life identical, for
 opportunities of action are, like the winds, favourable to some,
 unfavourable to others.
 
-§ VI. Moreover, if all our friends want to do the same things at the
+Sec. VI. Moreover, if all our friends want to do the same things at the
 same time, it will be difficult to satisfy them all, whether they desire
 to deliberate, or to act in state affairs, or wish for office, or are
 going to entertain guests. If again at the same time they chance to be
@@ -5910,7 +5914,7 @@ Chilo[341] to one who told him he had no enemy, "Neither," said he, "do
 you seem to me to have a friend." For enmities inevitably accompany and
 are involved in friendships.
 
-§ VII. It is impossible I say not to share with a friend in his injuries
+Sec. VII. It is impossible I say not to share with a friend in his injuries
 and disgraces and enmities, for enemies at once suspect and hate the
 friend of their enemies, and even friends are often envious and jealous
 and carp at him. As then the oracle given to Timesias about his colony
@@ -5933,7 +5937,7 @@ those that most displayed their virtue perished with their friends that
 were ill, for they neglected their own lives in going to visit
 them.[344]
 
-§ VIII. We ought not therefore to be too lavish with our virtue, binding
+Sec. VIII. We ought not therefore to be too lavish with our virtue, binding
 it together and implicating it in various people's fortunes, but we
 ought to preserve our friendship for those who are worthy of it, and are
 capable of reciprocating it. For this is indeed the greatest argument
@@ -5950,7 +5954,7 @@ friendship there must be no unlike, or uneven, or unequal element, but
 from all alike must come agreement in opinions and wishes and feeling,
 as if one soul were put into several bodies.
 
-§ IX. What man then is so industrious, so changeable, and so versatile,
+Sec. IX. What man then is so industrious, so changeable, and so versatile,
 as to be able to make himself like and adapt himself to many different
 persons, and not to laugh at the advice of Theognis, "Imitate the
 ingenuity of the polypus, that takes the colour of whatever stone it
@@ -5975,19 +5979,19 @@ thing rare and hard to find.
 [321] Plato, "Men." p. 71 E.
 
 [322] Quoted more fully by our author, "De Fraterno
-Amore," § iii.
+Amore," Sec. iii.
 
 [323] "Eadem comparatione utitur Lucianus in Toxari T.
-ii. p. 351: [Greek: hostis an polyphilos hê homoios
-hêmin dokei tais koinais tautais kai moicheuomenais
-gynaixi; kai oiometh' ouketh' homoiôs ischyran tên
+ii. p. 351: [Greek: hostis an polyphilos he homoios
+hemin dokei tais koinais tautais kai moicheuomenais
+gynaixi; kai oiometh' ouketh' homoios ischyran ten
 philian autou einai pros pollas eunoias
 diairetheisan]."--_Wyttenbach._
 
 [324] From the "Hypsipyle" of Euripides.
 
 [325] A well-known proverb for beginning at the
-beginning. Aristophanes, "Vespæ." 846; Plato,
+beginning. Aristophanes, "Vespae." 846; Plato,
 "Euthryphro," 3 A; Strabo, 9.
 
 [326] An allusion to the well-known proverb, [Greek:
@@ -6000,7 +6004,7 @@ koloios poti koloion]. See Erasmus, "Adagia," p. 1644.
 [329] Cf. Cicero, "De Amicitia," xix.
 
 [330] Sophocles, Fragm. 741. Quoted again by our author,
-"On Love," § xxiii.
+"On Love," Sec. xxiii.
 
 [331] For the image compare Lucio's speech, Shakspere,
 "Measure for Measure," A. iv. Sc. iii. 189, 190: "Nay,
@@ -6015,18 +6019,18 @@ friar, I am a kind of burr; I shall stick."
 [335] Bergk. p. 1344^3.
 
 [336] Sophocles, "Oedipus Tyrannus," 4, 5. Quoted again
-"On Moral Virtue," § vi.
+"On Moral Virtue," Sec. vi.
 
 [337] A line from Menander. Quoted again "De Fraterno
-Amore," § xx.
+Amore," Sec. xx.
 
-[338] Reading with Halm and Hercher [Greek: en tôi
-pollois philois chrêsthai.]
+[338] Reading with Halm and Hercher [Greek: en toi
+pollois philois chresthai.]
 
 [339] Euripides, "Hippolytus," 253-257, where Dindorf
 and Hercher agree in the reading.
 
-[340] Compare "On Education," § xvii.
+[340] Compare "On Education," Sec. xvii.
 
 [341] Chilo was one of the Seven Wise Men. See
 Pausanias, iii. 16; X. 24.
@@ -6036,7 +6040,7 @@ sq.
 
 [343] For the friendship of Theseus and Pirithous, see
 Pausanias, i. 17; x. 29. The line is from Euripides,
-"Pirithous," Fragm. 591. Cf. "On Shyness," § x.
+"Pirithous," Fragm. 591. Cf. "On Shyness," Sec. x.
 
 [344] Thucydides, ii. 51.
 
@@ -6049,12 +6053,12 @@ vultus mutantem Protea nodo?"
 
 [347] Literally, "having no hearth of character," the
 hearth being an emblem of stability. Compare "How One
-may Discern a Flatterer from a Friend," § vii., where
+may Discern a Flatterer from a Friend," Sec. vii., where
 the same image is employed.
 
 ### HOW ONE MAY DISCERN A FLATTERER FROM A FRIEND.
 
-§ I. Plato says,[348] Antiochus Philopappus, that all men pardon the man
+Sec. I. Plato says,[348] Antiochus Philopappus, that all men pardon the man
 who acknowledges that he is excessively fond of himself, but that there
 is among many other defects this very grave one in self-love, that by it
 a man becomes incapable of being a just and impartial judge about
@@ -6078,7 +6082,7 @@ and ignorance of his own good or bad qualities, thus making his good
 points defective and imperfect, and his bad points altogether
 incorrigible.
 
-§ II. If however, as is the case with most other bad things, the
+Sec. II. If however, as is the case with most other bad things, the
 flatterer attacked only or chiefly ignoble or worthless persons, the
 evil would not be so mischievous or so difficult to guard against. But
 since, as wood-worms breed most in soft and sweet wood, those whose
@@ -6134,7 +6138,7 @@ upon good actions, people endure also easily and without pain admonition
 and plainspeaking, believing and continuing to love the person who took
 such pleasure in praising, as if now he only blamed out of necessity.
 
-§ III. It is difficult then, someone may say, to distinguish between the
+Sec. III. It is difficult then, someone may say, to distinguish between the
 flatterer and the friend, if they differ neither in the pleasure they
 give nor in the praise they bestow; for as to services and attentions
 you may often see friendship outstripped by flattery. Certainly it is
@@ -6145,7 +6149,7 @@ oil-flask-carriers and table-men, men who begin to talk, as one said,
 the moment their hands have been washed for dinner,[356] whose
 servility, ribaldry, and want of all decency, is apparent at the first
 dish and glass. It did not of course require very much discrimination to
-detect Melanthius the parasite of Alexander of Pheræ of flattery, who,
+detect Melanthius the parasite of Alexander of Pherae of flattery, who,
 to those who asked how Alexander was murdered, answered, "Through his
 side into my belly": or those who formed a circle round a wealthy table,
 "whom neither fire, nor sword, nor steel, would keep from running to a
@@ -6154,7 +6158,7 @@ crossed over into Syria were nicknamed "step-ladders,"[358] because they
 lay down and let the kings' wives use their bodies as steps to mount
 their carriages.
 
-§ IV. What kind of flatterer then must we be on our guard against? The
+Sec. IV. What kind of flatterer then must we be on our guard against? The
 one who neither seems to be nor acknowledges himself to be one: whom you
 will not always find in the vicinity of your kitchen, who is not to be
 caught watching the dial to see how near it is to dinner-time,[359] nor
@@ -6181,7 +6185,7 @@ pass through, and if large holes they pass with the corn, so flattery is
 not easily distinguished from friendship, being mixed up with it in
 feeling and emotion, habit and custom.
 
-§ V. Because however friendship is the most pleasant of all things, and
+Sec. V. Because however friendship is the most pleasant of all things, and
 nothing more glads the heart of man, therefore the flatterer attracts by
 the pleasure he gives, pleasure being in fact his field. And because
 favours and good services accompany friendship, as the proverb says "a
@@ -6213,7 +6217,7 @@ detect him by the differences between him and the true friend, and to
 show that he is, as Plato says, "tricked out in other people's colours
 and forms, from lack of any of his own."[367]
 
-§ VI. Let us examine the matter then from the beginning. I said that
+Sec. VI. Let us examine the matter then from the beginning. I said that
 friendship originated in most cases from a similar disposition and
 nature, generally inclined to the same habits and morals, and rejoicing
 in the same pursuits, studies, and amusements, as the following lines
@@ -6234,7 +6238,7 @@ surprise and excessive admiration, making him more and more convinced
 that his likes and dislikes are the fruits of judgement and not of
 caprice.
 
-§ VII. How then is the flatterer convicted, and by what differences is
+Sec. VII. How then is the flatterer convicted, and by what differences is
 he detected, of being only a counterfeit, and not really like his
 victim? We must first then look at the even tenor and consistency of his
 principles, if he always delights in the same things, and always praises
@@ -6250,8 +6254,8 @@ him. The ape indeed, as it seems, attempting to imitate man, is caught
 imitating his movements and dancing like him, but the flatterer himself
 attracts and decoys other men, imitating not all alike, for with one he
 sings and dances, with another he wrestles and gets covered with the
-dust of the palæstra, while he follows a third fond of hunting and the
-chase all but shouting out the words of Phædra,
+dust of the palaestra, while he follows a third fond of hunting and the
+chase all but shouting out the words of Phaedra,
 
 "How I desire to halloo on the dogs,
 Chasing the dappled deer,"[370]
@@ -6279,7 +6283,7 @@ Circe's cup, for ignorance and oblivion and silliness reigned rampant. I
 am borne out in what I say by the behaviour of great flatterers and
 demagogues,[373] the greatest of whom Alcibiades, a jeerer and
 horse-rearer at Athens, and living a gay and merry life, wore his hair
-closely shaven at Lacedæmon, and washed in cold water, and attired
+closely shaven at Lacedaemon, and washed in cold water, and attired
 himself in a threadbare cloak; while in Thrace he fought[374] and drank;
 and at Tissaphernes' court lived delicately and luxuriously and in a
 pretentious style; and thus curried favour and was popular with
@@ -6290,7 +6294,7 @@ they maintained everywhere their usual demeanour, both in dress and diet
 and language and behaviour. So Plato[375] at Syracuse was exactly the
 same man as in the Academy, the same with Dionysius as with Dion.
 
-§ VIII. As to the changes of the flatterer, which resemble those of the
+Sec. VIII. As to the changes of the flatterer, which resemble those of the
 polypus,[376] a man may most easily detect them by himself pretending to
 change about frequently, and by censuring the kind of life he used
 formerly to praise, and anon approving of the words actions and modes of
@@ -6314,7 +6318,7 @@ in everything, my shadow will do that better, but I need one that will
 speak the truth and help me with his judgement." This is one way of
 detecting the flatterer.
 
-§ IX. We must also observe another difference in the resemblance between
+Sec. IX. We must also observe another difference in the resemblance between
 the friend and flatterer. The true friend does not imitate you in
 everything, nor is he too keen to praise, but praises only what is
 excellent, for as Sophocles says,
@@ -6369,7 +6373,7 @@ is on everything, he is a creature creeping on his teeth," for such is a
 true picture of the parasite, "friends of the frying-pan, hunting for a
 dinner," to borrow the language of Eupolis.
 
-§ X. However let us put off all this to its proper place in the
+Sec. X. However let us put off all this to its proper place in the
 discourse. But let us not fail to notice the wiliness of the flatterer's
 imitation, in that, even if he imitates any good points in the person he
 flatters, he always takes care to give him the palm. Whereas among real
@@ -6394,7 +6398,7 @@ Thus he shows at once that his friend's aims in life are good, and that
 his friend has reached a height he cannot soar to. Such then are the
 differences in the resemblances between the flatterer and the friend.
 
-§ XI. But since, as has been said before, to give pleasure is common to
+Sec. XI. But since, as has been said before, to give pleasure is common to
 both, for the good man delights in his friends as much as the bad man in
 his flatterers, let us consider the difference between them here too.
 The difference lies in the different aim of each in giving pleasure.
@@ -6468,11 +6472,11 @@ in being praised by those who would also censure him,[392] so ought we
 to think that to please and gratify us is friendly in the person who can
 also give us pain and oppose us, but to feel suspicion at an intercourse
 which is merely for pleasure and gratification, and never pungent, aye
-and by Zeus to have ready that saying of the Lacedæmonian, who, on
+and by Zeus to have ready that saying of the Lacedaemonian, who, on
 hearing king Charillus praised, said, "How can he be a good man, who is
 not severe even to the bad?"
 
-§ XII. They say the gadfly attacks bulls, and the tick dogs, in the ear:
+Sec. XII. They say the gadfly attacks bulls, and the tick dogs, in the ear:
 so the flatterer besieges with praise the ears of those who are fond of
 praise, and sticks there and is hard to dislodge. We ought therefore
 here to make a wide-awake and careful discrimination, whether the praise
@@ -6535,7 +6539,7 @@ get drunk, and Herculeses if they can wrestle, and do they not joy in
 such titles, and are they not dragged into every kind of disgrace by
 flattery?
 
-§ XIII. Wherefore we must be especially on our guard against the
+Sec. XIII. Wherefore we must be especially on our guard against the
 flatterer in regard to praise; as indeed he is very well aware himself,
 and clever to avoid suspicion. If he light upon some dandy, or rustic in
 a thick leather garment, he treats him with nothing but jeers and
@@ -6559,7 +6563,7 @@ spoken ill of your friends, seeing that you don't even treat your
 enemies so: and that you should have tried to rob other people, seeing
 that you are so lavish with your own money."
 
-§ XIV. Other flatterers again, just as painters heighten the effect of
+Sec. XIV. Other flatterers again, just as painters heighten the effect of
 their pictures by the combination of light and shade, so by censure
 abuse detraction and ridicule of the opposite virtues secretly praise
 and foment the actual vices of those they flatter. Thus they censure
@@ -6611,7 +6615,7 @@ out, "Good! How admirable!" he is evidently
 
 wishing by praise to puff you up.
 
-§ XV. Moreover, as some have defined painting to be silent poetry,[407]
+Sec. XV. Moreover, as some have defined painting to be silent poetry,[407]
 so is there praise in silent flattery. For as hunters are more likely to
 catch the objects of their chase unawares, if they do not openly appear
 to be so engaged, but seem to be walking, or tending their sheep, or
@@ -6641,7 +6645,7 @@ Bito and Cleobis were happier than he was.[409] But flatterers proclaim
 kings and rich men and rulers not only happy and fortunate, but also
 pre-eminent for wisdom, and art, and every virtue.
 
-§ XVI. Now some cannot bear to hear the assertion of the Stoics[410]
+Sec. XVI. Now some cannot bear to hear the assertion of the Stoics[410]
 that the wise man is at once rich, and handsome, and noble, and a king;
 but flatterers declare that the rich man is at once orator and poet, and
 (if he likes) painter, and flute-player, and swift-footed, and strong,
@@ -6662,7 +6666,7 @@ doing you could be useful and serviceable to them." For a field does not
 become worse by being praised, but those who praise a man falsely and
 against his deserts puff him up and ruin him.
 
-§ XVII. Enough has been said on this matter: let us now examine
+Sec. XVII. Enough has been said on this matter: let us now examine
 outspokenness. For just as Patroclus put on the armour of Achilles, and
 drove his horses to the battle, only durst not touch his spear from
 Mount Pelion, but let that alone, so ought the flatterer, tricked out
@@ -6718,7 +6722,7 @@ Just as if, when a man has tumours and fistulas, one were to cut his
 hair and nails with a surgeon's knife, so flatterers use outspokenness
 only in cases where it gives no pain or distress.
 
-§ XVIII. Moreover some of them are cleverer still and make their
+Sec. XVIII. Moreover some of them are cleverer still and make their
 outspokenness and censure a means of imparting pleasure. As Agis the
 Argive,[417] when Alexander bestowed great gifts on a buffoon, cried out
 in envy and displeasure, "What a piece of absurdity!" and on the king
@@ -6731,7 +6735,7 @@ Emperor Tiberius entered the senate, one of his flatterers got up and
 said, that being free men they ought to be outspoken, and not suppress
 or conceal anything that might be important, and having by this exordium
 engaged everybody's attention, a dead silence prevailing, and even
-Tiberius being all attention, he said, "Listen, Cæsar, to what we all
+Tiberius being all attention, he said, "Listen, Caesar, to what we all
 charge you with, although no one ventures to tell you openly of it; you
 neglect yourself, and are careless about your health, and wear yourself
 out with anxiety and labour on our behalf, taking no rest either by
@@ -6739,7 +6743,7 @@ night or day." And on his stringing much more together in the same
 strain, they say the orator Cassius Severus said, "This outspokenness
 will ruin the man."
 
-§ XIX. These are indeed trifling matters: but the following are more
+Sec. XIX. These are indeed trifling matters: but the following are more
 important and do mischief to foolish people, when flatterers accuse them
 of the very contrary vices and passions to those to which they are
 really addicted; as Himerius the flatterer twitted a very rich, very
@@ -6796,7 +6800,7 @@ intrudes into the interior of the house and into the women's apartments
 with his curiosity and calumny and malignity, like the legs and arms of
 the polypus, is wild and savage and unmanageable.
 
-§ XX. Now one kind of caution against his snares is to know and ever
+Sec. XX. Now one kind of caution against his snares is to know and ever
 remember that, whereas the soul contains true and noble and reasoning
 elements, as also unreasoning and false and emotional ones, the friend
 is always a counsellor and adviser to the better instincts of the soul,
@@ -6839,7 +6843,7 @@ easily escape our detection. For he is ever the advocate of those
 passions, and outspoken when we desire to repress them.[425] But so much
 for this matter.
 
-§ XXI. Now let us pass on to useful and kind services, for in them too
+Sec. XXI. Now let us pass on to useful and kind services, for in them too
 the flatterer makes it very difficult and confusing to detect him from
 the friend, seeming to be zealous and ready on all occasions and never
 crying off. For, as Euripides says,[426] a friend's behaviour is, "like
@@ -6859,7 +6863,7 @@ nobody else either room or place to help, but putting himself wholly at
 your disposal, and if you will not find him something to do for you, he
 is troubled, nay rather altogether dejected and lamenting loudly.[427]
 
-§ XXII. To all sensible people all this is an indication, not of true or
+Sec. XXII. To all sensible people all this is an indication, not of true or
 sober friendship, but of a meretricious one, that embraces you more
 warmly than there is any occasion for. Nevertheless let us first look at
 the difference between the friend and flatterer in their promises. For
@@ -6923,7 +6927,7 @@ so a friend benefits by his intervention, or by paying off creditors, or
 by managing his friend's affairs, even though the person who receives
 the benefit may not be aware of it. Such was the behaviour of Arcesilaus
 on various occasions, and when Apelles[432] of Chios was ill, knowing
-his poverty, he took with him twenty drachmæ when he visited him, and
+his poverty, he took with him twenty drachmae when he visited him, and
 sitting down beside him he said, "There is nothing here but those
 elements of Empedocles, 'fire and water and earth and balmy expanse of
 air,' but you don't lie very comfortably," and with that he moved his
@@ -6956,16 +6960,16 @@ insufferable:[435] but the flatterer not only reminds us of his services
 afterwards, but even during the very moment of doing them upbraids us
 with them and is importunate. But the friend, if he is obliged to
 mention the matter, relates it modestly, and says not a word about
-himself. And so, when the Lacedæmonians sent corn to the people of
+himself. And so, when the Lacedaemonians sent corn to the people of
 Smyrna that needed it, and the people of Smyrna wondered at their
-kindness, the Lacedæmonians said, "It was no great matter, we only voted
+kindness, the Lacedaemonians said, "It was no great matter, we only voted
 that we and our beasts of burden should go without our dinner one day,
 and sent what was so saved to you."[436] Not only is it handsome to do a
 favour in that way, but it is more pleasant to the receivers of it,
 because they think those who have done them the service have done it at
 no great loss to themselves.
 
-§ XXIII. But it is not so much by the importunity of the flatterer in
+Sec. XXIII. But it is not so much by the importunity of the flatterer in
 regard to services, nor by his facility in making promises, that one can
 recognize his nature, as by the honourable or dishonourable kind of
 service, and by the regard to please or to be of real use. For the
@@ -6984,7 +6988,7 @@ not plot with him, one must bear witness for him but not join him in
 fraud, one must certainly share adversity with him but not crime. For
 since we should not wish even to know of our friends' dishonourable
 acts, much less should we desire to share their dishonour by acting with
-them. As then the Lacedæmonians, when conquered in battle by Antipater,
+them. As then the Lacedaemonians, when conquered in battle by Antipater,
 on settling the terms of peace, begged that he would lay upon them what
 burdens he pleased, provided he enjoined nothing dishonourable, so the
 friend, if any necessity arise involving expense or danger or trouble,
@@ -7012,7 +7016,7 @@ to detect here too. For if ordered to do anything you please
 disreputable or dishonourable, he is ready to take any pains to oblige
 you.
 
-§ XXIV. One might detect again how greatly the flatterer differs from
+Sec. XXIV. One might detect again how greatly the flatterer differs from
 the friend by his behaviour to other friends. For the friend is best
 pleased with loving and being beloved by many, and also always tries to
 contrive for his friend that he too may be much loved and honoured, for
@@ -7053,7 +7057,7 @@ scale them, but the highmindedness and conceit of a person thrown off
 his balance by good fortune or good natural parts is easily reached by
 mean and petty people.
 
-§ XXV. And so we advised at the beginning of this discourse, and now
+Sec. XXV. And so we advised at the beginning of this discourse, and now
 advise again, to cut off self-love and too high an opinion of ourselves;
 for that flatters us first, and makes us more impressionable and
 prepared for external flatterers. But if we hearken to the god, and
@@ -7104,7 +7108,7 @@ both these extremes, and, as in any other case, make our freedom of
 speech agreeable by its moderation. So the subject itself seems next to
 demand that I should conclude it by discussing that point.
 
-§ XXVI. As then we see that much trouble arises from excessive freedom
+Sec. XXVI. As then we see that much trouble arises from excessive freedom
 of speech, let us first of all detach from it any element of self-love,
 being carefully on our guard that we may not appear to upbraid on
 account of any private hurt or injury. For people do not regard a speech
@@ -7157,15 +7161,15 @@ deeds of our enemies, but also their intentions." "If then," said Plato,
 "anyone has come here for your benefit, and wishes to do you good, and
 you do not find him an opportunity, is it right to let him go away with
 neglect and without thanks?" And on Dionysius asking, who he meant, he
-replied, "I mean Æschines, a man of as good a character as any of
+replied, "I mean AEschines, a man of as good a character as any of
 Socrates' pupils whatever, and able to improve by his conversation any
 with whom he might associate: and he is neglected, though he has made a
 long voyage here to discuss philosophy with you." This speech so
 affected Dionysius, that he at once threw his arms round Plato and
 embraced him, admiring his benevolence and loftiness of mind, and
-treated Æschines well and handsomely.
+treated AEschines well and handsomely.
 
-§ XXVII. In the next place, let us clear away as it were and remove all
+Sec. XXVII. In the next place, let us clear away as it were and remove all
 insolence, and jeering, and mocking, and ribaldry, which are the evil
 seasonings of freedom of speech. For as, when the surgeon performs an
 operation, a certain neatness and delicacy of touch ought to accompany
@@ -7217,7 +7221,7 @@ generally speaking it is not noble or brave but cowardly to conceal your
 ideas when people are sober and to give free vent to them at table,
 snarling like cowardly dogs. We need say no more therefore on this head.
 
-§ XXVIII. But since many people do not think fit or even dare to find
+Sec. XXVIII. But since many people do not think fit or even dare to find
 fault with their friends when in prosperity, but think that condition
 altogether out of the reach and range of rebuke, but inveigh against
 them if they have made a slip or stumble, and trample upon them if they
@@ -7282,7 +7286,7 @@ committed through unadvisedly following his own counsel, it is enough to
 say, "This was not to my mind, indeed I often tried to dissuade you from
 it."[462]
 
-§ XXIX. In what cases then ought a friend to be vehement, and when ought
+Sec. XXIX. In what cases then ought a friend to be vehement, and when ought
 he to use emphatic freedom of language? When circumstances call upon him
 to check some headlong pleasure or rage or insolence, or to curtail
 avarice, or to correct some foolish negligence. Thus Solon spoke out to
@@ -7297,7 +7301,7 @@ only himself, for so he would lose all his friends."[465] Speusippus
 also wrote to him not to plume himself on being a great person only with
 lads and women, but to see to it that by adorning Sicily with piety and
 justice and good laws he might make the Academy glorious. On the other
-hand Euctus and Eulæus, companions of Perseus, in the days of his
+hand Euctus and Eulaeus, companions of Perseus, in the days of his
 prosperity ingratiated themselves with him, and assented to him in all
 things, and danced attendance upon him, like all the other courtiers,
 but when he fled after his defeat by the Romans at Pydna, they attacked
@@ -7306,7 +7310,7 @@ regard to everything he had done amiss or neglected to do, till he was
 so greatly exasperated both from grief and rage that he whipped out his
 sword and killed both of them.
 
-§ XXX. Let so much suffice for general occasions of freedom of speech.
+Sec. XXX. Let so much suffice for general occasions of freedom of speech.
 There are also particular occasions, which our friends themselves
 furnish, that one who really cares for his friends will not neglect, but
 make use of. In some cases a question, or narrative, or the censure or
@@ -7326,7 +7330,7 @@ you, under no compulsion, come here and hazard your kingdom and life on
 a moment's[467] cast of the die." This was perhaps rather too strong a
 remark.
 
-§ XXXI. Another suitable time for reproof is when people have been
+Sec. XXXI. Another suitable time for reproof is when people have been
 abused by others for their faults, and have consequently become humble,
 and abated their pride. The man of tact will ingeniously seize the
 occasion, checking and baffling those that used the abuse, but privately
@@ -7343,7 +7347,7 @@ scourge his own son, charging him with being unable to get through his
 dinner without vinegar,[468] but in acting thus he had an eye to us, so
 that this indirect rebuke touched the guilty persons.
 
-§ XXXII. We must also beware of speaking too freely to a friend in the
+Sec. XXXII. We must also beware of speaking too freely to a friend in the
 company of many people, remembering the well-known remark of Plato. For
 when Socrates reproved one of his friends too vehemently in a discussion
 at table, Plato said, "Would it not have been better to have said this
@@ -7403,7 +7407,7 @@ anybody, is likely to hear the line,
 
 "He doctors others, all diseased himself."[476]
 
-§ XXXIII. Yet since circumstances frequently call on people who are bad
+Sec. XXXIII. Yet since circumstances frequently call on people who are bad
 themselves in association with other such to reprove them, the most
 convenient mode of reproof will be that which contrives to include the
 reprover in the same indictment as the reproved, as in the case of the
@@ -7426,7 +7430,7 @@ of a very advanced age, or has an acknowledged reputation for virtue and
 worth, does no good, but is only regarded as a tiresome bore. And so it
 was wisely done of Phoenix to relate his own mishaps, how he had meant
 killing his father, but quickly repented at the thought "that he would
-be called by the Achæans parricide,"[479] that he might not seem to be
+be called by the Achaeans parricide,"[479] that he might not seem to be
 rebuking Achilles, as one that had himself never suffered from excess of
 rage. For kindness of this sort has great influence, and people yield
 more to those who seem to be sympathetic and not supercilious. And since
@@ -7472,7 +7476,7 @@ or as Odysseus in the play called "The Scyrians,"[485]
 "Dost thou card wool, and thus the lustre smirch
 Of thy illustrious sire, thy noble race?"
 
-§ XXXIV. But it is by no means fitting when rebuked to rebuke back, and
+Sec. XXXIV. But it is by no means fitting when rebuked to rebuke back, and
 when spoken to plainly to answer back, for that soon kindles a flame and
 causes dissension; and generally speaking such altercation will not look
 so much like a retort as an inability to bear freedom of speech. It is
@@ -7485,7 +7489,7 @@ be the more inclined to yield and give himself up to correction, as it
 will seem a return of goodwill and kindness rather than scolding or
 rage.
 
-§ XXXV. Moreover, as Thucydides says "he is well advised who [only]
+Sec. XXXV. Moreover, as Thucydides says "he is well advised who [only]
 incurs envy in the most important matters,"[486] so the friend ought
 only to take upon himself the unpleasant duty of reproof in grave and
 momentous cases. For if he is always in a fret and a fume, and rates his
@@ -7511,7 +7515,7 @@ the man who is ever on the scold, everywhere sour and glum, knowing and
 prying into everything, is scarcely tolerable to his children or
 brothers, and insufferable to his slaves.
 
-§ XXXVI. But since "neither," to use the words of Euripides, "do all
+Sec. XXXVI. But since "neither," to use the words of Euripides, "do all
 troubles proceed only from old age,"[489] nor from the stupidity of our
 friends, we ought to observe not only the shortcomings but also the good
 points of our friends, aye, by Zeus, and to be ready to praise them
@@ -7583,7 +7587,7 @@ tact in our freedom of speech, as it is the greatest and most powerful
 remedy in friendship, and always needs a well-chosen occasion, and
 moderation in applying it.
 
-§ XXXVII. Since then, as I have said before, freedom of speech is often
+Sec. XXXVII. Since then, as I have said before, freedom of speech is often
 painful to the person who is to receive benefit from it, we must imitate
 the surgeons, who, when they have performed an operation, do not leave
 the suffering part to pain and smart, but bathe and foment it; so those
@@ -7608,8 +7612,8 @@ at Delphi. See Pausanias, x. 24.
 low position in life.
 
 [352] Wyttenbach well compares Cicero, "De Amicitia,"
-xviii.: "Accedat huc suavitas quædam oportet sermonum
-atque morum, haudquaquam mediocre condimentum amicitiæ.
+xviii.: "Accedat huc suavitas quaedam oportet sermonum
+atque morum, haudquaquam mediocre condimentum amicitiae.
 Tristitia autem et in omni re severitas, habet illa
 quidem gravitatem: sed amicitia remissior esse debet, et
 liberior, et dulcior, et ad omnem comitatem
@@ -7620,9 +7624,9 @@ facilitatemque proclivior."
 [354] Euripides, "Ion," 732.
 
 [355] Our author assigns this saying to Prodicus, "De
-Sanitate Præcepta," § viii. But to Evenus, "Quæst.
-Conviv." Lib. vii. Prooemium, and "Platonicæ
-Quæstiones," x. § iii.
+Sanitate Praecepta," Sec. viii. But to Evenus, "Quaest.
+Conviv." Lib. vii. Prooemium, and "Platonicae
+Quaestiones," x. Sec. iii.
 
 [356] As was usual. See Homer, "Odyssey," i. 146. Cf.
 Plautus, "Persa," v. iii. 16: "Hoc age, accumbe: hunc
@@ -7632,10 +7636,10 @@ manibus: apponite mensam."
 [357] From a play of Eupolis called "The Flatterers."
 Cf. Terence, "Eunuchus," 489-491.
 
-[358] See Athenæus, 256 D. Compare also Valerius Maximus,
+[358] See Athenaeus, 256 D. Compare also Valerius Maximus,
 ix. 1.
 
-[359] "Videatur Casaubonus ad Athenæum, vi. p. 243
+[359] "Videatur Casaubonus ad Athenaeum, vi. p. 243
 A."--_Wyttenbach._
 
 [360] "Republic," p. 361 A.
@@ -7649,7 +7653,7 @@ Amicitia,' cap. vi.: Itaque non aqua, non igne, ut
 aiunt, pluribus locis utimur, quam amicitia. Notavit
 etiam Erasmus 'Adag.' p. 112."--_Wyttenbach._
 
-[364] Compare Sallust, "De Catilinæ Conjuratione," cap.
+[364] Compare Sallust, "De Catilinae Conjuratione," cap.
 xx.: "Nam idem velle atque idem nolle, ea demum firma
 amicitia est."
 
@@ -7659,11 +7663,11 @@ dictus."--_Wyttenbach._
 
 [366] As the polypus, or chameleon.
 
-[367] Plato, "Phædrus," p. 239 D.
+[367] Plato, "Phaedrus," p. 239 D.
 
 [368] Wyttenbach compares Juvenal, iii. 100-108.
 
-[369] See my note "On Abundance of Friends," § ix.
+[369] See my note "On Abundance of Friends," Sec. ix.
 Wyttenbach well points out the felicity of the
 expression here, "siquidem parasitus est [Greek: aoikos
 kai anestios]."
@@ -7672,7 +7676,7 @@ kai anestios]."
 "Heroides," iv. 41, 42.
 
 [371] Compare "How one may be aware of one's progress in
-virtue," § x. Cf. also Horace, "Satires," ii. iii. 35;
+virtue," Sec. x. Cf. also Horace, "Satires," ii. iii. 35;
 Quintilian, xi. 1.
 
 [372] "Odyssey," xxii. 1.
@@ -7681,15 +7685,15 @@ Quintilian, xi. 1.
 Aristotle, "Pol." iv. 4.
 
 [374] Cf. Aristophanes, "Acharnians," 153, [Greek: hoper
-machimôtaton thrakôn ethnos].
+machimotaton thrakon ethnos].
 
 [375] Plato was somewhat of a traveller, he three times
 visited Syracuse, and also travelled in Egypt.
 
 [376] As to the polypus, see "On Abundance of Friends,"
-§ ix.
+Sec. ix.
 
-[377] As "Fumum et opes _strepitumque_ Romæ."--Horace,
+[377] As "Fumum et opes _strepitumque_ Romae."--Horace,
 "Odes," iii. 29. 12.
 
 [378] Homer, "Odyssey," xvi. 181.
@@ -7697,25 +7701,25 @@ visited Syracuse, and also travelled in Egypt.
 [379] Sophocles, "Antigone," 523.
 
 [380] As to these traits in Plato and Aristotle, compare
-"De Audiendis Poetis," § viii. And as to Alexander,
+"De Audiendis Poetis," Sec. viii. And as to Alexander,
 Plutarch tells us in his Life that he used to hold his
 head a little to the left, "Life," p. 666 B. See also
-"De Alexandri Fortuna aut Virtute," § ii.
+"De Alexandri Fortuna aut Virtute," Sec. ii.
 
-[381] "De Chamæleonte Aristoteles 'Hist. Animal.' i. 11;
+[381] "De Chamaeleonte Aristoteles 'Hist. Animal.' i. 11;
 'Part. Animal.' iv. 11; Theophrastus Eclog. ap. Photium
 edit. Aristot. Sylburg. T. viii. p. 329: [Greek:
-metaballei de ho chamaileôn eis panta ta chrômata; plên
-ten eis to leukon kai to eruthron ou dechetai metabolên.]
+metaballei de ho chamaileon eis panta ta chromata; plen
+ten eis to leukon kai to eruthron ou dechetai metabolen.]
 Similiter Plinius 'Hist. Nat.' viii. 51."--_Wyttenbach._
 
-[382] See Athenæus, 249 F; 435 E.
+[382] See Athenaeus, 249 F; 435 E.
 
 [383] Cf. Juv. iii. 113; "Scire volunt secreta domus,
 atque inde timeri."
 
 [384] Cf. Menander apud Stob. p. 437: [Greek: Ta deuter
-aiei tên gynaika dei legein, Tên d' êgemonian tôn olôn
+aiei ten gynaika dei legein, Ten d' egemonian ton olon
 ton andr' echein].
 
 [385] As Lord Stowell used to say that "dinners
@@ -7739,7 +7743,7 @@ Hist," xxi. 84. The line is from Nicander Theriac. 64.
 [393] To filch the grain from the bin or granary would
 not of course be so important a theft as to steal the
 seed-stock preserved for sowing. So probably Cato, "De
-Re Rustica," v. § iv.: "Segetem ne defrudet," sc.
+Re Rustica," v. Sec. iv.: "Segetem ne defrudet," sc.
 villicus.
 
 [394] Thucydides, iii. 82.
@@ -7763,36 +7767,36 @@ called "a lean and flashy song."
 
 [400] Naso suspendit adunco, as Horace, "Sat." i. 6. 5.
 
-[401] See Athenæus, p. 434 C.
+[401] See Athenaeus, p. 434 C.
 
 [402] As Gnatho in Terence, "Eunuch." 496-498.
 
-[403] Reading [Greek: Helôn], as Courier, Hercher.
+[403] Reading [Greek: Helon], as Courier, Hercher.
 
 [404] "Iliad," x. 249. They are words of Odysseus.
 
 [405] This was carrying flattery rather far.
-"Mithridatis medicinæ scientia multis memorata
+"Mithridatis medicinae scientia multis memorata
 veterum."--_Wyttenbach._
 
 [406] Euripides, "Alcestis," 1159.
 
 [407] Our author gives this definition to Simonides, "De
-Gloria Atheniensium," § iii.
+Gloria Atheniensium," Sec. iii.
 
-[408] So our author again, "On Contentedness of Mind," §
+[408] So our author again, "On Contentedness of Mind," Sec.
 xii.
 
 [409] See Herodotus, i. 30, 33; Juvenal, x. 274, 275;
 and Pausanias, ii. 20.
 
-[410] "Nobile Stoæ Paradoxum. Cicero Fin. iii. 22, ex
+[410] "Nobile Stoae Paradoxum. Cicero Fin. iii. 22, ex
 persona Catonis. Horatius ridet Epistol. i. 1. 106-108.
 Ad summam sapiens uno minor est Jove: dives, Liber,
-honoratus, pulcher, rex denique regum; Præcipue sanus,
+honoratus, pulcher, rex denique regum; Praecipue sanus,
 nisi quum pituita molesta est."--_Wyttenbach._
 
-[411] See also "On Contentedness of Mind," § xii.
+[411] See also "On Contentedness of Mind," Sec. xii.
 
 [412] Homer, "Iliad," xvi. 141. See the context also
 from 130 sq.
@@ -7800,7 +7804,7 @@ from 130 sq.
 [413] Our author has used this illustration again in
 "Phocion," p. 742 B.
 
-[414] Namely in § xxvii. where [Greek: parrhêsia] is
+[414] Namely in Sec. xxvii. where [Greek: parrhesia] is
 discussed.
 
 [415] Contrary to the severe training he ought to
@@ -7814,10 +7818,10 @@ streblountos]. This was Ptolemy Physcon.
 viii. 5, 6."--_Wyttenbach._
 
 [418] A common proverb among the ancients. See "Conjugal
-Precepts," § xl.; Erasmus, "Adagia," pp. 1222, 1838.
+Precepts," Sec. xl.; Erasmus, "Adagia," pp. 1222, 1838.
 
-[419] A line out of Æschylus' "Myrmidons." Quoted again
-by our author, "Of Love," § V.
+[419] A line out of AEschylus' "Myrmidons." Quoted again
+by our author, "Of Love," Sec. V.
 
 [420] Cleopatra.
 
@@ -7829,12 +7833,12 @@ editions of the "Odyssey."
 [422] See Lucretius, iv. 1079-1085.
 
 [423] So Pliny, "Hist. Nat." xxv. 95: "Remedio est
-(cicutæ), priusquam perveniat ad vitalia, vini natura
+(cicutae), priusquam perveniat ad vitalia, vini natura
 excalfactoria: sed in vino pota irremediabilis
 existimatur."
 
 [424] Assigned to Pittacus by our author, "Septem
-Sapientum Convivium," § ii.
+Sapientum Convivium," Sec. ii.
 
 [425] So Wyttenbach, who reads [Greek: enstaseis], and
 translates, "et libertate loquendi in nobis
@@ -7842,9 +7846,9 @@ reprehendendis utitur, quando nos cupiditatibus
 morbisque animi nostri non indulgere, sed resistere,
 volumus."
 
-[426] "Phoenissæ," 469-472.
+[426] "Phoenissae," 469-472.
 
-[427] Like Juvenal's "Græculus esuriens in cælum,
+[427] Like Juvenal's "Graeculus esuriens in caelum,
 jusseris, ibit."--Juvenal, iii, 78.
 
 [428] These are two successive lines found three times
@@ -7858,7 +7862,7 @@ spoken by one person.
 
 [431] From the "Erechtheus" of Euripides.
 
-[432] We know from Athenæus, p. 420 D, that Apelles and
+[432] We know from Athenaeus, p. 420 D, that Apelles and
 Arcesilaus were friends.
 
 [433] An allusion to Hesiod, "Works and Days," 235. Cf.
@@ -7869,24 +7873,24 @@ Ovid, "Metamorphoses," viii. 626-724: "Cura pii dis
 sunt, et qui coluere coluntur."
 
 [435] Compare Terence, "Andria," 43, 44. So too Seneca,
-"De Beneficiis," ii. 10: "Hæc enim beneficii inter duos
+"De Beneficiis," ii. 10: "Haec enim beneficii inter duos
 lex est: alter statim oblivisci debet dati, alter
 accepti nunquam. Lacerat animum et premit frequens
 meritorum commemoratio."
 
 [436] A similar story about the Samians and
-Lacedæmonians is told by Aristotle, "Oeconom." ii. 9.
+Lacedaemonians is told by Aristotle, "Oeconom." ii. 9.
 
 [437] A line from Euripides, "Iphigenia in Aulis," 407.
 
-[438] Also in "Conjugal Precepts," § xxix.
+[438] Also in "Conjugal Precepts," Sec. xxix.
 
 [439] See Persius, iii. 21, 22, with Jahn's Note.
 
-[440] See "On Love," § xxi.
+[440] See "On Love," Sec. xxi.
 
 [441] "Auri plumbique oppositio fere proverbialis est.
-Petronius, 'Satyricon,' 43. Plane fortunæ filius: in
+Petronius, 'Satyricon,' 43. Plane fortunae filius: in
 manu illius plumbum aureum fiebat."--_Wyttenbach._ The
 passage about the Lydian chariot is said to be by Pindar
 in our author, "Nicias," p. 523 D.
@@ -7903,7 +7907,7 @@ ei, qui eam recipit atque ea delectatur. Ita fit, ut is
 assentatoribus patefaciat aures suas maxime, qui ipse
 sibi assentetur et se maxime ipse delectet."
 
-[444] Compare § i.
+[444] Compare Sec. i.
 
 [445] Compare our Author, "Quaestiones Convivalium,"
 viii. p. 717 F.
@@ -7916,7 +7920,7 @@ vitia in contraria currunt."
 [448] Compare Cicero, "De Officiis," i. 25: "Omnis autem
 animadversio et castigatio contumelia vacare debet:
 neque ad ejus, qui punitur aliquem aut verbis fatigat,
-sed ad reipublicæ utilitatem referri."
+sed ad reipublicae utilitatem referri."
 
 [449] "Iliad," xi. 654.
 
@@ -7933,14 +7937,14 @@ see Seneca, "De Ira," ii. 23.
 [454] Literally, "brings a cloud over fair weather."
 
 [455] The MSS. have Lydian. Lysian Dionysus is also
-found in Pausanias, ix. 16. Lyæus is suggested by
-Wyttenbach, and read by Hercher. Lysius or Lyæus will
-both be connected with [Greek: luô], and so refer to
+found in Pausanias, ix. 16. Lyaeus is suggested by
+Wyttenbach, and read by Hercher. Lysius or Lyaeus will
+both be connected with [Greek: luo], and so refer to
 Dionysus as the god that looses or frees us from care.
 See Horace, "Epodes," ix. 37, 38.
 
 [456] Compare Juvenal, iii. 73, 74: "Sermo Promptus et
-Isæo torrentior."
+Isaeo torrentior."
 
 [457] "Orestes," 667.
 
@@ -7964,10 +7968,10 @@ of Nestor to Agamemnon.
 [466] See our author, "Apophthegmata," p. 179 C.
 
 [467] Compare Horace, "Satires," i. 1. 7, 8: "Quid enim,
-concurritur: horæ Momento cita mors venit aut victoria
-læta."
+concurritur: horae Momento cita mors venit aut victoria
+laeta."
 
-[468] And so being dainty. See Athenæus, ii. ch. 76.
+[468] And so being dainty. See Athenaeus, ii. ch. 76.
 
 [469] We see from this and other places that the
 mountebanks and quacks of the Middle Ages and later
@@ -7991,7 +7995,7 @@ epenenkein].
 [475] See our Author, "Apophthegmata," p. 190 E.
 
 [476] A line of Euripides, quoted again in "How a Man
-may be benefited by his Enemies," § iv.
+may be benefited by his Enemies," Sec. iv.
 
 [477] Homer, "Iliad," xi. 313.
 
@@ -8003,7 +8007,7 @@ may be benefited by his Enemies," § iv.
 
 [481] Do. v. 171, 172.
 
-[482] Euripides, "Phoenissæ," 1688.
+[482] Euripides, "Phoenissae," 1688.
 
 [483] Euripides, "Hercules Furens," 1250.
 
@@ -8015,14 +8019,14 @@ the scene of his amour with Deidamia, the daughter of
 Lycomedes, by whom he became the father of Pyrrhus.
 
 [486] Thucydides, ii. 64. Quoted again in "On Shyness,"
-§ xviii.
+Sec. xviii.
 
-[487] See also "De Audiendo," § x.
+[487] See also "De Audiendo," Sec. x.
 
 [488] [Greek: potous] comes in rather curiously here.
 Can any other word lurk under it?
 
-[489] "Phoenissæ," 528, 529.
+[489] "Phoenissae," 528, 529.
 
 [490] Homer, "Iliad," vi. 347.
 
@@ -8030,24 +8034,24 @@ Can any other word lurk under it?
 
 [492] Homer, "Iliad," ix. 109, 110.
 
-[493] In Dindorf's "Poetæ Scenici Græci," Fragment 152.
+[493] In Dindorf's "Poetae Scenici Graeci," Fragment 152.
 
 [494] As it is not quite clear why Achilles should have
 been angry about his supper, [Greek: dia to deipnon],
 apropos of the context, Wyttenbach ingeniously suggests,
 as this lost play of Sophocles was called [Greek: Syn
-deipnon], that Plutarch may have written [Greek: en tô
-Deipnô].
+deipnon], that Plutarch may have written [Greek: en to
+Deipno].
 
 [495] Compare "How One may be aware of one's Progress in
-Virtue," § xi.
+Virtue," Sec. xi.
 
 [496] "Ductum e proverbiali dictione [Greek: balonta
 ekpheugein], emisso telo aufugere."--_Wyttenbach._
 
 ### HOW A MAN MAY BE BENEFITED BY HIS ENEMIES.
 
-§ I. I am well aware, Cornelius Pulcher, that you prefer the mildest
+Sec. I. I am well aware, Cornelius Pulcher, that you prefer the mildest
 manners in public life, by which you can be at once most useful to the
 community, and most agreeable in private life to those who have any
 dealings with you. But since it is difficult to find any region without
@@ -8065,7 +8069,7 @@ identical words and send them to you, with the exception of some matter
 also in "Political Precepts,"[500] a treatise which I have often noticed
 in your hands.
 
-§ II. People in old times were well satisfied if they were not injured
+Sec. II. People in old times were well satisfied if they were not injured
 by strange and wild beasts, and that was the only motive of their fights
 with them, but those of later days have by now learnt to make use of
 them, for they feed on their flesh, and clothe themselves with their
@@ -8107,7 +8111,7 @@ their stomachs, while fastidious people out of health almost vomit if
 offered bread and wine, so foolish people spoil even their friendships,
 while the wise know how to turn to account even their enmities.
 
-§ III. In the first place then it seems to me that what is most
+Sec. III. In the first place then it seems to me that what is most
 injurious in enmity may become most useful to those that pay attention
 to it? To what do I refer? Why, to the way in which your enemy ever wide
 awake pries into all your affairs, and analyzes your whole life, trying
@@ -8155,7 +8159,7 @@ Carthage was rased to the ground and Achaia reduced to slavery, said,
 "Nay rather we are now in a critical position, since we have none left
 to fear or respect."
 
-§ IV. Consider also that very philosophical and witty answer of Diogenes
+Sec. IV. Consider also that very philosophical and witty answer of Diogenes
 to the man who asked, "How shall I avenge myself on my enemy?" "By
 becoming a good and honest man."[508] Some people are terribly put about
 if they see their enemies' horses in a good condition, or hear their
@@ -8192,7 +8196,7 @@ to injure weak eyes, so does censure when it recoils on the censurer,
 and is borne out by the facts. For as the north-east wind attracts
 clouds, so does a bad life draw upon itself rebukes.
 
-§ V. Whenever Plato was in company with people who behaved in an
+Sec. V. Whenever Plato was in company with people who behaved in an
 unseemly manner, he used to say to himself, "Am I such a person as
 this?"[514] So he that censures another man's life, if he straightway
 examines and mends his own, directing and turning it into the contrary
@@ -8204,7 +8208,7 @@ of Byzantium showed in his answer to the hump-back who jeered at him for
 weakness of eyes, "You twit me with an infirmity natural to man, while
 you yourself carry your Nemesis on your back."[515] And so do not abuse
 another as an adulterer, if you yourself are mad after boys: nor as a
-spendthrift, if you yourself are niggardly. Alcmæon said to Adrastus,
+spendthrift, if you yourself are niggardly. Alcmaeon said to Adrastus,
 "You are near kinsman to a woman that slew her husband." What was his
 reply? He retaliated on him with the appropriate retort, "But you killed
 with your own hand the mother that bore you."[516] And Domitius said to
@@ -8219,7 +8223,7 @@ please them. For such a one is wont, as Sophocles[517] says, "idly
 letting his tongue flow, to hear against his will, what he willingly
 says ill of others."
 
-§ VI. This use and advantage then there is in abusing one's enemy, and
+Sec. VI. This use and advantage then there is in abusing one's enemy, and
 no less arises from being abused and ill-spoken of oneself by one's
 enemies. And so Antisthenes[518] said well that those who wish to lead a
 good life ought to have genuine friends or red-hot enemies; for the
@@ -8261,7 +8265,7 @@ Themistocles[522] was guiltless of treason, his intimacy with Pausanias,
 and the letters and messages that frequently passed between them, laid
 him under suspicion.
 
-§ VII. Whenever therefore any false charge is made against us, we ought
+Sec. VII. Whenever therefore any false charge is made against us, we ought
 not merely to despise and neglect it as false, but to see what word or
 action, either in jest or earnest, has made the charge seem probable,
 and this we must for the future be earnestly on our guard against and
@@ -8282,7 +8286,7 @@ thought all men's breath was like that."[525] Thus perceptible and
 material things, and things that are plain to everybody, are sooner
 learnt from enemies than from friends and intimates.
 
-§ VIII. Moreover to keep the tongue well under control, no small factor
+Sec. VIII. Moreover to keep the tongue well under control, no small factor
 in moral excellence, and to make it always obedient and submissive to
 reason, is not possible, unless by practice and attention and
 painstaking a man has subdued his worst passions, as for example anger.
@@ -8312,7 +8316,7 @@ submit to her caprices; and it is far better to train and accustom the
 temper to bear quietly the insults and rages and jeers and taunts of
 enemies and estranged persons, and not to be distressed at it.
 
-§ IX. Thus then must we exhibit in our enmities meekness and
+Sec. IX. Thus then must we exhibit in our enmities meekness and
 forbearance, and in our friendships still more simplicity and
 magnanimity and kindness. For it is not so graceful to do a friend a
 service, as disgraceful to refuse to do so at his request; and not to
@@ -8325,7 +8329,7 @@ admire such a man for his humanity, and praise his benevolence,
 "He has a black heart made of adamant
 Or iron or bronze."[529]
 
-When Cæsar ordered the statues of Pompey that had been thrown down to be
+When Caesar ordered the statues of Pompey that had been thrown down to be
 put up again,[530] Cicero said, "You have set up again Pompey's statues,
 and in so doing have erected statues to yourself." We ought not
 therefore to be niggardly in our praise and honour of an enemy that
@@ -8369,7 +8373,7 @@ that we should accustom ourselves to deal justly even with our enemies,
 and then there will be no fear that we should ever act unjustly and
 treacherously to our friends and intimates.
 
-§ X. But since, as Simonides says, "all larks must have their
+Sec. X. But since, as Simonides says, "all larks must have their
 crests,"[533] and every man's nature contains in it pugnacity and
 jealousy and envy, which last is, as Pindar says, "the companion of
 empty-headed men," one might get considerable advantage by purging
@@ -8406,7 +8410,7 @@ have them from diligence and prudence and good actions, and exerting
 himself in the same direction he will increase his love of what is
 honourable and noble, and will eradicate his vanity and sloth.
 
-§ XI. But if our enemies seem to us to have got either by flattery, or
+Sec. XI. But if our enemies seem to us to have got either by flattery, or
 fraud, or bribery, or venal services, ill-got and discreditable power at
 court or in state, it ought not to trouble us but rather inspire
 pleasure in us, when we compare our own liberty and purity and
@@ -8424,20 +8428,20 @@ reflect, how we may become better than them by avoiding their errors,
 and by imitating their virtues not come short of them.
 
 [497] So Pliny, viii. 83: "In Creta Insula non vulpes
-ursive, atque omnino millum maleficum animal præter
+ursive, atque omnino millum maleficum animal praeter
 phalangium."
 
 [498] See the same remark of Chilo, "On Abundance of
-Friends," § vi.
+Friends," Sec. vi.
 
 [499] "Oeconom." i. 15.
 
 [500] A treatise of Plutarch still extant.
 
-[501] A line from a lost Satyric Play of Æschylus,
+[501] A line from a lost Satyric Play of AEschylus,
 called "Prometheus Purphoros."
 
-[502] So fire is called [Greek: pantechnon] in Æschylus,
+[502] So fire is called [Greek: pantechnon] in AEschylus,
 "Prometheus Desmotes," 7.
 
 [503] Compare Seneca, "De Animi Tranquillitate," cap.
@@ -8452,13 +8456,13 @@ Jubet, inquit, me fortuna expeditius philosophari."
 [506] Homer, "Iliad," i. 255.
 
 [507] Literally "the artists of Dionysus." We know what
-they were from our author's "Quæstiones Romanæ," § 107:
+they were from our author's "Quaestiones Romanae," Sec. 107:
 [Greek: dia ti tous peri ton Dionuson technitas
-histriônas Rhômaioi kalousin];
+histrionas Rhomaioi kalousin];
 
-[508] Compare "De Audiendis Poetis," § iv.
+[508] Compare "De Audiendis Poetis," Sec. iv.
 
-[509] Æschylus, "Septem contra Thebas," 593, 594.
+[509] AEschylus, "Septem contra Thebas," 593, 594.
 
 [510] Pindar, "Fragm." 253.
 
@@ -8467,13 +8471,13 @@ histriônas Rhômaioi kalousin];
 [512] Euripides, "Orestes," 251.
 
 [513] A line from Euripides. Quoted also "De Adulatore
-et Amico," § xxxii.
+et Amico," Sec. xxxii.
 
-[514] Compare "De Audiendo," §vi. See also Horace,
+[514] Compare "De Audiendo," Sec.vi. See also Horace,
 "Satires," i, 4. 136, 137.
 
-[515] The story is somewhat differently told, "Quæst.
-Conviv.," Lib. ii. § ix.
+[515] The story is somewhat differently told, "Quaest.
+Conviv.," Lib. ii. Sec. ix.
 
 [516] From a lost play of Euripides.
 
@@ -8482,15 +8486,15 @@ Days," 719-721; Terence, "Andria," 920.
 
 [518] The sentiment is assigned to Diogenes twice
 elsewhere by our author, namely, "How One may be aware
-of one's Progress in Virtue," § xi., and "How One may
-discern a Flatterer from a Friend," § xxxvi.
+of one's Progress in Virtue," Sec. xi., and "How One may
+discern a Flatterer from a Friend," Sec. xxxvi.
 
 [519] See Propertius, ii. 1. 63, 64; Ovid,
 "Metamorphoses," xii. 112; xiii. 171; "Tristia," v. 2.
 15, 16; "Remedia Amoris," 47, 48; Erasmus, "Adagia," p.
 221.
 
-[520] "Jason Pheræus cognomine Prometheus dictus est.
+[520] "Jason Pheraeus cognomine Prometheus dictus est.
 Vide Ciceronem, 'Nat. Deor.' iii. 29; Plinium, vii. 51;
 Valerium Maximum, i. 8, Extem. 6."--_Wytttenbach._
 
@@ -8499,7 +8503,7 @@ Valerium Maximum, i. 8, Extem. 6."--_Wytttenbach._
 [522] See Thucydides, i. 135, 136.
 
 [523] From a lost play of Euripides. Compare the
-proverb, [Greek: pathêmata mathêmata].
+proverb, [Greek: pathemata mathemata].
 
 [524] "Laws," v. p. 731 E.
 
@@ -8510,14 +8514,14 @@ proverb, [Greek: pathêmata mathêmata].
 350; xiv. 83; "Odyssey," i. 64; xxiii. 70.
 
 [527] "Laws," xi. p. 935 A. Quoted again "On
-Talkativeness," § vii.
+Talkativeness," Sec. vii.
 
 [528] See Pausanias, v. 14.
 
 [529] From a Fragment of Pindar.
 
 [530] See Suetonius, "Divus Julius," 75: "Sed et statuas
-L. Sullæ atque Pompeii a plebe disjectas reposuit."
+L. Sullae atque Pompeii a plebe disjectas reposuit."
 
 [531] Compare our author, "Quaestiones Convivalium,"
 viii. p. 729 E.
@@ -8527,16 +8531,16 @@ author, "Cato Minor," p. 769 B.
 
 [533] A Greek proverb, see Erasmus, "Adagia," p. 921.
 
-[534] So Cicero, "Nat. Deor." ii. 56: "In ædibus
+[534] So Cicero, "Nat. Deor." ii. 56: "In aedibus
 architecti avertunt ab oculis naribusque dominorum ea
-quæ profluentia necessario tætri essent aliquid
+quae profluentia necessario taetri essent aliquid
 habitura."
 
 [535] "Works and Days," 23-26. Our "Two of a trade
 seldom agree."
 
 [536] Compare "How One may be aware of one's Progress in
-Virtue," § xiv.
+Virtue," Sec. xiv.
 
 [537] For as the English proverb says, "Hatred is blind
 as well as love."
@@ -8544,13 +8548,13 @@ as well as love."
 [538] "Laws," v. p. 728 A.
 
 [539] Quoted more fully "How One may be aware of one's
-Progress in Virtue," § vi.
+Progress in Virtue," Sec. vi.
 
-[540] "Laws," v. p. 731 E. See also above, § vii.
+[540] "Laws," v. p. 731 E. See also above, Sec. vii.
 
 ON TALKATIVENESS.[541]
 
-§ I. Philosophy finds talkativeness a disease very difficult and hard to
+Sec. I. Philosophy finds talkativeness a disease very difficult and hard to
 cure. For its remedy, conversation, requires hearers: but talkative
 people hear nobody, for they are ever prating. And the first evil this
 inability to keep silence produces is an inability to listen. It is a
@@ -8582,7 +8586,7 @@ only to the tongue. And so while other people retain what they hear,
 talkative people lose it altogether, and, being empty-headed, they
 resemble empty vessels, and go about making much noise.[544]
 
-§ II. If however it seems that no attempt at cure has been left untried,
+Sec. II. If however it seems that no attempt at cure has been left untried,
 let us say to the talkative person,
 
 "Be silent, boy; silence has great advantages;"
@@ -8620,7 +8624,7 @@ so they find neither hearers to attend to them, nor credit them. They
 say those that are prone to Venus are commonly barren: so the prating of
 talkative people is ineffectual and fruitless.
 
-§ III. And yet nature has fenced and barricaded in us nothing so much as
+Sec. III. And yet nature has fenced and barricaded in us nothing so much as
 the tongue, having put the teeth before it as a barrier, so that if,
 when reason holds tight her "glossy reins,"[547] it hearken not, nor
 keep within bounds, we may check its intemperance, biting it till the
@@ -8637,7 +8641,7 @@ stowed away in a granary is found to be larger in quantity but inferior
 in quality, so the speech of a talkative man is increased by a large
 addition of falsehood, which destroys his credit.
 
-§ IV. Then again every man of modesty and propriety would avoid
+Sec. IV. Then again every man of modesty and propriety would avoid
 drunkenness, for anger is next door neighbour to madness as some
 think,[550] but drunkenness lives in the same house: or rather
 drunkenness is madness, more short-lived indeed, but more potent also
@@ -8687,7 +8691,7 @@ Your acts are good:"
 but we cannot feel so to the talkative man, for his want of tact in
 words destroys and undoes all the grace of his actions.
 
-§ V. Lysias wrote a defence for some accused person, and gave it him,
+Sec. V. Lysias wrote a defence for some accused person, and gave it him,
 and he read it several times, and came to Lysias in great dejection and
 said, "When I first perused this defence, it seemed to me wonderful, but
 when I read it a second and third time, it seemed altogether dull and
@@ -8705,7 +8709,7 @@ relieves by novelty the possibility of being surfeited. But the
 talkative worry one's ears to death with their tautologies, as people
 scribble the same things over and over again on palimpsests.[557]
 
-§ VI. Let us remind them then first of this, that just as in the case of
+Sec. VI. Let us remind them then first of this, that just as in the case of
 wine, which was intended for pleasure and mirth, those who compel people
 to drink it neat and in large quantities bring some into a disgusting
 condition of drunkenness, so with speech, which is the pleasantest
@@ -8718,7 +8722,7 @@ charmed girdle[558] repels and drives away those who associate with him,
 so he who with his speech bores and disgusts one is without either taste
 or refinement.
 
-§ VII. Of all other passions and disorders some are dangerous, some
+Sec. VII. Of all other passions and disorders some are dangerous, some
 hateful, some ridiculous, but in talkativeness all these elements are
 combined. For praters are jeered at for their commonplaces, and hated
 when they bring bad news, and run into danger when they reveal secrets.
@@ -8759,9 +8763,9 @@ informed Nero of what the man had said, and he was immediately arrested,
 and torture, and fire, and scourging were applied to him, who denied now
 in his necessity what before he had divulged without necessity.
 
-§ VIII. Zeno the philosopher,[563] that he might not against his will
+Sec. VIII. Zeno the philosopher,[563] that he might not against his will
 divulge any secrets when put to the torture, bit off his tongue, and
-spit it at the tyrant. Famous also was the reward which Leæna had for
+spit it at the tyrant. Famous also was the reward which Leaena had for
 her taciturnity.[564] She was the mistress of Harmodius and Aristogiton,
 and, although a woman, participated in their hopes of success in the
 conspiracy against the tyrants: for she had revelled in the glorious cup
@@ -8810,7 +8814,7 @@ victim, and bade him take from it the best and worst piece of it, to
 pull out the tongue and send that to the king, as being the instrument
 of the greatest blessings and withal the greatest mischiefs.
 
-§ IX. So Ino in Euripides, speaking plainly about herself, says she
+Sec. IX. So Ino in Euripides, speaking plainly about herself, says she
 knows "how to be silent when she should, and to speak when speech is
 safe."[570] For those who have enjoyed a truly noble and royal education
 learn first to be silent and then to speak. So the famous king
@@ -8834,7 +8838,7 @@ And if anyone should receive blame in such a case, it is better to be
 censured when one has done well by keeping one's counsel, rather than to
 have to accuse others through having come to grief by trusting them.
 
-§ X. But, generally speaking, who has the right to blame the person who
+Sec. X. But, generally speaking, who has the right to blame the person who
 has not kept his secret? For if it was not to be known, it was not well
 to tell another person of it at all, and if you divulged your secret
 yourself and expected another person to keep it, you had more faith in
@@ -8865,7 +8869,7 @@ of shipwreck,
 With a small torch, so what one tells one person
 Is soon the property of all the citizens."[572]
 
-§ XI. The Roman Senate had been discussing for several days a secret
+Sec. XI. The Roman Senate had been discussing for several days a secret
 matter, and there was much doubt and suspicion about it. And one of the
 senator's wives, discreet in other matters but a very woman in
 curiosity, pressed her husband close, and entreated him to tell her what
@@ -8912,7 +8916,7 @@ Livia.[576] And Livia bitterly upbraided Augustus, if he meant recalling
 his grandson, for not having done so long ago, instead of bringing her
 into hatred and hostility with the heir to the Empire. When Fabius came
 in the morning as usual into the Emperor's presence, and said, "Hail,
-Cæsar!" the Emperor replied, "Farewell,[577] Fabius." And he
+Caesar!" the Emperor replied, "Farewell,[577] Fabius." And he
 understanding the meaning of this straightway went home, and sent for
 his wife, and said, "The Emperor knows that I have not kept his secret,
 so I shall kill myself." And his wife replied, "You have deserved your
@@ -8920,7 +8924,7 @@ fate, since having been married to me so long you did not remember and
 guard against my incontinence of speech, but suffer me to kill myself
 first." So saying she took his sword, and slew herself first.
 
-§ XII. That was a good answer therefore that the comic poet Philippides
+Sec. XII. That was a good answer therefore that the comic poet Philippides
 made to king Lysimachus, who greeted him kindly, and said to him,[578]
 "What shall I give you of all my possessions?" "Whatever you like, O
 king, except your secrets." And talkativeness has another plague
@@ -8957,7 +8961,7 @@ I take it, greater favour for his silence than for his hospitality. And
 yet he had I admit some excuse for his want of reticence, namely hope
 and joy.
 
-§ XIII. But most talkative people have no excuse for ruining themselves.
+Sec. XIII. But most talkative people have no excuse for ruining themselves.
 As for example in a barber's shop one day there was some conversation
 about the tyranny of Dionysius, that it was as hard as adamant and
 invincible, and the barber laughed and said, "Fancy your saying this to
@@ -8969,7 +8973,7 @@ therefore of king Archelaus,[583] when a talkative barber put the towel
 round his neck, and asked him, "How shall I shave you, O king?"
 "Silently," said the monarch. It was a barber that first spread the news
 of the great reverse of the Athenians in Sicily, having heard of it at
-the Piræus from a slave that had escaped from the island. He at once
+the Piraeus from a slave that had escaped from the island. He at once
 left his shop, and ran into the city at full speed, "that no one else
 should reap the fame, and he come in the second,"[584] of carrying the
 news into the town. And an uproar arising, as was only to be expected,
@@ -8988,7 +8992,7 @@ actually asked the executioner, if they had heard how Nicias the General
 was slain. So invincible and incorrigible a vice does habit make
 talkativeness to be.
 
-§ XIV. And yet, as those that drink bitter and strong-smelling physic
+Sec. XIV. And yet, as those that drink bitter and strong-smelling physic
 are disgusted even with the cups they drink it out of, so those that
 bring evil tidings are disliked and hated by their hearers. Wittily
 therefore has Sophocles described the conversation between Creon and the
@@ -9000,7 +9004,7 @@ _G._ The doer pains your mind, but I your ears."[585]
 
 However those that tell the tale grieve us as well as those that did the
 deed: and yet there is no means of checking or controlling the running
-tongue. At Lacedæmon the temple of Athene Chalcioecus[586] was broken
+tongue. At Lacedaemon the temple of Athene Chalcioecus[586] was broken
 into, and an empty flagon was observed lying on the ground inside, and a
 great concourse of people came up and discussed the matter. And one of
 the company said, "If you will allow me, I will tell you what I think
@@ -9036,7 +9040,7 @@ which swarms with eagles, they carry in their mouths a large stone,
 which they employ as a gag or bridle for their scream, and so they cross
 over by night unobserved.
 
-§ XV. Now if anyone were to ask who is the worst and most abandoned man,
+Sec. XV. Now if anyone were to ask who is the worst and most abandoned man,
 no one would pass over the traitor, or mention anyone else. It was as
 the reward of treason that Euthycrates roofed his house with Macedonian
 wood, as Demosthenes tells us; and that Philocrates got a large sum of
@@ -9056,7 +9060,7 @@ is appropriate also to the prater, "You don't communicate to us all this
 out of friendship or goodwill, but it is a disease in you, this itch for
 talking and prating."
 
-§ XVI. But all this must not be looked upon merely as an indictment
+Sec. XVI. But all this must not be looked upon merely as an indictment
 against talkativeness, but an attempt to cure it: for we overcome the
 passions by judgement and practice, but judgement is the first step. For
 no one is wont to shun, and eradicate from his soul, what he does not
@@ -9069,7 +9073,7 @@ doing; they injure their friends, benefit their enemies, and ruin
 themselves. So that the first cure and remedy of this disorder will be
 to reckon up the shame and trouble that results from it.
 
-§ XVII. In the next place we must consider the opposite virtue to
+Sec. XVII. In the next place we must consider the opposite virtue to
 talkativeness, always listening to and having on our lips the encomiums
 passed upon reserve, and remembering the decorum sanctity and mysterious
 power of silence, and ever bearing in mind that terse and brief
@@ -9085,14 +9089,14 @@ all superfluous matter goes home straight to the point like steel. For
 its sententiousness,[593] and pointed suppleness in repartee, comes from
 the habit of silence. And we ought to quote such pointed sayings
 especially to talkative people, such neatness and vigour have they, as,
-for example, what the Lacedæmonians said to Philip, "[Remember]
+for example, what the Lacedaemonians said to Philip, "[Remember]
 Dionysius at Corinth."[594] And again, when Philip wrote to them, "If I
 invade Laconia, I will drive you all out of house and home," they only
 wrote back, "If." And when king Demetrius was indignant and cried out,
-"The Lacedæmonians have only sent me one ambassador," the ambassador was
+"The Lacedaemonians have only sent me one ambassador," the ambassador was
 not frightened but said, "Yes, one to one man." Certainly among the
 ancients men of few words were admired. So the Amphictyones did not
-write extracts from the Iliad or Odyssey, or the Pæans of Pindar, in the
+write extracts from the Iliad or Odyssey, or the Paeans of Pindar, in the
 temple of Pythian Apollo at Delphi, but "Know thyself," "Not too much of
 anything,"[595] and "Be a surety, trouble is near;"[596] so much did
 they admire compactness and simplicity of speech, combining brevity with
@@ -9111,7 +9115,7 @@ took the sticks one by one and easily broke them all up: thus showing
 them that their harmony and concord would make them strong and hard to
 overthrow, while dissension would make them feeble and insecure.
 
-§ XVIII. If then anyone were continually to recollect and repeat these
+Sec. XVIII. If then anyone were continually to recollect and repeat these
 or similar terse sayings, he would probably cease to be pleased with
 idle talk. As for myself, when I consider of what importance it is to
 attend to reason, and to keep to one's purpose, I confess I am quite put
@@ -9132,7 +9136,7 @@ slave "while digging will tell his master on what terms peace was made."
 So great is the force of habit in all matters. And of it we will now
 speak.
 
-§ XIX. For it is not by applying bit or bridle that we can restrain the
+Sec. XIX. For it is not by applying bit or bridle that we can restrain the
 talkative person, we must master the disease by habit. In the first
 place then, when you are in company and questions are going round,
 accustom yourself not to speak till all the rest have declined giving an
@@ -9156,7 +9160,7 @@ does he know about it? In my presence nobody else ought to be asked
 about these matters." And yet we often put questions to people, not so
 much because we want an answer, as to elicit from them conversation and
 friendly feeling, and from a wish to fit them for company, as Socrates
-drew out Theætetus and Charmides. For it is all one to run up and kiss
+drew out Theaetetus and Charmides. For it is all one to run up and kiss
 one who wishes to be kissed by another, or to divert to oneself the
 attention that he was bestowing on another, as to intercept another
 person's answers, and to transfer people's ears, and force their
@@ -9172,7 +9176,7 @@ while, if his answer is unsatisfactory, he is ridiculed by all the
 company, and his failure is a source of the liveliest satisfaction to
 them.
 
-§ XX. The next thing to practise oneself to in answering the questions
+Sec. XX. The next thing to practise oneself to in answering the questions
 put to one,--a point to which the talkative person ought to pay the
 greatest attention,--is not through inadvertence to give serious answers
 to people who only challenge you to talk in fun and sport. For some
@@ -9204,12 +9208,12 @@ to drink after exercise in the gymnasium, till he had first drawn from
 the well one bucket of water and poured it on to the ground, that he
 might accustom his irrational part to wait upon reason.
 
-§ XXI. There are moreover three kinds of answers to questions, the
+Sec. XXI. There are moreover three kinds of answers to questions, the
 necessary, the polite, and the superfluous. For instance, if anyone
 asked, "Is Socrates at home?" one, as if backward and disinclined to
 answer, might say, "Not at home;" or, if he wished to speak with Laconic
 brevity, might cut off "at home," and simply say "No;" as, when Philip
-wrote to the Lacedæmonians to ask if they would receive him in their
+wrote to the Lacedaemonians to ask if they would receive him in their
 city, they sent him back merely a large "No." But another would answer
 more politely, "He is not at home, but with the bankers," and if he
 wished to add a little more, "he expects to see some strangers there."
@@ -9217,7 +9221,7 @@ But the superfluous prater, if he has read Antimachus of Colophon,[601]
 says, "He is not at home, but with the bankers, waiting for some Ionian
 strangers, about whom he has had a letter from Alcibiades who is in the
 neighbourhood of Miletus, staying with Tissaphernes the satrap of the
-great king, who used long ago to favour the Lacedæmonian party, but now
+great king, who used long ago to favour the Lacedaemonian party, but now
 attaches himself to the Athenians for Alcibiades' sake, for Alcibiades
 desires to return to his country, and so has succeeded in changing the
 views of Tissaphernes." And then he will go over the whole of the Eighth
@@ -9233,7 +9237,7 @@ him to fix a standard, the superintendent replied not amiss, "The
 standard of the person talking with you." So the meaning of the
 questioner ought to be the standard for the answer.
 
-§ XXII. Moreover as Socrates urged his disciples to abstain from such
+Sec. XXII. Moreover as Socrates urged his disciples to abstain from such
 food as tempted them to eat when they were not hungry, and from such
 drinks as tempted them to drink when they were not thirsty, so the
 talkative person ought to be afraid most of such subjects of
@@ -9291,7 +9295,7 @@ bored everybody, and dispersed every social party, by always narrating
 the particulars of the battle of Leuctra and its consequences, so that
 he got nicknamed Epaminondas.
 
-§ XXIII. Nevertheless this is one of the least of the evils of
+Sec. XXIII. Nevertheless this is one of the least of the evils of
 talkativeness, and we ought even to try and divert it into such channels
 as these, for prating is less of a nuisance when it is on some literary
 subject. We ought also to try and get some persons to write on some
@@ -9347,7 +9351,7 @@ reading.
 
 [547] Homer, "Iliad," v. 226; "Odyssey," vi. 81.
 
-[548] "Bacchæ," 385-387.
+[548] "Bacchae," 385-387.
 
 [549] See Ovid, "Tristia," iv. 4, 55-58.
 
@@ -9361,9 +9365,9 @@ furor brevis est" I read [Greek: homotoichos] with Mez.
 [553] Compare the German proverb, "Thought when sober,
 said when drunk"--"Nuchtern gedacht, voll gesagt."
 
-[554] Cf. Quintilian, x. 1, 78: "His ætate Lysias major,
+[554] Cf. Quintilian, x. 1, 78: "His aetate Lysias major,
 subtilis atque elegans et quo nihil, si oratori satis
-est docere, quæras perfectius. Nihil enim est inane,
+est docere, quaeras perfectius. Nihil enim est inane,
 nihil arcessitum; puro tamen fonti quam magno flumini
 propior." Cf. ix. 4, 17.
 
@@ -9381,32 +9385,32 @@ epeigei.]"--_Xylander._
 
 [560] "Laws," xi. p. 935 A.
 
-[561] So true are the words of Æschylus, [Greek: glôssê
-mataia zêmia prostribetai].--"Prom." 329.
+[561] So true are the words of AEschylus, [Greek: glosse
+mataia zemia prostribetai].--"Prom." 329.
 
 [562] Our "A bird in the hand is worth two in the bush."
 
 [563] "Non Citticus, sed Eleates. v. Cic. Tuscul. ii.
 22, et Nat. Deor. 3, 33."--_Reiske._
 
-[564] See Pausanias, i. 23. Leæna means "lioness." On
+[564] See Pausanias, i. 23. Leaena means "lioness." On
 the conspiracy see Thucydides, vi. 54-59.
 
 [565] Homer, "Odyssey," xix. 494. Plutarch quotes from
 memory. The nurse's name was Euryclea.
 
 [566] Odyssey," xix. 210-212. Quoted again "On Moral
-Virtue," § iv.
+Virtue," Sec. iv.
 
 [567] Literally _bark_. See "Odyssey," xx. 13, 16.
 
 [568] "Odyssey," xx. 23.
 
-[569] See "Odyssey," ix. [Greek: Kyklôpeia].
+[569] See "Odyssey," ix. [Greek: Kyklopeia].
 
 [570] Euripides, "Ino." Fragment, 416.
 
-[571] "Significat Q. Cæcilium Metellum, de quo Liv. xl.
+[571] "Significat Q. Caecilium Metellum, de quo Liv. xl.
 45, 46."--_Reiske._
 
 [572] Euripides, "Ino." Fragm. 415. Compare St. James,
@@ -9422,12 +9426,12 @@ relates this story somewhat differently.
 
 [576] The Emperor's wife.
 
-[577] So it is in § xii. But perhaps here it means, "I
+[577] So it is in Sec. xii. But perhaps here it means, "I
 wish you had more sense, Fabius!"
 
 [578] Adopting the reading of Reiske.
 
-[579] Reading [Greek: phorutou] or [Greek: phorytôn], as
+[579] Reading [Greek: phorutou] or [Greek: phoryton], as
 Wyttenbach.
 
 [580] Reading [Greek: katechein dynantai] with Reiske.
@@ -9482,14 +9486,14 @@ seen in Herodotus, i. 47.
 
 [599] Proverb of cross purposes.
 
-[600] Reading [Greek: exerasthai] with Dübner.
+[600] Reading [Greek: exerasthai] with Duebner.
 
 [601] Catullus calls him "tumidus," _i.e._ long-winded,
 95, 10. See also Propertius, iii. 34-32. He was a Greek
 poet, a contemporary of Socrates and Plato, and author
 of a Thebaid. Pausanias mentions him, viii. 25; ix. 35.
 
-[602] The mediæval proverb, _Ubi dolor ibi digitus_.
+[602] The mediaeval proverb, _Ubi dolor ibi digitus_.
 
 [603] A proverbial expression for having no judgment.
 See Sophocles, Fragm. 307; Plato, "Charmides," 154 B;
@@ -9499,8 +9503,8 @@ sheet on a subject he knows nothing about.
 [604] Euripides, Fragm. 202. Quoted also by Plato,
 "Gorgias," 484 E.
 
-[605] Reading with Reiske, [Greek: misthon autô dounai
-tô mikron siôpêsai mê dynamenos].
+[605] Reading with Reiske, [Greek: misthon auto dounai
+to mikron siopesai me dynamenos].
 
 [606] A celebrated Greek historian, and pupil of
 Isocrates. See Cicero, "De Oratore," ii. 13.
@@ -9509,14 +9513,14 @@ Isocrates. See Cicero, "De Oratore," ii. 13.
 
 ON CURIOSITY.[608]
 
-§ I. If a house is dark, or has little air, is in an exposed position,
+Sec. I. If a house is dark, or has little air, is in an exposed position,
 or unhealthy, the best thing will probably be to leave it; but if one is
 attached to it from long residence in it, one can improve it and make it
 more light and airy and healthy by altering the position of the windows
 and stairs, and by throwing open new doors and shutting up old ones. So
 some towns have been altered for the better, as my native place,[609]
 which did lie to the west and received the rays of the setting sun from
-Parnassus, was they say turned to the east by Chæron. And Empedocles the
+Parnassus, was they say turned to the east by Chaeron. And Empedocles the
 naturalist is supposed to have driven away the pestilence from that
 district, by having closed up a mountain gorge that was prejudicial to
 health by admitting the south wind to the plains. Similarly, as there
@@ -9550,7 +9554,7 @@ advantageous and serviceable, each one saying to himself,
 "What have I done amiss? What have I done?
 What that I ought to have done left undone?"
 
-§ II. And now, as they say of Lamia that she is blind when she sleeps at
+Sec. II. And now, as they say of Lamia that she is blind when she sleeps at
 home, for she puts her eyes on her dressing-table, but when she goes out
 she puts her eyes on again, and has good sight, so each of us turns,
 like an eye, our malicious curiosity out of doors and on others, while
@@ -9581,7 +9585,7 @@ fountain-head, and knew the wonderful man himself and his speeches and
 philosophy, the object of which was that men should recognize their
 faults and so get rid of them.
 
-§ III. But some men cannot bear to look upon their own life, so unlovely
+Sec. III. But some men cannot bear to look upon their own life, so unlovely
 a spectacle is it, nor to throw and flash on themselves, like a lantern,
 the reflection of reason; but their soul being burdened with all manner
 of vices, and dreading and shuddering at its own interior, sallies forth
@@ -9602,7 +9606,7 @@ it would not be hidden. Indeed it is not usual to go into a strange
 house without knocking at the door, and nowadays there are porters, but
 in old times there were knockers on doors to let the people inside know
 when anyone called, that a stranger might not find the mistress or
-daughter of the house _en déshabille_, or one of the slaves being
+daughter of the house _en deshabille_, or one of the slaves being
 corrected, or the maids bawling out. But the curious person intrudes on
 all such occasions as these, although he would be unwilling to be a
 spectator, even if invited, of a well-ordered family: but the things for
@@ -9614,8 +9618,8 @@ through their walls, opens their doors, and like the wanton wind, that
 insinuates itself into maidenly reserve, he pries into and calumniates
 dances and routs and revels.
 
-§ IV. And as Cleon is satirized in the play[615] as having "his hands
-among the Ætolians, but his soul in Peculation-town," so the soul of the
+Sec. IV. And as Cleon is satirized in the play[615] as having "his hands
+among the AEtolians, but his soul in Peculation-town," so the soul of the
 curious man is at once in the mansions of the rich, and the cottages of
 the poor, and the courts of kings, and the bridal chambers of the newly
 married; he pries into everything, the affairs of foreigners, the
@@ -9640,7 +9644,7 @@ fidelity of a friend. Flee from this cloud that is so black and
 threatening, for when its hidden fury bursts forth, you will not fail to
 hear its thunder and see its lightning.
 
-§ V. How shall you flee from it? Why, by dissipating and distracting
+Sec. V. How shall you flee from it? Why, by dissipating and distracting
 your curiosity, by turning your soul to better and pleasanter objects:
 examine the phenomena of sky, and earth, and air, and sea. Are you by
 nature fond of gazing at little or great things? If at great, turn your
@@ -9670,7 +9674,7 @@ mixing of poisons, envyings, jealousies, "shipwrecks of families," and
 dethroning of princes. Sate and cloy yourself on these, you will by so
 doing vex and enrage none of your associates.
 
-§ VI. But it seems curiosity does not rejoice in stale evils, but only
+Sec. VI. But it seems curiosity does not rejoice in stale evils, but only
 in fresh and recent ones, gladly viewing the spectacle of tragedies of
 yesterday, but backward in taking part in comic and festive scenes. And
 so the curious person is a languid and listless hearer to the narrator
@@ -9708,10 +9712,10 @@ of malignity, which is brother to envy and jealousy. For envy is pain at
 another's blessings, and malignity is joy at another's misfortunes: and
 both proceed from the same savage and brutish vice, ill-nature.
 
-§ VII. But so unpleasant is it to everybody to have his private ills
+Sec. VII. But so unpleasant is it to everybody to have his private ills
 brought to light, that many have died rather than acquaint the doctors
 with their secret ailments. For suppose Herophilus, or Erasistratus, or
-even Æsculapius himself during his sojourn on earth, had gone with their
+even AEsculapius himself during his sojourn on earth, had gone with their
 drugs and surgical instruments from house to house, to inquire what man
 had a fistula in ano, or what woman had a cancer in her womb;--and yet
 their curiosity would have been professional[618]--who would not have
@@ -9736,9 +9740,9 @@ the following lines,
 
 "Even with spade in hand he'll tell the terms
 On which peace was concluded: all these things
-The cursèd fellow walks about and pries into."
+The cursed fellow walks about and pries into."
 
-§ VIII. But curious people shun the country as stale and dull and too
+Sec. VIII. But curious people shun the country as stale and dull and too
 quiet, and push into warehouses and markets and harbours, asking, "Any
 news? Were you not in the market in the forenoon?" and sometimes
 receiving for answer, "What then? Do you think things in the town change
@@ -9761,7 +9765,7 @@ prying into things kept close and hidden from the world; while curiosity
 is a tampering with and seduction of and revealing the nakedness of
 secrets.[620]
 
-§ IX. As it is likely that much learning will produce wordiness, and so
+Sec. IX. As it is likely that much learning will produce wordiness, and so
 Pythagoras enjoined five years' silence on his scholars, calling it a
 truce from words,[621] so defamation of character is sure to go with
 curiosity. For what people are glad to hear they are glad to talk about,
@@ -9792,7 +9796,7 @@ open private letters, to put their ears to their neighbour's walls, and
 to whisper to their slaves and women-servants, practices always low, and
 frequently dangerous.
 
-§ X. It will be exceedingly useful, therefore, to deter the curious from
+Sec. X. It will be exceedingly useful, therefore, to deter the curious from
 these propensities, for them to remember their past experience.
 Simonides used to say that he occasionally opened two chests for rewards
 and thanks that he had by him, and found the one full for rewards, but
@@ -9829,7 +9833,7 @@ of life, and disgraces of families, and disorders in other people's
 houses, first remember what little favour or advantage such prying has
 brought them on previous occasions.
 
-§ XI. Habit will be of the utmost importance in stopping this
+Sec. XI. Habit will be of the utmost importance in stopping this
 propensity, if we begin early to practise self-control in respect to it,
 for as the disease increases by habit and degrees, so will its cure, as
 we shall see when we discuss the necessary discipline. In the first
@@ -9854,7 +9858,7 @@ that they may not lose their edge and sharpness, so, when we remember
 that curiosity for learning has also its edge and keenness, let us not
 entirely expend or blunt it on inferior objects.
 
-§ XII. Next let us accustom ourselves when we pass a strange house not
+Sec. XII. Next let us accustom ourselves when we pass a strange house not
 to look inside at the door, or curiously inspect the interior, as if we
 were going to pilfer something, remembering always that saying of
 Xenocrates, that it is all one whether one puts one's feet or eyes in
@@ -9879,7 +9883,7 @@ their business, and then return quickly with the answer, and afterwards
 to keep within the bounds of reason, and obey her behests. But it is
 like those lines of Sophocles,
 
-"Then did the Ænianian's horses bolt,
+"Then did the AEnianian's horses bolt,
 Unmanageable quite;"[628]
 
 for so the senses not having, as we said, right training and practice,
@@ -9896,7 +9900,7 @@ towns, and called Night the time propitious to thought,[629] thinking
 quiet and withdrawal from worldly distractions a great help towards
 meditating upon and solving the problems of life.
 
-§ XIII. Moreover, when men are abusing and reviling one another in the
+Sec. XIII. Moreover, when men are abusing and reviling one another in the
 market-place, it is not very difficult or tiresome not to go near them;
 or if a tumultuous concourse of people crowd together, to remain seated;
 or to get up and go away, if you are not master of yourself. For you
@@ -9924,7 +9928,7 @@ young and handsome queen. We on the contrary peep into women's litters,
 and hang about their windows, and think we do no harm, though we thus
 make our curiosity a loop-hole[631] for all manner of vice.
 
-§ XIV. Moreover, as it is of great help to fair dealing sometimes not to
+Sec. XIV. Moreover, as it is of great help to fair dealing sometimes not to
 seize some honest gain, that you may accustom yourself as far as
 possible to flee from unjust gains, and as it makes greatly for virtue
 to abstain sometimes from your own wife, that you may not ever be
@@ -9956,7 +9960,7 @@ may say,
 "Holy oblivion of all human ills,
 What wisdom dost thou bring!"[633]
 
-§ XV. We ought therefore also to accustom ourselves, when we receive a
+Sec. XV. We ought therefore also to accustom ourselves, when we receive a
 letter, not to be in a tremendous hurry about breaking the seal, as most
 people are, even tearing it open with their teeth if their hands are
 slow; nor to rise from our seat and run up to meet him, if a messenger
@@ -9976,7 +9980,7 @@ thrust themselves in at private meetings, become spectators of rites
 they ought not to witness, enter holy grounds they ought not to, and pry
 into the lives and conversations of kings.
 
-§ XVI. Indeed tyrants themselves, who must know all things, are made
+Sec. XVI. Indeed tyrants themselves, who must know all things, are made
 unpopular by no class more than by their spies[634] and talebearers.
 Darius in his youth, when he mistrusted his own powers, and suspected
 and feared everybody, was the first who employed spies; and the
@@ -9998,10 +10002,10 @@ they may be ashamed of having any similarity or connection in habit with
 a class of people so universally hated and disliked as informers.
 
 [608] Jeremy Taylor has largely borrowed from this
-Treatise in his "Holy Living," chap. ii. § v. Of
+Treatise in his "Holy Living," chap. ii. Sec. v. Of
 Modesty.
 
-[609] Chæronea in Boeotia.
+[609] Chaeronea in Boeotia.
 
 [610] Lines from some comic poet, no doubt.
 
@@ -10011,7 +10015,7 @@ Modesty.
 
 [613] Homer, "Odyssey," xi. 278. Epicaste hung herself.
 
-[614] "[Greek: oikiskô] corrigit Valekenarius ad Herodot.
+[614] "[Greek: oikisko] corrigit Valekenarius ad Herodot.
 p. 557."--_Wyttenbach._
 
 [615] Aristophanes, "Equites," 79.
@@ -10021,7 +10025,7 @@ fully by our author in his "Lives," p. 911. There are
 there four preceding lines that compare human life to
 the moon's changes.
 
-[617] Æschylus, "Supplices," 937.
+[617] AEschylus, "Supplices," 937.
 
 [618] All three being eminent doctors.
 
@@ -10030,13 +10034,13 @@ the moon's changes.
 [620] Plutarch wants to show that curiosity and adultery
 are really the same vice in principle. Hence his imagery
 here. Jeremy Taylor has very beautifully dealt with this
-passage, "Holy Living," chap. ii. § v. I cannot pretend
+passage, "Holy Living," chap. ii. Sec. v. I cannot pretend
 to his felicity of language. Thus Plutarch makes
 adultery mere curiosity, and curiosity a sort of
 adultery in regard to secrets. A profoundly ethical and
-moral view. Compare § ix.
+moral view. Compare Sec. ix.
 
-[621] Compare Lucian's [Greek: echeglôttia], after
+[621] Compare Lucian's [Greek: echeglottia], after
 [Greek: echecheiria] (_armistice_), _Lexiph_. 9.
 
 [622] See the story in Homer, "Iliad," vi. 155 sq.
@@ -10046,7 +10050,7 @@ moral view. Compare § ix.
 [624] Literally, some woman _shut up_, or _enclosed_.
 
 [625] See also our author's "On those who are punished
-by the Deity late," § xi.
+by the Deity late," Sec. xi.
 
 [626] See Euripides, Fragm., 389. Also Plutarch's
 "Theseus," cap. xv.
@@ -10057,11 +10061,11 @@ are all the bad people buried?" Where indeed?
 
 [628] Sophocles, "Electra," 724, 725.
 
-[629] _euphronê_, a stock phrase for night, is here
+[629] _euphrone_, a stock phrase for night, is here
 defined.
 
 [630] "Historia exstat initio libri quinti
-Cyropædiæ."--_Reiske._
+Cyropaediae."--_Reiske._
 
 [631] Literally, "slippery and prone to." For the
 metaphor of "slippery" compare Horace, "Odes," i. 19-8,
@@ -10080,7 +10084,7 @@ grinding_.
 
 ON SHYNESS.[636]
 
-§ I. Some of the things that grow on the earth are in their nature wild
+Sec. I. Some of the things that grow on the earth are in their nature wild
 and barren and injurious to the growth of seeds and plants, yet those
 who till the ground consider them indications not of a bad soil but of a
 rich and fat one;[637] so also there are passions of the soul that are
@@ -10107,7 +10111,7 @@ have played the coward, and abandoned noble ventures, more from fear of
 a bad name than of the dangers to be undergone, not being able to bear a
 bad reputation.
 
-§ II. As we must not disregard their weakness, so neither again must we
+Sec. II. As we must not disregard their weakness, so neither again must we
 praise that rigid and stubborn insensibility, "that recklessness and
 frantic energy to rush anywhere, that seemed like a dog's courage in
 Anaxarchus."[640] But we must contrive a harmonious blending of the two,
@@ -10145,7 +10149,7 @@ and he did well to mention the harm it does first. For it becomes
 advantageous only through reason's curtailing its excess, and reducing
 it to moderate proportions.
 
-§ III. In the first place, then, the person who is afflicted with
+Sec. III. In the first place, then, the person who is afflicted with
 shyness ought to be persuaded that he suffers from an injurious disease,
 and that nothing injurious can be good: nor must he be wheedled and
 tickled with the praise of being called a nice and jolly fellow rather
@@ -10179,7 +10183,7 @@ credit is doubtful, and to go security against their wish, for though
 they commend that saying, "Be a surety, trouble is at hand,"[645] they
 cannot apply it when business is on hand.
 
-§ IV. It would not be easy to enumerate how many this vice has ruined.
+Sec. IV. It would not be easy to enumerate how many this vice has ruined.
 When Creon said to Medea,
 
 "Lady, 'tis better now to earn your hate,
@@ -10212,7 +10216,7 @@ though he may seem so.[648] For if you invite you will be invited back,
 and if you entertain others you will be entertained back to your hurt,
 if you let the temper as it were of your caution be weakened by shame.
 
-§ V. As then this disease is the cause of much mischief, we must try and
+Sec. V. As then this disease is the cause of much mischief, we must try and
 exterminate it by assiduous effort, beginning first, as people are wont
 to do in other matters, with small and easy things. For example, if
 anyone pledge you to drink with him at a dinner when you have had
@@ -10238,7 +10242,7 @@ the onset of some prating fellow, but allow the trifler to waste all
 your time, from not having nerve to say, "I will see you some other
 time, I have no leisure now."[649]
 
-§ VI. Moreover, the use and practice of restraining one's bashfulness in
+Sec. VI. Moreover, the use and practice of restraining one's bashfulness in
 small and unimportant matters is advantageous also in regard to praise.
 For example, if a friend's harper sings badly at a drinking party, or an
 actor hired at great cost murders[650] Menander, and most of the party
@@ -10259,7 +10263,7 @@ singer, or laughing at a dull buffoon, will never go to this length, nor
 say to some impudent fellow in such matters, "Swear on my behalf, bear
 false witness, pronounce an unjust verdict."
 
-§ VII. So also we ought to refuse people that want to borrow money of
+Sec. VII. So also we ought to refuse people that want to borrow money of
 us, from being accustomed to say No in small and easily refused matters.
 Thus Archelaus, king of the Macedonians, being asked at supper for a
 gold cup by a man who thought _Receive_ the finest word in the language,
@@ -10286,7 +10290,7 @@ expends his resources on unnecessary things, will have means for
 necessary ones. And our disgrace is greatly increased, if we are
 deficient in what is noble, and abound in what is trivial.
 
-§ VIII. But bashfulness is not only a bad and inconsiderate manager of
+Sec. VIII. But bashfulness is not only a bad and inconsiderate manager of
 money, but also in more important matters makes us reject expediency and
 reason. For when we are ill we do not call in the experienced doctor,
 because we stand in awe of the family one; and instead of the best
@@ -10310,7 +10314,7 @@ the friend who is serviceable to us. For he that has thus practised and
 trained himself will be difficult to catch tripping, nay even
 unassailable, in greater matters.
 
-§ IX. Let so much suffice for practice. And of useful considerations the
+Sec. IX. Let so much suffice for practice. And of useful considerations the
 first is that which teaches and reminds us, that all passions and
 maladies of the soul are accompanied by the very things which we think
 we avoid through them. Thus infamy comes through too great love of fame,
@@ -10329,7 +10333,7 @@ accepted on behalf of a daughter or sister an unprofitable offer of
 marriage at the bidding of bashfulness, have afterwards been compelled
 to break their word, and break off the match.
 
-§ X. He that said all the dwellers in Asia were slaves to one man
+Sec. X. He that said all the dwellers in Asia were slaves to one man
 because they could not say the one syllable No, spoke in jest and not in
 earnest; but bashful persons, even if they say nothing, can by raising
 or dropping their eyebrows decline many disagreeable and unpleasant acts
@@ -10353,19 +10357,19 @@ but goes bail for him as it were through his promises,
 
 "Is bound by fetters not of brass but shame."[662]
 
-But Persæus,[663] when he lent a sum of money to one of his friends, had
+But Persaeus,[663] when he lent a sum of money to one of his friends, had
 the fact duly attested by a banker in the market-place, remembering
 belike that line in Hesiod,[664]
 
 "E'en to a brother, smiling, bring you witness."
 
-And he wondering and saying, "Why all these legal forms, Persæus?" he
+And he wondering and saying, "Why all these legal forms, Persaeus?" he
 replied, "Ay, verily, that my money may be paid back in a friendly way,
 and that I may not have to use legal forms to get it back." For many, at
 first too bashful to see to security, have afterwards had to go to law,
 and lost their friend.[665]
 
-§ XI. Plato again, giving Helicon of Cyzicus a letter for Dionysius,
+Sec. XI. Plato again, giving Helicon of Cyzicus a letter for Dionysius,
 praised the bearer as a man of goodness and moderation, but added at the
 end of the letter, "I write you this about a man, an animal by nature
 apt to change." But Xenocrates, though a man of austere character, was
@@ -10388,7 +10392,7 @@ to perjure oneself, or deliver an unjust verdict, or vote for a measure
 that is inexpedient, or borrow money for someone who will never pay it
 back.
 
-§ XII. And so repentance follows more closely upon bashfulness than upon
+Sec. XII. And so repentance follows more closely upon bashfulness than upon
 any emotion, and that not afterwards, but in the very act. For we are
 vexed with ourselves when we give, and ashamed when we perjure
 ourselves, and get ill-fame from our advocacies, and are put to the
@@ -10405,7 +10409,7 @@ it, but to undertake and try and force your way to what you are unable
 to do, or unqualified by nature for, is in addition to the disgrace
 incurred a task full of trouble.
 
-§ XIII. To take another element into consideration, all seemly and
+Sec. XIII. To take another element into consideration, all seemly and
 modest requests we ought readily to comply with, not bashfully but
 heartily, whereas in injurious or unreasonable requests we ought ever to
 remember the conduct of Zeno, who, meeting a young man he knew walking
@@ -10421,7 +10425,7 @@ their own effrontery, and not to gratify the immodest in their
 disgraceful desires through false modesty, is the right and proper
 conduct of sensible people.
 
-§ XIV. Moreover it is no great task to resist disreputable and low and
+Sec. XIV. Moreover it is no great task to resist disreputable and low and
 worthless fellows who importune you, but some send such off with a laugh
 or a jest, as Theocritus did, who, when two fellows in the public baths,
 one a stranger, the other a well-known thief, wanted to borrow his
@@ -10435,13 +10439,13 @@ and far from bold, asked Antigonus for promotion, he replied, "With me,
 young man, honours are given for personal prowess, not for the prowess
 of ancestors."
 
-§ XV. But if the person that importunes us be famous or a man of power,
+Sec. XV. But if the person that importunes us be famous or a man of power,
 for such persons are very hard to move by entreaty or to get rid of when
 they come to sue for your vote and interest, it will not perhaps be easy
 or even necessary to behave as Cato, when quite a young man, did to
 Catulus. Catulus was in the highest repute at Rome, and at that time
 held the office of censor, and went to Cato, who then held the office of
-quæstor, and tried to beg off someone whom he had fined, and was urgent
+quaestor, and tried to beg off someone whom he had fined, and was urgent
 and even violent in his petitions, till Cato at last lost all patience,
 and said, "To have you, the censor, removed by my officers against your
 will, Catulus, would not be a seemly thing for you." So Catulus felt
@@ -10455,7 +10459,7 @@ something unjust, replied, "Neither would you be a good poet if your
 lines violated the laws of metre, nor should I be a good magistrate if I
 gave decisions contrary to law."
 
-§ XVI. And yet it is not on account of want of metrical harmony in
+Sec. XVI. And yet it is not on account of want of metrical harmony in
 respect to the lyre, to borrow the words of Plato, that cities quarrel
 with cities and friends with friends, and do and suffer the worst woes,
 but on account of deviations[670] from law and justice. And yet some,
@@ -10474,7 +10478,7 @@ if he refuse you will have an opportunity to speak, and ask him which is
 more disgraceful, to utter a solecism and make wry faces, or to violate
 the law and one's oath, and contrary to justice to do more for a bad
 than for a good man. Nicostratus the Argive, when Archidamus offered him
-a large sum of money and any Lacedæmonian bride he chose if he would
+a large sum of money and any Lacedaemonian bride he chose if he would
 deliver up Cromnum, said Archidamus could not be a descendant of
 Hercules, for he travelled about and killed evil-doers, whereas
 Archidamus tried to make evil-doers of the good. In like manner, if a
@@ -10482,7 +10486,7 @@ man of good repute tries to force and importune us to something bad, let
 us tell him that he is acting in an ignoble way, and not as his birth
 and virtue would warrant.
 
-§ XVII. But in the case of people of no repute you must see whether you
+Sec. XVII. But in the case of people of no repute you must see whether you
 can persuade the miser by your importunity to lend you money without a
 bond, or the proud man to yield you the better place, or the ambitious
 man to surrender some office to you when he might take it himself. For
@@ -10503,7 +10507,7 @@ with their eyes open; like people who are urged hard to toss off big
 bumpers, and grunt and groan and make wry faces, but at last do as they
 are told.
 
-§ XVIII. Such weakness of mind is like a temperament of body equally
+Sec. XVIII. Such weakness of mind is like a temperament of body equally
 susceptible to heat and cold; for if such people are praised by those
 that importune them they are overcome and yield at once, whereas they
 are mortally afraid of the blame and suspicions of those whose desires
@@ -10544,7 +10548,7 @@ I take it, was the remark of Pindar to one who told him that he praised
 him everywhere and to all persons, "I am greatly obliged to you, and
 will make your account true by my actions."
 
-§ XIX. A useful precept in reference to all passions is especially
+Sec. XIX. A useful precept in reference to all passions is especially
 valuable in the case of the bashful. When they have been overcome by
 this infirmity, and against their judgement have erred and been
 confounded, let them fix it in their memories, and, remembering the pain
@@ -10565,12 +10569,12 @@ French call _mauvaise honte_.
 subject is the fattest soil to weeds."--_2 Henry IV._,
 A. iv. Sc. iv.
 
-[638] Or _girls_. [Greek: korê] means both a girl, and
+[638] Or _girls_. [Greek: kore] means both a girl, and
 the pupil of the eye.
 
 [639] So Wyttenbach.
 
-[640] These lines are quoted again "On Moral Virtue," §
+[640] These lines are quoted again "On Moral Virtue," Sec.
 vi.
 
 [641] "Iliad," xxiv. 44, 45.
@@ -10580,7 +10584,7 @@ vi.
 [643] Soph., Fragm., 736.
 
 [644] Surely it is necessary to read [Greek:
-prodiaphthareisa tô akolastô].
+prodiaphthareisa to akolasto].
 
 [645] See Plato, "Charmides," 165 A.
 
@@ -10588,13 +10592,13 @@ prodiaphthareisa tô akolastô].
 
 [647] "Works and Days," 342.
 
-[648] Reading with Wyttenbach, [Greek: mêd hypolabe
+[648] Reading with Wyttenbach, [Greek: med hypolabe
 pisteuein, dokounta].
 
 [649] See Horace's very amusing "Satire," i. ix., on
 such tiresome fellows.
 
-[650] [Greek: epitribô] is used in the same sense by
+[650] [Greek: epitribo] is used in the same sense by
 Demosthenes, p. 288.
 
 [651] On such social pests see Juvenal, i. 1-14.
@@ -10603,15 +10607,15 @@ Demosthenes, p. 288.
 409 B.C., and took up his abode for good in Macedonia at
 the court of Archelaus, where he died 406 B.C.
 
-[653] For a drachma was only worth 6 obols, or 9¾_d._ of
+[653] For a drachma was only worth 6 obols, or 93/4_d._ of
 our money, nearly = Roman denarius.
 
-[654] A talent was 6,000 drachmæ, or 36,000 obols, about
-£243 15_s._ of our money.
+[654] A talent was 6,000 drachmae, or 36,000 obols, about
+L243 15_s._ of our money.
 
-[655] "Olynth." iii. p. 33, § 19.
+[655] "Olynth." iii. p. 33, Sec. 19.
 
-[656] Compare "On Education," § vii.
+[656] Compare "On Education," Sec. vii.
 
 [657] Our "Out of the frying-pan into the fire." Cf.
 "Incidit in Scyllam cupiens vitare Charybdim."
@@ -10627,7 +10631,7 @@ have both left us collections.
 
 [662] A slightly-changed line from Euripides'
 "Pirithous," Fragm. 591. Quoted correctly "On Abundance
-of Friends," § vii.
+of Friends," Sec. vii.
 
 [663] "Zenonis discipulus."--_Reiske._
 
@@ -10647,18 +10651,18 @@ of Friends," § vii.
 
 [670] Literally "want of tune in." We cannot well keep
 up the metaphor. Compare with this passage, "That virtue
-may be taught," § ii.
+may be taught," Sec. ii.
 
 [671] Literally "crowns."
 
 [672] Thucydides, ii. 64. Pericles is the speaker.
 Quoted again in "How one may discern a flatterer from a
-friend," § XXXV.
+friend," Sec. XXXV.
 
 [673] "Est Bio Borysthenita, de quo vide Diog.
-Laërt."--_Reiske._
+Laert."--_Reiske._
 
-[674] "De Alexino Eleo vide Diog. Laërt., ii. 109.
+[674] "De Alexino Eleo vide Diog. Laert., ii. 109.
 Nostri p. 1063, 3."--_Reiske._
 
 [675] Antisthenes wrote a book called "Hercules." See
@@ -10668,7 +10672,7 @@ ON RESTRAINING ANGER.
 
 A DIALOGUE BETWEEN SYLLA AND FUNDANUS.
 
-§ I. _Sylla._ Those painters, Fundanus, seem to me to do well who,
+Sec. I. _Sylla._ Those painters, Fundanus, seem to me to do well who,
 before giving the finishing touches to their paintings, lay them by for
 a time and then revise them; because by taking their eyes off them for a
 time they gain by frequent inspection a new insight, and are more apt to
@@ -10716,7 +10720,7 @@ music the lowest notes become the highest.
 _Sylla._ Neither of these is the case, Fundanus, but oblige me by doing
 as I ask.
 
-§ II. _Fundanus._ One of the excellent precepts then of Musonius that I
+Sec. II. _Fundanus._ One of the excellent precepts then of Musonius that I
 remember, Sylla, is this, that those who wish to be well should diet
 themselves all their life long. For I do not think we must employ reason
 as a cure, as we do hellebore, by purging it out with the disease, but
@@ -10753,7 +10757,7 @@ haughty and self-willed and hard to be worked upon by another, like a
 fortified tyranny, must have someone born and bred within it[679] to
 overthrow it.
 
-§ III. Now long-continued anger, and frequent giving way to it, produces
+Sec. III. Now long-continued anger, and frequent giving way to it, produces
 an evil disposition of soul, which people call irascibility, and which
 ends in passionateness, bitterness, and peevishness, whenever the mind
 becomes sore and vexed at trifles and querulous at everyday occurrences,
@@ -10762,7 +10766,7 @@ and suppresses at once the rising anger, it not only cures the soul for
 the moment, but restores its tone and balance for the future. It has
 happened to myself indeed twice or thrice, when I strongly fought
 against anger, that I was in the same plight as the Thebans, who after
-they had once defeated the Lacedæmonians, whom they had hitherto thought
+they had once defeated the Lacedaemonians, whom they had hitherto thought
 invincible, never lost a battle against them again. I then felt
 confident that reason can win the victory. I saw also that anger is not
 only appeased by the sprinkling of cold water, as Aristotle attested,
@@ -10782,12 +10786,12 @@ You left your house in shame;"[681]
 
 and Callisthenes incensed Alexander, by saying, when a huge cup was
 brought to him, "I will not drink to Alexander till I shall require the
-help of Æsculapius."
+help of AEsculapius."
 
-§ IV. As then it is easy to put out a flame kindled in the hair of hares
+Sec. IV. As then it is easy to put out a flame kindled in the hair of hares
 and in wicks and rubbish, but if it once gets hold of things solid and
 thick, it quickly destroys and consumes them, "raging amidst the lofty
-work of the carpenters," as Æschylus[682] says; so he that observes
+work of the carpenters," as AEschylus[682] says; so he that observes
 anger in its rise, and sees it gradually smoking and bursting forth into
 fire from some chatter or rubbishy scurrility, need have no great
 trouble with it, but can frequently smother it merely by silence and
@@ -10814,7 +10818,7 @@ smiling countenance, and give his eye a gentler expression, by inclining
 in the other direction and running counter to his passion, thus keeping
 himself from fall and defeat.
 
-§ V. For the first way, my friend, to overcome anger, like the putting
+Sec. V. For the first way, my friend, to overcome anger, like the putting
 down of some tyrant, is not to obey or listen to it when it bids you
 speak loud, and look fierce, and beat yourself, but to remain quiet, and
 not to make the passion more intense, as one would a disease, by tossing
@@ -10849,9 +10853,9 @@ throw thee into the sea." For anger has many formidable aspects, and
 many ridiculous ones, so that of all the passions it is the most hated
 and despised. It will be well to consider both aspects.
 
-§ VI. To begin then, whether my process was wrong or right I know not,
+Sec. VI. To begin then, whether my process was wrong or right I know not,
 but I began my cure of anger by noticing its effects in others, as the
-Lacedæmonians study the nature of drunkenness in the Helots. And in the
+Lacedaemonians study the nature of drunkenness in the Helots. And in the
 first place, as Hippocrates tells us that disease is most dangerous in
 which the face of the patient is most unlike himself, so observing that
 people beside themselves with anger change their face, colour, walk, and
@@ -10906,7 +10910,7 @@ vent to them in anger. And so for a word which is, as Plato styles it,
 "a very small matter," they incur a most heavy punishment, for they get
 reputed to be enemies, and evil speakers, and malignant in disposition.
 
-§ VII. Seeing and observing all this, it occurs to me to take it as a
+Sec. VII. Seeing and observing all this, it occurs to me to take it as a
 matter of fact, and record it for my own general use, that if it is good
 to keep the tongue soft and smooth in a fever, it is better to keep it
 so in anger. For if the tongue of people in a fever be unnatural, it is
@@ -10923,7 +10927,7 @@ highly thought of than silence, as Sappho advises,
 "When anger's busy in the brain
 Thy idly-barking tongue restrain."
 
-§ VIII. And not only does the consideration of all this naturally arise
+Sec. VIII. And not only does the consideration of all this naturally arise
 from observing ourselves in the moments of anger, but we cannot help
 seeing also the other properties of rage, how ignoble it is, how
 unmanly, how devoid of dignity and greatness of mind! And yet to most
@@ -10953,7 +10957,7 @@ not like the nerves of the soul, as some one defined it, but like its
 strainings and convulsions when it is excessively vehement in its thirst
 for revenge.
 
-§ IX. Such bad examples as these were not pleasant to look at but
+Sec. IX. Such bad examples as these were not pleasant to look at but
 necessary, but I shall now proceed to describe people who have been mild
 and easy in dealing with anger, conduct gratifying either to see or hear
 about, being utterly disgusted[690] with people who use such language
@@ -10981,7 +10985,7 @@ gall in their composition, but still more of kings and tyrants. Such was
 the remark of Antigonus to his soldiers, when they were abusing him near
 his tent as if he were not listening, so he put his staff out, and said,
 "What's to do? can you not go rather farther off to run me down?" And
-when Arcadio the Achæan, who was always railing against Philip, and
+when Arcadio the Achaean, who was always railing against Philip, and
 advising people to flee
 
 "Unto a country where they knew not Philip,"
@@ -11005,7 +11009,7 @@ in one of his comedies at the theatre in the following words,
 Unhappy Magas, since thou can'st not read,"
 
 after having taken Philemon, who had been cast on shore by a storm at
-Parætonium, he commanded one of his soldiers only to touch his neck with
+Paraetonium, he commanded one of his soldiers only to touch his neck with
 the naked sword and then to go away quietly, and dismissed him, after
 sending him a ball and some dice as if he were a silly boy. And Ptolemy
 on one occasion, flouting a grammarian for his ignorance, asked him who
@@ -11022,7 +11026,7 @@ Milichius,[692] while they call Ares Maimactes;[693] and punishment and
 torture they assign to the Erinnyes and to demons, not to the gods or
 Olympus.
 
-§ X. As then a certain person passed the following remark on Philip when
+Sec. X. As then a certain person passed the following remark on Philip when
 he had razed Olynthus to the ground, "He certainly could not build such
 another city," so we may say to anger, "You can root up, and destroy,
 and throw down, but to raise up and save and spare and tolerate is the
@@ -11034,7 +11038,7 @@ the lips and gnashing the teeth, and in vain attacks, and in railings
 coupled with foolish threats, and eventually resembles children running
 races, who from feebleness ridiculously tumble down before they reach
 the goal they are hastening to. So that speech of the Rhodian to a
-lictor of the Roman prætor who was shouting and talking insolently was
+lictor of the Roman praetor who was shouting and talking insolently was
 not inapt, "It is no matter to me what you say, but what your master
 thinks."[694] And Sophocles, when he had introduced Neoptolemus and
 Eurypylus as armed for the battle, gives them this high
@@ -11044,7 +11048,7 @@ commendation,[695]
 
 Some barbarians indeed poison their steel, but bravery has no need of
 gall, being dipped in reason, but rage and fury are not invincible but
-rotten. And so the Lacedæmonians by their pipes turn away the anger of
+rotten. And so the Lacedaemonians by their pipes turn away the anger of
 their warriors, and sacrifice to the Muses before commencing battle,
 that reason may abide with them, and when they have routed a foe do not
 follow up the victory,[696] but relax their rage, which like small
@@ -11074,7 +11078,7 @@ passion, does himself safely and usefully and without harm punish the
 person who deserves punishment, and not himself instead, as anger often
 does.
 
-§ XI. Now though all the passions need such discipline as by exercise
+Sec. XI. Now though all the passions need such discipline as by exercise
 shall tame and subdue their unreasoning and disobedient elements, yet
 there is none which we ought to keep under by such discipline so much as
 the exhibition of anger to our servants. For neither envy, nor fear, nor
@@ -11152,7 +11156,7 @@ first is savage, and the last womanish--but we should without either
 sorrow or pleasure chastise at the dictates of reason, giving anger no
 opportunity to interfere.
 
-§ XII. But this perhaps will not appear a cure of anger so much as a
+Sec. XII. But this perhaps will not appear a cure of anger so much as a
 putting away and avoiding such faults as men commit in anger. And yet,
 though the swelling of the spleen is only a symptom of fever, the fever
 is assuaged by its abating, as Hieronymus tells us. Now when I
@@ -11192,7 +11196,7 @@ and asses that are in our way: like the man who was going to beat an
 ass-driver, but when he cried out he was an Athenian, he said to the
 ass, "You are not an Athenian anyway," and beat it with many stripes.
 
-§ XIII. Moreover those continuous and frequent fits of anger that gather
+Sec. XIII. Moreover those continuous and frequent fits of anger that gather
 together in the soul by degrees, like a swarm of bees or wasps, are
 generated within us by selfishness and peevishness, luxury and softness.
 And so nothing causes us to be mild to our servants and wife and friends
@@ -11265,7 +11269,7 @@ dispeller of care and inspirer of the dance into a savage and fury. And
 simple madness can be cured by Anticyra,[702] but madness mixed with
 anger is the producer of tragedies and dreadful narratives.
 
-§ XIV. So we ought to give anger no vent, either in jest, for that draws
+Sec. XIV. So we ought to give anger no vent, either in jest, for that draws
 hatred to friendliness; or in discussion, for that turns love of
 learning into strife; or on the judgement-seat, for that adds insolence
 to power; or in teaching, for that produces dejection and hatred of
@@ -11287,11 +11291,11 @@ precious stones and quite crazy for costly seal-rings, made no answer,
 but bestowed all his attention on one of his seal-rings, and eyed it
 closely; and he being delighted said, "Do not look at it so, Polemo, but
 in the light of the sun, and it will appear to you more beautiful." And
-Aristippus, when there was anger between him and Æschines, and somebody
+Aristippus, when there was anger between him and AEschines, and somebody
 said, "O Aristippus, where is now your friendship?" replied, "It is
-asleep, but I will wake it up," and went to Æschines, and said to him,
+asleep, but I will wake it up," and went to AEschines, and said to him,
 "Do I seem to you so utterly unfortunate and incurable as to be unworthy
-of any consideration?" And Æschines replied, "It is not at all wonderful
+of any consideration?" And AEschines replied, "It is not at all wonderful
 that you, being naturally superior to me in all things, should have been
 first to detect in this matter too what was needful."
 
@@ -11308,7 +11312,7 @@ I suppose, as with the other passions and diseases of the soul, we
 cannot get rid of any of them by calling one prudence, and another
 liberality, and another piety.
 
-§ XV. And yet, as Zeno said the seed was a mixture and compound drawn
+Sec. XV. And yet, as Zeno said the seed was a mixture and compound drawn
 from all the faculties of the soul, so anger seems a universal seed from
 all the passions. For it is drawn from pain and pleasure and
 haughtiness, and from envy it gets its property of malignity--and it is
@@ -11327,7 +11331,7 @@ for in the house of an angry man
 stewards being beaten within, and maids tortured, so that the spectators
 even in their jollity and pleasure pity these victims of passion.
 
-§ XVI. Moreover those to whom it happens through their genuine hatred of
+Sec. XVI. Moreover those to whom it happens through their genuine hatred of
 what is bad to be frequently overtaken by anger, can abate its excess
 and acerbity by giving up their excessive confidence in their intimates.
 For nothing swells the anger more, than when a good man is detected of
@@ -11349,7 +11353,7 @@ human nature. But Sophocles' line,
 seems to trample on human nature and lower its merits too much. Still
 such a peevish and condemnatory verdict as this has a tendency to make
 people milder in their rage, for it is the sudden and unexpected that
-makes people go distracted. And we ought, as Panætius somewhere said, to
+makes people go distracted. And we ought, as Panaetius somewhere said, to
 imitate Anaxagoras, and as he said at the death of his son, "I knew that
 I had begotten a mortal," so ought every one of us to use the following
 kind of language in those contretemps that stir up our anger, "I knew
@@ -11408,7 +11412,7 @@ that have those qualities.[710]
 [676] Homer, "Iliad," xxii. 373.
 
 [677] Alluded to again "On the tranquillity of the
-mind," § i.
+mind," Sec. i.
 
 [678] The allusion is to Homer's "Odyssey," xx. 23.
 
@@ -11422,9 +11426,9 @@ mind," § i.
 
 [683] Homer, "Iliad," xvii. 591.
 
-[684] The reading of the MSS. is [Greek: autôn].
+[684] The reading of the MSS. is [Greek: auton].
 
-[685] Lines of Callimachus. [Greek: phliên] is the
+[685] Lines of Callimachus. [Greek: phlien] is the
 admirable emendation of Salmasius.
 
 [686] Sophocles, "Thamyras," Fragm. 232.
@@ -11438,7 +11442,7 @@ admirable emendation of Salmasius.
 [690] It will be seen I adopt the reading and
 punctuation of Xylander.
 
-[691] This is the reading of Reiske and Dübner.
+[691] This is the reading of Reiske and Duebner.
 
 [692] That is _mild_. Zeus is so called, Pausanias, i.
 37; ii. 9, 20.
@@ -11454,7 +11458,7 @@ languages.
 
 [696] Compare Pausanias, iv. 8.
 
-[697] Dübner puts this sentence in brackets.
+[697] Duebner puts this sentence in brackets.
 
 [698] Sophocles, "Antigone," 563, 564.
 
@@ -11471,15 +11475,15 @@ ii. 3. 82, 83.
 [703] Homer, "Iliad," xxiv. 239, 240.
 
 [704] A philosopher of Megara, and disciple of Socrates.
-Compare our author, "De Fraterno Amore," § xviii.
+Compare our author, "De Fraterno Amore," Sec. xviii.
 
-[705] So Reiske. Dübner reads [Greek: phobou]. The MSS.
+[705] So Reiske. Duebner reads [Greek: phobou]. The MSS.
 have [Greek: phonou], which Wyttenbach retains, but is
 evidently not quite satisfied with the text. Can [Greek:
 phthonou]--[Greek: heteron] be an account of [Greek:
 epichairekakia]?
 
-[706] Up in the clouds. Cf. [Greek: aerobateô].
+[706] Up in the clouds. Cf. [Greek: aerobateo].
 
 [707] Horace, remembering these lines no doubt, says "De
 Arte Poetica," 191, 192,
@@ -11491,9 +11495,9 @@ Herrick borrowed hence his "To starve thy sin not bin,
 That is to keep thy Lent." For we know he was a student
 of the "Moralia" when at the University of Cambridge.
 
-[709] See Æschylus, "Eumenides," 107. Sophocles,
-"Oedipus Colonæus," 481. See also our author's "De
-Sanitate Præcepta," § xix.
+[709] See AEschylus, "Eumenides," 107. Sophocles,
+"Oedipus Colonaeus," 481. See also our author's "De
+Sanitate Praecepta," Sec. xix.
 
 [710] Jeremy Taylor has closely imitated parts of this
 Dialogue in his "Holy Living," chapter iv. sect. viii.,
@@ -11506,8 +11510,8 @@ ON CONTENTEDNESS OF MIND.[711]
 
 PLUTARCH SENDS GREETING TO PACCIUS.
 
-§ I. It was late when I received your letter, asking me to write to you
-something on contentedness of mind, and on those things in the Timæus
+Sec. I. It was late when I received your letter, asking me to write to you
+something on contentedness of mind, and on those things in the Timaeus
 that require an accurate explanation. And it so fell out that at that
 very time our friend Eros was obliged to set sail at once for Rome,
 having received a letter from the excellent Fundanus, urging haste
@@ -11540,7 +11544,7 @@ voice, so also it is not easy to quiet the wild passions of the soul,
 unless familiar and well-known arguments be at hand to check its
 excitement.
 
-§ II. He then that said, that the man that wished to have an easy mind
+Sec. II. He then that said, that the man that wished to have an easy mind
 ought to have little to do either public or private, first of all makes
 ease of mind a very costly article for us, if it is to be bought at the
 price of doing nothing, as if he should advise every sick person,
@@ -11593,7 +11597,7 @@ fairness or foulness. For the omission of fair actions troubles and
 distresses us, as I have said before, quite as much as the actual doing
 of foul actions.
 
-§ III. As for those who think that one kind of life is especially free
+Sec. III. As for those who think that one kind of life is especially free
 from trouble, as some think that of farmers, others that of bachelors,
 others that of kings, Menander sufficiently exposes their error in the
 following lines:
@@ -11637,7 +11641,7 @@ He that yesterday loathed eggs and cakes of finest meal and purest bread
 will to-day eat eagerly and with appetite coarsest bread with a few
 olives and cress.
 
-§ IV. Such contentedness and change of view in regard to every kind of
+Sec. IV. Such contentedness and change of view in regard to every kind of
 life does the infusion of reason bring about. When Alexander heard from
 Anaxarchus of the infinite number of worlds, he wept, and when his
 friends asked him what was the matter, he replied, "Is it not a matter
@@ -11654,7 +11658,7 @@ But Diogenes when he was being sold sat down and kept jeering at the
 auctioneer, and would not stand up when he bade him, but said joking and
 laughing, "Would you tell a fish you were selling to stand up?" And
 Socrates in prison played the philosopher and discoursed with his
-friends. But Phäethon,[723] when he got up to heaven, wept because
+friends. But Phaeethon,[723] when he got up to heaven, wept because
 nobody gave to him his father's horses and chariot. As therefore the
 shoe is shaped by the foot, and not the foot by the shoe, so does the
 disposition make the life similar to itself. For it is not, as one said,
@@ -11668,7 +11672,7 @@ the best face on them.
 Our being angry at them, he is happiest
 Who wisely turns them to the best account."[724]
 
-§ V. Plato compared human life to a game at dice, wherein we ought to
+Sec. V. Plato compared human life to a game at dice, wherein we ought to
 throw according to our requirements, and, having thrown, to make the
 best use of whatever turns up. It is not in our power indeed to
 determine what the throw will be, but it is our part, if we are wise, to
@@ -11686,7 +11690,7 @@ fortune; but men of sense, as bees extract honey from thyme which is the
 strongest and driest of herbs,[725] so from the least auspicious
 circumstances frequently derive advantage and profit.
 
-§ VI. We ought then to cultivate such a habit as this, like the man who
+Sec. VI. We ought then to cultivate such a habit as this, like the man who
 threw a stone at his dog, and missed it, but hit his step-mother, and
 cried out, "Not so bad." Thus we may often turn the edge of fortune when
 things turn not out as we wish. Diogenes was driven into exile; "not so
@@ -11714,7 +11718,7 @@ seduced? Have you never read that inscription at Delphi,
 
 "Agis the king of land and sea erected me;"
 
-and have you not heard that his wife Timæa was seduced by Alcibiades,
+and have you not heard that his wife Timaea was seduced by Alcibiades,
 and in her whispers to her handmaidens called the child that was born
 Alcibiades? Yet this did not prevent Agis from being the most famous and
 greatest of the Greeks. Neither again did the licentiousness of his
@@ -11728,7 +11732,7 @@ are not mischances misfortunes in those matters wherein we mischance?"
 By this gentle and philosophical argument he demonstrated the Cynic's
 reproach to be an idle bark.
 
-§ VII. But most people are troubled and exasperated not only at the bad
+Sec. VII. But most people are troubled and exasperated not only at the bad
 in their friends and intimates, but also in their enemies. For railing
 and anger and envy and malignity and jealousy and ill-will are the bane
 of those that suffer from those infirmities, and trouble and exasperate
@@ -11772,7 +11776,7 @@ being deprived of some things, and of being troubled with others. But he
 that is accustomed to adapt himself to things easily and calmly is most
 cheerful and gentle in his dealings with people.
 
-§ VIII. Wherefore let us resume our argument. As in a fever everything
+Sec. VIII. Wherefore let us resume our argument. As in a fever everything
 seems bitter and unpleasant to the taste, but when we see others not
 loathing but fancying the very same eatables and drinkables, we no
 longer find the fault to be in them but in ourselves and our disease, so
@@ -11813,7 +11817,7 @@ away by anyone, throw the rest away and weep and cry out, so we, if we
 are assailed by fortune in some one point, wail and mourn and make all
 other things seem unprofitable in our eyes.
 
-§ IX. Suppose someone should say, What blessings have we? I would reply,
+Sec. IX. Suppose someone should say, What blessings have we? I would reply,
 What have we not? One has reputation, another a house, another a wife,
 another a good friend. When Antipater of Tarsus was reckoning up on his
 death-bed his various pieces of good fortune, he did not even pass over
@@ -11842,7 +11846,7 @@ unpleasing subjects for contemplation, looking abroad and ever admiring
 other people's reputations and fortunes, as adulterers admire other
 men's wives, and think cheap of their own.
 
-§ X. And yet it makes much for contentedness of mind to look for the
+Sec. X. And yet it makes much for contentedness of mind to look for the
 most part at home and to our own condition, or if not, to look at the
 case of people worse off than ourselves, and not, as most people do, to
 compare ourselves with those who are better off. For example, those who
@@ -11865,7 +11869,7 @@ But this, you will say, was the language of a Thasian. But you will find
 others, Chians or Galatians or Bithynians, not content with the share of
 glory or power they have among their fellow-citizens, but weeping
 because they do not wear senators' shoes; or, if they have them, that
-they cannot be prætors at Rome; or, if they get that office, that they
+they cannot be praetors at Rome; or, if they get that office, that they
 are not consuls; or, if they are consuls, that they are only proclaimed
 second and not first. What is all this but seeking out excuses for being
 unthankful to fortune, only to torment and punish oneself? But he that
@@ -11887,17 +11891,17 @@ noses were cut off because the bridge was broken by the waves, consider
 their state of mind also, for they think your life and fortunes happy.
 Socrates, when he heard one of his friends saying, "How dear this city
 is! Chian wine costs one mina,[736] a purple robe three, and half a pint
-of honey five drachmæ," took him to the meal market, and showed him half
+of honey five drachmae," took him to the meal market, and showed him half
 a peck of meal for an obol, then took him to the olive market, and
 showed him a peck of olives for two coppers, and lastly showed him that
-a sleeveless vest[737] was only ten drachmæ. At each place Socrates'
+a sleeveless vest[737] was only ten drachmae. At each place Socrates'
 friend exclaimed, "How cheap this city is!" So also we, when we hear
 anyone saying that our affairs are bad and in a woful plight, because we
 are not consuls or governors, may reply, "Our affairs are in an
 admirable condition, and our life an enviable one, seeing that we do not
 beg, nor carry burdens, nor live by flattery."
 
-§ XI. But since through our folly we are accustomed to live more with an
+Sec. XI. But since through our folly we are accustomed to live more with an
 eye to others than ourselves, and since nature is so jealous and envious
 that it rejoices not so much in its own blessings as it is pained by
 those of others, do not look only at the much-cried-up splendour of
@@ -11939,7 +11943,7 @@ By such reflections as these one may wean oneself from that discontent
 with one's fortune, which makes one's own condition look low and mean
 from too much admiring one's neighbour's.
 
-§ XII. Another thing, which is a great hindrance to peace of mind, is
+Sec. XII. Another thing, which is a great hindrance to peace of mind, is
 not to proportion our desires to our means, but to carry too much sail,
 as it were, in our hopes of great things and then, if unsuccessful, to
 blame destiny and fortune, and not our own folly. For he is not
@@ -11956,13 +11960,13 @@ cocks of the first quality. Dionysius the elder was not content with
 being the most powerful monarch of his times, but because he could not
 beat Philoxenus the poet in singing, or surpass Plato in dialectics, was
 so angry and exasperated that he put the one to work in his stone
-quarries, and sent the other to Ægina and sold him there. Alexander was
+quarries, and sent the other to AEgina and sold him there. Alexander was
 of a different spirit, for when Crisso the famous runner ran a race with
 him, and seemed to let the king outrun him on purpose, he was greatly
 displeased. Good also was the spirit of Achilles in Homer, who, when he
 said,
 
-"None of the Achæan warriors is a match
+"None of the Achaean warriors is a match
 For me in war,"
 
 added,
@@ -11983,7 +11987,7 @@ god of war, another the god of oracles, another the god of gain, and
 Aphrodite, as she has nothing to do with warlike affairs, is despatched
 by Zeus to marriages and bridals.
 
-§ XIII. And indeed there are some pursuits which cannot exist together,
+Sec. XIII. And indeed there are some pursuits which cannot exist together,
 but are by their very nature opposed. For example oratory and the study
 of the mathematics require ease and leisure; whereas political ability
 and the friendship of kings cannot be attained without mixing in affairs
@@ -12046,7 +12050,7 @@ comedians starring it at the theatres, and dancers, and the attendants
 at kings' courts, and by all this envy give themselves no small trouble
 and annoyance.
 
-§XIV. But that every man has in himself the magazines of content or
+Sec.XIV. But that every man has in himself the magazines of content or
 discontent, and that the jars containing blessings and evils are not on
 the threshold of Zeus,[750] but lie stored in the mind, is plain from
 the differences of men's passions. For the foolish overlook and neglect
@@ -12070,7 +12074,7 @@ empty themselves daily, and hang upon the morrow, as if what happened a
 year ago, or even yesterday and the day before yesterday, had nothing to
 do with them, and had hardly occurred at all.
 
-§ XV. This is one great hindrance to contentedness of mind, and another
+Sec. XV. This is one great hindrance to contentedness of mind, and another
 still greater is whenever, like flies that slide down smooth places in
 mirrors, but stick fast in rough places or where there are cracks, men
 let pleasant and agreeable things glide from their memory, and pin
@@ -12104,10 +12108,10 @@ Befriends him, a good guide to him for life,"
 but it is rather, as Empedocles states, two fates or genii take hold of
 each of us when we are born and govern us. "There were Chthonia and
 far-seeing Heliope, and cruel Deris, and grave Harmonia, and Callisto,
-and Æschra, and Thoosa, and Denæa, and charming Nemertes, and Asaphea
+and AEschra, and Thoosa, and Denaea, and charming Nemertes, and Asaphea
 with the black fruit."
 
-§ XVI. And as[752] at our birth we received the mingled seeds of each of
+Sec. XVI. And as[752] at our birth we received the mingled seeds of each of
 these passions, which is the cause of much irregularity, the sensible
 person hopes for better things, but expects worse, and makes the most of
 either, remembering that wise maxim, _Not too much of anything._ For not
@@ -12140,7 +12144,7 @@ unexpected makes the sum total of grief and dejection. Certainly the
 kingdom of Macedonia was many times smaller than the Roman Empire, but
 when Perseus lost Macedonia, he not only himself bewailed his wretched
 fate, but seemed to all men the most unfortunate and unlucky of mankind;
-yet Æmilius who conquered him, though he had to give up to another the
+yet AEmilius who conquered him, though he had to give up to another the
 command both by land and sea, yet was crowned, and offered sacrifice,
 and was justly esteemed happy. For he knew that he had taken a command
 which he would have to give up, but Perseus lost his kingdom without
@@ -12151,7 +12155,7 @@ the latter case he had come fully determined to keep his emotion under
 the control of reason, whereas in the former it was against his
 expectation, and therefore fell upon him as a sudden blow.
 
-§ XVII. And since generally speaking some things which happen against
+Sec. XVII. And since generally speaking some things which happen against
 our will pain and trouble us by their very nature, while in the case of
 most we accustom ourselves and learn to be disgusted with them from
 fancy, it is not unprofitable to counteract this to have ever ready that
@@ -12180,7 +12184,7 @@ answered, "I saw nobody carrying off anything of mine."[756] And so when
 fortune has plundered us and stripped us of everything else, we have
 that within ourselves
 
-"Which the Achæans ne'er could rob us of."[757]
+"Which the Achaeans ne'er could rob us of."[757]
 
 So that we ought not altogether to abase and lower nature, as if she had
 no strength or stability against fortune; but on the contrary, knowing
@@ -12210,7 +12214,7 @@ puts it; but if some unexpected and tremendous gale come upon him and
 prove too much for him, the harbour is at hand, and he can swim away
 from the body, as from a leaky boat.
 
-§ XVIII. For it is the fear of death, and not the desire of life, that
+Sec. XVIII. For it is the fear of death, and not the desire of life, that
 makes the foolish person to hang to the body, clinging to it, as
 Odysseus did to the fig-tree from fear of Charybdis that lay below,
 
@@ -12244,7 +12248,7 @@ and grief and exile, and calls in reason to its help in each case, will
 find in what appears so sore and dreadful much that is false, empty, and
 rotten, as reason will show in each case.
 
-§ XIX. And yet many shudder at that line of Menander,
+Sec. XIX. And yet many shudder at that line of Menander,
 
 "No one can say, I shall not suffer this or that,"
 
@@ -12288,7 +12292,7 @@ is watered and flourishes, and despises those who wail over life and
 abuse it as a region of ills, or as a place of exile for souls in this
 world.
 
-§ XX. I am very taken with Diogenes' remark to a stranger at Lacedæmon,
+Sec. XX. I am very taken with Diogenes' remark to a stranger at Lacedaemon,
 who was dressing with much display for a feast, "Does not a good man
 consider every day a feast?" And a very great feast too, if we live
 soberly. For the world is a most holy and divine temple, into which man
@@ -12300,7 +12304,7 @@ and stars, and rivers ever flowing with fresh water, and the earth
 affording maintenance to plants and animals. Seeing then that life is
 the most complete initiation into all these things, it ought to be full
 of ease of mind and joy; not as most people wait for the festivals of
-Cronos[761] and Dionysus and the Panathenæa and other similar days, that
+Cronos[761] and Dionysus and the Panathenaea and other similar days, that
 they may joy and refresh themselves with bought laughter, paying actors
 and dancers for the same. On such occasions indeed we sit silently and
 decorously, for no one wails when he is initiated, or groans when he
@@ -12321,24 +12325,24 @@ future hopefully and cheerfully without fear or suspicion.
 
 [711] Or cheerfulness, or tranquillity of mind. Jeremy
 Taylor has largely borrowed again from this treatise in
-his "Holy Living," ch. ii. § 6, "Of Contentedness in all
+his "Holy Living," ch. ii. Sec. 6, "Of Contentedness in all
 Estates and Accidents."
 
 [712] Reading with Salmasius [Greek: kaltios patrikios].
 
-[713] "Locus Xenophontis est Cyropæd.," l. i. p.
+[713] "Locus Xenophontis est Cyropaed.," l. i. p.
 52.--_Reiske._
 
 [714] Euripides, "Orestes," 258.
 
-[715] So Wyttenbach, Dübner. Vulgo [Greek:
-anaisthêsias--aponia.]
+[715] So Wyttenbach, Duebner. Vulgo [Greek:
+anaisthesias--aponia.]
 
 [716] "Works and Days," 519.
 
 [717] "Odyssey," i. 191, 192.
 
-[718] I read [Greek: katêpheian].
+[718] I read [Greek: katepheian].
 
 [719] "Iliad," i. 488-492.
 
@@ -12348,13 +12352,13 @@ anaisthêsias--aponia.]
 
 [722] Homer, "Iliad," x. 88, 89.
 
-[723] The story of Phäethon is a very well-known one,
+[723] The story of Phaeethon is a very well-known one,
 and is recorded very fully by Ovid in the
 "Metamorphoses," Book ii.
 
 [724] Euripides, "Bellerophon." Fragm. 298.
 
-[725] Supplying [Greek: phytôn] with Reiske.
+[725] Supplying [Greek: phyton] with Reiske.
 
 [726] In Cyprus. Zeno was the founder of the Stoics.
 
@@ -12363,23 +12367,23 @@ Athens called the Painted Piazza. See Pausanias, i. 15.
 
 [728] Pindar, Nem. iv. 6.
 
-[729] Euripides, "Bacchæ," 66.
+[729] Euripides, "Bacchae," 66.
 
 [730] Quoted again by our author "On Restraining Anger,"
-§ xvi.
+Sec. xvi.
 
 [731] As will be seen, I follow Wyttenbach's guidance in
 this very corrupt passage, which is a true crux.
 
 [732] Reading [Greek: dedorkotes].
 
-[733] See "On Curiosity," § i.
+[733] See "On Curiosity," Sec. i.
 
 [734] Simonides.
 
 [735] See Herodotus, vii. 56.
 
-[736] A mina was 100 drachmæ (_i.e._ £4. 1_s._ 3_d._),
+[736] A mina was 100 drachmae (_i.e._ L4. 1_s._ 3_d._),
 and 600 obols.
 
 [737] A slave's ordinary dress.
@@ -12397,14 +12401,14 @@ and 600 obols.
 
 [743] See Pausanias, x. 24.
 
-[744] Pindar, Fragm., 258. Quoted "On Moral Virtue," §
+[744] Pindar, Fragm., 258. Quoted "On Moral Virtue," Sec.
 xii.
 
 [745] Homer, "Iliad," xvii. 61; "Odyssey," vi. 130.
 
 [746] A famous breed of dogs from the island Melita,
-near Dalmatia. See Pliny, "Hist. Nat.," iii. 26, extr. §
-30; xxx. 5, extr. § 14.
+near Dalmatia. See Pliny, "Hist. Nat.," iii. 26, extr. Sec.
+30; xxx. 5, extr. Sec. 14.
 
 [747] That _Non omnia possumus omnes_.
 
@@ -12417,7 +12421,7 @@ seldom agree."
 
 [751] Ocnus. See Pausanias, x. 29.
 
-[752] So Wyttenbach, who reads [Greek: Hôs de toutôn].
+[752] So Wyttenbach, who reads [Greek: Hos de touton].
 
 [753] Reading [Greek: oia] with Reiske.
 
@@ -12430,10 +12434,10 @@ adopted is Reiske's and Wyttenbach's.
 
 [757] "Iliad," v. 484.
 
-[758] Euripides, "Bacchæ," 498. Compare Horace,
+[758] Euripides, "Bacchae," 498. Compare Horace,
 "Epistles," i. xvi. 78, 79.
 
-[759] Reading with Dübner [Greek: argian]. Reiske has
+[759] Reading with Duebner [Greek: argian]. Reiske has
 [Greek: atonian].
 
 [760] Euripides, "Orestes," 396.
@@ -12443,7 +12447,7 @@ was well known as a festival of merriment and license.
 
 ON ENVY AND HATRED.
 
-§ I. Outwardly there seems no difference between hatred and envy, but
+Sec. I. Outwardly there seems no difference between hatred and envy, but
 they seem identical. For generally speaking, as vice has many hooks, and
 is swayed hither and thither by the passions that hang on it, there are
 many points of contact and entanglement between them, for as in the case
@@ -12455,7 +12459,7 @@ the desire of both is the very opposite of benevolence. But since their
 similarities are not so great as their dissimilarities, let us
 investigate and trace out these two passions from their origin.
 
-§ II. Hatred then is generated by the fancy that the person hated is
+Sec. II. Hatred then is generated by the fancy that the person hated is
 either bad generally or bad to oneself. For those who think they are
 wronged naturally hate those who they think wrong them, and dislike and
 are on their guard against those who are injurious or bad to
@@ -12464,14 +12468,14 @@ seems illimitable, being, like ophthalmia, troubled at everything
 bright, whereas hatred is limited, since it settles only on what seems
 hostile.
 
-§ III. In the second place people feel hatred even against the brutes;
+Sec. III. In the second place people feel hatred even against the brutes;
 for some hate cats and beetles and toads and serpents. Thus Germanicus
 could not bear the crowing or sight of a cock, and the Persian magicians
 kill their mice, not only hating them themselves but thinking them
 hateful to their god, and the Arabians and Ethiopians abominate them as
 much. Whereas we envy only human beings.
 
-§ IV. Indeed among the brutes it is not likely that there should be any
+Sec. IV. Indeed among the brutes it is not likely that there should be any
 envy, for they have no conception of prosperity or adversity, nor have
 they any idea of reputation or want of reputation, which are the things
 that mainly excite envy; but they hate one another, and are hostile to
@@ -12484,7 +12488,7 @@ elephant, owing to fear. For what people fear they naturally hate. We
 see also from this that envy differs from hatred, for the animals are
 capable of the one, but not of the other.
 
-§ V. Moreover envy against anyone is never just, for no one wrongs
+Sec. V. Moreover envy against anyone is never just, for no one wrongs
 another by his prosperity, though that is what he is envied for; but
 many are hated with justice, for we even think others[763] worthy of
 hatred, if they do not flee from such, and are not disgusted and vexed
@@ -12503,7 +12507,7 @@ are angry with the man or fear him or hate him, suggesting any other
 passion than envy, and concealing it as the only disorder of the soul
 which is abominable.
 
-§ VI. Of necessity then these two passions cannot, like plants, be fed
+Sec. VI. Of necessity then these two passions cannot, like plants, be fed
 and nourished and grow on the same roots; for they are by nature
 different.[765] For we hate people more as they grow worse, but they are
 envied only the more the more they advance in virtue. And so
@@ -12531,7 +12535,7 @@ very prone to pity; so here too there is a great difference between
 these two passions, for hatred abandons neither the fortunate nor
 unfortunate, whereas envy is mitigated in the extreme of either fortune.
 
-§ VII. Let as look at the same again from opposite points of view. Men
+Sec. VII. Let as look at the same again from opposite points of view. Men
 put an end to their enmity and hatred, either if persuaded they have not
 been wronged, or if they come round to the view that those they hated
 are good men and not bad, or thirdly if they receive a kindness. For, as
@@ -12548,7 +12552,7 @@ from their prosperity, but both being blessings. Thus envy is a passion
 altogether different from hatred, seeing that what abates the one pains
 and exasperates the other.
 
-§ VIII. Let us now look at the intent of each of these passions. The
+Sec. VIII. Let us now look at the intent of each of these passions. The
 intent of the person who hates is to do as much harm as he can, so they
 define hatred to be a disposition and intent on the watch for an
 opportunity to do harm. But this is altogether foreign to envy.[767] For
@@ -12559,7 +12563,7 @@ they would not bring upon them irremediable misfortunes: they are
 content to remove, as in the case of a lofty house, what stands in their
 light.
 
-[762] [Greek: allôs] MSS. Wyttenbach [Greek: allôn].
+[762] [Greek: allos] MSS. Wyttenbach [Greek: allon].
 Malo [Greek: allois].
 
 [763] So Wyttenbach.
@@ -12571,13 +12575,13 @@ doubtful.
 
 [766] Thucydides, i. 42.
 
-[767] Reading [Greek: apestin holôs. Oi gar
+[767] Reading [Greek: apestin holos. Oi gar
 phthonountes]. What can be made of [Greek: pollous]
 here?
 
 ### HOW ONE CAN PRAISE ONESELF WITHOUT EXCITING ENVY.
 
-§ I. To speak to other people about one's own importance or ability,
+Sec. I. To speak to other people about one's own importance or ability,
 Herculanus, is universally declared to be tiresome and illiberal, but in
 fact not many even of those who censure it avoid its unpleasantness.
 Thus Euripides, though he says,
@@ -12611,7 +12615,7 @@ imputation, we are obliged to heap praise upon them contrary to our real
 opinion, and to bear them out, undertaking a task more befitting gross
 flattery than honour.
 
-§ II. And yet, in spite of all this, there are occasions when a
+Sec. II. And yet, in spite of all this, there are occasions when a
 statesman may venture to speak in his own praise, not to cry up his own
 glory and merit, but when the time and matter demand that he should
 speak the truth about himself, as he would about another; especially
@@ -12630,7 +12634,7 @@ self-praise in a statesman, what they are, that, while we avoid vain
 glory and disgusting other people, we may not omit any useful kind of
 self-praise.
 
-§ III. That is vain glory then when men seem to praise themselves that
+Sec. III. That is vain glory then when men seem to praise themselves that
 they may call forth the laudation of others; and it is especially
 despised because it seems to proceed from ambition and an unseasonable
 opinion of oneself. For as those who cannot obtain food are forced to
@@ -12651,7 +12655,7 @@ direct argument and proof that they are not worthy of all these
 encomiums. It is plain then that we ought to avoid all such conduct as
 this.
 
-§ IV. But self-praise cannot be blamed, if it is an answer to some
+Sec. IV. But self-praise cannot be blamed, if it is an answer to some
 charge or calumny, as those words of Pericles, "And yet you are angry
 with such a man as me, a man I take it inferior to no one either in
 knowledge of what should be done, or in ability to point out the same,
@@ -12691,7 +12695,7 @@ accompanied him to the Capitol, and sacrificed with him. For Cicero was
 not compelled to praise himself, but only did so for glory, whereas the
 danger in which Scipio stood removed envy from him.
 
-§ V. And not only on one's trial and in danger, but also in misfortune,
+Sec. V. And not only on one's trial and in danger, but also in misfortune,
 is tall talk and boasting more suitable than in prosperity. For in
 prosperity people seem to clutch as it were at glory and enjoy it, and
 so gratify their ambition; but in adversity, being far from ambition
@@ -12717,7 +12721,7 @@ sentence exhibited his greatness of soul to many others, and notably to
 one of those that were to die with him, who was weeping and wailing, to
 whom he said, "What! are you not content to die with Phocion?"
 
-§ VI. Not less, but still more, lawful is it for a public man who is
+Sec. VI. Not less, but still more, lawful is it for a public man who is
 wronged to speak on his own behalf to those who treat him with
 ingratitude. Thus Achilles generally conceded glory to the gods, and
 modestly used such language as,
@@ -12744,7 +12748,7 @@ the same hands?" and[782] "When the storm is on you fly to me for
 shelter as to a tree, but when fine weather comes again, then you pass
 by and strip me of my leaves."
 
-§ VII. They then that are wronged generally mention what they have done
+Sec. VII. They then that are wronged generally mention what they have done
 well to those who are ungrateful. And the person who is blamed for what
 he has done well is altogether to be pardoned, and not censured, if he
 passes encomiums on his own actions: for he is in the position of one
@@ -12754,7 +12758,7 @@ the praise which in all his speech _On the Crown_ he lavished on
 himself, pluming himself on those embassies and decrees in connection
 with the war with which fault had been found.
 
-§ VIII. Not very unlike this is the grace of antithesis, when a person
+Sec. VIII. Not very unlike this is the grace of antithesis, when a person
 shows that the opposite of what he is charged with is base and low. Thus
 Lycurgus when he was charged at Athens with having bribed an informer to
 silence, replied, "What kind of a citizen do you think me, who, having
@@ -12770,7 +12774,7 @@ discussing these points?"[784] And indeed the whole of that speech _On
 the Crown_ most ingeniously introduces his own praises in his
 antitheses, and answers to the charges brought against him.
 
-§ IX. However it is worth while to notice in his speech that he most
+Sec. IX. However it is worth while to notice in his speech that he most
 artistically inserts praise of his audience in the remarks about
 himself, and so makes his speech less egotistical and less likely to
 raise envy. Thus he shows how the Athenians behaved to the Euboeans and
@@ -12782,10 +12786,10 @@ enumeration of their successes,[785] and their joy is succeeded by
 admiration and esteem for the person to whom the success was due. So
 also Epaminondas, when Meneclidas once jeered at him as thinking more of
 himself than Agamemnon ever did, replied, "It is your fault then, men of
-Thebes, by whose help alone I put down the power of the Lacedæmonians in
+Thebes, by whose help alone I put down the power of the Lacedaemonians in
 one day."
 
-§ X. But since most people very much dislike and object to a man's
+Sec. X. But since most people very much dislike and object to a man's
 praising himself, but if he praises some one else are on the contrary
 often glad and readily bear him out, some are in the habit of praising
 in season those that have the same pursuits business and characters as
@@ -12802,7 +12806,7 @@ same grounds. Dionysius on the contrary pulling Gelon to pieces, and
 calling him the Gelos[787] of Sicily, was not aware that through his
 envy he was weakening the importance and dignity of his own authority.
 
-§ XI. These things then a public man must generally know and observe.
+Sec. XI. These things then a public man must generally know and observe.
 But those that are compelled to praise themselves do so less offensively
 if they do not ascribe all the honour to themselves, but, being aware
 that their glory will be tiresome to others, set it down partly to
@@ -12812,7 +12816,7 @@ fortune, partly to the deity. So Achilles said well,
 
 Well also did Timoleon, who erected a temple at Syracuse to the goddess
 of Fortune after his success, and dedicated his house to the Good
-Genius. Excellently again did Pytho of Ænos, (when he came to Athens
+Genius. Excellently again did Pytho of AEnos, (when he came to Athens
 after killing Cotys, and when the demagogues vied with one another in
 praising him to the people, and he observed that some were jealous and
 displeased,) in coming forward and saying, "Men of Athens, this is the
@@ -12827,7 +12831,7 @@ Locrians not least, because he said that Athene visited him from time to
 time, and suggested to him and taught him his laws, and that none of
 those he promulgated were his own idea and plan.
 
-§ XII. Perhaps this kind of remedy by talking people over must be
+Sec. XII. Perhaps this kind of remedy by talking people over must be
 contrived for those who are altogether crabbed or envious; but for
 people of moderation it is not amiss to qualify excessive praise. Thus
 if anyone should praise you as learned, or rich, or influential, it
@@ -12874,7 +12878,7 @@ moderate language about themselves as that, which does not excite envy.
 But rhetorical sophists, who expect to hear "Divine, wonderful, grand,"
 at their declamations, are not even welcomed with "Pretty fair, so so."
 
-§ XIII. Moreover, as people anxious not to injure those who have weak
+Sec. XIII. Moreover, as people anxious not to injure those who have weak
 eyes, draw a shade over too much light, so some people make their praise
 of themselves less glaring and absolute, by pointing out some of their
 small defects, or miscarriages, or errors, and so remove all risk of
@@ -12913,7 +12917,7 @@ now golden cups." For Agathocles it seems was so low-born and poor that
 he was brought up in a potter's shop, though afterwards he was king of
 almost all Sicily.
 
-§ XIV. These are external remedies against self-praise. There are other
+Sec. XIV. These are external remedies against self-praise. There are other
 internal ones as it were, such as Cato applied, when he said "he was
 envied, because he had to neglect his own affairs, and lie awake every
 night for the interests of his country." Compare also the following
@@ -12933,7 +12937,7 @@ reputation, people for the most part envy those who have got them easily
 or for nothing, not those who have bought them at the cost of much toil
 and danger.
 
-§ XV. Since then we can praise ourselves not only without causing pain
+Sec. XV. Since then we can praise ourselves not only without causing pain
 or envy but even usefully and advantageously, let us consider, that we
 may not seem to have only that end in view but some other also, if we
 might praise ourselves to excite in our hearers emulation and ambition.
@@ -12942,7 +12946,7 @@ Patroclus and nine others to single combat with Hector. For the
 exhortation that adds deed to word and example and proper emulation is
 animating and moving and stimulating, and with its impulse and
 resolution inspires hope that the things we aim at are attainable and
-not impossible. That is why in the choruses at Lacedæmon the old men
+not impossible. That is why in the choruses at Lacedaemon the old men
 sing,
 
 "We once were young and vigorous and strong,"
@@ -12959,7 +12963,7 @@ In this wise and statesmanlike manner did the legislator exhibit to the
 young men the nearest and dearest examples of what they should do in the
 persons of those who had done so.
 
-§ XVI. Moreover it is not amiss sometimes, to awe and repress and take
+Sec. XVI. Moreover it is not amiss sometimes, to awe and repress and take
 down and tame the impudent and bold, to boast and talk a little big
 about oneself. As Nestor did, to mention him again,
 
@@ -12975,7 +12979,7 @@ foes is the following line,
 
 Compare also the remark of Agesilaus about the king of the Persians, who
 was called great, "How is he greater than me, if he is not also more
-upright?" And that also of Epaminondas to the Lacedæmonians who were
+upright?" And that also of Epaminondas to the Lacedaemonians who were
 inveighing against the Thebans, "Anyhow we have made you talk at greater
 length than usual." But these kind of remarks are fitting for enemies
 and foes; but our boasting is also good on occasion for friends and
@@ -13002,7 +13006,7 @@ experience a pledge of confidence to his friends. For in critical
 conjunctures the reputation and credit of one who has experience and
 capacity in command plays a great part in insuring safety.
 
-§ XVII. As I have said before, to pit oneself against another's praise
+Sec. XVII. As I have said before, to pit oneself against another's praise
 and reputation is by no means fitting for a public man: however, in
 important matters, where mistaken praise is injurious and detrimental,
 it is not amiss to confute it, or rather to divert the hearer to what is
@@ -13041,7 +13045,7 @@ Such self-praise is good and useful and teaches people to admire and
 love what is valuable and expedient instead of what is vain and
 superfluous. Let so much suffice on the question proposed.
 
-§ XVIII. It remains to me now to point out, what our subject next
+Sec. XVIII. It remains to me now to point out, what our subject next
 demands and calls for, how everyone may avoid unseasonable self-praise.
 For there is a wonderful incentive to talking about oneself in
 self-love, which is frequently strongly implanted in those who seem to
@@ -13058,7 +13062,7 @@ people have their appetite more inflamed and sharpened by seeing others
 eat, so the praise of one's neighbours makes those who eagerly desire
 fame to blaze out into jealousy.
 
-§ XIX. In the second place the narration of things done successfully and
+Sec. XIX. In the second place the narration of things done successfully and
 to people's mind entices many unawares to boasting and bragging in their
 joy; for falling into conversation about their victories, or success in
 state affairs, or their words or deeds commended by great men, they
@@ -13077,7 +13081,7 @@ must be very much on our guard in praising others to free ourselves from
 all suspicion of self-love and self-recommendation, and not to seem to
 be really praising ourselves "under pretext of Patroclus."[801]
 
-§ XX. Moreover that kind of conversation that mainly consists of
+Sec. XX. Moreover that kind of conversation that mainly consists of
 censuring and running down others is dangerous as giving opportunity for
 self-laudation to those who pine for fame. A fault into which old men
 especially fall, when they are led to scold others and censure their bad
@@ -13093,7 +13097,7 @@ hunts for fame by defaming another, is altogether tiresome and inspires
 disgust, for he seems to wish to get credit through trying to prove
 others unworthy of credit.
 
-§ XXI. Furthermore, as those that are naturally prone and inclined to
+Sec. XXI. Furthermore, as those that are naturally prone and inclined to
 laughter must be especially on their guard against tickling and
 touching, such as excites that propensity by contact with the smoothest
 parts of the body, so those that have a great passion for reputation
@@ -13116,7 +13120,7 @@ A scaling ladder fastened to a wall.'
 I show my wound to them in serious earnest,
 But they for their part only mock at me."
 
-§ XXII. As regards all these points then we must be on our guard as much
+Sec. XXII. As regards all these points then we must be on our guard as much
 as possible not to launch out into praise of ourselves, or yield to it
 in consequence of questions put to us to draw us. And the best caution
 and security against this is to pay attention to others who praise
@@ -13152,7 +13156,7 @@ benefit on ourselves or our hearers.
 [770] "Memorabilia," ii. l. 31.
 
 [771] Reading as Wyttenbach suggests, [Greek: malista de
-hotan legêtai ta allô pepragmena] _sq._
+hotan legetai ta allo pepragmena] _sq._
 
 [772] Thucydides, ii. 60.
 
@@ -13164,7 +13168,7 @@ hotan legêtai ta allô pepragmena] _sq._
 
 [776] Diomede.
 
-[777] Sophocles, "Trachiniæ," 442.
+[777] Sophocles, "Trachiniae," 442.
 
 [778] Homer, "Iliad," xvi. 847, 848. Plutarch only
 quotes the first line. I have added the second for the
@@ -13216,7 +13220,7 @@ Euergetes.
 
 [801] An allusion to Homer, "Iliad," xix. 302.
 
-[802] Adopting the reading of Dübner.
+[802] Adopting the reading of Duebner.
 
 [803] Adopting the reading of Salmasius.
 
@@ -13229,7 +13233,7 @@ Euergetes.
 _A discussion between Patrocleas, Plutarch, Timon, and
 Olympicus._
 
-§ I. When Epicurus had made these remarks, Quintus, and before any of us
+Sec. I. When Epicurus had made these remarks, Quintus, and before any of us
 who were at the end of the porch[806] could reply, he went off abruptly.
 And we, marvelling somewhat at his rudeness, stood still silently but
 looked at one another, and then turned and pursued our walk as before.
@@ -13247,7 +13251,7 @@ about, in his anger and abusive language, with a long disconnected and
 rambling rhapsody drawn from all sources, and at the same time inveighed
 against Providence."
 
-§ II. Then said Patrocleas, "The slowness and delay of the deity in
+Sec. II. Then said Patrocleas, "The slowness and delay of the deity in
 punishing the wicked used to seem[807] to me a very dreadful thing, but
 now in consequence of his speech I come as it were new and fresh to the
 notion. Yet long ago I was vexed when I heard that line of Euripides,
@@ -13295,7 +13299,7 @@ themselves on to commit lawless acts, for crime shows them a fruit
 visible and ripe at once, but a punishment late, and long subsequent to
 the enjoyment."
 
-§ III. When Patrocleas had said thus much, Olympicus interfered, "There
+Sec. III. When Patrocleas had said thus much, Olympicus interfered, "There
 is another consideration, Patrocleas, the great absurdity involved in
 these delays and long-suffering of the deity. For the slowness of
 punishment takes away belief in providence, and the wicked, observing
@@ -13320,7 +13324,7 @@ there is in those mills of the gods that are said to grind late,[813]
 since they obscure the punishment, and obliterate the fear, of
 evil-doing."
 
-§ IV. When Olympicus had done speaking, and I was musing with myself on
+Sec. IV. When Olympicus had done speaking, and I was musing with myself on
 the matter, Timon said, "Am I to put the finishing touch of difficulty
 on our subject, or am I to let him first contend earnestly against these
 views?" Then said I, "Why should we bring up the third wave[814] and
@@ -13351,7 +13355,7 @@ any one could succeed in justice, or understand how to succeed in it,
 without he had learned or somehow got that science. For the laws which
 men make are not always merely reasonable, nor is their meaning always
 apparent, but some injunctions seem quite ridiculous, for example, the
-Ephors at Lacedæmon make proclamation, directly they take office, that
+Ephors at Lacedaemon make proclamation, directly they take office, that
 no one is to let his moustache grow, but that all are to obey the laws,
 that they be not grievous to them. And the Romans lay a light rod on the
 bodies of those they make freemen, and when they make their wills, they
@@ -13365,7 +13369,7 @@ legislation. How is it wonderful then, if human affairs are so difficult
 to comprehend, that it is no easy task to say in connection with the
 gods, why they punish some offenders early, and others late?
 
-§ V. This is not a pretext for evading the subject, but merely a request
+Sec. V. This is not a pretext for evading the subject, but merely a request
 for lenient judgement, that our discourse, looking as it were for a
 haven and place of refuge, may rise to the difficulty with greater
 confidence basing itself on probability. Consider then first that,
@@ -13417,7 +13421,7 @@ matters, and shall think that mildness and long-suffering which the god
 exhibits a divine part of virtue, reforming a few by speedy punishment,
 but benefiting and correcting many by a tardy one.
 
-§ VI. Let us consider in the second place that punishments inflicted by
+Sec. VI. Let us consider in the second place that punishments inflicted by
 men for offences regard only retaliation, and, when the offender is
 punished, stop and go no further; so that they seem to follow offences
 yelping at them like a dog, and closely pursuing at their heels as it
@@ -13438,7 +13442,7 @@ from deliberate choice of what was bad, he gives time to repent. But if
 they persist in vice he punishes them too, for he has no fear that they
 will escape him. Consider also how many changes take place in the life
 and character of men, so that the Greeks give the names [Greek: tropos]
-and [Greek: êthos] to the character, the first word meaning _change_,
+and [Greek: ethos] to the character, the first word meaning _change_,
 and the latter the immense force and power of _habit_. I think also that
 the ancients called Cecrops half man and half dragon[821] not because,
 as some say, he became from a good king wild and dragon-like, but
@@ -13478,7 +13482,7 @@ whereas a better judge, seeing the good and noble even in these, waits
 for age and the season which nature appoints for gathering fruit to
 bring sense and virtue.
 
-§ VII. So much for this point. Do you not think also that some of the
+Sec. VII. So much for this point. Do you not think also that some of the
 Greeks did well to adopt that Egyptian law which orders a pregnant woman
 condemned to death not to suffer the penalty till after she has given
 birth?" "Certainly," said all the company. I continued, "Put the case
@@ -13507,11 +13511,11 @@ some prince, and does not remove the bane and trouble till their fault
 be got rid of and purged. Such a potion was Phalaris to the
 Agrigentines, and Marius to the Romans. And to the people of Sicyon the
 god distinctly foretold that their city needed a scourge, when they took
-away from the Cleonæans (as if he was a Sicyonian) the lad Teletias, who
+away from the Cleonaeans (as if he was a Sicyonian) the lad Teletias, who
 was crowned in the Pythian games, and tore him to pieces. As for the
 Sicyonians, Orthagoras became their tyrant, and subsequently Myro and
 Clisthenes, and these three checked their wanton outbreaks; but the
-Cleonæans, not getting such a cure, went to ruin. You have of course
+Cleonaeans, not getting such a cure, went to ruin. You have of course
 heard Homer's lines,
 
 "'From a bad father sprang a son far better,
@@ -13529,19 +13533,19 @@ ledanum, that god does not exterminate the wicked and rugged root of an
 illustrious and royal race till it has produced its fit fruit? For it
 would have been better for the Phocians to have lost ten thousand of the
 oxen and horses of Iphitus, and for more gold and silver to have gone
-from Delphi, than that Odysseus and Æsculapius should not have been
+from Delphi, than that Odysseus and AEsculapius should not have been
 born, nor those others who from bad and wicked men became good and
 useful."
 
-§ VIII. "And do you not all think that it is better that punishment
+Sec. VIII. "And do you not all think that it is better that punishment
 should take place at the fitting time and in the fitting manner rather
 than quickly and on the spur of the moment? Consider the case of
 Callippus, who with the very dagger with which he slew Dion, pretending
 to be his friend, was afterwards slain by his own friends. And when
 Mitius the Argive was killed in a tumult, a brazen statue in the
 market-place fell on his murderer and killed him during the public
-games. And of course, Patrocleas, you know all about Bessus the Pæonian,
-and about Aristo the Oetæan leader of mercenaries." "Not I, by Zeus,"
+games. And of course, Patrocleas, you know all about Bessus the Paeonian,
+and about Aristo the Oetaean leader of mercenaries." "Not I, by Zeus,"
 said Patrocleas, "but I should like to hear." "Aristo," I continued, "at
 the permission of the tyrants removed the necklace of Eriphyle[826]
 which was hung up in this temple, and took it to his wife as a present;
@@ -13556,7 +13560,7 @@ long bearing false witness against me, crying out that I had killed my
 father?' And the company, astonished at his answer, laid the matter
 before the king, and the affair was inquired into, and Bessus punished."
 
-§ IX. "These cases," I continued, "we cite supposing, as has been laid
+Sec. IX. "These cases," I continued, "we cite supposing, as has been laid
 down, that there is a deferring of punishment to the wicked; and, for
 the rest, I think we ought to listen to Hesiod, who tells us--not like
 Plato, who asserts that punishment is a condition that follows
@@ -13602,7 +13606,7 @@ business and gifts and favours and amusement, yet, just like people
 playing at dice or draughts in a prison, the rope is all the time
 hanging over his head."[830]
 
-§ X. "And indeed what prevents our asserting that people in prison under
+Sec. X. "And indeed what prevents our asserting that people in prison under
 sentence of death are not punished till their heads are cut off, or that
 the person who has taken hemlock, and walks about till he feels it is
 getting into his legs, suffers not at all till he is deprived of
@@ -13620,7 +13624,7 @@ conscience still vexes and troubles him,
 For the recklessness and audacity of vice is strong and rampant till the
 crime is committed, but afterwards, when the passion subsides like a
 storm, it becomes timid and dejected and a prey to fears and
-superstitions. So that Stesichorus in his account of Clytæmnestra's
+superstitions. So that Stesichorus in his account of Clytaemnestra's
 dream may have represented the facts and real state of the case, where
 he says, "A dragon seemed to appear to her with its lofty head smeared
 all over with blood, and out of it seemed to come king Orestes the
@@ -13644,10 +13648,10 @@ judgement, lust is most assuredly a grievous bane to men," and as this
 apparition did not cease, he sailed, it seems, to Heraclea to the place
 where the souls of the dead could be summoned, and by propitiations and
 sacrifices called up the soul of the maiden, and she appeared to him and
-told him that this trouble would end when he got to Lacedæmon, and
+told him that this trouble would end when he got to Lacedaemon, and
 directly he got there he died."[831]
 
-§ XI. "And so, if nothing happens to the soul after death, but that
+Sec. XI. "And so, if nothing happens to the soul after death, but that
 event is the end of all enjoyment or punishment, one would be rather
 inclined to say that the deity was lax and indulgent in quickly
 punishing the wicked and depriving them of life. For even if we were to
@@ -13656,7 +13660,7 @@ wrong-doing was proved to bring them no profit or enjoyment, no good or
 adequate return for their many and great anxieties, the consciousness of
 that would be quite enough to throw[832] their mind off its balance. So
 they record of Lysimachus that he was so overcome by thirst that he
-surrendered himself and his forces to the Getæ for some drink, but after
+surrendered himself and his forces to the Getae for some drink, but after
 he had drunk and bethought him that he was now a captive, he said,
 "Alas! How guilty am I for so brief a gratification to lose so great a
 kingdom!" And yet it is very difficult to resist a necessity of nature.
@@ -13709,7 +13713,7 @@ my part, if it is lawful to say so, I do not think evil-doers need any
 god or man to punish them, for the marring and troubling of all their
 life by vice is in itself adequate punishment."
 
-§ XII. "But consider now whether I have not spoken too long." Then Timon
+Sec. XII. "But consider now whether I have not spoken too long." Then Timon
 said, "Perhaps you have, considering what remains and the time it will
 take. For now I am going to start the last question, as if it were a
 combatant in reserve, since the other two questions have been debated
@@ -13721,9 +13725,9 @@ further need to punish the innocent, for it is not fair to punish even
 the guilty twice for the same offence, whereas if the gods through
 easiness remit the punishment of the wicked, and exact it later on from
 the innocent, they do not well to compensate for their tardiness by
-injustice. Such conduct resembles the story told of Æsop's coming to
+injustice. Such conduct resembles the story told of AEsop's coming to
 this very spot,[837] with money from Croesus, to offer a splendid
-sacrifice to the god, and to give four minæ to each of the Delphians.
+sacrifice to the god, and to give four minae to each of the Delphians.
 And some quarrel or difference belike ensuing between him and the
 Delphians here, he offered the sacrifice, but sent the money back to
 Sardis, as though the Delphians were not worthy to receive that benefit,
@@ -13732,17 +13736,17 @@ death by throwing him headlong down yonder rock called Hyampia. And in
 consequence the god is said to have been wroth with them, and to have
 brought dearth on their land, and all kinds of strange diseases, so that
 they went round at the public festivals of the Greeks, and invited by
-proclamation whoever wished to take satisfaction of them for Æsop's
+proclamation whoever wished to take satisfaction of them for AEsop's
 death. And three generations afterwards came Idmon[838] a Samian, no
-relation of Æsop's, but a descendant of those who had purchased Æsop as
+relation of AEsop's, but a descendant of those who had purchased AEsop as
 a slave at Samos, and by giving him satisfaction the Delphians got rid
 of their trouble. And it was in consequence of this, they say, that the
 punishment of those guilty of sacrilege was transferred from Hyampia to
 Nauplia.[839] And even great lovers of Alexander, as we are, do not
-praise his destroying the city of the Branchidæ and putting everybody in
+praise his destroying the city of the Branchidae and putting everybody in
 it to death because their great-grandfathers betrayed the temple at
 Miletus.[840] And Agathocles, the tyrant of Syracuse, laughing and
-jeering at the Corcyræans for asking him why he wasted their island,
+jeering at the Corcyraeans for asking him why he wasted their island,
 replied, "Because, by Zeus, your forefathers welcomed Odysseus." And
 when the people of Ithaca likewise complained of his soldiers carrying
 off their sheep, he said, "Your king came to us, and actually put out
@@ -13763,8 +13767,8 @@ Till old age came upon them with its burdens,"
 all because Ajax violated Cassandra. Where is the reason or justice in
 all this? Nor do we praise the Thracians who to this day, in honour of
 Orpheus, mark their wives;[844] nor the barbarians on the banks of the
-Eridanus who, they say, wear mourning for Phäethon. And I think it would
-be still more ridiculous if the people living at the time Phäethon
+Eridanus who, they say, wear mourning for Phaeethon. And I think it would
+be still more ridiculous if the people living at the time Phaeethon
 perished had neglected him, and those who lived five or ten generations
 after his tragic death had begun the practice of wearing mourning and
 grieving for him. And yet this would be only folly, there would be
@@ -13772,7 +13776,7 @@ nothing dreadful or fatal about it, but what should make the anger of
 the gods subside at once and then afterwards, like some rivers, burst
 out against others till they completely ruin them?
 
-§ XIII. Directly he left off, fearing that if he began again he would
+Sec. XIII. Directly he left off, fearing that if he began again he would
 introduce more and greater absurdities, I asked him, "Well, do you
 believe all this to be true?" And he replied, "If not all, but only
 some, of it is true, do you not think that the subject presents the same
@@ -13793,7 +13797,7 @@ and memory of old Terpander, for it is a similar case. But you
 yourselves certainly lay claim to be better than other Boeotians as
 descended from Opheltes,[846] and than other Phocians because of your
 ancestor Daiphantus,[847] and you were the first to give me help and
-assistance in preserving for the Lycormæ and Satilæi their hereditary
+assistance in preserving for the Lycormae and Satilaei their hereditary
 privilege of wearing crowns as descendants of Hercules, when I contended
 that we ought to confirm the honours and favours of the descendants of
 Hercules more especially because, though he was such a benefactor to the
@@ -13814,7 +13818,7 @@ also if the progeny of the bad are wiped off the face of the earth; thus
 finding fault with the deity alike, whether the descendants of the good
 or bad father are unfortunate."
 
-§ XIV. "Let these remarks," I continued, "be your bulwarks as it were
+Sec. XIV. "Let these remarks," I continued, "be your bulwarks as it were
 against those excessively bitter and railing accusations. And taking up
 again as it were the initial clue to our subject, which as it is about
 the deity is dark and full of mazes and labyrinths, let us warily and
@@ -13836,7 +13840,7 @@ fallen on their descendants.[850] For properties have relations and
 connections between ends and beginnings, and although the reason of them
 may not be known by us, they silently perform their errand."
 
-§ XV. "Moreover the public punishments of cities by the gods admits of a
+Sec. XV. "Moreover the public punishments of cities by the gods admits of a
 just defence. For a city is one continuous entity, a sort of creature
 that never changes from age, or becomes different by time, but is ever
 sympathetic with and conformable to itself, and is answerable for
@@ -13866,7 +13870,7 @@ without being aware of it, throw everything into Heraclitus' river, into
 which he says a person cannot step twice,[852] since nature is ever
 changing and altering everything?"
 
-§ XVI. "If then a city is one continuous entity, so of course is a race
+Sec. XVI. "If then a city is one continuous entity, so of course is a race
 that starts from one beginning, that can trace back intimate union and
 similarity of faculties, for that which is begot is not, like some
 production of art, unlike the begetter, for it proceeds from him, and is
@@ -13877,7 +13881,7 @@ by the Athenians, and the body of Dionysius thrown out of their
 territory by the Syracusans after his death, were treated more unjustly
 than punishing their posterity would have been. For there was none of
 the nature of Cassander in the statue, and the soul of Dionysius had
-left his dead body before this outrage, whereas Nysæus and
+left his dead body before this outrage, whereas Nysaeus and
 Apollocrates,[853] Antipater and Philip,[854] and similarly other sons
 of wicked parents had innate in them a good deal of their fathers, and
 that no listless or inactive element, but one by which they lived and
@@ -13901,7 +13905,7 @@ of the body that the same feelings and changes will take place, so the
 soul, being worked upon by fancies, naturally becomes better or worse
 according as it has more confidence or fear."
 
-§ XVII. While I was thus speaking, Olympicus interposed, and said, "You
+Sec. XVII. While I was thus speaking, Olympicus interposed, and said, "You
 seem in your argument to assume the important assumption of the
 permanence of the soul." I replied, "You too concede it, or rather did
 concede it. For that the deity deals with everyone according to his
@@ -13935,14 +13939,14 @@ surname was Corax. He was first rejected by the Pythian Priestess, as
 having slain a man sacred to the Muses, but after using many entreaties
 and prayers, and urging pleas in defence of his act, he was ordered to
 go to the dwelling of Tettix, and appease the soul of Archilochus. Now
-this place was Tænarum, for there they say Tettix the Cretan had gone
+this place was Taenarum, for there they say Tettix the Cretan had gone
 with a fleet and founded a city, and dwelt near the place where departed
 souls were conjured up. Similarly also, when the Spartans were bidden by
 the oracle to appease the soul of Pausanias, the necromancers were
 summoned from Italy, and, after they had offered sacrifice, they got the
 ghost out of the temple."
 
-§ XVIII. "It is one and the same argument," I continued, "that confirms
+Sec. XVIII. "It is one and the same argument," I continued, "that confirms
 the providence of the deity and the permanence of the soul of man, so
 that you cannot leave one if you take away the other. And if the soul
 survives after death, it makes the probability stronger that rewards or
@@ -13967,7 +13971,7 @@ And as the others made the same request, I said, "Permit me first to
 finish my discourse according to probability, and then, if you like, I
 will set my myth a going, if it is a myth."
 
-§ XIX. Bion says the deity in punishing the children of the wicked for
+Sec. XIX. Bion says the deity in punishing the children of the wicked for
 their fathers' crimes is more ridiculous than a doctor administering a
 potion to a son or grandson for a father's or grandfather's disease. But
 the cases, though in some respects similar and like, are in others
@@ -14007,7 +14011,7 @@ and to dally with it, and wait till it be plainly mixed up with the
 feelings, and, to use the language of Pindar, "produce malignant fruit
 in the heart?"
 
-§ XX. Or is the deity in this respect no wiser than Hesiod, who exhorts
+Sec. XX. Or is the deity in this respect no wiser than Hesiod, who exhorts
 and advises, "not to beget children on our return from a sad funeral,
 but after a banquet with the gods,"[860] as though not vice or virtue
 only, but sorrow or joy and all other propensities, came from
@@ -14043,7 +14047,7 @@ him that he often punishes the adulterous or avaricious or unjust man in
 embryo, before he has had time to work out all his villainy, as we try
 to stop epileptic fits before they come on.
 
-§ XXI. Just now we were dissatisfied that the wicked were punished late
+Sec. XXI. Just now we were dissatisfied that the wicked were punished late
 and tardily, whereas at present we find fault with the deity for
 correcting the character and disposition of same before they commit
 crime, from our ignoring that the future deed may be worse and more
@@ -14075,7 +14079,7 @@ conceal and suppress the mental idiosyncrasies and passions of their
 race, which afterwards nature causes to break out in other members of
 the family, and so displays the family bent either to vice or virtue."
 
-§ XXII. When I had said thus much I was silent, but Olympicus smiled and
+Sec. XXII. When I had said thus much I was silent, but Olympicus smiled and
 said, "We do not praise you, lest we should seem to forget your promised
 story, as though what you had advanced was adequate proof enough, but we
 will give our opinion when we have heard it." Then I began as follows.
@@ -14137,7 +14141,7 @@ themselves, and their joy and delight by extension and expansion. At
 last he said he saw the soul of a relation, that he thought he knew but
 was not quite sure, as he died when he was a boy, which came up to him
 and said to him, "Welcome, Thespesius." And he wondering, and saying
-that his name was not Thespesius but Aridæus, the soul replied, "That
+that his name was not Thespesius but Aridaeus, the soul replied, "That
 was your old name, but henceforth it will be Thespesius. For assuredly
 you are not dead, but by the will of the gods are come here with your
 intellect, for the rest of your soul you have left in the body like an
@@ -14261,7 +14265,7 @@ voice of the Sibyl, who sang about the future as she was being borne
 about in the Orb of the moon. Though desirous then to hear more, he was
 conveyed into another direction by the violent motion of the moon, as if
 he had been in the eddies of a whirlpool, so that he heard very little
-more, only a prophecy about Mt. Vesuvius and that Dicæarchia[872] would
+more, only a prophecy about Mt. Vesuvius and that Dicaearchia[872] would
 be destroyed by fire, and a short piece about the Emperor then
 reigning,[873] that "though he was good he would lose his empire through
 sickness."
@@ -14345,7 +14349,7 @@ through[880] a pipe, by a strong and violent wind, and lit upon his own
 body, and woke up and found that he was close to his tomb.
 
 [806] In the temple at Delphi, the scene of the
-discussion, as we see later on, §§ vii. xii.
+discussion, as we see later on, Sec.Sec. vii. xii.
 
 [807] Reading [Greek: edokei] with Reiske.
 
@@ -14362,27 +14366,27 @@ tamen tacitis Poena venit pedibus."
 [812] Reading [Greek: maliota] (for [Greek: molis]) with
 Wyttenbach.
 
-[813] An allusion to the proverb [Greek: Opse Theôu
+[813] An allusion to the proverb [Greek: Opse Theou
 aleousi myloi, aleousi de lepta]. See Erasmus, "Adagia,"
 p. 1864.
 
 [814] Cf. Plato, "Republic," 472 A.
 
-[815] See Note, "On Abundance of Friends," § ii.
+[815] See Note, "On Abundance of Friends," Sec. ii.
 
 [816] Reading [Greek: ei gar].
 
 [817] Or _a world_.
 
-[818] See above, § ii.
+[818] See above, Sec. ii.
 
-[819] Quoted also in "On restraining Anger," § ii.
+[819] Quoted also in "On restraining Anger," Sec. ii.
 
 [820] It seems necessary to read either [Greek:
 porizein] with Mez, or [Greek: horizein] with
 Wyttenbach.
 
-[821] Compare Aristophanes, "Vespæ," 438.
+[821] Compare Aristophanes, "Vespae," 438.
 
 [822] See Pausanias, viii. 27.
 
@@ -14409,10 +14413,10 @@ iii. 1. 17, 21.
 
 [832] Surely [Greek: an anatrepoi] must be read.
 
-[833] Compare "On Curiosity," § x.
+[833] Compare "On Curiosity," Sec. x.
 
 [834] The reading is very doubtful. I adopt [Greek:
-hêdonês men euthus kenên charin, elpidos erêmon
+hedones men euthus kenen charin, elpidos eremon
 euriskousi.]
 
 [835] Euripides, "Ino."
@@ -14441,7 +14445,7 @@ the Oracle.
 
 [844] See Pausanias ix. 30; Herodotus, v. 6.
 
-[845] See Pausanias, vii. 27; Athenæus, 372 A.
+[845] See Pausanias, vii. 27; Athenaeus, 372 A.
 
 [846] A former king of Thebes. See Pausanias, ix. 5.
 
@@ -14452,11 +14456,11 @@ the Oracle.
 [849] The famous plague. See Thucydides, ii. 47-54.
 
 [850] The allusion is to the circumstances mentioned in
-§ xii.
+Sec. xii.
 
 [851] "Videtur idem cum _sorita_ esse."--_Reiske._
 
-[852] Compare our author, "De EI a pud Delphos," §
+[852] Compare our author, "De EI a pud Delphos," Sec.
 xviii. See also Seneca, "Epist.," lviii. p. 483; and
 Plato, "Cratylus," 402 A.
 
@@ -14466,7 +14470,7 @@ Plato, "Cratylus," 402 A.
 
 [855] "Iliad" vi. 146-149.
 
-[856] Compare Plato, "Phædrus," 276 B. These gardens of
+[856] Compare Plato, "Phaedrus," 276 B. These gardens of
 Adonis were what we might call flowerpot gardens. See
 Erasmus, "Adagia."
 
@@ -14475,7 +14479,7 @@ aei] is flat.
 
 [858] Apollo.
 
-[859] See § xii.
+[859] See Sec. xii.
 
 [860] Hesiod, "Works and Days," 735, 736.
 
@@ -14489,17 +14493,17 @@ larron." And Juvenal's "Nemo repente fuit turpissimus."
 [864] See Pansanias, viii. 11; ix. 5, 10. See also Ovid,
 "Metamorphoses," Book iii. 100-130.
 
-[865] Compare "On Love," § ii.
+[865] Compare "On Love," Sec. ii.
 
 [866] At Mallus, in Cilicia. See Pausanias, i. 34.
 
-[867] Reading [Greek: philêdonias ischys] with Reiske.
+[867] Reading [Greek: philedonias ischys] with Reiske.
 
 [868] Reading [Greek: diapepoikilmenon on] with
 Wyttenbach.
 
 [869] A paronomasia on [Greek: genesis] as if [Greek:
-epi gên neusis]. We cannot English it.
+epi gen neusis]. We cannot English it.
 
 [870] Eurydice.
 
@@ -14512,7 +14516,7 @@ Surely the right reading.
 to the particulars of his death.
 
 [874] The reading is very doubtful. I have followed
-Wyttenbach in reading [Greek: tribomenên tribên atelê].
+Wyttenbach in reading [Greek: tribomenen triben atele].
 
 [875] Such as that of the Danaides. So Wyttenbach.
 
@@ -14523,13 +14527,13 @@ Wyttenbach in reading [Greek: tribomenên tribên atelê].
 [878] See Pausanias, vii. 17, for a sneaking kindness
 for Nero.
 
-[879] See Athenæus, 687 B.
+[879] See Athenaeus, 687 B.
 
 [880] Reading [Greek: dia] with Reiske.
 
 AGAINST BORROWING MONEY.
 
-§ I. Plato in his Laws[881] does not permit neighbours to use one
+Sec. I. Plato in his Laws[881] does not permit neighbours to use one
 another's water, unless they have first dug for themselves as far as the
 clay, and reached ground that is unsuitable for a well. For clay, having
 a rich and compact nature, absorbs the water it receives, and does not
@@ -14547,7 +14551,7 @@ who, wanting an immediate supply, bring a witness and adequate security
 for their credit, so that they can be in no actual necessity of
 borrowing.[882]
 
-§ II. Why pay court to the banker or trader? Borrow from your own table.
+Sec. II. Why pay court to the banker or trader? Borrow from your own table.
 You have cups, silver dishes, pots and pans. Use them in your need.
 Beautiful Aulis or Tenedos will furnish you with earthenware instead,
 purer than silver, for they will not smell strongly and unpleasantly of
@@ -14566,7 +14570,7 @@ slavery; but stripping our table, our bed, our carriages, and our diet,
 of superfluities, we should keep ourselves free, intending to restore
 all those things again, if we have good luck.
 
-§ III. So the Roman matrons offered their gold and ornaments as
+Sec. III. So the Roman matrons offered their gold and ornaments as
 first-fruits to Pythian Apollo, out of which a golden cup was made and
 sent to Delphi;[883] and the Carthaginian matrons had their heads shorn,
 and with the hair cut off made cords for the machines and engines to be
@@ -14595,7 +14599,7 @@ hectors; if you go to his house, he shuts the door in your face; whereas
 if you stay at home, he billets himself on you, and is ever rapping at
 your door.
 
-§ IV. How did Solon benefit the Athenians by ordaining that debtors
+Sec. IV. How did Solon benefit the Athenians by ordaining that debtors
 should no longer have to pay in person? For they are slaves to all
 money-lenders,[888] and not to them only, what would there be so
 monstrous in that? but to their slaves, who are insolent and savage
@@ -14616,7 +14620,7 @@ barbarians give birth before they conceive; for at the very moment of
 giving they ask back, and take up what they laid down, and lend what
 they take for lending.
 
-§ V. It is a saying among the Messenians, that "there is a Pylos before
+Sec. V. It is a saying among the Messenians, that "there is a Pylos before
 Pylos, and another Pylos too." So it may be said with respect to these
 money-lenders, "there is interest before interest, and other interest
 too." Then of course they laugh at those natural philosophers who say
@@ -14644,7 +14648,7 @@ account-book and read how many he has sold up, how many turned out of
 house and home, and track the sources of his wealth, which is ever
 growing into a larger pile.
 
-§ VI. And do not think I say this as an enemy proclaiming war against
+Sec. VI. And do not think I say this as an enemy proclaiming war against
 the money-lenders,
 
 "For never did they lift my cows or horses,"[890]
@@ -14670,7 +14674,7 @@ tutor, or porter, or sailor, or make coasting voyages? Any of these ways
 of getting a livelihood is less disgraceful and difficult than to always
 have to hear, "Pay me that thou owest."
 
-§ VII. The well-known Rutilius went up to Musonius at Rome, and said to
+Sec. VII. The well-known Rutilius went up to Musonius at Rome, and said to
 him, "Musonius, Zeus Soter, whom you imitate and emulate, does not
 borrow money." And Musonius smilingly answered, "Neither does he lend."
 For you must know Rutilius, himself a lender, was bantering Musonius for
@@ -14718,7 +14722,7 @@ To the sun's rays th' unresting earth remits them;
 The sun anon whirls them to heaven again."
 
 So one after another usurer or trader gets hold of the poor wretch,
-hailing either from Corinth, or Patræ, or Athens, till he gets set on to
+hailing either from Corinth, or Patrae, or Athens, till he gets set on to
 by them all, and torn to bits, and cut into mince-meat as it were for
 his interest. For as a person who is fallen into the mire must either
 get up out of it or remain in it, and if he turns about in it, and
@@ -14734,7 +14738,7 @@ immediately another creditor presents his little account, so again their
 heads swim and ache, when they ought to have got rid of their debts
 altogether, and regained their freedom.
 
-§ VIII. I now turn my attention to those who are rich and luxurious, and
+Sec. VIII. I now turn my attention to those who are rich and luxurious, and
 use language like the following, "Am I then to go without slaves and
 hearth and home?" As if any dropsical person, whose body was greatly
 swollen and who was very weak, should say to his doctor, "Am I then to
@@ -14823,7 +14827,7 @@ agriois], and got somehow displaced.
 WHETHER "LIVE UNKNOWN" BE A WISE
 PRECEPT.
 
-§ I. He who uttered this precept[895] certainly did not wish to live
+Sec. I. He who uttered this precept[895] certainly did not wish to live
 unknown, for he uttered it to let all the world know he was a superior
 thinker, and to get to himself unjust glory by exhorting others to shun
 glory.
@@ -14844,7 +14848,7 @@ precept like this, or to write and hand it down to posterity, if he
 wished to live unknown to his own generation, who did not wish to live
 unknown to posterity?
 
-§ II. Look at the matter in the following way.[897] Has not that "live
+Sec. II. Look at the matter in the following way.[897] Has not that "live
 unknown" a villainous ring, as though one had broken open graves? Is
 your life so disgraceful that we must all be ignorant of it? For my part
 I should say, Even if your life be bad do not live unknown, but be
@@ -14869,7 +14873,7 @@ in love? I myself was in love once, but I had to repent. But nowadays
 people deny and conceal and cloak their vices, and so fix them deeper in
 themselves.
 
-§ III. Moreover if you advise men of worth to live unknown and in
+Sec. III. Moreover if you advise men of worth to live unknown and in
 obscurity, you say to Epaminondas, Do not be a general; and to Lycurgus,
 Do not be a legislator; and to Thrasybulus, Do not be a tyrannicide; and
 to Pythagoras, Do not teach; and to Socrates, Do not discourse; and
@@ -14881,11 +14885,11 @@ all men and all women, and leaving directions in your will about your
 funeral. What is the meaning of those common tables of yours? what that
 crowd of friends and handsome youths? Why those many thousand lines
 written and composed so laboriously on Metrodorus, and Aristobulus, and
-Chæredemus, that they may not be unknown even in death, if[899] you
+Chaeredemus, that they may not be unknown even in death, if[899] you
 ordain for virtue oblivion, for art inactivity, for philosophy silence,
 and for success that it should be speedily forgotten?
 
-§ IV. But if you exclude all knowledge about life, like putting the
+Sec. IV. But if you exclude all knowledge about life, like putting the
 lights out at a supper party, that you may go from pleasure to pleasure
 undetected,[900] then "live unknown." Certainly if I am going to pass my
 life with the harlot Hedeia, or my days with Leontium, and spurn at
@@ -14919,7 +14923,7 @@ stagnant get foul because they have no outlet, so the innate powers of
 unruffled lives, that neither imbibe nor pass on anything, even if they
 had any useful element in them once, seem to be effete and wasted.
 
-§ V. Have you never noticed how when night comes on a tired languor
+Sec. V. Have you never noticed how when night comes on a tired languor
 seizes the body, and inactive torpor overpowers the soul, and reason
 shrinks within itself like a fire going out, and feeling quite worn out
 is gently agitated by disordered fancies, only just indicating that the
@@ -14930,7 +14934,7 @@ Democritus says, "men form new ideas for the day," and betake themselves
 to their various pursuits with mutual impetuosity, as if drawn by a
 strong impulse.
 
-§ VI. And I think that life itself, and the way we come into the world,
+Sec. VI. And I think that life itself, and the way we come into the world,
 is so ordained by the deity that we should know one another. For
 everyone comes into this great universe obscure and unknown casually and
 by degrees, but when he mixes with his fellows and grows to maturity he
@@ -14957,7 +14961,7 @@ general flavour. But the man who thrusts himself into obscurity, and
 wraps himself up in darkness and buries himself alive, is like one who
 is dissatisfied with his birth, and renounces his being.
 
-§ VII. And yet _Pindar_ tells us[908] that the abode of the blest is a
+Sec. VII. And yet _Pindar_ tells us[908] that the abode of the blest is a
 glorious existence, where the sun shines bright through the entire night
 in meadows red with roses, an extensive plain full of shady trees ever
 in bloom never in fruit, watered by gentle purling streams, and there
@@ -14982,15 +14986,15 @@ and plunges them into the abyss of a fathomless sea, involving them in
 uselessness and idleness, ignorance and obscurity.
 
 [895] Probably Epicurus, as we infer from the very
-personal § iii.
+personal Sec. iii.
 
 [896] Euripides, Fragm. 930.
 
 [897] Reading with Wyttenbach, [Greek: Alla touto men
-tautê].
+taute].
 
 [898] Reading [Greek: ekastou] for [Greek: ekaston].
-Reiske proposed [Greek: ekastôn].
+Reiske proposed [Greek: ekaston].
 
 [899] Reading [Greek: ei] (for [Greek: hina]) with
 Xylander and Wyttenbach.
@@ -15010,11 +15014,11 @@ Herrick's Poem, "_Dreames._"
 
 [905] Invisible.
 
-[906] [Greek: phôs].
+[906] [Greek: phos].
 
 [907] Reading with Wyttenbach [Greek: echthairei].
 
-[908] Reading [Greek: phêsin] for [Greek: physin].
+[908] Reading [Greek: phesin] for [Greek: physin].
 
 [909] Hiatus hic valde deflendus.
 
@@ -15023,11 +15027,11 @@ Herrick's Poem, "_Dreames._"
 
 [911] "Odyssey," xi. 219.
 
-[912] So Reiske, [Greek: potamin tês lêthês].
+[912] So Reiske, [Greek: potamin tes lethes].
 
 ON EXILE.
 
-§ I. They say those discourses, like friends, are best and surest that
+Sec. I. They say those discourses, like friends, are best and surest that
 come to our refuge and aid in adversity, and are useful. For many who
 come forward do more harm than good in the remarks they make to the
 unfortunate, as people unable to swim trying to rescue the drowning get
@@ -15044,7 +15048,7 @@ to inquire of the body what it has suffered, nor of the mind if it is
 any the worse for what has happened, but to employ external sympathizers
 to teach us what our grief is.
 
-§ II. Therefore let us examine alone by ourselves the weight of our
+Sec. II. Therefore let us examine alone by ourselves the weight of our
 misfortunes, as if they were burdens. For the body is weighed down by
 the burden of what presses on it, but the soul often adds to the real
 load a burden of its own. A stone is naturally hard, and ice naturally
@@ -15071,7 +15075,7 @@ Greek poetry, which makes me greater than the tyrants Dascyles or
 Gyges." Thus the very same thing one man's opinion makes good, like
 current coin, and another's bad and injurious.
 
-§ III. But let it be granted that exile is, as many say and sing, a
+Sec. III. But let it be granted that exile is, as many say and sing, a
 grievous thing. So some food is bitter, and sharp, and biting to the
 taste, yet by an admixture with it of sweet and agreeable food we take
 away its unpleasantness. There are also some colours unpleasant to look
@@ -15086,7 +15090,7 @@ exile, and be content to live as you do in a strange land, rather than,
 like snails who have no other home than their shells, enjoy no other
 blessing but staying at home in ease.
 
-§ IV. As then he in the comedy that was exhorting an unfortunate friend
+Sec. IV. As then he in the comedy that was exhorting an unfortunate friend
 to take courage and bear up against fortune, when he asked him "how,"
 answered "as a philosopher," so may we also play the philosopher's part
 and bear up against fortune manfully. How do we do when it rains, or
@@ -15108,7 +15112,7 @@ endurable by mitigating their sorrows with the consideration of their
 blessings, while most people, like sieves, let the worst things stick to
 them while the best pass through.
 
-§ V. And so, if we fall into any real trouble or evil, we ought to get
+Sec. V. And so, if we fall into any real trouble or evil, we ought to get
 cheerfulness and ease of mind from the consideration of the actual
 blessings that are still left to us, mitigating outward trouble by
 private happiness. And as to those things which are not really evil in
@@ -15131,7 +15135,7 @@ That does to Greece belong, that is my country."
 
 But better still said Socrates, that he was not an Athenian or Greek,
 but a citizen of the world (as a man might say he was a Rhodian or
-Corinthian), for he did not confine himself to Sunium, or Tænarum, or
+Corinthian), for he did not confine himself to Sunium, or Taenarum, or
 the Ceraunian mountains.
 
 "See you the boundless reach of sky above,
@@ -15149,9 +15153,9 @@ regular way in accordance with nature; and in his wake to punish all
 transgressions of the divine law follows Justice, whom all men naturally
 invoke in dealing with one another as fellow citizens.
 
-§ VI. As to your not dwelling at Sardis, that is nothing. Neither do all
+Sec. VI. As to your not dwelling at Sardis, that is nothing. Neither do all
 the Athenians dwell at Colyttus, nor all the Corinthians at Craneum, nor
-all the Lacedæmonians at Pitane. Do you consider all those Athenians
+all the Lacedaemonians at Pitane. Do you consider all those Athenians
 strangers and exiles who removed from Melita to Diomea, where they call
 the month Metageitnion,[917] and keep the festival Metageitnia to
 commemorate their migration, and gladly and gaily accept and are content
@@ -15174,7 +15178,7 @@ are concerned, but when we migrate to other places, we desire the water
 of the Cephisus, or we yearn for the Eurotas, or Taygetus, or Parnassus,
 and so make the whole world for ourselves houseless and homeless.
 
-§ VII. Some Egyptians, who migrated to Ethiopia because of the anger and
+Sec. VII. Some Egyptians, who migrated to Ethiopia because of the anger and
 wrath of their king, to those who begged them to return to their wives
 and children very immodestly exposed their persons, saying that they
 would never be in want of wives or children while so provided. It is far
@@ -15202,7 +15206,7 @@ place?" For the comic poet says they get their crop of figs down there
 with slings, and that the island is very barely supplied with the
 necessaries of life.
 
-§ VIII. For if you look at the real facts and shun idle fancy, he that
+Sec. VIII. For if you look at the real facts and shun idle fancy, he that
 has one city is a stranger and foreigner in all others. For it does not
 seem to such a one fair and just to leave his own city and dwell in
 another. "It has been your lot to be a citizen of Sparta, see that you
@@ -15232,14 +15236,14 @@ wrestling, and turned round, and noticed the mark his body made in the
 dust, said, "O Hercules, what a little part of the earth I have by
 nature, though I desire all the world!"
 
-§ IX. I think also you have seen Naxos, or at any rate Hyria, which is
+Sec. IX. I think also you have seen Naxos, or at any rate Hyria, which is
 close here. But the former was the home of Ephialtes and Otus, and the
-latter was the dwelling-place of Orion. And Alcmæon, when fleeing from
+latter was the dwelling-place of Orion. And Alcmaeon, when fleeing from
 the Furies, so the poets tell us, dwelt in a place recently formed by
 the silting of the Achelous;[919] but I think he chose that little spot
 to dwell in ease and quiet, merely to avoid political disturbances and
 factions, and those furies informers. And the Emperor Tiberius lived the
-last seven years of his life in the island of Capreæ, and the sacred
+last seven years of his life in the island of Capreae, and the sacred
 governing power of the world enclosed in his breast during all that time
 never changed its abode. But the incessant and constant cares of empire,
 coming from all sides, made not that island repose of his pure and
@@ -15251,7 +15255,7 @@ I grow strong, and have nothing to do with sorrow or faction,"[920] or
 the ordinances of princes, or public duties in political emergencies, or
 state functions hard to get off.
 
-§ X. For if that seems a good saying of Callimachus, "Do not measure
+Sec. X. For if that seems a good saying of Callimachus, "Do not measure
 wisdom by a Persian rope," much less should we measure happiness by
 ropes and parasangs, and if we inhabit an island containing 200 furlongs
 only, and not (like Sicily) four days' sail round, ought we to wail and
@@ -15279,7 +15283,7 @@ the sons of Codrus and Neleus, though foolish people now think they are
 punished if they are exiled to them. And yet what island used as a place
 of exile is not of larger extent than Scillus, where Xenophon after his
 military service saw a comfortable old age?[924] And the Academy, a
-small place bought for only 3,000 drachmæ,[925] was the domicile of
+small place bought for only 3,000 drachmae,[925] was the domicile of
 Plato and Xenocrates and Polemo, who taught and lived there all their
 lives, except one day every year, when Xenocrates went to Athens to
 grace the festival of Dionysus, so they said, and to see the new plays
@@ -15306,11 +15310,11 @@ and,
 The sacred islands called th' Echinades,
 That lie across the sea opposite Elis;"[929]
 
-and of the illustrious men that dwelt in islands he mentions Æolus the
+and of the illustrious men that dwelt in islands he mentions AEolus the
 favourite of the gods, and Odysseus most wise, and Ajax most brave, and
 Alcinous most kind to strangers.
 
-§ XI. When Zeno learned that the only ship he had left was with all its
+Sec. XI. When Zeno learned that the only ship he had left was with all its
 freight lost at sea, he said, "Fortune, you deal kindly with me,
 confining me to my threadbare cloak and the life of a philosopher." And
 a man not altogether silly, or madly in love with crowds, might, I
@@ -15338,7 +15342,7 @@ sphere, as in an island. For, as Heraclitus says, the sun will never
 deviate from its bounds, for if it did, the Furies, who are the
 ministers of Justice, would find it out.
 
-§ XII. Let us use such and similar language, my friend, and harp upon
+Sec. XII. Let us use such and similar language, my friend, and harp upon
 it, to those who are banished to an island, and are debarred all access
 with others
 
@@ -15370,7 +15374,7 @@ thinks fit, Diogenes can dine at any time he himself chooses," having no
 business, or magistrate, or prefect, to put him out of his general
 habits of living.
 
-§ XIII. And so it is that you will find few of the wisest and most
+Sec. XIII. And so it is that you will find few of the wisest and most
 intelligent men buried in their own countries, but most (even without
 any compulsion) have themselves weighed anchor, and transferred their
 course, and removed, some to Athens, some from it. For who ever bestowed
@@ -15390,7 +15394,7 @@ And yet the author of these lines went to Macedonia, and lived all the
 latter part of his life at the court of Archelaus. And of course you
 have heard the following epitaph;
 
-"Here lies Euphorion's son, Athenian Æschylus,
+"Here lies Euphorion's son, Athenian AEschylus,
 To whom death came in corn-producing Gela."
 
 For he, like Simonides before him, went to Sicily. And many have changed
@@ -15401,7 +15405,7 @@ and sacred spirit of the Muses, the poet of the Trojan war, Homer, did
 not many cities claim him as theirs, because he did not cry up one city
 only? And Hospitable Zeus has many great honours.
 
-§ XIV. And if anyone shall say that these pursued glory and honour, go
+Sec. XIV. And if anyone shall say that these pursued glory and honour, go
 to the philosophers, and their schools and lectures, consider those at
 the Lyceum, the Academy, the Porch, the Palladium, the Odeum. If you
 admire and prefer the Peripatetic school, Aristotle was a native of
@@ -15422,7 +15426,7 @@ aided our old writers to complete their finest and most esteemed works
 by calling in exile as a fellow-worker. Thus Thucydides the Athenian
 wrote the history of the war between the Peloponnesians and the
 Athenians in Thrace near the forest of Scapte, Xenophon wrote at Scillus
-in Elis, Philistus in Epirus, Timæus of Tauromenium at Athens, Androtion
+in Elis, Philistus in Epirus, Timaeus of Tauromenium at Athens, Androtion
 of Athens at Megara, and Bacchylides the poet[933] in Peloponnesus. All
 these and many more, though exiled from their country, did not despair
 or give themselves up to dejection, but so happy was their disposition
@@ -15430,7 +15434,7 @@ that they considered exile a resource given them by fortune, whereby
 they obtained universal fame after their deaths, whereas no memorial is
 left of those who were factious against them and banished them.
 
-§ XV. He therefore is ridiculous who thinks that any ignominy attaches
+Sec. XV. He therefore is ridiculous who thinks that any ignominy attaches
 itself to exile. What say you? Was Diogenes without glory, whom
 Alexander saw basking in the sun, and stopped to ask if he wanted
 anything, and when he answered, "Nothing, but that you would get a
@@ -15445,7 +15449,7 @@ Themistocles the exile, or Clodius who banished Cicero rather than the
 banished one, or Aristophon the accuser rather than Timotheus who got
 driven by him from his country.
 
-§ XVI. But since a good many are moved by the lines of Euripides, who
+Sec. XVI. But since a good many are moved by the lines of Euripides, who
 seems to bring a strong indictment against exile, let us see what it is
 he says in each question and answer about it.
 
@@ -15520,7 +15524,7 @@ though an exile, and he came to fight supported by a band of friends and
 allies, a great force, as he himself admits a little later,
 
 "Many of the princes of the Danai
-And from Mycenæ are with me, bestowing
+And from Mycenae are with me, bestowing
 A sad but necessary kindness on me."[941]
 
 Nor was there any more justice in the lament of his
@@ -15537,7 +15541,7 @@ Ismenus, as though there was no water or fire at Argos for wedded
 people, she lays on exile the evils really caused by pride and
 stupidity.
 
-§ XVII. But exile, you will say, is a matter of reproach. It may be
+Sec. XVII. But exile, you will say, is a matter of reproach. It may be
 among fools, who also jeer at the beggar, the bald man, the dwarf, aye,
 and even the stranger and resident alien. But those who are not carried
 away in that manner admire good men, whether they are poor, or strangers
@@ -15557,7 +15561,7 @@ Dionysus, when he was sent from home to find Europa, and never came
 back, "though a Phoenician born he changed his country,"[943] and
 migrated to Thebes, and became[944] the grandfather of "Dionysus, who
 rejoices in the cry of Evoe, the exciter of women, who delights in
-frantic honours." As for what Æschylus obscurely hints at in the line,
+frantic honours." As for what AEschylus obscurely hints at in the line,
 
 "Apollo the chaste god, exile from heaven,"
 
@@ -15587,20 +15591,20 @@ situation can rob a man of his happiness or virtue or sense. It was in
 prison that Anaxagoras wrote his squaring of the circle, and that
 Socrates, even after drinking the hemlock, talked philosophically, and
 begged his friends to be philosophers, and was esteemed happy by them.
-On the other hand, Phaëthon and Tantalus, though they got up to heaven,
+On the other hand, Phaethon and Tantalus, though they got up to heaven,
 fell into the greatest misfortunes through their folly, as the poets
 tell us.
 
-[913] Euripides, "Phoenissæ," 388, 389.
+[913] Euripides, "Phoenissae," 388, 389.
 
 [914] Reading [Greek: bakelas]. _Gallus_ in Latin.
 
 [915] "Iliad," xxiv. 527-533.
 
-[916] Plato, "Timæus," p. 90 A. Compare Ovid,
+[916] Plato, "Timaeus," p. 90 A. Compare Ovid,
 "Metamorphoses," i. 84-86.
 
-[917] Derived from [Greek: meta, geitôn], because then
+[917] Derived from [Greek: meta, geiton], because then
 people flitted and changed their neighbours.
 
 [918] Euripides, "Iphigenia in Tauris," 253.
@@ -15609,16 +15613,16 @@ people flitted and changed their neighbours.
 
 [920] Pindar, Fragm. 126.
 
-[921] Æschylus, "Niobe," Fragm. 146.
+[921] AEschylus, "Niobe," Fragm. 146.
 
-[922] "Odyssey," vi. 8. I read [Greek: andrôn] as
+[922] "Odyssey," vi. 8. I read [Greek: andron] as
 Wyttenbach.
 
 [923] "Odyssey," vi. 204.
 
 [924] See Pausanias, v. 6.
 
-[925] In our money about £121 17_s._ 6_d._
+[925] In our money about L121 17_s._ 6_d._
 
 [926] "Iliad," xiv. 230.
 
@@ -15634,27 +15638,27 @@ Wyttenbach.
 
 [932] Euripides, Fragm. 950.
 
-[933] Reiske suggests [Greek: Bakchylidês ho Keios]. A
+[933] Reiske suggests [Greek: Bakchylides ho Keios]. A
 very probable suggestion.
 
-[934] Euripides, "Phoenissæ," 388-393.
+[934] Euripides, "Phoenissae," 388-393.
 
-[935] Omitting [Greek: prhôtôs], which probably got in
-from [Greek: prôton] following, and for which Reiske
-conjectured [Greek: horas hôs].
+[935] Omitting [Greek: prhotos], which probably got in
+from [Greek: proton] following, and for which Reiske
+conjectured [Greek: horas hos].
 
 [936] Such as Cardinal Balue was shut up by Louis XI in
 for fourteen years.
 
 [937] The answer of Theodorus is wanting.
 
-[938] Euripides, "Phoenissæ," 396, 397.
+[938] Euripides, "Phoenissae," 396, 397.
 
 [939] That is, they never get any further.
 
-[940] Euripides, "Phoenissæ," 402-405.
+[940] Euripides, "Phoenissae," 402-405.
 
-[941] Euripides, "Phoenissæ," 430-432.
+[941] Euripides, "Phoenissae," 430-432.
 
 [942] Ibid. 344-346.
 
@@ -15667,7 +15671,7 @@ Valckenarius."--_Wyttenbach._
 
 ON FORTUNE.
 
-§ I. "Fortune, not wisdom, rules the affairs of mortals."[946] And does
+Sec. I. "Fortune, not wisdom, rules the affairs of mortals."[946] And does
 not justice, and fairness, and sobriety, and decorum rule the affairs of
 mortals? Was it of fortune or owing to fortune that Aristides persevered
 in his poverty, when he might have been lord of much wealth? And that
@@ -15684,7 +15688,7 @@ if all these things are due to fortune, what hinders our saying that
 cats and goats and apes are under the influence of fortune in respect of
 greediness, and lust, and ribaldry?
 
-§ II. And if there are such things as sobriety and justice and
+Sec. II. And if there are such things as sobriety and justice and
 fortitude, with what reason can we deny the existence of prudence, and
 if prudence exists, how can we deny the existence of wisdom? For
 sobriety is a kind of prudence, as people say, and justice also needs
@@ -15718,7 +15722,7 @@ dealings with her. Indeed, how can it be otherwise, seeing that we
 repudiate wisdom, which is like plucking out our eyes, and take a blind
 guide of our lives?
 
-§ III. Supposing any of us were to assert that seeing is a matter of
+Sec. III. Supposing any of us were to assert that seeing is a matter of
 fortune, not of eyesight, nor of the eyes that give light, as Plato
 says, and that hearing is a matter of fortune, and not the imbibing of a
 current of air through the ear and brain, it would be well for us then
@@ -15736,7 +15740,7 @@ the cause of this,
 "Presenting us with bulls, horses, and asses,
 To ease us of our toil, and serve instead,"
 
-as Æschylus says.[950] For as to fortune and natural condition, most of
+as AEschylus says.[950] For as to fortune and natural condition, most of
 the beasts are better off than we are. For some are armed with horns and
 tusks and stings, and as for the hedgehog, as Empedocles says, it has
 its back all rough with sharp bristles, and some are shod and protected
@@ -15765,7 +15769,7 @@ make use of them, and get their honey and milk, and catch them, and
 drive and lead them about at our will. And there is nothing of fortune
 in this, it is all the result of wisdom and forethought.
 
-§ IV. Moreover the labours of carpenters and coppersmiths and
+Sec. IV. Moreover the labours of carpenters and coppersmiths and
 house-builders and statue-makers are affairs of mortals, and we see that
 no success in such trades is got by fortune or chance. For that fortune
 plays a very small part in the life of a wise man, whether coppersmith
@@ -15793,7 +15797,7 @@ scattered about in all quarters of the world. For thus small particles
 and fragments of wisdom, breaking up as it were and getting divided into
 pieces, have formed into order.
 
-§ V. It is strange then that the arts do not require fortune to attain
+Sec. V. It is strange then that the arts do not require fortune to attain
 to their ends, and yet that the most important and complete of all the
 arts, the sum total of man's glory and merit, should be so completely
 powerless. Why, there is a kind of wisdom even in the tightening or
@@ -15817,7 +15821,7 @@ Iphicrates in a scolding way who he was, as he seemed neither a
 heavy-armed soldier, nor a bowman, nor a targeteer, and he replied, "I
 am the person who rule and make use of all these."
 
-§ VI. So wisdom is neither gold, nor silver, nor fame, nor wealth, nor
+Sec. VI. So wisdom is neither gold, nor silver, nor fame, nor wealth, nor
 health, nor strength, nor beauty. What is it then? It is what can use
 all these well, and that by means of which each of these things becomes
 pleasant and esteemed and useful, and without which they are useless;
@@ -15833,20 +15837,20 @@ his wife. For success beyond their merit is to foolish persons a cause
 of folly, as Demosthenes said,[957] and good fortune beyond their merit
 is to those who are not sensible a cause of misfortune.[958]
 
-[946] A line from Chæremon.
+[946] A line from Chaeremon.
 
 [947] Better known as Paris.
 
 [948] "Oedipus Tyrannus," 110, 111. Wyttenbach compares
 Terence, "Heauton Timorumenos," 675. "Nil tam
-difficilest, quin quærende investigari possiet."
+difficilest, quin quaerende investigari possiet."
 
 [949] Soph., Frag. 723.
 
-[950] Æschylus, Fragm. 180. Reading [Greek: antidoula]
+[950] AEschylus, Fragm. 180. Reading [Greek: antidoula]
 with Reiske and the MSS.
 
-[951] Euripides, "Æolus," Fragm. 27.
+[951] Euripides, "AEolus," Fragm. 27.
 
 [952] Homer, "Odyssey," viii. 246, 247.
 
@@ -15854,8 +15858,8 @@ with Reiske and the MSS.
 
 [954] "The Worker." Generally a title of Athene, as
 Pausanias, i. 24; iii. 17; v. 14; vi. 26; viii. 32; ix.
-26. Gataker thinks [Greek: kai tên] should be expunged.
-Hercher omits [Greek: kai tên 'Athênan] altogether.
+26. Gataker thinks [Greek: kai ten] should be expunged.
+Hercher omits [Greek: kai ten 'Athenan] altogether.
 
 [955] So Hercher after Madvig. See Pliny, "Hist. Nat.,"
 XXXV. 36, 20.
@@ -15881,7 +15885,7 @@ Academy, the, 385.
 
 Achilles, 5, 52, 102, 172, 187, 196, 200, 271, 290, 291, 301, 319.
 
-Acropolis, statue of Leæna in the, 221.
+Acropolis, statue of Leaena in the, 221.
 
 Admetus, 52.
 
@@ -15890,14 +15894,14 @@ Adonis, 43, 352.
 Adultery, the fruit of curiosity, 245.
 Love of change, 298.
 
-Æschines, 17, 188, 285.
+AEschines, 17, 188, 285.
 
-Æschylus, quoted or referred to, 33, 45, 47, 55, 61, 125,
+AEschylus, quoted or referred to, 33, 45, 47, 55, 61, 125,
 126, 130, 176, 203, 205, 242, 271, 273, 385, 388, 393, 396.
 
-Æsculapius, 244, 270.
+AEsculapius, 244, 270.
 
-Æsop, fables of alluded to, 72, 81, 88, 125, 142.
+AEsop, fables of alluded to, 72, 81, 88, 125, 142.
 
 Agamemnon, 292, 300, 301.
 
@@ -15915,7 +15919,7 @@ Aglaonice, her knowledge of eclipses, 83.
 
 Ajax, 113, 347.
 
-Alcæus, 56, 59.
+Alcaeus, 56, 59.
 
 Alcestis, 53.
 
@@ -15996,7 +16000,7 @@ Ares, 44, 45, 47, 49.
 
 Argus, 146.
 
-Aristæus (the _Saint Hubert_ of the Middle Ages), 45.
+Aristaeus (the _Saint Hubert_ of the Middle Ages), 45.
 
 Aristides, 120, 136.
 
@@ -16073,7 +16077,7 @@ Custom of at Leptis in Libya, 79.
 
 Caeneus, his change of sex, 120.
 
-Cæsar, Julius, 210.
+Caesar, Julius, 210.
 
 Callimachus, 272, 385.
 
@@ -16101,11 +16105,11 @@ Ceramicus, at Athens, 219, 259.
 
 Cestus of Aphrodite, 76, 219.
 
-Chæron, son of Plutarch, 87.
+Chaeron, son of Plutarch, 87.
 
-Chæron, and Chæronea, 238.
+Chaeron, and Chaeronea, 238.
 
-Chæronea, Plutarch's native place, 238.
+Chaeronea, Plutarch's native place, 238.
 
 Chalcis, people of, 51.
 
@@ -16137,7 +16141,7 @@ Clitus, 113, 195, 277.
 
 Clodius, 231, 232.
 
-Clytæmnestra, dream of, 343.
+Clytaemnestra, dream of, 343.
 
 Conjugal constancy, 81.
 Conjugal precepts, 70-84.
@@ -16420,7 +16424,7 @@ Hypsipyle, her foster-child, 146.
 
 Ibycus, story about, 228.
 
-Idæan Dactyli, 136.
+Idaean Dactyli, 136.
 
 Ignorance of self, 143.
 
@@ -16447,7 +16451,7 @@ Lais, famous courtesan, 32, 49, 63.
 
 Law, martial, 211.
 
-Leæna, her heroism, 220, 221.
+Leaena, her heroism, 220, 221.
 
 Lemnos, the women of, 41.
 
@@ -16470,7 +16474,7 @@ Locris, authorities of, 245.
 
 Love, to one's offspring, 21-28.
 On love generally, 29-69.
-God of Love, his festival at Thespiæ, 29, 63.
+God of Love, his festival at Thespiae, 29, 63.
 Pandemian and Celestial love, 57.
 No strong love without jealousy, 135.
 Lovers admire even the defects of their loves, 136, 167, 168, 209,
@@ -16498,7 +16502,7 @@ Lysimache, 263.
 
 Lysimachus, king, 225, 241, 344, 390, 391.
 
-Mæcenas, 49.
+Maecenas, 49.
 
 Magas, 113, 276, 277.
 
@@ -16652,7 +16656,7 @@ Perseus, 192, 193, 307.
 
 Persia, kings of, 73, 124, 140, 382, 387.
 
-Phäethon, 293, 347, 394.
+Phaeethon, 293, 347, 394.
 
 Phalaris, 120, 168, 339.
 
@@ -16851,7 +16855,7 @@ Tenedos, famous for earthenware, 366.
 
 Theano, wife of Pythagoras, 78, 84.
 
-Thebans, and Lacedæmonians, 270.
+Thebans, and Lacedaemonians, 270.
 
 Themistocles, and his son, 1, 2.
 His father Neocles, 27.
@@ -16882,7 +16886,7 @@ Thucydides, 127, 152, 167, 195, 198, 208, 261, 265, 314, 317, 332, 336,
 
 Tiberius, 151, 174, 175, 225, 384.
 
-Timæa, 294.
+Timaea, 294.
 
 Timesias, oracle given to, 151.
 

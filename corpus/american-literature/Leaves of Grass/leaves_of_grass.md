@@ -32,7 +32,7 @@ Of Life immense in passion, pulse, and power,
 Cheerful, for freest action form’d under the laws divine,
 The Modern Man I sing.
 
-As I Ponder’d in Silence
+## As I Ponder’d in Silence
 
 As I ponder’d in silence,
 Returning upon my poems, considering, lingering long,
@@ -96,7 +96,7 @@ I heard that you ask’d for something to prove this puzzle the New World,
 And to define America, her athletic Democracy,
 Therefore I send you my poems that you behold in them what you wanted.
 
-To a Historian
+## To a Historian
 
 You who celebrate bygones,
 Who have explored the outward, the surfaces of the races, the life
@@ -280,7 +280,7 @@ How all times mischoose the objects of their adulation and reward,
 And how the same inexorable price must still be paid for the same
 great purchase.
 
-To the States
+## To the States
 
 To the States or any one of them, or any city of the States, Resist
 much, obey little,
@@ -310,7 +310,7 @@ Dwell a while and pass on, be copious, temperate, chaste, magnetic,
 And what you effuse may then return as the seasons return,
 And may be just as much as the seasons.
 
-To a Certain Cantatrice
+## To a Certain Cantatrice
 
 Here, take this gift,
 I was reserving it for some hero, speaker, or general,
@@ -4020,7 +4020,7 @@ solitary in a wide in a wide flat space,
 Uttering joyous leaves all its life without a friend a lover near,
 I know very well I could not.
 
-To a Stranger
+## To a Stranger
 
 Passing stranger! you do not know how longingly I look upon you,
 You must be he I was seeking, or she I was seeking, (it comes to me
@@ -4188,7 +4188,7 @@ of the crowd, parting the parting of dear friends,
 The one to remain hung on the other’s neck and passionately kiss’d him,
 While the one to depart tightly prest the one to remain in his arms.
 
-To the East and to the West
+## To the East and to the West
 
 To the East and to the West,
 To the man of the Seaside State and of Pennsylvania,
@@ -4207,7 +4207,7 @@ way or another,
 (I loved a certain person ardently and my love was not return’d,
 Yet out of that I have written these songs.)
 
-To a Western Boy
+## To a Western Boy
 
 Many things to absorb I teach to help you become eleve of mine;
 Yet if blood like mine circle not in your veins,
@@ -7971,7 +7971,7 @@ That strong and delicious word which, creeping to my feet,
 garments, bending aside,)
 The sea whisper’d me.
 
-As I Ebb’d with the Ocean of Life
+## As I Ebb’d with the Ocean of Life
 
 1
 As I ebb’d with the ocean of life,
@@ -8088,7 +8088,7 @@ regulated pace,
 But away at night as you fly, none looking--O then the unloosen’d ocean,
 Of tears! tears! tears!
 
-To the Man-of-War-Bird
+## To the Man-of-War-Bird
 
 Thou who hast slept all night upon the storm,
 Waking renew’d on thy prodigious pinions,
@@ -8527,7 +8527,7 @@ Answer.
 That you are here--that life exists and identity,
 That the powerful play goes on, and you may contribute a verse.
 
-To a President
+## To a President
 
 All you are doing and saying is to America dangled mirages,
 You have not learn’d of Nature--of the politics of Nature you have
@@ -8850,9 +8850,10 @@ To sing first, (to the tap of the war-drum if need be,)
 The idea of all, of the Western world one and inseparable,
 And then the song of each member of these States.
 
-Song of the Banner at Daybreak
+## Song of the Banner at Daybreak
 
-Poet:
+*Poet:*
+
 O A new song, a free song,
 Flapping, flapping, flapping, flapping, by sounds, by voices clearer,
 By the wind’s voice and that of the drum,
@@ -9969,7 +9970,7 @@ The soul! yourself I see, great as any, good as the best,
 Waiting secure and content, which the bullet could never kill,
 Nor the bayonet stab O friend.
 
-As I Lay with My Head in Your Lap Camerado
+## As I Lay with My Head in Your Lap Camerado
 
 As I lay with my head in your lap camerado,
 The confession I made I resume, what I said to you and the open air
@@ -9999,7 +10000,7 @@ Ah my silvery beauty--ah my woolly white and crimson!
 Ah to sing the song of you, my matron mighty!
 My sacred one, my mother.
 
-To a Certain Civilian
+## To a Certain Civilian
 
 Did you ask dulcet rhymes from me?
 Did you seek the civilian’s peaceful and languishing rhymes?
@@ -10091,7 +10092,7 @@ Then turn, and be not alarm’d O Libertad--turn your undying face,
 To where the future, greater than all the past,
 Is swiftly, surely preparing for you.
 
-To the Leaven’d Soil They Trod
+## To the Leaven’d Soil They Trod
 
 To the leaven’d soil they trod calling I sing for the last,
 (Forth from my tent emerging for good, loosing, untying the tent-ropes,)
@@ -11409,7 +11410,7 @@ It renews with such unwitting looks its prodigal, annual, sumptuous crops,
 It gives such divine materials to men, and accepts such leavings
 from them at last.
 
-To a Foil’d European Revolutionaire
+## To a Foil’d European Revolutionaire
 
 Courage yet, my brother or my sister!
 Keep on--Liberty is to be subserv’d whatever occurs;
@@ -11514,7 +11515,7 @@ counterparts of what accrued to them in the seen world,
 I suspect I shall meet them there,
 I suspect I shall there find each old particular of those unnamed lands.
 
-Song of Prudence
+## Song of Prudence
 
 Manhattan’s streets I saunter’d pondering,
 On Time, Space, Reality--on such as these, and abreast with them Prudence.
@@ -11924,7 +11925,7 @@ And that there is no God any more divine than Yourself?
 And that that is what the oldest and newest myths finally mean?
 And that you or any one must approach creations through such laws?
 
-To a Common Prostitute
+## To a Common Prostitute
 
 Be composed--be at ease with me--I am Walt Whitman, liberal and
 lusty as Nature,
@@ -12024,7 +12025,7 @@ The low hoarse purr of the whirling stone, the light-press’d blade,
 Diffusing, dropping, sideways-darting, in tiny showers of gold,
 Sparkles from the wheel.
 
-To a Pupil
+## To a Pupil
 
 Is reform needed? is it through you?
 The greater the reform needed, the greater the Personality you need
@@ -13866,7 +13867,7 @@ Tenderly--be not impatient,
 (Strong is your hold O mortal flesh,
 Strong is your hold O love.)
 
-As I Watch the Ploughman Ploughing
+## As I Watch the Ploughman Ploughing
 
 As I watch’d the ploughman ploughing,
 Or the sower sowing in the fields, or the harvester harvesting,
@@ -14375,7 +14376,7 @@ Joy! joy! in freedom, worship, love! joy in the ecstasy of life!
 Enough to merely be! enough to breathe!
 Joy! joy! all over joy!
 
-To a Locomotive in Winter
+## To a Locomotive in Winter
 
 Thee for my recitative,
 Thee in the driving storm even as now, the snow, the winter-day declining,
@@ -14794,7 +14795,7 @@ and polish’d arch forgot?
 But thou that revelest here--spirit that form’d this scene,
 They have remember’d thee.
 
-As I Walk These Broad Majestic Days
+## As I Walk These Broad Majestic Days
 
 As I walk these broad majestic days of peace,
 (For the war, the struggle of blood finish’d, wherein, O terrific Ideal,
@@ -15429,7 +15430,7 @@ These ocean waves arousable to fury and to death,
 Or sooth’d to ease and sheeny sun and sleep,
 Within the pallid slivers slumbering.
 
-As I Sit Writing Here
+## As I Sit Writing Here
 
 As I sit writing here, sick and grown old,
 Not my least burden is that dulness of the years, querilities,
@@ -16254,7 +16255,7 @@ Crowd top-sail, top-gallant and royal studding-sails,
 Out challenge and defiance--flags and flaunting pennants added,
 As we take to the open--take to the deepest, freest waters.
 
-To the Pending Year
+## To the Pending Year
 
 Have I no weapon-word for thee--some message brief and fierce?
 (Have I fought out and done indeed the battle?) Is there no shot left,
@@ -16308,7 +16309,7 @@ The clank of cavalry--the strange celerity of forming ranks--the
 slender bugle note;
 The sound of horses’ hoofs departing--saddles, arms, accoutrements.
 
-To the Sun-Set Breeze
+## To the Sun-Set Breeze
 
 Ah, whispering, something again, unseen,
 Where late this heated day thou enterest at my window, door,

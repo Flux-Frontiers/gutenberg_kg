@@ -59,6 +59,8 @@ U. S.  GRANT.
 
 MOUNT MACGREGOR, NEW YORK, July 1, 1885.
 
+MOVEMENT UPON MOBILE--A PAINFUL ACCIDENT--ORDERED TO REPORT AT CAIRO.
+
 Volume one begins:
 
 ## CHAPTER I. ANCESTRY--BIRTH--BOYHOOD.
@@ -4541,7 +4543,7 @@ States mustering officer, all the time I was in the State service.  He
 was a native of Illinois and well acquainted with most of the prominent
 men in the State.  I was a carpet-bagger and knew but few of them.
 While I was on duty at Springfield the senators, representatives in
-Congress, ax-governors and the State legislators were nearly all at the
+Congress, ex-governors and the State legislators were nearly all at the
 State capital.  The only acquaintance I made among them was with the
 governor, whom I was serving, and, by chance, with Senator S. A.
 Douglas.  The only members of Congress I knew were Washburne and Philip
@@ -25326,7 +25328,7 @@ GRANT, Lieutenant-General.
 ### THE END
 
 __________
-FOOTNOTES
+### FOOTNOTES
 
 (*1) Afterwards General Gardner, C.S.A.
 

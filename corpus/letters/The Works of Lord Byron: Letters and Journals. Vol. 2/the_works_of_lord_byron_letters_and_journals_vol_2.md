@@ -4,10 +4,6 @@
 
 ---
 
-### THE WORKS OF
-
-LORD BYRON.
-
 A NEW, REVISED AND ENLARGED EDITION,
 WITH ILLUSTRATIONS.
 
@@ -88,7 +84,7 @@ of his contemporaries more outspoken, Moore felt himself more justified
 in omitting passages which referred to persons who were still living in
 1830. From 1816 onwards, it will be found that he has transferred
 passages from one letter to another, or printed two letters as one, and
-'vice versa', or made such large omissions as to shorten letters, in
+'vice versâ', or made such large omissions as to shorten letters, in
 some instances, by a third or even a half. No collation with the
 originals has ever been attempted, and the garbled text which Moore
 printed is the only text at present available for an edition of the most
@@ -476,7 +472,7 @@ Genealogical Account of the Wedderburn Family' (privately printed,
 1819). He was with Byron, possibly at Cambridge, certainly at Athens in
 1810. He married, in 1810, Lady Frances Caroline Annesley, daughter of
 Arthur, first Earl of Mountnorris and eighth Viscount Valencia. He was
-knighted in 1822. Byron, in 1813, lent him L1000. Lady Frances died in
+knighted in 1822. Byron, in 1813, lent him £1000. Lady Frances died in
 1837, and her husband in 1840.
 
 Moore ('Memoirs, Journals, etc.', vol. iii. p. 112) mentions dining with
@@ -498,7 +494,7 @@ his thoughts at that moment."
 
 Moore also adds ('ibid'., p. 292),
 
-"W. W. owes Lord Byron, he says, L1000, and does not seem to have the
+"W. W. owes Lord Byron, he says, £1000, and does not seem to have the
 slightest intention of paying him."
 
 Lady Frances was the lady to whom Byron seriously devoted himself in
@@ -514,7 +510,7 @@ pretty when she had more of the freshness of youth, though she is
 still but five or six and twenty; but she looks faded already" (1819).
 
 In the Court of Common Pleas, February 16, 1816, the libel action of
-'Webster v. Baldwin' was heard. The plaintiff obtained L2000 in
+'Webster v. Baldwin' was heard. The plaintiff obtained £2000 in
 damages for a libel charging Lady Frances and the Duke of Wellington
 with adultery.]
 
@@ -560,7 +556,7 @@ another pamphlet, my dear W., before; but pray do not waste your time
 and eloquence in expostulation, because it will do neither of us any
 good, but decide--content or 'not' content. The best thing you
 can do for the Tutor you speak of will be to send him in your Vis
-(with the lining) to 'the U--Niversity of Goettingen.' How can you
+(with the lining) to 'the U--Niversity of Göttingen.' How can you
 suppose (now that my own Bear is dead) that I have any situation for a
 German genius of this kind, till I get another, or some children? I am
 infinitely obliged by your invitations, but I can't pay so high for a
@@ -692,7 +688,7 @@ astonishing how little he was known; and at Cambridge no one thought or
 heard of such a man till his death rendered all notice useless. For my
 own part, I should have been most proud of such an acquaintance: his
 very prejudices were respectable. There is a sucking epic poet at
-Granta, a Mr. Townsend, [5] 'protege' of the late Cumberland. Did you
+Granta, a Mr. Townsend, [5] 'protégé' of the late Cumberland. Did you
 ever hear of him and his 'Armageddon'? I think his plan (the man I don't
 know) borders on the sublime: though, perhaps, the anticipation of the
 "Last Day" (according to you Nazarenes) is a little too daring: at
@@ -1121,7 +1117,7 @@ we are miserable enough in this life, without the absurdity of
 speculating upon another. If men are to live, why die at all? and if
 they die, why disturb the sweet and sound sleep that "knows no waking"?
 
-"Post Mortem nihil est, ipsaque Mors nihil ... quaeris quo jaceas post
+"Post Mortem nihil est, ipsaque Mors nihil ... quæris quo jaceas post
 obitum loco? Quo _non_ Nata jacent." [2]
 
 As to revealed religion, Christ came to save men; but a good Pagan will
@@ -1140,7 +1136,7 @@ to sustain me. I looked to death as a relief from pain, without a wish
 for an after-life, but a confidence that the God who punishes in this
 existence had left that last asylum for the weary.
 
-[Greek: Hon ho theos agapaei apothnaeskei neos.] [3]
+[Greek: Hon ho theòs agapáei apothnáeskei néos.] [3]
 
 I am no Platonist, I am nothing at all; but I would sooner be a
 Paulician, Manichean, Spinozist, Gentile, Pyrrhonian, Zoroastrian, than
@@ -1283,20 +1279,20 @@ seqq.):
 "Post mortem nihil est, ipsaque mors nihil.
 ........
 ........
-Quaeris, quo jaceas post obitum loco?
+Quæris, quo jaceas post obitum loco?
 Quo non nata jacent."]
 
-[Footnote 3: The sentiment is found in one of the [Greek: monostichoi]
-of Menander ('Menandri et Philemonis reliquiae,' edidit Augustus Meineke,
-p. 48). It is thus quoted by Stobaeus ('Florilegium', cxx. 8) as an
+[Footnote 3: The sentiment is found in one of the [Greek: monóstichoi]
+of Menander ('Menandri et Philemonis reliquiæ,' edidit Augustus Meineke,
+p. 48). It is thus quoted by Stobæus ('Florilegium', cxx. 8) as an
 iambic:
 
-[Greek: Hon oi theoi philousin apothnaeskei neos.]
+[Greek: Hon oi theoì philoûsin apothnáeskei néos.]
 
-In the 'Comicorum Graecorum Sententiae, id est' [Greek: gnomai](p. 219,
+In the 'Comicorum Græcorum Sententiæ, id est' [Greek: gnômai](p. 219,
 ed, Henricus Stephanus, MDLXIX.) it is quoted as a leonine verse:
 
-[Greek: Hon gar philei theos apothnaeskei neos.]
+[Greek: Hon gàr philei theòs apothnáeskei néos.]
 
 Plautus gives it thus ('Bacchides', iv. 7):
 
@@ -1312,20 +1308,20 @@ vol. ii. p. 93; and Purchas, ed. 1645, vol. ii. p. 1747), to designate
 the Buddhist monks of Ceylon and the Indo-Chinese countries. Pallegoix
 ('Description du Royaume Thai ou Siam', vol. ii. p. 23) says,
 
-"Les Europeens les ont appeles 'talapoins', probablement du nom de
-l'eventail qu'ils tiennent a la main, lequel s'appelle 'talapat', qui
+"Les Européens les ont appelés 'talapoins', probablement du nom de
+l'éventail qu'ils tiennent à la main, lequel s'appelle 'talapat', qui
 signifie 'feuille de palmier'."
 
-Possibly Byron knew the word through Voltaire ('Dial.' xxii., 'Andre des
-Couches a Siam');
+Possibly Byron knew the word through Voltaire ('Dial.' xxii., 'André des
+Couches à Siam');
 
 "'A. des C.': Combien avez-vous de soldats?
 
-'Croutef.':   Quatre-vingt mille, fort mediocrement payes.
+'Croutef.':   Quatre-vingt mille, fort médiocrement payés.
 
 'A. des C.':  Et de talapoins?
 
-'Cr.':        Cent vingt-mille, tous faineans et tres riches," etc.]
+'Cr.':        Cent vingt-mille, tous fainéans et trés riches," etc.]
 
 *       *       *       *       *
 
@@ -1419,7 +1415,7 @@ I should feel affronted. As I accept your compliments, it is but fair I
 should give equal or greater credit to your objections, the more so as I
 believe them to be well founded. With regard to the political and
 metaphysical parts, I am afraid I can alter nothing; but I have high
-authority for my Errors in that point, for even the 'AEneid' was a
+authority for my Errors in that point, for even the 'Æneid' was a
 _political_ poem, and written for a _political_ purpose; and as to my
 unlucky opinions on Subjects of more importance, I am too sincere in
 them for recantation. On Spanish affairs I have said what I saw, and
@@ -1604,7 +1600,7 @@ Than all the gems of Samarcand."]
 only a popular but a fashionable resort, though fireworks and
 masquerades threatened to expel musicians and vocalists. At this time
 the principal singers were Charles Dignum (1765-1827); Maria Theresa
-Bland (1769-1838), a famous ballad-singer; Rosoman Mountain, 'nee'
+Bland (1769-1838), a famous ballad-singer; Rosoman Mountain, 'née'
 Wilkinson (1768-1841), whose husband was a violinist and leader at
 Vauxhall.--('The London Pleasure Gardens', pp. 286-326.)]
 
@@ -1618,7 +1614,7 @@ performers. The Ode is given in the 'Annual Register' for 1811, pp.
 593-596. The rival Ode, which Byron preferred, was by Walter Rodwell
 Wright.]
 
-[Footnote 4: For Walter Rodwell Wright, author of 'Horae Ionicae' (1809),
+[Footnote 4: For Walter Rodwell Wright, author of 'Horæ Ionicæ' (1809),
 see Letters, vol. i. p. 336, 'note' 1. [Footnote 2 of Letter 167]]
 
 *       *       *       *       *
@@ -1870,8 +1866,8 @@ Sieur Comus, Jonas, etc. (1784).]
 
 [Footnote 5: 'Candide, ou l'Optimisms' (chapitre xxx.):
 
-"et Pangloss disait quelquefois a Candide; Tous les evenements sont
-enchaines dans le meilleur des mondes possibles," etc.
+"et Pangloss disait quelquefois à Candide; Tous les événements sont
+enchainés dans le meilleur des mondes possibles," etc.
 
 Hodgson replies (September 18, 1811):
 
@@ -1982,12 +1978,12 @@ Newstead Abbey, Sept. 16, 1811.
 
 DEAR SIR,--I send you a 'motto':
 
-"L'univers est une espece de livre, dont on n'a lu que la premiere
-page quand on n'a vu que son pays. J'en ai feuillete un assez grand
-nombre, que j'ai trouve egalement mauvaises. Cet examen ne m'a point
-ete infructueux. Je haissais ma patrie. Toutes les impertinences des
-peuples divers, parmi lesquels j'ai vecu, m'ont reconcilie avec elle.
-Quand je n'aurais tire d'autre benefice de mes voyages que celui-la,
+"L'univers est une espèce de livre, dont on n'a lu que la première
+page quand on n'a vu que son pays. J'en ai feuilleté un assez grand
+nombre, que j'ai trouvé également mauvaises. Cet examen ne m'a point
+été infructueux. Je haïssais ma patrie. Toutes les impertinences des
+peuples divers, parmi lesquels j'ai vécu, m'ont réconcilié avec elle.
+Quand je n'aurais tiré d'autre bénéfice de mes voyages que celui-là,
 je n'en regretterais ni les frais, ni les fatigues."
 
 "Le Cosmopolite." [1]
@@ -2002,10 +1998,10 @@ Good morning! I won't take up your time.
 Yours ever,
 BYRON.
 
-[Footnote 1: Fougeret de Monbron, born at Peronne, served in the 'Gardes
+[Footnote 1: Fougeret de Monbron, born at Péronne, served in the 'Gardes
 du Corps', but abandoned the sword for the pen, and published 'Henriade
-Travestie' (1745); 'Preservatif Centre l'Anglomanie' (1787); and 'Le
-Cosmopolite' (1750). His novels, 'Margot la Ravaudeuse, Therlse
+Travestie' (1745); 'Préservatif Centre l'Anglomanie' (1787); and 'Le
+Cosmopolite' (1750). His novels, 'Margot la Ravaudeuse, Thérlsé
 Philosophe', and others, appeared under the name of Fougeret. He died in
 1761. In that year was published in London an edition of 'Le
 Cosmopolite, ou le Citoyen du Monde', par Mr. de Monbron, with the
@@ -2013,7 +2009,7 @@ motto, "Patria est ubicunque est bene" (Cic. 5, Tusc. 37).
 
 Byron's quotation is the opening paragraph of the book. The author, who
 had travelled in England, returns to France a complete "Jacques
-Rot-de-Bif." He then visits Holland, the Low Countries, Constantinople,
+Rôt-de-Bif." He then visits Holland, the Low Countries, Constantinople,
 Italy, Spain, Portugal, and England a second time. He finds that the
 charm has vanished, and that the English are no better than their
 neighbours. It is a cynical little book, abounding in such sayings as.
@@ -2095,7 +2091,7 @@ last work. Its 'alacrity of sinking' was so great, that it has never
 since been heard of; though some maintain that it is at this moment
 concealed at Alderman Birch's pastry-premises, Cornhill. Be this as it
 may, the coroner's inquest brought in a verdict of ''Felo de
-Bibliopola'' against a quarto unknown,' and circumstantial evidence
+Bibliopolâ'' against a quarto unknown,' and circumstantial evidence
 being since strong against the 'Curse of Kehama' (of which the above
 words are an exact description), it will be tried by its peers next
 session, in Grub Street--Arthur, Alfred, Davideis, Richard Coeur de
@@ -2112,7 +2108,7 @@ Newstead Abbey, Sept. 17, 1811.
 
 Dear Sir,--I have just discovered some pages of observations on the
 modern Greeks, written at Athens by me, under the title of 'Noctes
-Atticae'. They will do to _cut up_ into notes, and to be _cut up_
+Atticæ'. They will do to _cut up_ into notes, and to be _cut up_
 afterwards, which is all that notes are generally good for. They were
 written at Athens, as you will see by the date.
 
@@ -2153,7 +2149,7 @@ specimens of modern Greek from their New Testament, a comedy of
 Goldoni's translated, _one scene_, a prospectus of a friend's book, and
 perhaps a song or two, _all_ in Romaic, besides their Pater Noster; so
 there will be enough, if not too much, with what I have already sent.
-Have you received the "Noctes Atticae"?
+Have you received the "Noctes Atticæ"?
 
 I sent also an annotation on Portugal. Hobhouse is also forthcoming. [1]
 
@@ -2269,7 +2265,7 @@ Pauw, [1] Thornton, [1] Lord Elgin, [2] Spain, Portugal, the 'Edinburgh
 Review', [3] travellers, Painters, Antiquarians, and others, so you see
 what a dish of Sour Crout Controversy I shall prepare for myself. It
 would not answer for me to give way, now; as I was forced into
-bitterness at the beginning, I will go through to the last. 'Vae Victis'!
+bitterness at the beginning, I will go through to the last. 'Væ Victis'!
 If I fall, I shall fall gloriously, fighting against a host.
 
 'Felicissima Notte a Voss. Signoria,'
@@ -2419,7 +2415,7 @@ Mountnorris (1769-1844), see 'Poems', ed. 1898, vol. i. p. 378, and
 
 [Footnote 4: The suit of 'Dalrymple' v. 'Dalrymple' was tried before Sir
 William Scott, in the Consistory Court, Doctors' Commons, July 16, 1811.
-The suit was brought by Mrs. Dalrymple ('nee' Joanna Gordon) against
+The suit was brought by Mrs. Dalrymple ('née' Joanna Gordon) against
 Captain John William Henry Dalrymple. By Scottish law he was held to
 have been married to Miss Gordon, and his subsequent marriage with Miss
 Manners, sister of the Duchess of St. Albans, was held to be illegal.]
@@ -2896,7 +2892,7 @@ He spoke of Moore ('ibid'., pp. 322, 323) as "a delightful companion,
 gay without being boisterous, witty without effort, comic without
 coarseness, and sentimental without being lachrymose. He reminds one of
 the fairy who, whenever she spoke, let diamonds fall from her lips. My
-'tete-a-tete' suppers with Moore are among the most agreeable
+'tête-à-tête' suppers with Moore are among the most agreeable
 impressions I retain of the hours passed in London."
 
 In July, 1806, in consequence of the article in the 'Edinburgh Review'
@@ -2921,7 +2917,7 @@ vol. i. pp. 199-208).
 
 In 'English Bards, etc.', lines 466, 467, and his 'note', Byron made
 merry over "Little's leadless pistol," with the result that, when the
-second edition oL the satire was published, with his name attached,
+second edition o£ the satire was published, with his name attached,
 Moore sent him the following letter:--
 
 "Dublin, January 1, 1810.
@@ -3340,7 +3336,7 @@ I don't know what to say about coming down to Cambridge at present, but
 live in hopes. I am so completely superannuated there, and besides feel
 it something brazen in me to wear my magisterial habit, after all my
 buffooneries, that I hardly think I shall venture again. And being now
-an [Greek: ariston men hydor] disciple I won't come within wine-shot of
+an [Greek: ariston men hydôr] disciple I won't come within wine-shot of
 such determined topers as your collegiates. I have not yet subscribed to
 Bowen. I mean to cut Harrow "_enim unquam_" as somebody classically said
 for a farewell sentence. I am superannuated there too, and, in short, as
@@ -3552,7 +3548,7 @@ seeds of vitality, the real germs of long life. The two first were
 entertaining as tellers of stories in verse; but the last, in his
 'Pleasures of Hope', obviously  had no fixed design, but when a thought
 (of course, not a very original one) came into his head, he put it down
-in couplets, and afterwards strung the 'disjecta membra' (not 'poetae')
+in couplets, and afterwards strung the 'disjecta membra' (not 'poetæ')
 together. Some of the best things in it were borrowed; for instance the
 line:
 
@@ -3582,7 +3578,7 @@ opinion of the lecture. He replied in Greek,
 "I have seen many old fools often, but such an old fool as Phormio,
 never
 
-('Multos se deliros senes s3/4pe vidisse; sed qui magis, quam Phormio,
+('Multos se deliros senes s¾pe vidisse; sed qui magis, quam Phormio,
 deliraret, vidisse neminem')"
 
 (Cicero, 'De Oratore', ii. 18).]
@@ -3740,15 +3736,15 @@ Wellington.]
 [Footnote 3: Byron's statement is incorrect. Pierre-Auguste Caron de
 Beaumarchais (1732-1799) married, in 1756, as his first wife,
 Madeleine-Catherine Aubertin, widow of the sieur Franquet. She died in
-1757. He married, in 1768, as his second wife, Genevieve-Magdaleine
-Wattebled, widow of the sieur Leveque. She died in 1770. The only
+1757. He married, in 1768, as his second wife, Geneviève-Magdaleine
+Wattebled, widow of the sieur Lévêque. She died in 1770. The only
 lawsuit which he won "before he was thirty," was that against Lepaute,
 who claimed as his own invention the escapement for watches and clocks,
 which Beaumarchais had discovered. The case was decided in favour of
 Beaumarchais in 1754. Out of his second lawsuit--with Count de la
 Blache, legatee of his patron Duverney, who died in 1770--sprang his
-action against Goezman, with which began the publication of his
-'Memoires'. (See Lomenie, 'Beaumarchais and his Times', tr. by H.S.
+action against Goëzman, with which began the publication of his
+'Mémoires'. (See Loménie, 'Beaumarchais and his Times', tr. by H.S.
 Edwards, 4 vols., London, 1855-6.)]
 
 [Footnote 4: Byron took his M. A. degree at Cambridge July 4, 1808.]
@@ -3826,10 +3822,10 @@ fourth and last novel ('Evelina', 1778; 'Cecilia', 1782; 'Camilla',
 
 "I am indescribably occupied," she writes to Dr. Burney, October 12,
 1813, "in giving more and more last touches to my work, about which I
-begin to grow very anxious. I am to receive merely L500 upon delivery
-of the MS.; the two following L500 by instalments from nine months to
+begin to grow very anxious. I am to receive merely £500 upon delivery
+of the MS.; the two following £500 by instalments from nine months to
 nine months, that is, in a year and a half from the day of
-publication. If all goes well, the whole will be L3000, but only at
+publication. If all goes well, the whole will be £3000, but only at
 the end of the sale of eight thousand copies."
 
 The book failed; but rumour magnified the sum received by the writer.
@@ -3838,7 +3834,7 @@ Byron's lines, "Weep, daughter of a royal line," writes to Samuel
 Lysons, February 17, 1814:
 
 "Come now, do send me a kind letter and tell me if Madame d'Arblaye
-gets L3000 for her book or no, and if Lord Byron is to be called over
+gets £3000 for her book or no, and if Lord Byron is to be called over
 about some verses he has written, as the papers hint"
 
 ('Autobiography, Letters, and Literary Remains', vol. ii. p. 246).]
@@ -3924,11 +3920,11 @@ determination as to Newstead, and believe me, Yours ever,
 Dudley. Byron said of him (Lady Blessington's 'Conversations with Lord
 Byron', p. 197),
 
-"Ward is one of the best-informed men I know, and, in a 'tete-a-tete',
+"Ward is one of the best-informed men I know, and, in a 'tête-à-tête',
 is one of the most agreeable companions. He has great originality,
-and, being 'tres distrait', it adds to the piquancy of his
-observations, which are sometimes somewhat 'trop naive', though always
-amusing. This 'naivete' of his is the more piquant from his being
+and, being 'très distrait', it adds to the piquancy of his
+observations, which are sometimes somewhat 'trop naïve', though always
+amusing. This 'naïveté' of his is the more piquant from his being
 really a good-natured man, who unconsciously thinks aloud. Interest
 Ward on a subject, and I know no one who can talk better. His
 expressions are concise without being poor, and terse and epigrammatic
@@ -4135,7 +4131,7 @@ BYRON.
 
 "Balnea, vina, Venus  corrumpunt corpora nostra."
 
-The words are thus given in Grueter ('Corpus Inscriptionum' (1603), p.
+The words are thus given in Grüter ('Corpus Inscriptionum' (1603), p.
 DCCCCXII. 10).]
 
 [Footnote 2: Martial (xi. lii. 16), 'Ad Julium Cerealem':
@@ -4354,7 +4350,7 @@ occasion, and with what considerate leaning towards the servant whose
 fidelity he had proved, in preference to any new liking or fancy by
 which it might be suspected he was actuated toward the other."
 
-In a MS. book written by Mrs. Heath of Newstead ('nee' Rebekah
+In a MS. book written by Mrs. Heath of Newstead ('née' Rebekah
 Beardall), it is stated that the elder Rushton had as his farm-servant
 Fletcher, afterwards Byron's valet. Byron watched Fletcher and young
 Robert Rushton ploughing, took a fancy to both, and engaged them as his
@@ -4619,7 +4615,7 @@ strumpets from the general corruption,--albeit a two months' weakness is
 better than ten years. I have one request to make, which is, never
 mention a woman again in any letter to me, or even allude to the
 existence of the sex. I won't even read a word of the feminine
-gender;--it must all be 'propria quae maribus'.
+gender;--it must all be 'propria quæ maribus'.
 
 In the spring of 1813 I shall leave England for ever. Every thing in my
 affairs tends to this, and my inclinations and health do not discourage
@@ -5103,7 +5099,7 @@ appearance 'le plus grand seigneur' of his time," succeeded his father,
 twice Lord Chamberlain to William IV., and twice Master of the Horse to
 Queen Victoria. He married, in 1804, Lady Sarah Sophia Fane, eldest
 daughter of John, tenth Earl of Westmorland, and heiress, through her
-mother, 'nee' Sarah Anne Child, of the fortune of her grandfather,
+mother, 'née' Sarah Anne Child, of the fortune of her grandfather,
 Robert Child, the banker.
 
 Lady Jersey for many years reigned supreme, by her beauty and wit, in
@@ -5166,7 +5162,7 @@ that evening"
 
 ('Life', vol. i. pp. 409, 410).
 
-Lady Jersey, whose mother-in-law, 'nee' Frances Twyden, had
+Lady Jersey, whose mother-in-law, 'née' Frances Twyden, had
 been a bitter opponent of the Princess of Wales, provoked the wrath
 of the Regent by espousing the cause of his wife. The Prince
 was determined to break off this friendship with his wife's champion,
@@ -5246,8 +5242,8 @@ I see 'tis William's boy!"
 
 The most ambitious effort in the volume is a poem, illustrated with
 pictures in water colours, such as 'L'Amour se cache sous le voile
-d'Amitie, or l'Innocence le recoit dans ses bras'; a third, in the style
-of Blake, bears the inscription 'le Desespoir met fin a ses jours'. The
+d'Amitié, or l'Innocence le recoit dans ses bras'; a third, in the style
+of Blake, bears the inscription 'le Désespoir met fin à ses jours'. The
 poem opens with the following lines:
 
 "Winged with Hope and hushed with Joy,
@@ -5287,7 +5283,7 @@ retract all your sorrow about Caro Ponsonby's marriage, for she is the
 same wild, delicate, odd, delightful person, unlike everything."
 
 Lady Caroline and William Lamb are described by Lady Elizabeth, three
-months later, as "flirting all day long 'e felice adesso'." The phrase,
+months later, as "flirting all day long 'è felice adesso'." The phrase,
 perhaps, correctly expresses Lady Caroline's conception of love as an
 episode; but no breach occurred till 1813. In the previous year, when
 Byron had suddenly risen to the height of his fame, she had refused to
@@ -5767,7 +5763,7 @@ Bury Street, St. James's, also let lodgings. One of his lodgers, Charles
 Jenkinson, afterwards Earl of Liverpool, obtained for his landlord's
 son, William Brummell, a clerkship in the Treasury. The Treasury clerk
 became so useful to Lord North that he obtained several lucrative
-offices; and, dying in 1794, left L65,000 in the hands of trustees for
+offices; and, dying in 1794, left £65,000 in the hands of trustees for
 division among his three children. The youngest of these was George
 Bryan Brummell (1788-1840), the celebrated Beau.
 
@@ -5791,8 +5787,8 @@ degree on solid foundations. He was not a mere fop, but conspicuous for
 the quiet neatness of his dress--for "a certain exquisite propriety," as
 Byron described it to Leigh Hunt--and, at a time when the opposite was
 common, for the scrupulous cleanliness of his person and his linen. An
-excellent dancer, clever at 'vers de societe', an agreeable singer, a
-talented artist, a judge of china, buhl, and other objects of 'virtu', a
+excellent dancer, clever at 'vers de société', an agreeable singer, a
+talented artist, a judge of china, buhl, and other objects of 'virtù', a
 collector of snuff-boxes, a connoisseur in canes, he had gifts which
 might have raised him above the Bond Street 'flaneur', or the idler at
 Watier's Club. Well-read in a desultory fashion, he wrote verses which
@@ -5955,7 +5951,7 @@ the deuce are they with their Pantheism? I shall never be easy till I
 ask _them_ the question. How much you have traversed! I must resume my
 seven leagued boots and journey to Palestine, which your description
 mortifies me not to have seen more than ever. I still sigh for the
-AEgean. Shall not you always love its bluest of all waves, and brightest
+Ægean. Shall not you always love its bluest of all waves, and brightest
 of all skies? You have awakened all the gipsy in me. I long to be
 restless again, and wandering; see what mischief you do, you won't allow
 gentlemen to settle quietly at home. I will not wish you success and
@@ -6022,7 +6018,7 @@ Parthenon, and, in moving it, a great part of the superstructure with
 one of the triglyphs, was thrown down by the work men whom Lord Elgin
 employed, the Disdar, who beheld the mischief done to the building,
 took his pipe out of his mouth, dropped a tear, and, in a supplicating
-tone of voice, said to Lusieri--[Greek: Telos]! I was present at the
+tone of voice, said to Lusieri--[Greek: Télos]! I was present at the
 time.
 
 "Once more I thank you for the gratification you have afforded me.
@@ -6187,7 +6183,7 @@ Harold', I have the honour to be, my Lord,
 Harold', were it only to show I have read his Pilgrimage with
 attention? 'Nuestra Dama de la Pena' means, I suspect, not our Lady of
 Crime or Punishment, but our Lady of the Cliff; the difference is, I
-believe, merely in the accentuation of 'pena'."
+believe, merely in the accentuation of 'peña'."
 
 To Scott Byron replied with the letter given in the text. Scott's
 answer, which followed in due course, will be found in Appendix V.
@@ -6633,7 +6629,7 @@ appeared in 1812. The other work referred to by Byron is probably Penn's
 
 [Footnote 2: Lucien Buonaparte (1775-1840), Prince of Canino, since 1810
 a landed proprietor in Shropshire, wrote an epic poem, 'Charlemagne, ou
-l'Eglise delivree'. It was translated (1815) by Dr. Butler of Shrewsbury
+l'Église délivrée'. It was translated (1815) by Dr. Butler of Shrewsbury
 and Francis Hodgson.]
 
 [Footnote 3: 'The Anti-Jacobin Review' criticized 'Childe Harold' in
@@ -7382,7 +7378,7 @@ much indebted to you for thinking of me at all, and can't spare you even
 from amongst the superabundance of friends with whom you suppose me
 surrounded.
 
-You heard that Newstead [1] is sold--the sum L140,000; sixty to remain
+You heard that Newstead [1] is sold--the sum £140,000; sixty to remain
 in mortgage on the estate for three years, paying interest, of course.
 Rochdale is also likely to do well--so my worldly matters are mending. I
 have been here some time drinking the waters, simply because there are
@@ -7424,11 +7420,11 @@ Ever yours most affectionately,
 [Greek: Mpairon.]
 
 [Footnote 1: Newstead was put up at Garraway's in the autumn of 1812;
-but only L90,000 were bid, and the property was therefore withdrawn.
+but only £90,000 were bid, and the property was therefore withdrawn.
 Subsequently it was privately sold to a Mr. Claughton, who found himself
-unable to complete the purchase, and forfeited L25,000 on the contract.
+unable to complete the purchase, and forfeited £25,000 on the contract.
 Newstead was eventually sold, in November, 1817, to Colonel Wildman,
-Byron's Harrow schoolfellow, for L94,500.]
+Byron's Harrow schoolfellow, for £94,500.]
 
 [Footnote 2: For Lady Jersey, see p. 112, 'note' 1 [Footnote 1 of Letter
 230]. The following passage, from Byron's 'Detached Thoughts', gives an
@@ -7572,7 +7568,7 @@ sports of Venus, or, rather, of Hymen--
 
 'Cui placet impares
 Formas atque animos sub juga ahenea
-Saevo mittere cum joco.'
+Sævo mittere cum joco.'
 
 "It has been said that she was, in some measure, forced into the
 match. Had she been united to a man whom she had loved, esteemed, and
@@ -7693,7 +7689,7 @@ Now, one word as to the Committee--how could they resolve on a rough
 copy of an _Address_ never sent in, unless you had been good enough to
 retain in memory, or on paper, the thing they have been good enough to
 adopt? By the by, the circumstances of the case should make the
-Committee less _avidus gloriae_, for all praise of them would look plaguy
+Committee less _avidus gloriæ_, for all praise of them would look plaguy
 suspicious. If necessary to be stated at all, the simple facts bear them
 out. They surely had a right to act as they pleased. My sole object is
 one which, I trust, my whole conduct has shown; viz. that I did nothing
@@ -7725,7 +7721,7 @@ printed Address, were not retained.]
 New Theatrum Poetarum' (1812), by James (1775-1839) and Horace
 (1779-1849) Smith. "Cui Bono?" the parody on Byron, is the joint
 composition of James and Horace. The manuscript was offered to Murray
-for L20, but declined by him. It was afterwards published by John
+for £20, but declined by him. It was afterwards published by John
 Miller, of Bow Street, Covent Garden, who also published 'Horace in
 London'.]
 
@@ -7915,7 +7911,7 @@ Moore', vol. viii. p. 123), says,
 
 "Poor Byron! what I hear and read of his prologue makes me very angry.
 Of such value is public favour! So a man is to be tried by a copy of
-verses thrown off perhaps at hazard, and 'invita Minerva!'"]
+verses thrown off perhaps at hazard, and 'invitâ Minervâ!'"]
 
 *       *       *       *       *
 
@@ -7943,7 +7939,7 @@ Mrs. M[assingberd] [2] is dead, and I would wish something settled for
 the Daughter who is still responsible. Will you give a glance into that
 business, and if possible first settle something about the Annuities.
 
-I shall perhaps draw within a L100 next week, but I will delay for your
+I shall perhaps draw within a £100 next week, but I will delay for your
 answer on C.'s business.
 
 Ever yours, sincerely and affectionately,
@@ -7959,7 +7955,7 @@ Idleness, in the mean time.
 [Footnote 1: Deardon was the lessee of the Rochdale coal-pits.
 
 "When Mr. France was here," writes Mrs. Byron to Hanson, July 13, 1811
-(Koelbing's 'Englische Studien', vol. xxv. p. I53), "he told me there
+(Kölbing's 'Englische Studien', vol. xxv. p. I53), "he told me there
 had been an injunction procured to prevent Deardin from working the
 Coal Pits that was in dispute between Lord Byron and him, but since
 France was here, there has been a Man from Lancashire who says they
@@ -7994,7 +7990,7 @@ in the next room till the papers were signed, Mrs. M[assingberd]
 having stated that the parties wished him to be kept out of sight
 during the business, and wished to avoid even mentioning his name.
 Mrs. M[assingberd] deducted the interest for two years and a half, and
-L100 for Howard's papers."
+£100 for Howard's papers."
 
 Two other Annuities were effected, in both of which Mrs. Massingberd
 figured as a security, and in one the manager of Dorant's Hotel. It was
@@ -8206,12 +8202,12 @@ B.
 
 P.S.--I am at _Lord Oxford's_, Eywood, as above.
 
-[Footnote 1: The bill was Byron's for L1500, and the enclosure ran as
+[Footnote 1: The bill was Byron's for £1500, and the enclosure ran as
 follows:
 
 "Lord Byron.
 
-"A Bill for L1500, drawn by Scrope B. Davies, lies due at Sir _James
+"A Bill for £1500, drawn by Scrope B. Davies, lies due at Sir _James
 Esdaile_ and Co's., No. 21, _Lombard-Street_.
 
 "All Drafts intended for the Payment of Bills, to be brought before
@@ -8528,7 +8524,7 @@ times having been decidedly so."]
 of Mr. Jonathan Wild' (Bk. III. chap. viii.) and in
 
 "a dialogue matrimonial, which passed between Jonathan Wild, Esquire,
-and Laetitia his wife" ('nee' Laetitia Snap), "Laetitia asks, 'But
+and Laetitia his wife" ('née' Laetitia Snap), "Laetitia asks, 'But
 pray, Mr. Wild, why b--ch? Why did you suffer such a word to escape
 you?'"]
 
@@ -8788,7 +8784,7 @@ B.
 March 25, 1813.
 
 I enclose you a draft for the usurious interest due to Lord
-B[oringdon]'s _protege_;--I also could wish you would state thus much
+B[oringdon]'s _protégé_;--I also could wish you would state thus much
 for me to his Lordship. Though the transaction speaks plainly in itself
 for the borrower's folly and the lender's usury, it never was my
 intention to _quash_ the demand, as I _legally_ might, nor to withhold
@@ -8955,7 +8951,7 @@ other animating enough upon great days.
 
 "I have heard that when Grattan made his first speech in the English
 Commons, it was for some minutes doubtful whether to laugh at or cheer
-him. The _debut_ of his predecessor, Flood, had been a complete
+him. The _débût_ of his predecessor, Flood, had been a complete
 failure, under nearly similar circumstances. But when the ministerial
 part of our senators had watched Pitt (their thermometer) for the cue,
 and saw him nod repeatedly his stately nod of approbation, they took
@@ -8970,7 +8966,7 @@ question, but coincided in the general admiration of his eloquence.
 1811-12, I was much taken with the portly remains of his fine figure,
 and the still acute quickness of his conversation. It was _he_ who
 silenced Flood in the English House by a crushing reply to a hasty
-_debut_ of the rival of Grattan in Ireland. I asked Courtenay (for I
+_débût_ of the rival of Grattan in Ireland. I asked Courtenay (for I
 like to trace motives) if he had not some personal provocation; for
 the acrimony of his answer seemed to me, as I read it, to involve it.
 Courtenay said 'he had; that, when in Ireland (being an Irishman), at
@@ -9185,7 +9181,7 @@ the most fearless enlighteners of the public mind" (Dowden's 'Life of
 Shelley', vol. i. p. 113).
 
 In March, 1812, the 'Morning Post' printed a poem, speaking of the
-Prince Regent as the "Maecenas of the Age," the "Exciter of Desire," the
+Prince Regent as the "Mæcenas of the Age," the "Exciter of Desire," the
 "Glory of the People," an "Adonis of Loveliness," etc. The 'Examiner'
 for March 12, 1812, thus translated this adulation into "the language of
 truth:"
@@ -9212,7 +9208,7 @@ declared, and our security lies only in their shame.'"
 
 For this libel John and Leigh Hunt were convicted in the Court of King's
 Bench on December 9, 1812. In the following February they were sentenced
-to two years' imprisonment and a fine of L500 a-piece. John was
+to two years' imprisonment and a fine of £500 a-piece. John was
 imprisoned in Coldbath-fields, Leigh in the Surrey County Gaol. They
 were released on February 2 or 3, 1815.
 
@@ -9934,7 +9930,7 @@ Yours, etc.
 
 "'And ah! what verse can grace thy stately mien,
 Guide of the world, preferment's golden queen,
-Neckar's fair daughter, Stael the 'Epicene'!
+Neckar's fair daughter, Staël the 'Epicene'!
 Bright o'er whose flaming cheek and pumple nose
 The bloom of young desire unceasing glows!
 Fain would the Muse--but ah! she dares no more,
@@ -9943,7 +9939,7 @@ Sad Quatremer, the bold presumption checks,
 Forbid to question thy ambiguous sex.'
 
 "These lines contain the Secret History of Quatremer's deportation. He
-presumed, in the Council of Five Hundred, to arraign Madame de Stael's
+presumed, in the Council of Five Hundred, to arraign Madame de Staël's
 conduct, and even to hint a doubt of her sex. He was sent to 'Guyana'.
 The transaction naturally brings to one's mind the dialogue between
 Falstaff and Hostess Quickly in Shakespeare's 'Henry IV'."
@@ -9953,10 +9949,10 @@ of the Anti-Jacobin', pp. 282, 283).
 
 Anne Louise Germaine Necker (1766-1817), only child of the Minister
 Necker and his wife Suzanne Curchod, Gibbon's early love, married, in
-1786, the Swedish Ambassador Baron de Stael Holstein, who died in 1802.
+1786, the Swedish Ambassador Baron de Staël Holstein, who died in 1802.
 She married, as her second husband, in 1811, M. de Rocca, a young French
 officer, who had been severely wounded in Spain, but survived her by a
-year (Madame de Recamier, 'Souvenirs', vol. i. p. 272). Her book, 'De
+year (Madame de Récamier, 'Souvenirs', vol. i. p. 272). Her book, 'De
 l'Allemagne', seized and destroyed by Napoleon, was brought out in June,
 1813, by John Murray. Byron thought her
 
@@ -9977,7 +9973,7 @@ countenance an habitual gaiety. Her eye was full, dark, and
 expressive; and when she declaimed, which was almost whenever she
 spoke, she looked eloquent, and one forgot that she was plain."
 
-Madame de Stael
+Madame de Staël
 
 "did not affect to conceal her preference for the society of men to
 that of her own sex,"
@@ -9992,7 +9988,7 @@ her own dress, a loose spencer with a bare neck"
 Robinson ('Diary', 1804).
 
 "On the 28th of January," he writes, "I first waited on Madame de
-Stael. I was shown into her bedroom, for which, not knowing Parisian
+Staël. I was shown into her bedroom, for which, not knowing Parisian
 customs, I was unprepared. She was sitting, most decorously, 'in'
 her bed, and writing. She had her night-cap on, and her face was not
 made up for the day. It was by no means a captivating spectacle; but I
@@ -10002,7 +9998,7 @@ benignantly on me."
 Of her political opinions Sir John Bowring ('Autobiographical
 Recollections', pp. 375, 376) has left a sketch.
 
-"Madame de Stael was a perfect aristocrat, and her sympathies were
+"Madame de Staël was a perfect aristocrat, and her sympathies were
 wholly with the great and prosperous. She saw nothing in England but
 the luxury, stupidity, and pride of the Tory aristocracy, and the
 intelligence and magnificence of the Whig aristocracy. These latter
@@ -10018,14 +10014,14 @@ be brought to her. Among them was one from the Duc de Richelieu.
 though I die for all the world, I live for 'him'.'"
 
 Napoleon's hatred of her was intense. "Do not allow that jade, Madame de
-Stael," he writes to Fouche, December 31, 1806 ('New Letters of Napoleon
+Staël," he writes to Fouché, December 31, 1806 ('New Letters of Napoleon
 I.', p. 35), "to come near Paris." Again, March 15, 1807 ('ibid.', p.
-39), "You are not to allow Madame de Stael to come within forty leagues
+39), "You are not to allow Madame de Staël to come within forty leagues
 of Paris. That wicked schemer ought to make up her mind to behave
 herself at last." In a third letter, April 19, 1807 ('ibid.', p. 40), he
 speaks of her as "paying court, one day to the great--a patriot, a
-democrat, the next!... a fright, ... a worthless woman" (Leon Lecestre's
-'Lettres inedites de Napoleon I'er', 2nd ed. vol. i. pp. 84, 88, 93).]
+democrat, the next!... a fright, ... a worthless woman" (Léon Lecestre's
+'Lettres inédites de Napoléon I'er', 2nd ed. vol. i. pp. 84, 88, 93).]
 
 [Footnote 2:
 
@@ -10133,7 +10129,7 @@ precision, and is so much interested in conversation, that his
 excitement amounts to nervous impatience, and keeps him in constant
 motion."
 
-Davy married, in 1812, a rich widow, Jane Aprecce, 'nee' Kerr
+Davy married, in 1812, a rich widow, Jane Aprecce, 'née' Kerr
 (1780-1855). The marriage brought him wealth; but it also, it is said,
 impaired the simplicity of his character, and made him ambitious of
 social distinction. Miss Berry ('Journal', vol. ii. p. 535) supped with
@@ -10141,7 +10137,7 @@ Lady Davy in May, 1813, to meet the Princess of Wales, and notes that
 among the other guests was Byron. Lady Davy, who was so dark a brunette
 that Sydney Smith said she was as brown as a dry toast, was for many
 years a prominent figure in the society of London and Rome. It was of
-her that Madame de Stael said that she had "all Corinne's talents
+her that Madame de Staël said that she had "all Corinne's talents
 without her faults or extravagances." Ticknor, who called on her in
 June, 1815,
 
@@ -10293,7 +10289,7 @@ Remember you must edit my posthumous works, with a Life of the Author,
 for which I will send you Confessions, dated "Lazaretto," Smyrna, Malta,
 or Palermo--one can die any where.
 
-There is to be a thing on Tuesday ycleped a national fete [3]. The
+There is to be a thing on Tuesday ycleped a national fête [3]. The
 Regent and----are to be there, and every body else, who has shillings
 enough for what was once a guinea. Vauxhall is the scene--there are six
 tickets issued for the modest women, and it is supposed there will be
@@ -10338,11 +10334,11 @@ But the letter is destroyed.]
 
 [Footnote 3: The 'Morning Chronicle' for July 12 contains the
 announcement that "the Prince Regent has projected a 'Grand National
-Fete' in honour of the battle of Vittoria. It is to be held at Vauxhall
-Gardens." The 'fete' was held on Tuesday, July 20, beginning with a
+Fête' in honour of the battle of Vittoria. It is to be held at Vauxhall
+Gardens." The 'fête' was held on Tuesday, July 20, beginning with a
 banquet, at which such toasts were drunk as "The Marquis of Wellington,"
 "Sir Thomas Graham and the other officers engaged," "The Spanish Armies
-and the brave Guerillas." The 'baton' of Marshal Jourdan was "disposed
+and the brave Guerillas." The 'báton' of Marshal Jourdan was "disposed
 among the plate, so as to be obvious to all." The proceedings ended with
 illuminations and dancing.]
 
@@ -10525,8 +10521,8 @@ for a day.]
 
 "I liked the Dandies," says Byron, in his 'Detached Thoughts'; "they
 were always very civil to _me_, though in general they disliked
-literary people, and persecuted and mystified Madme. de Stael, Lewis,
-Horace Twiss, and the like, damnably. They persuaded Madme. de Stael
+literary people, and persecuted and mystified Madme. de Staël, Lewis,
+Horace Twiss, and the like, damnably. They persuaded Madme. de Staël
 that Alvanley had a hundred thousand a year, etc., etc., till she
 praised him to his _face_ for his _beauty!_ and made a set at him for
 Albertine ('Libertine', as Brummell baptized her, though the poor girl
@@ -10546,8 +10542,8 @@ P[ierreoint?], if I err not."]
 
 [Footnote 5: Sir James Mackintosh (1765-1832), after studying medicine,
 was called to the English Bar in 1795. Originally a supporter of the
-French Revolution, he answered Burke's 'Reflections' with his 'Vindiciae
-Gallicae' (1791). He is "Mr. Macfungus" in the 'Anti-Jacobin's' account
+French Revolution, he answered Burke's 'Reflections' with his 'Vindiciæ
+Gallicæ' (1791). He is "Mr. Macfungus" in the 'Anti-Jacobin's' account
 of the "Meeting of the Friends of Freedom." But his revolutionary
 sympathies rapidly cooled, and he publicly disavowed them in his
 'Introductory Discourse on the Study of the Law of Nature and Nations'
@@ -10687,7 +10683,7 @@ impressions of Sheridan:
 sort of liking for me, and never attacked me, at least to my face, as
 he did every body else--high names, and wits, and orators, some of
 them poets also. I have seen him cut up Whitbread, quiz Madame de
-Stael, annihilate Colman, and do little less by some others (whose
+Staël, annihilate Colman, and do little less by some others (whose
 names, as friends, I set not down) of good fame and ability. Poor
 fellow! he got drunk very thoroughly and very soon. It occasionally
 fell to my lot to pilot him home--no sinecure, for he was so tipsy
@@ -10965,7 +10961,7 @@ second article. The numbers are still in the Leith smack--_pray which
 way is the wind?_ The said article is so very mild and sentimental, that
 it must be written by Jeffrey _in love_ [4];--you know he is gone to
 America to marry some fair one, of whom he has been, for several
-_quarters, eperdument amoureux_. Seriously--as Winifred Jenkins [5]
+_quarters, éperdument amoureux_. Seriously--as Winifred Jenkins [5]
 says of Lismahago--Mr. Jeffrey (or his deputy) "has done the handsome
 thing by me," and I say _nothing_. But this I will say, if you and I had
 knocked one another on the head in this quarrel, how he would have
@@ -11072,12 +11068,12 @@ their being acquainted, though the house, which Byron occupied (13,
 Piccadilly Terrace) during his brief married life, was in the occupation
 of Lord Yarmouth before Byron took it from the Duchess of Devonshire.]
 
-[Footnote 2: Albert de Stael
+[Footnote 2: Albert de Staël
 
 "led an irregular life, and met a deplorable death at Doberan, a small
 city of the duchy of Mecklenburg-Schwerin, on the coast of the Baltic
 Sea, a favourite resort in summer for bathing, gambling, etc. Some
-officers of the etat-major of Bernadotte had gone to try their luck in
+officers of the état-major of Bernadotte had gone to try their luck in
 this place of play and pleasure. They quarrelled over some louis, and
 a duel immediately ensued. I well remember that the Grand-Duke Paul of
 Mecklenburg-Schwerin told me he was there at the time, and, while
@@ -11087,7 +11083,7 @@ it just in time to see the head of Albert fall, cleft by one of those
 long and formidable sabres which were carried by the Prussian cavalry."
 
 The above passage is quoted from the unpublished 'Souvenirs' of M.
-Pictet de Sergy, given by A. Stevens in his 'Life of Madame de Stael',
+Pictet de Sergy, given by A. Stevens in his 'Life of Madame de Staël',
 vol. ii. pp. 204, 205.]
 
 [Footnote 3: Only special copies of books published in Edinburgh came to
@@ -11228,7 +11224,7 @@ Be no more drunk, nor dry in a morning!"]
 
 [Footnote 11: With Lady Frances Wedderburn Webster.]
 
-[Footnote 12: The review of Madame de Stael's 'Germany' was by
+[Footnote 12: The review of Madame de Staël's 'Germany' was by
 Mackintosh.]
 
 *       *       *       *       *
@@ -11298,7 +11294,7 @@ you personally;--and have always regretted that you don't give us an
 _entire_ work, and not sprinkle yourself in detached pieces--beautiful,
 I allow, and quite _alone_ in our language, but still giving us a right
 to expect a _Shah Nameh_ [5] (is that the name?) as well as gazelles.
-Stick to the East;--the oracle, Stael, told me it was the only poetical
+Stick to the East;--the oracle, Staël, told me it was the only poetical
 policy. The North, South, and West, have all been exhausted; but from
 the East, we have nothing but Southey's unsaleables,--and these he has
 contrived to spoil, by adopting only their most outrageous fictions. His
@@ -11331,13 +11327,13 @@ to Major Sturgeon, "I heard of your tricks at the King of Bohemy."]
 
 "The Ode of Horace--
 
-'Natis in usum laetitiae,' etc.;
+'Natis in usum lætitiæ,' etc.;
 
 some passages of which I told him might be parodied, in allusion to
 some of his late adventures:
 
 'Quanta laboras in Charybdi!
-Digne puer meliore flamma!'"
+Digne puer meliore flammâ!'"
 
 (Moore.)]
 
@@ -11353,7 +11349,7 @@ being bloodshot, he had better change the line to "Bright as the jewel
 of Giamschid;"' which he accordingly did in the following edition"
 (Moore).
 
-In the 'Shah Nameh', Giamschid is the fourth sovereign of the ancient
+In the 'Sháh Námeh', Giamschid is the fourth sovereign of the ancient
 Persians, and ruled seven hundred years. His jewel was a green
 chrysolite, the reflection of which gives to the sky its blue-green
 colour. Byron probably changed to "ruby" on the authority of 'Vathek'
@@ -11367,16 +11363,16 @@ Giamschid, shall be hers."]
 that Moore was at work on an Oriental poem, probably 'Lalla Rookh',
 which would surpass the 'Charlemagne' of Lucien Buonaparte.]
 
-[Footnote 5: The 'Shah Nameh' is a rhymed history of Persia, in which
+[Footnote 5: The 'Sháh Námeh' is a rhymed history of Persia, in which
 occurs the famous episode of Sohrab and Rustem. It was written in thirty
-years by Abul Kasim Firdausi, the last name being given to him by Sultan
-Mahmud because he had shed over the court at Ghizni the delights of
-"Paradise." Firdausi is said to have lived about 950 to 1030. (See The
-'Shah Nameh', translated and abridged by James Atkinson.)]
+years by Abul Kásim Firdausí, the last name being given to him by Sultan
+Mahmúd because he had shed over the court at Ghizni the delights of
+"Paradise." Firdausí is said to have lived about 950 to 1030. (See The
+'Sháh Námeh', translated and abridged by James Atkinson.)]
 
 [Footnote 6: Jacques Cazotte (1720-1792) wrote 'La Patte du Chat'
 (1741); 'Mille et une Fadaises' (1742); 'Observations sur la lettre de
-Rousseau au sujet de la Musique Francaise' (1754); and other works. 'Le
+Rousseau au sujet de la Musique Française' (1754); and other works. 'Le
 Diable Amoureux' appeared in 1772. Cazotte escaped the September
 Massacres at the Abbaye in 1792, through the heroism of his daughter,
 but was executed on the twenty-fifth of the same month.]
@@ -11385,12 +11381,12 @@ but was executed on the twenty-fifth of the same month.]
 
 "I had already, singularly enough, anticipated this suggestion, by
 making the daughter of a Peri the heroine of one of my stories, and
-detailing the love adventures of her aerial parent in an episode. In
+detailing the love adventures of her aërial parent in an episode. In
 acquainting Lord Byron with this circumstance, in my answer to the
 above letter, I added, 'All I ask of your friendship is--not that you
 will abstain from Peris on my account, for that is too much to ask of
 human (or, at least, author's) nature--but that, whenever you mean to
-pay your addresses to any of these aerial ladies, you will, at once,
+pay your addresses to any of these aërial ladies, you will, at once,
 tell me so, frankly and instantly, and let me, at least, have my
 choice whether I shall be desperate enough to go on, with such a
 rival, or at once surrender the whole race into your hands, and take,
@@ -11398,15 +11394,15 @@ for the future, to Antediluvians with Mr. Montgomery'"
 
 (Moore).]
 
-[Footnote 8: Brunet, 's.v.' "Breton de la Martiniere," gives the title
-of the work: 'Moeurs, usages costumes des Othomans, et abrege de leur
+[Footnote 8: Brunet, 's.v.' "Breton de la Martinière," gives the title
+of the work: 'Moeurs, usages costumes des Othomans, et abrégé de leur
 histoire'. Par A.L. Castellan, Paris, 1812.]
 
 [Footnote 9: Maxime LXXXV.:
 
 "Nous nous persuadons souvent d'aimer les gens plus puissans que nous,
-et neanmoins c'est l'interet seul qui produit notre amitie; nous ne
-nous donnons pas a eux pour le bien que nous leur voulons faire, mais
+et néanmoins c'est l'interêt seul qui produit notre amitié; nous ne
+nous donnons pas à eux pour le bien que nous leur voulons faire, mais
 pour celui que nous en voulons recevoir."]
 
 *       *       *       *       *
@@ -11461,8 +11457,8 @@ decorous.
 
 [Footnote 1: Giovanni Battista Toderini (1728-1799) published his work
 'Della Letteratura Turchesca', at Venice in 1787. Brunet says, "Cet
-ouvrage curieux a ete traduit en Francais, par Cournand. Paris, 1789
-('De La Litterature des Turcs')."]
+ouvrage curieux a été traduit en Français, par Cournand. Paris, 1789
+('De La Littérature des Turcs')."]
 
 [Footnote 2:
 
@@ -11494,7 +11490,7 @@ Christians as his predecessor, had, of course, the barbarous Turkish
 ideas with regard to women. In consequence, and in compliance with the
 strict letter of the Mohammedan law, he ordered this girl to be sewed
 up in a sack, and thrown into the sea--as is, indeed, quite customary
-at Constantinople. As you were returning from bathing in the Piraeus,
+at Constantinople. As you were returning from bathing in the Piræus,
 you met the procession going down to execute the sentence of the
 Waywode on this unhappy girl. Report continues to say, that on finding
 out what the object of their journey was, and who was the miserable
@@ -11691,9 +11687,9 @@ etc.', in 1815.]
 
 [Footnote: Voltaire's 'Candide', ch. vii.:
 
-"On ne vous a done pas viole? on ne vous a point fendu le ventre,
-comme le philosophe Pangloss me l'avait assure? Si fait, dit la belle
-Cunegonde; mais on ne meurt pas toujours de ces deux accidents."]
+"On ne vous a done pas violé? on ne vous a point fendu le ventre,
+comme le philosophe Pangloss me l'avait assuré? Si fait, dit la belle
+Cunégonde; mais on ne meurt pas toujours de ces deux accidents."]
 
 [Footnote 3: The "false Sextus... that wrought the deed of shame," and
 violated Lucretia.]
@@ -11753,7 +11749,7 @@ the pugilist.]
 
 My dear Augusta,--I joined my friend Scrope about 8, and before eleven
 we had swallowed six bottles of his burgundy and Claret, which left him
-very unwell and me rather feverish; we were 'tete a tete'. I remained
+very unwell and me rather feverish; we were 'tête à tête'. I remained
 with him next day and set off last night for London, which I reached at
 three in the morning. Tonight I shall leave it again, perhaps for Aston
 or Newstead. I have not yet determined, nor does it much matter. As you
@@ -11971,7 +11967,7 @@ a fashionable great-coat. In his collection of snuff-boxes, one of the
 finest in England, he was supposed to have a box for every day in the
 year. Gronow ('ibid'.)
 
-"heard him, on the occasion of a delightful old light-blue Sevres box
+"heard him, on the occasion of a delightful old light-blue Sèvres box
 he was using being admired, say, in his lisping way, 'Yes, it is a
 nice summer box, but would not do for winter wear.'"
 
@@ -12114,7 +12110,7 @@ gallantry...:
 "'For though his monkey face might fail to woo her,
 Yet, ah! his monkey tricks would quite undo her.'"]
 
-[Footnote 2: In the spurious letters of AEschines (Letter x.) is a
+[Footnote 2: In the spurious letters of Æschines (Letter x.) is a
 passage which explains the allusion.
 
 "It is the custom of maidens, on the eve of their marriage, to wash in
@@ -12123,8 +12119,8 @@ formula,
 
 'Take, O Scamander, my virginity'
 
-([Greek: to epos touto hosper hieron ti epilegein, Lhabe mou
-Scamandre taen parthenian)."]
+([Greek: to èpos toûto hosper hierón ti epilégein, Lhabé mou
+Scámandre tàen parthénian)."]
 
 [Footnote 3:
 
@@ -12187,7 +12183,7 @@ Confessional.
 
 Nottingham, Octr. 10th, 1813.
 
-Dear Sir,--I am disposed to advance a loan of L1000 to James Webster
+Dear Sir,--I am disposed to advance a loan of £1000 to James Webster
 Wedderburne Webster, Esqre., of Aston Hall, York County, and request you
 will address to me _there a bond_ and _judgement_ to be signed by the
 said as soon as possible. Of Claughton's payments I know nothing
@@ -12663,7 +12659,7 @@ very, very beautiful. Lord Byron (when I met him, one day, at dinner
 at Mr. Ward's) was so kind as to promise to give me a copy of it. I
 mention this, not to save my purchase, but because I should be really
 flattered by the present. I can now say that I have read enough of
-Mad. de Stael to be highly pleased and instructed by her. The second
+Mad. de Staël to be highly pleased and instructed by her. The second
 volume delights me particularly. I have not yet finished the third,
 but am taking it with me on my journey to Liverpool."]
 
@@ -12931,7 +12927,7 @@ to repentance_ ... than time hath told you yet.' Is it so with you, or
 are you, like me, reprobate enough to look back with complacency on
 what you have done? I suppose repentance _must bring up the rear_ with
 us all; but at present I should say with old Fontenelle, _Si je
-recommencais ma carriere, je ferais tout ce que j'ai fait_."]
+recommençais ma carrière, je ferais tout ce que j'ai fait_."]
 
 [Footnote 2: Colley Cibber's 'Richard III', act v. sc. 3:
 
@@ -12995,7 +12991,7 @@ perhaps--but, nevertheless, a _lie_ in the mean time.
 
 [Footnote 1: Hodgson, now engaged to Miss Tayler, was anxious to clear
 off his father's liabilities. Byron gave him from first to last the sum
-of L1500 for the purpose. Hodgson, in a letter to his uncle, thus
+of £1500 for the purpose. Hodgson, in a letter to his uncle, thus
 describes the gift ('Memoir of Rev. F. Hodgson', vol. i. pp. 268, 269):
 
 "My noble-hearted friend, Lord Byron, after many offers of a similar
@@ -13133,7 +13129,7 @@ lines of my alteration must run:
 Blest as the call which from Medina's dome
 Invites Devotion to her Prophet's tomb, etc.
 
-If at "Mecca" the lines may stand as before. Page 45, C deg.. 2nd, 'Bride of
+If at "Mecca" the lines may stand as before. Page 45, C°. 2nd, 'Bride of
 Abydos'. Yours, B.
 
 You will find this out either by Article _Mecca, Medina_ or _Mahommed_.
@@ -13285,11 +13281,11 @@ success there), you have not been _regularly_ out for some years. No man
 stands higher,--whatever you may think on a rainy day, in your
 provincial retreat.
 
-"Aucun homme, dans aucune langue, n'a ete, peut-etre, plus
-completement le poete du coeur et le poete des femmes. Les critiques
-lui reprochent de n'avoir represente le monde ni tel qu'il est, ni tel
-qu'il doit etre; _mais les femmes repondent qu'il l'a represente tel
-qu'elles le desirent._"
+"Aucun homme, dans aucune langue, n'a été, peut-être, plus
+complètement le poëte du coeur et le poëte des femmes. Les critiques
+lui reprochent de n'avoir représenté le monde ní tel qu'il est, ni tel
+qu'il doit être; _mais les femmes répondent qu'il l'a représenté tel
+qu'elles le désirent._"
 
 I should have thought Sismondi [3] had written this for you instead of
 Metastasio.
@@ -13325,32 +13321,32 @@ Byron on the subject: 'I chose this story because one writes best
 about what one feels most, and I thought the parallel with Ireland
 would enable me to infuse some vigour into my hero's character. But to
 aim at vigour and strong feeling after 'you' is hopeless;--that region
-"was made for Caesar."'"
+"was made for Cæsar."'"
 
 (Moore).]
 
 [Footnote 2: 'Macbeth', act i. sc. 7.]
 
-[Footnote 3: 'De la Litterature du Midi de l'Europe', ed. 1813, tom. ii.
+[Footnote 3: 'De la Littérature du Midi de l'Europe', ed. 1813, tom. ii.
 p. 436.]
 
-[Footnote 4: Grimm ('Correspondance Litteraire', ed. 1813, part iii. tom
+[Footnote 4: Grimm ('Correspondance Littéraire', ed. 1813, part iii. tom
 ii. p. 126) says of Mlle. de Sommery, who died of apoplexy in 1790,
 
-"Que de gens ont la reputation d'etre mechans, avec lesquels on serait
+"Que de gens ont la réputation d'être méchans, avec lesquels on serait
 trop heureux de passer sa vie."
 
 The 'Biographie Universelle' says of her,
 
-"Elle avait du talent pour ecrire; mais elle ne l'exerca que fort tard
-.... Le premier livre qu'elle publia, n'etant plus tres jeune, fut un
-recueil de pensees detachees, dedie aux manes de Saurin, qu'elle
-intitula 'Doutes sur differentes Opinions recues dans la Societe'. Ce
-recueil eut un veritable succes."
+"Elle avait du talent pour écrire; mais elle ne l'exerça que fort tard
+.... Le premier livre qu'elle publia, n'étant plus très jeune, fut un
+recueil de pensées détachées, dédié aux mânes de Saurin, qu'elle
+intitula 'Doutes sur differentes Opinions reçues dans la Societé'. Ce
+recueil eut un véritable succés."
 
 Mlle. de Sommery also published, besides the 'Doutes' (1782), 'Lettres
-de Madame la Comtesse de L. a M. le Comte de R'. (1785); 'Lettres de
-Mlle. de Tourville a Madame la Comtesse de Lenoncourt' (1788);
+de Madame la Comtesse de L. à M. le Comte de R'. (1785); 'Lettres de
+Mlle. de Tourville à Madame la Comtesse de Lénoncourt' (1788);
 'L'Oreille, conte Asiatique' (1789).]
 
 *       *       *       *       *
@@ -13405,15 +13401,15 @@ On this poem Byron seems to have been particularly sensitive. He is
 accused of borrowing the opening lines from Mignon's song in Goethe's
 'Wilhelm Meister':
 
-"Kennst du das Land wo die Citronen bluehn?"
+"Kennst du das Land wo die Citronen blühn?"
 
 Cyrus Redding ('Yesterday and To-day', vol. ii. pp. 14, 15) suggests
 that Byron used the translation of the poem which he himself had made
 and published in 1812 or 1813.
 
-Byron was also charged with pilfering them from Madame de Stael.
+Byron was also charged with pilfering them from Madame de Staël.
 
-"Do you know de Stael's lines?" he asked Lady Blessington
+"Do you know de Staël's lines?" he asked Lady Blessington
 ('Conversations', pp. 326, 327); "for if I am a thief, she must be the
 plundered, as I don't read German and do French: yet I could almost
 swear that I never saw her verses when I wrote mine, nor do I even now
@@ -13423,10 +13419,10 @@ repeat them."
 
 "I did so," says Lady Blessington, "and they are as follows:
 
-"'Cette terre, ou les myrtes fleurissent,
-Ou les rayons des cieux tombent avec amour,
-Ou des sons enchanteurs dans les airs retentissent,
-Ou la plus douce nuit succede au plus beau jour,' etc."]
+"'Cette terre, où les myrtes fleurissent,
+Où les rayons des cieux tombent avec amour,
+Où des sons enchanteurs dans les airs retentissent,
+Où la plus douce nuit succéde au plus beau jour,' etc."]
 
 *       *       *       *       *
 
@@ -13447,7 +13443,7 @@ Send a copy _double_ to Dr. Clarke (y'e traveller) Cambrigge by y'e
 first opportunitie--and let me see you in y'e morninge y't I may mention
 certain thinges y'e which require sundrie though slight alterations.
 
-Sir, your Servitor, Biron
+Sir, your Servitor, Biroñ
 
 *       *       *       *       *
 
@@ -13577,7 +13573,7 @@ before I sail next month; can I say or do anything for you in the
 Levant? I am now in all the agonies of equipment, and full of schemes,
 some impracticable, and most of them improbable; but I mean to fly
 "freely to the green earth's end," [2] though not quite so fast as
-Milton's sprite.
+Milton´s sprite.
 
 P. S. 2nd.--I have so many things to say.--I want to show you Lord
 Sligo's letter to me detailing, as he heard them on the spot, the
@@ -13627,11 +13623,11 @@ for your own happiness.
 
 "A. I. MlLBANKE." ]
 
-[Footnote 2: The Spirit in Milton's 'Comus, a Mask' (lines 1012, 1013),
+[Footnote 2: The Spirit in Milton´s 'Comus, a Mask' (lines 1012, 1013),
 says:
 
 "I can fly, or I can run
-Quickly to the green earth's end."]
+Quickly to the green earth´s end."]
 
 *       *       *       *       *
 
@@ -13719,7 +13715,7 @@ have burnt the scenes of my commenced comedy. I have some idea of
 expectorating a romance, or rather a tale in prose;--but what romance
 could equal the events:
 
-"quaeque ipse......vidi,
+"quæque ipse......vidi,
 Et quorum pars magna fui." [2]
 
 To-day Henry Byron [3] called on me with my little cousin Eliza. She
@@ -13764,7 +13760,7 @@ make me love others, but certainly enough to hate myself.
 
 Two nights ago I saw the tigers sup at Exeter 'Change. Except Veli
 Pacha's lion in the Morea,--who followed the Arab keeper like a
-dog,--the fondness of the hyaena for her keeper amused me most. Such a
+dog,--the fondness of the hyæna for her keeper amused me most. Such a
 conversazione!--There was a "hippopotamus," like Lord Liverpool in the
 face; and the "Ursine Sloth" had the very voice and manner of my
 valet--but the tiger talked too much. The elephant took and gave me my
@@ -13781,7 +13777,7 @@ Nor pass these lips in holy silence sealed."
 
 Pope's 'Eloisa to Abelard', lines 9, 10.]
 
-[Footnote 2: Virgil, 'AEneid', ii. 5:
+[Footnote 2: Virgil, 'Æneid', ii. 5:
 
 ". ... quoeque ipse miserrima vidi
 Et quorum pars magna fui."]
@@ -13864,7 +13860,7 @@ mind--don't cry, she could not mean it'.'
 "Lewis was a good man--a clever man, but a bore--a damned bore, one
 may say. My only revenge or consolation used to be setting him by the
 ears with some vivacious person who hated bores especially--Me. de
-Stael or Hobhouse, for example. But I liked Lewis; he was a Jewel of a
+Staël or Hobhouse, for example. But I liked Lewis; he was a Jewel of a
 Man had he been better set, I don't mean _personally_, but less
 _tiresome_, for he was tedious, as well as contradictory to everything
 and everybody. Being short-sighted, when we used to ride out together
@@ -13876,7 +13872,7 @@ usual, forgetting to warn my convoy; once I led him nearly into the
 river instead of on the 'moveable' bridge which _in_commodes
 passengers; and twice did we both run against the diligence, which,
 being heavy and slow, did communicate less damage than it received in
-its leaders, who were 'terrassed' by the charge. Thrice did I lose him
+its leaders, who were 'terrasséd' by the charge. Thrice did I lose him
 in the gray of the gloaming and was obliged to bring to, to his
 distant signals of distance and distress. All the time he went on
 talking without intermission, for he was a man of many words. Poor
@@ -14101,7 +14097,7 @@ feel that I had a bad cause to support, I have left off the exercise.
 What strange tidings from that Anakim of anarchy--Buonaparte [4]!
 
 Ever since I defended my bust of him at Harrow against the rascally
-time-servers, when the war broke out in 1803, he has been a _Heros de
+time-servers, when the war broke out in 1803, he has been a _Héros de
 Roman_ of mine--on the Continent; I don't want him here. But I don't
 like those same flights--leaving of armies, etc., etc. I am sure when I
 fought for his bust at school, I did not think he would run away from
@@ -14136,19 +14132,19 @@ booby Bus. sent his translating prospectus, she subscribed. But, the
 devil prompting him to add a specimen, she transmitted him a subsequent
 answer, saying, that "after perusing it, her conscience would not permit
 her to allow her name to remain on the list of subscribblers." Last
-night, at Lord H.'s--Mackintosh, the Ossulstones, Puysegur, [9] etc.,
+night, at Lord H.'s--Mackintosh, the Ossulstones, Puységur, [9] etc.,
 there--I was trying to recollect a quotation (as _I_ think) of Stael's,
 from some Teutonic sophist about architecture. "Architecture," says this
 Macoronico Tedescho, "reminds me of frozen music." It is somewhere--but
 where?--the demon of perplexity must know and won't tell. I asked M.,
-and he said it was not in her: but Puysegur said it must be _hers_, it
+and he said it was not in her: but Puységur said it must be _hers_, it
 was so _like_. H. laughed, as he does at all "_De l'Allemagne_"--in
 which, however, I think he goes a little too far. B., I hear, contemns
 it too. But there are fine passages;--and, after all, what is a
 work--any--or every work--but a desert with fountains, and, perhaps, a
 grove or two, every day's journey? To be sure, in Madame, what we often
 mistake, and "pant for," as the "cooling stream," turns out to be the
-"_mirage_" (critice _verbiage_); but we do, at last, get to something
+"_mirage_" (criticè _verbiage_); but we do, at last, get to something
 like the temple of Jove Ammon, and then the waste we have passed is only
 remembered to gladden the contrast.
 
@@ -14192,7 +14188,7 @@ Mem. I must write to-morrow to "Master Shallow, who owes me a thousand
 pounds," [11] and seems, in his letter, afraid I should ask him for it;
 [12]--as if I would!--I don't want it (just now, at least,) to begin
 with; and though I have often wanted that sum, I never asked for the
-repayment of L10. in my life--from a friend. His bond is not due this
+repayment of £10. in my life--from a friend. His bond is not due this
 year, and I told him when it was, I should not enforce it. How often
 must he make me say the same thing?
 
@@ -14263,30 +14259,30 @@ a stone could be worshipped because a man stumbled over it."]
 Cockburn, a wine-merchant in Edinburgh and London.]
 
 [Footnote 7: The first is, perhaps, Dallas; the second probably is
-Francis Hodgson, to whom he gave, from first to last, L1500.]
+Francis Hodgson, to whom he gave, from first to last, £1500.]
 
 [Footnote 8:
 
-"L'interet est l'ame de l'amour-propre, de sorte que comme le corps,
-prive de son ame, est sans vue, sans ouie, sans connoissance, sans
-sentiment, et sans mouvement; de meme l'amour-propre, separe, s'il le
-faut dire ainsi, de son interet, ne voit, n'entend, ne sent, et ne se
+"L'intérêt est l'ame de l'amour-propre, de sorte que comme le corps,
+privé de son ame, est sans vue, sans ouïe, sans connoissance, sans
+sentiment, et sans mouvement; de même l'amour-propre, séparé, s'il le
+faut dire ainsi, de son intérêt, ne voit, n'entend, ne sent, et ne se
 remue plus," etc., etc.
 
-(Rochefoucault, Lettre a Madame Sable). The passage in Lucretius
-probably is 'De Rerum Natura', i. 57-62.]
+(Rochefoucault, Lettre à Madame Sablé). The passage in Lucretius
+probably is 'De Rerum Naturâ', i. 57-62.]
 
 [Footnote 9:
 
-"Monsieur de Puysegur," says Lady H. Leveson Gower ('Letters of
+"Monsieur de Puységur," says Lady H. Leveson Gower ('Letters of
 Harriet, Countess of Granville', vol. i. p. 23), "is really
-'concentre' into one wrinkle. It is the oldest, gayest, thinnest, most
+'concentré' into one wrinkle. It is the oldest, gayest, thinnest, most
 withered, and most brilliant thing one can meet with. When there are
 so many young, fat fools going about the world, I wish for the
-transmigration of souls. Puysegur might animate a whole family."
+transmigration of souls. Puységur might animate a whole family."
 
 The phrase, of which Byron was in search, is Goethe's, 'eine erstarrte
-Musik' (Stevens's 'Life of Madame de Stael', vol. ii. p. 195).]
+Musik' (Stevens's 'Life of Madame de Staël', vol. ii. p. 195).]
 
 [Footnote 10:  That the poet sometimes dined seems evident from the
 annexed bill:
@@ -14295,7 +14291,7 @@ Lord Byron.
 
 To M. Richold
 
-1813--                   L     s.     d.
+1813--                   £     s.     d.
 Ballance of last bill   0    13     10
 Aug.  9. To dinner bill   1     6      0
 10. To do. do.       4    13      6
@@ -14322,7 +14318,7 @@ Sept  2. To do. do.       1     4      0
 Nov. 14. To do. do.       1     0      6
 21. To do. do.       0    19      0
 --  --   --
-L44    11     10]
+£44    11     10]
 
 [Footnote 11: Henry IV., Part II. act v. sc. 5.]
 
@@ -14402,7 +14398,7 @@ select. He has _passages_ equal to any thing. At present, he has _a
 party_, but no _public_--except for his prose writings. The life of
 Nelson is beautiful.
 
-Sotheby [7] is a _Litterateur_, the Oracle of the Coteries, of the----s
+Sotheby [7] is a _Littérateur_, the Oracle of the Coteries, of the----s
 [8], Lydia White (Sydney Smith's "Tory Virgin") [9], Mrs. Wilmot [10]
 (she, at least, is a swan, and might frequent a purer stream,) Lady
 Beaumont, [11] and all the Blues, with Lady Charlemont [12] at their
@@ -14620,7 +14616,7 @@ much as usual;--but the club increases. I shall dine at Crib's [6]
 to-morrow. I like energy--even animal energy--of all kinds; and I have
 need of both mental and corporeal. I have not dined out, nor, indeed,
 _at all_, lately: have heard no music--have seen nobody. Now for a
-_plunge_--high life and low life. _Amant_ alterna _Camoenae!_ [7].
+_plunge_--high life and low life. _Amant_ alterna _Camoenæ!_ [7].
 
 I have burnt my _Roman_--as I did the first scenes and sketch of my
 comedy--and, for aught I see, the pleasure of burning is quite as great
@@ -14651,7 +14647,7 @@ one in a thousand.
 If I had any views in this country, they would probably be parliamentary
 [10].
 
-But I have no ambition; at least, if any, it would be _aut Caesar aut
+But I have no ambition; at least, if any, it would be _aut Cæsar aut
 nihil_. My hopes are limited to the arrangement of my affairs, and
 settling either in Italy or the East (rather the last), and drinking
 deep of the languages and literature of both. Past events have unnerved
@@ -14923,7 +14919,7 @@ better to do? "Action--action--action"--said Demosthenes:
 "Actions--actions," I say, and not writing,--least of all, rhyme. Look at
 the querulous and monotonous lives of the "genus;"--except Cervantes,
 Tasso, Dante, Ariosto, Kleist (who were brave and active citizens),
-AEschylus, Sophocles, and some other of the antiques also--what a
+Æschylus, Sophocles, and some other of the antiques also--what a
 worthless, idle brood it is!
 
 [Footnote 1: 'Macbeth', act iii. sc. 4--
@@ -15134,7 +15130,7 @@ Saw----looking very pretty, though quite a different style of beauty
 from the other two. She has the finest eyes in the world, out of which
 she pretends _not_ to see, and the longest eyelashes I ever saw, since
 Leila's and Phannio's Moslem curtains of the light. She has much
-beauty,--just enough,--but is, I think, _mechante_.
+beauty,--just enough,--but is, I think, _méchante_.
 
 I have been pondering on the miseries of separation, that--oh how seldom
 we see those we love! yet we live ages in moments, _when met_. The only
@@ -15217,8 +15213,8 @@ even according to your creed? They were immortal, heavenly, and happy,
 as their _apostate Abdiel_ [5] is now by his treachery. Time must
 decide; and eternity won't be the less agreeable or more horrible
 because one did not expect it. In the mean time, I am grateful for some
-good, and tolerably patient under certain evils--_grace a Dieu et mon
-bon temperament_.
+good, and tolerably patient under certain evils--_grace à Dieu et mon
+bon tempérament_.
 
 [Footnote 1:
 
@@ -15248,10 +15244,10 @@ perfection which is the soul of all true poetry."
 [Footnote 3:
 
 "In the last 'Edinburgh Review' you will find two articles of mine,
-one on Rogers, and the other on Madame de Stael: they are both,
+one on Rogers, and the other on Madame de Staël: they are both,
 especially the first, thought too panegyrical. I like the praises
 which I have bestowed on Lord Byron and Thomas Moore. I am convinced
-of the justness of the praises given to Madame de Stael."
+of the justness of the praises given to Madame de Staël."
 
 'Mackintosh's Life', vol. ii. p. 271.]
 
@@ -15411,30 +15407,30 @@ vol. iii. cap. 10, 'De l'Allemagne'."
 
 The passage is as follows (Part III. chap, x.):
 
-"Sans cesse nous comparons la peinture a la musique, et la musique a
-la peinture, parceque les emotions que nous eprouvons nous revelent
-des analogies ou l'observation froide ne verroit que des differences,"
+"Sans cesse nous comparons la peinture à la musique, et la musique à
+la peinture, parceque les émotions que nous eprouvons nous révèlent
+des analogies où l'observation froide ne verroit que des différences,"
 etc., etc.
 
-The following is Madame de Stael's "very pretty billet:"
+The following is Madame de Staël's "very pretty billet:"
 
 "Argyll St., No. 31.
 
-"Je ne saurais vous exprimer, my lord, a quel point je me trouve
-honoree d'etre dans une note de votre poeme, et de quel poeme! il me
-semble que pour la premiere fois je me crois certaine d'un nom
-d'avenir et que vous avez dispose pour moi de cet empire de reputation
+"Je ne saurais vous exprímer, my lord, à quel point je me trouve
+honorée d'être dans une note de votre poëme, et de quel poëme! il me
+semble que pour la première fois je me crois certaine d'un nom
+d'avenir et que vous avez disposé pour moi de cet empire de reputation
 qui vous sera tous les jours plus soumis. Je voudrais vous parler de
-ce poeme que tout le monde admire, mais j'avouerai que je suis trop
+ce poëme que tout le monde admire, mais j'avouerai que je suis trop
 suspecte en le louant, et je ne cache pas qu' une louage de vous m'a
-fait epreuver un sentiment de fierte et de reconaissance qui me
-rendrait incapable de vous juger; mais heureusement vous etes au
+fait épreuver un sentiment de fierté et de réconaissance qui me
+rendrait incapable de vous juger; mais heureusement vous êtes au
 dessus du jugement.
 
 "Donnez moi quelquefois le plaisir de vous voir; il-y-a un proverbe
-francais qui dit qu'un bonheur ne va jamais sans d'autre.
+français qui dit qu'un bonheur ne va jamais sans d'autre.
 
-"DE STAEL."]
+"DE STAËL."]
 
 [Footnote 6:
 
@@ -15570,7 +15566,7 @@ And no man else hath honour by his death.
 According to his virtue let us use him,
 With all respect and rites of burial."
 
-'Julius Caesar', act v. sc. 5.]
+'Julius Cæsar', act v. sc. 5.]
 
 [Footnote 2: In 'The Giaour' (lines 388-392) occurs the following
 passage:
@@ -15614,8 +15610,8 @@ pleasure I ever derived, of this kind was from an extract, in Cooke the
 actor's life, from his journal [1], stating that in the reading-room at
 Albany, near Washington, he perused _English Bards, and Scotch
 Reviewers_. To be popular in a rising and far country has a kind of
-_posthumous feel_, very different from the ephemeral _eclat_ and
-fete-ing, buzzing and party-ing compliments of the well-dressed
+_posthumous feel_, very different from the ephemeral _éclat_ and
+fête-ing, buzzing and party-ing compliments of the well-dressed
 multitude. I can safely say that, during my _reign_ in the spring of
 1812, I regretted nothing but its duration of six weeks instead of a
 fortnight, and was heartily glad to resign.
@@ -15663,16 +15659,16 @@ tones are very musical, and I won't give up either.
 
 It is well if I don't jar between these great discords. At present I
 stand tolerably well with all, but I cannot adopt their _dislikes_;--so
-many _sets_. Holland's is the first;--every thing _distingue_ is welcome
+many _sets_. Holland's is the first;--every thing _distingué_ is welcome
 there, and certainly the _ton_ of his society is the best. Then there is
 Madame de Stael's--there I never go, though I might, had I courted it.
 It is composed of the----s and the----family, with a strange
 sprinkling,--orators, dandies, and all kinds of _Blue_, from the regular
-Grub Street uniform, down to the azure jacket of the _Litterateur_ [2]?
+Grub Street uniform, down to the azure jacket of the _Littérateur_ [2]?
 
 To see----and----sitting together, at dinner, always reminds me of
 the grave, where all distinctions of friend and foe are levelled; and
-they--the Reviewer and the Reviewee--the Rhinoceros and Elephant--the
+they--the Reviewer and the Reviewée--the Rhinoceros and Elephant--the
 Mammoth and Megalonyx--all will lie quietly together. They now _sit_
 together, as silent, but not so quiet, as if they were already immured.
 
@@ -16017,7 +16013,7 @@ in 'Paul Clifford', where "Brandon" condemns his own son.]
 
 Friday, December 10, 1813.
 
-I am _ennuye_ beyond my usual tense of that yawning verb, which I am
+I am _ennuyé_ beyond my usual tense of that yawning verb, which I am
 always conjugating; and I don't find that society much mends the matter.
 I am too lazy to shoot myself--and it would annoy Augusta, and perhaps
 ----; but it would be a good thing for George, on the other side, and no
@@ -16342,7 +16338,7 @@ signify if one was always to be checkmated by a plain woman, but one may
 as well see some of one's neighbours, as well as the plate upon the
 table.
 
-I should like, of all things, to have heard the Amabaean eclogue between
+I should like, of all things, to have heard the Amabæan eclogue between
 her and Lewis--both obstinate, clever, odd, garrulous, and shrill. In
 fact, one could have heard nothing else. But they fell out, alas!--and
 now they will never quarrel again. Could not one reconcile them for the
@@ -16362,7 +16358,7 @@ I did not fall in love with her, which I should try to prevent, we
 should be a very comfortable couple. As to conduct, _that_ she must look
 to. But _if_ I love, I shall be jealous;--and for that reason I will not
 be in love. Though, after all, I doubt my temper, and fear I should not
-be so patient as becomes the _bienseance_ of a married man in my
+be so patient as becomes the _bienséance_ of a married man in my
 station. Divorce ruins the poor _femme_, and damages are a paltry
 compensation. I do fear my temper would lead me into some of our
 oriental tricks of vengeance, or, at any rate, into a summary appeal to
@@ -16482,7 +16478,7 @@ colleges--and women of "a certain age"--and many men of any age--and
 myself, most of all!
 
 "Divesne prisco natus ab Inacho
-Nil interest, an pauper et infima
+Nil interest, an pauper et infimâ
 De gente, sub dio ('sic') moreris,
 Victima nil miserantis Orci.
 Omnes eodem cogimur," etc. [12]
@@ -16528,7 +16524,7 @@ etc.
 
 "Brutus, thou sleepest, awake."
 
-'Julius Caesar', act ii. sc. 1.]
+'Julius Cæsar', act ii. sc. 1.]
 
 [Footnote 10: The following extract from 'Detached Thoughts' (1821)
 implies that this expression of opinion was no passing thought (but see
@@ -16539,17 +16535,17 @@ Scott's note, p. 376 [Footnote 5 of Journal entry for December 13th,
 there are hopes of such. The two Americas (South and North) have it;
 Spain and Portugal approach it; all thirst for it. Oh Washington!"]
 
-[Footnote 11: Here is one of Madame de Stael's notes:
+[Footnote 11: Here is one of Madame de Staël's notes:
 
-"Je renonce a vos visites, pourvu que vous acceptiez mes diners, car
-enfin a quoi servirait il de vivre dans le meme tems que vous, si
+"Je renonce à vos visites, pourvu que vous acceptiez mes diners, car
+enfin à quoi servirait il de vivre dans le même tems que vous, si
 l'on ne vous voyait pas? Dinez chez moi dimanche avec vos amis,--je ne
-dirai pas vos admirateurs, car je n'ai rencontre que cela de touts
+dirai pas vos admirateurs, car je n'ai rencontré que cela de touts
 parts.
 
 "A dimanche,
 
-"DE STAEL.
+"DE STAËL.
 
 "Mardi.
 
@@ -16582,8 +16578,8 @@ In the 'Courier', February 26, 1814, appears this paragraph:
 "Mr. Kean's attraction is unprecedented in the annals of
 theatricals--even Cooke's performances are left at an immeasurable
 distance; his first three nights of 'Richard' produced upwards of
-L1800, and on repeating that character on Thursday night for the
-fourthth ('sic') time, the receipts were upwards of L700."
+£1800, and on repeating that character on Thursday night for the
+fourthth ('sic') time, the receipts were upwards of £700."
 
 On March 1 the same paper says,
 
@@ -16759,7 +16755,7 @@ Six-and-twenty years, as they call them, why, I might and should have
 been a Pasha by this time. "I 'gin to be a-weary of the sun." [6]
 
 Buonaparte is not yet beaten; but has rebutted Blucher, and repiqued
-Schwartzenburg [7]. This it is to have a head. If he again wins, _Vae
+Schwartzenburg [7]. This it is to have a head. If he again wins, _Væ
 victis!_
 
 [Footnote 1:
@@ -16820,7 +16816,7 @@ Schwartzenberg on the following day.]
 
 Sunday, March 6.
 
-On Tuesday last dined with Rogers,--Madame de Stael, Mackintosh,
+On Tuesday last dined with Rogers,--Madame de Staël, Mackintosh,
 Sheridan, Erskine [1], and Payne Knight, Lady Donegal, and Miss R.
 there. Sheridan told a very good story of himself and Madame de
 Recamier's handkerchief; Erskine a few stories of himself only. _She_ is
@@ -17071,16 +17067,16 @@ Both have talents of the highest order, but the youngster has _yet_ a
 character. We shall see, if he lives to Sherry's age, how he will pass
 over the redhot plough-shares of public life. I don't know why, but I
 hate to see the _old_ ones lose; particularly Sheridan, notwithstanding
-all his _mechancete_.
+all his _méchanceté_.
 
-Received many, and the kindest, thanks from Lady Portsmouth, _pere_ and
-_mere_, for my match-making. I don't regret it, as she looks the
+Received many, and the kindest, thanks from Lady Portsmouth, _père_ and
+_mère_, for my match-making. I don't regret it, as she looks the
 countess well, and is a very good girl. It is odd how well she carries
 her new honours. She looks a different woman, and high-bred, too. I had
 no idea that I could make so good a peeress.
 
 Went to the play with Hobhouse. Mrs. Jordan superlative in Hoyden, [3]
-and Jones well enough in Foppington. _What plays_! what wit!--_helas_!
+and Jones well enough in Foppington. _What plays_! what wit!--_hélas_!
 Congreve and Vanbrugh are your only comedy. Our society is too insipid
 now for the like copy. Would _not_ go to Lady Keith's. Hobhouse thought
 it odd. I wonder _he_ should like parties. If one is in love, and wants
@@ -17108,14 +17104,14 @@ out, and keeps to my instructions of affected indifference, she will
 lower her colours. If she don't, he will, at least, get rid of her, and
 she don't seem much worth keeping. But the poor lad is in love--if that
 is the case, she will win. When they once discover their power, _finita
-e la musica_.
+è la musica_.
 
 Sleepy, and must go to bed.
 
 [Footnote 1: Thomas, Lord Cochrane (1775-1860), eldest son of the ninth
 Earl of Dundonald, a captain in the Royal Navy, and M. P. for
 Westminster, had done brilliant service in his successive commands--the
-'Speedy', 'Pallas', 'Imperieuse', and the flotilla of fire-ships at
+'Speedy', 'Pallas', 'Impérieuse', and the flotilla of fire-ships at
 Basque Roads in 1809. In the House of Commons he had been a strong
 opponent of the Government, an advocate of Parliamentary Reform, and a
 vigorous critic of naval administration. In February, 1814, he had been
@@ -17138,8 +17134,8 @@ A Stock Exchange Committee sat to investigate the case, and their report
 (March 7) threw grave suspicion on Cochrane. He, his uncle, Cochrane
 Johnstone, a Mr. Butt, and Berenger, were indicted for a conspiracy,
 tried before Lord Ellenborough, June 8-9, and convicted. Cochrane was
-sentenced to a year's imprisonment and a fine of L1000. On the back of
-the note for L1000 (still kept in the Bank of England) with which he
+sentenced to a year's imprisonment and a fine of £1000. On the back of
+the note for £1000 (still kept in the Bank of England) with which he
 paid his fine on July 3, 1815, he wrote:
 
 "My health having suffered by long and close confinement, and my
@@ -17174,7 +17170,7 @@ Footnote 1 of Letter 285])]
 
 [Footnote 3: Dorothy Jordan (1762-1816) first appeared as "Phoebe" in
 'As You Like It' at the Crow Street Theatre, Dublin, in 1777. After
-acting in provincial theatres, she made her 'debut' on the London stage
+acting in provincial theatres, she made her 'début' on the London stage
 at Drury Lane (October 18, 1785) as "Peggy" in Garrick's 'Country Girl',
 an expurgated version of Wycherley's 'Country Wife'. During the season
 she appeared also in six of her best parts: "Miss Hoyden" in 'The Trip
@@ -17203,7 +17199,7 @@ performance is thus described in the 'Courier', March 11, 1814:
 
 "Mrs. Jordan, the only 'Miss Hoyden' on the stage, supported that
 character with unabated spirit. In every scene, from her soliloquy on
-being locked up, which was delivered with extraordinary 'naivete',
+being locked up, which was delivered with extraordinary 'naïveté',
 both with reference to her tones, her emphasis, and her action, until
 the consummation of the piece, the house was shaken by loud and
 quick-succeeding peals of laughter. The style in which she expressed
@@ -17410,7 +17406,7 @@ Petty.]
 Grange, co. Lincoln, was married, in 1793, to Sir Gilbert Heathcote.]
 
 [Footnote 4: Machiavelli's 'Opere', 13 vols., 'in russia, Milan' (1804);
-Sismondi's 'De la Litterature du Midi', 4 vols., 'in russia', Paris
+Sismondi's 'De la Littérature du Midi', 4 vols., 'in russia', Paris
 (1813); and Chardin's 'Voyages en Perse', 10 vols. and Atlas (1811),
 appear in the Catalogue of Sale.]
 
@@ -17502,10 +17498,10 @@ Portland, married, in 1793, to Charles Greville.]
 [Footnote 3:
 
 "Londres le 9 Mars... On vient de publier une caricature insolente et
-grossiere centre le mariage projete (de la Princesse de Galles) et
+grossiere centre le mariage projeté (de la Princesse de Galles) et
 centre le Prince d'Orange. En commentant cette gravure, le 'Town Talk'
-a ose avancer que la Princesse Charlotte detestait son epoux futur, et
-que ses veritables affections etaient sacrifices a des vues
+a osé avancer que la Princesse Charlotte détestait son époux futur, et
+que ses véritables affections étaient sacrifices à des vues
 politiques. Le Lord Byron a fait de ce bruit populaire le sujet d'une
 romance."
 
@@ -17520,7 +17516,7 @@ lease of seven years. Spacious, and room for my books and sabres. _In_
 the _house_, too, another advantage. The last few days, or whole week,
 have been very abstemious, regular in exercise, and yet very _un_well.
 
-Yesterday, dined _tete-a-tete_ at the Cocoa with Scrope Davies--sat from
+Yesterday, dined _tête-à-tête_ at the Cocoa with Scrope Davies--sat from
 six till midnight--drank between us one bottle of champagne and six of
 claret, neither of which wines ever affect me. Offered to take Scrope
 home in my carriage; but he was tipsy and pious, and I was obliged to
@@ -17751,11 +17747,11 @@ The "mob of gentlemen who write with ease" has indeed of late years
 rivalry to the regular body of writers who are not fortunate enough to
 be either easy or genteel. Hence the jaundiced eye with which the real
 author regards the red Morocco binding of the presumptuous
-"Litterateur;" we say, _the binding_, for into the book itself he cannot
+"Littérateur;" we say, _the binding_, for into the book itself he cannot
 condescend to look, at least not beyond the frontispiece.--Into Mr.
 Spencer's volume, however, he may dip farther, and will find sufficient
 to give him pleasure or pain, in proportion to his own candour. It
-consists chiefly of "_Vers de Societe_," calculated to prove very
+consists chiefly of "_Vers de Société_," calculated to prove very
 delightful to a large circle of fashionable acquaintance, and pleasing
 to a limited number of vulgar purchasers. These last, indeed, may be
 rude enough to expect something more for their specie during the present
@@ -17953,7 +17949,7 @@ Have their tears enrich'd the dew?"
 Here we have "angels' tears," and "breath," and "smiles," and "Eden
 zephyrs," "sighs of seraph lovers," and "lyres of slumbering cherubs,"
 dancing away to "the Pedal Harp!" How strange it is that Thomson, in his
-stanzas on the AEolian lyre (see the 'Castle of Indolence'), never
+stanzas on the Æolian lyre (see the 'Castle of Indolence'), never
 dreamed of such things, but left all these prettinesses to the last of
 the Cruscanti!
 
@@ -17981,22 +17977,22 @@ sample of the two former:
 
 "'QU'EST CE QUE C'EST QUE LE GENIE?'
 
-"Brillant est cet esprit prive de sentiment;
+"Brillant est cet esprit privé de sentiment;
 Mais ce n'est qu'un soleil trop vif et trop constant,
 Tendre est ce sentiment qu' aucun esprit n'anime,
 Mais ce n'est qu'un jour doux, que trop de pluie abime!
 Quand un brillant esprit de ses rares couleurs,
 Orne du sentiment les aimables douleurs,
-Un _Phenomene_ en nait, le plus beau de la vie!
-C'est alors que les ris en se melant aux pleurs,
-Font ces _Iris de l'ame_, appelle le Genie!"
+Un _Phenomêne_ en nait, le plus beau de la vie!
+C'est alors que les ris en se mélant aux pleurs,
+Font ces _Iris de l'ame_, appellê le Genie!"
 
 "C'y gist un povre menestrel,
 Occis par maint ennuict cruel--
-Ne plains pas trop sa destinee--
+Ne plains pas trop sa destinée--
 N'est icy que son corps mortel:
-Son ame est toujours a Gillwell,
-Et n'est ce pas la l'Elysee?"
+Son ame est toujours à Gillwell,
+Et n'est ce pas là l'Elyséé?"
 
 We think that Mr. Spencer's Italian rhymes are better finished than his
 French; and indeed the facility of composing in that most poetical of
@@ -18043,7 +18039,7 @@ ARTICLES FROM THE MONTHLY REVIEW.
 
 Art. XV. 'Neglected Genius:' a Poem. Illustrating the untimely and
 unfortunate Fall of many British Poets; from the Period of Henry VIII.
-to the AEra of the unfortunate Chatterton. Containing Imitations of their
+to the Æra of the unfortunate Chatterton. Containing Imitations of their
 different Styles, etc., etc. By W.H. Ireland, Author of the
 'Fisher-Soy', 'Sailor-Boy', 'Cottage-Girl', etc., etc., etc. 8vo. pp.
 175. 8s. Boards. Sherwood & Co. 1812.
@@ -18109,7 +18105,7 @@ As when from ocean bursting on the view,
 His orb dispenses ev'ry brilliant hue,
 Crowns with resplendent gold th' horizon wide,
 And cloathes with countless gems the buoyant tide;
-While through the boundless realms of aether blaze,
+While through the boundless realms of æther blaze,
 On spotless azure, streamy saffron rays:--
 So o'er the world of genius _Milton_ shone,
 Profound in science--as the bard--alone."
@@ -18136,9 +18132,9 @@ A gloomy jail obscur'd bright freedom's view;
 So life's gay visions faded to thy sight,
 Thy brilliant hopes enscarf'd in sorrow's night."
 
-Where did Mr. Ireland learn that _hold fast_ and _ballast_, _stir_ and
-_hunger_, _please_ and _kidneys_, _plane_ and _capstane_, _expose_ and
-_windows_, _forgot_ and _pilot_, _sail on_ _and Deucalon!_ (Lempriere
+Where did Mr. Ireland learn that _hold fast_ and _ballâst_, _stir_ and
+_hungêr_, _please_ and _kidnêys_, _plane_ and _capstâne_, _expose_ and
+_windôws_, _forgot_ and _pilôt_, _sail on_ _and Deucalôn!_ (Lemprière
 would have saved him a scourging at school by telling him that there was
 an _i_ in the word), were legitimate Hudibrastic rhymes? (see pp. 116,
 etc.). Chatterton is a great favourite of this imitative gentleman; and
@@ -18577,7 +18573,7 @@ ancestors? And cannot you relieve the beggar when your fathers have made
 him such? If you are disposed to relieve him at all, cannot you do it
 without flinging your farthings in his face? As a contrast, however, to
 this beggarly benevolence, let us look at the Protestant Charter
-Schools; to them you have lately granted L41,000: thus are they
+Schools; to them you have lately granted £41,000: thus are they
 supported; and how are they recruited? Montesquieu observes on the
 English constitution, that the model may be found in Tacitus, where the
 historian describes the policy of the Germans, and adds, "This beautiful
@@ -19056,7 +19052,7 @@ full of flippant jokes, written in one moment of gaiety, which is quite
 gone since. I am so afraid he has been to you; if so, I entreat you to
 forgive it, and to do just what you think right about the Picture.
 
-"I have been drawing you Mad. de Stael, as the last I sent was not like.
+"I have been drawing you Mad. de Staël, as the last I sent was not like.
 If you do not approve this, give it Murray, and pray do not be angry
 with me.
 
@@ -19391,7 +19387,7 @@ firmest, my tenderest friend--the only being for whose sake I ever
 desir'd wealth, and the only one who could have cheer'd the gloom of
 Poverty. My Capital being a borrow'd one, I returned it as far as I
 could to the person who had lent it. Since that time, my Lord, I have
-been struggling to make the best of a Clerkship of L80 per ann., out of
+been struggling to make the best of a Clerkship of £80 per ann., out of
 which I have to meet every expence, and still to maintain a respectable
 appearance in a Place where I have resided under different
 circumstances. Had I enter'd my present Situation free of all debts, I
@@ -19472,7 +19468,7 @@ or two more observations.
 "Although in my last, which, as I before observed, was hastily written,
 I express'd my wish to be allow'd, _in some capacity or other_, to serve
 your Lordship, yet I am not so foolish as to think of fastening myself
-on you, my Lord, _bon gre ou malgre_. One reason for my expressing that
+on you, my Lord, _bon gré ou malgré_. One reason for my expressing that
 wish, was an idea that your Lordship might go abroad before long; and,
 added to my own wish to see something of the world on which fate has
 thrown me, it occurred to me at the moment, that on such an occasion the
@@ -20565,7 +20561,7 @@ And rob thee of thy sweetest treasure
 But, BYRON! thou hast yet to learn,
 _That Virtue is the source of pleasure!_"
 
-TYRTAEUS.
+TYRTÆUS.
 
 G--n-street, Feb. 9, 1814.
 
@@ -20874,7 +20870,7 @@ Now melt into sorrow--now madden to crime?--
 Know ye the land of the cedar and vine?
 Where the flowers ever blossom, the beams ever shine,
 Where the light wings of Zephyr, oppress'd with perfume,
-Wax faint o'er the gardens of Gul in her bloom;
+Wax faint o'er the gardens of Gúl in her bloom;
 Where the citron and olive are fairest of fruit,
 And the voice of the nightingale never is mute;
 Where the tints of the earth, and the hues of the sky,
@@ -20882,7 +20878,7 @@ In colour though varied, in beauty may vie,
 And the purple of Ocean is deepest in dye."
 
 The whole of which passage we take to be a paraphrase, and a bad
-paraphrase too, of a song of the German of Goethe, of which the following
+paraphrase too, of a song of the German of Göthe, of which the following
 translation was published at Berlin in 1798:
 
 "Know'st thou the land, where citrons scent the gale,

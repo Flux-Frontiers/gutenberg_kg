@@ -10,6 +10,10 @@ by Nicolo Machiavelli
 
 Translated by W. K. Marriott
 
+DESCRIPTION OF THE METHODS ADOPTED BY THE DUKE VALENTINO WHEN MURDERING VITELLOZZO VITELLI, OLIVEROTTO DA FERMO, THE SIGNOR PAGOLO, AND THE DUKE DI GRAVINA ORSINI
+
+### THE LIFE OF CASTRUCCIO CASTRACANI OF LUCCA
+
 _ Nicolo Machiavelli, born at Florence on 3rd May 1469. From 1494 to
 1512 held an official post at Florence which included diplomatic
 missions to various European courts. Imprisoned in Florence, 1512;

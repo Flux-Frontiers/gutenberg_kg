@@ -8870,7 +8870,7 @@ higher grass.
 Thus was my first year’s life in the woods completed; and the second
 year was similar to it. I finally left Walden September 6th, 1847.
 
-Conclusion
+### Conclusion
 
 To the sick the doctors wisely recommend a change of air and scenery.
 Thank Heaven, here is not all the world. The buck-eye does not grow in

@@ -4,11 +4,7 @@
 
 ---
 
-### A LADY'S LIFE IN THE
-
-### ROCKY MOUNTAINS
-
-*Isabella L. Bird*
+Isabella L. Bird
 
 Introduction by
 
@@ -21,6 +17,97 @@ to whom
 these letters were originally written,
 they are now
 affectionately dedicated.
+
+A dateless day--"Those hands of yours"--A Puritan--Persevering
+shiftlessness--The house-mother--Family worship--A grim Sunday--A
+"thick-skulled Englishman"--A morning call--Another atmosphere--The
+Great Lone Land--"Ill found"--A log camp--Bad footing for
+horses--Accidents--Disappointment.
+
+## LETTER VI
+
+A bronco mare--An accident--Wonderland--A sad story--The children of
+the Territories--Hard greed--Halcyon hours--Smartness--Old-fashioned
+prejudices--The Chicago colony--Good luck--Three notes of admiration--A
+good horse--The St. Vrain--The Rocky Mountains at last--"Mountain
+Jim"--A death hug--Estes Park.
+
+## LETTER VII
+
+Personality of Long's Peak--"Mountain Jim"--Lake of the Lilies--A
+silent forest--The camping ground--"Ring"--A lady's bower--Dawn and
+sunrise--A glorious view--Links of diamonds--The ascent of the
+Peak--The "Dog's Lift"--Suffering from thirst--The descent--The bivouac.
+
+## LETTER VIII
+
+Estes Park--Big game--"Parks" in Colorado--Magnificent scenery--Flowers
+and pines--An awful road--Our log cabin--Griffith Evans--A miniature
+world--Our topics--A night alarm--A skunk--Morning glories--Daily
+routine--The panic--"Wait for the wagon"--A musical evening.
+
+## LETTER IX
+
+"Please Ma'ams"--A desperado--A cattle hunt--The muster--A mad cow--A
+snowstorm--Snowed up--Birdie--The Plains--A prairie schooner--Denver--A
+find--Plum Creek--"Being agreeable"--Snowbound--The grey mare.
+
+## LETTER X
+
+A white world--Bad traveling--A millionaire's home--Pleasant
+Park--Perry's Park--Stock-raising--A cattle king--The Arkansas
+Divide--Birdie's sagacity--Luxury--Monument Park--Deference to
+prejudice--A death scene--The Manitou--A loose shoe--The Ute
+Pass--Bergens Park--A settler's home--Hayden's Divide--Sharp
+criticism--Speaking the truth.
+
+## LETTER XI
+
+Tarryall Creek--The Red Range--Excelsior--Importunate pedlars--Snow and
+heat--A bison calf--Deep drifts--South Park--The Great Divide--Comanche
+Bill--Difficulties--Hall's Gulch--A Lord Dundreary--Ridiculous fears.
+
+## LETTER XII
+
+Deer Valley--Lynch law--Vigilance committees--The silver spruce--Taste
+and abstinence--The whisky fiend--Smartness--Turkey Creek Canyon--The
+Indian problem--Public rascality--Friendly meetings--The way to the
+Golden City--A rising settlement--Clear Creek
+Canyon--Staging--Swearing--A mountain town.
+
+## LETTER XIII
+
+*The blight of mining--Green Lake--Golden*
+
+City--Benighted--Vertigo--Boulder Canyon--Financial straits--A hard
+ride--The last cent--A bachelor's home--"Mountain Jim"--A surprise--A
+night arrival--Making the best of it--Scanty fare.
+
+## LETTER XIV
+
+A dismal ride--A desperado's tale--"Lost! Lost! Lost!"--Winter
+glories--Solitude--Hard times--Intense cold--A pack of wolves--The
+beaver dams--Ghastly scenes--Venison steaks--Our evenings.
+
+## LETTER XV
+
+A whisky slave--The pleasures of monotony--The mountain lion--"Another
+mouth to feed"--A tiresome boy--An outcast--Thanksgiving Day--The
+newcomer--A literary humbug--Milking a dry cow--Trout-fishing--A
+snow-storm--A desperado's den.
+
+## LETTER XVI
+
+A harmonious home--Intense cold--A purple sun--A grim jest--A perilous
+ride--Frozen eyelids--Longmount--The pathless prairie--Hardships of
+emigrant life--A trapper's advice--The Little Thompson--Evans and "Jim."
+
+## LETTER XVII
+
+Woman's mission--The last morning--Crossing the St.  Vrain--Miller--The
+St. Vrain again--Crossing the prairie--"Jim's" dream--"Keeping
+strangers"--The inn kitchen--A reputed child-eater--Notoriety--A quiet
+dance--"Jim's" resolve--The frost-fall--An unfortunate introduction.
 
 ## Letter I
 

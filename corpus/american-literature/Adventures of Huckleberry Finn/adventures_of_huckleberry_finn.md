@@ -4,11 +4,11 @@
 
 ---
 
-### ADVENTURES OF HUCKLEBERRY FINN
+Tom Sawyer Wounded.—The Doctor’s Story.—Tom Confesses.—Aunt Polly
+Arrives.—Hand Out Them Letters.
 
-(Tom Sawyer’s Comrade)
-
-By Mark Twain
+CHAPTER THE LAST.
+Out of Bondage.—Paying the Captive.—Yours Truly, Huck Finn.
 
 ILLUSTRATIONS.
 
@@ -8805,7 +8805,7 @@ then the bed hid him. Mrs. Phelps she jumps for him, and says:
 
 “No,” says her husband.
 
-“Good-_ness_ gracious!” she says, “what in the warld can have become of
+“Good-_ness_ gracious!” she says, “what in the world can have become of
 him?”
 
 “I can’t imagine,” says the old gentleman; “and I must say it makes me
@@ -8891,7 +8891,7 @@ I says:
 When he heard my voice it righted him up some, but he warn’t quite
 satisfied yet. He says:
 
-“Don’t you play nothing on me, because I wouldn’t on you. Honest injun
+“Don’t you play nothing on me, because I wouldn’t on you. Honest injun,
 now, you ain’t a ghost?”
 
 “Honest injun, I ain’t,” I says.

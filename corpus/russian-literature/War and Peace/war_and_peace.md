@@ -8,301 +8,7 @@
 
 *By Leo Tolstoy/Tolstoi*
 
-## CHAPTER VI CHAPTER VII
-
-## CHAPTER VIII CHAPTER IX
-
-## CHAPTER X CHAPTER XI
-
-## CHAPTER XII CHAPTER XIII
-
-## CHAPTER XIV CHAPTER XV
-
-## CHAPTER XVI CHAPTER XVII
-
-## CHAPTER XVIII CHAPTER XIX
-
-## CHAPTER XX CHAPTER XXI
-
-## CHAPTER XXII BOOK SIX: 1808 - 10
-
-## CHAPTER I CHAPTER II
-
-## CHAPTER III CHAPTER IV
-
-## CHAPTER V CHAPTER VI
-
-## CHAPTER VII CHAPTER VIII
-
-## CHAPTER IX CHAPTER X
-
-## CHAPTER XI CHAPTER XII
-
-## CHAPTER XIII CHAPTER XIV
-
-## CHAPTER XV CHAPTER XVI
-
-## CHAPTER XVII CHAPTER XVIII
-
-## CHAPTER XIX CHAPTER XX
-
-## CHAPTER XXI CHAPTER XXII
-
-## CHAPTER XXIII CHAPTER XXIV
-
-## CHAPTER XXV CHAPTER XXVI
-
-BOOK SEVEN: 1810 - 11
-
-## CHAPTER I CHAPTER II
-
-## CHAPTER III CHAPTER IV
-
-## CHAPTER V CHAPTER VI
-
-## CHAPTER VII CHAPTER VIII
-
-## CHAPTER IX CHAPTER X
-
-## CHAPTER XI CHAPTER XII
-
-## CHAPTER XIII BOOK EIGHT: 1811 - 12
-
-## CHAPTER I CHAPTER II
-
-## CHAPTER III CHAPTER IV
-
-## CHAPTER V CHAPTER VI
-
-## CHAPTER VII CHAPTER VIII
-
-## CHAPTER IX CHAPTER X
-
-## CHAPTER XI CHAPTER XII
-
-## CHAPTER XIII CHAPTER XIV
-
-## CHAPTER XV CHAPTER XVI
-
-## CHAPTER XVII CHAPTER XVIII
-
-## CHAPTER XIX CHAPTER XX
-
-## CHAPTER XXI CHAPTER XXII
-
-BOOK NINE: 1812
-
-## CHAPTER I CHAPTER II
-
-## CHAPTER III CHAPTER IV
-
-## CHAPTER V CHAPTER VI
-
-## CHAPTER VII CHAPTER VIII
-
-## CHAPTER IX CHAPTER X
-
-## CHAPTER XI CHAPTER XII
-
-## CHAPTER XIII CHAPTER XIV
-
-## CHAPTER XV CHAPTER XVI
-
-## CHAPTER XVII CHAPTER XVIII
-
-## CHAPTER XIX CHAPTER XX
-
-## CHAPTER XXI CHAPTER XXII
-
-## CHAPTER XXIII BOOK TEN: 1812
-
-## CHAPTER I CHAPTER II
-
-## CHAPTER III CHAPTER IV
-
-## CHAPTER V CHAPTER VI
-
-## CHAPTER VII CHAPTER VIII
-
-## CHAPTER IX CHAPTER X
-
-## CHAPTER XI CHAPTER XII
-
-## CHAPTER XIII CHAPTER XIV
-
-## CHAPTER XV CHAPTER XVI
-
-## CHAPTER XVII CHAPTER XVIII
-
-## CHAPTER XIX CHAPTER XX
-
-## CHAPTER XXI CHAPTER XXII
-
-## CHAPTER XXIII CHAPTER XXIV
-
-## CHAPTER XXV CHAPTER XXVI
-
-## CHAPTER XXVII CHAPTER XXVIII
-
-## CHAPTER XXIX CHAPTER XXX
-
-## CHAPTER XXXI CHAPTER XXXII
-
-## CHAPTER XXXIII CHAPTER XXXIV
-
-## CHAPTER XXXV CHAPTER XXXVI
-
-## CHAPTER XXXVII CHAPTER XXXVIII
-
-## CHAPTER XXXIX BOOK ELEVEN: 1812
-
-## CHAPTER I CHAPTER II
-
-## CHAPTER III CHAPTER IV
-
-## CHAPTER V CHAPTER VI
-
-## CHAPTER VII CHAPTER VIII
-
-## CHAPTER IX CHAPTER X
-
-## CHAPTER XI CHAPTER XII
-
-## CHAPTER XIII CHAPTER XIV
-
-## CHAPTER XV CHAPTER XVI
-
-## CHAPTER XVII CHAPTER XVIII
-
-## CHAPTER XIX CHAPTER XX
-
-## CHAPTER XXI CHAPTER XXII
-
-## CHAPTER XXIII CHAPTER XXIV
-
-## CHAPTER XXV CHAPTER XXVI
-
-## CHAPTER XXVII CHAPTER XXVIII
-
-## CHAPTER XXIX CHAPTER XXX
-
-## CHAPTER XXXI CHAPTER XXXII
-
-## CHAPTER XXXIII CHAPTER XXXIV
-
-BOOK TWELVE: 1812
-
-## CHAPTER I CHAPTER II
-
-## CHAPTER III CHAPTER IV
-
-## CHAPTER V CHAPTER VI
-
-## CHAPTER VII CHAPTER VIII
-
-## CHAPTER IX CHAPTER X
-
-## CHAPTER XI CHAPTER XII
-
-## CHAPTER XIII CHAPTER XIV
-
-## CHAPTER XV CHAPTER XVI
-
-BOOK THIRTEEN: 1812
-
-## CHAPTER I CHAPTER II
-
-## CHAPTER III CHAPTER IV
-
-## CHAPTER V CHAPTER VI
-
-## CHAPTER VII CHAPTER VIII
-
-## CHAPTER IX CHAPTER X
-
-## CHAPTER XI CHAPTER XII
-
-## CHAPTER XIII CHAPTER XIV
-
-## CHAPTER XV CHAPTER XVI
-
-## CHAPTER XVII CHAPTER XVIII
-
-## CHAPTER XIX BOOK FOURTEEN: 1812
-
-## CHAPTER I CHAPTER II
-
-## CHAPTER III CHAPTER IV
-
-## CHAPTER V CHAPTER VI
-
-## CHAPTER VII CHAPTER VIII
-
-## CHAPTER IX CHAPTER X
-
-## CHAPTER XI CHAPTER XII
-
-## CHAPTER XIII CHAPTER XIV
-
-## CHAPTER XV CHAPTER XVI
-
-## CHAPTER XVII CHAPTER XVIII
-
-## CHAPTER XIX BOOK FIFTEEN: 1812 - 13
-
-## CHAPTER I CHAPTER II
-
-## CHAPTER III CHAPTER IV
-
-## CHAPTER V CHAPTER VI
-
-## CHAPTER VII CHAPTER VIII
-
-## CHAPTER IX CHAPTER X
-
-## CHAPTER XI CHAPTER XII
-
-## CHAPTER XIII CHAPTER XIV
-
-## CHAPTER XV CHAPTER XVI
-
-## CHAPTER XVII CHAPTER XVIII
-
-## CHAPTER XIX CHAPTER XX
-
-FIRST EPILOGUE: 1813 - 20
-
-## CHAPTER I CHAPTER II
-
-## CHAPTER III CHAPTER IV
-
-## CHAPTER V CHAPTER VI
-
-## CHAPTER VII CHAPTER VIII
-
-## CHAPTER IX CHAPTER X
-
-## CHAPTER XI CHAPTER XII
-
-## CHAPTER XIII CHAPTER XIV
-
-## CHAPTER XV CHAPTER XVI
-
-### SECOND EPILOGUE CHAPTER I
-
-## CHAPTER II CHAPTER III
-
-## CHAPTER IV CHAPTER V
-
-## CHAPTER VI CHAPTER VII
-
-## CHAPTER VIII CHAPTER IX
-
-## CHAPTER X CHAPTER XI
-
-## CHAPTER XII BOOK ONE: 1805
-
-## CHAPTER I
+## BOOK ONE: 1805 CHAPTER I
 
 “Well, Prince, so Genoa and Lucca are now just family estates of the
 Buonapartes. But I warn you, if you don’t tell me that this means war,
@@ -5979,9 +5685,7 @@ dressing gown looked out.
 unconscious little princess, he shook his head reprovingly and slammed
 the door.
 
-BOOK TWO: 1805
-
-## CHAPTER I
+## BOOK TWO: 1805 CHAPTER I
 
 In October, 1805, a Russian army was occupying the villages and towns of
 the Archduchy of Austria, and yet other regiments freshly arriving from
@@ -10853,9 +10557,7 @@ did I come here?” he wondered.
 Next day the French army did not renew their attack, and the remnant of
 Bagratión’s detachment was reunited to Kutúzov’s army.
 
-BOOK THREE: 1805
-
-## CHAPTER I
+## BOOK THREE: 1805 CHAPTER I
 
 Prince Vasíli was not a man who deliberately thought out his plans.
 Still less did he think of injuring anyone for his own advantage. He
@@ -15751,9 +15453,7 @@ recover.”
 And Prince Andrew, with others fatally wounded, was left to the care of
 the inhabitants of the district.
 
-BOOK FOUR: 1806
-
-## CHAPTER I
+## BOOK FOUR: 1806 CHAPTER I
 
 Early in the year 1806 Nicholas Rostóv returned home on leave. Denísov
 was going home to Vorónezh and Rostóv persuaded him to travel with him
@@ -18516,9 +18216,7 @@ sent Dólokhov the whole forty-three thousand rubles and received his
 receipt, he left at the end of November, without taking leave of any of
 his acquaintances, to overtake his regiment which was already in Poland.
 
-BOOK FIVE: 1806 - 07
-
-## CHAPTER I
+## BOOK FIVE: 1806 - 07 CHAPTER I
 
 After his interview with his wife Pierre left for Petersburg. At the
 Torzhók post station, either there were no horses or the postmaster
@@ -22274,9 +21972,7 @@ science, poetry, music, love, friendship, hatred, and passions—went on
 as usual, independently of and apart from political friendship or enmity
 with Napoleon Bonaparte and from all the schemes of reconstruction.
 
-BOOK SIX: 1808 - 10
-
-## CHAPTER I
+## BOOK SIX: 1808 - 10 CHAPTER I
 
 Prince Andrew had spent two years continuously in the country.
 
@@ -25892,9 +25588,7 @@ But afterwards, when she saw her father and especially little Koko
 (Nicholas), her resolve weakened. She wept quietly, and felt that she
 was a sinner who loved her father and little nephew more than God.
 
-BOOK SEVEN: 1810 - 11
-
-## CHAPTER I
+## BOOK SEVEN: 1810 - 11 CHAPTER I
 
 The Bible legend tells us that the absence of labor—idleness—was a
 condition of the first man’s blessedness before the Fall. Fallen man
@@ -28532,9 +28226,7 @@ winter, and Natásha felt sure he had already arrived.
 So the countess remained in the country, and the count, taking Sónya
 and Natásha with him, went to Moscow at the end of January.
 
-BOOK EIGHT: 1811 - 12
-
-## CHAPTER I
+## BOOK EIGHT: 1811 - 12 CHAPTER I
 
 After Prince Andrew’s engagement to Natásha, Pierre without any
 apparent cause suddenly felt it impossible to go on living as before.
@@ -32111,9 +31803,7 @@ displaying its white light amid countless other scintillating stars. It
 seemed to Pierre that this comet fully responded to what was passing in
 his own softened and uplifted soul, now blossoming into a new life.
 
-BOOK NINE: 1812
-
-## CHAPTER I
+## BOOK NINE: 1812 CHAPTER I
 
 From the close of the year 1811 an intensified arming and concentrating of
 the forces of Western Europe began, and in 1812 these forces—millions
@@ -36078,9 +35768,7 @@ their uniforms and settled down again in their homes and clubs, and not
 without some groans gave orders to their stewards about the enrollment,
 feeling amazed themselves at what they had done.
 
-BOOK TEN: 1812
-
-## CHAPTER I
+## BOOK TEN: 1812 CHAPTER I
 
 Napoleon began the war with Russia because he could not resist going
 to Dresden, could not help having his head turned by the homage he
@@ -43349,9 +43037,7 @@ five hundred thousand men, and the downfall of Napoleonic France, on
 which at Borodinó for the first time the hand of an opponent of stronger
 spirit had been laid.
 
-BOOK ELEVEN: 1812
-
-## CHAPTER I
+## BOOK ELEVEN: 1812 CHAPTER I
 
 Absolute continuity of motion is not comprehensible to the human mind.
 Laws of motion of any kind become comprehensible to man only when he
@@ -49080,9 +48766,7 @@ was considered to be the most suspicious of all. When they had all been
 brought for the night to a large house on the Zúbov Rampart that was
 being used as a guardhouse, Pierre was placed apart under strict guard.
 
-BOOK TWELVE: 1812
-
-## CHAPTER I
+## BOOK TWELVE: 1812 CHAPTER I
 
 In Petersburg at that time a complicated struggle was being carried on
 with greater heat than ever in the highest circles, between the parties
@@ -51759,9 +51443,7 @@ had taken possession of their souls at the consciousness of the
 simple and solemn mystery of death that had been accomplished in their
 presence.
 
-BOOK THIRTEEN: 1812
-
-## CHAPTER I
+## BOOK THIRTEEN: 1812 CHAPTER I
 
 Man’s mind cannot grasp the causes of events in their completeness, but
 the desire to find those causes is implanted in man’s soul. And without
@@ -53908,9 +53590,7 @@ But they did not cut off or overthrow anybody and the French army,
 closing up more firmly at the danger, continued, while steadily melting
 away, to pursue its fatal path to Smolénsk.
 
-BOOK FOURTEEN: 1812
-
-## CHAPTER I
+## BOOK FOURTEEN: 1812 CHAPTER I
 
 The Battle of Borodinó, with the occupation of Moscow that followed it
 and the flight of the French without further conflicts, is one of the
@@ -56239,9 +55919,7 @@ The Russian army had to act like a whip to a running animal. And the
 experienced driver knew it was better to hold the whip raised as a
 menace than to strike the running animal on the head.
 
-BOOK FIFTEEN: 1812 - 13
-
-## CHAPTER I
+## BOOK FIFTEEN: 1812 - 13 CHAPTER I
 
 When seeing a dying animal a man feels a sense of horror: substance
 similar to his own is perishing before his eyes. But when it is a

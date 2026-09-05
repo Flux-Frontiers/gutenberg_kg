@@ -20,6 +20,8 @@ and "tomorrow." Some words containing the letters "ise" in the original
 text, such as "idealise," had these letters changed to "ize," such as
 "idealize." "Sceptic" was changed to "skeptic."
 
+FROM THE HEIGHTS (POEM TRANSLATED BY L.A. MAGNUS)
+
 ### PREFACE
 
 SUPPOSING that Truth is a woman--what then? Is there not ground

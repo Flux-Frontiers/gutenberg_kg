@@ -4,6 +4,10 @@
 
 ---
 
+Ver.04.29.93*END*
+
+This etext was prepared with the use of Calera WordScan Plus 2.0
+
 ### A JOURNEY IN OTHER WORLDS A ROMANCE OF THE FUTURE
 
 ### BY JOHN JACOB ASTOR PREFACE.

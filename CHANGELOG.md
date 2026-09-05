@@ -10,6 +10,11 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added
 
+- **A Christmas Carol (PG #46)** to `english-literature`. The edition that
+  exercises the `STAVE` heading rule, which the structural-parser census had
+  kept as unexercised. Converted with the wrap-width prose fix above so all
+  five staves are real ``##`` headings.
+
 - **Private Cloud Compute as a Foundation Models answer engine.** WWDC26
   unified the framework's API for the on-device model and Apple's server tier,
   reachable through the same `LanguageModelSession` -- so this is a peer of
@@ -60,6 +65,15 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   in `BrowseView`, rather than as one flat scroll with no landmarks.
 
 ### Fixed
+
+- **`_is_prose_line` rejected lines of exactly 60 characters.** The detector
+  is documented as a 60-character bar (`len >= 60`), but the check was
+  `len <= 60`, so a filled wrap line never counted. A Christmas Carol
+  (PG #46) wraps at 60; Stave I had four such lines and otherwise none
+  longer, so the cluster split that peels the body's ``STAVE I`` off the
+  contents list never fired, and the whole first stave was attributed to
+  the preface. Changed to `len < 60`. Gate: all 243 cached books unchanged
+  against HEAD; Carol now emits ``## STAVE I`` through ``## STAVE V``.
 
 - **The `all` scope buried the literal matches the lexical channel had just
   rescued.** Restoring phrase-first search put the Lot's-wife verse at rank 1

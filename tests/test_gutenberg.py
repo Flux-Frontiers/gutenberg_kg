@@ -19,6 +19,12 @@ from gutenberg_kg.gutenberg import (
     text_to_markdown,
     write_reference,
 )
+from gutenberg_kg.headings import (
+    looks_like_story_title as _looks_like_story_title,
+)
+from gutenberg_kg.headings import (
+    repeated_title_lines as _repeated_title_lines,
+)
 
 # ---------------------------------------------------------------------------
 # slugify
@@ -342,34 +348,86 @@ def test_detect_toc_navigation_does_not_swallow_single_blank_paragraphs():
     assert next_line.strip() == "INTRODUCTORY NOTE"
 
 
-def test_detect_toc_finds_contents_heading():
-    lines = ["CONTENTS", "Chapter I . . . . 1", "Chapter II . . . . 5", "", "", "", "CHAPTER I"]
-    result = _detect_toc(lines, 0, len(lines))
-    assert result is not None
-    assert result[0] == 0
-
-
 def test_detect_toc_returns_none_when_absent():
     lines = ["CHAPTER I", "Some text", "CHAPTER II", "More text"]
     result = _detect_toc(lines, 0, len(lines))
     assert result is None
 
 
-def test_detect_toc_ends_at_triple_blank():
+# The listing's end comes from the structural profile (gutenberg_kg.spine),
+# handed in as `regions`; detect_toc's own job is to anchor one of them to
+# the marker line. These exercise that anchoring on its own.
+
+
+def _contents_fixture(marker_at=0, entries=8):
+    lines = [""] * marker_at + ["CONTENTS", ""]
+    lines += [f"CHAPTER {n}." for n in range(1, entries + 1)]
+    return lines
+
+
+def test_detect_toc_skips_from_the_marker_through_the_anchored_region():
+    lines = _contents_fixture() + ["", "", "CHAPTER I", "", "Body prose."]
+    # The profile found the listing at lines 2..9; the marker is at 0.
+    result = _detect_toc(lines, 0, len(lines), regions=[(2, 9)])
+    assert result == (0, 10)
+
+
+def test_detect_toc_declines_with_a_marker_but_no_region():
+    """The #103 guarantee, kept: a marker with nothing to anchor skips
+    nothing. Jekyll and Hyde's contents are named chapters with no numbers,
+    so the profile finds no region there -- and the book is left whole."""
+    lines = ["CONTENTS", "", "STORY OF THE DOOR", "", "SEARCH FOR MR. HYDE", "", "Body prose."]
+    assert _detect_toc(lines, 0, len(lines)) is None
+    assert _detect_toc(lines, 0, len(lines), regions=[]) is None
+
+
+def test_detect_toc_falls_back_to_blank_lines_for_an_unnumbered_listing():
+    """The profile sees only numbered sequences. A listing of named
+    stories -- The King in Yellow, The Jungle Book, Poe's tales -- is
+    bounded the way it always was, by the triple blank that ends it."""
     lines = [
         "CONTENTS",
-        "Chapter I",
-        "Chapter II",
+        "",
+        "THE REPAIRER OF REPUTATIONS",
+        "",
+        "THE MASK",
         "",
         "",
         "",
-        "CHAPTER I",
+        "THE REPAIRER OF REPUTATIONS",
+        "",
+        "Body prose.",
     ]
-    result = _detect_toc(lines, 0, len(lines))
-    assert result is not None
-    toc_start, toc_end = result
-    assert toc_start == 0
-    assert toc_end < len(lines)
+    assert _detect_toc(lines, 0, len(lines)) == (0, 7)
+
+
+def test_detect_toc_ignores_a_region_too_far_from_the_marker():
+    """A dense numbered region deep in the body -- Marcus Aurelius's
+    numbered paragraphs, Ruskin's lettered sections -- is the book, not its
+    contents. Only a region within reach of the marker counts."""
+    lines = _contents_fixture() + [""] * 400
+    far = _detect_toc(lines, 0, len(lines), regions=[(300, 340)])
+    assert far == _detect_toc(lines, 0, len(lines))
+    assert far is not None and far[1] < 300
+
+
+def test_detect_toc_keeps_a_distant_preamble():
+    """When the listing begins well after the marker, the lines between
+    are as likely a preface as a preamble, so they are kept and the skip
+    begins at the listing itself. Kant's Critique opens its listing 185
+    lines after the word CONTENTS."""
+    lines = _contents_fixture(marker_at=0) + [""] * 200
+    result = _detect_toc(lines, 0, len(lines), regions=[(100, 140)])
+    assert result == (100, 141)
+
+
+def test_detect_toc_takes_a_close_preamble_with_the_listing():
+    """Emma's marker is followed by "VOLUME I." before the first CHAPTER;
+    Les Miserables' by "LES MISERABLES / PREFACE / VOLUME I / BOOK FIRST".
+    Within reach, those are part of the listing and go with it."""
+    lines = _contents_fixture(marker_at=0) + [""] * 100
+    result = _detect_toc(lines, 0, len(lines), regions=[(12, 40)])
+    assert result == (0, 41)
 
 
 # ---------------------------------------------------------------------------
@@ -971,3 +1029,164 @@ def test_catalog_sync_title_matches_directory_so_audit_stays_clean(tmp_path, mon
 
     dg.run_catalog_sync(["drama"])
     assert parse_catalog(str(catalogs / "drama.txt")) == [(1754, "The sea-gull")]
+
+
+# ---------------------------------------------------------------------------
+# Phase 2: heading shapes the converter used to walk past
+# ---------------------------------------------------------------------------
+
+
+def test_is_heading_chapter_word_numeral():
+    result = _is_heading("Chapter One")
+    assert result is not None
+    assert result[0] == 2
+
+
+def test_is_heading_chapter_word_numeral_all_caps_compound():
+    result = _is_heading("CHAPTER TWENTY-THREE")
+    assert result is not None
+    assert result[0] == 2
+
+
+def test_is_heading_part_word_numeral_with_title():
+    result = _is_heading("PART ONE--The Old Buccaneer")
+    assert result is not None
+    assert result[0] == 2
+
+
+def test_is_heading_word_numeral_needs_a_separator():
+    """ "Chapter One" is a heading; "Chapter One was ..." is a sentence."""
+    assert _is_heading("Chapter One was the longest of them all") is None
+
+
+def test_is_heading_ignores_spelled_out_volume():
+    """A publisher's series label on a title page, not a division.
+
+    Matching it would also stop _skip_title_page, which reads a recognised
+    heading as the end of the front matter.
+    """
+    assert _is_heading("Volume Seventeen") is None
+
+
+def test_is_heading_title_case_front_matter():
+    for line in ("Preface", "Introduction.", "Epilogue"):
+        result = _is_heading(line)
+        assert result is not None, line
+        assert result[0] == 3
+
+
+def test_is_heading_front_matter_word_must_stand_alone():
+    assert _is_heading("Introduction to the study of history") is None
+
+
+# ---------------------------------------------------------------------------
+# _repeated_title_lines
+# ---------------------------------------------------------------------------
+
+
+def _titled(*titles):
+    lines = ["CHAPTER I", "", "Some opening prose here.", ""]
+    for title in titles:
+        lines += [title, "", "Body text for that piece.", ""]
+    return lines
+
+
+def test_repeated_title_lines_promotes_a_templated_run():
+    lines = _titled(
+        "The Story of the Merchant and the Genius",
+        "The Story of the Fisherman",
+        "The Story of the Husband and the Parrot",
+        "The Story of the Envious Man",
+        "The Story of the Three Calenders",
+    )
+    found = _repeated_title_lines(lines, 0, range(0))
+    assert len(found) == 5
+    assert all(lines[i].startswith("The Story of") for i in found)
+
+
+def test_repeated_title_lines_needs_the_threshold():
+    lines = _titled(
+        "The Story of the Merchant and the Genius",
+        "The Story of the Fisherman",
+        "The Story of the Husband and the Parrot",
+    )
+    assert _repeated_title_lines(lines, 0, range(0)) == set()
+
+
+def test_repeated_title_lines_ignores_one_line_repeated():
+    """Don Quixote prints "Full Size" under 260 plates; none is a title."""
+    lines = _titled(*["Full Size"] * 8)
+    assert _repeated_title_lines(lines, 0, range(0)) == set()
+
+
+def test_repeated_title_lines_skips_the_toc_region():
+    lines = _titled(
+        "The Story of the Merchant and the Genius",
+        "The Story of the Fisherman",
+        "The Story of the Husband and the Parrot",
+        "The Story of the Envious Man",
+        "The Story of the Three Calenders",
+    )
+    assert _repeated_title_lines(lines, 0, range(0, len(lines))) == set()
+
+
+def test_looks_like_story_title_rejects_prose_and_captions():
+    assert _looks_like_story_title("The Story of the Fisherman")
+    assert not _looks_like_story_title("Frontispiece Volume One")
+    assert not _looks_like_story_title("he went down to the sea again")
+    assert not _looks_like_story_title("She turned and walked away slowly.")
+
+
+def test_text_to_markdown_keeps_the_book_when_the_contents_cannot_be_bounded():
+    """Declining to skip must never cost the reader text.
+
+    detect_toc deletes everything it returns. Jekyll and Hyde's contents are
+    named chapters with no numbers, so the structural profile finds nothing
+    there to anchor, and the only safe answer is to skip nothing: the
+    listing leaks in as a few duplicate headings, and the chapter heading
+    and Stevenson's opening survive. The rule this replaced counted blank
+    lines instead, ran to its bound, and the committed text began mid-scene
+    on Enfield talking (#103).
+    """
+    text = "\n\n".join(
+        [
+            "CONTENTS",
+            "STORY OF THE DOOR",
+            "SEARCH FOR MR. HYDE",
+            "DR. JEKYLL WAS QUITE AT EASE",
+            "STORY OF THE DOOR",
+            "Mr. Utterson the lawyer was a man of a rugged countenance.",
+        ]
+    )
+    result = text_to_markdown(text, {"title": "T", "author": "A"})
+    assert "Mr. Utterson the lawyer was a man of a rugged countenance." in result
+    assert "DR. JEKYLL WAS QUITE AT EASE" in result
+    assert "STORY OF THE DOOR" in result
+
+
+def test_text_to_markdown_skips_a_numbered_contents_list_and_keeps_the_body():
+    """The Moby Dick gate in miniature: the listing goes, the body stays.
+
+    Melville's contents list all 135 chapters in the same form the body
+    headings take, and a converter that cannot tell the two apart emits
+    every chapter heading twice. With the listing bounded by the profile
+    and anchored to the CONTENTS marker, each heading appears once and the
+    first line of the story is intact.
+    """
+    prose = "having little or no money in my purse, and nothing particular to interest me"
+    chapters = ["CHAPTER 1. Loomings.", "CHAPTER 2. The Carpet-Bag.", "CHAPTER 3. The Spouter-Inn."]
+    lines = ["CONTENTS", "", *[f"CHAPTER {n}. Entry {n}." for n in range(1, 9)], "", ""]
+    for heading in chapters:
+        lines += [
+            heading,
+            "",
+            "Call me Ishmael. Some years ago, never mind how long precisely,",
+            *[prose] * 3,
+            "",
+        ]
+    result = text_to_markdown("\n".join(lines), {"title": "T", "author": "A"})
+    assert "Call me Ishmael." in result
+    assert "CONTENTS" not in result
+    assert "Entry 1." not in result
+    for heading in chapters:
+        assert result.count(heading) == 1, heading

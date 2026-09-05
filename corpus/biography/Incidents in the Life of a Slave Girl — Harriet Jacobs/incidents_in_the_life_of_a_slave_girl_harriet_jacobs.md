@@ -113,6 +113,80 @@ cruelty.
 
 L. Maria Child.
 
+Contents
+
+Childhood
+
+The New Master And Mistress
+
+The Slaves’ New Year’s Day
+
+The Slave Who Dared To Feel Like A Man
+
+The Trials Of Girlhood
+
+The Jealous Mistress
+
+The Lover
+
+What Slaves Are Taught To Think Of The North
+
+Sketches Of Neighboring Slaveholders
+
+A Perilous Passage In The Slave Girl’s Life
+
+The New Tie To Life
+
+Fear Of Insurrection
+
+The Church And Slavery
+
+Another Link To Life
+
+Continued Persecutions
+
+Scenes At The Plantation
+
+The Flight
+
+Months Of Peril
+
+The Children Sold
+
+New Perils
+
+The Loophole Of Retreat
+
+Christmas Festivities
+
+Still In Prison
+
+The Candidate For Congress
+
+Competition In Cunning
+
+Important Era In My Brother’s Life
+
+New Destination For The Children
+
+Aunt Nancy
+
+Preparations For Escape
+
+Northward Bound
+
+Incidents In Philadelphia
+
+The Meeting Of Mother And Daughter
+
+A Home Found
+
+The Old Enemy Again
+
+Prejudice Against Color
+
+The Hairbreadth Escape
+
 A Visit To England
 
 Renewed Invitations To Go South

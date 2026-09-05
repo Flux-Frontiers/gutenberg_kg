@@ -30,7 +30,7 @@ Paris, 12 April 1857
 
 ## Part I
 
-*Chapter One*
+## Chapter One
 
 We were in class when the head-master came in, followed by a “new
 fellow,” not wearing the school uniform, and a school servant carrying a
@@ -383,7 +383,7 @@ was neglecting her, he loved another. She had been warned she would be
 unhappy; and she ended by asking him for a dose of medicine and a little
 more love.
 
-Chapter Two
+## Chapter Two
 
 One night towards eleven o’clock they were awakened by the noise of
 a horse pulling up outside their door. The servant opened the
@@ -665,7 +665,7 @@ their room; saw her dress still hanging at the foot of the alcove; then,
 leaning against the writing-table, he stayed until the evening, buried
 in a sorrowful reverie. She had loved him after all!
 
-Chapter Three
+## Chapter Three
 
 One morning old Rouault brought Charles the money for setting his
 leg--seventy-five francs in forty-sou pieces, and a turkey. He had heard
@@ -865,7 +865,7 @@ there was a wedding at which forty-three persons were present, at which
 they remained sixteen hours at table, began again the next day, and to
 some extent on the days following.
 
-Chapter Four
+## Chapter Four
 
 The guests arrived early in carriages, in one-horse chaises, two-wheeled
 cars, old open gigs, waggonettes with leather hoods, and the young
@@ -1049,7 +1049,7 @@ The old servant presented herself, curtsied to her, apologised for not
 having dinner ready, and suggested that madame, in the meantime, should
 look over her house.
 
-Chapter Five
+## Chapter Five
 
 The brick front was just in a line with the street, or rather the road.
 Behind the door hung a cloak with a small collar, a bridle, and a black
@@ -1160,7 +1160,7 @@ have been mistaken. And Emma tried to find out what one meant exactly in
 life by the words felicity, passion, rapture, that had seemed to her so
 beautiful in books.
 
-Chapter Six
+## Chapter Six
 
 She had read “Paul and Virginia,” and she had dreamed of the little
 bamboo-house, the nigger Domingo, the dog Fidele, but above all of the
@@ -1332,7 +1332,7 @@ great bird with rose-coloured wings, hung in the splendour of the skies
 of poesy; and now she could not think that the calm in which she lived
 was the happiness she had dreamed.
 
-Chapter Seven
+## Chapter Seven
 
 She thought, sometimes, that, after all, this was the happiest time
 of her life--the honeymoon, as people called it. To taste the full
@@ -1548,7 +1548,7 @@ held a bandbox between his knees.
 They arrived at nightfall, just as the lamps in the park were being lit
 to show the way for the carriages.
 
-Chapter Eight
+## Chapter Eight
 
 The château, a modern building in Italian style, with two projecting
 wings and three flights of steps, lay at the foot of an immense
@@ -1944,7 +1944,7 @@ She forgot the tune of the quadrilles; she no longer saw the liveries
 and appointments so distinctly; some details escaped her, but the regret
 remained with her.
 
-Chapter Nine
+## Chapter Nine
 
 Often when Charles was out she took from the cupboard, between the
 folds of the linen where she had left it, the green silk cigar case.
@@ -2341,7 +2341,7 @@ When they left Tostes at the month of March, Madame Bovary was pregnant.
 
 ## Part II
 
-*Chapter One*
+## Chapter One
 
 Yonville-l’Abbaye (so called from an old Capuchin abbey of which not
 even the ruins remain) is a market-town twenty-four miles from Rouen,
@@ -2691,7 +2691,7 @@ rivers; and his own father had possessed a poodle, which, after twelve
 years of absence, had all of a sudden jumped on his back in the street
 as he was going to dine in town.
 
-Chapter Two
+## Chapter Two
 
 Emma got out first, then Félicité, Monsieur Lheureux, and a nurse, and
 they had to wake up Charles in his corner, where he had slept soundly
@@ -2946,7 +2946,7 @@ the same way in different places, and since the portion of her life
 lived had been bad, no doubt that which remained to be lived would be
 better.
 
-Chapter Three
+## Chapter Three
 
 The next day, as she was getting up, she saw the clerk on the Place. She
 had on a dressing-gown. He looked up and bowed. She nodded quickly and
@@ -3366,7 +3366,7 @@ druggist. Charles had not appeared particularly anxious to see him
 again, and Léon did not know what to do between his fear of being
 indiscreet and the desire for an intimacy that seemed almost impossible.
 
-Chapter Four
+## Chapter Four
 
 When the first cold days set in Emma left her bedroom for the
 sitting-room, a long apartment with a low ceiling, in which there was
@@ -3511,7 +3511,7 @@ the terrace of houses it makes lakes when the pipes are choked, and she
 would thus have remained in her security when she suddenly discovered a
 rent in the wall of it.
 
-Chapter Five
+## Chapter Five
 
 It was a Sunday in February, an afternoon when the snow was falling.
 
@@ -3866,7 +3866,7 @@ Then, after her marriage, it went off, they say.”
 
 “But with me,” replied Emma, “it was after marriage that it began.”
 
-Chapter Six
+## Chapter Six
 
 One evening when the window was open, and she, sitting by it, had been
 watching Lestiboudois, the beadle, trimming the box, she suddenly heard
@@ -4402,7 +4402,7 @@ morning the paper alluded to it. It would be of the utmost importance
 for our district. But we’ll talk it over later on. I can see, thank you;
 Justin has the lantern.”
 
-Chapter Seven
+## Chapter Seven
 
 The next day was a dreary one for Emma. Everything seemed to her
 enveloped in a black atmosphere floating confusedly over the exterior of
@@ -4732,7 +4732,7 @@ shall become friends; I’ll invite them to my place. By Jove!” added he,
 “there’s the agricultural show coming on. She’ll be there. I shall see
 her. We’ll begin boldly, for that’s the surest way.”
 
-Chapter Eight
+## Chapter Eight
 
 At last it came, the famous agricultural show. On the morning of the
 solemnity all the inhabitants at their doors were chatting over the
@@ -5615,7 +5615,7 @@ event disturbed this family meeting.” And he added “Only the absence
 of the clergy was remarked. No doubt the priests understand progress in
 another fashion. Just as you please, messieurs the followers of Loyola!”
 
-Chapter Nine
+## Chapter Nine
 
 Six weeks passed. Rodolphe did not come again. At last one evening he
 appeared.
@@ -6038,7 +6038,7 @@ unexpectedly, he frowned as one put out.
 At last he declared with a serious air that her visits were becoming
 imprudent--that she was compromising herself.
 
-Chapter Ten
+## Chapter Ten
 
 Gradually Rodolphe’s fears took possession of her. At first, love had
 intoxicated her; and she had thought of nothing beyond. But now that he
@@ -6379,7 +6379,7 @@ no opportunities for such a revival of sentiment, so that she was much
 embarrassed by her desire for sacrifice, when the druggist came just in
 time to provide her with an opportunity.
 
-Chapter Eleven
+## Chapter Eleven
 
 He had recently read a eulogy on a new method for curing club-foot, and
 as he was a partisan of progress, he conceived the patriotic idea that
@@ -6849,7 +6849,7 @@ waiting for him at the foot of the steps on the lowest stair. They threw
 their arms round one another, and all their rancour melted like snow
 beneath the warmth of that kiss.
 
-Chapter Twelve
+## Chapter Twelve
 
 They began to love one another again. Often, even in the middle of the
 day, Emma suddenly wrote to him, then from the window made a sign to
@@ -7432,7 +7432,7 @@ He was saying these things to give himself firmness.
 “And besides, the worry, the expense! Ah! no, no, no, no! a thousand
 times no! That would be too stupid.”
 
-Chapter Thirteen
+## Chapter Thirteen
 
 No sooner was Rodolphe at home than he sat down quickly at his bureau
 under the stag’s head that hung as a trophy on the wall. But when he had
@@ -7825,7 +7825,7 @@ first signs of cancer.
 
 And besides this, the poor fellow was worried about money matters.
 
-Chapter Fourteen
+## Chapter Fourteen
 
 To begin with, he did not know how he could pay Monsieur Homais for all
 the physic supplied by him, and though, as a medical man, he was not
@@ -8212,7 +8212,7 @@ much afraid of missing the beginning, and, without having had time to
 swallow a plate of soup, they presented themselves at the doors of the
 theatre, which were still closed.
 
-Chapter Fifteen
+## Chapter Fifteen
 
 The crowd was waiting against the wall, symmetrically enclosed between
 the balustrades. At the corner of the neighbouring streets huge bills
@@ -8546,7 +8546,7 @@ struck half-past eleven.
 
 ## Part III
 
-*Chapter One*
+## Chapter One
 
 Monsieur Léon, while studying law, had gone pretty often to the
 dancing-rooms, where he was even a great success amongst the grisettes,
@@ -9154,7 +9154,7 @@ At about six o’clock the carriage stopped in a back street of the
 Beauvoisine Quarter, and a woman got out, who walked with her veil down,
 and without turning her head.
 
-Chapter Two
+## Chapter Two
 
 On reaching the inn, Madame Bovary was surprised not to see the
 diligence. Hivert, who had waited for her fifty-three minutes, had at
@@ -9550,7 +9550,7 @@ mutual consideration. At last she cried with affected waywardness--
 The next morning she set out in the “Hirondelle” to go to Rouen to
 consult Monsieur Léon, and she stayed there three days.
 
-Chapter Three
+## Chapter Three
 
 They were three full, exquisite days--a true honeymoon. They were at
 the Hotel-de-Boulogne, on the harbour; and they lived there, with drawn
@@ -9634,7 +9634,7 @@ envelope that he admired greatly her amorous astuteness.
 “But why,” he thought afterwards as he came back through the streets
 alone, “is she so very anxious to get this power of attorney?”
 
-Chapter Four
+## Chapter Four
 
 Léon soon put on an air of superiority before his comrades, avoided
 their company, and completely neglected his work.
@@ -9761,7 +9761,7 @@ And thus it was she set about obtaining her husband’s permission to go
 to town once a week to see her lover. At the end of a month she was even
 considered to have made considerable progress.
 
-Chapter Five
+## Chapter Five
 
 She went on Thursdays. She got up and dressed silently, in order not to
 awaken Charles, who would have made remarks about her getting ready too
@@ -10424,7 +10424,7 @@ and kisses that thrilled his soul. Where could she have learnt this
 corruption almost incorporeal in the strength of its profanity and
 dissimulation?
 
-Chapter Six
+## Chapter Six
 
 During the journeys he made to see her, Léon had often dined at the
 chemist’s, and he felt obliged from politeness to invite him in turn.
@@ -11137,7 +11137,7 @@ sobbing.
 
 “What do I care?” said he, shutting the door.
 
-Chapter Seven
+## Chapter Seven
 
 She was stoical the next day when Maitre Hareng, the bailiff, with two
 assistants, presented himself at her house to draw up the inventory for
@@ -11713,7 +11713,7 @@ single moment, their lost love. So she set out towards La Huchette, not
 seeing that she was hastening to offer herself to that which but a while
 ago had so angered her, not in the least conscious of her prostitution.
 
-Chapter Eight
+## Chapter Eight
 
 She asked herself as she walked along, “What am I going to say? How
 shall I begin?” And as she went on she recognised the thickets,
@@ -12461,7 +12461,7 @@ Her petticoat has flown away.”
 She fell back upon the mattress in a convulsion. They all drew near. She
 was dead.
 
-Chapter Nine
+## Chapter Nine
 
 There is always after the death of anyone a kind of stupefaction;
 so difficult is it to grasp this advent of nothingness and to resign
@@ -12811,7 +12811,7 @@ people of Yonville began to flock round.
 Old Rouault arrived, and fainted on the Place when he saw the black
 cloth!
 
-Chapter Ten
+## Chapter Ten
 
 He had only received the chemist’s letter thirty-six hours after the
 event; and, from consideration for his feelings, Homais had so worded it
@@ -13031,7 +13031,7 @@ The gate suddenly grated. It was Lestiboudois; he came to fetch his
 spade, that he had forgotten. He recognised Justin climbing over the
 wall, and at last knew who was the culprit who stole his potatoes.
 
-Chapter Eleven
+## Chapter Eleven
 
 The next day Charles had the child brought back. She asked for her
 mamma. They told her she was away; that she would bring her back some

@@ -311,7 +311,7 @@ Theo. Audel & Co.
 
 Printed tn the United States of America
 
-Foreword
+### Foreword
 
 This series 1s dedicated to Electrical
 Progress—to all who have helped and
@@ -604,7 +604,7 @@ Speed control of signals, 3,948.
 
 Classification, 3,953.
 
-## Section locking, 3,954.
+Section locking, 3,954.
 
 Sectional route and approach locking, 3,955.
 Stick and check locking, 3,956.
@@ -14146,8 +14146,7 @@ of manual labor employed.
 Distinction is made between several kinds of locking, classec»
 as:
 
-## Section locking;
-
+Section locking;
 Sectional route locking;
 Approach locking;
 Stick locking;
@@ -14156,8 +14155,7 @@ Check locking.
 
 a
 
-## Section Locking.—Section or detector locking consists of thu!
-
+Section Locking.—Section or detector locking consists of thu!
 control of switches by track sections which may form a part or al
 of a route and of which the switches protected are a part.
 
@@ -15333,8 +15331,7 @@ hice
 
 Fic. 6,637.—Indication circult for cross over.
 
-## Section Locking.—Section or detector locking has practically
-
+Section Locking.—Section or detector locking has practically
 superseded the older form of switch protection, mechanical de-
 tector bars, used before track circuits were available for pre-
 venting the unlocking and moving of switch points when a

@@ -1,7 +1,11 @@
 # Monolithic sections: why Franklin is one 885-chunk block, and the fix
 
-Written 2026-09-03 on branch `fix/monolithic-sections`. Plan only; nothing
-below is implemented yet.
+Written 2026-09-03 on branch `fix/monolithic-sections`.
+
+**Closed 2026-09-04. All phases except Phase 4 are implemented and shipped;
+see [Outcome](#outcome-2026-09-04) at the end for what was built, what the
+15 books look like now, and answers to the open questions.** The body below
+is the original plan, left as written.
 
 ## The symptom
 
@@ -313,3 +317,89 @@ before ingesting, and treat unexpected body changes as their own event.
 - `analysis/monolithic_sections_20260903.csv`: the measurement
 - `analysis/front_matter_assessment.json`: the earlier front-matter finding
   this gives a mechanism to
+
+## Outcome (2026-09-04)
+
+Shipped across PRs #98-#108. Phases 0-3 are implemented; Phase 4 was never
+needed. The work outgrew this document partway through and continued in
+`analysis/STRUCTURAL_PARSER_PLAN.md`, which supersedes Phase 2's
+pattern-by-pattern approach for anything involving a contents list.
+
+| phase | | where |
+|---|---|---|
+| 0 | measurement as a check | `scripts/check_sections.py`, #98 |
+| 1 | stop promoting the title page; `Navigation` as TOC | #98 |
+| 2 | word numerals, repeated Title-Case titles, Title-Case front matter | #99 |
+| 3 | Browse windowing at export time | #98 |
+| 4 | per-book overrides | not needed, not built |
+
+### The 15 books
+
+Section counts then, and now, measured from the corpus Markdown and from
+tonight's `gutenberg.pack`:
+
+| book | plan | headings now | Browse sections now |
+|---|---:|---:|---:|
+| One Thousand and One Nights | 1 | 19 | 170 |
+| The Trial (Kafka) | 1 | 10 | 134 |
+| The Life of Samuel Johnson (Boswell) | 3 | 3 | 358 |
+| Incidents in the Life of a Slave Girl | 3 | 2 | 132 |
+| Autobiography of Benjamin Franklin | 3 | 2 | 109 |
+| Faust Part I | 2 | 1 | 57 |
+| The Symposium | 1 | 1 | 53 |
+| Hedda Gabler | 2 | 1 | 53 |
+| Autobiography of Charles Darwin | 1 | 0 | 37 |
+| The Dunwich Horror | 1 | 0 | 30 |
+
+**Only two of the fifteen gained real headings**, and that is the designed
+outcome rather than a shortfall. Phase 2 recovers structure that is present
+in the text and unmarked -- The Trial's ten `Chapter One` lines, 1001
+Nights' story titles -- and there is nothing to recover in the rest.
+Boswell has no divisions to find; the Symposium is a single dialogue.
+Phase 3 is what makes those browsable, and the third column is Phase 3
+working: Boswell goes from 3 unusable sections to 358 windowed parts,
+Franklin from 3 to 109.
+
+The plan predicted this for Franklin specifically and was right: its four
+editorial hinges are not a shape any general pattern can catch. Phase 4
+existed for exactly that case and is still not worth building, because
+windowing already made the book readable.
+
+### Answers to the open questions
+
+1. **The Dunwich Horror.** The Gutenberg text carries no standalone part
+   markers -- Lovecraft's ten numbered parts are not in this edition.
+   It belongs on the correctly-single-section list, and windowing gives it
+   30 parts.
+2. **Title-Case story titles: repeat-count guard or context rules?** The
+   repeat-count guard, as suspected. `repeated_title_lines` requires the
+   same shape five times in one file, which is what separates a story
+   collection from a one-line paragraph. 1001 Nights gets 19 headings.
+   The stricter context rules were never needed.
+3. **Phase 3 in DocKG or at export time?** Export time, as recommended.
+   `window_oversized_sections` in `export_swift.py`. Contained to this
+   repo, and retrieval is provably untouched: synthetic rows carry no
+   content and no vector and are excluded from `rowid_by_id`.
+4. **Corpus-wide re-download?** Superseded. Re-downloading per book was the
+   wrong shape: PG's text drifts, so a fetch mixes converter changes with
+   upstream edits. What replaced it was caching all 243 raw texts locally
+   once, converting old-vs-new against a pristine worktree, reading every
+   difference, and writing only books whose diff moved in the expected
+   direction. That harness caught defects no test suite would have.
+
+### One number worth recording
+
+Browse was the visible problem, but the last change also moved retrieval.
+recall@10 held at 0.958 through every export in this work and reached
+**0.975** after #106 removed the contents lists -- passages that were
+competing as retrieval seeds. That is the front-matter contamination noted
+in `analysis/front_matter_assessment.json`, finally quantified.
+
+### Still open, tracked elsewhere
+
+- Two prose lines shipping as headings (Leviathan, The Jungle Book) -- see
+  the Step 4 outcome in `analysis/STRUCTURAL_PARSER_PLAN.md`.
+- Per-book `.dockg` staleness, corpus-wide and predating this work. It is
+  why `scripts/check_sections.py` now under-reports: it reads those stores,
+  and most were last built before doc-kg 0.23.0. A
+  `gutenkg ingest --force-build` sweep would fix both.

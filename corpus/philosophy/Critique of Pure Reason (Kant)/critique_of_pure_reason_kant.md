@@ -10,6 +10,49 @@ By Immanuel Kant
 
 Translated by J. M. D. Meiklejohn
 
+First Part—TRANSCENDENTAL ÆSTHETIC
+
+§ 1. Introductory
+
+SECTION I. OF SPACE
+
+§ 2. Metaphysical Exposition of this Conception.
+
+§ 3. Transcendental Exposition of the Conception of Space.
+
+§ 4. Conclusions from the foregoing Conceptions.
+
+SECTION II. OF TIME
+
+§ 5. Metaphysical Exposition of this Conception.
+
+§ 6. Transcendental Exposition of the Conception of Time.
+
+§ 7. Conclusions from the above Conceptions.
+
+§ 8. Elucidation.
+
+§ 9. General Remarks on Transcendental Æsthetic.
+
+§ 10. Conclusion of the Transcendental Æsthetic.
+
+Second Part—TRANSCENDENTAL LOGIC
+
+Introduction. Idea of a Transcendental Logic
+
+I. Of Logic in General
+
+II. Of Transcendental Logic
+
+III. Of the Division of General Logic into Analytic and Dialectic
+
+IV. Of the Division of Transcendental Logic into Transcendental
+Analytic and Dialectic
+
+FIRST DIVISION—TRANSCENDENTAL ANALYTIC
+
+## BOOK I. Analytic of Conceptions. § 2
+
 ## Chapter I. Of the Transcendental Clue to the Discovery of all Pure
 
 *Conceptions of the Understanding*
@@ -1235,7 +1278,7 @@ time, the requisite elegance also.
 
 KÖNIGSBERG, _April_ 1787.
 
-Introduction
+### Introduction
 
 I. Of the difference between Pure and Empirical Knowledge
 

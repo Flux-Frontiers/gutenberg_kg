@@ -404,7 +404,7 @@ OP a eB Shes Leo pe
 OL ee
 '® Oren
 
-Foreword
+### Foreword
 
 This series.is dedicated to Electrical
 Progress—to all who have helped and
@@ -29038,7 +29038,7 @@ crossings?
 
 . Draw a sketch showing method of installing catenary
 
-## section insulators.
+section insulators.
 
 . Describe the method of supporting the trolley or slipper
 

@@ -10,6 +10,77 @@ by Henry Adams
 
 ### THE EDUCATION OF HENRY ADAMS CONTENTS EDITOR'S PREFACE PREFACE I. QUINCY (1838-1848) II. BOSTON (1848-1854) III. WASHINGTON (1850-1854) IV. HARVARD COLLEGE (1854-1858) V. BERLIN (1858-1859) VI. ROME (1859-1860) VII. TREASON (1860-1861) VIII. DIPLOMACY (1861) IX. FOES OR FRIENDS (1862) X. POLITICAL MORALITY (1862) XI. THE BATTLE OF THE RAMS (1863) XII. ECCENTRICITY (1863) XIII. THE PERFECTION OF HUMAN SOCIETY (1864) XIV. DILETTANTISM (1865-1866) XV. DARWINISM (1867-1868) XVI. THE PRESS (1868) XVII. PRESIDENT GRANT (1869) XVIII. FREE FIGHT (1869-1870) XIX. CHAOS (1870) XX. FAILURE (1871) XXI. TWENTY YEARS AFTER (1892) XXII. CHICAGO (1893) XXIII. SILENCE (1894-1898) XXIV. INDIAN SUMMER (1898-1899) XXV. THE DYNAMO AND THE VIRGIN (1900) XXVI. TWILIGHT (1901) XXVII. TEUFELSDROCKH (1901) XXVIII. THE HEIGHT OF KNOWLEDGE (1902) XXIX. THE ABYSS OF IGNORANCE (1902) XXX. VIS INERTIAE (1903) XXXI. THE GRAMMAR OF SCIENCE (1903) XXXII. VIS NOVA (1903-1904) XXXIII. A DYNAMIC THEORY OF HISTORY (1904) XXXIV. A LAW OF ACCELERATION (1904) XXXV. NUNC AGE (1905)
 
+### EDITOR'S PREFACE
+
+THIS volume, written in 1905 as a sequel to the same author's
+"Mont Saint Michel and Chartres," was privately printed, to the number
+of one hundred copies, in 1906, and sent to the persons interested, for
+their assent, correction, or suggestion. The idea of the two books was
+thus explained at the end of Chapter XXIX: --
+
+"Any schoolboy could see that man as a force must be measured
+by motion from a fixed point. Psychology helped here by suggesting a
+unit--the point of history when man held the highest idea of himself as
+a unit in a unified universe. Eight or ten years of study had led Adams
+to think he might use the century 1150-1250, expressed in Amiens
+Cathedral and the Works of Thomas Aquinas, as the unit from which he
+might measure motion down to his own time, without assuming anything as
+true or untrue, except relation. The movement might be studied at once
+in philosophy and mechanics. Setting himself to the task, he began a
+volume which he mentally knew as 'Mont-Saint-Michel and Chartres: a
+Study of Thirteenth-Century Unity.' From that point he proposed to fix
+a position for himself, which he could label: 'The Education of Henry
+Adams: a Study of Twentieth-Century Multiplicity.' With the help of
+these two points of relation, he hoped to project his lines forward and
+backward indefinitely, subject to correction from any one who should
+know better."
+
+The "Chartres" was finished and privately printed in 1904. The
+"Education" proved to be more difficult. The point on which the author
+failed to please himself, and could get no light from readers or
+friends, was the usual one of literary form. Probably he saw it in
+advance, for he used to say, half in jest, that his great ambition was
+to complete St. Augustine's "Confessions," but that St. Augustine, like
+a great artist, had worked from multiplicity to unity, while he, like a
+small one, had to reverse the method and work back from unity to
+multiplicity. The scheme became unmanageable as he approached his end.
+
+Probably he was, in fact, trying only to work into it his
+favorite theory of history, which now fills the last three or four
+chapters of the "Education," and he could not satisfy himself with his
+workmanship. At all events, he was still pondering over the problem in
+1910, when he tried to deal with it in another way which might be more
+intelligible to students. He printed a small volume called "A Letter to
+American Teachers," which he sent to his associates in the American
+Historical Association, hoping to provoke some response. Before he
+could satisfy himself even on this minor point, a severe illness in the
+spring of 1912 put an end to his literary activity forever.
+
+The matter soon passed beyond his control. In 1913 the
+Institute of Architects published the "Mont-Saint-Michel and Chartres."
+Already the "Education" had become almost as well known as the
+"Chartres," and was freely quoted by every book whose author requested
+it. The author could no longer withdraw either volume; he could no
+longer rewrite either, and he could not publish that which he thought
+unprepared and unfinished, although in his opinion the other was
+historically purposeless without its sequel. In the end, he preferred
+to leave the "Education" unpublished, avowedly incomplete, trusting
+that it might quietly fade from memory. According to his theory of
+history as explained in Chapters XXXIII and XXXIV, the teacher was at
+best helpless, and, in the immediate future, silence next to
+good-temper was the mark of sense. After midsummer, 1914, the rule was
+made absolute.
+
+The Massachusetts Historical Society now publishes the
+"Education" as it was printed in 1907, with only such marginal
+corrections as the author made, and it does this, not in opposition to
+the author's judgment, but only to put both volumes equally within
+reach of students who have occasion to consult them.
+
+### HENRY CABOT LODGE
+
+*September, 1918*
+
 ### PREFACE
 
 JEAN JACQUES ROUSSEAU began his famous Confessions by a

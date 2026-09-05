@@ -392,7 +392,7 @@ Cross!”
 hand and watching the man out of sight. He seemed to be gone in a
 moment, melting away down there into the sea of willows where the sun
 caught them in the bend of the river and turned them into a great
-crimson wall of beauty. Mist, too, had begun to ruse, so that the air
+crimson wall of beauty. Mist, too, had begun to rise, so that the air
 was hazy.
 
 “But what in the world is he doing at nightfall on this flooded river?”
@@ -928,7 +928,7 @@ changed somehow since the evening before. His manner was different—a
 trifle excited, a trifle shy, with a sort of suspicion about his voice
 and gestures. I hardly know how to describe it now in cold blood, but
 at the time I remember being quite certain of one thing—that he had
-become frightened?
+become frightened!
 
 He ate very little breakfast, and for once omitted to smoke his pipe.
 He had the map spread open beside him, and kept studying its markings.
@@ -1219,7 +1219,7 @@ occasional brief gusts—the river seemed to me to grow blacker, the
 willows to stand more densely together. The latter, too, kept up a sort
 of independent movement of their own, rustling among themselves when no
 wind stirred, and shaking oddly from the roots upwards. When common
-objects in this way be come charged with the suggestion of horror, they
+objects in this way become charged with the suggestion of horror, they
 stimulate the imagination far more than things of unusual appearance;
 and these bushes, crowding huddled about us, assumed for me in the
 darkness a bizarre _grotesquerie_ of appearance that lent to them

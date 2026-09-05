@@ -4,6 +4,13 @@
 
 ---
 
+</pre>
+
+Produced by Barbara Watson and the Online Distributed
+Proofreading Canada Team at http://www.pgdpcanada.net (This
+file was produced from images generously made available
+by The Internet Archive/Canadian Libraries)
+
 ### THE MEDEA OF EURIPIDES
 
 ### TRANSLATED INTO ENGLISH RHYMING VERSE WITH EXPLANATORY NOTES BY
@@ -3327,3 +3334,5 @@ Page 81: P[)e]lias --> Pelias
 
 Other than the addition of missing periods, minor variations in
 spelling and punctuation have been preserved.
+
+<pre id="pg-footer">

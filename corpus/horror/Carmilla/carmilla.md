@@ -3118,7 +3118,7 @@ have summarized my account of this last shocking scene.
 
 ### XVI.
 
-*Conclusion*
+### Conclusion
 
 I write all this you suppose with composure. But far from it; I cannot
 think of it without agitation. Nothing but your earnest desire so

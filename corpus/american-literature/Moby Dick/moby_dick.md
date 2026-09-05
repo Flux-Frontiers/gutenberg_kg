@@ -10,95 +10,9 @@ or, THE WHALE.
 
 By Herman Melville
 
-## CHAPTER 93. The Castaway.
+### Epilogue
 
-## CHAPTER 94. A Squeeze of the Hand.
-
-## CHAPTER 95. The Cassock.
-
-## CHAPTER 96. The Try-Works.
-
-## CHAPTER 97. The Lamp.
-
-## CHAPTER 98. Stowing Down and Clearing Up.
-
-## CHAPTER 99. The Doubloon.
-
-## CHAPTER 100. Leg and Arm.
-
-## CHAPTER 101. The Decanter.
-
-## CHAPTER 102. A Bower in the Arsacides.
-
-## CHAPTER 103. Measurement of The Whale’s Skeleton.
-
-## CHAPTER 104. The Fossil Whale.
-
-## CHAPTER 105. Does the Whale’s Magnitude Diminish?—Will He Perish?
-
-## CHAPTER 106. Ahab’s Leg.
-
-## CHAPTER 107. The Carpenter.
-
-## CHAPTER 108. Ahab and the Carpenter.
-
-## CHAPTER 109. Ahab and Starbuck in the Cabin.
-
-## CHAPTER 110. Queequeg in His Coffin.
-
-## CHAPTER 111. The Pacific.
-
-## CHAPTER 112. The Blacksmith.
-
-## CHAPTER 113. The Forge.
-
-## CHAPTER 114. The Gilder.
-
-## CHAPTER 115. The Pequod Meets The Bachelor.
-
-## CHAPTER 116. The Dying Whale.
-
-## CHAPTER 117. The Whale Watch.
-
-## CHAPTER 118. The Quadrant.
-
-## CHAPTER 119. The Candles.
-
-## CHAPTER 120. The Deck Towards the End of the First Night Watch.
-
-## CHAPTER 121. Midnight.—The Forecastle Bulwarks.
-
-## CHAPTER 122. Midnight Aloft.—Thunder and Lightning.
-
-## CHAPTER 123. The Musket.
-
-## CHAPTER 124. The Needle.
-
-## CHAPTER 125. The Log and Line.
-
-## CHAPTER 126. The Life-Buoy.
-
-## CHAPTER 127. The Deck.
-
-## CHAPTER 128. The Pequod Meets The Rachel.
-
-## CHAPTER 129. The Cabin.
-
-## CHAPTER 130. The Hat.
-
-## CHAPTER 131. The Pequod Meets The Delight.
-
-## CHAPTER 132. The Symphony.
-
-## CHAPTER 133. The Chase—First Day.
-
-## CHAPTER 134. The Chase—Second Day.
-
-## CHAPTER 135. The Chase.—Third Day.
-
-*Epilogue*
-
-Original Transcriber’s Notes:
+*Original Transcriber’s Notes:*
 
 This text is a combination of etexts, one from the now-defunct ERIS
 project at Virginia Tech and one from Project Gutenberg’s archives. The
@@ -21516,7 +21430,7 @@ Now small fowls flew screaming over the yet yawning gulf; a sullen
 white surf beat against its steep sides; then all collapsed, and the
 great shroud of the sea rolled on as it rolled five thousand years ago.
 
-Epilogue
+### Epilogue
 
 “AND I ONLY AM ESCAPED ALONE TO TELL THEE” Job.
 

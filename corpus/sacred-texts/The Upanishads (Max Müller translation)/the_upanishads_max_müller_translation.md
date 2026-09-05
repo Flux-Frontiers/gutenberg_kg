@@ -17,7 +17,7 @@ From the Original Sanskrit Text
 This volume is reverently dedicated to all seekers of truth and
 lovers of wisdom
 
-Preface
+### Preface
 
 The translator's idea of rendering the Upanishads into clear
 simple English, accessible to Occidental readers, had its origin
@@ -63,12 +63,14 @@ Editor
 
 Boston, March, 1919
 
-Introduction
-Isa-Upanishad
+### Introduction
+
+*Isa-Upanishad*
+
 Katha-Upanishad
 Kena-Upanishad
 
-Introduction
+### Introduction
 
 The Upanishads represent the loftiest heights of ancient
 Indo-Aryan thought and culture. They form the wisdom portion or

@@ -352,7 +352,7 @@ mp 4 ES
 FA a
 iat ' aa A
 
-Foreword
+### Foreword
 
 This series is dedicated to Electrical
 Progress—to all who have helped and
