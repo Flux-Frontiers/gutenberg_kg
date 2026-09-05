@@ -8,6 +8,24 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Fixed
+
+- **`check_pins.py --bump` half-applied when PyPI was partly unreachable.**
+  `bump()` aborted only when *every* lookup had failed, so a single unreachable
+  package was dropped from the set while the rest moved, `poetry lock` ran, and
+  the command reported success on a bump that had left one pin behind — the
+  drift the whole-set bump exists to prevent, and which its docstring already
+  claimed could not happen. It now refuses outright and writes nothing.
+- **`_version_key` compared tuples of unequal length**, so `(0, 19)` sorted
+  below `(0, 19, 0)` and a `>=0.19` floor read as below a 0.19.0 ARG. Components
+  are zero-padded to a common width; padding never truncates, so 0.19.0.1 still
+  sorts above 0.19.0. Latent until now — no pin was two-component.
+- **`bump_files` rewrote docker-compose.yml's version build args**, contradicting
+  the check beside it: any `*_VERSION` there is drift whether it agrees or not,
+  because the pins belong only in the Dockerfile. Maintaining the copy kept
+  alive what that check rejects. The compose rewrite is gone; the compose check
+  is unchanged.
+
 ## [1.18.0] - 2026-09-05
 
 The corpus now searches and answers on the device. This release adds the

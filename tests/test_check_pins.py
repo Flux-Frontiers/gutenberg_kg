@@ -340,6 +340,27 @@ class TestPypiReporting:
 # ---------------------------------------------------------------------------
 
 
+class TestVersionOrdering:
+    """_version_key is what every floor comparison runs through."""
+
+    def test_components_compare_numerically_not_lexically(self):
+        assert check_pins._version_key("0.9.0") < check_pins._version_key("0.10.0")
+
+    def test_a_short_version_equals_its_padded_form(self):
+        """``>=0.19`` is not below a 0.19.0 ARG.
+
+        Unpadded, (0, 19) sorts below (0, 19, 0) and the floor check reports a
+        mismatch that is not one.
+        """
+        assert check_pins._version_key("0.19") == check_pins._version_key("0.19.0")
+
+    def test_padding_does_not_truncate_a_longer_version(self):
+        assert check_pins._version_key("0.19.0.1") > check_pins._version_key("0.19.0")
+
+    def test_a_non_numeric_component_degrades_instead_of_raising(self):
+        assert check_pins._version_key("1.0.0rc1") == check_pins._version_key("1.0.0")
+
+
 class TestBumpFiles:
     """The rewrite has to preserve everything left of the version."""
 
@@ -381,10 +402,19 @@ class TestBumpFiles:
         check_pins.bump_files({"doc-kg": "0.99.0"})
         assert "ARG DOC_KG_VERSION=0.99.0" in paths["DOCKERFILE"].read_text()
 
-    def test_compose_args_move_too(self, tree):
+    def test_compose_args_are_left_alone(self, tree):
+        """A compose version arg is drift, so --bump must not maintain it.
+
+        compose_args() reports any ``*_VERSION`` build arg as a problem whether
+        it agrees with the Dockerfile or not — the pins belong in one place. A
+        bump that rewrote it would keep the offending copy alive and leave the
+        repo failing its own gate with a freshly-written value.
+        """
         paths = tree(compose={})
         check_pins.bump_files({"kgmodule-utils": "0.99.0"})
-        assert "KGMODULE_UTILS_VERSION: 0.99.0" in paths["COMPOSE"].read_text()
+        text = paths["COMPOSE"].read_text()
+        assert "KGMODULE_UTILS_VERSION: 0.16.0" in text
+        assert "0.99.0" not in text
 
     def test_an_unrelated_package_is_untouched(self, tree):
         paths = tree()
@@ -415,8 +445,23 @@ class TestBumpGuards:
         """Nothing to bump *to* must not be read as nothing to bump."""
         paths = tree()
         before = paths["PYPROJECT"].read_text()
-        assert check_pins.bump({}, {}) == 1
+        assert check_pins.bump({}, {}, []) == 1
         assert "BUMP FAILED" in capsys.readouterr().out
+        assert paths["PYPROJECT"].read_text() == before
+
+    def test_a_partial_pypi_read_bumps_nothing(self, tree, capsys):
+        """The set moves together or not at all.
+
+        An unreachable package used to be dropped silently: the reachable ones
+        moved, ``poetry lock`` ran, and the command reported success on a bump
+        that had left one pin behind — the exact drift this script exists to
+        catch.
+        """
+        paths = tree()
+        before = paths["PYPROJECT"].read_text()
+        assert check_pins.bump({"kg-rag": "0.99.0"}, {}, ["doc-kg"]) == 1
+        out = capsys.readouterr().out
+        assert "BUMP FAILED" in out and "doc-kg" in out
         assert paths["PYPROJECT"].read_text() == before
 
     def test_bump_and_offline_are_rejected_together(self, tree, monkeypatch):

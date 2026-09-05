@@ -42,10 +42,12 @@ whenever a sibling publishes. A pin PyPI has no installable files for IS a
 failure: the container build would fail on it.
 
 ``--bump`` moves that whole set to the latest PyPI release: it raises the
-pyproject and runpod floors, rewrites the Dockerfile ARGs and any compose build
-args, then runs ``poetry lock`` so the lock agrees. Every place a version is
-named moves together — bumping a subset would leave one of them behind, which is
-the drift this exists to catch.
+pyproject and runpod floors, rewrites the Dockerfile ARGs, then runs
+``poetry lock`` so the lock agrees. Every place a version is named moves
+together — bumping a subset would leave one of them behind, which is the drift
+this exists to catch, so it refuses outright if PyPI cannot be read for any one
+of them. docker-compose.yml is not rewritten: it is meant to hold no version
+args at all.
 
 It raises every declaration of a package to the same version. That is what this
 repo wants — pyproject states one floor per package across all declarations —
@@ -95,6 +97,10 @@ PINNED = {
 
 PYPI_TIMEOUT = 10
 
+# Versions are compared as int tuples padded to this many components, so a
+# 2-component pin does not sort below its 3-component equal.
+_VERSION_WIDTH = 4
+
 
 # Matches a PEP 508 requirement's name, optional extras, and its `>=` floor, in
 # both the plain (`doc-kg>=0.21.2`) and poetry-parenthesised (`doc-kg (>=0.21.2)`)
@@ -115,6 +121,11 @@ def _version_key(version: str) -> tuple[int, ...]:
     sorts as 0 rather than raising, so a pre-release tag degrades to a loose
     comparison instead of a crash.
 
+    Short versions are zero-padded before comparison. Without that, ``(0, 19)``
+    sorts below ``(0, 19, 0)`` and a ``>=0.19`` floor reads as *below* a 0.19.0
+    ARG, reporting a mismatch that is not one. Padding never truncates, so
+    0.19.0.1 still sorts above 0.19.0.
+
     :param version: version string such as ``"0.21.2"``.
     :returns: tuple of ints suitable for comparison.
     """
@@ -122,6 +133,7 @@ def _version_key(version: str) -> tuple[int, ...]:
     for chunk in version.split("."):
         digits = re.match(r"\d+", chunk)
         parts.append(int(digits.group()) if digits else 0)
+    parts += [0] * (_VERSION_WIDTH - len(parts))
     return tuple(parts)
 
 
@@ -255,11 +267,16 @@ def rewrite(path: Path, pattern: re.Pattern[str], version: str, label: str) -> l
 
 
 def bump_files(targets: dict[str, str]) -> list[str]:
-    """Pin every declaration of ``targets`` in pyproject, Dockerfile, compose and runpod.
+    """Pin every declaration of ``targets`` in pyproject, the Dockerfile and runpod.
 
     The pyproject and runpod floors are ``>=`` constraints and stay that way —
-    only the floor moves. The Dockerfile ARGs and compose build args are exact
-    pins.
+    only the floor moves. The Dockerfile ARGs are exact pins.
+
+    docker-compose.yml is deliberately NOT rewritten. The checker reports any
+    version build arg there as drift whether it agrees or not, because the pins
+    belong in one place; rewriting a compose copy would keep alive exactly what
+    that check exists to reject, and a bump would leave the repo failing its own
+    gate.
 
     **This raises every declaration of a package to the same version**, which is
     what pyproject's one-floor-per-package rule asks for. It is still a published
@@ -285,9 +302,6 @@ def bump_files(targets: dict[str, str]) -> list[str]:
         changes += rewrite(
             DOCKERFILE, re.compile(rf"^(ARG\s+{arg}=)(\S+)", re.MULTILINE), version, arg
         )
-        changes += rewrite(
-            COMPOSE, re.compile(rf"^(\s+{arg}:\s*)(\S+)", re.MULTILINE), version, arg
-        )
         # The serverless worker installs from this file rather than the wheel,
         # so leaving it behind is the same half-applied bump in another place.
         changes += rewrite(
@@ -299,13 +313,26 @@ def bump_files(targets: dict[str, str]) -> list[str]:
     return changes
 
 
-def bump(targets: dict[str, str], locked: dict[str, str]) -> int:
+def bump(targets: dict[str, str], locked: dict[str, str], unreachable: list[str]) -> int:
     """Move every pin to its latest PyPI release and re-lock.
+
+    Refuses to move anything unless PyPI answered for *every* pinned package.
+    The set moves together or not at all: bumping the reachable subset would
+    leave the rest behind, which is the drift this script exists to catch.
 
     :param targets: mapping of distribution name to the version to pin.
     :param locked: currently locked versions, to decide whether the lock is stale.
+    :param unreachable: pinned packages PyPI could not be read for.
     :returns: process exit status.
     """
+    if unreachable:
+        print(
+            f"BUMP FAILED: PyPI could not be read for {', '.join(unreachable)}.\n"
+            "  The pins move as a set, so bumping the reachable ones would leave "
+            "these behind —\n  which is the drift this script exists to catch. "
+            "Nothing was changed."
+        )
+        return 1
     if not targets:
         print("BUMP FAILED: PyPI could not be read, so there is nothing to bump to.")
         return 1
@@ -340,8 +367,8 @@ def main() -> int:
     parser.add_argument(
         "--bump",
         action="store_true",
-        help="rewrite the pyproject floors, Dockerfile ARGs and compose args to the "
-        "latest PyPI release, then run 'poetry lock'",
+        help="rewrite the pyproject floors, Dockerfile ARGs and runpod floors to "
+        "the latest PyPI release, then run 'poetry lock'",
     )
     args = parser.parse_args()
     if args.bump and args.offline:
@@ -432,7 +459,11 @@ def main() -> int:
         # The table above is the pre-bump state; every problem it found is
         # about to be overwritten by the latest release, so it is not reported.
         print("Bumping every pin to the latest PyPI release:")
-        return bump({d: info[0] for d, info in pypi.items() if info}, locked)
+        return bump(
+            {d: info[0] for d, info in pypi.items() if info},
+            locked,
+            sorted(d for d, info in pypi.items() if not info),
+        )
 
     if behind:
         print("Behind PyPI (advisory — the KG pins move as a set, not per release):")
