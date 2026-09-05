@@ -1,57 +1,232 @@
-# Release Notes -- v1.15.0
+# Release Notes -- v1.18.0
 
-> Released: 2026-09-01
+> Released: 2026-09-05
 
-The documentation site now runs on mkdocs-material with an API reference
-generated from the package docstrings, gated by a strict local build.
-The release also adds publication-year dating, an analytic POV-Ray
-rendering backend, and a cross-platform local image server.
+The corpus now searches and answers on the device. This release adds the
+export path that shrinks a 5.7 GB bundle to ~640 MB of SQLite packs, the
+Core ML query encoder that keeps the app in the same embedding space, and
+three answer engines — on-device, Private Cloud Compute, and the worker.
+It also fixes a set of retrieval bugs that returned fluent, ranked, wrong
+passages, and closes two resume gates that let half-built stores pass as
+complete.
 
-## What changed
+### Added
 
-**Documentation moved from pdoc to mkdocs-material.** The `docs/*.md`
-guides render as a site with navigation, search, and theming, and
-mkdocstrings generates the API reference from the package docstrings.
-The site builds on every push to `main` that touches docs or source,
-instead of only on version tags. A new `scripts/check_docs_build.py`,
-wired into pre-commit, runs `mkdocs build --strict` and fails on any
-warning outside two known categories, so a broken internal link or a
-missing nav target no longer ships. CI's own build runs without
-`--strict` because those two warning categories are permanent.
+**On-device search and synthesis**
 
-**Books carry their publication year.** `gutenberg_kg.temporal` reads
-the year from a book's Internet Archive metadata and stamps it on every
-node in the book's graph, not just the document row, so time-scoped
-federated queries can match individual chunks. Years stay years:
-`"1876"` is not converted to `1876-01-01`, so it matches a query for any
-month of 1876.
+- **`LocalRetrieval` — the corpus searches itself on the device.**
+  `BGEEmbedder` runs the converted `bge-small` on the Neural Engine,
+  `VectorIndex` scans memory-mapped vectors with vDSP, `PassagePack` runs
+  BM25 over FTS5, and the two channels fuse with the same RRF constant the
+  worker uses. With packs installed the app answers and browses with the
+  network off.
+- **Vectors live in a `<pack>.vectors` sidecar, not a `vec0` table.** iOS
+  ships stock SQLite, so a `vec0` table cannot be read without compiling in
+  sqlite-vec. The sidecar is a 32-byte header plus row-major rows, memory-
+  mapped and multiplied in place, indexed by a dense `passages.vector_index`.
+  The header exists so a truncated download is rejected rather than read as
+  embeddings.
+- **`OnDeviceSynthesis` — grounded answers from Apple Foundation Models.**
+  Streams from the ~3B model in iOS 26 / macOS 26. No key, no endpoint,
+  nothing leaves the device. `SynthesisPrompt.ragInstructions` is
+  `kg_utils.synthesis._text._RAG_SYSTEM` word for word, pinned by a test,
+  because drift there silently changes what every answer may say.
+- **`ContextBudgeter` — an explicit trade against a ~4,096-token window.**
+  Packs best-first, trims at word boundaries, stops when the budget is spent,
+  rather than letting the framework truncate silently. Retrieval still returns
+  the full `k` for hit cards; the turn's stats line reports "5 of 10 in
+  context" when they differ.
+- **`PrivateCloudSynthesis` — Private Cloud Compute as a second engine.**
+  A peer of `OnDeviceSynthesis`, not a rewrite: both build a
+  `LanguageModelSession` and share everything downstream. Offered separately
+  (Settings ▸ Answers ▸ **Private Cloud**) because it needs a network
+  connection and draws on the user's iCloud quota. In exchange its
+  32,768-token window carries 12 passages instead of 5. Gated on
+  `compiler(>=6.4)` so the Xcode 26 baseline keeps building; the engine is
+  absent until the toolchain catches up.
 
-**`gutenkg pov` renders the knowledge tree as an analytic POV-Ray
-scene.** Limbs are swept tubes and each leaf is an instance of one
-declared ellipsoid, so files are one to two orders of magnitude smaller
-than the VTK mesh dump and silhouettes stay exact at any zoom. Both
-backends grow from the same skeleton, so they produce the same tree. The
-new `pov` extra needs no PyVista, Qt, or GL context; a headless machine
-with a `povray` binary can write and render scenes.
+**Export pipeline**
 
-**Local image generation runs off Apple Silicon.** `make up` previously
-assumed the FLUX backend, which only installs on Apple hardware. It now
-falls back to SDXL-Lightning, which runs on CUDA, MPS, or CPU.
+- **`gutenkg export-swift` — the corpus, small enough for a phone.** Turns
+  `bundles/gutenberg-all/` into three SQLite packs plus a manifest and a
+  parity file: ~5.7 GB in, ~640 MB out. The reduction is knowing what the
+  query path reads — 324K topic/entity/keyword nodes, all 5.1M edges, and the
+  embed-text duplicate of every passage stay behind. Vectors re-encode fp32 →
+  int8, L2-normalised first so ×127 scaling lands in range instead of
+  clipping. Every read is driven by `PRAGMA table_info`, so a column missing
+  from one store becomes `NULL` rather than a crash 300,000 rows in.
+- **`gutenkg export-embedder` — the query encoder, converted once.** Traces
+  `bge-small-en-v1.5` with CLS pooling and L2 normalisation folded into the
+  graph, converts to fp16 Core ML, writes the tokenizer vocabulary beside it,
+  and checks the result against PyTorch — refusing to ship a model that
+  disagrees. `manifest.json` and `embedder.json` name the model at both ends
+  and `CorpusPacks` refuses to open when they differ, because that failure has
+  no symptom other than bad answers.
+- **`gutenberg_kg.serve.fusion`.** Importing `handler` runs its startup, so
+  nothing in that module can be unit-tested without loading a model. The
+  rank-merge arithmetic is pure, so it lives here and the handler calls in.
 
-**Dependency pins are gated.** `scripts/check_pins.py` verifies the four
-cross-pinned KG packages (`kgmodule-utils`, `kg-rag`, `doc-kg`,
-`diary-kg`) agree across `pyproject.toml`, `poetry.lock`, the Dockerfile
-ARGs, and `runpod/requirements.txt`, and gates `make build` and CI.
-`kgmodule-utils` moves to 0.18.0.
+**App**
 
-## Upgrading
+- **An iPhone target sharing every view with the Mac app.** The SwiftUI layer
+  moved into a `KnowledgePressUI` library both shells import. `MacRootView`
+  keeps the settings sidebar; `PhoneRootView` puts the same controls behind a
+  sheet. `BrowseView` became a `NavigationStack` drill — one code path instead
+  of two.
+- **`RetrievalEngine` and `QueryOrchestrator`.** Retrieval, budgeting and
+  synthesis are one streamed pipeline (`QueryEvent`), with the worker behind a
+  protocol.
+- **Diaries browse by dated entry.** The catalog carries no `file_path` for a
+  diary and `diaries.pack` has no `section` rows, so Browse listed the four
+  diaries and showed nothing under them. `CorpusStore.diaryIdentity(title:)`
+  maps a catalog title to its `kg_name` and each distinct `timestamp` becomes
+  one entry — 874, 1,426, 88 and 2,754 across the four. Pepys's 2,754 render
+  grouped by year rather than as one flat scroll.
 
-Building the docs needs the new optional `docs` group:
-`poetry install --with docs --extras "chat image mcp viz viz3d kgdeps"`,
-then `make docs` (or `make docs-serve` for live reload). Nothing else
-requires action: a plain `poetry install` picks up the relocked
-dependencies, and the POV-Ray path is opt-in via
-`poetry install --extras pov`.
+**Tests and corpus**
+
+- **`TokenizerParityTests` — the Swift tokenizer pinned to Python's output.**
+  Runs against the real 30,522-token `bge-small-en-v1.5` vocabulary and
+  asserts it reproduces `BertTokenizer` exactly across 36 inputs: the twelve
+  golden queries plus contractions, accents, punctuation runs, em dashes,
+  digits, an over-long word, control characters, CJK, and a string long enough
+  to truncate. Runs without a corpus, device or network, so a divergence here
+  localises to the tokenizer rather than the Core ML conversion.
+  `scripts/make_tokenizer_fixture.py` regenerates the fixture.
+- **A Christmas Carol (PG #46)** added to `english-literature` — the edition
+  that exercises the `STAVE` heading rule.
+- **`make spacy-model`** downloads `en_core_web_sm` when it cannot be loaded.
+  It is not installable as an ordinary Poetry dependency, and
+  `chunk-diaries` now depends on it. This also un-skips the suite's one
+  guarded test (877 passed/1 skipped → 886 passed).
+
+### Changed
+
+- Assistant turns render progressively instead of behind a blocking spinner.
+  The Foundation Models stream yields snapshots of the whole answer rather
+  than deltas, so `SynthesisEvent.partial` carries cumulative text and the
+  view replaces rather than appends.
+- A query in flight can be stopped. Passages already retrieved stay on screen.
+- **Embeddings stream to JSONL during ingest.** `build_dockg()` passed the
+  cache as `embeddings.json`, and the suffix selects the code path: the
+  `.json` branch builds its own `CorpusEmbedder` from the shared embedder's
+  name, so a second copy of the model loaded once per book — the double-load
+  that causes SIGBUS on MPS. The `.jsonl` branch calls the shared embedder
+  directly. On a 9,544-node book, peak RSS drops from +978 MB to +205 MB with
+  identical vector counts.
+- **Per-book `SIMILAR_TO` discovery** is now explicit in
+  `docs/ingestion-pipeline.md`.
+
+### Fixed
+
+**Retrieval**
+
+- **Exact phrases were lost in the export path.** `GraphStore.search_lexical`
+  searches the phrase first and only then falls back to an OR of the terms.
+  `export_swift` kept the OR and dropped the phrase, and the Swift port
+  mirrored it — so "pillar of salt" ran as `"pillar" OR "of" OR "salt"`, and
+  "of" matches nearly all 364K passages, diluting BM25 until the verse was
+  unreachable. Both sides now do phrase, then OR: the Genesis chunk returns to
+  rank 1 from 604th.
+- **`LocalRetrieval` re-sorted every result by cosine.** Within one corpus the
+  order is already RRF's, and cosine is not what RRF ranked by — a literal
+  match floated up by fusion carries a *lower* cosine than the semantic hits
+  under it, so re-sorting buried exactly what fusion surfaced.
+- **The `all` scope threw away the matches the lexical channel had rescued.**
+  A BM25 match owes its rank to the lexical channel *because* the dense
+  channel buried it, so its cosine is low by construction: the Lot's-wife
+  verse fused to the top of the books at 0.59 where every diary chunk scores
+  ~0.70. Sorting the merged list by score dropped it out of the top k
+  entirely, and the better the lexical channel worked the more reliably the
+  merge undid it. Both corpora now fold together by fused *rank* at the same
+  RRF constant, in `LocalRetrieval` and in `handler.query`. `runpod/handler.py`
+  is deliberately untouched: it has no lexical channel, so sorting its union
+  is coherent.
+- **The golden gate could not catch any of the above.** It compared the set of
+  returned passages and their scores, so the right passages in the wrong order
+  passed — at exactly its own 0.90 tolerance floor. It now also bounds how far
+  a shared hit may drift from its reference position (`max_rank_drift`,
+  default 2). Deliberately not an exact-order check: the dense channels differ
+  in their last bits, so near-ties come back either way round.
+
+**Export**
+
+- **`export-swift` silently dropped 4,601 of 27,462 diary passages.** Diary
+  node ids name the entry file but not the book, and every diary numbers from
+  `entry_0000` — so merging four diaries into one `passages` table keyed by
+  raw id discarded every later diary's colliding rows via `INSERT OR IGNORE`.
+  Pepys alone lost 2,927. The pack id is now `<kg_name>:<node_id>`, the insert
+  is a plain `INSERT` that fails loudly on any residual collision, and a
+  vector can only land on a row from its own KG.
+- **`export-swift --verify` compared hybrid search against dense ground
+  truth**, reporting recall@10 of 0.567 against its 0.9 threshold when actual
+  dense-only int8 recall was 0.958. Every lexical rescue counted as a recall
+  miss — including the golden queries chosen because only BM25 finds them.
+  Verify now runs `search_pack(..., lexical=False)`, matching its docstring.
+- **`export-swift`'s per-KG vector log printed the running total**, so the
+  last diary appeared to write 22,861 vectors for 2,784 passages.
+
+**Ingest**
+
+- **Half-built DocKG stores were skipped as complete.** `build_dockg()` writes
+  `graph.sqlite` before the vector store, so a run that dies in between leaves
+  a valid graph with no vectors. The resume gate checked only
+  `is_sqlite_valid(graph.sqlite)`, which passes on that shape — the next run
+  printed "already built, skipping" and registered the book with no semantic
+  search, surfacing at query time as missing results rather than at ingest
+  time as an error. `dockg_defect()` replaces the graph-only probe and checks
+  that a vector store exists and holds rows, reading `vec_nodes_rowids` rather
+  than the `vec0` virtual table. Verified against all 249 corpus stores with
+  no false positives.
+- **The same gate was weaker still for diaries.** `build_diary_index()`
+  treated a diary as built if `graph.sqlite` merely existed — not readable,
+  not complete — so an interrupted run reported "already built" with
+  `nodes=0 edges=0`. `.diarykg` has the same on-disk shape as `.dockg`, so
+  `dockg_defect()` applies unchanged; a defective store now wipes and
+  rebuilds.
+- **A failed diary stage reported SUCCESS.** `ingest_diaries()` returns a
+  `None` summary when the stage fails outright, and both `print_summary()` and
+  `save_summary()` derived status solely from the per-genre failed count — so
+  a failed diary stage contributed zero and the run printed "SUCCESS — all
+  books ingested" with the genre missing from the report. On 2026-09-05 that
+  listed 20 genres instead of 21 and left four `.diarykg` stores at their
+  2026-09-01 build. The exit code was correct throughout; nothing a reader saw
+  said so. Both functions now take `diary_rc` and refuse to print SUCCESS when
+  it is non-zero.
+- **Connection and cache leaks on the ingest failure path.** `kg.close()` and
+  the `embeddings.json` unlink now run in a `finally`; both were unreachable
+  on the exception path.
+- **`ImportError`, `AttributeError`, `TypeError` and `NameError` now
+  propagate** instead of being caught per book. These mean a bad import or
+  signature drift against `doc_kg`, which fails identically for every book, so
+  the old handler turned one bug into 249 identical "build failed" lines with
+  no traceback. Genuine per-book failures are still caught, and now print a
+  traceback unless quiet.
+
+**Conversion and build**
+
+- **`_is_prose_line` rejected lines of exactly 60 characters.** The detector is
+  documented as a 60-character bar (`len >= 60`) but checked `len <= 60`, so a
+  filled wrap line never counted. A Christmas Carol wraps at 60; Stave I had
+  four such lines and none longer, so the cluster split that peels the body's
+  `STAVE I` off the contents list never fired and the whole first stave was
+  attributed to the preface. Changed to `len < 60`. All 243 cached books
+  unchanged; Carol now emits `## STAVE I` through `## STAVE V`.
+- **The Swift package would not compile on a Mac.**
+  `CorpusStore.matchExpression` chained `query.map` into
+  `split(separator:)` and `map(String.init)`; Swift 6.4 will not finish that
+  overload set and reports "failed to produce diagnostic for expression". An
+  explicit `String` intermediate types each step unambiguously.
+- **The Swift tokenizer mis-segmented CJK.** `WordPieceTokenizer` omitted
+  BERT's `_tokenize_chinese_chars` pass, so a run of ideographs was one "word"
+  and WordPiece prefixed all but the first with `##` — `中` + `##文` where
+  Python produces `中` + `文`. Not a crash: a plausible tokenization that sends
+  the query elsewhere in the embedding space. The source comment claiming CJK
+  "degrades to unknown tokens" was also wrong.
+- **Two test messages that would not have compiled.** swift-testing's
+  `Comment` is `ExpressibleByStringInterpolation`, not built from a
+  concatenation, so the `#expect` failure messages in `TokenizerParityTests`
+  and `GoldenParityTests` were type errors.
 
 ---
 
