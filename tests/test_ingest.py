@@ -473,3 +473,57 @@ def test_dockg_defect_lancedb_store_accepted(tmp_path: Path):
     _write_graph(tmp_path)
     (tmp_path / "lancedb").mkdir()
     assert dockg_defect(tmp_path) is None
+
+
+# ---------------------------------------------------------------------------
+# Report status: the diary stage must not be invisible
+# ---------------------------------------------------------------------------
+
+
+def test_failure_text_books_only():
+    from gutenberg_kg.ingest import _failure_text
+
+    assert _failure_text(3, 0) == "3 book(s) failed"
+
+
+def test_failure_text_diaries_only():
+    from gutenberg_kg.ingest import _failure_text
+
+    assert _failure_text(0, 1) == "the diaries stage failed"
+
+
+def test_failure_text_both():
+    from gutenberg_kg.ingest import _failure_text
+
+    assert _failure_text(2, 1) == "2 book(s) failed and the diaries stage failed"
+
+
+def _print_status(capsys, *, diary_rc: int) -> str:
+    from datetime import UTC, datetime
+
+    from gutenberg_kg.ingest import print_summary
+
+    gs = GenreSummary(genre="horror")
+    gs.results = [BookResult(name="A", genre="horror", status="built", nodes=1, edges=1)]
+    print_summary(
+        [gs],
+        IngestOptions(),
+        Path("/tmp/registry.sqlite"),
+        datetime.now(UTC),
+        1.0,
+        "test-model",
+        diary_rc=diary_rc,
+    )
+    return capsys.readouterr().out
+
+
+def test_report_status_success_when_diaries_ok(capsys):
+    assert "SUCCESS" in _print_status(capsys, diary_rc=0)
+
+
+def test_report_status_not_success_when_diaries_failed(capsys):
+    """A failed diary stage produces no GenreSummary, so a book-count-only
+    status would call an entire failed genre a success."""
+    out = _print_status(capsys, diary_rc=1)
+    assert "SUCCESS" not in out
+    assert "diaries stage failed" in out
