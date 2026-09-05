@@ -136,7 +136,8 @@ no rule available today can satisfy at once.
 3. Dropped (see Outcome). Spine-membership as the heading test cannot
    retire the repeat-count guard, and retiring the numeral lookaheads is a
    no-behaviour refactor that belongs with step 4.
-4. Retire whatever of `HEADING_PATTERNS` the evidence says is dead.
+4. Retire whatever of `HEADING_PATTERNS` the evidence says is dead. **Done**;
+   see Step 4 below.
 
 ## Outcome (2026-09-04)
 
@@ -184,3 +185,47 @@ implementation diverged from the design above:
   heading continuation then merges into the body's first heading
   (Aristotle's "NOTES INTRODUCTION"); and periodless bare romans (Cary's
   Divine Comedy, The Awakening), which the profile does not recognise.
+
+## Step 4 outcome (2026-09-04)
+
+`scripts/census_heading_patterns.py` runs every line of all 243 cached texts
+past the patterns in `_is_heading`'s own first-match-wins order and reports
+what each one claimed. Two rules came back with zero lines in zero books and
+were removed:
+
+- **`Book the First--Recalled to Life`** (Dickens). Not absent from the corpus
+  -- A Tale of Two Cities has three of them, and they are headings in the
+  shipped text. They match the `VOLUME|BOOK|PART` rule above it, which allows
+  an optional `THE` and spelled-out ordinals, at the same level.
+- **Title Case `Chapter 1`.** The `CHAPTER` rule above it is `IGNORECASE` and
+  otherwise identical.
+
+`STAVE` also scores zero, and was **kept**. Nothing else claims it at h2, so
+unlike the two above it is not shadowed, merely unexercised: no corpus book is
+A Christmas Carol yet. Deleting it would save two lines and silently cost that
+book its divisions on the day it arrives.
+
+Removing a shadowed rule is free, but the freedom is contingent on the rule
+doing the shadowing. `tests/test_headings.py::TestAbsorbedForms` pins the
+**forms** rather than the patterns, so narrowing `VOLUME|BOOK|PART` or dropping
+`IGNORECASE` from `CHAPTER` fails a test instead of quietly losing Dickens.
+
+Gate: all 243 books converted against a pristine worktree at `e47e09b` --
+0 books differ, 28,279,573 words and 11,541 headings identical. A pure
+refactor, so no corpus rewrite or rebuild.
+
+### Found on the way, not fixed
+
+The census also showed live patterns matching prose. Most are stopped by
+`text_to_markdown`'s context rules and never reach the output, but two survive
+into the shipped corpus, both from the Bible-book rule:
+
+    ## The Book of Job hath no mark in it of the time wherein it was written:
+    ## The Song of Mowgli—I, Mowgli, am singing. Let the jungle listen to the
+
+That rule produces 32 headings corpus-wide; 30 are real book titles, the
+longest legitimate one 50 characters. A length cap near 60 separates them.
+Left alone deliberately: the fix is small, but it changes corpus text, and
+changed text means a re-apply, a full bundle rebuild, a re-export and a
+redeploy to every device -- an hour of machine time for two headings. Worth
+folding into the next change that already requires a rebuild.
