@@ -14,8 +14,9 @@ from gutenberg_kg.spine import (
 )
 
 # A body-prose line has to clear the 60-character bar the prose detector
-# uses; a short placeholder would silently read as listing.
+# uses (len >= 60); a short placeholder would silently read as listing.
 PROSE = "A line of real narrative prose, long enough to be read as a sentence of the story itself."
+assert len(PROSE) >= 60
 
 # ---------------------------------------------------------------------------
 # numeral_value
@@ -194,6 +195,42 @@ def test_cluster_hits_recognises_wrapped_prose_that_ends_mid_sentence():
     clusters = cluster_hits(lines, hits, "CHAPTER")
     assert [len(c.hits) for c in clusters] == [2, 1]
     assert clusters[1].hits[0].line == 4
+
+
+def test_cluster_hits_counts_a_line_at_exactly_the_wrap_width():
+    """A Christmas Carol (PG #46) wraps at 60 characters. Requiring len > 60
+    left Stave I with no prose lines at all, so the body's STAVE I stayed
+    glued to the contents list and was deleted with it. Lines of exactly
+    60 that read as prose must peel that heading off."""
+    # Three filled wrap lines, each exactly 60 chars, lowercase content.
+    wrap = "stroll at night, in an easterly wind, upon his own ramparts,"
+    assert len(wrap) == 60
+    lines = [
+        "Stave   I: Marley's Ghost",
+        "Stave  II: The First of the Three Spirits",
+        "Stave III: The Second of the Three Spirits",
+        "Stave  IV: The Last of the Spirits",
+        "Stave   V: The End of It",
+        "",
+        "",
+        "STAVE I:  MARLEY'S GHOST",
+        "",
+        wrap,
+        wrap,
+        wrap,
+        "",
+        "STAVE II:  THE FIRST OF THE THREE SPIRITS",
+        "",
+        wrap,
+        wrap,
+        wrap,
+    ]
+    hits = find_candidates(lines)["STAVE"]
+    clusters = cluster_hits(lines, hits, "STAVE")
+    assert [len(c.hits) for c in clusters] == [5, 1, 1]
+    assert clusters[0].end == 4  # contents only
+    assert clusters[1].hits[0].line == 7  # body's STAVE I
+    assert clusters[2].hits[0].line == 13
 
 
 def test_cluster_hits_keeps_the_listings_last_entry_before_a_preface():
