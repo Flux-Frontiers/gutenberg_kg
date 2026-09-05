@@ -768,6 +768,25 @@ def _row(label: str, value: str) -> str:
     return f"  {label:<28}  {value}"
 
 
+def _failure_text(total_failed: int, diary_rc: int) -> str:
+    """Describe what failed, counting the diary stage separately.
+
+    Diaries build through the DiaryKG pipeline and produce no GenreSummary when
+    the stage fails outright, so a book count alone would report zero failures
+    for a run in which an entire genre never built.
+
+    :param total_failed: Failed books across the prose genre summaries.
+    :param diary_rc: Non-zero if the diary stage failed.
+    :return: Human-readable failure description.
+    """
+    parts = []
+    if total_failed:
+        parts.append(f"{total_failed} book(s) failed")
+    if diary_rc:
+        parts.append("the diaries stage failed")
+    return " and ".join(parts) if parts else "failed"
+
+
 def print_summary(
     genre_summaries: list[GenreSummary],
     opts: IngestOptions,
@@ -775,8 +794,14 @@ def print_summary(
     wall_start: datetime,
     wall_elapsed: float,
     embed_model: str = "",
+    diary_rc: int = 0,
 ) -> None:
-    """Print a rich job summary to stdout."""
+    """Print a rich job summary to stdout.
+
+    :param diary_rc: Non-zero if the diary stage failed. Diaries build through a
+        separate pipeline and contribute no GenreSummary when they fail, so
+        without this the report would call a failed run a success.
+    """
     thick = "═" * W
     thin = "─" * W
 
@@ -789,10 +814,10 @@ def print_summary(
 
     if opts.dry_run:
         status_icon, status_text = "[~]", "DRY RUN — no changes made"
-    elif total_failed == 0:
+    elif total_failed == 0 and diary_rc == 0:
         status_icon, status_text = "[ok]", "SUCCESS — all books ingested"
     else:
-        status_icon, status_text = "[!]", f"PARTIAL — {total_failed} book(s) failed"
+        status_icon, status_text = "[!]", f"PARTIAL — {_failure_text(total_failed, diary_rc)}"
 
     flags = (
         " ".join(
@@ -879,8 +904,12 @@ def save_summary(
     wall_start: datetime,
     wall_elapsed: float,
     embed_model: str = "",
+    diary_rc: int = 0,
 ) -> Path:
-    """Write a Markdown ingest report to reports/ and return its path."""
+    """Write a Markdown ingest report to reports/ and return its path.
+
+    :param diary_rc: Non-zero if the diary stage failed. See :func:`print_summary`.
+    """
     reports_dir = REPO_ROOT / "reports"
     reports_dir.mkdir(exist_ok=True)
 
@@ -896,10 +925,10 @@ def save_summary(
 
     if opts.dry_run:
         status = "DRY RUN — no changes made"
-    elif total_failed == 0:
+    elif total_failed == 0 and diary_rc == 0:
         status = "SUCCESS — all books ingested"
     else:
-        status = f"PARTIAL — {total_failed} book(s) failed"
+        status = f"PARTIAL — {_failure_text(total_failed, diary_rc)}"
 
     flags = (
         " ".join(
@@ -1109,7 +1138,15 @@ def run_ingest(
         return 1 if diary_rc != 0 else 0
 
     wall_elapsed = time.perf_counter() - wall_t0
-    print_summary(genre_summaries, opts, registry_path, wall_start, wall_elapsed, embed_model_name)
+    print_summary(
+        genre_summaries,
+        opts,
+        registry_path,
+        wall_start,
+        wall_elapsed,
+        embed_model_name,
+        diary_rc=diary_rc,
+    )
 
     if opts.dry_run:
         # A dry run changes nothing, so it should not leave a report behind
@@ -1117,7 +1154,13 @@ def run_ingest(
         print("  [dry] no report written\n")
     else:
         report_path = save_summary(
-            genre_summaries, opts, registry_path, wall_start, wall_elapsed, embed_model_name
+            genre_summaries,
+            opts,
+            registry_path,
+            wall_start,
+            wall_elapsed,
+            embed_model_name,
+            diary_rc=diary_rc,
         )
         print(f"  Report saved: {report_path}\n")
 

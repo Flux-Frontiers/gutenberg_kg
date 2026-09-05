@@ -209,12 +209,20 @@ endif
 # `gutenkg` on PATH. Override with e.g. `make GUTENKG=gutenkg build-corpus`.
 GUTENKG     ?= poetry run gutenkg
 
-.PHONY: init chunk-diaries build-diaries build-corpus check-pins setup build build-all rebuild rebuild-all prune kill run image-server sdxl-server sdxl-fetch chat up stop down query logs clean docs ios-devices ios-generate ios-check ios-install-corpus ios-verify-corpus ios-launch ios-deploy mac-generate mac-check mac-build mac-verify mac-notarize mac-dmg mac-notarize-dmg mac-release
+.PHONY: init spacy-model chunk-diaries build-diaries build-corpus check-pins setup build build-all rebuild rebuild-all prune kill run image-server sdxl-server sdxl-fetch chat up stop down query logs clean docs ios-devices ios-generate ios-check ios-install-corpus ios-verify-corpus ios-launch ios-deploy mac-generate mac-check mac-build mac-verify mac-notarize mac-dmg mac-notarize-dmg mac-release
 
 init:
 	$(GUTENKG) init
 
-chunk-diaries:
+# diary_transformer needs a spaCy model that is not installable as an ordinary
+# Poetry dependency. Without it chunking aborts, .diary/ stays empty, and the
+# diaries genre silently drops out of an ingest. Idempotent: only downloads when
+# the model cannot be loaded.
+spacy-model:
+	@poetry run python -c "import spacy; spacy.load('en_core_web_sm')" >/dev/null 2>&1 \
+	  || poetry run python -m spacy download en_core_web_sm
+
+chunk-diaries: spacy-model
 	$(GUTENKG) chunk-diaries
 
 build-diaries: chunk-diaries
