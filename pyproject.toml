@@ -77,7 +77,7 @@ packages = [{ include = "gutenberg_kg", from = "src" }]
 # ---------------------------------------------------------------------------
 [project]
 name = "gutenberg-kg"
-version = "1.16.0"
+version = "1.17.0"
 description = "The Knowledge Press — universal ingestion engine for digitized text corpora"
 readme = "README.md"
 license = "Elastic-2.0"
