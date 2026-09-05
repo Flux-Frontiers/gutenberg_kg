@@ -99,3 +99,71 @@ def test_chunk_diary_produces_chunks_when_deps_present(tmp_path):
     assert res.chunks > 0
     chunk_files = list((book / ".diary").glob("entry_*.md"))
     assert len(chunk_files) == res.chunks
+
+
+# ---------------------------------------------------------------------------
+# build_diary_index resume gate
+# ---------------------------------------------------------------------------
+
+
+def _make_diary_store(diary_dir, *, with_vectors: bool, rows: int = 3):
+    """Create a diary dir with a chunked .diary/ and a .diarykg/ store."""
+    import sqlite3
+
+    chunks = diary_dir / ".diary"
+    chunks.mkdir(parents=True, exist_ok=True)
+    (chunks / "entry_0001.md").write_text("an entry", encoding="utf-8")
+
+    store = diary_dir / ".diarykg"
+    store.mkdir(parents=True, exist_ok=True)
+    with sqlite3.connect(store / "graph.sqlite") as con:
+        con.execute("CREATE TABLE nodes (id INTEGER PRIMARY KEY)")
+        con.execute("CREATE TABLE edges (src TEXT)")
+        con.execute("INSERT INTO nodes VALUES (1)")
+    if with_vectors:
+        with sqlite3.connect(store / "vectors.sqlite") as con:
+            con.execute("CREATE TABLE vec_nodes (rowid INTEGER PRIMARY KEY)")
+            con.execute("CREATE TABLE vec_nodes_rowids (rowid INTEGER PRIMARY KEY)")
+            for i in range(rows):
+                con.execute("INSERT INTO vec_nodes_rowids VALUES (?)", (i,))
+    return store
+
+
+def test_build_diary_index_skips_complete_store(tmp_path):
+    """A complete .diarykg is left alone without --force."""
+    from gutenberg_kg.build_diaries import BuildDiariesOptions, build_diary_index
+
+    diary = tmp_path / "Pepys"
+    _make_diary_store(diary, with_vectors=True)
+    result = build_diary_index(diary, BuildDiariesOptions(force=False))
+    assert result.status == "skipped"
+    assert "already built" in result.message
+
+
+def test_build_diary_index_rebuilds_store_without_vectors(tmp_path):
+    """A graph with no vector store must not count as 'already built'.
+
+    rebuild_index() writes the graph before the vectors, so an interrupted run
+    leaves this shape; skipping it would register a diary with no semantic
+    search. dry_run stops before the actual build, so reaching the dry-run
+    branch proves the resume gate declined to skip.
+    """
+    from gutenberg_kg.build_diaries import BuildDiariesOptions, build_diary_index
+
+    diary = tmp_path / "Evelyn"
+    _make_diary_store(diary, with_vectors=False)
+    result = build_diary_index(diary, BuildDiariesOptions(force=False, dry_run=True))
+    assert result.status == "skipped"
+    assert "dry-run" in result.message, (
+        "expected the build path, not the already-built short-circuit"
+    )
+
+
+def test_build_diary_index_rebuilds_empty_vector_store(tmp_path):
+    """A vector store with zero rows is defective, not complete."""
+    from gutenberg_kg.build_diaries import BuildDiariesOptions, build_diary_index
+
+    diary = tmp_path / "Hebrides"
+    _make_diary_store(diary, with_vectors=True, rows=0)
+    result = build_diary_index(diary, BuildDiariesOptions(force=False, dry_run=True))
+    assert "dry-run" in result.message

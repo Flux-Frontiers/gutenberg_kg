@@ -24,6 +24,7 @@ Examples:
 
 from __future__ import annotations
 
+import contextlib
 import os
 import platform
 import re
@@ -32,8 +33,10 @@ import shutil
 import socket
 import subprocess
 import sys
+import textwrap
 import threading
 import time
+import traceback
 from collections import deque
 from dataclasses import dataclass, field
 from datetime import UTC, date, datetime
@@ -200,6 +203,47 @@ def is_sqlite_valid(path: Path) -> bool:
         return False
 
 
+def dockg_defect(store_dir: Path) -> str | None:
+    """Return why a ``.dockg`` store is unusable, or ``None`` if it is complete.
+
+    :meth:`build_dockg` writes ``graph.sqlite`` before it builds the vector
+    store, so a run that dies in between leaves a *valid* graph with no vectors.
+    Checking the graph alone would call that shape "already built": the book
+    would be skipped on the next run and then registered with no semantic
+    search, which fails silently at query time rather than at ingest time.
+
+    The vector row count comes from the ``vec_nodes_rowids`` shadow table rather
+    than ``vec_nodes`` itself, because the latter is a ``vec0`` virtual table
+    and cannot be opened without the sqlite-vec extension loaded.
+
+    :param store_dir: The book's ``.dockg`` directory.
+    :return: A short reason string, or ``None`` when the store is complete.
+    """
+    if not is_sqlite_valid(store_dir / "graph.sqlite"):
+        return "corrupt/empty graph.sqlite"
+
+    vectors, lancedb = resolve_vector_paths(store_dir)
+    if vectors is None and lancedb is None:
+        return "no vector store"
+    if vectors is None:
+        return None  # LanceDB store: pre-migration shape, presence is all we check
+
+    import sqlite3
+
+    try:
+        with sqlite3.connect(f"file:{vectors}?mode=ro", uri=True) as con:
+            if not con.execute(
+                "SELECT COUNT(*) FROM sqlite_master WHERE name='vec_nodes'"
+            ).fetchone()[0]:
+                return "vector store has no vec_nodes table"
+            (rows,) = con.execute("SELECT COUNT(*) FROM vec_nodes_rowids").fetchone()
+    except Exception as exc:  # noqa: BLE001
+        return f"unreadable vector store ({exc})"
+    if not rows:
+        return "empty vector store"
+    return None
+
+
 def build_dockg(
     book_dir: Path,
     dry_run: bool = False,
@@ -209,36 +253,75 @@ def build_dockg(
     """Build DocKG for book_dir in-process, reusing a shared embedder if provided.
 
     Mirrors the three-step pipeline used by ``dockg build``:
-    corpus → SQLite, SQLite → JSON embedding cache, cache → LanceDB.
+    corpus → SQLite, SQLite → JSONL embedding cache, cache → sqlite-vec.
+
+    Programming errors (a bad import, a signature drift against doc_kg) are
+    re-raised rather than reported per book: they fail identically for every
+    book, so surfacing them once aborts the run instead of printing the same
+    message 249 times. Per-book data failures are caught and reported.
     """
     if dry_run:
         print(f"    [dry] dockg build --repo {book_dir}")
         return True
+    from doc_kg.kg import DocKG
+
+    # Bound before the try so the finally can clean up whatever got as far as
+    # being created, including when the constructor itself raises.
+    kg = None
+    cache_path = None
     try:
-        from doc_kg.kg import DocKG
-
         kg = DocKG(book_dir, embedder=embedder)
-        kg.build_graph(wipe=True, quiet=quiet)
-        cache_path = kg.db_path.parent / "embeddings.json"
-        kg.build_embeddings(out=cache_path, n_workers=4, quiet=quiet)
-        kg.build_index_from_cache(cache_path, wipe=True, similar_max_degree=8, quiet=quiet)
         db_path = kg.db_path
-        kg.close()
-        cache_path.unlink(missing_ok=True)
-
-        # Stamp the book's publication year as the shared temporal contract, so
-        # a federated time-scoped query can reach this book at all. Books with
-        # no usable date -- common for Gutenberg texts, which carry no IA
-        # metadata sheet -- are simply left undated rather than guessed at.
-        year = publication_year(book_dir)
-        if year:
-            stamped = stamp_publication_year(db_path, year)
-            if stamped and not quiet:
-                print(f"    [+] dated {stamped} nodes to {year}")
-        return True
+        # .jsonl, not .json: the suffix picks the code path. The JSONL branch
+        # streams and reuses the embedder passed in above, while the .json
+        # branch builds its own CorpusEmbedder from the shared embedder's
+        # model_name -- a second model load per book, which on MPS is the
+        # double-load SIGBUS doc_kg added the streaming path to avoid.
+        cache_path = db_path.parent / "embeddings.jsonl"
+        kg.build_graph(wipe=True, quiet=quiet)
+        kg.build_embeddings(out=cache_path, n_workers=4, quiet=quiet)
+        # SIMILAR_TO stays on here, unlike `gutenkg build-corpus`, which ships a
+        # served bundle whose handler is semantic-first and never traverses edges.
+        # Per-book KGs are reached through KGRAG federation, which calls
+        # DocKG.query() -- and DEFAULT_RELS expands over SIMILAR_TO, so these
+        # edges are the only thing that path gains from. similar_k=5 with
+        # similar_max_degree=8 is the exact configuration the cap evaluation
+        # measured; see analysis/SIMILAR_TO_CAP_RECOMMENDATION.md.
+        kg.build_index_from_cache(
+            cache_path,
+            wipe=True,
+            discover_similar=True,
+            similar_k=5,
+            similar_max_degree=8,
+            quiet=quiet,
+        )
+    except (ImportError, AttributeError, TypeError, NameError):
+        # Signature drift against doc_kg, or a missing dependency. Identical for
+        # every book, so let it abort the run with a traceback instead of being
+        # laundered into a per-book "build failed".
+        raise
     except Exception as exc:  # noqa: BLE001
         print(f"    [x] dockg build failed: {exc}")
+        if not quiet:
+            print(textwrap.indent(traceback.format_exc().rstrip(), "        "))
         return False
+    finally:
+        if kg is not None:
+            with contextlib.suppress(Exception):
+                kg.close()
+        if cache_path is not None:
+            cache_path.unlink(missing_ok=True)
+
+    # Stamp the book's publication year as the shared temporal contract, so
+    # a federated time-scoped query can reach this book at all. Books with
+    # no usable date -- common for Gutenberg texts, which carry no IA
+    # metadata sheet -- are simply left undated rather than guessed at.
+    year = publication_year(book_dir)
+    if year:
+        stamped = stamp_publication_year(db_path, year)
+        if stamped and not quiet:
+            print(f"    [+] dated {stamped} nodes to {year}")
+    return True
 
 
 def register_book(
@@ -623,9 +706,10 @@ def process_book(
     dockg_dir = book_dir / ".dockg"
     already_built = dockg_sqlite.exists()
 
-    # Auto-wipe if sqlite exists but is corrupt or empty
-    if already_built and not is_sqlite_valid(dockg_sqlite):
-        print("    [!] corrupt/empty graph.sqlite — wiping and rebuilding")
+    # Auto-wipe if the store is corrupt, or half-built from an interrupted run
+    defect = dockg_defect(dockg_dir) if already_built else None
+    if defect:
+        print(f"    [!] {defect} — wiping and rebuilding")
         if not opts.dry_run:
             shutil.rmtree(dockg_dir)
         already_built = False
@@ -684,6 +768,25 @@ def _row(label: str, value: str) -> str:
     return f"  {label:<28}  {value}"
 
 
+def _failure_text(total_failed: int, diary_rc: int) -> str:
+    """Describe what failed, counting the diary stage separately.
+
+    Diaries build through the DiaryKG pipeline and produce no GenreSummary when
+    the stage fails outright, so a book count alone would report zero failures
+    for a run in which an entire genre never built.
+
+    :param total_failed: Failed books across the prose genre summaries.
+    :param diary_rc: Non-zero if the diary stage failed.
+    :return: Human-readable failure description.
+    """
+    parts = []
+    if total_failed:
+        parts.append(f"{total_failed} book(s) failed")
+    if diary_rc:
+        parts.append("the diaries stage failed")
+    return " and ".join(parts) if parts else "failed"
+
+
 def print_summary(
     genre_summaries: list[GenreSummary],
     opts: IngestOptions,
@@ -691,8 +794,14 @@ def print_summary(
     wall_start: datetime,
     wall_elapsed: float,
     embed_model: str = "",
+    diary_rc: int = 0,
 ) -> None:
-    """Print a rich job summary to stdout."""
+    """Print a rich job summary to stdout.
+
+    :param diary_rc: Non-zero if the diary stage failed. Diaries build through a
+        separate pipeline and contribute no GenreSummary when they fail, so
+        without this the report would call a failed run a success.
+    """
     thick = "═" * W
     thin = "─" * W
 
@@ -705,10 +814,10 @@ def print_summary(
 
     if opts.dry_run:
         status_icon, status_text = "[~]", "DRY RUN — no changes made"
-    elif total_failed == 0:
+    elif total_failed == 0 and diary_rc == 0:
         status_icon, status_text = "[ok]", "SUCCESS — all books ingested"
     else:
-        status_icon, status_text = "[!]", f"PARTIAL — {total_failed} book(s) failed"
+        status_icon, status_text = "[!]", f"PARTIAL — {_failure_text(total_failed, diary_rc)}"
 
     flags = (
         " ".join(
@@ -795,8 +904,12 @@ def save_summary(
     wall_start: datetime,
     wall_elapsed: float,
     embed_model: str = "",
+    diary_rc: int = 0,
 ) -> Path:
-    """Write a Markdown ingest report to reports/ and return its path."""
+    """Write a Markdown ingest report to reports/ and return its path.
+
+    :param diary_rc: Non-zero if the diary stage failed. See :func:`print_summary`.
+    """
     reports_dir = REPO_ROOT / "reports"
     reports_dir.mkdir(exist_ok=True)
 
@@ -812,10 +925,10 @@ def save_summary(
 
     if opts.dry_run:
         status = "DRY RUN — no changes made"
-    elif total_failed == 0:
+    elif total_failed == 0 and diary_rc == 0:
         status = "SUCCESS — all books ingested"
     else:
-        status = f"PARTIAL — {total_failed} book(s) failed"
+        status = f"PARTIAL — {_failure_text(total_failed, diary_rc)}"
 
     flags = (
         " ".join(
@@ -1025,7 +1138,15 @@ def run_ingest(
         return 1 if diary_rc != 0 else 0
 
     wall_elapsed = time.perf_counter() - wall_t0
-    print_summary(genre_summaries, opts, registry_path, wall_start, wall_elapsed, embed_model_name)
+    print_summary(
+        genre_summaries,
+        opts,
+        registry_path,
+        wall_start,
+        wall_elapsed,
+        embed_model_name,
+        diary_rc=diary_rc,
+    )
 
     if opts.dry_run:
         # A dry run changes nothing, so it should not leave a report behind
@@ -1033,7 +1154,13 @@ def run_ingest(
         print("  [dry] no report written\n")
     else:
         report_path = save_summary(
-            genre_summaries, opts, registry_path, wall_start, wall_elapsed, embed_model_name
+            genre_summaries,
+            opts,
+            registry_path,
+            wall_start,
+            wall_elapsed,
+            embed_model_name,
+            diary_rc=diary_rc,
         )
         print(f"  Report saved: {report_path}\n")
 

@@ -121,8 +121,24 @@ All genres in a strategy group are processed together in one DocKG pass.
   └──────────────────────────────────────────────────────────┘
 ```
 
-The served handler is semantic-first and never traverses `SIMILAR_TO`, so
-discovery is opt-in and is skipped entirely on `--update`. See
+The `--similar` default above applies to `gutenkg build-corpus`, which produces
+the served bundle. The served handler is semantic-first and never traverses
+`SIMILAR_TO`, so discovery is opt-in there and is skipped entirely on
+`--update`.
+
+Per-book `gutenkg ingest` is the opposite: it leaves discovery **on**
+(`similar_k=5`, `similar_max_degree=8`). Per-book KGs are consumed through
+KGRAG federation, whose adapter calls `DocKG.query()`, and DocKG's
+`DEFAULT_RELS` expands over `SIMILAR_TO`. Those edges are what the federated
+hop path retrieves on, so turning them off would silently degrade cross-repo
+queries while leaving the served bundle unchanged. They cost roughly 15% of
+per-book graph edges and never reach the shipped bundle.
+
+Note that per-book discovery is within a single book: `ingest` builds each
+book's DocKG in isolation, so cross-book `SIMILAR_TO` exists only if
+`build-corpus --similar` is run.
+
+See
 [`SIMILAR_TO_CAP_RECOMMENDATION.md`](../analysis/SIMILAR_TO_CAP_RECOMMENDATION.md) for the
 evaluation behind the cap. Measured bundle sizes live in
 [`APP_ARCHITECTURE.md`](../analysis/APP_ARCHITECTURE.md).

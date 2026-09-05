@@ -17,6 +17,7 @@ from gutenberg_kg.ingest import (
     GenreSummary,
     IngestOptions,
     build_dockg,
+    dockg_defect,
     fmt_duration,
     is_sqlite_valid,
     slugify,
@@ -236,6 +237,68 @@ def test_build_dockg_exception_returns_false(tmp_path: Path, monkeypatch):
     assert build_dockg(tmp_path, dry_run=False) is False
 
 
+def test_build_dockg_reraises_signature_drift(tmp_path: Path, monkeypatch):
+    """A TypeError means doc_kg's signature moved: it fails identically for
+    every book, so it must abort the run rather than look like a data failure."""
+    import sys
+    import types
+
+    fake_mod = types.ModuleType("doc_kg.kg")
+
+    class _DriftDocKG:
+        def __init__(self, path, embedder=None):
+            self.db_path = path / ".dockg" / "graph.sqlite"
+
+        def build_graph(self, wipe=False, quiet=False):
+            raise TypeError("unexpected keyword argument 'discover_similar'")
+
+        def close(self):
+            pass
+
+    fake_mod.DocKG = _DriftDocKG
+    monkeypatch.setitem(sys.modules, "doc_kg.kg", fake_mod)
+
+    with pytest.raises(TypeError, match="discover_similar"):
+        build_dockg(tmp_path, dry_run=False)
+
+
+def test_build_dockg_closes_kg_on_failure(tmp_path: Path, monkeypatch):
+    """The connection is closed and the embedding cache removed even when the
+    build raises partway through."""
+    import sys
+    import types
+
+    closed: list[bool] = []
+    fake_mod = types.ModuleType("doc_kg.kg")
+
+    class _FailMidwayDocKG:
+        def __init__(self, path, embedder=None):
+            self.db_path = path / ".dockg" / "graph.sqlite"
+            self.db_path.parent.mkdir(parents=True, exist_ok=True)
+
+        def build_graph(self, wipe=False, quiet=False):
+            pass
+
+        def build_embeddings(self, out=None, n_workers=None, quiet=False):
+            Path(out).write_text("partial cache")
+            return out
+
+        def build_index_from_cache(self, *a, **kw):
+            raise RuntimeError("out of memory")
+
+        def close(self):
+            closed.append(True)
+
+    fake_mod.DocKG = _FailMidwayDocKG
+    monkeypatch.setitem(sys.modules, "doc_kg.kg", fake_mod)
+
+    assert build_dockg(tmp_path, dry_run=False, quiet=True) is False
+    assert closed == [True], "kg.close() must run even when the build raises"
+    assert not (tmp_path / ".dockg" / "embeddings.jsonl").exists(), (
+        "partial embedding cache must not survive a failed build"
+    )
+
+
 def test_build_dockg_passes_embedder_to_dockg(tmp_path: Path, monkeypatch):
     import sys
     import types
@@ -254,8 +317,20 @@ def test_build_dockg_passes_embedder_to_dockg(tmp_path: Path, monkeypatch):
         def build_embeddings(self, out=None, n_workers=None, quiet=False):
             return out
 
-        def build_index_from_cache(self, cache_path, wipe=False, similar_max_degree=0, quiet=False):
-            pass
+        def build_index_from_cache(
+            self,
+            cache_path,
+            wipe=False,
+            discover_similar=True,
+            similar_k=5,
+            similar_max_degree=0,
+            quiet=False,
+        ):
+            received["index_kwargs"] = {
+                "discover_similar": discover_similar,
+                "similar_k": similar_k,
+                "similar_max_degree": similar_max_degree,
+            }
 
         def close(self):
             pass
@@ -266,6 +341,13 @@ def test_build_dockg_passes_embedder_to_dockg(tmp_path: Path, monkeypatch):
     sentinel = object()
     assert build_dockg(tmp_path, dry_run=False, embedder=sentinel) is True
     assert received["embedder"] is sentinel
+    # Per-book ingest keeps SIMILAR_TO on for the KGRAG federated hop path, at the
+    # cap the evaluation measured. See analysis/SIMILAR_TO_CAP_RECOMMENDATION.md.
+    assert received["index_kwargs"] == {
+        "discover_similar": True,
+        "similar_k": 5,
+        "similar_max_degree": 8,
+    }
 
 
 def test_build_dockg_none_embedder_accepted(tmp_path: Path, monkeypatch):
@@ -286,8 +368,20 @@ def test_build_dockg_none_embedder_accepted(tmp_path: Path, monkeypatch):
         def build_embeddings(self, out=None, n_workers=None, quiet=False):
             return out
 
-        def build_index_from_cache(self, cache_path, wipe=False, similar_max_degree=0, quiet=False):
-            pass
+        def build_index_from_cache(
+            self,
+            cache_path,
+            wipe=False,
+            discover_similar=True,
+            similar_k=5,
+            similar_max_degree=0,
+            quiet=False,
+        ):
+            received["index_kwargs"] = {
+                "discover_similar": discover_similar,
+                "similar_k": similar_k,
+                "similar_max_degree": similar_max_degree,
+            }
 
         def close(self):
             pass
@@ -327,3 +421,109 @@ def test_is_sqlite_valid_missing_nodes_table(tmp_path: Path):
     with sqlite3.connect(db_path) as con:
         con.execute("CREATE TABLE other (id INTEGER PRIMARY KEY)")
     assert is_sqlite_valid(db_path) is False
+
+
+# ---------------------------------------------------------------------------
+# dockg_defect
+# ---------------------------------------------------------------------------
+
+
+def _write_graph(store: Path) -> None:
+    """Write a minimal valid graph.sqlite into store."""
+    store.mkdir(parents=True, exist_ok=True)
+    with sqlite3.connect(store / "graph.sqlite") as con:
+        con.execute("CREATE TABLE nodes (id INTEGER PRIMARY KEY)")
+        con.execute("INSERT INTO nodes VALUES (1)")
+
+
+def _write_vectors(store: Path, rows: int) -> None:
+    """Write a vectors.sqlite carrying the shadow tables vec0 leaves behind."""
+    with sqlite3.connect(store / "vectors.sqlite") as con:
+        con.execute("CREATE TABLE vec_nodes (rowid INTEGER PRIMARY KEY)")
+        con.execute("CREATE TABLE vec_nodes_rowids (rowid INTEGER PRIMARY KEY)")
+        for i in range(rows):
+            con.execute("INSERT INTO vec_nodes_rowids VALUES (?)", (i,))
+
+
+def test_dockg_defect_complete_store(tmp_path: Path):
+    _write_graph(tmp_path)
+    _write_vectors(tmp_path, rows=3)
+    assert dockg_defect(tmp_path) is None
+
+
+def test_dockg_defect_corrupt_graph(tmp_path: Path):
+    (tmp_path / "graph.sqlite").write_bytes(b"x" * 50)
+    assert dockg_defect(tmp_path) == "corrupt/empty graph.sqlite"
+
+
+def test_dockg_defect_graph_without_vectors(tmp_path: Path):
+    """The half-built shape: build_graph() succeeded, indexing never ran."""
+    _write_graph(tmp_path)
+    assert dockg_defect(tmp_path) == "no vector store"
+
+
+def test_dockg_defect_empty_vector_store(tmp_path: Path):
+    _write_graph(tmp_path)
+    _write_vectors(tmp_path, rows=0)
+    assert dockg_defect(tmp_path) == "empty vector store"
+
+
+def test_dockg_defect_lancedb_store_accepted(tmp_path: Path):
+    """Pre-migration LanceDB stores are probed by presence only."""
+    _write_graph(tmp_path)
+    (tmp_path / "lancedb").mkdir()
+    assert dockg_defect(tmp_path) is None
+
+
+# ---------------------------------------------------------------------------
+# Report status: the diary stage must not be invisible
+# ---------------------------------------------------------------------------
+
+
+def test_failure_text_books_only():
+    from gutenberg_kg.ingest import _failure_text
+
+    assert _failure_text(3, 0) == "3 book(s) failed"
+
+
+def test_failure_text_diaries_only():
+    from gutenberg_kg.ingest import _failure_text
+
+    assert _failure_text(0, 1) == "the diaries stage failed"
+
+
+def test_failure_text_both():
+    from gutenberg_kg.ingest import _failure_text
+
+    assert _failure_text(2, 1) == "2 book(s) failed and the diaries stage failed"
+
+
+def _print_status(capsys, *, diary_rc: int) -> str:
+    from datetime import UTC, datetime
+
+    from gutenberg_kg.ingest import print_summary
+
+    gs = GenreSummary(genre="horror")
+    gs.results = [BookResult(name="A", genre="horror", status="built", nodes=1, edges=1)]
+    print_summary(
+        [gs],
+        IngestOptions(),
+        Path("/tmp/registry.sqlite"),
+        datetime.now(UTC),
+        1.0,
+        "test-model",
+        diary_rc=diary_rc,
+    )
+    return capsys.readouterr().out
+
+
+def test_report_status_success_when_diaries_ok(capsys):
+    assert "SUCCESS" in _print_status(capsys, diary_rc=0)
+
+
+def test_report_status_not_success_when_diaries_failed(capsys):
+    """A failed diary stage produces no GenreSummary, so a book-count-only
+    status would call an entire failed genre a success."""
+    out = _print_status(capsys, diary_rc=1)
+    assert "SUCCESS" not in out
+    assert "diaries stage failed" in out
