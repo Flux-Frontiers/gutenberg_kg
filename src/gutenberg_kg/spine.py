@@ -282,11 +282,15 @@ def _is_prose_line(line: str) -> bool:
     :mod:`gutenberg_kg.headings` uses to recognise a Title Case line.
 
     :param line: A raw line.
-    :returns: True if it is long and most of its content words start
-        lowercase.
+    :returns: True if it is at least 60 characters and most of its
+        content words start lowercase.
     """
     stripped = line.strip()
-    if len(stripped) <= 60:
+    # Strictly shorter than 60 is too short to be a filled wrap. A line
+    # of exactly 60 must count: A Christmas Carol (PG #46) wraps at 60,
+    # and requiring 61 left its Stave I body with zero prose lines, so
+    # the body's ``STAVE I`` was never peeled off the contents cluster.
+    if len(stripped) < 60:
         return False
     content = [
         w
