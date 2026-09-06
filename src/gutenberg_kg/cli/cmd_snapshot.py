@@ -103,6 +103,24 @@ def snapshot() -> None:
     help="Override the corpus root directory.",
 )
 @click.option(
+    "--subject",
+    default=None,
+    metavar="TEXT",
+    help=(
+        "What was measured (default: corpus:gutenberg). Use repo:gutenberg-kg "
+        "when snapshotting the package rather than the books."
+    ),
+)
+@click.option(
+    "--key",
+    default=None,
+    metavar="TEXT",
+    help=(
+        "Snapshot identifier (default: a UTC timestamp, which is what a corpus "
+        "wants). Pass a release tag when snapshotting the package."
+    ),
+)
+@click.option(
     "--force",
     is_flag=True,
     default=False,
@@ -119,6 +137,8 @@ def snapshot_save(
     registry: str | None,
     snapshots_dir: str | None,
     corpus_root: str | None,
+    subject: str | None,
+    key: str | None,
     force: bool,
     output_json: bool,
 ) -> None:
@@ -134,6 +154,8 @@ def snapshot_save(
     :param registry: Override the KGRAG registry path.
     :param snapshots_dir: Override the snapshots directory.
     :param corpus_root: Override the corpus root directory.
+    :param subject: What was measured; defaults to ``corpus:gutenberg``.
+    :param key: Snapshot identifier; defaults to a UTC timestamp.
     :param force: Always create a new manifest entry.
     :param output_json: Print the full snapshot JSON to stdout.
     """
@@ -145,7 +167,7 @@ def snapshot_save(
     c_root = Path(corpus_root) if corpus_root else CORPUS_ROOT
 
     mgr = _make_manager(snap_dir, registry_path, c_root)
-    snap = mgr.capture()
+    snap = mgr.capture(key=key or "", subject=subject or "")
 
     try:
         snap_file = mgr.save_snapshot(snap, force=force)

@@ -572,3 +572,111 @@ def test_round_trip_save_show(fake_registry: Path, tmp_path: Path):
     show_result = CliRunner().invoke(cli, ["snapshot", "show", "--snapshots-dir", str(snap_dir)])
     assert show_result.exit_code == 0
     assert "Books:" in show_result.output
+
+
+# ---------------------------------------------------------------------------
+# subject / key — kgmodule-utils 0.19.0 retired tree-hash keying
+# ---------------------------------------------------------------------------
+
+
+def _saved_snapshot(snap_dir: Path) -> dict:
+    """Return the manifest entry and file contents of the newest snapshot.
+
+    :param snap_dir: Directory holding ``manifest.json`` and the snapshot files.
+    :return: The snapshot file's parsed JSON, with the manifest entry under
+        ``"_entry"`` so a test can assert on both without re-reading.
+    """
+    manifest = json.loads((snap_dir / "manifest.json").read_text())
+    entry = manifest["snapshots"][-1]
+    snap = json.loads((snap_dir / entry["file"]).read_text())
+    snap["_entry"] = entry
+    return snap
+
+
+def _save(fake_registry: Path, tmp_path: Path, snap_dir: Path, *extra: str):
+    """Invoke ``snapshot save`` against the fake registry.
+
+    :param fake_registry: Registry fixture path.
+    :param tmp_path: Corpus root stand-in.
+    :param snap_dir: Snapshots directory.
+    :param extra: Additional CLI arguments.
+    :return: The Click result.
+    """
+    return CliRunner().invoke(
+        cli,
+        [
+            "snapshot",
+            "save",
+            "--registry",
+            str(fake_registry),
+            "--snapshots-dir",
+            str(snap_dir),
+            "--corpus-root",
+            str(tmp_path),
+            *extra,
+        ],
+    )
+
+
+def test_snapshot_save_records_corpus_subject(fake_registry: Path, tmp_path: Path):
+    """A snapshot says what it measured, not just which tool measured it."""
+    snap_dir = tmp_path / ".snapshots"
+    (tmp_path / "authors").mkdir()
+
+    result = _save(fake_registry, tmp_path, snap_dir)
+    assert result.exit_code == 0, result.output
+
+    snap = _saved_snapshot(snap_dir)
+    assert snap["subject"] == "corpus:gutenberg"
+    # The manifest is what `snapshot list` and the fleet audit read, so the
+    # subject has to survive into it as well as into the file.
+    assert snap["_entry"]["subject"] == "corpus:gutenberg"
+
+
+def test_snapshot_save_subject_and_key_overrides(fake_registry: Path, tmp_path: Path):
+    """`--subject` / `--key` reach the snapshot instead of landing in metrics."""
+    snap_dir = tmp_path / ".snapshots"
+    (tmp_path / "authors").mkdir()
+
+    result = _save(
+        fake_registry,
+        tmp_path,
+        snap_dir,
+        "--subject",
+        "repo:gutenberg-kg",
+        "--key",
+        "v1.18.0",
+    )
+    assert result.exit_code == 0, result.output
+
+    snap = _saved_snapshot(snap_dir)
+    assert snap["key"] == "v1.18.0"
+    assert snap["subject"] == "repo:gutenberg-kg"
+    # The base takes **extra_metrics too; an unnamed key= would be filed there.
+    assert "key" not in snap["metrics"]
+    assert "subject" not in snap["metrics"]
+
+
+def test_snapshot_save_defaults_to_timestamp_key(fake_registry: Path, tmp_path: Path):
+    """Omitting `--key` keys on a UTC timestamp, not the git tree hash."""
+    snap_dir = tmp_path / ".snapshots"
+    (tmp_path / "authors").mkdir()
+
+    assert _save(fake_registry, tmp_path, snap_dir).exit_code == 0
+
+    snap = _saved_snapshot(snap_dir)
+    assert snap["key"].startswith("20")
+    assert snap["key"] != snap.get("tree_hash", "")
+
+
+def test_snapshot_show_reads_back_a_timestamp_key(fake_registry: Path, tmp_path: Path):
+    """A timestamp key round-trips through `snapshot show` despite its colons."""
+    snap_dir = tmp_path / ".snapshots"
+    (tmp_path / "authors").mkdir()
+
+    assert _save(fake_registry, tmp_path, snap_dir).exit_code == 0
+    key = _saved_snapshot(snap_dir)["key"]
+
+    result = CliRunner().invoke(cli, ["snapshot", "show", key, "--snapshots-dir", str(snap_dir)])
+    assert result.exit_code == 0, result.output
+    assert "Books:" in result.output
