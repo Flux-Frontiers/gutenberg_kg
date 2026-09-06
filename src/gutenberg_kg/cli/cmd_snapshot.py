@@ -124,9 +124,11 @@ def snapshot_save(
 ) -> None:
     """Capture current corpus metrics and save as a temporal snapshot.
 
-    Snapshots are stored in ``corpus/.snapshots/<tree-hash>.json`` alongside a
+    Snapshots are stored in ``corpus/.snapshots/<key>.json`` alongside a
     ``manifest.json`` index.  Each entry records total and per-genre book /
-    node / edge counts, the git tree hash, branch, and version.
+    node / edge counts, the git tree hash, branch, version, and the subject
+    ``corpus:gutenberg``.  The key is a UTC timestamp: a corpus changes when
+    books are ingested, not when the repo is tagged.
     \f
 
     :param registry: Override the KGRAG registry path.
