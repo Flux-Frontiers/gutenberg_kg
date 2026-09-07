@@ -22,6 +22,7 @@ import pytest
 from gutenberg_kg.build_corpus import (
     BuildCorpusOptions,
     BuildError,
+    _diary_dirs_for_product,
     assert_selection,
     build_catalog,
     bundle_diaries,
@@ -44,10 +45,14 @@ def _make_book(corpus_root, genre, title, *, ebook_id=None, author="A. Author"):
 
 
 def _make_diary(corpus_root, name, *, marker="graph.sqlite"):
-    """A minimal ``corpus/diaries/<name>/.diarykg/`` with one file to copy."""
-    diarykg = corpus_root / "diaries" / name / ".diarykg"
+    """A minimal ``corpus/diaries/<name>/`` in the real shape: a
+    ``reference.md`` sibling of the ``.diarykg/`` index, the same
+    genre-shaped layout ``_all_diary_slugs`` expects."""
+    diary_dir = corpus_root / "diaries" / name
+    diarykg = diary_dir / ".diarykg"
     diarykg.mkdir(parents=True)
     (diarykg / marker).write_text("not a real index", encoding="utf-8")
+    (diary_dir / "reference.md").write_text(f"# Reference: {name}", encoding="utf-8")
     return diarykg
 
 
@@ -116,6 +121,39 @@ class TestAssertSelection:
 
     def test_empty_file_list_never_raises(self):
         assert_selection([], frozenset({"philosophy/The Republic"}))  # no raise
+
+    def test_a_real_cross_genre_name_collision_is_caught_end_to_end(self, tmp_path, monkeypatch):
+        """The gap derive_exclude accepts, forced for real and caught by the
+        guard it exists for.
+
+        Two genres each have a book directory named "Republic". Only
+        philosophy's is wanted, but derive_exclude's only_books check is a
+        flat basename set with no genre context: once "Republic" is in it for
+        philosophy's sake, ancient-classical's "Republic" survives the same
+        exclude too. This walks the real doc_kg.dockg.iter_text_files with
+        that exact exclude set -- not a hand-built file list -- so the
+        collision is real, not simulated, before assert_selection is asked
+        to catch it.
+        """
+        pytest.importorskip("doc_kg")
+        from doc_kg.dockg import iter_text_files
+
+        root = tmp_path / "corpus"
+        monkeypatch.setattr("gutenberg_kg.build_corpus.CORPUS_ROOT", root)
+        philosophy_republic = _make_book(root, "philosophy", "Republic")
+        ancient_republic = _make_book(root, "ancient-classical", "Republic")
+        (philosophy_republic / "the_republic.md").write_text("Plato", encoding="utf-8")
+        (ancient_republic / "the_republic.md").write_text("Also Plato", encoding="utf-8")
+
+        catalog_keys = frozenset({"philosophy/Republic"})
+        exclude = derive_exclude(["philosophy", "ancient-classical"], only_books={"Republic"})
+
+        # The gap: ancient-classical's Republic was never excluded.
+        assert "Republic" not in exclude
+
+        walked = iter_text_files(root, exclude=exclude)
+        with pytest.raises(BuildError, match="ancient-classical/Republic"):
+            assert_selection(walked, catalog_keys)
 
 
 # --- build_catalog -----------------------------------------------------------
@@ -238,6 +276,27 @@ class TestWriteProductJson:
         )
         doc = json.loads(path.read_text())
         assert len(doc["spec_sha256"]) == 64
+
+
+# --- _diary_dirs_for_product ---------------------------------------------
+
+
+class TestDiaryDirsForProduct:
+    def test_explicit_value_passes_through_unchanged(self):
+        assert _diary_dirs_for_product(("pepys",), n_diaries=1) == ("pepys",)
+
+    def test_explicit_empty_tuple_passes_through(self):
+        assert _diary_dirs_for_product((), n_diaries=0) == ()
+
+    def test_none_with_no_diaries_bundled_is_empty(self):
+        assert _diary_dirs_for_product(None, n_diaries=0) == ()
+
+    def test_none_with_diaries_bundled_enumerates_the_real_corpus(self, corpus, monkeypatch):
+        """The bug this guards: None used to write [] to product.json even
+        though bundle_diaries had just copied every diary it found."""
+        monkeypatch.setattr("gutenberg_kg.build_corpus.CORPUS_ROOT", corpus)
+        result = _diary_dirs_for_product(None, n_diaries=2)
+        assert set(result) == {"pepys", "evelyn"}
 
 
 # --- run_build_corpus: the two paths that never touch doc_kg -----------------

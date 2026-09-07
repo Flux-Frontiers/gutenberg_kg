@@ -29,12 +29,28 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   corpus tree, so a downloaded bundle with no `corpus/` beside it still
   works. `--force` now wipes the destination first, so a spec whose book
   set shrank cannot leave the previous run's orphaned packs behind.
-  `build-corpus` stays unfiltered until phase 3.
 - **Fixed while building phase 2:** `diaries = true` in a bundle spec
   resolved to the same empty diary list as `diaries = false` — `diary_dirs`
   is a tuple either way, and Phase 1 only special-cased the explicit-list
   form. It now enumerates every diary under `corpus/diaries/`, the same
   `reference.md`-per-subdirectory layout as any genre.
+- **`gutenkg build-corpus --book`/`--spec`/`--diaries`/`--no-diaries`** —
+  phase 3: the rebuild path gets the same book-level filtering `export-swift`
+  got in phase 2, so a named product can be built from source rather than
+  only exported from an existing `gutenberg-all`. A book-filtered build
+  targeting the name `gutenberg-all` now refuses without a new
+  `--force-overwrite-full`, and `--book` without an explicit `--output`
+  refuses too — an auto-derived name would misrepresent a partial selection
+  as a complete one. Writes `bundles/<name>/product.json`, a frozen record
+  of the resolved selection and per-file checksums, for a book-filtered
+  build only. The book-level exclude is a flat set of directory basenames,
+  pruned wherever they occur — a real gap in principle if two genres ever
+  shared a book directory name, closed in practice (253 unique names
+  today) and backstopped by a new hard failure, `assert_selection`, raised
+  before any embedding runs if the exclude ever did leak an unselected
+  book through. Measured for real rather than assumed: a `--genre
+  philosophy` build (39 books) takes 2m 38s, confirming the estimate the
+  design's own deferral of a DocKG-slice alternative was resting on.
 - **A launch splash** — logo, name, and tagline, fading in and holding for
   2.5s before the real UI takes over. Shared between both shells via a new
   `SplashOverlay`, which loads the 1024pt app icon from a copy bundled into

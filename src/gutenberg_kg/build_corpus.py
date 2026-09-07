@@ -404,6 +404,30 @@ def _sha256(path: Path) -> str:
     return digest.hexdigest()
 
 
+def _diary_dirs_for_product(diary_dirs: tuple[str, ...] | None, n_diaries: int) -> tuple[str, ...]:
+    """What actually shipped, for ``product.json`` -- not what was asked for.
+
+    ``diary_dirs is None`` means :func:`bundle_diaries` used the legacy "copy
+    every diary found" default rather than an explicit allow-list. Recording
+    an empty list in that case would tell an auditor the opposite of what the
+    bundle actually contains whenever any diaries were found; this
+    reconstructs the same enumeration :func:`bundle_diaries` used so
+    ``product.json`` names what shipped, not the override value.
+
+    :param diary_dirs: ``BuildCorpusOptions.diary_dirs`` as given.
+    :param n_diaries: How many diary indices :func:`bundle_diaries` actually
+        copied — the true ground for the ``None`` case.
+    :returns: Diary slugs to record.
+    """
+    if diary_dirs is not None:
+        return diary_dirs
+    if not n_diaries:
+        return ()
+    from gutenberg_kg.bundle_spec import _all_diary_slugs  # noqa: PLC0415
+
+    return _all_diary_slugs(CORPUS_ROOT)
+
+
 def write_product_json(
     bundle_dir: Path,
     *,
@@ -798,7 +822,7 @@ def run_build_corpus(genres: list[str], opts: BuildCorpusOptions) -> int:
                 name=opts.product_name or name,
                 version=opts.product_version,
                 catalog_keys=opts.catalog_keys,
-                diary_dirs=opts.diary_dirs or (),
+                diary_dirs=_diary_dirs_for_product(opts.diary_dirs, n_diaries),
                 spec_path=opts.spec_path,
             )
 
