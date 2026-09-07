@@ -22,7 +22,7 @@ public enum SynthesisEvent: Sendable {
 }
 
 /// What a completed synthesis cost, for the turn's stats caption.
-public struct SynthesisMetrics: Sendable, Equatable {
+public struct SynthesisMetrics: Sendable, Equatable, Codable {
     /// Wall-clock milliseconds from first token request to completion.
     public let elapsedMs: Int
     /// Passages that actually reached the model after budgeting.
@@ -54,7 +54,7 @@ public struct SynthesisMetrics: Sendable, Equatable {
 /// Every case maps to a message the chat can show without blaming the user;
 /// `isRecoverableRemotely` marks the ones where "retry via the worker" is a
 /// sensible next action, mirroring chat.py's `synthesis_error` path.
-public enum SynthesisFailure: Error, Sendable, Equatable {
+public enum SynthesisFailure: Error, Sendable, Equatable, Codable {
     /// The backend cannot run at all (Apple Intelligence off, model absent…).
     case unavailable(String)
     /// Retrieval returned nothing with usable content.
@@ -65,12 +65,21 @@ public enum SynthesisFailure: Error, Sendable, Equatable {
     case contextOverflow
     /// Anything else the framework reported.
     case backend(String)
+    /// The reader stopped the answer themselves.
+    ///
+    /// Recorded rather than left blank because `ChatTurn.isStreaming` is
+    /// derived -- retrieval present, no metrics, no failure -- so a turn
+    /// abandoned mid-answer would satisfy that condition forever and show a
+    /// blinking caret on a conversation that finished days ago.
+    case cancelled
 
     /// True when routing the same request to a remote provider could succeed.
     public var isRecoverableRemotely: Bool {
         switch self {
         case .unavailable, .guardrail, .contextOverflow, .backend: return true
-        case .noPassages: return false
+        // Stopping was deliberate; offering to retry elsewhere answers a
+        // question the reader did not ask.
+        case .noPassages, .cancelled: return false
         }
     }
 
@@ -87,6 +96,8 @@ public enum SynthesisFailure: Error, Sendable, Equatable {
             return "The passages did not fit the on-device context window. Lower the passage count and ask again."
         case .backend(let message):
             return "Answer generation failed — \(message)."
+        case .cancelled:
+            return "Stopped."
         }
     }
 }

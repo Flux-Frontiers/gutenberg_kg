@@ -38,7 +38,11 @@ public struct RetrievalRequest: Sendable, Equatable {
 }
 
 /// Passages plus how long finding them took.
-public struct RetrievalResult: Sendable {
+///
+/// `Codable` so a turn can be written to a stored conversation and read back
+/// with its evidence intact -- an answer without its passages is exactly the
+/// thing this app exists not to show.
+public struct RetrievalResult: Sendable, Codable {
     public let hits: [Hit]
     public let kgsQueried: Int
     public let searchMs: Int?

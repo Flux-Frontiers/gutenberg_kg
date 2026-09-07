@@ -5,7 +5,12 @@ import GutenbergKGKit
 import Observation
 
 /// Where a turn's answer comes from.
-public enum AnswerEngine: String, CaseIterable, Sendable {
+///
+/// The raw `String` is what reaches a stored conversation, so these case
+/// names are on-disk format: renaming one silently orphans every turn that
+/// recorded it. A raw-value enum does not conform to `Codable` on its own --
+/// the declaration below is what makes the synthesis happen.
+public enum AnswerEngine: String, CaseIterable, Sendable, Codable {
     /// Apple Foundation Models, on this device. Nothing leaves the phone.
     case onDevice
     /// Apple Foundation Models, on Private Cloud Compute. Leaves the device —
@@ -37,8 +42,11 @@ public enum AnswerEngine: String, CaseIterable, Sendable {
 }
 
 /// One chat exchange: the question, the passages, and the answer as it arrives.
-public struct ChatTurn: Identifiable, Sendable {
-    public let id = UUID()
+public struct ChatTurn: Identifiable, Sendable, Codable {
+    /// Assigned in `init` rather than defaulted inline: a property with a
+    /// default value and no initializer assignment cannot be decoded, which
+    /// is the one thing that would otherwise stop `Codable` synthesising.
+    public let id: UUID
     let question: String
     let corpus: String
     let engine: AnswerEngine
@@ -54,13 +62,35 @@ public struct ChatTurn: Identifiable, Sendable {
     /// Set when retrieval itself failed; nothing else in the turn is valid.
     var errorMessage: String?
 
-    /// Set once `renderImage(for:)` returns an illustration for this turn.
+    /// This session's illustration, held in memory as base64.
+    ///
+    /// Never encoded: one measured `imagine` result was 4.2 MB of base64, and
+    /// inlining that would make a conversation file unreadable in an editor
+    /// and slow to list. The bytes go beside the JSON instead, named by
+    /// `imageFile`.
     var generatedImage: GeneratedImage?
+    /// The illustration on disk, as a path relative to the conversation
+    /// directory. Set once the store has written the PNG.
+    var imageFile: String?
     /// Set when rendering was attempted and failed — always network-only,
     /// so a failure here is ordinary (no worker configured, no reachable
     /// worker) rather than exceptional.
     var imageError: String?
     var isRenderingImage = false
+
+    init(question: String, corpus: String, engine: AnswerEngine) {
+        self.id = UUID()
+        self.question = question
+        self.corpus = corpus
+        self.engine = engine
+    }
+
+    /// Everything except the two transient fields: an in-flight render is not
+    /// a fact about the conversation, and the image bytes live beside it.
+    enum CodingKeys: String, CodingKey {
+        case id, question, corpus, engine, retrieval, answer, metrics
+        case synthesisFailure, errorMessage, imageFile, imageError
+    }
 
     var isStreaming: Bool {
         retrieval != nil && metrics == nil && synthesisFailure == nil && errorMessage == nil
@@ -189,6 +219,30 @@ public final class AppModel {
     var connectionError: String?
     private var activeQuery: Task<Void, Never>?
 
+    // Saved conversations
+
+    /// Every saved conversation, newest first — the sidebar's list.
+    private(set) var conversations: [ConversationSummary] = []
+
+    /// The conversation `turns` belongs to, or nil for a chat that has not
+    /// completed a turn yet.
+    ///
+    /// A conversation is created on the first *completed* turn rather than on
+    /// "New chat", which is what keeps the list free of untitled empty rows.
+    private(set) var activeConversation: Conversation?
+
+    /// Where conversations are stored, or nil when there is no Application
+    /// Support directory to put them in. Persistence degrades to a no-op
+    /// rather than failing a query.
+    let store: ConversationStore?
+
+    /// The store write in flight, if any.
+    ///
+    /// Exists so a test can await a write that the app itself never waits on
+    /// -- the UI updates from `conversations` whenever the write lands, and
+    /// blocking a query on a disk write would be the wrong trade for it.
+    private(set) var pendingPersist: Task<Void, Never>?
+
     /// The on-device backend, or nil on hardware/OS that cannot run it.
     let onDevice: (any SynthesisBackend)? = makeOnDeviceSynthesis()
 
@@ -212,7 +266,17 @@ public final class AppModel {
     /// gives no way to express "this token is fine to leak" explicitly.
     private var askObserver: NSObjectProtocol?
 
-    public init() {
+    /// The app's own initializer: conversations go to Application Support.
+    public convenience init() {
+        self.init(store: ConversationStore.defaultDirectory().map(ConversationStore.init))
+    }
+
+    /// :param store: Where conversations are saved. Internal because
+    ///     `ConversationStore` is; this is the seam tests use to point at a
+    ///     scratch directory, the same way `AppModel.defaults` works for
+    ///     `UserDefaults`.
+    init(store: ConversationStore?) {
+        self.store = store
         if onDeviceAvailability.isAvailable { engine = .onDevice }
 
         // See AskIntent.swift: Siri/Shortcuts have no other way to reach this
@@ -221,7 +285,163 @@ public final class AppModel {
             forName: .askKnowledgePress, object: nil, queue: .main
         ) { [weak self] notification in
             guard let question = notification.userInfo?["question"] as? String else { return }
-            Task { @MainActor in self?.send(question) }
+            Task { @MainActor in
+                // A spoken question is its own chat, not a follow-up to
+                // whatever happened to be on screen.
+                self?.newConversation()
+                self?.send(question)
+            }
+        }
+
+        loadConversations()
+    }
+
+    // MARK: - Conversations
+
+    /// Read the saved conversation list, and reopen the most recent chat.
+    ///
+    /// Off the main actor: this runs during `init`, and the first frame must
+    /// not wait on a directory scan.
+    ///
+    /// Reopening the newest conversation is what makes a relaunch continuous
+    /// rather than merely non-destructive -- until the sidebar arrives there
+    /// is otherwise no way to reach a saved chat at all, and files nothing can
+    /// reopen are not persistence.
+    func loadConversations() {
+        guard let store else { return }
+        pendingPersist = Task { [weak self] in
+            let loaded = await Task.detached(priority: .userInitiated) {
+                let summaries = (try? store.summaries()) ?? []
+                let newest = summaries.first.flatMap { try? store.load($0.id) }
+                return (summaries, newest)
+            }.value
+            guard let self else { return }
+            self.conversations = loaded.0
+            // Never over a chat already under way: a question asked through
+            // Siri can land before this returns, and the reader's live query
+            // outranks a restored one.
+            guard self.turns.isEmpty, self.activeConversation == nil,
+                let newest = loaded.1
+            else { return }
+            self.activeConversation = newest
+            self.turns = newest.turns
+        }
+    }
+
+    /// Start a new chat, saving whatever is on screen first.
+    ///
+    /// A no-op on an empty buffer, so tapping it twice cannot produce two
+    /// empty conversations -- or any at all.
+    func newConversation() {
+        guard !turns.isEmpty else { return }
+        cancel()
+        persistActiveConversation()
+        turns.removeAll()
+        activeConversation = nil
+    }
+
+    /// Open a saved conversation, saving the current one first.
+    ///
+    /// Cancels any query in flight: an answer finishing into a buffer the
+    /// reader is no longer looking at would write itself into the wrong
+    /// conversation.
+    func select(_ id: UUID) {
+        guard let store, activeConversation?.id != id else { return }
+        cancel()
+        persistActiveConversation()
+        pendingPersist = Task { [weak self] in
+            let loaded = await Task.detached(priority: .userInitiated) {
+                try? store.load(id)
+            }.value
+            guard let self, let loaded else { return }
+            self.activeConversation = loaded
+            self.turns = loaded.turns
+        }
+    }
+
+    /// Delete a saved conversation, clearing the buffer if it was the open one.
+    func delete(_ id: UUID) {
+        guard let store else { return }
+        if activeConversation?.id == id {
+            cancel()
+            turns.removeAll()
+            activeConversation = nil
+        }
+        conversations.removeAll { $0.id == id }
+        pendingPersist = Task { [weak self] in
+            let summaries = await Task.detached(priority: .utility) { () -> [ConversationSummary] in
+                try? store.delete(id)
+                return (try? store.summaries()) ?? []
+            }.value
+            self?.conversations = summaries
+        }
+    }
+
+    /// Delete the chat on screen, saved or not.
+    ///
+    /// What the old "Clear chat" buttons became. An unsaved buffer -- a query
+    /// still in flight, or a passages-only turn nobody kept -- has no
+    /// conversation to remove, so it is simply dropped.
+    func deleteActiveConversation() {
+        if let id = activeConversation?.id {
+            delete(id)
+        } else {
+            cancel()
+            turns.removeAll()
+        }
+    }
+
+    /// Retitle a conversation. An empty or whitespace-only title is refused
+    /// and the row keeps the name it had.
+    func rename(_ id: UUID, to title: String) {
+        guard let store else { return }
+        let trimmed = title.trimmingCharacters(in: .whitespacesAndNewlines)
+        guard !trimmed.isEmpty else { return }
+
+        if activeConversation?.id == id { activeConversation?.title = trimmed }
+        if let index = conversations.firstIndex(where: { $0.id == id }) {
+            conversations[index].title = trimmed
+        }
+        pendingPersist = Task { [weak self] in
+            let summaries = await Task.detached(priority: .utility) { () -> [ConversationSummary] in
+                if var conversation = try? store.load(id) {
+                    conversation.title = trimmed
+                    try? store.save(conversation)
+                }
+                return (try? store.summaries()) ?? []
+            }.value
+            self?.conversations = summaries
+        }
+    }
+
+    /// Write the current chat to disk, creating its conversation if this is
+    /// the first completed turn.
+    ///
+    /// Called once per completed step -- not per streamed partial, which is
+    /// visual only.
+    func persistActiveConversation() {
+        guard let store, !turns.isEmpty else { return }
+
+        let now = Date()
+        if var conversation = activeConversation {
+            conversation.turns = turns
+            conversation.updatedAt = now
+            activeConversation = conversation
+        } else {
+            activeConversation = Conversation(
+                title: ConversationTitle.title(for: turns[0].question),
+                createdAt: now,
+                updatedAt: now,
+                turns: turns)
+        }
+        guard let conversation = activeConversation else { return }
+
+        pendingPersist = Task { [weak self] in
+            let summaries = await Task.detached(priority: .utility) { () -> [ConversationSummary] in
+                try? store.save(conversation)
+                return (try? store.summaries()) ?? []
+            }.value
+            self?.conversations = summaries
         }
     }
 
@@ -451,10 +671,19 @@ public final class AppModel {
     }
 
     /// Stop an answer mid-stream. The passages already shown stay.
+    ///
+    /// The abandoned turn is marked `.cancelled` rather than left blank:
+    /// `isStreaming` is derived from the absence of metrics and failure, so an
+    /// unmarked turn would still claim to be streaming when the conversation
+    /// is reopened next week.
     func cancel() {
         activeQuery?.cancel()
         activeQuery = nil
         isQuerying = false
+        if let index = turns.lastIndex(where: { $0.isStreaming }) {
+            turns[index].synthesisFailure = .cancelled
+            persistActiveConversation()
+        }
     }
 
     /// Illustrate a turn: rewrite its answer (or top passages) into an
@@ -491,12 +720,35 @@ public final class AppModel {
                 let image = try await client.imagine(prompt: prompt, imageBackend: imageBackend)
                 guard let i = turns.firstIndex(where: { $0.id == id }) else { return }
                 turns[i].generatedImage = image
+                // Creates the conversation if this render beat it to it, so
+                // there is a directory to put the PNG in.
+                persistActiveConversation()
+                await persistImage(image, for: id)
             } catch {
                 guard let i = turns.firstIndex(where: { $0.id == id }) else { return }
                 turns[i].imageError =
                     (error as? WorkerError)?.errorDescription ?? error.localizedDescription
+                persistActiveConversation()
             }
         }
+    }
+
+    /// Write a rendered illustration beside its conversation and record the
+    /// path on the turn, so it survives a relaunch without ever going into
+    /// the JSON.
+    private func persistImage(_ image: GeneratedImage, for id: ChatTurn.ID) async {
+        guard let store,
+            let conversationID = activeConversation?.id,
+            let data = Data(base64Encoded: image.imageB64)
+        else { return }
+
+        let file = await Task.detached(priority: .utility) { () -> String? in
+            try? store.writeImage(data, conversation: conversationID, turn: id)
+        }.value
+
+        guard let file, let index = turns.firstIndex(where: { $0.id == id }) else { return }
+        turns[index].imageFile = file
+        persistActiveConversation()
     }
 
     /// Distil a turn into a concise image-generation prompt (≤800 chars) —
@@ -544,6 +796,11 @@ public final class AppModel {
             turns[index].errorMessage = (error as? WorkerError)?.errorDescription
                 ?? error.localizedDescription
         }
+        // Once, when the stream ends, however it ended. Persisting inside the
+        // switch instead would miss passages-only turns entirely: with no
+        // synthesis backend the orchestrator yields `.retrieved` and finishes,
+        // never emitting `.finished`.
+        persistActiveConversation()
     }
 
     /// The Phase 1 path: one worker call that retrieves and synthesizes.
@@ -578,5 +835,6 @@ public final class AppModel {
             turns[index].errorMessage = (error as? WorkerError)?.errorDescription
                 ?? error.localizedDescription
         }
+        persistActiveConversation()
     }
 }

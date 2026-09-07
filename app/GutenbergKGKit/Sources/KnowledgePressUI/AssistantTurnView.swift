@@ -149,14 +149,14 @@ struct AssistantTurnView: View {
                 Text("Generating an illustration…").foregroundStyle(.secondary)
             }
             .font(.caption)
-        } else if let image = turn.generatedImage, let rendered = decodedImage(image.imageB64) {
+        } else if let rendered = illustration {
             VStack(alignment: .leading, spacing: 4) {
                 rendered
                     .resizable()
                     .scaledToFit()
                     .frame(maxWidth: .infinity)
                     .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
-                if let model = image.imageModel {
+                if let model = turn.generatedImage?.imageModel {
                     Text("🎨 \(model)")
                         .font(.caption2)
                         .foregroundStyle(.secondary)
@@ -175,6 +175,36 @@ struct AssistantTurnView: View {
                 }
             }
         }
+    }
+
+    /// This turn's illustration: the one rendered in this session if there is
+    /// one, else the one on disk from a previous session.
+    ///
+    /// A recorded `imageFile` whose PNG has gone missing falls through to nil,
+    /// which puts the Render button back -- an offer to try again reads better
+    /// than an error about a file the reader never knew existed.
+    private var illustration: Image? {
+        if let image = turn.generatedImage, let rendered = decodedImage(image.imageB64) {
+            return rendered
+        }
+        guard let file = turn.imageFile,
+            let conversation = model.activeConversation?.id,
+            let store = model.store
+        else { return nil }
+        return loadImage(at: store.imageURL(conversation: conversation, file: file))
+    }
+
+    private func loadImage(at url: URL) -> Image? {
+        guard let data = try? Data(contentsOf: url) else { return nil }
+        #if canImport(UIKit)
+            guard let image = UIImage(data: data) else { return nil }
+            return Image(uiImage: image)
+        #elseif canImport(AppKit)
+            guard let image = NSImage(data: data) else { return nil }
+            return Image(nsImage: image)
+        #else
+            return nil
+        #endif
     }
 
     private func decodedImage(_ base64: String) -> Image? {
