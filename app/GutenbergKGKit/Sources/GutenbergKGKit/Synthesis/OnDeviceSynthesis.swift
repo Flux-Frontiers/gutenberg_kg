@@ -23,10 +23,10 @@ import Foundation
         private let temperature: Double
 
         /// :param budget: Context limits; defaults to the on-device window.
-        /// :param temperature: Sampling temperature. 0.3 matches
-        ///                     `TextSynthesizer.synthesize_rag`, which the
-        ///                     worker uses for the same job.
-        public init(budget: ContextBudgeter.Budget = .onDevice, temperature: Double = 0.3) {
+        /// :param temperature: Sampling temperature. 0 for determinism: the
+        ///                     answer must restate retrieved passages, so
+        ///                     sampling only adds run-to-run variance.
+        public init(budget: ContextBudgeter.Budget = .onDevice, temperature: Double = 0) {
             self.budgeter = ContextBudgeter(budget: budget)
             self.temperature = temperature
         }

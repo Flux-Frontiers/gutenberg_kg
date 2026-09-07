@@ -143,7 +143,31 @@ public final class AppModel {
     var secret: String = ProcessInfo.processInfo.environment["HANDLER_SECRET"] ?? ""
 
     // Search settings (defaults mirror chat.py's sidebar)
-    var corpus: String = "all"
+
+    /// Genre scope for the next query.
+    ///
+    /// Persisted, unlike the rest of these, because it is a lens rather than
+    /// a preference: an unscoped search spends the on-device context budget
+    /// across every book plus the diaries, so resetting it to "all" on each
+    /// launch silently undoes the reader's narrowing.
+    var corpus: String {
+        get { storedCorpus }
+        set {
+            storedCorpus = newValue
+            AppModel.defaults.set(newValue, forKey: AppModel.corpusKey)
+        }
+    }
+
+    private var storedCorpus: String = AppModel.initialCorpus()
+
+    static let corpusKey = "corpus"
+
+    static func initialCorpus() -> String {
+        guard let stored = defaults.string(forKey: corpusKey), !stored.isEmpty else {
+            return "all"
+        }
+        return stored
+    }
     var resultCount: Double = 25
     var minScore: Double = 0.5
     var semanticFloor: Double = 0.20

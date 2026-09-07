@@ -71,8 +71,26 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   to `.automatic`, unchanged behavior) purely so the built-in sidebar
   toggle appears in the toolbar — the same affordance Xcode, Mail, and
   Notes give a persistent sidebar.
+- **Synthesis is deterministic: temperature 0.3 to 0.** Both the on-device
+  and Private Cloud backends sampled at 0.3, matching the worker's
+  `TextSynthesizer.synthesize_rag`. An answer that restates retrieved
+  passages under citation has nothing to gain from sampling, and the
+  run-to-run variance made two devices impossible to compare: the same
+  question could give a clean synthesis on one and a degenerate repetition
+  on the other with nothing actually different between them. Note this now
+  diverges from the worker, which still synthesizes at 0.3.
 
 ### Fixed
+
+- **The genre scope reset to "all" on every launch.** `AppModel.corpus` was
+  a plain stored property with no backing store, the same defect
+  `WorkerURLTests` exists to document, left behind in a second property. It
+  now persists to `UserDefaults` alongside the worker address. This cost
+  more than an ordinary lost preference: an unscoped search spreads the
+  on-device context budget across every book plus the diaries, so only a
+  handful of the retrieved passages ever reach the model. A reader who had
+  narrowed to one genre silently got the worst-performing setting back on
+  the next launch, and the only symptom was a worse answer.
 
 - **The Render button's worker call could time out well before the worker
   gave up.** `WorkerClient.imagine()` went through the same 60s default as
