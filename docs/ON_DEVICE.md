@@ -54,6 +54,26 @@ gutenkg export-swift --no-diaries    # books only
 gutenkg export-swift --no-vectors --no-golden   # fast schema-only pass
 ```
 
+## A subset of the corpus, not all of it
+
+Everything above defaults to exporting the whole corpus. `--book`
+(repeatable) and `--genre` filter which books' passages and vectors land in
+the pack — a demo of two novels does not need the other 251 books' worth of
+FTS5 index and int8 vectors sitting beside them:
+
+```sh
+gutenkg export-swift --book "english-literature/Pride and Prejudice" \
+  --book "Bleak House (Dickens)" --out bundles/austen-dickens/swift \
+  --no-diaries --force
+```
+
+`--spec bundles/specs/<name>.toml` runs the same filtering from a named,
+versioned, committed spec instead of one-off flags — the product path when
+a selection is worth naming and repeating rather than typed once. See
+[Selective bundles](BUNDLES.md) for the spec format, and `gutenkg build-corpus
+--book`/`--spec` for filtering the DocKG rebuild itself rather than just the
+export.
+
 `--verify` computes the true top-k by brute force over the source vectors and
 compares it with what the pack returns, reporting recall@10 and the mean score
 delta. The benchmark that motivated the store choice

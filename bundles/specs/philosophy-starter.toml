@@ -1,0 +1,25 @@
+name = "philosophy-starter"
+version = "0.1.0"
+description = "Plato, Aristotle, and Kant -- small on-device demo"
+
+# Selection (any combination; resolved to catalog keys)
+genres = ["philosophy"]
+# books = ["philosophy/The Republic", "2680", "Pride and Prejudice"]
+
+diaries = false   # false (default) | true | list of diary directory names
+
+# Materialization: omit for "rebuild" (the default). "none" = packs only.
+materialize = "rebuild"
+source_bundle = "bundles/gutenberg-all"   # only read when materialize = "none"
+
+export_swift = true
+
+# Required, minimum 3 entries. Enforced by `bundle validate`.
+golden_queries = [
+  "the categorical imperative and moral duty",
+  "What does Plato say about justice?",
+  "the allegory of the cave",
+]
+
+# Tag suffix only; the repository name is always corpus-gutenberg.
+image_tag = "philosophy-starter-0.1.0"

@@ -1,8 +1,17 @@
 """build-corpus subcommand — build a single consolidated DocKG over the corpus."""
 
+from pathlib import Path
+
 import click
 
 from gutenberg_kg import build_corpus as bc
+from gutenberg_kg.bundle_spec import (
+    BundleSpec,
+    BundleSpecError,
+    load_spec,
+    resolve_selection,
+    validate_spec,
+)
 from gutenberg_kg.cli.main import cli
 from gutenberg_kg.cli.options import ALL_GENRES
 
@@ -127,6 +136,40 @@ def _parse_strategy(ctx, param, value):  # noqa: ARG001
     default=False,
     help="Suppress per-stage DocKG progress output.",
 )
+@click.option(
+    "--book",
+    "books",
+    multiple=True,
+    metavar="SELECTOR",
+    help="Restrict to this book within the selected genres: a catalog key, a "
+    "Gutenberg ebook_id, or a bare book name unique across genres. Repeatable. "
+    "Needs an explicit --output. Not with --spec.",
+)
+@click.option(
+    "--spec",
+    "spec_path",
+    type=click.Path(exists=True, dir_okay=False, path_type=Path),
+    default=None,
+    help="A bundle spec TOML (see `gutenkg bundle`). Supplies the selection, "
+    "diary policy, output name, and product name/version in one go. Not "
+    "with --book or --genre.",
+)
+@click.option(
+    "--diaries/--no-diaries",
+    "diaries_flag",
+    default=None,
+    help="Override diary bundling for this run. Distinct from --diaries-only, "
+    "which skips phases 1-3 and only re-bundles diary indices; this affects "
+    "phase 4 of an ordinary build. Ignored when --spec supplies its own "
+    "diary policy.",
+)
+@click.option(
+    "--force-overwrite-full",
+    is_flag=True,
+    default=False,
+    help="Allow a book-filtered build (--book or --spec) to target the name "
+    "'gutenberg-all', overwriting the full corpus bundle.",
+)
 def build_corpus(
     genre,
     output,
@@ -140,6 +183,10 @@ def build_corpus(
     update,
     dry_run,
     quiet,
+    books,
+    spec_path,
+    diaries_flag,
+    force_overwrite_full,
 ):
     """Build one consolidated DocKG over the whole corpus (or chosen genres).
 
@@ -151,6 +198,13 @@ def build_corpus(
     Genres are processed in strategy groups: sacred-texts uses the verse chunker
     by default; all others use semantic.  Override with ``--strategy genre:strategy``.
     DiaryKG indices are copied verbatim from corpus/diaries/ into the bundle.
+
+    \b
+    Examples:
+      gutenkg build-corpus
+      gutenkg build-corpus --genre philosophy
+      gutenkg build-corpus --book "philosophy/The Republic" --output philosophy-starter
+      gutenkg build-corpus --spec bundles/specs/philosophy-starter.toml
     \f
 
     :param genre: Tuple of genres to include (empty = all genres).
@@ -165,8 +219,59 @@ def build_corpus(
     :param update: Incremental rebuild — embed only new/changed nodes, upsert, prune.
     :param dry_run: Print the plan without building.
     :param quiet: Suppress per-stage progress output.
+    :param books: Raw ``--book`` selectors, resolved against ``corpus/``.
+    :param spec_path: A bundle spec TOML, in place of ``--book``/``--genre``.
+    :param diaries_flag: ``True``/``False`` from ``--diaries``/``--no-diaries``,
+        or ``None`` when neither was passed.
+    :param force_overwrite_full: Allow a book-filtered build to target
+        ``gutenberg-all``.
+    :raises click.ClickException: If ``--spec`` is combined with ``--book``/
+        ``--genre``, a selector or spec does not resolve, or ``--book`` is
+        used without ``--output``.
     """
-    genres = list(genre) if genre else list(ALL_GENRES)
+    if spec_path is not None and (books or genre):
+        raise click.ClickException("--spec cannot be combined with --book or --genre.")
+    if books and output is None:
+        raise click.ClickException(
+            "--book needs an explicit --output — an auto-derived name (from the "
+            "genres your books happen to sit in) would misrepresent a partial "
+            "selection as a complete one."
+        )
+
+    catalog_keys: frozenset[str] | None = None
+    diary_dirs: tuple[str, ...] | None = None
+    product_name: str | None = None
+    product_version: str | None = None
+
+    if spec_path is not None:
+        try:
+            spec = load_spec(spec_path)
+        except BundleSpecError as exc:
+            raise click.ClickException(str(exc)) from exc
+        resolved = resolve_selection(spec)
+        problems = validate_spec(spec, resolved)
+        if problems:
+            lines = "\n".join(f"  - {p}" for p in problems)
+            raise click.ClickException(f"{spec_path} is not valid:\n{lines}")
+        genres = sorted(resolved.genres_implied)
+        catalog_keys = resolved.catalog_keys
+        diary_dirs = resolved.diary_dirs
+        product_name = spec.name
+        product_version = spec.version
+        if output is None:
+            output = spec.name
+    elif books:
+        stub = BundleSpec(name="cli", version="0", genres=tuple(genre), books=tuple(books))
+        resolved = resolve_selection(stub)
+        if resolved.missing:
+            raise click.ClickException(f"could not resolve: {list(resolved.missing)}")
+        genres = sorted(resolved.genres_implied)
+        catalog_keys = resolved.catalog_keys
+        diary_dirs = None if diaries_flag is None else (None if diaries_flag else ())
+    else:
+        genres = list(genre) if genre else list(ALL_GENRES)
+        diary_dirs = None if diaries_flag is None else (None if diaries_flag else ())
+
     opts = bc.BuildCorpusOptions(
         output=output,
         similar_k=similar_k,
@@ -179,6 +284,12 @@ def build_corpus(
         update=update,
         dry_run=dry_run,
         quiet=quiet,
+        catalog_keys=catalog_keys,
+        diary_dirs=diary_dirs,
+        product_name=product_name,
+        product_version=product_version,
+        spec_path=spec_path,
+        force_overwrite_full=force_overwrite_full,
     )
     rc = bc.run_build_corpus(genres, opts)
     if rc != 0:

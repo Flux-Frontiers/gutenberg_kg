@@ -1,0 +1,28 @@
+name = "shakespeare-demo"
+version = "0.1.0"
+description = "Four plays -- Swift-only demo, no rebuild, no image"
+
+# One of each resolution rule, deliberately: an explicit catalog key, a
+# Gutenberg ebook_id, and two bare names unique across the corpus. See
+# `resolve_selection()`'s docstring in bundle_spec.py for the exact order
+# these are tried in.
+books = [
+  "shakespeare/Hamlet",
+  "1533",                # Macbeth
+  "Romeo and Juliet",
+  "A Midsummer Nights Dream",
+]
+diaries = false
+
+# Swift-only: filters bundles/gutenberg-all at export time, no DocKG rebuild
+# and no image -- `bundle image`/`bundle make --image` refuse this outright.
+materialize = "none"
+source_bundle = "bundles/gutenberg-all"
+
+export_swift = true
+
+golden_queries = [
+  "wherefore art thou Romeo",
+  "to be or not to be",
+  "is this a dagger which I see before me",
+]

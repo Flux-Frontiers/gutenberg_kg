@@ -10,17 +10,89 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added
 
-- **`gutenkg bundle validate`/`resolve`** — phase 1 of selective bundle
-  export (`analysis/SELECTIVE_BUNDLE_EXPORT_PLAN.md`): a small TOML spec
-  names a subset of the corpus by genre, by book (a catalog key, a
-  Gutenberg ebook_id, or a bare directory name unique across genres), or
-  both, plus a diary policy and the golden queries the exported pack must
-  answer correctly. `resolve` turns that into `<genre>/<book>` catalog
-  keys; `validate` checks the spec is well-formed and every selector
+- **`gutenkg bundle validate`/`resolve`/`export` and `gutenkg export-swift
+  --book`/`--genre`/`--spec`** — phases 1 and 2 of selective bundle export
+  (`analysis/SELECTIVE_BUNDLE_EXPORT_PLAN.md`). A small TOML spec names a
+  subset of the corpus by genre, by book (a catalog key, a Gutenberg
+  ebook_id, or a bare directory name unique across genres), or both, plus a
+  diary policy and the golden queries the exported pack must answer
+  correctly. `bundle resolve` turns that into `<genre>/<book>` catalog
+  keys; `bundle validate` checks the spec is well-formed and every selector
   resolved. No fuzzy title matching by design — an ambiguous or misspelled
-  selector fails the command rather than picking the wrong book. Nothing
-  yet consumes a resolved selection; `build-corpus` and `export-swift`
-  stay unfiltered until phases 2 and 3.
+  selector fails the command rather than picking the wrong book.
+  `export-swift` now filters at every stage a subset touches: the catalog,
+  the passages, and — required, not optional — the vector scan itself,
+  since without it a three-book export still streamed the full ~731K-row
+  store. `bundle export SPEC` and `export-swift --spec` run the whole thing
+  from a spec in one command; `--book`/`--genre` do the same without one,
+  resolved against the bundle's own `catalog.json` rather than the source
+  corpus tree, so a downloaded bundle with no `corpus/` beside it still
+  works. `--force` now wipes the destination first, so a spec whose book
+  set shrank cannot leave the previous run's orphaned packs behind.
+- **Fixed while building phase 2:** `diaries = true` in a bundle spec
+  resolved to the same empty diary list as `diaries = false` — `diary_dirs`
+  is a tuple either way, and Phase 1 only special-cased the explicit-list
+  form. It now enumerates every diary under `corpus/diaries/`, the same
+  `reference.md`-per-subdirectory layout as any genre.
+- **`gutenkg build-corpus --book`/`--spec`/`--diaries`/`--no-diaries`** —
+  phase 3: the rebuild path gets the same book-level filtering `export-swift`
+  got in phase 2, so a named product can be built from source rather than
+  only exported from an existing `gutenberg-all`. A book-filtered build
+  targeting the name `gutenberg-all` now refuses without a new
+  `--force-overwrite-full`, and `--book` without an explicit `--output`
+  refuses too — an auto-derived name would misrepresent a partial selection
+  as a complete one. Writes `bundles/<name>/product.json`, a frozen record
+  of the resolved selection and per-file checksums, for a book-filtered
+  build only. The book-level exclude is a flat set of directory basenames,
+  pruned wherever they occur — a real gap in principle if two genres ever
+  shared a book directory name, closed in practice (253 unique names
+  today) and backstopped by a new hard failure, `assert_selection`, raised
+  before any embedding runs if the exclude ever did leak an unselected
+  book through. Measured for real rather than assumed: a `--genre
+  philosophy` build (39 books) takes 2m 38s, confirming the estimate the
+  design's own deferral of a DocKG-slice alternative was resting on.
+- **`gutenkg bundle build`/`image`/`make`, `make export-swift`, and a
+  parameterized `make build`** — phase 4, the last of the core selective
+  bundle export work. `bundle build` runs a spec's rebuild (a no-op for
+  `materialize = "none"`), refusing to redo an existing one without
+  `--force`. `bundle export` now reads either materialization — a
+  rebuild-mode bundle from `bundles/<name>/`, filter-at-export from
+  `source_bundle` otherwise — where phase 2 only handled the latter.
+  `bundle image` bakes a spec's already-built DocKG into a tagged
+  container image and refuses outright for `materialize = "none"`
+  (Decision 9: the worker needs a real DocKG root, and an image bake must
+  never silently `COPY` the unfiltered source under a product tag).
+  `bundle make` runs validate → build → export → optionally image, end to
+  end. `make build` gained `SPEC=`/`BUNDLE=` (resolved inside the recipe,
+  never at parse time, so a bare `make help` never shells out to the
+  resolver) and now tags `$(IMAGE):$(IMAGE_TAG)` instead of always
+  `:latest`; `corpus-gutenberg:latest` still means `gutenberg-all`, and
+  `make build BUNDLE=<name>` with no `SPEC=` stays a local, unversioned
+  convenience. Verified for real, not just by reading the Dockerfile: a
+  `philosophy-mini` image built in under two minutes (base layers cached),
+  ran, and answered a live query against exactly one book (8,367 vectors,
+  1 catalogued book) rather than the full corpus. Found and fixed while
+  verifying: a rebuild-mode export was writing `product: null` to its own
+  manifest, because the redundant-for-filtering `catalog_keys` it correctly
+  skipped passing was also the field gating whether the manifest's identity
+  block gets written at all.
+- **`docs/BUNDLES.md`, and two committed example specs** — phase 5, closing
+  out the selective bundle export design. The operator's guide: filter-at-export
+  vs. rebuild, tag policy, the golden-query requirement, rollback (there is no
+  rollback command — the point of `product.json` is that none is needed), and
+  the measured size/time tables from phases 3 and 4. `bundles/specs/
+  philosophy-starter.toml` is the design's own canonical example, committed
+  as written. `bundles/specs/shakespeare-demo.toml` exercises all three book
+  resolution rules at once (an explicit catalog key, a Gutenberg ebook_id, and
+  two bare names) and is `materialize = "none"` — no rebuild, no image.
+  `ON_DEVICE.md` and `CHEATSHEET.md` gained short sections rather than
+  duplicating this page; the README's "Choose a path" table points here too.
+  Caught while writing this, not assumed: one of `shakespeare-demo`'s three
+  golden queries, "double, double, toil and trouble" — a line that is in
+  `Macbeth` three times, literally — still lost to an unrelated *A Midsummer
+  Night's Dream* chunk on the fused ranking for this 4-book pack, and was
+  replaced with a query verified to rank the intended play first. The doc
+  says so, rather than presenting an unverified query as a working example.
 - **A launch splash** — logo, name, and tagline, fading in and holding for
   2.5s before the real UI takes over. Shared between both shells via a new
   `SplashOverlay`, which loads the 1024pt app icon from a copy bundled into
