@@ -70,10 +70,24 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   four-digit second year; of 113 month headers exactly one is abbreviated
   (`FEBRUARY 1660-61`), so all of February 1661 was stamped with January dates
   — 45 entries in a 31-day month, zero in February. Pepys goes from 2,774 to
-  3,280 entries over the unchanged 1660-01-01..1669-05-31 span. No prose was
+  3,280 entries over the unchanged 1660-01-01..1669-05-31 span (and to 3,361
+  once the `_FULL_DATE_RE` defect below is also fixed). No prose was
   lost (word count moves +0.26%), but per-entry dates and chunk boundaries were
   wrong, and date is the primary retrieval key for a diary KG. Evelyn and
   Boswell were checked and are unaffected.
+- **`_FULL_DATE_RE` had never matched anything.** The pattern is assembled by
+  implicit concatenation, but only its first fragment is an f-string (it
+  interpolates `_MONTH_NAMES`); the rest are plain `r"..."`, so their `{{1,2}}`
+  and `{{4}}` were never collapsed to `{1,2}` and `{4}`. The compiled regex read
+  "a digit, then one or two literal `{`, then `}`" — unmatchable by any diary
+  line. It survived review because `_ABBR_DATE_RE` incidentally covers three of
+  the twelve months (`May`, `June`, `July`, whose abbreviations are their full
+  names), so those parsed via the fallback while `April 1st.`,
+  `September 1st.` and every other spelled-out month opened no entry at all.
+  Pepys goes from 3,280 to 3,361 entries; first-of-month entries now appear for
+  112 of 113 months rather than a handful. Evelyn and Boswell are unaffected —
+  the pattern is Pepys-only, and `_DAY_FIRST_RE` / `_WEEKDAY_RE` escape
+  correctly because their brace-bearing fragments are themselves f-strings.
 - **`make chunk-diaries` now passes `--force`.** It previously skipped any diary
   with a non-empty `.diary/`, so stage ① (parser → `.diary_source.psv`) never
   re-ran and a parser fix could not reach the data — `build-diaries` would
