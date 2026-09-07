@@ -10,6 +10,16 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added
 
+- **A resolution setting for rendered illustrations** — Settings ▸
+  Illustrations, offering chat.py's three presets pixel for pixel: Preview
+  768x512, Standard 1152x768, Full 1536x1024, all 3:2. The choice persists,
+  like the corpus scope and the worker address. Until now the app sent no
+  size at all, so the worker fell back to its own `1536x1024` default -- the
+  largest of the three, on the device least able to wait for it, which is
+  what made a render time out on the phone. Nothing in the interface said
+  which size was in use, so nothing looked wrong. The default is now Preview,
+  matching chat.py's own `index=0`.
+
 - **`gutenkg bundle validate`/`resolve`/`export` and `gutenkg export-swift
   --book`/`--genre`/`--spec`** — phases 1 and 2 of selective bundle export
   (`analysis/SELECTIVE_BUNDLE_EXPORT_PLAN.md`). A small TOML spec names a
