@@ -6,8 +6,19 @@
 #   make chunk-diaries  — re-chunk .diary/ from committed .md (always --force)
 #   make build-diaries  — build .diarykg/ indices (prerequisite for build-corpus)
 #   make build-corpus   — rebuild the DocKG + diary bundle (takes ~24 min)
+#   make export-swift   — export a bundle's on-device Swift packs
 #   make build          — build the container image (bakes bundle into image)
 #   make build-all      — build for every runtime installed on this machine
+#
+# Selective bundle export (analysis/SELECTIVE_BUNDLE_EXPORT_PLAN.md) — build a
+# named subset instead of the full corpus. `gutenkg bundle make <spec>` is the
+# coherent pipeline; these targets are what it (and hand operation) call:
+#   make build-corpus SPEC=bundles/specs/philosophy-starter.toml
+#   make export-swift SPEC=bundles/specs/philosophy-starter.toml
+#   make build        SPEC=bundles/specs/philosophy-starter.toml
+#     tags corpus-gutenberg:philosophy-starter-0.1.0 — never retags :latest.
+#   make build BUNDLE=philosophy-starter   — same image, unversioned tag,
+#     local convenience only; SPEC= is the canonical, versioned path.
 #   make rebuild        — force a fresh build (--no-cache) for the selected runtime
 #   make rebuild-all    — force a fresh build (--no-cache) for every runtime installed
 #   make prune          — remove dangling images / stopped containers / build cache
@@ -82,6 +93,28 @@ COMPOSE      = docker compose -f docker/docker-compose.yml
 WORKER       = http://localhost:8000
 IMAGE_SERVER = http://localhost:8090
 SDXL_SERVER  = http://localhost:8091
+
+# Selective bundle export (analysis/SELECTIVE_BUNDLE_EXPORT_PLAN.md phase 4).
+# Defaults preserve today's full-corpus behavior exactly: no SPEC, BUNDLE
+# gutenberg-all, tag :latest. Passing BUNDLE=<name> alone (no SPEC) is a local
+# convenience — unversioned, whatever tag IMAGE_TAG resolves to for that name.
+# The canonical, versioned path is SPEC=bundles/specs/<name>.toml, which
+# resolve_spec below turns into both BUNDLE and IMAGE_TAG via the spec's own
+# `gutenkg bundle resolve` — see Decision 8 in the design doc.
+SPEC      ?=
+BUNDLE    ?= gutenberg-all
+IMAGE_TAG ?= $(if $(filter gutenberg-all,$(BUNDLE)),latest,$(BUNDLE))
+
+# Resolve BUNDLE/IMAGE_TAG inside the recipe that uses them, never with `:=`
+# at parse time — a $(shell ...) assignment there would invoke the resolver
+# on every `make` invocation in this file, `make help` included, whether or
+# not the target being run even touches SPEC.
+define resolve_spec
+$(if $(SPEC),\
+  BUNDLE=$$($(GUTENKG) bundle resolve --print-bundle-name $(SPEC)); \
+  IMAGE_TAG=$$($(GUTENKG) bundle resolve --print-image-tag $(SPEC)); ,\
+  BUNDLE=$(BUNDLE); IMAGE_TAG=$(IMAGE_TAG); )
+endef
 
 # Extra flags spliced into both build recipes below. Empty for a normal
 # `make build` (layer cache used); `make rebuild`/`rebuild-all` set this to
@@ -209,7 +242,7 @@ endif
 # `gutenkg` on PATH. Override with e.g. `make GUTENKG=gutenkg build-corpus`.
 GUTENKG     ?= poetry run gutenkg
 
-.PHONY: init spacy-model chunk-diaries build-diaries build-corpus check-pins setup build build-all rebuild rebuild-all prune kill run image-server sdxl-server sdxl-fetch chat up stop down query logs clean docs ios-devices ios-generate ios-check ios-install-corpus ios-verify-corpus ios-launch ios-deploy mac-generate mac-check mac-build mac-verify mac-notarize mac-dmg mac-notarize-dmg mac-release
+.PHONY: init spacy-model chunk-diaries build-diaries build-corpus export-swift check-pins setup build build-all rebuild rebuild-all prune kill run image-server sdxl-server sdxl-fetch chat up stop down query logs clean docs ios-devices ios-generate ios-check ios-install-corpus ios-verify-corpus ios-launch ios-deploy mac-generate mac-check mac-build mac-verify mac-notarize mac-dmg mac-notarize-dmg mac-release
 
 init:
 	$(GUTENKG) init
@@ -236,7 +269,15 @@ build-diaries: chunk-diaries
 	$(GUTENKG) build-diaries --force
 
 build-corpus: build-diaries
-	$(GUTENKG) build-corpus
+	$(GUTENKG) build-corpus $(if $(SPEC),--spec $(SPEC),)
+
+# Export a bundle's Swift packs. With SPEC=, resolves BUNDLE from the spec
+# (the bundle build-corpus SPEC=... just produced, already filtered — no
+# further filtering needed at export). Without SPEC, BUNDLE defaults to
+# gutenberg-all, same as running `gutenkg export-swift` directly.
+export-swift:
+	@$(resolve_spec) \
+	$(GUTENKG) export-swift --bundle bundles/$$BUNDLE --verify --force
 
 # The four KG packages are named in four files that drift independently:
 # pyproject floors, poetry.lock, docker/Dockerfile ARGs, runpod/requirements.txt.
@@ -379,7 +420,9 @@ setup:
 	@echo "Apple container runtime ready."
 
 build: check-pins setup
-	container build $(BUILD_FLAGS) $(HF_SECRET) -f docker/Dockerfile -t $(IMAGE):latest .
+	@$(resolve_spec) \
+	container build $(BUILD_FLAGS) $(HF_SECRET) -f docker/Dockerfile \
+	  --build-arg BUNDLE=$$BUNDLE -t $(IMAGE):$$IMAGE_TAG .
 
 # Idempotent like `compose up`: a running worker is left alone (it takes a
 # while to load the index), a stopped or stale one is replaced.
@@ -465,7 +508,9 @@ setup:
 	@echo "Docker runtime ready."
 
 build: check-pins
-	docker build $(BUILD_FLAGS) $(HF_SECRET) -f docker/Dockerfile -t $(IMAGE):latest .
+	@$(resolve_spec) \
+	docker build $(BUILD_FLAGS) $(HF_SECRET) -f docker/Dockerfile \
+	  --build-arg BUNDLE=$$BUNDLE -t $(IMAGE):$$IMAGE_TAG .
 
 run:
 	$(COMPOSE) up -d worker

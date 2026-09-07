@@ -51,6 +51,31 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   book through. Measured for real rather than assumed: a `--genre
   philosophy` build (39 books) takes 2m 38s, confirming the estimate the
   design's own deferral of a DocKG-slice alternative was resting on.
+- **`gutenkg bundle build`/`image`/`make`, `make export-swift`, and a
+  parameterized `make build`** — phase 4, the last of the core selective
+  bundle export work. `bundle build` runs a spec's rebuild (a no-op for
+  `materialize = "none"`), refusing to redo an existing one without
+  `--force`. `bundle export` now reads either materialization — a
+  rebuild-mode bundle from `bundles/<name>/`, filter-at-export from
+  `source_bundle` otherwise — where phase 2 only handled the latter.
+  `bundle image` bakes a spec's already-built DocKG into a tagged
+  container image and refuses outright for `materialize = "none"`
+  (Decision 9: the worker needs a real DocKG root, and an image bake must
+  never silently `COPY` the unfiltered source under a product tag).
+  `bundle make` runs validate → build → export → optionally image, end to
+  end. `make build` gained `SPEC=`/`BUNDLE=` (resolved inside the recipe,
+  never at parse time, so a bare `make help` never shells out to the
+  resolver) and now tags `$(IMAGE):$(IMAGE_TAG)` instead of always
+  `:latest`; `corpus-gutenberg:latest` still means `gutenberg-all`, and
+  `make build BUNDLE=<name>` with no `SPEC=` stays a local, unversioned
+  convenience. Verified for real, not just by reading the Dockerfile: a
+  `philosophy-mini` image built in under two minutes (base layers cached),
+  ran, and answered a live query against exactly one book (8,367 vectors,
+  1 catalogued book) rather than the full corpus. Found and fixed while
+  verifying: a rebuild-mode export was writing `product: null` to its own
+  manifest, because the redundant-for-filtering `catalog_keys` it correctly
+  skipped passing was also the field gating whether the manifest's identity
+  block gets written at all.
 - **A launch splash** — logo, name, and tagline, fading in and holding for
   2.5s before the real UI takes over. Shared between both shells via a new
   `SplashOverlay`, which loads the 1024pt app icon from a copy bundled into

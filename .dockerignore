@@ -9,11 +9,13 @@
 **/*.sqlite-shm
 **/*.sqlite-journal
 
-# LanceDB stores — dead weight since the sqlite-vec migration. build-corpus now
-# writes vectors.sqlite and the handler prefers it (resolve_vector_paths), but it
-# does NOT delete a lancedb/ dir left over from a pre-migration build, so
-# `COPY bundles/gutenberg-all/` would bake ~2.8 GB of stale index into the image.
-# Excluding it at pack time keeps the image honest no matter what's on disk.
+# LanceDB stores — dead weight since the sqlite-vec migration. build-corpus
+# writes vectors.sqlite, the handler prefers it (resolve_vector_paths), and a
+# pre-migration lancedb/ dir is now purged by build_corpus.py itself before a
+# build starts. This stays as a second line of defense — a bundle built by
+# something other than build-corpus (an older checkout, a manual copy) should
+# not get to bake ~2.8 GB of stale index into the image just because nothing
+# here checked for it.
 **/lancedb
 
 # DiaryKG's back-pointer to its source .diary dir — an ABSOLUTE host path
