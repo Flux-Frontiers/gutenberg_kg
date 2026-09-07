@@ -1,0 +1,38 @@
+# XcodeGen spec for the Foundation Models divergence reproducer.
+#   brew install xcodegen && cd app/fm-repro && xcodegen generate
+#
+# Deliberately dependency-free: no package references, no asset catalog, no
+# entitlements, no network usage. The whole reproducer is one Swift file, so
+# nothing about this project can be the cause of what it demonstrates.
+name: FMRepro
+options:
+  bundleIdPrefix: com.fluxfrontiers
+  deploymentTarget:
+    iOS: "26.0"
+  createIntermediateGroups: true
+
+targets:
+  FMRepro:
+    type: application
+    platform: iOS
+    sources:
+      - Sources
+    info:
+      path: Info.plist
+      properties:
+        CFBundleDisplayName: FM Repro
+        CFBundleShortVersionString: "1.0"
+        UILaunchScreen: {}
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
+    scheme: {}
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.fluxfrontiers.fmrepro
+        MARKETING_VERSION: "1.0"
+        CURRENT_PROJECT_VERSION: "1"
+        SWIFT_VERSION: "6.0"
+        TARGETED_DEVICE_FAMILY: "1,2"
+        GENERATE_INFOPLIST_FILE: NO

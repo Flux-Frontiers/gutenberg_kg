@@ -46,10 +46,10 @@ import Foundation
         private let model: PrivateCloudComputeLanguageModel
 
         /// :param budget: Context limits; defaults to PCC's 32K window.
-        /// :param temperature: Sampling temperature — same default as
+        /// :param temperature: Sampling temperature. 0, same default as
         ///                     on-device, for the same reason.
         public init(
-            budget: ContextBudgeter.Budget = .privateCloudCompute, temperature: Double = 0.3
+            budget: ContextBudgeter.Budget = .privateCloudCompute, temperature: Double = 0
         ) {
             self.budgeter = ContextBudgeter(budget: budget)
             self.temperature = temperature

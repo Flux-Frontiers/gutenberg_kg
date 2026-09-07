@@ -84,9 +84,9 @@ RUN pip install --no-cache-dir --index-url https://download.pytorch.org/whl/cpu 
 #   kg-rag 0.15.0         transformers>=5.5.0,<6 · kgmodule-utils>=0.18.0
 #                         (also the floor for KGEntry.vectors_path, which
 #                         handler.py passes at startup)
-#   doc-kg 0.22.0         kgmodule-utils[semantic]>=0.12.1
-#   diary-kg 0.97.0       doc-kg>=0.22.0 · kgmodule-utils>=0.13.2
-#   kgmodule-utils 0.18.1 transformers>=5.5.0,<6 · sqlite-vec==0.1.9, both via
+#   doc-kg 0.25.0         kgmodule-utils[semantic]>=0.19.0
+#   diary-kg 0.98.0       doc-kg>=0.24.1 · kgmodule-utils>=0.19.0
+#   kgmodule-utils 0.19.1 transformers>=5.5.0,<6 · sqlite-vec==0.1.9, both via
 #                         its [semantic] extra
 # Because these are `==` pins, a stale one is a hard resolution failure at build
 # time, not a silent upgrade: doc-kg 0.21.2 with kgmodule-utils==0.9.0 cannot
@@ -102,8 +102,8 @@ RUN pip install --no-cache-dir --index-url https://download.pytorch.org/whl/cpu 
 # KGMODULE_UTILS_VERSION sat at 0.10.0 against a >=0.12.1 floor for exactly that
 # reason. Keep every ARG == the lock.
 ARG KG_RAG_VERSION=0.15.0
-ARG KGMODULE_UTILS_VERSION=0.19.0
-ARG DOC_KG_VERSION=0.24.1
+ARG KGMODULE_UTILS_VERSION=0.19.1
+ARG DOC_KG_VERSION=0.25.0
 ARG DIARY_KG_VERSION=0.98.0
 RUN pip install --no-cache-dir \
     "runpod>=1.7.0" \

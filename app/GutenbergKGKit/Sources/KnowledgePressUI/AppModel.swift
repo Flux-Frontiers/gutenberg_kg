@@ -54,6 +54,14 @@ public struct ChatTurn: Identifiable, Sendable {
     /// Set when retrieval itself failed; nothing else in the turn is valid.
     var errorMessage: String?
 
+    /// Set once `renderImage(for:)` returns an illustration for this turn.
+    var generatedImage: GeneratedImage?
+    /// Set when rendering was attempted and failed — always network-only,
+    /// so a failure here is ordinary (no worker configured, no reachable
+    /// worker) rather than exceptional.
+    var imageError: String?
+    var isRenderingImage = false
+
     var isStreaming: Bool {
         retrieval != nil && metrics == nil && synthesisFailure == nil && errorMessage == nil
             && engine != .off
@@ -135,7 +143,31 @@ public final class AppModel {
     var secret: String = ProcessInfo.processInfo.environment["HANDLER_SECRET"] ?? ""
 
     // Search settings (defaults mirror chat.py's sidebar)
-    var corpus: String = "all"
+
+    /// Genre scope for the next query.
+    ///
+    /// Persisted, unlike the rest of these, because it is a lens rather than
+    /// a preference: an unscoped search spends the on-device context budget
+    /// across every book plus the diaries, so resetting it to "all" on each
+    /// launch silently undoes the reader's narrowing.
+    var corpus: String {
+        get { storedCorpus }
+        set {
+            storedCorpus = newValue
+            AppModel.defaults.set(newValue, forKey: AppModel.corpusKey)
+        }
+    }
+
+    private var storedCorpus: String = AppModel.initialCorpus()
+
+    static let corpusKey = "corpus"
+
+    static func initialCorpus() -> String {
+        guard let stored = defaults.string(forKey: corpusKey), !stored.isEmpty else {
+            return "all"
+        }
+        return stored
+    }
     var resultCount: Double = 25
     var minScore: Double = 0.5
     var semanticFloor: Double = 0.20
@@ -423,6 +455,62 @@ public final class AppModel {
         activeQuery?.cancel()
         activeQuery = nil
         isQuerying = false
+    }
+
+    /// Illustrate a turn: rewrite its answer (or top passages) into an
+    /// image prompt via the worker's LLM, then generate the image.
+    ///
+    /// Always goes through the worker — there is no on-device image model —
+    /// mirroring `chat.py`'s "🎨 Render response": a rewrite call followed by
+    /// an imagine call, both already implemented in `WorkerClient` and only
+    /// missing a caller until now.
+    func renderImage(for id: ChatTurn.ID) {
+        guard let index = turns.firstIndex(where: { $0.id == id }),
+            !turns[index].isRenderingImage
+        else { return }
+
+        let turn = turns[index]
+        let rawPrompt = Self.imagePrompt(from: turn)
+        guard !rawPrompt.isEmpty else { return }
+
+        turns[index].isRenderingImage = true
+        turns[index].imageError = nil
+
+        Task { [self] in
+            defer {
+                if let i = turns.firstIndex(where: { $0.id == id }) {
+                    turns[i].isRenderingImage = false
+                }
+            }
+            do {
+                let prompt = try await client.rewrite(rawPrompt, backend: backend)
+                // Streamlit's rule: only OpenAI's image backend needs asking
+                // for by name — the worker's default (mflux) is otherwise
+                // whatever the deployment already configured.
+                let imageBackend = backend == "openai" ? "openai" : ""
+                let image = try await client.imagine(prompt: prompt, imageBackend: imageBackend)
+                guard let i = turns.firstIndex(where: { $0.id == id }) else { return }
+                turns[i].generatedImage = image
+            } catch {
+                guard let i = turns.firstIndex(where: { $0.id == id }) else { return }
+                turns[i].imageError =
+                    (error as? WorkerError)?.errorDescription ?? error.localizedDescription
+            }
+        }
+    }
+
+    /// Distil a turn into a concise image-generation prompt (≤800 chars) —
+    /// the answer if there is one, else the top three passages, matching
+    /// chat.py's `_build_image_prompt`.
+    static func imagePrompt(from turn: ChatTurn) -> String {
+        if !turn.answer.isEmpty {
+            return String(turn.answer.prefix(800))
+        }
+        let parts = (turn.retrieval?.hits ?? []).prefix(3).map { hit in
+            (hit.content?.isEmpty == false ? hit.content! : hit.summary ?? "")
+                .trimmingCharacters(in: .whitespacesAndNewlines)
+        }
+        return String(parts.filter { !$0.isEmpty }.joined(separator: " ").prefix(800))
     }
 
     // MARK: - Query paths

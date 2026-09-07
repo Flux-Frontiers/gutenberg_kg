@@ -139,6 +139,9 @@ app/ios/Info.plist
 app/macos/KnowledgePress.xcodeproj/
 app/macos/Info.plist
 app/macos/build/
+app/fm-repro/FMRepro.xcodeproj/
+app/fm-repro/Info.plist
+app/fm-repro/build/
 
 # pdoc output — built in CI (docs.yml), deployed to GitHub Pages
 site/

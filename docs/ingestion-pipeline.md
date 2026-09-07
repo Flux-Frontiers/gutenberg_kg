@@ -238,7 +238,7 @@ the `file_path` prefix — no extra node fields required.
 Full sequence from clean checkout to running container:
 
 ```
-make chunk-diaries   # .md -> .diary_source.psv -> .diary/ chunks (Gutenberg parser; clean-clone step)
+make chunk-diaries   # .md -> .diary_source.psv -> .diary/ chunks (Gutenberg parser; always --force)
 make build-diaries   # DiaryKG pipeline (Steps 2+3+4) for each diary; depends on chunk-diaries
 make build-corpus    # DocKG prose index + copy diary indices -> bundles/gutenberg-all/
 make build           # docker build — COPYs bundles/gutenberg-all/ into image

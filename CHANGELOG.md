@@ -21,11 +21,22 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   the app menu (`CommandGroup(replacing: .appInfo)`) with a dedicated
   window. Shows the icon, version, tagline, live corpus stats, a link to the
   repo, and the licence line.
-- **The iPad gets the Mac's sidebar layout.** `AdaptiveRootView` picks
-  `MacRootView`'s `NavigationSplitView` for `.pad` and the iPhone's
-  tabs-plus-settings-sheet shell otherwise — reusing `MacRootView`'s body
-  as-is, since it was already idiom-agnostic SwiftUI, rather than
-  duplicating the same layout under a new name.
+- **The iPad gets its own compact shell, not the iPhone's sheet.**
+  `AdaptiveRootView` picks a new `PadRootView` for `.pad`: the same
+  tabs-plus-toolbar-button layout as the iPhone, but Settings opens as a
+  floating `.popover` instead of a sheet — closer to how Files or Notes
+  handles a secondary panel on a screen with room to spare, and lighter
+  than a permanently-open sidebar the reader is mostly not looking at.
+  (An earlier version of this reused `MacRootView`'s full
+  `NavigationSplitView` sidebar for the iPad; replaced before ever
+  shipping once it read as heavier than the content next to it.)
+- **A "🎨 Render" button turns an answer into an illustration**, one tap
+  instead of chat.py's two: `AppModel.renderImage(for:)` chains the
+  worker's already-implemented `rewrite` and `imagine` ops (`WorkerClient`
+  has carried both since before this app existed — nothing had ever called
+  them). Always network-only, since there is no on-device image model;
+  failure (no worker configured, worker unreachable) shows inline rather
+  than being gated on reachability upfront, same as chat.py.
 - **"Ask The Knowledge Press" is a real Siri Shortcut.** `AskKnowledgePressIntent`
   runs in-process (`openAppWhenRun`) so it can reach the same live
   `AppModel` the chat UI uses — the installed corpus packs, the on-device
@@ -35,6 +46,17 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   `AppEntity`/`AppEnum` parameter inside a phrase, since Siri needs a
   bounded vocabulary to match against), so saying "Ask The Knowledge Press"
   triggers it and Siri prompts for the question by voice.
+- **Synthesis calls are recorded verbatim.** `SynthesisTrace` writes one JSON
+  file per call into `Application Support/Diagnostics`: the session
+  instructions, the user prompt with all its packed passages, and the raw
+  completion, plus hardware identifier, OS build, timings, and a
+  line/unique-line count that makes a repetition loop countable rather than
+  a judgement call. Written after `.completed` is yielded, so a failure
+  there costs a diagnostic and never an answer. This exists because
+  screenshots cannot distinguish "the model was asked something different"
+  from "the model answered differently", and that distinction is what
+  settled `analysis/FOUNDATION_MODELS_DIVERGENCE_20260907.md`. Currently
+  unconditional rather than gated on a setting.
 
 ### Changed
 
@@ -55,6 +77,121 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   `serve/chat.py`'s Streamlit sidebar defaults; the two had already
   diverged (this app's own k=25/0.5/0.20 vs. chat.py's k=15/0.6/0.3) and
   were never wired together in the first place.
+- **The Mac's Settings sidebar can now be collapsed.** `MacRootView` binds
+  `NavigationSplitView`'s `columnVisibility` explicitly (still defaulting
+  to `.automatic`, unchanged behavior) purely so the built-in sidebar
+  toggle appears in the toolbar — the same affordance Xcode, Mail, and
+  Notes give a persistent sidebar.
+- **Synthesis is deterministic: temperature 0.3 to 0.** Both the on-device
+  and Private Cloud backends sampled at 0.3, matching the worker's
+  `TextSynthesizer.synthesize_rag`. An answer that restates retrieved
+  passages under citation has nothing to gain from sampling, and the
+  run-to-run variance made two devices impossible to compare: the same
+  question could give a clean synthesis on one and a degenerate repetition
+  on the other with nothing actually different between them. Note this now
+  diverges from the worker, which still synthesizes at 0.3.
+
+### Fixed
+
+- **The genre scope reset to "all" on every launch.** `AppModel.corpus` was
+  a plain stored property with no backing store, the same defect
+  `WorkerURLTests` exists to document, left behind in a second property. It
+  now persists to `UserDefaults` alongside the worker address. This cost
+  more than an ordinary lost preference: an unscoped search spreads the
+  on-device context budget across every book plus the diaries, so only a
+  handful of the retrieved passages ever reach the model. A reader who had
+  narrowed to one genre silently got the worst-performing setting back on
+  the next launch, and the only symptom was a worse answer.
+
+- **The Render button's worker call could time out well before the worker
+  gave up.** `WorkerClient.imagine()` went through the same 60s default as
+  every other call, inherited silently from `URLSession.shared` since
+  nothing ever set `timeoutInterval`. The worker's own image backend
+  (`kg_utils.synthesis._image.ImageSynthesizer`) allows up to 300s for the
+  mflux-serve path — and real generation is already 16s with the GPU
+  otherwise idle, so anything sharing the same MPS device (a corpus
+  rebuild, another render) pushes it past 60s in practice, not just in
+  theory: hit live, mid-corpus-rebuild, the day this shipped. `imagine`
+  now defaults to 240s, under the worker's own ceiling rather than racing
+  it.
+- **`test_viz3d_cast.py` silently stopped testing what it claimed to.**
+  `cast_quilt` moved from `quiltwright.lfd` to `quiltwright.bridge` in
+  0.11.0 (`lfd` now only re-exports the name), so patching
+  `quiltwright.lfd.cast_quilt` no longer intercepted the call
+  `save_and_cast_quilt` actually makes — its own module global, unaffected
+  by mutating a re-exported copy elsewhere. The mock silently no-op'd
+  rather than erroring, so the failure-path test exercised whatever real
+  Bridge process happened to be running on the machine instead of a
+  simulated failure, passing or failing depending on local state that has
+  nothing to do with the code under test. The failure-path test no longer
+  mocks at all: it points `cast_quilt` at `http://localhost:1`, a port
+  nothing can ever bind without root, so the real `urllib` failure
+  `save_and_cast_quilt` is written to catch is the one under test —
+  deterministic in CI and on a dev machine with real Bridge running alike,
+  and immune to the next internal reorganisation. The success-path test
+  still mocks, now for a confirmed reason: probing real Bridge on this
+  machine (`quiltwright cast --check`) found it reachable but registering
+  zero output devices, and the orchestration call *still returns success*
+  in that state — there is no reliable real-hardware path to a genuine
+  success signal, so simulating one is the only option, not a shortcut.
+- **The Pepys corpus was missing ~500 diary entries and misdated February
+  1661.** Two regexes in `diary/parser.py` were at fault. `_CONT_DATE_RE`
+  required the period immediately after the ordinal, then an optional
+  parenthetical — but the source writes it the other way round
+  (`11th (Lord's day).`), so the pattern never matched despite naming that
+  exact form in its own docstring. Unmatched date lines are appended to the
+  entry in progress rather than opening a new one, so 524 days — essentially
+  every Sunday of the diary, plus `(Office day)` and `(Michaelmas day)` — were
+  silently glued onto the preceding entry. Separately, `_SECTION_RE` required a
+  four-digit second year; of 113 month headers exactly one is abbreviated
+  (`FEBRUARY 1660-61`), so all of February 1661 was stamped with January dates
+  — 45 entries in a 31-day month, zero in February. Pepys goes from 2,774 to
+  3,280 entries over the unchanged 1660-01-01..1669-05-31 span (and to 3,361
+  once the `_FULL_DATE_RE` defect below is also fixed). No prose was
+  lost (word count moves +0.26%), but per-entry dates and chunk boundaries were
+  wrong, and date is the primary retrieval key for a diary KG. Evelyn and
+  Boswell were checked and are unaffected.
+- **`_FULL_DATE_RE` had never matched anything.** The pattern is assembled by
+  implicit concatenation, but only its first fragment is an f-string (it
+  interpolates `_MONTH_NAMES`); the rest are plain `r"..."`, so their `{{1,2}}`
+  and `{{4}}` were never collapsed to `{1,2}` and `{4}`. The compiled regex read
+  "a digit, then one or two literal `{`, then `}`" — unmatchable by any diary
+  line. It survived review because `_ABBR_DATE_RE` incidentally covers three of
+  the twelve months (`May`, `June`, `July`, whose abbreviations are their full
+  names), so those parsed via the fallback while `April 1st.`,
+  `September 1st.` and every other spelled-out month opened no entry at all.
+  Pepys goes from 3,280 to 3,361 entries; first-of-month entries now appear for
+  112 of 113 months rather than a handful. Evelyn and Boswell are unaffected —
+  the pattern is Pepys-only, and `_DAY_FIRST_RE` / `_WEEKDAY_RE` escape
+  correctly because their brace-bearing fragments are themselves f-strings.
+- **Evelyn discarded the later half of every Old Style dual year.**
+  `_DAY_FIRST_RE` matched the second half with `(?:-\d{2,4})?` and threw it
+  away, keeping the first — but dual years are written only for 1 January to
+  24 March, precisely because Old and New Style disagree there, so the later
+  half is always the intended year. `3d January, 1665-66.` was stored as 1665,
+  and the diary appeared to jump back a year every January. The width was wrong
+  too: `17th January, 1696-7.` matched no dual year at all and leaked a literal
+  `-7.` into the entry text. Both parsers now share a `_resolve_dual_year()`
+  helper that expands any width against the first year. Non-monotonic
+  transitions fall from 14 to 1 in Volume 1 and from 36 to 2 in Volume 2; the
+  remainder are ordering quirks in the source itself.
+- **Every diary's final entry absorbed the book's back matter.** Parsing ran to
+  EOF with no end-of-diary sentinel, so the editor's afterword, transcriber's
+  notes and appendices were accumulated into the last entry: Pepys' 1669-05-31
+  ran to 13,330 words — 48x the median, 1,347 lines — and carried the editor's
+  closing essay as though Pepys had written it on his final day. Parsing now
+  stops at an explicit end marker (`END OF THE DIARY.`, `THE END`,
+  `Transcriber's Note`), guarded behind `in_diary` so Evelyn Volume 2's
+  front-matter transcriber's note cannot end the diary before it begins. The
+  sentinel deliberately does **not** treat any markdown heading as the end:
+  Boswell sets `### ODA` and `### MEDITATION ON A PUDDING` mid-tour, and Evelyn
+  Volume 1 sets Latin inscriptions the same way, so that rule would truncate
+  both books. Final entries drop to 1.5x, 1.1x and 0.4x the median.
+- **`make chunk-diaries` now passes `--force`.** It previously skipped any diary
+  with a non-empty `.diary/`, so stage ① (parser → `.diary_source.psv`) never
+  re-ran and a parser fix could not reach the data — `build-diaries` would
+  rebuild indices from a stale PSV and the run still looked successful. That is
+  what hid the entry shortfall above through repeated corpus rebuilds.
 
 ## [1.18.1] - 2026-09-06
 
