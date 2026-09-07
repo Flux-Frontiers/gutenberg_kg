@@ -25,9 +25,9 @@ public struct RetrievalRequest: Sendable, Equatable {
     public init(
         query: String,
         corpus: String = "all",
-        k: Int = 10,
+        k: Int = 25,
         minScore: Double = 0.5,
-        semanticFloor: Double = 0.0
+        semanticFloor: Double = 0.20
     ) {
         self.query = query
         self.corpus = corpus

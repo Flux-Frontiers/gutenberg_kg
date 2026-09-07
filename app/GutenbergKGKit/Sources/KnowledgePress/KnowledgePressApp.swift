@@ -15,6 +15,7 @@ import SwiftUI
 @main
 struct KnowledgePressApp: App {
     @State private var model = AppModel()
+    @Environment(\.openWindow) private var openWindow
 
     init() {
         // Running via `swift run` (no app bundle): become a regular foreground
@@ -25,14 +26,30 @@ struct KnowledgePressApp: App {
 
     var body: some Scene {
         WindowGroup("The Knowledge Press") {
-            MacRootView()
-                .environment(model)
-                .frame(minWidth: 900, minHeight: 600)
-                .task {
-                    model.prewarmOnDevice()
-                    await model.loadCorpusPacks()
-                    await model.refreshSidebar()
-                }
+            SplashOverlay {
+                MacRootView()
+                    .environment(model)
+            }
+            .frame(minWidth: 900, minHeight: 600)
+            .task {
+                model.prewarmOnDevice()
+                await model.loadCorpusPacks()
+                await model.refreshSidebar()
+            }
         }
+        .commands {
+            // Replaces the system-supplied "About KnowledgePress" (which
+            // would otherwise show a generic panel with no build-specific
+            // info) with the same AboutView the iOS row presents.
+            CommandGroup(replacing: .appInfo) {
+                Button("About The Knowledge Press") { openWindow(id: "about") }
+            }
+        }
+
+        Window("About The Knowledge Press", id: "about") {
+            AboutView()
+                .environment(model)
+        }
+        .windowResizability(.contentSize)
     }
 }

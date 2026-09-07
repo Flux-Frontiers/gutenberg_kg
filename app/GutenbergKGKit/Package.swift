@@ -18,7 +18,13 @@ let package = Package(
         .target(name: "GutenbergKGKit"),
         // Shared SwiftUI. Both shells — the macOS executable below and the
         // iOS app target in app/ios — build their window from this.
-        .target(name: "KnowledgePressUI", dependencies: ["GutenbergKGKit"]),
+        // Resources/AppIcon-1024.png is the same source PNG app/icon and both
+        // app/ios and app/macos generate their per-target icon sets from —
+        // copied here so SplashView.swift can show it without depending on
+        // either target's own Assets.xcassets.
+        .target(
+            name: "KnowledgePressUI", dependencies: ["GutenbergKGKit"],
+            resources: [.copy("Resources")]),
         .executableTarget(name: "KnowledgePress", dependencies: ["KnowledgePressUI"]),
         .testTarget(
             name: "GutenbergKGKitTests",

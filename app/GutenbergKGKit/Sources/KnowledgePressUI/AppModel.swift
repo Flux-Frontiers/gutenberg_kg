@@ -63,9 +63,13 @@ public struct ChatTurn: Identifiable, Sendable {
 /// App-wide state: connection, search settings, chat history, and the live
 /// corpus metadata fetched from the worker.
 ///
-/// Mirrors the Streamlit sidebar contract in `serve/chat.py` — same defaults
-/// (k=10, min score 0.5), same corpus scopes — with the on-device answer
-/// engine added as a first-class provider.
+/// Shares the same corpus scopes as the Streamlit sidebar in `serve/chat.py`,
+/// with the on-device answer engine added as a first-class provider. The
+/// search defaults below are this app's own (k=25, min score 0.5, semantic
+/// floor 0.20) and are not kept in lockstep with chat.py's sliders, which
+/// have since drifted to their own values (k=15, min score 0.6, semantic
+/// floor 0.3) — the two were never wired together, so "mirrors" was already
+/// false before either changed again.
 @MainActor
 @Observable
 public final class AppModel {
@@ -132,9 +136,9 @@ public final class AppModel {
 
     // Search settings (defaults mirror chat.py's sidebar)
     var corpus: String = "all"
-    var resultCount: Double = 10
+    var resultCount: Double = 25
     var minScore: Double = 0.5
-    var semanticFloor: Double = 0.0
+    var semanticFloor: Double = 0.20
 
     /// Which engine writes the answer. Defaults to on-device when the
     /// hardware allows, which is the point of the app.
@@ -170,8 +174,23 @@ public final class AppModel {
     /// from the packs, answer from the built-in model.
     var isFullyLocal: Bool { packs != nil && engine == .onDevice }
 
+    /// Kept so the observer registered below could be removed if `AppModel`
+    /// were ever torn down mid-run — it never is, in practice, since one
+    /// instance lives for the whole app launch, but `NotificationCenter`
+    /// gives no way to express "this token is fine to leak" explicitly.
+    private var askObserver: NSObjectProtocol?
+
     public init() {
         if onDeviceAvailability.isAvailable { engine = .onDevice }
+
+        // See AskIntent.swift: Siri/Shortcuts have no other way to reach this
+        // instance, so `AskKnowledgePressIntent.perform()` posts here instead.
+        askObserver = NotificationCenter.default.addObserver(
+            forName: .askKnowledgePress, object: nil, queue: .main
+        ) { [weak self] notification in
+            guard let question = notification.userInfo?["question"] as? String else { return }
+            Task { @MainActor in self?.send(question) }
+        }
     }
 
     /// Whether the built-in model can answer right now, and why not if it
@@ -236,8 +255,9 @@ public final class AppModel {
 
     /// Sidebar header line, built from live stats (no hardcoded counts).
     var statsCaption: String {
-        guard let stats else { return "connecting…" }
+        guard let stats else { return "\(AppVersion.display) · connecting…" }
         var parts = [
+            AppVersion.display,
             "\(stats.books) books", "\(stats.genres) genres", "\(stats.diaries) diaries",
             "\(stats.nodes.formatted()) nodes",
         ]

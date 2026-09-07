@@ -10,6 +10,9 @@ import SwiftUI
 
 struct SettingsView: View {
     @Environment(AppModel.self) private var model
+    #if !os(macOS)
+        @State private var showingAbout = false
+    #endif
 
     var body: some View {
         @Bindable var model = model
@@ -51,20 +54,6 @@ struct SettingsView: View {
 
             answerEngineSection
 
-            Section("💡 Try asking") {
-                ForEach(AppModel.suggestedQueries, id: \.query) { suggestion in
-                    Button {
-                        model.send(suggestion.query, corpusOverride: suggestion.corpus)
-                    } label: {
-                        Text("[\(suggestion.corpus)] \(suggestion.query)")
-                            .font(.caption)
-                            .lineLimit(2)
-                    }
-                    .buttonStyle(.plain)
-                    .foregroundStyle(.tint)
-                }
-            }
-
             Section {
                 Button("🗑️ Clear chat", role: .destructive) {
                     model.turns.removeAll()
@@ -75,9 +64,29 @@ struct SettingsView: View {
             corpusSection
 
             workerSection
+
+            #if !os(macOS)
+                // macOS keeps About in the app menu — the platform-standard
+                // place — via `.commands` in KnowledgePressApp.swift, so this
+                // row exists only where that menu doesn't.
+                Section {
+                    Button("ℹ️ About") { showingAbout = true }
+                }
+            #endif
         }
         #if os(macOS)
             .listStyle(.sidebar)
+        #else
+            .sheet(isPresented: $showingAbout) {
+                NavigationStack {
+                    AboutView()
+                        .toolbar {
+                            ToolbarItem(placement: .confirmationAction) {
+                                Button("Done") { showingAbout = false }
+                            }
+                        }
+                }
+            }
         #endif
     }
 

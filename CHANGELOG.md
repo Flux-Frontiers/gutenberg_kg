@@ -8,6 +8,54 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Added
+
+- **A launch splash** — logo, name, and tagline, fading in and holding for
+  2.5s before the real UI takes over. Shared between both shells via a new
+  `SplashOverlay`, which loads the 1024pt app icon from a copy bundled into
+  `KnowledgePressUI`'s own resources rather than either app target's
+  `Assets.xcassets`, so one image serves both.
+- **An About screen**, reached the standard way per platform rather than
+  the same way on both: an "ℹ️ About" row in Settings presents it as a sheet
+  on iOS/iPadOS, while macOS replaces the system-supplied "About" command in
+  the app menu (`CommandGroup(replacing: .appInfo)`) with a dedicated
+  window. Shows the icon, version, tagline, live corpus stats, a link to the
+  repo, and the licence line.
+- **The iPad gets the Mac's sidebar layout.** `AdaptiveRootView` picks
+  `MacRootView`'s `NavigationSplitView` for `.pad` and the iPhone's
+  tabs-plus-settings-sheet shell otherwise — reusing `MacRootView`'s body
+  as-is, since it was already idiom-agnostic SwiftUI, rather than
+  duplicating the same layout under a new name.
+- **"Ask The Knowledge Press" is a real Siri Shortcut.** `AskKnowledgePressIntent`
+  runs in-process (`openAppWhenRun`) so it can reach the same live
+  `AppModel` the chat UI uses — the installed corpus packs, the on-device
+  embedder, whichever answer engine Settings has selected — bridged via a
+  `NotificationCenter` post the model listens for. The invocation phrase
+  can't embed the question itself (App Intents only allows an
+  `AppEntity`/`AppEnum` parameter inside a phrase, since Siri needs a
+  bounded vocabulary to match against), so saying "Ask The Knowledge Press"
+  triggers it and Siri prompts for the question by voice.
+
+### Changed
+
+- **Default results 10 → 25, semantic floor 0.0 → 0.20.** The per-KG floor
+  now discards a genre's hits before fusion when its best match scores
+  below 0.20, trading a little breadth for less noise in a wider result set.
+- **Settings dropped the "Try asking" section.** The same suggestions still
+  appear in the empty chat state (`ChatView.swift`, untouched) — Settings
+  does not need its own copy of them.
+- **The redundant version/corpus caption is gone from the iPhone chat
+  header and from the About build number.** It used to appear twice —
+  under the chat title *and* in Settings — and now lives only in About.
+  About also no longer shows the build number: `CURRENT_PROJECT_VERSION` is
+  hardcoded to `"1"` in both `project.yml` files and nothing increments it,
+  so showing it printed "(1)" on every build rather than distinguishing
+  anything.
+- **Corrected a stale doc comment.** `AppModel` claimed to mirror
+  `serve/chat.py`'s Streamlit sidebar defaults; the two had already
+  diverged (this app's own k=25/0.5/0.20 vs. chat.py's k=15/0.6/0.3) and
+  were never wired together in the first place.
+
 ## [1.18.1] - 2026-09-06
 
 ### Fixed

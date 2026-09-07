@@ -27,9 +27,10 @@ public struct MacRootView: View {
 
 /// iPhone: Chat and Browse as tabs, settings behind a toolbar button.
 ///
-/// The sidebar does not survive the trip to a phone, so the controls move to a
-/// sheet and the corpus caption moves into the navigation subtitle — the same
-/// information, one thumb-reach away.
+/// The sidebar does not survive the trip to a phone, so the controls move to
+/// a sheet. The corpus/version caption that used to sit under the nav title
+/// here now lives only in About (Settings ▸ About) — one home for it,
+/// instead of the same line shown twice.
 public struct PhoneRootView: View {
     @Environment(AppModel.self) private var model
     @State private var showingSettings = false
@@ -55,13 +56,6 @@ public struct PhoneRootView: View {
                             .disabled(model.turns.isEmpty)
                         }
                     }
-                    .safeAreaInset(edge: .top) {
-                        Text(model.statsCaption)
-                            .font(.caption2)
-                            .foregroundStyle(.secondary)
-                            .frame(maxWidth: .infinity)
-                            .padding(.bottom, 4)
-                    }
             }
             .tabItem { Label("Chat", systemImage: "text.bubble") }
 
@@ -82,3 +76,28 @@ public struct PhoneRootView: View {
         }
     }
 }
+
+#if os(iOS)
+    import UIKit
+
+    /// The iOS entry point's root: the iPad gets the same permanent sidebar
+    /// as the Mac, since a phone-style settings sheet wastes most of the
+    /// screen it has; the iPhone keeps the tabs-plus-sheet shell above.
+    ///
+    /// `MacRootView`'s body is already idiom-agnostic SwiftUI —
+    /// `NavigationSplitView` collapses to one column in a compact-width
+    /// scene and shows the sidebar in regular width, which is exactly the
+    /// portrait/landscape behavior an iPad needs — so this reuses it as-is
+    /// rather than duplicating the same layout under a new name.
+    public struct AdaptiveRootView: View {
+        public init() {}
+
+        public var body: some View {
+            if UIDevice.current.userInterfaceIdiom == .pad {
+                MacRootView()
+            } else {
+                PhoneRootView()
+            }
+        }
+    }
+#endif
