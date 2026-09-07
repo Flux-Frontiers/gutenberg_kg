@@ -103,22 +103,33 @@ public actor WorkerClient {
     }
 
     /// Generate an illustration from a prompt via the worker's image backend.
+    ///
+    /// `timeout` defaults far past `post`'s usual 60s: the worker's own
+    /// `ImageSynthesizer` allows the mflux-serve backend up to 300s
+    /// (`kg_utils.synthesis._image`), and real generation is already 16s
+    /// with the GPU otherwise idle — a corpus rebuild or any other load
+    /// sharing the same MPS device pushes it well past 60s, which timed out
+    /// live rather than just in theory. 240s leaves headroom under the
+    /// worker's own ceiling rather than matching it exactly, so the app
+    /// gives up with its own message before the connection is dropped out
+    /// from under it.
     public func imagine(
         prompt: String,
         imageBackend: String = "",
         size: String? = nil,
-        steps: Int? = nil
+        steps: Int? = nil,
+        timeout: TimeInterval = 240
     ) async throws -> GeneratedImage {
         var input: [String: Any] = ["op": "imagine", "prompt": prompt]
         if !imageBackend.isEmpty { input["image_backend"] = imageBackend }
         if let size { input["size"] = size }
         if let steps { input["steps"] = steps }
-        return try await post(input)
+        return try await post(input, timeout: timeout)
     }
 
     // MARK: - Transport
 
-    private func post<T: Decodable>(_ input: [String: Any]) async throws -> T {
+    private func post<T: Decodable>(_ input: [String: Any], timeout: TimeInterval = 60) async throws -> T {
         var enriched = input
         if !secret.isEmpty { enriched["secret"] = secret }
 
@@ -126,6 +137,7 @@ public actor WorkerClient {
         request.httpMethod = "POST"
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         request.httpBody = try JSONSerialization.data(withJSONObject: ["input": enriched])
+        request.timeoutInterval = timeout
 
         let (data, response) = try await session.data(for: request)
         if let http = response as? HTTPURLResponse, !(200..<300).contains(http.statusCode) {

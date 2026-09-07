@@ -74,6 +74,17 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Fixed
 
+- **The Render button's worker call could time out well before the worker
+  gave up.** `WorkerClient.imagine()` went through the same 60s default as
+  every other call, inherited silently from `URLSession.shared` since
+  nothing ever set `timeoutInterval`. The worker's own image backend
+  (`kg_utils.synthesis._image.ImageSynthesizer`) allows up to 300s for the
+  mflux-serve path — and real generation is already 16s with the GPU
+  otherwise idle, so anything sharing the same MPS device (a corpus
+  rebuild, another render) pushes it past 60s in practice, not just in
+  theory: hit live, mid-corpus-rebuild, the day this shipped. `imagine`
+  now defaults to 240s, under the worker's own ceiling rather than racing
+  it.
 - **`test_viz3d_cast.py` silently stopped testing what it claimed to.**
   `cast_quilt` moved from `quiltwright.lfd` to `quiltwright.bridge` in
   0.11.0 (`lfd` now only re-exports the name), so patching
