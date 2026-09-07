@@ -64,6 +64,75 @@ def test_pepys_strips_bracketed_footnotes(tmp_path):
     assert "to the sea" in entries[0].content
 
 
+@pytest.mark.parametrize(
+    "marker,day",
+    [
+        ("11th (Lord's day).", 11),
+        ("26th (Office day).", 26),
+        ("29th (Michaelmas day).", 29),
+        ("8th (Sunday).", 8),
+    ],
+)
+def test_pepys_continuation_with_parenthetical(tmp_path, marker, day):
+    """A day-only continuation may carry a parenthetical before its period.
+
+    Regression: ``_CONT_DATE_RE`` used to require the period immediately after
+    the ordinal, so ``11th (Lord's day).`` never opened an entry and its text was
+    appended to the preceding day.  That silently dropped ~500 Pepys entries --
+    essentially every Sunday of the diary.
+    """
+    md = _write(
+        tmp_path,
+        "JANUARY 1659-1660\n\n"
+        "Jan. 1st. The first day of the year passed quietly enough at home.\n\n"
+        f"{marker} Up betimes and to church, where a very good sermon was had.\n",
+    )
+    entries = list(PepysParser().parse(md))
+    assert len(entries) == 2
+    assert entries[1].timestamp == datetime(1660, 1, day)
+    assert entries[1].content.startswith("Up betimes")
+    # the parenthetical itself must not leak into the entry body
+    assert "day)" not in entries[1].content
+
+
+def test_pepys_plain_continuation_still_matches(tmp_path):
+    """The ordinary ``2nd.`` continuation keeps working alongside the above."""
+    md = _write(
+        tmp_path,
+        "JANUARY 1659-1660\n\n"
+        "Jan. 1st. The first day of the year passed quietly enough at home.\n\n"
+        "2nd. The second day continued with much business at the office today.\n",
+    )
+    entries = list(PepysParser().parse(md))
+    assert [e.timestamp for e in entries] == [datetime(1660, 1, 1), datetime(1660, 1, 2)]
+
+
+@pytest.mark.parametrize(
+    "header,expected_year",
+    [
+        ("JANUARY 1659-1660", 1660),
+        ("FEBRUARY 1660-61", 1661),
+        ("APRIL 1660", 1660),
+    ],
+)
+def test_pepys_section_header_year(tmp_path, header, expected_year):
+    """Dual-year headers resolve to the later year, two-digit form included.
+
+    Regression: ``FEBRUARY 1660-61`` -- the single abbreviated header among 112
+    four-digit ones -- did not match ``_SECTION_RE``, so all of February 1661 was
+    stamped with January 1661 dates (45 entries in a 31-day month, 0 in February).
+    """
+    md = _write(tmp_path, f"{header}\n\n1st. A sufficiently long entry body for the parser.\n")
+    entries = list(PepysParser().parse(md))
+    assert len(entries) == 1
+    assert entries[0].timestamp.year == expected_year
+
+
+def test_pepys_two_digit_year_not_read_as_literal(tmp_path):
+    """``1660-61`` must expand to 1661, not to the year 61."""
+    assert PepysParser()._match_section("FEBRUARY 1660-61") == (2, 1661)
+
+
 # ---------------------------------------------------------------------------
 # Evelyn format
 # ---------------------------------------------------------------------------

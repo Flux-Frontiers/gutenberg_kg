@@ -66,7 +66,9 @@ _MONTH_NAMES = (
 # ---------------------------------------------------------------------------
 
 # Pepys: ALL-CAPS section header "JANUARY 1659-1660" or "APRIL 1660"
-_SECTION_RE = re.compile(r"^([A-Z]+)\s+(\d{4})(?:-(\d{4}))?$")
+# The second year may be abbreviated: Pepys has one "FEBRUARY 1660-61" among
+# 112 four-digit headers.  Accept both widths.
+_SECTION_RE = re.compile(r"^([A-Z]+)\s+(\d{4})(?:-(\d{4}|\d{2}))?$")
 
 # Pepys: full-month entry "January 1st." / "April 1st, 1661."
 _FULL_DATE_RE = re.compile(
@@ -89,7 +91,9 @@ _ABBR_DATE_RE = re.compile(
 
 # Pepys: continuation entry "2nd." or "11th (Lord's day)."
 _CONT_DATE_RE = re.compile(
-    r"^(\d{1,2})(?:st|nd|rd|th)\.\s*(?:\([^)]*\))?\.?\s*(.*)",
+    r"^(\d{1,2})(?:st|nd|rd|th)"
+    r"(?:[.,]\s*|\s+(?=\())"
+    r"(?:\([^)]*\))?[.,]?\s*(.*)",
     re.DOTALL,
 )
 
@@ -272,7 +276,13 @@ class PepysParser(BaseDiaryParser):
         month = _month_num(m.group(1))
         if not month:
             return None
-        year = int(m.group(3)) if m.group(3) else int(m.group(2))
+        first, second = m.group(2), m.group(3)
+        if not second:
+            return month, int(first)
+        # Old-style dual year ("1659-1660", "1660-61"): the entries belong to the
+        # later year.  Expand a two-digit second year against the first's century
+        # -- int("61") alone would yield year 61.
+        year = int(second) if len(second) == 4 else int(first[:2] + second)
         return month, year
 
     def _match_date(
