@@ -128,6 +128,48 @@ def test_pepys_section_header_year(tmp_path, header, expected_year):
     assert entries[0].timestamp.year == expected_year
 
 
+@pytest.mark.parametrize(
+    "marker,month,day",
+    [
+        ("April 1st.", 4, 1),
+        ("April 1st (Lord's day).", 4, 1),
+        ("September 1st.", 9, 1),
+        ("February 1st.", 2, 1),
+        ("December 25th.", 12, 25),
+        ("May 1st.", 5, 1),
+        ("June 3rd.", 6, 3),
+        ("April 1st, 1660.", 4, 1),
+    ],
+)
+def test_pepys_full_month_name_opens_entry(tmp_path, marker, month, day):
+    """A spelled-out month opens an entry -- ``_FULL_DATE_RE`` must actually match.
+
+    Regression: that pattern is built by implicit concatenation where only the
+    first fragment is an f-string, so its ``{{1,2}}`` / ``{{4}}`` quantifiers were
+    never collapsed to ``{1,2}`` / ``{4}``.  The compiled regex read "a digit, then
+    one or two literal '{', then '}'" and so matched nothing whatsoever.  Full
+    month names survived only where _ABBR_DATE_RE incidentally covered them --
+    May, June and July, whose names start with a listed abbreviation followed by
+    whitespace -- while April, September, February and the rest silently opened
+    no entry, dropping the first-of-month entry for most months of the diary.
+    """
+    md = _write(
+        tmp_path,
+        f"APRIL 1660\n\n{marker} A sufficiently long entry body follows the date marker here.\n",
+    )
+    entries = list(PepysParser().parse(md))
+    assert len(entries) == 1
+    assert (entries[0].timestamp.month, entries[0].timestamp.day) == (month, day)
+    assert entries[0].content.startswith("A sufficiently long entry")
+
+
+def test_pepys_full_date_re_has_no_doubled_braces():
+    """Guard the f-string escaping directly -- a doubled brace compiles but is dead."""
+    from gutenberg_kg.diary.parser import _FULL_DATE_RE
+
+    assert "{{" not in _FULL_DATE_RE.pattern
+
+
 def test_pepys_two_digit_year_not_read_as_literal(tmp_path):
     """``1660-61`` must expand to 1661, not to the year 61."""
     assert PepysParser()._match_section("FEBRUARY 1660-61") == (2, 1661)

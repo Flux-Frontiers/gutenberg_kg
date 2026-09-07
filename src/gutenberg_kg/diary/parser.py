@@ -71,11 +71,16 @@ _MONTH_NAMES = (
 _SECTION_RE = re.compile(r"^([A-Z]+)\s+(\d{4})(?:-(\d{4}|\d{2}))?$")
 
 # Pepys: full-month entry "January 1st." / "April 1st, 1661."
+# NB: only the first fragment is an f-string, so the quantifiers below take
+# SINGLE braces.  They were doubled, which compiles to "a digit, then one or two
+# literal '{', then '}'" -- the pattern matched nothing at all, and full month
+# names survived only where _ABBR_DATE_RE happened to cover them (May, June,
+# July).  "April 1st." and every other spelled-out month opened no entry.
 _FULL_DATE_RE = re.compile(
     rf"^({_MONTH_NAMES})"
-    r"\.?\s+(\d{{1,2}})(?:st|nd|rd|th)"
+    r"\.?\s+(\d{1,2})(?:st|nd|rd|th)"
     r"(?:[.,]\s*|\s+(?=\())"
-    r"(?:\d{{4}}[.,]?\s*)?"
+    r"(?:\d{4}[.,]?\s*)?"
     r"(?:\([^)]*\))?[.,]?\s*(.*)",
     re.DOTALL | re.IGNORECASE,
 )
