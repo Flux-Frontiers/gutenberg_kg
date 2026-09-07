@@ -45,6 +45,7 @@ GENRE_ORDER = [
     "audel-electric",
     "spanish",
     "shakespeare",
+    "curiosities",
 ]
 
 GENRE_LABELS = {
@@ -68,6 +69,7 @@ GENRE_LABELS = {
     "audel-electric": "Technical Reference - Internet Archive",
     "spanish": "Spanish Literature",
     "shakespeare": "Shakespeare",
+    "curiosities": "Curiosities",
 }
 
 # Last-resort overrides for books where the author cannot be inferred from the

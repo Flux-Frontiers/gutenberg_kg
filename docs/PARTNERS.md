@@ -18,6 +18,6 @@ Digital humanities centers, computational linguistics labs, library science prog
 
 ## Why now
 
-The corpus stands at 241 works and over 5 million edges, with a production-ready pipeline. The architecture is federated by design — new corpora slot in without touching the existing graph. The ingestion tooling is fast and fully automated. The query layer is proven. This is the inflection point before the graph becomes too large for any single team to steer.
+The corpus stands at 253 works and over 5 million edges, with a production-ready pipeline. The architecture is federated by design — new corpora slot in without touching the existing graph. The ingestion tooling is fast and fully automated. The query layer is proven. This is the inflection point before the graph becomes too large for any single team to steer.
 
 **To discuss a partnership:** [suchanek@flux-frontiers.com](mailto:suchanek@flux-frontiers.com)

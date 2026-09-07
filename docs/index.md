@@ -11,7 +11,7 @@ find. Retrieval is local and works without an LLM; an optional local or
 cloud model can turn the retrieved passages into a cited synthesis, but the
 evidence remains visible and inspectable.
 
-The included corpus contains **241 texts in 20 genres**: literature,
+The included corpus contains **253 texts in 21 genres**: literature,
 philosophy, drama, diaries, sacred texts, travel, natural history, and
 technical reference.
 
