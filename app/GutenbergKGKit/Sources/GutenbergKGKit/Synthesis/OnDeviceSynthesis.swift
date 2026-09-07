@@ -159,6 +159,16 @@ import Foundation
             estimatedPromptTokens: packed.estimatedPromptTokens,
             model: modelDescription)
         continuation.yield(.completed(latest, metrics))
+
+        // After the answer is delivered, never before it.
+        SynthesisTrace.record(
+            question: question,
+            instructions: SynthesisPrompt.ragInstructions,
+            prompt: prompt,
+            answer: latest,
+            passages: packed.passages,
+            metrics: metrics,
+            temperature: temperature)
     }
 
     /// Map a `GenerationError` onto the two failures the chat handles

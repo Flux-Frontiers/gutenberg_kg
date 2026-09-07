@@ -46,6 +46,17 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   `AppEntity`/`AppEnum` parameter inside a phrase, since Siri needs a
   bounded vocabulary to match against), so saying "Ask The Knowledge Press"
   triggers it and Siri prompts for the question by voice.
+- **Synthesis calls are recorded verbatim.** `SynthesisTrace` writes one JSON
+  file per call into `Application Support/Diagnostics`: the session
+  instructions, the user prompt with all its packed passages, and the raw
+  completion, plus hardware identifier, OS build, timings, and a
+  line/unique-line count that makes a repetition loop countable rather than
+  a judgement call. Written after `.completed` is yielded, so a failure
+  there costs a diagnostic and never an answer. This exists because
+  screenshots cannot distinguish "the model was asked something different"
+  from "the model answered differently", and that distinction is what
+  settled `analysis/FOUNDATION_MODELS_DIVERGENCE_20260907.md`. Currently
+  unconditional rather than gated on a setting.
 
 ### Changed
 
