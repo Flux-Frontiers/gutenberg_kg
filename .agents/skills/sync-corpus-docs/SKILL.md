@@ -47,7 +47,7 @@ provenance timestamp is ignored when detecting drift).
 | "Corpus at a Glance" table | `README.md`, between `<!-- BEGIN corpus-table -->` markers |
 | intro prose "N texts across G genres — X nodes, Y edges" | `README.md` |
 | "query N books" line | `README.md` |
-| "N works, X.X million edges" blurb | `README.md` (partnership section) |
+| "corpus stands at N works" blurb | `docs/PARTNERS.md` |
 | BibTeX citation note | `README.md` |
 | full per-genre book list | `docs/CORPUS.md` (delegates to `regenerate_corpus_doc.py`) |
 

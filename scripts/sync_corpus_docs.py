@@ -8,9 +8,17 @@ README badges, prose, table, and citation can never silently drift again:
   * ``README.md`` — the three shields.io badges (corpus / nodes / edges)
   * ``README.md`` — the "Corpus at a Glance" table (regenerated between markers)
   * ``README.md`` — the intro prose ("N texts across G genres — X nodes, Y edges")
-  * ``README.md`` — the "query N books" line and the "N works, X million edges" blurb
-  * ``README.md`` — the BibTeX citation note ("N public-domain texts across G genres")
+  * ``README.md`` — the "query N books" line and the BibTeX citation note
   * ``docs/CORPUS.md`` — the full per-genre book list (via regenerate_corpus_doc)
+  * ``docs/PARTNERS.md`` — the "corpus stands at N works" line
+
+The partnership blurb used to live in README.md, which is why an earlier version
+of this script only ever patched a "N works, X million edges" pattern there. It
+moved to docs/PARTNERS.md with different wording (`git log -p` on this file
+around 2026-09 shows it) and the pattern was never updated to follow it, so this
+sync silently left the new home unpatched -- caught only because the v1.18.1
+release audit read every file's actual prose instead of trusting this script's
+own "What it updates" claim.
 
 The README table is sorted by book count (descending, ties in
 ``regenerate_corpus_doc.GENRE_ORDER``); ``docs/CORPUS.md`` keeps the canonical
@@ -46,6 +54,7 @@ from gutenberg_kg.corpus import corpus_status  # noqa: E402
 
 _REGISTRY_DEFAULT = Path.home() / ".kgrag" / "registry.sqlite"
 _README = _REPO_ROOT / "README.md"
+_PARTNERS = _REPO_ROOT / "docs" / "PARTNERS.md"
 _CORPUS_ROOT = _REPO_ROOT / "corpus"
 
 _TABLE_BEGIN = (
@@ -89,7 +98,6 @@ def _patch_readme(text: str, status: dict) -> str:
     totals = status["totals"]
     books, nodes, edges = totals["books"], totals["nodes"], totals["edges"]
     genres = sum(1 for g in status["genres"] if g["books"] > 0)
-    edges_millions = f"{edges / 1_000_000:.1f}"
 
     genre_by_corpus = {g["corpus"]: g for g in status["genres"]}
 
@@ -113,14 +121,17 @@ def _patch_readme(text: str, status: dict) -> str:
 
     # 4. "query N books" (Docker + local-app intro).
     text = re.sub(r"query \d+ books", f"query {books} books", text)
+    return text
 
-    # 5. "N works, X.X million edges" (partnership blurb).
-    text = re.sub(
-        r"\d+ works, [\d.]+ million edges",
-        f"{books} works, {edges_millions} million edges",
+
+def _patch_partners(text: str, status: dict) -> str:
+    """Return docs/PARTNERS.md text with its book count updated from *status*."""
+    books = status["totals"]["books"]
+    return re.sub(
+        r"corpus stands at \d+ works",
+        f"corpus stands at {books} works",
         text,
     )
-    return text
 
 
 def main() -> int:
@@ -159,22 +170,29 @@ def main() -> int:
     corpus_md = _REPO_ROOT / "docs" / "CORPUS.md"
     old_corpus = corpus_md.read_text(encoding="utf-8") if corpus_md.exists() else ""
 
+    # --- docs/PARTNERS.md ---
+    old_partners = _PARTNERS.read_text(encoding="utf-8") if _PARTNERS.exists() else ""
+    new_partners = _patch_partners(old_partners, status) if old_partners else old_partners
+    partners_changed = new_partners != old_partners
+
     if args.check:
         # Regenerate CORPUS.md into a string without touching disk.
         rows_by_genre, _total = regen._collect_rows()
         new_corpus = regen._render(rows_by_genre, _total, 0.0)
         corpus_changed = _strip_provenance(new_corpus) != _strip_provenance(old_corpus)
-        drift = readme_changed or corpus_changed
-        _report(totals, genres, readme_changed, corpus_changed, check=True)
+        drift = readme_changed or corpus_changed or partners_changed
+        _report(totals, genres, readme_changed, corpus_changed, partners_changed, check=True)
         return 1 if drift else 0
 
     # --- write ---
     if readme_changed:
         _README.write_text(new_readme, encoding="utf-8")
+    if partners_changed:
+        _PARTNERS.write_text(new_partners, encoding="utf-8")
     regen.main()  # writes docs/CORPUS.md with fresh provenance
     new_corpus = corpus_md.read_text(encoding="utf-8")
     corpus_changed = _strip_provenance(new_corpus) != _strip_provenance(old_corpus)
-    _report(totals, genres, readme_changed, corpus_changed, check=False)
+    _report(totals, genres, readme_changed, corpus_changed, partners_changed, check=False)
     return 0
 
 
@@ -204,7 +222,13 @@ def _strip_provenance(text: str) -> str:
 
 
 def _report(
-    totals: dict, genres: int, readme_changed: bool, corpus_changed: bool, *, check: bool
+    totals: dict,
+    genres: int,
+    readme_changed: bool,
+    corpus_changed: bool,
+    partners_changed: bool,
+    *,
+    check: bool,
 ) -> None:
     """Print a human-readable summary of what changed (or would change)."""
     verb = "would update" if check else "updated"
@@ -215,9 +239,10 @@ def _report(
         f"(badges: {totals['books']} / {_fmt_badge_nodes(totals['nodes'])} / "
         f"{_fmt_badge_nodes(totals['edges'])})"
     )
-    print(f"  README.md      {verb if readme_changed else same}")
-    print(f"  docs/CORPUS.md {verb if corpus_changed else same}")
-    if check and (readme_changed or corpus_changed):
+    print(f"  README.md        {verb if readme_changed else same}")
+    print(f"  docs/CORPUS.md   {verb if corpus_changed else same}")
+    print(f"  docs/PARTNERS.md {verb if partners_changed else same}")
+    if check and (readme_changed or corpus_changed or partners_changed):
         print("\n[✗] Corpus docs are stale — run: poetry run python scripts/sync_corpus_docs.py")
     elif not check:
         print("\n[✓] Corpus docs synced.")
