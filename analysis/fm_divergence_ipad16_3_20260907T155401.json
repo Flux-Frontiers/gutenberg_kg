@@ -1,0 +1,32 @@
+{
+  "answer" : "Five centuries and more,\nT for that lukewarmness was fain to pace\nRound the fourth circle. (Dante Alighieri, *The Divine Comedy* (Cary's Translation))",
+  "answerCharacters" : 150,
+  "answerLines" : 3,
+  "answerUniqueLines" : 3,
+  "elapsedMs" : 1765,
+  "estimatedPromptTokens" : 777,
+  "hardware" : "iPad16,3",
+  "instructions" : "You are a literary guide to the Project Gutenberg corpus. Answer the question using ONLY the provided source passages. Do NOT use any prior knowledge — if something is in the passages, report it; if it is not in the passages, say so. Never contradict or override what the passages say based on what you believe to be true. Be concise and specific. Cite the author and work when relevant.",
+  "modelDescription" : "Apple Foundation Models (on-device)",
+  "passageHeaders" : [
+    "world-literature · Dante Alighieri · The Divine Comedy (Cary's Translation)",
+    "world-literature · Dante Alighieri · The Divine Comedy (Cary's Translation)",
+    "world-literature · Dante Alighieri · The Divine Comedy (Cary's Translation)",
+    "world-literature · Dante Alighieri · The Divine Comedy (Cary's Translation)",
+    "world-literature · Dante Alighieri · The Divine Comedy (Cary's Translation)"
+  ],
+  "passageIds" : [
+    "gutenberg:chunk:world-literature\/The Divine Comedy (Cary)\/the_divine_comedy_paradiso_dante.md:0248",
+    "gutenberg:chunk:world-literature\/The Divine Comedy (Cary)\/the_divine_comedy_paradiso_dante.md:1386",
+    "gutenberg:chunk:world-literature\/The Divine Comedy (Cary)\/the_divine_comedy_paradiso_dante.md:0812",
+    "gutenberg:chunk:world-literature\/The Divine Comedy (Cary)\/the_divine_comedy_paradiso_dante.md:1179",
+    "gutenberg:chunk:world-literature\/The Divine Comedy (Cary)\/the_divine_comedy_paradiso_dante.md:0123"
+  ],
+  "passagesDropped" : 20,
+  "passagesUsed" : 5,
+  "prompt" : "Source passages:\n[world-literature · Dante Alighieri · The Divine Comedy (Cary's Translation)]\n*There is a place within the depths of hell*\n\nCall’d Malebolge, all of rock dark-stain’d\nWith hue ferruginous, e’en as the steep\nThat round it circling winds. Right in the midst\nOf that abominable region, yawns\nA spacious gulf profound, whereof the frame\nDue time shall tell. The circle, that remains,\nThroughout its round, between the gulf and base\nOf the high craggy banks, successive forms\nTen trenches, in its hollow bottom sunk.\n\n[world-literature · Dante Alighieri · The Divine Comedy (Cary's Translation)]\nAnd so far off,\nPerchance, as is the halo from the light\nWhich paints it, when most dense the vapour spreads,\nThere wheel’d about the point a circle of fire,\nMore rapid than the motion, which first girds\nThe world. Then, circle after circle, round\nEnring’d each other; till the seventh reach’d\nCircumference so ample, that its bow,\nWithin the span of Juno’s messenger,\nlied scarce been held entire. Beyond the sev’nth,\nFollow’d yet other two.\n\n[world-literature · Dante Alighieri · The Divine Comedy (Cary's Translation)]\nFive centuries and more,\nT for that lukewarmness was fain to pace\nRound the fourth circle.\n\n[world-literature · Dante Alighieri · The Divine Comedy (Cary's Translation)]\n*From centre to the circle, and so back*\n\nFrom circle to the centre, water moves\nIn the round chalice, even as the blow\nImpels it, inwardly, or from without. Such was the image glanc’d into my mind,\nAs the great spirit of Aquinum ceas’d;\nAnd Beatrice after him her words\nResum’d alternate: “Need there is (tho’ yet\nHe tells it to you not in words, nor e’en\nIn thought) that he should fathom to its depth\nAnother mystery.\n\n[world-literature · Dante Alighieri · The Divine Comedy (Cary's Translation)]\nNo long space my flesh\nWas naked of me, when within these walls\nShe made me enter, to draw forth a spirit\nFrom out of Judas’ circle. Lowest place\nIs that of all, obscurest, and remov’d\nFarthest from heav’n’s all-circling orb. The road\nFull well I know: thou therefore rest secure.\n\nQuestion: Circles of hell",
+  "question" : "Circles of hell",
+  "recordedAt" : "2026-09-07T15:54:01Z",
+  "systemVersion" : "Version 27.0 (Build 24A5430a)",
+  "temperature" : 0
+}
