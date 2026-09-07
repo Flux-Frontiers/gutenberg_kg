@@ -7,7 +7,14 @@
 import GutenbergKGKit
 import SwiftUI
 
+#if canImport(UIKit)
+    import UIKit
+#elseif canImport(AppKit)
+    import AppKit
+#endif
+
 struct AssistantTurnView: View {
+    @Environment(AppModel.self) private var model
     let turn: ChatTurn
     @State private var passagesExpanded: Bool?
 
@@ -34,6 +41,7 @@ struct AssistantTurnView: View {
             } else {
                 answerBlock
                 statsCaption
+                renderSection
                 DisclosureGroup(
                     isExpanded: Binding(
                         get: { showPassages },
@@ -126,6 +134,60 @@ struct AssistantTurnView: View {
         return Text(parts.joined(separator: " · "))
             .font(.caption)
             .foregroundStyle(.secondary)
+    }
+
+    /// "🎨 Render" — chat.py's illustration button, one tap instead of two:
+    /// rewrite-then-imagine both happen inside `AppModel.renderImage(for:)`.
+    /// Always network-only, so failure here (no worker, worker unreachable)
+    /// is ordinary and shown inline rather than gated on reachability
+    /// upfront — the same thing chat.py does.
+    @ViewBuilder
+    private var renderSection: some View {
+        if turn.isRenderingImage {
+            HStack(spacing: 8) {
+                ProgressView().controlSize(.small)
+                Text("Generating an illustration…").foregroundStyle(.secondary)
+            }
+            .font(.caption)
+        } else if let image = turn.generatedImage, let rendered = decodedImage(image.imageB64) {
+            VStack(alignment: .leading, spacing: 4) {
+                rendered
+                    .resizable()
+                    .scaledToFit()
+                    .frame(maxWidth: .infinity)
+                    .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
+                if let model = image.imageModel {
+                    Text("🎨 \(model)")
+                        .font(.caption2)
+                        .foregroundStyle(.secondary)
+                }
+            }
+        } else {
+            HStack(spacing: 8) {
+                Button("🎨 Render", systemImage: "photo") {
+                    model.renderImage(for: turn.id)
+                }
+                .font(.caption)
+                if let error = turn.imageError {
+                    Label(error, systemImage: "exclamationmark.triangle")
+                        .font(.caption2)
+                        .foregroundStyle(.orange)
+                }
+            }
+        }
+    }
+
+    private func decodedImage(_ base64: String) -> Image? {
+        guard let data = Data(base64Encoded: base64) else { return nil }
+        #if canImport(UIKit)
+            guard let image = UIImage(data: data) else { return nil }
+            return Image(uiImage: image)
+        #elseif canImport(AppKit)
+            guard let image = NSImage(data: data) else { return nil }
+            return Image(nsImage: image)
+        #else
+            return nil
+        #endif
     }
 
     private func markdown(_ text: String) -> AttributedString {

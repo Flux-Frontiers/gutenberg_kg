@@ -21,11 +21,22 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   the app menu (`CommandGroup(replacing: .appInfo)`) with a dedicated
   window. Shows the icon, version, tagline, live corpus stats, a link to the
   repo, and the licence line.
-- **The iPad gets the Mac's sidebar layout.** `AdaptiveRootView` picks
-  `MacRootView`'s `NavigationSplitView` for `.pad` and the iPhone's
-  tabs-plus-settings-sheet shell otherwise — reusing `MacRootView`'s body
-  as-is, since it was already idiom-agnostic SwiftUI, rather than
-  duplicating the same layout under a new name.
+- **The iPad gets its own compact shell, not the iPhone's sheet.**
+  `AdaptiveRootView` picks a new `PadRootView` for `.pad`: the same
+  tabs-plus-toolbar-button layout as the iPhone, but Settings opens as a
+  floating `.popover` instead of a sheet — closer to how Files or Notes
+  handles a secondary panel on a screen with room to spare, and lighter
+  than a permanently-open sidebar the reader is mostly not looking at.
+  (An earlier version of this reused `MacRootView`'s full
+  `NavigationSplitView` sidebar for the iPad; replaced before ever
+  shipping once it read as heavier than the content next to it.)
+- **A "🎨 Render" button turns an answer into an illustration**, one tap
+  instead of chat.py's two: `AppModel.renderImage(for:)` chains the
+  worker's already-implemented `rewrite` and `imagine` ops (`WorkerClient`
+  has carried both since before this app existed — nothing had ever called
+  them). Always network-only, since there is no on-device image model;
+  failure (no worker configured, worker unreachable) shows inline rather
+  than being gated on reachability upfront, same as chat.py.
 - **"Ask The Knowledge Press" is a real Siri Shortcut.** `AskKnowledgePressIntent`
   runs in-process (`openAppWhenRun`) so it can reach the same live
   `AppModel` the chat UI uses — the installed corpus packs, the on-device
@@ -55,6 +66,11 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   `serve/chat.py`'s Streamlit sidebar defaults; the two had already
   diverged (this app's own k=25/0.5/0.20 vs. chat.py's k=15/0.6/0.3) and
   were never wired together in the first place.
+- **The Mac's Settings sidebar can now be collapsed.** `MacRootView` binds
+  `NavigationSplitView`'s `columnVisibility` explicitly (still defaulting
+  to `.automatic`, unchanged behavior) purely so the built-in sidebar
+  toggle appears in the toolbar — the same affordance Xcode, Mail, and
+  Notes give a persistent sidebar.
 
 ### Fixed
 
