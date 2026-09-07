@@ -10,6 +10,15 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added
 
+- **A resolution setting for rendered illustrations** — Settings ▸
+  Illustrations, offering chat.py's three presets pixel for pixel: Preview
+  768x512, Standard 1152x768, Full 1536x1024, all 3:2. The choice persists,
+  like the corpus scope and the worker address. Until now the app sent no
+  size at all, so the worker fell back to its own `1536x1024` default -- the
+  largest of the three, on the device least able to wait for it, which is
+  what made a render time out on the phone. Nothing in the interface said
+  which size was in use, so nothing looked wrong. The default is now Preview,
+  matching chat.py's own `index=0`.
 - **Chats that survive a relaunch** — phase 1 of
   `analysis/CONVERSATIONS_SIDEBAR_PLAN.md`. The app used to forget every
   conversation the moment it was closed. A conversation is now the existing

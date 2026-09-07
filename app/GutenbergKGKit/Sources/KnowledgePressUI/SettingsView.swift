@@ -55,6 +55,8 @@ struct SettingsView: View {
 
             answerEngineSection
 
+            illustrationSection
+
             Section {
                 Button("🗑️ Delete conversation", role: .destructive) {
                     confirmingDelete = true
@@ -153,6 +155,26 @@ struct SettingsView: View {
                     .font(.caption2)
                     .foregroundStyle(.secondary)
             #endif
+        }
+    }
+
+    /// Size of a rendered illustration — chat.py's "Resolution" selectbox.
+    ///
+    /// Sits beside the answer engine rather than in the Worker section
+    /// because it is a choice about the picture, not about the connection,
+    /// even though the worker is what draws it.
+    @ViewBuilder
+    private var illustrationSection: some View {
+        @Bindable var model = model
+        Section("🎨 Illustrations") {
+            Picker("Resolution", selection: $model.imageResolution) {
+                ForEach(ImageResolution.allCases, id: \.self) { resolution in
+                    Text(resolution.label).tag(resolution)
+                }
+            }
+            Text("Smaller renders faster. Illustrations always come from the worker.")
+                .font(.caption2)
+                .foregroundStyle(.secondary)
         }
     }
 
