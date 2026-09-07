@@ -1,6 +1,6 @@
 # GutenbergKG — Ingestion Pipeline
 
-> **Current corpus:** 241 books across 20 genres. The per-stage sizes below are
+> **Current corpus:** 253 books across 21 genres. The per-stage sizes below are
 > architecture examples from a reference build; consult the [corpus catalog](CORPUS.md)
 > for live coverage and [`gutenkg status`](CHEATSHEET.md#check-ingest-status-across-corpus)
 > for local index metrics.
@@ -15,10 +15,10 @@
         ▼
   ┌─────────────────────────────────────────────────────────────┐
   │                   CORPUS  (corpus/)                         │
-  │   20 genres · 241 books · Markdown + reference.md             │
+  │   21 genres · 253 books · Markdown + reference.md             │
   └─────────────────────────────────────────────────────────────┘
         │
-        ├─── 18 prose / technical genres ─────────────────────────▶  Semantic Chunker
+        ├─── 19 prose / technical genres ─────────────────────────▶  Semantic Chunker
         │       american-literature, ancient-classical,              (doc-kg)
         │       english-literature, french-literature,
         │       philosophy, science-fiction, drama …
@@ -204,7 +204,7 @@ Step 3 also writes `HAS_TOPIC` edges with classifier confidence scores into the 
       "author_death": "348 BC",
       "ebook_id":     1497
     },
-    …  241 entries
+    …  253 entries
   }
 ```
 
@@ -220,7 +220,7 @@ the `file_path` prefix — no extra node fields required.
   ├── .dockg/
   │   ├── graph.sqlite          2.9 GB   (683,531 nodes; embed-text, topics, entities)
   │   ├── vectors.sqlite        1.1 GB   (688 K × 384-dim fp32 vectors, sqlite-vec)
-  │   └── catalog.json          size varies  (241 books · author/title/ID)
+  │   └── catalog.json          size varies  (253 books · author/title/ID)
   │
   └── diaries/
       ├── The Diary of Samuel Pepys — Complete/.diarykg/
@@ -283,10 +283,10 @@ and will bake in a stale or empty bundle if that directory is missing or outdate
 
 | Content type | Genres | Books | Index |
 |---|---:|---:|---|
-| Prose and technical text | 18 | 230 | DocKG semantic chunking |
+| Prose and technical text | 19 | 242 | DocKG semantic chunking |
 | Sacred texts | 1 | 7 | DocKG verse chunking |
 | Diaries | 1 | 4 | DiaryKG temporal indexing |
-| **Total** | **20** | **241** | |
+| **Total** | **21** | **253** | |
 
 ---
 

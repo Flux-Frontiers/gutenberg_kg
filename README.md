@@ -8,7 +8,7 @@
   <a href="https://www.python.org/"><img src="https://img.shields.io/badge/python-3.12%20%7C%203.13-blue.svg" alt="Python"/></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/code-Elastic--2.0-lightgrey.svg" alt="Code License"/></a>
   <a href="https://www.gutenberg.org/"><img src="https://img.shields.io/badge/texts-Public%20Domain-green.svg" alt="Texts License"/></a>
-  <img src="https://img.shields.io/badge/version-1.18.0-blue.svg" alt="Version"/>
+  <img src="https://img.shields.io/badge/version-1.18.1-blue.svg" alt="Version"/>
   <img src="https://img.shields.io/badge/corpus-253%20books-orange.svg" alt="Corpus"/>
   <img src="https://img.shields.io/badge/nodes-1.3M-green.svg" alt="Nodes"/>
   <img src="https://img.shields.io/badge/edges-5.3M-green.svg" alt="Edges"/>
@@ -23,7 +23,7 @@ GutenbergKG turns public-domain texts into a queryable library of knowledge grap
 
 Ask how Stoics, novelists, and sacred texts treat suffering; find accounts of the Great Fire in Pepys; compare what Rousseau and Thoreau mean by freedom. Retrieval is local and works without an LLM. An optional local or cloud model can turn the retrieved passages into a cited synthesis, but the evidence remains visible and inspectable.
 
-The included corpus contains **241 texts in 20 genres**: literature, philosophy, drama, diaries, sacred texts, travel, natural history, and technical reference. It is a working library, not a benchmark-sized black box.
+The included corpus contains **253 texts in 21 genres**: literature, philosophy, drama, diaries, sacred texts, travel, natural history, and technical reference. It is a working library, not a benchmark-sized black box.
 
 > **GutenbergKG is for readers, researchers, and builders** who want semantic discovery with a path back to the original text.
 
@@ -202,7 +202,7 @@ If you use GutenbergKG in research, use GitHub’s **Cite this repository** butt
   author       = {Suchanek, Eric G.},
   title        = {{GutenbergKG}: The Knowledge Press},
   year         = {2026},
-  version      = {1.18.0},
+  version      = {1.18.1},
   publisher    = {Flux-Frontiers},
   doi          = {10.5281/zenodo.20045389},
   url          = {https://github.com/Flux-Frontiers/gutenberg_kg}

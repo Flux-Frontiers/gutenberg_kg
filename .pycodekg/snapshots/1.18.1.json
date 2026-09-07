@@ -1,0 +1,185 @@
+{
+  "key": "1.18.1",
+  "branch": "main",
+  "timestamp": "2026-09-07T01:15:23.027882+00:00",
+  "version": "1.18.1",
+  "subject": "repo:gutenberg-kg",
+  "tool": "pycode-kg",
+  "tool_version": "0.26.0",
+  "tree_hash": "dcd9b48b67a4a466eccbf339b3fc2db8da094017",
+  "metrics": {
+    "db_path": ".pycodekg/graph.sqlite",
+    "total_nodes": 9329,
+    "meaningful_nodes": 619,
+    "total_edges": 8052,
+    "node_counts": {
+      "class": 42,
+      "function": 409,
+      "method": 102,
+      "module": 66,
+      "symbol": 8710
+    },
+    "edge_counts": {
+      "ATTR_ACCESS": 2445,
+      "CALLS": 3422,
+      "CONTAINS": 553,
+      "IMPORTS": 586,
+      "INHERITS": 13,
+      "RESOLVES_TO": 1033
+    },
+    "module_count": 66,
+    "class_count": 42,
+    "function_count": 409,
+    "method_count": 102,
+    "docstring_coverage": 0.94,
+    "snapshot_count": 3,
+    "coverage_documented": 582,
+    "coverage_total": 619,
+    "critical_issues": 5,
+    "complexity_median": 4,
+    "module_node_counts": {
+      "runpod/build_kg.py": 156,
+      "runpod/handler.py": 279,
+      "runpod/test_local.py": 38,
+      "src/gutenberg_kg/__init__.py": 2,
+      "src/gutenberg_kg/audit.py": 223,
+      "src/gutenberg_kg/authors.py": 134,
+      "src/gutenberg_kg/bookgraph.py": 74,
+      "src/gutenberg_kg/build_corpus.py": 165,
+      "src/gutenberg_kg/build_diaries.py": 127,
+      "src/gutenberg_kg/cli/__init__.py": 1,
+      "src/gutenberg_kg/cli/cmd_audit.py": 9,
+      "src/gutenberg_kg/cli/cmd_authors.py": 6,
+      "src/gutenberg_kg/cli/cmd_build_corpus.py": 34,
+      "src/gutenberg_kg/cli/cmd_build_diaries.py": 13,
+      "src/gutenberg_kg/cli/cmd_catalog_sync.py": 13,
+      "src/gutenberg_kg/cli/cmd_chat.py": 18,
+      "src/gutenberg_kg/cli/cmd_chunk_diaries.py": 11,
+      "src/gutenberg_kg/cli/cmd_download.py": 43,
+      "src/gutenberg_kg/cli/cmd_export_embedder.py": 17,
+      "src/gutenberg_kg/cli/cmd_export_swift.py": 39,
+      "src/gutenberg_kg/cli/cmd_genres.py": 29,
+      "src/gutenberg_kg/cli/cmd_ia.py": 36,
+      "src/gutenberg_kg/cli/cmd_imagine.py": 86,
+      "src/gutenberg_kg/cli/cmd_ingest.py": 23,
+      "src/gutenberg_kg/cli/cmd_init.py": 17,
+      "src/gutenberg_kg/cli/cmd_pov.py": 100,
+      "src/gutenberg_kg/cli/cmd_query.py": 21,
+      "src/gutenberg_kg/cli/cmd_quilt.py": 89,
+      "src/gutenberg_kg/cli/cmd_rebuild.py": 12,
+      "src/gutenberg_kg/cli/cmd_reregister.py": 13,
+      "src/gutenberg_kg/cli/cmd_snapshot.py": 186,
+      "src/gutenberg_kg/cli/cmd_status.py": 74,
+      "src/gutenberg_kg/cli/cmd_viz3d.py": 8,
+      "src/gutenberg_kg/cli/cmd_viz_timeline.py": 22,
+      "src/gutenberg_kg/cli/main.py": 2,
+      "src/gutenberg_kg/cli/options.py": 29,
+      "src/gutenberg_kg/corpus.py": 130,
+      "src/gutenberg_kg/diary/__init__.py": 2,
+      "src/gutenberg_kg/diary/chunk.py": 93,
+      "src/gutenberg_kg/diary/parser.py": 141,
+      "src/gutenberg_kg/diary_meta.py": 4,
+      "src/gutenberg_kg/export_embedder.py": 121,
+      "src/gutenberg_kg/export_swift.py": 716,
+      "src/gutenberg_kg/genres.py": 36,
+      "src/gutenberg_kg/gutenberg.py": 442,
+      "src/gutenberg_kg/headings.py": 112,
+      "src/gutenberg_kg/ia.py": 389,
+      "src/gutenberg_kg/image_gen.py": 110,
+      "src/gutenberg_kg/ingest.py": 554,
+      "src/gutenberg_kg/mcp_server.py": 87,
+      "src/gutenberg_kg/model_setup.py": 16,
+      "src/gutenberg_kg/povscene.py": 110,
+      "src/gutenberg_kg/scene.py": 226,
+      "src/gutenberg_kg/serve/Chat.py": 287,
+      "src/gutenberg_kg/serve/__init__.py": 1,
+      "src/gutenberg_kg/serve/fusion.py": 8,
+      "src/gutenberg_kg/serve/handler.py": 411,
+      "src/gutenberg_kg/serve/image_server.py": 57,
+      "src/gutenberg_kg/serve/pages/1_Browse.py": 85,
+      "src/gutenberg_kg/serve/sdxl_server.py": 126,
+      "src/gutenberg_kg/spine.py": 140,
+      "src/gutenberg_kg/temporal.py": 39,
+      "src/gutenberg_kg/treegeom.py": 340,
+      "src/gutenberg_kg/vector_store.py": 7,
+      "src/gutenberg_kg/viz3d.py": 733,
+      "src/gutenberg_kg/viz_timeline.py": 89
+    }
+  },
+  "hotspots": [
+    {
+      "name": "cls:src/gutenberg_kg/export_swift.py:ExportError",
+      "callers": 10,
+      "callees": 0,
+      "risk_level": "low"
+    },
+    {
+      "name": "fn:src/gutenberg_kg/export_swift.py:_load_numpy",
+      "callers": 6,
+      "callees": 1,
+      "risk_level": "low"
+    },
+    {
+      "name": "m:src/gutenberg_kg/spine.py:Cluster.start",
+      "callers": 5,
+      "callees": 0,
+      "risk_level": "low"
+    },
+    {
+      "name": "fn:src/gutenberg_kg/serve/pages/1_Browse.py:_call_worker",
+      "callers": 4,
+      "callees": 0,
+      "risk_level": "low"
+    },
+    {
+      "name": "fn:src/gutenberg_kg/diary/parser.py:_month_num",
+      "callers": 4,
+      "callees": 0,
+      "risk_level": "low"
+    },
+    {
+      "name": "fn:src/gutenberg_kg/gutenberg.py:fetch_url",
+      "callers": 4,
+      "callees": 0,
+      "risk_level": "low"
+    },
+    {
+      "name": "fn:src/gutenberg_kg/ingest.py:slugify",
+      "callers": 4,
+      "callees": 0,
+      "risk_level": "low"
+    },
+    {
+      "name": "fn:src/gutenberg_kg/ingest.py:fmt_duration",
+      "callers": 4,
+      "callees": 0,
+      "risk_level": "low"
+    },
+    {
+      "name": "m:src/gutenberg_kg/ingest.py:GenreSummary.edges",
+      "callers": 3,
+      "callees": 1,
+      "risk_level": "low"
+    },
+    {
+      "name": "m:src/gutenberg_kg/ingest.py:GenreSummary.nodes",
+      "callers": 3,
+      "callees": 1,
+      "risk_level": "low"
+    }
+  ],
+  "issues": [
+    "[WARN] 2 dead-code candidates found (`viz3d.py:_text_to_markdown`, `export_embedder.py:forward`) -- no callers in code or tests; verify against downstream consumers, then remove or archive",
+    "[INFO] 6 definitions are unused in production code but exercised by tests -- likely public API for downstream packages; not counted against the quality grade",
+    "[WARN] `viz3d.py` has 56 functions/methods/classes -- consider splitting into focused submodules",
+    "[WARN] `export_swift.py` has 49 functions/methods/classes -- consider splitting into focused submodules",
+    "[WARN] `ingest.py` has 41 functions/methods/classes -- consider splitting into focused submodules"
+  ],
+  "vs_previous": null,
+  "vs_baseline": {
+    "nodes": 5461,
+    "edges": 4798,
+    "coverage_delta": 0.18400000000000005,
+    "critical_issues_delta": 2
+  }
+}
