@@ -43,6 +43,7 @@ public struct MacRootView: View {
 public struct PhoneRootView: View {
     @Environment(AppModel.self) private var model
     @State private var showingSettings = false
+    @State private var confirmingDelete = false
 
     public init() {}
 
@@ -59,12 +60,13 @@ public struct PhoneRootView: View {
                             }
                         }
                         ToolbarItem(placement: .cancellationAction) {
-                            Button("Clear", systemImage: "trash") {
-                                model.turns.removeAll()
+                            Button("Delete", systemImage: "trash") {
+                                confirmingDelete = true
                             }
-                            .disabled(model.turns.isEmpty)
+                            .disabled(model.activeConversation == nil && model.turns.isEmpty)
                         }
                     }
+                    .deleteConversationConfirmation($confirmingDelete)
             }
             .tabItem { Label("Chat", systemImage: "text.bubble") }
 
@@ -99,6 +101,7 @@ public struct PhoneRootView: View {
 public struct PadRootView: View {
     @Environment(AppModel.self) private var model
     @State private var showingSettings = false
+    @State private var confirmingDelete = false
 
     public init() {}
 
@@ -123,17 +126,46 @@ public struct PadRootView: View {
                             }
                         }
                         ToolbarItem(placement: .cancellationAction) {
-                            Button("Clear", systemImage: "trash") {
-                                model.turns.removeAll()
+                            Button("Delete", systemImage: "trash") {
+                                confirmingDelete = true
                             }
-                            .disabled(model.turns.isEmpty)
+                            .disabled(model.activeConversation == nil && model.turns.isEmpty)
                         }
                     }
+                    .deleteConversationConfirmation($confirmingDelete)
             }
             .tabItem { Label("Chat", systemImage: "text.bubble") }
 
             BrowseView()
                 .tabItem { Label("Browse", systemImage: "books.vertical") }
+        }
+    }
+}
+
+extension View {
+    /// The one confirmation every "delete this chat" control shows.
+    ///
+    /// Deleting is now irreversible in a way clearing the screen was not --
+    /// it removes a file, not a buffer -- so all three call sites ask first,
+    /// in the same words.
+    @ViewBuilder
+    fileprivate func deleteConversationConfirmation(_ presented: Binding<Bool>) -> some View {
+        modifier(DeleteConversationConfirmation(presented: presented))
+    }
+}
+
+private struct DeleteConversationConfirmation: ViewModifier {
+    @Environment(AppModel.self) private var model
+    @Binding var presented: Bool
+
+    func body(content: Content) -> some View {
+        content.confirmationDialog(
+            "Delete this conversation?", isPresented: $presented, titleVisibility: .visible
+        ) {
+            Button("Delete", role: .destructive) { model.deleteActiveConversation() }
+            Button("Cancel", role: .cancel) {}
+        } message: {
+            Text("This removes the questions, answers, and any illustrations. It cannot be undone.")
         }
     }
 }

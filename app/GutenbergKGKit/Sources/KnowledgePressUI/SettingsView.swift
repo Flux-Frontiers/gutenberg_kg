@@ -10,6 +10,7 @@ import SwiftUI
 
 struct SettingsView: View {
     @Environment(AppModel.self) private var model
+    @State private var confirmingDelete = false
     #if !os(macOS)
         @State private var showingAbout = false
     #endif
@@ -57,10 +58,10 @@ struct SettingsView: View {
             illustrationSection
 
             Section {
-                Button("🗑️ Clear chat", role: .destructive) {
-                    model.turns.removeAll()
+                Button("🗑️ Delete conversation", role: .destructive) {
+                    confirmingDelete = true
                 }
-                .disabled(model.turns.isEmpty)
+                .disabled(model.activeConversation == nil && model.turns.isEmpty)
             }
 
             corpusSection
@@ -75,6 +76,14 @@ struct SettingsView: View {
                     Button("ℹ️ About") { showingAbout = true }
                 }
             #endif
+        }
+        .confirmationDialog(
+            "Delete this conversation?", isPresented: $confirmingDelete, titleVisibility: .visible
+        ) {
+            Button("Delete", role: .destructive) { model.deleteActiveConversation() }
+            Button("Cancel", role: .cancel) {}
+        } message: {
+            Text("This removes the questions, answers, and any illustrations. It cannot be undone.")
         }
         #if os(macOS)
             .listStyle(.sidebar)

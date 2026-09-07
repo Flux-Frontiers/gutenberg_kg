@@ -19,7 +19,33 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   what made a render time out on the phone. Nothing in the interface said
   which size was in use, so nothing looked wrong. The default is now Preview,
   matching chat.py's own `index=0`.
-
+- **Chats that survive a relaunch** — phase 1 of
+  `analysis/CONVERSATIONS_SIDEBAR_PLAN.md`. The app used to forget every
+  conversation the moment it was closed. A conversation is now the existing
+  `ChatTurn` values plus a title and timestamps, written as one directory per
+  chat under `Application Support/Conversations/` -- plain JSON, readable in
+  an editor and pullable with `devicectl device copy from`, the same property
+  that let every on-device question in this project be answered so far. The
+  turn shape is unchanged for the view code. Illustrations go beside the JSON
+  rather than inside it: one measured `imagine` result was 4.2 MB of base64,
+  which would make a conversation file unreadable and slow to list. Relaunch
+  reopens the most recent chat with its passages, stats line, and any
+  illustration; the sidebar that reaches the older ones is phase 2. The three
+  "Clear chat" buttons became "Delete conversation" behind a confirmation,
+  since they now remove a file rather than clear a screen. A stopped answer
+  records `SynthesisFailure.cancelled` ("Stopped.") rather than nothing at
+  all -- `isStreaming` is derived from the *absence* of metrics and failure,
+  so an unmarked turn would still show a blinking caret when reopened next
+  week. Conversations are backed up; the corpus stays excluded, being
+  regenerable. Found while building this, both by running the code rather
+  than reading it: a passages-only turn was never saved at all, because with
+  no synthesis backend the orchestrator finishes without ever emitting the
+  `.finished` event the design hung persistence on; and `JSONEncoder`'s stock
+  `.iso8601` writes whole seconds, so two chats started in the same second
+  read back with identical timestamps and listed in whatever order the
+  directory enumerated -- caught by a test that failed roughly one run in
+  three, and fixed with fractional seconds plus a total ordering rather than
+  by loosening the test.
 - **`gutenkg bundle validate`/`resolve`/`export` and `gutenkg export-swift
   --book`/`--genre`/`--spec`** — phases 1 and 2 of selective bundle export
   (`analysis/SELECTIVE_BUNDLE_EXPORT_PLAN.md`). A small TOML spec names a
