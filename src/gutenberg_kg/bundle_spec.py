@@ -6,7 +6,10 @@ turns those human-facing names into ``<genre>/<book>`` catalog keys that
 ``build-corpus`` and ``export-swift`` can filter against.
 
 Stdlib only (``tomllib``, ``dataclasses``, ``pathlib``) plus the existing
-``authors.parse_reference`` helper -- no new runtime dependency.
+``authors.parse_reference`` and ``export_swift._diary_slug`` helpers -- no
+new runtime dependency; both are stdlib-only themselves; ``export_swift``
+only reaches for numpy/sqlite-vec lazily, inside the functions that need
+them, so importing it here does not pull those in at module load.
 """
 
 from __future__ import annotations
@@ -16,9 +19,13 @@ from dataclasses import dataclass, field
 from pathlib import Path
 
 from gutenberg_kg.authors import parse_reference
+from gutenberg_kg.export_swift import _diary_slug
 from gutenberg_kg.gutenberg import CORPUS_ROOT
 
 CORPUS_ROOT_PATH = Path(CORPUS_ROOT)
+#: ``corpus/diaries/`` holds one book-shaped directory per diary, the same
+#: ``reference.md``-per-subdirectory layout as every genre.
+DIARIES_DIR_NAME = "diaries"
 
 
 class BundleSpecError(Exception):
@@ -70,7 +77,10 @@ class ResolvedSelection:
 
     :param catalog_keys: Every selected book, as ``"<genre>/<book>"``.
     :param genres_implied: The genres actually touched by ``catalog_keys``.
-    :param diary_dirs: Diary directory names to bundle; empty means none.
+    :param diary_dirs: Diary slugs to bundle -- every diary when the spec set
+        ``diaries = true``, the named ones for an explicit list, empty for
+        ``false``. Always a concrete list by the time resolution finishes;
+        nothing downstream needs to re-interpret the spec's tri-state.
     :param missing: Raw ``books:`` entries that did not resolve to exactly
         one book. Non-empty means resolution failed.
     """
@@ -212,6 +222,28 @@ def _resolve_book(selector: str, corpus_root: Path) -> str | list[str]:
     return matches
 
 
+def _all_diary_slugs(corpus_root: Path) -> tuple[str, ...]:
+    """Every diary in the corpus, as the slugs ``export_swift`` names them by.
+
+    ``diaries = true`` means "all of them", which only means something once
+    "them" is enumerated -- ``corpus/diaries/`` is a book-shaped directory
+    like any genre's, one ``reference.md``-bearing subdirectory per diary.
+
+    :param corpus_root: The corpus root to scan.
+    :returns: Sorted diary slugs; empty if there is no ``diaries/`` directory.
+    """
+    diaries_dir = corpus_root / DIARIES_DIR_NAME
+    if not diaries_dir.is_dir():
+        return ()
+    return tuple(
+        sorted(
+            _diary_slug(entry.name)
+            for entry in diaries_dir.iterdir()
+            if entry.is_dir() and (entry / "reference.md").is_file()
+        )
+    )
+
+
 def resolve_selection(spec: BundleSpec, corpus_root: Path = CORPUS_ROOT_PATH) -> ResolvedSelection:
     """Resolve a spec's ``genres``/``books``/``diaries`` against the corpus.
 
@@ -248,7 +280,12 @@ def resolve_selection(spec: BundleSpec, corpus_root: Path = CORPUS_ROOT_PATH) ->
             missing.append(selector)
 
     genres_implied = frozenset(key.split("/", 1)[0] for key in catalog_keys)
-    diary_dirs = spec.diaries if isinstance(spec.diaries, tuple) else ()
+    if isinstance(spec.diaries, tuple):
+        diary_dirs = spec.diaries
+    elif spec.diaries:
+        diary_dirs = _all_diary_slugs(corpus_root)
+    else:
+        diary_dirs = ()
 
     return ResolvedSelection(
         catalog_keys=frozenset(catalog_keys),

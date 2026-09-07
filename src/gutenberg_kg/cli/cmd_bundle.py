@@ -18,7 +18,9 @@ from gutenberg_kg.bundle_spec import (
     resolve_selection,
     validate_spec,
 )
+from gutenberg_kg.cli.cmd_export_swift import _human
 from gutenberg_kg.cli.main import cli
+from gutenberg_kg.export_swift import ExportError, ExportOptions, export_swift
 
 
 @cli.group("bundle")
@@ -113,3 +115,84 @@ def bundle_resolve(spec_path: Path, print_bundle_name: bool, print_image_tag: bo
         for selector in resolved.missing:
             click.echo(f"    - {selector!r}")
         raise SystemExit(1)
+
+
+@bundle_group.command("export")
+@click.argument("spec_path", metavar="SPEC", type=click.Path(exists=True, path_type=Path))
+@click.option(
+    "--out",
+    type=click.Path(path_type=Path),
+    default=None,
+    help="Output directory.  [default: bundles/<name>/swift]",
+)
+@click.option(
+    "--verify",
+    is_flag=True,
+    help="Measure the packs' recall against exact fp32 ground truth.",
+)
+@click.option("--force", is_flag=True, help="Overwrite a non-empty output directory.")
+def bundle_export(spec_path: Path, out: Path | None, verify: bool, force: bool):
+    """Export a spec's Swift packs, filtered at export from its source bundle.
+    \f
+
+    Only ``materialize = "none"`` is supported here — phase 2 filters an
+    already-built bundle's packs, it does not build one. A spec with
+    ``materialize = "rebuild"`` needs phase 3's ``build-corpus`` support
+    first; run ``export-swift --spec`` once that has produced the bundle.
+
+    :param spec_path: Path to the spec's TOML file.
+    :param out: Output directory; defaults to ``bundles/<name>/swift``.
+    :param verify: Compare the packs against exact fp32 ground truth.
+    :param force: Overwrite a non-empty output directory.
+    :raises click.ClickException: If the spec is invalid, requires a rebuild,
+        or the export itself fails.
+    """
+    try:
+        spec = load_spec(spec_path)
+    except BundleSpecError as exc:
+        click.echo(f"invalid spec: {exc}", err=True)
+        raise SystemExit(1) from exc
+
+    resolved = resolve_selection(spec)
+    problems = validate_spec(spec, resolved)
+    if problems:
+        click.echo(f"{spec.name}: {len(problems)} problem(s):")
+        for problem in problems:
+            click.echo(f"  - {problem}")
+        raise SystemExit(1)
+
+    if spec.materialize != "none":
+        raise click.ClickException(
+            f"{spec_path} has materialize = {spec.materialize!r}; `bundle export` "
+            'currently supports materialize = "none" only. Set materialize = '
+            '"none" and source_bundle in the spec, or wait for phase 3\'s '
+            "build-corpus support to rebuild a filtered bundle first."
+        )
+    # validate_spec already enforces this for materialize = "none" (the branch
+    # above just confirmed we are in), so this narrows the type rather than
+    # handling a real gap -- the message is defensive, not an expected path.
+    if spec.source_bundle is None:
+        raise click.ClickException(f"{spec_path}: source_bundle is required")
+
+    options = ExportOptions(
+        bundle=spec.source_bundle,
+        out=out or (Path("bundles") / spec.name / "swift"),
+        catalog_keys=resolved.catalog_keys,
+        diary_dirs=resolved.diary_dirs,
+        golden_queries=spec.golden_queries or None,
+        product_name=spec.name,
+        product_version=spec.version,
+        verify=verify,
+        force=force,
+    )
+
+    try:
+        report = export_swift(options, progress=click.echo)
+    except ExportError as exc:
+        raise click.ClickException(str(exc)) from exc
+
+    click.echo("")
+    for pack in report.packs:
+        click.echo(f"  {pack.name:<16} {_human(pack.bytes):>12}   {pack.passages:,} rows")
+    click.echo(f"  {'total':<16} {_human(report.total_bytes):>12}")
+    click.echo(f"\nWrote {report.out} in {report.elapsed_s:.1f}s")

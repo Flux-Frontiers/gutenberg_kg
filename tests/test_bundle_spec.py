@@ -264,10 +264,37 @@ def test_resolve_diary_dirs_pass_through_from_spec_list():
     assert resolved.diary_dirs == ("pepys", "evelyn")
 
 
-def test_resolve_diary_dirs_empty_when_diaries_is_bool():
+def test_resolve_diary_dirs_empty_when_diaries_is_false():
+    spec = BundleSpec(name="d", version="0.1.0", diaries=False)
+    resolved = resolve_selection(spec, corpus_root=Path("/nonexistent"))
+    assert resolved.diary_dirs == ()
+
+
+def test_resolve_diary_dirs_true_with_no_diaries_directory_is_empty():
+    """``diaries = true`` means "all of them" -- with none present, that is none."""
     spec = BundleSpec(name="d", version="0.1.0", diaries=True)
     resolved = resolve_selection(spec, corpus_root=Path("/nonexistent"))
     assert resolved.diary_dirs == ()
+
+
+def test_resolve_diary_dirs_true_enumerates_every_diary(tmp_path: Path):
+    root = tmp_path / "corpus"
+    _make_book(root, "diaries", "The Diary of Samuel Pepys")
+    _make_book(root, "diaries", "The Diary of John Evelyn")
+    _make_book(root, "philosophy", "The Republic")  # not a diary; must not appear
+    spec = BundleSpec(name="d", version="0.1.0", diaries=True)
+    resolved = resolve_selection(spec, corpus_root=root)
+    assert set(resolved.diary_dirs) == {"pepys", "evelyn"}
+
+
+def test_resolve_diary_dirs_true_and_false_are_distinguishable(tmp_path: Path):
+    """The bug this guards: both used to resolve to the same empty tuple."""
+    root = tmp_path / "corpus"
+    _make_book(root, "diaries", "The Diary of Samuel Pepys")
+    true_spec = BundleSpec(name="d", version="0.1.0", diaries=True)
+    false_spec = BundleSpec(name="d", version="0.1.0", diaries=False)
+    assert resolve_selection(true_spec, corpus_root=root).diary_dirs != ()
+    assert resolve_selection(false_spec, corpus_root=root).diary_dirs == ()
 
 
 # --- ResolvedSelection.ok -------------------------------------------------

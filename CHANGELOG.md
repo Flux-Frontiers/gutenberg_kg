@@ -10,17 +10,31 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added
 
-- **`gutenkg bundle validate`/`resolve`** — phase 1 of selective bundle
-  export (`analysis/SELECTIVE_BUNDLE_EXPORT_PLAN.md`): a small TOML spec
-  names a subset of the corpus by genre, by book (a catalog key, a
-  Gutenberg ebook_id, or a bare directory name unique across genres), or
-  both, plus a diary policy and the golden queries the exported pack must
-  answer correctly. `resolve` turns that into `<genre>/<book>` catalog
-  keys; `validate` checks the spec is well-formed and every selector
+- **`gutenkg bundle validate`/`resolve`/`export` and `gutenkg export-swift
+  --book`/`--genre`/`--spec`** — phases 1 and 2 of selective bundle export
+  (`analysis/SELECTIVE_BUNDLE_EXPORT_PLAN.md`). A small TOML spec names a
+  subset of the corpus by genre, by book (a catalog key, a Gutenberg
+  ebook_id, or a bare directory name unique across genres), or both, plus a
+  diary policy and the golden queries the exported pack must answer
+  correctly. `bundle resolve` turns that into `<genre>/<book>` catalog
+  keys; `bundle validate` checks the spec is well-formed and every selector
   resolved. No fuzzy title matching by design — an ambiguous or misspelled
-  selector fails the command rather than picking the wrong book. Nothing
-  yet consumes a resolved selection; `build-corpus` and `export-swift`
-  stay unfiltered until phases 2 and 3.
+  selector fails the command rather than picking the wrong book.
+  `export-swift` now filters at every stage a subset touches: the catalog,
+  the passages, and — required, not optional — the vector scan itself,
+  since without it a three-book export still streamed the full ~731K-row
+  store. `bundle export SPEC` and `export-swift --spec` run the whole thing
+  from a spec in one command; `--book`/`--genre` do the same without one,
+  resolved against the bundle's own `catalog.json` rather than the source
+  corpus tree, so a downloaded bundle with no `corpus/` beside it still
+  works. `--force` now wipes the destination first, so a spec whose book
+  set shrank cannot leave the previous run's orphaned packs behind.
+  `build-corpus` stays unfiltered until phase 3.
+- **Fixed while building phase 2:** `diaries = true` in a bundle spec
+  resolved to the same empty diary list as `diaries = false` — `diary_dirs`
+  is a tuple either way, and Phase 1 only special-cased the explicit-list
+  form. It now enumerates every diary under `corpus/diaries/`, the same
+  `reference.md`-per-subdirectory layout as any genre.
 - **A launch splash** — logo, name, and tagline, fading in and holding for
   2.5s before the real UI takes over. Shared between both shells via a new
   `SplashOverlay`, which loads the 1024pt app icon from a copy bundled into
