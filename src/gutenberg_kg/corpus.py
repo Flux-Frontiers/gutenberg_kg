@@ -23,6 +23,12 @@ from kg_utils.snapshots import SnapshotManager as _BaseSnapshotManager
 
 from gutenberg_kg import genres as _gr
 
+# What a snapshot from this repo measures, recorded separately from `version`,
+# which names the measuring tool (the installed gutenberg-kg). kgmodule-utils
+# 0.19.0 added `subject` alongside the key-scheme change; without it every
+# snapshot this repo writes is anonymous in a fleet-wide listing.
+SNAPSHOT_SUBJECT = "corpus:gutenberg"
+
 # Slugs whose display labels can't be derived by simple hyphen→space+title-case.
 _LABEL_OVERRIDES: dict[str, str] = {
     "ancient-classical": "Ancient & Classical",
@@ -207,7 +213,7 @@ def snapshot_list(snapshots_dir: Path) -> list[dict[str, Any]]:
     """Load and return all snapshots, oldest first.
 
     Reads what :class:`GutenbergSnapshotManager` writes: a ``manifest.json``
-    listing one ``<tree-hash>.json`` per snapshot.  Each record carries ``key``,
+    listing one ``<key>.json`` per snapshot.  Each record carries ``key``,
     ``branch``, ``timestamp``, ``version`` and a ``metrics`` dict.
 
     This used to glob ``snapshot-*.json`` — the filename the retired
@@ -243,7 +249,7 @@ def snapshot_list(snapshots_dir: Path) -> list[dict[str, Any]]:
                 pass
 
     # Oldest first, by the field the caller plots against rather than by
-    # filename — the files are named for a tree hash, which does not sort.
+    # filename — older files are named for a tree hash, which does not sort.
     return sorted(records, key=lambda s: s.get("timestamp", ""))
 
 
@@ -255,9 +261,15 @@ def snapshot_list(snapshots_dir: Path) -> list[dict[str, Any]]:
 class GutenbergSnapshotManager(_BaseSnapshotManager):
     """Corpus-aware snapshot manager backed by ``kg_utils.snapshots.SnapshotManager``.
 
-    Snapshots are keyed by git tree hash, stored as ``<key>.json`` alongside a
-    ``manifest.json`` index in ``snapshots_dir``.  Use :meth:`capture` to build
-    a snapshot from the live corpus, then :meth:`save_snapshot` to persist it.
+    Snapshots are stored as ``<key>.json`` alongside a ``manifest.json`` index
+    in ``snapshots_dir``.  Use :meth:`capture` to build a snapshot from the live
+    corpus, then :meth:`save_snapshot` to persist it.
+
+    Since kgmodule-utils 0.19.0 the key is a UTC timestamp, not the git tree
+    hash: the hash was read before ``git add`` staged the snapshot, so it named
+    a tree that was never committed.  A timestamp is the right key for a corpus
+    anyway — the corpus changes when books are ingested, not when the repo is
+    tagged.  Older snapshots on disk keep their hash keys.
 
     :param snapshots_dir: Directory where snapshot JSON files are stored.
     :param registry_path: KGRAG registry SQLite path.
@@ -293,16 +305,26 @@ class GutenbergSnapshotManager(_BaseSnapshotManager):
         tree_hash: str = "",
         hotspots: list[dict[str, Any]] | None = None,
         issues: list[str] | None = None,
+        key: str = "",
+        subject: str = "",
         **extra_metrics: Any,
     ) -> Any:
         """Build a corpus snapshot from the live registry.
 
+        ``key`` and ``subject`` are named rather than left to ``extra_metrics``:
+        the base takes ``**extra_metrics`` too, so an unnamed one would be
+        recorded as a metric instead of reaching the fields it belongs in.
+
         :param version: Version string; auto-detected from package if None.
         :param branch: Git branch name; auto-detected if None.
         :param graph_stats_dict: Ignored; corpus metrics are computed from the registry.
-        :param tree_hash: Git tree hash; auto-detected if not provided.
+        :param tree_hash: Git tree hash; recorded as provenance, no longer the key.
         :param hotspots: Unused; accepted for LSP compatibility.
         :param issues: Unused; accepted for LSP compatibility.
+        :param key: Snapshot identifier; a UTC timestamp when omitted, which is
+            what a corpus wants — pass a release tag only when snapshotting the
+            package rather than the books.
+        :param subject: What was measured; defaults to :data:`SNAPSHOT_SUBJECT`.
         :param extra_metrics: Passed through to the base ``capture`` call.
         :return: New ``Snapshot`` instance (not yet persisted).
         """
@@ -319,6 +341,8 @@ class GutenbergSnapshotManager(_BaseSnapshotManager):
             branch=branch,
             graph_stats_dict=metrics,
             tree_hash=tree_hash,
+            key=key,
+            subject=subject or SNAPSHOT_SUBJECT,
             **extra_metrics,
         )
 
