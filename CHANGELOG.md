@@ -74,6 +74,26 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Fixed
 
+- **`test_viz3d_cast.py` silently stopped testing what it claimed to.**
+  `cast_quilt` moved from `quiltwright.lfd` to `quiltwright.bridge` in
+  0.11.0 (`lfd` now only re-exports the name), so patching
+  `quiltwright.lfd.cast_quilt` no longer intercepted the call
+  `save_and_cast_quilt` actually makes — its own module global, unaffected
+  by mutating a re-exported copy elsewhere. The mock silently no-op'd
+  rather than erroring, so the failure-path test exercised whatever real
+  Bridge process happened to be running on the machine instead of a
+  simulated failure, passing or failing depending on local state that has
+  nothing to do with the code under test. The failure-path test no longer
+  mocks at all: it points `cast_quilt` at `http://localhost:1`, a port
+  nothing can ever bind without root, so the real `urllib` failure
+  `save_and_cast_quilt` is written to catch is the one under test —
+  deterministic in CI and on a dev machine with real Bridge running alike,
+  and immune to the next internal reorganisation. The success-path test
+  still mocks, now for a confirmed reason: probing real Bridge on this
+  machine (`quiltwright cast --check`) found it reachable but registering
+  zero output devices, and the orchestration call *still returns success*
+  in that state — there is no reliable real-hardware path to a genuine
+  success signal, so simulating one is the only option, not a shortcut.
 - **The Pepys corpus was missing ~500 diary entries and misdated February
   1661.** Two regexes in `diary/parser.py` were at fault. `_CONT_DATE_RE`
   required the period immediately after the ordinal, then an optional

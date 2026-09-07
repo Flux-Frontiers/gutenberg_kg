@@ -99,21 +99,37 @@ class TestTheContractTheViewerReliesOn:
     """
 
     def test_returns_a_path_and_an_error_slot(self, tmp_path, spec, image):
+        # `cast_quilt` moved to `quiltwright.bridge` in 0.11.0; `quiltwright.lfd`
+        # only re-exports the name, so patching it there stopped intercepting
+        # the call `save_and_cast_quilt` actually makes (its own module
+        # global) — the mock silently no-op'd rather than erroring, and the
+        # test then exercised whatever Bridge process happened to be running
+        # on the machine instead of the mock. Patch where the lookup happens.
         from quiltwright import save_and_cast_quilt
 
-        with patch("quiltwright.lfd.cast_quilt"):
+        with patch("quiltwright.bridge.cast_quilt"):
             out, error = save_and_cast_quilt(image, tmp_path / "q", spec, cast=True)
         assert isinstance(out, Path) and error is None
 
     def test_a_failed_cast_is_returned_not_raised(self, tmp_path, spec, image):
         # No panel connected is the normal case, not an error worth losing a
         # render over — the viewer reports it and keeps the file.
+        #
+        # A real unreachable port instead of a mocked `cast_quilt`: this is
+        # the failure path the sibling test above just got bitten by (a
+        # patch target that quietly stops matching after an internal
+        # refactor). Port 1 needs root to bind, so nothing is ever listening
+        # there — deterministic in CI and on a dev machine with real Looking
+        # Glass Bridge running alike — and the test exercises the actual
+        # urllib failure `save_and_cast_quilt` is written to catch, not a
+        # stand-in for it.
         from quiltwright import save_and_cast_quilt
 
-        with patch("quiltwright.lfd.cast_quilt", side_effect=RuntimeError("no bridge")):
-            out, error = save_and_cast_quilt(image, tmp_path / "q", spec, cast=True)
+        out, error = save_and_cast_quilt(
+            image, tmp_path / "q", spec, cast=True, bridge_url="http://localhost:1", timeout=2.0
+        )
         assert out.exists()
-        assert error is not None and "no bridge" in error
+        assert error is not None and "Connection refused" in error
 
 
 class TestCastScaling:
