@@ -88,6 +88,29 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   112 of 113 months rather than a handful. Evelyn and Boswell are unaffected —
   the pattern is Pepys-only, and `_DAY_FIRST_RE` / `_WEEKDAY_RE` escape
   correctly because their brace-bearing fragments are themselves f-strings.
+- **Evelyn discarded the later half of every Old Style dual year.**
+  `_DAY_FIRST_RE` matched the second half with `(?:-\d{2,4})?` and threw it
+  away, keeping the first — but dual years are written only for 1 January to
+  24 March, precisely because Old and New Style disagree there, so the later
+  half is always the intended year. `3d January, 1665-66.` was stored as 1665,
+  and the diary appeared to jump back a year every January. The width was wrong
+  too: `17th January, 1696-7.` matched no dual year at all and leaked a literal
+  `-7.` into the entry text. Both parsers now share a `_resolve_dual_year()`
+  helper that expands any width against the first year. Non-monotonic
+  transitions fall from 14 to 1 in Volume 1 and from 36 to 2 in Volume 2; the
+  remainder are ordering quirks in the source itself.
+- **Every diary's final entry absorbed the book's back matter.** Parsing ran to
+  EOF with no end-of-diary sentinel, so the editor's afterword, transcriber's
+  notes and appendices were accumulated into the last entry: Pepys' 1669-05-31
+  ran to 13,330 words — 48x the median, 1,347 lines — and carried the editor's
+  closing essay as though Pepys had written it on his final day. Parsing now
+  stops at an explicit end marker (`END OF THE DIARY.`, `THE END`,
+  `Transcriber's Note`), guarded behind `in_diary` so Evelyn Volume 2's
+  front-matter transcriber's note cannot end the diary before it begins. The
+  sentinel deliberately does **not** treat any markdown heading as the end:
+  Boswell sets `### ODA` and `### MEDITATION ON A PUDDING` mid-tour, and Evelyn
+  Volume 1 sets Latin inscriptions the same way, so that rule would truncate
+  both books. Final entries drop to 1.5x, 1.1x and 0.4x the median.
 - **`make chunk-diaries` now passes `--force`.** It previously skipped any diary
   with a non-empty `.diary/`, so stage ① (parser → `.diary_source.psv`) never
   re-ran and a parser fix could not reach the data — `build-diaries` would

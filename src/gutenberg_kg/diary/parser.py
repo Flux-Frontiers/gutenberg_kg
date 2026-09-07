@@ -68,7 +68,7 @@ _MONTH_NAMES = (
 # Pepys: ALL-CAPS section header "JANUARY 1659-1660" or "APRIL 1660"
 # The second year may be abbreviated: Pepys has one "FEBRUARY 1660-61" among
 # 112 four-digit headers.  Accept both widths.
-_SECTION_RE = re.compile(r"^([A-Z]+)\s+(\d{4})(?:-(\d{4}|\d{2}))?$")
+_SECTION_RE = re.compile(r"^([A-Z]+)\s+(\d{4})(?:-(\d{1,4}))?$")
 
 # Pepys: full-month entry "January 1st." / "April 1st, 1661."
 # NB: only the first fragment is an f-string, so the quantifiers below take
@@ -106,7 +106,7 @@ _CONT_DATE_RE = re.compile(
 # Note: Evelyn uses "3d" / "22d" for rd — included in suffix alternation.
 _DAY_FIRST_RE = re.compile(
     rf"^(\d{{1,2}})(?:st|nd|rd|th|d)\.?\s+({_MONTH_NAMES})"
-    r"[,.]?\s+(\d{4})(?:-\d{2,4})?[.,]?\s*(.*)",
+    r"[,.]?\s+(\d{4})(?:-(\d{1,4}))?[.,]?\s*(.*)",
     re.DOTALL | re.IGNORECASE,
 )
 
@@ -116,6 +116,17 @@ _WEEKDAY_RE = re.compile(
     rf"(\d{{1,2}})(?:st|nd|rd|th|d)\.?\s+({_MONTH_NAMES})"
     r"[.,]?\s*(.*)",
     re.DOTALL | re.IGNORECASE,
+)
+
+# Shared: the book's back matter begins here — everything after it is the
+# editor's, not the diarist's. Matched only once in_diary is set, so Evelyn
+# Volume 2's front-matter "Transcriber's note:" cannot end the diary before it
+# starts. Deliberately NOT "any markdown heading": Boswell sets "### ODA" and
+# "### MEDITATION ON A PUDDING" mid-tour, and Evelyn Volume 1 sets Latin
+# inscriptions the same way, so that rule would truncate both books.
+_END_OF_DIARY_RE = re.compile(
+    r"^(?:#{1,6}\s*)?(?:END OF THE DIARY\b|THE END\s*$|Transcriber['’]s Note)",
+    re.IGNORECASE,
 )
 
 # Shared: strip editorial footnotes in [brackets]
@@ -154,6 +165,25 @@ def _clean(text: str) -> str:
 
 def _month_num(name: str) -> int | None:
     return _MONTH_MAP.get(name.lower().rstrip("."))
+
+
+def _resolve_dual_year(first: str, second: str | None) -> int:
+    """Resolve an Old Style dual year to the year the entry belongs to.
+
+    Dual years ("1659-1660", "1665-66") are written only for dates between
+    1 January and 24 March, where Old and New Style disagree — so the later half
+    is always the intended year. A two-digit second half is expanded against the
+    first's century; ``int("66")`` alone would yield the year 66.
+
+    :param first: The four-digit first year.
+    :param second: The second half, two or four digits, or ``None`` if not dual.
+    :return: The resolved year.
+    """
+    if not second:
+        return int(first)
+    # Expand against however much of the first year is needed to reach four
+    # digits: "1665-66" -> 1666, "1696-7" -> 1697, "1659-1660" -> 1660.
+    return int(first[: 4 - len(second)] + second)
 
 
 # ---------------------------------------------------------------------------
@@ -208,6 +238,11 @@ class BaseDiaryParser(ABC):
                 bracket_depth = 0
             depth_at_start = bracket_depth
             bracket_depth = max(0, bracket_depth + line.count("[") - line.count("]"))
+
+            # Back matter — stop before the editor's afterword, transcriber's
+            # notes and appendices are accumulated into the final entry.
+            if depth_at_start == 0 and in_diary and _END_OF_DIARY_RE.match(line):
+                break
 
             # Section header (e.g. JANUARY 1660)
             if depth_at_start == 0:
@@ -281,14 +316,7 @@ class PepysParser(BaseDiaryParser):
         month = _month_num(m.group(1))
         if not month:
             return None
-        first, second = m.group(2), m.group(3)
-        if not second:
-            return month, int(first)
-        # Old-style dual year ("1659-1660", "1660-61"): the entries belong to the
-        # later year.  Expand a two-digit second year against the first's century
-        # -- int("61") alone would yield year 61.
-        year = int(second) if len(second) == 4 else int(first[:2] + second)
-        return month, year
+        return month, _resolve_dual_year(m.group(2), m.group(3))
 
     def _match_date(
         self, line: str, current_month: int, current_year: int
@@ -332,7 +360,8 @@ class EvelynParser(BaseDiaryParser):
         month = _month_num(m.group(2))
         if not month:
             return None
-        return int(m.group(1)), month, int(m.group(3)), m.group(4) or ""
+        year = _resolve_dual_year(m.group(3), m.group(4))
+        return int(m.group(1)), month, year, m.group(5) or ""
 
 
 class BoswellParser(BaseDiaryParser):

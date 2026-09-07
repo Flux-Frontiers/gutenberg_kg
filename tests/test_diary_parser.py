@@ -193,6 +193,102 @@ def test_evelyn_day_first_inline_year(tmp_path):
     assert entries[1].timestamp == datetime(1660, 2, 3)
 
 
+@pytest.mark.parametrize(
+    "marker,expected_year",
+    [
+        ("29th December, 1659.", 1659),
+        ("3d January, 1665-66.", 1666),
+        ("17th January, 1696-7.", 1697),
+        ("6th February, 1669-70.", 1670),
+        ("23d January, 1677-78.", 1678),
+    ],
+)
+def test_evelyn_dual_year_resolves_to_later_year(tmp_path, marker, expected_year):
+    r"""Old Style dual years belong to the LATER year, at any width of second half.
+
+    Regression: ``_DAY_FIRST_RE`` matched the second half with ``(?:-\d{2,4})?``
+    and discarded it, so ``3d January, 1665-66.`` was stored as 1665 — the diary
+    appeared to jump back a year every January. The two-digit form also missed
+    ``1696-7`` entirely, leaking a literal ``-7.`` into the entry body.
+    """
+    md = _write(tmp_path, f"{marker} A sufficiently long entry body follows here.\n")
+    entries = list(EvelynParser().parse(md))
+    assert len(entries) == 1
+    assert entries[0].timestamp.year == expected_year
+    assert not entries[0].content.lstrip().startswith("-")
+
+
+@pytest.mark.parametrize(
+    "first,second,expected",
+    [("1660", None, 1660), ("1659", "1660", 1660), ("1660", "61", 1661), ("1696", "7", 1697)],
+)
+def test_resolve_dual_year(first, second, expected):
+    """The shared Old Style helper, used by both the Pepys and Evelyn parsers."""
+    from gutenberg_kg.diary.parser import _resolve_dual_year
+
+    assert _resolve_dual_year(first, second) == expected
+
+
+# ---------------------------------------------------------------------------
+# End-of-diary sentinel
+# ---------------------------------------------------------------------------
+
+
+@pytest.mark.parametrize(
+    "sentinel", ["END OF THE DIARY.", "### THE END", "Transcriber's Note", "Transcriber's note:"]
+)
+def test_back_matter_is_not_appended_to_the_last_entry(tmp_path, sentinel):
+    """Parsing stops at the back matter rather than accumulating it to EOF.
+
+    Regression: with no sentinel, every book's final entry swallowed the editor's
+    afterword and appendices — Pepys' 1669-05-31 ran to 13,330 words, 48x the
+    median, and included the editor's closing essay as if Pepys had written it.
+    """
+    md = _write(
+        tmp_path,
+        "MAY 1669\n\n"
+        "May 31st. Up very betimes, and so continued all the morning with W. Hewer.\n\n"
+        f"{sentinel}\n\n"
+        "In the present volume the Diary is completed, and we here take leave of a\n"
+        "writer who has done so much to interest successive generations of readers.\n",
+    )
+    entries = list(PepysParser().parse(md))
+    assert len(entries) == 1
+    assert "W. Hewer" in entries[0].content
+    assert "take leave" not in entries[0].content
+
+
+def test_sentinel_does_not_fire_before_the_diary_starts(tmp_path):
+    """Evelyn Volume 2 opens with a front-matter "Transcriber's note:" at line 21."""
+    md = _write(
+        tmp_path,
+        "Transcriber's note:\n\n"
+        "Footnotes have been moved below the paragraph to which they relate.\n\n"
+        "21st October, 1632. My eldest sister was married to Edward Darcy, Esq.\n",
+    )
+    entries = list(EvelynParser().parse(md))
+    assert len(entries) == 1
+    assert entries[0].timestamp == datetime(1632, 10, 21)
+
+
+def test_mid_diary_heading_does_not_end_the_diary(tmp_path):
+    """Boswell sets "### ODA" and "### MEDITATION ON A PUDDING" mid-tour.
+
+    The sentinel must key on explicit end markers, not on markdown headings —
+    stopping at any heading would truncate Boswell to a third of its length.
+    """
+    md = _write(
+        tmp_path,
+        "Sunday, 15th August. Mr Scott came to breakfast with Dr Johnson today.\n\n"
+        "### ODA\n\n"
+        "Some Latin verses that Dr Johnson composed upon the island.\n\n"
+        "Monday, 16th August. We set out early upon our tour of the Hebrides.\n",
+    )
+    entries = list(BoswellParser(anchor_year=1773).parse(md))
+    assert len(entries) == 2
+    assert entries[1].timestamp == datetime(1773, 8, 16)
+
+
 # ---------------------------------------------------------------------------
 # Boswell format
 # ---------------------------------------------------------------------------
