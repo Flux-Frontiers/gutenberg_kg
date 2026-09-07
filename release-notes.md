@@ -1,6 +1,6 @@
-# Release Notes -- v1.18.0
+# Release Notes — v1.18.0
 
-> Released: 2026-09-05
+> Released: 2026-09-06
 
 The corpus now searches and answers on the device. This release adds the
 export path that shrinks a 5.7 GB bundle to ~640 MB of SQLite packs, the
@@ -99,6 +99,20 @@ complete.
   It is not installable as an ordinary Poetry dependency, and
   `chunk-diaries` now depends on it. This also un-skips the suite's one
   guarded test (877 passed/1 skipped → 886 passed).
+
+**Snapshots**
+
+- **`snapshot save` gained `--subject` and `--key`.** `capture()` already took
+  named `key`/`subject` parameters, but the CLI had no way to reach either, so
+  every snapshot's subject could only ever be the `corpus:gutenberg` default.
+  `--subject` names what was measured, separate from `version`, which names
+  the measuring tool; `--key` snapshots the package against a release tag
+  instead of a timestamp. Both stay optional and keep today's behaviour when
+  omitted. Four new tests go through the CLI and read what actually landed on
+  disk — the default subject reaches the snapshot file and the manifest
+  entry, explicit `--subject`/`--key` reach their own fields rather than
+  `metrics`, an omitted key is a timestamp rather than a git tree hash, and a
+  timestamp key round-trips through `snapshot show` despite its colons.
 
 ### Changed
 
@@ -227,6 +241,39 @@ complete.
   `Comment` is `ExpressibleByStringInterpolation`, not built from a
   concatenation, so the `#expect` failure messages in `TokenizerParityTests`
   and `GoldenParityTests` were type errors.
+
+**Pins**
+
+- **`docker/Dockerfile` and `runpod/requirements.txt` had drifted from
+  `pyproject.toml`/`poetry.lock`.** `kgmodule-utils`, `doc-kg` and `diary-kg`
+  had moved to `0.19.0`/`0.24.1`/`0.98.0` in the lock, but the Dockerfile ARGs
+  and the RunPod requirements still named `0.18.1`/`0.23.0`/`0.97.0` — nine
+  mismatches in total, each drifting in one of three ways `check_pins.py`
+  distinguishes: an ARG behind pyproject's floor (so `pip install .` silently
+  upgrades it past what any build actually ran), the lock ahead of the ARG
+  (an index built by one version and read by an older one, which fails
+  silently as empty results rather than an error), and the RunPod floor below
+  pyproject's (letting the serverless worker install a version the package
+  itself rejects). Since `build` depends on `check-pins`, this blocked every
+  Docker and Apple container build outright. `kg-rag` was unaffected — it had
+  not moved. All four now sit at PyPI latest.
+- **`check_pins.py --bump` half-applied when PyPI was partly unreachable.**
+  `bump()` aborted only when *every* lookup had failed, so a single
+  unreachable package was dropped from the set while the rest moved,
+  `poetry lock` ran, and the command reported success on a bump that had left
+  one pin behind — the drift the whole-set bump exists to prevent, and which
+  its docstring already claimed could not happen. It now refuses outright and
+  writes nothing.
+- **`_version_key` compared tuples of unequal length**, so `(0, 19)` sorted
+  below `(0, 19, 0)` and a `>=0.19` floor read as below a 0.19.0 ARG.
+  Components are zero-padded to a common width; padding never truncates, so
+  `0.19.0.1` still sorts above `0.19.0`. Latent until now — no pin was
+  two-component.
+- **`bump_files` rewrote docker-compose.yml's version build args**,
+  contradicting the check beside it: any `*_VERSION` there is drift whether
+  it agrees or not, because the pins belong only in the Dockerfile.
+  Maintaining the copy kept alive what that check rejects. The compose
+  rewrite is gone; the compose check is unchanged.
 
 ---
 

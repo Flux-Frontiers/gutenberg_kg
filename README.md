@@ -9,7 +9,7 @@
   <a href="LICENSE"><img src="https://img.shields.io/badge/code-Elastic--2.0-lightgrey.svg" alt="Code License"/></a>
   <a href="https://www.gutenberg.org/"><img src="https://img.shields.io/badge/texts-Public%20Domain-green.svg" alt="Texts License"/></a>
   <img src="https://img.shields.io/badge/version-1.18.0-blue.svg" alt="Version"/>
-  <img src="https://img.shields.io/badge/corpus-252%20books-orange.svg" alt="Corpus"/>
+  <img src="https://img.shields.io/badge/corpus-253%20books-orange.svg" alt="Corpus"/>
   <img src="https://img.shields.io/badge/nodes-1.3M-green.svg" alt="Nodes"/>
   <img src="https://img.shields.io/badge/edges-5.3M-green.svg" alt="Edges"/>
   <a href="https://doi.org/10.5281/zenodo.20045389"><img src="https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20045389-blue.svg" alt="DOI"/></a>
