@@ -156,7 +156,7 @@ make logs        # follow worker logs
 
 | Target | Does |
 |---|---|
-| `make chunk-diaries` | rebuild `.diary/` chunks from committed `<book>.md` (clean-clone step) |
+| `make chunk-diaries` | re-chunk `.diary/` from committed `<book>.md` (always `--force`, so a parser change propagates) |
 | `make build-diaries` | rebuild `.diarykg/` indices (depends on `chunk-diaries`; prerequisite for `build-corpus`) |
 | `make build-corpus` | rebuild the DocKG + diary bundle (~24 min) |
 | `make build` | build the Docker image (bakes the bundle in) |

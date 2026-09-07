@@ -56,6 +56,30 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   diverged (this app's own k=25/0.5/0.20 vs. chat.py's k=15/0.6/0.3) and
   were never wired together in the first place.
 
+### Fixed
+
+- **The Pepys corpus was missing ~500 diary entries and misdated February
+  1661.** Two regexes in `diary/parser.py` were at fault. `_CONT_DATE_RE`
+  required the period immediately after the ordinal, then an optional
+  parenthetical — but the source writes it the other way round
+  (`11th (Lord's day).`), so the pattern never matched despite naming that
+  exact form in its own docstring. Unmatched date lines are appended to the
+  entry in progress rather than opening a new one, so 524 days — essentially
+  every Sunday of the diary, plus `(Office day)` and `(Michaelmas day)` — were
+  silently glued onto the preceding entry. Separately, `_SECTION_RE` required a
+  four-digit second year; of 113 month headers exactly one is abbreviated
+  (`FEBRUARY 1660-61`), so all of February 1661 was stamped with January dates
+  — 45 entries in a 31-day month, zero in February. Pepys goes from 2,774 to
+  3,280 entries over the unchanged 1660-01-01..1669-05-31 span. No prose was
+  lost (word count moves +0.26%), but per-entry dates and chunk boundaries were
+  wrong, and date is the primary retrieval key for a diary KG. Evelyn and
+  Boswell were checked and are unaffected.
+- **`make chunk-diaries` now passes `--force`.** It previously skipped any diary
+  with a non-empty `.diary/`, so stage ① (parser → `.diary_source.psv`) never
+  re-ran and a parser fix could not reach the data — `build-diaries` would
+  rebuild indices from a stale PSV and the run still looked successful. That is
+  what hid the entry shortfall above through repeated corpus rebuilds.
+
 ## [1.18.1] - 2026-09-06
 
 ### Fixed

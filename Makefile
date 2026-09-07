@@ -3,7 +3,7 @@
 #
 # Typical workflow:
 #   make init           — fetch local ML models (spaCy, embedder); run once after clone
-#   make chunk-diaries  — rebuild .diary/ chunks from committed .md (clean-clone step)
+#   make chunk-diaries  — re-chunk .diary/ from committed .md (always --force)
 #   make build-diaries  — build .diarykg/ indices (prerequisite for build-corpus)
 #   make build-corpus   — rebuild the DocKG + diary bundle (takes ~24 min)
 #   make build          — build the container image (bakes bundle into image)
@@ -222,8 +222,15 @@ spacy-model:
 	@poetry run python -c "import spacy; spacy.load('en_core_web_sm')" >/dev/null 2>&1 \
 	  || poetry run python -m spacy download en_core_web_sm
 
+# --force is the default here, matching build-diaries below. Without it
+# chunk-diaries skips any diary that already has a non-empty .diary/, so stage ①
+# (parser -> .diary_source.psv) never re-runs and a parser fix cannot reach the
+# data: build-diaries then rebuilds indices from a stale PSV and the result looks
+# like a successful rebuild. That cost a silent 500-entry shortfall in Pepys.
+# Re-chunking all diaries is the safe default; it is the shorter half of the
+# ~24 min build-corpus run.
 chunk-diaries: spacy-model
-	$(GUTENKG) chunk-diaries
+	$(GUTENKG) chunk-diaries --force
 
 build-diaries: chunk-diaries
 	$(GUTENKG) build-diaries --force
