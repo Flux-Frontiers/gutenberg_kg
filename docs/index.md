@@ -31,6 +31,7 @@ technical reference.
 | [Corpus wishlist](CORPUS_WISHLIST.md) | Planned additions, organized by genre |
 | [Download pipeline](DOWNLOAD_PIPELINE.md) | How texts are fetched and catalogued |
 | [Ingestion pipeline](ingestion-pipeline.md) | Retrieval and build architecture |
+| [Selective bundles](BUNDLES.md) | Ship a named, versioned subset instead of the full corpus |
 
 ## Visualization
 

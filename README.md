@@ -79,6 +79,7 @@ Under the hood, each work becomes a [DocKG](https://github.com/Flux-Frontiers/do
 | Understand a command or corpus-maintenance workflow | See the [cheatsheet](docs/CHEATSHEET.md). |
 | See every title in the corpus | Browse [the corpus catalog](docs/CORPUS.md). |
 | Understand the retrieval and build architecture | Read the [ingestion pipeline](docs/ingestion-pipeline.md). |
+| Ship a named subset instead of the full corpus | See [selective bundles](docs/BUNDLES.md). |
 
 ## Run the local reading room
 

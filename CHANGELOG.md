@@ -76,6 +76,23 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   manifest, because the redundant-for-filtering `catalog_keys` it correctly
   skipped passing was also the field gating whether the manifest's identity
   block gets written at all.
+- **`docs/BUNDLES.md`, and two committed example specs** — phase 5, closing
+  out the selective bundle export design. The operator's guide: filter-at-export
+  vs. rebuild, tag policy, the golden-query requirement, rollback (there is no
+  rollback command — the point of `product.json` is that none is needed), and
+  the measured size/time tables from phases 3 and 4. `bundles/specs/
+  philosophy-starter.toml` is the design's own canonical example, committed
+  as written. `bundles/specs/shakespeare-demo.toml` exercises all three book
+  resolution rules at once (an explicit catalog key, a Gutenberg ebook_id, and
+  two bare names) and is `materialize = "none"` — no rebuild, no image.
+  `ON_DEVICE.md` and `CHEATSHEET.md` gained short sections rather than
+  duplicating this page; the README's "Choose a path" table points here too.
+  Caught while writing this, not assumed: one of `shakespeare-demo`'s three
+  golden queries, "double, double, toil and trouble" — a line that is in
+  `Macbeth` three times, literally — still lost to an unrelated *A Midsummer
+  Night's Dream* chunk on the fused ranking for this 4-book pack, and was
+  replaced with a query verified to rank the intended play first. The doc
+  says so, rather than presenting an unverified query as a working example.
 - **A launch splash** — logo, name, and tagline, fading in and holding for
   2.5s before the real UI takes over. Shared between both shells via a new
   `SplashOverlay`, which loads the 1024pt app icon from a copy bundled into
