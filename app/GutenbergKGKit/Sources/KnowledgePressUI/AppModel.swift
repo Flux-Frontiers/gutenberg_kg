@@ -36,6 +36,35 @@ public enum AnswerEngine: String, CaseIterable, Sendable {
     }
 }
 
+/// How large a rendered illustration should be.
+///
+/// The three presets and their pixel dimensions are chat.py's
+/// `_RESOLUTION_LABELS`/`_RESOLUTION_SIZES` verbatim, including the 3:2 aspect
+/// ratio, so the two interfaces cannot drift into meaning different things by
+/// "Standard".
+public enum ImageResolution: String, CaseIterable, Sendable {
+    case preview
+    case standard
+    case full
+
+    /// What the worker is asked for, in its `WIDTHxHEIGHT` form.
+    var size: String {
+        switch self {
+        case .preview: return "768x512"
+        case .standard: return "1152x768"
+        case .full: return "1536x1024"
+        }
+    }
+
+    var label: String {
+        switch self {
+        case .preview: return "Preview (768 × 512)"
+        case .standard: return "Standard (1152 × 768)"
+        case .full: return "Full (1536 × 1024)"
+        }
+    }
+}
+
 /// One chat exchange: the question, the passages, and the answer as it arrives.
 public struct ChatTurn: Identifiable, Sendable {
     public let id = UUID()
@@ -171,6 +200,35 @@ public final class AppModel {
     var resultCount: Double = 25
     var minScore: Double = 0.5
     var semanticFloor: Double = 0.20
+
+    /// How large a rendered illustration should be.
+    ///
+    /// Persisted, like the scope and the worker address, because it is a
+    /// choice about this device: the reader who picks Preview on a phone
+    /// means it for every render, not just the next one.
+    ///
+    /// Defaults to Preview, which is also chat.py's default. Until this
+    /// existed the app sent no size at all and the worker fell back to its own
+    /// `1536x1024` -- the *largest* of the three, on the device least able to
+    /// wait for it, which is what made a render time out on the phone.
+    var imageResolution: ImageResolution {
+        get { storedImageResolution }
+        set {
+            storedImageResolution = newValue
+            AppModel.defaults.set(newValue.rawValue, forKey: AppModel.imageResolutionKey)
+        }
+    }
+
+    private var storedImageResolution: ImageResolution = AppModel.initialImageResolution()
+
+    static let imageResolutionKey = "imageResolution"
+
+    static func initialImageResolution() -> ImageResolution {
+        guard let stored = defaults.string(forKey: imageResolutionKey),
+            let resolution = ImageResolution(rawValue: stored)
+        else { return .preview }
+        return resolution
+    }
 
     /// Which engine writes the answer. Defaults to on-device when the
     /// hardware allows, which is the point of the app.
@@ -488,7 +546,8 @@ public final class AppModel {
                 // for by name — the worker's default (mflux) is otherwise
                 // whatever the deployment already configured.
                 let imageBackend = backend == "openai" ? "openai" : ""
-                let image = try await client.imagine(prompt: prompt, imageBackend: imageBackend)
+                let image = try await client.imagine(
+                    prompt: prompt, imageBackend: imageBackend, size: imageResolution.size)
                 guard let i = turns.firstIndex(where: { $0.id == id }) else { return }
                 turns[i].generatedImage = image
             } catch {
