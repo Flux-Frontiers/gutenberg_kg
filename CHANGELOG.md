@@ -10,6 +10,17 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added
 
+- **`gutenkg bundle validate`/`resolve`** — phase 1 of selective bundle
+  export (`analysis/SELECTIVE_BUNDLE_EXPORT_PLAN.md`): a small TOML spec
+  names a subset of the corpus by genre, by book (a catalog key, a
+  Gutenberg ebook_id, or a bare directory name unique across genres), or
+  both, plus a diary policy and the golden queries the exported pack must
+  answer correctly. `resolve` turns that into `<genre>/<book>` catalog
+  keys; `validate` checks the spec is well-formed and every selector
+  resolved. No fuzzy title matching by design — an ambiguous or misspelled
+  selector fails the command rather than picking the wrong book. Nothing
+  yet consumes a resolved selection; `build-corpus` and `export-swift`
+  stay unfiltered until phases 2 and 3.
 - **A launch splash** — logo, name, and tagline, fading in and holding for
   2.5s before the real UI takes over. Shared between both shells via a new
   `SplashOverlay`, which loads the 1024pt app icon from a copy bundled into
