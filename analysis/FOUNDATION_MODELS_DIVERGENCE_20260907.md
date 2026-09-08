@@ -258,21 +258,33 @@ thing rather than `iPad16,3`'s thing. The experiment that separates them is chea
 update `iPad16,1` to `24A5430a` and re-run. If the tool-call behavior persists, it is
 the A17 Pro. If it changes, it is the build. Either result is worth sending.
 
-### Retrieval counts differed; the prompt did not
+### Retrieval breadth was changed deliberately, and changed nothing
 
-Screenshots from the same session showed `iPad16,1` retrieving 25 passages and
-`iPad16,3` retrieving 14 for the same query and scope. That looked like a possible
-confound: if retrieval differs by device, so might the prompt. It does not, and the
-traces close it completely.
+Screenshots showed the two iPads retrieving different passage counts for the same
+query, which looked like a confound: if retrieval differs by device, so might the
+prompt. It is not a confound. The Results slider was moved by hand on `iPad16,3`,
+between runs, to test whether retrieving more or fewer passages would shift the
+answer.
 
-`iPad16,3`'s own runs varied. `pillar of salt` at `21:09:00Z` retrieved 25 passages
-(20 dropped) and at `21:09:46Z` retrieved 14 (9 dropped) -- same device, same
-question, 46 seconds apart -- with the same prompt digest and the same 74-character
-completion both times. A count that changes between consecutive runs on one device
-is a settings change (the Results or Min score slider), not hardware. And the
-`circles of Hell` run that retrieved 14 carries prompt digest `e24dd2bf123468fe`, the
-same as every 25-passage run on every device. The top 5 never changed, so the request
-never changed.
+It did not, on either question:
+
+| Question | Run | Retrieved | Reached model | Completion SHA-256 |
+|---|---|---:|---:|---|
+| `pillar of salt` | `21:09:00Z` | 25 | 5 | `6975f008aa6f596f` |
+| `pillar of salt` | `21:09:46Z` | 14 | 5 | `6975f008aa6f596f` |
+| `circles of Hell` | 2026-09-07 | 25 | 5 | `3eb5d65be9aecfac` |
+| `circles of Hell` | `21:10:16Z` | 14 | 5 | `3eb5d65be9aecfac` |
+
+Byte-identical completions across a near-halving of the retrieved set, on both
+questions, on the device that fails. The reason is the context budget: only 5
+passages reach the model either way, and the same 5 rank highest whether 14 or 25
+are retrieved, so the prompt is unchanged -- digest `e24dd2bf123468fe` for both
+`circles of Hell` rows, the same digest every other device produced.
+
+Two things follow. The differing counts in the screenshots were a slider, not
+hardware, and never reached the model. And **retrieval breadth is not a lever on
+this failure**: "the app packed too much context" is eliminated as a cause, by
+experiment rather than by argument.
 
 ### The wrong completion is stable, and it is prompt-specific
 
