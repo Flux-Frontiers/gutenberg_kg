@@ -386,11 +386,18 @@ public final class AppModel {
         }
     }
 
+    /// Whether "New chat" would do anything.
+    ///
+    /// Public alongside `newConversation()` so the macOS menu command can
+    /// disable itself, without exposing the whole turn buffer to the app
+    /// module to answer one question.
+    public var canStartNewChat: Bool { !turns.isEmpty }
+
     /// Start a new chat, saving whatever is on screen first.
     ///
     /// A no-op on an empty buffer, so tapping it twice cannot produce two
     /// empty conversations -- or any at all.
-    func newConversation() {
+    public func newConversation() {
         guard !turns.isEmpty else { return }
         cancel()
         persistActiveConversation()

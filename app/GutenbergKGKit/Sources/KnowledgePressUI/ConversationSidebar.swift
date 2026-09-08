@@ -25,9 +25,11 @@ struct ConversationSidebar: View {
     @Binding var selection: SidebarItem?
     @Binding var search: String
 
-    /// Presenting Settings is the shell's job -- a popover on iPad, a
-    /// window on the Mac -- so the sidebar only says when it was asked for.
-    var onOpenSettings: () -> Void
+    /// Presenting Settings is the shell's job on iOS -- a popover anchored
+    /// wherever the shell wants it -- so the sidebar only reports the tap.
+    /// Unused on macOS, where the footer is a `SettingsLink` to the standard
+    /// Settings window instead.
+    var onOpenSettings: () -> Void = {}
 
     var body: some View {
         List(selection: $selection) {
@@ -58,7 +60,15 @@ struct ConversationSidebar: View {
         .navigationTitle("The Knowledge Press")
         .safeAreaInset(edge: .bottom) {
             HStack {
-                Button("Settings", systemImage: "slider.horizontal.3", action: onOpenSettings)
+                #if os(macOS)
+                    // The platform-standard route to Settings, which also
+                    // means Cmd-comma and the app menu reach the same window.
+                    SettingsLink {
+                        Label("Settings", systemImage: "slider.horizontal.3")
+                    }
+                #else
+                    Button("Settings", systemImage: "slider.horizontal.3", action: onOpenSettings)
+                #endif
                 Spacer()
             }
             .padding(.horizontal)

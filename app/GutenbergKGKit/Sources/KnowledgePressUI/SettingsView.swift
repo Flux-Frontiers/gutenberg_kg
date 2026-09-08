@@ -8,7 +8,7 @@ import Foundation
 import GutenbergKGKit
 import SwiftUI
 
-struct SettingsView: View {
+public struct SettingsView: View {
     @Environment(AppModel.self) private var model
     @State private var confirmingDelete = false
 
@@ -19,14 +19,16 @@ struct SettingsView: View {
     /// find a second copy of it here that may or may not agree.
     let showsEngineAndScope: Bool
 
-    init(showsEngineAndScope: Bool = true) {
+    /// Public so the macOS app module can put it in a `Settings` scene,
+    /// which is what gives Cmd-comma its standard behaviour.
+    public init(showsEngineAndScope: Bool = true) {
         self.showsEngineAndScope = showsEngineAndScope
     }
     #if !os(macOS)
         @State private var showingAbout = false
     #endif
 
-    var body: some View {
+    public var body: some View {
         @Bindable var model = model
         List {
             Section {
