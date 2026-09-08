@@ -8,6 +8,8 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+## [1.19.0] - 2026-09-08
+
 ### Added
 
 - **Export a chat as Markdown** — through the system share sheet, on all
