@@ -10,6 +10,22 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added
 
+- **Export a chat as Markdown** — through the system share sheet, on all
+  three shells. The document carries the questions, the answers, and the
+  passages the answers were drawn from, each with its work, author, genre and
+  score. That last part is the point: an answer lifted out of this app
+  without its evidence is an unattributed paragraph about a book, which is
+  the one thing the project exists not to produce. Each turn also records the
+  scope it was asked against and which engine wrote it, and the sources line
+  distinguishes how many passages were *retrieved* from how many actually
+  reached the model -- writing "25 passages" under an answer the on-device
+  context could only fit five of would overstate what it rests on. Stopped,
+  passages-only, and failed turns export as what they were rather than as
+  blank sections. Narrowed deliberately from the plan's "context menu on
+  every row": a row carries only a summary, and `ShareLink` needs its item up
+  front, so exporting from the list would read a file on the main actor every
+  time a menu merely opened. The open chat is already in memory.
+
 - **The conversations list on the Mac and the iPhone** — phase 3 of
   `analysis/CONVERSATIONS_SIDEBAR_PLAN.md`, completing the plan's shells. The
   Mac's sidebar was the settings form: a full column of sliders pinned beside
