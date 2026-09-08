@@ -37,6 +37,7 @@ public struct MacRootView: View {
         } detail: {
             detail
                 .toolbar {
+                    ToolbarItem { ExportConversationButton() }
                     ToolbarItem {
                         Button("Delete", systemImage: "trash") {
                             confirmingDelete = true
@@ -102,6 +103,9 @@ public struct PhoneRootView: View {
                                 confirmingDelete = true
                             }
                             .disabled(model.activeConversation == nil && model.turns.isEmpty)
+                        }
+                        ToolbarItem(placement: .secondaryAction) {
+                            ExportConversationButton()
                         }
                     }
                     .deleteConversationConfirmation($confirmingDelete)
@@ -228,6 +232,9 @@ public struct PadRootView: View {
                                 confirmingDelete = true
                             }
                             .disabled(model.activeConversation == nil && model.turns.isEmpty)
+                        }
+                        ToolbarItem(placement: .secondaryAction) {
+                            ExportConversationButton()
                         }
                     }
                     .deleteConversationConfirmation($confirmingDelete)
