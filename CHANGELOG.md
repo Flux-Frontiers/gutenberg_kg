@@ -10,6 +10,180 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added
 
+- **Export a chat as Markdown** — through the system share sheet, on all
+  three shells. The document carries the questions, the answers, and the
+  passages the answers were drawn from, each with its work, author, genre and
+  score. That last part is the point: an answer lifted out of this app
+  without its evidence is an unattributed paragraph about a book, which is
+  the one thing the project exists not to produce. Each turn also records the
+  scope it was asked against and which engine wrote it, and the sources line
+  distinguishes how many passages were *retrieved* from how many actually
+  reached the model -- writing "25 passages" under an answer the on-device
+  context could only fit five of would overstate what it rests on. Stopped,
+  passages-only, and failed turns export as what they were rather than as
+  blank sections. Narrowed deliberately from the plan's "context menu on
+  every row": a row carries only a summary, and `ShareLink` needs its item up
+  front, so exporting from the list would read a file on the main actor every
+  time a menu merely opened. The open chat is already in memory.
+
+- **The conversations list on the Mac and the iPhone** — phase 3 of
+  `analysis/CONVERSATIONS_SIDEBAR_PLAN.md`, completing the plan's shells. The
+  Mac's sidebar was the settings form: a full column of sliders pinned beside
+  what you were reading, with nowhere for past chats to go. Settings moves to
+  the standard `Settings` scene, which is what gives Cmd-comma and the app
+  menu their ordinary behaviour without wiring either by hand, and the
+  sidebar becomes the same one the iPad got in phase 2. Cmd-N starts a new
+  chat. The iPhone reaches the identical list from a leading toolbar button,
+  in a sheet with New chat at the top; picking a chat loads it and dismisses.
+  Its nav title now names the open conversation rather than always reading
+  "The Knowledge Press", and its Settings keeps engine and scope, there being
+  no sidebar for them to move to. `ConversationListView` gained a
+  `Presentation` parameter rather than being duplicated: a sidebar row is a
+  destination, carrying a value the selection binding highlights and the
+  detail column follows, while a sheet row is a button that loads and closes.
+  Grouping, search, swipe-to-delete, and rename are the same code in both.
+
+- **A conversations sidebar on iPad** — phase 2 of
+  `analysis/CONVERSATIONS_SIDEBAR_PLAN.md`, and the phase you can see. The
+  iPad's tabs are gone: they were the right shape when a chat was a single
+  disposable buffer, but now that chats persist the sidebar is what reaches
+  them, and Browse is one row in it rather than half the tab bar. The sidebar
+  carries New chat, Browse, the answer-engine and corpus-scope pickers, and
+  every saved chat grouped Today / Yesterday / Previous 7 days / Older, with
+  search over titles. Swipe a row to delete, long-press to rename. Landscape
+  shows both columns; portrait collapses the sidebar behind the standard
+  toggle, and New chat is in the detail toolbar too so the common action
+  never costs two taps there. Scope and engine move *out* of Settings on this
+  shell -- one home per control, via `SettingsView(showsEngineAndScope:)` --
+  and both pickers are now shared views rather than a second copy, so the
+  `onChange` that prewarms the on-device model cannot go missing from one of
+  them. Grouping is by calendar day rather than elapsed hours, so a chat from
+  23:59 last night reads as "Yesterday" six minutes later instead of "Today"
+  for another day; its tests fix `now` at a specific instant, since a suite
+  on the real clock would only catch that on an unlucky night. Caught by
+  `make ios-check` after `swift build` passed clean: `List(selection:)` with
+  a non-optional binding is macOS-only, and the package builds for macOS by
+  default, so the Swift suite could never have found it.
+
+- **A resolution setting for rendered illustrations** — Settings ▸
+  Illustrations, offering chat.py's three presets pixel for pixel: Preview
+  768x512, Standard 1152x768, Full 1536x1024, all 3:2. The choice persists,
+  like the corpus scope and the worker address. Until now the app sent no
+  size at all, so the worker fell back to its own `1536x1024` default -- the
+  largest of the three, on the device least able to wait for it, which is
+  what made a render time out on the phone. Nothing in the interface said
+  which size was in use, so nothing looked wrong. The default is now Preview,
+  matching chat.py's own `index=0`.
+- **Chats that survive a relaunch** — phase 1 of
+  `analysis/CONVERSATIONS_SIDEBAR_PLAN.md`. The app used to forget every
+  conversation the moment it was closed. A conversation is now the existing
+  `ChatTurn` values plus a title and timestamps, written as one directory per
+  chat under `Application Support/Conversations/` -- plain JSON, readable in
+  an editor and pullable with `devicectl device copy from`, the same property
+  that let every on-device question in this project be answered so far. The
+  turn shape is unchanged for the view code. Illustrations go beside the JSON
+  rather than inside it: one measured `imagine` result was 4.2 MB of base64,
+  which would make a conversation file unreadable and slow to list. Relaunch
+  reopens the most recent chat with its passages, stats line, and any
+  illustration; the sidebar that reaches the older ones is phase 2. The three
+  "Clear chat" buttons became "Delete conversation" behind a confirmation,
+  since they now remove a file rather than clear a screen. A stopped answer
+  records `SynthesisFailure.cancelled` ("Stopped.") rather than nothing at
+  all -- `isStreaming` is derived from the *absence* of metrics and failure,
+  so an unmarked turn would still show a blinking caret when reopened next
+  week. Conversations are backed up; the corpus stays excluded, being
+  regenerable. Found while building this, both by running the code rather
+  than reading it: a passages-only turn was never saved at all, because with
+  no synthesis backend the orchestrator finishes without ever emitting the
+  `.finished` event the design hung persistence on; and `JSONEncoder`'s stock
+  `.iso8601` writes whole seconds, so two chats started in the same second
+  read back with identical timestamps and listed in whatever order the
+  directory enumerated -- caught by a test that failed roughly one run in
+  three, and fixed with fractional seconds plus a total ordering rather than
+  by loosening the test.
+- **`gutenkg bundle validate`/`resolve`/`export` and `gutenkg export-swift
+  --book`/`--genre`/`--spec`** — phases 1 and 2 of selective bundle export
+  (`analysis/SELECTIVE_BUNDLE_EXPORT_PLAN.md`). A small TOML spec names a
+  subset of the corpus by genre, by book (a catalog key, a Gutenberg
+  ebook_id, or a bare directory name unique across genres), or both, plus a
+  diary policy and the golden queries the exported pack must answer
+  correctly. `bundle resolve` turns that into `<genre>/<book>` catalog
+  keys; `bundle validate` checks the spec is well-formed and every selector
+  resolved. No fuzzy title matching by design — an ambiguous or misspelled
+  selector fails the command rather than picking the wrong book.
+  `export-swift` now filters at every stage a subset touches: the catalog,
+  the passages, and — required, not optional — the vector scan itself,
+  since without it a three-book export still streamed the full ~731K-row
+  store. `bundle export SPEC` and `export-swift --spec` run the whole thing
+  from a spec in one command; `--book`/`--genre` do the same without one,
+  resolved against the bundle's own `catalog.json` rather than the source
+  corpus tree, so a downloaded bundle with no `corpus/` beside it still
+  works. `--force` now wipes the destination first, so a spec whose book
+  set shrank cannot leave the previous run's orphaned packs behind.
+- **Fixed while building phase 2:** `diaries = true` in a bundle spec
+  resolved to the same empty diary list as `diaries = false` — `diary_dirs`
+  is a tuple either way, and Phase 1 only special-cased the explicit-list
+  form. It now enumerates every diary under `corpus/diaries/`, the same
+  `reference.md`-per-subdirectory layout as any genre.
+- **`gutenkg build-corpus --book`/`--spec`/`--diaries`/`--no-diaries`** —
+  phase 3: the rebuild path gets the same book-level filtering `export-swift`
+  got in phase 2, so a named product can be built from source rather than
+  only exported from an existing `gutenberg-all`. A book-filtered build
+  targeting the name `gutenberg-all` now refuses without a new
+  `--force-overwrite-full`, and `--book` without an explicit `--output`
+  refuses too — an auto-derived name would misrepresent a partial selection
+  as a complete one. Writes `bundles/<name>/product.json`, a frozen record
+  of the resolved selection and per-file checksums, for a book-filtered
+  build only. The book-level exclude is a flat set of directory basenames,
+  pruned wherever they occur — a real gap in principle if two genres ever
+  shared a book directory name, closed in practice (253 unique names
+  today) and backstopped by a new hard failure, `assert_selection`, raised
+  before any embedding runs if the exclude ever did leak an unselected
+  book through. Measured for real rather than assumed: a `--genre
+  philosophy` build (39 books) takes 2m 38s, confirming the estimate the
+  design's own deferral of a DocKG-slice alternative was resting on.
+- **`gutenkg bundle build`/`image`/`make`, `make export-swift`, and a
+  parameterized `make build`** — phase 4, the last of the core selective
+  bundle export work. `bundle build` runs a spec's rebuild (a no-op for
+  `materialize = "none"`), refusing to redo an existing one without
+  `--force`. `bundle export` now reads either materialization — a
+  rebuild-mode bundle from `bundles/<name>/`, filter-at-export from
+  `source_bundle` otherwise — where phase 2 only handled the latter.
+  `bundle image` bakes a spec's already-built DocKG into a tagged
+  container image and refuses outright for `materialize = "none"`
+  (Decision 9: the worker needs a real DocKG root, and an image bake must
+  never silently `COPY` the unfiltered source under a product tag).
+  `bundle make` runs validate → build → export → optionally image, end to
+  end. `make build` gained `SPEC=`/`BUNDLE=` (resolved inside the recipe,
+  never at parse time, so a bare `make help` never shells out to the
+  resolver) and now tags `$(IMAGE):$(IMAGE_TAG)` instead of always
+  `:latest`; `corpus-gutenberg:latest` still means `gutenberg-all`, and
+  `make build BUNDLE=<name>` with no `SPEC=` stays a local, unversioned
+  convenience. Verified for real, not just by reading the Dockerfile: a
+  `philosophy-mini` image built in under two minutes (base layers cached),
+  ran, and answered a live query against exactly one book (8,367 vectors,
+  1 catalogued book) rather than the full corpus. Found and fixed while
+  verifying: a rebuild-mode export was writing `product: null` to its own
+  manifest, because the redundant-for-filtering `catalog_keys` it correctly
+  skipped passing was also the field gating whether the manifest's identity
+  block gets written at all.
+- **`docs/BUNDLES.md`, and two committed example specs** — phase 5, closing
+  out the selective bundle export design. The operator's guide: filter-at-export
+  vs. rebuild, tag policy, the golden-query requirement, rollback (there is no
+  rollback command — the point of `product.json` is that none is needed), and
+  the measured size/time tables from phases 3 and 4. `bundles/specs/
+  philosophy-starter.toml` is the design's own canonical example, committed
+  as written. `bundles/specs/shakespeare-demo.toml` exercises all three book
+  resolution rules at once (an explicit catalog key, a Gutenberg ebook_id, and
+  two bare names) and is `materialize = "none"` — no rebuild, no image.
+  `ON_DEVICE.md` and `CHEATSHEET.md` gained short sections rather than
+  duplicating this page; the README's "Choose a path" table points here too.
+  Caught while writing this, not assumed: one of `shakespeare-demo`'s three
+  golden queries, "double, double, toil and trouble" — a line that is in
+  `Macbeth` three times, literally — still lost to an unrelated *A Midsummer
+  Night's Dream* chunk on the fused ranking for this 4-book pack, and was
+  replaced with a query verified to rank the intended play first. The doc
+  says so, rather than presenting an unverified query as a working example.
 - **A launch splash** — logo, name, and tagline, fading in and holding for
   2.5s before the real UI takes over. Shared between both shells via a new
   `SplashOverlay`, which loads the 1024pt app icon from a copy bundled into

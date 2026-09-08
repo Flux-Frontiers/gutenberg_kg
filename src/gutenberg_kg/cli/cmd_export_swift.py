@@ -7,12 +7,16 @@ from pathlib import Path
 
 import click
 
+from gutenberg_kg.bundle_spec import BundleSpecError, load_spec, resolve_selection, validate_spec
 from gutenberg_kg.cli.main import cli
 from gutenberg_kg.export_swift import (
     DEFAULT_BUNDLE,
     ExportError,
     ExportOptions,
     export_swift,
+    load_catalog,
+    locate_bundle,
+    resolve_catalog_selectors,
 )
 
 
@@ -78,6 +82,29 @@ def _human(size: int) -> str:
     help="Measure the packs' recall against exact fp32 ground truth.",
 )
 @click.option("--force", is_flag=True, help="Overwrite a non-empty output directory.")
+@click.option(
+    "--book",
+    "books",
+    multiple=True,
+    metavar="SELECTOR",
+    help="Restrict to this book: a catalog key, a Gutenberg ebook_id, or a "
+    "bare book name unique across genres. Repeatable. Not with --spec.",
+)
+@click.option(
+    "--genre",
+    "genres",
+    multiple=True,
+    metavar="GENRE",
+    help="Restrict to every book in this genre. Repeatable; unions with --book. Not with --spec.",
+)
+@click.option(
+    "--spec",
+    "spec_path",
+    type=click.Path(exists=True, dir_okay=False, path_type=Path),
+    default=None,
+    help="A bundle spec TOML (see `gutenkg bundle`). Supplies the selection, "
+    "diary policy, golden queries, and product name/version in one go.",
+)
 def export_swift_cmd(
     bundle: Path,
     out: Path | None,
@@ -89,6 +116,9 @@ def export_swift_cmd(
     golden_k: int,
     verify: bool,
     force: bool,
+    books: tuple[str, ...],
+    genres: tuple[str, ...],
+    spec_path: Path | None,
 ) -> None:
     """Build the corpus packs the native app searches on device.
 
@@ -104,6 +134,10 @@ def export_swift_cmd(
       gutenkg export-swift --dtype float --out /tmp/packs
       gutenkg export-swift --verify            # report int8 recall while building
       gutenkg export-swift --no-vectors --no-golden   # quick schema-only pass
+      gutenkg export-swift --book "english-literature/Pride and Prejudice" \\
+        --book "Bleak House (Dickens)" --out bundles/austen-dickens/swift \\
+        --no-diaries --force
+      gutenkg export-swift --spec bundles/specs/philosophy-starter.toml --verify
     \f
 
     :param bundle: Bundle directory to read.
@@ -116,8 +150,54 @@ def export_swift_cmd(
     :param golden_k: Depth recorded per golden query.
     :param verify: Compare the packs against exact fp32 ground truth.
     :param force: Overwrite a non-empty output directory.
-    :raises click.ClickException: If the export cannot complete.
+    :param books: Raw ``--book`` selectors, resolved against the bundle's own
+        catalog.json.
+    :param genres: Raw ``--genre`` selectors.
+    :param spec_path: A bundle spec TOML, in place of ``--book``/``--genre``.
+    :raises click.ClickException: If the export cannot complete, a selector
+        does not resolve, or ``--spec`` is combined with ``--book``/``--genre``.
     """
+    if spec_path is not None and (books or genres):
+        raise click.ClickException("--spec cannot be combined with --book or --genre.")
+
+    catalog_keys: frozenset[str] | None = None
+    diary_dirs: tuple[str, ...] | None = None
+    golden_queries: tuple[str, ...] | None = None
+    product_name: str | None = None
+    product_version: str | None = None
+
+    if spec_path is not None:
+        try:
+            spec = load_spec(spec_path)
+        except BundleSpecError as exc:
+            raise click.ClickException(str(exc)) from exc
+        resolved = resolve_selection(spec)
+        problems = validate_spec(spec, resolved)
+        if problems:
+            lines = "\n".join(f"  - {p}" for p in problems)
+            raise click.ClickException(f"{spec_path} is not valid:\n{lines}")
+        catalog_keys = resolved.catalog_keys
+        diary_dirs = resolved.diary_dirs
+        golden_queries = spec.golden_queries or None
+        product_name = spec.name
+        product_version = spec.version
+        if out is None:
+            out = Path("bundles") / spec.name / "swift"
+    elif books or genres:
+        if out is None:
+            raise click.ClickException(
+                "--book/--genre needs an explicit --out — without one, this "
+                f"would overwrite {Path(bundle) / 'swift'}, which likely holds "
+                "the full, expensively-built export."
+            )
+        located = locate_bundle(Path(bundle))
+        catalog = load_catalog(located.catalog)
+        catalog_keys, missing = resolve_catalog_selectors(
+            books=books, genres=genres, catalog=catalog
+        )
+        if missing:
+            raise click.ClickException(f"could not resolve: {list(missing)}")
+
     options = ExportOptions(
         bundle=bundle,
         out=out,
@@ -129,6 +209,11 @@ def export_swift_cmd(
         golden_k=golden_k,
         verify=verify,
         force=force,
+        catalog_keys=catalog_keys,
+        diary_dirs=diary_dirs,
+        golden_queries=golden_queries,
+        product_name=product_name,
+        product_version=product_version,
     )
 
     try:

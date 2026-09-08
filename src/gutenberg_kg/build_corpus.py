@@ -45,15 +45,22 @@ License: Elastic 2.0
 
 from __future__ import annotations
 
+import hashlib
 import json
 import os
 import shutil
 import time
 from collections import defaultdict
 from dataclasses import dataclass, field
+from datetime import UTC, datetime
 from pathlib import Path
 
 from gutenberg_kg.genres import ALL_GENRES
+
+
+class BuildError(RuntimeError):
+    """A book-filtered build's selection could not be honoured as asked."""
+
 
 # ---------------------------------------------------------------------------
 # Constants
@@ -111,6 +118,28 @@ class BuildCorpusOptions:
     # "sentence_group", "fixed", or "verse".
     strategy_overrides: dict[str, str] = field(default_factory=dict)
 
+    # --- Selective bundle export, phase 3 -----------------------------
+    # All default to None/False, and every one of them reproduces today's
+    # full-corpus behaviour exactly when left that way — a caller that never
+    # sets these sees no change.
+    #: Restrict to these "<genre>/<book>" keys within `genres`. None builds
+    #: every book in the selected genres, as today.
+    catalog_keys: frozenset[str] | None = None
+    #: Diary slugs to bundle. None bundles every diary found (today's
+    #: default); an explicit tuple is an allow-list, and an empty one means
+    #: none — distinct from None, which is "unspecified".
+    diary_dirs: tuple[str, ...] | None = None
+    #: Recorded in product.json when catalog_keys is set. Falls back to the
+    #: bundle directory name / no version when a spec did not supply them.
+    product_name: str | None = None
+    product_version: str | None = None
+    #: The spec file used, if any — hashed into product.json's spec_sha256.
+    spec_path: Path | None = None
+    #: Required to let a book-filtered build's output name resolve to
+    #: "gutenberg-all", so an ad-hoc selection cannot silently overwrite the
+    #: full corpus bundle.
+    force_overwrite_full: bool = False
+
 
 # ---------------------------------------------------------------------------
 # Helpers
@@ -160,7 +189,7 @@ def derive_output_name(genres: list[str], override: str | None) -> str:
     return "gutenberg-" + "-".join(genres)
 
 
-def derive_exclude(genres: list[str]) -> set[str]:
+def derive_exclude(genres: list[str], *, only_books: set[str] | None = None) -> set[str]:
     """Return the set of directory names to prune from the ``corpus/`` walk.
 
     Excludes every genre *not* selected, the non-genre corpus dirs, and the
@@ -169,15 +198,61 @@ def derive_exclude(genres: list[str]) -> set[str]:
     ``file_path``s stay genre-prefixed regardless of the subset chosen.
 
     :param genres: Selected genres.
+    :param only_books: Book directory names to keep within the selected
+        genres; every sibling not in this set is added to the exclude set
+        too. ``None`` keeps every book in every selected genre, as today.
     :return: Directory names to exclude at every level of the walk.
+
+        This is a flat set of *basenames*, pruned wherever they occur in the
+        walk — it cannot tell one genre's "Republic" from another's. That is
+        a real gap in principle and a closed one in practice: every book
+        directory name in the corpus is unique across all 253 books today.
+        :func:`assert_selection` is the backstop if that ever stops being
+        true, converting a silent wrong-contents build into a hard failure
+        before any embedding happens, rather than preventing the collision
+        at this level.
     """
     from doc_kg.dockg import SKIP_DIRS
 
     unselected = set(ALL_GENRES) - set(genres)
-    return unselected | NON_GENRE_DIRS | set(SKIP_DIRS)
+    exclude = unselected | NON_GENRE_DIRS | set(SKIP_DIRS)
+    if only_books is not None:
+        for genre in genres:
+            genre_dir = CORPUS_ROOT / genre
+            if not genre_dir.is_dir():
+                continue
+            for child in genre_dir.iterdir():
+                if (
+                    child.is_dir()
+                    and child.name not in only_books
+                    and not child.name.startswith(".")
+                ):
+                    exclude.add(child.name)
+    return exclude
 
 
-def build_catalog(genres: list[str], out_dir: Path) -> tuple[int, int]:
+def assert_selection(files: list[Path], catalog_keys: frozenset[str]) -> None:
+    """Hard-error if the name-based exclude let an unselected book through.
+
+    Cheap — a set difference over the file list already walked — and it is
+    what makes :func:`derive_exclude`'s basename-only exclusion safe to ship:
+    if two genres ever did share a book directory name, this is what turns
+    that into a build failure instead of a bundle silently carrying content
+    nobody asked for.
+
+    :param files: Paths returned by ``doc_kg.dockg.iter_text_files`` for the
+        exclude set actually used.
+    :param catalog_keys: The resolved ``"<genre>/<book>"`` selection.
+    :raises BuildError: If any walked file lies outside the selection.
+    """
+    stray = sorted({"/".join(f.relative_to(CORPUS_ROOT).parts[:2]) for f in files} - catalog_keys)
+    if stray:
+        raise BuildError(f"exclude leaked {len(stray)} unselected book(s): {stray[:5]}")
+
+
+def build_catalog(
+    genres: list[str], out_dir: Path, *, catalog_keys: frozenset[str] | None = None
+) -> tuple[int, int]:
     """Write a ``catalog.json`` sidecar mapping ``<genre>/<book>`` → book metadata.
 
     Parses each selected book's ``reference.md`` for author, title, and Gutenberg
@@ -188,6 +263,8 @@ def build_catalog(genres: list[str], out_dir: Path) -> tuple[int, int]:
 
     :param genres: Selected genres.
     :param out_dir: The bundle's ``.dockg/`` directory (where the index lives).
+    :param catalog_keys: Restrict to these keys within ``genres``; ``None``
+        catalogues every book in ``genres``, as today.
     :return: ``(books_catalogued, books_with_author)``.
     """
     from gutenberg_kg.authors import parse_reference
@@ -196,8 +273,10 @@ def build_catalog(genres: list[str], out_dir: Path) -> tuple[int, int]:
     with_author = 0
     for genre in genres:
         for ref in sorted((CORPUS_ROOT / genre).glob("*/reference.md")):
-            meta = parse_reference(ref)
             key = f"{genre}/{ref.parent.name}"  # matches file_path prefix
+            if catalog_keys is not None and key not in catalog_keys:
+                continue
+            meta = parse_reference(ref)
             catalog[key] = {
                 "genre": genre,
                 "book": ref.parent.name,
@@ -217,7 +296,7 @@ def build_catalog(genres: list[str], out_dir: Path) -> tuple[int, int]:
     return len(catalog), with_author
 
 
-def bundle_diaries(out_dir: Path) -> int:
+def bundle_diaries(out_dir: Path, *, diary_dirs: tuple[str, ...] | None = None) -> int:
     """Copy existing ``.diarykg/`` indices from ``corpus/diaries/`` into the bundle.
 
     DiaryKG indices carry temporal metadata (YAML timestamps, diary-specific
@@ -231,17 +310,29 @@ def bundle_diaries(out_dir: Path) -> int:
         bundles/<name>/diaries/<diary-name>/.diarykg/
 
     :param out_dir: The bundle's ``.dockg/`` directory (sibling of ``diaries/``).
+    :param diary_dirs: Diary slugs to include (matching
+        ``export_swift._diary_slug``), or ``None`` to copy every diary
+        found — today's default. An empty tuple copies none, which is a
+        selective bundle's own default (``BundleSpec.diaries`` defaults to
+        ``False``) once a spec or ``--book``/``--genre`` selection is driving
+        the build; it is not a change to the plain, flag-free command.
     :return: Number of diary indices copied.
     """
     diaries_root = CORPUS_ROOT / "diaries"
     if not diaries_root.exists():
         return 0
 
+    allowed_slugs = frozenset(diary_dirs) if diary_dirs is not None else None
     bundle_diaries_dir = out_dir.parent / "diaries"
     n = 0
     for diary_dir in sorted(diaries_root.iterdir()):
         if not diary_dir.is_dir() or diary_dir.name.startswith("."):
             continue
+        if allowed_slugs is not None:
+            from gutenberg_kg.export_swift import _diary_slug  # noqa: PLC0415
+
+            if _diary_slug(diary_dir.name) not in allowed_slugs:
+                continue
         diarykg_dir = diary_dir / ".diarykg"
         if not diarykg_dir.exists():
             continue
@@ -304,6 +395,91 @@ def fmt_duration(seconds: float) -> str:
     return f"{h}h {m:02d}m {s:02d}s"
 
 
+def _sha256(path: Path) -> str:
+    """Streamed SHA-256 of a file, so a multi-GB ``graph.sqlite`` is not read whole."""
+    digest = hashlib.sha256()
+    with open(path, "rb") as handle:
+        for block in iter(lambda: handle.read(1 << 20), b""):
+            digest.update(block)
+    return digest.hexdigest()
+
+
+def _diary_dirs_for_product(diary_dirs: tuple[str, ...] | None, n_diaries: int) -> tuple[str, ...]:
+    """What actually shipped, for ``product.json`` -- not what was asked for.
+
+    ``diary_dirs is None`` means :func:`bundle_diaries` used the legacy "copy
+    every diary found" default rather than an explicit allow-list. Recording
+    an empty list in that case would tell an auditor the opposite of what the
+    bundle actually contains whenever any diaries were found; this
+    reconstructs the same enumeration :func:`bundle_diaries` used so
+    ``product.json`` names what shipped, not the override value.
+
+    :param diary_dirs: ``BuildCorpusOptions.diary_dirs`` as given.
+    :param n_diaries: How many diary indices :func:`bundle_diaries` actually
+        copied — the true ground for the ``None`` case.
+    :returns: Diary slugs to record.
+    """
+    if diary_dirs is not None:
+        return diary_dirs
+    if not n_diaries:
+        return ()
+    from gutenberg_kg.bundle_spec import _all_diary_slugs  # noqa: PLC0415
+
+    return _all_diary_slugs(CORPUS_ROOT)
+
+
+def write_product_json(
+    bundle_dir: Path,
+    *,
+    name: str,
+    version: str | None,
+    catalog_keys: frozenset[str],
+    diary_dirs: tuple[str, ...],
+    materialize: str = "rebuild",
+    spec_path: Path | None = None,
+) -> Path:
+    """Freeze a selective build's resolved selection and checksums to disk.
+
+    A rollback and audit record only — neither the worker nor the Swift
+    reader reads it. Written only for a book-filtered build; the plain
+    ``gutenberg-all`` build has no selection to freeze.
+
+    :param bundle_dir: The bundle root, ``bundles/<name>/`` (parent of
+        ``.dockg/``).
+    :param name: Product name — the spec's ``name``, or the bundle directory
+        name for an ad-hoc ``--book``/``--genre`` build with no spec.
+    :param version: Product version, or ``None`` when there is no spec to
+        supply one.
+    :param catalog_keys: The resolved ``"<genre>/<book>"`` selection.
+    :param diary_dirs: The resolved diary slugs, possibly empty.
+    :param materialize: Always ``"rebuild"`` here — this function only runs
+        after a build, never for ``materialize = "none"``.
+    :param spec_path: The spec file used, if any; hashed into
+        ``spec_sha256``.
+    :returns: Path to the written ``product.json``.
+    """
+    dockg_dir = bundle_dir / ".dockg"
+    dockg_sha256 = {
+        fname: _sha256(dockg_dir / fname)
+        for fname in ("graph.sqlite", "vectors.sqlite", "catalog.json")
+        if (dockg_dir / fname).exists()
+    }
+    document = {
+        "name": name,
+        "version": version,
+        "spec_sha256": _sha256(spec_path) if spec_path is not None else None,
+        "materialize": materialize,
+        "catalog_keys": sorted(catalog_keys),
+        "book_count": len(catalog_keys),
+        "diary_dirs": list(diary_dirs),
+        "created": datetime.now(UTC).isoformat(timespec="seconds"),
+        "dockg_sha256": dockg_sha256,
+    }
+    path = bundle_dir / "product.json"
+    path.write_text(json.dumps(document, indent=2, ensure_ascii=False), encoding="utf-8")
+    return path
+
+
 # ---------------------------------------------------------------------------
 # Core
 # ---------------------------------------------------------------------------
@@ -324,6 +500,17 @@ def run_build_corpus(genres: list[str], opts: BuildCorpusOptions) -> int:
     """
     genres = sorted(genres) if genres else list(ALL_GENRES)
     name = derive_output_name(genres, opts.output)
+    if opts.catalog_keys is not None and name == "gutenberg-all" and not opts.force_overwrite_full:
+        print(
+            "[x] a book-filtered build targeting 'gutenberg-all' needs --force-overwrite-full "
+            "(or pass --output to name it something else)."
+        )
+        return 1
+    only_books = (
+        {key.split("/", 1)[1] for key in opts.catalog_keys}
+        if opts.catalog_keys is not None
+        else None
+    )
     out_dir = BUNDLES_ROOT / name / ".dockg"
     sqlite_path = out_dir / "graph.sqlite"
     vectors_path = out_dir / "vectors.sqlite"
@@ -342,11 +529,15 @@ def run_build_corpus(genres: list[str], opts: BuildCorpusOptions) -> int:
         strategy = effective_strategy.get(genre, "semantic")
         strategy_groups[strategy].append(genre)
 
-    n_books = sum(
-        1
-        for g in genres
-        for p in (CORPUS_ROOT / g).iterdir()
-        if (CORPUS_ROOT / g).is_dir() and p.is_dir() and not p.name.startswith(".")
+    n_books = (
+        len(opts.catalog_keys)
+        if opts.catalog_keys is not None
+        else sum(
+            1
+            for g in genres
+            for p in (CORPUS_ROOT / g).iterdir()
+            if (CORPUS_ROOT / g).is_dir() and p.is_dir() and not p.name.startswith(".")
+        )
     )
 
     print("=== gutenkg build-corpus ===")
@@ -382,7 +573,7 @@ def run_build_corpus(genres: list[str], opts: BuildCorpusOptions) -> int:
             print("[x] diary build failed")
             return 1
         try:
-            n_diaries = bundle_diaries(out_dir)
+            n_diaries = bundle_diaries(out_dir, diary_dirs=opts.diary_dirs)
         except Exception as exc:  # noqa: BLE001
             print(f"[x] bundle_diaries failed: {exc}")
             return 1
@@ -395,7 +586,7 @@ def run_build_corpus(genres: list[str], opts: BuildCorpusOptions) -> int:
     if opts.dry_run:
         print("[dry-run] phase 1: build graph — sequential per strategy group:")
         for strategy, sg_genres in sorted(strategy_groups.items()):
-            sg_exclude = derive_exclude(sg_genres)
+            sg_exclude = derive_exclude(sg_genres, only_books=only_books)
             print(f"  strategy={strategy}, genres={sorted(sg_genres)}")
             print(f"    exclude={sorted(sg_exclude)}")
         print(f"[dry-run] phase 2: embed all nodes → {sqlite_path}")
@@ -461,7 +652,15 @@ def run_build_corpus(genres: list[str], opts: BuildCorpusOptions) -> int:
         print(f"[1/4] parsing corpus → SQLite ({n_groups} strategy group(s)) …")
         first = True
         for strategy, sg_genres in sorted(strategy_groups.items()):
-            sg_exclude = derive_exclude(sg_genres)
+            sg_exclude = derive_exclude(sg_genres, only_books=only_books)
+            if opts.catalog_keys is not None:
+                # Before any embedding happens: convert a silent
+                # wrong-contents build into a hard failure now, at the cost
+                # of one more corpus walk.
+                from doc_kg.dockg import iter_text_files  # noqa: PLC0415
+
+                walked = iter_text_files(CORPUS_ROOT, exclude=sg_exclude)
+                assert_selection(walked, opts.catalog_keys)
             print(f"  [{strategy}] {', '.join(sorted(sg_genres))}")
             kg = DocKG(
                 corpus_root=CORPUS_ROOT,
@@ -606,14 +805,26 @@ def run_build_corpus(genres: list[str], opts: BuildCorpusOptions) -> int:
         if ensure_diaries_built(dry_run=opts.dry_run, quiet=opts.quiet) != 0:
             print("[x] diary build failed")
             return 1
-        n_diaries = bundle_diaries(out_dir)
+        n_diaries = bundle_diaries(out_dir, diary_dirs=opts.diary_dirs)
         if n_diaries:
             print(f"  copied {n_diaries} diary index(es) → bundles/{name}/diaries/")
         else:
             print("  (no .diarykg indices found under corpus/diaries/)")
 
         print("[+] writing catalog.json (author/title from reference.md) …")
-        n_cat, n_auth = build_catalog(genres, out_dir)
+        n_cat, n_auth = build_catalog(genres, out_dir, catalog_keys=opts.catalog_keys)
+
+        product_path = None
+        if opts.catalog_keys is not None:
+            print("[+] writing product.json (frozen selection + checksums) …")
+            product_path = write_product_json(
+                BUNDLES_ROOT / name,
+                name=opts.product_name or name,
+                version=opts.product_version,
+                catalog_keys=opts.catalog_keys,
+                diary_dirs=_diary_dirs_for_product(opts.diary_dirs, n_diaries),
+                spec_path=opts.spec_path,
+            )
 
     except Exception as exc:  # noqa: BLE001
         print(f"[x] build failed: {exc}")
@@ -639,5 +850,7 @@ def run_build_corpus(genres: list[str], opts: BuildCorpusOptions) -> int:
     print(f"  index size    : {size_mb:,.1f} MB")
     print(f"  elapsed       : {fmt_duration(elapsed)}")
     print(f"  written to    : {out_dir}")
+    if product_path is not None:
+        print(f"  product.json  : {product_path}")
     print()
     return 0

@@ -1031,6 +1031,17 @@ Full-corpus default unchanged. Record the measured wall time for a
 `--genre philosophy` build in this document while here; it is the number the
 slice deferral hinges on.
 
+**Measured for real, 2026-09-07, on Turing:** `gutenkg build-corpus --genre
+philosophy` (39 books, 144,046 nodes, 615,559 edges, 725.4 MB index)
+completed in **2m 38s**. [Deferred: DocKG slice](#deferred-dockg-slice)
+closed this question on 2026-09-06 against an *estimate* derived
+proportionally from the full-corpus build time (15.87% of the corpus →
+~3m 33s). This is the estimate checked against a real run, on the actual
+phase-3 code path (`--book`/`--genre` filtering, not the plain `--genre`
+this repo already had) rather than a proportional guess — and it lands
+faster than the estimate, reinforcing rather than reopening that
+deferral.
+
 ### Phase 4 -- Docker / Make parameterization and `bundle make`
 
 - `docker/Dockerfile`: `ARG BUNDLE`, `LABEL`

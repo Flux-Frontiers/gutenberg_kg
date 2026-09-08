@@ -217,12 +217,20 @@ gutenkg export-swift                      # → bundles/gutenberg-all/swift/
 gutenkg export-swift --verify             # report int8 recall while building
 gutenkg export-swift --dtype float        # exact vectors, ~3x larger
 gutenkg export-swift --no-vectors --no-golden   # fast schema-only pass
+gutenkg export-swift --book "Pride and Prejudice" --out bundles/demo/swift --force
+gutenkg export-swift --spec bundles/specs/philosophy-starter.toml --verify
 ```
 
 Produces `core.pack`, `gutenberg.pack` + `gutenberg.vectors`, `diaries.pack` +
 `diaries.vectors`, a `manifest.json`, and a `golden.json` parity file. Only
 chunk and section nodes are carried over — the query path reads nothing else —
 so a 5.7 GB bundle lands under 1 GB.
+
+`--book`/`--genre`/`--spec` filter which books' passages and vectors are
+carried over — a demo of one book does not need the other 252 books' worth
+of index sitting beside it. See [Selective bundles](BUNDLES.md) for the spec
+format, and `gutenkg bundle build`/`export`/`image`/`make` for filtering (or
+rebuilding) the DocKG itself, not just this export.
 
 The app also needs the query encoder, converted once:
 
@@ -569,6 +577,24 @@ gutenkg ingest --force-build
 ```bash
 gutenkg download survey
 ```
+
+### Ship a named subset instead of the full corpus
+
+```bash
+gutenkg bundle validate bundles/specs/philosophy-starter.toml
+gutenkg bundle make     bundles/specs/philosophy-starter.toml --verify --image
+```
+
+Or the same thing through `make` (`SPEC=` resolves inside the recipe):
+
+```bash
+make build-corpus SPEC=bundles/specs/philosophy-starter.toml
+make export-swift SPEC=bundles/specs/philosophy-starter.toml
+make build        SPEC=bundles/specs/philosophy-starter.toml
+```
+
+See [Selective bundles](BUNDLES.md) for the spec format, filter-at-export vs.
+rebuild, tag policy, and the golden-query requirement.
 
 ---
 

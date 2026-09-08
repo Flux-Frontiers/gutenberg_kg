@@ -22,11 +22,15 @@ from gutenberg_kg.export_swift import (
     _PASSAGE_SCHEMA,
     ExportError,
     ExportOptions,
+    _file_path_scope,
     _truncate,
+    build_golden,
     export_swift,
     fts_match_expression,
     fts_phrase_expression,
+    iter_source_vectors,
     locate_bundle,
+    resolve_catalog_selectors,
     rrf_fuse,
     split_source_path,
     window_oversized_sections,
@@ -867,3 +871,373 @@ class TestWindowOversizedSections:
         con = self._pack(tmp_path / "p.pack", 500)
         assert window_oversized_sections(con, trigger_chars=0) == 0
         con.close()
+
+
+# --------------------------------------------------------------------------
+# Phase 2 of analysis/SELECTIVE_BUNDLE_EXPORT_PLAN.md — filter-at-export.
+#
+# Every test below defaults its filtering fields to None/unset somewhere in
+# the same test class as an unfiltered equivalent, or relies on the `packs`
+# fixture (which never sets them) for that baseline — the invariant being
+# guarded is that an existing, unfiltered caller sees no behavior change.
+# --------------------------------------------------------------------------
+
+
+class TestFilePathScope:
+    """The predicate shared by the passage and vector filters."""
+
+    def test_none_matches_everything(self):
+        clause, params = _file_path_scope(None)
+        assert clause == "1"
+        assert params == []
+
+    def test_empty_set_matches_nothing(self):
+        clause, params = _file_path_scope(frozenset())
+        assert clause == "0"
+        assert params == []
+
+    def test_one_key_is_a_single_prefix_predicate(self):
+        clause, params = _file_path_scope(frozenset({"philosophy/Leviathan"}))
+        assert clause == "(file_path LIKE ?)"
+        assert params == ["philosophy/Leviathan/%"]
+
+    def test_several_keys_are_ored_together(self):
+        clause, params = _file_path_scope(frozenset({"a/b", "c/d"}))
+        assert clause.count(" OR ") == 1
+        assert set(params) == {"a/b/%", "c/d/%"}
+
+    def test_column_can_be_qualified_for_a_join(self):
+        clause, _ = _file_path_scope(frozenset({"a/b"}), column="vec_meta.file_path")
+        assert clause == "(vec_meta.file_path LIKE ?)"
+
+
+class TestSelectiveExportCorePack:
+    def test_filters_to_the_given_catalog_keys(self, bundle, tmp_path):
+        out = tmp_path / "swift"
+        export_swift(
+            ExportOptions(
+                bundle=bundle,
+                out=out,
+                with_vectors=False,
+                golden=False,
+                force=True,
+                catalog_keys=frozenset({"philosophy/Leviathan"}),
+            )
+        )
+        keys = {b["key"] for b in _rows(out / "core.pack", "SELECT key FROM books")}
+        assert keys == {"philosophy/Leviathan"}
+        assert _rows(out / "core.pack", "SELECT * FROM genres") == [
+            {"genre": "philosophy", "book_count": 1}
+        ]
+
+    def test_empty_catalog_keys_selects_no_books(self, bundle, tmp_path):
+        out = tmp_path / "swift"
+        export_swift(
+            ExportOptions(
+                bundle=bundle,
+                out=out,
+                with_vectors=False,
+                golden=False,
+                force=True,
+                catalog_keys=frozenset(),
+            )
+        )
+        assert _rows(out / "core.pack", "SELECT key FROM books") == []
+
+
+class TestSelectiveExportPassages:
+    def test_excludes_passages_from_the_other_book(self, bundle, tmp_path):
+        out = tmp_path / "swift"
+        export_swift(
+            ExportOptions(
+                bundle=bundle,
+                out=out,
+                with_vectors=False,
+                golden=False,
+                force=True,
+                catalog_keys=frozenset({"philosophy/Leviathan"}),
+            )
+        )
+        ids = {r["id"] for r in _rows(out / "gutenberg.pack", "SELECT id FROM passages")}
+        assert ids == {"gutenberg:c:1", "gutenberg:c:2", "gutenberg:sec:1"}
+        # s:1 is the Bible's passage — a different book, must not appear.
+        assert "gutenberg:s:1" not in ids
+
+
+def _seed_two_book_vectors(bundle):
+    """Vectors for both fixture books, keyed by ``file_path`` so the per-book
+    filter has something to discriminate on.
+
+    ``_seed_source_vectors`` (used by ``TestVectorSidecar``) deliberately
+    omits ``file_path`` since none of its callers filter by book; this is a
+    separate helper rather than a change to that one, so existing tests keep
+    the exact schema they were written against.
+    """
+    import numpy as np
+
+    from gutenberg_kg.export_swift import EMBED_DIM, _connect_with_vec
+
+    con = _connect_with_vec(bundle / ".dockg" / "vectors.sqlite")
+    con.execute("CREATE TABLE vec_meta(id TEXT PRIMARY KEY, kind TEXT, file_path TEXT)")
+    con.execute(
+        f"CREATE VIRTUAL TABLE vec_nodes USING vec0(embedding float[{EMBED_DIM}] "
+        "distance_metric=cosine)"
+    )
+    # c:1/c:2/sec:1 belong to Leviathan; s:1 to the Bible; t:1 is an
+    # enrichment kind that must never survive a filtered scan even though it
+    # shares Leviathan's file_path.
+    rows = [
+        ("c:1", "chunk", DOC, 0),
+        ("c:2", "chunk", DOC, 1),
+        ("sec:1", "section", DOC, 2),
+        ("s:1", "chunk", BIBLE, 3),
+        ("t:1", "topic", DOC, 4),
+    ]
+    for rowid, (node_id, kind, file_path, axis) in enumerate(rows, start=1):
+        vector = np.zeros(EMBED_DIM, dtype=np.float32)
+        vector[axis] = 1.0
+        con.execute(
+            "INSERT INTO vec_meta(rowid, id, kind, file_path) VALUES (?, ?, ?, ?)",
+            (rowid, node_id, kind, file_path),
+        )
+        con.execute(
+            "INSERT INTO vec_nodes(rowid, embedding) VALUES (?, ?)", (rowid, vector.tobytes())
+        )
+    con.commit()
+    con.close()
+
+
+@pytest.mark.skipif(
+    find_spec("sqlite_vec") is None or find_spec("numpy") is None,
+    reason="vector packs need sqlite-vec (to read the source) and numpy",
+)
+class TestSelectiveExportVectors:
+    """Filter point 3: the scan itself must narrow, not just the write.
+
+    Without this, a three-book export still streams every vector in the
+    store — the thing the design calls out as "phase 2 required".
+    """
+
+    def test_unfiltered_scan_still_yields_every_kind(self, bundle):
+        _seed_two_book_vectors(bundle)
+        ids = {
+            node_id
+            for node_id, _ in iter_source_vectors(bundle / ".dockg" / "vectors.sqlite", None)
+        }
+        assert ids == {"c:1", "c:2", "sec:1", "s:1", "t:1"}
+
+    def test_filtered_scan_excludes_the_other_book_and_enrichment_kinds(self, bundle):
+        _seed_two_book_vectors(bundle)
+        ids = {
+            node_id
+            for node_id, _ in iter_source_vectors(
+                bundle / ".dockg" / "vectors.sqlite",
+                None,
+                allowed_keys=frozenset({"philosophy/Leviathan"}),
+            )
+        }
+        assert ids == {"c:1", "c:2", "sec:1"}
+
+    def test_end_to_end_sidecar_carries_only_the_selected_book(self, bundle, tmp_path):
+        _seed_two_book_vectors(bundle)
+        out = tmp_path / "swift"
+        report = export_swift(
+            ExportOptions(
+                bundle=bundle,
+                out=out,
+                golden=False,
+                force=True,
+                catalog_keys=frozenset({"philosophy/Leviathan"}),
+            )
+        )
+        pack = next(p for p in report.packs if p.name == "gutenberg.pack")
+        # c:1, c:2, sec:1 — not the Bible's s:1, not the topic t:1.
+        assert pack.vectors == 3
+
+
+class TestSelectiveExportDiaryDirs:
+    """``diary_dirs`` is a tri-state override, not another on/off flag."""
+
+    def test_none_defers_to_include_diaries(self, bundle, tmp_path):
+        out = tmp_path / "swift"
+        export_swift(
+            ExportOptions(bundle=bundle, out=out, with_vectors=False, golden=False, force=True)
+        )
+        assert (out / "diaries.pack").exists()
+
+    def test_empty_tuple_excludes_despite_include_diaries_defaulting_true(self, bundle, tmp_path):
+        out = tmp_path / "swift"
+        export_swift(
+            ExportOptions(
+                bundle=bundle,
+                out=out,
+                with_vectors=False,
+                golden=False,
+                force=True,
+                diary_dirs=(),
+            )
+        )
+        assert not (out / "diaries.pack").exists()
+
+    def test_matching_slug_includes_the_diary(self, bundle, tmp_path):
+        out = tmp_path / "swift"
+        export_swift(
+            ExportOptions(
+                bundle=bundle,
+                out=out,
+                with_vectors=False,
+                golden=False,
+                force=True,
+                diary_dirs=("pepys-complete",),
+            )
+        )
+        assert (out / "diaries.pack").exists()
+
+    def test_non_matching_slug_excludes_the_diary(self, bundle, tmp_path):
+        out = tmp_path / "swift"
+        export_swift(
+            ExportOptions(
+                bundle=bundle,
+                out=out,
+                with_vectors=False,
+                golden=False,
+                force=True,
+                diary_dirs=("some-other-diary",),
+            )
+        )
+        assert not (out / "diaries.pack").exists()
+
+
+class TestSelectiveExportGoldenQueries:
+    def test_custom_queries_are_recorded_verbatim(self, packs, monkeypatch):
+        pytest.importorskip("numpy")
+        import numpy as np
+
+        class FakeEmbedder:
+            def embed_texts(self, texts):
+                return [np.zeros(384, dtype=np.float32) for _ in texts]
+
+        monkeypatch.setattr("gutenberg_kg.export_swift._make_embedder", lambda: FakeEmbedder())
+        _, out = packs
+        result = build_golden(
+            {"gutenberg": out / "gutenberg.pack"},
+            k=1,
+            dtype="int8",
+            queries=("q1", "q2", "q3"),
+        )
+        assert [entry["query"] for entry in result["queries"]] == ["q1", "q2", "q3"]
+
+
+class TestSelectiveExportManifest:
+    def test_product_is_absent_without_catalog_keys(self, packs):
+        _, out = packs
+        manifest = json.loads((out / "manifest.json").read_text())
+        assert manifest["product"] is None
+
+    def test_product_is_recorded_with_catalog_keys(self, bundle, tmp_path):
+        out = tmp_path / "swift"
+        export_swift(
+            ExportOptions(
+                bundle=bundle,
+                out=out,
+                with_vectors=False,
+                golden=False,
+                force=True,
+                catalog_keys=frozenset({"philosophy/Leviathan"}),
+                product_name="philosophy-starter",
+                product_version="0.1.0",
+            )
+        )
+        manifest = json.loads((out / "manifest.json").read_text())
+        product = manifest["product"]
+        assert product["name"] == "philosophy-starter"
+        assert product["version"] == "0.1.0"
+        assert product["book_count"] == 1
+        assert len(product["catalog_keys_sha256"]) == 64
+
+
+class TestSelectiveExportDestinationWipe:
+    def test_force_removes_a_prior_exports_orphaned_pack(self, bundle, tmp_path):
+        out = tmp_path / "swift"
+        export_swift(
+            ExportOptions(bundle=bundle, out=out, with_vectors=False, golden=False, force=True)
+        )
+        assert (out / "diaries.pack").exists()
+
+        # Re-export as books-only. Without a wipe, the stale diaries.pack
+        # from the first run would sit beside the new files forever.
+        export_swift(
+            ExportOptions(
+                bundle=bundle,
+                out=out,
+                with_vectors=False,
+                golden=False,
+                force=True,
+                include_diaries=False,
+            )
+        )
+        assert not (out / "diaries.pack").exists()
+        assert (out / "gutenberg.pack").exists()
+
+
+class TestResolveCatalogSelectors:
+    """CLI --book/--genre resolution against a built bundle's catalog.json.
+
+    A sibling to bundle_spec.resolve_selection, tested separately: this one
+    resolves against catalog.json entries, not corpus/ reference.md files,
+    so it works against a bundle with no source corpus/ tree beside it.
+    """
+
+    CATALOG = {
+        "philosophy/Leviathan": {"genre": "philosophy", "ebook_id": 3207},
+        "philosophy/The Republic": {"genre": "philosophy", "ebook_id": 1497},
+        "sacred-texts/The Bible (King James Version)": {
+            "genre": "sacred-texts",
+            "ebook_id": 10,
+        },
+    }
+
+    def test_explicit_catalog_key(self):
+        keys, missing = resolve_catalog_selectors(
+            books=["philosophy/Leviathan"], genres=[], catalog=self.CATALOG
+        )
+        assert keys == {"philosophy/Leviathan"}
+        assert missing == ()
+
+    def test_ebook_id(self):
+        keys, missing = resolve_catalog_selectors(books=["3207"], genres=[], catalog=self.CATALOG)
+        assert keys == {"philosophy/Leviathan"}
+        assert missing == ()
+
+    def test_unknown_ebook_id_is_missing(self):
+        keys, missing = resolve_catalog_selectors(books=["999999"], genres=[], catalog=self.CATALOG)
+        assert keys == frozenset()
+        assert missing == ("999999",)
+
+    def test_bare_name_unique_across_catalog(self):
+        keys, missing = resolve_catalog_selectors(
+            books=["Leviathan"], genres=[], catalog=self.CATALOG
+        )
+        assert keys == {"philosophy/Leviathan"}
+        assert missing == ()
+
+    def test_genre_expands_to_every_book_in_it(self):
+        keys, missing = resolve_catalog_selectors(
+            books=[], genres=["philosophy"], catalog=self.CATALOG
+        )
+        assert keys == {"philosophy/Leviathan", "philosophy/The Republic"}
+        assert missing == ()
+
+    def test_unknown_selectors_are_all_reported(self):
+        keys, missing = resolve_catalog_selectors(
+            books=["nope"], genres=["nope-genre"], catalog=self.CATALOG
+        )
+        assert keys == frozenset()
+        assert set(missing) == {"nope", "nope-genre"}
+
+    def test_books_and_genres_union_without_duplicates(self):
+        keys, missing = resolve_catalog_selectors(
+            books=["philosophy/Leviathan"], genres=["philosophy"], catalog=self.CATALOG
+        )
+        assert keys == {"philosophy/Leviathan", "philosophy/The Republic"}
+        assert missing == ()

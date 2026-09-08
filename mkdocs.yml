@@ -62,6 +62,7 @@ nav:
       - Download pipeline: DOWNLOAD_PIPELINE.md
       - IA catalog workflow: IA_CATALOG_WORKFLOW.md
       - Ingestion pipeline: ingestion-pipeline.md
+      - Selective bundles: BUNDLES.md
   - Interfaces:
       - Chat UI: CHAT_UI.md
       - On-device corpus packs: ON_DEVICE.md

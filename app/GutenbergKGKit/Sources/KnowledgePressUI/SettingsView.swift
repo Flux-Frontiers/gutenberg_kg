@@ -8,13 +8,27 @@ import Foundation
 import GutenbergKGKit
 import SwiftUI
 
-struct SettingsView: View {
+public struct SettingsView: View {
     @Environment(AppModel.self) private var model
+    @State private var confirmingDelete = false
+
+    /// Whether to show the answer engine and corpus scope here.
+    ///
+    /// False on the shells whose sidebar already carries them: one home per
+    /// control, so a reader who changed the scope in the sidebar does not
+    /// find a second copy of it here that may or may not agree.
+    let showsEngineAndScope: Bool
+
+    /// Public so the macOS app module can put it in a `Settings` scene,
+    /// which is what gives Cmd-comma its standard behaviour.
+    public init(showsEngineAndScope: Bool = true) {
+        self.showsEngineAndScope = showsEngineAndScope
+    }
     #if !os(macOS)
         @State private var showingAbout = false
     #endif
 
-    var body: some View {
+    public var body: some View {
         @Bindable var model = model
         List {
             Section {
@@ -33,13 +47,10 @@ struct SettingsView: View {
                 }
             }
 
-            Section("📖 Corpus") {
-                Picker("Scope", selection: $model.corpus) {
-                    ForEach(model.corpusOptions, id: \.self) { Text($0).tag($0) }
+            if showsEngineAndScope {
+                Section("📖 Corpus") {
+                    CorpusScopePicker()
                 }
-                .help(
-                    "all = DocKG + DiaryKG · gutenberg = DocKG only · diary = diaries only · <genre> = one genre"
-                )
             }
 
             Section("⚙️ Search") {
@@ -52,13 +63,19 @@ struct SettingsView: View {
                     format: "%.2f")
             }
 
-            answerEngineSection
+            if showsEngineAndScope {
+                Section("🤖 Answers") {
+                    AnswerEnginePicker()
+                }
+            }
+
+            illustrationSection
 
             Section {
-                Button("🗑️ Clear chat", role: .destructive) {
-                    model.turns.removeAll()
+                Button("🗑️ Delete conversation", role: .destructive) {
+                    confirmingDelete = true
                 }
-                .disabled(model.turns.isEmpty)
+                .disabled(model.activeConversation == nil && model.turns.isEmpty)
             }
 
             corpusSection
@@ -73,6 +90,14 @@ struct SettingsView: View {
                     Button("ℹ️ About") { showingAbout = true }
                 }
             #endif
+        }
+        .confirmationDialog(
+            "Delete this conversation?", isPresented: $confirmingDelete, titleVisibility: .visible
+        ) {
+            Button("Delete", role: .destructive) { model.deleteActiveConversation() }
+            Button("Cancel", role: .cancel) {}
+        } message: {
+            Text("This removes the questions, answers, and any illustrations. It cannot be undone.")
         }
         #if os(macOS)
             .listStyle(.sidebar)
@@ -147,79 +172,26 @@ struct SettingsView: View {
         }
     }
 
+    /// Size of a rendered illustration — chat.py's "Resolution" selectbox.
+    ///
+    /// Sits beside the answer engine rather than in the Worker section
+    /// because it is a choice about the picture, not about the connection,
+    /// even though the worker is what draws it.
     @ViewBuilder
-    private var answerEngineSection: some View {
+    private var illustrationSection: some View {
         @Bindable var model = model
-        Section("🤖 Answers") {
-            Picker("Engine", selection: $model.engine) {
-                ForEach(AnswerEngine.allCases, id: \.self) { engine in
-                    Text(engine.label).tag(engine)
+        Section("🎨 Illustrations") {
+            Picker("Resolution", selection: $model.imageResolution) {
+                ForEach(ImageResolution.allCases, id: \.self) { resolution in
+                    Text(resolution.label).tag(resolution)
                 }
             }
-            .onChange(of: model.engine) { _, engine in
-                if engine == .worker { Task { await model.refreshModels() } }
-                if engine == .onDevice { model.prewarmOnDevice() }
-            }
-
-            Text(model.engine.detail)
-                .font(.caption)
+            Text("Smaller renders faster. Illustrations always come from the worker.")
+                .font(.caption2)
                 .foregroundStyle(.secondary)
-
-            switch model.engine {
-            case .onDevice:
-                if let reason = model.onDeviceAvailability.reason {
-                    Label(
-                        "Unavailable — \(reason). Pick another engine to get answers.",
-                        systemImage: "exclamationmark.triangle")
-                        .font(.caption)
-                        .foregroundStyle(.orange)
-                } else {
-                    Text("Context window 4,096 tokens — up to 5 passages reach the model.")
-                        .font(.caption2)
-                        .foregroundStyle(.secondary)
-                }
-            case .privateCloud:
-                if let reason = model.privateCloudAvailability.reason {
-                    Label(
-                        "Unavailable — \(reason). Pick another engine to get answers.",
-                        systemImage: "exclamationmark.triangle")
-                        .font(.caption)
-                        .foregroundStyle(.orange)
-                } else {
-                    Text("Context window 32,768 tokens — up to 12 passages reach the model.")
-                        .font(.caption2)
-                        .foregroundStyle(.secondary)
-                    if let quota = model.privateCloudQuotaCaption {
-                        Label(quota, systemImage: "gauge.with.needle")
-                            .font(.caption)
-                            .foregroundStyle(.orange)
-                        Button("Show usage options") { model.presentPrivateCloudLimitIncrease() }
-                            .font(.caption)
-                    }
-                }
-            case .worker:
-                Picker("Provider", selection: $model.backend) {
-                    ForEach(AppModel.providers, id: \.key) { provider in
-                        Text(provider.label).tag(provider.key)
-                    }
-                }
-                .onChange(of: model.backend) { _, _ in
-                    Task { await model.refreshModels() }
-                }
-                if model.models.isEmpty {
-                    Text("⚠️ No models reported — using provider default.")
-                        .font(.caption)
-                        .foregroundStyle(.secondary)
-                } else {
-                    Picker("Model", selection: $model.model) {
-                        ForEach(model.models, id: \.self) { Text($0).tag($0) }
-                    }
-                }
-            case .off:
-                EmptyView()
-            }
         }
     }
+
 }
 
 extension SettingsView {

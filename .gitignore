@@ -171,7 +171,14 @@ site/
 # coincidence, so catalog.json (and anything else a future bundle format adds)
 # stayed committable; build_corpus.py's docstring already claimed this directory
 # was ignored, which it was not. Ignore the whole tree, as intended.
-bundles/
+#
+# bundles/specs/ is the one exception: hand-written TOML bundle specs
+# (analysis/SELECTIVE_BUNDLE_EXPORT_PLAN.md), not build output, and small
+# enough to commit. The re-include has to be spelled out in two steps --
+# `!bundles/specs/` alone would not recurse into it.
+bundles/*
+!bundles/specs/
+!bundles/specs/**
 
 # AgentKG local store -- nothing under it is ever tracked
 **/.agentkg/

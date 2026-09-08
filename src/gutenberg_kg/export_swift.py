@@ -78,6 +78,7 @@ import bisect
 import hashlib
 import json
 import math
+import shutil
 import sqlite3
 import time
 from collections.abc import Iterator, Sequence
@@ -94,7 +95,9 @@ __all__ = [
     "ExportReport",
     "PackStats",
     "export_swift",
+    "load_catalog",
     "locate_bundle",
+    "resolve_catalog_selectors",
 ]
 
 # --------------------------------------------------------------------------
@@ -401,6 +404,7 @@ def iter_source_passages(
     graph: Path,
     *,
     max_chars: int = 0,
+    allowed_keys: frozenset[str] | None = None,
 ) -> Iterator[dict]:
     """Yield searchable passages from a ``graph.sqlite``.
 
@@ -415,6 +419,11 @@ def iter_source_passages(
     :param graph: Path to a DocKG/DiaryKG ``graph.sqlite``.
     :param max_chars: Truncate ``content`` to this many characters, at a word
         boundary; 0 keeps the passage whole.
+    :param allowed_keys: Restrict to nodes whose ``file_path`` starts with one
+        of these ``"<genre>/<book>"`` keys. ``None`` keeps every book —
+        callers pass this for a book-filtered bundle export, never for a
+        diary source (diaries are scoped by which sources are passed in at
+        all, not by this filter).
     :yields: Row dicts keyed by the columns in :data:`_WANTED_NODE_COLUMNS`,
         with absent columns set to ``None``.
     """
@@ -435,6 +444,10 @@ def iter_source_passages(
         params: list[object] = list(SEARCHED_KINDS)
         if "file_path" in present:
             sql += " AND (file_path IS NULL OR file_path NOT LIKE '%reference.md')"
+            if allowed_keys is not None:
+                scope_sql, scope_params = _file_path_scope(allowed_keys)
+                sql += f" AND {scope_sql}"
+                params.extend(scope_params)
         sql += " ORDER BY rowid"
 
         con.row_factory = sqlite3.Row
@@ -483,6 +496,55 @@ def load_catalog(path: Path | None) -> dict[str, dict]:
         return {}
 
 
+def resolve_catalog_selectors(
+    *, books: Sequence[str], genres: Sequence[str], catalog: dict[str, dict]
+) -> tuple[frozenset[str], tuple[str, ...]]:
+    """Resolve ``--book``/``--genre`` selectors against a *built* bundle's catalog.
+
+    A sibling to ``bundle_spec.resolve_selection``, deliberately not shared
+    with it: that resolver reads ``corpus/<genre>/<book>/reference.md`` from
+    the source tree used to *build* a bundle, while ``export-swift --book``
+    filters a bundle that may be all that is present — a downloaded bundle
+    with no ``corpus/`` beside it still has to work. Both apply the same
+    three rules in the same order (explicit key, ebook_id, unique bare name),
+    just against different data.
+
+    :param books: Raw ``--book`` values.
+    :param genres: Raw ``--genre`` values.
+    :param catalog: Parsed ``catalog.json``.
+    :returns: ``(catalog_keys, missing)`` — ``missing`` holds every selector
+        that did not resolve to exactly one book or a non-empty genre.
+    """
+    keys: set[str] = set()
+    missing: list[str] = []
+
+    for genre in genres:
+        matched = [
+            key
+            for key, meta in catalog.items()
+            if (meta.get("genre") or key.split("/", 1)[0]) == genre
+        ]
+        if not matched:
+            missing.append(genre)
+        keys.update(matched)
+
+    for selector in books:
+        if selector in catalog:
+            keys.add(selector)
+            continue
+        if selector.isdigit():
+            ebook_id = int(selector)
+            found = [key for key, meta in catalog.items() if meta.get("ebook_id") == ebook_id]
+        else:
+            found = [key for key in catalog if key.split("/", 1)[-1] == selector]
+        if len(found) == 1:
+            keys.add(found[0])
+        else:
+            missing.append(selector)
+
+    return frozenset(keys), tuple(missing)
+
+
 def split_source_path(file_path: str | None) -> tuple[str | None, str | None]:
     """Split a node ``file_path`` into ``(genre, book)``.
 
@@ -498,6 +560,35 @@ def split_source_path(file_path: str | None) -> tuple[str | None, str | None]:
     if len(parts) < 2:
         return None, None
     return parts[0], parts[1]
+
+
+def _file_path_scope(
+    allowed_keys: frozenset[str] | None, *, column: str = "file_path"
+) -> tuple[str, list[str]]:
+    """A SQL predicate restricting *column* to a set of ``"<genre>/<book>"`` keys.
+
+    Used identically by :func:`iter_source_passages` and
+    :func:`iter_source_vectors` -- a selective export's per-book filter has to
+    apply at both, or the vector sidecar streams the full store while the
+    passage table holds only a subset (the thing "Phase 2 required" in the
+    design guards against: a three-book export must not still scan ~731 K
+    vector rows).
+
+    :param allowed_keys: Keys to allow, or ``None`` for no restriction at all.
+    :param column: The column name to filter on, qualified if needed
+        (``"vec_meta.file_path"`` in a join).
+    :returns: ``("1", [])`` when unrestricted; ``("0", [])`` when
+        *allowed_keys* is given but empty, so the query matches nothing rather
+        than every ``OR``-less clause degenerating into "match everything";
+        otherwise an ``OR``-chain of prefix predicates plus their params.
+    """
+    if allowed_keys is None:
+        return "1", []
+    if not allowed_keys:
+        return "0", []
+    clauses = " OR ".join(f"{column} LIKE ?" for _ in allowed_keys)
+    params = [f"{key}/%" for key in sorted(allowed_keys)]
+    return f"({clauses})", params
 
 
 # --------------------------------------------------------------------------
@@ -548,7 +639,12 @@ def _connect_with_vec(path: Path, *, read_only: bool = False) -> sqlite3.Connect
     return con
 
 
-def iter_source_vectors(vectors: Path | None, lancedb: Path | None) -> Iterator[tuple[str, object]]:
+def iter_source_vectors(
+    vectors: Path | None,
+    lancedb: Path | None,
+    *,
+    allowed_keys: frozenset[str] | None = None,
+) -> Iterator[tuple[str, object]]:
     """Stream ``(node_id, vector)`` from whichever store shape the bundle has.
 
     Streams rather than materialising: the consolidated store holds 688 K
@@ -556,6 +652,14 @@ def iter_source_vectors(vectors: Path | None, lancedb: Path | None) -> Iterator[
 
     :param vectors: A migrated ``vectors.sqlite``, or None.
     :param lancedb: A legacy ``lancedb/`` directory, or None.
+    :param allowed_keys: Restrict to ``vec_meta`` rows whose ``file_path``
+        starts with one of these ``"<genre>/<book>"`` keys, applied alongside
+        ``kind IN ('chunk','section')`` so enrichment-kind rows (topic,
+        entity, keyword, document) never reach the scan either. Only the
+        ``vectors.sqlite`` path filters at the query — a book-filtered export
+        against the legacy ``lancedb/`` shape still streams every row and
+        relies on the caller's own id check to drop the rest, since LanceDB
+        is retired fleet-wide and not worth optimising further.
     :yields: ``(id, numpy float32 array)`` pairs.
     :raises ExportError: If neither store is present.
     """
@@ -563,10 +667,17 @@ def iter_source_vectors(vectors: Path | None, lancedb: Path | None) -> Iterator[
     if vectors is not None:
         con = _connect_with_vec(vectors, read_only=True)
         try:
-            rows = con.execute(
+            scope_sql, scope_params = _file_path_scope(allowed_keys, column="vec_meta.file_path")
+            kinds = ", ".join(f"'{kind}'" for kind in SEARCHED_KINDS)
+            sql = (
                 "SELECT vec_meta.id, vec_nodes.embedding "
+                "FROM vec_nodes JOIN vec_meta ON vec_meta.rowid = vec_nodes.rowid "
+                f"WHERE vec_meta.kind IN ({kinds}) AND {scope_sql}"
+                if allowed_keys is not None
+                else "SELECT vec_meta.id, vec_nodes.embedding "
                 "FROM vec_nodes JOIN vec_meta ON vec_meta.rowid = vec_nodes.rowid"
             )
+            rows = con.execute(sql, scope_params if allowed_keys is not None else [])
             for node_id, blob in rows:
                 yield node_id, numpy.frombuffer(blob, dtype=numpy.float32)
         finally:
@@ -700,6 +811,7 @@ def build_core_pack(
     bundle: BundlePaths,
     catalog: dict[str, dict],
     diary_count: int,
+    catalog_keys: frozenset[str] | None = None,
 ) -> PackStats:
     """Write ``core.pack`` — the catalog the Browse tab and the scope picker read.
 
@@ -707,8 +819,12 @@ def build_core_pack(
     :param bundle: Resolved bundle paths.
     :param catalog: Parsed ``catalog.json``.
     :param diary_count: Diaries included in this export.
+    :param catalog_keys: Restrict to these ``"<genre>/<book>"`` keys; ``None``
+        keeps every book in ``catalog``.
     :returns: Stats for the finished pack.
     """
+    if catalog_keys is not None:
+        catalog = {key: meta for key, meta in catalog.items() if key in catalog_keys}
     con = _fresh_db(dest, _CORE_SCHEMA)
     try:
         file_paths = _document_paths(bundle.graph)
@@ -818,6 +934,10 @@ class _PassageSource:
     #: Fixed title/author/genre for a whole KG (diaries), or None to take them
     #: from the catalog per book.
     fixed_meta: dict | None = None
+    #: Book-level filter for a selective export; None for no filtering. Never
+    #: set for a diary source — diaries are scoped by which sources are
+    #: passed to :func:`build_passage_pack` at all, not by this.
+    allowed_keys: frozenset[str] | None = None
 
 
 #: Marks a synthetic Browse-only section id: "<parent id>#part3".
@@ -1009,7 +1129,9 @@ def build_passage_pack(
             fixed = source.fixed_meta or diary_meta.get(source.kg_name)
             written = 0
             batch: list[tuple] = []
-            for record in iter_source_passages(source.graph, max_chars=max_chars):
+            for record in iter_source_passages(
+                source.graph, max_chars=max_chars, allowed_keys=source.allowed_keys
+            ):
                 genre, book = split_source_path(record["file_path"])
                 meta = catalog.get(f"{genre}/{book}", {}) if genre and book else {}
                 batch.append(
@@ -1131,7 +1253,9 @@ def write_vector_sidecar(
                     progress(f"  {source.kg_name}: no vector store — lexical search only")
                     continue
                 source_start = written
-                for node_id, vector in iter_source_vectors(source.vectors, source.lancedb):
+                for node_id, vector in iter_source_vectors(
+                    source.vectors, source.lancedb, allowed_keys=source.allowed_keys
+                ):
                     # The pack id is namespaced by kg_name, so a vector can only
                     # ever land on a row from its own KG — a diary's vector
                     # cannot claim another diary's colliding node id.
@@ -1558,7 +1682,9 @@ def verify_pack(
     say("  loading source vectors for exact ground truth…")
     ids: list[str] = []
     rows: list = []
-    for node_id, vector in iter_source_vectors(source.vectors, source.lancedb):
+    for node_id, vector in iter_source_vectors(
+        source.vectors, source.lancedb, allowed_keys=source.allowed_keys
+    ):
         ids.append(f"{source.kg_name}:{node_id}")
         rows.append(vector)
     if not rows:
@@ -1626,7 +1752,15 @@ def verify_pack(
 
 @dataclass
 class ExportOptions:
-    """Inputs to :func:`export_swift`."""
+    """Inputs to :func:`export_swift`.
+
+    ``catalog_keys``, ``diary_dirs``, ``golden_queries``, ``product_name``,
+    and ``product_version`` are the selective-bundle-export additions
+    (``analysis/SELECTIVE_BUNDLE_EXPORT_PLAN.md`` phase 2). Every one of them
+    defaults to ``None``, and ``None`` reproduces the export's original,
+    unfiltered behaviour exactly — an existing caller that never sets them
+    is unaffected.
+    """
 
     bundle: Path = DEFAULT_BUNDLE
     out: Path | None = None
@@ -1638,6 +1772,21 @@ class ExportOptions:
     golden_k: int = 10
     verify: bool = False
     force: bool = False
+    #: Restrict to these ``"<genre>/<book>"`` keys. ``None`` keeps every book.
+    catalog_keys: frozenset[str] | None = None
+    #: Diary slugs to bundle. ``None`` defers to ``include_diaries`` (the
+    #: original on/off switch); a tuple is an explicit allow-list, and an
+    #: *empty* tuple explicitly means no diaries — distinct from ``None``,
+    #: which is "unspecified, use the flag".
+    diary_dirs: tuple[str, ...] | None = None
+    #: Golden queries to record verbatim, e.g. a spec's own. ``None`` keeps
+    #: the module-level :data:`GOLDEN_QUERIES`.
+    golden_queries: tuple[str, ...] | None = None
+    #: Recorded in the manifest's nested ``"product"`` block, only emitted
+    #: when ``catalog_keys`` is set — an unfiltered export is not a named
+    #: product and gets no such claim.
+    product_name: str | None = None
+    product_version: str | None = None
 
     def resolved_out(self) -> Path:
         """Output directory; defaults to ``<bundle>/swift``."""
@@ -1676,20 +1825,37 @@ def export_swift(options: ExportOptions, *, progress=None) -> ExportReport:
 
     bundle = locate_bundle(Path(options.bundle))
     out = options.resolved_out()
-    if out.exists() and any(out.iterdir()) and not options.force:
-        raise ExportError(f"{out} is not empty — pass --force to overwrite it.")
+    if out.exists() and any(out.iterdir()):
+        if not options.force:
+            raise ExportError(f"{out} is not empty — pass --force to overwrite it.")
+        # Wipe rather than write over: a spec whose book set shrank must not
+        # leave the previous run's orphaned pack files sitting next to the
+        # new, smaller ones.
+        for child in out.iterdir():
+            shutil.rmtree(child) if child.is_dir() else child.unlink()
     out.mkdir(parents=True, exist_ok=True)
 
     catalog = load_catalog(bundle.catalog)
     if not catalog:
         say("  WARNING: no catalog.json — books will carry no title or author")
 
-    diaries = bundle.diaries if options.include_diaries else ()
+    if options.diary_dirs is not None:
+        allowed_diary_slugs = frozenset(options.diary_dirs)
+        diaries = tuple(d for d in bundle.diaries if d.slug in allowed_diary_slugs)
+    else:
+        diaries = bundle.diaries if options.include_diaries else ()
     report = ExportReport(out=out)
 
-    say(f"core.pack  ← {len(catalog)} books")
+    book_count = len(options.catalog_keys) if options.catalog_keys is not None else len(catalog)
+    say(f"core.pack  ← {book_count} books")
     report.packs.append(
-        build_core_pack(out / "core.pack", bundle=bundle, catalog=catalog, diary_count=len(diaries))
+        build_core_pack(
+            out / "core.pack",
+            bundle=bundle,
+            catalog=catalog,
+            diary_count=len(diaries),
+            catalog_keys=options.catalog_keys,
+        )
     )
 
     books_source = _PassageSource(
@@ -1698,6 +1864,7 @@ def export_swift(options: ExportOptions, *, progress=None) -> ExportReport:
         kg_kind="KGKind.GUTENBERG",
         vectors=bundle.vectors,
         lancedb=bundle.lancedb,
+        allowed_keys=options.catalog_keys,
     )
     say("gutenberg.pack")
     report.packs.append(
@@ -1740,7 +1907,11 @@ def export_swift(options: ExportOptions, *, progress=None) -> ExportReport:
     if options.golden and options.with_vectors:
         say("golden.json")
         report.golden = build_golden(
-            pack_paths, k=options.golden_k, dtype=options.dtype, progress=say
+            pack_paths,
+            k=options.golden_k,
+            dtype=options.dtype,
+            queries=options.golden_queries or GOLDEN_QUERIES,
+            progress=say,
         )
         (out / "golden.json").write_text(
             json.dumps(report.golden, indent=2, ensure_ascii=False), encoding="utf-8"
@@ -1776,8 +1947,20 @@ def _manifest(report: ExportReport, bundle: BundlePaths, options: ExportOptions)
     :param options: The options used.
     :returns: The manifest document.
     """
+    product = None
+    if options.catalog_keys is not None:
+        keys_digest = hashlib.sha256(
+            "\n".join(sorted(options.catalog_keys)).encode("utf-8")
+        ).hexdigest()
+        product = {
+            "name": options.product_name or "",
+            "version": options.product_version or "",
+            "catalog_keys_sha256": keys_digest,
+            "book_count": len(options.catalog_keys),
+        }
     return {
         "pack_version": PACK_VERSION,
+        "product": product,
         "generated": datetime.now(UTC).isoformat(timespec="seconds"),
         "source_bundle": str(bundle.root),
         "embedder": {
