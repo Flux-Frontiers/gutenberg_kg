@@ -44,6 +44,20 @@ struct KnowledgePressApp: App {
             CommandGroup(replacing: .appInfo) {
                 Button("About The Knowledge Press") { openWindow(id: "about") }
             }
+            CommandGroup(after: .newItem) {
+                Button("New Chat") { model.newConversation() }
+                    .keyboardShortcut("n")
+                    .disabled(!model.canStartNewChat)
+            }
+        }
+
+        // The standard Settings window, which is what makes Cmd-comma and
+        // the app menu work without wiring either by hand. Engine and scope
+        // are omitted: MacRootView's sidebar owns them.
+        Settings {
+            SettingsView(showsEngineAndScope: false)
+                .environment(model)
+                .frame(width: 420, height: 560)
         }
 
         Window("About The Knowledge Press", id: "about") {

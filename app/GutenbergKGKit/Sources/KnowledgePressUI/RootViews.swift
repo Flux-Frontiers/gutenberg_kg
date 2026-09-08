@@ -7,7 +7,13 @@
 
 import SwiftUI
 
-/// macOS window: settings sidebar + Chat/Browse tabs.
+/// macOS window: the conversations sidebar, with the chat alongside.
+///
+/// The sidebar used to *be* the settings form, which put a full page of
+/// sliders permanently beside what you were reading and left no home for
+/// past chats. Settings now lives in the standard Settings window
+/// (Cmd-comma), where a Mac user looks for it, and the sidebar carries the
+/// chats plus the two controls worth seeing per question.
 ///
 /// `columnVisibility` starts `.automatic` — macOS's own default — rather
 /// than forcing it open or shut; the point of switching to the explicit
@@ -15,21 +21,47 @@ import SwiftUI
 /// appear in the toolbar, so a Mac window can hide the sidebar the same way
 /// Xcode, Mail, and Notes do, without changing the split view's own default.
 public struct MacRootView: View {
+    @Environment(AppModel.self) private var model
     @State private var columnVisibility = NavigationSplitViewVisibility.automatic
+    @State private var selection: SidebarItem? = .chat
+    @State private var search = ""
+    @State private var confirmingDelete = false
 
     public init() {}
 
     public var body: some View {
         NavigationSplitView(columnVisibility: $columnVisibility) {
-            SettingsView()
+            ConversationSidebar(selection: $selection, search: $search)
+                .searchable(text: $search, placement: .sidebar, prompt: "Search chats")
                 .navigationSplitViewColumnWidth(min: 260, ideal: 300)
         } detail: {
-            TabView {
-                ChatView()
-                    .tabItem { Label("Chat", systemImage: "text.bubble") }
-                BrowseView()
-                    .tabItem { Label("Browse", systemImage: "books.vertical") }
-            }
+            detail
+                .toolbar {
+                    ToolbarItem {
+                        Button("Delete", systemImage: "trash") {
+                            confirmingDelete = true
+                        }
+                        .disabled(model.activeConversation == nil && model.turns.isEmpty)
+                    }
+                }
+                .deleteConversationConfirmation($confirmingDelete)
+        }
+        .onChange(of: selection) { _, item in
+            if case .conversation(let id) = item { model.select(id) }
+        }
+        .onChange(of: model.activeConversation?.id) { _, id in
+            if let id, selection == .chat { selection = .conversation(id) }
+        }
+    }
+
+    @ViewBuilder
+    private var detail: some View {
+        switch selection {
+        case .browse:
+            BrowseView()
+        case .chat, .conversation, .none:
+            ChatView(showsHeader: false)
+                .navigationTitle(model.activeConversation?.title ?? "New chat")
         }
     }
 }
@@ -43,6 +75,7 @@ public struct MacRootView: View {
 public struct PhoneRootView: View {
     @Environment(AppModel.self) private var model
     @State private var showingSettings = false
+    @State private var showingHistory = false
     @State private var confirmingDelete = false
 
     public init() {}
@@ -51,9 +84,14 @@ public struct PhoneRootView: View {
         TabView {
             NavigationStack {
                 ChatView(showsHeader: false)
-                    .navigationTitle("The Knowledge Press")
+                    .navigationTitle(model.activeConversation?.title ?? "The Knowledge Press")
                     .toolbarTitleDisplayMode(.inline)
                     .toolbar {
+                        ToolbarItem(placement: .navigation) {
+                            Button("Chats", systemImage: "sidebar.left") {
+                                showingHistory = true
+                            }
+                        }
                         ToolbarItem(placement: .primaryAction) {
                             Button("Settings", systemImage: "slider.horizontal.3") {
                                 showingSettings = true
@@ -73,8 +111,13 @@ public struct PhoneRootView: View {
             BrowseView()
                 .tabItem { Label("Browse", systemImage: "books.vertical") }
         }
+        .sheet(isPresented: $showingHistory) {
+            ConversationHistorySheet(isPresented: $showingHistory)
+        }
         .sheet(isPresented: $showingSettings) {
             NavigationStack {
+                // The phone has no sidebar, so Settings keeps engine and
+                // scope -- there is nowhere else for them to live here.
                 SettingsView()
                     .navigationTitle("Settings")
                     .toolbarTitleDisplayMode(.inline)
@@ -83,6 +126,45 @@ public struct PhoneRootView: View {
                             Button("Done") { showingSettings = false }
                         }
                     }
+            }
+        }
+    }
+}
+
+/// The phone's route to past chats: the same list the iPad sidebar shows,
+/// in a sheet.
+///
+/// A sheet rather than the edge-swipe drawer the Claude app uses: a drawer
+/// is gesture code that can conflict with the scroll view and the system's
+/// own back-swipe, and this can be replaced by one later without touching
+/// the list itself.
+private struct ConversationHistorySheet: View {
+    @Environment(AppModel.self) private var model
+    @Binding var isPresented: Bool
+    @State private var search = ""
+
+    var body: some View {
+        NavigationStack {
+            List {
+                Section {
+                    Button("New chat", systemImage: "square.and.pencil") {
+                        model.newConversation()
+                        isPresented = false
+                    }
+                    .disabled(model.turns.isEmpty)
+                }
+
+                ConversationListView(
+                    search: $search, presentation: .sheet,
+                    onSelect: { isPresented = false })
+            }
+            .searchable(text: $search, prompt: "Search chats")
+            .navigationTitle("Chats")
+            .toolbarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .confirmationAction) {
+                    Button("Done") { isPresented = false }
+                }
             }
         }
     }

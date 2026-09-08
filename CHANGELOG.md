@@ -10,6 +10,23 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added
 
+- **The conversations list on the Mac and the iPhone** — phase 3 of
+  `analysis/CONVERSATIONS_SIDEBAR_PLAN.md`, completing the plan's shells. The
+  Mac's sidebar was the settings form: a full column of sliders pinned beside
+  what you were reading, with nowhere for past chats to go. Settings moves to
+  the standard `Settings` scene, which is what gives Cmd-comma and the app
+  menu their ordinary behaviour without wiring either by hand, and the
+  sidebar becomes the same one the iPad got in phase 2. Cmd-N starts a new
+  chat. The iPhone reaches the identical list from a leading toolbar button,
+  in a sheet with New chat at the top; picking a chat loads it and dismisses.
+  Its nav title now names the open conversation rather than always reading
+  "The Knowledge Press", and its Settings keeps engine and scope, there being
+  no sidebar for them to move to. `ConversationListView` gained a
+  `Presentation` parameter rather than being duplicated: a sidebar row is a
+  destination, carrying a value the selection binding highlights and the
+  detail column follows, while a sheet row is a button that loads and closes.
+  Grouping, search, swipe-to-delete, and rename are the same code in both.
+
 - **A conversations sidebar on iPad** — phase 2 of
   `analysis/CONVERSATIONS_SIDEBAR_PLAN.md`, and the phase you can see. The
   iPad's tabs are gone: they were the right shape when a chat was a single
