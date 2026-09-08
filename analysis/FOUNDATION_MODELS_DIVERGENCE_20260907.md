@@ -21,6 +21,10 @@ This is not a defect in this project. It is recorded here because it cost a full
 investigation to isolate, and because anyone comparing answers across devices will
 otherwise reach for the same wrong explanations in the same order.
 
+**Addendum, 2026-09-08:** a fourth device, `iPad16,1`, produces a *third* distinct
+completion from the same prompt digest. See the addendum at the end. The original
+report as filed is preserved unchanged above it.
+
 ## Environment
 
 | Field | iPad Pro 11-inch (M4) | iPhone 17 Pro | Status |
@@ -144,3 +148,166 @@ Only 5 of 25 retrieved passages reach the model on every device, because the on-
 window is 4,096 tokens. That is the real constraint on answer quality across the board
 and is worth addressing on its own terms. It is not the cause of this divergence: both
 devices packed the same 5.
+
+---
+
+## Addendum, 2026-09-08: a third behavior on `iPad16,1`
+
+The day after filing, the same question was run on an iPad mini (A17 Pro, `iPad16,1`).
+It produced a completion unlike either of the two already recorded: the answer's
+*substance* is correct, but it is wrapped in a confabulated tool-call exchange. This
+app registers no tools with the framework. The model invented one, "called" it,
+declared it unnecessary, and then answered.
+
+### Held constant, again
+
+| Measurement | `iPad16,1` | Reference (`iPhone18,1`, macOS) | Status |
+|---|---|---|---|
+| Question | `circles of Hell` | `circles of Hell` | identical |
+| Instructions SHA-256 | `89dfc16116d9d769` | `89dfc16116d9d769` | identical |
+| **Prompt SHA-256** | **`e24dd2bf123468fe`** | **`e24dd2bf123468fe`** | **identical** |
+| Source passage IDs | same 5, same order | same 5, same order | identical |
+| Passages used / dropped | 5 / 20 | 5 / 20 | identical |
+| Temperature | 0 | 0 | identical |
+| Completion SHA-256 | `37c9dd60745b6efe` | `c4f936174e92e245` | **diverges** |
+| Completion length | 653 chars, 15 lines / 15 unique | 847 chars, 5 / 5 | **diverges** |
+
+### The completion, verbatim
+
+````
+[Project Gutenberg literary guide]
+
+Tool call: get_circle_references
+
+```json
+{
+  "work": "The Divine Comedy (Cary's Translation)",
+  "author": "Dante Alighieri",
+  "topic": "circles of Hell"
+}
+```
+
+[No tool call needed]
+
+**Answer:**
+
+Dante Alighieri, *The Divine Comedy (Cary's Translation)* describes the following circles of Hell:
+
+- **Fourth circle** – Five centuries and more, the lukewarmness was fain to pace round this circle.
+- **Fourth circle** – Water moves in the round chalice, even as the blow compels it inwardly or from without.
+- **Judas’ circle** – Described as the lowest place, obscurest, and farthest from heaven’s all-circling orb.
+````
+
+`get_circle_references` does not exist. Neither does the bracketed framing. The three
+bullets that follow are a reasonable synthesis of the packed passages.
+
+### It is reproducible, not a one-off
+
+A second question on the same device, `pillar of salt` (prompt digest
+`fa5f559d45e90fb2`), did the same thing with a *different* invented tool name:
+
+```
+tool_call: {"tool_name": "extract_references", "filters": {"text": "pillar of salt", "source_type": "sacred-texts"}} Marshaling the provided source passages, here is the result:
+
+- [sacred-texts · The Bible] - "And his wife looked back from behind him, and she became a pillar of salt." (Lot entering into Zoar)
+```
+
+The tool name changes with the question, which is what a model generating plausible
+scaffolding from the question's shape looks like. The quoted verse is the correct one.
+
+The same question on `iPad16,3` has the same prompt digest, `fa5f559d45e90fb2` --
+proven from its trace, not assumed -- and returned only a three-line stub with no
+verse at all, 74 characters:
+
+```
+The Bible (Lot) mentions a pillar of salt:
+Author: Unknown
+Work: [lot]
+```
+
+(The model's trailing double-spaces, a Markdown line break, are elided here; the
+digest is over the exact bytes.) It returned that stub three times across two
+sessions, byte-identical each time, completion digest `6975f008aa6f596f`. So this is
+a second question, with a second proven-identical prompt, on which the two iPads
+diverge -- and on which each iPad is perfectly consistent with itself.
+
+So the two iPads fail in *opposite* directions from one prompt: `iPad16,3` degrades
+the substance and keeps the form; `iPad16,1` keeps the substance and invents form
+around it.
+
+### Four platforms, one prompt digest, three completions
+
+| Platform | Chip | Build | Completion SHA-256 | Chars | Shape |
+|---|---|---|---|---|---|
+| macOS 27.0 | M5 Max | `26A5425a` | `c4f936174e92e245` | 847 | correct synthesis |
+| `iPhone18,1` | A19 Pro | `24A5430a` | `c4f936174e92e245` | 847 | byte-identical to macOS |
+| `iPad16,3` | M4 | `24A5430a` | `3eb5d65be9aecfac` | 302 | one passage quoted twice |
+| `iPad16,1` | A17 Pro | `24A5390f` | `37c9dd60745b6efe` | 653 | confabulated tool call, correct answer |
+
+The original report described the divergence as binary: one platform wrong, two
+right. It is not binary. Three of four hardware classes disagree with each other,
+and only the two that agree are the two that happen to sit on either side of the
+iPads in the product line.
+
+### One confound, stated rather than buried
+
+`iPad16,1` is on build `24A5390f`; the other two iOS devices were on `24A5430a`.
+Build alone cannot explain the original divergence, since `iPhone18,1` and `iPad16,3`
+share a build and disagree. But it could be part of why `iPad16,1` does a *third*
+thing rather than `iPad16,3`'s thing. The experiment that separates them is cheap:
+update `iPad16,1` to `24A5430a` and re-run. If the tool-call behavior persists, it is
+the A17 Pro. If it changes, it is the build. Either result is worth sending.
+
+### Retrieval breadth was changed deliberately, and changed nothing
+
+Screenshots showed the two iPads retrieving different passage counts for the same
+query, which looked like a confound: if retrieval differs by device, so might the
+prompt. It is not a confound. The Results slider was moved by hand on `iPad16,3`,
+between runs, to test whether retrieving more or fewer passages would shift the
+answer.
+
+It did not, on either question:
+
+| Question | Run | Retrieved | Reached model | Completion SHA-256 |
+|---|---|---:|---:|---|
+| `pillar of salt` | `21:09:00Z` | 25 | 5 | `6975f008aa6f596f` |
+| `pillar of salt` | `21:09:46Z` | 14 | 5 | `6975f008aa6f596f` |
+| `circles of Hell` | 2026-09-07 | 25 | 5 | `3eb5d65be9aecfac` |
+| `circles of Hell` | `21:10:16Z` | 14 | 5 | `3eb5d65be9aecfac` |
+
+Byte-identical completions across a near-halving of the retrieved set, on both
+questions, on the device that fails. The reason is the context budget: only 5
+passages reach the model either way, and the same 5 rank highest whether 14 or 25
+are retrieved, so the prompt is unchanged -- digest `e24dd2bf123468fe` for both
+`circles of Hell` rows, the same digest every other device produced.
+
+Two things follow. The differing counts in the screenshots were a slider, not
+hardware, and never reached the model. And **retrieval breadth is not a lever on
+this failure**: "the app packed too much context" is eliminated as a cause, by
+experiment rather than by argument.
+
+### The wrong completion is stable, and it is prompt-specific
+
+`iPad16,3` re-ran `circles of Hell` on 2026-09-08 at `21:10:16Z`: prompt digest
+`e24dd2bf123468fe`, completion digest `3eb5d65be9aecfac` -- byte-identical to its run
+the day before. The device is deterministic; it is deterministically wrong. That rules
+out flakiness and means the failure will reproduce for whoever picks up the report.
+
+It is not a blanket failure of the device, either. In the same session `iPad16,3`
+answered three other questions sensibly: `descriptions of the Great Fire of London`
+(720 characters, a correct list from Pepys), `What great battles were described?` (a
+correct numbered list from Plutarch and Thucydides), and `Describe the Trojan war`
+(824 characters of coherent prose). Those prompts have no cross-device reference yet,
+so they prove nothing about divergence. They do show the model on this device is
+capable, and that whatever triggers the loop and the stub is specific to certain
+prompts. `circles of Hell` and `pillar of salt` are two known triggers.
+
+### Evidence
+
+- `fm_divergence_ipad16_1_20260908T210720.json` -- `circles of Hell` on `iPad16,1`, the run quoted above
+- `fm_divergence_ipad16_1_20260908T210607.json` -- `pillar of salt` on `iPad16,1`
+- `fm_divergence_ipad16_3_20260908T211016.json` -- `circles of Hell` on `iPad16,3`, byte-identical to its 2026-09-07 completion
+- `fm_divergence_ipad16_3_20260908T210900.json` and `..._20260908T210946.json` -- `pillar of salt` on `iPad16,3`, 25 and then 14 passages retrieved, same prompt digest, same completion
+
+All pulled from the devices the same way as the originals. The `answer` field in each
+is the raw completion; the tool-call text is in the file, not in the rendering.
