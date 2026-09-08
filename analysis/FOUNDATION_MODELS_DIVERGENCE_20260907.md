@@ -3,9 +3,10 @@
 | Field | Value |
 |---|---|
 | **Author** | Eric G. Suchanek, PhD (Flux-Frontiers) |
-| **Date** | 2026-09-07 |
-| **Status** | Filed upstream; no action available in this repo |
-| **Affects** | `GutenbergKGKit.OnDeviceSynthesis` on iPad hardware |
+| **Date** | 2026-09-07, addenda 2026-09-08 |
+| **Status** | Filed upstream. Investigation complete: OS build eliminated by experiment; the remaining variable is the chip. No action available in this repo. |
+| **Affects** | `GutenbergKGKit.OnDeviceSynthesis` on `iPad16,3` and `iPad16,1` |
+| **Finding** | One prompt digest, three distinct completions, across three iOS devices on **one identical build** |
 | **Evidence** | `fm_divergence_*.json` in this directory |
 
 ---
@@ -22,8 +23,11 @@ investigation to isolate, and because anyone comparing answers across devices wi
 otherwise reach for the same wrong explanations in the same order.
 
 **Addendum, 2026-09-08:** a fourth device, `iPad16,1`, produces a *third* distinct
-completion from the same prompt digest. See the addendum at the end. The original
-report as filed is preserved unchanged above it.
+completion from the same prompt digest. `iPad16,1` was then updated from build
+`24A5390f` to `24A5430a` -- the build the other two iOS devices run -- and its
+completions did not change by a single byte, which eliminates the OS build as the
+variable. See the addenda at the end. The original report as filed is preserved
+unchanged above them.
 
 ## Environment
 
@@ -242,21 +246,22 @@ around it.
 | macOS 27.0 | M5 Max | `26A5425a` | `c4f936174e92e245` | 847 | correct synthesis |
 | `iPhone18,1` | A19 Pro | `24A5430a` | `c4f936174e92e245` | 847 | byte-identical to macOS |
 | `iPad16,3` | M4 | `24A5430a` | `3eb5d65be9aecfac` | 302 | one passage quoted twice |
-| `iPad16,1` | A17 Pro | `24A5390f` | `37c9dd60745b6efe` | 653 | confabulated tool call, correct answer |
+| `iPad16,1` | A17 Pro | `24A5390f`, then `24A5430a` | `37c9dd60745b6efe` | 653 | confabulated tool call, correct answer |
 
 The original report described the divergence as binary: one platform wrong, two
 right. It is not binary. Three of four hardware classes disagree with each other,
 and only the two that agree are the two that happen to sit on either side of the
 iPads in the product line.
 
-### One confound, stated rather than buried
+### One confound, stated rather than buried -- since resolved
 
-`iPad16,1` is on build `24A5390f`; the other two iOS devices were on `24A5430a`.
-Build alone cannot explain the original divergence, since `iPhone18,1` and `iPad16,3`
-share a build and disagree. But it could be part of why `iPad16,1` does a *third*
-thing rather than `iPad16,3`'s thing. The experiment that separates them is cheap:
-update `iPad16,1` to `24A5430a` and re-run. If the tool-call behavior persists, it is
-the A17 Pro. If it changes, it is the build. Either result is worth sending.
+`iPad16,1` was on build `24A5390f`; the other two iOS devices were on `24A5430a`.
+Build alone could not explain the original divergence, since `iPhone18,1` and
+`iPad16,3` share a build and disagree. But it could have been part of why `iPad16,1`
+did a *third* thing rather than `iPad16,3`'s thing.
+
+The experiment was run the same day. See the second addendum below: the build was
+eliminated.
 
 ### Retrieval breadth was changed deliberately, and changed nothing
 
@@ -311,3 +316,62 @@ prompts. `circles of Hell` and `pillar of salt` are two known triggers.
 
 All pulled from the devices the same way as the originals. The `answer` field in each
 is the raw completion; the tool-call text is in the file, not in the rendering.
+
+---
+
+## Addendum 2, 2026-09-08: the OS build is eliminated
+
+`iPad16,1` was updated from build `24A5390f` to `24A5430a` -- the build `iPhone18,1`
+and `iPad16,3` already ran -- and both questions were re-asked. **Nothing changed.**
+
+| Question | Build | Prompt SHA-256 | Completion SHA-256 |
+|---|---|---|---|
+| `circles of Hell` | `24A5390f` | `e24dd2bf123468fe` | `37c9dd60745b6efe` |
+| `circles of Hell` | `24A5430a` | `e24dd2bf123468fe` | **`37c9dd60745b6efe`** |
+| `pillar of salt` | `24A5390f` | `fa5f559d45e90fb2` | `9c6bf98353bf1fea` |
+| `pillar of salt` | `24A5430a` | `fa5f559d45e90fb2` | **`9c6bf98353bf1fea`** |
+
+Byte-identical completions across an OS update, on both questions. The confabulated
+tool call survived intact, including the invented tool names `get_circle_references`
+and `extract_references`. A second `pillar of salt` run on the new build returned the
+same digest a third time.
+
+### What this leaves
+
+All three iOS devices now run build `24A5430a`. They still produce three different
+completions from one prompt:
+
+| Device | Chip | Build | Completion SHA-256 | Behavior |
+|---|---|---|---|---|
+| `iPhone18,1` | A19 Pro | `24A5430a` | `c4f936174e92e245` | correct synthesis |
+| `iPad16,3` | M4 | `24A5430a` | `3eb5d65be9aecfac` | one passage quoted twice |
+| `iPad16,1` | A17 Pro | `24A5430a` | `37c9dd60745b6efe` | confabulated tool call |
+
+Identical build, identical prompt digest, identical instructions, temperature 0,
+identical five source passages. Three completions. macOS on `26A5425a` agrees with
+`iPhone18,1` to the byte, so the correct behavior spans two operating systems.
+
+The OS build is eliminated as the variable. What remains that differs is the silicon
+and whatever model assets or execution path the framework selects for it.
+
+### Every device is self-consistent
+
+Each device reproduces its own completion exactly, which is what makes this
+actionable rather than anecdotal:
+
+| Device | Question | Runs | Distinct completions |
+|---|---|---:|---:|
+| macOS | `circles of Hell` | 3 | 1 |
+| `iPad16,3` | `circles of Hell` | 2, across two days | 1 |
+| `iPad16,3` | `pillar of salt` | 3 | 1 |
+| `iPad16,1` | `circles of Hell` | 2, across an OS update | 1 |
+| `iPad16,1` | `pillar of salt` | 3, across an OS update | 1 |
+
+Determinism at temperature 0 holds *within* every device tested. It fails *between*
+them.
+
+### Evidence
+
+- `fm_divergence_ipad16_1_20260908T214329.json` -- `circles of Hell` on `24A5430a`
+- `fm_divergence_ipad16_1_20260908T214316.json` -- `pillar of salt` on `24A5430a`
+- `fm_divergence_ipad16_1_20260908T214356.json` -- `pillar of salt` again, same digest
