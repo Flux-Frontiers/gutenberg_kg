@@ -88,42 +88,58 @@ public struct PhoneRootView: View {
     }
 }
 
-/// iPad: the same tabs-plus-button shell as the iPhone, but Settings opens
-/// as a floating popover anchored to the button instead of a sheet.
+/// iPad: a persistent sidebar of past chats, with the chat itself alongside.
 ///
-/// This used to reuse `MacRootView`'s permanent sidebar — technically fine
-/// (`NavigationSplitView` collapses correctly at compact width), but a
-/// full settings form pinned open the rest of the time reads as heavy on a
-/// screen this size, next to nothing you're actually reading. A popover is
-/// the deliberately lighter middle ground: it opens over the content
-/// instead of pushing it aside, and closes with a tap outside rather than
-/// a "Done" button.
+/// The tabs are gone. They were the right shape when a chat was a single
+/// disposable buffer, but once chats persist the sidebar is what reaches
+/// them, and Browse is one row in it rather than half the tab bar.
+///
+/// Binding `columnVisibility` is what surfaces `NavigationSplitView`'s own
+/// toggle (the same reason `MacRootView` binds it): landscape shows both
+/// columns, portrait collapses the sidebar to an overlay reachable from the
+/// toolbar, exactly as Files and Notes behave.
 public struct PadRootView: View {
     @Environment(AppModel.self) private var model
+    @State private var columnVisibility = NavigationSplitViewVisibility.automatic
+    @State private var selection: SidebarItem? = .chat
+    @State private var search = ""
     @State private var showingSettings = false
     @State private var confirmingDelete = false
 
     public init() {}
 
     public var body: some View {
-        TabView {
+        NavigationSplitView(columnVisibility: $columnVisibility) {
+            ConversationSidebar(
+                selection: $selection, search: $search,
+                onOpenSettings: { showingSettings = true }
+            )
+            .searchable(text: $search, placement: .sidebar, prompt: "Search chats")
+            .navigationSplitViewColumnWidth(min: 260, ideal: 300)
+            .popover(isPresented: $showingSettings) {
+                NavigationStack {
+                    // The sidebar owns engine and scope on this shell, so
+                    // Settings does not show a second copy of them.
+                    SettingsView(showsEngineAndScope: false)
+                        .navigationTitle("Settings")
+                        .toolbarTitleDisplayMode(.inline)
+                }
+                .frame(minWidth: 380, minHeight: 520)
+            }
+        } detail: {
             NavigationStack {
-                ChatView(showsHeader: false)
-                    .navigationTitle("The Knowledge Press")
+                detail
                     .toolbarTitleDisplayMode(.inline)
                     .toolbar {
                         ToolbarItem(placement: .primaryAction) {
-                            Button("Settings", systemImage: "slider.horizontal.3") {
-                                showingSettings = true
+                            // Also here, not only in the sidebar: in portrait
+                            // the sidebar is hidden, and starting a new chat
+                            // is too common to cost two taps.
+                            Button("New chat", systemImage: "square.and.pencil") {
+                                model.newConversation()
+                                selection = .chat
                             }
-                            .popover(isPresented: $showingSettings) {
-                                NavigationStack {
-                                    SettingsView()
-                                        .navigationTitle("Settings")
-                                        .toolbarTitleDisplayMode(.inline)
-                                }
-                                .frame(minWidth: 380, minHeight: 520)
-                            }
+                            .disabled(model.turns.isEmpty)
                         }
                         ToolbarItem(placement: .cancellationAction) {
                             Button("Delete", systemImage: "trash") {
@@ -134,10 +150,33 @@ public struct PadRootView: View {
                     }
                     .deleteConversationConfirmation($confirmingDelete)
             }
-            .tabItem { Label("Chat", systemImage: "text.bubble") }
+        }
+        .onChange(of: selection) { _, item in
+            // Choosing a saved chat loads it into the buffer. The selection
+            // stays on that row rather than snapping back to `.chat`, so the
+            // list keeps showing which conversation is open.
+            if case .conversation(let id) = item {
+                model.select(id)
+            }
+        }
+        .onChange(of: model.activeConversation?.id) { _, id in
+            // The first completed turn creates a conversation, which is the
+            // moment its row appears in the list -- move the highlight onto
+            // it so the sidebar agrees with the detail column.
+            if let id, selection == .chat { selection = .conversation(id) }
+        }
+    }
 
+    @ViewBuilder
+    private var detail: some View {
+        switch selection {
+        case .browse:
             BrowseView()
-                .tabItem { Label("Browse", systemImage: "books.vertical") }
+        // `nil` is "no row highlighted", which happens after New chat and on
+        // a fresh launch; the chat is still what belongs in the detail column.
+        case .chat, .conversation, .none:
+            ChatView(showsHeader: false)
+                .navigationTitle(model.activeConversation?.title ?? "New chat")
         }
     }
 }

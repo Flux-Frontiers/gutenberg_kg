@@ -10,6 +10,28 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added
 
+- **A conversations sidebar on iPad** — phase 2 of
+  `analysis/CONVERSATIONS_SIDEBAR_PLAN.md`, and the phase you can see. The
+  iPad's tabs are gone: they were the right shape when a chat was a single
+  disposable buffer, but now that chats persist the sidebar is what reaches
+  them, and Browse is one row in it rather than half the tab bar. The sidebar
+  carries New chat, Browse, the answer-engine and corpus-scope pickers, and
+  every saved chat grouped Today / Yesterday / Previous 7 days / Older, with
+  search over titles. Swipe a row to delete, long-press to rename. Landscape
+  shows both columns; portrait collapses the sidebar behind the standard
+  toggle, and New chat is in the detail toolbar too so the common action
+  never costs two taps there. Scope and engine move *out* of Settings on this
+  shell -- one home per control, via `SettingsView(showsEngineAndScope:)` --
+  and both pickers are now shared views rather than a second copy, so the
+  `onChange` that prewarms the on-device model cannot go missing from one of
+  them. Grouping is by calendar day rather than elapsed hours, so a chat from
+  23:59 last night reads as "Yesterday" six minutes later instead of "Today"
+  for another day; its tests fix `now` at a specific instant, since a suite
+  on the real clock would only catch that on an unlucky night. Caught by
+  `make ios-check` after `swift build` passed clean: `List(selection:)` with
+  a non-optional binding is macOS-only, and the package builds for macOS by
+  default, so the Swift suite could never have found it.
+
 - **A resolution setting for rendered illustrations** — Settings ▸
   Illustrations, offering chat.py's three presets pixel for pixel: Preview
   768x512, Standard 1152x768, Full 1536x1024, all 3:2. The choice persists,
