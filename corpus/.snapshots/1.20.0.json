@@ -1,0 +1,174 @@
+{
+  "key": "1.20.0",
+  "branch": "main",
+  "timestamp": "2026-09-10T18:38:21.773215+00:00",
+  "version": "1.20.0",
+  "subject": "corpus:gutenberg",
+  "tool": "gutenberg-kg",
+  "tool_version": "1.20.0",
+  "tree_hash": "8c87b238f1724e94954fed50251038813d1fca66",
+  "metrics": {
+    "total_nodes": 1343783,
+    "total_edges": 5276834,
+    "total_books": 253,
+    "total_authors": 153,
+    "genres": [
+      {
+        "corpus": "gutenberg-ancient-classical",
+        "label": "Ancient & Classical",
+        "books": 23,
+        "nodes": 119078,
+        "edges": 461381
+      },
+      {
+        "corpus": "gutenberg-shakespeare",
+        "label": "Shakespeare",
+        "books": 4,
+        "nodes": 6271,
+        "edges": 20974
+      },
+      {
+        "corpus": "gutenberg-english-literature",
+        "label": "English Literature",
+        "books": 38,
+        "nodes": 187104,
+        "edges": 836820
+      },
+      {
+        "corpus": "gutenberg-american-literature",
+        "label": "American Literature",
+        "books": 23,
+        "nodes": 90382,
+        "edges": 329433
+      },
+      {
+        "corpus": "gutenberg-french-literature",
+        "label": "French Literature",
+        "books": 12,
+        "nodes": 89504,
+        "edges": 415272
+      },
+      {
+        "corpus": "gutenberg-russian-literature",
+        "label": "Russian Literature",
+        "books": 12,
+        "nodes": 89952,
+        "edges": 423285
+      },
+      {
+        "corpus": "gutenberg-philosophy",
+        "label": "Philosophy",
+        "books": 39,
+        "nodes": 207611,
+        "edges": 721115
+      },
+      {
+        "corpus": "gutenberg-spanish",
+        "label": "Spanish Literature",
+        "books": 1,
+        "nodes": 11431,
+        "edges": 52843
+      },
+      {
+        "corpus": "gutenberg-science-fiction",
+        "label": "Science Fiction",
+        "books": 16,
+        "nodes": 52002,
+        "edges": 179992
+      },
+      {
+        "corpus": "gutenberg-sacred-texts",
+        "label": "Sacred Texts",
+        "books": 7,
+        "nodes": 31996,
+        "edges": 156858
+      },
+      {
+        "corpus": "gutenberg-german-literature",
+        "label": "German Literature",
+        "books": 5,
+        "nodes": 15695,
+        "edges": 48683
+      },
+      {
+        "corpus": "gutenberg-world-literature",
+        "label": "World Literature",
+        "books": 4,
+        "nodes": 18527,
+        "edges": 65985
+      },
+      {
+        "corpus": "gutenberg-letters",
+        "label": "Letters",
+        "books": 6,
+        "nodes": 37551,
+        "edges": 120198
+      },
+      {
+        "corpus": "gutenberg-biography",
+        "label": "Biography",
+        "books": 11,
+        "nodes": 71732,
+        "edges": 286851
+      },
+      {
+        "corpus": "gutenberg-natural-history",
+        "label": "Natural History",
+        "books": 7,
+        "nodes": 44823,
+        "edges": 157476
+      },
+      {
+        "corpus": "gutenberg-travel",
+        "label": "Travel",
+        "books": 6,
+        "nodes": 57126,
+        "edges": 197023
+      },
+      {
+        "corpus": "gutenberg-drama",
+        "label": "Drama",
+        "books": 10,
+        "nodes": 14999,
+        "edges": 57232
+      },
+      {
+        "corpus": "gutenberg-diaries",
+        "label": "Diaries",
+        "books": 4,
+        "nodes": 78217,
+        "edges": 379515
+      },
+      {
+        "corpus": "gutenberg-horror",
+        "label": "Horror",
+        "books": 16,
+        "nodes": 43592,
+        "edges": 165107
+      },
+      {
+        "corpus": "gutenberg-audel-electric",
+        "label": "Technical Reference (IA)",
+        "books": 8,
+        "nodes": 72842,
+        "edges": 193063
+      },
+      {
+        "corpus": "gutenberg-curiosities",
+        "label": "Curiosities",
+        "books": 1,
+        "nodes": 3348,
+        "edges": 7728
+      }
+    ]
+  },
+  "hotspots": [],
+  "issues": [],
+  "vs_previous": null,
+  "vs_baseline": {
+    "nodes": -645,
+    "edges": -3180,
+    "books": 0,
+    "authors": 0
+  }
+}

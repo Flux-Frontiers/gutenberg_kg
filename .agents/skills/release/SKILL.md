@@ -170,8 +170,21 @@ ls corpus/.snapshots/<version>.json
 ```
 
 Pass the version explicitly. Omitting it keys on a UTC timestamp, correct for a
-corpus in general but not at release time, when the point is to pin what this
-tag shipped. `corpus/.snapshots/` is gitignored, so there is nothing to stage.
+release time the point is to pin what this tag shipped.
+
+Snapshots are **tracked**, so stage `corpus/.snapshots/` with the release in
+Step 7.
+
+Two traps, both hit on the 1.20.0 release:
+
+- **Reinstall before snapshotting.** `version`/`tool_version` come from the
+  *installed* distribution, not from `pyproject.toml`, so a snapshot taken
+  straight after the bump records the previous version inside a file keyed to
+  the new one. Run `poetry install --only-root` first.
+- **Use `--force`.** When the corpus has not changed since the last release,
+  the metrics match and `save_snapshot` takes its dedup path, which *renames
+  the previous release's entry and deletes its file* rather than appending.
+  Without `--force` a release silently destroys the prior snapshot.
 
 ## Step 6 — Verify the build is green
 
