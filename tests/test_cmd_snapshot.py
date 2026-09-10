@@ -634,7 +634,7 @@ def test_snapshot_save_records_corpus_subject(fake_registry: Path, tmp_path: Pat
 
 
 def test_snapshot_save_subject_and_key_overrides(fake_registry: Path, tmp_path: Path):
-    """`--subject` / `--key` reach the snapshot instead of landing in metrics."""
+    """`--subject` and a positional VERSION reach the snapshot, not metrics."""
     snap_dir = tmp_path / ".snapshots"
     (tmp_path / "authors").mkdir()
 
@@ -644,7 +644,6 @@ def test_snapshot_save_subject_and_key_overrides(fake_registry: Path, tmp_path: 
         snap_dir,
         "--subject",
         "repo:gutenberg-kg",
-        "--key",
         "v1.18.0",
     )
     assert result.exit_code == 0, result.output
@@ -658,7 +657,7 @@ def test_snapshot_save_subject_and_key_overrides(fake_registry: Path, tmp_path: 
 
 
 def test_snapshot_save_defaults_to_timestamp_key(fake_registry: Path, tmp_path: Path):
-    """Omitting `--key` keys on a UTC timestamp, not the git tree hash."""
+    """Omitting VERSION keys on a UTC timestamp, not the git tree hash."""
     snap_dir = tmp_path / ".snapshots"
     (tmp_path / "authors").mkdir()
 
@@ -680,3 +679,19 @@ def test_snapshot_show_reads_back_a_timestamp_key(fake_registry: Path, tmp_path:
     result = CliRunner().invoke(cli, ["snapshot", "show", key, "--snapshots-dir", str(snap_dir)])
     assert result.exit_code == 0, result.output
     assert "Books:" in result.output
+
+
+def test_snapshot_save_matches_the_fleet_cli_contract():
+    """VERSION is a positional, as in every other KG module in the fleet.
+
+    `doc_kg`, `pycode_kg`, `memory_kg`, `Metabo_kg`, `tscode_kg`, `ftree_kg` and
+    `genealogy_kg` all declare
+    `@click.argument("version", metavar="VERSION", default="", required=False)`,
+    and the generic /release workflow calls `<cli> snapshot save <version>
+    --subject ...` on that basis. This repo briefly took `--key` instead, which
+    made the documented release step fail here and nowhere else.
+    """
+    result = CliRunner().invoke(cli, ["snapshot", "save", "--help"])
+    assert result.exit_code == 0
+    assert "[OPTIONS] VERSION" in result.output
+    assert "--key" not in result.output
