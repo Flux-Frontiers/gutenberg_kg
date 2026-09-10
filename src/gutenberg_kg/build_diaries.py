@@ -234,8 +234,13 @@ def build_diary_index(
         )
 
     try:
-        kg = DiaryKG(root=diary_dir, model=DIARY_EMBED_MODEL)
-        kg.rebuild_index()
+        # `with`, not a bare constructor: DiaryKG holds a lazily built DocKG and
+        # its SQLite connection, and before diary-kg 0.98.0 there was no way to
+        # let it go -- one leaked connection per diary on every corpus build.
+        # Closing before _clean_chunk_texts also means that rewrite reopens
+        # graph.sqlite on its own rather than racing a live connection.
+        with DiaryKG(root=diary_dir, model=DIARY_EMBED_MODEL) as kg:
+            kg.rebuild_index()
         _clean_chunk_texts(sqlite_path)
     except (AttributeError, TypeError, NameError):
         # Signature drift against diary_kg. Identical for every diary, so let it

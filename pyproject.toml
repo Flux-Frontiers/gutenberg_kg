@@ -323,6 +323,13 @@ markers = [
 include = ["src", "docker", "runpod"]
 
 [tool.dockg]
+# `site` for the same reason as `dist`: `make docs` renders mkdocs into a
+# gitignored site/, so the corpus would otherwise differ between machines
+# depending on who last built the docs. mkdocs renders .md to .html but copies
+# anything it does not render straight through, so the first .txt or .pdf added
+# under docs/ would be indexed twice -- once at docs/x.pdf, once at site/x.pdf.
+# A duplicate document is worse than a missing one: it double-counts in every
+# ranking and returns the same passage twice.
 exclude = [
-    "corpus", "bundles", "dist", "src", "venv", "reports", "runpod", "docker",
+    "corpus", "bundles", "dist", "site", "src", "venv", "reports", "runpod", "docker",
 ]
