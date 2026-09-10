@@ -8,6 +8,11 @@ description: >
 
 # Release Workflow (gutenberg_kg / GutenbergKG)
 
+**Standalone copy.** Runtimes that read `.agents/` have no access to the generic
+`~/.claude/commands/release.md`, so unlike `.claude/skills/release/SKILL.md`
+this file must stay self-contained rather than deferring to it. Keep the two in
+sync when either changes.
+
 Releases here are **tag-triggered**. Pushing a `v*` tag runs
 `.github/workflows/release.yml`, which builds the wheel and sdist and creates a
 GitHub Release from `release-notes.md` via `gh release create --notes-file`.
@@ -149,6 +154,24 @@ pathlib.Path("release-notes.md").write_text(
 
 The heading uses `--`, not an em dash, matching the existing file. Confirm the
 first line names the version you are releasing.
+
+## Step 5b — Save a release snapshot
+
+After the version bump, before the commit, so the snapshot lands in the release
+commit.
+
+`gutenkg snapshot save` measures the **corpus** -- book, node and edge counts
+from the KGRAG registry -- not this package's own code. There is no code KG in
+this repo, so `corpus:gutenberg` is the subject, not `repo:gutenberg-kg`:
+
+```bash
+gutenkg snapshot save <version> --subject corpus:gutenberg
+ls corpus/.snapshots/<version>.json
+```
+
+Pass the version explicitly. Omitting it keys on a UTC timestamp, correct for a
+corpus in general but not at release time, when the point is to pin what this
+tag shipped. `corpus/.snapshots/` is gitignored, so there is nothing to stage.
 
 ## Step 6 — Verify the build is green
 

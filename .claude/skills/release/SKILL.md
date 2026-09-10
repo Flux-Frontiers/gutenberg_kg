@@ -8,6 +8,17 @@ description: >
 
 # Release Workflow (gutenberg_kg / GutenbergKG)
 
+**Run the generic `/release` command for the spine; this file carries only what
+is different here.** The generic (`~/.claude/commands/release.md`) owns the
+steps that are the same fleet-wide: the exhaustive version-surface discovery and
+its positive assertion, the release snapshot (its Step 5b, see below), the
+Zenodo archive audit (its Step 9), and the "Last Revision" / version-stamped-doc
+handling. This file used to restate the generic and had drifted behind it, which
+is how the snapshot step went missing here.
+
+Where the two disagree, **this file wins** -- the differences below are facts
+about this repo, not preferences.
+
 Releases here are **tag-triggered**. Pushing a `v*` tag runs
 `.github/workflows/release.yml`, which builds the wheel and sdist and creates a
 GitHub Release from `release-notes.md` via `gh release create --notes-file`.
@@ -150,6 +161,26 @@ pathlib.Path("release-notes.md").write_text(
 The heading uses `--`, not an em dash, matching the existing file. Confirm the
 first line names the version you are releasing.
 
+## Step 5b — Save a release snapshot
+
+Run the generic's Step 5b, here and in that position: after the version bump,
+before the commit, so the snapshot file lands in the release commit.
+
+The one repo-specific part is the subject. `gutenkg snapshot save` measures the
+**corpus** -- book, node and edge counts read from the KGRAG registry -- not this
+package's own code. There is no code KG in this repo, so `repo:gutenberg-kg` is
+the wrong subject and `corpus:gutenberg` is the right one:
+
+```bash
+gutenkg snapshot save <version> --subject corpus:gutenberg
+ls corpus/.snapshots/<version>.json
+```
+
+Pass the version explicitly. Omitting it keys on a UTC timestamp, which is the
+correct default for a corpus that changes when books are ingested, but at
+release time the point is to pin what this tag shipped. `corpus/.snapshots/` is
+gitignored, so nothing to stage -- the local record is the deliverable.
+
 ## Step 6 — Verify the build is green
 
 ```bash
@@ -211,6 +242,14 @@ git push origin develop
 ```
 
 Keep `develop`; it is the working branch, not a throwaway feature branch.
+
+---
+
+## After the tag — the Zenodo audit
+
+Run the generic's Step 9. It is not optional here: this repo is Elastic-2.0,
+which has no Zenodo vocabulary id, so every release re-defaults the archive to
+`cc-by-4.0` and the InvenioRDM draft fix has to be reapplied each time.
 
 ---
 

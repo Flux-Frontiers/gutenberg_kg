@@ -61,7 +61,7 @@ estimate below: a subset costs roughly its passage share of it.
 | Full bundle | 5.3 GB | `.dockg` 4.3 GB + diaries 309 MB + swift 743 MB |
 | `graph.sqlite` | 3.0 GB | 731,824 nodes, 4,169,384 edges, all kinds |
 | `vectors.sqlite` | 1.2 GB | 731,824 vectors, one per node |
-| Swift packs (int8) | 743 MB | **stale** -- predates this rebuild; re-export pending |
+| Swift packs (int8) | 680 MB | re-exported 2026-09-07 in 73.2s; 417,016 book + 27,255 diary passages |
 | Searchable passages | 385,139 | `kind IN ('chunk','section')` across prose/verse genres |
 | Catalog | 253 books | 239 with an author parsed from `reference.md` |
 

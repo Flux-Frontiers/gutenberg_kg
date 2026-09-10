@@ -167,3 +167,96 @@ def test_build_diary_index_rebuilds_empty_vector_store(tmp_path):
     _make_diary_store(diary, with_vectors=True, rows=0)
     result = build_diary_index(diary, BuildDiariesOptions(force=False, dry_run=True))
     assert "dry-run" in result.message
+
+
+# ---------------------------------------------------------------------------
+# build_diary_index releases its DiaryKG connection
+# ---------------------------------------------------------------------------
+
+
+def test_build_diary_index_closes_the_diarykg(tmp_path, monkeypatch):
+    """The DiaryKG is closed, not left open once rebuild_index returns.
+
+    DiaryKG holds a lazily constructed DocKG and its SQLite connection. Before
+    diary-kg 0.98.0 there was no way to release it, so a corpus build leaked one
+    connection per diary. This asserts the context manager is both entered and
+    exited -- a bare constructor would satisfy `rebuild_index` and leak.
+    """
+    import diary_kg.kg as diary_kg_module
+
+    from gutenberg_kg.build_diaries import BuildDiariesOptions, build_diary_index
+
+    events: list[str] = []
+
+    class _FakeDiaryKG:
+        def __init__(self, root, model=None):
+            self.root = root
+            events.append("init")
+
+        def __enter__(self):
+            events.append("enter")
+            return self
+
+        def __exit__(self, *exc):
+            events.append("exit")
+            self.close()
+            return False
+
+        def close(self):
+            events.append("close")
+
+        def rebuild_index(self):
+            events.append("rebuild")
+
+    monkeypatch.setattr(diary_kg_module, "DiaryKG", _FakeDiaryKG)
+
+    diary = tmp_path / "Hebrides"
+    chunks = diary / ".diary"
+    chunks.mkdir(parents=True)
+    (chunks / "entry_0001.md").write_text("an entry", encoding="utf-8")
+
+    result = build_diary_index(diary, BuildDiariesOptions(force=False))
+
+    assert result.status == "built", result.message
+    assert events == ["init", "enter", "rebuild", "exit", "close"]
+
+
+def test_build_diary_index_closes_even_when_rebuild_fails(tmp_path, monkeypatch):
+    """A failed rebuild still releases the connection.
+
+    The failure path returns a DiaryBuildResult rather than raising, so without
+    a context manager the connection from a broken diary would leak for the rest
+    of the run -- exactly the build where it matters least to hold it.
+    """
+    import diary_kg.kg as diary_kg_module
+
+    from gutenberg_kg.build_diaries import BuildDiariesOptions, build_diary_index
+
+    closed: list[str] = []
+
+    class _ExplodingDiaryKG:
+        def __init__(self, root, model=None):
+            pass
+
+        def __enter__(self):
+            return self
+
+        def __exit__(self, *exc):
+            closed.append("closed")
+            return False
+
+        def rebuild_index(self):
+            raise RuntimeError("corrupt chunk")
+
+    monkeypatch.setattr(diary_kg_module, "DiaryKG", _ExplodingDiaryKG)
+
+    diary = tmp_path / "Evelyn3"
+    chunks = diary / ".diary"
+    chunks.mkdir(parents=True)
+    (chunks / "entry_0001.md").write_text("an entry", encoding="utf-8")
+
+    result = build_diary_index(diary, BuildDiariesOptions(force=False))
+
+    assert result.status == "failed"
+    assert "corrupt chunk" in result.message
+    assert closed == ["closed"]

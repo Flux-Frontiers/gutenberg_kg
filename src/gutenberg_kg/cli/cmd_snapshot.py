@@ -84,6 +84,7 @@ def snapshot() -> None:
 
 
 @snapshot.command("save")
+@click.argument("version", metavar="VERSION", default="", required=False)
 @click.option(
     "--registry",
     default=None,
@@ -112,15 +113,6 @@ def snapshot() -> None:
     ),
 )
 @click.option(
-    "--key",
-    default=None,
-    metavar="TEXT",
-    help=(
-        "Snapshot identifier (default: a UTC timestamp, which is what a corpus "
-        "wants). Pass a release tag when snapshotting the package."
-    ),
-)
-@click.option(
     "--force",
     is_flag=True,
     default=False,
@@ -134,28 +126,33 @@ def snapshot() -> None:
     help="Print the full snapshot JSON to stdout after saving.",
 )
 def snapshot_save(
+    version: str,
     registry: str | None,
     snapshots_dir: str | None,
     corpus_root: str | None,
     subject: str | None,
-    key: str | None,
     force: bool,
     output_json: bool,
 ) -> None:
     """Capture current corpus metrics and save as a temporal snapshot.
 
-    Snapshots are stored in ``corpus/.snapshots/<key>.json`` alongside a
+    Snapshots are stored in ``corpus/.snapshots/<VERSION>.json`` alongside a
     ``manifest.json`` index.  Each entry records total and per-genre book /
     node / edge counts, the git tree hash, branch, version, and the subject
-    ``corpus:gutenberg``.  The key is a UTC timestamp: a corpus changes when
-    books are ingested, not when the repo is tagged.
+    ``corpus:gutenberg``.
+
+    The snapshot is keyed on VERSION.  **Pass it explicitly at release time.**
+    Omitting it keys on a UTC timestamp, which is the right answer for a corpus
+    -- the books change when something is ingested, not when the repo is tagged.
+    The git tree hash is recorded as provenance and is not the key: it is read
+    before ``git add`` stages the snapshot, so it names a tree never committed.
     \f
 
+    :param version: Snapshot key; a UTC timestamp when omitted.
     :param registry: Override the KGRAG registry path.
     :param snapshots_dir: Override the snapshots directory.
     :param corpus_root: Override the corpus root directory.
     :param subject: What was measured; defaults to ``corpus:gutenberg``.
-    :param key: Snapshot identifier; defaults to a UTC timestamp.
     :param force: Always create a new manifest entry.
     :param output_json: Print the full snapshot JSON to stdout.
     """
@@ -167,7 +164,7 @@ def snapshot_save(
     c_root = Path(corpus_root) if corpus_root else CORPUS_ROOT
 
     mgr = _make_manager(snap_dir, registry_path, c_root)
-    snap = mgr.capture(key=key or "", subject=subject or "")
+    snap = mgr.capture(key=version, subject=subject or "")
 
     try:
         snap_file = mgr.save_snapshot(snap, force=force)
