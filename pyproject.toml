@@ -97,26 +97,20 @@ classifiers = [
 requires-python = ">=3.12,<3.14"
 dependencies = [
     "click>=8.1.0,<9",
-    # One floor for this package across every declaration — the `viz3d` and
-    # `pov` extras below name the same 0.16.0, and a lower floor here buys
-    # nothing while making the repo state ambiguous: scripts/check_pins.py
-    # compares the *highest* declared floor, so a stale low one is invisible to
-    # the gate. This sat at 0.14.0 against 0.15.0 and 0.16.0 in the extras —
-    # drift the gate could not see, which is the reason for the rule.
-    # 0.18.0: gutenberg_kg.temporal stamps a book's publication year as the
-    # shared kg_utils.temporal contract. A library is the clearest year-precision
-    # case in the fleet -- "1876" must stay a year, not become 1876-01-01.
+    # Keep this floor equal to the highest one declared in the extras below:
+    # scripts/check_pins.py only compares the highest, so a stale low floor here
+    # is drift the gate cannot see.
     "kgmodule-utils[synthesis,sqlite-vec]>=0.19.0",
     "rich>=14.3.3,<15",
-    "doc-kg (>=0.24.1)",  # transformers 5.x — must match kg-rag; see the kgdeps extra
+    "doc-kg (>=0.24.1)",  # transformers 5.x -- must match kg-rag, see kgdeps
     "diary-kg (>=0.98.0)",
     "hf-transfer (>=0.1.9,<0.2.0)",
 ]
 
 [project.optional-dependencies]
 kgdeps = [
-    # Floors track the current releases — kg-rag 0.11.0 needs transformers>=5.5.0,
-    # which older doc-kg/pycode-kg pins (transformers<4.57) contradict.
+    # These floors move together: kg-rag needs transformers>=5.5.0, which older
+    # doc-kg/pycode-kg pins (transformers<4.57) contradict.
     "kg-rag>=0.15.0",
     "pycode-kg>=0.25.1",
 ]
@@ -127,81 +121,45 @@ viz3d = [
     "markdown>=3.6",
     "param>=2.0.0",
     "PyQt5>=5.15.0",
-    # pyvistaqt only. pyvista itself now arrives via kgmodule-utils[viz3d-render]
-    # below, which is where it belongs: the SDK's tree_mesh/leaf_glyphs/smooth_paths
-    # need it, so the SDK declares it rather than every consumer hand-pinning it.
-    # Still NOT pyvista[jupyter] — viz3d renders to a desktop Qt window via
-    # pyvistaqt's QtInteractor (see gutenberg_kg/viz3d.py), and [jupyter] only adds
-    # the trame/ipywidgets/jupyter-server browser stack, which nothing here imports
-    # and which massively bloated `poetry lock`.
+    # pyvistaqt only -- pyvista itself arrives via kgmodule-utils[viz3d-render].
+    # Not pyvista[jupyter]: viz3d renders to a desktop Qt window (viz3d.py), and
+    # [jupyter] only adds the trame/ipywidgets stack, which bloats `poetry lock`.
     "pyvistaqt>=0.11.0",
-    # Shared 3-D geometry: layout primitives (Layout3D, LayoutNode/Edge,
-    # fibonacci_*) and, since 0.12.0, the organic tree engine (grow_tree,
-    # tree_mesh, leaf_glyphs) that used to be this package's layout_organic.py.
-    # The layouts lived in pycode_kg.layout3d until 0.11.0 took them over, which
-    # dropped the odd dependency on the *code* KG package for what is pure
-    # geometry; the trees moved for the same reason, so a diary corpus can grow
-    # them without depending on a *book* corpus. pycode-kg stays in `kgdeps`
-    # for its own CLI.
-    # 0.14.0 promoted leaf_facing/oriented_cluster out of this package and
-    # pycode_kg, where they were duplicated; scene.py imports them now.
-    # 0.15.0 adds kg_utils.viz3d.qt behind [viz3d-qt]: the POV-Ray worker
-    # thread, its progress/cleanup lifecycle, the image popup and the cast
-    # path. Those were local to this module and to pycode_kg's viewer, copied
-    # and then drifted; the SDK owns them now. [viz3d-qt] subsumes
-    # [viz3d-render] — it declares pyvista itself — but both are named so the
-    # dependency reads as what it is rather than as a side effect.
-    # 0.16.0 is required, not merely preferred: cast_scene_to_looking_glass
-    # returns a CastResult where it used to return a (path, error) tuple, and
-    # supplies DEFAULT_QUILT_PRESET/DEFAULT_CAST_SCALE, which this module now
-    # aliases rather than declaring its own copies of.
+    # Shared 3-D geometry (Layout3D, fibonacci_*), the organic tree engine
+    # (grow_tree, tree_mesh, leaf_glyphs) and, via [viz3d-qt], the POV-Ray worker
+    # thread and cast path that scene.py and viz3d.py import.
     "kgmodule-utils[viz3d-render,viz3d-qt]>=0.19.0",
-    # Light-field output (`gutenkg quilt`). 0.4.0 supplied depth_report() and
-    # widened requires-python to <3.14, which retired the old marker gate.
-    # 0.6.0 supplies save_and_cast_quilt() and QuiltSpec.scaled(), both
-    # promoted out of this module where they were private helpers.
-    #
-    # Floored at 0.6.0, matching `pov` below, rather than at the version each
-    # extra strictly needs. Two different floors on one package make Poetry
-    # lock it twice under overlapping markers — one for `extra == "viz3d"` and
-    # another for `extra == "viz3d" or extra == "pov"` — and `--extras viz3d`
-    # then installs both, one over the other. One floor, one locked version.
+    # Light-field output (`gutenkg quilt`). Same floor as `pov` below on purpose:
+    # two different floors make Poetry lock the package twice under overlapping
+    # extra markers, and `--extras viz3d` then installs both.
     "quiltwright>=0.7.0",
 ]
 pov = [
-    # Analytic POV-Ray output (`gutenkg pov`), deliberately apart from viz3d.
-    # Composing a scene needs the NumPy-only geometry — leaf_frames, limb_paths
-    # and LEAF_ASPECT, new in kgmodule-utils 0.14.0 — plus quiltwright's povgen
-    # (0.5.0). No PyVista, no Qt, no GL context: a headless ray-tracing box can
-    # install this extra alone and write scenes. `[viz3d]` here is the SDK's
-    # NumPy-only geometry extra, NOT `[viz3d-render]`, which is what would pull
-    # PyVista back in.
+    # Analytic POV-Ray output (`gutenkg pov`), deliberately apart from viz3d:
+    # NumPy-only geometry ([viz3d], not [viz3d-render]) plus quiltwright's povgen,
+    # so a headless ray-tracing box can install this without PyVista, Qt or GL.
     "kgmodule-utils[viz3d]>=0.19.0",
     "quiltwright>=0.7.0",
 ]
 mcp = [
-    # Upper-bounded: fastmcp ships majors on its own schedule (2.x → 3.x), and
-    # src/gutenberg_kg/mcp_server.py builds its FastMCP instance and registers
-    # both tools at module import, so an incompatible major breaks `gutenkg-mcp`
-    # at import time. The floor is >=3.0 because that is what the lock already
-    # resolves to and what the server is verified against; see
-    # tests/test_mcp_server.py. Lift the ceiling only after verifying 4.x.
+    # Upper-bounded: mcp_server.py builds its FastMCP instance and registers its
+    # tools at import, so an incompatible major breaks `gutenkg-mcp` at import
+    # time. Lift the ceiling only after verifying 4.x against test_mcp_server.py.
     "fastmcp>=3.0,<4",
     "structlog>=24.0",
 ]
-# Serving layer (gutenberg_kg.serve) — one extra per module.
-# NOTE: runpod is deliberately NOT listed (no `worker` extra) — its
-# fastapi[all]/boto3/aiohttp[speedups] tree makes `poetry lock` pathologically
-# slow, and the worker only runs in the RunPod container, which installs it
-# via runpod/requirements.txt (same rationale as the mflux exclusion below).
+# Serving layer (gutenberg_kg.serve) -- one extra per module. runpod is
+# deliberately absent: its fastapi[all]/boto3/aiohttp tree makes `poetry lock`
+# pathologically slow, and the worker only runs in the RunPod container, which
+# installs it from runpod/requirements.txt.
 chat = [
     "streamlit>=1.59,<2",
     "httpx>=0.27.0",
     "watchdog>=6.0.0",
     "pillow>=10.4.0",
 ]
-# NOTE: mflux is deliberately NOT listed — its transformers pin conflicts with
-# pycode-kg, so local FLUX generation uses the isolated .venv-image built from
+# mflux is deliberately absent -- its transformers pin conflicts with pycode-kg,
+# so local FLUX generation uses the isolated .venv-image built from
 # docker/requirements-image.txt (see `make image-server`).
 image = [
     "fastapi>=0.116.0",
@@ -209,16 +167,11 @@ image = [
     "pydantic>=2.8.0",
     "pillow>=10.4.0",
 ]
-# NOTE: there are deliberately no `full` / `all` aggregate extras. Re-listing a
-# package in an aggregate makes it a *second* declaration under different
-# markers, which poetry reports as "Duplicate dependencies ... Different
-# requirements found" and handles by discarding the whole resolution, adding an
-# override, and starting over. Twelve packages triggered that here; the
-# overrides accumulate, so `poetry lock` took 1,278 restarts and 503s. Removing
-# the two aggregates took the same lock to 11s.
-# The obvious alternative — `full = ["gutenberg-kg[kgdeps,viz,viz3d,mcp]"]` —
-# poetry rejects outright ("Package ... is listed as a dependency of itself").
-# Use `--all-extras`, or name the extras you want.
+# No `full` / `all` aggregate extras: re-listing a package in an aggregate is a
+# second declaration under different markers, which poetry resolves by adding an
+# override and restarting. Twelve packages did that here -- 1,278 restarts, 503s
+# to lock, against 11s without. `full = ["gutenberg-kg[...]"]` is rejected
+# outright. Use `--all-extras`, or name the extras you want.
 
 # Dev tooling. A group rather than an extra so pytest/ruff/ty/pre-commit stay
 # out of the published wheel metadata — `pip install gutenberg-kg[dev]` was

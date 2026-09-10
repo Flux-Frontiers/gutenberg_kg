@@ -89,8 +89,18 @@ dmypy.json
 # Local ML model cache (fetched by `gutenkg init`)
 .kgcache/
 
-# Corpus snapshots (point-in-time metrics captures)
-corpus/.snapshots/
+# Corpus snapshots (point-in-time metrics captures).
+# TRACKED, like snapshots/ everywhere else in the fleet -- the whole point is a
+# permanent record of what the corpus looked like at a tag. This was a bare
+# `corpus/.snapshots/` ignore, which is exactly the pattern the KG-artifact
+# stanza below warns against: it swallows the snapshots along with the
+# transient stores. There are no databases under corpus/.snapshots/, only the
+# JSON captures and their manifest, so nothing here needs excluding.
+#
+# The four pre-0.19.0 tree-hash-keyed captures are deliberately not tracked:
+# their keys name trees that were never committed (read before `git add`),
+# which is the invalid shape the fleet-wide snapshot prune exists to remove.
+corpus/.snapshots/[0-9a-f][0-9a-f][0-9a-f][0-9a-f]*.json
 
 #.mcp.json
 
