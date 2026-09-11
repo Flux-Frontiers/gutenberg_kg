@@ -168,13 +168,56 @@ struct CrossPackMergeTests {
     @Test("every rescued hit holds a fused position, even several")
     func severalRescuesAllHoldTheirRanks() {
         let merged = LocalRetrieval.mergeByFusedRank(
-            [books([0.50, 0.90]), diaries([0.55, 0.80])],
+            [books([0.80, 0.90]), diaries([0.82, 0.85])],
             k: 4, rrfK: rrfK, lexicallyRescued: ["b0", "d0"])
 
         // Fused order is b0, d0, b1, d1; b0 and d0 are pinned at 0 and 1, and
         // the remaining two fill positions 2 and 3 by score.
         #expect(merged.map(\.nodeId) == ["b0", "d0", "b1", "d1"])
-        #expect(merged.map(\.score) == [0.50, 0.55, 0.90, 0.80])
+        #expect(merged.map(\.score) == [0.80, 0.82, 0.90, 0.85])
+    }
+
+    // MARK: - The rescue tolerance
+
+    @Test("a rescue far below the field is not protected")
+    func aDistantRescueLosesItsPin() {
+        // "the categorical imperative and moral duty": Boswell was rescued on
+        // "moral" and pinned at rank 4 above Kant at 0.789. Gap from the
+        // field's best is 0.157 -- past the tolerance, so it competes on
+        // cosine and lands where it belongs.
+        let merged = LocalRetrieval.mergeByFusedRank(
+            [books([0.815, 0.804, 0.796, 0.789]), diaries([0.689, 0.658])],
+            k: 6, rrfK: rrfK, lexicallyRescued: ["d1"])
+        #expect(merged.map(\.nodeId) == ["b0", "b1", "b2", "b3", "d0", "d1"])
+    }
+
+    @Test("a rescue near the field keeps its pin -- the verse")
+    func aNearRescueIsStillPinned() {
+        // "pillar of salt": the verse at 0.594 against a field best of 0.707,
+        // gap 0.113. Pinned at its fused position, which is third.
+        let merged = LocalRetrieval.mergeByFusedRank(
+            [books([0.707, 0.594]), diaries([0.704, 0.694])],
+            k: 4, rrfK: rrfK, lexicallyRescued: ["b1"])
+        #expect(merged[2].nodeId == "b1")
+    }
+
+    @Test("the widest legitimate rescue measured is inside the tolerance")
+    func theWidestLegitimateRescueSurvives() {
+        // Audels Electric Library for "how to wire an electric bell": 0.650
+        // against 0.791, gap 0.141. This is the case that sets the floor on
+        // the tolerance; if it ever fails, lowering the constant is wrong.
+        let merged = LocalRetrieval.mergeByFusedRank(
+            [books([0.791, 0.650]), diaries([0.658, 0.587])],
+            k: 4, rrfK: rrfK, lexicallyRescued: ["b1"])
+        #expect(merged[2].nodeId == "b1")
+    }
+
+    @Test("provenance with nothing inside the tolerance is a plain score sort")
+    func nothingProtectedMeansScoreOrder() {
+        let merged = LocalRetrieval.mergeByFusedRank(
+            [books([0.90, 0.40]), diaries([0.85, 0.30])],
+            k: 4, rrfK: rrfK, lexicallyRescued: ["b1", "d1"])
+        #expect(merged.map(\.score) == [0.90, 0.85, 0.40, 0.30])
     }
 
     @Test("k truncates after merging, not before")

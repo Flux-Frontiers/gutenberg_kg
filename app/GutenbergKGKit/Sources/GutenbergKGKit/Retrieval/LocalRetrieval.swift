@@ -196,6 +196,24 @@ public struct LocalRetrieval: RetrievalEngine {
     /// against 241 books took exactly half of every window on all twelve
     /// golden queries, displacing 74 better-scoring book passages.
     ///
+    /// A rescue is only credible near the top of the field. FTS5 stems
+    /// "Imperator" and "imperative" to one token, and "moral", "duty" and
+    /// "categorical" all occur in diaries, so BM25 rescues plenty that is not
+    /// a literal match at all. Those sit far below the best dense hit; the
+    /// real ones sit close. Measured across the golden queries, against the
+    /// best dense score in *any* pack (a pack's own best is itself noise for
+    /// a question it has no answer to):
+    ///
+    ///     legitimate                      gap      noise in the window     gap
+    ///     Audels, wire an electric bell   0.141    Boswell, "moral duty"   0.157
+    ///     Bible, Moses                    0.122    Evelyn, "Imperator"     0.208
+    ///     Pepys, Great Fire               0.118    Les Miserables, "Hell"  0.155
+    ///     Bible, pillar of salt           0.113    Hamlet, "Moses"         0.262
+    ///
+    /// The margin is 0.016 wide. A rescue beyond `rescueTolerance` keeps its
+    /// hit but loses its pin, and competes on cosine like everything else.
+    static let rescueTolerance = 0.15
+
     /// Rescued hits are placed first, at the fused positions they held, and
     /// the rest fill what is left in score order. See
     /// analysis/CROSS_PACK_FUSION_PLAN.md and `CrossPackMergeTests`.
@@ -204,9 +222,12 @@ public struct LocalRetrieval: RetrievalEngine {
     /// :param k: How many hits to return.
     /// :param rrfK: The rank-damping constant, from the manifest.
     /// :param lexicallyRescued: Node ids BM25 found outside the dense top k.
+    /// :param rescueTolerance: How far below the field's best a rescue may
+    ///     score and still be pinned. See the constant.
     /// :returns: The merged ranking, best-first.
     static func mergeByFusedRank(
-        _ lists: [[Hit]], k: Int, rrfK: Int, lexicallyRescued: Set<String> = []
+        _ lists: [[Hit]], k: Int, rrfK: Int, lexicallyRescued: Set<String> = [],
+        rescueTolerance: Double = LocalRetrieval.rescueTolerance
     ) -> [Hit] {
         var scores: [String: Double] = [:]
         var hitByID: [String: Hit] = [:]
@@ -237,10 +258,15 @@ public struct LocalRetrieval: RetrievalEngine {
             return fused.prefix(k).compactMap { hitByID[$0] }
         }
 
+        // The best hit anywhere is a dense one -- a rescue is, by definition,
+        // lower -- so this is the field's best dense score without plumbing.
+        let best = hitByID.values.map(\.score).max() ?? 0
+        let pinned = lexicallyRescued.filter { (hitByID[$0]?.score ?? 0) >= best - rescueTolerance }
+
         var result: [String?] = Array(repeating: nil, count: fused.count)
         var contenders: [String] = []
         for (position, id) in fused.enumerated() {
-            if lexicallyRescued.contains(id) {
+            if pinned.contains(id) {
                 result[position] = id
             } else {
                 contenders.append(id)

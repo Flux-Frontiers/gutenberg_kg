@@ -109,10 +109,40 @@ class TestLexicalProvenance:
         assert _merge(books, diaries, k=4, rescued={"b0"}) == ["b0", "d0", "d1", "d2"]
 
     def test_every_rescued_hit_holds_a_fused_position(self):
-        books = [_hit("b0", 0.50), _hit("b1", 0.90)]
-        diaries = [_hit("d0", 0.55), _hit("d1", 0.80)]
+        books = [_hit("b0", 0.80), _hit("b1", 0.90)]
+        diaries = [_hit("d0", 0.82), _hit("d1", 0.85)]
         merged = merge_by_rank(books, diaries, 4, rrf_k=RRF_K, lexically_rescued={"b0", "d0"})
         # Fused order is b0, d0, b1, d1; the two rescues are pinned at 0 and
         # 1, and the remaining two fill positions 2 and 3 by score.
         assert [h["node_id"] for h in merged] == ["b0", "d0", "b1", "d1"]
-        assert [h["score"] for h in merged] == [0.50, 0.55, 0.90, 0.80]
+        assert [h["score"] for h in merged] == [0.80, 0.82, 0.90, 0.85]
+
+
+class TestRescueTolerance:
+    """A rescue is only pinned near the top of the field -- mirrors the Swift."""
+
+    def test_a_rescue_far_below_the_field_loses_its_pin(self):
+        """Boswell on "moral duty": 0.658 against a field best of 0.815, gap
+        0.157. Past the tolerance, so it competes on cosine."""
+        books = [_hit("b0", 0.815), _hit("b1", 0.804), _hit("b2", 0.796), _hit("b3", 0.789)]
+        diaries = [_hit("d0", 0.689), _hit("d1", 0.658)]
+        assert _merge(books, diaries, k=6, rescued={"d1"}) == ["b0", "b1", "b2", "b3", "d0", "d1"]
+
+    def test_the_verse_is_inside_the_tolerance(self):
+        """pillar of salt: 0.594 against 0.707, gap 0.113. Still pinned third."""
+        books = [_hit("b0", 0.707), _hit("b1", 0.594)]
+        diaries = [_hit("d0", 0.704), _hit("d1", 0.694)]
+        assert _merge(books, diaries, k=4, rescued={"b1"})[2] == "b1"
+
+    def test_the_widest_legitimate_rescue_survives(self):
+        """Audels for "wire an electric bell": 0.650 against 0.791, gap 0.141.
+        This sets the floor on the tolerance."""
+        books = [_hit("b0", 0.791), _hit("b1", 0.650)]
+        diaries = [_hit("d0", 0.658), _hit("d1", 0.587)]
+        assert _merge(books, diaries, k=4, rescued={"b1"})[2] == "b1"
+
+    def test_nothing_inside_the_tolerance_is_a_plain_score_sort(self):
+        books = [_hit("b0", 0.90), _hit("b1", 0.40)]
+        diaries = [_hit("d0", 0.85), _hit("d1", 0.30)]
+        merged = merge_by_rank(books, diaries, 4, rrf_k=RRF_K, lexically_rescued={"b1", "d1"})
+        assert [h["score"] for h in merged] == [0.90, 0.85, 0.40, 0.30]

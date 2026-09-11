@@ -149,8 +149,8 @@ Top 10 at `corpus=all` across the twelve golden queries, from
 
 | | before | after |
 |---|---|---|
-| diary passages in the window (12 queries) | 60 | **33** |
-| cosine inversions | 197 | **72** |
+| diary passages in the window (12 queries) | 60 | **27** |
+| cosine inversions | 197 | **54** |
 | composition | exactly 5 of 10, every query | tracks the question |
 
 Composition now follows relevance, which was the point:
@@ -168,9 +168,32 @@ the lexical rank-0 verse and first-seen order favours dense, so the verse was
 always second in its pack. It is absent from the dense list entirely, so the
 rescue rule marks it and pins it exactly where it was.
 
-Rule 1's threshold stayed at "absent from the dense top k". The open question
-above worried it would be too strict; it is not, for the case that matters.
-The verse is absent from the dense top 75, never mind the top 25.
+Rule 1's threshold stayed at "absent from the dense top k" -- the verse is
+absent from the dense top 75, never mind the top 25 -- but that turned out to
+be half the answer. FTS5 stems "Imperator" and "imperative" to one token, and
+"moral", "duty" and "categorical" all occur in diaries, so BM25 rescued plenty
+that was no literal match, and rule 2 pinned it: Boswell at 0.658 sat at rank
+4 above Kant at 0.789 on "the categorical imperative and moral duty".
+
+The fix is a **rescue tolerance**, measured rather than guessed. Every rescued
+hit across the golden queries, with its gap below the field's best dense
+score -- the best in *any* pack, since a pack's own best is itself noise for a
+question it cannot answer:
+
+| legitimate | gap | noise pinned into the window | gap |
+|---|---|---|---|
+| Audels, wire an electric bell | 0.141 | Boswell, "moral duty" | 0.157 |
+| Bible, Moses | 0.122 | Evelyn, "Imperator" | 0.208 |
+| Pepys, Great Fire | 0.118 | Les Miserables, "Hell" | 0.155 |
+| Bible, pillar of salt | 0.113 | Hamlet, "Moses" | 0.262 |
+
+The margin is 0.016 wide. `rescueTolerance` / `RESCUE_TOLERANCE` is 0.15: a
+rescue beyond it keeps its hit but loses its pin. With it, across the twelve
+queries: diary passages **27**, inversions **54**. "the categorical imperative
+and moral duty" packs 0 diaries and 0 inversions; the desktop under `all` now
+produces the same four passages the phone did under `philosophy`. The verse is
+unmoved. The Audels rescue at 0.141 is the case that sets the floor -- if it
+ever fails, lowering the constant is the wrong response.
 
 **Step 6, `maxPassages`**, was settled independently in `147fd2f`: 10, with a
 new per-source cap of 2 so a wider pull cannot be one repeated translation.

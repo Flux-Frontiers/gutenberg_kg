@@ -9,6 +9,23 @@ from __future__ import annotations
 
 from collections.abc import Sequence
 
+#: How far below the field's best dense score a lexical rescue may sit and
+#: still be pinned. FTS5 stems "Imperator" and "imperative" to one token, and
+#: "moral", "duty" and "categorical" all occur in diaries, so BM25 rescues
+#: plenty that is not a literal match. Those sit far below the best dense hit;
+#: the real ones sit close. Measured across the golden queries against the best
+#: dense score in *any* corpus (a corpus's own best is itself noise for a
+#: question it cannot answer):
+#:
+#:     legitimate                      gap      noise in the window     gap
+#:     Audels, wire an electric bell   0.141    Boswell, "moral duty"   0.157
+#:     Bible, Moses                    0.122    Evelyn, "Imperator"     0.208
+#:     Pepys, Great Fire               0.118    Les Miserables, "Hell"  0.155
+#:     Bible, pillar of salt           0.113    Hamlet, "Moses"         0.262
+#:
+#: The margin is 0.016 wide. Mirrors ``LocalRetrieval.rescueTolerance``.
+RESCUE_TOLERANCE = 0.15
+
 
 def merge_by_rank(
     books: Sequence[dict],
@@ -17,6 +34,7 @@ def merge_by_rank(
     *,
     rrf_k: int,
     lexically_rescued: frozenset[str] | set[str] = frozenset(),
+    rescue_tolerance: float = RESCUE_TOLERANCE,
 ) -> list[dict]:
     """Fold two already-ranked hit lists into one.
 
@@ -48,6 +66,8 @@ def merge_by_rank(
     :param k: How many hits to return.
     :param rrf_k: The rank-damping constant.
     :param lexically_rescued: Node IDs BM25 found outside the dense top ``k``.
+    :param rescue_tolerance: How far below the field's best a rescue may score
+        and still be pinned; see :data:`RESCUE_TOLERANCE`.
     :returns: The merged ranking, best-first.
     """
     scores: dict[str, float] = {}
@@ -64,11 +84,19 @@ def merge_by_rank(
     if not lexically_rescued:
         return [hit_by_id[i] for i in fused[:k]]
 
-    pinned: list[str | None] = [i if i in lexically_rescued else None for i in fused]
-    contenders = [i for i in fused if i not in lexically_rescued]
+    def score(node_id: str) -> float:
+        return float(hit_by_id[node_id].get("score") or 0.0)
+
+    # The best hit anywhere is a dense one -- a rescue is, by definition,
+    # lower -- so this is the field's best dense score without plumbing.
+    best = max((score(i) for i in fused), default=0.0)
+    protected = {i for i in lexically_rescued if score(i) >= best - rescue_tolerance}
+
+    pinned: list[str | None] = [i if i in protected else None for i in fused]
+    contenders = [i for i in fused if i not in protected]
     # Stable, so ties keep fused order: this only reorders where cosine
     # actually separates two hits.
-    contenders.sort(key=lambda i: -float(hit_by_id[i].get("score") or 0.0))
+    contenders.sort(key=lambda i: -score(i))
     fill = iter(contenders)
     merged = [i if i is not None else next(fill) for i in pinned]
     return [hit_by_id[i] for i in merged[:k]]
