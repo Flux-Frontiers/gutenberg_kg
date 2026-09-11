@@ -113,6 +113,70 @@ struct CrossPackMergeTests {
         #expect(cosineInversions(merged) == 0)
     }
 
+    // MARK: - With lexical provenance
+
+    @Test("without provenance the merge is exactly the old round-robin")
+    func noProvenanceIsTheOldBehaviour() {
+        let lists = [books([0.90, 0.89, 0.88]), diaries([0.40, 0.39, 0.38])]
+        #expect(
+            LocalRetrieval.mergeByFusedRank(lists, k: 6, rrfK: rrfK, lexicallyRescued: []).map(
+                \.nodeId)
+                == LocalRetrieval.mergeByFusedRank(lists, k: 6, rrfK: rrfK).map(\.nodeId))
+    }
+
+    @Test("an unrescued pack no longer takes half the window")
+    func unrescuedHitsCompeteOnCosine() {
+        // The same "categorical imperative" numbers as `strictlyAlternates`.
+        // Nothing here was rescued -- the diaries are ordinary dense hits that
+        // rank high only within a much weaker list.
+        let merged = LocalRetrieval.mergeByFusedRank(
+            [books([0.7698, 0.7777, 0.7692, 0.7829, 0.7344, 0.7424]),
+             diaries([0.6351, 0.6548, 0.5747, 0.6540, 0.6537, 0.6415])],
+            k: 6, rrfK: rrfK, lexicallyRescued: ["b0"])
+
+        // b0 is rescued, so it holds rank 0. The rest sort by cosine, and the
+        // whole window is now books.
+        #expect(merged.map(\.nodeId) == ["b0", "b3", "b1", "b2", "b5", "b4"])
+        #expect(merged.allSatisfy { !$0.kgKind.contains("diary") })
+    }
+
+    @Test("the rescued hit keeps its place above better-scoring rivals")
+    func rescuedHitOutranksItsCosine() {
+        // "pillar of salt": b0 is the Lot's-wife verse at 0.594, under every
+        // diary chunk. Rescued, so it stays at rank 0 -- which a cosine sort
+        // would never do.
+        let merged = LocalRetrieval.mergeByFusedRank(
+            [books([0.594, 0.55, 0.54]), diaries([0.704, 0.69, 0.667])],
+            k: 6, rrfK: rrfK, lexicallyRescued: ["b0"])
+
+        #expect(merged.first?.nodeId == "b0")
+        // Everything else, having earned nothing, is in score order.
+        #expect(merged.dropFirst().map(\.score) == [0.704, 0.69, 0.667, 0.55, 0.54])
+    }
+
+    @Test("a pack that is genuinely better still wins on merit")
+    func theDiariesKeepTheWindowWhenTheyDeserveIt() {
+        // "descriptions of the Great Fire of London": Pepys and Evelyn were
+        // there, and outscore most of the books. Nothing demotes them.
+        let merged = LocalRetrieval.mergeByFusedRank(
+            [books([0.786, 0.515, 0.52]), diaries([0.773, 0.765, 0.757])],
+            k: 4, rrfK: rrfK, lexicallyRescued: ["b0"])
+
+        #expect(merged.map(\.nodeId) == ["b0", "d0", "d1", "d2"])
+    }
+
+    @Test("every rescued hit holds a fused position, even several")
+    func severalRescuesAllHoldTheirRanks() {
+        let merged = LocalRetrieval.mergeByFusedRank(
+            [books([0.50, 0.90]), diaries([0.55, 0.80])],
+            k: 4, rrfK: rrfK, lexicallyRescued: ["b0", "d0"])
+
+        // Fused order is b0, d0, b1, d1; b0 and d0 are pinned at 0 and 1, and
+        // the remaining two fill positions 2 and 3 by score.
+        #expect(merged.map(\.nodeId) == ["b0", "d0", "b1", "d1"])
+        #expect(merged.map(\.score) == [0.50, 0.55, 0.90, 0.80])
+    }
+
     @Test("k truncates after merging, not before")
     func kTruncatesTheMergedRanking() {
         let merged = LocalRetrieval.mergeByFusedRank(
