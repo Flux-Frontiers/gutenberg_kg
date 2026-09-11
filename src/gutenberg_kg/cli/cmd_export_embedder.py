@@ -35,11 +35,13 @@ def export_embedder_cmd(out: Path, compute_units: str) -> None:
 
     The packs hold vectors from this model, and a query embedded by any other
     lands in a different space — so the app has to carry it.  Needs torch,
-    transformers and coremltools, which are not project dependencies:
+    transformers and coremltools, which are not project dependencies and do not
+    belong in the project venv — transformers 5.x breaks the conversion.  Use a
+    throwaway venv (app/RUNBOOK.md step 2):
 
     \b
-      poetry run pip install torch transformers coremltools
-      gutenkg export-embedder
+      python3.12 -m venv /tmp/mlenv
+      /tmp/mlenv/bin/pip install torch==2.7.1 transformers==4.46.3 "numpy<2" coremltools
 
     Writes BGEEmbedder.mlpackage, vocab.txt and embedder.json, then checks the
     converted model against PyTorch and refuses to ship one that disagrees.

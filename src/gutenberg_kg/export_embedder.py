@@ -24,11 +24,20 @@ read from the loaded tokenizer and config rather than hardcoded here.
 Dependencies
 ------------
 ``torch``, ``transformers`` and ``coremltools`` are not project dependencies —
-this runs once per embedder change, on a Mac.  Install them into the same
-environment before running::
+this runs once per embedder change, on a Mac.  They cannot go *into* the
+project environment either: ``doc-kg`` and ``kg-rag`` require
+``transformers>=5.5.0``, whose unified BERT masking emits a non-scalar
+``aten::Int`` that coremltools cannot fold to a constant.  Use a throwaway venv
+pinned to the stack coremltools is tested against::
 
-    poetry run pip install torch transformers coremltools
-    gutenkg export-embedder --out bundles/gutenberg-all/swift
+    python3.12 -m venv /tmp/mlenv
+    /tmp/mlenv/bin/pip install torch==2.7.1 transformers==4.46.3 "numpy<2" coremltools
+
+Nothing here imports the rest of the package, and the heavy imports are inside
+the function, so that venv can run this module directly without installing
+``gutenberg_kg`` — see ``app/RUNBOOK.md`` step 2 for the loader.  Where the
+project environment predates transformers 5.x, ``gutenkg export-embedder``
+works as it reads.
 
 Parity
 ------
@@ -99,8 +108,10 @@ def export_embedder(out: Path, *, compute_units: str = "ALL", progress=None) -> 
         from transformers import AutoConfig, AutoModel, AutoTokenizer
     except ImportError as exc:
         raise EmbedderExportError(
-            "conversion needs torch, transformers and coremltools:\n"
-            "  poetry run pip install torch transformers coremltools"
+            "conversion needs torch, transformers and coremltools, which do not\n"
+            "belong in the project environment — see app/RUNBOOK.md step 2:\n"
+            "  python3.12 -m venv /tmp/mlenv\n"
+            '  /tmp/mlenv/bin/pip install torch==2.7.1 transformers==4.46.3 "numpy<2" coremltools'
         ) from exc
 
     out = Path(out)

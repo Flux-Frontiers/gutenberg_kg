@@ -219,6 +219,28 @@ verifying int8 recall against exact fp32 ground truth
   passages stay findable lexically and readable in Browse, but not by cosine.
   Worth investigating upstream if it is more than a handful.
 
+### Re-exporting later
+
+Steps 1 and 2 write into the same directory, and step 1 clears the previous
+run before it writes -- otherwise a spec whose book set shrank would leave the
+old, larger pack files sitting beside the new ones forever.
+
+It clears only what it owns: `*.pack`, `*.vectors`, `manifest.json` and
+`golden.json`. Step 2's `BGEEmbedder.mlpackage`, `vocab.txt` and
+`embedder.json` survive, so a corpus rebuild does **not** cost you another
+Core ML conversion.
+
+That was not always true. Until 2026-09-10 the wipe cleared every child of the
+directory, so `make export-swift` silently deleted a 66 MB model that takes a
+separate toolchain to rebuild, and left behind packs whose own `manifest.json`
+declares them unusable without it. If you are on an older checkout, re-run
+step 2 after every step 1.
+
+Redo step 2 only when the embedding model itself changes. The packs and the
+model are a matched pair -- vectors built by one model are meaningless to
+another -- so if you ever do change it, redo **both** steps and push the whole
+directory.
+
 ---
 
 ## 2. Convert the query embedder
@@ -500,14 +522,32 @@ then, from the repo root:
 make ios-deploy     # install the corpus, list what landed, relaunch the app
 ```
 
-`make ios-devices`, `ios-generate`, `ios-check`, `ios-install-corpus`,
-`ios-verify-corpus` and `ios-launch` are the individual steps; the phone is
-auto-detected, and `IOS_DEVICE=<udid|name>` picks one when several are
-attached. What those targets run, written out:
+`make ios-devices`, `ios-generate`, `ios-check`, `ios-build`,
+`ios-install-corpus`, `ios-verify-corpus`, `ios-launch` and `ios-deploy-all`
+are the individual steps; the device is auto-detected, and
+`IOS_DEVICE=<udid|name>` picks one when several are paired.
+
+Auto-detection takes the first device that is actually reachable, which is not
+the same as the first one listed. `devicectl list devices` reports everything
+this Mac has ever paired with, so the top row is as likely to be an iPad asleep
+in another room as the phone on the desk -- and aiming at it fails with a
+usage-assertion error that names no device at all:
+
+```
+ERROR: The device is not able to fulfill the requested usage assertion
+requirements. (com.apple.dt.CoreDeviceError error 4016)
+       CurrentlyAssertableStates = ()
+```
+
+`connectionProperties.tunnelState` sorts them out. Only `unavailable` is
+disqualifying: `disconnected` is the resting state of a perfectly good device,
+because devicectl drops the tunnel between commands and reopens it on demand.
+A phone you deployed to a minute ago reads `disconnected`. What those targets
+run, written out:
 
 ```sh
 DEVICE=$(xcrun devicectl list devices --json-output /dev/stdout \
-  | python3 -c 'import json,sys; print(json.load(sys.stdin)["result"]["devices"][0]["identifier"])')
+  | python3 -c 'import json,sys; d=json.load(sys.stdin)["result"]["devices"]; c=lambda x: x.get("connectionProperties",{}); d=[x for x in d if c(x).get("tunnelState")!="unavailable" and c(x).get("transportType")!="sameMachine"]; d.sort(key=lambda x: c(x).get("tunnelState")!="connected"); print(d[0]["identifier"] if d else "")')
 
 cd bundles/gutenberg-all/swift
 xcrun devicectl device copy to --device "$DEVICE" \
@@ -551,6 +591,35 @@ The older path — Xcode ▸ Window ▸ Devices and Simulators ▸ gear ▸ **Do
 Container…**, edit the `.xcappdata` in Finder, **Replace Container…** — still
 works and is worth knowing if `devicectl` ever refuses, but it moves the whole
 container both ways for the sake of adding one folder.
+
+### More than one device
+
+`make ios-build` produces a signed build for a real device, and
+`make ios-deploy-all` installs and relaunches it on every reachable physical
+device in one pass. Both resolve the Apple Team ID from this machine rather
+than carrying anyone's in `project.yml` — xcodegen wipes what Xcode's Signing
+& Capabilities editor sets, so it has to arrive as a build setting. It is read
+from a provisioning profile's `TeamIdentifier`, which automatic signing writes
+the first time you Run the app on a device from Xcode; `IOS_TEAM=<teamid>`
+overrides it.
+
+Do not take the Team ID from the Apple Development certificate. The value in
+its parentheses is the certificate's own id, not the team's, and a build signed
+against it fails in a way that names neither.
+
+There is no all-devices target for the *corpus* — it is ~690 MB per device, so
+it stays a deliberate, one-device-at-a-time step:
+
+```sh
+for d in EgsBrainPhone Fermi Ada; do
+  make ios-install-corpus IOS_DEVICE=$d
+done
+```
+
+A device that is asleep or off the network reads `unavailable` in
+`make ios-devices` and cannot be reached at all. Wake it, unlock it, and check
+it is on the same network as this Mac; a USB cable sidesteps the network
+entirely. Nothing can be pushed to it until it reports something else.
 
 ### Until the corpus is installed, the app calls a worker that is not there
 

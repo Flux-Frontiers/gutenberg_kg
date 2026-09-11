@@ -1179,6 +1179,32 @@ class TestSelectiveExportDestinationWipe:
         assert not (out / "diaries.pack").exists()
         assert (out / "gutenberg.pack").exists()
 
+    def test_force_keeps_the_embedder_the_packs_are_useless_without(self, bundle, tmp_path):
+        """`gutenkg export-embedder` writes into this same directory by default.
+
+        The wipe used to clear every child, so a re-export destroyed a Core ML
+        model that manifest.json still declares the packs unusable without --
+        and that only a separate toolchain can rebuild.
+        """
+        out = tmp_path / "swift"
+        export_swift(
+            ExportOptions(bundle=bundle, out=out, with_vectors=False, golden=False, force=True)
+        )
+        package = out / "BGEEmbedder.mlpackage"
+        (package / "Data").mkdir(parents=True)
+        (package / "Data" / "model.mlmodel").write_bytes(b"coreml")
+        (out / "vocab.txt").write_text("[PAD]\n")
+        (out / "embedder.json").write_text('{"model": "BAAI/bge-small-en-v1.5"}')
+
+        export_swift(
+            ExportOptions(bundle=bundle, out=out, with_vectors=False, golden=False, force=True)
+        )
+
+        assert (package / "Data" / "model.mlmodel").read_bytes() == b"coreml"
+        assert (out / "vocab.txt").exists()
+        assert (out / "embedder.json").exists()
+        assert (out / "gutenberg.pack").exists()
+
 
 class TestResolveCatalogSelectors:
     """CLI --book/--genre resolution against a built bundle's catalog.json.
