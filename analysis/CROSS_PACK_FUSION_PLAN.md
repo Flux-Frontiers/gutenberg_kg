@@ -1,7 +1,8 @@
 # Cross-pack fusion: stop giving the diaries half the context
 
-Status: **proposed**, nothing implemented.
-Measured 2026-09-10 against `bundles/gutenberg-all/swift` (241 books, 4 diaries).
+Status: **steps 1-5 done** in both engines, 2026-09-11, on
+`feat/cross-pack-fusion-harness`. Results at the end.
+Measured against `bundles/gutenberg-all/swift` (241 books, 4 diaries).
 
 ## The observation
 
@@ -140,3 +141,53 @@ Each step is separately reviewable; steps 1-2 change no behaviour.
   books is a lopsided merge under any rule. A better ranking may still leave
   the question of whether an unscoped search should weight corpora by size.
   Out of scope here; worth its own decision.
+
+## Result
+
+Top 10 at `corpus=all` across the twelve golden queries, from
+`CrossPackProbeTests`:
+
+| | before | after |
+|---|---|---|
+| diary passages in the window (12 queries) | 60 | **33** |
+| cosine inversions | 197 | **72** |
+| composition | exactly 5 of 10, every query | tracks the question |
+
+Composition now follows relevance, which was the point:
+
+- *the whiteness of the whale* -- 0 diaries, 0 inversions, books 0.817-0.833
+- *the Great Fire of London* -- 5 diaries at 0.768-0.774, none demoted:
+  Pepys and Evelyn were there
+- *a dinner party with too much wine in a London diary* -- 7 diaries
+- *the categorical imperative and moral duty* -- 5 diaries down to 3
+
+The rescue case holds. "pillar of salt" ranks the Lot's-wife verse third
+overall both before and after -- measured in a worktree at the parent commit,
+not inferred. Within the books pack RRF ties the dense rank-0 hit (0.707) with
+the lexical rank-0 verse and first-seen order favours dense, so the verse was
+always second in its pack. It is absent from the dense list entirely, so the
+rescue rule marks it and pins it exactly where it was.
+
+Rule 1's threshold stayed at "absent from the dense top k". The open question
+above worried it would be too strict; it is not, for the case that matters.
+The verse is absent from the dense top 75, never mind the top 25.
+
+**Step 6, `maxPassages`**, was settled independently in `147fd2f`: 10, with a
+new per-source cap of 2 so a wider pull cannot be one repeated translation.
+With the merge fixed, those ten are now worth having.
+
+### Still open
+
+- **Integration parity.** `merge_by_rank` and `mergeByFusedRank` have
+  mirrored unit tests over the same measured cosines, but nothing runs both
+  engines on the real corpus and diffs the `corpus=all` ranking. The handler
+  opens its stores at import, which is what has kept it out of the unit
+  suite. A `corpus=all` section in `golden.json` would close this and needs an
+  `export_swift` change plus a re-export.
+- **One remaining metric caveat.** The probe's `lost` column was removed: its
+  floor was the weakest diary hit *in the window*, so it rose on changes that
+  improved the ranking. Diary count and inversions are what remain, and both
+  mean the same thing under either merge.
+- **Whether the diaries belong in `all` at this scale** -- unchanged from
+  above. A better merge does not answer whether four diaries should compete
+  with 241 books unweighted. Product question, not a bug.
