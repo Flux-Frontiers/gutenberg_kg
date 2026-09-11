@@ -31,6 +31,12 @@ public struct ContextBudgeter: Sendable {
         /// A passage trimmed below this is dropped instead — a 40-character
         /// fragment costs budget without carrying an answer.
         public var minCharactersPerPassage: Int
+        /// Hard cap on passages taken from the same source (by `sourcePath`,
+        /// falling back to title). Several chunks of the same translation in
+        /// one prompt (e.g. three passages of Cary's *Inferno* for "circles
+        /// of Hell") reads to the on-device model as text to keep repeating
+        /// rather than as independent evidence, and it loops.
+        public var maxPassagesPerSource: Int
 
         public init(
             contextWindow: Int = 4096,
@@ -38,7 +44,8 @@ public struct ContextBudgeter: Sendable {
             reservedForOverhead: Int = 240,
             maxPassages: Int = 5,
             maxCharactersPerPassage: Int = 500,
-            minCharactersPerPassage: Int = 120
+            minCharactersPerPassage: Int = 120,
+            maxPassagesPerSource: Int = 2
         ) {
             self.contextWindow = contextWindow
             self.reservedForResponse = reservedForResponse
@@ -46,6 +53,7 @@ public struct ContextBudgeter: Sendable {
             self.maxPassages = maxPassages
             self.maxCharactersPerPassage = maxCharactersPerPassage
             self.minCharactersPerPassage = minCharactersPerPassage
+            self.maxPassagesPerSource = maxPassagesPerSource
         }
 
         /// Tokens actually available to passage text.
@@ -54,7 +62,14 @@ public struct ContextBudgeter: Sendable {
         }
 
         /// The on-device default.
-        public static let onDevice = Budget()
+        ///
+        /// Ten passages, where this shipped with five: the 4,096-token window
+        /// leaves 3,344 tokens of allowance, and five was leaving most of it
+        /// unspent while still dropping hits ranked sixth and below. Revisited
+        /// now that `maxPassagesPerSource` caps how many of those ten can come
+        /// from the same book, so a wider pull no longer means one repeated
+        /// source dominating the prompt.
+        public static let onDevice = Budget(maxPassages: 10)
 
         /// Parity with the worker's server-class synthesis.
         public static let worker = Budget(
@@ -125,11 +140,18 @@ public struct ContextBudgeter: Sendable {
         var spent = 0
         var packed: [Passage] = []
         var dropped = 0
+        var perSource: [String: Int] = [:]
 
         for hit in hits {
             guard let content = hit.synthesisText, !content.isEmpty else { continue }
 
             guard packed.count < budget.maxPassages else {
+                dropped += 1
+                continue
+            }
+
+            let source = hit.sourcePath ?? hit.title ?? hit.name
+            guard (perSource[source] ?? 0) < budget.maxPassagesPerSource else {
                 dropped += 1
                 continue
             }
@@ -153,6 +175,7 @@ public struct ContextBudgeter: Sendable {
             }
 
             spent += cost
+            perSource[source, default: 0] += 1
             packed.append(Passage(id: hit.nodeId, header: header, text: text))
         }
 
