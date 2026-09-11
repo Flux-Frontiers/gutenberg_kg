@@ -1127,6 +1127,49 @@ class TestSelectiveExportGoldenQueries:
         )
         assert [entry["query"] for entry in result["queries"]] == ["q1", "q2", "q3"]
 
+    def test_the_cross_pack_merge_is_recorded_when_both_packs_exist(self, packs, monkeypatch):
+        """The ``all`` ranking is the reference for the app's merge, and the
+        tolerance is recorded so the app can check its constant by name.
+        Content is the real corpus's job (the Swift golden gate); this pins
+        the schema so a golden file cannot silently stop carrying it."""
+        pytest.importorskip("numpy")
+        import numpy as np
+
+        from gutenberg_kg.serve.fusion import RESCUE_TOLERANCE
+
+        class FakeEmbedder:
+            def embed_texts(self, texts):
+                return [np.zeros(384, dtype=np.float32) for _ in texts]
+
+        monkeypatch.setattr("gutenberg_kg.export_swift._make_embedder", lambda: FakeEmbedder())
+        _, out = packs
+        result = build_golden(
+            {"gutenberg": out / "gutenberg.pack", "diaries": out / "diaries.pack"},
+            k=2,
+            dtype="int8",
+            queries=("q1",),
+        )
+        assert result["rescue_tolerance"] == RESCUE_TOLERANCE
+        (entry,) = result["queries"]
+        assert isinstance(entry["all"], list)
+        recorded = {h["node_id"] for name in ("gutenberg", "diaries") for h in entry["packs"][name]}
+        assert {h["node_id"] for h in entry["all"]} <= recorded
+
+    def test_the_cross_pack_merge_is_absent_with_one_pack(self, packs, monkeypatch):
+        pytest.importorskip("numpy")
+        import numpy as np
+
+        class FakeEmbedder:
+            def embed_texts(self, texts):
+                return [np.zeros(384, dtype=np.float32) for _ in texts]
+
+        monkeypatch.setattr("gutenberg_kg.export_swift._make_embedder", lambda: FakeEmbedder())
+        _, out = packs
+        result = build_golden(
+            {"gutenberg": out / "gutenberg.pack"}, k=2, dtype="int8", queries=("q1",)
+        )
+        assert "all" not in result["queries"][0]
+
 
 class TestSelectiveExportManifest:
     def test_product_is_absent_without_catalog_keys(self, packs):

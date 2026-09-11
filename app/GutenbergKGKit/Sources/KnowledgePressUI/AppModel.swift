@@ -227,9 +227,39 @@ public final class AppModel {
         }
         return stored
     }
-    var resultCount: Double = 25
-    var minScore: Double = 0.5
-    var semanticFloor: Double = 0.20
+    /// The shipped values for the three sliders, named rather than written
+    /// inline so "Reset to defaults" restores them without restating numbers
+    /// that would then drift apart.
+    enum SearchDefaults {
+        static let resultCount: Double = 25
+        static let minScore: Double = 0.5
+        static let semanticFloor: Double = 0.20
+    }
+
+    var resultCount: Double = SearchDefaults.resultCount
+    var minScore: Double = SearchDefaults.minScore
+    var semanticFloor: Double = SearchDefaults.semanticFloor
+
+    /// Whether the sliders are already where they shipped.
+    ///
+    /// Lets the reset button disable itself, so it answers "have I changed
+    /// anything?" without the reader having to remember three numbers.
+    var searchSettingsAreDefault: Bool {
+        resultCount == SearchDefaults.resultCount
+            && minScore == SearchDefaults.minScore
+            && semanticFloor == SearchDefaults.semanticFloor
+    }
+
+    /// Put the three search sliders back to their shipped values.
+    ///
+    /// Scope is deliberately not touched: it is persisted precisely because
+    /// it is a lens rather than a preference, and a reader narrowing to one
+    /// genre has not asked for that to be undone by a button about sliders.
+    func resetSearchSettings() {
+        resultCount = SearchDefaults.resultCount
+        minScore = SearchDefaults.minScore
+        semanticFloor = SearchDefaults.semanticFloor
+    }
 
     /// How large a rendered illustration should be.
     ///

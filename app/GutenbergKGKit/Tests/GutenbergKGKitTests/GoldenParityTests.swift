@@ -57,16 +57,24 @@ private struct GoldenFile: Decodable {
 
         let query: String
         let packs: [String: [Hit]]
+        /// The `corpus=all` ranking, as the Python merge produced it from
+        /// the same per-pack lists. Optional: a golden file written before
+        /// the cross-pack merge was recorded has no such key.
+        let all: [Hit]?
     }
 
     let k: Int
     let embedModel: String
     let tolerance: Tolerance
+    /// The exporter's `RESCUE_TOLERANCE`, so the two constants cannot drift
+    /// apart unnoticed. Optional for the same reason as `Entry.all`.
+    let rescueTolerance: Double?
     let queries: [Entry]
 
     enum CodingKeys: String, CodingKey {
         case k, tolerance, queries
         case embedModel = "embed_model"
+        case rescueTolerance = "rescue_tolerance"
     }
 }
 
@@ -114,17 +122,42 @@ struct GoldenParityTests {
                     RetrievalRequest(
                         query: entry.query, corpus: scope, k: golden.k, minScore: 0,
                         semanticFloor: 0))
-                let got = result.hits
+                failures += Self.divergences(
+                    got: result.hits, expected: expected, tolerance: golden.tolerance,
+                    label: "[\(packName)] \(entry.query)")
+            }
+        }
 
-                let expectedIDs = Set(expected.map(\.nodeID))
-                let overlap =
-                    Double(Set(got.map(\.nodeId)).intersection(expectedIDs).count)
-                    / Double(expectedIDs.count)
-                if overlap < golden.tolerance.rankOverlap {
-                    failures.append(
-                        "[\(packName)] \(entry.query): rank overlap \(String(format: "%.2f", overlap)) "
-                            + "< \(golden.tolerance.rankOverlap)")
-                }
+        // Report every divergence at once: one failing query is a bug in one
+        // place, and all twelve failing is a bug in the tokenizer — telling
+        // those apart matters more than failing fast.
+        let report = failures.joined(separator: "\n")
+        #expect(failures.isEmpty, "\(failures.count) divergence(s):\n\(report)")
+    }
+
+    /// Reference scores this close are one tie for rank-drift purposes: five
+    /// times the spread measured between int8 near-ties, twenty times under
+    /// `score_delta`, so it cannot absorb a real reordering.
+    private static let tieEpsilon = 0.001
+
+    /// Where `got` departs from the reference, as human-readable lines.
+    ///
+    /// Three checks, in the order the existing per-pack gate applied them:
+    /// set overlap, rank drift among the shared ids, and score delta where
+    /// both sides found the passage.
+    private static func divergences(
+        got: [Hit], expected: [GoldenFile.Entry.Hit], tolerance: GoldenFile.Tolerance,
+        label: String
+    ) -> [String] {
+        var failures: [String] = []
+        let expectedIDs = Set(expected.map(\.nodeID))
+        let overlap =
+            Double(Set(got.map(\.nodeId)).intersection(expectedIDs).count)
+            / Double(max(expectedIDs.count, 1))
+        if overlap < tolerance.rankOverlap {
+            failures.append(
+                "\(label): rank overlap \(String(format: "%.2f", overlap)) < \(tolerance.rankOverlap)")
+        }
 
                 // Order, not just membership. The overlap above is a set
                 // test, so a result holding the right passages in the wrong
@@ -134,43 +167,95 @@ struct GoldenParityTests {
                 // literal BM25 match sits above semantic hits with a higher
                 // cosine. Comparing only the shared ids keeps this from
                 // double-reporting a miss the overlap check already named.
-                let shared = got.map(\.nodeId).filter(expectedIDs.contains)
-                let sharedSet = Set(shared)
-                let referenceOrder = expected.map(\.nodeID).filter(sharedSet.contains)
-                let referenceRank = Dictionary(
-                    uniqueKeysWithValues: referenceOrder.enumerated().map { ($1, $0) })
-                for (position, id) in shared.enumerated() {
-                    guard let reference = referenceRank[id] else { continue }
-                    let drift = abs(position - reference)
-                    if drift > golden.tolerance.maxRankDrift {
-                        failures.append(
-                            "[\(packName)] \(entry.query): \(id) sits at \(position) "
-                                + "but the reference fused it at \(reference) (drift \(drift) "
-                                + "> \(golden.tolerance.maxRankDrift))")
-                    }
-                }
-
-                // Scores are compared only where both sides found the passage;
-                // a rank miss is already reported above and would double-count.
-                let expectedScores = Dictionary(
-                    expected.map { ($0.nodeID, $0.score) }, uniquingKeysWith: { first, _ in first })
-                for hit in got {
-                    guard let reference = expectedScores[hit.nodeId] else { continue }
-                    let delta = abs(hit.score - reference)
-                    if delta > golden.tolerance.scoreDelta {
-                        failures.append(
-                            "[\(packName)] \(entry.query): \(hit.nodeId) scored \(hit.score) "
-                                + "vs \(reference) (Δ \(String(format: "%.4f", delta)))")
-                    }
-                }
+        let shared = got.map(\.nodeId).filter(expectedIDs.contains)
+        let sharedSet = Set(shared)
+        let referenceOrder = expected.map(\.nodeID).filter(sharedSet.contains)
+        let referenceRank = Dictionary(
+            uniqueKeysWithValues: referenceOrder.enumerated().map { ($1, $0) })
+        let referenceScore = Dictionary(
+            expected.map { ($0.nodeID, $0.score) }, uniquingKeysWith: { first, _ in first })
+        for (position, id) in shared.enumerated() {
+            guard let reference = referenceRank[id], let score = referenceScore[id] else { continue }
+            // Drift is measured to the nearest reference position held by a
+            // hit *tied* with this one, not to its own. The dense channels
+            // differ in their last bits -- numpy's argsort over dequantised
+            // int8 against Accelerate's dot product -- so hits within a few
+            // ten-thousandths come back in either order, and a tie swapped is
+            // not a ranking fault. Measured 2026-09-11 on "circles of Hell":
+            // three diary hits at 0.6578 / 0.6577 / 0.6576, and because RRF
+            // interleaves a lexical rescue at every odd rank, the outer two
+            // swapping reads as drift 4 rather than the 2 a plain swap costs.
+            let tied = referenceOrder.enumerated().compactMap { index, other -> Int? in
+                guard let otherScore = referenceScore[other],
+                    abs(otherScore - score) <= Self.tieEpsilon
+                else { return nil }
+                return index
+            }
+            let drift = tied.map { abs(position - $0) }.min() ?? abs(position - reference)
+            if drift > tolerance.maxRankDrift {
+                failures.append(
+                    "\(label): \(id) sits at \(position) but the reference fused it at "
+                        + "\(reference) (drift \(drift) > \(tolerance.maxRankDrift))")
             }
         }
 
-        // Report every divergence at once: one failing query is a bug in one
-        // place, and all twelve failing is a bug in the tokenizer — telling
-        // those apart matters more than failing fast.
+        // Scores are compared only where both sides found the passage;
+        // a rank miss is already reported above and would double-count.
+        let expectedScores = Dictionary(
+            expected.map { ($0.nodeID, $0.score) }, uniquingKeysWith: { first, _ in first })
+        for hit in got {
+            guard let reference = expectedScores[hit.nodeId] else { continue }
+            let delta = abs(hit.score - reference)
+            if delta > tolerance.scoreDelta {
+                failures.append(
+                    "\(label): \(hit.nodeId) scored \(hit.score) vs \(reference) "
+                        + "(Δ \(String(format: "%.4f", delta)))")
+            }
+        }
+        return failures
+    }
+
+    // MARK: - corpus=all
+
+    /// The cross-pack merge against the Python reference, on the real corpus.
+    ///
+    /// The per-pack gate above searches one pack at a time, so nothing in it
+    /// says whether `LocalRetrieval.mergeByFusedRank` and
+    /// `serve.fusion.merge_by_rank` fold the same two lists the same way. This
+    /// does: the exporter records the Python merge under `all` for each query,
+    /// from the same per-pack lists the gate already checks, and the Swift
+    /// engine has to reproduce it within the same tolerance.
+    @Test func everyGoldenQueryReproducesTheMergedRanking() async throws {
+        let (packs, golden) = try load()
+        let recorded = golden.queries.filter { $0.all != nil }
+        try #require(
+            !recorded.isEmpty,
+            "golden.json has no `all` rankings -- re-export with the current exporter")
+        let retrieval = LocalRetrieval(packs: packs)
+
+        var failures: [String] = []
+        for entry in recorded {
+            let expected = entry.all!
+            let result = try await retrieval.retrieve(
+                RetrievalRequest(
+                    query: entry.query, corpus: "all", k: golden.k, minScore: 0,
+                    semanticFloor: 0))
+            failures += Self.divergences(
+                got: result.hits, expected: expected, tolerance: golden.tolerance,
+                label: "[all] \(entry.query)")
+        }
         let report = failures.joined(separator: "\n")
         #expect(failures.isEmpty, "\(failures.count) divergence(s):\n\(report)")
+    }
+
+    @Test func theRescueToleranceMatchesTheExporters() throws {
+        let (_, golden) = try load()
+        let recorded = try #require(
+            golden.rescueTolerance, "golden.json records no rescue_tolerance -- re-export")
+        // Two constants in two languages, meant to be one number. A golden
+        // file from an exporter whose constant moved fails here, by name,
+        // before the ranking test fails on symptoms.
+        #expect(recorded == LocalRetrieval.rescueTolerance)
     }
 
     @Test func theLiteralMatchSurvivesTheAllScope() async throws {

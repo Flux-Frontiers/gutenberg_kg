@@ -61,6 +61,8 @@ public struct SettingsView: View {
                 LabeledSlider(
                     label: "Semantic floor", value: $model.semanticFloor, range: 0...0.9,
                     format: "%.2f")
+                Button("↩️ Reset search to defaults") { model.resetSearchSettings() }
+                    .disabled(model.searchSettingsAreDefault)
             }
 
             if showsEngineAndScope {

@@ -23,10 +23,15 @@ import Foundation
         private let temperature: Double
 
         /// :param budget: Context limits; defaults to the on-device window.
-        /// :param temperature: Sampling temperature. 0 for determinism: the
-        ///                     answer must restate retrieved passages, so
-        ///                     sampling only adds run-to-run variance.
-        public init(budget: ContextBudgeter.Budget = .onDevice, temperature: Double = 0) {
+        /// :param temperature: Sampling temperature. Was 0 for determinism,
+        ///                     but greedy decoding degenerates into repeated
+        ///                     text when several passages share a source
+        ///                     (e.g. "circles of Hell" pulling three Divine
+        ///                     Comedy chunks) — bumped off zero to break the
+        ///                     loop while staying low enough that answers
+        ///                     still restate the passages rather than
+        ///                     paraphrase freely.
+        public init(budget: ContextBudgeter.Budget = .onDevice, temperature: Double = 0.2) {
             self.budgeter = ContextBudgeter(budget: budget)
             self.temperature = temperature
         }
@@ -157,7 +162,8 @@ import Foundation
             passagesUsed: packed.passages.count,
             passagesDropped: packed.dropped,
             estimatedPromptTokens: packed.estimatedPromptTokens,
-            model: modelDescription)
+            model: modelDescription,
+            packedIds: packed.passages.map(\.id))
         continuation.yield(.completed(latest, metrics))
 
         // After the answer is delivered, never before it.

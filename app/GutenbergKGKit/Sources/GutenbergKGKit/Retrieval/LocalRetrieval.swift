@@ -34,19 +34,21 @@ public struct LocalRetrieval: RetrievalEngine {
         let oversample = max(request.k * 3, request.k)
 
         var perPack: [[Hit]] = []
+        var rescued: Set<String> = []
 
         for pack in packs.packs {
             guard Self.pack(pack, matches: request.corpus) else { continue }
-            perPack.append(
-                try search(
-                    pack: pack,
-                    query: query,
-                    text: request.query,
-                    k: request.k,
-                    oversample: oversample,
-                    genre: scope,
-                    minScore: request.minScore,
-                    semanticFloor: request.semanticFloor))
+            let found = try search(
+                pack: pack,
+                query: query,
+                text: request.query,
+                k: request.k,
+                oversample: oversample,
+                genre: scope,
+                minScore: request.minScore,
+                semanticFloor: request.semanticFloor)
+            perPack.append(found.hits)
+            rescued.formUnion(found.lexicallyRescued)
         }
         let packsSearched = perPack.count
 
@@ -62,15 +64,22 @@ public struct LocalRetrieval: RetrievalEngine {
         // exactly the hit the lexical channel exists to rescue, and the deeper
         // the fusion reached, the more certainly it is lost.
         //
-        // So the packs are folded together by fused *rank* instead, with the
-        // same RRF constant. Disjoint ids at equal rank tie and fall back to
-        // first-seen order, which interleaves the packs and keeps each one's
-        // internal order intact. Note this is deliberately *not* what
-        // `handler.query` does in its `corpus == "all"` branch, which sorts by
-        // score and has the same defect.
+        // So the packs were folded together by fused *rank* instead. That
+        // protected the verse, but it protected everything else too: ids are
+        // disjoint across packs, so rank 0 ties rank 0 and the merge became a
+        // strict round-robin in which quality played no part. Four diaries
+        // against 241 books took half of every window -- measured at exactly
+        // 5 of the top 10 on all twelve golden queries.
+        //
+        // The distinction the merge needs is the one above: whether a hit owes
+        // its rank to the lexical channel. `search` now reports that, so a
+        // rescued hit keeps its fused rank and everything else competes on
+        // cosine, which is directly comparable across packs (one embedder, one
+        // normalised space). See analysis/CROSS_PACK_FUSION_PLAN.md.
         var hits =
             packsSearched > 1
-            ? Self.mergeByFusedRank(perPack, k: request.k, rrfK: rrfK)
+            ? Self.mergeByFusedRank(
+                perPack, k: request.k, rrfK: rrfK, lexicallyRescued: rescued)
             : (perPack.first ?? [])
         if hits.count > request.k { hits = Array(hits.prefix(request.k)) }
 
@@ -82,6 +91,17 @@ public struct LocalRetrieval: RetrievalEngine {
 
     // MARK: - One pack
 
+    /// One pack's hits, and which of them the lexical channel rescued.
+    ///
+    /// "Rescued" means BM25 found it where cosine did not: it is absent from
+    /// the dense top `k`. Such a hit has a low score *by construction* -- that
+    /// is why it needed rescuing -- so the cross-pack merge must not judge it
+    /// on cosine. Everything else may be.
+    struct PackResults {
+        let hits: [Hit]
+        let lexicallyRescued: Set<String>
+    }
+
     private func search(
         pack: PassagePack,
         query: [Float],
@@ -91,7 +111,7 @@ public struct LocalRetrieval: RetrievalEngine {
         genre: String?,
         minScore: Double,
         semanticFloor: Double
-    ) throws -> [Hit] {
+    ) throws -> PackResults {
         var similarityByID: [String: Float] = [:]
         var denseIDs: [String] = []
         var bestDense: Float = 0
@@ -129,39 +149,92 @@ public struct LocalRetrieval: RetrievalEngine {
         // The floor asks whether this corpus is relevant at all, so it is
         // tested against the best *dense* score: a literal match with modest
         // cosine should not keep a stale set alive on its own.
-        if semanticFloor > 0, Double(bestDense) < semanticFloor { return [] }
+        if semanticFloor > 0, Double(bestDense) < semanticFloor { return PackResults(hits: [], lexicallyRescued: []) }
+
+        // What the dense channel would have returned on its own. A lexical hit
+        // outside this is one cosine did not find, which is the whole reason
+        // the hybrid exists -- and the reason its score cannot be trusted to
+        // rank it later.
+        let denseTop = Set(denseIDs.prefix(k))
+        let rescued = Set(scoredLexical.filter { !denseTop.contains($0) })
 
         let ordered =
             scoredLexical.isEmpty
             ? Array(denseIDs.prefix(k))
             : Self.fuse(dense: denseIDs, lexical: scoredLexical, k: k, rrfK: rrfK)
-        guard !ordered.isEmpty else { return [] }
+        guard !ordered.isEmpty else { return PackResults(hits: [], lexicallyRescued: []) }
 
         let rows = try pack.passages(ids: ordered)
-        return ordered.compactMap { id in
+        let hits = ordered.compactMap { id -> Hit? in
             guard let row = rows[id] else { return nil }
             let score = ((Double(similarityByID[id] ?? 0) * 10_000).rounded()) / 10_000
             guard score >= minScore else { return nil }
             return row.hit(score: score)
         }
+        return PackResults(
+            hits: hits,
+            lexicallyRescued: rescued.intersection(hits.map(\.nodeId)))
     }
 
     // MARK: - Fusion and scope
 
     /// Fold per-pack results, each already RRF-ordered, into one ranking.
     ///
-    /// Same arithmetic as :func:`fuse`, applied to whole packs rather than to
-    /// the two channels inside one: a hit contributes `1 / (rrfK + rank)` from
-    /// the list it came from. Ids do not repeat across packs, so every hit
-    /// scores from exactly one list and equal ranks tie; the tie breaks on
-    /// first-seen order, which interleaves the packs fairly while preserving
-    /// the order each one fused for itself.
+    /// Two rules, because the packs differ in two ways that pull apart.
+    ///
+    /// A hit the lexical channel **rescued** keeps its fused rank. Its cosine
+    /// is low by construction -- BM25 found it precisely where the dense
+    /// channel did not -- so ranking it on score buries the hit the hybrid
+    /// exists to surface. "pillar of salt" is the worked case: the Lot's-wife
+    /// verse tops the books at 0.594 while diary chunks sit at 0.667-0.704,
+    /// and a score sort does not demote it, it drops it entirely.
+    ///
+    /// Everything else competes on **cosine**, across packs. One embedder, one
+    /// normalised space, so the scores are directly comparable, and ranking by
+    /// fused rank instead threw that away: ids are disjoint across packs, so
+    /// rank 0 tied rank 0 and the merge was a strict round-robin. Four diaries
+    /// against 241 books took exactly half of every window on all twelve
+    /// golden queries, displacing 74 better-scoring book passages.
+    ///
+    /// A rescue is only credible near the top of the field. FTS5 stems
+    /// "Imperator" and "imperative" to one token, and "moral", "duty" and
+    /// "categorical" all occur in diaries, so BM25 rescues plenty that is not
+    /// a literal match at all. Those sit far below the best dense hit; the
+    /// real ones sit close. Measured across the golden queries, against the
+    /// best dense score in *any* pack (a pack's own best is itself noise for
+    /// a question it has no answer to):
+    ///
+    ///     legitimate                      gap      noise in the window     gap
+    ///     Audels, wire an electric bell   0.141    Boswell, "moral duty"   0.157
+    ///     Bible, Moses                    0.122    Evelyn, "Imperator"     0.208
+    ///     Pepys, Great Fire               0.118    Les Miserables, "Hell"  0.155
+    ///     Bible, pillar of salt           0.113    Hamlet, "Moses"         0.262
+    ///
+    /// The margin is 0.016 wide. A rescue beyond `rescueTolerance` keeps its
+    /// hit but loses its pin, and competes on cosine like everything else.
+    static let rescueTolerance = 0.15
+
+    /// A rescued hit's fused rank is a **floor**, not a slot: it takes the
+    /// better of that and the rank its cosine would earn. Pinning to the slot
+    /// alone stopped it rising, and once the two lists interleave a fused
+    /// rank past `k` sat outside the window while weaker unpinned hits filled
+    /// it -- measured on the worker, 2026-09-11: two *Groundwork* passages at
+    /// 0.766 held at merged ranks 10 and 14 while Boswell at 0.688 took 9 and
+    /// 10. Protected hits are placed first, best floor first, sliding down on
+    /// a collision; the rest fill the gaps in score order. See
+    /// analysis/CROSS_PACK_FUSION_PLAN.md and `CrossPackMergeTests`.
     ///
     /// :param lists: One best-first list per pack.
     /// :param k: How many hits to return.
     /// :param rrfK: The rank-damping constant, from the manifest.
+    /// :param lexicallyRescued: Node ids BM25 found outside the dense top k.
+    /// :param rescueTolerance: How far below the field's best a rescue may
+    ///     score and still be pinned. See the constant.
     /// :returns: The merged ranking, best-first.
-    static func mergeByFusedRank(_ lists: [[Hit]], k: Int, rrfK: Int) -> [Hit] {
+    static func mergeByFusedRank(
+        _ lists: [[Hit]], k: Int, rrfK: Int, lexicallyRescued: Set<String> = [],
+        rescueTolerance: Double = LocalRetrieval.rescueTolerance
+    ) -> [Hit] {
         var scores: [String: Double] = [:]
         var hitByID: [String: Hit] = [:]
         var order: [String] = []
@@ -174,7 +247,7 @@ public struct LocalRetrieval: RetrievalEngine {
                 scores[hit.nodeId, default: 0] += 1.0 / Double(rrfK + rank)
             }
         }
-        return
+        let fused =
             order
             .enumerated()
             .sorted {
@@ -182,8 +255,39 @@ public struct LocalRetrieval: RetrievalEngine {
                 let right = scores[$1.element] ?? 0
                 return left == right ? $0.offset < $1.offset : left > right
             }
-            .prefix(k)
-            .compactMap { hitByID[$0.element] }
+            .map(\.element)
+
+        // No provenance means no basis for the exception, so the whole list is
+        // treated as rescued and this is the old round-robin exactly. That is
+        // what keeps the one-pack and no-lexical-channel paths unchanged.
+        guard !lexicallyRescued.isEmpty else {
+            return fused.prefix(k).compactMap { hitByID[$0] }
+        }
+
+        // The best hit anywhere is a dense one -- a rescue is, by definition,
+        // lower -- so this is the field's best dense score without plumbing.
+        let best = hitByID.values.map(\.score).max() ?? 0
+        let pinned = lexicallyRescued.filter { (hitByID[$0]?.score ?? 0) >= best - rescueTolerance }
+
+        // Ties keep fused order, so this only reorders where cosine actually
+        // separates two hits.
+        let byCosine = fused.enumerated().sorted {
+            let l = hitByID[$0.element]?.score ?? 0, r = hitByID[$1.element]?.score ?? 0
+            return l == r ? $0.offset < $1.offset : l > r
+        }.map(\.element)
+        let cosineRank = Dictionary(uniqueKeysWithValues: byCosine.enumerated().map { ($1, $0) })
+        let fusedRank = Dictionary(uniqueKeysWithValues: fused.enumerated().map { ($1, $0) })
+        let floor = { (id: String) in min(fusedRank[id] ?? 0, cosineRank[id] ?? 0) }
+
+        var placed: [String?] = Array(repeating: nil, count: fused.count)
+        for id in pinned.sorted(by: { (floor($0), fusedRank[$0] ?? 0) < (floor($1), fusedRank[$1] ?? 0) }) {
+            var slot = floor(id)
+            while placed[slot] != nil { slot += 1 }
+            placed[slot] = id
+        }
+        var fill = byCosine.filter { !pinned.contains($0) }.makeIterator()
+        let merged = placed.map { $0 ?? fill.next() }
+        return merged.prefix(k).compactMap { $0.flatMap { hitByID[$0] } }
     }
 
     /// Reciprocal rank fusion — `handler._rrf_fuse`, arithmetic for arithmetic.

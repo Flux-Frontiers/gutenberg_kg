@@ -62,16 +62,22 @@ per-machine artifacts, not something a commit can carry for you.
       Apple's opaque boilerplate
 - [x] Apple Developer account active (renewal submitted 2026-09-02; portal
       lagged the order confirmation by a few hours, as expected — resolved).
-      A **Developer ID Application** certificate is now in the login keychain,
-      team `552T2QP474`. Note what that is and is not: it signs a Mac app for
+      A **Developer ID Application** certificate is now in the login keychain.
+      Note what that is and is not: it signs a Mac app for
       distribution outside the App Store, it does not sign iOS device builds,
       and it carries no restricted entitlement, so it moves nothing below.
 - [x] App ID registered in Certificates, Identifiers & Profiles —
       `com.fluxfrontiers.knowledgepress`, explicit, no capabilities enabled
       (Private Cloud Compute is not selectable until the account holds the
-      entitlement; nothing else the app does needs one). Team ID
-      `552T2QP474` — for reference when filing the PCC request or checking
-      `codesign -d --entitlements :-` against a build.
+      entitlement; nothing else the app does needs one). Read your own team
+      ID out of the machine when filing the PCC request or checking
+      `codesign -d --entitlements :-` against a build — it is not recorded
+      here, for the same reason the Makefile resolves it at build time rather
+      than carrying it:
+
+      ```sh
+      security find-identity -v -p codesigning
+      ```
 - [ ] Enrolled in the App Store Small Business Program — **submitted
       2026-09-02, pending approval; this is the current blocker.** No
       published SLA from Apple.
@@ -451,8 +457,35 @@ Reading a failure:
 
 ## 6. The iPhone app
 
-Two prerequisites that are easy to miss, because neither produces an error
-until you try to build and then the error names something else:
+### Building this yourself
+
+The checklist above is a record of *this* machine, not a list of steps that
+transfer. If you are not signing as Flux-Frontiers, change the bundle
+identifier first — in **both** `app/ios/project.yml` and
+`app/macos/project.yml`:
+
+```yaml
+PRODUCT_BUNDLE_IDENTIFIER: com.example.knowledgepress
+```
+
+`com.fluxfrontiers.knowledgepress` is an explicit App ID, and those are unique
+across all of Apple — it is registered to one team and cannot be registered to
+yours. Automatic signing will not mint you a profile for it, and the failure
+speaks of provisioning rather than of the name, so it is worth changing before
+the first build rather than after.
+
+Nothing else needs editing. Neither `project.yml` carries a team, and both
+`make ios-build` and `make mac-build` read the signing identity off the
+machine they run on — see "More than one device" below and section 7.
+
+`make ios-check` and `make mac-check` build with `CODE_SIGNING_ALLOWED=NO` and
+need none of this: no Apple account, no certificate, no device. That is what CI
+runs, and it is the right first thing to try after a clone.
+
+### Prerequisites for a signed device build
+
+Two that are easy to miss, because neither produces an error until you try to
+build and then the error names something else:
 
 1. **Sign the Apple ID into Xcode** — Xcode ▸ Settings ▸ Accounts ▸ **+**.
    A Developer ID certificate sitting in the login keychain does *not* count;
@@ -735,9 +768,12 @@ Nothing can be notarized until a keychain profile exists:
 
 ```sh
 xcrun notarytool store-credentials knowledgepress-notary \
-  --apple-id <your-apple-id> --team-id 552T2QP474 \
+  --apple-id <your-apple-id> --team-id <your-team-id> \
   --password <app-specific-password>
 ```
+
+Your team ID is the parenthesised value on your Developer ID Application
+identity — `security find-identity -v -p codesigning` prints it.
 
 The password is an **app-specific password** from
 [appleid.apple.com](https://appleid.apple.com), not the Apple ID password
@@ -785,7 +821,7 @@ and sign with Apple Distribution instead.
 
 ```
 == architectures ==     x86_64 arm64
-== signature ==         Developer ID Application: … (552T2QP474)
+== signature ==         Developer ID Application: … (<your-team-id>)
                         flags=0x10000(runtime)
 == debug entitlement == absent
 == gatekeeper ==        accepted, source=Developer ID
