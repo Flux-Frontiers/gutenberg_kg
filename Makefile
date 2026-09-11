@@ -620,14 +620,28 @@ IOS_DEVICE ?=
 
 # Resolve the target device inside a recipe: honour IOS_DEVICE when set, else
 # take the single connected phone, else say so and stop.
+# Picks the first device that is actually reachable, not simply the first one
+# listed. `devicectl list devices` reports every device it has ever paired
+# with, so d[0] was as likely to be an iPad asleep on another network as the
+# phone on the desk -- and devicectl then failed on it with a usage-assertion
+# error (CoreDeviceError 4016) that named no device at all.
+#
+# tunnelState is the field that distinguishes them. Only "unavailable" is
+# disqualifying: "disconnected" is the resting state of a perfectly reachable
+# device, since devicectl drops the tunnel between commands and reopens it on
+# demand -- a phone that worked a minute ago reads "disconnected" now, so
+# requiring "connected" would reject the very device you just deployed to. It
+# is still worth preferring when present, hence the sort. sameMachine
+# transport excludes simulators, which these targets never mean.
 define ios_resolve_device
 DEV="$(IOS_DEVICE)"; \
 if [ -z "$$DEV" ]; then \
 	DEV=$$(xcrun devicectl list devices --json-output /dev/stdout 2>/dev/null \
-	  | python3 -c 'import json,sys; d=json.load(sys.stdin)["result"]["devices"]; print(d[0]["identifier"] if d else "")'); \
+	  | python3 -c 'import json,sys; d=json.load(sys.stdin)["result"]["devices"]; c=lambda x: x.get("connectionProperties",{}); d=[x for x in d if c(x).get("tunnelState")!="unavailable" and c(x).get("transportType")!="sameMachine"]; d.sort(key=lambda x: c(x).get("tunnelState")!="connected"); print(d[0]["identifier"] if d else "")'); \
 fi; \
 if [ -z "$$DEV" ]; then \
-	echo "No iPhone found. Connect one, enable Developer Mode, or pass IOS_DEVICE=<udid|name>."; \
+	echo "No reachable iOS device. Wake one and unlock it, enable Developer Mode,"; \
+	echo "or pass IOS_DEVICE=<udid|name>.  'make ios-devices' lists what is paired."; \
 	exit 1; \
 fi
 endef
