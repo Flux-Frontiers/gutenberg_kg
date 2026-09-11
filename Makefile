@@ -675,6 +675,71 @@ ios-launch:
 ios-deploy: ios-install-corpus ios-verify-corpus ios-launch
 	@echo "Corpus installed and app relaunched. Settings > Corpus should say 'on this device'."
 
+IOS_APP = app/ios/build/Build/Products/Debug-iphoneos/KnowledgePress.app
+IOS_TEAM ?=
+
+# Resolve the Apple Developer Team ID from this machine, so no one's team is
+# hardcoded here -- the same reason mac_resolve_identity reads the signer out
+# of the keychain rather than naming them.
+#
+# project.yml carries no team and xcodegen wipes whatever was set in Xcode's
+# Signing & Capabilities editor, so it has to arrive as a build setting; the
+# question is only where it comes from.
+#
+# NOT from the Apple Development certificate: its parenthesised value is the
+# certificate's own id, not the team's (23JL... vs 552T...), and a build
+# signed against that fails in a way that names neither. A provisioning
+# profile's TeamIdentifier is the real one, and automatic signing writes a
+# profile the first time the app is Run on a device from Xcode. The Developer
+# ID certificate carries it too and is the fallback.
+define ios_resolve_team
+TEAM="$(IOS_TEAM)"; \
+if [ -z "$$TEAM" ]; then \
+	TEAM=$$(for p in "$$HOME/Library/Developer/Xcode/UserData/Provisioning Profiles"/*.mobileprovision \
+	                 "$$HOME/Library/MobileDevice/Provisioning Profiles"/*.mobileprovision; do \
+		[ -f "$$p" ] || continue; \
+		security cms -D -i "$$p" 2>/dev/null | plutil -extract TeamIdentifier.0 raw - 2>/dev/null; \
+	done | head -1); \
+fi; \
+if [ -z "$$TEAM" ]; then \
+	TEAM=$$(security find-identity -v -p codesigning \
+	  | sed -n 's/.*"Developer ID Application: .*(\([A-Z0-9]*\))".*/\1/p' | head -1); \
+fi; \
+if [ -z "$$TEAM" ]; then \
+	echo "No Apple Developer Team ID found on this machine."; \
+	echo "Sign in at Xcode > Settings > Accounts and Run the app on a device once,"; \
+	echo "or pass IOS_TEAM=<teamid>."; \
+	exit 1; \
+fi
+endef
+
+# Signed build for a real device -- unlike ios-check, signing is left on, so
+# this only works once each target device has been Run from Xcode at least
+# once (RUNBOOK.md section 6: automatic signing has to see and trust a device
+# before a CLI build can install to it).
+ios-build: ios-generate
+	@$(ios_resolve_team); \
+	cd app/ios && xcodebuild -project KnowledgePress.xcodeproj -scheme KnowledgePress \
+	  -destination 'generic/platform=iOS' -derivedDataPath build \
+	  DEVELOPMENT_TEAM="$$TEAM" build
+
+# Installs and (re)launches the build on every currently available physical
+# device -- "available (paired)" in `make ios-devices`, not "unavailable" or
+# "shutdown". The identifier is pulled out of that table by shape (a UUID),
+# since the Name/Model columns can themselves contain spaces.
+ios-deploy-all: ios-build
+	@ids=$$(xcrun devicectl list devices | grep -wi 'available' | grep -i 'physical' \
+	  | grep -oE '[0-9A-Fa-f]{8}(-[0-9A-Fa-f]{4}){3}-[0-9A-Fa-f]{12}'); \
+	if [ -z "$$ids" ]; then \
+		echo "No available physical devices. Check 'make ios-devices'."; \
+		exit 1; \
+	fi; \
+	for id in $$ids; do \
+		echo "--- $$id ---"; \
+		xcrun devicectl device install app --device "$$id" "$(IOS_APP)" && \
+		xcrun devicectl device process launch --device "$$id" --terminate-existing $(IOS_BUNDLE_ID); \
+	done
+
 # ---------------------------------------------------------------------------
 # The Knowledge Press -- Mac app (app/macos)
 #
