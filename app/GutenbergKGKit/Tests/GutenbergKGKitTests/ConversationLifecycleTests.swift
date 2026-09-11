@@ -238,8 +238,8 @@ struct ConversationLifecycleTests {
         #expect(model.turns.count == 1)
     }
 
-    @Test("a relaunch reopens the most recent chat, answers and passages intact")
-    func relaunchReopensTheNewestChat() async throws {
+    @Test("a relaunch starts empty, and the saved chat reopens intact from the sidebar")
+    func relaunchStartsEmptyAndReopensOnDemand() async throws {
         try await withModel { model, store in
             var turn = ChatTurn(question: "circles of Hell", corpus: "all", engine: .onDevice)
             turn.retrieval = RetrievalResult(hits: [], kgsQueried: 4, searchMs: 31)
@@ -256,7 +256,15 @@ struct ConversationLifecycleTests {
             let relaunched = AppModel(store: store)
             await relaunched.pendingPersist?.value
 
+            // Listed, but not reopened: the reader gets an empty chat.
             #expect(relaunched.conversations.map(\.title) == ["circles of Hell"])
+            #expect(relaunched.activeConversation == nil)
+            #expect(relaunched.turns.isEmpty)
+
+            // Everything is still there the moment the sidebar asks for it.
+            relaunched.select(id)
+            await relaunched.pendingPersist?.value
+
             #expect(relaunched.activeConversation?.id == id)
             #expect(relaunched.turns.count == 1)
             #expect(relaunched.turns[0].answer.hasPrefix("Dante's Hell"))
@@ -266,16 +274,19 @@ struct ConversationLifecycleTests {
         }
     }
 
-    @Test("a relaunch after cancelling shows a stopped turn, not a streaming one")
-    func relaunchShowsCancelledTurnAsStopped() async throws {
+    @Test("a cancelled turn reopens as stopped, not as one still streaming")
+    func reopenedCancelledTurnReadsAsStopped() async throws {
         try await withModel { model, store in
             var turn = ChatTurn(question: "circles of Hell", corpus: "all", engine: .onDevice)
             turn.retrieval = RetrievalResult(hits: [], kgsQueried: 1, searchMs: 3)
             model.turns = [turn]
             model.cancel()
             await model.pendingPersist?.value
+            let id = try #require(model.activeConversation?.id)
 
             let relaunched = AppModel(store: store)
+            await relaunched.pendingPersist?.value
+            relaunched.select(id)
             await relaunched.pendingPersist?.value
 
             #expect(relaunched.turns.count == 1)
@@ -284,8 +295,8 @@ struct ConversationLifecycleTests {
         }
     }
 
-    @Test("the newest chat is the one reopened")
-    func relaunchPrefersTheNewest() async throws {
+    @Test("the newest chat is the one listed first")
+    func theNewestChatSortsFirst() async throws {
         try await withModel { model, store in
             model.turns = [completedTurn("older question")]
             model.persistActiveConversation()
@@ -300,8 +311,14 @@ struct ConversationLifecycleTests {
             let relaunched = AppModel(store: store)
             await relaunched.pendingPersist?.value
 
-            #expect(relaunched.turns.first?.question == "newer question")
+            #expect(relaunched.turns.isEmpty)
             #expect(relaunched.conversations.count == 2)
+            // Newest first is what the sidebar shows, and what `select` would
+            // reach for -- it is simply no longer opened unasked.
+            let newest = try #require(relaunched.conversations.first)
+            relaunched.select(newest.id)
+            await relaunched.pendingPersist?.value
+            #expect(relaunched.turns.first?.question == "newer question")
         }
     }
 }
