@@ -201,12 +201,15 @@ With the merge fixed, those ten are now worth having.
 
 ### Still open
 
-- **Integration parity.** `merge_by_rank` and `mergeByFusedRank` have
-  mirrored unit tests over the same measured cosines, but nothing runs both
-  engines on the real corpus and diffs the `corpus=all` ranking. The handler
-  opens its stores at import, which is what has kept it out of the unit
-  suite. A `corpus=all` section in `golden.json` would close this and needs an
-  `export_swift` change plus a re-export.
+- ~~**Integration parity.**~~ Closed 2026-09-11. `build_golden` now records
+  the Python merge under `all` for each query, from the same per-pack lists
+  the per-pack gate checks, plus `rescue_tolerance`; `GoldenParityTests`
+  reproduces the merged ranking within the existing tolerance and asserts the
+  two constants are one number. 12/12 on the real corpus. Along the way the
+  gate's rank-drift check became tie-aware: int8 near-ties (0.0002 apart)
+  resolved in opposite orders by numpy and Accelerate read as drift 4 once
+  RRF interleaves a rescue at every odd rank -- pre-existing, and exactly the
+  case `max_rank_drift`'s comment describes.
 - **One remaining metric caveat.** The probe's `lost` column was removed: its
   floor was the weakest diary hit *in the window*, so it rose on changes that
   improved the ranking. Diary count and inversions are what remain, and both
