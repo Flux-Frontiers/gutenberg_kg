@@ -85,6 +85,8 @@ from dataclasses import dataclass, field
 from datetime import UTC, datetime
 from pathlib import Path
 
+from gutenberg_kg.serve.fusion import RESCUE_TOLERANCE, merge_by_rank
+
 __all__ = [
     "GOLDEN_QUERIES",
     "BundlePaths",
@@ -1406,7 +1408,7 @@ def _scope_clause(*, genre: str | None, prefix: str = "") -> str:
     return clause
 
 
-def search_pack(
+def search_pack_with_provenance(
     pack: Path,
     query_vector,
     query_text: str,
@@ -1415,7 +1417,7 @@ def search_pack(
     genre: str | None = None,
     min_score: float = 0.0,
     lexical: bool = True,
-) -> list[dict]:
+) -> tuple[list[dict], set[str]]:
     """Run the packed corpus's own hybrid search — dense + BM25, fused by RRF.
 
     A direct translation of ``handler._semantic_search`` onto the pack: same
@@ -1437,7 +1439,10 @@ def search_pack(
         alone, which is what :func:`verify_pack` compares against dense
         ground truth — fusing BM25 into one side of that comparison made the
         quantisation gate report hybrid-vs-dense divergence as recall loss.
-    :returns: Hit dicts in the worker's shape, best-first.
+    :returns: Hit dicts in the worker's shape, best-first, and the node ids
+        among them the lexical channel rescued -- found by BM25 outside the
+        dense top ``k``.  :func:`build_golden` needs the second to record the
+        ``corpus=all`` merge the way the worker and the app perform it.
     """
     numpy = _load_numpy()
     con = sqlite3.connect(f"file:{pack}?mode=ro", uri=True)
@@ -1511,8 +1516,14 @@ def search_pack(
         lexical_ids = [i for i in lexical_ids if i in distance_by_id]
 
         ordered = rrf_fuse(dense_ids, lexical_ids, k) if lexical_ids else dense_ids[:k]
+        # What the dense channel would have returned on its own.  A lexical hit
+        # outside it is one cosine did not find -- the definition
+        # ``LocalRetrieval.search`` uses, so the golden ``all`` ranking and the
+        # app's are built from the same set.
+        dense_top = set(dense_ids[:k])
+        rescued = {i for i in lexical_ids if i not in dense_top}
         if not ordered:
-            return []
+            return [], set()
 
         placeholders = ", ".join("?" for _ in ordered)
         by_id = {
@@ -1544,9 +1555,29 @@ def search_pack(
                     "author": row["author"],
                 }
             )
-        return hits
+        return hits, rescued & {h["node_id"] for h in hits}
     finally:
         con.close()
+
+
+def search_pack(
+    pack: Path,
+    query_vector,
+    query_text: str,
+    *,
+    k: int = 10,
+    genre: str | None = None,
+    min_score: float = 0.0,
+    lexical: bool = True,
+) -> list[dict]:
+    """Run the packed corpus's own hybrid search — dense + BM25, fused by RRF.
+
+    :func:`search_pack_with_provenance` without the rescued set; see it for the
+    parameters.
+    """
+    return search_pack_with_provenance(
+        pack, query_vector, query_text, k=k, genre=genre, min_score=min_score, lexical=lexical
+    )[0]
 
 
 def rrf_fuse(dense_ids: Sequence[str], lexical_ids: Sequence[str], k: int) -> list[str]:
@@ -1615,15 +1646,37 @@ def build_golden(
     say(f"  embedding {len(queries)} golden queries…")
     vectors = embedder.embed_texts(list(queries))
 
+    def ranked(hits: Sequence[dict]) -> list[dict]:
+        return [
+            {"rank": rank, "node_id": hit["node_id"], "score": hit["score"]}
+            for rank, hit in enumerate(hits)
+        ]
+
     entries = []
     for query, vector in zip(queries, vectors, strict=False):
         record: dict = {"query": query, "packs": {}}
+        per_pack: dict[str, list[dict]] = {}
+        rescued: set[str] = set()
         for name, path in packs.items():
-            hits = search_pack(path, vector, query, k=k)
-            record["packs"][name] = [
-                {"rank": rank, "node_id": hit["node_id"], "score": hit["score"]}
-                for rank, hit in enumerate(hits)
-            ]
+            hits, found = search_pack_with_provenance(path, vector, query, k=k)
+            per_pack[name] = hits
+            rescued |= found
+            record["packs"][name] = ranked(hits)
+        # The ``corpus=all`` ranking, from the same per-pack lists recorded
+        # above, folded by the worker's own merge.  This is what makes the
+        # golden file a reference for the cross-pack merge and not only for
+        # each pack alone -- until it was recorded, nothing checked that the
+        # app and the worker fold the two lists the same way.
+        if "gutenberg" in per_pack and "diaries" in per_pack:
+            record["all"] = ranked(
+                merge_by_rank(
+                    per_pack["gutenberg"],
+                    per_pack["diaries"],
+                    k,
+                    rrf_k=RRF_K,
+                    lexically_rescued=rescued,
+                )
+            )
         entries.append(record)
 
     return {
@@ -1633,6 +1686,9 @@ def build_golden(
         "vector_dtype": dtype,
         "rrf_k": RRF_K,
         "k": k,
+        # Recorded so the app can assert its own constant equals this one,
+        # by name, rather than discover a drift as ranking symptoms.
+        "rescue_tolerance": RESCUE_TOLERANCE,
         # max_rank_drift bounds how far a shared hit may move between the
         # reference and the Swift engine. It is not zero because the dense
         # channels differ in their last bits — numpy's argsort over

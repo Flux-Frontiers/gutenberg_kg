@@ -162,7 +162,8 @@ import Foundation
             passagesUsed: packed.passages.count,
             passagesDropped: packed.dropped,
             estimatedPromptTokens: packed.estimatedPromptTokens,
-            model: modelDescription)
+            model: modelDescription,
+            packedIds: packed.passages.map(\.id))
         continuation.yield(.completed(latest, metrics))
 
         // After the answer is delivered, never before it.

@@ -31,11 +31,27 @@ public struct ContextBudgeter: Sendable {
         /// A passage trimmed below this is dropped instead — a 40-character
         /// fragment costs budget without carrying an answer.
         public var minCharactersPerPassage: Int
-        /// Hard cap on passages taken from the same source (by `sourcePath`,
-        /// falling back to title). Several chunks of the same translation in
+        /// Hard cap on passages taken from the same work (by title, falling
+        /// back to `sourcePath`). Several chunks of the same translation in
         /// one prompt (e.g. three passages of Cary's *Inferno* for "circles
         /// of Hell") reads to the on-device model as text to keep repeating
         /// rather than as independent evidence, and it loops.
+        ///
+        /// A capped-out hit still spends its slot: the cap thins the top
+        /// `maxPassages` by rank, it does not reach further down the list to
+        /// refill. Refilling bought source diversity with whatever ranked
+        /// next, and once the cross-pack merge ranked correctly that was the
+        /// noise it had just demoted -- "categorical imperative" retrieved 19
+        /// *Groundwork* passages, kept 2, and refilled with five diary entries
+        /// scoring 0.15 lower. Fewer passages, none of them false.
+        ///
+        /// Keyed by title, not `sourcePath`, because a diary is one file per
+        /// entry: `entry_0828_chunk_0.md`, `entry_2756_chunk_0.md`. Keyed by
+        /// path the cap never bound on a diary at all -- books were held to
+        /// two per work while Pepys sent three -- which handed back at the
+        /// budgeter what the cross-pack merge had just taken away. Titles
+        /// still separate the two Divine Comedy translations, so books are
+        /// unchanged.
         public var maxPassagesPerSource: Int
 
         public init(
@@ -141,18 +157,22 @@ public struct ContextBudgeter: Sendable {
         var packed: [Passage] = []
         var dropped = 0
         var perSource: [String: Int] = [:]
+        // Slots the per-source cap consumed without filling. Counted against
+        // `maxPassages` so the cap cannot backfill from below the window.
+        var cappedOut = 0
 
         for hit in hits {
             guard let content = hit.synthesisText, !content.isEmpty else { continue }
 
-            guard packed.count < budget.maxPassages else {
+            guard packed.count + cappedOut < budget.maxPassages else {
                 dropped += 1
                 continue
             }
 
-            let source = hit.sourcePath ?? hit.title ?? hit.name
+            let source = hit.title ?? hit.sourcePath ?? hit.name
             guard (perSource[source] ?? 0) < budget.maxPassagesPerSource else {
                 dropped += 1
+                cappedOut += 1
                 continue
             }
 

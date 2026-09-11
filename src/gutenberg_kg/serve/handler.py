@@ -528,7 +528,7 @@ def _semantic_search(
     min_score: float = 0.0,
     semantic_floor: float = 0.0,
     genre_filter: str | None = None,
-) -> list[dict]:
+) -> tuple[list[dict], set[str]]:
     """Hybrid (dense + lexical) search over the consolidated DocKG.
 
     Ranks every chunk/section by its *own* relevance to the query — no graph-hop
@@ -552,10 +552,13 @@ def _semantic_search(
     :param min_score: Drop hits whose cosine similarity is below this.
     :param semantic_floor: If the best *dense* hit is below this, discard the set.
     :param genre_filter: Restrict to a single genre subtree (e.g. ``sacred-texts``).
-    :returns: Hit dictionaries ranked best-first, shaped like ``hit_to_dict``.
+    :returns: Hit dictionaries ranked best-first, shaped like ``hit_to_dict``,
+        and the node IDs among them that the lexical channel rescued -- found
+        by BM25 outside the dense top ``k``.  The ``corpus="all"`` merge needs
+        that to know which low scores are low by construction.
     """
     if _DOCKG_TABLE is None:
-        return []
+        return [], set()
     qvec = _embedder.embed_texts([query])[0]
     where = "kind IN ('chunk', 'section') AND file_path NOT LIKE '%reference.md'"
     if genre_filter:
@@ -580,6 +583,7 @@ def _semantic_search(
             print(f"[query] WARNING: lexical search failed, dense-only: {exc}")
 
     row_by_id: dict[str, dict] = {r["id"]: r for r in dense_rows}
+    rescued: set[str] = set()
     if lex_ids:
         # Hydrate cosine rows for lexical-only IDs so every fused hit carries an
         # honest cosine score and stays inside the genre/kind scope.
@@ -592,6 +596,11 @@ def _semantic_search(
             for r in lex_rows:
                 row_by_id.setdefault(r["id"], r)
         lex_ids = [i for i in lex_ids if i in row_by_id]  # drop out-of-scope IDs
+        # What the dense channel would have returned on its own.  A lexical hit
+        # outside it is one cosine did not find -- the whole reason the hybrid
+        # exists, and the reason its score cannot be trusted to rank it later.
+        dense_top = {r["id"] for r in dense_rows[:k]}
+        rescued = {i for i in lex_ids if i not in dense_top}
         ordered_ids = _rrf_fuse([r["id"] for r in dense_rows], lex_ids, k)
         ordered_rows = [row_by_id[i] for i in ordered_ids]
     else:
@@ -607,8 +616,8 @@ def _semantic_search(
     if semantic_floor > 0.0:
         best_dense = round(1.0 - float(dense_rows[0]["_distance"]), 4) if dense_rows else 0.0
         if best_dense < semantic_floor:
-            return []
-    return hits
+            return [], set()
+    return hits, rescued & {h["node_id"] for h in hits}
 
 
 def _semantic_search_diaries(
@@ -939,7 +948,7 @@ def handler(job: dict) -> dict:
     else:
         # Semantic-first: rank chunks by their own cosine distance (no graph-hop
         # expansion), so a query that names a book surfaces that book on top.
-        hits = _semantic_search(
+        hits, rescued = _semantic_search(
             query,
             k=k,
             min_score=min_score,
@@ -961,11 +970,17 @@ def handler(job: dict) -> dict:
             # score does not reorder the verse, it drops it out of the top k
             # entirely. The better the lexical channel works, the more reliably
             # the merge threw its result away.
+            #
+            # But only a *rescued* hit needs that protection.  Merging every
+            # hit by rank made the fold a strict round-robin -- ids are
+            # disjoint, so rank 0 ties rank 0 -- and four diaries took half of
+            # every window.  `_semantic_search` reports which ids BM25 rescued;
+            # those keep their fused rank and the rest compete on cosine.
             dhits = _semantic_search_diaries(
                 query, k=k, min_score=min_score, semantic_floor=semantic_floor
             )
             _enrich_catalog(dhits)
-            hits = _merge_by_rank(hits, dhits, k, rrf_k=_RRF_K)
+            hits = _merge_by_rank(hits, dhits, k, rrf_k=_RRF_K, lexically_rescued=rescued)
             kgs_queried += len(_DIARY_TABLES)
 
     search_ms = (time.perf_counter() - t0_search) * 1000

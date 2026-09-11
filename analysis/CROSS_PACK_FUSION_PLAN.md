@@ -1,7 +1,8 @@
 # Cross-pack fusion: stop giving the diaries half the context
 
-Status: **proposed**, nothing implemented.
-Measured 2026-09-10 against `bundles/gutenberg-all/swift` (241 books, 4 diaries).
+Status: **steps 1-5 done** in both engines, 2026-09-11, on
+`feat/cross-pack-fusion-harness`. Results at the end.
+Measured against `bundles/gutenberg-all/swift` (241 books, 4 diaries).
 
 ## The observation
 
@@ -140,3 +141,79 @@ Each step is separately reviewable; steps 1-2 change no behaviour.
   books is a lopsided merge under any rule. A better ranking may still leave
   the question of whether an unscoped search should weight corpora by size.
   Out of scope here; worth its own decision.
+
+## Result
+
+Top 10 at `corpus=all` across the twelve golden queries, from
+`CrossPackProbeTests`:
+
+| | before | after |
+|---|---|---|
+| diary passages in the window (12 queries) | 60 | **27** |
+| cosine inversions | 197 | **54** |
+| composition | exactly 5 of 10, every query | tracks the question |
+
+Composition now follows relevance, which was the point:
+
+- *the whiteness of the whale* -- 0 diaries, 0 inversions, books 0.817-0.833
+- *the Great Fire of London* -- 5 diaries at 0.768-0.774, none demoted:
+  Pepys and Evelyn were there
+- *a dinner party with too much wine in a London diary* -- 7 diaries
+- *the categorical imperative and moral duty* -- 5 diaries down to 3
+
+The rescue case holds. "pillar of salt" ranks the Lot's-wife verse third
+overall both before and after -- measured in a worktree at the parent commit,
+not inferred. Within the books pack RRF ties the dense rank-0 hit (0.707) with
+the lexical rank-0 verse and first-seen order favours dense, so the verse was
+always second in its pack. It is absent from the dense list entirely, so the
+rescue rule marks it and pins it exactly where it was.
+
+Rule 1's threshold stayed at "absent from the dense top k" -- the verse is
+absent from the dense top 75, never mind the top 25 -- but that turned out to
+be half the answer. FTS5 stems "Imperator" and "imperative" to one token, and
+"moral", "duty" and "categorical" all occur in diaries, so BM25 rescued plenty
+that was no literal match, and rule 2 pinned it: Boswell at 0.658 sat at rank
+4 above Kant at 0.789 on "the categorical imperative and moral duty".
+
+The fix is a **rescue tolerance**, measured rather than guessed. Every rescued
+hit across the golden queries, with its gap below the field's best dense
+score -- the best in *any* pack, since a pack's own best is itself noise for a
+question it cannot answer:
+
+| legitimate | gap | noise pinned into the window | gap |
+|---|---|---|---|
+| Audels, wire an electric bell | 0.141 | Boswell, "moral duty" | 0.157 |
+| Bible, Moses | 0.122 | Evelyn, "Imperator" | 0.208 |
+| Pepys, Great Fire | 0.118 | Les Miserables, "Hell" | 0.155 |
+| Bible, pillar of salt | 0.113 | Hamlet, "Moses" | 0.262 |
+
+The margin is 0.016 wide. `rescueTolerance` / `RESCUE_TOLERANCE` is 0.15: a
+rescue beyond it keeps its hit but loses its pin. With it, across the twelve
+queries: diary passages **27**, inversions **54**. "the categorical imperative
+and moral duty" packs 0 diaries and 0 inversions; the desktop under `all` now
+produces the same four passages the phone did under `philosophy`. The verse is
+unmoved. The Audels rescue at 0.141 is the case that sets the floor -- if it
+ever fails, lowering the constant is the wrong response.
+
+**Step 6, `maxPassages`**, was settled independently in `147fd2f`: 10, with a
+new per-source cap of 2 so a wider pull cannot be one repeated translation.
+With the merge fixed, those ten are now worth having.
+
+### Still open
+
+- ~~**Integration parity.**~~ Closed 2026-09-11. `build_golden` now records
+  the Python merge under `all` for each query, from the same per-pack lists
+  the per-pack gate checks, plus `rescue_tolerance`; `GoldenParityTests`
+  reproduces the merged ranking within the existing tolerance and asserts the
+  two constants are one number. 12/12 on the real corpus. Along the way the
+  gate's rank-drift check became tie-aware: int8 near-ties (0.0002 apart)
+  resolved in opposite orders by numpy and Accelerate read as drift 4 once
+  RRF interleaves a rescue at every odd rank -- pre-existing, and exactly the
+  case `max_rank_drift`'s comment describes.
+- **One remaining metric caveat.** The probe's `lost` column was removed: its
+  floor was the weakest diary hit *in the window*, so it rose on changes that
+  improved the ranking. Diary count and inversions are what remain, and both
+  mean the same thing under either merge.
+- **Whether the diaries belong in `all` at this scale** -- unchanged from
+  above. A better merge does not answer whether four diaries should compete
+  with 241 books unweighted. Product question, not a bug.
