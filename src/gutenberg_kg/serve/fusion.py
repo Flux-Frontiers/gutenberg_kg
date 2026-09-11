@@ -55,11 +55,17 @@ def merge_by_rank(
     exactly half of every window on all twelve golden queries.
 
     Fused rank is the reciprocal-rank arithmetic: ``1 / (rrf_k + rank)`` from
-    the list a hit came from, ties broken first-seen.  Rescued hits are pinned
-    at the positions they hold there; the rest fill what is left in score
-    order.  With no rescued IDs this is the old round-robin exactly, which
-    keeps a dense-only path unchanged.  Mirrors ``LocalRetrieval.
-    mergeByFusedRank`` in the Swift app; see analysis/CROSS_PACK_FUSION_PLAN.md.
+    the list a hit came from, ties broken first-seen.  A rescued hit's fused
+    rank is a **floor**, not a slot: it takes the better of that and the rank
+    its cosine would earn.  Pinning it to the slot alone stopped it rising,
+    and once the two lists interleave a fused rank past ``k`` sat outside the
+    window while weaker unpinned hits filled it -- measured on the worker,
+    2026-09-11: two *Groundwork* passages at 0.766 held at merged ranks 10 and
+    14 while Boswell at 0.688 took ranks 9 and 10.  The rest fill what is
+    left in score order.  With no rescued IDs this is the old round-robin
+    exactly, which keeps a dense-only path unchanged.  Mirrors
+    ``LocalRetrieval.mergeByFusedRank`` in the Swift app; see
+    analysis/CROSS_PACK_FUSION_PLAN.md.
 
     :param books: Gutenberg hits, best-first.
     :param diaries: Diary hits, best-first.
@@ -92,11 +98,21 @@ def merge_by_rank(
     best = max((score(i) for i in fused), default=0.0)
     protected = {i for i in lexically_rescued if score(i) >= best - rescue_tolerance}
 
-    pinned: list[str | None] = [i if i in protected else None for i in fused]
-    contenders = [i for i in fused if i not in protected]
     # Stable, so ties keep fused order: this only reorders where cosine
     # actually separates two hits.
-    contenders.sort(key=lambda i: -score(i))
-    fill = iter(contenders)
-    merged = [i if i is not None else next(fill) for i in pinned]
+    by_cosine = sorted(fused, key=lambda i: -score(i))
+    cosine_rank = {node_id: rank for rank, node_id in enumerate(by_cosine)}
+    fused_rank = {node_id: rank for rank, node_id in enumerate(fused)}
+    # Place the protected hits first, best floor first, sliding down on a
+    # collision; then the rest fill the gaps in cosine order.
+    placed: list[str | None] = [None] * len(fused)
+    for node_id in sorted(
+        protected, key=lambda i: (min(fused_rank[i], cosine_rank[i]), fused_rank[i])
+    ):
+        slot = min(fused_rank[node_id], cosine_rank[node_id])
+        while placed[slot] is not None:
+            slot += 1
+        placed[slot] = node_id
+    fill = iter(i for i in by_cosine if i not in protected)
+    merged = [i if i is not None else next(fill) for i in placed]
     return [hit_by_id[i] for i in merged[:k]]

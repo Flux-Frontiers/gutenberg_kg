@@ -212,6 +212,27 @@ struct CrossPackMergeTests {
         #expect(merged[2].nodeId == "b1")
     }
 
+    @Test("a rescue fused past k still rises to its cosine rank")
+    func aRescueFusedPastKRisesToItsCosineRank() {
+        // The worker case: b4 at 0.766 is rescued and inside the tolerance,
+        // but interleaving puts its fused rank at 8, past k=6. A fixed slot
+        // left it there and let Boswell at 0.688 into the window. Its cosine
+        // earns rank 5, so it takes it.
+        let merged = LocalRetrieval.mergeByFusedRank(
+            [books([0.815, 0.796, 0.790, 0.789, 0.766, 0.780]),
+             diaries([0.688, 0.683, 0.681, 0.676, 0.675, 0.674])],
+            k: 6, rrfK: rrfK, lexicallyRescued: ["b4"])
+        #expect(merged.map(\.score) == [0.815, 0.796, 0.790, 0.789, 0.780, 0.766])
+    }
+
+    @Test("a floor never demotes -- the verse still sits above hits that outscore it")
+    func aFloorNeverDemotes() {
+        let merged = LocalRetrieval.mergeByFusedRank(
+            [books([0.707, 0.594]), diaries([0.704, 0.694])],
+            k: 4, rrfK: rrfK, lexicallyRescued: ["b1"])
+        #expect(merged.map(\.nodeId) == ["b0", "d0", "b1", "d1"])
+    }
+
     @Test("provenance with nothing inside the tolerance is a plain score sort")
     func nothingProtectedMeansScoreOrder() {
         let merged = LocalRetrieval.mergeByFusedRank(

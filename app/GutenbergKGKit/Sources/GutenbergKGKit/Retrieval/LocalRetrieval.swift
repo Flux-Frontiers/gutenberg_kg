@@ -214,8 +214,14 @@ public struct LocalRetrieval: RetrievalEngine {
     /// hit but loses its pin, and competes on cosine like everything else.
     static let rescueTolerance = 0.15
 
-    /// Rescued hits are placed first, at the fused positions they held, and
-    /// the rest fill what is left in score order. See
+    /// A rescued hit's fused rank is a **floor**, not a slot: it takes the
+    /// better of that and the rank its cosine would earn. Pinning to the slot
+    /// alone stopped it rising, and once the two lists interleave a fused
+    /// rank past `k` sat outside the window while weaker unpinned hits filled
+    /// it -- measured on the worker, 2026-09-11: two *Groundwork* passages at
+    /// 0.766 held at merged ranks 10 and 14 while Boswell at 0.688 took 9 and
+    /// 10. Protected hits are placed first, best floor first, sliding down on
+    /// a collision; the rest fill the gaps in score order. See
     /// analysis/CROSS_PACK_FUSION_PLAN.md and `CrossPackMergeTests`.
     ///
     /// :param lists: One best-first list per pack.
@@ -263,21 +269,24 @@ public struct LocalRetrieval: RetrievalEngine {
         let best = hitByID.values.map(\.score).max() ?? 0
         let pinned = lexicallyRescued.filter { (hitByID[$0]?.score ?? 0) >= best - rescueTolerance }
 
-        var result: [String?] = Array(repeating: nil, count: fused.count)
-        var contenders: [String] = []
-        for (position, id) in fused.enumerated() {
-            if pinned.contains(id) {
-                result[position] = id
-            } else {
-                contenders.append(id)
-            }
-        }
         // Ties keep fused order, so this only reorders where cosine actually
         // separates two hits.
-        contenders.sort { (hitByID[$0]?.score ?? 0) > (hitByID[$1]?.score ?? 0) }
+        let byCosine = fused.enumerated().sorted {
+            let l = hitByID[$0.element]?.score ?? 0, r = hitByID[$1.element]?.score ?? 0
+            return l == r ? $0.offset < $1.offset : l > r
+        }.map(\.element)
+        let cosineRank = Dictionary(uniqueKeysWithValues: byCosine.enumerated().map { ($1, $0) })
+        let fusedRank = Dictionary(uniqueKeysWithValues: fused.enumerated().map { ($1, $0) })
+        let floor = { (id: String) in min(fusedRank[id] ?? 0, cosineRank[id] ?? 0) }
 
-        var next = contenders.makeIterator()
-        let merged = result.map { $0 ?? next.next() }
+        var placed: [String?] = Array(repeating: nil, count: fused.count)
+        for id in pinned.sorted(by: { (floor($0), fusedRank[$0] ?? 0) < (floor($1), fusedRank[$1] ?? 0) }) {
+            var slot = floor(id)
+            while placed[slot] != nil { slot += 1 }
+            placed[slot] = id
+        }
+        var fill = byCosine.filter { !pinned.contains($0) }.makeIterator()
+        let merged = placed.map { $0 ?? fill.next() }
         return merged.prefix(k).compactMap { $0.flatMap { hitByID[$0] } }
     }
 

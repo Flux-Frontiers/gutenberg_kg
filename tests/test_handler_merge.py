@@ -141,6 +141,32 @@ class TestRescueTolerance:
         diaries = [_hit("d0", 0.658), _hit("d1", 0.587)]
         assert _merge(books, diaries, k=4, rescued={"b1"})[2] == "b1"
 
+    def test_a_rescue_fused_past_k_still_rises_to_its_cosine_rank(self):
+        """The worker case: b4 at 0.766 is rescued and inside the tolerance,
+        but interleaving puts its fused rank at 8, past k=6.  A fixed slot
+        left it there and let Boswell at 0.688 into the window.  Its cosine
+        earns rank 5, so it takes it."""
+        books = [
+            _hit("b0", 0.815),
+            _hit("b1", 0.796),
+            _hit("b2", 0.790),
+            _hit("b3", 0.789),
+            _hit("b4", 0.766),
+            _hit("b5", 0.780),
+        ]
+        diaries = [
+            _hit(f"d{i}", s) for i, s in enumerate([0.688, 0.683, 0.681, 0.676, 0.675, 0.674])
+        ]
+        merged = merge_by_rank(books, diaries, 6, rrf_k=RRF_K, lexically_rescued={"b4"})
+        assert [h["score"] for h in merged] == [0.815, 0.796, 0.790, 0.789, 0.780, 0.766]
+
+    def test_a_floor_never_demotes(self):
+        """The other direction is unchanged: the verse sits above hits that
+        outscore it, because its fused rank is the better of the two."""
+        books = [_hit("b0", 0.707), _hit("b1", 0.594)]
+        diaries = [_hit("d0", 0.704), _hit("d1", 0.694)]
+        assert _merge(books, diaries, k=4, rescued={"b1"}) == ["b0", "d0", "b1", "d1"]
+
     def test_nothing_inside_the_tolerance_is_a_plain_score_sort(self):
         books = [_hit("b0", 0.90), _hit("b1", 0.40)]
         diaries = [_hit("d0", 0.85), _hit("d1", 0.30)]

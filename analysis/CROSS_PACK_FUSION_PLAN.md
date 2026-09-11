@@ -195,6 +195,19 @@ produces the same four passages the phone did under `philosophy`. The verse is
 unmoved. The Audels rescue at 0.141 is the case that sets the floor -- if it
 ever fails, lowering the constant is the wrong response.
 
+**A pin is a floor, not a slot.** Found by running the fixed rule on the
+worker, not the app. Rescued hits were held at their fused positions; once the
+two lists interleave, a fused rank past `k` sits outside the window, and
+weaker unpinned hits fill it. On "the categorical imperative and moral duty"
+the worker held two *Groundwork* passages at 0.766 at merged ranks 10 and 14
+while Boswell at 0.688 took ranks 9 and 10. The app never showed it because
+the pack's FTS and the DocKG's FTS rescue different hits -- same rule,
+different inputs -- which is exactly why the worker check was worth running
+after the golden gate passed. A rescued hit now takes the better of its fused
+rank and its cosine rank. Re-run on the worker's own lists: 10 books, 0
+diaries. The twelve-query totals are unchanged at 27 / 54, since the pack
+inputs never triggered it.
+
 **Step 6, `maxPassages`**, was settled independently in `147fd2f`: 10, with a
 new per-source cap of 2 so a wider pull cannot be one repeated translation.
 With the merge fixed, those ten are now worth having.
