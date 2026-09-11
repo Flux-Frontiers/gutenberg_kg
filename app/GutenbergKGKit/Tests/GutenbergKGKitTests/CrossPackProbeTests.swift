@@ -52,13 +52,13 @@ struct CrossPackProbeTests {
         print("")
         print("corpus=all, top \(window) — rrfK \(packs.manifest.rrfK)")
         print("  diary  = diary passages in the window")
-        print("  inv    = pairs ranked out of cosine order")
-        print("  lost   = books hits beaten on cosine by a diary hit that outranked them")
+        print("  inv    = pairs ranked out of cosine order (0 is a pure score sort,")
+        print("           which is not the goal: a rescued hit is meant to outrank its cosine)")
         print("")
-        print("  diary  inv  lost   books cos     diary cos     query")
+        print("  diary  inv   books cos     diary cos     query")
 
         var totalDiary = 0
-        var totalLost = 0
+        var totalInversions = 0
         for entry in golden.queries {
             let hits = try await retrieval.retrieve(
                 RetrievalRequest(
@@ -67,28 +67,27 @@ struct CrossPackProbeTests {
             ).hits
             let top = Array(hits.prefix(window))
             guard !top.isEmpty else {
-                print("     --   --    --   (no hits)                    \(entry.query)")
+                print("     --   --   (no hits)                    \(entry.query)")
                 continue
             }
 
             let bookScores = top.filter { !isDiary($0) }.map(\.score)
             let diaryScores = top.filter { isDiary($0) }.map(\.score)
 
-            // A books hit is "lost" when it fell outside the window while a
-            // lower-scoring diary hit sat inside it. That is the cost of the
-            // round-robin, stated in passages rather than in rank positions.
-            let worstDiaryInWindow = diaryScores.min()
-            let lost =
-                worstDiaryInWindow.map { floor in
-                    hits.dropFirst(window).filter { !isDiary($0) && $0.score > floor }.count
-                } ?? 0
-
+            // Only these two. An earlier draft also counted books hits that
+            // fell outside the window while a lower-scoring diary hit sat
+            // inside it, which read well and measured nothing stable: its
+            // floor was the weakest diary hit *in the window*, so a fix that
+            // left one weak diary hit in place drove the count up while
+            // making the ranking better. Composition-dependent metrics cannot
+            // compare a before and an after whose compositions differ.
+            let inversions = cosineInversions(top)
             totalDiary += diaryScores.count
-            totalLost += lost
+            totalInversions += inversions
             print(
                 String(
-                    format: "  %5d %4d %5d   %.3f-%.3f   %@   %@",
-                    diaryScores.count, cosineInversions(top), lost,
+                    format: "  %5d %4d   %.3f-%.3f   %@   %@",
+                    diaryScores.count, inversions,
                     bookScores.min() ?? 0, bookScores.max() ?? 0,
                     diaryScores.isEmpty
                         ? "    --       "
@@ -96,7 +95,7 @@ struct CrossPackProbeTests {
                     entry.query))
         }
         print("")
-        print("  totals: \(totalDiary) diary passages, \(totalLost) books hits displaced")
+        print("  totals: \(totalDiary) diary passages, \(totalInversions) inversions")
         print("")
 
         // The harness itself is what this test guarantees; the numbers above
