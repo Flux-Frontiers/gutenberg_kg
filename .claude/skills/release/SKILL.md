@@ -194,6 +194,27 @@ Two traps, both hit on the 1.20.0 release:
   the previous release's entry and deletes its file* rather than appending.
   Without `--force` a release silently destroys the prior snapshot.
 
+## Step 5c — Bump the KG pins
+
+`check_pins.py` in Step 6 only *verifies* agreement; it does not move anything.
+Left there, a release ships whatever pins happened to be sitting in the repo,
+and the very next `check_pins.py` run reports them "behind PyPI" again — which
+is what happened right after 1.20.0 shipped. Bump before verifying, not after:
+
+```bash
+python3 scripts/check_pins.py --bump
+```
+
+This rewrites the pyproject floors, the Dockerfile ARGs and the runpod floors
+to the latest PyPI release for all four KG packages (kg-rag, kgmodule-utils,
+doc-kg, diary-kg), then runs `poetry lock` so the lock agrees. Read the diff —
+`pyproject.toml`, `docker/Dockerfile`, `runpod/requirements.txt`,
+`poetry.lock` — before continuing; it is still a published wheel's floor
+moving, not a no-op. The bump refuses outright if PyPI cannot be read for any
+one of the four (the set moves together or not at all) — in that case skip
+this step and let Step 6 report the advisory as usual; that is not a reason to
+hold the tag.
+
 ## Step 6 — Verify the build is green
 
 ```bash
@@ -213,9 +234,10 @@ All six are pre-commit hooks except `check_pins.py`, so a normal commit has
 already run most of them. `check_pins.py` and the `Installed CLI` job have no
 local equivalent — they catch KG pin drift across
 `pyproject` / `poetry.lock` / `docker/Dockerfile` / `runpod/requirements.txt`
-and wheel packaging respectively. `check_pins.py` also prints a "Behind PyPI"
-advisory when a KG dependency has a newer release; that is informational — the
-KG pins move as a set, not per release — and is not a reason to hold the tag.
+and wheel packaging respectively. After Step 5c this run should be clean; a
+"Behind PyPI" advisory here means Step 5c's bump was skipped (PyPI was
+unreachable for one of the four) — that is informational, the KG pins move as
+a set, not per release, and is not a reason to hold the tag.
 
 CI note: `ci.yml` gates Lint, Type Check and Test to **pushes and PRs against
 `main`** only. They are skipped on `develop`, so a merge into `develop` proves
@@ -225,10 +247,15 @@ much less than it appears to. `main` is where those three actually run.
 
 ```bash
 git add CHANGELOG.md release-notes.md README.md CITATION.cff \
-        docs/CORPUS.md pyproject.toml src/gutenberg_kg/__init__.py
+        docs/CORPUS.md pyproject.toml src/gutenberg_kg/__init__.py \
+        docker/Dockerfile runpod/requirements.txt poetry.lock
 git commit -m "chore(release): v<version> release notes"
 git tag -a v<version> -m "v<version>"
 ```
+
+`docker/Dockerfile`, `runpod/requirements.txt` and `poetry.lock` are only
+dirty here if Step 5c actually bumped something; `git add` on an unchanged
+file is a no-op.
 
 ## Step 8 — Push (ASK FIRST — always)
 
