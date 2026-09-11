@@ -62,6 +62,75 @@ private let lorem = String(repeating: "conformity to universal law ", count: 200
         #expect(packed.estimatedPromptTokens <= budget.contextWindow - budget.reservedForResponse)
     }
 
+    @Test func thePerSourceCapDoesNotBackfillFromBelowTheWindow() {
+        // Rank order as the fixed cross-pack merge produces it for
+        // "categorical imperative": one book dominates the top of the list,
+        // and the hits that would refill its capped slots are the diary noise
+        // the merge just ranked below it.
+        var hits: [Hit] = []
+        for i in 1...8 { hits.append(hit(id: "kant\(i)", content: lorem, score: 0.78, title: "Groundwork")) }
+        hits.append(hit(id: "nietzsche", content: lorem, score: 0.71, title: "Twilight"))
+        hits.append(hit(id: "evelyn", content: lorem, score: 0.65, title: "Evelyn"))
+        // Below the window. Under a backfilling cap these would be packed.
+        hits.append(hit(id: "pepys1", content: lorem, score: 0.65, title: "Pepys"))
+        hits.append(hit(id: "boswell1", content: lorem, score: 0.63, title: "Boswell"))
+        hits.append(hit(id: "pepys2", content: lorem, score: 0.62, title: "Pepys"))
+
+        let budget = ContextBudgeter.Budget(maxPassages: 10, maxPassagesPerSource: 2)
+        let packed = ContextBudgeter(budget: budget).pack(hits, question: "duty?")
+
+        // Two Kant, then the six capped-out Kant spent slots 3-8, then
+        // Nietzsche and Evelyn took 9 and 10. Nothing from rank 11 on.
+        #expect(packed.passages.map(\.id) == ["kant1", "kant2", "nietzsche", "evelyn"])
+        #expect(packed.dropped == hits.count - packed.passages.count)
+    }
+
+    @Test func thePerSourceCapCountsADiaryAsOneWork() {
+        // A diary is one file per entry, so keyed by path every Pepys day was
+        // its own source and the cap never bound. Keyed by title it does.
+        let json = { (id: String, path: String) -> Hit in
+            try! JSONDecoder().decode(
+                Hit.self,
+                from: Data(
+                    """
+                    {"kg_name": "pepys", "kg_kind": "KGKind.DIARY", "node_id": "\(id)",
+                     "name": "chunk", "kind": "chunk", "score": 0.77, "summary": null,
+                     "source_path": "\(path)", "content": "\(lorem)", "timestamp": null,
+                     "genre": "diaries", "title": "The Diary of Samuel Pepys",
+                     "author": "Samuel Pepys"}
+                    """.utf8))
+        }
+        let hits = [
+            json("p1", "entry_0828_chunk_0.md"),
+            json("p2", "entry_2756_chunk_0.md"),
+            json("p3", "entry_2371_chunk_5.md"),
+        ]
+        let budget = ContextBudgeter.Budget(maxPassages: 10, maxPassagesPerSource: 2)
+        let packed = ContextBudgeter(budget: budget).pack(hits, question: "fire?")
+        #expect(packed.passages.map(\.id) == ["p1", "p2"])
+    }
+
+    @Test func thePerSourceCapKeepsTranslationsApart() {
+        // Titles carry the translator, so this is not the case above.
+        let hits = [
+            hit(id: "l1", content: lorem, title: "The Divine Comedy (Longfellow)"),
+            hit(id: "l2", content: lorem, title: "The Divine Comedy (Longfellow)"),
+            hit(id: "c1", content: lorem, title: "The Divine Comedy (Cary)"),
+            hit(id: "c2", content: lorem, title: "The Divine Comedy (Cary)"),
+        ]
+        let budget = ContextBudgeter.Budget(maxPassages: 10, maxPassagesPerSource: 2)
+        let packed = ContextBudgeter(budget: budget).pack(hits, question: "hell?")
+        #expect(packed.passages.count == 4)
+    }
+
+    @Test func thePerSourceCapStillLimitsWithinTheWindow() {
+        // The cap's original job, unchanged: no source floods the prompt.
+        let hits = (1...6).map { hit(id: "cary\($0)", content: lorem, title: "Inferno (Cary)") }
+        let budget = ContextBudgeter.Budget(maxPassages: 10, maxPassagesPerSource: 2)
+        let packed = ContextBudgeter(budget: budget).pack(hits, question: "hell?")
+        #expect(packed.passages.count == 2)
+    }
+
     @Test func skipsHitsWithNoText() {
         let hits = [
             hit(id: "empty", content: nil),
