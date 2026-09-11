@@ -16,8 +16,9 @@ def _hit(node_id: str, score: float) -> dict:
     return {"node_id": node_id, "score": score}
 
 
-def _merge(books, diaries, k):
-    return [h["node_id"] for h in merge_by_rank(books, diaries, k, rrf_k=RRF_K)]
+def _merge(books, diaries, k, rescued=()):
+    merged = merge_by_rank(books, diaries, k, rrf_k=RRF_K, lexically_rescued=frozenset(rescued))
+    return [h["node_id"] for h in merged]
 
 
 class TestMergeByRank:
@@ -61,3 +62,57 @@ class TestMergeByRank:
         books = [_hit("b0", 0.5), _hit("b1", 0.4)]
         assert _merge(books, [], k=10) == ["b0", "b1"]
         assert _merge([], books, k=10) == ["b0", "b1"]
+
+
+class TestLexicalProvenance:
+    """The merge with rescue provenance -- `CrossPackMergeTests` in the app."""
+
+    # "categorical imperative", measured on the built corpus 2026-09-10.
+    # Every books hit beats every diary hit on cosine.
+    BOOKS = [0.7698, 0.7777, 0.7692, 0.7829, 0.7344, 0.7424]
+    DIARIES = [0.6351, 0.6548, 0.5747, 0.6540, 0.6537, 0.6415]
+
+    def _lists(self):
+        return (
+            [_hit(f"b{i}", s) for i, s in enumerate(self.BOOKS)],
+            [_hit(f"d{i}", s) for i, s in enumerate(self.DIARIES)],
+        )
+
+    def test_without_provenance_the_merge_is_the_old_round_robin(self):
+        books, diaries = self._lists()
+        assert _merge(books, diaries, k=12) == _merge(books, diaries, k=12, rescued=())
+        assert _merge(books, diaries, k=6) == ["b0", "d0", "b1", "d1", "b2", "d2"]
+
+    def test_an_unrescued_pack_no_longer_takes_half_the_window(self):
+        """Nothing here was rescued: the diaries are ordinary dense hits that
+        rank high only within a much weaker list.  b0 holds rank 0; the rest
+        sort by cosine, and the whole window is books."""
+        books, diaries = self._lists()
+        assert _merge(books, diaries, k=6, rescued={"b0"}) == ["b0", "b3", "b1", "b2", "b5", "b4"]
+
+    def test_the_rescued_hit_keeps_its_place_above_better_scoring_rivals(self):
+        """The pillar-of-salt shape: b0 is the verse at 0.594, under every diary
+        chunk.  Rescued, so it stays at rank 0, which a cosine sort never does."""
+        books = [_hit("b0", 0.594), _hit("b1", 0.55), _hit("b2", 0.54)]
+        diaries = [_hit("d0", 0.704), _hit("d1", 0.69), _hit("d2", 0.667)]
+
+        merged = merge_by_rank(books, diaries, 6, rrf_k=RRF_K, lexically_rescued={"b0"})
+
+        assert merged[0]["node_id"] == "b0"
+        assert [h["score"] for h in merged[1:]] == [0.704, 0.69, 0.667, 0.55, 0.54]
+
+    def test_a_pack_that_is_genuinely_better_still_wins_on_merit(self):
+        """The Great Fire: Pepys and Evelyn were there and outscore most of
+        the books.  Nothing demotes them."""
+        books = [_hit("b0", 0.786), _hit("b1", 0.515), _hit("b2", 0.52)]
+        diaries = [_hit("d0", 0.773), _hit("d1", 0.765), _hit("d2", 0.757)]
+        assert _merge(books, diaries, k=4, rescued={"b0"}) == ["b0", "d0", "d1", "d2"]
+
+    def test_every_rescued_hit_holds_a_fused_position(self):
+        books = [_hit("b0", 0.50), _hit("b1", 0.90)]
+        diaries = [_hit("d0", 0.55), _hit("d1", 0.80)]
+        merged = merge_by_rank(books, diaries, 4, rrf_k=RRF_K, lexically_rescued={"b0", "d0"})
+        # Fused order is b0, d0, b1, d1; the two rescues are pinned at 0 and
+        # 1, and the remaining two fill positions 2 and 3 by score.
+        assert [h["node_id"] for h in merged] == ["b0", "d0", "b1", "d1"]
+        assert [h["score"] for h in merged] == [0.50, 0.55, 0.90, 0.80]
