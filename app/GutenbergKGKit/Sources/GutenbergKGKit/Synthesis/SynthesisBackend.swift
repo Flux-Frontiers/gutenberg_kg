@@ -33,19 +33,46 @@ public struct SynthesisMetrics: Sendable, Equatable, Codable {
     public let estimatedPromptTokens: Int
     /// Human-readable provenance, e.g. "Apple Foundation Models (on-device)".
     public let model: String
+    /// Node ids of the passages that reached the model, in prompt order.
+    ///
+    /// `passagesUsed` says how many; this says which, so a card can show
+    /// whether the reader is looking at evidence or at a runner-up. Empty
+    /// when the packing happened somewhere that does not report it -- the
+    /// worker -- and for conversations saved before this existed.
+    public let packedIds: [String]
 
     public init(
         elapsedMs: Int,
         passagesUsed: Int,
         passagesDropped: Int,
         estimatedPromptTokens: Int,
-        model: String
+        model: String,
+        packedIds: [String] = []
     ) {
         self.elapsedMs = elapsedMs
         self.passagesUsed = passagesUsed
         self.passagesDropped = passagesDropped
         self.estimatedPromptTokens = estimatedPromptTokens
         self.model = model
+        self.packedIds = packedIds
+    }
+
+    private enum CodingKeys: String, CodingKey {
+        case elapsedMs, passagesUsed, passagesDropped, estimatedPromptTokens, model, packedIds
+    }
+
+    /// Hand-written so a `conversation.json` written before `packedIds`
+    /// existed still opens: the synthesised decoder would refuse the missing
+    /// key, and the reader's saved chats are not something to lose over a
+    /// caption.
+    public init(from decoder: Decoder) throws {
+        let c = try decoder.container(keyedBy: CodingKeys.self)
+        elapsedMs = try c.decode(Int.self, forKey: .elapsedMs)
+        passagesUsed = try c.decode(Int.self, forKey: .passagesUsed)
+        passagesDropped = try c.decode(Int.self, forKey: .passagesDropped)
+        estimatedPromptTokens = try c.decode(Int.self, forKey: .estimatedPromptTokens)
+        model = try c.decode(String.self, forKey: .model)
+        packedIds = try c.decodeIfPresent([String].self, forKey: .packedIds) ?? []
     }
 }
 

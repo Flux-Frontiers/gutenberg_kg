@@ -19,6 +19,10 @@ struct AssistantTurnView: View {
     @State private var passagesExpanded: Bool?
 
     private var hits: [Hit] { turn.retrieval?.hits ?? [] }
+    /// Which of them reached the model. Empty means nobody said -- the
+    /// worker path, or a chat saved before this was recorded -- and then no
+    /// card is marked either way rather than every card reading as left out.
+    private var packedIds: Set<String> { Set(turn.metrics?.packedIds ?? []) }
 
     /// Same rule as chat.py — sources open when there is no answer to read —
     /// but a manual toggle wins once the reader has expressed a preference.
@@ -49,7 +53,9 @@ struct AssistantTurnView: View {
                 ) {
                     VStack(spacing: 8) {
                         ForEach(hits) { hit in
-                            HitCardView(hit: hit)
+                            HitCardView(
+                                hit: hit,
+                                inContext: packedIds.isEmpty ? nil : packedIds.contains(hit.nodeId))
                         }
                     }
                     .padding(.top, 6)
@@ -248,6 +254,9 @@ struct StreamingCaret: View {
 /// expandable full passage.
 struct HitCardView: View {
     let hit: Hit
+    /// Whether this passage reached the model: `true` marks it, `false` is
+    /// silent, `nil` means the turn did not record which.
+    var inContext: Bool? = nil
     @State private var expanded = false
 
     var body: some View {
@@ -255,6 +264,9 @@ struct HitCardView: View {
             HStack(spacing: 6) {
                 badge(kgLabel, color: kgColor)
                 badge(hit.kind, color: .gray)
+                if inContext == true {
+                    badge("in context", color: .green)
+                }
                 if let timestamp = hit.timestamp {
                     Text(timestamp.prefix(10))
                         .font(.caption2.monospaced())
