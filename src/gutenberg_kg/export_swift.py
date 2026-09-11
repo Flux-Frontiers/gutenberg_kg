@@ -78,7 +78,6 @@ import bisect
 import hashlib
 import json
 import math
-import shutil
 import sqlite3
 import time
 from collections.abc import Iterator, Sequence
@@ -1831,8 +1830,19 @@ def export_swift(options: ExportOptions, *, progress=None) -> ExportReport:
         # Wipe rather than write over: a spec whose book set shrank must not
         # leave the previous run's orphaned pack files sitting next to the
         # new, smaller ones.
+        #
+        # Only this export's own artifacts, though. `gutenkg export-embedder`
+        # writes BGEEmbedder.mlpackage, vocab.txt and embedder.json into this
+        # same directory by default, so clearing every child destroyed the
+        # Core ML model the packs are useless without -- silently, and needing
+        # a separate toolchain to rebuild. The orphan the wipe exists to catch
+        # is always one of the names below.
         for child in out.iterdir():
-            shutil.rmtree(child) if child.is_dir() else child.unlink()
+            if child.is_file() and (
+                child.suffix in (".pack", ".vectors")
+                or child.name in ("manifest.json", "golden.json")
+            ):
+                child.unlink()
     out.mkdir(parents=True, exist_ok=True)
 
     catalog = load_catalog(bundle.catalog)
