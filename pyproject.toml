@@ -100,10 +100,10 @@ dependencies = [
     # Keep this floor equal to the highest one declared in the extras below:
     # scripts/check_pins.py only compares the highest, so a stale low floor here
     # is drift the gate cannot see.
-    "kgmodule-utils[synthesis,sqlite-vec]>=0.19.0",
+    "kgmodule-utils[synthesis,sqlite-vec]>=0.21.0",
     "rich>=14.3.3,<15",
-    "doc-kg (>=0.24.1)",  # transformers 5.x -- must match kg-rag, see kgdeps
-    "diary-kg (>=0.98.0)",
+    "doc-kg (>=0.26.0)",  # transformers 5.x -- must match kg-rag, see kgdeps
+    "diary-kg (>=0.99.0)",
     "hf-transfer (>=0.1.9,<0.2.0)",
 ]
 
@@ -128,7 +128,7 @@ viz3d = [
     # Shared 3-D geometry (Layout3D, fibonacci_*), the organic tree engine
     # (grow_tree, tree_mesh, leaf_glyphs) and, via [viz3d-qt], the POV-Ray worker
     # thread and cast path that scene.py and viz3d.py import.
-    "kgmodule-utils[viz3d-render,viz3d-qt]>=0.19.0",
+    "kgmodule-utils[viz3d-render,viz3d-qt]>=0.21.0",
     # Light-field output (`gutenkg quilt`). Same floor as `pov` below on purpose:
     # two different floors make Poetry lock the package twice under overlapping
     # extra markers, and `--extras viz3d` then installs both.
@@ -138,7 +138,7 @@ pov = [
     # Analytic POV-Ray output (`gutenkg pov`), deliberately apart from viz3d:
     # NumPy-only geometry ([viz3d], not [viz3d-render]) plus quiltwright's povgen,
     # so a headless ray-tracing box can install this without PyVista, Qt or GL.
-    "kgmodule-utils[viz3d]>=0.19.0",
+    "kgmodule-utils[viz3d]>=0.21.0",
     "quiltwright>=0.7.0",
 ]
 mcp = [
