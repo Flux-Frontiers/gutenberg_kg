@@ -356,33 +356,24 @@ public final class AppModel {
 
     // MARK: - Conversations
 
-    /// Read the saved conversation list, and reopen the most recent chat.
+    /// Read the saved conversation list. The list only -- a launch starts empty.
     ///
     /// Off the main actor: this runs during `init`, and the first frame must
     /// not wait on a directory scan.
     ///
-    /// Reopening the newest conversation is what makes a relaunch continuous
-    /// rather than merely non-destructive -- until the sidebar arrives there
-    /// is otherwise no way to reach a saved chat at all, and files nothing can
-    /// reopen are not persistence.
+    /// This used to reopen the newest conversation too, back when the sidebar
+    /// did not exist and a saved chat was otherwise unreachable -- files
+    /// nothing can reopen are not persistence. The sidebar reaches them now,
+    /// so the restore only put the last session's question in front of a
+    /// reader who came back to ask a different one. Nothing is lost by
+    /// starting fresh; `select(_:)` is one tap away.
     func loadConversations() {
         guard let store else { return }
         pendingPersist = Task { [weak self] in
-            let loaded = await Task.detached(priority: .userInitiated) {
-                let summaries = (try? store.summaries()) ?? []
-                let newest = summaries.first.flatMap { try? store.load($0.id) }
-                return (summaries, newest)
+            let summaries = await Task.detached(priority: .userInitiated) {
+                (try? store.summaries()) ?? []
             }.value
-            guard let self else { return }
-            self.conversations = loaded.0
-            // Never over a chat already under way: a question asked through
-            // Siri can land before this returns, and the reader's live query
-            // outranks a restored one.
-            guard self.turns.isEmpty, self.activeConversation == nil,
-                let newest = loaded.1
-            else { return }
-            self.activeConversation = newest
-            self.turns = newest.turns
+            self?.conversations = summaries
         }
     }
 

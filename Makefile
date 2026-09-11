@@ -48,9 +48,11 @@
 #   make ios-verify-corpus  -- list what is actually in that container
 #   make ios-launch         -- relaunch the app so it re-reads the corpus
 #   make ios-deploy         -- install-corpus + verify + launch, in order
+#   make ios-build          -- signed device build (needs a Team ID on this Mac)
+#   make ios-deploy-all     -- install + relaunch the app on every reachable device
 #
-# All the ios-* targets auto-detect the connected phone. With more than one
-# attached, name it: make ios-deploy IOS_DEVICE=<udid|name>
+# All the ios-* targets auto-detect a reachable device. With more than one
+# paired, name it: make ios-deploy IOS_DEVICE=<udid|name>
 #
 # The Knowledge Press, Mac app (app/macos) -- see app/RUNBOOK.md section 7:
 #   make mac-generate  -- regenerate KnowledgePress.xcodeproj from project.yml
@@ -737,15 +739,20 @@ ios-build: ios-generate
 	  -destination 'generic/platform=iOS' -derivedDataPath build \
 	  DEVELOPMENT_TEAM="$$TEAM" build
 
-# Installs and (re)launches the build on every currently available physical
-# device -- "available (paired)" in `make ios-devices`, not "unavailable" or
-# "shutdown". The identifier is pulled out of that table by shape (a UUID),
-# since the Name/Model columns can themselves contain spaces.
+# Installs and (re)launches the build on every reachable physical device.
+#
+# Reads the JSON rather than the printed table, on the same rule as
+# ios_resolve_device: tunnelState "unavailable" is out, "connected" and
+# "disconnected" are both in, and sameMachine transport drops simulators. The
+# table's own State column was the first attempt and does not survive contact
+# -- it prints "available (paired)" for an idle device but "connected" for one
+# with a live tunnel, so grepping for "available" silently skipped every device
+# that was ready to receive.
 ios-deploy-all: ios-build
-	@ids=$$(xcrun devicectl list devices | grep -wi 'available' | grep -i 'physical' \
-	  | grep -oE '[0-9A-Fa-f]{8}(-[0-9A-Fa-f]{4}){3}-[0-9A-Fa-f]{12}'); \
+	@ids=$$(xcrun devicectl list devices --json-output /dev/stdout 2>/dev/null \
+	  | python3 -c 'import json,sys; d=json.load(sys.stdin)["result"]["devices"]; c=lambda x: x.get("connectionProperties",{}); print("\n".join(x["identifier"] for x in d if c(x).get("tunnelState")!="unavailable" and c(x).get("transportType")!="sameMachine"))'); \
 	if [ -z "$$ids" ]; then \
-		echo "No available physical devices. Check 'make ios-devices'."; \
+		echo "No reachable physical devices. Wake and unlock one; see 'make ios-devices'."; \
 		exit 1; \
 	fi; \
 	for id in $$ids; do \
