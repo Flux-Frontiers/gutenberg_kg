@@ -110,7 +110,7 @@ export function Trees({
   return (
     <group>
       <instancedMesh ref={woodRef} args={[undefined, undefined, forest.wood.count]} frustumCulled={false} castShadow={false}>
-        <cylinderGeometry args={[1, 1, 1, 5]} />
+        <cylinderGeometry args={[1, 1, 1, 6]} />
         <meshStandardMaterial roughness={0.9} metalness={0.02} />
       </instancedMesh>
       <instancedMesh ref={leafRef} args={[undefined, undefined, forest.leaves.count]} frustumCulled={false}>

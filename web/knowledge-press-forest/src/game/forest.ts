@@ -1,5 +1,5 @@
 import { BOOKS, type Book } from "./catalog";
-import { emitLeaves, emitWood, growTree } from "./growTree";
+import { GROW_VERSION, emitLeaves, emitWood, growTree } from "./growTree";
 import { fibonacciAnnulus } from "./math";
 
 export const GENRE_PALETTE = [
@@ -79,14 +79,16 @@ export type Forest = {
 };
 
 let cached: Forest | null = null;
+let cachedVersion = -1;
 
 function cellKey(cx: number, cz: number): string {
   return cx + ":" + cz;
 }
 
 export function getForest(): Forest {
-  if (cached) return cached;
+  if (cached && cachedVersion === GROW_VERSION) return cached;
   cached = buildForest();
+  cachedVersion = GROW_VERSION;
   return cached;
 }
 

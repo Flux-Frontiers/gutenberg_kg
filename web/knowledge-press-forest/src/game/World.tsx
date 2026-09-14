@@ -2,6 +2,7 @@ import { useFrame } from "@react-three/fiber";
 import { useMemo, useRef } from "react";
 import { BackSide, Color, InstancedMesh, Object3D } from "three";
 import { bookMatchesQuery, groveApproach, groveByGenre, type Forest } from "./forest";
+import { Signposts } from "./Signposts";
 import { SEASONS, type SeasonName } from "./seasons";
 import { sim } from "./sim";
 import { useGame } from "./store";
@@ -32,6 +33,7 @@ export function World({ forest, season }: { forest: Forest; season: SeasonName }
 
       <Roads forest={forest} circuit={travelMode === "circuit"} />
       <LanternTrail forest={forest} selectedGrove={selectedGrove} query={query} />
+      <Signposts forest={forest} />
 
       {forest.groves.map((g) => {
         const on = selectedGrove === g.genre;
@@ -46,21 +48,6 @@ export function World({ forest, season }: { forest: Forest; season: SeasonName }
               <meshBasicMaterial color={g.color} transparent opacity={on ? 0.92 : 0.55} />
             </mesh>
           </group>
-        );
-      })}
-
-      {forest.circuit.map((wp) => {
-        const g = groveByGenre(forest, wp.genre);
-        return (
-          <mesh key={wp.genre} position={[wp.x, 0.55, wp.z]}>
-            <cylinderGeometry args={[0.22, 0.28, 1.1, 6]} />
-            <meshStandardMaterial
-              color={g?.color ?? "#d7d1c4"}
-              emissive={g?.color ?? "#d7d1c4"}
-              emissiveIntensity={selectedGrove === wp.genre ? 0.55 : 0.12}
-              roughness={0.55}
-            />
-          </mesh>
         );
       })}
 

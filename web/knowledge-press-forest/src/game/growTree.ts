@@ -19,6 +19,9 @@ export type GrownTree = {
   trunkRadius: number;
 };
 
+/** Bump when caps change so the forest cache rebuilds. */
+export const GROW_VERSION = 2;
+
 const GOLDEN = Math.PI * (3 - Math.sqrt(5));
 
 export const GENRE_TROPISM: Record<string, Vec3> = {
@@ -50,10 +53,10 @@ export function placeCrown(
 ): { attractors: Float32Array; nAttract: number; trunkHeight: number; allLeaves: Float32Array; nLeaves: number } {
   const rng = mulberry32(seedFromKey(slug + ":crown"));
   const trunkHeight = Math.min(1.7 * Math.max(1, Math.log2(1 + nChunks)), 22);
-  const nSections = Math.max(4, Math.round(Math.sqrt(nChunks)));
+  const nSections = Math.max(5, Math.round(Math.sqrt(nChunks) * 1.25));
   const branchLength = 2.1 + Math.sqrt(nSections) * 0.55;
-  const nLeaf = Math.min(nChunks, 72);
-  const nAttract = Math.min(nChunks, 36);
+  const nLeaf = Math.min(nChunks, 140, Math.round(48 + Math.sqrt(nChunks) * 6));
+  const nAttract = Math.min(nChunks, 56, Math.round(24 + Math.sqrt(nChunks) * 3.2));
 
   const sectionTips: Vec3[] = [];
   for (let i = 0; i < nSections; i++) {
@@ -137,7 +140,7 @@ export function growTree(opts: {
     slug,
   );
 
-  const maxNodes = 72;
+  const maxNodes = Math.min(128, Math.round(48 + nAttract * 1.45));
   const nodes = new Float32Array(maxNodes * 3);
   const parents = new Int16Array(maxNodes);
   parents.fill(-1);
@@ -154,22 +157,23 @@ export function growTree(opts: {
   };
 
   push(0, 0, 0, -1);
-  const trunkSteps = 4;
+  const trunkSteps = 6;
   for (let i = 1; i <= trunkSteps; i++) {
     push(0, (trunkHeight * 0.28 * i) / trunkSteps, 0, i - 1);
   }
 
   const influence = 5.8 + trunkHeight * 0.12;
-  const kill = 0.72;
-  const step = 0.42 + Math.min(trunkHeight, 16) * 0.018;
+  const kill = 0.58;
+  const step = 0.34 + Math.min(trunkHeight, 16) * 0.016;
   const alive = new Uint8Array(nAttract);
   alive.fill(1);
   const dirX = new Float32Array(maxNodes);
   const dirY = new Float32Array(maxNodes);
   const dirZ = new Float32Array(maxNodes);
   const votes = new Uint16Array(maxNodes);
+  const maxIter = Math.min(60, 32 + nAttract);
 
-  for (let iter = 0; iter < 48 && n < maxNodes - 1; iter++) {
+  for (let iter = 0; iter < maxIter && n < maxNodes - 1; iter++) {
     dirX.fill(0);
     dirY.fill(0);
     dirZ.fill(0);

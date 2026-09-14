@@ -6,6 +6,7 @@ import { StartScreen } from "./StartScreen";
 import { TouchControls } from "./TouchControls";
 import { installControlsTest } from "./controlsTest";
 import { getForest, type Forest } from "./forest";
+import { GROW_VERSION } from "./growTree";
 import { bindInput } from "./input";
 import { resetSim } from "./sim";
 import { useGame } from "./store";
@@ -32,7 +33,7 @@ export function ForestApp() {
       window.clearTimeout(id);
       unbind?.();
     };
-  }, []);
+  }, [GROW_VERSION]);
 
   useEffect(() => {
     if (!forest) return;

@@ -24,11 +24,9 @@ This is the next world pass. The groves read as a model until the sky does.
 | Feature | Notes |
 | --- | --- |
 | Jump to a tree, not only a grove | From the press list and from query hits. Land at the trunk, facing the plaque. |
-| 3D grove signposts | Genre name on the post at each gate, not only HUD color. |
 | Day / night clock | Drives the sky. Night makes stars and the lantern the point. |
 | Ambient audio | Wind, wet leaves, a distant press. Unlock on first gesture. |
 | Breadcrumb lanterns | Optional trail of your own lights so a long wander still has a way home. |
-| Denser Hamlet-scale skeletons | Raise attractor caps in `growTree.ts` behind a quality toggle. |
 | Live corpus ingest | Swap bundled `catalog.ts` for JSON from the GutenbergKG pipeline. |
 
 ## Shipped
@@ -43,4 +41,6 @@ This is the next world pass. The groves read as a model until the sky does.
 | Grove atlas, minimap jump, Hamlet return | `HUD.tsx` |
 | Carriage roads (spokes + ring) | `forest.ts`, `World.tsx` |
 | Ride-the-ring tour (steer to hop off) | `Player.tsx` |
+| Named grove signposts | `Signposts.tsx` |
+| Denser skeletons (raised attractor / node caps) | `growTree.ts` |
 | Press / local library | `store.ts` |
