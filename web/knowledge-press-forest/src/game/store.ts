@@ -74,6 +74,7 @@ export type GameStore = {
   nearbySlug: string | null;
   nearbyDist: number;
   nearbyDismissed: string | null;
+  questHintHidden: string | null;
   speed: number;
   x: number;
   z: number;
@@ -94,6 +95,7 @@ export type GameStore = {
   markGrove: (genre: string) => void;
   setNearby: (slug: string | null, dist: number) => void;
   dismissNearby: () => void;
+  dismissQuestHint: (id: string) => void;
   setPose: (x: number, z: number, yaw: number, speed: number) => void;
   setToast: (msg: string | null) => void;
   toggleLibrary: () => void;
@@ -120,6 +122,7 @@ export const useGame = create<GameStore>((set, get) => ({
   nearbySlug: null,
   nearbyDist: 99,
   nearbyDismissed: null,
+  questHintHidden: null,
   speed: 0,
   x: 0,
   z: 0,
@@ -168,6 +171,7 @@ export const useGame = create<GameStore>((set, get) => ({
     const slug = get().nearbySlug;
     if (slug) set({ nearbyDismissed: slug });
   },
+  dismissQuestHint: (id) => set({ questHintHidden: id }),
   setPose: (x, z, yaw, speed) => set({ x, z, yaw, speed }),
   setToast: (toast) => set({ toast }),
   toggleLibrary: () => set({ libraryOpen: !get().libraryOpen, atlasOpen: false }),

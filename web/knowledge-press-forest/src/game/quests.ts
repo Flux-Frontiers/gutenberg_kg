@@ -22,8 +22,8 @@ export const QUESTS: Quest[] = [
   },
   {
     id: "stoic",
-    title: "The Stoic grove",
-    hint: "Find a Stoic — Meditations, Epictetus, the Enchiridion.",
+    title: "A Stoic",
+    hint: "Meditations, Epictetus, or the Enchiridion — philosophy and the classics.",
     done: (s) => s.library.some((id) => STOIC.has(id)),
   },
   {

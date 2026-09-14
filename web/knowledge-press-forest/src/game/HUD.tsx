@@ -14,6 +14,8 @@ export function HUD({ forest }: { forest: Forest }) {
   const nearbySlug = useGame((s) => s.nearbySlug);
   const nearbyDismissed = useGame((s) => s.nearbyDismissed);
   const dismissNearby = useGame((s) => s.dismissNearby);
+  const questHintHidden = useGame((s) => s.questHintHidden);
+  const dismissQuestHint = useGame((s) => s.dismissQuestHint);
   const library = useGame((s) => s.library);
   const grovesVisited = useGame((s) => s.grovesVisited);
   const speed = useGame((s) => s.speed);
@@ -63,6 +65,7 @@ export function HUD({ forest }: { forest: Forest }) {
           <p className="mt-1 text-xs text-muted">
             {forest.trees.length} trees · {SEASONS[season].label}
             {travelMode === "circuit" ? " · ring" : ""}
+            {progress.done ? ` · ${progress.done}/${progress.total}` : ""}
           </p>
         </div>
         <div className="flex items-center gap-2">
@@ -155,20 +158,21 @@ export function HUD({ forest }: { forest: Forest }) {
             <p className="mt-2 hidden text-sm leading-relaxed text-fg/90 sm:block">{nearby.book.excerpt}</p>
             <p className="mt-2 text-xs text-primary sm:mt-3">E · read into the press</p>
           </article>
-        ) : (
-          <div className="rounded-lg border border-border bg-surface/80 px-3 py-2 text-sm text-muted">
-            {nextQuest ? (
-              <p>
-                <span className="text-fg">{nextQuest.title}.</span> {nextQuest.hint}
-              </p>
-            ) : (
-              <p>The press is full enough. Drive anywhere.</p>
-            )}
-            <p className="mt-1 text-xs text-faint">
-              {progress.done}/{progress.total} impressions · {Math.round(Math.abs(speed) * 3.6) / 10} pace
+        ) : nextQuest && nextQuest.id !== questHintHidden ? (
+          <div className="relative flex items-start gap-2 rounded-md border border-border bg-surface/80 px-3 py-2 pr-12 text-sm text-muted">
+            <p className="min-w-0 flex-1">
+              <span className="text-fg">{nextQuest.title}.</span> {nextQuest.hint}
             </p>
+            <button
+              type="button"
+              onClick={() => dismissQuestHint(nextQuest.id)}
+              className="absolute top-0.5 right-0.5 grid size-11 place-items-center rounded-md text-muted"
+              aria-label="Dismiss hint"
+            >
+              <X className="size-4" strokeWidth={1.75} />
+            </button>
           </div>
-        )}
+        ) : null}
       </div>
 
       <div className="pointer-events-auto absolute right-3 bottom-24 hidden flex-col gap-1 sm:flex">
