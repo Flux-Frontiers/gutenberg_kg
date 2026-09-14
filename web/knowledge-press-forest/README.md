@@ -52,6 +52,15 @@ read the wood.
 | `viz3d.py` Qt/PyVista viewer | [`src/game/ForestCanvas.tsx`](src/game/ForestCanvas.tsx) + [`Player.tsx`](src/game/Player.tsx) |
 | retrieval as a query over the forest | lantern query in [`HUD.tsx`](src/game/HUD.tsx) |
 
+The bundled catalog is a snapshot. Chunk counts are **not** produced in the
+browser — they come from DocKG (`SELECT COUNT(*) FROM nodes WHERE kind='chunk'`
+on each book's `graph.sqlite`). Hamlet's 420 is that count. To rebuild the
+snapshot after ingest:
+
+```bash
+python scripts/export_web_catalog.py
+```
+
 Trees are instanced (one wood draw + one leaf draw) so 253 crowns stay
 interactive. Attractors, nodes, and leaves are capped for the browser;
 raise the caps in `growTree.ts` if you want denser Hamlet-scale skeletons.

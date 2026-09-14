@@ -27,7 +27,7 @@ This is the next world pass. The groves read as a model until the sky does.
 | Day / night clock | Drives the sky. Night makes stars and the lantern the point. |
 | Ambient audio | Wind, wet leaves, a distant press. Unlock on first gesture. |
 | Breadcrumb lanterns | Optional trail of your own lights so a long wander still has a way home. |
-| Live corpus ingest | Swap bundled `catalog.ts` for JSON from the GutenbergKG pipeline. |
+| Live corpus ingest | `python scripts/export_web_catalog.py` counts `kind='chunk'` nodes in each book's `graph.sqlite` and rewrites the TypeScript catalog. The web forest does not re-chunk. |
 
 ## Shipped
 
