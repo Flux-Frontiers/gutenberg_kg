@@ -1,4 +1,3 @@
-
 # corpus-gutenberg — build and run targets
 #
 # Typical workflow:
@@ -7,6 +6,7 @@
 #   make build-diaries  — build .diarykg/ indices (prerequisite for build-corpus)
 #   make build-corpus   — rebuild the DocKG + diary bundle (takes ~24 min)
 #   make export-swift   — export a bundle's on-device Swift packs
+#   make export-web-catalog — count DocKG chunks into the web forest catalog
 #   make build          — build the container image (bakes bundle into image)
 #   make build-all      — build for every runtime installed on this machine
 #
@@ -244,7 +244,7 @@ endif
 # `gutenkg` on PATH. Override with e.g. `make GUTENKG=gutenkg build-corpus`.
 GUTENKG     ?= poetry run gutenkg
 
-.PHONY: init spacy-model chunk-diaries build-diaries build-corpus export-swift check-pins setup build build-all rebuild rebuild-all prune kill run image-server sdxl-server sdxl-fetch chat up stop down query logs clean docs ios-devices ios-generate ios-check ios-install-corpus ios-verify-corpus ios-launch ios-deploy mac-generate mac-check mac-build mac-verify mac-notarize mac-dmg mac-notarize-dmg mac-release
+.PHONY: init spacy-model chunk-diaries build-diaries build-corpus export-swift export-web-catalog check-pins setup build build-all rebuild rebuild-all prune kill run image-server sdxl-server sdxl-fetch chat up stop down query logs clean docs ios-devices ios-generate ios-check ios-install-corpus ios-verify-corpus ios-launch ios-deploy mac-generate mac-check mac-build mac-verify mac-notarize mac-dmg mac-notarize-dmg mac-release
 
 init:
 	$(GUTENKG) init
@@ -280,6 +280,11 @@ build-corpus: build-diaries
 export-swift:
 	@$(resolve_spec) \
 	$(GUTENKG) export-swift --bundle bundles/$$BUNDLE --verify --force
+
+# Snapshot the web forest catalog from per-book DocKG graphs. Does not re-chunk;
+# it counts kind='chunk' nodes the same way ForestLayout sizes a tree.
+export-web-catalog:
+	poetry run python scripts/export_web_catalog.py
 
 # The four KG packages are named in four files that drift independently:
 # pyproject floors, poetry.lock, docker/Dockerfile ARGs, runpod/requirements.txt.
