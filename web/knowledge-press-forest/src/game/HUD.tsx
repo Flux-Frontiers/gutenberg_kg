@@ -1,4 +1,4 @@
-import { BookMarked, Compass, Map, Pause, Search } from "lucide-react";
+import { BookMarked, Compass, Map, Pause, Search, X } from "lucide-react";
 import { useMemo } from "react";
 import { groveApproach, type Forest, type Grove } from "./forest";
 import { QUESTS, questProgress } from "./quests";
@@ -12,6 +12,8 @@ export function HUD({ forest }: { forest: Forest }) {
   const query = useGame((s) => s.query);
   const setQuery = useGame((s) => s.setQuery);
   const nearbySlug = useGame((s) => s.nearbySlug);
+  const nearbyDismissed = useGame((s) => s.nearbyDismissed);
+  const dismissNearby = useGame((s) => s.dismissNearby);
   const library = useGame((s) => s.library);
   const grovesVisited = useGame((s) => s.grovesVisited);
   const speed = useGame((s) => s.speed);
@@ -29,6 +31,7 @@ export function HUD({ forest }: { forest: Forest }) {
   const toggleCircuit = useGame((s) => s.toggleCircuit);
 
   const nearby = nearbySlug ? forest.trees.find((t) => t.book.slug === nearbySlug) : undefined;
+  const showBook = Boolean(nearby && nearby.book.slug !== nearbyDismissed);
   const progress = questProgress({ library, grovesVisited, season });
   const nextQuest = QUESTS.find((q) => !q.done({ library, grovesVisited, season }));
   const selected = forest.groves.find((g) => g.genre === selectedGrove);
@@ -133,16 +136,24 @@ export function HUD({ forest }: { forest: Forest }) {
       </div>
 
       <div className="pointer-events-auto absolute bottom-24 left-3 right-3 mx-auto max-w-lg sm:bottom-6 sm:left-4 sm:right-auto">
-        {nearby ? (
-          <article className="rounded-lg border border-border bg-surface/92 p-3 sm:p-4">
+        {showBook && nearby ? (
+          <article className="relative rounded-lg border border-border bg-surface/94 p-3 pr-12 sm:p-4 sm:pr-14">
+            <button
+              type="button"
+              onClick={dismissNearby}
+              className="absolute top-1.5 right-1.5 grid size-11 place-items-center rounded-md text-muted"
+              aria-label="Dismiss book"
+            >
+              <X className="size-5" strokeWidth={1.75} />
+            </button>
             <p className="text-xs tracking-wide text-muted uppercase">{nearby.book.genreLabel}</p>
-            <h2 className="font-display mt-0.5 text-2xl leading-tight">{nearby.book.title}</h2>
+            <h2 className="font-display mt-0.5 text-xl leading-tight sm:text-2xl">{nearby.book.title}</h2>
             <p className="text-sm text-muted">{nearby.book.author}</p>
-            <p className="mt-2 text-xs text-faint tabular-nums">
+            <p className="mt-1 hidden text-xs text-faint tabular-nums sm:block">
               {nearby.book.chunks.toLocaleString()} chunks · trunk r {nearby.trunkRadius.toFixed(2)}
             </p>
-            <p className="mt-2 text-sm leading-relaxed text-fg/90">{nearby.book.excerpt}</p>
-            <p className="mt-3 text-xs text-primary">E · read into the press</p>
+            <p className="mt-2 hidden text-sm leading-relaxed text-fg/90 sm:block">{nearby.book.excerpt}</p>
+            <p className="mt-2 text-xs text-primary sm:mt-3">E · read into the press</p>
           </article>
         ) : (
           <div className="rounded-lg border border-border bg-surface/80 px-3 py-2 text-sm text-muted">
@@ -280,12 +291,23 @@ function AtlasPanel({ forest }: { forest: Forest }) {
   const toggleCircuit = useGame((s) => s.toggleCircuit);
 
   return (
-    <div className="pointer-events-auto absolute inset-3 z-30 flex items-start justify-end sm:inset-6">
-      <div className="flex max-h-[74vh] w-full max-w-md flex-col rounded-xl border border-border bg-surface p-4">
+    <div
+      className="pointer-events-auto absolute inset-0 z-30 flex items-start justify-end bg-bg/45 p-3 sm:p-6"
+      onClick={toggleAtlas}
+    >
+      <div
+        className="flex max-h-[74vh] w-full max-w-md flex-col rounded-xl border border-border bg-surface p-4"
+        onClick={(e) => e.stopPropagation()}
+      >
         <div className="flex items-center justify-between gap-3">
           <h2 className="font-display text-2xl">Grove atlas</h2>
-          <button type="button" onClick={toggleAtlas} className="text-sm text-muted">
-            Close
+          <button
+            type="button"
+            onClick={toggleAtlas}
+            className="grid size-11 place-items-center rounded-md text-muted"
+            aria-label="Close atlas"
+          >
+            <X className="size-5" strokeWidth={1.75} />
           </button>
         </div>
         <p className="mt-1 text-sm text-muted">
@@ -348,12 +370,23 @@ function LibraryPanel({ forest }: { forest: Forest }) {
   const collected = forest.trees.filter((t) => library.includes(t.book.slug));
 
   return (
-    <div className="pointer-events-auto absolute inset-3 z-30 flex items-end justify-end sm:inset-6">
-      <div className="flex max-h-[70vh] w-full max-w-md flex-col rounded-xl border border-border bg-surface p-4">
+    <div
+      className="pointer-events-auto absolute inset-0 z-30 flex items-end justify-end bg-bg/45 p-3 sm:p-6"
+      onClick={toggleLibrary}
+    >
+      <div
+        className="flex max-h-[70vh] w-full max-w-md flex-col rounded-xl border border-border bg-surface p-4"
+        onClick={(e) => e.stopPropagation()}
+      >
         <div className="flex items-center justify-between gap-3">
           <h2 className="font-display text-2xl">The press</h2>
-          <button type="button" onClick={toggleLibrary} className="text-sm text-muted">
-            Close
+          <button
+            type="button"
+            onClick={toggleLibrary}
+            className="grid size-11 place-items-center rounded-md text-muted"
+            aria-label="Close press"
+          >
+            <X className="size-5" strokeWidth={1.75} />
           </button>
         </div>
         <p className="mt-1 text-sm text-muted">

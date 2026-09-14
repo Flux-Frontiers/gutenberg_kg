@@ -122,9 +122,9 @@ export function Player({ forest, playing }: { forest: Forest; playing: boolean }
     if (wheelL.current) wheelL.current.rotation.x += spin;
     if (wheelR.current) wheelR.current.rotation.x += spin;
 
-    const near = treesNear(forest, sim.x, sim.z, 9);
+    const near = treesNear(forest, sim.x, sim.z, 16);
     let bestSlug: string | null = null;
-    let bestD = 9;
+    let bestD = 16;
     for (const t of near) {
       const d = Math.hypot(t.x - sim.x, t.z - sim.z);
       if (d < bestD) {

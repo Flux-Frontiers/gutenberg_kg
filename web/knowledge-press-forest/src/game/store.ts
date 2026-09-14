@@ -73,6 +73,7 @@ export type GameStore = {
   grovesVisited: string[];
   nearbySlug: string | null;
   nearbyDist: number;
+  nearbyDismissed: string | null;
   speed: number;
   x: number;
   z: number;
@@ -92,6 +93,7 @@ export type GameStore = {
   collect: (slug: string, title: string) => void;
   markGrove: (genre: string) => void;
   setNearby: (slug: string | null, dist: number) => void;
+  dismissNearby: () => void;
   setPose: (x: number, z: number, yaw: number, speed: number) => void;
   setToast: (msg: string | null) => void;
   toggleLibrary: () => void;
@@ -117,6 +119,7 @@ export const useGame = create<GameStore>((set, get) => ({
   grovesVisited: initial.grovesVisited,
   nearbySlug: null,
   nearbyDist: 99,
+  nearbyDismissed: null,
   speed: 0,
   x: 0,
   z: 0,
@@ -153,7 +156,18 @@ export const useGame = create<GameStore>((set, get) => ({
     set({ grovesVisited: next });
     persist({ ...get(), grovesVisited: next });
   },
-  setNearby: (nearbySlug, nearbyDist) => set({ nearbySlug, nearbyDist }),
+  setNearby: (nearbySlug, nearbyDist) => {
+    const prev = get().nearbySlug;
+    if (nearbySlug === prev) {
+      set({ nearbyDist });
+      return;
+    }
+    set({ nearbySlug, nearbyDist, nearbyDismissed: null });
+  },
+  dismissNearby: () => {
+    const slug = get().nearbySlug;
+    if (slug) set({ nearbyDismissed: slug });
+  },
   setPose: (x, z, yaw, speed) => set({ x, z, yaw, speed }),
   setToast: (toast) => set({ toast }),
   toggleLibrary: () => set({ libraryOpen: !get().libraryOpen, atlasOpen: false }),

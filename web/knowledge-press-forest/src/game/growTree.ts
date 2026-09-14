@@ -20,7 +20,7 @@ export type GrownTree = {
 };
 
 /** Bump when caps change so the forest cache rebuilds. */
-export const GROW_VERSION = 2;
+export const GROW_VERSION = 4;
 
 const GOLDEN = Math.PI * (3 - Math.sqrt(5));
 
@@ -315,7 +315,8 @@ export function emitLeaves(
       grown.leafPoints[i * 3 + 1]!,
       originZ + grown.leafPoints[i * 3 + 2]!,
     );
-    destScale.push(r, r * 0.55, r);
+    const jitter = 0.78 + (grown.leafTint[i]! / 8) * 0.5;
+    destScale.push(r * 1.12 * jitter, r * 1.78 * jitter, r * 0.22);
     destTint.push(grown.leafTint[i]!);
     count++;
   }

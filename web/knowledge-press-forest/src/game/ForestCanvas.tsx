@@ -18,6 +18,12 @@ export function ForestCanvas({ forest }: { forest: Forest }) {
       onCreated={({ gl }) => {
         gl.setClearColor("#16213e");
       }}
+      onPointerMissed={() => {
+        const s = useGame.getState();
+        if (s.libraryOpen) s.toggleLibrary();
+        else if (s.atlasOpen) s.toggleAtlas();
+        else s.dismissNearby();
+      }}
     >
       <World forest={forest} season={season} />
       <Trees forest={forest} season={season} query={query} />
