@@ -1,0 +1,27 @@
+import { Canvas } from "@react-three/fiber";
+import type { Forest } from "./forest";
+import { Player } from "./Player";
+import { Trees } from "./Trees";
+import { World } from "./World";
+import { useGame } from "./store";
+
+export function ForestCanvas({ forest }: { forest: Forest }) {
+  const season = useGame((s) => s.season);
+  const query = useGame((s) => s.query);
+  const playing = useGame((s) => s.playing);
+
+  return (
+    <Canvas
+      camera={{ position: [forest.spawn.x, 6.2, forest.spawn.z + 10], fov: 58, near: 0.12, far: 560 }}
+      dpr={[1, 1.5]}
+      gl={{ antialias: true, powerPreference: "high-performance", alpha: false }}
+      onCreated={({ gl }) => {
+        gl.setClearColor("#16213e");
+      }}
+    >
+      <World forest={forest} season={season} />
+      <Trees forest={forest} season={season} query={query} />
+      <Player forest={forest} playing={playing} />
+    </Canvas>
+  );
+}
