@@ -1,4 +1,5 @@
 import { create } from "zustand";
+import type { TimeOfDay } from "./daylight";
 import type { SeasonName } from "./seasons";
 
 const SAVE_KEY = "kpf-library-v1";
@@ -9,6 +10,7 @@ type SaveBlob = {
   library: string[];
   grovesVisited: string[];
   season: SeasonName;
+  timeOfDay: TimeOfDay;
 };
 
 function loadSave(): SaveBlob {
@@ -17,6 +19,7 @@ function loadSave(): SaveBlob {
     library: [],
     grovesVisited: [],
     season: "summer",
+    timeOfDay: "day",
   };
   if (typeof window === "undefined") return defaults;
   try {
@@ -36,19 +39,26 @@ function loadSave(): SaveBlob {
         parsed.season === "winter"
           ? parsed.season
           : "summer",
+      timeOfDay: parsed.timeOfDay === "night" ? "night" : "day",
     };
   } catch {
     return defaults;
   }
 }
 
-function persist(s: { library: string[]; grovesVisited: string[]; season: SeasonName }) {
+function persist(s: {
+  library: string[];
+  grovesVisited: string[];
+  season: SeasonName;
+  timeOfDay: TimeOfDay;
+}) {
   try {
     const blob: SaveBlob = {
       version: SAVE_VERSION,
       library: s.library,
       grovesVisited: s.grovesVisited,
       season: s.season,
+      timeOfDay: s.timeOfDay,
     };
     window.localStorage.setItem(SAVE_KEY, JSON.stringify(blob));
   } catch {
@@ -68,6 +78,7 @@ export type GameStore = {
   playing: boolean;
   paused: boolean;
   season: SeasonName;
+  timeOfDay: TimeOfDay;
   query: string;
   library: string[];
   grovesVisited: string[];
@@ -90,6 +101,7 @@ export type GameStore = {
   play: () => void;
   pause: (v?: boolean) => void;
   setSeason: (s: SeasonName) => void;
+  toggleTimeOfDay: () => void;
   setQuery: (q: string) => void;
   collect: (slug: string, title: string) => void;
   markGrove: (genre: string) => void;
@@ -116,6 +128,7 @@ export const useGame = create<GameStore>((set, get) => ({
   playing: false,
   paused: false,
   season: initial.season,
+  timeOfDay: initial.timeOfDay,
   query: "",
   library: initial.library,
   grovesVisited: initial.grovesVisited,
@@ -140,6 +153,11 @@ export const useGame = create<GameStore>((set, get) => ({
   setSeason: (season) => {
     set({ season });
     persist({ ...get(), season });
+  },
+  toggleTimeOfDay: () => {
+    const timeOfDay = get().timeOfDay === "day" ? "night" : "day";
+    set({ timeOfDay });
+    persist({ ...get(), timeOfDay });
   },
   setQuery: (query) => set({ query }),
   collect: (slug, title) => {

@@ -22,7 +22,9 @@ sys.modules["export_web_catalog"] = export_web_catalog
 _spec.loader.exec_module(export_web_catalog)
 
 
-def _write_book(root: Path, genre: str, folder: str, *, title: str, author: str, chunks: list[str]) -> Path:
+def _write_book(
+    root: Path, genre: str, folder: str, *, title: str, author: str, chunks: list[str]
+) -> Path:
     book_dir = root / genre / folder
     kg = book_dir / ".dockg"
     kg.mkdir(parents=True)
@@ -53,7 +55,10 @@ class TestSlug:
         assert export_web_catalog.slug_from_title("Hamlet") == "hamlet"
 
     def test_strips_punctuation_and_caps_length(self):
-        assert export_web_catalog.slug_from_title("A Selection from the Discourses of Epictetus!")[:20] == "a_selection_from_the"
+        assert (
+            export_web_catalog.slug_from_title("A Selection from the Discourses of Epictetus!")[:20]
+            == "a_selection_from_the"
+        )
 
 
 class TestScan:

@@ -2,539 +2,433 @@ import type { Book } from "./catalogTypes";
 
 export const BOOKS_PART3: Book[] = [
   {
-    "slug": "the_aeneid",
-    "title": "The Aeneid",
-    "author": "Virgil",
-    "genre": "ancient-classical",
-    "genreLabel": "Ancient & Classical",
-    "chunks": 790,
-    "excerpt": "The Trojans, after a seven years’ voyage, set sail for Italy, but are overtaken by a dreadful storm, which Aeolus raises at the request of Juno. The tempest sinks one, and scatters the rest. Neptune drives off the winds, and calms the sea. Aeneas, with his own ship and six more, arrives safe at an African port. Venus complains to Jupiter of her son’s misfortunes. Jupiter…",
-    "tags": [
-      "ancient classical"
-    ]
+    slug: "cranford_gaskell",
+    title: "Cranford (Gaskell)",
+    author: "Elizabeth Cleghorn Gaskell",
+    genre: "english-literature",
+    genreLabel: "English Literature",
+    chunks: 942,
+    excerpt: "Then we had suet puddings, boiled in the broth with the beef: and then the meat itself. If we did not sup our broth, we had no ball, which we liked a deal better; and the beef came last of all, and only those had it who had done justice to the broth and the ball. Now folks…",
+    tags: ["english-literature"],
   },
   {
-    "slug": "the_birds",
-    "title": "The Birds",
-    "author": "Aristophanes",
-    "genre": "ancient-classical",
-    "genreLabel": "Ancient & Classical",
-    "chunks": 76,
-    "excerpt": "(Translator uncredited. Footnotes have been retained because they provide the meanings of Greek names, terms and ceremonies and explain puns and references otherwise lost in translation. Occasional Greek words in the footnotes have not been included. Footnote numbers, in brackets, start anew at (1) for each piece of dialogue, and each footnote follows immediately the…",
-    "tags": [
-      "ancient classical"
-    ]
+    slug: "david_copperfield_dickens",
+    title: "David Copperfield (Dickens)",
+    author: "Charles Dickens",
+    genre: "english-literature",
+    genreLabel: "English Literature",
+    chunks: 4717,
+    excerpt: "I had barely time to get down again before the coach started, and I could hardly see the family for the handkerchiefs they waved. It was gone in a minute. The Orfling and I stood looking vacantly at each other in the middle of the road, and then shook hands and said good-bye;…",
+    tags: ["english-literature"],
   },
   {
-    "slug": "the_clouds",
-    "title": "The Clouds",
-    "author": "Aristophanes",
-    "genre": "ancient-classical",
-    "genreLabel": "Ancient & Classical",
-    "chunks": 53,
-    "excerpt": "Scene: The interior of a sleeping-apartment: Strepsiades, Phidippides, and two servants are in their beds; a small house is seen at a distance. Time:",
-    "tags": [
-      "ancient classical"
-    ]
+    slug: "dracula",
+    title: "Dracula",
+    author: "Bram Stoker",
+    genre: "english-literature",
+    genreLabel: "English Literature",
+    chunks: 2016,
+    excerpt: "His mouth moved as though he were praying. After a few minutes’ silence, he got up, shook hands with me, and blessed me, and said good-bye, and hobbled off. It all touched me, and upset me very much. I was glad when the coastguard came along, with his spy-glass under his arm.…",
+    tags: ["english-literature"],
   },
   {
-    "slug": "the_consolation_of_philosophy",
-    "title": "The Consolation of Philosophy",
-    "author": "Boethius",
-    "genre": "ancient-classical",
-    "genreLabel": "Ancient & Classical",
-    "chunks": 153,
-    "excerpt": "homôs de kai en toutois dialampei to kalon, epeidan pherê tis eukolôs pollas kai megalas atychias, mê di analgêsian, alla gennadas",
-    "tags": [
-      "ancient classical"
-    ]
+    slug: "emma",
+    title: "Emma",
+    author: "Jane Austen",
+    genre: "english-literature",
+    genreLabel: "English Literature",
+    chunks: 2144,
+    excerpt: "Come, my dear Emma, let us be friends, and say no more about it. Tell your aunt, little Emma, that she ought to set you a better example than to be renewing old grievances, and that if she were not wrong before, she is now.” “That’s true,” she cried—“very true. Little Emma,…",
+    tags: ["english-literature"],
   },
   {
-    "slug": "the_eleven_comedies_volume_1",
-    "title": "The Eleven Comedies, Volume 1",
-    "author": "Aristophanes",
-    "genre": "ancient-classical",
-    "genreLabel": "Ancient & Classical",
-    "chunks": 320,
-    "excerpt": "Perhaps the first thing to strike us--paradoxical as it may sound to say so--about the Athenian 'Old Comedy' is its _modernness_. Of its very nature, satiric drama comes later than Epic and Lyric poetry, Tragedy or History; Aristophanes follows Homer and Simonides, Sophocles and Thucydides. Of its essence, it is free from many of the conventions and restraining influences…",
-    "tags": [
-      "ancient classical"
-    ]
+    slug: "far_from_the_madding_crowd_hardy",
+    title: "Far from the Madding Crowd (Hardy)",
+    author: "Thomas Hardy",
+    genre: "english-literature",
+    genreLabel: "English Literature",
+    chunks: 1860,
+    excerpt: "Every looker-on’s inside shook with the blows of the great drum to his deepest vitals, and there was not a dry eye throughout the town among the public-house people and the nameless women!” “But they’re not gone to any war?” “No, ma’am; but they be gone to take the places of…",
+    tags: ["english-literature"],
   },
   {
-    "slug": "the_eleven_comedies_volume_2",
-    "title": "The Eleven Comedies, Volume 2",
-    "author": "Aristophanes",
-    "genre": "ancient-classical",
-    "genreLabel": "Ancient & Classical",
-    "chunks": 320,
-    "excerpt": "Perhaps the first thing to strike us--paradoxical as it may sound to say so--about the Athenian 'Old Comedy' is its _modernness_. Of its very nature, satiric drama comes later than Epic and Lyric poetry, Tragedy or History; Aristophanes follows Homer and Simonides, Sophocles and Thucydides. Of its essence, it is free from many of the conventions and restraining influences…",
-    "tags": [
-      "ancient classical"
-    ]
+    slug: "great_expectations",
+    title: "Great Expectations",
+    author: "Charles Dickens",
+    genre: "english-literature",
+    genreLabel: "English Literature",
+    chunks: 2432,
+    excerpt: "She was seated at her dressing-table, and looked round at us immediately. “Oh!” said she to Joe. “You are the husband of the sister of this boy?” I could hardly have imagined dear old Joe looking so unlike himself or so like some extraordinary bird; standing as he did…",
+    tags: ["english-literature"],
   },
   {
-    "slug": "the_frogs",
-    "title": "The Frogs",
-    "author": "Aristophanes",
-    "genre": "ancient-classical",
-    "genreLabel": "Ancient & Classical",
-    "chunks": 50,
-    "excerpt": "Aristophanes, _the greatest of comic writers in Greek and in the opinion of many, in any language, is the only one of the Attic comedians any of whose works has survived in complete form He was born in Athens about the middle of the fifth century B C, and had his first comedy produced when he was so young that his name was withheld on account of his youth. He is credited…",
-    "tags": [
-      "ancient classical"
-    ]
+    slug: "grimms_fairy_tales",
+    title: "Grimms Fairy Tales",
+    author: "Wilhelm Grimm",
+    genre: "english-literature",
+    genreLabel: "English Literature",
+    chunks: 1218,
+    excerpt: "All this the old king saw: so he went home without being seen; and when the little goose-girl came back in the evening he called her aside, and asked her why she did so: but she burst into tears, and said, ‘That I must not tell you or any man, or I shall lose my life.’ But…",
+    tags: ["english-literature"],
   },
   {
-    "slug": "the_golden_sayings_of_epictetus_with_the_hymn_of_cleanthes",
-    "title": "The Golden Sayings of Epictetus, with the Hymn of Cleanthes",
-    "author": "Epictetus",
-    "genre": "ancient-classical",
-    "genreLabel": "Ancient & Classical",
-    "chunks": 81,
-    "excerpt": "Are these the only works of Providence within us? What words suffice to praise or set them forth? Had we but understanding, should we ever cease hymning and blessing the Divine Power, both openly and in secret, and telling of His gracious gifts? Whether digging or ploughing or eating, should we not sing the hymn to God:—",
-    "tags": [
-      "ancient classical",
-      "stoic"
-    ]
+    slug: "gullivers_travels",
+    title: "Gullivers Travels",
+    author: "Jonathan Swift",
+    genre: "english-literature",
+    genreLabel: "English Literature",
+    chunks: 1328,
+    excerpt: "He represented to the emperor “the low condition of his treasury; that he was forced to take up money at a great discount; that exchequer bills would not circulate under nine per cent. below par; that I had cost his majesty above a million and a half of _sprugs_” (their…",
+    tags: ["english-literature"],
   },
   {
-    "slug": "the_house_of_atreus_being_the_agamemnon_the_libation_bearers",
-    "title": "The House of Atreus; Being the Agamemnon, the Libation bearers, and the Furies",
-    "author": "Aeschylus",
-    "genre": "ancient-classical",
-    "genreLabel": "Ancient & Classical",
-    "chunks": 123,
-    "excerpt": "Of the life of Aeschylus, the first of the three great masters of Greek tragedy, only a very meager outline has come down to us. He was born at Eleusis, near Athens, B. C. 525, the son of Euphorion. Before he was twenty-five he began to compete for the tragic prize, but did not win a victory for twelve years. He spent two periods of years in Sicily, where he died in 456,…",
-    "tags": [
-      "ancient classical"
-    ]
+    slug: "heart_of_darkness",
+    title: "Heart of Darkness",
+    author: "Joseph Conrad",
+    genre: "english-literature",
+    genreLabel: "English Literature",
+    chunks: 510,
+    excerpt: "Strings of dusty niggers with splay feet arrived and departed; a stream of manufactured goods, rubbishy cottons, beads, and brass-wire sent into the depths of darkness, and in return came a precious trickle of ivory. “I had to wait in the station for ten days—an eternity. I…",
+    tags: ["english-literature"],
   },
   {
-    "slug": "the_iliad",
-    "title": "The Iliad",
-    "author": "Homer",
-    "genre": "ancient-classical",
-    "genreLabel": "Ancient & Classical",
-    "chunks": 920,
-    "excerpt": "Sing, O goddess, the anger of Achilles son of Peleus, that brought countless ills upon the Achaeans. Many a brave soul did it send hurrying down to Hades, and many a hero did it yield a prey to dogs and vultures.",
-    "tags": [
-      "ancient classical",
-      "war"
-    ]
+    slug: "howards_end",
+    title: "Howards End",
+    author: "E. M. (Edward Morgan) Forster",
+    genre: "english-literature",
+    genreLabel: "English Literature",
+    chunks: 1475,
+    excerpt: "Now and then I do.” “I thought of you as one of the early risers.” “At Howards End—yes; there is nothing to get up for in London.” “Nothing to get up for?” cried the scandalized Margaret. “When there are all the autumn exhibitions, and Ysaye playing in the afternoon! Not to…",
+    tags: ["english-literature"],
   },
   {
-    "slug": "the_meditations_of_the_emperor_marcus_aurelius_antoninus",
-    "title": "The Meditations of the Emperor Marcus Aurelius Antoninus",
-    "author": "Emperor of Rome Marcus Aurelius",
-    "genre": "ancient-classical",
-    "genreLabel": "Ancient & Classical",
-    "chunks": 142,
-    "excerpt": "1. I learned from my grandfather, Verus, to use good manners, and to put restraint on anger. 2. In the famous memory of my father I had a pattern of modesty and manliness. 3. Of my mother I learned to be pious and generous; to keep myself not only from evil deeds, but even from evil thoughts; and to live with a simplicity which is far from customary among the rich. 4. I owe…",
-    "tags": [
-      "ancient classical",
-      "stoic"
-    ]
+    slug: "jane_eyre",
+    title: "Jane Eyre",
+    author: "Charlotte Brontë",
+    genre: "english-literature",
+    genreLabel: "English Literature",
+    chunks: 2478,
+    excerpt: "It is a very strange sensation to inexperienced youth to feel itself quite alone in the world, cut adrift from every connection, uncertain whether the port to which it is bound can be reached, and prevented by many impediments from returning to that it has quitted. The charm…",
+    tags: ["english-literature"],
   },
   {
-    "slug": "the_odyssey",
-    "title": "The Odyssey",
-    "author": "Homer",
-    "genre": "ancient-classical",
-    "genreLabel": "Ancient & Classical",
-    "chunks": 880,
-    "excerpt": "Tell me, O muse, of that ingenious hero who travelled far and wide after he had sacked the famous town of Troy. Many cities did he visit, and many were the nations with whose manners and customs he was acquainted.",
-    "tags": [
-      "ancient classical",
-      "sea"
-    ]
+    slug: "kim_kipling",
+    title: "Kim (Kipling)",
+    author: "Rudyard Kipling",
+    genre: "english-literature",
+    genreLabel: "English Literature",
+    chunks: 1410,
+    excerpt: "The old man’s face lit with pride. “My child!” said he briefly, and strove to rein the pony’s neck to a fitting arch. “Am I to be beaten before the police?” cried the carter. “Justice! I will have Justice—” “Am I to be blocked by a shouting ape who upsets ten thousand sacks…",
+    tags: ["english-literature"],
   },
   {
-    "slug": "the_teaching_of_epictetus",
-    "title": "The Teaching of Epictetus",
-    "author": "Epictetus",
-    "genre": "ancient-classical",
-    "genreLabel": "Ancient & Classical",
-    "chunks": 219,
-    "excerpt": "But for the zeal and ability of one disciple we should not now possess any trustworthy account of the teaching of Epictetus. For, like not a few other sages, he wrote nothing--his teaching was purely oral, delivered, in the form of lectures or discourses, to the students who came to him to receive their education in philosophy. One of these students was Flavius Arrianus,…",
-    "tags": [
-      "ancient classical",
-      "stoic"
-    ]
+    slug: "middlemarch",
+    title: "Middlemarch",
+    author: "George Eliot",
+    genre: "english-literature",
+    genreLabel: "English Literature",
+    chunks: 4384,
+    excerpt: "Tyke said they should have no more coals if they came to hear you preach.” Mrs. Farebrother laid down her knitting, which she had resumed after her small allowance of tea and toast, and looked at her son as if to say “You hear that?” Miss Noble said, “Oh poor things! poor…",
+    tags: ["english-literature"],
   },
   {
-    "slug": "thoughts_of_marcus_aurelius_antoninus",
-    "title": "Thoughts of Marcus Aurelius Antoninus",
-    "author": "Emperor of Rome Marcus Aurelius",
-    "genre": "ancient-classical",
-    "genreLabel": "Ancient & Classical",
-    "chunks": 262,
-    "excerpt": "M. Antoninus was born at Rome, A.D. 121, on the 26th of April. His father, Annius Verus, died while he was praetor. His mother was Domitia Calvilla, also named Lucilla. The Emperor T. Antoninus Pius married Annia Galeria Faustina, the sister of Annius Verus, and was consequently the uncle of M. Antoninus. When Hadrian adopted Antoninus Pius and declared him his successor in…",
-    "tags": [
-      "ancient classical",
-      "stoic"
-    ]
+    slug: "north_and_south_gaskell",
+    title: "North and South (Gaskell)",
+    author: "Elizabeth Cleghorn Gaskell",
+    genre: "english-literature",
+    genreLabel: "English Literature",
+    chunks: 2409,
+    excerpt: "The sharpness in her eye turned to a wistful longing as she met Margaret’s soft and friendly gaze. “I ha’ none so many to care for me; if yo’ care yo’ may come.” So they walked on together in silence. As they turned up into a small court, out of a squalid street, Bessy said,…",
+    tags: ["english-literature"],
   },
   {
-    "slug": "adventures_of_huckleberry_finn",
-    "title": "Adventures of Huckleberry Finn",
-    "author": "Mark Twain",
-    "genre": "american-literature",
-    "genreLabel": "American Literature",
-    "chunks": 620,
-    "excerpt": "You don't know about me without you have read a book by the name of The Adventures of Tom Sawyer; but that ain't no matter. That book was made by Mr. Mark Twain, and he told the truth, mainly.",
-    "tags": [
-      "american literature",
-      "freedom"
-    ]
+    slug: "pride_and_prejudice",
+    title: "Pride and Prejudice",
+    author: "Jane Austen",
+    genre: "english-literature",
+    genreLabel: "English Literature",
+    chunks: 1773,
+    excerpt: "Bennet’s expectations were fully answered. His cousin was as absurd as he had hoped; and he listened to him with the keenest enjoyment, maintaining at the same time the most resolute composure of countenance, and, except in an occasional glance at Elizabeth, requiring no…",
+    tags: ["english-literature"],
   },
   {
-    "slug": "ebony_and_crystal_poems_in_verse_and_prose",
-    "title": "Ebony and Crystal: Poems in Verse and Prose",
-    "author": "Clark Ashton Smith",
-    "genre": "american-literature",
-    "genreLabel": "American Literature",
-    "chunks": 92,
-    "excerpt": "Who of us care to be present at the accouchment of the immortal? I think that we so attend who are first to take this book in our hands. A bold assertion, truly, and one demonstrable only in years remote from these; and—dust wages no war with dust. But it is one of those things that I should most “like to come back and see.”",
-    "tags": [
-      "american literature"
-    ]
+    slug: "robinson_crusoe",
+    title: "Robinson Crusoe",
+    author: "Daniel Defoe",
+    genre: "english-literature",
+    genreLabel: "English Literature",
+    chunks: 1435,
+    excerpt: "I was not so much surprised with the lightning as I was with the thought which darted into my mind as swift as the lightning itself—Oh, my powder! My very heart sank within me when I thought that, at one blast, all my powder might be destroyed; on which, not my defence only,…",
+    tags: ["english-literature"],
   },
   {
-    "slug": "leaves_of_grass",
-    "title": "Leaves of Grass",
-    "author": "Walt Whitman",
-    "genre": "american-literature",
-    "genreLabel": "American Literature",
-    "chunks": 510,
-    "excerpt": "I celebrate myself, and sing myself, And what I assume you shall assume, For every atom belonging to me as good belongs to you. I loafe and invite my soul, I lean and loafe at my ease observing a spear of summer grass.",
-    "tags": [
-      "american literature",
-      "nature"
-    ]
+    slug: "sense_and_sensibility",
+    title: "Sense and Sensibility",
+    author: "Jane Austen",
+    genre: "english-literature",
+    genreLabel: "English Literature",
+    chunks: 1656,
+    excerpt: "My visits to Mrs. Smith are never repeated within the twelvemonth.” “And is Mrs. Smith your only friend? Is Allenham the only house in the neighbourhood to which you will be welcome? For shame, Willoughby, can you wait for an invitation here?” His colour increased; and with…",
+    tags: ["english-literature"],
   },
   {
-    "slug": "moby_dick",
-    "title": "Moby Dick",
-    "author": "Herman Melville",
-    "genre": "american-literature",
-    "genreLabel": "American Literature",
-    "chunks": 1380,
-    "excerpt": "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
-    "tags": [
-      "american literature",
-      "sea"
-    ]
+    slug: "tess_of_the_durbervilles_hardy",
+    title: "Tess of the d'Urbervilles (Hardy)",
+    author: "Thomas Hardy",
+    genre: "english-literature",
+    genreLabel: "English Literature",
+    chunks: 2050,
+    excerpt: "That’s more real than the other—hey? I have a little to do here at this stile.” The man turned, as he spoke, to an opening at the roadside leading into a pasture. “If you’ll wait a moment,” he added, “I shall not be long.” As he had her basket she could not well do otherwise;…",
+    tags: ["english-literature"],
   },
   {
-    "slug": "my_antonia",
-    "title": "My Antonia",
-    "author": "Willa Cather",
-    "genre": "american-literature",
-    "genreLabel": "American Literature",
-    "chunks": 280,
-    "excerpt": "Last summer I happened to be crossing the plains of Iowa in a season of intense heat, and it was my good fortune to have for a traveling companion James Quayle Burden—Jim Burden, as we still call him in the West. He and I are old friends—we grew up together in the same Nebraska town—and we had much to say to each other. While the train flashed through never-ending miles of…",
-    "tags": [
-      "american literature"
-    ]
+    slug: "the_adventures_of_sherlock_holmes",
+    title: "The Adventures of Sherlock Holmes",
+    author: "Arthur Conan Doyle",
+    genre: "english-literature",
+    genreLabel: "English Literature",
+    chunks: 1366,
+    excerpt: "That will just show you how fond he was of me, Mr. Holmes, and the little things that he would think of.” “It was most suggestive,” said Holmes. “It has long been an axiom of mine that the little things are infinitely the most important. Can you remember any other little…",
+    tags: ["english-literature"],
   },
   {
-    "slug": "o_pioneers",
-    "title": "O Pioneers!",
-    "author": "Willa Cather",
-    "genre": "american-literature",
-    "genreLabel": "American Literature",
-    "chunks": 191,
-    "excerpt": "Heavy and black, full of strength and harshness; Singing like the larks over the plowed fields, Flashing like a star out of the twilight;",
-    "tags": [
-      "american literature"
-    ]
+    slug: "the_jungle_book_kipling",
+    title: "The Jungle Book (Kipling)",
+    author: "Rudyard Kipling",
+    genre: "english-literature",
+    genreLabel: "English Literature",
+    chunks: 671,
+    excerpt: "For a time he was afraid of being dropped. Then he grew angry but knew better than to struggle, and then he began to think. The first thing was to send back word to Baloo and Bagheera, for, at the pace the monkeys were going, he knew his friends would be left far behind. It…",
+    tags: ["english-literature"],
   },
   {
-    "slug": "tales_of_mystery_and_imagination",
-    "title": "Tales of Mystery and Imagination",
-    "author": "Edgar Allan Poe",
-    "genre": "american-literature",
-    "genreLabel": "American Literature",
-    "chunks": 328,
-    "excerpt": "Caught from some unhappy master whom unmerciful Disaster Followed fast and followed faster till his songs one burden bore— Till the dirges of his Hope that melancholy burden bore",
-    "tags": [
-      "american literature"
-    ]
+    slug: "the_man_who_was_thursday_chesterton",
+    title: "The Man Who Was Thursday (Chesterton)",
+    author: "G. K. (Gilbert Keith) Chesterton",
+    genre: "english-literature",
+    genreLabel: "English Literature",
+    chunks: 774,
+    excerpt: "One of his uncles always walked about without a hat, and another had made an unsuccessful attempt to walk about with a hat and nothing else. His father cultivated art and self-realisation; his mother went in for simplicity and hygiene. Hence the child, during his tenderer…",
+    tags: ["english-literature"],
   },
   {
-    "slug": "the_age_of_innocence",
-    "title": "The Age of Innocence",
-    "author": "Edith Wharton",
-    "genre": "american-literature",
-    "genreLabel": "American Literature",
-    "chunks": 362,
-    "excerpt": "Though there was already talk of the erection, in remote metropolitan distances \"above the Forties,\" of a new Opera House which should compete in costliness and splendour with those of the great European capitals, the world of fashion was still content to reassemble every winter in the shabby red and gold boxes of the sociable old Academy. Conservatives cherished it for…",
-    "tags": [
-      "american literature"
-    ]
+    slug: "the_mayor_of_casterbridge_hardy",
+    title: "The Mayor of Casterbridge (Hardy)",
+    author: "Thomas Hardy",
+    genre: "english-literature",
+    genreLabel: "English Literature",
+    chunks: 1599,
+    excerpt: "Henchard preceded her through the door in the wall to the suddenly changed scene of the garden and flowers, and onward into the house. The dining-room to which he introduced her still exhibited the remnants of the lavish breakfast laid for Farfrae. It was furnished to…",
+    tags: ["english-literature"],
   },
   {
-    "slug": "the_awakening",
-    "title": "The Awakening",
-    "author": "Kate Chopin",
-    "genre": "american-literature",
-    "genreLabel": "American Literature",
-    "chunks": 228,
-    "excerpt": "He could speak a little Spanish, and also a language which nobody understood, unless it was the mocking-bird that hung on the other side of the door, whistling his fluty notes out upon the breeze with",
-    "tags": [
-      "american literature",
-      "love"
-    ]
+    slug: "the_picture_of_dorian_gray",
+    title: "The Picture of Dorian Gray",
+    author: "Oscar Wilde",
+    genre: "english-literature",
+    genreLabel: "English Literature",
+    chunks: 1010,
+    excerpt: "In fact I consider you extremely dangerous, and if anything happens to our good duchess, we shall all look on you as being primarily responsible. But I should like to talk to you about life. The generation into which I was born was tedious. Some day, when you are tired of…",
+    tags: ["english-literature"],
   },
   {
-    "slug": "the_call_of_the_wild",
-    "title": "The Call of the Wild",
-    "author": "Jack London",
-    "genre": "american-literature",
-    "genreLabel": "American Literature",
-    "chunks": 110,
-    "excerpt": "Buck did not read the newspapers, or he would have known that trouble was brewing, not alone for himself, but for every tide-water dog, strong of muscle and with warm, long hair, from Puget Sound to San Diego.",
-    "tags": [
-      "american literature"
-    ]
+    slug: "the_portrait_of_a_lady_volume_1",
+    title: "The Portrait of a Lady — Volume 1",
+    author: "Henry James",
+    genre: "english-literature",
+    genreLabel: "English Literature",
+    chunks: 1611,
+    excerpt: "I infer also that you like my mother.” “I like your mother very much, because--because--” And Isabel found herself attempting to assign a reason for her affection for Mrs. Touchett. “Ah, we never know why!” said her companion, laughing. “I always know why,” the girl answered.…",
+    tags: ["english-literature"],
   },
   {
-    "slug": "the_house_of_mirth",
-    "title": "The House of Mirth",
-    "author": "Edith Wharton",
-    "genre": "american-literature",
-    "genreLabel": "American Literature",
-    "chunks": 465,
-    "excerpt": "Selden paused in surprise. In the afternoon rush of the Grand Central Station his eyes had been refreshed by the sight of Miss",
-    "tags": [
-      "american literature"
-    ]
+    slug: "the_portrait_of_a_lady_volume_2",
+    title: "The Portrait of a Lady — Volume 2",
+    author: "Henry James",
+    genre: "english-literature",
+    genreLabel: "English Literature",
+    chunks: 1494,
+    excerpt: "But I care myself if I tell fibs; I never tell them unless there’s something rather good to be gained. I don’t see what’s to be gained with you--especially as you wouldn’t believe me. I don’t make professions any more than I make paper flowers or flouncey lampshades--I don’t…",
+    tags: ["english-literature"],
   },
   {
-    "slug": "the_jungle",
-    "title": "The Jungle",
-    "author": "Upton Sinclair",
-    "genre": "american-literature",
-    "genreLabel": "American Literature",
-    "chunks": 512,
-    "excerpt": "It was four o’clock when the ceremony was over and the carriages began to arrive. There had been a crowd following all the way, owing to the exuberance of Marija Berczynskas. The occasion rested heavily upon Marija’s broad shoulders—it was her task to see that all things went in due form, and after the best home traditions; and, flying wildly hither and thither, bowling…",
-    "tags": [
-      "american literature"
-    ]
+    slug: "the_strange_case_of_dr_jekyll_and_mr_hyde",
+    title: "The Strange Case of Dr Jekyll and Mr Hyde",
+    author: "Robert Louis Stevenson",
+    genre: "english-literature",
+    genreLabel: "English Literature",
+    chunks: 352,
+    excerpt: "The last, I think; for, O my poor old Harry Jekyll, if ever I read Satan’s signature upon a face, it is on that of your new friend.” Round the corner from the by-street, there was a square of ancient, handsome houses, now for the most part decayed from their high estate and…",
+    tags: ["english-literature"],
   },
   {
-    "slug": "the_legend_of_sleepy_hollow",
-    "title": "The Legend of Sleepy Hollow",
-    "author": "Washington Irving",
-    "genre": "american-literature",
-    "genreLabel": "American Literature",
-    "chunks": 44,
-    "excerpt": "In the bosom of one of those spacious coves which indent the eastern shore of the Hudson, at that broad expansion of the river denominated by the ancient Dutch navigators the Tappan Zee, and where they always prudently shortened sail and implored the protection of St. Nicholas when they crossed, there lies a small market town or rural port, which by some is called…",
-    "tags": [
-      "american literature"
-    ]
+    slug: "the_time_machine",
+    title: "The Time Machine",
+    author: "H. G. (Herbert George) Wells",
+    genre: "english-literature",
+    genreLabel: "English Literature",
+    chunks: 433,
+    excerpt: "What strange developments of humanity, what wonderful advances upon our rudimentary civilisation, I thought, might not appear when I came to look nearly into the dim elusive world that raced and fluctuated before my eyes! I saw great and splendid architecture rising about me,…",
+    tags: ["english-literature"],
   },
   {
-    "slug": "the_raven_and_other_poems",
-    "title": "The Raven and Other Poems",
-    "author": "Edgar Allan Poe",
-    "genre": "american-literature",
-    "genreLabel": "American Literature",
-    "chunks": 27,
-    "excerpt": "Once upon a midnight dreary, while I pondered, weak and weary, Over many a quaint and curious volume of forgotten lore— While I nodded, nearly napping, suddenly there came a tapping, As of some one gently rapping, rapping at my chamber door.",
-    "tags": [
-      "american literature"
-    ]
+    slug: "the_turn_of_the_screw_henry_james",
+    title: "The Turn of the Screw (Henry James)",
+    author: "Henry James",
+    genre: "english-literature",
+    genreLabel: "English Literature",
+    chunks: 565,
+    excerpt: "Grose. This picture comes back to me in the general train—the impression, as I received it on my return, of the wide white panelled space, bright in the lamplight and with its portraits and red carpet, and of the good surprised look of my friend, which immediately told me she…",
+    tags: ["english-literature"],
   },
   {
-    "slug": "the_red_badge_of_courage",
-    "title": "The Red Badge of Courage",
-    "author": "Stephen Crane",
-    "genre": "american-literature",
-    "genreLabel": "American Literature",
-    "chunks": 164,
-    "excerpt": "The cold passed reluctantly from the earth, and the retiring fogs revealed an army stretched out on the hills, resting. As the landscape changed from brown to green, the army awakened, and began to tremble with eagerness at the noise of rumors. It cast its eyes upon the roads, which were growing from long troughs of liquid mud to proper thoroughfares. A river, amber-tinted…",
-    "tags": [
-      "american literature",
-      "war"
-    ]
+    slug: "the_war_of_the_worlds",
+    title: "The War of the Worlds",
+    author: "H. G. (Herbert George) Wells",
+    genre: "english-literature",
+    genreLabel: "English Literature",
+    chunks: 812,
+    excerpt: "Close on the heels of that came a violent rattling crash, quite close to us, that shook the ground; and, starting out upon the lawn, I saw the tops of the trees about the Oriental College burst into smoky red flame, and the tower of the little church beside it slide down into…",
+    tags: ["english-literature"],
   },
   {
-    "slug": "the_scarlet_letter",
-    "title": "The Scarlet Letter",
-    "author": "Nathaniel Hawthorne",
-    "genre": "american-literature",
-    "genreLabel": "American Literature",
-    "chunks": 303,
-    "excerpt": "A throng of bearded men, in sad-colored garments and gray, steeple-crowned hats, intermixed with women, some wearing hoods, and others bareheaded, was assembled in front of a wooden edifice, the door of which was heavily timbered with oak, and studded with iron spikes.",
-    "tags": [
-      "american literature"
-    ]
+    slug: "treasure_island",
+    title: "Treasure Island",
+    author: "Robert Louis Stevenson",
+    genre: "english-literature",
+    genreLabel: "English Literature",
+    chunks: 886,
+    excerpt: "They go the length of declaring that this honest creature would do anything for money, that the HISPANIOLA belonged to him, and that he sold it me absurdly high--the most transparent calumnies. None of them dare, however, to deny the merits of the ship. So far there was not a…",
+    tags: ["english-literature"],
   },
   {
-    "slug": "the_sea_wolf",
-    "title": "The Sea-Wolf",
-    "author": "Jack London",
-    "genre": "american-literature",
-    "genreLabel": "American Literature",
-    "chunks": 369,
-    "excerpt": "_Popular Edition_, _July_ 1910; _New Impressions_, _March_ 1912, _September_ 1912, _November_ 1913, _May_ 1915, _May_ 1916, _July_ 1917.",
-    "tags": [
-      "american literature",
-      "sea"
-    ]
+    slug: "vanity_fair_thackeray",
+    title: "Vanity Fair (Thackeray)",
+    author: "William Makepeace Thackeray",
+    genre: "english-literature",
+    genreLabel: "English Literature",
+    chunks: 4146,
+    excerpt: "\"Vamous,\" said Sir Pitt. \"Who'd ha' thought it! what a sly little devil! what a little fox it waws!\" he muttered to himself, chuckling with pleasure. \"Who'd have thought what?\" cries Miss Crawley, stamping with her foot. \"Pray, Miss Sharp, are you waiting for the Prince…",
+    tags: ["english-literature"],
   },
   {
-    "slug": "the_souls_of_black_folk",
-    "title": "The Souls of Black Folk",
-    "author": "W. E. B. (William Edward Burghardt) Du Bois",
-    "genre": "american-literature",
-    "genreLabel": "American Literature",
-    "chunks": 251,
-    "excerpt": "Herein lie buried many things which if read with patience may show the strange meaning of being black here at the dawning of the Twentieth Century. This meaning is not without interest to you, Gentle Reader; for the problem of the Twentieth Century is the problem of the color",
-    "tags": [
-      "american literature"
-    ]
+    slug: "wuthering_heights",
+    title: "Wuthering Heights",
+    author: "Emily Brontë",
+    genre: "english-literature",
+    genreLabel: "English Literature",
+    chunks: 1588,
+    excerpt: "His childhood’s sense of superiority, instilled into him by the favours of old Mr. Earnshaw, was faded away. He struggled long to keep up an equality with Catherine in her studies, and yielded with poignant though silent regret: but he yielded completely; and there was no…",
+    tags: ["english-literature"],
   },
   {
-    "slug": "the_star_treader_and_other_poems",
-    "title": "The Star-Treader, and other poems",
-    "author": "Clark Ashton Smith",
-    "genre": "american-literature",
-    "genreLabel": "American Literature",
-    "chunks": 46,
-    "excerpt": "This Rome, that was the toil of many men, Fulfilment's crown to visions of the dead, Of wandering will, and wastage of the strong To all the years behind, and years to be.",
-    "tags": [
-      "american literature"
-    ]
+    slug: "around_the_world_in_eighty_days_verne",
+    title: "Around the World in Eighty Days (Verne)",
+    author: "Jules Verne",
+    genre: "french-literature",
+    genreLabel: "French Literature",
+    chunks: 887,
+    excerpt: "It happened to be the day of a Parsee festival. These descendants of the sect of Zoroaster—the most thrifty, civilised, intelligent, and austere of the East Indians, among whom are counted the richest native merchants of Bombay—were celebrating a sort of religious carnival,…",
+    tags: ["french-literature"],
   },
   {
-    "slug": "the_yellow_wallpaper",
-    "title": "The Yellow Wallpaper",
-    "author": "Charlotte Perkins Gilman",
-    "genre": "american-literature",
-    "genreLabel": "American Literature",
-    "chunks": 32,
-    "excerpt": "It is very seldom that mere ordinary people like John and myself secure ancestral halls for the summer. A colonial mansion, a hereditary estate, I would say a haunted house, and reach the height of romantic felicity—but that would be asking too much of fate!",
-    "tags": [
-      "american literature",
-      "horror",
-      "other"
-    ]
+    slug: "candide",
+    title: "Candide",
+    author: "Voltaire",
+    genre: "french-literature",
+    genreLabel: "French Literature",
+    chunks: 486,
+    excerpt: "In three months time, having lost all his money, and being grown tired of my company, he sold me to a Jew, named Don Issachar, who traded to Holland and Portugal, and had a strong passion for women. This Jew was much attached to my person, but could not triumph over it; I…",
+    tags: ["french-literature"],
   },
   {
-    "slug": "uncle_toms_cabin",
-    "title": "Uncle Toms Cabin",
-    "author": "Harriet Beecher Stowe",
-    "genre": "american-literature",
-    "genreLabel": "American Literature",
-    "chunks": 648,
-    "excerpt": "Eliza comes to tell Uncle Tom that he is sold, and that she is LITTLE EVA READING THE BIBLE TO UNCLE TOM IN THE ARBOR. CASSY MINISTERING TO UNCLE TOM AFTER HIS WHIPPING.",
-    "tags": [
-      "american literature"
-    ]
+    slug: "from_the_earth_to_the_moon_verne",
+    title: "From the Earth to the Moon (Verne)",
+    author: "Jules Verne",
+    genre: "french-literature",
+    genreLabel: "French Literature",
+    chunks: 1265,
+    excerpt: "Russia paid in as her contingent the enormous sum of 368,733 roubles. No one need be surprised at this, who bears in mind the scientific taste of the Russians, and the impetus which they have given to astronomical studies—thanks to their numerous observatories. France began…",
+    tags: ["french-literature"],
   },
   {
-    "slug": "walden",
-    "title": "Walden",
-    "author": "Henry David Thoreau",
-    "genre": "american-literature",
-    "genreLabel": "American Literature",
-    "chunks": 380,
-    "excerpt": "I went to the woods because I wished to live deliberately, to front only the essential facts of life, and see if I could not learn what it had to teach, and not, when I came to die, discover that I had not lived.",
-    "tags": [
-      "american literature",
-      "nature"
-    ]
+    slug: "germinal",
+    title: "Germinal",
+    author: "Émile Zola",
+    genre: "french-literature",
+    genreLabel: "French Literature",
+    chunks: 2381,
+    excerpt: "For a moment the schoolmaster's pale head was also seen behind the school-house hedge. Among the gardens, the man who was digging stood with one foot on his spade, and with rounded eyes. And the murmur of gossiping gradually increased, with a sound of rattles, like a gust of…",
+    tags: ["french-literature"],
   },
   {
-    "slug": "white_fang",
-    "title": "White Fang",
-    "author": "Jack London",
-    "genre": "american-literature",
-    "genreLabel": "American Literature",
-    "chunks": 251,
-    "excerpt": "Dark spruce forest frowned on either side the frozen waterway. The trees had been stripped by a recent wind of their white covering of frost, and they seemed to lean towards each other, black and ominous, in the fading light. A vast silence reigned over the land. The land itself was a desolation, lifeless, without movement, so lone and cold that the spirit of it was not…",
-    "tags": [
-      "american literature"
-    ]
+    slug: "journey_to_the_center_of_the_earth_verne",
+    title: "Journey to the Center of the Earth (Verne)",
+    author: "Jules Verne",
+    genre: "french-literature",
+    genreLabel: "French Literature",
+    chunks: 998,
+    excerpt: "\"I shall be dizzy,\" I said. \"The more reason why we should go up; we must get used to it.\" \"But--\" \"Come, I tell you; don't waste our time.\" I had to obey. A keeper who lived at the other end of the street handed us the key, and the ascent began. My uncle went ahead with a…",
+    tags: ["french-literature"],
   },
   {
-    "slug": "anna_karenina",
-    "title": "Anna Karenina",
-    "author": "Leo, graf Tolstoy",
-    "genre": "russian-literature",
-    "genreLabel": "Russian Literature",
-    "chunks": 1255,
-    "excerpt": "Everything was in confusion in the Oblonskys’ house. The wife had discovered that the husband was carrying on an intrigue with a French girl, who had been a governess in their family, and she had announced to her husband that she could not go on living in the same house with him. This position of affairs had now lasted three days, and not only the husband and wife…",
-    "tags": [
-      "russian literature",
-      "love"
-    ]
+    slug: "les_miserables",
+    title: "Les Miserables",
+    author: "Victor Hugo",
+    genre: "french-literature",
+    genreLabel: "French Literature",
+    chunks: 7636,
+    excerpt: "When you are reasonable, I will bring her to you myself.” The poor mother bowed her head. “I beg your pardon, doctor, I really beg your pardon. Formerly I should never have spoken as I have just done; so many misfortunes have happened to me, that I sometimes do not know what…",
+    tags: ["french-literature"],
   },
   {
-    "slug": "childhood_boyhood_youth",
-    "title": "Childhood, Boyhood, Youth",
-    "author": "Leo, graf Tolstoy",
-    "genre": "russian-literature",
-    "genreLabel": "Russian Literature",
-    "chunks": 101,
-    "excerpt": "Again two carriages stood at the front door of the house at Petrovskoe. In one of them sat Mimi, the two girls, and their maid, with the bailiff, Jakoff, on the box, while in the other—a _britchka_—sat Woloda, myself, and our servant Vassili. Papa, who was to follow us to Moscow in a few days, was standing bareheaded on the entrance-steps. He made the sign of the cross at…",
-    "tags": [
-      "russian literature"
-    ]
+    slug: "madame_bovary",
+    title: "Madame Bovary",
+    author: "Gustave Flaubert",
+    genre: "french-literature",
+    genreLabel: "French Literature",
+    chunks: 1583,
+    excerpt: "Then he wrote to the chemist of the place to ask the number of the population, the distance from the nearest doctor, what his predecessor had made a year, and so forth; and the answer being satisfactory, he made up his mind to move towards the spring, if Emma’s health did not…",
+    tags: ["french-literature"],
   },
   {
-    "slug": "crime_and_punishment",
-    "title": "Crime and Punishment",
-    "author": "Fyodor Dostoyevsky",
-    "genre": "russian-literature",
-    "genreLabel": "Russian Literature",
-    "chunks": 1100,
-    "excerpt": "On an exceptionally hot evening early in July a young man came out of the garret in which he lodged in S. Place and walked slowly, as though in hesitation, towards K. bridge.",
-    "tags": [
-      "russian literature",
-      "suffering",
-      "soul"
-    ]
+    slug: "nana_zola",
+    title: "Nana (Zola)",
+    author: "Émile Zola",
+    genre: "french-literature",
+    genreLabel: "French Literature",
+    chunks: 2062,
+    excerpt: "Dans ces cas-là, par exemple, il se mettait en travers. Et, les mains belles, un diamant au petit doigt, il achevait un filet de chevreuil. D'ailleurs, la conversation sur les enfants continuait. La Faloise, empli de trouble par le voisinage de Gaga, lui demandait des…",
+    tags: ["french-literature"],
   },
   {
-    "slug": "dead_souls",
-    "title": "Dead Souls",
-    "author": "Nikolai Vasilevich Gogol",
-    "genre": "russian-literature",
-    "genreLabel": "Russian Literature",
-    "chunks": 514,
-    "excerpt": "Nikolai Vasilievich Gogol, born at Sorochintsky, Russia, on 31st March 1809. Obtained government post at St. Petersburg and later an appointment at the university. Lived in Rome from 1836 to 1848. Died on",
-    "tags": [
-      "russian literature"
-    ]
+    slug: "the_count_of_monte_cristo",
+    title: "The Count of Monte Cristo",
+    author: "Auguste Maquet",
+    genre: "french-literature",
+    genreLabel: "French Literature",
+    chunks: 5744,
+    excerpt: "But you tell me he is no more, and therefore can have nothing to do with hatred or revenge, so let all such feeling be buried with him.” “You prefer, then,” said the abbé, “that I should bestow on men you say are false and treacherous, the reward intended for faithful…",
+    tags: ["french-literature"],
   },
   {
-    "slug": "fathers_and_sons",
-    "title": "Fathers and Sons",
-    "author": "Ivan Sergeevich Turgenev",
-    "genre": "russian-literature",
-    "genreLabel": "Russian Literature",
-    "chunks": 268,
-    "excerpt": "Images of the original pages are available through Internet Archive/American Libraries. See http://www.archive.org/details/harvardclassicss19elio",
-    "tags": [
-      "russian literature"
-    ]
+    slug: "the_hunchback_of_notre_dame_hugo",
+    title: "The Hunchback of Notre-Dame (Hugo)",
+    author: "Victor Hugo",
+    genre: "french-literature",
+    genreLabel: "French Literature",
+    chunks: 2517,
+    excerpt: "Was it not Louis XIV., fulfilling the request of Louis XIII.? And who put the cold, white panes in the place of those windows, “high in color,” which caused the astonished eyes of our fathers to hesitate between the rose of the grand portal and the arches of the apse? And…",
+    tags: ["french-literature"],
   },
   {
-    "slug": "notes_from_underground",
-    "title": "Notes from Underground",
-    "author": "Fyodor Dostoyevsky",
-    "genre": "russian-literature",
-    "genreLabel": "Russian Literature",
-    "chunks": 152,
-    "excerpt": "* The author of the diary and the diary itself are, of course, imaginary. Nevertheless it is clear that such persons as the writer of these notes not only may, but positively must, exist in our society, when we consider the circumstances in the midst of which our society is formed. I have tried to expose to the view of the public more distinctly than is commonly done, one…",
-    "tags": [
-      "russian literature",
-      "suffering",
-      "soul"
-    ]
-  }
+    slug: "the_three_musketeers",
+    title: "The Three Musketeers",
+    author: "Auguste Maquet",
+    genre: "french-literature",
+    genreLabel: "French Literature",
+    chunks: 2988,
+    excerpt: "D’Artagnan resolved to try and enter the Louvre. His costume of Guardsman in the company of M. Dessessart ought to be his passport. He therefore went down the Rue des Petits Augustins, and came up to the quay, in order to take the New Bridge. He had at first an idea of…",
+    tags: ["french-literature"],
+  },
 ];

@@ -2,531 +2,433 @@ import type { Book } from "./catalogTypes";
 
 export const BOOKS_PART1: Book[] = [
   {
-    "slug": "a_pickle_for_the_knowing_ones",
-    "title": "A Pickle for the Knowing Ones",
-    "author": "Timothy Dexter",
-    "genre": "philosophy",
-    "genreLabel": "Philosophy",
-    "chunks": 42,
-    "excerpt": "Timothy Dexter, the author of the following curious and unique production, entitled \"_A Pickle for the Knowing Ones_,\" which is here re-printed verbatim et spellatim from the original edition, was born in Malden, January 22, 1747. Having served an apprenticeship with a leather dresser, he commenced business in Newburyport shortly after he was one and twenty, and being…",
-    "tags": [
-      "philosophy"
-    ]
+    slug: "adventures_of_huckleberry_finn",
+    title: "Adventures of Huckleberry Finn",
+    author: "Mark Twain",
+    genre: "american-literature",
+    genreLabel: "American Literature",
+    chunks: 1362,
+    excerpt: "Does three hundred dollars lay around every day for people to pick up? Some folks think the nigger ain’t far from here. I’m one of them—but I hain’t talked it around. A few days ago I was talking with an old couple that lives next door in the log shanty, and they happened to…",
+    tags: ["american-literature"],
   },
   {
-    "slug": "a_vindication_of_the_rights_of_woman",
-    "title": "A Vindication of the Rights of Woman",
-    "author": "Mary Wollstonecraft",
-    "genre": "philosophy",
-    "genreLabel": "Philosophy",
-    "chunks": 318,
-    "excerpt": "WOMEN GENERATES; WITH CONCLUDING REFLECTIONS ON THE MORAL IMPROVEMENT THAT A REVOLUTION IN FEMALE MANNERS MAY NATURALLY BE",
-    "tags": [
-      "philosophy",
-      "freedom"
-    ]
+    slug: "ebony_and_crystal_poems_in_verse_and_prose",
+    title: "Ebony and Crystal: Poems in Verse and Prose",
+    author: "Clark Ashton Smith",
+    genre: "american-literature",
+    genreLabel: "American Literature",
+    chunks: 388,
+    excerpt: "Desolate oceans, and the light of lonely plains, Dead moons that wander in the wastes of ice and snow— These, these I fain would see, and find the splendid bourne Of sunset, or the brazen deserts of the morn, That I might lose this ever-aching loneliness In vaster solitude;…",
+    tags: ["american-literature"],
   },
   {
-    "slug": "apology",
-    "title": "Apology",
-    "author": "Plato",
-    "genre": "philosophy",
-    "genreLabel": "Philosophy",
-    "chunks": 54,
-    "excerpt": "In what relation the “Apology” of Plato stands to the real defence of Socrates, there are no means of determining. It certainly agrees in tone and character with the description of Xenophon, who says in the “Memorabilia” that Socrates might have been acquitted “if in any moderate degree he would have conciliated the favour of the dicasts;” and who informs us in another…",
-    "tags": [
-      "philosophy"
-    ]
+    slug: "leaves_of_grass",
+    title: "Leaves of Grass",
+    author: "Walt Whitman",
+    genre: "american-literature",
+    genreLabel: "American Literature",
+    chunks: 1346,
+    excerpt: "To have the gag remov’d from one’s mouth! To have the feeling to-day or any day I am sufficient as I am. O something unprov’d! something in a trance! To escape utterly from others’ anchors and holds! To drive free! to love free! to dash reckless and dangerous! To court…",
+    tags: ["american-literature"],
   },
   {
-    "slug": "beyond_good_and_evil",
-    "title": "Beyond Good and Evil",
-    "author": "Friedrich Wilhelm Nietzsche",
-    "genre": "philosophy",
-    "genreLabel": "Philosophy",
-    "chunks": 238,
-    "excerpt": "The following is a reprint of the Helen Zimmern translation from German into English of \"Beyond Good and Evil,\" as published in The Complete Works of Friedrich Nietzsche (1909-1913). Some adaptations from the original text were made to format it into an e-text. Italics in the original book are capitalized in this e-text, except for most foreign language phrases that were…",
-    "tags": [
-      "philosophy"
-    ]
+    slug: "moby_dick",
+    title: "Moby Dick",
+    author: "Herman Melville",
+    genre: "american-literature",
+    genreLabel: "American Literature",
+    chunks: 2922,
+    excerpt: "And who composed the first narrative of a whaling-voyage? Who, but no less a prince than Alfred the Great, who, with his own royal pen, took down the words from Other, the Norwegian whale-hunter of those times! And who pronounced our glowing eulogy in Parliament? Who, but…",
+    tags: ["american-literature"],
   },
   {
-    "slug": "common_sense",
-    "title": "Common Sense",
-    "author": "Thomas Paine",
-    "genre": "philosophy",
-    "genreLabel": "Philosophy",
-    "chunks": 79,
-    "excerpt": "Of the Origin and Design of Government in general, with concise Remarks on the English Constitution. Thoughts on the present State of American Affairs Of the present Ability of America, with some",
-    "tags": [
-      "philosophy"
-    ]
+    slug: "my_antonia_cather",
+    title: "My Antonia (Cather)",
+    author: "Willa Cather",
+    genre: "american-literature",
+    genreLabel: "American Literature",
+    chunks: 1038,
+    excerpt: "When the triplets were taken ashore at New York, he had, as he said, ‘to carry some of them.’ The trip to Chicago was even worse than the ocean voyage. On the train it was very difficult to get milk for the babies and to keep their bottles clean. The mother did her best, but…",
+    tags: ["american-literature"],
   },
   {
-    "slug": "critique_of_pure_reason",
-    "title": "Critique of Pure Reason",
-    "author": "Immanuel Kant",
-    "genre": "philosophy",
-    "genreLabel": "Philosophy",
-    "chunks": 795,
-    "excerpt": "The Principle of the Synthetical Unity of Apperception is the highest Principle of all exercise of the Understanding. § 13",
-    "tags": [
-      "philosophy"
-    ]
+    slug: "o_pioneers_cather",
+    title: "O Pioneers! (Cather)",
+    author: "Willa Cather",
+    genre: "american-literature",
+    genreLabel: "American Literature",
+    chunks: 718,
+    excerpt: "Linstrum. They couldn’t get ahead even in good years, and they all got into debt while father was getting out. I think we ought to hold on as long as we can on father’s account. He was so set on keeping this land. He must have seen harder times than this, here. How was it in…",
+    tags: ["american-literature"],
   },
   {
-    "slug": "discourse_on_the_method_of_rightly_conducting_ones_reason_an",
-    "title": "Discourse on the Method of Rightly Conducting One's Reason and of Seeking Truth in the Sciences",
-    "author": "René Descartes",
-    "genre": "philosophy",
-    "genreLabel": "Philosophy",
-    "chunks": 80,
-    "excerpt": "If this Discourse appear too long to be read at once, it may be divided into six Parts: and, in the first, will be found various considerations touching the Sciences; in the second, the principal rules of the Method which the Author has discovered, in the third, certain of the rules of Morals which he has deduced from this Method; in the fourth, the reasonings by which he…",
-    "tags": [
-      "philosophy"
-    ]
+    slug: "tales_of_mystery_and_imagination_poe",
+    title: "Tales of Mystery and Imagination (Poe)",
+    author: "Edgar Allan Poe",
+    genre: "american-literature",
+    genreLabel: "American Literature",
+    chunks: 1262,
+    excerpt: "Thus I found that my senses would shortly give way altogether, and I had already clutched one of the valve ropes with the view of attempting a descent, when the recollection of the trick I had played the three creditors, and the possible consequences to myself, should I…",
+    tags: ["american-literature"],
   },
   {
-    "slug": "ecce_homo",
-    "title": "Ecce Homo",
-    "author": "Friedrich Wilhelm Nietzsche",
-    "genre": "philosophy",
-    "genreLabel": "Philosophy",
-    "chunks": 169,
-    "excerpt": "_Ecce Homo_ is the last prose work that Nietzsche wrote. It is true that the pamphlet _Nietzsche contra Wagner_ was prepared a month later than the Autobiography; but we cannot consider this pamphlet as anything more than a compilation, seeing that it consists entirely of aphorisms drawn from such previous works as _Joyful Wisdom, Beyond Good and Evil, The Genealogy of…",
-    "tags": [
-      "philosophy"
-    ]
+    slug: "the_age_of_innocence_wharton",
+    title: "The Age of Innocence (Wharton)",
+    author: "Edith Wharton",
+    genre: "american-literature",
+    genreLabel: "American Literature",
+    chunks: 1409,
+    excerpt: "He tried to analyse the trick, to find a clue to it in the way the chairs and tables were grouped, in the fact that only two Jacqueminot roses (of which nobody ever bought less than a dozen) had been placed in the slender vase at his elbow, and in the vague pervading perfume…",
+    tags: ["american-literature"],
   },
   {
-    "slug": "essays_first_and_second_series",
-    "title": "Essays — First and Second Series",
-    "author": "Ralph Waldo Emerson",
-    "genre": "philosophy",
-    "genreLabel": "Philosophy",
-    "chunks": 258,
-    "excerpt": "There is one mind common to all individual men. Every man is an inlet to the same and to all of the same. He that is once admitted to the right of reason is made a freeman of the whole estate. What Plato has thought, he may think; what a saint has felt, he may feel; what at any time has befallen any man, he can understand. Who hath access to this universal mind is a party…",
-    "tags": [
-      "philosophy"
-    ]
+    slug: "the_awakening_chopin",
+    title: "The Awakening (Chopin)",
+    author: "Kate Chopin",
+    genre: "american-literature",
+    genreLabel: "American Literature",
+    chunks: 858,
+    excerpt: "Perhaps he will never wholly release her from the spell. Perhaps she will never again suffer a poor, unworthy earthling to walk in the shadow of her divine presence.” “Don’t banter me,” she said, wounded at what appeared to be his flippancy. He did not mind the entreaty, but…",
+    tags: ["american-literature"],
   },
   {
-    "slug": "groundwork_of_the_metaphysics_of_morals",
-    "title": "Groundwork of the Metaphysics of Morals",
-    "author": "Immanuel Kant",
-    "genre": "philosophy",
-    "genreLabel": "Philosophy",
-    "chunks": 110,
-    "excerpt": "Ancient Greek philosophy was divided into three sciences: physics, ethics, and logic. This division is perfectly suitable to the nature of the thing; and the only improvement that can be made in it is to add the principle on which it is based, so that we may both satisfy ourselves of its completeness, and also be able to determine correctly",
-    "tags": [
-      "philosophy"
-    ]
+    slug: "the_call_of_the_wild",
+    title: "The Call of the Wild",
+    author: "Jack London",
+    genre: "american-literature",
+    genreLabel: "American Literature",
+    chunks: 417,
+    excerpt: "They made good time down the chain of lakes which fills the craters of extinct volcanoes, and late that night pulled into the huge camp at the head of Lake Bennett, where thousands of goldseekers were building boats against the break-up of the ice in the spring. Buck made his…",
+    tags: ["american-literature"],
   },
   {
-    "slug": "hegels_lectures_on_the_history_of_philosophy_volume_3",
-    "title": "Hegel's Lectures on the History of Philosophy: Volume 3",
-    "author": "Georg Wilhelm Friedrich Hegel",
-    "genre": "philosophy",
-    "genreLabel": "Philosophy",
-    "chunks": 722,
-    "excerpt": "1. The Building up of Dogmas on Metaphysical Grounds 61 _a._ Anselm 61 _b._ Abelard 67",
-    "tags": [
-      "philosophy"
-    ]
+    slug: "the_house_of_mirth_wharton",
+    title: "The House of Mirth (Wharton)",
+    author: "Edith Wharton",
+    genre: "american-literature",
+    genreLabel: "American Literature",
+    chunks: 1788,
+    excerpt: "But perhaps it’s rather that I never had any choice. There was no one, I mean, to tell me about the republic of the spirit.” “There never is—it’s a country one has to find the way to one’s self.” “But I should never have found my way there if you hadn’t told me.” “Ah, there…",
+    tags: ["american-literature"],
   },
   {
-    "slug": "leviathan",
-    "title": "Leviathan",
-    "author": "Thomas Hobbes",
-    "genre": "philosophy",
-    "genreLabel": "Philosophy",
-    "chunks": 756,
-    "excerpt": "This E-text was prepared from the Pelican Classics edition of Leviathan, which in turn was prepared from the first edition. I have tried to follow as closely as possible the original, and to give the flavour of the text that Hobbes himself proof-read, but the following differences",
-    "tags": [
-      "philosophy",
-      "state"
-    ]
+    slug: "the_jungle_sinclair",
+    title: "The Jungle (Sinclair)",
+    author: "Upton Sinclair",
+    genre: "american-literature",
+    genreLabel: "American Literature",
+    chunks: 1953,
+    excerpt: "He had gone all to ruin with the drink, however, and lost his power; one of his sons, who was a good man, had kept him and the family up for a year or two, but then he had got sick with consumption. That was another thing, Grandmother Majauszkiene interrupted herself—this…",
+    tags: ["american-literature"],
   },
   {
-    "slug": "meditations",
-    "title": "Meditations",
-    "author": "Emperor of Rome Marcus Aurelius",
-    "genre": "philosophy",
-    "genreLabel": "Philosophy",
-    "chunks": 220,
-    "excerpt": "You have power over your mind — not outside events. Realize this, and you will find strength. The universe is change; our life is what our thoughts make it.",
-    "tags": [
-      "philosophy",
-      "stoic"
-    ]
+    slug: "the_legend_of_sleepy_hollow_irving",
+    title: "The Legend of Sleepy Hollow (Irving)",
+    author: "Washington Irving",
+    genre: "american-literature",
+    genreLabel: "American Literature",
+    chunks: 177,
+    excerpt: "Thus, by divers little makeshifts, in that ingenious way which is commonly denominated “by hook and by crook,” the worthy pedagogue got on tolerably enough, and was thought, by all who understood nothing of the labor of headwork, to have a wonderfully easy life of it.",
+    tags: ["american-literature"],
   },
   {
-    "slug": "nicomachean_ethics",
-    "title": "Nicomachean Ethics",
-    "author": "Aristotle",
-    "genre": "philosophy",
-    "genreLabel": "Philosophy",
-    "chunks": 400,
-    "excerpt": "The _Ethics_ of Aristotle is one half of a single treatise of which his _Politics_ is the other half. Both deal with one and the same subject. This subject is what Aristotle calls in one place the “philosophy of human affairs;” but more frequently Political or Social Science. In the two works taken together we have their author’s whole theory of human conduct or practical…",
-    "tags": [
-      "philosophy"
-    ]
+    slug: "the_raven_and_other_poems_poe",
+    title: "The Raven and Other Poems (Poe)",
+    author: "Edgar Allan Poe",
+    genre: "american-literature",
+    genreLabel: "American Literature",
+    chunks: 102,
+    excerpt: "One by one they sound, like the chiming of the brazen and ebony clock, in \"The Masque of the Red Death,\" which made the waltzers pause with \"disconcert and tremulousness and meditation,\" as often as the hour came round. Of all these mystical cadences, the plaint of _The…",
+    tags: ["american-literature"],
   },
   {
-    "slug": "on_liberty",
-    "title": "On Liberty",
-    "author": "John Stuart Mill",
-    "genre": "philosophy",
-    "genreLabel": "Philosophy",
-    "chunks": 192,
-    "excerpt": "The subject of this Essay is not the so-called Liberty of the Will, so unfortunately opposed to the misnamed doctrine of Philosophical Necessity; but Civil, or Social Liberty: the nature and limits of the power which can be legitimately exercised by society over the individual.",
-    "tags": [
-      "philosophy",
-      "freedom"
-    ]
+    slug: "the_red_badge_of_courage",
+    title: "The Red Badge of Courage",
+    author: "Stephen Crane",
+    genre: "american-literature",
+    genreLabel: "American Literature",
+    chunks: 603,
+    excerpt: "The strain of present circumstances he felt to be intolerable. The philosophical tall soldier measured a sandwich of cracker and pork and swallowed it in a nonchalant manner. “Oh, I suppose we must go reconnoitering around the country jest to keep ’em from getting too close,…",
+    tags: ["american-literature"],
   },
   {
-    "slug": "on_the_duty_of_civil_disobedience",
-    "title": "On the Duty of Civil Disobedience",
-    "author": "Henry David Thoreau",
-    "genre": "philosophy",
-    "genreLabel": "Philosophy",
-    "chunks": 32,
-    "excerpt": "I heartily accept the motto,—“That government is best which governs least;” and I should like to see it acted up to more rapidly and systematically. Carried out, it finally amounts to this, which also I believe—“That government is best which governs not at all;” and when men are prepared for it, that will be the kind of government which they will have. Government is at best…",
-    "tags": [
-      "philosophy",
-      "freedom"
-    ]
+    slug: "the_scarlet_letter",
+    title: "The Scarlet Letter",
+    author: "Nathaniel Hawthorne",
+    genre: "american-literature",
+    genreLabel: "American Literature",
+    chunks: 1219,
+    excerpt: "Madame Hester would have winced at that, I warrant me. But she—the naughty baggage—little will she care what they put upon the bodice of her gown!",
+    tags: ["american-literature"],
   },
   {
-    "slug": "phaedo",
-    "title": "Phaedo",
-    "author": "Plato",
-    "genre": "philosophy",
-    "genreLabel": "Philosophy",
-    "chunks": 146,
-    "excerpt": "After an interval of some months or years, and at Phlius, a town of Peloponnesus, the tale of the last hours of Socrates is narrated to Echecrates and other Phliasians by Phaedo the 'beloved disciple.' The Dialogue necessarily takes the form of a narrative, because Socrates has to be described acting as well as speaking. The minutest particulars of the event are interesting…",
-    "tags": [
-      "philosophy"
-    ]
+    slug: "the_sea_wolf",
+    title: "The Sea-Wolf",
+    author: "Jack London",
+    genre: "american-literature",
+    genreLabel: "American Literature",
+    chunks: 1382,
+    excerpt: "And ever out of the north-east the brave wind blows, driving us on our course two hundred and fifty miles between the dawns. It saddens me and gladdens me, the gait with which we are leaving San Francisco behind and with which we are foaming down upon the tropics. Each day…",
+    tags: ["american-literature"],
   },
   {
-    "slug": "plutarchs_morals",
-    "title": "Plutarch's Morals",
-    "author": "Plutarch",
-    "genre": "philosophy",
-    "genreLabel": "Philosophy",
-    "chunks": 568,
-    "excerpt": "Plutarch, who was born at Chaeronea in Boeotia, probably about A.D. 50, and was a contemporary of Tacitus and Pliny, has written two works still extant, the well-known _Lives_, and the less-known _Moralia_. The _Lives_ have often been translated, and have always been a popular work. Great indeed was their power at the period of the French Revolution. The _Moralia_, on the…",
-    "tags": [
-      "philosophy"
-    ]
+    slug: "the_souls_of_black_folk_du_bois",
+    title: "The Souls of Black Folk (Du Bois)",
+    author: "W. E. B. (William Edward Burghardt) Du Bois",
+    genre: "american-literature",
+    genreLabel: "American Literature",
+    chunks: 973,
+    excerpt: "Naturally the Negroes resented, at first bitterly, signs of compromise which surrendered their civil and political rights, even though this was to be exchanged for larger chances of economic development. The rich and dominating North, however, was not only weary of the race…",
+    tags: ["american-literature"],
   },
   {
-    "slug": "poetics",
-    "title": "Poetics",
-    "author": "Aristotle",
-    "genre": "philosophy",
-    "genreLabel": "Philosophy",
-    "chunks": 54,
-    "excerpt": "I 'Imitation' the common principle of the Arts of Poetry. IV The Origin and Development of Poetry. V Definition of the Ludicrous, and a brief sketch of the rise of X (Plot continued.) Definitions of Simple and Complex Plots. XI (Plot continued.) Reversal of the Situation, Recognition, and Tragic or disastrous Incident defined and explained. XII The 'quantitative parts' of…",
-    "tags": [
-      "philosophy"
-    ]
+    slug: "the_star_treader_and_other_poems",
+    title: "The Star-Treader, and other poems",
+    author: "Clark Ashton Smith",
+    genre: "american-literature",
+    genreLabel: "American Literature",
+    chunks: 202,
+    excerpt: "What spheres that now essay Time's undimensioned vast, Shall plunge forgotten to thy gloom at length, With life that cried its query of the Night To ears with silence filled! What worlds unborn shall dare thy strength, Girt by a sun's unwearied might, And dip to darkness when…",
+    tags: ["american-literature"],
   },
   {
-    "slug": "politics",
-    "title": "Politics",
-    "author": "Aristotle",
-    "genre": "philosophy",
-    "genreLabel": "Philosophy",
-    "chunks": 358,
-    "excerpt": "The Politics of Aristotle is the second part of a treatise of which the Ethics is the first part. It looks back to the Ethics as the Ethics looks forward to the Politics. For Aristotle did not separate, as we are inclined to do, the spheres of the statesman and the moralist. In the Ethics he has described the character necessary for the good life, but that life is for him…",
-    "tags": [
-      "philosophy",
-      "state"
-    ]
+    slug: "the_yellow_wallpaper",
+    title: "The Yellow Wallpaper",
+    author: "Charlotte Perkins Gilman",
+    genre: "american-literature",
+    genreLabel: "American Literature",
+    chunks: 77,
+    excerpt: "He said we came here solely on my account, that I was to have perfect rest and all the air I could get. “Your exercise depends on your strength, my dear,” said he, “and your food somewhat on your appetite; but air you can absorb all the time.” So we took the nursery, at the…",
+    tags: ["american-literature"],
   },
   {
-    "slug": "second_treatise_of_government",
-    "title": "Second Treatise of Government",
-    "author": "John Locke",
-    "genre": "philosophy",
-    "genreLabel": "Philosophy",
-    "chunks": 196,
-    "excerpt": "REPRINTED, THE SIXTH TIME, BY A. MILLAR, H. WOODFALL, 1. WHISTON AND B. WHITE, 1. RIVINGTON, L. DAVIS AND C. REYMERS, R. BALDWIN, HAWES CLARKE AND COLLINS; W. IOHNSTON, W. OWEN, 1. RICHARDSON, S. CROWDER, T. LONGMAN, B. LAW, C. RIVINGTON, E. DILLY, R. WITHY, C. AND R. WARE, S. BAKER, T. PAYNE, A. SHUCKBURGH, 1. HINXMAN",
-    "tags": [
-      "philosophy"
-    ]
+    slug: "uncle_toms_cabin",
+    title: "Uncle Toms Cabin",
+    author: "Harriet Beecher Stowe",
+    genre: "american-literature",
+    genreLabel: "American Literature",
+    chunks: 2416,
+    excerpt: "It took no inconsiderable perseverance to arouse the inmates; but at last the respectable proprietor appeared, and undid the door. He was a great, tall, bristling Orson of a fellow, full six feet and some inches in his stockings, and arrayed in a red flannel hunting-shirt. A…",
+    tags: ["american-literature"],
   },
   {
-    "slug": "the_art_of_war",
-    "title": "The Art of War",
-    "author": "active 6th century B.C. Sunzi",
-    "genre": "philosophy",
-    "genreLabel": "Philosophy",
-    "chunks": 197,
-    "excerpt": "Sun Tzu said: The art of war is of vital importance to the State. It is a matter of life and death, a road either to safety or to ruin. Hence it is a subject of inquiry which can on no account be neglected.",
-    "tags": [
-      "philosophy",
-      "war"
-    ]
+    slug: "walden",
+    title: "Walden",
+    author: "Henry David Thoreau",
+    genre: "american-literature",
+    genreLabel: "American Literature",
+    chunks: 1522,
+    excerpt: "There are those who have used all their arts to persuade me to undertake the support of some poor family in the town; and if I had nothing to do,—for the devil finds employment for the idle,—I might try my hand at some such pastime as that.",
+    tags: ["american-literature"],
   },
   {
-    "slug": "the_birth_of_tragedy_or_hellenism_and_pessimism",
-    "title": "The Birth of Tragedy; or, Hellenism and Pessimism",
-    "author": "Friedrich Wilhelm Nietzsche",
-    "genre": "philosophy",
-    "genreLabel": "Philosophy",
-    "chunks": 205,
-    "excerpt": "Frederick Nietzsche was born at Röcken near Lützen, in the Prussian province of Saxony, on the 15th of October 1844, at 10 a.m. The day happened to be the anniversary of the birth of Frederick-William IV., then King of Prussia, and the peal of the local church-bells which was intended to celebrate this event, was, by a happy coincidence, just timed to greet my brother on…",
-    "tags": [
-      "philosophy"
-    ]
+    slug: "white_fang_london",
+    title: "White Fang (London)",
+    author: "Jack London",
+    genre: "american-literature",
+    genreLabel: "American Literature",
+    chunks: 937,
+    excerpt: "He could resist the call of the world no longer. Besides, he was hungry. He crawled over to his mate and tried to persuade her to get up. But she only snarled at him, and he walked out alone into the bright sunshine to find the snow-surface soft under foot and the travelling…",
+    tags: ["american-literature"],
   },
   {
-    "slug": "the_city_of_god_volume_i",
-    "title": "The City of God, Volume I",
-    "author": "of Hippo, Saint Augustine",
-    "genre": "philosophy",
-    "genreLabel": "Philosophy",
-    "chunks": 813,
-    "excerpt": "Of the following Work, Books IV. XVII. and XVIII. have been translated by the Rev. GEORGE WILSON, Glenluce; Books V. VI. VII. and",
-    "tags": [
-      "philosophy"
-    ]
+    slug: "a_selection_from_the_discourses_of_epictetus_with_the_enchei",
+    title: "A Selection from the Discourses of Epictetus with the Encheiridion",
+    author: "Epictetus",
+    genre: "ancient-classical",
+    genreLabel: "Ancient & Classical",
+    chunks: 791,
+    excerpt: "It is shameful for philosophers thus to contemplate the works of nature. For what is a master? Man is not the master of man; but death is, and life and pleasure and pain; for if he comes without these things, bring Cæsar to me and you will see how firm I am. But when he shall…",
+    tags: ["ancient-classical"],
   },
   {
-    "slug": "the_crown_of_wild_olive",
-    "title": "The Crown of Wild Olive",
-    "author": "John Ruskin",
-    "genre": "philosophy",
-    "genreLabel": "Philosophy",
-    "chunks": 1104,
-    "excerpt": "Twenty years ago, there was no lovelier piece of lowland scenery in South England, nor any more pathetic in the world, by its expression of sweet human character and life, than that immediately bordering on the sources of the Wandle, and including the lower moors of Addington, and the villages of Beddington and Carshalton, with all their pools and streams. No clearer or…",
-    "tags": [
-      "philosophy"
-    ]
+    slug: "histories_herodotus",
+    title: "Histories (Herodotus)",
+    author: "Herodotus",
+    genre: "ancient-classical",
+    genreLabel: "Ancient & Classical",
+    chunks: 1981,
+    excerpt: "For this reason then the Ionians also made for themselves twelve cities; for at any rate to say that these are any more Ionians than the other Ionians, or have at all a nobler descent, is mere folly, considering that a large part of them are Abantians from Euboea, who have no…",
+    tags: ["ancient-classical"],
   },
   {
-    "slug": "the_enchiridion",
-    "title": "The Enchiridion",
-    "author": "Epictetus",
-    "genre": "philosophy",
-    "genreLabel": "Philosophy",
-    "chunks": 42,
-    "excerpt": "The text of the second edition is a reprint of the first edition except for a few minor corrections in style, punctuation, and spelling, which have been revised to conform to current American usage.",
-    "tags": [
-      "philosophy",
-      "stoic"
-    ]
+    slug: "history_of_the_peloponnesian_war_thucydides",
+    title: "History of the Peloponnesian War (Thucydides)",
+    author: "Thucydides",
+    genre: "ancient-classical",
+    genreLabel: "Ancient & Classical",
+    chunks: 2965,
+    excerpt: "And it is only the Athenians, who, fearless of consequences, confer their benefits not from calculations of expediency, but in the confidence of liberality. “In short, I say that as a city we are the school of Hellas, while I doubt if the world can produce a man who, where he…",
+    tags: ["ancient-classical"],
   },
   {
-    "slug": "the_federalist_papers",
-    "title": "The Federalist Papers",
-    "author": "James Madison",
-    "genre": "philosophy",
-    "genreLabel": "Philosophy",
-    "chunks": 718,
-    "excerpt": "AFTER an unequivocal experience of the inefficacy of the subsisting federal government, you are called upon to deliberate on a new Constitution for the United States of America. The subject speaks its own importance; comprehending in its consequences nothing less than the existence of the UNION, the safety and welfare of the parts of which it is composed, the fate of an…",
-    "tags": [
-      "philosophy",
-      "state"
-    ]
+    slug: "medea_of_euripides",
+    title: "Medea of Euripides",
+    author: "Euripides",
+    genre: "ancient-classical",
+    genreLabel: "Ancient & Classical",
+    chunks: 275,
+    excerpt: "The feast hath filled them: all is well! _Others._ I heard a song, but it comes no more. Where the tears ran over: A keen cry but tired, tired: A woman's cry for her heart's desired, For a traitor's kiss and a lost lover. But a prayer, methinks, yet riseth sore To God, to…",
+    tags: ["ancient-classical"],
   },
   {
-    "slug": "the_kama_sutra_of_vatsyayana",
-    "title": "The Kama Sutra of Vatsyayana",
-    "author": "Vatsyayana",
-    "genre": "philosophy",
-    "genreLabel": "Philosophy",
-    "chunks": 206,
-    "excerpt": "In the literature of all countries there will be found a certain number of works treating especially of love. Everywhere the subject is dealt with differently, and from various points of view. In the present publication it is proposed to give a complete translation of what is considered the standard work on love in Sanscrit literature, and which is called the 'Vatsyayana…",
-    "tags": [
-      "philosophy"
-    ]
+    slug: "metamorphoses_ovid",
+    title: "Metamorphoses (Ovid)",
+    author: "Ovid",
+    genre: "ancient-classical",
+    genreLabel: "Ancient & Classical",
+    chunks: 1757,
+    excerpt: "Soon as the son of Clymene had arrived thither by an ascending path, and entered the house of his parent, {thus} doubted of; he immediately turned his steps to the presence of his father, and stood at a distance, for he could not bear the refulgence nearer. Arrayed in a…",
+    tags: ["ancient-classical"],
   },
   {
-    "slug": "the_lives_and_opinions_of_eminent_philosophers",
-    "title": "The Lives and Opinions of Eminent Philosophers",
-    "author": "Diogenes Laertius",
-    "genre": "philosophy",
-    "genreLabel": "Philosophy",
-    "chunks": 689,
-    "excerpt": "Diogenes, the author of the following work, was a native (as is generally believed) of Laërte, in Cilicia, from which circumstance he derived the cognomen of Laërtius. Little is known of him personally, nor is even the age in which he lived very clearly ascertained. But as Plutarch, Sextus Empiricus, and Saturninus are among the writers whom he quotes, he is generally…",
-    "tags": [
-      "philosophy"
-    ]
+    slug: "minor_dialogues_together_with_the_dialogue_on_clemency",
+    title: "Minor Dialogues, Together With the Dialogue on Clemency",
+    author: "Lucius Annaeus Seneca",
+    genre: "ancient-classical",
+    genreLabel: "Ancient & Classical",
+    chunks: 1976,
+    excerpt: "Now, no sane man is angry with nature: for what should we say if a man chose to be surprised that fruit did not hang on the thickets of a forest, or to wonder at bushes and thorns not being covered with some useful berry? No one is angry when nature excuses a defect.",
+    tags: ["ancient-classical"],
   },
   {
-    "slug": "the_origin_and_development_of_the_moral_ideas",
-    "title": "The origin and development of the moral ideas",
-    "author": "Edward Westermarck",
-    "genre": "philosophy",
-    "genreLabel": "Philosophy",
-    "chunks": 2522,
-    "excerpt": "THE frequent references made in the present work, on my own authority, to customs and ideas prevalent among the natives of Morocco, require a word of explanation. Seeing the close connection between moral opinions and magic and religious beliefs, I thought it might be useful for me to acquire first-hand knowledge of the folk-lore of some non-European people, and for various…",
-    "tags": [
-      "philosophy"
-    ]
+    slug: "oedipus_king_of_thebes",
+    title: "Oedipus King of Thebes",
+    author: "Sophocles",
+    genre: "ancient-classical",
+    genreLabel: "Ancient & Classical",
+    chunks: 243,
+    excerpt: "OEDIPUS. And what was that? One thing has often brought Others, could we but catch one little clue. CREON. 'Twas not one man, 'twas robbers--that he knew-- Who barred the road and slew him: a great band. OEDIPUS. Robbers?... What robber, save the work was planned By treason…",
+    tags: ["ancient-classical"],
   },
   {
-    "slug": "the_prince",
-    "title": "The Prince",
-    "author": "Niccolò Machiavelli",
-    "genre": "philosophy",
-    "genreLabel": "Philosophy",
-    "chunks": 176,
-    "excerpt": "All states, all powers, that have held and hold rule over men have been and are either republics or principalities. Principalities are either hereditary, in which the family has been long established; or they are new.",
-    "tags": [
-      "philosophy",
-      "state"
-    ]
+    slug: "on_the_nature_of_things_lucretius",
+    title: "On the Nature of Things (Lucretius)",
+    author: "Titus Lucretius Carus",
+    genre: "ancient-classical",
+    genreLabel: "Ancient & Classical",
+    chunks: 1019,
+    excerpt: "Lastly, whatso thou markest to disperse Upon the instant--smoke, and cloud, and flame-- Must not (even though not all of smooth and round) Be yet co-linked with atoms intertwined, That thus they can, without together cleaving, So pierce our body and so bore the rocks.…",
+    tags: ["ancient-classical"],
   },
   {
-    "slug": "the_problems_of_philosophy",
-    "title": "The Problems of Philosophy",
-    "author": "Bertrand Russell",
-    "genre": "philosophy",
-    "genreLabel": "Philosophy",
-    "chunks": 154,
-    "excerpt": "In the following pages I have confined myself in the main to those problems of philosophy in regard to which I thought it possible to say something positive and constructive, since merely negative criticism seemed out of place. For this reason, theory of knowledge occupies a larger space than metaphysics in the present volume, and some topics much discussed by philosophers…",
-    "tags": [
-      "philosophy"
-    ]
+    slug: "parallel_lives_plutarch",
+    title: "Parallel Lives (Plutarch)",
+    author: "Plutarch",
+    genre: "ancient-classical",
+    genreLabel: "Ancient & Classical",
+    chunks: 10353,
+    excerpt: "As, indeed, there came no good of it; for the tribunes, who were present, perceiving how the proposal of Marcius took, ran out into the crowd with exclamations, calling on the plebeians to stand together, and come in to their assistance. The assembly met, and soon became…",
+    tags: ["ancient-classical"],
   },
   {
-    "slug": "the_republic",
-    "title": "The Republic",
-    "author": "Plato",
-    "genre": "philosophy",
-    "genreLabel": "Philosophy",
-    "chunks": 640,
-    "excerpt": "The beginning is the most important part of the work. The direction in which education starts a man will determine his future life.",
-    "tags": [
-      "philosophy",
-      "state"
-    ]
+    slug: "the_aeneid",
+    title: "The Aeneid",
+    author: "Virgil",
+    genre: "ancient-classical",
+    genreLabel: "Ancient & Classical",
+    chunks: 1509,
+    excerpt: "Far on the right, her dogs foul Scylla hides: Charybdis roaring on the left presides, And in her greedy whirlpool sucks the tides; Then spouts them from below: with fury driv’n, The waves mount up and wash the face of heav’n. But Scylla from her den, with open jaws, The…",
+    tags: ["ancient-classical"],
   },
   {
-    "slug": "the_social_contract",
-    "title": "The Social Contract",
-    "author": "Jean-Jacques Rousseau",
-    "genre": "philosophy",
-    "genreLabel": "Philosophy",
-    "chunks": 443,
-    "excerpt": "Man is born free; and everywhere he is in chains. One thinks himself the master of others, and still remains a greater slave than they. How did this change come about? I do not know. What can make it legitimate? That question I think I can answer.",
-    "tags": [
-      "philosophy",
-      "freedom"
-    ]
+    slug: "the_birds_aristophanes",
+    title: "The Birds (Aristophanes)",
+    author: "Aristophanes",
+    genre: "ancient-classical",
+    genreLabel: "Ancient & Classical",
+    chunks: 287,
+    excerpt: "PISTHETAERUS What for? EUELPIDES Epops is going to sing again. EPOPS (IN THE COPPICE) Epopoi poi popoi, epopoi, popoi, here, here, quick, quick, quick, my comrades in the air; all you who pillage the fertile lands of the husbandmen, the numberless tribes who gather and devour…",
+    tags: ["ancient-classical"],
   },
   {
-    "slug": "the_symposium",
-    "title": "The Symposium",
-    "author": "Plato",
-    "genre": "philosophy",
-    "genreLabel": "Philosophy",
-    "chunks": 111,
-    "excerpt": "Of all the works of Plato the Symposium is the most perfect in form, and may be truly thought to contain more than any commentator has ever dreamed of; or, as Goethe said of one of his own writings, more than the author himself knew. For in philosophy as in prophecy glimpses of the future may often be conveyed in words which could hardly have been understood or interpreted…",
-    "tags": [
-      "philosophy"
-    ]
+    slug: "the_clouds_aristophanes",
+    title: "The Clouds (Aristophanes)",
+    author: "Aristophanes",
+    genre: "ancient-classical",
+    genreLabel: "Ancient & Classical",
+    chunks: 203,
+    excerpt: "Soc. It becomes the old man to speak words of good omen, and to hearken to my prayer. O sovereign King, immeasurable Air, who keepest the earth suspended, and through bright Aether, and ye august goddesses, the Clouds, sending thunder and lightning, arise, appear in the air,…",
+    tags: ["ancient-classical"],
   },
   {
-    "slug": "the_twilight_of_the_idols_or_how_to_philosophize_with_the_ha",
-    "title": "The Twilight of the Idols; or, How to Philosophize with the Hammer. The Antichrist",
-    "author": "Friedrich Wilhelm Nietzsche",
-    "genre": "philosophy",
-    "genreLabel": "Philosophy",
-    "chunks": 266,
-    "excerpt": "_The Twilight of the Idols_ was written towards the end of the summer of 1888, its composition seems to have occupied only a few days,—so few indeed that, in _Ecce Homo_ (p. 118), Nietzsche says he hesitates to give their number; but, in any case, we know it was completed on the 3rd of September in Sils Maria. The manuscript which was dispatched to the printers on the 7th…",
-    "tags": [
-      "philosophy"
-    ]
+    slug: "the_consolation_of_philosophy_boethius",
+    title: "The Consolation of Philosophy (Boethius)",
+    author: "Boethius",
+    genre: "ancient-classical",
+    genreLabel: "Ancient & Classical",
+    chunks: 597,
+    excerpt: "She who still veils herself from others hath fully discovered to thee her whole character. If thou likest her, take her as she is, and do not complain. If thou abhorrest her perfidy, turn from her in disdain, renounce her, for baneful are her delusions. The very thing which…",
+    tags: ["ancient-classical"],
   },
   {
-    "slug": "the_wealth_of_nations",
-    "title": "The Wealth of Nations",
-    "author": "Adam Smith",
-    "genre": "philosophy",
-    "genreLabel": "Philosophy",
-    "chunks": 1387,
-    "excerpt": "The annual labour of every nation is the fund which originally supplies it with all the necessaries and conveniencies of life which it annually consumes, and which consist always either in the immediate produce of that labour, or in what is purchased with that produce from other nations.",
-    "tags": [
-      "philosophy"
-    ]
+    slug: "the_eleven_comedies_volume_1",
+    title: "The Eleven Comedies, Volume 1",
+    author: "Aristophanes",
+    genre: "ancient-classical",
+    genreLabel: "Ancient & Classical",
+    chunks: 1183,
+    excerpt: "SAUSAGE-SELLER. I will undertake that, and in three days too! But listen to this further oracle, by which Apollo puts you on your guard against the snares of the greedy fist. DEMOS. Of what greedy fist? SAUSAGE-SELLER. The god in this oracle very clearly points to the hand of…",
+    tags: ["ancient-classical"],
   },
   {
-    "slug": "thus_spake_zarathustra",
-    "title": "Thus Spake Zarathustra",
-    "author": "Friedrich Wilhelm Nietzsche",
-    "genre": "philosophy",
-    "genreLabel": "Philosophy",
-    "chunks": 402,
-    "excerpt": "“Zarathustra” is my brother’s most personal work; it is the history of his most individual experiences, of his friendships, ideals, raptures, bitterest disappointments and sorrows. Above it all, however, there soars, transfiguring it, the image of his greatest hopes and remotest aims. My brother had the figure of Zarathustra in his mind from his very earliest youth: he once…",
-    "tags": [
-      "philosophy"
-    ]
+    slug: "the_eleven_comedies_volume_2",
+    title: "The Eleven Comedies, Volume 2",
+    author: "Aristophanes",
+    genre: "ancient-classical",
+    genreLabel: "Ancient & Classical",
+    chunks: 1380,
+    excerpt: "PISTHETAERUS. By Zeus, it no longer croaks the same thing it did. EUELPIDES. And which way does it tell us to go now? PISTHETAERUS. It says that, by dint of gnawing, it will devour my fingers. EUELPIDES. What misfortune is ours! we strain every nerve to get to the birds,[179]…",
+    tags: ["ancient-classical"],
   },
   {
-    "slug": "utilitarianism",
-    "title": "Utilitarianism",
-    "author": "John Stuart Mill",
-    "genre": "philosophy",
-    "genreLabel": "Philosophy",
-    "chunks": 101,
-    "excerpt": "There are few circumstances among those which make up the present condition of human knowledge, more unlike what might have been expected, or more significant of the backward state in which speculation on the most important subjects still lingers, than the little progress which has been made in the decision of the controversy respecting the criterion of right and wrong.…",
-    "tags": [
-      "philosophy"
-    ]
+    slug: "the_frogs",
+    title: "The Frogs",
+    author: "Aristophanes",
+    genre: "ancient-classical",
+    genreLabel: "Ancient & Classical",
+    chunks: 186,
+    excerpt: "DIO. This timing song I take from you. FR. That's a dreadful thing to do. DIO. Much more dreadful, if I row Till I burst myself, I trow. FR. and DIO. Brekekekex, ko-ax, ko-ax. DIO. Go, hang yourselves; for what care I? FR. All the same we'll shout and cry, Stretching all our…",
+    tags: ["ancient-classical"],
   },
   {
-    "slug": "a_christmas_carol_in_prose_being_a_ghost_story_of_christmas",
-    "title": "A Christmas Carol in Prose; Being a Ghost Story of Christmas",
-    "author": "Charles Dickens",
-    "genre": "english-literature",
-    "genreLabel": "English Literature",
-    "chunks": 99,
-    "excerpt": "Marley was dead: to begin with. There is no doubt whatever about that. The register of his burial was signed by the clergyman, the clerk, the undertaker, and the chief mourner. Scrooge signed it. Old Marley was as dead as a door-nail.",
-    "tags": [
-      "english literature"
-    ]
+    slug: "the_golden_sayings_of_epictetus_with_the_hymn_of_cleanthes",
+    title: "The Golden Sayings of Epictetus, with the Hymn of Cleanthes",
+    author: "Epictetus",
+    genre: "ancient-classical",
+    genreLabel: "Ancient & Classical",
+    chunks: 360,
+    excerpt: "Has a man been raised to tribuneship? Every one that he meets congratulates him. One kisses him on the eyes, another on the neck, while the slaves kiss his hands. He goes home to find torches burning; he ascends to the Capitol to sacrifice.—Who ever sacrificed for having had…",
+    tags: ["ancient-classical"],
   },
   {
-    "slug": "a_modest_proposal",
-    "title": "A Modest Proposal",
-    "author": "Jonathan Swift",
-    "genre": "english-literature",
-    "genreLabel": "English Literature",
-    "chunks": 24,
-    "excerpt": "For preventing the children of poor people in Ireland, from being a burden on their parents or country, and for making them beneficial to the publick.",
-    "tags": [
-      "english literature"
-    ]
+    slug: "the_house_of_atreus_being_the_agamemnon_the_libation_bearers",
+    title: "The House of Atreus; Being the Agamemnon, the Libation bearers, and the Furies",
+    author: "Aeschylus",
+    genre: "ancient-classical",
+    genreLabel: "Ancient & Classical",
+    chunks: 585,
+    excerpt: "And still the smoke of fallen Ilion Rises in sight of all men, and the flame Of Atè’s hecatomb is living yet, And where the towers in dusty ashes sink, Rise the rich fumes of pomp and wealth consumed. For this must all men pay unto the gods The meed of mindful hearts and…",
+    tags: ["ancient-classical"],
   },
   {
-    "slug": "a_room_with_a_view",
-    "title": "A Room with a View",
-    "author": "E. M. (Edward Morgan) Forster",
-    "genre": "english-literature",
-    "genreLabel": "English Literature",
-    "chunks": 241,
-    "excerpt": "“The Signora had no business to do it,” said Miss Bartlett, “no business at all. She promised us south rooms with a view close together, instead of which here are north rooms, looking into a courtyard, and a long way apart. Oh, Lucy!”",
-    "tags": [
-      "english literature"
-    ]
+    slug: "the_iliad",
+    title: "The Iliad",
+    author: "Homer",
+    genre: "ancient-classical",
+    genreLabel: "Ancient & Classical",
+    chunks: 2706,
+    excerpt: "“Haste, happy nymph! for thee thy Paris calls, Safe from the fight, in yonder lofty walls, Fair as a god; with odours round him spread, He lies, and waits thee on the well-known bed; Not like a warrior parted from the foe, But some gay dancer in the public show.” She spoke,…",
+    tags: ["ancient-classical"],
   },
   {
-    "slug": "a_tale_of_two_cities",
-    "title": "A Tale of Two Cities",
-    "author": "Charles Dickens",
-    "genre": "english-literature",
-    "genreLabel": "English Literature",
-    "chunks": 481,
-    "excerpt": "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair, we had everything before us, we had nothing before us, we were all going direct to…",
-    "tags": [
-      "english literature"
-    ]
-  }
+    slug: "the_meditations_of_the_emperor_marcus_aurelius_antoninus",
+    title: "The Meditations of the Emperor Marcus Aurelius Antoninus",
+    author: "Emperor of Rome Marcus Aurelius",
+    genre: "ancient-classical",
+    genreLabel: "Ancient & Classical",
+    chunks: 542,
+    excerpt: "Behold the chaos of eternity which besets us on either side. Think how empty is the noisy echo of acclamation; how fickle and how scant of judgment are they who would seem to praise us, and how narrow the bounds within which their praise is confined. All the earth is but a…",
+    tags: ["ancient-classical"],
+  },
 ];

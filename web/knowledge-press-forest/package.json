@@ -11,8 +11,8 @@
   "dependencies": {
     "@react-three/fiber": "^9.7.0",
     "lucide-react": "^0.510.0",
-    "react": "^19.2.0",
-    "react-dom": "^19.2.0",
+    "react": "~19.2.0",
+    "react-dom": "~19.2.0",
     "three": "^0.186.0",
     "zustand": "^5.0.0"
   },

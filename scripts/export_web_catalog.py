@@ -39,6 +39,7 @@ KG_DIRS = (".dockg", ".diarykg")
 GENRE_LABELS: dict[str, str] = {
     "american-literature": "American Literature",
     "ancient-classical": "Ancient & Classical",
+    "audel-electric": "Technical Reference",
     "biography": "Biography",
     "curiosities": "Curiosities",
     "diaries": "Diaries",
@@ -54,8 +55,7 @@ GENRE_LABELS: dict[str, str] = {
     "sacred-texts": "Sacred Texts",
     "science-fiction": "Science Fiction",
     "shakespeare": "Shakespeare",
-    "spanish-literature": "Spanish Literature",
-    "technical-reference": "Technical Reference",
+    "spanish": "Spanish Literature",
     "travel": "Travel",
     "world-literature": "World Literature",
 }
@@ -89,7 +89,7 @@ def parse_reference(path: Path) -> dict[str, str]:
 
         raw = _parse(path)
         return {k: str(v) for k, v in raw.items() if v is not None and k != "_path"}
-    except Exception:
+    except Exception:  # noqa: BLE001
         text = path.read_text(encoding="utf-8")
         title = re.search(r"^# Reference:\s*(.+)$", text, re.MULTILINE)
         author = re.search(r"\*\*Name\*\*:\s*(.+)$", text, re.MULTILINE)

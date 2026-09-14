@@ -1,4 +1,4 @@
-import { BookMarked, Compass, Map, Pause, Search, X } from "lucide-react";
+import { BookMarked, Compass, Map, Moon, Pause, Search, Sun, X } from "lucide-react";
 import { useMemo } from "react";
 import { groveApproach, type Forest, type Grove } from "./forest";
 import { QUESTS, questProgress } from "./quests";
@@ -9,6 +9,8 @@ import { useGame } from "./store";
 export function HUD({ forest }: { forest: Forest }) {
   const season = useGame((s) => s.season);
   const setSeason = useGame((s) => s.setSeason);
+  const timeOfDay = useGame((s) => s.timeOfDay);
+  const toggleTimeOfDay = useGame((s) => s.toggleTimeOfDay);
   const query = useGame((s) => s.query);
   const setQuery = useGame((s) => s.setQuery);
   const nearbySlug = useGame((s) => s.nearbySlug);
@@ -64,11 +66,26 @@ export function HUD({ forest }: { forest: Forest }) {
           <p className="font-display text-lg leading-none">Knowledge Press</p>
           <p className="mt-1 text-xs text-muted">
             {forest.trees.length} trees · {SEASONS[season].label}
+            {" · "}
+            {timeOfDay === "day" ? "Day" : "Night"}
             {travelMode === "circuit" ? " · ring" : ""}
             {progress.done ? ` · ${progress.done}/${progress.total}` : ""}
           </p>
         </div>
         <div className="flex items-center gap-2">
+          <button
+            type="button"
+            onClick={toggleTimeOfDay}
+            className="grid size-11 place-items-center rounded-md border border-border bg-surface"
+            aria-label={timeOfDay === "day" ? "Switch to night" : "Switch to day"}
+            title={timeOfDay === "day" ? "Day · tap for night" : "Night · tap for day"}
+          >
+            {timeOfDay === "day" ? (
+              <Sun className="size-4" strokeWidth={1.75} />
+            ) : (
+              <Moon className="size-4" strokeWidth={1.75} />
+            )}
+          </button>
           <button
             type="button"
             onClick={toggleAtlas}

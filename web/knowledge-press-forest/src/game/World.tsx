@@ -1,6 +1,7 @@
 import { useFrame } from "@react-three/fiber";
 import { useMemo, useRef } from "react";
 import { BackSide, Color, InstancedMesh, Object3D } from "three";
+import { DAY_OVERRIDE } from "./daylight";
 import { bookMatchesQuery, groveApproach, groveByGenre, type Forest } from "./forest";
 import { Signposts } from "./Signposts";
 import { SEASONS, type SeasonName } from "./seasons";
@@ -12,8 +13,23 @@ const TRAIL_N = 20;
 
 export function World({ forest, season }: { forest: Forest; season: SeasonName }) {
   const pal = SEASONS[season];
-  const fogColor = pal.fog;
-  const skyColor = useMemo(() => new Color(pal.sky), [pal.sky]);
+  const timeOfDay = useGame((s) => s.timeOfDay);
+  const day = timeOfDay === "day";
+  const skyColor = useMemo(
+    () => new Color(day ? DAY_OVERRIDE.sky : pal.sky),
+    [day, pal.sky],
+  );
+  const fogColor = day ? DAY_OVERRIDE.fog : pal.fog;
+  const fogDensity = (season === "winter" ? 0.011 : 0.015) * (day ? DAY_OVERRIDE.fogDensityScale : 1);
+  const ambientColor = day ? DAY_OVERRIDE.ambient : pal.ambient;
+  const sunColor = day ? DAY_OVERRIDE.sun : pal.sun;
+  const hemiIntensity = 0.78 * (day ? DAY_OVERRIDE.hemiIntensity : 1);
+  const sunIntensity = 0.88 * (day ? DAY_OVERRIDE.sunIntensity : 1);
+  const groundColor = useMemo(() => {
+    const c = new Color(pal.ground);
+    if (day) c.offsetHSL(0, -0.08, DAY_OVERRIDE.groundLightness);
+    return c;
+  }, [day, pal.ground]);
   const selectedGrove = useGame((s) => s.selectedGrove);
   const query = useGame((s) => s.query);
   const travelMode = useGame((s) => s.travelMode);
@@ -21,14 +37,14 @@ export function World({ forest, season }: { forest: Forest; season: SeasonName }
   return (
     <>
       <color attach="background" args={[skyColor]} />
-      <fogExp2 attach="fog" args={[fogColor, season === "winter" ? 0.011 : 0.015]} />
-      <hemisphereLight color={pal.ambient} groundColor={pal.ground} intensity={0.78} />
-      <directionalLight position={[40, 55, 18]} intensity={0.88} color={pal.sun} />
+      <fogExp2 attach="fog" args={[fogColor, fogDensity]} />
+      <hemisphereLight color={ambientColor} groundColor={groundColor} intensity={hemiIntensity} />
+      <directionalLight position={[40, 55, 18]} intensity={sunIntensity} color={sunColor} />
       <directionalLight position={[-30, 20, -40]} intensity={0.2} color="#8aa0b8" />
 
       <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, 0, 0]}>
         <circleGeometry args={[forest.worldRadius + 30, 64]} />
-        <meshStandardMaterial color={pal.ground} roughness={0.96} metalness={0} />
+        <meshStandardMaterial color={groundColor} roughness={0.96} metalness={0} />
       </mesh>
 
       <Roads forest={forest} circuit={travelMode === "circuit"} />
@@ -41,7 +57,7 @@ export function World({ forest, season }: { forest: Forest; season: SeasonName }
           <group key={g.genre} position={[g.x, 0, g.z]}>
             <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, 0.03, 0]}>
               <circleGeometry args={[Math.min(g.radius * 0.55, 16), 24]} />
-              <meshStandardMaterial color={pal.ground} roughness={1} />
+              <meshStandardMaterial color={groundColor} roughness={1} />
             </mesh>
             <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, 0.06, 0]}>
               <ringGeometry args={[2.2, on ? 3.1 : 2.7, 20]} />
@@ -62,7 +78,7 @@ export function World({ forest, season }: { forest: Forest; season: SeasonName }
 
       <mesh>
         <sphereGeometry args={[forest.worldRadius * 1.45, 16, 12]} />
-        <meshBasicMaterial color={pal.sky} side={BackSide} />
+        <meshBasicMaterial color={skyColor} side={BackSide} />
       </mesh>
     </>
   );

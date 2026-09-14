@@ -2,477 +2,383 @@ import type { Book } from "./catalogTypes";
 
 export const BOOKS_PART6: Book[] = [
   {
-    "slug": "the_analects_of_confucius",
-    "title": "The Analects of Confucius",
-    "author": "James Legge",
-    "genre": "sacred-texts",
-    "genreLabel": "Sacred Texts",
-    "chunks": 148,
-    "excerpt": "This text preserves the original page breaks. In a few places I have substituted the character forms available in the Big 5 character set for rare or (what are now considered) nonstandard forms used by Legge. Characters not included in the Big 5 character set in any form are described by their",
-    "tags": [
-      "sacred texts",
-      "sacred"
-    ]
+    slug: "dhammapada_f_max_müller_translation",
+    title: "Dhammapada (F. Max Müller translation)",
+    author: "Unknown",
+    genre: "sacred-texts",
+    genreLabel: "Sacred Texts",
+    chunks: 166,
+    excerpt: "Few are there among men who arrive at the other shore (become Arhats); the other people here run up and down the shore. 86. But those who, when the law has been well preached to them, follow the law, will pass across the dominion of death, however difficult to overcome. 87,…",
+    tags: ["sacred-texts"],
   },
   {
-    "slug": "the_bhagavad_gita",
-    "title": "The Bhagavad Gita",
-    "author": "Edwin Arnold verse translation",
-    "genre": "sacred-texts",
-    "genreLabel": "Sacred Texts",
-    "chunks": 74,
-    "excerpt": "Krishna. He who shall say, Lo! I have slain a man! He who shall think, Lo! I am slain! those both Know naught! Life cannot slay. Life is not slain! Never the spirit was born; the spirit shall cease to be never.",
-    "tags": [
-      "sacred texts",
-      "sacred"
-    ]
+    slug: "tao_te_ching_james_legge_translation",
+    title: "Tao Te Ching (James Legge translation)",
+    author: "Laozi",
+    genre: "sacred-texts",
+    genreLabel: "Sacred Texts",
+    chunks: 142,
+    excerpt: "The skilful masters (of the Tao) in old times, with a subtle and exquisite penetration, comprehended its mysteries, and were deep (also) so as to elude men's knowledge. As they were thus beyond men's knowledge, I will make an effort to describe of what sort they appeared to…",
+    tags: ["sacred-texts"],
   },
   {
-    "slug": "the_bible",
-    "title": "The Bible",
-    "author": "King James Version",
-    "genre": "sacred-texts",
-    "genreLabel": "Sacred Texts",
-    "chunks": 2710,
-    "excerpt": "The First Epistle of Paul the Apostle to the Corinthians The Second Epistle of Paul the Apostle to the Corinthians The Epistle of Paul the Apostle to the Galatians The Epistle of Paul the Apostle to the Ephesians The Epistle of Paul the Apostle to the Philippians The Epistle of Paul the Apostle to the Colossians The First Epistle of Paul the Apostle to the Thessalonians The…",
-    "tags": [
-      "sacred texts",
-      "sacred"
-    ]
+    slug: "the_analects_of_confucius_james_legge_translation",
+    title: "The Analects of Confucius (James Legge translation)",
+    author: "James Legge",
+    genre: "sacred-texts",
+    genreLabel: "Sacred Texts",
+    chunks: 452,
+    excerpt: "The acquaintance might be long, but he showed the same respect as at first.' CHAP. XVII. The Master said, 'Tsang Wan kept a large tortoise in a house, on the capitals of the pillars of which he had hills made, and with representations of duckweed on the small pillars above…",
+    tags: ["sacred-texts"],
   },
   {
-    "slug": "the_quran",
-    "title": "The Quran",
-    "author": "Rodwell translation",
-    "genre": "sacred-texts",
-    "genreLabel": "Sacred Texts",
-    "chunks": 687,
-    "excerpt": "MOHAMMED was born at Mecca in A.D. 567 or 569. His flight (hijra) to Medina, which marks the beginning of the Mohammedan era, took place on 16th June 622.",
-    "tags": [
-      "sacred texts",
-      "sacred"
-    ]
+    slug: "the_bhagavad_gita_edwin_arnold_verse_translation",
+    title: "The Bhagavad Gita (Edwin Arnold verse translation)",
+    author: "Unknown",
+    genre: "sacred-texts",
+    genreLabel: "Sacred Texts",
+    chunks: 287,
+    excerpt: "Arjuna. Thou whom all mortals praise, Janardana! If meditation be a nobler thing Than action, wherefore, then, great Kesava! Dost thou impel me to this dreadful fight? Now am I by thy doubtful speech disturbed! Tell me one thing, and tell me certainly; By what road shall I…",
+    tags: ["sacred-texts"],
   },
   {
-    "slug": "the_upanishads",
-    "title": "The Upanishads",
-    "author": "Max Müller translation",
-    "genre": "sacred-texts",
-    "genreLabel": "Sacred Texts",
-    "chunks": 64,
-    "excerpt": "The translator's idea of rendering the Upanishads into clear simple English, accessible to Occidental readers, had its origin in a visit paid to a Boston friend in 1909. The gentleman, then battling with a fatal malady, took from his library shelf a translation of the Upanishads and, opening it, expressed deep regret that the obscure and unfamiliar form shut from him what he",
-    "tags": [
-      "sacred texts",
-      "sacred"
-    ]
+    slug: "the_bible",
+    title: "The Bible",
+    author: "Unknown",
+    genre: "sacred-texts",
+    genreLabel: "Sacred Texts",
+    chunks: 6654,
+    excerpt: "Now after the death of Joshua it came to pass, that the children of Israel asked the LORD, saying, Who shall go up for us against the Canaanites first, to fight against them? 1:2 And the LORD said, Judah shall go up: behold, I have delivered the land into his hand. And Judah…",
+    tags: ["sacred-texts"],
   },
   {
-    "slug": "letters_of_john_keats_to_his_family_and_friends",
-    "title": "Letters of John Keats to His Family and Friends",
-    "author": "John Keats",
-    "genre": "letters",
-    "genreLabel": "Letters",
-    "chunks": 486,
-    "excerpt": "The object of the present volume is to supply the want, which many readers must have felt, of a separate and convenient edition of the letters of Keats to his family and friends. He is one of those poets whose genius makes itself felt in prose-writing almost as decisively as in verse, and at their best these letters are among the most beautiful in our language. Portions of…",
-    "tags": [
-      "letters"
-    ]
+    slug: "the_quran_rodwell_translation",
+    title: "The Quran (Rodwell translation)",
+    author: "Unknown",
+    genre: "sacred-texts",
+    genreLabel: "Sacred Texts",
+    chunks: 2648,
+    excerpt: "He said to his nobles around him. \"This truly is a right cunning sorcerer: Fain would he drive you out of your land by his Sorcery.",
+    tags: ["sacred-texts"],
   },
   {
-    "slug": "letters_of_pliny_the_younger",
-    "title": "Letters of Pliny the Younger",
-    "author": "the Younger Pliny",
-    "genre": "letters",
-    "genreLabel": "Letters",
-    "chunks": 326,
-    "excerpt": "GAIUS PLINIUS CAECILIUS SECUNDUS, usually known as Pliny the Younger, was born at Como in 62 A. D. He was only eight years old when his father Caecilius died, and he was adopted by his uncle, the elder Pliny, author of the Natural History. He was carefully educated, studying rhetoric under Quintilian and other famous teachers, and he became the most eloquent pleader of his…",
-    "tags": [
-      "letters"
-    ]
+    slug: "the_upanishads_max_müller_translation",
+    title: "The Upanishads (Max Müller translation)",
+    author: "Unknown",
+    genre: "sacred-texts",
+    genreLabel: "Sacred Texts",
+    chunks: 284,
+    excerpt: "They fall into blind darkness who worship the Unmanifested and they fall into greater darkness who worship the manifested.",
+    tags: ["sacred-texts"],
   },
   {
-    "slug": "letters_on_england",
-    "title": "Letters on England",
-    "author": "Voltaire",
-    "genre": "letters",
-    "genreLabel": "Letters",
-    "chunks": 135,
-    "excerpt": "Francois Marie Arouet, who called himself Voltaire, was the son of Francois Arouet of Poitou, who lived in Paris, had given up his office of notary two years before the birth of this his third son, and obtained some years afterwards a treasurer's office in the Chambre des Comptes. Voltaire was born in the year 1694. He lived until within ten or eleven years of the outbreak…",
-    "tags": [
-      "letters"
-    ]
+    slug: "a_journey_in_other_worlds_a_romance_of_the_future",
+    title: "A Journey in Other Worlds: A Romance of the Future",
+    author: "John Jacob Astor",
+    genre: "science-fiction",
+    genreLabel: "Science Fiction",
+    chunks: 1280,
+    excerpt: "I expect to find it in its Palaeozoic or Mesozoic period, while over a hundred years ago the English astronomer, Chambers, thought that on Saturn there was good reason for suspecting the presence of snow.\" \"What sort of spaceship do you propose to have?\" asked the vice-president.",
+    tags: ["science-fiction"],
   },
   {
-    "slug": "letters_to_his_son_lord_chesterfield",
-    "title": "Letters to His Son — Lord Chesterfield",
-    "author": "Philip Dormer Stanhope, Earl of Chesterfield",
-    "genre": "letters",
-    "genreLabel": "Letters",
-    "chunks": 155,
-    "excerpt": "DEAR BOY: I am edified with the allotment of your time at Leipsig; which is so well employed from morning till night, that a fool would say you had none left for yourself; whereas, I am sure you have sense enough to know, that such a right use of your time is having it all to yourself; nay, it is even more, for it is laying it out to immense interest, which, in a very few…",
-    "tags": [
-      "letters"
-    ]
+    slug: "a_princess_of_mars",
+    title: "A princess of Mars",
+    author: "Edgar Rice Burroughs",
+    genre: "science-fiction",
+    genreLabel: "Science Fiction",
+    chunks: 901,
+    excerpt: "She, on the contrary, was sober with apparent solicitude and, as soon as I had finished the monster, rushed to me and carefully examined my body for possible wounds or injuries. Satisfying herself that I had come off unscathed she smiled quietly, and, taking my hand, started…",
+    tags: ["science-fiction"],
   },
   {
-    "slug": "the_works_of_lord_byron_letters_and_journals_vol_1",
-    "title": "The Works of Lord Byron: Letters and Journals. Vol. 1",
-    "author": "George Gordon Byron, Baron Byron",
-    "genre": "letters",
-    "genreLabel": "Letters",
-    "chunks": 461,
-    "excerpt": "Two great collections of Byron's letters have been already printed. In Moore's 'Life', which appeared in 1830, 561 were given. These, in FitzGreene Halleck's American edition of Byron's 'Works', published in 1847, were increased to 635. The first volume of a third collection, edited by Mr. W. E. Henley, appeared early in 1897. A comparison of the number of letters contained…",
-    "tags": [
-      "letters"
-    ]
+    slug: "at_the_earths_core",
+    title: "At the Earth's Core",
+    author: "Edgar Rice Burroughs",
+    genre: "science-fiction",
+    genreLabel: "Science Fiction",
+    chunks: 646,
+    excerpt: "Their arms and necks were encircled by many ornaments of metal—silver predominating—and on their tunics were sewn the heads of tiny reptiles in odd and rather artistic designs. They talked among themselves as they marched along on either side of us, but in a language which I…",
+    tags: ["science-fiction"],
   },
   {
-    "slug": "the_works_of_lord_byron_letters_and_journals_vol_2",
-    "title": "The Works of Lord Byron: Letters and Journals. Vol. 2",
-    "author": "George Gordon Byron, Baron Byron",
-    "genre": "letters",
-    "genreLabel": "Letters",
-    "chunks": 461,
-    "excerpt": "Two great collections of Byron's letters have been already printed. In Moore's 'Life', which appeared in 1830, 561 were given. These, in FitzGreene Halleck's American edition of Byron's 'Works', published in 1847, were increased to 635. The first volume of a third collection, edited by Mr. W. E. Henley, appeared early in 1897. A comparison of the number of letters contained…",
-    "tags": [
-      "letters"
-    ]
+    slug: "etidorhpa_or_the_end_of_earth",
+    title: "Etidorhpa; or, The End of Earth.",
+    author: "John Uri Lloyd",
+    genre: "science-fiction",
+    genreLabel: "Science Fiction",
+    chunks: 1703,
+    excerpt: "To the people of this State, and to your home, and kindred, you must become a stranger for all time. Do you consent?\" \"Yes,\" I answered, for I knew that I must acquiesce. \"In the next place, you must help us to remove all traces of your identity. You must, so far as the world…",
+    tags: ["science-fiction"],
   },
   {
-    "slug": "gitanjali",
-    "title": "Gitanjali",
-    "author": "Rabindranath Tagore",
-    "genre": "world-literature",
-    "genreLabel": "World Literature",
-    "chunks": 47,
-    "excerpt": "A few days ago I said to a distinguished Bengali doctor of medicine, “I know no German, yet if a translation of a German poet had moved me, I would go to the British Museum and find books in English that would tell me something of his life, and of the history of his thought. But though these prose translations from Rabindranath Tagore have stirred my blood as nothing has…",
-    "tags": [
-      "world literature",
-      "sacred"
-    ]
+    slug: "flatland_a_romance_of_many_dimensions",
+    title: "Flatland: A Romance of Many Dimensions",
+    author: "Edwin Abbott Abbott",
+    genre: "science-fiction",
+    genreLabel: "Science Fiction",
+    chunks: 488,
+    excerpt: "The answer is threefold. The first means of recognition is the sense of hearing; which with us is far more highly developed than with you, and which enables us not only to distinguish by the voice our personal friends, but even to discriminate between different classes, at…",
+    tags: ["science-fiction"],
   },
   {
-    "slug": "one_thousand_and_one_nights",
-    "title": "One Thousand and One Nights",
-    "author": "Andrew Lang",
-    "genre": "world-literature",
-    "genreLabel": "World Literature",
-    "chunks": 373,
-    "excerpt": "The stories in the Fairy Books have generally been such as old women in country places tell to their grandchildren. Nobody knows how old they are, or who told them first. The children of Ham, Shem and Japhet may have listened to them in the Ark, on wet days. Hector's little boy may have heard them in Troy Town, for it is certain that Homer knew them, and that some of them…",
-    "tags": [
-      "world literature"
-    ]
+    slug: "frankenstein",
+    title: "Frankenstein",
+    author: "Mary Wollstonecraft Shelley",
+    genre: "science-fiction",
+    genreLabel: "Science Fiction",
+    chunks: 1022,
+    excerpt: "If this rule were always observed; if no man allowed any pursuit whatsoever to interfere with the tranquillity of his domestic affections, Greece had not been enslaved, Cæsar would have spared his country, America would have been discovered more gradually, and the empires of…",
+    tags: ["science-fiction"],
   },
   {
-    "slug": "the_divine_comedy",
-    "title": "The Divine Comedy",
-    "author": "Dante Alighieri",
-    "genre": "world-literature",
-    "genreLabel": "World Literature",
-    "chunks": 900,
-    "excerpt": "Gone from the path direct: and e’en to tell That forest, how robust and rough its growth, Renews, in bitterness not far from death. Yet to discourse of what there good befell, All else will I relate discover’d there. How first I enter’d it I scarce can say, Such sleepy dullness in that instant weigh’d My senses down, when the true path I left, But when a mountain’s foot I…",
-    "tags": [
-      "world literature",
-      "fire"
-    ]
+    slug: "pellucidar_burroughs",
+    title: "Pellucidar (Burroughs)",
+    author: "Edgar Rice Burroughs",
+    genre: "science-fiction",
+    genreLabel: "Science Fiction",
+    chunks: 745,
+    excerpt: "Below the water-line she was practically non-existent. She should have had considerable draft; but, as the enemy couldn’t have seen it, Perry decided to do away with it, and so made her flat-bottomed. It was this that caused my doubts about her. There was another little…",
+    tags: ["science-fiction"],
   },
   {
-    "slug": "the_divine_comedy_2",
-    "title": "The Divine Comedy",
-    "author": "Dante Alighieri",
-    "genre": "world-literature",
-    "genreLabel": "World Literature",
-    "chunks": 900,
-    "excerpt": "Gone from the path direct: and e’en to tell That forest, how robust and rough its growth, Renews, in bitterness not far from death. Yet to discourse of what there good befell, All else will I relate discover’d there. How first I enter’d it I scarce can say, Such sleepy dullness in that instant weigh’d My senses down, when the true path I left, But when a mountain’s foot I…",
-    "tags": [
-      "world literature",
-      "fire"
-    ]
+    slug: "symzonia_voyage_of_discovery",
+    title: "Symzonia: Voyage of Discovery",
+    author: "Adam, Captain Seaborn",
+    genre: "science-fiction",
+    genreLabel: "Science Fiction",
+    chunks: 627,
+    excerpt: "I would not put up with it; there is but one Slim in the ship, and we'll heave him overboard, if you say the word; at least, I'd clap the ruffles [1] on him, and keep him out of harm's way the rest of the voyage.\" Whether it was honest indignation that prompted Will's advice,…",
+    tags: ["science-fiction"],
   },
   {
-    "slug": "faust_part_i",
-    "title": "Faust Part I",
-    "author": "Johann Wolfgang von Goethe",
-    "genre": "german-literature",
-    "genreLabel": "German Literature",
-    "chunks": 119,
-    "excerpt": "I've studied now Philosophy And Jurisprudence, Medicine,— And even, alas! Theology,— From end to end, with labor keen; And here, poor fool! with all my lore I stand, no wiser than before.",
-    "tags": [
-      "german literature",
-      "fire"
-    ]
+    slug: "the_coming_race",
+    title: "The Coming Race",
+    author: "Edward Bulwer Lytton, Baron Lytton",
+    genre: "science-fiction",
+    genreLabel: "Science Fiction",
+    chunks: 721,
+    excerpt: "As these effects became familiarly known and skillfully administered, war between the vril-discoverers ceased, for they brought the art of destruction to such perfection as to annul all superiority in numbers, discipline, or military skill. The fire lodged in the hollow of a…",
+    tags: ["science-fiction"],
   },
   {
-    "slug": "faust_der_tragdie_zweiter_teil",
-    "title": "Faust: Der Tragödie zweiter Teil",
-    "author": "Johann Wolfgang von Goethe",
-    "genre": "german-literature",
-    "genreLabel": "German Literature",
-    "chunks": 190,
-    "excerpt": "Die ihr dies Haupt umschwebt im luft'gen Kreise, Erzeigt euch hier nach edler Elfen Weise: Entfernt des Vorwurfs glühend bittre Pfeile, Nun ohne Säumen füllt sie freundlich aus! Erst senkt sein Haupt aufs kühle Polster nieder, Gelenk sind bald die krampferstarrten Glieder,",
-    "tags": [
-      "german literature",
-      "fire"
-    ]
+    slug: "the_first_men_in_the_moon",
+    title: "The First Men in the Moon",
+    author: "H. G. (Herbert George) Wells",
+    genre: "science-fiction",
+    genreLabel: "Science Fiction",
+    chunks: 919,
+    excerpt: "So slight were the exertions required of us, so easy did the practical annihilation of our weight make all we had to do, that the necessity for taking refreshment did not occur to us for nearly six hours (by Cavor’s chronometer) after our start. I was amazed at that lapse of…",
+    tags: ["science-fiction"],
   },
   {
-    "slug": "siddhartha",
-    "title": "Siddhartha",
-    "author": "Hermann Hesse",
-    "genre": "german-literature",
-    "genreLabel": "German Literature",
-    "chunks": 137,
-    "excerpt": "In the shade of the house, in the sunshine of the riverbank near the boats, in the shade of the Sal-wood forest, in the shade of the fig tree is where Siddhartha grew up, the handsome son of the Brahman, the young falcon, together with his friend Govinda.",
-    "tags": [
-      "german literature"
-    ]
+    slug: "the_food_of_the_gods_and_how_it_came_to_earth",
+    title: "The Food of the Gods and How It Came to Earth",
+    author: "H. G. (Herbert George) Wells",
+    genre: "science-fiction",
+    genreLabel: "Science Fiction",
+    chunks: 1028,
+    excerpt: "\"It's too much to hope,\" said Bensington, \"that one of the wasps--\" \"The wasp has no more idea of public utility than a--than a House Agent,\" said Redwood.",
+    tags: ["science-fiction"],
   },
   {
-    "slug": "the_metamorphosis",
-    "title": "The Metamorphosis",
-    "author": "Franz Kafka",
-    "genre": "german-literature",
-    "genreLabel": "German Literature",
-    "chunks": 75,
-    "excerpt": "One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.",
-    "tags": [
-      "german literature",
-      "horror",
-      "other"
-    ]
+    slug: "the_gods_of_mars",
+    title: "The Gods of Mars",
+    author: "Edgar Rice Burroughs",
+    genre: "science-fiction",
+    genreLabel: "Science Fiction",
+    chunks: 1065,
+    excerpt: "I have spoken.” “Come, then,” I cried, “we must make the start, for we could not be further from escape than we now are in the heart of this mountain and within the four walls of this chamber of death.” “Come, then,” said the girl, “but do not flatter yourself that you can…",
+    tags: ["science-fiction"],
   },
   {
-    "slug": "the_trial",
-    "title": "The Trial",
-    "author": "Franz Kafka",
-    "genre": "german-literature",
-    "genreLabel": "German Literature",
-    "chunks": 281,
-    "excerpt": "Someone must have been telling lies about Josef K., he knew he had done nothing wrong but, one morning, he was arrested. Every day at eight in the morning he was brought his breakfast by Mrs. Grubach's cook--Mrs. Grubach was his landlady--but today she didn't come. That had never happened before. K. waited a little while, looked from his pillow at the old woman who lived…",
-    "tags": [
-      "german literature"
-    ]
+    slug: "the_invisible_man",
+    title: "The Invisible Man",
+    author: "H. G. (Herbert George) Wells",
+    genre: "science-fiction",
+    genreLabel: "Science Fiction",
+    chunks: 661,
+    excerpt: "The bed-clothes gathered themselves together, leapt up suddenly into a sort of peak, and then jumped headlong over the bottom rail. It was exactly as if a hand had clutched them in the centre and flung them aside. Immediately after, the stranger’s hat hopped off the bed-post,…",
+    tags: ["science-fiction"],
   },
   {
-    "slug": "the_diary_of_john_evelyn_volume_1",
-    "title": "The Diary of John Evelyn — Volume 1",
-    "author": "John Evelyn",
-    "genre": "diaries",
-    "genreLabel": "Diaries",
-    "chunks": 564,
-    "excerpt": "OLIVER CROMWELL DICTATING TO JOHN MILTON 284 The letter to the Duke of Savoy to stop the persecution Photogravure from an engraving by Sartain after Newenham.",
-    "tags": [
-      "diaries"
-    ]
+    slug: "the_lost_world",
+    title: "The Lost World",
+    author: "Arthur Conan Doyle",
+    genre: "science-fiction",
+    genreLabel: "Science Fiction",
+    chunks: 1002,
+    excerpt: "But the incident was far from being closed. Whatever path the lecturer took amid the wilds of the past seemed invariably to lead him to some assertion as to extinct or prehistoric life which instantly brought the same bulls' bellow from the Professor. The audience began to…",
+    tags: ["science-fiction"],
   },
   {
-    "slug": "the_diary_of_john_evelyn_volume_2",
-    "title": "The Diary of John Evelyn — Volume 2",
-    "author": "John Evelyn",
-    "genre": "diaries",
-    "genreLabel": "Diaries",
-    "chunks": 564,
-    "excerpt": "OLIVER CROMWELL DICTATING TO JOHN MILTON 284 The letter to the Duke of Savoy to stop the persecution Photogravure from an engraving by Sartain after Newenham.",
-    "tags": [
-      "diaries"
-    ]
+    slug: "the_island_of_doctor_moreau",
+    title: "The island of Doctor Moreau",
+    author: "H. G. (Herbert George) Wells",
+    genre: "science-fiction",
+    genreLabel: "Science Fiction",
+    chunks: 582,
+    excerpt: "The reader will perhaps understand that at first everything was so strange about me, and my position was the outcome of such unexpected adventures, that I had no discernment of the relative strangeness of this or that thing. I followed the llama up the beach, and was…",
+    tags: ["science-fiction"],
   },
   {
-    "slug": "the_diary_of_samuel_pepys_complete",
-    "title": "The Diary of Samuel Pepys — Complete",
-    "author": "Samuel Pepys",
-    "genre": "diaries",
-    "genreLabel": "Diaries",
-    "chunks": 18757,
-    "excerpt": "Some of our maids sitting up late last night to get things ready against our feast today, Jane called us up about three in the morning, to tell us of a great fire they saw in the City. So I rose and slipped on my nightgown, and went to her window.",
-    "tags": [
-      "diaries",
-      "fire"
-    ]
+    slug: "the_warlord_of_mars",
+    title: "The warlord of Mars",
+    author: "Edgar Rice Burroughs",
+    genre: "science-fiction",
+    genreLabel: "Science Fiction",
+    chunks: 768,
+    excerpt: "And well it was that I had been forced to follow him. But a short distance from the circular chamber we came suddenly into a brilliantly lighted labyrinth of crystal glass partitioned passages. At first I thought it was one vast, unbroken chamber, so clear and transparent…",
+    tags: ["science-fiction"],
   },
   {
-    "slug": "the_journal_of_a_tour_to_the_hebrides_with_samuel_johnson",
-    "title": "The Journal of a Tour to the Hebrides with Samuel Johnson",
-    "author": "James Boswell",
-    "genre": "diaries",
-    "genreLabel": "Diaries",
-    "chunks": 430,
-    "excerpt": "In every narrative, whether historical or biographical, authenticity is of the utmost consequence. Of this I have ever been so firmly persuaded, that I inscribed a former work to that person who was the best judge of its truth. I need not tell you I mean General Paoli; who, after his great, though unsuccessful, efforts to preserve the liberties of his country, has found an…",
-    "tags": [
-      "diaries"
-    ]
+    slug: "a_midsummer_nights_dream",
+    title: "A Midsummer Nights Dream",
+    author: "William Shakespeare",
+    genre: "shakespeare",
+    genreLabel: "Shakespeare",
+    chunks: 233,
+    excerpt: "Are not you he? PUCK. Thou speak’st aright; I am that merry wanderer of the night. I jest to Oberon, and make him smile, When I a fat and bean-fed horse beguile, Neighing in likeness of a filly foal; And sometime lurk I in a gossip’s bowl In very likeness of a roasted crab,…",
+    tags: ["shakespeare"],
   },
   {
-    "slug": "audels_electric_library_vol_1",
-    "title": "Audels Electric Library Vol 1",
-    "author": "Unknown",
-    "genre": "audel-electric",
-    "genreLabel": "Technical Reference",
-    "chunks": 406,
-    "excerpt": "Ignition and lighting circuits illustrating primary and secondary current, high tenston and low tension. It will be seen from the illustrations that careful distinction must be made be-",
-    "tags": [
-      "audel electric"
-    ]
+    slug: "hamlet",
+    title: "Hamlet",
+    author: "William Shakespeare",
+    genre: "shakespeare",
+    genreLabel: "Shakespeare",
+    chunks: 420,
+    excerpt: "Remember thee? Yea, from the table of my memory I’ll wipe away all trivial fond records, All saws of books, all forms, all pressures past, That youth and observation copied there; And thy commandment all alone shall live Within the book and volume of my brain, Unmix’d with…",
+    tags: ["shakespeare"],
   },
   {
-    "slug": "audels_electric_library_vol_10",
-    "title": "Audels Electric Library Vol 10",
-    "author": "Unknown",
-    "genre": "audel-electric",
-    "genreLabel": "Technical Reference",
-    "chunks": 406,
-    "excerpt": "Ignition and lighting circuits illustrating primary and secondary current, high tenston and low tension. It will be seen from the illustrations that careful distinction must be made be-",
-    "tags": [
-      "audel electric"
-    ]
+    slug: "macbeth",
+    title: "Macbeth",
+    author: "William Shakespeare",
+    genre: "shakespeare",
+    genreLabel: "Shakespeare",
+    chunks: 249,
+    excerpt: "But in these cases We still have judgement here; that we but teach Bloody instructions, which being taught, return To plague th’ inventor. This even-handed justice Commends th’ ingredience of our poison’d chalice To our own lips. He’s here in double trust: First, as I am his…",
+    tags: ["shakespeare"],
   },
   {
-    "slug": "audels_electric_library_vol_2",
-    "title": "Audels Electric Library Vol 2",
-    "author": "Unknown",
-    "genre": "audel-electric",
-    "genreLabel": "Technical Reference",
-    "chunks": 406,
-    "excerpt": "Ignition and lighting circuits illustrating primary and secondary current, high tenston and low tension. It will be seen from the illustrations that careful distinction must be made be-",
-    "tags": [
-      "audel electric"
-    ]
+    slug: "romeo_and_juliet",
+    title: "Romeo and Juliet",
+    author: "William Shakespeare",
+    genre: "shakespeare",
+    genreLabel: "Shakespeare",
+    chunks: 340,
+    excerpt: "MERCUTIO. O, then, I see Queen Mab hath been with you. She is the fairies’ midwife, and she comes In shape no bigger than an agate-stone On the fore-finger of an alderman, Drawn with a team of little atomies Over men’s noses as they lie asleep: Her waggon-spokes made of long…",
+    tags: ["shakespeare"],
   },
   {
-    "slug": "audels_electric_library_vol_3",
-    "title": "Audels Electric Library Vol 3",
-    "author": "Unknown",
-    "genre": "audel-electric",
-    "genreLabel": "Technical Reference",
-    "chunks": 406,
-    "excerpt": "Ignition and lighting circuits illustrating primary and secondary current, high tenston and low tension. It will be seen from the illustrations that careful distinction must be made be-",
-    "tags": [
-      "audel electric"
-    ]
+    slug: "don_quixote",
+    title: "Don Quixote",
+    author: "Miguel de Cervantes Saavedra",
+    genre: "spanish",
+    genreLabel: "Spanish Literature",
+    chunks: 4032,
+    excerpt: "Meanwhile the knight has taken his departure; he fights in the war, conquers the king’s enemy, wins many cities, triumphs in many battles, returns to the court, sees his lady where he was wont to see her, and it is agreed that he shall demand her in marriage of her parents as…",
+    tags: ["spanish"],
   },
   {
-    "slug": "audels_electric_library_vol_4",
-    "title": "Audels Electric Library Vol 4",
-    "author": "Unknown",
-    "genre": "audel-electric",
-    "genreLabel": "Technical Reference",
-    "chunks": 406,
-    "excerpt": "Ignition and lighting circuits illustrating primary and secondary current, high tenston and low tension. It will be seen from the illustrations that careful distinction must be made be-",
-    "tags": [
-      "audel electric"
-    ]
+    slug: "a_ladys_life_in_the_rocky_mountains",
+    title: "A Lady's Life in the Rocky Mountains",
+    author: "Isabella L. (Isabella Lucy) Bird",
+    genre: "travel",
+    genreLabel: "Travel",
+    chunks: 1007,
+    excerpt: "Holland says of another:-- If ever I shall reach the home in heaven, For whose dear rest I humbly hope and pray, In the great company of the forgiven I shall be sure to meet old Daniel Gray. The night came without coolness, but at daylight on Monday morning a fire was…",
+    tags: ["travel"],
   },
   {
-    "slug": "audels_electric_library_vol_7",
-    "title": "Audels Electric Library Vol 7",
-    "author": "Unknown",
-    "genre": "audel-electric",
-    "genreLabel": "Technical Reference",
-    "chunks": 406,
-    "excerpt": "Ignition and lighting circuits illustrating primary and secondary current, high tenston and low tension. It will be seen from the illustrations that careful distinction must be made be-",
-    "tags": [
-      "audel electric"
-    ]
+    slug: "the_innocents_abroad_mark_twain",
+    title: "The Innocents Abroad — Mark Twain",
+    author: "Mark Twain",
+    genre: "travel",
+    genreLabel: "Travel",
+    chunks: 2582,
+    excerpt: "I have not a word to say against the misused, faithful girl, and would not withhold from her grave a single one of those simple tributes which blighted youths and maidens offer to her memory, but I am sorry enough that I have not time and opportunity to write four or five…",
+    tags: ["travel"],
   },
   {
-    "slug": "audels_electric_library_vol_8",
-    "title": "Audels Electric Library Vol 8",
-    "author": "Unknown",
-    "genre": "audel-electric",
-    "genreLabel": "Technical Reference",
-    "chunks": 406,
-    "excerpt": "Ignition and lighting circuits illustrating primary and secondary current, high tenston and low tension. It will be seen from the illustrations that careful distinction must be made be-",
-    "tags": [
-      "audel electric"
-    ]
+    slug: "the_travels_of_marco_polo",
+    title: "The Travels of Marco Polo",
+    author: "da Pisa Rusticiano",
+    genre: "travel",
+    genreLabel: "Travel",
+    chunks: 4983,
+    excerpt: "But there is nothing particular to mention on the way till you come, at the end of those five days, to TADINFU.{1} This, you must know, is a very great city, and in old times was the seat of a great kingdom; but the Great Kaan conquered it by force of arms. Nevertheless it is…",
+    tags: ["travel"],
   },
   {
-    "slug": "audels_electric_library_vol_9",
-    "title": "Audels Electric Library Vol 9",
-    "author": "Unknown",
-    "genre": "audel-electric",
-    "genreLabel": "Technical Reference",
-    "chunks": 406,
-    "excerpt": "Ignition and lighting circuits illustrating primary and secondary current, high tenston and low tension. It will be seen from the illustrations that careful distinction must be made be-",
-    "tags": [
-      "audel electric"
-    ]
+    slug: "travels_in_the_interior_districts_of_africa_performed_under_",
+    title: "Travels in the interior districts of Africa: performed under the direction and patronage of the African Association, in the years 1795, 1796, and 1797",
+    author: "Mungo Park",
+    genre: "travel",
+    genreLabel: "Travel",
+    chunks: 1995,
+    excerpt: "In this pursuit I had wandered a little from my people, and being uncertain whether they were before or behind me, I hastened to a rising ground to look about me. As I was proceeding towards this eminence, two Negro horsemen, armed with muskets, came galloping from among the…",
+    tags: ["travel"],
   },
   {
-    "slug": "don_quixote",
-    "title": "Don Quixote",
-    "author": "Miguel de Cervantes Saavedra",
-    "genre": "spanish",
-    "genreLabel": "Spanish Literature",
-    "chunks": 1800,
-    "excerpt": "In a village of La Mancha, the name of which I have no desire to call to mind, there lived not long since one of those gentlemen that keep a lance in the lance-rack, an old buckler, a lean hack, and a greyhound for coursing.",
-    "tags": [
-      "spanish"
-    ]
+    slug: "two_years_before_the_mast",
+    title: "Two Years Before the Mast",
+    author: "Richard Henry Dana",
+    genre: "travel",
+    genreLabel: "Travel",
+    chunks: 2251,
+    excerpt: "No Protestant has any civil rights, nor can he hold any property, or, indeed, remain more than a few weeks on shore, unless he belong to some vessel. Consequently, the Americans and English who intend to remain here become Catholics, to a man; the current phrase among them…",
+    tags: ["travel"],
   },
   {
-    "slug": "a_midsummer_nights_dream",
-    "title": "A Midsummer Nights Dream",
-    "author": "William Shakespeare",
-    "genre": "shakespeare",
-    "genreLabel": "Shakespeare",
-    "chunks": 240,
-    "excerpt": "HIPPOLYTA, Queen of the Amazons, bethrothed to Theseus HERMIA, daughter to Egeus, in love with Lysander PHILOSTRATE, Master of the Revels to Theseus",
-    "tags": [
-      "shakespeare"
-    ]
+    slug: "typee_a_peep_at_polynesian_life_herman_melville",
+    title: "Typee: A Peep at Polynesian Life — Herman Melville",
+    author: "Herman Melville",
+    genre: "travel",
+    genreLabel: "Travel",
+    chunks: 1609,
+    excerpt: "My curiosity had been not a little raised with regard to the description of country we should meet on the other side of the mountains; and I had supposed, with Toby, that immediately on gaining the heights we should be enabled to view the large bays of Happar and Typee…",
+    tags: ["travel"],
   },
   {
-    "slug": "hamlet",
-    "title": "Hamlet",
-    "author": "William Shakespeare",
-    "genre": "shakespeare",
-    "genreLabel": "Shakespeare",
-    "chunks": 420,
-    "excerpt": "To be, or not to be, that is the question: Whether 'tis nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take arms against a sea of troubles, And by opposing end them.",
-    "tags": [
-      "shakespeare",
-      "revenge",
-      "tragedy"
-    ]
+    slug: "gitanjali_tagore",
+    title: "Gitanjali (Tagore)",
+    author: "Rabindranath Tagore",
+    genre: "world-literature",
+    genreLabel: "World Literature",
+    chunks: 179,
+    excerpt: "My heart longs to join in thy song, but vainly struggles for a voice. I would speak, but speech breaks not into song, and I cry out baffled. Ah, thou hast made my heart captive in the endless meshes of thy music, my master! 4. Life of my life, I shall ever try to keep my body…",
+    tags: ["world-literature"],
   },
   {
-    "slug": "macbeth",
-    "title": "Macbeth",
-    "author": "William Shakespeare",
-    "genre": "shakespeare",
-    "genreLabel": "Shakespeare",
-    "chunks": 280,
-    "excerpt": "Is this a dagger which I see before me, The handle toward my hand? Come, let me clutch thee. I have thee not, and yet I see thee still. Art thou not, fatal vision, sensible To feeling as to sight?",
-    "tags": [
-      "shakespeare",
-      "revenge",
-      "tragedy"
-    ]
+    slug: "one_thousand_and_one_nights_lane_translation",
+    title: "One Thousand and One Nights (Lane translation)",
+    author: "Andrew Lang",
+    genre: "world-literature",
+    genreLabel: "World Literature",
+    chunks: 1457,
+    excerpt: "Now when I had ended my story, I proceeded to show the genius how to apply it to himself. \"O genius,\" I said, \"you see that this Sultan was not content with merely forgiving the envious man for the attempt on his life; he heaped rewards and riches upon him.\" But the genius…",
+    tags: ["world-literature"],
   },
   {
-    "slug": "romeo_and_juliet",
-    "title": "Romeo and Juliet",
-    "author": "William Shakespeare",
-    "genre": "shakespeare",
-    "genreLabel": "Shakespeare",
-    "chunks": 310,
-    "excerpt": "Two households, both alike in dignity, In fair Verona, where we lay our scene, From ancient grudge break to new mutiny, Where civil blood makes civil hands unclean. From forth the fatal loins of these two foes A pair of star-cross'd lovers take their life.",
-    "tags": [
-      "shakespeare",
-      "love"
-    ]
+    slug: "the_divine_comedy_carys_translation",
+    title: "The Divine Comedy (Cary's Translation)",
+    author: "Dante Alighieri",
+    genre: "world-literature",
+    genreLabel: "World Literature",
+    chunks: 1476,
+    excerpt: "But onward now: For now doth Cain with fork of thorns confine On either hemisphere, touching the wave Beneath the towers of Seville. Yesternight The moon was round. Thou mayst remember well: For she good service did thee in the gloom Of the deep wood.” This said, both onward…",
+    tags: ["world-literature"],
   },
   {
-    "slug": "miracle_mongers_and_their_methods",
-    "title": "Miracle Mongers and Their Methods",
-    "author": "Unknown",
-    "genre": "curiosities",
-    "genreLabel": "Curiosities",
-    "chunks": 149,
-    "excerpt": "the effect of novelty on ignorance. \" Yet we are so created that without something to wonder at we should find life scarcely worth living. That fact does not make ignorance bliss, or make it \"folly to be wise.\" For the wisest man never gets beyond the reach of novelty, nor can ever make it his boast that there is nothing he is ignorant of ; on the con- trary, the wiser he…",
-    "tags": [
-      "curiosities"
-    ]
-  }
+    slug: "the_divine_comedy_longfellows_translation",
+    title: "The Divine Comedy (Longfellow's Translation)",
+    author: "Dante Alighieri",
+    genre: "world-literature",
+    genreLabel: "World Literature",
+    chunks: 1437,
+    excerpt: "Sitteth Peschiera, fortress fair and strong, To front the Brescians and the Bergamasks, Where round about the bank descendeth lowest. There of necessity must fall whatever In bosom of Benaco cannot stay, And grows a river down through verdant pastures. Soon as the water doth…",
+    tags: ["world-literature"],
+  },
 ];
