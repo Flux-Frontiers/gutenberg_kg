@@ -6,6 +6,10 @@ annulus of genre groves. You drive a lantern cart through them.
 
 This directory is additive — it does not replace the PyVista / Qt viewer.
 
+See **[FEATURES.md](FEATURES.md)** for the backlog. Next: a real sky with
+stars and weather.
+
+
 ## Run it
 
 From this folder:
