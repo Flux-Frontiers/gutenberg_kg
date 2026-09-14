@@ -48,14 +48,23 @@ export function ForestApp() {
 
   useEffect(() => {
     function onKey(e: KeyboardEvent) {
-      if (e.code === "Escape") useGame.getState().pause();
-      if (e.code === "KeyL" && !(e.target instanceof HTMLInputElement)) {
-        useGame.getState().toggleLibrary();
+      if (e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement) return;
+      const st = useGame.getState();
+      if (e.code === "Escape") st.pause();
+      if (e.code === "KeyL") st.toggleLibrary();
+      if (e.code === "KeyG") st.toggleAtlas();
+      if (e.code === "KeyQ") st.toggleCircuit();
+      if (e.code === "KeyH" && forest) {
+        st.selectGrove(null);
+        st.requestJump(
+          { x: forest.spawn.x, z: forest.spawn.z, yaw: forest.spawn.yaw },
+          "Hamlet · the press",
+        );
       }
     }
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, []);
+  }, [forest]);
 
   return (
     <main className="relative h-dvh w-full overflow-hidden bg-bg text-fg" style={{ touchAction: "none" }}>

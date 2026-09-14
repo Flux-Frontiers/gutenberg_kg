@@ -10,7 +10,8 @@ export function PauseOverlay() {
       <div className="w-[min(100%-2rem,24rem)] rounded-xl border border-border bg-surface p-6">
         <h2 className="font-display text-3xl">Paused</h2>
         <p className="mt-2 text-sm leading-relaxed text-muted">
-          A left, D right, from behind the cart. The forest keeps its season until you change it.
+          A left, D right, from behind the cart. Lost? Open Groves, tap a genre on
+          the map, or ride the ring. Steer to hop off the rail.
         </p>
         <button
           type="button"

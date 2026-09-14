@@ -6,6 +6,7 @@ import { useGame } from "./store";
 export function TouchControls() {
   const collect = useGame((s) => s.collect);
   const nearbySlug = useGame((s) => s.nearbySlug);
+  const toggleAtlas = useGame((s) => s.toggleAtlas);
   const area = useRef<HTMLDivElement>(null);
   const pid = useRef<number | null>(null);
 
@@ -49,15 +50,24 @@ export function TouchControls() {
       >
         <span className="absolute inset-0 m-auto size-10 rounded-full border border-border bg-bg/80" />
       </div>
-      <button
-        type="button"
-        className="pointer-events-auto min-h-14 min-w-14 rounded-full border border-border bg-primary px-4 text-sm font-medium text-primary-fg"
-        onClick={() => {
-          if (nearbySlug) collect(nearbySlug, bookBySlug(nearbySlug)?.title ?? "Book");
-        }}
-      >
-        Read
-      </button>
+      <div className="pointer-events-auto flex flex-col items-end gap-2">
+        <button
+          type="button"
+          className="min-h-11 rounded-full border border-border bg-surface px-4 text-sm"
+          onClick={toggleAtlas}
+        >
+          Groves
+        </button>
+        <button
+          type="button"
+          className="min-h-14 min-w-14 rounded-full border border-border bg-primary px-4 text-sm font-medium text-primary-fg"
+          onClick={() => {
+            if (nearbySlug) collect(nearbySlug, bookBySlug(nearbySlug)?.title ?? "Book");
+          }}
+        >
+          Read
+        </button>
+      </div>
     </div>
   );
 }

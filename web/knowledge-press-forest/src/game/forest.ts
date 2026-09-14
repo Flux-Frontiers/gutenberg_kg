@@ -38,9 +38,27 @@ export type TreeSite = {
   leafCount: number;
 };
 
+export type RoadSeg = {
+  ax: number;
+  az: number;
+  bx: number;
+  bz: number;
+  kind: "spoke" | "ring";
+};
+
+export type Waypoint = {
+  x: number;
+  z: number;
+  yaw: number;
+  genre: string;
+  label: string;
+};
+
 export type Forest = {
   trees: TreeSite[];
   groves: Grove[];
+  roads: RoadSeg[];
+  circuit: Waypoint[];
   wood: {
     count: number;
     pos: Float32Array;
@@ -70,6 +88,22 @@ export function getForest(): Forest {
   if (cached) return cached;
   cached = buildForest();
   return cached;
+}
+
+/** Stand just outside a grove, facing its heart. */
+export function groveApproach(g: Grove): Waypoint {
+  const dist = Math.hypot(g.x, g.z) || 1;
+  const ux = g.x / dist;
+  const uz = g.z / dist;
+  const stand = Math.max(7, dist - g.radius - 1.4);
+  const x = ux * stand;
+  const z = uz * stand;
+  const yaw = Math.atan2(-ux, -uz);
+  return { x, z, yaw, genre: g.genre, label: g.label };
+}
+
+export function groveByGenre(forest: Forest, genre: string): Grove | undefined {
+  return forest.groves.find((g) => g.genre === genre);
 }
 
 function buildForest(): Forest {
@@ -168,9 +202,33 @@ function buildForest(): Forest {
     spawnYaw = Math.atan2(-dx / dist, -dz / dist);
   }
 
+  const circuit = groves
+    .map((g) => groveApproach(g))
+    .sort((a, b) => Math.atan2(a.z, a.x) - Math.atan2(b.z, b.x));
+
+  const roads: RoadSeg[] = [];
+  const hub = 3.6;
+  for (const wp of circuit) {
+    const d = Math.hypot(wp.x, wp.z) || 1;
+    roads.push({
+      ax: (wp.x / d) * hub,
+      az: (wp.z / d) * hub,
+      bx: wp.x,
+      bz: wp.z,
+      kind: "spoke",
+    });
+  }
+  for (let i = 0; i < circuit.length; i++) {
+    const a = circuit[i]!;
+    const b = circuit[(i + 1) % circuit.length]!;
+    roads.push({ ax: a.x, az: a.z, bx: b.x, bz: b.z, kind: "ring" });
+  }
+
   return {
     trees,
     groves,
+    roads,
+    circuit,
     wood: {
       count: woodPos.length / 3,
       pos: new Float32Array(woodPos),

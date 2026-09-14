@@ -33,7 +33,9 @@ export function StartScreen({
           <li className="rounded-md border border-border bg-surface px-3 py-2">W / S — throttle</li>
           <li className="rounded-md border border-border bg-surface px-3 py-2">A / D — steer</li>
           <li className="rounded-md border border-border bg-surface px-3 py-2">E — read the nearest tree</li>
-          <li className="rounded-md border border-border bg-surface px-3 py-2">Shift — faster along the path</li>
+          <li className="rounded-md border border-border bg-surface px-3 py-2">G — grove atlas · tap the map to jump</li>
+          <li className="rounded-md border border-border bg-surface px-3 py-2">Q — ride the ring road</li>
+          <li className="rounded-md border border-border bg-surface px-3 py-2">H — return to Hamlet</li>
         </ul>
 
         <div className="mt-7 flex flex-wrap gap-2">

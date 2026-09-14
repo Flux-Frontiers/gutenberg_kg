@@ -22,12 +22,20 @@ Open the URL Vite prints. Click **Start driving**.
 | **W / S** | throttle / reverse |
 | **A / D** | steer left / right (chase camera) |
 | **E** | read the nearest tree into the press |
+| **G** | grove atlas — jump to a genre |
+| **Q** | ride the ring road (steer to hop off) |
+| **H** | return to Hamlet |
 | **L** | open the press (collected books) |
 | **Esc** | pause |
 
+Click a grove on the minimap to jump there. The cart is **not** locked to rails
+unless you ride the ring. Dirt spokes run from the press to each grove so the
+path is readable from the chase camera.
+
 On a phone, use the on-screen stick. Type a word in the lantern field to
-light matching groves (`stoic`, `freedom`, `fire`, `sea`). Switch season to
-**Winter** to drop the canopy and read the wood.
+light matching groves (`stoic`, `freedom`, `fire`, `sea`) — the lantern trail
+points at the nearest hit. Switch season to **Winter** to drop the canopy and
+read the wood.
 
 ## Map to the PyVista stack
 
@@ -49,13 +57,13 @@ raise the caps in `growTree.ts` if you want denser Hamlet-scale skeletons.
 ```
 catalog.ts     253 books: genre, chunks, excerpt, tags
 growTree.ts    space colonization + pipe-model radii + leaf points
-forest.ts      grove layout, instance buffers, spawn at Hamlet
+forest.ts      grove layout, roads, circuit waypoints, spawn at Hamlet
 seasons.ts     canopy density + leaf / fog / ground palettes
-sim.ts         cart pose, throttle, steer, trunk collision
+sim.ts         cart pose, throttle, steer, trunk collision, teleport
 Player.tsx     lantern cart + chase camera (A = left from behind)
 Trees.tsx      InstancedMesh wood cylinders + icosahedron leaves
-World.tsx      ground, fog, hemisphere light, central plinth
-HUD.tsx        plaque, minimap, lantern query, press, quests
+World.tsx      ground, roads, lantern trail, fog, plinth
+HUD.tsx        plaque, minimap jump, atlas, lantern query, press
 ```
 
 To grow from the real corpus instead of the bundled catalog, replace

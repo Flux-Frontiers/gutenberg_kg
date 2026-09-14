@@ -56,6 +56,14 @@ function persist(s: { library: string[]; grovesVisited: string[]; season: Season
   }
 }
 
+export type TravelMode = "free" | "circuit";
+
+export type JumpPose = {
+  x: number;
+  z: number;
+  yaw: number;
+};
+
 export type GameStore = {
   playing: boolean;
   paused: boolean;
@@ -73,6 +81,10 @@ export type GameStore = {
   libraryOpen: boolean;
   helpOpen: boolean;
   lastReadSlug: string | null;
+  selectedGrove: string | null;
+  atlasOpen: boolean;
+  travelMode: TravelMode;
+  jump: JumpPose | null;
   play: () => void;
   pause: (v?: boolean) => void;
   setSeason: (s: SeasonName) => void;
@@ -85,6 +97,13 @@ export type GameStore = {
   toggleLibrary: () => void;
   toggleHelp: () => void;
   setLastRead: (slug: string | null) => void;
+  selectGrove: (genre: string | null) => void;
+  toggleAtlas: () => void;
+  setAtlasOpen: (v: boolean) => void;
+  setTravelMode: (m: TravelMode) => void;
+  toggleCircuit: () => void;
+  requestJump: (pose: JumpPose, toast?: string) => void;
+  clearJump: () => void;
 };
 
 const initial = loadSave();
@@ -106,6 +125,10 @@ export const useGame = create<GameStore>((set, get) => ({
   libraryOpen: false,
   helpOpen: false,
   lastReadSlug: null,
+  selectedGrove: null,
+  atlasOpen: false,
+  travelMode: "free",
+  jump: null,
   play: () => set({ playing: true, paused: false }),
   pause: (v) => set({ paused: v ?? !get().paused }),
   setSeason: (season) => {
@@ -133,7 +156,26 @@ export const useGame = create<GameStore>((set, get) => ({
   setNearby: (nearbySlug, nearbyDist) => set({ nearbySlug, nearbyDist }),
   setPose: (x, z, yaw, speed) => set({ x, z, yaw, speed }),
   setToast: (toast) => set({ toast }),
-  toggleLibrary: () => set({ libraryOpen: !get().libraryOpen }),
+  toggleLibrary: () => set({ libraryOpen: !get().libraryOpen, atlasOpen: false }),
   toggleHelp: () => set({ helpOpen: !get().helpOpen }),
   setLastRead: (lastReadSlug) => set({ lastReadSlug }),
+  selectGrove: (selectedGrove) => set({ selectedGrove }),
+  toggleAtlas: () => set({ atlasOpen: !get().atlasOpen, libraryOpen: false }),
+  setAtlasOpen: (atlasOpen) => set({ atlasOpen }),
+  setTravelMode: (travelMode) => set({ travelMode }),
+  toggleCircuit: () => {
+    const next = get().travelMode === "circuit" ? "free" : "circuit";
+    set({
+      travelMode: next,
+      toast: next === "circuit" ? "Riding the ring · steer to hop off" : "Free drive",
+    });
+  },
+  requestJump: (jump, toast) =>
+    set({
+      jump,
+      travelMode: "free",
+      atlasOpen: false,
+      toast: toast ?? null,
+    }),
+  clearJump: () => set({ jump: null }),
 }));
