@@ -56,7 +56,11 @@ public struct AboutView: View {
 
             Spacer(minLength: 0)
 
-            Text("© 2026 Eric G. Suchanek, PhD — Flux-Frontiers\nElastic License 2.0 · texts are public domain")
+            // The app is not Elastic-2.0 and has not been since the licence
+            // split of 2026-09-14: app/ is proprietary, the engine around it
+            // is Elastic-2.0, and the texts are public domain. Three things,
+            // and the line said one of them.
+            Text("© 2026 Eric G. Suchanek, PhD — Flux-Frontiers\nAll rights reserved · texts are public domain")
                 .font(.caption2)
                 .foregroundStyle(.secondary)
                 .multilineTextAlignment(.center)
