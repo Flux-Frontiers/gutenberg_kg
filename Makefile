@@ -244,7 +244,7 @@ endif
 # `gutenkg` on PATH. Override with e.g. `make GUTENKG=gutenkg build-corpus`.
 GUTENKG     ?= poetry run gutenkg
 
-.PHONY: init spacy-model chunk-diaries build-diaries build-corpus export-swift export-web-catalog check-pins setup build build-all rebuild rebuild-all prune kill run image-server sdxl-server sdxl-fetch chat up stop down query logs clean docs ios-devices ios-generate ios-check ios-install-corpus ios-verify-corpus ios-launch ios-deploy mac-generate mac-check mac-dev mac-dev-run mac-build mac-verify mac-notarize mac-dmg mac-notarize-dmg mac-release
+.PHONY: init spacy-model chunk-diaries build-diaries build-corpus export-swift export-web-catalog check-pins setup build build-all rebuild rebuild-all prune kill run image-server sdxl-server sdxl-fetch chat up stop down query logs clean docs ios-devices ios-generate ios-check ios-install-corpus ios-verify-corpus ios-launch ios-deploy ios-stage-corpus ios-unstage-corpus ios-archive ios-upload mac-generate mac-check mac-dev mac-dev-run mac-build mac-verify mac-notarize mac-dmg mac-notarize-dmg mac-release
 
 init:
 	$(GUTENKG) init
@@ -744,6 +744,55 @@ ios-build: ios-generate
 	  -destination 'generic/platform=iOS' -derivedDataPath build \
 	  -allowProvisioningUpdates \
 	  DEVELOPMENT_TEAM="$$TEAM" build
+
+# Copy the exported corpus into app/ios/Corpus so an archive ships it inside
+# the app. Development builds do not need this -- `make ios-install-corpus`
+# pushes the corpus to the device's Application Support instead, and
+# CorpusPacks prefers that copy over the bundled one.
+#
+# 743 MB in, 743 MB out, read in place: the packs open SQLITE_OPEN_READONLY
+# and nothing writes to them, so nothing is ever copied back out of the
+# bundle at runtime. Users download about 296 MB, since the .ipa is
+# compressed and the packs are SQLite.
+ios-stage-corpus:
+	@test -f "$(IOS_CORPUS_DIR)/manifest.json" \
+	  || { echo "No exported corpus at $(IOS_CORPUS_DIR) -- run 'make export-swift' first."; exit 1; }
+	@echo "Staging corpus into app/ios/Corpus ..."
+	@rm -rf app/ios/Corpus && mkdir -p app/ios/Corpus
+	@cp -R "$(IOS_CORPUS_DIR)/." app/ios/Corpus/
+	@du -sh app/ios/Corpus
+
+# Remove the staged corpus, so an ordinary device build stops carrying it.
+ios-unstage-corpus:
+	@rm -rf app/ios/Corpus && mkdir -p app/ios/Corpus
+	@git checkout -- app/ios/Corpus/.gitkeep 2>/dev/null || true
+	@echo "app/ios/Corpus emptied."
+
+# Release archive for App Store Connect. Requires the corpus to be staged --
+# checked rather than assumed, because an archive that builds, uploads and
+# passes review with an empty Corpus folder is an app that does nothing, and
+# the only symptom is a reviewer's rejection a week later.
+ios-archive: ios-stage-corpus ios-generate
+	@$(ios_resolve_team); \
+	cd app/ios && xcodebuild -project KnowledgePress.xcodeproj -scheme KnowledgePress \
+	  -destination 'generic/platform=iOS' -archivePath build/KnowledgePress.xcarchive \
+	  -allowProvisioningUpdates \
+	  DEVELOPMENT_TEAM="$$TEAM" archive
+
+# Export the archive as a signed .ipa and upload it to App Store Connect.
+#
+# Needs an App Store Connect API key in the keychain or ~/.appstoreconnect;
+# `xcodebuild -exportArchive` prompts otherwise. See app/RUNBOOK.md section 8.
+ios-upload: ios-archive
+	@$(ios_resolve_team); \
+	cd app/ios && xcodebuild -exportArchive \
+	  -archivePath build/KnowledgePress.xcarchive \
+	  -exportOptionsPlist ExportOptions.plist \
+	  -exportPath build/export \
+	  -allowProvisioningUpdates \
+	  && xcrun altool --upload-app --type ios \
+	     --file build/export/KnowledgePress.ipa \
+	     --apiKey "$$ASC_KEY_ID" --apiIssuer "$$ASC_ISSUER_ID"
 
 # Installs and (re)launches the build on every reachable physical device.
 #

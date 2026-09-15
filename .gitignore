@@ -226,3 +226,7 @@ renders/*
 .mcp.json
 .mcp.json.sav
 # === end KG generated artifacts ===
+
+# Staged corpus for App Store archives -- see app/ios/Corpus/.gitkeep
+app/ios/Corpus/*
+!app/ios/Corpus/.gitkeep

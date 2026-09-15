@@ -157,7 +157,40 @@ public final class CorpusPacks: @unchecked Sendable {
         return url
     }
 
-    /// Open the default corpus if one is installed, else nil.
+    /// The corpus shipped inside the app bundle, if this build carries one.
+    ///
+    /// App Store builds bundle the packs; development builds do not, and get
+    /// theirs pushed to Application Support by `make ios-install-corpus`.
+    /// `app/ios/Corpus` is an empty committed folder that `make
+    /// ios-stage-corpus` fills before an archive, so a plain `make ios-build`
+    /// and CI both compile against an empty one rather than a missing path.
+    ///
+    /// Nothing is copied out of here. The packs open `SQLITE_OPEN_READONLY`
+    /// and nothing ever writes to them, so they are read in place -- copying
+    /// would mean carrying the corpus twice, about 1.5 GB for a 743 MB
+    /// corpus, to gain nothing. `MLModel.compileModel(at:)` likewise reads
+    /// the `.mlpackage` and writes its compiled form to a cache directory,
+    /// not next to the source.
+    ///
+    /// :returns: The bundled corpus directory, or nil when this build has no
+    ///     corpus in it.
+    public static func bundledDirectory() -> URL? {
+        guard let url = Bundle.main.url(forResource: "Corpus", withExtension: nil) else {
+            return nil
+        }
+        // A staged-but-empty folder is the CI and dev case, and is not a
+        // corpus: reporting it as one turns "no corpus" into "broken corpus".
+        let manifest = url.appendingPathComponent("manifest.json")
+        return FileManager.default.fileExists(atPath: manifest.path) ? url : nil
+    }
+
+    /// Open the corpus this device has, else nil.
+    ///
+    /// Application Support wins over the bundle, deliberately. That is where
+    /// `make ios-install-corpus` pushes a freshly exported corpus during
+    /// development, and where downloaded packs would land if the corpus ever
+    /// moves to Background Assets -- in both cases the newer corpus should
+    /// beat the one frozen into the build.
     ///
     /// :param progress: Optional callback for the reason it could not open,
     ///     so the settings screen can show it instead of a silent absence.
@@ -165,15 +198,18 @@ public final class CorpusPacks: @unchecked Sendable {
     public static func installed(reportingFailure progress: ((String) -> Void)? = nil)
         -> CorpusPacks?
     {
-        guard let directory = defaultDirectory() else { return nil }
-        do {
-            return try CorpusPacks(directory: directory)
-        } catch {
-            // "Not installed" is the normal state before a download, not a
-            // fault worth reporting.
-            if case PacksError.notInstalled = error { return nil }
-            progress?(error.localizedDescription)
-            return nil
+        var lastFailure: String?
+        for directory in [defaultDirectory(), bundledDirectory()].compactMap({ $0 }) {
+            do {
+                return try CorpusPacks(directory: directory)
+            } catch {
+                // "Not installed" is the normal state before a download, not a
+                // fault worth reporting -- and not a reason to stop looking.
+                if case PacksError.notInstalled = error { continue }
+                lastFailure = error.localizedDescription
+            }
         }
+        if let lastFailure { progress?(lastFailure) }
+        return nil
     }
 }

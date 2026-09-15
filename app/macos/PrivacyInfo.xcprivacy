@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  Required for App Store submission. The answers are all "no", which is the
+  point of the app rather than an oversight:
+
+  - Retrieval, embedding and on-device synthesis run entirely on the device.
+  - Private Cloud Compute sends the question and the packed passages to Apple,
+    under Apple's own privacy guarantees, and is opt-in per answer via the
+    engine picker. Apple does not treat that as data the app collects.
+  - The worker engine talks to a server the reader configures themselves, on
+    their own network. Nothing is sent anywhere by default.
+  - Conversations are stored in Application Support on the device and are
+    never transmitted.
+
+  NSPrivacyAccessedAPITypes is empty because the app touches none of the
+  required-reason APIs: no UserDefaults reads of another app's suite, no file
+  timestamps, no disk space, no active keyboard, no system boot time.
+  UserDefaults *is* used, for this app's own settings, which falls under
+  CA92.1 -- declared below, since Apple requires the declaration even for
+  that ordinary use.
+-->
+<plist version="1.0">
+<dict>
+    <key>NSPrivacyTracking</key>
+    <false/>
+    <key>NSPrivacyTrackingDomains</key>
+    <array/>
+    <key>NSPrivacyCollectedDataTypes</key>
+    <array/>
+    <key>NSPrivacyAccessedAPITypes</key>
+    <array>
+        <dict>
+            <key>NSPrivacyAccessedAPIType</key>
+            <string>NSPrivacyAccessedAPICategoryUserDefaults</string>
+            <key>NSPrivacyAccessedAPITypeReasons</key>
+            <array>
+                <!-- CA92.1: access only this app's own defaults. -->
+                <string>CA92.1</string>
+            </array>
+        </dict>
+    </array>
+</dict>
+</plist>
