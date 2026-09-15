@@ -31,6 +31,7 @@ VLLM_ENDPOINT_URL  Optional OpenAI-compatible endpoint for synthesis (oMLX/Ollam
 VLLM_API_KEY       Bearer token for the synthesis endpoint.  Omit for Ollama.
 VLLM_MODEL         Model ID.  Default: Qwen3-8B-MLX-4bit
 SYNTH_MAX_K        Max snippets fed to synthesis.  Default: 12
+SYNTH_PROMPT       System prompt: guide | worker.  Default: guide
 
 Request schema
 --------------
@@ -78,6 +79,7 @@ import runpod
 from gutenberg_kg.diary_meta import DIARY_META as _DIARY_META
 from gutenberg_kg.diary_meta import diary_slug as _diary_slug
 from gutenberg_kg.serve.fusion import merge_by_rank as _merge_by_rank
+from gutenberg_kg.synthesis_prompts import system_prompt
 from gutenberg_kg.vector_store import resolve_vector_paths
 
 # ---------------------------------------------------------------------------
@@ -87,6 +89,7 @@ from gutenberg_kg.vector_store import resolve_vector_paths
 GUTENBERG_ROOT = Path(os.environ.get("GUTENBERG_ROOT", "/workspace/gutenberg"))
 REGISTRY_PATH = Path("/tmp/gutenberg_worker/registry.sqlite")
 SYNTH_MAX_K = int(os.environ.get("SYNTH_MAX_K", "12"))
+SYNTH_PROMPT = os.environ.get("SYNTH_PROMPT", "")
 EMBED_MODEL = os.environ.get("EMBED_MODEL", "BAAI/bge-small-en-v1.5")
 HANDLER_SECRET = os.environ.get("HANDLER_SECRET", "")
 
@@ -999,7 +1002,9 @@ def handler(job: dict) -> dict:
         # "Answer generation failed" branch has always rendered — that branch
         # was unreachable until now because nothing ever set the key.
         try:
-            synthesis = active_synth.synthesize_rag(query, hits, model=model, max_k=SYNTH_MAX_K)
+            synthesis = active_synth.synthesize_rag(
+                query, hits, model=model, max_k=SYNTH_MAX_K, system=system_prompt(SYNTH_PROMPT)
+            )
         except Exception as exc:  # noqa: BLE001 — any backend failure degrades the same way
             synthesis_error = f"{type(exc).__name__}: {exc}"
             print(f"[query] synthesis FAILED: {synthesis_error}")
