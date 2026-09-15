@@ -4,8 +4,13 @@
 name: KnowledgePress
 options:
   bundleIdPrefix: com.fluxfrontiers
+  # 26.0, not the 18.0 this claimed until 2026-09-15. That was fiction:
+  # OnDeviceSynthesis is @available(iOS 26.0) and PrivateCloudSynthesis is 27,
+  # so on iOS 18 the app installs, opens, and has no answer engine at all.
+  # 26 is also what Apple-Hosted Background Assets needs, should the corpus
+  # ever move out of the bundle -- so the floor costs nothing and buys that.
   deploymentTarget:
-    iOS: "18.0"
+    iOS: "26.0"
   createIntermediateGroups: true
 
 packages:
@@ -22,6 +27,12 @@ targets:
       # assets/brand-system/. Committed rather than built, because the glyph
       # depends on which serif is installed and CI has different fonts.
       - Assets.xcassets
+      - PrivacyInfo.xcprivacy
+      # A folder reference, so the corpus keeps its layout inside the bundle
+      # and CorpusPacks can open it as a directory. Empty in development and
+      # in CI; `make ios-stage-corpus` fills it before an archive.
+      - path: Corpus
+        type: folder
     dependencies:
       - package: GutenbergKGKit
         product: KnowledgePressUI
@@ -46,6 +57,10 @@ targets:
       properties:
         CFBundleDisplayName: Knowledge Press
         CFBundleShortVersionString: "1.0"
+        # Without this, every single upload stops to ask the export-compliance
+        # question by hand. False is correct here: the app uses no encryption
+        # beyond HTTPS, which is exempt.
+        ITSAppUsesNonExemptEncryption: false
         UILaunchScreen: {}
         UISupportedInterfaceOrientations:
           - UIInterfaceOrientationPortrait

@@ -894,7 +894,93 @@ Do not read a local `accepted` as "ready to send someone."
 
 ---
 
-## 8. Troubleshooting
+## 8. Ship the iPhone app to the App Store
+
+The Mac section above produces a notarized app you hand someone. This one
+produces a build App Store Connect will accept.
+
+```sh
+make export-swift        # the corpus, if it is not already built
+make ios-stage-corpus    # copy it into app/ios/Corpus
+make ios-archive         # Release .xcarchive (stages the corpus itself)
+make ios-upload          # export the .ipa and send it to App Store Connect
+make ios-unstage-corpus  # empty the folder again when you are done
+```
+
+### The corpus ships inside the app
+
+743 MB of packs, bundled as a folder reference. That is well inside Apple's
+4 GB limit for iOS 9 and later, and the reader downloads about **296 MB**, not
+743: the `.ipa` is compressed and the packs are SQLite, which compresses about
+3.5 to 1.
+
+Nothing is copied at runtime. The packs open `SQLITE_OPEN_READONLY` and
+nothing in the app ever writes to them, so they are read in place -- copying
+them into Application Support on first launch would carry the corpus twice,
+about 1.5 GB, to gain nothing. `MLModel.compileModel(at:)` reads the
+`.mlpackage` the same way and writes its compiled form to a cache directory.
+
+`app/ios/Corpus` is committed **empty**, with a `.gitkeep` that explains why:
+XcodeGen fails the build outright on a folder reference whose path does not
+exist, so CI and ordinary device builds need the folder to be there and empty.
+`CorpusPacks.bundledDirectory()` treats a folder with no `manifest.json` as
+"this build has no corpus", which is exactly that case.
+
+**An installed corpus beats a bundled one.** `CorpusPacks.installed()` tries
+Application Support first, then the bundle. That keeps `make
+ios-install-corpus` working as the development loop, and means a downloaded
+corpus would win over the frozen one if the corpus ever moves to Background
+Assets.
+
+The check worth keeping: `ios-archive` refuses to run without a staged corpus.
+An archive that builds, uploads and passes review with an empty `Corpus`
+folder is an app that does nothing, and the only symptom is a rejection a week
+later.
+
+### What the deployment target really is
+
+`26.0`, raised from the `18.0` this spec claimed until 2026-09-15. That was
+fiction: `OnDeviceSynthesis` is `@available(iOS 26.0)` and
+`PrivateCloudSynthesis` is 27, so on iOS 18 the app installs, opens, and has
+no answer engine at all. 26 is also the floor for Apple-Hosted Background
+Assets, so the honest number is the one that keeps that door open.
+
+### Two keys that are not optional
+
+- **`PrivacyInfo.xcprivacy`** -- required at submission since 2024, in both
+  `app/ios` and `app/macos`. Every answer in it is "no", which is the product
+  rather than an oversight; the one declaration is `CA92.1`, this app reading
+  its own `UserDefaults`.
+- **`ITSAppUsesNonExemptEncryption: false`** in `Info.plist`. Without it every
+  upload stops to ask the export-compliance question by hand. False is
+  correct: nothing here encrypts beyond HTTPS, which is exempt.
+
+### Credentials for `ios-upload`
+
+`xcrun altool` wants an App Store Connect API key:
+
+```sh
+export ASC_KEY_ID=…       # the key's ID
+export ASC_ISSUER_ID=…    # the issuer UUID from the Keys tab
+# the .p8 itself lives in ~/.appstoreconnect/private_keys/
+```
+
+Create it at App Store Connect → Users and Access → Integrations → App Store
+Connect API. The `.p8` downloads exactly once.
+
+### Still to do before a first submission
+
+- [ ] Answers verified on the phone with the network off -- section 6's open
+      item, and the claim the whole product rests on
+- [ ] Screenshots, description, keywords, support URL, age rating in App Store
+      Connect
+- [ ] A privacy policy URL, which App Store Connect requires even when the
+      privacy manifest declares no collection
+- [ ] A first TestFlight build, installed from TestFlight on a device that has
+      never had a development build -- the only way to prove the bundled
+      corpus is found
+
+## 9. Troubleshooting
 
 These are the failures I expect, in the order I think they are likely.
 
@@ -999,7 +1085,7 @@ rather than not saving.
 
 ---
 
-## 9. If you get stuck
+## 10. If you get stuck
 
 Send me:
 

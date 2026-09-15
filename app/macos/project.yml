@@ -30,6 +30,7 @@ targets:
         name: Sources
       # See app/ios/project.yml — generated, but committed.
       - Assets.xcassets
+      - PrivacyInfo.xcprivacy
     dependencies:
       - package: GutenbergKGKit
         product: KnowledgePressUI
@@ -51,6 +52,9 @@ targets:
       properties:
         CFBundleDisplayName: Knowledge Press
         CFBundleShortVersionString: "1.0"
+        # See app/ios/project.yml: spares every upload the by-hand
+        # export-compliance question.
+        ITSAppUsesNonExemptEncryption: false
         LSMinimumSystemVersion: "14.0"
         NSHumanReadableCopyright: "© 2026 Eric G. Suchanek, PhD. Elastic-2.0."
         # The worker is reachable over plain HTTP on the LAN, same as iOS.
