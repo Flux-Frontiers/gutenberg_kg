@@ -77,3 +77,15 @@ contract: update it in lockstep with `serve/handler.py`.
 `ContextBudgeterTests` is the other contract worth keeping honest: it pins the
 prompt shape against `kg_utils/synthesis/_text.py`, so a change there should
 break a test here.
+
+## License
+
+This directory is **not** under the repository's Elastic License 2.0. It is
+the source of a shipping App Store application and carries a separate
+proprietary license: read it, build it, run it on your own hardware, but do
+not redistribute it or publish it to any app marketplace. See
+[LICENSE](LICENSE) here, and [TRADEMARK.md](../TRADEMARK.md) for the name and
+the icon, which no code license covers.
+
+`fm-repro/` is excepted and stays Elastic-2.0, so that Apple and anyone else
+can run the reproducer freely.

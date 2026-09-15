@@ -1,0 +1,69 @@
+The Knowledge Press -- Proprietary License
+Copyright (c) 2026 Eric G. Suchanek, PhD, doing business as Flux-Frontiers.
+All rights reserved.
+
+"Flux-Frontiers" is a trade name, not a legal entity. Every right in this
+software is held by Eric G. Suchanek personally, and "the licensor" below
+means that person.
+
+## Scope
+
+This license governs everything under `app/`, which is the source of The
+Knowledge Press, a native iOS and macOS application distributed through the
+Apple App Store. It does NOT govern the rest of this repository. The
+GutenbergKG engine, its Python package, its documentation, and its corpus
+tooling remain under the Elastic License 2.0; see the LICENSE file at the
+repository root.
+
+Two directories under `app/` are excepted and remain under the Elastic License
+2.0, as their file headers state:
+
+  - `app/fm-repro/`, a minimal reproducer for an Apple Foundation Models
+    defect, published so that Apple and other developers may run it freely.
+
+## Grant
+
+You may read this source, and you may build and run it on hardware you own or
+control, for the purposes of evaluating it, studying it, verifying the claims
+this project makes about it, or contributing to it.
+
+## Limitations
+
+You may not redistribute this software, in source or compiled form, whether
+modified or unmodified.
+
+You may not publish, submit, or distribute this software, or any work derived
+from it, through the Apple App Store or any other application marketplace,
+storefront, or distribution channel.
+
+You may not provide this software to third parties as a hosted or managed
+service.
+
+You may not use the name "The Knowledge Press", the name "Knowledge Press",
+the application icon, or any other Flux-Frontiers mark in connection with any
+software you distribute. See TRADEMARK.md at the repository root.
+
+You may not alter, remove, or obscure any licensing, copyright, or other
+notices in this software.
+
+## Contributions
+
+If you contribute code to `app/`, you grant Eric G. Suchanek, and any legal
+entity to which the licensor later assigns this software, a perpetual, worldwide,
+irrevocable, royalty-free license to use, modify, and distribute that
+contribution as part of this software, including in versions distributed
+through the App Store.
+
+## No warranty
+
+This software is provided "as is", without warranty of any kind, express or
+implied, including but not limited to the warranties of merchantability,
+fitness for a particular purpose, and noninfringement. In no event shall the
+copyright holder be liable for any claim, damages, or other liability arising
+from, out of, or in connection with this software or its use.
+
+## Asking for more
+
+The restrictions above exist to keep a copy of this application off the App
+Store under someone else's name. They are not meant to stop anything else. If
+you want to do something this license forbids, ask: suchanek@mac.com.
