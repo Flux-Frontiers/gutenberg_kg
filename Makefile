@@ -244,7 +244,7 @@ endif
 # `gutenkg` on PATH. Override with e.g. `make GUTENKG=gutenkg build-corpus`.
 GUTENKG     ?= poetry run gutenkg
 
-.PHONY: init spacy-model chunk-diaries build-diaries build-corpus export-swift export-web-catalog check-pins setup build build-all rebuild rebuild-all prune kill run image-server sdxl-server sdxl-fetch chat up stop down query logs clean docs ios-devices ios-generate ios-check ios-install-corpus ios-verify-corpus ios-launch ios-deploy mac-generate mac-check mac-build mac-verify mac-notarize mac-dmg mac-notarize-dmg mac-release
+.PHONY: init spacy-model chunk-diaries build-diaries build-corpus export-swift export-web-catalog check-pins setup build build-all rebuild rebuild-all prune kill run image-server sdxl-server sdxl-fetch chat up stop down query logs clean docs ios-devices ios-generate ios-check ios-install-corpus ios-verify-corpus ios-launch ios-deploy mac-generate mac-check mac-dev mac-dev-run mac-build mac-verify mac-notarize mac-dmg mac-notarize-dmg mac-release
 
 init:
 	$(GUTENKG) init
@@ -821,6 +821,29 @@ mac-build: mac-generate
 	  CODE_SIGN_STYLE=Manual DEVELOPMENT_TEAM="$$TEAM" \
 	  CODE_SIGN_IDENTITY="$$IDENTITY" OTHER_CODE_SIGN_FLAGS="--timestamp" \
 	  build | tail -3
+
+# A Debug build signed with the Apple Development identity through automatic
+# signing, which is the only way a Mac build gets a provisioning profile
+# carrying the Private Cloud Compute entitlement today. Runs from the build
+# directory; it is not notarized and is not for anyone else's machine. Same
+# `-allowProvisioningUpdates` lesson as ios-build: without it xcodebuild
+# cannot mint the profile and fails with "No profiles for ... were found".
+# A Mac App Development profile also names the Mac it runs on, so the first
+# build on a machine fails with `Device "<host>" isn't registered in your
+# developer account` unless `-allowProvisioningDeviceRegistration` lets
+# xcodebuild add it. Both flags together are what Xcode's own Run button does.
+mac-dev: mac-generate
+	@$(ios_resolve_team); \
+	cd app/macos && xcodebuild -project KnowledgePress.xcodeproj \
+	  -scheme KnowledgePress -destination 'platform=macOS' \
+	  -derivedDataPath build -configuration Debug \
+	  -allowProvisioningUpdates -allowProvisioningDeviceRegistration \
+	  CODE_SIGN_STYLE=Automatic DEVELOPMENT_TEAM="$$TEAM" \
+	  build
+
+# Launch the mac-dev build; see mac-dev.
+mac-dev-run: mac-dev
+	open app/macos/build/Build/Products/Debug/KnowledgePress.app
 
 # The checks worth making before spending a notarization round trip. The
 # entitlements check is the one that matters: Xcode injects

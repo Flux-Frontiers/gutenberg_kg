@@ -24,6 +24,42 @@ public enum SynthesisPrompt {
         Cite the author and work when relevant.
         """
 
+    /// Instructions written for Apple's on-device and Private Cloud Compute
+    /// models, which are far smaller than the worker's and answer the
+    /// worker's `_RAG_SYSTEM` above with one clipped sentence.
+    ///
+    /// Follows Apple's own guidance for the framework: a role in the first
+    /// sentence, the task stated once, uppercase on the rules that matter,
+    /// and an explicit shape for the output -- the model obeys "two or three
+    /// short paragraphs" where "Be concise" collapsed to a single line.
+    ///
+    /// Deliberately does NOT ask the model to ignore off-topic passages.
+    /// Tried; a 3B model cannot judge relevance and summarised every passage
+    /// it was told to skip. Relevance is `ContextBudgeter`'s job.
+    ///
+    /// Not mirrored in `_text.py`: the server model is fine with the
+    /// original, and the point of keeping `ragInstructions` verbatim is that
+    /// the two can still be compared under identical instructions
+    /// (`SynthesisTuning.Instructions.workerParity`).
+    public static let guideInstructions = """
+        You are a literary guide to a library of classic books. A reader has \
+        searched the library for a topic and is shown the passages that \
+        matched. Your job is to explain what those passages say about the \
+        reader's topic.
+
+        RULES:
+        - Use ONLY the source passages. Do NOT add anything from your own \
+        knowledge. If the passages do not answer the topic, say which part \
+        is missing rather than filling it in.
+        - If the topic is a phrase rather than a question, treat it as "What \
+        do these passages say about this?"
+        - Name the work and author the first time you draw on each one.
+        - Answer in plain prose, two or three short paragraphs. No bullet \
+        points, no headings. Quote at most one sentence at a time.
+        - Be concrete: who, what, where, and what happened, as the passages \
+        tell it.
+        """
+
     /// `_IMAGE_REWRITE_SYSTEM` — prose to image prompt, run on device so the
     /// "🎨 Render response" path needs one fewer server round-trip.
     public static let imageRewriteInstructions = """

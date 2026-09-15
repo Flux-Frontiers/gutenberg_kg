@@ -87,6 +87,14 @@ struct AssistantTurnView: View {
             if turn.isStreaming {
                 StreamingCaret()
             }
+            // Text and a failure together means the answer was cut off, not
+            // refused: say so, or the reader takes a truncated answer for a
+            // finished one.
+            if let failure = turn.synthesisFailure {
+                Label(failure.displayMessage, systemImage: "info.circle")
+                    .font(.caption)
+                    .foregroundStyle(.orange)
+            }
             if let metrics = turn.metrics {
                 HStack(spacing: 6) {
                     if turn.engine == .onDevice {

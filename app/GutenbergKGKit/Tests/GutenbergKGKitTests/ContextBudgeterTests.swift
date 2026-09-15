@@ -202,6 +202,10 @@ private let lorem = String(repeating: "conformity to universal law ", count: 200
         // independently rather than as "== .worker".
         #expect(ContextBudgeter.Budget.privateCloudCompute.contextWindow == 32_768)
         #expect(ContextBudgeter.Budget.privateCloudCompute.maxPassages == 12)
+        // Wider than on-device: the server model does not loop on repeated
+        // sources, and two per work left 31K of the window empty.
+        #expect(ContextBudgeter.Budget.privateCloudCompute.maxPassagesPerSource == 4)
+        #expect(ContextBudgeter.Budget.onDevice.maxPassagesPerSource == 2)
     }
 }
 
@@ -230,6 +234,19 @@ private let lorem = String(repeating: "conformity to universal law ", count: 200
         // The one line that makes an answer citable rather than plausible.
         #expect(SynthesisPrompt.ragInstructions.contains("ONLY the provided source passages"))
         #expect(SynthesisPrompt.ragInstructions.contains("Do NOT use any prior knowledge"))
+        // The guide set keeps the same rule in its own words.
+        #expect(SynthesisPrompt.guideInstructions.contains("Use ONLY the source passages"))
+        #expect(SynthesisPrompt.guideInstructions.contains("Do NOT add anything from your own"))
+        // And does not ask the model to be brief, which is what collapsed
+        // answers to one sentence on the small models.
+        #expect(!SynthesisPrompt.guideInstructions.lowercased().contains("concise"))
+    }
+
+    @Test func guideInstructionsAreOneParagraphFlowingText() {
+        // The `\` continuations must join lines with exactly one space;
+        // a missing one welds two words together and the model reads a typo.
+        #expect(SynthesisPrompt.guideInstructions.contains("A reader has searched the library"))
+        #expect(!SynthesisPrompt.guideInstructions.contains("  "))
     }
 }
 
@@ -237,6 +254,7 @@ private let lorem = String(repeating: "conformity to universal law ", count: 200
 
     @Test func guardrailRefusalsCanBeRetriedRemotely() {
         #expect(SynthesisFailure.guardrail.isRecoverableRemotely)
+        #expect(SynthesisFailure.guardrailCutShort.isRecoverableRemotely)
         #expect(SynthesisFailure.contextOverflow.isRecoverableRemotely)
         // Nothing to answer from is not the backend's fault.
         #expect(!SynthesisFailure.noPassages.isRecoverableRemotely)

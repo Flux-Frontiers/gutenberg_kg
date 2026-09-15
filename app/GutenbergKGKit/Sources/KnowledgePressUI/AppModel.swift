@@ -291,6 +291,37 @@ public final class AppModel {
         return resolution
     }
 
+    /// The Foundation Models knobs: temperature, greedy decoding, the
+    /// per-work passage cap, which instructions, permissive guardrails.
+    ///
+    /// Persisted as JSON, for the same reason the worker address is: a
+    /// reader comparing answers at two temperatures should not find the
+    /// slider back at its default after a relaunch. Applied per question --
+    /// the backend is built fresh in `synthesisBackend`, so a change here is
+    /// in force for the very next answer.
+    var synthesisTuning: SynthesisTuning {
+        get { storedSynthesisTuning }
+        set {
+            storedSynthesisTuning = newValue
+            if let data = try? JSONEncoder().encode(newValue) {
+                AppModel.defaults.set(data, forKey: AppModel.synthesisTuningKey)
+            }
+        }
+    }
+
+    private var storedSynthesisTuning: SynthesisTuning = AppModel.initialSynthesisTuning()
+
+    static let synthesisTuningKey = "synthesisTuning"
+
+    static func initialSynthesisTuning() -> SynthesisTuning {
+        guard let data = defaults.data(forKey: synthesisTuningKey),
+            let tuning = try? JSONDecoder().decode(SynthesisTuning.self, from: data)
+        else { return .default }
+        return tuning
+    }
+
+    func resetSynthesisTuning() { synthesisTuning = .default }
+
     /// Which engine writes the answer. Defaults to on-device when the
     /// hardware allows, which is the point of the app.
     var engine: AnswerEngine = .off
@@ -666,12 +697,42 @@ public final class AppModel {
         return client
     }
 
+    /// Built per question rather than held, so `synthesisTuning` applies to
+    /// the next answer. `onDevice` and `privateCloud` stay as the long-lived
+    /// handles for availability, quota and prewarming.
     private var synthesisBackend: (any SynthesisBackend)? {
         switch engine {
-        case .onDevice: return onDevice
-        case .privateCloud: return privateCloud
+        case .onDevice: return makeOnDeviceSynthesis(tuning: synthesisTuning)
+        case .privateCloud: return makePrivateCloudSynthesis(tuning: synthesisTuning)
         case .worker, .off: return nil
         }
+    }
+
+    /// One question, answered and returned, for `KnowledgePress --ask`.
+    ///
+    /// The same `send` the chat uses, awaited to completion. Exists so a
+    /// signed Mac build can be driven from a terminal: Private Cloud Compute
+    /// needs a provisioning profile, which `swift run` and `swift test` can
+    /// never carry, so this is the only way to reproduce a PCC answer
+    /// without tapping through the app.
+    ///
+    /// :param tuning: Settings for this one answer, or nil for whatever the
+    ///     app has stored. Not persisted either way; a terminal experiment
+    ///     must not move the reader's slider.
+    public func answerHeadless(
+        _ question: String, corpus: String, engine: AnswerEngine, tuning: SynthesisTuning? = nil
+    ) async -> HeadlessAnswer {
+        self.engine = engine
+        if let tuning { storedSynthesisTuning = tuning }
+        send(question, corpusOverride: corpus)
+        await activeQuery?.value
+        guard let turn = turns.last else {
+            return HeadlessAnswer(answer: "", metrics: nil, failure: "no turn was recorded")
+        }
+        return HeadlessAnswer(
+            answer: turn.answer,
+            metrics: turn.metrics,
+            failure: turn.errorMessage ?? turn.synthesisFailure?.displayMessage)
     }
 
     /// Open the installed corpus, if there is one.
@@ -924,5 +985,24 @@ public final class AppModel {
                 ?? error.localizedDescription
         }
         persistActiveConversation()
+    }
+}
+
+/// What `AppModel.answerHeadless` hands back to `KnowledgePress --ask`.
+public struct HeadlessAnswer: Sendable {
+    public let answer: String
+    public let metrics: SynthesisMetrics?
+    public let failure: String?
+
+    /// The answer, then a one-line footer in the shape of the chat's stats
+    /// caption, so terminal output reads like the app.
+    public func render() -> String {
+        var out = answer
+        if let m = metrics {
+            out += "\n\n[\(m.model) · \(m.elapsedMs) ms · \(m.passagesUsed) passages, "
+            out += "\(m.passagesDropped) dropped · ~\(m.estimatedPromptTokens) prompt tokens]"
+        }
+        if let failure { out += "\n\n[failed: \(failure)]" }
+        return out
     }
 }

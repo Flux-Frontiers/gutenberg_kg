@@ -33,6 +33,19 @@ targets:
     dependencies:
       - package: GutenbergKGKit
         product: KnowledgePressUI
+    # Private Cloud Compute, same entitlement as app/ios/project.yml and the
+    # same App ID, which holds the capability since 2026-09-14. A restricted
+    # entitlement has to be in the provisioning profile as well as the
+    # signature, so `make mac-dev` (automatic signing, Apple Development) is
+    # the path that gets PCC on a Mac today; `make mac-build` signs with a
+    # Developer ID and no profile, and a Developer ID app carrying a
+    # restricted entitlement its profile does not grant is killed at launch.
+    # Until a Developer ID profile with PCC is minted and embedded, the
+    # Release build has to go without: see the Release config below.
+    entitlements:
+      path: KnowledgePress.entitlements
+      properties:
+        com.apple.developer.private-cloud-compute: true
     info:
       path: Info.plist
       properties:
@@ -70,3 +83,8 @@ targets:
         # obviously name this as the cause.
         Release:
           CODE_SIGN_INJECT_BASE_ENTITLEMENTS: NO
+          # No PCC in the notarized build until a Developer ID profile that
+          # grants it is embedded -- see the entitlements note above. An
+          # empty path signs with no entitlements file at all, which is what
+          # this configuration did before PCC existed.
+          CODE_SIGN_ENTITLEMENTS: ""

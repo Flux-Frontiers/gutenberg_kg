@@ -757,6 +757,7 @@ double-clickable `KnowledgePress.app`, signed with a Developer ID and
 notarized, that opens on a machine which has never seen it before.
 
 ```sh
+make mac-dev           # Debug .app, automatic signing, carries Private Cloud Compute
 make mac-build         # Release .app, Developer ID signed, hardened runtime
 make mac-verify        # prove it is distributable before a round trip
 make mac-notarize      # submit the .app, wait, staple the ticket
@@ -764,6 +765,20 @@ make mac-dmg           # package it as a signed .dmg
 make mac-notarize-dmg  # notarize and staple the image itself
 make mac-release       # all five, in order
 ```
+
+`mac-dev` is the odd one out, and it exists for one reason: Private Cloud
+Compute. A restricted entitlement has to be in the provisioning profile as
+well as the signature, automatic signing with the Apple Development identity
+is what mints a Mac profile carrying it, and `-allowProvisioningDeviceRegistration`
+lets the first build register this Mac -- a Mac App Development profile names
+the machines it runs on. The Release build signs with a Developer ID and no
+profile, so it is built **without** the PCC entitlement
+(`CODE_SIGN_ENTITLEMENTS: ""` under the Release config in
+`app/macos/project.yml`); a Developer ID app carrying a restricted entitlement
+its profile does not grant is killed at launch. Until a Developer ID profile
+with PCC is minted and embedded, the notarized app offers on-device answers
+only. The dev build also answers `--ask` from a terminal; see
+`analysis/SYNTHESIS_TUNING_NOTES.md`.
 
 **Both layers are notarized, and both are necessary.** Stapling the app alone
 produces a disk image Gatekeeper refuses:

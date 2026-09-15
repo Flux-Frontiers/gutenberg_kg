@@ -43,17 +43,18 @@ import Foundation
         public let modelDescription = "Apple Foundation Models (Private Cloud Compute)"
 
         private let budgeter: ContextBudgeter
-        private let temperature: Double
+        private let tuning: SynthesisTuning
         private let model: PrivateCloudComputeLanguageModel
 
         /// :param budget: Context limits; defaults to PCC's 32K window.
-        /// :param temperature: Sampling temperature. 0, same default as
-        ///                     on-device, for the same reason.
+        /// :param tuning: Decoding, packing and prompt settings, shared with
+        ///     on-device. `permissiveGuardrails` has no effect here -- the
+        ///     server model takes no guardrail parameter.
         public init(
-            budget: ContextBudgeter.Budget = .privateCloudCompute, temperature: Double = 0
+            budget: ContextBudgeter.Budget = .privateCloudCompute, tuning: SynthesisTuning = .default
         ) {
-            self.budgeter = ContextBudgeter(budget: budget)
-            self.temperature = temperature
+            self.budgeter = ContextBudgeter(budget: tuning.apply(to: budget))
+            self.tuning = tuning
             self.model = PrivateCloudComputeLanguageModel()
         }
 
@@ -141,11 +142,11 @@ import Foundation
             // same reason: the transcript is charged against the context
             // window, so a long-lived session would spend PCC's larger but
             // still finite 32K budget on history instead of passages.
-            let profile = LanguageModelSession.Profile { Instructions(SynthesisPrompt.ragInstructions) }
+            let profile = LanguageModelSession.Profile { Instructions(tuning.instructionText) }
                 .model(model)
             let session = LanguageModelSession(profile: profile)
             try await streamFoundationModelsAnswer(
-                session: session, question: question, packed: packed, temperature: temperature,
+                session: session, question: question, packed: packed, tuning: tuning,
                 modelDescription: modelDescription, into: continuation)
         }
 
@@ -196,11 +197,12 @@ import Foundation
 /// the framework — the provider picker then simply does not offer this
 /// engine, the same way it already omits on-device below iOS 26.
 public func makePrivateCloudSynthesis(
-    budget: ContextBudgeter.Budget = .privateCloudCompute
+    budget: ContextBudgeter.Budget = .privateCloudCompute,
+    tuning: SynthesisTuning = .default
 ) -> (any SynthesisBackend)? {
     #if canImport(FoundationModels) && compiler(>=6.4)
         if #available(iOS 27.0, macOS 27.0, *) {
-            return PrivateCloudSynthesis(budget: budget)
+            return PrivateCloudSynthesis(budget: budget, tuning: tuning)
         }
     #endif
     return nil
