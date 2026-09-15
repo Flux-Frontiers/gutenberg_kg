@@ -3,11 +3,36 @@ import { useMemo, useRef } from "react";
 import { Group, MathUtils, PerspectiveCamera, Vector3 } from "three";
 import { treesNear, type Forest } from "./forest";
 import { sampleActions } from "./input";
-import { forwardOf, sim, stepVehicle } from "./sim";
+import { clamp } from "./math";
+import { forwardOf, sim, stepVehicle, teleportSim, wrapAngle, yawToward } from "./sim";
 import { useGame } from "./store";
 
 const camPos = new Vector3();
 const lookAt = new Vector3();
+
+function nextCircuitIndex(forest: Forest, x: number, z: number): number {
+  const pts = forest.circuit;
+  if (pts.length === 0) return 0;
+  let best = 0;
+  let bestScore = -Infinity;
+  const fx = -Math.sin(sim.yaw);
+  const fz = -Math.cos(sim.yaw);
+  for (let i = 0; i < pts.length; i++) {
+    const p = pts[i]!;
+    const dx = p.x - x;
+    const dz = p.z - z;
+    const dist = Math.hypot(dx, dz) || 1;
+    const ahead = (dx / dist) * fx + (dz / dist) * fz;
+    const score = ahead * 8 - dist * 0.04;
+    if (score > bestScore) {
+      bestScore = score;
+      best = i;
+    }
+  }
+  const cur = pts[best]!;
+  if (Math.hypot(cur.x - x, cur.z - z) < 7) return (best + 1) % pts.length;
+  return best;
+}
 
 export function Player({ forest, playing }: { forest: Forest; playing: boolean }) {
   const group = useRef<Group>(null);
@@ -15,6 +40,7 @@ export function Player({ forest, playing }: { forest: Forest; playing: boolean }
   const wheelR = useRef<Group>(null);
   const poseAcc = useRef(0);
   const lastNearby = useRef<string | null>(null);
+  const lastMarked = useRef<string | null>(null);
 
   const paused = useGame((s) => s.paused);
   const collect = useGame((s) => s.collect);
@@ -26,11 +52,38 @@ export function Player({ forest, playing }: { forest: Forest; playing: boolean }
 
   useFrame((state, delta) => {
     const dt = Math.min(delta, 0.1);
+    const jump = useGame.getState().jump;
+    if (jump) {
+      teleportSim(jump.x, jump.z, jump.yaw);
+      useGame.getState().clearJump();
+      const f = forwardOf(sim.yaw);
+      state.camera.position.set(sim.x - f.x * 8.4, sim.y + 4.5, sim.z - f.z * 8.4);
+      lookAt.set(sim.x + f.x * 2.6, sim.y + 1.4, sim.z + f.z * 2.6);
+      state.camera.lookAt(lookAt);
+    }
+
     if (!playing || paused) {
       // Still keep camera on the cart while paused
     } else {
       const a = sampleActions();
-      stepVehicle(forest, a.throttle, a.steer, a.boost, dt);
+      let throttle = a.throttle;
+      let steer = a.steer;
+      const mode = useGame.getState().travelMode;
+      if (mode === "circuit" && forest.circuit.length > 1) {
+        if (Math.abs(a.steer) > 0.38) {
+          useGame.getState().setTravelMode("free");
+          useGame.getState().setToast("Free drive");
+        } else {
+          const i = nextCircuitIndex(forest, sim.x, sim.z);
+          const wp = forest.circuit[i]!;
+          const desired = yawToward(sim.x, sim.z, wp.x, wp.z);
+          const err = wrapAngle(desired - sim.yaw);
+          steer = clamp(err * 1.65, -1, 1);
+          if (throttle === 0) throttle = 0.42;
+          useGame.getState().selectGrove(wp.genre);
+        }
+      }
+      stepVehicle(forest, throttle, steer, a.boost, dt);
 
       if (a.interact) {
         const near = treesNear(forest, sim.x, sim.z, 6.8);
@@ -69,9 +122,9 @@ export function Player({ forest, playing }: { forest: Forest; playing: boolean }
     if (wheelL.current) wheelL.current.rotation.x += spin;
     if (wheelR.current) wheelR.current.rotation.x += spin;
 
-    const near = treesNear(forest, sim.x, sim.z, 9);
+    const near = treesNear(forest, sim.x, sim.z, 16);
     let bestSlug: string | null = null;
-    let bestD = 9;
+    let bestD = 16;
     for (const t of near) {
       const d = Math.hypot(t.x - sim.x, t.z - sim.z);
       if (d < bestD) {
@@ -86,7 +139,10 @@ export function Player({ forest, playing }: { forest: Forest; playing: boolean }
 
     for (const grove of forest.groves) {
       if (Math.hypot(grove.x - sim.x, grove.z - sim.z) < grove.radius) {
-        markGrove(grove.genre);
+        if (lastMarked.current !== grove.genre) {
+          lastMarked.current = grove.genre;
+          markGrove(grove.genre);
+        }
       }
     }
 

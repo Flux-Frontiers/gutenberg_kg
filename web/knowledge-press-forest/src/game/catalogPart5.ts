@@ -2,534 +2,433 @@ import type { Book } from "./catalogTypes";
 
 export const BOOKS_PART5: Book[] = [
   {
-    "slug": "flatland",
-    "title": "Flatland",
-    "author": "Edwin Abbott Abbott",
-    "genre": "science-fiction",
-    "genreLabel": "Science Fiction",
-    "chunks": 126,
-    "excerpt": "| \"O day and night, but this is wondrous strange\" | | ______ | | / / /| ------ / /| /| / /-. | | /---- / /__| / / /__| / | / / / | | / /___ / | / /___ / | / |/ /__.-' | | | | No Dimensions One Dimension | | . A ROMANCE OF MANY DIMENSIONS ----- | | POINTLAND LINELAND | | | | Two Dimensions Three Dimensions | | ___ __ | | | | /__/| | | |___| |__|/ | | FLATLAND SPACELAND | |…",
-    "tags": [
-      "science fiction",
-      "future"
-    ]
+    slug: "essays_first_and_second_series_emerson",
+    title: "Essays — First and Second Series (Emerson)",
+    author: "Ralph Waldo Emerson",
+    genre: "philosophy",
+    genreLabel: "Philosophy",
+    chunks: 986,
+    excerpt: "Check this lying hospitality and lying affection. Live no longer to the expectation of these deceived and deceiving people with whom we converse. Say to them, ‘O father, O mother, O wife, O brother, O friend, I have lived with you after appearances hitherto. Henceforward I am…",
+    tags: ["philosophy"],
   },
   {
-    "slug": "frankenstein",
-    "title": "Frankenstein",
-    "author": "Mary Wollstonecraft Shelley",
-    "genre": "science-fiction",
-    "genreLabel": "Science Fiction",
-    "chunks": 480,
-    "excerpt": "It was on a dreary night of November that I beheld the accomplishment of my toils. With an anxiety that almost amounted to agony, I collected the instruments of life around me, that I might infuse a spark of being into the lifeless thing that lay at my feet.",
-    "tags": [
-      "science fiction",
-      "horror",
-      "other"
-    ]
+    slug: "groundwork_of_the_metaphysics_of_morals_kant",
+    title: "Groundwork of the Metaphysics of Morals (Kant)",
+    author: "Immanuel Kant",
+    genre: "philosophy",
+    genreLabel: "Philosophy",
+    chunks: 430,
+    excerpt: "But what sort of law can that be, the conception of which must determine the will, even without paying any regard to the effect expected from it, in order that this will may be called good absolutely and without qualification?",
+    tags: ["philosophy"],
   },
   {
-    "slug": "pellucidar",
-    "title": "Pellucidar",
-    "author": "Edgar Rice Burroughs",
-    "genre": "science-fiction",
-    "genreLabel": "Science Fiction",
-    "chunks": 196,
-    "excerpt": "Several years had elapsed since I had found the opportunity to do any big-game hunting; for at last I had my plans almost perfected for a return to my old stamping-grounds in northern Africa, where in other days I had had excellent sport in pursuit of the king of beasts.",
-    "tags": [
-      "science fiction"
-    ]
+    slug: "hegels_lectures_on_the_history_of_philosophy_volume_3_of_3",
+    title: "Hegel's Lectures on the History of Philosophy: Volume 3 (of 3)",
+    author: "Georg Wilhelm Friedrich Hegel",
+    genre: "philosophy",
+    genreLabel: "Philosophy",
+    chunks: 2802,
+    excerpt: "Their fate, their lives, their writings—which often fill many volumes—manifest only this restlessness of their being, this tearing asunder, the revolt of their inner being against present existence and the longing to get out of it and reach certainty. These remarkable…",
+    tags: ["philosophy"],
   },
   {
-    "slug": "symzonia_voyage_of_discovery",
-    "title": "Symzonia: Voyage of Discovery",
-    "author": "Adam, Captain Seaborn",
-    "genre": "science-fiction",
-    "genreLabel": "Science Fiction",
-    "chunks": 161,
-    "excerpt": "Be it remembered, that on the second day of November, in the forty-fifth year of the Independence of the United States of America, Jonathan Seymour, of the said District, hath deposited in this office the title of a book, the right whereof he claims as proprietor,",
-    "tags": [
-      "science fiction"
-    ]
+    slug: "leviathan",
+    title: "Leviathan",
+    author: "Thomas Hobbes",
+    genre: "philosophy",
+    genreLabel: "Philosophy",
+    chunks: 2921,
+    excerpt: "Therefore a Righteous man, does not lose that Title, by one, or a few unjust Actions, that proceed from sudden Passion, or mistake of Things, or Persons: nor does an Unrighteous man, lose his character, for such Actions, as he does, of forbeares to do, for feare: because his…",
+    tags: ["philosophy"],
   },
   {
-    "slug": "the_coming_race",
-    "title": "The Coming Race",
-    "author": "Edward Bulwer Lytton, Baron Lytton",
-    "genre": "science-fiction",
-    "genreLabel": "Science Fiction",
-    "chunks": 189,
-    "excerpt": "I am a native of _____, in the United States of America. My ancestors migrated from England in the reign of Charles II.; and my grandfather was not undistinguished in the War of Independence. My family, therefore, enjoyed a somewhat high social position in right of birth; and being also opulent, they were considered disqualified for the public service. My father once ran…",
-    "tags": [
-      "science fiction"
-    ]
+    slug: "meditations",
+    title: "Meditations",
+    author: "Emperor of Rome Marcus Aurelius",
+    genre: "philosophy",
+    genreLabel: "Philosophy",
+    chunks: 967,
+    excerpt: "To follow reason for ordinary duties and actions is common to them also, who believe not that there be any gods, and for their advantage would make no conscience to betray their own country; and who when once the doors be shut upon them, dare do anything.",
+    tags: ["philosophy"],
   },
   {
-    "slug": "the_first_men_in_the_moon",
-    "title": "The First Men in the Moon",
-    "author": "H. G. (Herbert George) Wells",
-    "genre": "science-fiction",
-    "genreLabel": "Science Fiction",
-    "chunks": 241,
-    "excerpt": "As I sit down to write here amidst the shadows of vine-leaves under the blue sky of southern Italy, it comes to me with a certain quality of astonishment that my participation in these amazing adventures of Mr. Cavor was, after all, the outcome of the purest accident. It might have been any one. I fell into these things at a time when I thought myself removed from the…",
-    "tags": [
-      "science fiction",
-      "future"
-    ]
+    slug: "nicomachean_ethics_aristotle",
+    title: "Nicomachean Ethics (Aristotle)",
+    author: "Aristotle",
+    genre: "philosophy",
+    genreLabel: "Philosophy",
+    chunks: 1521,
+    excerpt: "These things then to which the bias is, we call more contrary, and so total want of self-control (the excess) is more contrary than the defect is to perfected self-mastery.",
+    tags: ["philosophy"],
   },
   {
-    "slug": "the_food_of_the_gods",
-    "title": "The Food of the Gods",
-    "author": "H. G. (Herbert George) Wells",
-    "genre": "science-fiction",
-    "genreLabel": "Science Fiction",
-    "chunks": 266,
-    "excerpt": "In the middle years of the nineteenth century there first became abundant in this strange world of ours a class of men, men tending for the most part to become elderly, who are called, and who are very properly called, but who dislike extremely to be called--\"Scientists.\" They dislike that word so much that from the columns of _Nature_, which was from the first their…",
-    "tags": [
-      "science fiction"
-    ]
+    slug: "on_liberty_mill",
+    title: "On Liberty (Mill)",
+    author: "John Stuart Mill",
+    genre: "philosophy",
+    genreLabel: "Philosophy",
+    chunks: 776,
+    excerpt: "It is necessary to consider separately these two hypotheses, each of which has a distinct branch of the argument corresponding to it. We can never be sure that the opinion we are endeavouring to stifle is a false opinion; and if we were sure, stifling it would be an evil…",
+    tags: ["philosophy"],
   },
   {
-    "slug": "the_gods_of_mars",
-    "title": "The Gods of Mars",
-    "author": "Edgar Rice Burroughs",
-    "genre": "science-fiction",
-    "genreLabel": "Science Fiction",
-    "chunks": 284,
-    "excerpt": "Twelve years had passed since I had laid the body of my great-uncle, Captain John Carter, of Virginia, away from the sight of men in that strange mausoleum in the old cemetery at Richmond.",
-    "tags": [
-      "science fiction",
-      "future"
-    ]
+    slug: "on_the_duty_of_civil_disobedience_thoreau",
+    title: "On the Duty of Civil Disobedience (Thoreau)",
+    author: "Henry David Thoreau",
+    genre: "philosophy",
+    genreLabel: "Philosophy",
+    chunks: 133,
+    excerpt: "In their practice, nations agree with Paley; but does anyone think that Massachusetts does exactly what is right at the present crisis? “A drab of state, a cloth-o’-silver slut, To have her train borne up, and her soul trail in the dirt.” Practically speaking, the opponents…",
+    tags: ["philosophy"],
   },
   {
-    "slug": "the_invisible_man",
-    "title": "The Invisible Man",
-    "author": "H. G. (Herbert George) Wells",
-    "genre": "science-fiction",
-    "genreLabel": "Science Fiction",
-    "chunks": 175,
-    "excerpt": "The stranger came early in February, one wintry day, through a biting wind and a driving snow, the last snowfall of the year, over the down, walking from Bramblehurst railway station, and carrying a little black portmanteau in his thickly gloved hand. He was wrapped up from head to foot, and the brim of his soft felt hat hid every inch of his face but the shiny tip of his…",
-    "tags": [
-      "science fiction"
-    ]
+    slug: "phaedo_plato",
+    title: "Phaedo (Plato)",
+    author: "Plato",
+    genre: "philosophy",
+    genreLabel: "Philosophy",
+    chunks: 567,
+    excerpt: "The last ground of our belief in immortality, and the strongest, is the perfection of the divine nature. The mere fact of the existence of God does not tend to show the continued existence of man. An evil God or an indifferent God might have had the power, but not the will,…",
+    tags: ["philosophy"],
   },
   {
-    "slug": "the_island_of_doctor_moreau",
-    "title": "The island of Doctor Moreau",
-    "author": "H. G. (Herbert George) Wells",
-    "genre": "science-fiction",
-    "genreLabel": "Science Fiction",
-    "chunks": 153,
-    "excerpt": "On February the First 1887, the _Lady Vain_ was lost by collision with a derelict when about the latitude 1° S. and longitude 107° W.",
-    "tags": [
-      "science fiction"
-    ]
+    slug: "plutarchs_morals",
+    title: "Plutarch's Morals",
+    author: "Plutarch",
+    genre: "philosophy",
+    genreLabel: "Philosophy",
+    chunks: 2139,
+    excerpt: "But if a wife be by nature austere and apathetic, and no lover of pleasure, the husband must make the best of it, for, as Phocion said, when Antipater enjoined on him an action neither honourable nor becoming, \"You cannot have me as a friend and flatterer both,\" so he must…",
+    tags: ["philosophy"],
   },
   {
-    "slug": "the_lost_world",
-    "title": "The Lost World",
-    "author": "Arthur Conan Doyle",
-    "genre": "science-fiction",
-    "genreLabel": "Science Fiction",
-    "chunks": 264,
-    "excerpt": "both the injunction for restraint and the libel action have been withdrawn unreservedly by Professor G. E. Challenger, who, being satisfied that no criticism or comment in this book is meant in an offensive spirit, impediment to its publication and circulation.",
-    "tags": [
-      "science fiction"
-    ]
+    slug: "poetics_aristotle",
+    title: "Poetics (Aristotle)",
+    author: "Aristotle",
+    genre: "philosophy",
+    genreLabel: "Philosophy",
+    chunks: 214,
+    excerpt: "Again, if you string together a set of speeches expressive of character, and well finished in point of diction and thought, you will not produce the essential tragic effect nearly so well as with a play which, however deficient in these respects, yet has a plot and…",
+    tags: ["philosophy"],
   },
   {
-    "slug": "the_warlord_of_mars",
-    "title": "The warlord of Mars",
-    "author": "Edgar Rice Burroughs",
-    "genre": "science-fiction",
-    "genreLabel": "Science Fiction",
-    "chunks": 196,
-    "excerpt": "In the shadows of the forest that flanks the crimson plain by the side of the Lost Sea of Korus in the Valley Dor, beneath the hurtling moons of Mars, speeding their meteoric way close above the bosom of the dying planet, I crept stealthily along the trail of a shadowy form that hugged the darker places with a persistency that proclaimed the",
-    "tags": [
-      "science fiction",
-      "future"
-    ]
+    slug: "politics_aristotle",
+    title: "Politics (Aristotle)",
+    author: "Aristotle",
+    genre: "philosophy",
+    genreLabel: "Philosophy",
+    chunks: 1193,
+    excerpt: "By this means he says he shall necessarily have an equal number of each rank, but he is mistaken--for the majority will always consist of those of the first rank, and the most considerable people; and for this reason, that many of the commonalty not being obliged to it, will…",
+    tags: ["philosophy"],
   },
   {
-    "slug": "at_the_mountains_of_madness",
-    "title": "At the Mountains of Madness",
-    "author": "H. P. (Howard Phillips) Lovecraft",
-    "genre": "horror",
-    "genreLabel": "Horror",
-    "chunks": 153,
-    "excerpt": "I am forced into speech because men of science have refused to follow my advice without knowing why. It is altogether against my will that I tell my reasons for opposing this contemplated invasion of the antarctic--with its vast fossil hunt and its wholesale boring and melting of the ancient ice caps. And I am the more reluctant because my",
-    "tags": [
-      "horror"
-    ]
+    slug: "second_treatise_of_government",
+    title: "Second Treatise of Government",
+    author: "John Locke",
+    genre: "philosophy",
+    genreLabel: "Philosophy",
+    chunks: 669,
+    excerpt: "And if he also bartered away plums, that would have rotted in a week, for nuts that would last good for his eating a whole year, he did no injury; he wasted not the common stock; destroyed no part of the portion of goods that belonged to others, so long as nothing perished…",
+    tags: ["philosophy"],
   },
   {
-    "slug": "carmilla",
-    "title": "Carmilla",
-    "author": "Joseph Sheridan Le Fanu",
-    "genre": "horror",
-    "genreLabel": "Horror",
-    "chunks": 98,
-    "excerpt": "Upon a paper attached to the Narrative which follows, Doctor Hesselius has written a rather elaborate note, which he accompanies with a reference to his Essay on the strange subject which the MS.",
-    "tags": [
-      "horror"
-    ]
+    slug: "the_art_of_war_sun_tzu",
+    title: "The Art of War (Sun Tzu)",
+    author: "active 6th century B.C. Sunzi",
+    genre: "philosophy",
+    genreLabel: "Philosophy",
+    chunks: 763,
+    excerpt: "In spite of all this, the great body of Chinese sentiment, from Lao Tzŭ downwards, and especially as reflected in the standard literature of Confucianism, has been consistently pacific and intensely opposed to militarism in any form. It is such an uncommon thing to find any…",
+    tags: ["philosophy"],
   },
   {
-    "slug": "ghost_stories_of_an_antiquary",
-    "title": "Ghost Stories of an Antiquary",
-    "author": "M. R. (Montague Rhodes) James",
-    "genre": "horror",
-    "genreLabel": "Horror",
-    "chunks": 158,
-    "excerpt": "If anyone is curious about my local settings, let it be recorded that St Bertrand de Comminges and Viborg are real places: that in “Oh, Whistle, and I’ll Come to You” I had Felixstowe in mind. As for the fragments of ostensible erudition which are scattered about my pages, hardly anything in them is not pure invention; there never was, naturally, any such book as that which…",
-    "tags": [
-      "horror"
-    ]
+    slug: "the_birth_of_tragedy_or_hellenism_and_pessimism",
+    title: "The Birth of Tragedy; or, Hellenism and Pessimism",
+    author: "Friedrich Wilhelm Nietzsche",
+    genre: "philosophy",
+    genreLabel: "Philosophy",
+    chunks: 784,
+    excerpt: "But also that delicate line, which the dream-picture must not overstep--lest it act pathologically (in which case appearance, being reality pure and simple, would impose upon us)--must not be wanting in the picture of Apollo: that measured limitation, that freedom from the…",
+    tags: ["philosophy"],
   },
   {
-    "slug": "tales_of_terror_and_mystery",
-    "title": "Tales of Terror and Mystery",
-    "author": "Arthur Conan Doyle",
-    "genre": "horror",
-    "genreLabel": "Horror",
-    "chunks": 258,
-    "excerpt": "The idea that the extraordinary narrative which has been called the Joyce-Armstrong Fragment is an elaborate practical joke evolved by some unknown person, cursed by a perverted and sinister sense of humour, has now been abandoned by all who have examined the matter. The most macabre and imaginative of plotters would hesitate before linking his morbid fancies with the…",
-    "tags": [
-      "horror"
-    ]
+    slug: "the_city_of_god_volume_i",
+    title: "The City of God, Volume I",
+    author: "of Hippo, Saint Augustine",
+    genre: "philosophy",
+    genreLabel: "Philosophy",
+    chunks: 2899,
+    excerpt: "But, in Numa's reign, I would know whether the long peace was maintained in spite of the incursions of wicked neighbours, or if these incursions were discontinued that the peace might be maintained? For if even then Rome was harassed by wars, and yet did not meet force with…",
+    tags: ["philosophy"],
   },
   {
-    "slug": "the_call_of_cthulhu",
-    "title": "The Call of Cthulhu",
-    "author": "H. P. (Howard Phillips) Lovecraft",
-    "genre": "horror",
-    "genreLabel": "Horror",
-    "chunks": 44,
-    "excerpt": "The most merciful thing in the world, I think, is the inability of the human mind to correlate all its contents. We live on a placid island of ignorance in the midst of black seas of infinity, and it was not meant that we should voyage far.",
-    "tags": [
-      "horror",
-      "other"
-    ]
+    slug: "the_crown_of_wild_olive",
+    title: "The Crown of Wild Olive",
+    author: "John Ruskin",
+    genre: "philosophy",
+    genreLabel: "Philosophy",
+    chunks: 4221,
+    excerpt: "It is no otherwise withdrawn if I bury it, nor even if I choose to make it, and others, into a golden cup, and drink out of them; since a rise in the price of the wine, or of other things, may at any time cause me to melt the cup and throw it back into currency; and the…",
+    tags: ["philosophy"],
   },
   {
-    "slug": "the_case_of_charles_dexter_ward",
-    "title": "The Case of Charles Dexter Ward",
-    "author": "H. P. (Howard Phillips) Lovecraft",
-    "genre": "horror",
-    "genreLabel": "Horror",
-    "chunks": 163,
-    "excerpt": "Here is THE CASE OF CHARLES DEXTER WARD--the last, and many think the best, the most exciting--of all H. P. Lovecraft's superb weird",
-    "tags": [
-      "horror"
-    ]
+    slug: "the_enchiridion",
+    title: "The Enchiridion",
+    author: "Epictetus",
+    genre: "philosophy",
+    genreLabel: "Philosophy",
+    chunks: 174,
+    excerpt: "Epictetus had taught him that philosophical reason could make him free and that he was capable of redeeming himself by sound reasoning. In the Stoic distinctions of personality and world, of I and mine, of subjective consciousness and the world of objects, of freedom and…",
+    tags: ["philosophy"],
   },
   {
-    "slug": "the_colour_out_of_space",
-    "title": "The Colour Out of Space",
-    "author": "H. P. (Howard Phillips) Lovecraft",
-    "genre": "horror",
-    "genreLabel": "Horror",
-    "chunks": 44,
-    "excerpt": "_Here is a totally different story that we can highly recommend to you. We could wax rhapsodical in our praise, as the story is one of the finest pieces of literature it has been our good fortune to read. The theme is original, and yet fantastic enough to make it rise head and shoulders above many contemporary scientifiction stories. You will not regret having read this…",
-    "tags": [
-      "horror"
-    ]
+    slug: "the_federalist_papers",
+    title: "The Federalist Papers",
+    author: "James Madison",
+    genre: "philosophy",
+    genreLabel: "Philosophy",
+    chunks: 2904,
+    excerpt: "Controversies and wars among the members themselves have been so common, that the German annals are crowded with the bloody pages which describe them. Previous to the peace of Westphalia, Germany was desolated by a war of thirty years, in which the emperor, with one half of…",
+    tags: ["philosophy"],
   },
   {
-    "slug": "the_dunwich_horror",
-    "title": "The Dunwich Horror",
-    "author": "H. P. (Howard Phillips) Lovecraft",
-    "genre": "horror",
-    "genreLabel": "Horror",
-    "chunks": 63,
-    "excerpt": "\"Gorgons, and Hydras, and Chimeras--dire stories of Celæno and the Harpies--may reproduce themselves in the brain of superstition--_but they were there before_. They are transcripts, types--the archetypes are in us, and eternal. How else should the recital of that which we know in a waking sense to be false come to affect us at all? Is it that we naturally conceive terror…",
-    "tags": [
-      "horror"
-    ]
+    slug: "the_kama_sutra_of_vatsyayana",
+    title: "The Kama Sutra of Vatsyayana",
+    author: "Vatsyayana",
+    genre: "philosophy",
+    genreLabel: "Philosophy",
+    chunks: 795,
+    excerpt: "On the other hand when the female exceeds the male in point of size, her union with a man immediately next to her in size is called low union, and is of two kinds; while her union with a man most remote from her in size is called the lowest union, and is of one kind only. In…",
+    tags: ["philosophy"],
   },
   {
-    "slug": "the_great_god_pan",
-    "title": "The Great God Pan",
-    "author": "Arthur Machen",
-    "genre": "horror",
-    "genreLabel": "Horror",
-    "chunks": 75,
-    "excerpt": "“I was able to make arrangements for a few days; things are not very lively just now. But have you no misgivings, Raymond? Is it absolutely",
-    "tags": [
-      "horror"
-    ]
+    slug: "the_lives_and_opinions_of_eminent_philosophers",
+    title: "The Lives and Opinions of Eminent Philosophers",
+    author: "Diogenes Laertius",
+    genre: "philosophy",
+    genreLabel: "Philosophy",
+    chunks: 2408,
+    excerpt: "III. He is, as some people say, the first writer who reduced the conversations of Socrates into the form of dialogues. And when Pericles offered to provide for him, and invited him to come to him, he said that he would not sell his freedom of speech. IV. There was also…",
+    tags: ["philosophy"],
   },
   {
-    "slug": "the_house_on_the_borderland",
-    "title": "The House on the Borderland",
-    "author": "William Hope Hodgson",
-    "genre": "horror",
-    "genreLabel": "Horror",
-    "chunks": 175,
-    "excerpt": "_From the Manuscript discovered in 1877 by Messrs. Tonnison and Berreggnog in the Ruins that lie to the South of the Village of Kraighten, in the West of Ireland. Set out here, with Notes_.",
-    "tags": [
-      "horror"
-    ]
+    slug: "the_prince",
+    title: "The Prince",
+    author: "Niccolò Machiavelli",
+    genre: "philosophy",
+    genreLabel: "Philosophy",
+    chunks: 704,
+    excerpt: "Further, it facilitates matters when the prince, having no other state, is compelled to reside there in person. But to come to those who, by their own ability and not through fortune, have risen to be princes, I say that Moses, Cyrus, Romulus, Theseus, and such like are the…",
+    tags: ["philosophy"],
   },
   {
-    "slug": "the_king_in_yellow",
-    "title": "The King in Yellow",
-    "author": "Robert W. (Robert William) Chambers",
-    "genre": "horror",
-    "genreLabel": "Horror",
-    "chunks": 255,
-    "excerpt": "Toward the end of the year 1920 the Government of the United States had practically completed the programme, adopted during the last months of President Winthrop’s administration. The country was apparently tranquil. Everybody knows how the Tariff and Labour questions were settled. The war with Germany, incident on that country’s seizure of the Samoan Islands, had left no…",
-    "tags": [
-      "horror"
-    ]
+    slug: "the_problems_of_philosophy_russell",
+    title: "The Problems of Philosophy (Russell)",
+    author: "Bertrand Russell",
+    genre: "philosophy",
+    genreLabel: "Philosophy",
+    chunks: 605,
+    excerpt: "Thus the colour we see is a result of the ray as it reaches the eye, and not simply a property of the object from which the ray comes. Hence, also, provided certain waves reach the eye, we shall see a certain colour, whether the object from which the waves start has any…",
+    tags: ["philosophy"],
   },
   {
-    "slug": "the_monk_a_romance",
-    "title": "The Monk: A Romance",
-    "author": "M. G. (Matthew Gregory) Lewis",
-    "genre": "horror",
-    "genreLabel": "Horror",
-    "chunks": 496,
-    "excerpt": "The first idea of this Romance was suggested by the story of the _Santon Barsisa_, related in The Guardian.—The _Bleeding Nun_ is a tradition still credited in many parts of Germany; and I have been told that the ruins of the Castle of _Lauenstein_, which She is supposed to haunt, may yet be seen upon the borders of _Thuringia.—The Water-King_, from the third to the twelfth…",
-    "tags": [
-      "horror"
-    ]
+    slug: "the_republic",
+    title: "The Republic",
+    author: "Plato",
+    genre: "philosophy",
+    genreLabel: "Philosophy",
+    chunks: 2900,
+    excerpt: "But now imagine further, that they descend into their old habitations;—in that underground dwelling they will not see as well as their fellows, and will not be able to compete with them in the measurement of the shadows on the wall; there will be many jokes about the man who…",
+    tags: ["philosophy"],
   },
   {
-    "slug": "the_mysteries_of_udolpho",
-    "title": "The Mysteries of Udolpho",
-    "author": "Ann Ward Radcliffe",
-    "genre": "horror",
-    "genreLabel": "Horror",
-    "chunks": 1061,
-    "excerpt": "On the pleasant banks of the Garonne, in the province of Gascony, stood, in the year 1584, the château of Monsieur St. Aubert. From its windows were seen the pastoral landscapes of Guienne and Gascony stretching along the river, gay with luxuriant woods and vine, and plantations of olives. To the south, the view was bounded by the majestic Pyrenees, whose summits, veiled in…",
-    "tags": [
-      "horror"
-    ]
+    slug: "the_social_contract_rousseau",
+    title: "The Social Contract (Rousseau)",
+    author: "Jean-Jacques Rousseau",
+    genre: "philosophy",
+    genreLabel: "Philosophy",
+    chunks: 1748,
+    excerpt: "Sometimes they confuse all these sections, and sometimes they distinguish them; they turn the Sovereign into a fantastic being composed of several connected pieces: it is as if they were making man of several bodies, one with eyes, one with arms, another with feet, and each…",
+    tags: ["philosophy"],
   },
   {
-    "slug": "the_shadow_over_innsmouth",
-    "title": "The Shadow over Innsmouth",
-    "author": "H. P. (Howard Phillips) Lovecraft",
-    "genre": "horror",
-    "genreLabel": "Horror",
-    "chunks": 60,
-    "excerpt": "During the winter of 1927-28 Federal government officials made a strange and secret investigation of certain conditions in the ancient Massachusetts seaport of Innsmouth. The public first learned of it in February, when a vast series of raids and arrests occurred, followed by the deliberate burning and dynamiting--under suitable precautions--of an enormous number of…",
-    "tags": [
-      "horror"
-    ]
+    slug: "the_symposium_plato",
+    title: "The Symposium (Plato)",
+    author: "Plato",
+    genre: "philosophy",
+    genreLabel: "Philosophy",
+    chunks: 435,
+    excerpt: "Like the sophists and like Plato himself, though in a different sense, he begins his discussion by an appeal to mythology, and distinguishes between the elder and younger love. The value which he attributes to such loves as motives to virtue and philosophy is at variance with…",
+    tags: ["philosophy"],
   },
   {
-    "slug": "the_shunned_house",
-    "title": "The Shunned House",
-    "author": "H. P. (Howard Phillips) Lovecraft",
-    "genre": "horror",
-    "genreLabel": "Horror",
-    "chunks": 40,
-    "excerpt": "_A posthumous story of immense power, written by a master of weird fiction--a tale of a revolting horror in the cellar of an old",
-    "tags": [
-      "horror"
-    ]
+    slug: "the_twilight_of_the_idols_or_how_to_philosophize_with_the_ha",
+    title: "The Twilight of the Idols; or, How to Philosophize with the Hammer. The Antichrist",
+    author: "Friedrich Wilhelm Nietzsche",
+    genre: "philosophy",
+    genreLabel: "Philosophy",
+    chunks: 995,
+    excerpt: "Christianity as sprung from Jewish roots and comprehensible only as grown upon this soil, represents the counter-movement against that morality of breeding, of race and of privilege:—it is essentially an anti-Aryan religion: Christianity is the transvaluation of all Aryan…",
+    tags: ["philosophy"],
   },
   {
-    "slug": "the_willows",
-    "title": "The Willows",
-    "author": "Algernon Blackwood",
-    "genre": "horror",
-    "genreLabel": "Horror",
-    "chunks": 69,
-    "excerpt": "After leaving Vienna, and long before you come to Budapest, the Danube enters a region of singular loneliness and desolation, where its waters spread away on all sides regardless of a main channel, and the country becomes a swamp for miles upon miles, covered by a vast sea of low willow-bushes. On the big maps this deserted area is painted in a fluffy blue, growing fainter…",
-    "tags": [
-      "horror"
-    ]
+    slug: "the_wealth_of_nations",
+    title: "The Wealth of Nations",
+    author: "Adam Smith",
+    genre: "philosophy",
+    genreLabel: "Philosophy",
+    chunks: 5469,
+    excerpt: "These, however, though the highest, are by no means the only high prices which seem to have been occasioned by the civil wars. The second event was the bounty upon the exportation of corn, granted in 1688. The bounty, it has been thought by many people, by encouraging…",
+    tags: ["philosophy"],
   },
   {
-    "slug": "a_ladys_life_in_the_rocky_mountains",
-    "title": "A Lady's Life in the Rocky Mountains",
-    "author": "Isabella L. (Isabella Lucy) Bird",
-    "genre": "travel",
-    "genreLabel": "Travel",
-    "chunks": 257,
-    "excerpt": "A dateless day--\"Those hands of yours\"--A Puritan--Persevering shiftlessness--The house-mother--Family worship--A grim Sunday--A \"thick-skulled Englishman\"--A morning call--Another atmosphere--The Great Lone Land--\"Ill found\"--A log camp--Bad footing for",
-    "tags": [
-      "travel"
-    ]
+    slug: "the_origin_and_development_of_the_moral_ideas",
+    title: "The origin and development of the moral ideas",
+    author: "Edward Westermarck",
+    genre: "philosophy",
+    genreLabel: "Philosophy",
+    chunks: 7652,
+    excerpt: "Even a dog which, in playing with another dog, hurts itself, for instance, by running into a tree, changes its angry attitude immediately it notices the real nature of that which caused it pain.[1] [Footnote 1: Hiram Stanley, _Studies in the Evolutionary Psychology of…",
+    tags: ["philosophy"],
   },
   {
-    "slug": "the_innocents_abroad_mark_twain",
-    "title": "The Innocents Abroad — Mark Twain",
-    "author": "Mark Twain",
-    "genre": "travel",
-    "genreLabel": "Travel",
-    "chunks": 677,
-    "excerpt": "This book is a record of a pleasure trip. If it were a record of a solemn scientific expedition, it would have about it that gravity, that profundity, and that impressive incomprehensibility which are so proper to works of that kind, and withal so attractive. Yet notwithstanding it is only a record of a pic-nic, it has a purpose, which is to suggest to the reader how he…",
-    "tags": [
-      "travel"
-    ]
+    slug: "thus_spake_zarathustra",
+    title: "Thus Spake Zarathustra",
+    author: "Friedrich Wilhelm Nietzsche",
+    genre: "philosophy",
+    genreLabel: "Philosophy",
+    chunks: 1487,
+    excerpt: "Every one regardeth dying as a great matter: but as yet death is not a festival. Not yet have people learned to inaugurate the finest festivals. The consummating death I show unto you, which becometh a stimulus and promise to the living. His death, dieth the consummating one…",
+    tags: ["philosophy"],
   },
   {
-    "slug": "the_travels_of_marco_polo",
-    "title": "The Travels of Marco Polo",
-    "author": "da Pisa Rusticiano",
-    "genre": "travel",
-    "genreLabel": "Travel",
-    "chunks": 1411,
-    "excerpt": "Including the unabridged third edition (1903) of Henry Yule’s annotated translation, as revised by Henri Cordier; together with Cordier’s later",
-    "tags": [
-      "travel"
-    ]
+    slug: "utilitarianism_mill",
+    title: "Utilitarianism (Mill)",
+    author: "John Stuart Mill",
+    genre: "philosophy",
+    genreLabel: "Philosophy",
+    chunks: 399,
+    excerpt: "The objectors perhaps may doubt whether human beings, if taught to consider happiness as the end of life, would be satisfied with such a moderate share of it. But great numbers of mankind have been satisfied with much less. The main constituents of a satisfied life appear to…",
+    tags: ["philosophy"],
   },
   {
-    "slug": "travels_in_the_interior_districts_of_africa_performed_under_",
-    "title": "Travels in the interior districts of Africa: performed under the direction and patronage of the African Association, in the years 1795, 1796, and 1797",
-    "author": "Mungo Park",
-    "genre": "travel",
-    "genreLabel": "Travel",
-    "chunks": 509,
-    "excerpt": "The following Journal, drawn up from original minutes and notices made at the proper moment and preserved with great difficulty, is now offered to the Public by the direction of my noble and honourable employers, the Members of the African Association. I regret that it is so little commensurate to the patronage I have received. As a composition, it has nothing to recommend…",
-    "tags": [
-      "travel"
-    ]
+    slug: "anna_karenina",
+    title: "Anna Karenina",
+    author: "Leo, graf Tolstoy",
+    genre: "russian-literature",
+    genreLabel: "Russian Literature",
+    chunks: 4837,
+    excerpt: "He stood, listened, and gazed sometimes down at the wet mossy ground, sometimes at Laska listening all alert, sometimes at the sea of bare tree tops that stretched on the slope below him, sometimes at the darkening sky, covered with white streaks of cloud. A hawk flew high…",
+    tags: ["russian-literature"],
   },
   {
-    "slug": "two_years_before_the_mast",
-    "title": "Two Years Before the Mast",
-    "author": "Richard Henry Dana",
-    "genre": "travel",
-    "genreLabel": "Travel",
-    "chunks": 573,
-    "excerpt": "Housed on the wild sea with wild usages,-- Whate'er in the inland dales the land conceals Of fair and exquisite, O! nothing, nothing, Do we behold of that in our rude voyage.",
-    "tags": [
-      "travel",
-      "sea"
-    ]
+    slug: "childhood_boyhood_youth_tolstoy",
+    title: "Childhood, Boyhood, Youth (Tolstoy)",
+    author: "Leo, graf Tolstoy",
+    genre: "russian-literature",
+    genreLabel: "Russian Literature",
+    chunks: 397,
+    excerpt: "When for the first time Woloda wore Dutch pleated shirts, I at once said that I was greatly put out at not being given similar ones, and each time that he arranged his collar, I felt that he was doing so on purpose to offend me. But, what tormented me most of all was the idea…",
+    tags: ["russian-literature"],
   },
   {
-    "slug": "typee_a_peep_at_polynesian_life_herman_melville",
-    "title": "Typee: A Peep at Polynesian Life — Herman Melville",
-    "author": "Herman Melville",
-    "genre": "travel",
-    "genreLabel": "Travel",
-    "chunks": 412,
-    "excerpt": "More than three years have elapsed since the occurrence of the events recorded in this volume. The interval, with the exception of the last few months, has been chiefly spent by the author tossing about on the wide ocean. Sailors are the only class of men who now-a-days see anything like stirring adventure; and many things which to fire-side people appear strange and…",
-    "tags": [
-      "travel",
-      "sea"
-    ]
+    slug: "crime_and_punishment",
+    title: "Crime and Punishment",
+    author: "Fyodor Dostoyevsky",
+    genre: "russian-literature",
+    genreLabel: "Russian Literature",
+    chunks: 2728,
+    excerpt: "But a year ago, the girl died of typhus. I remained lodging there as before, and when my landlady moved into her present quarters, she said to me... and in a friendly way... that she had complete trust in me, but still, would I not give her an I O U for one hundred and…",
+    tags: ["russian-literature"],
   },
   {
-    "slug": "autobiography_of_charles_darwin",
-    "title": "Autobiography of Charles Darwin",
-    "author": "Charles Darwin",
-    "genre": "natural-history",
-    "genreLabel": "Natural History",
-    "chunks": 80,
-    "excerpt": "[My father’s autobiographical recollections, given in the present that they would ever be published. To many this may seem an impossibility; but those who knew my father will understand how it was not only possible, but natural. The autobiography bears the heading, ‘Recollections of the Development of my Mind and Character,’ and end with the following note:—“Aug. 3, 1876.…",
-    "tags": [
-      "natural history"
-    ]
+    slug: "dead_souls",
+    title: "Dead Souls",
+    author: "Nikolai Vasilevich Gogol",
+    genre: "russian-literature",
+    genreLabel: "Russian Literature",
+    chunks: 1946,
+    excerpt: "Indeed, the pair would have entered into conversation, and have made one another’s acquaintance (since a beginning was made with their simultaneously expressing satisfaction at the circumstance that the previous night’s rain had laid the dust on the roads, and thereby made…",
+    tags: ["russian-literature"],
   },
   {
-    "slug": "mans_place_in_nature_thomas_h_huxley",
-    "title": "Man's Place in Nature — Thomas H. Huxley",
-    "author": "Thomas Henry Huxley",
-    "genre": "natural-history",
-    "genreLabel": "Natural History",
-    "chunks": 62,
-    "excerpt": "Skeletons of the GIBBON. ORANG. CHIMPANZEE. GORILLA. MAN. 'Photographically reduced from Diagrams of the natural size (except that of the Gibbon, which was twice as large as nature), drawn by Mr. Waterhouse Hawkins from specimens in the Museum of the Royal College of",
-    "tags": [
-      "natural history",
-      "nature"
-    ]
+    slug: "fathers_and_sons_turgenev",
+    title: "Fathers and Sons (Turgenev)",
+    author: "Ivan Sergeevich Turgenev",
+    genre: "russian-literature",
+    genreLabel: "Russian Literature",
+    chunks: 1040,
+    excerpt: "'Oh, yes, the curtains; Nikolai Petrovitch was so good as to make me a present of them; but they have been put up a long while now.' 'Yes, and it's a long while since I have been to see you. Now it is very nice here.' 'Thanks to Nikolai Petrovitch's kindness,' murmured…",
+    tags: ["russian-literature"],
   },
   {
-    "slug": "on_the_origin_of_species_charles_darwin",
-    "title": "On the Origin of Species — Charles Darwin",
-    "author": "Charles Darwin",
-    "genre": "natural-history",
-    "genreLabel": "Natural History",
-    "chunks": 583,
-    "excerpt": "When on board H.M.S. 'Beagle,' as naturalist, I was much struck with certain facts in the distribution of the inhabitants of South America, and in the geological relations of the present to the past inhabitants of that continent.",
-    "tags": [
-      "natural history",
-      "nature"
-    ]
+    slug: "notes_from_underground_dostoevsky",
+    title: "Notes from Underground (Dostoevsky)",
+    author: "Fyodor Dostoyevsky",
+    genre: "russian-literature",
+    genreLabel: "Russian Literature",
+    chunks: 579,
+    excerpt: "And as all choice and reasoning can be really calculated—because there will some day be discovered the laws of our so-called free will—so, joking apart, there may one day be something like a table constructed of them, so that we really shall choose in accordance with it.",
+    tags: ["russian-literature"],
   },
   {
-    "slug": "the_chemical_history_of_a_candle_michael_faraday",
-    "title": "The Chemical History of a Candle — Michael Faraday",
-    "author": "Michael Faraday",
-    "genre": "natural-history",
-    "genreLabel": "Natural History",
-    "chunks": 138,
-    "excerpt": "From the primitive pine-torch to the paraffin candle, how wide an interval! between them how vast a contrast! The means adopted by man to illuminate his home at night, stamp at once his position in the scale of civilisation. The fluid bitumen of the far East, blazing in rude vessels of baked earth; the Etruscan lamp, exquisite in form, yet ill adapted to its office; the…",
-    "tags": [
-      "natural history",
-      "fire"
-    ]
+    slug: "oblomov",
+    title: "Oblomov",
+    author: "Ivan Aleksandrovich Goncharov",
+    genre: "russian-literature",
+    genreLabel: "Russian Literature",
+    chunks: 819,
+    excerpt: "The doctor reflected a moment. “Yes; also get the benefit of sea air,” he said. “Cross over to England, or else go for a voyage to America.” With chat he rose to take his leave. “Should you carry out these instructions to the letter----” he began. “Yes, yes. Of _course_ I…",
+    tags: ["russian-literature"],
   },
   {
-    "slug": "the_descent_of_man_charles_darwin",
-    "title": "The Descent of Man — Charles Darwin",
-    "author": "Charles Darwin",
-    "genre": "natural-history",
-    "genreLabel": "Natural History",
-    "chunks": 1159,
-    "excerpt": "During the successive reprints of the first edition of this work, published in 1871, I was able to introduce several important corrections; and now that more time has elapsed, I have endeavoured to profit by the fiery ordeal through which the book has passed, and have taken advantage of all the criticisms which seem to me sound. I am also greatly indebted to a large number…",
-    "tags": [
-      "natural history"
-    ]
+    slug: "on_the_eve_a_novel",
+    title: "On the eve: A novel",
+    author: "Ivan Sergeevich Turgenev",
+    genre: "russian-literature",
+    genreLabel: "Russian Literature",
+    chunks: 803,
+    excerpt: "Of late years she had behaved to her mother as to a sick grandmother; while her father, who had been proud of her while she had been regarded as an exceptional child, had come to be afraid of her when she was grown up, and said of her that she was a sort of enthusiastic…",
+    tags: ["russian-literature"],
   },
   {
-    "slug": "the_malay_archipelago_alfred_russel_wallace",
-    "title": "The Malay Archipelago — Alfred Russel Wallace",
-    "author": "Alfred Russel Wallace",
-    "genre": "natural-history",
-    "genreLabel": "Natural History",
-    "chunks": 403,
-    "excerpt": "My readers will naturally ask why I have delayed writing this book for six years after my return; and I feel bound to give them full",
-    "tags": [
-      "natural history"
-    ]
+    slug: "the_brothers_karamazov",
+    title: "The Brothers Karamazov",
+    author: "Fyodor Dostoyevsky",
+    genre: "russian-literature",
+    genreLabel: "Russian Literature",
+    chunks: 4690,
+    excerpt: "But a minute later he laughed again just as softly and happily. He slowly replaced the note in the envelope, crossed himself and lay down. The agitation in his heart passed at once. “God, have mercy upon all of them, have all these unhappy and turbulent souls in Thy keeping,…",
+    tags: ["russian-literature"],
   },
   {
-    "slug": "the_voyage_of_the_beagle_charles_darwin",
-    "title": "The Voyage of the Beagle — Charles Darwin",
-    "author": "Charles Darwin",
-    "genre": "natural-history",
-    "genreLabel": "Natural History",
-    "chunks": 742,
-    "excerpt": "The degree symbol is represented as \"degs.\" Italics are represented as _italics_. Footnotes are collected at the end of each chapter.",
-    "tags": [
-      "natural history",
-      "nature"
-    ]
+    slug: "the_idiot",
+    title: "The Idiot",
+    author: "Fyodor Dostoyevsky",
+    genre: "russian-literature",
+    genreLabel: "Russian Literature",
+    chunks: 3255,
+    excerpt: "The prince was in despair. He felt that though he had but applied to this miserable old drunkard because he saw no other way of getting to Nastasia Philipovna’s, yet he had been very wrong to put the slightest confidence in such a man. At last he rose and declared that he…",
+    tags: ["russian-literature"],
   },
   {
-    "slug": "dhammapada",
-    "title": "Dhammapada",
-    "author": "F. Max Müller translation",
-    "genre": "sacred-texts",
-    "genreLabel": "Sacred Texts",
-    "chunks": 41,
-    "excerpt": "1. All that we are is the result of what we have thought: it is founded on our thoughts, it is made up of our thoughts. If a man speaks or acts with an evil thought, pain follows him, as the wheel follows the foot of",
-    "tags": [
-      "sacred texts",
-      "sacred"
-    ]
+    slug: "the_possessed_or_the_devils",
+    title: "The possessed :  or, The devils",
+    author: "Fyodor Dostoyevsky",
+    genre: "russian-literature",
+    genreLabel: "Russian Literature",
+    chunks: 3425,
+    excerpt: "\"If it's not arranged by to-morrow, though, I shall go myself whatever happens, and even if every one were to know.\" \"I can't be with you before three o'clock to-morrow,\" I observed, after a moment's deliberation. \"At three o'clock then. Then it was true what I imagined…",
+    tags: ["russian-literature"],
   },
   {
-    "slug": "tao_te_ching",
-    "title": "Tao Te Ching",
-    "author": "Laozi",
-    "genre": "sacred-texts",
-    "genreLabel": "Sacred Texts",
-    "chunks": 36,
-    "excerpt": "The Tao that can be trodden is not the enduring and unchanging Tao. The name that can be named is not the enduring and unchanging name. Having no name, it is the Originator of heaven and earth; having a name, it is the Mother of all things.",
-    "tags": [
-      "sacred texts",
-      "sacred"
-    ]
-  }
+    slug: "war_and_peace",
+    title: "War and Peace",
+    author: "Leo, graf Tolstoy",
+    genre: "russian-literature",
+    genreLabel: "Russian Literature",
+    chunks: 7846,
+    excerpt: "He said he would not have been taken, it was not his fault but the corporal’s who had sent him to seize some horsecloths, though he had told him the Russians were there. And at every word he added: “But don’t hurt my little horse!” and stroked the animal. It was plain that he…",
+    tags: ["russian-literature"],
+  },
 ];

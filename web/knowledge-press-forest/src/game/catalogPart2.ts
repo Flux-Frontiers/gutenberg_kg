@@ -2,537 +2,433 @@ import type { Book } from "./catalogTypes";
 
 export const BOOKS_PART2: Book[] = [
   {
-    "slug": "alices_adventures_in_wonderland",
-    "title": "Alices Adventures in Wonderland",
-    "author": "Lewis Carroll",
-    "genre": "english-literature",
-    "genreLabel": "English Literature",
-    "chunks": 94,
-    "excerpt": "Alice was beginning to get very tired of sitting by her sister on the bank, and of having nothing to do: once or twice she had peeped into the book her sister was reading, but it had no pictures or conversations in it, 'and what is the use of a book,' thought Alice 'without pictures or conversations?'",
-    "tags": [
-      "english literature",
-      "wonder"
-    ]
+    slug: "the_odyssey",
+    title: "The Odyssey",
+    author: "Homer",
+    genre: "ancient-classical",
+    genreLabel: "Ancient & Classical",
+    chunks: 1668,
+    excerpt: "I will also give you clothes, and will send you a fair wind to take you home, if the gods in heaven so will it—for they know more about these things, and can settle them better than I can.” Ulysses shuddered as he heard her. “Now goddess,” he answered, “there is something…",
+    tags: ["ancient-classical"],
   },
   {
-    "slug": "bleak_house",
-    "title": "Bleak House",
-    "author": "Charles Dickens",
-    "genre": "english-literature",
-    "genreLabel": "English Literature",
-    "chunks": 1239,
-    "excerpt": "A Chancery judge once had the kindness to inform me, as one of a company of some hundred and fifty men and women not labouring under any suspicions of lunacy, that the Court of Chancery, though the shining subject of much popular prejudice (at which point I thought the judge’s eye had a cast in my direction), was almost immaculate. There had been, he admitted, a trivial…",
-    "tags": [
-      "english literature"
-    ]
+    slug: "the_teaching_of_epictetus",
+    title: "The Teaching of Epictetus",
+    author: "Epictetus",
+    genre: "ancient-classical",
+    genreLabel: "Ancient & Classical",
+    chunks: 876,
+    excerpt: "And when is a disjunctive safe? When it fulfills its promise. And when are flutes, or a lyre, or a horse, or a dog? What marvel is it, then, if a man also is to be saved in the same way, and perish in the same way? 6. But each thing is increased and saved by the corresponding…",
+    tags: ["ancient-classical"],
   },
   {
-    "slug": "cranford",
-    "title": "Cranford",
-    "author": "Elizabeth Cleghorn Gaskell",
-    "genre": "english-literature",
-    "genreLabel": "English Literature",
-    "chunks": 246,
-    "excerpt": "Endeavouring to beguile her into conversation She brought the affrighted carter ... into the drawing-room “With his arm round Miss Jessie’s waist!” I made use of the time to think of many other things The temptation of the comfortable arm-chair had been too much for her We gave her a tea-spoonful of currant jelly Slaughterous and indiscriminate directions “You must give me…",
-    "tags": [
-      "english literature"
-    ]
+    slug: "thoughts_of_marcus_aurelius_antoninus",
+    title: "Thoughts of Marcus Aurelius Antoninus",
+    author: "Emperor of Rome Marcus Aurelius",
+    genre: "ancient-classical",
+    genreLabel: "Ancient & Classical",
+    chunks: 1016,
+    excerpt: "I would have all men think as they please, or as they can, and I only claim the same freedom which I give. When a man writes anything, we may fairly try to find out all that his words must mean, even if the result is that they mean what he did not mean; and if we find this…",
+    tags: ["ancient-classical"],
   },
   {
-    "slug": "david_copperfield",
-    "title": "David Copperfield",
-    "author": "Charles Dickens",
-    "genre": "english-literature",
-    "genreLabel": "English Literature",
-    "chunks": 1232,
-    "excerpt": "I do not find it easy to get sufficiently far away from this Book, in the first sensations of having finished it, to refer to it with the composure which this formal heading would seem to require. My interest in it, is so recent and strong; and my mind is so divided between pleasure and regret--pleasure in the achievement of a long design, regret in the separation from many…",
-    "tags": [
-      "english literature"
-    ]
+    slug: "audels_electric_library_vol_1",
+    title: "Audels Electric Library Vol 1",
+    author: "Unknown",
+    genre: "audel-electric",
+    genreLabel: "Technical Reference",
+    chunks: 1610,
+    excerpt: "Wes bari Be | TE fe eae | Pre Sn He Ny! H.Ba&kCaly fli | . ° = AT) er ae iyyy.t a tar py Cag Gave Wig oa a a carre Sh : ' myn (00% . . : J on wi H u ' agra , HP ye oh ) ni oN aye ta he My ae iy\" oe t 1 Ke feng : | | i ' in | rr we av Pe Le opie Tart | i 7 as ae AF To nf : at…",
+    tags: ["audel-electric"],
   },
   {
-    "slug": "dracula",
-    "title": "Dracula",
-    "author": "Bram Stoker",
-    "genre": "english-literature",
-    "genreLabel": "English Literature",
-    "chunks": 720,
-    "excerpt": "Then a dog began to howl somewhere in a farmhouse far down the road—a long, agonised wailing, as if from fear. The sound was taken up by another dog, and then another and another, till, borne on the wind which now sighed softly through the Pass, a wild howling began.",
-    "tags": [
-      "english literature",
-      "horror",
-      "other"
-    ]
+    slug: "audels_electric_library_vol_10",
+    title: "Audels Electric Library Vol 10",
+    author: "Unknown",
+    genre: "audel-electric",
+    genreLabel: "Technical Reference",
+    chunks: 2433,
+    excerpt: "Fit the dynamo to the job and not the job to the dynamo. Fic. 8,244.—Reliance armature with double commutator Scientifically metered control of deposit is becoming more and more customary and scientific regulation of the plating dynamo must be equally exact. Series rheostats…",
+    tags: ["audel-electric"],
   },
   {
-    "slug": "emma",
-    "title": "Emma",
-    "author": "Jane Austen",
-    "genre": "english-literature",
-    "genreLabel": "English Literature",
-    "chunks": 560,
-    "excerpt": "Emma Woodhouse, handsome, clever, and rich, with a comfortable home and happy disposition, seemed to unite some of the best blessings of existence; and had lived nearly twenty-one years in the world with very",
-    "tags": [
-      "english literature"
-    ]
+    slug: "audels_electric_library_vol_2",
+    title: "Audels Electric Library Vol 2",
+    author: "Unknown",
+    genre: "audel-electric",
+    genreLabel: "Technical Reference",
+    chunks: 1521,
+    excerpt: "Fie. 780.—Typical shaft for an armature. The illustration shows the keyways for pulley, armature and commutator. In the smaller sizes, there is usually a flange at A, and threads at B and C, for retaining nuts. The shaft is subject also to bending by the weight of the…",
+    tags: ["audel-electric"],
   },
   {
-    "slug": "far_from_the_madding_crowd",
-    "title": "Far from the Madding Crowd",
-    "author": "Thomas Hardy",
-    "genre": "english-literature",
-    "genreLabel": "English Literature",
-    "chunks": 495,
-    "excerpt": "In reprinting this story for a new edition I am reminded that it was in the chapters of “Far from the Madding Crowd,” as they appeared month by month in a popular magazine, that I first ventured to adopt the word “Wessex” from the pages of early English history, and give it a fictitious significance as the existing name of the district once included in that extinct kingdom.…",
-    "tags": [
-      "english literature"
-    ]
+    slug: "audels_electric_library_vol_3",
+    title: "Audels Electric Library Vol 3",
+    author: "Unknown",
+    genre: "audel-electric",
+    genreLabel: "Technical Reference",
+    chunks: 1742,
+    excerpt: "Fie. 1,443 —Method of polishing Duncan commutator with tape. | erian Bove ; | at Kies. 1,444 to 1,446.—Duncan meter showing method of replacing fixed type compensating coil with swinging type. R, red lead to positive series binding post if 110 volt m. ter; if 220 volt meter,…",
+    tags: ["audel-electric"],
   },
   {
-    "slug": "great_expectations",
-    "title": "Great Expectations",
-    "author": "Charles Dickens",
-    "genre": "english-literature",
-    "genreLabel": "English Literature",
-    "chunks": 636,
-    "excerpt": "My father’s family name being Pirrip, and my Christian name Philip, my infant tongue could make of both names nothing longer or more explicit than Pip. So, I called myself Pip, and came to be called Pip.",
-    "tags": [
-      "english literature"
-    ]
+    slug: "audels_electric_library_vol_4",
+    title: "Audels Electric Library Vol 4",
+    author: "Unknown",
+    genre: "audel-electric",
+    genreLabel: "Technical Reference",
+    chunks: 1660,
+    excerpt: ": [OYTYOY OY) | < , fe a) 3 MAIN anes (O} > > «=D a> a= am 4",
+    tags: ["audel-electric"],
   },
   {
-    "slug": "grimms_fairy_tales",
-    "title": "Grimms Fairy Tales",
-    "author": "Wilhelm Grimm",
-    "genre": "english-literature",
-    "genreLabel": "English Literature",
-    "chunks": 331,
-    "excerpt": "A certain king had a beautiful garden, and in the garden stood a tree which bore golden apples. These apples were always counted, and about the time when they began to grow ripe it was found that every night one of them was gone. The king became very angry at this, and ordered the gardener to keep watch all night under the tree. The gardener set his eldest son to watch; but…",
-    "tags": [
-      "english literature",
-      "wonder"
-    ]
+    slug: "audels_electric_library_vol_7",
+    title: "Audels Electric Library Vol 7",
+    author: "Unknown",
+    genre: "audel-electric",
+    genreLabel: "Technical Reference",
+    chunks: 2370,
+    excerpt: "Example.—Ninety-one 16 candle power lamps consuming 3.1 watts per candle power at a pressure of 110 volts, will-require a current of 163.191 'The distance from the entrance cut out to the main or feeder switch is 200 feet, then for a 2 per cent. drop, or a loss of 110.02 =2.2…",
+    tags: ["audel-electric"],
   },
   {
-    "slug": "gullivers_travels",
-    "title": "Gullivers Travels",
-    "author": "Jonathan Swift",
-    "genre": "english-literature",
-    "genreLabel": "English Literature",
-    "chunks": 365,
-    "excerpt": "The author of these Travels, Mr. Lemuel Gulliver, is my ancient and intimate friend; there is likewise some relation between us on the mother’s side. About three years ago, Mr. Gulliver growing weary of the concourse of curious people coming to him at his house in Redriff, made a small purchase of land, with a convenient house, near Newark, in Nottinghamshire, his native…",
-    "tags": [
-      "english literature"
-    ]
+    slug: "audels_electric_library_vol_8",
+    title: "Audels Electric Library Vol 8",
+    author: "Unknown",
+    genre: "audel-electric",
+    genreLabel: "Technical Reference",
+    chunks: 2845,
+    excerpt: "Furthermore, this results in a delayed release and a waste of air. _ Under normal operating conditions an equalizing point corresponds to a reduction of 20 lbs. from 70 lbs. brake pipe pressure. The brake pipe reduc- tion is automatically limited when operating electrically…",
+    tags: ["audel-electric"],
   },
   {
-    "slug": "heart_of_darkness",
-    "title": "Heart of Darkness",
-    "author": "Joseph Conrad",
-    "genre": "english-literature",
-    "genreLabel": "English Literature",
-    "chunks": 134,
-    "excerpt": "The Nellie, a cruising yawl, swung to her anchor without a flutter of the sails, and was at rest. The flood had made, the wind was nearly calm, and being bound down the river, the only thing for it was to come",
-    "tags": [
-      "english literature"
-    ]
+    slug: "audels_electric_library_vol_9",
+    title: "Audels Electric Library Vol 9",
+    author: "Unknown",
+    genre: "audel-electric",
+    genreLabel: "Technical Reference",
+    chunks: 2191,
+    excerpt: "If the diaphragm become saturated zt will not respond perfectly to varia- tions of the magnetic strength and distortion will result. — wire having a large number of turns, the two coils being con- nected in series, as shown in fig. 7,370. The speaker is connected as indicated…",
+    tags: ["audel-electric"],
   },
   {
-    "slug": "howards_end",
-    "title": "Howards End",
-    "author": "E. M. (Edward Morgan) Forster",
-    "genre": "english-literature",
-    "genreLabel": "English Literature",
-    "chunks": 395,
-    "excerpt": "It isn’t going to be what we expected. It is old and little, and altogether delightful—red brick. We can scarcely pack in as it is, and the dear knows what will happen when Paul (younger son) arrives tomorrow. From hall you go right or left into dining-room or drawing-room. Hall itself is practically a room. You open another door in it, and there are the stairs going up in…",
-    "tags": [
-      "english literature"
-    ]
+    slug: "autobiography",
+    title: "Autobiography",
+    author: "John Stuart Mill",
+    genre: "biography",
+    genreLabel: "Biography",
+    chunks: 1084,
+    excerpt: "The _Traité de Legislation_ wound up with what was to me a most impressive picture of human life as it would be made by such opinions and such laws as were recommended in the treatise. The anticipations of practicable improvement were studiously moderate, deprecating and…",
+    tags: ["biography"],
   },
   {
-    "slug": "jane_eyre",
-    "title": "Jane Eyre",
-    "author": "Charlotte Brontë",
-    "genre": "english-literature",
-    "genreLabel": "English Literature",
-    "chunks": 652,
-    "excerpt": "There was no possibility of taking a walk that day. We had been wandering, indeed, in the leafless shrubbery an hour in the morning; but since dinner (Mrs. Reed, when there was no company, dined early) the cold winter wind had brought with it clouds so sombre, and a rain so penetrating, that further out-door exercise was now out of the question.",
-    "tags": [
-      "english literature"
-    ]
+    slug: "autobiography_of_benjamin_franklin",
+    title: "Autobiography of Benjamin Franklin",
+    author: "Benjamin Franklin",
+    genre: "biography",
+    genreLabel: "Biography",
+    chunks: 903,
+    excerpt: "He lik'd it, but ask'd me if my being on the spot in England to chuse the types, and see that every thing was good of the kind, might not be of some advantage. \"Then,\" says he, \"when there, you may make acquaintances, and establish correspondences in the bookselling and…",
+    tags: ["biography"],
   },
   {
-    "slug": "kim",
-    "title": "Kim",
-    "author": "Rudyard Kipling",
-    "genre": "english-literature",
-    "genreLabel": "English Literature",
-    "chunks": 372,
-    "excerpt": "He sat, in defiance of municipal orders, astride the gun Zam Zammah on her brick platform opposite the old Ajaib-Gher—the Wonder House, as the natives call the Lahore Museum. Who hold Zam-Zammah, that “fire-breathing dragon”, hold the Punjab, for the great green-bronze piece is always first of the conqueror’s loot.",
-    "tags": [
-      "english literature"
-    ]
+    slug: "autobiography_of_benvenuto_cellini",
+    title: "Autobiography of Benvenuto Cellini",
+    author: "Benvenuto Cellini",
+    genre: "biography",
+    genreLabel: "Biography",
+    chunks: 2480,
+    excerpt: "The words of that great man so heartened me, that I set myself to work at once with eagerness upon the model; and when I had finished it, a painter who was intimate with Michel Agnolo, called Giuliano Bugiardini, brought me the drawing of Atlas. [2] On the same occasion I…",
+    tags: ["biography"],
   },
   {
-    "slug": "middlemarch",
-    "title": "Middlemarch",
-    "author": "George Eliot",
-    "genre": "english-literature",
-    "genreLabel": "English Literature",
-    "chunks": 1132,
-    "excerpt": "Who that cares much to know the history of man, and how the mysterious mixture behaves under the varying experiments of Time, has not dwelt, at least briefly, on the life of Saint Theresa, has not smiled with some gentleness at the thought of the little girl walking forth one morning hand-in-hand with her still smaller brother, to go and seek martyrdom in the country of the…",
-    "tags": [
-      "english literature"
-    ]
+    slug: "confessions_jean_jacques_rousseau",
+    title: "Confessions — Jean-Jacques Rousseau",
+    author: "Jean-Jacques Rousseau",
+    genre: "biography",
+    genreLabel: "Biography",
+    chunks: 3792,
+    excerpt: "I know not what I should have said to her; but her friend entered, and at that moment I thought her ugly. At length, they bethought themselves, that they must return to town before night; even now we had but just time to reach it by daylight; and we hastened our departure in…",
+    tags: ["biography"],
   },
   {
-    "slug": "north_and_south",
-    "title": "North and South",
-    "author": "Elizabeth Cleghorn Gaskell",
-    "genre": "english-literature",
-    "genreLabel": "English Literature",
-    "chunks": 633,
-    "excerpt": "But as Margaret half suspected, Edith had fallen asleep. She lay curled up on the sofa in the back drawing-room in Harley Street looking very lovely in her white muslin and blue ribbons. If Titania had ever been dressed in white muslin and blue ribbons, and had fallen asleep on a crimson damask sofa in a back drawing-room, Edith might have been taken for her. Margaret was…",
-    "tags": [
-      "english literature"
-    ]
+    slug: "confessions_saint_augustine",
+    title: "Confessions — Saint Augustine",
+    author: "of Hippo, Saint Augustine",
+    genre: "biography",
+    genreLabel: "Biography",
+    chunks: 1448,
+    excerpt: "For as deeds of violence arise, if that emotion of the soul be corrupted, whence vehement action springs, stirring itself insolently and unrulily; and lusts, when that affection of the soul is ungoverned, whereby carnal pleasures are drunk in, so do errors and false opinions…",
+    tags: ["biography"],
   },
   {
-    "slug": "pride_and_prejudice",
-    "title": "Pride and Prejudice",
-    "author": "Jane Austen",
-    "genre": "english-literature",
-    "genreLabel": "English Literature",
-    "chunks": 540,
-    "excerpt": "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.",
-    "tags": [
-      "english literature",
-      "love"
-    ]
+    slug: "incidents_in_the_life_of_a_slave_girl_harriet_jacobs",
+    title: "Incidents in the Life of a Slave Girl — Harriet Jacobs",
+    author: "Harriet A. (Harriet Ann) Jacobs",
+    genre: "biography",
+    genreLabel: "Biography",
+    chunks: 1035,
+    excerpt: "She had not forgotten poor Benjamin’s sufferings, and she was afraid that if another child tried to escape, he would have a similar or a worse fate. To me, nothing seemed more dreadful than my present life. I said to myself, “William _must_ be free. He shall go to the north,…",
+    tags: ["biography"],
   },
   {
-    "slug": "robinson_crusoe",
-    "title": "Robinson Crusoe",
-    "author": "Daniel Defoe",
-    "genre": "english-literature",
-    "genreLabel": "English Literature",
-    "chunks": 390,
-    "excerpt": "I was born in the year 1632, in the city of York, of a good family, though not of that country, my father being a foreigner of Bremen, who settled first at Hull. He got a good estate by merchandise, and leaving off his trade, lived afterwards at York, from whence he had married my mother, whose relations were named Robinson, a very good family in that country, and from whom…",
-    "tags": [
-      "english literature"
-    ]
+    slug: "narrative_of_the_life_of_frederick_douglass",
+    title: "Narrative of the Life of Frederick Douglass",
+    author: "Frederick Douglass",
+    genre: "biography",
+    genreLabel: "Biography",
+    chunks: 524,
+    excerpt: "The slaves selected to go to the Great House Farm, for the monthly allowance for themselves and their fellow-slaves, were peculiarly enthusiastic. While on their way, they would make the dense old woods, for miles around, reverberate with their wild songs, revealing at once…",
+    tags: ["biography"],
   },
   {
-    "slug": "sense_and_sensibility",
-    "title": "Sense and Sensibility",
-    "author": "Jane Austen",
-    "genre": "english-literature",
-    "genreLabel": "English Literature",
-    "chunks": 425,
-    "excerpt": "The family of Dashwood had long been settled in Sussex. Their estate was large, and their residence was at Norland Park, in the centre of their property, where, for many generations, they had lived in so respectable a manner as to engage the general good opinion of their surrounding acquaintance. The late owner of this estate was a single man, who lived to a very advanced…",
-    "tags": [
-      "english literature"
-    ]
+    slug: "personal_memoirs_of_ulysses_s_grant_volume_1",
+    title: "Personal Memoirs of Ulysses S. Grant — Volume 1",
+    author: "Ulysses S. (Ulysses Simpson) Grant",
+    genre: "biography",
+    genreLabel: "Biography",
+    chunks: 3770,
+    excerpt: "He was a brave and very earnest soldier. No man in the service was more sincere in his devotion to the cause for which we were battling; none more ready to make sacrifices or risk life in it. On the 4th of September I removed my headquarters to Cairo and found Colonel Richard…",
+    tags: ["biography"],
   },
   {
-    "slug": "tess_of_the_durbervilles",
-    "title": "Tess of the d'Urbervilles",
-    "author": "Thomas Hardy",
-    "genre": "english-literature",
-    "genreLabel": "English Literature",
-    "chunks": 535,
-    "excerpt": "The main portion of the following story appeared—with slight modifications—in the _Graphic_ newspaper; other chapters, more especially addressed to adult readers, in the _Fortnightly Review_ and the _National Observer_, as episodic sketches. My thanks are tendered to the editors and proprietors of those periodicals for enabling me now to piece the trunk and limbs of the…",
-    "tags": [
-      "english literature"
-    ]
+    slug: "the_education_of_henry_adams",
+    title: "The Education of Henry Adams",
+    author: "Henry Adams",
+    genre: "biography",
+    genreLabel: "Biography",
+    chunks: 2489,
+    excerpt: "His friends were good to him. Life was amusing. Paris rapidly became familiar. In a month or six weeks he forgot even to disapprove of it; but he studied nothing, entered no society, and made no acquaintance.",
+    tags: ["biography"],
   },
   {
-    "slug": "the_adventures_of_sherlock_holmes",
-    "title": "The Adventures of Sherlock Holmes",
-    "author": "Arthur Conan Doyle",
-    "genre": "english-literature",
-    "genreLabel": "English Literature",
-    "chunks": 359,
-    "excerpt": "To Sherlock Holmes she is always _the_ woman. I have seldom heard him mention her under any other name. In his eyes she eclipses and predominates the whole of her sex. It was not that he felt any emotion akin to love for Irene Adler. All emotions, and that one particularly, were abhorrent to his cold, precise but admirably balanced mind. He was, I take it, the most perfect…",
-    "tags": [
-      "english literature"
-    ]
+    slug: "the_life_of_samuel_johnson_james_boswell",
+    title: "The Life of Samuel Johnson — James Boswell",
+    author: "James Boswell",
+    genre: "biography",
+    genreLabel: "Biography",
+    chunks: 2932,
+    excerpt: "He said, 'Sir, I make a distinction between what a man may experience by the mere strength of his imagination, and what imagination cannot possibly produce. Thus, suppose I should think that I saw a form, and heard a voice cry \"Johnson, you are a very wicked fellow, and…",
+    tags: ["biography"],
   },
   {
-    "slug": "the_jungle_book",
-    "title": "The Jungle Book",
-    "author": "Rudyard Kipling",
-    "genre": "english-literature",
-    "genreLabel": "English Literature",
-    "chunks": 173,
-    "excerpt": "It was seven o’clock of a very warm evening in the Seeonee hills when Father Wolf woke up from his day’s rest, scratched himself, yawned, and spread out his paws one after the other to get rid of the sleepy feeling in their tips. Mother Wolf lay with her big gray nose dropped across her four tumbling, squealing cubs, and the moon shone into the mouth of the cave where they…",
-    "tags": [
-      "english literature",
-      "wonder"
-    ]
+    slug: "up_from_slavery_booker_t_washington",
+    title: "Up From Slavery — Booker T. Washington",
+    author: "Booker T. Washington",
+    genre: "biography",
+    genreLabel: "Biography",
+    chunks: 1018,
+    excerpt: "Take the broom and sweep it.” It occurred to me at once that here was my chance. Never did I receive an order with more delight. I knew that I could sweep, for Mrs. Ruffner had thoroughly taught me how to do that when I lived with her. I swept the recitation-room three times.…",
+    tags: ["biography"],
   },
   {
-    "slug": "the_man_who_was_thursday",
-    "title": "The Man Who Was Thursday",
-    "author": "G. K. (Gilbert Keith) Chesterton",
-    "genre": "english-literature",
-    "genreLabel": "English Literature",
-    "chunks": 205,
-    "excerpt": "It is very difficult to classify THE MAN WHO WAS THURSDAY. It is possible to say that it is a gripping adventure story of murderous criminals and brilliant policemen; but it was to be expected that the author of the Father Brown stories should tell a detective story like no-one else. On this level, therefore, THE MAN WHO WAS THURSDAY succeeds superbly; if nothing else, it…",
-    "tags": [
-      "english literature"
-    ]
+    slug: "miracle_mongers_and_their_methods",
+    title: "Miracle Mongers and Their Methods",
+    author: "Unknown",
+    genre: "curiosities",
+    genreLabel: "Curiosities",
+    chunks: 579,
+    excerpt: "Girardelli FROM THE CONTINENT, * Iwtfj wm I ih* rtwltrsf *** buMtbi bo nor «f tpptanfv* before m«i of A« Ciuioul Uadi of Eutopr, who npwd the bif beat iiiWirtjua aod uioakhaint it her wo&derfid Pfrformio.ff t tad *lw «i tlx Tbetlra R*y*V J^sJdd, fiih uiimul ippkiM Her Powers…",
+    tags: ["curiosities"],
   },
   {
-    "slug": "the_mayor_of_casterbridge",
-    "title": "The Mayor of Casterbridge",
-    "author": "Thomas Hardy",
-    "genre": "english-literature",
-    "genreLabel": "English Literature",
-    "chunks": 417,
-    "excerpt": "One evening of late summer, before the nineteenth century had reached one-third of its span, a young man and woman, the latter carrying a child, were approaching the large village of Weydon-Priors, in Upper Wessex, on foot. They were plainly but not ill clad, though the thick hoar of dust which had accumulated on their shoes and garments from an obviously long journey lent…",
-    "tags": [
-      "english literature"
-    ]
+    slug: "the_diary_of_john_evelyn_volume_1",
+    title: "The Diary of John Evelyn — Volume 1",
+    author: "John Evelyn",
+    genre: "diaries",
+    genreLabel: "Diaries",
+    chunks: 3156,
+    excerpt: "We embarked in a felucca for Livorno, or Leghorn; but the sea running very high, we put in at Porto Venere, which we made with peril, between two narrow horrid rocks, against which the sea dashed with great velocity; but we were soon delivered into as great a calm and a most…",
+    tags: ["diaries"],
   },
   {
-    "slug": "the_picture_of_dorian_gray",
-    "title": "The Picture of Dorian Gray",
-    "author": "Oscar Wilde",
-    "genre": "english-literature",
-    "genreLabel": "English Literature",
-    "chunks": 273,
-    "excerpt": "The studio was filled with the rich odour of roses, and when the light summer wind stirred amidst the trees of the garden, there came through the open door the heavy scent of the lilac, or the more delicate perfume of the pink-flowering thorn.",
-    "tags": [
-      "english literature",
-      "love"
-    ]
+    slug: "the_diary_of_john_evelyn_volume_2",
+    title: "The Diary of John Evelyn — Volume 2",
+    author: "John Evelyn",
+    genre: "diaries",
+    genreLabel: "Diaries",
+    chunks: 2943,
+    excerpt: "Lord Ossory several times deplored to me his being engaged in it; he had more justice and honor than in the least to approve of it, though he had been over-persuaded to the expedition.",
+    tags: ["diaries"],
   },
   {
-    "slug": "the_portrait_of_a_lady_volume_1",
-    "title": "The Portrait of a Lady — Volume 1",
-    "author": "Henry James",
-    "genre": "english-literature",
-    "genreLabel": "English Literature",
-    "chunks": 423,
-    "excerpt": "“_The Portrait of a Lady_” was, like “_Roderick Hudson_,” begun in Florence, during three months spent there in the spring of 1879. Like “Roderick” and like “_The American_,” it had been designed for publication in “_The Atlantic Monthly_,” where it began to appear in 1880. It differed from its two predecessors, however, in finding a course also open to it, from month to…",
-    "tags": [
-      "english literature"
-    ]
+    slug: "the_diary_of_samuel_pepys_complete",
+    title: "The Diary of Samuel Pepys — Complete",
+    author: "Samuel Pepys",
+    genre: "diaries",
+    genreLabel: "Diaries",
+    chunks: 18517,
+    excerpt: "He also told me that he heard that exceptions were taken at his carrying his wife down to Portsmouth, saying that the King should not pay for it, but I denied that I had spoke of it, nor did I. At last he desired the difference between our wives might not make a difference…",
+    tags: ["diaries"],
   },
   {
-    "slug": "the_portrait_of_a_lady_volume_2",
-    "title": "The Portrait of a Lady — Volume 2",
-    "author": "Henry James",
-    "genre": "english-literature",
-    "genreLabel": "English Literature",
-    "chunks": 423,
-    "excerpt": "“_The Portrait of a Lady_” was, like “_Roderick Hudson_,” begun in Florence, during three months spent there in the spring of 1879. Like “Roderick” and like “_The American_,” it had been designed for publication in “_The Atlantic Monthly_,” where it began to appear in 1880. It differed from its two predecessors, however, in finding a course also open to it, from month to…",
-    "tags": [
-      "english literature"
-    ]
+    slug: "the_journal_of_a_tour_to_the_hebrides_with_samuel_johnson",
+    title: "The Journal of a Tour to the Hebrides with Samuel Johnson",
+    author: "James Boswell",
+    genre: "diaries",
+    genreLabel: "Diaries",
+    chunks: 2826,
+    excerpt: "That stone was the capital one of the circle which surrounded what now remains. Mr Fraser was very hospitable. There was a fair at Strichen; and he had several of his neighbours from it at dinner.",
+    tags: ["diaries"],
   },
   {
-    "slug": "the_strange_case_of_dr_jekyll_and_mr_hyde",
-    "title": "The Strange Case of Dr Jekyll and Mr Hyde",
-    "author": "Robert Louis Stevenson",
-    "genre": "english-literature",
-    "genreLabel": "English Literature",
-    "chunks": 88,
-    "excerpt": "Mr. Utterson the lawyer was a man of a rugged countenance that was never lighted by a smile; cold, scanty and embarrassed in discourse; backward in sentiment; lean, long, dusty, dreary and yet somehow lovable.",
-    "tags": [
-      "english literature",
-      "horror",
-      "other"
-    ]
+    slug: "a_dolls_house_henrik_ibsen",
+    title: "A Doll's House — Henrik Ibsen",
+    author: "Henrik Ibsen",
+    genre: "drama",
+    genreLabel: "Drama",
+    chunks: 328,
+    excerpt: "NORA. Be so good as to go into the study, then. _[She bows indifferently to him and shuts the door into the hall; then comes back and makes up the fire in the stove.]_ MRS LINDE. Nora—who was that man? NORA. A lawyer, of the name of Krogstad. MRS LINDE. Then it really was he.…",
+    tags: ["drama"],
   },
   {
-    "slug": "the_time_machine",
-    "title": "The Time Machine",
-    "author": "H. G. (Herbert George) Wells",
-    "genre": "english-literature",
-    "genreLabel": "English Literature",
-    "chunks": 113,
-    "excerpt": "The Time Traveller (for so it will be convenient to speak of him) was expounding a recondite matter to us. His grey eyes shone and twinkled, and his usually pale face was flushed and animated.",
-    "tags": [
-      "english literature",
-      "future"
-    ]
+    slug: "doctor_faustus_christopher_marlowe",
+    title: "Doctor Faustus — Christopher Marlowe",
+    author: "Christopher Marlowe",
+    genre: "drama",
+    genreLabel: "Drama",
+    chunks: 277,
+    excerpt: "FAUSTUS. Already Faustus hath hazarded that for thee. MEPHIST. But, Faustus, thou must bequeath it solemnly, And write a deed of gift with thine own blood; For that security craves great Lucifer. If thou deny it, I will back to hell. FAUSTUS. Stay, Mephistophilis, and tell…",
+    tags: ["drama"],
   },
   {
-    "slug": "the_turn_of_the_screw",
-    "title": "The Turn of the Screw",
-    "author": "Henry James",
-    "genre": "english-literature",
-    "genreLabel": "English Literature",
-    "chunks": 147,
-    "excerpt": "The story had held us, round the fire, sufficiently breathless, but except the obvious remark that it was gruesome, as, on Christmas Eve in an old house, a strange tale should essentially be, I remember no comment uttered till somebody happened to say that it was the only case he had met in which such a visitation had fallen on a child. The case, I may mention, was that of…",
-    "tags": [
-      "english literature"
-    ]
+    slug: "hedda_gabler_henrik_ibsen",
+    title: "Hedda Gabler — Henrik Ibsen",
+    author: "Henrik Ibsen",
+    genre: "drama",
+    genreLabel: "Drama",
+    chunks: 391,
+    excerpt: "MISS TESMAN. Yes, don't be uneasy, my dear boy.--Besides, I have given security for the furniture and all the carpets. TESMAN. Security? You? My dear Aunt Julia--what sort of security could you give? MISS TESMAN. I have given a mortgage on our annuity. TESMAN. [Jumps up.]…",
+    tags: ["drama"],
   },
   {
-    "slug": "the_war_of_the_worlds",
-    "title": "The War of the Worlds",
-    "author": "H. G. (Herbert George) Wells",
-    "genre": "english-literature",
-    "genreLabel": "English Literature",
-    "chunks": 212,
-    "excerpt": "‘But who shall dwell in these worlds if they be inhabited? . . . Are we or they Lords of the World? . . . And KEPLER (quoted in _The Anatomy of Melancholy_)",
-    "tags": [
-      "english literature",
-      "future"
-    ]
+    slug: "major_barbara",
+    title: "Major Barbara",
+    author: "Bernard Shaw",
+    genre: "drama",
+    genreLabel: "Drama",
+    chunks: 422,
+    excerpt: "UNDERSHAFT. Well, I will make a bargain with you. If I go to see you to-morrow in your Salvation Shelter, will you come the day after to see me in my cannon works? BARBARA. Take care. It may end in your giving up the cannons for the sake of the Salvation Army. UNDERSHAFT. Are…",
+    tags: ["drama"],
   },
   {
-    "slug": "treasure_island",
-    "title": "Treasure Island",
-    "author": "Robert Louis Stevenson",
-    "genre": "english-literature",
-    "genreLabel": "English Literature",
-    "chunks": 231,
-    "excerpt": "To S.L.O., an American gentleman in accordance with whose classic taste the following narrative has been designed, it is now, in return for numerous delightful hours, and with the kindest wishes, dedicated by his",
-    "tags": [
-      "english literature",
-      "sea"
-    ]
+    slug: "pygmalion_george_bernard_shaw",
+    title: "Pygmalion — George Bernard Shaw",
+    author: "Bernard Shaw",
+    genre: "drama",
+    genreLabel: "Drama",
+    chunks: 441,
+    excerpt: "Well, you wouldn’t have the face to ask me the same for teaching me my own language as you would for French; so I won’t give more than a shilling. Take it or leave it. HIGGINS [walking up and down the room, rattling his keys and his cash in his pockets] You know, Pickering,…",
+    tags: ["drama"],
   },
   {
-    "slug": "vanity_fair",
-    "title": "Vanity Fair",
-    "author": "William Makepeace Thackeray",
-    "genre": "english-literature",
-    "genreLabel": "English Literature",
-    "chunks": 1071,
-    "excerpt": "As the manager of the Performance sits before the curtain on the boards and looks into the Fair, a feeling of profound melancholy comes over him in his survey of the bustling place. There is a great quantity of eating and drinking, making love and jilting, laughing and the contrary, smoking, cheating, fighting, dancing and fiddling; there are bullies pushing about, bucks…",
-    "tags": [
-      "english literature"
-    ]
+    slug: "tamburlaine_the_great_christopher_marlowe",
+    title: "Tamburlaine the Great — Christopher Marlowe",
+    author: "Christopher Marlowe",
+    genre: "drama",
+    genreLabel: "Drama",
+    chunks: 359,
+    excerpt: "USUMCASANE. Long may Theridamas remain with us! TAMBURLAINE. These are my friends, in whom I more rejoice Than doth the king of Persia in his crown; And, by the love of Pylades and Orestes, Whose statues [61] we adore in Scythia, Thyself and them shall never part from me…",
+    tags: ["drama"],
   },
   {
-    "slug": "wuthering_heights",
-    "title": "Wuthering Heights",
-    "author": "Emily Brontë",
-    "genre": "english-literature",
-    "genreLabel": "English Literature",
-    "chunks": 414,
-    "excerpt": "I have just returned from a visit to my landlord—the solitary neighbour that I shall be troubled with. This is certainly a beautiful country! In all England, I do not believe that I could have fixed on a situation so completely removed from the stir of society.",
-    "tags": [
-      "english literature"
-    ]
+    slug: "the_duchess_of_malfi_john_webster",
+    title: "The Duchess of Malfi — John Webster",
+    author: "John Webster",
+    genre: "drama",
+    genreLabel: "Drama",
+    chunks: 355,
+    excerpt: "[Enter] BOSOLA and CASTRUCCIO BOSOLA. You say you would fain be taken for an eminent courtier? CASTRUCCIO. 'Tis the very main[31] of my ambition. BOSOLA. Let me see: you have a reasonable good face for 't already, and your night-cap expresses your ears sufficient largely. I…",
+    tags: ["drama"],
   },
   {
-    "slug": "a_selection_from_the_discourses_of_epictetus_with_the_enchei",
-    "title": "A Selection from the Discourses of Epictetus with the Encheiridion",
-    "author": "Epictetus",
-    "genre": "ancient-classical",
-    "genreLabel": "Ancient & Classical",
-    "chunks": 204,
-    "excerpt": "Very little is known of the life of Epictetus. It is said that he was a native of Hierapolis in Phrygia, a town between the Maeander and a branch of the Maeander named the Lycus. Hierapolis is mentioned in the epistle of Paul to the people of Colossae (Coloss. iv., 13); from which it has been concluded that there was a Christian church in Hierapolis in the time of the…",
-    "tags": [
-      "ancient classical",
-      "stoic"
-    ]
+    slug: "the_importance_of_being_earnest_oscar_wilde",
+    title: "The Importance of Being Earnest — Oscar Wilde",
+    author: "Oscar Wilde",
+    genre: "drama",
+    genreLabel: "Drama",
+    chunks: 271,
+    excerpt: "But I’ll run over the programme I’ve drawn out, if you will kindly come into the next room for a moment. LADY BRACKNELL. Thank you, Algernon. It is very thoughtful of you. [Rising, and following Algernon.] I’m sure the programme will be delightful, after a few expurgations.…",
+    tags: ["drama"],
   },
   {
-    "slug": "histories",
-    "title": "Histories",
-    "author": "Herodotus",
-    "genre": "ancient-classical",
-    "genreLabel": "Ancient & Classical",
-    "chunks": 551,
-    "excerpt": "If a new translation of Herodotus does not justify itself, it will hardly be justified in a preface; therefore the question whether it was needed may be left here without discussion. The aim of the translator has been above all things faithfulness—faithfulness to the manner of expression and to the structure of sentences, as well as to the meaning of the Author. At the same…",
-    "tags": [
-      "ancient classical"
-    ]
+    slug: "the_master_builder",
+    title: "The Master Builder",
+    author: "Henrik Ibsen",
+    genre: "drama",
+    genreLabel: "Drama",
+    chunks: 367,
+    excerpt: "Then BROVIK comes into the front room. BROVIK. May I have a few words with you? SOLNESS. Certainly. BROVIK. [To KAIA.] Just go in there for moment, Kaia. KAIA. [Uneasily.] Oh, but uncle-- BROVIK. Do as I say, child. And shut the door after you. [KAIA goes reluctantly into the…",
+    tags: ["drama"],
   },
   {
-    "slug": "history_of_the_peloponnesian_war",
-    "title": "History of the Peloponnesian War",
-    "author": "Thucydides",
-    "genre": "ancient-classical",
-    "genreLabel": "Ancient & Classical",
-    "chunks": 736,
-    "excerpt": "Thucydides, an Athenian, wrote the history of the war between the Peloponnesians and the Athenians, beginning at the moment that it broke out, and believing that it would be a great war and more worthy of relation than any that had preceded it. This belief was not without its grounds. The preparations of both the combatants were in every department in the last state of…",
-    "tags": [
-      "ancient classical",
-      "war"
-    ]
+    slug: "the_sea_gull",
+    title: "The sea-gull",
+    author: "Anton Pavlovich Chekhov",
+    genre: "drama",
+    genreLabel: "Drama",
+    chunks: 238,
+    excerpt: "I, the spirit of the universe, I alone am immutable and eternal. [A pause] Like a captive in a dungeon deep and void, I know not where I am, nor what awaits me. One thing only is not hidden from me: in my fierce and obstinate battle with Satan, the source of the forces of…",
+    tags: ["drama"],
   },
   {
-    "slug": "medea_of_euripides",
-    "title": "Medea of Euripides",
-    "author": "Euripides",
-    "genre": "ancient-classical",
-    "genreLabel": "Ancient & Classical",
-    "chunks": 70,
-    "excerpt": "Proofreading Canada Team at http://www.pgdpcanada.net (This file was produced from images generously made available by The Internet Archive/Canadian Libraries)",
-    "tags": [
-      "ancient classical",
-      "revenge",
-      "tragedy"
-    ]
+    slug: "a_christmas_carol_in_prose_being_a_ghost_story_of_christmas",
+    title: "A Christmas Carol in Prose; Being a Ghost Story of Christmas",
+    author: "Charles Dickens",
+    genre: "english-literature",
+    genreLabel: "English Literature",
+    chunks: 385,
+    excerpt: "Not to know that any Christian spirit working kindly in its little sphere, whatever it may be, will find its mortal life too short for its vast means of usefulness. Not to know that no space of regret can make amends for one life's opportunity misused! Yet such was I! Oh!…",
+    tags: ["english-literature"],
   },
   {
-    "slug": "metamorphoses",
-    "title": "Metamorphoses",
-    "author": "Ovid",
-    "genre": "ancient-classical",
-    "genreLabel": "Ancient & Classical",
-    "chunks": 456,
-    "excerpt": "In the original text, words and phrases supplied by the translator were printed in _italics_. In this e-text they are shown in {braces}. Italics in the notes and commentary are shown conventionally with",
-    "tags": [
-      "ancient classical"
-    ]
+    slug: "a_modest_proposal",
+    title: "A Modest Proposal",
+    author: "Jonathan Swift",
+    genre: "english-literature",
+    genreLabel: "English Literature",
+    chunks: 52,
+    excerpt: "For we can neither employ them in handicraft or agriculture; they neither build houses, (I mean in the country) nor cultivate land: they can very seldom pick up a livelihood by stealing till they arrive at six years old; except where they are of towardly parts, although I…",
+    tags: ["english-literature"],
   },
   {
-    "slug": "minor_dialogues_together_with_the_dialogue_on_clemency",
-    "title": "Minor Dialogues, Together With the Dialogue on Clemency",
-    "author": "Lucius Annaeus Seneca",
-    "genre": "ancient-classical",
-    "genreLabel": "Ancient & Classical",
-    "chunks": 517,
-    "excerpt": "I can say little by way of preface to Seneca’s “Minor Dialogues” which I have not already expressed in my preface to “De Beneficiis,” except that the “Minor Dialogues” seem to me to be composed in a gloomier key than either the “De Beneficiis” or “De Clementia,” and probably were written at a time when the author had already begun to experience the ingratitude of his…",
-    "tags": [
-      "ancient classical",
-      "stoic"
-    ]
+    slug: "a_room_with_a_view_forster",
+    title: "A Room with a View (Forster)",
+    author: "E. M. (Edward Morgan) Forster",
+    genre: "english-literature",
+    genreLabel: "English Literature",
+    chunks: 908,
+    excerpt: "I must have dropped them out there in the square.” She looked at him cautiously. “Would you add to your kindness by fetching them?” He added to his kindness. As soon as he had turned his back, Lucy arose with the running of a maniac and stole down the arcade towards the Arno.…",
+    tags: ["english-literature"],
   },
   {
-    "slug": "oedipus_king_of_thebes",
-    "title": "Oedipus King of Thebes",
-    "author": "Sophocles",
-    "genre": "ancient-classical",
-    "genreLabel": "Ancient & Classical",
-    "chunks": 63,
-    "excerpt": "If I have turned aside from Euripides for a moment and attempted a translation of the great stage masterpiece of Sophocles, my excuse must be the fascination of this play, which has thrown its spell on me as on many other translators. Yet I may plead also that as a rule every diligent student of these great works can add something to the discoveries of his predecessors, and…",
-    "tags": [
-      "ancient classical"
-    ]
+    slug: "a_tale_of_two_cities",
+    title: "A Tale of Two Cities",
+    author: "Charles Dickens",
+    genre: "english-literature",
+    genreLabel: "English Literature",
+    chunks: 1854,
+    excerpt: "Lorry said it; perhaps not quite disinterestedly, but with the interested object of squeezing himself back again. “You think so?” said Mr. Stryver. “Well! you have been present all day, and you ought to know. You are a man of business, too.” “And as such,” quoth Mr. Lorry,…",
+    tags: ["english-literature"],
   },
   {
-    "slug": "on_the_nature_of_things",
-    "title": "On the Nature of Things",
-    "author": "Titus Lucretius Carus",
-    "genre": "ancient-classical",
-    "genreLabel": "Ancient & Classical",
-    "chunks": 260,
-    "excerpt": "Mother of Rome, delight of Gods and men, Dear Venus that beneath the gliding stars And fruitful lands--for all of living things Through thee alone are evermore conceived, Through thee are risen to visit the great sun-- Before thee, Goddess, and thy coming on, For thee the daedal Earth bears scented flowers, Smile, and the hollows of the serene sky For soon as comes the…",
-    "tags": [
-      "ancient classical",
-      "nature"
-    ]
+    slug: "alices_adventures_in_wonderland",
+    title: "Alices Adventures in Wonderland",
+    author: "Lewis Carroll",
+    genre: "english-literature",
+    genreLabel: "English Literature",
+    chunks: 309,
+    excerpt: "However, when they had been running half an hour or so, and were quite dry again, the Dodo suddenly called out “The race is over!” and they all crowded round it, panting, and asking, “But who has won?” This question the Dodo could not answer without a great deal of thought,…",
+    tags: ["english-literature"],
   },
   {
-    "slug": "parallel_lives",
-    "title": "Parallel Lives",
-    "author": "Plutarch",
-    "genre": "ancient-classical",
-    "genreLabel": "Ancient & Classical",
-    "chunks": 2647,
-    "excerpt": "The following are the names of the chapters. These names, in all capitals, are found only once in the text, at the start of the chapter.",
-    "tags": [
-      "ancient classical"
-    ]
-  }
+    slug: "bleak_house_dickens",
+    title: "Bleak House (Dickens)",
+    author: "Charles Dickens",
+    genre: "english-literature",
+    genreLabel: "English Literature",
+    chunks: 4728,
+    excerpt: "Then I felt I could not do it. Sometimes I considered whether I should write to his mother, but that ended in my being convinced that to open a correspondence would be to make the matter worse. I always came to the conclusion, finally, that I could do nothing. Mr.",
+    tags: ["english-literature"],
+  },
 ];

@@ -2,529 +2,433 @@ import type { Book } from "./catalogTypes";
 
 export const BOOKS_PART4: Book[] = [
   {
-    "slug": "oblomov",
-    "title": "Oblomov",
-    "author": "Ivan Aleksandrovich Goncharov",
-    "genre": "russian-literature",
-    "genreLabel": "Russian Literature",
-    "chunks": 211,
-    "excerpt": "One morning, in a flat in one of the great buildings in Gorokliovaia Street, * the population of which was sufficient to constitute that of a provincial town, there was lying in bed a gentleman named Ilya Ilyitch Oblomov. He was a fellow of a little over thirty, of medium height, and of pleasant exterior. Unfortunately, in his dark-grey eyes there was an absence of any…",
-    "tags": [
-      "russian literature"
-    ]
+    slug: "twenty_thousand_leagues_under_the_sea",
+    title: "Twenty Thousand Leagues Under the Sea",
+    author: "Jules Verne",
+    genre: "french-literature",
+    genreLabel: "French Literature",
+    chunks: 1405,
+    excerpt: "Of the echinodermes, remarkable for their coating of spines, asteri, sea-stars, pantacrinæ, comatules, astérophons, echini, holothuri, etc., represented individually a complete collection of this group. A somewhat nervous conchyliologist would certainly have fainted before…",
+    tags: ["french-literature"],
   },
   {
-    "slug": "on_the_eve",
-    "title": "On the Eve",
-    "author": "Ivan Sergeevich Turgenev",
-    "genre": "russian-literature",
-    "genreLabel": "Russian Literature",
-    "chunks": 213,
-    "excerpt": "This exquisite novel, first published in 1859, like so many great works of art, holds depths of meaning which at first sight lie veiled under the simplicity and harmony of the technique. To the English reader _On the Eve_ is a charmingly drawn picture of a quiet Russian household, with a delicate analysis of a young girl’s soul; but to Russians it is also a deep and…",
-    "tags": [
-      "russian literature"
-    ]
+    slug: "faust_part_i_goethe",
+    title: "Faust Part I (Goethe)",
+    author: "Johann Wolfgang von Goethe",
+    genre: "german-literature",
+    genreLabel: "German Literature",
+    chunks: 434,
+    excerpt: "Sieh nur, sieh! wie behend sich die Menge Durch die Gärten und Felder zerschlägt, Wie der Fluß, in Breit und Länge So manchen lustigen Nachen bewegt, Und bis zum Sinken überladen Entfernt sich dieser letzte Kahn. Selbst von des Berges fernen Pfaden Blinken uns farbige Kleider…",
+    tags: ["german-literature"],
   },
   {
-    "slug": "the_brothers_karamazov",
-    "title": "The Brothers Karamazov",
-    "author": "Fyodor Dostoyevsky",
-    "genre": "russian-literature",
-    "genreLabel": "Russian Literature",
-    "chunks": 1600,
-    "excerpt": "Alexey Fyodorovitch Karamazov was the third son of Fyodor Pavlovitch Karamazov, a land owner well known in our district in his own day, and still remembered among us owing to his gloomy and tragic death, which happened thirteen years ago, and which I shall describe in its proper place. For the present I will only say that this “landowner”—for so we used to call him,…",
-    "tags": [
-      "russian literature",
-      "suffering",
-      "soul"
-    ]
+    slug: "faust_der_tragödie_zweiter_teil",
+    title: "Faust: Der Tragödie zweiter Teil",
+    author: "Johann Wolfgang von Goethe",
+    genre: "german-literature",
+    genreLabel: "German Literature",
+    chunks: 1106,
+    excerpt: "Weh! Weh! das brennt! das war ein harter Tritt, + Wie Pferdehuf.",
+    tags: ["german-literature"],
   },
   {
-    "slug": "the_idiot",
-    "title": "The Idiot",
-    "author": "Fyodor Dostoyevsky",
-    "genre": "russian-literature",
-    "genreLabel": "Russian Literature",
-    "chunks": 863,
-    "excerpt": "Towards the end of November, during a thaw, at nine o’clock one morning, a train on the Warsaw and Petersburg railway was approaching the latter city at full speed. The morning was so damp and misty that it was only with great difficulty that the day succeeded in breaking; and it was impossible to distinguish anything more than a few yards",
-    "tags": [
-      "russian literature"
-    ]
+    slug: "siddhartha_hesse",
+    title: "Siddhartha (Hesse)",
+    author: "Hermann Hesse",
+    genre: "german-literature",
+    genreLabel: "German Literature",
+    chunks: 535,
+    excerpt: "I wish that you would go it up to its end, oh my friend, that you shall find salvation!” Govinda, not completely understanding it yet, repeated his question in an impatient tone: “Speak up, I beg you, my dear! Tell me, since it could not be any other way, that you also, my…",
+    tags: ["german-literature"],
   },
   {
-    "slug": "the_possessed_or_the_devils",
-    "title": "The possessed :  or, The devils",
-    "author": "Fyodor Dostoyevsky",
-    "genre": "russian-literature",
-    "genreLabel": "Russian Literature",
-    "chunks": 896,
-    "excerpt": "* CHAPTER VI. PYOTR STEPANOVITCH IS BUSY * CHAPTER IX. A RAID AT STEPAN TROFIMOVITCH'S * CHAPTER X. FILIBUSTERS. A FATAL MORNING",
-    "tags": [
-      "russian literature"
-    ]
+    slug: "the_metamorphosis_kafka",
+    title: "The Metamorphosis (Kafka)",
+    author: "Franz Kafka",
+    genre: "german-literature",
+    genreLabel: "German Literature",
+    chunks: 290,
+    excerpt: "The first few times he tried to climb up on the smooth chest of drawers he just slid down again, but he finally gave himself one last swing and stood there upright; the lower part of his body was in serious pain but he no longer gave any attention to it. Now he let himself…",
+    tags: ["german-literature"],
   },
   {
-    "slug": "war_and_peace",
-    "title": "War and Peace",
-    "author": "Leo, graf Tolstoy",
-    "genre": "russian-literature",
-    "genreLabel": "Russian Literature",
-    "chunks": 3400,
-    "excerpt": "Well, Prince, so Genoa and Lucca are now just family estates of the Buonapartes. But I warn you, if you don't tell me that this means war, if you still try to defend the infamies and horrors perpetrated by that Antichrist—I really believe he is Antichrist—I will have nothing more to do with you.",
-    "tags": [
-      "russian literature",
-      "war"
-    ]
+    slug: "the_trial_kafka",
+    title: "The Trial (Kafka)",
+    author: "Franz Kafka",
+    genre: "german-literature",
+    genreLabel: "German Literature",
+    chunks: 1106,
+    excerpt: "\"I have nearly finished what I have to say,\" said K., and as there was no bell available he struck the desk with his fist in a way that startled the judge and his advisor and made them look up from each other. \"None of this concerns me, and I am therefore able to make a calm…",
+    tags: ["german-literature"],
   },
   {
-    "slug": "around_the_world_in_eighty_days",
-    "title": "Around the World in Eighty Days",
-    "author": "Jules Verne",
-    "genre": "french-literature",
-    "genreLabel": "French Literature",
-    "chunks": 233,
-    "excerpt": "Mr. Phileas Fogg lived, in 1872, at No. 7, Saville Row, Burlington Gardens, the house in which Sheridan died in 1814. He was one of the most noticeable members of the Reform Club, though he seemed always to avoid attracting attention; an enigmatical personage, about whom little was known, except that he was a polished man of the world. People said that he resembled Byron—at…",
-    "tags": [
-      "french literature"
-    ]
+    slug: "at_the_mountains_of_madness",
+    title: "At the Mountains of Madness",
+    author: "H. P. (Howard Phillips) Lovecraft",
+    genre: "horror",
+    genreLabel: "Horror",
+    chunks: 616,
+    excerpt: "Wish I had a real laboratory here. Dyer better kick himself for having tried to stop my westward trip. First the world's greatest mountains, and then this. If this last isn't the high spot of the expedition, I don't know what is. We're made scientifically. Congrats, Pabodie,…",
+    tags: ["horror"],
   },
   {
-    "slug": "candide",
-    "title": "Candide",
-    "author": "Voltaire",
-    "genre": "french-literature",
-    "genreLabel": "French Literature",
-    "chunks": 126,
-    "excerpt": "The Publishers will be glad to mail complete list of titles in the Modern Library. The list is representative of the Great Moderns and is one of the most important contributions to publishing that has been made for many years. Every reader of books will find titles he needs at a low price in",
-    "tags": [
-      "french literature"
-    ]
+    slug: "carmilla",
+    title: "Carmilla",
+    author: "Joseph Sheridan Le Fanu",
+    genre: "horror",
+    genreLabel: "Horror",
+    chunks: 372,
+    excerpt: "You saw how quickly she was gone. I hope I have not done a very foolish thing, in taking charge of the young lady.” For my part, I was delighted. I was longing to see and talk to her; and only waiting till the doctor should give me leave. You, who live in towns, can have no…",
+    tags: ["horror"],
   },
   {
-    "slug": "from_the_earth_to_the_moon",
-    "title": "From the Earth to the Moon",
-    "author": "Jules Verne",
-    "genre": "french-literature",
-    "genreLabel": "French Literature",
-    "chunks": 346,
-    "excerpt": "During the War of the Rebellion, a new and influential club was established in the city of Baltimore in the State of Maryland. It is well known with what energy the taste for military matters became developed among that nation of ship-owners, shopkeepers, and mechanics. Simple tradesmen jumped their counters to become extemporized captains, colonels, and generals, without…",
-    "tags": [
-      "french literature",
-      "future"
-    ]
+    slug: "ghost_stories_of_an_antiquary",
+    title: "Ghost Stories of an Antiquary",
+    author: "M. R. (Montague Rhodes) James",
+    genre: "horror",
+    genreLabel: "Horror",
+    chunks: 605,
+    excerpt: "Those who have taken even the most limited interest in the acquisition of topographical pictures are aware that there is one London dealer whose aid is indispensable to their researches. Mr J. W. Britnell publishes at short intervals very admirable catalogues of a large and…",
+    tags: ["horror"],
   },
   {
-    "slug": "germinal",
-    "title": "Germinal",
-    "author": "Émile Zola",
-    "genre": "french-literature",
-    "genreLabel": "French Literature",
-    "chunks": 626,
-    "excerpt": "'GERMINAL' was published in 1885, after occupying Zola during the previous year. In accordance with his usual custom--but to a greater extent than with any other of his books except _La Débâcle_--he accumulated material beforehand. For six months he travelled about the coal-mining district in northern France and Belgium, especially the Borinage around Mons, note-book in…",
-    "tags": [
-      "french literature"
-    ]
+    slug: "tales_of_terror_and_mystery",
+    title: "Tales of Terror and Mystery",
+    author: "Arthur Conan Doyle",
+    genre: "horror",
+    genreLabel: "Horror",
+    chunks: 962,
+    excerpt: "By Jove, I am chilled to the bone! Come on, Burger, let us warm ourselves by a spurt of hard walking.\" Their footsteps sounded loud and crisp upon the rough stone paving of the disappointing road which is all that is left of the most famous highway of the world. A peasant or…",
+    tags: ["horror"],
   },
   {
-    "slug": "journey_to_the_center_of_the_earth",
-    "title": "Journey to the Center of the Earth",
-    "author": "Jules Verne",
-    "genre": "french-literature",
-    "genreLabel": "French Literature",
-    "chunks": 260,
-    "excerpt": "[Redactor's Note: The following version of Jules Verne's \"Journey into the Interior of the Earth\" was published by Ward, Lock, &Co., Ltd., London, in 1877. This version is believed to be the most faithful rendition into English of this classic currently in the public domain. The few notes of the translator are located near the point where they are referenced. The Runic…",
-    "tags": [
-      "french literature"
-    ]
+    slug: "the_call_of_cthulhu",
+    title: "The Call of Cthulhu",
+    author: "H. P. (Howard Phillips) Lovecraft",
+    genre: "horror",
+    genreLabel: "Horror",
+    chunks: 182,
+    excerpt: "On April 2nd at about 3 p. m. every trace of Wilcox's malady suddenly ceased. He sat upright in bed, astonished to find himself at home and completely ignorant of what had happened in dream or reality since the night of March 22nd. Pronounced well by his physician, he…",
+    tags: ["horror"],
   },
   {
-    "slug": "les_miserables",
-    "title": "Les Miserables",
-    "author": "Victor Hugo",
-    "genre": "french-literature",
-    "genreLabel": "French Literature",
-    "chunks": 2900,
-    "excerpt": "So long as there shall exist, by virtue of law and custom, decrees of damnation pronounced by society, artificially creating hells amid the civilization of earth, and adding the element of human fate to divine destiny; so long as the three great problems of the century—the degradation of man through pauperism, the corruption of woman through hunger, the crippling of…",
-    "tags": [
-      "french literature"
-    ]
+    slug: "the_case_of_charles_dexter_ward",
+    title: "The Case of Charles Dexter Ward",
+    author: "H. P. (Howard Phillips) Lovecraft",
+    genre: "horror",
+    genreLabel: "Horror",
+    chunks: 645,
+    excerpt: "According to the Smith diary a company of about one hundred men met at ten P.M. on Friday, April twelfth, 1771, in the great room of Thurston's Tavern at the Sign of the Golden Lion on Weybosset Point across the Bridge. Of the guiding group of prominent men in addition to the…",
+    tags: ["horror"],
   },
   {
-    "slug": "madame_bovary",
-    "title": "Madame Bovary",
-    "author": "Gustave Flaubert",
-    "genre": "french-literature",
-    "genreLabel": "French Literature",
-    "chunks": 414,
-    "excerpt": "Permit me to inscribe your name at the head of this book, and above its dedication; for it is to you, before all, that I owe its publication. Reading over your magnificent defence, my work has acquired for myself,",
-    "tags": [
-      "french literature"
-    ]
+    slug: "the_colour_out_of_space",
+    title: "The Colour Out of Space",
+    author: "H. P. (Howard Phillips) Lovecraft",
+    genre: "horror",
+    genreLabel: "Horror",
+    chunks: 169,
+    excerpt: "The beaker had gone, too, and the wise men talked of the strange stone's affinity for silicon. It had acted quite unbelievably in that well-ordered laboratory; doing nothing at all and showing no occluded gases when heated on charcoal, being wholly negative in the borax bead,…",
+    tags: ["horror"],
   },
   {
-    "slug": "nana",
-    "title": "Nana",
-    "author": "Émile Zola",
-    "genre": "french-literature",
-    "genreLabel": "French Literature",
-    "chunks": 559,
-    "excerpt": "We thank the Bibliotheque Nationale de France that has made available the image files at www://gallica.bnf.fr, authorizing the preparation",
-    "tags": [
-      "french literature"
-    ]
+    slug: "the_dunwich_horror",
+    title: "The Dunwich Horror",
+    author: "H. P. (Howard Phillips) Lovecraft",
+    genre: "horror",
+    genreLabel: "Horror",
+    chunks: 246,
+    excerpt: "This chamber he lined with tall, firm shelving; along which he began gradually to arrange, in apparently careful order, all the rotting ancient books and parts of books which during his own day had been heaped promiscuously in odd corners of the various rooms. \"I made some…",
+    tags: ["horror"],
   },
   {
-    "slug": "the_count_of_monte_cristo",
-    "title": "The Count of Monte Cristo",
-    "author": "Auguste Maquet",
-    "genre": "french-literature",
-    "genreLabel": "French Literature",
-    "chunks": 1687,
-    "excerpt": "On the 24th of February, 1815, the look-out at Notre-Dame de la Garde signalled the three-master, the _Pharaon_ from Smyrna, Trieste, and",
-    "tags": [
-      "french literature",
-      "revenge",
-      "tragedy"
-    ]
+    slug: "the_great_god_pan",
+    title: "The Great God Pan",
+    author: "Arthur Machen",
+    genre: "horror",
+    genreLabel: "Horror",
+    chunks: 289,
+    excerpt: "Thinking, however, that it would be better for the child to have playmates of her own age, he advertised in several local papers for a good home in a comfortable farmhouse for a girl of twelve, and this advertisement was answered by Mr. R., a well-to-do farmer in the…",
+    tags: ["horror"],
   },
   {
-    "slug": "the_hunchback_of_notre_dame",
-    "title": "The Hunchback of Notre-Dame",
-    "author": "Victor Hugo",
-    "genre": "french-literature",
-    "genreLabel": "French Literature",
-    "chunks": 671,
-    "excerpt": "A few years ago, while visiting or, rather, rummaging about Notre-Dame, the author of this book found, in an obscure nook of one of the towers, the following word, engraved by hand upon the",
-    "tags": [
-      "french literature"
-    ]
+    slug: "the_house_on_the_borderland",
+    title: "The House on the Borderland",
+    author: "William Hope Hodgson",
+    genre: "horror",
+    genreLabel: "Horror",
+    chunks: 659,
+    excerpt: "We had accomplished perhaps half the distance, when I heard again the sound of falling stones on the other side--the side from which we had just come. One large rock came thundering down through the treetops, struck the opposite bank, and bounded into the river, driving a…",
+    tags: ["horror"],
   },
   {
-    "slug": "the_three_musketeers",
-    "title": "The Three Musketeers",
-    "author": "Auguste Maquet",
-    "genre": "french-literature",
-    "genreLabel": "French Literature",
-    "chunks": 834,
-    "excerpt": "In which it is proved that, notwithstanding their names’ ending in _os_ and _is_, the heroes of the story which we are about to have the honor to relate to our readers have nothing mythological about them.",
-    "tags": [
-      "french literature"
-    ]
+    slug: "the_king_in_yellow",
+    title: "The King in Yellow",
+    author: "Robert W. (Robert William) Chambers",
+    genre: "horror",
+    genreLabel: "Horror",
+    chunks: 965,
+    excerpt: "You know who made you, little humbug!” It was always my rôle to interpret Cupid’s sentiments in these conversations, and when my turn came I responded in such a manner, that Boris seized my arm and dragged me toward the pool, declaring he would duck me.",
+    tags: ["horror"],
   },
   {
-    "slug": "twenty_thousand_leagues_under_the_sea",
-    "title": "Twenty Thousand Leagues Under the Sea",
-    "author": "Jules Verne",
-    "genre": "french-literature",
-    "genreLabel": "French Literature",
-    "chunks": 378,
-    "excerpt": "The year 1866 was marked by a bizarre development, an unexplained and downright inexplicable phenomenon that surely no one has forgotten. Without anyone having seen it coming, those strange ships were suddenly spoken of in every port.",
-    "tags": [
-      "french literature",
-      "sea"
-    ]
+    slug: "the_monk_a_romance",
+    title: "The Monk: A Romance",
+    author: "M. G. (Matthew Gregory) Lewis",
+    genre: "horror",
+    genreLabel: "Horror",
+    chunks: 1882,
+    excerpt: "This command was issued by the counsels of his Friend, the Duke of Villa Hermosa, a Nobleman for whose abilities and knowledge of the world I have ever entertained the most profound veneration. “Believe me,” said He, “my dear Raymond, you will hereafter feel the benefits of…",
+    tags: ["horror"],
   },
   {
-    "slug": "autobiography",
-    "title": "Autobiography",
-    "author": "John Stuart Mill",
-    "genre": "biography",
-    "genreLabel": "Biography",
-    "chunks": 273,
-    "excerpt": "It seems proper that I should prefix to the following biographical sketch some mention of the reasons which have made me think it desirable that I should leave behind me such a memorial of so uneventful a life as mine. I do not for a moment imagine that any part of what I have to relate can be interesting to the public as a narrative or as being connected with myself. But I…",
-    "tags": [
-      "biography"
-    ]
+    slug: "the_mysteries_of_udolpho",
+    title: "The Mysteries of Udolpho",
+    author: "Ann Ward Radcliffe",
+    genre: "horror",
+    genreLabel: "Horror",
+    chunks: 4052,
+    excerpt: "Had he the presumption to suppose I would marry my niece to a person such as he describes himself!” Emily dried her tears when she heard of the candid confession of Valancourt; and, though the circumstances it discovered were afflicting to her hopes, his artless conduct gave…",
+    tags: ["horror"],
   },
   {
-    "slug": "autobiography_of_benjamin_franklin",
-    "title": "Autobiography of Benjamin Franklin",
-    "author": "Benjamin Franklin",
-    "genre": "biography",
-    "genreLabel": "Biography",
-    "chunks": 236,
-    "excerpt": "Benjamin Franklin was born in Milk Street, Boston, on January 6, 1706. His father, Josiah Franklin, was a tallow chandler who married twice, and of his seventeen children Benjamin was the youngest son. His schooling ended at ten, and at twelve he was bound apprentice to his brother James, a printer, who published the \"New England Courant.\" To this journal he became a…",
-    "tags": [
-      "biography"
-    ]
+    slug: "the_shadow_over_innsmouth",
+    title: "The Shadow over Innsmouth",
+    author: "H. P. (Howard Phillips) Lovecraft",
+    genre: "horror",
+    genreLabel: "Horror",
+    chunks: 231,
+    excerpt: "But as the leaving time obviously approached I conquered my qualms and followed the man aboard, extending him a dollar bill and murmuring the single word \"Innsmouth.\" At length the decrepit vehicle started with a jerk, and rattled noisily past the old brick buildings of State…",
+    tags: ["horror"],
   },
   {
-    "slug": "autobiography_of_benvenuto_cellini",
-    "title": "Autobiography of Benvenuto Cellini",
-    "author": "Benvenuto Cellini",
-    "genre": "biography",
-    "genreLabel": "Biography",
-    "chunks": 635,
-    "excerpt": "[Redactor’s Note: This version of the Autobiography, one of the most famous of all time, was translated by John Addington Symonds (1840-1893). Cellini lived from 1500-1571. This version is in ISO Latin1 with 8 bit accents, and is also supplied in a single file HTML version.]",
-    "tags": [
-      "biography"
-    ]
+    slug: "the_shunned_house",
+    title: "The Shunned House",
+    author: "H. P. (Howard Phillips) Lovecraft",
+    genre: "horror",
+    genreLabel: "Horror",
+    chunks: 161,
+    excerpt: "Rider and Thomas W. Bicknell. He lived with one man-servant in a Georgian homestead with knocker and iron-railed steps, balanced eerily on the steep ascent of North Court Street beside the ancient brick court and colony house where his grandfather--a cousin of that celebrated…",
+    tags: ["horror"],
   },
   {
-    "slug": "confessions_jean_jacques_rousseau",
-    "title": "Confessions — Jean-Jacques Rousseau",
-    "author": "Jean-Jacques Rousseau",
-    "genre": "biography",
-    "genreLabel": "Biography",
-    "chunks": 961,
-    "excerpt": "|Among the notable books of later times--we may say, without exaggeration, of all time--must be reckoned The Confessions of Jean Jacques Rousseau. It deals with leading personages and transactions of a momentous epoch, when absolutism and feudalism were rallying for their last struggle against the modern spirit, chiefly represented by Voltaire, the Encyclopedists, and…",
-    "tags": [
-      "biography"
-    ]
+    slug: "the_willows",
+    title: "The Willows",
+    author: "Algernon Blackwood",
+    genre: "horror",
+    genreLabel: "Horror",
+    chunks: 269,
+    excerpt: "We saw its eyes reflecting the sunset, and gleaming an odd yellow as the body turned over. Then it gave a swift, gulping plunge, and dived out of sight in a flash. “An otter, by gad!” we exclaimed in the same breath, laughing. It was an otter, alive, and out on the hunt; yet…",
+    tags: ["horror"],
   },
   {
-    "slug": "confessions_saint_augustine",
-    "title": "Confessions — Saint Augustine",
-    "author": "of Hippo, Saint Augustine",
-    "genre": "biography",
-    "genreLabel": "Biography",
-    "chunks": 377,
-    "excerpt": "Great art Thou, O Lord, and greatly to be praised; great is Thy power, and Thy wisdom infinite. And Thee would man praise; man, but a particle of Thy creation; man, that bears about him his mortality, the witness of his sin, the witness that Thou resistest the proud: yet would man praise Thee; he, but a particle of Thy creation. Thou awakest us to delight in Thy praise; for…",
-    "tags": [
-      "biography"
-    ]
+    slug: "letters_of_john_keats_to_his_family_and_friends",
+    title: "Letters of John Keats to His Family and Friends",
+    author: "John Keats",
+    genre: "letters",
+    genreLabel: "Letters",
+    chunks: 1802,
+    excerpt: "Dote upon me, I am a primrose!\" Modern poets differ from the Elizabethans in this: each of the moderns like an Elector of Hanover governs his petty state and knows how many straws are swept daily from the Causeways in all his dominions, and has a continual itching that all…",
+    tags: ["letters"],
   },
   {
-    "slug": "incidents_in_the_life_of_a_slave_girl_harriet_jacobs",
-    "title": "Incidents in the Life of a Slave Girl — Harriet Jacobs",
-    "author": "Harriet A. (Harriet Ann) Jacobs",
-    "genre": "biography",
-    "genreLabel": "Biography",
-    "chunks": 280,
-    "excerpt": "“Northerners know nothing at all about Slavery. They think it is perpetual bondage only. They have no conception of the depth of _degradation_ involved in that word, Slavery; if they had, they would never cease their efforts until so horrible a system was overthrown.”",
-    "tags": [
-      "biography"
-    ]
+    slug: "letters_of_pliny_the_younger",
+    title: "Letters of Pliny the Younger",
+    author: "the Younger Pliny",
+    genre: "letters",
+    genreLabel: "Letters",
+    chunks: 1316,
+    excerpt: "He has completed the history which Aufidius Bassus[48] left unfinished, and has added to it thirty books. And lastly he has left thirty-seven books on Natural History, a work of great compass and learning, and as full of variety as nature herself. You will wonder how a man as…",
+    tags: ["letters"],
   },
   {
-    "slug": "narrative_of_the_life_of_frederick_douglass",
-    "title": "Narrative of the Life of Frederick Douglass",
-    "author": "Frederick Douglass",
-    "genre": "biography",
-    "genreLabel": "Biography",
-    "chunks": 141,
-    "excerpt": "Note from the original file: This electronic book is being released at this time to honor the birthday of Martin Luther King Jr. [Born January 15, 1929] [Officially celebrated January 20, 1992]",
-    "tags": [
-      "biography"
-    ]
+    slug: "letters_on_england",
+    title: "Letters on England",
+    author: "Voltaire",
+    genre: "letters",
+    genreLabel: "Letters",
+    chunks: 537,
+    excerpt: "But these are shameless heretics, who deserve to be blown hence through the flames to old Nick, as Rabelais says, and for this reason I do not trouble myself about them.",
+    tags: ["letters"],
   },
   {
-    "slug": "personal_memoirs_of_ulysses_s_grant_volume_1",
-    "title": "Personal Memoirs of Ulysses S. Grant — Volume 1",
-    "author": "Ulysses S. (Ulysses Simpson) Grant",
-    "genre": "biography",
-    "genreLabel": "Biography",
-    "chunks": 1006,
-    "excerpt": "\"Man proposes and God disposes.\" There are but few important events in the affairs of men brought about by their own choice.",
-    "tags": [
-      "biography"
-    ]
+    slug: "letters_to_his_son_lord_chesterfield",
+    title: "Letters to His Son — Lord Chesterfield",
+    author: "Philip Dormer Stanhope, Earl of Chesterfield",
+    genre: "letters",
+    genreLabel: "Letters",
+    chunks: 612,
+    excerpt: "LONDON, April 1, O. S. 1748. DEAR BOY: I have not received any letter, either from you or from Mr. Harte, these three posts, which I impute wholly to accidents between this place and Leipsig; and they are distant enough to admit of many.",
+    tags: ["letters"],
   },
   {
-    "slug": "the_education_of_henry_adams",
-    "title": "The Education of Henry Adams",
-    "author": "Henry Adams",
-    "genre": "biography",
-    "genreLabel": "Biography",
-    "chunks": 639,
-    "excerpt": "THIS volume, written in 1905 as a sequel to the same author's \"Mont Saint Michel and Chartres,\" was privately printed, to the number of one hundred copies, in 1906, and sent to the persons interested, for their assent, correction, or suggestion. The idea of the two books was thus explained at the end of Chapter XXIX: --",
-    "tags": [
-      "biography"
-    ]
+    slug: "the_works_of_lord_byron_letters_and_journals_vol_1",
+    title: "The Works of Lord Byron: Letters and Journals. Vol. 1",
+    author: "George Gordon Byron, Baron Byron",
+    genre: "letters",
+    genreLabel: "Letters",
+    chunks: 1787,
+    excerpt: "I saw them walk to St. George's Chapel, which was the best part, as it did not last long ... Their dresses were very magnificent. The Knights, before they were installed, were in white and silver, like the old pictures of Henry VIII., and afterwards they had a purple mantle…",
+    tags: ["letters"],
   },
   {
-    "slug": "the_life_of_samuel_johnson_james_boswell",
-    "title": "The Life of Samuel Johnson — James Boswell",
-    "author": "James Boswell",
-    "genre": "biography",
-    "genreLabel": "Biography",
-    "chunks": 760,
-    "excerpt": "In making this abridgement of Boswell's Life of Johnson I have omitted most of Boswell's criticisms, comments, and notes, all of Johnson's opinions in legal cases, most of the letters, and parts of the conversation dealing with matters which were of greater importance in Boswell's day than now. I have kept in mind an old habit, common enough, I dare say, among its devotees,…",
-    "tags": [
-      "biography"
-    ]
+    slug: "the_works_of_lord_byron_letters_and_journals_vol_2",
+    title: "The Works of Lord Byron: Letters and Journals. Vol. 2",
+    author: "George Gordon Byron, Baron Byron",
+    genre: "letters",
+    genreLabel: "Letters",
+    chunks: 2397,
+    excerpt: "You censure _my_ life, Harness,--when I compare myself with these men, my elders and my betters, I really begin to conceive myself a monument of prudence--a walking statue--without feeling or failing; and yet the world in general hath given me a proud pre-eminence over them…",
+    tags: ["letters"],
   },
   {
-    "slug": "up_from_slavery_booker_t_washington",
-    "title": "Up From Slavery — Booker T. Washington",
-    "author": "Booker T. Washington",
-    "genre": "biography",
-    "genreLabel": "Biography",
-    "chunks": 263,
-    "excerpt": "This volume is the outgrowth of a series of articles, dealing with incidents in my life, which were published consecutively in the Outlook. While they were appearing in that magazine I was constantly surprised at the number of requests which came to me from all parts of the country, asking that the articles be permanently preserved in book form. I am most grateful to the…",
-    "tags": [
-      "biography"
-    ]
+    slug: "autobiography_of_charles_darwin",
+    title: "Autobiography of Charles Darwin",
+    author: "Charles Darwin",
+    genre: "natural-history",
+    genreLabel: "Natural History",
+    chunks: 320,
+    excerpt: "So that I felt the keenest delight when I first read of the action of icebergs in transporting boulders, and I gloried in the progress of Geology.",
+    tags: ["natural-history"],
   },
   {
-    "slug": "a_dolls_house_henrik_ibsen",
-    "title": "A Doll's House — Henrik Ibsen",
-    "author": "Henrik Ibsen",
-    "genre": "drama",
-    "genreLabel": "Drama",
-    "chunks": 90,
-    "excerpt": "_[SCENE.—A room furnished comfortably and tastefully, but not extravagantly. At the back, a door to the right leads to the entrance-hall, another to the left leads to Helmer’s study. Between the doors stands a piano. In the middle of the left-hand wall is a door, and beyond it a window. Near the window are a round table, arm-chairs and a small sofa. In the right-hand wall,…",
-    "tags": [
-      "drama"
-    ]
+    slug: "mans_place_in_nature_thomas_h_huxley",
+    title: "Man's Place in Nature — Thomas H. Huxley",
+    author: "Thomas Henry Huxley",
+    genre: "natural-history",
+    genreLabel: "Natural History",
+    chunks: 247,
+    excerpt: "The Abbe Prevost and Buffon between them, however, did a good deal more disfigurement to Battell's sober account than 'cutting off an article.' Thus Battell's statement that the Pongos \"cannot speake, and have no understanding more than a beast,\" is rendered by Buffon \"qu'il…",
+    tags: ["natural-history"],
   },
   {
-    "slug": "doctor_faustus_christopher_marlowe",
-    "title": "Doctor Faustus — Christopher Marlowe",
-    "author": "Christopher Marlowe",
-    "genre": "drama",
-    "genreLabel": "Drama",
-    "chunks": 72,
-    "excerpt": "In reprinting this edition, I have here and there amended the text by means of the later 4tos,--1616, 1624, 1631.--Of 4to 1663, which contains various comparatively modern alterations and additions,",
-    "tags": [
-      "drama",
-      "fire"
-    ]
+    slug: "on_the_origin_of_species_charles_darwin",
+    title: "On the Origin of Species — Charles Darwin",
+    author: "Charles Darwin",
+    genre: "natural-history",
+    genreLabel: "Natural History",
+    chunks: 2329,
+    excerpt: "In many other cases, far from there being any aids for self-fertilisation, there are special contrivances, as I could show from the writings of C. C.",
+    tags: ["natural-history"],
   },
   {
-    "slug": "hedda_gabler_henrik_ibsen",
-    "title": "Hedda Gabler — Henrik Ibsen",
-    "author": "Henrik Ibsen",
-    "genre": "drama",
-    "genreLabel": "Drama",
-    "chunks": 107,
-    "excerpt": "From Munich, on June 29, 1890, Ibsen wrote to the Swedish poet, Count Carl Soilsky: \"Our intention has all along been to spend the summer in the Tyrol again. But circumstances are against our doing so. I am at present engaged upon a new dramatic work, which for several reasons has made very slow progress, and I do not leave Munich until I can take with me the completed…",
-    "tags": [
-      "drama"
-    ]
+    slug: "the_chemical_history_of_a_candle_michael_faraday",
+    title: "The Chemical History of a Candle — Michael Faraday",
+    author: "Michael Faraday",
+    genre: "natural-history",
+    genreLabel: "Natural History",
+    chunks: 547,
+    excerpt: "These things may all be very properly used if you take care; but without that, much mischief will be done.) Well, then, here is a little gunpowder, which I put at the bottom of that little wooden vessel, and mix the iron filings up with it, my object being to make the…",
+    tags: ["natural-history"],
   },
   {
-    "slug": "major_barbara",
-    "title": "Major Barbara",
-    "author": "Bernard Shaw",
-    "genre": "drama",
-    "genreLabel": "Drama",
-    "chunks": 114,
-    "excerpt": "It is after dinner on a January night, in the library in Lady Britomart Undershaft's house in Wilton Crescent. A large and comfortable settee is in the middle of the room, upholstered in dark leather. A person sitting on it [it is vacant at present] would have, on his right, Lady Britomart's writing table, with the lady herself busy at it; a smaller writing table behind him…",
-    "tags": [
-      "drama"
-    ]
+    slug: "the_descent_of_man_charles_darwin",
+    title: "The Descent of Man — Charles Darwin",
+    author: "Charles Darwin",
+    genre: "natural-history",
+    genreLabel: "Natural History",
+    chunks: 4564,
+    excerpt: "Mr. Wallace gives cases in his ‘Contributions to the Theory of Natural Selection,’ 1870, p. 354.), would not feel remorse in his inmost soul, if he had failed in a duty, which he held sacred. We may therefore conclude that primeval man, at a very remote period, was influenced…",
+    tags: ["natural-history"],
   },
   {
-    "slug": "pygmalion_george_bernard_shaw",
-    "title": "Pygmalion — George Bernard Shaw",
-    "author": "Bernard Shaw",
-    "genre": "drama",
-    "genreLabel": "Drama",
-    "chunks": 119,
-    "excerpt": "As will be seen later on, Pygmalion needs, not a preface, but a sequel, which I have supplied in its due place. The English have no respect for their language, and will not teach their children to speak it. They spell it so abominably that no man can teach himself what it sounds like. It is impossible for an Englishman to open his mouth without making some other Englishman…",
-    "tags": [
-      "drama"
-    ]
+    slug: "the_malay_archipelago_alfred_russel_wallace",
+    title: "The Malay Archipelago — Alfred Russel Wallace",
+    author: "Alfred Russel Wallace",
+    genre: "natural-history",
+    genreLabel: "Natural History",
+    chunks: 1593,
+    excerpt: "In preparing the skins and skeletons of these animals, I was much troubled by the Dyak dogs, which, being always kept in a state of semi-starvation, are ravenous for animal food. I had a great iron pan, in which I boiled the bones to make skeletons, and at night I covered…",
+    tags: ["natural-history"],
   },
   {
-    "slug": "tamburlaine_the_great_christopher_marlowe",
-    "title": "Tamburlaine the Great — Christopher Marlowe",
-    "author": "Christopher Marlowe",
-    "genre": "drama",
-    "genreLabel": "Drama",
-    "chunks": 91,
-    "excerpt": "The square brackets, i.e. [ ] are copied from the printed book, without change, except that the stage directions usually do not have closing brackets. These have been added.",
-    "tags": [
-      "drama"
-    ]
+    slug: "the_voyage_of_the_beagle_charles_darwin",
+    title: "The Voyage of the Beagle — Charles Darwin",
+    author: "Charles Darwin",
+    genre: "natural-history",
+    genreLabel: "Natural History",
+    chunks: 2846,
+    excerpt: "They turned out to be messengers or ambassadors from a large body of Indians, united in the common cause of defence, near the Cordillera. The tribe to which they had been sent was on the point of holding a grand council, the feast of mare's flesh was ready, and the dance…",
+    tags: ["natural-history"],
   },
   {
-    "slug": "the_duchess_of_malfi_john_webster",
-    "title": "The Duchess of Malfi — John Webster",
-    "author": "John Webster",
-    "genre": "drama",
-    "genreLabel": "Drama",
-    "chunks": 100,
-    "excerpt": "Of John Webster's life almost nothing is known. The dates 1580-1625 given for his birth and death are conjectural inferences, about which the best that can be said is that no known facts contradict them.",
-    "tags": [
-      "drama"
-    ]
+    slug: "a_pickle_for_the_knowing_ones",
+    title: "A Pickle for the Knowing Ones",
+    author: "Timothy Dexter",
+    genre: "philosophy",
+    genreLabel: "Philosophy",
+    chunks: 103,
+    excerpt: "She thought him an honest man, and not so deficient in intellect as many people supposed, and attributed his eccentricities to an excess of animal spirits.--This was probably to some extent true, though it is certain that other spirits contributed in no small degree to the…",
+    tags: ["philosophy"],
   },
   {
-    "slug": "the_importance_of_being_earnest_oscar_wilde",
-    "title": "The Importance of Being Earnest — Oscar Wilde",
-    "author": "Oscar Wilde",
-    "genre": "drama",
-    "genreLabel": "Drama",
-    "chunks": 74,
-    "excerpt": "John Worthing, J.P.: Mr. George Alexander. Algernon Moncrieff: Mr. Allen Aynesworth. Rev. Canon Chasuble, D.D.: Mr. H. H. Vincent. Hon. Gwendolen Fairfax: Miss Irene Vanbrugh.",
-    "tags": [
-      "drama"
-    ]
+    slug: "a_vindication_of_the_rights_of_woman_wollstonecraft",
+    title: "A Vindication of the Rights of Woman (Wollstonecraft)",
+    author: "Mary Wollstonecraft",
+    genre: "philosophy",
+    genreLabel: "Philosophy",
+    chunks: 1281,
+    excerpt: "Women, as well as despots, have now, perhaps, more power than they would have, if the world, divided and subdivided into kingdoms and families, was governed by laws deduced from the exercise of reason; but in obtaining it, to carry on the comparison, their character is…",
+    tags: ["philosophy"],
   },
   {
-    "slug": "the_master_builder",
-    "title": "The Master Builder",
-    "author": "Henrik Ibsen",
-    "genre": "drama",
-    "genreLabel": "Drama",
-    "chunks": 102,
-    "excerpt": "With _The Master Builder_--or _Master Builder Solness_, as the title runs in the original--we enter upon the final stage in Ibsen's career. \"You are essentially right,\" the poet wrote to Count Prozor in March 1900, \"when you say that the series which closes with the Epilogue (_When We Dead Awaken_) began with _Master Builder Solness_.\"",
-    "tags": [
-      "drama"
-    ]
+    slug: "apology_plato",
+    title: "Apology (Plato)",
+    author: "Plato",
+    genre: "philosophy",
+    genreLabel: "Philosophy",
+    chunks: 213,
+    excerpt: "Or are these sophistries to be regarded as belonging to the age in which he lived and to his personal character, and this apparent haughtiness as flowing from the natural elevation of his position?",
+    tags: ["philosophy"],
   },
   {
-    "slug": "the_sea_gull",
-    "title": "The sea-gull",
-    "author": "Anton Pavlovich Chekhov",
-    "genre": "drama",
-    "genreLabel": "Drama",
-    "chunks": 64,
-    "excerpt": "_The scene is laid in the park on SORIN’S estate. A broad avenue of trees leads away from the audience toward a lake which lies lost in the depths of the park. The avenue is obstructed by a rough stage, temporarily erected for the performance of amateur theatricals, and which screens the lake from view. There is a dense growth of bushes to the left and right of the stage. A…",
-    "tags": [
-      "drama"
-    ]
+    slug: "beyond_good_and_evil",
+    title: "Beyond Good and Evil",
+    author: "Friedrich Wilhelm Nietzsche",
+    genre: "philosophy",
+    genreLabel: "Philosophy",
+    chunks: 861,
+    excerpt: "There is far too much witchery and sugar in the sentiments \"for others\" and \"NOT for myself,\" for one not needing to be doubly distrustful here, and for one asking promptly: \"Are they not perhaps--DECEPTIONS?\"--That they PLEASE--him who has them, and him who enjoys their…",
+    tags: ["philosophy"],
   },
   {
-    "slug": "a_journey_in_other_worlds_a_romance_of_the_future",
-    "title": "A Journey in Other Worlds: A Romance of the Future",
-    "author": "John Jacob Astor",
-    "genre": "science-fiction",
-    "genreLabel": "Science Fiction",
-    "chunks": 326,
-    "excerpt": "The protracted struggle between science and the classics appears to be drawing to a close, with victory about to perch on the banner of science, as a perusal of almost any university or college catalogue shows. While a limited knowledge of both Greek and Latin is important for the correct use of our own language, the amount till recently required, in my judgment, has been…",
-    "tags": [
-      "science fiction"
-    ]
+    slug: "common_sense",
+    title: "Common Sense",
+    author: "Thomas Paine",
+    genre: "philosophy",
+    genreLabel: "Philosophy",
+    chunks: 302,
+    excerpt: "And a man hath good reason to believe that there is as much of king-craft, as priest-craft, in withholding the scripture from the public in Popish countries. For monarchy in every instance is the Popery of government. To the evil of monarchy we have added that of hereditary…",
+    tags: ["philosophy"],
   },
   {
-    "slug": "a_princess_of_mars",
-    "title": "A Princess of Mars",
-    "author": "Edgar Rice Burroughs",
-    "genre": "science-fiction",
-    "genreLabel": "Science Fiction",
-    "chunks": 232,
-    "excerpt": "I sought out Dejah Thoris in the throng of departing chariots. She drew upon the marble floor the first map of the Barsoomian territory I had ever seen. The old man sat and talked with me for hours. With my back against a golden throne, I fought once again for Dejah Thoris.",
-    "tags": [
-      "science fiction",
-      "state",
-      "future"
-    ]
+    slug: "critique_of_pure_reason_kant",
+    title: "Critique of Pure Reason (Kant)",
+    author: "Immanuel Kant",
+    genre: "philosophy",
+    genreLabel: "Philosophy",
+    chunks: 3205,
+    excerpt: "But if I investigate more closely the relation of given cognitions in every judgement, and distinguish it, as belonging to the understanding, from the relation which is produced according to laws of the reproductive imagination (which has only subjective validity), I find…",
+    tags: ["philosophy"],
   },
   {
-    "slug": "at_the_earths_core",
-    "title": "At the Earth's Core",
-    "author": "Edgar Rice Burroughs",
-    "genre": "science-fiction",
-    "genreLabel": "Science Fiction",
-    "chunks": 169,
-    "excerpt": "In the first place please bear in mind that I do not expect you to believe this story. Nor could you wonder had you witnessed a recent experience of mine when, in the armor of blissful and stupendous ignorance, I gaily narrated the gist of it to a Fellow of the Royal Geological Society on the occasion of my last trip to London.",
-    "tags": [
-      "science fiction"
-    ]
+    slug: "discourse_on_the_method_of_rightly_conducting_ones_reason_an",
+    title: "Discourse on the Method of Rightly Conducting One's Reason and of Seeking Truth in the Sciences",
+    author: "René Descartes",
+    genre: "philosophy",
+    genreLabel: "Philosophy",
+    chunks: 257,
+    excerpt: "For my own part, I should doubtless have belonged to the latter class, had I received instruction from but one master, or had I never known the diversities of opinion that from time immemorial have prevailed among men of the greatest learning.",
+    tags: ["philosophy"],
   },
   {
-    "slug": "etidorhpa_or_the_end_of_earth",
-    "title": "Etidorhpa; or, The End of Earth.",
-    "author": "John Uri Lloyd",
-    "genre": "science-fiction",
-    "genreLabel": "Science Fiction",
-    "chunks": 436,
-    "excerpt": "To Prof. W. H. Venable, who reviewed the manuscript of this work, I am indebted for many valuable suggestions, and I can not speak too kindly",
-    "tags": [
-      "science fiction"
-    ]
-  }
+    slug: "ecce_homo",
+    title: "Ecce Homo",
+    author: "Friedrich Wilhelm Nietzsche",
+    genre: "philosophy",
+    genreLabel: "Philosophy",
+    chunks: 675,
+    excerpt: "The best cooking is that of Piedmont. Alcoholic drinks do not agree with me; a single glass of wine or beer a day is amply sufficient to turn life into a valley of tears for me;--in Munich live my antipodes. Although I admit that this knowledge came to me somewhat late, it…",
+    tags: ["philosophy"],
+  },
 ];

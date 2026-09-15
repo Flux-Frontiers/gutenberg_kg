@@ -1,11 +1,23 @@
 import { useLayoutEffect, useMemo, useRef } from "react";
-import { Color, InstancedMesh, Object3D } from "three";
+import { Color, DoubleSide, InstancedMesh, Object3D, Shape, ShapeGeometry } from "three";
 import type { Forest } from "./forest";
 import { bookMatchesQuery } from "./forest";
 import { SEASONS, type SeasonName } from "./seasons";
 
 const dummy = new Object3D();
 const color = new Color();
+
+function ovateLeafGeometry() {
+  const s = new Shape();
+  s.moveTo(0, 1);
+  s.bezierCurveTo(0.62, 0.58, 0.48, -0.12, 0.1, -0.82);
+  s.lineTo(0, -1);
+  s.lineTo(-0.1, -0.82);
+  s.bezierCurveTo(-0.48, -0.12, -0.62, 0.58, 0, 1);
+  const g = new ShapeGeometry(s, 7);
+  g.computeVertexNormals();
+  return g;
+}
 
 function keepLeaf(i: number, density: number): boolean {
   if (density >= 0.999) return true;
@@ -77,7 +89,11 @@ export function Trees({
       dummy.position.set(pos[i * 3]!, pos[i * 3 + 1]!, pos[i * 3 + 2]!);
       const s = visible ? 1 : match && dim ? 0.15 : 0;
       dummy.scale.set(scale[i * 3]! * s, scale[i * 3 + 1]! * s, scale[i * 3 + 2]! * s);
-      dummy.rotation.set(0, (i * 2.4) % 6.28, 0.2);
+      dummy.rotation.set(
+        ((i * 1.7) % 1.1) - 0.45,
+        (i * 2.399) % 6.2832,
+        0.55 + ((i * 0.31) % 0.7),
+      );
       dummy.updateMatrix();
       mesh.setMatrixAt(i, dummy.matrix);
       const hex = foliage[tint[i]! % foliage.length]!;
@@ -107,15 +123,16 @@ export function Trees({
     if (mesh.instanceColor) mesh.instanceColor.needsUpdate = true;
   }, [forest, match]);
 
+  const leafGeom = useMemo(() => ovateLeafGeometry(), []);
+
   return (
     <group>
       <instancedMesh ref={woodRef} args={[undefined, undefined, forest.wood.count]} frustumCulled={false} castShadow={false}>
-        <cylinderGeometry args={[1, 1, 1, 5]} />
+        <cylinderGeometry args={[1, 1, 1, 6]} />
         <meshStandardMaterial roughness={0.9} metalness={0.02} />
       </instancedMesh>
-      <instancedMesh ref={leafRef} args={[undefined, undefined, forest.leaves.count]} frustumCulled={false}>
-        <icosahedronGeometry args={[1, 0]} />
-        <meshStandardMaterial roughness={0.7} metalness={0} />
+      <instancedMesh ref={leafRef} args={[leafGeom, undefined, forest.leaves.count]} frustumCulled={false}>
+        <meshStandardMaterial roughness={0.62} metalness={0} side={DoubleSide} />
       </instancedMesh>
       <instancedMesh ref={ringRef} args={[undefined, undefined, forest.trees.length]} frustumCulled={false}>
         <ringGeometry args={[0.72, 1, 20]} />

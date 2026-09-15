@@ -31,6 +31,27 @@ export function resetSim(forest: Forest) {
   sim.ready = true;
 }
 
+export function teleportSim(x: number, z: number, yaw: number) {
+  sim.x = x;
+  sim.z = z;
+  sim.yaw = yaw;
+  sim.speed = 0;
+  sim.lat = 0;
+}
+
+export function wrapAngle(a: number): number {
+  let x = a;
+  while (x > Math.PI) x -= Math.PI * 2;
+  while (x < -Math.PI) x += Math.PI * 2;
+  return x;
+}
+
+export function yawToward(fromX: number, fromZ: number, toX: number, toZ: number): number {
+  const dx = toX - fromX;
+  const dz = toZ - fromZ;
+  return Math.atan2(-dx, -dz);
+}
+
 export function stepVehicle(
   forest: Forest,
   throttle: number,
