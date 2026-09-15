@@ -84,10 +84,14 @@ per-machine artifacts, not something a commit can carry for you.
       iOS + macOS (Universal Purchase), SKU `com.fluxfrontiers.knowledgepress`,
       Full Access. The SKU and the platform set are permanent; the display
       name is not, and is the one field that may still be edited.
-- [ ] PCC entitlement requested via Apple's [direct
+- [x] PCC entitlement requested via Apple's [direct
       form](https://developer.apple.com/contact/request/private-cloud-compute/)
-      — **unblocked 2026-09-14, this is the current blocker.**
+      — unblocked by the SBP approval above and submitted the same day,
+      2026-09-14.
 - [ ] Capability granted on the App ID in Certificates, Identifiers & Profiles
+      — **awaiting Apple's answer on the request above; this is the current
+      blocker.** No published SLA. Nothing below can move until the
+      capability appears on `com.fluxfrontiers.knowledgepress`.
 - [ ] Signed `app/ios` build run on real iOS 27 hardware — the actual, only
       way to get a PCC answer; `swift run` cannot, permanently
 
