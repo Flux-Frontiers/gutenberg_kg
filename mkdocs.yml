@@ -71,7 +71,6 @@ nav:
   - Visualization:
       - Ray-tracing the knowledge tree: POVRAY.md
   - Partners: PARTNERS.md
-  - Trademark filing prep: TRADEMARK_FILING.md
   - API reference:
       - Corpus & ingestion:
           - Corpus discovery: api/corpus.md
