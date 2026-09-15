@@ -32,15 +32,15 @@ targets:
     # provisioning half means the App ID must have the capability granted in
     # the developer portal first; until it is, Xcode's automatic signing will
     # refuse to build with this entitlement present.
-    # DISABLED until the capability is granted on the App ID. Leaving it in
-    # blocks every device build, not just PCC: the profile automatic signing
-    # generates cannot carry an entitlement the App ID does not hold, so the
-    # build fails before it starts. Uncomment all four lines once the portal
-    # shows the capability; nothing else has to change.
-    # entitlements:
-    #   path: KnowledgePress.entitlements
-    #   properties:
-    #     com.apple.developer.private-cloud-compute: true
+    # ENABLED 2026-09-14: the entitlement request was granted and the
+    # capability is now checked on the App ID. Enabling a capability
+    # invalidates existing profiles, so a stale one on disk gives the same
+    # "entitlement not in profile" failure as never having enabled it --
+    # delete it and let automatic signing fetch a fresh one.
+    entitlements:
+      path: KnowledgePress.entitlements
+      properties:
+        com.apple.developer.private-cloud-compute: true
     info:
       path: Info.plist
       properties:

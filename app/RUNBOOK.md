@@ -88,15 +88,53 @@ per-machine artifacts, not something a commit can carry for you.
       form](https://developer.apple.com/contact/request/private-cloud-compute/)
       — unblocked by the SBP approval above and submitted the same day,
       2026-09-14.
-- [ ] Capability granted on the App ID in Certificates, Identifiers & Profiles
-      — **awaiting Apple's answer on the request above; this is the current
-      blocker.** No published SLA. Nothing below can move until the
-      capability appears on `com.fluxfrontiers.knowledgepress`.
-- [ ] Signed `app/ios` build run on real iOS 27 hardware — the actual, only
-      way to get a PCC answer; `swift run` cannot, permanently
+- [x] Capability granted on the App ID in Certificates, Identifiers & Profiles
+      — **granted 2026-09-14**, same day as the request. The checkbox does
+      not appear under the main Capabilities list where you would look for
+      it; it turned up only after the grant landed, and the portal warns on
+      save that existing provisioning profiles are now invalid. Believe that
+      warning — see below.
+- [x] Signed `app/ios` build run on real iOS 27 hardware — **2026-09-14,
+      and Private Cloud Compute answers.** Installed and launched on
+      EgsBrainPhone (iPhone 17 Pro) and Fermi (iPad mini, A17 Pro). This was
+      the only way to get the answer; `swift run` never could.
 
-A dev-only shortcut exists for testing PCC access itself while the above is
-pending: [TwoMillionKit](https://github.com/insidegui/TwoMillionKit) wraps
+### What the entitlement cost, in wasted builds
+
+Three failed builds sat between the grant and the working app, and none of
+them said what was actually wrong on the first read.
+
+Enabling a capability **invalidates every existing provisioning profile**.
+The profile on disk was hand-downloaded from the portal on 2026-09-03, which
+meant automatic signing had never once been exercised here — and the moment
+that profile went stale, two latent gaps surfaced together:
+
+1. `make ios-build` had no `-allowProvisioningUpdates`, so `xcodebuild` was
+   not permitted to mint a replacement. It had never needed to. Added to the
+   target; it stays.
+2. Xcode had **no Apple ID signed in** (Settings → Accounts). A hand-
+   downloaded profile needs no account, so nothing had ever surfaced this.
+   `-allowProvisioningUpdates` with no account fails as `No Accounts: Add a
+   new account in Accounts settings`, which reads like a capability problem
+   and is not one.
+
+Verify both halves before believing a build, because `BUILD SUCCEEDED` alone
+does not mean the entitlement travelled:
+
+```sh
+APP=app/ios/build/Build/Products/Debug-iphoneos/KnowledgePress.app
+codesign -d --entitlements :- "$APP" | grep private-cloud-compute
+security cms -D -i "$APP/embedded.mobileprovision" | plutil -p - \
+  | grep -E 'private-cloud-compute|ExpirationDate'
+```
+
+The expiration date is the tell for a stale profile: a reissued one carries
+today's date plus a year. An `.app` left over from a failed build keeps the
+old profile embedded, so checking entitlements without first confirming the
+build actually succeeded reads a stale artifact and reports the wrong answer.
+
+Now moot, kept for the record. A dev-only shortcut existed for testing PCC
+access while the entitlement was pending: [TwoMillionKit](https://github.com/insidegui/TwoMillionKit) wraps
 `/usr/bin/fm` (Apple's own signed CLI, ships with macOS 27) as a
 `LanguageModel`, sidestepping the entitlement by delegating to a process that
 already has it. Tried on this machine 2026-09-02 and blocked by an unrelated

@@ -742,6 +742,7 @@ ios-build: ios-generate
 	@$(ios_resolve_team); \
 	cd app/ios && xcodebuild -project KnowledgePress.xcodeproj -scheme KnowledgePress \
 	  -destination 'generic/platform=iOS' -derivedDataPath build \
+	  -allowProvisioningUpdates \
 	  DEVELOPMENT_TEAM="$$TEAM" build
 
 # Installs and (re)launches the build on every reachable physical device.
