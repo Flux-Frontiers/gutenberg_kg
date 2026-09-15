@@ -1,3 +1,7 @@
+// © 2026 Eric G. Suchanek, PhD — Flux-Frontiers · SPDX-License-Identifier: Elastic-2.0
+// Excepted from app/LICENSE: this reproducer stays under the repository's
+// Elastic License 2.0 so Apple and other developers may run it freely.
+//
 // Minimal reproducer: Apple Foundation Models returns different completions
 // for a byte-identical prompt at temperature 0, depending on the device.
 //

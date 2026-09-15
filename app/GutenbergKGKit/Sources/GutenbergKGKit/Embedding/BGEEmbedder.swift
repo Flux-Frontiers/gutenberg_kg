@@ -1,4 +1,5 @@
-// © 2026 Eric G. Suchanek, PhD — Flux-Frontiers · SPDX-License-Identifier: Elastic-2.0
+// © 2026 Eric G. Suchanek, PhD — Flux-Frontiers · SPDX-License-Identifier: LicenseRef-Flux-Frontiers-Proprietary
+// The Knowledge Press. Not redistributable; see app/LICENSE.
 //
 // The query embedder: bge-small-en-v1.5, converted to Core ML by
 // `gutenkg export-embedder` and run on the Neural Engine.

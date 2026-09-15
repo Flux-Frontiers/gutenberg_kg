@@ -1,4 +1,5 @@
-// © 2026 Eric G. Suchanek, PhD — Flux-Frontiers · SPDX-License-Identifier: Elastic-2.0
+// © 2026 Eric G. Suchanek, PhD — Flux-Frontiers · SPDX-License-Identifier: LicenseRef-Flux-Frontiers-Proprietary
+// The Knowledge Press. Not redistributable; see app/LICENSE.
 //
 // A verbatim record of one synthesis call: the exact instructions and prompt
 // the Foundation Models framework was handed, and the exact completion it

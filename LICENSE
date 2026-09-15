@@ -2,6 +2,16 @@ Elastic License 2.0
 
 URL: https://www.elastic.co/licensing/elastic-license
 
+## Scope
+
+This license governs this repository EXCEPT for the `app/` directory, which
+holds the source of The Knowledge Press, the iOS and macOS application
+distributed through the Apple App Store. That directory is licensed
+separately and is not redistributable; see `app/LICENSE`. The one exception
+within it, `app/fm-repro/`, remains under this license.
+
+The names and artwork are licensed by neither file. See `TRADEMARK.md`.
+
 ## Acceptance
 
 By using the software, you agree to all of the terms and conditions below.

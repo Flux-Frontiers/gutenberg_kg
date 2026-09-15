@@ -1,4 +1,5 @@
-// © 2026 Eric G. Suchanek, PhD — Flux-Frontiers · SPDX-License-Identifier: Elastic-2.0
+// © 2026 Eric G. Suchanek, PhD — Flux-Frontiers · SPDX-License-Identifier: LicenseRef-Flux-Frontiers-Proprietary
+// The Knowledge Press. Not redistributable; see app/LICENSE.
 //
 // The parts of PrivateCloudSynthesis that do not need a live session: mapping
 // the framework's own enums onto the messages the chat shows. Everything else

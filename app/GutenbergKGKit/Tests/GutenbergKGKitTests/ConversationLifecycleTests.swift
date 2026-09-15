@@ -1,4 +1,5 @@
-// © 2026 Eric G. Suchanek, PhD — Flux-Frontiers · SPDX-License-Identifier: Elastic-2.0
+// © 2026 Eric G. Suchanek, PhD — Flux-Frontiers · SPDX-License-Identifier: LicenseRef-Flux-Frontiers-Proprietary
+// The Knowledge Press. Not redistributable; see app/LICENSE.
 //
 // When a conversation comes into existence, and what happens to the buffer
 // when the reader switches away from it or deletes it.

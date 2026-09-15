@@ -1,4 +1,5 @@
-// © 2026 Eric G. Suchanek, PhD — Flux-Frontiers · SPDX-License-Identifier: Elastic-2.0
+// © 2026 Eric G. Suchanek, PhD — Flux-Frontiers · SPDX-License-Identifier: LicenseRef-Flux-Frontiers-Proprietary
+// The Knowledge Press. Not redistributable; see app/LICENSE.
 //
 // A conversation as a Markdown document: the questions, the answers, and the
 // passages the answers were drawn from.

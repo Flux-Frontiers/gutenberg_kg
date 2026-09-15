@@ -213,4 +213,12 @@ If you use GutenbergKG in research, use GitHub’s **Cite this repository** butt
 
 ## License
 
-The texts in this repository are **public domain**. They were sourced from [Project Gutenberg](https://www.gutenberg.org/) and the [Internet Archive](https://archive.org/); GutenbergKG is an independent project with no affiliation with or endorsement from either organization. The download scripts and tooling are part of the [Flux Frontiers](https://github.com/Flux-Frontiers) project and are released under the [Elastic License 2.0](LICENSE).
+Three different things live here, under three different terms.
+
+**The texts are public domain.** They were sourced from [Project Gutenberg](https://www.gutenberg.org/) and the [Internet Archive](https://archive.org/); GutenbergKG is an independent project with no affiliation with or endorsement from either organization.
+
+**The engine and tooling are [Elastic License 2.0](LICENSE).** That is everything outside `app/` -- the Python package, the corpus pipeline, the docs, the web explorer. Use it, modify it, redistribute it; you may not offer it as a hosted service.
+
+**The app is not redistributable.** `app/` holds the source of The Knowledge Press, the iOS and macOS app on the App Store, under a [separate proprietary license](app/LICENSE). You may read it, build it, and run it on your own hardware; you may not ship it. The one exception is `app/fm-repro/`, a reproducer for an Apple defect, which stays Elastic-2.0 so anyone can run it.
+
+**The names and artwork are licensed by none of the above.** See [TRADEMARK.md](TRADEMARK.md).
