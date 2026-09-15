@@ -32,6 +32,38 @@ Priority runs top to bottom. If the budget only covers one, file the first.
 | GutenbergKG | 9 | 1(a) in use | Public on GitHub since 2026-03-30 and released under DOI, which is a use-in-commerce argument. Cleaner mark than the one above -- coined, not descriptive. |
 | App icon | 9 | 1(a) or 1(b) | A design mark, filed separately from any word mark. Weakest priority of the four. |
 
+## The owner is not a choice
+
+Flux-Frontiers is a trade name, not an LLC or a corporation. It does not
+exist as a legal person, so it cannot own a registration, and the applicant
+must be the natural person: **Eric G. Suchanek, PhD, an individual**, with
+"DBA Flux-Frontiers" as the optional trade-name line.
+
+This matters more than the usual "get the paperwork right" way. An application
+filed in the name of an entity that does not exist is void *ab initio* -- not
+refused and amendable, but void. The fee is forfeited and the filing-date
+priority is lost, because correcting the applicant would amount to
+substituting a different party. It is one of the few defects the USPTO will
+not let you cure. Everything else on this page can be fixed in prosecution;
+this cannot.
+
+The same reasoning applies to the Apple Developer account, which is enrolled
+to the individual, so the App Store seller name will be the personal legal
+name rather than "Flux-Frontiers". Showing a trade name there requires an
+Organization enrollment, which requires a real legal entity and a D-U-N-S
+number.
+
+If an LLC is formed later, the path is an assignment from the individual to
+the entity, recorded with the USPTO, plus an Apple App Transfer and
+re-enrollment in the Small Business Program, which is per-account and does not
+travel with a transferred app. All routine. The owner name on the original
+application is the only part that has to be right the first time.
+
+Worth doing alongside the filing: most states require a fictitious-name or DBA
+registration to trade under a name that is not your own. That filing is what
+makes "DBA Flux-Frontiers" on the application a documented fact rather than an
+assertion.
+
 ## The descriptiveness problem
 
 "The Knowledge Press" is suggestive at best and arguably descriptive of
@@ -53,7 +85,7 @@ Filing `GutenbergKG` alongside rather than after is the cheap hedge.
 
 | Field | Value |
 |---|---|
-| Owner | Eric G. Suchanek, PhD, trading as Flux-Frontiers. Decide before filing whether the owner is the individual or an entity; correcting this later is expensive. |
+| Owner | **Eric G. Suchanek, PhD, an individual, DBA Flux-Frontiers.** Settled, not a choice -- see [The owner is not a choice](#the-owner-is-not-a-choice). |
 | First use anywhere, GutenbergKG | 2026-03-30, first appearance in the public repository |
 | First use in commerce, GutenbergKG | Tie to a tagged, DOI-archived release. `v1.0.0` was tagged 2026-05-04. |
 | First use anywhere, The Knowledge Press | 2026-05-04, `30b969b` |
@@ -66,15 +98,15 @@ Filing `GutenbergKG` alongside rather than after is the cheap hedge.
 1. Search first. [TESS](https://tmsearch.uspto.gov/) for both word marks, plus
    a plain web search for unregistered users. A conflicting common-law user
    beats a later registrant.
-2. Decide the owner of record.
+2. File the state or county DBA for Flux-Frontiers, if not already on record.
 3. File TEAS Plus for `GutenbergKG`, 1(a), class 9, with a release specimen.
 4. File TEAS Plus for `The Knowledge Press`, 1(b), class 9.
 5. Ship the app. Availability date becomes first use in commerce.
 6. File the Statement of Use for the 1(b) application within six months of the
    Notice of Allowance, extendable.
 
-Steps 1 and 2 are worth twenty minutes with an attorney; the rest is form
-filling.
+Step 1 is worth twenty minutes with an attorney; the rest is form filling.
+The owner name, per above, is no longer an open question.
 
 ## Meanwhile
 

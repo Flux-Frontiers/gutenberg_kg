@@ -6,8 +6,10 @@ are not. A license to use the code is not a license to use the brand.
 
 ## The marks
 
-Flux-Frontiers claims the following marks in connection with software for
-building, indexing, and querying digitized text corpora:
+Eric G. Suchanek, PhD, doing business as Flux-Frontiers, claims the following
+marks in connection with software for building, indexing, and querying
+digitized text corpora. "Flux-Frontiers" is a trade name rather than a legal
+entity, so the owner of each mark below is a natural person:
 
 - **The Knowledge Press** (and **Knowledge Press**), the name of the iOS and
   macOS application distributed through the Apple App Store
