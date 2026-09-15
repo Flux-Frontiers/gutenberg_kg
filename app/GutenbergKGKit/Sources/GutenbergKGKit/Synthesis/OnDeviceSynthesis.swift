@@ -148,9 +148,17 @@ import Foundation
         into continuation: AsyncThrowingStream<SynthesisEvent, Error>.Continuation
     ) async throws {
         let prompt = SynthesisPrompt.ragUserPrompt(question: question, passages: packed.passages)
+        // `sampling:`, not the newer `samplingMode:` label: this file compiles
+        // on every toolchain (no `#if compiler` gate, unlike
+        // PrivateCloudSynthesis.swift), and CI's older Xcode SDK only has the
+        // deprecated `sampling:` initializer -- confirmed live, 2026-09-15,
+        // when `samplingMode:` built locally on the Xcode 27 beta and failed
+        // CI with "incorrect argument label in call (have 'samplingMode:',
+        // expected 'sampling:')". Both labels take the same
+        // `GenerationOptions.SamplingMode` type, so `.greedy` is unaffected.
         let options =
             tuning.greedy
-            ? GenerationOptions(samplingMode: .greedy)
+            ? GenerationOptions(sampling: .greedy)
             : GenerationOptions(temperature: tuning.temperature)
 
         let started = Date()
