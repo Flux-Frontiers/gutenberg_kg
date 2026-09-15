@@ -27,6 +27,7 @@ VLLM_API_KEY       Bearer token for the synthesis endpoint.
 RUNPOD_API_KEY     Fallback token if VLLM_API_KEY is unset.
 VLLM_MODEL         Default synthesis model.  Default: Qwen/Qwen3-8B-Instruct
 SYNTH_MAX_K        Max passages fed to synthesis.  Default: 12
+SYNTH_PROMPT       System prompt: guide | worker.  Default: guide
 
 Request schema
 --------------
@@ -62,6 +63,7 @@ from kg_utils.retrieval import attach_content_by_sqlite
 import runpod
 from gutenberg_kg.diary_meta import DIARY_META as _DIARY_META
 from gutenberg_kg.diary_meta import diary_slug as _diary_slug
+from gutenberg_kg.synthesis_prompts import HEADER_SEPARATOR, system_prompt
 
 # ---------------------------------------------------------------------------
 # Config
@@ -76,6 +78,7 @@ VLLM_ENDPOINT = os.environ.get("VLLM_ENDPOINT_URL", "")
 VLLM_API_KEY = os.environ.get("VLLM_API_KEY", "") or os.environ.get("RUNPOD_API_KEY", "")
 VLLM_MODEL = os.environ.get("VLLM_MODEL", "Qwen/Qwen3-8B-Instruct")
 SYNTH_MAX_K = int(os.environ.get("SYNTH_MAX_K", "12"))
+SYNTH_PROMPT = os.environ.get("SYNTH_PROMPT", "")
 
 _DOCKG_SQLITE = GUTENBERG_ROOT / ".dockg" / "graph.sqlite"
 _DOCKG_LANCEDB = GUTENBERG_ROOT / ".dockg" / "lancedb"
@@ -490,7 +493,7 @@ def _synthesize(query: str, hits: list[dict], model: str | None = None) -> str |
         genre = s.get("genre", "")
         author = s.get("author") or ""
         title = s.get("title") or s.get("name") or ""
-        header = " | ".join(x for x in [genre, author, title] if x)
+        header = HEADER_SEPARATOR.join(x for x in [genre, author, title] if x)
         ctx_parts.append(f"[{header}]\n{s['content'].strip()}")
     ctx = "\n\n".join(ctx_parts)
 
@@ -504,15 +507,7 @@ def _synthesize(query: str, hits: list[dict], model: str | None = None) -> str |
                 "think": False,
                 "chat_template_kwargs": {"enable_thinking": False},
                 "messages": [
-                    {
-                        "role": "system",
-                        "content": (
-                            "You are a literary guide to the Project Gutenberg corpus. "
-                            "Answer using only the provided source passages. "
-                            "If the answer is not in the passages, say so. "
-                            "Be concise and cite author and work when relevant."
-                        ),
-                    },
+                    {"role": "system", "content": system_prompt(SYNTH_PROMPT)},
                     {
                         "role": "user",
                         "content": f"Source passages:\n{ctx}\n\nQuestion: {query}",
