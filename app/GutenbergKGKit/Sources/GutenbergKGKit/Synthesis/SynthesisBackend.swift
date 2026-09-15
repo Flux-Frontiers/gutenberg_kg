@@ -89,6 +89,14 @@ public enum SynthesisFailure: Error, Sendable, Equatable, Codable {
     case noPassages
     /// The model's safety guardrails refused the passages or the question.
     case guardrail
+    /// The guardrail fired on the *output*, partway through streaming, so a
+    /// partial answer exists and is worth keeping.
+    ///
+    /// Seen first on Private Cloud Compute, 2026-09-14: Pepys on the Great
+    /// Fire streamed two paragraphs and was stopped at the word "Papist".
+    /// The PCC model exposes no guardrail setting, so this is a state the
+    /// chat has to present honestly rather than one it can avoid.
+    case guardrailCutShort
     /// The packed prompt still exceeded the model's context window.
     case contextOverflow
     /// Anything else the framework reported.
@@ -104,7 +112,7 @@ public enum SynthesisFailure: Error, Sendable, Equatable, Codable {
     /// True when routing the same request to a remote provider could succeed.
     public var isRecoverableRemotely: Bool {
         switch self {
-        case .unavailable, .guardrail, .contextOverflow, .backend: return true
+        case .unavailable, .guardrail, .guardrailCutShort, .contextOverflow, .backend: return true
         // Stopping was deliberate; offering to retry elsewhere answers a
         // question the reader did not ask.
         case .noPassages, .cancelled: return false
@@ -119,7 +127,9 @@ public enum SynthesisFailure: Error, Sendable, Equatable, Codable {
         case .noPassages:
             return "No passage carried enough text to answer from. Try different wording or a lower minimum score."
         case .guardrail:
-            return "The on-device model declined to answer from these passages. This happens with some classical texts; the passages below are unfiltered."
+            return "The model declined to answer from these passages. This happens with some classical texts; the passages below are unfiltered."
+        case .guardrailCutShort:
+            return "The content guardrail stopped the answer partway. What arrived is above; the passages below are unfiltered."
         case .contextOverflow:
             return "The passages did not fit the on-device context window. Lower the passage count and ask again."
         case .backend(let message):

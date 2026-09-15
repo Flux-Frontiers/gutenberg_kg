@@ -72,6 +72,8 @@ public struct SettingsView: View {
                 }
             }
 
+            synthesisSection
+
             illustrationSection
 
             Section {
@@ -116,6 +118,47 @@ public struct SettingsView: View {
                 }
             }
         #endif
+    }
+
+    /// The Foundation Models knobs, on-device and Private Cloud Compute.
+    ///
+    /// Every control here changes the *next* answer, since `AppModel` builds
+    /// the backend per question from `synthesisTuning`. The per-work stepper
+    /// reads 0 as "engine default" rather than as zero passages, which would
+    /// be an answer from nothing.
+    @ViewBuilder
+    private var synthesisSection: some View {
+        @Bindable var model = model
+        let perSource = Binding<Int>(
+            get: { model.synthesisTuning.maxPassagesPerSource ?? 0 },
+            set: { model.synthesisTuning.maxPassagesPerSource = $0 == 0 ? nil : $0 })
+        Section("🧪 Synthesis") {
+            LabeledSlider(
+                label: "Temperature", value: $model.synthesisTuning.temperature, range: 0...1,
+                format: "%.2f"
+            )
+            .disabled(model.synthesisTuning.greedy)
+            Toggle("Greedy decoding", isOn: $model.synthesisTuning.greedy)
+            Picker("Instructions", selection: $model.synthesisTuning.instructions) {
+                ForEach(SynthesisTuning.Instructions.allCases, id: \.self) { set in
+                    Text(set.label).tag(set)
+                }
+            }
+            Stepper(value: perSource, in: 0...6) {
+                HStack {
+                    Text("Passages per work")
+                    Spacer()
+                    Text(perSource.wrappedValue == 0 ? "engine default" : "\(perSource.wrappedValue)")
+                        .foregroundStyle(.secondary)
+                }
+            }
+            Toggle("Permissive guardrails (on-device)", isOn: $model.synthesisTuning.permissiveGuardrails)
+            Text("Changes apply to the next answer. Traces in Diagnostics record the settings each answer used.")
+                .font(.caption2)
+                .foregroundStyle(.secondary)
+            Button("↩️ Reset synthesis to defaults") { model.resetSynthesisTuning() }
+                .disabled(model.synthesisTuning == .default)
+        }
     }
 
     /// Worker address.

@@ -21,20 +21,24 @@ import Foundation
         public let modelDescription = "Apple Foundation Models (on-device)"
 
         private let budgeter: ContextBudgeter
-        private let temperature: Double
+        private let tuning: SynthesisTuning
 
         /// :param budget: Context limits; defaults to the on-device window.
-        /// :param temperature: Sampling temperature. Was 0 for determinism,
-        ///                     but greedy decoding degenerates into repeated
-        ///                     text when several passages share a source
-        ///                     (e.g. "circles of Hell" pulling three Divine
-        ///                     Comedy chunks) — bumped off zero to break the
-        ///                     loop while staying low enough that answers
-        ///                     still restate the passages rather than
-        ///                     paraphrase freely.
-        public init(budget: ContextBudgeter.Budget = .onDevice, temperature: Double = 0.2) {
-            self.budgeter = ContextBudgeter(budget: budget)
-            self.temperature = temperature
+        /// :param tuning: Decoding, packing and prompt settings. The
+        ///     temperature default lives there: it was 0 for determinism,
+        ///     but greedy decoding degenerates into repeated text when
+        ///     several passages share a source (e.g. "circles of Hell"
+        ///     pulling three Divine Comedy chunks).
+        public init(budget: ContextBudgeter.Budget = .onDevice, tuning: SynthesisTuning = .default) {
+            self.budgeter = ContextBudgeter(budget: tuning.apply(to: budget))
+            self.tuning = tuning
+        }
+
+        /// The system model, with the guardrail relaxed when tuning asks.
+        private var model: SystemLanguageModel {
+            tuning.permissiveGuardrails
+                ? SystemLanguageModel(guardrails: .permissiveContentTransformations)
+                : .default
         }
 
         public var availability: SynthesisAvailability {
@@ -54,7 +58,7 @@ import Foundation
         /// streaming without the one-off load pause.
         public func prewarm() {
             guard availability.isAvailable else { return }
-            LanguageModelSession { SynthesisPrompt.ragInstructions }.prewarm()
+            LanguageModelSession(model: model, instructions: tuning.instructionText).prewarm()
         }
 
         public func synthesize(
@@ -99,9 +103,9 @@ import Foundation
             // whole transcript against the context window, so a long-lived
             // session would spend the 4K budget on history that the passages
             // need — and each turn is independently grounded anyway.
-            let session = LanguageModelSession { SynthesisPrompt.ragInstructions }
+            let session = LanguageModelSession(model: model, instructions: tuning.instructionText)
             try await streamFoundationModelsAnswer(
-                session: session, question: question, packed: packed, temperature: temperature,
+                session: session, question: question, packed: packed, tuning: tuning,
                 modelDescription: modelDescription, into: continuation)
         }
 
@@ -131,7 +135,7 @@ import Foundation
     /// :param question: The user's question, verbatim — used only for the
     ///     prompt text, not for packing (the caller already packed).
     /// :param packed: The passages the caller's budgeter fit to its window.
-    /// :param temperature: Sampling temperature.
+    /// :param tuning: Decoding options and the instructions to record.
     /// :param modelDescription: Provenance string recorded on the turn.
     /// :param continuation: Where partial and final events are yielded.
     @available(iOS 26.0, macOS 26.0, *)
@@ -139,43 +143,91 @@ import Foundation
         session: LanguageModelSession,
         question: String,
         packed: ContextBudgeter.Packed,
-        temperature: Double,
+        tuning: SynthesisTuning,
         modelDescription: String,
         into continuation: AsyncThrowingStream<SynthesisEvent, Error>.Continuation
     ) async throws {
         let prompt = SynthesisPrompt.ragUserPrompt(question: question, passages: packed.passages)
-        let options = GenerationOptions(temperature: temperature)
+        // `sampling:`, not the newer `samplingMode:` label: this file compiles
+        // on every toolchain (no `#if compiler` gate, unlike
+        // PrivateCloudSynthesis.swift), and CI's older Xcode SDK only has the
+        // deprecated `sampling:` initializer -- confirmed live, 2026-09-15,
+        // when `samplingMode:` built locally on the Xcode 27 beta and failed
+        // CI with "incorrect argument label in call (have 'samplingMode:',
+        // expected 'sampling:')". Both labels take the same
+        // `GenerationOptions.SamplingMode` type, so `.greedy` is unaffected.
+        let options =
+            tuning.greedy
+            ? GenerationOptions(sampling: .greedy)
+            : GenerationOptions(temperature: tuning.temperature)
 
         let started = Date()
         var latest = ""
 
-        for try await partial in session.streamResponse(to: prompt, options: options) {
-            try Task.checkCancellation()
-            // `content` is the whole answer so far, not a delta. (Early
-            // iOS 26 betas yielded a bare String here; if this line fails to
-            // compile against your SDK, drop `.content`.)
-            latest = partial.content
-            continuation.yield(.partial(latest))
+        func metrics() -> SynthesisMetrics {
+            SynthesisMetrics(
+                elapsedMs: Int(Date().timeIntervalSince(started) * 1000),
+                passagesUsed: packed.passages.count,
+                passagesDropped: packed.dropped,
+                estimatedPromptTokens: packed.estimatedPromptTokens,
+                model: modelDescription,
+                packedIds: packed.passages.map(\.id))
+        }
+        func trace(_ answer: String, _ metrics: SynthesisMetrics) {
+            SynthesisTrace.record(
+                question: question,
+                instructions: tuning.instructionText,
+                prompt: prompt,
+                answer: answer,
+                passages: packed.passages,
+                metrics: metrics,
+                temperature: tuning.greedy ? 0 : tuning.temperature)
         }
 
-        let metrics = SynthesisMetrics(
-            elapsedMs: Int(Date().timeIntervalSince(started) * 1000),
-            passagesUsed: packed.passages.count,
-            passagesDropped: packed.dropped,
-            estimatedPromptTokens: packed.estimatedPromptTokens,
-            model: modelDescription,
-            packedIds: packed.passages.map(\.id))
-        continuation.yield(.completed(latest, metrics))
+        do {
+            for try await partial in session.streamResponse(to: prompt, options: options) {
+                try Task.checkCancellation()
+                // `content` is the whole answer so far, not a delta. (Early
+                // iOS 26 betas yielded a bare String here; if this line fails
+                // to compile against your SDK, drop `.content`.)
+                latest = partial.content
+                continuation.yield(.partial(latest))
+            }
+        } catch where !latest.isEmpty && isGuardrailStop(error) {
+            // The output check fired after text had streamed. The partial
+            // answer stays on the turn; the trace is written anyway, because
+            // *which* text tripped the filter is exactly what a trace is for.
+            trace(latest, metrics())
+            throw SynthesisFailure.guardrailCutShort
+        }
+
+        let final = metrics()
+        continuation.yield(.completed(latest, final))
 
         // After the answer is delivered, never before it.
-        SynthesisTrace.record(
-            question: question,
-            instructions: SynthesisPrompt.ragInstructions,
-            prompt: prompt,
-            answer: latest,
-            passages: packed.passages,
-            metrics: metrics,
-            temperature: temperature)
+        trace(latest, final)
+    }
+
+    /// Whether `error` is the content filter (or the model's own refusal)
+    /// stopping generation, in either of the two error types a session can
+    /// throw: iOS 26's `GenerationError`, or the unified `LanguageModelError`
+    /// that iOS 27 / macOS 27 throw for both backends -- which is the one
+    /// Private Cloud Compute actually throws, found live 2026-09-14 when a
+    /// catch written against `GenerationError` matched nothing.
+    @available(iOS 26.0, macOS 26.0, *)
+    func isGuardrailStop(_ error: Error) -> Bool {
+        if let e = error as? LanguageModelSession.GenerationError, case .guardrailViolation = e {
+            return true
+        }
+        #if compiler(>=6.4)
+            if #available(iOS 27.0, macOS 27.0, *), let e = error as? LanguageModelError {
+                switch e {
+                case .guardrailViolation, .refusal: return true
+                default: return false
+                }
+            }
+        #endif
+        return false
     }
 
     /// Map a `GenerationError` onto the two failures the chat handles
@@ -296,11 +348,12 @@ import Foundation
 /// the framework — the provider picker then offers only remote backends, the
 /// same way chat.py falls back when no local model is reported.
 public func makeOnDeviceSynthesis(
-    budget: ContextBudgeter.Budget = .onDevice
+    budget: ContextBudgeter.Budget = .onDevice,
+    tuning: SynthesisTuning = .default
 ) -> (any SynthesisBackend)? {
     #if canImport(FoundationModels)
         if #available(iOS 26.0, macOS 26.0, *) {
-            return OnDeviceSynthesis(budget: budget)
+            return OnDeviceSynthesis(budget: budget, tuning: tuning)
         }
     #endif
     return nil

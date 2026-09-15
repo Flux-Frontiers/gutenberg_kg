@@ -101,12 +101,20 @@ public struct ContextBudgeter: Sendable {
         /// happen to share a context window today, but they are different
         /// models with independently-set numbers, and reusing one for the
         /// other would silently couple them.
+        ///
+        /// Four passages per work, not the on-device two. The cap exists
+        /// because the on-device model loops on repeated text; the server
+        /// model does not, and at two the first PCC answer on real hardware
+        /// (2026-09-14, "circles of Hell") reached the model with four
+        /// passages and 728 tokens of a 32,768-token window, the other 21
+        /// hits capped out -- two translations of one work, two each.
         public static let privateCloudCompute = Budget(
             contextWindow: 32_768,
             reservedForResponse: 1_024,
             reservedForOverhead: 240,
             maxPassages: 12,
-            maxCharactersPerPassage: 2_000)
+            maxCharactersPerPassage: 2_000,
+            maxPassagesPerSource: 4)
     }
 
     /// One passage as the model will see it.
