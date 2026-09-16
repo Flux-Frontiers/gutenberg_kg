@@ -8,7 +8,7 @@
   <a href="https://www.python.org/"><img src="https://img.shields.io/badge/python-3.12%20%7C%203.13-blue.svg" alt="Python"/></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/code-Elastic--2.0-lightgrey.svg" alt="Code License"/></a>
   <a href="https://www.gutenberg.org/"><img src="https://img.shields.io/badge/texts-Public%20Domain-green.svg" alt="Texts License"/></a>
-  <img src="https://img.shields.io/badge/version-1.21.0-blue.svg" alt="Version"/>
+  <img src="https://img.shields.io/badge/version-1.22.0-blue.svg" alt="Version"/>
   <img src="https://img.shields.io/badge/corpus-253%20books-orange.svg" alt="Corpus"/>
   <img src="https://img.shields.io/badge/nodes-1.3M-green.svg" alt="Nodes"/>
   <img src="https://img.shields.io/badge/edges-5.3M-green.svg" alt="Edges"/>
@@ -29,7 +29,7 @@ The included corpus contains **253 texts in 21 genres**: literature, philosophy,
 
 ## 🌳 New: a book grows into a tree, and the tree can leave the screen
 
-Two things are new here, and the second depends on hardware most people do not have yet.
+Three things are new here, and the third depends on hardware most people do not have yet.
 
 ### Books grow into natural-looking trees
 
@@ -43,6 +43,18 @@ gutenkg quilt --book Hamlet --season autumn       # spring, summer, autumn, wint
 ```
 
 There are four seasons. `--season winter` drops ninety percent of the leaves, which is the point—bare wood is where the pipe model shows.
+
+### Walk the grove in a browser
+
+The same corpus, as a first-person forest. `web/knowledge-press-forest/` is a React + Vite + [`@react-three/fiber`](https://github.com/pmndrs/react-three-fiber) port of the PyVista grove: one tree per work, grouped into named groves, walked with WASD. Trees are grown by the same space-colonization rule as `viz3d`, so a book's silhouette is the same in both.
+
+It carries a grove atlas with minimap jump, carriage roads between groves, an optional ring tour, named signposts, and a day/night toggle that persists alongside the season.
+
+```bash
+cd web/knowledge-press-forest && npm install && npm run dev
+```
+
+The book catalog is generated from the corpus rather than hand-maintained — `scripts/export_web_catalog.py` (also `make export-web-catalog`) counts DocKG chunk nodes per book and writes `src/game/catalogPart*.ts`, so the forest follows the corpus instead of drifting from it.
 
 ### If you own a Looking Glass display, cast to it
 
@@ -204,7 +216,7 @@ If you use GutenbergKG in research, use GitHub’s **Cite this repository** butt
   author       = {Suchanek, Eric G.},
   title        = {{GutenbergKG}: The Knowledge Press},
   year         = {2026},
-  version      = {1.21.0},
+  version      = {1.22.0},
   publisher    = {Flux-Frontiers},
   doi          = {10.5281/zenodo.20045389},
   url          = {https://github.com/Flux-Frontiers/gutenberg_kg}

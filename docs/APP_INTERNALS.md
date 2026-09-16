@@ -322,7 +322,7 @@ Reading aids, not exact equivalences.
 | `Retrieval/LocalRetrieval.swift` | Embed → dense → lexical → RRF. The Swift half of `_semantic_search` |
 | `Retrieval/SQLiteConnection.swift` | Owns the database handle so the pack types can fail on a bad file before they finish initialising |
 | `Synthesis/ContextBudgeter.swift` | Fits passages into 4,096 tokens. Pure logic, heavily tested |
-| `Synthesis/SynthesisPrompt.swift` | The RAG instructions, copied word for word from `kg_utils`. Drift here silently changes what every answer may say |
+| `Synthesis/SynthesisPrompt.swift` | The RAG and guide instructions. Held to `gutenberg_kg.synthesis_prompts` (which re-exports `kg_utils`) by `tests/test_synthesis_parity.py`, so drift fails a test rather than changing answers silently |
 | `Synthesis/OnDeviceSynthesis.swift` | Apple Foundation Models: streaming, availability, guardrail fallback |
 | `QueryOrchestrator.swift` | Retrieval then synthesis, as one stream of events the chat renders |
 | `KnowledgePressUI/AppModel.swift` | All app state, and the decision about which engine answers |

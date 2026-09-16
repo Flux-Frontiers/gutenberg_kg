@@ -2,7 +2,7 @@
 
 > **Generated**
 > - Script: `regenerate_corpus_doc.py`
-> - gutenkg: `1.21.0`
+> - gutenkg: `1.22.0`
 > - Date: `2026-09-11T21:40:58Z`
 > - Host: `turing (Darwin arm64)`
 > - Elapsed: `0.01s`
