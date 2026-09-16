@@ -12,6 +12,11 @@ import SwiftUI
 public struct SettingsView: View {
     @Environment(AppModel.self) private var model
     @State private var confirmingDelete = false
+    /// Which help topic is open, or nil. Drives one sheet for both the Help
+    /// row and every section's info button, so there is a single presentation
+    /// path rather than one per entry point.
+    @State private var helpTopicID: String?
+    @State private var showingHelpList = false
 
     /// Whether to show the answer engine and corpus scope here.
     ///
@@ -54,7 +59,7 @@ public struct SettingsView: View {
                 }
             }
 
-            Section("⚙️ Search") {
+            Section {
                 LabeledSlider(
                     label: "Results", value: $model.resultCount, range: 1...50, format: "%.0f")
                 LabeledSlider(
@@ -64,11 +69,17 @@ public struct SettingsView: View {
                     format: "%.2f")
                 Button("↩️ Reset search to defaults") { model.resetSearchSettings() }
                     .disabled(model.searchSettingsAreDefault)
+            } header: {
+                HelpSectionHeader(
+                    title: "⚙️ Search", topicID: "search", presentedTopicID: $helpTopicID)
             }
 
             if showsEngineAndScope {
-                Section("🤖 Answers") {
+                Section {
                     AnswerEnginePicker()
+                } header: {
+                    HelpSectionHeader(
+                        title: "🤖 Answers", topicID: "engines", presentedTopicID: $helpTopicID)
                 }
             }
 
@@ -87,14 +98,17 @@ public struct SettingsView: View {
 
             workerSection
 
-            #if !os(macOS)
-                // macOS keeps About in the app menu — the platform-standard
-                // place — via `.commands` in KnowledgePressApp.swift, so this
-                // row exists only where that menu doesn't.
-                Section {
+            Section {
+                Button("❓ Help") { showingHelpList = true }
+                #if !os(macOS)
+                    // macOS keeps About in the app menu — the platform-standard
+                    // place — via `.commands` in KnowledgePressApp.swift, so
+                    // this row exists only where that menu doesn't. Help has a
+                    // row on both: the Mac gets a Help menu item as well, but
+                    // a reader already in Settings should not have to leave it.
                     Button("ℹ️ About") { showingAbout = true }
-                }
-            #endif
+                #endif
+            }
         }
         .confirmationDialog(
             "Delete this conversation?", isPresented: $confirmingDelete, titleVisibility: .visible
@@ -103,6 +117,17 @@ public struct SettingsView: View {
             Button("Cancel", role: .cancel) {}
         } message: {
             Text("This removes the questions, answers, and any illustrations. It cannot be undone.")
+        }
+        // One sheet for the section info buttons, one for the Help row. Both
+        // present `HelpView`; only the starting page differs.
+        .sheet(item: Binding(
+            get: { helpTopicID.map(HelpTopicIdentifier.init) },
+            set: { helpTopicID = $0?.id })
+        ) { wrapper in
+            HelpSheet { done in HelpView(initialTopicID: wrapper.id, onDone: done) }
+        }
+        .sheet(isPresented: $showingHelpList) {
+            HelpSheet { done in HelpView(onDone: done) }
         }
         #if os(macOS)
             .listStyle(.sidebar)
@@ -132,7 +157,7 @@ public struct SettingsView: View {
         let perSource = Binding<Int>(
             get: { model.synthesisTuning.maxPassagesPerSource ?? 0 },
             set: { model.synthesisTuning.maxPassagesPerSource = $0 == 0 ? nil : $0 })
-        Section("🧪 Synthesis") {
+        Section {
             LabeledSlider(
                 label: "Temperature", value: $model.synthesisTuning.temperature, range: 0...1,
                 format: "%.2f"
@@ -158,6 +183,10 @@ public struct SettingsView: View {
                 .foregroundStyle(.secondary)
             Button("↩️ Reset synthesis to defaults") { model.resetSynthesisTuning() }
                 .disabled(model.synthesisTuning == .default)
+        } header: {
+            HelpSectionHeader(
+                title: "🧪 Synthesis", topicID: HelpContent.synthesisTopicID,
+                presentedTopicID: $helpTopicID)
         }
     }
 
@@ -302,5 +331,30 @@ struct LabeledSlider: View {
             .font(.caption)
             Slider(value: $value, in: range)
         }
+    }
+}
+
+/// `sheet(item:)` needs an `Identifiable`; a bare topic id string is not one.
+private struct HelpTopicIdentifier: Identifiable {
+    let id: String
+}
+
+/// Sizes the help sheet and supplies the dismissal each platform expects.
+///
+/// The Done action is passed *into* `HelpView` rather than wrapped around it:
+/// the button has to live inside that view's own `NavigationStack` to appear
+/// in the navigation bar. macOS gets no button, since a sheet there already
+/// closes from its title bar, and a fixed frame instead.
+private struct HelpSheet<Content: View>: View {
+    @Environment(\.dismiss) private var dismiss
+    @ViewBuilder let content: (@escaping () -> Void) -> Content
+
+    var body: some View {
+        #if os(macOS)
+            content({ dismiss() })
+                .frame(width: 560, height: 560)
+        #else
+            content({ dismiss() })
+        #endif
     }
 }

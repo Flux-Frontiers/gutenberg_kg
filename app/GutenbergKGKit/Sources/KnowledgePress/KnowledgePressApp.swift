@@ -68,6 +68,12 @@ struct KnowledgePressApp: App {
                     .keyboardShortcut("n")
                     .disabled(!model.canStartNewChat)
             }
+            // Replaces the system Help item, which would otherwise look for a
+            // help book this app does not ship and open a browser to nothing.
+            CommandGroup(replacing: .help) {
+                Button("The Knowledge Press Help") { openWindow(id: "help") }
+                    .keyboardShortcut("?", modifiers: [.command])
+            }
         }
 
         // The standard Settings window, which is what makes Cmd-comma and
@@ -84,6 +90,15 @@ struct KnowledgePressApp: App {
                 .environment(model)
         }
         .windowResizability(.contentSize)
+
+        // A window rather than a sheet: help is something to keep open beside
+        // Settings while changing a control, not something to dismiss before
+        // acting on what it said.
+        Window("The Knowledge Press Help", id: "help") {
+            HelpView()
+                .environment(model)
+                .frame(minWidth: 520, minHeight: 480)
+        }
     }
 }
 
