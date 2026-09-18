@@ -8,6 +8,8 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+## [1.22.1] - 2026-09-18
+
 ### Changed
 
 - **`kgmodule-utils` floor raised to `>=0.22.0`** (was `>=0.21.0`), and
