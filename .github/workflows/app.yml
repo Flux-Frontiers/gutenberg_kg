@@ -46,7 +46,7 @@ jobs:
     runs-on: macos-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       # Recorded in the log on purpose. The Swift version decides whether
       # Synthesis/PrivateCloudSynthesis.swift is compiled at all: it is gated
