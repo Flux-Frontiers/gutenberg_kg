@@ -8,6 +8,28 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Changed
+
+- **`kgmodule-utils` floor raised to `>=0.22.0`** (was `>=0.21.0`), and
+  `quiltwright` to `>=0.14.1` (was `>=0.7.0`) in both the `viz3d` and `pov`
+  extras. 0.22.0 makes the viewer's Cast button sweep quiltwright's standard
+  35-degree view cone instead of the preset's full cone, which for the 16"
+  landscape is 50 -- wider than reliably fuses, so hard edges ghosted where a
+  quilt rendered by `gutenkg quilt` itself held. Nothing in this repo changes;
+  the fix arrives through `kg_utils.viz3d.qt.cast_scene_to_looking_glass`,
+  which `gutenberg_kg.viz3d` calls.
+
+  Both quiltwright pins move together on purpose: two different floors make
+  Poetry lock the package twice under overlapping extra markers, as the
+  comment above them records.
+
+  The floor also moves in `docker/Dockerfile`
+  (`ARG KGMODULE_UTILS_VERSION`) and `runpod/requirements.txt`. `check_pins`
+  caught both -- the index would otherwise be built by 0.22.0 and read by
+  0.21.0, and the serverless worker could install a version the package
+  rejects.
+
+
 ## [1.22.0] - 2026-09-16
 
 ### Added

@@ -2385,14 +2385,14 @@ viz3d = ["PyQt5 (>=5.15.0)", "markdown (>=3.6)", "param (>=2.0.0)", "pyvista (>=
 
 [[package]]
 name = "kgmodule-utils"
-version = "0.21.0"
+version = "0.22.0"
 description = "Shared types, graph store, semantic index, and pipeline base for the KGModule SDK"
 optional = false
 python-versions = "<3.14,>=3.12"
 groups = ["main"]
 files = [
-    {file = "kgmodule_utils-0.21.0-py3-none-any.whl", hash = "sha256:45770743cb45604bc3d253d63b5d1ba9a28de795b508fe415d7fdb1c9152098d"},
-    {file = "kgmodule_utils-0.21.0.tar.gz", hash = "sha256:b40d48c0cd303b08500eb64b0ddd055518385e1a27d04ed9a6ef6a4eecd7468b"},
+    {file = "kgmodule_utils-0.22.0-py3-none-any.whl", hash = "sha256:407bb0ee4b29d3f9008050e5abb040649bb156ab3ef849c197f884576126bab6"},
+    {file = "kgmodule_utils-0.22.0.tar.gz", hash = "sha256:93af0fdabd907f52ee83d2f9c673882fb7d29c1dc54fd342e315800f17d3e744"},
 ]
 
 [package.dependencies]
@@ -2405,12 +2405,12 @@ openai = {version = ">=1.30.0", optional = true, markers = "extra == \"synthesis
 pillow = {version = ">=10.0.0", optional = true, markers = "extra == \"synthesis\""}
 PyQt5 = {version = ">=5.15.0", optional = true, markers = "extra == \"viz3d-qt\""}
 pyvista = {version = ">=0.44.0", optional = true, markers = "extra == \"viz3d-qt\" or extra == \"viz3d-render\""}
-quiltwright = {version = ">=0.7.0", optional = true, markers = "extra == \"viz3d-qt\""}
+quiltwright = {version = ">=0.14.1", optional = true, markers = "extra == \"viz3d-qt\""}
 rich = {version = ">=13.0.0,<15.0.0", optional = true, markers = "extra == \"semantic\""}
 sentence-transformers = {version = ">=5.4.1", optional = true, markers = "extra == \"semantic\""}
 sqlite-vec = [
-    {version = "0.1.9", optional = true, markers = "extra == \"semantic\""},
     {version = "0.1.9", optional = true, markers = "extra == \"sqlite-vec\""},
+    {version = "0.1.9", optional = true, markers = "extra == \"semantic\""},
 ]
 torch = {version = ">=2.5.1", optional = true, markers = "extra == \"semantic\""}
 transformers = {version = ">=5.5.0,<6", optional = true, markers = "extra == \"semantic\""}
@@ -2424,7 +2424,7 @@ synthesis = ["httpx (>=0.27.0)", "openai (>=1.30.0)", "pillow (>=10.0.0)"]
 synthesis-mflux = ["httpx (>=0.27.0)", "mflux (>=0.9.0)", "openai (>=1.30.0)", "pillow (>=10.0.0)"]
 viz = ["pyvis (>=0.3.2)"]
 viz3d = ["numpy (>=1.24.0)"]
-viz3d-qt = ["PyQt5 (>=5.15.0)", "numpy (>=1.24.0)", "pyvista (>=0.44.0)", "quiltwright (>=0.7.0)"]
+viz3d-qt = ["PyQt5 (>=5.15.0)", "numpy (>=1.24.0)", "pyvista (>=0.44.0)", "quiltwright (>=0.14.1)"]
 viz3d-render = ["numpy (>=1.24.0)", "pyvista (>=0.44.0)"]
 
 [[package]]
@@ -4973,15 +4973,15 @@ test = ["pytest (>=6,!=7.0.0,!=7.0.1)", "pytest-cov (>=3.0.0)", "pytest-qt"]
 
 [[package]]
 name = "quiltwright"
-version = "0.11.0"
+version = "0.14.1"
 description = "Holographic output for Looking Glass displays: off-axis multi-view quilts from PyVista, POV-Ray or Blender Cycles scenes"
 optional = true
 python-versions = "<3.14,>=3.12"
 groups = ["main"]
 markers = "extra == \"viz3d\" or extra == \"pov\""
 files = [
-    {file = "quiltwright-0.11.0-py3-none-any.whl", hash = "sha256:31c120c89aff3bc7cd2fb60e8d032a50c3168617019c8ea8b7e2c178fa5c4c26"},
-    {file = "quiltwright-0.11.0.tar.gz", hash = "sha256:5964a94c03d1392a44188b7f3b16166f50232abc124680767916787557b5c868"},
+    {file = "quiltwright-0.14.1-py3-none-any.whl", hash = "sha256:f8f0576ac7ee66298f1d3f1109c51d3b167cff7bc1bd599e6987daaa44d710ee"},
+    {file = "quiltwright-0.14.1.tar.gz", hash = "sha256:e53a633eb22e72aec2de7b866d8b97294755764398698f68fed928f6cb87be78"},
 ]
 
 [package.dependencies]
@@ -7147,4 +7147,4 @@ viz3d = ["PyQt5", "kgmodule-utils", "markdown", "param", "pyvistaqt", "quiltwrig
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.12,<3.14"
-content-hash = "76212bd6b3d6b077fc943c85cec751f4b0236c4f2856dc1ad33b165f846ae4aa"
+content-hash = "662a3a6dc25b61ea18c4c880e9c99eca9c9cc6d55ef382c670af640c7016431c"
