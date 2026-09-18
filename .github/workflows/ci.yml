@@ -32,10 +32,10 @@ jobs:
     # from Poetry — cheap enough to run unconditionally rather than folded
     # into a gated job.
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.12"
 
@@ -50,10 +50,10 @@ jobs:
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main' || github.base_ref == 'main' || github.event_name == 'workflow_dispatch'
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.12"
 
@@ -64,7 +64,7 @@ jobs:
           virtualenvs-in-project: true
 
       - name: Cache virtualenv
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
           path: .venv
           key: lint-${{ runner.os }}-${{ hashFiles('poetry.lock') }}
@@ -83,10 +83,10 @@ jobs:
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main' || github.base_ref == 'main' || github.event_name == 'workflow_dispatch'
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.12"
 
@@ -97,7 +97,7 @@ jobs:
           virtualenvs-in-project: true
 
       - name: Cache virtualenv
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
           path: .venv
           key: typecheck-${{ runner.os }}-${{ hashFiles('poetry.lock') }}
@@ -120,10 +120,10 @@ jobs:
     if: github.ref == 'refs/heads/main' || github.base_ref == 'main' || github.event_name == 'workflow_dispatch'
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.12"
 
@@ -134,7 +134,7 @@ jobs:
           virtualenvs-in-project: true
 
       - name: Cache virtualenv
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
           path: .venv
           key: test-${{ runner.os }}-${{ hashFiles('poetry.lock') }}
@@ -171,10 +171,10 @@ jobs:
     # entry_point.load() imports the module and resolves the attribute without
     # calling it -- so an MCP server entry point is verified, not started.
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.12"
 
