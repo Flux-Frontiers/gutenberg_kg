@@ -6,7 +6,7 @@ runpod>=1.7.0
 # kg-rag/doc-kg floors mirror pyproject's kgdeps extra: handler.py passes
 # KGEntry(vectors_path=...), which needs kg-rag>=0.12.0, and that release's
 # transformers>=5.5.0 needs doc-kg>=0.21.2. Older pairs fail at worker startup.
-kg-rag>=0.15.0
+kg-rag>=0.16.0
 doc-kg>=0.26.0
 diary-kg>=0.99.0
 # [sqlite-vec] mirrors pyproject and docker/Dockerfile. Strictly redundant —
