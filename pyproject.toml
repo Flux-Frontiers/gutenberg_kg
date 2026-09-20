@@ -109,10 +109,15 @@ dependencies = [
 
 [project.optional-dependencies]
 kgdeps = [
-    # These floors move together: kg-rag needs transformers>=5.5.0, which older
-    # doc-kg/pycode-kg pins (transformers<4.57) contradict.
+    # kg-rag only. src/ imports it in gutenberg_kg.ingest, .audit, .export_swift
+    # and .serve.handler, so it is a feature of this package -- which is what an
+    # extra is for. pycode-kg is not imported anywhere under src/; it is the
+    # pycodekg CLI and MCP server this repo *runs*, so it lives in the `kg`
+    # Poetry group below and stays out of published metadata.
+    #
+    # The floor still moves with doc-kg's: kg-rag needs transformers>=5.5.0,
+    # which older doc-kg pins (transformers<4.57) contradict.
     "kg-rag>=0.16.0",
-    "pycode-kg>=0.27.1",
 ]
 viz = [
     "plotly>=5.0.0",
@@ -182,6 +187,24 @@ image = [
 #   poetry install --with dev
 [tool.poetry.group.dev]
 optional = true
+
+# Maintainer tooling (Poetry group, not a PEP 621 extra).
+#
+# pycode-kg is a tool this repo *runs*, not a library it imports: .mcp.json
+# serves `.venv/bin/pycodekg-mcp` to agents. It used to sit in the published
+# `kgdeps` extra, so `pip install gutenberg-kg[kgdeps]` handed every consumer a
+# sibling KG package -- with torch and sentence-transformers behind it -- for
+# tooling they will never run. A Poetry group is locked and installable but
+# never written into the wheel. ftree_kg made the same move for the same
+# reason; the rule is in kgrag_priv's FLEET_STANDARDS.md.
+#
+#   poetry install --with kg      # pycodekg into .venv/bin
+#   poetry install                # default: the group is optional, skipped
+[tool.poetry.group.kg]
+optional = true
+
+[tool.poetry.group.kg.dependencies]
+pycode-kg = ">=0.27.1"
 
 [tool.poetry.group.docs]
 optional = true

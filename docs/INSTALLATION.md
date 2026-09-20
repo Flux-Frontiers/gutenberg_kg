@@ -47,7 +47,7 @@ That set is the **recommended default** — everything except dev tooling (KG in
 
 | Extra | Installs | Install with |
 |---|---|---|
-| `kgdeps` | kg-rag, pycode-kg (doc-kg and diary-kg are core dependencies, always installed) | `poetry install --extras kgdeps` |
+| `kgdeps` | kg-rag (doc-kg and diary-kg are core dependencies, always installed) | `poetry install --extras kgdeps` |
 | `viz` | plotly (2-D growth timeline) | `poetry install --extras viz` |
 | `viz3d` | pyvista, PyQt5, kgmodule-utils, quiltwright (3-D visualiser + light-field quilts) | `poetry install --extras viz3d` |
 | `mcp` | fastmcp, structlog (MCP server) | `poetry install --extras mcp` |
@@ -57,10 +57,10 @@ That set is the **recommended default** — everything except dev tooling (KG in
 | *(none)* | core runtime only | `poetry install` |
 | *(everything)* | every extra above | `poetry install --all-extras` |
 
-Dev tooling (pytest, ruff, ty, pre-commit) is **not an extra** — it lives in the *optional* Poetry `dev` group, so it stays out of the published wheel metadata and a bare `poetry install` stays core-runtime-only. There is no `.[dev]` to pip-install; development needs Poetry. Contributors who want the test/lint toolchain, matching every extra CI's own jobs install:
+Dev tooling (pytest, ruff, ty, pre-commit) is **not an extra** — it lives in the *optional* Poetry `dev` group, so it stays out of the published wheel metadata and a bare `poetry install` stays core-runtime-only. The same is true of `pycode-kg`, in the optional `kg` group: this repo *runs* the `pycodekg` CLI and its MCP server but imports neither, so it is maintainer tooling rather than a feature of the package. There is no `.[dev]` to pip-install; development needs Poetry. Contributors who want the test/lint toolchain, matching every extra CI's own jobs install:
 
 ```bash
-poetry install --with dev --extras "kgdeps viz viz3d mcp image pov"   # or --with dev --all-extras
+poetry install --with dev,kg --extras "kgdeps viz viz3d mcp image pov"   # or --with dev,kg --all-extras
 pre-commit install
 ```
 
@@ -80,7 +80,7 @@ Prefer a plain venv + pip? The same extras work with pip:
 ```bash
 python -m venv .venv
 source .venv/bin/activate          # Windows: .venv\Scripts\activate
-pip install -e ".[kgdeps,viz,viz3d,mcp]"      # dev tooling is poetry-only: poetry install --with dev
+pip install -e ".[kgdeps,viz,viz3d,mcp]"      # dev and kg tooling are poetry-only: poetry install --with dev,kg
 ```
 
 ### 2. Build the knowledge graph
