@@ -2348,20 +2348,20 @@ type = ["pygobject-stubs", "pytest-mypy (>=1.0.1)", "shtab", "types-pywin32"]
 
 [[package]]
 name = "kg-rag"
-version = "0.15.0"
+version = "0.16.0"
 description = "Orchestration layer for the KGRAG(tm) components."
 optional = true
 python-versions = "<3.14,>=3.12"
 groups = ["main"]
 markers = "extra == \"kgdeps\""
 files = [
-    {file = "kg_rag-0.15.0-py3-none-any.whl", hash = "sha256:13f92378ca806276e1cec4aab8836fe4ec36f681c17cd3ea19e79376f9ed0f7c"},
-    {file = "kg_rag-0.15.0.tar.gz", hash = "sha256:61298f631ede2faaa8ab3a2bf73a6dae96a05089c59b1ea9d026a38d2e24fa5b"},
+    {file = "kg_rag-0.16.0-py3-none-any.whl", hash = "sha256:8a62de2c3b321c98e11a422302938057062276de0069dbbd6914465236e64e91"},
+    {file = "kg_rag-0.16.0.tar.gz", hash = "sha256:e5c215a8f0a285cee393cd4f641734e68ce7c5c2d6761e15cc81f9db68cefea0"},
 ]
 
 [package.dependencies]
 click = ">=8.1.0"
-kgmodule-utils = ">=0.18.0"
+kgmodule-utils = ">=0.22.0"
 mcp = ">=1.0.0,<2"
 numpy = ">=1.24.0"
 pandas = ">=2.0.0"
@@ -2372,11 +2372,12 @@ torch = ">=2.5.1"
 transformers = ">=5.5.0,<6"
 
 [package.extras]
-all = ["PyQt5 (>=5.15.0)", "diary-kg (>=0.97.0)", "doc-kg (>=0.22.0)", "firecrawl-anydoc (>=0.1.9)", "ftree-kg (>=0.14.0)", "markdown (>=3.6)", "memory-kg (>=0.7.0)", "param (>=2.0.0)", "plotly (>=5.14.0)", "pycode-kg (>=0.23.1)", "pyvis (>=0.3.2)", "pyvista (>=0.44.0)", "pyvistaqt (>=0.11.0)", "streamlit (>=1.35.0)", "trame-vtk (>=2.0.0)"]
-diary = ["diary-kg (>=0.97.0)"]
+all = ["PyQt5 (>=5.15.0)", "connectome-kg (>=0.3.1)", "diary-kg (>=0.99.0)", "doc-kg (>=0.26.0)", "firecrawl-anydoc (>=0.1.9)", "ftree-kg (>=0.14.0)", "markdown (>=3.6)", "memory-kg (>=0.11.0)", "param (>=2.0.0)", "plotly (>=5.14.0)", "pycode-kg (>=0.27.1)", "pyvis (>=0.3.2)", "pyvista (>=0.44.0)", "pyvistaqt (>=0.11.0)", "streamlit (>=1.35.0)", "trame-vtk (>=2.0.0)"]
+connectome = ["connectome-kg (>=0.3.1)"]
+diary = ["diary-kg (>=0.99.0)"]
 filetree = ["ftree-kg (>=0.14.0)"]
 ingest = ["firecrawl-anydoc (>=0.1.9)"]
-kg = ["doc-kg (>=0.22.0)", "memory-kg (>=0.7.0)", "pycode-kg (>=0.23.1)"]
+kg = ["doc-kg (>=0.26.0)", "memory-kg (>=0.11.0)", "pycode-kg (>=0.27.1)"]
 pi = ["llama-cpp-python (>=0.3.0)"]
 qt = ["PyQt5 (>=5.15.0)"]
 viz = ["plotly (>=5.14.0)", "pyvis (>=0.3.2)", "streamlit (>=1.35.0)"]
@@ -2409,8 +2410,8 @@ quiltwright = {version = ">=0.14.1", optional = true, markers = "extra == \"viz3
 rich = {version = ">=13.0.0,<15.0.0", optional = true, markers = "extra == \"semantic\""}
 sentence-transformers = {version = ">=5.4.1", optional = true, markers = "extra == \"semantic\""}
 sqlite-vec = [
-    {version = "0.1.9", optional = true, markers = "extra == \"sqlite-vec\""},
     {version = "0.1.9", optional = true, markers = "extra == \"semantic\""},
+    {version = "0.1.9", optional = true, markers = "extra == \"sqlite-vec\""},
 ]
 torch = {version = ">=2.5.1", optional = true, markers = "extra == \"semantic\""}
 transformers = {version = ">=5.5.0,<6", optional = true, markers = "extra == \"semantic\""}
@@ -4207,20 +4208,20 @@ files = [
 
 [[package]]
 name = "pycode-kg"
-version = "0.26.0"
+version = "0.27.1"
 description = "A tool to build a searchable knowledge graph from Python repositories"
 optional = true
 python-versions = "<3.14,>=3.12"
 groups = ["main"]
 markers = "extra == \"kgdeps\""
 files = [
-    {file = "pycode_kg-0.26.0-py3-none-any.whl", hash = "sha256:e1a513b583f6f094568292f62af04f9fc563a4b553f4d71a31ececa51be2cfb8"},
-    {file = "pycode_kg-0.26.0.tar.gz", hash = "sha256:4252ddb8a8f97cadfab8998a1c9ab37b9609313df9e5487fb88b6803fac6bc0d"},
+    {file = "pycode_kg-0.27.1-py3-none-any.whl", hash = "sha256:29e0d7611e1c78fec0464be733731ce717c29b3984b1bbe8e2aefecb72731add"},
+    {file = "pycode_kg-0.27.1.tar.gz", hash = "sha256:bc046c523995559493d07c7dff8ada1302f6f2b7efe5a28682c494e8053092d0"},
 ]
 
 [package.dependencies]
 click = ">=8.1.0,<9"
-kgmodule-utils = {version = ">=0.19.0", extras = ["semantic", "viz3d"]}
+kgmodule-utils = {version = ">=0.22.0", extras = ["semantic", "viz3d"]}
 mcp = ">=1.0.0,<2"
 networkx = ">=3.0"
 numpy = ">=1.24.0"
@@ -4232,9 +4233,9 @@ starlette = ">=0.49.1,<1.4.0"
 torch = ">=2.5.1"
 
 [package.extras]
-all = ["PyQt5 (>=5.15.0)", "markdown (>=3.6)", "param (>=2.0.0)", "plotly (>=5.14.0)", "pyvis (>=0.3.2)", "pyvista (>=0.44.0)", "pyvistaqt (>=0.11.0)", "quiltwright (>=0.8.0)", "streamlit (>=1.56.0)", "trame-vtk (>=2.0.0)"]
+all = ["PyQt5 (>=5.15.0)", "markdown (>=3.6)", "param (>=2.0.0)", "plotly (>=5.14.0)", "pyvis (>=0.3.2)", "pyvista (>=0.44.0)", "pyvistaqt (>=0.11.0)", "quiltwright (>=0.14.1)", "streamlit (>=1.56.0)", "trame-vtk (>=2.0.0)"]
 viz = ["plotly (>=5.14.0)", "pyvis (>=0.3.2)", "streamlit (>=1.56.0)"]
-viz3d = ["PyQt5 (>=5.15.0)", "kgmodule-utils[viz3d-qt,viz3d-render] (>=0.18.1)", "markdown (>=3.6)", "param (>=2.0.0)", "pyvistaqt (>=0.11.0)", "quiltwright (>=0.8.0)", "trame-vtk (>=2.0.0)"]
+viz3d = ["PyQt5 (>=5.15.0)", "kgmodule-utils[viz3d-qt,viz3d-render] (>=0.22.0)", "markdown (>=3.6)", "param (>=2.0.0)", "pyvistaqt (>=0.11.0)", "quiltwright (>=0.14.1)", "trame-vtk (>=2.0.0)"]
 
 [[package]]
 name = "pycparser"
@@ -4973,15 +4974,15 @@ test = ["pytest (>=6,!=7.0.0,!=7.0.1)", "pytest-cov (>=3.0.0)", "pytest-qt"]
 
 [[package]]
 name = "quiltwright"
-version = "0.14.1"
+version = "0.15.0"
 description = "Holographic output for Looking Glass displays: off-axis multi-view quilts from PyVista, POV-Ray or Blender Cycles scenes"
 optional = true
 python-versions = "<3.14,>=3.12"
 groups = ["main"]
 markers = "extra == \"viz3d\" or extra == \"pov\""
 files = [
-    {file = "quiltwright-0.14.1-py3-none-any.whl", hash = "sha256:f8f0576ac7ee66298f1d3f1109c51d3b167cff7bc1bd599e6987daaa44d710ee"},
-    {file = "quiltwright-0.14.1.tar.gz", hash = "sha256:e53a633eb22e72aec2de7b866d8b97294755764398698f68fed928f6cb87be78"},
+    {file = "quiltwright-0.15.0-py3-none-any.whl", hash = "sha256:874012700434ac59f84ad34b34a9ffc168fc501e5e0f615a86634be845466acc"},
+    {file = "quiltwright-0.15.0.tar.gz", hash = "sha256:eabcfbeca5ce224c889017230f02df73f808531646edab744b93bedd218c6a6a"},
 ]
 
 [package.dependencies]
@@ -7147,4 +7148,4 @@ viz3d = ["PyQt5", "kgmodule-utils", "markdown", "param", "pyvistaqt", "quiltwrig
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.12,<3.14"
-content-hash = "662a3a6dc25b61ea18c4c880e9c99eca9c9cc6d55ef382c670af640c7016431c"
+content-hash = "c37f4fc011f503528686cb378e7a39537f5968264d87094d9e51728eb5fd751b"

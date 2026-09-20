@@ -8,6 +8,20 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Changed
+
+- **Fleet dependency floors raised and relocked** (`kgrag_priv` sweep item 49,
+  tier 1): `kg-rag` to `>=0.16.0`, `pycode-kg` to `>=0.27.1`, `quiltwright` to
+  `>=0.15.0` in both places it is declared, and the `ruff` floor from
+  `>=0.4.0` to `>=0.15` inside the existing `<0.16` cap.
+- **The `kg-rag` pin moved in all four places it lives, not one.**
+  `scripts/check_pins.py` caught the other three: `docker/Dockerfile`'s
+  `ARG KG_RAG_VERSION` and `runpod/requirements.txt` both still said 0.15.0,
+  which would have had the index built by 0.16.0 and read by 0.15.0, and would
+  have let `pip install .` silently upgrade past an ARG that then named a
+  version no build actually runs. Lock, Dockerfile, pyproject floor and runpod
+  now agree.
+
 ## [1.22.1] - 2026-09-18
 
 ### Changed
