@@ -8,6 +8,27 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Fixed
+
+- **`pycode-kg` leaves the published `kgdeps` extra for the optional `kg`
+  Poetry group.** Nothing under `src/` or `app/` imports `pycode_kg`: it is
+  the `pycodekg` CLI and MCP server this repo *runs*, served to agents from
+  `.venv/bin/pycodekg-mcp` in `.mcp.json`. An extra is published metadata, so
+  `pip install gutenberg-kg[kgdeps]` handed every consumer a sibling KG
+  package -- and torch and sentence-transformers behind it -- for tooling they
+  will never run. `ftree_kg` made the same move for the same reason.
+
+  `kg-rag` stays in `kgdeps` and is correct there: `gutenberg_kg.ingest`,
+  `.audit`, `.export_swift` and `.serve.handler` all import it, so it is a
+  feature of this package. The two were grouped because their transformers
+  floors move together, which is a resolver constraint rather than a reason to
+  publish both.
+
+  Verified against the built wheel's `METADATA`, not `pyproject.toml`:
+  `pycode-kg` appears nowhere in it, and `Provides-Extra: kgdeps` survives.
+  Maintainers now want `poetry install --with dev,kg`; `docs/INSTALLATION.md`
+  says so and its extras table no longer advertises `pycode-kg`.
+
 ### Changed
 
 - **Fleet dependency floors raised and relocked** (`kgrag_priv` sweep item 49,
