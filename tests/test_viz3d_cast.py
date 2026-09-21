@@ -15,6 +15,7 @@ behaviour the viewer's error handling is written against.
 from __future__ import annotations
 
 from pathlib import Path
+from types import SimpleNamespace
 from unittest.mock import patch
 
 import numpy as np
@@ -147,3 +148,54 @@ class TestCastScaling:
 
         preset = QUILT_PRESETS[viz3d.QUILT_SPEC]
         assert preset.scaled(viz3d.CAST_SCALE).n_views == preset.n_views
+
+
+class TestTheCastIsFramedLikeTheWindow:
+    """``camera_position`` carries no view angle, so the builder must.
+
+    Frame for Render sets this window's camera to ``RENDER_FOV`` (14) and is
+    the documented step before casting, while the helper's fresh off-screen
+    plotter starts at VTK's default 30. Casting at 30 put the subject
+    tan(15)/tan(7) = 2.2x too small. The window itself is not constructible
+    without a GL context (see the module docstring), so this drives the
+    unbound method against a stub, which is the seam these tests exist for.
+    """
+
+    @staticmethod
+    def _stub(tmp_path, view_angle):
+        return SimpleNamespace(
+            visualizer=SimpleNamespace(
+                all_nodes=[object()],
+                render_style="mesh",
+                status="",
+                corpus_root=str(tmp_path / "corpus"),
+                save_path=str(tmp_path / "forest"),
+            ),
+            vtk_plotter=SimpleNamespace(
+                camera_position=[(0, -5, 0), (0, 0, 0), (0, 0, 1)],
+                camera=SimpleNamespace(view_angle=view_angle),
+            ),
+            cast_btn=SimpleNamespace(setEnabled=lambda _enabled: None),
+        )
+
+    def test_the_builder_carries_the_window_s_view_angle(self, tmp_path):
+        from kg_utils.viz3d.qt import CastResult
+
+        captured = {}
+
+        def fake_cast(build, camera_position, out_stem, spec, *, progress=None, **kwargs):
+            captured["build"] = build
+            return CastResult(path=None, error="not cast in tests", elapsed=0.0, message="done")
+
+        stub = self._stub(tmp_path, view_angle=14.0)
+        with (
+            patch.object(viz3d, "cast_scene_to_looking_glass", fake_cast),
+            patch.object(viz3d, "create_forest_visualization", lambda _viz, _plotter: None),
+        ):
+            viz3d.ForestMainWindow.cast_to_looking_glass(stub)
+            # Inside the patches: build() looks create_forest_visualization up
+            # as a module global when it runs, not when it was defined.
+            offscreen = SimpleNamespace(camera=SimpleNamespace(view_angle=30.0))
+            assert offscreen.camera.view_angle != 14.0, "the default must differ"
+            captured["build"](offscreen)
+        assert offscreen.camera.view_angle == 14.0

@@ -10,6 +10,16 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Fixed
 
+- **A cast is framed like the window, not at VTK's default FOV.** PyVista's
+  `camera_position` is (position, focal point, view up) and carries no view
+  angle, so `cast_scene_to_looking_glass`'s fresh off-screen plotter kept
+  VTK's default 30 degrees while the window sat at the `RENDER_FOV` of 14
+  that **Frame for Render** had set. The subject landed
+  tan(15)/tan(7) = 2.2x too small on the panel, about eight scroll-wheel
+  steps to undo by hand -- and since Frame for Render is the documented step
+  before casting, that was the normal path. `create_forest_visualization`
+  does not set the angle, so the cast builder now carries it across.
+
 - **`pycode-kg` leaves the published `kgdeps` extra for the optional `kg`
   Poetry group.** Nothing under `src/` or `app/` imports `pycode_kg`: it is
   the `pycodekg` CLI and MCP server this repo *runs*, served to agents from
