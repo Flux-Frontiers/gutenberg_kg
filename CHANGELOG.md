@@ -8,6 +8,8 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+## [1.22.2] - 2026-09-21
+
 ### Fixed
 
 - **A cast is framed like the window, not at VTK's default FOV.** PyVista's
@@ -41,10 +43,14 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Changed
 
-- **Fleet dependency floors raised and relocked** (`kgrag_priv` sweep item 46):
-  `kgmodule-utils` to `>=0.23.0`, `doc-kg` to `>=0.27.0`. The three packages released on 2026-09-20 and put
-  every consumer's lock behind them within hours; this is the routine
-  currency bump that follows.
+- **Fleet dependency floors raised and relocked** (`kgrag_priv` sweep items 46
+  and 49): `kgmodule-utils` to `>=0.23.0`, `doc-kg` to `>=0.27.0`, `kg-rag` to
+  `>=0.16.0`, `pycode-kg` to `>=0.27.1`, `diary-kg` to `>=0.100.0` (moved
+  at release by `scripts/check_pins.py --bump`, in the Dockerfile ARG, the
+  runpod floor and the lock as well), `quiltwright` to `>=0.15.0` in both
+  places it is declared, and `ruff` from `>=0.4.0` to `>=0.15` inside the
+  existing `<0.16` cap. The 2026-09-20 fleet releases put every consumer's
+  lock behind them; this is the currency bump that follows.
 
 - **The `kg` Poetry group is gone** (`kgrag_priv` sweep item 50, phase 1).
   It held `pycode-kg`, a tool this repo runs but never imports. Under the fleet's
@@ -53,12 +59,13 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   copy, and every copy was a lock entry that drifted on each release.
   `doc-kg` stays: `build_corpus`, `ingest`, `serve.handler` and
   `cli.cmd_imagine` all import it, so it is a library here, not a tool.
-  The import is the test.
+  The import is the test. The `kgdeps` comment in `pyproject.toml` that still
+  pointed at the group is corrected (#154).
+- **GitHub Actions moved off Node 20** (#149): the workflow actions are on
+  their Node 24 majors ahead of GitHub retiring the Node 20 runtime.
+- **Corpus snapshots**: the 1.22.0 release snapshot is committed, and one
+  snapshot whose key named no commit was pruned (#148).
 
-- **Fleet dependency floors raised and relocked** (`kgrag_priv` sweep item 49,
-  tier 1): `kg-rag` to `>=0.16.0`, `pycode-kg` to `>=0.27.1`, `quiltwright` to
-  `>=0.15.0` in both places it is declared, and the `ruff` floor from
-  `>=0.4.0` to `>=0.15` inside the existing `<0.16` cap.
 - **The `kg-rag` pin moved in all four places it lives, not one.**
   `scripts/check_pins.py` caught the other three: `docker/Dockerfile`'s
   `ARG KG_RAG_VERSION` and `runpod/requirements.txt` both still said 0.15.0,

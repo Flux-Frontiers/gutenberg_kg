@@ -1208,21 +1208,21 @@ word-list = ["pyahocorasick"]
 
 [[package]]
 name = "diary-kg"
-version = "0.99.0"
+version = "0.100.0"
 description = "A knowledge graph builder and semantic search engine for diaries and journals"
 optional = false
 python-versions = "<3.14,>=3.12"
 groups = ["main"]
 files = [
-    {file = "diary_kg-0.99.0-py3-none-any.whl", hash = "sha256:48e0b4f6c36e7f06cc4eb50fe731fb2ffc88ed65e7eccc7a8de83c94e8e007ea"},
-    {file = "diary_kg-0.99.0.tar.gz", hash = "sha256:3f0fb8b25d7d06baaf1ea368f49c377f0d7ea140d781d3511fddbeda14fff907"},
+    {file = "diary_kg-0.100.0-py3-none-any.whl", hash = "sha256:aa4ce8bc4088f97d793c6beea73b04a2607a620abc0417581345599a59bed877"},
+    {file = "diary_kg-0.100.0.tar.gz", hash = "sha256:47966a28ae61e802ca06b90a748374249391a205edb9e88faccd0100259321cf"},
 ]
 
 [package.dependencies]
 click = ">=8.1.0,<9"
-doc-kg = ">=0.24.1"
-kgmodule-utils = ">=0.20.0"
-mcp = ">=1.0.0,<2"
+doc-kg = ">=0.27.0"
+kgmodule-utils = ">=0.23.0"
+mcp = ">=1.3.0,<2"
 numpy = ">=1.24.0"
 pandas = ">=2.0.0"
 rich = ">=14.3.3,<15"
@@ -7118,4 +7118,4 @@ viz3d = ["PyQt5", "kgmodule-utils", "markdown", "param", "pyvistaqt", "quiltwrig
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.12,<3.14"
-content-hash = "41f9e14867d1281ee18decc00f73f582035c6137ce6c6a7a1f650842b3469430"
+content-hash = "cc85ca69809e7aa58ac71c9cda52d12ec859061d3025c4938b7fb4bd680ad0ad"
