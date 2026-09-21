@@ -21,12 +21,19 @@
       }
     },
     "pycodekg": {
-      "command": "/Users/egs/repos/gutenberg_kg/.venv/bin/pycodekg-mcp",
-      "args": ["--repo", "/Users/egs/repos/gutenberg_kg"]
+      "command": "pycodekg-mcp",
+      "args": [
+        "--repo",
+        "/Users/egs/repos/gutenberg_kg"
+      ]
     },
     "dockg": {
-      "command": "/Users/egs/repos/gutenberg_kg/.venv/bin/dockg",
-      "args": ["mcp", "--repo", "/Users/egs/repos/gutenberg_kg"]
+      "command": "dockg",
+      "args": [
+        "mcp",
+        "--repo",
+        "/Users/egs/repos/gutenberg_kg"
+      ]
     }
   }
 }

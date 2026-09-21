@@ -188,24 +188,6 @@ image = [
 [tool.poetry.group.dev]
 optional = true
 
-# Maintainer tooling (Poetry group, not a PEP 621 extra).
-#
-# pycode-kg is a tool this repo *runs*, not a library it imports: .mcp.json
-# serves `.venv/bin/pycodekg-mcp` to agents. It used to sit in the published
-# `kgdeps` extra, so `pip install gutenberg-kg[kgdeps]` handed every consumer a
-# sibling KG package -- with torch and sentence-transformers behind it -- for
-# tooling they will never run. A Poetry group is locked and installable but
-# never written into the wheel. ftree_kg made the same move for the same
-# reason; the rule is in kgrag_priv's FLEET_STANDARDS.md.
-#
-#   poetry install --with kg      # pycodekg into .venv/bin
-#   poetry install                # default: the group is optional, skipped
-[tool.poetry.group.kg]
-optional = true
-
-[tool.poetry.group.kg.dependencies]
-pycode-kg = ">=0.27.1"
-
 [tool.poetry.group.docs]
 optional = true
 
