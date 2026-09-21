@@ -1269,20 +1269,20 @@ wmi = ["wmi (>=1.5.1) ; platform_system == \"Windows\""]
 
 [[package]]
 name = "doc-kg"
-version = "0.26.0"
+version = "0.27.0"
 description = "A tool to build a semantically searchable knowledge graph from markdown and text documents"
 optional = false
 python-versions = "<3.14,>=3.12"
 groups = ["main"]
 files = [
-    {file = "doc_kg-0.26.0-py3-none-any.whl", hash = "sha256:0827bed5b18c8f72650fb2b7c823850a49381db4979bcce8905e87e7a0ef14b0"},
-    {file = "doc_kg-0.26.0.tar.gz", hash = "sha256:a7b0968b665c46fe8a8220095f06347f3650f6ee778f29573a5a51233d904c71"},
+    {file = "doc_kg-0.27.0-py3-none-any.whl", hash = "sha256:9dd5b43a18c888f993545bc1c34099929cdf702bc94a3006499bf397c6c0cd00"},
+    {file = "doc_kg-0.27.0.tar.gz", hash = "sha256:6cf9e8805fe768c936135cc7fd3b9efec7221167432375fc94839edfc55a868d"},
 ]
 
 [package.dependencies]
 click = ">=8.1.0,<9"
-kgmodule-utils = {version = ">=0.20.0", extras = ["semantic"]}
-mcp = ">=1.0.0,<2"
+kgmodule-utils = {version = ">=0.23.0", extras = ["semantic"]}
+mcp = ">=1.3.0,<2"
 pymupdf4llm = ">=0.0.17"
 pyyaml = ">=6.0.0"
 rich = ">=14.3.3,<15"
@@ -2386,28 +2386,28 @@ viz3d = ["PyQt5 (>=5.15.0)", "markdown (>=3.6)", "param (>=2.0.0)", "pyvista (>=
 
 [[package]]
 name = "kgmodule-utils"
-version = "0.22.0"
+version = "0.23.0"
 description = "Shared types, graph store, semantic index, and pipeline base for the KGModule SDK"
 optional = false
 python-versions = "<3.14,>=3.12"
 groups = ["main"]
 files = [
-    {file = "kgmodule_utils-0.22.0-py3-none-any.whl", hash = "sha256:407bb0ee4b29d3f9008050e5abb040649bb156ab3ef849c197f884576126bab6"},
-    {file = "kgmodule_utils-0.22.0.tar.gz", hash = "sha256:93af0fdabd907f52ee83d2f9c673882fb7d29c1dc54fd342e315800f17d3e744"},
+    {file = "kgmodule_utils-0.23.0-py3-none-any.whl", hash = "sha256:f0ec8050f33fb0d71b4d1ca3fa8148627118df2201b53da0737f00622f35f97c"},
+    {file = "kgmodule_utils-0.23.0.tar.gz", hash = "sha256:264a137efdcf36265172f7c223816ef1c2e0697dc6dc7e35606f5835dc1a379d"},
 ]
 
 [package.dependencies]
 httpx = {version = ">=0.27.0", optional = true, markers = "extra == \"synthesis\""}
 numpy = [
     {version = ">=1.24.0", optional = true, markers = "extra == \"semantic\""},
-    {version = ">=1.24.0", optional = true, markers = "extra == \"viz3d-qt\" or extra == \"viz3d-render\""},
     {version = ">=1.24.0", optional = true, markers = "extra == \"viz3d\""},
+    {version = ">=1.24.0", optional = true, markers = "extra == \"viz3d-qt\" or extra == \"viz3d-render\""},
 ]
 openai = {version = ">=1.30.0", optional = true, markers = "extra == \"synthesis\""}
 pillow = {version = ">=10.0.0", optional = true, markers = "extra == \"synthesis\""}
 PyQt5 = {version = ">=5.15.0", optional = true, markers = "extra == \"viz3d-qt\""}
 pyvista = {version = ">=0.44.0", optional = true, markers = "extra == \"viz3d-qt\" or extra == \"viz3d-render\""}
-quiltwright = {version = ">=0.14.1", optional = true, markers = "extra == \"viz3d-qt\""}
+quiltwright = {version = ">=0.15.0", optional = true, markers = "extra == \"viz3d-qt\""}
 rich = {version = ">=13.0.0,<15.0.0", optional = true, markers = "extra == \"semantic\""}
 sentence-transformers = {version = ">=5.4.1", optional = true, markers = "extra == \"semantic\""}
 sqlite-vec = [
@@ -2426,7 +2426,7 @@ synthesis = ["httpx (>=0.27.0)", "openai (>=1.30.0)", "pillow (>=10.0.0)"]
 synthesis-mflux = ["httpx (>=0.27.0)", "mflux (>=0.9.0)", "openai (>=1.30.0)", "pillow (>=10.0.0)"]
 viz = ["pyvis (>=0.3.2)"]
 viz3d = ["numpy (>=1.24.0)"]
-viz3d-qt = ["PyQt5 (>=5.15.0)", "numpy (>=1.24.0)", "pyvista (>=0.44.0)", "quiltwright (>=0.14.1)"]
+viz3d-qt = ["PyQt5 (>=5.15.0)", "numpy (>=1.24.0)", "pyvista (>=0.44.0)", "quiltwright (>=0.15.0)"]
 viz3d-render = ["numpy (>=1.24.0)", "pyvista (>=0.44.0)"]
 
 [[package]]
@@ -7118,4 +7118,4 @@ viz3d = ["PyQt5", "kgmodule-utils", "markdown", "param", "pyvistaqt", "quiltwrig
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.12,<3.14"
-content-hash = "aa5bbeaaa3eb87afdd62c8de95a6fb94cc4a5dee26c553ff7fb27010f410e649"
+content-hash = "41f9e14867d1281ee18decc00f73f582035c6137ce6c6a7a1f650842b3469430"
