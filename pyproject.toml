@@ -112,8 +112,10 @@ kgdeps = [
     # kg-rag only. src/ imports it in gutenberg_kg.ingest, .audit, .export_swift
     # and .serve.handler, so it is a feature of this package -- which is what an
     # extra is for. pycode-kg is not imported anywhere under src/; it is the
-    # pycodekg CLI and MCP server this repo *runs*, so it lives in the `kg`
-    # Poetry group below and stays out of published metadata.
+    # pycodekg CLI and MCP server this repo *runs*, so it is not declared here
+    # at all -- it is a global tool, resolved from PATH. See FLEET_STANDARDS.md,
+    # "Tools are global" (2026-09-20), which retired the `kg` Poetry group this
+    # comment used to point at.
     #
     # The floor still moves with doc-kg's: kg-rag needs transformers>=5.5.0,
     # which older doc-kg pins (transformers<4.57) contradict.
