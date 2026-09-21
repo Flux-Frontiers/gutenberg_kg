@@ -31,6 +31,11 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Changed
 
+- **Fleet dependency floors raised and relocked** (`kgrag_priv` sweep item 46):
+  `kgmodule-utils` to `>=0.23.0`, `doc-kg` to `>=0.27.0`. The three packages released on 2026-09-20 and put
+  every consumer's lock behind them within hours; this is the routine
+  currency bump that follows.
+
 - **The `kg` Poetry group is gone** (`kgrag_priv` sweep item 50, phase 1).
   It held `pycode-kg`, a tool this repo runs but never imports. Under the fleet's
   "tools are global" rule a tool is installed once with `uv tool` and is
