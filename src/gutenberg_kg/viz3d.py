@@ -1245,11 +1245,29 @@ class ForestMainWindow(QMainWindow):
             self.visualizer.status = f"Cast {n}/{total} — {message}"
             QApplication.processEvents()
 
+        # camera_position is (position, focal point, view up) and carries no
+        # view angle, so the off-screen plotter would keep VTK's default 30
+        # while this window sits at the RENDER_FOV that Frame for Render set.
+        # The subject then lands tan(15)/tan(7) = 2.2x too small -- and Frame
+        # for Render is the documented step before casting, so that was the
+        # normal path. create_forest_visualization does not set the angle, so
+        # the builder carries it across; the helper assigns camera_position
+        # afterwards, which does not disturb it.
+        view_angle = self.vtk_plotter.camera.view_angle
+
+        def build(offscreen) -> None:
+            """Compose the scene off-screen at this window's framing.
+
+            :param offscreen: The off-screen plotter to compose into.
+            """
+            create_forest_visualization(self.visualizer, offscreen)
+            offscreen.camera.view_angle = view_angle
+
         out_dir = Path(self.visualizer.corpus_root).parent / "renders" / "quilts"
         self.cast_btn.setEnabled(False)
         try:
             result = cast_scene_to_looking_glass(
-                lambda offscreen: create_forest_visualization(self.visualizer, offscreen),
+                build,
                 self.vtk_plotter.camera_position,
                 out_dir / f"{Path(self.visualizer.save_path).name}_cast",
                 spec,
