@@ -4,8 +4,13 @@ Exposes image generation and corpus-grounded illustration tools.
 
 Tools
 -----
-generate_image    — Direct text-to-image via local FLUX.2-Klein (no VLM planning).
+generate_image    — Direct text-to-image on a running image server (no VLM planning).
 corpus_imagine    — Query the corpus for context, then generate an image.
+
+Both tools call an image server over HTTP -- the one GUTENKG_IMAGE_ENDPOINT
+names, or the first of ``image_gen.DEFAULT_IMAGE_ENDPOINTS`` that answers
+(``make up`` starts one). They never load a model in-process: mflux is not a
+dependency of this package.
 
 Run
 ---
@@ -14,6 +19,7 @@ Run
 
 from __future__ import annotations
 
+import os
 import tempfile
 from io import BytesIO
 from pathlib import Path
@@ -68,9 +74,9 @@ async def generate_image(
     seed: int | None = None,
     steps: int = 4,
 ) -> Image:
-    """Generate an image directly from a text prompt using local FLUX.2-Klein on MLX.
+    """Generate an image directly from a text prompt on the running image server.
 
-    No VLM planning — fast direct generation (~20s on Apple Silicon).
+    No VLM planning — fast direct generation (~20s for FLUX.2-Klein on Apple Silicon).
 
     Args:
         prompt: Text description of the image to generate.
@@ -84,7 +90,14 @@ async def generate_image(
     from gutenberg_kg import image_gen
 
     logger.info("generate_image", prompt=prompt[:80], size=size, seed=seed)
-    pil = await _run_sync(image_gen.generate, prompt, size=size, seed=seed, steps=steps)
+    pil = await _run_sync(
+        image_gen.generate_via_server,
+        prompt,
+        server_url=_image_endpoint(),
+        size=size,
+        seed=seed,
+        steps=steps,
+    )
 
     with tempfile.NamedTemporaryFile(suffix=".png", delete=False) as f:
         out_path = f.name
@@ -105,7 +118,7 @@ async def corpus_imagine(
 
     Retrieves the most relevant chunks from the corpus (diaries, prose, etc.)
     for *query*, optionally filtered to *book*, combines them into an image
-    prompt, and generates an image with FLUX.2-Klein.
+    prompt, and generates an image on the running image server.
 
     Args:
         query: What to search for in the corpus (e.g. "great fire of London").
@@ -134,12 +147,38 @@ async def corpus_imagine(
     if vlm_error:
         logger.warning("vlm_rewrite_failed", error=vlm_error)
 
-    pil = await _run_sync(image_gen.generate, prompt, size=size, seed=seed, steps=steps)
+    pil = await _run_sync(
+        image_gen.generate_via_server,
+        prompt,
+        server_url=_image_endpoint(),
+        size=size,
+        seed=seed,
+        steps=steps,
+    )
 
     with tempfile.NamedTemporaryFile(suffix=".png", delete=False) as f:
         out_path = f.name
     effective_path, fmt = _compress_for_mcp(pil, out_path)
     return Image(path=effective_path, format=fmt)
+
+
+def _image_endpoint() -> str:
+    """Resolve the image server to call, as ``gutenkg imagine`` does.
+
+    :return: GUTENKG_IMAGE_ENDPOINT if set, else the first default endpoint
+        that answers.
+    :raises RuntimeError: When no image server is configured or running.
+    """
+    from gutenberg_kg import image_gen
+
+    endpoint = os.environ.get("GUTENKG_IMAGE_ENDPOINT") or image_gen.discover_image_endpoint()
+    if not endpoint:
+        probed = ", ".join(image_gen.DEFAULT_IMAGE_ENDPOINTS)
+        raise RuntimeError(
+            "No image server found. Start one with `make up`, or set "
+            f"GUTENKG_IMAGE_ENDPOINT to a running one. Probed: {probed}"
+        )
+    return endpoint
 
 
 async def _run_sync(fn, *args, **kwargs):

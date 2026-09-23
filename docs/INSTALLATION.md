@@ -314,7 +314,7 @@ The local `gutenkg imagine` command (outside Docker) reads its own `GUTENKG_*` v
 |---|---|---|
 | `GUTENKG_VLM_ENDPOINT` | `http://localhost:8080/v1` | oMLX endpoint for the VLM prose→scene rewrite. |
 | `GUTENKG_VLM_MODEL` | `Qwen3-4B-Instruct-2507-MLX-8bit` | VLM model ID. |
-| `GUTENKG_IMAGE_ENDPOINT` | *(empty → in-process)* | If set, proxy generation to a running image server; else generate locally. |
+| `GUTENKG_IMAGE_ENDPOINT` | *(empty: probe ports 8090, 8091)* | Image server to call. The CLI and the MCP tools never generate in-process; with no server answering they stop with "No image server found". |
 | `GUTENKG_IMAGE_MODEL` | `mlx-community/flux2-klein-4b-4bit` | Local FLUX model. |
 | `GUTENKG_IMAGE_STEPS` | `4` | Local FLUX inference steps. |
 

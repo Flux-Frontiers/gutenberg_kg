@@ -195,7 +195,7 @@ Browse the complete, title-level [corpus catalog](docs/CORPUS.md); prospective a
 On Apple Silicon, `gutenkg imagine` can retrieve passages, turn them into a visual brief, and render an illustration locally. This is an optional creative layer—not a substitute for the source text.
 
 ```bash
-gutenkg imagine --query "the Great Fire of London" --book pepys --ratio 16:9
+gutenkg imagine --query "the Great Fire of London" --book pepys --size 1536x864
 gutenkg imagine --query "plague in London" --book pepys --corpus-only
 ```
 

@@ -418,11 +418,7 @@ pip install -e ".[mcp]"
 {
   "mcpServers": {
     "gutenkg": {
-      "command": "/path/to/repo/.venv/bin/gutenkg-mcp",
-      "env": {
-        "GUTENKG_IMAGE_MODEL": "mlx-community/flux2-klein-4b-4bit",
-        "GUTENKG_IMAGE_STEPS": "4"
-      }
+      "command": "/path/to/repo/.venv/bin/gutenkg-mcp"
     }
   }
 }
@@ -431,6 +427,11 @@ pip install -e ".[mcp]"
 Replace `/path/to/repo` with the absolute path to your `gutenberg_kg` checkout.
 After saving, reload the MCP server in your editor. The tools appear as
 `gutenkg / generate_image` and `gutenkg / corpus_imagine`.
+
+Both tools call a running image server; they never load a model themselves.
+Start one with `make up`. The tools use the server `GUTENKG_IMAGE_ENDPOINT`
+names, or the first of `http://localhost:8090` and `http://localhost:8091`
+that answers. To pin one, add it under `"env"`.
 
 ### Basic usage
 
@@ -441,8 +442,8 @@ gutenkg imagine "the Great Fire of London at night, oil painting"
 # Corpus-grounded — retrieve Pepys diary passages, rewrite via VLM, generate
 gutenkg imagine --query "great fire" --book pepys
 
-# Choose aspect ratio and quality
-gutenkg imagine --query "great fire" --book pepys --ratio 16:9 --steps 8
+# Choose output size and quality
+gutenkg imagine --query "great fire" --book pepys --size 1536x864 --steps 8
 
 # Save to a specific path instead of a temp file
 gutenkg imagine --query "plague in London" --book pepys -o plague.png
@@ -463,7 +464,8 @@ gutenkg imagine --query "great fire" --book pepys --corpus-only
 |------|---------|-------------|
 | `--query`/`-q` | — | Semantic query into the corpus (DiaryKG or prose DocKG) |
 | `--book`/`-b` | — | Restrict corpus search to books matching this substring (e.g. `pepys`, `evelyn`) |
-| `--ratio`/`-r` | `3:2` | Aspect ratio: `1:1`, `3:2`, `2:3`, `16:9`, `9:16`, `4:3`, `3:4` |
+| `--size`/`-r` | `1536x1024` | Output size `WIDTHxHEIGHT`, for example `768x512` or `1536x864` |
+| `--endpoint` | `GUTENKG_IMAGE_ENDPOINT` | Image server base URL; probes ports 8090 and 8091 when unset |
 | `--steps` | `4` | Inference steps — 4 (fast, ~15 s) · 8 (balanced, ~22 s) · 25 (quality) |
 | `--seed`/`-s` | random | Integer seed for reproducible outputs |
 | `--output`/`-o` | temp file | Save PNG to this path |
@@ -477,10 +479,10 @@ The same pipeline is exposed as two MCP tools via the `gutenkg-mcp` server,
 configured in `.mcp.json`:
 
 ```
-generate_image(prompt, aspect_ratio, seed, steps)
+generate_image(prompt, size, seed, steps)
     → Direct text-to-image, no corpus lookup.
 
-corpus_imagine(query, book, extra_prompt, aspect_ratio, seed, steps)
+corpus_imagine(query, book, extra_prompt, size, seed, steps)
     → Retrieve corpus passages → VLM rewrite → FLUX generation.
       extra_prompt appends style/scene notes to the VLM input.
 ```
@@ -492,7 +494,8 @@ Pepys' description"* and the `corpus_imagine` tool handles the full pipeline.
 
 | Variable | Default | Description |
 |----------|---------|-------------|
-| `GUTENKG_IMAGE_MODEL` | `mlx-community/flux2-klein-4b-4bit` | HuggingFace model repo for FLUX |
+| `GUTENKG_IMAGE_ENDPOINT` | unset | Image server base URL for `gutenkg imagine` and the MCP tools; unset probes ports 8090 and 8091 |
+| `GUTENKG_IMAGE_MODEL` | `mlx-community/flux2-klein-4b-4bit` | HuggingFace model repo the FLUX image server loads |
 | `GUTENKG_IMAGE_STEPS` | `4` | Default inference steps |
 
 ---
