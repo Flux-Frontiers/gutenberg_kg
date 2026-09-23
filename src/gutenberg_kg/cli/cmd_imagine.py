@@ -217,12 +217,12 @@ def _query_corpus(query: str, book: str | None) -> str:
             if not diarykg.exists():
                 continue
             try:
-                kg = DocKG(
+                with DocKG(
                     corpus_root=str(diarykg / "corpus"),
                     db_path=str(diarykg / "graph.sqlite"),
                     lancedb_dir=str(diarykg / "lancedb"),
-                )
-                result = kg.query(query, k=8)
+                ) as kg:
+                    result = kg.query(query, k=8)
                 for node in result.nodes:
                     text = node.get("text", "")
                     if text and len(text) > 40:
@@ -237,14 +237,14 @@ def _query_corpus(query: str, book: str | None) -> str:
         bundle = repo_root / "bundles" / "gutenberg-all" / ".dockg"
         if bundle.exists():
             try:
-                kg = DocKG(
+                with DocKG(
                     corpus_root=(
                         str(bundle / "corpus") if (bundle / "corpus").exists() else str(bundle)
                     ),
                     db_path=str(bundle / "graph.sqlite"),
                     lancedb_dir=str(bundle / "lancedb"),
-                )
-                result = kg.query(query, k=8)
+                ) as kg:
+                    result = kg.query(query, k=8)
                 for node in result.nodes:
                     text = node.get("text", "")
                     fp = node.get("file_path", "")

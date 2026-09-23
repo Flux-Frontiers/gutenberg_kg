@@ -8,6 +8,29 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Fixed
+
+- **The MCP image tools called a model this package does not install.**
+  `generate_image` and `corpus_imagine` both ran `image_gen.generate()`,
+  which loads FLUX.2-Klein through mflux in-process, and mflux is
+  deliberately not a dependency (its `transformers` pin conflicts with
+  `pycode-kg`). Every call failed with `ModuleNotFoundError`. Both now call
+  the running image server over HTTP, resolved as `gutenkg imagine` resolves
+  it: `GUTENKG_IMAGE_ENDPOINT`, else the first of ports 8090 and 8091 that
+  answers. With neither, the tool fails with "No image server found" and
+  names `make up`.
+- **`gutenkg imagine --query` no longer leaks a graph connection per diary.**
+  The corpus lookup opened a `DocKG` for each diary searched and never closed
+  it; it now opens each in a `with` block. In the long-running MCP server
+  this was one leaked SQLite connection per diary per call.
+- **Image docs match the CLI and the tools again.** `-r` is `--size
+  WIDTHxHEIGHT`; the `--ratio 3:2` form the README and cheatsheet showed no
+  longer exists and fails. The cheatsheet's MCP tool signatures take `size`,
+  not `aspect_ratio`, its MCP config no longer sets model variables that only
+  mattered for in-process generation, and `--endpoint` and
+  `GUTENKG_IMAGE_ENDPOINT` are documented. `INSTALLATION.md` no longer says an
+  empty endpoint means in-process generation.
+
 ## [1.22.2] - 2026-09-21
 
 ### Fixed
