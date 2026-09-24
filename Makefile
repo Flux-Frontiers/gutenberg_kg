@@ -77,6 +77,8 @@
 #   make up    RUNTIME=apple    — everything: worker + chat UI + image server
 #   make down  RUNTIME=apple    — stop and delete both containers + image servers
 #   make down-all               — kill containers under both runtimes, stop both runtimes
+#   make push-image             — build linux/amd64 + linux/arm64 and push to $(REGISTRY_IMAGE)
+#   make pull-image             — pull the published image instead of building one
 # run/chat/up refuse to start while the other runtime is up (see runtime-guard).
 #   make logs  RUNTIME=apple    — follow worker logs (`container logs -f`)
 #   make clean RUNTIME=apple    — remove the image (`container image rm`)
@@ -119,6 +121,16 @@ $(if $(SPEC),\
   IMAGE_TAG=$$($(GUTENKG) bundle resolve --print-image-tag $(SPEC)); ,\
   BUNDLE=$(BUNDLE); IMAGE_TAG=$(IMAGE_TAG); )
 endef
+
+# Registry image for `make push-image` / `make pull-image` (sweep item 63).
+# One multi-arch image serves both runtimes and both CPU families: nothing in
+# it is runtime-specific (endpoints, the vmnet gateway and keys all arrive at
+# container start), so an image built here runs under Docker or Apple
+# `container`, on Apple Silicon or x86. Apple's `container build` runs the amd64
+# half under Rosetta; Docker uses a docker-container buildx builder.
+REGISTRY_IMAGE ?= docker.io/egsuchanek/$(IMAGE)
+PLATFORMS      ?= linux/amd64,linux/arm64
+BUILDX_BUILDER ?= gutenkg-multiarch
 
 # Extra flags spliced into both build recipes below. Empty for a normal
 # `make build` (layer cache used); `make rebuild`/`rebuild-all` set this to
@@ -246,7 +258,7 @@ endif
 # `gutenkg` on PATH. Override with e.g. `make GUTENKG=gutenkg build-corpus`.
 GUTENKG     ?= poetry run gutenkg
 
-.PHONY: init spacy-model chunk-diaries build-diaries build-corpus export-swift export-web-catalog check-pins setup build build-all rebuild rebuild-all prune kill down-all runtime-guard run image-server sdxl-server sdxl-fetch chat up stop down query logs clean docs ios-devices ios-generate ios-check ios-install-corpus ios-verify-corpus ios-launch ios-deploy ios-stage-corpus ios-unstage-corpus ios-archive ios-upload mac-generate mac-check mac-dev mac-dev-run mac-build mac-verify mac-notarize mac-dmg mac-notarize-dmg mac-release
+.PHONY: init spacy-model chunk-diaries build-diaries build-corpus export-swift export-web-catalog check-pins setup build build-all rebuild rebuild-all prune kill down-all runtime-guard push-image pull-image run image-server sdxl-server sdxl-fetch chat up stop down query logs clean docs ios-devices ios-generate ios-check ios-install-corpus ios-verify-corpus ios-launch ios-deploy ios-stage-corpus ios-unstage-corpus ios-archive ios-upload mac-generate mac-check mac-dev mac-dev-run mac-build mac-verify mac-notarize mac-dmg mac-notarize-dmg mac-release
 
 init:
 	$(GUTENKG) init
@@ -480,6 +492,24 @@ build: check-pins setup
 	container build $(BUILD_FLAGS) $(HF_SECRET) -f docker/Dockerfile \
 	  --build-arg BUNDLE=$$BUNDLE -t $(IMAGE):$$IMAGE_TAG .
 
+# Build every platform in $(PLATFORMS) into one image index and push it. Needs
+# `container registry login docker.io` once.
+push-image: check-pins setup
+	@$(resolve_spec) \
+	container build $(BUILD_FLAGS) $(HF_SECRET) \
+	  $(foreach p,$(subst $(COMMA), ,$(PLATFORMS)),--platform $(p)) \
+	  -f docker/Dockerfile --build-arg BUNDLE=$$BUNDLE \
+	  -t $(REGISTRY_IMAGE):$$IMAGE_TAG . && \
+	container image push $(REGISTRY_IMAGE):$$IMAGE_TAG
+
+# Fetch a published image and tag it as the local one `make run` starts, so a
+# new machine can skip build-corpus and build.
+pull-image: setup
+	@$(resolve_spec) \
+	container image pull $(REGISTRY_IMAGE):$$IMAGE_TAG && \
+	container image tag $(REGISTRY_IMAGE):$$IMAGE_TAG $(IMAGE):$$IMAGE_TAG && \
+	echo "Pulled $(REGISTRY_IMAGE):$$IMAGE_TAG as $(IMAGE):$$IMAGE_TAG"
+
 # Idempotent like `compose up`: a running worker is left alone (it takes a
 # while to load the index), a stopped or stale one is replaced.
 run: runtime-guard setup
@@ -570,6 +600,23 @@ build: check-pins
 	@$(resolve_spec) \
 	docker build $(BUILD_FLAGS) $(HF_SECRET) -f docker/Dockerfile \
 	  --build-arg BUNDLE=$$BUNDLE -t $(IMAGE):$$IMAGE_TAG .
+
+# Multi-platform builds need a docker-container builder; the default `docker`
+# driver cannot push an image index. Created once, reused after. Needs
+# `docker login` once.
+push-image: check-pins
+	@docker buildx inspect $(BUILDX_BUILDER) >/dev/null 2>&1 || \
+	  docker buildx create --name $(BUILDX_BUILDER) --driver docker-container >/dev/null
+	@$(resolve_spec) \
+	docker buildx build --builder $(BUILDX_BUILDER) --platform $(PLATFORMS) \
+	  $(BUILD_FLAGS) $(HF_SECRET) -f docker/Dockerfile --build-arg BUNDLE=$$BUNDLE \
+	  -t $(REGISTRY_IMAGE):$$IMAGE_TAG --push .
+
+pull-image:
+	@$(resolve_spec) \
+	docker pull $(REGISTRY_IMAGE):$$IMAGE_TAG && \
+	docker tag $(REGISTRY_IMAGE):$$IMAGE_TAG $(IMAGE):$$IMAGE_TAG && \
+	echo "Pulled $(REGISTRY_IMAGE):$$IMAGE_TAG as $(IMAGE):$$IMAGE_TAG"
 
 run: runtime-guard
 	$(COMPOSE) up -d worker

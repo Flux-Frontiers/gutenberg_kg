@@ -21,6 +21,8 @@ make up    RUNTIME=apple         # everything incl. FLUX image server
 make logs  RUNTIME=apple
 make down  RUNTIME=apple
 make down-all                    # stop both runtimes entirely
+make push-image RUNTIME=apple    # amd64 (Rosetta) + arm64 image index, pushed
+make pull-image RUNTIME=apple    # use a published image instead of building
 ```
 
 Notes:

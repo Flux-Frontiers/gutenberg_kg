@@ -143,6 +143,31 @@ the server fails to start, the worker and chat UI stay up and only the chat UI's
 make query Q="What is justice according to Plato?"
 ```
 
+### Pull a published image instead of building
+
+Steps 1 and 2 build the corpus bundle and the image locally, which takes a
+while. A published image skips both:
+
+```bash
+make pull-image        # pulls docker.io/egsuchanek/corpus-gutenberg:latest, tags it corpus-gutenberg:latest
+make up
+```
+
+The image is multi-arch (`linux/amd64` and `linux/arm64`), so it runs on Apple
+Silicon and on x86 Linux or Windows, under Docker or Apple `container`
+(`RUNTIME=apple`). Nothing in it depends on the runtime or holds a key; endpoints
+and keys come from `docker/.env` when the container starts. Use another
+registry with `REGISTRY_IMAGE=...`.
+
+To publish one, log in once (`docker login`, or `container registry login
+docker.io` under `RUNTIME=apple`) and run `make push-image`. It builds every
+platform in `PLATFORMS` (default `linux/amd64,linux/arm64`) and pushes the image
+index. Apple's `container build` builds the amd64 half under Rosetta; Docker
+uses a `docker-container` buildx builder named `gutenkg-multiarch`, created on
+first use. The image carries the whole corpus bundle, several GB per
+platform; the bundle layer is the same bytes on both, so the registry stores
+it once.
+
 ### 3. Lighter setups and lifecycle
 
 ```bash
@@ -172,6 +197,8 @@ make logs        # follow worker logs
 | `make kill` | force-remove the worker and chat containers under both Docker and Apple `container`, plus the image servers |
 | `make down-all` | `make kill`, then stop Apple's container services and quit Docker Desktop |
 | `make clean` | remove the Docker image |
+| `make push-image` | build `linux/amd64` + `linux/arm64` and push to `REGISTRY_IMAGE` |
+| `make pull-image` | pull the published image and tag it locally, instead of building |
 
 ---
 
