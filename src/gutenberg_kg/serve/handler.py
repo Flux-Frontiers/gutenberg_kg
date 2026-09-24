@@ -51,6 +51,8 @@ Request schema
                             "list_books" (needs "genre") returns its books
                             "get_chapters" (needs "genre", "book") returns its chapter list
                             "get_chapter" (needs "genre", "book", "section_id") returns chapter text
+                            "image_backends" returns {"default", "backends": [{"key", "label",
+                            "available", "detail"}, ...]} for the image-backend picker
 }
 """
 
@@ -79,6 +81,7 @@ import runpod
 from gutenberg_kg.diary_meta import DIARY_META as _DIARY_META
 from gutenberg_kg.diary_meta import diary_slug as _diary_slug
 from gutenberg_kg.serve.fusion import merge_by_rank as _merge_by_rank
+from gutenberg_kg.serve.image_backends import image_backends
 from gutenberg_kg.synthesis_prompts import system_prompt
 from gutenberg_kg.vector_store import resolve_vector_paths
 
@@ -906,6 +909,8 @@ def handler(job: dict) -> dict:
         return aux_result
 
     op = inp.get("op", "")
+    if op == "image_backends":
+        return image_backends(_image_synth._cfg.backend.value)  # pylint: disable=protected-access
     if op == "stats":
         return _corpus_stats()
     if op == "list_genres":

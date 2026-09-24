@@ -156,6 +156,28 @@ public struct ModelList: Codable, Sendable {
     }
 }
 
+/// One image backend as the worker reports it (`op: "image_backends"`).
+public struct ImageBackendOption: Codable, Sendable, Hashable {
+    /// The `image_backend` value to send with `imagine`, e.g. `"openai"`.
+    public let key: String
+    public let label: String
+    /// Whether the worker can use it right now: its image server answered,
+    /// or it holds an OpenAI key.
+    public let available: Bool
+    public let detail: String?
+}
+
+/// The worker's image backends and its configured default.
+public struct ImageBackendList: Codable, Sendable {
+    public let defaultBackend: String?
+    public let backends: [ImageBackendOption]
+
+    enum CodingKeys: String, CodingKey {
+        case backends
+        case defaultBackend = "default"
+    }
+}
+
 /// Result of `op: "imagine"` — a base64 PNG plus provenance labels.
 public struct GeneratedImage: Codable, Sendable {
     public let imageB64: String

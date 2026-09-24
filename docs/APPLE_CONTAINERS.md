@@ -25,6 +25,11 @@ make down-all                    # stop both runtimes entirely
 
 Notes:
 
+- **Make Apple the default** with `export RUNTIME=apple` in your shell
+  profile. The Makefile's `RUNTIME ?= docker` yields to the environment, so
+  every target above then works without the flag, and `RUNTIME=docker` on a
+  command still overrides it. Images are the same OCI image either way, so
+  one built by `container build` can be pushed and run under Docker.
 - **Run one runtime at a time.** With Docker Desktop and Apple's container
   services both running, other machines can ping this Mac but cannot open
   TCP connections to it, so phones and other hosts cannot reach the worker or

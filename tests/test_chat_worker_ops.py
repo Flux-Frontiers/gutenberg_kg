@@ -273,3 +273,46 @@ class TestFetchModels:
         with patch.object(Chat, "WorkerClient", MagicMock(return_value=client)):
             Chat._fetch_models("http://w:8000", "s3cret", "ollama")
         client.list_models.assert_called_once_with(backend="ollama")
+
+
+class TestFetchImageBackends:
+    def test_only_available_backends_are_offered(self):
+        post = _post(
+            {
+                "output": {
+                    "default": "mflux-serve",
+                    "backends": [
+                        {"key": "mflux-serve", "label": "Local", "available": False},
+                        {"key": "openai", "label": "OpenAI", "available": True},
+                    ],
+                }
+            }
+        )
+        with patch.object(httpx, "post", post):
+            backends, default = Chat._fetch_image_backends("http://w:8000", "")
+        assert [b["key"] for b in backends] == ["openai"]
+        assert default == "mflux-serve"
+        assert post.sent["input"]["op"] == "image_backends"
+
+    def test_worker_without_the_op_offers_nothing_beyond_auto(self):
+        # An older worker answers an unknown op with the search path's error.
+        post = _post({"output": {"error": "query is required"}})
+        with patch.object(httpx, "post", post):
+            assert Chat._fetch_image_backends("http://w:8000", "") == ([], "")
+
+
+class TestResolveImageBackend:
+    @pytest.mark.parametrize(
+        ("choice", "text_backend", "local", "expected"),
+        [
+            ("auto", "openai", True, "openai"),  # cloud provider, cloud images
+            ("auto", "omlx", True, "mflux-serve"),  # local provider, local images
+            ("auto", "ollama", True, "mflux-serve"),
+            ("auto", "omlx", False, ""),  # no local server: worker default
+            ("auto", "", True, ""),  # synthesis off: worker default
+            ("mflux-serve", "openai", True, "mflux-serve"),  # explicit choice wins
+            ("openai", "omlx", True, "openai"),
+        ],
+    )
+    def test_choice_and_provider(self, choice, text_backend, local, expected):
+        assert Chat._resolve_image_backend(choice, text_backend, local) == expected

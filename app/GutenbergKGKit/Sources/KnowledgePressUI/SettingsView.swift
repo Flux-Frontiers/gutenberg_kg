@@ -261,10 +261,22 @@ public struct SettingsView: View {
                     Text(resolution.label).tag(resolution)
                 }
             }
-            Text("Smaller renders faster. Illustrations always come from the worker.")
-                .font(.caption2)
-                .foregroundStyle(.secondary)
+            Picker("Backend", selection: $model.imageBackendChoice) {
+                Text("Auto").tag(AppModel.imageAuto)
+                ForEach(model.imageBackends, id: \.key) { backend in
+                    Text(backend.label).tag(backend.key)
+                }
+            }
+            Text(
+                "Smaller renders faster. Illustrations always come from the worker. "
+                    + "Auto follows the provider: OpenAI images for OpenAI, the local image "
+                    + "server for oMLX or Ollama. Only backends the worker can use right now "
+                    + "are listed."
+            )
+            .font(.caption2)
+            .foregroundStyle(.secondary)
         }
+        .task { await model.refreshImageBackends() }
     }
 
 }

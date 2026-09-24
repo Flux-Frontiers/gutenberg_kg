@@ -92,6 +92,12 @@ public actor WorkerClient {
         return try await post(input)
     }
 
+    /// The image backends this worker can use, for the Settings picker.
+    /// An older worker without the op answers with an error, which throws.
+    public func listImageBackends() async throws -> ImageBackendList {
+        try await post(["op": "image_backends"])
+    }
+
     /// Rewrite corpus prose into an image-generation prompt.
     /// Falls back to the original text if the worker reports a rewrite error,
     /// matching the Python client's behavior.
