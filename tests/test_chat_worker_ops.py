@@ -303,14 +303,16 @@ class TestFetchImageBackends:
 
 class TestResolveImageBackend:
     @pytest.mark.parametrize(
-        ("choice", "text_backend", "expected"),
+        ("choice", "text_backend", "local", "expected"),
         [
-            ("auto", "openai", "openai"),  # the old rule, kept as Auto
-            ("auto", "omlx", ""),  # worker default
-            ("auto", "", ""),  # synthesis off
-            ("mflux-serve", "openai", "mflux-serve"),  # explicit choice wins
-            ("openai", "omlx", "openai"),
+            ("auto", "openai", True, "openai"),  # cloud provider, cloud images
+            ("auto", "omlx", True, "mflux-serve"),  # local provider, local images
+            ("auto", "ollama", True, "mflux-serve"),
+            ("auto", "omlx", False, ""),  # no local server: worker default
+            ("auto", "", True, ""),  # synthesis off: worker default
+            ("mflux-serve", "openai", True, "mflux-serve"),  # explicit choice wins
+            ("openai", "omlx", True, "openai"),
         ],
     )
-    def test_choice_and_provider(self, choice, text_backend, expected):
-        assert Chat._resolve_image_backend(choice, text_backend) == expected
+    def test_choice_and_provider(self, choice, text_backend, local, expected):
+        assert Chat._resolve_image_backend(choice, text_backend, local) == expected

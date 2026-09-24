@@ -269,8 +269,9 @@ public struct SettingsView: View {
             }
             Text(
                 "Smaller renders faster. Illustrations always come from the worker. "
-                    + "Auto uses OpenAI when the provider is OpenAI, otherwise the worker's "
-                    + "default; only backends the worker can use right now are listed."
+                    + "Auto follows the provider: OpenAI images for OpenAI, the local image "
+                    + "server for oMLX or Ollama. Only backends the worker can use right now "
+                    + "are listed."
             )
             .font(.caption2)
             .foregroundStyle(.secondary)

@@ -77,22 +77,34 @@ _RESOLUTION_SIZES: dict[str, str] = {
     "Full": "1536x1024",
 }
 
-# The image-backend picker's first entry. It keeps the behaviour from before the
-# picker existed: OpenAI images when the text provider is OpenAI, otherwise the
-# worker's own default. The app's picker uses the same value.
+# The image-backend picker's first entry. Auto follows the synthesis provider:
+# a cloud provider gets cloud images, a local one local images. The app's
+# picker uses the same value.
 _IMAGE_AUTO = "auto"
+_IMAGE_LOCAL = "mflux-serve"
 
 
-def _resolve_image_backend(choice: str, text_backend: str) -> str:
+def _resolve_image_backend(choice: str, text_backend: str, local_available: bool) -> str:
     """Turn the picker's choice into the ``image_backend`` sent with ``imagine``.
+
+    Auto: OpenAI images for the OpenAI provider; the local image server for a
+    local provider (oMLX, Ollama) when the worker reports it available;
+    otherwise the worker's default. The worker's default alone is not enough
+    here, because a worker set to ``openai`` would give a local provider cloud
+    images.
 
     :param choice: ``"auto"`` or a backend key reported by the worker.
     :param text_backend: The synthesis provider in use (``""`` when synthesis is off).
+    :param local_available: Whether the worker reported its local image server up.
     :returns: A backend key, or ``""`` to let the worker use its default.
     """
     if choice and choice != _IMAGE_AUTO:
         return choice
-    return "openai" if text_backend == "openai" else ""
+    if text_backend == "openai":
+        return "openai"
+    if text_backend and local_available:
+        return _IMAGE_LOCAL
+    return ""
 
 
 # ---------------------------------------------------------------------------
@@ -683,7 +695,8 @@ def _render_sidebar() -> dict:
         format_func=lambda key: image_labels[key],
         key="image_backend_choice",
         help=(
-            "Auto: OpenAI when the provider is OpenAI, otherwise the worker's default"
+            "Auto follows the provider: OpenAI images for OpenAI, the local image "
+            "server for oMLX or Ollama, otherwise the worker's default"
             + (f" ({image_default})" if image_default else "")
             + ". Only backends the worker can use right now are listed."
         ),
@@ -752,6 +765,7 @@ def _render_sidebar() -> dict:
         "model": model,
         "resolution": resolution,
         "image_backend": image_choice,
+        "image_local_available": any(b["key"] == _IMAGE_LOCAL for b in image_backends),
         "render_clicked": render_clicked,
     }
 
@@ -917,7 +931,9 @@ def main() -> None:
                         f"🎨 Prompt: {prompt[:160]}{'…' if len(prompt) > 160 else ''}"
                         f" · rewrite {vlm_ms:,} ms"
                     )
-            image_backend = _resolve_image_backend(cfg["image_backend"], cfg["backend"])
+            image_backend = _resolve_image_backend(
+                cfg["image_backend"], cfg["backend"], cfg["image_local_available"]
+            )
             with st.spinner("Generating image…"):
                 try:
                     t0_img = time.perf_counter()

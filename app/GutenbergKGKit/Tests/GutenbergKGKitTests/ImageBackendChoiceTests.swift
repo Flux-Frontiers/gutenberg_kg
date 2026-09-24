@@ -28,17 +28,27 @@ struct ImageBackendChoiceTests {
         try body(defaults)
     }
 
-    @Test("Auto follows the text provider, as before the picker")
+    private func resolve(_ choice: String, _ provider: String, local: Bool = true) -> String {
+        AppModel.resolveImageBackend(choice: choice, textBackend: provider, localAvailable: local)
+    }
+
+    @Test("Auto follows the provider: cloud with cloud, local with local")
     func autoFollowsProvider() {
-        #expect(AppModel.resolveImageBackend(choice: AppModel.imageAuto, textBackend: "openai") == "openai")
-        #expect(AppModel.resolveImageBackend(choice: AppModel.imageAuto, textBackend: "omlx") == "")
-        #expect(AppModel.resolveImageBackend(choice: "", textBackend: "ollama") == "")
+        #expect(resolve(AppModel.imageAuto, "openai") == "openai")
+        #expect(resolve(AppModel.imageAuto, "omlx") == AppModel.imageLocal)
+        #expect(resolve("", "ollama") == AppModel.imageLocal)
+    }
+
+    @Test("Auto without a local server leaves it to the worker")
+    func autoWithoutLocalServer() {
+        #expect(resolve(AppModel.imageAuto, "omlx", local: false) == "")
+        #expect(resolve(AppModel.imageAuto, "", local: true) == "")
     }
 
     @Test("an explicit choice wins over the provider")
     func explicitChoiceWins() {
-        #expect(AppModel.resolveImageBackend(choice: "mflux-serve", textBackend: "openai") == "mflux-serve")
-        #expect(AppModel.resolveImageBackend(choice: "openai", textBackend: "omlx") == "openai")
+        #expect(resolve("mflux-serve", "openai") == "mflux-serve")
+        #expect(resolve("openai", "omlx") == "openai")
     }
 
     @Test("the default is Auto, and a choice survives a relaunch")

@@ -132,8 +132,9 @@ The sidebar **🖼️ Image** section acts on the most recent result:
 - **🎨 Render response** — a two-stage pipeline: an LLM rewrites the passage into a
   visual scene description, then an image backend generates the illustration. The
   **Resolution** selector (Preview / Standard / Full) trades quality for speed.
-  **Image backend** picks what draws it: **Auto** uses OpenAI when the
-  synthesis provider is OpenAI and the worker's default otherwise; **Local**
+  **Image backend** picks what draws it: **Auto** follows the synthesis
+  provider, OpenAI images for OpenAI and the local image server for oMLX or
+  Ollama (the worker's default when there is no local server or no provider); **Local**
   and **OpenAI** appear only when the worker can use them right now (its image
   server answers, or it holds an OpenAI key). OpenAI bills per image. The iOS
   and macOS apps have the same picker under Settings > Illustrations.

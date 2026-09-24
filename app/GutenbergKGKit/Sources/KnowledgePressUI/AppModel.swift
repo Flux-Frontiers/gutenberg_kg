@@ -294,9 +294,10 @@ public final class AppModel {
     /// Which image backend renders an illustration: `AppModel.imageAuto`, or a
     /// backend key the worker reported as available.
     ///
-    /// Persisted like the resolution. Auto is chat.py's `_IMAGE_AUTO` and keeps
-    /// the rule from before the picker existed: OpenAI images when the text
-    /// provider is OpenAI, otherwise the worker's default.
+    /// Persisted like the resolution. Auto is chat.py's `_IMAGE_AUTO` and
+    /// follows the provider: OpenAI images for OpenAI, the local image server
+    /// for oMLX or Ollama when the worker has one, otherwise the worker's
+    /// default.
     var imageBackendChoice: String {
         get { storedImageBackendChoice }
         set {
@@ -315,11 +316,19 @@ public final class AppModel {
     /// worker is offline or too old to report them.
     var imageBackends: [ImageBackendOption] = []
 
+    static let imageLocal = "mflux-serve"
+
     /// The `image_backend` to send with `imagine` (chat.py's
-    /// `_resolve_image_backend`). `""` lets the worker use its default.
-    static func resolveImageBackend(choice: String, textBackend: String) -> String {
+    /// `_resolve_image_backend`). `""` lets the worker use its default, which
+    /// Auto avoids for a local provider: a worker set to OpenAI would
+    /// otherwise give oMLX answers cloud images.
+    static func resolveImageBackend(
+        choice: String, textBackend: String, localAvailable: Bool
+    ) -> String {
         if !choice.isEmpty, choice != imageAuto { return choice }
-        return textBackend == "openai" ? "openai" : ""
+        if textBackend == "openai" { return "openai" }
+        if !textBackend.isEmpty, localAvailable { return imageLocal }
+        return ""
     }
 
     /// Fetch the available image backends. A stored choice the worker no
@@ -908,7 +917,8 @@ public final class AppModel {
             do {
                 let prompt = try await client.rewrite(rawPrompt, backend: backend)
                 let imageBackend = Self.resolveImageBackend(
-                    choice: imageBackendChoice, textBackend: backend)
+                    choice: imageBackendChoice, textBackend: backend,
+                    localAvailable: imageBackends.contains { $0.key == Self.imageLocal })
                 let image = try await client.imagine(
                     prompt: prompt, imageBackend: imageBackend, size: imageResolution.size)
                 guard let i = turns.firstIndex(where: { $0.id == id }) else { return }
