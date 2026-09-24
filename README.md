@@ -123,7 +123,7 @@ make build RUNTIME=apple
 make up RUNTIME=apple
 ```
 
-Setup, caveats, and how the two runtimes differ are covered in [`docs/APPLE_CONTAINERS.md`](docs/APPLE_CONTAINERS.md).
+Run one runtime at a time. With Docker Desktop and Apple's container services both running, other devices cannot connect to the worker; `make up` refuses to start in that state, and `make down-all` stops both. Setup, caveats, and how the two runtimes differ are covered in [`docs/APPLE_CONTAINERS.md`](docs/APPLE_CONTAINERS.md).
 
 ## Manage the library from the terminal
 

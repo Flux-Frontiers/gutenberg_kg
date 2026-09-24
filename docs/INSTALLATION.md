@@ -184,8 +184,12 @@ Synthesis and image generation reach a host LLM. From inside Docker, the host is
 Start oMLX on **port 8080** (8000 is taken by the worker):
 
 ```bash
-omlx serve mlx-community/Qwen3-30B-A3B-Instruct-2507-MLX-4bit --port 8080
+omlx serve --port 8080                  # serves the models in ~/.omlx/models
 ```
+
+Or set the port in the oMLX app. Under `RUNTIME=apple` the containers reach
+the host over vmnet, so oMLX must listen on `0.0.0.0` (`--host 0.0.0.0`), not
+`127.0.0.1`.
 
 Then copy and edit the environment file:
 
@@ -200,6 +204,10 @@ VLLM_ENDPOINT_URL=http://host.docker.internal:8080/v1
 VLLM_MODEL=Qwen3-4B-Instruct-2507-MLX-8bit
 VLLM_API_KEY=sk-your-omlx-api-key     # from ~/.omlx/settings.json → auth.api_key
 ```
+
+If oMLX has API key verification on and this key is empty or wrong, oMLX
+answers 401 and synthesis fails. Restart the worker (`make down && make up`)
+after changing `docker/.env`.
 
 ### Ollama (cross-platform)
 

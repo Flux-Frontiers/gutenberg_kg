@@ -68,7 +68,7 @@
 # RUNTIME=apple drives Apple's native `container` CLI instead of Docker
 # (Apple Silicon + macOS 26; no Docker Desktop). First-time / per-boot setup
 # is automatic — build/run/chat depend on `setup`, which installs the CLI if
-# missing (Homebrew cask) and runs `container system start`.
+# missing (Homebrew) and runs `container system start`.
 # Same targets, one extra variable:
 #   make setup RUNTIME=apple    — install `container` CLI + start its services
 #   make build RUNTIME=apple    — build the image with `container build`

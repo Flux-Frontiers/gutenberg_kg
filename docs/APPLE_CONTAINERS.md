@@ -40,7 +40,7 @@ Notes:
   a reservation, so this doesn't pin RAM, just caps it. If a larger corpus
   ever pushes the worker past this cap (OOM, or `container stats` showing it
   pinned at the ceiling under load), re-measure with:
-  1. `make up RUNTIME=apple` (or `run` + `chat-container`) with the current
+  1. `make up RUNTIME=apple` (or `run` + `chat`) with the current
      defaults.
   2. In one shell, poll `container stats --no-stream <worker-name> <chat-name>`
      every ~1s through cold start (model/index load is usually the peak) and
