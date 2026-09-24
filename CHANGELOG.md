@@ -18,6 +18,13 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   (`ALLOW_BOTH_RUNTIMES=1` overrides). `make down-all` runs `make kill`, then
   stops Apple's container services and quits Docker Desktop.
 
+### Changed
+
+- **Fleet dependency floors raised and relocked** (`kgrag_priv` sweep item 46):
+  `kgmodule-utils` to `>=0.24.0` and `kg-rag` to `>=0.17.0`, in
+  `pyproject.toml`, the Dockerfile ARGs and `runpod/requirements.txt`. The
+  lock also moves `quiltwright` to 0.15.1; its floor stays `>=0.15.0`.
+
 ### Fixed
 
 - **The MCP image tools called a model this package does not install.**
