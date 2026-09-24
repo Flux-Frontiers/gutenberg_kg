@@ -43,6 +43,13 @@ services:
       # Compatibility alias for components still reading IMAGE_ENDPOINT.
       IMAGE_ENDPOINT: ${GUTENKG_IMAGE_ENDPOINT:-http://host.docker.internal:8090}
       IMAGE_STEPS: ${IMAGE_STEPS:-4}
+      # The worker's default image backend (mflux-serve | mflux-local | openai);
+      # a request's image_backend still overrides it. Read from
+      # WORKER_IMAGE_BACKEND, not IMAGE_BACKEND: that name is the Makefile's
+      # flux|sdxl server choice, and `make up IMAGE_BACKEND=sdxl` exports it.
+      IMAGE_BACKEND: ${WORKER_IMAGE_BACKEND:-mflux-serve}
+      IMAGE_MODEL: ${IMAGE_MODEL:-}
+      IMAGE_API_KEY: ${IMAGE_API_KEY:-}
     extra_hosts:
       - "host.docker.internal:host-gateway"
     restart: unless-stopped

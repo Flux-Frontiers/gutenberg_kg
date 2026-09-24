@@ -27,6 +27,14 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Fixed
 
+- **The worker's default image backend can be set again.** The docs said
+  `IMAGE_BACKEND=openai` in `docker/.env` routes images to `gpt-image-1`, but
+  neither compose nor `RUNTIME=apple` passed it into the worker, so it always
+  used the local server. Both now pass `WORKER_IMAGE_BACKEND` from
+  `docker/.env` in as the worker's `IMAGE_BACKEND`, plus `IMAGE_MODEL` and
+  `IMAGE_API_KEY`. The new name keeps it apart from the Makefile's flux/sdxl
+  `IMAGE_BACKEND`, which `make up IMAGE_BACKEND=sdxl` exports. A request's
+  `image_backend` still overrides the default.
 - **The MCP image tools called a model this package does not install.**
   `generate_image` and `corpus_imagine` both ran `image_gen.generate()`,
   which loads FLUX.2-Klein through mflux in-process, and mflux is

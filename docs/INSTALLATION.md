@@ -234,12 +234,12 @@ OPENAI_API_KEY=sk-...
 With just `OPENAI_API_KEY` set:
 
 - **Synthesis** — select **OpenAI** in the chat UI's Provider dropdown (or send `"backend": "openai"` to the worker). Uses `gpt-4o-mini` unless you pick another model.
-- **Image generation** — set `IMAGE_BACKEND=openai` to route image requests to `gpt-image-1` instead of the local FLUX server. No `make image-server` needed.
+- **Image generation** — the chat UI's OpenAI provider asks the worker for `gpt-image-1` per request. To make OpenAI the worker's default for every client, the iOS and macOS apps included, set `WORKER_IMAGE_BACKEND=openai` in `docker/.env` and restart the worker. No `make image-server` needed.
 
 ```bash
 # docker/.env  — OpenAI for both text synthesis and image generation
 OPENAI_API_KEY=sk-...
-IMAGE_BACKEND=openai          # route images to gpt-image-1 (default is local mflux-serve)
+WORKER_IMAGE_BACKEND=openai   # route images to gpt-image-1 (default is local mflux-serve)
 # Optional overrides:
 SYNTH_MODEL=gpt-4o            # text model (default gpt-4o-mini)
 IMAGE_MODEL=gpt-image-1       # image model (default gpt-image-1)
@@ -264,10 +264,11 @@ Point the worker at whichever is running via `GUTENKG_IMAGE_ENDPOINT` in `docker
 
 > **Two different `IMAGE_BACKEND`s.** As a *Make* variable
 > (`make up IMAGE_BACKEND=sdxl`) it selects which local image **server** to
-> start — `flux` or `sdxl`. As an *environment* variable in `docker/.env`
-> (`IMAGE_BACKEND=openai`) it tells the **worker** which backend to generate
-> through — `mflux-serve`, `mflux-local`, or `openai`. They are unrelated, and
-> the Make one is not passed into the container.
+> start — `flux` or `sdxl`. Inside the worker, `IMAGE_BACKEND` is the backend
+> it generates through — `mflux-serve`, `mflux-local`, or `openai`. Because
+> `make` exports a command-line variable, `docker/.env` sets the worker's value
+> as `WORKER_IMAGE_BACKEND`, and compose and `RUNTIME=apple` pass it into the
+> container as `IMAGE_BACKEND`.
 
 ---
 
@@ -304,17 +305,17 @@ Provider is chosen per-request (chat UI Provider dropdown / `"backend"` field). 
 
 ### Image generation
 
-Backend is chosen by `IMAGE_BACKEND`. `mflux-serve` (default) and `mflux-local` are Apple-Silicon-only; `openai` works anywhere.
+Backend is chosen by `IMAGE_BACKEND` inside the worker, set from `WORKER_IMAGE_BACKEND` in `docker/.env`. A request's `image_backend` (the chat UI's OpenAI provider sends `openai`) overrides it. `mflux-serve` (default) and `mflux-local` are Apple-Silicon-only; `openai` works anywhere.
 
 | Variable | Default | Applies to | Purpose |
 |---|---|---|---|
-| `IMAGE_BACKEND` | `mflux-serve` | all | `mflux-serve` (HTTP), `mflux-local` (in-process MLX), or `openai`. |
+| `WORKER_IMAGE_BACKEND` → `IMAGE_BACKEND` | `mflux-serve` | all | `mflux-serve` (HTTP), `mflux-local` (in-process MLX), or `openai`. |
 | `IMAGE_ENDPOINT` | `http://localhost:8090` | mflux-serve | mflux-serve base URL (compose maps `GUTENKG_IMAGE_ENDPOINT` → this). |
 | `GUTENKG_IMAGE_ENDPOINT` | `http://localhost:8090` | mflux-serve | Canonical endpoint var used by `gutenkg imagine` and compose. |
 | `IMAGE_MODEL` / `GUTENKG_IMAGE_MODEL` | `flux2-klein-4b` (serve) · `mlx-community/flux2-klein-4b-4bit` (local) | mflux | Image model override. |
 | `IMAGE_STEPS` / `GUTENKG_IMAGE_STEPS` | `4` | mflux | Inference steps (ignored for OpenAI). |
 | `IMAGE_API_KEY` | — | openai | Key override (falls back to `OPENAI_API_KEY`). |
-| `OPENAI_API_KEY` | — | openai | Key for `gpt-image-1` when `IMAGE_BACKEND=openai`. |
+| `OPENAI_API_KEY` | — | openai | Key for `gpt-image-1` when the backend is `openai`. |
 
 ### `gutenkg imagine` CLI (local Apple Silicon path)
 

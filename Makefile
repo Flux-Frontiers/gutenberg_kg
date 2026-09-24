@@ -503,6 +503,9 @@ run: runtime-guard setup
 	  -e GUTENKG_IMAGE_ENDPOINT="$$GUTENKG_IMAGE_ENDPOINT" \
 	  -e IMAGE_ENDPOINT="$$GUTENKG_IMAGE_ENDPOINT" \
 	  -e IMAGE_STEPS="$${IMAGE_STEPS:-4}" \
+	  -e IMAGE_BACKEND="$${WORKER_IMAGE_BACKEND:-mflux-serve}" \
+	  -e IMAGE_MODEL="$${IMAGE_MODEL:-}" \
+	  -e IMAGE_API_KEY="$${IMAGE_API_KEY:-}" \
 	  $(IMAGE):latest \
 	  python -u -m gutenberg_kg.serve.handler --rp_serve_api --rp_api_host 0.0.0.0
 	@echo "Worker running at $(WORKER)"
