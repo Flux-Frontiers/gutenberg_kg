@@ -99,6 +99,7 @@ the `diary` scope). Clicking one runs it immediately.
 
 | Control | Default | Effect |
 |---------|---------|--------|
+| **Worker** | `KGRAG_ENDPOINT` | Base URL of the worker to query; change it to use another Mac's worker |
 | **Scope** | `all` | Which KG slice to search (see table above) |
 | **Results** | 10 | Max number of passages (`k`), 1–50 |
 | **Min score** | 0.50 | Drop hits below this similarity score |
@@ -131,6 +132,11 @@ The sidebar **🖼️ Image** section acts on the most recent result:
 - **🎨 Render response** — a two-stage pipeline: an LLM rewrites the passage into a
   visual scene description, then an image backend generates the illustration. The
   **Resolution** selector (Preview / Standard / Full) trades quality for speed.
+  **Image backend** picks what draws it: **Auto** uses OpenAI when the
+  synthesis provider is OpenAI and the worker's default otherwise; **Local**
+  and **OpenAI** appear only when the worker can use them right now (its image
+  server answers, or it holds an OpenAI key). OpenAI bills per image. The iOS
+  and macOS apps have the same picker under Settings > Illustrations.
   Requires a running image server (`make up`, or `make image-server` /
   `make sdxl-server` separately) and, for the rewrite step, a synthesis provider.
   `make up` starts whichever image server this host supports — FLUX where mflux
@@ -152,7 +158,7 @@ it talks to.
 
 | Variable | Default | Purpose |
 |----------|---------|---------|
-| `KGRAG_ENDPOINT` | `http://localhost:8000` | URL of the query worker. Set to `http://gutenberg-worker:8000` inside compose. |
+| `KGRAG_ENDPOINT` | `http://localhost:8000` | Initial value of the sidebar's **Worker** field. Set to `http://gutenberg-worker:8000` inside compose. |
 | `HANDLER_SECRET` | *(empty)* | If the worker requires a shared secret, set the same value here so requests authenticate. |
 
 **Read by the worker** (set in [`docker/.env`](../docker/.env.example) — copy

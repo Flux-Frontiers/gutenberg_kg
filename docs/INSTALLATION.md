@@ -234,7 +234,7 @@ OPENAI_API_KEY=sk-...
 With just `OPENAI_API_KEY` set:
 
 - **Synthesis** — select **OpenAI** in the chat UI's Provider dropdown (or send `"backend": "openai"` to the worker). Uses `gpt-4o-mini` unless you pick another model.
-- **Image generation** — the chat UI's OpenAI provider asks the worker for `gpt-image-1` per request. To make OpenAI the worker's default for every client, the iOS and macOS apps included, set `WORKER_IMAGE_BACKEND=openai` in `docker/.env` and restart the worker. No `make image-server` needed.
+- **Image generation** — pick **OpenAI** in the chat UI's or the app's **Image backend** picker, or leave it on **Auto**, which uses OpenAI whenever the provider is OpenAI. To make OpenAI the worker's default for every client, the iOS and macOS apps included, set `WORKER_IMAGE_BACKEND=openai` in `docker/.env` and restart the worker. No `make image-server` needed.
 
 ```bash
 # docker/.env  — OpenAI for both text synthesis and image generation

@@ -291,6 +291,50 @@ public final class AppModel {
         return resolution
     }
 
+    /// Which image backend renders an illustration: `AppModel.imageAuto`, or a
+    /// backend key the worker reported as available.
+    ///
+    /// Persisted like the resolution. Auto is chat.py's `_IMAGE_AUTO` and keeps
+    /// the rule from before the picker existed: OpenAI images when the text
+    /// provider is OpenAI, otherwise the worker's default.
+    var imageBackendChoice: String {
+        get { storedImageBackendChoice }
+        set {
+            storedImageBackendChoice = newValue
+            AppModel.defaults.set(newValue, forKey: AppModel.imageBackendChoiceKey)
+        }
+    }
+
+    private var storedImageBackendChoice: String =
+        AppModel.defaults.string(forKey: AppModel.imageBackendChoiceKey) ?? AppModel.imageAuto
+
+    static let imageBackendChoiceKey = "imageBackendChoice"
+    static let imageAuto = "auto"
+
+    /// Image backends the worker can use now; empty until fetched, or when the
+    /// worker is offline or too old to report them.
+    var imageBackends: [ImageBackendOption] = []
+
+    /// The `image_backend` to send with `imagine` (chat.py's
+    /// `_resolve_image_backend`). `""` lets the worker use its default.
+    static func resolveImageBackend(choice: String, textBackend: String) -> String {
+        if !choice.isEmpty, choice != imageAuto { return choice }
+        return textBackend == "openai" ? "openai" : ""
+    }
+
+    /// Fetch the available image backends. A stored choice the worker no
+    /// longer offers falls back to Auto, so a render never asks for a backend
+    /// that will fail.
+    func refreshImageBackends() async {
+        let list = try? await client.listImageBackends()
+        imageBackends = (list?.backends ?? []).filter(\.available)
+        if imageBackendChoice != Self.imageAuto,
+            !imageBackends.contains(where: { $0.key == imageBackendChoice })
+        {
+            imageBackendChoice = Self.imageAuto
+        }
+    }
+
     /// The Foundation Models knobs: temperature, greedy decoding, the
     /// per-work passage cap, which instructions, permissive guardrails.
     ///
@@ -679,6 +723,8 @@ public final class AppModel {
             genres = (try? await client.listGenres()) ?? []
             connectionError = nil
             workerProbe = .reachable("\(found.books) books · \(found.genres) genres")
+            // A different worker can offer different image backends.
+            await refreshImageBackends()
         } catch {
             workerProbe = .unreachable(error.localizedDescription)
         }
@@ -861,10 +907,8 @@ public final class AppModel {
             }
             do {
                 let prompt = try await client.rewrite(rawPrompt, backend: backend)
-                // Streamlit's rule: only OpenAI's image backend needs asking
-                // for by name — the worker's default (mflux) is otherwise
-                // whatever the deployment already configured.
-                let imageBackend = backend == "openai" ? "openai" : ""
+                let imageBackend = Self.resolveImageBackend(
+                    choice: imageBackendChoice, textBackend: backend)
                 let image = try await client.imagine(
                     prompt: prompt, imageBackend: imageBackend, size: imageResolution.size)
                 guard let i = turns.firstIndex(where: { $0.id == id }) else { return }

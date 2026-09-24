@@ -77,6 +77,24 @@ _RESOLUTION_SIZES: dict[str, str] = {
     "Full": "1536x1024",
 }
 
+# The image-backend picker's first entry. It keeps the behaviour from before the
+# picker existed: OpenAI images when the text provider is OpenAI, otherwise the
+# worker's own default. The app's picker uses the same value.
+_IMAGE_AUTO = "auto"
+
+
+def _resolve_image_backend(choice: str, text_backend: str) -> str:
+    """Turn the picker's choice into the ``image_backend`` sent with ``imagine``.
+
+    :param choice: ``"auto"`` or a backend key reported by the worker.
+    :param text_backend: The synthesis provider in use (``""`` when synthesis is off).
+    :returns: A backend key, or ``""`` to let the worker use its default.
+    """
+    if choice and choice != _IMAGE_AUTO:
+        return choice
+    return "openai" if text_backend == "openai" else ""
+
+
 # ---------------------------------------------------------------------------
 # Page config
 # ---------------------------------------------------------------------------
@@ -418,6 +436,21 @@ def _fetch_models(worker_url: str, secret: str, backend: str = "") -> tuple[list
     return models, default
 
 
+@st.cache_data(ttl=60, show_spinner=False)
+def _fetch_image_backends(worker_url: str, secret: str) -> tuple[list[dict], str]:
+    """Fetch the image backends the worker can use now (cached 60s).
+
+    :param worker_url: Base URL of the KGRAG worker.
+    :param secret: Shared secret for the worker (if configured).
+    :returns: ``(available_backends, worker_default)``; each backend is a dict with
+              ``key``, ``label`` and ``detail``. Empty when the worker is offline
+              or predates the ``image_backends`` op.
+    """
+    out = _worker_op(worker_url, "image_backends", secret)
+    backends = [b for b in out.get("backends", []) if b.get("available") and b.get("key")]
+    return backends, out.get("default", "")
+
+
 # ---------------------------------------------------------------------------
 # Result rendering
 # ---------------------------------------------------------------------------
@@ -521,7 +554,18 @@ def _render_sidebar() -> dict:
     secret = os.environ.get("HANDLER_SECRET", "")
     st.sidebar.title("📚 GutenbergKG")
     st.sidebar.caption(f"v{__version__}")
-    stats = _fetch_stats(_DEFAULT_WORKER, secret)
+    # Keyed, so the value survives reruns; seeded from KGRAG_ENDPOINT. Matches
+    # the app's Settings > Worker field.
+    worker_url = (
+        st.sidebar.text_input(
+            "Worker",
+            value=_DEFAULT_WORKER,
+            key="worker_url",
+            help="Base URL of the worker, e.g. http://tesla.local:8000",
+        ).strip()
+        or _DEFAULT_WORKER
+    )
+    stats = _fetch_stats(worker_url, secret)
     if stats:
         model_short = (stats.get("embed_model") or "").rsplit("/", 1)[-1]
         # .get, not subscript: a partial payload should cost a number, not the
@@ -536,7 +580,7 @@ def _render_sidebar() -> dict:
     st.sidebar.markdown("---")
     st.sidebar.subheader("📖 Corpus")
 
-    corpus_options = _corpus_options(_DEFAULT_WORKER, secret)
+    corpus_options = _corpus_options(worker_url, secret)
     corpus = st.sidebar.selectbox(
         "Scope",
         options=corpus_options,
@@ -592,7 +636,7 @@ def _render_sidebar() -> dict:
 
         with st.sidebar:
             with st.spinner("Fetching models…"):
-                models, default = _fetch_models(_DEFAULT_WORKER, secret, backend)
+                models, default = _fetch_models(worker_url, secret, backend)
         if models:
             # Reconcile the stored choice against the current list BEFORE the
             # widget renders. Streamlit raises if session_state holds a value
@@ -625,6 +669,24 @@ def _render_sidebar() -> dict:
         format_func=lambda r: _RESOLUTION_LABELS[r],
         index=0,
         help="Smaller = faster generation",
+    )
+    image_backends, image_default = _fetch_image_backends(worker_url, secret)
+    image_labels = {_IMAGE_AUTO: "Auto"}
+    image_labels.update({b["key"]: b.get("label") or b["key"] for b in image_backends})
+    # Reconcile before the widget renders, as with synth_model: a backend that
+    # stopped being available (server down, key removed) falls back to Auto.
+    if st.session_state.get("image_backend_choice") not in image_labels:
+        st.session_state["image_backend_choice"] = _IMAGE_AUTO
+    image_choice = st.sidebar.selectbox(
+        "Image backend",
+        options=list(image_labels),
+        format_func=lambda key: image_labels[key],
+        key="image_backend_choice",
+        help=(
+            "Auto: OpenAI when the provider is OpenAI, otherwise the worker's default"
+            + (f" ({image_default})" if image_default else "")
+            + ". Only backends the worker can use right now are listed."
+        ),
     )
     has_result = any(
         m.get("role") == "assistant" and m.get("result")
@@ -679,7 +741,7 @@ def _render_sidebar() -> dict:
         st.rerun()
 
     return {
-        "worker_url": _DEFAULT_WORKER,
+        "worker_url": worker_url,
         "secret": secret,
         "corpus": corpus,
         "k": k,
@@ -689,6 +751,7 @@ def _render_sidebar() -> dict:
         "backend": backend,
         "model": model,
         "resolution": resolution,
+        "image_backend": image_choice,
         "render_clicked": render_clicked,
     }
 
@@ -728,7 +791,9 @@ def main() -> None:
             st.session_state.messages = []
             st.rerun()
 
-    _n_books = _fetch_stats(_DEFAULT_WORKER, os.environ.get("HANDLER_SECRET", "")).get("books")
+    _n_books = _fetch_stats(
+        st.session_state.get("worker_url") or _DEFAULT_WORKER, os.environ.get("HANDLER_SECRET", "")
+    ).get("books")
     _books_phrase = (
         f"{_n_books} Project Gutenberg texts" if _n_books else "the Project Gutenberg corpus"
     )
@@ -852,7 +917,7 @@ def main() -> None:
                         f"🎨 Prompt: {prompt[:160]}{'…' if len(prompt) > 160 else ''}"
                         f" · rewrite {vlm_ms:,} ms"
                     )
-            image_backend = "openai" if cfg["backend"] == "openai" else ""
+            image_backend = _resolve_image_backend(cfg["image_backend"], cfg["backend"])
             with st.spinner("Generating image…"):
                 try:
                     t0_img = time.perf_counter()

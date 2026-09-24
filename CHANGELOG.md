@@ -10,6 +10,15 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added
 
+- **Image backend picker in the chat UI and the apps.** A new worker op,
+  `image_backends`, reports which image backends the worker can use now: Local
+  when its image server answers, OpenAI when it holds a key (the key is never
+  returned). The Streamlit sidebar and the app's Settings > Illustrations list
+  Auto plus only those. Auto keeps the old rule, OpenAI images when the text
+  provider is OpenAI and the worker's default otherwise. A choice the worker
+  stops offering falls back to Auto.
+- **Worker field in the Streamlit sidebar**, seeded from `KGRAG_ENDPOINT`, to
+  match the app's Settings > Worker.
 - **Setup docs for keys and LAN serving.** `docs/INSTALLATION.md` now covers
   where keys live and why a built image holds none, recreating the worker
   after a `docker/.env` change, and a checklist for serving the iOS and macOS
