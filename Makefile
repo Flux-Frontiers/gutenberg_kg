@@ -383,6 +383,9 @@ kill:
 # own the bridge100 vmnet bridge) and the Docker Desktop app. Leaves the Mac
 # with no container networking at all. Quitting Docker Desktop also stops any
 # other project's Docker containers.
+# A quit can leave com.docker.backend running with no engine behind it, and
+# every docker call then fails with HTTP 500 until it is killed, so kill it if
+# it is still there after 10 s.
 down-all: kill
 	@if [ "$(HAVE_APPLE)" = "1" ]; then \
 		echo "==> Stopping Apple container services ..."; \
@@ -391,6 +394,11 @@ down-all: kill
 	@if [ "$(HAVE_DOCKER)" = "1" ] && pgrep -xq com.docker.backend; then \
 		echo "==> Quitting Docker Desktop ..."; \
 		osascript -e 'quit app "Docker"' 2>/dev/null || true; \
+		for i in 1 2 3 4 5 6 7 8 9 10; do pgrep -xq com.docker.backend || break; sleep 1; done; \
+		if pgrep -xq com.docker.backend; then \
+			echo "==> Docker backend outlived the quit; killing it ..."; \
+			pkill -x com.docker.backend || true; \
+		fi; \
 	fi
 	@echo "Done. No container runtime running."
 
