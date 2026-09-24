@@ -68,7 +68,7 @@
 # RUNTIME=apple drives Apple's native `container` CLI instead of Docker
 # (Apple Silicon + macOS 26; no Docker Desktop). First-time / per-boot setup
 # is automatic — build/run/chat depend on `setup`, which installs the CLI if
-# missing (Homebrew cask) and runs `container system start`.
+# missing (Homebrew) and runs `container system start`.
 # Same targets, one extra variable:
 #   make setup RUNTIME=apple    — install `container` CLI + start its services
 #   make build RUNTIME=apple    — build the image with `container build`
@@ -76,6 +76,8 @@
 #   make chat  RUNTIME=apple    — worker + chat UI on localhost:8501
 #   make up    RUNTIME=apple    — everything: worker + chat UI + image server
 #   make down  RUNTIME=apple    — stop and delete both containers + image servers
+#   make down-all               — kill containers under both runtimes, stop both runtimes
+# run/chat/up refuse to start while the other runtime is up (see runtime-guard).
 #   make logs  RUNTIME=apple    — follow worker logs (`container logs -f`)
 #   make clean RUNTIME=apple    — remove the image (`container image rm`)
 # Per-container VM sizing (overridable): WORKER_MEM=8g WORKER_CPUS=6 CHAT_MEM=4g
@@ -244,7 +246,7 @@ endif
 # `gutenkg` on PATH. Override with e.g. `make GUTENKG=gutenkg build-corpus`.
 GUTENKG     ?= poetry run gutenkg
 
-.PHONY: init spacy-model chunk-diaries build-diaries build-corpus export-swift export-web-catalog check-pins setup build build-all rebuild rebuild-all prune kill run image-server sdxl-server sdxl-fetch chat up stop down query logs clean docs ios-devices ios-generate ios-check ios-install-corpus ios-verify-corpus ios-launch ios-deploy ios-stage-corpus ios-unstage-corpus ios-archive ios-upload mac-generate mac-check mac-dev mac-dev-run mac-build mac-verify mac-notarize mac-dmg mac-notarize-dmg mac-release
+.PHONY: init spacy-model chunk-diaries build-diaries build-corpus export-swift export-web-catalog check-pins setup build build-all rebuild rebuild-all prune kill down-all runtime-guard run image-server sdxl-server sdxl-fetch chat up stop down query logs clean docs ios-devices ios-generate ios-check ios-install-corpus ios-verify-corpus ios-launch ios-deploy ios-stage-corpus ios-unstage-corpus ios-archive ios-upload mac-generate mac-check mac-dev mac-dev-run mac-build mac-verify mac-notarize mac-dmg mac-notarize-dmg mac-release
 
 init:
 	$(GUTENKG) init
@@ -377,6 +379,53 @@ kill:
 	-pkill -f gutenkg-sdxl-server 2>/dev/null || true
 	@echo "Done. Killed."
 
+# `kill`, then stop the runtimes themselves: Apple's container services (which
+# own the bridge100 vmnet bridge) and the Docker Desktop app. Leaves the Mac
+# with no container networking at all. Quitting Docker Desktop also stops any
+# other project's Docker containers.
+# A quit can leave com.docker.backend running with no engine behind it, and
+# every docker call then fails with HTTP 500 until it is killed, so kill it if
+# it is still there after 10 s.
+down-all: kill
+	@if [ "$(HAVE_APPLE)" = "1" ]; then \
+		echo "==> Stopping Apple container services ..."; \
+		container system stop 2>/dev/null || true; \
+	fi
+	@if [ "$(HAVE_DOCKER)" = "1" ] && pgrep -xq com.docker.backend; then \
+		echo "==> Quitting Docker Desktop ..."; \
+		osascript -e 'quit app "Docker"' 2>/dev/null || true; \
+		for i in 1 2 3 4 5 6 7 8 9 10; do pgrep -xq com.docker.backend || break; sleep 1; done; \
+		if pgrep -xq com.docker.backend; then \
+			echo "==> Docker backend outlived the quit; killing it ..."; \
+			pkill -x com.docker.backend || true; \
+		fi; \
+	fi
+	@echo "Done. No container runtime running."
+
+# Refuse to start one runtime while the other is up. On turing (2026-09-24)
+# Docker Desktop and Apple's container services running together made every
+# inbound LAN TCP connection hang -- ping worked, outbound worked, but the
+# phone and tesla could not reach the worker or image server. Either runtime
+# alone is fine. ALLOW_BOTH_RUNTIMES=1 skips the check.
+runtime-guard:
+	@if [ "$(ALLOW_BOTH_RUNTIMES)" = "1" ]; then exit 0; fi; \
+	if [ "$(RUNTIME)" = "apple" ]; then \
+		other="Docker Desktop"; \
+		[ "$(HAVE_DOCKER)" = "1" ] && pgrep -xq com.docker.backend && busy=1; \
+		fix="quit Docker Desktop"; \
+	else \
+		other="Apple container services"; \
+		[ "$(HAVE_APPLE)" = "1" ] && container system status >/dev/null 2>&1 && busy=1; \
+		fix="run 'container system stop'"; \
+	fi; \
+	if [ "$$busy" = "1" ]; then \
+		echo "ERROR: $$other is running. With both container runtimes up, other"; \
+		echo "machines cannot open connections to this Mac (worker, image server)."; \
+		echo "Run 'make down-all', or $$fix, then retry."; \
+		echo "(ALLOW_BOTH_RUNTIMES=1 overrides.)"; \
+		exit 1; \
+	fi
+
 ifeq ($(RUNTIME),apple)
 
 # ---------------------------------------------------------------------------
@@ -433,7 +482,7 @@ build: check-pins setup
 
 # Idempotent like `compose up`: a running worker is left alone (it takes a
 # while to load the index), a stopped or stale one is replaced.
-run: setup
+run: runtime-guard setup
 	@if container list --quiet 2>/dev/null | grep -qx "$(WORKER_NAME)"; then \
 		echo "Worker already running at $(WORKER)"; exit 0; \
 	fi; \
@@ -454,6 +503,9 @@ run: setup
 	  -e GUTENKG_IMAGE_ENDPOINT="$$GUTENKG_IMAGE_ENDPOINT" \
 	  -e IMAGE_ENDPOINT="$$GUTENKG_IMAGE_ENDPOINT" \
 	  -e IMAGE_STEPS="$${IMAGE_STEPS:-4}" \
+	  -e IMAGE_BACKEND="$${WORKER_IMAGE_BACKEND:-mflux-serve}" \
+	  -e IMAGE_MODEL="$${IMAGE_MODEL:-}" \
+	  -e IMAGE_API_KEY="$${IMAGE_API_KEY:-}" \
 	  $(IMAGE):latest \
 	  python -u -m gutenberg_kg.serve.handler --rp_serve_api --rp_api_host 0.0.0.0
 	@echo "Worker running at $(WORKER)"
@@ -477,7 +529,7 @@ chat: run
 	@echo "Worker:  $(WORKER)"
 	@echo "Chat UI: http://localhost:8501"
 
-start up:
+start up: runtime-guard
 	@echo "Starting worker + chat (Apple container), image backend: $(IMAGE_BACKEND) ($(IMG_ENDPOINT)) ..."
 	GUTENKG_IMAGE_ENDPOINT=$(IMG_ENDPOINT) $(MAKE) chat RUNTIME=apple
 	@echo "Starting $(IMAGE_BACKEND) image server ..."
@@ -519,16 +571,16 @@ build: check-pins
 	docker build $(BUILD_FLAGS) $(HF_SECRET) -f docker/Dockerfile \
 	  --build-arg BUNDLE=$$BUNDLE -t $(IMAGE):$$IMAGE_TAG .
 
-run:
+run: runtime-guard
 	$(COMPOSE) up -d worker
 	@echo "Worker running at $(WORKER)"
 
-chat:
+chat: runtime-guard
 	$(COMPOSE) --profile chat up -d
 	@echo "Worker:  $(WORKER)"
 	@echo "Chat UI: http://localhost:8501"
 
-start up:
+start up: runtime-guard
 	@echo "Starting worker + chat (Docker), image backend: $(IMAGE_BACKEND) ($(IMG_ENDPOINT)) ..."
 	GUTENKG_IMAGE_ENDPOINT=$(IMG_ENDPOINT) IMAGE_ENDPOINT=$(IMG_ENDPOINT) $(COMPOSE) --profile chat up -d
 	@echo "Starting $(IMAGE_BACKEND) image server ..."

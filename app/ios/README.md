@@ -36,7 +36,10 @@ before the ~800 MB download.
 - Xcode 26 (iOS 26 SDK) to build.
 - A worker reachable from the phone: `make up` at the repo root, then set the
   worker URL in Settings to `http://<your-mac>.local:8000`. `localhost` is the
-  phone, not the Mac — the app cannot find your worker there.
+  phone, not the Mac — the app cannot find your worker there. If the phone
+  cannot connect but `curl http://localhost:8000` works on the Mac, check
+  that only one container runtime is running (`make down-all`, then `make up`)
+  and that the app has Local Network access in iOS Settings.
 
 ## Build
 
