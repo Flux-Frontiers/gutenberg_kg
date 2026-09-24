@@ -8,6 +8,16 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Added
+
+- **`make down-all`, and a guard against running two container runtimes.**
+  With Docker Desktop and Apple's container services both running, other
+  machines could ping the Mac but every inbound TCP connection hung, so the
+  iPhone app could not reach the worker or image server. `make run`, `chat`
+  and `up` now refuse to start while the other runtime is up
+  (`ALLOW_BOTH_RUNTIMES=1` overrides). `make down-all` runs `make kill`, then
+  stops Apple's container services and quits Docker Desktop.
+
 ### Fixed
 
 - **The MCP image tools called a model this package does not install.**

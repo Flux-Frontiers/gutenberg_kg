@@ -20,10 +20,17 @@ make chat  RUNTIME=apple         # worker + chat UI on http://localhost:8501
 make up    RUNTIME=apple         # everything incl. FLUX image server
 make logs  RUNTIME=apple
 make down  RUNTIME=apple
+make down-all                    # stop both runtimes entirely
 ```
 
 Notes:
 
+- **Run one runtime at a time.** With Docker Desktop and Apple's container
+  services both running, other machines can ping this Mac but cannot open
+  TCP connections to it, so phones and other hosts cannot reach the worker or
+  image server. `make run`, `make chat` and `make up` refuse to start when the
+  other runtime is up; `make down-all` stops both. `ALLOW_BOTH_RUNTIMES=1`
+  skips the check.
 - **Memory/CPU are per-container VM flags**, defaulting to 2g/6 CPUs for the
   worker and 512m for chat. Override like `make run RUNTIME=apple WORKER_MEM=4g`
   if a larger corpus or heavier query load needs headroom. These follow the

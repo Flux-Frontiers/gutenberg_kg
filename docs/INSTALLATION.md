@@ -169,6 +169,8 @@ make logs        # follow worker logs
 | `make query Q="…"` | fire a one-shot query against the running worker |
 | `make logs` | follow worker logs |
 | `make stop` | shut everything down |
+| `make kill` | force-remove the worker and chat containers under both Docker and Apple `container`, plus the image servers |
+| `make down-all` | `make kill`, then stop Apple's container services and quit Docker Desktop |
 | `make clean` | remove the Docker image |
 
 ---
