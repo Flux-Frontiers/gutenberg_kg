@@ -503,10 +503,13 @@ publish-worker-image: check-pins setup
 	container image push $(REGISTRY_IMAGE):$$IMAGE_TAG
 
 # Fetch a published image and tag it as the local one `make run` starts, so a
-# new machine can skip build-corpus and build.
+# new machine can skip build-corpus and build. The old local tag is removed
+# first: `container image tag` adds a second entry under the same name rather
+# than moving it, and the name kept resolving to the old local build.
 pull-worker-image: setup
 	@$(resolve_spec) \
 	container image pull $(REGISTRY_IMAGE):$$IMAGE_TAG && \
+	{ container image rm $(IMAGE):$$IMAGE_TAG >/dev/null 2>&1 || true; } && \
 	container image tag $(REGISTRY_IMAGE):$$IMAGE_TAG $(IMAGE):$$IMAGE_TAG && \
 	echo "Pulled $(REGISTRY_IMAGE):$$IMAGE_TAG as $(IMAGE):$$IMAGE_TAG"
 
