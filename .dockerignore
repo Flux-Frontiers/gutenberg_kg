@@ -25,6 +25,8 @@
 **/.diarykg/corpus
 
 # Repo cruft that has no business in the build context
+app/ios/build/
+app/macos/build/
 .git/
 .venv/
 **/__pycache__/

@@ -143,6 +143,64 @@ the server fails to start, the worker and chat UI stay up and only the chat UI's
 make query Q="What is justice according to Plato?"
 ```
 
+### Pull a published image instead of building
+
+Steps 1 and 2 build the corpus bundle and the image locally, which takes a
+while. A published image skips both:
+
+```bash
+make pull-worker-image        # pulls docker.io/egsuchanek/corpus-gutenberg:latest, tags it corpus-gutenberg:latest
+make up
+```
+
+The image is multi-arch (`linux/amd64` and `linux/arm64`), so it runs on Apple
+Silicon and on x86 Linux or Windows, under Docker or Apple `container`
+(`RUNTIME=apple`). Nothing in it depends on the runtime or holds a key; endpoints
+and keys come from `docker/.env` when the container starts. Use another
+registry with `REGISTRY_IMAGE=...`.
+
+#### Publishing the worker image (maintainers)
+
+`make publish-worker-image` builds every platform in `PLATFORMS` (default
+`linux/amd64,linux/arm64`) and pushes one image index to `REGISTRY_IMAGE`. The
+image carries the whole corpus bundle, several GB per platform; the bundle
+layer is the same bytes on both, so the registry stores it once.
+
+Publish with Docker:
+
+```bash
+make build-corpus                        # if the corpus changed
+make publish-worker-image RUNTIME=docker
+```
+
+Docker Desktop already holds the Docker Hub login (browser sign-in), and a
+`docker-container` buildx builder named `gutenkg-multiarch` is created on
+first use. Its amd64 half runs under QEMU, so the first build is slow; later
+builds reuse the builder's cache.
+
+`RUNTIME=apple` builds both platforms faster (Rosetta for amd64), but pushing
+from it did not work on 2026-09-24: the upload runs in Apple's background
+service, which could not read the registry login from the keychain. If you
+try it anyway:
+
+- With two-factor authentication on Docker Hub, the password must be a
+  Personal Access Token with Read & Write (Account settings > Personal access
+  tokens); the account password is refused.
+- Give the username as a flag, one command at a time:
+  `container registry login --username <your-docker-hub-user> docker.io`. Pasting several
+  lines at the interactive prompt stores the next line as the username.
+  `container registry list` shows what was saved.
+- A built image can be pushed again without rebuilding:
+  `container image push docker.io/egsuchanek/corpus-gutenberg:latest`.
+- If a build then fails with `COPY ... not found`, or "transferring context"
+  stops well short of the usual ~5.7 GB, the builder VM is wedged from an
+  earlier failure: `container builder stop && container builder delete`, then
+  build again.
+
+Check the result with `docker buildx imagetools inspect
+docker.io/egsuchanek/corpus-gutenberg:latest`; it should list `linux/amd64`
+and `linux/arm64`.
+
 ### 3. Lighter setups and lifecycle
 
 ```bash
@@ -172,6 +230,8 @@ make logs        # follow worker logs
 | `make kill` | force-remove the worker and chat containers under both Docker and Apple `container`, plus the image servers |
 | `make down-all` | `make kill`, then stop Apple's container services and quit Docker Desktop |
 | `make clean` | remove the Docker image |
+| `make publish-worker-image` | build `linux/amd64` + `linux/arm64` and push to `REGISTRY_IMAGE` |
+| `make pull-worker-image` | pull the published image and tag it locally, instead of building |
 
 ---
 

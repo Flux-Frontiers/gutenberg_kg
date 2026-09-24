@@ -283,6 +283,22 @@ git push origin develop
 
 Keep `develop`; it is the working branch, not a throwaway feature branch.
 
+## Step 10 — Publish the worker image (optional, ASK FIRST)
+
+Only when the corpus bundle or the served code changed in this release, and
+only with approval: it uploads several GB to Docker Hub under the user's
+account. The user launches it (it is a long build):
+
+```bash
+make publish-worker-image RUNTIME=docker
+docker buildx imagetools inspect docker.io/egsuchanek/corpus-gutenberg:latest
+```
+
+The inspect must list `linux/amd64` and `linux/arm64`. Use `RUNTIME=docker`:
+pushing from `RUNTIME=apple` failed on the keychain on 2026-09-24. The full
+procedure and its pitfalls are in `docs/INSTALLATION.md`, "Publishing the
+worker image".
+
 ---
 
 ## After the tag — the Zenodo audit

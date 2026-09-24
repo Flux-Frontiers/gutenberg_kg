@@ -10,6 +10,15 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added
 
+- **`make publish-worker-image` and `make pull-worker-image`: one multi-arch image for
+  everyone.** `publish-worker-image` builds `linux/amd64` and `linux/arm64` into one image
+  index and pushes it to `REGISTRY_IMAGE` (default
+  `docker.io/egsuchanek/corpus-gutenberg`); under `RUNTIME=apple`,
+  `container build` runs the amd64 half under Rosetta, and under Docker a
+  `docker-container` buildx builder does it. `pull-worker-image` fetches the published
+  image and tags it as the local one, so a new machine can skip `build-corpus`
+  and `build`. The image holds no runtime-specific settings and no keys, so the
+  same image runs under Docker or Apple `container`, on Apple Silicon or x86.
 - **Image backend picker in the chat UI and the apps.** A new worker op,
   `image_backends`, reports which image backends the worker can use now: Local
   when its image server answers, OpenAI when it holds a key (the key is never
