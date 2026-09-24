@@ -187,7 +187,7 @@ try it anyway:
   Personal Access Token with Read & Write (Account settings > Personal access
   tokens); the account password is refused.
 - Give the username as a flag, one command at a time:
-  `container registry login --username egsuchanek docker.io`. Pasting several
+  `container registry login --username <your-docker-hub-user> docker.io`. Pasting several
   lines at the interactive prompt stores the next line as the username.
   `container registry list` shows what was saved.
 - A built image can be pushed again without rebuilding:
