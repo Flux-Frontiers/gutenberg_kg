@@ -766,7 +766,7 @@ ios-generate:
 # Compiles for a real device without a phone, an Apple account, or a
 # signature -- so a code failure is never confused with a signing one.
 ios-check: ios-generate
-	cd app/ios && xcodebuild -project KnowledgePress.xcodeproj -scheme KnowledgePress \
+	cd app/ios && xcodebuild CURRENT_PROJECT_VERSION=$(APP_BUILD) -project KnowledgePress.xcodeproj -scheme KnowledgePress \
 	  -destination 'generic/platform=iOS' CODE_SIGNING_ALLOWED=NO build
 
 # Run the app on the device at least once first, so its container exists.
@@ -797,6 +797,12 @@ ios-launch:
 
 ios-deploy: ios-install-corpus ios-verify-corpus ios-launch
 	@echo "Corpus installed and app relaunched. Settings > Corpus should say 'on this device'."
+
+# App build number (CFBundleVersion) for every xcodebuild below: the git commit
+# count, which only grows, so each App Store Connect upload outranks the last
+# without anyone bumping it. The version string itself is MARKETING_VERSION in
+# project.yml, which tracks the package version.
+APP_BUILD ?= $(shell git rev-list --count HEAD 2>/dev/null || echo 1)
 
 IOS_APP = app/ios/build/Build/Products/Debug-iphoneos/KnowledgePress.app
 IOS_TEAM ?=
@@ -842,7 +848,7 @@ endef
 # before a CLI build can install to it).
 ios-build: ios-generate
 	@$(ios_resolve_team); \
-	cd app/ios && xcodebuild -project KnowledgePress.xcodeproj -scheme KnowledgePress \
+	cd app/ios && xcodebuild CURRENT_PROJECT_VERSION=$(APP_BUILD) -project KnowledgePress.xcodeproj -scheme KnowledgePress \
 	  -destination 'generic/platform=iOS' -derivedDataPath build \
 	  -allowProvisioningUpdates \
 	  DEVELOPMENT_TEAM="$$TEAM" build
@@ -876,7 +882,7 @@ ios-unstage-corpus:
 # the only symptom is a reviewer's rejection a week later.
 ios-archive: ios-stage-corpus ios-generate
 	@$(ios_resolve_team); \
-	cd app/ios && xcodebuild -project KnowledgePress.xcodeproj -scheme KnowledgePress \
+	cd app/ios && xcodebuild CURRENT_PROJECT_VERSION=$(APP_BUILD) -project KnowledgePress.xcodeproj -scheme KnowledgePress \
 	  -destination 'generic/platform=iOS' -archivePath build/KnowledgePress.xcarchive \
 	  -allowProvisioningUpdates \
 	  DEVELOPMENT_TEAM="$$TEAM" archive
@@ -959,14 +965,14 @@ mac-generate:
 # Compiles without a certificate, so a code failure is never confused with a
 # signing one -- the same role ios-check plays, and what CI runs.
 mac-check: mac-generate
-	cd app/macos && xcodebuild -project KnowledgePress.xcodeproj \
+	cd app/macos && xcodebuild CURRENT_PROJECT_VERSION=$(APP_BUILD) -project KnowledgePress.xcodeproj \
 	  -scheme KnowledgePress -destination 'platform=macOS' \
 	  -derivedDataPath build CODE_SIGNING_ALLOWED=NO build | tail -3
 
 mac-build: mac-generate
 	@$(mac_resolve_identity); \
 	echo "Signing as $$IDENTITY"; \
-	cd app/macos && xcodebuild -project KnowledgePress.xcodeproj \
+	cd app/macos && xcodebuild CURRENT_PROJECT_VERSION=$(APP_BUILD) -project KnowledgePress.xcodeproj \
 	  -scheme KnowledgePress -destination 'platform=macOS' \
 	  -derivedDataPath build -configuration Release \
 	  CODE_SIGN_STYLE=Manual DEVELOPMENT_TEAM="$$TEAM" \
@@ -985,7 +991,7 @@ mac-build: mac-generate
 # xcodebuild add it. Both flags together are what Xcode's own Run button does.
 mac-dev: mac-generate
 	@$(ios_resolve_team); \
-	cd app/macos && xcodebuild -project KnowledgePress.xcodeproj \
+	cd app/macos && xcodebuild CURRENT_PROJECT_VERSION=$(APP_BUILD) -project KnowledgePress.xcodeproj \
 	  -scheme KnowledgePress -destination 'platform=macOS' \
 	  -derivedDataPath build -configuration Debug \
 	  -allowProvisioningUpdates -allowProvisioningDeviceRegistration \

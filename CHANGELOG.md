@@ -43,6 +43,14 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Changed
 
+- **The iOS and macOS apps carry the package version.** They had stayed at
+  `1.0 (1)`. `MARKETING_VERSION` in both `project.yml` files now tracks
+  `pyproject.toml` (1.22.2 today), the Info.plist reads it and the build number
+  from build settings instead of literals, and every `xcodebuild` in the
+  Makefile sets the build number to the git commit count, so each App Store
+  Connect upload outranks the last. `tests/test_app_version.py` fails when the
+  apps and the package disagree, and the release skill's bump step lists the
+  app files.
 - **Fleet dependency floors raised and relocked** (`kgrag_priv` sweep item 46):
   `kgmodule-utils` to `>=0.24.0` and `kg-rag` to `>=0.17.0`, in
   `pyproject.toml`, the Dockerfile ARGs and `runpod/requirements.txt`. The
