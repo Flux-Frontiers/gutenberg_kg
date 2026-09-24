@@ -240,10 +240,17 @@ With just `OPENAI_API_KEY` set:
 # docker/.env  — OpenAI for both text synthesis and image generation
 OPENAI_API_KEY=sk-...
 WORKER_IMAGE_BACKEND=openai   # route images to gpt-image-1 (default is local mflux-serve)
-# Optional overrides:
-SYNTH_MODEL=gpt-4o            # text model (default gpt-4o-mini)
+# Optional override:
 IMAGE_MODEL=gpt-image-1       # image model (default gpt-image-1)
 ```
+
+The text model is chosen per request: pick it in the chat UI's model list, or
+send `"model"` to the worker.
+
+With `WORKER_IMAGE_BACKEND=openai`, every client that does not name a backend
+gets `gpt-image-1`, and OpenAI bills each image. A 1024x1024 image takes about
+50 s. To go back to the local server, set `WORKER_IMAGE_BACKEND=mflux-serve` and
+recreate the worker (see [API keys and `docker/.env`](#api-keys-and-dockerenv)).
 
 Because OpenAI is a cloud API, it is the **one path that needs nothing installed locally at all** — no Apple Silicon, no oMLX, no local image server. It is not the only cross-platform option, though: Ollama covers text synthesis on Linux and Windows, and SDXL-Lightning covers images (below).
 
@@ -269,6 +276,69 @@ Point the worker at whichever is running via `GUTENKG_IMAGE_ENDPOINT` in `docker
 > `make` exports a command-line variable, `docker/.env` sets the worker's value
 > as `WORKER_IMAGE_BACKEND`, and compose and `RUNTIME=apple` pass it into the
 > container as `IMAGE_BACKEND`.
+
+---
+
+## API keys and `docker/.env`
+
+Keys (`OPENAI_API_KEY`, `VLLM_API_KEY`, `IMAGE_API_KEY`, `HANDLER_SECRET`) go
+in `docker/.env`, which git ignores. `docker/.env.example` is the tracked
+template and holds placeholders only.
+
+**Keys are applied when the container starts, not when the image is built.**
+Compose's `environment:` block and the `RUNTIME=apple` recipe's `-e` flags read
+`docker/.env` at start. The image build copies only `pyproject.toml`,
+`README.md`, `src/gutenberg_kg/` and the corpus bundle, and the Hugging Face
+token reaches the build as a BuildKit secret, which is not written to any layer.
+An image from `make build` holds no keys and is safe to push to a registry.
+
+Two ways a key can still leak:
+
+- `docker commit` of a running container makes an image that includes that
+  container's environment. Push only images from `make build`.
+- `docker inspect` / `container inspect` of a running container prints its
+  environment, keys included.
+
+**After editing `docker/.env`, recreate the worker.** No rebuild is needed:
+
+```bash
+docker compose -f docker/docker-compose.yml up -d worker            # Docker
+container delete -f gutenberg-worker && make run RUNTIME=apple      # Apple
+```
+
+`make run RUNTIME=apple` leaves a running worker alone, so without the
+`delete` it keeps the old environment. A rebuild (`make build`) is only needed
+when the code or the corpus bundle changes.
+
+---
+
+## Serving phones and other devices on your LAN
+
+The iOS and macOS apps talk only to the worker; the worker calls the LLM and
+image servers on the Mac. Set the app's worker URL to
+`http://<your-mac>.local:8000` or `http://<LAN-IP>:8000`. `localhost` on a
+phone is the phone.
+
+Checklist on the Mac that runs the worker:
+
+1. **One container runtime.** With Docker Desktop and Apple's container
+   services both running, other devices can ping the Mac but every TCP
+   connection to it hangs. `make run`, `make chat` and `make up` refuse to
+   start in that state; `make down-all` stops both runtimes.
+2. **Host services listen on `0.0.0.0`.** Under `RUNTIME=apple` the containers
+   reach oMLX (`:8080`), Ollama (`:11434`) and the image server (`:8090`) over
+   vmnet, which a `127.0.0.1` listener does not accept.
+3. **The oMLX key matches.** If oMLX verifies API keys, `VLLM_API_KEY` must be
+   its key; otherwise synthesis fails with 401.
+4. **No stale VPN DNS.** A VPN that was uninstalled or stopped (Tailscale, for
+   one) can leave its DNS server set on the Wi-Fi service, which slows or
+   breaks name lookups. Check with `networksetup -getdnsservers Wi-Fi`; clear
+   with `sudo networksetup -setdnsservers Wi-Fi Empty`.
+
+From the phone, open `http://<LAN-IP>:8000/health` in Safari. A
+`{"detail":"Not Found"}` page means the network path works and the problem is
+in the app; turn on the app's Local Network access in iOS Settings. A page that
+never loads means the network path is broken; work through the checklist.
 
 ---
 
@@ -349,7 +419,12 @@ The local `gutenkg imagine` command (outside Docker) reads its own `GUTENKG_*` v
 | Synthesis returns errors / empty | Confirm your LLM server is running and `VLLM_ENDPOINT_URL` / `OLLAMA_ENDPOINT` in `docker/.env` is reachable from the container. |
 | Worker can't reach host LLM | Use `host.docker.internal`, not `localhost`, in the endpoint URLs. The compose file adds the required `extra_hosts` entry. |
 | Slow first query in Docker | The embedding model is pre-downloaded at build time and runs offline (`HF_HUB_OFFLINE=1`); the first request still warms the model into memory. |
-| Image generation unavailable on Linux/Windows | FLUX.2-Klein / MLX image generation is Apple-Silicon-only. Query and synthesis work everywhere. |
+| Image generation unavailable on Linux/Windows | FLUX.2-Klein / MLX image generation is Apple-Silicon-only. Use SDXL-Lightning (`make sdxl-server`) or OpenAI (`WORKER_IMAGE_BACKEND=openai`). |
+| Changed `docker/.env`, nothing changed | Recreate the worker; see [API keys and `docker/.env`](#api-keys-and-dockerenv). |
+| Synthesis fails with 401 from oMLX | `VLLM_API_KEY` is empty or wrong while oMLX verifies keys. |
+| Phone or another Mac cannot reach the worker | See [Serving phones and other devices on your LAN](#serving-phones-and-other-devices-on-your-lan). |
+| `make up` stops with "is running. With both container runtimes up" | The other runtime is running. `make down-all`, then `make up`. |
+| Every `docker` command fails with HTTP 500 | Docker Desktop's backend outlived its engine. Quit Docker Desktop, `pkill -x com.docker.backend`, reopen it. |
 
 ---
 

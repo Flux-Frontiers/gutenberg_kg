@@ -30,7 +30,10 @@ Notes:
   TCP connections to it, so phones and other hosts cannot reach the worker or
   image server. `make run`, `make chat` and `make up` refuse to start when the
   other runtime is up; `make down-all` stops both. `ALLOW_BOTH_RUNTIMES=1`
-  skips the check.
+  skips the check. See [Serving phones and other devices on your LAN](INSTALLATION.md#serving-phones-and-other-devices-on-your-lan).
+- **Changing `docker/.env` needs a new worker, not a new image.**
+  `make run RUNTIME=apple` leaves a running worker alone, so run
+  `container delete -f gutenberg-worker` first.
 - **Memory/CPU are per-container VM flags**, defaulting to 2g/6 CPUs for the
   worker and 512m for chat. Override like `make run RUNTIME=apple WORKER_MEM=4g`
   if a larger corpus or heavier query load needs headroom. These follow the

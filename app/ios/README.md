@@ -39,7 +39,8 @@ before the ~800 MB download.
   phone, not the Mac — the app cannot find your worker there. If the phone
   cannot connect but `curl http://localhost:8000` works on the Mac, check
   that only one container runtime is running (`make down-all`, then `make up`)
-  and that the app has Local Network access in iOS Settings.
+  and that the app has Local Network access in iOS Settings. The full
+  checklist is in [INSTALLATION.md](../../docs/INSTALLATION.md#serving-phones-and-other-devices-on-your-lan).
 
 ## Build
 

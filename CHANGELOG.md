@@ -10,6 +10,10 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added
 
+- **Setup docs for keys and LAN serving.** `docs/INSTALLATION.md` now covers
+  where keys live and why a built image holds none, recreating the worker
+  after a `docker/.env` change, and a checklist for serving the iOS and macOS
+  apps from a Mac on the LAN, plus matching troubleshooting rows.
 - **`make down-all`, and a guard against running two container runtimes.**
   With Docker Desktop and Apple's container services both running, other
   machines could ping the Mac but every inbound TCP connection hung, so the
