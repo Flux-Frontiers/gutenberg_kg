@@ -149,7 +149,7 @@ Steps 1 and 2 build the corpus bundle and the image locally, which takes a
 while. A published image skips both:
 
 ```bash
-make pull-image        # pulls docker.io/egsuchanek/corpus-gutenberg:latest, tags it corpus-gutenberg:latest
+make pull-worker-image        # pulls docker.io/egsuchanek/corpus-gutenberg:latest, tags it corpus-gutenberg:latest
 make up
 ```
 
@@ -160,7 +160,7 @@ and keys come from `docker/.env` when the container starts. Use another
 registry with `REGISTRY_IMAGE=...`.
 
 To publish one, log in once (`docker login`, or `container registry login
-docker.io` under `RUNTIME=apple`) and run `make push-image`. It builds every
+docker.io` under `RUNTIME=apple`) and run `make publish-worker-image`. It builds every
 platform in `PLATFORMS` (default `linux/amd64,linux/arm64`) and pushes the image
 index. Apple's `container build` builds the amd64 half under Rosetta; Docker
 uses a `docker-container` buildx builder named `gutenkg-multiarch`, created on
@@ -197,8 +197,8 @@ make logs        # follow worker logs
 | `make kill` | force-remove the worker and chat containers under both Docker and Apple `container`, plus the image servers |
 | `make down-all` | `make kill`, then stop Apple's container services and quit Docker Desktop |
 | `make clean` | remove the Docker image |
-| `make push-image` | build `linux/amd64` + `linux/arm64` and push to `REGISTRY_IMAGE` |
-| `make pull-image` | pull the published image and tag it locally, instead of building |
+| `make publish-worker-image` | build `linux/amd64` + `linux/arm64` and push to `REGISTRY_IMAGE` |
+| `make pull-worker-image` | pull the published image and tag it locally, instead of building |
 
 ---
 

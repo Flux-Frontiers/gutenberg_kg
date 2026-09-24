@@ -10,12 +10,12 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added
 
-- **`make push-image` and `make pull-image`: one multi-arch image for
-  everyone.** `push-image` builds `linux/amd64` and `linux/arm64` into one image
+- **`make publish-worker-image` and `make pull-worker-image`: one multi-arch image for
+  everyone.** `publish-worker-image` builds `linux/amd64` and `linux/arm64` into one image
   index and pushes it to `REGISTRY_IMAGE` (default
   `docker.io/egsuchanek/corpus-gutenberg`); under `RUNTIME=apple`,
   `container build` runs the amd64 half under Rosetta, and under Docker a
-  `docker-container` buildx builder does it. `pull-image` fetches the published
+  `docker-container` buildx builder does it. `pull-worker-image` fetches the published
   image and tags it as the local one, so a new machine can skip `build-corpus`
   and `build`. The image holds no runtime-specific settings and no keys, so the
   same image runs under Docker or Apple `container`, on Apple Silicon or x86.
