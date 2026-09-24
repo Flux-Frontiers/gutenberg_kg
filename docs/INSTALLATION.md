@@ -159,14 +159,47 @@ Silicon and on x86 Linux or Windows, under Docker or Apple `container`
 and keys come from `docker/.env` when the container starts. Use another
 registry with `REGISTRY_IMAGE=...`.
 
-To publish one, log in once (`docker login`, or `container registry login
-docker.io` under `RUNTIME=apple`) and run `make publish-worker-image`. It builds every
-platform in `PLATFORMS` (default `linux/amd64,linux/arm64`) and pushes the image
-index. Apple's `container build` builds the amd64 half under Rosetta; Docker
-uses a `docker-container` buildx builder named `gutenkg-multiarch`, created on
-first use. The image carries the whole corpus bundle, several GB per
-platform; the bundle layer is the same bytes on both, so the registry stores
-it once.
+#### Publishing the worker image (maintainers)
+
+`make publish-worker-image` builds every platform in `PLATFORMS` (default
+`linux/amd64,linux/arm64`) and pushes one image index to `REGISTRY_IMAGE`. The
+image carries the whole corpus bundle, several GB per platform; the bundle
+layer is the same bytes on both, so the registry stores it once.
+
+Publish with Docker:
+
+```bash
+make build-corpus                        # if the corpus changed
+make publish-worker-image RUNTIME=docker
+```
+
+Docker Desktop already holds the Docker Hub login (browser sign-in), and a
+`docker-container` buildx builder named `gutenkg-multiarch` is created on
+first use. Its amd64 half runs under QEMU, so the first build is slow; later
+builds reuse the builder's cache.
+
+`RUNTIME=apple` builds both platforms faster (Rosetta for amd64), but pushing
+from it did not work on 2026-09-24: the upload runs in Apple's background
+service, which could not read the registry login from the keychain. If you
+try it anyway:
+
+- With two-factor authentication on Docker Hub, the password must be a
+  Personal Access Token with Read & Write (Account settings > Personal access
+  tokens); the account password is refused.
+- Give the username as a flag, one command at a time:
+  `container registry login --username egsuchanek docker.io`. Pasting several
+  lines at the interactive prompt stores the next line as the username.
+  `container registry list` shows what was saved.
+- A built image can be pushed again without rebuilding:
+  `container image push docker.io/egsuchanek/corpus-gutenberg:latest`.
+- If a build then fails with `COPY ... not found`, or "transferring context"
+  stops well short of the usual ~5.7 GB, the builder VM is wedged from an
+  earlier failure: `container builder stop && container builder delete`, then
+  build again.
+
+Check the result with `docker buildx imagetools inspect
+docker.io/egsuchanek/corpus-gutenberg:latest`; it should list `linux/amd64`
+and `linux/arm64`.
 
 ### 3. Lighter setups and lifecycle
 
