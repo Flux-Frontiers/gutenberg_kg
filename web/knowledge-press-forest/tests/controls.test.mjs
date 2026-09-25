@@ -5,7 +5,7 @@ const require = createRequire(import.meta.url);
 const { sim, resetSim, teleportSim, stepVehicle, forwardOf } = require(`${process.env.FOREST_TEST_BUILD}/sim.js`);
 const input = require(`${process.env.FOREST_TEST_BUILD}/input.js`);
 const { readPreferences } = require(`${process.env.FOREST_TEST_BUILD}/preferences.js`);
-const empty = { spawn: { x: 0, z: 0, yaw: 0 }, worldRadius: 1000, trees: [], grid: new Map(), cell: 16 };
+const empty = { spawn: { x: 0, z: 0, yaw: 0 }, worldRadius: 1000, trees: [], obstacles: [], grid: new Map(), cell: 16 };
 function drive(seconds, throttle, steer = 0, options = {}, hz = 60) {
   for (let i = 0; i < seconds * hz; i++) stepVehicle(empty, throttle, steer, false, 1 / hz, options);
 }
@@ -106,6 +106,8 @@ test("old or malformed preferences have usable defaults and bounded sensitivity"
   assert.equal(readPreferences({ leaves: "bogus" }).leaves, "medium");
   assert.equal(readPreferences({ leaves: "ultra" }).leaves, "ultra");
   assert.equal(readPreferences({}).stats, false);
+  assert.equal(readPreferences({}).silent, false);
+  assert.equal(readPreferences({ silent: true }).silent, true);
   assert.equal(readPreferences({ motion: false }).motion, false);
 });
 

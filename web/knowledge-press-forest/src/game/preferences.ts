@@ -8,6 +8,8 @@ export type Preferences = {
   leaves: LeafDetail;
   /** Show triangles, draw calls, leaves and frame rate. */
   stats: boolean;
+  /** Silent mode: no cards pop up on their own (nearby book, redwood, quest hints). */
+  silent: boolean;
 };
 
 export type LeafDetail = "low" | "medium" | "high" | "ultra";
@@ -32,5 +34,6 @@ export function readPreferences(value?: Partial<Preferences>): Preferences {
     leaves: value?.leaves && value.leaves in LEAF_SCALE ? value.leaves
       : typeof matchMedia === "function" && matchMedia("(pointer: coarse)").matches ? "low" : "medium",
     stats: value?.stats === true,
+    silent: value?.silent === true,
   };
 }

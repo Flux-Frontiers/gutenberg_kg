@@ -5,7 +5,8 @@ import { ForestFloor, Sky, Sunlight, useGroundTexture } from "./Environment";
 import { DAY_OVERRIDE } from "./daylight";
 import { bookMatchesQuery, groveApproach, groveByGenre, type Forest } from "./forest";
 import { disc, ribbon, type FlatMesh } from "./roads";
-import { HubSculpture } from "./HubSculpture";
+import { CorpusRedwood } from "./CorpusRedwood";
+import { Mysterium } from "./Mysterium";
 import { Signposts } from "./Signposts";
 import { SEASONS, type SeasonName } from "./seasons";
 import { sim } from "./sim";
@@ -70,7 +71,8 @@ export function World({ forest, season }: { forest: Forest; season: SeasonName }
         );
       })}
 
-      <HubSculpture />
+      <CorpusRedwood forest={forest} season={season} />
+      {forest.exhibits.map((e) => (e.id === "mysterium" ? <Mysterium key={e.id} exhibit={e} /> : null))}
 
     </>
   );
@@ -225,7 +227,8 @@ function LanternTrail({
           found = true;
         }
       }
-      if (!found) {
+      // Standing at the nearest answer, the trail has nowhere to lead.
+      if (!found || bestD < 9) {
         mesh.count = 0;
         return;
       }

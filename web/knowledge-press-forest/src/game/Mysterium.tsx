@@ -2,6 +2,7 @@ import { useFrame } from "@react-three/fiber";
 import { useEffect, useLayoutEffect, useMemo, useRef } from "react";
 import {
   BoxGeometry,
+  CanvasTexture,
   BufferGeometry,
   DodecahedronGeometry,
   EdgesGeometry,
@@ -15,7 +16,8 @@ import {
   TetrahedronGeometry,
   Vector3,
 } from "three";
-import { HUB_SCULPTURE_R } from "./forest";
+import type { Exhibit } from "./exhibits";
+import { makePlaqueTexture } from "./Signposts";
 import { useGame } from "./store";
 
 /**
@@ -23,7 +25,7 @@ import { useGame } from "./store";
  * between the six planetary shells, each solid inscribed in one shell and
  * circumscribing the next, in Kepler's order from Saturn inward. Shells are
  * armillary rings (three great circles), not spheres; every shell turns on its
- * own axis. A book about geometry, standing where the roads meet.
+ * own axis. An exhibit in a roadside glade (exhibits.ts).
  */
 
 const SATURN_R = 3.4;
@@ -102,7 +104,40 @@ function Shell({ radius, tube, material }: { radius: number; tube: number; mater
   );
 }
 
-export function HubSculpture() {
+const KEPLER_BODY =
+  "The five Platonic solids, nested between the six planetary spheres as Johannes Kepler " +
+  "proposed in 1596. Each solid fits inside one planet's sphere and around the next. From the " +
+  "outside in: Saturn, cube, Jupiter, tetrahedron, Mars, dodecahedron, Earth, icosahedron, " +
+  "Venus, octahedron, Mercury, with the Sun at the center. The spacing here is Kepler's own: " +
+  "each sphere is the inner radius of the solid around it. He was wrong about the planets, and " +
+  "right that geometry could be asked the question.";
+
+/** Between the sculpture and the road, facing the road, so it reads with the sculpture behind it. */
+function KeplerPlaque({ exhibit: e }: { exhibit: Exhibit }) {
+  const tex = useMemo<CanvasTexture>(() => makePlaqueTexture("Mysterium Cosmographicum", "Johannes Kepler · 1596", KEPLER_BODY), []);
+  useEffect(() => () => tex.dispose(), [tex]);
+  const dx = e.roadX - e.x, dz = e.roadZ - e.z;
+  const d = Math.hypot(dx, dz) || 1;
+  const x = (dx / d) * (e.obstacle + 1.9), z = (dz / d) * (e.obstacle + 1.9);
+  return (
+    <group position={[x, 0, z]} rotation={[0, Math.atan2(dx, dz), 0]}>
+      {[-1.25, 1.25].map((px) => (
+        <mesh key={px} position={[px, 0.8, 0]}>
+          <cylinderGeometry args={[0.07, 0.09, 1.6, 6]} />
+          <meshStandardMaterial color="#4a3a2a" roughness={0.9} />
+        </mesh>
+      ))}
+      {/* Tilted back like a lectern so it reads from the cart. */}
+      <mesh position={[0, 1.55, 0.05]} rotation={[-0.35, 0, 0]}>
+        <boxGeometry args={[3.0, 1.5, 0.06]} />
+        <meshStandardMaterial map={tex} roughness={0.7} />
+      </mesh>
+    </group>
+  );
+}
+
+export function Mysterium({ exhibit }: { exhibit: Exhibit }) {
+  const R = exhibit.obstacle;
   const day = useGame((s) => s.timeOfDay === "day");
   const materials = useMemo(() => ({
     brass: new MeshStandardMaterial({ color: "#c9a24a", metalness: 0.65, roughness: 0.32 }),
@@ -143,10 +178,11 @@ export function HubSculpture() {
   });
 
   return (
-    <group>
-      {/* Stepped plinth; the cart collides with its lowest step (HUB_SCULPTURE_R). */}
+    <group position={[exhibit.x, 0, exhibit.z]}>
+      <KeplerPlaque exhibit={exhibit} />
+      {/* Stepped plinth; the cart collides with its lowest step (exhibit.obstacle). */}
       <mesh position={[0, 0.25, 0]} material={materials.stone} castShadow receiveShadow>
-        <cylinderGeometry args={[HUB_SCULPTURE_R - 0.2, HUB_SCULPTURE_R, 0.5, 8]} />
+        <cylinderGeometry args={[R - 0.2, R, 0.5, 8]} />
       </mesh>
       <mesh position={[0, 0.75, 0]} material={materials.stone} castShadow receiveShadow>
         <cylinderGeometry args={[1.7, 1.9, 0.5, 8]} />

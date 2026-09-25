@@ -1,5 +1,7 @@
 import { BOOKS, type Book } from "./catalog";
-import { GROW_VERSION, emitBark, emitLeaves, growTree, type BarkBuffers } from "./growTree";
+import { growCorpusTree, type CorpusTree } from "./corpusTree";
+import { EXHIBITS, placeExhibits, type Exhibit } from "./exhibits";
+import { GROW_VERSION, emitBark, emitLeaves, growTree, type BarkBuffers, type GrownTree } from "./growTree";
 import { packAroundHub, sunflower } from "./math";
 import { routeNetwork } from "./routing";
 import { SPECIES, speciesFor } from "./species";
@@ -61,16 +63,17 @@ export type Waypoint = {
   label: string;
 };
 
-/** The hub: a paved plaza around the sculpture's plinth (the cart collides with the plinth). */
-export const HUB_PLAZA_R = 8;
-export const HUB_SCULPTURE_R = 2.6;
-// Home: 13 m out along the Kepler plaque's bearing, so the plaque stands between
-// the cart and the sculpture; facing the hub (yaw convention of sim.yawToward).
-const HOME_DIR = Math.atan2(4.6, -4.2);
+/** The hub: a paved plaza around the corpus redwood (the cart collides with its root flare). */
+export const HUB_PLAZA_R = 10;
+/** Bearing of the redwood's plaque from the hub; home looks back along it. */
+export const HUB_PLAQUE_DIR = Math.atan2(4.6, -4.2);
+export const HUB_PLAQUE_DIST = 7.2;
+// Home: 15 m out along the plaque's bearing, so the plaque stands between the
+// cart and the redwood; facing the hub (yaw convention of sim.yawToward).
 const HOME = {
-  x: Math.cos(HOME_DIR) * 13,
-  z: Math.sin(HOME_DIR) * 13,
-  yaw: Math.atan2(Math.cos(HOME_DIR), Math.sin(HOME_DIR)),
+  x: Math.cos(HUB_PLAQUE_DIR) * 15,
+  z: Math.sin(HUB_PLAQUE_DIR) * 15,
+  yaw: Math.atan2(Math.cos(HUB_PLAQUE_DIR), Math.sin(HUB_PLAQUE_DIR)),
 };
 
 export type Chunk = {
@@ -117,12 +120,17 @@ export type Forest = {
     treeIndex: Uint16Array;
     species: Uint8Array;
   };
+  /** Where the drive starts: home. */
   spawn: { x: number; z: number; yaw: number };
-  /** On the hub plaza behind the Kepler plaque, facing the sculpture. */
+  /** On the hub plaza behind the redwood's plaque, facing the redwood. */
   home: { x: number; z: number; yaw: number };
   worldRadius: number;
-  /** Radius of the hub sculpture's plinth, which the cart cannot drive through (0: none). */
-  hubObstacle?: number;
+  /** The corpus redwood at the hub: one limb per book. */
+  corpusTree: CorpusTree;
+  /** Set pieces in roadside glades. */
+  exhibits: Exhibit[];
+  /** Discs the cart cannot drive into besides trunks: the redwood and each exhibit's plinth. */
+  obstacles: { x: number; z: number; r: number }[];
   grid: Map<string, number[]>;
   cell: number;
 };
@@ -158,6 +166,75 @@ export function groveByGenre(forest: Forest, genre: string): Grove | undefined {
   return forest.groves.find((g) => g.genre === genre);
 }
 
+/** Trunks in a grove stand at least this far apart, for driving room. */
+const MIN_TRUNK_GAP = 7.5;
+/** Clear air kept between neighbouring trees' wood (crown shyness). */
+const CROWN_GAP = 0.6;
+const WOOD_CELL = 2;
+
+/**
+ * Place a grove's trees as close to its heart as their wood allows: largest
+ * crown first, each tree takes the innermost spot on a fine sunflower spiral
+ * where its trunk keeps MIN_TRUNK_GAP and every branch keeps CROWN_GAP of air
+ * from the trees already standing. Crowns may interleave (a small tree under a
+ * big one's limbs) but never pass through each other. Returns trunk offsets
+ * from the grove centre in `grown` order, and the farthest trunk's distance.
+ */
+function shyLayout(grown: GrownTree[], inner: number): { pts: { x: number; z: number }[]; outer: number } {
+  const n = grown.length;
+  const reach = grown.map(({ skeleton: { nodes, n: m } }) => {
+    let r = 0;
+    for (let k = 0; k < m; k++) r = Math.max(r, Math.hypot(nodes[k * 3]!, nodes[k * 3 + 2]!));
+    return r;
+  });
+  const order = [...Array(n).keys()].sort((a, b) => reach[b]! - reach[a]! || a - b);
+  const cands = sunflower(n * 80 + 200, inner, 2).pts;
+  const placed: { i: number; x: number; z: number }[] = [];
+  // Placed wood as flat (x, y, z, padded radius) runs in a 3-D hash grid.
+  const grid = new Map<string, number[]>();
+  const key = (x: number, y: number, z: number) => Math.floor(x / WOOD_CELL) + "," + Math.floor(y / WOOD_CELL) + "," + Math.floor(z / WOOD_CELL);
+  const pad = (i: number, k: number) => grown[i]!.skeleton.radii[k]! + 0.5 * grown[i]!.step;
+  const out: { x: number; z: number }[] = new Array(n);
+
+  const woodHits = (i: number, cx: number, cz: number, near: typeof placed) => {
+    const { nodes, n: m } = grown[i]!.skeleton;
+    for (let k = 0; k < m; k++) {
+      const x = cx + nodes[k * 3]!, y = nodes[k * 3 + 1]!, z = cz + nodes[k * 3 + 2]!;
+      // Only branches inside a neighbour's crown can touch it.
+      if (!near.some((p) => Math.hypot(x - p.x, z - p.z) <= reach[p.i]! + WOOD_CELL)) continue;
+      const pk = pad(i, k) + CROWN_GAP;
+      const gx = Math.floor(x / WOOD_CELL), gy = Math.floor(y / WOOD_CELL), gz = Math.floor(z / WOOD_CELL);
+      for (let a = gx - 1; a <= gx + 1; a++) for (let b = gy - 1; b <= gy + 1; b++) for (let c = gz - 1; c <= gz + 1; c++) {
+        const cell = grid.get(a + "," + b + "," + c);
+        if (!cell) continue;
+        for (let q = 0; q < cell.length; q += 4) {
+          if (Math.hypot(x - cell[q]!, y - cell[q + 1]!, z - cell[q + 2]!) < pk + cell[q + 3]!) return true;
+        }
+      }
+    }
+    return false;
+  };
+
+  for (const i of order) {
+    for (const c of cands) {
+      if (placed.some((p) => Math.hypot(p.x - c.x, p.z - c.z) < MIN_TRUNK_GAP)) continue;
+      const near = placed.filter((p) => Math.hypot(p.x - c.x, p.z - c.z) < reach[i]! + reach[p.i]! + CROWN_GAP);
+      if (near.length && woodHits(i, c.x, c.z, near)) continue;
+      placed.push({ i, x: c.x, z: c.z });
+      out[i] = c;
+      const { nodes, n: m } = grown[i]!.skeleton;
+      for (let k = 0; k < m; k++) {
+        const x = c.x + nodes[k * 3]!, y = nodes[k * 3 + 1]!, z = c.z + nodes[k * 3 + 2]!;
+        const kk = key(x, y, z);
+        const cell = grid.get(kk);
+        if (cell) cell.push(x, y, z, pad(i, k)); else grid.set(kk, [x, y, z, pad(i, k)]);
+      }
+      break;
+    }
+  }
+  return { pts: out, outer: Math.max(0, ...out.map((p) => Math.hypot(p.x, p.z))) };
+}
+
 function buildForest(leafMultiplier: number): Forest {
   const byGenre = new Map<string, Book[]>();
   for (const b of BOOKS) {
@@ -167,13 +244,13 @@ function buildForest(leafMultiplier: number): Forest {
   }
   const genres = [...byGenre.keys()];
   const nGenres = genres.length;
-  // Compact layout: trees on an even sunflower grid TREE_SPACING apart, and
-  // groves packed as close to the hub as they fit, GROVE_GAP apart for roads.
-  // (The old linear spirals spread 253 trees over a ~370 m radius.)
-  const TREE_SPACING = 9;
+  // Compact layout: trees packed as tight as their crowns allow (shyLayout),
+  // and groves packed as close to the hub as they fit, GROVE_GAP apart for roads.
   const GROVE_GAP = 10;
   const bookInner = 6.5;
-  const layouts = genres.map((g) => sunflower(byGenre.get(g)!.length, bookInner, TREE_SPACING));
+  const grownBy = genres.map((g) => byGenre.get(g)!.map((book) =>
+    growTree({ slug: book.slug, genre: book.genre, nChunks: book.chunks, leafScale: leafMultiplier })));
+  const layouts = grownBy.map((g) => shyLayout(g, bookInner));
   const groveRadius = (outer: number) => Math.max(14, outer) + 6;
   const groveCenters = packAroundHub(layouts.map((l) => groveRadius(l.outer)), 22, GROVE_GAP);
 
@@ -210,7 +287,7 @@ function buildForest(leafMultiplier: number): Forest {
       const s = spots[bi]!;
       const x = c.x + s.x;
       const z = c.z + s.z;
-      const grown = growTree({ slug: book.slug, genre: book.genre, nChunks: book.chunks, leafScale: leafMultiplier });
+      const grown = grownBy[gi]![bi]!;
       const woodStart = bark.pos.length / 3;
       const woodCount = emitBark(grown, x, z, bark, SPECIES[species]!.barkAspect);
       const leafStart = leafPos.length / 3;
@@ -270,19 +347,6 @@ function buildForest(leafMultiplier: number): Forest {
     if (d > worldRadius) worldRadius = d;
   }
 
-  const hamlet = trees.find((t) => t.book.slug === "hamlet");
-  let spawnX = 0;
-  let spawnZ = 8;
-  let spawnYaw = 0;
-  if (hamlet) {
-    const dx = hamlet.x;
-    const dz = hamlet.z;
-    const dist = Math.hypot(dx, dz) || 1;
-    spawnX = hamlet.x - (dx / dist) * 14;
-    spawnZ = hamlet.z - (dz / dist) * 14;
-    spawnYaw = Math.atan2(-dx / dist, -dz / dist);
-  }
-
   const circuit = groves
     .map((g) => groveApproach(g))
     .sort((a, b) => Math.atan2(a.z, a.x) - Math.atan2(b.z, b.x));
@@ -291,14 +355,15 @@ function buildForest(leafMultiplier: number): Forest {
   // ROAD_CLEARANCE from every trunk surface: half the widest road (1.7 m) plus
   // the cart's radius (1.05 m), so nothing on a road can pin the cart.
   const ROAD_CLEARANCE = 2.75;
-  const obstacles = [
-    ...trees.map((t) => ({ x: t.x, z: t.z, r: t.trunkRadius })),
-    { x: 0, z: 0, r: HUB_SCULPTURE_R },
-  ];
+  const fir = SPECIES.find((s) => s.name === "fir")!;
+  const corpusTree = growCorpusTree(trees, fir.barkAspect);
   const net = routeNetwork({
     hubR: HUB_PLAZA_R - 1,
     stops: circuit.map((wp) => [wp.x, wp.z] as [number, number]),
-    obstacles,
+    obstacles: [
+      ...trees.map((t) => ({ x: t.x, z: t.z, r: t.trunkRadius })),
+      { x: 0, z: 0, r: corpusTree.baseRadius },
+    ],
     worldR: Math.max(...groves.map((g) => Math.hypot(g.x, g.z) + g.radius)) + 20,
     need: ROAD_CLEARANCE,
   });
@@ -314,7 +379,12 @@ function buildForest(leafMultiplier: number): Forest {
       roads.push({ ax, az, bx, bz, kind: line.kind });
     }
   }
-  const plazas = [{ x: 0, z: 0, r: HUB_PLAZA_R }, ...circuit.map((wp) => ({ x: wp.x, z: wp.z, r: 4 }))];
+  const exhibits = placeExhibits({ specs: EXHIBITS, roadLines, trees, worldRadius });
+  const plazas = [
+    { x: 0, z: 0, r: HUB_PLAZA_R },
+    ...circuit.map((wp) => ({ x: wp.x, z: wp.z, r: 4 })),
+    ...exhibits.map((e) => ({ x: e.x, z: e.z, r: e.plazaR })),
+  ];
   // Each ring sample carries the grove whose stop comes next, so the tour still
   // lights the right signpost and trail.
   const ringPath: Waypoint[] = ring.pts.map(([x, z], i) => {
@@ -341,10 +411,12 @@ function buildForest(leafMultiplier: number): Forest {
       treeIndex: Uint16Array.from(leafTree),
       species: Uint8Array.from(leafSpecies),
     },
-    spawn: { x: spawnX, z: spawnZ, yaw: spawnYaw },
+    spawn: HOME,
     home: HOME,
     worldRadius: worldRadius + 18,
-    hubObstacle: HUB_SCULPTURE_R,
+    corpusTree,
+    exhibits,
+    obstacles: [{ x: 0, z: 0, r: corpusTree.baseRadius }, ...exhibits.map((e) => ({ x: e.x, z: e.z, r: e.obstacle }))],
     grid,
     cell,
   };

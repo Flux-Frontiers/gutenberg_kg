@@ -28,7 +28,8 @@ export function ForestCanvas({ forest }: { forest: Forest }) {
       onPointerDown={() => (document.activeElement as HTMLElement | null)?.blur()}
       onPointerMissed={() => {
         const s = useGame.getState();
-        if (s.libraryOpen) s.toggleLibrary();
+        if (s.catalogOpen) s.setCatalogOpen(false);
+        else if (s.libraryOpen) s.toggleLibrary();
         else if (s.atlasOpen) s.toggleAtlas();
         else s.dismissNearby();
       }}

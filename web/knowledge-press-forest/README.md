@@ -29,15 +29,29 @@ Open the URL Vite prints. Click **Start driving**.
 | **Space** | brake |
 | **C** | camera: behind the cart, high view, in the cart |
 | **E** | read the nearest tree into the press |
-| **G** | grove atlas — jump to a genre |
+| **G** | grove atlas — jump to a genre or an exhibit |
+| **B** | every book — filter the corpus and jump to any tree |
 | **Q** | ride the ring road (steer to hop off) |
-| **H** | return to Hamlet |
+| **H** | return home, in front of the corpus redwood |
 | **L** | open the press (collected books) |
 | **Esc** | settings (leaf complexity, geometry readout, camera, pace) |
 
 Click a grove on the minimap to jump there. The cart is **not** locked to rails
-unless you ride the ring. Brick spokes run from the press to each grove, and a
+unless you ride the ring. Brick spokes run from the hub to each grove, and a
 brick ring road links the groves.
+
+The drive starts at home, facing the **corpus redwood** at the hub: one tree
+for the whole library, 3.4 m tall per doubling of the corpus's chunks, with one
+limb per book reaching toward that book's own tree. Its plaque and the **B**
+list lead to every book. **Exhibits** stand in roadside glades; the first is
+Kepler's *Mysterium Cosmographicum*. Gold diamonds on the minimap jump to them.
+
+Trees in a grove are placed as tight as their wood allows: each takes the
+innermost spot where its trunk keeps 7.5 m and every branch keeps 0.6 m of air
+from its neighbours, so crowns interleave but never pass through each other.
+
+**Silent mode** (the bell, or Esc settings) stops cards popping up on their
+own: nearby books, the redwood, quest hints. **E** still reads a tree.
 
 On a phone, use the on-screen stick. Type a word in the lantern field to
 light matching groves (`stoic`, `freedom`, `fire`, `sea`) — the lantern trail
@@ -73,7 +87,10 @@ raise the caps in `growTree.ts` if you want denser Hamlet-scale skeletons.
 ```
 catalog.ts     253 books: genre, chunks, excerpt, tags
 growTree.ts    space colonization + pipe-model radii + leaf points
-forest.ts      grove layout, roads, circuit waypoints, spawn at Hamlet
+forest.ts      grove layout (crown-aware placement), roads, circuit waypoints, home
+corpusTree.ts  the hub redwood: one limb per book, pipe-model trunk, needle sprays
+exhibits.ts    roadside glades for set pieces
+CorpusRedwood.tsx, Mysterium.tsx   the redwood and the Kepler exhibit
 seasons.ts     canopy density + leaf / fog / ground palettes
 sim.ts         cart pose, throttle, steer, trunk collision, teleport
 Player.tsx     lantern cart + chase camera (A = left from behind)

@@ -109,6 +109,8 @@ export type GameStore = {
   lastReadSlug: string | null;
   selectedGrove: string | null;
   atlasOpen: boolean;
+  /** The corpus catalog: every book, to jump to its tree. */
+  catalogOpen: boolean;
   travelMode: TravelMode;
   jump: JumpPose | null;
   play: () => void;
@@ -130,6 +132,8 @@ export type GameStore = {
   selectGrove: (genre: string | null) => void;
   toggleAtlas: () => void;
   setAtlasOpen: (v: boolean) => void;
+  toggleCatalog: () => void;
+  setCatalogOpen: (v: boolean) => void;
   setTravelMode: (m: TravelMode) => void;
   toggleCircuit: () => void;
   requestJump: (pose: JumpPose, toast?: string) => void;
@@ -169,6 +173,7 @@ export const useGame = create<GameStore>((set, get) => ({
   lastReadSlug: null,
   selectedGrove: null,
   atlasOpen: false,
+  catalogOpen: false,
   travelMode: "free",
   jump: null,
   play: () => set({ playing: true, paused: false }),
@@ -219,12 +224,14 @@ export const useGame = create<GameStore>((set, get) => ({
   dismissQuestHint: (id) => set({ questHintHidden: id }),
   setPose: (x, z, yaw, speed) => set({ x, z, yaw, speed }),
   setToast: (toast) => set({ toast }),
-  toggleLibrary: () => set({ libraryOpen: !get().libraryOpen, atlasOpen: false }),
+  toggleLibrary: () => set({ libraryOpen: !get().libraryOpen, atlasOpen: false, catalogOpen: false }),
   toggleHelp: () => set({ helpOpen: !get().helpOpen }),
   setLastRead: (lastReadSlug) => set({ lastReadSlug }),
   selectGrove: (selectedGrove) => set({ selectedGrove }),
-  toggleAtlas: () => set({ atlasOpen: !get().atlasOpen, libraryOpen: false }),
+  toggleAtlas: () => set({ atlasOpen: !get().atlasOpen, libraryOpen: false, catalogOpen: false }),
   setAtlasOpen: (atlasOpen) => set({ atlasOpen }),
+  toggleCatalog: () => set({ catalogOpen: !get().catalogOpen, atlasOpen: false, libraryOpen: false }),
+  setCatalogOpen: (catalogOpen) => set({ catalogOpen }),
   // Leaving the ring drops the grove it was pointing at, so the lantern trail goes with it.
   setTravelMode: (travelMode) =>
     set(travelMode === "free" && get().travelMode === "circuit" ? { travelMode, selectedGrove: null } : { travelMode }),
@@ -243,6 +250,7 @@ export const useGame = create<GameStore>((set, get) => ({
       travelMode: "free",
       atlasOpen: false,
       libraryOpen: false,
+      catalogOpen: false,
       toast: toast ?? null,
     });
   },

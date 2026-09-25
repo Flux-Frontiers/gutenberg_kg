@@ -225,7 +225,8 @@ export function ForestFloor({ forest, season }: { forest: Forest; season: Season
         const radius = tree.trunkRadius + 1.3 + random() * 6;
         const x = tree.x + Math.cos(angle) * radius;
         const z = tree.z + Math.sin(angle) * radius;
-        // Leave the carriage paths clear.
+        // Leave the carriage paths and plazas clear.
+        if (forest.plazas.some((p) => Math.hypot(x - p.x, z - p.z) < p.r)) continue;
         if (forest.roads.some((r) => {
           const dx = r.bx - r.ax, dz = r.bz - r.az;
           const t = Math.max(0, Math.min(1, ((x - r.ax) * dx + (z - r.az) * dz) / (dx * dx + dz * dz)));

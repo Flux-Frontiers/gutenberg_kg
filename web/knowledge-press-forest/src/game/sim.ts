@@ -120,14 +120,17 @@ function step(forest: Forest, throttle: number, steer: number, boost: boolean, d
     }
   }
 
-  // The hub sculpture's plinth.
-  const hd = Math.hypot(sim.x, sim.z);
-  const hubMin = (forest.hubObstacle ?? 0) + cartR;
-  if (forest.hubObstacle && hd < hubMin) {
-    const nx = hd > 1e-4 ? sim.x / hd : -fx, nz = hd > 1e-4 ? sim.z / hd : -fz;
-    sim.x = nx * hubMin;
-    sim.z = nz * hubMin;
-    sim.speed *= 0.55;
+  // The redwood's root flare and the exhibits' plinths.
+  for (const o of forest.obstacles) {
+    const dx = sim.x - o.x, dz = sim.z - o.z;
+    const d = Math.hypot(dx, dz);
+    const min = o.r + cartR;
+    if (d < min) {
+      const nx = d > 1e-4 ? dx / d : -fx, nz = d > 1e-4 ? dz / d : -fz;
+      sim.x = o.x + nx * min;
+      sim.z = o.z + nz * min;
+      sim.speed *= 0.55;
+    }
   }
 
   const lim = forest.worldRadius;

@@ -53,11 +53,11 @@ test("compact layout: groves never overlap, trees keep driving room, the hub sta
       assert.ok(d >= 7.5, `${f.trees[i].book.slug} and ${f.trees[j].book.slug} are ${d.toFixed(1)} m apart`);
     }
   }
-  assert.ok(f.worldRadius < 260, `world radius ${f.worldRadius.toFixed(0)} m`);
+  assert.ok(f.worldRadius < 275, `world radius ${f.worldRadius.toFixed(0)} m`);
 });
 
-test("every road keeps the cart clear of every trunk and the hub plinth", () => {
-  const { getForest, HUB_SCULPTURE_R } = require(`${process.env.FOREST_TEST_BUILD}/forest.js`);
+test("every road keeps the cart clear of every trunk, the redwood and every exhibit", () => {
+  const { getForest } = require(`${process.env.FOREST_TEST_BUILD}/forest.js`);
   const f = getForest();
   // Centreline clearance = half the widest road (1.7) + the cart's radius (1.05).
   for (const line of f.roadLines) {
@@ -66,19 +66,21 @@ test("every road keeps the cart clear of every trunk and the hub plinth", () => 
         const c = Math.hypot(x - t.x, z - t.z) - t.trunkRadius;
         assert.ok(c >= 2.75 - 0.05, `${line.kind} passes ${c.toFixed(2)} m from ${t.book.slug}`);
       }
-      assert.ok(Math.hypot(x, z) - HUB_SCULPTURE_R >= 2.75 - 0.05, `${line.kind} clips the hub plinth`);
+      for (const o of f.obstacles) {
+        assert.ok(Math.hypot(x - o.x, z - o.z) - o.r >= 2.75 - 0.05, `${line.kind} clips the obstacle at ${o.x.toFixed(0)}, ${o.z.toFixed(0)}`);
+      }
     }
   }
 });
 
-test("home stands clear on the hub plaza, facing the sculpture", () => {
-  const { getForest, HUB_PLAZA_R, HUB_SCULPTURE_R } = require(`${process.env.FOREST_TEST_BUILD}/forest.js`);
+test("home stands clear of the hub plaza's redwood and plaque, facing the redwood", () => {
+  const { getForest, HUB_PLAZA_R, HUB_PLAQUE_DIST } = require(`${process.env.FOREST_TEST_BUILD}/forest.js`);
   const { forwardOf } = require(`${process.env.FOREST_TEST_BUILD}/sim.js`);
   const f = getForest();
   const { x, z, yaw } = f.home;
   const d = Math.hypot(x, z);
-  assert.ok(d > HUB_SCULPTURE_R + 1.05 && d > HUB_PLAZA_R, `home ${d.toFixed(1)} m from the hub`);
+  assert.ok(d > f.corpusTree.baseRadius + 1.05 && d > HUB_PLAZA_R && d > HUB_PLAQUE_DIST + 3, `home ${d.toFixed(1)} m from the hub`);
   for (const t of f.trees) assert.ok(Math.hypot(x - t.x, z - t.z) > t.trunkRadius + 3, `home crowds ${t.book.slug}`);
   const fw = forwardOf(yaw);
-  assert.ok((fw.x * -x + fw.z * -z) / d > 0.999, "home faces the sculpture");
+  assert.ok((fw.x * -x + fw.z * -z) / d > 0.999, "home faces the redwood");
 });

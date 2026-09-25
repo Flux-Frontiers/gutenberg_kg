@@ -38,7 +38,11 @@ This is the next world pass. The groves read as a model until the sky does.
 | WASD lantern cart, chase cam (A = left from behind) | `Player.tsx`, `sim.ts` |
 | Seasons (canopy density, palettes) | `seasons.ts` |
 | Lantern query over titles, tags, excerpts | `HUD.tsx`, `Trees.tsx` |
-| Grove atlas, minimap jump, Hamlet return | `HUD.tsx` |
+| Grove atlas, minimap jump, home return | `HUD.tsx` |
+| Corpus redwood at the hub, book list popup (B), start at home | `corpusTree.ts`, `CorpusRedwood.tsx`, `HUD.tsx` |
+| Exhibits in roadside glades (Kepler's Mysterium first) | `exhibits.ts`, `Mysterium.tsx` |
+| Crown-aware tree placement: no branch passes through another tree | `forest.ts` |
+| Silent mode; lantern trail clears on arrival | `preferences.ts`, `Player.tsx` |
 | Carriage roads (spokes + ring) | `forest.ts`, `World.tsx` |
 | Ride-the-ring tour (steer to hop off) | `Player.tsx` |
 | Named grove signposts | `Signposts.tsx` |

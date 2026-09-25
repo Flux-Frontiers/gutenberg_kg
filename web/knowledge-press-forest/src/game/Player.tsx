@@ -8,6 +8,8 @@ import { forwardOf, sim, stepVehicle, teleportSim, wrapAngle, yawToward } from "
 import { useGame } from "./store";
 
 const camPos = new Vector3();
+/** Within this of a picked tree, the cart has arrived (reading range plus a margin). */
+const TRAIL_ARRIVED = 9;
 const lookAt = new Vector3();
 
 function nextCircuitIndex(forest: Forest, x: number, z: number): number {
@@ -56,7 +58,7 @@ export function Player({ forest, playing }: { forest: Forest; playing: boolean }
     const dt = Math.min(delta, 0.1);
     const game = useGame.getState();
     const { preferences, jump } = game;
-    const blocked = !playing || paused || game.libraryOpen || game.atlasOpen || Boolean(document.activeElement?.matches("input, textarea, select, [contenteditable=true]"));
+    const blocked = !playing || paused || game.libraryOpen || game.atlasOpen || game.catalogOpen || Boolean(document.activeElement?.matches("input, textarea, select, [contenteditable=true]"));
     if (blocked) {
       sim.speed = sim.lat = sim.steering = 0;
       if (!wasBlocked.current) resetInput();
@@ -162,6 +164,12 @@ export function Player({ forest, playing }: { forest: Forest; playing: boolean }
         // Arrived at the grove the trail was leading to: put the lantern trail away.
         if (game.travelMode === "free" && game.selectedGrove === grove.genre) game.selectGrove(null);
       }
+    }
+
+    // Arrived at the tree the trail was leading to: put the trail and the query away.
+    if (game.searchPick) {
+      const t = forest.trees.find((tr) => tr.book.slug === game.searchPick);
+      if (!t || Math.hypot(t.x - sim.x, t.z - sim.z) < TRAIL_ARRIVED) game.setQuery("");
     }
 
     poseAcc.current += dt;

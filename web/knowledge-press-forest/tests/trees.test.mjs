@@ -134,3 +134,34 @@ test("trunks rise plumb to their first fork instead of leaning toward one side",
     assert.ok(lean < 5, `${b.slug}: trunk leans ${lean.toFixed(1)} deg`);
   }
 });
+
+test("no tree's wood passes through another's, within or across groves", () => {
+  globalThis.window ??= { localStorage: { getItem: () => null, setItem() {} } };
+  const { getForest } = require(`${process.env.FOREST_TEST_BUILD}/forest.js`);
+  const { growTree } = require(`${process.env.FOREST_TEST_BUILD}/growTree.js`);
+  const f = getForest();
+  const wood = f.trees.map((t) => {
+    const g = growTree({ slug: t.book.slug, genre: t.book.genre, nChunks: t.book.chunks });
+    const { nodes, radii, n } = g.skeleton;
+    const pts = [];
+    let reach = 0;
+    for (let i = 0; i < n; i++) {
+      pts.push([t.x + nodes[i * 3], nodes[i * 3 + 1], t.z + nodes[i * 3 + 2], radii[i]]);
+      reach = Math.max(reach, Math.hypot(nodes[i * 3], nodes[i * 3 + 2]));
+    }
+    return { t, pts, reach };
+  });
+  for (let i = 0; i < wood.length; i++) {
+    for (let j = i + 1; j < wood.length; j++) {
+      const a = wood[i], b = wood[j];
+      if (Math.hypot(a.t.x - b.t.x, a.t.z - b.t.z) >= a.reach + b.reach) continue;
+      for (const p of a.pts) {
+        if (Math.hypot(p[0] - b.t.x, p[2] - b.t.z) > b.reach + 1) continue;
+        for (const q of b.pts) {
+          const gap = Math.hypot(p[0] - q[0], p[1] - q[1], p[2] - q[2]) - p[3] - q[3];
+          assert.ok(gap > 0.3, `${a.t.book.slug} and ${b.t.book.slug} touch (gap ${gap.toFixed(2)} m)`);
+        }
+      }
+    }
+  }
+});
