@@ -30,8 +30,8 @@ export function StartScreen({
           branch toward the text — the canopy is the book’s shape, not a decoration.
         </p>
         <ul className="mt-6 grid gap-2 text-sm text-muted sm:grid-cols-2">
-          <li className="rounded-md border border-border bg-surface px-3 py-2">W / S or ↑ / ↓ — drive</li>
-          <li className="rounded-md border border-border bg-surface px-3 py-2">A / D or ← / → — steer</li>
+          <li className="rounded-md border border-border bg-surface px-3 py-2">W / S — drive · A / D or Left / Right — steer</li>
+          <li className="rounded-md border border-border bg-surface px-3 py-2">Up / Down — look up and down</li>
           <li className="rounded-md border border-border bg-surface px-3 py-2">E — read the nearest tree</li>
           <li className="rounded-md border border-border bg-surface px-3 py-2">G — grove atlas · tap the map to jump</li>
           <li className="rounded-md border border-border bg-surface px-3 py-2">Space — brake · Q — guided tour</li>

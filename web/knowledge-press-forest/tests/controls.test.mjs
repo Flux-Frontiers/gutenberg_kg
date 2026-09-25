@@ -77,6 +77,8 @@ test("input reset clears held keyboard, touch axes, brake and interaction edges"
   assert.equal(input.sampleActions().interact, false);
   input.setTouchAxes(1, 1);
   input.setTouchBrake(true);
+  input.setTouchPitch(1);
+  assert.equal(input.sampleActions().pitch, 1, "the touch look strip tilts like Up");
   input.resetInput();
   assert.deepEqual(input.sampleActions(), { throttle: 0, steer: 0, boost: false, brake: false, interact: false, interactDown: false, pitch: 0 });
   // Up/Down look; only W/S drive.

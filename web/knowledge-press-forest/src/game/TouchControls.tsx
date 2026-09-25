@@ -1,6 +1,6 @@
 import { bookBySlug } from "./catalog";
 import { useEffect, useRef, useState } from "react";
-import { setTouchAxes, setTouchBrake } from "./input";
+import { setTouchAxes, setTouchBrake, setTouchPitch } from "./input";
 import { useGame } from "./store";
 
 export function TouchControls() {
@@ -17,8 +17,9 @@ export function TouchControls() {
     pid.current = null;
     setTouchAxes(0, 0);
     setTouchBrake(false);
+    setTouchPitch(0);
     setThumb({ x: 0, y: 0 });
-    return () => { setTouchAxes(0, 0); setTouchBrake(false); };
+    return () => { setTouchAxes(0, 0); setTouchBrake(false); setTouchPitch(0); };
   }, [blocked]);
 
   function axesFromEvent(e: React.PointerEvent<HTMLDivElement>) {
@@ -56,7 +57,9 @@ export function TouchControls() {
         <span className="absolute inset-0 m-auto size-10 rounded-full border border-primary bg-primary/50"
           style={{ transform: `translate(${thumb.x}px, ${thumb.y}px)` }} />
       </div>
-      <div className="pointer-events-auto flex flex-col items-end gap-2">
+      <div className="pointer-events-auto flex items-end gap-2">
+      <LookStrip />
+      <div className="flex flex-col items-end gap-2">
         <button type="button" className="min-h-11 rounded-full border border-border bg-surface px-4 text-sm" onClick={toggleCircuit}>
           {travelMode === "circuit" ? "End tour" : "Guided tour"}
         </button>
@@ -73,6 +76,43 @@ export function TouchControls() {
           </button>
         </div>
       </div>
+      </div>
+    </div>
+  );
+}
+
+/** Vertical look strip: drag up to tilt the view up, down to tilt it down; release holds the tilt. */
+function LookStrip() {
+  const pid = useRef<number | null>(null);
+  const [thumb, setThumb] = useState(0);
+  function fromEvent(e: React.PointerEvent<HTMLDivElement>) {
+    const rect = e.currentTarget.getBoundingClientRect();
+    const y = Math.max(-1, Math.min(1, (e.clientY - rect.top - rect.height / 2) / (rect.height * 0.5)));
+    setThumb(y * 38);
+    setTouchPitch(Math.abs(y) < 0.12 ? 0 : -y);
+  }
+  function clear(e: React.PointerEvent<HTMLDivElement>) {
+    if (pid.current !== e.pointerId) return;
+    pid.current = null;
+    setTouchPitch(0);
+    setThumb(0);
+  }
+  return (
+    <div role="group" aria-label="Drag up or down to look up or down"
+      className="relative h-28 w-12 rounded-full border border-border bg-surface/80"
+      style={{ touchAction: "none" }}
+      onPointerDown={(e) => {
+        if (pid.current !== null) return;
+        pid.current = e.pointerId;
+        e.currentTarget.setPointerCapture(e.pointerId);
+        fromEvent(e);
+      }}
+      onPointerMove={(e) => { if (pid.current === e.pointerId) fromEvent(e); }}
+      onPointerUp={clear} onPointerCancel={clear} onLostPointerCapture={clear}>
+      <span className="pointer-events-none absolute inset-x-0 top-1 text-center text-[10px] text-faint">up</span>
+      <span className="pointer-events-none absolute inset-x-0 bottom-1 text-center text-[10px] text-faint">down</span>
+      <span className="pointer-events-none absolute inset-x-0 top-1/2 m-auto size-8 rounded-full border border-primary bg-primary/50"
+        style={{ transform: `translateY(calc(-50% + ${thumb}px))` }} />
     </div>
   );
 }

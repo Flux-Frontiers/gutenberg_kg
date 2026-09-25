@@ -43,8 +43,8 @@ export function PauseOverlay() {
         </label>
         <label className="flex items-center justify-between gap-4">Leaf complexity
           <select value={prefs.leaves} onChange={(e) => setPreferences({ leaves: e.target.value as typeof prefs.leaves })} className="rounded-md border border-border bg-bg p-2">
-            <option value="low">Low · 35k leaves</option><option value="medium">Medium · 70k</option>
-            <option value="high">High · 140k</option><option value="ultra">Ultra · 280k</option>
+            <option value="low">Low · 1 in 10 chunks</option><option value="medium">Medium · 1 in 4</option>
+            <option value="high">High · 1 in 2</option><option value="ultra">Ultra · every chunk</option>
           </select>
         </label>
         <label className="flex items-center justify-between gap-4">Show geometry & frame rate

@@ -29,6 +29,7 @@ let injectedSteer: number | null = null;
 let touchThrottle = 0;
 let touchSteer = 0;
 let touchBrake = false;
+let touchPitch = 0;
 let prevInteract = false;
 
 export function isInputTarget(target: EventTarget | null): boolean {
@@ -48,7 +49,7 @@ function onKeyUp(e: KeyboardEvent) {
 
 export function resetInput() {
   keys.clear();
-  touchThrottle = touchSteer = 0;
+  touchThrottle = touchSteer = touchPitch = 0;
   touchBrake = false;
   prevInteract = false;
   injectedKeys = null;
@@ -91,6 +92,11 @@ export function setInjectedSteer(v: number | null) {
 export function setTouchAxes(throttle: number, steer: number) {
   touchThrottle = throttle;
   touchSteer = steer;
+}
+
+/** Touch look strip: -1 (tilt down) to 1 (tilt up), a rate like the Up/Down keys. */
+export function setTouchPitch(pitch: number) {
+  touchPitch = pitch;
 }
 
 export function setTouchBrake(brake: boolean) {
@@ -155,6 +161,7 @@ export function sampleActions(): Actions {
 
   actions.throttle += touchThrottle;
   actions.steer += touchSteer;
+  actions.pitch += touchPitch;
 
   pollGamepad(actions);
 

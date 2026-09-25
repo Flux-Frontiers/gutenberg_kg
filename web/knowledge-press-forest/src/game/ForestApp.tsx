@@ -27,18 +27,41 @@ export function ForestApp() {
     return () => unbind?.();
   }, []);
 
-  // Regrow when leaf complexity changes; only the first forest places the cart.
+  // Grow in a worker, regrowing when leaf complexity changes; only the first
+  // forest places the cart. Without Worker support, grow on the main thread.
   const leafScale = useGame((s) => LEAF_SCALE[s.preferences.leaves]);
   const placed = useRef(false);
+  const worker = useRef<Worker | null>(null);
+  const request = useRef(0);
   useEffect(() => {
-    const id = window.setTimeout(() => {
-      const f = getForest(leafScale);
+    try {
+      worker.current = new Worker(new URL("./forestWorker.ts", import.meta.url), { type: "module" });
+    } catch {
+      worker.current = null;
+    }
+    return () => worker.current?.terminate();
+  }, []);
+  useEffect(() => {
+    const apply = (f: Forest) => {
       if (!placed.current) resetSim(f);
+      else useGame.getState().setToast(null);
       placed.current = true;
       setForest(f);
       window.__gameReady = true;
-    }, 0);
-    return () => window.clearTimeout(id);
+    };
+    const id = ++request.current;
+    if (placed.current) useGame.getState().setToast("Growing the forest…");
+    const w = worker.current;
+    if (w) {
+      // Only the latest request wins if the level changes again mid-growth.
+      w.onmessage = (e: MessageEvent<{ id: number; forest: Forest }>) => {
+        if (e.data.id === request.current) apply(e.data.forest);
+      };
+      w.postMessage({ id, leafScale });
+      return;
+    }
+    const t = window.setTimeout(() => apply(getForest(leafScale)), 0);
+    return () => window.clearTimeout(t);
   }, [leafScale, GROW_VERSION]);
 
   useEffect(() => {

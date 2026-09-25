@@ -4,7 +4,7 @@ export type Vec3 = { x: number; y: number; z: number };
 
 export type Skeleton = {
   nodes: Float32Array;
-  parents: Int16Array;
+  parents: Int32Array;
   radii: Float32Array;
   n: number;
 };
@@ -18,21 +18,47 @@ export type GrownTree = {
   leafDirs: Float32Array;
   leafTint: Uint8Array;
   nLeaves: number;
+  /** The book's chunk count; leaf size shrinks with it, as in the Python viz3d. */
+  nChunks: number;
+  /** Internode length colonize chose; kill radius is 2 * step. */
+  step: number;
   trunkHeight: number;
   trunkRadius: number;
 };
 
 /** Bump when caps change so the forest cache rebuilds. */
-export const GROW_VERSION = 9;
+export const GROW_VERSION = 10;
 
-// Pipe-model exponent: parent^e = sum child^e (Leonardo's rule). Lower values
-// balloon the trunk once skeletons reach the 256-node cap; thickness for tall
-// trees comes from TRUNK_PER_HEIGHT instead.
+// This file mirrors the Python viz3d (kg_utils.viz3d.organic.colonize and
+// gutenberg_kg.treegeom.grow_tree_geometry) so both front ends grow the same
+// tree from the same book: every chunk is a crown point, growth reaches for up
+// to MAX_ATTRACTORS of them with no node cap, and distances come from the
+// crown's own scale.
+//
+// The web world is smaller: trunks are 1.7 * log2(1 + chunks) here against
+// ForestLayout's 4 * log2(1 + chunks), so lengths carrying absolute units
+// (the tip radius) are scaled by WORLD_SCALE to keep Python's proportions.
+const WORLD_SCALE = 1.7 / 4;
+/** kg_utils.viz3d.organic.MAX_ATTRACTORS */
+export const MAX_ATTRACTORS = 3000;
+/** colonize(max_iter=800) */
+const MAX_ITER = 800;
+/** colonize(jitter=0.12) */
+const JITTER = 0.12;
+/** grow_tree(tip_radius=0.05), in web units. */
+const TIP_RADIUS = 0.05 * WORLD_SCALE;
+/** Runaway guard only; Python has no node cap and real books stay far below it. */
+const NODE_GUARD = 200_000;
+/** treegeom.LEAF_REFERENCE_COUNT: leaves shrink as (600 / chunks) ** (1/3) beyond it. */
+export const LEAF_REFERENCE_COUNT = 600;
+
+// Pipe-model exponent: parent^e = sum child^e (Leonardo's rule), as pipe_radii.
 const PIPE_EXP = 2;
-// Trunk radius floor as a fraction of height (real trees run about 1:30-1:40).
+// Trunk radius floor as a fraction of height, for very small books.
 const TRUNK_PER_HEIGHT = 0.028;
-// Twigs that carry leaves: segments no thicker than this many tip radii.
-const TWIG_TIPS = 2.5;
+// A leaf hangs within this of a branch node; a chunk farther out is drawn in
+// along the line to its nearest node, so it stays at its own place in the crown.
+const LEAF_REACH = 0.35;
 
 const GOLDEN = Math.PI * (3 - Math.sqrt(5));
 
@@ -57,18 +83,17 @@ function tropismFor(genre: string): Vec3 {
   return GENRE_TROPISM[genre] ?? DEFAULT_TROPISM;
 }
 
-/** Place section tips and chunk attractors the way ForestLayout does. */
+/** Place section tips and one crown point per chunk, the way ForestLayout does. */
 export function placeCrown(
   nChunks: number,
   genre: string,
   slug: string,
-): { attractors: Float32Array; nAttract: number; trunkHeight: number; allLeaves: Float32Array; nLeaves: number } {
+): { trunkHeight: number; crown: Float32Array; nCrown: number } {
   const rng = mulberry32(seedFromKey(slug + ":crown"));
   const trunkHeight = Math.min(1.7 * Math.max(1, Math.log2(1 + nChunks)), 22);
   const nSections = Math.max(5, Math.round(Math.sqrt(nChunks) * 1.25));
   const branchLength = 2.1 + Math.sqrt(nSections) * 0.55;
-  const nLeaf = Math.min(nChunks, 140, Math.round(48 + Math.sqrt(nChunks) * 6));
-  const nAttract = Math.min(nChunks, 56, Math.round(24 + Math.sqrt(nChunks) * 3.2));
+  const nLeaf = Math.max(1, nChunks);
 
   const sectionTips: Vec3[] = [];
   for (let i = 0; i < nSections; i++) {
@@ -109,143 +134,234 @@ export function placeCrown(
       li++;
     }
   }
-  const nLeaves = li;
-
-  const attractors = new Float32Array(nAttract * 3);
-  if (nLeaves <= nAttract) {
-    attractors.set(leaves.subarray(0, nLeaves * 3));
-  } else {
-    for (let i = 0; i < nAttract; i++) {
-      const src = Math.floor((i * nLeaves) / nAttract);
-      attractors[i * 3] = leaves[src * 3]!;
-      attractors[i * 3 + 1] = leaves[src * 3 + 1]!;
-      attractors[i * 3 + 2] = leaves[src * 3 + 2]!;
-    }
-  }
-
   void genre;
-  return {
-    attractors,
-    nAttract: Math.min(nAttract, nLeaves),
-    trunkHeight,
-    allLeaves: leaves,
-    nLeaves,
+  return { trunkHeight, crown: leaves, nCrown: li };
+}
+
+/** Nearest skeleton node to a point, through a uniform hash grid of the nodes. */
+function nearestNodeIndex(nodes: Float32Array, n: number, cell: number) {
+  const grid = new Map<string, number[]>();
+  const key = (i: number, j: number, k: number) => i + "," + j + "," + k;
+  for (let a = 0; a < n; a++) {
+    const kk = key(Math.floor(nodes[a * 3]! / cell), Math.floor(nodes[a * 3 + 1]! / cell), Math.floor(nodes[a * 3 + 2]! / cell));
+    const list = grid.get(kk);
+    if (list) list.push(a); else grid.set(kk, [a]);
+  }
+  return (x: number, y: number, z: number) => {
+    const ci = Math.floor(x / cell), cj = Math.floor(y / cell), ck = Math.floor(z / cell);
+    let best = 0, bestD = Infinity;
+    // Grow the searched shell until it cannot hold anything closer than the best found.
+    for (let r = 0; r < 4096; r++) {
+      for (let i = ci - r; i <= ci + r; i++) for (let j = cj - r; j <= cj + r; j++) for (let k = ck - r; k <= ck + r; k++) {
+        if (Math.max(Math.abs(i - ci), Math.abs(j - cj), Math.abs(k - ck)) !== r) continue;
+        const list = grid.get(key(i, j, k));
+        if (!list) continue;
+        for (const a of list) {
+          const dx = x - nodes[a * 3]!, dy = y - nodes[a * 3 + 1]!, dz = z - nodes[a * 3 + 2]!;
+          const d2 = dx * dx + dy * dy + dz * dz;
+          if (d2 < bestD) { bestD = d2; best = a; }
+        }
+      }
+      if (bestD <= r * cell * r * cell) break;
+    }
+    return best;
   };
 }
 
+/** Gaussian sample from a uniform generator (Box-Muller). */
+function gauss(rng: () => number): number {
+  return Math.sqrt(-2 * Math.log(1 - rng())) * Math.cos(2 * Math.PI * rng());
+}
+
+/** organic.crown_spacing: median nearest-neighbour distance over up to 512 probes. */
+function crownSpacing(pts: Float32Array, m: number, rng: () => number): number {
+  if (m < 2) return 1;
+  const probes = Math.min(512, m);
+  const gaps: number[] = [];
+  for (let s = 0; s < probes; s++) {
+    const i = probes === m ? s : Math.floor(rng() * m);
+    let best = Infinity;
+    const x = pts[i * 3]!, y = pts[i * 3 + 1]!, z = pts[i * 3 + 2]!;
+    for (let j = 0; j < m; j++) {
+      const dx = x - pts[j * 3]!, dy = y - pts[j * 3 + 1]!, dz = z - pts[j * 3 + 2]!;
+      const d2 = dx * dx + dy * dy + dz * dz;
+      if (d2 > 0 && d2 < best) best = d2;
+    }
+    if (best < Infinity) gaps.push(Math.sqrt(best));
+  }
+  gaps.sort((a, b) => a - b);
+  return gaps.length ? Math.max(gaps[gaps.length >> 1]!, 1e-6) : 1;
+}
+
 /**
- * Space colonization (Runions, Lane & Prusinkiewicz 2007) + pipe-model radii.
- * Attractors are the book's chunks; every limb is a path through the graph.
+ * Port of kg_utils.viz3d.organic.colonize. Each live attractor pulls its
+ * nearest node within `influence`; every pulled node grows one `step` along the
+ * averaged pull plus tropism and jitter; attractors within `kill` of a node are
+ * consumed. An unreachable crown is bridged, and survivors each get a twig.
+ *
+ * Python recomputes the full attractor x node distance matrix every iteration.
+ * Nodes are only ever added, so each attractor's nearest node is updated
+ * against the new nodes alone: the same answer, O(attractors x nodes) in total.
+ */
+function colonize(pts: Float32Array, m: number, trop: Vec3, rng: () => number) {
+  let minX = Infinity, minY = Infinity, minZ = Infinity, maxX = -Infinity, maxY = -Infinity, maxZ = -Infinity;
+  for (let a = 0; a < m; a++) {
+    minX = Math.min(minX, pts[a * 3]!); maxX = Math.max(maxX, pts[a * 3]!);
+    minY = Math.min(minY, pts[a * 3 + 1]!); maxY = Math.max(maxY, pts[a * 3 + 1]!);
+    minZ = Math.min(minZ, pts[a * 3 + 2]!); maxZ = Math.max(maxZ, pts[a * 3 + 2]!);
+  }
+  const extent = Math.hypot(maxX - minX, maxY - minY, maxZ - minZ);
+  const step = Math.max(extent / 40, 0.5 * crownSpacing(pts, m, rng));
+  const influence = 12 * step;
+  const kill = 2 * step;
+
+  const nodes: number[] = [0, 0, 0];
+  const parents: number[] = [-1];
+  const n = () => parents.length;
+  const alive = new Uint8Array(m).fill(1);
+  const nearest = new Int32Array(m);
+  const nearestD = new Float64Array(m);
+  for (let a = 0; a < m; a++) nearestD[a] = Math.hypot(pts[a * 3]!, pts[a * 3 + 1]!, pts[a * 3 + 2]!);
+
+  const refresh = (from: number) => {
+    const to = n();
+    for (let a = 0; a < m; a++) {
+      if (!alive[a]) continue;
+      const ax = pts[a * 3]!, ay = pts[a * 3 + 1]!, az = pts[a * 3 + 2]!;
+      // Squared distances in the hot loop; Math.hypot is several times slower.
+      let best2 = nearestD[a]! * nearestD[a]!, bestK = -1;
+      for (let k = from; k < to; k++) {
+        const dx = ax - nodes[k * 3]!, dy = ay - nodes[k * 3 + 1]!, dz = az - nodes[k * 3 + 2]!;
+        const d2 = dx * dx + dy * dy + dz * dz;
+        if (d2 < best2) { best2 = d2; bestK = k; }
+      }
+      if (bestK >= 0) { nearestD[a] = Math.sqrt(best2); nearest[a] = bestK; }
+    }
+  };
+  // March internodes from a node until the target is within stopAt.
+  const bridge = (from: number, tx: number, ty: number, tz: number, stopAt: number) => {
+    let cur = from;
+    for (let i = 0; i < MAX_ITER && n() < NODE_GUARD; i++) {
+      const gx = tx - nodes[cur * 3]!, gy = ty - nodes[cur * 3 + 1]!, gz = tz - nodes[cur * 3 + 2]!;
+      const d = Math.hypot(gx, gy, gz);
+      if (d <= stopAt) return;
+      const s = Math.min(step, d) / d;
+      nodes.push(nodes[cur * 3]! + gx * s, nodes[cur * 3 + 1]! + gy * s, nodes[cur * 3 + 2]! + gz * s);
+      parents.push(cur);
+      cur = n() - 1;
+    }
+  };
+
+  // The root sits outside every influence sphere: lead a trunk to the nearest attractor.
+  let first = 0;
+  for (let a = 1; a < m; a++) if (nearestD[a]! < nearestD[first]!) first = a;
+  if (m > 0) bridge(0, pts[first * 3]!, pts[first * 3 + 1]!, pts[first * 3 + 2]!, influence);
+  refresh(1);
+
+  const pull = new Map<number, [number, number, number]>();
+  for (let iter = 0; iter < MAX_ITER && n() < NODE_GUARD; iter++) {
+    let live = 0, inRange = 0, closest = -1;
+    for (let a = 0; a < m; a++) {
+      if (!alive[a]) continue;
+      live++;
+      if (nearestD[a]! <= influence) inRange++;
+      if (closest < 0 || nearestD[a]! < nearestD[closest]!) closest = a;
+    }
+    if (!live) break;
+    if (!inRange) {
+      // The rest of the crown lies across a gap wider than the influence radius: grow a limb across it.
+      const before = n();
+      bridge(nearest[closest]!, pts[closest * 3]!, pts[closest * 3 + 1]!, pts[closest * 3 + 2]!, influence);
+      refresh(before);
+      continue;
+    }
+    pull.clear();
+    for (let a = 0; a < m; a++) {
+      if (!alive[a] || nearestD[a]! > influence) continue;
+      const k = nearest[a]!;
+      const vx = pts[a * 3]! - nodes[k * 3]!, vy = pts[a * 3 + 1]! - nodes[k * 3 + 1]!, vz = pts[a * 3 + 2]! - nodes[k * 3 + 2]!;
+      const d = Math.hypot(vx, vy, vz);
+      if (d < 1e-9) continue;
+      const acc = pull.get(k) ?? [0, 0, 0];
+      acc[0] += vx / d; acc[1] += vy / d; acc[2] += vz / d;
+      pull.set(k, acc);
+    }
+    if (!pull.size) break;
+    const before = n();
+    for (const [k, [px, py, pz]] of pull) {
+      const pl = Math.max(Math.hypot(px, py, pz), 1e-9);
+      let dx = px / pl + trop.x + JITTER * gauss(rng);
+      let dy = py / pl + trop.y + JITTER * gauss(rng);
+      let dz = pz / pl + trop.z + JITTER * gauss(rng);
+      const dl = Math.hypot(dx, dy, dz);
+      if (dl < 1e-9) continue;
+      dx /= dl; dy /= dl; dz /= dl;
+      nodes.push(nodes[k * 3]! + dx * step, nodes[k * 3 + 1]! + dy * step, nodes[k * 3 + 2]! + dz * step);
+      parents.push(k);
+    }
+    refresh(before);
+    // Consume attractors the new nodes reached.
+    for (let a = 0; a < m; a++) if (alive[a] && nearestD[a]! <= kill && nearest[a]! >= before) alive[a] = 0;
+  }
+  // Every chunk hangs on wood: a survivor that never won a node gets its own twig.
+  for (let a = 0; a < m; a++) {
+    if (!alive[a] || nearestD[a]! <= kill) continue;
+    const before = n();
+    bridge(nearest[a]!, pts[a * 3]!, pts[a * 3 + 1]!, pts[a * 3 + 2]!, kill);
+    refresh(before);
+  }
+  return { nodes: Float32Array.from(nodes), parents: Int32Array.from(parents), n: n(), step };
+}
+
+/**
+ * The leaf level never changes the skeleton, so growth is cached per book:
+ * switching levels only re-places leaves.
+ */
+const skeletonCache = new Map<string, {
+  crownInfo: { trunkHeight: number; crown: Float32Array; nCrown: number };
+  attractors: Float32Array;
+  grown: ReturnType<typeof colonize>;
+}>();
+
+/** colonize(max_attractors=3000): grow toward a seeded sample of the crown. */
+function growSkeleton(slug: string, crown: Float32Array, nCrown: number, trop: Vec3) {
+  const rng = mulberry32(seedFromKey(slug));
+  const m = Math.min(nCrown, MAX_ATTRACTORS);
+  let attractors = crown.subarray(0, m * 3);
+  if (nCrown > MAX_ATTRACTORS) {
+    const idx = Array.from({ length: nCrown }, (_, i) => i);
+    for (let i = 0; i < m; i++) {
+      const j = i + Math.floor(rng() * (nCrown - i));
+      [idx[i], idx[j]] = [idx[j]!, idx[i]!];
+    }
+    attractors = new Float32Array(m * 3);
+    for (let i = 0; i < m; i++) attractors.set(crown.subarray(idx[i]! * 3, idx[i]! * 3 + 3), i * 3);
+  }
+  return { attractors, grown: colonize(attractors, m, trop, rng) };
+}
+
+/**
+ * Grow one book's tree: crown from its chunks, skeleton by space colonization,
+ * pipe-model radii, and leaves for a fraction of the chunks (1 = every chunk).
  */
 export function growTree(opts: {
   slug: string;
   genre: string;
   nChunks: number;
   tipRadius?: number;
-  /** Leaf complexity: multiplies the leaf count without touching the skeleton. */
+  /** Fraction of the book's chunks that carry a leaf; the skeleton never changes with it. */
   leafScale?: number;
 }): GrownTree {
   const { slug, genre, nChunks } = opts;
-  const tipRadius = opts.tipRadius ?? 0.045;
+  const tipRadius = opts.tipRadius ?? TIP_RADIUS;
   const trop = tropismFor(genre);
-  const { attractors, nAttract, trunkHeight, allLeaves: baseLeaves, nLeaves: nBase } = placeCrown(
-    nChunks,
-    genre,
-    slug,
-  );
+  const cacheKey = `${slug}|${genre}|${nChunks}|${tipRadius}`;
+  const cached = skeletonCache.get(cacheKey);
+  const { trunkHeight, crown, nCrown } = cached?.crownInfo ?? placeCrown(nChunks, genre, slug);
+  const { attractors, grown } = cached ?? growSkeleton(slug, crown, nCrown, trop);
+  if (!cached) skeletonCache.set(cacheKey, { crownInfo: { trunkHeight, crown, nCrown }, attractors, grown });
+  const { nodes, parents, n } = grown;
 
-  // At 128, 251 of 253 trees hit the cap before reaching their crowns.
-  const maxNodes = Math.min(256, Math.round(48 + nAttract * 6.5));
-  const nodes = new Float32Array(maxNodes * 3);
-  const parents = new Int16Array(maxNodes);
-  parents.fill(-1);
-  let n = 0;
-
-  const push = (x: number, y: number, z: number, parent: number) => {
-    if (n >= maxNodes) return -1;
-    const i = n++;
-    nodes[i * 3] = x;
-    nodes[i * 3 + 1] = y;
-    nodes[i * 3 + 2] = z;
-    parents[i] = parent;
-    return i;
-  };
-
-  push(0, 0, 0, -1);
-  const trunkSteps = 6;
-  for (let i = 1; i <= trunkSteps; i++) {
-    push(0, (trunkHeight * 0.28 * i) / trunkSteps, 0, i - 1);
-  }
-
-  const influence = 5.8 + trunkHeight * 0.12;
-  const kill = 0.58;
-  const step = 0.34 + Math.min(trunkHeight, 16) * 0.016;
-  const alive = new Uint8Array(nAttract);
-  alive.fill(1);
-  const dirX = new Float32Array(maxNodes);
-  const dirY = new Float32Array(maxNodes);
-  const dirZ = new Float32Array(maxNodes);
-  const votes = new Uint16Array(maxNodes);
-  const maxIter = Math.min(90, 32 + nAttract * 2);
-
-  for (let iter = 0; iter < maxIter && n < maxNodes - 1; iter++) {
-    dirX.fill(0);
-    dirY.fill(0);
-    dirZ.fill(0);
-    votes.fill(0);
-    let grew = false;
-
-    for (let a = 0; a < nAttract; a++) {
-      if (!alive[a]) continue;
-      const ax = attractors[a * 3]!;
-      const ay = attractors[a * 3 + 1]!;
-      const az = attractors[a * 3 + 2]!;
-      let best = -1;
-      let bestD = influence;
-      for (let i = 0; i < n; i++) {
-        const dx = ax - nodes[i * 3]!;
-        const dy = ay - nodes[i * 3 + 1]!;
-        const dz = az - nodes[i * 3 + 2]!;
-        const d = Math.hypot(dx, dy, dz);
-        if (d < kill) {
-          alive[a] = 0;
-          best = -1;
-          break;
-        }
-        if (d < bestD) {
-          bestD = d;
-          best = i;
-        }
-      }
-      if (best < 0 || !alive[a]) continue;
-      const dx = ax - nodes[best * 3]!;
-      const dy = ay - nodes[best * 3 + 1]!;
-      const dz = az - nodes[best * 3 + 2]!;
-      const d = Math.hypot(dx, dy, dz) || 1;
-      dirX[best] += dx / d;
-      dirY[best] += dy / d;
-      dirZ[best] += dz / d;
-      votes[best]++;
-    }
-
-    const snapshot = n;
-    for (let i = 0; i < snapshot && n < maxNodes; i++) {
-      if (!votes[i]) continue;
-      let dx = dirX[i]! + trop.x;
-      let dy = dirY[i]! + trop.y;
-      let dz = dirZ[i]! + trop.z;
-      const len = Math.hypot(dx, dy, dz) || 1;
-      dx = (dx / len) * step;
-      dy = (dy / len) * step;
-      dz = (dz / len) * step;
-      const nx = nodes[i * 3]! + dx;
-      const ny = Math.max(0.05, nodes[i * 3 + 1]! + dy);
-      const nz = nodes[i * 3 + 2]! + dz;
-      push(nx, ny, nz, i);
-      grew = true;
-    }
-    if (!grew) break;
-  }
 
   const radii = new Float32Array(n);
   radii.fill(tipRadius);
@@ -265,74 +381,47 @@ export function growTree(opts: {
   const f = Math.max(TRUNK_PER_HEIGHT * trunkHeight, 0.18) / base;
   if (f > 1) for (let i = 0; i < n; i++) radii[i] = radii[i]! * (1 + (f - 1) * (radii[i]! / base));
 
-  // Foliage. The skeleton grew toward the base leaves (the book's chunks), so
-  // the twigs already trace the crown; leaves are now spread evenly along those
-  // twigs, stalk on the twig, which keeps the count data-driven without the
-  // clumps and bare limbs of hanging them at the attractors. Leaf complexity
-  // scales the count only; the skeleton never changes.
-  void baseLeaves;
-  const nLeaves = Math.max(1, Math.round(nBase * (opts.leafScale ?? 1)));
-  const twigs: number[] = [];
-  const twigLen: number[] = [];
-  let total = 0;
-  const twigMax = tipRadius * TWIG_TIPS;
-  const addTwigs = (limit: number) => {
-    for (let i = trunkSteps + 1; i < n; i++) {
-      const p = parents[i]!;
-      if (p < 0 || radii[i]! > limit) continue;
-      const len = Math.hypot(nodes[i * 3]! - nodes[p * 3]!, nodes[i * 3 + 1]! - nodes[p * 3 + 1]!, nodes[i * 3 + 2]! - nodes[p * 3 + 2]!);
-      if (len < 1e-3) continue;
-      twigs.push(i);
-      twigLen.push(len);
-      total += len;
-    }
-  };
-  addTwigs(twigMax);
-  if (!twigs.length) addTwigs(Infinity);
+  // Leaves. Like grow_tree_geometry, a leaf stands for a chunk at the chunk's
+  // own crown position; the level keeps an even stride of them (1 = all). A
+  // leaf is hung on the wood: its stalk on the line to the nearest node, at
+  // most LEAF_REACH away, its blade pointing out along that line and lifted
+  // toward the sky.
+  const frac = Math.min(1, Math.max(0, opts.leafScale ?? 1));
+  const kept: number[] = [];
+  for (let l = 0; l < nCrown; l++) if (Math.floor((l + 1) * frac) > Math.floor(l * frac)) kept.push(l);
+  if (!kept.length && nCrown) kept.push(0);
+  const nLeaves = kept.length;
   const allLeaves = new Float32Array(nLeaves * 3);
   const leafDirs = new Float32Array(nLeaves * 3);
-  const lr = mulberry32(seedFromKey(slug + ":leaves"));
-  let seg = 0;
-  let segStart = 0;
-  for (let l = 0; l < nLeaves && twigs.length; l++) {
-    // Stratified along the summed twig length: even cover, a little jitter.
-    const s = ((l + lr()) / nLeaves) * total;
-    while (seg < twigs.length - 1 && segStart + twigLen[seg]! < s) segStart += twigLen[seg++]!;
-    const i = twigs[seg]!, p = parents[i]!;
-    const u = Math.min(1, Math.max(0, (s - segStart) / twigLen[seg]!));
-    const dx = (nodes[i * 3]! - nodes[p * 3]!) / twigLen[seg]!;
-    const dy = (nodes[i * 3 + 1]! - nodes[p * 3 + 1]!) / twigLen[seg]!;
-    const dz = (nodes[i * 3 + 2]! - nodes[p * 3 + 2]!) / twigLen[seg]!;
-    allLeaves[l * 3] = nodes[p * 3]! + dx * twigLen[seg]! * u;
-    allLeaves[l * 3 + 1] = nodes[p * 3 + 1]! + dy * twigLen[seg]! * u;
-    allLeaves[l * 3 + 2] = nodes[p * 3 + 2]! + dz * twigLen[seg]! * u;
-    // A random direction perpendicular to the twig, lifted toward the sky and a
-    // little toward the twig's tip, as leaves grow.
-    // Any axis not parallel to the twig, crossed with it, gives a perpendicular.
-    const ax = Math.abs(dy) < 0.9 ? 0 : 1, ay = Math.abs(dy) < 0.9 ? 1 : 0;
-    let n1x = -ay * dz, n1y = ax * dz, n1z = ay * dx - ax * dy;
-    const n1l = Math.hypot(n1x, n1y, n1z) || 1;
-    n1x /= n1l; n1y /= n1l; n1z /= n1l;
-    const n2x = dy * n1z - dz * n1y, n2y = dz * n1x - dx * n1z, n2z = dx * n1y - dy * n1x;
-    const a = lr() * Math.PI * 2;
-    const ox = Math.cos(a) * n1x + Math.sin(a) * n2x + dx * 0.35;
-    const oy = Math.cos(a) * n1y + Math.sin(a) * n2y + dy * 0.35 + 0.55;
-    const oz = Math.cos(a) * n1z + Math.sin(a) * n2z + dz * 0.35;
+  const near = nearestNodeIndex(nodes, n, Math.max(grown.step, 0.25));
+  kept.forEach((c, l) => {
+    const cx = crown[c * 3]!, cy = crown[c * 3 + 1]!, cz = crown[c * 3 + 2]!;
+    const k = near(cx, cy, cz);
+    let vx = cx - nodes[k * 3]!, vy = cy - nodes[k * 3 + 1]!, vz = cz - nodes[k * 3 + 2]!;
+    const d = Math.hypot(vx, vy, vz);
+    const reach = Math.min(d, LEAF_REACH);
+    if (d > 1e-6) { vx /= d; vy /= d; vz /= d; } else { vx = 0; vy = 1; vz = 0; }
+    allLeaves[l * 3] = nodes[k * 3]! + vx * reach;
+    allLeaves[l * 3 + 1] = nodes[k * 3 + 1]! + vy * reach;
+    allLeaves[l * 3 + 2] = nodes[k * 3 + 2]! + vz * reach;
+    const ox = vx, oy = vy + 0.55, oz = vz;
     const ol = Math.hypot(ox, oy, oz) || 1;
     leafDirs[l * 3] = ox / ol;
     leafDirs[l * 3 + 1] = oy / ol;
     leafDirs[l * 3 + 2] = oz / ol;
-  }
+  });
 
-  const rng = mulberry32(seedFromKey(slug + ":tint"));
+  const tintRng = mulberry32(seedFromKey(slug + ":tint"));
   const leafTint = new Uint8Array(nLeaves);
-  for (let i = 0; i < nLeaves; i++) leafTint[i] = Math.floor(rng() * 8);
+  for (let i = 0; i < nLeaves; i++) leafTint[i] = Math.floor(tintRng() * 8);
 
   return {
     skeleton: { nodes, parents, radii, n },
     crown: attractors,
     leafPoints: allLeaves,
     leafDirs,
+    nChunks,
+    step: grown.step,
     leafTint,
     nLeaves,
     trunkHeight,
@@ -457,7 +546,9 @@ export function emitLeaves(
   destQuat: number[],
   leafSize: number,
 ): number {
-  const r = leafSize;
+  // grow_tree_geometry: a dense crown tiled at full size is an opaque shell, so
+  // leaves shrink with the book's chunk count beyond LEAF_REFERENCE_COUNT.
+  const r = leafSize * Math.min(1, (LEAF_REFERENCE_COUNT / Math.max(grown.nChunks, 1)) ** (1 / 3));
   let count = 0;
   for (let i = 0; i < grown.nLeaves; i++) {
     const jitter = 0.78 + (grown.leafTint[i]! / 8) * 0.5;
