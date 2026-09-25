@@ -51,7 +51,10 @@ targets:
       path: Info.plist
       properties:
         CFBundleDisplayName: Knowledge Press
-        CFBundleShortVersionString: "1.0"
+        # Both from the build settings below, so the Makefile can set the build
+        # number (git commit count) at build time.
+        CFBundleShortVersionString: "$(MARKETING_VERSION)"
+        CFBundleVersion: "$(CURRENT_PROJECT_VERSION)"
         # See app/ios/project.yml: spares every upload the by-hand
         # export-compliance question.
         ITSAppUsesNonExemptEncryption: false
@@ -66,7 +69,10 @@ targets:
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.fluxfrontiers.knowledgepress
-        MARKETING_VERSION: "1.0"
+        # Tracks the gutenberg-kg package version (pyproject.toml);
+        # tests/test_app_version.py fails when they differ.
+        MARKETING_VERSION: "1.22.2"
+        # Overridden by the Makefile with `git rev-list --count HEAD`.
         CURRENT_PROJECT_VERSION: "1"
         SWIFT_VERSION: "6.0"
         GENERATE_INFOPLIST_FILE: NO
