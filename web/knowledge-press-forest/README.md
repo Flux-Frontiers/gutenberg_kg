@@ -24,17 +24,20 @@ Open the URL Vite prints. Click **Start driving**.
 | Key | Action |
 | --- | --- |
 | **W / S** | throttle / reverse |
-| **A / D** | steer left / right (chase camera) |
+| **A / D** or **Left / Right** | steer left / right (chase camera) |
+| **Up / Down** | tilt the camera up / down (gamepad: right stick) |
+| **Space** | brake |
+| **C** | camera: behind the cart, high view, in the cart |
 | **E** | read the nearest tree into the press |
 | **G** | grove atlas — jump to a genre |
 | **Q** | ride the ring road (steer to hop off) |
 | **H** | return to Hamlet |
 | **L** | open the press (collected books) |
-| **Esc** | pause |
+| **Esc** | settings (leaf complexity, geometry readout, camera, pace) |
 
 Click a grove on the minimap to jump there. The cart is **not** locked to rails
-unless you ride the ring. Dirt spokes run from the press to each grove so the
-path is readable from the chase camera.
+unless you ride the ring. Brick spokes run from the press to each grove, and a
+brick ring road links the groves.
 
 On a phone, use the on-screen stick. Type a word in the lantern field to
 light matching groves (`stoic`, `freedom`, `fire`, `sea`) — the lantern trail

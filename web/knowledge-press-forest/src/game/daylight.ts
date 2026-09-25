@@ -11,5 +11,5 @@ export const DAY_OVERRIDE = {
   sun: "#fff6df",
   sunIntensity: 1.4,
   hemiIntensity: 1.05,
-  groundLightness: 0.3,
+  groundLightness: 0.12,
 };

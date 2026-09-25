@@ -10,6 +10,22 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added
 
+- **Knowledge Press Forest (web): truthful trees, textured and driveable on a phone.**
+  Tree growth now mirrors the Python viz3d (`kg_utils.viz3d.organic.colonize`,
+  `grow_tree_geometry`): every chunk is a crown point, growth reaches for up to
+  3000 of them with no node cap, and at the Ultra leaf level every one of the
+  corpus's 398,214 chunks is a leaf. Lower levels show the same fraction of every
+  book (1 in 10, 4, 2), so crowns stay proportional. Genres grow as five species
+  with CC0 ambientCG bark and species leaf outlines on continuous swept bark
+  meshes; roads are herringbone brick; each grove stands on its own tinted ground.
+  One render chunk per grove lets the renderer skip groves out of view or lost in
+  the fog, and the forest grows in a Web Worker. Measured: 60 fps at Ultra on a
+  laptop and an iPhone 17 Pro, 50-60 on an iPad. Also: brake, turn-in-place and a
+  settings dialog; search with a results list, jump-to-tree and minimap pins; an
+  in-the-cart camera; Up/Down (or a touch look strip) to tilt the view; touch
+  layouts for phones and tablets; an optional triangles / draw-calls / fps readout.
+  The web app's `package.json` now tracks the package version.
+
 - **`make publish-worker-image` and `make pull-worker-image`: one multi-arch image for
   everyone.** `publish-worker-image` builds `linux/amd64` and `linux/arm64` into one image
   index and pushes it to `REGISTRY_IMAGE` (default

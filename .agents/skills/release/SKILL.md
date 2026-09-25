@@ -90,9 +90,11 @@ git log --oneline --no-merges <last-tag>..HEAD
 - `src/gutenberg_kg/__init__.py` → `__version__ = "..."`
 - `app/ios/project.yml` and `app/macos/project.yml` → `MARKETING_VERSION: "..."`
 - `app/GutenbergKGKit/Sources/KnowledgePressUI/AppVersion.swift` → `fallback = "..."`
+- `web/knowledge-press-forest/package.json` and `package-lock.json` → `"version": "..."`
+  (`cd web/knowledge-press-forest && npm version X.Y.Z --no-git-tag-version`)
 
 The apps carry the package version; `tests/test_app_version.py` fails in Step 6
-if any of these three differs from `pyproject.toml`. The build number is not
+if any of these differs from `pyproject.toml`. The build number is not
 bumped by hand: the Makefile sets it to `git rev-list --count HEAD`.
 
 `poetry lock` is **not** needed for a version bump here — the package version

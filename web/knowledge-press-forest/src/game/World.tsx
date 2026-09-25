@@ -1,8 +1,10 @@
 import { useFrame } from "@react-three/fiber";
-import { useMemo, useRef } from "react";
-import { BackSide, Color, InstancedMesh, Object3D } from "three";
+import { useEffect, useMemo, useRef } from "react";
+import { BufferAttribute, BufferGeometry, CanvasTexture, Color, InstancedMesh, MeshStandardMaterial, Object3D, RepeatWrapping, SRGBColorSpace, TextureLoader } from "three";
+import { ForestFloor, Sky, Sunlight, useGroundTexture } from "./Environment";
 import { DAY_OVERRIDE } from "./daylight";
 import { bookMatchesQuery, groveApproach, groveByGenre, type Forest } from "./forest";
+import { disc, ribbon, type FlatMesh } from "./roads";
 import { Signposts } from "./Signposts";
 import { SEASONS, type SeasonName } from "./seasons";
 import { sim } from "./sim";
@@ -20,11 +22,11 @@ export function World({ forest, season }: { forest: Forest; season: SeasonName }
     [day, pal.sky],
   );
   const fogColor = day ? DAY_OVERRIDE.fog : pal.fog;
-  const fogDensity = (season === "winter" ? 0.011 : 0.015) * (day ? DAY_OVERRIDE.fogDensityScale : 1);
+  const fogDensity = (season === "winter" ? 0.0077 : 0.0105) * (day ? DAY_OVERRIDE.fogDensityScale : 1);
   const ambientColor = day ? DAY_OVERRIDE.ambient : pal.ambient;
-  const sunColor = day ? DAY_OVERRIDE.sun : pal.sun;
   const hemiIntensity = 0.78 * (day ? DAY_OVERRIDE.hemiIntensity : 1);
-  const sunIntensity = 0.88 * (day ? DAY_OVERRIDE.sunIntensity : 1);
+  const detail = useGame((s) => s.preferences.detail);
+  const groundTexture = useGroundTexture();
   const groundColor = useMemo(() => {
     const c = new Color(pal.ground);
     if (day) c.offsetHSL(0, -0.08, DAY_OVERRIDE.groundLightness);
@@ -32,6 +34,7 @@ export function World({ forest, season }: { forest: Forest; season: SeasonName }
   }, [day, pal.ground]);
   const selectedGrove = useGame((s) => s.selectedGrove);
   const query = useGame((s) => s.query);
+  const searchPick = useGame((s) => s.searchPick);
   const travelMode = useGame((s) => s.travelMode);
 
   return (
@@ -39,26 +42,25 @@ export function World({ forest, season }: { forest: Forest; season: SeasonName }
       <color attach="background" args={[skyColor]} />
       <fogExp2 attach="fog" args={[fogColor, fogDensity]} />
       <hemisphereLight color={ambientColor} groundColor={groundColor} intensity={hemiIntensity} />
-      <directionalLight position={[40, 55, 18]} intensity={sunIntensity} color={sunColor} />
+      <Sunlight day={day} detail={detail} />
+      <Sky day={day} season={season} />
       <directionalLight position={[-30, 20, -40]} intensity={0.2} color="#8aa0b8" />
 
-      <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, 0, 0]}>
+      <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, 0, 0]} receiveShadow>
         <circleGeometry args={[forest.worldRadius + 30, 64]} />
-        <meshStandardMaterial color={groundColor} roughness={0.96} metalness={0} />
+        <meshStandardMaterial color={season === "winter" ? "#c8d1ce" : groundColor} map={groundTexture} bumpMap={groundTexture} bumpScale={0.09} roughness={0.96} metalness={0} />
       </mesh>
 
+      <GroveGrounds forest={forest} ground={groundColor} winter={season === "winter"} />
       <Roads forest={forest} circuit={travelMode === "circuit"} />
-      <LanternTrail forest={forest} selectedGrove={selectedGrove} query={query} />
+      {detail && <ForestFloor forest={forest} season={season} />}
+      <LanternTrail forest={forest} selectedGrove={selectedGrove} query={query} searchPick={searchPick} />
       <Signposts forest={forest} />
 
       {forest.groves.map((g) => {
         const on = selectedGrove === g.genre;
         return (
           <group key={g.genre} position={[g.x, 0, g.z]}>
-            <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, 0.03, 0]}>
-              <circleGeometry args={[Math.min(g.radius * 0.55, 16), 24]} />
-              <meshStandardMaterial color={groundColor} roughness={1} />
-            </mesh>
             <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, 0.06, 0]}>
               <ringGeometry args={[2.2, on ? 3.1 : 2.7, 20]} />
               <meshBasicMaterial color={g.color} transparent opacity={on ? 0.92 : 0.55} />
@@ -76,36 +78,100 @@ export function World({ forest, season }: { forest: Forest; season: SeasonName }
         <meshStandardMaterial color="#d7d1c4" roughness={0.55} />
       </mesh>
 
-      <mesh>
-        <sphereGeometry args={[forest.worldRadius * 1.45, 16, 12]} />
-        <meshBasicMaterial color={skyColor} side={BackSide} />
-      </mesh>
     </>
   );
 }
 
+function flatGeometry(m: FlatMesh) {
+  const g = new BufferGeometry();
+  g.setAttribute("position", new BufferAttribute(new Float32Array(m.pos), 3));
+  g.setAttribute("normal", new BufferAttribute(new Float32Array(m.pos.length).map((_, i) => (i % 3 === 1 ? 1 : 0)), 3));
+  g.setAttribute("uv", new BufferAttribute(new Float32Array(m.uv), 2));
+  g.setIndex(m.index);
+  g.computeBoundingSphere();
+  return g;
+}
+
+// CC0 herringbone brick from ambientCG; see public/textures/road/CREDITS.md.
+function brickMaterial() {
+  const loader = new TextureLoader();
+  const load = (map: string, srgb = false) => {
+    const tex = loader.load(`textures/road/brick_${map}.jpg`);
+    tex.wrapS = tex.wrapT = RepeatWrapping;
+    tex.anisotropy = 8;
+    if (srgb) tex.colorSpace = SRGBColorSpace;
+    return tex;
+  };
+  return new MeshStandardMaterial({ map: load("color", true), normalMap: load("normal"), roughness: 0.9, metalness: 0 });
+}
+
+/**
+ * Spokes sit lowest, the ring above them, junction plazas on top, so each join
+ * is covered by the next layer instead of z-fighting.
+ */
 function Roads({ forest, circuit }: { forest: Forest; circuit: boolean }) {
+  const geoms = useMemo(() => {
+    const spokes: FlatMesh = { pos: [], uv: [], index: [] };
+    const ring: FlatMesh = { pos: [], uv: [], index: [] };
+    for (const line of forest.roadLines) {
+      if (line.kind === "spoke") ribbon(line, 2.8, 0.035, spokes);
+      else ribbon(line, 3.4, 0.045, ring);
+    }
+    for (const p of forest.plazas) disc(p.x, p.z, p.r, 0.055, ring);
+    return { spokes: flatGeometry(spokes), ring: flatGeometry(ring) };
+  }, [forest]);
+  const materials = useMemo(() => {
+    const spoke = brickMaterial();
+    const ring = spoke.clone();
+    return { spoke, ring };
+  }, []);
+  useEffect(() => () => { geoms.spokes.dispose(); geoms.ring.dispose(); }, [geoms]);
+  useEffect(() => () => {
+    materials.spoke.map?.dispose();
+    materials.spoke.normalMap?.dispose();
+    materials.spoke.dispose();
+    materials.ring.dispose();
+  }, [materials]);
+  // Riding the ring warms it slightly so the tour's road reads as the lit path.
+  materials.ring.emissive.set(circuit ? "#8fad86" : "#000000");
+  materials.ring.emissiveIntensity = circuit ? 0.12 : 0;
   return (
     <group>
-      {forest.roads.map((r, i) => {
-        const dx = r.bx - r.ax;
-        const dz = r.bz - r.az;
-        const len = Math.hypot(dx, dz);
-        if (len < 0.4) return null;
-        const lit = circuit && r.kind === "ring";
+      <mesh geometry={geoms.spokes} material={materials.spoke} receiveShadow />
+      <mesh geometry={geoms.ring} material={materials.ring} receiveShadow />
+    </group>
+  );
+}
+
+// Soft-edged disc alpha, shared by every grove's ground patch.
+function useRadialAlpha() {
+  const tex = useMemo(() => {
+    const c = document.createElement("canvas");
+    c.width = c.height = 128;
+    const ctx = c.getContext("2d")!;
+    const g = ctx.createRadialGradient(64, 64, 0, 64, 64, 64);
+    g.addColorStop(0, "#fff");
+    g.addColorStop(0.72, "#fff");
+    g.addColorStop(1, "#000");
+    ctx.fillStyle = g;
+    ctx.fillRect(0, 0, 128, 128);
+    return new CanvasTexture(c);
+  }, []);
+  useEffect(() => () => tex.dispose(), [tex]);
+  return tex;
+}
+
+/** Each grove stands on its own tinted ground, fading out at the edge, so its extent reads at a glance. */
+function GroveGrounds({ forest, ground, winter }: { forest: Forest; ground: Color; winter: boolean }) {
+  const alpha = useRadialAlpha();
+  return (
+    <group>
+      {forest.groves.map((g) => {
+        const tint = new Color(winter ? "#c8d1ce" : ground).lerp(new Color(g.color), winter ? 0.25 : 0.4);
         return (
-          <mesh
-            key={i}
-            position={[(r.ax + r.bx) / 2, lit ? 0.055 : 0.04, (r.az + r.bz) / 2]}
-            rotation={[0, Math.atan2(dx, dz), 0]}
-          >
-            <boxGeometry args={[r.kind === "ring" ? 2.05 : 1.45, 0.05, len]} />
-            <meshStandardMaterial
-              color={lit ? "#6e5a3d" : r.kind === "ring" ? "#5c4a36" : "#4e3f2d"}
-              roughness={1}
-              emissive={lit ? "#8fad86" : "#000000"}
-              emissiveIntensity={lit ? 0.18 : 0}
-            />
+          <mesh key={g.genre} rotation={[-Math.PI / 2, 0, 0]} position={[g.x, 0.015, g.z]} receiveShadow>
+            <circleGeometry args={[g.radius + 3, 48]} />
+            <meshStandardMaterial color={tint} alphaMap={alpha} transparent opacity={0.6} depthWrite={false} roughness={1} />
           </mesh>
         );
       })}
@@ -117,10 +183,12 @@ function LanternTrail({
   forest,
   selectedGrove,
   query,
+  searchPick,
 }: {
   forest: Forest;
   selectedGrove: string | null;
   query: string;
+  searchPick: string | null;
 }) {
   const ref = useRef<InstancedMesh>(null);
 
@@ -132,9 +200,11 @@ function LanternTrail({
         return { x: wp.x, z: wp.z, mode: "grove" as const };
       }
     }
+    const picked = searchPick ? forest.trees.find((t) => t.book.slug === searchPick) : undefined;
+    if (picked) return { x: picked.x, z: picked.z, mode: "grove" as const };
     if (!query.trim()) return null;
     return { mode: "query" as const, q: query };
-  }, [forest, selectedGrove, query]);
+  }, [forest, selectedGrove, query, searchPick]);
 
   useFrame(() => {
     const mesh = ref.current;

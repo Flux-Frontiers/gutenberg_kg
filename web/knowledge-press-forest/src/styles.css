@@ -59,3 +59,41 @@
     transition-duration: 0.01ms !important;
   }
 }
+
+.forest-settings::backdrop {
+  background: rgb(8 16 22 / 70%);
+  backdrop-filter: blur(8px);
+}
+
+input[type="range"], input[type="checkbox"] { accent-color: var(--color-primary); }
+button:focus-visible, select:focus-visible, input:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+}
+.touch-controls { display: none; }
+@media (pointer: coarse), (max-width: 639px) {
+  .touch-controls { display: flex; padding-bottom: max(0.75rem, env(safe-area-inset-bottom)); }
+}
+
+/* Touch layouts (phones, tablets): the controls own the bottom ~8.5rem, so stack
+   search, then the book card, above them; lift the season column clear too. */
+@media (pointer: coarse), (max-width: 639px) {
+  .search-dock {
+    position: absolute; left: 50%; right: auto; margin: 0;
+    translate: -50% 0; /* same property Tailwind's -translate-x-1/2 sets, so they cannot stack */
+    width: min(100% - 1.5rem, 22rem);
+    bottom: calc(8.75rem + env(safe-area-inset-bottom));
+    flex-direction: column-reverse;
+  }
+  /* Search sits below the card here, not beside it, so drop the desktop width cap. */
+  .book-dock { bottom: calc(12.5rem + env(safe-area-inset-bottom)); max-width: 32rem; }
+  .season-dock { bottom: calc(8.75rem + env(safe-area-inset-bottom)); }
+}
+
+/* Tablets, either orientation: from ~700px there is room between the joystick
+   (~124px) and the buttons (~172px) for the 22rem search bar, so it sits on the
+   bottom edge and the book card just above the joystick. Phones keep the stack. */
+@media (pointer: coarse) and (min-width: 700px) {
+  .search-dock { bottom: calc(1rem + env(safe-area-inset-bottom)); }
+  .book-dock { bottom: calc(8.75rem + env(safe-area-inset-bottom)); }
+}

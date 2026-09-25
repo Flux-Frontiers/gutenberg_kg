@@ -1,6 +1,8 @@
 import { create } from "zustand";
 import type { TimeOfDay } from "./daylight";
 import type { SeasonName } from "./seasons";
+import { readPreferences, type Preferences } from "./preferences";
+import { resetInput } from "./input";
 
 const SAVE_KEY = "kpf-library-v1";
 const SAVE_VERSION = 1;
@@ -11,6 +13,7 @@ type SaveBlob = {
   grovesVisited: string[];
   season: SeasonName;
   timeOfDay: TimeOfDay;
+  preferences: Preferences;
 };
 
 function loadSave(): SaveBlob {
@@ -20,6 +23,7 @@ function loadSave(): SaveBlob {
     grovesVisited: [],
     season: "summer",
     timeOfDay: "day",
+    preferences: readPreferences(),
   };
   if (typeof window === "undefined") return defaults;
   try {
@@ -40,6 +44,7 @@ function loadSave(): SaveBlob {
           ? parsed.season
           : "summer",
       timeOfDay: parsed.timeOfDay === "night" ? "night" : "day",
+      preferences: readPreferences(parsed.preferences),
     };
   } catch {
     return defaults;
@@ -51,6 +56,7 @@ function persist(s: {
   grovesVisited: string[];
   season: SeasonName;
   timeOfDay: TimeOfDay;
+  preferences: Preferences;
 }) {
   try {
     const blob: SaveBlob = {
@@ -59,6 +65,7 @@ function persist(s: {
       grovesVisited: s.grovesVisited,
       season: s.season,
       timeOfDay: s.timeOfDay,
+      preferences: s.preferences,
     };
     window.localStorage.setItem(SAVE_KEY, JSON.stringify(blob));
   } catch {
@@ -76,10 +83,13 @@ export type JumpPose = {
 
 export type GameStore = {
   playing: boolean;
+  preferences: Preferences;
+  setPreferences: (patch: Partial<Preferences>) => void;
   paused: boolean;
   season: SeasonName;
   timeOfDay: TimeOfDay;
   query: string;
+  searchPick: string | null;
   library: string[];
   grovesVisited: string[];
   nearbySlug: string | null;
@@ -91,6 +101,9 @@ export type GameStore = {
   z: number;
   yaw: number;
   toast: string | null;
+  /** Last sampled render stats, when preferences.stats is on. */
+  stats: { tris: number; calls: number; fps: number } | null;
+  setStats: (stats: { tris: number; calls: number; fps: number } | null) => void;
   libraryOpen: boolean;
   helpOpen: boolean;
   lastReadSlug: string | null;
@@ -103,6 +116,7 @@ export type GameStore = {
   setSeason: (s: SeasonName) => void;
   toggleTimeOfDay: () => void;
   setQuery: (q: string) => void;
+  pickSearch: (slug: string | null) => void;
   collect: (slug: string, title: string) => void;
   markGrove: (genre: string) => void;
   setNearby: (slug: string | null, dist: number) => void;
@@ -126,10 +140,17 @@ const initial = loadSave();
 
 export const useGame = create<GameStore>((set, get) => ({
   playing: false,
+  preferences: initial.preferences,
+  setPreferences: (patch) => {
+    const preferences = readPreferences({ ...get().preferences, ...patch });
+    set({ preferences });
+    persist(get());
+  },
   paused: false,
   season: initial.season,
   timeOfDay: initial.timeOfDay,
   query: "",
+  searchPick: null,
   library: initial.library,
   grovesVisited: initial.grovesVisited,
   nearbySlug: null,
@@ -141,6 +162,8 @@ export const useGame = create<GameStore>((set, get) => ({
   z: 0,
   yaw: 0,
   toast: null,
+  stats: null,
+  setStats: (stats) => set({ stats }),
   libraryOpen: false,
   helpOpen: false,
   lastReadSlug: null,
@@ -149,7 +172,10 @@ export const useGame = create<GameStore>((set, get) => ({
   travelMode: "free",
   jump: null,
   play: () => set({ playing: true, paused: false }),
-  pause: (v) => set({ paused: v ?? !get().paused }),
+  pause: (v) => {
+    resetInput();
+    set({ paused: v ?? !get().paused });
+  },
   setSeason: (season) => {
     set({ season });
     persist({ ...get(), season });
@@ -159,7 +185,8 @@ export const useGame = create<GameStore>((set, get) => ({
     set({ timeOfDay });
     persist({ ...get(), timeOfDay });
   },
-  setQuery: (query) => set({ query }),
+  setQuery: (query) => set({ query, searchPick: null }),
+  pickSearch: (searchPick) => set({ searchPick }),
   collect: (slug, title) => {
     const lib = get().library;
     if (lib.includes(slug)) {
@@ -198,20 +225,26 @@ export const useGame = create<GameStore>((set, get) => ({
   selectGrove: (selectedGrove) => set({ selectedGrove }),
   toggleAtlas: () => set({ atlasOpen: !get().atlasOpen, libraryOpen: false }),
   setAtlasOpen: (atlasOpen) => set({ atlasOpen }),
-  setTravelMode: (travelMode) => set({ travelMode }),
+  // Leaving the ring drops the grove it was pointing at, so the lantern trail goes with it.
+  setTravelMode: (travelMode) =>
+    set(travelMode === "free" && get().travelMode === "circuit" ? { travelMode, selectedGrove: null } : { travelMode }),
   toggleCircuit: () => {
     const next = get().travelMode === "circuit" ? "free" : "circuit";
     set({
       travelMode: next,
+      ...(next === "free" ? { selectedGrove: null } : {}),
       toast: next === "circuit" ? "Riding the ring · steer to hop off" : "Free drive",
     });
   },
-  requestJump: (jump, toast) =>
+  requestJump: (jump, toast) => {
+    resetInput();
     set({
       jump,
       travelMode: "free",
       atlasOpen: false,
+      libraryOpen: false,
       toast: toast ?? null,
-    }),
+    });
+  },
   clearJump: () => set({ jump: null }),
 }));

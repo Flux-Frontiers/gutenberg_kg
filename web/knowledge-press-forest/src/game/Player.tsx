@@ -2,7 +2,7 @@ import { useFrame } from "@react-three/fiber";
 import { useMemo, useRef } from "react";
 import { Group, MathUtils, PerspectiveCamera, Vector3 } from "three";
 import { treesNear, type Forest } from "./forest";
-import { sampleActions } from "./input";
+import { resetInput, sampleActions } from "./input";
 import { clamp } from "./math";
 import { forwardOf, sim, stepVehicle, teleportSim, wrapAngle, yawToward } from "./sim";
 import { useGame } from "./store";
@@ -11,7 +11,7 @@ const camPos = new Vector3();
 const lookAt = new Vector3();
 
 function nextCircuitIndex(forest: Forest, x: number, z: number): number {
-  const pts = forest.circuit;
+  const pts = forest.ringPath;
   if (pts.length === 0) return 0;
   let best = 0;
   let bestScore = -Infinity;
@@ -29,8 +29,8 @@ function nextCircuitIndex(forest: Forest, x: number, z: number): number {
       best = i;
     }
   }
-  const cur = pts[best]!;
-  if (Math.hypot(cur.x - x, cur.z - z) < 7) return (best + 1) % pts.length;
+  // Samples are ~2 m apart: steer for one at least 7 m ahead so the tour does not weave.
+  for (let k = 0; k < pts.length && Math.hypot(pts[best]!.x - x, pts[best]!.z - z) < 7; k++) best = (best + 1) % pts.length;
   return best;
 }
 
@@ -39,7 +39,9 @@ export function Player({ forest, playing }: { forest: Forest; playing: boolean }
   const wheelL = useRef<Group>(null);
   const wheelR = useRef<Group>(null);
   const poseAcc = useRef(0);
-  const lastNearby = useRef<string | null>(null);
+  const wasBlocked = useRef(false);
+  // Camera tilt in radians, held between drives; Up/Down or the right stick.
+  const pitch = useRef(0);
   const lastMarked = useRef<string | null>(null);
 
   const paused = useGame((s) => s.paused);
@@ -52,7 +54,14 @@ export function Player({ forest, playing }: { forest: Forest; playing: boolean }
 
   useFrame((state, delta) => {
     const dt = Math.min(delta, 0.1);
-    const jump = useGame.getState().jump;
+    const game = useGame.getState();
+    const { preferences, jump } = game;
+    const blocked = !playing || paused || game.libraryOpen || game.atlasOpen || Boolean(document.activeElement?.matches("input, textarea, select, [contenteditable=true]"));
+    if (blocked) {
+      sim.speed = sim.lat = sim.steering = 0;
+      if (!wasBlocked.current) resetInput();
+    }
+    wasBlocked.current = blocked;
     if (jump) {
       teleportSim(jump.x, jump.z, jump.yaw);
       useGame.getState().clearJump();
@@ -62,7 +71,7 @@ export function Player({ forest, playing }: { forest: Forest; playing: boolean }
       state.camera.lookAt(lookAt);
     }
 
-    if (!playing || paused) {
+    if (blocked) {
       // Still keep camera on the cart while paused
     } else {
       const a = sampleActions();
@@ -70,12 +79,12 @@ export function Player({ forest, playing }: { forest: Forest; playing: boolean }
       let steer = a.steer;
       const mode = useGame.getState().travelMode;
       if (mode === "circuit" && forest.circuit.length > 1) {
-        if (Math.abs(a.steer) > 0.38) {
+        if (Math.abs(a.steer) > 0.38 || a.brake || a.throttle < 0) {
           useGame.getState().setTravelMode("free");
           useGame.getState().setToast("Free drive");
         } else {
           const i = nextCircuitIndex(forest, sim.x, sim.z);
-          const wp = forest.circuit[i]!;
+          const wp = forest.ringPath[i]!;
           const desired = yawToward(sim.x, sim.z, wp.x, wp.z);
           const err = wrapAngle(desired - sim.yaw);
           steer = clamp(err * 1.65, -1, 1);
@@ -83,7 +92,8 @@ export function Player({ forest, playing }: { forest: Forest; playing: boolean }
           useGame.getState().selectGrove(wp.genre);
         }
       }
-      stepVehicle(forest, throttle, steer, a.boost, dt);
+      stepVehicle(forest, throttle, steer, a.boost, dt, { ...preferences, brake: a.brake });
+      pitch.current = clamp(pitch.current + a.pitch * 1.1 * dt, -0.45, 0.75);
 
       if (a.interact) {
         const near = treesNear(forest, sim.x, sim.z, 6.8);
@@ -101,15 +111,24 @@ export function Player({ forest, playing }: { forest: Forest; playing: boolean }
     }
 
     const f = forwardOf(sim.yaw);
-    const follow = 8.4;
-    const height = 4.5;
-    camPos.set(sim.x - f.x * follow, sim.y + height, sim.z - f.z * follow);
-    const k = 1 - Math.exp(-3.4 * dt);
-    state.camera.position.lerp(camPos, k);
-    lookAt.set(sim.x + f.x * 2.6, sim.y + 1.4, sim.z + f.z * 2.6);
+    const inCart = preferences.camera === "cart";
+    if (inCart) {
+      // Turtle's-eye: on the back seat, low, looking over the lantern. Rigid, no chase lag.
+      camPos.set(sim.x - f.x * 0.45, sim.y + 1.3, sim.z - f.z * 0.45);
+      state.camera.position.copy(camPos);
+      lookAt.set(sim.x + f.x * 10, sim.y + 1.15, sim.z + f.z * 10);
+    } else {
+      const follow = preferences.camera === "high" ? 12 : 8.4;
+      const height = preferences.camera === "high" ? 10 : 4.5;
+      camPos.set(sim.x - f.x * follow, sim.y + height, sim.z - f.z * follow);
+      state.camera.position.lerp(camPos, 1 - Math.exp(-3.4 * dt));
+      lookAt.set(sim.x + f.x * 2.6, sim.y + 1.4, sim.z + f.z * 2.6);
+    }
+    // Tilt by raising or lowering the look point over its horizontal distance.
+    lookAt.y += Math.hypot(lookAt.x - state.camera.position.x, lookAt.z - state.camera.position.z) * Math.tan(pitch.current);
     state.camera.lookAt(lookAt);
     const cam = state.camera as PerspectiveCamera;
-    const fovTarget = MathUtils.lerp(56, 68, Math.min(1, Math.abs(sim.speed) / 22));
+    const fovTarget = inCart ? 72 : 58;
     cam.fov = MathUtils.lerp(cam.fov, fovTarget, 1 - Math.exp(-4 * dt));
     cam.updateProjectionMatrix();
 
@@ -117,6 +136,7 @@ export function Player({ forest, playing }: { forest: Forest; playing: boolean }
     if (g) {
       g.position.set(sim.x, sim.y, sim.z);
       g.lookAt(sim.x + f.x, sim.y, sim.z + f.z);
+      if (preferences.motion) g.rotateZ(-sim.steering * Math.min(Math.abs(sim.speed), 12) * 0.003);
     }
     const spin = (sim.speed * dt) / 0.42;
     if (wheelL.current) wheelL.current.rotation.x += spin;
@@ -132,10 +152,6 @@ export function Player({ forest, playing }: { forest: Forest; playing: boolean }
         bestSlug = t.book.slug;
       }
     }
-    if (bestSlug !== lastNearby.current) {
-      lastNearby.current = bestSlug;
-      setNearby(bestSlug, bestD);
-    }
 
     for (const grove of forest.groves) {
       if (Math.hypot(grove.x - sim.x, grove.z - sim.z) < grove.radius) {
@@ -143,19 +159,22 @@ export function Player({ forest, playing }: { forest: Forest; playing: boolean }
           lastMarked.current = grove.genre;
           markGrove(grove.genre);
         }
+        // Arrived at the grove the trail was leading to: put the lantern trail away.
+        if (game.travelMode === "free" && game.selectedGrove === grove.genre) game.selectGrove(null);
       }
     }
 
     poseAcc.current += dt;
     if (poseAcc.current > 0.08) {
       poseAcc.current = 0;
+      setNearby(bestSlug, bestD);
       setPose(sim.x, sim.z, sim.yaw, sim.speed);
     }
   });
 
   return (
     <group ref={group}>
-      <mesh position={[0, 0.38, 0.05]} castShadow={false}>
+      <mesh position={[0, 0.38, 0.05]} castShadow receiveShadow>
         <boxGeometry args={[1.15, 0.32, 1.85]} />
         <meshStandardMaterial color="#5a3d28" roughness={0.85} />
       </mesh>

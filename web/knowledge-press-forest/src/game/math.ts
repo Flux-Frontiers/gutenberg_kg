@@ -27,45 +27,6 @@ export function lerp(a: number, b: number, t: number): number {
   return a + (b - a) * t;
 }
 
-/** Quaternion rotating +Y to direction (dx,dy,dz). CylinderGeometry is +Y. */
-export function quatFromYToDir(
-  dx: number,
-  dy: number,
-  dz: number,
-  out: number[],
-  offset = 0,
-): void {
-  const len = Math.hypot(dx, dy, dz) || 1;
-  const x = dx / len;
-  const y = dy / len;
-  const z = dz / len;
-  const dot = y;
-  const ax = z;
-  const ay = 0;
-  const az = -x;
-  const axisLen = Math.hypot(ax, ay, az);
-  if (axisLen < 1e-6) {
-    if (dot > 0) {
-      out[offset] = 0;
-      out[offset + 1] = 0;
-      out[offset + 2] = 0;
-      out[offset + 3] = 1;
-    } else {
-      out[offset] = 1;
-      out[offset + 1] = 0;
-      out[offset + 2] = 0;
-      out[offset + 3] = 0;
-    }
-    return;
-  }
-  const angle = Math.acos(clamp(dot, -1, 1));
-  const s = Math.sin(angle / 2) / axisLen;
-  out[offset] = ax * s;
-  out[offset + 1] = ay * s;
-  out[offset + 2] = az * s;
-  out[offset + 3] = Math.cos(angle / 2);
-}
-
 export function fibonacciAnnulus(
   n: number,
   inner: number,
