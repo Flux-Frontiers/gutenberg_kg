@@ -50,6 +50,7 @@
 #   make ios-deploy         -- install-corpus + verify + launch, in order
 #   make ios-build          -- signed device build (needs a Team ID on this Mac)
 #   make ios-deploy-all     -- install + relaunch the app on every reachable device
+#   make ios-push-all       -- build, then install app + corpus + relaunch on every reachable device
 #
 # All the ios-* targets auto-detect a reachable device. With more than one
 # paired, name it: make ios-deploy IOS_DEVICE=<udid|name>
@@ -258,7 +259,7 @@ endif
 # `gutenkg` on PATH. Override with e.g. `make GUTENKG=gutenkg build-corpus`.
 GUTENKG     ?= poetry run gutenkg
 
-.PHONY: init spacy-model chunk-diaries build-diaries build-corpus export-swift export-web-catalog check-pins setup build build-all rebuild rebuild-all prune kill down-all runtime-guard publish-worker-image pull-worker-image run image-server sdxl-server sdxl-fetch chat up stop down query logs clean docs ios-devices ios-generate ios-check ios-install-corpus ios-verify-corpus ios-launch ios-deploy ios-stage-corpus ios-unstage-corpus ios-archive ios-upload mac-generate mac-check mac-dev mac-dev-run mac-build mac-verify mac-notarize mac-dmg mac-notarize-dmg mac-release
+.PHONY: init spacy-model chunk-diaries build-diaries build-corpus export-swift export-web-catalog check-pins setup build build-all rebuild rebuild-all prune kill down-all runtime-guard publish-worker-image pull-worker-image run image-server sdxl-server sdxl-fetch chat up stop down query logs clean docs ios-devices ios-generate ios-check ios-install-corpus ios-verify-corpus ios-launch ios-deploy ios-deploy-all ios-push-all ios-stage-corpus ios-unstage-corpus ios-archive ios-upload mac-generate mac-check mac-dev mac-dev-run mac-build mac-verify mac-notarize mac-dmg mac-notarize-dmg mac-release
 
 init:
 	$(GUTENKG) init
@@ -911,9 +912,13 @@ ios-upload: ios-archive
 # -- it prints "available (paired)" for an idle device but "connected" for one
 # with a live tunnel, so grepping for "available" silently skipped every device
 # that was ready to receive.
+define ios_reachable_devices
+xcrun devicectl list devices --json-output /dev/stdout 2>/dev/null \
+  | python3 -c 'import json,sys; d=json.load(sys.stdin)["result"]["devices"]; c=lambda x: x.get("connectionProperties",{}); print("\n".join(x["identifier"] for x in d if c(x).get("tunnelState")!="unavailable" and c(x).get("transportType")!="sameMachine"))'
+endef
+
 ios-deploy-all: ios-build
-	@ids=$$(xcrun devicectl list devices --json-output /dev/stdout 2>/dev/null \
-	  | python3 -c 'import json,sys; d=json.load(sys.stdin)["result"]["devices"]; c=lambda x: x.get("connectionProperties",{}); print("\n".join(x["identifier"] for x in d if c(x).get("tunnelState")!="unavailable" and c(x).get("transportType")!="sameMachine"))'); \
+	@ids=$$($(ios_reachable_devices)); \
 	if [ -z "$$ids" ]; then \
 		echo "No reachable physical devices. Wake and unlock one; see 'make ios-devices'."; \
 		exit 1; \
@@ -923,6 +928,35 @@ ios-deploy-all: ios-build
 		xcrun devicectl device install app --device "$$id" "$(IOS_APP)" && \
 		xcrun devicectl device process launch --device "$$id" --terminate-existing $(IOS_BUNDLE_ID); \
 	done
+
+# ios-deploy-all plus the corpus: build once, then on every reachable device
+# install the app, copy the packs and relaunch. About 690 MB per device over
+# Wi-Fi, and a device can drop off mid-copy, so a failure on one is recorded
+# and the loop moves on to the next; the target still exits non-zero at the
+# end and names what to retry. Does not re-export -- run `make export-swift`
+# first after a corpus change.
+ios-push-all: ios-build
+	@test -f "$(IOS_CORPUS_DIR)/manifest.json" \
+	  || { echo "No corpus at $(IOS_CORPUS_DIR) -- run 'make export-swift' first."; exit 1; }
+	@ids=$$($(ios_reachable_devices)); \
+	if [ -z "$$ids" ]; then \
+		echo "No reachable physical devices. Wake and unlock one; see 'make ios-devices'."; \
+		exit 1; \
+	fi; \
+	failed=""; \
+	for id in $$ids; do \
+		echo "--- $$id ---"; \
+		xcrun devicectl device install app --device "$$id" "$(IOS_APP)" \
+		  && $(MAKE) --no-print-directory ios-install-corpus IOS_DEVICE="$$id" \
+		  && xcrun devicectl device process launch --device "$$id" --terminate-existing $(IOS_BUNDLE_ID) \
+		  || failed="$$failed $$id"; \
+	done; \
+	if [ -n "$$failed" ]; then \
+		echo "Failed on:$$failed"; \
+		echo "Wake and unlock them, then rerun this, or 'make ios-deploy IOS_DEVICE=<id>' for the corpus alone."; \
+		exit 1; \
+	fi; \
+	echo "App and corpus pushed to every reachable device."
 
 # ---------------------------------------------------------------------------
 # The Knowledge Press -- Mac app (app/macos)

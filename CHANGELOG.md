@@ -64,6 +64,11 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   and `up` now refuse to start while the other runtime is up
   (`ALLOW_BOTH_RUNTIMES=1` overrides). `make down-all` runs `make kill`, then
   stops Apple's container services and quits Docker Desktop.
+- **`make ios-push-all`: app and corpus to every device in one step.** It builds
+  once, then on each reachable device installs the app, copies the corpus and
+  relaunches. `ios-deploy-all` still installs only the app. If a device drops
+  off mid-copy, the target records it, moves on to the next device, and exits
+  non-zero at the end with the list of devices to retry.
 
 ### Changed
 

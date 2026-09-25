@@ -601,8 +601,8 @@ make ios-deploy     # install the corpus, list what landed, relaunch the app
 ```
 
 `make ios-devices`, `ios-generate`, `ios-check`, `ios-build`,
-`ios-install-corpus`, `ios-verify-corpus`, `ios-launch` and `ios-deploy-all`
-are the individual steps; the device is auto-detected, and
+`ios-install-corpus`, `ios-verify-corpus`, `ios-launch`, `ios-deploy-all` and
+`ios-push-all` are the individual steps; the device is auto-detected, and
 `IOS_DEVICE=<udid|name>` picks one when several are paired.
 
 Auto-detection takes the first device that is actually reachable, which is not
@@ -685,14 +685,18 @@ Do not take the Team ID from the Apple Development certificate. The value in
 its parentheses is the certificate's own id, not the team's, and a build signed
 against it fails in a way that names neither.
 
-There is no all-devices target for the *corpus* — it is ~690 MB per device, so
-it stays a deliberate, one-device-at-a-time step:
+`make ios-deploy-all` does not copy the corpus. After a corpus change, run
+`make export-swift`, then:
 
 ```sh
-for d in EgsBrainPhone Fermi Ada; do
-  make ios-install-corpus IOS_DEVICE=$d
-done
+make ios-push-all
 ```
+
+It builds once, then on each reachable device installs the app, copies the
+corpus (~690 MB over Wi-Fi) and relaunches. When a device drops off
+mid-copy, the target records the failure and continues with the next
+device. It exits non-zero at the end and lists the devices to retry.
+`make ios-deploy IOS_DEVICE=<id>` retries the corpus on one device.
 
 A device that is asleep or off the network reads `unavailable` in
 `make ios-devices` and cannot be reached at all. Wake it, unlock it, and check
