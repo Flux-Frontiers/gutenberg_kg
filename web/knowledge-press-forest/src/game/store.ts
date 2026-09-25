@@ -101,6 +101,9 @@ export type GameStore = {
   z: number;
   yaw: number;
   toast: string | null;
+  /** Last sampled render stats, when preferences.stats is on. */
+  stats: { tris: number; calls: number; fps: number } | null;
+  setStats: (stats: { tris: number; calls: number; fps: number } | null) => void;
   libraryOpen: boolean;
   helpOpen: boolean;
   lastReadSlug: string | null;
@@ -159,6 +162,8 @@ export const useGame = create<GameStore>((set, get) => ({
   z: 0,
   yaw: 0,
   toast: null,
+  stats: null,
+  setStats: (stats) => set({ stats }),
   libraryOpen: false,
   helpOpen: false,
   lastReadSlug: null,

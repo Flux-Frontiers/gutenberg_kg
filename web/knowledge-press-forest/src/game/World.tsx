@@ -1,9 +1,10 @@
 import { useFrame } from "@react-three/fiber";
-import { useMemo, useRef } from "react";
-import { Color, InstancedMesh, Object3D } from "three";
+import { useEffect, useMemo, useRef } from "react";
+import { BufferAttribute, BufferGeometry, CanvasTexture, Color, InstancedMesh, MeshStandardMaterial, Object3D, RepeatWrapping, SRGBColorSpace, TextureLoader } from "three";
 import { ForestFloor, Sky, Sunlight, useGroundTexture } from "./Environment";
 import { DAY_OVERRIDE } from "./daylight";
 import { bookMatchesQuery, groveApproach, groveByGenre, type Forest } from "./forest";
+import { disc, ribbon, type FlatMesh } from "./roads";
 import { Signposts } from "./Signposts";
 import { SEASONS, type SeasonName } from "./seasons";
 import { sim } from "./sim";
@@ -50,6 +51,7 @@ export function World({ forest, season }: { forest: Forest; season: SeasonName }
         <meshStandardMaterial color={season === "winter" ? "#c8d1ce" : groundColor} map={groundTexture} bumpMap={groundTexture} bumpScale={0.09} roughness={0.96} metalness={0} />
       </mesh>
 
+      <GroveGrounds forest={forest} ground={groundColor} winter={season === "winter"} />
       <Roads forest={forest} circuit={travelMode === "circuit"} />
       {detail && <ForestFloor forest={forest} season={season} />}
       <LanternTrail forest={forest} selectedGrove={selectedGrove} query={query} searchPick={searchPick} />
@@ -80,29 +82,96 @@ export function World({ forest, season }: { forest: Forest; season: SeasonName }
   );
 }
 
+function flatGeometry(m: FlatMesh) {
+  const g = new BufferGeometry();
+  g.setAttribute("position", new BufferAttribute(new Float32Array(m.pos), 3));
+  g.setAttribute("normal", new BufferAttribute(new Float32Array(m.pos.length).map((_, i) => (i % 3 === 1 ? 1 : 0)), 3));
+  g.setAttribute("uv", new BufferAttribute(new Float32Array(m.uv), 2));
+  g.setIndex(m.index);
+  g.computeBoundingSphere();
+  return g;
+}
+
+// CC0 herringbone brick from ambientCG; see public/textures/road/CREDITS.md.
+function brickMaterial() {
+  const loader = new TextureLoader();
+  const load = (map: string, srgb = false) => {
+    const tex = loader.load(`textures/road/brick_${map}.jpg`);
+    tex.wrapS = tex.wrapT = RepeatWrapping;
+    tex.anisotropy = 8;
+    if (srgb) tex.colorSpace = SRGBColorSpace;
+    return tex;
+  };
+  return new MeshStandardMaterial({ map: load("color", true), normalMap: load("normal"), roughness: 0.9, metalness: 0 });
+}
+
+/**
+ * Spokes sit lowest, the ring above them, junction plazas on top, so each join
+ * is covered by the next layer instead of z-fighting.
+ */
 function Roads({ forest, circuit }: { forest: Forest; circuit: boolean }) {
+  const geoms = useMemo(() => {
+    const spokes: FlatMesh = { pos: [], uv: [], index: [] };
+    const ring: FlatMesh = { pos: [], uv: [], index: [] };
+    for (const line of forest.roadLines) {
+      if (line.kind === "spoke") ribbon(line, 2.8, 0.035, spokes);
+      else ribbon(line, 3.4, 0.045, ring);
+    }
+    for (const p of forest.plazas) disc(p.x, p.z, p.r, 0.055, ring);
+    return { spokes: flatGeometry(spokes), ring: flatGeometry(ring) };
+  }, [forest]);
+  const materials = useMemo(() => {
+    const spoke = brickMaterial();
+    const ring = spoke.clone();
+    return { spoke, ring };
+  }, []);
+  useEffect(() => () => { geoms.spokes.dispose(); geoms.ring.dispose(); }, [geoms]);
+  useEffect(() => () => {
+    materials.spoke.map?.dispose();
+    materials.spoke.normalMap?.dispose();
+    materials.spoke.dispose();
+    materials.ring.dispose();
+  }, [materials]);
+  // Riding the ring warms it slightly so the tour's road reads as the lit path.
+  materials.ring.emissive.set(circuit ? "#8fad86" : "#000000");
+  materials.ring.emissiveIntensity = circuit ? 0.12 : 0;
   return (
     <group>
-      {forest.roads.map((r, i) => {
-        const dx = r.bx - r.ax;
-        const dz = r.bz - r.az;
-        const len = Math.hypot(dx, dz);
-        if (len < 0.4) return null;
-        const lit = circuit && r.kind === "ring";
+      <mesh geometry={geoms.spokes} material={materials.spoke} receiveShadow />
+      <mesh geometry={geoms.ring} material={materials.ring} receiveShadow />
+    </group>
+  );
+}
+
+// Soft-edged disc alpha, shared by every grove's ground patch.
+function useRadialAlpha() {
+  const tex = useMemo(() => {
+    const c = document.createElement("canvas");
+    c.width = c.height = 128;
+    const ctx = c.getContext("2d")!;
+    const g = ctx.createRadialGradient(64, 64, 0, 64, 64, 64);
+    g.addColorStop(0, "#fff");
+    g.addColorStop(0.72, "#fff");
+    g.addColorStop(1, "#000");
+    ctx.fillStyle = g;
+    ctx.fillRect(0, 0, 128, 128);
+    return new CanvasTexture(c);
+  }, []);
+  useEffect(() => () => tex.dispose(), [tex]);
+  return tex;
+}
+
+/** Each grove stands on its own tinted ground, fading out at the edge, so its extent reads at a glance. */
+function GroveGrounds({ forest, ground, winter }: { forest: Forest; ground: Color; winter: boolean }) {
+  const alpha = useRadialAlpha();
+  return (
+    <group>
+      {forest.groves.map((g) => {
+        const tint = new Color(winter ? "#c8d1ce" : ground).lerp(new Color(g.color), winter ? 0.25 : 0.4);
         return (
-          <mesh
-            receiveShadow
-            key={i}
-            position={[(r.ax + r.bx) / 2, lit ? 0.055 : 0.04, (r.az + r.bz) / 2]}
-            rotation={[0, Math.atan2(dx, dz), 0]}
-          >
-            <boxGeometry args={[r.kind === "ring" ? 3.2 : 2.6, 0.05, len]} />
-            <meshStandardMaterial
-              color={lit ? "#6e5a3d" : r.kind === "ring" ? "#5c4a36" : "#4e3f2d"}
-              roughness={1}
-              emissive={lit ? "#8fad86" : "#000000"}
-              emissiveIntensity={lit ? 0.18 : 0}
-            />
+          <mesh key={g.genre} rotation={[-Math.PI / 2, 0, 0]} position={[g.x, 0.015, g.z]} receiveShadow>
+            <circleGeometry args={[g.radius + 3, 48]} />
+            <meshStandardMaterial color={tint} alphaMap={alpha} transparent opacity={0.6} depthWrite={false} roughness={1} />
           </mesh>
         );
       })}

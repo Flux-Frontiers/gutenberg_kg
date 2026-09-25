@@ -16,22 +16,31 @@ test("every catalog genre maps to a species on purpose, and every species has it
   }
 });
 
-test("each tree's bark lands in its species' mesh", () => {
+test("each grove is one render chunk: one species, its trees' bark, a contiguous leaf range", () => {
   globalThis.window ??= { localStorage: { getItem: () => null, setItem() {} } };
   const { getForest } = require(`${process.env.FOREST_TEST_BUILD}/forest.js`);
   const { speciesFor } = require(`${process.env.FOREST_TEST_BUILD}/species.js`);
   const forest = getForest();
-  const used = new Array(forest.bark.length).fill(0);
+  assert.equal(forest.chunks.length, forest.groves.length);
+  const used = forest.chunks.map(() => 0);
   for (const t of forest.trees) {
+    const chunk = forest.chunks[t.chunk];
     assert.equal(t.species, speciesFor(t.book.genre));
-    assert.ok(t.woodStart + t.woodCount <= forest.bark[t.species].count);
-    used[t.species] += t.woodCount;
+    assert.equal(chunk.species, t.species, `${t.book.slug}: grove species differs`);
+    assert.equal(chunk.genre, t.book.genre);
+    assert.ok(t.woodStart + t.woodCount <= chunk.bark.count);
+    assert.ok(t.leafStart >= chunk.leafStart && t.leafStart + t.leafCount <= chunk.leafStart + chunk.leafCount);
+    // The chunk's radius must hold the trunk, or distance culling could drop a visible tree.
+    assert.ok(Math.hypot(t.x - chunk.x, t.z - chunk.z) < chunk.radius);
+    used[t.chunk] += t.woodCount;
   }
-  assert.deepEqual(used, forest.bark.map((b) => b.count));
+  assert.deepEqual(used, forest.chunks.map((c) => c.bark.count));
+  assert.equal(forest.chunks.reduce((a, c) => a + c.leafCount, 0), forest.leaves.count);
   for (let i = 0; i < forest.leaves.count; i++) {
     assert.equal(forest.leaves.species[i], forest.trees[forest.leaves.treeIndex[i]].species);
   }
 });
+
 
 test("leaf outlines are closed, mirror-symmetric and have real area", () => {
   const { SPECIES, leafOutline } = require(`${process.env.FOREST_TEST_BUILD}/species.js`);

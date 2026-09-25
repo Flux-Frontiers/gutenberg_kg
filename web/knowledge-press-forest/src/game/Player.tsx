@@ -11,7 +11,7 @@ const camPos = new Vector3();
 const lookAt = new Vector3();
 
 function nextCircuitIndex(forest: Forest, x: number, z: number): number {
-  const pts = forest.circuit;
+  const pts = forest.ringPath;
   if (pts.length === 0) return 0;
   let best = 0;
   let bestScore = -Infinity;
@@ -29,8 +29,8 @@ function nextCircuitIndex(forest: Forest, x: number, z: number): number {
       best = i;
     }
   }
-  const cur = pts[best]!;
-  if (Math.hypot(cur.x - x, cur.z - z) < 7) return (best + 1) % pts.length;
+  // Samples are ~2 m apart: steer for one at least 7 m ahead so the tour does not weave.
+  for (let k = 0; k < pts.length && Math.hypot(pts[best]!.x - x, pts[best]!.z - z) < 7; k++) best = (best + 1) % pts.length;
   return best;
 }
 
@@ -40,6 +40,8 @@ export function Player({ forest, playing }: { forest: Forest; playing: boolean }
   const wheelR = useRef<Group>(null);
   const poseAcc = useRef(0);
   const wasBlocked = useRef(false);
+  // Camera tilt in radians, held between drives; Up/Down or the right stick.
+  const pitch = useRef(0);
   const lastMarked = useRef<string | null>(null);
 
   const paused = useGame((s) => s.paused);
@@ -82,7 +84,7 @@ export function Player({ forest, playing }: { forest: Forest; playing: boolean }
           useGame.getState().setToast("Free drive");
         } else {
           const i = nextCircuitIndex(forest, sim.x, sim.z);
-          const wp = forest.circuit[i]!;
+          const wp = forest.ringPath[i]!;
           const desired = yawToward(sim.x, sim.z, wp.x, wp.z);
           const err = wrapAngle(desired - sim.yaw);
           steer = clamp(err * 1.65, -1, 1);
@@ -91,6 +93,7 @@ export function Player({ forest, playing }: { forest: Forest; playing: boolean }
         }
       }
       stepVehicle(forest, throttle, steer, a.boost, dt, { ...preferences, brake: a.brake });
+      pitch.current = clamp(pitch.current + a.pitch * 1.1 * dt, -0.45, 0.75);
 
       if (a.interact) {
         const near = treesNear(forest, sim.x, sim.z, 6.8);
@@ -121,6 +124,8 @@ export function Player({ forest, playing }: { forest: Forest; playing: boolean }
       state.camera.position.lerp(camPos, 1 - Math.exp(-3.4 * dt));
       lookAt.set(sim.x + f.x * 2.6, sim.y + 1.4, sim.z + f.z * 2.6);
     }
+    // Tilt by raising or lowering the look point over its horizontal distance.
+    lookAt.y += Math.hypot(lookAt.x - state.camera.position.x, lookAt.z - state.camera.position.z) * Math.tan(pitch.current);
     state.camera.lookAt(lookAt);
     const cam = state.camera as PerspectiveCamera;
     const fovTarget = inCart ? 72 : 58;

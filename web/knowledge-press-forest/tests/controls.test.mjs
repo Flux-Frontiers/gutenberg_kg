@@ -78,7 +78,17 @@ test("input reset clears held keyboard, touch axes, brake and interaction edges"
   input.setTouchAxes(1, 1);
   input.setTouchBrake(true);
   input.resetInput();
-  assert.deepEqual(input.sampleActions(), { throttle: 0, steer: 0, boost: false, brake: false, interact: false, interactDown: false });
+  assert.deepEqual(input.sampleActions(), { throttle: 0, steer: 0, boost: false, brake: false, interact: false, interactDown: false, pitch: 0 });
+  // Up/Down look; only W/S drive.
+  input.setInjectedKeys(["ArrowUp"]);
+  let look = input.sampleActions();
+  assert.equal(look.pitch, 1);
+  assert.equal(look.throttle, 0);
+  input.setInjectedKeys(["ArrowDown", "KeyW"]);
+  look = input.sampleActions();
+  assert.equal(look.pitch, -1);
+  assert.equal(look.throttle, 1);
+  input.resetInput();
   input.setInjectedKeys(["Space"]);
   assert.equal(input.sampleActions().interact, false, "Space never collects a book");
   input.resetInput();
@@ -90,6 +100,10 @@ test("old or malformed preferences have usable defaults and bounded sensitivity"
   assert.equal(readPreferences({ sensitivity: 100 }).sensitivity, 1.5);
   assert.equal(readPreferences({ pace: "unknown", camera: "unknown" }).camera, "follow");
   assert.equal(readPreferences({ camera: "cart" }).camera, "cart");
+  assert.equal(readPreferences({}).leaves, "medium");
+  assert.equal(readPreferences({ leaves: "bogus" }).leaves, "medium");
+  assert.equal(readPreferences({ leaves: "ultra" }).leaves, "ultra");
+  assert.equal(readPreferences({}).stats, false);
   assert.equal(readPreferences({ motion: false }).motion, false);
 });
 

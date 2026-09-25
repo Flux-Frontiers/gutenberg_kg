@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { ForestCanvas } from "./ForestCanvas";
 import { HUD } from "./HUD";
 import { PauseOverlay } from "./PauseOverlay";
@@ -8,6 +8,7 @@ import { installControlsTest } from "./controlsTest";
 import { getForest, type Forest } from "./forest";
 import { GROW_VERSION } from "./growTree";
 import { bindInput, isInputTarget } from "./input";
+import { LEAF_SCALE } from "./preferences";
 import { resetSim } from "./sim";
 import { useGame } from "./store";
 
@@ -23,17 +24,22 @@ export function ForestApp() {
     setMounted(true);
     const unbind = bindInput();
     installControlsTest();
+    return () => unbind?.();
+  }, []);
+
+  // Regrow when leaf complexity changes; only the first forest places the cart.
+  const leafScale = useGame((s) => LEAF_SCALE[s.preferences.leaves]);
+  const placed = useRef(false);
+  useEffect(() => {
     const id = window.setTimeout(() => {
-      const f = getForest();
-      resetSim(f);
+      const f = getForest(leafScale);
+      if (!placed.current) resetSim(f);
+      placed.current = true;
       setForest(f);
       window.__gameReady = true;
     }, 0);
-    return () => {
-      window.clearTimeout(id);
-      unbind?.();
-    };
-  }, [GROW_VERSION]);
+    return () => window.clearTimeout(id);
+  }, [leafScale, GROW_VERSION]);
 
   useEffect(() => {
     if (!forest) return;

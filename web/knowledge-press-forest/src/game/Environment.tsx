@@ -56,6 +56,8 @@ export function Sky({ day, season }: { day: boolean; season: SeasonName }) {
 
 /** Tablets and phones: fewer pixels and a smaller shadow map keep the frame rate up. */
 export const COARSE_POINTER = typeof matchMedia === "function" && matchMedia("(pointer: coarse)").matches;
+/** Phones: a touch screen under 640px on its short side. */
+export const PHONE = COARSE_POINTER && Math.min(screen.width, screen.height) < 640;
 
 /** Keep one modest shadow map around the cart instead of covering the entire forest. */
 export function Sunlight({ day, detail }: { day: boolean; detail: boolean }) {

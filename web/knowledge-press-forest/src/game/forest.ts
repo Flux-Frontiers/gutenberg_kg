@@ -35,7 +35,9 @@ export type TreeSite = {
   color: string;
   /** Index into SPECIES. */
   species: number;
-  /** Vertex range of this tree in forest.bark[species]. */
+  /** Index into forest.chunks (its grove). */
+  chunk: number;
+  /** Vertex range of this tree in forest.chunks[chunk].bark. */
   woodStart: number;
   woodCount: number;
   leafStart: number;
@@ -58,23 +60,46 @@ export type Waypoint = {
   label: string;
 };
 
+export type Chunk = {
+  genre: string;
+  species: number;
+  x: number;
+  z: number;
+  /** Horizontal radius holding every trunk and crown. */
+  radius: number;
+  bark: { count: number; pos: Float32Array; normal: Float32Array; uv: Float32Array; index: Uint32Array };
+  /** This grove's contiguous range in forest.leaves. */
+  leafStart: number;
+  leafCount: number;
+};
+
+/** A road centreline in the ground plane; `closed` joins the last point to the first. */
+export type RoadLine = { kind: "spoke" | "ring"; pts: [number, number][]; closed: boolean };
+
 export type Forest = {
   trees: TreeSite[];
   groves: Grove[];
+  /** Straight pieces of every road line, for clearance tests. */
   roads: RoadSeg[];
+  roadLines: RoadLine[];
+  /** Road junctions (ring stops and the hub), each paved with a disc. */
+  plazas: { x: number; z: number; r: number }[];
+  /** One stop per grove, for signposts. */
   circuit: Waypoint[];
-  /** One merged bark mesh per species, indexed like SPECIES. */
-  bark: {
-    count: number;
-    pos: Float32Array;
-    normal: Float32Array;
-    uv: Float32Array;
-    index: Uint32Array;
-  }[];
+  /** The ring road sampled every ~2 m, for the guided tour to follow. */
+  ringPath: Waypoint[];
+  /**
+   * One render chunk per grove: its bark mesh and its leaf range. A grove is one
+   * genre and so one species; per-grove meshes let the renderer skip groves out
+   * of view or lost in the fog instead of drawing the whole forest every frame.
+   */
+  chunks: Chunk[];
   leaves: {
     count: number;
     pos: Float32Array;
     scale: Float32Array;
+    /** Leaf orientation quaternions (x, y, z, w). */
+    quat: Float32Array;
     tint: Uint8Array;
     treeIndex: Uint16Array;
     species: Uint8Array;
@@ -86,16 +111,17 @@ export type Forest = {
 };
 
 let cached: Forest | null = null;
-let cachedVersion = -1;
+let cachedVersion = "";
 
 function cellKey(cx: number, cz: number): string {
   return cx + ":" + cz;
 }
 
-export function getForest(): Forest {
-  if (cached && cachedVersion === GROW_VERSION) return cached;
-  cached = buildForest();
-  cachedVersion = GROW_VERSION;
+export function getForest(leafMultiplier = 1): Forest {
+  const key = `${GROW_VERSION}:${leafMultiplier}`;
+  if (cached && cachedVersion === key) return cached;
+  cached = buildForest(leafMultiplier);
+  cachedVersion = key;
   return cached;
 }
 
@@ -111,11 +137,39 @@ export function groveApproach(g: Grove): Waypoint {
   return { x, z, yaw, genre: g.genre, label: g.label };
 }
 
+/**
+ * A closed centripetal Catmull-Rom curve through `pts`, resampled every ~`step`
+ * metres. `span[i]` is the index of the control point each sample starts from.
+ */
+export function closedSpline(pts: [number, number][], step: number): { pts: [number, number][]; span: number[] } {
+  const n = pts.length;
+  const out: [number, number][] = [];
+  const span: number[] = [];
+  if (n < 3) return { pts: pts.slice(), span: pts.map((_, i) => i) };
+  for (let i = 0; i < n; i++) {
+    const p0 = pts[(i - 1 + n) % n]!, p1 = pts[i]!, p2 = pts[(i + 1) % n]!, p3 = pts[(i + 2) % n]!;
+    // Centripetal parameterisation: no cusps or overshoot between uneven stops.
+    const d = (a: [number, number], b: [number, number]) => Math.max(1e-4, Math.hypot(b[0] - a[0], b[1] - a[1]) ** 0.5);
+    const t0 = 0, t1 = t0 + d(p0, p1), t2 = t1 + d(p1, p2), t3 = t2 + d(p2, p3);
+    const steps = Math.max(2, Math.ceil(Math.hypot(p2[0] - p1[0], p2[1] - p1[1]) / step));
+    for (let s = 0; s < steps; s++) {
+      const t = t1 + ((t2 - t1) * s) / steps;
+      const lerp = (a: [number, number], b: [number, number], ta: number, tb: number) =>
+        [a[0] + ((b[0] - a[0]) * (t - ta)) / (tb - ta), a[1] + ((b[1] - a[1]) * (t - ta)) / (tb - ta)] as [number, number];
+      const a1 = lerp(p0, p1, t0, t1), a2 = lerp(p1, p2, t1, t2), a3 = lerp(p2, p3, t2, t3);
+      const b1 = lerp(a1, a2, t0, t2), b2 = lerp(a2, a3, t1, t3);
+      out.push(lerp(b1, b2, t1, t2));
+      span.push(i);
+    }
+  }
+  return { pts: out, span };
+}
+
 export function groveByGenre(forest: Forest, genre: string): Grove | undefined {
   return forest.groves.find((g) => g.genre === genre);
 }
 
-function buildForest(): Forest {
+function buildForest(leafMultiplier: number): Forest {
   const byGenre = new Map<string, Book[]>();
   for (const b of BOOKS) {
     const list = byGenre.get(b.genre) ?? [];
@@ -130,11 +184,12 @@ function buildForest(): Forest {
 
   const groves: Grove[] = [];
   const trees: TreeSite[] = [];
-  const bark: BarkBuffers[] = SPECIES.map(() => ({ pos: [], normal: [], uv: [], index: [] }));
+  const chunks: Chunk[] = [];
   const leafSpecies: number[] = [];
   const leafPos: number[] = [];
   const leafScale: number[] = [];
   const leafTint: number[] = [];
+  const leafQuat: number[] = [];
   const leafTree: number[] = [];
 
   genres.forEach((genre, gi) => {
@@ -153,17 +208,19 @@ function buildForest(): Forest {
       color,
       bookCount: books.length,
     });
+    const species = speciesFor(genre);
+    const bark: BarkBuffers = { pos: [], normal: [], uv: [], index: [] };
+    const chunkLeafStart = leafPos.length / 3;
 
     books.forEach((book, bi) => {
       const s = spots[bi]!;
       const x = c.x + s.x;
       const z = c.z + s.z;
-      const grown = growTree({ slug: book.slug, genre: book.genre, nChunks: book.chunks });
-      const species = speciesFor(book.genre);
-      const woodStart = bark[species]!.pos.length / 3;
-      const woodCount = emitBark(grown, x, z, bark[species]!, SPECIES[species]!.barkAspect);
+      const grown = growTree({ slug: book.slug, genre: book.genre, nChunks: book.chunks, leafScale: leafMultiplier });
+      const woodStart = bark.pos.length / 3;
+      const woodCount = emitBark(grown, x, z, bark, SPECIES[species]!.barkAspect);
       const leafStart = leafPos.length / 3;
-      const leafCount = emitLeaves(grown, x, z, leafPos, leafScale, leafTint, 0.42);
+      const leafCount = emitLeaves(grown, x, z, leafPos, leafScale, leafTint, leafQuat, 0.22);
       const treeIndex = trees.length;
       for (let k = 0; k < leafCount; k++) {
         leafTree.push(treeIndex);
@@ -177,11 +234,28 @@ function buildForest(): Forest {
         trunkRadius: Math.max(0.28, grown.trunkRadius),
         color,
         species,
+        chunk: gi,
         woodStart,
         woodCount,
         leafStart,
         leafCount,
       });
+    });
+    chunks.push({
+      genre,
+      species,
+      x: c.x,
+      z: c.z,
+      radius: bookOuter + 12,
+      bark: {
+        count: bark.pos.length / 3,
+        pos: new Float32Array(bark.pos),
+        normal: new Float32Array(bark.normal),
+        uv: new Float32Array(bark.uv),
+        index: new Uint32Array(bark.index),
+      },
+      leafStart: chunkLeafStart,
+      leafCount: leafPos.length / 3 - chunkLeafStart,
     });
   });
 
@@ -219,40 +293,45 @@ function buildForest(): Forest {
     .map((g) => groveApproach(g))
     .sort((a, b) => Math.atan2(a.z, a.x) - Math.atan2(b.z, b.x));
 
-  const roads: RoadSeg[] = [];
   const hub = 3.6;
-  for (const wp of circuit) {
+  const roadLines: RoadLine[] = circuit.map((wp) => {
     const d = Math.hypot(wp.x, wp.z) || 1;
-    roads.push({
-      ax: (wp.x / d) * hub,
-      az: (wp.z / d) * hub,
-      bx: wp.x,
-      bz: wp.z,
-      kind: "spoke",
-    });
+    return { kind: "spoke", pts: [[(wp.x / d) * hub, (wp.z / d) * hub], [wp.x, wp.z]], closed: false };
+  });
+  const ring = closedSpline(circuit.map((wp) => [wp.x, wp.z] as [number, number]), 2);
+  roadLines.push({ kind: "ring", pts: ring.pts, closed: true });
+  const roads: RoadSeg[] = [];
+  for (const line of roadLines) {
+    const n = line.pts.length;
+    for (let i = 0; i < (line.closed ? n : n - 1); i++) {
+      const [ax, az] = line.pts[i]!;
+      const [bx, bz] = line.pts[(i + 1) % n]!;
+      roads.push({ ax, az, bx, bz, kind: line.kind });
+    }
   }
-  for (let i = 0; i < circuit.length; i++) {
-    const a = circuit[i]!;
-    const b = circuit[(i + 1) % circuit.length]!;
-    roads.push({ ax: a.x, az: a.z, bx: b.x, bz: b.z, kind: "ring" });
-  }
+  const plazas = [{ x: 0, z: 0, r: 5.2 }, ...circuit.map((wp) => ({ x: wp.x, z: wp.z, r: 3.6 }))];
+  // Each ring sample carries the grove whose stop comes next, so the tour still
+  // lights the right signpost and trail.
+  const ringPath: Waypoint[] = ring.pts.map(([x, z], i) => {
+    const [nx, nz] = ring.pts[(i + 1) % ring.pts.length]!;
+    const wp = circuit[(ring.span[i]! + 1) % circuit.length]!;
+    return { x, z, yaw: Math.atan2(-(nx - x), -(nz - z)), genre: wp.genre, label: wp.label };
+  });
 
   return {
     trees,
     groves,
     roads,
+    roadLines,
+    plazas,
     circuit,
-    bark: bark.map((b) => ({
-      count: b.pos.length / 3,
-      pos: new Float32Array(b.pos),
-      normal: new Float32Array(b.normal),
-      uv: new Float32Array(b.uv),
-      index: new Uint32Array(b.index),
-    })),
+    ringPath,
+    chunks,
     leaves: {
       count: leafPos.length / 3,
       pos: new Float32Array(leafPos),
       scale: new Float32Array(leafScale),
+      quat: new Float32Array(leafQuat),
       tint: Uint8Array.from(leafTint),
       treeIndex: Uint16Array.from(leafTree),
       species: Uint8Array.from(leafSpecies),

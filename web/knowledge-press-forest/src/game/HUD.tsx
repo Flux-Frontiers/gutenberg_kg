@@ -28,6 +28,7 @@ export function HUD({ forest }: { forest: Forest }) {
   const z = useGame((s) => s.z);
   const yaw = useGame((s) => s.yaw);
   const toast = useGame((s) => s.toast);
+  const stats = useGame((s) => s.stats);
   const libraryOpen = useGame((s) => s.libraryOpen);
   const toggleLibrary = useGame((s) => s.toggleLibrary);
   const pause = useGame((s) => s.pause);
@@ -67,6 +68,11 @@ export function HUD({ forest }: { forest: Forest }) {
             {travelMode === "circuit" ? " · ring" : ""}
             {progress.done ? ` · ${progress.done}/${progress.total}` : ""}
           </p>
+          {stats ? (
+            <p className="mt-1 font-mono text-[11px] text-faint tabular-nums">
+              {(stats.tris / 1e6).toFixed(2)}M tris · {stats.calls} calls · {(forest.leaves.count / 1000).toFixed(0)}k leaves · {stats.fps.toFixed(0)} fps
+            </p>
+          ) : null}
         </div>
         <div className="flex items-center gap-2">
           <button
@@ -113,8 +119,8 @@ export function HUD({ forest }: { forest: Forest }) {
         </div>
       </header>
 
-      {/* Bottom-right, results opening upward; touch layouts move it above the controls (styles.css). */}
-      <div className="search-dock pointer-events-auto z-20 mx-auto flex w-[min(100%-1.5rem,28rem)] flex-col gap-1 sm:absolute sm:right-3 sm:bottom-6 sm:mx-0 sm:w-[22rem] sm:flex-col-reverse">
+      {/* Bottom-centre above the key hints, results opening upward; touch layouts move it (styles.css). */}
+      <div className="search-dock pointer-events-auto z-20 mx-auto flex w-[min(100%-1.5rem,28rem)] flex-col gap-1 sm:absolute sm:bottom-9 sm:left-1/2 sm:mx-0 sm:w-[22rem] sm:-translate-x-1/2 sm:flex-col-reverse">
         <label className="flex items-center gap-2 rounded-md border border-border bg-surface/90 px-3 py-2">
           <Search className="size-4 shrink-0 text-muted" strokeWidth={1.75} />
           <input
@@ -175,7 +181,7 @@ export function HUD({ forest }: { forest: Forest }) {
         )}
       </div>
 
-      <div className="book-dock pointer-events-auto absolute bottom-24 left-3 right-3 mx-auto max-w-lg sm:bottom-6 sm:left-4 sm:right-auto">
+      <div className="book-dock pointer-events-auto absolute bottom-24 left-3 right-3 mx-auto max-w-lg sm:bottom-6 sm:left-4 sm:right-auto sm:max-w-[min(32rem,calc(50%-12rem))]">
         {showBook && nearby ? (
           <article className="relative rounded-lg border border-border bg-surface/94 p-3 pr-12 sm:p-4 sm:pr-14">
             <button
@@ -243,7 +249,7 @@ export function HUD({ forest }: { forest: Forest }) {
       </div>
 
       <p className="absolute bottom-3 left-1/2 hidden -translate-x-1/2 text-xs text-faint sm:block">
-        WASD / arrows · Space brake · E read · C camera · Esc settings
+        WASD drive · Up/Down look · Space brake · E read · C camera · Esc settings
       </p>
 
       {toast ? (

@@ -98,7 +98,8 @@ export function leafOutline(leaf: LeafShape): [number, number][] {
     return [...right, [0, -1], ...left.slice(0, -1)].map(([x, y]) => [x * k, y]);
   }
   const right = [[0, 1] as [number, number], ...leaf.half];
-  const half = leaf.smooth ? catmullRom(right, 5) : right;
+  // Two samples per span: ~73 triangles for the oak instead of 180, still round at leaf size.
+  const half = leaf.smooth ? catmullRom(right, 2) : right;
   const bottom = half[half.length - 1]!;
   const full: [number, number][] = [...half, [0, bottom[1] - 0.02], ...half.slice(1).reverse().map(([x, y]) => [-x, y] as [number, number])];
   return full.map(([x, y]) => [x * INSTANCE_ASPECT, y]);

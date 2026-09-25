@@ -41,15 +41,24 @@ export function PauseOverlay() {
         <label className="flex items-center justify-between gap-4">Wind & gentle cart motion
           <input type="checkbox" checked={prefs.motion} onChange={(e) => setPreferences({ motion: e.target.checked })} />
         </label>
+        <label className="flex items-center justify-between gap-4">Leaf complexity
+          <select value={prefs.leaves} onChange={(e) => setPreferences({ leaves: e.target.value as typeof prefs.leaves })} className="rounded-md border border-border bg-bg p-2">
+            <option value="low">Low · 35k leaves</option><option value="medium">Medium · 70k</option>
+            <option value="high">High · 140k</option><option value="ultra">Ultra · 280k</option>
+          </select>
+        </label>
+        <label className="flex items-center justify-between gap-4">Show geometry & frame rate
+          <input type="checkbox" checked={prefs.stats} onChange={(e) => setPreferences({ stats: e.target.checked })} />
+        </label>
         <label className="flex items-center justify-between gap-4">Shadows & forest floor detail
           <input type="checkbox" checked={prefs.detail} onChange={(e) => setPreferences({ detail: e.target.checked })} />
         </label>
       </div>
       <div className="rounded-md bg-bg p-3 text-sm leading-relaxed text-muted">
-        <p><span className="text-fg">WASD / arrows</span> drive · <span className="text-fg">Space</span> brake</p>
+        <p><span className="text-fg">WASD</span> drive · <span className="text-fg">Left/Right</span> steer · <span className="text-fg">Up/Down</span> look · <span className="text-fg">Space</span> brake</p>
         <p><span className="text-fg">Shift</span> hurry · <span className="text-fg">E</span> read · <span className="text-fg">C</span> camera</p>
         <p><span className="text-fg">G</span> groves · <span className="text-fg">H</span> home · <span className="text-fg">Q</span> guided tour</p>
-        <p className="mt-2 text-xs">Release the throttle to stop. You can turn in place. Gamepad: left stick to drive, A to read, LT to brake, RT to hurry.</p>
+        <p className="mt-2 text-xs">Release the throttle to stop. You can turn in place. Gamepad: left stick to drive, right stick to look, A to read, LT to brake, RT to hurry.</p>
       </div>
       <button type="button" autoFocus className="mt-5 min-h-11 w-full rounded-md bg-primary text-primary-fg" onClick={resume}>Back to the forest</button>
     </dialog>

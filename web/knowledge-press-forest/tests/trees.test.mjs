@@ -67,3 +67,52 @@ test("bark is one watertight sweep per chain, facing outward, with wrapping UVs"
     }
   }
 });
+
+test("leaf complexity changes only the foliage, and every leaf still hangs on a branch", () => {
+  const { growTree } = require(`${process.env.FOREST_TEST_BUILD}/growTree.js`);
+  const { BOOKS } = require(`${process.env.FOREST_TEST_BUILD}/catalog.js`);
+  for (const b of BOOKS.slice(0, 10)) {
+    const base = growTree({ slug: b.slug, genre: b.genre, nChunks: b.chunks });
+    for (const leafScale of [0.5, 2, 4]) {
+      const g = growTree({ slug: b.slug, genre: b.genre, nChunks: b.chunks, leafScale });
+      assert.deepEqual(Array.from(g.skeleton.radii), Array.from(base.skeleton.radii), `${b.slug}: skeleton changed at ${leafScale}`);
+      assert.ok(Math.abs(g.nLeaves - base.nLeaves * leafScale) <= 1, `${b.slug}: ${g.nLeaves} leaves at ${leafScale} from ${base.nLeaves}`);
+      const { nodes, n } = g.skeleton;
+      for (let l = 0; l < g.nLeaves; l++) {
+        let best = Infinity;
+        for (let i = 0; i < n; i++) best = Math.min(best, Math.hypot(g.leafPoints[l * 3] - nodes[i * 3], g.leafPoints[l * 3 + 1] - nodes[i * 3 + 1], g.leafPoints[l * 3 + 2] - nodes[i * 3 + 2]));
+        assert.ok(best <= 0.6 + 1e-4, `${b.slug}: leaf ${l} floats at ${leafScale}`);
+      }
+    }
+  }
+});
+
+test("leaves sit on thin twigs, stalk first, blades lifted toward the sky", () => {
+  const { growTree } = require(`${process.env.FOREST_TEST_BUILD}/growTree.js`);
+  const { BOOKS } = require(`${process.env.FOREST_TEST_BUILD}/catalog.js`);
+  for (const b of BOOKS.slice(0, 10)) {
+    const g = growTree({ slug: b.slug, genre: b.genre, nChunks: b.chunks });
+    const { nodes, parents, radii, n } = g.skeleton;
+    let up = 0;
+    for (let l = 0; l < g.nLeaves; l++) {
+      const [x, y, z] = [0, 1, 2].map((k) => g.leafPoints[l * 3 + k]);
+      // On some segment, within float error, and that segment is a twig.
+      let best = Infinity, bestR = 0;
+      for (let i = 1; i < n; i++) {
+        const p = parents[i];
+        if (p < 0) continue;
+        const d = [0, 1, 2].map((k) => nodes[i * 3 + k] - nodes[p * 3 + k]);
+        const len2 = d[0] ** 2 + d[1] ** 2 + d[2] ** 2 || 1;
+        const t = Math.max(0, Math.min(1, ((x - nodes[p * 3]) * d[0] + (y - nodes[p * 3 + 1]) * d[1] + (z - nodes[p * 3 + 2]) * d[2]) / len2));
+        const dist = Math.hypot(x - nodes[p * 3] - d[0] * t, y - nodes[p * 3 + 1] - d[1] * t, z - nodes[p * 3 + 2] - d[2] * t);
+        if (dist < best) { best = dist; bestR = radii[i]; }
+      }
+      assert.ok(best < 1e-3, `${b.slug}: leaf ${l} is ${best.toFixed(3)} m off any branch`);
+      assert.ok(bestR <= 0.045 * 2.5 + 1e-6 || bestR === Math.min(...radii), `${b.slug}: leaf ${l} on a limb of radius ${bestR.toFixed(3)}`);
+      const dl = Math.hypot(g.leafDirs[l * 3], g.leafDirs[l * 3 + 1], g.leafDirs[l * 3 + 2]);
+      assert.ok(Math.abs(dl - 1) < 1e-4);
+      if (g.leafDirs[l * 3 + 1] > 0) up++;
+    }
+    assert.ok(up / g.nLeaves > 0.7, `${b.slug}: only ${up}/${g.nLeaves} leaves point upward`);
+  }
+});

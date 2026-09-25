@@ -12,7 +12,10 @@ export type Skeleton = {
 export type GrownTree = {
   skeleton: Skeleton;
   crown: Float32Array;
+  /** Where each leaf's stalk meets its twig. */
   leafPoints: Float32Array;
+  /** Unit stalk-to-tip direction per leaf: out from the twig and toward the sky. */
+  leafDirs: Float32Array;
   leafTint: Uint8Array;
   nLeaves: number;
   trunkHeight: number;
@@ -20,7 +23,7 @@ export type GrownTree = {
 };
 
 /** Bump when caps change so the forest cache rebuilds. */
-export const GROW_VERSION = 8;
+export const GROW_VERSION = 9;
 
 // Pipe-model exponent: parent^e = sum child^e (Leonardo's rule). Lower values
 // balloon the trunk once skeletons reach the 256-node cap; thickness for tall
@@ -28,8 +31,8 @@ export const GROW_VERSION = 8;
 const PIPE_EXP = 2;
 // Trunk radius floor as a fraction of height (real trees run about 1:30-1:40).
 const TRUNK_PER_HEIGHT = 0.028;
-// Farthest a leaf may sit from a branch node; leaves beyond it are pulled in.
-const LEAF_REACH = 0.6;
+// Twigs that carry leaves: segments no thicker than this many tip radii.
+const TWIG_TIPS = 2.5;
 
 const GOLDEN = Math.PI * (3 - Math.sqrt(5));
 
@@ -139,11 +142,13 @@ export function growTree(opts: {
   genre: string;
   nChunks: number;
   tipRadius?: number;
+  /** Leaf complexity: multiplies the leaf count without touching the skeleton. */
+  leafScale?: number;
 }): GrownTree {
   const { slug, genre, nChunks } = opts;
   const tipRadius = opts.tipRadius ?? 0.045;
   const trop = tropismFor(genre);
-  const { attractors, nAttract, trunkHeight, allLeaves, nLeaves } = placeCrown(
+  const { attractors, nAttract, trunkHeight, allLeaves: baseLeaves, nLeaves: nBase } = placeCrown(
     nChunks,
     genre,
     slug,
@@ -260,26 +265,63 @@ export function growTree(opts: {
   const f = Math.max(TRUNK_PER_HEIGHT * trunkHeight, 0.18) / base;
   if (f > 1) for (let i = 0; i < n; i++) radii[i] = radii[i]! * (1 + (f - 1) * (radii[i]! / base));
 
-  // Only some leaves are attractors, so branches miss the rest; hang every
-  // leaf within reach of its nearest limb (the bare lower trunk excluded).
-  for (let l = 0; l < nLeaves; l++) {
-    const lx = allLeaves[l * 3]!;
-    const ly = allLeaves[l * 3 + 1]!;
-    const lz = allLeaves[l * 3 + 2]!;
-    let best = -1;
-    let bestD = Infinity;
-    for (let i = trunkSteps; i < n; i++) {
-      const d = Math.hypot(lx - nodes[i * 3]!, ly - nodes[i * 3 + 1]!, lz - nodes[i * 3 + 2]!);
-      if (d < bestD) {
-        bestD = d;
-        best = i;
-      }
+  // Foliage. The skeleton grew toward the base leaves (the book's chunks), so
+  // the twigs already trace the crown; leaves are now spread evenly along those
+  // twigs, stalk on the twig, which keeps the count data-driven without the
+  // clumps and bare limbs of hanging them at the attractors. Leaf complexity
+  // scales the count only; the skeleton never changes.
+  void baseLeaves;
+  const nLeaves = Math.max(1, Math.round(nBase * (opts.leafScale ?? 1)));
+  const twigs: number[] = [];
+  const twigLen: number[] = [];
+  let total = 0;
+  const twigMax = tipRadius * TWIG_TIPS;
+  const addTwigs = (limit: number) => {
+    for (let i = trunkSteps + 1; i < n; i++) {
+      const p = parents[i]!;
+      if (p < 0 || radii[i]! > limit) continue;
+      const len = Math.hypot(nodes[i * 3]! - nodes[p * 3]!, nodes[i * 3 + 1]! - nodes[p * 3 + 1]!, nodes[i * 3 + 2]! - nodes[p * 3 + 2]!);
+      if (len < 1e-3) continue;
+      twigs.push(i);
+      twigLen.push(len);
+      total += len;
     }
-    if (best < 0 || bestD <= LEAF_REACH) continue;
-    const k = LEAF_REACH / bestD;
-    allLeaves[l * 3] = nodes[best * 3]! + (lx - nodes[best * 3]!) * k;
-    allLeaves[l * 3 + 1] = nodes[best * 3 + 1]! + (ly - nodes[best * 3 + 1]!) * k;
-    allLeaves[l * 3 + 2] = nodes[best * 3 + 2]! + (lz - nodes[best * 3 + 2]!) * k;
+  };
+  addTwigs(twigMax);
+  if (!twigs.length) addTwigs(Infinity);
+  const allLeaves = new Float32Array(nLeaves * 3);
+  const leafDirs = new Float32Array(nLeaves * 3);
+  const lr = mulberry32(seedFromKey(slug + ":leaves"));
+  let seg = 0;
+  let segStart = 0;
+  for (let l = 0; l < nLeaves && twigs.length; l++) {
+    // Stratified along the summed twig length: even cover, a little jitter.
+    const s = ((l + lr()) / nLeaves) * total;
+    while (seg < twigs.length - 1 && segStart + twigLen[seg]! < s) segStart += twigLen[seg++]!;
+    const i = twigs[seg]!, p = parents[i]!;
+    const u = Math.min(1, Math.max(0, (s - segStart) / twigLen[seg]!));
+    const dx = (nodes[i * 3]! - nodes[p * 3]!) / twigLen[seg]!;
+    const dy = (nodes[i * 3 + 1]! - nodes[p * 3 + 1]!) / twigLen[seg]!;
+    const dz = (nodes[i * 3 + 2]! - nodes[p * 3 + 2]!) / twigLen[seg]!;
+    allLeaves[l * 3] = nodes[p * 3]! + dx * twigLen[seg]! * u;
+    allLeaves[l * 3 + 1] = nodes[p * 3 + 1]! + dy * twigLen[seg]! * u;
+    allLeaves[l * 3 + 2] = nodes[p * 3 + 2]! + dz * twigLen[seg]! * u;
+    // A random direction perpendicular to the twig, lifted toward the sky and a
+    // little toward the twig's tip, as leaves grow.
+    // Any axis not parallel to the twig, crossed with it, gives a perpendicular.
+    const ax = Math.abs(dy) < 0.9 ? 0 : 1, ay = Math.abs(dy) < 0.9 ? 1 : 0;
+    let n1x = -ay * dz, n1y = ax * dz, n1z = ay * dx - ax * dy;
+    const n1l = Math.hypot(n1x, n1y, n1z) || 1;
+    n1x /= n1l; n1y /= n1l; n1z /= n1l;
+    const n2x = dy * n1z - dz * n1y, n2y = dz * n1x - dx * n1z, n2z = dx * n1y - dy * n1x;
+    const a = lr() * Math.PI * 2;
+    const ox = Math.cos(a) * n1x + Math.sin(a) * n2x + dx * 0.35;
+    const oy = Math.cos(a) * n1y + Math.sin(a) * n2y + dy * 0.35 + 0.55;
+    const oz = Math.cos(a) * n1z + Math.sin(a) * n2z + dz * 0.35;
+    const ol = Math.hypot(ox, oy, oz) || 1;
+    leafDirs[l * 3] = ox / ol;
+    leafDirs[l * 3 + 1] = oy / ol;
+    leafDirs[l * 3 + 2] = oz / ol;
   }
 
   const rng = mulberry32(seedFromKey(slug + ":tint"));
@@ -290,6 +332,7 @@ export function growTree(opts: {
     skeleton: { nodes, parents, radii, n },
     crown: attractors,
     leafPoints: allLeaves,
+    leafDirs,
     leafTint,
     nLeaves,
     trunkHeight,
@@ -400,6 +443,10 @@ export function emitBark(grown: GrownTree, originX: number, originZ: number, out
   return out.pos.length / 3 - base0;
 }
 
+/**
+ * Instance each leaf with its stalk (the shape's y = -1 end) on the twig and
+ * its blade along leafDirs, rolled so the face turns to the sky.
+ */
 export function emitLeaves(
   grown: GrownTree,
   originX: number,
@@ -407,23 +454,56 @@ export function emitLeaves(
   destPos: number[],
   destScale: number[],
   destTint: number[],
+  destQuat: number[],
   leafSize: number,
 ): number {
-  const scale = Math.min(1, (600 / Math.max(grown.nLeaves, 8)) ** (1 / 3));
-  const r = leafSize * scale;
+  const r = leafSize;
   let count = 0;
   for (let i = 0; i < grown.nLeaves; i++) {
-    destPos.push(
-      originX + grown.leafPoints[i * 3]!,
-      grown.leafPoints[i * 3 + 1]!,
-      originZ + grown.leafPoints[i * 3 + 2]!,
-    );
     const jitter = 0.78 + (grown.leafTint[i]! / 8) * 0.5;
-    destScale.push(r * 1.12 * jitter, r * 1.78 * jitter, r * 0.22);
+    const sx = r * 1.12 * jitter, sy = r * 1.78 * jitter;
+    // Leaf frame: y along the blade, z the face normal as close to world up as y allows.
+    const yx = grown.leafDirs[i * 3]!, yy = grown.leafDirs[i * 3 + 1]!, yz = grown.leafDirs[i * 3 + 2]!;
+    let zx = -yy * yx, zy = 1 - yy * yy, zz = -yy * yz;
+    const zl = Math.hypot(zx, zy, zz);
+    if (zl < 1e-4) { zx = 1; zy = 0; zz = 0; } else { zx /= zl; zy /= zl; zz /= zl; }
+    const xx = yy * zz - yz * zy, xy = yz * zx - yx * zz, xz = yx * zy - yy * zx;
+    quatFromBasis(xx, xy, xz, yx, yy, yz, zx, zy, zz, destQuat);
+    destPos.push(
+      originX + grown.leafPoints[i * 3]! + yx * sy,
+      grown.leafPoints[i * 3 + 1]! + yy * sy,
+      originZ + grown.leafPoints[i * 3 + 2]! + yz * sy,
+    );
+    destScale.push(sx, sy, r * 0.22);
     destTint.push(grown.leafTint[i]!);
     count++;
   }
   return count;
+}
+
+/** Quaternion (x, y, z, w) of the rotation whose columns are the given basis. */
+function quatFromBasis(
+  m00: number, m10: number, m20: number,
+  m01: number, m11: number, m21: number,
+  m02: number, m12: number, m22: number,
+  out: number[],
+) {
+  const tr = m00 + m11 + m22;
+  let x, y, z, w;
+  if (tr > 0) {
+    const s = 0.5 / Math.sqrt(tr + 1);
+    w = 0.25 / s; x = (m21 - m12) * s; y = (m02 - m20) * s; z = (m10 - m01) * s;
+  } else if (m00 > m11 && m00 > m22) {
+    const s = 2 * Math.sqrt(1 + m00 - m11 - m22);
+    w = (m21 - m12) / s; x = 0.25 * s; y = (m01 + m10) / s; z = (m02 + m20) / s;
+  } else if (m11 > m22) {
+    const s = 2 * Math.sqrt(1 + m11 - m00 - m22);
+    w = (m02 - m20) / s; x = (m01 + m10) / s; y = 0.25 * s; z = (m12 + m21) / s;
+  } else {
+    const s = 2 * Math.sqrt(1 + m22 - m00 - m11);
+    w = (m10 - m01) / s; x = (m02 + m20) / s; y = (m12 + m21) / s; z = 0.25 * s;
+  }
+  out.push(x, y, z, w);
 }
 
 export { clamp };

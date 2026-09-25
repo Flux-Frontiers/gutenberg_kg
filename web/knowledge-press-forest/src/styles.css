@@ -80,12 +80,13 @@ button:focus-visible, select:focus-visible, input:focus-visible {
 @media (pointer: coarse), (max-width: 639px) {
   .search-dock {
     position: absolute; left: 50%; right: auto; margin: 0;
-    transform: translateX(-50%);
+    translate: -50% 0; /* same property Tailwind's -translate-x-1/2 sets, so they cannot stack */
     width: min(100% - 1.5rem, 22rem);
     bottom: calc(8.75rem + env(safe-area-inset-bottom));
     flex-direction: column-reverse;
   }
-  .book-dock { bottom: calc(12.5rem + env(safe-area-inset-bottom)); }
+  /* Search sits below the card here, not beside it, so drop the desktop width cap. */
+  .book-dock { bottom: calc(12.5rem + env(safe-area-inset-bottom)); max-width: 32rem; }
   .season-dock { bottom: calc(8.75rem + env(safe-area-inset-bottom)); }
 }
 
