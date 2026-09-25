@@ -111,7 +111,7 @@ test("every leaf hangs on the wood near its chunk, blade lifted toward the sky",
     for (let l = 0; l < g.nLeaves; l++) {
       let best = Infinity;
       for (let i = 0; i < n; i++) best = Math.min(best, Math.hypot(g.leafPoints[l * 3] - nodes[i * 3], g.leafPoints[l * 3 + 1] - nodes[i * 3 + 1], g.leafPoints[l * 3 + 2] - nodes[i * 3 + 2]));
-      assert.ok(best <= 0.35 + 1e-4, `${b.slug}: leaf ${l} is ${best.toFixed(2)} m from a node`);
+      assert.ok(best <= 0.1 + 1e-4, `${b.slug}: leaf ${l} is ${best.toFixed(2)} m from a node`);
       const dl = Math.hypot(g.leafDirs[l * 3], g.leafDirs[l * 3 + 1], g.leafDirs[l * 3 + 2]);
       assert.ok(Math.abs(dl - 1) < 1e-4);
       if (g.leafDirs[l * 3 + 1] > 0) up++;

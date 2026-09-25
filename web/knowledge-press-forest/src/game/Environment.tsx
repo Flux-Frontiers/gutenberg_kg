@@ -1,10 +1,11 @@
 import { useFrame } from "@react-three/fiber";
 import { useEffect, useLayoutEffect, useMemo, useRef } from "react";
-import { BackSide, CanvasTexture, Color, DirectionalLight, DoubleSide, InstancedMesh, Object3D, RepeatWrapping, SRGBColorSpace } from "three";
+import { BackSide, BufferGeometry, CanvasTexture, Color, DirectionalLight, DoubleSide, Float32BufferAttribute, IcosahedronGeometry, InstancedMesh, MeshStandardMaterial, Object3D, RepeatWrapping, SRGBColorSpace } from "three";
 import type { Forest } from "./forest";
 import { mulberry32 } from "./math";
 import type { SeasonName } from "./seasons";
 import { sim } from "./sim";
+import { useGame } from "./store";
 
 /** A camera-centred sky: no distant sphere edge when exploring the outer groves. */
 export function Sky({ day, season }: { day: boolean; season: SeasonName }) {
@@ -102,9 +103,62 @@ export function useGroundTexture() {
   return texture;
 }
 
+/** A lumpy, faceted rock: an icosahedron whose vertices are pushed in and out by a hash of their direction. */
+function rockGeometry(seed: number) {
+  const g = new IcosahedronGeometry(1, 1);
+  const p = g.getAttribute("position");
+  for (let i = 0; i < p.count; i++) {
+    const x = p.getX(i), y = p.getY(i), z = p.getZ(i);
+    // Same direction, same push: shared corners of adjacent faces stay welded.
+    const h = Math.sin(x * 12.9898 + y * 78.233 + z * 37.719 + seed) * 43758.5453;
+    const k = 0.78 + 0.36 * (h - Math.floor(h));
+    p.setXYZ(i, x * k, y * k * 0.72, z * k);
+  }
+  g.computeVertexNormals();
+  return g;
+}
+
+/** A grass tuft: three tapered blades crossed at 60 degrees, bending a little outward. */
+function tuftGeometry() {
+  const pos: number[] = [];
+  for (let b = 0; b < 3; b++) {
+    const a = (b * Math.PI) / 3, cx = Math.cos(a), cz = Math.sin(a);
+    const w = 0.09, lean = 0.12 * (b % 2 ? 1 : -1);
+    // base-left, base-right, tip (leaning), as one triangle, plus a mid pair for shape
+    pos.push(-cx * w, 0, -cz * w, cx * w, 0, cz * w, cx * lean, 1, cz * lean);
+    pos.push(-cx * w * 0.6, 0.45, -cz * w * 0.6, cx * w * 0.6, 0.45, cz * w * 0.6, cx * lean, 1, cz * lean);
+  }
+  const g = new BufferGeometry();
+  g.setAttribute("position", new Float32BufferAttribute(pos, 3));
+  g.computeVertexNormals();
+  return g;
+}
+
 export function ForestFloor({ forest, season }: { forest: Forest; season: SeasonName }) {
   const grass = useRef<InstancedMesh>(null);
   const rocks = useRef<InstancedMesh>(null);
+  const rockGeo = useMemo(() => rockGeometry(3.7), []);
+  const tuftGeo = useMemo(() => tuftGeometry(), []);
+  const sway = useMemo(() => ({ value: 0 }), []);
+  const grassMat = useMemo(() => {
+    const m = new MeshStandardMaterial({ side: DoubleSide, roughness: 1 });
+    m.onBeforeCompile = (shader) => {
+      shader.uniforms.swayTime = sway;
+      shader.vertexShader = "uniform float swayTime;\n" + shader.vertexShader.replace("#include <begin_vertex>", `
+        #include <begin_vertex>
+        float ph = instanceMatrix[3].x * .21 + instanceMatrix[3].z * .17;
+        transformed.x += sin(swayTime * 2.1 + ph) * .14 * position.y;
+        transformed.z += cos(swayTime * 1.7 + ph) * .08 * position.y;
+      `);
+    };
+    m.customProgramCacheKey = () => "forest-grass-sway-v1";
+    return m;
+  }, [sway]);
+  useEffect(() => () => { rockGeo.dispose(); tuftGeo.dispose(); grassMat.dispose(); }, [rockGeo, tuftGeo, grassMat]);
+  useFrame((_, delta) => {
+    const s = useGame.getState();
+    if (s.preferences.motion && !s.paused) sway.value += Math.min(delta, 0.1);
+  });
   useLayoutEffect(() => {
     if (!grass.current || !rocks.current) return;
     const random = mulberry32(247);
@@ -112,6 +166,15 @@ export function ForestFloor({ forest, season }: { forest: Forest; season: Season
     const color = new Color();
     let blades = 0;
     let stones = 0;
+    const placeRock = (x: number, z: number, size: number) => {
+      dummy.position.set(x, size * 0.18, z); // half-sunk
+      dummy.rotation.set(random() * 0.6, random() * Math.PI * 2, random() * 0.6);
+      dummy.scale.set(size * (0.8 + random() * 0.5), size * (0.6 + random() * 0.5), size * (0.8 + random() * 0.5));
+      dummy.updateMatrix();
+      rocks.current!.setMatrixAt(stones, dummy.matrix);
+      color.set(season === "winter" ? "#cdd5d5" : "#7c8075").offsetHSL(0, 0, (random() - 0.5) * 0.12);
+      rocks.current!.setColorAt(stones++, color);
+    };
     for (const tree of forest.trees) {
       for (let i = 0; i < 24; i++) {
         const angle = random() * Math.PI * 2;
@@ -124,21 +187,20 @@ export function ForestFloor({ forest, season }: { forest: Forest; season: Season
           const t = Math.max(0, Math.min(1, ((x - r.ax) * dx + (z - r.az) * dz) / (dx * dx + dz * dz)));
           return Math.hypot(x - r.ax - dx * t, z - r.az - dz * t) < 2;
         })) continue;
-        const height = 0.18 + random() * 0.5;
-        dummy.position.set(x, height / 2, z);
-        dummy.rotation.set(0, angle, (random() - 0.5) * 0.4);
-        dummy.scale.set(0.3 + random() * 0.5, height, 1);
+        // A quarter of the floor litter is stone, the rest grass.
+        if (random() < 0.25) {
+          placeRock(x, z, 0.18 + random() * 0.32);
+          continue;
+        }
+        const height = 0.22 + random() * 0.45;
+        dummy.position.set(x, 0, z);
+        dummy.rotation.set(0, angle, 0);
+        dummy.scale.set(1 + random() * 0.6, height, 1 + random() * 0.6);
         dummy.updateMatrix();
         grass.current.setMatrixAt(blades, dummy.matrix);
         color.set(season === "winter" ? "#c1bca1" : season === "autumn" ? "#9a793e" : "#637747");
         color.offsetHSL(0, 0, (random() - 0.5) * 0.16);
         grass.current.setColorAt(blades++, color);
-        if (i % 8 === 0) {
-          dummy.position.set(x + 0.7, 0.12, z);
-          dummy.scale.set(0.3 + random() * 0.4, 0.2, 0.25 + random() * 0.3);
-          dummy.updateMatrix();
-          rocks.current.setMatrixAt(stones++, dummy.matrix);
-        }
       }
     }
     grass.current.count = blades;
@@ -150,13 +212,9 @@ export function ForestFloor({ forest, season }: { forest: Forest; season: Season
     }
   }, [forest, season]);
   return <>
-    <instancedMesh ref={grass} args={[undefined, undefined, forest.trees.length * 24]} receiveShadow>
-      <coneGeometry args={[0.5, 1, 3, 1, true]} />
-      <meshStandardMaterial side={DoubleSide} roughness={1} />
-    </instancedMesh>
-    <instancedMesh ref={rocks} args={[undefined, undefined, forest.trees.length * 3]} receiveShadow castShadow>
-      <icosahedronGeometry args={[1, 0]} />
-      <meshStandardMaterial color={season === "winter" ? "#cdd5d5" : "#7c8075"} roughness={1} />
+    <instancedMesh ref={grass} args={[tuftGeo, grassMat, forest.trees.length * 24]} receiveShadow />
+    <instancedMesh ref={rocks} args={[rockGeo, undefined, forest.trees.length * 24]} receiveShadow castShadow>
+      <meshStandardMaterial flatShading roughness={0.95} />
     </instancedMesh>
   </>;
 }

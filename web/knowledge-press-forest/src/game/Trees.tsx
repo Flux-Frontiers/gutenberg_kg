@@ -69,11 +69,13 @@ export function Trees({
         shader.vertexShader = shader.vertexShader.replace("#include <begin_vertex>", `
           #include <begin_vertex>
           float phase = instanceMatrix[3].x * .31 + instanceMatrix[3].z * .27;
-          transformed.x += sin(windTime * 1.4 + phase) * .12 * windStrength * (position.y + 1.0);
-          transformed.z += cos(windTime + phase) * .06 * windStrength;
+          // Slow gusts roll across the forest on top of the flutter.
+          float gust = 0.65 + 0.35 * sin(windTime * 0.35 + instanceMatrix[3].x * .02);
+          transformed.x += sin(windTime * 1.7 + phase) * .2 * gust * windStrength * (position.y + 1.0);
+          transformed.z += cos(windTime * 1.2 + phase) * .1 * gust * windStrength * (position.y + 1.0);
         `);
       };
-      material.customProgramCacheKey = () => "forest-leaf-wind-v1";
+      material.customProgramCacheKey = () => "forest-leaf-wind-v2";
     }
     return { leaf, depth };
   }, [wind, windStrength]);
