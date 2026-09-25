@@ -1,6 +1,6 @@
-import { BookMarked, Compass, Map, Moon, Settings2, Search, Sun, X } from "lucide-react";
+import { BookMarked, Compass, Map, MapPin, Moon, Settings2, Search, Sun, X } from "lucide-react";
 import { useMemo } from "react";
-import { groveApproach, type Forest, type Grove } from "./forest";
+import { groveApproach, searchTrees, treeApproach, type Forest, type Grove, type TreeSite } from "./forest";
 import { QUESTS, questProgress } from "./quests";
 import { SEASON_ORDER, SEASONS } from "./seasons";
 import { wrapAngle, yawToward } from "./sim";
@@ -13,6 +13,7 @@ export function HUD({ forest }: { forest: Forest }) {
   const toggleTimeOfDay = useGame((s) => s.toggleTimeOfDay);
   const query = useGame((s) => s.query);
   const setQuery = useGame((s) => s.setQuery);
+  const searchPick = useGame((s) => s.searchPick);
   const nearbySlug = useGame((s) => s.nearbySlug);
   const nearbyDist = useGame((s) => s.nearbyDist);
   const collect = useGame((s) => s.collect);
@@ -42,20 +43,13 @@ export function HUD({ forest }: { forest: Forest }) {
   const nextQuest = QUESTS.find((q) => !q.done({ library, grovesVisited, season }));
   const selected = forest.groves.find((g) => g.genre === selectedGrove);
 
-  const matches = useMemo(() => {
-    const q = query.trim().toLowerCase();
-    if (!q) return 0;
-    return forest.trees.filter((t) => {
-      const b = t.book;
-      return (
-        b.title.toLowerCase().includes(q) ||
-        b.author.toLowerCase().includes(q) ||
-        b.genreLabel.toLowerCase().includes(q) ||
-        b.tags.some((tag) => tag.includes(q)) ||
-        b.excerpt.toLowerCase().includes(q)
-      );
-    }).length;
+  // Sorted from where the cart was when the query changed; re-sorting every pose tick would reshuffle the list under the pointer.
+  const results = useMemo(() => {
+    const { x, z } = useGame.getState();
+    return searchTrees(forest, query, x, z);
   }, [forest, query]);
+  const matches = results.length;
+  const picked = searchPick ? results.find((t) => t.book.slug === searchPick) : undefined;
 
   const bearing = selected
     ? wrapAngle(yawToward(x, z, selected.x, selected.z) - yaw)
@@ -125,6 +119,10 @@ export function HUD({ forest }: { forest: Forest }) {
           <input
             value={query}
             onChange={(e) => setQuery(e.target.value)}
+            onKeyDown={(e) => {
+              if (e.key === "Enter" && results[0]) jumpToTree(results[0]);
+              if (e.key === "Escape") e.currentTarget.blur();
+            }}
             placeholder="Query the forest — freedom, fire, stoic…"
             className="min-h-7 w-full bg-transparent text-sm text-fg outline-none placeholder:text-faint"
           />
@@ -132,13 +130,32 @@ export function HUD({ forest }: { forest: Forest }) {
         {query.trim() ? (
           <p className="mt-1 px-1 text-xs text-muted">
             {matches} tree{matches === 1 ? "" : "s"} answering
-            {selected ? "" : " · lantern points to the nearest"}
+            {picked ? ` · lantern points to ${picked.book.title}` : selected ? "" : " · lantern points to the nearest"}
           </p>
+        ) : null}
+        {query.trim() && matches && !picked ? (
+          <ul className="mt-1 max-h-[40vh] overflow-auto rounded-md border border-border bg-surface/95 sm:max-h-72">
+            {results.slice(0, 30).map((t) => (
+              <li key={t.book.slug}>
+                <button type="button" onClick={() => jumpToTree(t)}
+                  className="flex min-h-11 w-full items-center gap-3 px-3 py-1.5 text-left hover:bg-bg">
+                  <span className="size-2.5 shrink-0 rounded-full" style={{ background: t.color }} />
+                  <span className="min-w-0 flex-1">
+                    <span className="block truncate text-sm leading-snug">{t.book.title}</span>
+                    <span className="block truncate text-xs text-muted">{t.book.author} · {t.book.genreLabel}</span>
+                  </span>
+                  <span className="shrink-0 text-xs text-muted tabular-nums">{Math.round(Math.hypot(t.x - x, t.z - z))} m</span>
+                  <span className="shrink-0 text-xs text-primary">Jump</span>
+                </button>
+              </li>
+            ))}
+            {matches > 30 ? <li className="px-3 py-2 text-xs text-faint">{matches - 30} more; narrow the query</li> : null}
+          </ul>
         ) : null}
       </div>
 
       <div className="pointer-events-auto absolute top-36 right-3 w-28 sm:top-20 sm:w-40">
-        <Minimap forest={forest} x={x} z={z} yaw={yaw} />
+        <Minimap forest={forest} x={x} z={z} yaw={yaw} pins={query.trim() ? results : []} picked={searchPick} />
         {selected ? (
           <p className="mt-1 flex items-center gap-1.5 text-xs text-muted">
             <span
@@ -246,6 +263,14 @@ function jumpToGrove(g: Grove) {
   useGame.getState().requestJump({ x: wp.x, z: wp.z, yaw: wp.yaw }, `${g.label} grove`);
 }
 
+function jumpToTree(t: TreeSite) {
+  const s = useGame.getState();
+  s.selectGrove(null);
+  s.pickSearch(t.book.slug);
+  s.requestJump(treeApproach(t, s.x, s.z), t.book.title);
+  (document.activeElement as HTMLElement | null)?.blur();
+}
+
 function jumpHome(forest: Forest) {
   useGame.getState().selectGrove(null);
   useGame.getState().requestJump(
@@ -254,7 +279,9 @@ function jumpHome(forest: Forest) {
   );
 }
 
-function Minimap({ forest, x, z, yaw }: { forest: Forest; x: number; z: number; yaw: number }) {
+function Minimap({ forest, x, z, yaw, pins, picked }: {
+  forest: Forest; x: number; z: number; yaw: number; pins: TreeSite[]; picked: string | null;
+}) {
   const selectedGrove = useGame((s) => s.selectedGrove);
   const r = forest.worldRadius;
   const to = (wx: number, wz: number) => {
@@ -298,6 +325,22 @@ function Minimap({ forest, x, z, yaw }: { forest: Forest; x: number; z: number; 
           />
         );
       })}
+      {pins.slice(0, 200).map((t) => {
+        const c = to(t.x, t.z);
+        const on = t.book.slug === picked;
+        return (
+          <button key={t.book.slug} type="button" onClick={() => jumpToTree(t)}
+            className="absolute rounded-full border border-bg bg-primary"
+            style={{ left: c.left, top: c.top, width: on ? 10 : 6, height: on ? 10 : 6, transform: "translate(-50%, -50%)", zIndex: on ? 2 : 1 }}
+            title={`Jump to ${t.book.title}`} aria-label={`Jump to ${t.book.title}`} />
+        );
+      })}
+      {picked && pins.some((t) => t.book.slug === picked) ? (() => {
+        const t = pins.find((p) => p.book.slug === picked)!;
+        const c = to(t.x, t.z);
+        return <MapPin className="pointer-events-none absolute size-4 text-primary" strokeWidth={2}
+          style={{ left: c.left, top: c.top, transform: "translate(-50%, -100%)", zIndex: 3 }} aria-hidden />;
+      })() : null}
       <span
         className="pointer-events-none absolute h-0 w-0 border-x-4 border-b-8 border-x-transparent border-b-fg"
         style={{

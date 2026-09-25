@@ -89,6 +89,7 @@ export type GameStore = {
   season: SeasonName;
   timeOfDay: TimeOfDay;
   query: string;
+  searchPick: string | null;
   library: string[];
   grovesVisited: string[];
   nearbySlug: string | null;
@@ -112,6 +113,7 @@ export type GameStore = {
   setSeason: (s: SeasonName) => void;
   toggleTimeOfDay: () => void;
   setQuery: (q: string) => void;
+  pickSearch: (slug: string | null) => void;
   collect: (slug: string, title: string) => void;
   markGrove: (genre: string) => void;
   setNearby: (slug: string | null, dist: number) => void;
@@ -145,6 +147,7 @@ export const useGame = create<GameStore>((set, get) => ({
   season: initial.season,
   timeOfDay: initial.timeOfDay,
   query: "",
+  searchPick: null,
   library: initial.library,
   grovesVisited: initial.grovesVisited,
   nearbySlug: null,
@@ -177,7 +180,8 @@ export const useGame = create<GameStore>((set, get) => ({
     set({ timeOfDay });
     persist({ ...get(), timeOfDay });
   },
-  setQuery: (query) => set({ query }),
+  setQuery: (query) => set({ query, searchPick: null }),
+  pickSearch: (searchPick) => set({ searchPick }),
   collect: (slug, title) => {
     const lib = get().library;
     if (lib.includes(slug)) {

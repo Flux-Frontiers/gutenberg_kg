@@ -33,6 +33,7 @@ export function World({ forest, season }: { forest: Forest; season: SeasonName }
   }, [day, pal.ground]);
   const selectedGrove = useGame((s) => s.selectedGrove);
   const query = useGame((s) => s.query);
+  const searchPick = useGame((s) => s.searchPick);
   const travelMode = useGame((s) => s.travelMode);
 
   return (
@@ -51,7 +52,7 @@ export function World({ forest, season }: { forest: Forest; season: SeasonName }
 
       <Roads forest={forest} circuit={travelMode === "circuit"} />
       {detail && <ForestFloor forest={forest} season={season} />}
-      <LanternTrail forest={forest} selectedGrove={selectedGrove} query={query} />
+      <LanternTrail forest={forest} selectedGrove={selectedGrove} query={query} searchPick={searchPick} />
       <Signposts forest={forest} />
 
       {forest.groves.map((g) => {
@@ -113,10 +114,12 @@ function LanternTrail({
   forest,
   selectedGrove,
   query,
+  searchPick,
 }: {
   forest: Forest;
   selectedGrove: string | null;
   query: string;
+  searchPick: string | null;
 }) {
   const ref = useRef<InstancedMesh>(null);
 
@@ -128,9 +131,11 @@ function LanternTrail({
         return { x: wp.x, z: wp.z, mode: "grove" as const };
       }
     }
+    const picked = searchPick ? forest.trees.find((t) => t.book.slug === searchPick) : undefined;
+    if (picked) return { x: picked.x, z: picked.z, mode: "grove" as const };
     if (!query.trim()) return null;
     return { mode: "query" as const, q: query };
-  }, [forest, selectedGrove, query]);
+  }, [forest, selectedGrove, query, searchPick]);
 
   useFrame(() => {
     const mesh = ref.current;

@@ -287,4 +287,22 @@ export function bookMatchesQuery(book: Book, q: string): boolean {
   return false;
 }
 
+/** Matching trees, nearest to (x, z) first. */
+export function searchTrees(forest: Pick<Forest, "trees">, q: string, x: number, z: number): TreeSite[] {
+  return forest.trees
+    .filter((t) => bookMatchesQuery(t.book, q))
+    .sort((a, b) => Math.hypot(a.x - x, a.z - z) - Math.hypot(b.x - x, b.z - z));
+}
+
+/** A pose a few metres from the tree on the side facing (fromX, fromZ), looking at the trunk. */
+export function treeApproach(t: TreeSite, fromX: number, fromZ: number): { x: number; z: number; yaw: number } {
+  const dx = fromX - t.x;
+  const dz = fromZ - t.z;
+  const d = Math.hypot(dx, dz) || 1;
+  const stand = t.trunkRadius + 4.5; // Inside the 6.8 m read radius.
+  const x = t.x + (dx / d) * stand;
+  const z = t.z + (dz / d) * stand;
+  return { x, z, yaw: Math.atan2(-(t.x - x), -(t.z - z)) };
+}
+
 export { seedFromKey } from "./math";
