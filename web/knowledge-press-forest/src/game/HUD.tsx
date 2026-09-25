@@ -225,7 +225,7 @@ export function HUD({ forest }: { forest: Forest }) {
             />
           </p>
         ) : (
-          <p className="mt-1 text-xs text-faint">Tap a grove to jump</p>
+          <p className="mt-1 text-xs text-faint">Tap a grove for its books</p>
         )}
       </div>
 
@@ -409,9 +409,9 @@ function Minimap({ forest, x, z, yaw, pins, picked }: {
               transform: "translate(-50%, -50%)",
               boxShadow: on ? `0 0 0 2px var(--color-fg)` : "none",
             }}
-            title={`Jump to ${g.label}`}
-            aria-label={`Jump to ${g.label}`}
-            onClick={() => jumpToGrove(g)}
+            title={`${g.label}: its books`}
+            aria-label={`${g.label}: list its books`}
+            onClick={() => useGame.getState().openCatalog(g.genre)}
           />
         );
       })}
@@ -600,9 +600,12 @@ function LibraryPanel({ forest }: { forest: Forest }) {
 function CatalogPanel({ forest }: { forest: Forest }) {
   const toggleCatalog = useGame((s) => s.toggleCatalog);
   const library = useGame((s) => s.library);
+  const genre = useGame((s) => s.catalogGenre);
+  const only = genre ? forest.groves.find((g) => g.genre === genre) : undefined;
   const [filter, setFilter] = useState("");
   const q = filter.trim();
   const sections = forest.groves
+    .filter((g) => !only || g === only)
     .map((g) => ({
       grove: g,
       trees: forest.trees
@@ -622,7 +625,7 @@ function CatalogPanel({ forest }: { forest: Forest }) {
         onClick={(e) => e.stopPropagation()}
       >
         <div className="flex items-center justify-between gap-3">
-          <h2 className="font-display text-2xl">Every book</h2>
+          <h2 className="font-display text-2xl">{only ? only.label : "Every book"}</h2>
           <button
             type="button"
             onClick={toggleCatalog}
@@ -632,9 +635,22 @@ function CatalogPanel({ forest }: { forest: Forest }) {
             <X className="size-5" strokeWidth={1.75} />
           </button>
         </div>
-        <p className="mt-1 text-sm text-muted tabular-nums">
-          {q ? `${shown} of ${forest.trees.length}` : `${forest.trees.length} books`} · {forest.corpusTree.totalChunks.toLocaleString("en-US")} chunks. Pick one to jump to its tree.
-        </p>
+        {only ? (
+          <div className="mt-2 flex flex-wrap items-center gap-2">
+            <button type="button" onClick={() => jumpToGrove(only)}
+              className="min-h-11 rounded-md bg-primary px-4 text-sm text-primary-fg">
+              Go to the grove
+            </button>
+            <button type="button" onClick={() => useGame.getState().openCatalog(null)}
+              className="min-h-11 rounded-md border border-border bg-bg px-4 text-sm">
+              All {forest.trees.length} books
+            </button>
+          </div>
+        ) : (
+          <p className="mt-1 text-sm text-muted tabular-nums">
+            {q ? `${shown} of ${forest.trees.length}` : `${forest.trees.length} books`} · {forest.corpusTree.totalChunks.toLocaleString("en-US")} chunks. Pick one to jump to its tree.
+          </p>
+        )}
         <label className="mt-3 flex items-center gap-2 rounded-md border border-border bg-bg px-3 py-2">
           <Search className="size-4 shrink-0 text-muted" strokeWidth={1.75} />
           <input

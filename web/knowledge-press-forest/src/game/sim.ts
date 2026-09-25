@@ -89,10 +89,12 @@ function step(forest: Forest, throttle: number, steer: number, boost: boolean, d
   sim.speed = clamp(sim.speed, gentle ? -2.5 : -4.5, maxSpeed);
 
   const speedFactor = clamp(Math.abs(sim.speed) / 5, 0.65, 1);
-  const reverse = sim.speed >= 0 ? 1 : -1;
   const turnRate = 1.55;
   sim.steering += (clamp(steer, -1, 1) - sim.steering) * (1 - Math.exp(-12 * dt));
-  sim.yaw = wrapAngle(sim.yaw + sim.steering * turnRate * (options.sensitivity ?? 1) * speedFactor * reverse * dt);
+  // Steering turns the cart the way it is pushed, seen from behind, whether it
+  // is going forward or backward. A car's steering flips in reverse; on a stick
+  // that reads as the control switching sides, most of all near a standstill.
+  sim.yaw = wrapAngle(sim.yaw + sim.steering * turnRate * (options.sensitivity ?? 1) * speedFactor * dt);
 
   const fx = -Math.sin(sim.yaw);
   const fz = -Math.cos(sim.yaw);

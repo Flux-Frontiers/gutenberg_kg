@@ -111,6 +111,8 @@ export type GameStore = {
   atlasOpen: boolean;
   /** The corpus catalog: every book, to jump to its tree. */
   catalogOpen: boolean;
+  /** The genre the book list is narrowed to, when opened from a grove's marker. */
+  catalogGenre: string | null;
   travelMode: TravelMode;
   jump: JumpPose | null;
   play: () => void;
@@ -134,6 +136,7 @@ export type GameStore = {
   setAtlasOpen: (v: boolean) => void;
   toggleCatalog: () => void;
   setCatalogOpen: (v: boolean) => void;
+  openCatalog: (genre: string | null) => void;
   setTravelMode: (m: TravelMode) => void;
   toggleCircuit: () => void;
   requestJump: (pose: JumpPose, toast?: string) => void;
@@ -174,6 +177,7 @@ export const useGame = create<GameStore>((set, get) => ({
   selectedGrove: null,
   atlasOpen: false,
   catalogOpen: false,
+  catalogGenre: null,
   travelMode: "free",
   jump: null,
   play: () => set({ playing: true, paused: false }),
@@ -230,7 +234,8 @@ export const useGame = create<GameStore>((set, get) => ({
   selectGrove: (selectedGrove) => set({ selectedGrove }),
   toggleAtlas: () => set({ atlasOpen: !get().atlasOpen, libraryOpen: false, catalogOpen: false }),
   setAtlasOpen: (atlasOpen) => set({ atlasOpen }),
-  toggleCatalog: () => set({ catalogOpen: !get().catalogOpen, atlasOpen: false, libraryOpen: false }),
+  toggleCatalog: () => set({ catalogOpen: !get().catalogOpen, catalogGenre: null, atlasOpen: false, libraryOpen: false }),
+  openCatalog: (catalogGenre) => set({ catalogOpen: true, catalogGenre, atlasOpen: false, libraryOpen: false }),
   setCatalogOpen: (catalogOpen) => set({ catalogOpen }),
   // Leaving the ring drops the grove it was pointing at, so the lantern trail goes with it.
   setTravelMode: (travelMode) =>

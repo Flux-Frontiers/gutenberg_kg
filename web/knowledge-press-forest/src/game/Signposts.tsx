@@ -92,8 +92,12 @@ function Signpost({
   const lookZ = wp.z - uz * 5.5;
   const yaw = Math.atan2(lookX - x, lookZ - z);
 
+  // Tapping the sign lists the grove's books.
   return (
-    <group position={[x, 0, z]} rotation={[0, yaw, 0]}>
+    <group position={[x, 0, z]} rotation={[0, yaw, 0]}
+      onClick={(e) => { e.stopPropagation(); useGame.getState().openCatalog(grove.genre); }}
+      onPointerOver={() => { document.body.style.cursor = "pointer"; }}
+      onPointerOut={() => { document.body.style.cursor = ""; }}>
       <mesh position={[0, 1.3, 0]}>
         <cylinderGeometry args={[0.08, 0.11, 2.6, 6]} />
         <meshStandardMaterial color="#4a3a2a" roughness={0.9} />

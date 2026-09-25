@@ -36,7 +36,8 @@ Open the URL Vite prints. Click **Start driving**.
 | **L** | open the press (collected books) |
 | **Esc** | settings (leaf complexity, geometry readout, camera, pace) |
 
-Click a grove on the minimap to jump there. The cart is **not** locked to rails
+Tap a grove's signpost, or its dot on the minimap, to list that grove's books;
+jump to any one of them, or to the grove itself. The cart is **not** locked to rails
 unless you ride the ring. A brick ring road links every grove in one loop
 that never crosses itself, and a few spokes, spread round the hub, join it.
 Where the ring doubles back at a far grove, the stop is a paved turning circle.
