@@ -1,6 +1,7 @@
 import { BOOKS, type Book } from "./catalog";
 import { GROW_VERSION, emitBark, emitLeaves, growTree, type BarkBuffers } from "./growTree";
-import { fibonacciAnnulus } from "./math";
+import { packAroundHub, sunflower } from "./math";
+import { routeNetwork } from "./routing";
 import { SPECIES, speciesFor } from "./species";
 
 export const GENRE_PALETTE = [
@@ -60,6 +61,10 @@ export type Waypoint = {
   label: string;
 };
 
+/** The hub: a paved plaza around the sculpture's plinth (the cart collides with the plinth). */
+export const HUB_PLAZA_R = 8;
+export const HUB_SCULPTURE_R = 2.6;
+
 export type Chunk = {
   genre: string;
   species: number;
@@ -106,6 +111,8 @@ export type Forest = {
   };
   spawn: { x: number; z: number; yaw: number };
   worldRadius: number;
+  /** Radius of the hub sculpture's plinth, which the cart cannot drive through (0: none). */
+  hubObstacle?: number;
   grid: Map<string, number[]>;
   cell: number;
 };
@@ -137,34 +144,6 @@ export function groveApproach(g: Grove): Waypoint {
   return { x, z, yaw, genre: g.genre, label: g.label };
 }
 
-/**
- * A closed centripetal Catmull-Rom curve through `pts`, resampled every ~`step`
- * metres. `span[i]` is the index of the control point each sample starts from.
- */
-export function closedSpline(pts: [number, number][], step: number): { pts: [number, number][]; span: number[] } {
-  const n = pts.length;
-  const out: [number, number][] = [];
-  const span: number[] = [];
-  if (n < 3) return { pts: pts.slice(), span: pts.map((_, i) => i) };
-  for (let i = 0; i < n; i++) {
-    const p0 = pts[(i - 1 + n) % n]!, p1 = pts[i]!, p2 = pts[(i + 1) % n]!, p3 = pts[(i + 2) % n]!;
-    // Centripetal parameterisation: no cusps or overshoot between uneven stops.
-    const d = (a: [number, number], b: [number, number]) => Math.max(1e-4, Math.hypot(b[0] - a[0], b[1] - a[1]) ** 0.5);
-    const t0 = 0, t1 = t0 + d(p0, p1), t2 = t1 + d(p1, p2), t3 = t2 + d(p2, p3);
-    const steps = Math.max(2, Math.ceil(Math.hypot(p2[0] - p1[0], p2[1] - p1[1]) / step));
-    for (let s = 0; s < steps; s++) {
-      const t = t1 + ((t2 - t1) * s) / steps;
-      const lerp = (a: [number, number], b: [number, number], ta: number, tb: number) =>
-        [a[0] + ((b[0] - a[0]) * (t - ta)) / (tb - ta), a[1] + ((b[1] - a[1]) * (t - ta)) / (tb - ta)] as [number, number];
-      const a1 = lerp(p0, p1, t0, t1), a2 = lerp(p1, p2, t1, t2), a3 = lerp(p2, p3, t2, t3);
-      const b1 = lerp(a1, a2, t0, t2), b2 = lerp(a2, a3, t1, t3);
-      out.push(lerp(b1, b2, t1, t2));
-      span.push(i);
-    }
-  }
-  return { pts: out, span };
-}
-
 export function groveByGenre(forest: Forest, genre: string): Grove | undefined {
   return forest.groves.find((g) => g.genre === genre);
 }
@@ -178,9 +157,15 @@ function buildForest(leafMultiplier: number): Forest {
   }
   const genres = [...byGenre.keys()];
   const nGenres = genres.length;
-  const groveInner = 52;
-  const groveOuter = groveInner + nGenres * 15.5;
-  const groveCenters = fibonacciAnnulus(nGenres, groveInner, groveOuter);
+  // Compact layout: trees on an even sunflower grid TREE_SPACING apart, and
+  // groves packed as close to the hub as they fit, GROVE_GAP apart for roads.
+  // (The old linear spirals spread 253 trees over a ~370 m radius.)
+  const TREE_SPACING = 9;
+  const GROVE_GAP = 10;
+  const bookInner = 6.5;
+  const layouts = genres.map((g) => sunflower(byGenre.get(g)!.length, bookInner, TREE_SPACING));
+  const groveRadius = (outer: number) => Math.max(14, outer) + 6;
+  const groveCenters = packAroundHub(layouts.map((l) => groveRadius(l.outer)), 22, GROVE_GAP);
 
   const groves: Grove[] = [];
   const trees: TreeSite[] = [];
@@ -195,9 +180,8 @@ function buildForest(leafMultiplier: number): Forest {
   genres.forEach((genre, gi) => {
     const books = byGenre.get(genre)!;
     const c = groveCenters[gi]!;
-    const bookInner = 6.5;
-    const bookOuter = Math.max(14, bookInner + books.length * 2.55);
-    const spots = fibonacciAnnulus(books.length, bookInner, bookOuter);
+    const bookOuter = Math.max(14, layouts[gi]!.outer);
+    const spots = layouts[gi]!.pts;
     const color = GENRE_PALETTE[gi % GENRE_PALETTE.length]!;
     groves.push({
       genre,
@@ -293,12 +277,23 @@ function buildForest(leafMultiplier: number): Forest {
     .map((g) => groveApproach(g))
     .sort((a, b) => Math.atan2(a.z, a.x) - Math.atan2(b.z, b.x));
 
-  const hub = 3.6;
-  const roadLines: RoadLine[] = circuit.map((wp) => {
-    const d = Math.hypot(wp.x, wp.z) || 1;
-    return { kind: "spoke", pts: [[(wp.x / d) * hub, (wp.z / d) * hub], [wp.x, wp.z]], closed: false };
+  // Roads are routed around the trunks (routing.ts). The centreline keeps
+  // ROAD_CLEARANCE from every trunk surface: half the widest road (1.7 m) plus
+  // the cart's radius (1.05 m), so nothing on a road can pin the cart.
+  const ROAD_CLEARANCE = 2.75;
+  const obstacles = [
+    ...trees.map((t) => ({ x: t.x, z: t.z, r: t.trunkRadius })),
+    { x: 0, z: 0, r: HUB_SCULPTURE_R },
+  ];
+  const net = routeNetwork({
+    hubR: HUB_PLAZA_R - 1,
+    stops: circuit.map((wp) => [wp.x, wp.z] as [number, number]),
+    obstacles,
+    worldR: Math.max(...groves.map((g) => Math.hypot(g.x, g.z) + g.radius)) + 20,
+    need: ROAD_CLEARANCE,
   });
-  const ring = closedSpline(circuit.map((wp) => [wp.x, wp.z] as [number, number]), 2);
+  const roadLines: RoadLine[] = net.spokes.map((pts) => ({ kind: "spoke", pts, closed: false }));
+  const ring = { pts: net.ring.pts, span: net.ring.leg };
   roadLines.push({ kind: "ring", pts: ring.pts, closed: true });
   const roads: RoadSeg[] = [];
   for (const line of roadLines) {
@@ -309,7 +304,7 @@ function buildForest(leafMultiplier: number): Forest {
       roads.push({ ax, az, bx, bz, kind: line.kind });
     }
   }
-  const plazas = [{ x: 0, z: 0, r: 5.2 }, ...circuit.map((wp) => ({ x: wp.x, z: wp.z, r: 3.6 }))];
+  const plazas = [{ x: 0, z: 0, r: HUB_PLAZA_R }, ...circuit.map((wp) => ({ x: wp.x, z: wp.z, r: 4 }))];
   // Each ring sample carries the grove whose stop comes next, so the tour still
   // lights the right signpost and trail.
   const ringPath: Waypoint[] = ring.pts.map(([x, z], i) => {
@@ -338,6 +333,7 @@ function buildForest(leafMultiplier: number): Forest {
     },
     spawn: { x: spawnX, z: spawnZ, yaw: spawnYaw },
     worldRadius: worldRadius + 18,
+    hubObstacle: HUB_SCULPTURE_R,
     grid,
     cell,
   };

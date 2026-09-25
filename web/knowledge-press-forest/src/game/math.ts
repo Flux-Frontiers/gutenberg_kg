@@ -27,6 +27,46 @@ export function lerp(a: number, b: number, t: number): number {
   return a + (b - a) * t;
 }
 
+/**
+ * n points spread evenly (equal area each) over an annulus from `inner`, about
+ * `spacing` apart: a sunflower (Vogel) spiral, r = sqrt(inner^2 + c^2 i).
+ * Returns the points and the outer radius they reach.
+ */
+export function sunflower(n: number, inner: number, spacing: number): { pts: { x: number; z: number }[]; outer: number } {
+  const golden = Math.PI * (3 - Math.sqrt(5));
+  const c2 = (spacing * spacing) / Math.PI;
+  const pts: { x: number; z: number }[] = [];
+  for (let i = 0; i < n; i++) {
+    const r = Math.sqrt(inner * inner + c2 * (i + 0.5));
+    pts.push({ x: r * Math.cos(i * golden), z: r * Math.sin(i * golden) });
+  }
+  return { pts, outer: Math.sqrt(inner * inner + c2 * n) };
+}
+
+/**
+ * Pack circles of the given radii around a clear hub: each goes on the golden
+ * angle at the smallest distance that keeps `gap` from the hub and every
+ * circle already placed.
+ */
+export function packAroundHub(radii: number[], hub: number, gap: number): { x: number; z: number }[] {
+  const golden = Math.PI * (3 - Math.sqrt(5));
+  const placed: { x: number; z: number; r: number }[] = [];
+  for (let i = 0; i < radii.length; i++) {
+    const r = radii[i]!;
+    const a = i * golden;
+    let d = hub + r;
+    for (;;) {
+      const x = d * Math.cos(a), z = d * Math.sin(a);
+      if (placed.every((p) => Math.hypot(p.x - x, p.z - z) >= p.r + r + gap)) {
+        placed.push({ x, z, r });
+        break;
+      }
+      d += 1;
+    }
+  }
+  return placed.map(({ x, z }) => ({ x, z }));
+}
+
 export function fibonacciAnnulus(
   n: number,
   inner: number,

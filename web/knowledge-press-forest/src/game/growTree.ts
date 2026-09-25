@@ -252,10 +252,11 @@ function colonize(pts: Float32Array, m: number, trop: Vec3, rng: () => number) {
     }
   };
 
-  // The root sits outside every influence sphere: lead a trunk to the nearest attractor.
-  let first = 0;
-  for (let a = 1; a < m; a++) if (nearestD[a]! < nearestD[first]!) first = a;
-  if (m > 0) bridge(0, pts[first * 3]!, pts[first * 3 + 1]!, pts[first * 3 + 2]!, influence);
+  // The root sits outside every influence sphere, so lead a trunk up first.
+  // colonize bridges toward the nearest attractor; the crown's lowest section
+  // always sits at golden angle 0, so that leaned every trunk the same way.
+  // Here the trunk rises plumb to the crown's base, then growth takes over.
+  if (m > 0) bridge(0, 0, minY, 0, step);
   refresh(1);
 
   const pull = new Map<number, [number, number, number]>();

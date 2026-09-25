@@ -119,3 +119,18 @@ test("every leaf hangs on the wood near its chunk, blade lifted toward the sky",
     assert.ok(up / g.nLeaves > 0.7, `${b.slug}: only ${up}/${g.nLeaves} leaves point upward`);
   }
 });
+
+test("trunks rise plumb to their first fork instead of leaning toward one side", () => {
+  const { growTree } = require(`${process.env.FOREST_TEST_BUILD}/growTree.js`);
+  const { BOOKS } = require(`${process.env.FOREST_TEST_BUILD}/catalog.js`);
+  for (const b of BOOKS.slice(0, 20)) {
+    const { nodes, parents, n } = growTree({ slug: b.slug, genre: b.genre, nChunks: b.chunks }).skeleton;
+    const kids = Array.from({ length: n }, () => []);
+    for (let i = 1; i < n; i++) kids[parents[i]].push(i);
+    let k = 0;
+    while (kids[k].length === 1) k = kids[k][0];
+    const lean = Math.atan2(Math.hypot(nodes[k * 3], nodes[k * 3 + 2]), nodes[k * 3 + 1]) * 180 / Math.PI;
+    // Bridging to the nearest crown point leaned every trunk ~28 deg the same way.
+    assert.ok(lean < 5, `${b.slug}: trunk leans ${lean.toFixed(1)} deg`);
+  }
+});

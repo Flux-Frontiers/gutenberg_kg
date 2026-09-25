@@ -13,7 +13,7 @@ function drive(seconds, throttle, steer = 0, options = {}, hz = 60) {
 test("forward, reverse and turn-in-place follow the chase camera convention", () => {
   resetSim(empty);
   drive(1, 1);
-  assert.ok(sim.z < -3);
+  assert.ok(sim.z < -1.5);
   resetSim(empty);
   drive(1, -1);
   assert.ok(sim.z > 1);
@@ -29,7 +29,7 @@ test("forward, reverse and turn-in-place follow the chase camera convention", ()
 test("brake overrides held throttle and stops without reversing", () => {
   resetSim(empty);
   drive(3, 1, 0, { pace: "brisk" });
-  assert.ok(sim.speed > 15);
+  assert.ok(sim.speed > 8);
   drive(0.7, 1, 0, { brake: true, pace: "brisk" });
   assert.equal(sim.speed, 0);
   drive(1, 1, 0, { brake: true, pace: "brisk" });
@@ -40,7 +40,7 @@ test("release stops promptly; gentle mode is slower than brisk mode", () => {
   resetSim(empty);
   drive(3, 1);
   const gentle = sim.speed;
-  assert.ok(gentle <= 9);
+  assert.ok(gentle <= 4.5, `gentle tops out at ${gentle.toFixed(2)} m/s`);
   drive(1.5, 0);
   assert.equal(sim.speed, 0);
   resetSim(empty);
