@@ -5,6 +5,7 @@ import { ForestFloor, Sky, Sunlight, useGroundTexture } from "./Environment";
 import { DAY_OVERRIDE } from "./daylight";
 import { bookMatchesQuery, groveApproach, groveByGenre, type Forest } from "./forest";
 import { disc, ribbon, type FlatMesh } from "./roads";
+import { HubSculpture } from "./HubSculpture";
 import { Signposts } from "./Signposts";
 import { SEASONS, type SeasonName } from "./seasons";
 import { sim } from "./sim";
@@ -69,14 +70,7 @@ export function World({ forest, season }: { forest: Forest; season: SeasonName }
         );
       })}
 
-      <mesh position={[0, 0.55, 0]}>
-        <cylinderGeometry args={[1.55, 1.85, 0.38, 8]} />
-        <meshStandardMaterial color="#6a655c" roughness={0.85} />
-      </mesh>
-      <mesh position={[0, 0.95, 0]}>
-        <boxGeometry args={[1.15, 0.52, 0.16]} />
-        <meshStandardMaterial color="#d7d1c4" roughness={0.55} />
-      </mesh>
+      <HubSculpture />
 
     </>
   );

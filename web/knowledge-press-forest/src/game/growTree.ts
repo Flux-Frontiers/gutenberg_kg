@@ -56,9 +56,11 @@ export const LEAF_REFERENCE_COUNT = 600;
 const PIPE_EXP = 2;
 // Trunk radius floor as a fraction of height, for very small books.
 const TRUNK_PER_HEIGHT = 0.028;
-// A leaf hangs within this of a branch node; a chunk farther out is drawn in
-// along the line to its nearest node, so it stays at its own place in the crown.
-const LEAF_REACH = 0.35;
+// A leaf's stalk base sits within this of a branch node (so it visibly hangs on
+// the twig); a chunk farther out is drawn in along the line to its nearest node.
+const LEAF_REACH = 0.1;
+/** Thinnest bark drawn, in metres (the 2 cm pipe-model tips vanish on screen). */
+const TWIG_MIN_R = 0.035;
 
 const GOLDEN = Math.PI * (3 - Math.sqrt(5));
 
@@ -252,10 +254,11 @@ function colonize(pts: Float32Array, m: number, trop: Vec3, rng: () => number) {
     }
   };
 
-  // The root sits outside every influence sphere: lead a trunk to the nearest attractor.
-  let first = 0;
-  for (let a = 1; a < m; a++) if (nearestD[a]! < nearestD[first]!) first = a;
-  if (m > 0) bridge(0, pts[first * 3]!, pts[first * 3 + 1]!, pts[first * 3 + 2]!, influence);
+  // The root sits outside every influence sphere, so lead a trunk up first.
+  // colonize bridges toward the nearest attractor; the crown's lowest section
+  // always sits at golden angle 0, so that leaned every trunk the same way.
+  // Here the trunk rises plumb to the crown's base, then growth takes over.
+  if (m > 0) bridge(0, 0, minY, 0, step);
   refresh(1);
 
   const pull = new Map<number, [number, number, number]>();
@@ -510,7 +513,8 @@ export function emitBark(grown: GrownTree, originX: number, originZ: number, out
       const nl = Math.hypot(nx, ny, nz) || 1;
       nx /= nl; ny /= nl; nz /= nl;
       const bx = ty * nz - tz * ny, by = tz * nx - tx * nz, bz = tx * ny - ty * nx;
-      const r = ringRadius(k);
+      // Twigs are drawn at least TWIG_MIN_R thick so they read on screen; the pipe radii are unchanged.
+      const r = Math.max(ringRadius(k), TWIG_MIN_R);
       const y = isTrunk && k === 0 ? -0.15 : P(i, 1); // sink the root below the ground
       for (let j = 0; j <= R; j++) {
         const ang = (2 * Math.PI * j) / R;

@@ -1,4 +1,4 @@
-import { BookMarked, Compass, Map, MapPin, Moon, Settings2, Search, Sun, X } from "lucide-react";
+import { BookMarked, Compass, House, Map, MapPin, Moon, Settings2, Search, Sun, X } from "lucide-react";
 import { useMemo } from "react";
 import { groveApproach, searchTrees, treeApproach, type Forest, type Grove, type TreeSite } from "./forest";
 import { QUESTS, questProgress } from "./quests";
@@ -74,7 +74,7 @@ export function HUD({ forest }: { forest: Forest }) {
             </p>
           ) : null}
         </div>
-        <div className="flex items-center gap-2">
+        <div className="flex flex-wrap items-center justify-end gap-2">
           <button
             type="button"
             onClick={toggleTimeOfDay}
@@ -87,6 +87,14 @@ export function HUD({ forest }: { forest: Forest }) {
             ) : (
               <Moon className="size-4" strokeWidth={1.75} />
             )}
+          </button>
+          <button
+            type="button"
+            onClick={() => { jumpHome(forest); (document.activeElement as HTMLElement | null)?.blur(); }}
+            className="grid size-11 place-items-center rounded-md border border-border bg-surface"
+            aria-label="Home: back to the sculpture" title="Home · H"
+          >
+            <House className="size-4" strokeWidth={1.75} />
           </button>
           <button
             type="button"
@@ -280,10 +288,7 @@ function jumpToTree(t: TreeSite) {
 
 function jumpHome(forest: Forest) {
   useGame.getState().selectGrove(null);
-  useGame.getState().requestJump(
-    { x: forest.spawn.x, z: forest.spawn.z, yaw: forest.spawn.yaw },
-    "Hamlet · the press",
-  );
+  useGame.getState().requestJump(forest.home, "Home · the sculpture");
 }
 
 function Minimap({ forest, x, z, yaw, pins, picked }: {
@@ -304,7 +309,7 @@ function Minimap({ forest, x, z, yaw, pins, picked }: {
         type="button"
         className="absolute size-2 rounded-full bg-fg/70"
         style={{ left: "50%", top: "50%", transform: "translate(-50%, -50%)" }}
-        aria-label="Jump to Hamlet"
+        aria-label="Home: back to the sculpture"
         onClick={() => jumpHome(forest)}
       />
       {forest.groves.map((g) => {
@@ -396,7 +401,7 @@ function AtlasPanel({ forest }: { forest: Forest }) {
             onClick={() => jumpHome(forest)}
             className="min-h-11 flex-1 rounded-md border border-border bg-bg px-3 text-sm"
           >
-            Hamlet
+            Home
           </button>
           <button
             type="button"

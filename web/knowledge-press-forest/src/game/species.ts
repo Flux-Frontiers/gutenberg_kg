@@ -95,14 +95,32 @@ export function leafOutline(leaf: LeafShape): [number, number][] {
     const k = leaf.width / 0.36;
     const right = cubic([0, 1], [0.62, 0.58], [0.48, -0.12], [0.1, -0.82], 7);
     const left = cubic([-0.1, -0.82], [-0.48, -0.12], [-0.62, 0.58], [0, 1], 7);
-    return [...right, [0, -1], ...left.slice(0, -1)].map(([x, y]) => [x * k, y]);
+    return withStalk([...right, [0, -1], ...left.slice(0, -1)].map(([x, y]) => [x * k, y]));
   }
   const right = [[0, 1] as [number, number], ...leaf.half];
   // Two samples per span: ~73 triangles for the oak instead of 180, still round at leaf size.
   const half = leaf.smooth ? catmullRom(right, 2) : right;
   const bottom = half[half.length - 1]!;
   const full: [number, number][] = [...half, [0, bottom[1] - 0.02], ...half.slice(1).reverse().map(([x, y]) => [-x, y] as [number, number])];
-  return full.map(([x, y]) => [x * INSTANCE_ASPECT, y]);
+  return withStalk(full.map(([x, y]) => [x * INSTANCE_ASPECT, y]));
+}
+
+/**
+ * Give a leaf a stalk: squeeze the blade into y in [STALK_TOP, 1] and hang it
+ * from a thin petiole down to y = -1, the point the instance pins to the twig.
+ */
+const STALK_TOP = -0.62;
+const STALK_HALF_WIDTH = 0.04;
+function withStalk(pts: [number, number][]): [number, number][] {
+  const squeezed = pts.map(([x, y]) => [x, STALK_TOP + ((y + 1) * (1 - STALK_TOP)) / 2] as [number, number]);
+  let low = 0;
+  for (let i = 1; i < squeezed.length; i++) if (squeezed[i]![1] < squeezed[low]![1]) low = i;
+  const y0 = squeezed[low]![1];
+  return [
+    ...squeezed.slice(0, low),
+    [STALK_HALF_WIDTH, y0], [STALK_HALF_WIDTH, -1], [-STALK_HALF_WIDTH, -1], [-STALK_HALF_WIDTH, y0],
+    ...squeezed.slice(low + 1),
+  ];
 }
 
 const GENRE_SPECIES: Record<string, SpeciesName> = {

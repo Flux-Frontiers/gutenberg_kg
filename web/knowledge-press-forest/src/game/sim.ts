@@ -75,8 +75,9 @@ export function stepVehicle(
 function step(forest: Forest, throttle: number, steer: number, boost: boolean, dt: number,
   options: { brake?: boolean; pace?: Preferences["pace"]; sensitivity?: number }) {
   const gentle = options.pace !== "brisk";
-  const maxSpeed = (gentle ? 9 : 16.5) * (boost ? 1.45 : 1);
-  const accel = gentle ? 11 : 18;
+  // Halved for the compact layout (trees ~9 m apart): gentle is ~16 km/h.
+  const maxSpeed = (gentle ? 4.5 : 9) * (boost ? 1.45 : 1);
+  const accel = gentle ? 6 : 12;
   if (options.brake) {
     sim.speed = Math.sign(sim.speed) * Math.max(0, Math.abs(sim.speed) - 32 * dt);
   } else {
@@ -85,7 +86,7 @@ function step(forest: Forest, throttle: number, steer: number, boost: boolean, d
   const drag = throttle === 0 ? 4.5 : 0.65;
   sim.speed *= Math.exp(-drag * dt);
   if (Math.abs(sim.speed) < 0.04 && throttle === 0) sim.speed = 0;
-  sim.speed = clamp(sim.speed, -4.5, maxSpeed);
+  sim.speed = clamp(sim.speed, gentle ? -2.5 : -4.5, maxSpeed);
 
   const speedFactor = clamp(Math.abs(sim.speed) / 5, 0.65, 1);
   const reverse = sim.speed >= 0 ? 1 : -1;
@@ -117,6 +118,16 @@ function step(forest: Forest, throttle: number, steer: number, boost: boolean, d
       sim.z += nz * (min - d);
       sim.speed *= 0.55;
     }
+  }
+
+  // The hub sculpture's plinth.
+  const hd = Math.hypot(sim.x, sim.z);
+  const hubMin = (forest.hubObstacle ?? 0) + cartR;
+  if (forest.hubObstacle && hd < hubMin) {
+    const nx = hd > 1e-4 ? sim.x / hd : -fx, nz = hd > 1e-4 ? sim.z / hd : -fz;
+    sim.x = nx * hubMin;
+    sim.z = nz * hubMin;
+    sim.speed *= 0.55;
   }
 
   const lim = forest.worldRadius;
