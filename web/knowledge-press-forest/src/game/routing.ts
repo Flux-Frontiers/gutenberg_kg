@@ -250,13 +250,15 @@ export function routeNetwork(opts: {
   obstacles: Obstacle[];
   worldR: number;
   need: number;
+  /** Stops that get a spoke from the hub (default: every stop). */
+  spokeTo?: number[];
   cell?: number;
 }): { spokes: Point[][]; ring: { pts: Point[]; leg: number[] }; clearance: (x: number, z: number) => number } {
   const g = makeGrid(opts.obstacles, opts.worldR, opts.cell ?? 1);
   const { need, stops, hubR } = opts;
   const spokes: Point[][] = [];
   // Nearest stops first, so farther spokes can ride the roads already laid.
-  const order = stops.map((_, i) => i).sort((a, b) => Math.hypot(...stops[a]!) - Math.hypot(...stops[b]!));
+  const order = (opts.spokeTo ?? stops.map((_, i) => i)).sort((a, b) => Math.hypot(...stops[a]!) - Math.hypot(...stops[b]!));
   const bySpoke: Point[][] = [];
   for (const i of order) {
     const [sx, sz] = stops[i]!;
@@ -264,7 +266,7 @@ export function routeNetwork(opts: {
     const from: Point = [(sx / d) * hubR, (sz / d) * hubR];
     const route = finish(g, pullTaut(g, astar(g, from, stops[i]!, need), need), need, false).pts;
     markRoad(g, route, need);
-    bySpoke[i] = route;
+    bySpoke.push(route);
   }
   for (const r of bySpoke) spokes.push(r);
 

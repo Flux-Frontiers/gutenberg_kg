@@ -43,6 +43,7 @@ This is the next world pass. The groves read as a model until the sky does.
 | Exhibits in roadside glades (Kepler's Mysterium first) | `exhibits.ts`, `Mysterium.tsx` |
 | Crown-aware tree placement: no branch passes through another tree | `forest.ts` |
 | Silent mode; lantern trail clears on arrival | `preferences.ts`, `Player.tsx` |
+| Guided tour follows the road (pure pursuit), lanterns light the road ahead; non-crossing ring, 5 spokes | `tour.ts`, `forest.ts`, `math.ts` |
 | Carriage roads (spokes + ring) | `forest.ts`, `World.tsx` |
 | Ride-the-ring tour (steer to hop off) | `Player.tsx` |
 | Named grove signposts | `Signposts.tsx` |

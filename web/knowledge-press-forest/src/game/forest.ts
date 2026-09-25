@@ -2,7 +2,7 @@ import { BOOKS, type Book } from "./catalog";
 import { growCorpusTree, type CorpusTree } from "./corpusTree";
 import { EXHIBITS, placeExhibits, type Exhibit } from "./exhibits";
 import { GROW_VERSION, emitBark, emitLeaves, growTree, type BarkBuffers, type GrownTree } from "./growTree";
-import { packAroundHub, sunflower } from "./math";
+import { loopOrder, packAroundHub, sunflower } from "./math";
 import { routeNetwork } from "./routing";
 import { SPECIES, speciesFor } from "./species";
 
@@ -235,6 +235,23 @@ function shyLayout(grown: GrownTree[], inner: number): { pts: { x: number; z: nu
   return { pts: out, outer: Math.max(0, ...out.map((p) => Math.hypot(p.x, p.z))) };
 }
 
+/**
+ * Does the ring double back at this stop (arrive and leave within 60 degrees of
+ * each other)? Such a stop gets a wide turning circle instead of a junction disc.
+ */
+function turnsBack(ring: [number, number][], wp: { x: number; z: number }): boolean {
+  const n = ring.length;
+  let k = 0, best = Infinity;
+  ring.forEach(([x, z], i) => {
+    const d = Math.hypot(x - wp.x, z - wp.z);
+    if (d < best) { best = d; k = i; }
+  });
+  const [ax, az] = ring[(k - 3 + n) % n]!, [bx, bz] = ring[k]!, [cx, cz] = ring[(k + 3) % n]!;
+  const inx = bx - ax, inz = bz - az, outx = cx - bx, outz = cz - bz;
+  const cos = (inx * outx + inz * outz) / ((Math.hypot(inx, inz) * Math.hypot(outx, outz)) || 1);
+  return cos < -0.5;
+}
+
 function buildForest(leafMultiplier: number): Forest {
   const byGenre = new Map<string, Book[]>();
   for (const b of BOOKS) {
@@ -347,9 +364,21 @@ function buildForest(leafMultiplier: number): Forest {
     if (d > worldRadius) worldRadius = d;
   }
 
-  const circuit = groves
+  // The ring visits the stops as one short loop that never crosses itself.
+  // Angle order alone zigzags between near and far groves, doubling back at
+  // every stop, because the groves sit at very different distances from the hub.
+  const byAngle = groves
     .map((g) => groveApproach(g))
     .sort((a, b) => Math.atan2(a.z, a.x) - Math.atan2(b.z, b.x));
+  const circuit = loopOrder(byAngle, byAngle.map((_, i) => i)).map((i) => byAngle[i]!);
+  // A few spokes, spread around the hub, instead of one to every grove:
+  // nearest stops first, each at least SPOKE_SPREAD from the spokes already chosen.
+  const SPOKE_SPREAD = Math.PI / 3.2;
+  const spokeTo: number[] = [];
+  for (const i of circuit.map((_, i) => i).sort((a, b) => Math.hypot(circuit[a]!.x, circuit[a]!.z) - Math.hypot(circuit[b]!.x, circuit[b]!.z))) {
+    const a = Math.atan2(circuit[i]!.z, circuit[i]!.x);
+    if (spokeTo.every((j) => Math.abs(Math.atan2(Math.sin(a - Math.atan2(circuit[j]!.z, circuit[j]!.x)), Math.cos(a - Math.atan2(circuit[j]!.z, circuit[j]!.x)))) >= SPOKE_SPREAD)) spokeTo.push(i);
+  }
 
   // Roads are routed around the trunks (routing.ts). The centreline keeps
   // ROAD_CLEARANCE from every trunk surface: half the widest road (1.7 m) plus
@@ -366,6 +395,7 @@ function buildForest(leafMultiplier: number): Forest {
     ],
     worldR: Math.max(...groves.map((g) => Math.hypot(g.x, g.z) + g.radius)) + 20,
     need: ROAD_CLEARANCE,
+    spokeTo,
   });
   const roadLines: RoadLine[] = net.spokes.map((pts) => ({ kind: "spoke", pts, closed: false }));
   const ring = { pts: net.ring.pts, span: net.ring.leg };
@@ -382,7 +412,7 @@ function buildForest(leafMultiplier: number): Forest {
   const exhibits = placeExhibits({ specs: EXHIBITS, roadLines, trees, worldRadius });
   const plazas = [
     { x: 0, z: 0, r: HUB_PLAZA_R },
-    ...circuit.map((wp) => ({ x: wp.x, z: wp.z, r: 4 })),
+    ...circuit.map((wp) => ({ x: wp.x, z: wp.z, r: turnsBack(ring.pts, wp) ? 6 : 4 })),
     ...exhibits.map((e) => ({ x: e.x, z: e.z, r: e.plazaR })),
   ];
   // Each ring sample carries the grove whose stop comes next, so the tour still

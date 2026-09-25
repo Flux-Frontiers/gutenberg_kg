@@ -37,8 +37,13 @@ Open the URL Vite prints. Click **Start driving**.
 | **Esc** | settings (leaf complexity, geometry readout, camera, pace) |
 
 Click a grove on the minimap to jump there. The cart is **not** locked to rails
-unless you ride the ring. Brick spokes run from the hub to each grove, and a
-brick ring road links the groves.
+unless you ride the ring. A brick ring road links every grove in one loop
+that never crosses itself, and a few spokes, spread round the hub, join it.
+Where the ring doubles back at a far grove, the stop is a paved turning circle.
+
+**Q** rides the ring: the cart follows the road itself (down a spoke first if
+that is nearer), slowing for the bends, and lanterns light the next 50 m of
+road. Steer, brake, or reverse to hop off.
 
 The drive starts at home, facing the **corpus redwood** at the hub: one tree
 for the whole library, 3.4 m tall per doubling of the corpus's chunks, with one

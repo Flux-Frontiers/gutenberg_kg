@@ -11,6 +11,7 @@ import { Signposts } from "./Signposts";
 import { SEASONS, type SeasonName } from "./seasons";
 import { sim } from "./sim";
 import { useGame } from "./store";
+import { tourAhead, tourState } from "./tour";
 
 const dummy = new Object3D();
 const TRAIL_N = 20;
@@ -205,6 +206,18 @@ function LanternTrail({
   useFrame(() => {
     const mesh = ref.current;
     if (!mesh) return;
+    // Riding the ring: light the road ahead, bend for bend, not a beeline to the next grove.
+    if (tourState.tour) {
+      tourAhead(tourState.tour, TRAIL_N, 2.5).forEach(([x, z], i) => {
+        dummy.position.set(x, 0.28, z);
+        dummy.scale.setScalar(0.16 + (i % 3 === 0 ? 0.06 : 0));
+        dummy.updateMatrix();
+        mesh.setMatrixAt(i, dummy.matrix);
+      });
+      mesh.instanceMatrix.needsUpdate = true;
+      mesh.count = TRAIL_N;
+      return;
+    }
     let tx = 0;
     let tz = 0;
     if (!target) {
