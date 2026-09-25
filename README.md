@@ -46,15 +46,16 @@ There are four seasons. `--season winter` drops ninety percent of the leaves, wh
 
 ### Walk the grove in a browser
 
-The same corpus, as a first-person forest. `web/knowledge-press-forest/` is a React + Vite + [`@react-three/fiber`](https://github.com/pmndrs/react-three-fiber) port of the PyVista grove: one tree per work, grouped into named groves, walked with WASD. Trees are grown by the same space-colonization rule as `viz3d`, so a book's silhouette is the same in both.
+The same corpus, as a first-person forest. Knowledge Press Forest, in the [knowledge_press](https://github.com/Flux-Frontiers/knowledge_press) repo's `web/`, is a React + Vite + [`@react-three/fiber`](https://github.com/pmndrs/react-three-fiber) port of the PyVista grove: one tree per work, grouped into named groves, walked with WASD. Trees are grown by the same space-colonization rule as `viz3d`, so a book's silhouette is the same in both.
 
 It carries a grove atlas with minimap jump, carriage roads between groves, an optional ring tour, named signposts, and a day/night toggle that persists alongside the season.
 
 ```bash
-cd web/knowledge-press-forest && npm install && npm run dev
+git clone https://github.com/Flux-Frontiers/knowledge_press
+cd knowledge_press && make web-install web-dev
 ```
 
-The book catalog is generated from the corpus rather than hand-maintained — `scripts/export_web_catalog.py` (also `make export-web-catalog`) counts DocKG chunk nodes per book and writes `src/game/catalogPart*.ts`, so the forest follows the corpus instead of drifting from it.
+The book catalog is generated from the corpus rather than hand-maintained — `scripts/export_web_catalog.py` (also `make export-web-catalog`) counts DocKG chunk nodes per book and writes the forest's `src/game/catalogPart*.ts` in a sibling knowledge_press checkout (`KNOWLEDGE_PRESS_DIR` to point elsewhere), so the forest follows the corpus instead of drifting from it.
 
 ### If you own a Looking Glass display, cast to it
 
@@ -225,12 +226,12 @@ If you use GutenbergKG in research, use GitHub’s **Cite this repository** butt
 
 ## License
 
-Three different things live here, under three different terms.
+Two different things live here, under two different terms.
 
 **The texts are public domain.** They were sourced from [Project Gutenberg](https://www.gutenberg.org/) and the [Internet Archive](https://archive.org/); GutenbergKG is an independent project with no affiliation with or endorsement from either organization.
 
-**The engine and tooling are [Elastic License 2.0](LICENSE).** That is everything outside `app/` -- the Python package, the corpus pipeline, the docs, the web explorer. Use it, modify it, redistribute it; you may not offer it as a hosted service.
+**The engine and tooling are [Elastic License 2.0](LICENSE).** That is the whole repository -- the Python package, the corpus pipeline, the docs. Use it, modify it, redistribute it; you may not offer it as a hosted service.
 
-**The app is not redistributable.** `app/` holds the source of The Knowledge Press, the iOS and macOS app on the App Store, under a [separate proprietary license](app/LICENSE). You may read it, build it, and run it on your own hardware; you may not ship it. The one exception is `app/fm-repro/`, a reproducer for an Apple defect, which stays Elastic-2.0 so anyone can run it.
+The Knowledge Press, the iOS and macOS app, and the web forest moved to [knowledge_press](https://github.com/Flux-Frontiers/knowledge_press), which carries their own license terms.
 
 **The names and artwork are licensed by none of the above.** See [TRADEMARK.md](TRADEMARK.md).

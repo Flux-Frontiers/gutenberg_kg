@@ -24,6 +24,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import re
 import sqlite3
 import sys
@@ -32,7 +33,11 @@ from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 CORPUS_ROOT = REPO_ROOT / "corpus"
-DEFAULT_OUT = REPO_ROOT / "web" / "knowledge-press-forest" / "src" / "game"
+# The web forest lives in the knowledge_press repo, by default a sibling checkout.
+KNOWLEDGE_PRESS_DIR = Path(
+    os.environ.get("KNOWLEDGE_PRESS_DIR", REPO_ROOT.parent / "knowledge_press")
+)
+DEFAULT_OUT = KNOWLEDGE_PRESS_DIR / "web" / "src" / "game"
 PART_SIZE = 43
 KG_DIRS = (".dockg", ".diarykg")
 

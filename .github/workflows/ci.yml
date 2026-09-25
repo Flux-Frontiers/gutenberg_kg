@@ -153,7 +153,17 @@ jobs:
       - name: Install dependencies
         run: poetry install --no-interaction --with dev --extras image --extras pov
 
+      # tests/test_synthesis_parity.py pins the app's Swift prompts to the
+      # Python constants; the Swift lives in the public knowledge_press repo.
+      - name: Check out knowledge_press for the Swift parity tests
+        uses: actions/checkout@v5
+        with:
+          repository: Flux-Frontiers/knowledge_press
+          path: .knowledge_press
+
       - name: Run tests
+        env:
+          KNOWLEDGE_PRESS_DIR: ${{ github.workspace }}/.knowledge_press
         run: poetry run pytest
 
   wheel:

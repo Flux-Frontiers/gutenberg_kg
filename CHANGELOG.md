@@ -122,6 +122,22 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   `GUTENKG_IMAGE_ENDPOINT` are documented. `INSTALLATION.md` no longer says an
   empty endpoint means in-process generation.
 
+### Removed
+
+- **The apps moved to their own repo,
+  [knowledge_press](https://github.com/Flux-Frontiers/knowledge_press).** The
+  iOS/macOS app (`app/`) and Knowledge Press Forest (`web/knowledge-press-forest/`,
+  now `web/` there) left with their history, along with the `ios-*` / `mac-*`
+  Makefile targets, `.github/workflows/app.yml`, `docs/APP_INTERNALS.md` and
+  `tests/test_app_version.py`: the apps no longer take the package's version.
+  gutenberg_kg stays the producer: `gutenkg export-swift` and
+  `docs/ON_DEVICE.md` (the pack format) remain here. `scripts/export_web_catalog.py`
+  (`make export-web-catalog`) and `scripts/make_tokenizer_fixture.py` now write
+  into a sibling knowledge_press checkout, or `KNOWLEDGE_PRESS_DIR`.
+  `tests/test_synthesis_parity.py` reads the Swift prompts from there too, and
+  CI checks knowledge_press out so it keeps running. `LICENSE` now covers the
+  whole repository.
+
 ## [1.22.2] - 2026-09-21
 
 ### Fixed

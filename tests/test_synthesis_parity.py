@@ -25,6 +25,7 @@ collapsing the two engines onto one prompt also fails.
 
 from __future__ import annotations
 
+import os
 import re
 from pathlib import Path
 
@@ -38,12 +39,16 @@ from gutenberg_kg.synthesis_prompts import (
 )
 
 REPO = Path(__file__).resolve().parents[1]
-SWIFT = REPO / "app/GutenbergKGKit/Sources/GutenbergKGKit/Synthesis"
+# The Swift lives in the knowledge_press repo: KNOWLEDGE_PRESS_DIR, else a
+# sibling checkout. CI checks it out and sets the variable.
+KNOWLEDGE_PRESS = Path(os.environ.get("KNOWLEDGE_PRESS_DIR", REPO.parent / "knowledge_press"))
+SWIFT = KNOWLEDGE_PRESS / "app/GutenbergKGKit/Sources/GutenbergKGKit/Synthesis"
 PROMPT_SWIFT = SWIFT / "SynthesisPrompt.swift"
 BUDGET_SWIFT = SWIFT / "ContextBudgeter.swift"
 
 pytestmark = pytest.mark.skipif(
-    not PROMPT_SWIFT.exists(), reason="Swift sources not present in this checkout"
+    not PROMPT_SWIFT.exists(),
+    reason="Swift sources not found: set KNOWLEDGE_PRESS_DIR to a knowledge_press checkout",
 )
 
 

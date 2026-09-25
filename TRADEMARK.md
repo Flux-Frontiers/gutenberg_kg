@@ -1,8 +1,7 @@
 # Trademark policy
 
-The code in this repository is open under the licenses described in
-[LICENSE](LICENSE) and [app/LICENSE](app/LICENSE). The names and the artwork
-are not. A license to use the code is not a license to use the brand.
+The code in this repository is open under the license described in
+[LICENSE](LICENSE). The names and the artwork are not. A license to use the code is not a license to use the brand.
 
 ## The marks
 
