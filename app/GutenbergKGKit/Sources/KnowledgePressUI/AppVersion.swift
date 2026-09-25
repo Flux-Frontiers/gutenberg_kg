@@ -13,7 +13,7 @@ enum AppVersion {
     /// `app/macos/project.yml`, which track the gutenberg-kg package version.
     /// tests/test_app_version.py fails when any of the four differ -- this is
     /// the only version string a bare `swift run` can ever see.
-    static let fallback = "1.22.2"
+    static let fallback = "1.23.0"
 
     /// "v1.0" from a packaged build, "v1.0 (dev)" from `swift run`.
     ///

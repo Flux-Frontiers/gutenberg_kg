@@ -1,7 +1,7 @@
 {
   "name": "knowledge-press-forest",
   "private": true,
-  "version": "1.22.2",
+  "version": "1.23.0",
   "type": "module",
   "scripts": {
     "dev": "vite --host --port 5173",
