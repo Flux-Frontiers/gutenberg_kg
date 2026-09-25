@@ -1,11 +1,11 @@
 import { useEffect, useLayoutEffect, useMemo, useRef } from "react";
 import { useFrame } from "@react-three/fiber";
-import { BufferAttribute, BufferGeometry, Color, DoubleSide, InstancedMesh, MeshDepthMaterial, MeshStandardMaterial, Object3D, RepeatWrapping, RGBADepthPacking, Shape, ShapeGeometry, SRGBColorSpace, TextureLoader } from "three";
+import { BufferAttribute, BufferGeometry, Color, DoubleSide, InstancedMesh, MeshDepthMaterial, MeshStandardMaterial, Object3D, RepeatWrapping, RGBADepthPacking, Shape, ShapeGeometry, SRGBColorSpace, TextureLoader, Vector2 } from "three";
 import { useGame } from "./store";
 import type { Forest } from "./forest";
 import { bookMatchesQuery } from "./forest";
 import { SEASONS, type SeasonName } from "./seasons";
-import { SPECIES, type Species } from "./species";
+import { leafOutline, SPECIES, type LeafShape, type Species } from "./species";
 
 const dummy = new Object3D();
 const color = new Color();
@@ -30,19 +30,8 @@ function barkMaterial(species: Species) {
   });
 }
 
-/** The ovate outline, widened or narrowed per species and pushed into lobes. */
-function leafGeometry({ width, lobes, depth }: Species["leaf"]) {
-  const ovate = new Shape();
-  ovate.moveTo(0, 1);
-  ovate.bezierCurveTo(0.62, 0.58, 0.48, -0.12, 0.1, -0.82);
-  ovate.lineTo(0, -1);
-  ovate.lineTo(-0.1, -0.82);
-  ovate.bezierCurveTo(-0.48, -0.12, -0.62, 0.58, 0, 1);
-  const pts = ovate.getPoints(lobes ? 24 : 7).map((pt) => {
-    const m = lobes ? 1 + depth * Math.cos(lobes * Math.atan2(pt.x, pt.y)) : 1;
-    return pt.set((pt.x * width * m) / 0.36, pt.y * m);
-  });
-  const g = new ShapeGeometry(new Shape(pts));
+function leafGeometry(leaf: LeafShape) {
+  const g = new ShapeGeometry(new Shape(leafOutline(leaf).map(([x, y]) => new Vector2(x, y))));
   g.computeVertexNormals();
   return g;
 }

@@ -54,6 +54,9 @@ export function Sky({ day, season }: { day: boolean; season: SeasonName }) {
   );
 }
 
+/** Tablets and phones: fewer pixels and a smaller shadow map keep the frame rate up. */
+export const COARSE_POINTER = typeof matchMedia === "function" && matchMedia("(pointer: coarse)").matches;
+
 /** Keep one modest shadow map around the cart instead of covering the entire forest. */
 export function Sunlight({ day, detail }: { day: boolean; detail: boolean }) {
   const light = useRef<DirectionalLight>(null);
@@ -68,7 +71,7 @@ export function Sunlight({ day, detail }: { day: boolean; detail: boolean }) {
     <primitive object={target} />
     <directionalLight ref={light} target={target} color={day ? "#fff0d2" : "#94b7e5"}
       intensity={day ? 2.4 : 0.55} castShadow={detail}
-      shadow-mapSize={[2048, 2048]} shadow-camera-left={-40} shadow-camera-right={40}
+      shadow-mapSize={COARSE_POINTER ? [1024, 1024] : [2048, 2048]} shadow-camera-left={-40} shadow-camera-right={40}
       shadow-camera-top={40} shadow-camera-bottom={-40} shadow-camera-near={1} shadow-camera-far={160}
       shadow-bias={-0.0002} shadow-normalBias={0.08} />
   </>;

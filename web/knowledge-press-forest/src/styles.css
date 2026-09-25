@@ -74,3 +74,25 @@ button:focus-visible, select:focus-visible, input:focus-visible {
 @media (pointer: coarse), (max-width: 639px) {
   .touch-controls { display: flex; padding-bottom: max(0.75rem, env(safe-area-inset-bottom)); }
 }
+
+/* Touch layouts (phones, tablets): the controls own the bottom ~8.5rem, so stack
+   search, then the book card, above them; lift the season column clear too. */
+@media (pointer: coarse), (max-width: 639px) {
+  .search-dock {
+    position: absolute; left: 50%; right: auto; margin: 0;
+    transform: translateX(-50%);
+    width: min(100% - 1.5rem, 22rem);
+    bottom: calc(8.75rem + env(safe-area-inset-bottom));
+    flex-direction: column-reverse;
+  }
+  .book-dock { bottom: calc(12.5rem + env(safe-area-inset-bottom)); }
+  .season-dock { bottom: calc(8.75rem + env(safe-area-inset-bottom)); }
+}
+
+/* Tablets, either orientation: from ~700px there is room between the joystick
+   (~124px) and the buttons (~172px) for the 22rem search bar, so it sits on the
+   bottom edge and the book card just above the joystick. Phones keep the stack. */
+@media (pointer: coarse) and (min-width: 700px) {
+  .search-dock { bottom: calc(1rem + env(safe-area-inset-bottom)); }
+  .book-dock { bottom: calc(8.75rem + env(safe-area-inset-bottom)); }
+}

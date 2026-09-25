@@ -1,5 +1,6 @@
 import { Canvas } from "@react-three/fiber";
 import { ACESFilmicToneMapping } from "three";
+import { COARSE_POINTER } from "./Environment";
 import type { Forest } from "./forest";
 import { Player } from "./Player";
 import { Trees } from "./Trees";
@@ -16,7 +17,7 @@ export function ForestCanvas({ forest }: { forest: Forest }) {
     <Canvas
       shadows={detail ? "soft" : false}
       camera={{ position: [forest.spawn.x, 6.2, forest.spawn.z + 10], fov: 58, near: 0.12, far: 560 }}
-      dpr={[1, 1.5]}
+      dpr={[1, COARSE_POINTER ? 1.25 : 1.5]}
       gl={{ antialias: true, powerPreference: "high-performance", alpha: false }}
       onCreated={({ gl }) => {
         gl.setClearColor("#16213e");

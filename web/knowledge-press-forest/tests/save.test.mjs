@@ -19,3 +19,19 @@ test("existing collections survive preference changes and library jumps close th
   useGame.getState().requestJump({ x: 1, z: 2, yaw: 0 });
   assert.equal(useGame.getState().libraryOpen, false);
 });
+
+test("leaving the ring puts the lantern trail away; a grove jump keeps it", () => {
+  const { useGame } = require(`${process.env.FOREST_TEST_BUILD}/store.js`);
+  const st = () => useGame.getState();
+  st().toggleCircuit();
+  st().selectGrove("horror");
+  st().toggleCircuit(); // End tour
+  assert.equal(st().selectedGrove, null);
+  st().toggleCircuit();
+  st().selectGrove("drama");
+  st().setTravelMode("free"); // steered off the ring
+  assert.equal(st().selectedGrove, null);
+  st().selectGrove("letters");
+  st().requestJump({ x: 0, z: 0, yaw: 0 }); // atlas jump: trail should lead there
+  assert.equal(st().selectedGrove, "letters");
+});

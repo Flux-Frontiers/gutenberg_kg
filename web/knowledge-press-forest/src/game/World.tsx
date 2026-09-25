@@ -21,7 +21,7 @@ export function World({ forest, season }: { forest: Forest; season: SeasonName }
     [day, pal.sky],
   );
   const fogColor = day ? DAY_OVERRIDE.fog : pal.fog;
-  const fogDensity = (season === "winter" ? 0.011 : 0.015) * (day ? DAY_OVERRIDE.fogDensityScale : 1);
+  const fogDensity = (season === "winter" ? 0.0077 : 0.0105) * (day ? DAY_OVERRIDE.fogDensityScale : 1);
   const ambientColor = day ? DAY_OVERRIDE.ambient : pal.ambient;
   const hemiIntensity = 0.78 * (day ? DAY_OVERRIDE.hemiIntensity : 1);
   const detail = useGame((s) => s.preferences.detail);

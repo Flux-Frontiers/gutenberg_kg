@@ -108,15 +108,22 @@ export function Player({ forest, playing }: { forest: Forest; playing: boolean }
     }
 
     const f = forwardOf(sim.yaw);
-    const follow = preferences.camera === "high" ? 12 : 8.4;
-    const height = preferences.camera === "high" ? 10 : 4.5;
-    camPos.set(sim.x - f.x * follow, sim.y + height, sim.z - f.z * follow);
-    const k = 1 - Math.exp(-3.4 * dt);
-    state.camera.position.lerp(camPos, k);
-    lookAt.set(sim.x + f.x * 2.6, sim.y + 1.4, sim.z + f.z * 2.6);
+    const inCart = preferences.camera === "cart";
+    if (inCart) {
+      // Turtle's-eye: on the back seat, low, looking over the lantern. Rigid, no chase lag.
+      camPos.set(sim.x - f.x * 0.45, sim.y + 1.3, sim.z - f.z * 0.45);
+      state.camera.position.copy(camPos);
+      lookAt.set(sim.x + f.x * 10, sim.y + 1.15, sim.z + f.z * 10);
+    } else {
+      const follow = preferences.camera === "high" ? 12 : 8.4;
+      const height = preferences.camera === "high" ? 10 : 4.5;
+      camPos.set(sim.x - f.x * follow, sim.y + height, sim.z - f.z * follow);
+      state.camera.position.lerp(camPos, 1 - Math.exp(-3.4 * dt));
+      lookAt.set(sim.x + f.x * 2.6, sim.y + 1.4, sim.z + f.z * 2.6);
+    }
     state.camera.lookAt(lookAt);
     const cam = state.camera as PerspectiveCamera;
-    const fovTarget = 58;
+    const fovTarget = inCart ? 72 : 58;
     cam.fov = MathUtils.lerp(cam.fov, fovTarget, 1 - Math.exp(-4 * dt));
     cam.updateProjectionMatrix();
 
@@ -147,6 +154,8 @@ export function Player({ forest, playing }: { forest: Forest; playing: boolean }
           lastMarked.current = grove.genre;
           markGrove(grove.genre);
         }
+        // Arrived at the grove the trail was leading to: put the lantern trail away.
+        if (game.travelMode === "free" && game.selectedGrove === grove.genre) game.selectGrove(null);
       }
     }
 

@@ -220,11 +220,14 @@ export const useGame = create<GameStore>((set, get) => ({
   selectGrove: (selectedGrove) => set({ selectedGrove }),
   toggleAtlas: () => set({ atlasOpen: !get().atlasOpen, libraryOpen: false }),
   setAtlasOpen: (atlasOpen) => set({ atlasOpen }),
-  setTravelMode: (travelMode) => set({ travelMode }),
+  // Leaving the ring drops the grove it was pointing at, so the lantern trail goes with it.
+  setTravelMode: (travelMode) =>
+    set(travelMode === "free" && get().travelMode === "circuit" ? { travelMode, selectedGrove: null } : { travelMode }),
   toggleCircuit: () => {
     const next = get().travelMode === "circuit" ? "free" : "circuit";
     set({
       travelMode: next,
+      ...(next === "free" ? { selectedGrove: null } : {}),
       toast: next === "circuit" ? "Riding the ring · steer to hop off" : "Free drive",
     });
   },

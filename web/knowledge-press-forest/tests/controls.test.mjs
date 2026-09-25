@@ -89,6 +89,7 @@ test("old or malformed preferences have usable defaults and bounded sensitivity"
   assert.equal(readPreferences({ sensitivity: NaN }).sensitivity, 1);
   assert.equal(readPreferences({ sensitivity: 100 }).sensitivity, 1.5);
   assert.equal(readPreferences({ pace: "unknown", camera: "unknown" }).camera, "follow");
+  assert.equal(readPreferences({ camera: "cart" }).camera, "cart");
   assert.equal(readPreferences({ motion: false }).motion, false);
 });
 

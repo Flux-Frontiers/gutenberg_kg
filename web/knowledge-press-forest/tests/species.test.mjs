@@ -32,3 +32,19 @@ test("each tree's bark lands in its species' mesh", () => {
     assert.equal(forest.leaves.species[i], forest.trees[forest.leaves.treeIndex[i]].species);
   }
 });
+
+test("leaf outlines are closed, mirror-symmetric and have real area", () => {
+  const { SPECIES, leafOutline } = require(`${process.env.FOREST_TEST_BUILD}/species.js`);
+  const area = (pts) => Math.abs(pts.reduce((a, [x, y], i) => { const [u, v] = pts[(i + 1) % pts.length]; return a + x * v - u * y; }, 0)) / 2;
+  const areas = {};
+  for (const s of SPECIES) {
+    const pts = leafOutline(s.leaf);
+    assert.ok(pts.length >= 8, `${s.name}: ${pts.length} points`);
+    assert.ok(pts.every(([x, y]) => Math.abs(x) <= 2 && Math.abs(y) <= 1.05), `${s.name}: outline out of bounds`);
+    const maxX = Math.max(...pts.map((p) => p[0])), minX = Math.min(...pts.map((p) => p[0]));
+    assert.ok(Math.abs(maxX + minX) < 1e-6, `${s.name}: not symmetric`);
+    areas[s.name] = area(pts);
+  }
+  // The single-needle fir leaf was ~0.2 of a chestnut leaf; a spray should hold its own.
+  assert.ok(areas.fir > 0.5 * areas.chestnut, `fir ${areas.fir} vs chestnut ${areas.chestnut}`);
+});

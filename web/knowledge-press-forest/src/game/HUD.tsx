@@ -113,7 +113,8 @@ export function HUD({ forest }: { forest: Forest }) {
         </div>
       </header>
 
-      <div className="pointer-events-auto mx-auto w-[min(100%-1.5rem,28rem)]">
+      {/* Bottom-right, results opening upward; touch layouts move it above the controls (styles.css). */}
+      <div className="search-dock pointer-events-auto z-20 mx-auto flex w-[min(100%-1.5rem,28rem)] flex-col gap-1 sm:absolute sm:right-3 sm:bottom-6 sm:mx-0 sm:w-[22rem] sm:flex-col-reverse">
         <label className="flex items-center gap-2 rounded-md border border-border bg-surface/90 px-3 py-2">
           <Search className="size-4 shrink-0 text-muted" strokeWidth={1.75} />
           <input
@@ -128,13 +129,13 @@ export function HUD({ forest }: { forest: Forest }) {
           />
         </label>
         {query.trim() ? (
-          <p className="mt-1 px-1 text-xs text-muted">
+          <p className="px-1 text-xs text-muted sm:rounded-sm sm:bg-surface/80 sm:py-0.5">
             {matches} tree{matches === 1 ? "" : "s"} answering
             {picked ? ` · lantern points to ${picked.book.title}` : selected ? "" : " · lantern points to the nearest"}
           </p>
         ) : null}
         {query.trim() && matches && !picked ? (
-          <ul className="mt-1 max-h-[40vh] overflow-auto rounded-md border border-border bg-surface/95 sm:max-h-72">
+          <ul className="max-h-[40vh] overflow-auto rounded-md border border-border bg-surface/95 sm:max-h-72">
             {results.slice(0, 30).map((t) => (
               <li key={t.book.slug}>
                 <button type="button" onClick={() => jumpToTree(t)}
@@ -174,7 +175,7 @@ export function HUD({ forest }: { forest: Forest }) {
         )}
       </div>
 
-      <div className="pointer-events-auto absolute bottom-24 left-3 right-3 mx-auto max-w-lg sm:bottom-6 sm:left-4 sm:right-auto">
+      <div className="book-dock pointer-events-auto absolute bottom-24 left-3 right-3 mx-auto max-w-lg sm:bottom-6 sm:left-4 sm:right-auto">
         {showBook && nearby ? (
           <article className="relative rounded-lg border border-border bg-surface/94 p-3 pr-12 sm:p-4 sm:pr-14">
             <button
@@ -215,7 +216,7 @@ export function HUD({ forest }: { forest: Forest }) {
         ) : null}
       </div>
 
-      <div className="pointer-events-auto absolute right-3 bottom-24 hidden flex-col gap-1 sm:flex">
+      <div className="season-dock pointer-events-auto absolute right-3 bottom-24 hidden flex-col gap-1 sm:flex">
         <button
           type="button"
           onClick={() => { toggleCircuit(); (document.activeElement as HTMLElement | null)?.blur(); }}
