@@ -1,22 +1,48 @@
 import { useEffect, useLayoutEffect, useMemo, useRef } from "react";
 import { useFrame } from "@react-three/fiber";
-import { Color, DoubleSide, InstancedMesh, MeshDepthMaterial, MeshStandardMaterial, Object3D, RGBADepthPacking, Shape, ShapeGeometry } from "three";
+import { BufferAttribute, BufferGeometry, Color, DoubleSide, InstancedMesh, MeshDepthMaterial, MeshStandardMaterial, Object3D, RepeatWrapping, RGBADepthPacking, Shape, ShapeGeometry, SRGBColorSpace, TextureLoader } from "three";
 import { useGame } from "./store";
 import type { Forest } from "./forest";
 import { bookMatchesQuery } from "./forest";
 import { SEASONS, type SeasonName } from "./seasons";
+import { SPECIES, type Species } from "./species";
 
 const dummy = new Object3D();
 const color = new Color();
+const white = new Color("#ffffff");
 
-function ovateLeafGeometry() {
-  const s = new Shape();
-  s.moveTo(0, 1);
-  s.bezierCurveTo(0.62, 0.58, 0.48, -0.12, 0.1, -0.82);
-  s.lineTo(0, -1);
-  s.lineTo(-0.1, -0.82);
-  s.bezierCurveTo(-0.48, -0.12, -0.62, 0.58, 0, 1);
-  const g = new ShapeGeometry(s, 7);
+// CC0 bark from ambientCG; see public/textures/bark/CREDITS.md.
+function barkMaterial(species: Species) {
+  const loader = new TextureLoader();
+  const load = (map: string, srgb = false) => {
+    const tex = loader.load(`textures/bark/${species.name}_${map}.jpg`);
+    tex.wrapS = tex.wrapT = RepeatWrapping;
+    tex.anisotropy = 8;
+    if (srgb) tex.colorSpace = SRGBColorSpace;
+    return tex;
+  };
+  return new MeshStandardMaterial({
+    map: load("color", true),
+    normalMap: load("normal"),
+    roughness: 0.92,
+    vertexColors: true,
+    metalness: 0,
+  });
+}
+
+/** The ovate outline, widened or narrowed per species and pushed into lobes. */
+function leafGeometry({ width, lobes, depth }: Species["leaf"]) {
+  const ovate = new Shape();
+  ovate.moveTo(0, 1);
+  ovate.bezierCurveTo(0.62, 0.58, 0.48, -0.12, 0.1, -0.82);
+  ovate.lineTo(0, -1);
+  ovate.lineTo(-0.1, -0.82);
+  ovate.bezierCurveTo(-0.48, -0.12, -0.62, 0.58, 0, 1);
+  const pts = ovate.getPoints(lobes ? 24 : 7).map((pt) => {
+    const m = lobes ? 1 + depth * Math.cos(lobes * Math.atan2(pt.x, pt.y)) : 1;
+    return pt.set((pt.x * width * m) / 0.36, pt.y * m);
+  });
+  const g = new ShapeGeometry(new Shape(pts));
   g.computeVertexNormals();
   return g;
 }
@@ -37,8 +63,6 @@ export function Trees({
   season: SeasonName;
   query: string;
 }) {
-  const woodRef = useRef<InstancedMesh>(null);
-  const leafRef = useRef<InstancedMesh>(null);
   const ringRef = useRef<InstancedMesh>(null);
   const palette = SEASONS[season];
   const q = query.trim();
@@ -64,6 +88,35 @@ export function Trees({
     return { leaf, depth };
   }, [wind, windStrength]);
   useEffect(() => () => { materials.leaf.dispose(); materials.depth.dispose(); }, [materials]);
+
+  const bark = useMemo(() => forest.bark.map((b) => {
+    const g = new BufferGeometry();
+    g.setAttribute("position", new BufferAttribute(b.pos, 3));
+    g.setAttribute("normal", new BufferAttribute(b.normal, 3));
+    g.setAttribute("uv", new BufferAttribute(b.uv, 2));
+    g.setAttribute("color", new BufferAttribute(new Float32Array(b.count * 3), 3));
+    g.setIndex(new BufferAttribute(b.index, 1));
+    g.computeBoundingSphere();
+    return g;
+  }), [forest]);
+  const barkMats = useMemo(() => SPECIES.map(barkMaterial), []);
+  const leafGeoms = useMemo(() => SPECIES.map((s) => leafGeometry(s.leaf)), []);
+  // Leaf indices per species, one instanced mesh each.
+  const leafSets = useMemo(() => SPECIES.map((_, si) => {
+    const out: number[] = [];
+    for (let i = 0; i < forest.leaves.count; i++) if (forest.leaves.species[i] === si) out.push(i);
+    return out;
+  }), [forest]);
+  const leafRefs = useRef<(InstancedMesh | null)[]>([]);
+  useEffect(() => () => bark.forEach((g) => g.dispose()), [bark]);
+  useEffect(() => () => leafGeoms.forEach((g) => g.dispose()), [leafGeoms]);
+  useEffect(() => () => {
+    for (const m of barkMats) {
+      m.map?.dispose();
+      m.normalMap?.dispose();
+      m.dispose();
+    }
+  }, [barkMats]);
   useFrame((_, delta) => {
     const s = useGame.getState();
     windStrength.value = s.preferences.motion ? 1 : 0;
@@ -80,61 +133,50 @@ export function Trees({
   }, [forest, q]);
 
   useLayoutEffect(() => {
-    const mesh = woodRef.current;
-    if (!mesh) return;
-    const { pos, quat, scale, count } = forest.wood;
-    const woodCol = new Color(palette.wood);
-    let wi = 0;
-    for (let t = 0; t < forest.trees.length; t++) {
-      const tree = forest.trees[t]!;
-      const dim = match && !match.has(t);
-      for (let k = 0; k < tree.woodCount; k++) {
-        const i = tree.woodStart + k;
-        dummy.position.set(pos[i * 3]!, pos[i * 3 + 1]!, pos[i * 3 + 2]!);
-        dummy.quaternion.set(quat[i * 4]!, quat[i * 4 + 1]!, quat[i * 4 + 2]!, quat[i * 4 + 3]!);
-        dummy.scale.set(scale[i * 3]!, scale[i * 3 + 1]!, scale[i * 3 + 2]!);
-        dummy.updateMatrix();
-        mesh.setMatrixAt(i, dummy.matrix);
-        color.copy(woodCol);
-        if (dim) color.multiplyScalar(0.45);
-        mesh.setColorAt(i, color);
-        wi++;
-      }
+    // The season's wood colour tints the photo bark rather than replacing it.
+    const colors = bark.map((g) => g.getAttribute("color") as BufferAttribute);
+    const tint = new Color(palette.wood).lerp(white, 0.55);
+    for (let ti = 0; ti < forest.trees.length; ti++) {
+      const tree = forest.trees[ti]!;
+      const attr = colors[tree.species]!;
+      color.copy(tint);
+      if (match && !match.has(ti)) color.multiplyScalar(0.45);
+      for (let k = 0; k < tree.woodCount; k++) attr.setXYZ(tree.woodStart + k, color.r, color.g, color.b);
     }
-    void wi;
-    mesh.instanceMatrix.needsUpdate = true;
-    if (mesh.instanceColor) mesh.instanceColor.needsUpdate = true;
-    mesh.count = count;
-  }, [forest, palette.wood, match]);
+    for (const attr of colors) attr.needsUpdate = true;
+  }, [forest, bark, palette.wood, match]);
 
   useLayoutEffect(() => {
-    const mesh = leafRef.current;
-    if (!mesh) return;
-    const { pos, scale, tint, treeIndex, count } = forest.leaves;
-    const foliage = palette.foliage;
-    for (let i = 0; i < count; i++) {
-      const treeI = treeIndex[i]!;
-      const dim = match && !match.has(treeI);
-      const visible = keepLeaf(i, palette.density) && !dim;
-      dummy.position.set(pos[i * 3]!, pos[i * 3 + 1]!, pos[i * 3 + 2]!);
-      const s = visible ? 1 : match && dim ? 0.15 : 0;
-      dummy.scale.set(scale[i * 3]! * s, scale[i * 3 + 1]! * s, scale[i * 3 + 2]! * s);
-      dummy.rotation.set(
-        ((i * 1.7) % 1.1) - 0.45,
-        (i * 2.399) % 6.2832,
-        0.55 + ((i * 0.31) % 0.7),
-      );
-      dummy.updateMatrix();
-      mesh.setMatrixAt(i, dummy.matrix);
-      const hex = foliage[tint[i]! % foliage.length]!;
-      color.set(hex);
-      if (match && match.has(treeI)) color.offsetHSL(0, 0.05, 0.08);
-      mesh.setColorAt(i, color);
-    }
-    mesh.instanceMatrix.needsUpdate = true;
-    if (mesh.instanceColor) mesh.instanceColor.needsUpdate = true;
-    mesh.count = count;
-  }, [forest, palette, match]);
+    const { pos, scale, tint, treeIndex } = forest.leaves;
+    leafSets.forEach((set, si) => {
+      const mesh = leafRefs.current[si];
+      if (!mesh) return;
+      const [dh, ds, dl] = SPECIES[si]!.foliageShift;
+      const foliage = palette.foliage.map((hex) => new Color(hex).offsetHSL(dh, ds, dl));
+      for (let n = 0; n < set.length; n++) {
+        const i = set[n]!;
+        const treeI = treeIndex[i]!;
+        const dim = match && !match.has(treeI);
+        const visible = keepLeaf(i, palette.density) && !dim;
+        dummy.position.set(pos[i * 3]!, pos[i * 3 + 1]!, pos[i * 3 + 2]!);
+        const s = visible ? 1 : match && dim ? 0.15 : 0;
+        dummy.scale.set(scale[i * 3]! * s, scale[i * 3 + 1]! * s, scale[i * 3 + 2]! * s);
+        dummy.rotation.set(
+          ((i * 1.7) % 1.1) - 0.45,
+          (i * 2.399) % 6.2832,
+          0.55 + ((i * 0.31) % 0.7),
+        );
+        dummy.updateMatrix();
+        mesh.setMatrixAt(n, dummy.matrix);
+        color.copy(foliage[tint[i]! % foliage.length]!);
+        if (match && match.has(treeI)) color.offsetHSL(0, 0.05, 0.08);
+        mesh.setColorAt(n, color);
+      }
+      mesh.instanceMatrix.needsUpdate = true;
+      if (mesh.instanceColor) mesh.instanceColor.needsUpdate = true;
+      mesh.count = set.length;
+    });
+  }, [forest, leafSets, palette, match]);
 
   useLayoutEffect(() => {
     const mesh = ringRef.current;
@@ -153,15 +195,16 @@ export function Trees({
     if (mesh.instanceColor) mesh.instanceColor.needsUpdate = true;
   }, [forest, match]);
 
-  const leafGeom = useMemo(() => ovateLeafGeometry(), []);
-
   return (
     <group>
-      <instancedMesh ref={woodRef} args={[undefined, undefined, forest.wood.count]} frustumCulled={false} castShadow receiveShadow>
-        <cylinderGeometry args={[1, 1, 1, 8]} />
-        <meshStandardMaterial roughness={0.9} metalness={0.02} />
-      </instancedMesh>
-      <instancedMesh ref={leafRef} args={[leafGeom, materials.leaf, forest.leaves.count]} customDepthMaterial={materials.depth} frustumCulled={false} castShadow receiveShadow />
+      {bark.map((g, si) => (
+        <mesh key={`bark-${si}`} geometry={g} material={barkMats[si]} frustumCulled={false} castShadow receiveShadow />
+      ))}
+      {leafSets.map((set, si) => (
+        <instancedMesh key={`leaves-${si}`} ref={(m) => { leafRefs.current[si] = m; }}
+          args={[leafGeoms[si], materials.leaf, Math.max(1, set.length)]} customDepthMaterial={materials.depth}
+          frustumCulled={false} castShadow receiveShadow />
+      ))}
       <instancedMesh ref={ringRef} args={[undefined, undefined, forest.trees.length]} frustumCulled={false}>
         <ringGeometry args={[0.72, 1, 20]} />
         <meshBasicMaterial transparent opacity={0.85} />

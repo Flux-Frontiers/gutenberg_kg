@@ -1,6 +1,7 @@
 import { BOOKS, type Book } from "./catalog";
-import { GROW_VERSION, emitLeaves, emitWood, growTree } from "./growTree";
+import { GROW_VERSION, emitBark, emitLeaves, growTree, type BarkBuffers } from "./growTree";
 import { fibonacciAnnulus } from "./math";
+import { SPECIES, speciesFor } from "./species";
 
 export const GENRE_PALETTE = [
   "#c45c4a",
@@ -32,6 +33,9 @@ export type TreeSite = {
   height: number;
   trunkRadius: number;
   color: string;
+  /** Index into SPECIES. */
+  species: number;
+  /** Vertex range of this tree in forest.bark[species]. */
   woodStart: number;
   woodCount: number;
   leafStart: number;
@@ -59,18 +63,21 @@ export type Forest = {
   groves: Grove[];
   roads: RoadSeg[];
   circuit: Waypoint[];
-  wood: {
+  /** One merged bark mesh per species, indexed like SPECIES. */
+  bark: {
     count: number;
     pos: Float32Array;
-    quat: Float32Array;
-    scale: Float32Array;
-  };
+    normal: Float32Array;
+    uv: Float32Array;
+    index: Uint32Array;
+  }[];
   leaves: {
     count: number;
     pos: Float32Array;
     scale: Float32Array;
     tint: Uint8Array;
     treeIndex: Uint16Array;
+    species: Uint8Array;
   };
   spawn: { x: number; z: number; yaw: number };
   worldRadius: number;
@@ -123,9 +130,8 @@ function buildForest(): Forest {
 
   const groves: Grove[] = [];
   const trees: TreeSite[] = [];
-  const woodPos: number[] = [];
-  const woodQuat: number[] = [];
-  const woodScale: number[] = [];
+  const bark: BarkBuffers[] = SPECIES.map(() => ({ pos: [], normal: [], uv: [], index: [] }));
+  const leafSpecies: number[] = [];
   const leafPos: number[] = [];
   const leafScale: number[] = [];
   const leafTint: number[] = [];
@@ -153,12 +159,16 @@ function buildForest(): Forest {
       const x = c.x + s.x;
       const z = c.z + s.z;
       const grown = growTree({ slug: book.slug, genre: book.genre, nChunks: book.chunks });
-      const woodStart = woodPos.length / 3;
-      const woodCount = emitWood(grown, x, z, woodPos, woodQuat, woodScale);
+      const species = speciesFor(book.genre);
+      const woodStart = bark[species]!.pos.length / 3;
+      const woodCount = emitBark(grown, x, z, bark[species]!, SPECIES[species]!.barkAspect);
       const leafStart = leafPos.length / 3;
       const leafCount = emitLeaves(grown, x, z, leafPos, leafScale, leafTint, 0.42);
       const treeIndex = trees.length;
-      for (let k = 0; k < leafCount; k++) leafTree.push(treeIndex);
+      for (let k = 0; k < leafCount; k++) {
+        leafTree.push(treeIndex);
+        leafSpecies.push(species);
+      }
       trees.push({
         book,
         x,
@@ -166,6 +176,7 @@ function buildForest(): Forest {
         height: grown.trunkHeight,
         trunkRadius: Math.max(0.28, grown.trunkRadius),
         color,
+        species,
         woodStart,
         woodCount,
         leafStart,
@@ -231,18 +242,20 @@ function buildForest(): Forest {
     groves,
     roads,
     circuit,
-    wood: {
-      count: woodPos.length / 3,
-      pos: new Float32Array(woodPos),
-      quat: new Float32Array(woodQuat),
-      scale: new Float32Array(woodScale),
-    },
+    bark: bark.map((b) => ({
+      count: b.pos.length / 3,
+      pos: new Float32Array(b.pos),
+      normal: new Float32Array(b.normal),
+      uv: new Float32Array(b.uv),
+      index: new Uint32Array(b.index),
+    })),
     leaves: {
       count: leafPos.length / 3,
       pos: new Float32Array(leafPos),
       scale: new Float32Array(leafScale),
       tint: Uint8Array.from(leafTint),
       treeIndex: Uint16Array.from(leafTree),
+      species: Uint8Array.from(leafSpecies),
     },
     spawn: { x: spawnX, z: spawnZ, yaw: spawnYaw },
     worldRadius: worldRadius + 18,
