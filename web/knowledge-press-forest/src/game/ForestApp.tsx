@@ -83,7 +83,8 @@ export function ForestApp() {
       if (!st.playing) return;
       if (e.code === "Escape") {
         if (st.paused) return; // The settings dialog handles Escape itself.
-        if (st.atlasOpen) st.setAtlasOpen(false);
+        if (st.catalogOpen) st.setCatalogOpen(false);
+        else if (st.atlasOpen) st.setAtlasOpen(false);
         else if (st.libraryOpen) st.toggleLibrary();
         else st.pause(true);
         return;
@@ -91,6 +92,7 @@ export function ForestApp() {
       if (st.paused || isInputTarget(e.target)) return;
       if (e.code === "KeyL") st.toggleLibrary();
       if (e.code === "KeyG") st.toggleAtlas();
+      if (e.code === "KeyB") st.toggleCatalog();
       if (e.code === "KeyQ") st.toggleCircuit();
       if (e.code === "KeyC") {
         const next = { follow: "high", high: "cart", cart: "follow" } as const;
@@ -98,7 +100,7 @@ export function ForestApp() {
       }
       if (e.code === "KeyH" && forest) {
         st.selectGrove(null);
-        st.requestJump(forest.home, "Home · the sculpture");
+        st.requestJump(forest.home, "Home · the corpus redwood");
       }
     }
     window.addEventListener("keydown", onKey);

@@ -89,6 +89,18 @@ export function setInjectedSteer(v: number | null) {
   injectedSteer = v;
 }
 
+/**
+ * On-screen stick position (x right, y down, each -1..1) to throttle and steer.
+ * A mostly sideways push is a pure turn: throttle only counts once it is at
+ * least 40% of the sideways push, so a thumb a little low on "right" does not
+ * creep the cart backward.
+ */
+export function stickAxes(x: number, y: number): { throttle: number; steer: number } {
+  const dead = (v: number) => (Math.abs(v) < 0.12 ? 0 : v);
+  const throttle = Math.abs(y) < 0.4 * Math.abs(x) ? 0 : dead(-y);
+  return { throttle, steer: dead(-x) };
+}
+
 export function setTouchAxes(throttle: number, steer: number) {
   touchThrottle = throttle;
   touchSteer = steer;

@@ -1,6 +1,8 @@
-import { BookMarked, Compass, House, Map, MapPin, Moon, Settings2, Search, Sun, X } from "lucide-react";
-import { useMemo } from "react";
-import { groveApproach, searchTrees, treeApproach, type Forest, type Grove, type TreeSite } from "./forest";
+import { Bell, BellOff, BookMarked, Compass, House, Library, Map, MapPin, Moon, Settings2, Search, Sun, X } from "lucide-react";
+import { useEffect, useMemo, useState } from "react";
+import { COARSE_POINTER } from "./Environment";
+import { exhibitApproach, type Exhibit } from "./exhibits";
+import { bookMatchesQuery, groveApproach, searchTrees, treeApproach, type Forest, type Grove, type TreeSite } from "./forest";
 import { QUESTS, questProgress } from "./quests";
 import { SEASON_ORDER, SEASONS } from "./seasons";
 import { wrapAngle, yawToward } from "./sim";
@@ -37,9 +39,20 @@ export function HUD({ forest }: { forest: Forest }) {
   const selectedGrove = useGame((s) => s.selectedGrove);
   const travelMode = useGame((s) => s.travelMode);
   const toggleCircuit = useGame((s) => s.toggleCircuit);
+  const catalogOpen = useGame((s) => s.catalogOpen);
+  const toggleCatalog = useGame((s) => s.toggleCatalog);
+  const silent = useGame((s) => s.preferences.silent);
+  const setPreferences = useGame((s) => s.setPreferences);
 
-  const nearby = nearbySlug ? forest.trees.find((t) => t.book.slug === nearbySlug) : undefined;
+  // Silent mode keeps every card from popping up on its own.
+  const nearby = nearbySlug && !silent ? forest.trees.find((t) => t.book.slug === nearbySlug) : undefined;
   const showBook = Boolean(nearby && nearby.book.slug !== nearbyDismissed);
+  // The redwood's card shows on the hub plaza; once closed it stays closed until the cart leaves.
+  const hubDist = Math.hypot(x, z);
+  const [redwoodClosed, setRedwoodClosed] = useState(false);
+  const leftHub = hubDist > 20;
+  useEffect(() => { if (leftHub) setRedwoodClosed(false); }, [leftHub]);
+  const atRedwood = !silent && hubDist < 16 && !redwoodClosed;
   const progress = questProgress({ library, grovesVisited, season });
   const nextQuest = QUESTS.find((q) => !q.done({ library, grovesVisited, season }));
   const selected = forest.groves.find((g) => g.genre === selectedGrove);
@@ -90,9 +103,18 @@ export function HUD({ forest }: { forest: Forest }) {
           </button>
           <button
             type="button"
+            onClick={() => setPreferences({ silent: !silent })}
+            className="grid size-11 place-items-center rounded-md border border-border bg-surface"
+            aria-label={silent ? "Silent mode on: turn pop-up cards back on" : "Turn on silent mode: no pop-up cards"}
+            title={silent ? "Silent · tap for pop-up cards" : "Pop-up cards · tap for silent"}
+          >
+            {silent ? <BellOff className="size-4" strokeWidth={1.75} /> : <Bell className="size-4" strokeWidth={1.75} />}
+          </button>
+          <button
+            type="button"
             onClick={() => { jumpHome(forest); (document.activeElement as HTMLElement | null)?.blur(); }}
             className="grid size-11 place-items-center rounded-md border border-border bg-surface"
-            aria-label="Home: back to the sculpture" title="Home · H"
+            aria-label="Home: back to the corpus redwood" title="Home · H"
           >
             <House className="size-4" strokeWidth={1.75} />
           </button>
@@ -107,6 +129,18 @@ export function HUD({ forest }: { forest: Forest }) {
           >
             <Map className="size-4" strokeWidth={1.75} />
             <span className="hidden sm:inline">Groves</span>
+          </button>
+          <button
+            type="button"
+            onClick={toggleCatalog}
+            className={
+              "inline-flex min-h-11 items-center gap-2 rounded-md border px-3 text-sm " +
+              (catalogOpen ? "border-primary bg-primary text-primary-fg" : "border-border bg-surface")
+            }
+            aria-label="Browse every book" title="Every book · B"
+          >
+            <Library className="size-4" strokeWidth={1.75} />
+            <span className="hidden sm:inline">Books</span>
           </button>
           <button
             type="button"
@@ -141,6 +175,12 @@ export function HUD({ forest }: { forest: Forest }) {
             placeholder="Query the forest — freedom, fire, stoic…"
             className="min-h-7 w-full bg-transparent text-sm text-fg outline-none placeholder:text-faint"
           />
+          {query ? (
+            <button type="button" onClick={() => setQuery("")} aria-label="Clear the query and the lantern trail"
+              className="-my-2 -mr-2 grid size-9 shrink-0 place-items-center rounded-md text-muted">
+              <X className="size-4" strokeWidth={1.75} />
+            </button>
+          ) : null}
         </label>
         {query.trim() ? (
           <p className="px-1 text-xs text-muted sm:rounded-sm sm:bg-surface/80 sm:py-0.5">
@@ -185,12 +225,35 @@ export function HUD({ forest }: { forest: Forest }) {
             />
           </p>
         ) : (
-          <p className="mt-1 text-xs text-faint">Tap a grove to jump</p>
+          <p className="mt-1 text-xs text-faint">Tap a grove for its books</p>
         )}
       </div>
 
       <div className="book-dock pointer-events-auto absolute bottom-24 left-3 right-3 mx-auto max-w-lg sm:bottom-6 sm:left-4 sm:right-auto sm:max-w-[min(32rem,calc(50%-12rem))]">
-        {showBook && nearby ? (
+        {atRedwood ? (
+          <article className="relative rounded-lg border border-border bg-surface/94 p-3 pr-12 sm:p-4 sm:pr-14">
+            <button
+              type="button"
+              onClick={() => setRedwoodClosed(true)}
+              className="absolute top-1.5 right-1.5 grid size-11 place-items-center rounded-md text-muted"
+              aria-label="Dismiss"
+            >
+              <X className="size-5" strokeWidth={1.75} />
+            </button>
+            <p className="text-xs tracking-wide text-muted uppercase">The hub</p>
+            <h2 className="font-display mt-0.5 text-xl leading-tight sm:text-2xl">The Corpus Redwood</h2>
+            <p className="text-sm text-muted tabular-nums">
+              {forest.corpusTree.limbs} books · {forest.corpusTree.totalChunks.toLocaleString("en-US")} chunks · {Math.round(forest.corpusTree.height)} m
+            </p>
+            <p className="mt-2 hidden text-sm leading-relaxed text-fg/90 sm:block">
+              One limb per book, each reaching toward its own tree. Browse them all and jump to any one.
+            </p>
+            <button type="button" onClick={toggleCatalog}
+              className="mt-3 min-h-11 rounded-md bg-primary px-4 text-sm text-primary-fg">
+              Browse every book · B
+            </button>
+          </article>
+        ) : showBook && nearby ? (
           <article className="relative rounded-lg border border-border bg-surface/94 p-3 pr-12 sm:p-4 sm:pr-14">
             <button
               type="button"
@@ -213,7 +276,7 @@ export function HUD({ forest }: { forest: Forest }) {
               {nearbyDist < 6.8 ? "Read into the press · E" : `Move closer · ${Math.ceil(nearbyDist)} m`}
             </button>
           </article>
-        ) : nextQuest && nextQuest.id !== questHintHidden ? (
+        ) : !silent && nextQuest && nextQuest.id !== questHintHidden ? (
           <div className="relative flex items-start gap-2 rounded-md border border-border bg-surface/80 px-3 py-2 pr-12 text-sm text-muted">
             <p className="min-w-0 flex-1">
               <span className="text-fg">{nextQuest.title}.</span> {nextQuest.hint}
@@ -257,7 +320,7 @@ export function HUD({ forest }: { forest: Forest }) {
       </div>
 
       <p className="absolute bottom-3 left-1/2 hidden -translate-x-1/2 text-xs text-faint sm:block">
-        WASD drive · Up/Down look · Space brake · E read · C camera · Esc settings
+        WASD drive · Up/Down look · Space brake · E read · B books · C camera · Esc settings
       </p>
 
       {toast ? (
@@ -268,6 +331,7 @@ export function HUD({ forest }: { forest: Forest }) {
 
       {libraryOpen ? <LibraryPanel forest={forest} /> : null}
       {atlasOpen ? <AtlasPanel forest={forest} /> : null}
+      {catalogOpen ? <CatalogPanel forest={forest} /> : null}
     </div>
   );
 }
@@ -288,7 +352,12 @@ function jumpToTree(t: TreeSite) {
 
 function jumpHome(forest: Forest) {
   useGame.getState().selectGrove(null);
-  useGame.getState().requestJump(forest.home, "Home · the sculpture");
+  useGame.getState().requestJump(forest.home, "Home · the corpus redwood");
+}
+
+function jumpToExhibit(e: Exhibit) {
+  useGame.getState().selectGrove(null);
+  useGame.getState().requestJump(exhibitApproach(e), e.label);
 }
 
 function Minimap({ forest, x, z, yaw, pins, picked }: {
@@ -309,9 +378,18 @@ function Minimap({ forest, x, z, yaw, pins, picked }: {
         type="button"
         className="absolute size-2 rounded-full bg-fg/70"
         style={{ left: "50%", top: "50%", transform: "translate(-50%, -50%)" }}
-        aria-label="Home: back to the sculpture"
+        aria-label="Home: back to the corpus redwood"
         onClick={() => jumpHome(forest)}
       />
+      {forest.exhibits.map((e) => {
+        const c = to(e.x, e.z);
+        return (
+          <button key={e.id} type="button" onClick={() => jumpToExhibit(e)}
+            className="absolute size-2 border border-bg bg-[#c9a24a]"
+            style={{ left: c.left, top: c.top, transform: "translate(-50%, -50%) rotate(45deg)", zIndex: 1 }}
+            title={`Jump to ${e.label}`} aria-label={`Jump to ${e.label}`} />
+        );
+      })}
       {forest.groves.map((g) => {
         const c = to(g.x, g.z);
         const size = Math.max(10, (g.radius / r) * 80);
@@ -331,9 +409,9 @@ function Minimap({ forest, x, z, yaw, pins, picked }: {
               transform: "translate(-50%, -50%)",
               boxShadow: on ? `0 0 0 2px var(--color-fg)` : "none",
             }}
-            title={`Jump to ${g.label}`}
-            aria-label={`Jump to ${g.label}`}
-            onClick={() => jumpToGrove(g)}
+            title={`${g.label}: its books`}
+            aria-label={`${g.label}: list its books`}
+            onClick={() => useGame.getState().openCatalog(g.genre)}
           />
         );
       })}
@@ -415,6 +493,19 @@ function AtlasPanel({ forest }: { forest: Forest }) {
           </button>
         </div>
         <ul className="mt-3 min-h-0 flex-1 space-y-1 overflow-auto">
+          {forest.exhibits.map((e) => (
+            <li key={e.id}>
+              <button type="button" onClick={() => jumpToExhibit(e)}
+                className="flex min-h-11 w-full items-center gap-3 rounded-md px-3 text-left hover:bg-bg">
+                <span className="size-2.5 shrink-0 rotate-45 bg-[#c9a24a]" />
+                <span className="min-w-0 flex-1">
+                  <span className="block truncate font-medium leading-snug">{e.label}</span>
+                  <span className="block text-xs text-muted">Exhibit</span>
+                </span>
+                <span className="text-xs text-primary">Jump</span>
+              </button>
+            </li>
+          ))}
           {forest.groves.map((g) => {
             const visited = grovesVisited.includes(g.genre);
             const on = selectedGrove === g.genre;
@@ -500,6 +591,107 @@ function LibraryPanel({ forest }: { forest: Forest }) {
             ))
           )}
         </ul>
+      </div>
+    </div>
+  );
+}
+
+/** Every book in the corpus, grouped by grove: filter, then jump to its tree. */
+function CatalogPanel({ forest }: { forest: Forest }) {
+  const toggleCatalog = useGame((s) => s.toggleCatalog);
+  const library = useGame((s) => s.library);
+  const genre = useGame((s) => s.catalogGenre);
+  const only = genre ? forest.groves.find((g) => g.genre === genre) : undefined;
+  const [filter, setFilter] = useState("");
+  const q = filter.trim();
+  const sections = forest.groves
+    .filter((g) => !only || g === only)
+    .map((g) => ({
+      grove: g,
+      trees: forest.trees
+        .filter((t) => t.book.genre === g.genre && (!q || bookMatchesQuery(t.book, q)))
+        .sort((a, b) => a.book.title.localeCompare(b.book.title)),
+    }))
+    .filter((s) => s.trees.length);
+  const shown = sections.reduce((n, s) => n + s.trees.length, 0);
+
+  return (
+    <div
+      className="pointer-events-auto absolute inset-0 z-30 flex items-start justify-center bg-bg/45 p-3 sm:p-6"
+      onClick={toggleCatalog}
+    >
+      <div
+        className="flex max-h-[84vh] w-full max-w-xl flex-col rounded-xl border border-border bg-surface p-4"
+        onClick={(e) => e.stopPropagation()}
+      >
+        <div className="flex items-center justify-between gap-3">
+          <h2 className="font-display text-2xl">{only ? only.label : "Every book"}</h2>
+          <button
+            type="button"
+            onClick={toggleCatalog}
+            className="grid size-11 place-items-center rounded-md text-muted"
+            aria-label="Close the book list"
+          >
+            <X className="size-5" strokeWidth={1.75} />
+          </button>
+        </div>
+        {only ? (
+          <div className="mt-2 flex flex-wrap items-center gap-2">
+            <button type="button" onClick={() => jumpToGrove(only)}
+              className="min-h-11 rounded-md bg-primary px-4 text-sm text-primary-fg">
+              Go to the grove
+            </button>
+            <button type="button" onClick={() => useGame.getState().openCatalog(null)}
+              className="min-h-11 rounded-md border border-border bg-bg px-4 text-sm">
+              All {forest.trees.length} books
+            </button>
+          </div>
+        ) : (
+          <p className="mt-1 text-sm text-muted tabular-nums">
+            {q ? `${shown} of ${forest.trees.length}` : `${forest.trees.length} books`} · {forest.corpusTree.totalChunks.toLocaleString("en-US")} chunks. Pick one to jump to its tree.
+          </p>
+        )}
+        <label className="mt-3 flex items-center gap-2 rounded-md border border-border bg-bg px-3 py-2">
+          <Search className="size-4 shrink-0 text-muted" strokeWidth={1.75} />
+          <input
+            autoFocus={!COARSE_POINTER}
+            value={filter}
+            onChange={(e) => setFilter(e.target.value)}
+            onKeyDown={(e) => {
+              const first = sections[0]?.trees[0];
+              if (e.key === "Enter" && first) jumpToTree(first);
+            }}
+            placeholder="Filter by title, author, genre"
+            className="min-h-7 w-full bg-transparent text-sm text-fg outline-none placeholder:text-faint"
+          />
+        </label>
+        <div className="mt-3 min-h-0 flex-1 overflow-auto">
+          {sections.length === 0 ? <p className="px-1 text-sm text-faint">No book matches.</p> : null}
+          {sections.map(({ grove, trees }) => (
+            <section key={grove.genre} className="mb-3">
+              <h3 className="sticky top-0 flex items-center gap-2 bg-surface px-1 py-1 text-xs tracking-wide text-muted uppercase">
+                <span className="size-2.5 rounded-full" style={{ background: grove.color }} />
+                {grove.label} · {trees.length}
+              </h3>
+              <ul>
+                {trees.map((t) => (
+                  <li key={t.book.slug}>
+                    <button type="button" onClick={() => jumpToTree(t)}
+                      className="flex min-h-11 w-full items-center gap-3 rounded-md px-3 py-1.5 text-left hover:bg-bg">
+                      <span className="min-w-0 flex-1">
+                        <span className="block truncate text-sm leading-snug">{t.book.title}</span>
+                        <span className="block truncate text-xs text-muted">
+                          {t.book.author} · {t.book.chunks.toLocaleString("en-US")} chunks{library.includes(t.book.slug) ? " · in the press" : ""}
+                        </span>
+                      </span>
+                      <span className="shrink-0 text-xs text-primary">Jump</span>
+                    </button>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          ))}
+        </div>
       </div>
     </div>
   );

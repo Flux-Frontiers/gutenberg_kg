@@ -5,7 +5,7 @@ const require = createRequire(import.meta.url);
 const { sim, resetSim, teleportSim, stepVehicle, forwardOf } = require(`${process.env.FOREST_TEST_BUILD}/sim.js`);
 const input = require(`${process.env.FOREST_TEST_BUILD}/input.js`);
 const { readPreferences } = require(`${process.env.FOREST_TEST_BUILD}/preferences.js`);
-const empty = { spawn: { x: 0, z: 0, yaw: 0 }, worldRadius: 1000, trees: [], grid: new Map(), cell: 16 };
+const empty = { spawn: { x: 0, z: 0, yaw: 0 }, worldRadius: 1000, trees: [], obstacles: [], grid: new Map(), cell: 16 };
 function drive(seconds, throttle, steer = 0, options = {}, hz = 60) {
   for (let i = 0; i < seconds * hz; i++) stepVehicle(empty, throttle, steer, false, 1 / hz, options);
 }
@@ -24,6 +24,22 @@ test("forward, reverse and turn-in-place follow the chase camera convention", ()
   resetSim(empty);
   drive(1, 0, -1);
   assert.ok(forwardOf(sim.yaw).x > 0.5, "D turns right");
+  // Reversing does not flip the steering: D still turns the nose right.
+  resetSim(empty);
+  drive(1, -1, -1);
+  assert.ok(forwardOf(sim.yaw).x > 0.3, "D turns right while reversing");
+  resetSim(empty);
+  drive(1, -1, 1);
+  assert.ok(forwardOf(sim.yaw).x < -0.3, "A turns left while reversing");
+});
+
+test("a mostly sideways push on the stick turns without creeping forward or back", () => {
+  const { stickAxes } = input;
+  assert.deepEqual(stickAxes(1, 0.2), { throttle: 0, steer: -1 });
+  assert.deepEqual(stickAxes(-0.9, -0.3), { throttle: 0, steer: 0.9 });
+  assert.equal(stickAxes(0.5, 0.5).throttle, -0.5);
+  assert.equal(stickAxes(0, -1).throttle, 1);
+  assert.deepEqual(stickAxes(0.05, 0.05), { throttle: 0, steer: 0 });
 });
 
 test("brake overrides held throttle and stops without reversing", () => {
@@ -106,6 +122,8 @@ test("old or malformed preferences have usable defaults and bounded sensitivity"
   assert.equal(readPreferences({ leaves: "bogus" }).leaves, "medium");
   assert.equal(readPreferences({ leaves: "ultra" }).leaves, "ultra");
   assert.equal(readPreferences({}).stats, false);
+  assert.equal(readPreferences({}).silent, false);
+  assert.equal(readPreferences({ silent: true }).silent, true);
   assert.equal(readPreferences({ motion: false }).motion, false);
 });
 

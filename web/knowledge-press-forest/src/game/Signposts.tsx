@@ -92,8 +92,12 @@ function Signpost({
   const lookZ = wp.z - uz * 5.5;
   const yaw = Math.atan2(lookX - x, lookZ - z);
 
+  // Tapping the sign lists the grove's books.
   return (
-    <group position={[x, 0, z]} rotation={[0, yaw, 0]}>
+    <group position={[x, 0, z]} rotation={[0, yaw, 0]}
+      onClick={(e) => { e.stopPropagation(); useGame.getState().openCatalog(grove.genre); }}
+      onPointerOver={() => { document.body.style.cursor = "pointer"; }}
+      onPointerOut={() => { document.body.style.cursor = ""; }}>
       <mesh position={[0, 1.3, 0]}>
         <cylinderGeometry args={[0.08, 0.11, 2.6, 6]} />
         <meshStandardMaterial color="#4a3a2a" roughness={0.9} />
@@ -125,16 +129,8 @@ function Signpost({
   );
 }
 
-const KEPLER_BODY =
-  "The five Platonic solids, nested between the six planetary spheres as Johannes Kepler " +
-  "proposed in 1596. Each solid fits inside one planet's sphere and around the next. From the " +
-  "outside in: Saturn, cube, Jupiter, tetrahedron, Mars, dodecahedron, Earth, icosahedron, " +
-  "Venus, octahedron, Mercury, with the Sun at the center. The spacing here is Kepler's own: " +
-  "each sphere is the inner radius of the solid around it. He was wrong about the planets, and " +
-  "right that geometry could be asked the question.";
-
 /** A reading plaque: title, byline and a wrapped paragraph. */
-function makePlaqueTexture(title: string, byline: string, body: string): CanvasTexture {
+export function makePlaqueTexture(title: string, byline: string, body: string): CanvasTexture {
   const w = 1536;
   const h = 768;
   const canvas = document.createElement("canvas");
@@ -179,34 +175,12 @@ function makePlaqueTexture(title: string, byline: string, body: string): CanvasT
   return tex;
 }
 
-/** The sculpture's plaque, at the plaza's edge and facing out, so it reads with the sculpture behind it. */
-function KeplerPlaque() {
-  const tex = useMemo(() => makePlaqueTexture("Mysterium Cosmographicum", "Johannes Kepler · 1596", KEPLER_BODY), []);
-  useEffect(() => () => tex.dispose(), [tex]);
-  const x = -4.2, z = 4.6;
-  return (
-    <group position={[x, 0, z]} rotation={[0, Math.atan2(x, z), 0]}>
-      {[-1.25, 1.25].map((px) => (
-        <mesh key={px} position={[px, 0.8, 0]}>
-          <cylinderGeometry args={[0.07, 0.09, 1.6, 6]} />
-          <meshStandardMaterial color="#4a3a2a" roughness={0.9} />
-        </mesh>
-      ))}
-      {/* Tilted back like a lectern so it reads from the cart. */}
-      <mesh position={[0, 1.55, 0.05]} rotation={[-0.35, 0, 0]}>
-        <boxGeometry args={[3.0, 1.5, 0.06]} />
-        <meshStandardMaterial map={tex} roughness={0.7} />
-      </mesh>
-    </group>
-  );
-}
-
 function HamletSign() {
-  const tex = useMemo(() => makeSignTexture("The Press", "Hamlet · the hub", "#8fad86"), []);
+  const tex = useMemo(() => makeSignTexture("The Press", "Home · the hub", "#8fad86"), []);
   useEffect(() => () => tex.dispose(), [tex]);
   return (
-    // On the plaza, clear of the sculpture's plinth, facing the hub.
-    <group position={[3.8, 0, 4.3]} rotation={[0, Math.atan2(-3.8, -4.3), 0]}>
+    // On the plaza, clear of the redwood's root flare, facing the hub.
+    <group position={[4.75, 0, 5.4]} rotation={[0, Math.atan2(-4.75, -5.4), 0]}>
       <mesh position={[0, 1.15, 0]}>
         <cylinderGeometry args={[0.08, 0.11, 2.3, 6]} />
         <meshStandardMaterial color="#4a3a2a" roughness={0.9} />
@@ -224,7 +198,6 @@ export function Signposts({ forest }: { forest: Forest }) {
   return (
     <group>
       <HamletSign />
-      <KeplerPlaque />
       {forest.circuit.map((wp) => {
         const grove = groveByGenre(forest, wp.genre);
         if (!grove) return null;

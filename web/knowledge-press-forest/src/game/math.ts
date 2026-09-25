@@ -67,6 +67,31 @@ export function packAroundHub(radii: number[], hub: number, gap: number): { x: n
   return placed.map(({ x, z }) => ({ x, z }));
 }
 
+/**
+ * Visiting order for a closed loop through the points: start from `order` and
+ * apply 2-opt (reverse any stretch whose reversal shortens the loop) until
+ * nothing improves. The result never crosses itself.
+ */
+export function loopOrder(pts: { x: number; z: number }[], order: number[]): number[] {
+  const o = [...order];
+  const n = o.length;
+  const d = (a: number, b: number) => Math.hypot(pts[o[a]!]!.x - pts[o[b]!]!.x, pts[o[a]!]!.z - pts[o[b]!]!.z);
+  for (let improved = true, guard = 0; improved && guard < 100; guard++) {
+    improved = false;
+    for (let i = 0; i < n - 1; i++) {
+      for (let j = i + 2; j < n; j++) {
+        const i2 = i + 1, j2 = (j + 1) % n;
+        if (j2 === i) continue;
+        if (d(i, j) + d(i2, j2) < d(i, i2) + d(j, j2) - 1e-9) {
+          for (let a = i2, b = j; a < b; a++, b--) [o[a], o[b]] = [o[b]!, o[a]!];
+          improved = true;
+        }
+      }
+    }
+  }
+  return o;
+}
+
 export function fibonacciAnnulus(
   n: number,
   inner: number,

@@ -1,6 +1,6 @@
 import { bookBySlug } from "./catalog";
 import { useEffect, useRef, useState } from "react";
-import { setTouchAxes, setTouchBrake, setTouchPitch } from "./input";
+import { setTouchAxes, setTouchBrake, setTouchPitch, stickAxes } from "./input";
 import { useGame } from "./store";
 
 export function TouchControls() {
@@ -30,7 +30,8 @@ export function TouchControls() {
     const scale = mag > 1 ? 1 / mag : 1;
     const x = dx * scale, y = dy * scale;
     setThumb({ x: x * 32, y: y * 32 });
-    setTouchAxes(Math.abs(y) < 0.12 ? 0 : -y, Math.abs(x) < 0.12 ? 0 : -x);
+    const a = stickAxes(x, y);
+    setTouchAxes(a.throttle, a.steer);
   }
 
   function clear(e: React.PointerEvent<HTMLDivElement>) {

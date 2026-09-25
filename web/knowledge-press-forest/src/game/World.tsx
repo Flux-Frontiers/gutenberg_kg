@@ -5,11 +5,13 @@ import { ForestFloor, Sky, Sunlight, useGroundTexture } from "./Environment";
 import { DAY_OVERRIDE } from "./daylight";
 import { bookMatchesQuery, groveApproach, groveByGenre, type Forest } from "./forest";
 import { disc, ribbon, type FlatMesh } from "./roads";
-import { HubSculpture } from "./HubSculpture";
+import { CorpusRedwood } from "./CorpusRedwood";
+import { Mysterium } from "./Mysterium";
 import { Signposts } from "./Signposts";
 import { SEASONS, type SeasonName } from "./seasons";
 import { sim } from "./sim";
 import { useGame } from "./store";
+import { tourAhead, tourState } from "./tour";
 
 const dummy = new Object3D();
 const TRAIL_N = 20;
@@ -70,7 +72,8 @@ export function World({ forest, season }: { forest: Forest; season: SeasonName }
         );
       })}
 
-      <HubSculpture />
+      <CorpusRedwood forest={forest} season={season} />
+      {forest.exhibits.map((e) => (e.id === "mysterium" ? <Mysterium key={e.id} exhibit={e} /> : null))}
 
     </>
   );
@@ -203,6 +206,18 @@ function LanternTrail({
   useFrame(() => {
     const mesh = ref.current;
     if (!mesh) return;
+    // Riding the ring: light the road ahead, bend for bend, not a beeline to the next grove.
+    if (tourState.tour) {
+      tourAhead(tourState.tour, TRAIL_N, 2.5).forEach(([x, z], i) => {
+        dummy.position.set(x, 0.28, z);
+        dummy.scale.setScalar(0.16 + (i % 3 === 0 ? 0.06 : 0));
+        dummy.updateMatrix();
+        mesh.setMatrixAt(i, dummy.matrix);
+      });
+      mesh.instanceMatrix.needsUpdate = true;
+      mesh.count = TRAIL_N;
+      return;
+    }
     let tx = 0;
     let tz = 0;
     if (!target) {
@@ -225,7 +240,8 @@ function LanternTrail({
           found = true;
         }
       }
-      if (!found) {
+      // Standing at the nearest answer, the trail has nowhere to lead.
+      if (!found || bestD < 9) {
         mesh.count = 0;
         return;
       }

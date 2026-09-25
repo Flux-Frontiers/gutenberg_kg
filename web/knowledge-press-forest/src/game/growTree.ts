@@ -446,7 +446,7 @@ const BARK_TILE = 0.9;
  * does not twist. `aspect` is the bark image's height / width. Returns the
  * number of vertices added.
  */
-export function emitBark(grown: GrownTree, originX: number, originZ: number, out: BarkBuffers, aspect: number): number {
+export function emitBark(grown: Pick<GrownTree, "skeleton">, originX: number, originZ: number, out: BarkBuffers, aspect: number): number {
   const { nodes, parents, radii, n } = grown.skeleton;
   const children: number[][] = Array.from({ length: n }, () => []);
   for (let i = 1; i < n; i++) if (parents[i]! >= 0) children[parents[i]!]!.push(i);

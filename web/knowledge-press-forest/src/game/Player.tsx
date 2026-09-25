@@ -4,35 +4,14 @@ import { Group, MathUtils, PerspectiveCamera, Vector3 } from "three";
 import { treesNear, type Forest } from "./forest";
 import { resetInput, sampleActions } from "./input";
 import { clamp } from "./math";
-import { forwardOf, sim, stepVehicle, teleportSim, wrapAngle, yawToward } from "./sim";
+import { forwardOf, sim, stepVehicle, teleportSim } from "./sim";
+import { planTour, steerTour, tourState } from "./tour";
 import { useGame } from "./store";
 
 const camPos = new Vector3();
+/** Within this of a picked tree, the cart has arrived (reading range plus a margin). */
+const TRAIL_ARRIVED = 9;
 const lookAt = new Vector3();
-
-function nextCircuitIndex(forest: Forest, x: number, z: number): number {
-  const pts = forest.ringPath;
-  if (pts.length === 0) return 0;
-  let best = 0;
-  let bestScore = -Infinity;
-  const fx = -Math.sin(sim.yaw);
-  const fz = -Math.cos(sim.yaw);
-  for (let i = 0; i < pts.length; i++) {
-    const p = pts[i]!;
-    const dx = p.x - x;
-    const dz = p.z - z;
-    const dist = Math.hypot(dx, dz) || 1;
-    const ahead = (dx / dist) * fx + (dz / dist) * fz;
-    const score = ahead * 8 - dist * 0.04;
-    if (score > bestScore) {
-      bestScore = score;
-      best = i;
-    }
-  }
-  // Samples are ~2 m apart: steer for one at least 7 m ahead so the tour does not weave.
-  for (let k = 0; k < pts.length && Math.hypot(pts[best]!.x - x, pts[best]!.z - z) < 7; k++) best = (best + 1) % pts.length;
-  return best;
-}
 
 export function Player({ forest, playing }: { forest: Forest; playing: boolean }) {
   const group = useRef<Group>(null);
@@ -56,7 +35,7 @@ export function Player({ forest, playing }: { forest: Forest; playing: boolean }
     const dt = Math.min(delta, 0.1);
     const game = useGame.getState();
     const { preferences, jump } = game;
-    const blocked = !playing || paused || game.libraryOpen || game.atlasOpen || Boolean(document.activeElement?.matches("input, textarea, select, [contenteditable=true]"));
+    const blocked = !playing || paused || game.libraryOpen || game.atlasOpen || game.catalogOpen || Boolean(document.activeElement?.matches("input, textarea, select, [contenteditable=true]"));
     if (blocked) {
       sim.speed = sim.lat = sim.steering = 0;
       if (!wasBlocked.current) resetInput();
@@ -78,18 +57,18 @@ export function Player({ forest, playing }: { forest: Forest; playing: boolean }
       let throttle = a.throttle;
       let steer = a.steer;
       const mode = useGame.getState().travelMode;
-      if (mode === "circuit" && forest.circuit.length > 1) {
+      if (mode !== "circuit") tourState.tour = null;
+      else if (forest.ringPath.length > 1) {
         if (Math.abs(a.steer) > 0.38 || a.brake || a.throttle < 0) {
+          tourState.tour = null;
           useGame.getState().setTravelMode("free");
           useGame.getState().setToast("Free drive");
         } else {
-          const i = nextCircuitIndex(forest, sim.x, sim.z);
-          const wp = forest.ringPath[i]!;
-          const desired = yawToward(sim.x, sim.z, wp.x, wp.z);
-          const err = wrapAngle(desired - sim.yaw);
-          steer = clamp(err * 1.65, -1, 1);
-          if (throttle === 0) throttle = 0.42;
-          useGame.getState().selectGrove(wp.genre);
+          tourState.tour ??= planTour(forest, sim.x, sim.z, sim.yaw);
+          const c = steerTour(tourState.tour, sim.x, sim.z, sim.yaw, sim.speed);
+          steer = c.steer;
+          if (throttle === 0) throttle = c.throttle;
+          useGame.getState().selectGrove(c.genre);
         }
       }
       stepVehicle(forest, throttle, steer, a.boost, dt, { ...preferences, brake: a.brake });
@@ -162,6 +141,12 @@ export function Player({ forest, playing }: { forest: Forest; playing: boolean }
         // Arrived at the grove the trail was leading to: put the lantern trail away.
         if (game.travelMode === "free" && game.selectedGrove === grove.genre) game.selectGrove(null);
       }
+    }
+
+    // Arrived at the tree the trail was leading to: put the trail and the query away.
+    if (game.searchPick) {
+      const t = forest.trees.find((tr) => tr.book.slug === game.searchPick);
+      if (!t || Math.hypot(t.x - sim.x, t.z - sim.z) < TRAIL_ARRIVED) game.setQuery("");
     }
 
     poseAcc.current += dt;
