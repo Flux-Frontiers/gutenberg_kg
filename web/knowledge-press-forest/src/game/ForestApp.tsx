@@ -7,7 +7,7 @@ import { TouchControls } from "./TouchControls";
 import { installControlsTest } from "./controlsTest";
 import { getForest, type Forest } from "./forest";
 import { GROW_VERSION } from "./growTree";
-import { bindInput } from "./input";
+import { bindInput, isInputTarget } from "./input";
 import { resetSim } from "./sim";
 import { useGame } from "./store";
 
@@ -49,12 +49,21 @@ export function ForestApp() {
 
   useEffect(() => {
     function onKey(e: KeyboardEvent) {
-      if (e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement) return;
+      if (e.repeat || e.metaKey || e.ctrlKey || e.altKey) return;
       const st = useGame.getState();
-      if (e.code === "Escape") st.pause();
+      if (!st.playing) return;
+      if (e.code === "Escape") {
+        if (st.paused) return; // The settings dialog handles Escape itself.
+        if (st.atlasOpen) st.setAtlasOpen(false);
+        else if (st.libraryOpen) st.toggleLibrary();
+        else st.pause(true);
+        return;
+      }
+      if (st.paused || isInputTarget(e.target)) return;
       if (e.code === "KeyL") st.toggleLibrary();
       if (e.code === "KeyG") st.toggleAtlas();
       if (e.code === "KeyQ") st.toggleCircuit();
+      if (e.code === "KeyC") st.setPreferences({ camera: st.preferences.camera === "follow" ? "high" : "follow" });
       if (e.code === "KeyH" && forest) {
         st.selectGrove(null);
         st.requestJump(
@@ -64,11 +73,21 @@ export function ForestApp() {
       }
     }
     window.addEventListener("keydown", onKey);
-    return () => window.removeEventListener("keydown", onKey);
+    function onBlur() {
+      if (useGame.getState().playing) useGame.getState().pause(true);
+    }
+    window.addEventListener("blur", onBlur);
+    return () => {
+      window.removeEventListener("keydown", onKey);
+      window.removeEventListener("blur", onBlur);
+    };
   }, [forest]);
 
   return (
-    <main className="relative h-dvh w-full overflow-hidden bg-bg text-fg" style={{ touchAction: "none" }}>
+    <main onPointerUp={(e) => {
+      const button = (e.target as HTMLElement).closest("button");
+      if (button && !button.closest("dialog")) button.blur();
+    }} className="relative h-dvh w-full overflow-hidden bg-bg text-fg" style={{ touchAction: "none" }}>
       {mounted && forest && playing ? (
         <div className="absolute inset-0">
           <ForestCanvas forest={forest} />

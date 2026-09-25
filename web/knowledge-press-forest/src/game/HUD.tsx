@@ -1,4 +1,4 @@
-import { BookMarked, Compass, Map, Moon, Pause, Search, Sun, X } from "lucide-react";
+import { BookMarked, Compass, Map, Moon, Settings2, Search, Sun, X } from "lucide-react";
 import { useMemo } from "react";
 import { groveApproach, type Forest, type Grove } from "./forest";
 import { QUESTS, questProgress } from "./quests";
@@ -14,6 +14,8 @@ export function HUD({ forest }: { forest: Forest }) {
   const query = useGame((s) => s.query);
   const setQuery = useGame((s) => s.setQuery);
   const nearbySlug = useGame((s) => s.nearbySlug);
+  const nearbyDist = useGame((s) => s.nearbyDist);
+  const collect = useGame((s) => s.collect);
   const nearbyDismissed = useGame((s) => s.nearbyDismissed);
   const dismissNearby = useGame((s) => s.dismissNearby);
   const questHintHidden = useGame((s) => s.questHintHidden);
@@ -102,9 +104,9 @@ export function HUD({ forest }: { forest: Forest }) {
             type="button"
             onClick={() => pause(true)}
             className="grid size-11 place-items-center rounded-md border border-border bg-surface"
-            aria-label="Pause"
+            aria-label="Controls and settings" title="Controls and settings · Esc"
           >
-            <Pause className="size-4" strokeWidth={1.75} />
+            <Settings2 className="size-4" strokeWidth={1.75} />
           </button>
           <button
             type="button"
@@ -135,7 +137,7 @@ export function HUD({ forest }: { forest: Forest }) {
         ) : null}
       </div>
 
-      <div className="pointer-events-auto absolute top-20 right-3 w-28 sm:w-40">
+      <div className="pointer-events-auto absolute top-36 right-3 w-28 sm:top-20 sm:w-40">
         <Minimap forest={forest} x={x} z={z} yaw={yaw} />
         {selected ? (
           <p className="mt-1 flex items-center gap-1.5 text-xs text-muted">
@@ -173,7 +175,11 @@ export function HUD({ forest }: { forest: Forest }) {
               {nearby.book.chunks.toLocaleString()} chunks · trunk r {nearby.trunkRadius.toFixed(2)}
             </p>
             <p className="mt-2 hidden text-sm leading-relaxed text-fg/90 sm:block">{nearby.book.excerpt}</p>
-            <p className="mt-2 text-xs text-primary sm:mt-3">E · read into the press</p>
+            <button type="button" disabled={nearbyDist >= 6.8}
+              onClick={() => collect(nearby.book.slug, nearby.book.title)}
+              className="mt-3 min-h-11 rounded-md bg-primary px-4 text-sm text-primary-fg disabled:bg-bg disabled:text-muted">
+              {nearbyDist < 6.8 ? "Read into the press · E" : `Move closer · ${Math.ceil(nearbyDist)} m`}
+            </button>
           </article>
         ) : nextQuest && nextQuest.id !== questHintHidden ? (
           <div className="relative flex items-start gap-2 rounded-md border border-border bg-surface/80 px-3 py-2 pr-12 text-sm text-muted">
@@ -195,7 +201,7 @@ export function HUD({ forest }: { forest: Forest }) {
       <div className="pointer-events-auto absolute right-3 bottom-24 hidden flex-col gap-1 sm:flex">
         <button
           type="button"
-          onClick={toggleCircuit}
+          onClick={() => { toggleCircuit(); (document.activeElement as HTMLElement | null)?.blur(); }}
           className={
             "rounded-sm px-2 py-1 text-xs " +
             (travelMode === "circuit" ? "bg-primary text-primary-fg" : "border border-border bg-surface text-muted")
@@ -219,7 +225,7 @@ export function HUD({ forest }: { forest: Forest }) {
       </div>
 
       <p className="absolute bottom-3 left-1/2 hidden -translate-x-1/2 text-xs text-faint sm:block">
-        W throttle · A left · D right · E read · G groves · Q ring · H Hamlet
+        WASD / arrows · Space brake · E read · C camera · Esc settings
       </p>
 
       {toast ? (
@@ -344,7 +350,7 @@ function AtlasPanel({ forest }: { forest: Forest }) {
           </button>
           <button
             type="button"
-            onClick={toggleCircuit}
+            onClick={() => { toggleCircuit(); useGame.getState().setAtlasOpen(false); (document.activeElement as HTMLElement | null)?.blur(); }}
             className={
               "min-h-11 flex-1 rounded-md px-3 text-sm " +
               (travelMode === "circuit" ? "bg-primary text-primary-fg" : "border border-border bg-bg")

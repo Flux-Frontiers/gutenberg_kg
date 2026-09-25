@@ -16,6 +16,7 @@ export type Actions = {
   throttle: number;
   steer: number;
   boost: boolean;
+  brake: boolean;
   interact: boolean;
   interactDown: boolean;
 };
@@ -25,12 +26,16 @@ let injectedKeys: string[] | null = null;
 let injectedSteer: number | null = null;
 let touchThrottle = 0;
 let touchSteer = 0;
+let touchBrake = false;
 let prevInteract = false;
+
+export function isInputTarget(target: EventTarget | null): boolean {
+  return target instanceof HTMLElement && Boolean(target.closest("input, textarea, select, button, a, [contenteditable='true'], [role='dialog']"));
+}
 
 function onKeyDown(e: KeyboardEvent) {
   if (e.metaKey || e.ctrlKey || e.altKey) return;
-  const target = e.target as HTMLElement | null;
-  if (target && (target.tagName === "INPUT" || target.tagName === "TEXTAREA")) return;
+  if (isInputTarget(e.target)) return;
   keys.add(e.code);
   if (GAME_KEYS.has(e.code) || e.code === "KeyE") e.preventDefault();
 }
@@ -39,8 +44,17 @@ function onKeyUp(e: KeyboardEvent) {
   keys.delete(e.code);
 }
 
-function onBlur() {
+export function resetInput() {
   keys.clear();
+  touchThrottle = touchSteer = 0;
+  touchBrake = false;
+  prevInteract = false;
+  injectedKeys = null;
+  injectedSteer = null;
+}
+
+function onVisibilityChange() {
+  if (document.hidden) resetInput();
 }
 
 let bound = false;
@@ -50,16 +64,17 @@ export function bindInput() {
   bound = true;
   window.addEventListener("keydown", onKeyDown);
   window.addEventListener("keyup", onKeyUp);
-  window.addEventListener("blur", onBlur);
-  document.addEventListener("visibilitychange", () => {
-    if (document.hidden) keys.clear();
-  });
+  window.addEventListener("blur", resetInput);
+  document.addEventListener("visibilitychange", onVisibilityChange);
+  document.addEventListener("focusin", resetInput);
   return () => {
     window.removeEventListener("keydown", onKeyDown);
     window.removeEventListener("keyup", onKeyUp);
-    window.removeEventListener("blur", onBlur);
+    window.removeEventListener("blur", resetInput);
+    document.removeEventListener("visibilitychange", onVisibilityChange);
+    document.removeEventListener("focusin", resetInput);
     bound = false;
-    keys.clear();
+    resetInput();
   };
 }
 
@@ -76,6 +91,10 @@ export function setTouchAxes(throttle: number, steer: number) {
   touchSteer = steer;
 }
 
+export function setTouchBrake(brake: boolean) {
+  touchBrake = brake;
+}
+
 function held(code: string): boolean {
   if (injectedKeys) return injectedKeys.includes(code);
   return keys.has(code);
@@ -84,7 +103,7 @@ function held(code: string): boolean {
 function radialDeadzone(x: number, y: number, dz = 0.15): { x: number; y: number } {
   const m = Math.hypot(x, y);
   if (m < dz) return { x: 0, y: 0 };
-  const scale = (m - dz) / (1 - dz) / m;
+  const scale = (Math.min(m, 1) - dz) / (1 - dz) / m;
   return { x: x * scale, y: y * scale };
 }
 
@@ -102,6 +121,7 @@ function pollGamepad(actions: Actions) {
     if (pad.buttons[14]?.pressed) actions.steer += 1;
     if (pad.buttons[15]?.pressed) actions.steer -= 1;
     if (pad.buttons[0]?.pressed) actions.interactDown = true;
+    if (pad.buttons[6]?.pressed) actions.brake = true;
     if (pad.buttons[7] && pad.buttons[7].value > 0.4) actions.boost = true;
   }
 }
@@ -111,6 +131,7 @@ export function sampleActions(): Actions {
     throttle: 0,
     steer: 0,
     boost: false,
+    brake: touchBrake,
     interact: false,
     interactDown: false,
   };
@@ -120,7 +141,8 @@ export function sampleActions(): Actions {
   if (held("KeyA") || held("ArrowLeft")) actions.steer += 1;
   if (held("KeyD") || held("ArrowRight")) actions.steer -= 1;
   if (held("ShiftLeft") || held("ShiftRight")) actions.boost = true;
-  if (held("KeyE") || held("Space")) actions.interactDown = true;
+  if (held("KeyE")) actions.interactDown = true;
+  if (held("Space")) actions.brake = true;
 
   actions.throttle += touchThrottle;
   actions.steer += touchSteer;

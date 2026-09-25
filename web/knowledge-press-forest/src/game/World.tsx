@@ -1,6 +1,7 @@
 import { useFrame } from "@react-three/fiber";
 import { useMemo, useRef } from "react";
-import { BackSide, Color, InstancedMesh, Object3D } from "three";
+import { Color, InstancedMesh, Object3D } from "three";
+import { ForestFloor, Sky, Sunlight, useGroundTexture } from "./Environment";
 import { DAY_OVERRIDE } from "./daylight";
 import { bookMatchesQuery, groveApproach, groveByGenre, type Forest } from "./forest";
 import { Signposts } from "./Signposts";
@@ -22,9 +23,9 @@ export function World({ forest, season }: { forest: Forest; season: SeasonName }
   const fogColor = day ? DAY_OVERRIDE.fog : pal.fog;
   const fogDensity = (season === "winter" ? 0.011 : 0.015) * (day ? DAY_OVERRIDE.fogDensityScale : 1);
   const ambientColor = day ? DAY_OVERRIDE.ambient : pal.ambient;
-  const sunColor = day ? DAY_OVERRIDE.sun : pal.sun;
   const hemiIntensity = 0.78 * (day ? DAY_OVERRIDE.hemiIntensity : 1);
-  const sunIntensity = 0.88 * (day ? DAY_OVERRIDE.sunIntensity : 1);
+  const detail = useGame((s) => s.preferences.detail);
+  const groundTexture = useGroundTexture();
   const groundColor = useMemo(() => {
     const c = new Color(pal.ground);
     if (day) c.offsetHSL(0, -0.08, DAY_OVERRIDE.groundLightness);
@@ -39,15 +40,17 @@ export function World({ forest, season }: { forest: Forest; season: SeasonName }
       <color attach="background" args={[skyColor]} />
       <fogExp2 attach="fog" args={[fogColor, fogDensity]} />
       <hemisphereLight color={ambientColor} groundColor={groundColor} intensity={hemiIntensity} />
-      <directionalLight position={[40, 55, 18]} intensity={sunIntensity} color={sunColor} />
+      <Sunlight day={day} detail={detail} />
+      <Sky day={day} season={season} />
       <directionalLight position={[-30, 20, -40]} intensity={0.2} color="#8aa0b8" />
 
-      <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, 0, 0]}>
+      <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, 0, 0]} receiveShadow>
         <circleGeometry args={[forest.worldRadius + 30, 64]} />
-        <meshStandardMaterial color={groundColor} roughness={0.96} metalness={0} />
+        <meshStandardMaterial color={season === "winter" ? "#c8d1ce" : groundColor} map={groundTexture} bumpMap={groundTexture} bumpScale={0.09} roughness={0.96} metalness={0} />
       </mesh>
 
       <Roads forest={forest} circuit={travelMode === "circuit"} />
+      {detail && <ForestFloor forest={forest} season={season} />}
       <LanternTrail forest={forest} selectedGrove={selectedGrove} query={query} />
       <Signposts forest={forest} />
 
@@ -55,10 +58,6 @@ export function World({ forest, season }: { forest: Forest; season: SeasonName }
         const on = selectedGrove === g.genre;
         return (
           <group key={g.genre} position={[g.x, 0, g.z]}>
-            <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, 0.03, 0]}>
-              <circleGeometry args={[Math.min(g.radius * 0.55, 16), 24]} />
-              <meshStandardMaterial color={groundColor} roughness={1} />
-            </mesh>
             <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, 0.06, 0]}>
               <ringGeometry args={[2.2, on ? 3.1 : 2.7, 20]} />
               <meshBasicMaterial color={g.color} transparent opacity={on ? 0.92 : 0.55} />
@@ -76,10 +75,6 @@ export function World({ forest, season }: { forest: Forest; season: SeasonName }
         <meshStandardMaterial color="#d7d1c4" roughness={0.55} />
       </mesh>
 
-      <mesh>
-        <sphereGeometry args={[forest.worldRadius * 1.45, 16, 12]} />
-        <meshBasicMaterial color={skyColor} side={BackSide} />
-      </mesh>
     </>
   );
 }
@@ -95,11 +90,12 @@ function Roads({ forest, circuit }: { forest: Forest; circuit: boolean }) {
         const lit = circuit && r.kind === "ring";
         return (
           <mesh
+            receiveShadow
             key={i}
             position={[(r.ax + r.bx) / 2, lit ? 0.055 : 0.04, (r.az + r.bz) / 2]}
             rotation={[0, Math.atan2(dx, dz), 0]}
           >
-            <boxGeometry args={[r.kind === "ring" ? 2.05 : 1.45, 0.05, len]} />
+            <boxGeometry args={[r.kind === "ring" ? 3.2 : 2.6, 0.05, len]} />
             <meshStandardMaterial
               color={lit ? "#6e5a3d" : r.kind === "ring" ? "#5c4a36" : "#4e3f2d"}
               roughness={1}

@@ -59,3 +59,18 @@
     transition-duration: 0.01ms !important;
   }
 }
+
+.forest-settings::backdrop {
+  background: rgb(8 16 22 / 70%);
+  backdrop-filter: blur(8px);
+}
+
+input[type="range"], input[type="checkbox"] { accent-color: var(--color-primary); }
+button:focus-visible, select:focus-visible, input:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+}
+.touch-controls { display: none; }
+@media (pointer: coarse), (max-width: 639px) {
+  .touch-controls { display: flex; padding-bottom: max(0.75rem, env(safe-area-inset-bottom)); }
+}

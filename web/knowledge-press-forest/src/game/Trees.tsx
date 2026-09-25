@@ -1,5 +1,7 @@
-import { useLayoutEffect, useMemo, useRef } from "react";
-import { Color, DoubleSide, InstancedMesh, Object3D, Shape, ShapeGeometry } from "three";
+import { useEffect, useLayoutEffect, useMemo, useRef } from "react";
+import { useFrame } from "@react-three/fiber";
+import { Color, DoubleSide, InstancedMesh, MeshDepthMaterial, MeshStandardMaterial, Object3D, RGBADepthPacking, Shape, ShapeGeometry } from "three";
+import { useGame } from "./store";
 import type { Forest } from "./forest";
 import { bookMatchesQuery } from "./forest";
 import { SEASONS, type SeasonName } from "./seasons";
@@ -21,7 +23,8 @@ function ovateLeafGeometry() {
 
 function keepLeaf(i: number, density: number): boolean {
   if (density >= 0.999) return true;
-  const h = ((i * 16807) % 2147483647) / 2147483647;
+  // Mix adjacent indices; the old sequence kept almost every early winter leaf.
+  const h = ((Math.imul(i + 1, 1664525) ^ Math.imul(i + 7, 1013904223)) >>> 0) / 4294967296;
   return h < density;
 }
 
@@ -39,6 +42,33 @@ export function Trees({
   const ringRef = useRef<InstancedMesh>(null);
   const palette = SEASONS[season];
   const q = query.trim();
+  const wind = useMemo(() => ({ value: 0 }), []);
+  const windStrength = useMemo(() => ({ value: 0 }), []);
+  const materials = useMemo(() => {
+    const leaf = new MeshStandardMaterial({ roughness: 0.8, side: DoubleSide });
+    const depth = new MeshDepthMaterial({ depthPacking: RGBADepthPacking, side: DoubleSide });
+    for (const material of [leaf, depth]) {
+      material.onBeforeCompile = (shader) => {
+        shader.uniforms.windTime = wind;
+        shader.uniforms.windStrength = windStrength;
+        shader.vertexShader = "uniform float windTime; uniform float windStrength;\n" + shader.vertexShader;
+        shader.vertexShader = shader.vertexShader.replace("#include <begin_vertex>", `
+          #include <begin_vertex>
+          float phase = instanceMatrix[3].x * .31 + instanceMatrix[3].z * .27;
+          transformed.x += sin(windTime * 1.4 + phase) * .12 * windStrength * (position.y + 1.0);
+          transformed.z += cos(windTime + phase) * .06 * windStrength;
+        `);
+      };
+      material.customProgramCacheKey = () => "forest-leaf-wind-v1";
+    }
+    return { leaf, depth };
+  }, [wind, windStrength]);
+  useEffect(() => () => { materials.leaf.dispose(); materials.depth.dispose(); }, [materials]);
+  useFrame((_, delta) => {
+    const s = useGame.getState();
+    windStrength.value = s.preferences.motion ? 1 : 0;
+    if (s.preferences.motion && !s.paused) wind.value += Math.min(delta, 0.1);
+  });
 
   const match = useMemo(() => {
     if (!q) return null;
@@ -127,13 +157,11 @@ export function Trees({
 
   return (
     <group>
-      <instancedMesh ref={woodRef} args={[undefined, undefined, forest.wood.count]} frustumCulled={false} castShadow={false}>
-        <cylinderGeometry args={[1, 1, 1, 6]} />
+      <instancedMesh ref={woodRef} args={[undefined, undefined, forest.wood.count]} frustumCulled={false} castShadow receiveShadow>
+        <cylinderGeometry args={[1, 1, 1, 8]} />
         <meshStandardMaterial roughness={0.9} metalness={0.02} />
       </instancedMesh>
-      <instancedMesh ref={leafRef} args={[leafGeom, undefined, forest.leaves.count]} frustumCulled={false}>
-        <meshStandardMaterial roughness={0.62} metalness={0} side={DoubleSide} />
-      </instancedMesh>
+      <instancedMesh ref={leafRef} args={[leafGeom, materials.leaf, forest.leaves.count]} customDepthMaterial={materials.depth} frustumCulled={false} castShadow receiveShadow />
       <instancedMesh ref={ringRef} args={[undefined, undefined, forest.trees.length]} frustumCulled={false}>
         <ringGeometry args={[0.72, 1, 20]} />
         <meshBasicMaterial transparent opacity={0.85} />

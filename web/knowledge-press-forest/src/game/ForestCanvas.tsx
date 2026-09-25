@@ -1,4 +1,5 @@
 import { Canvas } from "@react-three/fiber";
+import { ACESFilmicToneMapping } from "three";
 import type { Forest } from "./forest";
 import { Player } from "./Player";
 import { Trees } from "./Trees";
@@ -9,15 +10,20 @@ export function ForestCanvas({ forest }: { forest: Forest }) {
   const season = useGame((s) => s.season);
   const query = useGame((s) => s.query);
   const playing = useGame((s) => s.playing);
+  const detail = useGame((s) => s.preferences.detail);
 
   return (
     <Canvas
+      shadows={detail ? "soft" : false}
       camera={{ position: [forest.spawn.x, 6.2, forest.spawn.z + 10], fov: 58, near: 0.12, far: 560 }}
       dpr={[1, 1.5]}
       gl={{ antialias: true, powerPreference: "high-performance", alpha: false }}
       onCreated={({ gl }) => {
         gl.setClearColor("#16213e");
+        gl.toneMapping = ACESFilmicToneMapping;
+        gl.toneMappingExposure = 1.1;
       }}
+      onPointerDown={() => (document.activeElement as HTMLElement | null)?.blur()}
       onPointerMissed={() => {
         const s = useGame.getState();
         if (s.libraryOpen) s.toggleLibrary();

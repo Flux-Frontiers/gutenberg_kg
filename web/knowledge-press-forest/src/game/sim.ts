@@ -1,5 +1,6 @@
 import { getForest, treesNear, type Forest } from "./forest";
 import { clamp } from "./math";
+import type { Preferences } from "./preferences";
 
 export type SimState = {
   x: number;
@@ -8,16 +9,18 @@ export type SimState = {
   yaw: number;
   speed: number;
   lat: number;
+  steering: number;
   ready: boolean;
 };
 
 export const sim: SimState = {
   x: 0,
-  y: 0.42,
+  y: 0,
   z: 8,
   yaw: 0,
   speed: 0,
   lat: 0,
+  steering: 0,
   ready: false,
 };
 
@@ -27,7 +30,8 @@ export function resetSim(forest: Forest) {
   sim.yaw = forest.spawn.yaw;
   sim.speed = 0;
   sim.lat = 0;
-  sim.y = 0.42;
+  sim.steering = 0;
+  sim.y = 0;
   sim.ready = true;
 }
 
@@ -37,6 +41,8 @@ export function teleportSim(x: number, z: number, yaw: number) {
   sim.yaw = yaw;
   sim.speed = 0;
   sim.lat = 0;
+  sim.steering = 0;
+  sim.y = 0;
 }
 
 export function wrapAngle(a: number): number {
@@ -58,27 +64,41 @@ export function stepVehicle(
   steer: number,
   boost: boolean,
   dt: number,
+  options: { brake?: boolean; pace?: Preferences["pace"]; sensitivity?: number } = {},
 ) {
-  const maxSpeed = boost ? 28 : 16.5;
-  const accel = throttle >= 0 ? 18 : 22;
-  sim.speed += throttle * accel * dt;
-  const drag = throttle === 0 ? 3.4 : 1.1;
-  sim.speed *= 1 - drag * dt;
-  if (Math.abs(sim.speed) < 0.04 && throttle === 0) sim.speed = 0;
-  sim.speed = clamp(sim.speed, -7, maxSpeed);
+  // Small steps keep collisions and handling stable across frame rates.
+  const steps = Math.ceil(Math.min(Math.max(dt, 0), 0.1) / (1 / 120));
+  if (!steps) return;
+  for (let i = 0; i < steps; i++) step(forest, throttle, steer, boost, Math.min(dt, 0.1) / steps, options);
+}
 
-  const speedFactor = clamp(Math.abs(sim.speed) / 7.5, 0.12, 1);
+function step(forest: Forest, throttle: number, steer: number, boost: boolean, dt: number,
+  options: { brake?: boolean; pace?: Preferences["pace"]; sensitivity?: number }) {
+  const gentle = options.pace !== "brisk";
+  const maxSpeed = (gentle ? 9 : 16.5) * (boost ? 1.45 : 1);
+  const accel = gentle ? 11 : 18;
+  if (options.brake) {
+    sim.speed = Math.sign(sim.speed) * Math.max(0, Math.abs(sim.speed) - 32 * dt);
+  } else {
+    sim.speed += clamp(throttle, -1, 1) * accel * dt;
+  }
+  const drag = throttle === 0 ? 4.5 : 0.65;
+  sim.speed *= Math.exp(-drag * dt);
+  if (Math.abs(sim.speed) < 0.04 && throttle === 0) sim.speed = 0;
+  sim.speed = clamp(sim.speed, -4.5, maxSpeed);
+
+  const speedFactor = clamp(Math.abs(sim.speed) / 5, 0.65, 1);
   const reverse = sim.speed >= 0 ? 1 : -1;
   const turnRate = 1.55;
-  sim.yaw += steer * turnRate * speedFactor * reverse * dt;
+  sim.steering += (clamp(steer, -1, 1) - sim.steering) * (1 - Math.exp(-12 * dt));
+  sim.yaw = wrapAngle(sim.yaw + sim.steering * turnRate * (options.sensitivity ?? 1) * speedFactor * reverse * dt);
 
   const fx = -Math.sin(sim.yaw);
   const fz = -Math.cos(sim.yaw);
   const rx = Math.cos(sim.yaw);
   const rz = -Math.sin(sim.yaw);
 
-  sim.lat += -steer * sim.speed * 0.08 * dt;
-  sim.lat *= 1 - 7.5 * dt;
+  sim.lat *= Math.exp(-12 * dt);
 
   sim.x += (fx * sim.speed + rx * sim.lat) * dt;
   sim.z += (fz * sim.speed + rz * sim.lat) * dt;
@@ -90,10 +110,11 @@ export function stepVehicle(
     const dz = sim.z - t.z;
     const min = t.trunkRadius + cartR;
     const d = Math.hypot(dx, dz);
-    if (d < min && d > 1e-4) {
-      const push = (min - d) / d;
-      sim.x += dx * push;
-      sim.z += dz * push;
+    if (d < min) {
+      const nx = d > 1e-4 ? dx / d : -fx;
+      const nz = d > 1e-4 ? dz / d : -fz;
+      sim.x += nx * (min - d);
+      sim.z += nz * (min - d);
       sim.speed *= 0.55;
     }
   }

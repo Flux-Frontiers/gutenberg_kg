@@ -1,6 +1,8 @@
 import { create } from "zustand";
 import type { TimeOfDay } from "./daylight";
 import type { SeasonName } from "./seasons";
+import { readPreferences, type Preferences } from "./preferences";
+import { resetInput } from "./input";
 
 const SAVE_KEY = "kpf-library-v1";
 const SAVE_VERSION = 1;
@@ -11,6 +13,7 @@ type SaveBlob = {
   grovesVisited: string[];
   season: SeasonName;
   timeOfDay: TimeOfDay;
+  preferences: Preferences;
 };
 
 function loadSave(): SaveBlob {
@@ -20,6 +23,7 @@ function loadSave(): SaveBlob {
     grovesVisited: [],
     season: "summer",
     timeOfDay: "day",
+    preferences: readPreferences(),
   };
   if (typeof window === "undefined") return defaults;
   try {
@@ -40,6 +44,7 @@ function loadSave(): SaveBlob {
           ? parsed.season
           : "summer",
       timeOfDay: parsed.timeOfDay === "night" ? "night" : "day",
+      preferences: readPreferences(parsed.preferences),
     };
   } catch {
     return defaults;
@@ -51,6 +56,7 @@ function persist(s: {
   grovesVisited: string[];
   season: SeasonName;
   timeOfDay: TimeOfDay;
+  preferences: Preferences;
 }) {
   try {
     const blob: SaveBlob = {
@@ -59,6 +65,7 @@ function persist(s: {
       grovesVisited: s.grovesVisited,
       season: s.season,
       timeOfDay: s.timeOfDay,
+      preferences: s.preferences,
     };
     window.localStorage.setItem(SAVE_KEY, JSON.stringify(blob));
   } catch {
@@ -76,6 +83,8 @@ export type JumpPose = {
 
 export type GameStore = {
   playing: boolean;
+  preferences: Preferences;
+  setPreferences: (patch: Partial<Preferences>) => void;
   paused: boolean;
   season: SeasonName;
   timeOfDay: TimeOfDay;
@@ -126,6 +135,12 @@ const initial = loadSave();
 
 export const useGame = create<GameStore>((set, get) => ({
   playing: false,
+  preferences: initial.preferences,
+  setPreferences: (patch) => {
+    const preferences = readPreferences({ ...get().preferences, ...patch });
+    set({ preferences });
+    persist(get());
+  },
   paused: false,
   season: initial.season,
   timeOfDay: initial.timeOfDay,
@@ -149,7 +164,10 @@ export const useGame = create<GameStore>((set, get) => ({
   travelMode: "free",
   jump: null,
   play: () => set({ playing: true, paused: false }),
-  pause: (v) => set({ paused: v ?? !get().paused }),
+  pause: (v) => {
+    resetInput();
+    set({ paused: v ?? !get().paused });
+  },
   setSeason: (season) => {
     set({ season });
     persist({ ...get(), season });
@@ -206,12 +224,15 @@ export const useGame = create<GameStore>((set, get) => ({
       toast: next === "circuit" ? "Riding the ring · steer to hop off" : "Free drive",
     });
   },
-  requestJump: (jump, toast) =>
+  requestJump: (jump, toast) => {
+    resetInput();
     set({
       jump,
       travelMode: "free",
       atlasOpen: false,
+      libraryOpen: false,
       toast: toast ?? null,
-    }),
+    });
+  },
   clearJump: () => set({ jump: null }),
 }));

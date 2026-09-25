@@ -8,6 +8,7 @@ release that bumps the package without the apps does not pass CI.
 
 from __future__ import annotations
 
+import json
 import re
 import tomllib
 from pathlib import Path
@@ -41,3 +42,12 @@ def test_swift_fallback_matches_the_package():
     swift = ROOT / "app/GutenbergKGKit/Sources/KnowledgePressUI/AppVersion.swift"
     match = re.search(r'static let fallback = "([^"]+)"', swift.read_text())
     assert match and match.group(1) == _package_version()
+
+
+@pytest.mark.parametrize("manifest", ["package.json", "package-lock.json"])
+def test_web_forest_version_matches_the_package(manifest):
+    # The web forest sat at 0.1.0 the same way the apps sat at 1.0.
+    data = json.loads((ROOT / "web/knowledge-press-forest" / manifest).read_text())
+    assert data["version"] == _package_version(), f"{manifest}: {data['version']}"
+    if manifest == "package-lock.json":
+        assert data["packages"][""]["version"] == _package_version()
