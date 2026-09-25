@@ -64,6 +64,14 @@ export type Waypoint = {
 /** The hub: a paved plaza around the sculpture's plinth (the cart collides with the plinth). */
 export const HUB_PLAZA_R = 8;
 export const HUB_SCULPTURE_R = 2.6;
+// Home: 13 m out along the Kepler plaque's bearing, so the plaque stands between
+// the cart and the sculpture; facing the hub (yaw convention of sim.yawToward).
+const HOME_DIR = Math.atan2(4.6, -4.2);
+const HOME = {
+  x: Math.cos(HOME_DIR) * 13,
+  z: Math.sin(HOME_DIR) * 13,
+  yaw: Math.atan2(Math.cos(HOME_DIR), Math.sin(HOME_DIR)),
+};
 
 export type Chunk = {
   genre: string;
@@ -110,6 +118,8 @@ export type Forest = {
     species: Uint8Array;
   };
   spawn: { x: number; z: number; yaw: number };
+  /** On the hub plaza behind the Kepler plaque, facing the sculpture. */
+  home: { x: number; z: number; yaw: number };
   worldRadius: number;
   /** Radius of the hub sculpture's plinth, which the cart cannot drive through (0: none). */
   hubObstacle?: number;
@@ -332,6 +342,7 @@ function buildForest(leafMultiplier: number): Forest {
       species: Uint8Array.from(leafSpecies),
     },
     spawn: { x: spawnX, z: spawnZ, yaw: spawnYaw },
+    home: HOME,
     worldRadius: worldRadius + 18,
     hubObstacle: HUB_SCULPTURE_R,
     grid,

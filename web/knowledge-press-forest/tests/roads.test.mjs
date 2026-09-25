@@ -70,3 +70,15 @@ test("every road keeps the cart clear of every trunk and the hub plinth", () => 
     }
   }
 });
+
+test("home stands clear on the hub plaza, facing the sculpture", () => {
+  const { getForest, HUB_PLAZA_R, HUB_SCULPTURE_R } = require(`${process.env.FOREST_TEST_BUILD}/forest.js`);
+  const { forwardOf } = require(`${process.env.FOREST_TEST_BUILD}/sim.js`);
+  const f = getForest();
+  const { x, z, yaw } = f.home;
+  const d = Math.hypot(x, z);
+  assert.ok(d > HUB_SCULPTURE_R + 1.05 && d > HUB_PLAZA_R, `home ${d.toFixed(1)} m from the hub`);
+  for (const t of f.trees) assert.ok(Math.hypot(x - t.x, z - t.z) > t.trunkRadius + 3, `home crowds ${t.book.slug}`);
+  const fw = forwardOf(yaw);
+  assert.ok((fw.x * -x + fw.z * -z) / d > 0.999, "home faces the sculpture");
+});

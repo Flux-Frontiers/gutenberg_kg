@@ -98,10 +98,7 @@ export function ForestApp() {
       }
       if (e.code === "KeyH" && forest) {
         st.selectGrove(null);
-        st.requestJump(
-          { x: forest.spawn.x, z: forest.spawn.z, yaw: forest.spawn.yaw },
-          "Hamlet · the press",
-        );
+        st.requestJump(forest.home, "Home · the sculpture");
       }
     }
     window.addEventListener("keydown", onKey);
