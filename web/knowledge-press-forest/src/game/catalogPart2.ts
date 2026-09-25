@@ -172,6 +172,16 @@ export const BOOKS_PART2: Book[] = [
     tags: ["biography"],
   },
   {
+    slug: "miracle_mongers_and_their_methods_harry_houdini",
+    title: "Miracle Mongers and Their Methods — Harry Houdini",
+    author: "Harry Houdini",
+    genre: "biography",
+    genreLabel: "Biography",
+    chunks: 547,
+    excerpt: "Chabert an IMPOSSIBILITY. He will give a COMPLETE explanation by illustrations of the PRINCIPLES of the EUROPEAN and the AMERICAN CHESS PLAYERS. He will also (unless prevented by indisposition) swallow a sufficient quantity of phosphorus, (presented by either chemist or…",
+    tags: ["biography"],
+  },
+  {
     slug: "narrative_of_the_life_of_frederick_douglass",
     title: "Narrative of the Life of Frederick Douglass",
     author: "Frederick Douglass",
@@ -220,16 +230,6 @@ export const BOOKS_PART2: Book[] = [
     chunks: 1018,
     excerpt: "Take the broom and sweep it.” It occurred to me at once that here was my chance. Never did I receive an order with more delight. I knew that I could sweep, for Mrs. Ruffner had thoroughly taught me how to do that when I lived with her. I swept the recitation-room three times.…",
     tags: ["biography"],
-  },
-  {
-    slug: "miracle_mongers_and_their_methods",
-    title: "Miracle Mongers and Their Methods",
-    author: "Unknown",
-    genre: "curiosities",
-    genreLabel: "Curiosities",
-    chunks: 579,
-    excerpt: "Girardelli FROM THE CONTINENT, * Iwtfj wm I ih* rtwltrsf *** buMtbi bo nor «f tpptanfv* before m«i of A« Ciuioul Uadi of Eutopr, who npwd the bif beat iiiWirtjua aod uioakhaint it her wo&derfid Pfrformio.ff t tad *lw «i tlx Tbetlra R*y*V J^sJdd, fiih uiimul ippkiM Her Powers…",
-    tags: ["curiosities"],
   },
   {
     slug: "the_diary_of_john_evelyn_volume_1",
