@@ -35,7 +35,7 @@ pinned to the stack coremltools is tested against::
 
 Nothing here imports the rest of the package, and the heavy imports are inside
 the function, so that venv can run this module directly without installing
-``gutenberg_kg`` — see ``app/RUNBOOK.md`` step 2 for the loader.  Where the
+``gutenberg_kg`` — see ``app/RUNBOOK.md`` step 2 in the knowledge_press repo for the loader.  Where the
 project environment predates transformers 5.x, ``gutenkg export-embedder``
 works as it reads.
 
@@ -109,7 +109,7 @@ def export_embedder(out: Path, *, compute_units: str = "ALL", progress=None) -> 
     except ImportError as exc:
         raise EmbedderExportError(
             "conversion needs torch, transformers and coremltools, which do not\n"
-            "belong in the project environment — see app/RUNBOOK.md step 2:\n"
+            "belong in the project environment — see knowledge_press app/RUNBOOK.md step 2:\n"
             "  python3.12 -m venv /tmp/mlenv\n"
             '  /tmp/mlenv/bin/pip install torch==2.7.1 transformers==4.46.3 "numpy<2" coremltools'
         ) from exc

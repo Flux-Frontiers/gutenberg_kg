@@ -20,13 +20,16 @@ model — and `tokenizer_fixture.json` into the Swift test fixtures directory.
 from __future__ import annotations
 
 import json
+import os
 from pathlib import Path
 
 from transformers import AutoTokenizer
 
-FIXTURES = (
-    Path(__file__).resolve().parents[1] / "app/GutenbergKGKit/Tests/GutenbergKGKitTests/Fixtures"
+# The Swift package lives in the knowledge_press repo, by default a sibling checkout.
+KNOWLEDGE_PRESS_DIR = Path(
+    os.environ.get("KNOWLEDGE_PRESS_DIR", Path(__file__).resolve().parents[2] / "knowledge_press")
 )
+FIXTURES = KNOWLEDGE_PRESS_DIR / "app/GutenbergKGKit/Tests/GutenbergKGKitTests/Fixtures"
 
 tok = AutoTokenizer.from_pretrained("BAAI/bge-small-en-v1.5")
 

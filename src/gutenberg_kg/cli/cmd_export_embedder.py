@@ -37,7 +37,7 @@ def export_embedder_cmd(out: Path, compute_units: str) -> None:
     lands in a different space — so the app has to carry it.  Needs torch,
     transformers and coremltools, which are not project dependencies and do not
     belong in the project venv — transformers 5.x breaks the conversion.  Use a
-    throwaway venv (app/RUNBOOK.md step 2):
+    throwaway venv (knowledge_press app/RUNBOOK.md step 2):
 
     \b
       python3.12 -m venv /tmp/mlenv
