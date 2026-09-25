@@ -1,1 +1,4 @@
-MiracleMongersAndTheirMethodsByHarryHoudini	Miracle Mongers and Their Methods
+# Retired 2026-09-25: the IA OCR scan was unusable (page headers as headings,
+# broken hyphenation, library slip). Replaced by Project Gutenberg #435 in
+# scripts/catalogs/biography.txt.
+# MiracleMongersAndTheirMethodsByHarryHoudini	Miracle Mongers and Their Methods

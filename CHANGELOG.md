@@ -82,6 +82,12 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Fixed
 
+- **Houdini's *Miracle Mongers and Their Methods* is now the Project Gutenberg
+  edition.** The Internet Archive copy in `curiosities` was raw OCR of a library
+  scan: page headers indexed as section headings, words split across line breaks,
+  garbled text, a library date-due slip, and no author. It is replaced by
+  Gutenberg #435 in `biography`. The IA catalog entry is commented out, so
+  `curiosities` is now empty.
 - **The worker's default image backend can be set again.** The docs said
   `IMAGE_BACKEND=openai` in `docker/.env` routes images to `gpt-image-1`, but
   neither compose nor `RUNTIME=apple` passed it into the worker, so it always
