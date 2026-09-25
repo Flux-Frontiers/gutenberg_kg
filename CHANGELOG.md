@@ -25,6 +25,14 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   in-the-cart camera; Up/Down (or a touch look strip) to tilt the view; touch
   layouts for phones and tablets; an optional triangles / draw-calls / fps readout.
   The web app's `package.json` now tracks the package version.
+- **Knowledge Press Forest (web): a compact, drivable world with a hub monument.** Trees
+  sit on an even grid about 9 m apart and groves pack around the hub (world radius
+  418 m to 210 m). Roads are routed around the trunks on a clearance map, so every
+  road keeps the cart clear of every tree. Trunks now rise plumb instead of all
+  leaning one way. The hub holds Kepler's *Mysterium Cosmographicum* (the five
+  Platonic solids nested between planetary shells, at Kepler's ratios) with a reading
+  plaque, and a Home button returns to it. Also: slower driving, larger signposts,
+  textured rocks and bladed grass, gusty wind, and leaves on visible stalks.
 
 - **`make publish-worker-image` and `make pull-worker-image`: one multi-arch image for
   everyone.** `publish-worker-image` builds `linux/amd64` and `linux/arm64` into one image
