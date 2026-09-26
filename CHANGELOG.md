@@ -8,6 +8,8 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+## [1.24.0] - 2026-09-26
+
 ### Added
 
 - **Hero trees grow as species.** Each genre maps to one of nine tree
