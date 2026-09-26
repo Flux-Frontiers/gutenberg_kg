@@ -8,31 +8,25 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+## [1.23.0] - 2026-09-25
+
 ### Added
 
-- **Knowledge Press Forest (web): truthful trees, textured and driveable on a phone.**
-  Tree growth now mirrors the Python viz3d (`kg_utils.viz3d.organic.colonize`,
-  `grow_tree_geometry`): every chunk is a crown point, growth reaches for up to
-  3000 of them with no node cap, and at the Ultra leaf level every one of the
-  corpus's 398,214 chunks is a leaf. Lower levels show the same fraction of every
-  book (1 in 10, 4, 2), so crowns stay proportional. Genres grow as five species
-  with CC0 ambientCG bark and species leaf outlines on continuous swept bark
-  meshes; roads are herringbone brick; each grove stands on its own tinted ground.
-  One render chunk per grove lets the renderer skip groves out of view or lost in
-  the fog, and the forest grows in a Web Worker. Measured: 60 fps at Ultra on a
-  laptop and an iPhone 17 Pro, 50-60 on an iPad. Also: brake, turn-in-place and a
-  settings dialog; search with a results list, jump-to-tree and minimap pins; an
-  in-the-cart camera; Up/Down (or a touch look strip) to tilt the view; touch
-  layouts for phones and tablets; an optional triangles / draw-calls / fps readout.
-  The web app's `package.json` now tracks the package version.
-- **Knowledge Press Forest (web): a compact, drivable world with a hub monument.** Trees
-  sit on an even grid about 9 m apart and groves pack around the hub (world radius
-  418 m to 210 m). Roads are routed around the trunks on a clearance map, so every
-  road keeps the cart clear of every tree. Trunks now rise plumb instead of all
-  leaning one way. The hub holds Kepler's *Mysterium Cosmographicum* (the five
-  Platonic solids nested between planetary shells, at Kepler's ratios) with a reading
-  plaque, and a Home button returns to it. Also: slower driving, larger signposts,
-  textured rocks and bladed grass, gusty wind, and leaves on visible stalks.
+- **Knowledge Press Forest (web), three rounds before it moved to
+  [knowledge_press](https://github.com/Flux-Frontiers/knowledge_press)** (#162,
+  #163, #165; see Removed). Tree growth mirrors the Python viz3d
+  (`kg_utils.viz3d.organic.colonize`, `grow_tree_geometry`): every chunk is a
+  crown point, and at the Ultra leaf level each of the corpus's ~398k chunks is a
+  leaf. Genres grow as five species with CC0 bark on swept meshes, in groves
+  packed around the hub. Trees are placed by their wood, not a flat grid: each
+  branch keeps 0.6 m of air from every other tree. At the hub stands a corpus
+  redwood, 3.4 m of height per doubling of the corpus's chunks (63 m), with one
+  limb per book reaching toward that book's tree; a book list (B) jumps to any
+  tree. Kepler's *Mysterium Cosmographicum* stands as an exhibit in a roadside
+  glade. The ring road is one loop that never crosses itself, with five spokes,
+  and the guided tour follows it by pure pursuit. Also: a Web Worker for growth,
+  per-grove render chunks, touch layouts, silent mode, a lantern trail that
+  clears on arrival, and steering that no longer flips in reverse.
 
 - **`make publish-worker-image` and `make pull-worker-image`: one multi-arch image for
   everyone.** `publish-worker-image` builds `linux/amd64` and `linux/arm64` into one image
@@ -64,7 +58,8 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   and `up` now refuse to start while the other runtime is up
   (`ALLOW_BOTH_RUNTIMES=1` overrides). `make down-all` runs `make kill`, then
   stops Apple's container services and quits Docker Desktop.
-- **`make ios-push-all`: app and corpus to every device in one step.** It builds
+- **`make ios-push-all`: app and corpus to every device in one step** (moved to
+  knowledge_press with the apps). It builds
   once, then on each reachable device installs the app, copies the corpus and
   relaunches. `ios-deploy-all` still installs only the app. If a device drops
   off mid-copy, the target records it, moves on to the next device, and exits
@@ -72,18 +67,14 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Changed
 
-- **The iOS and macOS apps carry the package version.** They had stayed at
-  `1.0 (1)`. `MARKETING_VERSION` in both `project.yml` files now tracks
-  `pyproject.toml` (1.22.2 today), the Info.plist reads it and the build number
-  from build settings instead of literals, and every `xcodebuild` in the
-  Makefile sets the build number to the git commit count, so each App Store
-  Connect upload outranks the last. `tests/test_app_version.py` fails when the
-  apps and the package disagree, and the release skill's bump step lists the
-  app files.
 - **Fleet dependency floors raised and relocked** (`kgrag_priv` sweep item 46):
   `kgmodule-utils` to `>=0.24.0` and `kg-rag` to `>=0.17.0`, in
   `pyproject.toml`, the Dockerfile ARGs and `runpod/requirements.txt`. The
-  lock also moves `quiltwright` to 0.15.1; its floor stays `>=0.15.0`.
+  lock also moves `quiltwright` to 0.15.1.
+- **Floors raised to the latest releases and relocked:** `quiltwright>=0.15.1`,
+  `markdown>=3.11`, `plotly>=7.1.0`, `pyvistaqt>=0.13.1`, `streamlit>=1.64`,
+  `uvicorn>=0.54.0`. `fastmcp` 4 and `rich` 15 stay behind their major-version
+  caps.
 
 ### Fixed
 
@@ -129,7 +120,8 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   iOS/macOS app (`app/`) and Knowledge Press Forest (`web/knowledge-press-forest/`,
   now `web/` there) left with their history, along with the `ios-*` / `mac-*`
   Makefile targets, `.github/workflows/app.yml`, `docs/APP_INTERNALS.md` and
-  `tests/test_app_version.py`: the apps no longer take the package's version.
+  `tests/test_app_version.py`, which kept the apps on the package's version
+  (added this cycle in #161); they now version on their own.
   gutenberg_kg stays the producer: `gutenkg export-swift` and
   `docs/ON_DEVICE.md` (the pack format) remain here. `scripts/export_web_catalog.py`
   (`make export-web-catalog`) and `scripts/make_tokenizer_fixture.py` now write

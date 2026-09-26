@@ -94,14 +94,10 @@ git log --oneline --no-merges <last-tag>..HEAD
 
 - `pyproject.toml` → `version = "..."`
 - `src/gutenberg_kg/__init__.py` → `__version__ = "..."`
-- `app/ios/project.yml` and `app/macos/project.yml` → `MARKETING_VERSION: "..."`
-- `app/GutenbergKGKit/Sources/KnowledgePressUI/AppVersion.swift` → `fallback = "..."`
-- `web/knowledge-press-forest/package.json` and `package-lock.json` → `"version": "..."`
-  (`cd web/knowledge-press-forest && npm version X.Y.Z --no-git-tag-version`)
 
-The apps carry the package version; `tests/test_app_version.py` fails in Step 6
-if any of these differs from `pyproject.toml`. The build number is not
-bumped by hand: the Makefile sets it to `git rev-list --count HEAD`.
+The iOS/macOS app and the web forest moved to
+[knowledge_press](https://github.com/Flux-Frontiers/knowledge_press) in 1.23.0
+and version on their own there; nothing under `app/` or `web/` is bumped here.
 
 `poetry lock` is **not** needed for a version bump here — the package version
 does not appear in `poetry.lock`. Run it only if dependencies changed.
