@@ -21,19 +21,24 @@ from __future__ import annotations
 from collections import Counter, defaultdict
 from collections.abc import Callable
 from dataclasses import dataclass
+from importlib import resources
+from pathlib import Path
 
 import numpy as np
 from kg_utils.viz3d import (
+    SPECIES,
+    Habit,
     Layout3D,
     LayoutEdge,
     LayoutNode,
     Skeleton,
+    crown_sections,
     fibonacci_annulus,
     fibonacci_sphere,
     grow_tree,
-    leaf_facing,
-    oriented_cluster,
+    section_cluster,
     seed_from_key,
+    vary_habit,
 )
 
 __author__ = "Eric G. Suchanek, PhD"
@@ -111,6 +116,79 @@ MAX_EDGES: int = 4000
 # in the version this module carried — see the note on ``oriented_cluster``
 # below.
 # ---------------------------------------------------------------------------
+
+
+#: Genre → tree species (a key of :data:`kg_utils.viz3d.SPECIES`).  The
+#: Knowledge Press web forest (``web/src/game/species.ts``) maps genres the
+#: same way; keep the two tables in step.
+GENRE_SPECIES: dict[str, str] = {
+    "philosophy": "oak",
+    "english-literature": "chestnut",
+    "american-literature": "chestnut",
+    "biography": "chestnut",
+    "science-fiction": "fir",
+    "natural-history": "fir",
+    "french-literature": "plane",
+    "world-literature": "plane",
+    "spanish": "plane",
+    "curiosities": "plane",
+    "horror": "blackthorn",
+    "german-literature": "blackthorn",
+    "ancient-classical": "pine",
+    "sacred-texts": "pine",
+    "russian-literature": "birch",
+    "letters": "birch",
+    "diaries": "birch",
+    "shakespeare": "willow",
+    "drama": "willow",
+    "poetry": "willow",
+    "travel": "poplar",
+    "audel-electric": "poplar",
+}
+
+#: Species for a genre the table does not name.
+DEFAULT_SPECIES: str = "chestnut"
+
+
+def species_for(genre: str) -> str:
+    """
+    The tree species a genre grows.
+
+    :param genre: Genre name.
+    :return: A key of :data:`kg_utils.viz3d.SPECIES`.
+    """
+    return GENRE_SPECIES.get(genre, DEFAULT_SPECIES)
+
+
+#: Circumference one bark texture tile covers, in scene units.  The web
+#: forest's 0.9 m at its 1.7 / 4 world scale, so the bark reads the same size.
+BARK_TILE: float = 0.9 * 4.0 / 1.7
+
+
+def bark_texture_path(species: str) -> Path | None:
+    """
+    The species' bark colour map, shipped in ``gutenberg_kg/assets/bark/``.
+
+    CC0 textures from ambientCG, the same files the Knowledge Press web
+    forest uses; see that directory's ``CREDITS.md``.
+
+    :param species: A key of :data:`kg_utils.viz3d.SPECIES`.
+    :return: The image path, or ``None`` if the species has no bark image.
+    """
+    path = resources.files("gutenberg_kg") / "assets" / "bark" / f"{species}_color.jpg"
+    return Path(str(path)) if path.is_file() else None
+
+
+def book_habit(slug: str, genre: str) -> Habit:
+    """
+    One book's growth habit: its genre's species, nudged per book so a grove
+    is not a row of clones.  Deterministic in *slug*.
+
+    :param slug: Book slug.
+    :param genre: Genre name.
+    :return: The varied :class:`~kg_utils.viz3d.Habit`.
+    """
+    return vary_habit(SPECIES[species_for(genre)], slug)
 
 
 def _nearest_neighbour_gap(points: np.ndarray) -> np.ndarray:
@@ -256,6 +334,8 @@ class ForestLayout(Layout3D):
         self.branch_documents: set[str] = set()
         # book slug → [(period label, entry count)] for entry-structured books
         self.book_periods: dict[str, list[tuple[str, int]]] = {}
+        # book slug → growth habit its crown was placed with; grow with the same
+        self.book_habits: dict[str, Habit] = {}
 
     def _period_groups(self, branch_nodes: list[LayoutNode]) -> list[tuple[str, list[LayoutNode]]]:
         """
@@ -302,6 +382,7 @@ class ForestLayout(Layout3D):
         self.book_chunks = {}
         self.book_trunks = {}
         self.branch_documents = set()
+        self.book_habits = {}
 
         # Build containment hierarchy
         children: dict[str, list[str]] = defaultdict(list)
@@ -360,6 +441,8 @@ class ForestLayout(Layout3D):
             for slug, book_xy in zip(slugs, book_positions):
                 bx, by = float(book_xy[0]), float(book_xy[1])
                 book_nodes = books_nodes[slug]
+                habit = book_habit(slug, genre)
+                self.book_habits[slug] = habit
 
                 # Count chunks to determine trunk height; cap so no book dominates
                 n_chunks = sum(1 for n in book_nodes if n.kind == "chunk")
@@ -396,7 +479,6 @@ class ForestLayout(Layout3D):
 
                 # Branch nodes — spiral up the trunk (B: real tree branching)
                 n_branches = len(branch_nodes)
-                golden_angle = np.pi * (3.0 - np.sqrt(5.0))  # ≈ 137.5°
                 branch_length = 0.0  # reused by canopy cloud below
                 if n_branches and entry_structured:
                     # A diary has no chapters — just thousands of dated entries
@@ -411,25 +493,10 @@ class ForestLayout(Layout3D):
                     branch_length = self.branch_radius + np.sqrt(n_limbs) * 0.5
                     mean_members = n_branches / n_limbs
 
-                    limb_z = [
-                        trunk_height * (0.35 + 0.60 * limb / max(n_limbs - 1, 1))
-                        for limb in range(n_limbs)
-                    ]
-                    limb_tips = np.array(
-                        [
-                            [
-                                bx
-                                + branch_length
-                                * (1.0 - (z / trunk_height) * 0.35)
-                                * np.cos(limb * golden_angle),
-                                by
-                                + branch_length
-                                * (1.0 - (z / trunk_height) * 0.35)
-                                * np.sin(limb * golden_angle),
-                                z,
-                            ]
-                            for limb, z in enumerate(limb_z)
-                        ]
+                    # The species' envelope places the limbs, as it does a
+                    # book's sections.
+                    limb_tips = crown_sections(
+                        n_limbs, trunk_height, branch_length, habit, base=(bx, by)
                     )
                     # Size clusters to the room each limb actually has.  A fixed
                     # fraction of the crown radius works for ten limbs and fails
@@ -446,11 +513,8 @@ class ForestLayout(Layout3D):
                         # Within that room, a busy year still fills more of it.
                         weight = min(np.sqrt(len(members) / mean_members), 1.6)
                         cluster_r = min(0.45 * room[limb] * weight, branch_length * 0.4 * weight)
-                        spread = oriented_cluster(
-                            len(members),
-                            tip,
-                            leaf_facing(tip - np.array([bx, by, z])),
-                            cluster_r,
+                        spread = section_cluster(
+                            len(members), tip, np.array([bx, by, z]), cluster_r, habit
                         )
                         for sec, pos in zip(members, spread):
                             positions[sec.id] = pos
@@ -458,18 +522,13 @@ class ForestLayout(Layout3D):
 
                 elif n_branches:
                     branch_length = self.branch_radius + np.sqrt(n_branches) * 0.5
-                    for i, sec in enumerate(branch_nodes):
-                        t = i / max(n_branches - 1, 1)
-                        z = trunk_height * (0.30 + 0.65 * t)
-                        angle = i * golden_angle
-                        radius = branch_length * (1.0 - (z / trunk_height) * 0.4)
-                        sec_pos = np.array(
-                            [
-                                bx + radius * np.cos(angle),
-                                by + radius * np.sin(angle),
-                                z,
-                            ]
-                        )
+                    # Sections climb the species' crown envelope on the golden
+                    # angle (or in whorls), each as far out as the crown is wide.
+                    tips = crown_sections(
+                        n_branches, trunk_height, branch_length, habit, base=(bx, by)
+                    )
+                    for sec, sec_pos in zip(branch_nodes, tips):
+                        z = float(sec_pos[2])
                         positions[sec.id] = sec_pos
                         # Branch line: point on trunk axis at section's Z → section tip
                         self.branch_lines.append((np.array([bx, by, z]), sec_pos))
@@ -497,9 +556,12 @@ class ForestLayout(Layout3D):
                     # The cluster faces the way its limb points, not straight up:
                     # a hemisphere filtered on world +Z gives every sub-canopy the
                     # same vertical dome no matter which way its branch runs, which
-                    # is the giveaway that reads as wrong in parallax.
-                    facing = leaf_facing(sec_pos - np.array([bx, by, float(sec_pos[2])]))
-                    for cid, cpos in zip(chunk_ids, oriented_cluster(n_c, sec_pos, facing, leaf_r)):
+                    # is the giveaway that reads as wrong in parallax.  The species
+                    # spreads it and lifts or hangs it.
+                    axis = np.array([bx, by, float(sec_pos[2])])
+                    for cid, cpos in zip(
+                        chunk_ids, section_cluster(n_c, sec_pos, axis, leaf_r, habit)
+                    ):
                         positions[cid] = cpos
                         book_chunk_pts.append(cpos)
 
@@ -610,17 +672,13 @@ class SceneFilters:
 # Organic hero tree — the light-field subject
 # ---------------------------------------------------------------------------
 
-#: Growth bias per genre.  Positive Z reaches for light (conifer-like), negative
-#: droops (willow-like).  Genre already carries a colour; a silhouette doubles
-#: what it says at forest distance.
+#: Growth bias per genre: the upward pull of the genre's species
+#: (:data:`GENRE_SPECIES`).  Trees now grow with their species' whole habit;
+#: this stays for callers that only want the tropism.
 GENRE_TROPISM: dict[str, tuple[float, float, float]] = {
-    "poetry": (0.0, 0.0, -0.10),
-    "philosophy": (0.0, 0.0, 0.30),
-    "sacred-texts": (0.0, 0.0, 0.28),
-    "diaries": (0.0, 0.0, 0.05),
-    "letters": (0.0, 0.0, 0.05),
+    genre: (0.0, 0.0, SPECIES[species].tropism) for genre, species in GENRE_SPECIES.items()
 }
-DEFAULT_TROPISM: tuple[float, float, float] = (0.0, 0.0, 0.18)
+DEFAULT_TROPISM: tuple[float, float, float] = (0.0, 0.0, SPECIES[DEFAULT_SPECIES].tropism)
 
 WOOD_COLOR = "#6B4A2E"
 
@@ -719,6 +777,8 @@ class TreeGeometry:
     :param title: One-line stats banner.
     :param counts: Node count per kind.
     :param trunk_height: Schematic trunk height, a useful focal-plane height.
+    :param species: The tree species (:data:`GENRE_SPECIES`), which picks the
+        bark and leaf shape a renderer draws.
     """
 
     skeleton: Skeleton
@@ -733,6 +793,7 @@ class TreeGeometry:
     title: str
     counts: Counter
     trunk_height: float
+    species: str = DEFAULT_SPECIES
 
     @property
     def leaf_colors(self) -> list[str]:
@@ -763,7 +824,8 @@ def grow_tree_geometry(
     :param nodes: Nodes of one book (IDs namespaced by *slug*).
     :param edges: Edges of the same book.
     :param slug: Book slug; seeds growth so the tree is reproducible.
-    :param genre: Genre name, which selects the tropism silhouette.
+    :param genre: Genre name, which selects the tree species
+        (:data:`GENRE_SPECIES`) and so the crown's envelope and growth habit.
     :param entry_times: ``{document id: ISO timestamp}`` from
         :func:`load_entry_times`; grows a dated book's limbs as calendar years.
     :param filters: Only ``show_entities`` and ``show_topics`` are consulted;
@@ -799,14 +861,15 @@ def grow_tree_geometry(
     if crown.size == 0:
         raise ValueError(f"{slug}: no chunk positions to grow toward")
 
-    report(f"Growing skeleton toward {len(crown):,} chunks...")
-    skeleton = grow_tree(
-        crown,
-        root,
-        key=slug,
-        tip_radius=tip_radius,
-        tropism=GENRE_TROPISM.get(genre, DEFAULT_TROPISM),
-    )
+    species = species_for(genre)
+    habit = layout.book_habits.get(slug) or book_habit(slug, genre)
+    report(f"Growing a {species} toward {len(crown):,} chunks...")
+    skeleton = grow_tree(crown, root, key=slug, tip_radius=tip_radius, habit=habit)
+    # Droop carries each chunk with its twig: leaves and chunk nodes follow.
+    if skeleton.crown is not None:
+        crown = skeleton.crown
+        chunk_ids = [n.id for n in nodes if n.kind == "chunk" and n.id in positions]
+        positions.update(zip(chunk_ids, crown))
     if skeleton.attractors_used < skeleton.attractors_total:
         report(
             f"Grew toward {skeleton.attractors_used:,} of {skeleton.attractors_total:,} "
@@ -861,7 +924,7 @@ def grow_tree_geometry(
     counts = Counter(n.kind for n in nodes)
     trunk_r = float(skeleton.radii[0]) if skeleton.radii is not None else 0.0
     title = (
-        f"{slug} | {genre} | chunks={counts.get('chunk', 0)}  "
+        f"{slug} | {genre} ({species}) | chunks={counts.get('chunk', 0)}  "
         f"limbs={skeleton.n_nodes}  trunk r={trunk_r:.2f}"
     )
     return TreeGeometry(
@@ -877,4 +940,5 @@ def grow_tree_geometry(
         title=title,
         counts=counts,
         trunk_height=float(trunk_height),
+        species=species,
     )
