@@ -74,6 +74,14 @@ def _resolve_book(catalogue: dict, book: str, genre: str | None):
     show_default=True,
     help="Foliage palette. Winter drops most leaves, baring the wood.",
 )
+@click.option(
+    "--plain",
+    is_flag=True,
+    help=(
+        "Draw the tree without its species look: tubes in the season's wood "
+        "colour and ellipsoid leaves instead of textured bark and species leaves."
+    ),
+)
 @click.option("--entities", is_flag=True, help="Include the gold entity spores.")
 @click.option("--topics", is_flag=True, help="Include the blue topic pollen cloud.")
 @click.option(
@@ -114,6 +122,7 @@ def cmd_quilt(
     out_dir: Path,
     schematic: bool,
     season: str,
+    plain: bool,
     entities: bool,
     topics: bool,
     leaf_size: float | None,
@@ -205,6 +214,7 @@ def cmd_quilt(
             entry_times=entry_times,
             filters=filters,
             season=season,
+            species_look=not plain,
             progress=lambda m: click.echo(f"  {m}"),
             **({"leaf_size": leaf_size} if leaf_size is not None else {}),
         )
@@ -235,6 +245,8 @@ def cmd_quilt(
 
     out_dir.mkdir(parents=True, exist_ok=True)
     suffix = "_schematic" if schematic else ("" if season == "summer" else f"_{season}")
+    if plain and not schematic:
+        suffix += "_plain"
     stem = out_dir / f"{meta.slug}{suffix}"
 
     if orbit:

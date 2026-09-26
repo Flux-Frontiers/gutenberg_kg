@@ -33,6 +33,8 @@ from kg_utils.viz3d import (
     LayoutEdge,
     LayoutNode,
     Skeleton,
+    bark_mesh,
+    leaf_frames,
     leaf_glyphs,
     seed_from_key,
     tree_mesh,
@@ -46,7 +48,9 @@ from gutenberg_kg.bookgraph import (
     load_entry_times,
     scan_corpus,
 )
+from gutenberg_kg.leafshapes import leaf_prototype
 from gutenberg_kg.treegeom import (
+    BARK_TILE,
     BRANCH_COLOR,
     DEFAULT_SEASON,
     DEFAULT_TROPISM,
@@ -72,6 +76,7 @@ from gutenberg_kg.treegeom import (
     SceneFilters,
     Season,
     TreeGeometry,
+    bark_texture_path,
     grow_tree_geometry,
 )
 
@@ -82,6 +87,7 @@ __author__ = "Eric G. Suchanek, PhD"
 # Re-exported for the many callers (and tests) that import geometry names from
 # this module.  Listed explicitly so the linter does not strip them.
 __all__ = [
+    "BARK_TILE",
     "BRANCH_COLOR",
     "DEFAULT_CORPUS",
     "DEFAULT_SEASON",
@@ -112,6 +118,7 @@ __all__ = [
     "SceneInfo",
     "TreeGeometry",
     "arc_points",
+    "bark_texture_path",
     "build_forest_scene",
     "build_tree_scene",
     "glyph_proto",
@@ -120,6 +127,7 @@ __all__ = [
     "load_entry_times",
     "make_node_mesh",
     "scan_corpus",
+    "species_leaf_glyphs",
 ]
 
 
@@ -451,6 +459,43 @@ def build_forest_scene(
     )
 
 
+def species_leaf_glyphs(
+    positions: np.ndarray,
+    skeleton: Skeleton,
+    *,
+    species: str,
+    size: float,
+    tint: np.ndarray | None = None,
+    cling: float = 0.7,
+    seed: int = 0,
+) -> pv.PolyData:
+    """
+    Leaves in the species' own outline, placed as :func:`kg_utils.viz3d.leaf_glyphs` places them.
+
+    The same frames (:func:`kg_utils.viz3d.leaf_frames`: each leaf drawn in
+    toward its twig and turned along the nearest branch), stamped with a flat
+    species leaf (:func:`gutenberg_kg.leafshapes.leaf_prototype`) instead of a
+    flattened ellipsoid, in one glyph call.
+
+    :param positions: ``(M, 3)`` leaf positions.
+    :param skeleton: Grown skeleton.
+    :param species: Species name; picks the outline.
+    :param size: Half a leaf's length, in scene units.
+    :param tint: Optional ``(M,)`` scalar per leaf, carried as ``"tint"``.
+    :param cling: How far each leaf is drawn toward its twig, ``0`` to ``1``.
+    :param seed: RNG seed for the roll jitter.
+    :return: Glyphed ``PolyData``, one actor's worth.
+    """
+    pts, vecs = leaf_frames(positions, skeleton, size=size, cling=cling, seed=seed)
+    if pts.size == 0:
+        return pv.PolyData()
+    cloud = pv.PolyData(pts)
+    if tint is not None:
+        cloud["tint"] = np.asarray(tint, dtype=float)
+    cloud["direction"] = vecs
+    return cloud.glyph(geom=leaf_prototype(species, size), orient="direction", scale=False)
+
+
 def build_tree_scene(
     nodes: list[LayoutNode],
     edges: list[LayoutEdge],
@@ -464,6 +509,7 @@ def build_tree_scene(
     tip_radius: float = 0.05,
     leaf_size: float = 0.32,
     ground_size: float = 0.0,
+    species_look: bool = True,
     progress: Callable[[str], None] | None = None,
 ) -> SceneInfo:
     """
@@ -491,6 +537,11 @@ def build_tree_scene(
     :param ground_size: Ground plane edge length; ``0`` (the default here)
         omits it, since an effectively infinite plane guarantees off-budget
         disparity at the horizon.
+    :param species_look: Draw the wood as one continuous sweep textured with
+        the species' bark (:func:`kg_utils.viz3d.bark_mesh`) and the leaves in
+        the species' outline (:mod:`gutenberg_kg.leafshapes`).  ``False``
+        keeps the plain look: tubes in the season's wood colour and
+        ellipsoid leaves.
     :param progress: Optional ``fn(message)`` progress callback.
     :return: :class:`SceneInfo`, with ``layout`` set and the grown skeleton
         reachable through :attr:`SceneInfo.skeleton`.
@@ -515,18 +566,39 @@ def build_tree_scene(
     plotter.set_background(palette.sky[0], top=palette.sky[1])  # ty: ignore[invalid-argument-type]
 
     report(f"Sweeping {skeleton.n_nodes:,} skeleton nodes into wood...")
-    wood = tree_mesh(skeleton)
-    if wood.n_points:
-        plotter.add_mesh(wood, color=palette.wood, smooth_shading=True, name="wood")
+    bark_path = bark_texture_path(tree.species) if species_look else None
+    if bark_path is not None:
+        # One continuous sweep with UVs, so the species' bark wraps each limb
+        # in whole tiles and keeps the image's own aspect along it.
+        bark = pv.read_texture(str(bark_path))
+        width, height = bark.dimensions[:2]
+        wood = bark_mesh(skeleton, aspect=height / width, tile=BARK_TILE)
+        if wood.n_points:
+            plotter.add_mesh(wood, texture=bark, smooth_shading=True, name="wood")
+    else:
+        wood = tree_mesh(skeleton)
+        if wood.n_points:
+            plotter.add_mesh(wood, color=palette.wood, smooth_shading=True, name="wood")
 
     report(f"Placing leaves ({season})...")
-    leaves = leaf_glyphs(
-        tree.leaf_points,
-        skeleton,
-        size=tree.leaf_radius,
-        tint=tree.leaf_tint,
-        seed=seed_from_key(slug + ":leaves"),
-    )
+    leaf_seed = seed_from_key(slug + ":leaves")
+    if species_look:
+        leaves = species_leaf_glyphs(
+            tree.leaf_points,
+            skeleton,
+            species=tree.species,
+            size=tree.leaf_radius,
+            tint=tree.leaf_tint,
+            seed=leaf_seed,
+        )
+    else:
+        leaves = leaf_glyphs(
+            tree.leaf_points,
+            skeleton,
+            size=tree.leaf_radius,
+            tint=tree.leaf_tint,
+            seed=leaf_seed,
+        )
     if leaves.n_points:
         from matplotlib.colors import ListedColormap  # pyvista dependency, always present
 
