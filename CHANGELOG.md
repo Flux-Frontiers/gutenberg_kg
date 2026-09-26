@@ -8,6 +8,29 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Added
+
+- **Hero trees grow as species.** Each genre maps to one of nine tree
+  species (`GENRE_SPECIES`: oak, chestnut, fir, plane, blackthorn, pine,
+  birch, willow, poplar — the same mapping as the Knowledge Press web forest),
+  and the species' growth habit from `kgmodule-utils` 0.25.0
+  (`kg_utils.viz3d.species`) shapes the tree: `ForestLayout` places sections
+  and diary limbs inside the species' crown envelope (`crown_sections`,
+  `section_cluster`), and `grow_tree_geometry` grows the wood with the
+  species' tropism, reach, step, jitter, taper, leader and droop. Each book
+  nudges its species a few percent (`book_habit`), so a grove is not a row of
+  clones. The book still sets the height, the sections and one crown point
+  per chunk; droop carries each chunk with its twig, so every leaf stays on
+  the wood. `ForestLayout.book_habits` records the habit each crown was
+  placed with, and the tree's title names its species.
+
+### Changed
+
+- **`GENRE_TROPISM` now follows the species table**: each genre's upward pull
+  is its species' tropism. Trees grow with the whole habit; the table stays
+  for callers that only want the tropism.
+- **Requires `kgmodule-utils` >= 0.25.0** for the species engine.
+
 ## [1.23.0] - 2026-09-25
 
 ### Added
