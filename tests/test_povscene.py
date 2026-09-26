@@ -45,6 +45,7 @@ from gutenberg_kg.treegeom import (  # noqa: E402
     SceneFilters,
     bark_texture_path,
     grow_tree_geometry,
+    species_leaf_frames,
 )
 
 #: Identifiers quiltwright.povgen.swept_scene declares. Named here because this
@@ -248,18 +249,20 @@ class TestBark:
 
 
 class TestFoliage:
-    def test_one_instance_per_leaf(self, geometry, sdl):
-        assert len(_instances(sdl)) == len(geometry.leaf_points)
+    """The plain look's ellipsoid leaves, placed by ``leaf_frames``."""
 
-    def test_the_prototype_is_declared_once(self, sdl):
-        assert sdl.count(f"#declare {LEAF_PROTOTYPE} =") == 1
+    def test_one_instance_per_leaf(self, geometry, plain_sdl):
+        assert len(_instances(plain_sdl)) == len(geometry.leaf_points)
 
-    def test_instance_scale_is_the_leaf_aspect(self, geometry, sdl):
+    def test_the_prototype_is_declared_once(self, plain_sdl):
+        assert plain_sdl.count(f"#declare {LEAF_PROTOTYPE} =") == 1
+
+    def test_instance_scale_is_the_leaf_aspect(self, geometry, plain_sdl):
         expected = np.asarray(LEAF_ASPECT) * geometry.leaf_radius
-        for scale, _, _ in _instances(sdl):
+        for scale, _, _ in _instances(plain_sdl):
             assert np.allclose(scale, expected)
 
-    def test_leaves_sit_where_leaf_frames_puts_them(self, geometry, sdl):
+    def test_leaves_sit_where_leaf_frames_puts_them(self, geometry, plain_sdl):
         # Position parity with the PyVista path, checked without PyVista:
         # both backends call leaf_frames, so the emitted translations are that
         # function's output with z negated on the way out.
@@ -270,21 +273,67 @@ class TestFoliage:
             cling=0.7,
             seed=seed_from_key(SLUG + ":leaves"),
         )
-        emitted = np.asarray([t for _, t, _ in _instances(sdl)])
+        emitted = np.asarray([t for _, t, _ in _instances(plain_sdl)])
         expected = points.copy()
         expected[:, 2] *= -1.0
         assert np.allclose(np.sort(emitted, axis=0), np.sort(expected, axis=0))
 
-    def test_every_palette_colour_is_declared_and_used(self, geometry, sdl):
-        declared = set(re.findall(rf"#declare ({LEAF_TEXTURE}\d+) =", sdl))
+    def test_every_palette_colour_is_declared_and_used(self, geometry, plain_sdl):
+        declared = set(re.findall(rf"#declare ({LEAF_TEXTURE}\d+) =", plain_sdl))
         assert len(declared) == len(geometry.palette.foliage)
-        assert {texture for _, _, texture in _instances(sdl)} <= declared
+        assert {texture for _, _, texture in _instances(plain_sdl)} <= declared
 
     def test_winter_bares_the_wood(self):
         nodes, edges = _book()
         summer = grow_tree_geometry(nodes, edges, slug=SLUG, season="summer")
         winter = grow_tree_geometry(nodes, edges, slug=SLUG, season="winter")
-        leaves = [len(_instances(tree_pov_scene(g, slug=SLUG).sdl())) for g in (summer, winter)]
+        leaves = [
+            len(_instances(tree_pov_scene(g, slug=SLUG, species_look=False).sdl()))
+            for g in (summer, winter)
+        ]
+        assert leaves[1] < leaves[0]
+
+
+class TestSpeciesLeaves:
+    """The default look's leaves: the web's hang, in the species' outline."""
+
+    _LEAF = re.compile(r"object \{ Leaf scale ([-\d.eE+]+) matrix <[^>]*> translate <([^>]*)> \}")
+
+    def test_one_outline_instance_per_leaf(self, geometry, sdl):
+        assert len(self._LEAF.findall(sdl)) == len(geometry.leaf_points)
+        assert sdl.count("#declare Leaf = polygon {") == 1
+
+    def test_leaves_sit_where_species_leaf_frames_puts_them(self, geometry, sdl):
+        centres, half, *_ = species_leaf_frames(
+            geometry.leaf_points,
+            geometry.skeleton,
+            size=geometry.leaf_radius,
+            tint=geometry.leaf_tint,
+            n_tints=len(geometry.palette.foliage),
+        )
+        found = self._LEAF.findall(sdl)
+        emitted = np.asarray([np.fromstring(t, sep=",") for _, t in found])
+        expected = centres.copy()
+        expected[:, 2] *= -1.0
+        assert np.allclose(np.sort(emitted, axis=0), np.sort(expected, axis=0), atol=1e-4)
+        assert np.allclose(sorted(float(s) for s, _ in found), np.sort(half), rtol=1e-4)
+
+    def test_every_leaf_colour_is_declared(self, geometry, sdl):
+        for i in np.unique(np.asarray(geometry.leaf_tint, dtype=int)):
+            assert f"#declare Leaf{i} = texture" in sdl
+            assert f"texture {{ Leaf{i} }}" in sdl
+
+    def test_the_species_look_declares_version_3_7(self, sdl, plain_sdl):
+        assert "#version 3.7;" in sdl
+        assert "#version" not in plain_sdl
+
+    def test_winter_bares_the_wood(self):
+        nodes, edges = _book()
+        summer = grow_tree_geometry(nodes, edges, slug=SLUG, season="summer")
+        winter = grow_tree_geometry(nodes, edges, slug=SLUG, season="winter")
+        leaves = [
+            len(self._LEAF.findall(tree_pov_scene(g, slug=SLUG).sdl())) for g in (summer, winter)
+        ]
         assert leaves[1] < leaves[0]
 
 

@@ -34,7 +34,6 @@ from kg_utils.viz3d import (
     LayoutNode,
     Skeleton,
     bark_mesh,
-    leaf_frames,
     leaf_glyphs,
     seed_from_key,
     tree_mesh,
@@ -48,7 +47,7 @@ from gutenberg_kg.bookgraph import (
     load_entry_times,
     scan_corpus,
 )
-from gutenberg_kg.leafshapes import leaf_prototype
+from gutenberg_kg.leafshapes import LEAF_SHAPES, leaf_outline
 from gutenberg_kg.treegeom import (
     BARK_TILE,
     BRANCH_COLOR,
@@ -78,6 +77,7 @@ from gutenberg_kg.treegeom import (
     TreeGeometry,
     bark_texture_path,
     grow_tree_geometry,
+    species_leaf_frames,
 )
 
 logger = logging.getLogger(__name__)
@@ -466,34 +466,51 @@ def species_leaf_glyphs(
     species: str,
     size: float,
     tint: np.ndarray | None = None,
-    cling: float = 0.7,
-    seed: int = 0,
+    n_tints: int = 1,
 ) -> pv.PolyData:
     """
-    Leaves in the species' own outline, placed as :func:`kg_utils.viz3d.leaf_glyphs` places them.
+    Leaves in the species' own outline, hung as the Knowledge Press web forest hangs them.
 
-    The same frames (:func:`kg_utils.viz3d.leaf_frames`: each leaf drawn in
-    toward its twig and turned along the nearest branch), stamped with a flat
-    species leaf (:func:`gutenberg_kg.leafshapes.leaf_prototype`) instead of a
-    flattened ellipsoid, in one glyph call.
+    Each leaf's frame comes from :func:`~gutenberg_kg.treegeom.species_leaf_frames`
+    (stalk on its nearest twig, blade out and lifted, face to the sky; the web's
+    size and jitter), the same frames the POV-Ray path instances.  The outline
+    (:func:`gutenberg_kg.leafshapes.leaf_outline`) is placed in each frame
+    directly rather than glyphed, because a glyph call aims one axis and leaves
+    the roll to chance.
 
     :param positions: ``(M, 3)`` leaf positions.
     :param skeleton: Grown skeleton.
     :param species: Species name; picks the outline.
-    :param size: Half a leaf's length, in scene units.
-    :param tint: Optional ``(M,)`` scalar per leaf, carried as ``"tint"``.
-    :param cling: How far each leaf is drawn toward its twig, ``0`` to ``1``.
-    :param seed: RNG seed for the roll jitter.
-    :return: Glyphed ``PolyData``, one actor's worth.
+    :param size: Leaf size after density scaling (``TreeGeometry.leaf_radius``).
+    :param tint: Optional ``(M,)`` palette index per leaf, carried as ``"tint"``
+        and setting the size jitter.
+    :param n_tints: Palette length the tints index into.
+    :return: One ``PolyData`` of every leaf.
     """
-    pts, vecs = leaf_frames(positions, skeleton, size=size, cling=cling, seed=seed)
-    if pts.size == 0:
+    centres, half, across, blades, _ = species_leaf_frames(
+        positions, skeleton, size=size, tint=tint, n_tints=n_tints
+    )
+    if not len(centres):
         return pv.PolyData()
-    cloud = pv.PolyData(pts)
+    outline = leaf_outline(LEAF_SHAPES.get(species, LEAF_SHAPES["chestnut"]))
+    k = len(outline)
+    # Ear-clip the outline once; it adds no points, so its triangles index the
+    # outline and repeat at every leaf.
+    flat = np.column_stack([outline, np.zeros(k)])
+    triangles = (
+        pv.PolyData(flat, np.concatenate([[k], np.arange(k)])).triangulate().faces.reshape(-1, 4)
+    )
+    ox, oy = outline[:, 0], outline[:, 1]
+    points = centres[:, None, :] + half[:, None, None] * (
+        ox[None, :, None] * across[:, None, :] + oy[None, :, None] * blades[:, None, :]
+    )
+    offsets = (np.arange(len(centres)) * k)[:, None, None]
+    cells = triangles[None, :, 1:] + offsets
+    faces = np.concatenate([np.full(cells.shape[:2] + (1,), 3), cells], axis=2).ravel()
+    leaves = pv.PolyData(points.reshape(-1, 3), faces)
     if tint is not None:
-        cloud["tint"] = np.asarray(tint, dtype=float)
-    cloud["direction"] = vecs
-    return cloud.glyph(geom=leaf_prototype(species, size), orient="direction", scale=False)
+        leaves["tint"] = np.repeat(np.asarray(tint, dtype=float), k)
+    return leaves
 
 
 def build_tree_scene(
@@ -589,7 +606,7 @@ def build_tree_scene(
             species=tree.species,
             size=tree.leaf_radius,
             tint=tree.leaf_tint,
-            seed=leaf_seed,
+            n_tints=len(palette.foliage),
         )
     else:
         leaves = leaf_glyphs(

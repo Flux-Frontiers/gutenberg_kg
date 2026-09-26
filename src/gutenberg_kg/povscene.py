@@ -53,14 +53,18 @@ from PIL import Image
 from quiltwright.povgen import (
     Finish,
     ImageTexture,
+    Instance,
     Mesh2,
     PovScene,
+    Texture,
+    Union,
     parse_color,
     pov_camera_from_frame,
     swept_scene,
 )
 from quiltwright.povray import PovCamera, QuiltSpec
 
+from gutenberg_kg.leafshapes import LEAF_SHAPES, leaf_outline
 from gutenberg_kg.treegeom import (
     BARK_TILE,
     DEFAULT_SEASON,
@@ -71,6 +75,7 @@ from gutenberg_kg.treegeom import (
     TreeGeometry,
     bark_texture_path,
     grow_tree_geometry,
+    species_leaf_frames,
 )
 
 logger = logging.getLogger(__name__)
@@ -95,6 +100,10 @@ BARK_TINT_LIFT: float = 0.55
 
 #: Bark relief, as POV-Ray ``bump_size`` on the photograph's own brightness.
 BARK_BUMP: float = 0.4
+
+#: POV-Ray version the species look declares.  Undeclared, POV-Ray lights the
+#: scene in its pre-3.7 mode, which washes the bark photograph out.
+SPECIES_POV_VERSION = "3.7"
 
 #: Foliage finish.  A weak, wide highlight: leaves are waxy, not wet.
 LEAF_FINISH = Finish(ambient=0.18, diffuse=0.78, phong=0.15, phong_size=12.0)
@@ -147,6 +156,50 @@ def bark_tint(wood: str) -> str:
     linear += (1.0 - linear) * BARK_TINT_LIFT
     srgb = np.where(linear <= 0.0031308, linear * 12.92, 1.055 * linear ** (1 / 2.4) - 0.055)
     return "#" + "".join(f"{round(float(c) * 255):02x}" for c in srgb)
+
+
+def add_species_leaves(scene: PovScene, geometry: TreeGeometry) -> None:
+    """
+    Hang the tree's leaves as the web forest does, in the species' outline.
+
+    Each leaf is placed and sized by
+    :func:`~gutenberg_kg.treegeom.species_leaf_frames` -- the same frames the
+    PyVista path uses -- and drawn as one flat ``polygon`` of the species'
+    outline (:mod:`gutenberg_kg.leafshapes`), declared once and instanced per
+    leaf.
+
+    :param scene: Scene to add the leaves to.
+    :param geometry: The placed tree.
+    """
+    palette = geometry.palette.foliage
+    tint = np.asarray(geometry.leaf_tint, dtype=int)
+    centres, half, across, blades, faces = species_leaf_frames(
+        geometry.leaf_points,
+        geometry.skeleton,
+        size=geometry.leaf_radius,
+        tint=tint,
+        n_tints=len(palette),
+    )
+    if not len(centres):
+        return
+    outline = leaf_outline(LEAF_SHAPES.get(geometry.species, LEAF_SHAPES["chestnut"]))
+    ring = [*outline, outline[0]]
+    points = ", ".join(f"<{x:.5g}, {y:.5g}>" for x, y in ring)
+    scene.declare("Leaf", f"polygon {{ {len(ring)}, {points} }}")
+
+    for i, colour in enumerate(palette):
+        members = [
+            Instance(
+                "Leaf",
+                translate=centres[k],
+                scale=float(half[k]),
+                matrix=np.stack([across[k], blades[k], faces[k]]),
+            )
+            for k in np.flatnonzero(tint == i)
+        ]
+        if members:
+            scene.declare_texture(f"Leaf{i}", Texture(color=colour, finish=LEAF_FINISH))
+            scene.add(Union(members, texture=f"Leaf{i}"))
 
 
 def tree_pov_scene(
@@ -202,11 +255,15 @@ def tree_pov_scene(
         for why this is not ``1.0``.
     :param sky: Background colour override, ``"#rrggbb"``.  ``None`` keeps the
         season's own sky, which is chosen for a dark hero shot.
-    :param species_look: Wrap the wood in the species' bark photograph, tinted
-        by the season (:func:`bark_tint`), as a ``mesh2`` from
-        :func:`kg_utils.viz3d.bark_sweep`.  ``False``, or a species with no
-        bark image, draws plain ``sphere_sweep`` limbs in the season's wood
-        colour.  The ``.pov`` names the photograph by file name, and
+    :param species_look: The web forest's look.  The wood wears the species'
+        bark photograph, tinted by the season (:func:`bark_tint`), as a
+        ``mesh2`` from :func:`kg_utils.viz3d.bark_sweep`; the leaves hang as
+        the web hangs them, in the species' outline
+        (:func:`add_species_leaves`); and the scene declares ``#version 3.7``
+        so the photograph keeps its contrast.  ``False`` draws plain
+        ``sphere_sweep`` limbs in the season's wood colour and ellipsoid
+        leaves from :func:`kg_utils.viz3d.leaf_frames`, undeclared as before.
+        The ``.pov`` names the photograph by file name, and
         ``PovScene.write`` copies it alongside.
     :return: The composed :class:`~quiltwright.povgen.PovScene`.
     """
@@ -236,7 +293,9 @@ def tree_pov_scene(
         sweep_color=palette.wood,
         sweep_finish=BARK_FINISH,
         sweep_texture=bark,
-        instances=leaf_frames(
+        instances=None
+        if species_look
+        else leaf_frames(
             geometry.leaf_points,
             geometry.skeleton,
             size=geometry.leaf_radius,
@@ -271,6 +330,9 @@ def tree_pov_scene(
             f"Grown by kg_utils.viz3d, composed by quiltwright.povgen.swept_scene."
         ),
     )
+    if species_look:
+        add_species_leaves(scene, geometry)
+        scene.version = SPECIES_POV_VERSION
     return scene
 
 

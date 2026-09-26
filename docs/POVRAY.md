@@ -52,7 +52,7 @@ PyVista, Qt, or VTK. A headless render box needs nothing more to produce
 | Element | POV-Ray form | Why |
 |---|---|---|
 | Wood | one UV-mapped `mesh2` from `bark_sweep`, wearing the species' bark | the same sweep the PyVista path textures; `--plain` draws one `sphere_sweep` per root-to-tip path instead |
-| Foliage | `object { GutenLeaf … }` per leaf | prototype declared once, so a canopy is a line per leaf |
+| Foliage | `object { Leaf … }` per leaf: one `polygon` of the species' outline, hung as the web forest hangs it | prototype declared once, so a canopy is a line per leaf; `--plain` draws ellipsoids placed by `leaf_frames` |
 | Spores | `sphere` per halo point | entity/topic annotation, off by default |
 | Ground | `box` slab | **on by default**; catches the contact shadow |
 
@@ -76,6 +76,9 @@ UV-mapped sweep `gutenkg quilt` draws -- written as a `mesh2` with a
 - **It is dimmer than the plain wood** (`BARK_IMAGE_FINISH`, diffuse 0.55):
   the photographs are far lighter than the flat wood colour, and at the plain
   finish they clip toward white under the 2.6 key light.
+- **The scene declares `#version 3.7`.** Without it POV-Ray lights the
+  scene in its pre-3.7 mode, which washes the photograph out; `--plain` keeps
+  the undeclared scene it was tuned in.
 - **It is faster to trace.** Hamlet's tree rendered one 900x1200 view in 0.9 s
   as a bark mesh against 72 s as sweeps, and the mesh has no seams where limbs
   fork.
