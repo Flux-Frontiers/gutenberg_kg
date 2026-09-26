@@ -21,6 +21,8 @@ from __future__ import annotations
 from collections import Counter, defaultdict
 from collections.abc import Callable
 from dataclasses import dataclass
+from importlib import resources
+from pathlib import Path
 
 import numpy as np
 from kg_utils.viz3d import (
@@ -156,6 +158,25 @@ def species_for(genre: str) -> str:
     :return: A key of :data:`kg_utils.viz3d.SPECIES`.
     """
     return GENRE_SPECIES.get(genre, DEFAULT_SPECIES)
+
+
+#: Circumference one bark texture tile covers, in scene units.  The web
+#: forest's 0.9 m at its 1.7 / 4 world scale, so the bark reads the same size.
+BARK_TILE: float = 0.9 * 4.0 / 1.7
+
+
+def bark_texture_path(species: str) -> Path | None:
+    """
+    The species' bark colour map, shipped in ``gutenberg_kg/assets/bark/``.
+
+    CC0 textures from ambientCG, the same files the Knowledge Press web
+    forest uses; see that directory's ``CREDITS.md``.
+
+    :param species: A key of :data:`kg_utils.viz3d.SPECIES`.
+    :return: The image path, or ``None`` if the species has no bark image.
+    """
+    path = resources.files("gutenberg_kg") / "assets" / "bark" / f"{species}_color.jpg"
+    return Path(str(path)) if path.is_file() else None
 
 
 def book_habit(slug: str, genre: str) -> Habit:
@@ -756,6 +777,8 @@ class TreeGeometry:
     :param title: One-line stats banner.
     :param counts: Node count per kind.
     :param trunk_height: Schematic trunk height, a useful focal-plane height.
+    :param species: The tree species (:data:`GENRE_SPECIES`), which picks the
+        bark and leaf shape a renderer draws.
     """
 
     skeleton: Skeleton
@@ -770,6 +793,7 @@ class TreeGeometry:
     title: str
     counts: Counter
     trunk_height: float
+    species: str = DEFAULT_SPECIES
 
     @property
     def leaf_colors(self) -> list[str]:
@@ -916,4 +940,5 @@ def grow_tree_geometry(
         title=title,
         counts=counts,
         trunk_height=float(trunk_height),
+        species=species,
     )

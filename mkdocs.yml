@@ -92,6 +92,7 @@ nav:
           - Book graph: api/bookgraph.md
           - Scene assembly: api/scene.md
           - Tree geometry: api/treegeom.md
+          - Leaf shapes: api/leafshapes.md
           - 3-D visualizer: api/viz3d.md
           - Growth timeline: api/viz_timeline.md
           - POV-Ray scenes: api/povscene.md

@@ -24,6 +24,20 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   the wood. `ForestLayout.book_habits` records the habit each crown was
   placed with, and the tree's title names its species.
 
+- **Textured bark and species leaves on the hero tree** (sweep item 64).
+  `build_tree_scene` draws the wood with `kg_utils.viz3d.bark_mesh` -- one
+  continuous sweep whose texture coordinates wrap each limb in whole tiles --
+  wearing the species' bark (CC0 ambientCG colour maps, the web forest's own,
+  shipped in `gutenberg_kg/assets/bark/` with their credits), tiled to the
+  image's aspect and to the web's bark scale (`BARK_TILE`). Leaves take the
+  species' outline (new `gutenberg_kg.leafshapes`: lobed oak, palmate plane,
+  fir and pine needle sprays, ovate leaves of five widths, ported from the
+  web's `species.ts`), placed by `species_leaf_glyphs` on the same frames
+  `leaf_glyphs` uses and scaled to the ellipsoid leaf's area so the canopy
+  keeps its density. `species_look=False`, or `gutenkg quilt --plain`, keeps
+  the plain tree. Checked through `render_quilt`: all 48 views of a 16"
+  landscape quilt carry the textured wood.
+
 ### Changed
 
 - **`GENRE_TROPISM` now follows the species table**: each genre's upward pull
