@@ -2386,14 +2386,14 @@ viz3d = ["PyQt5 (>=5.15.0)", "markdown (>=3.6)", "param (>=2.0.0)", "pyvista (>=
 
 [[package]]
 name = "kgmodule-utils"
-version = "0.25.0"
+version = "0.25.1"
 description = "Shared types, graph store, semantic index, and pipeline base for the KGModule SDK"
 optional = false
 python-versions = "<3.14,>=3.12"
 groups = ["main"]
 files = [
-    {file = "kgmodule_utils-0.25.0-py3-none-any.whl", hash = "sha256:a443784b6521cb78831ccc25facaf3f3667a9a9e612c16e300e8cd7f9a069d05"},
-    {file = "kgmodule_utils-0.25.0.tar.gz", hash = "sha256:458cb84e07774362110b6a45df43a0ead77d8a5966c6ea1207c4a4c4f8e5c8dd"},
+    {file = "kgmodule_utils-0.25.1-py3-none-any.whl", hash = "sha256:b86bdaaf4757b869e6820f0e54b8c7fa302e1ab4f44c19419dd081e506675ff8"},
+    {file = "kgmodule_utils-0.25.1.tar.gz", hash = "sha256:50985e0aa9c853b1834caee19ecbbabbe3137200a4359b7fbc96c2d93688b58f"},
 ]
 
 [package.dependencies]
@@ -7118,4 +7118,4 @@ viz3d = ["PyQt5", "kgmodule-utils", "markdown", "param", "pyvistaqt", "quiltwrig
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.12,<3.14"
-content-hash = "e29206d374f1e3239be0be2a1d76f7bd2dbdc09d4a2d19028eb59480e5dd9457"
+content-hash = "666cdd5cdfc22a36ce1197e0485a2816ef812a35a19b10a20131eca839ba9a61"
