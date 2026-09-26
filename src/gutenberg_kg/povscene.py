@@ -13,6 +13,11 @@ This module describes the same tree *analytically* instead.  A limb is a
 declared ellipsoid.  The tree is not approximated at any zoom, and the file is
 one to two orders of magnitude smaller than the equivalent triangle dump.
 
+The exception is bark.  A ``sphere_sweep`` has no texture coordinates, so by
+default the wood is :func:`kg_utils.viz3d.bark_sweep` -- the same UV-mapped
+sweep the PyVista path draws -- written as a ``mesh2`` wearing the species'
+bark photograph.  ``species_look=False`` keeps the plain analytic sweeps.
+
 Both backends start from :func:`gutenberg_kg.treegeom.grow_tree_geometry`, so
 the ray-traced tree is the *same* tree as the rasterised one — same skeleton,
 same clung leaves, same halo — not a second implementation that has to be kept
@@ -38,26 +43,33 @@ from kg_utils.viz3d import (
     LEAF_ASPECT,
     LayoutEdge,
     LayoutNode,
+    bark_sweep,
     frame_tree,
     leaf_frames,
     limb_paths,
     seed_from_key,
 )
+from PIL import Image
 from quiltwright.povgen import (
     Finish,
+    ImageTexture,
+    Mesh2,
     PovScene,
+    parse_color,
     pov_camera_from_frame,
     swept_scene,
 )
 from quiltwright.povray import PovCamera, QuiltSpec
 
 from gutenberg_kg.treegeom import (
+    BARK_TILE,
     DEFAULT_SEASON,
     GROUND_COLOR,
     KIND_COLOR,
     SPORE_OPACITY,
     SceneFilters,
     TreeGeometry,
+    bark_texture_path,
     grow_tree_geometry,
 )
 
@@ -69,6 +81,20 @@ __author__ = "Eric G. Suchanek, PhD"
 #: which is exactly the tell that makes a ray-traced tree look worse than the
 #: rasterised one it replaced.
 BARK_FINISH = Finish(ambient=0.12, diffuse=0.85, phong=None)
+
+#: Finish for the photographed bark.  Dimmer than :data:`BARK_FINISH`: the
+#: photographs are far lighter than the flat wood colour that finish was tuned
+#: for, and at 0.85 under :data:`DEFAULT_BRIGHTNESS` they clip toward white.
+#: 0.55 chosen by eye against 0.85 and 0.40 on Hamlet's willow.
+BARK_IMAGE_FINISH = Finish(ambient=0.12, diffuse=0.55, phong=None)
+
+#: How far the season's wood colour is lifted toward white before it tints the
+#: bark photograph -- the web forest's figure (``Trees.tsx``), so the photo
+#: carries the bark and the season only shades it.
+BARK_TINT_LIFT: float = 0.55
+
+#: Bark relief, as POV-Ray ``bump_size`` on the photograph's own brightness.
+BARK_BUMP: float = 0.4
 
 #: Foliage finish.  A weak, wide highlight: leaves are waxy, not wet.
 LEAF_FINISH = Finish(ambient=0.18, diffuse=0.78, phong=0.15, phong_size=12.0)
@@ -106,6 +132,23 @@ DEFAULT_GROUND: float = 3.0
 CAMERA_SIDE: tuple[float, float, float] = (0.0, -1.0, 0.0)
 
 
+def bark_tint(wood: str) -> str:
+    """
+    The season's wood colour as the web forest tints its bark with it.
+
+    three.js mixes colours in linear light, so the lift toward white is taken
+    there and the result encoded back to sRGB hex.
+
+    :param wood: The season's wood colour, ``"#rrggbb"``.
+    :return: The tint, ``"#rrggbb"``.
+    """
+    rgb = np.asarray(parse_color(wood))
+    linear = np.where(rgb <= 0.04045, rgb / 12.92, ((rgb + 0.055) / 1.055) ** 2.4)
+    linear += (1.0 - linear) * BARK_TINT_LIFT
+    srgb = np.where(linear <= 0.0031308, linear * 12.92, 1.055 * linear ** (1 / 2.4) - 0.055)
+    return "#" + "".join(f"{round(float(c) * 255):02x}" for c in srgb)
+
+
 def tree_pov_scene(
     geometry: TreeGeometry,
     *,
@@ -116,6 +159,7 @@ def tree_pov_scene(
     lights: bool = True,
     brightness: float = DEFAULT_BRIGHTNESS,
     sky: str | None = None,
+    species_look: bool = True,
 ) -> PovScene:
     """
     Turn a placed :class:`~gutenberg_kg.treegeom.TreeGeometry` into POV-Ray SDL.
@@ -158,17 +202,40 @@ def tree_pov_scene(
         for why this is not ``1.0``.
     :param sky: Background colour override, ``"#rrggbb"``.  ``None`` keeps the
         season's own sky, which is chosen for a dark hero shot.
+    :param species_look: Wrap the wood in the species' bark photograph, tinted
+        by the season (:func:`bark_tint`), as a ``mesh2`` from
+        :func:`kg_utils.viz3d.bark_sweep`.  ``False``, or a species with no
+        bark image, draws plain ``sphere_sweep`` limbs in the season's wood
+        colour.  The ``.pov`` names the photograph by file name, and
+        ``PovScene.write`` copies it alongside.
     :return: The composed :class:`~quiltwright.povgen.PovScene`.
     """
     palette = geometry.palette
+    bark_path = bark_texture_path(geometry.species) if species_look else None
+    if bark_path is not None:
+        with Image.open(bark_path) as image:
+            width, height = image.size
+        wood = bark_sweep(
+            geometry.skeleton, aspect=height / width, tile=BARK_TILE, subdivisions=subdivisions
+        )
+        sweeps: Mesh2 | list[tuple[np.ndarray, np.ndarray]] = Mesh2(
+            vertices=wood.points, faces=wood.faces, normals=wood.normals, uv=wood.uv
+        )
+        bark: ImageTexture | None = ImageTexture(
+            bark_path, tint=bark_tint(palette.wood), bump=BARK_BUMP, finish=BARK_IMAGE_FINISH
+        )
+    else:
+        sweeps = limb_paths(geometry.skeleton, subdivisions=subdivisions)
+        bark = None
     clouds = [
         (points, radius, KIND_COLOR[kind], SPORE_OPACITY)
         for kind, (points, radius) in geometry.spores.items()
     ]
     scene = swept_scene(
-        limb_paths(geometry.skeleton, subdivisions=subdivisions),
+        sweeps,
         sweep_color=palette.wood,
         sweep_finish=BARK_FINISH,
+        sweep_texture=bark,
         instances=leaf_frames(
             geometry.leaf_points,
             geometry.skeleton,
@@ -222,6 +289,7 @@ def build_tree_pov_scene(
     ground_size: float = DEFAULT_GROUND,
     brightness: float = DEFAULT_BRIGHTNESS,
     sky: str | None = None,
+    species_look: bool = True,
     progress: Callable[[str], None] | None = None,
 ) -> tuple[PovScene, TreeGeometry]:
     """
@@ -246,6 +314,7 @@ def build_tree_pov_scene(
         omits it.  On by default — a tree with no contact shadow floats.
     :param brightness: Key-light multiplier.
     :param sky: Background colour override, ``"#rrggbb"``.
+    :param species_look: Bark-textured wood; see :func:`tree_pov_scene`.
     :param progress: Optional ``fn(message)`` progress callback.
     :return: ``(scene, geometry)`` — the geometry is returned because framing
         the camera needs the crown, and regrowing the tree to get it would be
@@ -264,7 +333,8 @@ def build_tree_pov_scene(
         leaf_size=leaf_size,
         progress=progress,
     )
-    report(f"Writing {geometry.skeleton.n_nodes:,} skeleton nodes as sphere sweeps...")
+    wood = "bark" if species_look else "sphere sweeps"
+    report(f"Writing {geometry.skeleton.n_nodes:,} skeleton nodes as {wood}...")
     scene = tree_pov_scene(
         geometry,
         subdivisions=subdivisions,
@@ -272,6 +342,7 @@ def build_tree_pov_scene(
         ground_size=ground_size,
         brightness=brightness,
         sky=sky,
+        species_look=species_look,
     )
     report(f"Composed {len(scene):,} POV-Ray objects.")
     return scene, geometry

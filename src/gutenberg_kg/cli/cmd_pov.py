@@ -35,6 +35,14 @@ from gutenberg_kg.cli.main import cli
     show_default=True,
     help="Foliage palette. Winter drops most leaves, baring the wood.",
 )
+@click.option(
+    "--plain",
+    is_flag=True,
+    help=(
+        "Draw the wood as analytic sphere sweeps in the season's wood colour "
+        "instead of a mesh wearing the species' bark photograph."
+    ),
+)
 @click.option("--entities", is_flag=True, help="Include the gold entity spores.")
 @click.option("--topics", is_flag=True, help="Include the blue topic pollen cloud.")
 @click.option(
@@ -105,6 +113,7 @@ def cmd_pov(
     genre: str | None,
     out_dir: Path,
     season: str,
+    plain: bool,
     entities: bool,
     topics: bool,
     leaf_size: float | None,
@@ -125,6 +134,10 @@ def cmd_pov(
     single declared ellipsoid.  The file is one to two orders of magnitude
     smaller than the equivalent mesh dump and its silhouettes stay exact at any
     zoom, which is the reason to leave VTK in the first place.
+
+    The wood is the exception.  By default it is a mesh wearing the species'
+    bark photograph, which is copied beside the ``.pov``, because a
+    ``sphere_sweep`` cannot carry a texture; ``--plain`` keeps the sweeps.
 
     Writing a scene needs neither PyVista nor a GL context — only ``--render``
     needs a ``povray`` binary.
@@ -160,6 +173,7 @@ def cmd_pov(
         season=season,
         subdivisions=subdivisions,
         sky=sky,
+        species_look=not plain,
         progress=lambda m: click.echo(f"  {m}"),
         **({"ground_size": ground} if ground is not None else {}),
         **({"brightness": brightness} if brightness is not None else {}),
@@ -167,7 +181,7 @@ def cmd_pov(
     )
     click.echo(f"Scene: {geometry.title}")
 
-    suffix = "" if season == "summer" else f"_{season}"
+    suffix = ("" if season == "summer" else f"_{season}") + ("_plain" if plain else "")
     stem = out_dir / f"{meta.slug}{suffix}"
     pov_path = scene.write(stem.with_suffix(".pov"))
     click.echo(f"Wrote {pov_path} ({pov_path.stat().st_size / 1024:.0f} KB)")

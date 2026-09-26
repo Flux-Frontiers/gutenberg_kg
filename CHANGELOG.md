@@ -8,6 +8,21 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Added
+
+- **`gutenkg pov` trees wear their species' bark.** The POV-Ray path drew
+  plain wood, because a `sphere_sweep` carries no texture coordinates. The
+  wood is now `kg_utils.viz3d.bark_sweep`, the UV-mapped sweep `gutenkg
+  quilt` already textures, written as a `mesh2` wearing the species' bark
+  photograph through quiltwright's new `ImageTexture`. The season tints it
+  as the web forest does (`bark_tint`: the wood colour lifted 55% toward
+  white in linear light), relief comes from the photograph's own brightness,
+  and `PovScene.write` copies the photograph next to the `.pov`. `--plain`
+  (and `species_look=False` on `tree_pov_scene` / `build_tree_pov_scene`)
+  keeps the analytic sweeps. On Hamlet's tree the bark mesh also traced in
+  0.9 s against 72 s for the sweeps, and it has no seams at the forks.
+  Needs quiltwright 0.16.0.
+
 ## [1.24.0] - 2026-09-26
 
 ### Added
