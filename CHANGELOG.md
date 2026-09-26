@@ -40,10 +40,16 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Changed
 
+- **`kgmodule-utils` 0.25.1**: its blackthorn and fir presets no longer
+  grow wandering limbs (the blackthorn's coiled into helices; the fir grew a
+  branch back down to its lowest whorl), so those genres' hero trees
+  (horror, german-literature; science-fiction, natural-history) come out
+  clean. Floor, lock, Dockerfile ARG and runpod requirement moved together
+  (`check_pins.py --bump`).
 - **`GENRE_TROPISM` now follows the species table**: each genre's upward pull
   is its species' tropism. Trees grow with the whole habit; the table stays
   for callers that only want the tropism.
-- **Requires `kgmodule-utils` >= 0.25.0** for the species engine.
+- **Requires `kgmodule-utils` >= 0.25.1** for the species engine.
 
 ## [1.23.0] - 2026-09-25
 
