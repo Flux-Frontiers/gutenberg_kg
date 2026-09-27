@@ -12,9 +12,11 @@ carry no text, or a section's chapter name overwritten by its book's title.
 
 from __future__ import annotations
 
+import ast
 import json
 import sqlite3
 from importlib.util import find_spec
+from pathlib import Path
 
 import pytest
 
@@ -370,8 +372,31 @@ class TestGuards:
 
 class TestHelpers:
     def test_rrf_matches_the_handlers_arithmetic(self):
-        # A hit both channels rank wins over one only the dense channel found.
-        assert rrf_fuse(["a", "b", "c"], ["c", "d"], 3) == ["c", "a", "b"]
+        # A hit both channels rank wins over one only the dense channel found,
+        # and the tie between dense rank 1 (b) and lexical rank 1 (d) goes to d.
+        assert rrf_fuse(["a", "b", "c"], ["c", "d"], 3) == ["c", "a", "d"]
+
+    def test_rrf_tie_goes_to_the_lexical_channel(self):
+        """ "pillar of salt": BM25's only hit ties the dense top hit at 1/60."""
+        assert rrf_fuse(["ruskin", "moby"], ["genesis"], 3) == ["genesis", "ruskin", "moby"]
+
+    def test_rrf_is_the_handlers_rrf(self):
+        # Read out of the source: importing the handler needs runpod, which
+        # the dev environment does not install (see test_synthesis_parity).
+
+        src = Path("src/gutenberg_kg/serve/handler.py").read_text(encoding="utf-8")
+        fn = next(
+            n
+            for n in ast.parse(src).body
+            if isinstance(n, ast.FunctionDef) and n.name == "_rrf_fuse"
+        )
+        namespace: dict = {"_RRF_K": 60}
+        exec(compile(ast.Module([fn], []), "handler", "exec"), namespace)  # noqa: S102
+        _rrf_fuse = namespace["_rrf_fuse"]
+
+        cases = [(["a", "b", "c"], ["c", "d"]), (["x", "y"], ["z"]), (["p"], []), ([], ["q", "r"])]
+        for dense, lexical in cases:
+            assert rrf_fuse(dense, lexical, 5) == _rrf_fuse(dense, lexical, 5)
 
     def test_fts_expression_survives_punctuation(self):
         assert fts_match_expression("What does the Quran say about Moses?").endswith('"Moses"')

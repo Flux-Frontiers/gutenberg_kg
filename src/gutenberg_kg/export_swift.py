@@ -1593,9 +1593,10 @@ def rrf_fuse(dense_ids: Sequence[str], lexical_ids: Sequence[str], k: int) -> li
     :returns: Fused ids, best-first.
     """
     scores: dict[str, float] = {}
-    for rank, node_id in enumerate(dense_ids):
-        scores[node_id] = scores.get(node_id, 0.0) + 1.0 / (RRF_K + rank)
+    # Lexical first, so a cross-channel tie goes to the exact match.
     for rank, node_id in enumerate(lexical_ids):
+        scores[node_id] = scores.get(node_id, 0.0) + 1.0 / (RRF_K + rank)
+    for rank, node_id in enumerate(dense_ids):
         scores[node_id] = scores.get(node_id, 0.0) + 1.0 / (RRF_K + rank)
     return sorted(scores, key=lambda i: -scores[i])[:k]
 
