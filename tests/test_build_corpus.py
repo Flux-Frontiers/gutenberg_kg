@@ -345,3 +345,12 @@ class TestRunBuildCorpusEarlyExits:
         opts = BuildCorpusOptions(dry_run=True, quiet=True)
         rc = run_build_corpus(["philosophy"], opts)
         assert rc == 0
+
+    def test_a_registered_genre_with_no_directory_is_skipped(self, corpus, monkeypatch):
+        """A genre in the registry but not on disk (curiosities) crashed the
+        book count with FileNotFoundError before anything was built."""
+        monkeypatch.setattr("gutenberg_kg.build_corpus.CORPUS_ROOT", corpus)
+        monkeypatch.setattr("gutenberg_kg.build_corpus.ALL_GENRES", ["philosophy", "curiosities"])
+        opts = BuildCorpusOptions(dry_run=True, quiet=True)
+        rc = run_build_corpus(["philosophy", "curiosities"], opts)
+        assert rc == 0

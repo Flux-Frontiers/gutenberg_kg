@@ -7,6 +7,7 @@ from gutenberg_kg.headings import (
     HEADING_PATTERNS,
     ROMAN_STANDALONE_PATTERN,
     STRUCTURAL_PATTERNS,
+    bare_bible_title_lines,
     is_heading,
     is_structural_heading,
 )
@@ -95,3 +96,42 @@ class TestPatternSelection:
     def test_all_caps_guard_is_consulted(self):
         assert is_heading("THE END") is not None
         assert is_heading("THE END", all_caps_guard=lambda _line: False) is None
+
+
+class TestBareBibleBookTitles:
+    """The KJV (#10) titles fifteen books with a bare name, not "The Book of"."""
+
+    def test_bare_titles_are_headings_in_a_bible(self):
+        titles = ["Ezra", "The Proverbs", "Ecclesiastes", "Hosea", "Malachi"]
+        lines = []
+        for title in titles:
+            lines += ["", title, "", "1:1 And it came to pass."]
+        found = bare_bible_title_lines(lines, 0, range(0))
+        assert {lines[i] for i in found} == set(titles)
+
+    def test_a_lone_bare_title_is_not(self):
+        """Hobbes's marginal note "The Proverbs" in Leviathan, chapter 33."""
+        lines = ["", "The Psalter", "", "The Psalmes were written.", "", "The Proverbs", ""]
+        assert bare_bible_title_lines(lines, 0, range(0)) == set()
+
+    def test_ordinal_epistles_are_headings(self):
+        """3 John has no sibling sharing its opening, so the repeated-title
+        heuristic that catches the First and Second never saw it."""
+        for line in (
+            "The Third Epistle General of John",
+            "The Second General Epistle of Peter",
+            "The First Epistle of Paul the Apostle to Timothy",
+        ):
+            assert is_heading(line) == (2, line), line
+
+    def test_names_inside_verses_are_not(self):
+        titles = ["Ezra", "The Proverbs", "Ecclesiastes", "Hosea", "Malachi"]
+        verses = [
+            "Joel, the son of Azariah, the son of Zephaniah, 6:37 The son of",
+            "Micah with me, and hath hired me, and I am his priest.",
+        ]
+        lines = []
+        for line in titles + verses:
+            lines += ["", line, ""]
+        found = {lines[i] for i in bare_bible_title_lines(lines, 0, range(0))}
+        assert found == set(titles)
