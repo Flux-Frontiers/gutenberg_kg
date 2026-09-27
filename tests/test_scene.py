@@ -317,6 +317,17 @@ class TestForestLayoutDiary:
             leader = layout.book_habits[meta.slug].leader
             assert (leader == 1.0) == (genre == "diaries")
 
+    def test_diary_limbs_spiral_up_the_trunk(self, corpus):
+        # Consecutive years step a fixed fifth of a turn around the trunk.
+        meta, nodes, edges = _load(corpus, "diaries", "A Diary")
+        layout = ForestLayout(
+            book_genre_map={meta.slug: meta.genre}, entry_times=load_entry_times(meta)
+        )
+        layout.compute(nodes, edges)
+        azimuths = [np.arctan2(*(end - base)[1::-1]) for base, end in layout.branch_lines]
+        steps = np.mod(np.diff(azimuths), 2 * np.pi)
+        assert np.allclose(steps, 2 * np.pi / 5)
+
     def test_one_year_diary_spreads_each_part_along_its_limb(self, tmp_path):
         # A single-year diary falls back to file-order parts.  Placing those by
         # date put every part's entries in the same months of its limb.

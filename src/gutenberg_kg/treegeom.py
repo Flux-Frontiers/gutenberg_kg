@@ -279,6 +279,12 @@ _DIARY_SHARE_BOUNDS = (0.5, 1.4)
 #: How far into a diary's crown its trunk rises plumb: all the way.
 _DIARY_LEADER = 1.0
 
+#: Turn between consecutive diary limbs: five years to a full turn, so the
+#: timeline reads as a spiral climbing the trunk.  The golden angle a book's
+#: sections use spreads limbs evenly but puts consecutive years on nearly
+#: opposite sides, which reads as no order at all.
+_DIARY_TURN = 2.0 * np.pi / 5.0
+
 #: Golden angle in radians; spaces entries around their limb without rows.
 _GOLDEN_ANGLE = np.pi * (3.0 - np.sqrt(5.0))
 
@@ -310,6 +316,24 @@ def _size_limbs_by_entries(
     new_reach = widest * taper * np.clip(share, *_DIARY_SHARE_BOUNDS)
     scale = np.divide(new_reach, reach, out=np.ones_like(reach), where=reach > 0)
     tips[:, :2] = np.asarray(base, dtype=float) + offsets * scale[:, None]
+    return tips
+
+
+def _spiral_limbs(tips: np.ndarray, base: tuple[float, float]) -> np.ndarray:
+    """
+    Turn diary limbs onto a spiral: limb *i* points :data:`_DIARY_TURN` * *i*
+    around the trunk, keeping its height and reach.
+
+    :param tips: ``(N, 3)`` limb tips, lowest first.
+    :param base: Trunk base ``(x, y)``.
+    :return: ``(N, 3)`` tips on the spiral.
+    """
+    tips = np.array(tips, dtype=float)
+    centre = np.asarray(base, dtype=float)
+    reach = np.linalg.norm(tips[:, :2] - centre, axis=1)
+    angle = np.arange(len(tips)) * _DIARY_TURN
+    tips[:, 0] = centre[0] + reach * np.cos(angle)
+    tips[:, 1] = centre[1] + reach * np.sin(angle)
     return tips
 
 
@@ -665,7 +689,7 @@ class ForestLayout(Layout3D):
                         base=(bx, by),
                     )
                     limb_tips = _size_limbs_by_entries(
-                        limb_tips, [len(m) for _, m in groups], (bx, by)
+                        _spiral_limbs(limb_tips, (bx, by)), [len(m) for _, m in groups], (bx, by)
                     )
                     # Size clusters to the room each limb actually has.  A fixed
                     # fraction of the crown radius works for ten limbs and fails
