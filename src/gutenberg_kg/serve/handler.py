@@ -80,6 +80,8 @@ from kg_utils.worker import handle_aux_ops
 import runpod
 from gutenberg_kg.diary_meta import DIARY_META as _DIARY_META
 from gutenberg_kg.diary_meta import diary_slug as _diary_slug
+from gutenberg_kg.serve.diary_browse import diary_chapter as _diary_chapter
+from gutenberg_kg.serve.diary_browse import diary_chapters as _diary_chapters
 from gutenberg_kg.serve.fusion import merge_by_rank as _merge_by_rank
 from gutenberg_kg.serve.image_backends import image_backends
 from gutenberg_kg.synthesis_prompts import system_prompt
@@ -766,14 +768,37 @@ def _list_books(genre: str) -> dict:
     return {"genre": genre, "books": books}
 
 
+def _diary_graph(book: str) -> Path | None:
+    """A diary's DiaryKG ``graph.sqlite``, from the ones registered at startup.
+
+    Only a registered diary resolves, so ``book`` never builds a path.
+
+    :param book: Diary directory name, e.g. ``"The Diary of Samuel Pepys — Complete"``.
+    :returns: The graph path, or ``None`` when no diary has that name.
+    """
+    graph = _KG_SQLITE.get(_diary_slug(book))
+    if graph is None or Path(graph).parent.parent.name != book:
+        return None
+    return Path(graph)
+
+
 def _get_chapters(genre: str, book: str) -> dict:
     """List a book's chapters (from ``section`` nodes, or ``chunk.chapter`` as fallback).
+
+    A diary lives in its own DiaryKG, not the DocKG; its chapters are its dated
+    entries (:mod:`gutenberg_kg.serve.diary_browse`).
 
     :param genre: Genre slug.
     :param book: Book directory name.
     :returns: ``{"book", "chapters": [{"id", "title", "index"}, ...]}``, or an
         ``"error"`` key if the book/store can't be resolved.
     """
+    if genre == "diaries":
+        graph = _diary_graph(book)
+        if graph is None:
+            return {"error": f"book not found: {genre}/{book}"}
+        return {"book": book, "chapters": _diary_chapters(graph)}
+
     store = _dockg_store_ro()
     if store is None:
         return {"error": "DocKG store unavailable"}
@@ -815,6 +840,13 @@ def _get_chapter(genre: str, book: str, section_id: str) -> dict:
     :returns: ``{"title", "text", "index", "total", "prev_id", "next_id"}``, or
         an ``"error"`` key if the book/section can't be resolved.
     """
+    if genre == "diaries":
+        graph = _diary_graph(book)
+        if graph is None:
+            return {"error": f"book not found: {genre}/{book}"}
+        entry = _diary_chapter(graph, section_id)
+        return entry if entry is not None else {"error": f"unknown entry: {section_id}"}
+
     store = _dockg_store_ro()
     if store is None:
         return {"error": "DocKG store unavailable"}
