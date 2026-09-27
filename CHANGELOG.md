@@ -22,6 +22,12 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   a full `gutenkg build-corpus`.
 - `gutenkg build-corpus` no longer crashes with `FileNotFoundError` when a
   registered genre (such as `curiosities`) has no directory under `corpus/`.
+- An exact-phrase match now wins a reciprocal-rank-fusion tie against the
+  dense channel's hit of the same rank. "pillar of salt" has one BM25 hit,
+  Genesis 19:26, which tied Ruskin's "pillar of sand" (the dense top hit) at
+  1/60 and lost on insertion order. The worker and `export_swift.rrf_fuse`
+  change together; the app's Swift `LocalRetrieval.fuse` changes in
+  knowledge_press, and `golden.json` needs a fresh `gutenkg export-swift`.
 
 ## [1.25.0] - 2026-09-26
 

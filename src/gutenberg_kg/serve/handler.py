@@ -461,10 +461,15 @@ def _rrf_fuse(dense_ids: list[str], lex_ids: list[str], k: int) -> list[str]:
     :param k: Number of fused IDs to return.
     :returns: Node IDs ordered best-first by fused RRF score.
     """
+    # Lexical first: the sort is stable, so a tie keeps first-seen order, and
+    # a tie is always one channel's rank n against the other's. The exact
+    # match wins it -- "pillar of salt" has one BM25 hit, Genesis 19:26, and
+    # it used to lose to the dense channel's top hit, Ruskin's "pillar of
+    # sand", at the same 1/60.
     scores: dict[str, float] = {}
-    for rank, nid in enumerate(dense_ids):
-        scores[nid] = scores.get(nid, 0.0) + 1.0 / (_RRF_K + rank)
     for rank, nid in enumerate(lex_ids):
+        scores[nid] = scores.get(nid, 0.0) + 1.0 / (_RRF_K + rank)
+    for rank, nid in enumerate(dense_ids):
         scores[nid] = scores.get(nid, 0.0) + 1.0 / (_RRF_K + rank)
     return sorted(scores, key=lambda i: -scores[i])[:k]
 
