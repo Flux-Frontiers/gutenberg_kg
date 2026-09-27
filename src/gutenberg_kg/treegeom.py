@@ -21,7 +21,7 @@ from __future__ import annotations
 import calendar
 from collections import Counter, defaultdict
 from collections.abc import Callable
-from dataclasses import dataclass
+from dataclasses import dataclass, replace
 from datetime import date
 from importlib import resources
 from pathlib import Path
@@ -275,6 +275,9 @@ _DIARY_LIMB_FLOOR = 0.6
 #: Bounds on a limb's length relative to its share of entries, so one sparse or
 #: prolific year cannot vanish into the trunk or overrun the crown.
 _DIARY_SHARE_BOUNDS = (0.5, 1.4)
+
+#: How far into a diary's crown its trunk rises plumb: all the way.
+_DIARY_LEADER = 1.0
 
 #: Golden angle in radians; spaces entries around their limb without rows.
 _GOLDEN_ANGLE = np.pi * (3.0 - np.sqrt(5.0))
@@ -615,6 +618,11 @@ class ForestLayout(Layout3D):
                 entry_leaf_r: dict[str, float] = {}
 
                 if entry_structured:
+                    # The trunk is the diary's timeline, so it climbs to the
+                    # last period and every year forks from it.  A species'
+                    # shorter leader let colonization serve the top few years
+                    # from one side limb, and the crown leaned that way.
+                    self.book_habits[slug] = replace(habit, leader=_DIARY_LEADER)
                     trunk_id = f"{slug}:__trunk__"
                     self.trunk_positions[trunk_id] = np.array([bx, by, 0.0])
                     self.trunk_heights[trunk_id] = trunk_height

@@ -307,6 +307,16 @@ class TestForestLayoutDiary:
             )
             assert first < last
 
+    def test_diary_trunk_climbs_to_its_last_year(self, corpus):
+        # With birch's 0.7 leader, Pepys's top three years grew from one side
+        # limb and the crown leaned; a diary's trunk now runs the whole crown.
+        layout = ForestLayout()
+        for genre, title in (("diaries", "A Diary"), ("philosophy", "A Treatise")):
+            meta, nodes, edges = _load(corpus, genre, title)
+            layout.compute(nodes, edges)
+            leader = layout.book_habits[meta.slug].leader
+            assert (leader == 1.0) == (genre == "diaries")
+
     def test_one_year_diary_spreads_each_part_along_its_limb(self, tmp_path):
         # A single-year diary falls back to file-order parts.  Placing those by
         # date put every part's entries in the same months of its limb.
