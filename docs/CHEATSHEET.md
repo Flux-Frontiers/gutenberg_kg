@@ -277,6 +277,7 @@ gutenkg quilt --book Hamlet --entities --zoom 1.2 # add the gold entity spores
 gutenkg quilt --book Hamlet --spec portrait       # another device preset
 gutenkg quilt --book Pepys --orbit 180 --cast     # 180-frame turntable, to the display
 gutenkg quilt --book Hamlet --schematic           # the spiral layout instead
+gutenkg quilt --book Pepys --still --plain        # one 1600x1600 PNG, no quilt
 ```
 
 The stereo depth budget is printed **before** every render, so an over-wide
