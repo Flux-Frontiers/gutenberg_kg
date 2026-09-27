@@ -35,7 +35,14 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   roll, so many showed edge-on. The plain look keeps `leaf_frames` and its
   ellipsoids. `species_leaf_glyphs` loses its `cling` and `seed` arguments
   and gains `n_tints`.
-  Needs quiltwright 0.16.0 and kgmodule-utils 0.26.0.
+
+### Changed
+
+- **`kgmodule-utils` floored at 0.26.0 and `quiltwright` at 0.16.0**, for
+  `hang_leaves` and for `ImageTexture`, `Mesh2(uv=...)` and
+  `PovScene(version=...)`. The floor, lock, Dockerfile ARG and runpod
+  requirement moved together. Both `quiltwright` entries (`viz3d`, `pov`)
+  moved as one, and the lock holds a single quiltwright.
 
 ## [1.24.0] - 2026-09-26
 
