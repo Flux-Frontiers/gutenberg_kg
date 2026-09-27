@@ -43,6 +43,8 @@ gutenkg quilt --book Hamlet --season autumn       # spring, summer, autumn, wint
 gutenkg quilt --book Pepys --still                # one 1600x1600 PNG instead of a quilt
 ```
 
+`gutenkg viz3d` is still under development. Its default view, the schematic forest shown before you tick "Organic tree", is hard to navigate; the organic single-tree view, `quilt` and `--still` are the reliable ways to look at a tree for now.
+
 `--still` renders the quilt's center view once, as a square PNG (`--size` sets the edge in pixels), for a quick look at a tree without a Looking Glass or a 48-view render. `--plain`, `--season` and `--zoom` apply to it as well.
 
 There are four seasons. `--season winter` drops ninety percent of the leaves, which is the point—bare wood is where the pipe model shows.

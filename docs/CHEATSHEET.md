@@ -254,6 +254,10 @@ gutenkg viz3d                                    # whole ingested corpus
 gutenkg viz3d --corpus corpus --width 1920 --height 1200
 ```
 
+`viz3d` is still under development. The default schematic forest is hard to
+navigate; for a reliable look at one book, filter to it and tick **Organic
+tree**, or render it with `gutenkg quilt --book <title> --still`.
+
 Every ingested book (one with a `.dockg/graph.sqlite`) becomes a tree: trunk =
 document, branches = sections, leaves = chunks, grouped into genre groves.
 Right-click a node to read its text. Two controls in the panel matter most:
