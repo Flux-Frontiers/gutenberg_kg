@@ -36,6 +36,7 @@ from kg_utils.viz3d import (
     fibonacci_annulus,
     fibonacci_sphere,
     grow_tree,
+    hang_leaves,
     section_cluster,
     seed_from_key,
     vary_habit,
@@ -163,6 +164,54 @@ def species_for(genre: str) -> str:
 #: Circumference one bark texture tile covers, in scene units.  The web
 #: forest's 0.9 m at its 1.7 / 4 world scale, so the bark reads the same size.
 BARK_TILE: float = 0.9 * 4.0 / 1.7
+
+
+#: The web forest's leaf size (``emitLeaves``' 0.22 m, at its 1.7 / 4 world
+#: scale) over the default ``leaf_size`` of 0.32, so species leaves come out
+#: the web's size and ``leaf_size`` still scales them.
+WEB_LEAF_RATIO: float = 0.22 * 4.0 / 1.7 / 0.32
+
+#: Half a species leaf's length, stalk to tip, over its size: the web's 1.78.
+LEAF_HALF_LENGTH: float = 1.78
+
+
+def species_leaf_frames(
+    positions: np.ndarray,
+    skeleton: Skeleton,
+    *,
+    size: float,
+    tint: np.ndarray | None = None,
+    n_tints: int = 1,
+) -> tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray, np.ndarray]:
+    """
+    Where each species leaf goes and how it lies, as the web forest draws it.
+
+    Placement is :func:`kg_utils.viz3d.hang_leaves`: stalk on the nearest
+    twig, blade out and lifted, face to the sky.  Size follows the web's
+    ``emitLeaves``: half a leaf's length is ``1.78 * r * jitter``, with *r*
+    the web's leaf size and ``jitter`` from ``0.78`` to ``1.28`` by tint.
+    A species outline (:mod:`gutenberg_kg.leafshapes`, stalk at ``y = -1``,
+    ``x`` across) lands in world space as
+    ``centre + half * (x * across + y * blade)``.
+
+    :param positions: ``(M, 3)`` leaf positions.
+    :param skeleton: Grown skeleton.
+    :param size: Leaf size after density scaling (``TreeGeometry.leaf_radius``).
+    :param tint: ``(M,)`` palette index per leaf, which sets the jitter;
+        ``None`` for no jitter.
+    :param n_tints: Palette length the tints index into.
+    :return: ``(centres, half, across, blades, faces)``: ``(M, 3)`` leaf
+        centres, ``(M,)`` half-lengths, and the ``(M, 3)`` unit frame.
+    """
+    bases, blades, faces = hang_leaves(positions, skeleton)
+    jitter = (
+        np.ones(len(bases))
+        if tint is None
+        else 0.78 + 0.5 * np.asarray(tint, dtype=float) / max(n_tints, 1)
+    )
+    half = size * WEB_LEAF_RATIO * LEAF_HALF_LENGTH * jitter
+    centres = bases + blades * half[:, None]
+    return centres, half, np.cross(blades, faces), blades, faces
 
 
 def bark_texture_path(species: str) -> Path | None:

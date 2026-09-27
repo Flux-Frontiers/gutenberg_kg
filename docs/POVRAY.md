@@ -2,7 +2,9 @@
 
 `gutenkg pov` writes a book's tree as a POV-Ray scene built from **analytic
 primitives** — a limb is a `sphere_sweep`, a leaf is one instance of a single
-declared ellipsoid — rather than as a triangle dump.
+declared ellipsoid — rather than as a triangle dump. The wood is the one
+exception: by default it is a mesh wearing the species' bark photograph (see
+[Bark](#bark)), and `--plain` keeps the sweeps.
 
 ```
                        ┌──→ gutenkg quilt  →  PyVista/VTK   →  quilt  (raster)
@@ -49,10 +51,37 @@ PyVista, Qt, or VTK. A headless render box needs nothing more to produce
 
 | Element | POV-Ray form | Why |
 |---|---|---|
-| Wood | one `sphere_sweep` per root-to-tip path | carries the pipe model's per-node radii; exact silhouette |
-| Foliage | `object { GutenLeaf … }` per leaf | prototype declared once, so a canopy is a line per leaf |
+| Wood | one UV-mapped `mesh2` from `bark_sweep`, wearing the species' bark | the same sweep the PyVista path textures; `--plain` draws one `sphere_sweep` per root-to-tip path instead |
+| Foliage | `object { Leaf … }` per leaf: one `polygon` of the species' outline, hung as the web forest hangs it | prototype declared once, so a canopy is a line per leaf; `--plain` draws ellipsoids placed by `leaf_frames` |
 | Spores | `sphere` per halo point | entity/topic annotation, off by default |
 | Ground | `box` slab | **on by default**; catches the contact shadow |
+
+### Bark
+
+A `sphere_sweep` has no texture coordinates, so it cannot wear a picture. The
+default wood is therefore `kg_utils.viz3d.bark_sweep` -- the continuous,
+UV-mapped sweep `gutenkg quilt` draws -- written as a `mesh2` with a
+`quiltwright.povgen.ImageTexture` of the species' bark from
+`gutenberg_kg/assets/bark/`. It tiles the same way as the PyVista path
+(`BARK_TILE`, the photograph's own aspect).
+
+- **The photograph travels with the scene.** The `.pov` names it by file name,
+  and writing the scene copies it alongside, so a `.pov` still renders on
+  another machine as long as its folder moves with it.
+- **The season tints it** as the web forest does: the season's wood colour,
+  lifted 55% of the way to white in linear light, multiplies the photograph
+  (`bark_tint`).
+- **Relief comes from the photograph's brightness** (`bump_map`, `BARK_BUMP`).
+  POV-Ray 3.7 reads no normal maps, so this stands in for the web's.
+- **It is dimmer than the plain wood** (`BARK_IMAGE_FINISH`, diffuse 0.55):
+  the photographs are far lighter than the flat wood colour, and at the plain
+  finish they clip toward white under the 2.6 key light.
+- **The scene declares `#version 3.7`.** Without it POV-Ray lights the
+  scene in its pre-3.7 mode, which washes the photograph out; `--plain` keeps
+  the undeclared scene it was tuned in.
+- **It is faster to trace.** Hamlet's tree rendered one 900x1200 view in 0.9 s
+  as a bark mesh against 72 s as sweeps, and the mesh has no seams where limbs
+  fork.
 
 ### The ground, and why it is on here but not in `gutenkg quilt`
 

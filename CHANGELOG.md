@@ -8,6 +8,42 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Added
+
+- **`gutenkg pov` trees wear their species' bark.** The POV-Ray path drew
+  plain wood, because a `sphere_sweep` carries no texture coordinates. The
+  wood is now `kg_utils.viz3d.bark_sweep`, the UV-mapped sweep `gutenkg
+  quilt` already textures, written as a `mesh2` wearing the species' bark
+  photograph through quiltwright's new `ImageTexture`. The season tints it
+  as the web forest does (`bark_tint`: the wood colour lifted 55% toward
+  white in linear light), relief comes from the photograph's own brightness,
+  and `PovScene.write` copies the photograph next to the `.pov`. `--plain`
+  (and `species_look=False` on `tree_pov_scene` / `build_tree_pov_scene`)
+  keeps the analytic sweeps. On Hamlet's tree the bark mesh also traced in
+  0.9 s against 72 s for the sweeps, and it has no seams at the forks.
+  The species look also declares `#version 3.7`: without it POV-Ray lights
+  the scene in its pre-3.7 mode and the bark photograph washes out.
+- **Species leaves hang as the web forest hangs them, in both renderers.**
+  `species_leaf_frames` (in `treegeom`, NumPy only) places each leaf with
+  kgmodule-utils' new `hang_leaves`. Its stalk sits on its nearest twig, its
+  blade points out and up, and its face turns to the sky. It is sized as the
+  web's `emitLeaves` sizes it. `gutenkg pov` draws each leaf as one
+  instanced `polygon` of the species' outline. `species_leaf_glyphs` (the
+  `gutenkg quilt` path) places the same outline in the same frame instead
+  of glyphing along one axis. Before this both used `leaf_frames`, which
+  floats leaves off the wood and turns them along the branch with a random
+  roll, so many showed edge-on. The plain look keeps `leaf_frames` and its
+  ellipsoids. `species_leaf_glyphs` loses its `cling` and `seed` arguments
+  and gains `n_tints`.
+
+### Changed
+
+- **`kgmodule-utils` floored at 0.26.0 and `quiltwright` at 0.16.0**, for
+  `hang_leaves` and for `ImageTexture`, `Mesh2(uv=...)` and
+  `PovScene(version=...)`. The floor, lock, Dockerfile ARG and runpod
+  requirement moved together. Both `quiltwright` entries (`viz3d`, `pov`)
+  moved as one, and the lock holds a single quiltwright.
+
 ## [1.24.0] - 2026-09-26
 
 ### Added
