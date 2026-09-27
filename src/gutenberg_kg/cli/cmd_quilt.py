@@ -113,6 +113,17 @@ def _resolve_book(catalogue: dict, book: str, genre: str | None):
     help="Render a turntable quilt VIDEO of this many frames instead of a still.",
 )
 @click.option("--fps", default=24, show_default=True, help="Frame rate for --orbit.")
+@click.option(
+    "--still",
+    is_flag=True,
+    help="Render one centred view as a PNG instead of a quilt; a quick look at the tree.",
+)
+@click.option(
+    "--size",
+    default=1600,
+    show_default=True,
+    help="Edge length in pixels of the square --still image.",
+)
 @click.option("--cast", is_flag=True, help="Send the finished quilt to Looking Glass Bridge.")
 def cmd_quilt(
     corpus_root: str,
@@ -130,6 +141,8 @@ def cmd_quilt(
     fov: float,
     orbit: int,
     fps: int,
+    still: bool,
+    size: int,
     cast: bool,
 ) -> None:
     """Render one book's knowledge tree as a Looking Glass quilt.
@@ -145,6 +158,7 @@ def cmd_quilt(
       gutenkg quilt --book Hamlet --season autumn
       gutenkg quilt --book Hamlet --spec portrait      # another device
       gutenkg quilt --book Hamlet --orbit 180 --cast
+      gutenkg quilt --book Pepys --still --plain       # one PNG, no quilt
     """
     try:
         import pyvista as pv
@@ -171,6 +185,10 @@ def cmd_quilt(
         scan_corpus,
     )
 
+    if still and (orbit or cast):
+        raise click.ClickException(
+            "--still renders one PNG; it cannot be combined with --orbit or --cast."
+        )
     if spec_name not in QUILT_PRESETS:
         raise click.ClickException(
             f"Unknown quilt preset {spec_name!r}. Choose from: {', '.join(QUILT_PRESETS)}"
@@ -191,7 +209,7 @@ def cmd_quilt(
     entry_times = load_entry_times(meta)
     filters = SceneFilters(show_entities=entities, show_topics=topics)
 
-    plotter = pv.Plotter(off_screen=True)
+    plotter = pv.Plotter(off_screen=True, window_size=[size, size] if still else None)
     if schematic:
         info = build_forest_scene(
             nodes,
@@ -229,6 +247,22 @@ def cmd_quilt(
     plotter.camera.position = (centre[0], ymin - (zmax - zmin) * 1.5, centre[2])
     plotter.reset_camera()  # ty: ignore[missing-argument]
 
+    out_dir.mkdir(parents=True, exist_ok=True)
+    suffix = "_schematic" if schematic else ("" if season == "summer" else f"_{season}")
+    if plain and not schematic:
+        suffix += "_plain"
+    stem = out_dir / f"{meta.slug}{suffix}"
+
+    if still:
+        # The same framing as the quilt's centre view, without the light-field
+        # FOV narrowing: a flat image has no depth budget to respect.
+        plotter.camera.zoom(zoom)
+        path = stem.with_name(f"{stem.name}_still.png")
+        plotter.screenshot(str(path))
+        plotter.close()
+        click.echo(f"Wrote {path}")
+        return
+
     # fov and zoom are the ones the render will use: render_quilt narrows the
     # FOV and dollies back before sweeping, so a budget taken from the camera
     # as-framed describes a picture we are not about to make.
@@ -242,12 +276,6 @@ def cmd_quilt(
             extra_depths={"sky": math.inf},
         )
     )
-
-    out_dir.mkdir(parents=True, exist_ok=True)
-    suffix = "_schematic" if schematic else ("" if season == "summer" else f"_{season}")
-    if plain and not schematic:
-        suffix += "_plain"
-    stem = out_dir / f"{meta.slug}{suffix}"
 
     if orbit:
         click.echo(f"Rendering {orbit} frames x {spec.n_views} views...")
