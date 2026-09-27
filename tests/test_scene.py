@@ -85,13 +85,21 @@ def _diary_book(book_dir, years=(1660, 1661, 1662), entries_per_year=6):
     nodes, edges = [], []
     i = 0
     for year in years:
-        for _ in range(entries_per_year):
+        for k in range(entries_per_year):
             did = f"doc:entry_{i:04d}.md"
             nodes.append((did, "document", f"entry_{i:04d}", None, f"e{i}.md", None, None))
             for c in range(2):
                 cid = f"chunk:entry_{i:04d}:{c}"
                 nodes.append(
-                    (cid, "chunk", f"c{i}{c}", None, f"e{i}.md", "text", f"{year}-01-01T00:00")
+                    (
+                        cid,
+                        "chunk",
+                        f"c{i}{c}",
+                        None,
+                        f"e{i}.md",
+                        "text",
+                        f"{year}-{1 + 2 * k:02d}-01T00:00",
+                    )
                 )
                 edges.append((did, "CONTAINS", cid))
             i += 1
@@ -246,6 +254,43 @@ class TestForestLayoutDiary:
         # Successive years sit at successive heights up the trunk.
         heights = [centres[y][2] for y in sorted(centres)]
         assert heights == sorted(heights)
+
+    def test_entries_run_along_their_limb_in_date_order(self, corpus):
+        # Entries used to pile onto the limb tip; now each sits at its point in
+        # the year, so projecting onto the limb must follow the calendar.
+        meta, nodes, edges = _load(corpus, "diaries", "A Diary")
+        times = load_entry_times(meta)
+        layout = ForestLayout(book_genre_map={meta.slug: meta.genre}, entry_times=times)
+        positions = layout.compute(nodes, edges)
+        docs = [n for n in nodes if n.kind == "document"]
+        for (year, _), (base, end) in zip(layout.book_periods[meta.slug], layout.branch_lines):
+            direction = (end - base) / np.linalg.norm(end - base)
+            members = sorted(
+                (d for d in docs if times[d.id][:4] == year), key=lambda d: times[d.id]
+            )
+            along = [float((positions[d.id] - base) @ direction) for d in members]
+            assert along == sorted(along)
+            assert along[0] > 0.0  # off the trunk, on bare wood
+
+    def test_leaves_follow_their_entry_along_the_limb(self, corpus):
+        # The leaves go where the entry is: January's near the trunk, November's
+        # out toward the tip, instead of every year's foliage at the tip.
+        meta, nodes, edges = _load(corpus, "diaries", "A Diary")
+        times = load_entry_times(meta)
+        layout = ForestLayout(book_genre_map={meta.slug: meta.genre}, entry_times=times)
+        positions = layout.compute(nodes, edges)
+        leaves: dict[str, list[str]] = {}
+        for e in edges:
+            if e.rel == "CONTAINS" and e.src in times:
+                leaves.setdefault(e.src, []).append(e.dst)
+        for (year, _), (base, end) in zip(layout.book_periods[meta.slug], layout.branch_lines):
+            direction = (end - base) / np.linalg.norm(end - base)
+            members = sorted((d for d in times if times[d][:4] == year), key=times.get)
+            first, last = (
+                np.mean([(positions[c] - base) @ direction for c in leaves[d]])
+                for d in (members[0], members[-1])
+            )
+            assert first < last
 
 
 # ---------------------------------------------------------------------------

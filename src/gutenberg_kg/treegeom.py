@@ -18,9 +18,11 @@ Author: Eric G. Suchanek, PhD
 
 from __future__ import annotations
 
+import calendar
 from collections import Counter, defaultdict
 from collections.abc import Callable
 from dataclasses import dataclass
+from datetime import date
 from importlib import resources
 from pathlib import Path
 
@@ -258,6 +260,32 @@ def _nearest_neighbour_gap(points: np.ndarray) -> np.ndarray:
     return dist.min(axis=1)
 
 
+#: Fraction of a diary limb left bare next to the trunk, so the first entries
+#: of a year hang on wood rather than inside the bole.
+_LIMB_BARE = 0.2
+
+#: How much further a diary's period limbs reach than a book's section tips.
+_DIARY_LIMB_REACH = 1.5
+
+#: Golden angle in radians; spaces entries around their limb without rows.
+_GOLDEN_ANGLE = np.pi * (3.0 - np.sqrt(5.0))
+
+
+def _limb_frame(direction: np.ndarray) -> tuple[np.ndarray, np.ndarray]:
+    """
+    Two unit vectors perpendicular to a limb and to each other.
+
+    :param direction: ``(3,)`` vector from the limb's base to its tip.
+    :return: ``(u, v)``, spanning the plane across the limb.
+    """
+    d = np.asarray(direction, dtype=float)
+    d = d / (np.linalg.norm(d) or 1.0)
+    ref = np.array([0.0, 0.0, 1.0]) if abs(d[2]) < 0.9 else np.array([1.0, 0.0, 0.0])
+    u = np.cross(d, ref)
+    u /= np.linalg.norm(u)
+    return u, np.cross(d, u)
+
+
 def _crown_halo(
     n_points: int,
     crown: np.ndarray,
@@ -413,6 +441,32 @@ class ForestLayout(Layout3D):
             runs[min(i * n_limbs // n, n_limbs - 1)].append(node)
         return [(f"part {k + 1}", v) for k, v in sorted(runs.items())]
 
+    def _entry_fractions(self, members: list[LayoutNode]) -> np.ndarray:
+        """
+        Where each entry of one period falls along its limb, from 0 to 1.
+
+        A dated entry sits at its fraction of the calendar year, so 1 January
+        is at the limb's base and 31 December at its tip, and a year the
+        diarist abandoned in May ends partway out.  Without usable dates the
+        entries are spaced evenly in file order.
+
+        :param members: One period's entry documents, in file order.
+        :return: ``(len(members),)`` fractions in ``[0, 1]``.
+        """
+        fractions = []
+        for node in members:
+            ts = str(self.entry_times.get(node.id) or "")
+            try:
+                day = date.fromisoformat(ts[:10])
+            except ValueError:
+                break
+            days = 366 if calendar.isleap(day.year) else 365
+            fractions.append((day.timetuple().tm_yday - 0.5) / days)
+        else:
+            return np.asarray(fractions, dtype=float)
+        n = len(members)
+        return (np.arange(n) + 0.5) / n
+
     def compute(
         self,
         nodes: list[LayoutNode],
@@ -511,6 +565,10 @@ class ForestLayout(Layout3D):
                 # the same XY, and the entry documents take the branch stations.
                 entry_structured = not section_nodes and len(doc_nodes) > 1
                 branch_nodes = doc_nodes if entry_structured else section_nodes
+                # Diary entries only: the limb point each leaf cluster faces
+                # away from, and the radius that keeps it on its limb.
+                entry_axis: dict[str, np.ndarray] = {}
+                entry_leaf_r: dict[str, float] = {}
 
                 if entry_structured:
                     trunk_id = f"{slug}:__trunk__"
@@ -544,8 +602,15 @@ class ForestLayout(Layout3D):
 
                     # The species' envelope places the limbs, as it does a
                     # book's sections.
+                    # Limbs reach further than a book's section tips: the
+                    # foliage now runs along them instead of bulging past the
+                    # tip, so the wood itself has to carry the crown's width.
                     limb_tips = crown_sections(
-                        n_limbs, trunk_height, branch_length, habit, base=(bx, by)
+                        n_limbs,
+                        trunk_height,
+                        branch_length * _DIARY_LIMB_REACH,
+                        habit,
+                        base=(bx, by),
                     )
                     # Size clusters to the room each limb actually has.  A fixed
                     # fraction of the crown radius works for ten limbs and fails
@@ -557,16 +622,29 @@ class ForestLayout(Layout3D):
                     for limb, (label, members) in enumerate(groups):
                         tip = limb_tips[limb]
                         z = float(tip[2])
-                        self.branch_lines.append((np.array([bx, by, z]), tip))
+                        limb_base = np.array([bx, by, z])
                         self.book_periods.setdefault(slug, []).append((label, len(members)))
                         # Within that room, a busy year still fills more of it.
                         weight = min(np.sqrt(len(members) / mean_members), 1.6)
                         cluster_r = min(0.45 * room[limb] * weight, branch_length * 0.4 * weight)
-                        spread = section_cluster(
-                            len(members), tip, np.array([bx, by, z]), cluster_r, habit
-                        )
-                        for sec, pos in zip(members, spread):
-                            positions[sec.id] = pos
+                        # Entries hang along the limb at their point in the
+                        # period rather than piling onto its tip, which for
+                        # Pepys meant ~365 entries per tip.  Each sits a little
+                        # off the limb on the golden angle, and its leaves face
+                        # away from the limb, so a year reads as a leafy branch.
+                        sleeve_r = 0.5 * cluster_r
+                        u, v = _limb_frame(tip - limb_base)
+                        stations = _LIMB_BARE + (1.0 - _LIMB_BARE) * self._entry_fractions(members)
+                        for i, (sec, t) in enumerate(zip(members, stations)):
+                            on_limb = limb_base + t * (tip - limb_base)
+                            angle = i * _GOLDEN_ANGLE
+                            offset = np.cos(angle) * u + np.sin(angle) * v
+                            positions[sec.id] = on_limb + sleeve_r * offset
+                            entry_axis[sec.id] = on_limb
+                            entry_leaf_r[sec.id] = sleeve_r
+                        # The drawn limb ends at its last entry, not at the tip.
+                        reach = float(stations.max()) if len(stations) else 1.0
+                        self.branch_lines.append((limb_base, limb_base + reach * (tip - limb_base)))
                     self.book_sections[slug] = [positions[s.id] for s in branch_nodes]
 
                 elif n_branches:
@@ -606,8 +684,11 @@ class ForestLayout(Layout3D):
                     # a hemisphere filtered on world +Z gives every sub-canopy the
                     # same vertical dome no matter which way its branch runs, which
                     # is the giveaway that reads as wrong in parallax.  The species
-                    # spreads it and lifts or hangs it.
-                    axis = np.array([bx, by, float(sec_pos[2])])
+                    # spreads it and lifts or hangs it.  A diary entry along a limb
+                    # faces away from the limb instead, and stays within its sleeve.
+                    axis = entry_axis.get(sec.id, np.array([bx, by, float(sec_pos[2])]))
+                    if sec.id in entry_leaf_r:
+                        leaf_r = min(leaf_r, entry_leaf_r[sec.id])
                     for cid, cpos in zip(
                         chunk_ids, section_cluster(n_c, sec_pos, axis, leaf_r, habit)
                     ):
