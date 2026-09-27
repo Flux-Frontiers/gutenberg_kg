@@ -40,7 +40,10 @@ Two books of different structure therefore grow different silhouettes, and a giv
 ```bash
 gutenkg viz3d                                     # tick "Organic tree", pick a book
 gutenkg quilt --book Hamlet --season autumn       # spring, summer, autumn, winter
+gutenkg quilt --book Pepys --still                # one 1600x1600 PNG instead of a quilt
 ```
+
+`--still` renders the quilt's center view once, as a square PNG (`--size` sets the edge in pixels), for a quick look at a tree without a Looking Glass or a 48-view render. `--plain`, `--season` and `--zoom` apply to it as well.
 
 There are four seasons. `--season winter` drops ninety percent of the leaves, which is the point—bare wood is where the pipe model shows.
 
