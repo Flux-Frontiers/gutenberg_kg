@@ -70,6 +70,8 @@ GENRE_LABELS: dict[str, str] = {
 class BookRow:
     slug: str
     title: str
+    # The corpus folder name: the worker's key for the book (get_chapters, get_chapter).
+    book: str
     author: str
     genre: str
     genre_label: str
@@ -155,6 +157,7 @@ def collect_book(book_dir: Path, genre: str) -> BookRow | None:
     return BookRow(
         slug=slug_from_title(title),
         title=title,
+        book=book_dir.name,
         author=author,
         genre=genre,
         genre_label=GENRE_LABELS.get(genre, genre.replace("-", " ").title()),
@@ -199,6 +202,7 @@ def emit_part(rows: list[BookRow], index: int) -> str:
         lines.append("  {")
         lines.append(f"    slug: {ts_string(r.slug)},")
         lines.append(f"    title: {ts_string(r.title)},")
+        lines.append(f"    book: {ts_string(r.book)},")
         lines.append(f"    author: {ts_string(r.author)},")
         lines.append(f"    genre: {ts_string(r.genre)},")
         lines.append(f"    genreLabel: {ts_string(r.genre_label)},")
@@ -236,6 +240,8 @@ def emit_barrel(n_parts: int) -> str:
 CATALOG_TYPES = """export type Book = {
   slug: string;
   title: string;
+  /** The worker's key for the book: its corpus folder name, which the title can differ from. */
+  book: string;
   author: string;
   genre: string;
   genreLabel: string;
