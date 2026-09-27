@@ -272,6 +272,18 @@ class TestForestLayoutDiary:
             assert along == sorted(along)
             assert along[0] > 0.0  # off the trunk, on bare wood
 
+    def test_a_full_year_is_not_squeezed_by_the_crown_taper(self, corpus):
+        # The ovoid envelope is 0.2 wide at the bottom, which gave Pepys's 936
+        # entries for 1660 a limb a fifth as long as the middle years'.  Equal
+        # years must now reach at least the floor fraction of the widest.
+        meta, nodes, edges = _load(corpus, "diaries", "A Diary")
+        # Date every entry late in its year so no limb stops early.
+        times = {k: v[:4] + "-12-15T00:00" for k, v in load_entry_times(meta).items()}
+        layout = ForestLayout(book_genre_map={meta.slug: meta.genre}, entry_times=times)
+        layout.compute(nodes, edges)
+        reach = [float(np.linalg.norm((end - base)[:2])) for base, end in layout.branch_lines]
+        assert min(reach) >= 0.5 * max(reach)
+
     def test_leaves_follow_their_entry_along_the_limb(self, corpus):
         # The leaves go where the entry is: January's near the trunk, November's
         # out toward the tip, instead of every year's foliage at the tip.

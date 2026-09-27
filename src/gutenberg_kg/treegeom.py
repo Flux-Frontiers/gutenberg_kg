@@ -267,8 +267,47 @@ _LIMB_BARE = 0.2
 #: How much further a diary's period limbs reach than a book's section tips.
 _DIARY_LIMB_REACH = 1.5
 
+#: Shortest a diary limb may be, as a fraction of the widest crown limb.  The
+#: crown envelope narrows to 0.2 at the bottom and top, which squeezed Pepys's
+#: 936 entries for 1660 into a sleeve around the trunk.
+_DIARY_LIMB_FLOOR = 0.6
+
+#: Bounds on a limb's length relative to its share of entries, so one sparse or
+#: prolific year cannot vanish into the trunk or overrun the crown.
+_DIARY_SHARE_BOUNDS = (0.5, 1.4)
+
 #: Golden angle in radians; spaces entries around their limb without rows.
 _GOLDEN_ANGLE = np.pi * (3.0 - np.sqrt(5.0))
+
+
+def _size_limbs_by_entries(
+    tips: np.ndarray, counts: list[int], base: tuple[float, float]
+) -> np.ndarray:
+    """
+    Lengthen or shorten diary limbs by how many entries each one carries.
+
+    The crown envelope still tapers the tree, but only down to
+    :data:`_DIARY_LIMB_FLOOR` of the widest limb; the length is then scaled by
+    the square root of the limb's share of entries, within
+    :data:`_DIARY_SHARE_BOUNDS`.  Height and direction are unchanged.
+
+    :param tips: ``(N, 3)`` limb tips from :func:`crown_sections`.
+    :param counts: Entries on each limb, in the same order.
+    :param base: Trunk base ``(x, y)``.
+    :return: ``(N, 3)`` resized tips.
+    """
+    tips = np.array(tips, dtype=float)
+    if not len(tips):
+        return tips
+    offsets = tips[:, :2] - np.asarray(base, dtype=float)
+    reach = np.linalg.norm(offsets, axis=1)
+    widest = float(reach.max()) or 1.0
+    taper = np.maximum(reach / widest, _DIARY_LIMB_FLOOR)
+    share = np.sqrt(np.asarray(counts, dtype=float) / max(float(np.mean(counts)), 1.0))
+    new_reach = widest * taper * np.clip(share, *_DIARY_SHARE_BOUNDS)
+    scale = np.divide(new_reach, reach, out=np.ones_like(reach), where=reach > 0)
+    tips[:, :2] = np.asarray(base, dtype=float) + offsets * scale[:, None]
+    return tips
 
 
 def _limb_frame(direction: np.ndarray) -> tuple[np.ndarray, np.ndarray]:
@@ -611,6 +650,9 @@ class ForestLayout(Layout3D):
                         branch_length * _DIARY_LIMB_REACH,
                         habit,
                         base=(bx, by),
+                    )
+                    limb_tips = _size_limbs_by_entries(
+                        limb_tips, [len(m) for _, m in groups], (bx, by)
                     )
                     # Size clusters to the room each limb actually has.  A fixed
                     # fraction of the crown radius works for ten limbs and fails
