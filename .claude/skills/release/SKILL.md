@@ -128,14 +128,23 @@ Note what this repo does **not** have, so you do not go looking: no APA citation
 block in the README (BibTeX only), no "Latest News" section, and no
 `docs/features.md`.
 
-**Corpus counts are a separate surface with its own skill.** If books were
+**Corpus counts are a separate surface, owned by a script.** If books were
 added, removed or re-ingested this cycle, the README badges, the "Corpus at a
-Glance" table, the intro prose, the partnership blurb, the BibTeX corpus totals
-and `docs/CORPUS.md` are all stale. Use the **`sync-corpus-docs`** skill for
-those rather than editing them here — it knows which numbers come from where.
-`scripts/regenerate_corpus_doc.py` regenerates `docs/CORPUS.md` and needs the
-live corpus, so it cannot run in a container that has no corpus; in that case
-update the version stamp by hand and leave the counts alone.
+Glance" table, the intro prose, the BibTeX corpus note, the "corpus stands at N
+works" line in `docs/PARTNERS.md` and `docs/CORPUS.md` are all stale. Do not
+edit those numbers by hand; `scripts/sync_corpus_docs.py` knows which come from
+the KGRAG registry and which from the `corpus/` tree:
+
+```bash
+poetry run python scripts/sync_corpus_docs.py --check   # report drift, exit 1 if any
+poetry run python scripts/sync_corpus_docs.py           # write every surface
+```
+
+It regenerates `docs/CORPUS.md` through `scripts/regenerate_corpus_doc.py`, so
+it needs the live corpus and registry and cannot run in a container that has
+neither; in that case update the version stamp by hand and leave the counts
+alone. Books added through `/add-book` have already run it; `--check` then
+exits 0.
 
 **Prose must describe what actually shipped.** A new command or module is not
 released until it is documented — check `README.md` and the relevant
