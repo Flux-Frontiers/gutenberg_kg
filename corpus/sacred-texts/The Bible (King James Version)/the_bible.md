@@ -80,27 +80,47 @@ Malachi
 
 ## The Epistle of Paul the Apostle to the Romans
 
-The First Epistle of Paul the Apostle to the Corinthians
-The Second Epistle of Paul the Apostle to the Corinthians
-The Epistle of Paul the Apostle to the Galatians
-The Epistle of Paul the Apostle to the Ephesians
-The Epistle of Paul the Apostle to the Philippians
-The Epistle of Paul the Apostle to the Colossians
-The First Epistle of Paul the Apostle to the Thessalonians
-The Second Epistle of Paul the Apostle to the Thessalonians
-The First Epistle of Paul the Apostle to Timothy
-The Second Epistle of Paul the Apostle to Timothy
-The Epistle of Paul the Apostle to Titus
-The Epistle of Paul the Apostle to Philemon
-The Epistle of Paul the Apostle to the Hebrews
-The General Epistle of James
-The First Epistle General of Peter
-The Second General Epistle of Peter
-The First Epistle General of John
-The Second Epistle General of John
-The Third Epistle General of John
-The General Epistle of Jude
-The Revelation of Saint John the Divine
+## The First Epistle of Paul the Apostle to the Corinthians
+
+## The Second Epistle of Paul the Apostle to the Corinthians
+
+## The Epistle of Paul the Apostle to the Galatians
+
+## The Epistle of Paul the Apostle to the Ephesians
+
+## The Epistle of Paul the Apostle to the Philippians
+
+## The Epistle of Paul the Apostle to the Colossians
+
+## The First Epistle of Paul the Apostle to the Thessalonians
+
+## The Second Epistle of Paul the Apostle to the Thessalonians
+
+## The First Epistle of Paul the Apostle to Timothy
+
+## The Second Epistle of Paul the Apostle to Timothy
+
+## The Epistle of Paul the Apostle to Titus
+
+## The Epistle of Paul the Apostle to Philemon
+
+## The Epistle of Paul the Apostle to the Hebrews
+
+## The General Epistle of James
+
+## The First Epistle General of Peter
+
+## The Second General Epistle of Peter
+
+## The First Epistle General of John
+
+## The Second Epistle General of John
+
+## The Third Epistle General of John
+
+## The General Epistle of Jude
+
+## The Revelation of Saint John the Divine
 
 ## The Old Testament of the King James Version of the Bible
 
@@ -23680,9 +23700,7 @@ and Boaz begat Obed, 4:22 And Obed begat Jesse, and Jesse begat David.
 
 ## The First Book of Samuel
 
-*Otherwise Called:*
-
-## The First Book of the Kings
+*Otherwise Called: The First Book of the Kings*
 
 1:1 Now there was a certain man of Ramathaimzophim, of mount Ephraim,
 and his name was Elkanah, the son of Jeroham, the son of Elihu, the
@@ -26666,9 +26684,7 @@ Jabesh, and fasted seven days.
 
 ## The Second Book of Samuel
 
-*Otherwise Called:*
-
-## The Second Book of the Kings
+*Otherwise Called: The Second Book of the Kings*
 
 1:1 Now it came to pass after the death of Saul, when David was
 returned from the slaughter of the Amalekites, and David had abode two
@@ -29115,9 +29131,7 @@ and the plague was stayed from Israel.
 
 ## The First Book of the Kings
 
-*Commonly Called:*
-
-## The Third Book of the Kings
+*Commonly Called: The Third Book of the Kings*
 
 1:1 Now king David was old and stricken in years; and they covered
 him with clothes, but he gat no heat.
@@ -32007,9 +32021,7 @@ Israel, according to all that his father had done.
 
 ## The Second Book of the Kings
 
-*Commonly Called:*
-
-## The Fourth Book of the Kings
+*Commonly Called: The Fourth Book of the Kings*
 
 1:1 Then Moab rebelled against Israel after the death of Ahab.
 
@@ -40509,7 +40521,7 @@ earth hath the LORD God of heaven given me; and he hath charged me to
 build him an house in Jerusalem, which is in Judah. Who is there among
 you of all his people? The LORD his God be with him, and let him go up.
 
-Ezra
+## Ezra
 
 1:1 Now in the first year of Cyrus king of Persia, that the word of
 the LORD by the mouth of Jeremiah might be fulfilled, the LORD stirred
@@ -53227,7 +53239,7 @@ sounding cymbals.
 
 150:6 Let every thing that hath breath praise the LORD. Praise ye the LORD.
 
-The Proverbs
+## The Proverbs
 
 1:1 The proverbs of Solomon the son of David, king of Israel; 1:2 To
 know wisdom and instruction; to perceive the words of understanding;
@@ -55697,7 +55709,7 @@ feareth the LORD, she shall be praised.
 31:31 Give her of the fruit of her hands; and let her own works praise
 her in the gates.
 
-Ecclesiastes
+## Ecclesiastes
 
 or
 
@@ -72591,7 +72603,7 @@ hundred and five and thirty days.
 12:13 But go thou thy way till the end be: for thou shalt rest,
 and stand in thy lot at the end of the days.
 
-Hosea
+## Hosea
 
 1:1 The word of the LORD that came unto Hosea, the son of Beeri, in
 the days of Uzziah, Jotham, Ahaz, and Hezekiah, kings of Judah, and in
@@ -73274,7 +73286,7 @@ thy fruit found.
 he shall know them? for the ways of the LORD are right, and the just
 shall walk in them: but the transgressors shall fall therein.
 
-Joel
+## Joel
 
 1:1 The word of the LORD that came to Joel the son of Pethuel.
 
@@ -73524,7 +73536,7 @@ generation.
 3:21 For I will cleanse their blood that I have not cleansed: for the
 LORD dwelleth in Zion.
 
-Amos
+## Amos
 
 1:1 The words of Amos, who was among the herdmen of Tekoa, which he
 saw concerning Israel in the days of Uzziah king of Judah, and in the
@@ -74005,7 +74017,7 @@ gardens, and eat the fruit of them.
 pulled up out of their land which I have given them, saith the LORD
 thy God.
 
-Obadiah
+## Obadiah
 
 1:1 The vision of Obadiah. Thus saith the Lord GOD concerning Edom;
 We have heard a rumour from the LORD, and an ambassador is sent among
@@ -74083,7 +74095,7 @@ south.
 1:21 And saviours shall come up on mount Zion to judge the mount of
 Esau; and the kingdom shall be the LORD’s.
 
-Jonah
+## Jonah
 
 1:1 Now the word of the LORD came unto Jonah the son of Amittai,
 saying, 1:2 Arise, go to Nineveh, that great city, and cry against it;
@@ -74242,7 +74254,7 @@ that great city, wherein are more than sixscore thousand persons that
 cannot discern between their right hand and their left hand; and also
 much cattle?
 
-Micah
+## Micah
 
 1:1 The word of the LORD that came to Micah the Morasthite in the
 days of Jotham, Ahaz, and Hezekiah, kings of Judah, which he saw
@@ -74619,7 +74631,7 @@ depths of the sea.
 7:20 Thou wilt perform the truth to Jacob, and the mercy to Abraham,
 which thou hast sworn unto our fathers from the days of old.
 
-Nahum
+## Nahum
 
 1:1 The burden of Nineveh. The book of the vision of Nahum the Elkoshite.
 
@@ -74790,7 +74802,7 @@ gathereth them.
 that hear the bruit of thee shall clap the hands over thee: for upon
 whom hath not thy wickedness passed continually?
 
-Habakkuk
+## Habakkuk
 
 1:1 The burden which Habakkuk the prophet did see.
 
@@ -74974,7 +74986,7 @@ will joy in the God of my salvation.
 feet, and he will make me to walk upon mine high places. To the chief
 singer on my stringed instruments.
 
-Zephaniah
+## Zephaniah
 
 1:1 The word of the LORD which came unto Zephaniah the son of Cushi,
 the son of Gedaliah, the son of Amariah, the son of Hizkiah, in the
@@ -75172,7 +75184,7 @@ gather you: for I will make you a name and a praise among all people
 of the earth, when I turn back your captivity before your eyes,
 saith the LORD.
 
-Haggai
+## Haggai
 
 1:1 In the second year of Darius the king, in the sixth month, in the
 first day of the month, came the word of the LORD by Haggai the
@@ -75294,7 +75306,7 @@ down, every one by the sword of his brother.
 Zerubbabel, my servant, the son of Shealtiel, saith the LORD, and will
 make thee as a signet: for I have chosen thee, saith the LORD of hosts.
 
-Zechariah
+## Zechariah
 
 1:1 In the eighth month, in the second year of Darius, came the word
 of the LORD unto Zechariah, the son of Berechiah, the son of Iddo the
@@ -76042,7 +76054,7 @@ the LORD of hosts: and all they that sacrifice shall come and take of
 them, and seethe therein: and in that day there shall be no more the
 Canaanite in the house of the LORD of hosts.
 
-Malachi
+## Malachi
 
 1:1 The burden of the word of the LORD to Israel by Malachi.
 
@@ -97805,7 +97817,7 @@ that our joy may be full.
 
 1:13 The children of thy elect sister greet thee. Amen.
 
-The Third Epistle General of John
+## The Third Epistle General of John
 
 1:1 The elder unto the wellbeloved Gaius, whom I love in the truth.
 
