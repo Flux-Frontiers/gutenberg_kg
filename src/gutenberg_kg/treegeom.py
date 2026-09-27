@@ -480,18 +480,24 @@ class ForestLayout(Layout3D):
             runs[min(i * n_limbs // n, n_limbs - 1)].append(node)
         return [(f"part {k + 1}", v) for k, v in sorted(runs.items())]
 
-    def _entry_fractions(self, members: list[LayoutNode]) -> np.ndarray:
+    def _entry_fractions(self, members: list[LayoutNode], year: bool) -> np.ndarray:
         """
         Where each entry of one period falls along its limb, from 0 to 1.
 
-        A dated entry sits at its fraction of the calendar year, so 1 January
-        is at the limb's base and 31 December at its tip, and a year the
-        diarist abandoned in May ends partway out.  Without usable dates the
-        entries are spaced evenly in file order.
+        On a calendar-year limb a dated entry sits at its fraction of the year,
+        so 1 January is at the limb's base and 31 December at its tip, and a
+        year the diarist abandoned in May ends partway out.  On a file-order
+        part, or without usable dates, entries are spaced evenly in file order:
+        a one-year diary split into parts would otherwise put every part's
+        entries in the same few months of each limb.
 
         :param members: One period's entry documents, in file order.
+        :param year: The period is a calendar year (``_period_groups``'s dated path).
         :return: ``(len(members),)`` fractions in ``[0, 1]``.
         """
+        n = len(members)
+        if not year:
+            return (np.arange(n) + 0.5) / n
         fractions = []
         for node in members:
             ts = str(self.entry_times.get(node.id) or "")
@@ -503,7 +509,6 @@ class ForestLayout(Layout3D):
             fractions.append((day.timetuple().tm_yday - 0.5) / days)
         else:
             return np.asarray(fractions, dtype=float)
-        n = len(members)
         return (np.arange(n) + 0.5) / n
 
     def compute(
@@ -676,7 +681,9 @@ class ForestLayout(Layout3D):
                         # away from the limb, so a year reads as a leafy branch.
                         sleeve_r = 0.5 * cluster_r
                         u, v = _limb_frame(tip - limb_base)
-                        stations = _LIMB_BARE + (1.0 - _LIMB_BARE) * self._entry_fractions(members)
+                        stations = _LIMB_BARE + (1.0 - _LIMB_BARE) * self._entry_fractions(
+                            members, label.isdigit()
+                        )
                         for i, (sec, t) in enumerate(zip(members, stations)):
                             on_limb = limb_base + t * (tip - limb_base)
                             angle = i * _GOLDEN_ANGLE
@@ -785,6 +792,50 @@ class ForestLayout(Layout3D):
                 positions[n.id] = np.array(pos)
 
         return positions
+
+
+#: Bins across a diary period in :func:`diary_periods`: about one per week.
+PERIOD_BINS = 53
+
+
+def diary_periods(
+    nodes: list[LayoutNode],
+    edges: list[LayoutEdge],
+    entry_times: dict[str, str] | None = None,
+    bins: int = PERIOD_BINS,
+) -> list[dict[str, object]]:
+    """
+    A diary's period limbs, compact enough to ship to the web forest.
+
+    Groups entries exactly as :meth:`ForestLayout.compute` does (calendar years
+    when dated, equal runs of file order otherwise) and counts each period's
+    chunks into *bins* equal slices of its limb, by each entry's fraction along
+    it.  The web forest rebuilds the same limbs from this without the graph.
+
+    :param nodes: Nodes of one book.
+    :param edges: Edges of the same book.
+    :param entry_times: ``{document id: ISO timestamp}`` from ``load_entry_times``.
+    :param bins: Slices per limb.
+    :return: ``[{"label", "entries", "bins"}]`` earliest first, with trailing
+        empty bins dropped; empty for a book that is not entry-structured.
+    """
+    docs = [n for n in nodes if n.kind == "document"]
+    if any(n.kind == "section" for n in nodes) or len(docs) < 2:
+        return []
+    kinds = {n.id: n.kind for n in nodes}
+    chunks: Counter[str] = Counter(
+        e.src for e in edges if e.rel == "CONTAINS" and kinds.get(e.dst) == "chunk"
+    )
+    layout = ForestLayout(entry_times=entry_times)
+    periods: list[dict[str, object]] = []
+    for label, members in layout._period_groups(docs):
+        counts = [0] * bins
+        for node, fraction in zip(members, layout._entry_fractions(members, label.isdigit())):
+            counts[min(int(fraction * bins), bins - 1)] += chunks[node.id]
+        while counts and not counts[-1]:
+            counts.pop()
+        periods.append({"label": label, "entries": len(members), "bins": counts})
+    return periods
 
 
 # ---------------------------------------------------------------------------

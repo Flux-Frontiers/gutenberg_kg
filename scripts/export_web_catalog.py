@@ -78,6 +78,8 @@ class BookRow:
     chunks: int
     excerpt: str
     tags: list[str] = field(default_factory=list)
+    # Diaries only: period limbs from gutenberg_kg.treegeom.diary_periods.
+    periods: list[dict] = field(default_factory=list)
 
 
 def slug_from_title(title: str) -> str:
@@ -144,6 +146,16 @@ def excerpt_from_graph(con: sqlite3.Connection) -> str:
     return text
 
 
+def diary_periods_for(book_dir: Path, genre: str) -> list[dict]:
+    """Period limbs for a ``.diarykg`` book, grouped exactly as the Python forest groups them."""
+    from gutenberg_kg.bookgraph import BookMeta, load_book_graph, load_entry_times
+    from gutenberg_kg.treegeom import diary_periods
+
+    meta = BookMeta(book_dir.name, genre, book_dir)
+    nodes, edges = load_book_graph(meta)
+    return diary_periods(nodes, edges, load_entry_times(meta))
+
+
 def collect_book(book_dir: Path, genre: str) -> BookRow | None:
     db = kg_db(book_dir)
     if db is None:
@@ -164,6 +176,7 @@ def collect_book(book_dir: Path, genre: str) -> BookRow | None:
         chunks=chunks,
         excerpt=excerpt,
         tags=[genre],
+        periods=diary_periods_for(book_dir, genre) if db.parent.name == ".diarykg" else [],
     )
 
 
@@ -209,6 +222,14 @@ def emit_part(rows: list[BookRow], index: int) -> str:
         lines.append(f"    chunks: {r.chunks},")
         lines.append(f"    excerpt: {ts_string(r.excerpt)},")
         lines.append(f"    tags: {json.dumps(r.tags, ensure_ascii=False)},")
+        if r.periods:
+            lines.append("    periods: [")
+            for p in r.periods:
+                lines.append(
+                    f"      {{ label: {ts_string(p['label'])}, entries: {p['entries']}, "
+                    f"bins: {json.dumps(p['bins'], separators=(',', ':'))} }},"
+                )
+            lines.append("    ],")
         lines.append("  },")
     lines.append("];")
     lines.append("")
@@ -248,7 +269,15 @@ CATALOG_TYPES = """export type Book = {
   chunks: number;
   excerpt: string;
   tags: string[];
+  /**
+   * Diaries only: one limb per period (a calendar year when dated), earliest
+   * first. `bins` counts the period's chunks in equal slices along its limb,
+   * by each entry's fraction of the year; trailing empty slices are dropped.
+   */
+  periods?: Period[];
 };
+
+export type Period = { label: string; entries: number; bins: number[] };
 """
 
 
