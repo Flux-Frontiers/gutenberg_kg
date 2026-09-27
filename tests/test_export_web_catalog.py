@@ -78,6 +78,20 @@ class TestScan:
         assert books[0].author == "William Shakespeare"
         assert books[0].genre == "shakespeare"
 
+    def test_book_key_is_the_folder_name(self, tmp_path: Path):
+        # The worker keys books by folder; the reference title can differ.
+        _write_book(
+            tmp_path,
+            "american-literature",
+            "The Sea-Wolf (London)",
+            title="The Sea-Wolf",
+            author="Jack London",
+            chunks=["The sea was calm."],
+        )
+        (row,) = export_web_catalog.scan_corpus(tmp_path)
+        assert row.title == "The Sea-Wolf"
+        assert row.book == "The Sea-Wolf (London)"
+
     def test_skips_books_without_a_graph(self, tmp_path: Path):
         (tmp_path / "philosophy" / "Notes").mkdir(parents=True)
         assert export_web_catalog.scan_corpus(tmp_path) == []
