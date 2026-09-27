@@ -20,6 +20,8 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   least five stand alone in one book, so Hobbes's marginal note "The
   Proverbs" in Leviathan stays body text. The Bible needs re-downloading and
   a full `gutenkg build-corpus`.
+- `gutenkg build-corpus` no longer crashes with `FileNotFoundError` when a
+  registered genre (such as `curiosities`) has no directory under `corpus/`.
 
 ## [1.25.0] - 2026-09-26
 

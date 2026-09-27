@@ -535,8 +535,9 @@ def run_build_corpus(genres: list[str], opts: BuildCorpusOptions) -> int:
         else sum(
             1
             for g in genres
+            if (CORPUS_ROOT / g).is_dir()
             for p in (CORPUS_ROOT / g).iterdir()
-            if (CORPUS_ROOT / g).is_dir() and p.is_dir() and not p.name.startswith(".")
+            if p.is_dir() and not p.name.startswith(".")
         )
     )
 
