@@ -1190,3 +1190,27 @@ def test_text_to_markdown_skips_a_numbered_contents_list_and_keeps_the_body():
     assert "Entry 1." not in result
     for heading in chapters:
         assert result.count(heading) == 1, heading
+
+
+def test_text_to_markdown_colon_subtitle_takes_the_next_line():
+    """KJV 1 Samuel: "Otherwise Called:" introduces "The First Book of the
+    Kings", which must not open a section of its own."""
+    text = (
+        "The First Book of Samuel\n\n"
+        "Otherwise Called:\n\n"
+        "The First Book of the Kings\n\n\n"
+        "1:1 Now there was a certain man of Ramathaimzophim.\n"
+    )
+    result = text_to_markdown(text, {"title": "The Bible", "author": "Various"})
+    assert "## The First Book of Samuel" in result
+    assert "*Otherwise Called: The First Book of the Kings*" in result
+    assert "## The First Book of the Kings" not in result
+    assert "1:1 Now there was" in result
+
+
+def test_text_to_markdown_colon_subtitle_leaves_prose_alone():
+    """Only a heading-shaped line is pulled into a colon subtitle."""
+    text = "CHAPTER I\n\nBossuet muttered:\n\nHe said nothing more that evening.\n"
+    result = text_to_markdown(text, {"title": "T", "author": "A"})
+    assert "*Bossuet muttered:*" in result
+    assert "\nHe said nothing more that evening." in result

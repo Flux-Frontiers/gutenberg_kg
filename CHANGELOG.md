@@ -8,6 +8,19 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Fixed
+
+- The King James Bible (#10) converts to all 66 books. Fifteen books the
+  edition titles with a bare name (Ezra, The Proverbs, Ecclesiastes and the
+  twelve minor prophets) were not recognized as headings, so their text was
+  folded into 2 Chronicles, Psalms and Daniel. 3 John was folded into 2 John
+  the same way. The "Otherwise Called:" subtitles of Samuel and Kings no
+  longer open a second, mislabeled section, so 1 Samuel's text is no longer
+  filed under "The First Book of the Kings". Bare titles count only when at
+  least five stand alone in one book, so Hobbes's marginal note "The
+  Proverbs" in Leviathan stays body text. The Bible needs re-downloading and
+  a full `gutenkg build-corpus`.
+
 ## [1.25.0] - 2026-09-26
 
 ### Added

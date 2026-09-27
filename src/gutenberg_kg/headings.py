@@ -127,9 +127,13 @@ HEADING_PATTERNS = [
     ),
     # Bible book headings: "The First Book of Moses: Called Genesis",
     # "The Book of Joshua", "The Gospel According to Saint Matthew", etc.
+    # The ordinal epistles ("The Third Epistle General of John") are named
+    # here: the First and Second were only caught by repeated_title_lines,
+    # and 3 John, alone in its phrasing, was folded into 2 John.
     (
         re.compile(
-            r"^The\s+(?:First|Second|Third|Fourth|Fifth)\s+Book\s+of\s+.+$",
+            r"^The\s+(?:First|Second|Third|Fourth|Fifth)\s+"
+            r"(?:Book\s+of|(?:General\s+)?Epistle)\s+.+$",
         ),
         2,
     ),
@@ -451,6 +455,47 @@ def repeated_title_lines(
             for group in variants.values():
                 found |= group
     return found
+
+
+# Bible books the KJV (#10) titles with a bare name. The rules in
+# HEADING_PATTERNS need "The Book of ..." and walked past all fifteen,
+# folding Ezra into 2 Chronicles, Proverbs and Ecclesiastes into Psalms, and
+# the twelve minor prophets into Daniel.
+_BARE_BIBLE_TITLE_RE = re.compile(
+    r"^(?:Ezra|The\s+Proverbs|Ecclesiastes|Hosea|Joel|Amos|Obadiah|Jonah|"
+    r"Micah|Nahum|Habakkuk|Zephaniah|Haggai|Zechariah|Malachi)$"
+)
+_BARE_BIBLE_TITLE_THRESHOLD = 5
+
+
+def bare_bible_title_lines(lines: list[str], start: int, skip: range) -> set[int]:
+    """Find the KJV's bare book titles ("Ezra", "Hosea", "The Proverbs").
+
+    A per-line rule cannot tell these from a lone name: Hobbes prints "The
+    Proverbs" as a marginal note in Leviathan's chapter 33. What marks a
+    Bible is several distinct bare titles standing alone, so they are
+    honoured only when at least ``_BARE_BIBLE_TITLE_THRESHOLD`` of them do.
+
+    :param lines: All source lines.
+    :param start: First line of the body.
+    :param skip: Line range already claimed by a table of contents.
+    :returns: Indices to treat as headings, empty when the file is no Bible.
+    """
+    by_title: dict[str, set[int]] = {}
+    for i in range(start, len(lines)):
+        if i in skip:
+            continue
+        stripped = lines[i].strip()
+        if not _BARE_BIBLE_TITLE_RE.match(stripped):
+            continue
+        if i and lines[i - 1].strip():
+            continue
+        if i + 1 < len(lines) and lines[i + 1].strip():
+            continue
+        by_title.setdefault(stripped, set()).add(i)
+    if len(by_title) < _BARE_BIBLE_TITLE_THRESHOLD:
+        return set()
+    return set().union(*by_title.values())
 
 
 def skip_title_page(lines: list[str], start_idx: int, structural=None) -> int:

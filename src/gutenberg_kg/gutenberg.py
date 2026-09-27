@@ -29,6 +29,9 @@ from pathlib import Path
 from gutenberg_kg.authors import parse_reference
 from gutenberg_kg.genres import GUTENBERG_GENRES as ALL_GENRES
 from gutenberg_kg.headings import (
+    bare_bible_title_lines as _bare_bible_title_lines,
+)
+from gutenberg_kg.headings import (
     breaks_before_heading as _breaks_before_heading,
 )
 from gutenberg_kg.headings import (
@@ -382,6 +385,7 @@ def text_to_markdown(text: str, meta: dict) -> str:
     # _repeated_title_lines). File-level knowledge, so it cannot live in the
     # per-line _is_heading.
     title_lines = _repeated_title_lines(lines, start_idx, toc_range)
+    title_lines |= _bare_bible_title_lines(lines, start_idx, toc_range)
 
     # Build the markdown
     md_lines = []
@@ -472,6 +476,18 @@ def text_to_markdown(text: str, meta: dict) -> str:
                 ):
                     subtitle_lines.append(next_line_clean)
                     j = j + 1
+                    # A subtitle ending in a colon introduces the next line.
+                    # When that line looks like a heading it is still the
+                    # subtitle's: the KJV's "Otherwise Called:" / "The First
+                    # Book of the Kings" under 1 Samuel used to open a
+                    # spurious section. Prose after a colon stays body text.
+                    if next_line_clean.endswith(":"):
+                        k = j
+                        while k < total and not lines[k].strip():
+                            k += 1
+                        if k < total and _is_heading(lines[k].strip()):
+                            subtitle_lines[0] += " " + lines[k].strip()
+                            j = k + 1
 
             md_lines.append(f"{'#' * level} {heading_text}")
             if subtitle_lines and not subtitle_lines[0].isupper():
