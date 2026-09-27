@@ -317,8 +317,9 @@ class TestForestLayoutDiary:
             leader = layout.book_habits[meta.slug].leader
             assert (leader == 1.0) == (genre == "diaries")
 
-    def test_diary_limbs_spiral_up_the_trunk(self, corpus):
-        # Consecutive years step a fixed fifth of a turn around the trunk.
+    def test_diary_limbs_spiral_up_the_trunk_by_year(self, corpus):
+        # Each year turns half the golden angle: neighbours stay close, and no
+        # year stacks above another (a fifth of a turn stacked every fifth).
         meta, nodes, edges = _load(corpus, "diaries", "A Diary")
         layout = ForestLayout(
             book_genre_map={meta.slug: meta.genre}, entry_times=load_entry_times(meta)
@@ -326,7 +327,18 @@ class TestForestLayoutDiary:
         layout.compute(nodes, edges)
         azimuths = [np.arctan2(*(end - base)[1::-1]) for base, end in layout.branch_lines]
         steps = np.mod(np.diff(azimuths), 2 * np.pi)
-        assert np.allclose(steps, 2 * np.pi / 5)
+        assert np.allclose(steps, np.pi * (3 - np.sqrt(5)) / 2)
+
+    def test_a_skipped_year_leaves_bare_trunk(self, tmp_path):
+        _diary_book(tmp_path / "diaries" / "Gappy", years=(1660, 1661, 1665))
+        meta, nodes, edges = _load(tmp_path, "diaries", "Gappy")
+        layout = ForestLayout(
+            book_genre_map={meta.slug: meta.genre}, entry_times=load_entry_times(meta)
+        )
+        layout.compute(nodes, edges)
+        heights = [float(base[2]) for base, _ in layout.branch_lines]
+        # 1661 to 1665 is four years of trunk; 1660 to 1661 is one.
+        assert heights[2] - heights[1] == pytest.approx(4 * (heights[1] - heights[0]))
 
     def test_one_year_diary_spreads_each_part_along_its_limb(self, tmp_path):
         # A single-year diary falls back to file-order parts.  Placing those by
