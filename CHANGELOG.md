@@ -8,6 +8,22 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Added
+
+- `make stale-books` lists books whose text (`*.md` or `reference.md`) is
+  newer than their index, and the bundle when a book's index is newer than
+  it. It prints the `refresh-text` command for the stale genres and exits 1
+  when anything is stale.
+- `make refresh-text GENRE="..."` carries changed book text to every local
+  surface: it force-rebuilds those genres' indices, runs a full `gutenkg
+  build-corpus`, checks with `stale_books.py`, then exports the Swift packs,
+  builds the image under every installed runtime and exports the web forest
+  catalog. `build-corpus --update` is not enough after a text change: it
+  matches on node ids, so an edited book keeps its old vectors. Pushing the
+  image to Docker Hub stays a separate step. The author fixes below rewrote
+  about 50 `reference.md` files and the OCR fix rewrote the Audel text, so
+  the current corpus needs a refresh across 16 genres.
+
 ### Fixed
 
 - Internet Archive text is cleaned properly, and the eight Audel volumes are
@@ -23,8 +39,8 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   Audel scans are cropped into the binding, so letters are missing at line
   starts and ends; that cannot be fixed from these scans, and
   `docs/IA_OCR_TEXT.md` records the measurements and the other scans that
-  were considered. The Audel volumes need `gutenkg ingest --genre
-  audel-electric --force-build` and `gutenkg build-corpus --update`.
+  were considered. Carry the new text downstream with `make refresh-text
+  GENRE=audel-electric` (see Added).
 - Books with more than one author are credited to all of them, primary
   author first. Only the first author in Gutenberg's OPDS feed was kept, and
   the feed lists co-authors in reverse, so The Count of Monte Cristo and The

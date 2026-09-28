@@ -568,6 +568,18 @@ gutenkg ingest --genre medieval-literature
 gutenkg authors
 ```
 
+### Rebuild after book text changes
+
+A `--force` re-download, `gutenkg authors --refresh` or a pull can change a
+book's text after it was indexed. `build-corpus --update` does not see this: it
+matches on node ids, so the edited book keeps its old vectors.
+
+```bash
+make stale-books                              # names stale books and prints the next command
+make refresh-text GENRE="audel-electric"      # indices, full build-corpus, Swift packs, image, web catalog
+make publish-worker-image                     # only if Docker Hub needs the new image
+```
+
 ### Rebuild a broken genre
 
 ```bash

@@ -192,6 +192,8 @@ gutenkg imagine --query "Ahab"             # corpus text -> scene -> image
 ```bash
 gutenkg download book 2701 --genre american-literature --force   # re-download
 gutenkg ingest --force-build --genre philosophy                  # wipe + rebuild KG
+make stale-books                                                 # books whose text is newer than their index
+make refresh-text GENRE="philosophy"                             # text change -> indices, full bundle, packs, image, web
 ```
 
 ---
@@ -284,6 +286,7 @@ Note: **Long and Hays translations** of *Meditations* are under copyright — no
 
 - `--force` required to re-download a book whose `<slug>.md` already exists.
 - `ingest` skips books with an existing `.dockg/` — use `--force-build` to rebuild.
+- `build-corpus --update` is id-based: a book whose text changed keeps its old vectors. After text edits run `make refresh-text GENRE="..."` (full rebuild); `make stale-books` says which genres.
 - `.dockg/` is gitignored — always run `rebuild-indices` after a fresh clone.
 - `download search` is slow — prefer catalog files for known IDs.
 - `gutenkg download search` → `download fetch-genre` for whole-genre interactive flow.

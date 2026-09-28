@@ -169,7 +169,7 @@ layer is the same bytes on both, so the registry stores it once.
 Publish with Docker:
 
 ```bash
-make build-corpus                        # if the corpus changed
+make build-corpus                        # if books were added; after text edits, make refresh-text
 make publish-worker-image RUNTIME=docker
 ```
 

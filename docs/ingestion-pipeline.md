@@ -255,6 +255,12 @@ selected by a committed `.diary_format` file (`pepys` | `evelyn` | `boswell`).
 before `make build-corpus` completes** — the Dockerfile COPYs from `bundles/gutenberg-all/`
 and will bake in a stale or empty bundle if that directory is missing or outdated.
 
+When the text of books already in the bundle changes, use `make stale-books`
+and `make refresh-text GENRE="..."` instead. `build-corpus --update` matches on
+node ids and keeps an edited book's old vectors; `refresh-text` rebuilds the
+genres' per-book indices, runs the full `build-corpus`, and carries the result
+through the Swift packs, the image and the web catalog.
+
 ---
 
 ## Query-Time Architecture (Docker Image)
