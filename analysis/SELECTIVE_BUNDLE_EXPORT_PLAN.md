@@ -973,7 +973,7 @@ and the defaults preserve `gutenberg-all` behavior.
 - `docs/ON_DEVICE.md` -- pack layout and parity gate
 - `analysis/APP_ARCHITECTURE.md` -- why packs omit the graph
 - `analysis/STRUCTURAL_PARSER_PLAN.md`, `analysis/MONOLITHIC_SECTIONS_PLAN.md` -- prior design-doc voice
-- `scripts/build_corpus_by_genre.py` -- genre-at-a-time assembly precedent
+- `scripts/build_corpus_by_genre.py` -- genre-at-a-time assembly precedent (LanceDB-era; removed after v1.26.0, recover from git history)
 
 ---
 

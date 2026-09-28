@@ -700,7 +700,6 @@ gutenberg_kg/
 ├── runpod/                                 # RunPod serverless build pipeline
 ├── scripts/
 │   ├── process_logo.py                     # Logo transparency + variant generator
-│   ├── benchmark_embedders.py              # Embedder benchmarking
 │   ├── assess_front_matter.py              # Corpus front-matter analysis
 │   ├── provenance_verifier.py              # Reference.md provenance checker
 │   ├── regenerate_corpus_doc.py            # Regenerates docs/CORPUS.md

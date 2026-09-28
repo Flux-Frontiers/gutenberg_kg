@@ -17,6 +17,11 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   results stay in `analysis/`.
 - `scripts/synth_replay.py` and `scripts/make_tokenizer_fixture.py` moved to
   the knowledge_press repo, the app they serve.
+- `scripts/build_corpus_by_genre.py` and `scripts/benchmark_embedders.py`,
+  which need LanceDB; the bundle has been sqlite-vec since doc-kg 0.18.0.
+- `scripts/catalog.txt`, the pre-genre book list, whose usage line named a
+  script that no longer exists, and `scripts/catalogs/science-fiction-additions.txt`,
+  whose four IDs are all in the genre catalogs.
 
 ## [1.26.0] - 2026-09-28
 
