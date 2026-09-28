@@ -212,7 +212,7 @@ def _render(rows_by_genre: dict[str, list[tuple[str, str]]], total: int, elapsed
             lines.append(f"| {title} | {author} |")
         lines.append("")
     lines.append(provenance_comment)
-    return "\n".join(lines)
+    return "\n".join(lines) + "\n"
 
 
 def main() -> None:
