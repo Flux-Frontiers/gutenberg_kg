@@ -61,6 +61,7 @@ nav:
       - Corpus wishlist: CORPUS_WISHLIST.md
       - Download pipeline: DOWNLOAD_PIPELINE.md
       - IA catalog workflow: IA_CATALOG_WORKFLOW.md
+      - IA OCR text: IA_OCR_TEXT.md
       - Ingestion pipeline: ingestion-pipeline.md
       - Selective bundles: BUNDLES.md
   - Interfaces:

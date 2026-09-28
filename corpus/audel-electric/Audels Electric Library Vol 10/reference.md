@@ -26,3 +26,13 @@
 ## Summary
 
 Volume 10 of a twelve-volume set. Eight of the volumes are included in this collection. Volume 10 is Eletric Refrigeration, Heating, X-ray; Plating, Welding; Pumps; Compressors; Domestic Farm Appliances. A phenomenal reference set, meant for those learning how to be electricians. Filled with, literally, thousands of diagrams, exploded views, charts and graphs, in addition to the detailed text. Also contains tests on every chapter. The passage of time has not lessened the importance of this set - knowing everything in these books will prepare one quite well for the task of being an electrician. For engineers, electricians, all electrical workers, mechanics, and students. Presenting in simplest, concise form the fundamental principles, rules and application of applied electricity.
+
+## Text notes
+
+- **Source**: the Internet Archive's DjVu text, OCR by tesseract 5.0.0-1-g862e. It has not been proofread.
+- **Hyphenated words rejoined**: 983
+- **Page numbers removed**: 181
+- **Page headers removed**: 715
+- **Lines of OCR debris removed**: 4,685 (drawings, rotated or mirrored captions and specks read as text)
+- **Stray margin marks removed**: 583
+- **Not repaired**: words the scan cuts off at the page edge, misread words, and tables, which OCR does not keep in columns. Figures are omitted; their captions are kept where OCR read them as text.

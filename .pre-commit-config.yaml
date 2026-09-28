@@ -3,6 +3,9 @@ repos:
     rev: v5.0.0
     hooks:
       - id: trailing-whitespace
+        # Raw Internet Archive OCR, kept byte for byte: its trailing spaces
+        # are the reason ia.clean_ocr strips lines before joining hyphens.
+        exclude: '^tests/fixtures/ia/'
       - id: end-of-file-fixer
       - id: check-yaml
       - id: check-toml
