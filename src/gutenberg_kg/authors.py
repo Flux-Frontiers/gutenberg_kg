@@ -7,7 +7,6 @@ Entry point for callers: :func:`build`. The CLI wrapper lives at
 from __future__ import annotations
 
 import re
-import sys
 import time
 from collections import defaultdict
 from pathlib import Path
@@ -18,18 +17,102 @@ AUTHORS_DIR = CORPUS_ROOT / "authors"
 
 
 # ---------------------------------------------------------------------------
-# RDF fetcher — lazy import of scripts/download_gutenberg.py
+# Author names
 # ---------------------------------------------------------------------------
 
+#: Ranks that mark a catalog heading as a peerage, as in "Byron, George Gordon
+#: Byron, Baron". The heading word is then the title's name, not a surname, and
+#: the title stays in the display name because it is how readers know the
+#: person. "Earl of", "Duke of" and the like are caught by their trailing "of".
+_PEERAGE_RANKS = frozenset({"Baron", "Baroness", "Viscount", "Viscountess"})
 
-def _dg():
-    """Lazy-import ``download_gutenberg`` from ``scripts/`` for RDF fetching."""
-    scripts = str(REPO_ROOT / "scripts")
-    if scripts not in sys.path:
-        sys.path.insert(0, scripts)
-    import download_gutenberg as _mod  # noqa: PLC0415
 
-    return _mod
+def display_name(heading: str) -> str:
+    """Turn a Gutenberg catalog heading into a name in reading order.
+
+    Gutenberg files names library-style, ``"Surname, Forenames, Title"``.
+    Splitting on the first comma alone turned "Tolstoy, Leo, graf" into
+    "Leo, graf Tolstoy" and "Marcus Aurelius, Emperor of Rome" into
+    "Emperor of Rome Marcus Aurelius". The rules, from the corpus's own names:
+
+    - A parenthesized fuller form is dropped: "Wells, H. G. (Herbert George)"
+      is "H. G. Wells".
+    - A part with a date in it is dropped: "Sunzi, active 6th century B.C."
+      is "Sunzi".
+    - A peerage keeps its title: "Byron, George Gordon Byron, Baron" is
+      "George Gordon Byron, Baron Byron".
+    - Any other trailing title is dropped: "Tolstoy, Leo, graf" is
+      "Leo Tolstoy".
+    - A second part starting lowercase is an epithet and follows the name:
+      "Pliny, the Younger" is "Pliny the Younger".
+    - A second part containing " of " is a title: "Marcus Aurelius, Emperor of
+      Rome" is "Marcus Aurelius".
+    - Otherwise the forenames come first: "Dumas, Alexandre" is
+      "Alexandre Dumas".
+
+    :param heading: A name as Gutenberg's RDF or OPDS feed gives it.
+    :return: The name in reading order; the heading unchanged when nothing
+        in it survives the rules.
+    """
+    name = re.sub(r"\s*\([^)]*\)", "", heading)
+    parts = [
+        part.strip()
+        for part in name.split(",")
+        if part.strip()
+        and not re.search(r"\d", part)
+        and not part.strip().startswith(("active ", "fl. "))
+    ]
+    if not parts:
+        return heading.strip()
+    head, rest = parts[0], parts[1:]
+    if not rest:
+        return head
+    given, extra = rest[0], rest[1:]
+    peerage = next((p for p in extra if p in _PEERAGE_RANKS or p.endswith(" of")), None)
+    if peerage:
+        return f"{given}, {peerage} {head}"
+    if given[0].islower():
+        return f"{head} {given}"
+    if " of " in given:
+        return head
+    return f"{given} {head}"
+
+
+def credit(names: list[str]) -> str:
+    """Join author names into one byline.
+
+    :param names: Display names, primary author first.
+    :return: ``"A"``, ``"A and B"``, or ``"A, B, and C"``; ``""`` for none.
+    """
+    if len(names) <= 2:
+        return " and ".join(names)
+    return f"{', '.join(names[:-1])}, and {names[-1]}"
+
+
+def author_lines(meta: dict) -> list[str]:
+    """The list lines of a ``reference.md`` ``## Author`` section.
+
+    The first author gets the Name line and the provenance lines, which
+    describe that one person. Each further author gets a Co-author line.
+
+    :param meta: Book metadata. ``authors`` is used when present, else a
+        single ``author``.
+    :return: The lines, without the heading; empty when there is no author.
+    """
+    authors = meta.get("authors") or ([meta["author"]] if meta.get("author") else [])
+    if not authors:
+        return []
+    lines = [f"- **Name**: {authors[0]}"]
+    if meta.get("author_birth"):
+        lines.append(f"- **Born**: {meta['author_birth']}")
+    if meta.get("author_death"):
+        lines.append(f"- **Died**: {meta['author_death']}")
+    if meta.get("author_url"):
+        lines.append(f"- **Wikipedia**: {meta['author_url']}")
+    if meta.get("author_agent_id"):
+        lines.append(f"- **Gutenberg Agent ID**: {meta['author_agent_id']}")
+    lines += [f"- **Co-author**: {name}" for name in authors[1:]]
+    return lines
 
 
 # ---------------------------------------------------------------------------
@@ -68,7 +151,12 @@ def parse_reference(path: Path) -> dict:
     # Genre is the grandparent dir name (corpus/<genre>/<book>/reference.md)
     meta["genre"] = path.parent.parent.name
 
-    meta["author"] = _field(r"\*\*Name\*\*:\s*(.+)$", text)
+    # "author" is the byline every consumer displays; "authors" lists the
+    # people, first author first, for the per-author index.
+    name = _field(r"\*\*Name\*\*:\s*(.+)$", text)
+    co_authors = re.findall(r"^- \*\*Co-author\*\*:\s*(.+?)\s*$", text, re.MULTILINE)
+    meta["authors"] = ([name] if name else []) + co_authors
+    meta["author"] = credit(meta["authors"]) or None
     meta["author_birth"] = _field(r"\*\*Born\*\*:\s*(.+)$", text)
     meta["author_death"] = _field(r"\*\*Died\*\*:\s*(.+)$", text)
     meta["author_url"] = _field(r"\*\*Wikipedia\*\*:\s*(.+)$", text)
@@ -79,44 +167,41 @@ def parse_reference(path: Path) -> dict:
 
 
 # ---------------------------------------------------------------------------
-# reference.md patcher
+# reference.md rewriter
 # ---------------------------------------------------------------------------
 
+_AUTHOR_LINE = re.compile(r"^- \*\*(Name|Born|Died|Wikipedia|Gutenberg Agent ID|Co-author)\*\*:")
 
-def patch_reference(path: Path, extra: dict, dry_run: bool = False) -> bool:
-    """Insert missing Born/Died/Wikipedia/AgentID into the ``## Author`` section.
 
-    Returns True iff the file was (or would be) modified.
+def rewrite_author_section(path: Path, meta: dict, dry_run: bool = False) -> bool:
+    """Replace the ``## Author`` list in a ``reference.md`` with *meta*'s.
+
+    Only the run of author lines starting at ``- **Name**:`` is replaced; the
+    rest of the file, including the Gutenberg Published line that follows the
+    section, is left byte for byte. A file with no Name line, or a *meta* with
+    no author (a failed fetch returns none), is never touched, so a network
+    error cannot erase an author.
+
+    :param path: The ``reference.md`` to update.
+    :param meta: Fresh metadata, as ``gutenberg._fetch_rdf_author`` returns it.
+    :param dry_run: Report the change without writing it.
+    :return: True iff the file was (or would be) changed.
     """
-    text = path.read_text(encoding="utf-8")
-
-    insertions: list[str] = []
-    if extra.get("author_birth") and "**Born**" not in text:
-        insertions.append(f"- **Born**: {extra['author_birth']}")
-    if extra.get("author_death") and "**Died**" not in text:
-        insertions.append(f"- **Died**: {extra['author_death']}")
-    if extra.get("author_url") and "**Wikipedia**" not in text:
-        insertions.append(f"- **Wikipedia**: {extra['author_url']}")
-    if extra.get("author_agent_id") and "**Gutenberg Agent ID**" not in text:
-        insertions.append(f"- **Gutenberg Agent ID**: {extra['author_agent_id']}")
-
-    if not insertions:
+    new = author_lines(meta)
+    if not new:
         return False
-
-    lines = text.split("\n")
-    new_lines: list[str] = []
-    inserted = False
-    for line in lines:
-        new_lines.append(line)
-        if not inserted and line.startswith("- **Name**:"):
-            new_lines.extend(insertions)
-            inserted = True
-
-    if not inserted:
+    lines = path.read_text(encoding="utf-8").split("\n")
+    start = next((i for i, line in enumerate(lines) if line.startswith("- **Name**:")), None)
+    if start is None:
         return False
-
+    end = start
+    while end < len(lines) and _AUTHOR_LINE.match(lines[end]):
+        end += 1
+    if lines[start:end] == new:
+        return False
+    lines[start:end] = new
     if not dry_run:
-        path.write_text("\n".join(new_lines), encoding="utf-8")
+        path.write_text("\n".join(lines), encoding="utf-8")
     return True
 
 
@@ -212,11 +297,37 @@ def write_index(authors_books: dict[str, list[dict]], dry_run: bool = False) -> 
 # ---------------------------------------------------------------------------
 
 
+_NO_PROVENANCE = {
+    "author_birth": None,
+    "author_death": None,
+    "author_url": None,
+    "author_agent_id": None,
+}
+
+
+def _author_fields(fresh: dict) -> dict:
+    """The author fields ``parse_reference`` returns once *fresh* is written.
+
+    Lets a dry run build the index it would build for real.
+
+    :param fresh: Refreshed author metadata with a non-empty ``authors``.
+    :return: ``authors``, ``author`` and the four provenance fields.
+    """
+    return {
+        "authors": fresh["authors"],
+        "author": credit(fresh["authors"]),
+        **{key: fresh.get(key) for key in _NO_PROVENANCE},
+    }
+
+
 def build(refresh: bool = False, dry_run: bool = False) -> int:
     """Rebuild ``corpus/authors/`` from all ``reference.md`` files.
 
-    :param refresh: If True, re-fetch the Gutenberg RDF for any book missing
-        Born/Died and patch its ``reference.md`` in place before building.
+    :param refresh: If True, re-fetch the Gutenberg RDF for every book with a
+        Gutenberg ID and rewrite its ``reference.md`` Author section from it:
+        every creator in catalog order (translators and editors excluded), and
+        the first creator's Born/Died/Wikipedia/Agent ID. Books whose fetch
+        fails, or whose RDF lists no creator, are left as they are.
     :param dry_run: If True, print what would happen without writing any files.
     :return: ``0`` on success (always, unless an unhandled exception propagates).
     """
@@ -231,53 +342,39 @@ def build(refresh: bool = False, dry_run: bool = False) -> int:
 
     # 2. Optional refresh
     if refresh:
-        dg = _dg()
-        needs_refresh = [
-            m
-            for m in metas
-            if m.get("ebook_id") and not m.get("author_birth") and not m.get("author_death")
-        ]
-        print(f"--- Refreshing metadata ({len(needs_refresh)} books missing provenance) ---")
-        refreshed = patched = 0
-        for m in needs_refresh:
-            eid = m["ebook_id"]
-            title = m["title"]
-            print(f"  [{title}] fetching RDF #{eid}...", end=" ", flush=True)
+        # Imported here: gutenberg imports this module at load time.
+        from gutenberg_kg.gutenberg import _fetch_rdf_author  # noqa: PLC0415
+
+        targets = [m for m in metas if m.get("ebook_id")]
+        print(f"--- Refreshing authors from the Gutenberg RDF ({len(targets)} books) ---")
+        fetched = rewritten = 0
+        for m in targets:
             time.sleep(0.3)  # polite rate-limiting
-            extra = dg._fetch_rdf_author(eid)
-            if not extra:
-                print("no data")
+            fresh = _fetch_rdf_author(m["ebook_id"])
+            if not fresh.get("authors"):
                 continue
-            refreshed += 1
-            parts = []
-            if extra.get("author_birth"):
-                parts.append(extra["author_birth"])
-                m["author_birth"] = extra["author_birth"]
-            if extra.get("author_death"):
-                parts.append(extra["author_death"])
-                m["author_death"] = extra["author_death"]
-            if extra.get("author_url"):
-                m["author_url"] = extra["author_url"]
-            if extra.get("author_agent_id"):
-                m["author_agent_id"] = extra["author_agent_id"]
-            label = " / ".join(parts) if parts else "dates unknown"
-            print(label, end="")
-            if patch_reference(m["_path"], extra, dry_run=dry_run):
-                patched += 1
-                print(" [patched]")
-            else:
-                print()
-        print(f"\n  RDF fetched: {refreshed}  reference.md patched: {patched}\n")
+            fetched += 1
+            if rewrite_author_section(m["_path"], fresh, dry_run=dry_run):
+                rewritten += 1
+                print(
+                    f"  [{m['title']}] {m.get('author') or '(none)'} -> {credit(fresh['authors'])}"
+                )
+                m.update(_author_fields(fresh))
+        print(f"\n  RDF with creators: {fetched}  reference.md rewritten: {rewritten}\n")
 
     # 3. Group by author
+    # One page per person, so a co-written book is listed under each author.
+    # Born/Died/Wikipedia describe the first author only; a co-author's entry
+    # drops them rather than borrow another person's dates.
     authors_books: dict[str, list[dict]] = defaultdict(list)
     skipped_no_author = 0
     for m in metas:
-        author = m.get("author")
-        if not author:
+        people = m.get("authors") or []
+        if not people:
             skipped_no_author += 1
             continue
-        authors_books[author].append(m)
+        for i, person in enumerate(people):
+            authors_books[person].append(m if i == 0 else {**m, **_NO_PROVENANCE})
 
     print(f"--- Building author pages ({len(authors_books)} unique authors) ---")
     if skipped_no_author:
@@ -291,7 +388,23 @@ def build(refresh: bool = False, dry_run: bool = False) -> int:
         suffix = "s" if n != 1 else ""
         print(f"  {tag} {author} ({n} work{suffix}) → {out_path.relative_to(REPO_ROOT)}")
 
-    # 5. Write index
+    # 5. Remove pages for authors no longer in the corpus, such as a name
+    # whose spelling changed. Only a directory holding nothing but a
+    # generated author.md is removed; anything else there is left alone.
+    live = {_slugify(author) for author in authors_books}
+    stale = sorted(
+        d
+        for d in AUTHORS_DIR.glob("*/")
+        if d.name not in live and [f.name for f in d.iterdir()] == ["author.md"]
+    )
+    for d in stale:
+        tag = "[dry]" if dry_run else "[-]"
+        print(f"  {tag} stale {d.relative_to(REPO_ROOT)}")
+        if not dry_run:
+            (d / "author.md").unlink()
+            d.rmdir()
+
+    # 6. Write index
     print()
     index_path = write_index(authors_books, dry_run=dry_run)
     tag = "[dry]" if dry_run else "[+]"

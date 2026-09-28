@@ -20,6 +20,8 @@ import time
 from datetime import UTC, datetime
 from pathlib import Path
 
+from gutenberg_kg.authors import credit
+
 REPO_ROOT = Path(__file__).resolve().parents[1]
 CORPUS_DIR = REPO_ROOT / "corpus"
 OUTPUT_FILE = REPO_ROOT / "docs" / "CORPUS.md"
@@ -114,15 +116,13 @@ def _parse_reference(ref_path: Path) -> tuple[str, str]:
     if not ref_path.exists():
         return "", ""
     title = ""
-    author = ""
+    authors: list[str] = []
     for line in ref_path.read_text(encoding="utf-8", errors="replace").splitlines():
         if not title and line.startswith("# Reference: "):
             title = line[len("# Reference: ") :].strip()
-        elif not author and line.startswith("- **Name**: "):
-            author = line[len("- **Name**: ") :].strip()
-        if title and author:
-            break
-    return title, author
+        elif line.startswith(("- **Name**: ", "- **Co-author**: ")):
+            authors.append(line.split("**: ", 1)[1].strip())
+    return title, credit(authors)
 
 
 def _gutenkg_version() -> str:

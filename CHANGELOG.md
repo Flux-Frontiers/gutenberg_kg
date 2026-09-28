@@ -10,6 +10,29 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Fixed
 
+- Books with more than one author are credited to all of them, primary
+  author first. Only the first author in Gutenberg's OPDS feed was kept, and
+  the feed lists co-authors in reverse, so The Count of Monte Cristo and The
+  Three Musketeers were credited to Auguste Maquet instead of Alexandre Dumas,
+  The Travels of Marco Polo to Rusticiano da Pisa, Grimms' Fairy Tales to
+  Wilhelm Grimm alone, and The Federalist Papers to James Madison alone.
+  Authors now come from the RDF record's creators, which leave out
+  translators and editors. Born/Died/Wikipedia always describe the first
+  author; Monte Cristo's had been Dumas's under Maquet's name.
+- Author names read the way readers know them. "Tolstoy, Leo, graf" was
+  displayed as "Leo, graf Tolstoy", "Marcus Aurelius, Emperor of Rome" as
+  "Emperor of Rome Marcus Aurelius", and "Wells, H. G. (Herbert George)" as
+  "H. G. (Herbert George) Wells"; they are now Leo Tolstoy, Marcus Aurelius
+  and H. G. Wells. Twenty authors across 39 books changed.
+- The Wikipedia link is the English article when Gutenberg has one. Aristotle,
+  Dante, Euripides, Hesse, Sun Tzu, Wilde and Zola linked to Greek, Italian,
+  German, Chinese or French Wikipedia.
+- `gutenkg authors --refresh` works again. It imported a script that no longer
+  exists. It now re-fetches the RDF for every book and rewrites each
+  `reference.md` Author section from it (leaving the rest of the file alone),
+  which is how the corpus picked up the fixes above. `gutenkg authors` lists a
+  co-written book under each author and removes pages for authors no longer in
+  the corpus: 31 stale pages went.
 - The King James Bible (#10) converts to all 66 books. Fifteen books the
   edition titles with a bare name (Ezra, The Proverbs, Ecclesiastes and the
   twelve minor prophets) were not recognized as headings, so their text was

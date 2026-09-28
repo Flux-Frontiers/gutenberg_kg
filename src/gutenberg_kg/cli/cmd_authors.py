@@ -11,8 +11,9 @@ from gutenberg_kg.cli.main import cli
     "--refresh",
     is_flag=True,
     default=False,
-    help="Re-fetch Gutenberg RDF for books missing Born/Died and patch "
-    "their reference.md files in place before rebuilding the index.",
+    help="Re-fetch the Gutenberg RDF for every book and rewrite the Author "
+    "section of its reference.md (all creators, first creator's Born/Died/"
+    "Wikipedia) before rebuilding the index.",
 )
 @click.option(
     "--dry-run",
@@ -23,13 +24,14 @@ from gutenberg_kg.cli.main import cli
 def authors_cmd(refresh: bool, dry_run: bool) -> None:
     """Build corpus/authors/ from every reference.md in the corpus.
 
-    Scans corpus/<genre>/<book>/reference.md for all books, groups by
-    author, and writes one page per author plus a master alphabetical
-    index. Use --refresh to also backfill Born/Died/Wikipedia for any
-    reference.md that predates the RDF fetch.
+    Scans corpus/<genre>/<book>/reference.md for all books and writes one
+    page per author, listing a co-written book under each of its authors,
+    plus a master alphabetical index. Use --refresh to first rewrite every
+    reference.md Author section from the Gutenberg RDF catalog, which is how
+    a corpus picks up fixes to author parsing.
     \f
 
-    :param refresh: Re-fetch RDF for books missing provenance.
+    :param refresh: Rewrite every Author section from a fresh RDF fetch.
     :param dry_run: Print actions without writing any files.
     """
     raise SystemExit(authors.build(refresh=refresh, dry_run=dry_run))
