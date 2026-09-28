@@ -728,3 +728,22 @@ def test_ia_ocr_guards_still_reject_noise():
     assert _is_heading("A") is None
     assert _is_heading("1234") is None
     assert _is_heading("THE END.") is None
+
+
+def test_parse_reference_reads_the_ia_author(tmp_path: Path):
+    """IA references carry the creator as a Publication Author line, which the
+    Name-line parser used to miss, leaving every IA book without an author."""
+    book = tmp_path / "Audels Electric Library Vol 1"
+    book.mkdir()
+    _ia.write_reference(
+        book,
+        {
+            "title": "Audels Electric Library Vol 1",
+            "identifier": "audels-electric-library-vol-1",
+            "author": "Frank D. Graham and Theo Audel & Company",
+            "date": "1929",
+        },
+    )
+    meta = _parse_reference(book / "reference.md")
+    assert meta["author"] == "Frank D. Graham and Theo Audel & Company"
+    assert meta["authors"] == ["Frank D. Graham and Theo Audel & Company"]

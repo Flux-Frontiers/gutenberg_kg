@@ -120,7 +120,7 @@ def _parse_reference(ref_path: Path) -> tuple[str, str]:
     for line in ref_path.read_text(encoding="utf-8", errors="replace").splitlines():
         if not title and line.startswith("# Reference: "):
             title = line[len("# Reference: ") :].strip()
-        elif line.startswith(("- **Name**: ", "- **Co-author**: ")):
+        elif line.startswith(("- **Name**: ", "- **Co-author**: ", "- **Author**: ")):
             authors.append(line.split("**: ", 1)[1].strip())
     return title, credit(authors)
 

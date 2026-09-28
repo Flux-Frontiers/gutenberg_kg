@@ -1297,3 +1297,14 @@ def test_write_reference_round_trips_co_authors(tmp_path: Path):
     parsed = parse_reference(tmp_path / "reference.md")
     assert parsed["author"] == "Alexandre Dumas and Auguste Maquet"
     assert parsed["author_birth"] == "1802"
+
+
+def test_fetch_metadata_credits_various_when_the_catalog_names_no_author(monkeypatch):
+    """The King James Bible has no creator in Gutenberg's feed or RDF."""
+    opds = (_FIXTURES / "opds" / "10.opds").read_text(encoding="utf-8")
+    monkeypatch.setattr(dg, "fetch_url", lambda url: opds if url.endswith(".opds") else _rdf(10))
+
+    meta = dg.fetch_metadata(10)
+
+    assert meta["authors"] == ["Various"]
+    assert meta["author"] == "Various"

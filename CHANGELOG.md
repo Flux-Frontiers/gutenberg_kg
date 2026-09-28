@@ -24,6 +24,13 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   "Emperor of Rome Marcus Aurelius", and "Wells, H. G. (Herbert George)" as
   "H. G. (Herbert George) Wells"; they are now Leo Tolstoy, Marcus Aurelius
   and H. G. Wells. Twenty authors across 39 books changed.
+- Internet Archive books have their author. Their `reference.md` records it
+  as a Publication Author line, which the parser never read, so the eight
+  Audel manuals showed no author (or "Unknown"); they are by Frank D. Graham
+  and Theo Audel & Company.
+- A book whose Gutenberg record names no author is credited to "Various"
+  instead of nobody, so it can be found by author. That covers the five
+  sacred texts now in the corpus and any future download like them.
 - The Wikipedia link is the English article when Gutenberg has one. Aristotle,
   Dante, Euripides, Hesse, Sun Tzu, Wilde and Zola linked to Greek, Italian,
   German, Chinese or French Wikipedia.

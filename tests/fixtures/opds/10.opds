@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:opds="http://opds-spec.org/2010/catalog" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:relevance="http://a9.com/-/opensearch/extensions/relevance/1.0/">
+<id>http://www.gutenberg.org/ebooks/10.opds</id>
+<updated>2026-09-28T16:34:40Z</updated>
+<title>The King James Version of the Bible</title>
+<subtitle>Free eBooks since 1971.</subtitle>
+<author>
+<name>Project Gutenberg</name>
+<uri>https://www.gutenberg.org</uri>
+<email>webmaster@gutenberg.org</email>
+</author>
+<icon>https://www.gutenberg.org/gutenberg/favicon.ico</icon>
+<link rel="search" type="application/opensearchdescription+xml" title="Project Gutenberg Catalog Search" href="https://www.gutenberg.org/catalog/osd-books.xml"/>
+<link rel="self" title="This Page" type="application/atom+xml;profile=opds-catalog" href="/ebooks/10.opds"/>
+<link rel="alternate" type="text/html" title="HTML Page" href="/ebooks/10"/>
+<link rel="start" title="Start Page" type="application/atom+xml;profile=opds-catalog" href="/ebooks.opds/"/>
+<opensearch:itemsPerPage>25</opensearch:itemsPerPage>
+<opensearch:startIndex>1</opensearch:startIndex>
+<entry>
+<updated>2026-09-28T16:34:40Z</updated>
+<title>The King James Version of the Bible</title>
+<content type="xhtml">
+<div xmlns="http://www.w3.org/1999/xhtml">
+<p>This edition had all images removed.</p>
+<p>
+Title:
+The King James Version of the Bible
+</p>
+<p>
+Note:
+Wikipedia page about this book: https:<a href="//en.wikipedia.org/wiki/King_James_Version">//en.wikipedia.org/wiki/King_James_Version</a>
+</p>
+<p>
+Summary:
+"The King James Version of the Bible" is an English translation of the Christian Bible commissioned in 1604 and published in 1611 under King James VI and I. This translation for the Church of England contains 80 books and was created to address controversies surrounding existing versions. Celebrated for its majestic style, it has profoundly shaped English literature, Christian thought, and everyday speech for over four centuries. The translation became the unchallenged standard in English Protestant churches and remains one of the most widely read versions today. (This is an automatically generated summary.)
+</p>
+<p>
+Reading Level:
+Reading ease score: 77.2 (7th grade). Fairly easy to read.
+</p>
+<p>EBook No.: 10</p>
+<p>Published: Aug 1, 1989</p>
+<p>Downloads: 24269</p>
+<p>Language: English</p>
+<p>Subject: Bible</p>
+<p>LoCC: Philosophy, Psychology, Religion: Christianity: The Bible, Old and New Testament</p>
+<p>Category: Text</p>
+<p>Rights: Public domain in the USA.</p>
+</div>
+</content>
+<id>urn:gutenberg:10:2</id>
+<published>1989-08-01T00:00:00+00:00</published>
+<rights>Public domain in the USA.</rights>
+<category scheme="http://purl.org/dc/terms/LCSH" term="Bible"/>
+<category scheme="http://purl.org/dc/terms/LCC" term="BS" label="Philosophy, Psychology, Religion: Christianity: The Bible, Old and New Testament"/>
+<category scheme="http://purl.org/dc/terms/DCMIType" term="Text"/>
+<dcterms:language>en</dcterms:language>
+<relevance:score>1</relevance:score>
+<link type="application/epub+zip" rel="http://opds-spec.org/acquisition" title="EPUB (older e-readers, no images)" length="1635676" href="https://www.gutenberg.org/ebooks/10.epub.noimages"/>
+<link type="application/x-mobipocket-ebook" rel="http://opds-spec.org/acquisition" title="Kindle (no images)" length="2599177" href="https://www.gutenberg.org/ebooks/10.kindle.noimages"/>
+<link type="image/jpeg" rel="http://opds-spec.org/image" href="https://www.gutenberg.org/cache/epub/10/pg10.cover.medium.jpg"/>
+<link type="image/jpeg" rel="http://opds-spec.org/image/thumbnail" href="https://www.gutenberg.org/cache/epub/10/pg10.cover.small.jpg"/>
+<link type="application/atom+xml;profile=opds-catalog" rel="related" href="/ebooks/subject/842.opds" title="On Bible…"/>
+<link type="application/atom+xml;profile=opds-catalog" rel="related" href="/ebooks/bookshelf/422.opds" title="In Banned Books List from the American Library Association…"/>
+<link type="application/atom+xml;profile=opds-catalog" rel="related" href="/ebooks/bookshelf/649.opds" title="In Category: Classics of Literature…"/>
+<link type="application/atom+xml;profile=opds-catalog" rel="related" href="/ebooks/bookshelf/692.opds" title="In Category: Religion/Spirituality…"/>
+</entry>
+<entry>
+<updated>2026-09-28T16:34:40Z</updated>
+<title>The King James Version of the Bible</title>
+<content type="xhtml">
+<div xmlns="http://www.w3.org/1999/xhtml">
+<p>This edition has images.</p>
+<p>
+Title:
+The King James Version of the Bible
+</p>
+<p>
+Note:
+Wikipedia page about this book: https:<a href="//en.wikipedia.org/wiki/King_James_Version">//en.wikipedia.org/wiki/King_James_Version</a>
+</p>
+<p>
+Summary:
+"The King James Version of the Bible" is an English translation of the Christian Bible commissioned in 1604 and published in 1611 under King James VI and I. This translation for the Church of England contains 80 books and was created to address controversies surrounding existing versions. Celebrated for its majestic style, it has profoundly shaped English literature, Christian thought, and everyday speech for over four centuries. The translation became the unchallenged standard in English Protestant churches and remains one of the most widely read versions today. (This is an automatically generated summary.)
+</p>
+<p>
+Reading Level:
+Reading ease score: 77.2 (7th grade). Fairly easy to read.
+</p>
+<p>EBook No.: 10</p>
+<p>Published: Aug 1, 1989</p>
+<p>Downloads: 24269</p>
+<p>Language: English</p>
+<p>Subject: Bible</p>
+<p>LoCC: Philosophy, Psychology, Religion: Christianity: The Bible, Old and New Testament</p>
+<p>Category: Text</p>
+<p>Rights: Public domain in the USA.</p>
+</div>
+</content>
+<id>urn:gutenberg:10:3</id>
+<published>1989-08-01T00:00:00+00:00</published>
+<rights>Public domain in the USA.</rights>
+<category scheme="http://purl.org/dc/terms/LCSH" term="Bible"/>
+<category scheme="http://purl.org/dc/terms/LCC" term="BS" label="Philosophy, Psychology, Religion: Christianity: The Bible, Old and New Testament"/>
+<category scheme="http://purl.org/dc/terms/DCMIType" term="Text"/>
+<dcterms:language>en</dcterms:language>
+<relevance:score>1</relevance:score>
+<link type="application/epub+zip" rel="http://opds-spec.org/acquisition" title="EPUB3 (E-readers incl. Send-to-Kindle)" length="1714961" href="https://www.gutenberg.org/ebooks/10.epub3.images"/>
+<link type="application/epub+zip" rel="http://opds-spec.org/acquisition" title="EPUB (older e-readers)" length="1780225" href="https://www.gutenberg.org/ebooks/10.epub.images"/>
+<link type="application/x-mobipocket-ebook" rel="http://opds-spec.org/acquisition" title="Kindles (kf8)" length="2822724" href="https://www.gutenberg.org/ebooks/10.kf8.images"/>
+<link type="application/x-mobipocket-ebook" rel="http://opds-spec.org/acquisition" title="Older Kindles" length="2753032" href="https://www.gutenberg.org/ebooks/10.kindle.images"/>
+<link type="image/jpeg" rel="http://opds-spec.org/image" href="https://www.gutenberg.org/cache/epub/10/pg10.cover.medium.jpg"/>
+<link type="image/jpeg" rel="http://opds-spec.org/image/thumbnail" href="https://www.gutenberg.org/cache/epub/10/pg10.cover.small.jpg"/>
+<link type="application/atom+xml;profile=opds-catalog" rel="related" href="/ebooks/subject/842.opds" title="On Bible…"/>
+<link type="application/atom+xml;profile=opds-catalog" rel="related" href="/ebooks/bookshelf/422.opds" title="In Banned Books List from the American Library Association…"/>
+<link type="application/atom+xml;profile=opds-catalog" rel="related" href="/ebooks/bookshelf/649.opds" title="In Category: Classics of Literature…"/>
+<link type="application/atom+xml;profile=opds-catalog" rel="related" href="/ebooks/bookshelf/692.opds" title="In Category: Religion/Spirituality…"/>
+</entry>
+</feed>

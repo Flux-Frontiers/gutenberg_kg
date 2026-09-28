@@ -20,6 +20,11 @@ AUTHORS_DIR = CORPUS_ROOT / "authors"
 # Author names
 # ---------------------------------------------------------------------------
 
+#: The byline for a book whose catalog record names no author, such as the
+#: King James Bible or the Upanishads. Gutenberg uses the same name for its
+#: multi-contributor works, and it keeps these books findable by author.
+NO_AUTHOR = "Various"
+
 #: Ranks that mark a catalog heading as a peerage, as in "Byron, George Gordon
 #: Byron, Baron". The heading word is then the title's name, not a surname, and
 #: the title stays in the display name because it is how readers know the
@@ -153,7 +158,9 @@ def parse_reference(path: Path) -> dict:
 
     # "author" is the byline every consumer displays; "authors" lists the
     # people, first author first, for the per-author index.
-    name = _field(r"\*\*Name\*\*:\s*(.+)$", text)
+    # An Internet Archive reference records the item's creator as an Author
+    # line under Publication, not a Name line under Author.
+    name = _field(r"\*\*Name\*\*:\s*(.+)$", text) or _field(r"^- \*\*Author\*\*:\s*(.+)$", text)
     co_authors = re.findall(r"^- \*\*Co-author\*\*:\s*(.+?)\s*$", text, re.MULTILINE)
     meta["authors"] = ([name] if name else []) + co_authors
     meta["author"] = credit(meta["authors"]) or None

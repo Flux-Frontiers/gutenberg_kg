@@ -26,7 +26,7 @@ import urllib.request
 import xml.etree.ElementTree as ET
 from pathlib import Path
 
-from gutenberg_kg.authors import author_lines, credit, display_name, parse_reference
+from gutenberg_kg.authors import NO_AUTHOR, author_lines, credit, display_name, parse_reference
 from gutenberg_kg.genres import GUTENBERG_GENRES as ALL_GENRES
 from gutenberg_kg.headings import (
     bare_bible_title_lines as _bare_bible_title_lines,
@@ -196,9 +196,12 @@ def fetch_metadata(ebook_id: int) -> dict:
 
     # The RDF catalog's creators and the first creator's provenance
     # (birth/death/Wikipedia) replace the feed's authors when it has any.
+    # A record with no creator at all (scripture, mostly) is credited to
+    # NO_AUTHOR rather than left blank.
     meta.update(_fetch_rdf_author(ebook_id))
-    if meta["authors"]:
-        meta["author"] = credit(meta["authors"])
+    if not meta["authors"]:
+        meta["authors"] = [NO_AUTHOR]
+    meta["author"] = credit(meta["authors"])
 
     return meta
 

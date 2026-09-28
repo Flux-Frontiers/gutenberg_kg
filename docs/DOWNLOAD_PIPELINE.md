@@ -114,7 +114,9 @@ Fetches the OPDS atom entry and extracts:
 Immediately after the OPDS parse, `fetch_metadata` calls `_fetch_rdf_author(id)`
 and merges the result into the same `meta` dict (silent failure -- a missing
 RDF doesn't break the download). It then sets `author`, the byline, from
-`authors` with `authors.credit`: "A", "A and B", or "A, B, and C".
+`authors` with `authors.credit`: "A", "A and B", or "A, B, and C". A book
+whose feed and RDF both name no author, such as the King James Bible, is
+credited to `authors.NO_AUTHOR`, "Various", rather than left blank.
 
 ### 4.2 RDF enrichment — `_fetch_rdf_author(ebook_id)`
 
@@ -141,7 +143,9 @@ The provenance fields describe the first creator:
 In `reference.md` the first creator is the `**Name**` line, followed by that
 person's Born/Died/Wikipedia/Agent ID lines, and every further creator gets a
 `**Co-author**` line. `authors.parse_reference` rebuilds `authors` and the
-`author` byline from those lines.
+`author` byline from those lines. An Internet Archive reference has no Name
+line; it records the item's creator as `**Author**` under `## Publication`,
+and `parse_reference` falls back to that.
 
 BCE years are stored as negative integers (Homer: `-750 / -650`).
 
