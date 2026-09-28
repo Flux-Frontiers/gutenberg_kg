@@ -7,6 +7,8 @@
 #   make build-corpus   — rebuild the DocKG + diary bundle (takes ~24 min)
 #   make export-swift   — export a bundle's on-device Swift packs
 #   make export-web-catalog — count DocKG chunks into the web forest catalog
+#   make stale-books    — list books whose text is newer than their index
+#   make refresh-text GENRE="..." — carry changed book text to every local surface
 #   make build          — build the container image (bakes bundle into image)
 #   make build-all      — build for every runtime installed on this machine
 #
@@ -234,7 +236,7 @@ endif
 # `gutenkg` on PATH. Override with e.g. `make GUTENKG=gutenkg build-corpus`.
 GUTENKG     ?= poetry run gutenkg
 
-.PHONY: init spacy-model chunk-diaries build-diaries build-corpus export-swift export-web-catalog check-pins setup build build-all rebuild rebuild-all prune kill down-all runtime-guard publish-worker-image pull-worker-image run image-server sdxl-server sdxl-fetch chat up stop down query logs clean docs
+.PHONY: init spacy-model chunk-diaries build-diaries build-corpus export-swift export-web-catalog stale-books refresh-text check-pins setup build build-all rebuild rebuild-all prune kill down-all runtime-guard publish-worker-image pull-worker-image run image-server sdxl-server sdxl-fetch chat up stop down query logs clean docs
 
 init:
 	$(GUTENKG) init
@@ -278,6 +280,30 @@ export-swift:
 KNOWLEDGE_PRESS_DIR ?= ../knowledge_press
 export-web-catalog:
 	poetry run python scripts/export_web_catalog.py --out "$(KNOWLEDGE_PRESS_DIR)/web/src/game"
+
+# After book text changes (a re-download with --force, `gutenkg authors
+# --refresh`, a pull), carry it to every local surface. `stale-books` names
+# what is stale and prints the refresh-text command for it.
+#   make stale-books
+#   make refresh-text GENRE="audel-electric horror"
+# refresh-text force-rebuilds the per-book indices of each GENRE, then runs a
+# FULL build-corpus: --update matches on node ids, so a book whose text
+# changed keeps its old vectors. It calls `gutenkg build-corpus` directly
+# because the make target also rebuilds every diary, which prose edits do not
+# need. The Swift packs, the image under every runtime and the web forest
+# catalog follow. Publishing to Docker Hub stays a separate, explicit step.
+stale-books:
+	@poetry run python scripts/stale_books.py
+
+refresh-text:
+	@case " $(GENRE) " in *" diaries "*) \
+		echo "ERROR: diaries are rebuilt by 'make build-corpus', not refresh-text."; exit 1;; esac
+	$(if $(strip $(GENRE)),$(GUTENKG) ingest --force-build $(foreach g,$(GENRE),--genre $(g)))
+	$(GUTENKG) build-corpus
+	poetry run python scripts/stale_books.py
+	$(MAKE) --no-print-directory export-swift
+	$(MAKE) --no-print-directory build-all
+	$(MAKE) --no-print-directory export-web-catalog
 
 # The four KG packages are named in four files that drift independently:
 # pyproject floors, poetry.lock, docker/Dockerfile ARGs, runpod/requirements.txt.
