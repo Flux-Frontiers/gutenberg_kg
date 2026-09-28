@@ -133,7 +133,10 @@ need.
 new and keeps existing vectors for ids it has seen. A brand-new book is all
 new ids, so it is fine. If this batch also *edited the text* of a book that
 was already in the bundle, the edited book keeps stale vectors silently.
-Then the command is the full rebuild, about 24 minutes:
+Then the command is the full rebuild, about 24 minutes. When the batch is
+only text edits to existing books, `make stale-books` names them and
+`make refresh-text GENRE="..."` runs stages 2-6 (without the Docker Hub
+push) in one go:
 
 ```bash
 poetry run gutenkg build-corpus

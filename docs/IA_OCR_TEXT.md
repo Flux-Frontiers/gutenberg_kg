@@ -67,8 +67,10 @@ gutenkg ia download audels-electric-library-vol-1 --genre audel-electric \
   --title "Audels Electric Library Vol 1" --force
 ```
 
-Then rebuild its index (`gutenkg ingest --genre audel-electric --force-build`)
-and the bundle (`gutenkg build-corpus --update`).
+Then carry the new text to the index, the bundle, the Swift packs, the image
+and the web forest with `make refresh-text GENRE=audel-electric`. The bundle
+rebuild must be the full `gutenkg build-corpus`: `--update` matches on node
+ids, so a book whose text changed keeps its old vectors.
 
 ## What the cleanup cannot fix
 

@@ -217,6 +217,8 @@ make logs        # follow worker logs
 | `make chunk-diaries` | re-chunk `.diary/` from committed `<book>.md` (always `--force`, so a parser change propagates) |
 | `make build-diaries` | rebuild `.diarykg/` indices (depends on `chunk-diaries`; prerequisite for `build-corpus`) |
 | `make build-corpus` | rebuild the DocKG + diary bundle (~24 min) |
+| `make stale-books` | list books whose text is newer than their index, and a stale bundle |
+| `make refresh-text GENRE="..."` | after text changes: force-rebuild those genres' indices, full `build-corpus`, Swift packs, image under every runtime, web catalog |
 | `make build` | build the Docker image (bakes the bundle in) |
 | `make run` | start the worker on `:8000` |
 | `make chat` | start worker + chat UI on `:8501` |
