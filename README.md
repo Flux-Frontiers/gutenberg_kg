@@ -27,11 +27,29 @@ The included corpus contains **253 texts in 21 genres**: literature, philosophy,
 
 > **GutenbergKG is for readers, researchers, and builders** who want semantic discovery with a path back to the original text.
 
-## 🌳 New: a book grows into a tree, and the tree can leave the screen
+## 🌳 New: walk the library as a forest
 
-Three things are new here, and the third depends on hardware most people do not have yet.
+### Knowledge Press Forest, in your browser
 
-### Books grow into natural-looking trees
+**[Open Knowledge Press Forest](https://flux-frontiers.github.io/knowledge_press/)**. It runs in the browser; there is nothing to install.
+
+Every book in the corpus is a tree, and the 253 trees stand in genre groves. You drive a lantern cart through them, along a ring road that links every grove or off it between the trunks. Each tree is grown from its book's DocKG graph by the same space-colonization rule `gutenkg viz3d` uses, so a book has the same silhouette in both. At the hub stands the corpus redwood, one tree for the whole library, with a limb reaching toward every book.
+
+- **G** opens the grove atlas and **B** lists every book; both jump you there.
+- **Q** rides the ring road. The tour stops at each grove and narrates it, as a caption and aloud.
+- Type a word (`stoic`, `freedom`, `sea`) in the lantern field to light the groves that match.
+- Seasons change the canopy; winter drops it so the wood shows. On a phone, use the on-screen stick.
+
+The public site shows the forest but cannot open a book: reading needs a local GutenbergKG worker (`make run`) behind the dev server. Controls, the local worker setup and a map from this repo's Python to the forest's TypeScript are in the forest's [README](https://github.com/Flux-Frontiers/knowledge_press/blob/main/web/README.md). The source lives in the [knowledge_press](https://github.com/Flux-Frontiers/knowledge_press) repo's `web/`, a React + Vite + [`@react-three/fiber`](https://github.com/pmndrs/react-three-fiber) app. To run it locally:
+
+```bash
+git clone https://github.com/Flux-Frontiers/knowledge_press
+cd knowledge_press && make web-install web-dev
+```
+
+The book catalog is generated from the corpus rather than hand-maintained — `scripts/export_web_catalog.py` (also `make export-web-catalog`) counts DocKG chunk nodes per book and writes the forest's `src/game/catalogPart*.ts` in a sibling knowledge_press checkout (`KNOWLEDGE_PRESS_DIR` to point elsewhere), so the forest follows the corpus instead of drifting from it.
+
+### Books grow into natural-looking trees (in progress)
 
 A knowledge graph does not have to be drawn as a hairball. Each book now grows into a tree, and the growth is structural rather than decorative. The book's text chunks become attraction points and the branches are produced by space colonization (Runions, Lane & Prusinkiewicz, 2007), so every limb is a real path through the graph—document → section → chunk cluster—and the canopy's shape is the book's shape. Branch radii follow the pipe model, so a limb carrying half the text is visibly thicker.
 
@@ -49,19 +67,6 @@ gutenkg quilt --book Pepys --still                # one 1600x1600 PNG instead of
 
 There are four seasons. `--season winter` drops ninety percent of the leaves, which is the point—bare wood is where the pipe model shows.
 
-### Walk the grove in a browser
-
-The same corpus, as a first-person forest. Knowledge Press Forest, in the [knowledge_press](https://github.com/Flux-Frontiers/knowledge_press) repo's `web/`, is a React + Vite + [`@react-three/fiber`](https://github.com/pmndrs/react-three-fiber) port of the PyVista grove: one tree per work, grouped into named groves, walked with WASD. Trees are grown by the same space-colonization rule as `viz3d`, so a book's silhouette is the same in both.
-
-It carries a grove atlas with minimap jump, carriage roads between groves, an optional ring tour, named signposts, and a day/night toggle that persists alongside the season.
-
-```bash
-git clone https://github.com/Flux-Frontiers/knowledge_press
-cd knowledge_press && make web-install web-dev
-```
-
-The book catalog is generated from the corpus rather than hand-maintained — `scripts/export_web_catalog.py` (also `make export-web-catalog`) counts DocKG chunk nodes per book and writes the forest's `src/game/catalogPart*.ts` in a sibling knowledge_press checkout (`KNOWLEDGE_PRESS_DIR` to point elsewhere), so the forest follows the corpus instead of drifting from it.
-
 ### If you own a Looking Glass display, cast to it
 
 This is the part that is genuinely new context rather than a nicer picture. A [Looking Glass](https://lookingglassfactory.com/) panel shows a *light field*: dozens of views at once, so the tree has real depth and holds still in space while you move your head around it. No glasses, no headset. Two people can lean over the same tree at the same time and see it from their own angles.
@@ -77,7 +82,7 @@ Hamlet's 8x6 quilt for the 16" Gen3 Landscape takes about two seconds on an M5 M
 
 No panel? Nothing is lost. A quilt is an ordinary PNG and the trees above render without any display hardware at all.
 
-Both features need the `viz3d` extra; see the [cheatsheet](docs/CHEATSHEET.md#visualisation-and-light-field-rendering) for every option of `viz3d` and `quilt`.
+`viz3d` and `quilt` need the `viz3d` extra; see the [cheatsheet](docs/CHEATSHEET.md#visualisation-and-light-field-rendering) for every option of `viz3d` and `quilt`.
 
 ## What makes it useful
 
@@ -92,6 +97,7 @@ Under the hood, each work becomes a [DocKG](https://github.com/Flux-Frontiers/do
 
 | If you want to… | Start here |
 |---|---|
+| Walk the corpus as a forest | Open [Knowledge Press Forest](https://flux-frontiers.github.io/knowledge_press/). |
 | Explore the library in a browser | Build the local app below, then open the chat UI. |
 | Work from the terminal or add texts | Follow the [CLI installation guide](docs/INSTALLATION.md#cli-workflow). |
 | Understand a command or corpus-maintenance workflow | See the [cheatsheet](docs/CHEATSHEET.md). |
