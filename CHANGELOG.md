@@ -35,6 +35,9 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - `scripts/catalog.txt`, the pre-genre book list, whose usage line named a
   script that no longer exists, and `scripts/catalogs/science-fiction-additions.txt`,
   whose four IDs are all in the genre catalogs.
+- `scripts/make_app_icon.py`, which drew the app's old "G badge" icon into
+  `app/`. The app moved to knowledge_press, whose `make icons` renders the
+  press-seal icon from SVG.
 
 ## [1.26.0] - 2026-09-28
 
