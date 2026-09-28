@@ -109,7 +109,7 @@ ls "corpus/<genre>/<book>/.dockg/graph.sqlite"
 sqlite3 "corpus/<genre>/<book>/.dockg/graph.sqlite" "select count(*) from nodes where kind='chunk'"
 rg -n '<ID>' scripts/catalogs/<genre>.txt
 poetry run gutenkg query "<a phrase you know is in the book>"
-poetry run python scripts/check_sections.py   # flags a book whose text sits in one oversized section
+poetry run gutenkg audit --genre <genre> --sections   # also flags a book whose text sits in one oversized section
 ```
 
 The chunk count must be non-trivial for the book's length (a novel is

@@ -218,7 +218,9 @@ Full flags and options: see [references/commands.md](references/commands.md).
 | `genres init / list` | — |
 | `list-genres` | — |
 | `authors` | `--refresh`, `--dry-run` |
-| `audit` | `--genre`, `--json`, `--registry` |
+| `audit` | `--genre`, `--json`, `--registry`, `--sections` (+ `--baseline`, `--csv-out`) |
+| `stale` | `--bundle` (books whose text is newer than their index; exit 1 if any) |
+| `export-web-catalog` | `--corpus`, `--out`, `--dry-run` (the web forest's catalog) |
 | `re-register` | `--genre`, `--dry-run`, `--registry` |
 | `rebuild-indices` | `--genre`, `--force-build` |
 | `kgrag unregister <name>` | `--yes`, `--registry` (deregister a moved/removed book) |

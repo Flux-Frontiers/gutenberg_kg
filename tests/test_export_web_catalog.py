@@ -1,25 +1,19 @@
-"""Unit tests for scripts/export_web_catalog.py.
+"""Unit tests for gutenberg_kg.export_web and `gutenkg export-web-catalog`.
 
-The script must count ``kind='chunk'`` nodes the same way ForestLayout does,
+The export must count ``kind='chunk'`` nodes the same way ForestLayout does,
 and it must keep BookMeta slugs so Hamlet stays ``hamlet``. Tests build a
 tiny corpus tree in tmp_path — they do not touch the real ``corpus/``.
 """
 
 from __future__ import annotations
 
-import importlib.util
 import sqlite3
-import sys
 from pathlib import Path
 
-import pytest
+from click.testing import CliRunner
 
-_SCRIPT = Path(__file__).resolve().parent.parent / "scripts" / "export_web_catalog.py"
-_spec = importlib.util.spec_from_file_location("export_web_catalog", _SCRIPT)
-assert _spec is not None and _spec.loader is not None
-export_web_catalog = importlib.util.module_from_spec(_spec)
-sys.modules["export_web_catalog"] = export_web_catalog
-_spec.loader.exec_module(export_web_catalog)
+from gutenberg_kg import export_web as export_web_catalog
+from gutenberg_kg.cli.main import cli
 
 
 def _write_book(
@@ -117,7 +111,7 @@ class TestScan:
 
 
 class TestCli:
-    def test_dry_run_does_not_write(self, tmp_path: Path, capsys: pytest.CaptureFixture[str]):
+    def test_dry_run_does_not_write(self, tmp_path: Path):
         _write_book(
             tmp_path,
             "philosophy",
@@ -127,11 +121,82 @@ class TestCli:
             chunks=["What is justice?"] * 5,
         )
         out = tmp_path / "game"
-        rc = export_web_catalog.main(["--corpus", str(tmp_path), "--out", str(out), "--dry-run"])
-        assert rc == 0
+        result = CliRunner().invoke(
+            cli, ["export-web-catalog", "--corpus", str(tmp_path), "--out", str(out), "--dry-run"]
+        )
+        assert result.exit_code == 0, result.output
         assert not out.exists()
-        assert "1 books" in capsys.readouterr().out
+        assert "1 books" in result.output
 
     def test_missing_corpus_is_an_error(self, tmp_path: Path):
-        rc = export_web_catalog.main(["--corpus", str(tmp_path / "nope"), "--dry-run"])
-        assert rc == 1
+        result = CliRunner().invoke(
+            cli, ["export-web-catalog", "--corpus", str(tmp_path / "nope"), "--dry-run"]
+        )
+        assert result.exit_code == 1
+        assert "no corpus" in result.output
+
+
+class TestWrite:
+    def test_cli_writes_the_catalog(self, tmp_path: Path):
+        _write_book(
+            tmp_path,
+            "philosophy",
+            "Meditations",
+            title="Meditations",
+            author="Marcus Aurelius",
+            chunks=["Waste no more time arguing what a good man should be."] * 3,
+        )
+        out = tmp_path / "game"
+        result = CliRunner().invoke(
+            cli, ["export-web-catalog", "--corpus", str(tmp_path), "--out", str(out)]
+        )
+        assert result.exit_code == 0, result.output
+        assert f"wrote {out / 'catalog.ts'} and 1 part(s)" in result.output
+        assert "chunks: 3" in (out / "catalogPart1.ts").read_text(encoding="utf-8")
+        assert "gutenkg export-web-catalog" in (out / "catalog.ts").read_text(encoding="utf-8")
+        assert (out / "catalogTypes.ts").exists()
+
+    def test_corpus_without_graphs_is_an_error(self, tmp_path: Path):
+        (tmp_path / "philosophy" / "Notes").mkdir(parents=True)
+        result = CliRunner().invoke(
+            cli, ["export-web-catalog", "--corpus", str(tmp_path), "--dry-run"]
+        )
+        assert result.exit_code == 1
+        assert "no books with graph.sqlite" in result.output
+
+    def test_fewer_books_removes_leftover_parts(self, tmp_path: Path, monkeypatch):
+        monkeypatch.setattr(export_web_catalog, "PART_SIZE", 1)
+        rows = [
+            export_web_catalog.BookRow(
+                slug=s,
+                title=s,
+                book=s,
+                author="A",
+                genre="drama",
+                genre_label="Drama",
+                chunks=1,
+                excerpt="",
+            )
+            for s in ("a", "b")
+        ]
+        out = tmp_path / "game"
+        assert export_web_catalog.write_catalog(rows, out) == 2
+        assert (out / "catalogPart2.ts").exists()
+        assert export_web_catalog.write_catalog(rows[:1], out) == 1
+        assert not (out / "catalogPart2.ts").exists()
+        assert "BOOKS_PART2" not in (out / "catalog.ts").read_text(encoding="utf-8")
+
+    def test_diary_periods_are_written(self):
+        row = export_web_catalog.BookRow(
+            slug="pepys",
+            title="Pepys",
+            book="Pepys",
+            author="Samuel Pepys",
+            genre="diaries",
+            genre_label="Diaries",
+            chunks=2,
+            excerpt="",
+            periods=[{"label": "1660", "entries": 2, "bins": [1, 0, 1]}],
+        )
+        text = export_web_catalog.emit_part([row], 1)
+        assert '{ label: "1660", entries: 2, bins: [1,0,1] },' in text

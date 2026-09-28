@@ -282,7 +282,7 @@ export-swift:
 # checkout of it (default: a sibling directory).
 KNOWLEDGE_PRESS_DIR ?= ../knowledge_press
 export-web-catalog:
-	poetry run python scripts/export_web_catalog.py --out "$(KNOWLEDGE_PRESS_DIR)/web/src/game"
+	$(GUTENKG) export-web-catalog --out "$(KNOWLEDGE_PRESS_DIR)/web/src/game"
 
 # After book text changes (a re-download with --force, `gutenkg authors
 # --refresh`, a pull), carry it to every local surface. `stale-books` names
@@ -296,14 +296,14 @@ export-web-catalog:
 # need. The Swift packs, the image under every runtime and the web forest
 # catalog follow. Publishing to Docker Hub stays a separate, explicit step.
 stale-books:
-	@poetry run python scripts/stale_books.py
+	@$(GUTENKG) stale
 
 refresh-text:
 	@case " $(GENRE) " in *" diaries "*) \
 		echo "ERROR: diaries are rebuilt by 'make build-corpus', not refresh-text."; exit 1;; esac
 	$(if $(strip $(GENRE)),$(GUTENKG) ingest --force-build $(foreach g,$(GENRE),--genre $(g)))
 	$(GUTENKG) build-corpus
-	poetry run python scripts/stale_books.py
+	$(GUTENKG) stale
 	$(MAKE) --no-print-directory export-swift
 	$(MAKE) --no-print-directory build-all
 	$(MAKE) --no-print-directory export-web-catalog

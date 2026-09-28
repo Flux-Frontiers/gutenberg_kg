@@ -8,6 +8,19 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Changed
+
+- Three scripts are now `gutenkg` commands, so they work from an installed
+  package and share the CLI's corpus root:
+  - `gutenkg stale` (was `scripts/stale_books.py`) lists books whose text is
+    newer than their index; `make stale-books` and `make refresh-text` call it.
+  - `gutenkg export-web-catalog` (was `scripts/export_web_catalog.py`) writes
+    the web forest's catalog, next to `gutenkg export-swift`;
+    `make export-web-catalog` calls it.
+  - `gutenkg audit --sections` (was `scripts/check_sections.py`) adds the
+    oversized-section report to the audit, with `--baseline` and `--csv-out`.
+    It is advisory and does not change the audit's exit code.
+
 ### Removed
 
 - The SIMILAR_TO cap study's scripts: `setup_similar_to_analysis.py`,
@@ -17,6 +30,14 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   results stay in `analysis/`.
 - `scripts/synth_replay.py` and `scripts/make_tokenizer_fixture.py` moved to
   the knowledge_press repo, the app they serve.
+- `scripts/build_corpus_by_genre.py` and `scripts/benchmark_embedders.py`,
+  which need LanceDB; the bundle has been sqlite-vec since doc-kg 0.18.0.
+- `scripts/catalog.txt`, the pre-genre book list, whose usage line named a
+  script that no longer exists, and `scripts/catalogs/science-fiction-additions.txt`,
+  whose four IDs are all in the genre catalogs.
+- `scripts/make_app_icon.py`, which drew the app's old "G badge" icon into
+  `app/`. The app moved to knowledge_press, whose `make icons` renders the
+  press-seal icon from SVG.
 
 ## [1.26.0] - 2026-09-28
 

@@ -163,7 +163,8 @@ and that is invisible to a build.
 ### Phase 0: make the measurement a check
 
 Promote the inline query that produced the CSV into
-`scripts/check_sections.py`:
+`scripts/check_sections.py` (since v1.26.0, `gutenkg audit --sections`, with
+`--baseline` and `--csv-out`):
 
 - Reads a pack (or the DocKG store) and prints, per book: section count,
   share of text in the largest section, largest section size.

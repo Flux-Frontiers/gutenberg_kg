@@ -48,7 +48,7 @@ git clone https://github.com/Flux-Frontiers/knowledge_press
 cd knowledge_press && make web-install web-dev
 ```
 
-The book catalog is generated from the corpus rather than hand-maintained — `scripts/export_web_catalog.py` (also `make export-web-catalog`) counts DocKG chunk nodes per book and writes the forest's `src/game/catalogPart*.ts` in a sibling knowledge_press checkout (`KNOWLEDGE_PRESS_DIR` to point elsewhere), so the forest follows the corpus instead of drifting from it.
+The book catalog is generated from the corpus rather than hand-maintained — `gutenkg export-web-catalog` (also `make export-web-catalog`) counts DocKG chunk nodes per book and writes the forest's `src/game/catalogPart*.ts` in a sibling knowledge_press checkout (`KNOWLEDGE_PRESS_DIR` to point elsewhere), so the forest follows the corpus instead of drifting from it.
 
 ### Books grow into natural-looking trees (in progress)
 
