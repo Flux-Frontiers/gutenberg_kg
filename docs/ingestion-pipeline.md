@@ -41,7 +41,7 @@ All genres in a strategy group are processed together in one DocKG pass.
 
 | Strategy | Genres | Chunker behaviour |
 |---|---|---|
-| `semantic` | 18 genres (230 books) | Sentence-transformer semantic boundary detection |
+| `semantic` | 18 genres (242 books) | Sentence-transformer semantic boundary detection |
 | `verse` | `sacred-texts` (7 books) | Chapter:verse window; auto-detects `^\d+:\d+\s` format |
 | `diarykg` | `diaries` (4 collections) | Separate temporal pipeline — YAML timestamps, diary-aware chunking |
 
@@ -289,10 +289,10 @@ through the Swift packs, the image and the web catalog.
 
 | Content type | Genres | Books | Index |
 |---|---:|---:|---|
-| Prose and technical text | 19 | 242 | DocKG semantic chunking |
+| Prose and technical text | 18 | 242 | DocKG semantic chunking |
 | Sacred texts | 1 | 7 | DocKG verse chunking |
 | Diaries | 1 | 4 | DiaryKG temporal indexing |
-| **Total** | **21** | **253** | |
+| **Total** | **20** | **253** | |
 
 ---
 

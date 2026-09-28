@@ -7,10 +7,10 @@ README badges, prose, table, and citation can never silently drift again:
 
   * ``README.md`` — the three shields.io badges (corpus / nodes / edges)
   * ``README.md`` — the "Corpus at a Glance" table (regenerated between markers)
-  * ``README.md`` — the intro prose ("N texts across G genres — X nodes, Y edges")
-  * ``README.md`` — the "query N books" line and the BibTeX citation note
   * ``docs/CORPUS.md`` — the full per-genre book list (via regenerate_corpus_doc)
-  * ``docs/PARTNERS.md`` — the "corpus stands at N works" line
+  * the book, genre, node and edge counts in the prose of README.md,
+    docs/index.md, docs/CHAT_UI.md, docs/ingestion-pipeline.md,
+    docs/PARTNERS.md and the CITATION.cff abstract (``_PROSE_PATTERNS``)
 
 The partnership blurb used to live in README.md, which is why an earlier version
 of this script only ever patched a "N works, X million edges" pattern there. It
@@ -19,6 +19,13 @@ around 2026-09 shows it) and the pattern was never updated to follow it, so this
 sync silently left the new home unpatched -- caught only because the v1.18.1
 release audit read every file's actual prose instead of trusting this script's
 own "What it updates" claim.
+
+It happened again at v1.26.0: the README intro was reworded to "**253 texts in
+21 genres**", which no pattern matched, and docs/index.md, docs/CHAT_UI.md,
+docs/ingestion-pipeline.md and CITATION.cff repeated the counts without being
+synced at all. All six said 21 genres after Curiosities emptied. Every prose
+surface now shares one pattern list, and tests/test_sync_corpus_docs.py fails
+when a surface file carries a genre count that no pattern reaches.
 
 The README table is sorted by book count (descending, ties in
 ``regenerate_corpus_doc.GENRE_ORDER``); ``docs/CORPUS.md`` keeps the canonical
@@ -54,7 +61,15 @@ from gutenberg_kg.corpus import corpus_status  # noqa: E402
 
 _REGISTRY_DEFAULT = Path.home() / ".kgrag" / "registry.sqlite"
 _README = _REPO_ROOT / "README.md"
-_PARTNERS = _REPO_ROOT / "docs" / "PARTNERS.md"
+# Files whose prose repeats the corpus counts. README.md is patched here too,
+# after its table and badges.
+_PROSE_SURFACES = [
+    _REPO_ROOT / "docs" / "index.md",
+    _REPO_ROOT / "docs" / "CHAT_UI.md",
+    _REPO_ROOT / "docs" / "ingestion-pipeline.md",
+    _REPO_ROOT / "docs" / "PARTNERS.md",
+    _REPO_ROOT / "CITATION.cff",
+]
 _CORPUS_ROOT = _REPO_ROOT / "corpus"
 
 _TABLE_BEGIN = (
@@ -96,42 +111,111 @@ def _render_table(genre_by_corpus: dict[str, dict], totals: dict) -> str:
 def _patch_readme(text: str, status: dict) -> str:
     """Return README text with all corpus-count surfaces updated from *status*."""
     totals = status["totals"]
-    books, nodes, edges = totals["books"], totals["nodes"], totals["edges"]
-    genres = sum(1 for g in status["genres"] if g["books"] > 0)
-
     genre_by_corpus = {g["corpus"]: g for g in status["genres"]}
 
     # 1. "Corpus at a Glance" table (between markers).
     table_re = re.compile(re.escape(_TABLE_BEGIN) + r".*?" + re.escape(_TABLE_END), re.DOTALL)
     text = table_re.sub(lambda _m: _render_table(genre_by_corpus, totals), text, count=1)
 
-    # 2. "N public-domain texts across G genres" — intro prose + citation note.
-    text = re.sub(
+    return _patch_prose(text, status)
+
+
+def _counts(status: dict) -> dict[str, int]:
+    """Return the numbers the prose patterns fill in.
+
+    :param status: The ``corpus_status`` result.
+    :return: ``books``, ``genres``, ``nodes`` and ``edges`` for the whole
+        corpus; ``dockg_*`` for the DocKG part (everything but the diaries,
+        which DiaryKG indexes); ``prose_*`` for the semantic-chunked part
+        (the DocKG part less the verse-chunked sacred texts); and
+        ``sacred_books`` and ``diary_books``.
+    """
+    totals = status["totals"]
+    live = [g for g in status["genres"] if g["books"] > 0]
+    by_corpus = {g["corpus"]: g["books"] for g in live}
+    sacred = by_corpus.get("gutenberg-sacred-texts", 0)
+    diary = by_corpus.get("gutenberg-diaries", 0)
+    return {
+        "books": totals["books"],
+        "genres": len(live),
+        "nodes": totals["nodes"],
+        "edges": totals["edges"],
+        "dockg_books": totals["books"] - diary,
+        "dockg_genres": len(live) - bool(diary),
+        "prose_books": totals["books"] - diary - sacred,
+        "prose_genres": len(live) - bool(diary) - bool(sacred),
+        "sacred_books": sacred,
+        "diary_books": diary,
+    }
+
+
+# (pattern, replacement template). Numbers are the only thing replaced; the
+# surrounding words anchor each pattern to one claim, so an unrelated number
+# in the same file is never touched.
+_PROSE_PATTERNS: list[tuple[str, str]] = [
+    # README.md, docs/index.md intro
+    (r"\*\*[\d,]+ texts in \d+ genres\*\*", "**{books:,} texts in {genres} genres**"),
+    # docs/CORPUS.md-style wording, kept for older prose
+    (
         r"[\d,]+ public-domain texts across \d+ genres",
-        f"{books:,} public-domain texts across {genres} genres",
-        text,
-    )
+        "{books:,} public-domain texts across {genres} genres",
+    ),
+    # docs/CHAT_UI.md
+    (
+        r"DocKG\*\* \([\d,]+ books across \d+ genres\)",
+        "DocKG** ({dockg_books:,} books across {dockg_genres} genres)",
+    ),
+    (
+        r"\*\*[\d,]+ books across \d+ genres\*\* in all",
+        "**{books:,} books across {genres} genres** in all",
+    ),
+    # docs/ingestion-pipeline.md
+    (
+        r"\*\*Current corpus:\*\* [\d,]+ books across \d+ genres",
+        "**Current corpus:** {books:,} books across {genres} genres",
+    ),
+    (r"│   \d+ genres · [\d,]+ books · ", "│   {genres} genres · {books} books · "),
+    (
+        r"`semantic` \| \d+ genres \([\d,]+ books\)",
+        "`semantic` | {prose_genres} genres ({prose_books} books)",
+    ),
+    (r"`sacred-texts` \(\d+ books\)", "`sacred-texts` ({sacred_books} books)"),
+    (r"`diaries` \(\d+ collections\)", "`diaries` ({diary_books} collections)"),
+    # docs/ingestion-pipeline.md "Current routing at a glance" table
+    (
+        r"\| Prose and technical text \| \d+ \| \d+ \|",
+        "| Prose and technical text | {prose_genres} | {prose_books} |",
+    ),
+    (r"\| Sacred texts \| 1 \| \d+ \|", "| Sacred texts | 1 | {sacred_books} |"),
+    (r"\| Diaries \| 1 \| \d+ \|", "| Diaries | 1 | {diary_books} |"),
+    (
+        r"\| \*\*Total\*\* \| \*\*\d+\*\* \| \*\*\d+\*\* \| \|",
+        "| **Total** | **{genres}** | **{books}** | |",
+    ),
+    # CITATION.cff abstract
+    (
+        r"[\d,]+ works across \d+ genres — [\d,]+ nodes, [\d,]+ edges —",
+        "{books:,} works across {genres} genres — {nodes:,} nodes, {edges:,} edges —",
+    ),
+    # older README intro tail and Docker intro
+    (r"— [\d,]+ nodes, [\d,]+ edges — built", "— {nodes:,} nodes, {edges:,} edges — built"),
+    (r"query \d+ books", "query {books} books"),
+    # docs/PARTNERS.md
+    (r"corpus stands at \d+ works", "corpus stands at {books} works"),
+]
 
-    # 3. Intro prose "— X nodes, Y edges — built" tail.
-    text = re.sub(
-        r"— [\d,]+ nodes, [\d,]+ edges — built",
-        f"— {nodes:,} nodes, {edges:,} edges — built",
-        text,
-    )
 
-    # 4. "query N books" (Docker + local-app intro).
-    text = re.sub(r"query \d+ books", f"query {books} books", text)
+def _patch_prose(text: str, status: dict) -> str:
+    """Return *text* with every corpus count in ``_PROSE_PATTERNS`` updated.
+
+    :param text: File contents.
+    :param status: The ``corpus_status`` result.
+    :return: The patched contents.
+    """
+    counts = _counts(status)
+    for pattern, template in _PROSE_PATTERNS:
+        text = re.sub(pattern, template.format(**counts), text)
     return text
-
-
-def _patch_partners(text: str, status: dict) -> str:
-    """Return docs/PARTNERS.md text with its book count updated from *status*."""
-    books = status["totals"]["books"]
-    return re.sub(
-        r"corpus stands at \d+ works",
-        f"corpus stands at {books} works",
-        text,
-    )
 
 
 def main() -> int:
@@ -170,29 +254,31 @@ def main() -> int:
     corpus_md = _REPO_ROOT / "docs" / "CORPUS.md"
     old_corpus = corpus_md.read_text(encoding="utf-8") if corpus_md.exists() else ""
 
-    # --- docs/PARTNERS.md ---
-    old_partners = _PARTNERS.read_text(encoding="utf-8") if _PARTNERS.exists() else ""
-    new_partners = _patch_partners(old_partners, status) if old_partners else old_partners
-    partners_changed = new_partners != old_partners
+    # --- other prose surfaces ---
+    prose = {}
+    for path in _PROSE_SURFACES:
+        old = path.read_text(encoding="utf-8")
+        prose[path] = (old, _patch_prose(old, status))
+    changed = [path for path, (old, new) in prose.items() if new != old]
 
     if args.check:
         # Regenerate CORPUS.md into a string without touching disk.
         rows_by_genre, _total = regen._collect_rows()
         new_corpus = regen._render(rows_by_genre, _total, 0.0)
         corpus_changed = _strip_provenance(new_corpus) != _strip_provenance(old_corpus)
-        drift = readme_changed or corpus_changed or partners_changed
-        _report(totals, genres, readme_changed, corpus_changed, partners_changed, check=True)
+        drift = readme_changed or corpus_changed or bool(changed)
+        _report(totals, genres, readme_changed, corpus_changed, changed, check=True)
         return 1 if drift else 0
 
     # --- write ---
     if readme_changed:
         _README.write_text(new_readme, encoding="utf-8")
-    if partners_changed:
-        _PARTNERS.write_text(new_partners, encoding="utf-8")
+    for path in changed:
+        path.write_text(prose[path][1], encoding="utf-8")
     regen.main()  # writes docs/CORPUS.md with fresh provenance
     new_corpus = corpus_md.read_text(encoding="utf-8")
     corpus_changed = _strip_provenance(new_corpus) != _strip_provenance(old_corpus)
-    _report(totals, genres, readme_changed, corpus_changed, partners_changed, check=False)
+    _report(totals, genres, readme_changed, corpus_changed, changed, check=False)
     return 0
 
 
@@ -226,7 +312,7 @@ def _report(
     genres: int,
     readme_changed: bool,
     corpus_changed: bool,
-    partners_changed: bool,
+    changed: list[Path],
     *,
     check: bool,
 ) -> None:
@@ -239,10 +325,12 @@ def _report(
         f"(badges: {totals['books']} / {_fmt_badge_nodes(totals['nodes'])} / "
         f"{_fmt_badge_nodes(totals['edges'])})"
     )
-    print(f"  README.md        {verb if readme_changed else same}")
-    print(f"  docs/CORPUS.md   {verb if corpus_changed else same}")
-    print(f"  docs/PARTNERS.md {verb if partners_changed else same}")
-    if check and (readme_changed or corpus_changed or partners_changed):
+    print(f"  {'README.md':<27}{verb if readme_changed else same}")
+    print(f"  {'docs/CORPUS.md':<27}{verb if corpus_changed else same}")
+    for path in _PROSE_SURFACES:
+        name = str(path.relative_to(_REPO_ROOT))
+        print(f"  {name:<27}{verb if path in changed else same}")
+    if check and (readme_changed or corpus_changed or changed):
         print("\n[✗] Corpus docs are stale — run: poetry run python scripts/sync_corpus_docs.py")
     elif not check:
         print("\n[✓] Corpus docs synced.")
