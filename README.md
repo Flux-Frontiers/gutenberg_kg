@@ -38,6 +38,7 @@ Every book in the corpus is a tree, and the 253 trees stand in genre groves. You
 - **G** opens the grove atlas and **B** lists every book; both jump you there.
 - **Q** rides the ring road. The tour stops at each grove and narrates it, as a caption and aloud.
 - Type a word (`stoic`, `freedom`, `sea`) in the lantern field to light the groves that match.
+- Tap the clock to change the time: the live clock follows your local sun and moon phase, or pick dawn, day, dusk or night. At night the stars and the lantern carry the scene.
 - Seasons change the canopy; winter drops it so the wood shows. On a phone, use the on-screen stick.
 
 The public site shows the forest but cannot open a book: reading needs a local GutenbergKG worker (`make run`) behind the dev server. Controls, the local worker setup and a map from this repo's Python to the forest's TypeScript are in the forest's [README](https://github.com/Flux-Frontiers/knowledge_press/blob/main/web/README.md). The source lives in the [knowledge_press](https://github.com/Flux-Frontiers/knowledge_press) repo's `web/`, a React + Vite + [`@react-three/fiber`](https://github.com/pmndrs/react-three-fiber) app. To run it locally:
