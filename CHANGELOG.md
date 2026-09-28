@@ -8,6 +8,14 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Added
+
+- `gutenkg export-web-books` (also `make export-web-books`) writes each
+  book's chapters as `<slug>.json` in the knowledge_press forest's
+  `web/public/books/`, from the Swift packs, with chapters built the way the
+  worker's `get_chapter` builds them. The published forest on GitHub Pages
+  can then read books without a worker.
+
 ### Changed
 
 - Three scripts are now `gutenkg` commands, so they work from an installed

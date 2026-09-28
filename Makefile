@@ -10,6 +10,7 @@
 #   make build-corpus   — rebuild the DocKG + diary bundle (takes ~24 min)
 #   make export-swift   — export a bundle's on-device Swift packs
 #   make export-web-catalog — count DocKG chunks into the web forest catalog
+#   make export-web-books — write each book's chapters for the web forest's reader
 #   make stale-books    — list books whose text is newer than their index
 #   make refresh-text GENRE="..." — carry changed book text to every local surface
 #   make build          — build the container image (bakes bundle into image)
@@ -239,7 +240,7 @@ endif
 # `gutenkg` on PATH. Override with e.g. `make GUTENKG=gutenkg build-corpus`.
 GUTENKG     ?= poetry run gutenkg
 
-.PHONY: init spacy-model chunk-diaries build-diaries build-corpus export-swift export-web-catalog stale-books refresh-text check-pins setup build build-all rebuild rebuild-all prune kill down-all runtime-guard publish-worker-image pull-worker-image run image-server sdxl-server sdxl-fetch chat up stop down query logs clean docs
+.PHONY: init spacy-model chunk-diaries build-diaries build-corpus export-swift export-web-catalog export-web-books stale-books refresh-text check-pins setup build build-all rebuild rebuild-all prune kill down-all runtime-guard publish-worker-image pull-worker-image run image-server sdxl-server sdxl-fetch chat up stop down query logs clean docs
 
 init:
 	$(GUTENKG) init
@@ -283,6 +284,12 @@ export-swift:
 KNOWLEDGE_PRESS_DIR ?= ../knowledge_press
 export-web-catalog:
 	$(GUTENKG) export-web-catalog --out "$(KNOWLEDGE_PRESS_DIR)/web/src/game"
+
+# Each book's chapters as static JSON, rebuilt from the Swift packs the way the
+# worker's get_chapter rebuilds them, so the published forest reads books with
+# no worker. Run export-swift first. knowledge_press publishes them.
+export-web-books:
+	$(GUTENKG) export-web-books --out "$(KNOWLEDGE_PRESS_DIR)/web/public/books"
 
 # After book text changes (a re-download with --force, `gutenkg authors
 # --refresh`, a pull), carry it to every local surface. `stale-books` names
