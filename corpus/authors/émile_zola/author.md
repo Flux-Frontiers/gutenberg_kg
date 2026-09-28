@@ -2,7 +2,7 @@
 
 *1840 – 1902*
 
-- **Wikipedia**: https://fr.wikipedia.org/wiki/%C3%89mile_Zola
+- **Wikipedia**: https://en.wikipedia.org/wiki/Émile_Zola
 - **Gutenberg Agent ID**: 528
 
 ## Works in Corpus

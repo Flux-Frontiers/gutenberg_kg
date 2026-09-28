@@ -2,7 +2,7 @@
 
 *1854 – 1900*
 
-- **Wikipedia**: https://fr.wikipedia.org/wiki/Oscar_Wilde
+- **Wikipedia**: https://en.wikipedia.org/wiki/Oscar_Wilde
 - **Gutenberg Agent ID**: 111
 
 ## Works in Corpus

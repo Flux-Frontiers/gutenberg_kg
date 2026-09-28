@@ -8,11 +8,12 @@
 
 ## Author
 
-- **Name**: da Pisa Rusticiano
+- **Name**: Marco Polo
 - **Born**: 1254
 - **Died**: 1324
 - **Wikipedia**: https://en.wikipedia.org/wiki/Marco_Polo
 - **Gutenberg Agent ID**: 3613
+- **Co-author**: Rusticiano da Pisa
 
 - **Gutenberg Published**: 2004-05-01
 

@@ -8,7 +8,7 @@
 
 ## Author
 
-- **Name**: H. G. (Herbert George) Wells
+- **Name**: H. G. Wells
 - **Born**: 1866
 - **Died**: 1946
 - **Wikipedia**: https://en.wikipedia.org/wiki/H._G._Wells

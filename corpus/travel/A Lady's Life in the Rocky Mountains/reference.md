@@ -8,7 +8,7 @@
 
 ## Author
 
-- **Name**: Isabella L. (Isabella Lucy) Bird
+- **Name**: Isabella L. Bird
 - **Born**: 1831
 - **Died**: 1904
 - **Wikipedia**: https://en.wikipedia.org/wiki/Isabella_Bird

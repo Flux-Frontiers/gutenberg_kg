@@ -8,8 +8,8 @@
 
 ## Author
 
-- **Name**: active 6th century B.C. Sunzi
-- **Wikipedia**: https://zh.wikipedia.org/wiki/%E5%AD%99%E6%AD%A6
+- **Name**: Sunzi
+- **Wikipedia**: https://en.wikipedia.org/wiki/Sun_Tzu
 - **Gutenberg Agent ID**: 4349
 
 - **Gutenberg Published**: 1994-05-01

@@ -8,7 +8,7 @@
 
 ## Author
 
-- **Name**: W. E. B. (William Edward Burghardt) Du Bois
+- **Name**: W. E. B. Du Bois
 - **Born**: 1868
 - **Died**: 1963
 - **Wikipedia**: https://en.wikipedia.org/wiki/W._E._B._Du_Bois

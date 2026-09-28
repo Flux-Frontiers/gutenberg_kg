@@ -8,7 +8,7 @@
 
 ## Author
 
-- **Name**: G. K. (Gilbert Keith) Chesterton
+- **Name**: G. K. Chesterton
 - **Born**: 1874
 - **Died**: 1936
 - **Wikipedia**: https://en.wikipedia.org/wiki/G._K._Chesterton

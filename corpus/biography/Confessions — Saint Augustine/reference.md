@@ -8,7 +8,7 @@
 
 ## Author
 
-- **Name**: of Hippo, Saint Augustine
+- **Name**: Augustine of Hippo
 - **Born**: 354
 - **Died**: 430
 - **Wikipedia**: https://en.wikipedia.org/wiki/Augustine_of_Hippo

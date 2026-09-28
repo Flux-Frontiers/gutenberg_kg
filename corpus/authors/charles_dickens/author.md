@@ -9,6 +9,7 @@
 
 | Title | Genre |
 |-------|-------|
+| A Christmas Carol in Prose; Being a Ghost Story of Christmas | english-literature |
 | A Tale of Two Cities | english-literature |
 | Bleak House (Dickens) | english-literature |
 | David Copperfield (Dickens) | english-literature |

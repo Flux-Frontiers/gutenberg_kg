@@ -2,8 +2,8 @@
 
 > **Generated**
 > - Script: `regenerate_corpus_doc.py`
-> - gutenkg: `1.25.0`
-> - Date: `2026-09-27T00:37:37Z`
+> - gutenkg: `1.26.0`
+> - Date: `2026-09-28T16:26:57Z`
 > - Host: `turing (Darwin arm64)`
 > - Elapsed: `0.01s`
 
@@ -25,7 +25,7 @@
 | Groundwork of the Metaphysics of Morals | Kant |
 | Hegel's Lectures on the History of Philosophy: Volume 3 | of 3 |
 | Leviathan | Thomas Hobbes |
-| Meditations | Emperor of Rome Marcus Aurelius |
+| Meditations | Marcus Aurelius |
 | Nicomachean Ethics | Aristotle |
 | On Liberty | Mill |
 | On the Duty of Civil Disobedience | Thoreau |
@@ -36,10 +36,10 @@
 | Second Treatise of Government | John Locke |
 | The Art of War | Sun Tzu |
 | The Birth of Tragedy; or, Hellenism and Pessimism | Friedrich Wilhelm Nietzsche |
-| The City of God, Volume I | of Hippo, Saint Augustine |
+| The City of God, Volume I | Augustine of Hippo |
 | The Crown of Wild Olive | John Ruskin |
 | The Enchiridion | Epictetus |
-| The Federalist Papers | James Madison |
+| The Federalist Papers | Alexander Hamilton, John Jay, and James Madison |
 | The Kama Sutra of Vatsyayana | Vatsyayana |
 | The Lives and Opinions of Eminent Philosophers | Diogenes Laertius |
 | The origin and development of the moral ideas | Edward Westermarck |
@@ -69,10 +69,10 @@
 | Emma | Jane Austen |
 | Far from the Madding Crowd | Hardy |
 | Great Expectations | Charles Dickens |
-| Grimms Fairy Tales | Wilhelm Grimm |
+| Grimms Fairy Tales | Jacob Grimm and Wilhelm Grimm |
 | Gullivers Travels | Jonathan Swift |
 | Heart of Darkness | Joseph Conrad |
-| Howards End | E. M. (Edward Morgan) Forster |
+| Howards End | E. M. Forster |
 | Jane Eyre | Charlotte Brontë |
 | Kim | Kipling |
 | Middlemarch | George Eliot |
@@ -89,9 +89,9 @@
 | The Portrait of a Lady — Volume 1 | Henry James |
 | The Portrait of a Lady — Volume 2 | Henry James |
 | The Strange Case of Dr Jekyll and Mr Hyde | Robert Louis Stevenson |
-| The Time Machine | H. G. (Herbert George) Wells |
+| The Time Machine | H. G. Wells |
 | The Turn of the Screw | Henry James |
-| The War of the Worlds | H. G. (Herbert George) Wells |
+| The War of the Worlds | H. G. Wells |
 | Treasure Island | Robert Louis Stevenson |
 | Vanity Fair | Thackeray |
 | Wuthering Heights | Emily Brontë |
@@ -119,10 +119,10 @@
 | The Golden Sayings of Epictetus, with the Hymn of Cleanthes | Epictetus |
 | The House of Atreus; Being the Agamemnon, the Libation bearers, and the Furies | Aeschylus |
 | The Iliad | Homer |
-| The Meditations of the Emperor Marcus Aurelius Antoninus | Emperor of Rome Marcus Aurelius |
+| The Meditations of the Emperor Marcus Aurelius Antoninus | Marcus Aurelius |
 | The Odyssey | Homer |
 | The Teaching of Epictetus | Epictetus |
-| Thoughts of Marcus Aurelius Antoninus | Emperor of Rome Marcus Aurelius |
+| Thoughts of Marcus Aurelius Antoninus | Marcus Aurelius |
 
 ### American Literature (23)
 
@@ -156,7 +156,7 @@
 
 | Title | Author |
 |---|---|
-| Anna Karenina | Leo, graf Tolstoy |
+| Anna Karenina | Leo Tolstoy |
 | Childhood, Boyhood, Youth | Tolstoy |
 | Crime and Punishment | Fyodor Dostoyevsky |
 | Dead Souls | Nikolai Vasilevich Gogol |
@@ -167,7 +167,7 @@
 | The Brothers Karamazov | Fyodor Dostoyevsky |
 | The Idiot | Fyodor Dostoyevsky |
 | The possessed :  or, The devils | Fyodor Dostoyevsky |
-| War and Peace | Leo, graf Tolstoy |
+| War and Peace | Leo Tolstoy |
 
 ### French Literature (12)
 
@@ -181,9 +181,9 @@
 | Les Miserables | Victor Hugo |
 | Madame Bovary | Gustave Flaubert |
 | Nana | Zola |
-| The Count of Monte Cristo | Auguste Maquet |
+| The Count of Monte Cristo | Alexandre Dumas and Auguste Maquet |
 | The Hunchback of Notre-Dame | Hugo |
-| The Three Musketeers | Auguste Maquet |
+| The Three Musketeers | Alexandre Dumas and Auguste Maquet |
 | Twenty Thousand Leagues Under the Sea | Jules Verne |
 
 ### Biography (12)
@@ -198,7 +198,7 @@
 | Incidents in the Life of a Slave Girl — Harriet Jacobs | Harriet Jacobs |
 | Miracle Mongers and Their Methods — Harry Houdini | Harry Houdini |
 | Narrative of the Life of Frederick Douglass | Frederick Douglass |
-| Personal Memoirs of Ulysses S. Grant — Volume 1 | Ulysses S. (Ulysses Simpson) Grant |
+| Personal Memoirs of Ulysses S. Grant — Volume 1 | Ulysses S. Grant |
 | The Education of Henry Adams | Henry Adams |
 | The Life of Samuel Johnson — James Boswell | James Boswell |
 | Up From Slavery — Booker T. Washington | Booker T. Washington |
@@ -229,13 +229,13 @@
 | Flatland | Edwin Abbott Abbott |
 | Frankenstein | Mary Wollstonecraft Shelley |
 | Pellucidar | Burroughs |
-| Symzonia: Voyage of Discovery | Adam, Captain Seaborn |
+| Symzonia: Voyage of Discovery | Adam Seaborn |
 | The Coming Race | Edward Bulwer Lytton, Baron Lytton |
-| The First Men in the Moon | H. G. (Herbert George) Wells |
+| The First Men in the Moon | H. G. Wells |
 | The Food of the Gods | Wells |
 | The Gods of Mars | Edgar Rice Burroughs |
-| The Invisible Man | H. G. (Herbert George) Wells |
-| The island of Doctor Moreau | H. G. (Herbert George) Wells |
+| The Invisible Man | H. G. Wells |
+| The island of Doctor Moreau | H. G. Wells |
 | The Lost World | Arthur Conan Doyle |
 | The warlord of Mars | Edgar Rice Burroughs |
 
@@ -243,30 +243,30 @@
 
 | Title | Author |
 |---|---|
-| At the Mountains of Madness | H. P. (Howard Phillips) Lovecraft |
+| At the Mountains of Madness | H. P. Lovecraft |
 | Carmilla | Joseph Sheridan Le Fanu |
-| Ghost Stories of an Antiquary | M. R. (Montague Rhodes) James |
+| Ghost Stories of an Antiquary | M. R. James |
 | Tales of Terror and Mystery | Arthur Conan Doyle |
-| The Call of Cthulhu | H. P. (Howard Phillips) Lovecraft |
-| The Case of Charles Dexter Ward | H. P. (Howard Phillips) Lovecraft |
-| The Colour Out of Space | H. P. (Howard Phillips) Lovecraft |
-| The Dunwich Horror | H. P. (Howard Phillips) Lovecraft |
+| The Call of Cthulhu | H. P. Lovecraft |
+| The Case of Charles Dexter Ward | H. P. Lovecraft |
+| The Colour Out of Space | H. P. Lovecraft |
+| The Dunwich Horror | H. P. Lovecraft |
 | The Great God Pan | Arthur Machen |
 | The House on the Borderland | William Hope Hodgson |
-| The King in Yellow | Robert W. (Robert William) Chambers |
-| The Monk: A Romance | M. G. (Matthew Gregory) Lewis |
+| The King in Yellow | Robert W. Chambers |
+| The Monk: A Romance | M. G. Lewis |
 | The Mysteries of Udolpho | Ann Ward Radcliffe |
-| The Shadow over Innsmouth | H. P. (Howard Phillips) Lovecraft |
-| The Shunned House | H. P. (Howard Phillips) Lovecraft |
+| The Shadow over Innsmouth | H. P. Lovecraft |
+| The Shunned House | H. P. Lovecraft |
 | The Willows | Algernon Blackwood |
 
 ### Travel (6)
 
 | Title | Author |
 |---|---|
-| A Lady's Life in the Rocky Mountains | Isabella L. (Isabella Lucy) Bird |
+| A Lady's Life in the Rocky Mountains | Isabella L. Bird |
 | The Innocents Abroad — Mark Twain | Mark Twain |
-| The Travels of Marco Polo | da Pisa Rusticiano |
+| The Travels of Marco Polo | Marco Polo and Rusticiano da Pisa |
 | Travels in the interior districts of Africa: performed under the direction and patronage of the African Association, in the years 1795, 1796, and 1797 | Mungo Park |
 | Two Years Before the Mast | Richard Henry Dana |
 | Typee: A Peep at Polynesian Life — Herman Melville | Herman Melville |
@@ -300,7 +300,7 @@
 | Title | Author |
 |---|---|
 | Letters of John Keats to His Family and Friends | John Keats |
-| Letters of Pliny the Younger | the Younger Pliny |
+| Letters of Pliny the Younger | Pliny the Younger |
 | Letters on England | Voltaire |
 | Letters to His Son — Lord Chesterfield | Lord Chesterfield |
 | The Works of Lord Byron: Letters and Journals. Vol. 1 | George Gordon Byron, Baron Byron |
@@ -362,4 +362,4 @@
 | Macbeth | William Shakespeare |
 | Romeo and Juliet | William Shakespeare |
 
-<!-- generated by regenerate_corpus_doc.py | gutenkg 1.25.0 | 2026-09-27T00:37:37Z | turing (Darwin arm64) | 0.01s -->
+<!-- generated by regenerate_corpus_doc.py | gutenkg 1.26.0 | 2026-09-28T16:26:57Z | turing (Darwin arm64) | 0.01s -->
