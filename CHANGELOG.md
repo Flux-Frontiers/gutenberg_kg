@@ -8,6 +8,16 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Removed
+
+- The SIMILAR_TO cap study's scripts: `setup_similar_to_analysis.py`,
+  `run_similar_to_cap_sweep.py`, `run_retrieval_cap_ab.py`,
+  `summarize_retrieval_ab.py`, `evaluate_similar_to_value.py` and
+  `build_gold_from_retrieval.py`. The cap-8 decision is settled; their
+  results stay in `analysis/`.
+- `scripts/synth_replay.py` and `scripts/make_tokenizer_fixture.py` moved to
+  the knowledge_press repo, the app they serve.
+
 ## [1.26.0] - 2026-09-28
 
 ### Added
