@@ -9,6 +9,11 @@ from __future__ import annotations
 import os
 from pathlib import Path
 
+import pytest
+from click.testing import CliRunner
+
+from gutenberg_kg.cli import cmd_stale
+from gutenberg_kg.cli.main import cli
 from gutenberg_kg.stale import bundle_is_stale, stale_books
 
 OLD, NEW = 1_000_000.0, 2_000_000.0
@@ -62,3 +67,48 @@ def test_bundle_older_than_a_book_index_is_stale(tmp_path: Path) -> None:
 
 def test_missing_bundle_is_stale(tmp_path: Path) -> None:
     assert bundle_is_stale(tmp_path, tmp_path / "no-bundle")
+
+
+class TestCli:
+    """`gutenkg stale`: its report, hint and exit code."""
+
+    @pytest.fixture
+    def repo(self, tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> Path:
+        monkeypatch.setattr(cmd_stale, "CORPUS_ROOT", tmp_path / "corpus")
+        monkeypatch.setattr(cmd_stale, "REPO_ROOT", tmp_path)
+        return tmp_path
+
+    def _bundle(self, repo: Path, mtime: float) -> None:
+        _touch(repo / "bundles" / "gutenberg-all" / ".dockg" / "graph.sqlite", mtime)
+
+    def test_nothing_stale_exits_zero(self, repo: Path) -> None:
+        _book(repo / "corpus", "philosophy", "Meditations", text=OLD, index=NEW)
+        self._bundle(repo, NEW + 1)
+        result = CliRunner().invoke(cli, ["stale"])
+        assert result.exit_code == 0, result.output
+        assert result.output.strip() == "Nothing stale."
+
+    def test_stale_book_names_it_and_its_genre(self, repo: Path) -> None:
+        _book(repo / "corpus", "horror", "Dracula", text=NEW, index=OLD)
+        _book(repo / "corpus", "philosophy", "Meditations", text=OLD, index=OLD)
+        self._bundle(repo, NEW + 1)
+        result = CliRunner().invoke(cli, ["stale"])
+        assert result.exit_code == 1
+        assert "book    horror/Dracula  (text newer than index" in result.output
+        assert "Meditations" not in result.output
+        assert 'make refresh-text GENRE="horror"' in result.output
+
+    def test_stale_bundle_alone_suggests_an_empty_genre(self, repo: Path) -> None:
+        _book(repo / "corpus", "philosophy", "Meditations", text=OLD, index=NEW)
+        self._bundle(repo, OLD)
+        result = CliRunner().invoke(cli, ["stale"])
+        assert result.exit_code == 1
+        assert "bundle  bundles/gutenberg-all  (older than a per-book index)" in result.output
+        assert 'make refresh-text GENRE=""' in result.output
+
+    def test_bundle_option_picks_the_bundle(self, repo: Path) -> None:
+        _book(repo / "corpus", "philosophy", "Meditations", text=OLD, index=NEW)
+        self._bundle(repo, NEW + 1)
+        result = CliRunner().invoke(cli, ["stale", "--bundle", "philosophy-starter"])
+        assert result.exit_code == 1
+        assert "bundles/philosophy-starter" in result.output

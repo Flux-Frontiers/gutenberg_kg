@@ -9,7 +9,12 @@ from __future__ import annotations
 import sqlite3
 from pathlib import Path
 
+import pytest
+from click.testing import CliRunner
+
 from gutenberg_kg import sections as sec
+from gutenberg_kg.cli import cmd_audit
+from gutenberg_kg.cli.main import cli
 
 
 def _book(corpus: Path, genre: str, name: str, spans: list[tuple[str, int, int]]) -> None:
@@ -68,3 +73,72 @@ def test_baseline_round_trip_and_changes(tmp_path: Path) -> None:
     assert baseline == {"Dunwich": 2}
     assert sec.baseline_changes(sec.scan_corpus(corpus), baseline) == []
     assert sec.baseline_changes([], baseline) == [("Dunwich", 2, None)]
+
+
+class TestAuditCli:
+    """`gutenkg audit --sections`: the report rides on the audit's exit code."""
+
+    @pytest.fixture
+    def corpus(self, tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> Path:
+        root = tmp_path / "corpus"
+        _book(root, "horror", "Dunwich", [("All of it", 0, 200_000)])
+        _book(root, "drama", "Short", [("Only", 0, 50_000)])
+        monkeypatch.setattr(cmd_audit, "CORPUS_ROOT", root)
+        self.audit_genres: list[list[str]] = []
+        self.audit_rc = 0
+
+        def fake_run_audit(genres, registry=None, as_json=False):
+            self.audit_genres.append(genres)
+            return self.audit_rc
+
+        monkeypatch.setattr(cmd_audit.au, "run_audit", fake_run_audit)
+        return root
+
+    def test_sections_lists_the_flagged_book(self, corpus: Path) -> None:
+        result = CliRunner().invoke(cli, ["audit", "--sections"])
+        assert result.exit_code == 0, result.output
+        assert "1 books have >90% of their text in a single section" in result.output
+        assert "[horror]  Dunwich  -- All of it" in result.output
+
+    def test_without_sections_there_is_no_report(self, corpus: Path) -> None:
+        result = CliRunner().invoke(cli, ["audit"])
+        assert result.exit_code == 0
+        assert "single section" not in result.output
+
+    def test_flagged_books_do_not_fail_a_clean_audit(self, corpus: Path) -> None:
+        self.audit_rc = 0
+        assert CliRunner().invoke(cli, ["audit", "--sections"]).exit_code == 0
+
+    def test_a_failing_audit_still_fails_with_sections(self, corpus: Path) -> None:
+        self.audit_rc = 1
+        result = CliRunner().invoke(cli, ["audit", "--sections"])
+        assert result.exit_code == 1
+        assert "Dunwich" in result.output
+
+    def test_genre_reaches_both_checks(self, corpus: Path) -> None:
+        result = CliRunner().invoke(cli, ["audit", "--genre", "drama", "--sections"])
+        assert self.audit_genres == [["drama"]]
+        assert "0 books have" in result.output
+        assert "Dunwich" not in result.output
+
+    def test_csv_out_and_baseline(self, corpus: Path, tmp_path: Path) -> None:
+        csv_path = tmp_path / "sections.csv"
+        result = CliRunner().invoke(cli, ["audit", "--sections", "--csv-out", str(csv_path)])
+        assert "Wrote 2 rows" in result.output
+        assert sec.load_baseline(csv_path) == {"Dunwich": 1, "Short": 1}
+
+        result = CliRunner().invoke(cli, ["audit", "--sections", "--baseline", str(csv_path)])
+        assert "No section-count changes vs baseline." in result.output
+
+        csv_path.write_text(csv_path.read_text().replace(",1,", ",3,", 1), encoding="utf-8")
+        result = CliRunner().invoke(cli, ["audit", "--sections", "--baseline", str(csv_path)])
+        assert "1 book(s) changed section count vs baseline:" in result.output
+        assert ": 3 -> 1" in result.output
+
+    @pytest.mark.parametrize("flag", ["--baseline", "--csv-out"])
+    def test_report_options_need_sections(self, corpus: Path, tmp_path: Path, flag: str) -> None:
+        path = tmp_path / "x.csv"
+        path.write_text("book,sections\n", encoding="utf-8")
+        result = CliRunner().invoke(cli, ["audit", flag, str(path)])
+        assert result.exit_code == 2
+        assert "need --sections" in result.output
