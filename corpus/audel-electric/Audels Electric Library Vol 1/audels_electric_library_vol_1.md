@@ -6,230 +6,72 @@
 
 ---
 
-~
-- — 'ar oP) - —
-'PT ng a « i ee .
-a -
-
 Paite
-RANE Ly
 
-i
-
-rh
-
-J
-\+
-
-i
-Se)
-
-yt
-
-'od
-
-F965")
-
-° H '
-ik
-
-"))
-y
-
-ty
-
-ae Ss a Lo er
-5 gee "faa
-: pe a eae al :
-
-i
-
-f
-
-ft — >a = = = . -
 S) SE eee ge ee .
-a a 3 Cs ~ 2 pa - > '. , . 7 e
-- P a — = y ' - = 2 - . . % s , E : ",
-- 7& =. : : Pn ies a ah
 
-é
-
-« - -¥
-wg. hee oils
 See 0 ee bee
 
-<A fad .
-a
-
-- as
 corel. eee acre 6. ge He wont
 i. alo. —
 
-=>.
-
-~
-ae, =
-~ Cy key et ga gy
-
-Nae ty
-Oy Uy au
-
-. 7 "
-a. ¥e ca
-$e a Mel ea ee
-
-=
-
-an
-
-'
-iP
-
-' SoA, (
-
-I wy 4%) es,
-' '
 rely
 
-2 oP
-ag pe
-
-mt) wl lw p "a8 " ~ on
-
-— A ——— = = ot es a apie | -
-"4 - o bd eet |
-
-: a, < ye
-
-t. tn
-a oe & ee
-* ' . ~~,
-
-<n
-
-a
-
-yy é
-
-"f
-al
-
 ae Senne Sake Par aN com
-cd els - .
-: A : ' ¥. ac
-Sar ; :
-; .
-- 4, r} ;
-ees i " 2
-an
-' : ' 4
+
 fee
-. Pa oe
-.
-: sy '
-rid a «. s
-Re é
-- oh é
-@
-'
-. -
-= : e
 
-. : "
-e
-Foes te,
-~" ~.
-, :
-'
-op
 rae
-ee
-on 7
-'
+
 ees
-eaioreoa! : s
+
 iiciere =
-an en" 2
-i - -_-
-se "
-+ +
+
 tas
--
+
 : its ,
-
-ca
-,
-ky
-!
-.
-be -
-
-a.
 
 Audel's New Electric Library
 
 NEW
-ELECTR
 
-IG
-DICT LONARY
-CYCLOPE DIA
+### CYCLOPE DIA
+
 1 ELEGTRICG i FUNDAMENTAL
-CALCULATOR PRINGIPLES
+
 FORENGINEERS 1 ANd RULES oF
-AMMECHANICS ELECTRIGITY
-PRAGTIGAL a |
-iC 3=—saPw#
+
 REFMOERATON | ih == | mE : DYNAMOS.
 HEATING |
 
 RAY
 PLATING
-| WELDING-PUMPS [fl .
-COMPRESSORS fi
-
-D -G°MOTORS
-GONSTRUGT ION
-INSTALLATION
-
-nly? :
-
-| LLUMINATION iX 7
+WELDING-PUMPS [fl .
 
 ### RADIO
 
 TELEPHONE i ELEGTRIGAL
-TELEGRAPH | E TESTING _
+TELEGRAPH | E TESTING
 OTION = 7 ano TESTS
 PICTURE =
 
-TALKIES =
-
 LIGHTING =
 
-| ELECTRIG AVI
-| RAILWAYS ir
-| SIGNALS |
-| ELEVATORS AWN 7 | PRINCIPLES
-HOISTS~cRaies = Anp PIAGRAMS
-POWER
-OO e AERO
-| IGNITION | — FAGTOR
-: STARTERS VIR; iw
+ELEVATORS AWN 7 | PRINCIPLES
 
-### IRING
+### POWER
 
-HOUSESLIGHT ||
-ann POWE
+IGNITION | — FAGTOR
 
 a ALTERNATORS
-Sess) A-C-MOTORS TURRORESTV
-WINDINGS
-| HIGH TERSION BENDERSERS MAINTENANGE
+
+### WINDINGS
+
+### HIGH TERSION BENDERSERS MAINTENANGE
+
 ANS ns i | | REGULATORS COMVE RTERS
-| RECTIFIERS
+
 CALCULATIONS {i || METERS GIRCUIT
-' |§GODE : CHBOARDS BREAKERS
 
 ### POWER STATION
 
@@ -244,15 +86,9 @@ clock.
 
 principal subjects covered in each volume, read around the
 
-\
-
 ### SECONDARY CURRENT
 
 ### HIGH TENSION
-
-7 hit thhshbdinntitdniitititththni¢tttttntt:Lide
-
-### SEERA RAAT AEE
 
 PRIMARY Bitte
 
@@ -261,19 +97,15 @@ PRIMARY Bitte
 Primary and Secondary Circuits
 
 Ignition and lighting circuits illustrating primary and secondary current, high tenston and
-low tension. It will be seen from the illustrations that careful distinction must be made be-
-tween primary and secondary current.
+low tension. It will be seen from the illustrations that careful distinction must be made between primary and secondary current.
 
-| DEDICATED TO ELECTRICAL PROGRESS
+### DEDICATED TO ELECTRICAL PROGRESS
 
-UDEL
-NEW :
+### NEW :
 
 ### ELECTRIC
 
 ### LIBRARY
-
-VOL1
 
 ### FOR ENGINEERS, ELECTRICIANS
 
@@ -297,8 +129,6 @@ of applied electricity.
 
 by FRANK D. GRAHAM, B.S.,M.S.,M.E., EE.
 
-@
-
 THEO. AUDEL & CO... PUBLISHERS
 65 WEST 23rd STREET, NEW YORK.U.S.A-
 
@@ -320,8 +150,7 @@ force of the Creator.
 The Electrical Age has opened new
 <2 aa problems to all connected with modern
 Ars industry, making a thorough working
-knowledge of the fundamental princi-
-ples of applied electricity necessary.
+knowledge of the fundamental principles of applied electricity necessary.
 
 The author, following the popular appeal for practical
 knowledge, has prepared this progressive series for the electrical
@@ -332,8 +161,7 @@ their training and knowledge of Electricity.
 Simplicity is the keynote throughout this series. From this
 progressive step-by-step method of instruction and explanation,
 the reader can easily gain a thorough knowledge of modern
-electrical practice in line with the best information and experi-
-ence.
+electrical practice in line with the best information and experience.
 
 The author and publishers here gratefully acknowledge the
 hearty and generous help and co-operation of all those who have
@@ -370,24 +198,20 @@ The secret that took the whole year to find;
 The facts that you learned at enormous expense,
 Were all on a library shelf to commence."
 
-### FINDER
-
 Pages
-1 Electricity..............................1 to 10
 
 Nature and source, 1.
 
 Kinds of electricity,
 static, 2.
-dynamic, 4.
+
 magnetic, 4.
 radio, 4.
 atmospheric, 5.
 positive, 6.
 negative, 6.
-frictional, 8.
+
 resinous, 8.
-vitreous, 8.
 
 2 Static Electricity. .... Lecce ee ceeeeeees edb to 44
 
@@ -419,8 +243,6 @@ Hydraulic analogies, 45 to 47.
 Volts, 47.
 
 Amperes, 48.
-
-Ohm's, 48.
 
 Coulomb, 48.
 
@@ -550,8 +372,6 @@ Muscular contractions, 160, 161.
 Electroplating, 161.
 Electrotyping, 162, 163.
 
-9 Magnetism..........................165 to 196
-
 Two kinds of magnetism, 165, 166.
 Magnetic needle, 166.
 
@@ -613,8 +433,6 @@ Laws of electro-magnetic induction, 205 to 210.
 Rules for direction of induced current, 211 to 214.
 Self-induction, 214, 215.
 
-11 Inductien Coils.....................247 to 24€
-
 Classification, 217.
 
 Self-induction, 217 to 219.
@@ -647,8 +465,6 @@ Coil design, 238, 239.
 Coil calculations, 239 to 242.
 
 Tables, 243 to 245.
-
-12 The Dynamo....... Lee ee wesc ve ee . LAT to 256
 
 Definition of dynamo, 247.
 
@@ -746,8 +562,6 @@ Ring armature, 351 to 354.
 Drum armature, 354 to 356.
 
 Disc armature, 356, 357.
-
-%e
 
 19 Armature Windings............... ..359 to 388
 
@@ -903,20 +717,15 @@ E, Volume.
 a,8, Angle.
 
 3. Derived Mechanical.
-v, Velocity.
 
 w, Angular velocity.
 
 m, Momentum.
 
-a, Acceleration.
-
 g; Acceleration due to gravity =
 32.2 feet per second.
 
 F,f, Force.
-
-W, #£Work
 
 P, Power
 
@@ -926,26 +735,14 @@ e, Ergs.
 
 ft. lb., Foot pound.
 
-ae
-
-ic.
-
 , h.p.; horse power.
 
 .» Indicated horse power.
 P., Brake horse power.
 P., Electrical horse power.
 
-ay
-
 eokcohay
 jeoges:
-
-J;
-
-Ps
-
-Kk,
 
 Joule's equivalent.
 Pressure.
@@ -979,15 +776,13 @@ Field intensity.
 
 Magnetic flux.
 
-Magnetic flux density or mag-
-netic induction.
+Magnetic flux density or magnetic induction.
 
 Magnetizing force.
 
 Magnetomotive force.
 
-Reluctance, magnetic resist-
-ance.
+Reluctance, magnetic resistance.
 
 Magnetic permeability.
 
@@ -1002,40 +797,21 @@ mon
 
 alo
 
-O
-
-mw 20
-
-20 >
-
-MaNK
-
-7,
-
-6.
-
 Eqm
 
 Derived Electromagnetic.
 
 Resistance, ohm.
-do, megohm.
 
 Volt, pressure.
 Impressed pressure.
 
-Eg; Eo Active pressuie; ohmic drop.
 By Virtual pressure.
 Emax Maximum pressure.
 
 Eav
 
 Tum
-
-X4
-Xe
-
-Vs
 
 Average pressure.
 Effective pressure.
@@ -1056,16 +832,14 @@ Average current.
 
 Effective current.
 
-Quantity of electricity, am-
-pere hour; coulomb.
+Quantity of electricity, ampere hour; coulomb.
 
 Capacity, farad.
 
 Electric energy, watt hour;
 Joule.
 
-Electric power, watt;  kilo-
-watt.
+Electric power, watt;  kilowatt.
 
 Resistivity (specific resistance)
 ohm centimeter.
@@ -1085,22 +859,16 @@ Capacity reactance.
 
 Susceptance, mho.
 
-Inductance (coefficient of In-
-duction), henry.
+Inductance (coefficient of Induction), henry.
 
 Ratio of electro-magnetic to
-electrostatic unit of quan-
-tity =3 X10 centimeters
+electrostatic unit of quantity =3 X10 centimeters
 per second approximately.
-
-Cofn-
 
 Symbols in general use.
 
 Diameter.
 Radius.
-
-OP NZnne
 
 f, Temperature.
 0, Deflection of galvanometer
@@ -1111,10 +879,8 @@ N,#, Number of anything.
 3.141592.
 2x f=6.2831 XX frequency, 1n
 alternating current.
-aw f, Frequency, periodicity, cycles
-per second.
 
-Ww,
+per second.
 
 system.
 
@@ -1126,18 +892,7 @@ C.P. Candle power.
 —o— Incandescent lamp.
 —><—.Arc lamp.
 
-—| Lg = Ceadenete:
-SIH
-LY
-
-®
-Ay
-
 "OSSSG Inductive resistance.
-
-AAV" Non-inductive _resist-
-
-ar1ce,
 
 Phase angle.
 »  Galvanometer.
@@ -1149,7 +904,6 @@ C. Alternating current.
 P.D. Pressure difference.
 P.F. Power factor.
 C.G.S. Centimeter, gramme, Second'
-B
 
 Battery of cells.
 
@@ -1202,57 +956,34 @@ Other useful divisions are:
 
 1. Positive;
 
-2 Electricity
-
 2. Negative electricity;
 3. Dynamic electricity.
 
-Static Electricity.—This is a term employed to define elec-
-tricity produced by friction. It is properly employed in the
+Static Electricity.—This is a term employed to define electricity produced by friction. It is properly employed in the
 sense of a static charge which shows itself by the attraction or
 repulsion between charged bodies.
 
-SE
-yi
-
 ### IN ROTATION
 
-——————
-
-mis Pa ais si :
-oe aoe =---f,
-e
 a e space
-—
-on oe
-
-| |DYNAMIC
-
-————
-——
 
 3 er IN MOTION
-SL ih rat )
-STATIC
+
+### STATIC
 
 ### AT REST RADIATION
-
-AES
 
 Fias. 1 to 4.—The four kinds of electricity. 1, static electricity; 2, dynamic electricity in
 lineal motion; 3, magnetism electricity in rotatton; 4, radio electricity in vibration.
 
 When static electricity is discharged, it causes more or less of a current
 which shows itself by the passage of sparks or a brush discharge; by a
-peculiar prickling sensation; by a peculiar smell due to its chemical ef-
-fects; by heating the air or other substances in its path; and sometimes in
+peculiar prickling sensation; by a peculiar smell due to its chemical effects; by heating the air or other substances in its path; and sometimes in
 other ways.
 
 Current Electricity.—This may be defined as the quantity
 of electricity which passes through a conductor in a given ttme—
 or, electricity in the act of being discharged, or electricity 1n motion.
-
-Electricity 3
 
 ### POSITIVE
 
@@ -1262,17 +993,12 @@ Electricity 3
 
 R.C. CIRCUIT BREAKER)
 
-o~—
-
 Fic. 6.—Dynamo charging battery illustrating current electricity. A discriminating cut out
 or reverse current circutt breaker is placed in thecircuit to prevent battery discharging through
 dynamo if.the voltage of the latter drop below that of the battery.
 
-4 Electricity
-
 An electric current manifests itself by heating the wire or conductor;
-by causing a magnetic field around the conductor and by causing chem-
-ical changes in a liquid through which it may pass.
+by causing a magnetic field around the conductor and by causing chemical changes in a liquid through which it may pass.
 
 Dynamic Electricity.—This term is used to define current
 electricity to distinguish it from static electricity.
@@ -1287,8 +1013,6 @@ substance are minute magnets, by nature, each having two poles.
 
 ### MERIDIAN
 
-—-— » FF
-
 Fic. 7.—Ordinary horse shoe magnet with iron filings showing magnetic field.
 
 Fic. 8.—Electromagnetic field surrounding a conductor with current flowing.
@@ -1298,13 +1022,8 @@ have the attraction of its inward pointing pole neutralized more strongly
 than that of the outward pointing pole, which, therefore, is free to attract
 other bodies.
 
-Radio Electricity.—In radio work the electric waves represent-
-ing the messages are transmitted, or propagated, from the sending
-station to the receiving station through the ether, the latter per-
-forming the same functions as the wire does in ordinary teleg-
-raphy and telephony.
-
-Electricity 3
+Radio Electricity.—In radio work the electric waves representing the messages are transmitted, or propagated, from the sending
+station to the receiving station through the ether, the latter performing the same functions as the wire does in ordinary telegraphy and telephony.
 
 {n radio communication it is first necessary to create waves in the ether
 or radio waves in varying groups and of varying strength, and second to
@@ -1317,40 +1036,28 @@ Atmospheric Electricity.— The free electricity of the air which
 1s almost always present in the atmosphere. Its exact cause is
 unknown.
 
-RESONANCE <.,
-
 256 WAVES PER SEC.
 
 '2560 WAVES PER SEC.
 
-PIANO STRING VIBRATES ' \
-
-\
+### PIANO STRING VIBRATES '
 
 ### SYMPATHETIC VIBRATION OF
 
 TUNING FORK (IN UNISON)
-ets aacal 32
-
-~ . =»
 
 Fic. 9.—Sympathetic vibration of tuning fork with struck piano string when tuned to same
 pitch, illustrating the wave theory of radio.
 
-NOTE .—In 1749, Benjamin Franklin, observing lightning to possess almost all the prop-
-erties observable in electric sparks, suggested that the electric action of points, which was dis-
-covered by him, might be tried on thunder clouds, and so draw from them a charge of electricity
+NOTE .—In 1749, Benjamin Franklin, observing lightning to possess almost all the properties observable in electric sparks, suggested that the electric action of points, which was discovered by him, might be tried on thunder clouds, and so draw from them a charge of electricity
 He proposed, therefore, to fix a pointed iron rod to a high tower, but shortly after succeeded in
 another way. He sent up a kite during the passing of a storm, and found the wetted string
 to conduct the electricity to the earth, and to yield abundance of sparks. These he drew
 from a key tied to the string, a silk ribbon being interposed between his hand and the key
 for safety. Leyden jars could be charged, and all other electrical effects produced, by the
-sparks furnished from the clouds. -The proof of the identity was complete. The kite expert-
-ment was repeated by Romas, who drew from a metallic string sparks 9 feet long. In 17593,
+sparks furnished from the clouds. -The proof of the identity was complete. The kite expertment was repeated by Romas, who drew from a metallic string sparks 9 feet long. In 17593,
 Richmann, of St. Petersburg, who was experimenting with a similar apparatus, was struck
 by a sudden discharge and killed.
-
-6 Electricity
 
 The phenomena of atmospheric electricity are of two kinds:
 there are the well known manifestations of thunder storms; and
@@ -1361,91 +1068,28 @@ constitutes a third branch of the subject.
 Positive Electricity.—This term expresses the condition of
 the point of an electrified body having the higher energy from
 
-VAAN 4
-' \) S a*
-\ \ \ oe
-\ \ NS . Rue | al 4
-\ NSS Pe
-—_ ta
-
 Fic. 10.—Thunder storm illustrating atmospheric electricity.
 
 which it flows to a lower level. The sign which denotes this
-phase of electric excitement is +; all electricity is either posi-
-tive or negative.
+phase of electric excitement is +; all electricity is either positive or negative.
 
 Negative Electricity.—This is the reverse condition to the
 above and is expressed by the sign or symbol —. These two
 terms are used in the same sense as hot and cold.
 
-sae {kth Asai eal
-
 wee, bee
 
-Wa ey at ey
-
-HKlectricity
-
-+++ + + + + +
 Fia. 11
-
-Klectrostatic (eld abovt aerial.
 
 Fra. 12.—Strains tn the ether.
 
 til
-ee
-asl Win i ie
 
-/ j U
-hy fly. j j j ' i hy
-} af, Re ' 'fv if } } va / j He ; i
-j ' j . j ee a !
-} : / } i iy I | |
-j ; | aS LP bps; j
-HLTH j ; ff tA iit i
-j ay | j r / if 4 } j i
-a } Pi d 'J Hh
-j . : / ; H
-/ ite f . ' 4 i / v ' | i [ft yo nil will
-of Hi) ; f, i | Hi 41 EE wer
-} | y] | } / Gr: PTTL
-
-4. alt iM,
-Ai By 'fe uf if ' ii) i) Mi i
-
-a
-Wi) a". a
-Wi i iy i va sith
-
-ji:
-
-jaa ee
-Ne Ze a ae
-Py it) ~~
 CIM jigy aS
-
-LN
-ee i assi1cz
-
-Hy i i] di Jib Mh
-iy | ye Ne pr ees
-Hi jae
-
-tf
-DUPE ith HY
-
-ae
-> FF
 
 Fic. 13.—Franklin's kite experiment. He sent up a kite during a thunder storm and foun
 
 the wetted string to conduct electricity to the earth and to yield an abundance of sparks
-
-~_)}
-
-8 Electricity
-Se trometer
 
 Frictional Electricity.— That kind of electricity produced by
 the friction of one substance against another.
@@ -1455,50 +1099,18 @@ a resinous substance such as sealing wax, resin, shellac, rubber
 or amber when rubbed with wool or fur. Resinous electricity 1s
 negative electricity.
 
-Od
-
-l
-
-Oe re ZI
-
-XN
-"¢ i : " : SS
-$7 a7 WS
-Ci AS
-NN \
-R\\\ SF
-a oo. \
-
-=
-
-ei —
-ee
-
-——————————_—
-
-~~.
-
 HIGH
 PRESSURE
 
-We. Ww :
-NTIAL e WG
-
 ieee cera ig : Pak SRI
-SS SEO
-
-ee
 
 Fics. 14 and 15.—Water fall and pumping station with tank overflowing illustrating + and —
 electricity.
 
-Vitreous Electricity A term applied to the positive elec-
-tricity developed in a glass rod by rubbing it with silk. This
+Vitreous Electricity A term applied to the positive electricity developed in a glass rod by rubbing it with silk. This
 electric charge will attract to itself bits of pith or paper which
 have been repelled from a rod of sealing wax or other resinous
 substance which had been rubbed with wool or fur.
-
-Electricity 9
 
 What is electricity?
 What is Maxwell's idea of electricity?
@@ -1507,10 +1119,7 @@ How is electricity classified?
 What is the difference between static and current
 electricity?
 
-mm GW NO
-
-Fic. 16.—The electric eel. There are several species of so called electrical fishes. The Gym-
-notus or electric eel 1s common in all streams which flow into the Orinoco and is generally
+Fic. 16.—The electric eel. There are several species of so called electrical fishes. The Gymnotus or electric eel 1s common in all streams which flow into the Orinoco and is generally
 procured from Surinam. In the Surinam eel the electric apparatus extends the whole iength
 of the body. It consists of four batteries, two on each side. These batteries consist of
 laminz, composed of polygonal cells to the number of 800 or 1000, or more, suppiied with
@@ -1524,25 +1133,13 @@ What is the latest theory of magnetism?
 How are the molecules arranged in a bar magnet?
 . Explain radio communication.
 
-Oo On HD Ww
-
-What is the difference between positive and nega-
-tive electricity?
+What is the difference between positive and negative electricity?
 
 10. Describe Benjamin Franklin's kite experiment.
 
-ee
-
-12.
-
-13.
-
-14,
-
 Electricity
 
-Give some hydraulic dnaalogies illustrating posi-
-tive or negative electricity.
+Give some hydraulic dnaalogies illustrating positive or negative electricity.
 
 What length sparks were obtained by Romas ir
 making Franklin s kite experiment?
@@ -1553,27 +1150,23 @@ the kite experiment?
 What results were obtained by Richman of St.
 Petersburg?
 
-Static Electricity 11
-
 ## CHAPTER 2
 
 Static Electricity
 
 Static electricity may be defined simply as electricity ai rest;
 the term properly applies to an isolated charge of electricity
-produced by friction. The presence of static electricity mani-
-fests itself by
+produced by friction. The presence of static electricity manifests itself by
 
 1. Attraction, or
 2. Repulsion.
 
 Electrical Attraction and Repulsion.— When a glass rod, or
 a stick of sealing wax or shellac is held in the hand and rubbed
-' with a piece of flannel or cat skin, the parts will be found to
+with a piece of flannel or cat skin, the parts will be found to
 have the property of attracting bodies, such as pieces of silk,
 wool, feathers, gold leaf, etc.; they are then said to be electrified.
-In order to ascertain whether bodies are electrified or not, 1n-
-struments called electroscopes are used.
+In order to ascertain whether bodies are electrified or not, 1nstruments called electroscopes are used.
 
 There are two opposite kinds of electrification:
 
@@ -1584,8 +1177,6 @@ Positive and Negative Electricity.—These terms signify that
 one body is charged to a higher pressure than the other, that 1s,
 by rubbing some of the charge is taken from one body and
 
-12 Static Electricity
-
 transferred to the other as in figs. 19 to 22, the higher charge
 is arbitrarily called positive (+) and the lower negative (—|
 as, in simile, hot and cold.
@@ -1593,17 +1184,7 @@ as, in simile, hot and cold.
 Franklin called the electricity excited upon the glass
 by rubbing it with silk positive electricity, and that
 
-sie a --
-aa Nak
-oo ene tae ea ;
-\\ Wiinmy
-mi a ae ba
-i" ——————— | oo pees
-4 Dy peo
-: "| i ae ee
 4 VAN. fe es
-lev, » \ valet
-a _
 
 Fics. 17 and 18.—Pith ball pendulum or electroscope; the figures illustrate also electrical at
 traction and repulsion.
@@ -1620,14 +1201,11 @@ The nature of the electricity set free by friction depends on the degree
 of polish, the direction of the friction, and the temperature. If two glas:
 discs of different degrees of polish be rubbed against each other, that
 
-Static Electricity 13
-
 which is most polished is positively electrified, and that which is least
 polished is negatively electrified.
 
 If two silk ribbons of the same kind be rubbed across each other, that
-which is transversely rubbed is negatively and the other positively elec-
-trified. If two bodies of the same substance, of the same polish, but of
+which is transversely rubbed is negatively and the other positively electrified. If two bodies of the same substance, of the same polish, but of
 different temperatures, be rubbed together, that which is most heated is
 negatively electrified. Generally speaking, the particles which are most
 readily displaced are negatively electrified.
@@ -1658,8 +1236,6 @@ Rule 1.—If oppositely charged bodies be brought into contact
 with each other, the pressure will be equalized by the passing of
 the charge from the higher to the lower one.
 
-14 Static Electricity
-
 Fias. 26 to 28.—Electrostatic apparatus. Fig. 26, Faraday's bag. When tne bag is charge
 and pulled inside out, the static charge always remains on the outside. Fig. 27, hollow cy
 
@@ -1676,10 +1252,7 @@ conductor for shov'ing unequal distribution. Fig. 32, Biot's hemispheres with pa
 nickel plated brass hemispheres with rubber handles. Charge on outside of globe may b
 emoved by placing hemispheres in position shown.
 
-Static Electricity 15
-
-When the pressures are thus equalized the bodies are said to be dis-
-charged. Where the pressure difference is small, contact is necessary
+When the pressures are thus equalized the bodies are said to be discharged. Where the pressure difference is small, contact is necessary
 (figs. 23 to 25), but where it is great, it is only necessary to bring the
 bodies close together as in figs. 21 and 22.
 
@@ -1690,8 +1263,6 @@ opposite kind.
 Whenever two bodies are rubbed together the body rubbed receives a
 charge unlike that of the rubbing body, as stated.
 
-at
-
 Figs. 33 to 35.—Electrical attraction and repulsion.
 
 Rule 3.—Whenever a positive charge is developed an equal
@@ -1701,12 +1272,6 @@ The Charge.—The quantity of electrification of either kind
 produced by friction or other means upon the surface of a body
 is called a charge, and a body when electrified is said to be
 charged.
-
-16 Static Electricity
-
-= =s:5 . To gs
-ste Zs te oe
-tribe ee
 
 yitease
 
@@ -1719,16 +1284,11 @@ applied. Fig. 40, electrical circus or racing ball.
 When connected with a static machine the glass
 races around the plate.
 
-ae
-
-\. |
 Bras. 41 to 43.—Electrostatic apparatus. Fig. 41, spiraltube. A charge sent through the tul
 will show a series of sparks where it crosses the gaps. Fig. 42, rotating disc. It will rota!
 
 rapidly when connected to a static machine. Fig. 43, electrostatic motor. It will rota
 at high speed when connected to static machine.
-
-Static Electricity : 17
 
 It is clear that there may be charges of different values as well as of
 either kind. When the charge of electricity is removed from a charged
@@ -1746,16 +1306,12 @@ Fic. 44.—Boits experiment which proved that the charge resides on the surface.
 
 Distribution of the Charge.—When an insulated sphere of
 conducting material is charged with electricity, the latter
-passes to the surface of the sphere, and forms there an ex-
-tremely thin layer. The distribution of the charge then, de-
-pends on the extent of the surface and not on the mass.
+passes to the surface of the sphere, and forms there an extremely thin layer. The distribution of the charge then, depends on the extent of the surface and not on the mass.
 
 Boit proved that the charge resides on the surface by the
 following experiment:
 
 A copper ball was electrified: and insulated. Two. hollow hemispheres
-
-18 - Static Electricity
 
 of copper of a larger size, provided with glass handles, were then
 placed near the sphere, as in fig. 44. So long as they did not touch the
@@ -1767,11 +1323,6 @@ found to be completely discharged.
 The distribution of a charge over an insulated sphere of
 conducting material is uniform, provided the sphere is remote
 from all other conductors and electrified bodies.
-
-GOP ®*®enwandacmmanme eens
-~~ aie treet oe ago " . ei sg abc ane pay sees abide
-
-=
 
 Fies. 45 to 48.—Illustrating the distribution of the charge on conductors of various shapes.
 
@@ -1796,16 +1347,13 @@ electrified air particles near the points and the electricity on the points
 themselves. The motion of the air is called electric wind. This device
 is also called electric flyer, and electric whirl.
 
-Static Electricity 19
-
 ''Free" and ''Bound" Electricity—These terms may be
 defined as follows:
 
 The expression free electricity relates to the ordinary state of
 electricity upon a charged conductor, not in the presence of a
 
-Fia. 49.—Distribution of electrification on a charged hollow sphere. If an insulated con-
-ductor C, be inserted through the opening in the sphere and brought into contact with the
+Fia. 49.—Distribution of electrification on a charged hollow sphere. If an insulated conductor C, be inserted through the opening in the sphere and brought into contact with the
 interior surface and afterwards carefully removed, it will be found, by testing with the
 gold leaf electroscope, that it has received no charge. If touched to the outside, however,
 the conductor will receive part of the charge.
@@ -1817,12 +1365,9 @@ A charge of electricity upon a conductor is said to be bound,
 when it is attracted by the presence of a neighboring charge of
 the opposite kind.
 
-20 Static Electricity
-
 Conductors and Insulators.—The term conductors is ap.-
 plied to those bodies which readily allow electricity to flou
-through them, in distinction from insulators or so called non-
-conductors, which practically allow no flow of electricity.
+through them, in distinction from insulators or so called nonconductors, which practically allow no flow of electricity.
 
 Strictly speaking, there is no substance which will prevent
 the passage of electricity, hence, the term non-conductors
@@ -1845,13 +1390,10 @@ form of electroscope is the pith ball pendulum, shown in figs
 
 When an electrified body is held near the electroscope i¢ 1:
 attracted or repelled thus indicating the presence and nature
-of the charge. |
-
-Static Electricity 21
+of the charge.
 
 Gold Leaf Electroscope.—This form of electroscope, which
-is very sensitive, was invented by Bennet. Its operation de-
-pends on the fact that like charges repel each other.
+is very sensitive, was invented by Bennet. Its operation depends on the fact that like charges repel each other.
 
 The gold leaf electroscope as shown in fig. 52, is conveniently
 made by suspending the two narrow strips of gold leaf within
@@ -1862,10 +1404,6 @@ ground. A piece of varnished glass tube is pushed through the
 ### BRASS KNOB
 
 F< ——VARNISHED GLASS TUBE
-'
-
-|
-!
 
 ### CORK :
 
@@ -1885,8 +1423,6 @@ or may be furnished with a brass knob.
 
 When kept dry and free from dust it will indicate excessively
 
-22 Static Electricity
-
 small quantities of electricity. A rubbed glass rod, even while
 two or three feet from the instrument, will cause the leaves to
 repel one another.
@@ -1895,23 +1431,19 @@ If the knob be brushed with only a small camel's hair brush,
 the slight friction produces a_ perceptible
 effect.
 
-With this instrument all kinds of fric-
-tion can be shown to produce electrific-
-ation.
+With this instrument all kinds of friction can be shown to produce electrification.
 
 The gold leaf electroscope can be further
 used to indicate the kind of electricity on
 an excited body. Thus, ifa piece of brown
-paper be rubbed with a piece of india rub-
-ber, the nature of the charge is determined
+paper be rubbed with a piece of india rubber, the nature of the charge is determined
 as follows:
 
 First charge the gold leaves of the electroscope
 by touching the knob with a glass rod rubbed on
 silk. The leaves diverge, being electrified with
 positive electrification. When they are thus
-charged the approach of a body which is positive-
-ly electrified will cause them to diverge still
+charged the approach of a body which is positively electrified will cause them to diverge still
 
 Fie. 53.—Henley's quadrant electroscope used to indicate lu. ge
 charges ot electricity. In construction, pith ball placed on
@@ -1920,13 +1452,9 @@ the center of a graduated circle B. The arm F, is attached
 by means of the screw to the prime conductor of an electric
 machine. The similar charge imparted to L, by contact with
 F, causes a repulsion which may be measured on the graduated
-arc. 'This instrument approaches the electrometer in the char-
-acter of its operation, since by its means, approximately cor-
-rect measurements may be made of the value of the repulsion.
+arc. 'This instrument approaches the electrometer in the character of its operation, since by its means, approximately correct measurements may be made of the value of the repulsion.
 It should not, however, be confounded with the quadrant
 electrometer.
-
-Static Electricity 23
 
 more widely; while, on the approach of one negatively electrified, they
 will tend to close together. If now the brown paper be brought near
@@ -1954,11 +1482,8 @@ lighter than the thinnest paper and therefore more sensitive.
 
 Electric Screens.—That the charge on the outside of a
 
-24 Static Electricity
-
 conductor always distributes itself in such a way that there is
-no electric force within the conductor was first proved experi-
-mentally by Faraday. He covered a large box with tin foil
+no electric force within the conductor was first proved experimentally by Faraday. He covered a large box with tin foil
 and went inside with the most delicate electroscope obtainable.
 Faraday found that the outside of the box could be charged so
 strongly that long sparks would fly from it without any electrical
@@ -1968,30 +1493,11 @@ EEL
 
 —+7 44 Ber ace ne 7 an ae m aS
 
-aod rt tte se
 pau auuaaaeen Semen
-t
 
-ia
-SPT Reiser ttt |
-i EPS ee et rf
-
-rT LA Ee Set SSS Ott
-Soe ag ON SW
-mileee! (// a rT SEeee
 eee CR eee
-LOGS
 
-Vodeen |e
-PALA Merry
-Laer ATLL
-SECC |
-eT Ti. Seer Tan
-AD SSE Seer
-VAT Tt ht TTL
-
-Fig. 55.—The electric screen. A screen of wire gauze surrounding a delicate electrical in-
-strument will protect it from external electrostatic induction.
+Fig. 55.—The electric screen. A screen of wire gauze surrounding a delicate electrical instrument will protect it from external electrostatic induction.
 
 To repeat the experiment in modified form, let an electroscope be placed
 beneath a bird cage or wire netting, as in fig. 55. Let charged rods or
@@ -1999,8 +1505,6 @@ other powerfully charged bodies be brought near the electroscope outside
 the cage. The leaves will be found to remain undisturbed.
 
 Electrification by Induction.—An _ insulated conductor,
-
-Static Electricity 25
 
 charged with either kind of electricity, acts on bodies in a
 'neutral state placed near it in a manner analogous to that of
@@ -2013,11 +1517,6 @@ The phenomenon of electrification by induction may be
 demonstrated by the following experiment:
 
 ### ROD APPROACHING
-
-'S
-
-LEAVES > LT
-DIVERGING up
 
 Fic. 56.—Experiment to illustrate electrostatic induction. The leaves will diverge, even
 though the charged ebonite rod does not approach to within a foot of the electroscope.
@@ -2032,34 +1531,25 @@ the electroscope.
 This experiment shows that the mere influence which an
 electric charge exerts upon a conductor placed in its vicinity
 
-26 Static Electricity
-
 is able to produce electrification in that conductor. This
-method of producing electrification 1s called electrostatic induc-
-lion.
+method of producing electrification 1s called electrostatic induclion.
 
-As soon as the charged rod is removed the leaves will col-
-lapse, indicating that this form of electrification 1s only a tem-
-porary phenomenon which is due simply to the presence of the
+As soon as the charged rod is removed the leaves will collapse, indicating that this form of electrification 1s only a temporary phenomenon which is due simply to the presence of the
 charged body in the neighborhood.
 
 Fig. 57.—Experiment illustrating the nature of an induced charge. The apparatus consists
 of a metal ball and cylinder, both mounted on insulated stands, pith balls being placed
 on the cylinder at points C, D, and E.
 
-Nature of the Induced Charge.—This is shown by the ex-
-periment illustrated in fig. 57.
+Nature of the Induced Charge.—This is shown by the experiment illustrated in fig. 57.
 
 Let a metal ball A, be charged by rubbing it with a charged rod, and
-let it then be brought near an insulated metal cylinder B, which is pro-
-vided with pith balls or strips of paper C,D,E, as shown.
+let it then be brought near an insulated metal cylinder B, which is provided with pith balls or strips of paper C,D,E, as shown.
 
 The divergence of C and E, will show that the ends of B, have received
 electrical charges because of the presence of A, while the failure of D,
 to diverge will show that the middle of B, is uncharged. Further, the
 rod which charged A, will be found to repel C, but to attract E.
-
-Static Electricity 27
 
 From these experiments, the conclusion is that when a con-
 'ductor 1s brought near a charged body, the end away from the
@@ -2067,25 +1557,21 @@ inducing .charge is electrified with the same kind of electricity
 as that on the inducing body, while the end toward the inducing
 body receives electricity of opposite sign.
 
-The Electrophorus.—This is a simple and ingenious instru-
-ment, invented by Volta in 1775 for the purpose of procuring,
+The Electrophorus.—This is a simple and ingenious instrument, invented by Volta in 1775 for the purpose of procuring,
 by the principle of induction, an unlimited number of charges
 of electricity from one single charge.
 
 Fias. 58 and 59.—The electrophorus and method of using. Charge B; place A, in contact
 with B, and touch A, (fig. 58). The disc is now charged by tnduction and will yield a
-_ spark when touched by the hand, as in fig. 59.
+spark when touched by the hand, as in fig. 59.
 
 It consists of two parts, as shown in fig. 59, a round cake of resinous
 material B, cast in a metal dish or "'sole'' about one foot in diameter, and
-a round disc A, of slightly smaller diameter made of metal or of wood cov-
-ered with tinfoil, and provided with a glass handle. Shellac, or sealing
+a round disc A, of slightly smaller diameter made of metal or of wood covered with tinfoil, and provided with a glass handle. Shellac, or sealing
 wax, or a mixture of resin shellac and Venice turpentine, may be used to
 make the cake.
 
 Tra w0ca tha alactranhoriuce tho rvrocinauec coke Ro mast he first
-
-28 Static Electricity
 
 beaten or rubbed with fur or a woolen cloth, the disc A, is then
 placed on the cake, touched with the finger and then lifted by
@@ -2093,10 +1579,6 @@ the handle. The disc will now be found to be charged and will
 yield a spark when touched with the hand, as in fig. 59.
 
 The 'cover'? may be replaced, touched, and once more removed, and
-
-a
-
-ss easeiaieconnine
 
 Fics. 60 to 63.—Illustrating "how the electrophorus works."'
 
@@ -2106,8 +1588,6 @@ plate meanwhile remaining practically as strong as before.
 The theory of the electrophorus is very simple, provided the
 student has clearly grasped the principle of induction.
 
-Static Electricity 29
-
 When the resinous cake is first beaten with the cat's skin its surface is
 _negatively electrified, as indicated in fig. 60. Again, when the metal disc
 is placed down upon it, it rests really only on three or four points of the
@@ -2115,38 +1595,24 @@ surface, and may be regarded as an insulated conductor in the presence
 of an electrified body. The negative electrification of the cake therefore
 acts inductively on the metallic disc or "'cover,'' attracting a positive
 
-— M KK
-(i. \g-
-" =
-
 Fies. 64 and 65.—Electrification produced by rubbing dissimilar bodies together and then
 separating them. If the insulated glass and leather discs A and B, be rubbed together,
 but not separated, no signs of electrification can be detected; but if the discs be drawn apart
-a little distance the space between them is found to be an electric field, and as they sep-
-arate farther and farther, electric forces will be found to exist in more and more of the sur-
-rounding space, the electrification being indicated by ''lines of force.'"' It should be noted
+a little distance the space between them is found to be an electric field, and as they separate farther and farther, electric forces will be found to exist in more and more of the surrounding space, the electrification being indicated by ''lines of force.'"' It should be noted
 that work has to be done in separating the charged discs to overcome the attraction which
 tends to hold them together. The stress indicated by the lines of force consists of a tension
 or pull in the direction of their length and a pressure or thrust at right angles to that direction.
 
-30 Static Electricity
+charge to its under side, and repelling a negative charge to its upper surface, as shown in fig. 61.
 
-charge to its under side, and repelling a negative charge to its upper sur-
-face, as shown in fig. 61.
-
-If, now, the cover be touched for an instant with the finger, the nega-
-tive charge of the upper surface (which is upon the upper surface being
-repelled by the negative charge on the cake) will be neutralized by elec-
-tricity flowing in from the earth through the hand and body of the experi-
-menter. The attracted positive charge will, however remain, being bound
+If, now, the cover be touched for an instant with the finger, the negative charge of the upper surface (which is upon the upper surface being
+repelled by the negative charge on the cake) will be neutralized by electricity flowing in from the earth through the hand and body of the experimenter. The attracted positive charge will, however remain, being bound
 as it were by its attraction toward the negative charge on the cake.
 
 Fia. 66.—Lines of force of a charged sphere and a conductor under induction. The negative
 electrification on the end a, of the cylinder indicates that a certain number of lines end
-there, while the positive electrification on the end )b, similarly indicates that an equal num-
-ber of lines set out from that end. It is one of the fundamental properties of a conductor
-that it yields instantly to the smallest electric force, and that no electric force can be per-
-manently maintained within the substance of a conductor in which no current is passing.
+there, while the positive electrification on the end )b, similarly indicates that an equal number of lines set out from that end. It is one of the fundamental properties of a conductor
+that it yields instantly to the smallest electric force, and that no electric force can be permanently maintained within the substance of a conductor in which no current is passing.
 There can, therefore, be no electrostatic strain and no lines of force within the material
 of a conductor where the electric field has become steady. Hence the lines starting from 8,
 are entirely distinct from those ending at @. The two sets are equal in number because
@@ -2163,12 +1629,10 @@ longer be "'bound'' on the lower surface by attraction, but will distribute
 itself on both sides of the cover, and may be used to give a spark. It is
 clear that no part of the original charge has been consumed in the process,
 
-Static Electricity 31
-
 which may be repeated as often as desired. Asa matter of fact, the charge
 on the cake slowly dissipates, especially if the air be damp. Hence it is
 
-~ needful sometimes to renew the original charge by again beating the cake
+needful sometimes to renew the original charge by again beating the cake
 with the cat's skin.
 
 The labor of touching the cover with the finger at each operation may
@@ -2178,9 +1642,7 @@ Fic. 67.—Faraday's ice pail experiment. An ice pail P, connected with the gold
 an electroscope C, is placed on an insulating stand S. A, charged conductor K, carried
 by a silk thread, is lowered into the pail, and finally touches it at the bottom. While it
 is being lowered the leaves of the electroscope diverge farther and farther, until K, is well
-within the pail, after which they diverge no more, even when K, touches the pail or 1s after-
-wards withdrawn by the insulating thread. After withdrawal, K, is found to be com-
-pletely discharged.
+within the pail, after which they diverge no more, even when K, touches the pail or 1s afterwards withdrawn by the insulating thread. After withdrawal, K, is found to be completely discharged.
 
 metallic ''sole'' on to the top of the cake, so that it touches the plate each
 time, and thus neutralizes the negative charge by allowing electricity to
@@ -2193,42 +1655,27 @@ oo Static Electricity
 obtained at the expense of any part of the original charge, it 1s
 a matter of some interest to inquire whence is the source from
 
-Fics. 68 to 71.—Explanation of Faraday's ice pail exp2riment. For simplicity the electro-
-scope, insulating stand and silk thread have been omitted. Only the three principal con-
-ductors K, P, and the earth E, are shown. In fig. 68 the ball K, 1s sufficiently close to P,
+Fics. 68 to 71.—Explanation of Faraday's ice pail exp2riment. For simplicity the electroscope, insulating stand and silk thread have been omitted. Only the three principal conductors K, P, and the earth E, are shown. In fig. 68 the ball K, 1s sufficiently close to P,
 to act inductively on it; six lines are shown as falling on P, and the other six as passing
 to E, by different paths. Corresponding to the six lines falling on P, from K, six others
 pass to E, from the lower surfaces. In fig. 69 where K, is just entering the pail, two lines
 only pass from K to E, through the dielectric; the remaining ten fall on P, and ten others
 Starting from the distant parts of P, pass to Fk. In fig. 70. K, 1s so far within P, that
-none of its lines can reach FE, through the dielectric; they all fall on P, and from the out-
-side of P, an equal number start and pass through the diclectric to E. It is evident that
-in this position K, can be moved about within P, without affecting the outside distribu-
-tion in the slightest, and that even when K, touches P, as shown in fig. 71, and when, there-
-fore, all lines between them disappear, the lines in the dielectric outside remain just as
+none of its lines can reach FE, through the dielectric; they all fall on P, and from the outside of P, an equal number start and pass through the diclectric to E. It is evident that
+in this position K, can be moved about within P, without affecting the outside distribution in the slightest, and that even when K, touches P, as shown in fig. 71, and when, therefore, all lines between them disappear, the lines in the dielectric outside remain just as
 they are in fig. 70. K, is now completely discharged, since lines no longer emanate from
 it, hence it can be removed by the silk cord without disturbing the electrification of P.
 If K, be again charged and introduced into P, it will be again discharged, for the fact that
 P, 1s already charged will have no effect on the final result, provided when K, touches P,
 it is well under cover.
 
-Static Electricity 33
-
 which the energy of this apparently unlimited supply 1s drawn;
 for it cannot be called into existence without the expenditure
 of some other form of energy. The fact is, more work is done
 in lifting the cover when it 1s charged with the positive electricity
 
-Arigy z-2é
-ON
-
-. .
-
-MMM
-
 Fic. 72.—Volta's condensing electroscope. Jt consists of two metallic plates placed at the
-top of the instrument, and separated by a suitable dielectric. The upper plate P, is re-
-movable by means of the insulated handle G. To employ the electroscope, as for example,
+top of the instrument, and separated by a suitable dielectric. The upper plate P, is removable by means of the insulated handle G. To employ the electroscope, as for example,
 to detect the free charge in an unequally heated crystal of tourmaline, the crystal is touched
 to the lower plate, while the upper plate is connected to the ground by the finger. On
 the subsequent removal of the upper plate an enormous decrease ensues in the capacity
@@ -2239,30 +1686,12 @@ the amount of divergence by induction.
 than when it 1s not charged; for when charged, there is the
 force of the electric attraction to be overcome as well as the
 
-34 Static Electricity
-
-nnn eee EE EInES IIE nnn SSI angen cnnStE aetna nanan!
-
 force of gravity; this excess force is the real origin of the energy
 stored up in the separate charges.
 
 Condensers; Leyden Jar.—A condenser is an apparatus for
 condensing a large quantity of electricity on a comparatively
 small surface. The form may vary considerably, but in all
-
-'©
-
-'
-
-"ee Sow date
-
-Teepees st
-00mm BI
-
-\ H
-
-~_—
-(
 
 ### CHAIN
 
@@ -2274,25 +1703,13 @@ Teepees st
 
 ### OF TIN FOIL
 
-oN
-
 2% OUTER COATING
-_ > OF TIN FOIL
-LS
-
-? ho
-
-SF
-
-— aw eet
-
->= =
+> OF TIN FOIL
 
 Fics. 73 and 74.—The Leyden jar and discharger. Its discovery is attributed to the attempt
 of Musschenbrock and his pupil Cuneus to collect the supposed electric ''fluid'' in a bottle
 half filled with water. The bottle was held in the hand and was provided with a nail to
-lead the "fluid'"' down through the cork to the water from the electric machine. The in-
-vention of the Leyden jar is also claimed by Kleist, Bishop of Pomerania.
+lead the "fluid'"' down through the cork to the water from the electric machine. The invention of the Leyden jar is also claimed by Kleist, Bishop of Pomerania.
 
 cases it consists essentially of two insulated conductors, separated by
 
@@ -2303,62 +1720,30 @@ on static electricity is the Leyden jar, so named from the town
 
 of Leyden where it was invented.
 
-Static Electricity 35
-
 It consists of a glass jar coated inside and out to a certain height with
 
-_ tinfoil, having a brass rod terminating in a knob passed through a wooden
+tinfoil, having a brass rod terminating in a knob passed through a wooden
 
 stopper, and connected to the inner coat by a loose chain, as shown in
 fig. 73.
 
-hs
-()
 Oli
-K
-
-ie
-a
-
-u) :
-I
-cl
-
-a eae
 
 Fics. 75 to 77.—Knott demonstration Leyden jars for demonstrating that an electric charge
 resides as  otential energy in the glass of a Leyden jar and not in the metallic coatings.
 This 13 a dissectible Leyden Jar, the outer metallic covering being removable as well as the
 inner. The inner is provided with a rod with ball terminal for charging.
 
-a f
-ay ca "
 = fh. ' ne
-re 'ei ny
-
-Se NI CMT
-
-_—S) .
-
-—
-
-~—
-ve ; we
-
-Qe
-
-;
 
 Fic. 78.—Knott four jar Leyden battery for demonstrating optically the distribution of static
 electricity over the surface of a condenser being charged and discharged.
-
-36 Static Electricity
 
 The jar may be charged by repeatedly touching the knob
 with the charged plate of the electrophorus or by connecting the.
 inner coating to one knob of an electrical machine and the outer
 
-coating to the other knob. |
+coating to the other knob.
 The discharge of a condenser is effected by connecting the
 
 plates having an opposite charge.
@@ -2388,8 +1773,6 @@ for producing electric charges such as have been described.
 The ordinary "static" or electric machine, is nothing but a
 continuously acting electrophorus.
 
-Static Electricity 37
-
 Fig. 80 represents the so called Toepler-Holtz machine. Upon
 the back of the stationary plate E, are pasted paper sectors,
 beneath which are strips of tinfoil AB and CD, called inductors.
@@ -2408,11 +1791,6 @@ brushes as well as sharp pointed metallic combs.
 The two knobs R and S, have their capacity increased by
 the Leyden jars L and L'.
 
-| RS
-HOO Ome Oe
-
-|
-
 Fic. 80.—The Toepler-Holtz electric machine. Fia. 81.—Principle of Toepler-Holtz electric
 machine.
 
@@ -2428,52 +1806,34 @@ As the plate carrying /,m,n,o0,p,q, rotates in the direction of the arrow
 the negative charge on /, ig carried over to the position m, where a part
 of it nasses over to the inductor AB, thus charging it negatively.
 
-38 Static Electricity
-
-When /, reaches the position ", the remainder of its charge, being re-
-pelled by the negative electricity which is now on AB, passes over into
+When /, reaches the position ", the remainder of its charge, being repelled by the negative electricity which is now on AB, passes over into
 the Leyden jar L.
 
 When /, reaches the position 0, it again becomes charged by induction,
-this time positively, and more strongly than at first, since now the nega-
-tive charge on AB, as well as the positive charge on CD, is acting inductively
+this time positively, and more strongly than at first, since now the negative charge on AB, as well as the positive charge on CD, is acting inductively
 upon the rod 7s.
 
 When /, reaches the position u, a part of its now strong positive charge
 passes to CD, thus increasing the positive charge upon this inductor.
 
-is it N
-
-a
-
-aaah Y a yn ae
-iy
-
 Fig. 82.—The Wimshurst Electric Machine.
 
 In the position v, the remainder of the positive charge on /, passes over
-to L'. This completes the cycle for /. Thus as the rotation continues AB |
+to L'. This completes the cycle for /. Thus as the rotation continues AB
 and CD, acquire stronger and stronger charges, the inductive action
 upon 7s, becomes more and more intense, and positive and negative charges
-are continuously imparted to L' and L, until a discharge takes place be-
-tween the knobs RF and S.
+are continuously imparted to L' and L, until a discharge takes place between the knobs RF and S.
 
 There is usually sufficient charge on one of the inductors to start the
 machine, but in damp weather it will often*be found necessary to apply a
 
-Static Electricity 39
-
 charge to one of the inductors by means of the ebonite or glass rod before
 .the machine will work.
 
-The Wimshurst Machine.—The essential parts of an or-
-dinary Wimshurst machine, as shown in fig. 82, are two in-
-sulating plates or drums.
+The Wimshurst Machine.—The essential parts of an ordinary Wimshurst machine, as shown in fig. 82, are two insulating plates or drums.
 
 On each plate are fixed a large number of strips of conducting
 material, which are equal in size and are equally spaced; these
-
-### COLLECTORS
 
 Fic. 83.—Static collectors. This consists of a number of sharp tacks driven through a piece of
 tin, or some small wires soldered to a large one, and the row of points fastened near the pulley
@@ -2482,8 +1842,7 @@ so as to be within an inch of the belt.
 radially if on a plate, and circumferentially if onadrum. The
 plates, or drums, are made to rotate 1n opposite directions.
 
-The capacity of the inductors therefore varies from a maxi-
-mum when each strip on one plate is facing a strip on the other,
+The capacity of the inductors therefore varies from a maximum when each strip on one plate is facing a strip on the other,
 to a minimum when the conducting strips on each plate are
 facing blank or insulating portions of the other plate.
 
@@ -2492,39 +1851,12 @@ pairs being at opposite ends of diametrical conducting rods placed at
 
 Static Electricity
 
-i as a
-
-'TayaWIeIp sozeid 94} 3% 0} YW wo1y sdue1r yredG 'aZ1eyosip snonurjuod e 10 aZ1eyssrp
-Yreds 1U9}}1W19}U! UB 4aY}I9 SUIMOTTE SNY} 'po}IIUUODSIP 10 pa}DaUUOD 1dy}NIa oq Aeul 1ef UapAa'] 2} JO SIO JayNO 3Yy} YdIYM Jo
-suBoul Aq '19yvIIq JUALIN & SI ajay} pue 'JUsUIYIE}}e des yseds eB YIM papraoid SI QUINDEUI OY, ~=*"yJOM ACI-X 0} paidepe Aye1sed
-"So SI }I UOSBaI SIY} JO "JUsWOUI AUB je VS19Aa1 ABUT Sajod ay} YsIYM UI dA} Z}OP-Ja]da0], ay} UeY A1OJJELJLS V1OWU! A[Bur
--piosoe SI pue 'sajod jo asueYys yNoY}IM SYIOM JUIYDeUI dU "USIsap Mou 'auIyoeU 391}e}S SUISIVYI-J[9S JSINYSUI AA—"Sg 7 d
-
-"UL PT 93eR[d Areuoljeys SUI ZT a}eId BuraAjoAsy -suor}ipuod 1ay}eeM UOdN ZuIpuadap 'psonp
--oid aq Aeur y1eds yOUI 9g 0} € Y °9}0 'soqeId aZeuTI 'sauMTYD [[Jaq se YONs sal1osseo0R SUIP[OY JOJ JUDUIYDe}}e UL PUB SUTeYD pue
-Sajpuey suIyPOUS po}e]d Jayoru jo sed e& YM poddmbe st sulyoeul ayy, "pare aq 0} IB1ICYISIP JO 9}e1 pue A}ISU9}UI 9Y} S}tULIId
-YoY Joxeoiq JUsIIND B st stay, "e9dA} Jel UspAsy] oY} Jo 21k SIasUapUOD VY, "211M 0} JOLIadNs aq 0} PaUIIE]D si YdIYA 'Jas
--UI} JO opeUul oie Soysniq a4} 'ajqejsn{pe St UOISUDS} }J2q 94} 'wo1z9IN4Z8UOD UZ "DUTYILCU J11}Da]9 2}[OFJ-Jajde0] siepPI— py "OIA
-
-q~
-ah aes -- of Ee ge a as : a
-"OIFILN31D§ AW thas U4 ene RL At
-
-:&
-=
-—
--
-
-Static Electricity 41
-
-right angles to one another; the third pair are insulated from one an-
-other and form the principal collectors, the one giving positive and the
+right angles to one another; the third pair are insulated from one another and form the principal collectors, the one giving positive and the
 'other negative electricity.
 
 The plates are revolving in opposite directions; thus if there be a charge
 on one of the conducting segments of one plate and an opposite charge
-on one of the conducting segments on the other plate near it, their pres-
-sure will be. raised as the rotation of the plates separates them.
+on one of the conducting segments on the other plate near it, their pressure will be. raised as the rotation of the plates separates them.
 
 SILK
 
@@ -2547,35 +1879,20 @@ another machine) be communicated to the armatures, the movable plate will be the
 rotation, and will turn in an opposite sense.
 
 NOTE.—Righi has shown that a Holtz machine can yield a continuous current like a
-voltaic battery, the strength of the current being nearly proportional to the velocity of rota-
-tion. It was found that the electromotive force of a machine was equal to that of 52,000 Dan-
-iell's cells, or nearly 53,000 volts, at all speeds. The resistance, when the machine made 120
+voltaic battery, the strength of the current being nearly proportional to the velocity of rotation. It was found that the electromotive force of a machine was equal to that of 52,000 Daniell's cells, or nearly 53,000 volts, at all speeds. The resistance, when the machine made 120
 revolutions per minute was 2180 million ohms; but only 646 million ohms when making 450
-revolutions per minute. |
+revolutions per minute.
 
 NOTE.—The friction of a jet of steam issuing from a boiler, through a wooden nozzle,
 generates electricity. In reality it is the particles of condensed water in the jet which are
 directly concerned.
 
-nn Ee & KN =
-
-Oo CON BW
-
-Il.
-12.
-13.
-14.
 Gor
-16.
-
-17.
-
-18.
 
 Static Electricity
 
 . What is static electricity?
-. How is it produced? '
+. How is it produced?
 . Explain electrical attraction and repulsion.
 
 . When are bodies said to be electrified?
@@ -2589,7 +1906,6 @@ tive electricity?
 . Give Franklin's classified list.
 
 . What is understood by the term 'charge'?
-10.
 
 What happens when oppositely discharged bodies
 
@@ -2612,33 +1928,6 @@ an insulator?
 What word is commonly, yet erroneously used for
 insulator? Why?
 
-19.
-20.
-Zi.
-
-Ze:
-
-Zo
-
-24.
-Zo.
-26.
-27.
-28.
-
-ZF.
-30.
-31.
-oa
-33.
-34.
-
-35.
-36.
-37.
-
-Static Electricity 43
-
 What is an electroscope?
 What is an electroscope used for?
 
@@ -2646,14 +1935,12 @@ What happens when an electrified body is held
 
 near an electroscope?
 
-Describe the gold leaf electroscope, naming its in-
-ventor.
+Describe the gold leaf electroscope, naming its inventor.
 
-Why are gold leaves used in the gold leaf electro-
-scope rather than thinnest tissue paper?
+Why are gold leaves used in the gold leaf electroscope rather than thinnest tissue paper?
 
 Give method of using the gold leaf electroscope.
-What is an electric screen? |
+What is an electric screen?
 Describe Faraday's électric screen experiment.
 Explain electrification by induction.
 
@@ -2676,15 +1963,11 @@ How is the jar charged? Discharged?
 
 What is an electric machine?
 
-44 Static Electricity
-
 38. Describe the 'Toepler- Holtz machine.
 39, What is the action of the Toepler- Holtz machine?
 40. Describe the Wimshurst machine.
 
 41. How does it operate?
-
-Electric Current 45
 
 ## CHAPTER 3
 
@@ -2700,27 +1983,19 @@ AMPERES) (INSULATOR)
 
 ### FORCE
 
-~~(VOLTS)
-
 ### FRICTION OR
 
 ### PUMP RESISTANCE PIPE
 
 (ELECTRICITY) (OHMS) Min sis
-OP
 
 ### DIFFERENCE OF
 
 POTENTIAL (VOLTS)
 
-ow
-
 WATER ~N
 
 BATTERY "NE
-OR DYWAMO |
-
-i
 
 Fic. 87 Hydraulic analogy of electric current.
 
@@ -2729,47 +2004,24 @@ said to be flowing.
 In order to make laymen understand the action of this so
 calied current, it is generally compared with the flow of water.
 In comparing hydraulics and electricity, it must be borne in
-mind, however, that there is really no such thing as an "'elec-
-tric fluid,' and that water in pipes has mass and weight, while
+mind, however, that there is really no such thing as an "'electric fluid,' and that water in pipes has mass and weight, while
 
-46 Electric Current
-
-electricity has none. It should be noted, however, that elec-
-tricity is conveniently spoken of as having weight 1n explaining
+electricity has none. It should be noted, however, that electricity is conveniently spoken of as having weight 1n explaining
 some of the ways in which it manifests itself.
 
 All electrical machines and batteries are merely instruments for moving
-electricity from one place to another, or for causing electricity, when accu-
-mulated in one place, to do work in returning to its former level of dis-
-tribution.
+electricity from one place to another, or for causing electricity, when accumulated in one place, to do work in returning to its former level of distribution.
 
 The head or pressure in a standpipe is what causes water to move through
 the pipes which offer reszstance to the flow.
 
-i i Hn a, ee
-Ht 'in Hy Se
-
 WYANT EEE TS Se
 
-Se
-cea es: aes Tae ote eet ens =
-
--— =—-— ee =
-— = em oa ==
-
 — a —_— =e = eee ase oia=se «=m «==
-—_— == oe ee = mee ee ee em eee =e = ese ee es eee
 
 ; — eee
-i en
-_—-
-cee es ee ee = OO a Ss Ss —e ee eee eee
-—_ - — —_ om am «== ee -
-2 ee awe meme eee eee ee ee we we es Me ese el se — 'wean oe
-—— io mm eee
+
 cee eee
-—— — =
-— <eme wm eeeeeeee  =| esae a eels: — ose = oP SEP ao SP =D aD
 
 Fia. 88.—Analogy of the flow of water to the electric current. The water in the reservoirs
 A and B, stands at different heights. As long as this difference of level is maintained,
@@ -2783,10 +2035,7 @@ similarly, the conductors, along which the electric current is said to flow,
 offer more or less resistance to the flow, depending on the material. Copper
 wire 1s generally used as it offers little resistance.
 
-The current must have pressure to overcome the resistance of the con-
-ductor. This pressure is called voltage caused by what is known as dsfference
-
-Electric Current 47
+The current must have pressure to overcome the resistance of the conductor. This pressure is called voltage caused by what is known as dsfference
 
 of potential, better called difference of pressure, between the source and
 
@@ -2799,25 +2048,11 @@ measured in ohms.
 
 #### Ques. What is a volt?
 
-Np
-A;
-PF
-
-'e.
-y
-
-Y
-
-xs
-_\ oO
-
-|
 = It
-Tf
+
 ars |
-ut
+
 rie
-Cc
 
 35,600 COULOMBPS PER Hen
 
@@ -2828,8 +2063,7 @@ vate of current flow of one ampere in fig. 90 may be compared to the rate of dis
 a pump as in fig. 89. Assuming the pump to be of such size that it discharges a gallon per
 revolution and makes 60 revolutions per minute, the quantity of water discharged per
 hour (coulombs 1n fig. 90) 1s 1 X60 X60 =3,600 gallons. Following, the analogy further
-(in fig. 90), the pressure of one volt is required to force the electricity through the resist-
-ance of one ohm between the terminals A and B. In fig. 89, the belt must deliver sufficient
+(in fig. 90), the pressure of one volt is required to force the electricity through the resistance of one ohm between the terminals A and B. In fig. 89, the belt must deliver sufficient
 power to the pump to overcome the friction (resistance), offered by the pipe and raise the
 water from the lower level A', to the higher level B'. The difference of pressure between A
 and B, in the electric circuit corresponds to the difference of pressure between A' and B'.
@@ -2840,8 +2074,6 @@ Ans. A volt is that electromotive force, or pressure, which
 produces a current of one ampere against a resistance of one
 ohm. )
 
-48 Electric Current
-
 #### Ques. What is an ampere?
 
 Ans. An ampere is the current produced by a pressure of
@@ -2851,8 +2083,7 @@ copper per second.
 
 #### Ques. What is an ohm?
 
-Ans. An ohm is equal to the resistance offered to an un-
-varying electric current by a column of mercury at 32° Fahr..,
+Ans. An ohm is equal to the resistance offered to an unvarying electric current by a column of mercury at 32° Fahr..,
 
 25 AMPERES
 
@@ -2874,15 +2105,12 @@ of the length of 106.3 centimeters.
 Ans. The quantity of electricity delivered by a current of
 one ampere maintained for one second of time.
 
-Electric Current 49
-
 Ohm's Law.—In a given circuit, the amount of current in
 amperes 1s equal to the pressure in volts divided by the resistance
 in ohms, that 1s:
 
 'pressure volts
 
-current =—————- = ——_ .............. (17
 resistance ohms ( )
 
 Equation (1) may be expressed by symbols, thus:
@@ -2912,10 +2140,7 @@ a flow of 15 amperes?
 From Ohm's law, resistance = volts + amperes (equation 4) = 110
 +15 = 7% ohms.
 
-From equation 1 it is seen that the flow of the current is pro-
-portional to the voltage and inversely proportional to the
-
-50 Electric Current
+From equation 1 it is seen that the flow of the current is proportional to the voltage and inversely proportional to the
 
 resistance; the latter depends upon the material, length and
 diameter of the conductor.
@@ -2932,15 +2157,11 @@ cotton or silk thread or other insulating material.
 ### ELECTROMOTIVE FORCE
 
 CURRENT = RESISTANCE
-_E- AMPERES = YOLTS
 
 OHMS
 
-R
-
 ### ELECTROMOTIVE FORCE
 
-RESISTANCE = ae ae
 E. VOLTS
 R= OHMS = AMPERES
 
@@ -2955,10 +2176,7 @@ to the source without doing its work. This is known as a short ctrcuat.
 The conductor which receives the current from the source is called the
 lead, and the one by which it flows back, the return.
 
-When wires are used for both lead and return, it is called a metallic ctr-
-cuu; when the ground is used for the return, it is called a ground circuit.
-
-Electric Current 51
+When wires are used for both lead and return, it is called a metallic ctrcuu; when the ground is used for the return, it is called a ground circuit.
 
 An electric current is said to be:
 
@@ -2974,8 +2192,6 @@ current have been changed by an induction coil;
 
 ### INSULATED
 
-Rc ~SCti«(WIIRRE
-
 NG —— BREAK IN
 RB INSULATION
 
@@ -2989,8 +2205,6 @@ mm» ALTERNATING CURRENT
 
 Fics. 93 and 94.—Elementary machines illustrating direct and alternating current.
 
-52 Electric Current
-
 5. Low tension, when its voltage is low;
 6. High tension, when its voltage is high.
 
@@ -3001,39 +2215,16 @@ resistance, whereas, a low tension current must have its path made easy.
 
 ### HIGH TENSION
 
--CONDENSER
-
-Lhhidi¢diitntittthte
-
-### NBAALSAAAL
-
-e
-WAdithihiidtd
-
-bth hdd,
-
-—. | | ou
 | PRIMARY CURRENT
 i | LOW TENSION
-
-Hf
-
-=
-—
-
-—-+ |
-An
 
 Fics. 95 and 96.—Ignition and lighting circuits illustrating primary and secondary current,
 high tension and low tension. Jt will be seen from the illustrations that careful distinction
 must be made between primary and secondary current.
 
-Electric Current 53
-
 Production of the Electric Current.—To produce a steady
 flow of water in a pipe two conditions are necessary. There
-must first be available a hydraulie pressure, or, as it is tech-
-nically called, a "head" of water produced by a pump, or a
+must first be available a hydraulie pressure, or, as it is technically called, a "head" of water produced by a pump, or a
 difference of level or otherwise.
 
 In addition to the pressure there must also be a suitable path or channel
@@ -3045,56 +2236,39 @@ of the tap completes the necessary path (the greater part of which was
 already in existence) and the water flows.
 
 Fia. 97.—Hydraulic analogy of the electric current. If, say 10 gallons of water flow in every
-second into a system of vessels and pipes of any shape, whether simple or more compli-
-cated as shown in the figure, and 10 gallons flow out again per second, it 1s evident that
+second into a system of vessels and pipes of any shape, whether simple or more complicated as shown in the figure, and 10 gallons flow out again per second, it 1s evident that
 through every cross section of any vessel or pipe of the system 10 gallons of water pass
 every second. This follows from the fact that water is an uncompressible liquid and must
 be practically of the same density throughout the system. The water moves slowly where
 the section is large and quickly where it 1s small, and thus the quantity of water that flows
 through any part of the system is independent of the cross section of that part. The same
-condition holds good for the electric current; if in a closed circuit a constant current cir-
-culates, the same amount of electricity will pass every cross section per second. Hence
+condition holds good for the electric current; if in a closed circuit a constant current circulates, the same amount of electricity will pass every cross section per second. Hence
 the following law: The magnitude of a constant current tn any ctrcutt ts equal tn all parts of
 the circuit.
 
-For the production of a steady electric current two very similar con-
-ditions are necessary. There must be a steadily maintained electric pres-
-sure, known as "'electromotive force,' "'potential difference,'' ''voltage,'' or
-'"'pressure."' This alone, however, is not sufficient. In addition, a suit-
-able conducting path is necessary. Any break in this path. occupied by
+For the production of a steady electric current two very similar conditions are necessary. There must be a steadily maintained electric pressure, known as "'electromotive force,' "'potential difference,'' ''voltage,'' or
+'"'pressure."' This alone, however, is not sufficient. In addition, a suitable conducting path is necessary. Any break in this path. occupied by
 unsuitable material acts like the closed tap in the analogous case above
 mentioned, and it is only when all such breaks have been properly bridged
 by suitable material, that is, by conductors, that the effects which denote
 the flow of the current will begin to be manifested.
-
-54 Electric Current
 
 The necessary voltage required to cause the current to flow
 may be obtained:
 
 1. Chemically;
 2. Mechanically;
-3. Thermally.
-
-rr
-
-y
 
 ### CHEMICALLY
 
 ### MECHANICAL POWER
 
-### OYNAMO
-
 Fics. 98 to 100.—Three methods of producing an electric current, Fig. L, familiar crow foot
 battery closed telegraph circuit, fig. A, dynamo driven mechanically by steam engine, fig. F,
 thermopile of dissimilar metals heated by flame.
 
-Electric Current 55
-
 In the first method, two dissimilar metals such as copper and
-zinc called elements, are immersed in an exciting fluid or electro-
-lyte.
+zinc called elements, are immersed in an exciting fluid or electrolyte.
 
 When the elements are connected at their terminals by a
 wire or conductor a chemical action takes place, producing
@@ -3102,39 +2276,19 @@ a current which flows from the copper to the zinc. 'This device
 is called a cell, and the combination of two or more of them
 connected so as to form a unit is known as a battery. The word
 
-ie
-
-il
-
-Ht
-
-MU, Ta
-
-T iH a IN oes nl t AY ar
-
-|
-HTL fe ait om
-| aia , nv My [i oe
-
 Fia. 101.—Volta's "Crown of Cups.'"' The metallic elements C and Z, consisted of two
 -metals, the plate C, being of copper and the plate Z, of zinc. They were placed, as shown,
 in the glass vessels, which contained salt water and ordinary water or lye. Into each vessel,
-except the two end ones, the copper end of one arc and the zinc end of the next were in-
-troduced, the series, however long, ending with copper dipping into the terminal vessel
+except the two end ones, the copper end of one arc and the zinc end of the next were introduced, the series, however long, ending with copper dipping into the terminal vessel
 at one end and zinc into that at the other. The arrangement is almost exactly that of a
 modern one fluid primary battery.
 
-battery 1s frequently used incorrectly for a single cell. That ter-
-minal of the element from which the current flows is called the
+battery 1s frequently used incorrectly for a single cell. That terminal of the element from which the current flows is called the
 plus or positive pole, and the terminal of the other element the
 negative pole.
 
 Cells are said to be primary or secondary according as they generate
 a current of themselves, or first require to be charged from an external
-
-56 Electric Current
-
-a
 
 source, storing up a current supply which is afterwards yielded in the
 reverse direction to that of the charging current.
@@ -3146,24 +2300,9 @@ already existing 1s simply sel in motion by creating an electric
 pressure.
 An electric current, according to the third method, is gen-
 
-shh? : ———
-¢s hy \ % \e NIT
-
-én If
-gee Mee ce ai eth
-ix : :
-
-ag 'd a A
-aa Bio ci * iN) ee — eee +S
-
-Py eee oe or Nu] aio
-C.R.ROF N.J. te —— Ba
-
 sre,
 
 i tig ; ' \' auth if a) 2 ween spin
-jig hom. OF fy, i Wipe mI, aac to} ©" JL, a
-oe Ur Me a), YY W/o bf © ey Ei 2 MH Mls wd A Ws Y lis iO / UW 7 ON
 
 Fic. 102.—Hydraulic analogy of strength of current. Comparing the flow of water into the
 locomotive tender to the electric current. If say 5 gallons of water be discharged per second
@@ -3177,8 +2316,6 @@ Strength of Current.—It 1s important that the reader have
 a clear conception of this term, which is so often used. The
 exact definition of the strength of a current is as follows:
 
-Electric Current 57
-
 The strength of a current is the quantity of electricity which jiows
 past any point of the circuit in one second.
 
@@ -3186,8 +2323,7 @@ Example.—If, during 10 seconds, 25 coulombs of electricity flow
 through a circuit, then the average strength of the current during that
 time is 214 coulombs per second, or 2% amperes.
 
-Voltage Drop in an Electric Circuit.—A difference of pres-
-sure exists between any two points on a conductor through
+Voltage Drop in an Electric Circuit.—A difference of pressure exists between any two points on a conductor through
 
 Fra. 103.—Hydrostatic analogy of fall of pressure in an electric circuit.
 Fre. 104.—Showing method of connecting voltmeter to find potential difference between any
@@ -3206,8 +2342,6 @@ head M S.
 In order to measure the fall in electric pressure a A and R (fig: 104),
 the terminals of a volt meter are placed in contact with these points as
 
-58 Electric Current
-
 shown. Its reading will give the difference of pressure between A and R,
 in volts, provided that its own current carrying capacity is so small that
 it does not appreciably lower the pressure difference between the points
@@ -3218,15 +2352,7 @@ it does not appreciably lower the pressure difference between the points
 
 ### PARALLEL CIRCUIT
 
-\\w
-
-SS
-
 ### SMALL DROP
-
-TY as
-
-iy,
 
 Fics. 105 and 106.—Kinds of circuit which have large voltage drop and small voltage drop
 respectively.
@@ -3235,8 +2361,6 @@ A and R,by being touched across them; that is, provided the current which
 
 flows through it is negligible in comparison with that which flows through
 the conductor which already joins the points A and R.
-
-Electric Current 59
 
 1. What is an electric current?
 
@@ -3261,14 +2385,6 @@ current measured?
 8. Define, volt, ampere, ohm.
 9. State Ohm's law.
 
-10.
-11.
-
-rz.
-
-13.
-
-14.
 ioe
 
 Define the terms short circuit, lead, return.
@@ -3276,8 +2392,7 @@ Define the terms short circuit, lead, return.
 What is the difference between a metallic circuit
 and a ground circuit?
 
-What is the difference between direct and alternat-
-ing current; primary and secondary current;
+What is the difference between direct and alternating current; primary and secondary current;
 low tension and high tension current?
 
 Describe the behavior of a low tension and high
@@ -3288,20 +2403,11 @@ Describe the production of an electric current.
 Name three ways of obtaining voltagz to cause
 current flow.
 
-16.
-17.
-
-18.
-
-19.
-20.
-
 Electric Current
 
 What word is incorrectly used for cell?
 
-What is the difference between a primary and sec-
-ondary cell?
+What is the difference between a primary and secondary cell?
 
 What is used to produce a current chemically and
 mechanically?
@@ -3316,8 +2422,7 @@ measured ?
 The word "battery" is a much abused word, being often
 used incorrectly for "'cell,'' as in fig. 109.
 
-Hence, careful dis-
-tinction should be made between the two terms.
+Hence, careful distinction should be made between the two terms.
 
 A battery consists of two or more cells joined together so as to
 form a single unit.
@@ -3325,23 +2430,7 @@ form a single unit.
 There are numerous forms of primary cell; they may be
 classified as follows:
 
-e
-eA
-j
-
-SAT ATT)
-
-{
-
-|!
-
 — rat
-— TRE
-- Be |
-
-=? > | |
-
-t
 
 Figs. 107 and 108.—Couronne de Tasses and Volta's pile, the first of all batteries (1800). The
 Couronne de Tasses (crown of cups) was a battery of simple cells in series. Each cell was
@@ -3349,8 +2438,6 @@ composed of a plate of silver or copper and one of zinc immersed in brine. Volta
 
 108, consisted of a series of alternate discs of zinc and copper, separated by moistened felt.
 Surprising results were obtained with this pile.
-
-62 Primary Cells
 
 1. According to the service for which they are designed;
 2. According to the chemical features.
@@ -3368,8 +2455,6 @@ some little time.
 
 ### POSITIVE POLE
 
-nN
-
 ### NEGATIVE
 
 ### ELEMENT
@@ -3378,38 +2463,7 @@ nN
 
 ### ELEMENT
 
-=
--
-
-— z =
-
-—
-—
-——
-=
-
-H
-
-|
-
-—
-
-.
-
-| COPPER : : pee See ZINC
-
-= =m ew ew ew ew ee wo
-
-u
-f
-
-| _
-i
-
-i
-{
-
-!
+COPPER : : pee See ZINC
 
 Fig. 109.—Simple primary cell. Jt consists of two dissimilar metal plates (such as coppe
 and zinc which are called the elements) immersed in the electrolyte or exciting fluid cor
@@ -3424,8 +2478,6 @@ This type of cell is adapted to furnishing current continuously, as 1
 telegraphy, etc.
 
 With respect to the second method, cells are classified as:
-
-Primary Cells : 63
 
 1. One fluid;
 2. Two fluid.
@@ -3444,9 +2496,6 @@ In two fluid cells, each metal plate is immersed in a separate solution, one
 
 ### CIRCUIT CLOSED MOST OF THE TIME
 
-. ]
-po, ee
-
 psa
 
 ### CLOSED CIRCUIT
@@ -3461,27 +2510,9 @@ liquid.
 
 Ans. They are called elements.
 
-64 Primary Cells
-
-Jal - _—
-DISQUE
 LECLAN CHE |
-)
 
-iar TTA NTO 4
-a
 a IRTRMA THI
-Sia vl
-
-1!) 8 Te eng arn Roe) \\\ \6
-ae ee |
-Uae om hy A ,
-'hE tn ae
-ia tp |
-i Sih Al
-Ae (OHA) |
-F * {
-abe! ih | }
 
 Frias. 113 to 121.—Various primary cells. Fig. 113, carbon cell; fig. 114, Disque Leclanche cell
 (single fluid with solid depolarizer); fig. 115, Fuller telephone standard cell (adapted to long
@@ -3492,10 +2523,6 @@ fig. 118, Bunsen two fluid cell (suitable for experimental work); fig. 119, Dani
 the liquids separate; suitable for closed circuit work); fig. 120, Partz acid gravity cell with
 depolarizer (the effective depolarizer permits both open and closed circuit work); fig. 121,
 Wheelock cell (carbon and zinc elements).
-
-OO ee
-
-Primary Cells 65
 
 #### Ques. What is the fluid called?
 
@@ -3516,24 +2543,11 @@ ZINC
 
 ### POSITIVE
 
-### A OR
-
 ### ATTACKED PLATE
-
-U
-iN
-, = ]
-BAUS ain
-Voge " - F
-oa !
-Ts ll
-rf ae t
-ty "
 
 ### NEGATIVE
 
-OR.
-PLATE NOT ATTACKED
+### PLATE NOT ATTACKED
 
 Fic. 122.—Elementary primary cell illustrating the action of a cell. An important point to
 be noted is that the polarity of each plate is different from that of its terminal. Thus, the
@@ -3541,10 +2555,7 @@ zinc terminal is negative, but the zinc plate is positive; an inspection of the 
 show that this is necessary for current flow.
 
 the electro-chemical generation of current depends is, that if a
-plate of metal be placed in a liquid there is a difference of elec-
-trical condition produced between them of such sort that the metal
-
-66 Primary Cells
+plate of metal be placed in a liquid there is a difference of electrical condition produced between them of such sort that the metal
 
 either takes a lower or higher electrical pressure than the liquid,
 according to the nature of the metal and the liquid.
@@ -3555,26 +2566,14 @@ outside the liquid, a current of electricity will traverse the wire. This
 current proceeds in the liquid from the metal which is most acted upon
 chemically to that which is least acted upon.
 
-(S000, disianlaiiecnlaclactde fE® OG
-
 SOME ia
 ESCAPE
 
-a
-ie
-ce
-
-a (( '
-
-SP of
-
-Pr $y
-
 aren
 
-Z \e
-ALL SURFACE EXPOSEO BUBBLES OF HYDROGEN GAS PARTIALLY
-COVER SURFACE OF COPPER ELEMENT
+### ALL SURFACE EXPOSEO BUBBLES OF HYDROGEN GAS PARTIALLY
+
+### COVER SURFACE OF COPPER ELEMENT
 
 Fics. 123 and 124.—Elementary primary cell illustrating polarization, Fig. 123, shows entire
 surface of copper element exposed to action of electrolyte on first closing circuit; fig. 124,
@@ -3589,12 +2588,7 @@ Place in a glass jar some water having a little sulphuric or other acid
 
 added toit. Place in it separately two clean strips, one of zinc Z, and one
 
-of copper C. This cell is capable of supplying a continuous flow of elec-
-tricity through a wire whose ends are brought into connection with the
-
-Oa aaa a
-
-Primary Cells 67
+of copper C. This cell is capable of supplying a continuous flow of electricity through a wire whose ends are brought into connection with the
 
 two strips. When the current flows, the zinc strip is observed to waste
 away, its consumption in fact furnishing the energy required to drive the
@@ -3629,8 +2623,7 @@ which thus gradually becomes covered with a thin film of hydrogen.
 
 Partly on account of the decreased area of copper plate in contact with
 the electrolyte, and partly because the hydrogen tends to produce a current
-in the opposite direction, the useful electrical output becomes consider-
-ably diminished and the cell is said to be polarized. 'This state of affairs
+in the opposite direction, the useful electrical output becomes considerably diminished and the cell is said to be polarized. 'This state of affairs
 may be rectified by stirring up the electrolyte, or by shaking the cell, so
 as to assist the hydrogen bubbles to detach themselves from the surface
 of the copper plate and make their way to the atmosphere through the
@@ -3638,8 +2631,6 @@ electrolyte. This, however, is only a temporary remedy, as the polarized
 condition will soon be reached again, and a further agitation of the cell
 will be necessary. Hence, a simple cell of this kind is not desirable for
 practical work, and it must be modified to adapt it to constant use.
-
-68 Primary Cells
 
 eben
 
@@ -3674,8 +2665,6 @@ the cell?
 Ans. The zinc plate immediately becomes strongly charged
 with negative electricity, and the copper plate weakly so. As
 
-Primary Cells 69
-
 '1g. 126.—Home made primary cell. In
 construction, make a clamp of wood
 which has been soaked in paraffin, and
@@ -3684,20 +2673,17 @@ shown, the zinc plate between the two
 carbons. The wood strips of the clamp
 are each 7 ins. long; the outer strips are
 1 in. sq., the inner two are 1x in. Four
-bolts at the ends of the clamp hold it to-
-gether. Before screwing together lay a
+bolts at the ends of the clamp hold it together. Before screwing together lay a
 piece of heavy copper wire under the
 clamp and across the top of the plate.
-The two carbon plates are connected to-
-gether to one wire; the zinc is connected
+The two carbon plates are connected together to one wire; the zinc is connected
 to the other wire. The plates are now
 hung in a glass jar 6 X8 ins.,
 the wood clamp resting across
 the top. The electrolyte is GARBON
 made by dissolving a Ib. of
 sodium bichromate in a gal. of water,
-and adding slowly a pound of strong sul-
-phuric acid. This cell gives two volts and
+and adding slowly a pound of strong sulphuric acid. This cell gives two volts and
 a large current. When it begins to show
 signs of exhaustion add a little more acid.
 Some arrangement should be made for
@@ -3716,8 +2702,7 @@ piece of sheet copper
 14x15 ins. long and to
 MELTED one end solder or rivet
 PARAFFIN a piece of No. 16 or 18
-rubber insulated cop-
-per wire about 15 ins.
+rubber insulated copper wire about 15 ins.
 long; first removing
 the insulation from
 the ends of the wire
@@ -3726,16 +2711,13 @@ Coil up the strip of
 copper as shown. The
 free end of the wire
 
-| Hy COPPER forms a positive ter-
+Hy COPPER forms a positive ter-
 
 ### NSULATED ZINC
 
 WIRE *
 
-ft
-
-li | minal of the cell. Pro-
-in cure zinc disc about
+li | minal of the cell. Proin cure zinc disc about
 14 in. thick and 4or5
 
 ins. in diameter. To
@@ -3752,8 +2734,6 @@ creeping of solution. The binding posts H and D, are the terminals. For the elec
 Ibs. of copper sulphate, mix with enough rain water to cover the zinc. Let cell stand 10 hrs.
 short circuited after which the cell must be kept on close circuit having about 50 ohms resistance.
 
-70 Primary Cells
-
 long as the plates remain unconnected, and the zinc is pure, no
 further action takes place.
 
@@ -3761,92 +2741,19 @@ further action takes place.
 
 happens? |
 
-Ans. If the plates be connected by a wire outside the elec-
-trolyte, the tendency which dissimilar electrical charges have
-
-td
-rd
-
-|
-|
-
-|!
-|
-
-|
-
-|
-
-fi
-|
-
-ra
-a | i
-
-" la
+Ans. If the plates be connected by a wire outside the electrolyte, the tendency which dissimilar electrical charges have
 
 ### COCK OPEN
 
-NEGATIVE PRESSURE "gl 2 =a |
+NEGATIVE PRESSURE "gl 2 =a
 POSITIVE FLOW ——_ 1
 
-os
-
-¥ ef een ---
-=O} . ¥ :
-'
-t
-
-—_—
-
-|
-
-|
-
-——
-
-—_— ——_
-
 wily
-
-=
-
-|
-
-I Hi ;
-
-\ ul ul
-
-ah
-jl
-
-ee
-— ~— SS on
-
-i
-
-.
-
-—— :
-
-|
-hi!
-
-i
-
-I
-
-=—=_
-= =
-
-i
-
-a
 
 Fics. 128 and 129.—Pneumatic analogy illustrating how there can be a positive flow when both
 plates of a battery are negatively electrified as explained in the accompanying text.
 
-to neutralize one another causes a flow of negative electricity |
+to neutralize one another causes a flow of negative electricity
 through the wire from zinc to copper, and a positive flow in:
 
 NOTE.—When a current is produced by a Daniell's cell, copper is deposited on the }-
@@ -3856,10 +2763,7 @@ weak, the water is decomposed instead of the copper sulphatg, and hydrogen is de
 the copper plate. This deposition of hydrogen lowers the vo tage, and care should, therefore «.
 be taken to keep up a sufficient supply of crystals of copper sulphate.
 
-Primary Cells 71
-
-the opposite direction. The "'static'' charge being thus dis-
-posed of, a fresh charge is given to the plates by the action of
+the opposite direction. The "'static'' charge being thus disposed of, a fresh charge is given to the plates by the action of
 the acid, which commences to dissolve the zinc. As long as the
 wire connects the copper and zinc plates, the acid will continue
 its action on the zinc until either acid or zinc is exhausted.
@@ -3881,9 +2785,8 @@ action or production of an electricai charge on the zinc plate
 would be the same, but when the plates were joined by the wire
 the current would soon cease.
 
-_ The reason for this lies in the fact that the sulphate of zinc, which is the
-compound produced by the acid plus the zinc, being insoluble in pure un-
-diluted' sulphuric acid, remains on the surface of the zinc plate. The
+The reason for this lies in the fact that the sulphate of zinc, which is the
+compound produced by the acid plus the zinc, being insoluble in pure undiluted' sulphuric acid, remains on the surface of the zinc plate. The
 coating of sulphate of zinc thus formed also operates as a protective agent,
 and no further electrical charge can be induced until it is removed. The
 addition of water to the acid has the effect of allowing the sulphate of zinc
@@ -3895,10 +2798,7 @@ cell? |
 
 Ans. The size of the elements and their proximity.
 
-Effects of Polarization.—The film of hydrogen bubbles af-
-fects the strength of the current of the cell in two ways:
-
-72 Primary Cells
+Effects of Polarization.—The film of hydrogen bubbles affects the strength of the current of the cell in two ways:
 
 Fre. 130.—Polarity indicator. It indicates the
 negative and positive poles when connected
@@ -3912,11 +2812,7 @@ various solutions, etc. With a complete set
 of elements the various forms of batteries »s
 in common use are readily assembled. Ale
 
-~~
-
 ### BATTERY DIRECTIONS
-
-| i !
 
 Amalgamating.—A good method for amal- MW a h eee!
 gamating the zinc element is to dip it into acid, | at ' eM:
@@ -3925,13 +2821,11 @@ and rub in with a piece of cloth attached to a | 2
 stick. This is pezhaps the best and quickest
 method althoucvh the most expensive.
 
-Amalgamating Fluid.—Two-ounces mer-
-cury, 1 ounce aqua regia, 10 ounces water. Dip
+Amalgamating Fluid.—Two-ounces mercury, 1 ounce aqua regia, 10 ounces water. Dip
 zinc into solution and then wash with water.
 No need of brush or rag.
 
-Leclanche Cell.—Place 6 ounces ammonium chloride into jar and fill with water to two-
-thirds its capacity. Stir well until the salt is entirely dissolved. Place elements with zinc
+Leclanche Cell.—Place 6 ounces ammonium chloride into jar and fill with water to twothirds its capacity. Stir well until the salt is entirely dissolved. Place elements with zinc
 outside porous cup as illustrated.
 
 Carbon Cylinder Cell.—Directions furnished under Leclanche cell apply to this type of
@@ -3942,10 +2836,9 @@ Samson Cell.—Directions furnished under carbon cylinder cell apply to this typ
 Grove Cell.—Outer cell contains amalgamated zinc plate dipping into dilute sulphuric
 acid (by weight 10 parts water to 1 part acid). In inner porous cup, a piece of platinum dips
 into nitric acid of full strength. Obnoxious nitrogen oxide fumes may be suppressed in a
-large measure by the addition of a small quantity of potassium dichromate. |
+large measure by the addition of a small quantity of potassium dichromate.
 
-Bunsen Cell.—This cell is merely a modification of the Grove cell, in which the ex-
-pensive platinum is replaced by an electrode of gas carbon.
+Bunsen Cell.—This cell is merely a modification of the Grove cell, in which the expensive platinum is replaced by an electrode of gas carbon.
 
 In both the Grove and Bunsen cells the nitric acid may be replaced by a chromic acid
 solution.
@@ -3954,51 +2847,28 @@ Grenet Cell.—In this cell the zinc plate between two carbon plates dips into a
 acid solution (see below). When this cell is exhausted, the rich reddish color of chromic acid
 will be replaced by a muddy dark green color.
 
-Chromic Acid Solution.—There are many different formule, but the most convenient |
-method of making a generally useful acid 1s by simply dissolving prepared chromic acid salt :
-in water. A useful formula is, 30 parts sodium dichromate, 100 parts water and 23 parts |
+Chromic Acid Solution.—There are many different formule, but the most convenient
+method of making a generally useful acid 1s by simply dissolving prepared chromic acid salt
+in water. A useful formula is, 30 parts sodium dichromate, 100 parts water and 23 parts
 sulphuric acid (sp. gr. 1.845) all by weight.
 
-Plunge Battery.—Elements and directions under Grenet type apply to this type of |
+Plunge Battery.—Elements and directions under Grenet type apply to this type of
 battery.
 
-Daniell Battery.—The zinc element is placed in a porous cup containing sulphuric acid |
-(1 part acid to 20 parts water, by weight). The copper element encircles a porous cup and |
+Daniell Battery.—The zinc element is placed in a porous cup containing sulphuric acid
+(1 part acid to 20 parts water, by weight). The copper element encircles a porous cup and
 dips into saturated solution copper sulphate, kept continually saturated by the addition of an:
 
-excess of copper sulphate crystals on bottom of jar. Solution is more effective by addition of |
+excess of copper sulphate crystals on bottom of jar. Solution is more effective by addition of
 few cubic centimeters sulphuric acid.
-
-a Ct
-13 i
-
-'a
-=
-: ae
-/ a
-/ [igs :
-|
-
-Primary Cells 73
 
 1. It weakens the current by the increased reszstance which it
 offers to the flow, for bubbles of gas are bad conductors;
 
-2. It weakens the current by setting up an opposing electro-
-motive force.
+2. It weakens the current by setting up an opposing electromotive force.
 
 Hydrogen is almost as oxidizabie a substance as zinc, especially when
 freshly deposited (in the ''nascent'' state), and is electropositive; hence,
-
-rm
-
-(4
-
-ci)
-
-el
-
-ul
 
 ~ GALVANOMETER
 
@@ -4013,35 +2883,21 @@ to start a current in the opposite direction to the true zinc-to-copper
 current. It is therefore an important matter to abolish this polarization
 otherwise the currents furnished by batteries would not be constant.
 
-Methods of Depolarizing.—One of the chief .aims in the ar-
-rangement of the numerous cells which have been devised is
+Methods of Depolarizing.—One of the chief .aims in the arrangement of the numerous cells which have been devised is
 to avoid polarization. The following are the methods usually
 employed:
 
-74 Primary Cells
-
-Fl
-
 1. Chemical methods;
 
-a. Oxidation of the hydrogen by potassium bichromate and by nitric-
-acid.
+a. Oxidation of the hydrogen by potassium bichromate and by nitricacid.
 
 b. Substitution of the hydrogen by some other substance which does
-not give a counter electromotive force of polarization; for in-
-stance, in the Daniell cell by replacement of the copper in cop-
-per sulphate by the hydrogen, the copper being deposited on
+not give a counter electromotive force of polarization; for instance, in the Daniell cell by replacement of the copper in copper sulphate by the hydrogen, the copper being deposited on
 the positive pole.
 
 ### SMALL DEFLECTION
 
-Cg.4.n eae
-
-nf i ' | ee =
 1 i 3 GALVANOMETER
-c\ a
-
-i),
 
 Ste
 
@@ -4049,25 +2905,23 @@ NEGATIVE PLATE |
 COVERED WITH |
 HYDROGEN BUBBLES
 
-Fig. 133.—Polarized cell. Note that the negative plate is covered with hydrogen bubbles, |
+Fig. 133.—Polarized cell. Note that the negative plate is covered with hydrogen bubbles,
 rendering most of its surface inactive. When in this condition very little current will flow!
-as indicated by the small deflection of the galvanometer. |
+as indicated by the small deflection of the galvanometer.
 
 2. Electro-chemical means;
 
 It is possible by employing double cells, to secure such action that .
 some solid metal, such as copper, shall be liberated instead of hydrogen
-bubbles, at the point where the current leaves the liquid. This electro- :
+bubbles, at the point where the current leaves the liquid. This electro-
 chemical exchange obviates polarization.
 
 3. Mechanical methods.
 
-Primary Cells 79
-
 a. Agitation of the liquid or of the positive electrode, in order to
 prevent the accumulation of hydrogen thereon.
 
-: 6. Corrugating or roughing the positive electrode, as in the Smee
+6. Corrugating or roughing the positive electrode, as in the Smee
 cell. This causes the hydrogen gas to form in large bubbles
 which rise to the surface more rapidly than the small bubbles
 which form on a smooth electrode.
@@ -4075,28 +2929,17 @@ which form on a smooth electrode.
 In the simplest form of cell, as zinc, copper, and dilute sulphuric acid,
 no attempt has been made to prevent the evil of polarization, hence, it
 
-e=
 A \ : BRUSHING OFF BUBBLES
-
-' Y, yy / A \Y
-iy Wp. d Yy ms , i
-Ta
-f
-
-a, "Ser ay
-NOY
 
 ### DEFLECTION
 
 ### INCREASING
 
-— ee eo
-GALVANOMETER
+### GALVANOMETER
 
 ### CLEAN SURFACE
 
-Fig. 134.—Depolarizing a cell mechanically. If the hydrogen bubbles adhering to the neg-
-ative plate be brushed off with a swab as shown, the deflection of the needle will increase
+Fig. 134.—Depolarizing a cell mechanically. If the hydrogen bubbles adhering to the negative plate be brushed off with a swab as shown, the deflection of the needle will increase
 
 thus indicating a stronger circuit.
 
@@ -4108,12 +2951,9 @@ that has a strong affinity for hydrogen and will combine with it, thus preventin
 
 of the negative plate with the hydrogen gas.
 
-76 Primary Cells
-
 #### Ques. What is a depolarizer?
 
-Ans. <A substance employed in some types of cell to com-
-bine with the hydrogen which would otherwise be set free at
+Ans. <A substance employed in some types of cell to combine with the hydrogen which would otherwise be set free at
 the positive electrode and cause polarization.
 
 The chemical used for this purpose may be either in a solid or liquid
@@ -4121,18 +2961,14 @@ form, which gives rise to several types of cell, such as cells with a single
 fluid, containing both the acid and the depolarizer, cells with a single
 exciting fluid and a solid depolarizer, and cells with two separate fluids.
 
-|
-
 Fics. 135 and 136.—Waterbury primary cells. Fig. 135, glass jar type; fig. 136, porcelain jar
 type. |
 
 In the two fluid cell, the zinc is immersed in the liquid (frequently!
 dilute sulphuric acid) to be decomposed by the action upon it, and the
-negative plate is surrounded by the liquid depolarizer, which will be de-
-composed by the hydrogen gas it arrests, thereby preventing polarization.
+negative plate is surrounded by the liquid depolarizer, which will be decomposed by the hydrogen gas it arrests, thereby preventing polarization.
 
-In open circuit cells polarization daes not have much oppor-
-tunity to occur, since the circuit is closed for such a short.
+In open circuit cells polarization daes not have much opportunity to occur, since the circuit is closed for such a short.
 period of time; hence, these cells are always ready to deliver a
 strong current when used intermittently.
 
@@ -4142,25 +2978,16 @@ lens ain, me coe
 
 wwe
 
-aX
-
-cues hie a eee te ln Ahn ee os ee ney ones
-
 Fig. 139.—Waterbury ARA
 
-cell; indication of exhaus-
-tion 3: The zinc is now con-
-sumed from the bottom
+cell; indication of exhaustion 3: The zinc is now consumed from the bottom
 upward until about 2 inches
 only of the zinc remains
 when the rated capacity,
 500 ampere hours, has been
-used, but there is still con-
-siderable capacity remain-
-ing, the amount depending
+used, but there is still considerable capacity remaining, the amount depending
 upon the nature of the work
-and general service condi-
-tions.
+and general service conditions.
 
 Fic. 137.—Waterbury ARA cell; indication of exhaustion 1: The first indication of approaching
 
@@ -4179,19 +3006,11 @@ available for use. After a substantial part of the zinc has disappeared as shown
 the cell must be watched carefully to procure maximum life without failure, taking into
 consideration the class of service for which the battery is being used.
 
-78 Primary Cells
-
 action, so that the current
 2 MUL will be constant and steady
-| Vea lt ind till the energy of the chem-
-a Wath lai icals is expended.
+Vea lt ind till the energy of the chema Wath lai icals is expended.
 
-| ee
-Ail ai
-
-#### Ques. What is a depol-
-
-arizer bag?
+#### Ques. What is a depolarizer bag?
 
 Ans. Acylinder of hemp
 or other fabric used in place
@@ -4200,34 +3019,9 @@ forms of Leclanche cell, and
 also as a support for the
 depolarizing mass in some
 forms of dry cell where the
-electrolyte is of a thin gel-
-atinous nature.
-
-j :
-|
-
-Paty in
-a ,
+electrolyte is of a thin gelatinous nature.
 
 i all
-
-VI i il
-
-|
-iy
-
-{'
-
-\"
-
-\ bas
-
-Tm
-'
-: ,
-
-i
-i
 
 Volta's Contact Law.—
 When metals differing from
@@ -4235,9 +3029,7 @@ each other are brought into
 
 Fic. 141.—Clark's standard test cell. Latimer Clark's standard cell assumes a variety of
 forms. The H-form is arranged as shown. The vessel to the left contains, at A, an amalgam
-of pure zinc. The other vessel contains, at M, mercury covered with pure mercurous sul-
-phate, HgsSO:. Both vessels are then filled, above the level of the cross tube, with a sat-
-urated solution of zinc sulphate Z,Z, to which a few crystals of the same are added. Tightly
+of pure zinc. The other vessel contains, at M, mercury covered with pure mercurous sulphate, HgsSO:. Both vessels are then filled, above the level of the cross tube, with a saturated solution of zinc sulphate Z,Z, to which a few crystals of the same are added. Tightly
 fitting corks C,C, prevent loss by evaporation. The voltage of this cell in legal volts is
 1.438. '1 —.00077/t —15 deg. C.)—(Avrion).
 
@@ -4248,8 +3040,6 @@ Volta found that iron, when in contact with zinc, becomes negatively
 electrified; the same takes place, but somewhat weaker, when iron is
 touched with lead or tin. When, however, iron is touched by copper or
 silver, it becomes positively electrified. Volta, Seebeck, Pfaff, and others
-
-Primary Cells 79
 
 have investigated the behavior of many metals and alloys when in contact
 with each other.
@@ -4283,14 +3073,11 @@ intermediate members of the series.
 
 Hence, it is immaterial for the total effect whether the first
 and the last are brought into contact directly, or whether the
-contact is brought about by means of all or any of the inter-
-mediate metals.
+contact is brought about by means of all or any of the intermediate metals.
 
 Volta's law further asserts that when any number of metals are brought
 into contact with each other, but so that the chain closes with the metal
 with which it was begun, the total difference must be zero.
-
-80 Primary Cells
 
 Laws of Chemical Action in the Cell.—There are two simpk
 laws of chemical action in the cell:
@@ -4310,14 +3097,12 @@ tery connected 1n series. TERMINAL
 
 ### COPPER SULPHATE
 
-—— —
-
 Fia. 142.—Calland cell, this is a form of gravity COPPER DISG
 
 Daniell's cell, since the copper sulphate is supplied
 by a small crystal being dropped into the cell daily, and the supply being adjusted t
 
-' suit the demand, the plane of separation of the transparent zinc sulpnat> solution from the
+suit the demand, the plane of separation of the transparent zinc sulpnat> solution from the
 blue sulphate of copper solution may be kept sharp and well defined. To assist in main
 taining this and so preventing the copper sulphate wandering to the: zinc plate, it is wel
 to allow the cell to send a weak current through an external circuit of considerable resistanc
@@ -4340,8 +3125,6 @@ into action. It is better to employ sand in stationary Minotto's cells, as it si
 the copper sulphate is consumed, but if the cells have to be moved about then it is better
 to use sawdust.
 
-Primary Cells 81
-
 Requirements of a Good Cell.—The several conditions which
 should be fulfilled by a good cell are as follows:
 
@@ -4354,18 +3137,9 @@ should be fulfilled by a good cell are as follows:
 4. It should give a constant current, and therefore must be
 free. from polarization, and not liable to sani. eXx-
 
-= haustion; "ane a
-
-DILUTE. ll! || ae
 SULPHURIC. ACID We
 
-—,
-+ : sik
-{4 I
-ta SNP ceipsind | ies
-| it = TK, yes ay 3
-sy
-as ae
+it = TK, yes ay 3
 
 COPPER.
 
@@ -4381,48 +3155,36 @@ emit corrosive fumes;
 
 Single and Two Fluid Cells.—The Mri enn between a
 single and a two fluid cell has already been given.
-|. The single fluid cell of Volta with its zinc and copper plates teP-
-_ resents the simplest form of primary cell.
+|. The single fluid cell of Volta with its zinc and copper plates teP_ resents the simplest form of primary cell.
 
 In the two fluid cell, the positive (zinc) plate 1S ane mn the
 exciting liquid (usually dilute ced acid) and is decomposed
 
-is
-L
-;
-
-82 Primary Cells' .-
-
 by the action upon it, while the negatiwe plate is placed in the
-liquid depolarizer which is decomposed by the hydrogen arrested |
+liquid depolarizer which is decomposed by the hydrogen arrested
 by ut, thus preventing polarization.
 
 In some forms of cell, the two liquids are separated by a porous partition
 
-of unglazed earthenware, which, while it prevents the liquids mixing ex-
-cept very slowly, does not prevent the passage of hydrogen and electricity.
+of unglazed earthenware, which, while it prevents the liquids mixing except very slowly, does not prevent the passage of hydrogen and electricity.
 
-|
-
-7:
-
-Fic. 146.—Waterbury telecell zinc cylinder cut away to expose the interior construction of the |
-cell to inspection. The perforated cylindrical basket inside of the zinc cylinder contains the |
-depolarizing element, that is, copper oxide. The small legs and feet at the bottom keep ele- |
+Fic. 146.—Waterbury telecell zinc cylinder cut away to expose the interior construction of the
+cell to inspection. The perforated cylindrical basket inside of the zinc cylinder contains the
+depolarizing element, that is, copper oxide. The small legs and feet at the bottom keep ele-
 ments centralized. The copper oxide is sealed in the basket to prevent sifting out during
 
 shipment.
 Fig. 147.—Waterbury telecell as shipped. Cakes of caustic soda at the top, just above =
 
-zinc cylinder. The capsule of battery oil is shown at the bottom of the jar. When water is |
+zinc cylinder. The capsule of battery oil is shown at the bottom of the jar. When water is
 
-added the soda is dissolved, the capsule melted, and the perforations in the copper oxide |
+added the soda is dissolved, the capsule melted, and the perforations in the copper oxide
 
 basket opened.
-Fia. 148.—Waterbury telecell after water has been added, the electrolyte made and the sell |
-in working condition. In operation, as current is drawn from the cell, the little bars forming |
-the window at the top of the zinc cylinder, gradually dissolve and near the end of the life of | !
-the cell they disappear. This feature gives advance notice that the cells are nearly exhausted |
+Fia. 148.—Waterbury telecell after water has been added, the electrolyte made and the sell
+in working condition. In operation, as current is drawn from the cell, the little bars forming
+the window at the top of the zinc cylinder, gradually dissolve and near the end of the life of |
+the cell they disappear. This feature gives advance notice that the cells are nearly exhausted
 
 and failure in service may be prevented.
 
@@ -4436,8 +3198,6 @@ A few examples of single and double fluid primary cells will now be
 
 described.
 
-Primary Cells 83
-
 The Leclanche Cell.—This cell was invented by Leclanche,
 French electrician, and was the first cell in which sal-ammoniac
 was used. This form of cell, as shown in fig. 149, is in general
@@ -4447,38 +3207,10 @@ use for electric bells, its great recommendation being that, once
 
 ### PORUS CUP
 
-HNSQUE,
-LEAN sib
-
-nL rl
-has HM: Le \\
-
-fi: ae iii
-
-SSS:
-
-ln
-a
-q 1
-
-;
-|:
-F
-(i!
-
-ma
-i
-
 Mil
 
-——_-=
-
-———— eee
-
 Fics. 149 and 150.—Leclanche cell and porous
-cup. This very common form of cell is an ex-
-ample of the single fluid type, with a solid de-
-polarizer surrounding the negative element;
+cup. This very common form of cell is an example of the single fluid type, with a solid depolarizer surrounding the negative element;
 
 the latter is generally carbon, the positive element being zinc. The liquid used is a strong
 
@@ -4495,13 +3227,10 @@ The cell is thus of the open circuit class, and will furnish a good current wher
 
 only intermittently. Zinc is dissolved only when the cell is being used. This type of cell,
 
-or its modification, is used for gas lighting and bell work. The cell requires very little atten-
-tion. Water must be added as the solution evaporates, and the zinc rod replenished when
+or its modification, is used for gas lighting and bell work. The cell requires very little attention. Water must be added as the solution evaporates, and the zinc rod replenished when
 necessary. The pressure of the cell is about 1.48 volts and the internal resistance about
 
 4 ohms.
-
-84 Primary Cells
 
 charged, it retains its power without attention for a considerable
 time.
@@ -4519,26 +3248,19 @@ which takes place being as follows: the zinc becomes oxidized by
 the oxygen' front the manganese peroxide, and is subsequently
 converted into zinc chloride by the action of the sal-ammoniac.
 
-After the battery has been in continuous use for some hours, the man-
-ganese becomes exhausted of oxygen, and the force of the electrical current
+After the battery has been in continuous use for some hours, the manganese becomes exhausted of oxygen, and the force of the electrical current
 is greatly; diminished; but if the battery be allowed to rest for a short time,
 the manganese | obtains a fresh supply of: oxygen from the atmosphere,
 and is again fit: for use.
 
-After about 18 months' work, the glass cell will probably require re- |
+After about 18 months' work, the glass cell will probably require re-
 charging .with sal-ammoniac, and the zinc rod may also need renewing;
 but should the porous cell get out of order, it is better to get a new one
 than to attempt to recharge it.
 
-The directions for setting up a Leclanche cell are as follows: |
+The directions for setting up a Leclanche cell are as follows:
 
-|
-|
-|
-|
-|
-:
-1. Place in the glass jar six ounces of sal-ammoniac, and pour in water |
+1. Place in the glass jar six ounces of sal-ammoniac, and pour in water
 until the jar is one-third full, then stir thoroughly.
 2. Place the porous cup in the solution, and if necessary add water
 until it rises to within 11% inches of the top of the porous cup.
@@ -4550,45 +3272,12 @@ one-third the height of the jar. The cell will then be ready for use.
 As the level of the liquid is lowered by evaporation, it should be
 maintained at the stated height by adding water.
 
-| Primary Cells 85
-
 The Leclanche cell is adapted to open circuit work, being
 extensively used for ringing electric bells.
-_ The objections to the Leclanche cell are:
+The objections to the Leclanche cell are:
 
 1. Rapid polarization;
 2. High internal resistance due to porous pot;
-
-f
-fs
-f
-
-)
-
-at
-
-1 i mil i
-
-"I q
-| i :
-
-Hi TA |
-\ Hh Hl
-\\ Mil Hi Hil
-Hil il i HAI
-Hi HW)
-
-i)
-
-|
-If
-i}
-
-i]
-i
-\
-\
-I
 
 Fics. 151 and 152.—The telephone standard and compound forms of Fuller cell. The type
 shown in fig. 151, is especially adapted to long distance telephoning, and that shown in
@@ -4605,10 +3294,7 @@ the rod useless before the lower part is consumed.
 
 Fuller Bichromat2 Cell.—In the bichromate cells or the
 
-86 Primary Cells
-
-chromic acid cells, bichromate of soda, or bichromate of potas-
-sium, 1s used for the depolarizer, water and sulphuric acid
+chromic acid cells, bichromate of soda, or bichromate of potassium, 1s used for the depolarizer, water and sulphuric acid
 being added for attacking the zinc.
 
 The Fuller cell is of the two fluid type. <A pyramidal block
@@ -4627,8 +3313,7 @@ This type of cell has a pressure of 2.14 volts, and is suited
 to open circuit, or semi-closed circuit work. The directions
 for setting up a Fuller cell are as follows:
 
-1. To make the "electropoion"' fluid, mix together one gallon of sul-
-phuric acid and three gallons of water, and in a separate vessel,
+1. To make the "electropoion"' fluid, mix together one gallon of sulphuric acid and three gallons of water, and in a separate vessel,
 dissolve six pounds of bichromate of potash 1n two gallons of
 boiling water; then thoroughly mix together the two solutions.
 
@@ -4653,8 +3338,6 @@ so as to have the zinc always well amalgamated.
 7. To renew, clean all deposits from carbon plate and zinc, and set
 up with fresh solution.
 
-Primary Cells 8
-
 The Edison Cell.—This is a single fluid cell with a solid
 lepolarizer, as shown in figs. 153 and 177 and is well adapted
 or use on closed circuits.
@@ -4665,30 +3348,16 @@ lack oxide of copper plates are suspended from the cover of the
 
 Fig. 153.—Edison caustic soda cell with barrel
 shape jar and single plate element. The Edison
-cell is suitable for large stationary gas engine igni-
-tion, railroad: crossing signals, electroplating, fire
+cell is suitable for large stationary gas engine ignition, railroad: crossing signals, electroplating, fire
 
 'alarms, telephone circuits, etc.
 
-2 RE ae Nido oat ne ee 8
-ON a ae Ge km Ah GORA Ue ON le le BE ATE
-
-Re a ane
-
-Ss
-is
-
-Lt VORTEC :
-
-w by a light framework of copber, one end of which forms the posi-
-ve pole of the battery. A zinc plate is suspended on each side of
+w by a light framework of copber, one end of which forms the posive pole of the battery. A zinc plate is suspended on each side of
 1e copper oxide element and kept from coming in contact with the
 utter by means of vulcanite buttons.
 
 When the cell is in action, the water is decomposed, and the
 xygen thus liberated combines with the zinc and forms oxide
-
-88 Primary Cells
 
 of zinc, which combines with the potash to form a double salt
 of zinc and potash. The last combination dissolves as rapidly
@@ -4696,84 +3365,36 @@ as it 1s formed.
 
 The hydrogen liberated by the decomposition of the water
 reduces the copper oxide to pure metallic copper. It is highly
-important that the copper oxide plates be completely sub-
-merged in the solution of caustic potash, and that heavy
+important that the copper oxide plates be completely submerged in the solution of caustic potash, and that heavy
 paraffin oil be poured on top of the solution to the depth
 
-rie Sh a /}
-
-Ez ' = ae -
-
-: " : ae
-' ' el | Fale
-: oa ay nie
-Omran. Wes bari Be | TE fe eae |
+Omran. Wes bari Be | TE fe eae
 Pre Sn He Ny!
-H.Ba&kCaly fli |
-. ° = AT) er ae
-iyyy.t a tar
-py Cag Gave Wig oa
-a a carre Sh :
-' myn (00% . . : J
-on wi H u '
-agra , HP ye oh
-) ni oN
-aye ta he
-My ae iy" oe
-t 1 Ke feng : |
-| i '
-in | rr
-we av
-Pe Le
+
 opie Tart |
-i 7 as ae
-AF To nf
-: at
+
 ree Got
-' a \ yy :
-; wpe ae ;
-1 ve ' Niet AL
-2 ' i, 1 'Ie nF
-\
-Ay \
-" ' j mH I, aA
-eer oe
-We if ' A
-: raef' vey a
-uf
-1 ny boonyytt ;
-' ' ; ne
+
 eee Ni
-; :
+
 won
-nO
-: t Hee
-i
+
 gree
-'
 
 Fic. 154.—Bunsen cell. This is a two fluid cell and has a bar of carbon immersed in strong
 mitric acid contained in a porous cup. This cup is then placed in another vessel, containing
 dilute sulphuric acid, and immersed in the same liquid is a hollow cylindrical plate of zinc,
 which nearly surrounds the porous cup. The hydrogen starting at the zinc, traverses by
-composition and recomposition, the sulphuric acid; it then passes through the porous par-
-tition, and enters into chemical action with the nitric acid, so that none of it reaches the
+composition and recomposition, the sulphuric acid; it then passes through the porous partition, and enters into chemical action with the nitric acid, so that none of it reaches the
 carbon. Water is produced by this action, which in time dilutes the acid, and orange colored
 poisonous fumes of nitric oxide rise from the battery. If the nitric acid first be saturated
-with nitrate of ammonia, the acid will last longer and the fumes be prevented. Strong sul-
-phuric acid cannot be used in any battery; one part of sulphuric acid is generally added to
+with nitrate of ammonia, the acid will last longer and the fumes be prevented. Strong sulphuric acid cannot be used in any battery; one part of sulphuric acid is generally added to
 12 parts by weight, or 20 by volume, of water. Grove used a strip of platinum tnstead of
 carbon in his cell. A solution of bichromate of potassium is frequently substituted for the
 nitric acid in the porous cup, thereby avoiding disagreeable fumes. Bunsen's and Grove's
 cells produce powerful and constant currents, and are well adapted for experiments, but
 they require frequent attention, and are expensive, so that they are little used for work of
 long duration. The electromotive force of these cells is about 1.8 volts.
-
-—
-= Re oe = ie
-= 2. Se ee
-
-Primary Cells 89
 
 of about 14 of an inch to exclude the air. If oil be not used,
 the formation of creeping salts will reduce the life of the battery
@@ -4792,72 +3413,13 @@ poRUS CUP fers CARBON BAR
 
 ### SULPHURIC ACID
 
-eo 5
-? as ars
-
-. a ' ¢ P "
-
-¢ =i : ar
-
-i D ieteteeh ohh SV te A.
-
-SRS oy:
-PATO EL
-
-fe om
-
-fof an eo te gl
-op
-
 eee] pe
-Ne
-
-\ 4
-a2 XS
-avs *,
-a2 a ¥s
-
-ae c a
-
-r 4 o Of tn 4 tZy A
-°é RS pee cet i ey tr
-
-SUE 5 Khe
-
-a, | e 4 -
-
-tpl
-
-,
 
 sot
-S
 
-te
 Sty
 
-LVS a.
-Ste RET
-: oS ai?!
-ae
-. fx? she
-Crs
-fe oy)
-
-7v
-ee
-
 Toy
-
-e. a
-SHR .
-Pad 3, O
-
-es,
-
-!
-Meee Mh: SCH "eo *
-- RUAY Mert e
 
 eee FO
 
@@ -4873,8 +3435,6 @@ creeping up).
 
 The voltage of the Bunsen cell increases after setting up for about an
 hour, and the full effect is not attained until the acid soaks through the
-
-90 Primary Cells
 
 ### POISONOUS SULPHURIC
 
@@ -4895,11 +3455,7 @@ See 3 START HERE
 
 ### THE POROUS CUP
 
-". oe Bee e
-Se
-
 peasy
-ff ee at .
 
 WATER |S BUBBLES ABSORBED BY NITRIC ACID
 PRODUCED NO BUBBLES REACH THE CARBON
@@ -4907,13 +3463,8 @@ PRODUCED NO BUBBLES REACH THE CARBON
 Fic. 156.—Detail of Bunsen cell showing how the anti-polarizer arrangement works. See
 description fig. 155.
 
-Fia. 157.—Knott high 6 cell school plunge battery. Each cell is a unit in itself and will de-
-liver about two volts and a powerful current for a short time. The mounting is designed
-so that one or more cells, connected in series or parallel, may be used as desired. The il-
-lustration shows four cel's in use, the two not in use u ¢c suspended to the cross rod. By turn-
-ing the crank all of the cells can be raised at one time.
-
-Primary Cells 91
+Fia. 157.—Knott high 6 cell school plunge battery. Each cell is a unit in itself and will deliver about two volts and a powerful current for a short time. The mounting is designed
+so that one or more cells, connected in series or parallel, may be used as desired. The illustration shows four cel's in use, the two not in use u ¢c suspended to the cross rod. By turning the crank all of the cells can be raised at one time.
 
 porous cell. Carbons are not affected and last any length of time. The
 zinc is slowly consumed through the mercury coating.
@@ -4944,8 +3495,6 @@ the center and a carbon plate on each side.
 
 The two carbon plates are connected to the same terminal, thus forming
 
-92 Primary Cells
-
 a large positive surface, and the zinc plate to a terminal on the top of the
 brass rod to which it is attached. This rod slides through a hole in the
 lid so that the zinc plate can be lifted out of the electrolyte when the cell
@@ -4956,93 +3505,28 @@ single cell being 2 volts.
 
 Daniell Cell.—This is one of the best known and most widely
 
-### AMIMITELOEMA
-
-cy ee "%
-soy 2 o",
-=» B,
-
-au
-
-yesh SLE VM:
-ne eee ae
-aA
-
 eae
-Be RSA
 
-mb cane
-2% 29 ott, bk: -
 note
-RRs
 
-RRA
-, f *
-:
-
-ot ii of rs b
-
-aNS
-
-ay Hyry rey
 edt tity peg
 
-WPL LoL LoL La aap kM hh hddidkhekhhabdbeboks
-
-.
-N
-N
-N
-N
-N
-N
-N
-N
-N
-N
-\
-N
-.
-N
-N
-
-ZL
-
 Pelpdpapgb poe
-Me
-
-rTyy
-hy
-
-### AAAAAAARAANARAANAAAAAAAANARAAANAAAANANARARARANAAS ARAN
-
-### ANAND
 
 ALITMLAAAASOTMA EEE,
-OO DOOssassmassslsaslMl:
-i]
 
 be: PS) eae 1
-}
-S
-
-NS
-
-### WHMMMUUIA I
 
 Fre. 160.—Simple Daniell cell for closed circuit work. To maintain a constant current for an
 indefinite time, it is only necessary to maintain the supply of copper crystals and zinc.
 
-The cell as shown in the figure is easily made by following the direction given in the ac-
-companying text.
+The cell as shown in the figure is easily made by following the direction given in the accompanying text.
 
 used forms of primary cell. It is a double fluid cell, composed
 of an inner porous vessel coniaining an electrolyte of etther dilute
 
 sulphuric acid or dilute zinc sulphate solution, and an ouier vessel
 containing a saturated solution of copper sulphate.
-
-Primary Cells 93
 
 A zinc rod is placed in the inner electrolyte, and a thin plate
 of sheet copper in the outer electrolyte.
@@ -5057,8 +3541,7 @@ as follows:
 
 The.zinc dissolves in the dilute acid, thus producing zinc sulphate, and
 liberating hydrogen gas. The free hydrogen passes through the walls of
-the porous pot, but when it reaches the copper sulphate solution it dis-
-places some of the copper therefrom, and combines with this solution,
+the porous pot, but when it reaches the copper sulphate solution it displaces some of the copper therefrom, and combines with this solution,
 forming sulphuric acid. The copper, which is thus set free, is deposited
 on the surface of the copper plate. In this way polarization is avoided,
 and a practically constant current is obtained.
@@ -5067,8 +3550,7 @@ When the zinc sulphate solution is employed in place of dilute acid, a
 similar series of chemical reactions occur, except that the zinc is liberated
 instead of hydrogen:
 
-Daniell cells are used especially for electroplating, electro-
-typing and telegraphic work. 'The pressure of a single cell 1s
+Daniell cells are used especially for electroplating, electrotyping and telegraphic work. 'The pressure of a single cell 1s
 about 1.08 volt.
 
 Directions for Making a Daniell Cell.—The simple Daniell
@@ -5086,8 +3568,6 @@ The zinc is preferably of the Leclanche form, which will be found to be
 cleaner, more durable, and cheaper than a zinc sheet. The porous pot
 should be dipped in melted paraffin wax, both top and bottom, to
 
-94 Primary Cells
-
 prevent the solution mingling too freely and "'creeping."' A few crystals
 of copper sulphate are placed in the pot as shown.
 
@@ -5096,37 +3576,20 @@ added to the water—never the reverse. Zinc sulphate 1s sometimes
 used instead, as it reduces the wasteful consumption of the
 zinc, but it should be pure.
 
-' ;
-HH) it
-
 Fic. 161.—Daniell gravity
 cell, ''crow foot'' pattern.
 This is a two fluid cell in
 which gravity instead ofa
-porous cup is depended | |
+porous cup is depended |
 upon to keep the liquids MUTT Tress
 separate. The two solu- ii i: ii
 tions consist of copper i E i «| a
 sulphate and dilute sul- | A IMill Pe
-phuric acid, the elements Wy ly 3 ai |
+phuric acid, the elements Wy ly 3 ai
 being made of zinc and is : | : NA il i 7 i
-copper. eo Hic | hi E
 
-Ht 3 | i HN i
-
-iM
-iB
-
-\ wT gk ss ii HI att A Hitt
 'eee HA it il i i) i" | Hi THT
 
-| HH Hl
-| Ht! | HAA HI]
-ry Recall | HH Hl nA i
-\ ch asfHfii3h; itt
-
-fe *.
-sheet Nt °
 Habit set
 tes!)
 
@@ -5134,96 +3597,41 @@ tes!)
 
 hye
 
-tina ie
-
->
-
 With care the cell will last for weeks. When it weakens or "'runs down,'
 an addition of sulphuric acid to the outer jar and a few more crystals
 placed in the porous pot will put the cell in good condition.
 
-Primary Cells 95
-
 Gravity Cells.—In a two liquid cell, instead of employing a
 porous cell to keep the two liquids s2parate, it is possible, where
 
-=.
-@e seeses. 2222
-w= (OF theeee oo
-= 88 Rse tees ae
-
 Lad ——
-se
+
 +e eee eee
 
-+s a -;
-
-Sreras. eG es
 Serre wes eee still
 were
 
 freee =
-tee esse Sess : -«
-° Steere '*
-ad eeere- *r
-o e ® GAR SOO Ete Lees
 
 = Ses etee
-Fee eee te wececrescwcrcc cee cs1tt808ensecssaase
-seen ee Reece
 
 cuss. iD i Aa, We
 TUBE v C = 1 'ZINC
-| 'fe i, iN r Lh _
 
-'
 ill
-
-|
-
-|
-
-a
-i |
-
-h,
-
-3~G.SALT
 
 Fic. 162.—Partz acid a
 gravity cell. Inthis Ve
 form of cell, the el- Hut
-ectrolyte which sur-
-rounds the zinc is
+ectrolyte which surrounds the zinc is
 either magnesium
-sulphate or com-
-mon salt. The depo-
-larizer is a bichro-
-mate solution
-whichsurroundsthe #3 Af :
+sulphate or common salt. The depolarizer is a bichromate solution
+
 perforated carbon con S = i i ay 'im i HT
 plate located in the ii Bee i
 
-NN
-
-S) a i
-
-co é |
-| {
-tt + }
 Titigeh
-j } ee
-} : .
-| 1hitt af ese
-; } 3 *lee
-} | thihh Lee
-aba >
-j ! =—_=:
-Hi Wa =
-yi ' —
-|
 
-—————
 eecteeceseren':
 
 bottom of the jar. SS see ee
@@ -5240,11 +3648,8 @@ the crystals are introduced into the solution, near the bottom of the jar, throu
 glass tube shown, and slowly dissolve and diffuse over the surface of the carbon plate. When
 the cell current weakens a few tablespoonfuls of the salt introduced through the tube will
 restore the current to its normal value. The cell should remain undisturbed to prevent the
-solution mixing. Its voltage is from 1.9 to 2 volts, and the 6 in. X 8 in. size has an in-
-ternal resistance of about .5 ohm. Since the depolarizer is quite effective, the cell may be
+solution mixing. Its voltage is from 1.9 to 2 volts, and the 6 in. X 8 in. size has an internal resistance of about .5 ohm. Since the depolarizer is quite effective, the cell may be
 used on open or closed circuit work.
-
-96 Primary Cells
 
 one of the. liquids is.heavier than the other, to arrange that the
 heavier liquid shall form a stratum at the bottom of the cell,
@@ -5254,8 +3659,6 @@ liquid slowly diffusing upwards.
 
 Fics. 163 to 165.—Various zincs; fig. 163 crow foot; fig. 164 Lockwood; fig. 165 fire alarm.
 
-il
-
 Fias. 166 and 167.—Two forms of copper element: fig. 166, regular form for crowfoot cell;
 fig. 167, signal pan bottom copper.
 
@@ -5264,11 +3667,8 @@ same elements are used as in the ordinary Daniell cell, but the
 porous pot is dispensed with, the two solutions being separated
 by the action of gravity as explained in the preceding paragraph.
 
-Primary Cells 97
-
 The copper sulphate solution, being the heavier of the two, rests
-at the bottom of the battery jar, while the dilute sulphuric acid re-
-mains at the tob. To suit this arrangement the copper and zinc
+at the bottom of the battery jar, while the dilute sulphuric acid remains at the tob. To suit this arrangement the copper and zinc
 elements are located as shown, the copper elements being at the
 bottom, and the zinc element, shaped like a crow's foot (hence
 the name ''crow foot .cell'') 1s suspended at the top.
@@ -5282,19 +3682,8 @@ When a current 1s produced by a Daniell cell:
 3. The sulphuric acid remains unchanged in quantity;
 
 i He j '5 |e —« i oes
-' i n HABE: , a, ees
-
-i,t A: Vay ipo MM ' 2 SSeS:
-
-t ' i} f ' f i ' ay eae HI IH TWN £ SS SS SS
 
 moat , 2 ni t apis t SS
-i! t : ki "4 rh Lis h ; Balt! TH ah fin | TA
-
-il a ~ : oHAt
-
-Ni Wt | ti 'e ait 2 HH \\ ;
-weit a "ha z
 
 Frias. 168 to 170.—Various carbons; fig. 168 Cylindrical form; fig. 169 Calland star; fig. 170,
 wheel.
@@ -5309,11 +3698,7 @@ on the copper plate. This deposit of hydrogen lowers the voltage, hence
 care should be taken to maintain an adequate supply of copper sulphate.
 
 The voltage of a Daniell cell varies from about 1.07 volt to
-1.14 volt, according to the density of the copper sulphate solu-
-tion and the amount of zinc sulphate present in the dilute sul-
-phuric acid.
-
-98 Primary Cells
+1.14 volt, according to the density of the copper sulphate solution and the amount of zinc sulphate present in the dilute sulphuric acid.
 
 Points Relating to the Care of Cells.—To get the best results
 from primary cells, they should receive proper attention and
@@ -5337,20 +3722,15 @@ The terminals of each cell should be thoroughly cleansed and scraped
 bright so as to get good contact of the connecting wires and thus avoid
 extra resistance in the circuit.
 
-Primary Cells 99
-
-Separating the Elements.—Obviously the positive and neg-
-ative elements of a cell must not be in contact within the
+Separating the Elements.—Obviously the positive and negative elements of a cell must not be in contact within the
 exciting fluid; they should be separated by a space of 3% to %
-inch. In the case of cells without porous cups, periodic atten-
-tion must be given to ensure this condition being maintained.
+inch. In the case of cells without porous cups, periodic attention must be given to ensure this condition being maintained.
 
 Creeping.—As evaporation of the electrolyte takes place in
 a cell, it increases in strength, and crystals are left on the
 sides of the jar previously wetted by the solution, the action
 being very marked when the solution is a saturated one. The
-space between these crystals and the side of the jar acts as a num-
-ber of capillary tubes, and draws up more liquid, which itself
+space between these crystals and the side of the jar acts as a number of capillary tubes, and draws up more liquid, which itself
 evaporaies and deposits crystals above the former ones. 'Thus
 finally the film of crystals passes over the edge of the jar and
 forms on the outside, making a kind of syphon which draws
@@ -5377,41 +3757,31 @@ By others it is thought that amalgamating the zinc protects it from local
 action by causing a film of hydrogen gas to adhere to it. This theory is
 based on the fact that while no action takes place when amalgamated zinc
 
-100 Primary Cells
-
-\
-
 is placed in dilute sulphuric acid at ordinary atmospheric pressure, the
 creation of a vacuum above the liquid causes a rapid evolution of hydrogen,
 which, however, stops on the re-admission of the air.
 
-Amalgamating a zinc causes it to act as a somewhat more positive sub-
-stance than before, therefore the voltage of a cell containing amalgamated
+Amalgamating a zinc causes it to act as a somewhat more positive substance than before, therefore the voltage of a cell containing amalgamated
 
 Fia. 177.—Edison caustic soda cell with barrel shape jar and multiple plate element.
 
 zinc is slightly higher than that of a ce]l constructed with unamalgamated
 zinc.
 
-The addition of a very small amount of zinc to mercury causes the mer-
-cury to act as if it were zinc alone, arising perhaps from the amalgam
+The addition of a very small amount of zinc to mercury causes the mercury to act as if it were zinc alone, arising perhaps from the amalgam
 having the effect of bringing the zinc to the surface.
 
 So-called ''Dry'' Cells.—It is often necessary to use cells in
-
-Primary Cells 101
 
 places where there is considerable jarring or motion, as for
 automobile or marine ignition. The ordinary cell is not well
 adapted to this service on account of the liability of spilling the
 electrolyte, hence, the introduction of the so called dry cell.
 
-A dry cell 1s composed of two elements, usually zinc and car-
-bon, and a liquid electrolyte.
+A dry cell 1s composed of two elements, usually zinc and carbon, and a liquid electrolyte.
 
 A zinc cup closed at the bottom and open at the top forms the negative
-electrode; this is lined with several layers of blotting paper or other ab-
-sorbing material.
+electrode; this is lined with several layers of blotting paper or other absorbing material.
 
 The positive electrode consists of a carbon rod placed in the center of
 the cup; the space between is filled with carbon—ground coke and dioxide
@@ -5428,8 +3798,7 @@ a dry cell or the manner in which it works. In its usual form
 a dry cell consists of @ zinc can into which are packed certain
 active chemical materials which combine with the zinc to produce
 an electrical pressure or voltage. The voltage thus produced is
-the result of the chemicals used and 1s always the same regard-
-less of the size of the dry cell. A new dry cell has a pressure
+the result of the chemicals used and 1s always the same regardless of the size of the dry cell. A new dry cell has a pressure
 of about 1.5 volts, and this is true whether the dry cell bea
 very small one like a flash light battery or a large 6 in. dry cell.
 A dry cell is simply a package of electricity done up in convenient form.
@@ -5444,8 +3813,6 @@ is delivering one ampere for a period of one hour or one-half an ampere for
 a period of two hours, etc. If the number of ampere hours in a dry cell
 be known and also the rate at which this electricity was extracted from
 the cell, it would be a simple matter to find out how long the dry cell
-
-102 Primary Cells
 
 would last. To determine this, divide the ampere hour capacity of the dr}
 cell by the current which it is delivering in amperes, and the result is the
@@ -5465,30 +3832,24 @@ amperes if fresh. Don't buy adry cell without testing it yourself. In testing, d
 connection any longer than necessary to read the ammeter. If a dealer objects to cells being
 tested it is evidence that they are no good and that the dealer is dishonest.
 
-The amount of electricity actually stored in a dry cell depends pn-
-marily on the size of the cell and the skill and knowledge of the manu-
-facturer.
+The amount of electricity actually stored in a dry cell depends pnmarily on the size of the cell and the skill and knowledge of the manufacturer.
 
 The amount of electricity which can be obtained from a dry cell depends
 very largely on the rate at which the cell is discharged, that is, the amount
 
-Primary Cells 103
-
 of current which the battery is called upon to deliver. If the current be
-too small in proportion to the size of the cell, the time required to dis-
-charge it will be so great that the factor of natural depreciation, which
+too small in proportion to the size of the cell, the time required to discharge it will be so great that the factor of natural depreciation, which
 is characteristic of all dry cells, consumes a measurable proportion of
 the cell's capacity, leaving less than the full amount
 
-for useful service. _
+for useful service.
 
 On the other hand, if the current be too great for
 the size of cell, then the cell will be overloaded, and
 this, too, reduces its capacity.
 
 Between these two extremes is a certain current drain
-for each size of dry cell at which it will give practi-
-cally all the electricity originally stored in it by the
+for each size of dry cell at which it will give practically all the electricity originally stored in it by the
 manufacturer.
 
 This current drain is called the normal discharge rate
@@ -5497,8 +3858,7 @@ of the dry cell.
 The larger the cell, the larger its normal discharge
 rate and the-greater its capacity.
 
-Points Relating to Dry Cells.—The follow-
-ing instructions on the care and operation of
+Points Relating to Dry Cells.—The following instructions on the care and operation of
 dry cells should be carefully noted and fol-
 
 lowed to get the best
@@ -5519,10 +3879,7 @@ Fic. 180.—Burgess flash light battery and lamp tester. Zt contains sockets for
 lamps, with a flexible lead from each socket. Thus either a two cell battery, three cell battery
 or a Uni-Cel can be tested without changing the lamp. Care should be used not to test a
 three cell battery on a two cell lamp, as the lamp is apt to be burnt out. On the other hand,
-if a two cell battery be tested on a three cell lamp, the battery will appear to be weak. Uni-
-Cels should be tested only with a one and a half volt lamp.
-
-»
+if a two cell battery be tested on a three cell lamp, the battery will appear to be weak. UniCels should be tested only with a one and a half volt lamp.
 
 Fic.
 
@@ -5539,31 +3896,12 @@ down the battery.
 
 ### WEAK ARC
 
-'
-
-S—
-
 AN, q atti YY
-
-### WX WSS
-
-~~
-
-OT tae
 
 WY], STRONG ARC
 
-\\ .
-we
-ESN
-
-SS >
-
-| if)
-
 Wee Tel
 
-a
 aaa
 
 181 and 182.—Testing cell without ammeter. A weak arc indicates a run down cell,
@@ -5574,17 +3912,12 @@ not be relied upon in buying new cells.
 4. Dry cells will deteriorate when not in use, the internal resistance
 
 increasing from .1 ohm (when new) to about .50hmina year. The
-reason dry cells deteriorate is because the moisture evaporates. Freez-
-ing, exposure to heat, and vibration which loosens the sealing, causes
+reason dry cells deteriorate is because the moisture evaporates. Freezing, exposure to heat, and vibration which loosens the sealing, causes
 the evaporation.
 
 5. Weak cells can be strengthened somewhat by removing the paper
 jacket, punching the metal cup full of small holes, and then placing
 in a weak solution of sal-ammoniac, allowing the cells to absorb all they
-
-- Te ere eee ere ee ee ee
-
-Primary Cells 105
 
 will take up. This is only to be recommended in cases of emergency
 when they are hard to get.
@@ -5604,30 +3937,13 @@ the cell. A volt meter is not used in testing because, while the cells are
 not giving out current, their voltage remains practically the same, and
 
 SERIES (CONNECT— TO ie
-as
-ho i +f
 
 rari
-AU
 
 Fic. 183.—Diagram of a series battery connection: four cells are shown connected by this
 method. If the cell voltage be one and one-half volts, the pressure between the (+) and
 (—) terminals of the battery is equal to the product of the voltage of a single cell multiplied
 by the number of cells. For four cells it is equal to six volts.
-
-+
-
-mn >
-
-|
-J
-i
-|
-|
-
-:
-|
-|
 
 a cell that 1s very weak will show nearly full voltage. When no ammeter
 
@@ -5638,16 +3954,13 @@ of one of the terminal wires and snapping it across the binding post of
 the other terminal; the intensity of the arc produced will indicate
 the condition of the battery.
 
-Battery Connections.—There are three methods of connect-
-ing cells to form a battery; they may be connected:
+Battery Connections.—There are three methods of connecting cells to form a battery; they may be connected:
 
 1. In series;
 2. In parallel;
 
 NOTE—Do not patronize any dealer who objects to a customer testing a dry cell; he ts
 dishonest.
-
-106 Primary Cells
 
 3. In series parallel.
 
@@ -5667,13 +3980,6 @@ will give a total of six volts.
 PARALLEL (ok MULTIPLE)
 
 CONNECT = TO= AND Jeg: TO
-yp +
-ii)
-
-LS
-———————————
-
-ot
 
 Fia. 184.—-Diagram of a parallel or multiple connection. When connected in this manner the
 voltage of the battery is the same as that of a single cell, but the current is equal to the
@@ -5681,33 +3987,24 @@ amperage of a single ceal multiplied by the number of cells. Thus with 144 volt 
 dry cells, the combination or battery connected as shown would give 4X15 =60 amperes
 at a pressure of 11% volts.
 
-A parallel or multiple connection consists in con-
-necting the positive terminal of one cell with the positive
+A parallel or multiple connection consists in connecting the positive terminal of one cell with the positive
 terminal of another cell and the negative terminal of the
 first cell with the negative terminal of the second cell.
 
 A parallel connection adds the amperage of each cell; that is,
 
-Primary Cells 107
-
 the amperage of the battery will equal the sum of the amperage
 
 iof each cell.
 
-: For instance, connecting four cells of 25 amperes each in parallel will give
+For instance, connecting four cells of 25 amperes each in parallel will give
 a total of one hundred amperes when connected in parallel.
 
 A series parallel connection, fig. 185, consists of two
 series sets of cells connected in parallel.
 
 by To A 6 VOLTS Ro & 6 VOLTS Mito S 6 VOLTS
-» 25 AMPERES " » 25 AMPERES " » 50 AMPERES
-Aly pill ed
-
-"ay
-; re—7f ell ei Say
-
-( ee
+25 AMPERES " » 25 AMPERES " » 50 AMPERES
 
 Fig. 185.—Diagram of a series parallel connection. Two sets of cells are connected in series,
 and the two batteries thus formed, connected in parallel. The pressure equals the voltage
@@ -5718,37 +4015,18 @@ the other, current will flow (as in fig. 187) from the stronger through the weak
 pressure of all the cells thus becomes equal. This process therefore wastes some of the
 energy of the strong cells.
 
-.
-
-i
-
-= aac | Tk
-
 med
 
-.
-
 TWO WAY w/' Tam a #f PR
-
-Ae
-oi. | a | )
-R
 
 Fic. 186.—Proper use of series parallel connection. Do not use both sides at the same time.
 Alternate by means of a two way switch between L and R, so that one battery can recuperate ,
 while the other is being used. This is a good method for battery ignition.
 
-call a
-i. =
-
-en ee ee ee
-
-108 Primary Cells
-
 The voltage of a series parallel connection is equal to the voltage
 of one cell multiplied by the number of cells in one battery, and the
 amperage is equal to the amperage of one cell multiplied by the
-number of batteries. |
+number of batteries.
 
 In series parallel connections the voltage of each set of cells
 or battery must be equal, or the batteries will be weakened,
@@ -5760,30 +4038,16 @@ tain the same number of cells.
 unacanccoD §©9S1IX CELL BATTERY
 
 yOLTS —/ PRESSURE =
-inj 4)
-
-We ~~» & . Fj os 7 ut 'if :
-+ raga ao igre 4 to AA ma
-
-p| ~~ \\ a} t 7
-n ean @, Ki; Cw 4 om yea "Tit
-v) {| | 1)
-Ny : | Hh |
 
 CURRENT AT 3 VOLTS UNBALANCED
 PRESSURE DISCHARGING LARGER
 
 ### FOUR CELL BATTERY
 
-Fic. 187 -—Diagram to illustrate incorrect wiring. The current pressure of the six cell bat-
-tery being greater than that of the smaller unit, current will flow from the former through
+Fic. 187 -—Diagram to illustrate incorrect wiring. The current pressure of the six cell battery being greater than that of the smaller unit, current will flow from the former through
 the latter until the pressure of the six cells is equal to that of the four cells.
 
 Mara
-
-### SLEAKATOR
-
-|
 
 ae 1 [S| S| Eel ia = Frc. 188 —Cross section of twin
 
@@ -5792,32 +4056,16 @@ It differs from the round dry
 cell only in consiruction, the
 
 a oe Pat eel
-tags chistes ae pele 7
-A - m- ha ahaha
-tt Py Pett
-icy ee en i Ce id
-AN EE
-aw a a.
 
 ete.
-oe
-f fae a "em
+
 eee re
 
-plate form within the chem-
-ical mix, entirely encased in a
+plate form within the chemical mix, entirely encased in a
 heavy container, where it is
 
-' -
+BU eet Shee
 
-ae oa ee oe
-a i . ee cee on
-» BU eet Shee
-> * me rae
-Bs,
-
-~ ey ty,
-LY mere Sa ghiien Se
 Pe a ie one Nha a. +
 
 over its entire area and on
@@ -5828,22 +4076,9 @@ made into a can, but 1s in:
 
 subject to chemical action'
 
-Primary Cells 109
-
 ### INVERTED
 
 ### AT NECK
-
-a
-
-|
-
-Nees it! Ip
-——— J
-
-PSS "1 LD
-
-= ————— ——
 
 Fras. 189 and 190.—Two forms of Meidinger gravity cell in which no porous partition is
 employed, the copper sulphate and the zinc sulphate solutions being kept separated solely
@@ -5852,10 +4087,8 @@ put at the top. In each cell the copper plate G, is put inside a small inner gla
 so that the particles of zinc which may become detached from the zinc plate Z, shall fa'l
 clear of the copper plate and be prevented coming into contact with it. In the type cell,
 shown in fig. 189, the crystals of copper sulphate are in a glass tube D, with only a small
-hole at the bottom; while in the type shown in fig. 190, the crystals are contained in an in-
-verted flask open at the neck. Jn both types, contact is made with the copper plate by an
-insulated copper wire C. The zinc plate Z', which isin the form of a cylinder, is sup-
-ported on a shoulder B, formed by a contraction of the outer glass vessel A.- |
+hole at the bottom; while in the type shown in fig. 190, the crystals are contained in an inverted flask open at the neck. Jn both types, contact is made with the copper plate by an
+insulated copper wire C. The zinc plate Z', which isin the form of a cylinder, is supported on a shoulder B, formed by a contraction of the outer glass vessel A.-
 
 Fig. 187 shows an incorrect method of making a series parallel
 connection. If the circuit be open, the six cells, on account
@@ -5868,8 +4101,6 @@ corrected by placing a two-way switch in the circuit at the
 junction of the two negative terminals so that only one battery
 can be used at a time, as in fig. 186.
 
-m™ GQ KR —
-
 What is the difference between a battery and a cell?
 How are cells classified?
 
@@ -5878,7 +4109,7 @@ How are cells classified?
 
 fluid; to the end of the metal plates?
 
-_ Describe the action of a cell.
+Describe the action of a cell.
 ._ Why is the polarity of an element different from
 
 that of its terminal?
@@ -5892,42 +4123,8 @@ connected?
 . What governs the rate of flow of a cell?
 . What are the effects of polarization?
 
-11.
-12.
-
 Give some methods of depolarizing.
 What is a depolarizer; depolarizer bag?
-
-13.
-14.
-
-15.
-16.
-17.
-18.
-
-19.
-20.
-
-Dh
-27.
-23.
-24.
-
-2D,
-26.
-
-ve
-28.
-29.
-30.
-
-Ot
-32.
-
-33.
-
-Primary Cells 111
 
 State Volta's contact law.
 
@@ -5975,8 +4172,6 @@ Describe the construction and operation of a so-
 called dry cell.
 Give eight points relating to dry cells.
 
-112 Primary Cells
-
 34. In the care of batteries what is very essential to
 obtain good results?
 
@@ -5989,13 +4184,10 @@ obtain good results?
 39. Describe, a, series; b, parallel; c, series parallel
 connection.
 
-40. What voltage and current is obtained by the vari-
-ous connections?
+40. What voltage and current is obtained by the various connections?
 
 41. Which form of connection is objectionable?
 42. Give battery directions for the various cells.
-
-Conductors and Insulators 113
 
 ## CHAPTER 5
 
@@ -6017,27 +4209,22 @@ conductors, and those in which it does not move freely are called
 insulators. |
 
 There is, however, no substance so good a conductor as to be devoid
-of resistance, and no substance of such high resistance as to be a non-
-conductor.
+of resistance, and no substance of such high resistance as to be a nonconductor.
 
 Mention should be made here of the misuse.of the word non-conductors
 the so-called '"'non-conductors'' are properly termed insulators.
 
 *NOTE.—The discovery of this property of matter is due to Stephen Gray, who, in 1729,
 found that a cork, inserted into the end of a rubbed glass tube, and even a rod of wood stuck
-into the cork, possessed the power of attracting light bodies. He found, similarly, that metal-
-lic wire and pack thread conducted electricity, while silk did not. Gray even succeeded in
+into the cork, possessed the power of attracting light bodies. He found, similarly, that metallic wire and pack thread conducted electricity, while silk did not. Gray even succeeded in
 transmitting a charge of electricity through a hempen thread over 700 feet long, suspended on
 silken loops. A little later, Du Fay succeeded in sending electricity to no less a distance than
 1,256 feet through a moistened thread, thus proving the conducting power of moisture. From
 that time the classification of bodies into conductors and insulators has been observed.
 
-114 Conductors and Insulators
-
 The bodies named in the following series possess conducting
 power in different degrees in the order 1n which they stand, the
-most efficient conductor being first, and the most efficient insu-
-lator being last in the list.
+most efficient conductor being first, and the most efficient insulator being last in the list.
 
 Table of Conductors and Insulators
 
@@ -6057,29 +4244,25 @@ Brass Sea water Cotton Silk
 
 Platinum Saline solutions Mahogany Sealing wax
 
-Iron Metallic ores Pine Gutta percha |
+Iron Metallic ores Pine Gutta percha
 
 Nickel Living vegetable Rosewood Ebonite
 
-Tin substances Lignum Vite Mica |
+Tin substances Lignum Vite Mica
 
 Lead Moist earth Teak Glass
 
-Marble Dry air :
+Marble Dry air
 
-|
-|
-
-The earth is a good conductor; much difficulty is frequently |
+The earth is a good conductor; much difficulty is frequently
 experienced by the wires making contact with some substance
 that will conduct the electricity to the earth. This is called
 
 "grounding." |
-|
 
-Mode of Transmission.—The exact nature of electricity is |
-not known, yet the laws governing its action, under various con- |
-ditions are well understood, just as the laws of gravitation are |
+Mode of Transmission.—The exact nature of electricity is
+not known, yet the laws governing its action, under various con-
+ditions are well understood, just as the laws of gravitation are
 known, although the constitution of gravity cannot be defined.
 
 Electricity, though not a substance, can be associated with matter, and —
@@ -6090,8 +4273,6 @@ through a conductor. The expression flowing does not really mean that
 NOTE .—Copper is pre-eminently the metal used for electric conduction, being among
 the best conductors, it is excelled by one or more of the other metals, but no other approaches
 it in the average of all qualities.
-
-Conductors and Insulators 115
 
 there is an actual movement in the wire, similar to the flow of water in
 a pipe, but is a convenient expression for the phenomena involved.
@@ -6120,43 +4301,32 @@ conductor will be observed as long as its transverse section 1s so
 considerable as to leave sufficient space for the free passage of
 the current.
 
-116 Conductors and Insulators
-
 If this thickness be diminished,
-or the quantity of electricity pass-
-ing over it be augmented, or, in
-general, if the ratio of the electri-
-city to the magnitude of the space
-afforded toit be increased, the con-
-ductor will be found to undergo an
+or the quantity of electricity passing over it be augmented, or, in
+general, if the ratio of the electricity to the magnitude of the space
+afforded toit be increased, the conductor will be found to undergo an
 elevation of temperature, which
-will be greater, thegreater thequan-
-tity of the electricity and the less
+will be greater, thegreater thequantity of the electricity and the less
 the space supplied for its passage.
 
-These heat effects are mani-
-fested in different degrees in differ-
-ent metals, according to their
+These heat effects are manifested in different degrees in different metals, according to their
 varying conducting powers.
 
 The poorest conductors, such as
 platinum and iron, suffer much
 greater changes of temperature by
-the same charge than the best con-
-ductors, such as gold and copper.
+the same charge than the best conductors, such as gold and copper.
 
 The charge of electricity, which
 only elevates the temperature of
 one conductor a small amount, will
-sometimes render another incan-
-descent, and will vaporize a third.
+sometimes render another incandescent, and will vaporize a third.
 
 Any width 1% in. to 36 ins.
 
 Colors: yellow or black. Cut: bias, without
 
-NOTE.—The question of tempera-
-ture Lears an important part in all tests and
+NOTE.—The question of temperature Lears an important part in all tests and
 calculations of electrical conductors, as the
 resistance varies directly with temperature.
 
@@ -6167,12 +4337,10 @@ Fics. 192 and 193.—Acme bias tape. Fig. 192, sewed bias; fig. 193, seamless bi
 —< . The resistance of copper wire increases about
 > twcnty-three one-hundredths and that of iron
 = wire about twenty-eight one-hundredths per
-° cent. for each additional degree F. The follow-
-c ing average values of the temperature co-
-efficient have been found experimentally, at
+° cent. for each additional degree F. The followc ing average values of the temperature coefficient have been found experimentally, at
 &\ 32° Fahr.
 = Metals F. ahrenhett
-\S Aluminum .QO22
+
 rt Copper, annealed .0023
 te Gold 0021
 S Mercury .0004
@@ -6185,31 +4353,7 @@ Zinc .0023
 
 Conductors and Insulators
 
->
-
 ed) A a ' +4 ; | a = YD
-s§ £€ Segssseaeaeg 83 e885 83 B28.
-mS 3s sores, 2k eof "5 oOo DA Har
-° mm DMD OD HN DW a ©, sy SO: Age ) om YU —= CC
-wa 4 & BOR SSS ES eS ese agg & S § oe YB
-tt om ep) wo PoSeugst = ~ OW eo eed
-S86 8 Bg Ses eeZSSePBeesc HER se
-eae a GY 0 Fs Oh H#oo0 ® & Oo VO aS Say. GS
-Cm o a & = Se PSePahPesy SH 6... B O Qe
-a DS ae. es 'mM omoOoU AIO & oe ae a: & O73
-= 5 < Cam eR P ams So ; _ om A- =
-a" ois ee SE Say See B ye ae bo Hy DN Ur
-e e =. qd) ~ dom e e re ° qa) Y
-SEP HB N EES SoS PEER PARSE BOT GTE
-28 28 SSS ASCEERFS SEB 3B nm 8a &S&
-
-'S}UsWoIINbDeI o8eiJOA 94} AQ PouUIULIOJOp SI D1IquIed Jo sde1M jo Joqumu IU L
-"BUO] "SUI OF 'SUI Z{[ 0} %{ WOIJ SIOJIWILIP apIsu, "HORI IO MO]J9A UI ope "payeq od Yyovs pue ysiuseaA ZujeNsut amM
-sWIDV JO S}¥OD aIdI}[NUI YIM paj}einjes ZUIASI]S UO}}0D papreiq ATasopD 'AAvay & pue DIqUIeD PZYSIUILVA VUIDY JO UOIJEUIqUIOD &
-SI SUIGN} SIU], "OOO'OS 01 dn soZeioa pues 0} spew aq ues A][VI11}3a]9 PUL UOISLIqe Sj}SISeI pue ZUOI}sS SI HI AyPeotueYDapy
-'saltlm AABoY SUI}eINsUI JOJ puke 'Arepuoses pue Areullld 'spes] JoWIOjsueI} JO} pousIsap Sulqn} s3eOA YSIY UIY— PET "DIY
-
-118 Conductors and Insulators
 
 Permanence is the most important quality, and is the one least easily
 attained. The power of resisting breakdown is a complex quality, for it
@@ -6218,39 +4362,14 @@ goodness, and to a certain extent on the insulation resistance. It cannot
 be easily determined by a simple laboratory test, but must be found by
 experience of actual service conditions.
 
-f
-
 say
-
-es
-
-Wi
-
-Ny
-
-i.
-eo ceae
-
-i
-
-' ,
 
 Fras. 195 to 197.—Porcelain insulators.
 insulators.
 
-=
-
-a F AE "ACD
-
-### TS HE
-
 Fig. 198.—Two wire porcelain cleat.
 
-Conductors and Insulators 119
-
-Impregnating Compounds.—These are used for the treat-
-ment of fibrous materials. They increase the insulating prop-
-erties of the fibrous materials, render them moisture proof and
+Impregnating Compounds.—These are used for the treatment of fibrous materials. They increase the insulating properties of the fibrous materials, render them moisture proof and
 abie to withstand the effect of heat with less rapid deterioration.
 
 When wires or cables are to be used under water, they must be made
@@ -6259,14 +4378,11 @@ and thus injuring the insulation.
 
 Water as a Conductor.—Water, whether in the liquid or
 vaporous form, is a conductor, though of an order greatly
-inferior to the metals. This fact is of great importance in elec-
-trical phenomena. The atmosphere contains, suspended in it,
-always more or less aqueous vapor, the presence of which im-
-pairs its insulating property.
+inferior to the metals. This fact is of great importance in electrical phenomena. The atmosphere contains, suspended in it,
+always more or less aqueous vapor, the presence of which impairs its insulating property.
 
 The best insulators become less efficient if their surface be moist, the
-electricity passing by the conducting power of the moisture. This circum-
-stance also shows why it is necessary to dry previously the bodies on
+electricity passing by the conducting power of the moisture. This circumstance also shows why it is necessary to dry previously the bodies on
 which it is desired to develop electricity by friction.
 
 1. What is the difference between a conductor and an
@@ -6279,24 +4395,18 @@ c, partial conductors; d, insulators.
 
 4. What is understood by the term grounding?
 
-5. What metal is pre-eminently the metal for con-
-ductors?
+5. What metal is pre-eminently the metal for conductors?
 
 6. What is understood by the expression tail S
 as applied to the current?
 
-120 Conductors and Insulators
-
 7. What is the effect of heat on conductors?
 8. Describe the heating effect of the current.
 
-9. What properties are to be desired in a good insu-
-lating material?
+9. What properties are to be desired in a good insulating material?
 
 10. What is an impregnating compound and what is
 its use?
-
-Resistance and Conductivity 121
 
 ## CHAPTER 6 il
 
@@ -6317,27 +4427,21 @@ several quantities is measured by comparison with ascertained
 standards, the particular methods of comparison varying,
 however, to meet the circumstances of the case.
 
-Ohm's law states that the strength of a current due to an elec-
-tric pressure falls off in proportion as the resistance in the circutt
+Ohm's law states that the strength of a current due to an electric pressure falls off in proportion as the resistance in the circutt
 imcreases.
-
-122 Resistance and Conductivity
 
 It is therefore possible to compare two resistances with one another by
 finding out in what proportion each will cause the current of a constant
-battery to fall off. |
+battery to fall off.
 
 Silver is taken as the standard, with the percentage of 100, and
 the conductivity of all other metals 1s expressed in hundredths of
 the conductivity of silver.
 
-Conductivity of Metals and Liquids.—The metals in gen-
-eral, conduct well, hence their resistance is small, but metal
-
-eT
+Conductivity of Metals and Liquids.—The metals in general, conduct well, hence their resistance is small, but metal
 
 sowcarens
-——e- ~~ ow
+
 'woes
 
 oosedae! 5532
@@ -6349,7 +4453,7 @@ tae MT is
 = LIFT + HEAD IN LBS.
 
 LOW
-PRESIURE
+
 iinre
 
 ### VOLTMETER READS
@@ -6358,18 +4462,11 @@ iinre
 
 BETWEEN L. AND F
 
-TE LMM MM r
-
-—_— = «= @ 20 «a Gee ee em ae ew ee we ew ew Ewe ES OP?
-ee fF eweweewerw @eeweeereewereeae @Q wy weer wre FF VW, fF 2F7 F 7° 2°"
-— oe we i ewe iii ie es sw es ee eee ese ese wr SE ese Oe
-
 Fics. 200 and 201.—Hydraulic analogy illustrating pressure. When the pump its operated
-the water is forced up from a low level (low pressure) to a high level producing high pres-
-sure; whence from the end of the pipe it falls back by gravity to the low level. Similarly,
+the water is forced up from a low level (low pressure) to a high level producing high pressure; whence from the end of the pipe it falls back by gravity to the low level. Similarly,
 in fig. 201, the dynamo forces up electricity {rom a low pressure to a high pressure by inter-
 
-posing a resistance in the circuit passing through the resistance its pressure falls to low |
+posing a resistance in the circuit passing through the resistance its pressure falls to low
 
 pressure. Zhe author objects to the term 'potential'? commonly used in place of pressure
 
@@ -6389,8 +4486,6 @@ wolume of the current; 13 dependent, not only upon the pres3ure applied, but als
 friction (which may be expressed as resistance) which the pipe offers to the flow in the case of
 water.
 
-Resistance and Conductivity 123
-
 The liquids in the battery do not conduct nearly so well as the metals,
 and different liquids have different resistances. Pure water will hardly
 conduct at all, unless the voltage be very high.
@@ -6400,8 +4495,7 @@ dilute acids, though strong sulphuric acid is a bad conductor. Gases
 are bad conductors.
 
 Effect of Heat.—Another very important fact concerning
-the resistance of conductors is that the resistance in general in-
-creases with the temperature.
+the resistance of conductors is that the resistance in general increases with the temperature.
 
 ### RESISTANCE WIRE
 
@@ -6428,8 +4522,6 @@ possessed at zero, while silver loses but 23 per cent.
 Laws of Electrical Resistance.—Resistances in a circuit
 may be of two kinds:
 
-124 Resistance and Conductivity
-
 1. Resistance of the conductors;
 2. Resistance due to imperfect contact.
 The latter kind of resistance is affected by pressure, for when the sur-
@@ -6439,19 +4531,13 @@ passes more freely from one conductor to the other.
 
 The following are the laws of the resistance of conductors:
 
-|
-
 y CENTRIFUGAL
-
-Fa Yh
 
 Frias. 204 and 205.—Hydraulic analogy of conductivity. The direct connected centrifugal pump
 set (fig. 204) with its small engine and large pump suggests the pumping of a large volume
-of water against low pressure—easy flow. Similarly, in fig. 205, a dynamo having an ex-
-ternal circuit of very large copper wires "'pumps'"' the electricity against very little resist~-
+of water against low pressure—easy flow. Similarly, in fig. 205, a dynamo having an external circuit of very large copper wires "'pumps'"' the electricity against very little resist~-
 ance, thus a volt meter connected as shown would show very little drop indicating high
-conductivity. Now if resistance wires were substituted for the copper wires, the volt-
-meter would show a large drop indicating low conductivity. |
+conductivity. Now if resistance wires were substituted for the copper wires, the voltmeter would show a large drop indicating low conductivity.
 
 1. The resistance of a conducting wire is proportional to tts
 length.
@@ -6463,8 +4549,6 @@ miles will be 5013 =650 ohms.
 
 = RS a on fn
 
-Resistance and Conductivity 125
-
 to the area of its cross section, and therefore in the usual
 round wires 7s inversely proportional to the square of its
 diameter.
@@ -6472,20 +4556,15 @@ diameter.
 Ordinary telegraph wire is about lth of an inch thick; a wire twice
 as thick would conduct four times as well, having four times the area of
 
-cross section; hence an equal length of it would have only 144th the re-
-sistance.
+cross section; hence an equal length of it would have only 144th the resistance.
 
-3. The resistance of a conducting wire of given length and thick-
-ness depends upon the material of which it is made—
+3. The resistance of a conducting wire of given length and thickness depends upon the material of which it is made—
 that is, upon the specific resistance of the material.
 
-Conductance and Conductivity.—It is sometimes conve-
-nient, if not necessary, to make use of the conductance, or a cir-
-cuit, and the conductivity of a material.
+Conductance and Conductivity.—It is sometimes convenient, if not necessary, to make use of the conductance, or a circuit, and the conductivity of a material.
 
 The conductance of a circuit is the reciprocal of its resistance. The
-conductivity of a material 1s the ratio, expressed in per cent, of its con-
-ducting power to the conducting power of a standard, often pure copper,
+conductivity of a material 1s the ratio, expressed in per cent, of its conducting power to the conducting power of a standard, often pure copper,
 whose conductivity is called 1, or 100 per cent.
 
 Example.—A circuit consists of a battery whose resistance is 2 ohms
@@ -6499,13 +4578,10 @@ resistance = 2+10+15=27 ohms.
 
 Therefore conductance = 5), = .037.
 
-Specific Conductivity.—The figure which indicates the rela-
-tion between one substance and another as to their capacity
+Specific Conductivity.—The figure which indicates the relation between one substance and another as to their capacity
 to conduct electricity is called specific or relative conductivity.
 Taking the specific conductivity of silver as 100, that of pure
 copper 1s 96.
-
-126 Resistance and Conductivity
 
 The specific resistance of a substance is the reverse of its
 relative conductivity. The specific resistance of-a metal is
@@ -6517,12 +4593,8 @@ The following table gives the data for a few metals:
 Specific resistance Specific
 
 Substance in microhms conductivity
-ne) 14 3) Gee aa 1.609 100
-CODDE! 5a eiviind.d dx Gee & oes oh aks 1.642 96
 
 GOI eco. oo eee ee an 6 ec rene Se 2.154 74
-
-TOM (S000) eae et Sa ees 9.827 16
 
 CAG. a prticice foe eae bask a eee ee ae 19 .847 8
 German silver..............-...-02004 21.470 7.5
@@ -6530,7 +4602,6 @@ Mercury (liquid).................... 96.146 1.6
 
 The specific resistance of copper is therefore:
 
-1.642 . :
 1,000,000 ohms, or 1.642 microhms.
 
 Divided Circuits.—If a circuit be divided, as in fig. 206, into
@@ -6538,8 +4609,7 @@ two branches at A, uniting again at B, the current will also
 be divided, part flowing through one branch and part through
 the other.
 
-The relative strength of current 1n the two branches will be pro-
-portional to their conductivities.
+The relative strength of current 1n the two branches will be proportional to their conductivities.
 
 This law will hold good for any number of branch resistances
 connected between A and B. Conductivity is, as shown before,
@@ -6555,8 +4625,6 @@ a megohm equals 1,000,000 ohms, a microhm equals of an ohm.
 
 1,000,000
 
-Resistance and Conductivity 127
-
 or, as 2:1, or, in other words, 24 of the total current will pass through R,
 
 and 14 through R'. The joint resistance of the two branches between
@@ -6564,12 +4632,10 @@ and 14 through R'. The joint resistance of the two branches between
 A and B, will be less than the resistance of either branch singly, because
 
 the current has increased facilities for travel. In fact, the joint con-
-' ductivity will be the sum of the two separate conductivities.
+ductivity will be the sum of the two separate conductivities.
 
 Taking again the resistance of R=10 ohms and R'=20 ohms, the joint
 conductivity 1s
-Et
-1020 20
 
 and the joint resistance is equal to the reciprocal* of a or 644
 
@@ -6580,8 +4646,6 @@ alike. This simplifies the calculations considerably. Take, for
 instance, two branches of 100 ohms resistance each and find the
 joint resistance.
 
-1 l 2 . 100
-
 0 ot] 00 100" the reciprocal is 5 50 ohms, or, in other
 words, the joint resistance is one-half of the resistance of a single branch,
 and each branch, of course, will carry one-half of the total current in
@@ -6590,10 +4654,8 @@ amperes.
 ' Solution:
 
 *NOTE .—The reciprocal of a number is equal to 1 ~ the number; for instance the
-reci (ahs a, oe ee 6 2
-. 2) "207 3 = 0%
 
-128 Resistance and Conductivity
+. 2) "207 3 = 0%
 
 With three branches of equal resistance, the joint resistance will be 1s;
 with four branches 14; with 100 branches fon of the resistance of a single
@@ -6603,26 +4665,20 @@ If, for instance, the resistance of an incandescent lamp hot
 be 180 ohms, the joint resistance of 100 such lamps connected
 in parallel is
 
-ye ie =], e
 100 8 ohms
-
-= eS ee es ES Ss es es ae ae ee ee as ew er OT esses — mele le
 
 Fic. 207.—Hydraulic analogy for divided circuits. Jn the system of pipes shown, water flows
 from LA, to RF, through the six vertical pipes 1 to 6, the greatest amount going through
 the one which otfers the least resistance. Ir pipes 1 to 6, all have the same dimensions,
 equal quantities of water will flow through them. It follows that the reststance whtch the
 water encounters diminishes with the increase tn the number of ptpes between LA, and RF.
-The electrical circuit presents the same conditions: the greater the number of parallel con-
-nections (corresponding to the pipes 1 to 6) the less is the resistance encountered by. the
+The electrical circuit presents the same conditions: the greater the number of parallel connections (corresponding to the pipes 1 to 6) the less is the resistance encountered by. the
 current.
 
 If the voltage of the system is to be, say 110 volts,
 then, according to Ohm's law, the current for 100 lamps is:
 
 78 =61.11 amperes.
-
-Resistance and Conductivity 129
 
 giving for each lamp a current of
 
@@ -6635,14 +4691,9 @@ Multiply the two resistances and divide the product by their sum.
 
 Written as a formula:
 
-RXR'
-R+R'
-
 Again, assuming that R=10 ohms and R'=20 ohms:
 
 Joint resistance 10X20 _ 200 = 62% ohms.
-
-10+20 30
 
 Joint resistance =
 
@@ -6653,8 +4704,6 @@ Example.—A current of 42 amperes flows through three conductors in
 parallel of 5, 10 and 20 ohms resistance respectively. Find the current
 in each conductor.
 
-1 1 1 7
-S ion.— d = ——ft—t4— =_,
 olution.—Joint Conductance F + 10 + 0 = 20
 Supposing the current to be divided into 7 parts, 4 of these parts would
 flow in the first conductor 2 in the second and 1 in the third.
@@ -6670,11 +4719,6 @@ The whole current is 42 amperes.
 Current in first conductor = 24 amperes.
 Ans.
 66 66 third 66 a 6 66
-
-Oo ON DN
-
-12.
-LS.
 
 Resistance and Conductivity
 
@@ -6707,8 +4751,6 @@ What is a divided circuit?
 What governs the relative strength of current in the
 branches of a divided circuit?
 
-Electrical and Mechanical Energy 131
-
 ## CHAPTER 7
 
 Electrical and Mechanical
@@ -6723,8 +4765,7 @@ Prof. Fessenden truly remarks there are two independent properties of
 matter—gravity and inertia—and these give two ways of defining force
 and energy.
 
-It should always be remembered that electricity 1s some-
-thing real, although not easily defined. While it is not
+It should always be remembered that electricity 1s something real, although not easily defined. While it is not
 matter and is also not energy, yet under proper conditions (it
 having the power of doing work) it is convenient to speak of
 its performances as electric energy. The following questions
@@ -6738,45 +4779,36 @@ Ans. Energy is the capacity for doing work.
 Steam under pressure is an example, a spring bent ready to be released
 is another form, again, water stored in an elevated tank has capacity
 
-132 Electrical and Mechanical Energy
-
-for doing work. These examples illustrate potential energy, as distin-
-guished from kinetic energy. Potential energy may be defined as energy
+for doing work. These examples illustrate potential energy, as distinguished from kinetic energy. Potential energy may be defined as energy
 due to position, and kinetic energy, as energy due to momentum.
 
 #### Ques. What is matter?
 
-Ans. Matter is anything occupying-space, and which pre-
-vents other matter occupying the same space at the same time.
+Ans. Matter is anything occupying-space, and which prevents other matter occupying the same space at the same time.
 
 Kafsists
-
-Ulan tie Wy
 
 ### DYNAMO STORAGE BATTERY
 
 Fias. 203 and 209.—Potential, and kinetic energy. In fig. 208, the water stored in the elevated
 tank possesses energy by virtue of its position; being higher than the water wheel, the water
 will flow by gravity through the pipe and do work on the wheel. Thus, the potential energy
-of the water at rest in the tank, is, when it flows through the pipe converted into kinetic |
-energy which is spent on the wheel. Fig. 209 represents a railway car with axle lighting sys- |
-tem. If the car be set in motion and then no further power be applied, its momentum or |
-kinetic energy will drive the dynamo which in turn will charge the storage battery, and |
+of the water at rest in the tank, is, when it flows through the pipe converted into kinetic
+energy which is spent on the wheel. Fig. 209 represents a railway car with axle lighting sys-
+tem. If the car be set in motion and then no further power be applied, its momentum or
+kinetic energy will drive the dynamo which in turn will charge the storage battery, and
 acting like a brake will gradually bring the car to rest. During this operation, the kinetic
-energy, Originally possessed by the moving car, is absorbed by the dynamo (neglecting fric-
-tion) and delivered to the battery as electrical energy which may be used in lighting the car
+energy, Originally possessed by the moving car, is absorbed by the dynamo (neglecting friction) and delivered to the battery as electrical energy which may be used in lighting the car
 
 #### Ques. What name is given the smallest quantity of matter
 
-which can exist? |
+which can exist?
 
 Ans. The atom.
 
-An atom means that which cannot be cut, scratched, or changed in !
-form and that cannot be affected by heat or cold or any known force; |
-although inconceivably small, atoms possess a definite size and mass. |
-
-Electrical and Mechanical Energy 133
+An atom means that which cannot be cut, scratched, or changed in
+form and that cannot be affected by heat or cold or any known force;
+although inconceivably small, atoms possess a definite size and mass.
 
 #### Ques. What is a molecule?
 
@@ -6784,8 +4816,7 @@ Ans. A molecule is composed of two or more atoms.
 
 #### Ques. What is the behavior of these minute bodies?
 
-Ans. They are perpetually in motion, vibrating with in-
-credible velocities.
+Ans. They are perpetually in motion, vibrating with incredible velocities.
 
 #### Ques. Why at this point are definitions of energy and of
 
@@ -6802,14 +4833,11 @@ Ans. The ultimate nature of neither is known. There are,
 however, some differences. To sustain a current of electricity
 requires energy. To sustain magnetism requires no energy.
 A current of electricity is always accompanied by a magnetic
-field of peculiar form. Magnetism alone cannot produce elec-
-tricity. Electricity can do work; but magnetism cannot in the
+field of peculiar form. Magnetism alone cannot produce electricity. Electricity can do work; but magnetism cannot in the
 same sense—and alike with electricity, neither can it exist
 without contact with matter.
 
-#### Ques. How is energy transmitted from one part of a ma-
-
-terial substance to another?
+#### Ques. How is energy transmitted from one part of a material substance to another?
 
 Ans. Gradually and successively. It requires a medium
 and also time.
@@ -6818,23 +4846,12 @@ and also time.
 
 of electricity?
 
-134 Electrical and Mechanical Energy
-
 Ans. It is purely that of transmission. It corresponds to
-ropes, shafts and fluids as a medium of conveying and trans-
-lating power, light, or heat.
+ropes, shafts and fluids as a medium of conveying and translating power, light, or heat.
 
 #### Ques. What is work?
 
-Ans. Work is the overcoming of resistance through a cer-
-tain distance.
-
-oes SS
-
-5.8 FT,
-
-Ae lates, Yes
-,O : . a Tbs
+Ans. Work is the overcoming of resistance through a certain distance.
 
 Fria. 210.—The fusion ot ice, illustrating the work done when a pound of tce at 32° Fahr.
 ts melted or converted tnto water at the same temperature. The latent heat of fusion being
@@ -6852,8 +4869,6 @@ pressure.
 #### Ques. How is work measured?
 
 Ans. In foot pounds.
-
-Electrical and Mechanical Energy 135
 
 #### Ques. What is a foot pound?
 
@@ -6876,8 +4891,6 @@ is one volt.
 The Ampere-Hour.—A gallon of water may be drawn from
 a hydrant in a minute, or in an hour; it 1s still one gallon. So
 
-136 Electrical and Mechanical Energy
-
 in electricity, a given amount of the current, say one coulomb,
 may be obtained in a second or in an hour.
 
@@ -6886,7 +4899,6 @@ The ampere is the unit rate of flow.
 What is called the electric current is simply the relation of
 
 any quantity of electricity passed to the time it 1s passing; that
-is
 
 quantity in coulombs = current in amperes X time 1n seconds,
 or simply
@@ -6902,52 +4914,12 @@ coulomb =ampere second.
 ### ONE HOUR
 
 rr eee
-MT
-yee yy a Tt |
-
-### UO GS
-
-f
-
-Yilinia g
-
-ih
-
-Up
-!
-
-\
-
-\
-
-i
-
-WY
-if
 
 Pye
 
 Mau
-|
+
 polinta
-ot.
-vr
-\\
-
-UU
-
-|!
-
-NS
-
-Wl
-
-\
-
-M
-\
-
-en
 
 Fic. 213.—Hydraulic analogy of ampere hour. Imagine water flowing into the vessel at the
 rate of one gallon in one hour; this is one gallon-hour. Similarly if in an electric circuit the
@@ -6960,10 +4932,7 @@ Again:
 = 2 amperes <5 seconds
 = 10 amperes X 1 second, etc.
 
-One ampere hour is simply another way of saying 3,600 cou-
-lombs. Of course 3,600 coulombs of electricity may be
-
-Electrical and Mechanical Energy 137
+One ampere hour is simply another way of saying 3,600 coulombs. Of course 3,600 coulombs of electricity may be
 
 obtained in any desired time. It all depends on the rate of flow
 or the current strength in amperes.
@@ -6971,8 +4940,7 @@ or the current strength in amperes.
 .For instance, 2 amperes in 14 hour, or 4 amperes in 14 hour will also
 give one ampere-hour of 3,600 coulombs.
 
-It is well to keep the distinction between coulombs and am-
-peres in mind.
+It is well to keep the distinction between coulombs and amperes in mind.
 
 To illustrate further the difference between coulombs and
 amperes, the following example is given.
@@ -6990,8 +4958,6 @@ coulombs..
 
 amperes = Suse cepeeeeawe seas: (2)
 seconds
-
--
 
 substituting the given values in (2),
 
@@ -7011,8 +4977,6 @@ Power exerted for a certain time produces work.
 
 Ans. The horse power.
 
-138 Electrical and Mechanical Energy
-
 #### Ques. What is one horse power?
 
 Ans. 33,000 foot pounds per minute.
@@ -7022,33 +4986,23 @@ draught horse to do work during a short interval and used by him to
 measure the power of his steam engines. One horse power =33,000 ft.
 lbs. per minute =550 ft. lbs. per sec. =1,980,000 ft. lbs. per hour.
 
-~ ONE ONE ...
+ONE ONE ...
 . HORSE POWER © WATT sete
--
 
-)
-
-lo FT—
-ONE MINUTE
+### ONE MINUTE
 
 via
-een Pe
 
 Fics. 214 and 215.—Examples illustrating one horse power and one watt. Rules: One horse
-power =33,000 ft. lbs. per minute. One watt =one ampere X one volt. |
+power =33,000 ft. lbs. per minute. One watt =one ampere X one volt.
 
-|
-Ques. What is one horse power hour? :
+#### Ques. What is one horse power hour?
 
 Ans. Work done at the rate of one horse power for one hour.
 
 #### Ques. What is the electrical unit of power?
 
 Ans. The watt.
-
-ee
-
-Electrical and Mechanical Energy 139
 
 #### Ques. What Is a watt?
 
@@ -7068,26 +5022,7 @@ Ans. 1,000 watts.
 . LAMP
 tj 100 VOLTS
 
-OF a
-TAB ag peers /
-sf é —_~
-4 4, a ee
-Ve bd ] %
--
-
 % XIOOX5 = 250 WATT HOURS
-
-yi
-
-i
-%
-%
-
-PANY}
-a
-
-aa,
-\ ros &
 
 Fic. 216.—Example illustrating watt hours. Rule: Watt hours =amperes Xvolts Xhours.
 
@@ -7101,38 +5036,26 @@ should take account of the total amount of energy consumed,
 and should depend not only upon the volume of current, but
 also upon the pressure at which the current 1s applied.
 
-140 Electrical and Mechanical Energy
-
 The basis of such a system if provided in a unit which is the
 product of the two units of current and pressure, and which is
 termed a volt ampere or watt.
 
-The watt hour represents the amount of work done by an elec-
-tric current of one ampere strength flowing for one hour under a
+The watt hour represents the amount of work done by an electric current of one ampere strength flowing for one hour under a
 pressure of one volt.
 
-Example.—An incandescent lamp taking one-half-an ampere of cur-
-rent on a circuit having a pressure of 100 volts, or a lamp taking one
+Example.—An incandescent lamp taking one-half-an ampere of current on a circuit having a pressure of 100 volts, or a lamp taking one
 
-: |
-Ip | |.
-= cil :
-ye |
 — psy
 
-Fia. 217.—Method of judging the heat of a soldering bit or so called "'iron,'' illustrating sen-
-sible heat.
+Fia. 217.—Method of judging the heat of a soldering bit or so called "'iron,'' illustrating sensible heat.
 
-ampere on a circuit having a pressure of 50 volts, would each be con-
-suming 50 watts of energy, and this multiplied by the number of hours
+ampere on a circuit having a pressure of 50 volts, would each be consuming 50 watts of energy, and this multiplied by the number of hours
 would give the total number of watt hours for any definite time.
 
 The watt, then, is an accurate and complete unit of measurement
 and is generally applicable to all forms of electrical consumption.
 
 A watt of electrical energy corresponds to 74; of a horse power of
-
-Electrical and Mechanical Energy 141
 
 mechanical energy; hence, if a lamp or motor require energy equivalent to
 -1, of a horse power for one hour, it might be said to take one watt-hour.
@@ -7146,19 +5069,7 @@ Heat is measured in calories or British thermal units (abbreviated B.t.u.).
 
 A calorie is the amount of heat necessary to raise the temperature of one
 gram of water from 0° to 1° Centtgrade; sometimes called the smaller calorie
-or therm.
 
-}
--
-pa
-
-+
-4 .
-
-"Ly Wk ye
-"iy SB ith
-
-—
 Urry
 
 Fias. 218 to 220.—Three ways in which heat is transferred; fig. 218, by radiation; fig. 219, by
@@ -7176,41 +5087,19 @@ water from 32° to 212° Fahr. (Marks and Davis.)
 The calorie is used for calculation in Physics and the British thermal
 unit for commercial calculation.
 
-142 Electrical and Mechanical Energy
-
 Heat is produced in the agitation of the molecules of matter; the energy
 expended in agitating these molecules is transformed into heat.
 
-Mechanical Equivalent of Heat.—The eminent English phy-
-sicist, James Prescott Joule, worked for more than forty years
+Mechanical Equivalent of Heat.—The eminent English physicist, James Prescott Joule, worked for more than forty years
 in establishing the relation between heat and mechanical work;
-he stated the doctrine of the conservation of energy and dis-
-covered the law, known as Joule's law, for determining the re-
-lation between the heat, current pressure, and time in an
+he stated the doctrine of the conservation of energy and discovered the law, known as Joule's law, for determining the relation between the heat, current pressure, and time in an
 electric circuit.
 
-{
-—asourn oo?
-ee aaeend
-
-<
-ni "al a -
-
 las
-: oer -_—
-© lee —_
-a :
-iy
 
 tage
-"Ny
 
-0D.
-Hl
-My
-
-Fig. 221.—Experiment showing relation between heat and work. Take a brass tube AB, at-
-tached to a spindle geared to rotate rapidly and partly fill the tube with water and insert
+Fig. 221.—Experiment showing relation between heat and work. Take a brass tube AB, attached to a spindle geared to rotate rapidly and partly fill the tube with water and insert
 a cork. Apply a friction clamp D, and rapidly rotate the tube by turning the wheel C.
 The energy expended in overcoming the friction due to the clamp and rotating the tube
 causes the water to heat and finally boil; if continued long enough, the pressure generated
@@ -7220,8 +5109,6 @@ will expel the cork. During the operation work has been transformed tnto heat.
 
 Ans. The number of foot pounds of mechanical energy
 equivalent to one British thermal] unit.
-
-Electrical and Mechanical Energy 143
 
 ONE LB.OF WATER [—h———=1 cu) ONE LB. OF WATER
 AT 32° FAHR. fit) i fg ALete ° FAHR.
@@ -7233,21 +5120,13 @@ the water. It will, according to the definition, require 180 heat units to heat 
 say five minutes to heat the water to 212°, then one heat unit will be transferred to the
 water in (5 X60) +180 =2 seconds.
 
-Au iH UH HT thy
-SL Hi
-
-LU
-
 WATT
-Hu |
 
 Fig. 224.—Callendar's mechanical equivalent of heat apparatus (Central Scientific Co.).
 With this apparatus a lecturer can obtain in about ten minutes in the presence of a class of
 students, a value of "'J'' correct to 14 percent. Joules experiments 1843-50, gave the figure
 772, known as "Joules equivalent,'' more recent experiment by Prof. Rowland (1880) and
 others give higher figures: 778 is generally accepted. Marks and Davis value is 777.54 ft. Ibs.
-
-144 Electrical and Mechanical Energy
 
 Joule's experiments 1843-50 gave the figure 772 ft. lbs. which is known
 as Joule's equivalent. Later experiments gave higher figures, and the
@@ -7257,18 +5136,9 @@ Electrical Horse Power.—It is desirable to establish the
 relation between watts and foot pounds in order to determine
 the capacity of a dynamo or motor in terms of horse power.
 
-AW
-
-f
-
-it
-: ; r de la a, -
-fe og mE Cas 3
-
 Fia. 225.—The mechanical equivalent of heat. In 1843, Dr. Joule of Manchester, England,
 performed his classic experiment, which revealed to the world the mechanical equivalent
-of heat. As shown in the figure, a paddle was made to revolve with as little friction as pos-
-sible in a vessel containing a pound of water whose temperature was known. The paddle
+of heat. As shown in the figure, a paddle was made to revolve with as little friction as possible in a vessel containing a pound of water whose temperature was known. The paddle
 was actuated by a known weight falling th ough a known distance. A pound falling through
 @ distance of 1 ft. represents a fi. lb. of wore. At the beginning of th: experiment a thermometer
 was placed in the water, and the temperature noted. The paddle was made to revolve by
@@ -7279,29 +5149,20 @@ recent experiments give higher figures, the value 778, is now generally used but
 to Kent 777.62 is probably more nearly correct. Marks and Davis in their steam tables have
 used the figure 777.52.
 
-|
-|
-|
-
 One watt is equivalent to one joule per second or 60 joules
 per minute. One joule in turn, is equivalent to .7374 ft. lbs.,
 hence 60 joules equal:
 
 60 x .7374 = 44,244 ft. Ibs.
 
-Electrical and Mechanical Energy 145
+Since one horse power = 33,000 ft. Ibs. per minute, the elecical equivalent of one horse power is
 
-Since one horse power = 33,000 ft. Ibs. per minute, the elec-
-ical equivalent of one horse power is
-
-| 33,000 +-44.244 =746 watts.
-
-1,000
+33,000 +-44.244 =746 watts.
 
 = .746 kilowatt (kw.)
 
 Again, one kilowatt or 1,000 watts is equivalent to
-| 1,000 746 =1.34 horse power
+1,000 746 =1.34 horse power
 
 The Farad.—The measure constructed to hold a gallon of
 ater may be called the gallon measure.
@@ -7312,16 +5173,13 @@ ne coulomb under one volt pressure is the farad.
 It may seem strange that there is a unit of quantity and
 nother of capacity to hold that quantity, when in the case
 {f water the term "'gallon'' may suffice for the measure and the
-quid it can hold. Electricity in this respect, however, corre-
-sonds to a compressible fluid or a gas.
+quid it can hold. Electricity in this respect, however, corresonds to a compressible fluid or a gas.
 
 A gallon measure may hold a gallon of gas or ten; 1t depends
-otirely upon the pressure. Accordingly a condenser of a cer-
-ain size may hold any number of coulombs, according to the
+otirely upon the pressure. Accordingly a condenser of a cerain size may hold any number of coulombs, according to the
 lectrical pressure.
 
-The farad being inconveniently large for practical use, one-
-ullionth of a farad, called a microfarad, is generally adopted.
+The farad being inconveniently large for practical use, oneullionth of a farad, called a microfarad, is generally adopted.
 
 *NOTE.—James Watt was early asked by would-be purchasers as to how many horses
 S engines would replace. To obtain data as to actual performance in continuous work, he
@@ -7372,18 +5230,14 @@ is heat; how is it measured?
 . What is the difference between mechanical and
 
 certain time produce?
-:
-|
 
 electrical horse power?
 
 . What is a farad; give hydraulic analogy.
-. How is heat produced; how measured? :
+. How is heat produced; how measured?
 . What is the difference between a British thermal —
 
 unit and a calorie?
-
-Effects of the Current 147
 
 ## CHAPTER 8
 
@@ -7391,9 +5245,7 @@ Effects of the Current
 
 The term "'electric current,'' in the present state of our knowl-
 >dge, should be regarded as denoting the existence of a state of
-things in which certain definite experimental effects are pro-
-juced, for some of which there certainly is no analogy exhib-
-ited in ordinary hydraulic currents. The following are the most
+things in which certain definite experimental effects are projuced, for some of which there certainly is no analogy exhibited in ordinary hydraulic currents. The following are the most
 important of these effects:
 
 1. Thermal effect;
@@ -7409,16 +5261,13 @@ in pipes is justified in order to avoid roundabout and cumbrous phrases
 which, though perhaps more nearly in accord with present knowledge of
 the facts, would not tend to clearness or conciseness.
 
-The three most important effects of the current just men-
-tioned, may be presented in more detail as follows:
+The three most important effects of the current just mentioned, may be presented in more detail as follows:
 
 1. The Thermal effect.
 
 The conductor along which the current flows becomes heated. The
 rise of temperature may be small or great according to circumstances,
 but some heat is always produced.
-
-148 Effects of the Current
 
 2. The Magnetic effect.
 
@@ -7435,34 +5284,7 @@ the current enters and leaves it.
 
 — cr re a a ———e eee
 
-TT mn Sgn i
-A ry Sip
-
-'
-\
-NY . BN =
-. N
-
-\ Sot i Mm i if o =
-
-. _
-—_— BH
-7! Ty ae
-Yip Ife :
-y ae j nye ;
-a af v\
-. wa
-. Le
-« 4 Al'. \
-\ .\
-\ oes week
-wm :
 Wha
-SS
-
-—
-
-2S MIM
 
 Fria. 226.—The Seebeck effect: If in a complete metallic circuit having juncitons of dissimtla
 metals, the juncttons are at different temperatures, then generally a steady current wti
@@ -7480,8 +5302,6 @@ bismuth.
 
 Thermal Effect.—If a quantity of electricity were set flowins
 
-Effects of the Current 149
-
 in a closed circuit and the latter offered no resistance, it would
 flow forever, just as a wagon set rolling along a circular railway
 would never stop if there were no friction.
@@ -7493,8 +5313,7 @@ motion, that ts, an electric current is stopped by resistance, the
 energy of its flow 1s transformed into heat by the resistance of
 the circuit.
 
-If the terminals of a battery be joined by a short thick wire of low re-
-sistance, most of the heat will be developed in the battery, whereas, if
+If the terminals of a battery be joined by a short thick wire of low resistance, most of the heat will be developed in the battery, whereas, if
 a thin wire of high resistance be used it will become hot, while the battery
 itself will remain comparatively cool.
 
@@ -7513,17 +5332,14 @@ conductor 1s proportional to:
 
 Joules' law may be stated as follows:
 
-The heat generated in a conductor by an electric current 1s pro-
-portional to the resistance of the conductor, the tume during which
+The heat generated in a conductor by an electric current 1s proportional to the resistance of the conductor, the tume during which
 the current flows, and the square of the strength of the current.
 
 The quantity of heat in calories may be calculated by use of the equation,
 calories per second = volts x ampere X .24. (1)
 
-150 Effects of the Current
-
 The total number of calories or heat developed in seconds will be given
-by
+
 heat = volts X amperes seconds X .24. (2)
 
 Example.—lIf a current of 10 amperes flow in a wire whose terminals
@@ -7537,12 +5353,8 @@ in 5 minutes?
 
 ### STOPPER
 
-### BOTMRET
-
-Fic. 227.—Lenz's apparatus for measuring the heat given off by an electric current. It con-
-sisted of a wide mouthed stoppered bottle fixed upside down, with its stopper, in a wooden
-box; the stopper was perforated so as to give passage to two thick platinum wires, con-
-nected at one end with binding screws, while their free ends were provided with platinum
+Fic. 227.—Lenz's apparatus for measuring the heat given off by an electric current. It consisted of a wide mouthed stoppered bottle fixed upside down, with its stopper, in a wooden
+box; the stopper was perforated so as to give passage to two thick platinum wires, connected at one end with binding screws, while their free ends were provided with platinum
 cones by which the wires under investigation could be readily affixed; the vessel contained
 alcohol, the temperature of which was indicated by a thermometer fitted in a cork inserted
 in a hole made in the bottom of the vessel. The current is passed through the platinum
@@ -7558,8 +5370,6 @@ Substituting in equation (2):
 Since by Ohm's law, the pressure difference or
 volts = amperes X ohms
 
-Effects of the Current 151
-
 Substituting in equation (2):
 heat =amperes 2 Xohms Xseconds * .24................ (3)
 
@@ -7570,12 +5380,6 @@ copper wires of the proper size must be used.
 
 In wiring a building for electric lights, the insurance rules
 
-Wj
-
-(/ my UTS
-RASS
-f__|
-
 Figs. 228 to 231.—Details of construction of electric iron. Figs. 228 and 230, heating ele-
 
 ments; fig. 230, iron base; fig. 231, assembly.
@@ -7585,11 +5389,8 @@ up ina certain manner. Otherwise they will not insure a build-
 
 ing against fire.
 
-It is often desirable, however, to use the electric current for the pur-
-pose of producing heat. The carbons of the arc and incandescent lamps
+It is often desirable, however, to use the electric current for the purpose of producing heat. The carbons of the arc and incandescent lamps
 are intensely heated that they may produce light.
-
-152 Effects of the Current
 
 Coils of German silver wire or other high resistance wire are heated by
 the passage of a current through them. In this manner the electric stove
@@ -7600,36 +5401,16 @@ similar manner.
 
 Magnetic Effect.—An electric current flowing in a wire causes
 
-eo
-eg
-e , a a -
-4 77 7 -
 4070 70,77 ore!
-of 4 4° %
-nd 44 a? o a
-6 44 470,70
-Fe@ ° ¢ 4 94,8
-¢ of 7 %e
-@ y) °
-e es
-
-™*.weceo
-
-a
 
 Fra. 232.—Magnetic field surrounding a wire in which a current is flowing. The magnetic
 field consists of lines of force which are circles concentric with the wire as indicated bya
 compass which will point in a direction perpendicular to the radius joining the compass and
 
 wire.
-)
-
-—-
 
 Fras. 233 and 234.—Mcchanical effect of the current: Like poles repel cach other, unlike polzs
 attract each other.
-
-Effects of the Current 153
 
 it to be surrounded by a magnetic field,
 which consists of lines of force encircling the
@@ -7638,7 +5419,6 @@ and diminishes gradually in strength at
 increasing distances therefrom. The pres-
 [ ence of this magnetic field is shown by
 t various experiments and the subject is fully
-ii
 
 explained in Chapter 9 on magnetism.
 
@@ -7646,8 +5426,7 @@ Chemical Effect.—Pats van Trostwyk
 (1789) pointed out that an electric discharge
 was capable of decomposing water.
 
-To show this he used gold wires, which he al-
-lowed to dip in water, connecting one of them with
+To show this he used gold wires, which he allowed to dip in water, connecting one of them with
 the inner, and another with the outer coating of
 a Leyden jar, and passing the discharge through
 the water. The gas bubbles collected proved to
@@ -7662,11 +5441,9 @@ a oy) eg of the poles of a voltaic pile into a drop of
 Fig. 235.—Modern apparatus for decomposing water by electrolysis. Platinum electrodes P
 and P', are placed at the bottom of two upright tubes O and H, and are connected to the
 terminals T and 7', by platinum wires, which are fused through the glass of the tubes. These
-tubes have glass stop cocks S and S', at their upper ends, and at their lower ends are con-
-nected by a short glass tube, from the center of which rises the large central tube which
+tubes have glass stop cocks S and S', at their upper ends, and at their lower ends are connected by a short glass tube, from the center of which rises the large central tube which
 expands with a bulb at its upper end, which is open at the top. The three tubes can be
-filled with acidulated water from the central tube, the previously contained air being al-
-lowed to escape through the stop cocks, which are afterwards closed. If it be so filled,
+filled with acidulated water from the central tube, the previously contained air being allowed to escape through the stop cocks, which are afterwards closed. If it be so filled,
 and the terminal 7, be attached to the positive and 7', to the negative pole of a suitable
 battery, bubbles of gas will be observed to rise from the plates P and P', and finding their
 way to the top of the respective tubes, will displace the liquid, which will be driven into
@@ -7675,8 +5452,6 @@ the cathode P', is hydrogen (H). If the tubes be graduated, the latter will be f
 occupy about twice the volume of the former. The proportion is theoretically 2 to 1;
 however, on account of the different solubilities of the two gases in water, oxygen bring
 the more soluble of the two, is deficient in quantity.
-
-154 Effects of. the Current
 
 connected with the other pole; gas bubbles appeared, and the
 drop of water became smaller and smaller.
@@ -7694,26 +5469,10 @@ vlz., Copper and zinc, had be-
 
 oe OXYGEN
 come oxidized. BUBBLES | ier
-cr. —-/G! +/D
 
-VY;
-
-ip
-
-ce SS
-
-Los i |
-| Ly yi! =
-- | ap Ot :
-
-— _—_—
-—— 1
 menieu
-i )
 
 = 4b
-
-—_-
 
 ### POSITIVE ELECTRODE NEGATIVE ELECTRODE
 
@@ -7734,15 +5493,11 @@ cell. In fig. 236, A, is the cell, which may be of glass or of any
 from the anode or conductor through which the current enters. The terms usually apply to
 to conductors leading the current through a liquid or gas, as an electrolytic cell, or vacuum tube.
 
-Effects of the Current 155
-
-other suitable material, and B, 1s the liquid which 1s to be elec-
-trolyzed. Current enters by the positive electrode C, also known
+other suitable material, and B, 1s the liquid which 1s to be electrolyzed. Current enters by the positive electrode C, also known
 as the anode, traverses the liquid, and leaves by the negative
 electrode, or cathode D.
 
-The passage of current through the water splits up its mole-
-cules into their constituent atoms of oxygen and hydrogen, the
+The passage of current through the water splits up its molecules into their constituent atoms of oxygen and hydrogen, the
 former being given off in bubbles at the anode, and the latter at
 the cathode.
 
@@ -7770,27 +5525,22 @@ are regarded as electro-positiive.:
 In order to explain the transfer of electricity and the transfer
 of matter through the electrolyte, Grotthuss put forward the
 hypothesis that when two metal plates at different pressures are
-placed in a cell, the effect produced in the liquid 1s that the mole-
-cules of the liquid arrange themselves 1n innumerable chains, as
+placed in a cell, the effect produced in the liquid 1s that the molecules of the liquid arrange themselves 1n innumerable chains, as
 shown in fig. 237, 7m which every molecule has its atoms pointing
 in a certain direction, the electro-positive atom being attracted
-
-156 Effects of the Current
 
 foward the cathode and the electro-negative toward the anode.
 An interchange then takes place all along the line, the free atoms
 appearing at the electrodes, and every atom discharging a minute
 charge of electricity upon the electrode at which it is liberated.
 
-Grotthuss' Theory (announced in 1806). The molecules in an elec-
-trolyte have their individual electro-posttive and electro-negative atoms charged
+Grotthuss' Theory (announced in 1806). The molecules in an electrolyte have their individual electro-posttive and electro-negative atoms charged
 positively and negatively respectively.
 
 Fic. 237.—Grotthuss' theory of electrolysis. Grotthuss (in 1806), announced his theory
 that the molecules 1n an electrolyte have thetr tndtvtdual electro-posttive and electro-negatire
 atoms charged posttively and negatively respectively. In an ordinary liquid, for instance
-in water, the molecules are arranged indifferently, like row 1, with their positive and neg-
-ative ends pointing in all directions. When the charged plates A and B, connected to
+in water, the molecules are arranged indifferently, like row 1, with their positive and negative ends pointing in all directions. When the charged plates A and B, connected to
 the — and + poles of a battery, are inserted in the water, the molecules under the action
 of the laws of electrostatic action turn as shown in row 2, so that all the hydrogen or shaded
 ends (+) are turned toward the (—) plate B, and all the oxygen or unshaded ends (—)
@@ -7799,29 +5549,19 @@ molecules asunder, depositing HH on B, and OQ on A. The atoms in the middle of t
 however, recombine, for the hydrogen atoms in their journey toward B, meet the oxygen
 atoms travelling in the opposite direction, and the state of affairs represented in row 3
 obtains. The next step is torotate once more the atoms into the positions shown in row 2,
-and so on. In this way the theory accounts for the products only appearing at the elec-
-trodes and not in the body of the liquid.
+and so on. In this way the theory accounts for the products only appearing at the electrodes and not in the body of the liquid.
 
 Electro-chemical Series.—This is an arrangement of the
 metals in a series in such a manner that the most electro-positive
 is at one end and the most electro-negative at the other.
 
-Effects of the Current 157
-
-rm ra 7
-
-it " cam
-
-"
 Fic. 238.—Packard electrolysis appa- as | i. i
-rafus designed by J. C. Packard of sey at qT '
-
-i . <i | =
+rafus designed by J. C. Packard of sey at qT
 
 Brookline High School. Jt consists
 of two special molded porcelain bottle
 rests which are designed as electrode
-supports. These bottle and electrode ] Hil i i Auth iN \
+supports. These bottle and electrode ] Hil i i Auth iN
 supports can be used close together f ot " i 4 wee ay,
 
 or apart to the limit of the glass tray. yf N it a i ye ( 4 | », ii ul
@@ -7834,37 +5574,23 @@ covering the mouths. When current
 is connected, action immediately
 begins.
 
-ee il te borer yy
-— F = i i ' 5 a Pi 2 |
-re ie
+— F = i i ' 5 a Pi 2
 
-i: a RKO | oer ee on m '
+i: a RKO | oer ee on m
 
-wll an
-
-Fic. 239.—Knott simple elec-
-tric furnace for explaining the
+Fic. 239.—Knott simple electric furnace for explaining the
 electric arc, electric furnace,
 as well as the melting and
 combining properties of many
 elements. The construction
 enables a clear understanding
-of the many principles in-
-volved. Its open construc-
-tion has great pedagogic
-value. A great variety of ex-
-periments can be convenient-
-ly performed—the melting of
+of the many principles involved. Its open construction has great pedagogic
+value. A great variety of experiments can be conveniently performed—the melting of
 platinum or like refractory
-metals, the reduction or pro-
-duction of aluminum or car-
-bides. The manufacture of
+metals, the reduction or production of aluminum or carbides. The manufacture of
 calcium carbide from lime
 and sawdust or carbon makes
-a striking and interesting ex-
-periment.
-
-158 Effects of the Current
+a striking and interesting experiment.
 
 The order of the metals varies with the electrolyte in which
 the metals are tested.
@@ -7907,17 +5633,13 @@ diaphragm, so that the liquid 1s forced to a higher level on one
 side than on the other. This phenomenon is known as electric
 osmose.
 
-Effects of the Current 159
-
 Voltameter.—The name voltameter was given by Faraday to
-an electrolytic cell employed as a means of measuring an elec-
-tric current by the amount of chemical decomposition the
+an electrolytic cell employed as a means of measuring an electric current by the amount of chemical decomposition the
 current effects in passing through the cell.
 
 HIGHER & . PORQUS PARTITION
 
-Fig. 240.—Electrolytic cell with porous partition illustrating electric osmose. Porret ob-
-served that if a strong current be led into certain liquids, a porous partition being placed
+Fig. 240.—Electrolytic cell with porous partition illustrating electric osmose. Porret observed that if a strong current be led into certain liquids, a porous partition being placed
 between the electrodes, the liquid is carried by the current through the porous partition,
 until it is forced up to a higher level on one side than on the other. This electric action is
 most pronounced when the experiment is made with liquids, which are poor conductors.
@@ -7926,8 +5648,6 @@ The movement of the liquid takes place in the direction of the current.
 Fig. 241.—Copper voltameter (coulomb meter). It has two loss plates and one gain plate.
 Note that the construction of the clamping device is such that the plates may be handled
 without touching them with the fingers.
-
-160 Effects of the Current
 
 Gernez has recently shown that in a bent closed tube, con
 taining two portions of liquid, one of which is made highly +4
@@ -7949,15 +5669,12 @@ diately contracted.
 More than a century later Galvani's attention was drawn to the sub
 ject by hiss observation of spasmodic contractions in the legs of freshl:
 
-Effects of the Current 161
-
 killed frogs under the influence of the "'return shock'' experienced every
 time a neighboring electric machine was discharged.
 
 The limbs of the frog, prepared as directed by Galvani, are shown in
 'fig. 242. After the animal has been killed the hind limbs are detached
-and skinned; the crural nerves and their attachments to the lumbar ver-
-tebre remaining. For some hours after death the limbs retain their
+and skinned; the crural nerves and their attachments to the lumbar vertebre remaining. For some hours after death the limbs retain their
 contractile power. The frog's limbs thus prepared form an excessively
 delicate galvanoscope.
 
@@ -7979,20 +5696,15 @@ The electric current used may be obtained from a battery or other
 across a trough or tank containing the plating bath.
 
 Suspended from the rod are anodes of gold, silver, or copper or what-
--ever metal from which a deposit 1s desired. The other plates of the bat-
-tery or the negative elements, are connected with another rod across the
+-ever metal from which a deposit 1s desired. The other plates of the battery or the negative elements, are connected with another rod across the
 trough, to which are suspended the articles to be plated.
 
-162 Effects of the Current
-
-' Electrotyping.—This is the process: by which, type, wood
-cuts, etc., are reproduced in copper by the process of electro-
-plating.
+Electrotyping.—This is the process: by which, type, wood
+cuts, etc., are reproduced in copper by the process of electroplating.
 
 A mould ts first made of the set type in wax; this mould ts next
 coated with black lead to give it a metallic surface, as the wax is
-an insulator; the mould 1s then subjected to the process of electro-
-deposition, resulting in the formation of a film of copper on the
+an insulator; the mould 1s then subjected to the process of electrodeposition, resulting in the formation of a film of copper on the
 prepared surface.
 
 Describing the process in detail, fill a case with a wax composition to a
@@ -8006,8 +5718,7 @@ steady pressure of about two tons to the sq. in.
 After the mould is made, the high parts on the wax are cut down and
 the wide spaces are built up. The mould is next coated with black lead
 to give it a metallic surface. The wax being an insulator, the mould is
-then subjected to the process of electro-deposition, resulting in the forma-
-tion of a film of copper on the prepared surface by forcing the air out of
+then subjected to the process of electro-deposition, resulting in the formation of a film of copper on the prepared surface by forcing the air out of
 the mould with a force pump; then the surface is coated with a solution of
 sulphate of copper sprinkled with iron dust and thoroughly worked with
 a brush into all parts of the mould. The excess is then washed out with
@@ -8031,8 +5742,6 @@ on the hot metal in the furnace. The heat of the metal melts the tin
 foil and it adheres to the shell, then the backing pan is lifted out and
 placed on a stand.
 
-Effects of the Current 163
-
 The electrotype metal is now poured on the tinned shell very carefully
 until the proper thickness is reached.
 
@@ -8049,9 +5758,6 @@ not wear so well.
 . Explain the term electric current.
 
 2. What are the three most important effects of the
-
-12:
-13.
 
 current?
 
@@ -8080,8 +5786,6 @@ of magnetic field.
 What did Pats van Trostwyk point out?
 Describe Nicholson and Carlisle experiments.
 
-164 Effects of the Current
-
 14. Define electrolysis; who originated the term.
 15. Describe in detail the process of electrolysis.
 
@@ -8106,8 +5810,6 @@ voltameter ?
 
 26. Describe Galvani's frogs leg experiment.
 
-Magnetism 165
-
 ## CHAPTER 9
 
 Magnetism
@@ -8118,9 +5820,7 @@ property of attracting small pieces of tron, and as discovered
 later, to have the still more remarkable property of pointing
 nerth and south when hung up by a string. At this time the
 
-He l I Bi i | gt = ae - |
-
-| Fic. 244.—Simple compass. It consists of a magnetic needle resting on asteel pivot, protected
+Fic. 244.—Simple compass. It consists of a magnetic needle resting on asteel pivot, protected
 by a brass case covered with glass, and a graduated circle marked with the letters N, E,
 S, W, to indicate the cardinal points. a,b,isalever which arrests the needle by pushing it
 against the glass when the button d, is pressed.
@@ -8132,20 +5832,13 @@ against the glass when the button d, is pressed.
 
 Ans. Magnets have two opposite kinds of magnetism or
 
-166 Magnetism
-
 magnetic poles, which attract or repel each other in much the
 same way as would two opposite kinds of electrification.
 
 oo = a
 SaaencttinIncaicinidnchigemniaanminiininbmta need
-SnunipsannenNENG ND tas-atemtemaseiteemameei ee
-SD
-mcm a
-icuieecemmninsieerpsremesusi cimapepsemimemettmmisec scapes eum
+
 ooo
-i ai Nd
-————-4I)
 
 Figs. 245 to 247.—Simple bar magnet and horse shoe magnet with keeper. These are know:
 as permanent magnets in distinction from electro-magnets. The horse shoe magnet will attrac
@@ -8153,15 +5846,6 @@ more than the bar magnet because both poles act together. A piece of soft iron, 
 is placed across the ends of a horse shoe magnet to assist in preventing the loss of magnetism
 
 ify
-ft
-
-MM
-Ya
-
-TRAIT?) Chr aeen:
-[WN airaena awtee
-
-arr so
 
 Fias. 248 and 249.—Horizontal magnetic needle, and magnetic ''dip'' needle. A magneti
 needle consists of a small bar magnet, supported upon a pivot or suspended so that it 1
@@ -8174,8 +5858,6 @@ hemisphere the N, pole of the needle is depressed, in the southern hemisphere th
 is similarly affected. When used, the dip needle must be set so that the plane in whicl
 the needle swings contains the magnetic meridian, as indicated by the horizontal needle.
 
-Magnetism 167
-
 Ques.
 
 Ans. One has a tendency to move toward the north and
@@ -8187,25 +5869,10 @@ What is the nature of each kind of magnetism?
 
 MAGNET,
 
-HUI Mh !
-BS (op
-Nie s
-———-
-Ee
-—=
-
-/
-
 ### IRON'
 
 iy, FILINGS
 
-### ES :
-
-KY
-
-wvy ~ Ry) i's ¢
-a oe, TO Ry Yi aes § - nae :
 Fia. 250.—Magnetic poles.
 
 If a bar magnet be plunged into iron filings and then lifted, as
@@ -8220,8 +5887,6 @@ shaped magnet.
 
 Ans. The strongest magnetism resides in the ends, while
 
-168 Magnetism
-
 all around the magnet half way between the poles there is no
 attraction at all.
 
@@ -8233,61 +5898,28 @@ Ans. They are called the north pole and the south pole.
 
 Fic. 251.—Badly magnetized bar. Properly magnetized magnets have only two poles. It is
 possible, however, by special or careless magnetization, to produce magnets with more
-than two poles, but no process will produce a magnet with a single pole. If an abnormal |
-magnet with more than two poles be dipped into iron filings, the latter will adhere at places |
+than two poles, but no process will produce a magnet with a single pole. If an abnormal
+magnet with more than two poles be dipped into iron filings, the latter will adhere at places
 other than the two ends, as shown in the illustration. The polarities are alternately N, and
-S; that is, the regions N,B,N, have north polarity, while A and C, have south polarity. |
+S; that is, the regions N,B,N, have north polarity, while A and C, have south polarity.
 These are known as consequent poles.
 
 Fias. 252 to 258.—Effect of breaking a magnet into several parts. If a magnetized needle be
 broken, each part will be found to be a complete magnet having a N and S, pole. The
 sub-division may be continued indefinitely, but always with the same result as indicated
-in the figure. This is evidence of the correctness of the molecular theory of magnetism, |
+in the figure. This is evidence of the correctness of the molecular theory of magnetism,
 which states that the molecules of a magnet are themselves minute magnets arranged tn rou's
 with thetr opposite poles 1n contact.
 
-Ans. The north pole points approximately to the earth's |
+Ans. The north pole points approximately to the earth's
 geographical north, while the south pole of a magnet points
 approximately to the earth's geographical south.
 
-,
-
-v '
-.
-° $
-Y :
-~~ Ob oY . :
-e ' or
-eX * f '
-2 inp
-¢ . J
-e
-"y Ay Sy oe.
-'a pes A c
-ny) Ofer
-g Phy -, 5
-eae) WW
-« aA . ee x
-i . #,
 bad wae
-NN o) :
-4 . i ae :
-e rete
-Ay ' ' *
-a . y '.
-4 ve , °
-6 Ae 'f e
-q » e
 
-i]
-es
-paste hn Ni ee ole a ee See ee ce
-
-The north pole is the positive (+) pole and the south pole is the nega- :
+The north pole is the positive (+) pole and the south pole is the nega-
 tive. The north and south poles were formerly called in France, the
 austral and boreal poles respectively.
-
-Magnetism 169
 
 Magnetic Field.—When a straight bar magnet is held under
 t piece of card board upon which iron filings are sprinkled, the
@@ -8297,40 +5929,11 @@ oles.
 
 If a horse shoe magnet be held at right angles to the plane of the card
 
-FILINGS et Aa A
-
-* 4 /
-Oe \\ Bw u Yj
-
 ### GENTLY TAP
 
-¥.. aa as\
-Pe en —
-. 7 Tass ND
-
-; == \
-ame SN rout \yy
-Zu, — yp ayy.
-f hin NM ee ey) i 7
-| ar =
-
-OLE
-
-"\ So See Sos > 2 "'\.
-e - meee? "4 Cz aw Ha ee = * ¢
 egg CARD BOARD
-: eer: Pay (ag = Ba '
-LMG ad: Paar 4 ioe 3
-ie Al LAL al ae
-. { ej. shy , .
-
-S }
 
 ### MAGNET
-
-Nd
-
-We |
 
 1G. 259.—The region about a magnet in which its magnetic forces can be detected is called
 the magnetic field. This can be represented graphically by placing a piece of card board.
@@ -8354,24 +5957,14 @@ Ans. The infl
 3. 7 uence of a magnet 1
 all directions indefinitely, ed —— a7 on
 Sams effect is very slight
-in . ae
+
 — comparatively limited
-
-" HHA
-
-£
-e@
-
-Magnetism 171
 
 Magnetic Force.—This is the force with which a magnet
 ttracts or repels another magnet or any piece of iron or Steel.
-"he force varies with the distance, being greater when the mag-
-et is nearer and less when the magnet is farther off. The fol-
-wing are the laws relating to magnetic force:
+"he force varies with the distance, being greater when the maget is nearer and less when the magnet is farther off. The folwing are the laws relating to magnetic force:
 
-ig. 262.—Tracing lines of force with a suspended magnet. If a small magnetic needle, sus-
-pended by a thread, be held near a magnet, it will point in some fixed direction depending
+ig. 262.—Tracing lines of force with a suspended magnet. If a small magnetic needle, suspended by a thread, be held near a magnet, it will point in some fixed direction depending
 on the proximity of the poles of the magnet. The direction taken by the magnet is called
 the direction of the force at the point, and if the suspended needle be moved forward in
 the direction of the pole, it will trace out a curved line which will be found to start from
@@ -8385,8 +5978,6 @@ ftract one another.
 s the square of the distance between them.
 
 Magnetic Circuit.— The path taken by magnetic lines of force
-
-172 Magnetism
 
 is called a magnetic circuit; the greater part of such a circuit
 is usually in magnetic material, but there are often one or
@@ -8409,7 +6000,6 @@ Named after James Clerk Maxwell the Scottish physicist.
 
 #### Ques. What is the maxwell?
 
-Magnetism 173
 Ans. The amount of magnetism passing through every square
 centimeter of a field of unit density.
 
@@ -8437,28 +6027,19 @@ Reluctance.—The resistance offered to the magnetic flux by the substance
 magnetized; magnetic resistance. It is equal to the ratio of the magnetic
 force to the magnetic flux.
 
-174 Magnetism
-
 *Oersted.—The uni of reluctance being the reluctance offered by a cubic
 centimeter of vacuum.
 
-Maxwell.—The amount of magnetism passing through every square centt-
-meter of a field of unit density.
+Maxwell.—The amount of magnetism passing through every square centtmeter of a field of unit density.
 
 Fig. 265.—Knott ampere's law stand for the study of the magnetic field surrounding'a current
 bearing conductor. With movable magnetic compass, and with four small compasses sealed
 into the block.
 
-Fig. 266.—Knott ampere's law stand for the study of the magnetic field about a current bear-
-ing conductor. In this design the magnetic field can be located by small compasses as illus-
-trated, or by the iron filings method.
-
-———
+Fig. 266.—Knott ampere's law stand for the study of the magnetic field about a current bearing conductor. In this design the magnetic field can be located by small compasses as illustrated, or by the iron filings method.
 
 mean Uf
 itt
-
-——
 
 Fia. 267.—Oersted's discovery. In 1820 Hans Christian Oersted (1777-1851), found that
 a magnetized needle was affected by the action of an electric current. In 1813 Oersted stated:
@@ -8469,14 +6050,11 @@ by using any conductor, even a litre of mercury being effectual, the only differ
 in the quantity of effect produced, and the results were obtained even if the conductor be
 interrupted by water, unless the interruption be of great extent.
 
-Magnetism 175
-
 tGauss.—The intensity of field which acts on a unit pole with a force of
 one dyne. It 1s equal to one line of force per square centimeter.
 
 Magnetic Effect of the Current.—Much is due to Hans
-Christian Oersted, who made numerous experiments in mag-
-netism.
+Christian Oersted, who made numerous experiments in magnetism.
 
 Rule 1.—OERSTED'S DISCOVERY—A magnet tends to
 
@@ -8492,11 +6070,7 @@ called Schweigger's multiplier.
 *NOTE.—Hans Christian Oersted, born 1777, died 1851, the Danish physicist, was noted
 for his experiments on the magnetic needle with the electric current.
 
-INOTE.—Karl Friedrich Gauss, born 1777, died 1855. He was a German mathema-
-tician, founder of the mathematical theory of electricity and inventor of the bifilar magneto-
-meter. The unit gauss was named after him.
-
-176 | Magnetism
+INOTE.—Karl Friedrich Gauss, born 1777, died 1855. He was a German mathematician, founder of the mathematical theory of electricity and inventor of the bifilar magnetometer. The unit gauss was named after him.
 
 whether to the right or left of its usual position, depends: 1,
 upon the position of the wire that carries the current, whether
@@ -8508,19 +6082,10 @@ a right handed corkscrew represent the direction of the current in a
 straight conductor, the direction of rotation of the corkscrew will
 represent the direction of the magnetic lines of force.
 
-'
-- - 7
-
-eo
-
-NS Saris Oa mt ON :
-4 Sor - BOSTY
-
 Fic. 269.—Knott Oersted's law apparatus for the study of magnetic action of currents and
 formulating Ampere's rule.
 
-Fig. 270.—Knott parallel current apparatus for demonstrating mutual action of parallel cur-
-rents. Parallel currents flowing in the same direction are obtained by connecting both binding
+Fig. 270.—Knott parallel current apparatus for demonstrating mutual action of parallel currents. Parallel currents flowing in the same direction are obtained by connecting both binding
 posts with one pole of the battery. The other pole should be connected to a binding post (not
 shown in the illustration) fastened to the base and in electrical connection with the mercury
 well. Success of the experiment depends upon amalgamating the ends of the copper rods
@@ -8533,14 +6098,11 @@ the finger tips will point in the direction of the magnetic whirls.
 
 Rule 4.—AMPERE'S RULE—Suppose yourself to be in the
 
-Magnetism 177
-
 Fig. 271.—Illustrating Maxwell's ''corkscrew rule'' for relative directions of
 current and lines of force. According to the rule: the direction of the current
 and that of the resulting maznetic force are 1n the same relation to cach other as
 is the forward travel and rotation of an ordinary corkscrew. Thus, in the figure,
-if a current flow through the wire ab, in the direction from a to b, the mag-
-netic lines will encircle the wire in the direction of the curved arrow 7o, which
+if a current flow through the wire ab, in the direction from a to b, the magnetic lines will encircle the wire in the direction of the curved arrow 7o, which
 
 shows the direction in which the corkscrew must be turned to advance in the
 direction of the arrow 7.
@@ -8553,8 +6115,8 @@ if CURRENT
 
 ### CONDUCTOR
 
-N . : \
-DIRECTION OF MAGNETIC \
+### DIRECTION OF MAGNETIC
+
 WHIRLS \
 
 Fira. 272.—Right hand rule to determine the direction of magnetic field around a conductor
@@ -8562,14 +6124,11 @@ carrying a current. The thumb of the right hand is placed along the conductor, p
 the direction tn which the current 1s flowing, then, tf the fingers be partly closed, as shown, the
 finger tips will point in the direction of the magnetic whirls.
 
-178 Magnetism
-
 wire, floating with the current and facing the needle; its north
 pole will turn toward your left hand.
 
 Rule 5.—Magnetic lines of force tend to occupy a position in
-which they are parallel with each other and run in the same direc-
-lion.
+which they are parallel with each other and run in the same direclion.
 
 #### Ques. What is the effect of a current flowing in a loop
 
@@ -8577,18 +6136,14 @@ of wire?
 
 Fias. 273 and 274.—Amperes left hand rule: Suppose a man swimming tn the wire with the
 current, and that he turn so as to face the needle, then the N.-seeking pole of the needle will be:
-deflected toward hts left hand. |
+deflected toward hts left hand.
 
 Fic. 275.—Right hand palm rule to determine the direction of the magnetic field around a
 'conductor carrying a current: Place the palm of the outstretched right hand above and to the
-right side of the wtre, the fingers pointing in the dtrectton of the current, that ts, pointing down-
-ward, and the thumb, extended at right angles. The direction in whtch the thumb potnts will
+right side of the wtre, the fingers pointing in the dtrectton of the current, that ts, pointing downward, and the thumb, extended at right angles. The direction in whtch the thumb potnts will
 indicate the dtrectton of the magnetic field.
 
-Magnetism 179
-
-Ans. If, in figs. 276 and 277, the current flow in the direc-
-tion indicated by the arrow, the lines of magnetic force are
+Ans. If, in figs. 276 and 277, the current flow in the direction indicated by the arrow, the lines of magnetic force are
 found to surround the loop as shown; all the lines leave on one
 side of the loop and return on the other; accordingly, a north
 pole is formed on one side, and a south pole on the other.
@@ -8603,84 +6158,40 @@ of force both inside and
 outside the loop, will cross
 the plane of the loop at right angles, and all
 those which cross the loop on the inside will
-pass through the plane in one direction (down-
-wards in the figure), while all on the outside Will return through the plane in 1 the opposite
+pass through the plane in one direction (downwards in the figure), while all on the outside Will return through the plane in 1 the opposite
 direction.
 
 Fia. 277.—Lines of force of a circular loop. If the loop pass through a piece of cardtoard at
-right angles to its plane, and the current flow as indicated, the dotted lines on the card-
-board will represent the direction of the lines of force in the plane of the cardboard. The
+right angles to its plane, and the current flow as indicated, the dotted lines on the cardboard will represent the direction of the lines of force in the plane of the cardboard. The
 student should verify the lines of force as here given by applying the corkscrew rule.
 
-180 Magnetism
-
-"4
 fhe,
 bakit)
-wT
-WITT)
-Tr
-@ee.,
-WITS
+
 Cbveg
 tea,
-TT
+
 Otene,
-MT y}
+
 Seng,
 
 Sor
 eens
 arr
-eT ee
+
 — aay fern, — =
-~
-— es
-
-### KAA A
-
-- @
-~
-Se ee
-~~
-~~
-=
-
-fy
-=
-
-vce xX XK NY
--%,9,9,6.6° OOD AX WW)
-
-ae 2% e eo
 
 Cox
-
-==
-etes am op |
-
-ll
-. ! Hl
-| |
-
-z
-i te
-
-att ———=
-
-et eT
 
 Frias. 278 and 279.—Ampere's experiments. Following Oersted's discovery, Ampere bega
 his investigations. He reversed Oersted's experiment (fig. 278) and showed the actio
 of a magnet on a movable circuit by means of a rectangular movable frame suspended fror
 mercury cups. When a magnet is placed near this frame and current is flowing, the fram
-will be attracted by the magnet. Another experiment performed by Ampere was with |
+will be attracted by the magnet. Another experiment performed by Ampere was with
 solenoid whose ends were attached to copper and zinc electrodes immersed in an acid solutio
 
 thus forming a cell as in fig. 279. When suspended as shown one end of the solenoid will b
 attracted by a magnet.
-
-Magnetism 181
 
 wound cylindrically so that, when an electric current passes
 through it, its turns are nearly equivalent to.a succession of
@@ -8688,44 +6199,11 @@ parallel circular circuits, and it acquires magnetic properties
 
 similar to those of a bar magnet.
 
-S,
-th,
-rr-rse%72
-
-AY
-\!
-
 4144,
-og 2 Se,
 
-a Ss,
-20S LI 7,
-- oe
-ois nN e
-- 2
-"--
-
-i)'
-
-- - aN AZ 2 j WN = ? ie ee ee '
-ze RES Sy. = = YI a SSS tg An ay
-e ~2 7.3 '
-
-fy" wr — +) e* =
-Ln ieee . 1. e ee te a oT ') v~ _ —=—
 see 2 : = eae A, At SS ] Soe Ss SS c
-. 6 = ~ARy Re eee oe Pf a ei tale ee, Peed zs
-4.%y-¢ oo,™", 2 Wwe ~~ wee 2 SZ: Af; Fee "=~ a ° aie , -
-tas ——_<,
-ase s
 
-=er
 a: ee - =
-flr \\ . pS 2 a
-= '' - > az
-*. | 0
-
-WW
 
 Fic. 280.—Magnetic field of a solenoid. This is best observed by cutting a piece of cardboard
 and fitting it around the solenoid, as shown. If iron filings be sprinkled on the cardboard
@@ -8736,70 +6214,40 @@ card. The card only exhibits the field in one of the sectional planes of the coi
 
 obvious that the field is the same for all sectional planes.
 
-~
-e
-"<
-
-e
-ss
-
 Fie. 281.—Knott vibrating spiral apparatus for illustrating mutual action of paralfef currents.
-When a current is allowed to pass through thé spiral, there is an attraction between the con-
-volutions, causing the lower end of the spiral to break the electrical connection with the
-mercury. The weight of the spiral then causes contact again, which, in turn, sets up attrae-
-tron of the convolutions. Continual making and breaking contact with the mercury causes
+When a current is allowed to pass through thé spiral, there is an attraction between the convolutions, causing the lower end of the spiral to break the electrical connection with the
+mercury. The weight of the spiral then causes contact again, which, in turn, sets up attraetron of the convolutions. Continual making and breaking contact with the mercury causes
 
 this spiral to vibrate up and down.
 
-182 Magnetism
-
 AT TERA UE AO NNN SYN a N\M Whang Ws
 
-ea aa jt Bul jin perp as rt an in ih it
-
-iti aT oe 7a)
-
 Fia. 282.—Knott floating helix and cell
-for demonstrating the magnetic polar-
-ity of an electro-magnetic solenoid.
+for demonstrating the magnetic polarity of an electro-magnetic solenoid.
 This combination will float upright in
 a jar of water. When the battery
 solution is placed in the small jar in
-the center of the cork disc, the sole-
-noid will act the same as a magnetic
+the center of the cork disc, the solenoid will act the same as a magnetic
 needle, one end developing south and
 the other end north of polarity.
 
 ——— alll. ut. ZS
 
-zh
-
-A
-\ '
-t
-
 Freo.283.—Knott
 Ampere's frames
 and support. It
-consists of, asup-
-port with balanced
-and insulated hold-
-er for the various
+consists of, asupport with balanced
+and insulated holder for the various
 frames. There are
 five frames; loop,
 plain rectangle, a
 static rectangle,
 rectangular coil and
 a solenoid. It
-serves, to demon-
-strate mutual ac- . |
+serves, to demonstrate mutual ac- .
 tion of magnets of solenoids, action of currents on solenoids, directive action of the earth on
 solenoids, directive action of magnets 0. currents, ''sucking"' effects of solenoids and action
 of acurrent on a pivoted magnet.
-
-i K@
-
-Magnetism 183
 
 #### Ques. What is the character of the lines of force of a
 
@@ -8812,29 +6260,18 @@ threaded or slung on the current line of flow, as in fig. 276.
 
 Fiqg.284.—Knott parallel current repulsion coils, with bi-filar suspension, for illustrating mutual
 influence of parallel currents and self-induction. The coils have 1,000 turns of wire, are
-form wound, taped, shellacked and baked. Terrninals are attached to loops for bi-filar sus-
-pension. The support for the coils support of two hard rubber pieces, adjustable on a cross-
-head so that the distance between the coils can be varied. This cross head is attached to a
+form wound, taped, shellacked and baked. Terrninals are attached to loops for bi-filar suspension. The support for the coils support of two hard rubber pieces, adjustable on a crosshead so that the distance between the coils can be varied. This cross head is attached to a
 rod which fits the clamp. Two sets of binding posts for series or multiple connections; coils
 wound for 110 volts when connected in series.
 
-we iow oO
-
-184 Magnetism
-
 #### Ques. What is the distribution of the lines of force?
 
-Ans. The lines of force form continuous closed curves run-
-ning through the interior of the coil; they issue from one end
+Ans. The lines of force form continuous closed curves running through the interior of the coil; they issue from one end
 and enter into the other end of the coil, as shown in fig. 277.
 
 #### Ques. What are the properties of a solenoid?
 
 Ans. A solenoid has north and south poles, and in fact pos-
-
-tUMMEL
-
-=UgA
 
 -COIL TURNS AT RIGHT ANGLES
 TO Ba PLANE. THROUGH
@@ -8844,8 +6281,7 @@ Fria. 285.—Action of currents on solenoids. Todemonstrate this fact experiment
 is constructed as shown, so that it can be suspended by two pivats in the cups A and C.
 The solenoid is then movable about a vertical axis, and if a rectilinear current QP, be passed
 beneath it, which at the same time traverses the wires of the solenoid, the latter is seen
-to turm and set at right angles to the lower current; that is, In such a position that its cir-
-cuite ure parallel to the fixed current; morcover, the current in the lower part of each of the
+to turm and set at right angles to the lower current; that is, In such a position that its circuite ure parallel to the fixed current; morcover, the current in the lower part of each of the
 'circuits is in the same direction as in the rectilinear wire. If, instead of passing a rectilinear
 current below the solenoid, it be passed vertically on the side, an attraction or repulsion will
 take place, according as the two currents in the vertical wire, and in the nearest part of the
@@ -8855,8 +6291,6 @@ sesses all the properties of an ordinary permanent magnet, with
 the important difference that the magnetism 1s entirely under
 
 control.
-
-Magnetism 185
 
 Since a solenoid carrying a current attracts and repels by its extremities
 the poles of a magnet, two such solenoids will attract and repel each other.
@@ -8874,14 +6308,6 @@ Rule 7.—CLOCK RULE—For a person standing at the south
 
 ### OF CURRENT
 
-G9)
-¢ | a
-
-i} | 'I i a
-v4 '
-° "
-7 :
-
 ### THUMB POINTS
 
 ### TO NORTH POLE
@@ -8897,19 +6323,12 @@ at the north pole, the current will flow counter clockwise.
 
 #### Ques. How does the magnetic strength of a solenoid vary?
 
-Ans. It is proportional to the strength of the electric cur-
-rent passing through it.
-
-186 Magnetism
+Ans. It is proportional to the strength of the electric current passing through it.
 
 ### COUNTER
 
-CLOCKW/S¢
-
 Fics. 287 and 288.—Application of the clock rule for polarity of solenoids. Jt will be noted
 that the polarity depends upon the direction of the current and the order of winding.
-
-1a}
 
 Fic. 289.—Mutual action of solenoids. ' 'When two solenoids traversed by a current are allowed
 to act on each other, one of them being held in the hand and the other being movable about
@@ -8917,14 +6336,11 @@ a vertical axis, as shown in the figure, attraction and repulsion will take plac
 case of two magnets as in figs. 260 and 261, depending upon Wainer ltke or unitke poles are
 respectively presented.
 
-Magnetism 187
-
 #### Ques. On what, besides the current strength, does the
 
 magnetizing power of a solenoid depend?
 
-Ans. The magnetic effect or the magnetizing power is propor-
-tional to the number of turns of wire composing the coil.
+Ans. The magnetic effect or the magnetizing power is proportional to the number of turns of wire composing the coil.
 Ques. How may the magnetizing power of a solenoid be
 
 increased?
@@ -8932,22 +6348,16 @@ increased?
 Ans. By inserting in the solenoid an iron core or round bar
 of soft iron.
 
-TO
-
 Fias. 290 and 291.—Magnetic conditions inside and outside of a solenoid. If magnetic needles
 be placed inside and outside the solenoid as shown and a current be passed through the coil,
-it will be found that the magnetic force inside the coil is in a direction opposite to that out-
-side the coil as indicated by the magnetic needles.
+it will be found that the magnetic force inside the coil is in a direction opposite to that outside the coil as indicated by the magnetic needles.
 
 #### Ques. Describe the action of an iron core.
 
 Ans. At first, the presence of an iron core greatly increases
 the strength of the field; after a time, however, as the strength
 of the current flowing in the exciting coils is increased, the
-conduciibility of the iron for the lines of force appears to de-
-crease, until a point 1s eventually reached when the presence
-
-188 Magnetism
+conduciibility of the iron for the lines of force appears to decrease, until a point 1s eventually reached when the presence
 
 of the 1ron core appears to have no effect in increasing the
 strength of the field.
@@ -8970,8 +6380,6 @@ Permeability is a measure of the ease with which magnetism passes through
 any substance. The permeability of good soft wrought iron 1s sometimes
 3,000 times that of air, varying with the quality of the iron.
 
-Magnetism 189
-
 ety
 
 Rule 8.—The permeability of any piece of material increases
@@ -8989,10 +6397,8 @@ From tests it has been shown that permeability increases
 with the flux density up to 'a certain point and then decreases,
 indicating that the iron is approaching a state of saturation.
 
-Magnetomotive Force.—This is a force similar to electro-
-motive force, that 1s, magnetic pressure. When a coil: passes
-around a core several times, 1ts magnetizing power, or magneto-
-motive force (mmf) is proportional both to the strength of the
+Magnetomotive Force.—This is a force similar to electromotive force, that 1s, magnetic pressure. When a coil: passes
+around a core several times, 1ts magnetizing power, or magnetomotive force (mmf) is proportional both to the strength of the
 current and to the number of turns in the coil. The product
 of the current passing through the coil multiplied by the
 number of turns composing the coil 1s called the ampere turns.
@@ -9005,8 +6411,6 @@ magnetic pressure = 1.2566 x turns Xamperes
 that 1s,
 
 magnetomotive force (mmf) =1.2566 xn XI.
-
-190 : Magnetism
 
 Ampere Turns.—When a coil passes around a core several
 times, its magnetizing power is proportional both to the strength
@@ -9034,25 +6438,19 @@ acting 1n a magnetic circuit encounters a certain opposition to
 the production of a magnetic field, just as electric pressure in
 an electric circuit encounters opposition to the production of
 a current. In the magnetic circuit this opposition is called
-the reluctance; it 1s simply magnetic resistance and may be de-
-fined as: the resistance offered to the magnetic flux by the substance
-magnetized, being the ratio of the magnetomotive force to the mag-
-netic flux.
+the reluctance; it 1s simply magnetic resistance and may be defined as: the resistance offered to the magnetic flux by the substance
+magnetized, being the ratio of the magnetomotive force to the magnetic flux.
 
 The unit of reluctance or magnetic resistance is the oersted
 (named after Hans Christian Oersted, the Danish physicist) and
-
-Magnetism 191
 
 is defined as: the reluctance offered by a cubic centimeter of
 vacuum.
 
 Analogy Between Electric and Magnetic Circuits.—The
-total number of magnetic lines of force, or magnetic flux, pro-
-duced in any magnetic circuit will depend on the magnetic
+total number of magnetic lines of force, or magnetic flux, produced in any magnetic circuit will depend on the magnetic
 pressure (mmf) acting on the circuit and the total reluctance
-of the circuit, just as the current in the electrical circuit de-
-pends upon the electrical pressure and the resistance of the
+of the circuit, just as the current in the electrical circuit depends upon the electrical pressure and the resistance of the
 
 To make this plain, Ohm's law states that
 
@@ -9066,8 +6464,7 @@ The resistance, as already explained, depends on the materials
 of which the circuit 1s composed, and their geometrical shape
 and size.
 
-Similarly, in the magnetic circuit, the total number of mag-
-netic lines produced by a given magnetizing solenoid depends
+Similarly, in the magnetic circuit, the total number of magnetic lines produced by a given magnetizing solenoid depends
 on the magnetic pressure, the material composing the circuit,
 and its shape and size.
 
@@ -9080,22 +6477,16 @@ expressed in units, the equation becomes:
 
 gilberts
 
-maxwells = ————_ | | |
-
-192 _ Magnetism
-
 The gilbert 1s the unit of magnetomotive force, equivalent to the
 magnetomotive force of .(958 ampere turn.
 
 It should be noted that in the electric circuit resistance causes heat to
-be generated and therefore energy to be wasted, but in the magnetic cir-
-cuit reluctance does not involve any similar waste of energy.
+be generated and therefore energy to be wasted, but in the magnetic circuit reluctance does not involve any similar waste of energy.
 
 Rule 9.—The reluctance is directly proportional to the length
 of the circuit, and inversely proportional to its cross sectional area.
 
-The reluctance of a magnetic circuit 1s calculated according to the fol-
-lowing equation:
+The reluctance of a magnetic circuit 1s calculated according to the following equation:
 length in centimeters
 
 reluctance = ——2 A
@@ -9103,19 +6494,12 @@ permeability < cross section 1n square centimeters
 
 ### BEFORE
 
-"on
-
-No 0a.©,9a,©
-spe a ee oe °
-
 Fias. 297 and 298.—Arrangement of molecules in iron bar before and after magnetization
 according to the generally accepted theory.
 
 Hysteresis.—The term hysteresis has been given by Ewing
-to the subject of lag of magnetic effects behind their causes. Hys-
-teresis means to "'lag behind,'' hence its application to denote
-the lagging of magnetism, in a magnetic metal, behind the mag-
-netizing flux.which produces it.
+to the subject of lag of magnetic effects behind their causes. Hysteresis means to "'lag behind,'' hence its application to denote
+the lagging of magnetism, in a magnetic metal, behind the magnetizing flux.which produces it.
 
 #### Ques. What is the cause of hysteresis?
 
@@ -9125,36 +6509,26 @@ energy to change their position.
 
 #### Ques. When do the molecules change their positions?
 
-Magnetism 193
+Ans. Both in the process of magnetization and demagnetization.
 
-Ans. Both in the process of magnetization and demagneti-
-zation.
-
-'Ny
-
-#### Ques. What becomes of the loss of energy due to hys-
-
-teresis?
+#### Ques. What becomes of the loss of energy due to hysteresis?
 
 Ans. It is converted.into heat in changing the positions of
 the molecules during magnetization and demagnetization.
 
-Ewing gives the value for the energy in ergs dissipated per cubic certi-
-meter, for a complete cycle of doubly reversed strong magnetization for
+Ewing gives the value for the energy in ergs dissipated per cubic certimeter, for a complete cycle of doubly reversed strong magnetization for
 a number of substances as follows:
 
 Fias. 299 and 300.—Experiment
 illustrating the molecular
 theory of magnetism. Coarse
 steel filings are placed inside a
-small glass tube and the con-
-tents magnetized. It will be
+small glass tube and the contents magnetized. It will be
 found that filings which at first
 had no definite arrangement
 will rearrange themselves under
 the influence of magnetic force,
-and assume symmetrical posi-
-tions, each one lying in line
+and assume symmetrical positions, each one lying in line
 with, or parallel toits neighbor,
 as shown in the lower figure.
 
@@ -9165,25 +6539,19 @@ Energy dissipated
 
 Substance (ergs)
 Very soft annealed 110M sickened ona die eon bide othe haw keeles 9,300
-Less '' Tie dice ee nee a se ea ee eo ain 16,300
+
 Hard drawn steel wire............. 0.00 cece ee ee eee ee een ees 60,000
-Annealed = Pee eek ee i eee ee ae ae eee ee 70,000
+
 Same steel glass hard... .. 0.0... ce eee een 76,000
 Piano steel wire annealed................ 0.00 cece eee ees 94 ,000
-
-7 re "SE -"WOMNAl LEIN DER sicues vc rics Ho eae eee ee Aes 116,000
-= Oe LASS Eg irs pierces tou te bases ede, Basta rae ates 117,000
 
 Approximately 28 foot pounds of energy are converted into heat in
 making a double reversal of strong magnetization in a cubic foot of iron.
 
-194 - Magnetism
-
 Residual Magnetism.— When a mass of iron has once been
 magnetized, it becomes a difficult matter to entirely remove all
 traces when the magnetizing agent has been removed, and, as a
-general rule, a small amount of magnetism is permanently re-
-tained by the iron. This is known as residual magnetism, and
+general rule, a small amount of magnetism is permanently retained by the iron. This is known as residual magnetism, and
 it varies in amount with the quality of the iron.
 
 Fia. 301.—Hysteresis loop or curve showing how B, changes when H, is periodically varied. In
@@ -9191,55 +6559,33 @@ the figure H = number of lines of force per sq. cm. (strength of field) and B = 
 lines of induction per sq. cm. If now H, be gradually diminished to zero, it is found that the
 value of B, for any given value of H, 1s considerably greater when that value of H, was
 reached by decreasing H, from a higher value, than when the same value was reached by in-.
-creasing H, froma lower value; that is, tosay, the curve AC, when H, is decreased, is very dif-
-ferent from the curve OA, when it is increased. Take for instance, the value He = 20. When
+creasing H, froma lower value; that is, tosay, the curve AC, when H, is decreased, is very different from the curve OA, when it is increased. Take for instance, the value He = 20. When
 this is reached by increasing H, from 0 to 20, the corresponding value of B, is 5,100, but
 when it is reached by decreasing H, from 94 to 20, the value of B, is 12,200. It may be noted,
-too, that when H, is reduced to zero, B, still has a value OC, or 10,300, whichis nearly three-
-quarters the value it had when H, was 94. This induction is the "residual magnetism' men-
-tioned already. Jn soft iron it will nearly all disappear on tapping, but without this it
+too, that when H, is reduced to zero, B, still has a value OC, or 10,300, whichis nearly threequarters the value it had when H, was 94. This induction is the "residual magnetism' mentioned already. Jn soft iron it will nearly all disappear on tapping, but without this it
 can also be removed by reversing the current in the magnetising coil, so as to demagnetise
 theiron. The curve shows that a demagnetising force of H = 23 is required to make B, zero
 at the point D. This force is called the coercive force of the iron, and measures the tenacity
-with which it holds the residual magnetism. As the magnetising force is still further in-
-creased in reverse direction, the curve goes from D, to E, where the1iron becomes saturated
+with which it holds the residual magnetism. As the magnetising force is still further increased in reverse direction, the curve goes from D, to E, where the1iron becomes saturated
 negatively. On gradually returning, H, to zero, the curve goes from E, to F, along a similar
 but opposite path to AC, OF, being again the residual magnetism. The magnetising force
 has now passed round a cycle from O, to a positive value, back to O, toa negative value,
 and again back to O, and if this cycle be repeated several times, the B-H curve becomes a
 loop FGACDE, which is symmetrical about the center O.
 
-Magnetism 195
-
 Well annealed, pure wrought iron, as a rule, possesses very little residual
 magnetism, while, on the other hand, wrought iron, which contains a
-large percentage of impurities, or which has been subjected to some har-
-dening process, such as hammering, rolling, stamping, etc., and cast iron,
+large percentage of impurities, or which has been subjected to some hardening process, such as hammering, rolling, stamping, etc., and cast iron,
 possess a very large amount of residual magnetism.
 
 Residual magnetism in iron is of great importance in the working of the
 self-exciting dynamo, and is, indeed, the essential principle of this class of
 machine.
 
-That is, without residual magnetism in the field magnet core, the dy-
-namo when started would not generate any current unless it received an
+That is, without residual magnetism in the field magnet core, the dynamo when started would not generate any current unless it received an
 initial excitation from an external source.
 
-16,000 EALED_IRS
-eA caw
-ot
-2,000
-12,0 O TLIO
-S KY"
-SSS
-x > f/f ©
-8,000 & e a >
-Cy iy Y vee
-ey iy £'>, p>
-4,000 oS ey &
 ott
-
-0 5 10 20 30 40
 
 Fic. 302.—BH curves for iron and steel.
 
@@ -9251,8 +6597,7 @@ common direction.
 1. What is magnetism?
 2. What is a lodestone (incorrectly spelled loadstone) ?
 
-3. Describe two kinds of magnetism, explaining na-
-ture of each.
+3. Describe two kinds of magnetism, explaining nature of each.
 
 Magnetism
 
@@ -9306,8 +6651,6 @@ use is made of same?
 
 . State Ewing theory of magnetism.
 
-Electro-Magnetic Induction 197
-
 ## CHAPTER 10
 
 Electro-Magnetic Induction
@@ -9327,13 +6670,10 @@ Faraday discovered that if he took a wire, joined its
 ends and moved it in front of a magneto, a current would
 be induced in the wire.  hecurrent is called the induced
 
-198 Electro-Magnetic Induction
-
 current and that part of the wire moved in the magnetic
 field, the inductor.
 
-All dynamos of whatever form, are based upon this dis-
-covery made by Faraday in 1831, which in rule form is a:
+All dynamos of whatever form, are based upon this discovery made by Faraday in 1831, which in rule form is a:
 follows:
 
 FARADAY'S DISCOVERY—Electric currents are induced in inductors'
@@ -9367,10 +6707,7 @@ of the magnetic needle around the electric circuit (1821) based upon Oersted's d
 electro-magnetism in 1820; he discovered electro-magnetic induction (1831), a principle upon
 which is founded the development of dynamo machinery; specific inductive capacity (1838);
 magnetic polarization of light (1845); diamagnetism (1846). He was a brilliant experimenter,
-and contributed greatly to the knowledge upon which is based present day practice of elec-
-tricity.
-
-Electro-Magnetic Induction 199
+and contributed greatly to the knowledge upon which is based present day practice of electricity.
 
 its inter-polar lines of force traverse the disc from side to side. 'There
 are two copper brushes, one bears against the shaft, and the other against
@@ -9382,24 +6719,10 @@ disc be rotated clockwise, the current induced in the circuit will flow out
 at the brush which touches the circumference, and return through the
 brush at the shaft.
 
-A /,
-
-wh
-—
-Ss
-
-i"
 Illi.
-f Ee, 7
 
-—
--
-—
-—
-
-TOT
 sil
-i
+
 Fia. 304.—Faraday's dynamo which embodies his discovery in 1831 of electromagnetic induc-
 
 tion, the principle upon which all dynamos work, as well as induction coils, transformers, and
@@ -9418,35 +6741,6 @@ boint from which the motion originated.
 
 Electro-Magnetic Induction
 
-| 'ulotoy} poNpul st (c] 10 q se YoNs) sInssoid 3S819A01 OU A][ZUIPIODNe
-pue '9910; JO Soul, OU SIND PNIMND [BUII}X9 OY} BSNBdoq 'yINDIID [BUII}X9 BY} UL JNO MO] []IM 8}UaIIND Appa ay} JO aWOs 'OIIM &
-AQ p9}D9UUOD PUR ISIP 9Y} JO BOUIIOJWINIIID sy} Jsulese Jo4}O oy} pue qny ay} JsUIeZe sJeaq BUO 7eY} OS padeid aq saysniq JI
-'MON. "UMOYUS SB S}UILIND Apps jo ied & UI S}[NSeI pue '(7 pue Gg sainssald yeom Suisoddo OM} 94} SadUR[eGIIAO 'Fy A[Zuipsoo
-"OY '"SPley yeom ay} Ul ",q JO 'q ainssaid podnpul ueY} J9}e013 SI pjay Buo1js ay} Ul 'FY ainssaid paonpul 'st yeyQ '29jua2 ayz
-ULOL{ BJOWLIL SSA] LO ALOUL * "J 10 "JJ SD JUauiaja 1aYJ0 aWOS BUOID UDY] Lajpa19 St 'Spy Buoy ainssasd pamnput ay} '(umoys uorjtsod)
-49}U4ad ay} Sassod 'Sy sv aauay 'pjalf ay} fO 4a}Uad ay] JD Jsasuoss St uous aatjonput ay JT '(cog °BY ul poljdde se) 9[N1 § ZulwoLy Bul
--Ajdde Aq poululisjep SB UOT}DeIIp UI pIVMdN JUSIMS BVONpuU! [JIM YIYM 'SaUul] SJOUBeUW 4ND [[IM Play VY} SS019e S2AOUI 7 SB 'SY
-SB USWA ([eIpel) AUB VSIMYIO][I PoUIN} SI OSIP 9Y} SB 'uolZD4adO UZ *SyIOM OUIeUAp Ss AEBpeEle 4H MOH—'90€ pue cog 'soy
-
-### NOILVLOY
-
-### NOILIIYIG
-
-aYNSS Jud
-ISa3IAIy4 M01
-
-BYNSS3IYd SYNSS3INd
-
-eae qwnssaud GuVMY0s HOIH
-WA GUVMY0s HOIH anal4
-: SNOULS
-S HSNUa
->)
-Sy WWy0 39Y03
-\ ee) 5, 4 aUnss 28d: LNJYYND Paci
-
-Electro-Magnetic Induction 201
-
 Faraday's principle may be extended as follows to cover all
 cases of electromagnetic induction:
 
@@ -9457,9 +6751,7 @@ number of lines of force passing through the circuit, a current is
 induced therein which lasts only during the interval of change in
 the number of lines of force embraced by the circuit.
 
-#### Ques. Explain just what happens when a current is in-
-
-duced by electromagnetic induction.
+#### Ques. Explain just what happens when a current is induced by electromagnetic induction.
 
 Fries. 307 and 308.—Current induced in conducting circuit by altering the field strength.
 
@@ -9469,14 +6761,11 @@ he conductor, in its motion, should so cut the magnetic lines
 is to alter the number of lines of force that pass through the
 ircuit of which the moving conductor forms a part.
 
-202 Electro-Magnetic Induction
-
 #### Ques. What is the proper name for a ''conductor'"' which
 
 moves across the magnetic field?
 
-Ans. An inductor, because it is that part of the electric cir-
-cuit in which induction takes place.
+Ans. An inductor, because it is that part of the electric circuit in which induction takes place.
 
 In the case of a dynamo, an inductor may be either a copper wire or
 copper bar.
@@ -9484,12 +6773,6 @@ copper bar.
 #### Ques. How may a conducting circuit be moved across a
 
 magnetic field without having a current induced therein?
-
-My
-' = .
-i
-
-SRE Me,
 
 Fig. 309.—Electromagnetic induction J: In order to induce a current by electro-magnetic
 induction, an inductor must be so moved through a magnetic field that the number of lines
@@ -9503,10 +6786,7 @@ single coil, be moved in a uniform magnetic field, as shown in
 fig. 309, so that only the same number of lines of force pass
 through it, no current will be generated, for since the coil 1s
 moved by a motion of translation to another part of the field,
-as many lines of force will be left behind as are gained in ad-
-vancing from its first to its second position.
-
-Electro-Magnetic Induction 203
+as many lines of force will be left behind as are gained in advancing from its first to its second position.
 
 #### Ques. Describe another movement by which no current
 
@@ -9534,34 +6814,19 @@ lines of force which pass through it.
 
 fig. 311?
 
-204 Electro-Magnetic Induction
-
-®
-
 Ans. The current induced in the coil will flow around it in
-a clockwise direction (as observed by looking along the mag-
-netic fleld in the direction 1n which the magnetic lines run) if
+a clockwise direction (as observed by looking along the magnetic fleld in the direction 1n which the magnetic lines run) if
 the effect of the movement be to diminish the number of lines
 of force that pass through the coil. The current will flow in
 the opposite direction (counter-clockwise) if the movement be
 such as to increase the number of intercepted lines of force.
-
-"r=
-="
 
 Fig. 311.—Electro-magnetic induction 2: Ifacoil be given a motion of rotation from any point
 within its own plane in passing through a uniform magnetic field, @ current will be inducea
 tn the cotl because the number of lines of force passing through it is altered.
 
 wef
-il |
 
-pe
-ge
-
-1"
-
-(
 anni
 
 Fig. 312.—Electro-magnetic induction 3: If a coil be given a simple motion of translation in a
@@ -9569,8 +6834,6 @@ non-uniform or variable magnetic field, @ current will be induced in the cotl, w
 motion be from the dense to the less dense regton of the field or the reverse, because the number of
 
 lines of force passing through the cotl is altered.
-
-Electro-Magnetic Induction 205
 
 #### Ques. If the magnetic field be not uniform, as in fig. 312,.
 
@@ -9586,8 +6849,7 @@ laws of electro-magnetic induction which, on account of the
 
 ### COIL ROTATED
 
-res. 313 and 314.—Law 1. Current induced 1, by rotation of coil (fig. 313), and 2, by rota-
-tion of field (fig. 314). Motion is purely a relative matter, and it makes no difference
+res. 313 and 314.—Law 1. Current induced 1, by rotation of coil (fig. 313), and 2, by rotation of field (fig. 314). Motion is purely a relative matter, and it makes no difference
 electrically whether the coil rotate, or the field rotate.
 
 mportance of the subject, it is well to carefully consider. The
@@ -9602,25 +6864,17 @@ nagnetic lines embraced in the circuit.
 *NOTE.—The term altered should be understood. The lines of force passing through a
 11 are altered when they are etther increased or decreased 1n number.
 
-206 Electro-Magnetic Induction
-
-Law 2.—The voltage (or current) induced in a circuit 1s propor-
-tional to the rate of increase or decrease in the number of mag-
-netic lines embraced by the circutt.
+Law 2.—The voltage (or current) induced in a circuit 1s proportional to the rate of increase or decrease in the number of magnetic lines embraced by the circutt.
 
 For instance, if m, equal the number of magnetic lines embraced by
-the circuit at the beginning of the movement, and n', the number em-
-braced after a very short interval of time ¢, then
+the circuit at the beginning of the movement, and n', the number embraced after a very short interval of time ¢, then
 
-/
-
-n—n
 'the average induced voltage =
 SMALL CURRENT LARGE CURRENT
 OR VOLTAGE OR VOLTAGE
 
-NX Nef A ;
-SMALL INCREASE LARGE INCREASE
+### SMALL INCREASE LARGE INCREASE
+
 (OR DECREASE) (OR DECREASE).
 
 Fries. 315 to 317.—Law 2. Relation between increase (or decrease) of field and voltage or
@@ -9640,17 +6894,6 @@ Law 4.—By joining in series a number of inductors or coils
 moving in a magnetic field, the electric pressures in the separate
 parts are added together.
 
-l
-|
-,
-!
-'
-|
-
-|
-
-Electro-Magnetic Induction 207
-
 The reason for this 1s apparent by considering a coil of wire having
 several turns and moving in a magnetic field so as to cut magnetic lines.
 During the movement, the lines cut by the first turn are successively cut
@@ -9661,23 +6904,11 @@ turns. The pressures induced in the separate turns are therefore added.
 Example.—If a coil of wire of 50 turns cut 100,000 lines in '4/100 of
 a second, what will be the induced voltage?
 
-100,000,000 ———__1____>
 LINES OF FORCE —__—____ >
-
-7 |
-
-Jf a a oe
-J
-
-Re eo a & @ a = 22 @e 2 @ :
-. ¢
-
-),
 
 ### TIME OF ROTATION
 
 / ONE SECOND
-NS ¥
 
 Fias. 318 and 319.—Law 3. Conditions for generating one volt pressure.
 
@@ -9700,29 +6931,18 @@ direction.
 NOTE.—The term positive direction is understood to be the direction along which a
 tree N pole would tend to move.
 
-208 Electro-Magnetic Induction
-
 Law 6.—An increase in the number of magnetic lines which
 pass through a circuit induces a current in the negative direction
 around the circuit.
 
 ### ONE TURN
 
-_f__N
-
 ROTATION \ |
 
-_ \
-
-JG
-I
-
-y\ UCU
 a Se" Aid
 
 ### THREE TURNS
 
-erect eee = >-
 ONE VOLT nant _ THREE VOLTS
 
 Fics. 320 and 321.—Law 4. Relation between number of turns of coil and voltage generated.
@@ -9735,33 +6955,18 @@ COIL
 
 iit
 
-|
-
-ma
-+3
-
-i
-
-### CURREN
-
 ### CLOCKWISE OR
-
-(BOSITIVE DIRECHON
 
 Fias. 322 and 323.—Law 5. Effect of decrease in number of lines of force passing through ¢
 conducting circuit.
 
-Electro-Magnetic Induction 209
-
-' The reason for the change of direction of the current. for. decrease or
+The reason for the change of direction of the current. for. decrease or
 increase in the number of lines cut, as stated in the fourth and fifth laws,
 will be seen by aid of the formula given under the 'second law, viz:
 
-/
-
 electromotive force = a : s Wrage iasids Sivatoarca:savdadan teas evan 2) Gh erase teed (1)
 but by Ohm's law
-current _."lectromotive force or, I ae ee re er re: (2)
+
 resistance R
 
 Substituting (1) in (2)
@@ -9769,24 +6974,17 @@ Substituting (1) in (2)
 ### INCREASE MOVEMENT OF COIL
 
 waa
-as . a a ' %
-aon ae 1 i.) '
+
 mee eee
-——j ! poh
-A ty}
-pF yy j
-cameo ERB ' : ae ; 7
-4 V4 . y
+
 " INDUCED CURRENT
 (oR NEGATI CLOCKWISE
 ) OR NEGATIVE DI T
 '1@s. 324 and 325.—Law 6. Effect of in- : RECTIO
 crease in the number of lines of force
 passing through a conducting circuit.
-nm—n'
-n—n'
+
 current = 0) i ee a re ee eee (3)
-Rt
 
 Now in equation (3) if there be a decrease in the number of lines cut,
 n', will be less than 7, hence the current will be positive (+); again, if the
@@ -9801,8 +6999,6 @@ y applying Lenz law and the right hand rule for polarity. Since there is opposit
 1n0vement of the coil, there will be unlike poles when the coil recedes (fig. 323) and Izke poles
 then the coil approaches the magnetic pole. a
 
-210 Electro-Magnetic Induction
-
 Since the strength of the field depends on the proximity to the pole,
 the approach and recession of a conductor involve an increase and decrease
 in the rate of cutting of magnetic lines, hence a reversal of current.
@@ -9815,15 +7011,11 @@ the higher will be the voltage.
 
 ### ONE VOLT FIVE VOLTS
 
-100,000, 000 a
 LINES OF FORCE ,..
-fe
 
-|
-j j
-TIME. OF ROTATION TIME OF ROTATION |
+TIME. OF ROTATION TIME OF ROTATION
 
-ONE SECOND ONE- FIFTH SECOND |
+### ONE SECOND ONE- FIFTH SECOND
 
 Fics. 326 and 327.—Law 7. Relation betwecn rate of cutting the lines of force and voltagé
 generated. :
@@ -9834,26 +7026,13 @@ produces 1t.
 
 This is illustrated in figs. 328 and 329.
 
-Electro-Magnetic Induction 211
-
-Rules for Lirection of Induced Current.—There are a num-
-ber of rules to quickly determine the direction of an induced
+Rules for Lirection of Induced Current.—There are a number of rules to quickly determine the direction of an induced
 current when the direction of the lines of force, and motion of
-the inductor are known. The first rule here given was de-
-vised by Fleming and is very useful. It is sometimes called
+the inductor are known. The first rule here given was devised by Fleming and is very useful. It is sometimes called
 the "dynamo rule."
 
 ### MOTION OF MAGNET
 
-S
-
-GE
-
-(=
-ie
-
-we. "niin _, es
-Aub oe LL eS
 Cerone
 
 ### GALVANOMETER
@@ -9864,8 +7043,7 @@ zt. In the experiment, in order to produce the induced current, energy must be e
 in bringing the magnet to the coil and in taking it away, which is in accordance with the
 law of conservation of energy.
 
-Fiq. 329.—Experiment illustrating Lenz's law. If a copper ring be held in front of an ordi-
-nary electro-magnet, and the current circulating through the coil of the magnet be in such
+Fiq. 329.—Experiment illustrating Lenz's law. If a copper ring be held in front of an ordinary electro-magnet, and the current circulating through the coil of the magnet be in such
 a direction as to magnetize the core as indicated by the letters S,N, then as the current
 increases in the coil more and more of the lines of force proceeding from N, pass through
 the ring OO, from left to right. While the field is thus increasing, current will be induced
@@ -9873,21 +7051,12 @@ in the copper ring in the direction indicated by the arrows, such currents tendi
 a field that would pass through the ring from right to left, and would therefore retard the
 growth of the field due to the electro-magnet M.
 
-212 Electro-Magnetic Induction
-
 Fleming's Rule.—Jf the forefinger of the right hand be pointed
 in the direction of the magnetic lines, and the thumb (at right
-
-iH
-"
-OF sae
 
 ### DIRECTION OF
 
 ### LINES OF FORCE
-
-uy !
-hd
 
 Fies. 330 and 331.—Fleming's rule for direction of induced current. Extend the thumb, fore
 finger and middle finger of the r1ght hand so that each will be at right angles to the other two.
@@ -9896,29 +7065,15 @@ moves, the forefinger tn the dtrectton of the lines of force (N to S), then will
 potnt in the direction 1n which the induced current flows. This is a very useful rule and the
 author recommends that it be thoroughly understood.
 
-ta ee
-
-CENERATOR Y ¥ le
 DIRECTIONS Ol ; —
-ee * Ey) a"
 
 ont "i 3S
-- ad
-{ta | 3] |
-WiOlsIiSlo
-ce pd te
-ee | o| |~
-agg WPM ters Sad |
-
-x
 
 Fig. 332.—A rule for direction.of induced current. which, in some cases, is more conveniently
 applied than Fleming's rule: Hold the thumb, forefinger and remaining fingers of the right
 hand at right angles to each other; place the hand 1n such position that the forefinger potnts tn
 the direction of motion of the inductor, the three fingers in the dsrectson of the lines of force, then
 will the thumb potnt in the direction of the tnduced current.
-
-Electro-Magnetic Induction 213
 
 angles to the forefinger) be turned in the direction of the motion
 of the conductor, then will the middle finger, bent at right angles to
@@ -9928,31 +7083,14 @@ The application of this rule is shown in figs. 331 and 332. The right hand
 is so placed at the north pole of a magnet, that the forefinger points in
 the direction of the magnetic lines; the thumb in the c:rection of motion
 of the conductor; the middle finger pointed at right angles to the thumb
-and forefinger, indicates the direction of the current induced in the con-
-ductor.
+and forefinger, indicates the direction of the current induced in the conductor.
 
 OF CURRENT &
-' ee EN S
+
 2. pS 2 » gx =
 LZ X. X= a
 
-il
-
-X\
-oe hi 4 v
-
-a, as
-o, 2 -
-i £ % :
-"an AN
-NGS 5
-7 : : hae
-Re 0
 Ser aks
-mc Us er
-.)
-
-VAN
 
 MAGNETIC NEEDLE ~~ =
 TURNS TO LEFT
@@ -9967,8 +7105,6 @@ south seeking (--) pole will be urged to the right.
 For certain particular cases in which a fixed magnet pole acts on a
 movable circuit, the following converse to Ampere's rule will be found
 useful: If a man swim in the wire with the current, and turn so as to look
-
-214 Electro-Magnetic Induction
 
 along the direction of the lines of force of the pole (that is, as the lines
 of force run, from the pole if it be north seeking, foward the pole if it be
@@ -9997,15 +7133,11 @@ current.
 Self-induction.—This term signifies the property of an electric
 current by virtue of which it tends to resist any change of value.
 
-Electro-Magnetic Induction 215
-
 Self-induction 1s sometimes spoken of as electromagnetic ineriza,
 and is analogous to the mechanical inertia of matter.
 
-It is on account of self-induction of the induced currents in the arm-
-ature winding of a dynamo, that sparks appear at the brushes when the
-latter are not properly adjusted, hence the importance of clearly under-
-standing the nature of this peculiar property of the current.
+It is on account of self-induction of the induced currents in the armature winding of a dynamo, that sparks appear at the brushes when the
+latter are not properly adjusted, hence the importance of clearly understanding the nature of this peculiar property of the current.
 
 Self-induction is fully explained in the chapter following.
 
@@ -10013,32 +7145,16 @@ Self-induction is fully explained in the chapter following.
 
 ### INDUCTION COIL
 
-AAAS
-
-AZ
-
-CT)
-
-——————— er
-
 Fic. 335.—Make and break ignition
 circuit illustrating self-induction.
 In operation, when the circuit is
-suddenly broken at L, the self-in-
-duction or electromagnetic inertia
+suddenly broken at L, the self-induction or electromagnetic inertia
 of the primary induction coil causes
-the current to bridge the gap be-
-tween the two points of the ignitor,
-thus producing an arc* before com-
-ing to rest.
-
-ne Se
+the current to bridge the gap between the two points of the ignitor,
+thus producing an arc* before coming to rest.
 
 *NOTE.—Careful distinction should be made between the terms arc and spark. An arc
 bridges the gap; aspark jumps the gap.
-
-11.
-12.
 
 Electro-Magnetic Induction
 
@@ -10076,15 +7192,13 @@ current: Fleming's; Ampere s; palm.
 What is self induction?
 What causes sparks at the brush of a dynamo?
 
-Induction Coils 217
-
 ## CHAPTER 11
 
 Induction Coils
 
 The induction coil has always been a popular piece of ap-
-' paratus with those interested in electrical science; the experi-
-' ments which can be performed with its aid are very numerous.
+paratus with those interested in electrical science; the experi-
+ments which can be performed with its aid are very numerous.
 It is of considerable importance, especially in its application to such
 useful purposes as X-ray work, wireless telegraphy and ignition for gas
 engines. The latter has caused manufacturers to give much attention
@@ -10094,9 +7208,8 @@ of design and construction.
 
 Induction coils may be divided into two general classes:
 - 1]. Primary coils;
-2. Secondary coils. |
-The subject of electro-magnetic induction has been fully ex-
-plained in Chapter 10, but it may be said, with special reference
+2. Secondary coils.
+The subject of electro-magnetic induction has been fully explained in Chapter 10, but it may be said, with special reference
 
 to induction coils, that the operation of the two classes just
 mentioned is respectively due to:
@@ -10107,8 +7220,6 @@ mentioned is respectively due to:
 Self Induction.—This is the property of an electric current
 by virtue of which zt tends to resist any change in tts rate of flow.
 
-218 Induction Coils
-
 It 1s sometimes spoken of as electromagnetic inertia and is
 analogous to the mechanical inertia of matter.
 
@@ -10116,8 +7227,7 @@ Self-induction is due to the action of the current upon itself during
 variations 1n strength.
 
 It becomes especially marked in a coil of wire, in which the adjacent
-turns act inductively upon each other upon the principle of mutual induc-
-lion arising between two separate adjacent circuits.
+turns act inductively upon each other upon the principle of mutual induclion arising between two separate adjacent circuits.
 
 Self-induction manifests itself by giving "'momentum'' to the
 
@@ -10125,23 +7235,18 @@ Self-induction manifests itself by giving "'momentum'' to the
 
 ### SECONDARY CIRCUIT
 
-<<
-PRIMARY CIRCUIT
+### PRIMARY CIRCUIT
 
-. :
 KEY
 
-Fia. 336 and 337.—Diagram showing the action of mutual induction between two circuits; the :
-one including a source of electrical energy and a switch; the other including a galvanometer, |
-but having no cell or other electrical source. During the increase or decrease in the strength |
-of the current as on closing or opening the key a current is ixduced in the secondary circuit |
-in a direction opposite to that of the primary current as indicated by the arrows. |
-
-|
-|
+Fia. 336 and 337.—Diagram showing the action of mutual induction between two circuits; the
+one including a source of electrical energy and a switch; the other including a galvanometer,
+but having no cell or other electrical source. During the increase or decrease in the strength
+of the current as on closing or opening the key a current is ixduced in the secondary circuit
+in a direction opposite to that of the primary current as indicated by the arrows.
 
 current so that it cannot be instantly stopped when the circuit is —
-broken, the result being a bright spark at the moment of |
+broken, the result being a bright spark at the moment of
 breaking the circuit.
 
 On account of this spark, a primary induction coil is used in low tension
@@ -10149,24 +7254,19 @@ or ''make and break"' ignition systems.
 
 In a single circuit, consisting of a straight wire and a parallel
 
-Induction Coils 219
-
 return wire there is little or no self-induction. When a circuit
 containing a primary induction coil and a battery is closed there
-is no spark because at the instant of closing the circuit the cur-
-rent is at rest and on account of self induction the current cannot
+is no spark because at the instant of closing the circuit the current is at rest and on account of self induction the current cannot
 at once rise to its full value.
 
-Mutual Induction.—This is a particular case of electro-
-magnetic induction in which the magnetic field producing an
+Mutual Induction.—This is a particular case of electromagnetic induction in which the magnetic field producing an
 electric pressure in a circuit is due to the current in a neighboring
 
 The effect of mutual induction may be explained with the
 aid of fig. 336.
 
 If, as illustrated, a circuit including a battery and a switch, be placed
-near another circuit, formed by connecting the two terminals of a gal-
-vanometer by a wire, it wil] be found that whenever the first circuit 1, is
+near another circuit, formed by connecting the two terminals of a galvanometer by a wire, it wil] be found that whenever the first circuit 1, is
 closed by the switch, allowing a current to pass in a given direction, a
 momentary current wi]l be induced in the second circuit 2, as shown by the
 galvanometer. A similar result will follow on the opening of the battery
@@ -10177,8 +7277,7 @@ while the momentary current at opening moves in the same direction.
 Currents, besides being induced in circuit 2, at make or break of circuit
 1, are also induced when the current in 1, is fluctuating in intensity.
 
-The most marked results are observed when the make or break 1s sud-
-den, the action being strongest at the break of the current in 1.
+The most marked results are observed when the make or break 1s sudden, the action being strongest at the break of the current in 1.
 
 The inductive effect of the current in the arrangement shown in figs. 336.
 and 337 is very weak.
@@ -10191,8 +7290,6 @@ Ans. The primary circuit.
 
 Ans. The secondary circuit.
 
-220 Induction Coils
-
 #### Ques. What names are given respectively to the currents
 
 in circuits 1 and 2?
@@ -10200,8 +7297,7 @@ in circuits 1 and 2?
 Ans. The primary, and secondary or induced current.
 Primary Induction Coils.—These represent the simplest
 
-form of coil, and are used chiefly in low tension ignition to in-
-tensify the spark when a battery forms the current source.
+form of coil, and are used chiefly in low tension ignition to intensify the spark when a battery forms the current source.
 
 ### IRON CORE
 
@@ -10220,63 +7316,41 @@ layers of No. 14 copper wire. The winding is usually covered and the ends capped
 ebonite so that the core and wires are not exposed.
 
 A primary coil consists of a long iron core
-wound with a considerable length of a low resis-
-tance insulated copper wire.
+wound with a considerable length of a low resistance insulated copper wire.
 
-The length of the core and the number of turns of the in-
-sulated wire winding determines the efficiency. The effect of
+The length of the core and the number of turns of the insulated wire winding determines the efficiency. The effect of
 the iron core is to increase the self induction.
-
-Induction Coils 221
 
 The spark produced, as previously explained, is due to self
 i induction, and it should be remembered that in the operation
-| of the coil, the spark occurs at the instant of breaking the circuit,
-: not at the instant of making.
+of the coil, the spark occurs at the instant of breaking the circuit,
+not at the instant of making.
 
 'Secondary Induction Coils.—The arrangement shown in
 
-- SECONDARY. _. |
-HOE y —_CIREUIT _mip--h-227. Jeg
-
-a
+- SECONDARY. _.
 
 PRIMARY CIRCUIT Ry
 
-'a Ta 7 +f
-
 [| Fre. 339.—Production of spark with plain coil. Connect the ends or leads of the secondary
-winding to fixed insulators with adjustable spark points so they are from one-sixteenth to one-
-eighth in. apart. Connect one end of the primary winding to an electric battery, and with the
-other lead of the primary winding brush against the other terminal of the battery, as in-
-dicated. When the contact is broken there will be a spark both at the point of rupture
+winding to fixed insulators with adjustable spark points so they are from one-sixteenth to oneeighth in. apart. Connect one end of the primary winding to an electric battery, and with the
+other lead of the primary winding brush against the other terminal of the battery, as indicated. When the contact is broken there will be a spark both at the point of rupture
 in the primary circuit and at the gap. An electric impulse is also-induced-in the secondary
 circuit when the primary circuit is closed and the current flowing in it gradually rises to its
 maximum value, but this impulse is too feeble to cause a spark to jump across the gap.
-Only the impulse induced in the secondary during the dying out of the current in the pri-
-mary is utilized. To avoid a spark at R, on break of primary circuit, place a condenser across
+Only the impulse induced in the secondary during the dying out of the current in the primary is utilized. To avoid a spark at R, on break of primary circuit, place a condenser across
 this circuit as at M,S, as shown in dotted lines.
 
-| fig. 339, may be considered as a very simple or rudimentary
+fig. 339, may be considered as a very simple or rudimentary
 !form of secondary induction coil.
-
-222 Induction Coils
 
 A secondary coil consists of a long iron
 wire core upon which is wound a primary and
 secondary winding.
 
-In the actual coil, the primary and secondary circuits (cor-
-responding to heavy and fine wire, respectively as shown in
-
-UY)
+In the actual coil, the primary and secondary circuits (corresponding to heavy and fine wire, respectively as shown in
 
 ### SECONDARY WINDING
-
-1 | P
-ha ack
-
-foe. WY Te
 
 ### LONG IRON WIRE CORE
 
@@ -10294,18 +7368,15 @@ The one property of such an arrangement that makes it of
 great value for most purposes is that the voltage of the induced
 current may be increased or diminished to any extent depending
 
-Induction Coils 223
-
 m the relation between the number. of turns in the primary and
 secondary winding.
 
 This relation may be expressed by the following rule:
 
 The voltage of the secondary current 1s (approximately) to the
-oltage of the primary current as the number of turns of the sec-
-mdary winding is to the number of turns of the primary winding.
+oltage of the primary current as the number of turns of the secmdary winding is to the number of turns of the primary winding.
 
-_ For instance, if the voltage of the primary current be 5 volts, the primary
+For instance, if the voltage of the primary current be 5 volts, the primary
 winding have 10 turns and the secondary 100 turns, then
 
 Secondary voltage: 5 :: 100 : 10
@@ -10321,8 +7392,7 @@ circuit the current strength 1s:
 25 watts +50 volts = 1% ampere (approximately)
 
 From this, it 1s seen that where the voltage is raised in the secondary
-circuit, the current flow is small as compared to that in the primary cir-
-cuit; therefore, heavy wire is used in the primary winding and fine wire
+circuit, the current flow is small as compared to that in the primary circuit; therefore, heavy wire is used in the primary winding and fine wire
 in the secondary, as indicated in figs. 339 and 340.
 
 For most purposes a very much higher secondary voltage is oe
@@ -10339,8 +7409,6 @@ The plain coil gives but one spark when the primary circuit
 s made and. broken, while the vibrator coil gives a series of
 sparks following.each other in rapid succession.
 
-224 Induction Coils
-
 Plain Secondary Induction Coils.—Coils of this class are
 very simple and consist of:
 
@@ -10350,41 +7418,23 @@ very simple and consist of:
 
 3. Secondary winding.
 
-AE
-
-WY
-
-———
-
-Fras. 341 to 343.—Knott lecture table primary secondary coil. Primary winding, 6X14 ins, |
+Fras. 341 to 343.—Knott lecture table primary secondary coil. Primary winding, 6X14 ins,
 few turns of coarse wire; secondary winding, 5 X214 ins. large number of turns. Core con- —
 sists of a bundle of soft iron wires molded by iron bands to form a nearly solid rod.
 
 The construction of a plain coil, such as would be suitable
 where a strong spark is not required, is about as follows:
 
-The core is made of soft annealed iron wires (No. 20 B and 5, gauge) |
-from one-half to three-quarters of an inch in diameter and about six inches |
+The core is made of soft annealed iron wires (No. 20 B and 5, gauge)
+from one-half to three-quarters of an inch in diameter and about six inches
 
-eS a ee Fe ee ne ee eee ee) NS eee
-
-+
-%.
-|
-
-nna " = Pe Oe _—
-
-Induction Coils 225
-
-long. Over this core 1s slipped a spool of insulating material (hard rub-
-ber or composition), on which is wound first the primary winding of the
+long. Over this core 1s slipped a spool of insulating material (hard rubber or composition), on which is wound first the primary winding of the
 coil, which consists of several layers of about No. 18 B and S, gauge silk
 insulated magnet wire.
 
 After the primary winding has been wound over the insulated core,
 and the ends have been properly brought out through the heads of the
-spool to be connected to binding posts thereon, a layer of insulating ma-
-terial is applied over the primary wire, and the secondary winding is then
+spool to be connected to binding posts thereon, a layer of insulating material is applied over the primary wire, and the secondary winding is then
 wound on.
 
 The wire for the secondary winding consists of about No. 36 B and §,
@@ -10393,11 +7443,9 @@ depending on the desired voltage of the secondary current.
 
 When all the wire has been wound on, the ends are brought out to
 the binding posts, the coil is soaked in shellac dissolved in alcohcl and
-_ baked, or in melted paraffin or a paraffin compound, and allowed to cocl.
+baked, or in melted paraffin or a paraffin compound, and allowed to cocl.
 . It is then placed in either a cylindrical hard rubber shell or in a hard
 wood box.
-
-- ene eee ee ee |
 
 The proportions of such coils vary greatly; for motor cycle use they
 are made long and of small diameter (102% inches for instance), while
@@ -10415,14 +7463,12 @@ sand brush the other end of the primary winding against the
 
 #### Ques. What happens when the primary circuit is made?
 
-Ans. An electric pressure 1s induced in the secondary cir-
-scuit, but of not enough intensity to cause a spark to jump
+Ans. An electric pressure 1s induced in the secondary cirscuit, but of not enough intensity to cause a spark to jump
 &across the air gap.
 
-_ Ques. What happens when the primary circuit is sud-
-) denly broken? :
+#### Ques. What happens when the primary circuit is sud-
 
-226 Induction Coils
+) denly broken?
 
 Ans. A spark is produced both at the point of break in the
 primary circuit and at the air gap in-the secondary circuit.
@@ -10442,8 +7488,7 @@ troubles, if he remember that one of the most important conditions for
 
 Fics. 344 and 345.—Conventional diagram of a condenser. A condenser is adevice designed to
 absorb or hold an electric charge in about the same manner as a vessel will hold a liquid.
-Every conductor of electricity forms a condenser and its capacity for holding a charge de-
-pends upon the extent of its surface. A condenser is therefore made of conductive material
+Every conductor of electricity forms a condenser and its capacity for holding a charge depends upon the extent of its surface. A condenser is therefore made of conductive material
 formed into such shape as to present the maximum surface for a given amount of material.
 
 obtaining a good spark is that the break take place with great rapidity.
@@ -10453,23 +7498,17 @@ tension.
 Secondary Induction Coils with Vibrator and Condenser.—
 A plain secondary coil. such as just described, wil only give
 feeble sparks for its size because the inductive effect of the
-primary winding in the secondary, depends as previously ex-
-plained, on the rate at which the current in the primary winding
+primary winding in the secondary, depends as previously explained, on the rate at which the current in the primary winding
 decreases or dies out.
-
-Induction Coils 227
 
 If a strong inductive effect is to be produced in the secondary,
 the current in the primary must stop suddenly.
 
-This is prevented by self induction in the primary winding, which op-
-poses any change in the current strength. The direct result is that, as the
+This is prevented by self induction in the primary winding, which opposes any change in the current strength. The direct result is that, as the
 primary circuit is broken, a spark appears at the break, which means that
 the current continues to flow after the break has occurred, dying down
 comparatively slowly, hence, the inductive effect on the secondary winding
 is small.
-
-SS  ————————
 
 Fic. 346.—Knott liquid interrupting induction coil without interrupter for 110 volt circuit.
 This coil has been designed to work on the 110 volt circuit and to withstand the entire
@@ -10483,10 +7522,6 @@ away the contact points, such an arrangement is obviously
 defective.
 
 The vibrator condenser coil is designed to overcome this
-
-228 Induction Coils
-
-4,
 
 trouble and also to give a series of sparks following in rapid
 succession instead of one.
@@ -10511,8 +7546,6 @@ to vibrate. At a point about midway between its ends, contact is made
 with the point of an adjusting screw, from which it springs away and
 returns in vibrating. The points of contact of blade and screw are tipped
 
-Induction Coils 229
-
 with platinum. One wire of the primary circuit is connected to the blade
 and the other to the screw, hence, the circuit is made when the blade is
 in contact with the screw and broken when it springs away.
@@ -10524,14 +7557,7 @@ of the primary current.
 Every conductor of electricity forms a condenser and its capacity for
 absorbing a charge depends upon the extent of its surface. Hence, a con-
 
-tl It
-
-SES
-Se
-=
-
-ae
-CONDENSER
+### CONDENSER
 
 Fias. 343 and 349.—Detail of vibrator showing condenser connection and how it prevents
 arcing at the break in the primary current.
@@ -10546,29 +7572,19 @@ each alternate layer being connected at the ends.
 The symbols for a condenser in wiring diagrams are shown in figs. 344
 and 345.
 
-230 Induction Coils
-
-Fig. 351 1s a diagram of a vibrator coil. C, represents the core com-
-posed of soft iron wires. P, is the primary winding and S, the sec-
-ondary. There is no connection between these windings and they are
+Fig. 351 1s a diagram of a vibrator coil. C, represents the core composed of soft iron wires. P, is the primary winding and S, the secondary. There is no connection between these windings and they are
 carefully insulated. Y, 1s the vibrator and D, the center about which it
-vibrates. W, is a switch used for opening and closing the primary cir-
-cuit; B, a battery of several cells (four to six for ignition coils). The
+vibrates. W, is a switch used for opening and closing the primary circuit; B, a battery of several cells (four to six for ignition coils). The
 point of adjusting screw A, rests against a platinum point R, soldered
 upon the vibrator.
 
-If the switch W, be closed, the electric current generated by the bat-
-tery B, will flow through the primary winding. This will cause the core
+If the switch W, be closed, the electric current generated by the battery B, will flow through the primary winding. This will cause the core
 C, to become magnetized, and the vibrator Y, will at once be drawn
 toward it. This will break the connection at R. The core, being made
 
 ### PARAFFINED PAPER
 
 ### INSULATOR
-
-INN
-
-~
 
 Fic. 350.—Construction of condenser for an induction coil. The conducting material used
 is tinfoil, of which a large number of sheets are prepared, all cut to the same size. These
@@ -10587,8 +7603,6 @@ closed.
 The cycle of actions may be briefly stated as follows:
 1. A primary current flows and magnetizes the core;
 
-Induction Coils 231
-
 2. The magnetized core attracts the vibrator which breaks
 the primary circuit; ,
 
@@ -10600,18 +7614,11 @@ the primary circuit and the cycle begins again.
 
 Magnetic Vibrators.—Many types of vibrator are used on
 
-Se OY A YY P- fy TY. hh FY. 6 Sf'
-
-iy «Ur CUAlCU Ml llUCU NM lCUlC NR Dl(iC SC
-
-JUL
-
 ### PRIMARY
 
 ### CONDENSER
 
-Fig. 351.—Diagram of a vibrator coil. The parts are as follows: A, contact screw; B, bat-
-tery; C, core; D, vibrator terminal; G, condenser; P, primary winding; S, secondary winding:
+Fig. 351.—Diagram of a vibrator coil. The parts are as follows: A, contact screw; B, battery; C, core; D, vibrator terminal; G, condenser; P, primary winding; S, secondary winding:
 W, switch; Y, vibrator. When the switch is closed, the following cycle of actions take
 place: 1, the primary current flows and magnetizes core; 2, magnetized core attracts the
 vibrator and breaks primary circuit; 3, the magnetism vanishes, including a momentary
@@ -10624,8 +7631,6 @@ break occur with great rapidity. In order to render the break
 as sudden as possible, different expedients have been resorted
 to, all tending to make the mechanism more complicated, yet
 having sufficient merit in some cases to warrant their adoption.
-
-232 Induction Coils
 
 In the plain vibrator, the circuit is broken at the instant the spring
 begins to move, hence, the operation must be comparatively slow.
@@ -10646,44 +7651,26 @@ the end of the upper spring C, strikes the lower shoulder of the adjusting screw
 gives it a "hammer break.'' The adjusting screw is held firmly in position by a bronze
 spiral spring under shoulder D.
 
-' j
-
-i i j j Wil if i |
-PRUETT CMT HH TUTTLE EAP POTE
+i i j j Wil if i
 
 HHT PTT Th TE WT HTT NT ilti
 
-itt LAT a iF WT HTH ' Wit i |
-Mat TPL, Wy Le Hi lib} Wh til i
+itt LAT a iF WT HTH ' Wit i
 
 ### MMA TTL AAA TTT PAN
 
-TT il bhi nds ee Ub tha
-
-j
-| . ;
 abl had
 | | pba
 THA Maa Lidgaee tee
-DAALLAL abet
-
-wd
-TTT
-
-—— a
 
 = Wyre
 
 Fig. 353.—Rhumkorff induction coil. A secondary coil with vibrator and condenser; a type
 generally used in the laboratory. The name Rhumkorff was formerly very widely applied
 
-to induction coils for the reason that some of the earliest coils were constructed by Rhum-
-korff .
+to induction coils for the reason that some of the earliest coils were constructed by Rhumkorff .
 
-Induction Coils 233
-
-quality of the spark depends largely upon the proper adjust-
-ment of the vibrator.
+quality of the spark depends largely upon the proper adjustment of the vibrator.
 
 The following general instructions for adjusting a plain
 vibrator should be carefully noted:
@@ -10695,16 +7682,12 @@ and bright.
 
 ### ENGINE FRAME
 
-### Y B
-
 ### GROUND WU
 
 Fie. 354.—Circuit diagram of a master vibrator coil. B, is the battery; C, the unit coils;
 Cl, C2, etc., the condensers; P, the primary windings and S, the secondary windings;
 H1, H2, etc., the spark plugs; T, the timer; MP, the master primary; V, the vibrator; W,
 the common primary connection; 1, 2, etc., the stationary contact of the timer.
-
-234 Induction Coils
 
 3. Adjust the vibrator spring so that the hammer or piece of
 iron on the end of the vibrator spring stands normally
@@ -10724,13 +7707,11 @@ Size of bobbinends... 24xit 23 Xie 3x3 4X23x3
 Length of bobbin..... 4 5} 63 1
 Length and diameter
 
-Ol COLE 64 dscns oaeswae 4iXi 6x2 63x23 — :
 Size of base.......... 74X3iX1i0 (99 kK5xK2 1436x132 1271x235
 Size of tinfoil sheets... 4X2 03 X3} 6x4 6X6
 
 Number of tinfosl
 
-SHECUS os suas os 36 40 40 60
 Size of paper sheets... 5X3 63 x44 9x5 —
 Primary coil......... No. 18 No.18 2 layers No. 2 layers 145.
 16, silk W.G. silk
@@ -10744,65 +7725,18 @@ Distance.
 
 *NOTE.—These values are correct for effective sinusoidal voltages.
 
-Induction Coils 235
-
-Points Relating to Ignition Coils.—1. Most ignition induc-
-tion coils or "'spark coils'' as they are called, have terminals
+Points Relating to Ignition Coils.—1. Most ignition induction coils or "'spark coils'' as they are called, have terminals
 'marked "battery," "ground," etc., and to short circuit the
 'timer for the purpose of testing the vibrator, it is only neces-
 'sary to bridge with a screw driver from the "battery" binding
 'post to the "'ground'' binding post.
 
-2 | ©
-FOR |u| Oi ee,
-BS |i ©, O
-5 CIT
-ZO : J)
-QZ >
-WS firs COMMUTATOR |
-ws Cie ,
+WS firs COMMUTATOR
+
 @ man F
-Z
-a= QB ~
-=>@ IE
-az a
-az <i
 
-i
-{
-(
-{
+1 [2 BATTERY
 
-{
-{
-!
-|
-t
-j
-\ '
-!
-{
-{
-i
-(
-"
-{
-{
-{
-{
-"
-
-! o
-
-1 1D |
-
-1 [2 BATTERY '
-
-S " \
-
-! Si mb ARG To tne '
-
-3 © Yt I AU J. Ssicees
 + Oper Bar.) | EAA
 
 Fic. 355.—Diagram of battery and coil connections for jump spark ignition as applied to a
@@ -10815,35 +7749,14 @@ insulation surrounding them.
 2. In adjusting the vibrator of an ignition coil, the latter
 should not require over one-half ampere of current.
 
-\
-
-236 Induction Coils
-
-3. A half turn of the adjusting screw on a coil will often in-
-crease the strength of the current four or five times the original
+3. A half turn of the adjusting screw on a coil will often increase the strength of the current four or five times the original
 amount, hence, the necessity of carefully adjusting the vibrator.
 When the adjustment is not properly made it causes, 1, short
-life of the battery, 2, burned contact points, and 3, poor run-
-ning of the engine.
+life of the battery, 2, burned contact points, and 3, poor running of the engine.
 
 4. In adjusting a multi-unit coil, if any misfiring be noticed,
 hold down one vibrator after another until the faulty one is
 located, then screw in its contact screw very slightly.
-
-\e
-t BOSTON
-
-ui
-
-rn Hi Hl HATING cet TR
-'i Pr 4 i ay —
-/ . ti iu i: i HA AT AT
-HA il nl ~ ——
-
-il Hill
-WH
-
-i —t
 
 Fig. 356.—Ziegler vibrator induction coil designed for heavy discharge rather than length
 of spark. This is obtained by use of exceptionally heavy primaries in conjunction with
@@ -10858,19 +7771,15 @@ latter will be somewhat higher, but since their internal resistance 1s also
 greater, the current delivery will be about the same. Most coils are made
 to operate on from 4 to 6 volts.
 
-Induction Coils 237
-
 6. It is a mistake to use a higher voltage than that for which
 the coil is designed, because it does not improve the spark and
 the contact points of the vibrator will be burned more rapidly,
 moreover, the life of the battery will be shortened.
 
 Figs. 357 to 359.—Acme ignition coils. These coils are wound with paper between layers of
-enameled wire and. with flexible terminal wires attached. If so specified, they are impreg-
-nated under vacuum and finally tested to meet all requirements.
+enameled wire and. with flexible terminal wires attached. If so specified, they are impregnated under vacuum and finally tested to meet all requirements.
 
-Figs. 360 to 365.—Acme Transformer coils. Audio frequency transformers are generally ad-
-mitted to be the best amplifiers yet developed for radio circuits. Much has been done ina
+Figs. 360 to 365.—Acme Transformer coils. Audio frequency transformers are generally admitted to be the best amplifiers yet developed for radio circuits. Much has been done ina
 short time to bring transformer amplification to a high degree of perfection. .Experience has
 shown that windings for these transformers must be wound with accuracy.
 
@@ -10882,8 +7791,6 @@ items of transportatiion charges on reels and spools and the cost of those which
 lost. Tc concerns whose business is seasonal, the purchase of finished windings is of particular
 advantage, as it saves the interest charges on an investment which is idle, a large part of the
 time, as well as the expense involved in periodic training of a force of operators.
-
-238 Induction Coils
 
 Cost Factors in Coil Design.—In cases where low initial cost
 is an object, the designer should consider the following points
@@ -10897,11 +7804,10 @@ a small space that considerable difficulty 1s experienced in getting the
 number of turns, or specified resistance within the dimensional limits.
 This, of course, results in an increase in the cost of winding.
 
-Fig. 366.—Knott electrolytic interrupter for coils from 4 to 6 in. spark discharge. Electro-
-lytic breaks have been expensive and often a failure by reason of the difficulty in adjusting
+Fig. 366.—Knott electrolytic interrupter for coils from 4 to 6 in. spark discharge. Electrolytic breaks have been expensive and often a failure by reason of the difficulty in adjusting
 the size of the gas tube to the line voltage and the amperage which is to be drawn from
 
-the break. Jn construction, the interrupter contains a porcelain cylinder in which the |
+the break. Jn construction, the interrupter contains a porcelain cylinder in which the
 
 size of the opening is carefully adjusted to the amperage of the current to be drawn. This
 cylinder is carried on a lead shelf, being part of the inner lead cylinder. The terminals
@@ -10910,8 +7816,7 @@ jar is placed in an iron receptacle which acts as a radiator and serves to retai
 case the acid jar is accidentally broken.
 
 2. Where design conditions permit, a round coil should be adopted.
-Square and rectangular shapes require winding at lower speeds and a cor-
-respondingly increased cost. This is especially true of bobbin or form
+Square and rectangular shapes require winding at lower speeds and a correspondingly increased cost. This is especially true of bobbin or form
 
 wound coils.
 
@@ -10922,23 +7827,18 @@ magnet windings and invariably results in a saving.
 4. The additional cost of equipping a coil with flexible leads is an item:
 sometimes not fully appreciated. While windings of wire, sizes from No. 30:
 
-Induction Coils 239
-
-' to 44, should have flexible leads, coils wound with larger sizes can often
+to 44, should have flexible leads, coils wound with larger sizes can often
 be used as effectively with :eads of winding wire itself.
 
-5. Wherever the operation of a direct current coil is not materially af-
-fected by a variation of from 10% to 20% in strength, a slight saving
-can b2 effected by winding to a given number of turns instead of a speci-
-fied resistance.
+5. Wherever the operation of a direct current coil is not materially affected by a variation of from 10% to 20% in strength, a slight saving
+can b2 effected by winding to a given number of turns instead of a specified resistance.
 
 Coil Winding Calculations.—The following formule are
 eing given without the usual individual illustrations, the re-
 
 tes. 357 and 368.—Knott lecture table secondary vibrator induction coil showing removable
 core and primary winding. The secondary winding is mounted on a polished hardwood
-base connected in series with a simple electro-magnetic vibrator added to give positive uni-
-form "'make and break'' in the circuit. DJemonstrates a simple induction coil without
+base connected in series with a simple electro-magnetic vibrator added to give positive uniform "'make and break'' in the circuit. DJemonstrates a simple induction coil without
 condenser.
 
 ations being sufficiently clear to those requiring their use. It
@@ -10947,25 +7847,13 @@ ralue of turns per sq. in. ohms per cu. in., etc. These values
 ire dependent upon winding conditions, and will therefore,
 rary considerably between different types of machines, and
 
-240 Induction Coils
-
 even between different sizes of coils. The tables as given are
-average values and results derived therefrom do not under or-
-dinary conditions vary more than 5% either way. All re-
-sistance data is based on 68° F.. or 20° C.
+average values and results derived therefrom do not under ordinary conditions vary more than 5% either way. All resistance data is based on 68° F.. or 20° C.
 
 Referring to fig. 369, the following is the notation:
 
-ey
-
 mou
 mou
-
-—_—_""eawiean a» =—_ =n == eae ==
-~_aemammwremrereweies os & ee er ~~ = me =e = = - fs @—- se ew ew ~~ @M ww — — | e
-r]
-
-(
 
 Fia. 369.—Diagram of coil to accompany coil winding calculations.
 
@@ -10995,56 +7883,26 @@ TERAAEGE Il GA ole Formule showing the
 
 , 0008450 01082 relations between above
 
-, 001065 01365.
-
 '001343 01722 factors.
 
 ,001693 02171 =
 
 002136 02736 = D—d
 
-. 002692 03452 Z
-
-, 003396 04352
-
 ,004281 | 05487 R=Vr=x*MLtTr=
 
 "005399 06920 MINs =
 1 ..7006809 |! 4¢ "08725 ™MiNs = Wp
 
-:
-|
-!
-|
-|
-|
-|
-|
-|
-|
-
-Oe ee ee oe ee
-
-Induction Coils " 241
-
-D+d R
-mene Rates =LTn =
-9 oa ems
-| 4V+eLd2 R rMNm
-\ TL p i clad 12,000
-VeanMLT an (2) _ R _LW
-
 To find size of wire, take the size having in the following tables a value
-nearest corresponding to that determined by either of the following for-
-mule:
+nearest corresponding to that determined by either of the following formule:
 
 eect ibe
-Vv
 
 The following examples show the easiest method of working
 out the three principal forms of coil winding problems:
 
-' Example.—Given bobbin and wire—to find the winding data.
+Example.—Given bobbin and wire—to find the winding data.
 
 L424" D=4" d=1%" No. 24 Enamel.
 Given:
@@ -11053,7 +7911,6 @@ d =1.125 subtracting = 207.4 ohms.
 2)2.875 dividing
 T =1.438 (D —d N =4X1.438 «2,100 (LTn)
 
-R
 d =1.125 adding = 12,090 Ms
 M =2.563 (T+d) Also N =207.4-+ (8.038 X .002136)
 aM =3.1416 X 2.563 = 12,060 turns
@@ -11065,8 +7922,6 @@ V =8.038 X4X1.438 = 10.07 Ib.
 Example.—Given bobbin, resistance and insulation of wire—to find
 size of wire.
 
-242 Induction Coils
-
 Given: L=234"" D=14%" d=14" 400 ohms. Silk enamel
 
 By the above method: r=400 +8.635 R
@@ -11075,41 +7930,25 @@ V =8.635 cu. in. = 46.29 ohms. V
 Table B indicates No. 30 Silk enamel as being nearest in value to that
 required.
 
-Example.—Given winding length and diameter of insulated core, re-
-sistance and wire—to find the number of turns.
-
-### SEX WW
-
-Es N
+Example.—Given winding length and diameter of insulated core, resistance and wire—to find the number of turns.
 
 Given: L=2 d= 4" R=125 ohms. No. 30 S. S.
 V =125+58.45 R
 = 2.140 cu. in. r
 
 Then by the first method:
-FG aA I Oe a ee
-2 .
-D= V (42.140) + (3.1416 X2X.4?) N =2x.4175 X6810 (LTn)
+
 3.1416X2 = 5,693 turns
-td! 18
-| \ | oe a it zy
+
 8 | =a ad | | iy 13 | [3
 
 Vom
-gut ie
-ob
 
-ve = dent
 vernon Bae TN
 
 one,
-N "7; == 1¥
-Av = 4%.
-es
-SN age
-Lae Vs :
 
-g's
+Av = 4%.
 
 To the frame _To the negative pote
 Connection of the battery.
@@ -11125,343 +7964,59 @@ NOTE.—The accompanying calculations and tables are furnished by Belden Mfg. Co
 
 on Coils
 
-tl
-
 Induc
-
-"osest | "OBserzZ | 'OOSTE | 'OOSzE | 'OSTOZ
-| 'OL€zt | "OOsot | 'OSsset | 'szss° | 'oOgEr
-*|-"S9PS | "OBLOT | "OSEZT | '0679 | 'O06
-
-"'oszs | 'osoe | 'ssez | :ovry | 'o9¢9
-"L06€ | 'OOS® | 'SEOs | 'oWOe | 'OZIF
-"OSSZ | 'SOGZ | 'Sete | 'osoz | 'oFZz
 
 ene eee
 
--osor.| coset | 'ozoz | 'tser | 'z9ozt
-
-"SEIZ re
-"ssor | "OBIT | '"O8zT | 0016 "SEUT "ZEEL | ff
-
-8669 | S$ 8SL O'9Ts | $409 | O'SeL. | S 9E8 |} ce
-
-0'¢6 | sist] o-oge |. o'zts | o-00r | O'tee
-
-$°9ZS 1€
-
-w'Zte | S'68Z} OKOTE | O'97E | SG O9% | O€0£ | Ss lee of
-
-S°86t | O'L8I | O'86t | B:S07 |} ~'L9T | O'ZOT | £°807 62
-
 tozt.| zat} oszr| oezt | soon! sree] zis 8Z
 
-09°6L |06°hL° | .09°62 | SL£°I8 | 0089 | ST'zZe | SS°Z8 LZ
-Of'OS | O9 Zh | SZ'OS | OS'IS | OS Fh | 06'8h | S6'IS 92
-
 eter
-ZL TE | ST OF | "SL'te€ | -Bs'zZE | OOSzZ | OTIE | OL ze
 
-00°02 | OZ'6t | gh'Oz | sBs'ez | SE'st | soot | 09°02 FZ
-€9°ZT |-9F'2E | SLtt | OTE | BLE | Te TE | L6°Zt ae
-000°8 | .ozz'2} seo's | .ost's | ser'z | soez | osts| ez
-Of0'S | OL8'F | OL0'S | OFT'S | 092%) O86 | BET's 1Z
-€8t'f |} Oote | Oot'e | sez'e. oso's | spre - 6FUE
-Z0O'Z | OS6'T | SIO'7 | BEO'Z | ST6'S | 0661 | zZE0°z ot
-Z6Z'T | OST] OLZ'T | E8ZT | BIZ T | eset} Bez 81
-S8LL° | S008". | S08" | DELL" | 006L" | TSO8" LI
-
-'o6at' | oros' | osos' | sesh" | 066t
-
-) . Osos' o1 :
-oore' z ' e-eo ®@ eee oeweoeeoeret O80t ° 4 osTt¢' ost¢*: St
-SSsol' - eh ce oa eae S61' i 0961" $007." PI
-
-- (pe cg epg ge ge i ct Sc
-o
-N
-
-L220" ~~ he eo oe ower ; eocees 5 ZEZI ° | 'OSZT e ScSZzI e €l
-
-$LZ0° FCT ss) 820° 8820" 16L0° a5
-
-S8r0' mee eee So'@ 8:10 6, cg: ie Fe _7t690'. 86r0' L6%0° TE
-aaa OE' ee a ae oa aaa O1¢eo* ¢t¢o° [ ¥I£O° ny
-dc ee pear ed Cras Pe L610" 1610° os
-secede forefoes| ewer faze: [seo fs
 yeweue | jowebo HIS Tons 003302) | U0}073 jaweus
-
-"ANS | -30D | 71QNOd | a3uIS | aiqnod | asus | -PPa | "SRE
-
-2D P195.L
-
-punog Jeg swuC
-
-"TOF
-"SbOI
-S°SEL
-
-078 'F.
-OST '¢-
-990 Z
 
 [aweua | jaweus
 -702)
 
-youy s1qnsy Jeg suITyUC
-
-"OCLI
-"SEZ
-" $°Sl8
-
-$°¢19
-"6CD
-¢° 162
-
-8 SOZ
-$'Ov5
-OF 'S6
-
-80°S9
-SLE}
-80 67
-
-vs OT
-68 ZT
-O1S 8
-
-### OLS'S
-
-z#9'¢
-OLE *Z
-
-ShS'T
 0966"
-Ofb9"
-ShIP"
-ZL97"
-SOLT'
 
 eoeepetee
 
 ALS
 aiqnoq
 
-'zoze| —0S9
-'eotz| "O8F
 'Lovl| "use
-'plotl «'e9z_
 
-9°S89 | 9° T6F
-9° 6S) L°Set
-
--$'6OE | L4°66 | 9° S6t
-0'80Z | OF TZ O' vet
-'Loft | 9208S | Sd 16
-
-OF'6R | SO'9E | SP'z9
-spss | Si'sz | 80°z
-soze | Of4t | so'8z
-es'pz. | St'zt | 06'S!
-SL:st joce'@ | zs'zt
-SO'Or {0bL'S  |oor's
-
-zze's.| ObF'S
-966° | LSS'€
 weet | ozez
 
-ZOl'T SIS'T
-02769 ° OF76°
-SO9F * 8009 °
-
-SFOE * 068¢ -
-800Z © 80SZ°
 Teer: Tor"
-
-0$90°
-6s¢0° 9tt0°
-
-£¢z0° | 9920"
-
-'{61STIO" j8tZt0O°
-"]¥£600° |88010°
-"+292: lTEQ09°  Ig600-
-"+++: lege00°  [se¥00-
-sseesesleorag? le6z00°
 
 asus. | ajqnog | asus
 
-d@ °19".L
-
 Induction Calls
 
-OOW8T 00924 oP
-'00991 00929 6f
-
-oooze | osz9t | 00661 | ooz9e | 'Ostz
-ostst | osezs | oozte | sees
-
-9610° |- e1z0° | z10t" | Orso' | 2620" | Seer"
 veo' | otzo: | zzit | itso: | zero' | 6t0z:
 
-ezit' | 6980: | ciso° | zizt'.] ggsa' | O80 | 9667" se .
-Reads aes ices cheats Ht ae OOPET | O96St | OoFLzZ | OIS9 "| QOEHT | OCOTey | = se
-96tt' | 060° | Oz8G° | 98z1| 9090° | L060" zeoz | "LE ooozt | ootrr | oocez | svoo | oszer | oovee'| ce
-9STL' | €F60° | FS60° | -19ET" | OF90" | EL60° | OFZ: of OSSOT | OfvZI | OS8ol | Osss OSLIE | OULTE of
-ret' | 2860" | fz01° | Leet' | L490" | zZEOT" | 1¥OZ" se 0076 | 02801 | OoBst | ozos | oofot | ooDsz co
-zeen' | zvor' | zuii' | zest: | sezo' | ttt: | svozw | ve 0908 | O86 oszvr | sose | ot0s 05665 vf
 ashi | elit | tors' | szor | vaco'.| Ist' | oor + = Fe ozo. | O918 | osait | ont» |! ogze | oozor €¢
-GSOST | ZONE' | sZt | TS9N" | 9EBO" | HHZE™ | F907 ze ,9965 | 0669 | 0186 | OZzZE | 00L9 | osozr} ze
-"z7zu' | eet | 6zzt" | lobo" | .9zET | L607" If ozis | o109 | ooze | ofee | ores | oozor 3
-ezi' {Mie | ELE | 9960" | "SBE | 1ZIz o¢ ozey | oots | o1so | of6z |; ooo» | szte oc
-Zreh' | ROPE' | OSRt' | OEOE'-| SPE | BzIZ 62 099¢ OLTP orss 09$Z O71¥ O1s9 67
-1o1pT | ZSst'-] Sten" | THT" | 9SSt".| O9TZ: 87 oote | .oz9e | voor | oszz | oose | oszs 82
-6Lbl° | 61ot | -2z6n' |] sz7zte | BzoT | CTStZ Lz O6sz | Oloe | O89e | Sor Sz7oz_ | Sti Lz
-Lest' |. g69t° | zsor' | O6z7E | L69I- | OLIZ 92 ssiz |" OIsz | sooe |  o69r svez | over 92
-gost. | #szt' | OFoz™-| Zeer' | SbZE° | sotz SZ 06L1 "| 0202
-TOOL | FIST | OTIZ | HHT' | OTS | BZTz" ¥Z SL¥I SOLT 0102 S1Z1 Soon | O01z $2
-zit' | eset' | tziz' |. weer" | 698r' | eztz: £2 - O7ZE- | OOFL | Oz9T | OFor OLet | soot £Z
-pst | ezor' | Lotz'.|- gost' | 9zot:-| ste" zz soot | Ostt 7
-9011 | ~S96T" |] 981%" | ¥SHE° | "9Set" | 80zz° 1Z 082 S£6 SSOT oso $98 $901 WZ
-_ eset' | stoz' | stzz° |] Ost' | -Z16r' | #2zz 0Z vv9 19L.
 
 ces
 
-gzat- | gsoz' | orzz-| zest' | sset | zzz | 61
-Oost | 012° | 897Z~ | BOT" | TOOZ | LL2z" St
-"gol. | oetz' | zzz | zzer' | zvoc' | sezz | Et
-
-SJ6l:.| ostz | erez' | "Leet" |. 6802" | OTe | = OI zie She
-ee eae BOGE [Poe tee eee 68L1° €90Z . 80EZ' S} O£Z2 SR BA BSR eae: 807 SdZ LLU SI
-pee rrie mag Sess gest' | zziz-| lez. ot ro) Se es ar ""y UT | B6r Vez v1
-beaneataeae! | po feeee LefeeeeeeeP qegne | gziz | sez: C1 et ee ed a oor LEI es
-soeeeees] aeqz: ie ke teenies '| cet: ogtz: |. lez" - 2b vz ce te we eeeees FLT 6z1 IPE ZI
-cee er cece Seas SIS See eee ee ia SSIZ" OOoT Wt ee' £6 'vor Ctr tl
-Seats, Ace ts re i al | : Of7Z Pecan os See syaks ca Se 05 9L re - 6 Ol
-Seveeeatl gpyge foseererefere soe el searee |< aiee: 6 ry 99 | aaa eas 6s | 99 ZL 6
-i Ne ee Ge ZSEZ Sn eee eats PCIZ : Z9ET" "OpSz' 8 zs pre eniri ws eae h eS SF ¢s Ls g
-
-jawed | poureua | ss | ans | 401209 | G0V0D | Pureua | ,
-"AUS 40D | *tQNoq: | Suis | atqnoq | Sus | -PIPa
-
-jaweus | jaweus| HIS -| aig | w0r03 uonoD 'pusua '33g
-"MS | 109 | tanoq | apuIs: | alqnod | asus | -Pipa
-
-G 1951
-
-a oqey
-youy erenbs Jag suiny
-
-youy dIqnsy Jag spunog
-
 + ee eee
 
-'Suyuud jo aun qe \ouetaas jo seaco1d ul sain8y 2604 5,
-
-Ww)
-' @
-= 5 ae oso | uso" | - zv0" | s¥60° | sf80° | /olsu' | 200°
-¥6900° | PISOQ, | PITIO'.| ¥1Z00° | soo" | €9r0' | 6990 | Fose ; HzO | 260 | z090° | z8£0°
-€£400° | ESsoo" | EstIO | EsL00" | Geod" all 8120" | €790° | ¥ES0° |. BOL' | ZOLO | SBty"
-94400" | 96S00° | 96110" | 96200° | ¥¥00° ail SRR" HEGRSENGLC ngCEREG GEREASS EEERATC!
-———|-—___ | —-—__ __|— ¥0L0° | 8060° | OFL0' | £990° | ¥OzI" |,.zz780° | 9190"
-$7800° | S$900° | SFz10° | Sb800° | 6F00° 7£80° | 790° | Oz60°'| ezgo' | I9f1. | #660: | '9220°:
-08800° | 00200° | OOfT0" | 00600" S80r" | 9871" Ofte' | seot' | Oost' | zozi' | 0860"
 1¥G00' | 19290" | 19€10° | 19600" a a ne a te —|-——_-|-————
-3 : as TG | ele ISst | Zeer" | Oozt' | Bzor | geet: | o¢zte ve
-oft10° | Of010 pOOT" | OSLE | TI9T| O2zz | otsE | ost:
-BOLO: ne €Z° | OLIZ° | OOIz' | -0N2Z".) OFzzZj.) .O96I-
-ee Sines hah ash sf fees set
-SSS See vise |, 3z9z° | cise: _ L8ze° | c9zz f s9Fe-
-6710" bce ssse | ogee' | .o9te' | ssoe' | oore' |, sore:
-O10" Ozh' | SLeh" | Ofte | OL6e | Oose' | Sszp | ste'
-a a a a
-y OvIs' | Osts' | OFIS' | O86m: | $209" | SzEs™ ore | 8z
-— Shr9" | SsbB" | osto' | 0879° | O9Sz° | 0999" sae Lz
-3 0018" | OLsB | OOI8 | so6L' | -OF16" | sete | 'svaz' 9%
-C) areas ar GE RUE SaacaNie 810° | 1Z0°F | 8103 o7U'T 886"! sz
-esti | seer | zzz '4 o£ I SoZ 't
-i. 809'T | B99'T | 6S"T | sos'
-2 ae sto-z | strz | 900°2 gol" 016'T
-<5 £670" Ses't | sz79°z | O%S2z $89" 06% 2
-q) steO OoI'e | suze | Eze gus Stl€
-= i , .
-ry O10'® | O2I't SS6'£
+
 086°)
-a $22°9
 
-ees | ee | eee | qe | ee |
-
-wren eee ee bo eee ene | eee | ee
-
-| GOO) U03}30°)
-iqnod | a8uis | aqnod | asus | Pied
-
-D 14" L
-,81929WIBIG] Opis}ng
-
-jaueue| joureua| xNS | MIS
 "ans | -209
 
-jaweus $2-"
-
 jaweus | jaueua
-"AS "30D
 
-AUS
 21qnoq
 
-O17 '8
-tf OT
-16°21
-
-Ais | u0j05.
-aINIS | 2IqNed
-
-d
-
-7192 L
-
-. $708
-
 Oot
-€L°2T:
-
-66'ST
-Ol 02
-| OF SZ
-
-$8't¢
-
-### ST OF
-
-09 OS
-
-0f6'L
-00° Ot
-09°Z5
-
-06ST
-SO 0
-
-I. $2°§2
-' Os JE
-$1 OF
-Ss OS
-
-— °
 
 03307)
 
-Q[3BuUIS ©
-
 jaweug.
-
--PI-d
-
-spunog Ur 3994 Q00I 42g 181M
-
-246 Induction Coils
 
 What is an induction coil?
 
@@ -11474,8 +8029,7 @@ Define self induction.
 
 What other name is sometimes given to self induction?
 
-What is self induction due to and under what conditions does it become espe-
-cially marked?
+What is self induction due to and under what conditions does it become especially marked?
 
 How does self induction manifest itself?
 
@@ -11510,7 +8064,7 @@ condenser.
 
 What is the usual form of condenser used with coil?
 
-_ State the cycle of operation of a vibrator coil.
+State the cycle of operation of a vibrator coil.
 
 What is a magnetic vibrator?
 
@@ -11525,39 +8079,18 @@ Describe a few experiments with an induction coil.
 The dynamo is @ machine which converts mechanical energy
 into electrical energy by electro-magnetic induction.
 
-A
-
-- : 4 7
-
 Fie. 372.—Ridgway 150 k.w. 250 volt belted dynamo.
 
-'MILA JUOIJ 'aInieULe 'MY COS ABPMZPIY— "ple "Ol
-
-i
-ee ees
-PEN
-
-ELSA
-
-PBL SES LP 2A RAT.
-
 pl LIE SPP PO pan tors
-ad
 
 'MOA BOE fomeurre 'my COE APMSPIY—' C/o 'OT
 
-- On
-
-The Dynamo 249
-
-The word dynamo is used to designate a machine which pro-
-duces direct current as distinguished from alternator or machine
+The word dynamo is used to designate a machine which produces direct current as distinguished from alternator or machine
 generating an alternating current.
 
 In a broader sense, the word generator is used to denote any machine
 
-generating electric current by electro-magnetic induction; the term there-
-fore includes both dynamos and alternators.
+generating electric current by electro-magnetic induction; the term therefore includes both dynamos and alternators.
 
 The author objects to the word '"'generator,'' as the machine
 does not generate or create electricity but simply produces a
@@ -11571,12 +8104,8 @@ current is not available, or partial d.c. service is required as; for example, i
 plants, machine shops, laundries, etc., in which a proportion of the machines used demand
 a variation in working speeds not readily or economically obtainable with @.c. motors.
 
-Operation of a Dynamo.—A dynamo does not create elec-
-tricity, but generates or produces an induced pressure which
-causes a current of electricity to flow through a circuit of 'con-
-ductors in much the same way as a force pump causes a current
-
-250 The Dynamo
+Operation of a Dynamo.—A dynamo does not create electricity, but generates or produces an induced pressure which
+causes a current of electricity to flow through a circuit of 'conductors in much the same way as a force pump causes a current
 
 of water to flow in pipes. The: pressure generated in the
 dynamo causes the current of electricity to pass from a lower
@@ -11592,15 +8121,10 @@ B, wiring connections and terminals; C, cast feet.
 Lhe Dynamo 251
 
 a mechanical pressure which, for instance, may be used to
-force water into an elevated reservoir against the back pres-
-sure due to its weight.
+force water into an elevated reservoir against the back pressure due to its weight.
 
 The point to be emphasized is that the dynamo does
 not create electricity (nor the pump water) but sets into
-
-ty Ye Panter wife
-"SECON, CEE
-RET EOI
 
 Fig. 379.—General Electric RC, dynamo armature constryction. The parts are: A, punched
 laminations; B, outside punchings of extra thickness prevent vibration and flaring. of inner
@@ -11619,37 +8143,17 @@ form consists of two principal parts:
 NOTE.—The author objects to the standard terms d?rect current generator and alternating
 current generator in place of dynamo and alternator. Why use three words when one will do?
 
-{oINjJeMIe UV SI VY "sonH
-"Play oY} Ul BATOADI Avy} SB SIOJINpPUI 9N}
--euLIe 94} AQ JNI 9q 0} JDIOJ JO SOUT] JO SOUT] IJoUSeW Jo pjey e splAoid oF, 'suy
-{sjouseul play aq) Jo yoafqo oy} SI ey '"senH
 "aINJeULIe BUT, "Z
 
-SJIUSCU P[eY sy], "T
-
-"BIIUI Pos}zJO[S 'C] 'S1OJINpuod smMjeULIe Jo Zullep
--[OS WOIIp IO} SJO[S '> 's}onNp BSureyyuea 'gq 'aodejins Yysniq [eleql] "yY *10}eNUWIWIOD ouwleuAp 'DY JWADIWq [e1sue*4)— "Ege "Oly
-
--g0eds a8eda019 BuO] 'wy "S10}D9UUOD I3AO-SSO1ID
-Aavay 'q {o1doosoisAy-uou 'ajqeyULYs-uou—ssurysnq papfnour 'q 'ayOA Ul WIN} 4OU []IM—SpNys VATSOLIOD-UOU '> 'pnis sed
-saysniq OM} UeY} Sse] YIM OWweUAp OU 'g 'eHOA YsBd AABay 'y "reed YSNq oweudp 'OY WApIq [e19uey— " ZgE pue [BE "SIA
-
-Ln
-
 eee
-The Dynamo 253
 
-Ans. A collection of inductors mounted on a shaft and ar-
-ranged to rotate in a magnetic field with provision for col-
-lecting the currents induced in the inductors.
+Ans. A collection of inductors mounted on a shaft and arranged to rotate in a magnetic field with provision for collecting the currents induced in the inductors.
 
 'A simple loop or turn or wire connected to a commutator may be
 
 considered as the simplest form of armature.
 
-#### Ques. How do armatures and field magnets differ in dy-
-
-namos and alternators?
+#### Ques. How do armatures and field magnets differ in dynamos and alternators?
 
 Ans. A characteristic feature is that in the dynamo the field
 magnets are the stationary parts and the armature the rotating
@@ -11657,102 +8161,25 @@ magnets are the stationary parts and the armature the rotating
 . Fic. 384.—Armature of ideal three wire dynamo. "The three wire system of direct current
 distribution has, in many places, certain advantages over the two wire.
 
-' part, while in the alternator the reverse conditions usually ob-
-tain.
+part, while in the alternator the reverse conditions usually obtain.
 
-#### Ques. With respect to this feature, what names are some-
-
-times given to the armature and field magnets?
+#### Ques. With respect to this feature, what names are sometimes given to the armature and field magnets?
 
 Ans. The stator and the rotor depending on which moves.
 
-"UOIJEINSU! [109 play auy Zuyeud
-PIOAB 0} SB UMBIP OS 9q YSNUI 9UIeIy YOUZeUI BY} UO p20eRId SBUIIS *10}7e}NUIWIOD JO 'SSULI 10}9a]]09 'sdij> pua ainjeuwe pees A
-
--MBIp SSUL[S 94} JUBAVIC O} JIN}eWUIL Ue Zul[pueY UayM Japeaids e asn SABM]Y *107e}NUIUIOD 24} punole Sulys e Suissed Aq payryjty ay
-J9A0U P[Noys sinjewlle ue 310J9194} 'psoe|dsip AjIsea AJ9A 21e S}UaUIBaIs 1OJe|NUIWIOT) ~* pajpuey A|1odoid ssajun 'uoIye]Nsut 10 sdij9
-'sadpam 'spueq 94} 0} Joie adeuiep 0} Joaf[qns se palapisuod aq ABU adeJINS ain} LULTe ajouM ay L 's}4ed 1394 )}0 10 SSUIpUIM ou} Jo
-Aue duisewep ploaAy "piey jas sey yno1d 3y} puke pa}nois pue pajaaa] uaaq sey 9Seq 94} IIOJaq Vseq JY} UO jsS91 0} que sy Play pue
-SMIEWIE VY} JO JYSIOM 9Y} MO] JOU OCT "Sainj}eWIe jo Zuljpuey 9y} 93e}1]1I9e} 0} papuajUI ale SUOISUa}xa asa} 'SSULIVaqG JY) UI
-und YsIYyM suolz}iod ay} puoded pus J9Y4jIa 32 UOISUa}X9 UB YIM paplaAoid o1e Jae] pue sjas 'my 00S UO S}JeYUS BUT . uOI]eUIWIE|
-9109 34} Japun 3[peld papped e Aq 10 '}jeYs 9y} JapuN Bulyd0]/q IO s8uljs Aq SI A1BUO!}2}S 10 ZULAOU 19Yj}td VTIWM ainjeuLse aut Bul
--yoddns jo poyjeul ayes AJUO BY, "ISN JoY}ANJ IO} UOI}e}s 9Y} UI 41 UTeJaI OF SnOase}URApe pue Juatuaauod aq [JIM 31 40} 'aseyoind
-oy} Aq poaystuiny aq pfnoys qld SIU, "sauTyoeUl 94} Sul-quiasse 41OJ 'slaquit} AAvay Jo 9sIOY B 10 'qIID & ping 07 9[GeIISIp SI 41
-pa-dinba Os OU SUOI}2}S JO «"SOULYDeUW a81e| SUL[pUeY UI }JUsIUaAUOD A[SULpsa0xe v1e SOULIO BUITIALI [— su npuvyy— q LO NJ _
-
-'SOWeU IIo} pue szIed SUIMOUS OUILUAD ' 3113990 e19U ; ar:
-coe tan IMOY P OdW 9!4992|q | ID— SRE VIA
-ONY SIN3VO3S N3ZML38 yv1I00 voIVi# = XV
-
-YOLVLW WOO udw OL wAn ININSLSW4S NINOS Z
-YOJ 3NOO VOI YBLNO YO YINMA = MV UIC IOH"HSIYG YO ONIYdS A
-nfs L108 Y¥OJ YSHSVM AV uAw OL why» ONINSLSWS MNOSA =X
-TT3HS QL ; wAw YOS WIV
-ONIY ONI dviV1d ONINSLSWJ 17108 nw JUNSSIYd HLIM Y3AI) ONY SNH ry
 TTBHS YO ONIX ONI GNI LV SM3NOS_ONV SLBAJY "ONT YdS
-MOLVLAwHIOO YOJ T713HS SV ONV vy 3uNSS3e4 "XNVHS ONV g
-YOLVLAWIIOD ¥OjJ ONNOG AQOS YIOIOH=HSIG ONIONTIONI
-ONY O3HSINIS "SOV37 HLIM 337dgK00 "yR0TOH=HSNUa Ss
-SINSMO3S VOIN ONV waddOO 4O 13S wv L3x0vHNS
-JONVI1S JUNLVrRV Y¥30 TOHSHSNUS ONY wu J
-OL YGLVLANNIOO ONINILSVI AZ¥# = OV 1708 YOd ONIHSNA NOlLVINSNIA =
-313 1WICO "YOLVLMVHIOO dv un BOI YBHSVM NOILY INSNI L
-3dvl ONV wn YOS YIHSVM S
-QY0O NOILVINSN| HLIM "UI nOw YOU LAN y
-ONIOGNIG 'S3903/A "NOILVINSNI 3NOA Y30 10H
-LOWS HLIM SUVE YOQLOY JO 13S OV "HSNYA OL ndw ONINSLSVS 110g —s«OO
-YOLVLAVOO ONY ONLS Y3C TOH=HSNUE
-SONIGNIM HLIM "3137dN00 "YOLOY NY HLIM L3XOVES YIC TOH-HSNUs d
-aNIV19 3vud L3NOVY! OL 340A N
-318v0 ONY 310vd yO3 YOLVINSNIA =o WIA IOH-HSNYG ONINGLSVI AKGYIDS 13S 0
-WNYs LINOW! JNOA Y3IG TOH"HSNUG N ov
-OL wn ONINSLSVI M3NOS# WV ¥NU4I LINO! ONY fn YOJ WIHSA OW
-; wfVun YOI LYOdINS WW BvWU4d LINOWH ONV wHw YO AIHSH = 7
-31397gK100 'S3ATWH OML' d¥W19 3718V0 cv 3yWwad L3INOVW!
-wHV¥» YOJ S3HSVM 4001 lV OL wh ONV wHw ONINSLSVS 1708 > |
-wOVn L108 YOJ LAN HV WO
-uiVeo O1314 ONILVLWINOO HOS 303d B10dH ov
-YO OW OL nwdVn ONINGLSVI 1108 Ov 1100 01313 ONILViMNI00 ]
-ONIY SMa NO S31GVO 40s IVNINUSL 4V W100 01313 NIV YOJ 303Id 310d H I
-NOILV INSNI 1100 07314 NIW 9 H
-NV SLBAIY '9ON7 TWNIVQ3L Svivud LONOWN YO4 11083A3 3 9
-: HLIM ONIY SNE JOISLNO 3V 3vivad LINO
-. NOILVINSNI QL 10. Y3ACO ONINSLSWS M3HOS = 3 Oo
-QNV SL3AI4 "ONT TWNIVR3L 3vWus LINOVW YOJ YSA0O ra]
-Suva HLIM ONIM SMa ZOISNI av Qn ONLS YOI LONK 9
-YZO WOH-HSNUE OL IWNIVRIL WSHLZOOL 3rwas
-VWVLOIld HSS ONINALSW4 AGYOS ov L3NOVH JO S3ATWH ONIN3LSWI Grus# a M
-TWNIPUBL ONY TVLDId HLIM HSME gv ' SNId 1T3M00 HLIA
-we YOJ UBLIOO ONINdS vw S3ATWH OM '31397gNIQO. '3Vvus LINDON OU
-NO! Ld!¥0S30 uqit3t NOI Ld! ¥9S30 yaliat s
-e y ®
 
-The Dynamo 255
-Ques. What is the real distinction between an armature
+ONIY SMa NO S31GVO 40s IVNINUSL 4V W100 01313 NIV YOJ 303Id 310d H I
+
+#### Ques. What is the real distinction between an armature
+
 and a field magnet?
 
 Ans. The name field magnet is properly given to that part
 which, whether stationary or revolving, maintains its magnetism
 
-700 C
-| _
-=
-ala acini 4 omcnnens 2
-/ oq
-/ - 9
-o
-| re)
-' Te]
-\ |
-LY
-+
-eee weeweeeeds "" fp pK } Z.._..LK 0
-uw
-: NY
-
 Fic. 386.—Scheme of winding connections of Ridgway three wire dynamo with balance coil.
-The diagram shows a two pole machine. From electrically opposite points A,A, on the arma-
-ture winding, connections are made to the terminals of balance coil DD, At the center of
+The diagram shows a two pole machine. From electrically opposite points A,A, on the armature winding, connections are made to the terminals of balance coil DD, At the center of
 the balance coil a connection is made to a slip ring C, and the neutral is taken directly from
 this ring through the brush B. The balance coil is wound on a laminated core bolted to the
 back of the armature spider and protected by a heavy cast iron shield. The slip ring is
@@ -11764,15 +8191,11 @@ are divided into two parts, one of which is connected into the positive and the 
 negative lead.
 
 steady during operation; the name armature is properly given
-to that part which, whether revolving or fixed, has its magnet-
-ism changed in a regularly repeated fashion when the machine 1s
+to that part which, whether revolving or fixed, has its magnetism changed in a regularly repeated fashion when the machine 1s
 in motion.
 
-256 The Dynamo
-
 Construction of Dynamos.—In the make up of a dynamo,
-as actually constructed, there are five principal parts, as fol-
-lows:
+as actually constructed, there are five principal parts, as follows:
 
 1. Bed plate;
 
@@ -11782,12 +8205,9 @@ lows:
 . Commutator;
 . Brushes.
 
-mm —& W bo
-
 1. What is a dynamo?
 
-2. What is the objection to the use of the word 'gen-
-erator ?
+2. What is the objection to the use of the word 'generator ?
 
 3. Does a dynamo create electricity?
 4. Describe in detail the operation of a dynamo.
@@ -11804,27 +8224,24 @@ and a field magnet?
 9. Name five principal parts in the construction of a
 dynamo.
 
-The Dynamo; Basic Principles 257
-
 ## CHAPTER 13
 
 'The Dynamo; Basic Principles
 
 A dynamo is a machine for converting mechanical energy into
-» electrical energy, by means of electro-magnetic induction, the
-: amount of electric energy thus obtained depending upon the me-
-| chanical energy originally supplied.
+electrical energy, by means of electro-magnetic induction, the
+amount of electric energy thus obtained depending upon the me-
+chanical energy originally supplied.
 
 The word dynamo is properly applied to a machine which
-' "'generates''* direct current, as distinguished from the alter-
+"'generates''* direct current, as distinguished from the alter-
 'nator, which "'generates'' alternating current.
 
 #### Ques. Define a dynamo with respect to its principle of
 
 operation.
 
-Ans. A dynamo is @ machine for filling and emptying con-
-ducting loops with magnetic flux, and utilizing the électric pressure
+Ans. A dynamo is @ machine for filling and emptying conducting loops with magnetic flux, and utilizing the électric pressure
 thus-induced in them for the production of current in the external
 
 The fitness of this definition is apparent, having in mind the principles
@@ -11836,26 +8253,20 @@ Ans. The field magnet, armature, and commutator.
 
 *NOTE .—It should be understood that a dynamo does not generate electricity, for if it
 were only the quantity of electricity that is desired, it would be of no use, as the earth may
-be regarded as a vast reservoir of electricity. However, electricity without pressure is in-
-capable of doing work, hence a dynamo, or so called "'generator,'' is necessary to create an
+be regarded as a vast reservoir of electricity. However, electricity without pressure is incapable of doing work, hence a dynamo, or so called "'generator,'' is necessary to create an
 electric pressure by electro-magnetic induction 1n order to cause the electricity to flow against the
 reststance of the circuit and do useful work. The author objects to the term generator, although
 it is now commonly but erroneously used. A so-called "'generator'' does not generate electricity.
 
-258 The Dynamo; Basic Principles
-
 #### Ques. What is the object of the field magnet?
 
-Ans. 'To provide a magnetic field, through which the con-
-ducting loops arranged on a central hub and forming the arma-
-ture are carried, or the flux carried through them, so that they
+Ans. 'To provide a magnetic field, through which the conducting loops arranged on a central hub and forming the armature are carried, or the flux carried through them, so that they
 are successively filled and emptied of magnetic lines.
 
 #### Ques. What is a commutator?
 
 Fics. 387 to 390.—Alternating current. The variations of such a current may be represented
-by the speed variations in the pendulum of a clock. The pendulum swings first in one direc-
-tion and then in the other. At the end of each swing it slows down to a complete stop and
+by the speed variations in the pendulum of a clock. The pendulum swings first in one direction and then in the other. At the end of each swing it slows down to a complete stop and
 then gradually speeds up in the opposite direction. As it passes through the lowest point
 it travels at a maximum speed. Traveling toward the center its speed increases continually,
 and traveling away from the center its speed decreases continually. If a curve be made by
@@ -11864,8 +8275,7 @@ and the curve for a left swing below it, a diagram such as shown will be produce
 O, indicates zero speed when the pendulum is at the extreme left and is just about to start
 on the right swing. The point A, represents the speed of the pendulum as it passes through
 the center. The point B, represents the end of the right swing with the pendulum stopped
-and ready to start the left swing and so on. Immediate points represent the speed at cor-
-responding times throughout the swing. Electricians use the same form of curve plotted
+and ready to start the left swing and so on. Immediate points represent the speed at corresponding times throughout the swing. Electricians use the same form of curve plotted
 with time to show the variations of current, current being substituted for speed.
 
 Ans. A device for causing the alternating current generated
@@ -11876,8 +8286,6 @@ in the armature to flow in the same direction in the external
 Ans. Upon the rate at which each conducting loop 1s filled
 and emptied of lines of force and the number of such loops with
 their grouping or connection.
-
-The Dynamo; Basic Principles 259
 
 #### Ques. How is the operation of a dynamo best explained?
 
@@ -11897,10 +8305,7 @@ loop of wire ABCD, one end being attached to a ring F, and
 the other to the shaft G, and arranged so as to revolve around
 the axis XX', which is located midway between the two poles
 
-260 The Dynamo; Basic Principles
-
-of the magnet. Two metallic strips or brushes M and S, con-
-nected with the external circuit, bear on the ring F and shaft G,
+of the magnet. Two metallic strips or brushes M and S, connected with the external circuit, bear on the ring F and shaft G,
 respectively, in order to "'collect'"' the current generated in the
 armature when the machine is in operation. The long, straight,
 horizontal arrows joining the two poles of the magnet, represent
@@ -11911,8 +8316,7 @@ by the equal spacing of the arrows.
 #### Ques. What happens when the loop is rotated?
 
 Ans. According to the law of electro-magnetic induction,
-when the loop is rotated around its horizontal axis in the direc-
-tion indicated by the curved arrow, an electric pressure will
+when the loop is rotated around its horizontal axis in the direction indicated by the curved arrow, an electric pressure will
 be induced in the loop, the magnitude of which depends on the
 rate of change of the number of lines of force threading through,
 or embraced by the loop.
@@ -11923,9 +8327,7 @@ say, 0 to 1,000, or decreased from 1,000 to 0, in one second, the electric
 pressure generated will be two times as great as if the increase or
 decrease were only 500 lines per second.
 
-#### Ques. Upon what does the direction of the induced cur-
-
-rent depend?
+#### Ques. Upon what does the direction of the induced current depend?
 
 Ans. Upon the direction of the lines of force and direction
 of rotation of the loop.
@@ -11939,8 +8341,6 @@ loon, such as AB or CD (fig. 391), 1s to be considered as moving
 up or down; that is, the component of its motion at right angles
 to the lines of force is taken as the direction of motion. When
 the loop is in the position ABCD, such that its plane 1s vertical
-
-The Dynamo; Basic Principles 261
 
 or perpendicular to the lines of force, the maximum number of
 magnetic lines thread through it, but when it is 1n a horizontal
@@ -11961,8 +8361,6 @@ the reduction taking place with increasing rapidity as the loop
 approaches the horizontal position, the electric pressure thus
 induced zmcreasing in like proportion. Continuing the rotation
 from the horizontal position A'B'C'D', to the inverted
-
-262 The Dynamo; Basic Principles
 
 vertical position ABCD (fig. 392), the number of lines passin
 through the loop is increased from zero to the maximum, th
@@ -12004,8 +8402,6 @@ rapidity during the third quarter, and with decreasing rapidit)
 during the fourth quarter of the revolution, which causes the
 electric pressure to increase and decrease during these intervals.
 
-The Dynamo; Basic Principles 263
-
 The cycle of events just described may be summed up as
 follows: During the revolution of the loop:
 
@@ -12015,11 +8411,9 @@ from 0 to maximum; fig. 393, L to A.
 From 90° to 180°, pressure decreases
 from maximum to zero; fig. 394, A to
 
-| R.
 L 2 lt > 3. From 180° to 270°, current reverses
-oe ioe
+
 a) (7 Alva gle and the pressure increases from zero to
->» ee = |
 
 maximum; fig. 396, R to F.
 
@@ -12035,18 +8429,12 @@ lines were cut
 "with increasing
 or decreasing
 rapidity ,'' causing
-the electric press-
-ure to rise or fall.
+the electric pressure to rise or fall.
 The reason for
 a this is illustrated
 in fig. 397,
 
-ot Le ae eek
-a ay LN, "a Ka
-\ Mn We A \\
-
-16s. 393 to 396.—Automobile on hilly road illus-
-trating the sine curve as applied to a.c. cycle. Fig.
+16s. 393 to 396.—Automobile on hilly road illustrating the sine curve as applied to a.c. cycle. Fig.
 393, car rises from level, ground L, to maximum elevation; © fe NNW rs 10
 fig. 394, descends from A, back to initial level R, fig. 395, | F
 descends from initial level R, to lowest point F; fig. 396,
@@ -12059,59 +8447,29 @@ direction of the magnetic field; the latter, as indicated by the even spacing
 of the vertical arrows representing the magnetic lines, is assumed to be
 uniform.
 
-The wire CD, of the loop, as it rotates at constant speed, cuts the mag-
-netic lines at the points 0, 1, 2, 3, etc., but the distances 01, 12, 23, etc.,
+The wire CD, of the loop, as it rotates at constant speed, cuts the magnetic lines at the points 0, 1, 2, 3, etc., but the distances 01, 12, 23, etc.,
 
-### D : A
-
-% 7 4
-\
 ee eee ee : g 7
 an no A, 5——6
-eo \ / / we
+
 me IN TA LT ZING 4—5
-/ Me \ \ / / \
-\ \
-/) AVL DONS 5——4
-/ \
-/ Se eT et Zi | 2 — 3
-| \ \ 1 : Vi 7 \ |
-! \
-| Se ; l 2
-\ 4/
-oN-- 4----f---f----f---L--L Meg 1
-\
-\ :
-i \ /
 
-k \ CG. > r)
-i \ WX. Mo / B
-
-~ s
-Pd
--
--
-een ae ee oe wo G
-
-Fia. 397.—Illustrating the increase and decrease in the rate magnetic lines are cut by a revolv-
-ing loop. The initial position of the loop is taken at right angles to the direction of the lines
+Fia. 397.—Illustrating the increase and decrease in the rate magnetic lines are cut by a revolving loop. The initial position of the loop is taken at right angles to the direction of the lines
 of force. Since the loop rotates at a constant speed, it is evident that it does not cut the
 magnetic lines at uniform rate, because the intercepted arcs O01, 12, etc., are unequal. These
 arcs rectified at the right by the horizontal lines 01, 12, etc., show more clearly the increase
-and decrease in the rate at which the magnetic lines are cut. |
+and decrease in the rate at which the magnetic lines are cut.
 
 between these points, are unequal; that is, the wire CD, travels farther
 in cutting the lines 0 and 1, than it does in cutting 1 and 2, and still less
 in cutting the lines 2 and 3. After cutting the line 4, which passes through
-the axis of revolution, the opposite conditions obtain. |
+the axis of revolution, the opposite conditions obtain.
 
 If the arcs 01, 12, etc., of the dotted circle, which are intercepted by
 the magnetic lines and passed through by the wire, be rectified and laid
 down under each other, as lines 01, 12, etc., the time of passage of the
 wire between successive magnetic lines will vary as the length, since the
 speed is uniform. 'Thus the wire in passing from line 0 to line 1, takes
-
-The Dynamo; Basic Principles 265
 
 much more time than in passing from 1 to 2, as indicated at the left of
 the figure by 01 and 12, and still less in passing from 2 to 3; that is, the
@@ -12122,8 +8480,7 @@ Since similar conditions prevail with respect to AB, for its corresponding
 movement, it is evident that the number of lines which thread through
 the loop are decreased with increasing rapidity as the loop rotates through
 the first quarter of a revolution, and increased with decreasing rapidity
-during the second quarter of the revolution. Moreover, it must be evi-
-dent that the reverse conditions obtain for the third and fourth quarters
+during the second quarter of the revolution. Moreover, it must be evident that the reverse conditions obtain for the third and fourth quarters
 of the revolution.
 
 The Sine Curve.—In the preceding paragraph it was shown
@@ -12139,11 +8496,8 @@ Decreases again to zero;
 Increases to a maximum in the opposite direction, and
 Decreases to zero.
 
-OP Oh Fe
-
 A wave like curve, as shown in fig. 399, 1s used to represent
-these several changes, in which the horizontal distances repre-
-sent time, and the vertical distances, the varying values of the
+these several changes, in which the horizontal distances represent time, and the vertical distances, the varying values of the
 32lectric pressure
 
 It is called the sine curve because a perpendicular at any point to its
@@ -12153,14 +8507,10 @@ axis is proportional to the sine of the angle corresponding to that point.
 
 wine curve.
 
-Ans. In fig. 398, at the left, is shown an elementary arma-
-ture in the horizontal position, but at right angles to the mag-
-iaetic field. The dotted circle indicates the circular path de-
+Ans. In fig. 398, at the left, is shown an elementary armature in the horizontal position, but at right angles to the magiaetic field. The dotted circle indicates the circular path de-
 "cribed by AB, or CD, during the revolution of the loop. Now,
 
-266 The Dynamo; Basic Principles
-
-as the loop rotates, the induced pressure will vary in such |
+as the loop rotates, the induced pressure will vary in such
 manner that zits intensity at any point of the rotation 1s propor
 tional to the sine of the angle corresponding to that point. Hence
 on the horizontal line which passes through the center of th
@@ -12168,19 +8518,9 @@ dotted circle, take any length, as 08, and divide it into an
 number of parts representing fractions of a revolution, as 0°
 90°, 180°, etc. Erect perpendiculars at these points, an
 
-ee ew VOLE OR 2) Ea
-
 See eee ame Se eee» POINT OF MAXIMUM PRESSURE,
 D SL LE 3} --—- 1 LINE OF ZERO PRESSURE ,
-\ lL bY HALF PERIOD ——»!
-: er oe 270 360°
-
-'Ns Lom | q
-
-~l4 :
-YM -~ONE REVOLUTION———_--_____+!
-
-®
+lL bY HALF PERIOD ——»!
 
 Fias. 398 and 399.—Application and construction of the sine curve. The sine curv2 i3 a wave
 like curve used to represent the changes in strength and direction of an alternating current. Aj
@@ -12196,21 +8536,16 @@ or average electromotive force developed during the revolution, or period, is eq
 or .637 of that of the maximum ordinate, that is, average electromotive force = .637 >»
 amplitude. The sine curve lies above the horizontal axis during the first half of the revolu
 tion and below it during the second half, which indicates that the current flows in one direc
-tion for a half revolution and in the opposite direction during the remainder of the revolu-
-tion.
+tion for a half revolution and in the opposite direction during the remainder of the revolution.
 
 from the corresponding points on the dotted circle project lines
 parallel to 08. The intersections with the perpendiculars give
 points on the sine curve. Thus the loop passes through 2, at
 the 90° point of its revolution, hence, projecting over to the
-corresponding perpendicular gives 22', a point whose eleva-
-tion from the axis is proportional to the electric pressure at
-
-The Dynamo; Basic Principles 267
+corresponding perpendicular gives 22', a point whose elevation from the axis is proportional to the electric pressure at
 
 that point. In like manner other points are obtained, and the
-curved line through them will represent the variation in the elec-
-tric pressure for all points of the revolution.
+curved line through them will represent the variation in the electric pressure for all points of the revolution.
 
 At 90°, the pressure is at a maximum; hence, by using a pressure scale
 such that the length of the perpendicular 22' for 90° wi!l measure the
@@ -12219,19 +8554,6 @@ will represent the actual pressure at that point.
 
 The curve lies above the horizontal axis during the first half of the
 revolution, and below it during the second half, which indicates that
-
-ul
-—
-<{
-UO
-Y7)
-ul
-
-ft
--
-
-O
->
 
 Fic. 400.—Sine curve and voltage scale illustrating variation and reversal of pressure during
 the alternating cycle as measured by the sine of the angle.
@@ -12248,33 +8570,11 @@ In fig. 401, the loop ABCD, 1s 1n the vertical position at the
 
 Basic Principles
 
-e
-B |
-
-'NVA WIMUIIXPUL S}I poyoeal ainssoid oy} pue UOr{N]
-
 -OAdI & JO JoyIenb suo opeul MOU sey dGOO[ VY, "YI O} A WO VAIN DUIS 9} JO VSL
-
-jenpeis 94} AQ Pd}eOIPUL SI VSedIDUI SIU], "ZOP 'SY Ul poyeIsn]I uontsod [e}UOZLUOY
-
-JY} OUI SaUIOD doo] 9} [UN 'TeyUOZTIOY sy} YWM dooy oy} Jo. sued sy} Aq spew
-g[3ue ay} JO dUIS dy} 0} UOTIOdOId UT saseatIOUT anssaid 9Y} 'UOT}e}01 BY} BuMuUTWUOZ)
-
-'S ysniq Ysno1y} SuIUINjeI pue 'JV YsNIq Ysnory} JMNdIID [eUII}XI
-
-34} 0} 3NO Bulos 'sMOIIe 94} AQ Pd}eOIPUL UOT}9IIP JY} UI MOT O} SUId9q JUOLINS
-dy} pue sasii ainssoid ay} 'auejd [eorsaA oy} JO yo sojze}01 doo] vy} se UOOS SY
 
 'amnssoid
 
-OU JO OSUT] JO SIxe oY} UO 'SI }eU} 'yUIOd O1eZ 9Y} 'Y 3e SUIsaq UMOYS Se VAIND
-
-SUIS 9} BUSY 'O1ezZ SI aInssaid oY} JULSUI SIG} FY '"UOTNJOADI VY} JO SuTUUISIq
-
 "QJOAD JUIIIND BZUIVVUIIITL BY} 0} BAIN BUIS 94} JO
-uot}eoTdde ay} A[aAIssa1Z01d ZUIMOYS 'UOTINJOASI 9Y} JO -0G YICS JOJ DIN}JeuLIe JO MIA YUM "BAIND VUIS BY L— LOP 07 TOP "SOld
-
-The Dynamo; Basic Principles 269
 
 As the loop rotates past the horizontal position of fig. 402,
 ithe electric pressure gradually decreases in intensity, reach-
@@ -12282,9 +8582,9 @@ ithe electric pressure gradually decreases in intensity, reach-
 'when the loop has turned one half revolution. This is indicated
 'by the gradual fall of the curve from F, to G.
 
-_ When the loop turns out of the vertical position shown in
+When the loop turns out of the vertical position shown in
 ifig. 403, the current reverses, because the movement of AB,
-: dee waren NORMAL NEUTRAL PLANE
+dee waren NORMAL NEUTRAL PLANE
 : REVERSAL
 : REVERSAL
 
@@ -12292,25 +8592,19 @@ ifig. 403, the current reverses, because the movement of AB,
 
 ! ROTATION
 
-aD
-
 "Fig. 408.—Reversal of armature current. For illustration, assuming no field distortion or self
 induction in the coil, the current will flow in the direction L, until the coil shown reaches the
-normal neutral plane HD. Here the current or pressure is zero, and for position beyond |
+normal neutral plane HD. Here the current or pressure is zero, and for position beyond
 HD, as R, the current flows in the reverse direction F. In the actual machine, the current
-does not reverse at HD, but at some later position as kd, owing to field distortion and self-
-induction.
+does not reverse at HD, but at some later position as kd, owing to field distortion and selfinduction.
 
-and CD, 1s reversed; at this instant the brush M, becomes nega-
-itive, and S, positive. This reversal of current is indicated by
+and CD, 1s reversed; at this instant the brush M, becomes negaitive, and S, positive. This reversal of current is indicated by
 Ithe curve falling below the axis from G, to I.
 
 During the second half of the revolution, figs. 403 to 405,
 ithe changes that occur are the same as in the first half, with
 ithe exception that the current is in the reverse direction; these
 changes are as shown by the curve from G, to I.
-
-270 The Dynamo; Basic Principles
 
 Define a dynamo with respect to its principle of
 operation.
@@ -12319,33 +8613,27 @@ What is the object of the field magnet?
 . What is a commutator?
 . Describe in detail the operation of an elementary
 alternator.
-6. How is the Fleming's rule applied to determine the |
+6. How is the Fleming's rule applied to determine the
 direction of current?
 7. What is the sine curve?
 
 pom
 
-On —B W HN
-
 8. Describe the construction and application of the
 sine curve.
-
-The Dynamo; Current Commutation 271
 
 ## CHAPTER 14
 
 The Dynamo;
 Current Commutation
 
-How the Dynamo Produces Direct Current: The Commu-
-tator.—The essential difference between an alternator and a
+How the Dynamo Produces Direct Current: The Commutator.—The essential difference between an alternator and a
 lynano is that the alternator delivers alternating current to the
 oxternal circuit while the dynamo delivers direct current.
 
 In both machines, as before stated, alternating current is
 nduced in the armature, but the kind of current delivered to
-he external circuit depends on the manner in which the arma-
-ure current is collected.
+he external circuit depends on the manner in which the armaure current is collected.
 
 In the case of an alternator, the method is quite simple. As previously
 explained, each end of the loop is connected with an insulated collector
@@ -12362,12 +8650,9 @@ laced between the armature and the external circuit and so
 rranged that it will reverse the connections with the external
 rcuit at the instant of each reversal of current in the armature.
 
-272 The Dynamo; Current Commutation
-
 #### Ques. How is a commutator constructed?
 
-Ans. It consists of a series of copper bars or segments ar-
-ranged side by side forming a cylinder, and insulated from
+Ans. It consists of a series of copper bars or segments arranged side by side forming a cylinder, and insulated from
 each other by sheets of mica or other insulating material.
 
 #### Ques. Where is the commutator placed?
@@ -12375,8 +8660,7 @@ each other by sheets of mica or other insulating material.
 Ans. It is attached to the shaft at the front end of the
 
 Fias. 409 and 410.—Rectified current. The alternating current generated in the armature
-of a dynamo its rectified by reversing every other half wave. Variations in speed which cor-
-respond with variations in rectified current might be produced by a car on a scenic railway,
+of a dynamo its rectified by reversing every other half wave. Variations in speed which correspond with variations in rectified current might be produced by a car on a scenic railway,
 as shown. The car gradually increases in speed as 1t moves down a dip, attaining maximum
 speed at the bottom, then gradually losing speed until it comes to a practical stop at the
 top of the following rise, after which the same cycle is repeated. If the speed of the car be
@@ -12388,82 +8672,49 @@ the same as those drawn for the pendulum, except that they are all on the same s
 reference line; that is, there is no reversal of direction, the car is always running in the
 same direction but at continually varying speed. If the car should swing back upon reaching
 the start of the second rise which corresponds to B, instead of continuing on the same side, the
-speed curve would be represented by the dotted curve B F D, and would represent an alter-
-ating current. By continuing on instead of backing up, the curve BC D, is obtained. This
-is exactly what happens withthe rectified current. When thecurrent has increased to a maxi-
-mum and then decreases to zero, instead of reversing, it increases to a maximum again in
+speed curve would be represented by the dotted curve B F D, and would represent an alterating current. By continuing on instead of backing up, the curve BC D, is obtained. This
+is exactly what happens withthe rectified current. When thecurrent has increased to a maximum and then decreases to zero, instead of reversing, it increases to a maximum again in
 the same direction. The curve representing a rectified current has the same shape as the
 alternating current which is rectified, except that it is all in the same direction. Therefore,
 it is continually fluctuating from zero toa maximum value—a condition very unfavorable from
 the standpoint of steady light.
-
-The Dynamo; Current Commutation 273
 
 #### Ques. What are inductors?
 
 Ans. The insulated wires wound on the armature core, and
 in which the electric current is induced.
 
-#### Ques. How are the inductors connected to the commu-
+#### Ques. How are the inductors connected to the commutator?
 
-tator?
-
-Ans. The ends of each conducting loop or coil must be con-
-nected with the commutator segments in a certain order to
+Ans. The ends of each conducting loop or coil must be connected with the commutator segments in a certain order to
 correspond with the type of winding.
 
 #### Ques. Explain in detail how direct current is obtained in
 
 a dynamo.
 
-### KKKKKK KK KKK KKK
-
-### KKK SKK KKK
-
 Fig. '411.—Production of direct current. A dynamo consists in reality of a number of elemental
-alternators, each one connected to a pair of segments which are assembled with a large num-
-ber of similar ones to form a ring known as a commutator. This commutator is connected
+alternators, each one connected to a pair of segments which are assembled with a large number of similar ones to form a ring known as a commutator. This commutator is connected
 to the outside circuit through a pair of brushes and as it revolves the brushes connect first
 one of these elemental generators and then the next to the outside circuit. If each one of the
-generating systems connected to a pair of segments be represented, as producing an alter-
-nating current wave as shown in fig. 399, then a number of these elements would produce
+generating systems connected to a pair of segments be represented, as producing an alternating current wave as shown in fig. 399, then a number of these elements would produce
 a corresponding number of waves as here shown. When the machine revolves, the
 circuit is then connected to one wave after another, the shift being made when the brush
 passes from one segment to the next. The points of shifting are where the waves intersect
 each other. Therefore, the current in the outside circuit would be produced by the tops of
 the individual waves and represented by the heavy line shown in the curve system. —
 
-Ans. It will be easily seen by the aid of a series of illustra-
-tions just how the alternating armature currents are trans-
-formed into direct current. When the loop its in the vertical
-position, as shown in fig. 412, brush M, is in contact with seg-
-ment F, and S with G. As the armature rotates, the current
+Ans. It will be easily seen by the aid of a series of illustrations just how the alternating armature currents are transformed into direct current. When the loop its in the vertical
+position, as shown in fig. 412, brush M, is in contact with segment F, and S with G. As the armature rotates, the current
 flows for one half. revolution in the direction AB, through
 
 10n
 
 Current Commutat
 
-®
-
-"UOI}DOIIP SWeS 94} UL JINOIID [eUII}X9 9} UI JUSIMI 9U}
 Suldaay Sny} '9907d S8YD] ALNJDULLD BY] UL JUILLNI f[O ]DSLAAIL LO UOIDULIYID BY] JUDISUL ay]
-1D JUINILID JOULIJXA OY] YJIM SUO1JIBUUOD AY] ASLANAL O} ST SITY} JO JPOOJJa DUT, "yy UM $70e}
--u0Od pue '5 SaAPra *S o[TYM '+ YIM $}9e}]UOD puUR "yf SoAvZI 'JI "ST FEU} SATVATJDEdSaI
-'7 pue + UYWM 3eLUOD OFUI VWOD puke '5 PUL YJ S}JUBUTSIS YIM 39e}UOD Jo JNO ssed 'Ss
-pue J Seysniq 94} 'JaAdMOY 'JULSUI SITY} TY "SMOLIe 94} A Po} edIPUI se 'Yq UOT}deIIp
+
 aysoddo oy} UI SMO]] Pue SaSII9AZI COO] VY} UI JUIIIND 9Y} 'PLP "BY 'UOTINJOADI 9U} Jo
-J[W@y puodes oY} JO SUTUUIZEq 9Y1 IV °D JUoUTseS pue 'Ss Ysniq Ysno1y} suluUIMIal 'EP
-pue 7[Pp 'ssl UI UMOUS se "JAY YSNIq YsnoIY. MOI [eU19}X9 9Y} 0} JNO pue 'yy JUsUTaS
-
-'UOIJIIIP BUWIES 9Y} UI UleUIII O} JINDIIO [BUII}X9 VY} UI JUVIIMD 9y} Bulsned
-pue 's}UaUIZaS 3Y} YIM 3OL}UOD BUISIDAII SNY} 'S}UaWIZIS 10}eINWIUIOD 9Yy} UseM}aq Sdes ay} ssed 'G pue J Seysniq ay} jUe}s
--UI SI} YW UOT}Da1Ip vy} UI Goo] 94} pUNOIe SMOY pUe SaSIaAaI VIN}JEUWIS VY} Ul JUIIIND 94} 'PLP "BY 'UOI{NJOAI|I ayy Jo
-J[PEY puooes oy} Jo Zuluulseq 9yY11W "ELpP pue ZIP "SBy 'DH JUsUIZ—es pue S YSsniq YSnNo1y} Suluinjal 'I Ysniq pue 10}e}nNuIWIOD
-ay} JO '7 JUoUIZas YBNo1Y} JNO 'gy UOIIe1Ip 9Y} Ul SMOPY JUalIMd 3Y} UOIJNJOAII 9y} Jo Jyey ysIYy 9Yy} SULING, *}Us1IINI Jap
-pajed OS oy} OUI ZuI}eUII}][e SULIOJSUeI} OUTBUAp & MOY MOYS SoINSY ssoyf, "}JUSIINI VY} JO UOI}EINUIWIOD— LTP 0} ZIP "SOY
-
-The Dynamo; Current Commutation 275
 
 #### Ques. How is this indicated by the sine curve?
 
@@ -12476,34 +8727,21 @@ that is G'H'I', is identical with E'F'G'.
 in figs. 412 to 417 continuous?
 
 Ans. No; it 1s properly described as a pulsating current,
-or one, constant in direction, but periodically varying in inten-
-sity so as to progress 1n a series of throbbings or pulsations in-
-stead of with uniform strength.
-
-X < 2%
-
-<_____—- A
+or one, constant in direction, but periodically varying in intensity so as to progress 1n a series of throbbings or pulsations instead of with uniform strength.
 
 Figs. 418 and 419.—Comparison of large and small commutators. Fig. 419 shows effect of
 reducing the number of segments one half. The difference in fluctuation in the current is
 shown by heavy lines which joins the tops of the curves. The A, section sl in fig. 418
 represents the larger number of segments.
 
-#### Ques. What is generally understood by the word ''con-
+#### Ques. What is generally understood by the word ''continuous" as applied to the current obtained from a dynamo?
 
-tinuous" as applied to the current obtained from a dynamo?
-
-Ans. It is usually accepted as meaning a steady or non-
-pulsating direct current; one that has a uniform pressure and
+Ans. It is usually accepted as meaning a steady or nonpulsating direct current; one that has a uniform pressure and
 constant direction of flow as opposed to an alternating curreént.-
 
-#### Ques. Is a continuous current ever obtained with a dy-
-
-namo?
+#### Ques. Is a continuous current ever obtained with a dynamo?
 
 Ans. WNo.
-
-276 ©The Dynamo; Current Commutation
 
 It should be clearly understood at the outset that it is impossible to
 obtain a continuous current with a dynamo. The so called continuous
@@ -12521,10 +8759,6 @@ per revolution of the armature instead of two large pulsations,
 as with the single loop armature, the latter must be replaced
 by one having a great number of loops properly connected to
 
-xP
-
-### VA VALVAVAVAVAVAAVAAVS
-
 Fie. 420.—Direct current fluctuations. The current in the circuit fed from a dynamo fluctuates
 continually in value, but with a large number of commutator segments the magnitude of
 these fluctuations is entirely negligible. The disturbance that might be produced by such
@@ -12534,22 +8768,17 @@ disturbances than a large number of small waves. Likewise a large diameter commu
 will produce a steadier current, and consequently a steadier light than a small commutator
 with a smaller number of segments.
 
-XXX
-
 commutator segments and so arranged that the successive
 loops begin the cycle progressively.
 
 The difficulties encountered in connecting up numerous loops were
 overcome by Gramme, who, in 1871 invented a "ring'' armature. His
-method consists in winding a ring with a continuous coil of wire, con-
-nections being made at suitable intervals with the commutator.
+method consists in winding a ring with a continuous coil of wire, connections being made at suitable intervals with the commutator.
 
 In order to understand the action of such an arrangement, it will be
 well to first consider four separate coils wound on a ring as shown in fig.
 421. These coils are all similar, but at the moment occupy different
 magnetic positions on the ring. The rotation being clockwise, 1, is about
-
-The Dynamo; Current Commutation 277
 
 to enter the field adjacent to the north pole, while 2, is emerging from
 the field in the region of the south pole. Again, 3, is approaching the
@@ -12564,11 +8793,9 @@ pressures are set up at the ends of the coils such as tend to
 produce currents in the directions indicated by the arrows.
 Now, assuming the pressures in coils 1 and 2, to be equal, if
 
-Fic. 421.—Four separate coils wound on ring to illustrate the action of a Gramme ring arma-
-ture. If the ring be rotated the electric pressure induced in adjacent coils will be equal
+Fic. 421.—Four separate coils wound on ring to illustrate the action of a Gramme ring armature. If the ring be rotated the electric pressure induced in adjacent coils will be equal
 and tend to produce currents in opposite directions; hence, if the inner ends be joined, the
-junctions would be at a higher pressure (+ or —) than the loose ends. With proper connec-
-tions current may be collected at the junctions.
+junctions would be at a higher pressure (+ or —) than the loose ends. With proper connections current may be collected at the junctions.
 
 the adjacent ends be joined, no flow of current will take place,
 but the junction will be at a higher pressure than the loose ends
@@ -12580,15 +8807,12 @@ junction will be at a lower pressure than the loose ends, and
 if a wire be attached to the junction and the necessary circuits
 completed, current will flow from the junction around the coils.
 
-278 The Dynamo; Current Commutation
-
 #### Ques. What may be said with respect to the four coil
 
 Gramme ring armature shown in fig. 429?
 
 Ans. According to the laws of electromagnetic induction,
-with the north pole of the field at the left and clockwise rota-
-tion, the induced currents flow upward on both sides of the ring,
+with the north pole of the field at the left and clockwise rotation, the induced currents flow upward on both sides of the ring,
 hence, the pressures oppose each other at only two of the junctions,
 
 Fics. 422 to 424.—Elementary dynamo armatures. Fig. 422, single turn loop; fig. 423, coil of
@@ -12599,10 +8823,7 @@ of current generated with series turns, fig. 423, is only half that generated wi
 parallel fig. 424.
 
 Fias. 425 and 426.—Gramme ring armature with one coil, and characteristic sine curve below.
-With one coil as shown, there are two pulsations of the current per revolution of the arma-
-ture.
-
-The Dynamo; Current Commutation 279
+With one coil as shown, there are two pulsations of the current per revolution of the armature.
 
 namely; at the one connected to brush M , where the pressures on
 either side are both directed toward the junction and the other at
@@ -12614,28 +8835,21 @@ It is evident, then, that the pressure at M, is higher than at S; that 1s,
 M, is positive and S, negative; consequently, the current flows from M,
 to the external circuit and returns through S.
 
-#### Ques. In what other way may the four coils of the arma-
+#### Ques. In what other way may the four coils of the armature in fig. 429 be regarded?
 
-ture in fig. 429 be regarded?
-
-Fias. 427 and 428.—Gramme ring armature with twocoils placed 180° apart. This arrange-
-ment gives double the pressure of the one coil armature, fig. 425.
+Fias. 427 and 428.—Gramme ring armature with twocoils placed 180° apart. This arrangement gives double the pressure of the one coil armature, fig. 425.
 
 Ans. 'They may be considered as two pairs AA' and BB',
-the action of either pair being identical with the two coil ar-
-mature shown in fig. 427; this, in turn, produces the same effect
+the action of either pair being identical with the two coil armature shown in fig. 427; this, in turn, produces the same effect
 as the one coil armature of fig. 425, with the exception that
 the amplitude of the current generated with two coils 1s twice
 as great as that with one coil of the same number of turns.
 
 Again considering the action of the four ring coil shown in fig. 429, and
-starting at the beginning of the revolution, the variation of pressure in-
-duced in coils AA', is indicated by the dotted sine curve 1, and of BB',
+starting at the beginning of the revolution, the variation of pressure induced in coils AA', is indicated by the dotted sine curve 1, and of BB',
 
 by dotted curve 2. It will be seen that 1, begins at the axis or line of no
 pressure, and 2, at maximum pressure.
-
-280 The Dynamo; Current Commutation
 
 The two curves overlap each other, and in order to determine the effect
 of this it 1s necessary to trace the resultant curve 3. This is easily done,
@@ -12652,8 +8866,6 @@ revolution, the resultant curve reaches its amplitude, which is equal to
 
 the current depends.
 
-0" N 45°
-
 Fics. 429 and 430.—Gramme ring armature with four coils. The pressure induced in coils A
 A', reaches the zero point at the instant that of coils B, B' is at a maximum: hence, sine
 curve No. 1, beginning at zero, and No. 2, at the maximum, show the pressure changes for
@@ -12668,29 +8880,19 @@ coils the variation of pressure or amplitude of the pulsations is less than
 half that obtained with two; moreover, with four coils the number of
 pulsations per cycle 1s doubled.
 
-The Dynamo; Current Commutation 281
-
-In order to further observe the approach to continuous current ob-
-tained by increasing the number of coils, the effect of a six coil armature
+In order to further observe the approach to continuous current obtained by increasing the number of coils, the effect of a six coil armature
 is shown in fig. 432, the resultant curve being obtained in the same manner
 as just explained. For comparison, the curves for the three cases of two,
 four, and six coils are reproduced under each other in fig. 433.
 
-Figs. 431 and 432.—Gramme ring armature with six coils. The sine curves 1, 2 and 3, repre-
-sent the conditions due to coils AA', BB' and CC', respectively, and 4, the resultant pulsa-
+Figs. 431 and 432.—Gramme ring armature with six coils. The sine curves 1, 2 and 3, represent the conditions due to coils AA', BB' and CC', respectively, and 4, the resultant pulsa-
 . tions.
 
-p" 60° g0° {80° 360°
-
-Fic. 433.—The resultant curves of figs. 428, 430 and 432 are here shown for comparison to illus-
-trate the approach to uniform pressure as the number of coils are increased. It should be
+Fic. 433.—The resultant curves of figs. 428, 430 and 432 are here shown for comparison to illustrate the approach to uniform pressure as the number of coils are increased. It should be
 noted that the number of pulsations per cycle depends on the number of coils, and that as
 the pulsations increase in number, the variation in pressure decreases.
 
-282 The Dynamo; Current Commutation
-
-As the number of coils is further increased, the amplitude of the pul-
-sations decreases so that the resultant curve approaches nearer the form
+As the number of coils is further increased, the amplitude of the pulsations decreases so that the resultant curve approaches nearer the form
 of a straight line.
 
 In the actual dynamo there are a great many coils, hence the amplitude
@@ -12702,8 +8904,7 @@ such is not the case.
 
 2. What is the construction of a commutator?
 
-3. How are the inductors connected to the commu-
-tator? |
+3. How are the inductors connected to the commutator?
 
 4. Explain at length how direct current is obtained in
 a dynamo?
@@ -12718,8 +8919,6 @@ in a dynamo?
 7. Upon what condition does the steadiness of the
 current depend?
 
-Classes of Dynamo 283
-
 ## CHAPTER 15
 
 Classes of Dynamo
@@ -12727,7 +8926,6 @@ Classes of Dynamo
 In order to adapt the dynamo to the varied conditions of
 service, its design 1s modified in numerous ways, giving rise
 to the different "'types."' These may be classified with respect
-to:
 
 1. Field magnets;
 
@@ -12742,20 +8940,15 @@ Under the second division are included the following:
 
 a. Self-exciting machines of which the magneto is the simplest. Its
 magnetic field is obtained from permanent magnets, hence the voltage
-generated is comparatively small. The more important type of self-
-exciting machine is provided with electro-magnets in which the field of
+generated is comparatively small. The more important type of selfexciting machine is provided with electro-magnets in which the field of
 force is "built up'' from the residual magnetism of the soft iron or steel
 cores of the field magnets of the dynamo itself. Nearly all commercial
 types of dynamo are of this class.
 
-b. Separately excited machines in which the field magnets are mag-
-netized when the machine is'in operation by current supplied from a
+b. Separately excited machines in which the field magnets are magnetized when the machine is'in operation by current supplied from a
 separate source such as a battery or magneto.
 
-284 Classes of Dynamo
-
-With respect to the third division, based on the field wind-
-ing, dynamos are classed as:
+With respect to the third division, based on the field winding, dynamos are classed as:
 
 a. Series wound;
 b. Shunt wound.
@@ -12764,25 +8957,19 @@ c. Compound wound.
 In addition to the foregoing there are further distinctions with respect
 to the mechanical features. Most dynamos have a revolving armature
 and stationary field magnets; however, in some cases, both the armature
-and field magnets are stationary, a revolving iron conductor being pro-
-vided to intercept the magnetic lines intermittently which produces the
+and field magnets are stationary, a revolving iron conductor being provided to intercept the magnetic lines intermittently which produces the
 same effect as is obtained in cutting the magnetic lines by a revolving
 
-#### Ques. What may be said of bipolar and multipolar dy-
-
-namos?
+#### Ques. What may be said of bipolar and multipolar dynamos?
 
 Ans. Dynamos with bipolar field magnets were universally
 used prior to 1890, but since that time machines of this type
 are only made in very small sizes; the multipolar dynamo is
 the type now in general use.
 
-#### Ques. State some of the features of the multipolar dy-
+#### Ques. State some of the features of the multipolar dynamo.
 
-namo.
-
-Ans. In this class of machine, the armature and field mag-
-nets are surrounded by a circular frame, or ring yoke to which
+Ans. In this class of machine, the armature and field magnets are surrounded by a circular frame, or ring yoke to which
 the field magnets are attached. This ring arrangement has the
 advantages of strength, simplicity, symmetrical appearance,
 and minimum magnetic leakage, since the pole pieces have the
@@ -12793,9 +8980,7 @@ shorter.
 
 multi-pole field magnets?
 
-Classes of Dynamo 285
-
-' Ans. Commercial voltages are obtained at moderate arma-
+Ans. Commercial voltages are obtained at moderate arma-
 'ture speed.
 
 The difficulty experienced with bipolar machines is that, with a dynamo
@@ -12803,14 +8988,6 @@ of large output, the speed at which its armature would have to rotate
 to generate commercial voltages would be excessive.
 
 ### MAGNETO
-
-VW
-A
-
-UNT
-"RCO
-
-OuTSIDE
 
 GiRcuit - | circuit:
 
@@ -12821,17 +8998,13 @@ flowing around a shunt circuit. In a magneto the field magnets are permanently m
 ized. The strength of the magnet field of a magneto is constant while that of a dyname
 varies with the output.
 
-It is evident that with two or more magnetic fields, secured by in-
-creasing the number of poles, the armature inductors revolving between
+It is evident that with two or more magnetic fields, secured by increasing the number of poles, the armature inductors revolving between
 them cut more magnetic lines in one revolution than with a single field,
 
 hence, a given voltage is obtained with less speed of the armature than in
 the bipolar machine.
 
-286 Classes of Dynamo
-
-For instance, if a bipolar dynamo be required to run at say 900 rev-
-olutions per minute to generate 125 volts, a four pole machine of equal
+For instance, if a bipolar dynamo be required to run at say 900 revolutions per minute to generate 125 volts, a four pole machine of equal
 output will require only 450 revolutions, and one of eight poles only 225
 revolutions per minute.
 
@@ -12853,24 +9026,18 @@ would be only about two to ten volts.
 more volts be obtained with a self-exciting dynamo?
 
 Ans. Part or all of the current induced in the armature is
-passed through the windings of the field magnets, thus strength-
-ening the field. The voltage, therefore, will '"'build up,' in-
-creasing until the maximum has been reached.
+passed through the windings of the field magnets, thus strengthening the field. The voltage, therefore, will '"'build up,' increasing until the maximum has been reached.
 
 The maximum voltage will depend upon the capacity of the field mag.
 nets as determined by the construction, and upon the strength of current
 used to excite them.
 
-#### Ques. How long does the process of '"'building up" re-
-
-quire?
+#### Ques. How long does the process of '"'building up" require?
 
 Ans. The time required to fully excite the field magnets is
 from ten to twenty seconds, the rise in field strength being
 indicated on the volt meter or by the gradual increase in the
 brilliancy of the pzlot lamp.
-
-Classes of. Dynamo 287
 
 #### Ques. Name three important classes of dynamo.
 
@@ -12882,17 +9049,9 @@ Ans. In this machine, the field magnets are wound with a
 \few turns of thick wire joined in series with the armature
 'brushes as shown 1n fig. 436.
 
-M
-
-o: oll
-
-$$$ rrr errr aR RE oar eh Day ya SER a ee
-t
-
 Fia. 436.—Series wound dynamo, used for series arc lighting, and as a booster for increasing
 the pressure on a feeder carrying current furnished by some other dynamo. The coils
-of the field magnet.are in series with those of the armature and external circuit, and con-
-sists of a few turns of heavy wire. The characteristic of the series dynamo is to furnish
+of the field magnet.are in series with those of the armature and external circuit, and consists of a few turns of heavy wire. The characteristic of the series dynamo is to furnish
 current with increasing voltage as the load increases. If overloaded, the voltage will drop.
 
 #### Ques. What is the effect of this arrangement?
@@ -12904,17 +9063,12 @@ The current in passing through the field magnets, energizes them and
 strengthens the weak field due to the residual magnetism of the magnet
 cores, resulting in the gradual building up of the field.
 
-288 Classes of Dynamo
-
 #### Ques. For what service is the series dynamo adapted?
 
-Ans. It may be used for series arc lighting, series incan-
-descent lighting, and as a booster for increasing the pressure
+Ans. It may be used for series arc lighting, series incandescent lighting, and as a booster for increasing the pressure
 on a feeder carrying current furnished by some other dynamo.
 
-#### Ques. What is the effect of the series winding in the op-
-
-eration of the machine?
+#### Ques. What is the effect of the series winding in the operation of the machine?
 
 Ans. Its characteristic is to furnish current at an increased
 
@@ -12935,11 +9089,7 @@ to overload the machine, the voltage will drop.
 
 Since the armature coils, field magnets and external circuits are in
 series, any increase in the resistance of the external circuit lessens the
-power of the machine to supply current, because it diminishes the cur-
-rent in the coils of the field magnets and therefore diminishes the ef-
-fective magnetism.
-
-Classes of Dynamo 289
+power of the machine to supply current, because it diminishes the current in the coils of the field magnets and therefore diminishes the effective magnetism.
 
 Again, a decrease in the resistance of the external circuit will increase
 the voltage because more current will flow through the field magnets.
@@ -12953,15 +9103,6 @@ not only diminishes the resistance of the circuit, but causes the field
 magnets to be further excited by the increased current, so that the greater
 the number of lamps put on, the greater becomes the risk of inducing too
 much current.
-
-Wk
-
-AW
-
-lly, Y
-Z
-
-ee ee -
 
 MAIN
 CIRCUIT
@@ -12982,8 +9123,6 @@ external circuit be below a certain limit.
 
 of regulation of series dynamos?
 
-290 Classes of Dynamo
-
 Ans. 'This arrangement is undesirable for magnets of large
 size, because of the tendency to flashing at the contacts of the
 regulating switch.
@@ -13000,12 +9139,10 @@ magnets and connected to the brushes, so as to form a shunt
 
 SHUNT.
 
-cy
 S| too
 
 Fria. 439.—Shunt wound dynamo for parallel circuit incandescent lighting, and' for mill and
-factory power. The coils of the field magnet form a shunt to the main circuit; they con-
-sist of many turns of fine wire and consequently absorb only a small fraction of the current
+factory power. The coils of the field magnet form a shunt to the main circuit; they consist of many turns of fine wire and consequently absorb only a small fraction of the current
 induced in the armature. The characteristic of the shunt dynamo is that it gives practically
 constant voltage for all loads within its range. If overloaded the pressure will drop and the
 machine cease to generate current. M, shunt field coils; R, field rheostat.
@@ -13021,8 +9158,6 @@ through the external circuit.
 In all well designed shunt dynamos, the resistance of the shunt circuit
 is always very great, as compared with the resistance of the armature
 
-Classes of Dynamo 291
-
 and external circuit, the strength of the current flowing in the shunt coils
 being very small even in the largest machines.
 
@@ -13036,7 +9171,7 @@ Ans. It 1s used for constant voltage circuits, as in incan-
 , characteristic feature?
 
 Ans.- The voltage at the dynamo remains practically un-
-| changed, and the current varies according to the load.
+changed, and the current varies according to the load.
 
 #### Ques. Does the voltage remain constant for all loads?
 
@@ -13049,7 +9184,7 @@ demagnetizing itself, and ceasing to generate current.
 
 loads?
 
-Ans. Because there is a drop in the voltage in forcing the |
+Ans. Because there is a drop in the voltage in forcing the
 current through the armature windings which increases with
 the load.
 
@@ -13064,10 +9199,7 @@ winding as shown in fig. 439.
 Moving the lever of the rheostat to the right increases the resistance
 in series with the field winding, and this reduces the amount of current
 
-292 Classes of Dynamo
-
-in that winding, thus reducing the strength of the magnet and conse-
-quently the voltage at the brushes. The contrary movement of the lever,
+in that winding, thus reducing the strength of the magnet and consequently the voltage at the brushes. The contrary movement of the lever,
 by cutting out the resistance, produces the opposite effect.
 
 The Compound Dynamo.—This type machine is designed to
@@ -13094,14 +9226,11 @@ current supplied from the armature to the circuit, and thus automatically
 sustain the pressure. If the series winding were not present, the pressure
 at the terminals would fall as the load increased. This fall of pressure
 
-Classes of Dynamo 293
-
 is counteracted by the excitation of the series winding, which increases
 with the load and causes the pressure to rise.
 
 The number of turns and relative current strengths of the series and
-shunt windings are so adjusted that the pressure at the terminals is main-
-tained practically constant under varying loads.
+shunt windings are so adjusted that the pressure at the terminals is maintained practically constant under varying loads.
 
 With respect to the ratio between the number of turns of
 he two field windings, the dynamo is spoken of as:
@@ -13109,18 +9238,14 @@ he two field windings, the dynamo is spoken of as:
 1. Compound;
 2. Over compounded.
 
-R
-O | a
 COMPOUND f
 
 a. 441.—Compound wound dynamo, used when better automatic regulation of voltage on
-constant pressure circuits is desired than is possible with the shunt machine. The com-
-pound dynamo is a combination of the series and shunt types, that is, the field magnet
+constant pressure circuits is desired than is possible with the shunt machine. The compound dynamo is a combination of the series and shunt types, that is, the field magnet
 Is excited by both series and shunt windings. With a proper selection of the number of
 turns in the series coils, the voltage may be kept automatically constant for wide fluctuations
 in the load. When the machine is over compounded its characteristic is to slightly increase the
-voltage with increase of load, a desirable feature for long transmission lines in order to com-
-pensate for the line drop.
+voltage with increase of load, a desirable feature for long transmission lines in order to compensate for the line drop.
 
 #### Ques. What is the difference between a compound and an
 
@@ -13129,13 +9254,10 @@ yer compounded dynamo?
 Ans. In the first instance, there are just enough turns in
 ie series winding to maintain the voltage constant at the
 
-294 Classes of Dynamo
-
 brushes for variable load. If a greater number of turns be
 used in the series winding than 1s required for constant voltage
 at the brushes for all loads, the voltage will rise as the load
-is increased, and thus make up for the loss or drop in the trans-
-mission lines, so that a constant voltage will be maintained
+is increased, and thus make up for the loss or drop in the transmission lines, so that a constant voltage will be maintained
 at some distant point from the dynamo. The machine is then
 said to be over compounded.
 
@@ -13150,25 +9272,19 @@ Ans. Generally for a rise of voltage of from five to ten per
 cent.
 
 In construction, the field coils are wound with a greater number of turns
-than actually required, the machine being accurately adjusted by a run-
-ning load test after completion.
+than actually required, the machine being accurately adjusted by a running load test after completion.
 
 #### Ques. How is the degree of over compounding varied?
 
 Ans. A rheostat is placed in shunt with the series winding
-so that the current passing through the winding may be regu-
-lated to control the voltage of the machine.
+so that the current passing through the winding may be regulated to control the voltage of the machine.
 
-#### Ques. How are the ends of the shunt winding of a com-
-
-pound dynamo connected?
+#### Ques. How are the ends of the shunt winding of a compound dynamo connected?
 
 Ans. There are two methods of connection, being known as
 the short shunt and the long shunt.
 
 #### Ques. Describe the short shunt.
-
-Classes of Dynamo 295
 
 Ans. In the short shunt, the ends of the shunt winding are
 ynnected directly to the brushes as in fig. 442.
@@ -13176,64 +9292,16 @@ ynnected directly to the brushes as in fig. 442.
 #### Ques. Describe the long shunt.
 
 Ans. In the long shunt, one end of the shunt winding is
-ynnected to one of the brushes and the other end to the ter-
-inal connecting the series winding with the external circuit
+ynnected to one of the brushes and the other end to the terinal connecting the series winding with the external circuit
 3 in fig. 443.
 
 Pes
-"i "Ay,
+
 AAG "Why i
-MU ys,
-g\) oo TP, , God
-: Z ae "Yy /
-: = ie
--
 
-\)
+### MAIN CIROUIT MAIN CIRCUIT
 
-an |
-\V
-SS
-
-4 leh te
-TT
-
-ss é
-ST ~
-
-am S N
-
-Wy ~"D 2 = wes S i
-
-ye N
-
-HEPRRIWNSS BS 91
-
-\Pip ii RecN . ~ \
-
-t} , \a \
-
->
-
-"
-
-"Ke
-
-TREE
-as ee es
-ae <<
-ee ————
-ae
-Res —— aT?
-<a e or <I:
-
-wn U3 ae:
-a > cx <>
-wu << yn ——
-MAIN CIROUIT MAIN CIRCUIT
-
-as. 442 and 443.—Short and long shunt types of compound wound dynamos. The dis-
-tinction. between the two is that the ends of the short shunt connect direct with the brush
+as. 442 and 443.—Short and long shunt types of compound wound dynamos. The distinction. between the two is that the ends of the short shunt connect direct with the brush
 terminals, while in the long shunt type, fig. 443, one end of the shunt connects with one
 orush terminal and the other with the terminal connecting the series winding with the
 »xternal circuit. Rj is the shunt field rheostat for regulating the current through the shunt.
@@ -13244,21 +9312,16 @@ Ans. Theoretically, the long shunt is preferable as being
 e more efficient; however, in practice, the gain is not very
 yoreciable and the.short shunt is generally. used.
 
-296 Classes of Dynamo
-
 #### Ques. What may be said regarding the voltage in short,
 
 and long shunt machines?
 
-Ans. Ina short shunt machine, the shunt winding is sub-
-jected to a higher voltage than with a long shunt. The pressure
+Ans. Ina short shunt machine, the shunt winding is subjected to a higher voltage than with a long shunt. The pressure
 applied through a shunt winding with a long shunt, for any
 particular load, is equal to the voltage at the brushes plus the
 drop in the series winding.
 
-#### Ques. For what other service besides incandescent light-
-
-ing are compound dynamos adapted?
+#### Ques. For what other service besides incandescent lighting are compound dynamos adapted?
 
 Ans. They are employed in electric railway power stations
 where the load is very fluctuating.
@@ -13286,10 +9349,7 @@ current for lighting during a certain portion of the evening.
 Under such conditions the compound machine with slight modification
 is used, the ordinary shunt dynamo not being capable of maintaining
 
-Classes of Dynamo 297
-
-the necessary consistency of voltage, without attention to the shunt reg-
-ulator in driving the lamps direct, the ordinary compound dynamo on the
+the necessary consistency of voltage, without attention to the shunt regulator in driving the lamps direct, the ordinary compound dynamo on the
 other hand, being unsatisfactory for charging storage batteries.
 
 #### Ques. How is the compound dynamo modified to adapt it
@@ -13302,10 +9362,6 @@ Ans. It is furnished with alternative compound winding, in
 ich the series winding is provided with a switch, which may
 fixed either upon the machine itself or upon the switchboard.
 
-Es.
-
-298 Classes of Dynamo
-
 This switch permits the series coils to be either short circuited in part
 or cut out of the circuit entirely while the machine is charging the storage
 battery, being again cut into circuit when the machine is required to
@@ -13315,8 +9371,6 @@ Separately Excited Dynamos.—lIn this class of machine the
 
 current required to excite the field magnets 1s obtained from some
 independent external source.
-
-### EXCITER
 
 ### MAIN CIRCUIT
 
@@ -13330,17 +9384,12 @@ field magnets of a larger dynamo.
 
 A separately excited dynamo is shown in fig. 445. This method of field
 
-Classes of Dynamo — 299
-
-™
-
 excitation is seldom used except for alternators; it is, however, to be
 found occasionally in street railway power houses, the shunt fields of all
 the dynamos being separately excited by one dynamo.
 
-In common with the magneto, the separately excited machine possesses |
-the property that, with the exception of armature reaction, the mag-
-netism in its field and therefore the total voltage of the machine is inde- |
+In common with the magneto, the separately excited machine possesses
+the property that, with the exception of armature reaction, the magnetism in its field and therefore the total voltage of the machine is inde-
 pendent of variations in the load.
 
 Dobrowolsky Three Wire Dynamo.—This type of dynamo
@@ -13355,45 +9404,27 @@ ised in the Westinghouse three wire dynamo.
 
 thout a balancer. The armature is provided with insulated
 p rings connected to suitable points in the armature winding
-d (by means of brushes) with choking coils meeting at a com-
-yn point, to which the neutral wire of the system is connected,
+d (by means of brushes) with choking coils meeting at a comyn point, to which the neutral wire of the system is connected,
 > main terminals being connected with the outside wires.
 
 The machine is capable of feeding unbalanced loads without
 ious disturbance of the pressure on either side of the system.
 
-Le
-
-300 | Classes of Dynamo
-
-a
-
 The principle of the Dobrowolski three wire dynamo is illustrated in
-fig. 447. The armature A 1s tapped at two points, B and B', and con-
-nected to slip rings CC'. A compensator or reactance coil D, between
+fig. 447. The armature A 1s tapped at two points, B and B', and connected to slip rings CC'. A compensator or reactance coil D, between
 the two halves of which there is minimum magnetic leakage, is connected
 to C and C', by brushes, and has its middle point tapped and connected
 to the neutral wire E.
 
 It is clear, from the symmetry of the arrangement, that the center
-point of the coil must always be approximately midway in pressure be-
-tween that of the brushes, and hence any unbalanced current will return
+point of the coil must always be approximately midway in pressure between that of the brushes, and hence any unbalanced current will return
 into the armature, dividing equally between the two halves of the coil.
 
-A Bal
-B!
-/ c \ = [
 Coa
-ae)
-oye E
-EO
+
 |N—— De NEUTRAL WIRE
-ZC 0
-A coC>
+
 eae
-OW
-OLRcs
-B ZA
 
 Fic. 447.—Diagram showing principle of Dobrowolski three wire dynamo.
 
@@ -13406,8 +9437,6 @@ always be arranged so that the magnetizing effect of the neutral current
 
 is self-neutralized in the windings, as otherwise saturation occurs causing
 a very heavy alternating magnetizing component.
-
-Classes of Dynamo 301
 
 . How are dynamos modified to adapt them to the
 
@@ -13455,22 +9484,6 @@ dynamo.
 
 pound dynamo.
 
-20.
-
-21.
-Zo,
-Zo:
-
-24.
-
-2d:
-
-26.
-2h
-28.
-
-ae
-
 Classes of Dynamo
 
 What is the difference between a compound an
@@ -13498,8 +9511,6 @@ Dobrowolski three wire dynamo.
 For what service is the Dobrowolsri three wir
 dynamo adapted?
 
-Dynamo and Motor Experiments — 303
-
 ## CHAPTER 16
 
 Experiments Illustrating
@@ -13510,33 +9521,19 @@ vhich will be very helpful to the student in showing in a
 
 E. KNOTT APPRS-V=
 
-in
-yo
-: : u iS
-Hue ; I: :
-NG, L
-
-tS
-. SV SSSES
-
 3. 448.—Gilley Gramme machine. Designed to show the lines of force in a working model
 »f the dynamo and motor with the armature in position and in actual operation. Both the
 jeld and armature are designed and made in flat form, so that the upper surfaces of both
 ire level, permitting the paper or glass upon which the lines of force by the filings method
 ire to be mapped, to take a smooth, horizontal position. The lines of force are thus per-
 
-nitted to arrange themselves under no other influence than that of the magnetic force exist-
-ng in the armature and field.
+nitted to arrange themselves under no other influence than that of the magnetic force existng in the armature and field.
 
 nple way "how it works." The two elementary machines
 ed in making the experiments are:
 
 1. Gilley Gramme machine;
 2. Miller-Cowen Dynamo.
-
-NNN
-
-304 Dynamo and Motor Experiments
 
 The Gilley-Gramme machine is a modification of a type of machin
 now generally used for large units for power and lighting stations, so worke
@@ -13547,42 +9544,16 @@ The Miller-Cowen attachment is an outgrowth of the Gilley Gramm
 machine and was built meeting the requirements of Professors Miller anc
 Cowen of Boston schools. Their purpose was to design a machine o
 
-s Cs ve ig
-. \ 4 -—
-
-— 7 ' x \
-—t | x . Y \ \N —
 —t IN 4 MM 2
-7 ke } A -: AM \\ 7
-ae N = NYAS
+
 Ae EEE dN IN
-SAS \\\ ' \ BS ;
-ae \\\ YY \ No
-—-s ey ' \ & 2. INNO
-SA ZEA WO . @: /
-NM ZO Ay, . pes?
-ALE \\ a Mp Ny i}
-rm tf \ WS Wy Y) -
-BY, y Nn @O® }
-SU KW ES
-yy A .
-LY) \ — re
-2 Y \\
-tf, My We . SS r .
-x Wy
-YAH hh \
-Ml / Tif HT \\ »
-PPE AD \
+
 What
-]
 
 'aisle
 
-i}
-
-pas Se ee ES Sas
 LIE I ————
-iy
+
 SSoSTon — || MASS. —
 
 Fias. 449 to 451.—Gilley Gramme machine disassembled showing the three basic parts of the
@@ -13599,27 +9570,19 @@ G lley Gramme machine, and by eliminating the feature of plotting the
 lines of force by the iron filings method they were enabled to design a ma.
 chine which could be used in lecture table demonstration and used tc
 
-Dynamo and Motor Experiments 305
-
 develop all of the fundamental principles of both direct and alternating
 current machines.
 
-Directions for Experiments with Gilley Gramme Ma-
-ine.—Ihe following experiments are fundamental. |
+Directions for Experiments with Gilley Gramme Maine.—Ihe following experiments are fundamental.
 1ey are the experiments usually selected for secondary
 1001 work. Many modifications and additions to this
 t will suggest themselves to the teacher.
 
-a!"
-
-ssit°
 grist
 
 Preis |
 
 set
-
-ih sotee
 
 452.—DMiller-Cowen machine for study of both d.c. and a.c._ In order to enakle the student
 see clearly the working of the essential parts of the instrument, the split commutator for
@@ -13627,14 +9590,11 @@ e direct current and the collecting rings for the alternating current are greatl
 id separated from the armature winding. In order to make clear the effect of the iron core
 the moving armature, the instrument is designed so that the iron core, which for the sake
 efficiency is laminated, is made easily removable, so that the instrument may be used
-cher with or without the core. The field magnet may be easily removed and small per-
-anent magnets clamped under the same screws. The Miller-Cowen machine serves to
+cher with or without the core. The field magnet may be easily removed and small peranent magnets clamped under the same screws. The Miller-Cowen machine serves to
 ':monstrate; 1, use of commutator; 2, effect of speed of rotation; 3, separately and self
 cited alternators; 4, series, shunt and compound dynamos. The galvanometer used should
 t be of high sensibility. Any milli-ampere meter in good working order may be used to
 vantage.
-
-306 Dynamo and Motor Experiments
 
 The experiments here described have been compiled by
 teacher of long experience in one of the larger Middle We
@@ -13650,8 +9610,6 @@ Exercise 1. Nature of the Field Magnet.
 from the machine and lay it on a page of a note book (fig. 454). Mark
 outline on the paper. Connect wires from the poles of a battery to t
 binding posts and indicate on the paper the direction of the current
-
-=n
 
 Fias. 453 to 455.—Exercise 1. Gilley Gramme machine with field magnet removed tllust7
 ing the nature of the field magnet.
@@ -13671,12 +9629,9 @@ in which it now points, and so on until the line is traced. Several lir
 traced in this way, each starting from a different point on the pole piet
 will show the distribution of lines ir. the circular space between the pol
 
-Dynamo and Motor Experiments 307
-
 To get an idea of the strength of this field, which has just been mapped,
 notice how fast the compass needle vibrates after being tipped or jarred
-when it is between the pole pieces. The stronger the field, the more rap-
-idly the needle vibrates. The field strength is proportional to the square
+when it is between the pole pieces. The stronger the field, the more rapidly the needle vibrates. The field strength is proportional to the square
 of the number of vibrations per minute.
 
 ## Part 2.—With the compass still remaining between the poles disconnect.
@@ -13689,8 +9644,6 @@ amount of magnetism which remains in iron after the current stops flowing
 is called "'residual magnetism."'
 
 ## Part 3.—Again connect the electromagnet with the cell, but this time
-
-Ay
 
 GS. 456 and 457.—Exercise 2. Gilley Gramme machine as connected to illustrate the effect of
 tron ring of armature.
@@ -13713,27 +9666,23 @@ as shown in fig. 457. Send current from a cell through the field magnet
 coil and with the compass needle find what alteration in the lines of force
 of the field magnet has been made by the presence of the iron ring of the
 
-308 Dynamo and Motor Experiments
-
 ## Part 2.—Plot the lines of force under these new conditions by the 1
 
 filings method and make a diagram of field magnet, iron ring and line
 force as shown by the filings. The presence of this iron ring between
-pole pieces has changed the shape of the lines of force. Notice :
+pole pieces has changed the shape of the lines of force. Notice
 whether the presence of the iron has increased or decreased the stren
 of the magnetic field between the pole pieces. (Compare this diag
 with the diagram in Part 4 of Exercise 1.)
 
 Notice that the compass and the iron filings both indicate no defi
 lines of force in the space inside of the ring, and that, therefore, when
-armature 1s moving, only that portion of its winding that is on the «
+armature 1s moving, only that portion of its winding that is on the
 side can cut across the lines of force. Consequently, the inside portio1
 the winding does not help to generate current when the machine is t
 as a dynamo, nor help to turn the armature when the machine is usec
 amotor. Partly for this reason armatures of large machines are wo
 "drum fashion."'
-
-SS,
 
 Fias. 458 and 459.—Exercise 3. Gilley Gramme machine armature with nuts uppen
 illustrating the nature of the armature.
@@ -13743,7 +9692,7 @@ Exercise 3. Nature of the Armature.
 ## Part 1.—Examine the armature. It consists of an iron ring aro
 
 which there is a continuous winding of wire. At four points on this w
-ing, equally spaced, short wires are soldered on, each of which leads '
+ing, equally spaced, short wires are soldered on, each of which leads
 nut. Each nut is connected to one of the quarter sectors of brass w]
 comprise the commutator. Set the armature on a shallow box or o
 support with the four nuts uppermost (fig. 458). Connect the wires f
@@ -13757,12 +9706,9 @@ the battery wires. Trace the paths of the current through the two ha
 of the winding, and mark this path with a number of arrows on the
 gram.
 
-Dynamo and Motor Experiments 309
-
 marking the position of the double North and double
 South poles. Obtain also the lines of force by the
-iron filings on a cardboard placed above the arma-
-ture. Mark these lines on the diagram. This iron
+iron filings on a cardboard placed above the armature. Mark these lines on the diagram. This iron
 ring with its winding is now acting like a double,
 curved electro-magnet, as shown in the diagram.
 
@@ -13805,13 +9751,10 @@ Look at the commutator and see whether the
 brushes slide from one section to another at that
 instant. Turn the armature through one complete
 revolution and find how many times the jumping
-of the needle indicates that the poles of the arma-
-ture shift.
+of the needle indicates that the poles of the armature shift.
 
 Frias. 460 to 463.—Exercise 4. Gilley Gramme machine disassembled illustrating what the
 commutator does.
-
-310 Dynamo and Motor Experiments
 
 While the armature is being rotated notice whether the North pole
 
@@ -13835,7 +9778,6 @@ the compass. Draw a diagram of the field magnet and mark on it 1
 
 Fia. 464.—Exercise 5. Gilley Gramme machine as connected to illustrate why the armai
 of a motor rotates.
-tw,
 
 poles as indicated by the compass and mark with a plus (+) sign °
 binding post by which the current enters the field coil.
@@ -13855,13 +9797,10 @@ assuming that currents were to flow simultaneously in both the field <z
 the armature in the directions indicated, decide and mark on the diagr
 the direction in which the North pole of the armature would begin to tu
 
-Dynamo and Motor Experiments 311
-
 Pari 3.—Place both armature and field magnet on the stand and make
 the connections shown in fig. 464, being sure that the current flows in the
 armature and in the field magnet in the same direction that it didin Parts 1
-and 2 of this exercise. Notice whether the armature rotate in the direc-
-tion to be expected from Part 2. Make a new diagram of the connections
+and 2 of this exercise. Notice whether the armature rotate in the direction to be expected from Part 2. Make a new diagram of the connections
 showing the direction of the current by arrows, mark the poles of the
 field, the poles of the armature and mark the direction of rotation of the
 
@@ -13892,10 +9831,7 @@ brush holder. Have the latter in the proper position for rotation of the
 armature. Put one or more strong, permanent magnets in the place of the
 field magnet, arranging them as shown in fig. 465. (If two magnets be
 used to form one stronger magnet they should have like poles in contact
-with each other.) Notice that the motor is now operating with jper-
-manent magnets to provide the magnetic field instead of with the
-
-312 Dynamo and Motor Experiments
+with each other.) Notice that the motor is now operating with jpermanent magnets to provide the magnetic field instead of with the
 
 electro-magnet used in Exercise 5. The principal difference is that th
 electro-magnet is the stronger. Curved pole pieces may be used wit]
@@ -13926,14 +9862,12 @@ with the direction in Exercise 6.
 ## Part 2.—Replace the permanent magnets by the electro-magnet am
 
 connect the latter with the cell as shown in fig. 467. Rotate the arma
-ture by hand and notice the evidence which the galvanometer gives of :
+ture by hand and notice the evidence which the galvanometer gives of
 
 *NOTE .—In order to tell which way the current is flowing, it is necessary to notice whethe
 the zero of the D'Arsonval galvanometer is deflected to right or left. Then by sending a ven
 weak current, the direction of which is known, into the galvanometer and noting the deflectior
 cansed bv the known current the direction of the unknown current may be found.
-
-Dynamo and Motor Experiments 313
 
 current which is being produced in the armature. Rotate the armature
 very slowly, then more rapidly, and compare the strength of the current
@@ -13958,19 +9892,14 @@ excited dynamo.
 Try rotating the armature to see if a current of electricity is induced in the
 armature. "Building Up." In commercial machines there 1s always more
 or less residual magnetism in the tron of the field magnet. Under these
-conditions if the armature be made to revolve rapidly, a very weak cur-
-rent will be generated in the armature. If this weak current be passed
+conditions if the armature be made to revolve rapidly, a very weak current will be generated in the armature. If this weak current be passed
 through the coil of the field magnet, the latter becomes a stronger magnet
 than before.
 
 For this reason the current in the armature grows stronger, and this
 stronger current in passing through the field coil, will consequently produce
 a still stronger field magnet. This process of mutual ""building up" goes
-on until a maximum is reached, when the iron of the field magnet 1s sat-
-urated and carries all the lines of force it can. Such a dynamo 1s self-
-exciting, because it provides its own current for exciting its field magnet.
-
-314 Dynamo and Motor Experiments
+on until a maximum is reached, when the iron of the field magnet 1s saturated and carries all the lines of force it can. Such a dynamo 1s selfexciting, because it provides its own current for exciting its field magnet.
 
 Most commercial dynamos are self-exciting. Alternators are separate
 excited by a small dynamo.
@@ -13979,9 +9908,9 @@ Exercise 8. Series and Shunt Motors.
 
 ## Part 1.—Make the proper connections to operate the machine with tl
 
-armature in series with the field magnet coil. Notice the direction |
+armature in series with the field magnet coil. Notice the direction
 rotation of the armature. Reverse the connections at the battery. E
-plain why there is no reversal of the direction of rotation; also how :
+plain why there is no reversal of the direction of rotation; also how
 change the connections in order to have the armature rotate in the o
 posite direction. (See Exercise 5 for a suggestion, but there is also a
 other method.)
@@ -14010,8 +9939,6 @@ an armature.
 Consider a possible method of making the magnet rotate always in th
 same direction by changing the direction of the current in the field winding
 
-Dynamo and Motor Experiments 315
-
 In order to accomplish this, the reversal of the current must be made
 when the magnet is in a certain position. Decide what that position is.
 How many reversals of the current would be needed during one complete
@@ -14022,22 +9949,17 @@ Before commencing the work outlined below, study the
 instrument itself. Note the relation of the different
 parts to the whole.
 
-Frias. 469 to 471.—Gilley Gramme machine with armature replacea by a bar magret illustrat-
-ing a problem on rotation.
+Frias. 469 to 471.—Gilley Gramme machine with armature replacea by a bar magret illustrating a problem on rotation.
 
 Trace the electrical circuit from the armature coil through
 the split commutator or collecting rings to the brushes and
 . binding posts.
 
 The rings and sections of commutator should be clean and
-it is well to occasionally polish them with sand paper as im-
-perfect contact with the brushes would give poor results,
+it is well to occasionally polish them with sand paper as imperfect contact with the brushes would give poor results,
 especially in the experiments in which the tron is left out of
-the armature since the voltage generated 1s small. The gal-
-vanometer used should not be of high sensibility. Any
+the armature since the voltage generated 1s small. The galvanometer used should not be of high sensibility. Any
 milli-amperemeter in good working order may be used to
-
-316 Dynamo and Motor Experiments
 
 advantage. <A lecture table galvanometer having a suitab
 range for the work should be used.
@@ -14052,9 +9974,6 @@ Turn the armature coil slowly. Note movement of the galvanomet
 needle. Does the needle move continuously in one direction or does
 move first in one direction then in the reverse direction? Note relati
 of armature coil to the field magnet at time of change.
-
-YL
-cg
 
 Fig. 472.—Miller-Cowen dynamo as connected for experiment 1.
 
@@ -14072,8 +9991,6 @@ an alternating current?
 Experiment 2.—Replace the laminated iron core in the armature co
 Follow same steps as before. What effect has iron in the armature cc
 upon strength of current?
-
-Dynamo and Motor Experiments 317
 
 Experiment 3.—Attach brushes so that they make contact with the
 commutator (as shown in fig. 473). Turn armature at a moderate speed.
@@ -14102,11 +10019,8 @@ are many large alternators of the separately excited type? Why are
 practically all dynamos self-excited?
 
 Experiment 8.—Connect the apparatus as in fig. 475. How 1s the field
-coil excited? What form of connection is this? Why does such an arrange-
-ment show a shunt dynamo? What effect has this winding upon flow of
+coil excited? What form of connection is this? Why does such an arrangement show a shunt dynamo? What effect has this winding upon flow of
 current generated?
-
-318 Dynamo and Motor Experiments
 
 Experiment 9.—Connect apparatus as in fig. 474. How 1s the f
 excited? What form of connection is this? Why does such an arrar
@@ -14116,14 +10030,12 @@ current produced?
 Fia. 475.—Miller-Cowen dynamo as connected for experiment 8.
 
 Experiment 10.—Wind a few turns of wire about the field coil
-connect the apparatus as in fig. 476. How 1s the field excited? \
+connect the apparatus as in fig. 476. How 1s the field excited?
 does such an arrangement show a compound wound dynamo? What et
 has this winding upon flow of current generated? A well designed dyn:
 of the shunt, series, or compound type will usually operate as a motor w
 connected to a source of electrical energy having sufficient power.
 speed of rotation will be fixed, for in rotating, the armature generat:
-
-Dynamo and Motor Experiments 319
 
 current the same as though it were turned mechanically. This generated
 current is always opposed to the direction of current flow from the outside
@@ -14131,14 +10043,11 @@ current is always opposed to the direction of current flow from the outside
 source.
 A constant point will therefore be reached in which the current gener-
 
-ated by the moving armature plus the energy wasted in keeping up rota-
-tion plus friction, etc., balance the pressure of the current flow from the
+ated by the moving armature plus the energy wasted in keeping up rotation plus friction, etc., balance the pressure of the current flow from the
 
 outside source.
 
 Fra. 476.—Miller-Cowen dynamo connected as a compound machine experiment 10.
-
-NY
 
 Fig. 477.—Miller-Cowen dynamo connected to run as a motor experiment 11.
 
@@ -14156,11 +10065,11 @@ chapter?
 
 2. Describe the Gilley Gramme machine.
 
-3. Demonstrate with the machine: 1, nature of |
+3. Demonstrate with the machine: 1, nature of
 field magnet; 2, effect of iron ring of armatu.
 3, nature of the armature; 4, what the armatt
 does; 5, why the armature of a motor rotat
-6, the magneto machine as a motor; 7, |
+6, the magneto machine as a motor; 7,
 dynamo; 8, series and shunt motors; 9,
 broblem on rotation.
 
@@ -14173,16 +10082,11 @@ excited dynamo, 8, series dynamo; 9, effect
 series winding; 10, compound wound dynan
 11, dynamo run as a motor.
 
-Field Magnets 321
-
 ## CHAPTER 17
 
-The object of the field magnet is to produce an intense mag-
-netic field within which the armature revolves.
+The object of the field magnet is to produce an intense magnetic field within which the armature revolves.
 
-It 1s constructed in various forms, due in a Jarge measure to considera-
-tions of economy, and also to the special conditions under which the ma-
-chine is required to work.
+It 1s constructed in various forms, due in a Jarge measure to considerations of economy, and also to the special conditions under which the machine is required to work.
 
 Electro-magnets are generally used in place of permanent
 magnets on account of:
@@ -14203,8 +10107,6 @@ of a dynamo revolves, consists of four parts:
 1. Yoke; |
 
 2. Cores;
-
-322 Field Magnets
 
 3. Pole pieces;
 4. Cols.
@@ -14231,8 +10133,6 @@ the coils of insulated wire used to excite the magnets.
 
 Classes of Field Magnet.—Although numerous forms o
 
-Field Magnets 323
-
 field magnet have been devised, they can be classed into two
 groups according to the type of pole, as:
 
@@ -14242,18 +10142,10 @@ groups according to the type of pole, as:
 The distinction between these two types of pole is shown in figs. 478
 
 Ale
-an
-ALLS LLL
-mi M
-mu
-
-oe
 
 Fig. 480.—Consequent pole bipolar field magnet with two coils on the cores. This is known
 as the ''Manchester'"' type in which the cores are connected at the ends by two yokes—
 so named from its original place of manufacture at Manchester, England.
-
-324 Field Magnets
 
 to 480. By inspection of the figures, it will be seen that the term salve;
 applies to poles produced when the pole pieces form the ends of the ma;
@@ -14282,11 +10174,10 @@ order around the armature. Fig. 481 shows a four pole field magne
 having a common yoke or iron ring, with four pole pieces projecting in
 wardly, and over which the exciting coils are slipped.
 
-Field Magnets 325 _
+Field Magnets 325
 
 In the larger machines the yoke is made in two parts bolted together
-as shown in fig. 483, so that the upper portion may be lifted off for ex-
-amination of the armature.
+as shown in fig. 483, so that the upper portion may be lifted off for examination of the armature.
 
 #### Ques. Can the number of poles in a multi-polar machine
 
@@ -14319,12 +10210,9 @@ not essential, but very often the reverse, cast iron 1s used, as
 S cross section can be made larger than that of the cores, this
 icrease in area serving to give strength and rigidity to the
 achine. Cast steel occupies a place intermediate between
-ist iron and wrought iron both in cost and magnetic prop-
-ties.
+ist iron and wrought iron both in cost and magnetic propties.
 
 #### Ques. Name two forms of yoke in general use.
-
-326 Field Magnets
 
 Ans. The solid, and divided types as shown in figs. 4§
 and 483.
@@ -14351,8 +10239,6 @@ or more frequéntly cast 1n one piece with the bed plate.
 
 Ans. The joints introduced, even if carefully faced an
 
-Field Magnets 327
-
 vell bolted together, add a little reluctance to the magnetic
 'ircuit..
 
@@ -14365,11 +10251,6 @@ Ans. It weakens them, and in order to overcome this, the
 
 "res. 484 to 486.—Various sections of cast iron yoke. In form, these yokes may be cither
 circular or segmental as shown in figs. 482 and 483.
-
-VLA Mitehihitihihys
-'
-
-Y ; Thy MO ey
 
 'tas. 487 to 489.—Various sections of cast steel yoke. The ribs shown in figs. 487 and 488 are
 provided to secure stiffness.
@@ -14385,8 +10266,6 @@ Ans. 'The material used in making the cores and their shape.
 
 #### Ques. How does this affect the cost?
 
-328 Field Magnets
-
 Ans. Since considerable cross sectional area of core is
 quired, the problem confronting the designer is to design 1
 core Dy judicious selection of material and shape, that the
@@ -14401,8 +10280,6 @@ Ans. Since its sectional area must be considerably m
 
 Willi Vill
 
-SSN
-
 Fias. 490 to 492.—Some methods of attaching detachable cores. The core seat is mach
 to receive the core, it being necessary to secure good contact in order to avoid a large incr
 in the reluctance of the magnetic circuit.
@@ -14414,7 +10291,7 @@ Copper is expensive, while cast iron cores are less expensive than eq
 alent ones of wrought iron; in this connection, it 1s interesting to obse
 how different designers aim at true economy in construction.
 
-Steel is sometimes used in place of wrought iron, and though less |
+Steel is sometimes used in place of wrought iron, and though less
 cient magnetically, it can be cast into the desired shape, thus avoic
 the somewhat 'expensive processes of forging and machining, which
 necessary in the case of wrought iron.
@@ -14425,8 +10302,6 @@ copper for the magnetizing coils, and why?
 
 Ans. The cylindrical core, because it has the shortest p
 iphery or boundary for a given area enclosed.
-
-Field Magnets 329
 
 Figs. 493 to 498, show a series of cross sections, all of the same area.
 
@@ -14440,8 +10315,6 @@ Ans.
 
 These are the end portions of the field magnets, joined
 to, or cast together with the core and placed adjacent to the
-
-=
 
 1Gs. 493 to 498.—Comparison cf field magnet core sections.
 
@@ -14463,8 +10336,6 @@ Ans.
 
 In order to reduce the reluctance of the air gap between
 
-330 Field Magnets
-
 the face and the armature, thus enabling fewer magnetizi
 coils to be used.
 
@@ -14477,18 +10348,6 @@ If the projecting tips of the pole pieces, or horns as they are called,
 widely separated, as in fig. 499, they are not always good, even thot
 thin. Itis better that they should be extended as in fig. 500 so that tlk
 may be saturated by the leakage field or else cut off as in fig. 501.
-
-Y
-
-GffY"""—» "—Y Do
-A ly
-
-Y
-
-Y
-by
-
-yyy Dr _fy
 
 Fics. 499 to 502.—Several forms of pole piece. Where the extremities project as in figs. 4
 and 500, they are called horns. The object of these is to reduce the reluctance of the
@@ -14508,21 +10367,12 @@ loads with distorting reactions which have a tendency to drive the fl
 into the forward horn, the small section of the latter causes it to becor
 eaturated thie rediucino the distartion tao a minimum
 
-Field Magnets 331
-
 Eddy Currents, Laminated Fields.—The field magnet cores
 and pole pieces, as well as the armature of a dynamo are specially
 
-hp
-
-Ce 2
-
-Y,
-
 Fia. 503.—Unsymmetrical pole piece introduced by Gravier to concentrate the magnetic field.
 When the dynamo is working at small loads, the flux in the gap is nearly uniform, but at
-heavy loads, the distortion due to the armature current forces the flux forward and satur-
-ates the forward horn, thus preventing much change in its flux density, on account of the
+heavy loads, the distortion due to the armature current forces the flux forward and saturates the forward horn, thus preventing much change in its flux density, on account of the
 saturation, and the diminishing area. Lundell combined the unsymmetrical and slotted
 forms of pole piece as shown in fig. 516.
 
@@ -14530,13 +10380,8 @@ Fia. 504.—Pole piece with oblique slots; a modification of Lundell's form of p
 suggested by Thompson. Jn operation, the neck of the casting becomes saturated and
 offers considerable reluctance, which tends to prevent distortion of the magnetic field.
 
-Z Ss
-MS,
-
 Fig. 505.—Non-concentric pole faces; one method of securing suitable magnetic "fringe"
 with fair magnetic rigidity of field.
-
-332 Field Magnets
 
 Fras. 506 to 508.—Illustrating the alteration of magnetic field due to movement of mass of iron
 the armature. If the masses of iron in the armature be so disposed that as it rotates, the di
@@ -14558,8 +10403,6 @@ the figures shows that this should be at the forward horn of the pole piece. How
 a dynamo, with horned pole pieces, has been running for some time as a motor the fo
 ward horns are cool and the hindward horns hot.
 
-Field Magnets 333
-
 subject to eddy currenis, that is, induced electric currents
 occurring where a solid metallic mass is rotated in a magnetic
 field. These currents consume a large amount of energy and
@@ -14574,18 +10417,8 @@ both form one part without any joint.
 Ans. One built up of layers of iron sheets, stamped from
 sheet metal and insulated, as shown in fig. 531.
 
-"Na
-i]
-¢
-
-Q
-Ly)
-t
-a
-i]
-
 Fias. 512 to 514.—Various shapes of pole piece for securing a gradual entrance of the armature
-inductors into the magnetic field. |
+inductors into the magnetic field.
 
 #### Ques. What mode of construction can be used to reduce
 
@@ -14596,13 +10429,10 @@ Ans. The reluctance can be reduced by cast welding the
 poles into the panel.
 
 The frame end of the core when designed for cast welding has irregularities
-in the heights of the different sheets, as well as grooved undercut sur-
-faces, 1n order to enable the molten metal of the frame to key well into
+in the heights of the different sheets, as well as grooved undercut surfaces, 1n order to enable the molten metal of the frame to key well into
 the laminations of the core, making a good joint, both mechanically and
 electrically. By this construction, the continuity of the magnetic circuit
 is practically unbroken save for the air gap between the pole piece and
-
-334 Field Magnets
 
 #### Ques. What may be said of this construction?
 
@@ -14632,10 +10462,7 @@ fields when the loads are heavy. Motors with series fields must always be direct
 a load, as under very light loads they would have a very light field, which would cause them
 to run away. Motors and dynamos both are built with a combination of shunt field coils and
 series field coils, and are then termed ''compound wound machines."' Motors built this way
-will have a higher starting torque and dynamos built with compound fields may have a con-
-stant or changed voltage characteristic, according to change of load.
-
-Field Magnets 335
+will have a higher starting torque and dynamos built with compound fields may have a constant or changed voltage characteristic, according to change of load.
 
 #### Ques. What is the disadvantage of laminating a core?
 
@@ -14647,8 +10474,6 @@ The Magnetizing Coils.—The object of the magnetizing
 coils, 1s to provide, under the various conditions of operation, the
 number of ampere turns of excitation required to give the proper
 flux through the armature to produce the desired pressure.
-
-a
 
 Fic. 516.—Lundell type of combined core and pole piece; a combination of Gravier's une
 symmetrical horns and longitudinal slot designed to prevent distortion of field.
@@ -14665,10 +10490,7 @@ coils.
 
 Ans. The spool is made in various ways, sometimes entirely
 of brass, or of sheet iron with brass flanges, or of very thin cast
-iron. Some builders use sheet metal with a flange of hard-
-wood, such as teak.
-
-336 Field Magnets
+iron. Some builders use sheet metal with a flange of hardwood, such as teak.
 
 If a spool be simply put upon a lathe to be wound, the inner end of tht
 wire, which must be properly secured, should be brought out in such <
@@ -14683,74 +10505,18 @@ in fig. 517.
 Ans. Former wound coils are wound upon a block of wooc
 having temporary flanges to hold the wire together during the
 
-iy
-
-pe
-Le
-PR a
-
-8 POCOCRIFAseR NDT ssee FesUGERESOOODOEDS
-ATT
-
-### TTT TUTTI TTT
-
 eee
--_—
 
 | eseeecversccscs
 
-=»
-=
-La)
-a)
-=
-em
-Sp
-La)
-an
-ep
->
-=
-=
-ie
-=
-en
-|
-er
-wa
-=~
-be)
-utnte om
 amp
-=
-ay
-=~
-=,
-i)
-e=
-ae)
-=
+
 amy
-—
-=
-Le)
-=
-—
-am,
+
 Lae
 aap
-=n
-—
-=
+
 ane
-
-### NUUNVAQGUUUGUMAAYERAULA CUCU EOUUYEUR AANA
-
-### AAVOOAYALALLAC LEAN
-
-))
-
-ee
 
 Fic. 517.—Method of winding magnet spool so that the two ends of the coil will come to the
 outside. This method has also been used for induction coils, where it is desirable to kee]
@@ -14759,15 +10525,11 @@ the ends of the wire away from the core and primary coil.
 Frias. 518 to 521.—Core and edge strip winding for shunt field coils of large multipolar dynamo
 The winding consists of a copper strap S, carefully insulated and placed edgewise on the core
 C, in a single layer of winding. With this arrangement, the space occupied by insulatior
-is reduced to a minimum, and, although the cooling surface is small, each turn of the wind-
-ing has one edge on tne outer sucface, being ample for adequate cooling.
-
-Field Magnets 337
+is reduced to a minimum, and, although the cooling surface is small, each turn of the winding has one edge on tne outer sucface, being ample for adequate cooling.
 
 winding. Such coils have pieces of strong tape inserted between
 he layers and lapped at intervals over the windings to bind
-them together. Coils are usually soaked with insulating var-
-uish and stove dried.
+them together. Coils are usually soaked with insulating varuish and stove dried.
 
 #### Ques. What may be said with respect to the coil ends?
 
@@ -14775,58 +10537,21 @@ Ans. Several methods of bringing out the ends of coils are
 hhown in figs. 517 to 523. In figs. 518 to 521 copper strip,
 
 "IG. 522.—One mode of bringing out the coil ends, in which copper strip is laid in behind an
-end sheet of insulating material. :
+end sheet of insulating material.
 
 WE OOGCOGR BOG GO? i 60 Eee OLE)
 
 rae |
-ey Vv
-
-@
-"eo
-
-V7
-
-:@
-
-"2
-a
-
-$e
-OX
 
 Vee
-Xx x *
-
-+
-
-CX
-$
-@
-
-wie et
-Ls ee
-CK X X
-
-en
-ue
-
-\4
-
-S e
-U
-
-———
 
 '1a. 523.—Another mode of bringing out the coil ends. A narrow insulated strip of thin paper
 G, leading to terminal H, is connected with the end e, of the coil before winding.
 
-338 Field Magnets
-
 laid in behind an end sheet of insulating material, make
 connection to the inner end, while another strip, similar]:
 
-Fig. 524.—Ridgway 400 k.w. field ready to wind. In construction, the field ring proper |
+Fig. 524.—Ridgway 400 k.w. field ready to wind. In construction, the field ring proper
 constructed of laminated steel, the punchings being securely held between heavy cast iro
 clamping rings having a modified I beam section. The pole pieces are also laminated an
 are built in two separate parts. One part forms the core for the ficld coil while the other
@@ -14844,17 +10569,10 @@ the outer end of the winding.
 Two other methods are shown in figs. 522 and 523. A simple device
 for securing the outer end is to fashion a terminal piece so that it can be
 
-ae
-yr hea
-
-### DROME RI
-
 Fria. 525.—Ridgway 200 k.w. field complete; front view.
 
-340 Field Magnets
-
 Fra. 526.—Ridgway 250 k.w. field semis rear view. In construction, the shunt fielc
-' coils are wound on forms, and after removal they are taped and dipped in insulating varnish.
+coils are wound on forms, and after removal they are taped and dipped in insulating varnish.
 After baking, they are wound with heavy cotton cord and again varnished. Numerous
 fiber buttons project from the surface of the coil and add to its ventilation and insulation.
 Any coil may Be removed without disturbing any other coil or part. This is done by taking
@@ -14872,11 +10590,8 @@ distorting effect of the armature current is reduced to zero. The result of this
 
 out the two
 
-Field Magnets 341
-
 laid upon the winding, the last three or four turns of which are wound
-over its base, and after winding, are bared at the place and securely sol-
-dered.
+over its base, and after winding, are bared at the place and securely soldered.
 
 #### Ques. How are the coils insulated?
 
@@ -14887,17 +10602,12 @@ F one-tenth of an inch made up of several superposed layers
 generally sufficient.
 
 Varnished canvas is useful as an underlay, and vulcanized fibre for
-lining the flanges. It is important to protect the joint between the cylin-
-drical part and the flanges. A core paper may be laid upon every four
+lining the flanges. It is important to protect the joint between the cylindrical part and the flanges. A core paper may be laid upon every four
 
 layers of winding. Between series and shunt coils, in compound wound
 machines there should be an insulation as efficient as that on the cores.
 
-ss
-KIC
-
-Gs. 527 and 528.—Square and hexagonal order of "'bedding.'" The term bedding is an ex-
-pression used to indicate the relation between the cross sectional area of the winding when
+Gs. 527 and 528.—Square and hexagonal order of "'bedding.'" The term bedding is an expression used to indicate the relation between the cross sectional area of the winding when
 wound square, as in fig. 527, and where wound in some other way, as in fig. 528. In the
 square order of bedding, the degree of bedding equals zero.
 
@@ -14909,20 +10619,14 @@ the commutation plane remains as before. The central portion of each compensatin
 is wound around the commutating pole and sets up a secondary field between the pole faces.
 It is in this field that the short circuiting of each armature coil takes place as it passes from a
 positive to a negative pole, or vice versa. This field being the result of the current output
-of the dynamo is likewise proportional to the load. This is the correct condition for spark-
-less commutation.
+of the dynamo is likewise proportional to the load. This is the correct condition for sparkless commutation.
 
 NOTE.—A third function of compensating coils is to build up the field as the load in-
--ases, In order to obtain a compounding effect. This is secured by winding the coils eccen-
-cally and by adding a few extra turns. Likewise, the design of the magnetic circuits has an
+-ases, In order to obtain a compounding effect. This is secured by winding the coils eccencally and by adding a few extra turns. Likewise, the design of the magnetic circuits has an
 luence On the result. The degree of compounding may be varied somewhat by simply
 ifting the brushes. Tosum up, the compensating coils serve the following purposes; they
-utralize armature reaction, giving fixed brushes; they provide a commutating field pro-
-rtional to the load, giving sparkless commutation, with its resulting low commutator tem-
-rature, and heavy overload capacity; and lastly, they provide a degree of compounding
+utralize armature reaction, giving fixed brushes; they provide a commutating field prortional to the load, giving sparkless commutation, with its resulting low commutator temrature, and heavy overload capacity; and lastly, they provide a degree of compounding
 lich is entirely in the hands of the designer.
-
-342 Field Magnets
 
 When the winding is completed, two layers of pressed board or equ
 alent are laid over and bound with an external winding of hard rope or ta
@@ -14938,21 +10642,11 @@ cores without enlargement, the coils can be slipped over 1
 Fie. 529.—Method of securing coils in position when the pole pieces are simply extension
 the core without enlargement.
 
-Yk huh
-
 VPP A A Add
 
-id
-ea ow" ¢
-CTT ft rte
-CODaga® ae
-264 ap.
-
 Fig. 530.— Western Electric set of former wound field coils for four pole dynamo. These c
-are wound around a former or template, and are then slipped over the cores before |
+are wound around a former or template, and are then slipped over the cores before
 latter are bolted to the yokes or frame.
-
-Field Magnets 343
 
 ids, but some kind of clamping device is necessary to hold
 1em in place, as for instance, the method shown in fig. 529.
@@ -14974,8 +10668,7 @@ yuth poles.
 
 If all the coils be similarly wound with respect to the terminals, and
 similarly placed; that is, so placed that the winding, considered from the
-coil terminal nearest the pole face, starts in all the coils in the same di-
-rection, then the connections will come at the north end and at the south
+coil terminal nearest the pole face, starts in all the coils in the same direction, then the connections will come at the north end and at the south
 end of the spools.
 
 Heating.—The heat generated in the magnetizing coils
@@ -14987,128 +10680,29 @@ dissipated in three ways; by
 
 3. Convection
 
-fi my im
-| {i i Hi | i |
-. i ji | i L
-
-i
-
-i!
-
 Fia. 532.—Rectangular type laminated magnet core for dynamo. The laminations are of s
 mica or steel sheets to reduce hysteresis and eddy current losses
 
 Fria. 533—Assembly of laminated magnet core and coil
 
-Field Magnets 345
-
 In the first instance, 1t passes through the copper and the
 isulation, either to the external surface, whence it passes off
 y radiation and convection into the air, or to the magnet
-ore and yoke, which in turn conduct it away. In large multi-
-olar machines the masses of metal in the pole cores and frame
+ore and yoke, which in turn conduct it away. In large multiolar machines the masses of metal in the pole cores and frame
 re more efficient in dissipating heat than the external surface
 f the coil.
 
->a
-or gh 6 :
-eo? Sweatt . o os-<e :
-SGC EP ohn Oe ad :
-SRD o.° 58S. 52) 2 OSS OSPR Pe he ed
-an! BD 02° fs 0° Pa aD .?~
 see. oe
 
-eo o*%. %_%.°*
-Pg ?iezefete: o%
 epee ett
-PONT Ce oP tee
-. td
-
-=
-On LA
-oo.
-0.08 OKO
-
-()
-XA
 
 eoeee
-. . Sees
+
 Roc oes)
 
-, °
-%
-
-oe
-
-Ld
-pe ore e
-'.@
-
 ote
-6°
-e
-e
-OX |
 
-= o.@ e
-o- yt, ©. % so %a". oe
-ee Pee Oe De Pe
-
-WX
-
-Ux)
-U)
-OX
-
-o
-a i ee ee ee
-e ° e ®
-. 25 «fe ts.
-
-Ln Se et See Oe be ot aS me Se
-oe 2 oe e C ad @ °
-°
-o ele e®™ by -o% PSL nde °.-e?
-eo o%.
-
-Ns 'e_°
-oe et
-
-e'. e
-
-. oe
-o Oro e*.
-fe
-
-x
-a.
-
-ay: Z "e ""
 vata pwa Ravase
-
-ene .\ pi A % " XY
-Bs wh oe 14, xX)
-cy Sdeoe
-
-»s a >
-AY &. oe: 32
--~ ° ne fore ie
-
-,@
-a
-'
-
-(es * uae Bs
-
-er wy a Le :
-y i ys mie "wee
-ae oe
-
--*e a .
-as@aneé:
-¥ LL |
-ce
 
 a. 534.—Compound wound rectangular ventilated spool field coil. The series and shunt
 coils are wound side by side, ventilating passages being provided lengthwise through each
@@ -15129,8 +10723,6 @@ manent field magnets?
 net?
 
 . What is the object of the yoke and how is it co
-
-structed ?
 
 . What is carried by the cores?
 . Name two general classes of field magnets, ar
@@ -15163,15 +10755,12 @@ connected?
 . How is heat in magnet coils dissipated?
 . How is ventilation secured?
 
-The Armature 347
-
 ## CHAPTER 18
 
 The Armature
 
 The armature of a dynamo consisis of coils of insulated wire
-ound around an iron core, and so arranged that electric cur-
-mis are induced in the wire when the armature is rotated in a
+ound around an iron core, and so arranged that electric curmis are induced in the wire when the armature is rotated in a
 
 ### COIL RETAINER OPEN SLOT
 
@@ -15182,19 +10771,16 @@ NOTCHED SLOT |
 SLOT
 
 aly PULLEY'
-es EF. col
 
-a BNA _RETAINER
 con ners
-ey BOLT LAMINATIONS
 
 KEY WAY——____ | SPIDER
 
 SLOTS == 8 . DOVETAIL JOINT
 LAMINATED CORE
 SHAFT
-EGMENTS
-COMMUTATOR
+
+### COMMUTATOR
 
 Gc. 535.—Armature with names of parts.
 
@@ -15203,8 +10789,6 @@ ationary.
 
 The commutator is in fact a part of the armature, but is of sufficient
 importance to be considered in a separate chapter.
-
-348 The Armature
 
 #### Ques. What are the practical objections to the elementa:
 
@@ -15216,17 +10800,10 @@ nounced impulses in each revolution as shown in fig. 428.
 
 ### POLES
 
-POLES | y- wy —_
-
 ### POLES
-
-WV y) a REG y y; a ae Aa }
-ed MMAAAA Shh Ada:
 
 Fias. 536 to 539.—Sine curves illustrating effect of increasing number of poles. The t
 pole curve is reproduced in each diagram for comparison.
-
-i;
 
 #### Ques. Why does the elementary armature produce a pu
 
@@ -15240,11 +10817,7 @@ magnetic field.
 
 pressure obtained?
 
-The Armature 349
-
-Ans. If two additional coils be added to the elementary ar-
-mature, at right angles to the existing coils, and the ends suit-
-ably connected to a four part commutator, as in fig. 429, so
+Ans. If two additional coils be added to the elementary armature, at right angles to the existing coils, and the ends suitably connected to a four part commutator, as in fig. 429, so
 
 that one pair is 1n the position of best action, while the other is in
 the position of least action, the pulsations of the resulting
@@ -15266,12 +10839,7 @@ be represented by practically a straight line, indicating the
 so called continuous current, instead of the wavy resultant
 curve No. 6, as illustrated in fig. 433.
 
-An armature for practical use has a large number of coils, suitably ar-
-ranged upon an iron core, so that a large proportion of them are always
-
-Pe ce ee a 8 ee ee
-
-350 The Armature
+An armature for practical use has a large number of coils, suitably arranged upon an iron core, so that a large proportion of them are always
 
 actively cutting the lines of force, or moving into the positions of bes
 action in the magnetic field.
@@ -15305,10 +10873,7 @@ At present practically the only type of armature in commer:
 cial use is the drum type; however, the actions within the core
 and winding of an armature can be illustrated best by diagrams
 
-The Armature 351
-
-of the ring type, which accordingly are sometimes used in ex-
-plaining principles. The same principles apply equally well to
+of the ring type, which accordingly are sometimes used in explaining principles. The same principles apply equally well to
 drum armatures.
 
 #### Ques. What is the comparison between ring and drum
@@ -15324,11 +10889,6 @@ arrangement and fixing of the inductors thereon not to be
 
 ### BETWEEN COILS
 
-\
-ge":
-A Ox
-4 '
-
 Fig. 542.—Open coil ring armature in which separate coils or sections of the winding are not
 united 1n one closed circuit. Formerly when series arc lighting was the prevailing method of
 street illumination open coils were used as the air insulated commutators employed with the
@@ -15343,8 +10903,6 @@ armature, it being necessary to provide special ventilating ducts.
 #### Ques. Describe a ring armature.
 
 Ans. It consists essentially of an iron ring, around which
-
-352 The Armature
 
 is wound a number of coils. These various coils are wound o
 separately, the wire being carried over the outside of the ring
@@ -15373,8 +10931,6 @@ coils on the ring and connections with the commutator bein
 shown in fig. 542, examples of actual construction being show
 in figs. 540 and 541.
 
-The Armature 353
-
 #### Ques. For what conditions of operation is the ring arma-
 
 'ure specially adapted, and why?
@@ -15383,8 +10939,8 @@ Ans. It 1s well suited to the generation of small currents at
 ugh voltage, as for series arc lighting, because the numerous
 coils can be very well insulated.
 
-tf .
-Ques. Why does a ring armature require more copper in
+#### Ques. Why does a ring armature require more copper in
+
 he winding than a drum armature?
 
 ### INSIDE OF RING
@@ -15395,11 +10951,10 @@ he winding than a drum armature?
 
 "1g. 544.—Distribution of magnetic lines of force through a Gramme ring. Since the metal
 of the ring furnishes a path of least reluctance, most of the magnetic lines will follow the
-metal of the ring and very few will penetrate into the aperture of the interior. 'This condi-
-tion causes a serious defect in the action of ring armatures, rendering the winding around
+metal of the ring and very few will penetrate into the aperture of the interior. 'This condition causes a serious defect in the action of ring armatures, rendering the winding around
 the interior useless for the production of electric pressure. Hence, in ring armatures only
 about half of the winding is effective, the rest or ''dead wire,'' adding its resistance to the
-circuit, thus decreasing the efficiency of the machine. |
+circuit, thus decreasing the efficiency of the machine.
 
 Ans. For the reason that those inductors which lie on the
 nner side of the iron ring, being screened from practically
@@ -15408,10 +10963,8 @@ renerate any current.
 
 Numerous attempts have been made to utilize this part of the winding
 
-354 The Armature
-
 by making the pole pieces extend around the ring in such a manner t
-lines of force will pass to the inside of the ring, also by arranging an |;
+lines of force will pass to the inside of the ring, also by arranging an
 ditional pole piece on the inside of the armature, but mechanical c
 siderations have shown these methods to be impractical.
 
@@ -15434,8 +10987,6 @@ _necessary with the ring type.
 
 #### Ques. How is this accomplished?
 
-The Armature 355
-
 Ans. By winding the wire entirely on the outer surface of
 cylinder or drum, as it is called, none of the wire is screened
 y the metal of the core. Fig. 547 indicates this; compare
@@ -15451,8 +11002,7 @@ a. 549.—Illustrating the principle of diametrical or Siemens' drum winding. In
 the winding and connections clear, one coil and the commutator is shown assembled, although
 the latter is not put in place until after all the sections have been wound, the ends of the
 wires being temporarily twisted together until all can be soldered to the risers. The cores
-of these early machines were of wood overspun circumferentially with iron wire before re-
-ceiving the longitudinal copper windings.
+of these early machines were of wood overspun circumferentially with iron wire before receiving the longitudinal copper windings.
 
 NOTE.—Siemens, Ernest Werner Von.—Born 1816, died 1892. A German electrical
 zineer, brother of Sir William Siemens. He early applied himself to the study of chemistry
@@ -15465,8 +11015,6 @@ Siemens & Halske. His experiments resulted in the discovery of many facts of gre
 ctrical practice, and the development of important apparatus. In 1884 he contributed a
 ge sum of money to establish the Imperial Physico-Technical Institute which has been a
 'at faccor in German engineering progress.
-
-356 The Armature
 
 With respect to the connections to the four segments w,x,y,z, of tl
 commutator it will be found that at two of these, x and y, the pressur:
@@ -15489,11 +11037,7 @@ it so that it will be strong and capable of resisting wear an
 tear. It was introduced in an effort to avoid the losses due t
 eddy currents and hysteresis present in the other types c
 
-On account of the nature of the construction of a disc armature, it |
-
-The Armature 357
-
-a
+On account of the nature of the construction of a disc armature, it
 
 necessary that the coils subject to induction occupy as small a space as
 possible in the direction of their axes. This requirement, as well as the
@@ -15501,22 +11045,15 @@ connection of the inductors with each other and with the commutator,
 prevented the general adoption of this form of armature, and subsequent
 experience failed to justify the existence of the type.
 
-A Wet
-
-a
-Sy
-
 Fig. 551.—Disc armature of Niaudet. It is equivalent to a ring armature, having the coils
 turned through an angle of 90°, so that all the coils lie in a plane perpendicular to the axis
 of rotation. The connections of the coils with each other and with the commutator remain
 the same, the beginning and the end of adjacent coils leading to a common commutator
 bar as shown. The magnetic field is arranged by the use of two magnets, so arranged as
 to present the north pole of one to the south pole of the other, and vice versa. In the figure
-one of these magnets is considered as above the paper, and the other below. If this arma-
-ture be rotated through the magnetic field as shown, a reversal of current takes place in
+one of these magnets is considered as above the paper, and the other below. If this armature be rotated through the magnetic field as shown, a reversal of current takes place in
 each coil, when it is in such a position that one of 1ts diameters conicides with the pole line
-NS. If the brushes be set so as to short circuit the coils that are in this position, the arma-
-ture will be divided into two branchings, the current flowing in an opposite direction in
+NS. If the brushes be set so as to short circuit the coils that are in this position, the armature will be divided into two branchings, the current flowing in an opposite direction in
 
 each, and a direct current will flow in the exterior circuit.
 
@@ -15525,9 +11062,6 @@ each, and a direct current will flow in the exterior circuit.
 2. What are the practical objections to armatures with
 
 but few coils?
-
-12.
-13.
 
 The Armature
 
@@ -15556,8 +11090,6 @@ Describe the operation of a disc armature.
 What is the main difficulty of the disc type, and
 why was this type introduced?
 
-Armature Windings 359
-
 ## CHAPTER 19
 
 Armature Windings
@@ -15569,9 +11101,7 @@ matter in the case of drum winding, especially for multipolar
 machines.
 
 Often there are several different ways of arriving at the same result,
-and the fact that methods which are electrically equivalent may be geo-
-metrically and mechanically different makes it desirable to have a sys-
-tematic method of treating the subject.
+and the fact that methods which are electrically equivalent may be geometrically and mechanically different makes it desirable to have a systematic method of treating the subject.
 
 The elementary arrangement of drum and disc armatures has already
 been considered, which is sufficient explanation for small armature coils
@@ -15587,11 +11117,8 @@ a quarter of the circumference to 25, or across three quarters of it to
 bar 75. Again, he ascertains to which bar he is to connect the back*
 end of the bar, and how the bars are to be connected to the commutator.
 
-*NOTE.—The ''front'' end means the end at which the commutator is located. Arma-
-tures are most conveniently regarded from this end, the opposite end being known as the
+*NOTE.—The ''front'' end means the end at which the commutator is located. Armatures are most conveniently regarded from this end, the opposite end being known as the
 **'back'"' end.
-
-360 Armature Windings
 
 Winding Diagrams and Winding Tables.—In the construc
 tion of armatures, instructions to winders are given in thi
@@ -15601,14 +11128,6 @@ from the front end respectively. The letters U and D stanc
 for up and down.
 
 There are three kinds of winding diagram:
-
-}
-
-] x tS
-ik
-oe.
-
-,,
 
 Fig. 552.—End view of ring winding for a four pole machine. An end view is simply a vie'
 showing the arrangement of the armature inductors and connections looking from the fros
@@ -15623,10 +11142,7 @@ The end view is simply a view showing the arrangement o
 the armature inductors and connections looking from the fron
 or commutator end, such as shown in fig. 552.
 
-Armature Windings 361
-
-In the radial diagram the inductors of the armature are rep-
-resented by short radial lines, while the end connectors are
+In the radial diagram the inductors of the armature are represented by short radial lines, while the end connectors are
 'epresented by curves or zigzags, those at one end of the arma-
 'ure being drawn within, those at the other end, without the
 'ircumference of the armature. With the radial diagram it is
@@ -15649,12 +11165,8 @@ a and c, be placed parallel to the axis of the armature to represent two of
 the armature inductors, and moved along the air gap space clockwise
 past the S, poles, they will cut magnetic lines inducing electromotive
 forces in the directions indicated. To attempt to show a large number
-of inductors in a drawing of this kind would be unintelligible. Accord-
-ingly, the observer is considered as being placed at the center of the arma-
-ture, and the panorama of the four poles surrounding him to be then
+of inductors in a drawing of this kind would be unintelligible. Accordingly, the observer is considered as being placed at the center of the armature, and the panorama of the four poles surrounding him to be then
 laid out flat or ''developed"' as in fig. 555.
-
-362 Armature Windings
 
 The faces of the N and S, poles are shaded obliquely for distinctior
 By choosing the proper directions for these oblique lines, a piece of pape
@@ -15665,18 +11177,10 @@ motion in the direction in which the current in reality tends to flow. I
 is easily remembered which way the oblique lines must slope, for those o
 the N pole slope parallel to the oblique part of the letter N.
 
-~
-
 Lap Winding and Wave Winding.—In winding armature
 there are two distinct methods employed, known respectivel:
 
 on an am mo a «n= Cipcvexsveuvp
-
-\
-
-SS
-
-AW
 
 Fic. 554.—Developed view of the four pole field shown in perspective in fig. 553.
 
@@ -15696,8 +11200,6 @@ windings.
 
 eee,
 
-Armature Windings 363
-
 Ans. One in which the ends of the coils come back to adjacent
 segments of the commutator; the coils of such a winding lap over
 each other.
@@ -15708,20 +11210,13 @@ Ans. One in which the coil ends diverge and go to segments
 widely separated, the winding to a certain extent resembling a
 wave.
 
-i: rH. ays amt a: 3)!
-
 "Ic. 555.—Develepment of ring winding of four pole machine shown in fig. 552. The dead
 wire Or inactive inductors on the inside of the ring are shown in dotted lines, the full lines
 representing the active portion of the winding.
 
-g
-»
-. 4 — o
-
 Angular Pitch or Spread of Drum Coils.—Before taking up
 che winding as a whole, the form of the individual coil should
-ye considered. Fig. 558 shows an end view of one coil in posi-
-ion on a drum armature of a multipolar machine.
+ye considered. Fig. 558 shows an end view of one coil in posiion on a drum armature of a multipolar machine.
 
 The two slots aand b, contain the sides of the coil and the
 listance between them on the surface of the drum is called the
@@ -15733,22 +11228,6 @@ Windings
 
 Armature
 
-*JOJLINUWIWIOS 3y} 0}
-YOeq pue S}O[S 94} YSNOIY} 'qUdUIZIS 10} e}NUIWIOD WOIJ S[IOD 94} JO Ydea Jo Yyed vy} ABM 4daNDp ys0ul 94} Ul SMOUS JUDWAZUBIIE
-9A0ge af} PUB PelepIsuOd SUlaq SI ZUIpUIM ay} A[UO VJa}{ "Pk9{ JeIZUOU ay} PloAe 0} ApWUaIayIp yas st JOE NWIWOD oY}
-*a92};9DId Uz *Wd9Y} JO WOT Ul AP}DaNp JO sajod ay} UIaMJeq ABMPIUL Jaye Pa}zed0] 9q jOU PInom saysniq ay} 'st yey} 'po
-jasduouw @ SXAIS JIS SB 10}eYNWIWOD 9y} 's}nd BSulAuedwiosoe pue VAOge 9Yy} UI. ZurpulM 3u} Jo yyed ay} Burneso] ul ssauspaz9
-404 "TOG "SY Ul SB 'paja[duiod SI SUIPUIM 94} UsyM pades} Alisa SI [109 YIea Jo Yyed ay} 's[Iod snoleA 94} JUSS31Id91 0} SJO[VI
-WalIYIp JO ssulsjs Zuisn Aq *SUIPUIA aINzeULIe Ul VoIVIeId JOY B]qQe} Sulpulm pue 3109 sinjeuLIe UapooM— sco pue ISG "Sdly
-
-eg = a et iJ WARIS. r.
-w. SOSH a-*s ef
-
-\3\\
-N\\\
-
-Armature Windings 365
-
 For instance, on a four pole machine the pitch would be 90°, on a six
 pole machine, 60°, etc. Usually the angular pitch of the coil is made
 just a little less than the pole pitch of the machine, in order to shorten
@@ -15759,8 +11238,7 @@ In addition to the angular pitch there is the commutator pitch which
 relates to the distance around the commutator bridged by the ends of
 the coil. Thus, if the commutator segments were numbered consecutively
 1, 2, 3, etc., and the commutator pitch say be 10, it would signify that
-one end of the coil was connected to segment 1, and the other end to seg-
-ment 11; the ends of the next coil in order then would be connected
+one end of the coil was connected to segment 1, and the other end to segment 11; the ends of the next coil in order then would be connected
 to segments 2 and 12, in each case there would be ten segments between
 the two segments connecting with the coil ends.
 
@@ -15768,17 +11246,13 @@ ia. 558.—End view of drum armature of a multipolar machine showing one coil in
 illustrate the angular pitch or spread of drum coils.
 
 Parallel or Lap Drum Winding.—In order to avoid much
-f the difficulty usually experienced by students of drum wind-
-1g, the beginner should construct for himself a wooden arma-
-ire core upon which he can wind strings of various colors, or
+f the difficulty usually experienced by students of drum wind1g, the beginner should construct for himself a wooden armaire core upon which he can wind strings of various colors, or
 'ires with distinctive insulation, to represent the numerous
 xils that are used on real armatures.
 
 A few windings attempted in this way will make clear many
 oints that cannot be so easily grasped from a written de-
 'ription.
-
-366 Armature Windings
 
 The type of drum core best adapted for this work is the slotte
 variety as shown in fig. 556, as it will facilitate the windin;
@@ -15791,14 +11265,10 @@ In making the wooden core, the slots may be formed by nailing a seri
 of thin strips around a cylindrical piece of wood, thus avoiding the troub
 of cutting grooves. In the illustrations the commutator segments a
 
-we ---—--- -—
-+ - + -
-i'/} all bU cll dl ef
-
 Fia. 559.—Developeed view of a typical lap winding. From the figure it is seen that at the ba
 of tiie armature each inductor is united to one five places further on, that is, 1 to 6, 3
 8, etc., and at the front end of the winding, after having made one "element,'' as for examr
-d-7-12-e, then forms a second element e-9-14-f which '"'laps'' over the first, and so on :
+d-7-12-e, then forms a second element e-9-14-f which '"'laps'' over the first, and so on
 around until the winding returns on itself.
 
 shortened (leaving no room for brushes) in order to show the connectior
@@ -15809,22 +11279,12 @@ as Clearly as possible.
 Ans. As given in the table, it consists of six loops of wir
 presenting twelve inductors on the cylindrical surface of th
 
-Armature Windings 367
-
-re or drum. In the table, six wires are shown, having dis-
-active and varied insulation so as to readily distinguish the
-fferent coils. Opposite these are letters and figures designat-
-g the path and connections of each coil.
+re or drum. In the table, six wires are shown, having disactive and varied insulation so as to readily distinguish the
+fferent coils. Opposite these are letters and figures designatg the path and connections of each coil.
 
 #### Ques. What is the path of the first coil?
 
 Ans. According to the table it is:
-A—1—6—B
-
-eS
-
-se =
-==
 
 . 560.—Skeleton view of wooden armature core showing 1n position the first two coils of
 1e winding indicated in the table fig. 557.
@@ -15837,42 +11297,18 @@ is slot, and then connected with commutator segment B.
 
 #### Ques. Describe the path of the second coil.
 
-368 Armature Windings
-
 Ans. 'The second coil, having the black insulation, is woun
 -according to the table, in the order:
 
-B—3—8—C
 that is, beginning at segment B, thence to back of drum throug
 
 slot 3, across the back to slot 8, returning through this slot an
 ending at segment C.
 
-ts 4 y if
-e r) -
-0@ eo ; Z te
-® " : I.
-—— . oY
-Ce ay eat R \\ '
-Ps @o '4 y 7 s e \\
-{/ e fs a f yy ® a
-
-Se
-Sa
--—s
-
-' SS = ==
-a
 Seer
 
-a
-
-G
-Fj a
-EE |
-
 Fia. 561.—View of completed winding as indicated in the table fig. 557. Thus the path of tt
-first coil, according to the table, 1s A-1-6-B which means that the coil begins at segment A, «
+first coil, according to the table, 1s A-1-6-B which means that the coil begins at segment A,
 the commutator, rises to slot 1, and proceeds through the slot to the back of the drun
 thence across the back to slot 6, through the slot and ending at segment B. The other coi
 are wound in similar order as indicated in the table.
@@ -15886,8 +11322,6 @@ Ans. Each of the succeeding coils is wound as indicate
 in the table, the last connection being made to segment A, th
 one from which the winding started.
 
-Armature Windings 369
-
 #### Ques. What is the general form of the completed winding?
 
 Ans. It may be considered simply as a wire wound spirally
@@ -15897,19 +11331,15 @@ ade.
 
 The completed winding as indicated by the table is shown in fig. 561.
 Here the path of each coil is easily distinguished by means of the varied
-insulations although in part hidden by the drum. Fig. 562 shows a de-
-veloped view of the winding.
+insulations although in part hidden by the drum. Fig. 562 shows a developed view of the winding.
 
 #### Ques. What condition must obtain in winding an even
 
 amber of coils?
 
 TTT L/ Zp | y is UI! 4,
-[uy LL A we, MALE ZY
-Ss BY 4. =e Y f By
 
-ply EZ CBP
-yy, Zz
+Ss BY 4. =e Y f By
 
 +. 062.—Developed view of the winding shown in perspective in fig. 561.
 
@@ -15922,12 +11352,6 @@ Ans. The reason will be clearly seen by attempting the
 nding on the wooden core. A winding of this kind on the
 um fig. 556, would proceed as follows:
 
-A—1—7—B
-B—3—9—C
-C—5—11—D
-
-370 Armature Windings
-
 In order now to continue winding in a regular way, the wirs
 from segment D, should pass to the rear of the armature alongs
 space 7, but this space is already occupied by the return of the
@@ -15939,16 +11363,6 @@ in an unbalanced winding.
 
 even number of coils?
 
-Ve
-=
-G Z0t 2
-Y y- -—— -
-Uy 0 EZ
-
-### YY FFE
-
-AG ge.
-My) |
 iN Be 7
 
 Fia. 563.—Lap winding for bipolar machine, with uneven number of coils; in this case the
@@ -15964,17 +11378,12 @@ In the example here shown there are six coils, comprising twelve in.
 ductors and six commutator segments; it should be noted, however, that
 if there were an uneven number of coils, the rear connections could be
 
-Armature Windings 371
-
 made directly across a diameter as shown in fig. 563, which would give
 a symmetrical winding.
 
 With ten slots as shown in the figure, the drum would be wound, for
 a bipolar machine, according to the following table:
 
-A—I— 6—B
-B—3— 8—C
-C—5— 10—D
 D=7— 2-5
 
 :. 564.—Developed view of a typical wave winding. This winding, instead of lapping back
@@ -15993,30 +11402,6 @@ d slots for the several turns of each coil.
 Series or Wave Drum Winding.—In this mode of winding,
 @ inductors are arranged around the armature so that they
 
-y
-
-'1
-fh
-4 f
-oh
-if
-oe
-
-bi
-ty
-ih
-a
-|
-a]
-
-{
-\
-ot
-: 4
-'4
-
-372 Armature Windings
-
 do not turn back, thus describing a zigzag or wave-like path
 that is, the coil ends instead of connecting with adjacent seg
 ments of the commutator, are attached to segments more o
@@ -16028,15 +11413,6 @@ winding.
 
 Ans. Only two sets of brushes are required for such a winc
 ing, but as many brushes as there are poles can be used.
-
-Wy % *
-
-———————— .
-'4 e
-
-| J
-
-i
 
 Fic. 565.—Five coil wave winding for a four pole machine. In this winding only two brush
 are used, there being only two paths through the armature.
@@ -16050,17 +11426,9 @@ An example of wave drum winding for a four pole machine is show
 in fig. 565. For simplicity, very few coils are taken, there being onl
 five as shown in the illustration. To make the winding, one strip shoul
 
-Armature Windings 373
-
 be removed from the wooden core and the others spaced equally around
 the cylindrical surface. This will give ten slots, the number required
 for the five coils. The winding is indicated in the following table:
-
-A—1— 4—C
-B—3— 6—D
-C—5— 8—E
-D—7—10—A
-E—9— 2—B
 
 Accordingly the first coil starting at segment A, is carried to the back
 of the drum through slot 1, thence across the back and returning through
@@ -16070,13 +11438,6 @@ the starting point of the first coil. A developed view of the winding is
 shown in fig. 566.
 
 WIT
-KZ Z)
-SS ey
-
-KU, LZ LI; —_ LZ bey
-C a re is ry
-
-4 yy
 
 a. 566.—Developed view of the five coil wave winding shown in fig. 565.
 
@@ -16092,20 +11453,14 @@ The Diametrical or Siemens Winding.—In winding drum
 matures for bipolar dynamos of two horse power or less,
 id especially for very small fan or sewing machine motors, a
 rm of winding, known as the diametrical or Siemens winding,
-; shown in fig. 574, is largely used. It consists 7m dividing the
-
-Oe cmt tm meet Ph) Senet Pin DA cles Sr finial al lien Ne nal Kn ne a a Re ne ee eat, we te =
-
-te tr ae Gy A ae gts ar eel
-
-374 Armature Windings
+shown in fig. 574, is largely used. It consists 7m dividing the
 
 surface of the armature core in an equal number of slots, say 1¢
 and using a 16 part commutator.
 
 In the diametrical winding, the end of the wire used at the start
 connected to the first commutator bar, but must be fastened to tl
-armature core out of the way so as not to interfere with the winding «
+armature core out of the way so as not to interfere with the winding
 the coils.
 
 If eight turns of wire be required to fill a slot with one layer, then tl
@@ -16126,10 +11481,8 @@ bar 2, or next to the first bar where the winding was started.
 
 The usual practice is, however, to make a loop of the wire of sufficier
 
-Armature Windings 375
-
-length to make the connection of the commutator and it has the advan- |
-tage that since all of the coils on the armature are joined in series, the |
+length to make the connection of the commutator and it has the advan-
+tage that since all of the coils on the armature are joined in series, the
 ending of one coil is joined to the beginning of the next which avoids
 making mistakes 1n making the commutator connections.
 
@@ -16144,35 +11497,24 @@ burning on the commutator under load somewhat similar to that produced
 
 Let bet Let bed
 
-23 45 6 7 8 9 1 I
-
-en
-UNE AU
-
-### SOSLS SSSSSS SSSSSOS
-
-<< SSSOSESE
-
 1a. 568.— Developed view of the series connected wave wound ring armature shown in fig. 567.
 
-by an open intermittent open circuit, but more confusing as tests show :
+by an open intermittent open circuit, but more confusing as tests show
 that no open circuit is present. A
 
-After the surface of the armature is covered with one layer it will be no- :
+After the surface of the armature is covered with one layer it will be no-
 ticed that the number of leads from the coils to the commutator bars is
 only one-half the number of bars and that they lie on one-half of the
 
 and the second layer wound on. The beginning of the new coil will be
-directly over the first coil put on, but the beginning of the new coil will :
-be diametrically opposite the beginning of the first coil wound. |
+directly over the first coil put on, but the beginning of the new coil will
+be diametrically opposite the beginning of the first coil wound.
 
-The winding is now continued section by section and as each coil is |
+The winding is now continued section by section and as each coil is
 
 In order to complete the winding the first layer should be insulated
 
 finished a loop or pair of leads is left to connect to each bar. When the
-
-376 Armature Windings
 
 last coil is wound, its end will be found lying next to the wire used
 starting and should be joined to it and finally connected to bar numt
@@ -16193,7 +11535,7 @@ the circle clockwise from ato b, the path of the winding is a right handed spira
 which shows one coil of a drum armature, if @ be taken as the starting point, in going
 b, a must be connected by a spiral connector across the front end of the drum to one of t
 descending inductors such as M, from which at the back end another connector must jc
-it to one of the ascending inductors, such as S, where it is led to b, thus making one |
+it to one of the ascending inductors, such as S, where it is led to b, thus making one
 handed turn.
 
 #### Ques. What is the objection to the diametrical windir
@@ -16208,32 +11550,13 @@ appear workmanlike.
 
 Armature Windings
 
-*odIV] SI SUIN} JO JoquUIMU pu JIIM Jo 9ZIS puke 3e9I3 SI
-S}O[S JO JoqUINU 94} VIO M 'BSUIPUIM COO] 94} pue SUIPUIM }1]dsS 94} SC SoseJULAPeRSIP pue SodeJURAPe DUIS 9Y} SEY SUIPUIM SINT
-"A ® WIOJ Jnq 'SuIpuLM zWYds oy} Ur se 'I9YIO YORa 0} Jo]Te1ed UNI JOU OP YeYs 9Y} JO apis YOeI UO STIOD OM} 9Y} BUIPUIM SIG}
-U[ °1O}JEINUIWIOD 9Y} O} BUIJSUUOD JIOJOG JNd 91e YSIYM SCOOT OJUL POUWIOJ SI [IOD sy} JO PUD YOR ye oIIM 94} pue 'ZeYsS 94}
-JO Opis YORa UO PaplAIp SI ¢/G°sy Gulpuin 4 227ds ayy, "sutIpurm 3d Aq WYStIeI}s 9} UCY} JDBUUOD OF} JopIeY 9I}}1] B OsTe SI SUIPUIM
-SIUT, "[IOD Yeo JO pus 9Y} 3e JIIM JY} JN O} SUIALY PUL SOYL}SIU JSUIEZE BINSUI O} SUI}S9} JULJSUOD 9Y} 'S[IOd MoU ZutjzIe}s UsyM
-'qVIOJ pue He VINeEUWLIe JY} JO SIM} VY} DIL SoseJULAPLSIP OY, "[[I99 JOS Jod S[Iood 918 91OY} SB pueY UI SoilM AuvUT Se SuIsn Aq
 90U0 78 PUNOM oq [[B ULD S]IOD 9} SB SWI} DABS [IM SUIPUIM JO 9d A} SIY} 'OTS Yes 0} Jeq DUO UPY} DIOU! SI 919} US AA =*SUIN}
-SNOJOWINU PUL 3IIM JO $9ZIS 9B1V] YIM Al][eidedsa 'ZuIpurA\ ed Aj 1YSIe1}S B UY} WOO pus ssoy dn soye} SUIPUIM SIV] *WaIostUN
-JaIvsU SI S[IOD 94} JO VDUL}SISII OY, «= *"VDULTe [VNTULYDIU J9}}0q B SAIS O} SPUI} SINT, *YSUI, sures ou} Alfeono0e1d o1e Y}0q pue
-*yJeYS 94} JO apis YOed UO 3U0 'pUs 94} Ssoide Jay[e1ed PUNOM dJIe S[IOD BUT, ="SUIPUIM 3d A} }YSIeI}S 9} UI UBY} '9dUPTeq 19}}0q
+
 B SOAS YOM ATUIAD IIOUL SPUD 9} SSO1DE SUIPUIM OY} SOINII}SIp HI JY} OIE SUIPUIM SIY} JO SoseJURAPR OUT, "UMOYS SB 19430
-Yoevo 0} [oyjered oe pue eYS 9} JO apis YOva UO JICISIA 918 VIN}JEULIe BY} UO PUNOM S]IOD 3SeT 9} JEU} FEY} UI poysinsurjsip st
-'ZLG BY SUIPUIM Uiaz}7Dd FF papsioys su, "UMOUS SB YO}Id JUDIOYIp B SUIALY YD S[IOD OM} 9U} '}JEUS 9} JO SpIs SUIS 9} UO S}O]s
+
 991} UI PUNOAM JIB STIOD OM} EY} SI SUIPUIM SIG} JO vIN}eIj YW °s}O[S se SIeq AUBUI SB SOUT} IMO} IO OM} JIS 919Y} DIO M S}OIS
 
-jo Joqumu Aue YyjIM pesn oq ued '1 /G 'Sy 'SUIPUIM Y49727d 2127ds8 JD12ads aU JT, "SSUIPUTM 9d A} plod [e1deds VUIOGS—' F/G 0} TLS *SP1y
-
-aJQYyOHD
-A LIIdS NMALIVa H HA Wie Aine
-
-e
-
-378 Armature Windings
-
-_ Ans. By using the cord windings of Froehlich or Bregue
+Ans. By using the cord windings of Froehlich or Bregue
 which are improvements over the Siemens in appearance ar
 are more easily carried out.
 
@@ -16246,7 +11569,7 @@ number of poles, the arrangement 1s called a chord windin;:
 
 ### DIAMETRICAL OR SIEMENS
 
-Fia. 574.—End view of an armature, showing the distinction between the diametrical |
+Fia. 574.—End view of an armature, showing the distinction between the diametrical
 Siemens' winding and chord winding. In the chord winding a smaller pitch is taken th:
 would be desirable in practice to emphasize the difference between diametrical and cho:
 windings.
@@ -16259,8 +11582,6 @@ NOTE.—The term back pitch means the number of spaoes between the two inductors
 a coil. For instance, in fig. 565, the pitch is 3; that ie, there are three spaces between say i
 ductors 1 and 4 which form part of the coil A~1—4—C. It is called the back pitch in dr
 tinction from the front or commutator pitch which in this instance is 2.
-
-Armature Windings 379
 
 #### Ques. What is the difference between the Siemens or
 
@@ -16289,8 +11610,6 @@ Ans. The winding is started in the same manner as described
 1 the Siemens method, only instead of crossing the head and
 eturning in the section diametrically opposite, the section AC,
 
-380 Armature Windings
-
 fig. 574, next to it 1s used for the return of the wire to the fron
 end. Leads for connecting to the commutator are left at th
 beginning and end of each section as before stated and the onl
@@ -16299,11 +11618,6 @@ first layer 1s nearly complete in that two sections lying nex
 toeach other have no wirein them. This will cause the winde
 to think he has made a mistake, but by continuing the windin
 and filling in these blank spaces in regular order when the tw:
-
-————
-
-ay
-—,
 
 Fic. 576.—A retrogressive wave winding. If the pitches be such that tn tracing the windtr
 through as many cotls as there are pairs of poles, the first segment of the commutator ts not e
@@ -16320,8 +11634,6 @@ from the coils to connect up to the commutator bars.
 #### Ques. How many paths in the chord winding just de
 
 scribed?
-
-Armature Windings 381
 
 Ans. Two.
 
@@ -16340,18 +11652,13 @@ oth windings simultaneously. Both windings then are always
 #### Ques. What is the effect of a multiplex winding?
 
 Ans. It reduces the tendency to sparking, because only half
-f the current is commutated at a time, and also because ad-
-acent commutator bars belong to different windings.
+f the current is commutated at a time, and also because adacent commutator bars belong to different windings.
 
-#### Ques. Does an accident to one winding disable the ma-
-
-hine?
+#### Ques. Does an accident to one winding disable the mahine?
 
 Ans. No, it simply reduces its current capacity.
 
-#### Ques. Can multiplex windings have more than two wind-
-
-igs?
+#### Ques. Can multiplex windings have more than two windigs?
 
 Ans. Yes, there may be three or four windings.
 
@@ -16361,13 +11668,10 @@ indings?
 
 NOTE.—One authority on windings states that his experience leads him to believe that
 ultiplex windings are very likely to spark more, at least they are more tricky and spark worse
-ider anything but the most favorable conditions. They are also likely to heat from cross cur-
-nts through the toe of the brush due to the fact that both windings are usually slightly out
+ider anything but the most favorable conditions. They are also likely to heat from cross curnts through the toe of the brush due to the fact that both windings are usually slightly out
 phase with each other. He has seen a good many machines in which this winding was used,
 ne cases out of ten the machines were bad actors. Of cours: the designer might take the
 iaracteristics of that tenth machine and make a successful line of it.—Chapman.
-
-382 Armature Windings
 
 Ans. It involves an increased number of inductors and cor
 mutator segments, which is undesirable in small machines, bu
@@ -16409,41 +11713,31 @@ Ans. There will be as many brushes as poles, and they wil
 be situated symmetrically around the commutator in regula
 order and at angular distances apart equal to the pole pitch
 
-Armature Windings 383
-
 It should be noted that the number of brush sets does not necessarily
 show the number of circuits through the armature.
 
 #### Ques. How many brushes are required for wave windings?
 
-Ans. If arrows be drawn marking the direction of the in-
-luced electromotive forces to determine the number of brushes,
+Ans. If arrows be drawn marking the direction of the inluced electromotive forces to determine the number of brushes,
 t will be found that only two brushes are required for any
 umber of poles.
-
-—«——— (20 AMPERES —t—_—_$—— 60
 
 "—> 120 AMPERES
 
 1G. 577.—Distribution of
 armature currents in a
-four pole lap wound dy-
-namo having four brushes 60
-and generating 120 am-
-peres.
+four pole lap wound dynamo having four brushes 60
+and generating 120 amperes.
 
 #### Ques. What is the angle between these two brushes?
 
 Ans. It is the same as the angle between any north and
 outh pole.
 
-For instance, in a ten pole machine with wave winding the pitch be-
-tween the brushes may be any of the following angles:
+For instance, in a ten pole machine with wave winding the pitch between the brushes may be any of the following angles:
 360 +10 = 36°
 3 X 36° = 108°
 DX 36° = 180°
-
-384 Armature Windings
 
 Sometimes with lap winding it is desirable to reduce th
 number of brushes.
@@ -16473,8 +11767,6 @@ If no spark difficulties occur in collecting all the current with only tw
 brushes, the arrangement will work satisfactorily, but the heat losses wil
 be greater than with four brushes
 
-Armature Windings 385
-
 #### Ques. Are more than two brushes ever used with wave
 
 finding?
@@ -16486,15 +11778,13 @@ ill set.
 For instance, in the case of a single re-entrant* simplex wave winding
 for an eight pole machine, whenever any brush bridges adjacent bars of
 the commutator, it short circuits one round of the wave winding and this
-round is connected at three intermediate points to other bars of the com-
-mutator. Hence, if the short circuiting brush be a positive brush, no
+round is connected at three intermediate points to other bars of the commutator. Hence, if the short circuiting brush be a positive brush, no
 harm will be done by three other positive brushes touching at the other
 points. If these other brushes be broad enough to bridge across two
 commutator bars, they may effect commutation, that is, three rounds
 instead of one undergoing commutation together.
 
-Number of Armature Circuits.—It is possible to have wind-
-ags that give any desired even number of circuits in machines
+Number of Armature Circuits.—It is possible to have windags that give any desired even number of circuits in machines
 aving any number of poles.
 
 #### Ques. How many paths are possible in parallel?
@@ -16502,8 +11792,7 @@ aving any number of poles.
 Ans. Fora simplex spirally wound ring, the number of paths
 n parallel 1s equal to the number of poles, and for a simplex series
 vound ring, there will be two paths. In the case of multiplex
-vindings the number of paths 1s equal to that of the simplex wind-
-ng multiplied by the number of independent windings.
+vindings the number of paths 1s equal to that of the simplex windng multiplied by the number of independent windings.
 
 In large multipolar dynamos it is, as a rule, inadvisable to have more
 than 100 or 150 amperes in any one circuit, except in the case of special
@@ -16515,8 +11804,6 @@ loops provided in a parallel wound armature to eliminate the
 
 *NOTE.—A re-entrant winding is one in which both ends re-enter or lead back to the
 tarting point; a closed winding.
-
-386 Armature Windings
 
 effects of "'unbalancing,'' by which the current divides unequal]
 among the several paths through the armature. By means c
@@ -16550,10 +11837,6 @@ If there were perfect symmetry in the field system, no currents woul
 flow along such connectors; however, owing to imperfect symmetry, tl
 induction in the various sections of the winding may be unequal and tl
 currents not equally distributed.
-
-SIO On
-
-Armature Windings 387
 
 . What is the difference between the front and back
 
@@ -16601,13 +11884,7 @@ and how avoided?
 
 ing?
 
-ye ET 9 Sp EES LO ee EO a RO OL A
-
-Sg) SSC eg OS re
-
-388 Armature Windings
-
-21. How does a diametrical winding differ from «
+21. How does a diametrical winding differ from
 chord winding?
 
 22. Describe a multiplex winding.
@@ -16627,8 +11904,6 @@ windings?
 28. What are equalizer rings?
 29. What points are connected by equalizer rings?
 
-Armature Calculations 389
-
 ## CHAPTER 20
 
 In the design of a dynamo or motor, it is usual to first design
@@ -16642,10 +11917,9 @@ The principal item to be considered is the size of the wire.
 In order to deliver a certain current, the number of poles, etc., being
 fixed, a certain size wire must be used. As must be evident, the heating
 of the wire is what governs the size. For a given current the smaller the
-wire, the greater the heating. "
+wire, the greater the heating.
 
-Example in Design.—Determine size of wire, num-
-er of turns, etc., for an 8x8 in. armature, for a flux
+Example in Design.—Determine size of wire, numer of turns, etc., for an 8x8 in. armature, for a flux
 f 30,000 lines per sq. in., 110 volts, 1,200 r.p.m., 5
 orse power.
 
@@ -16655,13 +11929,11 @@ Total flux through armature = 30,000 64 = 1,920,000 lines.
 Now, since it requires 108 or 100,000,000 lines of force cut per second
 to generate one volt, for the given 110 volts, the required rate of cutting is
 
-required rate of cutting — 110100,000,000 _ ; |
+required rate of cutting — 110100,000,000 _ ;
 total flux ———- 5
 The number of inductors (wires) necessary to place on the armature to
 cut 5,729 lines per second will depend on the speed, thus
 total lines per wire per sec. 5,729
-
-ee oe ere revolutions per sec. ~ ue so OL 1,200 ini
 
 For five horse power, at 110 volts
 
@@ -16669,273 +11941,43 @@ For five horse power, at 110 volts
 
 watts = 7465 = 3,730; amperes = Tio 7 34
 
-i
-'
-
-a Oe ee
-
-### WALID ORA KK
-
-v=
-
-CO -—=
-AMANDA Het wo co
-
-Oe
-rm
-
-Sim ia con
-r=
-
-SESE
-
-SIMD IONRAANGHSO HO Dar
-
-rt et ost ed ot rod GR
-
 CVRR OD OD OD CD) =H
 
-ID 19 OMe i~ DOD
-
-~H
-
 "qour 13d
-SIIIA JO
-JaquInNn
-
-"SIOABlL SUIPUIAA JO SYIAIP JUDIOYIP JV S9IVdULY
-
-(Xajsno [ PuD UUDULISLOFT 07 BU1P4099 f)
-q7eM Jod sovjins Suryerpes 'ul 'bs ge 'sulpurm Jo syydap snouea ye sai144 JO Az19vdnD
-
-### H CR
-
-RO DH Go 4 UD G2 ad
 
 SO RI HH asa
 
-### HS HID
-
-GF 6S
-
-Se
-
-&
-
-0°0O'd
-aj9UIBIG
-
-'sul 'bs €—"] ATEV.L
-
-ISlT-
-[c60°
-PLO
-£090
-T9F0
-C960
-£660
-TEs0°
-
-CP810°
-PoPIO
-SST1O
 91600"
-£6100"
-C1000"
-8CF00"
+
 69600"
 88600
 86600
-T8100"
-9EFT00'
-LETTO0
+
 606000"
-C1000"
-L9¢000—
-0°F000-
-L¢8000"
-€86000_
 
-"I oOFT
-
-400] 13d 12
-JVUBISISIOY
-
-OvIO Ot
-GTO 6G
-9610" 8g
-SPIO LG
-6ST0' 92
-£10" GZ
-T1060 VG
-C660" SS
-630° 66
-F860" TS
-610" 0G
-8cg0" 6T
-60F0° ST
-cSr0™ LT
-80¢0° OT
-0LCO' CT
-0F90° as
-6TL0° en |
-8080° ol
-L060" Th
-6101" 0) §
-PPT 6
-C8or° 8
-a Ba L
-0c9T 9
-61st g
-SFG if
 "318q '3asnsH
-WUBIT''S FE
-
-= n > = = = = 7 a m = "s a = - sz Sch se S Pret . —— — - So
-a a — - ct i eed Se a a Dg Se SEE Ne ee
 
 a a a a a a lg LE a a a RB Tn ely PEP msec a —
 
-'SOIIM JO JOART JOjNO Ue JOpUN peppequIS ssOYy} YIM UPY} SolIM opIs}yno YyM jeoy 94} Yo sur
--AIIe0 Ul dATJOOYo OIOW! ST UOTVeIPeI VsneoegG—JoAP] UO UY 910UI JO JoAR] oISUIS JOYJOYM—SUIPUIM Jo
-pury ey uodn osTe spusdep soi jo Aqyiovdeo oy} yey} MOYsS [[IM setqey oy} Jo UOTpedsul UY *49eAA Jod *ut
-'bs [ 10} pue 'ut 'bs ¢ 10j uaArs st Ayioedeo quero ayy 'sojqey surAueduiocoe oY} UT '"oinyeuUlte BuUI}e
--I9do [ooo B aINsUI [TIM GJ T ynoqy 'sur 'bs ¢ 04 43eM Jod 'ur 'bs JT WoJj soleaA soinzeulIe Ul peMoTye
-soejins Suyerpel jo yunowe oy], "SsUl}Voy 9Y} 94 [[IM Sso] oY} 'OOJINS SUIZeIPeL SI} joje013 OUI,
-'peumsuoo Asioue jo yun Jed sovjins suljerpel.ueyioo e@ uodn posed SI pesn oq 0} oIIM OZIS OY],
-
 JT =Z + FE = Yo Jod sosodure
-
-'joyjerzed ul oinzeulse oY} Ysnosyy syyed OM4 918 BIO} BOUTS
-
-———————— eee
-
-——- -_
-
-ere: SP I
-
-*p2[quiessesip sUIyoeU YT sdA} prepuejs syUeqITej—O8S "Sly
 
 Yoo
 
-IFW SD 9 1B W OV 1g
-
-ID OM ODOnNnMDIDO~
-
-IDM OM OOMmMAMNSOSOSrMOSSDMMOMMOMN OOS
-—a )
-
-=
-
-CV yP
-
 your ied
-SUIN}
-IaquUNnNn
 
-AMM retest RANR
-
-GG" 09°
-GQ' TL
-Te | Sh
-$8" r6
-oor | 60°T
-Slt | og't
 Let | IT
-r9T | SLT
-Lg | 0%
-61'S | OF
-79S «| 692
+
 go's | Lee
-e9'e | 168
-0s> | IL?
-60°¢ | 9g°¢
-go'9 | 99°9
-IL | 88h
-78 «| 886
-60 OF | 60°TI
-SV | O8'SI
-C@PL | ILI
-L691 | 09°8T
-L008 | L6°1Z
-09°€3 | 98°S2
-8%'se | 86°08
-ores | 09°98
-e1'ae_| 08'S
-9 ¢
 
-" *ga04B[ SUIPUIM JO SUIOP yU2IVYIp 4B Saiaduly
-
-ro =| BL C6" re'T S10' ISL
-
-ye *6° PIT | I9'T 020° 6%60'
-68" FOL | 98T SLT 130° ¥PLO'
-F0'T SIT PPI | LOS 200" €090°
-CST tP'T OL. | 6h? 620° 19¥0°
-PPT LOT 10% | $62 920° C980
-L9'T 66 T se3 | Lee R50" C630"
 00s | 0883 | 283 | 00°F 00° 1220"
-oa a i gC ZA SS SR ee0° | CPSI0
+
 89° Ire | ose | sea 980° | #cFI0°
-Oe | PLE | SSh | 6F9 OrO' | e110'
+
 one | cep | Feo | FOL HO' | 91600°
-trp | eto | 869 | 88'8 8F0' 1ZL00°
-97°¢ | 809 | FrL | ESOL | Sed' G1C00°
-0%'9 IL | LL°8 | OF SE | 6c0° | 8ct00'
+
 oy | 098 | &S°OL | 68'FT | 290° | 29800'
-e9'g | BL'OL | 6P'SE | 99'LET | S2L0° | 88z00°
+
 OC'OL | SL'SL | 98'FL | 001% | #80" | 82300
-OSL | Te FL | SELT | 6L°bS | 860° T8100"
-O89 PL | LULE | 201% | FL°6S | 901° | 984100"
-sort | L606 | 18'S | 9O0'CR | LIT | LETT00°
-91°02 | 00° FS | LE6S | SSI' | OST' | 206000"
-1¢'h% | LESS | 99° FE | FOCF | FFL' | STLO00'
-16°88 | cess | @80F | BL LG | 8ST" | 299000"
-o9' re | 2668 | S6'Sh | 02°69 | OST" | OSF000
-y3:0r | LOLP | 882g | S818 | 00%° | 2¢8000°
-z9°ep | gg'ec | C189 | 98°L6 | #os°_ | €8c000"
-
-b g ¢ T 0-0 a] het
-
-19j9W BIG | s5ueysisay
-
-(Cajsnol pun UuUuDUIjSLOL 07 BuIpL1099 V)
-
-oll0™
-
-0€
-
-LG
-
-CS
-FG
-£3
-6G
-1%
-0G
-8cg0" 6T
-oo
-Li
-
-cT
-rt
-$T
-or
-IT
-Or
-
-L
-
-¥
-
-°318q "a3neH
-19jawWBig | '°§ ¥ *_
-
-ayem Jod sovjins Zurjerpel "ur 'bs [ 'sulpurm jo syydap snore ye Sait JO fiziopdn)
-
-'ul 'bs [—TI WIAVL
-
-Armature Calculations 393
 
 Now, since the diameter of the core is 8 ins.
 its circumference = 8X3.1416 = 25 ins.
@@ -16944,8 +11986,7 @@ and the number of inductors per inch of circumference is
 for single layer winding 286 + 25 = 11.4
 for double layer winding 4 of 286 + 25 = 5.7
 
-_ Allowing 3 sq. ins. radiating surface per watt, the size of inductor re-
-uired to carry 17 amperes is (from Table 1 on page 390.)
+Allowing 3 sq. ins. radiating surface per watt, the size of inductor reuired to carry 17 amperes is (from Table 1 on page 390.)
 
 for single layer winding, No.11, B. & S. gauge
 for double layer winding, No.9, B.& S. gauge
@@ -16955,8 +11996,7 @@ speed and same flux conditions what is the maximum capacity that could
 be obtained with a two layer winding of larger size wire and same number
 of inductors? As calculated, the number of inductors per inch of core
 circumference is 5.7, hence, from table 1, for 5.5, inductors per inch a No. 6
-wire may be used, and for a two layer winding it may carry 28.28 am-
-peres. Now since there are two paths in parallel through the armature
+wire may be used, and for a two layer winding it may carry 28.28 amperes. Now since there are two paths in parallel through the armature
 
 total current = 2 X 28.28 = 56.6 amperes
 and capacity at 110 volts, or
@@ -16975,12 +12015,10 @@ To calculate the size wire for a slotted armature a single slot should
 be considered, and the wire chosen if possible with reference as to how it
 'will fit in the slot, that is, the size should be such as to fill the slot with
 
-the least amount of wastespace. In design, the approximate width of the |
+the least amount of wastespace. In design, the approximate width of the
 slot is obtained by multiplying the diameter of the wire over tnsulation by r
 the number of turns per layer, and the depth of slot obtained by mulitplying if
-the number of layers by .86. '
-
-394 Armature Calculations
+the number of layers by .86.
 
 To find the number of inductors per slot when the speed anc
 flux are fixed, the following formula may be used:
@@ -17008,9 +12046,6 @@ cast iron spider, which also carries the commutator, making the two parts entire
 contained, and with this construction, it is possible to remove the armature shaft, withou
 disturbing the core, commutator or windings.
 
-100,000,000X 110 _
-1,920,000 x 24 x 20
-
 Example.—lIf the slots of a 24 slot armature be 14 1n. wide, and ther
 be 12 inductors per slot arranged as a three layer single coil winding
 what is the maximum size wire that can be used, and current capacity fo
@@ -17027,13 +12062,10 @@ on the wire, when there is only one coil per slot.
 For each additional coil per slot, 14 in. of extra insulation is allowec
 In slot depths, .17 in. beside the cotton on the wire is provided.
 
-Armature Calculations 395
-
 In the example since there are 12 inductors per slot and the winding
 is in 3 layers
 number of wires abreast = 12 + 3 = 4
-Referring to the table it will be found that a slot .42 in. wide will ac-
-commodate four No. 10 inductors abreast. Allowing 3 sq. in. radiation
+Referring to the table it will be found that a slot .42 in. wide will accommodate four No. 10 inductors abreast. Allowing 3 sq. in. radiation
 
 per watt, the carrying capacity (from table No. 1) for a 3 layer winding
 of No. 10 wire is 11.7 amperes.
@@ -17050,8 +12082,7 @@ as. 582 and 583:—Fairbanks Morse wire wound armature coils of type Tr machine.
 In construction, the coils are form wound and are thoroughly insulated and baked before
 assembling in the slots. Material of great mechanical strength as well as high insulating
 value is used, and the coils are subjected to repeated dippings in insulating compound and to
-repeated bakings, thus thoroughly driving out all moisture and making a coil which is prac-
-tically water proof and which will withstand rough hand.ing. These coils when completed,
+repeated bakings, thus thoroughly driving out all moisture and making a coil which is practically water proof and which will withstand rough hand.ing. These coils when completed,
 are placed in the slots, where they are retained by bands on the three smaller sizes and by
 hardwood wedges on the larger sizes. Cores of all sizes are provided with ventilating spaces,
 running from the surface to the central opening of the core, so that air 1s drawn through the
@@ -17068,12 +12099,6 @@ the armature?
 
 Since the winding is of the single coil type each coil will occupy two slots,
 hence
-
-bre A et = en er nt ate ee
-: .
-ey ao a ae See ae ee Lee Oe eo Sere ~
-
-396 Armature Calculations
 
 total number of coils = 24+2=12
 For 12 turns per coil,
@@ -17122,8 +12147,6 @@ flux X inductors per slot X number of slots X rev. per sec.
 volts =
 100,000 ,000
 
-Armature Calculations 397
-
 lagnet winding; numerically it is equal to the product of one turn
 ultitplied by one ampere.
 
@@ -17141,8 +12164,7 @@ current one half, that is, 5 amperes X 20 turns = 100 ampere turns.
 Of course, this is not strictly true where the magnet is made up of more
 
 Par
-oe
-i ¢
+
 aay
 
 a. 584.—Fairbanks Morse field coils of type Tr machine. In construction, the coils
@@ -17169,10 +12191,6 @@ what is the length of the winding?
 
 The average diameter of the turns, as obtained, being 9 ins.,
 
-398 Armature Calculations
-
-9 X 3.1416 X 500
-
 e = 1,178 ft.
 
 length of winding =
@@ -17183,28 +12201,15 @@ what is the smallest size wire that will give 10,000 ampere turns wit
 
 average diameter of turns = 4 (8 + 10) = Qins.
 
-9 X 3.1416
-
 The sectional area of the smallest wire (in circular mils) is obtaine
 from the formula
 
 length of average turn = = 2.36 ft.
 
-ee no % Rengihy average turnin feet Kampen ee i
-
-meeviitill | LIWen nme
-
-—
-
-i
-
-ewe wes eee em + er ee
-
-Formulae: L= y (L xXN)+T; LXN =d?xT; peice B?)L =k; W =(D?—B?*)L Xc; R:
-(D?—B?) L Xa; rs =D X3.14 XL. In the formule, d=diam. of wire over insulation; /:
+(D?—B?) L Xa; rs =D X3.14 XL. In the formule, d=diam. of wire over insulation;
 length of wire on spool; T =number of turns; r = resistance of one foot of wire; rs =radiatin
 surface; B =diam. of core and insulation; D=diam. over outside of completed windin
-L =length of winding space on spool; N =depth of winding core to outside; W =weight «
+L =length of winding space on spool; N =depth of winding core to outside; W =weight
 wire; a,c,k, constants whose values are given on page 399. All dimensions are in inche:
 
 Substituting
@@ -17217,8 +12222,6 @@ Having determined the minimum size of wire, the next ste
 
 *NOTE.—In the formula, 12 is the resistance of 1 mil foot of copper at 130° Fahr.
 
-Armature Calculations 399
-
 is to find how many turns must be placed on the spool to prevent
 
 undue heating.
@@ -17230,13 +12233,6 @@ watts lost=amperes* X ohms.
 Table of Constants
 
 11445
-2.
-3.
-5.
-8.
-3.
-8.
-l.
 
 In proportioning the winding for depth and length, the depth of the
 winding must be such that there will be from 1 to 2 sq. ins. of surface
@@ -17257,18 +12253,14 @@ generally having a single cotton covered insulation.
 
 By reference to the table on page 400, the number of turns per linear
 
-400 Armature Calculations
-
 TABLE III.—Properties of Insulated Wires
 
 (According to Horstmann and Tousley)
 
 Single silk | Double silk | Dble. cotton
 
-ees _—_— > I? I? I?
 op) Bs ee ao =e ao 82 E 3 sq. in.|2 8q.in.|1 sq. in.
-SLES es] ES | se] Sal sft a | Peat | ot
-Sles|sg| eS | sa)68| S24 | & | cool | warm| 'Hot
+
 40 |193].016| 143 |.022|90 | .036 |.273 | .027] .04 | .08
 39 | 181|.017| 133 |.024|87 | .047 1.216 | .036] .055| .11
 391 169].018| 126 |.025|84 | .037|.172 | .046| .07 1 .14
@@ -17305,8 +12297,6 @@ g 7.5|.414] 7.3] .428 |.00016'842. |1262. 2524.
 7 6.9|.455| 6.8] .468 |.00013'1167. |1750. |8500.
 6 6.01.521| 5.8| .534 |.00010/1680. 12521. 15042.
 
-Armature Calculations 401
-
 inch or per sq.1n. of cross sectional areaisobtained. Taking a portion of the
 winding covering an inch length of spool, 1 in. deep, the sectional area of
 this portion is 1 sq.in. Referring to the table of magnet wire, No. 16 wire
@@ -17317,7 +12307,6 @@ previous example)
 length of winding per inch of spool = 361 * 2.36 = 852 ft.
 and from table its resistance being 4.009 ohms per 1,000 ft.
 
-1,000
 The outside diameter of the winding being 10 ins.,
 
 radiating surface per inch of spool = 10 X 3.1416 = 31.4 sq. ins.
@@ -17341,8 +12330,6 @@ watts lost = op aX ohms =
 And if the coil be designed for ''warm'' working by allowing 2 sq. in.
 radiating surface per watt, then it must be so proportioned that
 
-volts2
-
 radiating surface = 2 X watts lost = 2 X
 
 In order to determine the length of the coil, first find what resistance
@@ -17357,38 +12344,27 @@ on radiating surface
 
 This will give a resistance much greater than the 3.42 ohms as calculated
 for that portion of the winding, hence, the spool length of the winding
-must be increased until the resistance of the winding has a value as ob-
-tained by equation (3). Thus, substituting in equation (8), 110 volts, and
+must be increased until the resistance of the winding has a value as obtained by equation (3). Thus, substituting in equation (8), 110 volts, and
 31.4sq. ins. radiating surface in equation (3), the necessary resistance of
 the winding for ''warm"' working, is
 
-_2X110 _
-~ 314
-
 ohms 7
-
-402 Armature Calculations
 
 Accordingly, since the resistance of the winding is provortional to
 length,
 
-— . 7
 length of winding = 1 in. X 7437 2 ins
 SINGLE LAYER CONTACT DOUBLE LAYER CONTACT
 
 Seeeeeccoll coccoooet
-
-IRSSS::SS: ES CX KKK XX KX 3
-
-SSSSSSSSSSE SET{'': SSSSS3:===
 
 Fias. 587 and 588.—Square and hexagonal order of "'bedding.'"' The term bedding is
 expression used to indicate the relation between the cross sectional area of the winding wt
 wound square. as in fig. 587, and when wound in some other way, as jn fig. 588. In:
 square order of bedding, the degree of bedding eauais zero.
 
-NOTE.—Number of armature slots. As a rule there are not less than ten slots |
-pole. In multi-polar machines there are at least three or four slots in the space between :
+NOTE.—Number of armature slots. As a rule there are not less than ten slots
+pole. In multi-polar machines there are at least three or four slots in the space between
 jacent pole tips. The area per slot on machines above five horse power is approximat
 one sq.in. and roughly the capacity of a slot of this area is about 1,000 ampere turns for machi
 designed to work on less than 500 volts.
@@ -17420,25 +12396,12 @@ should not exceed 2% of the output at full load. Field loss. A portion of the el
 energy generated in the armature 1s lost in exciting the field magnets. Armature loss. Tt
 is usually termed the copper loss since it is due to the resistance of the winding; it is a ve
 variable quantity and is equal to the square of the current multiplied by the resistance of
-section of the winding between brushes. ~
+section of the winding between brushes.
 
 NOTE.—Armature paths in wave and lap windings. A wave winding has but tv
 paths through the armature, regardless of the number of poles; whereas a lap winding h
 as many paths as there are poles. This distinction 1s important in figuring the size of wi
 for the winding to carry the current without undue heating.
-
-10.
-
-11.
-
-|
-
-13.
-14.
-
-15.
-
-Armature Calculations 403
 
 . In re-winding an armature what problems must be
 
@@ -17471,14 +12434,12 @@ What allowance for radiating surface is made per
 watt ?
 
 In the case of slotted armature what allowance
-must be made in figuring the number of in-
-ductors per inch of circumference?
+must be made in figuring the number of inductors per inch of circumference?
 
 What must be considered in calculating the size of
 wire for a slotted armature?
 
-What should be done after making the various cal-
-culations?
+What should be done after making the various calculations?
 
 How is the speed determined?
 
@@ -17491,12 +12452,10 @@ voltage determined?
 . What is the basis for figuring field magnets?
 
 . After determining the minimum size of wire fc
-field magnets, what is the next step? :
+field magnets, what is the next step?
 
 . Describe the calculation of a field magnet in ful
 . What are the usual magnetic densities?
-
-Practical Armature Winding 405
 
 ## CHAPTER 21
 
@@ -17523,14 +12482,11 @@ Bipolar.—Smaller or fractional sizes using wire from No. 20 B & S and
 
 finer nearly always wound by machine.
 
-Medium sizes using wire to about No. 16 sometimes encountered in auto-
-motive work. Wound both by hand and machine.
+Medium sizes using wire to about No. 16 sometimes encountered in automotive work. Wound both by hand and machine.
 
 Large bipolar from 1 h.p. up seldom made over 3 h.p. occasionally
 machine wound, mostly hand wound, sometimes form wound and coils
 assembled.
-
-406 Practical Armature Winding
 
 Four Pole.—Smaller armatures principally automotive using wires fron
 No. 16 to No. 18 both hand and machine wound, usually random. Woun
@@ -17559,7 +12515,7 @@ Number of teeth the coils go around (usually expressed as "8 teeth''), c
 Number of the slots the coils go in (usually counted as one more than th
 enclosed number of teeth as "']1 and 9'')
 
-Lead between the armature winding and the commutator _
+Lead between the armature winding and the commutator
 Number of poles Insulation of core (if complex
 The above data applies to practically all types of armatures.
 
@@ -17572,7 +12528,7 @@ Insulation on the coil (if formed)
 Number of commutator bars.
 Span of the leads
 
-Sundry data as to whether multiplex; connection of equalizer rings :
+Sundry data as to whether multiplex; connection of equalizer rings
 any, and such unusual items.
 
 NOTE.—A "'coil'? may be defined as the wire or turns from one commutator bar to the bz
@@ -17580,11 +12536,8 @@ connected to its other end.
 
 NOTE.—A ''bundle'"' is a number of single coils grouped together in a slot.
 
-Practical Armature Winding 407
-
 Dismantling .— When an armature is brought into the shop to
-be rewound, it must first be stripped of the old winding and re-
-insulated throughout. Before doing this the winding should
+be rewound, it must first be stripped of the old winding and reinsulated throughout. Before doing this the winding should
 be examined and a complete winding data sheet made out as
 outlined in the preceding section so that in rewinding, the
 workman will know what size wire to use, number of turns per
@@ -17600,16 +12553,7 @@ Ohhh ete
 Far. 2? Fr
 TALADSLOTAUIYEULNG A LAKAM OUT LAAS A RLERA
 
-MYM ETF U1,
-
-BEING y, // Vf, Vis Yd
-WEE Oe LLL MMYY
-
 SLOT Mani L
-side Mf hm
-
-=
-as
 
 "IGS. 'as and 590.—Operation of removing wedge from slot of armature by use of steel driving
 tool.
@@ -17626,14 +12570,11 @@ After all coils have been removed, the slots should be cleaned of the old
 insulation, by burning with a torch and any burrs or rough places smoothed
 with a file.
 
-Repairing the Commutator.—Whether new or old, commu-
-tators should be tested for grounds and short circuits, and
+Repairing the Commutator.—Whether new or old, commutators should be tested for grounds and short circuits, and
 repaired if necessary.
 
-408 Practical Armature Winding
-
-If necessary to replace the mica, use only soft amber mica «
-plate for the segments, never use any kind of paper fibre «
+If necessary to replace the mica, use only soft amber mica
+plate for the segments, never use any kind of paper fibre
 moulded compositions. If hard mica be used between the se:
 ments it will usually result in high mica, and consequent ba
 sparking when the machine has run a while, if not under cu
@@ -17650,8 +12591,8 @@ service; a few strokes on the operating lever will remove the most obstinate pin
 as a light oil is used as the hydraulic medium, there is no danger of freezing.
 
 The best thickness for segment mica and ordinary voltage machines suc
-as 110 to 550 voltage is .032''.. It almost seems strange that a reduction |
-.025 will resultin about four times as many break downs. An increase |
+as 110 to 550 voltage is .032''.. It almost seems strange that a reduction
+.025 will resultin about four times as many break downs. An increase
 say .040" will result in high mica and accompanying sparking trouble
 On low voltage machines thinner mica is successfully employed.
 
@@ -17661,10 +12602,6 @@ segments, otherwise the inside of the commutator will be tight and tl
 outside loose.
 
 For the clamping rings, sleeves, etc., use only a hard India mica, <
-
-Practical Armature Winding 409
-
-\
 
 amber mica is too soft, and will crush when enough strain is applied to make
 good commutation.
@@ -17679,24 +12616,20 @@ Riveted commutators can be opened up by grinding a lathe tool to a
 very fine point, with the sides at an angle of about 15° and turning or
 ""sticking'"' the upset or burr off the sleeve. This will leave the sleeve the
 
-aa OS See
-——= =>
-
 Fia. 593.—Insulation shears; bench type. Jt consists of a shear with
 foot clamp only, without table or scales, and is designed to be bolted toa
 suitable table or bench. There are two castings to which upper and lower
 
 knives are bolted and balance weight hung ready for cutting.
 
-3 original length. Make a small countersink in the commu-
-tator washer which will receive the new upset, head or
+3 original length. Make a small countersink in the commutator washer which will receive the new upset, head or
 burr made when re-riveting.
 
 All commutators should be clamped very hard and
 tight by their own spools so much so that they give a
 
 distinct hard sounding note when lightly tapped with a
-~~ small hammer. If they sound dead or mushy they are not
+small hammer. If they sound dead or mushy they are not
 
 as tight enough to stand up well. If the mica between the
 segments be not tight, it will act just like a paint brush,
@@ -17704,12 +12637,7 @@ pick up oil, carbon and dirt, which will first show itself as
 bright white flashes going around the commutator. Occasionally these
 flashes are spectacular, but do little damage beyond wasting energy; they
 are, however, succeeded by dull red fire like that on the end of a cigar,
-which does the real damage of short circuiting the commutator, finally burn-
-ing out the armature. It is therefore important that commutators be tight.
-
-pp ~~ wid \"\eede is eee
-
-410 Practical Armature Winding
+which does the real damage of short circuiting the commutator, finally burning out the armature. It is therefore important that commutators be tight.
 
 Where built up mica is used commutators should be baked at a ter
 perature high enough to melt shellac, from 2 to 4 hours and very lar;
@@ -17720,9 +12648,6 @@ In the repair shop 1t sometimes helps to turn the flame of a torch throug
 the sleeve or inside of the commutator getting it hot while the segmen
 remain cold, and tightening it up very firmly whereupon the contractic
 of the sleeve will lend its aid.
-
-eC
-Ie
 
 Fias. 594 and 595.—Ring or clamp for holding commutator bars together when assembli
 and method of using. The clamp should be slightly smaller than the diameter of the cor
@@ -17756,26 +12681,14 @@ unless the trouble 1s very minor are irreparable. At the present time n
 insulation has been found to stand up on commutators as well as micz
 which as stated above should be tightly clamped.
 
-Practical Armature Winding 411
-
 Truing of Commutators.—When a new or_ reassembled
-armature has been 1n use some time, the shrinkage of the insula-
-tion may cause commutatcr bars to settle resulting in an uneven
-
-~ NRRRAAR RAR RR my ae
-¢
+armature has been 1n use some time, the shrinkage of the insulation may cause commutatcr bars to settle resulting in an uneven
 
 may! a LEE GA CRS Ne wee
-i NO euNS Ne ne +. a
+
 Se SR SLL SRL SRA RAO RN RR
 
 ONT aS * BtaaRtnaabebuniet aca cegerp cee peee EG i
-ee é
-i < ; 5 a
-Baier HELIN S;, ¢ nS FE asses atic. 9
-ERIC AACA AY a eens
-
-We eae
 
 Fic. 596.— Peerless commutator press. This tool is hand operated and is suitable for pressing
 on or pushing off commutators, armature cores, pulleys, gears, etc. I[t has a capacity of
@@ -17784,16 +12697,10 @@ on or pushing off commutators, armature cores, pulleys, gears, etc. I[t has a ca
 - : : SLEEVE | {/[=sb
 
 COMMUTATOR a
-v == || |
-cl [flee ee | —
 
 ### PLATE B
 
 ### HAND WHEEL
-
-Oa
-
-in
 
 Fias. 597 to 599.—Press for forcing on and removing a commutator. Small commutators
 are pressed on to the shaft by a hand press. All of the larger commutators are pressed on by
@@ -17805,19 +12712,8 @@ is placed over the shaft at O, and against the commutator. The rear end of the s
 secured so it will withstand the pressure, and the commutator is forced on. The power
 presses are built on the principle of a hydraulic press. In pressing on a commutator a piece
 of babbit metal or soft brass should be used against the end of the shaft. The shaft should
-be painted with white lead before having the commutator pressed on, in order to lubri-
-cate the shaft so that the commutator will press on easily. The wiper rings are pressed
+be painted with white lead before having the commutator pressed on, in order to lubricate the shaft so that the commutator will press on easily. The wiper rings are pressed
 on after the commutator and then the armature is ready to be connected.
-
-"SUIPUIM [10D Woy AABOY JO SoSsE]D ]]e OJ a]qQeIINs aynjid j109
-aINnJDULD PUD pay 'G 'SUOI}IIIIP YO Ul pavj SIVBWO Ne YM ZUIIUYIDIID Bujns} 40 6uI}ZjND s4ORDINUIWYD 'fy 'SUOI{DaNp
-Yy30q UI padj d1}BWO Ne puke poplAold 10j}0UI qUNpUSdopPUI YUM BIIQap BulpulsG 40]D}NULU0d 'e Spaptaoid 10}0W JUspusdap
--Ul YM aap Hul}Z}J0]§ 4OJVDJNUWUWOD 'Z 'S1OJOUL AIBUO!I{LIS JO BAIJOWODSOT 'AMICI UL PYsn $10}2}S JO SoINyeWIe [;eEWSsS pue
-a81e] ajpuey OF AjzyIqe YIM VIM PUL 9Y} JOJ VSRILILD UOISUD} PVUIEUOD jjas YM aulyoDU Gulpung '{ :S91N{e2jJ Bui moyjoj
-
-ay} SEY sUIYOeUI SIT '"SoINjesj snoueaA sj JO awWos BZUIMOYS JUIYOeW sinjewse Aynp Aavay [eSIaAIUN ssaj1998g— "(WKY "VI
-
-"
 
 surface. This must be trued up by turning in a lathe when in
 very bad condition, but otherwise a grinding tool, or simply an
@@ -17831,10 +12727,7 @@ commutators. Their application is extremely simple. With the machine in full ope
 the smoothing stone is held against the revolving commutator and moved very slowly from side
 to side. A coarse texture should first be used when truing the commutator, after which
 a stone of finer texture should be applied to secure the desired finish. With the surface
-true and smooth the occasional app ication of the finer texture stone wil keep the come-
-mutator in excellent condition.
-
-414 Practical Armature Winding
+true and smooth the occasional app ication of the finer texture stone wil keep the comemutator in excellent condition.
 
 brush, utilizing the brush tension to press the paper against the
 commutator, but on larger machines the brushes should be liftec
@@ -17856,14 +12749,11 @@ and moved back and forth by hand. The drive is through a flexible shaft as shown
 may be used.
 
 High Mica.—This condition obtains after some wear if mice
-be too hard or brushes too soft and results in heating and burn-
-ing of the commutator bars due to arcing.
+be too hard or brushes too soft and results in heating and burning of the commutator bars due to arcing.
 
 In severe cases the solder melts resulting in open circuits due
 to leads becoming disconnected. To remedy this condition the
 mica must be under cut.
-
-Practical Armature Winding 415
 
 Under Cutting of Mica.—The mica insulation. between the
 commutator bars should be under cut from 9 to 4 in. below
@@ -17875,22 +12765,14 @@ In doing this be careful to avoid leaving thin slivers of mica
 
 ### OR BURRS
 
-i
-Nl
-
-!
-
-—— — - ——~CHAMFER
 +—— = EDGE
 bat
-ee] PLAN
+
 a —* NO SHARP OR
 | 1 ithe
 Re eee
-ae rE
-HF
-SS LEAVE NO EINS
-; Z
+
+### SS LEAVE NO EINS
 
 ### FON END OF TOOL
 
@@ -17908,26 +12790,20 @@ run down about 5 to 1, a job that should take ten minutes witha properly ground 
 take an hour and even 1) hours, the speed of turning will ke much slower, and the chattering
 will be very severe, necessitating the use of a steady rest on many armatures that otherwise
 would not require it. Whereas if the tool be ground as here shown with the two bevels on
-the side very sharp say about 30°, with plenty of bottom clearance, and lots of top clear-
-ance, in fact the cutting edge should almost rise into a hook, and the radius of the point not
+the side very sharp say about 30°, with plenty of bottom clearance, and lots of top clearance, in fact the cutting edge should almost rise into a hook, and the radius of the point not
 to exceed 1/s4" set at an angle of about 30° pointing forward in the direction of feed, the
-commutator can be run at high speed, and only in severe cases will a steady rest be neces-
-sary, the job will be smooth, free from burrs, will require little or no sand paper, it will only
+commutator can be run at high speed, and only in severe cases will a steady rest be necessary, the job will be smooth, free from burrs, will require little or no sand paper, it will only
 require running a few hours before the commutator sing is nearly eliminated, it will not
-start off with high mica. With improperly ground cutting tool, short circuits.are quite prev-
-alent.
+start off with high mica. With improperly ground cutting tool, short circuits.are quite prevalent.
 
 NOTE.—In turning commutators whether inside or outside, internal or external angles,
 all angles should be well rounded, this particularly applies to the outside corner which should
 be turned to a radius of about }%" a little more or less according to the size of the commutator.
 The reason for this is, that if the outside corner of the commutator be sharp, short circuits will
-start at this point about four times as often as at any other part of the commutator even in-
-cluding the brush path. The principal reason for rounding the rest of the corners internal
+start at this point about four times as often as at any other part of the commutator even including the brush path. The principal reason for rounding the rest of the corners internal
 and external and seeing that they are smooth, is about the same, but in addition to this if the
 corners be not made smooth, and round, there seems to be a strong tendency for break downs
 to occur, and to drag chips, dirt, etc. across the rough places. >
-
-416 Practical Armature Winding
 
 next to the bars. Special motor driven saws are available fo
 cutting the mica. Small commutators may be machine cut on
@@ -17943,18 +12819,6 @@ tion which is frequently the cause of high or low bars.
 
 pitig MICA INSULATION
 
--e o q Avene
-oe oe 0 TT NG: a Bo Yet Ooee  ¢. ef eed He e
-oe om a Le Sard oe bao oe D : et es eas? St e 9° te' oe S, Pe hed e
-te... > © ree | vee : 2 © @e "uA *Neag 9 be a. . 22 . _8
-x tale nd 0% ee 6 ° 03% e ge' *s
-Ce a2 Phe og a M0 Gah @.
-oe, bd
-
-a O,
-
-L
-
 Fias. 605 and 606.—Mica segment F, cut from sheet using bar L, as pattern. Such a se
 ment is cut large at top and at ends go as to turn down evenly with copper bars when cor
 mutator is finally surfaced. Clamping toes and foot must be thinned to allow for give
@@ -17962,8 +12826,8 @@ copper bars and to obtain tight clamping of mica on the outside of commutator. M
 .003 to .004 ins. thinner; lower edge .002 thinner.
 
 To remedy this defect let machine run till hot, then take up on con
-mutator ring, repeating the process several times if necessary. High «
-low bars can sometimes be re-aligned by respectively tapping down, «
+mutator ring, repeating the process several times if necessary. High
+low bars can sometimes be re-aligned by respectively tapping down,
 prying up and inserting underneath a narrow strip of mica.
 
 Burn Outs.—The trouble which occurs between commutato
@@ -17978,15 +12842,13 @@ mica .03 in. thick a .035 in. saw should be used. In this way the mica can be re
 pletely with no thin layers left at the sides. This saw may be easily mounted on the tool carriag
 of a lathe, and driven at from 1,200 to 1,800 7.p.m. by a belt from the line shaft or by
 small motor mounted on the carriage. With a spacer of the same width as the commutatc
-bars two saws may be used and the slotting operation be performed in half the time. Instead «
+bars two saws may be used and the slotting operation be performed in half the time. Instead
 the circular saw, a lathe tool ground to fit the slots may be used by mounting it in the tool po
 and moving back and forth across the commutator by operating the carriage. It may also t
 mounted on a special stationary post and moved back and forth by a hand lever. These met!
 ods require a lathe which is not always available, and several types of machines avoiding th
 
 xe in use.
-
-Practical Armature Winding 417
 
 Plugging.— When the mica is not burned too deep, clean out
 che hole thoroughly and plug with a filling made of some good
@@ -18002,26 +12864,16 @@ LS. thick paste may be used, but this is
 Le not a good compound as the plaster
 fj ant Ny, of paris is a sulphate which attacks
 Y Oxy TY copper.
-FEE SOUS ™
+
 RY \ Dismantling Commutator for
 
-we ,
-<P
-
-w
-LL,
-
-va Repairs.—If a burned commu-
-tator bar or mica strip is to be
+va Repairs.—If a burned commutator bar or mica strip is to be
 removed for repairs, loosen
 clamping ring bolts and mark
 ring so that it can be replaced
 in the same position.
 
 que
-
-ve
-Y
 
 '1g. 607.—Commutator clamp. It consists of an outer steel ring having a number of radial
 tappings for set screws. These set screws bear against an inner ring split into a number of
@@ -18033,8 +12885,7 @@ The ends of inner ring segments should be skewed.
 
 Remove clamping ring and if the mica be stuck to commutator it should
 be carefully pried loose with a knife or thin tool. After the ring is taken
-off it is easy to remove any of the bars. In replacing a bar the mica seg-
-ment should be put in first, being careful to first see that there is no dust or
+off it is easy to remove any of the bars. In replacing a bar the mica segment should be put in first, being careful to first see that there is no dust or
 solder lodged on the back of mica ring.
 
 Tightening a Repaired Commutator.—When assembled put
@@ -18043,8 +12894,6 @@ he shellac, let cool and again take up on ring bolts.
 
 Repeat operation one or more times until there is no slack
 n the bolts.
-
-418 Practical Armature Winding
 
 Insulating the Cores.—The heads of small bipolar and mos
 multipolar armatures should have fibre punchings on them. I
@@ -18060,7 +12909,6 @@ it also reduces the output of the machine from 15 to 20%.
 
 ™~ are
 
-=. ee WE Re te sae ere
 a aN Ce EE Mea
 
 Ira. 610.—Insulating cotton sleeving used for insulating and protecting armature coil leads
@@ -18071,8 +12919,6 @@ suitable material, and should be snugly fitted over the shaft
 insulation that the wire may not work down between them, or
 the shaft insulation should be tightly fitted against the head
 insulation.
-
-Practical Armature Winding 419
 
 Never use friction tape on the shaft. It makes the heads too
 dig, as the wire does not readily slide over such a surface. Use
@@ -18087,8 +12933,7 @@ time corrodes through fine wires.
 
 "rg, 611.—View of mica vein.
 
-Insulation of Slots.—Probably the best of all around insulat-
-ng maierial for armature slots is some form of tough fibrous
+Insulation of Slots.—Probably the best of all around insulatng maierial for armature slots is some form of tough fibrous
 yaper which will withstand considerable rough usage and will
 'orm up pretty well. Such paper may be purchased under
 nany names, but was originally called ''Leatheroid.'" 'This
@@ -18097,8 +12942,6 @@ Thickness.
 
 For slots to 34' deep 110 volt range of insulation, wire sizes No. 28 B&S
 and finer, .007" or .010 paper is ample, if fibre heads be intact. If not, for
-
-420 Practical Armature Winding
 
 220 volts and for deepslotsto 7%" and heavy
 wires to say No. 18, increase the thickness tc
@@ -18120,8 +12963,7 @@ tinuous winding at high speeds withou
 
 Fig. 612.—Mica Insulator Co. micanite
 
-commutator rings as applied to rail-
-way motor commutator. .
+commutator rings as applied to railway motor commutator. .
 
 Fia. 613.—Mica Insulator Co. micanite commutator rings, various sizes.
 
@@ -18133,8 +12975,6 @@ mature sticks, and what is very important, prevents the sharp edge of th
 tooth injuring the wire.
 
 Where it 1s desired to insulate hetween the ton and hottam caile thi
-
-Practical Armature Winding 421
 
 'tas 614.—Method of insulating armatures. Cut a long strip lengthwise of the grain as
 this gives the greatest resistance to tearing at the edge by the tension of the wire a little
@@ -18157,8 +12997,6 @@ use only one. When the first slot is reached again, cut the insulation long enou
 down into the slot and lap well over the first end, and the armature is ready for winding.
 
 "1G. 615.—Peg for forming and anchoring insulation in slots while applying insulation.
-
-422 Practical Armature Winding
 
 same continuous strip method may be used to advantage, by simply usin
 a smaller and appropriately shaped peg. It should be noted, in makin
@@ -18218,8 +13056,6 @@ and for dielectric reasons on higher voltage armatures as well.
 
 Armatures of any kind and particularly where the wire is
 
-424 Practical Armature Winding
-
 wound directly on the cores should never be wound with any
 thing but double or heavier covered wires if durability in uss
 and freedom from troubles be a consideration, for the life of ar
@@ -18265,9 +13101,6 @@ NOTE.— Wires with single insulation are only suitable for magnet and field coi
 even these are not suitable when the size of the wire is considerable, as for instance, No. 1
 and coarser.
 
-Practical Armature Winding 425
-
-ee sag) eA?
 otis
 
 fics. 618 and 619.—American Steel & Wire Co. single and double cotton covered magnet wire.
@@ -18279,7 +13112,7 @@ Single Cotton-covered Double Cotton-covered
 
 ty ore Aliawable Approximate Values Approximate Values
 7 Wire Gauge Diameter Variation Rated Area |—————————__—_—___—_—_—_——
-| (B &S,) Inches Either Way | in Cir. Mils Outside Approximate Outside Approximate
+(B &S,) Inches Either Way | in Cir. Mils Outside Approximate Outside Approximate
 in Per Cent Diameter | Pounds per | Diameter ounds per
 Inches 1000 Feet Inches 1000 Feet
 0 0.3249 % of 1 105,625 333 321 339 323
@@ -18290,7 +13123,7 @@ Inches 1000 Feet Inches 1000 Feet
 5 1819 $4 of 1 33,088 190 101 196 102
 6 1620 $4 of 1 26,244 170 80 176 81
 7 1443 34 of 1 20,822 152 64 158 64
-8 1285 ] 16,512 137 50.4 142 ol
+
 9 ~1144 l 13,087 120 40.1 125 40.4
 10 1019 1 10,384 108 31.8 113 32.1
 11 0907 I 8,226 097 25.3 102 29.5
@@ -18308,20 +13141,15 @@ tk 19. .0359 132 | _ rosa 1.0404. 1 9 4.01 J, .0449 4.12
 23 0226 2 510.7 0271 1.62 ,0316 1.69
 24 .0201 2 404.0 0246 1.29 0291 1.36
 29 .0179 2 320.4 ,0224 1.03 0269 1.10
-| 26 .0159 2 252.8 0204 82 0249 883
+26 .0159 2 252.8 0204 82 0249 883
 27 .0142 2 201.6 0187 66 ,0232 718
 28 .0126 2 158.7 0171 ,024 021 580
 29 .0113 2 127 6 0158 427 0203 477
 30 .0100 2% 100.0 0140 336 -0185 382
 3] -0089 3 79.74 0129 272 ,0174 316
 32 .0080 3 63.20 0120 ~220 ,0165 260
-| 33 0071 3 50.13 0111 .178 .0156 216
+33 0071 3 50.13 0111 .178 .0156 216
 34 .0063 314 39.69 0103 0144 0148 179
-
-Ts
-RS
-
-426 Practical Armature Winding
 
 Fine Sizes Silk Covered Round Magnet Wire
 
@@ -18334,22 +13162,20 @@ Wire Gauge pemeet Pare harseeor pe | Approximate | Approximate POnLae Approximat
 
 1,024 ,0338 3.14 '| '0356 313. | 3.184
 "812.2 | . .0303 2.496 0321 393 2.533
-640.0 0272 1.97 492 2.€04
+
 510.7. | ,0244 1.576 623 1.606
-404 1.0219 | 1.25 781 1.277
-320.4 | '.0197 994 977 1.018
+
 252.8 | ..0177. 7865 | °. 1233 ,8085
 201.6 | ..0160 6297 | :. 1531 6477
-158.7 |. +.0144 497 | 1934 514
+
 127.6 | '0131 4023 | *: 2380 ,4162
 100.0 | ,.0118 ,3163 | -. 3003 3294
 "79.70 | »°.0107 2539 |. 3731 .2661
 
 63.20 | *.0098 2022 |. 4651 213
-50.13 | .0089 162 5714 1723
+
 39.69 | *.00S1 ,1301 7092 1397
 31.47 | .C074 1043 |. S695 1138
-25. 0068 0837 | . 10637 0936
 
 Enameled, Single and Double Cotton Covered
 Enameled, Magnet Wire
@@ -18361,7 +13187,6 @@ PLAIN ENAMELED | * SINGLE COTTON COVERED DOUBLE COTTON COVERED
 Net Net
 Weight Approx. magne
 
-a
 Approx. | Approx. of
 
 Quantity} Approx.
@@ -18370,23 +13195,19 @@ utside | Pounds | Copper per Outside
 
 Diam. per . per
 
-: Spool |} Diameter
+Spool |} Diameter
 
 mM ca ae in in Inches 1 i ae
 Fi nines Pounds Finished
 
 Approx. Approx.
 
-Approx. ; : Approx.
 Pounds | Copper | 'pounds bell Pounds
 
-in
 Inches Inches
 
 1.6477
 
-.038 1
-.0340 | :
 .0305
 .0271
 .0243
@@ -18395,34 +13216,27 @@ Inches Inches
 
 Be EEE On CR ae eo
 
-¢
-
 00 on 90
-SVRASSSSESASSSERAAS
-im WEN CRON ON ONO MOO
 
-PUTAS eeeupesesece'| i. 5.
+im WEN CRON ON ONO MOO
 
 NOTE.—For field work, good enameled wires stand up as good or better than wires with
 other single insulation, if the coils be wound on spools or equivalent. Winding armatures with
 plain enameled wires or for that matter any other single covered wire may be regarded in the
-same light as tight rope walking—it is done, but not recommended as approved or safe prac-
-tice. To wind them there are about a dozen factors that must be right all at once; among
+same light as tight rope walking—it is done, but not recommended as approved or safe practice. To wind them there are about a dozen factors that must be right all at once; among
 which are, that the wire must be fed to the armature under no tension requiring a spool handling
 device such as Chapman's dereeler, as shown in fig. 665, page 454.
 
-Practical Armature Winding 427
-
-Hand Winding.—To illustrate the process of winding an ar-
-mature by hand, the familiar two layer drum winding is selected.
+Hand Winding.—To illustrate the process of winding an armature by hand, the familiar two layer drum winding is selected.
 
 Fig. 624 shows the appearance of a completed drum winding, from the
 front side of the armature. The particular drum winding here considered is
 for an armature having 12 slots. The winding is put on as indicated by the
 following table:
 
-CARDBOARD OR TIN |
-TEETH DISCS CRUME TAC
+### CARDBOARD OR TIN
+
+### TEETH DISCS CRUME TAC
 
 ### THUMB TACK
 
@@ -18432,9 +13246,7 @@ CORE
 
 ### HUBS TO CENTER DISCS
 
-iF 1a. 620—Wooden armature for practice in hand winding. It consists of a wooden core of suit-
-able size with a hub at each end. Heavy bristol board will answer for the discs. Cut out a num-
-ber of discs, a pair each for the various numbers of slots desired. Cut hole in center of the discs
+iF 1a. 620—Wooden armature for practice in hand winding. It consists of a wooden core of suitable size with a hub at each end. Heavy bristol board will answer for the discs. Cut out a number of discs, a pair each for the various numbers of slots desired. Cut hole in center of the discs
 same size of hub. Slip over the hubs a pair of discs having desired number of slots and secure in
 position with one or more thumb tacks. Use string in place of wire for practice in winding.
 
@@ -18450,8 +13262,6 @@ NOTE.—Good grades of asbestos covered wire stand the most heat, some manufactu
 claim a very high heat, even to redness. The insulation, however, is usually thicker, and
 comparatively delicate, for these reasons it is seldom used for armature winding.
 
-428 Practical Armature Winding
-
 Winding table (12 slots. Pitch 1-6)
 
 Coil
@@ -18463,13 +13273,9 @@ Finish in Slot
 
 SLOT |
 
-SLOT 1
-
 ### BEGINNING OF
 
 WIRE
-
-SLOT 6
 
 Fria. 621.—Hand w'nding 1. Start of winding in slots 1 and 6.
 
@@ -18479,8 +13285,6 @@ shown in fig. 621, continuing in slots 1 and 6, till the require
 number of turns have been put on, ending at the starting poin
 that is at the beginning of slot 1, and a loop made in the wi
 as shown in fig. 622, long enough to reach the commutator.
-
-Practical Armature Winding 429
 
 After making the loop, the wire is not cut, but continued
 zhrough the next pair of slots and so on according to the winding
@@ -18502,10 +13306,8 @@ SLOT 1 SLOT 2
 
 ### SECOND COIL
 
-SLOT 7
-
 Fic. 622.—Hand winding 2. Two coils completed showing beginning of winding first loop
-' between the first and second coil.
+between the first and second coil.
 
 It should be noted that coil No. 6 which begins the upper layer, lies in
 both upper and lower layers. In completing the winding all the slots are again
@@ -18514,8 +13316,6 @@ is for an armature having the same number of commutator bars as slots.
 
 Now if the commutator have 24 bars (twice as many bars as slots) the
 winding would be put on so that there would be twvu loops projecting from
-
-430 Practical Armature Winding
 
 each slot, thus: Start as before in slot one, wind half the number of turn
 make a loop, then continue to wind the remaining turns in the same slc
@@ -18535,8 +13335,6 @@ connected to the commutator bars in the correct sequence.
 
 ### THIRD COIL
 
-SLOT 8
-
 Fie. 623.—Hand winding 3. Three coils completed showing first and second loops joinir
 them.
 
@@ -18546,46 +13344,19 @@ winding as the winder takes wires from several reels an
 winds them simultaneously, thus, for each turn he make;
 there are two, three or more turns of wire wound, dependin
 
-"Q JOJS YIM SUIZAq S]IOD JO JoAR] Jsddn ay} JeY} UO!eIYSN]]I 9yy
 WIOJJ Udas aq [[IM JL PUB 'BUIPUIM IAAL] OA} 9} SI SIU YT "Spud 9IIM 9} BUINSIM} Aq [10D JsI} ay} 07 poUtof SI [10d SIY} JO pus 94}
-JEU} VION "AIQISIA A][asI}US [lOO ATUO 9Y} SI SIq} 'UOT}ISOd UI [IOD 4se[ SUIMOYS aja[duUIOD SUIPUIMA 'Pp SUIPUIM PUe]{—'"PZ9 "DIY
-
-"-STIOD YAZQAVI
-5} YWSMOT ANV ddddNn
-Hi0S8 LANV 9 STIOD
-
-ST1IOD USAW YaddN
-21 OLS SOD
-
-JYWaH Slodvis YSAVT YwaddN
-
-### SIGISIA
-
-### AVAGILNA HOD AINO
-
-### MOS LSVI
-
-HOD LSdld
-
-Q3LDaNNOD
-—— (21°ON) 1109 LSV1
-GNV LSYI4 3O SQN3Z
-
-ee
-
-432 Practical Armature Winding
 
 Fia. 625.—Partiz
 wound barrelarma
 showing arranger
 of coils. The cor
-built up of thin «
+built up of thin
 of soft annealed s
 which are slottec
 allow the wire to
 below the © surf
 this being someti
-called t7on clad
+
 struction. The c
 are held by end plz
 clamped with:
@@ -18599,36 +13370,16 @@ machine, usually w
 out joint except
 the commutat
 They lie in insul:
-troughs, the wy
+
 layers being insul:
 from the lower la
 by fibre.
-
-* ~~ ~~
-: ~ ~ ~
-yA, AS
-a ee, he, ms
-~~ heen ~~ .
-ss "~~ "
-. ~
-
-*
-
-: ; , ; H
-7 A &
-\AAAAS
-
-AL
-
-~~
 
 Fia. 626.—Method of placing two layer lap winding coils in armature slots. Zn a two la
 winding one side of a coil will be at the bottom of a slot and the other at the top of anot
 slot. To place coils in slot, put in the lower sides first as, 1, 2, 3, 4, of coils A, B, C, D, le
 ing the other side of each coil outside its slot. Evidently when enough coils to make
 the inner layer have been placed this way, the upper layer side of the last coil so placed car
-
-C
 
 Standard type R.
 
@@ -18639,127 +13390,23 @@ tion on top of side 1, of coil A, thus moving the last coil from point
 —Commutator and rear ends of General Elect
 put into the slot. Thus, after lower layer side 4, of coil D, is put in the slot, the upper 1 yer
 
-a ;
-
-ee
-
-a Sy
-
-~—
-
 3 =
-
-Ss .
-
-: an
-
-Ss
-
-» PSAP
-
-= Ag se
 
 ~ Sie.
 
-oe \- Cae  Y
-RE S52
-N S 5
-6c S 1
-~ Ps
-
 = Bis 9 &
-SSisSe.-
-a l9Fa
-Ov |. se g
-4 sib
-OF) aaA
 
-"
-Re
-;
-"
-'i
-
-ot = Gl =a QE oC [[EM dtd} Ssey SOFEPIMUWUVYS YE PUL DJAIJeEWE JOIS Gl © AUF SUYYT spO]s JANPEWIL
-JY} Podx9 Seq JOJEYNUIWIOD vy} SOUT} JO JoqwNU 9Y} UO PUadaP [JIM pueY UI Salm JO JaquNU ayy
-'PURY UI SOJIM OM} Pd][ed SITM OM} JO SUIPUIM SNOSULNUIIS dy} SMOYS PUP ssad0id 9y}
-SoJENSNIII OFO "Sly "AVG JOJENWIWIOD YOeI JO} VIIM DUO ST Je} 'puNOM Ie Salim 9alY}
-jois rad sreq Joye MUIUIOD 9eIY} ABS oq dJOY} JJ 'ISN UTI SfaeI JO I9quMuU 9y} UOdN
-
-"S}O]S se s1eq
-JOJeNUIWIOD AUBUI SB Jd} DIB 919} OJOYM pasn BuIpPUIM
 JO 3dA} 9U} JOJ OTS Iced Spea] OM} YIM Butpulm de J— C79 "Oly
 
-731109 aus AO
-NOILOIS as! AO LUVLS-
-
-: 109 ane 40
-NOILDSS ond
-
 WOOD ane JO
-NOILDAS is!
 
-W099 LSHId 30
-
-3109 ond AO OILO3S aNd
 SNOILDSS one ANV I)
-1s ONINIOC dOOT p
-| J MOD ssl AO
-Hi / NOILOAS asl
-Wh / l Vif ONIGNIM
-wiusne ier 16 cats — x | f = —40 ONINNIDIG
+
 MOD and a dOO'1 us!
 
 Orr s mem 09 as!
 
-A
-a
-
-Mi
-
-\ wi
-
-~-
-
-I 8
-
-=o
-re
-
-——
-
 cet ree
-
-3YiIM GNODIS |
-JYuIM LSYIs
-
-Yi fluecl4 WW;
-
-### RIS WN
-
-JOYIO 94} SuIpurm 'Gg AOJS Ul G [109 J1eYs puke (fF PU E) S}O[S OM} CIs (Z JOJS Ul) fF [100 Jo apis WoO 'gq 'Zz O[8 UO apis 319430 9Y)
-SUIPUIM 6 JOJS Ul p [109 }1e}S pue QOS] BWNjeulIe 9y} WIN} Udy} 'g JOS UI Apis 19430 PUIM PUR ¢F jO]8 UT [10D PNY} yy yey pue
-(Z puke [) SJO[S OM} AIys 'ZT JOIS Ul Z [109 Jo apis ay} Wo 'D 'yo 4nd puke 10};e}NUWIWOD 0} pea] sinseaU 'Z[ 4O[S UI apis J9yIO PUA
-pue J 3O[S UI [10D PUODISS IE}S ',OR8T sInjJeulIe 93e}01 "| £10JEINUIWIOD Yea 0} YZnous Zuo] pes] JOJ anm Yo Buryynd 'g jo;s8 u!
-SpIs 194}O PUIM PUB [ JO[S UI [10D JsIY zleYs "WwW "Sulpulm sJejodiq papsoyd uss}jed FY ue Zurpurm ul suoieladQ— gFg 02 [E9 "BDl 4
-
-UOD LSyi4
-JO HSINIJ
-
-€ WOD V3JQNN
-dIULS. NOILVINSNI
-NV Lind
-
-N09
-GNOD3S
-JO HSINIS |
-
-y
-")
-
-avis 4 /aNVE S102 NO Nd
-
-Practical Armature Winding 437
 
 '1Gs. 637 to 642.—Armature repair tools. A, coil tamping tool; B, wedge driver; C, insulation
 scraper; D, fibre fuse puller pliers; E, armature air gap gauge; F, air gap and feeder gauge.
@@ -18768,116 +13415,40 @@ ing
 
 Practical Armature Wind
 
-we ee ep ka es a a ee aR arn = LST SS SY iat alin
-ee el ae Pa alas bh Nel ti . i.
-
-*posds isdoid ye paj}eisdo 0} MBS 94} SMOT[E UOT}ONpsl Ie9s oy, "19430 VY} UO JaTJO1 Peurs
-B puke 9pk 9uO UO s0Ys YIdsp ajqeisn{pe 94} Aq 9UIO SI BUTYDeUT 9Y} JO WYFZIOM oY] ~"Ja}aWeIp ut dn "sul G WoOJJ sz07e2ynwW
-"WIOD IO} V[QBIOIAJOS SI BUIYSeUL VY} yLY} OS paplAold sie syusuTysN[py *1JO}JOUI [eSJaAIUN |[[BUWIS B O} pa}.9UUOD SI YDIYM WJeUS
-SULALIp [99}S pue WUOA 9} SUTB}UOD s[pueY sy] "1e3a3 WIOM & SIIB UIN} UI YSTYM JaIJpUReU MOTION B 03 p2Asy MES IEINIID B
-JO YSISUOD YTYA JO s}ulod [eI}UVSSe 9Y} 'oUTyYOeW UdALIp JaMOd a[qQe}IOd B SI 19}}0[8 SIU], *19}}0][S 1O}eyNUTWOD puRINY— pry "D1 S|
-
-*S}O[S Jasl1
-94} WOlj IIP[OS PJO VAOUI91 O} OSTL Pure 'SOINJEULIE ZUIPUTMII USUM S}O]S 31n}
-'PUI JO JNO UONL[NSUI PfO ULI]D 0} pasn 81 zy '2ALIP 10}0UI pue {eS Jed}
-'29/9 'OSIP SUIPULIZ sO $7878U09 77 *{4YjNO Zulueapd jO]S sepurjzeyy— EPg "OLA
-
-"ul GgQ' 0} dn ssouyoty} Aue jo BdIUI IOF
-JIGeIINS SI pUe (SG SI Sedpo SUTIZIND 9Y} UVIM}
--oq o[gue su (*4O[S pedeys-A e S}Nd Ja}}Nn5
-aut, ~1073n9 OF9 "BY 'MES GPO "SI *49}}0]S
-pueiny JOj 19}3nd puke MeS—'OF9 PUP CFO "SOI
-
-*SPpBII SY} IOJ S[IOD Us9M}Eq JNO UMOIY} 9q
-Aewl sdoo7y + '3in}ew se 9Y} UO UOT}DaIID BUIeS JY} UT 9q TIM 3 eu}
-lapio UI [IOD J[V@Y PUOdDaS 9Y} UO JOJeIadO |9Yy} OJ PIeMHAIeq 9q [IM
-SUIPUIM JO UOI}JIIIP 94} 'J[2Y PUODIS 9Y} PUIM O} IBZAO posy[O1 AT[e
--nsn SI oinjeulie 94} SY "UO'}DIIIp sures 9Y} UI YOd aie Ady} ey}
-UdHe} 9q 3SNuUI s1Vd 'STIOD JyeyY OM} 94} GSurpuim uy "[IoOd yea Jo
-SUIPUIM JO Jop1O PUB S}OJS 0} SIaJoI VAOGe USAIS V[Ge} BUIPUIM SUL,
-"—T JO[S JO JUuOIS Ul 'saystuy JaAP] WO}0d VY} dIBYA $}Ie}s IJaAR] CO}
-oui 'yWeys sy} punore z1TYdS SI [IoD YOes BSUIPUIM SIY} UL "Suzpuim
-
-qyuds fizjp214JauIpIp e BUIpUuUIM UI UOTeIadQ—'OG9 O01 JFO 'SOIL
-
-### JLIIMNOD SI
-
-### MODI WLNA LAVHS
-
-4O 14317 GNV LHOIY
-ATVSINNY ILIV
-
-ONIM
-1109 : |
-GNOD3 1109 iSuts
-JO LYvl 4O HSINId
-
 fra—SAKWT dOL 30 1109
-fF {Sul4 LYVLS
-
-WOd ISVvI
-
-1102- Be
-1SULJ 40 AYVIS 40 HSINIS
-' | 1
-g
-: 6
-ere Cc ¢
-OL SNUNL M34V on]
-
-N3SHL
-LAVHS 40 LHOIY
-OL SNYUNL M3d V {1
-
-109 }\ cl
-
-)( WOD LSuls isuld 4O LYVLS
-
-<*— 40 HSINIS
 
 Motor gives automatic Quick set turn counter, No loose wrenches Winding head adjustable
 speed adjustment. Fast large figures. Automatic Lock- 1m aminute formost cores
 
 as operator can handle it, Wace ing Devices.
 as there are no oscillating f
-Parts that limit speed. :
+Parts that limit speed.
 
 ' Quick never
 loose lead for:
 mer and twister
 (Some sizes )
 
-REO
-: 4
 tm AOR BD AN RRR
-
-### CEECHAPMAN
-
-### MLCTAIT AL -Z
-
-if
 
 which makes wire
 lay down in center
 of slot
 
-'"Frictionless™ of.
-immersed quick, ————__—_»>
 Snappy controller
 
 with dynamic
 
-brake (on D C.) :
+brake (on D C.)
 which automatic.
 
-ally releases for |
+ally releases for
 handling.
 
 Automatic control
 of spool
 
-All tension adjust-
-_ments, this crank
+All tension adjust_ments, this crank
 
 Automatic com
 pensating auxiliary
@@ -18898,36 +13469,22 @@ Tension uniform.
 any speed, diam.
 or weight of spool
 Increases output 4
-to6times Capac.
+
 ity No 20 to No
-' sMBES
 
 Ring oiling spindle
 bearings No chat.
 tering.
 
-No wrenches need-
-ed— self-centering
+No wrenches needed— self-centering
 
 and balancing.
 
 F1g. 651.—Chapman style 3 adjustable bipolar drum armature winding machine.
 
-Practical Armature Winding 441
-
 Machine Winding.—As practically all the fractional or
 smaller size bipolar armatures are wound on machines, this
 method of winding such armatures is here presented.
-
-<R
-x
-is
-
-x
-
-s
-
->
 
 Fig. 652.—Method of placing armature in Chapman machine. Point the commutator end
 of the core toward you and select a pair of slots which give the correct span for the coils
@@ -18946,8 +13503,6 @@ Chapman (style 3) adjustable bipolar drum armature winding
 machine, as shown in fig. 651 is here presented as an example.
 This machine is usually made for winding one wire at a time as
 
-442 Practical Armature Winding
-
 owing to the fact that when armatures are wound: on such
 machine with one wire at a time no subsequent sorting ar
 pairing of the leads is necessary; this operation taking mo
@@ -18955,12 +13510,8 @@ time than it does to wind the armature.
 
 Over 90% of the bipolar armatures wound in the United Stat
 
-*, PH TEs Bet Q
 bohdi oom gtokae am Re weeds RR Bek
 
-"ale ia gt meg © =
-
-BF ae Estee gi SO RE Os Farge Tap. ge pT 7s ee
 Fria. 653.—Armature placed in Chapman winding machine head. Move the depth st
 against core, by turning the knob as here shown. It will both square up the armature a
 hold it at the proper depth. Now check the setting of the slots with the jaws, and sce tk
@@ -18971,11 +13522,10 @@ for paralleling are easily made, as explained in fig. 664, and accompanying din
 tions for setting the machine to handle twisted slots; this takes about a minute.
 
 have right hand windings thereon, and this is the type ¢
-winding that is turned out on this machine, although it is «
+winding that is turned out on this machine, although it is
 course possible to wind left hand windings.
 
-After the armature has been insulated as previously de-
-scribed it is ready for winding and is placed in the machine as
+After the armature has been insulated as previously described it is ready for winding and is placed in the machine as
 shown in fig. 652. After the armature has been placed in the
 head, as in fig. 653 and adjustments made as directed, slip the
 
@@ -18997,19 +13547,17 @@ $44 Practical Armature Winding
 round the lower tension pulley, crossing it (it will not rub
 
 tself, for the pulleys are set to prevent); then up, and loo
-| 4
 
-Fra. 655.—Chapman armature winding, moving picture 1. Machine tn operation winding |
-coil. When the machine is in operation watch the turn counter shown at the top of fig. |
+Fra. 655.—Chapman armature winding, moving picture 1. Machine tn operation winding
+coil. When the machine is in operation watch the turn counter shown at the top of fig.
 651, being careful to stop the machine by releasing the treadle at the right place whereupon
-the brakes will do most of the work of stopping. Treadle should be released from three to |
+the brakes will do most of the work of stopping. Treadle should be released from three to
 seven revolutions ahead. Caution, be sure and get the exact number of turns as a variation
-always makes a difference and sometimes a surprising difference in the behavior of the fin-
-ished armature, particularly if it has few tecth or few turns.
+always makes a difference and sometimes a surprising difference in the behavior of the finished armature, particularly if it has few tecth or few turns.
 
 around the upper pulley, crossing it, thence down, and loop
-around the right hand or tension pulley, crossing it again, ;
-thence up, under and around the little spring mounted form- |
+around the right hand or tension pulley, crossing it again,
+thence up, under and around the little spring mounted form-
 
 ing roller.
 The position of this roller laterally has some influence on the
@@ -19019,8 +13567,6 @@ length of the head. Moving it to the left shortens it slightly
 . For wires No. 28 B & S and finer the tension device should be
 threaded as shown by the dotted line on fig. 651 cutting out the
 upper and lower pulleys.
-
-Va
 
 . Fic. 656.—Chapman moving picture 2. When the proper number of turns are on, place
 the finger on the head of the armature; over the first lead. Pull it off the snubbing pin, it will
@@ -19032,8 +13578,6 @@ center.
 
 Ascertain the tension on the wire by pulling on it after it
 leaves the forming roller, for this little roller, sometimes given
-
-446 Practical Armature Winding
 
 considerable tension. Asa rule, the best tension will (excep
 for plain enamel wire) be 1% lbs. per 100 circular mils are;
@@ -19050,7 +13594,7 @@ a fair approximation can be made by increasing the tension til
 the wire can be felt to stretch, then releasing the tension till the
 wire does not seem to stretch.
 
-When the correct tension for the particular job is found, :
+When the correct tension for the particular job is found,
 mark may be made on the gear face through the little window
 
 to aid repetition in setting, which, however, may vary with the
@@ -19067,10 +13611,8 @@ without attention.
 machine winding. The rapidity of the winding is indicated in
 fig. 655.
 
-' The accompanying series of illustrations will serve as a
+The accompanying series of illustrations will serve as a
 moving picture showing the operations of machine winding from
-
-448 Practical Armature Winding
 
 start to finish using wire with one or more textile (cotton or
 silk) coverings.
@@ -19092,19 +13634,11 @@ middle lead is thrown out exactly as shown in fig. 658, when
 
 the slot is half wound, and of course without indexing the
 
-: If these leads be properly brought out, the lead between the slots will
+If these leads be properly brought out, the lead between the slots will
 
-| come out on the right hand side of a coil and that between the top and
+come out on the right hand side of a coil and that between the top and
 bottom coils on the left hand side, in other words they will come out in
 succession for connecting to the commutator.
-
-|
-
-;
-
-|
-
-|
 
 Fic. 660.—Chapman moving picture 6. Keep going. Hold the pressure on the skirt of
 the handle until after the first turn is completed, then (see fig. 661).
@@ -19116,8 +13650,6 @@ the commutator then interfere with the winding wire, cover it with a
 piece of paper, or better still, half coated tape, dry side out to keep it
 from scratching the wire..
 
-450 Practical Armature Winding
-
 Points Relaitng to Enameled
 Wire Windings
 
@@ -19128,7 +13660,7 @@ it cannot be used for winding armatures.
 as possible). There must be no jerks, as by starting the spool to rotatin;
 Therefore the spool can not be revolved by the pull of the wire, for tt
 
-Fra. 661.—Chapman moving picture 7. About the finish of the last turn, the pressure «
+Fra. 661.—Chapman moving picture 7. About the finish of the last turn, the pressure
 the hand will be almost automatically transferred to the tip end of the handle, when it w:
 again lock up. Time for twisting the leads, as shown in this and the previous two picture
 about one second. Qn coarser wires, say 20-26, twisting is unnecessary. Pull the lead o
@@ -19148,8 +13680,6 @@ both in the slot and on the head.
 'ia. 662.—Chapman moving picture 8. By pulling the first end out at this time, it will
 meet the last one at the finish and close up perfectly, then resume winding.
 
-ty
-
 .—There must be no manipulation of the wire after it is wound; it
 must not be pressed, pushed, moved, crowded, pounded or hammered,
 
@@ -19159,8 +13689,6 @@ not even lightly with the fingers.
 only the chord type of winding can be applied to enameled wire wound
 
 armatures.
-
-452 Practical Armature Winding
 
 6.—This chord must be short enough so that the shaft practically d
 not interfere with the winding, but the chord must not be so short as
@@ -19198,8 +13726,7 @@ its application.
 Fic. 664. loosen set screws
 with a is purposely made
 with a i working ont Sabeg athe two set
-SCrews 1e jaws » moved aroun i _of the arma-
-ture, after which hten tl 1e1 ERD is i | eines | oad t fo shots playing
+SCrews 1e jaws » moved aroun i _of the armature, after which hten tl 1e1 ERD is i | eines | oad t fo shots playing
 
 over the retaining screws; loosen them and move nes wing in the same direction that the jaws
 
@@ -19211,22 +13738,6 @@ itself. If the wing be too far in, no damage will be done except where it is des
 the slots full, then the wire in passing over the steel jaw may receive a slight belly, which
 of course, will be in the wrong direction and tend toward filling the slots with '"'wind."'
 
-454 Practical Armature Winding
-
-Ye POMBO
-
-BS t -
-Li om
-
-ee) el
-
-~
-
-= ip , ore en. Sant oi lak Saal LOO Oy FT
-2 s ae we
-
-ee eee ee ee ee er ee Fe
-
 Fra. 665.—The Chapman style 3 adjustable bipolar drum armature Winding machine fit:
 with a Chapman compensating tensionl ss dereeler with hand rest and self threading w
 directing guides for winding armatures with enamel wire. In winding enameled wire arr
@@ -19237,9 +13748,9 @@ Practical Armature Winding 455°
 
 RSE 13.—Armatures must not remain in the varnish
 Has longer than absolutely necessary to penetrate the
-Paes 6 ae
+
 mae © windings for the enamel is nearly always attacked
-2 by the solvents of the varnish. |
+2 by the solvents of the varnish.
 
 £E = 14.—Core insulation should fit the slots pretty
 RE 5 closely; the wire will not pull it into place, if it did
@@ -19252,8 +13763,7 @@ slots as 5 or 7.
 15.—Other unexpected things are liable to show
 up, watch out for them.
 
-Commutator Connection.—Before wind-
-ing, the commutator should be tested for
+Commutator Connection.—Before winding, the commutator should be tested for
 grounds and short circuits. After winding,
 the next operation is to connect it to the
 commutator. On armatures, there are two
@@ -19266,15 +13776,13 @@ through the center of the core, and
 through the center of the slots as in fig.
 673.
 
-If the commutator be connected up with-
-out lead, connecting this type of winding is .
+If the commutator be connected up without lead, connecting this type of winding is .
 very simple, for all that is necessary is to
 remember that the mica between any two
 segments corresponds to the center of the
 coil that is connected between the two
 segments in question. This mica, then,
-for straight out winding; should be di-
-rectly in line with the average center of
+for straight out winding; should be directly in line with the average center of
 
 ls are tightly wound and do not require pounding, frequently making
 
@@ -19284,18 +13792,13 @@ turns as when the wire is wound by hand in layers.
 form and twist leads of all sizes or styles of bi-polar drum armatures
 , hence the coi
 
-dings. Uniform te
-
 it possible to fill the slots with as many or more
 
 wire or finer and using random win
 spool and independent of the speed used
 
-x SS Se - a ig Be er Rare te noteee
 Fias. 666 to 672.—Types of armature which may be wound on Chapman (Type 3) winding machine.
 justable to wind wire into the slots,
-
-456 Practical Armature Winding
 
 the slot. This rule is so stated, because in twisted armature
 the slot at the end of the core is not the average center. TI
@@ -19320,39 +13823,24 @@ amount of this lead, using the points mentioned as a measurir
 point. This of course will place the commutator mica for 9
 lead directly in the middle of the coil.
 
-Practical Armature Winding 457
-
 The "chord" or second type of winding, sometimes called
 short coil,'' 1s the prevalent type on small armatures.
-
-+66
 
 It is one wherein the two sides of the coil lays in two slots which are not
 on a diameter, but are on a chord, that is a line passing through the center
 
-A
-
-aS
-
-NY
-
-U/,
-
-Ld
-
 SET MICA RR (SEPARATING
-SEGMENTS Hf ANO D2)
-ON OA, BISECTING
-ANGLE LOF
+
+### ON OA, BISECTING
+
+### ANGLE LOF
 
 Fig. 674.—Connection of commutator for [
-_ brushes at 90 degrees or opposite the poles.
+brushes at 90 degrees or opposite the poles.
 
 of the two slots in which a coil is placed, but not passing through the center
 of the armature. The above rule for setting a commutator does not apply
 in this case. Let the reader remember that a chord wound coil will behave
-
-458 Practical Armature Winding
 
 (as far as commutation is concerned) exactly the same as if it were o:
 diameter which is parallel to the chord on which said coil 1s wound.
@@ -19365,20 +13853,15 @@ placed one-half tooth away from the slot accommodating the coil,
 
 ### CHORD OF COIL MUST BE
 
-PARALLEL WITH DIAMETER LF |
-WHICH PASSES THROUGH THE
+### PARALLEL WITH DIAMETER LF
 
-MICA WHICH SEPARATES THE |
+### WHICH PASSES THROUGH THE
+
+### MICA WHICH SEPARATES THE
 
 DOS OF THE GOIL. }
 
 ### CHORD OF COIL
-
-~S
-
-YL
-SS
-~
 
 an ema at om oe = a=
 
@@ -19389,10 +13872,8 @@ straight out connection as in fig. 675 and of course directly opposite °
 middle of the coil for 90° lead as in fig. 674. These simple rules, if careft
 mastered, will solve the problem of connecting any type of armature wh
 ever, including all freak types, as well as the more ordinary drum and r
-armatures. It also applies, whether the commutator have many or |
+armatures. It also applies, whether the commutator have many or
 sections.
-
-Practical Armature Winding 459
 
 If there be an odd number of teeth in an armature, and the chord be 14
 tooth off the diameter, then the commutator will be placed only 14 tooth
@@ -19400,10 +13881,7 @@ away from the coil (see fig. 676). Aneasyruleisas follows, the mica of the
 commutator should be moved away from its coil one-half of the displacement of
 the coil from a diameirical position.
 
-In a properly wound armature the leads will come out oppo-
-site the teeth or between the coils, as shown in fig. 677.
-
-Ne;
+In a properly wound armature the leads will come out opposite the teeth or between the coils, as shown in fig. 677.
 
 Fig. 676.—Chord winding connected "'straight out'' for brushes between the poles. Odd
 number of teeth. Displacement of coil, one-half tooth; of commutator, one-fourth tooth.
@@ -19413,49 +13891,27 @@ positively identify the two leads from it.
 
 The foregoing explanations have been made assuming that
 there is only one section of the commutator and one section of
-winding per slot in the armature. Where there are more sec-
-tions of winding per slot in the armature, the point of the
-
-460 Practical Armature Winding
+winding per slot in the armature. Where there are more sections of winding per slot in the armature, the point of the
 
 commutator that corresponds to the middle of the coils in a
 
-slot, is the point to which the measuring should be done. :
-
-|
+slot, is the point to which the measuring should be done.
 
 ae. eee Lee eee
 
-\
-
-ra
-
-*}
-
-=_—
-; ae a
-
-es
-
 Sac
-
-aS
-es te = »
 
 Fira. 677.—An actual armature with connection started, straight out connection. Connected
 for chord wound coils.
 
 If there be two sections, then it is the segment connected to the middle
 lead. If there be three sections, the middle mica between the middle leads
-is the measuring point, if there be four, the middle lead again is the measur-
-ing point.
+is the measuring point, if there be four, the middle lead again is the measuring point.
 
 Again if there be two slots in the core per section of the commutator, the
 
 mica 1s again the measuring point. In all cases, measure from the average
 center of the slot.
-
-Practical Armature Winding 461
 
 Split chord windings or windings in which one side of the coil
 s placed in two slots making the ends of the coils look like the
@@ -19499,15 +13955,13 @@ to the leads either by soldering them tight or by subsequent
 hooding or handling. If they be tight, they will break off at
 the commutator after a few hours' or days' run without any
 
-462 Practical Armature Winding
-
 apparent cause. If the armature be a very high speed geare
 one, twist the leads tightly before connecting, otherwise do no
 
 Solder.—The most popular solder for electrical purposes
 40-60, meaning 40% tin and 60% lead. This has a litt
 higher melting point the
-ordinary tinner's "'ha
+
 and half'' but still worl
 freely and costs a litt
 less.
@@ -19525,16 +13979,15 @@ salts which are most!
 chloride of zinc. Wi
 not corrode after heatin:
 will work where othe
-| fluxes fail; cannot t
+fluxes fail; cannot t
 burnt by too hot sold
 Be and the solder never co
-| rodes loose from tt
+rodes loose from tt
 | copper.
 
-| 'Soldering pastes' a
-| used for coarser wires ar
-| consist of chloride of zin
-j
+'Soldering pastes' a
+used for coarser wires ar
+consist of chloride of zin
 
 but carned by a greas
 vehicle. They must not t
@@ -19543,8 +13996,6 @@ L scisinsaienai is Sinan ii sca ies niaas Recaro ete Sinha BA aa Tattle carta ti
 
 Fra. 678.—Chapman ''allatonce'' commutator soldering machine. It will solder all sections of
 commutator at once, whether fluxed with rosin or any other flux.
-
-Practical Armature Winding 463
 
 greatly overheated or they are liable to carbonize and insulate the joint.
 Work must be fairly clean.
@@ -19556,8 +14007,7 @@ jsolution of 1t with alcohol or any one of a number of solvents.
 
 Work must be good and clean; rosin will not work on dirty surface. Care
 must be exercised not to burn it for it burns into charcoal readily, making a
-bad joint which must then be cleaned mechanically before it can be sol-
-dered. Likewise the temperature must not be too low, else an insulated
+bad joint which must then be cleaned mechanically before it can be soldered. Likewise the temperature must not be too low, else an insulated
 joint may occur instead of a soldered one.
 
 Rosin is slower in action and requires that the solder be ''sweated in''
@@ -19565,8 +14015,7 @@ foralonger time. Where rosin is required, it is better to solder commutators
 on a machine, although the volume of production might not otherwise
 warrant one.
 
-The time honored method is of course to solder with a solder-
-ing copper erroneously called a soldering "'1ron'' sometimes aided
+The time honored method is of course to solder with a soldering copper erroneously called a soldering "'1ron'' sometimes aided
 _on large work by directing a clean flame against the commu-
 'tator if 1t can be done without the flame touching insulation
 (except segment mica). Machine soldering is, however, superior
@@ -19586,8 +14035,6 @@ bake per directions of the makers. The reason the modern small armature
 with high voltage and no auxiliary insulation in each slot, stands up so well
 is largely due to the excellent insulating properties of modern baking
 
-464 Practical Armature Winding
-
 varnishes, but the varnishes must penetrate the armature completely or
 the voltage will be sure to break down the insulation of the unimpregnated
 part sooner or later. The high dielectric strength of enameled wires helps
@@ -19600,22 +14047,18 @@ varnish solvent may cut the enamel. Do not soak enameled wires in the
 varnish longer than absolutely necessary.
 
 Fic. 679.—Chapman style C am.
-meter. It indicates the condi-
-tion of all parts of a wound
+meter. It indicates the condition of all parts of a wound
 armature simultaneously; will
 test the armatures it was built
-for as specified, will also indi-
-cate shorts in double voltage
-and open circuits on half volt-
-age windings at equal speed.
+for as specified, will also indicate shorts in double voltage
+and open circuits on half voltage windings at equal speed.
 The operator cannot ignore de.
 fects. The indications stand out
 and command attention. A
 pilot lamp is provided to show
 the correct reading of the indi.
 cators. Yo operate, the com:
-mutator is inserted in the fin-
-gers in the center of the tof
+mutator is inserted in the fingers in the center of the tof
 whereupon the indicators wil
 light up half way if everything
 be O.K.; 1f not, there will be
@@ -19623,8 +14066,7 @@ an irregularity in their illumi.
 nation. This irregularity 1:
 what the operator looks for. I
 a bare commutator be tested.
-no response is made by the indi-
-cator unless a short or grounc
+no response is made by the indicator unless a short or grounc
 be present. The odd indicator
 is assigned to reading grounds
 at the working voltage of the
@@ -19636,14 +14078,12 @@ insulations, as they do not stand hammering very well, and
 more time is required where it is neccssary to pound heads
 than to wind the wire.
 
-Practical Armature Winding 465
-
 This pounding again reacts in an increased number of short circuits, to
 |. prevent which insulation between the coils, and sometimes between layers
 -; is required, etc., to prevent this extra cost and trouble design heads with
 i; plenty of room.
 
-'| Excessively deep slots ("'all slot'? armatures) 'are to be
+Excessively deep slots ("'all slot'? armatures) 'are to be
 voided if possible, they usually have insufficient room between
 sae slot and the shaft for the heads of coils.
 
@@ -19670,7 +14110,7 @@ accommodate the insulation, prevent excessive magnetic slot leakage, and
 makes inappreciable difference in the effective air gap between this size and
 
 a narrower one. Designers can unhesitatingly use this size of slot on all
-the smaller sized cores. |
+the smaller sized cores.
 
 If the magnetic field were a perfect sine field, the effect of a
 chord winding would be to reduce its effectiveness by angle
@@ -19680,12 +14120,10 @@ enclosed by coil, that 1s,
 
 effectiveness = 5
 
-406 Practical Armature Winding
-
 Fics. 680 to 682.—
 Method of makin,
 preformed armaturi
-coils. First, for ;
+coils. First, for
 diamond shaped coi
 a long narrow coi
 is wound as in fig
@@ -19700,30 +14138,16 @@ the pulling machine
 being shown in fig
 683.
 
-' -
-x
-PO ~
-
->
-
-ie :
 ys 7S toy.
-e "Y ager
-m a. ae ig
-" - 'aw wee?
 
 nap
 
-,
-
-Fia. 683.—Peerless ar-
-mature coil pulling or
+Fia. 683.—Peerless armature coil pulling or
 forming machine, as
 set for diamond coils.
 Inoperation, windings
 such as shown in figs.
-680 to 686, are insert-
-ed in the holders on the
+680 to 686, are inserted in the holders on the
 central vertical arms,
 the ends in the knuckles
 at front and rear. The
@@ -19732,8 +14156,6 @@ pulled apart to the
 position shown, thus
 pulling the coil tc
 shape.
-
-Practical Armature Winding 467
 
 angle referred to circle of reference) but with polar fields,
 wractically the effect cannot be found so long as the pole pieces
@@ -19746,8 +14168,7 @@ he performance of chord windings test out the same as dia-
 'netrical winding.
 
 Very short chords should be avoided, for they cut down the capacity of
-the machine, increase magnetic leakage, and sometimes make them mis-
-behave decidedly. While a very short chord has a tendency to make small
+the machine, increase magnetic leakage, and sometimes make them misbehave decidedly. While a very short chord has a tendency to make small
 heads, if it be too short, nothing will be gained, for the windings will pile
 up in a ring, and leave a hollow space around the shaft, also pile up on the
 side of the slot interfering with coils in the bottom of neighboring' slots.
@@ -19759,8 +14180,7 @@ possibly when using plain enameled wire.
 
 Straight chord windings, that is, those which occupy only two slots
 whether having one or more leads, if properly connected, are superior to
-split chord windings, that is, all the coil in one slot one side of the arma-
-ture, the other side of the coil in two separate slots, passing on two sides
+split chord windings, that is, all the coil in one slot one side of the armature, the other side of the coil in two separate slots, passing on two sides
 of the shaft making the end of the coils look like the letter V.
 
 Cases have been known where a V winding reduced the output 50%.
@@ -19778,41 +14198,26 @@ exhibits its only good quality.
 Owing to the very great dielectric strength of modern baking armature
 varnishes it is seldom that insulation is inserted between top and bottom
 
-468 Practical Armature Winding
-
-coils in the same slot on small armatures. On 500 volt armatures it is, how-
-ever, absolutely necessary, as well as between the top and bottom coils on
+coils in the same slot on small armatures. On 500 volt armatures it is, however, absolutely necessary, as well as between the top and bottom coils on
 the heads and sleeving required on the leads.
 
-(
-( %
-
-Fias. 684 to686.—Forming of short cotl. Fig. 684, shape of winding y/ Ss \
+Fias. 684 to686.—Forming of short cotl. Fig. 684, shape of winding y/ Ss
 before pulling, figs. 685 and 686, same after pulling. This type of PS
 coil is extensively used in , z fs
-Westinghouse apparatus. io , /f
-
-th) f= ,, . /= me
-f & {Ff
 
 Eta. 687.—Peerless coil winder
 lathe combined with head for
 winding armature, stator, and
 field magnet coils of medium
-S1ZeS.
-
-Practical Armature Winding 469
 
 Snee AFTER
 OPERATION
 
 ### SHAPE AFTER
 
-2 ND
-OPERATION
+### OPERATION
 
-5 RO.
-OPERATION
+### OPERATION
 
 COIL
 COMPLETED.
@@ -19825,10 +14230,8 @@ stepped pin; for the two inner corners and wind the coil directly to shape in fi
 pulling them to their final shape. This method does not strain the insulation so severely
 and is much faster. After the coils are pulled, they are usually taped where they go in open
 topped slots; where they are threaded in slots with narrow openings one wire at a time they
-cannot be pre-taped to any extent. Practice varies as to varnishing the coils before assembl-
-ing in the armature. Sometimes they are varnished before pulling on the machine; frequently
-after pulling and before taping, occasionally after taping and before assembling and some-
-times not till after assembly. Threaded in coils cannot be pre-varnished. Varnishing before
+cannot be pre-taped to any extent. Practice varies as to varnishing the coils before assembling in the armature. Sometimes they are varnished before pulling on the machine; frequently
+after pulling and before taping, occasionally after taping and before assembling and sometimes not till after assembly. Threaded in coils cannot be pre-varnished. Varnishing before
 assembly usually requires that the coils be heated enough to soften the varnish and then
 pressed in a cold forming die in order to get them small enough to go into the slots. For this
 reason it is seldom that repair shops varnish the coils before assembly.
@@ -19839,10 +14242,7 @@ cotton tape '"'in the white" that is not varnished, oiled or gummed. Most popula
 is applied to the coil the tape is usually over it and then is frequently applied "but lapped."'
 or a single thickness over this slot insulation. Machines are almost universally used for taping
 coils new both in the job shop and factories. ' After the coils are taped the factories usually
-varnish them before assembling. Repair shops usually assemble them in , the white, as pre-
-varnished coils sometimes require pressing before assembling. ,
-
-470 Practical Armature Winding
+varnish them before assembling. Repair shops usually assemble them in , the white, as prevarnished coils sometimes require pressing before assembling. ,
 
 Fia. 690.—Chapman kickless self feed armature coil taping machine. Takes a considerable
 amount of the "'kick'' off the operator's hands. Eliminates the excessive fatigue of operator
@@ -19852,35 +14252,18 @@ or decrease lap at will while running. Feed can be varied to obtain a variety of
 is set at half lap for 34" tape applied to the average armature coil when it leaves the factory.
 
 wr were oe eee
-" ~
-©
+
 "ail
-gre :
-~ ;
+
 ~ »out
-ty
 
-a
-
-"'e,
 ren =
-mh,
-™ .
-~
-~
-~
 
-—
-
-SP a
 RE ROTI py, Saw . —
-SMe
 
 Fig. 691.—Chapman field coil taping machine for taping
 field coils, meter coils and magnet coils of all kinds,
 made in several sizes.
-
-Practical Armature Winding 471
 
 RE-CONNECTING D.C.
 MACHINES
@@ -19895,12 +14278,10 @@ a friction tapered drum so designed that it neutralizes the tendency of the wire
 The amount of tension is under perfect control of the operator and is regulated by ten point
 index. Jn operation, each pound applied to the brake drum is multiplied by means of
 gearing to 3 lbs. at the band wire drum, which is tapered to compensate for the tendency
-of the wire to crowd up against the flange. On account of this gear reduction, a compara-
-tively small braking effect produces a very great tension on the band wire, and any change
+of the wire to crowd up against the flange. On account of this gear reduction, a comparatively small braking effect produces a very great tension on the band wire, and any change
 in tension can be secured by regulating the hand nut, directly in front of the operator.
 
-Voltage Changes.—In making changes for motors or dyna-
-mos to operate on different voltages it should be noted that the
+Voltage Changes.—In making changes for motors or dynamos to operate on different voltages it should be noted that the
 speed of a motor varies directly with the voltage provided the
 field remains constant.
 
@@ -19929,11 +14310,8 @@ With this arrangement evidently on hali voltage circuit, the voltage
 per field coil will be the same, hence the flux will be the same but the
 speed will be only half what it was before the changes were made.
 
-Practical Armature Winding 473
-
 Changes for Double Voltage Operation.—The field coils
-must be rewound in case with the shunt fields 1n series the small-
-est air gap cannot be used. Changing for double voltage, gives
+must be rewound in case with the shunt fields 1n series the smallest air gap cannot be used. Changing for double voltage, gives
 twice the horse power.
 
 ### WINDING
@@ -19951,16 +14329,12 @@ will however cover at least 114 to 2 bars. To change from 120 to 24) volts, reco
 winding so that adjacent pairs of coils will be in series as in fig. 696 instead of in parallel
 as in fig. 695, and reduce width of brushes to that of one commutator bar.
 
-Armature Winding Changes for Voltage Changes.—An ar-
-mature can usually be adapted to.a lower voltage either by
+Armature Winding Changes for Voltage Changes.—An armature can usually be adapted to.a lower voltage either by
 reconnecting or by rewinding.
-
-474 Practical Armature Winding
 
 in series, using wire of half the cross sectional area (three sizes
 finer) and twice the number of turns. The compound series
-field, 1f any, will work as they are, but to preserve same regula-
-tion as before, must be given the same treatment.
+field, 1f any, will work as they are, but to preserve same regulation as before, must be given the same treatment.
 
 In making changes it should be noted that the sectional area of the
 wire for the coils varies inversely and the number of turns directly as
@@ -19987,11 +14361,8 @@ PLANE
 
 ### DYNAMO MOTOR
 
-Fras. 699 and 700.—Machine operated as dynamo and as motor. When the machine is op-
-erated as dynamo the brushes should be given forward (positive) lead, and when operated
+Fras. 699 and 700.—Machine operated as dynamo and as motor. When the machine is operated as dynamo the brushes should be given forward (positive) lead, and when operated
 as a motor, backward (negative) lead.
-
-Practical Armature Winding 479
 
 Speed Changes.—Mayjor changes must be made by changing
 'the number of turns and the size of wire on the armature.
@@ -20009,11 +14380,10 @@ unsatisfactory and other troubles will develop.
 Dynamo Operated as a Motor.—The machine will run in the
 'same direction, but in the case of a compound machine, the
 series winding should either be cut out or reversed, and the
-| field rheostat removed. When the load comes, move brushes
-| backward that is, opposite to the direction of rotation.
+field rheostat removed. When the load comes, move brushes
+backward that is, opposite to the direction of rotation.
 
-If the series field be not cut out, it must be connected in the same di-
-rection as the shunt coils, usually requiring them to be reversed. When
+If the series field be not cut out, it must be connected in the same direction as the shunt coils, usually requiring them to be reversed. When
 
 the load is applied, the brushes will require shifting in the direction of
 rotation.
@@ -20028,8 +14398,7 @@ Reversing the shunt and if compound, the series field (but not any inter-
 pole field) will reverse the rotation.
 
 If either the rotation of the armature, or shunt field connections of a
-dynamo, be reversed without an accompanying reversal of another ele-
-ment, the magnetism induced by the winding will oppose the residual
+dynamo, be reversed without an accompanying reversal of another element, the magnetism induced by the winding will oppose the residual
 magnetism and the machine will not build up. A multipolar machine can
 be reversed by reversing the brushes on the studs and then relocating them.
 
@@ -20039,66 +14408,23 @@ in little or no torque. Trace out connections or test polarity
 of magnets by means of a compass, the little ones used by
 watch makers are the best.
 
-A A A . rn Os A A n & sara tir Sr aaecene eis ey ae a eines tapes 00 :
-
 —— ee eee
 
-a es, ee of}. A p» i iy a ocr dosp poquse ybry ool Ss C
-a ae en cae ae aancaas Saas es Gal a aT eT ge |
-ce Oe SE La eR Re Ae: SS Se a ia . aaereueeae Ree es saysnsq vont yO -p
-' Sa, i (Ca ORGS SOE TN SORTS a hie OT Le SERA LER TEMS TNE Te
-ae = A eure a aaa aasis eens 0190 aa1spsgo ynw OO] "¢
-; | _ es es ee oe a —s 'a A aaa ee tee 'u0njzD 2015090 aim } ool
-- = a" ee ee oe. es tal cps - _ - | ee dees Ren aan eee Anandva bur kss02 Mo} OO | 1.
-. RB IA reas cua mee ames erie) ee err er eta ere rr re pee
-: | fe - (e %- Ss 5
-'ysnig jo speiny Zu0IA 02 ONG "Y
-cl of mic | z2izrlalz| pl pPlezlelelZlei?
 viles|8 12 |2\/2 |e 12 les les (212 13 12 1% 13
-Bol/Se) a) s |= |e |S la [ee |E=) 712 12 | x >| 5
-S7|ga| 0/15/7121 |s [Galfool Pls |B] EL ELS
-gp, SIE is] ia] |F lee e812 | F |e
-3 oo) } rs & S S © soe atsiag on
+
 S| 2).F | 2 3/2 |6 ES /Ee/ 8 | 2 1 F SATANOUL HOLVLAKIWOD
-s) FL aye 2 1e |p lssissi8 1" |e ANY HSNYa AO sasavD
-oo = ° Wu tT a]
+
 ba 9. S 8 |32.2)=2
-BE} f] | S222 |
 
-SHTANOUL AO pean Serta GNV SLOG
-
-sounutG puv ss1o0jojpy juasin' ) 1904 ut
-saqqno4], 4oyvinuuor puv ysnag fo spaffq puv sasnvy fo sisKjouy uy
-
-qreYD) VIqnor], pue sdueUazUIeYPY YsSNIg UOgIeD)
-
-| bony 129 400g *y
 ° S ones a a 7 - '. " Manes oypuauab 129m}99 syuasma ssoizy L
-
-Bray Sea Tear rercoengvuerraoers ** *gu1p uO pDdo) fo sab.mgy Z
-
-"S9SNv') [VUIIIXY 02 ONG °*)
-
-ore e ere ee OSE ESE ERI ge RO EE "$SMIIIE JDUIUIIZ BSOO'J Gf
-
-'uolviedg Ysnig Aj[neg 0} ong "g
-
-panuwog—JIVY') I[QNOLT],
-
-*§190J0d Plelq pue sinjewsy 0} eng 'd
-"'QLb 28g uo séuspvay ummnjoo <penuywo—JIVY') I[GNO!I J,
-
-Practical Armature Winding 479
 
 What winding data is required by the repairman?
 
 How is an armature dismantled?
 
-What should be done after the coils have been re-
-moved?
+What should be done after the coils have been removed?
 
-What kind of mica should be used between the seg-
-ments ?
+What kind of mica should be used between the segments ?
 
 What is the objection to hard mica between segments?
 
@@ -20137,7 +14463,6 @@ winding by hand.
 What is used on the leads to avoid confusion?
 
 Soe
-36.
 
 Upon what does the "number of wires' depend?
 
@@ -20174,143 +14499,32 @@ What is done to operate a dynamo as a motor?
 
 ethene
 
-as
 Deteeoe
 
-ay
-
-"o
-
-o
-a
-.
--
-re
--
 Kee
-.
-a"
-'
-A
-"é ".
-" ' ~
-°
-pa ee
-7H os
-. - rade
 
 Lame iin
 
 aa = he
 
-& :
-+
-
-oo
-
--
-»
-
-"of
-
-oy
-
-él
-
-PA
-
-'.
-
 Seow
-,
+
 ree
-. a
-
-~~ ~
-«
-
-'
-
-\
-
-ce
-nr ee
-=
-re ai;
-.
-es s
-«-
-~
-a
-
-a
-br a
-
-ae
 
 POI OSE RG, BOLI ARE TPR PIRES OY. SS OTF
-aa , es aoe cae "a
-
-a
-
-ee - a i, 7 = ~ ae Soe ew
-Zz : ot Gare act eal ear > RSE eae EO ore
 
 wares
 
-.
 Fas Aree
 
-ak rea Ce
-
-'
-<a.
-
-a
-a
-
-ry
-- 2 Z
-"1
-
-aoe Fe
-. ~ 4
-hr nS
-- —
-pe
--_-—r
-
-3 ow at
 area
-ae me:
-teas ele, a
-aah gael, ~
-wy tee
-eS 5 .
-- rs
-ps . we ~
--* aaa
-oA
-a :
-- va
-+ ond
-. as,
-¥s <
-'
-id on
-Pees |
-: a
-"4
-s
-zi - ee
-ar
-we
-SN eee
-we
-se
-.
-ory
-.
 
-Me Se Sat Sekt : at ~ = ms
-" ' Va At
+teas ele, a
+
++ ond
+
+Pees |
+
+SN eee
+
+ory

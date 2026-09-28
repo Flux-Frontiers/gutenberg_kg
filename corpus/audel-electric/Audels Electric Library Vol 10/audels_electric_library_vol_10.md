@@ -6,229 +6,33 @@
 
 ---
 
-; . <i - "me ~ + a a
-| yes hay —s See an ee |
-" ae ee ho =
-" aye i~< a Mt ~ —~
-SUN2 SSAGS SAAS SS
-ag gaa AS SSS eR: eS,
-ae Se = ra -" ITS Roa eee omagy
-
-' ts eS pe os : ~ ~= eva hers
-- » * 3 > aS SE "Ga KAS > Ls
-n AEY SESS SAD RRA
+yes hay —s See an ee
 
 PUR ARES it ete OE SET Se
 
-FY ata -> i. eho S SQ po wey
-
-ay Sa tt Se Ce ete wm A SS:
-
-"4 e ~ = - ~yeSe hes = my .
-8.77 8 & hoe SN _ SR eX; =
-eS ~ ioe = <a > Tae SS
-i Cat ee e - ~ ~~
-7 ——— a4 <S q
-> =. om A). Sham
-Pe h ~ =. <a oe
-
-~" 7
-
-5 a a
-
-a
-
-'my te
->
-
-=
-
-. > *
-0) 3 tee = ~
-— - ee CSP"
-fry, ye Se th byw': eo
-
-"" = — tn ef,
+0) 3 tee =
 
 sve 2 - : 2 Pea as
-ok . ,
-+ ~ \e se . ~~
-; - o> 0 a 7
-> brs a a "SAS Neh Soe
 
-<= — —_ ~ fen a Sat - =
-~~ =m) & A V2.) Pe =e
-~~ > : =e et o
-~~ "me a. ™ _ a es . -
-' —— ee ~~ se ake =e . " a . " c '
-: AS. Se . - os ' ~<a b~ — an ~ a ; -
-Pama Be yee Ste Reo 5 Prarie A etn = oe $e Ge te SS oo . 2 :
-
-— SSeS SS a ee AT ee S| SSS a : ay "a ees
-- ey ER } % = — at, Aen Ne eS ape -- ia 2? <37,~—* ~ = ac» - -~
-~ Ve aan ee ee 2 xa MST, — -" s— ee _ = = ~ —~ if aby ened Lott ~ aat 4
-
-ae : _ a7 "= Aa eS Le NE s i~a ao :
-
-—~* lg 'le © ial oe Ag .
-- ria eo = FS eons PERT XR gt ee, a a
-a chee ——, a ee ae a nal sr cael pe _"e- ~ °
-: . A -_ > sal _—
-= -s
-
-—
-- " -
-—
-=
-—
-"
-- —
-. ° ™ . > a. <= so a bo. Some, - = : -
-a tr "i a a ye 4 => Bee ; - — - ol ~ Se one - . ome
-. ce ha aper -- : 2 + ~ ; and ae ta = — he a pa "
-i — : i = 236 sfeeet= _ -"22.-- <= . same a ~~ 2 - 2 we = me wen. x es - - ~— eC — -<- —— ec a mal Sle%, ~ ~ = S S >
-> ~ . = ~ ao. ~~ 7 e Sse" & ~ tL wie = — - ~_ re = —- a = . . » -
-» ° . - . > - : '" S sa * -- i" - o - e —— - ny 2 ME Bal - mm, * -:
-. — ~_ -» faa, -. Co hate, ee cate ~ = : x més a * oo - m=. . — ~~ - ~- ~- ¥ =. ——_ ' "- : —
-- ag See . 7 a ~ en ~ _ ame io 7 . ~ — _—— © ~ c-< : >* ae = 7 om. _ > > 2 ;
-my 5 —> ee, mig see ee a es eee ~ Sn' ae ba cert eer eeline. ereudinat ah - = ~—e pt = _ = Se | ' ' c es > — a — eee - _ ad Ce =
-s > : - - ~ —~ ~e ss: pont hy = rs ee Ay ~<a re. 4 Pop a — ee — <2. at = Ps 3 ~ x at,
-~_ bw ~ * in a ye oe, ee al <-- - : : aS gti" . = a =, 4 = - - ~ a — fe - - - . -. © . Sas-* te a - ~ — a ee
-- : - _ _-— - 2 - en os = ana = x = J "en om" es a - re. ~ = a ~ a goat = a ey = 2 ae om — " — Fe. - be 5 = wd od —
-—-. * 5 = Bo ei, an 4, alee ad 7am ~~ = ' an ¢ aa a a See = ee ex — ~~ e , semaine. cs ~ : - ~~ as sine
-sae i a — So Sax, rind ~ ees se Os a, Cas Ghee ot — ww —— s «.* we e — — ee oe ~ eS SF cadliia : > ~ oe | a ae ee ~—* 2.
-_—— — e ' ae ~ * - - <-> ~ bes 2 = on = _ ~ 7 ~~, - Y " - -~ —— - ~ =.» - = >> - — . - . - . -
-we er <. = : ~ i - " :
-Re Oy ne ON eee . ae" 2 eee 2y.> -— Ne ~ ' ' tyke r a © : - ee tb nd - » > Segre er st. ree —— os :
-« — " = oe ~~ ——_* 2° =: a o a we ae led ~ ~ <, "~o * : ==, —_ » <' - — = ~ oe ae . a a re = ee —_ a —a "rr Pa Ne " «= o a "
->. aa P danas > k. ra , tS een - a. Nt ¢ sealed ~- . og ae - = im oe "~— = : = - _» forks - Py Se - ~ > E>
-~ See - oom ~~. oe is
-= - "tad
-- — -
-
-~ — Ts -
-' , Whee
-~ x ae °
-* = ~
-a ~
-- "a ws -
-SS pe
-~ a . ~
-- . oom
-> - =
-- «
-- . ~~ a ~~
-e - ~~. ~
-— — ~
-~- ~
-~ * -
--- sabe
-as. :
-= ~ —-
-—-- = -
-by -~
-
-~ —
-. - - va
-_— =.
-— = oe
-: a 4
-- — oe
-- - we
-~ — = od
-—~ . -
-« - "-
-- \-
-~
-a = - -*
-- ~~. "-
-* cere am - 7
-~ Ee. ><
-- ye ' - 5
-. * ~
-a ad -
-- Sass .
-a ~ _
 c t= a
--_ a."
-.
-- -_- ome a
-~~
-*y -
-2 ~
--_ 7 -
-~~ ~
+
 = - ol a
-=~ -
-= —
-ad
-—— ae °
-~ < ray, -.>
-~ a —
-- -~ —_ - *
-- ~ -
--
-=~ -
--
-
-os ge pe Ot PEAS
-
-me —- eee as nae - - =< = ——, - . nats - er - en ; - y ae: = f . ' e < Ss ate a 'aru - . « a ' 7 ™ 3 . .
-= i= "e-e an. acs ~ gt ie a lg Og Oe IE a . ~ Sg tl a EE a ay :
-Ae -y date Mend ~~ obo -— oe 3% ne " oF ; : > ; eS ee, a paw ~~" ' nial Zz
-
-ae ae eS fn len aa ee eae Re Sy ae nS tie Re eh meat gS ie LT te 8 —_~
-
-?
-
-wee a4 C2
-
-i ee
 
 ee 8 eee =
 
-aa hi Py}
-
-om me ne ed Pe
-
-W-
-
-"
-
 Audel's New Electric Library
-
-### ELECTRIG
 
 ### DIG F ON ARY
 
-### CYCLOPE DIA
-
-### OF WO
-
 ### FUNDAMENTAL
 
-### PRINGIPLES
-
 AND RULES oF
-ELECTRIGITY
-MAGNE TISM:
-
-noe : FLEGTRIG °
-3 4 REFRIGERATION
 
 | DYNAMOS
-D -G°MOTORS
 
 ### CONSTRUCTION
 
 ### INSTALLATION
-
-### ENANCE
-
-eLectric
-RAILWAYS iz
-
-### GURRENT
 
 ### PRINCIPLES
 
@@ -236,20 +40,9 @@ ano DIAGRAMS
 
 ### POWER
 
-: See ae : FAGTOR
-SO REE ALTERNATORS
-
-### MAINT ENANGE
-
-ae ERTERS
+### SO REE ALTERNATORS
 
 ### ES FUSES
-
-ee
-
-### REGULAT
-
-### RECTIFIERS
 
 ### METERS
 
@@ -266,24 +59,12 @@ clock.
 
 ### LUMEN
 
-| LUMEN p a4 LUMENS®
-
-¥
-
-e
-@
-e
->
-
 | FOOT CANDLE
 
 7a , Ya FOOT CANDLE
 a LUMENS ; v a | PLL TEN
 
 "4 + FOOT coNDUES _ Se
-"4°SQ FT.
-
-Ae
 
 Fics. 8,392 to 8,400.—Diagram showing the difference between lumens and foot candles. A
 light source of one candle power in a particular direction will produce one foot candle of
@@ -291,12 +72,9 @@ illumination on a point one foot distant from it. One lumen of light flux will i
 square foot of area to one foot candle of illumination. The product of foot candles and the
 area in square fect lighted will give the lumens of light flux on that area.
 
-ae
-
 ### DEDICATED TO ELECTRICAL PROGRESS
 
-ODEX
-NEW '
+### NEW '
 
 ### ELECTRIC
 
@@ -329,29 +107,6 @@ of applied electricity.
 THEO. AUDEL & CO.. PUBLISHERS
 65 WEST 23rd STREET, NEW YORK.U.S.A-
 
-"aid re Faye
-
-Mera A Scat OPW.
-
-HA LIS yA oe pA REE: PSO FH PERERA TIE
-
-a Wc
-A AY
-a :
-
-ek '
-oe
-
-*
-ve
-
-*
-
-pat '? ,
-mp 4 ES
-FA a
-iat ' aa A
-
 ### Foreword
 
 This series is dedicated to Electrical
@@ -364,8 +119,7 @@ force of the Creator.
 The Electrical Age has opened new
 problems to all connected with modern
 industry, making a thorough working
-knowledge of the fundamental princi-
-ples of applied electricity necessary.
+knowledge of the fundamental principles of applied electricity necessary.
 
 The author, following the popular appeal for practical
 knowledge, has prepared this progressive series for the electrical
@@ -376,8 +130,7 @@ their training and knowledge of Electricity.
 Simplicity 1s the keynote throughout this series. From this
 progressive step-by-step method of instruction and explanation,
 the reader can easily gain a thorough knowledge of modern
-electrical practice in line with the best information and experi-
-ence.
+electrical practice in line with the best information and experience.
 
 The author and publishers here gratefully acknowledge the
 hearty and generous help and co-operation of all those who have
@@ -414,37 +167,21 @@ The secret that took the whole year to find;
 The facts that you learned at enormous expense,
 Were all on a library shelf to commence,"'
 
-rebai OTB S ohh ersbsow
-
-oe @ preset age CO 8 me artes :
-eV Os AERA > 990 ETRE TR RENP: ARE A me Pee ee Do wee 5) eupetatee - A NOwty ee eagghalipas 08 Ti quan naps Sewer are eng Coho Bap Peng Pegg Cre eT eee ne =
+oe @ preset age CO 8 me artes
 
 5 is erie ee 5 Wepre ONG penal ON ge TN rte ge aN : ee We as a bad
 
 TAR 3 i 104 MI 1
 baci Josidus vas ov poleanolai bak viet, bas ylloinp oT
-— set surest oi) i nowode ex eunibaod 1siqeds tatonsy od} 197
-Yo nolies? meals Isedey oft oF neitaatie 2 "79b897.948 eyaind ait
-Aood airs ni ndijsertols
 
-ont anu fiw ashes oils 31 ladd on ,ovizaatyo1g ai 19tged> doad
+Yo nolies? meals Isedey oft oF neitaatie 2 "79b897.948 eyaind ait
+
 vibes Hiw od .veibnod totgrdo Istenay dos gaiwolle} oniltn
 9? doidw mo opaq or! bus betizob nossa wheal. od =
 
-# lsover ytoigp Hiw ti rabat airts yaiew Yo tidad oath. 19%)
-moBarn rola sidenlay re enim jen
-
-Hie oy ob Myscotd geal bhyow dood o Aton oak eA"
 CHUA OL tas shodos sbt dool fot lets od'T
 
 WiSAT> asmaetons by bots) soe wads aloo att
-~ YNTHETD OF Yokes Crowddl o wo Do sts H
-
-Readers' Intormation Finder. Vol. X
-
-### FINDER
-
-206 Electric Welding...............
 
 Definition and classification, 5,017.
 Source of welding current, 5,018.
@@ -473,8 +210,6 @@ Types of welded joints, 5,031.
 
 Butt and lap welds, 5,032.
 
-207 Gas Welding.................
-
 The gas method, 5,069.
 
 Gas welding outfit, 5,070.
@@ -487,8 +222,6 @@ Fluxes, 5,076. 7
 Setting up apparatus, 5,077.
 Approximate gas pressures, 5,078.
 Manipulation of the torch, 5,079.
-
-208 Pipe Welding.......
 
 Advantages, 5,092.
 
@@ -559,8 +292,6 @@ Methods of closing pipe.line for testing, 5,109.
 
 Readers Information Finder. Vol. X
 
-209 Soldering....
-
 Solder, 5,113.
 
 Tables, 5,114.
@@ -572,9 +303,7 @@ Tinning the bit, 5,119.
 Soft soldering, 5,121.
 Sweating, 5,124.
 
-" Electric resistance method, 5,125.
-
-210 Electric Heating.........
+Electric resistance method, 5,125.
 
 Heating units, .5,127.
 
@@ -596,14 +325,12 @@ Regulation of heat, 5,141.
 
 No:-metallic heating units, 5,143.
 
-211 Electro-Plating.........
-
 Definition, 5,145.
 
 Current supply for electro-plating, 5,145.
 Dynamo and dynamo sets, 5,146.
 
-Plating solutious, 5,149. |
+Plating solutious, 5,149.
 Properties of zlectro-plating elements, 5,152.
 Pickles and dips, 5,153.
 
@@ -625,22 +352,18 @@ Main conductors, 5,165.
 
 Motor dynamo connections, 5,166.
 
-212 Electrolysis.... .
-
 Definition, 5,189.
 
 Path of the current, 5,189.
 
 Oxygen and hydrogen, 5,189.
-Chliorates and hypochlorite, 5,191. :
+Chliorates and hypochlorite, 5,191.
 Sodium and potassium, 5,192.
-
-........Dyh45 to 5,188
 
 Dipping vessels, 5,166.
 
 Scouring, swilling and rinsing troughs, 5,169.
-Tumbling or rattling barrels, 5,170. ° :
+Tumbling or rattling barrels, 5,170. °
 Ball burnishing barrels, 5,171.
 
 Burnishing before plating, 5,171.
@@ -662,8 +385,6 @@ Galvanizing, 5,180.
 Electrotyping, 5,181.
 
 Chromium plating, 5,181.
-
-2.2... -5pl89 to 5,198
 
 Gibb's cell, 5,192.
 
@@ -692,8 +413,6 @@ Vacuum tube lamps, 5,212.
 Neon luminous tube lights, 5,217.
 Constant current series system, 5,220.
 
-214 Illumination.............
-
 Light, 5,227.
 
 Definitions, 5,227.
@@ -711,8 +430,6 @@ Glare, 5,239.
 Shadow, 5,240.
 
 Illumination of hor. and vert. surfaces, 5,241.
-
-...... Oy22l to 5,268
 
 Lighting calculations, 5,242.
 Calculation tables, 5,248.
@@ -736,11 +453,9 @@ Method of feeding control currents, 5,270.
 
 Resonant relays, 5,273.
 
-Resonant control unit, 5,275. |
+Resonant control unit, 5,275.
 Operation of resonant control, 5,276.
 Series system using constant current regulators, 5,277.
-
-216 Electric Bells.......
 
 Classification, 5,279.
 
@@ -798,18 +513,16 @@ Code calling system, 4, 316.
 
 718 Traffic Signals........... 9 319 to 5,332
 
-o Bs
-a : a Systems of traffic flow, 5,319. ee en ee ee, af £ bw ren
 Intermittent traffic flow, 5,321.
 
 Central control system with local manual control, 5,322. -s°- |: .
 
 - Semi-intermittent or semi-progressive traffic, 5,323. oe
 Continuous or progressive traffic flow, 5,323. or a ee ee
-' Traffic signal control apparatus, 5,323. os a ae ee
+Traffic signal control apparatus, 5,323. os a ae ee
 roe: Synchronous control system, 5,324. ro a ee
 Impuise control system, 5,325. oe Suck Eoly. iohe Saas
-_ Supervisory control system, 5,327. ee th anne apes oe cee
+
 'Timers, 5,330.. oe eee.
 
 219 Sign Flashers. . ee ce —
@@ -817,15 +530,15 @@ _ Supervisory control system, 5,327. ee th anne apes oe cee
 Classification, 5,333...
 
 ue: Se | Brush 'fldshers, 5, 334. _ 7° a. ut
-nae Me oe we ep . i: uta ye, 5
+
 . re », . Qn and off flashers, 5,334. Cl: Dipti.
 
 High speed and speller flashers, 5 335.
 Script flashers, 5,337. -
-Chaser'flashers, 5,338. .
+
 Combination flashers, 5,340.
 
-Control or master flashers, 5, 341. :
+Control or master flashers, 5, 341.
 Thermo flashers, 5,342.
 
 .» Neon,tube signs, 5,343.
@@ -838,7 +551,7 @@ sisssiaiaaeage piheeeankeneas 5,349 to 5,360
 The wiring, 5,349.
 
 Border diagrams, 5, 350. | Z
-Traveling borders, 5,351. ~
+Traveling borders, 5,351.
 Chaser diagram, 5,353.
 Kaleidoscopic effects, 5,355.
 
@@ -867,21 +580,19 @@ Direct expansion method, 5,391. Plate method, 5,408.
 222. Refrigeration Machine — peer Bee
 tion. ................. _5,ALL to 5,422
 
-| "Smal compression plant operation, 5,411 to D, 416.
+"Smal compression plant operation, 5,411 to D, 416.
 
 'Compression plant diagram, 5,412.
 
-Absorption plant operation, 5,416 to 5,422. an: ;
+Absorption plant operation, 5,416 to 5,422. an:
 =r plant diagram, 5,416. pee
-
-»  Sy423. to. 9,450
 
 223 Domestic Refrigeration a
 
 Sets 2G
 Ree 5,423.
 Compression systems, 5,423. e syed oe
-Methods of heat, transfer, 5,424. |
+Methods of heat, transfer, 5,424.
 Compressors, 5,424. alt
 Condensers, 5,425. oe
 
@@ -898,7 +609,7 @@ Service instructions, 5,440 to 5,450.
 SCG OD LS | eae 7 OREL
 224 Domestic Oil Burners..........5,451 to 5,478
 
-Effect of grade of oil, 5,451. | os :
+Effect of grade of oil, 5,451. | os
 Classification, 5,452.
 
 Gravity feed vaporizing burners, 5,453.
@@ -915,10 +626,6 @@ Furnace design, 5,464.
 Automatic control, 5,465. .
 Ooderation of control system, 5, 468.
 Storage of oil, 5,475. | | oo
-Insta!lation notes, 5,475. es eee
-
-"a «
-Cc.
 
 tol
 
@@ -948,9 +655,6 @@ Muffled exhaust, 5,516. Wind mill electric plant, 5,529.
 Control, 5,517. Turbine dynamo set, 5,532.
 
 an een
-ets cn
-
-227 Hydraulics.....................5,533 to 5,
 
 Water, 5,533.
 
@@ -964,7 +668,7 @@ Lift, 5,541.
 228 Elementary Pumps............5,545 to 5,558
 
 oy Classification, 5,545. Ye ENC eae: 3 BES
-| Lift pumps, 5,545. |
+Lift pumps, 5,545.
 Force pumps, 5,546.
 Single acting force pumps, 5,548.
 Double acting force pumps, 5,550.
@@ -979,22 +683,15 @@ Horse power absorbed at the water end, 5,556.
 Electrical horse power, 5,556.
 Electric pumping calculations, 5,557.
 
-229 Power Pumps......
-
-RNefinitions, 5,559.
 Classification, 5,560.
 
 Drive or transmission, 5,564.
 Multi-cylinder pumps, 5,566.
 Electric motor drive, 5,569.
 
-230 Water Supply...........
-
 Wells, 5,589.
 Water supply systems, 5,590.
 Small pumps, 5,592.
-
-231 Air Compressors...
 
 Compression of air, 5,603.
 
@@ -1010,8 +707,6 @@ Wet and dry compression, 5,609.
 
 Single stage and two stage compressors, 5,610.
 Inter-coolers, 5,612.
-
-232 X-Rays................
 
 Production of X-rays, 5,631.
 X-ray tubes, 5,631.
@@ -1035,8 +730,6 @@ _.... . 5,589 to 5,602
 Points relating to pumps, 5,597.
 Water wheel and hydraulic ram, 5,598.
 Pneumatic system, 5,600.
-
-........dy603 to 5,630
 
 After coolers, 5,613.
 
@@ -1075,8 +768,6 @@ The term pole, 5,666.
 
 Irritation, causes of, 5,666.
 
-234 Resuscitation...........
-
 Prone pressure method, 5,680.
 Gas poisoning, 5,685.
 
@@ -1088,69 +779,24 @@ Electrodes, 5,670.
 
 Ultra violet therapy, 5,671.
 
-.......dy679 to 5,690
-
 Drowning, 5,688.
 Electric shock, 5,688.
 
-a8s .¢ od — ne ae age Ge We Vel. te Ss _ eqgmu ; j
-
-O86 vaginas ict aro | = | 086.8 wnoitiaitof I
-
-Raver dies raise: paoryal: hao oS HOE ef
-ny u.0 AOE Joaiau gogo re eink $ou, a 3 wbteeinisoer 10 8vit]
-
-; OG eqang Isquitunso : 06,2 aaaruq 4obnilyo-isiuM
-PSE 2 ornate ALD sguie-iioM |. LA2,¢ yp Tajem ona
-
-$09.8 of OBE2................ +. elqqiud teteW OFS
-
-STOEL aqanry wnitaion aired .06c.¢ .ellsW
 OaA@ oot abwwinad bive faa sep W Oa .3 aoe viqque lend
 ARE a iat Se seerea ,
-Ors, ¢ oF B00 64 Cam » ° @ * (. & & ene — IA IES
-aoe 7 Le a ; ee _ a
-| gras etoloos 19stA oe '£00.8 118 10 noizesmqmoD
-$18,8 Ut aaffte shismasloY £08, 2 Pores 'sched bas s'olyoH
-eld,e c "P SyiBLgET § sEe297F - Fgh | YO8,2 , tis 991
-Jee don. gots i: ie dusse acisurosy&. TOR, a AOIBEOHTMNOD tie to Jas
-7 188,28 vsebaolnl] .800.€ . 186d Yo notice tx
 
-a OG MOOS bang, trigiemno 008.2 Lapel baidetien sshd
-fo 8 ec@nnaog sgete soulT ™ .
-'eee. ae L6H tae. lowiaos avoies¥
+Jee don. gots i: ie dusse acisurosy&. TOR, a AOIBEOHTMNOD tie to Jas
 
 beg, oF rae. pater eee ene eee  BYBHHAK SES
 
 a Laid nheag 2. ealduew elit | | [83,8 ,aysi-% to noisou borT
 .2b0.6 .exdiy) of anitelox arnt - . [80,42 ,esdaut yar X
-LES adel vqstads quatt £0.02 .garisot to bodisM
 
-869.0 Jared JanisRe mottasion 08.38 .1sisw diw gatlooD
-SO0.4 ,wogoTIe Boingo Pe .869,.2 ,coiJeitsqo sduT
-06,0 .2geroibeh .Th8,2 ,eruisiq Joga iso0T
-
-Moa es fo age BARE ty 5,558
 849.2 of 820,¢.......... .2oldueqsterlT-ortoeld SES
-
-66,8 donigsors viaonus wwindioe .€68,2 ,aovinitsd
 
 38.2 otiedisib lsatbaht 280.2 ,bagolgm etnsnar to ebaidt
 
-ROS,8 wortaridedts isgiguad.. C8G,¢ eure?) oxstiov wot yl etasnuw
-
-OSG.¢ .sebougall b80,3 3 wronud svsaw yotsiliaeO
-
-AVES eyqeiadd jokey wie 008,48 , slog rrr) sf T
-
-ce he Shs 803.2 to ese ,aoiistimd
-
-G6€9,2 of Ct0.g................. .coKetiogueeAl AES
-ee eae aineortt 8G,0 J Nordtony SU LOETRY snort
-
 iat, sins orto hd .gninngiog seo
-
-Electric. Welding 5,017
 
 ## CHAPTER 206
 
@@ -1183,31 +829,23 @@ c. Line or seam;
 . d. Tube;
 etc.
 
-5,018 Electric Welding
-
-4. With respect to the method of bringing the metals to-
-gether, as
+4. With respect to the method of bringing the metals together, as
 
 a. Compression;
 
-b. Autogenous.
-
 5. With respect to the method of applying the Baas metal"
-as by
 
 a. Carbon arc with welding rod;
 
 b. Metallic arc.
 
 Source of Welding Current.—Any electric circuit of suitable
-voltage and amperage, either a.c. or d.c. may be used for elec-
-tric welding. Usuzaily in order to keep down the losses involved
+voltage and amperage, either a.c. or d.c. may be used for electric welding. Usuzaily in order to keep down the losses involved
 in reducing the voltage to that required by the arc, a ——
 low voltage dynumo is used.
 
 Two types of dynamos are generally used:
 
-1. Constnt voltage,flat compounded;
 2. Variable voltage.
 
 The constant voltage machine can be used to supply welding
@@ -1240,8 +878,7 @@ For metallic arc welding by the hand method, the usual range of arc cur-
 automatic metallic arc welding, a current range of from 75 to 400 amperes is
 used with an arc voltage varying from 16 to 25 volts.
 
-Carbon Arc Welding.—In this method of welding the elec-
-trode is of carbon or graphite and merely creates the arc and
+Carbon Arc Welding.—In this method of welding the electrode is of carbon or graphite and merely creates the arc and
 melts the metal.
 
 Into this puddle of molten metal is inserted a rod or metallic stick which
@@ -1266,14 +903,11 @@ causes a smal! part of the work being welded to melt almost instantaneously,
 and an intermittent flow of metal across the arc stream.
 
 The metal in the arc stream is in both the liquid and gaseous form, the
-liquid metal being transferred across the arc by molecular attraction, adhe-
-sion, cohesion, surtace tension or a combination of these.
+liquid metal being transferred across the arc by molecular attraction, adhesion, cohesion, surtace tension or a combination of these.
 
 The transfer of metal is not dependent on gravity since overhead welding
 indicates that the transfer of metal can be accomplished against the forces
 of gravity. The meta! is melted at the point where the arc strikes the plate
-
-5,020 Electric Welding
 
 or work: causing a crater to be formed, which also provides a means of
 observing the penetration and consequently good fusion while welding, by
@@ -1281,37 +915,21 @@ noting the depth of the arc crater. Metallic arc welding is a widely used
 
 method.
 
-_ The Electric Welding Arc.—An arc is formed by —_
+The Electric Welding Arc.—An arc is formed by —_
 flowing across a gap in an electric circuit.
 
 - A small amount of the material, forming the ——e of
 the arc gap, is heated to an incandescent vapor. This vapor
 aliens the ania medium in 1 the arc. stream :by! jean
 
-ery a nes
-
-nn:
-
 tisctrode —
 
-: ae Ae!
 Are Flame .
 '. Are Core
-" ion oy : ' Pee Depasited ; | ee cles
-ae os Metal : Arc Strearh , _
-oe oh ; rae i es asi
+
 re - Arc Flame.
 
 ear oe
-
-— = ae = ; a d Pe a ss
-ree. Renetratiot oi Bbuve
-
-Sahl oe ter
-
-HR ARO Re oe tee Wea, Ae ees :
-we wr ee | ES EY
-Work Piece Oe te . a Oey DOs
 
 Fic. 7,972.—The welding arc. The terminal from which the current passes to the arc 1s. termed
 the positive electrode or the anode, and the terminal to which the current passes trom the arc is
@@ -1319,8 +937,7 @@ called the negative electrode or cathode. Although the exact distribution of bea
 
 . between the two electrodes 1s;still unknown, it is the generally accepted theory that Approx.-
 
-. imately two- thirds, of the heat is liberated at the positive terminal and one-third at the paega-
-tivé terminal. When d.c. is used, one terminal remains positive continuously and che greater
+. imately two- thirds, of the heat is liberated at the positive terminal and one-third at the paegativé terminal. When d.c. is used, one terminal remains positive continuously and che greater
 portion of the total heat is 1iberated at this terminal. When a.c. ts used; the terminats are
 alternately positive.and negative SO that approximately the same amount of heat 1S. taberated
 
@@ -1335,8 +952,7 @@ be distinguished from one another. The center 1s usually referred to. as the
 
 Electric Welding = —'5,021
 
-" arc core, and some observers are able to see that this is divided into two por-
-tions designated as "'arc core" and "'arc stream.'"' In general, this portion
+arc core, and some observers are able to see that this is divided into two portions designated as "'arc core" and "'arc stream.'"' In general, this portion
 of the arc will usually be seen as greenish in color, of comparatively small
 diameter, and forming a direct line between the two terminals.
 
@@ -1354,14 +970,12 @@ constant motion, being easily deflected by magnetic fields caused by the
 current in the electrode and in the plate, and also by drafts which may arise
 by reason of the heat i in the arc, or by exposure to wind, etc.
 
-Polarity Since the mass of the work to. be. welded is gen-
-erally large in comparison with the mass of the electrode, it is
+Polarity Since the mass of the work to. be. welded is generally large in comparison with the mass of the electrode, it is
 desirable to have more heat liberated in the work to bring its
 temperature to:the fusing point at the same time that metal
 is fused and deposited from the electrode. For this reason,
 d.c. is much more satisfactory for arc welding, since the work
-can be supped with a greater amount of heat from the elec-
-trode simply. by using it as the positive terminal. However,
+can be supped with a greater amount of heat from the electrode simply. by using it as the positive terminal. However,
 in some cases involving the welding of certain alloy steels and
 a few other metals, it is sometimes desirable to reverse the
 polarity and make the electrode positive.
@@ -1374,14 +988,12 @@ it possible to maintain an arc with any degree of certainty, it is necessary to
 
 insert a large amount of ballast, either in the form of resistance or reactance;
 
-_ that is, the open circuit or impressed voltage on the welding line must be of
+that is, the open circuit or impressed voltage on the welding line must be of
 a relatively high value compared with that necessary if d.c. be used.
 
 a If resistance be used for the ballast, there is a great waste of power.in the
 _resistor, and if reactance be used, the excess voltage will be consumed as a
 'reactance drop, resulting in low power factor for the equipment.
-
-5,022 Electric Welding
 
 The polarity of a circuit can be determined in a number of
 ways.
@@ -1399,21 +1011,7 @@ Electrode |
 
 Arc Crater |
 
-, ogee
-= Ce e° a pr fe L res . 5 ov. eh EE a
-
 , EDT Msg teh EH ys SUES aT 8 OMS ZZ INN
-
-' »" e hy ce s e ae fe. . 7 . oad Suet ey es @e an ae — >) « s
-1 Sere Stee Sey j : ¢ Se
-is . - S.@ oe ® es e ee ' e e "ee © -—— S
-
-' oe fe 8 fe ge et bs Se er we ® o¥ o- e
-"ef, 08 ose i cce * ote * @ * aa
-
-®
-?. eo eo e@ ®
-Cy Pere A ee a, Bee Oe te Be ke) ee
 
 Fics. 7,974 and 7,975.—Longitudinal section of deposited metal showing penetration and arc
 crater. Correct penetration will make certain that the metal of the plate is melted and in
@@ -1431,15 +1029,12 @@ assuming that current, polarity and speed of travel are correct,
 the metal is melted and seems to be forced out of the pool by
 some sort of a blast from the arc, as shown in figs. 7,973 to 7,975.
 
-Electric.Welding 5,023
-
 This results in the metal piling up around the edges of a small depression
 in which the metal is in a molten state. This depression is referred to as the
 arc crater, and its depth provides a means of observing the penetration
 during welding, and, to a certain extent, of predicting the soundness of the
 weld, since one requirement of a weld is to obtain good penetration. The
-crater depth will depend upon the thickness of metal welded, but, in gen-
-eral, should be at least \%& in.
+crater depth will depend upon the thickness of metal welded, but, in general, should be at least \%& in.
 
 Length of the Arc.—While the correct arc length alone will
 not insure good welds, it 1s agreed that a long arc is almost
@@ -1448,8 +1043,7 @@ certain to result in a poor weld.
 With a short arc, the heat 1s concentrated on the plate, whereas, with a
 long arc, a great deal of it is lost into the surrounding space.
 
-A long arc is not as stable as a short one. It tends to wander over a con-
-siderable area on the plate and the arc flame blows about very rapidly.
+A long arc is not as stable as a short one. It tends to wander over a considerable area on the plate and the arc flame blows about very rapidly.
 This action, however, together with the greater length of the arc, affords
 considerable opportunity for the air to come in contact not only with the
 metal passing from the electrode to the plate, but also with the very hot
@@ -1459,24 +1053,22 @@ nitrogen, both of which are detrimental to the quality of the weld.
 With a short arc, the flame, consisting of vapors coming out of the arc,
 acts as a protection and largely prevents the absorption of these outside
 gases. A short arc will deposit more metal in the weld, at the point needed,
-than a long arc. |
+than a long arc.
 
-The following table of arc lengths gives the approximate de-
-sirable gaps for different electrodes and voltages.
+The following table of arc lengths gives the approximate desirable gaps for different electrodes and voltages.
 
 Table of Arc Lengths
 
 Size of Electrode Voltage across the Arc Arc length
 lie 15 to 17 Ke
-Yh, %& 17 to 20 yy
+
 346, 14 18 to 25 at
 
 Advantages of the Short Are
 1. Maximum penetration;
 2. slight overlap;
 
-3,024 Electric: Welding
-3. Maximum strength; | - oe |
+3. Maximum strength; | - oe
 4. Maximum ductility; 7
 5. Minimum porosity; oO
 
@@ -1487,27 +1079,14 @@ ec cee"
 SSTES ISIS TO oe koe
 ote tee e oete
 
-e
-Coe P80 6
 reed eee
 
-e
-eae ee, geet terete
-e oy eee e Sve AAAS oe
 Ooo tte tecce?
 
-ee *,
 etc e ee Let ess
 
-APS es
-cnt Contec eceeeeae
-PS a
 wes oteteetetccnetees.
 eee ese
-
-Saeed cae, , , , | Fr eee
-
-| x feds zy ;
 
 Fics. 7,976 and 7,977.—Judging the arc length, 1. By appearance of arc. If the arc be short
 it will zppear as in fig. 7,976. Here the molten metal X, passing through the arc, will appear
@@ -1516,30 +1095,16 @@ long, the protecting neutral flame.Y, will whirl around. exposing first-one side
 
 other side of the molten metal, as in fig. 7,977, allowing it to become oxidized, and it wili have
 
-a burnt and porous appearance when deposited. The bead will not have the same appear-
-ance as one made with a short arc.
+a burnt and porous appearance when deposited. The bead will not have the same appearance as one made with a short arc.
 
 Disadvantages of the Long Arc' ° —
-1. Minimum penetration; :
-2. Excessive overlap; | |
-3. Minimum strength: |
+1. Minimum penetration;
+2. Excessive overlap; |
+3. Minimum strength:
 4. Minimum ductility; 00 6 you. ope -
 o. Maximum porosity; 4
 
 6. Uncontrolled deposit:
-
-'
-i
-;
-i
-(
-
-|
-|
-|
-|
-
-Electric Welding 5,025
 
 7. Excessive waste of electrode material;
 8. Burns out all the alloys in a high grade electrode.
@@ -1556,27 +1121,22 @@ at intervals of from 14 to 14% seconds, the arc is too long.
 A short arc throws a steady shower of small sparks, whereas each of the
 explosions caused by the long arc scatters many larger globules of metal.
 
-Fics. 7,978 and 7,979.—Judging the arc length, 2. By appearance of the weld. Good pene-
-tration of.the welding metal into the parent metal is not obtained with a long arc and there
+Fics. 7,978 and 7,979.—Judging the arc length, 2. By appearance of the weld. Good penetration of.the welding metal into the parent metal is not obtained with a long arc and there
 will be a bad overlap, as in fig. 7,978, while if the arc be short, there will be good penetration
 and a slight overlap, as in fig. 7,979. Another way to determine if the arc be too long is to
-examine the crater or depression in parent metal on breaking the arc, and see what the pene-
-tration looks like. If there be no penetration in the parent metal, then the are is too long,
+examine the crater or depression in parent metal on breaking the arc, and see what the penetration looks like. If there be no penetration in the parent metal, then the are is too long,
 — of course, the Proper Gecnoce, current and correct polarity are used.
 
 Figs. 8,024 to ov will further assist in judging the length
 of the arc.
 
 Metallic Electrodes.—In general, the metallic electrode for
-welding the commercial grades of wrought iron, plate, struc-
-tural and cast steel, and to.a considerable extent of cast iron,
+welding the commercial grades of wrought iron, plate, structural and cast steel, and to.a considerable extent of cast iron,
 should be a high grade of low carbon steel wire which has a
 carbon content of .20% or less. Practically all commercial
 electric welding wire on the market meets this requirement,
 although there are a number of special electrodes containing
 greater amounts of carbon, which are used.for special purposes.
-
-5,026 Electric Welding
 
 The medium and high carbon steel electrodes are used where a hard
 deposit is required, but are not generally satisfactory where strength is
@@ -1587,71 +1147,18 @@ unsuitable for electric arc welding.
 The electrode wire should be cut into pieces convenient for
 the operation.
 
-|
-|
-|
-|
-
-: og KP Bie
-Sper i:
-ie
-3 'Dae
-
-: " ;
-- Bs
-ok.
-¢ Rb
-& |
-> *
-a
-' ;
-
-e
-
-ie
-P \
-aw Be er
-Pa . . a .
 eee os
-\ s " ae he Pe
-~ ' ere be
-> S ~~ - oxy ~ 'i
-PATO ps "eh ;
 
-F es
+' ere be
 
-f
-
-, id
 fis
 
-§
-
-4 ¥
-
-; , ; ' "g
-% 7 *
-
-' 7 f 'J %
-
-e PSs %
-
-\ " %
-
-' m
-> +, * r
-be
-Ces, :
-
 Fic. 7,980 .—General Electric portable gas engine driven arc welder. The dynamo is self-excited.
-A self-adjusting stabilizing reactor automatically steadies the arc under all welding condi-
-tions, making the arc easy to start and maintain.
+A self-adjusting stabilizing reactor automatically steadies the arc under all welding conditions, making the arc easy to start and maintain.
 
 A length of 14 to 18 in. is satisfactory, since it is about the greatest length
 an operator can handle; at the same time it reduces the number of times the
 electrode is changed, and consequently the wastage.
-
-Electric Welding 5,027
 
 With an electrode which is red hot, it 1s impossible either to
 start an arc or to maintain it.
@@ -1665,22 +1172,16 @@ portion carrying current is all consumed before it has time to become too
 hot for use. With lower current values, the electrode 1s gripped at the end
 to save time and to minimize the number of times the arc is interrupted.
 
-Welding Currents.— It is difficult to give universally appli-
-cable figures covering current, speed, etc., for electric arc weld-
-ing because of the effect of conditions under which the work is
-done, the character of the work, and the varying skill of op-
-erators.
+Welding Currents.— It is difficult to give universally applicable figures covering current, speed, etc., for electric arc welding because of the effect of conditions under which the work is
+done, the character of the work, and the varying skill of operators.
 
 The following figures for bare metallic electrodes, are based
-on favorable working conditions and a skilled operator. How-
-ever, they are approximations only and are given merely as a
+on favorable working conditions and a skilled operator. However, they are approximations only and are given merely as a
 general guide.
 
 Electrode Amperes Corresponding
 Diameter Hand Plate Thickness
 in Inches Welding in Inches
-
-le 50-100 Up to %
 
 36 100-150 Up to 4
 
@@ -1692,16 +1193,12 @@ ye) 150-200 Above 14
 
 M4 225-400 Above 3%
 
-NOTE .—Defective electrodes.—Occasionally electrodes will be found that are not uni-
-form as evidenced by the fact that, at intervals, the arc will suddenly become wild and erratic
+NOTE .—Defective electrodes.—Occasionally electrodes will be found that are not uniform as evidenced by the fact that, at intervals, the arc will suddenly become wild and erratic
 and the metal may pass from it in large drops without any apparent change in the electrical
 conditions or in the manipulation of the electrode by the welder. It is probable that at points
 in the weld where this action has taken place there will be weak spots with poor penetration.
 If a strong weld be desired, such an electrode should not be used, and metal deposited under
-these conditions should be chipped out before proceeding with the weld. Electrodes con-
-taining a considerable amount of carbon are generally erratic in this way.
-
-5,028 Electric Welding
+these conditions should be chipped out before proceeding with the weld. Electrodes containing a considerable amount of carbon are generally erratic in this way.
 
 Position of Work.—There are three general positions of work
 to be welded. | od
@@ -1715,7 +1212,6 @@ oe Inclined. :
 Flat indicates that the surface on which the weld is made is horizontal;
 'vertical that it is vertical; and inclined indicates an angle, not a nght angle,
 
-pt ay
 Fic. 7,981.—Various positions of weld.
 
 to the horizontal. When inclined, the angle between the horizontal and the
@@ -1741,46 +1237,37 @@ Position of Weld.—There are four general positions of weld.
 WHERE STRENGTH |C_ YO) I
 IS REQUIRED '
 CLOSEO DOUBLE BEVEL |SINGLE FLANGE FLANGE SINGLE BEVEL
-2 SS |) ae | eee |
-eo HANO
-WELOED PLATES
+2 SS |) ae | eee
+
+### WELOED PLATES
+
 uP TO $ TK Inc. | C—O) C..... 4
 
 ### STRAPPED PARALLEL CLOSED DOUBLE BEVEL
 
-FORMS OF WELDS. _
+FORMS OF WELDS.
 yo REINFORCED, ,
 
 ### SINGLE BEVEL
 
-@
-ato FOR 4S5°ANGLE
 USE 75%0fF WORKING
 STRESSES GIVEN |
-ON $-144 2
 
 DOUBLE BEVEL °
 
 60 FOR 48° ANGLE
-USE 75Z%0F WORK-
-ING STRESSES
+USE 75Z%0F WORKING STRESSES
 
 GIVEN ON S$-1442.
 
 ### SINGLE V
 
-45°FOR T UP TO
-30FOR TABOVE i>
 eae,
 
 ### DOUBLE V
 
-45°FOR T'UP TO x
 SPECIFY ON DWG THUS # FILLET
 THIS WILL MEAN THAT DIM. A= 2
-
-TP sorron TABOVE #
-Pe eet ee ag
 
 ### INTERMITTENT
 
@@ -1788,26 +1275,16 @@ UITY, ALL INCREMENTS OF WHICH ARE OF EQUAL LENGTH AND EQUALLY
 SPACEO. LENGTH OF INCREMENTS (tv) ARE IN GENERAL NOT LESS THAN
 
 DOUBLE V STRAPPED V Gene WStAcey 27 3°.0R 6 CENTER TO CENTER DISTANCE (S)1S USUALL
-re a a F
-TOLERANCES
-Liz Sz
+
 ELD 5 EEE Cae a
-REE,
 
 Fics. 7,982 to 8,023.— Welding terms.
-
-PIPM 911199174
 
 AN fNTERMITTENT WELD 1S A STRENGTM WELD OF BROKEN CONTIN-
 
 sul
 
-6Z0'S
-
-5,030 Electric Welding
-
-A flat position is one in which the welding material is applied in a gener-
-ally downward direction.
+A flat position is one in which the welding material is applied in a generally downward direction.
 
 A horizontal position is one in which the welding material is applied to a
 seam or opening in a plate, the plane of which is vertical or inclined 45°, or
@@ -1828,18 +1305,17 @@ Type of Weld.—lIn general, there are four kinds of welds.
 : Tack;
 2. Strength;
 3. Caulking;
-4. Compcsite.
 
 Tack 'Veld.—In this weld the welding material is applied
 in smal! sections or spots to hold two edges together, and should
 alway, be specified by giving the space from center to center
-of welds and the length of each weld itself. :
+of welds and the length of each weld itself.
 
-It is not necessary to consider the design of the weld. A tack is also anid |
+It is not necessary to consider the design of the weld. A tack is also anid
 for temporarily holding in place material that is to be solidly welded, until
 
 the proper alignment and position are obtained. In this case, neither the
-length, space, nor design of weld need be specified. :
+length, space, nor design of weld need be specified.
 
 Strength Weld.—This is one in which the sectional area of
 the weld is sufficient to give the joint the desired tensile strength.
@@ -1849,8 +1325,6 @@ minimum. <A good welder should always be able to attain at
 least 100% strength. The welding material may be applied in
 any number of layers.
 
-Electric Welding 5,031
-
 Caulking Weld.—In this weld the deposited metal is used
 'to close a seam or opening so that no leakage occurs under a
 'water, oil or air pressure test of at least 25 lb. per sq. in.
@@ -1858,8 +1332,6 @@ Neither the ultimate strength nor the design of the weld 1s of
 particular importance in a purely caulking weld.
 
 ### SHORT ARC
-
-Mol (ea \-tou
 
 Fics. 8,024 to 8,027.—Short arc. From the globular formation it will be noted that the globule
 never 1s subjected to full heat of the arc, as it is in contact with molten metal in plate before
@@ -1882,22 +1354,18 @@ Types of Welded Joints.—There are six general types of
 joints that are used in commercial welding. These may be
 designated by the manner in which the joint is made as:
 
-5,032 Electric Welding
-
 1. Butt; 4. Strap;
 2. Lap; 5. Edge;
 Oe Ls 6. Plug.
 
-Butt Weld.—The two plates to be joined are brought to-
-gether, edge to edge, and welded along the seam thus formed
+Butt Weld.—The two plates to be joined are brought together, edge to edge, and welded along the seam thus formed
 
 Fics. 8,032 to 8,040.—Various types of welded joints.
 
 Two plates when so welded form a flat surface, or a corner, as
 shown in figs. 8,032 and 8,033.
 
-Lap Weld.—In this weld the edges of two plates are over-
-lapped, and the welding material is so applied as to bind the
+Lap Weld.—In this weld the edges of two plates are overlapped, and the welding material is so applied as to bind the
 
 Electric Welding —__-§,033
 
@@ -1912,8 +1380,8 @@ surfaces 1s re-enforced by a plate or strap of metal covering the
 joint and fillet welded to each of the adjoining surfaces, as in
 figs. 8,037 and 8,038.
 
-_ Itis, in reality, a re-enforced butt joint. Two aeitaabaer straps are used
-when a stronger joint 1s necessary. |
+Itis, in reality, a re-enforced butt joint. Two aeitaabaer straps are used
+when a stronger joint 1s necessary.
 
 Edge Weld.— Where two comparatively thin, parallel pieces
 are joined by welding the edges together, the edge weld is used,
@@ -1927,9 +1395,7 @@ The types of joint shown in figs. 8,032 to 8,040 may be made in a number
 of ways. The most useful and those most commonly found in commercial
 welding practice are shown in figs. 8,044 to 8,050.
 
-Expansion and Contraction.— While expansion and contrac-
-tion cannot be prevented, their effects can be minimized if cer-
-tain methods be adopted in arranging the parts preparatory
+Expansion and Contraction.— While expansion and contraction cannot be prevented, their effects can be minimized if certain methods be adopted in arranging the parts preparatory
 to welding, or by the order in which the deposited metal is
 applied.
 
@@ -1959,24 +1425,12 @@ Size of Fillet
 
 At 5000 Pounds At 11300 Pounds
 Per Square Inch Per Square Inch
-yx k 440 1000
 
-ieX is 660 1500
-Mx yo
-34 X
 lox
-34 X
-34 Xx
 
 *1Gs. 8,041 to 8,043.—Strength of welds. The table showing allowable strength of fillet welds applies to figs. 8,041 and 8,042. For
 figuring the strength of the butt weld shown in fig. 8,043, use the sectional area of the steel plate at a stress of 5,000 lbs. per
 sq. in. for dynamic or vibration load and 13,000 lbs. per sq. in. for static load in tension or 15,000 lbs. per sq. in. in compression.
-
-vEO'S
-
-SUIP[IAM I112991D
-
-Electric Welding. 5,035
 
 In the case of non-ductile materials and castings or large structures, where
 the contraction effects are liable to be cumulative and to distort seriously
@@ -1987,15 +1441,12 @@ When welding joints formed by plate edges, if the welding
 be performed by starting at one end of the seam and continuing
 
 Fics. 8,044 to 8,046.—Various types of butt welds. For thin plates up to }% in. in thickness,
-the plates are butted together at the end where the weld is to start and spaced apart a dis-
-tance equal to \ in. per ft. of weld at the other end as shown in fig. 8,044. This is to allow
+the plates are butted together at the end where the weld is to start and spaced apart a distance equal to \ in. per ft. of weld at the other end as shown in fig. 8,044. This is to allow
 for the contraction stresses set up as the weld progresses. Plates 1% to }4 I1n. in thickness
 are spaced a small distance apart at the beginning of the weld. This spacing varies from
 ly, to % in. When butt welds are made on plates thicker than 14 1n. some type of bevel or V,
 is necessary in order to obtain the proper penetration. Fig. 8,045, single V weld, the most
 common type; fig. 8,046 double V weld for heavy plate. L = length of weld.
-
-Ve, YL
 
 Fics. 8,047 to 8,050.—Various examples of fillet welds. Lap welds may be made with either a
 single or a double fillet as shown in 8,035 and 8,036. The fillets may be either the full thickness
@@ -2005,9 +1456,7 @@ either the single or double fillet may be used for welding two plates together a
 as shown in figs. 8,034 and 8,048. The double fillet, fig. 8,034 is always used when strength is
 required. Fillet welds are used in making strap joints, as in figs. 8,037 and 8,038. In fig. 8,049,
 a strap joint using both a fillet and a V weld is shown. A corner joint, used when welding
-heavy steel plate, is shown in fig. 8,050. |
-
-5,036 Electric Welding
+heavy steel plate, is shown in fig. 8,050.
 
 until the other end is reached, as in figs. 8,051 to 8,053, the
 opening at C, will certainly be drawn together as the welding
@@ -2021,7 +1470,6 @@ to distribute the heat and contraction stresses more evenly
 
 Approx. 2 Taper Per Foot on Each Side
 These Heavy Arrows Show Direction of Travel of Plates
-C Cc
 
 Tension
 
@@ -2032,37 +1480,28 @@ These Arrows
 |) | Forces Acting
 in the Weld Metal
 
-d
-.
-DO ORR ASE
+### DO ORR ASE
 
 Compression
-B B
-5 Approx. f
-y Ll.
-y 2 Tension
-A
 
-Fics. 8,051 to 8,053.—Locked-in stresses in a weld due to contraction. When the joint is com-
-pleted, the transverse contraction stresses along the joints will be greatly concentrated at the
+y 2 Tension
+
+Fics. 8,051 to 8,053.—Locked-in stresses in a weld due to contraction. When the joint is completed, the transverse contraction stresses along the joints will be greatly concentrated at the
 ends A and C. The stresses impair the quality of the weld and, in many cases, develop a
 fracture on cooling. When a fracture develops where this method is used, it usually occurs
 at the end where the joint is finished.
 
 throughout the joint, and thus reduce the amount of drawing
 and prevent concentration of contraction stresses. This order
-of welding is known as the step back method. |
+of welding is known as the step back method.
 
 When the parts are rigid and no allowance can be made for contraction,
 or when it is desired to minimize the drawing of the plates, the joint is
 formed by welding in the order as shown in fig. 8,055.
 
-Electric Welding 5,037
-
 When welding heavy sections, such as locomotive frame members and
 similar parts, it is advisable where possible, to spring the butting parts
-slightly preparatory to welding. Under exceptional conditions, an inter-
-mittent procedure may be adopted to prolong the operation and reduce the
+slightly preparatory to welding. Under exceptional conditions, an intermittent procedure may be adopted to prolong the operation and reduce the
 amount of heat developed in the object welded.
 
 As the distortion caused by welding is due to localized or uneven heating,
@@ -2070,14 +1509,10 @@ preheating may be employed to prevent this distortion, and thus reduce the
 difference in temperature developed between any two points of the parts
 affected by the welding.
 
->
-
-; Direction of Travel
+Direction of Travel
 : of Electrode
 
 ays
-
-### PEI DIRE DD DIDI DOD
 
 Fic. 8,054.—Step back method of welding to distribute contraction stresses. As shown the
 deposited metal is applied in sections. The sections 1, 2, 3, etc., are welded in numerical
@@ -2087,13 +1522,9 @@ should be finished at least flush before starting another.
 
 Cast Iron Welding.—A welder is frequently called upon to
 weld broken iron castings. Cast iron is difficult to weld by
-any process under the most favorable conditions and the re-
-sults obtained are more or less inconsistent.
+any process under the most favorable conditions and the results obtained are more or less inconsistent.
 
-5,038 Electric Welding
-
-This 1s due to the brittleness and low tensile strength of cast iron. How-
-ever, satisfactory welds can be made by the exercise of care in the selection
+This 1s due to the brittleness and low tensile strength of cast iron. However, satisfactory welds can be made by the exercise of care in the selection
 of welding equipment, proper electrodes and preheating the casting. There
 is nO means, however, by which the strength of the welded joint may be
 accurately predetermined and for this reason the work should never be
@@ -2108,8 +1539,7 @@ makes it possible for welding to be done in the annealed or softened section.
 
 Trave[ of Electrode
 
-Fic. 8,055.—Method of reducing contraction by locking up the stresses produced. When weld-
-ing long seams, the drawing may be reduced to almost nothing by the use of spacing blocks or
+Fic. 8,055.—Method of reducing contraction by locking up the stresses produced. When welding long seams, the drawing may be reduced to almost nothing by the use of spacing blocks or
 wedges placed in the opening approximately 18 ins. from the section being welded, and
 toward the end of the seam to which the weld is progressing.
 
@@ -2126,12 +1556,9 @@ commercially have been welded with varying degrees of success.
 Such metals are more or less difficult to weld with the electric
 arc, due principally to their low melting points.
 
-Electric Welding 5,039
-
 Brass.—lIt is difficult to weld brass due to the vaporization of the zinc
 content when subjected to the temperature of the electric arc. The addition
-of metal to brass can be done successfully, but the metal from a brass elec-
-trode cannot be added to parent metal of the same composition.
+of metal to brass can be done successfully, but the metal from a brass electrode cannot be added to parent metal of the same composition.
 
 Bronze.—This métal having a low percentage of zinc, can be welded
 without difficulty either by the metallic or carbon arc process, providing an
@@ -2154,8 +1581,7 @@ Preparation of the Work.—There are several factors which
 must be considered when preparing work for welding in order
 to get the best results.
 
-Provision must be made for expansion and contraction wherever pos-
-sible. The strength of the weld will depend on the correct beveling and
+Provision must be made for expansion and contraction wherever possible. The strength of the weld will depend on the correct beveling and
 spacing of parts to be welded. Uniform fusion is directly dependent on the
 proper beveling and spacing.
 
@@ -2171,19 +1597,13 @@ from the weld and to help make the operation of welding as easy for the
 operator as possible. Foreign matier ts usually a poor conductor of electricity
 and interferes with the control and manipulation of the welding arc.
 
-5,040 Electric Welding
-
-ea.
-
-The best possible fusion is obtained when welding in a down-
-ward horizontal plane position on a flat steel plate.
+The best possible fusion is obtained when welding in a downward horizontal plane position on a flat steel plate.
 
 It follows, then, since this is the easiest and best position in which
 welding is done, that when possible and economical to do so, arc welding
 should be done in the downward, horizontal plane position.
 
-When welding in this position the welding wire is held approximately per-
-pendicular to the face of the plate. It is necessary to bevel the abutting
+When welding in this position the welding wire is held approximately perpendicular to the face of the plate. It is necessary to bevel the abutting
 edges of plates or sections, except on sections }4 in. thick or less, to approach
 this position.
 
@@ -2197,8 +1617,7 @@ type would, however, be prohibitive. It 1s readily seen that a much smaller
 included angle will serve the requirements.
 
 Another fundamental of good preparation or joint design is
-to keep the cross section of the added metal as small as prac-
-ticable, so as to localize the effective heat in adjacent sections.
+to keep the cross section of the added metal as small as practicable, so as to localize the effective heat in adjacent sections.
 
 The accompanying examples figs. 8,057 to 8,064 illustrate the
 preparation of the most common joints of the butt type. The
@@ -2206,8 +1625,6 @@ same principles of preparation apply to other types of joints.
 
 Lessons in Metallic Arc Welding.— While learning to weld,
 the beginner will find it convenient to use a bench or table such
-
-Electric Welding , 5,041
 
 Fics. 8,057 to 8,064.—Preparation of joints for welding. A, very bad. Except on sections of
 14 in. thickness or less, this is a very poor type of joint where strength of weld is important.
@@ -2224,8 +1641,7 @@ This type of joint is good especially where more than one layer of metal is to b
 F, better. This type of joint satisfies all the requirements as to preparation for work welded
 on one side only; G, very good. This joint is better than the preceding one, and is applied
 on sections which are heavy enough to warrant beveling on both sides. The factors which
-influence the adoption of this type of joint are strength of weld required, thickness of the sec-
-tion, cost of preparation as compared with the reduced cost of welding and permissible
+influence the adoption of this type of joint are strength of weld required, thickness of the section, cost of preparation as compared with the reduced cost of welding and permissible
 warpage; H, very best. This type of joint satisfies the conditions as to arc manipulation and
 reduced section of weld. Warpage is also reduced, due to the fact that the force on either side
 is counteracted by the force of the opposite side.
@@ -2236,22 +1652,16 @@ the work to the extreme depth of the crack or flaw, so that it will be a solid s
 If this be done the unwelded portion may cause the casting to re-crack, when the added metal
 cools and contracts.
 
-5,042 - Electric Welding
-
 Standard Angle Iron Welded on
 Pipe Fittings Steel or Iron Plate
 to keep Plate in Position
 
 ae a on Pipe Framework
-, PP .
 
-Steel or lron *
+Steel or lron
 Table Top which
 y's Removable
 
-&
-
-Uy \ Heav
 Tack We ld
 
 CUD. Steel or
@@ -2263,16 +1673,8 @@ sufficient to carry the current. In many cases, a vise mounted on the table will
 desirable. If the work be too large for the table, it may be set beside the table and a bar laid
 across toit. This will provide sufficient current carrying capacity, provided scale and rust
 
-do not entirely prevent contact. " 4 |
+do not entirely prevent contact. " 4
 iS ~Fockets and Blow Holes
-
-e eto
-@
-
-eee Sh are od. Sey oa rd
-7 oe vs ~ Pree ye « we fe
-. er ee ere ~
-+e 6 .
 
 (a) Welding arc has traveled " NO FUSION
 
@@ -2282,17 +1684,7 @@ along too slowly ib) aia rs one 'al too
 
 TT, No Overlap
 
-: * s ee ce . ° Oh =, 7 . =
-e e. ra ogee 8 e © © ® . ee. rats ' ve 2 oY ' H 7 So .
-
-" aan eee fr ym" * mo ' oF oo . a7 : : S85 - es "a " See Woo ~ '
-
-© @ args sae oe ae : oe . < ry Raia. sa ads
-° o.ef eet . , . ee Z - Ve a t é e te ey —_— P
 e ~ . ' s f ee. . tat a. ry are ree 5
-oe e Ff etae J ° . '0 3 e . ERNE Val
-
-° «@ . as
 
 0 Penetration
 ds Satisfactory
@@ -2300,8 +1692,6 @@ ds Satisfactory
 Fics. 8,066 to 8,069.—Cross section of beads deposited under different conditions.
 
 (6) Not enough heat used (d) Weld which
-
-Electric Welding 5,043
 
 ias shown in fig. 8,065, with a steel plate top connected to the
 'ground lead.
@@ -2315,8 +1705,7 @@ Perpendicular to F
 Fic. 8,070.—Lesson1. Laying single beads. Runstraight, continuous beadsat least 12in. long. Do
 not let the arc go out while the bead is being run, except to change electrodes. Uniform
 width and height of bead. Proper penetration and nooverlap. Nosignsof porosity. Length
-of bead should equal the length of electrode wire used. Instructions: Take all the prelim-
-inary steps described before and strike the arc near the edge of the plate nearest the student.
+of bead should equal the length of electrode wire used. Instructions: Take all the preliminary steps described before and strike the arc near the edge of the plate nearest the student.
 Move the electrode slowly and steadily across the plate away from the operator, keeping
 both arc length and rate of travel constant.
 
@@ -2327,38 +1716,11 @@ For vertical and overhead welding, the plates can be attached to the
 bench top by short tack welds. A screen should be placed around the table
 to protect the eyes of others.
 
-It is recommended that the beginner use a hand shield during the exer-
-cises on metallic electrode welding, since it keeps the left hand occupied and
+It is recommended that the beginner use a hand shield during the exercises on metallic electrode welding, since it keeps the left hand occupied and
 prevents using the left hand as a brace for the right hand. Also, the shield
 can be quickly moved before the face, allowing the operator to direct the
 
-5,044 Electric Welding
-
-M byw
-
 Stseae
-ye
-
-a elas
-
-ae
-
-MOM It gf
-. ey 4 '4
-—s —-whnattrlddocdninijrieiasiil
-xz
-
-i
-t
-By
-SS
-;
-;
-:
-;
-t's,
-:
-Re:
 
 Fic. 8,071.—Pusition of welder when welding, showing shield, electrode, electrode lead and
 work table. The operator should try to assume an easy position in which the whole body is
@@ -2376,10 +1738,7 @@ deposited metal should meet
 all the requirements of a good
 weld, uniformity of height and
 width, regularity of ripples,
-good penetra.ion, and noover-
-lap nor signs of porosity .These
-
-Electric Welding 5,045
+good penetra.ion, and nooverlap nor signs of porosity .These
 
 [» electrode visibly, until the instant before it makes contact and strikes the
 4h) arc.
@@ -2395,8 +1754,7 @@ Perpendicular to Plate Sectional View Showing
 Beads One on Top of
 the Other
 
-Fics. 8,074 and 8,075.—Lesson 3. Three parallel beads in two layers. Current in arc, 50 am-
-peres. The reduction in current is because the conduction of heat into the plate is not as
+Fics. 8,074 and 8,075.—Lesson 3. Three parallel beads in two layers. Current in arc, 50 amperes. The reduction in current is because the conduction of heat into the plate is not as
 rapid, since the heat is applied to the top of a narrow ridge instead of the broad surface of the
 plate. A second layer deposited on each of the beads made in Lesson No. 2. Total height
 of completed beads, 4 in. Instructions: Use for practice the plates from Lesson No. 2
@@ -2420,16 +1778,11 @@ be deposited and to seal the crater properly. In making this weld, it wi'l L2 ne
 more tnan one electrode per bead. Each time the arc is broken to change the electrode, the
 arc should be recommenced according to instructions given in the section on deposititng metal.
 
-5,046 Electric Welding
-
 . proper distance of 1% in; the arc will have a very snappy sound like frying
 grease; a long arc will have a dead, sputtering sound.
 
 By using an electrode holder and electrode, but without any current, he
-_ can practice the motions of striking the arc. The hand shield should be used
-
-r -
-—
+can practice the motions of striking the arc. The hand shield should be used
 
 Flectrode Held
 to Plate
@@ -2439,13 +1792,11 @@ Path of Electrode:
 Section Through "A-A.
 
 ees
-QB,
 
 Section Through "B-B
 
 Fics. 8,076 to 8,079.— Lesson 4. Filling space between welds made in Lesson No. 3. Weld made
-in two layers. Same height as previous beads, leaving smooth surface. Weld must pene-
-trate plate below and into beads at either side to form a solid mass of metal, as shown in
+in two layers. Same height as previous beads, leaving smooth surface. Weld must penetrate plate below and into beads at either side to form a solid mass of metal, as shown in
 fig. 8,076. Instructions: Clean the surfaces where the weld is to be made by means of the
 scratch brush and repeat each time an electrode is changed. Fig. 8,077 illustrates the manner
 in which the weld is made. The path of the electrode 1s as shown. At the start of the weld,
@@ -2459,20 +1810,16 @@ completes the fill to the top of the parallel beads and gives a smooth finish to
 appearance of a section of the weld is shown in fig. 8,079. The type of bead described and
 used in this lesson is known as the zope bead.
 
-Electric Welding 5,047
-
 s° just as though an arc were to be struck, since the operator should form the
 4! habit of always covering the eyes before striking the arc. Repeated flashes
 
-" of the arc on the eyes, even though they are only momentary, will cause
-'4 eyeburn.
+of the arc on the eyes, even though they are only momentary, will cause
 
-| xecrg ,
 "SEE see] (y=
 
 'Fic. 8,080.—Striking the arc, 1. Insert an electrode wire in the holder, gripping it by the
-' middle. Adjust the current for about 125 amperes dead short when welding. It is possible
-' to determine the current with an ammeter by holding the electrode holder against the plate
+middle. Adjust the current for about 125 amperes dead short when welding. It is possible
+to determine the current with an ammeter by holding the electrode holder against the plate
 and reading the current. This value will be roughly about one-half more than when the arc
 is being held. Lay one of the exercise plates flat on the table. Take the welding position
 shown in fig. 8,071. Holding the electrode vertical, bring it to the point on the plate where the
@@ -2486,9 +1833,8 @@ will probably free it. If this fail and the electrode become red hot, the circui
 opened by opening the line switch, or by freeing the electrode from the holder, or by lifting
 the plate from the bench. On cooling, the electrode can be broken away witha hammer. The
 welder should practice starting 'the arc in this way, holding the arc a little longer time at each
-attempt, and moving it slowly over the-plate until he is able to start and hold the arc con-
-sistently. Move the arc straight along; do not try to spread the bead or to weave or impart
-a zigzag motion to the electrode holder. |
+attempt, and moving it slowly over the-plate until he is able to start and hold the arc consistently. Move the arc straight along; do not try to spread the bead or to weave or impart
+a zigzag motion to the electrode holder.
 
 Fic. 8,081.—Striking the arc, 2. This method is to avoid sticking. It consists in "'scratching''
 the electrode on the surface of the plate; The withdrawal of the electrode should be slower
@@ -2496,19 +1842,15 @@ than the rest of the motion. i
 
 The accompanying illustrated lessons by courtesy of
 the: General Electric Co., will be found to comprise an
-excellent course for the welding student. :
-
-5,048 Electric Welding
+excellent course for the welding student.
 
 Electrode _
 to Plate
 
 Held in Place
 — by Blocks.
-O
 
 ) wp Tack Welds
-ww
 
 Fic. 8,082.—Lesson 5. Laying three parallel beads, 45°. Instructions: Similar to Lesson No
 1. The plate may be rested against a brace or weldei to the bench top by a weld about \ in.
@@ -2520,25 +1862,12 @@ The arc must be kept short,
 or the metal will run, caus-;
 ing an uneven appearance.
 
-; |
-
-s & q"
-
-Ne
-
 Path of
-
-MMA
-AAS
-
-NN
 
 Closed
 
 Fics. 8,083 and 8,084.—Lesson 6. Straight butt weld method of making right angle butt weld in
 horizontal position. Good appearing weld, even across the top without bumps, craters, or
-
-Electric Welding 5,049
 
 Perpendicular:
 
@@ -2564,24 +1893,18 @@ the plates in welds of this type is }% in. per ft. length of the weld. At the be
 of the electrode will be a simple, spreading motion to distribute the heat evenly. As the
 plates become hot, the metal in the weld and at the bottom of the groove tends to fall or sag
 through. To prevent this, the amount of heat in the middle of the weld is reduced by moving
-the electrode farther up along the edge of the plates and making a more pronounced horseshoe-
-shaped path, the sides of the horseshoe being about *¥¢4in. long. The travel across the middle
+the electrode farther up along the edge of the plates and making a more pronounced horseshoeshaped path, the sides of the horseshoe being about *¥¢4in. long. The travel across the middle
 of the weld should be made faster, and that along the sides of the horseshoe, slower. In this
 way, the maximum heating is caused along the edges of the cold plate where good fusion is
-necessary. Do not run over the edges of the plates. |
-
-5,050 Electric Welding
+necessary. Do not run over the edges of the plates.
 
 Striking the Arc.—The principal precaution to be observed
-when striking the arc is to prevent freezing or sticking the elec-
-trode to the work. This 1s caused in the following manner:
+when striking the arc is to prevent freezing or sticking the electrode to the work. This 1s caused in the following manner:
 
 The electrode touches the work only on a small surface, a point, or sharp
 corner. The heavy current melts this and it sticks to the plate. More of
 the electrode melts and, as it 1s being pushed against the plate, the end of
 
-: | °
-Electrode Pointing paipprex.15
 at Slight Angle y
 Ahead of
 
@@ -2590,8 +1913,6 @@ Perpendicular |
 Line to Plate
 
 Path of Electrode
-
-Note:- Opening betwee
 
 A plates. at other end yy
 
@@ -2613,8 +1934,6 @@ just away from the plate. The electrode should be drawn back to the arc
 
 length somewhat more slowly than the movement in the first part of the
 action, as in fig. 8,080.
-
-Electric Welding 5,051
 
 Depositing Metal.—In advancing the arc, care should be
 taken not to move the electrode faster than it is possible for
@@ -2642,19 +1961,15 @@ Hole Burned
 Throug h Plate
 
 Excess (
-e
 
 Fics. 8,088 to 8,090.—Method of filling hole in butt weld caused by arc melting through
 
 Fics. 8,091 and 8,092.—Diagrams showing flow of welding metal when welding
 
-9,052 Electric Welding
-
 Electrode Half
 Perpend icular
 to Line of Weld
 
-\
 Tack Weld
 Both Ends
 
@@ -2674,28 +1989,18 @@ connie Line to Weld
 anne Held Titted at 15°
 cers of Perpendicular Line
 
-ae
-
-_\
-
 Showing
 Path of
-ue rode
 
-or
 Third & Fourth
 Layers of We id
 
 Weld in Direction of Arrow tee
 
-ms
-
 Fics. 8,094 and 8,095.—Lesson 10. Method of making 4-layer T weld in horizontal position.
 
 Tack Weld
 Both Ends
-
-Electric Welding 5,053
 
 the arc to melt a place on the plate for receiving the deposited
 metal. If the arc be moved too fast, the metal will be merely
@@ -2713,13 +2018,8 @@ rapidly will result in a bead somewhat higher and wider.
 Path Taken by Electrode Showing Electrode
 
 Always Slanting
-at Approx 15°Ahead
+
 of Perpendicular
-
-—[=[>=.
-
-<>
-— {5°Approx.
 
 Line to Plate
 
@@ -2729,12 +2029,10 @@ Welding Near Previous
 
 AS Parallel Beads. Electrode
 
-at Approx. 15° Ahead of Per-
-endicular and also Swing-
-ng Slightly as Shown, Upward
+at Approx. 15° Ahead of Perendicular and also Swingng Slightly as Shown, Upward
 
-| Toward ts eo Bead and
-(C y) oS Towards Lower
+Toward ts eo Bead and
+
 ead,
 
 Fic. 8,096.—Lesson 11. Method of filling in between parallel, horizontal spread beads on
@@ -2748,25 +2046,11 @@ small crater to a certain extent.
 These exercises should be continued until the operator is able
 to start the arc practically every time.
 
-5,054 Electric Welding
-
 Electrode Slantin
 Slightly Downward
 Towards Plate at
 
 Approx. 15° from
-
-ye Sk
-PPO rass
-Pe AES os
-
-Le
-Slt, — :
-yl Ag BY G
-
-ys
-
-oT
 
 Fic. 8,097.—Lesson 12. Method of building up a patch on a vertical plate working upward.
 
@@ -2777,27 +2061,22 @@ A Path of Electrode
 Porous
 Fics. 8,098 and 8,099.—Section of deposited metal showing penetration and crater.
 
-Electric Welding 5,055
-
-': Gradually increase the length of the bead and make curved lines, letters,
-/ etc., but do not weave.
+Gradually increase the length of the bead and make curved lines, letters,
+etc., but do not weave.
 
 Now, begin to examine the beads deposited while moving
 jthe arc along the plate, by comparing them with fig. 8,099.
 
 The'sound of the arc, and its appearance, both from the
-: standpoint of length and size, and also the size and number
+standpoint of length and size, and also the size and number
 of sparks, should be noted in connection with the appearance
 
 => eee —
 Z| Perpendicular
 — Line
 
-.f
-DL
 wrece
 
-Pointing at
 Slight Angle
 Upward
 Towards.
@@ -2813,8 +2092,6 @@ overlap, and good penetration.
 If a volt meter be connected to measure the arc voltage, it
 will aid to have someone watch this and report from time to
 
-5,056 Electric Welding
-
 time what the voltage is. It should be kept from 18 to 20 volts
 and the appearance under these conditions noted.
 
@@ -2824,7 +2101,7 @@ amperes in the arc, and then of 75 or 80 amperes.
 These currents will require increasingly greater steadiness of the hand,
 both in starting and in holding the arc after it is started. The observations
 above as to arc sound and appearance should be checked in each case against
-the appearance of the bead. |
+the appearance of the bead.
 
 Electrode Perpendicular to Plate
 
@@ -2832,8 +2109,6 @@ Start Are
 Here
 
 Approx.
-
-=
 
 Fic. 8,101.—Lesson 14. Welding around tubes. The weld should be made continuously in one
 direction as shown, from start to finish. Particular attention should be given to obtaining
@@ -2846,8 +2121,6 @@ ripples with no holes or spongy places.
 No large drops of metal should be outside the weld on the plate and, when
 the bead is chipped off, it should be necessary to cut it away the full width of
 the bead, thus showing that there is no overlap.
-
-Electric Welding 5,057
 
 It will be noted that wherever the arc stops, there is a
 spongy, porous spot in the crater.
@@ -2863,7 +2136,7 @@ against leaving a lump of metal on the bead.
 Fic. 8,102 and 8,103.—Lesson 14. Continued. Cross section of flue of locomotive showing
 method of welding tube to flue sheet.
 
-_ Strike the arc about 14 to 3% in. in front of the crater, and come back as
+Strike the arc about 14 to 3% in. in front of the crater, and come back as
 
 shown in fig. 8,098, holding the arc very closely, and then proceeding in the
 direction of the weld. The path of the electrode is as indicated in figs.
@@ -2873,17 +2146,11 @@ From point A, the weld should be continued at the normal rate.
 It can now be assumed that the welder is able to start an
 arc and to hold it uniformly for a short time.
 
-5,058 Electric Welding
-
 From this point on, the exercises will take the form of lessons on carbon
-arc welding as given in the accompanying illustrations with certain condi-
-tions specified, and certain requirements which are to be met by the fin-
-ished weld, before the student passes on to the next lesson.
+arc welding as given in the accompanying illustrations with certain conditions specified, and certain requirements which are to be met by the finished weld, before the student passes on to the next lesson.
 
-Lessons in Carbon Arc Welding.—A source of welding cur-
-rent is required which will deliver from a maximum of 400 to
-600 amperes down to a minimum of about 40. A carbon elec-
-trode holder and electrodes of various sizes are needed. While
+Lessons in Carbon Arc Welding.—A source of welding current is required which will deliver from a maximum of 400 to
+600 amperes down to a minimum of about 40. A carbon electrode holder and electrodes of various sizes are needed. While
 the hand shield may be used in cutting, it 1s necessary to use
 both hands for welding, and, therefore, the helmet must be
 used for the latter operation.
@@ -2892,18 +2159,12 @@ a io Path Taken by
 2 pe Electrode
 
 Tack Weld |] Teck Weld
-Both Ends | | : _
+Both Ends | | :
 
 Perpendicula
 to Top Plate
 
-< SY
-~ {
-&
-
 Fic. 8,104.—Lesson 15. Method of making an overhead straight butt weld.
-
-|
 
 Striking the Arc.—The carbon arc is very stable and easy to:
 maintain. The length can be varied over wide limits without
@@ -2924,32 +2185,13 @@ deposited in this pool. The arc should be kept at this point
 until the added metal is thoroughly melted and mixed with
 
 the original metal before more material is added.
-Q
-
-### GRA PH ITE
 
 !"Ciorm Negative
 
-ip a
-
-"iin fe
-
 if . -Arc Core, White
 Strear, Blue
-te
+
 fii? Arc Flame,
-poynrteYellow
-Mj ° ANAS ae oo
-
-.
-~
-—
-
-oe
-—
-
-—_
-———
 
 ### PARENT METAL
 
@@ -2962,11 +2204,7 @@ in Direction Indicated by Arrow
 
 Filler Rod
 
-(
-
 Fic. 8,106.—Direction of travel in making a carbon weld.
-
-5,060 Electric Welding
 
 The added metal is usually in the form of a long stick of filler rod held in
 the welder's left hand. When the pool or the work is ready, the end of the
@@ -2995,8 +2233,6 @@ heat spreads out too wide on the upper strip and causes the fusion of a wide are
 condition is found, increase the current and advance the electrode faster. Experience will
 show the best combination to use.
 
-Electric Welding 5,061
-
 The arc should be played about on the pool until the added metal is all
 melted down, when, because of the circulation caused by the heat, the
 molten metal will be well mixed. After this, the filler rod may be again
@@ -3004,73 +2240,26 @@ inserted in the pool, and the process repeated, advancing along the line of
 
 weld.
 
-actheg Fryvrry Aon og
-ea MANNED WUAMANES
-
-### ALAS YY
-
-'
-ry
-= =,
-
-\
-'
-ee .
-ye ' ;
-
-Oi» :
-Lge ee ~
-. : Dy '
-ye ae ae, ee
 eee. :
-/
-t
-r se
-,
-u a
-—x
-—:
 
-ad
 wvall mat
-\ weve
 
 atrete
-fi?
 
-ard 4 '
-lng rn ha
-~N '
-qe t)
-Wose ue
-Ste wR!
-t Lal
-
-——>
-NG 37 ' 3 a
-
-\ nae : '
-yy a oe ' '
 5 oN Sano as Coe a
-so cis es Se 'vy >
-/ y co Ny ae
-| f 6% x' aise bo
-, certs f ( r '
-Sas is ; ae Pd
+
 we coco ss epee Shite a A
 ses mye OE rene hee eyes
-a OAR CRORE bi ae
+
 Sane
 
-| NYC ACRES ALL
-N} WANN eg y
+### NYC ACRES ALL
 
 Fics. 8,109 to8,111.—A.E.F. spot welder dia-
 
 grams showing operation. 1. Pressing down
 on treadle brings welding points on work.
-This initial contact must press lightly to as-
-sure high resistance and heat generation at
+This initial contact must press lightly to assure high resistance and heat generation at
 point of weld, yet not too light to create air
 gaps. 2. Pressing further on treadle closes
 switch contact thus applying current.
@@ -3080,8 +2269,7 @@ Treadle continued downward to end of
 stroke, applying pressure to the then plastic
 metals, setting the weld.
 
-Position of Electrode.—In welding or building up, the elec-
-trode is generally held perpendicular to the surface of the plate,
+Position of Electrode.—In welding or building up, the electrode is generally held perpendicular to the surface of the plate,
 but is inclined ahead about 15° to the line of weld to direct the
 
 arc back into the weld.
@@ -3089,24 +2277,20 @@ arc back into the weld.
 Direction of Travel.—By welding from left to right, a right
 handed welder avoids awkward positions. The arc is directed
 
-5,062 Electric Welding
-
 backward into the weld, and the position of the arms and hands
 is comfortable.
 
-Resistance Welding.—The art of resistance welding was dis-
-covered accidentally by Prof. Elihu Thompson in Philadelphia,
+Resistance Welding.—The art of resistance welding was discovered accidentally by Prof. Elihu Thompson in Philadelphia,
 in 1885. While experimenting with a spark coil operated from
 a bank of batteries he accidentally welded two steel rods of
-about 14 in. diameter. |
+about 14 in. diameter.
 
 Carbon Electrode Held
 
 Perpendicular to Plate i. :Carbon Electrode fleld:
 Perpendicular to Plate
 
-Fics. 8,112 and 8,113.—Lesson 2. Cutting a steel plate wtth a carbon or graphite electrode. In-
-structions: First, melt away the lower part of the plate, and then bring the arc toward the
+Fics. 8,112 and 8,113.—Lesson 2. Cutting a steel plate wtth a carbon or graphite electrode. Instructions: First, melt away the lower part of the plate, and then bring the arc toward the
 top. This undercutting makes it easier for the molten metal to run out. It is particularly
 beneficial in cutting heavy parts such as castings, shafts, etc. It is often necessary to follow
 the molten metal down with the arc to keep it fluid until it runs off. The width of the cut will
@@ -3126,23 +2310,15 @@ There are several forms of resistance welding known as
 
 3. Spot;
 
-Electric Welding 5,063
-
-Each depends on the resistance offered by the metals in con-
-tact, to the passage of the current for the production of the
+Each depends on the resistance offered by the metals in contact, to the passage of the current for the production of the
 
 <—ELEMENTARY CIRCUIT— MECHANICAL PRESSURE
 
-]
 SPOT, BUTT AND LINE ————
 
 wn —_ TEMPERATURE } -
-5 ——>/ DEVELOPEO : 4 IP
-s — K< EK ference )
-od as
-. panel i) 6 6WATER
 
-I sgouee
+. panel i) 6 6WATER
 
 100 AMR AC. ie a ELZCTRODE
 LAMINATED COPPER ' FLEXIBLE COPPER MECHANICAL
@@ -3156,50 +2332,28 @@ metal; 3, cutting off the current before the mechanical pressure is released, so
 burning the die points. The spot welding process is also used largely in the manufacture of
 wire goods, such as lamp shades, wire cloth, screening, netting, fencing, and an endless
 variety of objects and utensils for various uses. Above elementary circuit indicated in figs.
-__ ELEMENTARY CIRCUIT 8,115 to 8,117 by dotted line.
+ELEMENTARY CIRCUIT 8,115 to 8,117 by dotted line.
 
-| COPPER aN :
+COPPER aN
 ROLLER S
-?
-—— = —_—_ >
+
 I = te
-Aa
-Z 13
+
 COPPER Z jar
 ROLLERS 7 | rs
-WYxxzxzxzxzxz2zABQAAQEZ&zz&Q@QDZza. i>
-WW vec
+
 — = AL | ia
-(
-RRR o/. fe
-a a
-|
-t
-a
 
 —MECHANICAL
 
-: 3
-fs Hany
-——{ -e =>
-
-|
 MUI {{ {CNN ANS
 
-B\\\\ I/F;
-Fl
-\
-
 ### N PRESSURE COPPER ROLLER
-
-\
 
 Fics. 8,115 and 8,116.—Circuit diagrams for seam welding. It consists of passing two or more
 metal sheets or bars, between the rollers of aseam welder. The electric current passing from
 roller to roller through the work heats up the parts to be joined in the nature of a spot welder
 and the mechanical pressure on the roller electrodes consummates the weld.
-
-5,064 Electric Welding
 
 heat to melt or soften the metal. Usually there 1s mechanical
 pressure applied to the soft or melted metal to force the parts
@@ -3207,7 +2361,7 @@ together and aid in binding them.
 
 In butt welding, the ends of the pieces to be joined are butted
 and current passed from one to the other until they become
-plastic and the pressure binds them. |
+plastic and the pressure binds them.
 
 A modification of butt welding is flash welding.
 
@@ -3215,26 +2369,21 @@ A modification of butt welding is flash welding.
 
 ### RESSURE PRESSURE
 
-———— — §«
 MECHANICAL a | N
 MECHANICAL
 PRESSURE 'WATER COOLED PRESSURE
-AWS
-ea ee @! , _— & ' 2 eee ¢
 
 "ELEMENTARY CIRCUIT
 Fic. 8,117.—Cireuit diagram for butt welding.
 
 The difference being that current is applied to the parts before they are
 brought together so that when they meet arcing or flashing takes place and
-greater heat produced and projections burned away and thereby the sur-
-faces brought closer together; the pressure completing the bond. The flash
+greater heat produced and projections burned away and thereby the surfaces brought closer together; the pressure completing the bond. The flash
 method has almost entirely superseded the butt weld method.
 
 In spot welding, the parts or pieces are joined in spots.
 
-The metals are brought together either butted or lapped and the elec-
-trodes connected to the metals both above and below the particular points
+The metals are brought together either butted or lapped and the electrodes connected to the metals both above and below the particular points
 where they are to be joined. This creates heat at these points and softens
 the metals within these restricted areas and by pressure completes the weld.
 The joining points being wherever the electrodes are connected.
@@ -3257,29 +2406,11 @@ Fic. 8,119 to 8,1 24.—Variousexamplesof butt welds. Fig. 8,119, flash weld; fi
 = 8,121, upset weld; fig. 8,122, high speed steel weld; fig. 8,123, pipe weld; fig. 8,124, tee
 weld.
 
-"eb
-
 Butt Weld Data
 (According to Thompson Electric Welding Co.)
 
 Round Iron Area in KW Reauired Time in Seconds Cost per Thousand Welds
 Diameter Square Inchea q to Make Weld at 1¢ per KWH
-
-yf 05 2 3 ,02
-34" 11 3.5 5 05
-yt .20 5 5 .07
-
-: 81 7.5 10 21
-
-34" 44 12 15 50
-"%4" .60 15 18 75
-1° 79 18 20 1.09
-1%" 99 25 25 1.73
-1%* 1.23 35 30 2.90
-1%* 1.37 & 40 3.55
-1%" 2.41° 65 45 8.l2
-
-° 3.14 75 50 10.42
 
 In seam welding, the electrodes either in the form of wheels or rollers, move along
 the seam of work and weld it.
@@ -3289,34 +2420,13 @@ Pressure of course is applied the same as for the other welds.
 The electric current passing from roller to roller through the work heats up the parts to be joined in
 the nature of a spot welder and the mechanical pressure on the roller electrodes consummates the weld.
 
-990°S
-
-SuIplaf, 914}99aTq
-
-m Ww bo ee
-
-Oona an wm
-
-10.
-11.
-
 Meee
 
 moe
-14.
-15.
-16.
-
-17.
-18.
-
-19.
-
-Electric Welding 5,067
 
 . Define electric welding.
 
-_ Name the various welding methods.
+Name the various welding methods.
 
 . Describe the source of welding current.
 
@@ -3356,73 +2466,26 @@ arc?
 
 What happens when the arc stops?
 
-5,068 Electric Welding
-
 20. How many amperes are required for carbon are:
-welding? °" °°"
 
 21. What are the characteristics of the carbon arc?
 
 22. What is the form of 'the added metal in carbon arc
 welding?
 
-23. Describe in full detail carbon arc welding. .' |
+23. Describe in full detail carbon arc welding. .'
 
-~e
-a
-; . ' i '
-sea ¢ , ~
-( } ' ie t
-a a3 3 * 88 4 !
+¢ 4 t eyes, \ t = Y ' =
 
-sf : yi a o$2 c
-' pe -
-Y. om
-7 sok t \ € Cs "> an is
-5 4h ' ' oe : } p36. 9S fe \
-r ete ee
-; ' ; a < ' 4 4 oe {
-oa eG ae ae MR le oe, CO Ga a eR a a a ; = . ees 24
-) - ' : : a oe t : ow 4 4 ae | ' r teh ( aoe § o ' e i ' ais Coy oe Se Lae § ty,
-} y % / f *
-' Kh Y Lpery Eeey oe ee
-j ) wg (4 ePS! be, PL EL 3 ' yur \ ie ae he a '
-me
-ie aro |
-¢ f ' : 1 is
-» ¢ 4 t eyes, \ t = Y ' =
-\ \ af \: ee yf 1 i : : 5 \ k ' ohh hf fy
-te ¢ 4 e ;
-- P 4 ' aor ' N 7 of \ t '
-¢ 4 \ v \ £ dR Cs > oa i
-ry 4
-' Pas
-ra
+- P 4 ' aor ' N 7 of \ t
+
 4 eee' t's, ; l C 4 is
-CU, Pa. Oey , , Bo Pty ey
-v'
-\ ° 7
-MEXTER ESAS
-: c
-v Ci< : z iS
-, ; ; j t a q (! \ roy 2 t
-\ . = : 2 a : aaa 7 +
-0 aa an Nie rn or "pos Be OEE oe Ee nae my ee Oe. Es ' , :
-Me ee ee ae: ! V5) 2 a ae t J eo So Dee eae 3 oY 4 oe 3 . f L
-% ' \ —_ r
-x ' Vy 5 aa - _
-OS Ge Sa NN ee oe ee
-4 rf i] : oe t f , r
-4 Pa oe. yk MN A A eg peu N Og ae \ Pg
-nn 7 \
-Nee dee
-\ ' \ ' Paes
-to" t ioe ibe, J
-, yt ees : : eo ae ek :
-: ' ¢ me N rh \ ° \ fe Fy ) 4 ¢
-(aa a Sa oe : { cory \ , {
 
-Gas Welding 5,069
+. = : 2 a : aaa 7 +
+
+Nee dee
+
+to" t ioe ibe, J
 
 ## CHAPTER 207
 
@@ -3442,11 +2505,9 @@ First oxy-hydrogen was used in the torch, then oxy-acetylene, oxygen
 and coal gas, and oxygen and benzol, etc.
 
 The temperature of the oxy-hydrogen flame is approximately 4,000°
-Fahr. and the oxy-acetylene flame, 6,300°. Oxygen and acetylene (oxy-
-acetylene) 1s the combination of gases most extensively used.
+Fahr. and the oxy-acetylene flame, 6,300°. Oxygen and acetylene (oxyacetylene) 1s the combination of gases most extensively used.
 
-With the oxy-acetylene torch the metals can be welded with-
-out adding metal to the weld.
+With the oxy-acetylene torch the metals can be welded without adding metal to the weld.
 
 Sections from 1% in. thickness up, are welded by fusing the edges and
 adding filler melted from the end of a wire or rod. All common commercial
@@ -3456,24 +2517,6 @@ steels, gray and white cast iron, aluminum, copper, brass, bronze, nickel,
 monel, the principal commercial alloys, the precious and the semi-precious
 metals. Welding dissimilar metals to each other, such as steel and cast
 iron, steel and copper is also practicable.
-
-5,070 Gas Welding
-
-Yi,
-
-A,
-
-Yj
-
-th
-C7,
-
-Lot Ly YE,
-
-eR oe ee ee ed FOP CES PO , oe
-ne ee ee Bg * d
-
-f
 
 Fics. 8,125 to 8,137.—Airco-Davis-Bournonville welding outfit showing torch, tips and other
 parts. The torch comprisesa brass handle, to the rear end of which are attached the oxygen and
@@ -3494,20 +2537,17 @@ attachment.
 
 NOTE .—-Airco-Davis-Bournonville oxygen welding pressure regulator. This device has a
 
-Gas Welding 5,071
-
 The filling material or welding rod as a rule should be of
 inearly the same 'chemical composition and physical character-
 'istics as the base metal.
 
 Low carbon steel is generally welded with low carbon rods, cast iron with
-cast iron rods, copper with copper rods, and so on. When welding dis-
-similar metals the welding rod as a rule is of the metal having the lower
+cast iron rods, copper with copper rods, and so on. When welding dissimilar metals the welding rod as a rule is of the metal having the lower
 melting point. Thus copper rods are used when welding steel and copper.
 
 An oxy-acetylene outfit consists of
 
-1. Torch with separable tips, mixing heads; ;
+1. Torch with separable tips, mixing heads;
 2. Two lengths of hose (black for oxygen; red for acetylene);
 3. Two pressure regulators;
 
@@ -3517,17 +2557,14 @@ An oxy-acetylene outfit consists of
 
 The pressures of the gases in the cylinders are too high to
 be used directly for welding, and are reduced, as they flow
-through the pressure regulators, to the working pressure re-
-quired in the torch.
+through the pressure regulators, to the working pressure required in the torch.
 
 The pressures for welding range from 1 lb. to 20 Ibs. per sq. in. for the
 oxygen, and from 1 lb. to 12 lbs. for the acetylene, depending on the tip
 size, torch type and thickness of the metal.
 
-Oxy-Acetylene Hand Welding Torch.—This tool mixes oxy-
-gen and acetylene in nearly equal volumes, the mixture being
-burned at the end of a tip, producing a flame of such high tem-
-perature that metals are easily fused. A typical torch with
+Oxy-Acetylene Hand Welding Torch.—This tool mixes oxygen and acetylene in nearly equal volumes, the mixture being
+burned at the end of a tip, producing a flame of such high temperature that metals are easily fused. A typical torch with
 some of its various tips is shown in figs. 8,125 to 8,132.
 
 NOTE.—Continued from paze 5,070
@@ -3542,12 +2579,7 @@ ygen
 
 Release regulator
 
-hee hdd Ahh bib did hdd spt titel adaddame dad psbA hh
-
-LE ae
 gig
-
-fa
 
 (Airco-Davis-Bournonville.) Connect
 
@@ -3562,15 +2594,6 @@ with a close fitt
 
 Gas Welding
 
-igs oe sy
-Mi
-
-ee
-
-oy
-
-be
-
 Thy
 ies
 
@@ -3583,55 +2606,11 @@ Fic. 8,140.—Connecting the hose to the regulators. (Airco-Davis-Bournonville.)
 
 Fic. 8,141.—Opening the cylinder valve.
 
-Y
-is
-Ww
->
-i
-Y
-w
-Y
-
-©
-o>
-v2
-
-£
-s
--
-2)
-s
-cd
-rn
-y
-a)
 Pap
 
-~
->
-S
-
-Pr
-=,
-
-Y
-Ae
 hed
-~
-§
+
 nie
-Q
->
-1S)
-b
-
-ee)
-a
-me)
-©
-(x,
-
-Gas Welding 5,073
 
 The function of the pressure regulator is to reduce the pressure of the gas
 flowing from the cylinder to the required working pressure in the torch, and
@@ -3661,8 +2640,7 @@ should be made with a No. 1 (Airco-Davis-Bournonville) tip and a strictly
 neutral flame. Fusion should penetrate to about one-half the diameter
 of the rod.
 
-A rod of good weldability will have a surface after this test 1s made some-
-what like that of narrow ripple weld. The metal will have been displaced
+A rod of good weldability will have a surface after this test 1s made somewhat like that of narrow ripple weld. The metal will have been displaced
 into smooth blended drops, one merging into another, and none extending
 much beyond the original rod diameter. There will be little sparking during,
 fusion, and no pinholes in the fused metal after cooling.
@@ -3682,24 +2660,15 @@ Fic. 8,141.—Text continued
 screws and open cylinder valves slowly. Never open cylinder valves with regulator screws not
 released.
 
-5,074 Gas Welding
-
 Although most of the welding done is on low carbon steel
 with low carbon welding rod, it is important that the welder
 
 know when to use other rods and what to specify when the
 need arises.
 
-* are. "——
-
-AK
-
 one: agate
 
-Ps 7 . &
-
-" ij 4 . 7 . : " ay . i 4% or : "s 5 7 , rj
-aa!
+ij 4 . 7 . : " ay . i 4% or : "s 5 7 , rj
 
 Fic. 8,142.—Blowing out the hose. (Airco-Davis-Bournonville.) Open each regulator with
 the regulator screw and blow out hose. Release regulator screws.
@@ -3726,8 +2695,6 @@ It should be, if possible, adaptable to a wide range of applications, both in th
 and in other departments. Portability is a very important asset, especially in plants doing 2
 variety of work.
 
-Gas Welding 5,075
-
 The following list of drawn and cast welding rods covers
 general requirements of commercial, manufacturing and repair
 welding:
@@ -3736,8 +2703,7 @@ Low Carbon Steel Rods.—For general welding of wrought iron and
 steel, plates, sheets, pipes, castings, etc.,in manufacturing, production and
 repairs.
 
-Mild Steel Rods.—An excellent rod at low cost for general use in oxy-
-acetylene welding of steel plates, sheets, structural steel, pipe, etc. These
+Mild Steel Rods.—An excellent rod at low cost for general use in oxyacetylene welding of steel plates, sheets, structural steel, pipe, etc. These
 should conform to American Welding Society Specification G-No. 1A.
 
 No. 1 Simplex Rods.—Especially developed to produce high tensile
@@ -3775,8 +2741,6 @@ Drawn Manganese Bronze Rods.—For building up bronze surfaces on
 cast iron and steel as well as bronze castings where subjected to wear, and
 where stronger welds than those attainable with Tobin bronze are required.
 
-5,076 Gas Welding
-
 Fluxes.—These are used in welding cast iron, brass, bronze,
 aluminum, nickel, monel and the non-ferrous alloys in general,
 but are rarely or never required in welding low carbon steel.
@@ -3791,8 +2755,6 @@ valve and adjust the acetylene regulator to the required working pressure accord
 table on page 5,078. Close the needle valve. Adjust oxygen working pressure in same
 manner.
 
-'
-
 Low carbon steel requires no flux because the oxide sometimes produced
 in welding remains in a molten condition. . Cast iron and. the non-ferrous
 metals are welded at lower temperatures, and, their oxides as a.rule remain
@@ -3806,8 +2768,6 @@ acetylene and convenience of operation. A specially designed two wheel truck to 
 oxygen and an acetylene cylinder is desirable with all portable outfits. The truck should be
 provided with chains for holding the cylinders in place so that they cannot fall off when moved.
 
-Gas Welding 3,077
-
 Intimate mix, proper proportions and purity are essential for the best
 results. Fluxes should be. kept in closed containers when not in use and
 should as a rule be used. sparingly for the best results. 7
@@ -3819,8 +2779,6 @@ up and connecting the torch, hose and regulators in the proper
 
 torc h with a Spart shté
 
-Fi
-
 Fic. 8,147 a ee for neutral flame. Open oxygen needle valve and adjust for Bere
 flame.
 
@@ -3828,7 +2786,7 @@ manner according to instructions of the manufacturer. The
 final operations preceding welding are shown in figs. 8, sie to
 8,147.
 
-: The following tables give proper pressures for welds and cuts
+The following tables give proper pressures for welds and cuts
 of various thickness:
 
 'NOTE.—Connecting the cylinders. Roll the cylinders on to the truck and chain them
@@ -3838,8 +2796,6 @@ spoil the regulator nut and a jammed seat. will leak. Damaged valves are a resul
 the valve caps in transit, and the damage generally happens after.the cylinders have been turned
 o¥er.to the user...Go-operation to. prevent damage to cylinders ie-always te the user's benefit.
 
-5,078 Gas Welding
-
 Fic. 8,148.—Plates tacked for welding. Instructions: Tack the left end of the plates together.
 This is done by holding the flame close to the joint until the steel melts and runs together.
 Remove the flame instantly when the metal flows, as otherwise a hole will be burned through.
@@ -3848,22 +2804,17 @@ Warm the two plates by passing the flame over them lengthwise two or three times
 Approximate Acetylene Pressures
 
 (Welding Torches)
-| Thickness of | Acetylene Pressure* Acetylene Consumption 7
+Thickness of | Acetylene Pressure* Acetylene Consumption 7
 Tip No. | Meal—ia, || Max | Min Max
 Mixer 1-7 1 te Yy 2 se 3.2
-- 2 1% 1% 3 4.1 6.0
-. 3 i 2 3% 6.8 9.7
-i 4 ¥ 2% 44 12.0 17.0
-- 5 i, 3 6% 17.5 29.5
-o 6 ¥% 4 7, 25. 36.
+
 = 7 W% 4y, 9 30. 45.
 Mixer 6-10 6 2 5 19.5. 36
 we 7 2u4 644 29. 50
-- 8 3 7 37. 60
-ie 9 1y% 4°: 8 49. 75,
-" 10 2 up 4y, 12 62. 103.
 
-* Oxygen pressures approximately same as acetylene.
+10 2 up 4y, 12 62. 103.
+
+Oxygen pressures approximately same as acetylene.
 
 Approximate Acetylene and Oxygen Pressures
 (Cutting Torches)
@@ -3871,8 +2822,6 @@ Approximate Acetylene and Oxygen Pressures
 Thickness of Oxygen
 Metal—In. Pressure—Lb.
 
-%to 1 10 to
-%to 2 15 to
 l to 3 25 to
 2to 6 30 to
 4to 8 50 to
@@ -3880,25 +2829,13 @@ l to 3 25 to
 8 to 14 75 to
 12 to 18 100 to
 
-monn & GW A = |
-> > oh em > ce? oh >
-O00 00000
-NDANAN&S WH
-
-Gas Welding 5,079
-
 Manipulation of the Torch.—This includes holding the torch
 
 'at the correct height and angle, directing the flame so as to
 'fuse the base metal evenly, and moving the flame back and
 
-et oe
-
-Ce)
 five WIDE ENOUGH TO
 HOLD PUDDLE
-
-ACK
 
 ### TORCH
 
@@ -3908,7 +2845,7 @@ NO 16 GAUGE MOTION
 
 ### PENETRATION
 
-: Fic. 8,149.—Position and movement of the torch. Instructions: Start welding at the right.
+Fic. 8,149.—Position and movement of the torch. Instructions: Start welding at the right.
 
 Hold torch loosely in the hand and nearly parallel with the top of the welding table. Incline
 the tip sideways so that it points to the left at an angle of about 45 to 50° to the welding
@@ -3932,10 +2869,7 @@ NOTE.—Thin sheet steel is often welded with very little or no movement of the 
 
 the joint, as in airplane and barrel welding. The torch is alternately raised and lowered instead.
 The beginner is advised to use the zigzag method while learning, because it must be employed
-on thick beveled plates. 'He can adopt the production method for thin metals later when pro-
-ficient in prepared or beveled joint welding. —
-
-5,080 Gas Welding
+on thick beveled plates. 'He can adopt the production method for thin metals later when proficient in prepared or beveled joint welding. —
 
 forth across the joint along an approximately zigzag path.
 
@@ -3946,7 +2880,7 @@ done on steel plates about 6 ins. long, 114 ins. wide and 1% in.
 thick, using a No. 2 A-D-B. tip.
 
 The operator should be dressed for welding, and should wear
-goggles and gloves. |
+goggles and gloves.
 
 Although it is true that light welding can be done without goggles or
 gloves, it is, nevertheless, necessary to wear them because it is part of the
@@ -3984,8 +2918,6 @@ point where the hose hanging free nearly balances the overhanging tip.
 
 Proceed as directed in figs. 8,148 and 8,149.
 
-Gas Welding 5,081
-
 Common Defects of First Welds.—The following defects
 usually encountered by beginners should be noted:
 
@@ -3997,9 +2929,7 @@ movement not uniform nor in step with the puddle. Zigzag movements
 overlapping.
 2. Fused portion not in the joint, but at one side.
 
-' 'Caused by not playing the torch over the joint equally at each side.
-
-XY
+'Caused by not playing the torch over the joint equally at each side.
 
 Fic. 8,150.—Building a mound or boss with welding rod. Instructions: Build up a mound of
 fused welding rod in the middle of a welding plate. Alternately fuse the top of the mound
@@ -4013,8 +2943,6 @@ Caused by holding flame too long in one place, and overheating the metal.
 
 4. Hole in joint at end of weld.
 
-5,082 Gas Welding
-
 Caused by not lifting the torch and reducing the heat when end of weld is
 reached.
 
@@ -4025,10 +2953,6 @@ Testing First Welds.—If the first weld seem worthy of test,
 ### SIDES
 
 ### WELL FUSED
-
-~~
-
-Va
 
 ### PENETRATION
 
@@ -4044,17 +2968,14 @@ welder must see clearly what is taking place in order to do good work. The appea
 the puddle is a guide to flame adjustment. Ifa white scum be seen floating on the puddle, it
 indicates an oxidizing flame. Turn the oxygen needle valve slightly to reduce the flow of
 oxygen. When approaching the end of the joint the torch should be advanced faster and
-lifted a bit to prevent overheating. Build up the end of the weld so that it is the same thick-
-ness as elsewhere. Remove the welded piece with the pliers, cool in a bucket of water and
+lifted a bit to prevent overheating. Build up the end of the weld so that it is the same thickness as elsewhere. Remove the welded piece with the pliers, cool in a bucket of water and
 break in the vise. A built up or reinforced weld well made should be nearly as strong as the
 
 plate itself and care must be taken to clamp the welded piece firmly and as close to the weld
 as possible. |
 
 NOTE.— When starting a weld, the advan¢e of the torch has to be held down until the metal
-is flowing freely. |
-
-Gas Welding 5,083
+is flowing freely.
 
 cool the welded piece in water, clamp it in an iron vise with
 the weld parallel with the top of the jaws and just above them.
@@ -4063,21 +2984,13 @@ The under side should be toward the operator. Strike the top with a
 hammer and bend over until the piece breaks through the weld.
 
 Examination of the first broken weld will generally reveal defects caused
-by improper manipulation, incorrect flame adjustment, overheating, under-
-heating, and exposure of hot metal to the air before the puddle is completed.
+by improper manipulation, incorrect flame adjustment, overheating, underheating, and exposure of hot metal to the air before the puddle is completed.
 
 CORRECT _..\ . INCORRECT_.-4\
 
-eS
-
-od
-wp
-oo
-
 Fics. 8,154 to 8,157.—Testing welded plates in vise with hammer.
 
-Continue the practice welding on /% in. plates without weld-
-ing rod until able to make a weld fairly uniform in width, of
+Continue the practice welding on /% in. plates without welding rod until able to make a weld fairly uniform in width, of
 good appearance, without holes or icicles hanging beneath.
 
 An obvious defect of all hand welds made without welding rod, impossible
@@ -4085,29 +2998,21 @@ to avoid, is a furrow or depression in the middle, due to the metal sinking
 down and filling the narrow groove between the plates. This is the reason
 for using welding rod, to fill.
 
-Building Up Welded Plates with Welding Rod.—Manipula-
-tion of the rod consists of holding the end over the joint close
+Building Up Welded Plates with Welding Rod.—Manipulation of the rod consists of holding the end over the joint close
 to the flame and moving it so that it is momentarily immersed
 in the puddle ahead of the flame.
 
 NOTE.—When breaking a weld in a vise always bend the piece so that the under side
 or bottom of the weld is put in tension and the top in compression.
 
-5,084 Gas Welding
-
 The heat of the puddle and flame melts off a drop of metal which blends
 into the weld. The beginner as a rule will have difficulty in dipping the rod
 and lifting it at the right moment. If done too soon it will stick' because the
 puddle is not hot enough to fuse the rod, and if done too late the puddle
 becomes so hot that it drops through. If repeated effort 1s rewarded with
-little success, special practice on this phase of manipulation may be neces-
-sary; proceed as in fig. 8,150.
+little success, special practice on this phase of manipulation may be necessary; proceed as in fig. 8,150.
 
-Practice Welding on }¢ in. Plate with Welding Rod.—Pro-
-cedure on the in. plates 1 1s the same as on the i i In. Steel.
-
-ye.
-+
+Practice Welding on }¢ in. Plate with Welding Rod.—Procedure on the in. plates 1 1s the same as on the i i In. Steel.
 
 Fic. 8,158.—Plates beveled for welding. Instructions: Lay the 6 in. by 1% in. by °¢ in.
 beveled plates on the fire-bricks with the edges parallel and!/,i1n. apart. Tack at the nght
@@ -4126,8 +3031,6 @@ joint somewhat more than on the thinner steel.
 
 The crosswise movement is always governed by the puddle width, the
 thicker the weld the wider the puddle and the greater the swing of the torch.
-
-Gas Welding 5,085
 
 The advance along the joint will be slower because more metal has to be
 heated and fused. The advance of the puddle governs the speed of welding.
@@ -4161,15 +3064,13 @@ welding speed was too high.
 
 4. Brittle welds.
 Due to use of carburizing flame.
-Bevel Preparation.—Up to this time the beginner has been |
+Bevel Preparation.—Up to this time the beginner has been
 
 welding steel without bevel preparation. He can now try
 welding 3 in. steel beveled pieces.
 
-_ One edge of each plate should be beveled to an angle of about 45°. The
+One edge of each plate should be beveled to an angle of about 45°. The
 beveled edges are set together, thus making a groove or trough of about 90°
-
-5,086 Gas Welding
 
 included angle. The groove is filled with metal fused from welding rod, and
 the weld should be built up slightly above the plate surface.
@@ -4184,8 +3085,7 @@ Fic. 8,159.—Underside of weld showing incomplete penetration.
 1. The probable outstanding defect will be adhesions on the
 bevel surface next to the operator while welding.
 
-This is due to not directing the flame against that side so as to thor-
-oughly fuse the base metal before adding weld metal.
+This is due to not directing the flame against that side so as to thoroughly fuse the base metal before adding weld metal.
 
 2. Oxide inclusions or burned metal.
 
@@ -4196,8 +3096,7 @@ with the flame until the weld at that point is completed.
 3. Incomplete penetration (fig. 8,159).
 
 NOTE.—Common defects. 1. Adhesions of weld metal on beveled surfaces; 2, incomplete
-penetration; 3, uneven and coarsely granular structure in the fracture. Due to improper manip-
-ulation and too much oxygen or acetylene. Advice from an experienced operator should be
+penetration; 3, uneven and coarsely granular structure in the fracture. Due to improper manipulation and too much oxygen or acetylene. Advice from an experienced operator should be
 sought. Practice should be continued, striving all the time to avoid the faults pointed out.
 However, the beginner should avoid long continued welding without rest period. At first the
 weld period should not be longer than twenty minutes and the intermission five minutes.
@@ -4205,8 +3104,6 @@ Later the weld period can be lengthened to thirty minutes. The periods of weldin
 required will vary with the individual and his previous work. When the arm muscles tire and
 the vision becomes blurred the beginner should stop, remove his goggles and relax. Progress
 will be made faster this way than by continuous plugging.
-
-Gas Welding | 5,087
 
 Due to not working down to the bottom of the groove until the base metal
 is well fused in the narrow part of the Vee.
@@ -4226,18 +3123,15 @@ Practice Welding Cast Iron Beveled Bars.—F lux 1s generally
 applied by sticking the hot welding rod into a can of flux
 powder.
 
-The quantity adhering is sufficient as a rule. When welding heavy cast-
-ings, however, the weld puddle may be dusted with flux from time to time
+The quantity adhering is sufficient as a rule. When welding heavy castings, however, the weld puddle may be dusted with flux from time to time
 in order to supply the required quantity.
 
 Practice welding on cast iron should be done to acquire knowledge of its
 peculiarities and the necessary torch and rod manipulation. The welding
-rods as a rule are used straight which is not quite as convenient for ma-
-nipulation as the bent rod on steel.
+rods as a rule are used straight which is not quite as convenient for manipulation as the bent rod on steel.
 
 Care must be taken to provide for expansion when welding
-a gray iron casting and likewise the contraction must be con-
-trolled in cooling to prevent cracks in the weld or adjacent to it.
+a gray iron casting and likewise the contraction must be controlled in cooling to prevent cracks in the weld or adjacent to it.
 
 These are best taken: care of by preheating the casting to a low red heat,
 using city gas, oil burners or charcoal. A crude furnace of fire bricks may be
@@ -4250,35 +3144,24 @@ Heavy castings may require 24 to 48 hours to cool, depending on the size,
 shape and weight. Welds made with approved cast iron rods and flux in the
 manner described should be soft.and machinable when cold.
 
-5,088 Gas Welding
-
 Bronze Welding Cast Iron.—Many cast iron repair welding
 jobs can be done to advantage with bronze welding rods.
 
 Fic: 8,160.—Underside of overheated weld showing excess metal hanging.
 
-POP anea:
-LLL CUTTING
-acs ee ee ee ey
+### LLL CUTTING
+
 Lat OXYGEN
 aauaooaeaoqqqwuauomnnmmm SS SS
-SG; 5>> > pinnae
-YY RA AARRAAS ERASER RERUN AS SEL ERE SSE CUES CR Pp REI : al ATI N c ;
+
+YY RA AARRAAS ERASER RERUN AS SEL ERE SSE CUES CR Pp REI : al ATI N c
 
 Ss} «OXYGEN
-| eee eee ee ACETYLENE
-
-Y
-
-s
+eee eee ee ACETYLENE
 
 ### HIN PREHEATING
 
-7 ; FLAMES :
-
-wz
-
-### PREHEAT TO
+7 ; FLAMES
 
 ### CHERRY RED
 
@@ -4300,8 +3183,6 @@ trigger. As soon as the plate is perforated lower the torch to the normal positi
 with the cut. Starting the cut is facilitated by nicking the side of the bar with a chisel so as
 to raise a burr at the point where the cut is to begin.
 
-Gas Welding 5,089
-
 The preheat. required is less, and the welding rod temperature is from
 1,625° to 1,650° Fahr.
 
@@ -4310,20 +3191,16 @@ when making bronze welds. The strength of good bronze welds is equal to
 
 or greater. than the base cast iron:
 
-Malleable Iron Castings.—Malleable iron castings are pro-
-duced from white iron castings, heat treated.
+Malleable Iron Castings.—Malleable iron castings are produced from white iron castings, heat treated.
 
 They are soft and bendable, but not weldable with iron or steel rods.
-They should be bronze welded when making repairs. The white iron cast-
-ings can be welded, however, with white iron rods.
+They should be bronze welded when making repairs. The white iron castings can be welded, however, with white iron rods.
 
-Welding Non-Ferrous Metals and Alloys.— Welding of cop-
-per, aluminum, bronze, brass, monel, nickel and various alloys
+Welding Non-Ferrous Metals and Alloys.— Welding of copper, aluminum, bronze, brass, monel, nickel and various alloys
 is accomplished with the oxy-acetylene torch.
 
 These metals and alloys as a rule are easily oxidized and a neutral or
-carburizing flame is used; also welding rods and fluxes. Expansion and con-
-traction are greater than with steel. Heat conductivity is higher and larger
+carburizing flame is used; also welding rods and fluxes. Expansion and contraction are greater than with steel. Heat conductivity is higher and larger
 tips are required for the same thickness than on steel. Copper, for example,
 requires Airco-Davis-Bournonville tips from one to two sizes larger than
 for steels of the same gauge.
@@ -4345,8 +3222,6 @@ quite different from that for welding.
 
 Proceed as in figs. 8,161 to 8,164.
 
-5,090 Gas Welding
-
 Fic. 8,163.—Movement of cutting torch and tip when cutting thin cast iron.
 
 Fic. 8,164.—Movement of cutting torch and tip when cutting heavy cast iron.
@@ -4365,46 +3240,26 @@ What are the common defects of first welds?
 11. Describe the method of welding cast iron.
 12. How is a torch used for cutting?
 
-Oi th GQ ho =
-
 CO "I ON
-
-Pipe Welding 5,091
-
-talks as oT a ee Se oe
 
 ## CHAPTER 208
 
 Pipe Welding
 
 The application of welded joints to pipe line construction
-_ is comparatively new, and is rapidly displacing screwed joints
-| especially on pipes of large size. The general acceptance of the
+is comparatively new, and is rapidly displacing screwed joints
+especially on pipes of large size. The general acceptance of the
 
-yi " , o
-
-t
-
-wd a ! *
 oe and 2 d ne, a vee @eee
-hae ap mb,
-be). f A a , | ' ra q ;
+
 "A eee "ft
 
-' e*e ie. . 5:
 Am 3% HIS
-ry ee Hib iy
-Ld oneee. OOF 'e oa ff " Wey w vw,
-LG
-a ip J
 
 used.
 
-5,092 Pipe Welding
-
 welded joint and the rapid growth of the use of this modern
-process was made possible by the perfecting of welding appa-
-ratus.
+process was made possible by the perfecting of welding apparatus.
 
 Comparing welded and screwed joints, the welded joint has
 several advantages which accounts for its growing popularity.
@@ -4422,9 +3277,7 @@ have patterns or sweeps made before they can be cast and weeks may
 elapse before satisfactory castings are received from the foundry. After
 that it may take some time for them to be machined for use. The welding
 torch and the cutting torch in conjunction with a few templates are all the
-tools necessary for the making of almost any type of fitting. If manufac-
-tured fittings be not on hand, this work 1s generally done as the line pro-
-gresses and the exact patterns of fittings 1s determined. The fittings made
+tools necessary for the making of almost any type of fitting. If manufactured fittings be not on hand, this work 1s generally done as the line progresses and the exact patterns of fittings 1s determined. The fittings made
 in this way are quickly produced, are much lighter, and therefore, more
 easily handled than a cast fitting or a combination of cast fittings.
 
@@ -4432,8 +3285,7 @@ Saving of time by laying lines by the welding process has been found to be
 in its favor.
 
 In lines joined by screw joints only one section is joined at a time, while
-in a welded line as many lengths can be joined as there are welders avail-
-able, which may involve several hundred feet of pipe.
+in a welded line as many lengths can be joined as there are welders available, which may involve several hundred feet of pipe.
 
 With respect to the apparatus used there are two methods of
 welding as: |
@@ -4443,16 +3295,14 @@ welding as: |
 2. With the oxy-acetylene torch;
 known respectively as electric or arc and gas welding.
 
-Pipe Welding 5,093
-
 Types of Joints.—There are two general types of joint:
-1. Bell and spigot; |
+1. Bell and spigot;
 
 a. Plain;
 b. With welding dam.
 
 2. Butt.
-~ In oil lines the bell and spigot joint is the most popular.
+In oil lines the bell and spigot joint is the most popular.
 
 Fics. 8,166 to 8,168.—Various pipe joints for welding. Fig. 8,166, butt weld; fig. 8,167, bell
 and spigot weld; fig. 8,168, bell and spigot weld with welding dam.
@@ -4472,8 +3322,6 @@ forming a dam or backing for the welding bead on the spigot end of the joint.
 
 Figs. 8,166 to 8,168 illustrates the three joints just mentioned.
 
-5,094 Pipe Welding
-
 Welding Large Pipe Lines.—Clearing of the nght of way,
 stringing of pipe, and ditching operations are the same for arc
 welded construction, as for other types.
@@ -4482,24 +3330,9 @@ After the pipe is strung, it is lined up in sections consisting generally of
 four or more lengths, depending upon length of pipe and topographical
 conditions.
 
-~S SS Se eS
-SS
-SS
-
 SIGN MLE"
-~ SVN SS
+
 = SS SY
-~ SS :
-~
-
-SSH
-SS
-SSS"
-
-AA
-
-SSS .
-SS
 
 Fic. 8,169.—Section of pipe line being welded. Note the use of wood skids for blocking up sec-
 
@@ -4510,23 +3343,11 @@ In lining up the pipe into sections, when pipe has bell and spigot ends,
 the spigot ends are inserted in the bell ends of the adjacent lengths, thus
 forming a straight line of pipe. The entire section, thus formed, is blocked
 
-1 Pipe Welding 9,095
-
-|
 i f up level on wood skids parallel and about 3 ft. from line of trench, as shown
 Dorin fig. 8,169.
 
 r Several devices are employed to aid the turning of sections
 'during the welding operations.
-
-VW
-
-a
-
-na
-G
-
-a...
 
 Fic. 8,170.—Section of pipe line placed on dolleys on top of skids to facilitate turning of pipe
 during welding operations. Photographed on Uinta Pipe Line Company's 200 mile line.
@@ -4536,8 +3357,6 @@ rests. These chock blocks are beveled on the face adjacent to the pipe, so
 that the section will turn easily against the chock blocks. The use of chock
 blocks also eliminates the necessity of long skids as the pipe is not rolled on
 the skids, but 1s turned against the chock blocks.
-
-5,096 Pipe Welding
 
 Long skids are heavy and cumbersome to handle. The placing of chock
 blocks on opposite sides of the pipe on adjacent skids also tends to keep the
@@ -4555,8 +3374,7 @@ large, heavy pipe is used.
 When pipe with plain ends forming butt joints.is used, the.
 joints are tack welded immediately after a section is lined up. .
 
-This 1s done to hold the section intact and in line until the joints are.com-
-pletely welded..
+This 1s done to hold the section intact and in line until the joints are.completely welded..
 
 Bell and spigot joints are sometimes tack welded to prevent ieliilaaidal
 of pipe, due to contraction and expansion of pipe lengths caused' by. abrupt:
@@ -4577,19 +3395,14 @@ helper.
 Generally the welder is spotted between two adjacent sections. The
 operator welds the top half of each joint, starting at the joint farthest from
 the welder and works toward the next section to be welded. The helper
-follows, cleaning this first weld, known as the burning in weld, with ham-
-mer, chisel and wire brush, removing all oxides, etc.
-
-Pipe Welding 5,097
+follows, cleaning this first weld, known as the burning in weld, with hammer, chisel and wire brush, removing all oxides, etc.
 
 After the operator finishes the welding of the top half of the
 last joint in the section, the helper, with chain pipe wrench,
 
 turns the entire section 180".
 
-nw em Tet om re
-
-| Tv he epenitin then proceeds to complete the Senile in head in eath
+Tv he epenitin then proceeds to complete the Senile in head in eath
 joint; the helper following, cleaning the balance of the welds; as before. A
 typical burning : in bead, after it has been cleaned, is shown.
 
@@ -4599,8 +3412,7 @@ When the burning in welds are completed, the operator is back at the
 original starting point, having traversed the entire length of the section
 twice. The operator then starts welding the second bead, or finish bead,
 welding a complete joint, before moving to the next. The helper turns the
-pipe, as the operator welds the finish bead in each joint. In the entire weld-
-ing operation, the operator traverses the length of each section only three
+pipe, as the operator welds the finish bead in each joint. In the entire welding operation, the operator traverses the length of each section only three
 times. The finish bead is not cleaned. This leaves the helper free to turn
 the section, so that the finish bead 1 in each joint may be SORPAEteS 4 in one
 operation.
@@ -4608,8 +3420,6 @@ operation.
 . Portions of the burning in bead and finish bead in the same icin are
 shown in fig. 8,172. A completed arc welded bell and spigot is also shown
 in fig. 8,173.
-
-5,098 Pipe Welding
 
 After the operator finishes one section, he proceeds to the adjacent sec
 tion and welds it in the same manner. The welder 1s moved by tractor,
@@ -4621,10 +3431,8 @@ bell and spigot joint. Photographed on Texas Empire 600 mile line.
 Fic. 8,173.—A completed arc welded bell and spigot joint. Photographed on Texas Pipe Line
 Co.'s San Antonio-San Marcus Texas line.
 
-oO ; | |
 'in ; cal Regular Line d '3
 of Pipe Pipe Ream ; e B
-~
 
 Fic. 8,174.—Dimensions of weld for various sizes and weights of pipe; values given in table
 below: "
@@ -4636,16 +3444,7 @@ Outside Weight Wall B C
 Diameter, per Foot, Thickness, Inches Inches
 Inches Pounds Inches
 
-64% 17.021 .250 .500 .O31
-8%
-
 103%
-
-1234 40 .000 303 500 .047
-
-1284 65.415 "415 520 040
-
-Pipe Welding 5,099
 
 Bell Hole Welding.—After a section of pipe line is welded, it
 is placed over the open ditch on single skids and joined to the
@@ -4655,17 +3454,13 @@ out the sides of the ditch forming a bell shaped hole or space in
 the ditch to permit easy access to the entire circumference of
 the joint.
 
-Fic. 8,175.—Operator welding overhead in making a bell hole joint. Photographed on Texas-
-Empire 600 mile line.
+Fic. 8,175.—Operator welding overhead in making a bell hole joint. Photographed on TexasEmpire 600 mile line.
 
 A bell hole connection is the only joint welding of a section
 to the line which requires overhead welding, as it is impossible
 to turn the pipe line. Two separate beads are welded in making
 
-5,100 Pipe Welding
-
-a bell hole joint, the same as required in making firing line con-
-nections, the procedure only being different.
+a bell hole joint, the same as required in making firing line connections, the procedure only being different.
 
 The operator first makes the burning in bead in the top half of the bell
 hole joint. After this portion of the joint is welded, the helper cleans the.
@@ -4677,65 +3472,42 @@ hole welding is given in fig. 8,175.
 Seo
 tee
 
-at
-a
-
-Ae
-
 Fic. 8, 176A type of expansion joint used in arc welding pipe lines. This type of. joint is
 known' in pipe line parlance as a wrinkle belly joint. aes
 
-'ads ~ + ee
-- pe
-
 Bending of a section to conform to line of ditch is usually
 done immediately after the section is arc welded to the pipe
-line. - | _
+line. - |
 
 All bends in a section are made, where possible, in the middle of a pipe
 length, rather than at a joint.
 
-To take care of the expansion or contraction of the line, sev-
-eral methods are employed.
+To take care of the expansion or contraction of the line, several methods are employed.
 
 Where expansion joints are not welded into a line, slack is put into the
 line by forcing the line into the ditch, so that it will lie on the bottom of the
 
-Pipe Welding 5,101
-
 ditch, not in a perfectly straight line, but weaved from wall to wall of the
 ditch. This method of weaving the pipe in the ditch 1s unnecessary where
-expansion joints are included in the line. On recent arc welded lines, ex-
-pansion joints, similar to joint illustrated in fig. 8,176, are used. This type
+expansion joints are included in the line. On recent arc welded lines, expansion joints, similar to joint illustrated in fig. 8,176, are used. This type
 of joint, when placed at intervals in the line, takes care of all expansion and
 contraction of the line.
 
 Pipe Fittings for Welded Joints.—Various kinds of standard
-fittings have been designed for welded joints. Standard dimen-
-sions have been adopted for each fitting. The fittings consist of
+fittings have been designed for welded joints. Standard dimensions have been adopted for each fitting. The fittings consist of
 elbows, tees, offsets, reducers, crosses, manifolds, saddles,
-swage nipples, etc. |
-
-sey ct say Ot ce " 'Sse a) es era.-, .
-'Osea. SPOR, RB Oa et me.
+swage nipples, etc.
 
 VA we le UL PR ray etal
-
-ie'
-
-a8 Sarge Tee
 
 Fics. 8;179 ahd 8,180.—Comparison of tube turn and ordinary screw elbow. Note the easy
 curve of the tube turn as compared with the shoulders of pipe in the screwed assembly. Also
 contrast the modern, high hub butt welding flange with the old fashioned flange.
 
-5,102 Pipe Welding
-
 These fittings are now available the same as ordinary screw
 fittings.
 
-These fittings can also be made in the welder's shop out of the accumula-
-tion of short ends of pipe which otherwise would be wasted.
+These fittings can also be made in the welder's shop out of the accumulation of short ends of pipe which otherwise would be wasted.
 
 Fic. 8,181.—180° tube turn (return elbow) which can be used as such or quickly cut on the job
 (as shown in fig. 8,187) to form a turn of any desired angle.
@@ -4744,7 +3516,7 @@ The following tables give the various sizes and properties of
 tube turns.
 Properties of Tube Turns
 
-| Standard Thickness—IRON PIPE SIZES—Series 14R
+Standard Thickness—IRON PIPE SIZES—Series 14R
 
 Weight
 Radius PIPE Wall Pounds Bursting
@@ -4754,34 +3526,12 @@ Inches DIAMETER Thickness} (180° Pressure
 Nominal
 Pipe
 Size
-1"
-14%"
-1%"
 
-o"
+14%"
 
 214"
 
-3"
-
 314"
-
-4"
-
-5e
-
-§"
-
-g"
-10"
-12"
-14"OD
-16"0D
-18"OD
-
-*20"0D
-
-Pipe Welding 5,103
 
 One manufacturer who makes these fittings calls them ''tube turns.''
 
@@ -4801,47 +3551,26 @@ Nominal Radius PIPE Wall Pounds Bursting
 Pipe Inches DIAMETER Thickness} (180° Pressure
 i O. D. I. D. (T) Type) .| Pounds
 
-*14"0D
-*16"0OD
 *Tentative specifications—these sizes not yet available.
 
 All stock sizes furnished with ends beveled 45 degrees for
 welding unless otherwise specified.
 
-5,104 Pipe Welding
-
-Tube turns are used to provide any kind of elbow, offset, branch or com-
-pound turn in piping, headers and manifolds, or wherever pipe welding.
+Tube turns are used to provide any kind of elbow, offset, branch or compound turn in piping, headers and manifolds, or wherever pipe welding.
 might be used. The 180° return fitting is used in coils, retorts, tube stills,
 etc. The 90° types and straight pipe are used to make up expansion loops.
 
-a
-| SLL, SIN
-
->
-
-i
 py BONE,
-=
 
 there is interference with the flow on.account of.the internal projection of the pipe. This is
 
 avoided in the welded joints. It will be noted in fig. 8,186 that the weld metal does not project
 inside the pipe.
 
-Uae ' - aA A ne
 he pty OF Days:
-j ' Viti 6 a
-OL ae gh Bg nF 2
-CE Pn tet ies
-7 ar. '4 7,
-
-SOOPER A OO et en 8 Ot On em A et ew te te
 
 lic. 8,187.—View showing pipe fitter cutting a 180° tube turn with oxy-acetylene torch. It
 will be seen from this illustration that the tube turn can be cut for a turn of any angle.
-
-Pipe Welding 5,105
 
 Butt Welding Pipe Flange.—The use of welded pipe joints
 has been further facilitated by the introduction of specially
@@ -4849,8 +3578,7 @@ designed forged flanges and of short radius formed pipe bends of
 uniform thickness, both made in standard sizes ready for butt
 welding to the pipe. 5
 
-In a welded pipe assembly, on are required at the connec-
-tions with valves and similar alana ae
+In a welded pipe assembly, on are required at the connections with valves and similar alana ae
 
 Fic. 8,188.—Gas compressor installation showing welded joint tube turn fittings in suction and
 discharge connections.
@@ -4863,47 +3591,29 @@ is definitely known, and is ample to resist strains due to expansion and
 contraction, settling, etc. The inside diameter of these flanges matches
 that of the pipe, permitting a smooth internal flow. Flanges for low
 
-5,106 Pipe Welding
-
-pressure, 150 Ibs. have plain |
+pressure, 150 Ibs. have plain
 or raised faces, as ordered.
 Flanges for higher pressures
 have raised faces. Fig. 8,191
 shows the general appearance
 of a butt weld pipe flange.
 
-Se « Ss
-
-~
-
 Fic. 8,189.—Pennforge flanges in.
 Harvard power house.
 
-ha MMM a
-
-Me" spact-
-
 ### PORTION WELDED
 
-Oe ee nn 80 rr ee eee © tr ten ee
-
-Fic. 8,190.—Placement of pipes for butt weld joint. The ends of the pipes should be cham- |
+Fic. 8,190.—Placement of pipes for butt weld joint. The ends of the pipes should be cham-
 fered 45° making a 90° V for the weld. The ends must be not less than 14 in. apart in order
 to secure through penetration of the weld. The welding rod or wire should be as near as
 possible the same carbon content as the material in the pipes. The weld should be built
-up as rapidly as the molten metal can be handled without overlapping and in a continuous |
+up as rapidly as the molten metal can be handled without overlapping and in a continuous
 operation all around the pipe. If the welding flame be slowly moved over the first part
 welded for a few inches, the weld is automatically and homogeneously annealed for all
 practical purposes.
 
-Pipe Welding 5,107
-
 Fic. 8,192.—Pennforge flange ready for welding to pipe. Note
 the space between end of pipe and nipple end of flange.
-
-5,108 Pipe Welding
-
-_
 
 When welding flanges, the flange and pipe are clamped in a
 fixture, or to a companion flange, to line them up correctly.
@@ -4929,37 +3639,25 @@ inches | >pacing jtack welds leneth Spacing |tack welds ——
 between | for proper | of tack || between | for proper | of tack
 pipeends,| strength | weijdg, ||pipeends,|. strength welds,
 inches si anen: inches inches saad a inches
-34 ié 2 4 i¢ 2 Va
+
 1 is 2 % 16 2 y
-My) + 2 M% V 2 38
-li] is 2 M4 4% 2, 48
+
 2 is 2 38 i6 2 4%
-24| 2 8 i6 2 Ya
-3 \% 4 % is 4. 4%
-4 lf 4 4 Te 4 8
+
 o % 4 a is 4 +8
-6 is 4 x8 % 4 +8
-8 i¢ 4 8 % 6 4
-10 i6 4 +8 A 6 | %
-12 75 6 34 4 6 1
-14 35 6 4 Y% 6 ]
-16 - 3 6 4% YY 6 1
-18 zs 6 34 % 6 1
 
 When butt welding flanges are used, the following features
-should be included in the specification: |
+should be included in the specification:
 
 1. Welded standard flanges shall comply with American Standards as to
 dimensions.
-
-Pipe Welding 5,109
 
 2.:The flange shall be bolted to a companion flange or heavy plate during
 welding.
 
 3. Bolt holes shall straddle natural center lines.
 
-_ 4, The spacing between pipe ends, before tacking, shall be as given in the
+4, The spacing between pipe ends, before tacking, shall be as given in the
 table. |
 
 5. Welds shall be thoroughly fused to the joint edges and shall extend
@@ -4972,7 +3670,7 @@ and shall be symmetrical with respect to the center line of joint.
 edge to center.
 
 8. Thickness at the center of the weld shall not be less than 114 times the
-' pipe wall thickness.
+pipe wall thickness.
 
 9. The weld shall be of sound metal free from laps, gas pockets, slag
 Inclusions or other defects.
@@ -5000,8 +3698,6 @@ weld without any further preparation.
 Another type of head which is commonly used is one made
 from a Dresser coupling in which a disc has been welded to one
 
-5,110 Pipe Welding
-
 end of the sleeve and the other end of the sleeve left open to be
 slipped over the end of the pipe to be tested. The sleeve is
 drilled for about 81% in. set screws which, when screwed against
@@ -5011,11 +3707,8 @@ is applied.
 It will be evident that neither of the last mentioned methods
 1s applicable when high pressures are specified.
 
-There are several methods in use for this testing. The hydro-
-static pressure with a hammer test 1s probably the most severe.
-This is made by pumping water into the line at a specified pres-
-sure, being sure to displace all air, and hammering the pipe adja-
-cent to the weld. The impact of the hammer blows causes the
+There are several methods in use for this testing. The hydrostatic pressure with a hammer test 1s probably the most severe.
+This is made by pumping water into the line at a specified pressure, being sure to displace all air, and hammering the pipe adjacent to the weld. The impact of the hammer blows causes the
 vibration to travel through the pipe, and any weak joints. will
 generally show up under this treatment.
 
@@ -5024,44 +3717,25 @@ On account of the inability to get a sufficient water supply,
 also the difficulty of drainage, this method is seldom used. In
 the case of high pressure water lines this test 1s very desirable
 before the lines are turned over to actual service.
-The method commonly employed in testing at ordinary pres-
-sures is by the use of air pressure and the application of soap and
+The method commonly employed in testing at ordinary pressures is by the use of air pressure and the application of soap and
 water solution which is painted over the joint; in case of a leak
-it will indicate itself by the air bubbles which form on the out-
-side of the joint. This test is extensively used and has been
+it will indicate itself by the air bubbles which form on the outside of the joint. This test is extensively used and has been
 found to be quite satisfactory.
 
 Several important points to be considered in the construction
 of gas welded steel pipe lines have been touched on in order to
-indicate the need for careful planning so that satisfactory con-
-struction can be expeditiously accomplished.
+indicate the need for careful planning so that satisfactory construction can be expeditiously accomplished.
 
 The use of steel pipe lines is stillinitsinfancy. On account of
-the tremendous demands gas companies, public utilities cor-
-porations, power plants, oil and water companies, and others
-interested 1n pipe lines that must be tight, and of low installa-
-tion and maintenance cost, are turning to gas welded steel pipe
+the tremendous demands gas companies, public utilities corporations, power plants, oil and water companies, and others
+interested 1n pipe lines that must be tight, and of low installation and maintenance cost, are turning to gas welded steel pipe
 
-Pipe Welding 5,111
-
-lines, as they more effectively meet the demands of the con-
-sumers.
-
-s
-%
-Sy
-
-»
-DEVRBWTRY
-
-- -
+lines, as they more effectively meet the demands of the consumers.
 
 Fic. 8,193 -—Pennforge butt welding flanges. View showing installation of these flanges in the
 Harvard University power house.
 
-5,112 Pipe Welding
-
-What are the features of welded and screwed aes '
+What are the features of welded and screwed aes
 
 State the ne of welded joints over screwed
 joints.
@@ -5073,22 +3747,15 @@ joints.
 5. What is the object of the welding dam?
 
 6. Describe at length the welding of large pipes.
-:
-
-hNlO =—
 
 What are dollies?
-_ What is a firing line weld?
-| Describe: :in detail the method of firing line a
+What is a firing line weld?
+Describe: :in detail the method of firing line a
 10. Explain the process of bell hole welding. —
 11. Describe the various fittings used in pipe eeiting
 12. Explain the methods of closing pipe lines for testing.
 
-di.% of
-
 a EY EOD: Fenty Me YK FES ATE cry Beh ign te noe
-
-Soldering 5,113
 
 ## CHAPTER 209
 
@@ -5103,10 +3770,8 @@ Solder.—By definition, solder is @ fusible alloy. 'There are
 a great many varieties of solder. In electrical engineering, the
 solder used in practically always an alloy of tin and lead.
 
-As the electrical conductivity of such an alloy is usually about one-sev-
-enth that of copper, the best joint between copper conductors is made by
-bringing the copper surfaces as close together as possible and using a min-
-imum of solder.
+As the electrical conductivity of such an alloy is usually about one-seventh that of copper, the best joint between copper conductors is made by
+bringing the copper surfaces as close together as possible and using a minimum of solder.
 
 For jointing, especially where work has to be done in awkward positions,
 it is essential that the solder should have a plastic stage between its liquid
@@ -5118,15 +3783,12 @@ There are two general classes of solder:
 2. Hard.
 
 Soft solder is an alloy composed of lead and tin. Sometimes other
-metals are added to lower the melting point. _
+metals are added to lower the melting point.
 
 NOTE .—The soldering amateur will agree that soldering is a distinct art in itself, and
 
 while it looks easy, it is not; moreover, skill cannot be acquired without considerable practice;
-however, the information to be obtained in books will be found helpful, not only to the be-
-ginner, but also to the experienced workman.
-
-5,114 Soldering
+however, the information to be obtained in books will be found helpful, not only to the beginner, but also to the experienced workman.
 
 The following table gives the melting points and relative:
 hardness of various tin lead solders.
@@ -5134,7 +3796,6 @@ hardness of various tin lead solders.
 Melting Points and Hardness of Tin Lead Solders
 
 Percentage Percentage
-Melting i er SCOMeeilttingg
 
 Temp. Temp.
 Deg. : Deg.
@@ -5148,18 +3809,16 @@ Soft Solders and Fluxes for Various Metals
 
 Metal to be Soldered
 
-Alu- | Phos-! Bis-
-ie | phor |muth
 tin
 
 Tin | Lead | Zinc
 
-eee | une | ae | eee | Gee |
+eee | une | ae | eee | Gee
 
 Aluminum...... |Stearnn .........0-,023.) 20 25 | 3 ] 2
 
 ere aaa Chloride of zinc, rosin, or 66) 34
-"**** (1 Chloride of ammonia 63) 37
+(1 Chloride of ammonia 63) 37
 Copper...e~..- "=" ") | 60} 40
 ) OS: s eee Tallow or rosin. ........ 33| 67
 Block tin........ Chlonde-of zinc .......| 99) 1
@@ -5176,12 +3835,7 @@ Bismuth.........| Chloride of zinc.....e0-| 33] 33 34
 
 Common or plumber's solder consists of one part of tin to two parts of
 lead, and melts at 441° Fahr. Itis used by plumbers for ordinary work, and
-occasionally for electrical work where wiped joints are required, for in-
-stance, in large lead covered work.
-
-NX
-
-Soldering 5,115
+occasionally for electrical work where wiped joints are required, for instance, in large lead covered work.
 
 s Medium or fine solder consists of equal parts of tin and lead, or half and
 -  half,and melts at 370° Fahr. This solder is always used for soldering joints
@@ -5226,8 +3880,6 @@ transfuse with brass.
 
 NOTE .—Solder containing much tin is brittle.
 
-5,116 Soldering
-
 The melting point should approach as nearly as possible that of the
 metals to be joined so that a more tenacious joint is effected.
 
@@ -5250,9 +3902,7 @@ In preparing German silver solders, the copper 1s melted first, and then -
 zinc and nickel added simultaneously.
 Hard German Silver Solders
 
-These solders, sometimes called steel solders, contain a large propor-
-tion of nickel and are very strong. They require a very high heat for melt-
-ing, and usually cannot be fused without the aid of a bellows or blast. ~~
+These solders, sometimes called steel solders, contain a large proportion of nickel and are very strong. They require a very high heat for melting, and usually cannot be fused without the aid of a bellows or blast.
 
 No. 1. Copper, 35 parts; zinc, 56.5 parts; nickel, 9.5 parts.
 No. 2. Copper, 38 parts; zinc, 50 parts; nickel, 12 parts.
@@ -5269,8 +3919,6 @@ to a metal to make solder flow readily on its surface.
 The action of a flux is largely that of cleaning the surface, and of reducing
 any oxide on the surface to the metallic state.
 
-Soldering 5,117
-
 If a piece of sheet copper be carefully cleaned by means of emery cloth
 and heated over a gas flame, the surface will be seen to tarnish rapidly and
 assume a dark brown appearance. A small piece of rosin dropped on the
@@ -5278,16 +3926,14 @@ surface will melt, and when the liquid runs, the initial brightness of the
 surface will be found to reappear.
 
 There are a number of fluxes suitable for various kinds of soldering, but
-pine amber rosin is the best for electrical work as it does not cause corro-
-sion. A corrosive flux, such as zinc chloride solution (killed spirits) should
+pine amber rosin is the best for electrical work as it does not cause corrosion. A corrosive flux, such as zinc chloride solution (killed spirits) should
 be strictly excluded from any electrical work.
 
 The Underwriters' code permits the use of a flux composed
 of chloride of zinc, alcohol, glycerine, and water.
 
 This preparation is easily applied and remains in place. It permits the
-solder to flow freely and is not highly corrosive. This flux is made as fol-
-lows: Zinc chloride, 5 parts; alcohol, 4 parts; glycerine, 3 parts. Anhydrous
+solder to flow freely and is not highly corrosive. This flux is made as follows: Zinc chloride, 5 parts; alcohol, 4 parts; glycerine, 3 parts. Anhydrous
 zinc chloride crystals should be used dissolved in alcohol.
 
 The glycerine makes the flux adhesive. To prevent the alcohol igniting.
@@ -5305,8 +3951,8 @@ in the accompanying tables. According to Haswell, the proper
 fluxes to use are as follows:
 
 For iron, use borax For zinc, use chloride of zinc
-'"* tinned iron, use rosin 'lead, use tallow or rosin
-"* copper and brass, use sal- '" lead and tin, use rosin and
+tinned iron, use rosin 'lead, use tallow or rosin
+copper and brass, use sal- '" lead and tin, use rosin and
 ammoniac sweet oil
 
 Soldering Bolts or Bits.—The erroneously called soldering
@@ -5315,34 +3961,19 @@ point or edge and fastened to an iron rod having a wooden
 handle as shown in fig. 8,194. There is a great variety of bits
 which may be classed:
 
-5,118 Soldering
-
-4s
-y
-
-4 ot,
-
-Aj
-
 Fics. 8,194 to 8,197.—Various soldering bits, or so called "irons." Fig. 8,194, ordinary edge:
 bit; figs. 8,195 and 8,196, hatchet bits; fig. 8,197, pointed bit.
 
 POR en RDN SO SCN HASSAN PION LOMO OP IONOPHORE NANPA HAAN TITAN ANNAN NH NIN
-
-a {~ i , | i * | | |
 
 Fic. 8,198.—Chapman manual commutator fluxing machine. Jn construction, two cloth
 
 rollers carried by a spring actuated lever, dip into a trough of flux and press against
 commutator as armature is rolled by hand.
 
-Soldering 5,119
-
 1. With respect to their shape, or construction as:
 
 a. Pointed;
-b. Grooved;
-c. Hatchet.
 
 2. With respect to the method of heating, as:
 
@@ -5350,8 +3981,7 @@ a. Externally heated; 0b. Internally heated pessoa
 
 The various types of bit are shown in the accompanying cuts.
 
-Fics. 8,199 and 8,200.—Two methods of cleaning the bit. Fig. 8,199, filing; fig. 8,200, rub-
-bing on soft brick.
+Fics. 8,199 and 8,200.—Two methods of cleaning the bit. Fig. 8,199, filing; fig. 8,200, rubbing on soft brick.
 
 A heavy bit is preferable for joining work, as one weighing less than two
 pounds does not retain the heat long enough.
@@ -5367,15 +3997,11 @@ When the bit is at the right temperature, the heat can be felt when it is
 held close to the face. When hot enough clean up the surface of the copper
 with an old file.
 
-5,120 Soldering
-
 If the temperature be too high,
 the copper surface will be found to
 tarnish immediately, in which case
 the soldering bit must be allowed to
-cool slightly and the cleaning re-
-peated. When the surface only tar-
-nishes slowly a little flux is sprinkled
+cool slightly and the cleaning repeated. When the surface only tarnishes slowly a little flux is sprinkled
 upon it, and then rubbed with a
 stick of solder.
 
@@ -5385,8 +4011,7 @@ it is desired to tin, the superfluous
 solder is wiped off with a clean damp
 rag.
 
-The surface should then pres-
-ent a bright silvery appearance
+The surface should then present a bright silvery appearance
 when properly tinned.
 
 The operation of tinning the bit is
@@ -5400,53 +4025,11 @@ fit to be used again. No good work
 can be done with an uniinned or badly
 tinned bit.
 
-'
-&
-SS
 eee
-x
+
 vad
-~
-Ss
-es
-Ne
-sS
-s
-xs
-s.
-~~ >
-~Y
-~e
-~~
->
->>
 
-3s
-
-a
-w
-ow
--
-an. <
-~
 ane
-oo
-ww
-~~
-~
-~
-~
-"—
-~<s
-nal '
-oe
-°
-+
-~
->
-Sa 4
-
-### SE PAVADNS
 
 Soft Soldering.—The theory
 of soft. soldering is that: as the
@@ -5459,37 +4042,17 @@ metals to be soldered.
 Fic. 8,201.—Chapman ''Allatonce'"' electrically heated commutator soldering machine. View
 showing general appearance of machine.
 
-Soldering 5,121
-
 Soft soldering, as well as hard soldering, consists in welding
 together two or more pieces of similar or dissimilar metals by
 means of another metal of lower melting point.
 
-In order to solder successfully wire joints, the following in-
-structions should be followed:
+In order to solder successfully wire joints, the following instructions should be followed:
 
 1. Clean and tin the bit as shown in figs. 8,204 to 8,206.
 
-. = re PATENTED @ BURNER BLOCK BLUNT NEEOLE
-FR ai eS Sh RR a Se BURNER NO ORIFICE TO
-; IME SEF s 1S GASOLINE BE ENLARGED
-
-SATS
-(SRO
-
-SE Rew
+IME SEF s 1S GASOLINE BE ENLARGED
 
 ——aaw
-
-=
-
-nn a
-a>
-
-La ete eae
-= RS oa
-
-hh hh
 
 FOR
 
@@ -5497,14 +4060,11 @@ FOR
 
 ### CLEANING
 
-### NEEOLES
-
 ### BURNER ' BLOCK
 
 ### FOR KEROSENE
 
-é. 8,202 —Blectrical heating elements as used 6 on Cl apman ''Allatonce'" commutator sol-
-nts 1600° to ; 200 om a ahr. but operated at only
+é. 8,202 —Blectrical heating elements as used 6 on Cl apman ''Allatonce'" commutator solnts 1600° to ; 200 om a ahr. but operated at only
 
 asin ..
 
@@ -5525,8 +4085,6 @@ on a brick or block of other material which does not conduct heat readily.
 5. Sprinkle with rosin, lay the joint in the pool of solder and again
 sprinkle with rosin.
 
-5,122 Soldering
-
 6. Rub the joint with a stick of solder so that every crevice is thor-)
 oughly filled.
 
@@ -5539,29 +4097,18 @@ with an old file; fig. 8,205, rubbing the bit on the flux and solder, which may 
 placed on a piece of sheet tin as shown; fig. 8,206, removing surplus solder by giving each:
 side of the bit a quick stroke over a damp rag.
 
-| WRLR ASO WAKE =
-oh LL AA ALL 11S i: 11 |
-
-PUSLIITY)
-
-RUSTY)
+oh LL AA ALL 11S i: 11
 
 Fic. 8,207.—Picking up solder with a hot bit. This is the proper method for small work.
 Rest the bar of solder on some support as a brick or piece of wood and touch it with the
-end of the hot bit. Some of the solder will melt and remain on the bit. It is then trans-
-ferred to the part to be soldered, and if the surfaces be in proper condition and fluxed when
+end of the hot bit. Some of the solder will melt and remain on the bit. It is then transferred to the part to be soldered, and if the surfaces be in proper condition and fluxed when
 the bit touches the surfaces, the solder will leave the bit and cover the surfaces. In picking
 up solder from the stick, care should be taken not to leave the bit in contact with the
-solder too long or some of it will drop off. The larger the bit and area tinned, the more sol-
-der will the bit hold.
+solder too long or some of it will drop off. The larger the bit and area tinned, the more solder will the bit hold.
 
-Soldering 5,123
+7. Remove the bit, and lightly brush superfluous solder from the bottom of the joint. See that no sharp points of solder remain which may
+afterwards pierce the insulation.
 
-7. Remove the bit, and lightly brush superfluous solder from the bot-
-tom of the joint. See that no sharp points of solder remain which may
-: afterwards pierce the insulation.
-
-~
 Sons,
 
 '1G. 8,208.—Chapman full automatic thermostatic wafer soldering machine. In operation
@@ -5578,8 +4125,6 @@ vater, when most of the hard oxidized surface will scale off.
 NOTE.—A soft coal fire will quickly destroy the tinning on a bit.
 
 NOTE .—For soldering wire joints see Vol. VII.
-
-5,124 Soldering
 
 When the bit is first placed on the joint, the solder should run up inta
 the joint. This will occur only when the joint is well made and thoroughly.
@@ -5606,63 +4151,33 @@ is the most popular composition for soldering commutators. It is cheap, works ea
 does not throw out of hot commutators as readily as solders containing a higher proportion
 of tin.
 
-NOTE.—Soldering Temperature. The correct temperature for soldering must be deter-
-mined for each job and flux largely by experiment. It varies with the size of the work, the
-insulation of the commutator, the solder composition and the nature of the flux. Usual sol-
-dering ranges are between 500° Fahr. and 700° Fahr. Do not try to work around 800° Fahr.
+NOTE.—Soldering Temperature. The correct temperature for soldering must be determined for each job and flux largely by experiment. It varies with the size of the work, the
+insulation of the commutator, the solder composition and the nature of the flux. Usual soldering ranges are between 500° Fahr. and 700° Fahr. Do not try to work around 800° Fahr.
 as about this temperature the drosses become soluble in the solder and the solder is said to
 be "'burnt'' and will behave badly.
 
-Soldering 5,125
-
 In order to prevent the insulation on the wire near the joint being
-' damaged, the process of soldering should be carried out as quickly as
+damaged, the process of soldering should be carried out as quickly as
 possible, and for this reason the tendency to burn the insulation is less
 '+ with a hot bit (a quick bit) than with a cooler one.
 
-s
-
 Pics. 8,213 to 8,215.—Airco-Davis-Bournonville lead burning torch designed for "'burning'' or
 3 welding lead. By attaching a proper mixing head and using City gas instead of acetylene,
-» this torch may be used for soldering. The temperature with gas is about 3,500° Fahr-.
+this torch may be used for soldering. The temperature with gas is about 3,500° Fahr-.
 
-spn 5i) % are er '
+} a PRE hae ll
 
-} a PRE hae ll :
-ax ON abated dF oo
-v.25 Se fy
-: a ae ; <
+t - 2 axe ace en
 
-e : , Oe ; ¢ 5
-" t - 2 axe ace en '
-: : ws 8 ee ee eam GO
 5 . * Pe. eae me « —~
-; S . + '>
-Fo > _ q
-4 *
-
-: Ny
-FOF Eg 7 * Naw ;
-WOOO pi cr, -: al ¥ t J B ;
-
-PPS ros ee Ce Te ix 4 ¥ ¢ 4 a 5 4 * " 4
-} OOOO, ® j " - 5 \ sal
-° ; a .
-Ps ;
-.
-
-— |
 
 Fic. 8,216.—Chapman universal armeter used with carbon contact resistance soldering leads.
 Connect pair of No. 8 flexible leads to say O and 5V terminals.
 
 NOTE .—Block tin melts at 446° Fahr. and is used by many especially on very high speed
 and otherwise heavily worked commutators on account of its 88° higher melting point. Its
-viscosity is low, that is, it flows freely and it therefore may be necessary to fill the commu-
-tator lead slots by hand after it is soldered, but before it cools, using a piece of wire solder
-or fire bleck tin. ;
-
-5,126 Soldering
+viscosity is low, that is, it flows freely and it therefore may be necessary to fill the commutator lead slots by hand after it is soldered, but before it cools, using a piece of wire solder
+or fire bleck tin.
 
 Sweating.—In this operation the surfaces are cleaned, heated,
 and covered with a film of solder. The soldered surfaces are ther:
@@ -5673,7 +4188,7 @@ Sweating is often employed for the temporary holding together of work
 
 which has to be turned or shaped, and which could not be so conveniently;
 held by other methods. After having been turned or shaped, the separatior::
-of the parts is readily effected by the aid of heat. |
+of the parts is readily effected by the aid of heat.
 
 What is solder?
 
@@ -5684,7 +4199,7 @@ Of what does common or plumbers' solder consist?
 What is the requirement with respect to the melting
 point of solder?
 
-What is a soldering flux? |
+What is a soldering flux?
 Why are some fluxes undesirable for electrical work?.
 
 . What is the right name for a so-called soldering
@@ -5698,38 +4213,28 @@ Why are some fluxes undesirable for electrical work?.
 
 . Describe the operation of sweating.
 
-Electric Heating 5,127
-
 ## CHAPTER 210
 
 Electric Heating
 
-The application of electrical energy to domestic and. indus-
-trial heating has numerous advantages.
+The application of electrical energy to domestic and. industrial heating has numerous advantages.
 
-For domestic and some industrial purposes, heat is pro-
-duced by electricity by forcing it through resistance wires, raising
-the temperature of the latter, and applying the heat thus gen-
-erated to the articles to be heated.
+For domestic and some industrial purposes, heat is produced by electricity by forcing it through resistance wires, raising
+the temperature of the latter, and applying the heat thus generated to the articles to be heated.
 
-Heating Units.—By definition a heating unit or heating ele-
-ment sometimes called resistor, is a@ length of resistance metal in
+Heating Units.—By definition a heating unit or heating element sometimes called resistor, is a@ length of resistance metal in
 the form of a strip, or coiled wire through which electric current
 1s passed to give off heat. The heating unit becomes hot on
 account of the resistance it offers to the current.
 
 Selection of Heating Units.—The choice of material for a
-heating unit depends upon temperature conditions. All ma-
-terials used deteriorate to some extent when heated, some will
+heating unit depends upon temperature conditions. All materials used deteriorate to some extent when heated, some will
 withstand higher temperatures than others. Accordingly in
 the manufacture of resistance wires there are several kinds to
 meet the different conditions of service.
 
 Classification of Heating Units.—The numerous applications
-of heating units give rise to various types which may be classi-
-fied:
-
-5,128 Electric Heating
+of heating units give rise to various types which may be classified:
 
 1. With respect to form, as
 
@@ -5754,18 +4259,13 @@ of annealing of different sizes of wize.
 a. Domestic; '
 6b. Industrial.
 
-Ra
-
 Design of Heating Units.—To obtain satisfactory and effi
 cient results in electric heating the unit should be properls
 proportioned, located, placed and suitable for the service. -°
 
-Electric Heating 5,129
-
 Refractory materials surrounding resistor elements should possess high
 thermal conductivities, otherwise the resistors will not be able to dissipate
-their heat as rapidly as it is generated, and will be subjected to undue tem-
-perature rise.
+their heat as rapidly as it is generated, and will be subjected to undue temperature rise.
 
 As the flow of heat through materials is inversely proportional to the
 length of the path, the refractory material surrounding resistors should be
@@ -5773,42 +4273,23 @@ of minimum thickness consistent with safe mechanical and dielectric strength.
 
 Selecting Nichrome IV resistance wire for illustration, the accompanying
 table gives size of this resistance wire suggested for a given number of watts
-at 110 volts. The sizes selected are those which will operate at approxi-
-mately 1700° Fahr. in open coils and are suitable for radiant heaters, range
+at 110 volts. The sizes selected are those which will operate at approximately 1700° Fahr. in open coils and are suitable for radiant heaters, range
 units, etc.
 
 Nichrome IV Wire, 110 Volt Circuit
 
 Amperes | B. & S. Size Ohms 75° F Length
-| 19Ft. 4 Ins.
-
-### WOOWNL
-
-ONNUWw | NMUNAAYI! COBNM| CHUM
-
-"4
-
-a
-
-5.
-
-q
+19Ft. 4 Ins.
 
 4.5
 
-"9
-
-### NACHO
-
-| For other voltages divide the number of watts required at that voltage by
+For other voltages divide the number of watts required at that voltage by
 the voltage factor (next table). Select nearest number of watts in the 110
 volt table, multiply the length in 110 volt table by voltage factor. Suppose
 
 a device should require 550 watts and the supply voltage is 150. Factor for
 
 150 volts is 1.36 and = 405 watts. Nearest value in 110 volt table is
-
-5,130 Electric Heating
 
 400 and would require No. 23 wire. This size should be used on 150 vo
 but length should be 21 ft. 1.36 or 28 ft. 7 in.
@@ -5817,7 +4298,6 @@ Voltage Factors on Basis of 110 Volts
 
 Voltage... | 200 | 220 | 240. 32
 
-SS | | ose
 eee | ae | eee
 
 Factor..... | 1.82 | 2.0 | 2.18 | 0.29
@@ -5826,43 +4306,13 @@ Nichrome Wire—110 Volts
 
 Watts Amperes B. & S. Size Ohms 75° F Length
 250 2.27 25 43 6 21 Ft. 2 Ins.
-300 2.72 24 36.4 22 0
-350 3.2 23 31.0 24 0
-400 3.64 23 27.2 21 0
-450 4.10 22 24.1 23 5
-475 4.32 22 23.0 22 4
-500 4.55 22 21.8 21 0
-550 5.0 21 19.8 24 5
-575 59.23 21 18.9 23 2
-600 5.46 21 18.1 22 4
-615 516 20 17.7 27 6
-640 5.82 20 17.0 26 6
-660 6.0 20 16.5 25 8
-700 6.36 20 15.6 24 4
-750 6.81 19 14.5 28 5
 
 Nichrome Ribbon—110 Volts—\;,'' Width
 
 Watts Amperes Thickness Ohms 75° F Length
 400 3.64 .003 27.2 9Ft. 10 Ins.
-425 3.87 0035 25.6 10 9
-440 4.00 0035 24.7 10 5
-450 4.1 004 24.1 11 7
-475 4.32 0045 22.9 12 5
-500 4.55 0045 21.8 11 8
-525 4.77 005 20.8 12 6
+
 550 5.0 005 19.8 11 ll
-
-575 5.23 0056 18.9 12 10
-600 5.46 0056 18.1 12 3
-625 5.68 17.4 12 11
-650 5.91 0071 16.7 13 1]
-660 6.00 0071 16.5 13 10
-675 6.15 008 16.1 15 O
-700 6.36 008 15.6 14 7
-750 6.82 0089 14.5 15 l
-
-Electric Heating 5,131
 
 Another example follows taking the alloy ''Nichrome"' which is suitable
 for electric irons, toasters, hot plate, space heater, etc.
@@ -5883,9 +4333,6 @@ volts, but the length should be .91 X12ft.3 ins. or 11 ft. 2ins. The winding
 for 550 watts, 110 volts would then be 11 ft. 2 ins. of 4% X .0056 '""Nichrome''
 ribbon.
 
-colt | ot Eee | tT
-
-O 200 600 800 1000
 'TEMPERATURE IN D&G. C
 
 Fic. 8,218.— Temperature resistance curves for ''Advance and Lucero"' resistance wire showing
@@ -5894,8 +4341,6 @@ change in resistance of one ohm of wire with increasing temperature.
 Immersion Heaters.—These devices for heating liquids are
 made in a variety of forms to suit different conditions.
 The various methods of heating water may be classed:
-
-5,132 Electric Heating
 
 1. With respect to capacity, as
 
@@ -5909,18 +4354,13 @@ b. Immersed element.
 
 ### MICA INSULATION HEATING ELEMENT INTERCHANGEABLE
 
-### CAST IRON TOP PLATE :
-
-'
-wl
+### CAST IRON TOP PLATE
 
 ### HEATING ELEMENT CLAMPED
 
 CONCENTRATING HEAT iN
 
 ### ALLOY CONNECTING
-
-### TOPPLATE
 
 —— LEADS AND CONNECTIONS
 
@@ -5930,9 +4370,9 @@ CONCENTRATING HEAT iN
 
 ### HEATING CONDUCTOR
 
-COMBINATION PLUG | |
+COMBINATION PLUG |
 RECEPTACLE CAST IRON =N\ 4 THREE HEAT INDICATING
-OR TERMINAL 60X PRESSURE PLATE SS CONTROL SWITCH |
+OR TERMINAL 60X PRESSURE PLATE SS CONTROL SWITCH
 
 Fic. 8,219.—Electric disc stove. Adapted to laboratory and other industrial purposes. The
 maximum surface temperature is 750° Fahr.
@@ -5940,23 +4380,17 @@ maximum surface temperature is 750° Fahr.
 The so-called "'instantaneous"' is an example of the non-storing class and
 consists of a heating element and coil of pipe through which water passes,
 the rate of flow, and consequently the temperature being controlled by
-a valve. Nothing can be more ridiculous than to call these affairs '"'instan-
-taneous'"' heaters, as no physical change takes place instantaneously.
+a valve. Nothing can be more ridiculous than to call these affairs '"'instantaneous'"' heaters, as no physical change takes place instantaneously.
 
 The average use of water 1s from 20 to 125 gallons per family
 
 per day; temperature 104° Fahr. for bath purposes; 150° Fahr.
 for dish washing.
 
-If water be heated as required for use, a large demand, 2 to 5 k.w. is cre-
-ated for a short time and under usual conditions, does not secure a suf-
-ficiently low energy rate to be economical.
-
-Electric Heating 5,133
+If water be heated as required for use, a large demand, 2 to 5 k.w. is created for a short time and under usual conditions, does not secure a sufficiently low energy rate to be economical.
 
 The rate can be lowered by using a lower demand, .5 to 1 k.w. over a
-longer time or continuously, that is, heating the water in advance and stor-
-ing it in a suitable heat insulated tank.
+longer time or continuously, that is, heating the water in advance and storing it in a suitable heat insulated tank.
 
 The demand can also be lowered by arranging a double throw switch to
 permit use of either range or water heater, but not both at same time.
@@ -5975,15 +4409,11 @@ heating efficiency since there is practically no direct loss of heat to the atmo
 is imparted directly to the water. In addition with the heater inside the tank, it 1s usually
 a simple matter to insulate the entire tank to prevent losses by radiation.
 
-5,134 Electric Heating
-
 Fics. 8,223 to 8,226.—Cutler-Hammer tubular heater units of special shapes and sizes,
 showing the adaptability of these heater units.
 
 ### HOT WATER LINES
 
-INSULATED fp—y Fm QUINT
-—y a?
 CONDUCTORS =
 IN CONDUIT
 
@@ -5991,18 +4421,12 @@ IN CONDUIT
 
 ### BOILER
 
-of }—< neal
-
-AS
-
 ### SHUT OFF COCK
 
 ### DRAIN COCK
 
 Fic. 8,227.—Wiegand ''Chromalox,'' side arm type electric water heater attached to storage
 tank.
-
-Electric Heating 5,135
 
 ### THREE HEAT
 
@@ -6017,21 +4441,16 @@ SWITCH —*€
 
 ### ASBESTOS CORE
 
-SPIRAL ov iee
-WINDING
+### WINDING
 
-ASBESTOS SSS tt:
-CORE , A
-
-ea Y
+### CORE , A
 
 HEAVY AAA) =
-CANTON | = MMMM SA | a
+
 FLANNEL Ss MIU, f= or ATTACHMENT
-\ NW hig =a ~— PLUG
+
 OUTSIDE COVER OF >» eH
 HEAVY, WASHABLE = EW aeeecceerercevne —
-EIDERDOWN }
 
 ### OUTER WINDING OF
 
@@ -6046,8 +4465,7 @@ Fic. 8,228.—Electric warming pad. Jt consists of a flexible heating element wi
 cover of eiderdown which is removable and washable, so that the pad may always be kept in
 a sanitary condition. The pad is arranged for three heats, which are regulated by means of a
 switch so designed as to be easily operated in the dark, the sense of touch enabling the user
-to change from one heat to the other. It also contains two thermostats to prevent over-
-heating. Never leave a pad applied to a patient unable to remove same.
+to change from one heat to the other. It also contains two thermostats to prevent overheating. Never leave a pad applied to a patient unable to remove same.
 
 Efficiency and Gallons per 24 Hours
 
@@ -6073,15 +4491,12 @@ Intermittent | Outside circulation | 5,000 69 525
 Space Heaters.—As its name implies a space heater is for
 diffused instead of concentrated heat, such as room heating.
 
-5,136 Electric Heating
-
 For this purpose the unit is made from ribbon in the form of a
 strip.
 
 The electric energy required to heat an ordinary sized room when the
 
 outside air is near the freezing point ranges from about 1 to 2 watts. per
-cu. ft.
 
 Fic. 8,229.—Cutler-Hammer space heater with rheostat heat control.
 
@@ -6111,8 +4526,6 @@ wooden structure when the temperature inside is maintained at 70° Fahr.,
 while the outside is at 32°. Size of room 101010, having three 3x6
 windows. Here all surfaces must be considered.
 
-Electric Heating 5,137
-
 Area of windows =3 (3X6) =54 sq. ft.
 
 Area of walls =4 (1010) —54 = 346 sq. ft.
@@ -6141,19 +4554,15 @@ use of ordinary screws for mounting. There is no assembly.
 The number of heaters required depends on many factors. An outdoor
 crane cab in a northern state would require more heat than one in-a locality
 
-5,138 | Electric Heating
-
 where the winters are moderate. Also a cab of good construction will be
 warmed satisfactorily with fewer heaters than one of poor construction.
 
 The watt rating of a heater is determined by three ae
 considerations:
 
-1. Safe heater temperature. |
+1. Safe heater temperature.
 
-One that will insure a satisfactory length of life. |
-
-ae 2 |
+One that will insure a satisfactory length of life.
 
 2. Desirable operating temperature for the service.
 3. Fire risk.
@@ -6176,11 +4585,8 @@ which is at a much higher temperature than atmospheric or living room
 temperatures, the temperatures of the heater will be increased and it will
 therefore be over-rated and its life will be shortened. It is-also evident that
 if the heaters be crowded together so that there is an interchange of heat
-between them, one acting to heat its neighbor, the safe operating tempera-
-ture will be exceeded and the heaters may burn out unless the rating be
+between them, one acting to heat its neighbor, the safe operating temperature will be exceeded and the heaters may burn out unless the rating be
 reduced.
-
-Electric Heating 5,139
 
 Example.—Assume that a standard space heater is installed in.a plate
 warmer for keeping plates or dinner service warm. It is evident that while
@@ -6199,8 +4605,7 @@ the paraffin. Therefore, a lower rating would be called for, not on account
 of the life of the heater, but on account of operating conditions and results
 to be accomplished.
 
-Building Heating, Thumb Rules.—As a rough approxima-
-tion, a rule of thumb is as follows:
+Building Heating, Thumb Rules.—As a rough approximation, a rule of thumb is as follows:
 
 30 Watts per cu. ft. (See A)
 Plus 3.5 watts per sq. ft. of wall area (See B)
@@ -6220,13 +4625,9 @@ C'. For measuring glass area, the overall area of the frame is measured and
 this area is deducted from the total wall area.
 
 The above rule assumes a temperature elevation of 70° Fahr.
-or, in other words, external temperature of zero, room tempera-
-ture of 70° Fahr. If the room adjoin other heated rooms,
-allowance must be made, based on the difference in tempera-
-ture between the room under consideration and the adjoining
+or, in other words, external temperature of zero, room temperature of 70° Fahr. If the room adjoin other heated rooms,
+allowance must be made, based on the difference in temperature between the room under consideration and the adjoining
 rooms.
-
-5,140 Electric Heating
 
 This thumb rule is for rough estimates only. It will agree quite closely
 with more complicated calculations in some cases, but on the other hand,
@@ -6243,8 +4644,7 @@ Fic. 8,234.—Arrangement of internal circuits for heaters in which each resista
 controlled by a separate switch.
 
 Fic. 8,235.—Internal connections of a cooker. T, terminals; PS, parallel or series switch;
-S, ordinary switch; S', two pin socket for plug connection; R,R', resistance sections. Cur-
-rent is turned on or off from R,R' at S, while PS. puts R and R' either in parallel or series. .
+S, ordinary switch; S', two pin socket for plug connection; R,R', resistance sections. Current is turned on or off from R,R' at S, while PS. puts R and R' either in parallel or series. .
 S', allows of the attachment of an auxiliary heater. This arrangement is applicable to
 other types of heater, and S', would then generally be omitted.
 
@@ -6253,10 +4653,7 @@ Fic. 8,236.—Arrangement of two circuit heater with pilot lamp L. When either s
 put on, L lights up. The top switch controls one-third of the heater resistance, and the
 bottom switch two-thirds.
 
-30 (12109)
-
 Plus 3.5 (12K 102) +(12 9X2) +(10 K9 X2) —(8X5X3)
-Plus 35(3 X53)
 
 Equals 4,022 watts. Eight 500 watt space heaters should be used, which
 will give a total of 4,000 watts.
@@ -6269,20 +4666,10 @@ room adjoining the 10 ft. wall heated to 70° Fahr. and that adjoining the 12
 ft. wall 60° Fahr. The room beneath is heated to 70° Fahr. Two complete
 air changes per hour.
 
-Electric Heating 5,141
-
-35 X2(12*10X9)
-Plus 3.5(12*10*1)+(12*9x1)+(10 9X1)
-+O 12x9x1)-3— x5 X3)
-
-Plus 35(3 X5 x3)
-
 Equals 3,338 watts. Seven 500 watt space heaters should be used, which
 will give a total of 3,500 watts.
 
 Main Sw7cn
-
-### AIEATERS
 
 Fic. 8,237.—Control panel with switches, fuses and thermostat for the automatic regulation of
 heat.
@@ -6295,8 +4682,6 @@ _is, to supply the heat of absorption and latent heat.
 
 2. Provide for changes in operating temperature.
 
-5,142 Electric Heating
-
 3. Provide for operation at uniform temperature where the
 heat requirements vary during operation.
 
@@ -6306,8 +4691,7 @@ common use:
 1. By dividing the heater into sections and changing the voltage impressed
 on each section by connecting the sections in different combinations.
 
-F1IG. 8,238.—Two heaters and snap switch. High, full heat, heaters 1 and 2; medium, one-
-half heat, heater 2 only; low, one-quarter heat, heaters 1 and 2; off.
+F1IG. 8,238.—Two heaters and snap switch. High, full heat, heaters 1 and 2; medium, onehalf heat, heater 2 only; low, one-quarter heat, heaters 1 and 2; off.
 
 Fic. 8,239.—Three heaters and snap switch. High, full heat, heaters 1, 2 and 3; medium,
 two-thirds heat, heaters 2 and 3 only; low, one-third heat, heater, 1 only; off.
@@ -6326,32 +4710,21 @@ wattages.
 
 4. By connecting the heater intermittently to the line, opening the circuit
 when the maximum operating temperature is reached and closing the circuit
-when minimum operating temperature is reached. This is the method gen-
-erally employed in automatic temperature control. A thermostat or other
-
-Electric Heating 5,143
+when minimum operating temperature is reached. This is the method generally employed in automatic temperature control. A thermostat or other
 
 temperature responsive device is used and for low wattages, opens and closes
 the circuit directly, or for higher wattages actuates a suitable magnet switch.
 
-5. By a time switch for connecting and disconnecting the heater at pre-
-determined times.
+5. By a time switch for connecting and disconnecting the heater at predetermined times.
 
 Figs. 8,237 to 8,240 show how some of the methods of regulation just
 described are accomplished.
 
 ### SINGLE ELEMENT
 
-A
-
 ### FLEXIBLE CORD
 
-: / |
 PLUG 5 SWITCH S DOUBLE ELEMENT 5
-: g
-f =) (
-y ¢
-on am a aw cmp ao ow am om ow ow om ow oe oe os oe oe os os oe es. > os cs se ad
 
 Fic. 8,241.—Arrangement of internal circuit for heaters giving three heating values. In
 the diagram A, represents one-third of the heating circuit; BB, two-thirds. With switch
@@ -6360,9 +4733,7 @@ heater works with full power. At T, are two terminals to which the ends of the f
 from the plug are secured.
 
 Non-Metallic Heating Units.—These are suitable for high
-temperature service such as applications in which the tem-
-peratures range from 1900° Fahr. (1038° C.) to 2750° Fahr.
-(1510° C.). |
+temperature service such as applications in which the temperatures range from 1900° Fahr. (1038° C.) to 2750° Fahr.
 
 This temperature range covers the heat treatment of high speed steels,
 firing of ceramic ware and the heating of metals for forging. Non-metallic
@@ -6378,11 +4749,6 @@ units depend?
 
 3. Give classification of heating units.
 
-5,144 Electric Heating
-
-11.
-12.
-
 Give calculation for heating units for electric irons,
 toasters, etc.
 
@@ -6393,18 +4759,16 @@ ordinary sized room in freezing weather?
 
 Give calculation for house heating.
 
-What name is given to heating units used for house :
+What name is given to heating units used for house
 heating? |
 
 . How is the watt rating of a heater determined?
 
-What is the maximum safe operating temperature of '
+What is the maximum safe operating temperature of
 a space heater?
 
 Give building heating thumb rules.
 Describe the regulation of heat.
-
-Electro-Plating 5,145
 
 ## CHAPTER 211
 
@@ -6414,8 +4778,7 @@ Briefly, electro-plating is the act or process of depositing metal
 by electric means.
 
 This process consists in obtaining an electro-deposit of one
-metal, used as an anode, upon some metallic article which is con-
-nected to form the cathode in an electrolytic bath, that is the
+metal, used as an anode, upon some metallic article which is connected to form the cathode in an electrolytic bath, that is the
 object upon which it is desired to deposit the metal 1s connected
 with the negative pole of the source of current, and the metal
 which is to be deposited is connected with the positive pole.
@@ -6429,8 +4792,7 @@ surfaces with powdered graphite or plumbago, as in the case of electrotyping.
 
 The principle of electro-plating is illustrated in fig. 8,242.
 
-The Current Supply for Electro-Plating.—Low pressure di-
-rect current is used for this purpose, the pressure used being
+The Current Supply for Electro-Plating.—Low pressure direct current is used for this purpose, the pressure used being
 from 1 to 16 volts, depending upon the nature of the electrolyte
 employed, and the rate at which the plating is accomplished.
 
@@ -6439,8 +4801,6 @@ metals.
 
 With a high current density the deposit may be crystalline or powdery,
 and will not adhere well to the cathode. What is reauired is to regulate
-
-5,146 Electro-Plating
 
 the current so that the deposited metal may be smooth and adherent, and
 capable of being burnished without being detached.
@@ -6453,32 +4813,23 @@ blowing in air.
 
 ge ELECTROLYTE q= SUSPENSION RODS
 
-i LS Sa A
-
 | mill
-
-\
 
 oo ANODE |
 
 Fic. 8,242.—Process of electro-plating. By definition, electro-plating is the process of coating
 metal articles with thin films of other metals which are obtained by electrolysis from the solution
-of thetr salts. As here shown, the vat contains an electro-plating solution (called the electro-
-lyte) into which the article to be plated (called the cathode) is immersed and connected to
-the negative terminal of the current source. A strip of metal (called the anode) more posi-
-tive than the cathode is also similarly immersed in the electrolyte and connected to the
+of thetr salts. As here shown, the vat contains an electro-plating solution (called the electrolyte) into which the article to be plated (called the cathode) is immersed and connected to
+the negative terminal of the current source. A strip of metal (called the anode) more positive than the cathode is also similarly immersed in the electrolyte and connected to the
 positive terminal of the current source. Current from the dynamo causes the metal of the
 anode to dissolve and pass over to the cathode upon which it is deposited as a thin coating.
 
 Dynamo and Dynamo Sets for Electro-Plating.—Since it is
-not economical to transmit low voltage heavy amperage cur-
-rent a long distance, the current is usually generated in the
+not economical to transmit low voltage heavy amperage current a long distance, the current is usually generated in the
 electro-plating plant. Accordingly, a special type dynamo is
 
 used either belted to any power source or direct connected to
 a motor.
-
-Electro-Plating 5,147
 
 Both shunt and compound wound dynamos may be used
 either self excited or separately excited.
@@ -6487,17 +4838,9 @@ The so called ''separately excited shunt wound dynamo'"' is
 simply a dynamo in which the entire field current is furnished
 from outside.
 
-— 7.
-g/)'/
-L/ Ts
-
 Fic. 8,243.—Reliance commutator. In construction, the segments are built on a spider type
 shell which is keyed to the shaft. The ears of the bars are separated so that air can circulate
 through winding and around commutator.
-
-4 >
-*
-f ,
 
 Strictly speaking, it is not shunt wound, but the above expression has
 corre into common use. probably in contrast with the term ''separately
@@ -6505,14 +4848,11 @@ excited compound wound."' Except in the smaller sizes, separate excitation
 produces superior plating characteristics. On account of the very heavy
 current output electro-plating dynamos usually have two commutators.
 
-The choice of the type dynamo to use depends on the condi-
-tions met with in the plant.
+The choice of the type dynamo to use depends on the conditions met with in the plant.
 Assume the use of a plating tank into which similar work is being placed
 
 and from which finished work is being removed continually. In order to
 maintain uniform current density as additional work is placed in the tank,
-
-5,148 Electro-Plating
 
 the ampere rate must increase as the plating surface is increased. Such a
 condition calls for one design. Then assume the use of a tank filled with
@@ -6542,18 +4882,14 @@ most economical and most satisfactory equipment.
 Construction details of electro-plating dynamos and dynamo
 sets are shown in figs. 8,243 and 8,244.
 
-Note in figs. 8,243 and 8,244 the large commutator and very heavy in-
-ductors necessary to carry the large current.
+Note in figs. 8,243 and 8,244 the large commutator and very heavy inductors necessary to carry the large current.
 
-Electro-Plating 5,149
-
-| Electrolyte or Plating Solutions.—These may contain the
+Electrolyte or Plating Solutions.—These may contain the
 'necessary constituents in various percentages. The following
 solutions are considered the best in general practice.
 
 A good 14 carat gold plating solution is composed of water, 1 gallon;
-potassium cyanide, 10 ounces; gold chloride, 10 pennyweights; and a suf-
-ficient amount of carbonate of copper to give the desired shade. A 14 carat
+potassium cyanide, 10 ounces; gold chloride, 10 pennyweights; and a sufficient amount of carbonate of copper to give the desired shade. A 14 carat
 gold anode should be employed.
 
 Fics. 8,245 and 8,246.—Reliance armature coils. They are made of strands of insulated
@@ -6574,19 +4910,15 @@ equivalent of cyanide of potassium (65 parts). The silver plating solution
 is made up with distilled water, the proportion by weight of silver per
 gallon of water varying from 14 ounce to 5 ounces or more.
 
-5,150 Electro-Plating
-
 The best nickel plating solution is that which is made up of the
 double sulphate of nickel and ammonium, in the proportion of 12 ounces
 to one pound of the double salt to each gallon of solution. The crystals
 should be dissolved in boiling water in a wooden tub, frequently stirred
-and cold water added to make up the desired quantity. After the solu-
-tion has become cool it should be filtered through a large volume, 1,000
+and cold water added to make up the desired quantity. After the solution has become cool it should be filtered through a large volume, 1,000
 gallons or more, held in large lead lined tanks.
 
 Electro-plating with copper is employed chiefly to form a coating
-on iron, steel, tin, zinc, lead, britannia metal and pewter articles pre-
-paratory to silver plating the same, for the reason that silver will not
+on iron, steel, tin, zinc, lead, britannia metal and pewter articles preparatory to silver plating the same, for the reason that silver will not
 adhere perfectly to those metals, while on the other hand, silver will adhere
 perfectly to copper and copper to the soft metals.
 
@@ -6596,26 +4928,19 @@ dynamo set. Dynamo is driven by synchronous motor.
 The copper plating solutions employed for this purpose, and for
 electrotyping are acid solutions of copper sulphate.
 
-\
-
 An alkaline formula which yields a solution aaa a fine
 grained deposit of copper is:
 
 Water, 1 gal.; sodlisn cyanide, 314 0zS.; copper cyanide, 3 ozs.; sodium
 carbonate, 2 ozs.; sodium hyposulphite, 44 oz.
 
-Electro-Plating 5,151
-
 A very simple acid copper plating bath may be compounded
 
 as follows:
 
-Water, 1 gal.; copper sul-
-phate, 5 ozs.; sulphuric acid,
-1 Oz.
+Water, 1 gal.; copper sulphate, 5 ozs.; sulphuric acid,
 
-For brass plating a solu-
-tion prepared as follows is
+For brass plating a solution prepared as follows is
 excellent:
 
 Water, 1 gal.; sodium cyan-
@@ -6624,8 +4949,7 @@ ide, 9°ozs.; copper cyanide, 5
 
 OzS.; zinc cyanide, 2 ozs.; sodi-
 
-um carbonate, 4 0zs.; ammoni-
-um chloride, 14 oz.
+um carbonate, 4 0zs.; ammonium chloride, 14 oz.
 
 Brass may be colored
 with proper solutions. The
@@ -6633,18 +4957,15 @@ following produces black:
 
 Ammonia, 1 gal.; copper car-
 
-bonate, 14 ozs.; sodium car-
-bonate, 8 ozs
+bonate, 14 ozs.; sodium carbonate, 8 ozs
 
 For brown color:
 
 Water, 1 gal.; caustic soda,
 3144 ozs.; antimony sulphide,
-4 oz.
 
 Fic. 8,248.—Reliance steam boiler. A boiler is necessary in large plating rooms where hot
-water is not available, or where close temperature regulation of hot solutions is desired-
-In general practice, one boiler h.p. will heat 25 gals. of water or its equivalent from 60°
+water is not available, or where close temperature regulation of hot solutions is desiredIn general practice, one boiler h.p. will heat 25 gals. of water or its equivalent from 60°
 (boiling) Fahr. in one hour, to a temperature rise of 150°. Using this as a basis gives the
 following formula for determining the h.p. required for a given job:
 
@@ -6657,8 +4978,6 @@ Temperature rise in this formula is the difference between 60° Fahr. and the te
 to which solution is to be heated. Time in hours is the time allowed to bring the solution
 to the required temperature. It is usually not practical to figure more than 3 hrs. to heat
 a solution.
-
-5,152 Electro-Plating
 
 A good bronze plating solution may be prepared as follows:
 
@@ -6676,10 +4995,7 @@ be used.
 Anodes for the respective solutions should be alloyed as:
 follows:
 
-CODper Plates c.ccanebedsiae wus 99% copper Lene pistes Ose eGa wea, J 7p Zine
-
-"BYONZE daa aussie 44 Gee " aGranmGsononnuee ta 10% "*°
-Brass: ~~" savsnseareceemasa OOF, | (eeesieneeasneesers 20% "* '
+Brass: ~~" savsnseareceemasa OOF, | (eeesieneeasneesers 20% "*
 
 Properties of Electro-Plating Elements.—The accompanying
 table* shows the elements used in electro-plating, arranged in
@@ -6690,8 +5006,7 @@ in the table, and negative to those coming before it. The difference in
 voltage is roughly indicated by the spacing between the elements tinder
 consideration.
 
-For a minimum of electrolytic action, under conditions favor-
-able to such action, only metals standing near together in the
+For a minimum of electrolytic action, under conditions favorable to such action, only metals standing near together in the
 series should be placed in physical contact.
 
 Reference to this table will indicate at a glance the advisable metal
@@ -6701,28 +5016,23 @@ coatings from a permanent or protective standpoint.
 weight, common valences, electro-chemical equivalent in grams per ampere per second and the
 ampere hours required to deposit one gram of these clemcents.
 
-Electro-Plating 5,153
-
 Cast Anodes Give Best Results.—As an example, a good
 solution for plating objects with copper, is made by dissolving
 'in a gallon of water, 10 ozs. of potassium cyanide, 5 ozs. of
 opper carbonate, and 2 ozs. of potassium carbonate.
-
-i ne BS Rep +
 
 Properties of Electro-Plating Elements
 
 Electro-Chemical Ampere Hours
 
 Bedi EE ARE NE Ee MEG EN ITI I EG AIETUINDSOBGE AS: Ce
-i)
 
 Specific Atomic Common | Equivalent Grams
 Element Symbol Gravity Weight Valences Per Ampere Per ssblrsiery
 Second Depo
 Potassium............ K. 0.870 39.10 1 . 000406 0.685
 < UM... ee eee eee. NA. 0.971 23.00 1 000239 1.163
-; | Barium.............. BA. 3.80 137.37 2 .000713 0.390
+| Barium.............. BA. 3.80 137.37 2 .000713 0.390
 p Caletam':..23.0y dei: CA. 1.54 40.07 2 000208 1.338
 Magnesium........... MG. 1.74 24.32 2 000126 2.202
 Aluminum........... AL. 2.70 27.1 3 000094 2.969
@@ -6734,7 +5044,7 @@ Zinc... . ee we aeeee ZN. 7.00 65.37 2 000339 0.820
 Cadmium... °........ CD. 8.65 112.4 2 000582 0.477
 Iron I FE. 7.28 55.9 3 000193 1.439
 Tee Spee ee eee OUS FE. 7.28 55.9 2 000289 0.196
-| copelt IC CO. 8.72 58.97 3 000203 1.365
+copelt IC CO. 8.72 58.97 3 000203 1.365
 See Sete Ses OUS CO. 8.72 58.97 2 000305 0.909
 weed IC NI. 8.80 58.68 3 000202 1.371
 PONE Bie ee aren OUS NI. 8.80 58.68 2 000304 0.914
@@ -6752,7 +5062,7 @@ OUS BI. 9.78 208.0 3 0007185 0.387
 Arsenic ............. IC AS. 5.73 74.96 5 000155 1.790
 OUS AS. 5.73 74.96 3 000259 1.073
 Copper.............. IC CU. 8.90 63.57 2 000329 0.843
-: OUS CU. 8.90 63.57 1 000659 0.422
+OUS CU. 8.90 63.57 1 000659 0.422
 Mercury,. «... IC HG. 13.595 200.6 2 001039 0.268
 Bike OUS HG. 13.595 200 .6 1 002079 0.134
 esriemiee SieiGiassin es AG. 10.5 107.88 1 001118 0.249
@@ -6763,25 +5073,19 @@ eee oomgne OUS AU. 19.3 197.2 1 0.136
 
 .002040
 
-Pickles and Dips.— While the best polish 1s secured by grind-
-ing and wheel polishing, many articles are best cleaned chem-
-ically by immersing them in solutions which dissolve the scale,
+Pickles and Dips.— While the best polish 1s secured by grinding and wheel polishing, many articles are best cleaned chemically by immersing them in solutions which dissolve the scale,
 grease, etc., adhering to them, leaving a clean but rough surface
 which must be polished afterwards.
-
-5,154 Electro-Plating
 
 Black Pickle for Iron.—Sulphuric acid 66° Baume, 1 part;
 
 water, 15 parts. Used chiefly for removing scale from castings
 and forgings.
 
-Bright Pickle for Iron.—Water, 10 quarts; concentrated sul-
-phuric acid, 28 ozs.; zinc, 2 ozs.: nitric acid, 12 ozs. Mix in
+Bright Pickle for Iron.—Water, 10 quarts; concentrated sulphuric acid, 28 ozs.; zinc, 2 ozs.: nitric acid, 12 ozs. Mix in
 the order named. The pickle leaves the metal bright.
 
 [RON 0)
-SPINE Gece
 
 Fics. 8,249 to 8,253.—Various types of anode. Anodes serve two purposes, 1, to electrify
 the solution; 2, maintain the metal content. The solution can be electrified by any anode
@@ -6796,27 +5100,22 @@ Dip for Copper, Brass, etc.—Sulphuric acid, 66° Baume, 50
 parts by weight; nitric acid, 36° Baume, 100 parts by weight;
 common salt, 1 part by weight; lamp black, 1 part by weight.
 
-Electro-Plating 5,155
-
 Forgings, punchings, etc., are pickled in dilute sulphuric acid
 to remove scale, and then cleaned and brightened by dipping
 in the above solution.
 
 Cyanide Dip for Brass.—Potassium cyanide in ten times its
-weight of water is used as a preliminary dip when plating ar-
-ticles that would have the polish injured by the acid dips.
+weight of water is used as a preliminary dip when plating articles that would have the polish injured by the acid dips.
 The work must be allowed to remain longer in this than in
 the acid solutions.
 
-_ Pickle for German Silver.—German silver may be cleaned
+Pickle for German Silver.—German silver may be cleaned
 in the bright dip for brass, or in a preliminary pickle of dilute
 nitric acid and water (12 to 1), followed by a dip of equal
 parts of sulphuric and nitric acids, and then by rinsing in
-boiling water and drying in sawdust. Use sawdust that con-
-tains no tannin.
+boiling water and drying in sawdust. Use sawdust that contains no tannin.
 
-Tanks.—These vessels (sometimes called vats) are for hold-
-ing the electrolyte or plating solution. There are four general
+Tanks.—These vessels (sometimes called vats) are for holding the electrolyte or plating solution. There are four general
 types.
 
 1. Wood;
@@ -6827,8 +5126,7 @@ types.
 
 4, Earthenware.
 
-Wood tanks may be obtained either unlined, or with an as-
-phaltum lining or lead lined.
+Wood tanks may be obtained either unlined, or with an asphaltum lining or lead lined.
 
 Unlined wood tanks are used for cold rinses and sometimes for hot rinses.
 
@@ -6836,28 +5134,15 @@ Asphalt lined tanks are used principally for acid plating solutions, such
 as nickel, copper sulphate and zinc sulphate baths.
 
 Lead lined wood tanks are used for the same type of solutions as the
-asphaltum lined tank and must be used where heated solutions are em-
-ployed.
+asphaltum lined tank and must be used where heated solutions are employed.
 
-5,156 Electro-Plating
-
-Steel tanks are recommended for all kinds of alkaline solu-
-tions, such as cadmium, brass, cyanide copper, etc., and for
+Steel tanks are recommended for all kinds of alkaline solutions, such as cadmium, brass, cyanide copper, etc., and for
 cleaning solutions and hot water rinses. Unlined tanks are
 used for such solutions.
 
 For chromium plating solutions, lead lined steel tanks are
 used. Rubber lined steel tanks are now favored by many for
-nickel solutions, and for various acid dips where only earthen-
-ware was formerly considered suitable.
-
-|
-|
-|
-
-|
-
-|
+nickel solutions, and for various acid dips where only earthenware was formerly considered suitable.
 
 = iii Rees:
 
@@ -6870,11 +5155,8 @@ in the jewelry trade as containers for silver and gold solutions.
 Unlined, they are used for containing cleaning solutions and for water
 rinses.
 
-Earthenware tanks can bé used for all kinds of plating solu-
-tions and acid dips with the exception of solutions and dips
+Earthenware tanks can bé used for all kinds of plating solutions and acid dips with the exception of solutions and dips
 containing hydrofluoric acid.
-
-Electro-Plating 5,157
 
 Being impervious to other acids, they are used extensively for pickling,
 metal etching and similar acid processes.
@@ -6886,8 +5168,7 @@ employed being a solution of silver nitrate containing from 15
 to 20% of the salt. The rate of hydrogen similarly set free
 by a current of one ampere is .00001044 gramme per second.
 
-Therefore, knowing the amount of hydrogen thus set free, and the chem-
-ical equivalents of the constituents of other substances, the weight of their
+Therefore, knowing the amount of hydrogen thus set free, and the chemical equivalents of the constituents of other substances, the weight of their
 
 elements that will be set free or deposited in a given time by a given current,
 can be calculated.
@@ -6908,7 +5189,6 @@ An ampere of current maintained for one hour, which serves
 as a unit of quantity called the ''ampere hour'' represents:
 Gramme................ .0376 ©) 2) eee ee ne 58
 
-Ounce Troy............. 00121 Ounce Avoirdupols..... .00132
 which multiplied by the chemical equivalent will furnish the weight of
 any substance deposited.
 
@@ -6920,16 +5200,12 @@ rough and irregular surfaces require a slower rate.
 
 The length of time for plating depends on the current rate.
 
-5,158 Electro-Plating
-
 Upon this depends the rapidity of the ions being deposited on the objects
 to be plated, and the thickness of the particular plates desired.
 
 Although the average materials are plated at from 6 to 12
 volts the following table gives the voltage for various metals:
 
-COpper IN SUIONA te sk eae penn betta et eece es ee ewers 1.5to 2.5 volts
-(CODDer IN Cy ane. ts todo Sere tees one ee eee aaa 4 "6 a
 Silver in cyanide.......... ee ee ee ee eee eee ie / .
 Gold 31 CV aC crs secu sandig don gcienearno-ene wench eseteaee ee kebares 5." 3 =
 Nickel in Sulphate s:2..05360208dnansyosiaxdackewseiexeco Deo
@@ -6941,16 +5217,12 @@ following:
 Amperes required to plate one square foot.
 
 Solution of Metal. Average amperes
-IN TOC anata oe ete ards est eraser xs a ed ede es a as 4
-Mls Seve srseet erty tit hg saan ease ae eherk eens Sei ee eee 6to 8
-MD GOM Ces sire acess Gus eee. pat use Se aeaea. eae Ge al aude ee Ob eo 6to 8
+
 SiG) 5) 01 =) ca cree a a ee ee ce 6to 8
-INCIG COPE 3 ees ed bo Reo) od de dr ee Bae 10 to 12
-oo) dS) Ge ae ee ee ee re ee ree 2
+
 CO) CM iaex-ue a aie phate teas se eine andi ales oe Dee 1%
-NIN occ a os pret eect a ted GLA G, Eek got ea A ea ee ee 10
+
 CAG sco, op are rn eee ocr Sect eee Sue ech Be ee a 6to 8
-TOT UI acs oe ob teadee tet cae Bodie vanid da wrod atodaterin eae Gok Ga ] per sq. in
 
 Example. If the plater figure on plating with nickel, about 20 sq. ft. of
 surface, by referring to the table, it will be seen that each sq. ft. requires
@@ -6963,13 +5235,8 @@ between six and eight amperes, which would mean about 70 additional
 amperes, or the total for the two would approximate 150. If this be the
 maximum output, a 150 ampere dynamo would be sufficient.
 
-Electro-Plating 5,159
-
 TO ARMATURE TO . TO ARMATURE.
 CONDUCTING RING Bo CONDUCTING RING
-fe N
-
-=n Oo Ge
 
 ### PULLEY OR COUPLING END
 
@@ -6978,16 +5245,6 @@ fe N
 ### INNER OUTER
 
 ### CONDUCTING RING CONDUCTING RING
-
-' '
-Q r
-8 '
-| j
-® i
-8 ry
-] |
-r) (
-' '
 
 Fics. 8,255 and 8,256.—Connecticut terminals connected for two wire system. The bar K
 connects the two short blocks. Also note that on the pulley end the cables from the upper
@@ -7001,9 +5258,7 @@ connected to the main conductors leading direct to the work.
 
 ### CONDUCTING RING CONDUCTING RING
 
-TO peerless
-ER
-CONDUCTING RING
+### CONDUCTING RING
 
 ### TO ARMATURE
 
@@ -7011,8 +5266,6 @@ CONDUCTING RING
 
 ### CONDUCTING RING
 
-=a QO © owe) ©
-O OO; JO O
 "1GS. 8,257 to 8,259.—Connecticut terminals connected for three wire system. Note that the
 bar K, has been removed, also it will be seen that the cable lugs A and D, on the pulley end
 have been interchanged. That is the cable from the inner conducting ring is now connected
@@ -7021,8 +5274,6 @@ side from the pulley remains unchanged. A separate lug H, is now added and the t
 
 wires are thus obtained. Single voltage is obtained between lines H and B, and between
 B and F, while double voltage is obtained between lines H and F.
-
-5,160 Electro-Plating
 
 Electrolyte Required.—Ten gallons of solution to one sq. ft.
 of work surface are average figures for calculation. A gallon
@@ -7035,11 +5286,6 @@ tanks as other conditions in the plant will permit.
 
 ### FIELD
 
-U) e
-Sd —-~7
-
-t
-
 . ) TO FIELD
 FIELD .
 
@@ -7051,11 +5297,9 @@ BLOCKS. . BLOCK
 
 ### TO FIELD
 
-Fics. 8,260 and 8,261.—Connecticut,self-excited dynamo field connections. When the mac-
-hine is shipped from the factory a short jumper connects the small terminal block to the
+Fics. 8,260 and 8,261.—Connecticut,self-excited dynamo field connections. When the machine is shipped from the factory a short jumper connects the small terminal block to the
 main block to complete the field circuit. In installing the dynamo this jumper should be
-removed and the field rheostat connected between the points from which the jumper was re-
-moved, using two separate wires for the purpose.
+removed and the field rheostat connected between the points from which the jumper was removed, using two separate wires for the purpose.
 
 Dynamos of 200 amperes and less are not usually equipped with field
 rheostats. These have the fields excited direct from the main terminal
@@ -7068,22 +5312,15 @@ is connected to the main terminal block and the other side is connected to a
 small terminal block on the side of the frame. Fig. 8,260 shows field rheostat
 connection.
 
-Electro-Plating 5,161
-
-The accompanying illustrations show connections for Con-
-necticut dynamos and illustrate in general the method of con-
-necting dynamos.
+The accompanying illustrations show connections for Connecticut dynamos and illustrate in general the method of connecting dynamos.
 
 Line Connections.—In general the line connections should be
 made as here directed.
 
 TO D.C. LINE
 
-### FIELO
-
 Fic. 8,262.—Connecticut separately excited dynamo. In this machine the field is excited
-from a separate source of d.c. of the same voltage as that stamped on the name plate fol-
-lowing the word excitation. A separately excited machine is always supplied with a field
+from a separate source of d.c. of the same voltage as that stamped on the name plate following the word excitation. A separately excited machine is always supplied with a field
 rheostat and the connections should be made as here shown. By the use of the field rheostat
 the voltage can be lowered to a small value with stability.
 
@@ -7099,43 +5336,21 @@ shown in fig. 8,264. The tanks should be divided so that approximately the
 same number of amperes are taken from the two upper bars as from the
 two lower bars.
 
-5,162 Electro-Plating
-
-. , Plating barrels and other tanks requiring a high voltage should be con-
-nected to the upper and lower bus bars. When possible, the dynamo
+. , Plating barrels and other tanks requiring a high voltage should be connected to the upper and lower bus bars. When possible, the dynamo
 '} should be located near the center of distribution and bus bars run | each: way.
 
 Polarity.—If it be found that, after all ine connections are
 thade and the dynamo' started, that the polaety is eas that
 
-pl q
-
 TANK
 
 "™ TANK
 
-~RHEOSTAT
-
 Fic. 8,263.—Two wire line connections.
 
-Coe -
 cen, cen |
 
 DYNAMO ~
-
-ae a |
-
-Hd | Fea
-a |
-1 |
-
-"18!
-x ke
-
-i
-
-U.9/@18)
-at awe
 
 'Fic. 8,264.—Three wire line connections for tanks requiring low voltage. The voltage in
 this system is one half that of the two wire system shown in fig. 8,263.
@@ -7144,8 +5359,7 @@ Electto-Plating 5,163
 
 is, the positive appears on the bus bar connected to the work,
 
-which would strip the work instead of plating it, it is not nec-
-essary to change.any of the main connections, but the polarity
+which would strip the work instead of plating it, it is not necessary to change.any of the main connections, but the polarity
 can be reversed as follows:
 
 Self excited dynamos. —Remove one of the field leads from the main
@@ -7154,11 +5368,6 @@ of the dynamo and touch the battery leads to the field leads of the dynamo
 for a few seconds.
 
 beieeier, A eyo TO TANKS
-
-### OYNAMO
-
-a
-_ ie) of
 
 Fic. 8,265.—Volt meter and ammeter connections for two wire system.
 
@@ -7174,10 +5383,7 @@ top of the dynamo. ah
 
 Main Conductors.—The proper size of conductors between
 the dynamo and the tanks is of great importance. Trouble
-will-be experienced if these do not have sufficient current carry-
-ing 'capacity. .
-
-5,164 Electro-Plating
+will-be experienced if these do not have sufficient current carrying 'capacity. .
 
 The proper size depends not only upon the number of amperes, but upon
 the distance between the dynamo and the tanks. The conductors should be
@@ -7189,10 +5395,6 @@ diameter. If larger than 1% in., round bars are not only difficult to
 handle, but are not as readily secured.
 
 ### TO TANKS
-
-fe] | (2
-|
-Te
 
 ### DYNAMO TERMINALS
 
@@ -7211,21 +5413,18 @@ times the resistance to corrosion that zinc, copper or nickel has. It is soft an
 and quickly plated, only a thin coat being required. The solution is very simple and can be
 kept in proper working order without difficulty.
 
-Electro-Plating 5,165
-
 Size of Main Conduetors.
 
-5 to'20 Feet 35 to 50 Feet _
+5 to'20 Feet 35 to 50 Feet
 
 20 to 35 Feet 50 to 65 Feet
 
 Dynamo
 
-Round Flat | Round' Round Flat | Round | Fiat ~
+Round Flat | Round' Round Flat | Round | Fiat
 pone | 'Bars Bars | Bars _ Bars Bars Bars Bars
 
 Sires | anes eee | ova | aero | cairo | eomepemectedorovestreceerem | een
-@verMocesesetvof q§e§B@ j- $|fseaececsesesarsseoscorf  fG freee cess eecccessf ST (Peete eeqgeooes ooeef  i#$Y G -j- —§ § eevee cess eves voce
 
 @9OVS OS We ce were
 
@@ -7233,12 +5432,9 @@ we ce eCoede cone
 
 eee gto
 
-TO .
 POWER LINE * SHUNT
-i rYvoit YT AMMETER a |
+i rYvoit YT AMMETER a
 METER | |__| "To Tank
-
-### EXCITER
 
 Fic. 8,267.—Method of connecting a motor dynamo set, consisting of a separately excited
 dynamo with separate exciter and a.c. motor.
@@ -7247,12 +5443,10 @@ dynamo with separate exciter and a.c. motor.
 
 Volt Meter and Ammeter.—One volt meter and one ammeter
 should be used in connection with every two wire dynamo and
-two volt meters and two ammeters with every three wire dy-
-namo, the connections are as shown in figs. 8,265 and 8,266.
+two volt meters and two ammeters with every three wire dynamo, the connections are as shown in figs. 8,265 and 8,266.
 
 ### VOLT METER AMMETER
 
-TO\
 LINE. |
 eee SHUNT
 
@@ -7261,18 +5455,13 @@ i TO TANKS
 Fic. 8,268.—Method of connecting motor dynamo set, —— of a separately excited
 dynamo and d.c. motor. oe.
 
-_—eo@ :
-
-Motor Dynamo Connections.—It is very convenient espe-
-cially in small plants to drive the dynamo by a direct connected
+Motor Dynamo Connections.—It is very convenient especially in small plants to drive the dynamo by a direct connected
 motor, thus saving space required by belt and steam or 'gas
 engine, as well as the attention required to operate same.
 
 Figs. 8,267 and 8,268 show connections for motor dynamo sets.
 
 Dipping Vessels.—These are employed for holding the
-
-Electro-Plating 5,167
 
 articles and dipping them into the various solutions used in
 cleaning the articles preparatory to the plating.
@@ -7286,43 +5475,13 @@ are strong and durable, thus eliminating frequent and troublesome replace-
 
 ments. They drain quickly and completely, saving time and acid.
 
-Y,
-
-yo
-92 rift
-an?
-eBid '
-el
-ERE: cies ig
-'8 w > ris | , Ps
-- fe
-+: ,ft et ; vant
-Po ee, "ae :
-= 2]
-w(t! eats
-" gent
--"tutgit
-ry ted, | vs : ;
 ites
-ea" ar
+
 ate
-' paths = s
-r~t ' * ms £ ' ey? <€
-bac. Woe : $4 oS : . ae a ies fits !
-ae
-4) 5 ~* he Py . Lae
-"il or es or : eee ea pou"
-bs } | . s%
-Pray \
-afi mae oe
-é a ae oe
+paths = s
+
 EES. : FF
-SHOOK YG } vs a
-mya' te / '
-Pt wt t
-oy.
-rent é : A an ;
-oy, qae is e
+
 ear MA se HAS .
 
 be ae ris at | 7
@@ -7337,33 +5496,30 @@ _and pickling cycle.
 'As a guide to selection, the actions of various acids and
 alkalis on the several metals used for baskets are here given.
 
-5,168 Electro-Plating
-
 Steel.—Suitable for use in all alkali solutions, attacked by sulphuric,
-muriatic, and nitric acids. :
+muriatic, and nitric acids.
 
 Brass.—Suitable for use in alkali solutions except cyanide, but lacks the
 
 strength of steel, not attacked by hydrofluoric acid and can also be used in
 
-dilute solutions of sulphuric or muriatic acid. Attacked by hot concen- |
+dilute solutions of sulphuric or muriatic acid. Attacked by hot concen-
 
 trated sulphuric or muriatic acids and by nitric in any concentration.
 
-Aluminum.—Nitric and sulphuric acids act very slowly on aluminum. |
+Aluminum.—Nitric and sulphuric acids act very slowly on aluminum.
 
-Attacked by all alkalis and by muriatic and hydrofluoric acids in any con-
-centration. Excellent for bright dipping.
+Attacked by all alkalis and by muriatic and hydrofluoric acids in any concentration. Excellent for bright dipping.
 
 Monel Metal.—This is a natural alloy of nickel and copper. It is not.
 
 attacked to any appreciable extent by alkalis and is resistant to all the
 
-common acids except nitric, for which it is entirely unsuitable. Monel has :
+common acids except nitric, for which it is entirely unsuitable. Monel has
 
 the added advantage of great strength.
 
-Nickel Chromium.—This alloy is used principally in cycles embodying |
+Nickel Chromium.—This alloy is used principally in cycles embodying
 
 both an alkali process and a bright dip containing nitric acid. It is not
 
@@ -7375,10 +5531,9 @@ Where the word "resistant" is used in referring to monel and
 nickel chromium, this does not mean that these metals are
 not attacked but that the action 1s comparatively slow.
 
-NOTE.—Tripoli composition. Tripoli is the most widely used of all cutting composi-
-tions. It is used on brass, copper, aluminum, zinc, silver, gold, platinum, nickel-silver and,
+NOTE.—Tripoli composition. Tripoli is the most widely used of all cutting compositions. It is used on brass, copper, aluminum, zinc, silver, gold, platinum, nickel-silver and,
 
-to some extent, on nickel and steel. It is also used extensively on celluloid, bone, pearl, wood, :
+to some extent, on nickel and steel. It is also used extensively on celluloid, bone, pearl, wood,
 
 ivory, rubber and moulded products.
 
@@ -7388,20 +5543,14 @@ ducing the highest lustre on nickel, copper, brass and other metals; also on cel
 bakelite and other moulded products.
 
 NOTE.—Bobbing composition.—For brush wheel work, wood lapping, on flat surfaces
-and for cutting down with small diameter bu.fs where the peripheral or surface speed is neces-
-sarily low. Bobbing composition is economical and efficient. It clings tenaciously to the
-brush, lap or buff and cuts rapidly. It is used extensively by manufacturing jewelers, silver-
-smiths and novelty manufacturers. Due to the fact that it cuts sharply and rapidly at low
+and for cutting down with small diameter bu.fs where the peripheral or surface speed is necessarily low. Bobbing composition is economical and efficient. It clings tenaciously to the
+brush, lap or buff and cuts rapidly. It is used extensively by manufacturing jewelers, silversmiths and novelty manufacturers. Due to the fact that it cuts sharply and rapidly at low
 speeds, it is also being used to advantage by manufacturers of fountain pen barrels and other
 small rubber goods. Unexcelled for cutting down celluloid.
 
 NOTE.—Chromium coloring composition.—The coloring of chromium offers a distinct
-problem. Chromium is extremely hard and the plated finish may. be rough and frosted. Chro-
-mium rouge is designed to cut rapidly, to smooth up the rough frosted surface and, at the same
-time, to bring up the desirable high lustre. On bright chromium plate a mere wiping or fan-
-ning operation with chromium rouge is sufficient to produce a mirror finish.
-
-Electro-Plating 5,169
+problem. Chromium is extremely hard and the plated finish may. be rough and frosted. Chromium rouge is designed to cut rapidly, to smooth up the rough frosted surface and, at the same
+time, to bring up the desirable high lustre. On bright chromium plate a mere wiping or fanning operation with chromium rouge is sufficient to produce a mirror finish.
 
 Although the first cost of baskets made from these. alloys is-necessarily
 high as compared with baskets made from the common metals, they
@@ -7419,27 +5568,22 @@ BLOCKS 1
 
 Fic. 8,276.—Cleaning. tank. Typical installation of steam heating coils for heating plating
 
-_ solutions and cleaners. Approximate length of pipe needed for each 10 gals. of solution:
+solutions and cleaners. Approximate length of pipe needed for each 10 gals. of solution:
 34 stranded pipe, 4 lineal ft.; 1 in. stranded pipe, 3 lineal ft.; 114 in. stranded pipe, 244
 lineal ft.; 144 in. stranded pipe, 2 lineal ft.
 
 NOTE .—Hard rouge for coloring gold, silver, platinum, nickel and brass.—This is
 used principally for producing the final high color or lustre on gold and silver. Rouge differs
-from all other buffing compositions in that it works by burnishing or flowing the metal in-
-stead of by abrasion.
+from all other buffing compositions in that it works by burnishing or flowing the metal instead of by abrasion.
 
-NOTE.—Stainless steel rouge.—To secure a mirror finish on stainless steel articles re-
-quires the use of a green rouge on a buff or felt wheel.
+NOTE.—Stainless steel rouge.—To secure a mirror finish on stainless steel articles requires the use of a green rouge on a buff or felt wheel.
 
-NOTE .—Polishing tallow.—The principal use of this material is as a lubricant on pol-
-ishing wheels which are set up with emery or other abrasives, to prevent burning or glazing
+NOTE .—Polishing tallow.—The principal use of this material is as a lubricant on polishing wheels which are set up with emery or other abrasives, to prevent burning or glazing
 and for grease wheel work. It is also used for die lubrication, drawing, etc.
 
 NOTE.—Emery paste.—This is used as a lubricant on emery coated wheels and as a
 brush composition on circular tampico brushes. The grease binder is properly proportioned
 to prevent crumbling 2nd to provide ample lubrication.
-
-5,170 Electro-Plating
 
 for holding clean water for rinsing the articles after they have
 been scoured clean.
@@ -7447,7 +5591,6 @@ been scoured clean.
 Tumbling or Rattling Barrels.—Small objects, such as small
 castings, stampings, etc., that are not required to have square
 edges, are best cleaned by tumbling, or rattling, as it is called
-in foundries.
 
 Fic. 8,277.—Hanson-Munning tilting tumbling barrel. Almost any work which is being
 barrel plated can be polished and burnished in barrels. The finish obtained through this
@@ -7468,45 +5611,28 @@ finish will be dead instead of bright.
 Bright work can only be obtained by long continued tumbling, and the
 bright finish comes rather quickly after all the pieces in the. barrel become
 
-Electro-Plating 5,171
-
 smooth; accordingly, it is necessary not to add any pieces'once the barrel
 1S — or the work will not finish evenly. }
 
-+ . Ball Burnishing Barrels.—Thts machine 'is used for pro-
-ducing a final color finish on metal and other parts after they
++ . Ball Burnishing Barrels.—Thts machine 'is used for producing a final color finish on metal and other parts after they
 
-have been properly surfaced in an oblique or horizontal tum-
-bling barrel. It is also used for finishing after plating.
+have been properly surfaced in an oblique or horizontal tumbling barrel. It is also used for finishing after plating.
 
 Fic. 8,278.—Hanson-Munning horizontal tumbling barrel. This type of barrel is to be pre-
-' fetred for large or long articles. The roll is nearer even and results nearer uniform. The
+fetred for large or long articles. The roll is nearer even and results nearer uniform. The
 horizontal barrel also has a larger capacity. The principal use of the horizontal type of
 "Darrel is for what the trade terms "'rough work,'' such as grinding or smoothing up.
 
-The barrel is of comparatively small diameter, but of greater proportion-
-ate length. Its shape is calculated to give an efficient pressure without
+The barrel is of comparatively small diameter, but of greater proportionate length. Its shape is calculated to give an efficient pressure without
 having the weight distort the work to be burnished. There is no falling,
-tumbling or bumping because the barrel is full. The action is one of con-
-tinuous burnishing.
+tumbling or bumping because the barrel is full. The action is one of continuous burnishing.
 
-All barrels are lined with hard wood. Steel balls, pebs, cones, etc., pro-
-vide the burnishing medium and these occupy from one third to one half of
-_ the barrel capacity.
+All barrels are lined with hard wood. Steel balls, pebs, cones, etc., provide the burnishing medium and these occupy from one third to one half of
+the barrel capacity.
 
 -Burnishing Before Plating.
 from the stamping room, 'placed in a horizontal rotating barrel,
 
-5,172 Electro-Plating
-
-ee
-JTS US
-S| - | > .
-AG) ovs-wR AG | BVjI0¥.
-S| Gay Sif HR
-
-GENERATOR inn S vy rr |
-1 || nl,
 ian | |
 
 Fic. 8,279.—Diagram of three wire system with double throw tank switches for 5 or 10 volts.
@@ -7515,25 +5641,15 @@ single pole double throw switch; T, plating tanks.
 
 ### FIELD
 
-Crm)
-
-Se
-=) ie iP L,
 GENERATOR Ht A
-| _ |
-Wak Aa
-ae ee
 
 Fic. 8,280.—Diagram of two wire system showing method of connecting dynamo, tanks,
 plating barrel, volt meter, ammeter and rheostat. A, ammeter; V, volt meter; S, ammeter
 shunt; R, tank rheostat; T-1, two rod tank, one row work; T-2, three rod tank, one row work;
 T-3, five rod tank, two row work; T-4, electric cleaner, steel tank; PB, reliance plating barrel;
-N, ifsulator; 1, No. 1 brass connections; 2, No. 2 brass connections; 7, No. 7 brass connec-
-tions.
+N, ifsulator; 1, No. 1 brass connections; 2, No. 2 brass connections; 7, No. 7 brass connections.
 
 ### FIELD
-
-Electro-Plating 5,173
 
 rotated at 30 7.p.m. being careful to use enough sawdust as a
 medium to clean and prevent scratching the parts.
@@ -7558,14 +5674,10 @@ to make sure that
 all trace of acid is
 removed.
 
-Peres §=6Next the con-
-
 b  @ of 7 > o tents of the basket
 
 EEE Namment hace anise commen mnemieiey ST are placed in the
-7 oak eB eh Ae burnishing barrel.
 
-a mf: E fe Partsand balls
 -BeReBEe = fe should come to
 nel We teeee es > within 4 to 6 ins.
 ieee Ee )jeueee | Of the top of the
@@ -7579,15 +5691,7 @@ ft. deep by 11 in. in
 diameter. One half
 gallon of soft soap
 
-OOBOIOO NG,
-
-: Ny
-
-" we On ae
-: nul hcde, Seng cee eats oe eet.
-da SP MD aD in se os wf
-EO EM ge Fa, bar
-POL AE Bo EE "
+nul hcde, Seng cee eats oe eet.
 
 "1G. 8,281.—Reliance horizontal barrel showing anodes, drive gear, crane, etc. Almost 24
 loaded while suspended above tank and then lowered by turning crank after barrel is in
@@ -7595,10 +5699,6 @@ position. The lifting hooks are then raised and left in this position until anot
 of work is plated. After the work is plated the tray which is furnished can be laid across
 
 the top of the tank so that the work can be dumped into it directly from the cylinder.
-
-5,174 Electro-Plating
-
-me : =e ere Seca 7 . or ce _ s eve aay + —_ Mee a7 ay te Of mene 4eee - ou . -_- wo ew - oe - 6on
 
 is. then added, the barrel is filled with cold water, the lid is clamped on
 and the barrel i is swung into position and rotated for 114 to 134 hours.
@@ -7609,8 +5709,7 @@ satisfactory soaps available for the purpose.
 After the burnishing barrel has rotated the proper length of, time, the
 contents are emptied into a sieve where the balls and parts are separated.
 Again the parts are put into baskets, rinsed .in cold running waer, then
-dried in sawdust and stored in a dry pees uf aA cannot be plated im-
-mediately.
+dried in sawdust and stored in a dry pees uf aA cannot be plated immediately.
 
 If they are to be plated immediately, the bbekets with their contents are
 placed in a cleaning solution for 15 minutes and prepared for plating 1 in the
@@ -7621,10 +5720,8 @@ are again put into wire mesh baskets and immersed in a storage
 tank containing a soap solution.
 
 This protects the, parts from staining and also neutralizes any trace of
-acid that may be ptesent. The parts are then put into the burnishing bar-
-rel, balls, soap and water being added as for burnishing before: plating, and
-the barrel rotated for from 40.minutes to one hour es on the char-
-acter of the parts and the nickel deposited. -*
+acid that may be ptesent. The parts are then put into the burnishing barrel, balls, soap and water being added as for burnishing before: plating, and
+the barrel rotated for from 40.minutes to one hour es on the character of the parts and the nickel deposited. -*
 
 They are then removed from the barrel, separated from the balls, rinsed
 in cold running water and dried 1 in sawdust.
@@ -7648,15 +5745,13 @@ chiefly in givirig a fine polish to silverware, brass goods, etc. 'They can
 be used with crocus, emery, rouge, or rotten stone, and give a smooth fine
 finish to the work.
 
-Much of the work connected with the preparation of surfaces of automo-
-bile bodies, hoods and fenders, metal furniture, metal doors and various
+Much of the work connected with the preparation of surfaces of automobile bodies, hoods and fenders, metal furniture, metal doors and various
 other metal parts, which was formerly done by hand, is naw accomplished
 mechanically by the use of various types of portable equipment.
 
 Polishing and buffing lathes for hand and automatic operation, which
 have reached a high degree of perfection, are now made in many different
-styles and sizes. Likewise, highly satisfactory polishing and buffing com-
-pounds and wheels have been developed for practically every requirement.
+styles and sizes. Likewise, highly satisfactory polishing and buffing compounds and wheels have been developed for practically every requirement.
 
 To facilitate easy and rapid removal of metal from curved
 as well as flat surfaces, various kinds of coated abrasive discs
@@ -7678,23 +5773,19 @@ polisher in the same condition. .
 The following are recommended by L'Hommedieu for average
 conditions:
 
-Iron, steel and brass castings.—Reliance canvas wheels for flat: sur-
-faces; Rex cloth wheels for curved or irregular surfaces. Finish with Chi-
-cago wheels, walrus, bullneck, or felt wheels. Cut down with No. 201
+Iron, steel and brass castings.—Reliance canvas wheels for flat: surfaces; Rex cloth wheels for curved or irregular surfaces. Finish with Chicago wheels, walrus, bullneck, or felt wheels. Cut down with No. 201
 buffs; color with No, 50 buffs. -
 
-: Aluminum castings.—Rough out with Rex cloth wheels: finish with
+Aluminum castings.—Rough out with Rex cloth wheels: finish with
 sheepskin wheels. Cut down with No. 201 buffs: color with No. 50: buffs.
 
-9,176 Electro-Plating
-
-_ Die castings.—Rex cloth wheels on all polishing operations. ' Cut down:
+Die castings.—Rex cloth wheels on all polishing operations. ' Cut down:
 "with No. 201 or 203 buffs; color with No. 50 buffs.
 
 Brass stampings.—Cut down with No. 203 buffs; color with No. 50!
 buffs. If necessary, polish with Reliance canvas wheel on first operation.
 
-Aluminum stampings.—Cut down with No. 201 or No. 401 buffs; :
+Aluminum stampings.—Cut down with No. 201 or No. 401 buffs;
 color with No. 50 buffs.
 
 White metal stampings.—Polish with sheepskin wheel. Cut down)
@@ -7731,8 +5822,6 @@ of acid; most nickel plating solutions consist of a solution of the double salt
 of ammonium sulphate and nickel sulphate, which is rendered alkaline with
 ammonia.
 
-Electro-Plating 5,177
-
 In order to obtain a thoroughly satisfactory and brilliant deposit of
 nickel, the articles which are to be plated must be very carefully prepared,
 and should have a burnished surface.
@@ -7754,8 +5843,6 @@ one time.
 The articles so arranged are then ready for immersion in
 the cleaning bath of the following composition:
 
-5,178 Electro-Plating
-
 Water, 1 gal.; caustic potash, 4 ozs.; trisodium phosphate, 2 ozs.
 
 Any good commercial metal cleaner may be used instead of the above in
@@ -7768,8 +5855,7 @@ The articles are then removed from the cleaner and washed in clean
 cold running water.
 
 Acid Cleaning.—The previously cleaned parts should next
-be immersed for 10 to 30 seconds in an acid cleaner of the fol-
-lowing composition:
+be immersed for 10 to 30 seconds in an acid cleaner of the following composition:
 
 Water, 1 gal.; muriatic acid, 1 gal.
 
@@ -7779,9 +5865,7 @@ ready for immersion in the copper plating or copperized solution.
 
 Copper Plating Iron — Steel -—To deposit copper 'upon
 steel or iron articles by immersion in solutions composed of
-water, sulphuric, acid. and copper sulphate or copper car-
-bonate, it 1s necessary that the steel or iron surface be chem-
-ically clean and free from rust or oxidation if adherent uniform
+water, sulphuric, acid. and copper sulphate or copper carbonate, it 1s necessary that the steel or iron surface be chemically clean and free from rust or oxidation if adherent uniform
 coatings of copper are to be the final result.
 
 The formula for the copper carbonate plating solution 1s as
@@ -7798,8 +5882,6 @@ thoroughly afterwards.
 Sulphuric acid 60°.............. eee eee aes LY OF.
 Copper sulphate. ........ 0.0... cc eee ee ees 1 oz.
 
-Electro-Plating 5,179
-
 No precautions are necessary in mixing the copper sulphate solution.
 
 The steel or iron articles after cleaning should next be immersed for a few
@@ -7811,13 +5893,12 @@ water and then in the following soap solution:
 
 ,.: The soap chips are dissolved in a small amount of hot water before
 adding the balance of the cold water to make up the volume. The solution
-~' is used cold. The articles are immersed in the soap solution for a few sec-
+is used cold. The articles are immersed in the soap solution for a few sec-
 
 onds, then in boiling water for a second or two, drained thoroughly and
 dried by heat or preferably in hard maple wood sawdust.
 
-' If it be desired to protect the articles from atmospheric oxi-
-dation they should be finally lacquered by the aid of a water
+If it be desired to protect the articles from atmospheric oxidation they should be finally lacquered by the aid of a water
 dip lacquer. They should then be dried by heat to harden the
 lacquer.
 
@@ -7825,7 +5906,7 @@ The copper one solution should be preferably used although the
 copper sulphate solution is cheaper and can be discarded more frequently
 and replaced with new solution.
 
-| Silvering Glass Mirrors.—The glass must be perfectly clean
+Silvering Glass Mirrors.—The glass must be perfectly clean
 prior to silvering. Old silver should be removed by immersing
 the glass in nitric acid and water, 2 parts nitric to 1 part water.
 
@@ -7836,21 +5917,18 @@ Distilled water.............0. 0... 0c eee eee 20 ozs.
 Aqua ammonia..:......... 0... ce eee eee eee 2 OZS
 
 The silver nitrate is dissolved in part of water heated to 120° Fahr.
-_ then the balance of the water and the ammonia are added. Any undissolved
-' material is then removed.
+then the balance of the water and the ammonia are added. Any undissolved
+material is then removed.
 
 Reducing Solution
-
-5,180 Electro-Plating
 
 Silvering Solution
 
 StOCK SOMUOMsi:5: dew isis Kiem dreds w alee eas 1% ozs.
-Distilled water.........0 ccc ccc cc eee ween 16 ozs.
+
 Reducing solution............ 00.0 cece ecceee Vy 0z
 
 Distilled Walters cic. wasun caencaduneseee eet ews 10 ozs
-Stannous chloride................ cece ee eee ly oz
 
 Gold Plating.—Maintain the plating solution at 125° Fahr.
 In plating a faint film of gold is first deposited and the article
@@ -7878,8 +5956,7 @@ salts, crown makes a solution which will produce a rapid, frosty white deposit g
 purposes. 21% lbs. are required to the gallon.
 
 NOTE.—No. 1 zinc toning salt. This salt when added to a crown galvanizing solution
-eliminates treeing and produces a smooth deposit. 1 oz. per gal. should be added when mak-
-ing up a new solution of crown galvanizing salts, and small additions made from time to time
+eliminates treeing and produces a smooth deposit. 1 oz. per gal. should be added when making up a new solution of crown galvanizing salts, and small additions made from time to time
 as roughness is noted in the deposit.
 
 NOTE.—No. 2 zinc toning salt. This salt is used to increase the conductivity of acid
@@ -7887,17 +5964,12 @@ zinc solutions. Its regular use results in clean anodes and heavy deposits. 2 oz
 be added to new solutions made from crown galvanizing salts and further additions made to
 the solution from time to time as fouling of the anodes 1s noted.
 
-Electro-Plating 5,181
-
-~
-
 Zinc anodes are not generally used because they are apt to disintegrate;
 the anodes usually employed are of lead, but iron is sometimes used. In
 fact, the presence of a trace of iron in the bath improves the deposit.
 
 Electrotyping.—In preparing electrotypes @ wax impression
-1s taken of the form, which is made up usually of type, or illus-
-trations, or both.
+1s taken of the form, which is made up usually of type, or illustrations, or both.
 
 In order to do this a metal plate is evenly coated with a wax composition,
 and this is placed with the wax face downward upon the form. The form
@@ -7923,17 +5995,13 @@ for use.
 
 Chromium Plating
 
-Chromium Plating.—Electro-plating in general is accom-
-plished by passing an electric current from one electrode to
+Chromium Plating.—Electro-plating in general is accomplished by passing an electric current from one electrode to
 another through a bath containing in solution the metal which
 it is desired to deposit.
 
-For example, in nickel plating, a nickel rod is used as the positive elec-
-trode, while the object to be plated becomes the negative electrode. These
+For example, in nickel plating, a nickel rod is used as the positive electrode, while the object to be plated becomes the negative electrode. These
 two poles are immersed in a bath of nickel sulphate or other suitable salt
 of nickel and an electric current is passed through the solution.
-
-5,182 Electro-Plating
 
 The current causes the nickel rod to dissolve gradually and
 replenish the bath from which nickel is simultaneously being
@@ -7943,7 +6011,7 @@ In this manner a cycle is set up; nickel rods, called anodes 'arid current
 are constantly supplied to the process, and in return nickel is obtamed
 as a coating upon the objects hung in the bath.
 
-_ Anodes.—In most plating processes new metal is supplied to
+Anodes.—In most plating processes new metal is supplied to
 the bath in the form of anodes which dissolve in the plating
 solution at approximately the. same speed as that at which
 metal is being deposited from the solution.
@@ -7959,8 +6027,7 @@ efficiency of chromium and ferro-chromium anodes 1S much
 greater than the cathode current efficiency.
 
 This means that during electrolysis chromium goes into solution at a
-more rapid rate than that at which metal is depositing out from the so-
-lution. Hence the concentration of chromium, especially the trivalent
+more rapid rate than that at which metal is depositing out from the solution. Hence the concentration of chromium, especially the trivalent
 chromium, builds up rapidly and the bath becomes inoperable.
 
 Only in solutions of divalent and trivalent salts of chromium have
@@ -7972,16 +6039,12 @@ insoluble anodes of lead in conjunction with auxiliary soluble
 anodes of chromium.
 
 When the chromium concentration fell below a certain predetermined
-figure, the auxiliary anodes were introduced into the bath and were re-
-moved when the bath composition was satisfactory.
-
-Electro-Plating. 5,183
+figure, the auxiliary anodes were introduced into the bath and were removed when the bath composition was satisfactory.
 
 - In the majority of installations insoluble anodes are used.
 
-The researches of Watts definitely narrowed the selection of pos-
-_ sible materials to two: iron or lead. If lead anodes be used, the bath
-' will be maintained in a very good condition because trivalent chromium
+The researches of Watts definitely narrowed the selection of pos_ sible materials to two: iron or lead. If lead anodes be used, the bath
+will be maintained in a very good condition because trivalent chromium
 formed during electrolysis is readily reoxidized by lead anodes. Some
 grades of lead, however, corrode in such a manner that adherent patches
 of lead chromate are formed which exert a detrimental effect upon the
@@ -7994,7 +6057,7 @@ They permit, however, a greater accumulation of trivalent chromium
 
 in the bath than lead anodes. Moreover, iron goes into solution. The
 
-': nearer pure the iron, the slower will be the rate of solution. Iron in the
+nearer pure the iron, the slower will be the rate of solution. Iron in the
 
 bath increases its resistance and thereby increases both the power neces-
 
@@ -8015,19 +6078,15 @@ may be connected anodically. Heating and cooling coils are usually in-
 
 stalled in order that the temperature may be controlled readily.
 
-The deposition of chromium 1s attended by a copious evolu-
-tion of gas, hydrogen and oxygen mixed with a spray containing
+The deposition of chromium 1s attended by a copious evolution of gas, hydrogen and oxygen mixed with a spray containing
 chromic acid.
 
 This fume is very irritating to the mucous membranes; exposure over
-a long period of time leads to bad head colds, nose bleed and even ulcera-
-tion in the nasal passages. For this reason fume ducts are generally
+a long period of time leads to bad head colds, nose bleed and even ulceration in the nasal passages. For this reason fume ducts are generally
 installed very near the surface of the bath. Exhausting fans pull the
 fumes directly -across the solution and downward.'
 
-5,184 Electro-Plating
-
-The Bath.—The chromium plating bath has as its main con- :
+The Bath.—The chromium plating bath has as its main con-
 stituent chromic acid. Its function in the bath 1s two-fold: to:
 conduct the electric current, and to act as the source of supply of
 
@@ -8044,10 +6103,10 @@ material however, can be substituted.
 If there be a deficiency of sulphate, the resulting deposit will'
 contain areas of a brown hydroxide of chromium.
 
-As the amount of sulphate i is increased, the quality of the plate is im- :
+As the amount of sulphate i is increased, the quality of the plate is im-
 proved.
 
-When too great ari amount of sulphate is present, good' 'blate ;
+When too great ari amount of sulphate is present, good' 'blate
 can be obtained only 3 in a very narrow range of plating condi-;
 tions.
 
@@ -8059,20 +6118,16 @@ The chromic acid concentration in a recommended formula is about 250
 grams per liter (32 ozs. per gal.). A stronger or weaker solution may be:
 used, but the constituents must be in about the same relative proportions.
 Many baths contain other constituents either added intentionally or
-formed during use. Most substances of this nature, however, are detri-
-mental rather than beneficial to the deposit.
+formed during use. Most substances of this nature, however, are detrimental rather than beneficial to the deposit.
 
 Process of Deposition.—The cathode, the article to be plated,
 must be carefully cleaned of all grease, oil, and oxide. The
 grease and oil are removed by cleaning in a hot solution of
 
-Electro-Plating 5,185
-
 alkalis, preferably with the aid of electric current in which case
 the piece to be plated is made the negative pole.
 
-Some foreign workers do not believe cleaning to remove grease a neces-
-sary step and they depend largely upon the detergent effect of the chromic
+Some foreign workers do not believe cleaning to remove grease a necessary step and they depend largely upon the detergent effect of the chromic
 acid plating solution. Oxide is removed by pickling in acid; *~ the case of
 copper and brass, a solution of sodium cyanide works admirably. After it
 is rinsed, the piece is immersed in the chromic acid plating bath, connected
@@ -8109,35 +6164,30 @@ current densities which will produce good plate. Certain metals, such as
 copper and brass, when used as cathode exhibit a comparatively wide range;
 other metals such as nickel and iron a narrower one.
 
-5,186 Electro-Plating
-
 Changing the temperature of deposition shifts this range. For example,
 at room temperature with a given solution good deposits can be obtained
-on copper between 20 and 80 amperes per sq. ft. (2.2 and 8.8 amperes per |
+on copper between 20 and 80 amperes per sq. ft. (2.2 and 8.8 amperes per
 sq. decimeter); at 60° C., between 70 and 600 amperes per sq. ft. (7.7 and.
 66 anya per sq. decimeter).
 
 It will be found that, although the range of current densities producing .
-Pave deposits increases with the temperature, the current efficiencies of: the :
-deposition remains nearly the same. That is, good plate for decorative pur-
-poses will be obtained between 5 and 20% efficiency regardless of the tem- :
+Pave deposits increases with the temperature, the current efficiencies of: the
+deposition remains nearly the same. That is, good plate for decorative purposes will be obtained between 5 and 20% efficiency regardless of the tem-
 perature.
 
-If thick deposits be desired a current density and temperature :
-combination to give about 13% current efficiency will form a :
-bright, smooth plate with the minimum tendency toward :
+If thick deposits be desired a current density and temperature
+combination to give about 13% current efficiency will form a
+bright, smooth plate with the minimum tendency toward
 treeing.
 
 If the bath contain. ae oie' in addition t to the essential chromic nelle
-and sulphate or its equivalent, unfavorable conditions will result. F or :
-example, the formation and accumulation of trivalent chromium leads to |
-increased resistivity in the bath. It also greatly contracts the plating range :
-already' described. "Dissolved iron also increases the ne - bas |
-solution. Other effects are not yet fully known. :
+and sulphate or its equivalent, unfavorable conditions will result. F or
+example, the formation and accumulation of trivalent chromium leads to
+increased resistivity in the bath. It also greatly contracts the plating range
+already' described. "Dissolved iron also increases the ne - bas
+solution. Other effects are not yet fully known.
 
-ot aa
-
-Bright chromium surfaces are 'obtained: by: plating on. bright |
+Bright chromium surfaces are 'obtained: by: plating on. bright
 dees coatings.
 
 It is easier to obtain fine finishes by plating on a buffed undercoat of a
@@ -8147,15 +6197,10 @@ generally uneconomical and is unnecessary.
 
 The necessity for control is very great in chromium plating.
 
-'In best installations there will be found thermostatic temperature con-
-trol, recording thermometers, accurate ammeters, good fume exhausteérs,
+'In best installations there will be found thermostatic temperature control, recording thermometers, accurate ammeters, good fume exhausteérs,
 and there will be some provision made for a periodic chemical analysis of
 the bath. There is, however, no great measure of uniformity in the quality
 and extent of the control methods at the present time.
-
-m GW NR =
-
-S|
 
 Electro-Plating | «5,187
 
@@ -8165,7 +6210,7 @@ Electro-Plating | «5,187
 
 . Describe the process of dectin-binitie.
 
-. What voltage is used for the current supply? >. |
+. What voltage is used for the current supply? >.
 . Describe dynamo and dynamo sets used for electro-
 
 plating.
@@ -8209,8 +6254,6 @@ square foot of work surface?
 
 rinsing troughs?
 
-5,188 Electro-Plating
-
 21. What is a tumbling or rattling barrel used for?
 22. How are articles burnished?
 
@@ -8219,80 +6262,28 @@ rinsing troughs?
 chromium; 4, gold plating: 5, galvanizing, and 6,
 electrotyping. - ms 'FP 3
 
-P) 4 4 ' e
-a
-: '
-a st : 4 '
-ry ' N as . \ if fh 7
-. '
 . ¢ a) : Per eidee:
-- a ee '
-\ rd é a eS
-é : : : N .4 ' =
-t iar ae $2 - ri cS ee a - -
-'e¢ : \
-2 = = ~ wy om |
-\ AN 'J ' ~s Say 3 pe
-is nae Fe eee "A, ee a ak ae Sa ¢% '2 f ee }
-en eae \ 3 i* jez 2 Se er '@ aoe Oi Me Sesiive. 5) fu 8 eS ae
-: ;
-» a. 4 $ bd } a yh
-So x cs 4 a ' ., y sg J \
-. 4 4 * 1 4 a rf q \ i) if ' ¢ +] ry ' z . \t .y ~ 4 ;
-Nik oy eh Nap A ee. NG ed f \ < ¢ a A Bene '
-od a 5
-mE
-3 . ' , 3 ar ae Rie Se i : eS ne S '
-o? Ya % ay & % yo a x) ' t ae | 4 \ a) a) ' t " g A we ' 3 : : 2 *
 
-i « 4 7 r ' > ". Ne cead .- A 3 < mY : mF 4 c \ r {
-' 5 Ye a Bes 2 oye ae i ' _ - \ aN \ \ \ s 3 Cs x
-eh: } = "yh S ae eS Ae , eo Eutgis Vie as 'a \ ne A ee a _S i
+AN 'J ' ~s Say 3 pe
 
-. 7 '. . 4 ° ~ } F _ ¥ - ¢ i f \ \ _ |
-aN ove  F io ; Paar Sma) Goad an en OP gst gS ves Pee ee rr : ew ee ie ' . Pan an 3
+. 4 4 * 1 4 a rf q \ i) if ' ¢ +] ry ' z . \t .y ~ 4
+
+o? Ya % ay & % yo a x) ' t ae | 4 \ a) a) ' t " g A we ' 3 : : 2
+
 4 3 "i ee = : Sale i ae, \ aad Sab 3 MS: eae : i By du ms i. Lae , at 34 \ i t ' 43 } i a ) 34 BS h . hoe
 
-v § '
-eo 2 ee Ye 3 @
-£NIE AQ Gt
-alain op. ext oO hee. «i ta) i! 66. ecm, Hes eee es . a ae : a
-Sop 3 a S 3 : Vea aa io 3 : ae \ba coy Ve as TD my ne ony eee SM ae
-\ . Med
-te : . ae ae ; : ce euttee '< . Y —
-we ot i u q°, ae ' cs , 7 x : i ye ' ea { me VSS e yi,
-> i" ; . ¢ om
-' ot y . i) of sf oe oe & \ |
-4 eo + pL ec my a er oe Pay i ao: ey EPAVISS j C,
-? Ry i ' . . i. ae an)
-pe ae ee See ae as : Meee Ma. Nes PA GY VSN va |
-
-rf
-oe
 cad
-"
 
-at
-a
-«
-i
-ow
-—
 Peres
-a, '
+
 ibe,
 tal
-& at
-
-Electrolysis 5,189
 
 ## CHAPTER 212 ;
 
 Electrolysis
 
-By definition electrolysis is decomposition of a chemical com-
-pound tn solution, called the electrolyte, into its constituent ele-
-ments, called ions, by the passage of an electric current through tt.
+By definition electrolysis is decomposition of a chemical compound tn solution, called the electrolyte, into its constituent elements, called ions, by the passage of an electric current through tt.
 
 There are two kinds of ions
 1. Cations;
@@ -8313,71 +6304,31 @@ in one form of apparatus as electrolyte, namely, that patented
 by Schoop, the more customary electrolyte being a solution of
 caustic soda.
 
-5,190 Electrolysis
-
 ### RUBBER
 
 TUBE
 
 TY tee
-pd.
 
-© wae eT:
-'oS
-
-|
-=
-el
--
-—
 ees
-ae
-
-Hy ps te
-
-aa
-
-aE gS
-. , 1
-
-ays focen busta jorta}en
-
-oS Agra ae,
 
 noes
-= Pas - eo
-
-s
 
 sane
 5 ttt.
 
-<u s ieee BR} =. = :
-
-'ao
-
 ote
-1 '
 
-PTE Ba,
 Pees Se
-
-GLass ff
-pLuG?e
 
 Fics. 8,283 to 8,286.—Electrolysis apparatus. Fig. 8,283, electrolysis of water, simple form
 with sliding graduated tubes and platinum electrodes. Fig. 8,284, electrolysis of water,
 improved form with platinum electrodes that may be easily replaced by copper electrodes
-or by carbon electrodes for electrolysis of hydrochloric acid. Fig. 8,285, electrolysis appara-
-tus (Osborne form), for study of conductivity of liquids, ionization, electro-plating, electrol-
-ysis of water, and principles involved in the theory of electrolytic dissociation. Jt consists
-of an outer U tube with graduated sliding tubes, shot valves, glass plug and platinum elec-
-trodes which are easily replaced by carbon or copper electrodes. Fig. 8,286, Hoffman's
+or by carbon electrodes for electrolysis of hydrochloric acid. Fig. 8,285, electrolysis apparatus (Osborne form), for study of conductivity of liquids, ionization, electro-plating, electrolysis of water, and principles involved in the theory of electrolytic dissociation. Jt consists
+of an outer U tube with graduated sliding tubes, shot valves, glass plug and platinum electrodes which are easily replaced by carbon or copper electrodes. Fig. 8,286, Hoffman's
 
 improved form of electrolysis of water apparatus with graduated tubes, glass stop cocks
 and removable platinum electrodes.
-
-Electrolysis 5,191
 
 .The primary products of electrolysis in this case are hydroxyl (OH)
 and the metal sodium (Na) but these immediately enter into secondary
@@ -8388,24 +6339,17 @@ _, from. impurity, but for industrial requirements they are sufficiently pure,
 and this method of manufacture is much cheaper and more cleanly than the
 usual chemical methods of production.
 
-Chlorates.—Chlorate of potash or of soda is produced élec-
-trolytically by the electrolysis: of the corresponding: chloride.
-
-v3 tos Reg Pe
+Chlorates.—Chlorate of potash or of soda is produced électrolytically by the electrolysis: of the corresponding: chloride.
 
 Fic. 8, 287 hieneaiaed of Gibb's process. The process consists in the electrolysis of
 
-" potassium chloride solutions, using a copper or iron cathode and a platinum anode. S is
+potassium chloride solutions, using a copper or iron cathode and a platinum anode. S is
 
-~ the supply tank; V, the electrolytic cell; R, the refrigerators; and P, the pump by means
+the supply tank; V, the electrolytic cell; R, the refrigerators; and P, the pump by means
 
-_ of which the exhausted electrolyte is returned to the supply tank, while the chlorate pre-
-cipitates out as crystals.
+of which the exhausted electrolyte is returned to the supply tank, while the chlorate precipitates out as crystals.
 
-of 17
-
-The electrolytic and chemical changes which first occur when a solu-
-tion of sodium or potassium chloride is electrolyzed by the aid of electrodes
+The electrolytic and chemical changes which first occur when a solution of sodium or potassium chloride is electrolyzed by the aid of electrodes
 not acted on by the products of the lea Ma decomposition is described
 under Alkalt and sealant
 
@@ -8414,47 +6358,24 @@ be worked' with a low current density, and at a temperature
 which does not rise above 68° Fahr., little chlorate will be
 'produced and sodium hypochlorite will be formed in its place.
 
-5,192 Electrolysis
-
 Ozone.—This can be produced by chemical methods, but it °
 is also produced by the sparkless discharge of electricity through .:
-dry air or oxygen from conductors charged at a high pressure and ;:
+dry air or oxygen from conductors charged at a high pressure and
 at is always formed when a frictional electric machine of the old.
 plate type ts worked with an air discharge.
 
 Sodium and Potassium.—lIt is necessary to work with a.
 fused electrolyte in place of an aqueous solution in this case.
 
-i)
-i/
-'a
-WaABBAWAVAVALaP
-
 wea'
-
-ni
-
-(UETIATETTINATE
 
 S\N ANS SS
 
-### ASV AAASAAANS
-
-### SSASASS
-
 ### SANSA SS SSSAAS SS SSS
 
-CLIN
-
->
-N
-N
-
-P-> TF
-wy
 Yar
 
-Fics. 8,288 and 8, 289 .—Gibb's cell and battery of three cells. The cells consist of a wooden |
+Fics. 8,288 and 8, 289 .—Gibb's cell and battery of three cells. The cells consist of a wooden
 frame A, covered with some metal B, such as lead, not attacked by the electrolyte. The
 cathode consists of a grid of vertical copper wire C, kept in position by cross bars D, of
 some insulating material. The grid is placed in a vertical position against one side of
@@ -8467,16 +6388,12 @@ to the bottom of the cell, by which the potassium chloride is continuously suppl
 it is the overflow pipe to convey the mixed solution of the chloride and chlorate as well
 as the liberated hydrogen gas away from the cell. S,S,S,S, are lugs projecting from the
 framework by means of which any number of cells can be bolted together to form a series"
-of cells. In fig. 8,289, the heavy plates X and Y, are used to close the ends of the wooden :
+of cells. In fig. 8,289, the heavy plates X and Y, are used to close the ends of the wooden
 framework and form a fully closed series ot cells with only the openings at the various supply
 and overflow points. Current connections are made at the points M and N.
 
-Owing to the readiness of the sodium and potassium to enter into com-
-bination with water, the difficulties of operating the process upon a com-
-mercial scale are chiefly due to this great chemical activity of the alkali
+Owing to the readiness of the sodium and potassium to enter into combination with water, the difficulties of operating the process upon a commercial scale are chiefly due to this great chemical activity of the alkali
 metals.
-
-Electrolysis 5,193
 
 Alkali and Bleach.—When an electric current is passed
 through a solution of sodium chloride in water, using electrodes
@@ -8486,60 +6403,42 @@ separated at the cathode, while the gas chlorine forms «i minute
 bubbles at the surface of the anode and rises to the surface of the
 liquid in the cell.
 
-"I
-
-MCE
-
-Fic. 8,290.—Electrolysis of copper. Fill the U shaped glass tube shown tere, with a solu-
-tion B, made by dissolving some crystals of copper sulphate or bluestone. Immerse in the
+Fic. 8,290.—Electrolysis of copper. Fill the U shaped glass tube shown tere, with a solution B, made by dissolving some crystals of copper sulphate or bluestone. Immerse in the
 solution two platinum electrodes C and D, attached to the copper wires E and F, sealed
 
 in the glass tubes G and H, which are held in the tube openings by loosely fitting rubber
-corks K and L. Attach the negative pole of the battery N, to the terminal of the elec-
-trode C, and the positive pole of the battery to the upper terminal of the electrode D.
+corks K and L. Attach the negative pole of the battery N, to the terminal of the electrode C, and the positive pole of the battery to the upper terminal of the electrode D.
 The electric current from the battery will then pass from the platinum anode C, through
-the copper sulphate electrolyte B, to the platinum cathode D, thence to the negative ter-
-minal of the battery. The passage of the current through the electrolyte will result in the
+the copper sulphate electrolyte B, to the platinum cathode D, thence to the negative terminal of the battery. The passage of the current through the electrolyte will result in the
 
 - liberation of the constituent ions of the latter, oxygen gas being liberated at the anode C,
 metallic copper deposited on the cathode D, and the copper sulphate solution B, changed
 to sulphuric acid.
 
-5,194 Electrolysis
-
 The meta] sodium, however, has a great affinity for the hydroxy] con- .
-stituent of water, and it at once enters into union with this, and produces :
-sodium hydrate and hydrogen gas at the surface of the cathode. These :
+stituent of water, and it at once enters into union with this, and produces
+sodium hydrate and hydrogen gas at the surface of the cathode. These
 changes are the basis of all the patented processes and cells for the produc- .
 tion of alkalies and chlorine products by electrolysis.
 
 Aluminum.—tThe process of aluminum manufacture consists
 in the electrolysis of a fused mixture of the fluorides of sodium,
-calcium and aluminum, in which alumina (aluminum oxide) is :
+calcium and aluminum, in which alumina (aluminum oxide) is
 dissolved.
 
-X NX ' 'a | <5 ; x" :
-
-AN AS NAN AANAN AEC \ NZ¢Z
 . MQ NAS NARA! SAS ASNSINA NS SIS e le Ses .
 LLL LIDIA OLA LAC CO ROO CODED SITS LALIT ITIP LILO
 
-' (Q) "3 '
-
-Tht, 4/7 /,
-CULT AL Lee lr be tpt tt ¢,
-4 44, J) fp l,% Sf tpl
-
-eccentric for producing a rocking movement of cell; D, pivot support for framework of cell; |!
-E, slate walls of cell. The Castner cell is of the mercury type in which advantage is taken '
-of the property possessed by mercury of forming an alloy with sodium, fluid at the ordinary '
+eccentric for producing a rocking movement of cell; D, pivot support for framework of cell;
+E, slate walls of cell. The Castner cell is of the mercury type in which advantage is taken
+of the property possessed by mercury of forming an alloy with sodium, fluid at the ordinary
 temperature, this alloy being known chemically as an amalgam. When the amalgam is
 
 heated with water it is decomposed, and a solution of sodium hydrate is formed, while the:
 mercury is restored to its original condition of purity. Hence, if a layer of mercury be em-)
-ployed as cathode on the floor of a cell in which a solution of sodium chloride is being de- :
+ployed as cathode on the floor of a cell in which a solution of sodium chloride is being de-
 composed by the current, the sodium liberated at the surface of the mercury will at once:
-enter into union with it, and will be kept safe from further chemical or electrolytic changes. :
+enter into union with it, and will be kept safe from further chemical or electrolytic changes.
 The layer of mercury, in fact, acts as a reservoir for the sodium atoms, or ions, brought»
 to its surface, and stores up these until they are wanted.
 
@@ -8552,8 +6451,6 @@ heating action of the current.
 The action taking place in the electrolytic bath is therefore, virtually, a
 reduction of the alumina or aluminum oxide by the carbon of the anode; but
 
-Electrolysis 5,195
-
 this reduction would be impossible without the aid of the current to first
 separate the oxygen and aluminum, which have great affinity one for the
 other.
@@ -8564,24 +6461,14 @@ at stated intervals, either by a syphon or by tilting. Fresh alvenina is fed
 into the bath at short intervals to replace that which has been decomposed
 by the current; and the process is, therefore, a continuous one.
 
-Se ae
-Peg Z (3 3
-N :
-os
-: \ POWER HOUSE
-
-)
-my
-'
+\ POWER HOUSE
 
 discovered. The power house is located near the navy yard in Brooklyn. A portion of
 the returning currents, as shown by arrows, flows over the New York and Brooklyn bridge
-to Manhattan, thence north to Williamsburg bridge via underground mains, subway struc-
-tures, and other metals, and passes over that bridge back to Brooklyn, thence through
+to Manhattan, thence north to Williamsburg bridge via underground mains, subway structures, and other metals, and passes over that bridge back to Brooklyn, thence through
 mains to rails and negatives, to power house. In this case damage may be expected at
 three points: 1, where currents leave bridge metals on the Manhattan side; 2, where they
-leave pipes to enter Williamsburg bridge; 3, where they leave same bridge for pipes in Brook-
-lyn side. When the two bridge structures are connected in Manhattan as proposed, then
+leave pipes to enter Williamsburg bridge; 3, where they leave same bridge for pipes in Brooklyn side. When the two bridge structures are connected in Manhattan as proposed, then
 there will be further changes in the direction of current. Before the Williamsburg bridge
 was built, these currents recrossed through the river bed, leaving mains alt along the docks
 in the Manhattan side, for the river, and leaving the river for mains or other metals along
@@ -8589,73 +6476,35 @@ the docks of the Brooklyn side. Traces of these currents have been found as far 
 as 23rd St., a distance of over two miles from the Brooklyn bridge. Since the Williamsburg
 bridge has been built, nearly all traces of these currents flowing north of it have disappeared,
 showing that the mass of metal composing the structure acts as a short circuit or path of
-lower resistance which carries practically all of the returning currents flowing from Man-
-hattan back to Brooklyn.
+lower resistance which carries practically all of the returning currents flowing from Manhattan back to Brooklyn.
 
-Bullion Refining.—The general principle of electrolytic bul-
-lion refining is to use the alloy of precious metals, or bullion, as
+Bullion Refining.—The general principle of electrolytic bullion refining is to use the alloy of precious metals, or bullion, as
 an anode in an electrolyte which dissolves only one of the two
 metals to be separated, and to use a sheet of the pure metal that is
 being deposited, as cathode.
 
-5,196 Electrolysis
-
 For silver deposition an acid solution of nitrate is employed as the elec- .
-trolyte (the Moebius process), while for gold an acid solution of gold chloride :
+trolyte (the Moebius process), while for gold an acid solution of gold chloride
 is found to yield the best results (the Wohlwill process).
 
-Wet Extraction Process for Metals.—Copper, nickel, tin and :
+Wet Extraction Process for Metals.—Copper, nickel, tin and
 zinc have all been extracted from their ores or slags by the:
 use of electrolytic processes, and in many cases these processes
 are still being worked upon an industrial scale.
 
 INLET" |
-a
-
-aw free eww ee eS Pe SP Ole eel OEE ee
-Ue Oe ee ee wwe ee ewe eee ee eee ow —_ = ae =o GS @==RP ase ose aay aw
-
-—_—-_ ne eee eee lee we oe ele oe — ao 'ome
-
-—_ 3 owe ree ee
-
-SS
-
-Wh
-
-: —_— ess=] eee =a — =P ese =a ———_ —. «==, —r —S—, —c om —_
-
-SSS
-
-Oe ee, Oe eee
 
 as ED = RES a= o_o
 
-Prd ome
-7 > as
-a
-(on tae
 2 ame as 8
-' ae Cee i
-x, ° .
+ae Cee i
 
 ap. Parco = — =
-
-: GX ws Z
-WZ
-
-oSENT?
-
-N 4 Fee
-AWRY
-
-LT.
 
 Fic. 8,293.—Electrolyzing tank used in the Dietzel process for silver refining. The rotary
 cylindrical cathodes K are coated with a thin layer of grease or graphite, on which copper is
 deposited electrolytically. Assoon as it becomes dendritic, it is knocked off and melted. The.
-cylinders are suspended on flanged contact rollers and are caused to rotate by the friction be-
-tween them and the rollers. Contacts between the rollers and the electric machine are made:
+cylinders are suspended on flanged contact rollers and are caused to rotate by the friction between them and the rollers. Contacts between the rollers and the electric machine are made:
 at the bearings of the rollers outside the tank. A loose bottom P, supports the material S,
 to be treated, and is constructed of hard rubber, celluloid or glass plates set in wooden frames.
 Electrical contact is made with the material S, by platinum wires or by plates of carbon. The
@@ -8670,8 +6519,6 @@ into the tank from above, and part of the copper is deposited on the cathodes. T
 current density is 14 amperes per sq. ft. at trom 214 to3 volts. As late as 1905, the sulphuric
 method of separation was extensively used in copper refineries, but it 1s being displaced by the
 electrolytic method.
-
-Electrolysis 5,197
 
 Copper.—tThe principle of the wet copper extraction process is as
 follows: The ore is roasted to drive off the sulphur, and then bleached in
@@ -8691,13 +6538,10 @@ solution so obtained. In the recovery of tin from old tin cans and tin scrap
 by electrolysis, sodium hydrate is used as the electrolyte.
 
 Zinc.—A great amount of investigation and large sums of money have
-been spent upon processes for extracting zinc from its ores, by aid of elec-
-trolysis, but only two of these have achieved any industrial success. The
-Hoepfner process depends upon the use of the waste calcium chloride solu-
-tion from ammonia soda works, and was worked out chiefly as a process for
+been spent upon processes for extracting zinc from its ores, by aid of electrolysis, but only two of these have achieved any industrial success. The
+Hoepfner process depends upon the use of the waste calcium chloride solution from ammonia soda works, and was worked out chiefly as a process for
 recovery and utilization of the chlorine from this waste product; zinc,
-testing 99.96 per cent purity, and bleach being the products finally ob-
-tained.
+testing 99.96 per cent purity, and bleach being the products finally obtained.
 
 The Swinburne-Ashcroft method (the other successful process) is not a
 wet extraction process, but depends upon the electrolytic separation of
@@ -8709,16 +6553,9 @@ Name the two kinds of ions.
 Describe the path of the current.
 Describe the electrolysis of water.
 
-How is chlorate of potash or of soda produced elec-
-trolytically?
+How is chlorate of potash or of soda produced electrolytically?
 
 Describe the Gibb's process.
-
-in wm &® HN =
-
-a
-
-5,198 Electrolysis
 
 7. How is ozone produced?
 
@@ -8732,8 +6569,6 @@ through a solution of sodium chloride and water?
 11. How is aluminum produced?
 12. Describe the method of bullion refining.
 
-Electric Lighting 5,199
-
 ## CHAPTER 213
 
 Electric Lighting"
@@ -8744,17 +6579,14 @@ the subject would accordingly include
 
 1. Generation;
 2. Transmission;
-3. Utilization.
 
 The first two divisions of the subject have been so thoroughly presented
 by the author in other volumes of this Series and in Audel's Engineers and
 Mechanics Guides that to consider them here would only be repetition of
 matter contained in the volumes just mentioned, and would leave no
-space to present the various kinds of apparatus used and methods em-
-ployed.*
+space to present the various kinds of apparatus used and methods employed.*
 
-Sources of Electric Light.—There are various means of pro-
-ducing light by electricity. The devices used are
+Sources of Electric Light.—There are various means of producing light by electricity. The devices used are
 
 1. Incandescent lamps;
 2. Vacuum tubes;
@@ -8764,20 +6596,16 @@ Incandescent Electric Lamps.—This form of lighting device
 is the most widely used source of electric light and lends itself
 
 *NOTE.—It is to be supposed that when a reader procures a book on a certain subject,
-he wishes to concentrate on that particular subject. With this idea in view the author be-
-lieves that the necessarily limited number of pages at his disposal should be confined strictly
+he wishes to concentrate on that particular subject. With this idea in view the author believes that the necessarily limited number of pages at his disposal should be confined strictly
 to the main subject, without any lengthy discussion of items foreign thereto, it being assumed
 that if the reader desire to post himself on related subjects as for instance, steam engines, he
 will get a book on that subject. The earnest student will adopt this method of study.
-
-5,200 Electric Lighting
 
 to the greatest variety of uses. It operates on the principle of
 heating a wire to a white heat by sending an electric current
 through 1t.
 
-In construction, a slender filament of.some conducting refractory ma-
-terial is enclosed in a glass chamber and connected to lead wires fused
+In construction, a slender filament of.some conducting refractory material is enclosed in a glass chamber and connected to lead wires fused
 through the base of the chamber or "'bulb.'' The bulb is exhausted of air -
 as completely as possible and the exhaustion duct sealed. The object .
 of placing the filament in a vacuum is to prevent oxidation.
@@ -8786,7 +6614,7 @@ of placing the filament in a vacuum is to prevent oxidation.
 
 TUNGSTEN ;
 EY BULB
-NITRE
+
 MANGANESE _— FILAMENT
 FELDSPAR GLASS
 LIME SUPPORTS
@@ -8794,7 +6622,7 @@ COBALT (BLUE)
 LITHARGE BUTTON
 oR MBRSSTEN} BUTTON ROD
 NICKEL }
-R
+
 "oro LEAD-IN WIRES
 os _STEM SEAL
 MARBLE 8 31 EXHAUST TUBE
@@ -8808,25 +6636,20 @@ Fic. 8,294.—Materials and parts of an incandescent lamp.
 
 #### Ques. Why is an incandescent lamp so called?
 
-Ans. Because a wire or filament is heated to incandescence :
+Ans. Because a wire or filament is heated to incandescence
 by the passage of an electric current, thus producing light.
 
-#### Ques. What materials are incandescent lamp filaments |
+#### Ques. What materials are incandescent lamp filaments
 
 made of?
 
 Ans. Mainly tungsten.
 
-Electric. Lighting 5,201
-
 +... In the older forms of lamps, carbon, platinum, tantalum, and other
-materials were used but they have been superseded because of their short-
-comings, such as short life, unsuitability to alternating current and high
+materials were used but they have been superseded because of their shortcomings, such as short life, unsuitability to alternating current and high
 cost for commercial purposes.
 
 #### Ques. What is tungsten?
-
-~é
 
 Ans. A metal extracted from minerals known as Wolframite
 (a tungstate of 1ron and manganese) and sheelite (a tungstate of
@@ -8844,15 +6667,12 @@ These are found in China, Korea, Colorado, California, New Mexico
 and several other places. The ore is purified to the oxide which later is
 reduced to pure tungsten appearing as a grayish-black powder. This is
 compressed into a solid under hydraulic pressure and intense heat, and
-is then drawn into wire. |
+is then drawn into wire.
 
 NOTE.—Edison, in 1879 invented the incandescent lamp of the form and principle which
-is in use at the present day; he employed a carbon filament. Later a metalized carbon fila-
-ment was produced which was more efficient and came under the name of the Gem lamp.
+is in use at the present day; he employed a carbon filament. Later a metalized carbon filament was produced which was more efficient and came under the name of the Gem lamp.
 Still later the tantalum lamp was produced which was still more efficient and, 1n 1907, the
 tungsten lamp was produced which is about three times as efficient as the original carbon lamp-
-
-5,202 Electric Lighting
 
 #### Ques. What is inserted into the bulbs of large lamps and )
 
@@ -8860,16 +6680,12 @@ why?
 
 Ans. A gas is inserted after the air has been drawn out, to:
 permit the filament being operated at a higher temperature and :-
-to modify the conduction of the heat, keeping it concentrated ::
+to modify the conduction of the heat, keeping it concentrated
 
 or neutralizing it.
 
-### B C B B C
-
-Fics. 8,297 and 8,298.—Assembly of tubes, cane rods, leading-in wires, etc., of an incandescen :
+Fics. 8,297 and 8,298.—Assembly of tubes, cane rods, leading-in wires, etc., of an incandescen
 lamp. In construction, a glass tube is blown and the lower end flared to fit the bulb and sea:
-
-a
 
 with it; this serves as the support for all the elements. A glass rod is inserted near the top fo -
 holding the filament, a tube through the bottom to serve as the exhaust tube for drawing ou. -
@@ -8890,12 +6706,8 @@ shown in the illustration. .
 
 Fics. 8,300 and 8,301.—Lamp filaments in place over anchors of vacuum and gas filled lamps
 
-=e
-
-~-1
-
-The regular or vacuum lamp has the filament supported vertically or draped over the anchor: :
-and gives off light all around, while the gas filled lamp has the filament coiled and supportec :
+The regular or vacuum lamp has the filament supported vertically or draped over the anchor:
+and gives off light all around, while the gas filled lamp has the filament coiled and supportec
 near the top'and concentrates the light in one direction. The leading-in wires are eithe: -
 
 pinched or welded to the filaments.
@@ -8903,8 +6715,6 @@ pinched or welded to the filaments.
 NOTE.—In the above illustrations the designations B and C, indicate Mazda type B anc -
 
 type C lamps respectively.
-
-Electric Lighting 5,203
 
 Methods Employed in Making Incandescent Lamps.—By
 the aid of automatic machinery incandescent lamps are turned
@@ -8919,8 +6729,6 @@ glass or stem is cut off by gas flame.
 
 A tube, known as the stem, is blown which afterwards is welded to the
 bulb and contains the Jeading-in wires and tubes for supporting the
-
-### C B C
 
 Fics. 8,302 and 8,303.—Exhausted lamps showing the filament set in the glass bulb and the base
 and the exhaust tube sealed. The opening in the base is sufficiently large to take the element
@@ -8945,16 +6753,14 @@ FLARE
 EXHAUST SOUL
 TUBING TUNGSTEN CO!
 
-i.
-THE FILAMENT GREATLY MAGNIFIED
+### THE FILAMENT GREATLY MAGNIFIED
 
 MOUNTano BULB
 
 BULB as BLOWN
 SEALED TOGETHER
 
-CEMENTING ©
-ON BASE
+### ON BASE
 
 ek 8,306 to 8,320 -—Making an incandescent lamp. The stem and inserting machine bring together the flare, exhaust tubing, rod
 os wires, assembling all in one complete stem, and finally inserting the support wires ready for mounting the filament These
@@ -8966,13 +6772,7 @@ travel, are heated just the right temperature by tonguelike flames to make a per
 pumps cut in to exhaust the bulb. On the basing machine the lamp is capped with a brass base having a lining of plastic cement:
 ce lead wire makes contact with the shell and the other is threaded through tothe contact totheend. As the lamps pass through
 a heated oven the cement hardens and mechanical fingers drop a touch of solder on the lead wires and the excess length is cut off.
-As the lamp nears the end of its final circle in alamp making machine, it is lighted for inspection. |
-
-v0Z'S
-
-BSUBnYSIT 91139910
-
-Electric Lighting | 5,205
+As the lamp nears the end of its final circle in alamp making machine, it is lighted for inspection.
 
 filament and exhausting the air. The tip is not visible on the bulb as the
 air is exhausted from the bottom and the sealed end concealed in the base.
@@ -9000,26 +6800,20 @@ In gas filled lamps, gas is inserted before the stem is sealed.
 
 ### HIGH C-P POSITION
 
-Fics. 8,321 to 8,323.—Hylo turn down incandescent lamps. Owing to the difficulty of manu-
-facturing a mechanically strong one or one-half candle power filament for direct operation on
+Fics. 8,321 to 8,323.—Hylo turn down incandescent lamps. Owing to the difficulty of manufacturing a mechanically strong one or one-half candle power filament for direct operation on
 voltages as high as 110, the two filaments are connected in series for the dim light. The full
 candle power of the lamp is obtained by operating a switching device which either short cir
 cuits or open circuits the small filament. In type No. 1 lamp, figs. 8,321 and 8,322, the
 switch consists of a pivoted metal segment A (attached to the base B), which may be rotated
 slightly by means of the cords so as to touch an auxiliary contact C, thus short circuiting the
 small filament and lighting the high candle power filament. By shifting the segment off the
-contact C both filaments are in series, but only the small filamentis lighted. The cords oper-
-ate only to change the candle power from high to low, or vice-versa, and in order to put out
+contact C both filaments are in series, but only the small filamentis lighted. The cords operate only to change the candle power from high to low, or vice-versa, and in order to put out
 the lamp the key or switch should be used. In type No. 7 lamp, shown in diagram only, fig.
 8,323, there is a switch A concealed in the base, which provides three changes in candle power;
 namely, 16, 1, and out, all obtained by operating the string alone. This switch is pivoted at
-its center B, and the lamp circuit is completed when connection is made at either of the con-
-tacts C or D. The switch makes contact at only one of these points at a time. When con-
-nection is made at D both filaments operate in series and the small filament is lighted. When
+its center B, and the lamp circuit is completed when connection is made at either of the contacts C or D. The switch makes contact at only one of these points at a time. When connection is made at D both filaments operate in series and the small filament is lighted. When
 the switch is pulled over to C the small filament is open circuited and the high candle power
 filament burns alone. By pulling the switch clear of both C and D, the lamp is put out.
-
-5,206 Electric Lighting
 
 The base is made of brass with the thread formed into it and is fastened
 to the bulb by cement.
@@ -9046,8 +6840,7 @@ does not happen in a vacuum lamp.
 
 In order to reduce the amount lost by conduction, the gas used should
 have as poor a heat conductivity as possible. Originally nitrogen was
-used, but argon with a small percentage of nitrogen is now used. Sub-
-stantially pure argon will conduct current (ionize) at the voltage ordinarily
+used, but argon with a small percentage of nitrogen is now used. Substantially pure argon will conduct current (ionize) at the voltage ordinarily
 used for lamps. Thus current would flow through the gas between the
 filament terminals, the resistance of this path decreasing as the current
 increases, thus causing the lamp to "'arc"' or short circuit.
@@ -9068,20 +6861,19 @@ washing, this product was wound upon a large drum and dried; it then possessed c
 strength. In this form it was cut up into lengths suitable for filaments and carbonized at a
 high temperature.
 
-Electric Lighting 5,207
-
 How an Arc Lamp Works.—If two carbon rods be connected
 electrically to the terminals of a dynamo and the free ends of the
 
-@ @
 TERMINALS : oo
 e ° PLUNGER
 PLUNGER
 ROD ARM g E
 SHUNT 4 Boa
-ae
-PLUNGER EVER
-I ADJUSTING
+
+### PLUNGER EVER
+
+### I ADJUSTING
+
 - WEIGHT
 
 STOP |
@@ -9090,14 +6882,12 @@ SUPPORT ARM waovapie
 
 ### FOR LOWER CARBON
 
-A
 FIXED BanDOn
 CARBON
-¢AP——-
-MOVABLE FIXED
-CARBON CARBON [3
 
-HORT) ==
+### MOVABLE FIXED
+
+CARBON CARBON [3
 
 ### SUPPORT
 
@@ -9110,8 +6900,7 @@ contact, the current is short circuited around the shunt coil, the solenoid, thu
 allowing the plunger to recede and break contact of the carbons, lengthening the gap until
 equilibrium is established.
 
-Fic. 8,325.—Elementary series control arc lamp with dash pot and adjusting weight. Jn oper-
-ation, before the carbons get hot, the sudden motion of the magnet draws them apart,
+Fic. 8,325.—Elementary series control arc lamp with dash pot and adjusting weight. Jn operation, before the carbons get hot, the sudden motion of the magnet draws them apart,
 breaking the circuit, and they fall together again, the result being a vibrating action exactly
 like that of a vibrating bell. To secure equilibrium, it is necessary to retard the upward
 motion of the movable carbon, and this is what the dash pot accomplishes. Thus as the
@@ -9123,34 +6912,20 @@ would retard the upward movement. It must be evident to any one that refinement 
 adjustment may be obtained by the addition of an adjusting weight by which gravity can be
 conteracted to any desirable extent, regulating the arc voltage to a desirable working value.
 
-5,208 Electric Lighting
-
-|
-:
-|
-
 ATR,
-3 RSS
 
 Fics. 8,326 and 8,327.—Views of mechanism of General Electric luminous arc lamp. The arc
-ig struck between a stationary copper upper electrode and a movable magnetite lower elec-
-trode and burns under normal updraft conditions. In construction: The lower electrode 1s
+ig struck between a stationary copper upper electrode and a movable magnetite lower electrode and burns under normal updraft conditions. In construction: The lower electrode 1s
 carried on a rod actuated by the standard type of shoe clutch mechanism. The current is
 carried to the electrode by means of a flexible spiral connection contained in a tube which is
 
 Me ag Insulator
 
-Ie NL a
-
 - Porcelain —";
 
 aT Insulator
 
-. Electric Lighting 5,209
-
 Porcelain
-
-fF <————-Supporting Ring
 
 Binding '
 Post te
@@ -9158,7 +6933,7 @@ Post te
 Cast Iron Canopy
 
 Ventilated
-. Autotransformer
+
 Chamber
 
 Autotransformer
@@ -9177,7 +6952,6 @@ Gasket
 nner Reflector
 
 = a\ Reflector
-ok jccinanee . Supporting
 
 Gasket Screws
 
@@ -9197,7 +6971,6 @@ Steel
 Reflector
 
 Refractor
-Globe ———————> > *
 
 Fic. 8,328 and 8,329.—Westinghouse dust proof Luxsolite pendant; sectional view showing
 parts. |
@@ -9209,11 +6982,8 @@ about 18 ins. A single side rod, telescoping the supporting tube supports and ca
 electrode, dome and chimney so that no shadows are visible when the lamp is properly placed,
 with the side rod toward the sidewalk. Should any non-conducting slag form on the upper
 surface of the lower electrode, it would be effectually broken betause 'two weld breaking
-devices are provided, namely, the hinged upper electrode, and the slot in the top of the dash-
-pot stem. If the voltage become excessive, or if, for any reason, the lamp should fail, it is
+devices are provided, namely, the hinged upper electrode, and the slot in the top of the dashpot stem. If the voltage become excessive, or if, for any reason, the lamp should fail, it is
 immediately cut out.of circuit by a cut out which is part of the lamp mechanism.
-
-5,210 Electric Lighting
 
 rods brought together, the current from the dynamo will flow:
 through the closed circuit thus established.
@@ -9223,15 +6993,13 @@ one-eighth of an inch or less in the circuit, the current will jump from one:
 rod to the other and the arc thus formed will be maintained across the:
 gap in the circuit.
 
-Cd
-
 UPPER ELECTRODE |_|
 POSITIVE
 
 LOWER ELECTRODE.
 NEGATIVE
 
-Fic. 8,330.—Elementary diagram of General Electric luminous arc lamp. Cycle of operation: |
+Fic. 8,330.—Elementary diagram of General Electric luminous arc lamp. Cycle of operation:
 The current enters terminal P, passing through the starting magnets, starting resistance and
 the cut out contacts to the negative terminal. The starting coils are thus energized and the
 lower electrode is brought into contact with the positive, establishing the arc and the circuit
@@ -9245,21 +7013,13 @@ repeated.
 
 ### G RESISTANCE
 
-ee _}
-
-### STARTIN
-
 ### STARTING MAGNETS
-
-### CUTOUT
 
 In any practical arc lamp, not only must the carbons be
 properly secured to supports but suitable mechanism must be
 provided to meet certain conditions essential 1n operation.
 
 This mechanism should be of such nature that:
-
-Electric: Lighting 5,211
 
 1. The carbons are brought into contact when the current is turned off;
 
@@ -9299,48 +7059,42 @@ hy BARREL STRIPS
 CONTROL ,
 MECHANISM——-—
 
-Fics. 8,331 and 8,332.—General Electric carbon arc searchlights. Views showing general con-
-struction.
+Fics. 8,331 and 8,332.—General Electric carbon arc searchlights. Views showing general construction.
 
-The control of the carbons is effected by various feed mecha-
-nisms as shown in the accompanying illustrations.
+The control of the carbons is effected by various feed mechanisms as shown in the accompanying illustrations.
 
 Luminous Arcs.—In the case of an electric arc maintained
 between ordinary carbon electrodes, almost all of the light
 
-5,212 Electric Lighting
-
-comes from the tips of the electrodes and comparatively little from :
+comes from the tips of the electrodes and comparatively little from
 the arc stream ttself .
 
 In the development of arc lamps various attempts have been made to °
-increase the luminosity of the arc stream by introducing some substance :
+increase the luminosity of the arc stream by introducing some substance
 not carried by the ordinary carbon electrodes.
 
-In the latest types of arc lamp this is accomplished in one of ;
-two ways: by using in direct current lamps, negative electrodes :
+In the latest types of arc lamp this is accomplished in one of
+two ways: by using in direct current lamps, negative electrodes
 of a material the incandescent vapor of which gives a highly ,
 luminous spectrum; or by employing electrodes of such refrac- .
-tory material as will give a very high arc temperature, by the :
+tory material as will give a very high arc temperature, by the
 effects of which certain materials carried by the positive elec- .
-trode will be converted into incandescent vapor of a high light |
+trode will be converted into incandescent vapor of a high light
 gi1VINg power. |
 
-Lamps operating on the first method are variously called |
+Lamps operating on the first method are variously called
 metallic, magnetite, or in general luminous arc lamps.
 
 The mechanism and operation of a luminous arc lamp is:
 shown in figs. 8,326 to 8,330.
 
-Vacuum Tube Lamps.— Practical lamps of this type employ-
-ing long vacuum tubes have been commercially available since
+Vacuum Tube Lamps.— Practical lamps of this type employing long vacuum tubes have been commercially available since
 1903.
 
 The accompanying illustrations and explanation of the
 Cooper-Hewitt and Neon lamps will show their characteristics
 and operation. They are extensively used in various industrial
-and commercial plants where large candle power, a low operat-
-ing cost, and a tubular form with low intrinsic brilliancy and
+and commercial plants where large candle power, a low operating cost, and a tubular form with low intrinsic brilliancy and
 good diffusion are more important than the natural color value
 of illumination.
 
@@ -9349,8 +7103,6 @@ of this lamp are the strongest objectors to its green color, but those who
 have used it for various purposes assert that the eyes apparently are less
 fatigued by it when applied to fine work than by those illuminants which
 yield more of the red rays.
-
-Electric Lighting 5,213
 
 The lamps are of very high efficiency, the watts consumed per candle
 power being about one-half that of open arcs, one-third that of enclosed
@@ -9369,8 +7121,6 @@ The direct current Cooper-Hewitt lamp is shown in fig.
 
 ### SUPPLY
 
-### VO YQYQYYC
-
 ### INDUCTANCE
 
 € IRON RESISTANCE B STARTING RESISTANCE
@@ -9383,30 +7133,25 @@ It consists of a glass tube A, and a small set of inductance and
 resistance coils B, connected 1n series with the tube. The latter
 is made of special glass, and carries an iron electrode at its upper
 or positive end, and a mercury electrode at its negative or bulb
-end. 'These electrodes are connected with the outside by plati-
-num wires sealed in the glass.
+end. 'These electrodes are connected with the outside by platinum wires sealed in the glass.
 
 The tubes for all lamps have a uniform diameter of 1 inch, but
 vary in length for different candle powers. At the present time
 they are made in lengths of 21 and 45 inches for candle powers of
 300 and 700 respectively for the general groups of voltages
 
-5,214 Electric Lighting
-
 around 110 and 220 volts respectively. Tubes can be adopted,
 however, for any commercial voltage, but the candle power will
 change slightly for different voltages. .
 
-These tubes are exhausted and sealed, and only a small quan-
-tity of mercury is placed in the bulb at the negative end. The
+These tubes are exhausted and sealed, and only a small quantity of mercury is placed in the bulb at the negative end. The
 
 Fic. 8,334.—Cooper-Hewitt direct current lamp. Zn construction, the tube A is supported
 by twoclamps B, B, attached to a lamp 70d C fixed parallel with the tube and pivoted at D to
 the mainstem which is screwed into the ceiling crowfoot. The inductance and resistance coils,
 etc., are also supported by the stem and covered by a metal canopy. In some cases a suitable
 reflector is attached tothelamprod. Tolight the tube, it is tilted downward by means of
-the chain attached to its positive end and the mercury allowed to flow in a small stream be-
-tween the electrodes. The tube is then returned to its normal position, thereby breaking
+the chain attached to its positive end and the mercury allowed to flow in a small stream between the electrodes. The tube is then returned to its normal position, thereby breaking
 the circuit and starting the arc which puts the lampin operation. In some forms of the lamp
 the act ot tilting is accomplished by means of a solenoid attached to the stem at the pivot
 joint of the lamp rod. Since mercury is an electrode material with which the voltage required
@@ -9414,39 +7159,17 @@ to maintain an arc is much less than the sparking voltage at the temperature of 
 direct current tube lamp cannot be used with alternating current.
 
 mercury tube has the peculiar characteristic that 1t experiences
-momentary increases of resistance which are of sufficient mag-
-nitude to break the continuity of the vapor arc. This peculi-
-arity disappears, however, when the current strength 1s over
-4 amperes, and with weaker currents when the negative elec-
-trode becomes heated.
-
-y
-i
-
-Electric Lighting 5,215
+momentary increases of resistance which are of sufficient magnitude to break the continuity of the vapor arc. This peculiarity disappears, however, when the current strength 1s over
+4 amperes, and with weaker currents when the negative electrode becomes heated.
 
 In the case of 3.5 ampere commercial lamp it has been found
 
 'necessary to introduce inductance in series with the tube for the
 
-~~
-
-s
-
-"7
-
 ### TO ALTERNATING CURRENT
 
-PPLY
+### INDUCTANCE KS
 
-SU
-C
-CD
-CD
-INDUCTANCE KS
-> FS AUTO-TRANSFORMER
-HO0OO00G mS
-Cc
 ENCLOSING ~
 BULB
 
@@ -9475,26 +7198,16 @@ designed that a slight decrease of current causes such a decrease in the volts d
 terminals of the coil that the remainder of the voltage impressed on the lamp remains more
 nearly constant.
 
-5,216 Electric Lighting
-
 purpose of storing sufficient magnetic energy to oppose and:
-overcome the tendency to reduce the current. It has been found |
+overcome the tendency to reduce the current. It has been found
 that this effect of increasing resistance has a tendency to become.
 cumulative, or in other words, if an inductance of a certain size
 be required to maintain the vapor arc or stream for a few sec-
 
-—-+- | MAIN =
-
 RESISTANCE.
-
-e | 7
-ol (O0d0Q00C
-t INDUC TANCE
 
 ### RESISTANCE
 
-&
-"| D000 VOC
 ome: INDUCTANCE
 
 RESISTANCE 3
@@ -9502,14 +7215,11 @@ RESISTANCE 3
 Fic. 8,336.—Diagram illustrating the method of operating Cooper-Hewitt lamps in series.
 
 onds, a larger inductance would be necessary to maintain it for a
-few minutes or hours, and a still larger one to maintain it con-
-tinuously. Approximately, a tenfold increase of inductance in
+few minutes or hours, and a still larger one to maintain it continuously. Approximately, a tenfold increase of inductance in
 the circuit increases the continuity of action about 1,800 times.
 
 The Cooper-Hewitt lamp designed for alternating current is
 shown in fig. 8,335.
-
-Electric Lighting 5,217
 
 It is similar in all respects to that of the direct current lamp with the
 exception that the upper end carries two positive electrodes and one small
@@ -9518,8 +7228,7 @@ one of the positive electrodes.
 
 Neon Luminous Tube Lights.— Neon gas is one of the natural
 gases 1n the air prevalent in the proportion of one part of neon
-to every 66,000 parts of air. Helium, argon, xenon and kryp-
-ton are the other rare gases which are found in the air. When
+to every 66,000 parts of air. Helium, argon, xenon and krypton are the other rare gases which are found in the air. When
 these rare gases are excited by passing electric current through
 them they glow with a characteristic color.
 
@@ -9527,21 +7236,7 @@ them they glow with a characteristic color.
 
 ### LIGHTED PORTION ELECTRODE
 
-: (CLOSED AT ONE END)
-
-'
-
-Ni
-@44 aif
-
-q
-yy
-
-\
-~
-i]
-
-""
+(CLOSED AT ONE END)
 
 ### GLASS BEADS SPACER SEAL-IN WIRE'
 
@@ -9556,77 +7251,32 @@ air was so small that it was impossible to introduce more gas through
 breather valves as had been done with nitrogen tubes. He next found
 that the electric current passing through the electrodes at the ends of
 each tube caused a sputtering or a flying off of small particles of the metal
-which combined with the neon atoms until there was insufficient gas re-
-maining in the tube and it dimmed and went out.
+which combined with the neon atoms until there was insufficient gas remaining in the tube and it dimmed and went out.
 
 Claude patented a process which called for electrodes of sufficient size
-to prevent sputtering; the driving of the occluded gases from these elec-
-trodes, and the fine purification of the neon gas. By this method of man-
-ufacture tube lights have been secured which have operated more than
+to prevent sputtering; the driving of the occluded gases from these electrodes, and the fine purification of the neon gas. By this method of manufacture tube lights have been secured which have operated more than
 20,000 hours. This compares with approximately 1,000 hours for the
 incandescent lamp. "
 
-5,218 Electric Lighting
-
-The procedure in making a luminous tube display is as fol-
-lows: The sketch is increased to actual size and pounced upon
-asbestos. Straight lengths of glass tubing of the desired diam-
-eter are then heated and blown to the shape of the sketch, elec-
-trodes are then sealed in at each end of the glass tubes, then the
+The procedure in making a luminous tube display is as follows: The sketch is increased to actual size and pounced upon
+asbestos. Straight lengths of glass tubing of the desired diameter are then heated and blown to the shape of the sketch, electrodes are then sealed in at each end of the glass tubes, then the
 air is pumped out and neon gas pumped in and the tubes sealed.
 
 WIRE CONNECTO HIGH TENSION os
 
 ### CABLE ELECTRODES
 
-SSS
-
-o a YY
-ELECTRODES
+### ELECTRODES
 
 ### NEON -
 
 TUBE
 
-/ ry> SSS 7 ~
-
 ### LOW TENSION
 
-a
-EAL
-
-p> ;
 eee eae oa eee NSS
-<= :
-POS
-O-
-| a)
-
-¢
-
-oh
->
-
-=
-
-Z
-l
-l
-
-~  ¥
-
-=e
-
-e—\
-————N
-————r
 
 SS — =i
-
-.
-»)
-
-thes [
 
 | HIGH
 TENSION
@@ -9645,8 +7295,6 @@ box and lighted.
 In the luminous tube signs it 1s necessary to use high tension
 current to send it- through a sufficient length of glass tubing.
 
-Electric Lighting 5,219
-
 [In this country the current averages about 8,000 volts but it is
 llow amperage and not dangerous to life.
 
@@ -9663,8 +7311,7 @@ and an amber colored glass is used instead of the transparent glass.
 Several shades of blue, green, yellow and red are obtainable as well as
 the new white tube light recently perfected by the Claude Laboratories.
 
-When a sign is completed the ordinary 110-volt current is con-
-nected with the sign, from there it goes through a step-up
+When a sign is completed the ordinary 110-volt current is connected with the sign, from there it goes through a step-up
 transformer and then through the glass tubes.
 
 As a rule all the high tension wiring is properly insulated and contained
@@ -9690,10 +7337,7 @@ for interior illumination, both because it generates little heat and also
 because it does not glare and irritate the eye. Progress is being made
 along these lines and in fact installations have already been made.
 
-5,220 Electric Lighting
-
-Constant Current Series System.—The application here de-
-scribed is for street lighting with explanation of the various
+Constant Current Series System.—The application here described is for street lighting with explanation of the various
 types of load and control used with the series system.* -
 
 Figs. 8,339 to 8,345 is a chart in four sections (A,B,C,D). The
@@ -9702,12 +7346,10 @@ which may be used to supply a. c. series lighting systems, are
 illustrated in section A. At the top the oil immersed automatic
 pole type R. O.; next, the air cooled automatic sub-station type
 R. F.; the station type R. V. constant current non-automatic
-regulating transformer; and at the lower left a typical installa-
-tion of the oil immersed subway type R. O. transformer.
+regulating transformer; and at the lower left a typical installation of the oil immersed subway type R. O. transformer.
 
 The operation of three of the classes of transformers just mentioned is
-entirely automatic, and does not require the attendance of a station oper-
-ator. Requiring the attention of a station operator but functioning at a
+entirely automatic, and does not require the attendance of a station operator. Requiring the attention of a station operator but functioning at a
 considerably higher primary power factor is the non-automatic station
 type R.V. constant current transformer supplying the main series system:
 
@@ -9725,8 +7367,7 @@ The copper conductor is protected by successive layers of insulation,
 lead sheath, asphalted jute, two overlapping layers of band steel and a final
 wrap of asphalted jute.
 
-Having the desirable feature of being easily replaced in the series cir-
-cuit is the single light type IL with detachable coupling supplying the
+Having the desirable feature of being easily replaced in the series circuit is the single light type IL with detachable coupling supplying the
 form 9 unit (section A). It. will be noticed that the schematic diagram
 adjacent to this unit shows the use of multiple socket and no film cut out
 (section B). This practice is permissible for single lamp transformers
@@ -9735,47 +7376,26 @@ supplying up to, but not including, 25,000 lumen lamps.
 *NOTE .— The series system here described represents the practice of the General Electric
 Co., the system being known under the trade name Novalux series system.
 
-Electric Lighting 5,221
-
 aroma DETAIL AT X A
-ee INSULATION ASPHALTED JUTE
+
 REGULATING ets STEEL
 
 "TRANSFORMER
-
-™ WRAP OF
-ASPHALTEDO
-- JUTE
 
 COPPER 1 |
 CONDUCTOR SHEATH
 
 ### AUTOMATIC
 
-4000 Vv." 2300 v. irl2 |
-sr es ORN GA B |
-— nv ae: LIGHTNING ARRES TER All
-7 a i ee |
-CG —
-ai | +O
-| : wi &
-| ea
-qi £8
 STATION TYPE RV CONSTANT CURRENT | ci
 NON-AUTOMATIC REGULATING |
 TRANSFORMER | . <
-TOOT CHOCHRAE MER 'ak | OY
-+" CULL WLLL iet, tt ,
+
 Wa Me Y pare a: 8 | | oh
 72 3 } 1} SINGLE LIGHT | a
-= Uy TYPE ILC A
-\} (PLUG CUT OUT) [ith /
-of \ WA uo
-7 pie
 
-| &
+\} (PLUG CUT OUT) [ith
 
-'
 perce
 
 ### VAULT INSTALLATION SUBWAY TYPE
@@ -9786,35 +7406,16 @@ perce
 
 Fic. 8,339 to 8,345.—General Electric Novalux series street lighting system. Section A.
 
-5,222 Electric Lighting
-
-=
-
-ne
-
-### DETACHABLE
-
 ### COUPLING
 
-(WEEVE)
-SLEEVE
-
-\e
-B\,
+### SLEEVE
 
 Fic. 8,346 to 8,349.—General Electric Novalux series street lighting system. Sectton B.
 
-; VAULT
-TWO LIGHT INSTALLATION
+### TWO LIGHT INSTALLATION
+
 IN MULTIPLE | TWO ONT IN SERIES
 TYPE IL
-
-jog ° ) YPLIL TRANSFORMER ©
-
-7 ie <7
-MN
-
-Electric Lighting 5,223
 
 The two lamps mounted in Form 12 ornamental units on a single pole
 are connected in multiple on the secondary of the two light in multiple
@@ -9835,8 +7436,7 @@ is available in the type R, pot head cut out used with the lamp in the
 Form 12 unit (section C).
 
 A concrete post installation is next shown equipped with Form 9, unit
-and Form E, casing which is designed to permit the use of an auto-trans-
-former, commonly called, compensator. The auto-transformer is a very
+and Form E, casing which is designed to permit the use of an auto-transformer, commonly called, compensator. The auto-transformer is a very
 efficient means of obtaining the 15 and 20 ampere currents necessary for
 the satisfactory operation of the Mazda series lamps of 400 candle power
 or over.
@@ -9860,23 +7460,19 @@ from 2300 V. feeders.
 
 Comprising primary protection between the power line and time switch
 are pellet type oxide film lightning arresters, and fused cut outs. The
-series circuit 1s supplied from the secondary of the pole type R. O. con-
-stant current transformer, secondary being protected by pellet type ar-
-resters and a standard Novalux series circuit protective device. The right
+series circuit 1s supplied from the secondary of the pole type R. O. constant current transformer, secondary being protected by pellet type arresters and a standard Novalux series circuit protective device. The right
 angle bracket attached to the pole holds a Novalux eternalite unit.
 
-_ Operated by this smaller series circuit is a remote control switch having
+Operated by this smaller series circuit is a remote control switch having
 a series operating coil and multiple contact. Energizing the operating
-
-5,224 Electric Lighting
 
 (eee ae
 4000 V. Wh) | CONTROLLER SERIES
 
 2300 V. Ginnie 3H{— OPERATING COIL
 
-POLE TYPE GH— PRIMARY :
-FUSED CUTOUT @@ ™ '
+POLE TYPE GH— PRIMARY
+
 . SERIES CIRCUIT Wg
 
 RO TRANSFORMER z
@@ -9884,15 +7480,13 @@ PELLET TYPE ><u
 
 uae imal PROTECTIVE.
 potas [ eee DEVICE
-7 aN ec
+
 . e NPE RO CONSTANT
 = CURRENT -
 : TRANSFORMER
 STRAIGHT —_— ©
 FILM CUT OUT
 FILM CUT OUT COMPENSATOR:
-
-O
 
 _ CUT QUT
 
@@ -9901,15 +7495,13 @@ Fics. 8,350 to 8,353.—General Electric Novalux series street lighting system. 
 _Blectric Lighting 5,228
 
 TIME. SWITCH
-POLE TYPE RO : TYPE'S L:'SERIES |
+POLE TYPE RO : TYPE'S L:'SERIES
 TRANSFORMER _ TRANSFORMER
-
-[Ee a
 
 ### PELLET TYPE
 
 LIGHTNING Tell Fim éut OUT.
-° dX ARRESTER yes tel PROTECTING:
+
 rN DEVICE,
 
 TYPE H.C.P DISTRIBUTION = Nears
@@ -9917,44 +7509,24 @@ TYPE H.C.P DISTRIBUTION = Nears
 |: LOW VOLTAGE.
 SERIES CIRCUIT
 
-.
-() ipuinet
-CO C_
-
 PRIMARY _ hy
 a FUSED CUT QUT
 
 SERIES |
 _ MULTIPLE
-FYPE LL.
-SERIES
-'PRIMARY-
-MULTIPLE: |
-SECONDARY:
+
+### SERIES
+
+### SECONDARY:
 
 ### MULTIPLE CIRCUIT
 
 -CONTROL SWITCH
 SERIES OPERATING COIL
 
-ail ih
-
 ### MULTIPLE CIRCUIT
 
-nd te te y) aA. a e
-
-° —_
-
-"0 , 7
-. ae : ee oa ry
-i : 2 : : :
-
-" 5 7 ve aa
-Oe eee: po
-
 Fic. 8,354.—General Electric Novalux series street lighting system: . Secnon b:'
-
-5,226 Electric Lighting
 
 .goil closes the circuit through the secondary of the multiple transformer
 :., and multiple circuit.
@@ -9962,8 +7534,7 @@ Fic. 8,354.—General Electric Novalux series street lighting system: . Secnon b
 In the next apparatus group the original series circuit is used for the
 remote control of a separate series circuit supplied from 2300 volt feeders
 by means of a pole type R. O. constant current transformer. . Auxiliary
-apparatus for this installation 1s similar to that in the group just de-
-scribed except that the Form 6, bracket type unit is supplied from an aerial
+apparatus for this installation 1s similar to that in the group just described except that the Form 6, bracket type unit is supplied from an aerial
 type IL, series transformer.
 
 Where the series circuit is carried overhead on poles the conductor requires
@@ -10000,8 +7571,6 @@ What are the different types of arc lamp? 7
 18. What are the features of the constant current series
 system as applied to street lighting?
 
-IHumination 5.227
-
 ## CHAPTER 214
 
 Humination
@@ -10025,8 +7594,7 @@ Beam.—Several parallel rays.
 Candle foot.—The illumination produced by a light of one candle
 power at a distance of one foot.
 
-Candle power.—The amount of light emitted by a sperm candle seven-
-eighths inch in diameter and burning 120 grains (7.776 grams) per hour.
+Candle power.—The amount of light emitted by a sperm candle seveneighths inch in diameter and burning 120 grains (7.776 grams) per hour.
 
 Lumen.—tThe standard of luminous flux, being the light sent out from
 a unit source through a unit solid angle.
@@ -10039,8 +7607,6 @@ Mean conical candle power.—The mean of the candle power in all
 directions making a given angle 6 with the equatorial plane of a lamp; it
 is the mean conical candle power at the angle @.
 
-5,228 Illumination
-
 Mean spherical candle power.—If there be drawn from a source,
 equally in all directions, lines whose lengths are proportional to the candle
 power in these directions, then the mean value of the lengths of all these
@@ -10048,29 +7614,29 @@ lines is the mean spherical candle power.
 
 Pencil.—Several rays converging to a point.
 
-Photometry.—The process of measuring the intensity of light. The |
+Photometry.—The process of measuring the intensity of light. The
 instrument by which the candle power is determined is called a photometer.
 
 Ray.—The direction in which a light wave is advancing.
 
 Fic. 8,355.—General Electric foot: candle meter. 'To obtain readings, place the foot candle {
 meter on the desk against the wall, or in any other location where it is desired to measure the}
-illumination. Make sure that no unusual shadows are cast on the screen. Select on the screen |
+illumination. Make sure that no unusual shadows are cast on the screen. Select on the screen
 the round spot which most nearly disappears, that is, appears to be of the same brightness as &
-the white screen surface. Read the illumination directly in foot candles from the point on the |
+the white screen surface. Read the illumination directly in foot candles from the point on the
 scale which is beneath this spot. Foot candle readings may be obtained from any angle while |i
 
 , viewing the meter from the side. -Readings should not be taken while viewing the meter i
 from the ends, as erroneous indications will be obtained.
 
-Foot Candle Measurements.—An approved instrument for |
+Foot Candle Measurements.—An approved instrument for
 this, purpose is the foot candle meter as shown in fig. 8,355. In|
 operation it is placed upon or adjacent to the surface on which a
 measurement of the foot candle intensity 1s desired. A lamp}
 within the box illuminates the under side of the screen to a much
-higher intensity at one end than at the other. The illumination |
+higher intensity at one end than at the other. The illumination
 which it is desired to measure is of course, practically uniform }
-over the entire scale. — |
+over the entire scale. —
 
 Fics. 8,356 to 8,358.—Candle power as indicated by a photometer fig. 8,356 shows a standard
 candle and a photometer pointed toward the candle. When the photometer is balanced
@@ -10088,7 +7654,7 @@ The proverbial light hidden under a bushel, if it is 1 candle, wili give out 1 c
 there be a:small hole in the bushel for a beam to escape. As far as its general illuminating
 value is concerned, it is still hidden under a bushel. This leads to the important conclusion
 
-' that the candle power of a source does not necessarily give an indication of the total quantity
+that the candle power of a source does not necessarily give an indication of the total quantity
 of light emitted by the source,:as explained in figs. 8,359 to 8,861,
 
 Fics. 8,359 to 8,361.—Measurement of candle power, fig. 8,359, horizontal candle power; fig.
@@ -10096,15 +7662,12 @@ Fics. 8,359 to 8,361.—Measurement of candle power, fig. 8,359, horizontal cand
 power of a source does not necessarily give an indication of the total quantity of light emitted
 by the source. An automobile head lamp may, for example, produce a beam with maximum
 candle power of 100,000 the source being a 21 c.-p. lamp. Closely related to candle power is
-mean spherical candle power. The mean spherical candle power of a lamp is simply the aver-
-age of all the candle powers in all directions about the lamp. A source giving one candle in
+mean spherical candle power. The mean spherical candle power of a lamp is simply the average of all the candle powers in all directions about the lamp. A source giving one candle in
 every direction would have a mean spherical candle power of 1, or if a source gave off various
 candle powers in different directions and 1f the average of all these candle powers were 1.
 the source would have a mean spherical candle power of 1. The infinite number of directions
 in which a source ordinarily emits light do not all lie in the same plane, but extend into space
 on all sides about the source, like the pricks of a chestnut burr.
-
-5,230 Illumination
 
 Closely spaced translucent dots line the scale from end to end. If the
 illumination on the scale from the outside fall within the measuring limits
@@ -10118,25 +7681,15 @@ if Ais 1 foot distant trom the source, the level of illumination on the plane CD
 is 1 foot candle. The evel of illumination measured 1n foot candles, is the measurement most
 intimately associated with everyday use ot light, and a measuremeni which the eye either
 consciously or unconsciously 1s making whenever the faculty of vision is being employed, for
-the number of foot candles there are on the working plane, other things being equal, deter-
-mines directly whether or not there is sufficient light. '
+the number of foot candles there are on the working plane, other things being equal, determines directly whether or not there is sufficient light.
 
-A "
-- WY) U Wy YYy > lw
-
-W ppp o
-
-Fic. 8,363.—Illumination of perpendicular and inclined surfaces. lf instead of being per-
-pendicular to the beam of light as at A a plane is tilted at the angle X, as at B, the same ::
-amount of light 1s spread over a greater area. The illumination on Bisto A inversely asthe :
+Fic. 8,363.—Illumination of perpendicular and inclined surfaces. lf instead of being perpendicular to the beam of light as at A a plane is tilted at the angle X, as at B, the same
+amount of light 1s spread over a greater area. The illumination on Bisto A inversely asthe
 length bb is to aa or as cosine X. Thus if cos X =.7, and the foot candlage on A is 1, the
 illumination on B would be .7 foot candle.
 
 The scale is accurately calibrated, with the lamp within the box burning
-at a certain definite voltage. A volt meter and rheostat enable the op-
-erator to adjust the lamp voltage to four different values, which permit
-
-Illumination 5,231
+at a certain definite voltage. A volt meter and rheostat enable the operator to adjust the lamp voltage to four different values, which permit
 
 the instrument to be used for intensities ranging from a minimum of .012
 to 100 foot candles. The energy is supplied from small dry cells.
@@ -10146,14 +7699,9 @@ of a lamp or unit was at one time widely used in calculating
 illumination intensities, but the greater simplicity and accuracy
 of the lumen method of computing illumination has resulted in
 
-&
-
 ### WHITE SCREEN
 
-————
-
 ——— [nese ———————ee Ree rere TI
-int mmm CELL LHTUSIUUNDOQNISEOISRLSUNIIEDOGOULLUGUAESRIELIIOAIDSIEINVOGUUDOSOITEAOLIIBSIEAISNSOBNIDLIDIAIEESTLLSLIPFO8 SOOLUUUONPASRSTTOCRSIR@ACHIOIN ! Ly
 
 Fic. 8,364.—Principle of Rumford's photometer. A screen ts equally tlluminated by each of two
 sources of light whenever the two shadows cast by the same abject are equally illuminated, that
@@ -10163,8 +7711,7 @@ Two shadows will be formed on the screen side by side. The light from the candle
 upon the shadow S' and the light from the lamp falls upon the shadow S. The distance
 of L and C, from the screen may be adjusted so that the two shadows will look exactly alike.
 Since the intensity of any light varies inversely as the square of the distance increases, then
-the comparative power of two sources of light must vary directly as the squares of their dis-
-tances from the screen which they illuminate equally. Thus if C, in the figure be 50 cm.,
+the comparative power of two sources of light must vary directly as the squares of their distances from the screen which they illuminate equally. Thus if C, in the figure be 50 cm.,
 L, 200 cm. from the screen, and the shadows be alike, the distances are as 1 to 4. The
 illuminating powers are then as 1 to 16. If C, be 1 c.p., then L, is 16 ¢.p.
 
@@ -10172,8 +7719,6 @@ the former method falling into disuse. Distribution curves are
 now used principally for comparing the suitability of reflectors
 for use in a given location from the standpoints, particularly,
 of light distribution and light absorption.
-
-5,232 I Humination
 
 Fic. 8,365.—Bunsen's photometer. Principles: A translucent spot in the center of a white screen
 will have the same appearance as the rest of the screen when the tllumination on the two sides is
@@ -10188,99 +7733,23 @@ in fact it is. Hence to find the candle power of any unknown source it is only n
 up a candle on one side, and the unknown source on the other, as in the figure, and to move
 the spot to the position of equal illumination. The candle power of the unknown source
 
-aE
-
 will then be CA" +BA',
-
-oa
-
-fu
 
 Nee
 
-ryt-}"
-mlRS
-
-iS
-
-~
-
-©
-ac
-4/8
-
-O a
-
-==
-SSA
-
-~)
-
-oO
-
-O
-a
-
 Liseeee
-=
-
-ee
-
-XL
-
-Qj
-
-zy
-
-=e
-
-A
-e
-
-LX
-
-nw
-
-S
-
-wn
-D
-in
 
 ### CANDLE POWER
 
-© D
-
-~
-O
-aS
-
-"5
-x
-co
-
-owe oj
-ol
-
 | [sigiglg
-60| ~3
-oO|O
-G@
-¢ Be
-WwW} nm
-
-2)
 
 Fics. 8,366 to 8,368.—Three methods of recording candle power distribution data. The value
 at any angle represents the average candle power of the source at that angle as the source
 rotates about its vertical axis. In fig. 8,366 the data are given in tabular form; in figs. 8,367
 and 8,368 they are plotted to polar co-ordinates. Distribution curves are used simply as a
 graphical method for presenting the data given in the table. All have exactly the same
-meaning. A distribution curve is a graphical, not a pictorial, representation of the light dis-
-tribution from a source, although its general shape might convey the wrong impression. It is
+meaning. A distribution curve is a graphical, not a pictorial, representation of the light distribution from a source, although its general shape might convey the wrong impression. It is
 simply a convenient engineering method of presenting tabulated data graphically.
-
-Illumination 5,233
 
 Figs. 8,359 to 8,361 are three methods of showing the manner in which
 the candle power of a unit measured at different angles can be recorded.
@@ -10292,36 +7761,26 @@ lamp i is distributed in such'a manner that under most conditions
 it cannot be employed effectively without the use of reflectors
 or enclosing glassware. an
 
-eve eo are "et
 sneieeess spe siege!
 
-in
-
-ami a 2 EN
-
 Fics. 8;369 to 8,371.—The three systems of illumination. Fig. 8,369, direct; fig. 8370, indirect
-_ fig. 8,381, semi-indirect. Direct illumination is objectionable on account of the glare; indirect
+fig. 8,381, semi-indirect. Direct illumination is objectionable on account of the glare; indirect
 .. WMumination eliminates--gldfe; in semni-indirect pirninationy most of ne nent is. thrown to
-the ceiling. ae a ee ey gi ele ee
 
 eee Las omg
-
-5,234 Illumination
 
 Such accessories should not only redirect light into useful angles which
 would otherwise be ineffective, but should serve the additional purposes
 of modifying the brilliancy of the light source and diffusing the light to
 produce a soft and pleasing illumination.
 
-For general illumination, three systems of lighting are com-
-monly employed. These systems are known as:
+For general illumination, three systems of lighting are commonly employed. These systems are known as:
 
 1. Direct lighting;
 2. Indirect lighting;
 3. Semi-indirect lighting.
 
-Direct Lighting System.—With this method the light is dis-
-tributed directly downward upon the surfaces to be talluminated.
+Direct Lighting System.—With this method the light is distributed directly downward upon the surfaces to be talluminated.
 The distribution of the light emanating from the lamp may,
 however, first be altered by means of reflectors or enclosing
 glassware.
@@ -10350,8 +7809,6 @@ lighting the room in a similar manner to the direct lighting system.
 The major portion of the light, however, is thrown to the ceiling and
 from there diffused throughout the room.
 
-Illumination 5,235
-
 Of course, with the last two named systems It is important that the
 ceilings be light in color in order that there may be a maximum efficiency
 of reflection.
@@ -10366,16 +7823,10 @@ known as
 2. Refraction; .
 3. Reflection; | bi
 4, Diffusion.
-S : 3 S
-@ UF B Q
-
-A
 
 pL LS TT FTO FOOT
-YA Y | ; |
 
-Fics. 8,372 and 8,373.—Effect of various media on light rays A, reflection from polished sur-
-face; B, reflection from mirrored surface.
+Fics. 8,372 and 8,373.—Effect of various media on light rays A, reflection from polished surface; B, reflection from mirrored surface.
 
 By the proper control and manipulation of these four factors the light
 from the bare lamp may be distributed as desired, as shown in figs. 8,372
@@ -10392,58 +7843,18 @@ AB, since some of it is absorbed by the surface of the metal. All of the
 light falling upon an opaque surface is either reflected or absorbed by
 that surface. :
 
-5,236 Illumination
-
 Similar to the reflection characteristics of the polished metal
 are those of mirrored glass.
 
 Fig. B, shows the path of a ray of light striking the surface of a mirror
 having silvering on the back of the glass. A small portion of the light is
-reflected immediately upon striking the surface of the glass. The remain-
-der is refracted or bent and passes through the glass to the-silvered surface
+reflected immediately upon striking the surface of the glass. The remainder is refracted or bent and passes through the glass to the-silvered surface
 and is from there reflected back out through the glass. Of course, some of
 the light is absorbed by the glass and by the silver.
 
-e me
-
-eZ
-oa
-vw
-
-=
-
-ee
-~
->
-e
-0)
-
-o"
-rd
-2s
-a
 tes
 
-\
-\
-/
-
-N
-\
-A)
-]
-é
-ao =~ ~e
-ae
-
-C
-
-Fics. 8,374 and 8,375.—Effect of various media on alight rays. C, reflection from semi-mat sur-
-face; D, reflection from rough mat surface.
-
-"t
-Qa
-: 's
+Fics. 8,374 and 8,375.—Effect of various media on alight rays. C, reflection from semi-mat surface; D, reflection from rough mat surface.
 
 A dull finished or semi-mat surface can be considered as one
 which has many small polished surfaces, making innumerable
@@ -10452,13 +7863,11 @@ aluminum paint affords a good example. When a shaft of light
 strikes such a surface, a spread reflection such as is shown in
 fig. C, results.
 
-Such reflections are more difficult to control than reflections from pol-
-ished surfaces and require more careful designing as to shape of reflectors
+Such reflections are more difficult to control than reflections from polished surfaces and require more careful designing as to shape of reflectors
 for efficient results. The aluminized steel reflector is the only commercial
 semi-mat reflector 1n general use.
 
-Diffuse reflection occurs when a ray of light strikes an un-
-polished or rough diffusing surface and is broken up into many
+Diffuse reflection occurs when a ray of light strikes an unpolished or rough diffusing surface and is broken up into many
 separate rays, reflected in all directions, as shown in fig. D.
 
 Illumination —____. «5,237
@@ -10471,21 +7880,15 @@ Another type of reflector is the prismatic glass. reflector, which
 As made up of a carefully designed combination of small prisms
 'which compose the entire body of the reflector...
 
-» 3
-
 By means of triangular pieces of glass, known as prisms, the path of
 a ray of light may be altered; pitlies by reflection or. refraction, as: sinditated
 in figs. E, and F.
 
-Fics. 8,376 and 8,377.—Effect of various media on light rays. E, reflection by prism; F, refrac-
-tions by prisms. :
+Fics. 8,376 and 8,377.—Effect of various media on light rays. E, reflection by prism; F, refractions by prisms.
 
-)
+Opal glass finds considerable application in illumination practice, both as a reflecting and a transmitting medium.
 
-_ Opal glass finds considerable application in illumination prac-
-tice, both as a reflecting and a transmitting medium.
-
-Opal glass may be regarded as a common glass in which fine white ~
+Opal glass may be regarded as a common glass in which fine white
 ticles are held in suspension. When a ray of light strikes the surface,
 portion, depending upon the density of the glass, is reflected as with oy
 ished metal. The remainder passes through the glass j in straight lines until
@@ -10493,13 +7896,10 @@ ished metal. The remainder passes through the glass j in straight lines until
 is thrown back and reflected as shown in fig. G, while the remainder is
 transmitted through and out in all directions.
 
-Opal glass is a 'very desirable reflector material, since the smooth sur-
-face minimizes the collection of dirt and makes cleaning easy. The glass
+Opal glass is a 'very desirable reflector material, since the smooth surface minimizes the collection of dirt and makes cleaning easy. The glass
 transmits a portion of the light, rendering the reflector luminous and
 enhancing its appearance. This glass is used in the manufacture of many
 of the commercial units in use today both in direct and semi-direct units.
-
-5,238 Illumination
 
 The enameled metal or porcelain enameled steel reflector in
 common use today presents a surface which may be likened to
@@ -10510,24 +7910,21 @@ steel reflector. Porcelain enameled reflectors find their principal use in.
 industrial plants, where the advantages of efficiency, ruggedness, and
 permanency of reflecting surface are important.
 
-Zk See = te NOs
-"we Se
-
-Fics. 8,378 and 8,379.—Effect of various media on light rays. G, reflection and transmission :
+Fics. 8,378 and 8,379.—Effect of various media on light rays. G, reflection and transmission
 of opal glass; H, reflection from porcelain enameled steel.
 
-Use is made of the frosted glass transmission characteristics :
+Use is made of the frosted glass transmission characteristics
 as shown in fig. I, in frosted or bowl enameled lamps.
 
 This frosted or etched glass is used to give a spread or diffused trans- .
-mission rather than as a good reflector. Unless a frosted glass is of very |
+mission rather than as a good reflector. Unless a frosted glass is of very
 fine texture, it accumulates dirt very rapidly and is difficult to clean.
 
-Diffusion of Light.—In addition to a knowledge of reflecting :
+Diffusion of Light.—In addition to a knowledge of reflecting
 surfaces and reflectors, a knowledge of such other factors as:
 glare, shadow, and illumination of vertical surfaces, in a word,
-the diffusion of light, is necessary before an intelligent selection ;
-of a lighting system can be made. These factors all require most |
+the diffusion of light, is necessary before an intelligent selection
+of a lighting system can be made. These factors all require most
 careful consideration if the best results are to be obtained.
 
 Ilumination 5,239
@@ -10536,41 +7933,14 @@ Glare.—By definition, glare 7s any brightness within the field
 of vtston of such a character as to cause annoyance, discomfort,
 interference with vision, or eye fatigue.
 
-oN pe ee
-a
-au:
-
-NR ree ne
-
-' ' oo a 7
-As ne ee oS >... te ag. = oF
-vt os pirate So |
-y x at - "e a j "3 '. fore ' ur ae
-gee , a
-
 Fic. 8,380.—Effect of various media on light rays. I, reflection and transmission by etched
 glass. a |
 
-" ¢
-
-|
-
 REFRACTING PRISMS "32° ,
-ENCLOSED IN DUST-TIGHT" !
+ENCLOSED IN DUST-TIGHT"
 SPACE BETWEEN TWO ws
 
-i
-
-; }
-
-: us ¥
-
-: i
-rs, o 4
-
 Fic. 8,381.—Holophane diffusing globe. Sectional view showing features.
-
-§,240 Flumination
 
 'Glare may. he direct: or reflecied, that is,.it may come directly from.the
 light. source to the eye, or it may be reflected brightness such as from a
@@ -10596,15 +7966,13 @@ tle of a gas lamp, are also quite
 capable of producing discomfort
 
 by a direct glare. Reflected
-_ glare is glare which comes to
+glare is glare which comes to
 -, 'the eyes as glint or reflection of
 
-~eee=the light source in some pol-
-ished surface.
+~eee=the light source in some polished surface.
 
 Toleration of bright light
-sources in the immediate vicin-
-ity 1s made possible by locating
+sources in the immediate vicinity 1s made possible by locating
 them at such a height as to
 place them' abové the' ordinary
 range of vision.
@@ -10614,14 +7982,11 @@ lighting are ordinarily provided
 with a skirt around the nm of
 the reflector.
 
-Shadow.—Contrary, per-
 'haps, to popular opinion, @
 certain amount of shadow 1s
-desirable in artificial light-
-ing. e
+desirable in artificial lighting. e
 
 3 . ,r 04 in,
-*.
 
 Fic. 8,382.—Glare. Direct glare from a bare lamp i is one of the greatest hazards to vision. All
 lamps should be shaded. The extent to which glare is objectionable is partially dependent
@@ -10629,10 +7994,7 @@ upon the contrast in brightness between the light source and the background. Aut
 headlights on an unlighted highway, for instance, may be so glaring as to be blinding to the
 eye; the same lights.in,the daytime or,on a yell lighted, street would scarcely be noticed. ...%
 
-IMumtnation 5,241
-
-Objects illuminated 'by perfectly diffused light appear flat-and uninter-
-esting, contours are lost, and it is difficult for the eye to form a correct
+Objects illuminated 'by perfectly diffused light appear flat-and uninteresting, contours are lost, and it is difficult for the eye to form a correct
 judgment of the shape of an object. On the other hand, deep, black
 shadows are troublesome and are a source of constant danger because of
 what they may conceal.
@@ -10640,26 +8002,14 @@ what they may conceal.
 Illumination of Horizontal and Vertical Surfaces.—For many
 locations, such as offices and drafting rooms, light is required
 
-Rr
-
 Fics. 8,383 and 8, 384, —Effect of aco. Fig.: 8,383 is an example of aaah shadows giving
 
 the appearancé of fear or startled surprise; natural shadows bring out: forcefulness, kindliness,
 and lifelike —_ 'as in fig. 8,384. ee. 2
 
-: re
-
 principally on hatledial planes, such as desk | tops, or table
 tops, and it has been.the: custom 'to. calculaté iltumination on
-the basis of. that. delivered, to horizontal surfaces: 'withthe as-
-sumption that the Oblique "surfaces of object' Wottld be suffi-
-ciently lighted. _ This Practice may . result in inadequate: ulu-
-mination" ~~
-
-f
-a f sees», :
-
-5,242 Illumination
+the basis of. that. delivered, to horizontal surfaces: 'withthe assumption that the Oblique "surfaces of object' Wottld be sufficiently lighted. _ This Practice may . result in inadequate: ulumination"
 
 In the machine shop, for example, the lighting of the vertical surfaces
 of the work or of machine parts is fully as important as the lighting of
@@ -10673,14 +8023,12 @@ lighting installation, among which may be mentioned:
 2. Watts per sq. ft.;.
 3. Lumen.
 
-Fic. 8,385.—Spacing between luminaires should not exceed 1 14 times the mounting height above '
+Fic. 8,385.—Spacing between luminaires should not exceed 1 14 times the mounting height above
 the work plane, non-uniform lighting (foot candle values based on 200 watt luminaires).
 
 Fic. 8,386.—Illumination of vertical surfaces. Spacing between luminaires should not exceed
 11% times the mounting height above the work plane—uniform illumination (foot candle
 values based on 200 watt units).
-
-Illumination 5,243
 
 - Point by Point Method.—This method is not much used
 because of its complicated and cumbersome applications.
@@ -10689,13 +8037,10 @@ However, it is still employed in some special problems, such as flood.
 lighting, yard lighting, etc. An example of the point by point method is given
 in fig. 8,387.
 
-ae le TOO OOP oe
 Ihe
-/ Vp A~A
 
 Fic. 8,387.—Illumination curves for ''Mazda'' 25, 40, and 60 watt 100-125 volt bowl frosted
-lamps with extensive reflectors, illustrating '"'point by point'' method of calculating illumi-
-nation. Example: Letit be required to determine the illumination given by a ''Mazda'"' 40
+lamps with extensive reflectors, illustrating '"'point by point'' method of calculating illumination. Example: Letit be required to determine the illumination given by a ''Mazda'"' 40
 watt bowl frosted lamp with extensive holophane reflector, at a point 12' below and 8' to
 one side of the lamp. From an illumination table, the illumination obtained from a light
 of 1 candle power at the point considered would be .004 foot candle. The corresponding
@@ -10713,24 +8058,13 @@ _average figure-of overall efficiency of the system.
 Lumen Method.—This method has the advantage that the
 technical considerations which are important as influencing the
 
-5,244 a Ilumination :
-
-result and which require the experienced judgment of the 'en-
-gineer have been taken into account. in the preparation of the
-charts and tables and therefore automatically receive due allow-
-ance in the lighting design.
-
-i
+result and which require the experienced judgment of the 'engineer have been taken into account. in the preparation of the
+charts and tables and therefore automatically receive due allowance in the lighting design.
 
 The data apply in interiors where standard types of reflecting equipment
 are used to obtain general lighting of substantially uniform intehsity.
 
-.
 woe
-
-és '
-
-Fe ee
 
 Fic. 8,388.—Ilumination of vertical surfaces. In calculating the illumination at the point P
 on a vertical surface the distance H | (vertical) ,D (horizontal), and L (horizontal to the surface)
@@ -10742,11 +8076,8 @@ must be known. From tan @=
 curve of the luminaire, determine the candle power at the angle @ (CP @). 'Then the vertical
 illumination in foot candles at P is as follows:
 
-CP» X Cos?@ _D
-
 Vert. Ill. = <~ —
 
-H?3 H
 'The well known formula for horizontal illumination (foot candles) at the same point is:
 
 Hor. Ill. = exe
@@ -10761,8 +8092,6 @@ Illumination — «55245
 2. Determine the location of outlets, the mounting height
 'and number of lighting units required;
 
-"a
-
 cs. 8, 389 and 8,390.—The lumen. Here S, represents a light source giving one candle power
 in all directions and surrounded by a non-reflecting sphere (shown in section) one foot in
 <«. radius through which is cut an opening, OPQR (fig. 8 1390) , which has an area of one square
@@ -10770,13 +8099,11 @@ in all directions and surrounded by a non-reflecting sphere (shown in section) o
 lumen. As the entire surface of the sphere equals 12.57 sq. ft., the total flux emitted by S,
 i equals 12.57 lumens. In other words, total lumens= 12.57 X mean spherical candle power.
 
-3 : Osi af GE? FAI aw
 SOLER TIT A ERAT seat
-¥ a os we
 
 Fic. 8,391.—A unit cone. Imagine a standard candle as shown in the figure and a sphere of
 
-' one foot radius with its center at the candle. One square foot of the surface of this sphere
+one foot radius with its center at the candle. One square foot of the surface of this sphere
 is contained inside of a unit cone, and such a unit cone contains one lumen of light flux.
 Therefore, one lumen of light flux passes through each square foot of the surface of the
 sphere; that is, the light which radiates from the.given lamp has a sectional intensity of
@@ -10784,58 +8111,34 @@ one lumen per square foot at a distance of one foot from the lamp. This sectiona
 sometimes called the foot candle. That is, the foot candle is the sectional intensity ofa
 one candle power beam at a distance of one foot from the lamp.
 
-5,246 Illumination
-
 3. Select the type of lighting unit best adapted to the loca- .
-tion and ascertain the size of lamp which will provide the foot |
+tion and ascertain the size of lamp which will provide the foot
 candles desired.
 
-1. Foot Candles.—Table 1 lists the foot candle value, cor-
-responding to present standards, for different classes of indus--
+1. Foot Candles.—Table 1 lists the foot candle value, corresponding to present standards, for different classes of indus--
 trial operations, offices, etc.
 
 4 LUMENS
 
 1 FOOT CANDLE
 
-1 PLUMMETS
 qp | LUMEN
-i
-Y |
+
 pein
 
-(
-ws Bh f{ - ree : :
-; / /
-/ e i ors
-/ / i
-
-/ 4 - = -- sere Ne Be oan Re Saf Se —<-- oe ee Bee
-Biwar ' ds M |
-
-4 SQ.FT. |
 | FOOT CANCLE
 4° LUMENS
-; Ls ep /Q. FOOT CANDLE
-
-vyY_yY " b:
-
-he
+Ls ep /Q. FOOT CANDLE
 
 % FOOT CANDUSD 0
-1SQ. FT.
 
-Fics. 8,392 to 8,400.—Diagram showing the difference between lumens and foot candles. A '
-light source of one candle power in a particular direction will produce one foot candle of |
-illumination on a point one foot distant from it. One lumen of light flux will illuminate one |
+Fics. 8,392 to 8,400.—Diagram showing the difference between lumens and foot candles. A
+light source of one candle power in a particular direction will produce one foot candle of
+illumination on a point one foot distant from it. One lumen of light flux will illuminate one
 square foot of area to one foot candle of illumination. The product of foot candles and the
 area in square feet lighted will give the lumens of light flux on that area.
 
-Illumination 5,247
-
-The desirable illumination varies rather widely, depending on the con-
-ditions in any particular installation, such as the accuracy of the opera-
-tion and fineness of detail to be observed and the color of objects worked
+The desirable illumination varies rather widely, depending on the conditions in any particular installation, such as the accuracy of the operation and fineness of detail to be observed and the color of objects worked
 
 on or handled.
 
@@ -10844,18 +8147,10 @@ minimum to be adhered to if fully satisfactorily lighting 1s to
 be assured. Under particular conditions considerably higher
 levels of illumination are often desirable.
 
-A B O e
-
 new a
 
-4. ET- )
-
-rarer °
-
-Fics. 8,401 and 8,402.—The foot candle. If A, be a lamp giving 16 candle power in a hori-
-zontal direction, the illumination at the point B, four feet distant, would be 16 +42=1 foot
-candle, since the tntensity of light varies inversely as the square of the distance. To get the nor-
-mal iflumination at any given point, the candle power in the proper direction must be divided
+Fics. 8,401 and 8,402.—The foot candle. If A, be a lamp giving 16 candle power in a horizontal direction, the illumination at the point B, four feet distant, would be 16 +42=1 foot
+candle, since the tntensity of light varies inversely as the square of the distance. To get the normal iflumination at any given point, the candle power in the proper direction must be divided
 by the square of the distance to the point illuminated. If the surface illuminated be not at
 right angles to the direction of the light, the value of the illumination obtained as above must
 be multiplied by a reduction factor, taking into account the angle at which the rays strike.
@@ -10864,27 +8159,16 @@ with an intensity of 1 foot candle. Then the illumination on the plane AC, which
 the same amount of light as AB, would be less than 1 foot candle (as the light is spread over a
 larger surface) in the ratio of AB, to AC, which is the cosine of the angle ODF. Thus the
 illumination effective on any plane at a given point will be (candle power +-distance?) cos ¢,
-where ¢ is the angle between the direction of the ray and a perpendicular to the plane con-
-sidered.
+where ¢ is the angle between the direction of the ray and a perpendicular to the plane considered.
 
 Table 1. Foot Candles for Interior Lighting
 
-Csood Mini-
-
 Cars Practice mum
-baggage............ ccc cee c eee Os Gastonia eed ee eee 8 5
+
 day coach, dining and Pullman...................... 8 5
 street railway and subway.............. ie Giisane Doe aeeee 10 6
 
 Piers
-
-B
-i
-a
-x
-RB BS
-
-5,248 Illumination
 
 Table I—Continued
 
@@ -10893,23 +8177,20 @@ Office building (private and general office)
 close work... 2... 2... cc ee ee ee ee eee eee ees 15 10
 no close work....... tain ee ee ere ere eee 0 "8
 drafting rooms................. cineeghatos re 20. AD,
-halls, passageways in interior......0............0.05. 3 ae
-Shops—carpenter | een 2 7 ;
+
+Shops—carpenter | een 2 7
 rough sawing and bench work..................2-00- — go 5
 fine bench and machine working fine sanding and finish 15 10.,
 Electric repair - is fe
 storage battery charging YOOM.....0.. 0.0. c cece ee ceeee 10 : 6 4
 coil and armature winding, mica working, matlaning | TBs
-PYOCESSES. 166s e ee en re 20 12,
-Erecting' - ae 9 rt ee era See
+
 forge shops 'and welding.................. 2c ee eee 10 6
 Foundries
 'rough moulding and core making. : ee So weaeaee goone sour
-fine moulding and core making.. .. oe etnies gto —*AOr
-Freight stations noe "~—
-"SOFUING (AlCAS oho tenies eee oe ee oe ces 6. 4
+
 loading platforms:.....0..0.......0008. rere se 3 2
-StOraGe areas. cnc ccusseenlsktaasce eee sees baa 3 2.
+
 Offices....... weer veree eee eres a cee eee "15 10.
 Machine shops | . - a
 rough bench and machine work............2....0.00- "10°. 6
@@ -10921,8 +8202,6 @@ boilers, coal and-ash handling, storage battery rooms... 5 vid
 auxiliary equipment, oil switches and transformers.... 8.0 5
 switchboard, engines, generators, .blowers, .compressors 10. 6
 Stations—passenger .
-ticket offices ..... a a ee Ace cus cite unecsne ea de §
-Baggage TOONS, 2.1... cc ete ete cate ewe ete te ete ote tens er mm Ate 8
 
 Good = Mini- .
 Practice. mum |:
@@ -10934,8 +8213,7 @@ Table I—Continued 'Good = Mini-
 3 Practice - mum
 platforms (terminals).............0.ceeeeeeee eee cee AO. 2
 platforms (way stations)...... WeiaciCnnteienaass eer, 15
-subways (concourse)..............00eceeceee Less oO 4
-WAIUINE TOOM 6 < gc.5 os apaded 662 3GeG-bsa ede eesinenesns 8 5
+
 toilets and wash room...............00000- pave ions 6 4
 TWarehouseS....... 0. ccc wt be we cnc ceececcencs 3 2
 
@@ -10943,21 +8221,14 @@ Exterior Lighting
 'Automobile parking spaces.............. epee oceans 1 - -0.5
 Building | |
 construction work........ ehionanes oer Gamecaene ; 6 4
-excavation......... er Cee vere (Seen ages ya 2 1
-a ke acees Rane e nae | pe ree aexee® 2 ]
+
 WE cis aovewer neaeeae enesutes eee ee eee 3 0,5
-tailway yards | 8
+
 general................00ceeees 7 er pesateeeeeer 20 15
 approach to hump saad gaeaas. seta Seg eta 1 0.5
 turntables....... eae ace as ere Cee ee ere 2 l
 
-x ba ot A > -
-
-Fic.8 408. he layout of lighting outlets for a: large industrial building. Indicating the appli-
-cation of data in table No. 2. The 13 foot clearance allows a spacing of 13 feet. For a sym-
-metrical layout in the bays a 10 foot spacing is adopted. _—~ s
-
-5,250 Illumination
+Fic.8 408. he layout of lighting outlets for a: large industrial building. Indicating the application of data in table No. 2. The 13 foot clearance allows a spacing of 13 feet. For a symmetrical layout in the bays a 10 foot spacing is adopted. _—~ s
 
 Location of Outlets.—The number of outlets to provide for.
 any given area is determined by the maximum allowable spac:
@@ -10966,7 +8237,7 @@ height above the floor.
 
 Table 2.—Spacing of Outlets
 
-; Spacing Between Outside
+Spacing Between Outside
 
 Ceiling Spacing Between Outlets Outlets and Wall Approximate
 
@@ -10974,18 +8245,11 @@ Height — Area per
 (Or Height in Maximum Aisles or Desks, Work- Outlet
 
 the Clear) Usual (For Units at | Storage Next | benches, etc., (At Usual
-| Ceiling) to Wall Against Wall Spacings)
-(C) (D} (D) (A) (B)
-RS | eS | eS | een
+Ceiling) to Wall Against Wall Spacings)
+
 —— a Not ss than* Not more than* | (Square Feet)
-3 5
 
 Usually
-
-0 one- |
-~ 12 10-12 12 314-4 100-150
-
-13 10-12 13 halt 4% | 100-150
 
 actual
 spacing
@@ -10999,8 +8263,7 @@ units
 spacing between outlets may be increased about two feet, and the distance from the outside
 outlets to the wall may be increased by one foot.
 
-The relation between height and spacing is based on the dis-
-tribution of light to procure a reasonably uniform level o:
+The relation between height and spacing is based on the distribution of light to procure a reasonably uniform level o:
 illumination on the working plane.
 
 Tables 2 and 3 will be helpful in determining the location 07
@@ -11010,13 +8273,8 @@ Ilumination 5,251
 
 * ike.
 
-é
-:
-¢
-
 Ree
 
-aoe ' 3 . r Ae
 Pest wdess
 
 G. 8,404.—Mounting height of lighting units. When units are spaced less than the maximum
@@ -11032,13 +8290,11 @@ Table 3—Mounting Height of Lighting Units
 i SEMI-INDIRECT
 
 DIRECT 'LIGHTING UNITS | CER
-: Dista _ Recom-
-Actual of | Units : . | : Actual micnded
+Dista _ RecomActual of | Units : . | : Actual micnded
 Spacing from Desirable Mounting Desirable Mounting | Spacing Suspension
 3] Between Floor Height in | 1 Heightin | Between Length
-| Units gt eis Industrial Interiors |-Commercial Interiors Units (Top of
-) ili
-(D) (Ht) (Ry _®) {D) eg)
+Units gt eis Industrial Interiors |-Commercial Interiors Units (Top of
+
 (Feet) 112 feet above floor abe | (Feet)
 O17 if possible — to g 1-3
 72 lavoid glare, and - 9 ae
@@ -11050,18 +8306,13 @@ appearance, but
 124 particularly in of- 14 214-4
 14 Where units are|fices and drafting 16 3-4
 15 to be mounted|rooms, the cng 18 3-4
-much m thanjimum  vaiue sr
+
 16 12 feet ; ae 1 shown in Column 20 4-5
 18 eet it 1s usual: 92 4-5
-ly desirable to|/H should not be :
+ly desirable to|/H should not be
 20 mount the units|Violated. 24 4-6
 1 at ceiling or on | 26 4-6
 2? roof trusses, 28 5-7
-24 30 5-7
-
-5,252 Illumination
-
-- = ote se ose
 
 Size of Lamp Required.— After the outlets have been located
 on the plan, the size of lamp to be used may be determined
@@ -11071,12 +8322,6 @@ Table 4—Fnitial Lumen Output of Multiple Mazda Lamps
 
 Approximate Initial Lumen }
 Output
-
-|
-
-|
-
-{ | i
 
 110, 115 & 120| 220, 230, 240,,
 
@@ -11103,15 +8348,12 @@ Cc. Lamp lumens re- Area in sq. ft. Lamp lumens required
 quired per \ -{ per outlet \ x jper sq. ft.
 outlet (From A) (From B)
 
-B. Lamp lumens re-
-quired per sq. ft. 7 =
+B. Lamp lumens required per sq. ft. 7 =
 
 Having determined the lamp lumens required per outlet by
 the above calculation, the wattage of Mazda lamps to be used
 
 Ilumination 5,253.
-
-———.- - :
 
 may be:found by reference to Table 4, which lists the lumen
 output rating for each size of lamp.
@@ -11126,12 +8368,10 @@ such as building facades, sign boards, etc., to a desired level
 of illumination intensity is a problem frequently arising and
 requiring an immediate solution.
 
-Such a problem may be roughly separated into three steps and a sat-
-isfactory solution found as illustrated in the example which follows:—
+Such a problem may be roughly separated into three steps and a satisfactory solution found as illustrated in the example which follows:—
 
 Example.—A light gray limestone office building along a white way,
-having a front facade 150 ft. high by 50 ft. wide. Determine: type, num-
-ber and wattage of flood light projectors required to illuminate building
+having a front facade 150 ft. high by 50 ft. wide. Determine: type, number and wattage of flood light projectors required to illuminate building
 from roof of building opposite. Shown in fig. 8,405.
 
 First Step: Foot candles required. This depends upon the type of
@@ -11142,78 +8382,29 @@ in the values given in Table 5, which, for the requirements in the example,
 gives 20 foot candles.
 
 Second Step: Type of projector. Two considerations enter into the
-choice of a projector, -viz., beam size and light output. The former deter-
-mines the area covered by the beam and the latter the illumination pro-
-vided.
+choice of a projector, -viz., beam size and light output. The former determines the area covered by the beam and the latter the illumination provided.
 
 In Table 7 a factor F, is given for each projector and the various types
 
 of reflectors and lens equipments. This factor multiplied by the distance
 
-' of the projector from the surface gives the diameter of the beam pattern
+of the projector from the surface gives the diameter of the beam pattern
 on the surface, assuming that the beam is perpendicular to the surface.
 
 It is desirable to cover as large a part of the surface with one projector
 as possible and obtain the desired illumination by the superimposing of
 beams. The maximum diameter of the beam that can be utilized without
 
-5,254 Illumination
-
 waste for the building in question is 50 feet and as the projectors are to be
 placed 100 feet away, look for a projector with the factor .5.
 
 From Table 7, it is seen that the following projectors have the required
 factor:
-! Ne i | Mh
 
 L30-B, medium angle. 500 watt, G-40 lightly stippled lens, 3,663 beam
 lumens,
-in
-ai i] ulti i iH ill i
 
-i L
-
-aa
-Wa
-
-~ I
-—
-
-I
-a
-— —
-
-by \ YISK
-
-f af'
 Nae be a Hit | ¢
-tn) ; r\ RK . ie
-
-i Hy
-
-m i at ee
-ae tor
-
-eee ae Pe SN nN | itt | cil
-é Hl Ue
-
-Hi 1
-Hi i
-
-mm.
-v -
-NG dee
-
-oe ny - e At ps Abd
-ire @ : a ss oy y ia 16 iF
-_ ok oe Q.': ag ee y aed <A ZN
-" i i f " - vip
-
-,
-
-. "
-an Z3sy,
-SD. rita
 
 Fic. 8,405.—Flood lighting of building by flood light projectors located on building on opposite
 side of street. See example on page 5,253.
@@ -11227,12 +8418,10 @@ formula:
 
 in which N =———
 
--IHumination 5,255
-
 N = Number of projectors.
 
 A=Area of building facade in square feet.
-E=Foot candle intensity required. _
+E=Foot candle intensity required.
 L=Beam lumens delivered by one projector. .
 
 From the conditions of the example:
@@ -11242,13 +8431,13 @@ Table 5. Building Characteristics
 Reflection Recommended foot
 Building Surfaces factors candle intensities
 per cent
-| A B C
+
 White terra: cotta pees eta ack edie eo
 Cream terra cotta................. ! 60-80 15 10 5
 Light marble.....................
 
 Light gray limestone......... ase ace )
-Bedford limestone................. ,
+
 Buff limestone.................... 40-60 20 {2 7
 
 Bniar hill sandstone........... ote Ses
@@ -11260,14 +8449,11 @@ Common tan brick................
 Dark field gray brick..............
 
 Common red brick................ 10-20 30 18 12
-Brownstone...............0ee0ce% |
 
-A—Buildings on white ways: intensive street lighting; streets with many con-
-flicting signs and light sources; lower portions of buildings falling under
+A—Buildings on white ways: intensive street lighting; streets with many conflicting signs and light sources; lower portions of buildings falling under
 Class B locations.
 
-B—Medium-intensity white ways: secondary business streets with few con-
-flicting signs, etc.
+B—Medium-intensity white ways: secondary business streets with few conflicting signs, etc.
 
 C—Very little conflicting light, such as on residential streets, parks, lighted
 highways, etc.
@@ -11281,7 +8467,7 @@ L=3,663 lumens for type L-30-B, and 7,900 lumens for type
 L-31-A, according to Table 3.
 
 The number of L-30-B projectors required is
-7,500 X20 ,,
+
 3.663 =41 (approx.)
 
 Table 6. Floodlighting Intensities
@@ -11297,36 +8483,24 @@ trees, flags, etc.)..... 0.0. eee ee eee 20 .O 10.0
 Landscapes............... er a cre rare a rer eres 15.0 5.0
 Stained glass windows...................0008: 30.0 15.0
 Billboards.......... 0.0... cece ce cee eee eee 30 .0 10.0
-0) | ¢ (Ca en ee 30.0 10.0
+
 Smoke stacks and water tanks................ 4 12.0 8.0
 Quarries and shipyards... .:............eeeeee- 6-0 2.0
 Construction work. ....... 0... ccc ce eee eee eee 6.0. 4.0
-MEE COOMA D ns deine eee a Gate eae ee ea Ses Rn 2.0 1.0
-Railroad yards a
-
-(a) Classification...........cccc cece cece ees 0.15 0.1
 
 (b) Mechanical retarder areas............... 1.0 0.5
 Docks, loading platforms, etc..............4.. 3.0 2.0.
-IU MC Sic th sce cece Gee ek ee ac bie eee eee aya eee a 1.0 0.5
-Gasoline filling stations ' |
+
+Gasoline filling stations '
 
 (a) Buildings and pumps................... 15.0 2.0
 
 (b) Yard and driveways.................... 4.0 2.0
 Roadside stands and houses...... ee 4.0 0.5
-Parking AVCAS co.so.oc-u acuta paaeloosa Kaas ae 1.0 0.5
+
 Real estate developments..................... 10.0 5.0
-Air advertising...... ahh atau se ee peeves: ee ere 30.0: 15.0
-
-| ne ee ee Pe cs io
-
-Illumination 5,257
 
 The number of L-31-A projectors required 1s
-
-7,000 X 20
-7,900
 
 By comparison, considering cost of installation and of operating, it 1s
 found that the required amount of light can be obtained more cheaply by
@@ -11337,24 +8511,19 @@ L-31-A projectors. |
 
 =19 (approx.)
 
-Power Required for Flood Lighting.—An approximate allow-
-ance for calculating the power required is .15 watt per sq. ft.
+Power Required for Flood Lighting.—An approximate allowance for calculating the power required is .15 watt per sq. ft.
 of surface per foot candle.
 
 Table 7. Illuminating Data
 (For estimating purposes only. General Electric Co.)
 
-om ©
-
 BEAM
 
-### DISTRIBU-
-
-### WORKING LAMP : LENSES TQTAL
+### DISTRIBUWORKING LAMP : LENSES TQTAL
 
 TYPE | DISTANCE 115-vour | REFLECTORS CLEAR Angle in | Candies | Lumens | LUMENS °F cuecE
 grees
-: oe ightly Sts ; - ]
+
 L-29A |Up to | General Service [Parabolic Glass [Heavily Stippled 72 2205 1.45
 wae LC Medium crete Spread Light 29V-58H 2185 {|0.50V-1 10H
 Base
@@ -11369,18 +8538,17 @@ G.S. Lamp 143{-in. Plain 20.6V-26.6H 6820 |0.37V-0.48H | H-133238
 General Service| Silver Plated Heavily Stippled 48 6560 0.89 H-133240
 Cats at Spread Light 20V-53H 6550 |0.36V-1.0H H-13324)}
 ogul Base "
-° 500- watt ;
+
 General Service |1434-in. Plain 60 6940 1.18 H-133242
 Up to Lamp PS-40 C.]| 1-piece Settional |Lightly Stippled 72 6840 1.45 H-133243
 100 ft. General Service lass Heavily Stippled 100 6660 2.38 H-133244
 on, Silver Plated
-og ase
+
 500-watt Plain 11.2V~-13.3H 5900 /0.20V-0.23H | H-133149
-G-40 Flood- 14%-in. Lightly Stipaled /24.6V-25.6H 0.44
+
 Up to light Lam Parabolic Glass |Heavily Stippled [43.5V—44.5H 5725 0.81
 400 ft. 44 a - Silver Plated Spread Light 11.4V-43H 0.20V-0.79H
-'OF ase
-L-30B |— SSS
+
 Up to G-40 Flood- i-piece Sectional {Pisin 44 6080 0.81
 150 ft. | light Lamp Giase : Lightly Stippled 54 5970 1.04
 44 ey me Silver Plated Heavily Stiprted 70 20 1.40
@@ -11388,23 +8556,19 @@ Up to G-40 Flood- i-piece Sectional {Pisin 44 6080 0.81
 . IUp to PS-52 re Lightly Stippled (31V-37H 78600 13100 /0.55V-0.67H
 L-31A 175 ft. General Service Heavily Stippled 52 2000 8600 12940 0.98 250
 Lamp Solid Glass Spread Ligttt 21V-53H 13020 |0.37V-1.0H
-9%-in. L.C. Silver Plated |
-Rp peter
-RED AMBER BLUE GREEN
+9%-in. L.C. Silver Plated
+
+### RED AMBER BLUE GREEN
+
 Approximate correction factors either lenses or color plates. . .0..-ssuecs 10 to 20% 50 to 65% 3 ta 5% 10 to 16%
 
-ep PP dD te Pc PA eircom
 *1. Beam diameter in feet = Distance from projector in feet x Factor F. H = Horizontal. V = Vertical, ,
 
-5,258 Illumination
-
-Example.—Required the approximate power necessary for flood light-
-ing 10,000 sq. ft. of building to an intensity of 10 foot candles.
+Example.—Required the approximate power necessary for flood lighting 10,000 sq. ft. of building to an intensity of 10 foot candles.
 
 Power =0.1510 10,000 =15 kw.
 
-Colored Lighting for Buildings.—Colored glass lenses obvi-
-ously absorb light in excess of the plain glass, and the output
+Colored Lighting for Buildings.—Colored glass lenses obviously absorb light in excess of the plain glass, and the output
 of light is reduced. The beam and total lumens given in Table 7
 should be multiplied by the following transmission factors in
 order to obtain the light flux delivered when using colored
@@ -11412,10 +8576,7 @@ lenses.
 
 Transmission Factors for Colored Lenses
 
-15a: 6 Ee ere a es ae ee ee ee ee ee ee ee eee 15
 PUNDEs iaecuutcacaadce again oes cenewes bases 50
-MES eases Sse cctace va ch Beste ees iota eect ee es a eae eee ee 04
-GleGh. Anse beset eesieases ane ae eee eeoaeeee 12
 
 Example.—Beam lumens for L-30 medium angle, plain clear lens is
 3,796. Beam lumens for same projector with red lens is 3,796 .15=570.
@@ -11432,13 +8593,9 @@ Air Port Lighting Principles.—The simplest specification for
 lighting landing fields, reduced to the fundamentals applied to
 other general lighting problems, can be stated in terms of
 lumens of light or foot candles, delivered per square foot of
-area. The best illuminating system provides practically uni-
-form distribution of light over the entire area.
+area. The best illuminating system provides practically uniform distribution of light over the entire area.
 
-The requirement for uniformly distributed illumination car-
-ries with it certain related qualities which must be considered.
-
-Illumination 5,259
+The requirement for uniformly distributed illumination carries with it certain related qualities which must be considered.
 
 1. Upward light should be reduced to a minimum;
 
@@ -11450,8 +8607,7 @@ possible;
 4. The color quality of the light should not distort normal
 color appearance of objects.
 
-If it were not for the necessity of keeping the landing area free of over-
-head obstructions a system of overhead lighting from ordinary industrial
+If it were not for the necessity of keeping the landing area free of overhead obstructions a system of overhead lighting from ordinary industrial
 type reflectors would probably give the best lighting results. This being
 impractical, the only alternative is to locate the lighting equipment at
 the boundaries, and, by proper design of equipment, project light to cover
@@ -11477,36 +8633,13 @@ cover a particular section.
 The disadvantage is that the multiplicity of light sources introduces a
 large number of glare points.
 
-5,260 Illumination
-
-5 eo
 ere"
-om os $
 
 Clear globe .
-mn inside etched e
-
-~—s. <--
-
-### AIRPORT
-
-### FLOODLIGHT
-
--f ; A
-: . aa
-is |
-ws. Wineiges Hee
-: f s
-/ of ug ~ re oe ~
-; eK \
 
 Fic.8,406to8,412.—Minimum lighting facilities required for an air port to obtain an ''A'"' rating
 A, air port beacon. Minimum candle power not less than 100,000 for long range, and in no
 case less than 15,000 candle power. Rotating or flashing with flashes not less than one-tenth
-
-Illumination 5,261
-
-rrr NN  ————_— TS
 
 Concentrated System.—In this system there are several
 batteries of relatively small individual projectors or, more
@@ -11517,20 +8650,10 @@ The uniformity of light distribution from the concentrated system is
 dependent upon mechanical and optical limitations of design. In general
 the ratio of minimum to maximum horizontal illumination over the field
 
-334 FT.
-IMILE 5 MILES
-
-95 FT :
-1O MILES
-
 Fic. 8,413.—A beacon with only a slender pencil of light is ineffective at close range at normal
 flying height. Requirements for air port beacons: 1, high candle power for long range
 visibility; 2, visibility from all normal flying heights; 3, suitable duration of flash period; 4,
 positive identification. ,
-
-i
-
-er
 
 Fics. 8,406 to 8,412.—Text continued.
 
@@ -11551,17 +8674,13 @@ with surface reflection factor at least 50%. A 12in. 250 watt incandescent lamp 
 lighting. One or more units to provide an even distribution of illumination without shadow
 areas and of sufficient illuminating power to make ground details visible from an altitude of
 30 ft. The minimum vertical plane illumination over the usable portion of landing area shall
-not be less than .15 foot candles. System to be controlled from convenient point and suf-
-ficiently flexible to permit landing under all conditions of wind direction without the necessity
-of landing directly toward the light source. Units shall be mounted as low as possible con-
-sistent with contour of ground, and shall project a beam of narrow vertical divergence with
+not be less than .15 foot candles. System to be controlled from convenient point and sufficiently flexible to permit landing under all conditions of wind direction without the necessity
+of landing directly toward the light source. Units shall be mounted as low as possible consistent with contour of ground, and shall project a beam of narrow vertical divergence with
 sharp cut off at top so as not to produce glare. When more than one unit is used, each shall
 be independent of the other in operation. In case of a single light source flood lighting unit
 
 an automatic lamp changer shall be provided. In lieu of a lamp changer an auxiliary unit
 may be used which will give not less than .035 foot candle over the usable portion of the field.
-
-5,262 IHumination
 
 will be considerably greater than with the distributed system. However,
 the problem of glare is reduced, since precautions may be applied more
@@ -11572,8 +8691,7 @@ direction as the projected beam.
 
 Fics. 8,414 to8,416.—General Electric typical boundary light installations. Fig. 8,414, prismatic
 
-globe and conical skirt; fig. 8,415, plain globe and stem; fig. 8,416, white glass globe with re-
-flector type guard, and conical base.
+globe and conical skirt; fig. 8,415, plain globe and stem; fig. 8,416, white glass globe with reflector type guard, and conical base.
 
 Amount of Light Required for Air Ports.—The air port rating
 regulations of the Department of Commerce specify an even
@@ -11583,17 +8701,13 @@ ing area with a minimum illumination of .15 foot candle on
 the vertical plane.
 
 To meet this requirement, projector units of the order of 20,000 watts
-capacity are employed. However, on a landing field of average dimen-
-sions, say 2000 feet square, 4,000,000 sq. ft., the lighting result from this
+capacity are employed. However, on a landing field of average dimensions, say 2000 feet square, 4,000,000 sq. ft., the lighting result from this
 20,000 watt projector is roughly equivalent to the lighting of a room 20
 feet square by means of a single candle set on the floor in the corner.
 
-Illumination 5,263
-
 Illumination Results and Calculations.—A combination of
 circumstances has made it seem desirable to mount field flood
-lighting units only 10 feet or so above the ground, and to at-
-tempt to sweep the entire landing area with a flat fan of light.
+lighting units only 10 feet or so above the ground, and to attempt to sweep the entire landing area with a flat fan of light.
 
 With such an acute angle of projection, the zone of maximum candle
 power must be aimed only the slightest amount below the horizontal plane
@@ -11603,13 +8717,9 @@ the upper half is lost as far as lighting the ground is concerned.
 
 25 FOOT CANDLES VERTICAL 9 FOOT CANDLE: VERTICAL
 
-enlgp om we ww oe = — am ep eam wea Sa cet Li a Reh ce oe de tN oe — ween ee oc mm ee eee mee meee ao] A2 ee
-
 2,000,000 MAXIMUM BEAM CANDLEPOWER.
 
-481 FOOT CANDLE7 HORIZONTAL __ ____ 0065 FOOT CANDLE HORIZONTAL '
-
-Bp eee ee i
+481 FOOT CANDLE7 HORIZONTAL __ ____ 0065 FOOT CANDLE HORIZONTAL
 
 Fic. 8,417.—TIllumination readings on horizontal and vertical planes taken 3 ft. above the
 ground for two locations on fiéld,.at.zone of maximum. projected candle power. It will be
@@ -11636,47 +8746,30 @@ to gauge their height above the ground by the depth of the beam. On
 the other hand, if more light can be directed toward the ground and if
 the landing surface be light in color, the surface brightness will be high
 enough to overcome the apparent ground haze and allow the ground to
-be seen through the haze. !
+be seen through the haze.
 
-With the present scheme of low mounting of field flood lighting equip-
-ment, the ratio between vertical and horizontal illumination is very marked.
+With the present scheme of low mounting of field flood lighting equipment, the ratio between vertical and horizontal illumination is very marked.
 
-5,264 Illumination
-
-panne ) pana
 REMOTE. N98 SINGLE CONDUCTOR. _ REMOTE,
 i _CONTROLLER, Pry 25. KVA ARKWAY 'CABLE Che
-| | S25 KVA
-| LENS OW REFLECTOR TYPE
-'| LIGHTING UNIT oe RON eee
-| sc
+
+### LENS OW REFLECTOR TYPE
+
+LIGHTING UNIT oe RON eee
+
 ) TRANSFORMER |
-| ais ROOM , eee CONSTANT CURRENT era
-7 v GC. i ee \
+ais ROOM , eee CONSTANT CURRENT era
+
 {I FIELD FLoopuicHt NOP o
 CONTROL | aie a
-_ REMOTE my | | CONTROLLER
+REMOTE my | | CONTROLLER
 CONTROLLER =
 
-WOW GI NASA.
-4 0} Ve 7 ;
 4 aly TGZ "7 Si
-
-a fo "47 § "« ve °
-pe SaAae OT
-2 < qe "4 'Nei fe |
-s . . . { o
-° ° & —_, "Ro 4
-: Gi
--_
-i]
 
 - CONE SIGN
 
 N26: 2 CONDUCTOR
-
-- rey -
-| eee 8 ee eee ee ew oe
 
 Fic. 8,418.—Wiring and electrical provisions for convenient control of all lighting equipment
 from a central point. Field flood lights each with individual remote control.
@@ -11688,14 +8781,14 @@ ON THE CEILING AND | COLLECTING INSIDE
 PREVENT BRIGHT . OF DIRECTOR AND
 LINES AND: ON THE LAMP
 HOLDER SHADOWS |
-\ STEEP SLOPE. OF THE |
+STEEP SLOPE. OF THE
 UPPER PART PREVENTS
 Y DUST COLLECTING
 Aan Reece fee een eee See
-THESE REFRACTING \ (\ i,
+
 PRISMS REDIRECT THE \/ (Yy WA
 GIVE A WIDE'S PHEAD NN ane??? 7a
-j yy ry}
+
 OF LIGHT ON TH 19 A007 4
 
 ————— REFLECTING TRANSLUCENT
@@ -11717,133 +8810,46 @@ flood light developing slightly over 2,000,000 maximum beam candlepower.
 Street Illumination.—In the lighting of streets there should
 not be glare in one spot and darkness in another; there should not
 
-—_
-
-y 6 s
-
-oo z : 2 Z |
-ce
-
-| J Se
-
-a GN won,
 = 2
-=
-
-=
 
 Fic. 8,420.—Plan view of direction in which illumination is desired at street intersections and
 along streets and how prismatic globes direct the rays.
 
-Vy
-
 be waste of illumination through throwing it upward to the sky
 instead of downward where pedestrians and traffic need it and it
 should be figured in accordance with the size of town, type of
-street and need. |
-
-5,266 Illumination
+street and need.
 
 Street illumination generally runs .05 foot candle to .50 foot candle on
 the plane of the street surface—a general average being .10 foot candle.
 The type of units which are best suited for highways, street intersections,
 streets with existing illumination from store windows, etc., should be
 considered. The height at which they should be placed, the distance
-apart—are all factors. Excellent illumination is considered when the dis-
-tance apart is no more than eight times the height of the luminant; that
+apart—are all factors. Excellent illumination is considered when the distance apart is no more than eight times the height of the luminant; that
 is, with the lamps 25 feet above street level, they should be spaced no
 more than 200 teet.
 
-|
-
-3 .
-i" re i -~
-5 eters Fi
-! r f f / .
-
 "tithe
 = EEE FE
-Hie Ht toe ia mba
-Mel: f
 
-———————
-
-I
-
-### LATE UT
-
-eee, — = =
-ee aoe ae Se ee
-= os = ==
-—T-
-.
-. eo w.°h 22° 2,
-ry Aes adits
 os Be 22S See ew,
-I-
-
-== 3
-
-TUT;
 
 = Soe
 NCENTER LINE
 
-= ——. y
-
-re
-—
-=
-
-&
-
-a
-
-—————
-
 sawn
-c=
 
 ### STREET
 
 Oh CA TA TO
 
-pe -4-—*—3
-
-5 ee an. oe we re
-. - = e =
-==
-
-e
 = wen
-2s Sam
-=o
-2a
-
-7 F
 
 yore nmnnani
 
-sare oe
-Z2Sa5e=e
-= ==
-
 Wits
-ee
 
-\ \\ eae :
-_ ~\ eZ ae 2
 aN VG = 2a
-wi ATL BE sS —
-mt
-
-5 i
-| 1 i ——
-til Hu Se ee
-; ae ome
-\\\ ==;
-
-N
 
 Fic. 8,421.—The outside view of a prismatic globe. In principle: when a light ray strikes a
 piece of glass it is reflected or refracted in accordance with the shape of the piece of glass. By
@@ -11854,59 +8860,26 @@ them in the directions desired; some of the prisms are horizontal, some vertical
 arranged to carry out the requirement. An outer globe then diffuses or smooths out the light.
 
 Globes surrounding the lamps should have the quality of directing the
-rays sideways and downward so as not to waste the illuminant in direc-
-tions where it is not needed. A bare lamp will send about 50% of its light
+rays sideways and downward so as not to waste the illuminant in directions where it is not needed. A bare lamp will send about 50% of its light
 upward.
 
 Prismatic globes are made which by refraction due to the prisms, direct
 the light given by the lamp into the desired planes. Spacing and height
 cannot be set down with any definite rules nor can the size of bulbs or
 
-Illumination 5,267
-
 type of fixtures, these are all based on local conditions and the amount
 of money to be expended for the installation.
 
-Se Ne. <
-\ aS
-
-; Se
-ey \ N ae ea ae SS
-WOORAAKKVr
-
-x :
-wy S 5K SONAR
-\ xX oe a se SOT
-
-LO te en GER Fh fat ot i ina
-he NN Vea N. xe gee sl = / ao y, iff bets
-' \ ae Sue Ses : A: 4 WS S £ / , / } | i |
-WE eS Ne RS AP ie
 iN hae i, Sa? hate we 5 LY
-' rien ak BOSS oe z /
-Wats 3 n Sus eae nee. | ey Bo
 
-\ \
 rca
 dan acy
-. ee ee Ee
-\ ily \ ;
-; hy ' va
-' eae roy he
-ta : '
-1 Poa \ ' \ Sa :
-' \ AOE Ge QA AS .
 
-if
+eae roy he
 
 Pak
 
-la \ er or oN
-
-Hy) WINANS
 eee
-
-\ \
 
 Fics.8,422 to 8,425.—Light distribution of bare lamp and various Holophane symmetrical units.
 Fig. 8,422, bare lamp; fig. 8,423, Holophane asymmetric refractor highway type; fig. 8,424,
@@ -11922,8 +8895,6 @@ Holophane asymmetric refractor bi-lux type; fig. 8,425, Holophane asymmetric ref
 4. What is the principle of Rumford's photometer?
 
 5S. Name three systems of lighting for general illumination.
-
-5,268 Illumination
 
 . Describe a, the direct; b, the indirect, and c, the semi-
 
@@ -11948,8 +8919,8 @@ horizontal and vertical surfaces?
 
 . Name three methods of lighting calculations.
 
-_ What is the objection to the point by point method?
-. Is the watts per sq. ft. method accurate? ~
+What is the objection to the point by point method?
+. Is the watts per sq. ft. method accurate?
 
 . What is the advantage of the lumen method?
 
@@ -11980,21 +8951,17 @@ termined?
 
 . Give points relating to street lighting.
 
-'Resonant Control 5,269
-
 ## CHAPTER 215
 
 Resonant Control for
 Street Lights
 
 The rapid development of radio has greatly stimulated interest
-in the properties of electric circuits. This knowledge and ex-
-perience has lately been turned to great practical advantage
+in the properties of electric circuits. This knowledge and experience has lately been turned to great practical advantage
 in providing a solution for the problem of street light control.
 
 The difficulty of turning multiple street lights on and off
-has been a serious obstacle to the general adoption of the mul-
-tiple system. This problem has been solved by the use of
+has been a serious obstacle to the general adoption of the multiple system. This problem has been solved by the use of
 medium frequency currents.
 
 These currents are superimposed on the regular power currents and in no
@@ -12014,8 +8981,6 @@ to separate the control currents from the power currents.
 Special relays employing tuned circuits are provided at points where
 control is desired. These relays are connected across the 110 volt mains
 
-5,270 Resonant Control
-
 which feed the individual street light or group of lights. The relays respond
 only to currents having the particular frequency for which they are tuned.
 
@@ -12028,10 +8993,7 @@ avoids using parts requiring periodic replacement.
 Two control frequencies are used, one to turn the lights on
 and one to turn them off.
 
-| 5
-O) P| !
 2300-V. FEEDER 6
-- ars
 
 —— TRANSFORMER
 TUNING COILS
@@ -12051,21 +9013,16 @@ speed motor runs at 1,200 and 1,8007.p.m., while the single speed motor runs at 
 The latter is a smaller unit, and, since it 1s for short period use, the oil immersed gears are not
 objectionable. The alternator produces control frequencies of 480 and 720 cycles at 1,200
 and 1,800 7.p.m. respectively. 'The alternator is coupled to the feeder by means of a tuned
-circuit. This tuned circuit consists of suitable condensers, and inductance coils. A trans-
-former of suitable ratio is interposed between the alternator and the tuned circuit so as to
-adapt the alternator to the low impedance circuit which it feeds. The condensers are con-
-nected directly to the feeder and serve the double purpose of tuning the alternator circuit and
+circuit. This tuned circuit consists of suitable condensers, and inductance coils. A transformer of suitable ratio is interposed between the alternator and the tuned circuit so as to
+adapt the alternator to the low impedance circuit which it feeds. The condensers are connected directly to the feeder and serve the double purpose of tuning the alternator circuit and
 of introducing a high impedance to the flow of power frequency current back through the
 alternator.
 
-Method of Feeding Control Currents into the Power Sys-
-tem.—The control currents are fed into the power system at
+Method of Feeding Control Currents into the Power System.—The control currents are fed into the power system at
 the substation. A single feeder may be energized alone or all
 the feeders on a bus may be energized at the same time. Single
 phases may be energized by switching from feeder to feeder,
 or the entire bus may be energized by making connection to
-
-Resonant Control 5,271
 
 the bus instead of to individual feeders. 'The control currents
 flow along the conductors just as though the power currents
@@ -12108,14 +9065,11 @@ relays.
 The superimposed voltage does not add directly to the power
 voltage but adds vectorially at right angles.
 
-5,272 Resonant Control
-
 Thus 5 volts of control voltage adds only .11 volt to the effective system
 voltage. A superimposed voltage of 20 volts will only increase the 110
 volt secondary voltage by 2 volts. The energy required to produce the
 superimposed control voltage is a very small part of the energy rating
-of the power system. It may be of interest to note that the control fre-
-quency alternator runs at 100% power factor and supplies only the power
+of the power system. It may be of interest to note that the control frequency alternator runs at 100% power factor and supplies only the power
 companent of the superimposed kva.
 
 The existing wires and cables of a power system therefore provide an
@@ -12127,8 +9081,6 @@ the system.
 ### TO CONTACTOR
 
 ### SWITCH
-
-I}O-VOLT
 
 ### GO-CYCLE MAINS
 
@@ -12150,49 +9102,31 @@ the relay is required to operate. That is, the reactance of the relay circuit as
 its operating frequency. This circuit is connected directly across the 110 volt line as shown at
 7 and 8 in fig. 8,426.
 
-Resonant Control 5,273
-
 Resonant Relays.—The relays used in this system of control
 ultlize the direct electro-magnetic pull of the control current; that
-is, the control cur-
-rents are them-
-selves sufficiently
+is, the control currents are themselves sufficiently
 strong to move the
 relay armature on
 which 1s mounted
 the control
 contact.
 
-This is an advan-
-tage in that it avoids
+This is an advantage in that it avoids
 the complication of
 amplifying tubes,
 rectifying tubés or
 
-delicate relay:mech-
-anism. 2 6.8
+delicate relay:mechanism. 2 6.8
 
-a
-«
-
-4 Cg. : : : 3 Re ; 5 ae . ots 2 7
-ges } Fig.8,428 shows
-Pe a Se : ., ; rs 4 —
 Fic. 8,428.— Westinghouse resonant relay used for street light control. er oe OS
-ee oo + . a ss Ca . , : 's a
-we ON MAGNET ne "
+
+we ON MAGNET ne
 aaa ' fae or a 2
-— a EE A
-Ko LAMP CONTAGTSf.
-He 2 ie peem Jay as, 3 - ne
-ee AA TOGGLE aD
-( Z . . : 7 Near : ae Ne Re
-inc, ED R : ———— 3 oa ae
+
 60-CYCLE | TUNED RELAY o aes
-ae ie
 
 MAINS 3 7]
-AUTEN Ib
+
 OFF
 4 OFF MAGNET
 
@@ -12202,8 +9136,6 @@ Fic. 8,429.—Diagram of Westinghouse resonant contrél unit. The tuned relays a
 1 and 3. The switch or contactor in the lamp circuit is of the toggle type; that is, 1t is pulled
 over a center and will remain permanently open or closed as the case may be. The operating
 coils of this toggle switch are indicated at 2 and 4.
-
-5,274 Resonant Control
 
 the general appearance of the type relay used for resonant street
 light control, and fig. 8,427 the relay in diagrammatic form.
@@ -12216,12 +9148,8 @@ power frequency current is a leading current, being almost entirely watt-
 less. This leading current is a benefit to the system in that it helps to
 correct the power factor.
 
-——_
-
 Fics. 8,430 to 8,432.—Westinghouse resonant control unit figs. 8,430 and 8,431. Unit with
 metal cover removed; fig. 8,432, unit with glass cover.
-
-Resonant Control 5,275
 
 Resonant Control Unit.—The appearance of the complete
 street light control unit 1s shown 1n figs. 8,430 to 8,432.
@@ -12232,82 +9160,38 @@ street light control unit 1s shown 1n figs. 8,430 to 8,432.
 
 BUS
 
-.
-e :
-=e fs
-ae | 2
-ae on f OR
-ne = vA 7.)
-2 = Io : eS
-Qh = a Zo
 = 52 SH
 = 9 S
-
-HE
-Zn} I
 
 ### STATION
 
 'GENERATOR
-i
-
-fw
-
-"ABE
-
-OC
 
 Fic. 8,433.— Westinghouse resonance control exterior circuits: three phases energized simultaneously.
 
-The equipment is assembled in a water proof case and is of such dimen-
-sions as to permit its being mounted in the base of the majority of orna-
-mental street light posts. The elements of the control unit are shown in
+The equipment is assembled in a water proof case and is of such dimensions as to permit its being mounted in the base of the majority of ornamental street light posts. The elements of the control unit are shown in
 fig. 8,429.
 
-5,276 Resonant Control
-
 Operation of Resonant Control.— When it 1s desired to turn
-on the street lights the control frequency alternator in the sub-
-station is brought up to speed and run at the on frequency.
+on the street lights the control frequency alternator in the substation is brought up to speed and run at the on frequency.
 
-Mir erert tr tris o
 "Tee cegemepenee:
 
-x
-in
 til
-
-|
 
 ### CIRCUIT-BREAKER
 
 ### TUNING CAPACITOR
 
 ean
-wt ets
 
 ### RESONANT FREQUENCY
 
 'M.G, SET
 
-—_if. \ NA
-<a
-
-A <a - '
-/ . ge
-SS a
-
-~'
-
-Sk ae
-Sch |
-i es
-
 ### STARTING AND CONTROL
 
 "BOARD
-
-See -——-
 
 ### OPERATING PANEL
 
@@ -12318,18 +9202,6 @@ Resonant Control 5,277.
 The alternator circuit is closed momentarily on the feeder carrying the
 street lights being controlled. This sends the on frequency to all parts
 
-s
-ae
-
-ae
-
-%
-
-x
-
-Liat 4
-
--_ { é 2 '
 Fic. 8,435.—Westinghouse resonant control
 installation as applied to series lighting
 
@@ -12342,20 +9214,15 @@ and close their control contacts.
 Then relay 1, fig. 8,429, is pulled up,
 thus energizing the operating mag-
 
-$ — SS ' ae | S '
 (5 cet 7~~~net2 of the toggle switch, closing
 
-al cal
 soe
-POs *
 
 the switch and lighting the lamp or
-lamps. The alternator at the sub-
-station is then disconnected. The
-on relays drop back to the open cir-
-cult position but the contactor
+lamps. The alternator at the substation is then disconnected. The
+on relays drop back to the open circult position but the contactor
 switch remains closed owing to the
-toggle. The lights remain on. ~*
+toggle. The lights remain on.
 
 When it is desired to turn the
 
@@ -12370,32 +9237,25 @@ over the system. These relays in
 turn energize the operating magnets
 of the toggle switches and pull the
 switches to the open position. The
-control alternator is then discon-
-nected, the off relays drop back to
+control alternator is then disconnected, the off relays drop back to
 the open position but the toggle
 switches remain open and the lamps
 remain off.
 
-Application to Series System Using Constant Current Reg-
-ulators.— While the system as developed was worked out with
+Application to Series System Using Constant Current Regulators.— While the system as developed was worked out with
 special attention to the requirements for multiple street lights,
 it is also well adapted to the series systems fed from automatic
 station type, manhole type and pole type regulators.
-
-5,278 Resonant Control
 
 In addition to advantages in the concentrated lighting areas, resonant:
 control makes possible the central control of series street lighting circuits.
 for rural districts, over a wide area without the necessity of long pilot
 circuits. The method of applying Westinghouse control to series systems:
-fed from constant voltage feeders through a pole type regulator is indi-
-cated in fig. 8,436.
+fed from constant voltage feeders through a pole type regulator is indicated in fig. 8,436.
 
 2300-V feeder
 
 vs Con rol | ri if =: Regulator
-
-Tra neil nTTia
 
 Control —n Switch
 
@@ -12405,8 +9265,7 @@ switch is controlled by a standard resonant control unit energized from the 2,30
 through the medium of a step down voltage transformer. This transformer is necessary to
 provide the 110 volt source for operating the street light control unit and also for supplying
 the control current for the oil switch. If a 110-220 volt distributing circuit be nearby, the
-voltage transformer may be omitted and the control frequency and operating current sup-
-plied from it.
+voltage transformer may be omitted and the control frequency and operating current supplied from it.
 
 1. What is the general principle of resonant control?
 
@@ -12420,12 +9279,7 @@ Describe a resonant control unit.
 
 Explain the operation of resonant control in detail.
 
-Describe the application to series system using con-
-stant current regulators.
-
-### TIO' MH SP W
-
-Electric Bells 5,279
+Describe the application to series system using constant current regulators.
 
 ## CHAPTER 216
 
@@ -12448,7 +9302,7 @@ The great multiplicity of bells may be classified
 . Single stroke;
 
 . Combination vibrating and single stroke;
-. Continuous ringing; _
+. Continuous ringing;
 
 Buzzers.
 
@@ -12464,28 +9318,18 @@ f. Alternating current winding (polarized).
 a. Contact breaker;
 b. Contact maker.
 
-Ss Qa Se &
-
-5,280 Electric Bells
-
 4. With respect to the magnet, as
 
 a. Single magnet;
-b. Double magnet; | |
+b. Double magnet; |
 c. Four magnet (double acting).
 
 PUSH
 BATTERY BUTTON
-tl
-ed
-—
-PRING &
+
 ADJUSTMENTS =
-re
-: . ra
+
 | fo CONTACT:
-ELecTRo | | | PEPER BREAKER 4 SiGe
-MAGNET Teer zt
 
 Lpa-fapg —
 
@@ -12511,62 +9355,34 @@ a. Skeleton; Vos a Me
 b. Iron box;
 c. Wooden box.
 
-Electric Bells 5,281
-
 6. With respect to the mode of operation, as
 
 a. Single acting; c. Electro-mechanical;
 b. Double acting; d. Relay.
 
-~
-A
-
-S DQM \
-
-iiss (
 uth
-SPENSER tui
 
 Fics. 8,439 and 8,440.—Bunnell a.c. and d.c. vibrating bell; 24 to 250 volts a.c.; 6 to 250 volts
 d.c. The striking element is a heavy plunger moving in a moulded condensite tube. A long
 time element is thus secured between strokes which permits the gong to vibrate freely and
-give a true ring of great penetrating or signaling power. The contact is not broken or the con-
-tact pressure reduced until the plunger has practically reached the end of the stroke when it
+give a true ring of great penetrating or signaling power. The contact is not broken or the contact pressure reduced until the plunger has practically reached the end of the stroke when it
 engages the interrupter and opens the circuit with a quick break.
 
-or Hiv, '
-5 2th,
-rete 8 deetiets
-rai? PSHE
 yeas
-! te
+
 "iT Tied
-Jt
-+++ + > . , b4oy
-+++ o~frotec—— = Ne
+
 Vit
 fies:
 eit
 
-—
-
-day fF Bi
 Beat
 
-|
-}
-}
-
 alii |
-UHHH
-|
 
 Fics. 8,441 and 8,442.—Bunnell a.c. and d.c. single stroke bell for series or parallel circuits. In
-construction the only moving part is a heavy plunger, which travels within a moulded con-
-densite tube when the current is turned on. The plunger strikes the gong a single, direct
+construction the only moving part is a heavy plunger, which travels within a moulded condensite tube when the current is turned on. The plunger strikes the gong a single, direct
 blow, setting it in complete vibration.
-
-5,282 Electric Bells
 
 Trembling or Vibrating Bells.—This form of bell is perhaps
 more extensively used than any other. It consists essentially, of:
@@ -12577,13 +9393,11 @@ more extensively used than any other. It consists essentially, of:
 
 ### SINGLE STROKE ORIEN OOPS GHNSING POWERFUL BATTERY
 
-a =~
-BUTTON --©-7-© elaja|aia I~ PUSH BUTTON
 O--O Q BATTERY a a ae
-t OOO TERMINAL | ee
+
 | ARMATURE.
 grees
-| PPE REARER | BRE nahi
+
 we i Ma H . z PATH OF
 seugn ARMATURE | sung SHORT CIRCUIT
 HD bli | Looe CURR
@@ -12603,14 +9417,10 @@ magnet winding. |
 The essential parts are shown in fig. 8,437.
 
 Single Stroke Bells.—This type of bell is one which gzves only
-a single tap each time the battery 1s connected tn circuit. Such op-
-eration is often desirable, as in signaling with a code.
+a single tap each time the battery 1s connected tn circuit. Such operation is often desirable, as in signaling with a code.
 
 NOTE.—The series of cuts representing various elementary bells is intended to illustrate
-principles, metallic circuits being shown for simplicity. Jt should be noted that in con-
-struction, the metal frame of the bell is used as a ''ground"' or return instead of a separate wire.
-
-Electric Bells 5,283
+principles, metallic circuits being shown for simplicity. Jt should be noted that in construction, the metal frame of the bell is used as a ''ground"' or return instead of a separate wire.
 
 Combination, Vibrating and Single Stroke Bells.— This type
 of bellis simply a combination of the two bells just described, as the
@@ -12623,68 +9433,56 @@ traversing the interrupter.
 A vibrating bell may be made single stroke by adjusting the contact
 breaker spring so that it does not open the circuit.
 
-POWERFU PUSH RINGING CIRCUIT |
-BATTERY BUTTON SINGLE BATTERY PUSH BUTTON.
-UU © START!
-| | © POSITION cicul
+### POWERFU PUSH RINGING CIRCUIT
 
-### PRING
+BATTERY BUTTON SINGLE BATTERY PUSH BUTTON.
 
 ### VIBRATING PB OC ADJUSTMENT
 
 TERMINALS POSITION ra ir N
-: ao Main a ER
+ao Main a ER
 SWITCH te
-a!
-CONTINUOUS
+
+### CONTINUOUS
+
 ARMATURE if RINGING OR
-D
+
 2TOP 7 VY} POSITION
-Cs errr) UA Ss
-70. <R L__BIVOT: (a BEN BBSITION
+
 = MECHANICAL
-IRCUIT
-MAINTAINER
+
+### MAINTAINER
 
 Fic. 8,445.—Elementary shunt bell with single stroke switch. Shunt cycle when the push
 button is pressed: 1, Current magnetizes the electro-magnet; 2, magnet attracts armature;
-3, contact maker short circuits the current; 4, magnet loses practically all of its magnet-
-ism; 5, momentum acquired by moving element causes hammer to strike bell; 6, tension of
+3, contact maker short circuits the current; 4, magnet loses practically all of its magnetism; 5, momentum acquired by moving element causes hammer to strike bell; 6, tension of
 the hammer spring overcomes weak magnetism of magnets and pulls armature away from
-magnet; 7, near end of outward swing, contact maker breaks circuit; 8, current again mag-
-netizes the magnet; 9, momentum acquired by the moving element causes it to continue its
+magnet; 7, near end of outward swing, contact maker breaks circuit; 8, current again magnetizes the magnet; 9, momentum acquired by the moving element causes it to continue its
 outward swing (against the attraction of the magnet) to the stop.
 
 Fic. 8,446.—Elementary continuous ringing bell with mechanical circutt maintainer. It is
 essentially an ordinary vibrating bell fitted with a mechanical circuit maintainer and
 connections as shown. In operation, when the battery circuit is closed momentarily, the
-path of the current is via terminals B and C. On the swing of the armature toward the mag-
-net the circuit maintainer trips and its spring causes it to move to the continuous ringing
+path of the current is via terminals B and C. On the swing of the armature toward the magnet the circuit maintainer trips and its spring causes it to move to the continuous ringing
 position, thus switching terminal A, wire to contact breaker via trip lever. With this circuit
 it is evident that the bell will continue ringing irrespective of whether the push button be
 held down or released, and also that the ringing will continue until the circuit maintainer is
 reset in its initial or open position by a pull on the manual control cord. This type bell
 is useful for burglar alarms.
 
-5,284 Electric Bells
-
 Shunt, or ''Short Circuit"? Bells.—In this form of bell the
-current, during operation, is not broken, but as the magnet at-
-tracts the armature, the current 1s shunted or short circuited, and
+current, during operation, is not broken, but as the magnet attracts the armature, the current 1s shunted or short circuited, and
 thus being offered a path of very little resistance as compared
 with that of the magnet winding, most of the current flows
 through the short circuit.
 
-@
-
 Since this reduces the magnetism to such a small amount that the attrac- .
-tion! of the magnet becomes Jess than the pull of the hammer spring, the ;
+tion! of the magnet becomes Jess than the pull of the hammer spring, the
 hammer swings back to its initial position.
 
 ### RINGING CIRCUIT STABTING CIRGUIT
 
-BATTERY _@@ pysn
-BUTTON
+### BUTTON
 
 ### TATIONARY CONTACTS
 
@@ -12693,7 +9491,6 @@ BUTTON
 ### PLUNGER
 
 ELECTRICAL CIRCUIT ' ; n>
-MAINTAINER : Lg iy
 
 SOLENOID SS Sn ae OPEN OR SET POSITION
 
@@ -12703,10 +9500,7 @@ SOLENOID SS Sn ae OPEN OR SET POSITION
 
 GUIDE | the" CIRCUIT MAINTAINER LEVER
 
-' Teco eee ee ee @.
-
-Fic. 8,447.—Elementary continuous ringing bell with electrical circuit maintainer. In oper-
-ation, when the starting circutt is closed by depressing the push button, current flows through.
+Fic. 8,447.—Elementary continuous ringing bell with electrical circuit maintainer. In operation, when the starting circutt is closed by depressing the push button, current flows through.
 the solenoid and draws down the plunger, thus closing the ringing ctrcust: The bell will
 now ring until the ringing circuit is broken by pushing upon the manual control button. To
 reset the circuit maintainer the manual control button is pushed upward until the moving
@@ -12722,8 +9516,6 @@ released. The bell beginning to ring as soon as the circuit maintainer lever clo
 through the contact breaker and bell magnet. Yo reset, the manual control is pulled down
 until the circuit maintainer lever strikes the stop, the trip end will then engage with the claw
 of the trip lever.
-
-Electric Bells 5,285
 
 Continuous Ringing Bells.—This classification represents a
 form of vibrating bell, provided with @ suztable attachment for
@@ -12755,10 +9547,6 @@ ADJUSTMENT Gc '
 
 BASE ;
 
-————_—__=
-
-ONT
-
 Fic. 8,449.—Sectional view of a buzzer. In construction, the armature is pivoted to the
 lower part of an upright soft iron shield or standard from the top of which the magnet is
 firmly suspended. The armature being pivoted to the shield, vibrates between the magnet
@@ -12776,11 +9564,8 @@ numerous schemes to eliminate sparking at the contacts of the
 
 interrupter.
 
-5,286 Electric Bells
-
 The electro-magnet is provided with two windings which, for convenience
-to distinguish their function, may be spoken of as: 1, the magnetizing wind-
-ing; 2, the demagnetizing winding.
+to distinguish their function, may be spoken of as: 1, the magnetizing winding; 2, the demagnetizing winding.
 
 Combined Differential and Alternate Bells.—In this type
 of bell there are two separate electro-magnets, and an armature
@@ -12792,39 +9577,11 @@ high voltage circuits, that is, on circuits of voltages higher than
 is usual in ordinary battery installations, provision must be
 made:
 
-r--O
-¢
-
-Cor jcaG
-
-Gms GE G8 CE © aw .. «
-
 ### MAGNETIZING COILS
-
-|
-|
-|
-|
-bx 3
-a
-z
-m
-=
-N
-a
-(74)
-oO
-S
-re
-
-—_—_— os ee ee.
 
 ee eee eee
 
-ws Ss
-"<\ 7
 it 7 f,. aif
-ae ) ~ 7
 
 circuit is closed: 1, Current flows through the magnetizing winding and energizes magnet;
 2, magnet attracts the armature; 3, contact maker closes circuit through demagnetizing
@@ -12833,12 +9590,9 @@ against the stop, while, 6, the contact maker breaks the circuit through demagne
 
 Fic. 8,451.—Elementary differential and alternate bell. In operation, when the battery
 circuit is closed: 1, current flows through the magnetizing winding M, and energizes magnet
-F; 2, magnet F, attracts end A, of the armature; 3, contact maker closes circuit through de-
-magnetizing coil D, and single coil S, (of magnet G); 4, demagnetizing coil demagnetizes F,
+F; 2, magnet F, attracts end A, of the armature; 3, contact maker closes circuit through demagnetizing coil D, and single coil S, (of magnet G); 4, demagnetizing coil demagnetizes F,
 and 5, magnet G, attracts end C, of the armature; 6, contact maker breaks the circuit through
 demagnetizing coil D, and single coil S, (of magnet G).
-
-Electric Bells 5,287
 
 1. To limit the current to the proper value;
 2. Tosecure the proper working conditions at the interrupter.
@@ -12846,14 +9600,6 @@ The first requirement is met by proportioning the magnet winding so
 
 as to avoid an undue amount of current. Sparking at the interrupter may
 be prevented by the use of a condenser.
-
-O~-TERMINALS—
-
-= 1 KG ooo'
-
-- |
-
-~
 
 syife':
 
@@ -12863,30 +9609,21 @@ syife':
 
 ### ARMATURE
 
-—
-
 CONDENSER 4, On
-
-Fe Fe FoF... ee: Oe we
 
 rower
 
 Fic, 8,452.—Elementary heavy duty high voltage bell. The winding is of fine wire to secure
-enough resistance to keep down the current to proper value. Sparking is avoided by con-
-necting a condenser across the contact breaker as shown.
+enough resistance to keep down the current to proper value. Sparking is avoided by connecting a condenser across the contact breaker as shown.
 
 Fic. 8,453.—Elementary alternating current bell with permanent magnet armature. In
 construction the electro-magnets are wound similarly, that is, tm the same direction, so as to
 produce like poles which simultaneously repel and attract the armature ends.
 
 Alternating Current Bells.—A type of bell formerly used
-extensively in telephone work, to operate on the alternating cur-
-rent furnished by the magneto 1s shown in fig. 8,453.
+extensively in telephone work, to operate on the alternating current furnished by the magneto 1s shown in fig. 8,453.
 
-Double Acting Bells.—This type of bell is desirable for razl-
-road signals or any place where an extra loud alarm ts desirable.
-
-5,288 Electric Bells
+Double Acting Bells.—This type of bell is desirable for razlroad signals or any place where an extra loud alarm ts desirable.
 
 Motor Driven Bells.—This type of bell is desirable for use
 where a loud ringing alarm or signal bell 1s required.
@@ -12901,31 +9638,9 @@ direct. A powerful blow is obtained by the revolving stroke of these
 bells, because of the amplitude of the stroke, which permits the hammers
 to acquire considerable momentum between blows.
 
-ih
-(
-
-'
-NOpes
-
-|
-
-wD)
-
 HAND |
 OPERATED i
 MAGNETO :
-
-i
-Mt
-
-Wn
-"
-
-POLARIZED ~ Tn), Peay
-ARMATURE NQ Sy —— f
-
-!
-ry
 
 as pray euacy
 
@@ -12934,7 +9649,7 @@ magnet poles, and 7 and s, poles imduced by the permanent magnet.
 
 Fics. 8,455 and 8,456.—Operation of the elementary a.c. bell of fig. 8,454. The figures show
 the induced poles and movement of the armature during one cycle of the low frequency a.c.
-supplied by the hand operated magneto. |
+supplied by the hand operated magneto.
 
 Electro-mechanical Bells.—Where a very powerful bell is
 required to operate at a distance with little battery capacity,
@@ -12943,13 +9658,10 @@ the electro-mechanical bell 1s well suited.
 In this type of bell, the electric current is used simply to control a spring
 operated mechanism which supplies the energy to ring the bell.
 
-Electric Bells 8,289
-
 A form of electro-mechanical bell is shown in fig. 8,459. It consists
 essentially of a large and small gear as shown, the large gear having rigidly
 fastened to it, a ratchet and pawl wheel and main spring for operating the
-gong, a control lever operated by the electro-magnet governs the move-
-ment of the two gears by pawl and detent device, and the small gear has
+gong, a control lever operated by the electro-magnet governs the movement of the two gears by pawl and detent device, and the small gear has
 attached to its shaft an air vane to prevent too rapid rotation of the gears.
 There is also a control handle by which the bell is rendered either single
 stroke or continuous ringing.
@@ -12964,64 +9676,50 @@ LIGHT SPRING 7
 
 ### PUSH BUTTON
 
-©
-
 Fic. 8,457.—Elementary double acting bell. Zn operation, magnets F,G', and F',G, are
 alternately energized. Assuming the current to flow first through F,G' and then through
 G F', F and G', will have N and S poles, and G and F',S and N poles; these will induce
-unlike poles in the ends of the armature attracting it at both ends. :
+unlike poles in the ends of the armature attracting it at both ends.
 
 Fic. 8,458.—Elementary motor driven, or revolving strike bell. In construction, the motor
 has a revolving member attached to the shaft and an eccentrically pivoted clapper at either
 end, which in operation delivers two blows to the bell at each revolution of the-motor. A
 desirable type of bell for use where a very loud ringing alarm is required.
 
-. Relay Bells.— Where bells are to be operated at a consider-
-able distance a relay 1s usually employed, especially in the case of
+. Relay Bells.— Where bells are to be operated at a considerable distance a relay 1s usually employed, especially in the case of
 large heavy duty bells requiring considerable energy to operate
 them.
 
 A relay is a device which opens or closes an auxiliary circuit
 under pre-determined electrical conditions in the main circuit.
 
-5,290 Electric Bells
-
 . Its function is to act. as a sort of electrical multiplier; that is
-to say, zt enables a comparatively weak current to bring into opera-
-tion amuch stronger current, .
+to say, zt enables a comparatively weak current to bring into operation amuch stronger current, .
 
 This 3 is very clearly.seen, in the operation of a telegraph relay, where. a
-_ very weak long distance transmission current is used to operate a relay,
+very weak long distance transmission current is used to operate a relay,
 which synchronously controls a strong local current to operate a "'sounder,.'"
 
 The term relay has been used erroneously to a considerable extent,
-perhaps both through ignorance and abuse; thus, bells fitted with elec-
-trical, or electro-mechanical controlling devices, the equivalent of those
+perhaps both through ignorance and abuse; thus, bells fitted with electrical, or electro-mechanical controlling devices, the equivalent of those
 shown in the accompanying cuts are often spoken of as "relay" bells. This
 
 PUSH BUTTON ae
-| SLOTTED :
-. er ee i Gf TERMINALS. . CLAPPER BIN
 
-| MULTI~ STRIKE POSITION
+MULTI~ STRIKE POSITION
 
 ELECTRO MAGNETO! i:
-CONTROL LEVER mh) |
+CONTROL LEVER mh)
 
 SPRING: ma PIVOT
 
 yan DETENT
 bi ~ J DETENT WHEEL
-(eye ie SMALL GEAR. |
-| RETARDATION) AIR VANE >, TRIEAING
+(eye ie SMALL GEAR.
+RETARDATION) AIR VANE >, TRIEAING
 PAWL 2
-: XA MAIN SPRING toe oe
+XA MAIN SPRING toe oe
 
-a rr ie
-
-a "RAMMER
-
-- &e rao
 Eiger
 
 Fic. 8,459 5 cttianaebary ee ne bell. In operation, the main spring having
@@ -13033,34 +9731,23 @@ button be now released, the paw! will ride on the paw! wheel, keeping the detent
 
 - engagement with the detent wheel. As the large gear turns counter-clockwise, the finger
 
-_ A, rides on the ratchet, gradually drawing the hammer away from the bell against the'
+A, rides on the ratchet, gradually drawing the hammer away from the bell against the'
 
-' tension of the hammer spring. As the finger ridés off the point B, the hammer is suddenly
+tension of the hammer spring. As the finger ridés off the point B, the hammer is suddenly
 
 released and strikes the bell a powerful blow. At the same instant the pawl falls into the
 
-depression C, on the pawl wheel and the detent engages with one of the numerous depres-
-sions in the detent wheel, thus stopping the mechanism. A moderate velocity of rotation
+depression C, on the pawl wheel and the detent engages with one of the numerous depressions in the detent wheel, thus stopping the mechanism. A moderate velocity of rotation
 of the gears 1s obtained by means of the retardation alr vane.
 
 Fics. 8,460 to 8,463. Construction details of clapper for motor driven bell, and view showing
 action of clappér 'om striking the -bell.
 
-es
-
-Electric Bells 5,291
-
 error will be avoided, by remembering that the object of a relay 1s to enable
-a weak current to bring into action a strong local current, and thus re-
-duce the size of battery required; this involues two distinct circuits each
+a weak current to bring into action a strong local current, and thus reduce the size of battery required; this involues two distinct circuits each
 having a separate source of current.
 
 ### SCREW JOINT
-
-22a aE? EE ee
-en —<—<—<—<—
-
-i
 
 crater FOR WIRES
 
@@ -13069,46 +9756,22 @@ Fics. 8,464 and 8,465.—Reducing resistance of bell coils. When con-
 lowing more current to flow through the coils for a given voltage.
 
 Fics. 8,466 and 8,467.—General construction of an ordinary push bute:
-ton. Fig. 8,466, exterior view; fig. 8,467, interior view. |
+ton. Fig. 8,466, exterior view; fig. 8,467, interior view.
 
-" Fic. 8,468.—Special push button with indicating buzzer inside, useful = r any system where
+Fic. 8,468.—Special push button with indicating buzzer inside, useful = r any system where
 the caller desires to know positively that the bell has given the' —_—
-
-LLiktlhhlhhies
 
 a AALELEEEEE SS
 
 wat
 
-a ane
-
 Ree
 
 eas.
 
-Lf es
-- _&
-Ltt va
 ~ eee
-a,
-
-+ > ws
-
-* .
-oY a ";
-
-Y Ser
-
-- ead
-
-_ PP
-
-ae & 'i mies Z
-~ es.
-ee
 
 Psa
-et
 
 Coben floor and table jit batsonwaltabie ke Ting room. The
 table clamp renders the push portable, permitting it*to'be moved at any time.
@@ -13116,23 +9779,12 @@ table clamp renders the push portable, permitting it*to'be moved at any time.
 . Fics. 8,472 to 8,474.—Proper method of making a joint in covered wires. First scrape off
 about 3 ins. of the insulating covering on the end of each wire; scrape the bared copper
 wire until it is bright and clean; bend these wires into the position shown in fig. 8,472; and
-then firmly twist them around each other as shown in fig. 8,473. Second, cut off the pro-
-jecting pieces d, d, close to the joint, and then solder the latter to prevent corrosion. This
+then firmly twist them around each other as shown in fig. 8,473. Second, cut off the projecting pieces d, d, close to the joint, and then solder the latter to prevent corrosion. This
 corresponds to a Western Union splice. Third, wrap a piece of adhesion or friction tape
 rere the joint over about half an inch of the. insulating covering of each wire, as.in fig.
 8,474.
 
-5,292 Electric Bells
-
-@e @.
-<> ahem ap Sm Oe a om ws ee
-
-OCs eaw
-a SPs
-© om nie
-
-Fics. 8,475.—Shutter or gravity annunciator drop. In operation, when the circuit is com-
-pleted by the depression of a pushcenter, the current flows through the coils of the
+Fics. 8,475.—Shutter or gravity annunciator drop. In operation, when the circuit is completed by the depression of a pushcenter, the current flows through the coils of the
 electro-magnet M, and energizes its core, and the latter attracts the armature A, pivoted
 
 at B. When the armature is drawn to the position C, the claw D, is thrown to the position
@@ -13145,26 +9797,7 @@ the coils of the electro-magnet, the armature E, turns on its pivot towards the 
 thereby releasing the arm D, which in falling rotates the arrow to the position shown in dotted
 lines. The arrow is reset by pressing a button, which raises the rod F, carrying the arm G.
 
-_ PARTRICK & WILKINS CO Pat
-
-'
-
-tL
-¢
-s
-'
-' '5 :
-Ee ]
-€ >
-« .
-: «
-,
-Cy er
-a,
-i vy
-'
-
-ve
+PARTRICK & WILKINS CO Pat
 
 Fic. 8,477.—Partrick & Wilkins 4 point hand reset annunciator for d.c., 4 to 6 volts or a.c.
 (transformer) not less than 12 volts, 25 watts. The hand reset is operated by a button at the
@@ -13176,16 +9809,13 @@ with extra connections so that a reset button, if desired, can be located remote
 
 nunciator.
 
-Electric Bells 5,293
-
 Annunciators.—An annunciator is a device attached to an
 electric beil or other signal system in which a shutter, falling in one
 of a series of windows in a frame, discloses the number of the
 station calling.
 
 Annunciators are most extensively used in connection with elevator,
-office, hotel, and residence call bell service. The mechanism of an annun-
-ciator consists of an arrangement of electro-magnets the energizing of
+office, hotel, and residence call bell service. The mechanism of an annunciator consists of an arrangement of electro-magnets the energizing of
 which, -when the circuit is closed by the depression of the various pushes,
 allows shutters to drop, thereby exhibiting the circuit numbers painted
 
@@ -13194,14 +9824,6 @@ allows shutters to drop, thereby exhibiting the circuit numbers painted
 ### COMBINATION COMBINATION
 
 PUSH & BUZZER PUSH & BUZZER'
-: 7
-
-"T1168 wikinc Boaroos
-2 ANNUNCATOR
-zz
-
-1 La
-cana Ls
 
 Fic. 8,479.—Partrick & Wilkins return call system using combination buzzers or buzzer pushes
 and buzzer or bulb separate.
@@ -13215,8 +9837,6 @@ marked close to them on the indicator panel.
 Bell Wiring.—Always start to wire at the push, and run the
 wires from the push to the bell, and to the battery.
 
-5,294 Electric Bells
-
 Fasten each wire lightly to the woodwork with staples or double pointed
 tacks.
 
@@ -13229,33 +9849,15 @@ from the push to the battery, for the wire from the push to the bell.
 
 ### CIRCUIT: WIRE
 
-' Fic. 8,481.—Simple bell metallic circuit.
-
-|
+Fic. 8,481.—Simple bell metallic circuit.
 
 (©) PUSH
 
-ie ' ' Sa en
-
 CELL
 
-cu
-
 ### GROUND PLATE
 
-3 a SS OSL gy Ze [EESN SESS SE ew ANTS BESS
-
-_> Sime nee Se eke ees eee gaereweweaewe w= wat ds
-
-{2 ..
-
 ### GROUND PLATE
-
-ZAK ASS TURSS?24
-Ly, Ni UK ZS
-=~
-
-WSs
 
 Fic. 8,482.—Simple bell circuit with ground return. Instead of using ground plates, a more
 convenient method consists in connecting the ground wires to a gas or water pipe.
@@ -13270,8 +9872,6 @@ dry cells plus enough additional cells to allow for line drop depending on the l
 should be noted, that in the wiring diagram the dry cell or cells shown do not represent the
 number of cells required but simply indicate an electrical source of current.
 
-Electric Bells 5,295
-
 _ PARALLEL
 'CONNECTED CELL] 1
 BUTTONS | 1
@@ -13280,38 +9880,17 @@ Fic. 8,483.—Parallel connected push buttons for ringing one bell from several 
 obvious that if the push buttons were connected in series, all would have to be closed to
 complete the circuit.
 
-e
-
 ### SERIES TYPE BELLS
 
 waaay
-I}
 
-| ek a ig
-wv. . Th | fl i th
-«ggg Re | : { |
-_é : ' pti do , , :
-. {
-\ ==
-: " aes, . \
-FW s\)
-. '
-i QO ;
-
-© Wy . et fi | '
-mS. f. \
 eee
-cara ———————) ' ;
-a ier a
-a= — !
-— F - - SS. = Meme. ee t ' '
-oe oo
-a
+
+— F - - SS. = Meme. ee t '
 
 Fic. 8,484.—Two bells connected in series to ring from either one of two push buttons. It
 should be noted that ordinary bells cannot be connected in series, as they would not make
-and break the circuit in unison. Thus when two or more bells are to work on a series Cir-
-cuit, one of them should be an ordinary make and break bell, and the remainder single stroke
+and break the circuit in unison. Thus when two or more bells are to work on a series Circuit, one of them should be an ordinary make and break bell, and the remainder single stroke
 bells, or two or more shunt or short circutting bells, as here shown. It will be seen from the
 figure that the circuit through such a bell is never broken, the attraction of the armature'
 short circuiting, and therefore demagnetizing the electro-magnet, which thereupon releases
@@ -13324,15 +9903,7 @@ or more bells in series, the battery would be more or less short circuited when 
 ringing. As these bells short circuit themselves when in action, there is appreciable sparking
 at their contacts.
 
-|
-:
-q
-f
-RA
-
 Fic. 8,485.—Several bells connected in parallel to ring from one push button.
-
-5,296 Electric Bells
 
 according to whether a wire or the ground be used for the
 ''return conductor,'' that is, to complete the circuit.
@@ -13346,22 +9917,17 @@ pole of the battery connects with the bell or the push button, except where
 a ground return is used. In the latter case the negative pole should connect
 with the earth.
 
-Fic. 8,486.—Diagram showing how either of two bells may be rung from one battery by means |
+Fic. 8,486.—Diagram showing how either of two bells may be rung from one battery by means
 of a two way switch.
 
 ### LONG LINE
 
 ### MAIN CIRCUIT
 
-—_
-
 Fic. 8,488.—Method of reducing size of battery on long line by use of a relay. As explained
 elsewhere a relay is a device which opens or closes an auxiliary circuit, under predetermined
-electrical conditions in the main circuit. Its function is to act as a sort of electrical multi-
-plier, that is to say, #t enables a comparatively weak current to bring tnto operation a much
+electrical conditions in the main circuit. Its function is to act as a sort of electrical multiplier, that is to say, #t enables a comparatively weak current to bring tnto operation a much
 stronger current.
-
-Electric Bells 5,297
 
 It should always be remembered that the positive pole of the battery ts at the
 top of the negative plate, and the negative pole is at the top of the positive plate.
@@ -13372,47 +9938,22 @@ top of the zinc (positive) element. In the case of a gravity Daniell cell, the
 positive pole is at the top of the copper (negative) plate; and the negative
 pole is at the top of the zinc (positive) plate.
 
-|
-
-{
-li
-|
-
-:
-
-LL
-|
-
-Fic. 8,489.—Method of wiring an annunciator; diagram shows the various circuits, bell, bat-
-tery, push button, drops, etc.
+Fic. 8,489.—Method of wiring an annunciator; diagram shows the various circuits, bell, battery, push button, drops, etc.
 
 Annunciator Circuits——A general method of wiring an
 annunciator is shown in fig. 8,489. The wire A, runs from
 one terminal of the battery to one terminal of each push; the
 wire B, runs from the other terminal of the battery, through
 
-5,298 Electric Bells
-
 ### WIRING BOARDS
 
-OF
-
 ### ANNUNCIATORS
-
-### C 'D
 
 ### ANNUNCIATOR
 
 PUSHES ef
 
-r
-'
-¢
-L
-
 ### WIRING BOARDS
-
-OF
 
 ### ANNUNCIATORS '
 
@@ -13426,10 +9967,7 @@ used in rooms; B, electric reset annunciators in multiple with extra connections
 push; C, plain single annunciator with single contact push; D, annunciators in multiple with
 double contact pushes, no special winding of magnets.
 
-Electric Bells 5,299
-
-the bell, and thence to one terminal of each of the drop mag-
-nets M1, M2,etc. The other terminals of each of the magnets.
+the bell, and thence to one terminal of each of the drop magnets M1, M2,etc. The other terminals of each of the magnets.
 M1, M2, etc., and pushes 1, 2, etc., are connected as shown.
 
 With this arrangement, the pressing of any push button does not affect
@@ -13448,9 +9986,7 @@ Bell Ringing Transformers.—There is a great difference in
 transformers and by actual test the voltage and wattage will
 often be found lower than rated.
 
-Sometimes transformers when tested without a load are found to be pro-
-perly rated, but when tested while signals are being operated show a de-
-ficiency of several volts.
+Sometimes transformers when tested without a load are found to be properly rated, but when tested while signals are being operated show a deficiency of several volts.
 
 #### Ques. Will a bell ringing transformer operate on direct
 
@@ -13469,19 +10005,14 @@ removed. .
 
 #### Ques. Do all bells operate on alternating current?
 
-5,300 Electric Bells
-
 Ans. Battery types of bells up to six inches will operate on
-alternating current, above that size standard alternating cur-
-rent or transformer bells are required.
+alternating current, above that size standard alternating current or transformer bells are required.
 
 #### Ques. Upon what voltage do transformer bells operate?
 
 Ans. The large size bells require from 12 to 18 volts.
 
-#### Ques. Can a person get a shock from a bell ringing trans-
-
-former?
+#### Ques. Can a person get a shock from a bell ringing transformer?
 
 Ans. No.
 
@@ -13509,8 +10040,6 @@ Points to be Remembered.—Bell amperage should be equal
 to, or ten per cent less than lamp amperage, when lamps are
 used 1n series with bells or buzzers.
 
-Electric Bells 5,301
-
 Wattage consumption of lamp has no relation to watt consumption of bell.
 
 In the event of there being any doubt as to the proper bell to be used ina
@@ -13532,8 +10061,7 @@ the combined wattage and voltage drop.
 
 If circuit breakers or relays be used on any of the bell circuits, find out the
 watt consumption of same and figure the same as a bell consuming that
-amount of wattage. Therefore, in obtaining the total wattage on bell cir-
-cuits the amount of wattage the relay or circuit breaker consumes must be
+amount of wattage. Therefore, in obtaining the total wattage on bell circuits the amount of wattage the relay or circuit breaker consumes must be
 known.
 
 Never use No. 18 wire for bell circuits excepting for ordinary residential
@@ -13555,16 +10083,8 @@ What is the construction of a shunt or short circuit
 
 bell?
 
-Hm GD NO ee
-
-in
-
-5,302 Electric Bells
-
-~I ON
-
 . Describe the construction of a continuous ringing bell.
-. What is a buzzer? |
+. What is a buzzer?
 . What kind of -electro-magnet is used on differential
 
 bells?
@@ -13580,12 +10100,12 @@ high voltage?
 . Describe the operation of an alternating current bell .:
 . For what service is a double acting bell suitable?
 
-. What is the construction of a motor driven bell? _
+. What is the construction of a motor driven bell?
 
 . For what service is an electro-mechanical bell suitable?
 . What is a relay?
 
-» On what bell service are relays used?
+On what bell service are relays used?
 
 . What is the construction of a push button?
 
@@ -13601,8 +10121,6 @@ Ups.
 
 . How is an annunciator wired?
 . Give a few points relating to bell ringing transformers.
-
-Burglar and Fire Alarms 5,303
 
 ## CHAPTER 217
 
@@ -13623,11 +10141,7 @@ CLOSED CIRCUIT
 
 3 ANNUNCIATOR ,
 
-i 1 ON
-
 CIRCUIT |
-
-OOR i
 
 ### SPRING
 
@@ -13642,12 +10156,8 @@ with annunciators to indicate the point of contact. The window and door springs 
 to an annunciator drop before connecting with the rest of the circuit and immediately
 what door or window has been tampered with.
 
-) :
-
 Burglar Alarms.—Protective systems ordinarily known as
-'burglar alarms are of two generalkinds; ..,.  , :
-
-3,304 Burglar and Fire Alarms
+'burglar alarms are of two generalkinds; ..,.  ,
 
 1. Those having connection to police stations, protective
 offices or other remote points where a signal receives immediate
@@ -13656,7 +10166,6 @@ attention.
 2. Those in which the alarm is in the building which it
 protects.
 
-| DOOR.OR
 =» WINDOW CONTACTS
 
 OPEN
@@ -13675,21 +10184,16 @@ will make the system operative. The bell sounds the alarm
 *NOTE.—Where one drop is to indicate a group of springs, such as a room or section, only
 one direct wire from each group to the annunciator is required.
 
-Burglar and Fire Alarms 5,305
-
 DOOR OR WINDOW Sheed ©, DOOR OR WINDOW
 CONTACTS oe CONTACTS
-( - J @ a
-& aa
+
 A 0 NON LOCKING TYPE LOCKING TYPE
 RELAY RELAY Y =
-ime fC)
+
 most =m
 ie | ] y HAND
-r) ~ | . A a A f, ! RESET @ @)
 
-TL Li! CLOSED
-ait etey _ CIRCUIT |
+ait etey _ CIRCUIT
 
 Fic. 8,497.—Closed circuit burglar alarm system. Jt consists of: 1, one direct wire from the
 closed circuit battery or transformer to the first window or door spring; 2, one wire from the
@@ -13697,19 +10201,14 @@ other side of this window or door spring to the next window or door spring and c
 in series wiring to the last window or door spring; 3, one wire from the last window or door
 spring to the non-locking type relay; 4, one wire from the non-locking type relay to the
 closed circuit battery or transformer; 5, one wire from the non-locking type relay to the
-locking type relay; 6, one wire from the non-locking type relay to the bell and to open cir-
-cuit battery or transformer; 7, one wire from the bell to the locking type relay; 8, one wire
+locking type relay; 6, one wire from the non-locking type relay to the bell and to open circuit battery or transformer; 7, one wire from the bell to the locking type relay; 8, one wire
 from the locking type relay to open circuit battery or transformer.
 
 DOOR OR WINDOW O_O DOOR OR WINDOW
 CONTACTS P CONTACTS
-® @ \ ee f
-S piss
+
 LOCKING TYPE |
 RELAY. ©
-
-finental: VAN OPEN | °°)
-°F ge | CIRCUIT]
 
 i 9 SWITCH A
 BATTERY |
@@ -13717,14 +10216,11 @@ BATTERY |
 Fic. 8,498.—Open circuit burglar alarm system to be operated in parallel. In hook up there
 must be: 1, one common wire to one side of all window or door springs, switch and bell
 
-5,306 Burglar and Fire Alarms
-
 and the annunciator indicates the location at which the intruder
 is trying to enter. Devices for detecting the entrance of a
 burglar are made in many forms adapted for various purposes.
 Some are designed to be operated by the raising of a window or
-by the opening of a door, where entrance is likely to be at-
-tempted. Bells for burglar alarms should be either of the
+by the opening of a door, where entrance is likely to be attempted. Bells for burglar alarms should be either of the
 continuous ringing type, or controlled by a continuously ringing
 
 ANNUNCIATOR RESET.
@@ -13735,8 +10231,6 @@ CONTACT "-
 TEST :
 
 He ee SWITCHES
-
-Twixoow fT + z
 
 AND O00R: !
 SPRINGS alt
@@ -13761,15 +10255,12 @@ Fic. 8,498.—Text continued.
 from battery or transformer to relay; 4, one wire from relay to bell; 5,.one wire from switch
 to battery or transformer.
 
-Burglar and Fire Alarms 5,307
-
 'In the open circuit, fig.8,500, no connection is made on current flowing
 until the circuit is closed by some contact making device.
 
 In the closed circuit, fig. 8,501, a small current is always flowing through
 the apparatus and an alarm sounded if any connection be broken or a wire
-opened. This is done by the small current holding a relay away from con-
-tacts which send current through the bells or howlers. A break 1n that small
+opened. This is done by the small current holding a relay away from contacts which send current through the bells or howlers. A break 1n that small
 current then, would release the relay and send off the alarm. Both have
 their advantages and disadvantages and each is suited for its respective
 purposes.
@@ -13778,7 +10269,6 @@ Contact making or breaking devices consist of foot switches, railings,.
 knobs, handles, screens or anything where a touch or handling sets off the
 device.
 
-\"OPEN CIRCUIT — pry =
 |ZDOOR SPRING = BATTERY (of
 
 ? oe CONSTANT, RINGING
@@ -13808,38 +10298,13 @@ ailing patient. Therefore, silent call systems such as light
 signals, push buttons, or pull switches are necessary at the
 bedside.
 
-%
-
 Alarms
 
 Fire
 
 Burglar and
 
-9,308
-
-*de} dAtssaq0ns Yyoea Joy UleZe pai[nd pue peseajal aq JNU PJOD 94} PUB [[2q 94} UO de} suo SpUNcE 7
-Posn aq []9q S9HOIS o]Zurs & Jy °yNe} p1OS 9y} Spjoy yust}ed 9y} SB BuO] Se PUNOS OF} SaNUTVUOD }I [eUSIS BIqIpne Ue JO} pasn oq JazZZNq
-JO ]]J9q BuNeIqIA & Jy '[eusIS s[QIpne 9y} 0} YOIMS 9Y} JO Ye 9} UO J9DJUO) J]2q BY} WIOIJ PIDIUUOD SI JIIM JININI 93CIEC 3
-Y °S8}0B}]UCO JeUuzIs a[qrpne 9y} Seso]D puke JoduN|d 9y} sessaiJdap a[PULY IY} JO UOISUS}X9 aU} '[aARI} 8}I JO WU] JY} 0} poynd ps0d
-24} pue peHoojunN st JUSUIYIE}}e HOO] 94} UsyM 'cCG'g "BY UI 'a]pueY 94} JO UOISUD}xa 94} Aq pesseIdeap Useq JOU Sey DEO) WY}
-Sayeu YsIyA JoZun]|d 3y} ssnedeq Zuljeltodo jou SI JMdIIO [eUsIS v[qipne 39y} 3nq 'YdIIMS
-[O1}UOD 94} 0} po}DaUUOD |e ae s}MoID dure] Teusis syy, "UoTIISOd wo 9} UI St YdIIMS JY}
-pue pond useq pey plod 94} '#OQG'g °8y Ut {prod 94} UO ][nd B ZuT}IEMe UOT}ISOd fo sy} UT ST
-Jaa] Burye1edo 9Y} 'E0G*8 °SY UY "Yo }IMS Jor}ZUOD [Ind [elIdsoy JuRAIG—'CQG''s 0} ZOG*S "SOMA
-
-.
-
-,
-
-a
-
-aed m , '
 peak PAE AS PL AE
-
-awe yt ah ath ot oh,
-
-Burglar and Fire Alarms 5,309
 
 ### RED REO REO RED
 
@@ -13854,9 +10319,6 @@ FROM
 PANEL i a ae
 
 om SWITCH
-ae |
-
-### SPARE
 
 Fic. 8,506.—Diagram of Bryant silent call hospital signal system for two calling stations in
 two separate rooms. The lights are placed over the doorway of the patient's room and
@@ -13867,35 +10329,22 @@ control switch to the proper numbered signal in the annunciator.
 
 ### FLUSH
 
-YMC. Aw cme BERG Bn CEA ow
-| e a a @ <BVIZER rererer
-ROOM CALL (+) : :
+ROOM CALL (+) :
 
-&
-
-io ¢ :
 Porn
-Mv7zzEer zx Onn.
-(Ml
-Orrick il
 
-'OWER
-EITHER BATTERY OR TRANSFORMER
+### EITHER BATTERY OR TRANSFORMER
 
-\GRRSPPECre Prue re
 ves eee ea Lae at
 
 Fic. 8,507 .—Partrick & Wilkins room call system without annunciators for Y. M.C. A. service.
 In this system a combination buzzer (or separate push and bell or buzzer) is used in the
 rooms. The No. 1 button board with one bell or buzzer in the office. The clerk in the office
 calls the room and the room occupant answers by pressing push. No annunciator required
-with this system. Adapted also for rooming houses where it is not necessary to have a com-
-plete return call annunciator system; pay station exchange telephones can be located on the
+with this system. Adapted also for rooming houses where it is not necessary to have a complete return call annunciator system; pay station exchange telephones can be located on the
 different floors and when guests are wanted they can be called by clerk and by a given signal
 notified that they are wanted on the telephone. A caller can quickly ascertain if a guest be in
 his room. The guest can be called at a given hour, etc.
-
-5,310 Burglar and Fire Alarms
 
 One system consists of colored lights and pull switches operated by a cord
 which can be sterilized or changed.
@@ -13905,43 +10354,17 @@ linen cord connected to the lever of the control switch 1s placed where the
 patient can reach it. A gentle pull on the cord operates the switch and
 lights the signal lamps.
 
-i ile
 end. NAR
 FLOOR.
 ALARM
 
-() setts (2 a
-
-a
-ea
-
 - on 2 a
-domme cenreoB i Hl Ih 4 "|
-
-aetna | | A WA
-
-—— ee te :
-
-hi i (i ip i i i i li '
-
-Mi i it 'i ie i .
-
-\ ee it ie
-Ta i i Ha ;
 
 a nt Hi tell i
 
-ha tits
-
 ### FIRST FIRST
 
-a taee Pt On
-
 ### SECONO SECOND
-
-3 4 eo "o" Figen
-
-— Lelefififp £
 
 Fic. 8,508.—Partrick & Wilkins school house class call and alarm system. Jé consists of a
 P. & W. No. 1 compound push or school button board located in the principal's room.
@@ -13962,8 +10385,7 @@ of that call.
 Burglar and Fire Alarms' —__—_5,311
 
 The pull control switch as shown in figs. 8,502 and 8,503 is a part of the
-calling station located in the wall adjacent to the patient's bed, and 4s oper-
-ated by means of a cord which the patient pulls. When the cord is pulled,
+calling station located in the wall adjacent to the patient's bed, and 4s operated by means of a cord which the patient pulls. When the cord is pulled,
 signal lamps are lighted at various points in the hospital to notify nurses
 and guide them to the patient who has called. These signal lamps remain
 lighted until the nurse visits the patient and cancels the call by raising the
@@ -13976,10 +10398,6 @@ diet kitchens and other desired places. These pilot lights show when a call
 
 (x) S (x) WIRING BOARD
 
-EPP
-
-Lanrmominesiian' Gucieastnsere®
-
 Fic. 8,909.—Partrick & Wilkins low voltage hospital call system with needle annunciator and
 relays. In this system there is located 1n the head nurse's room a master needle annunciator.
 A duplicate of this annunciator can be operated in parallel if so desired. In the patient's
@@ -13990,15 +10408,12 @@ shows indication on annunciators. The lamp over door remains lighted and indicat
 annunciators rémain until the nurse visits the room and presses the button on the wall plate
 push from which point the call has been made.
 
-is registered from any room in a corridor; the light can be seen from an inter-
-secting corridor. A nurse in the intersecting corridor goes to the intersection
+is registered from any room in a corridor; the light can be seen from an intersecting corridor. A nurse in the intersecting corridor goes to the intersection
 of the two corridors and the door lights over the room doors indicate which
 patients are calling.
 
 A soft toned audible signal can also be connected in the
 circuit for night use and disconnected at. will by the nurse..
-
-5,312 Burglar and Fire Alarms
 
 Audible signals may be in the form of a bell or buzzer muffled or lightly
 toned and placed where nurses are apt to be. An annunciator may also be
@@ -14008,67 +10423,29 @@ Fire Alarm Systems.—The fundamental fire alarm system
 consists of.a@ number of signal boxes from each of which the alarm
 bell can be sounded.
 
-SS
-
-\
-onmm e|
-
 ### AERO TUBING
 
 AERO
-iam DETECTOR
-UNITS
+
+### UNITS
 
 AERO We BING
 
-op cmp = om ae a= aw em a= we
-
 aan
-Se ee Se aes een od oo oe os on an a an Sn Ss Dos Ol nw a mw A ew
 
-:
-
-|
-
-a
-
-;
-
-| |
-
-;
-
-g
 = of
-uJ TT
+
 FIC
 | aeeaalaiaialaicianeaie' sain
-a
+
 rai
-aI
-a |
-t 10 :
-5 |t DETECTOR nN
-ale ~ UNITS ¥
-O | 3
+
 Vv. ANNUNCIATOR '
-
-\\
-dy \
-t 4
-
-wey tf irefseifsetskbteritrtergerryeypyedydyyfypyeT hr he Te ee ge eT det
-%
-
-= e
-SEs ea Beam.
 
 UNDERGROUND WIRES TQ A.DT. CENTRAL STAFIO
 
 Fic. 8,510.—Sectional view of building showing layout of Aero fire alarm system, the operation
 being explained in fig. 8,511.
-
-Burglar and Fire Alarms 5,313
 
 A simple system well adapted to a small loft building with three or four
 floors, or to a one story building with considerable floor area, 1s installed by
@@ -14118,8 +10495,6 @@ of the diaphragm closes electrical contacts which operate a transmitter, automat
 the alarm to the fire department. An annunciator indicates the floor or section of the building
 where the fire originated and a local alarm is sounded on gongs.
 
-5,314 Burglar and Fire Alarms
-
 It consists of a toothed wheel rotated by a spring which makes electrical
 contacts in accordance with the number of teeth cut and their spacings.
 These contacts ring a bell, or sound on a telegraph instrument, or record on
@@ -14129,7 +10504,6 @@ call. This constitutes the fire alarm telegraph as used in the large cities.
 General Principles of Fire Alarm System.—There are two
 forms of circuits employed in the various systems:
 
-= Oo) : | a se
 CASE OF z \ . a o a oeg ee
 FIRE £E>> TN
 YY BREAK Gaseo
@@ -14137,13 +10511,7 @@ Gass : FIRE
 | W BREAK
 GLASS
 
-O75 (C1 OSI!
-
-### ANNUNGIATOR
-
 ### WIRING BOARD
-
-asaflae LolelafeLjajajele
 
 Fic. 8,512.—Partrick & Wilkins open circuit fire alarm system with break glass signals and
 vibrating bells. In operation, the breaking of the glass of any of the fire alarm signal boxes
@@ -14153,8 +10521,6 @@ Fic. 8,513.—Partrick & Wilkins open circuit fire alarm system. In operation br
 the glass of any of the fire alarm signal boxes indicates on the annunciator the location of the
 corresponding fire alarm box, and at the same time rings all bells simultaneously until switched
 off at the annunciator.
-
-Burglar and Fire Alarms 5,315
 
 1. Open;
 2. Closed.
@@ -14174,18 +10540,10 @@ ont ( [4 CODE A SS.
 VIBR. CODE
 Ke (| BELL | (ps me st 7) Belt Co )
 
-—~ | » 8 ad) $5. 7
-a z® 2 Be SD iO
-ff
-
-ee @28@ @ @ @weewwrwerew@®e —— -—
-
 | lent
 PANEL - TROUBLE
 
-Male----[0|P pattery 3
-PEN CLOSED [om |
-CIRCUIT CIRCUIT — struct :
+CIRCUIT CIRCUIT — struct
 
 Fic. 8,514.—Edwards' open circuit fire alarm system. In the open circuit system any contact
 made in any box on a floor sets all the bells in operation.
@@ -14203,8 +10561,6 @@ Pre-signal systems are closed circuit systems recommended for hospitals,
 hotels, and places where it is not desirable to sound a general alarm until the
 extent of the fire has been investigated. The operation of any station sounds
 
-5,316 Burglar and Fire Alarms
-
 an alarm in some pre-determined places only, such as the superintendent's
 office or service quarters. If necessary, after investigation, the general
 alarm may be sounded on all bells by anyone holding a key. The key 1s
@@ -14215,8 +10571,7 @@ pre-signal system.
 
 Fic. 8,516.—Edwards' pre-signal closed circuit fire alarm system. This type of system is
 arranged so that the operation of a station does not sound the general alarm, but gives the
-signal in pre-determined places such as the superintendent's office or service quarters, allow-
-ing the fire to be investigated beforehand. If necessary then the general alarm may be
+signal in pre-determined places such as the superintendent's office or service quarters, allowing the fire to be investigated beforehand. If necessary then the general alarm may be
 sounded by those in authority holding a key, which is inserted in any station and the lever
 pulled in the usual way.
 
@@ -14232,17 +10587,9 @@ each individual and may be obtained in 10, 20 or 30 call capacities. The
 master relay is operated by the sending station and the signals are operated
 from the contacts of the master relay.
 
-Burglar and Fire Alarms 5,317
-
 ### IN CASE OF
 
-»
-
 GLASS: |
-
-FARE,
-* , -
-SIG N Al :
 
 Fics. 8,517 to 8,519.—Partrick & Wilkins break glass fire alarm signal boxesf or open circuit,
 with vibrating bells. Fig. 8,517, No. 1 signal, breaking of glass automatically closed circuit.
@@ -14259,8 +10606,6 @@ remote control of motors, heaters and lights where Underwriters' approval is req
 
 Fic. 8,524.—Bunnell fire alarm relay. Works on 25 milli-amperes; 25 ohm winding. This type
 usually called trouble bell relay.
-
-5,318 Burglar and Fire Alarms
 
 Various types of tone signals are used. The selection of these is dependent
 
@@ -14300,23 +10645,19 @@ systems work?
 Which class of fire alarm system is the better?
 
 . Draw a diagram of an open circuit fire alarm system.
-_ Draw a diagram of a closed circuit fire alarm system.
-
-Traffic Signals 5,319
+Draw a diagram of a closed circuit fire alarm system.
 
 Traffic Signals
 
 Owing to the ever increasing number of automobiles, proper
 control of modern city traffic has become necessary for the
-safety of pedestrians and motorists. |
+safety of pedestrians and motorists.
 
 -The movement of traffic 1s controlled by colored electric
 lights on signal units located at street intersections, the signals
 used are |
 
 Green....... eae anes gO
-* Yellow................caution
-PROG to oe ws a ees ee es stop
 
 'The yellow signal is really a "transition" signal which is displayed a few
 seconds between the green and red lights in order to allow the moving traffic
@@ -14337,8 +10678,6 @@ NOTE.—The long transition period inflicted on drivers in some of. the-rural to
 ridiculous and is no doubt due to the dumbness of the officials in trying to make their towns
 appear important-by apeing the traffic practice of the large cities..
 
-5,320 Traffic Signals
-
 1. Intermittent.
 2. Semi-continuous or semi-progressive.
 3. Continuous, or progressive.
@@ -14348,13 +10687,11 @@ requirements.
 
 DOOR
 
-LENS wal ao
 Wr) \ 70 fom So LENS
 COQUARE (rpm ee f 30° ANGLE UNIT
 
 2 PIECE vie air ~a59 ANGLE UNIT
 
-"ge
 a 2 OVERHEAD
 SPAN WIRE—- SPAN WIRE 2 ™ POWER
 AND CHAIN HANGER Gy MAST = FITTING
@@ -14364,16 +10701,16 @@ mee, HOUSING FITTED WITH
 idee OPTICAL LM ___ OPTICAL UNITS
 TE 2- PIECE ay }
 vai STOP LENS
-ROUND ROUND | Gro *"
+ROUND ROUND | Gro
 CONDENSER IY Ih — a= 715° ANGLE UNIT
 
 ### CONDENSER LENS
 
-E
-FITTINGS FOR F H
+### FITTINGS FOR F H
+
 BOTTOM OF — an LENS
 HOUSING C2 :
-BLANK BLANKED
+
 efLL—> a PLATE "SQUARE ROOR
 
 ### PEDESTAL SUPPORTS
@@ -14382,35 +10719,23 @@ efLL—> a PLATE "SQUARE ROOR
 
 SUPPORT ;
 
-### BLANKED
-
 ### ROUND DOOR
 
-YOKE
-SUPPORT
-L
+### SUPPORT
 
 ### IGHT SHIELD
 
-POST. TOP py) |
-
-i SOR
-ADAPTER
+POST. TOP py)
 
 Fics. 8,525 to 8,553.—Parts of General Electric pendant and pedestal signals.
 
-| { | | |
-| | | | | I
-| | ty _
-ae | !
-'iat aia ean Te Na ces eae, ees eee me ee ee Gees ees e a i alia Ma ae ee ee V7 ee
 1-Way Signals | S<
-eee ee cf SN ae ei a ees oe 4-Way Pedestal _ _—}_ 4-Way Pendent ;
-[7] Remote Fire aa | | | | |
+
+[7] Remote Fire aa | | | |
 a Control Switch : | ener 7s sl . | (Cable co) : .
-| Form 51 | | | |
+Form 51 | | |
 ' Control Box
-| Form 57 Multi-conductor(Cable B
+Form 57 Multi-conductor(Cable B
 51 Control Box a aa ) be]
 Multi-conductor aS
 onl (Cable A)
@@ -14428,29 +10753,21 @@ down may affect a portion or all of the signals.
 
 Intermittent Traffic Flow.— With this system traffic along any one avenue alternately
 moves and stops at predetermined intervals. wn
-WwW
+
 Intermittent traffic flow can be obtained by either of the following control systems: i
 
 Specific Intersections
-{ | |
 
-### ZZE'S
+———Cable Between Signals | | |
+i; and Form 26 Control Boxes |
 
-| | i
-|
-———Cable Between Signals | | | :
-| i; and Form 26 Control Boxes | !
-) ke 3 | (Cable C). \ } \
-[aD eum oie =e — Ta a sn PE sc cd cece cee a Gee em =. iis seer "ceseasacls* "tata "acci" 2emeniees' "ieee ia _ Shas eee ema
-: , | 3 SZ
 I-Way Signals , i | x
-ee aa q 4-Way Pedestal 4 Way Pendent
-~ eye ele en ee ew wm ng OOO OT ee ss —_—— (~
+
 Form 26 oe { * (~ (Cable. C) | >
 Control Box 1 | | | | |.
-| | | 1 | | 4
-Form 51 | } Signal Inter-connecting ! | | !
-Control Box Cable B | |
+
+Form 51 | } Signal Inter-connecting ! | |
+Control Box Cable B |
 Local | No Local Local
 51) Manual Control Manual Control Manual Control
 
@@ -14467,8 +10784,6 @@ central point; manual contro! from central point, local manual control of each i
 to 6 wire power cable interconnecting the signals and controller.
 
 2. The synchronous motor control system employing a synchronous motor controller at each intersection.
-
-sjeudiIy oyje1y
 
 The control system to give intermittent traffic flow can be identified by the fact that all signals show
 the same color in the same direction at the same time, and all signals change colors simultaneously
@@ -14494,8 +10809,7 @@ change color simultaneously.
 
 Continuous or Progressive Traffic Flow.—Traffic at a given
 speed, either fixed or variable, or traffic flow through an area
-with a minimum of stops, is the ideal system of traffic move-
-ment.
+with a minimum of stops, is the ideal system of traffic movement.
 
 In order to obtain continuous or progressive traffic flow with
 irregular spacing of intersections and with unequal traffic
@@ -14522,20 +10836,16 @@ depends upon two main factors: 1, efficient traffic signals; 2,
 flexible and durable control apparatus. In the accompanying
 diagrams are shown layouts for the following systems.
 
-T ! a
 Multi-conductor No.14 | | NO)
-ee Gee oy ee yy, ny, Met oe
+
 i . 4-Way Pedestal with
 1-Way Signals Base-board Panel
 (Form 45-46 or 55)—_-"
 t Installed in Base
-SS OY o"" Ee ee Se ee es ee ee ee ~
+
 Remote Fire eee
 
-{ \
-| |
-Control Switch l | |
-|
+Control Switch l |
 
 Form 50 .
 Control Box 30 110 Volt A-c.
@@ -14544,17 +10854,13 @@ Aes Power Supply
 2-Conductor No.14 Cable to\
 Remote Fire Control Switch
 
-Fic. 8,556.—Synchronous control system (non-interconnected). This system requires the installation of a control box with syn-
-chronous timer at each intersection, either automatic or hand and automatic. The timers are set in the field with such relation
+Fic. 8,556.—Synchronous control system (non-interconnected). This system requires the installation of a control box with synchronous timer at each intersection, either automatic or hand and automatic. The timers are set in the field with such relation
 to one another (depending on length of blocks, speed required, etc.) as to provide for progressive flow of traffic. The speed of
-traffic when once set cannot be changed without resetting each timer. Advantages: progessive control of traffic; no cable inter-
-connection; break down in signal apparatus affects but a single intersection; and control system may be easily expanded at any
+traffic when once set cannot be changed without resetting each timer. Advantages: progessive control of traffic; no cable interconnection; break down in signal apparatus affects but a single intersection; and control system may be easily expanded at any
 time. The general scheme permits the setting of the control at each intersection to give the proper proportion of time to main
 and side street movements and also permits the smooth flow of trafac through a given area in both directions at predetermined
 speeds. The control apparatus applicable to this synchronous control system permits control combinations for the various types
-of control boxes. |
-
-co= @ Gui e
+of control boxes.
 
 1. Central control system;
 
@@ -14564,23 +10870,14 @@ co= @ Gui e
 
 Receiving Station Receiving Station Receiving Station
 
-(
-Multi- conductor. No.14 | |
+: (Cable A | |
 
-|
-
-}
-
-| : (Cable A | | :
-pas — } —— oa ahs eet ee yr EN eee eet en Te ATTEN _/ Ni ese
 i-Way Signals La x
 ; (Cable A)
-a aa tl tf Way Pedestal sf 4-Way Pendent _
-\ (
+
 Remote Fire — | | 4 (Cable A)
-Control Switch | | | : |
-|
-| |
+Control Switch | | | :
+
 60. Form 60 Manual and Auto Receiver 60. sis Form 62 Automatic
 - Transmitting Station Receiver
 2 Conductor No.14 Cable to Multi-conductor Cable-(Size Form 59 5g \110 Volt A-c.
@@ -14605,20 +10902,7 @@ show green in the same direction, progressive traffic flow may be approximated.
 
 sjeusis oely
 
-GZES
-
-5,326 'Traffic Signals
-
 Flasher Arm 4
-
-oD
-
-### OF SLL
-
-seit ee
-Sap es
-
-Adege ie
 
 Fic. 8,558.—General Electric induction timer (interior view). This automatic timing device
 operates the lamps in a traffic signal system so as to give red, amber, and green indications.
@@ -14628,25 +10912,15 @@ volts g.c. These contacts control the signal lamps either directly or through re
 being energized in sequence automatically, according to the division of the total cycle as
 determined by adjustments with which the timer is provided.
 
-v;
 Fic. 8,559.—General Electric synchronous: (interior view). This is similar to the standard
-
-a
 
 induction timer except that a synchronous otor drive is used in place of the induction motor
 drive. The motor speed, is, of course, * for a given frequency and therefore the time of
 the complete cycle cannot be readjusted e t by replacement of the driving gears.
 
-Traffic Signals 5,327
-
 2. Supervisory Control System.—This arrangement results
 in the same traffic movement as obtained with the central
 control system.
-
-° So nme : : " Bee
-ER en cnskegseceeuaiaates
-
-Re A ROLE LOLOGO LIER
 
 Fic. 8,560.—General Electric impluse transmitter timer. It is used as a main transmitter at the
 central control point of an impulse control system to perform the following functions; 1, to keep
@@ -14671,14 +10945,10 @@ is advantageous only where fire alarm or police circuits are available.
 
 3. Synchronous Control System.—This system as shown in
 
-fig. 8,556 provides for the progressive flow of traffic at a fixed pre-
-determined rate of speed.
-
-5,328 Traffic Signals
+fig. 8,556 provides for the progressive flow of traffic at a fixed predetermined rate of speed.
 
 It allows the movement of vehicles on the main street to be continuous
-at a fixed speed while the movement on cross streets varies at each inter-
-section according to the main street settings.
+at a fixed speed while the movement on cross streets varies at each intersection according to the main street settings.
 
 Fic. 8,561.—General Electric impulse receiver timer. This is essentially a synchronous motor
 timer with motor element replaced by a double solenoid "walking beam" driving element,
@@ -14692,8 +10962,7 @@ normal.
 
 Fic. 8,562.—General Electric three street timer. In operation the total time cycle is varied
 by changing the motor speed. The right of way time for each street may be adjusted from
-approximately 20 to 50% of time for a complete cycle. A total cycle range of 60 to 120 sec-
-onds may be supplied. The amber period of 5 seconds may be overlap or non-overlap but is
+approximately 20 to 50% of time for a complete cycle. A total cycle range of 60 to 120 seconds may be supplied. The amber period of 5 seconds may be overlap or non-overlap but is
 not adjustable. The current carrying capacity of this timer is 0.5 ampere per circuit at 110
 
 volts. This necessitates the installation of a contactor for each circuit to carry any heavier
@@ -14704,10 +10973,6 @@ Trafic Signals 5,329
 4. Impulse Control System.—This type provides for the
 progressive flow of traffic, but the speed of such flow may be varied
 to meet different traffic densities and weather conditions.
-
-&
-
-pratt OP
 
 Fic. 8,563.—G. E. induction trial type timer. It is of the a.c. disc type motor driven element.
 The operating mechanism consists of two similar units, one controlling the green and green ,
@@ -14720,8 +10985,6 @@ the red, red amber, green, and green amber.
 Fics. 8,564 and 8,565.—General appearance of General Electric impulse boxes. Fig. 8,564,
 transmitter type; fig. 8,565, receiver type.
 
-5,330 Traffic Signals
-
 It allows the movement of vehicles on the main street to be continuous
 throughout, but with different speeds according to conditions.
 
@@ -14730,60 +10993,28 @@ Timers.—There are five types of timers available: -
 1. Induction;
 
 = 2. Synchronous;
-WY 2Yo#xe 1 '
-| 8 se 3. Impulse;
-a. ne}
+
+8 se 3. Impulse;
+
 © ' E a. Transmitter;
 Be £ b. Receiver.
-: Ge
-: s§ 4 4. Three-street;
+
+s§ 4 4. Three-street;
 z 5. Trial type.
 
-e
-
-nal Fus¢s
 ,663531
 
-oO a rere nae eee ne
-
 Cat
-
-sage 5
-[ Tenac snare a 9
-i
-BS } 38
-e Pe 2
-' ht LL. . :
-= i=
-2 ;
-Fe 4%
-
-eg |
-Se
-a
-=
 
 aro
 
 Fic. 8,566.—General Electric control box with fire and auxiliary relays.
 
 ami
-*
 
 Trafic Signals 5,331
 
-The features of these various timers are shown in the accom-
-panying illustrations.
-
-2 g
-%
-mi oe ng
-z LOE Le'
-. whe ples
-es aa "er"
-Di hgghaga | ee '
-; ie 3
-i Be
+The features of these various timers are shown in the accompanying illustrations.
 
 Fic. 8,567.—General Electric jack mounted fire relay. This fire type or remote off relay is
 exactly the same as the standard relay except for a third set of silver contacts which close
@@ -14805,8 +11036,6 @@ traffic flow?
 
 6. Name the different kinds of signal control apparatus.
 
-5,332 Traffic Signals
-
 7. Describe the central control system.
 8. What are the features of a supervisory control system?
 
@@ -14814,8 +11043,6 @@ traffic flow?
 10. Describe the impulse control system.
 
 11. Name the five types of timers.
-
-Sign Flashers 5,333
 
 ## CHAPTER 219
 
@@ -14853,8 +11080,6 @@ be classified as:
 
 CON OD OF SP WD Fe
 
-5,334 Sign Flashers
-
 Brush Flashers.—These machines are provided with a brush
 which bears on a steel cam or contact mounted on a slotted
 
@@ -14875,10 +11100,7 @@ combination flasher.
 
 Simple On and Off Flashers.—These are used for flashing
 whole signs or heavy loads on and off. A flasher of this type
-consists of a brush and contact with reducing gear and con-
-nection to a small motor for operating same.
-
-Sign Flashers 5,335
+consists of a brush and contact with reducing gear and connection to a small motor for operating same.
 
 The machine may have only one switch or any number of switches.
 The connection to motor may be by belt or chain, or the motor may be
@@ -14886,16 +11108,12 @@ directly connected to the worm gear.
 
 High Speed Flashers.—Machines of this type are used for
 giving what is generally known as high speed effects, such as
-fountains, steam, smoke and fire effects, traveling borders, re-
-volving wheels and work of a similar nature.
+fountains, steam, smoke and fire effects, traveling borders, revolving wheels and work of a similar nature.
 
 SPEED .
 ADJUSTMENT. .
 
-~
-
 SOURCE 74
-\
 
 Fic. 8,570.—Leland unit speed flasher wired to sign. It is wired with four circuits with
 a common return. It has an extensive range, operating such arrangements as running or
@@ -14907,25 +11125,16 @@ more than two-thirds of the lamps are turned on at one time, and this
 number for only about one-sixth of the time, as compared with the sign
 burning steadily.
 
-5,336 Sign Flashers
-
 Speller or Script Flashers.—This type of flasher is used for
 large script signs, one socket at a time; that is, each lamp is
 lighted one after another until all are on.
 
 After a few seconds they all go out simultaneously and repeat. This
-gives the appearance of an invisible hand, writing the name in the dark-
-ness, and is very effective. The result can be accomplished only with
+gives the appearance of an invisible hand, writing the name in the darkness, and is very effective. The result can be accomplished only with
 script, and to get the proper effect the smallest letter in a sign should be
 not less than two feet high; the larger the letter, the better the effect.
 
 11 © V eAG.
-
-| ~weenmecce
-| * |
-ESeeeee@emae eee @ ead?
-
-=m ey aD _==_ ee) ams
 
 Fic. 8,571.—Wiring Diagram for Leland junior flasher. One on and off circuit or two alternating
 circuits. Dotted connections not used with single circuit flasher.
@@ -14940,8 +11149,6 @@ breaks the flasher motor circuit. The
 mechanism then returns by gravity
 action to its starting position from
 where the cycle is repeated.
-
-Sign Flashers 5,337
 
 Script Flashers.—This title is given to spelling flashers, and
 is sometimes used because the spelling is done with script
@@ -14962,88 +11169,53 @@ then all off with a brief out period, with operation then repeating; 2, spelling
 until all are on, then all off, then all on together, last all off together with the operation
 then repeating.
 
-5,338 Sign Flashers
-
 Chaser Flashers.—This class of flasher is designed to operate
 signs whose lamps are arranged to give the effect of snakes chasing
 each other around the border.
 
-Fic. 8,575.—Betts & Betts script flasher. This machine is used to produce a smooth, ad-
-vancing flow of light such as is required in writing letters or words one lamp at a time, for
+Fic. 8,575.—Betts & Betts script flasher. This machine is used to produce a smooth, advancing flow of light such as is required in writing letters or words one lamp at a time, for
 rockets, shooting stars, etc.
 
 race 'tracks, polo grounds, baseball parks, automobile racing, hockey, basket ball cai other
-_ sports and games where it is Deceseany to. record scores promptly, legibly} gad automatically.
+sports and games where it is Deceseany to. record scores promptly, legibly} gad automatically.
 
-SORA
-PASSES
-
-REINFORCEMENT 743°
+### PASSES
 
 Fic. 8,577.—Detail of Reynolds brush and holder. The brush is built up with copper leaves
 and has phosphor bronze spring back, reinforced at contact point.
 
-Sign Flashers 5,339
-
-This peculiar effect is produced by having a separate wire and a sep-
-arate switch on the flasher for each two lamps in the border, and the
+This peculiar effect is produced by having a separate wire and a separate switch on the flasher for each two lamps in the border, and the
 mechanism so arranged that when the tenth lamp 1s lighted (assuming the
 snake to be ten feet long) the first lamp goes out; when the eleventh is
 lighted, the second goes out, etc., progressing 1n this way around the
 entire border.
 
-f
-
 In operation, the lamps are turned on and off so rapidly that
 it produces the effect of snakes.
 
-ad,
-wd ae?
-ao cae Fan cx'
-L. ae Werk Be mA, dnt
-be en aye Ao + a
-Ct ie J ; OS
-iin ee Bie, rs Th, " Ye
 are
 
-Ge Mas Ae tee 3 | : -
 Fic. 8,578.—Reynol S magnetic'switch for heavy loads. A magnet switch built specially for
 sign work. "Sometimes it'is more practical as well as more economical to break a number
 of circuits as one and in cases of this kind a magnet switch is used, controlled by a flasher.
 
--
-a? a
-oy ee
-
-' _ 7 5
-i we ees
-, he '
-
-': sy, ail
 lg lk CONTACT BRUSH ADJUSTMENT
-DRUM Ris ee « SCREW |
-ay A.
+DRUM Ris ee « SCREW
+
 ene. ?
-es —} om
-oe ar Wi
-i :
-1. BUMPER
+
 BAR
 STAND
-fr)
 
 Fic. 8,579.—Reynolds brush mechanism showing provision for adjustment. Grounds in signs
 are common especially after a rain and cause an excess of current to flow through the flasher
 brushes. The condition corrects itself with weather conditions, but in the meantime the
 flasher brushes require more frequent attention. A temporary ground can be located with
-a test lamp or magneto, but as a rule the safest way to test for grounds is to apply an am-
-meter. Contacts on speed type flashers should be wiped with an oily cloth while the
+a test lamp or magneto, but as a rule the safest way to test for grounds is to apply an ammeter. Contacts on speed type flashers should be wiped with an oily cloth while the
 contacts on slower running flashers should be run dry. Keeping the contacts smooth and
 
 clean is sufficient. Many make the mistake of keeping the contacts covered with grease or
 oil which causes burning.
-
-5,340 Sign Flashers
 
 It is not advisable to build these signs small nor cheaply, as in order
 to produce the desired effect, the curved path taken by the snake should
@@ -15051,11 +11223,7 @@ cover at least 10 inches width, which would mean a total of 20 inches
 lateral space for the snake 1n addition to the electric letters in the center.
 In order to get the proper effect, the sign should be at least ten feet long.
 
-Chaser signs are expensive because of the care required in their construc-
-tion, large amount of wiring necessary and large flasher required.
-
-c | oe
-' ¥ *,
+Chaser signs are expensive because of the care required in their construction, large amount of wiring necessary and large flasher required.
 
 Fics. 8,580 to 8,582.—Reynolds flasher details. Fastening collector rings (fig. 8,580). Splicer
 plate which acts as a duplex nut, enables the repair man to renew the collector rings quickly
@@ -15072,8 +11240,6 @@ Combination Flashers.—Many of the more complicated signs
 require a combination of flashing effect to attain the highest
 degree of attractiveness and drawing power.
 
-7 Sign Flashers 5,341
-
 The leading manufacturers design their various flasher units so that any
 combination of units may be made with each other with either synchronous
 
@@ -15081,8 +11247,7 @@ operation or varying shaft speeds.
 
 Control or Master Flashers.—When it is desired to darken
 the effects at intervals, master or control brushes are provided
-on the flasher. A border or circle revolving first in one direc-
-tion, then in the reverse, requires four controls, as shown in
+on the flasher. A border or circle revolving first in one direction, then in the reverse, requires four controls, as shown in
 fig. 8,606. To give the standing still effect, four controls are
 
 necessary.
@@ -15093,15 +11258,8 @@ Septet
 
 Fic. 8,583.—Betts & Betts combination flasher showing general construction.
 
-Ne ete berpenee ts eres
-
-= J
-<>
-
 Fic. 8,584.—Reynolds combination flasher consisting of a combination of the following units:
 1, on and off; 2, speller, and 3, script.
-
-5,342
 
 Sign Flashers
 
@@ -15115,47 +11273,20 @@ Thermo-Flashers.—The operation of these flashers is based
 upon the heat expansion principle; that is, the movement of the
 contact points of the flasher necessary to open and close the circutt
 
-} '
 i ses Be
-® ®
-3 |S) BEE
-@ ® oe
+
 bd =I
-® O
+
 fon) ett
-© O a
-- : =)
-| ll Behe
-@ ®@ =I
-® © a
-® , JO
-© ® aa
-m4 : =i
-® @
-| A) Rea
-@ @ aa
-ty
-® © |
-e\ JEN
-2d A Saag :
-@\/O TO
-OY OA A
-=) 2
-au ee
-|
-=z
-= fe
-s[
-: 1 2 3 4 +
-COMMON TO OTHER SIDE
+
+### COMMON TO OTHER SIDE
 
 1s obtained automatically by the
 alternate heating and cooling of
 the metal of the flasher, which
 causes it to expand and contract.
 The principle of a thermo
-flasher is illustrated in the ele-
-mentary diagram fig. 8,586.
+flasher is illustrated in the elementary diagram fig. 8,586.
 
 The device has a tongue consisting
 of two metal strips, one of brass and
@@ -15164,8 +11295,7 @@ provided with a winding of fine wire
 over asbestos, and the two strips are
 connected to the base as shown.
 
-In hook up, the flasher 1s connect-
-ed at L and G, in series with the
+In hook up, the flasher 1s connected at L and G, in series with the
 lamp it is to flash; and D, adjusted
 so that the contact clears the plate
 E about x inch when no current is
@@ -15174,8 +11304,7 @@ flowing in the winding.
 In operation, when the switch is
 turned on there will be a current
 through the lamp and winding in
-series. The brass strip will be heat-
-ed more than the iron and it will
+series. The brass strip will be heated more than the iron and it will
 expand more, thus forcing the point
 of the contact screw D, down upon
 the brass plate, which will result in
@@ -15185,8 +11314,6 @@ being shorted and the full voltage
 Fic. 8,585.—-Reynolds control or master flasher and hook up to sign for darkening the border
 
 effect periodically.
-
-Sign Flashers 5,343
 
 will beimpressed upon the lamp andit will burn at normal candle power. When
 the coilis shorted there will of course be no current in its winding and the brass
@@ -15205,7 +11332,6 @@ Neon tube sign, it is just as essential that it be flashed as that
 a bulb sign be flashed, and the flashing of the Neon tube sign
 
 'BRASS STRIP |
-aD
 
 Fic. 8,586.—Elementary thermo flasher to illustrate principle of operation as explained in the
 text. D, adjustable contact; E, contact plate; H and F, winding terminals; G and L, external
@@ -15217,12 +11343,9 @@ the sign that flashes independently of the other sections must
 be on a separate transformer.
 
 In determining the number of transformers that can be controlled by
-one brush, take the input rating as shown on the name plate of the tran-
-former. This is given in amperes. Any number of transformers may
+one brush, take the input rating as shown on the name plate of the tranformer. This is given in amperes. Any number of transformers may
 be used on a particular brush as long as the total number of amperes is
 not greater than the capacity given for that brush.
-
-5,344 Sign Flashers
 
 To Determine Flasher Capacity for Neon Tube Signs.—
 Consider the transformer volt ampere rating as a rating in
@@ -15233,16 +11356,11 @@ by multiplying the voltage rating by the ampere rating.
 
 SIGN |
 
-WT tet Olt le We ela yt the, Tule Ar
-
-TO
-
 ### CONTACT
 
 Fic. 8,587.—Wiring diagram of Time-O-Stat universal (d.c. or a.c.) thermo-flasher for single
 on and off circuit. Zn operation, when the switch to the sign is turned on, the current
-flows through the Hywatt mercury to mercury contactor which is in the o7 position, heat-
-ing the hot wire element and lighting the sign. Thus, as the hot wire element becomes
+flows through the Hywatt mercury to mercury contactor which is in the o7 position, heating the hot wire element and lighting the sign. Thus, as the hot wire element becomes
 heated, it expands and tilts the contactor through the mechanical connection to the off
 position, cutting out the hot wire element and sign simultaneously. The hot wire element
 then cools and contracts, allowing the contactor to drop back to the on position again,
@@ -15252,11 +11370,8 @@ It is not advisable to multiply the tubing length by a power factor to
 obtain the flasher capacity. This power factor cannot always be the same
 because it varies with the length and size of the tubing.
 
-Radio Interference from Electric Sign Flashers.—This inter-
-ference is of two kinds. One kind of disturbance is caused by
+Radio Interference from Electric Sign Flashers.—This interference is of two kinds. One kind of disturbance is caused by
 oscillations or disturbing impulses set up by the flasher in the
-
-Sign Flashers 5,345
 
 same supply line. The other kind is that picked up by the
 receiving aerial.
@@ -15266,20 +11381,17 @@ connecting the two act as an aerial to radiate the disturbance set up by
 the flasher. Obviously one solution of this type of interference is the
 installation of the flasher as close as possible to the sign.
 
-Z
-oS
 SIGN st
 TO rr p_CIRCUIT 4
-LINE — Ogee es
-SWITCH FUSES Z
-. =
+
+### SWITCH FUSES Z
+
 SNAP
 SWITCH
 TERMINAL"
 PANEL
-ERCURY
-; TO
-CONTACT
+
+### CONTACT
 
 Fic. 8,588.—Wiring diagram of Time-O-Stat thermo-flasher for 2 alternating circuits. A hot
 wire element is mechanically connected so that its expansion and contraction tilts a Hywatt
@@ -15297,20 +11409,15 @@ proceed as follows:
 Disconnect the aerial and ground. If the interference be still audible,
 this indicates that it is coming in over the supply line. If no disturbance
 
-5,346 Sign Flashers
-
 be audible, it would indicate. that disturbance is being picked up by the
 aerial and ground system of the radio set. It may usually be remedied
-by the use of radio eliminators. However, if the disturbance be still au-
-dible, one or more of the following suggestions should be tried:
+by the use of radio eliminators. However, if the disturbance be still audible, one or more of the following suggestions should be tried:
 
 1. Connect condensers from each of the four circuits to ground instead
 of across each of the four circuits of the sign.
 
 Fic. 8,589.—Time-O-Stat rotary speed flasher for 110 volt, 60:cycle a.c. only. Zt is operated
-by means of an induction disc, similar to that used in the watthour meter. A single Hy-
-watt contactor containing all the contacts is given a rotary-motion so as to flash the cir-
-cuits in rotation, producing the standard speed effect. The contacts as in the other types
+by means of an induction disc, similar to that used in the watthour meter. A single Hywatt contactor containing all the contacts is given a rotary-motion so as to flash the circuits in rotation, producing the standard speed effect. The contacts as in the other types
 of this make of flasher are from mercury to mercury.
 
 2. Connect two condensers in series across the main line connection to the
@@ -15321,11 +11428,7 @@ close to the flasher.
 wound on a spool and connect them to each of the flasher circuits. The
 number of turns is variable depending on local conditions. Sometimes
 25 turns are enough and other times 100 turns are required. These of
-course, will be connected right in series with the line to the flasher con-
-tact. Until the exact make up of the coil is determined it is best to dis-
-connect three of the circuits and concentrate on one.
-
-Sign Flashers | 5,347
+course, will be connected right in series with the line to the flasher contact. Until the exact make up of the coil is determined it is best to disconnect three of the circuits and concentrate on one.
 
 4. Connect condensers across the choke coils and the flasher contacts,
 making a sort of tuned circuit. In this case, as in all others, the condenser
@@ -15352,8 +11455,7 @@ Fics. 8,590 to 8,592.—Time-O-Stat mercury to mercury contactor. It consists of
 resisting sleeve mounted rigidly within a soft glass case. Jn operation as it is tilted with
 a clockwise motion to the on position, the mercury flows down the inside sleeve, making
 positive contact with the mercury pool covering the electrode in the case at the point as
-shown in fig. 8,591. When it is tilted back with a counter clockwise motion, to the off posi-
-tion, the mercury in the sleeve and case separate, breaking the contact at the point as
+shown in fig. 8,591. When it is tilted back with a counter clockwise motion, to the off position, the mercury in the sleeve and case separate, breaking the contact at the point as
 shown in fig. 8,592. The mounting material for the sleeve, as shown in fig. 8,591, acts asa
 partition to prevent the mercury making contact between the two electrodes when the
 contactor is in this position.
@@ -15370,8 +11472,6 @@ contactor is in this position.
 
 6. For what service is a speller or script flasher adapted?
 
-5,348 Sign Flashers
-
 7. What is the construction of a script flasher?
 8. How does a chaser flasher work?
 9. What is a combination flasher?
@@ -15385,8 +11485,6 @@ works?
 
 14, What two kinds of radio interference are encountered
 from electric sign flashers?
-
-Sign Flasher Diagrams 5,349
 
 Wiring Diagrams for
 Sign Flashers
@@ -15416,11 +11514,7 @@ a support every 41% feet will not be required as above.
 
 Not over 1,320 watts lamp load should be placed on any circuit.
 
-5,350 Sign Flasher Diagrams
-
 LINE
-
-4 .
 
 ee LINE
 FLASHER BRUSHES
@@ -15428,112 +11522,56 @@ FLASHER BRUSHES
 Fic. 8,593.—The number of sockets must always be a multiple of 4, 6, or 8, otherwise at some
 point a jump will occur.
 
-ii i ne
-ae <5 a pe enancom
-
 Fic. 8,594.—By grouping two lamps as shown, motion appears faster.
 
-L444 SF °°»
-
 Fic. 8,595.—Number sockets 1-2-3-4. Connect all No. 1 to circuit No. 1 and to flasher brush
-No. 1. Nos. 2, 3, and 4 likewise. Keep in mind, that the direction of the numbering de-
-termines the direction of movement of the shadows.
-
-Ce TC Gar Ge ¢  s  e s e eee  G
-es
-
-Ca ae Ga
-on er es CR
-tbo od do G
+No. 1. Nos. 2, 3, and 4 likewise. Keep in mind, that the direction of the numbering determines the direction of movement of the shadows.
 
 Fic. 8,596.—Pulsating, twinkling or shimmering effects are accomplished by transposing
 leads (hooking lead No. 2 to flasher brush No. 4, lead No. 3 to brush No. 1, etc.).
 
-Sign Flasher Diagrams 5,351
-
-Wp ee
-CO} O1O7 COC Ol? O;/O}]O] © ean @
-OFO;lLOo;r ole O91} OO] OO] O O11 C @
-Co ef
-
-Si
-
 Fic. 8,597 .—Borders of irregular ae. or pao ee shape require lamps more closely spaced
 than standard.
 
-eer Se REAR Sd oS ana
-
 Fic. 8,598.—Two motions traveling in opposite directions. Effective when rows are spaced
 more than lamp centers. Borders. Although most borders are made on the style of the
-accompanying illustrations it is not because of the lack of possibility that. more unusual pat-
-terns are not- more popular. Unusual form and variation in color as well as distinctive
+accompanying illustrations it is not because of the lack of possibility that. more unusual patterns are not- more popular. Unusual form and variation in color as well as distinctive
 motions depend largely upon the imagination and ee of the designer.
 
-SS
-
 _— HH eae, Gee
-a A <I SO
-2s ak a. L. Re ee ee
 
 Fic. 8,599.—An arrangement for border and speed effects where a heavy border is necessary or
 
 - where dark colors are used. Many variations and novel effects are possible by special
 arrangement of lamps and connections.
 
-5,352 Sign Flasher Diagrams
-
 O+ | Or} Or] C HH OP
 
-### AANA A RH
-
 Sse eee
-
-bo Ab A GG».
 
 Fic. 8,600.—Simple, yet unusual motion. Outside rows travel to the right while inside row
 travels oppositely. Here again lamp centers should be less than row centers to clarify
 directions of both motions.
 
-ULL
-
-Fics. 8,601 and 8,602.—Fig. 8,601, heavy border of running design. Fig. 8,602 shows travel-
-ing triangular shadow, changing shape continuously.
+Fics. 8,601 and 8,602.—Fig. 8,601, heavy border of running design. Fig. 8,602 shows traveling triangular shadow, changing shape continuously.
 
 WAS
-(4
-©
-&
-O)
-S
-@
-&
 
-@
-@
-UO)
-®
-e
-
-mf
 Bann / 4321
 TO FLASHER
-
-### TO SIG
 
 ### COMMON
 
 Fic. 8,603.—Chaser wiring diagram for cwo snakes.
 Draw a line diagonally through the sign (as shown
 in dotted line) so that one-half the total lamps will
-be on either side. Begin to number from one con-
-secutively from the line. Over the line commence
+be on either side. Begin to number from one consecutively from the line. Over the line commence
 again at 1, and number as before. For three snakes,
 divide total lamps into three parts and number as
 before. In each case, connect all lamps of the
 same number to the same wire whether the sign be
 single or double face. The wire containing all the
-No. 1, lamps goes to the No. 1 switch on the flash-
-er, and the remaining sets are connected similarly.
+No. 1, lamps goes to the No. 1 switch on the flasher, and the remaining sets are connected similarly.
 
 Fic. 8,604.—Dropping coins, juggling clowns, flying
 sparks. 'These and similar effects are wired 1-2-3-4
@@ -15542,52 +11580,29 @@ and is inexpensive, as it takes only a four brush
 flasher. The contacts on the flasher are set so that
 only one brush is in circuit at one time.
 
-5,354 Sign Flasher Diagrams
-
-ia @®® Y® ®@ @
-
-### COYAIO
-
-(3) & ©
-@ (2)
-
 Fic. 8,605.—Wiring for revolving
 wheel. :
 
 RETURN.
 
-QOO0Q0000 00000 0
-J 3} 4) t
-
 Fic. 8,606.—Standard reversing traveling or running border. It travels first to the night,
 then to the left, reversing approximately every three seconds. Requires four brush speed
 flasher with four controls.
 
-Sign Flasher Diagrams 5,355
-
-### NOIS OL
-
 9Sbeedl
 YSHSV 14d OL
 
-### YOLOW
+### COMMON TO ALL
 
-9SbS2 I
-
-| COMMON TO ALL |
 Fic. 8,607.—Expanding and contracting effect (building up and down). Scckets are wired in
 circular circuits. The flasher brushes coming on in successive steps cause the star to ex-
 
 . pand gradually, going out the same way. er
 
-El
-
 ### TO SIGN
 
 Fic. 8,608.—Chromatic or kaleidoscopic effects. These are usually wired in five circuits as
 shown.
-
-5,356 Sign Flasher Diagrams
 
 Fic. 8,609. — Crawling
 or chaser effect. For
@@ -15616,7 +11631,6 @@ two, half as many .§
 brushes are required
 as given above. The
 average border will ac- RETURN:
-commodate two chas- : ; : } |
 
 ers; larger border, three, four or more.
 The length of the chaser is governed by
@@ -15625,8 +11639,7 @@ one third of the total number of brushes.
 
 Fic. 8,610.—Fireworks, rockets,
 roman candles. These and other
-imitations of pyrotechnic dis-
-plays are very attractive. The
+imitations of pyrotechnic displays are very attractive. The
 first circuit at the base of the
 rocket consists of six lamps, the
 next five, etc., and at the curve,
@@ -15637,51 +11650,25 @@ reached. The burst is wired in
 
 45678910 12 4 16 © MOTOR three circuits, and the streamers
 
-c|
 in double rows as shown. This
 ITN diagram gives the general idea
 and it may be expected that
 different designs and ater
 TO SIGN pane . gre
 
-(2345678 910 121416 | number of lamps require modi-
-fications or variations.
+(2345678 910 121416 | number of lamps require modifications or variations.
 
 i COMMON TO ALL
 
-5,397
-
 Sign Flasher Diagrams
-
-"MOI YOR JOJ YSNIq Jsysey e simba1 pue 'uMoys o19y se SMOI
-poiessejs Ul polia ore sde].j 'oa 's}ueuuad 'sey Buraesj—'Z19'Q "OI
-
-é i. YOLOW
 
 Nunta"
 
-*yMIIID YDVo JO} YSnIq
-Joysey & pue J9}}9] YOva JOJ YMdIID & aImMD
--31 S}OIYa Ja[jedS -yeeda1 pue jno [Je '31939303
-UO ][B '3NO [Te 'pazYSt] s1e [][e [[t} JayJoue 39yJe
-19}}9] BUDO "eye Jajjeds prepuej}G— [I[9'Q "Oly
-
 |} ) NOIS OL Gbez
-
-il OOO000
-
-### MOO LY
-
-YO.LOW
-
-NAHSV 14 OL Sbe2t
-
-5,358 Sign Flasher Diagrams
 
 Fic. 8,613.—Lightning effects.
 Each hook or streak is wired in
-one circuit. Four streaks re-
-quire a four brush flasher.
+one circuit. Four streaks require a four brush flasher.
 Either chaser or speed type. If
 lightning be not continuous, but
 is required to synchronize with
@@ -15689,34 +11676,22 @@ reading matter or spectacular
 effect, a control flasher is neces-
 
 sary.
-© ands © ¥ |.
-@ yO | : |
-omic ae ha , / ;
+
 5 oO. e MOTOR = J
-@
-@ @
-oN OO
-4 O- wae Sag Saas
-OE
-@ @ 5 tae :
+
 wee ene sane
 FO~n ay, Fic. 8,614.—Smoke, steam, etc. These
 J ° lage effects are wired in crescent form.
 e oO | The shapes, sizes and lengths being
-© @ ie @ irregular; semi-circles are numbered
+
 ryO 1-2-3-4 in an upward and outward
 . O-O © direction. A speed type flasher is
 OA, yOO~D used for this work.
 TO FLASHER 2 3 4
-3 4
 
 ### TO SIGN
 
-Sign Flasher Diagrams 5,359
-
 ### RETURN
-
-8 10 12 1¢ 16 18 20 22
 
 Fic. 8,615.—Reproducing invisible handwriting effect in script letter signs. Script letters
 are usually wired two sockets to a circuit; thus if the total number of sockets be 100, 50
@@ -15726,32 +11701,23 @@ flashed as one, to save wiring. Letters of large size can be wired 4, 6, 8 or mo
 to a circuit without impairing the effect.
 
 Fic. 8,616.—Traveling borders,
-circles and movements in gen-
-eral. The number of sockets
+circles and movements in general. The number of sockets
 must always be a multiple of
 4, otherwise at some point a
 jump will occur.
 
-5,360 Sign Flasher Diagrams
-
 ### COMMON TO ALL
 
 T@ SIGN
-
-+ |
 
 ### COMMON
 
 Fic. 8,617.—Rays, sunrise. These and similar effects are wired in semi-circular rows. For
 rays wire 1-2-3-4 and use four brush speed type. For sunrise wire in eight circuits and use
 eight brush speller type, provided there be eight circular rows in design. If more or less,
-flasher will require a corresponding number of brushes. :
-
-Refrigeration 5,361
+flasher will require a corresponding number of brushes.
 
 ### REFRIGERATION
-
-5,362
 
 Refrigeration
 
@@ -15767,9 +11733,7 @@ application of pressure produced by compression, using a
 gas compressor for the purpose, then subsequently cooled
 to remove the heat of compression and the latent heat.
 
-The liquid may then be converted to the solid state by re-
-ducing the pressure below its condensing pressure and al-
-lowing same to escape through a control valve into a suitable
+The liquid may then be converted to the solid state by reducing the pressure below its condensing pressure and allowing same to escape through a control valve into a suitable
 container where approximately 75 to 80% forms snow and
 the remainder passes off in the form of low temperature and
 low pressure gas to be recovered and reconverted to the
@@ -15778,19 +11742,13 @@ liquid state.
 The snow thus formed is compressed into dense cakes
 which resembles somewhat a cake of closely packed fine
 snow. As produced for the trade, a cake of dry ice is more
-dense than water ice and its weight per cubic foot is ap-
-proximately twice that of water ice, depending upon the
-pressure used for compressing the snow. Not all commer-
-cial dry ice has the same density.
+dense than water ice and its weight per cubic foot is approximately twice that of water ice, depending upon the
+pressure used for compressing the snow. Not all commercial dry ice has the same density.
 
-There are numerous uses for dry ice: its principal applice-
-tion is in the shipment of ice cream, quick frozen foods of
-various kinds, and for maintaining low temperatures in re-
-frigerators where such commodities are sold as well as for
+There are numerous uses for dry ice: its principal applicetion is in the shipment of ice cream, quick frozen foods of
+various kinds, and for maintaining low temperatures in refrigerators where such commodities are sold as well as for
 refrigerating delivery trucks used for transporting such low
 temperature commodities.—E. Gilbert.
-
-Refrigeration 5,363
 
 Refrigeration
 
@@ -15827,8 +11785,6 @@ and the third,
 
 the heat due to external work of expansion
 
-5,364 Refrigeration
-
 Heat.—By definition heat zs a form of energy known by its
 effects.
 
@@ -15837,14 +11793,12 @@ the expansion, fusion, combustion or evaporation of the matter upon which
 it acts.
 
 ONE LB.OF WATER f4e———q }————-]_ ONE_LB. OF WATER
-NY] Ce | i. 9 AL2@e © FARR
 
 Fics. 8,618 and 8,619.—Experiment illustrating the British thermal unit. Place one pound of
 water at 32° Fahr. into a beaker over a Bunsen burner as in fig. 8,618, assuming no loss of
 heat from the water. It will, according to the definition, require 180 heat units to heat the
 water from 32° to 212° Fahr. asin fig. 8,619. If the transfer of heat take place at a uniform rate
-and it require, say five minutes to heat the water to 212°, then one heat unit will be trans-
-ferred to the water in (5 X60) +180=2 seconds.
+and it require, say five minutes to heat the water to 212°, then one heat unit will be transferred to the water in (5 X60) +180=2 seconds.
 
 #### Ques. What is temperature?
 
@@ -15853,12 +11807,9 @@ a measure of senszble heat.
 
 #### Ques. What is sensible heat?
 
-Ans. That heat which produces a rise of temperature as dis-
-tinguished from latent heat.
+Ans. That heat which produces a rise of temperature as distinguished from latent heat.
 
 #### Ques. What is latent heat?
-
-Refrigeration 5,365
 
 Ans. The quantity of heat required to change the state or
 condition under which a substance exists without changing its
@@ -15873,8 +11824,7 @@ the heat required to raise the temperature of water from 32° to
 212° Fahr.
 
 Transfer of Heat.—When bodies of unequal temperatures
-are placed near each other, heat leaves the hot body and is ab-
-sorbed by the colder body until the temperature of each is
+are placed near each other, heat leaves the hot body and is absorbed by the colder body until the temperature of each is
 equal.
 
 The rate by which the heat is absorbed by the colder body is proportional
@@ -15890,8 +11840,7 @@ air in contact with it and this heat is carried away from the box in the water
 produced by the melting of the ice. The reason for this is that heat always
 seeks the coldest places, that 1s, it moves from the warmer to the colder
 object and when the colder object absorbs and removes this heat, in the
-form of water in the example of the ice box, a cooler temperature is natur-
-ally produced.
+form of water in the example of the ice box, a cooler temperature is naturally produced.
 
 Transfer of Heat.—A transfer of heat takes place by
 
@@ -15899,22 +11848,14 @@ Transfer of Heat.—A transfer of heat takes place by
 2. Conduction;
 3. Convection.
 
-5,366 Refrigeration
-
 Thus, in a boiler, heat is given off from the furnace fire in rays which
 radiate in straight lines in all directions being transferred to the crown and
-sides of the furnace by radiation; it passes through the plates by conduc-
-tion, and is transferred to the water by convection, that is, by currents.
+sides of the furnace by radiation; it passes through the plates by conduction, and is transferred to the water by convection, that is, by currents.
 
 In the case of the ice box relatively warm objects as food transfer their
 heat to the surface of the ice by radiation, also on account of the unequal
 
--_as
 aes.
-
-the Sf eee ee ee le
-ae Y iatit — w
-ntinnia! e IP Tete
 
 a rd =
 
@@ -15935,41 +11876,18 @@ Finally, the heat penetrates the ice by conduction causing it to melt and
 be carried off in the water.
 
 NOTE.—Convection.—In convection, heat is carried from one place or object to another
-by means of some agent such as air or water or any moving gas or liquid. The food in a re-
-frigerator is cooled mostly by convection. The circulating air is the medium used to transfer
+by means of some agent such as air or water or any moving gas or liquid. The food in a refrigerator is cooled mostly by convection. The circulating air is the medium used to transfer
 the heat from the food and compartment walls to the ice.
 
-Refrigeration 5,367
-
-"yl Je STATE |
-
-so -_ we
 wife (on Wren,
-oom LON 1 a
+
 eae SF STATE
-
-'ge RIN 3 Vy
-o 2 Poo
-Ree f, ao
-
-mn %
-
-G
-(ST AS —
-
-ae S
-- a iad io ae sag
-ype om | sony
 
 an? STATE
 
 ### VAPORIZATION
 
 ### LIQUID
-
-(WAT ER)
-
--——
 
 2NO CHANGE.
 OF STATE
@@ -15985,8 +11903,7 @@ accompanying text.
 NOTE .—Conduction.—In conduction, heat is carried by means of molecular vibration
 set up through the substance itself. Heat may be transferred between different parts of the
 same body or between two separate bodies in actual contact by conduction. . All substances
-have, to a greater or less extent, the power of allowing heat to flow through them. This prop-
-erty is called conductivity and a substance that offers little obstruction to the flow of heat is
+have, to a greater or less extent, the power of allowing heat to flow through them. This property is called conductivity and a substance that offers little obstruction to the flow of heat is
 called a good conductor, while a substance which offers great resistance is called a poor con-:
 ductor or an imsulator. When one end of a bar of iron is held in a fire, the other end will soon
 become too hot to hold in the hand. The heat is transferred from one end to the other by
@@ -15996,12 +11913,9 @@ poor conductor, while air is about 40 times better as a conductor.
 
 NOTE.—Radiation.—In radiation, heat energy is transferred from one body to another
 by ether vibrations without the assistance of any material medium. The heat of the sup
-is transferred from the sun to the earth in this way. 7 . ;
+is transferred from the sun to the earth in this way. 7 .
 
-5,368 Refrigeration
-
-The Three States of Matter.—The three forms in which mat-
-ter may exist are known as
+The Three States of Matter.—The three forms in which matter may exist are known as
 
 1. Solid;
 2. Liquid;
@@ -16009,36 +11923,15 @@ ter may exist are known as
 
 ### VACUUM INSIDE
 
-Uy] Ir
-tol ly
-ij
-
 Tins
 
-/
-if
-I
-|.
-
-f
-
-BOILING AND | |
+BOILING AND |
 FREEZING |
-
-ll
-
-LE U{{{7
 
 ### AIR PUMP
 
-TTL ee Hl
-
 Seales
 
-——_ ——
-oo — ———— ED
-
-aT aM A TE Ti
 Fic. 8,624.— Change of state as illustrated by Leslie's experiment showing water freezing as
 it boils. A small pan containing some water is placed over a dish filled with sulphuric acid,
 and the air removed with an air pump. On removal of the air the water evaporates rapidly
@@ -16056,10 +11949,7 @@ states 1s
 
 as shown in fig. 8,623.
 
-Refrigeration 5,369
-
-Change of State.—By sufficiently increasing the tempera-
-ture, solids are converted into liquids, and liquids into vapors.
+Change of State.—By sufficiently increasing the temperature, solids are converted into liquids, and liquids into vapors.
 While either change is taking place the temperature of the mass
 is found to remain constant till the change is completely effected.
 
@@ -16067,8 +11957,6 @@ Thus, if a vessel full of broken ice be placed over a lamp, the ice will
 gradually melt, but the temperature of the whole mass will not alter till the
 
 ### HEAT GOING FROM CYLINDER WALLS TO STEAM
-
-Bis Peep eueei eer — (LATENT HEAT OF RE- ~EVAPORATION)
 
 ### RE-EVAPORATION
 
@@ -16079,46 +11967,29 @@ AY (CHANGE OF STATE}
 ETA
 
 = am am
-Yl EULA lh ey SE
-Y ay) = S WY & \ é, Vein Se q) B eae ag e a) = L3G
-Fh 'onary YY Bo Ne EE re Yj Ye. Sy SP PY
-7 fi y) BS S » 3 y \ Ie 7 LE LRS 4
+
 wae I'D Kg. i ast *, 8 *) z 2 a es
 2 All| 7 a ' : ay HIGH Z JY
-'9 So. tOn os fF
-z/ W a Re is 7 Low ¥ : ste Y s
-Lg 4 Wt ae: Z
-vi af — a] Wig Gy: - L
-Al \ Uy Y Ge No 9
-a Z J g Uj nin gte a
-5) ] J gi
-aY Uy} V Z| |
-Y Y VY Z|
-yy Y Y Z | :
-Yj G Z Ze y
-Y j Z Y no alt Z
 
-~ TEMPERATURE OF CYLINDER WALLS ¢*
+z/ W a Re is 7 Low ¥ : ste Y s
+
+TEMPERATURE OF CYLINDER WALLS ¢*
 
 Fics. 8,625 to 8,627 —Steam engine analogy illustrating cooling by change of state. Let MS
 equal average temperature of cylinder walls. Jn operation, when steam is admitted to the
 cylinder and during a portion of the stroke its temperature is higher than that of the cylinder
 walls. Assume L, to be piston position of equal temperatures. Evidently up to position L,
 condensation will take place. The temperature of the steam being lower than that of the
-cylinder walls while the piston 1s traveling from L, to F, the excess heat will cause the con-
-densate to boil, that 1s, a change of state takes place as it robs the cylinder walls of an amount
+cylinder walls while the piston 1s traveling from L, to F, the excess heat will cause the condensate to boil, that 1s, a change of state takes place as it robs the cylinder walls of an amount
 of heat, corresponding to the latent heat of re-evaporatton.* Similarly in refrigeration, when
 the refrigerant leaves the expansion yalve, a change of state occurs which robs the metal of
 the expansion coils of an amount of heat corresponding to the latent heat of evaporation
 of the refrigerant, thus producing the refrigerating effect.
 
-*NOTE.—Re-evaporation. Numerous students of the steam engine have a wrong concep-
-tion of the effect of re-evaporation. Since re-evaporation increases the area of the indicator
+*NOTE.—Re-evaporation. Numerous students of the steam engine have a wrong conception of the effect of re-evaporation. Since re-evaporation increases the area of the indicator
 card during a portion of the stroke up to pre-release, it represents, considered alone, a gain in
 power. It is the cost of this gain which offsets the economic result. 'Considering the excessive
 amount of condensation it causes, re-evaporation results in a loss in economy.
-
-5,370 Refrigeration
 
 melting is completed. The heat received is employed in changing the state
 of the substance, in converting it from solid ice to liquid water.
@@ -16126,26 +11997,19 @@ of the substance, in converting it from solid ice to liquid water.
 If the supply of heat be still continued, the liquid will rise in temperature
 and ultimately begin to boil. When this point is reached, the temperature
 again remains stationary. The liquid simply passes into vapor, and the
-heat supplied during this process is used up in changing the state of the sub-
-stance from that of liquid to that of vapor.
+heat supplied during this process is used up in changing the state of the substance from that of liquid to that of vapor.
 
-z\ i
-; ia J ety
-
-Fic. 8,628.—Method of judging the heat of a soldering bit or so-called "'iron," illustrating |
+Fic. 8,628.—Method of judging the heat of a soldering bit or so-called "'iron," illustrating
 sensible heat.
 
-Heat and Work.—Heat develops mechanical force, and mo-
-tion, hence it is convertible into mechanical work.
+Heat and Work.—Heat develops mechanical force, and motion, hence it is convertible into mechanical work.
 
 As already explained, heat is measured by the British | 7
 unit (B.i.u.). Work is defined as the overcoming of reststance —
 through a certain distance by the expenditure of energy. Work is.
 measured by a unit called the foot pound. - ss
 
-Refrigeration 5,371
-
-#### Ques. What is a foot pound? !
+#### Ques. What is a foot pound?
 
 Ans. It is the amount of work done in
 raising one pound one foot, or in overcoming
@@ -16165,9 +12029,6 @@ Ans. It was shown by experiments made
 
 ### FRICTION BAND
 
-my
-sy
-
 Fic. 8,629.—Experiment showing relation between heat and work. 'Take a brass oil can,
 attached to a spindle geared to rotate rapidly and partly fill the can with water arid insert a
 cork. Apply a friction band, and rapidly rotate the can by turning the large wheel. The
@@ -16182,8 +12043,6 @@ equivalent.
 .- More recent experiments by Prof. Rowland (1880) and others give
 higher figures; 778 is generally accepted, but 777.5 is probably more nearly
 
-5,372 Refrigeration
-
 correct, the value 777 .52 being used by Marksand Davisin their steam tables.
 The value 778 is sufficiently accurate for ordinary calculations.
 
@@ -16194,20 +12053,10 @@ form. This is popularly known as melting.
 If heat be applied to ice it will gradually melt, but during
 the melting process the temperature will remain unchanged.
 
-©
-
 =a. : pas
 (CORRE OV CPN ILGA CA ITC Ter 1! ST
-m
 
-~~
 Eee
-
-oo"
-
-ga oa
-
-2 ey tS
 
 F 1G. 8,630.—The mechanical equivalent of heat. In 1843, Dr. Joule of Manchester, England,
 performed his classic experiment, which revealed to the world the mechanical equivalent of
@@ -16223,24 +12072,11 @@ equivalent. More recent experiments give higher figures, the value 778, is now g
 used but according to Kent 777.62 is probably more nearly correct. Marks and Davis in
 their steam tables have used the figure 777.52.
 
-ad hod oe
-
-.
-
-——~
-
-—_
-
-de
-"UNM r oo
-
 The heat required to melt the ice is called the latent heat of
 fusion.
 
 It requires 143.57 B.t.u. to melt one pound of ice at 32° Fahr. The value
 given is ordinarily taken at 144 B.t.u.
-
-Refrigeration 5,373
 
 Latent Heat of Evaporation.—By definition the latent heat
 of evaporation of a substance is the amount of heat necessary to
@@ -16252,20 +12088,15 @@ Example. If one pound of water be taken at 212° Fahr. (boiling point)
 and heated, the temperature will remain the same (212°) until it has been
 completely evaporated (or boiled off) into steam. This has been found to
 
-Fe
-
 ! TON |
 2,000 LBS. a <<
 
 wines Malton JAD ages i ae VNU TROD UT!
-ve phil
-el t
 
 Fic. 8,631.—The fusion of ice, illustrating the work done when the pound of ice at 32° Fahr.
 ts melted or converted into water at the same temperature. The latent heat of fusion being
 143.57 heat units, and since one heat unit is equivalent to 778 ft. Ibs. the work done during
-the fusion of one pound of ice is 778 X 143.57 = 111,698 ft. lbs. This is approximately equiv-
-alent to the work done when a hoisting engine hoists 2,000 Ibs. a distance of 55.8 ft. as
+the fusion of one pound of ice is 778 X 143.57 = 111,698 ft. lbs. This is approximately equivalent to the work done when a hoisting engine hoists 2,000 Ibs. a distance of 55.8 ft. as
 shown in the illustration.
 
 require 970 B.t.u. and is known as the latent heat of evaporation for water.
@@ -16277,16 +12108,12 @@ to raise the water one degree in temperature at any temperature between
 The Boiling Point.—By definition the boiling point is the
 temperature at which a liquid boils.
 
-5,374 Refrigeration
-
 The boiling point depends upon
 1. The pressure upon the liquid, and
 2. The liquid.
 
-Water in an open vessel boils at a temperature of 212° F. when the bar-
-ometer reads 30 inches. Now, if the vessel be closed, and the supply of heat
-be continued, the pressure of the steam will gradually rise, and the temper-
-ature of the liquid also; that is to say, the boiling point is elevated above
+Water in an open vessel boils at a temperature of 212° F. when the barometer reads 30 inches. Now, if the vessel be closed, and the supply of heat
+be continued, the pressure of the steam will gradually rise, and the temperature of the liquid also; that is to say, the boiling point is elevated above
 
 NON-CONDUCTING VESSEL 9,/ BS, OF WATER
 
@@ -16303,8 +12130,7 @@ melted by the transfer of heat from the water to the ice the temperature of the 
 8,634) of melted ice and the water will be the same as the original temperature of the ice, 32°.
 The reason for this is because the total heat above 32 °in the water at 104° was the same as
 the latent heat of the ice, or 144 heat units, that is to say, the total heat above 32° in the
-water was (104 — 32)2=144 heat units. Jt should be understood that the term non-con-
-ducting vessel implies one which allows no heat to pass through its sides. Such a vessel is not
+water was (104 — 32)2=144 heat units. Jt should be understood that the term non-conducting vessel implies one which allows no heat to pass through its sides. Such a vessel is not
 possible to construct, but by covering an ordinary vessel all over with a thick layer of asbestos
 very little heat will be lost.
 
@@ -16317,69 +12143,43 @@ that particular pressure.
 The popular idea is that a liquid must be hot to boil. This
 is a wrong conception.
 
-Refrigeration 5,375
-
 Water, for instance, in a 28 in. vacuum will boil at 100° Fahr.; if the
 vacuum be increased to 29.74 in. it will boil at 32°, the temperature at
 
 which it would freeze at atmospheric pressure.
 
-ae ~. wa <
 4 a At) : Ca: a
-$
 
-_ ie ae —
 wee WHITE CLOUD
-AS AF ee . Ae
-Spe 2 orn en.
-: 2) $
-
-a xy)
-"Nz.
 
 ### WET STEAM
 
-ap te .
-
-Woe 'y oy, andl 4 ee er ee A) ae Ty.
-
-"sr es = » ia . . * "¢ we ¢ ' aN Ve .
-
-aad WALT LP '= Act of eo: Sea et te 2 ad ;
-F &. * ; br) Be a*: . Lae. ™ "8 om if . © . }
 f. TRale . ea tee : " we x
 
-td : ° : aU " y
-ep ; £5 550: CA Ae <. rf . aod . a Bae, - A = Gi :
-wy a a P 33 = i ae * ee: be « ise . i= SA a LAT F » 'ay*)
-CAINS ERE SORT RY STEAM
+### CAINS ERE SORT RY STEAM
+
 CONDENSATION ON Gah DUR oy AGING
-IDOE. 'els V ete ey = tae ' uy b.7 ee '~ ie eee Ne
+
 = Ore 7 wah DULRFACE
 
-Dp SON F cox OM et >, 7
 EXPLOSION O' oan REE VAPORIZATION
-"| STEAM Be BBLES
+STEAM Be BBLES
 
-| | a cae ATMOSPHERIC *
+| a cae ATMOSPHERIC
 HEATED CLNTRAL a, : er] PRESSURE
-PORTION o> - . : < : te
+
 a ar Sie COLLAPSE OF
 COOL OUTER 2 nes se | GLOBULE
 PORTION - an le (CONDENSATION
-| a - " S WPLE T-Ly
+a - " S WPLE T-Ly
 ZRPANSION OF THE [oo | mee
 STEAM GLOBULES [0 "| CONDENSATION
-' . 7 2¥: a Se i DA |
-SLOBULE LASENGAG- {EXPANSION
+
 ING FROM HEATING f° 0 | | J CHANGE OF STATE
 SVIRFACE GNITIAL : Bah ae nae a
 
-_
+### GRE PLUS PRESSURE
 
-DISENGAGE WENT) ATMOSPHERIC PRESS-
-
-| GRE PLUS PRESSURE
 eet te TARE ont DUE TO THE HEAD CF
 HEATING SURFACE i" THE WATER.
 
@@ -16389,40 +12189,28 @@ Fic. 8,635.—Vaporization or the process of boiling as illustrated by the boili
 
 Again, different liquids have different boiling points.
 
-For instance, methyl chloride boils at 11° below zero Fahr. at atmos-
-pheric pressure. This means that in an open vessel and not under pressure
+For instance, methyl chloride boils at 11° below zero Fahr. at atmospheric pressure. This means that in an open vessel and not under pressure
 (other than normal atmospheric pressure) methyl chloride would rapidly
 evaporate into the air at a temperature of 11° below zero just as a pan of
 water placed on a hot stove will boil at 212°.
-
-9,376 Refrigeration
 
 Fics. 8,636 and 8,637.—The boiling point. The temperature at which a liquid boils depends
 upon the pressure. Thus, at atmospheric pressure, as in fig. 8,636, water boils at 212° Fahr.
 but under say a 17.7 inch vacuum (at 6 lbs., absolute pressure) it boils at 170.1°.
 
-Fics. 8,638 to 8,640.—Experiment illustrating the latent heat of evaporation or the constd-
-erable amount of heat which must be added to a liquid at tts boiling point to convert tt tnto vapor
+Fics. 8,638 to 8,640.—Experiment illustrating the latent heat of evaporation or the constderable amount of heat which must be added to a liquid at tts boiling point to convert tt tnto vapor
 at the same temperature. Taking water for illustration, suppose the glass vessel to contain
 one pound of water at 32° Fahr., and heat be transferred to it, as indicated by the Bunsen
 burner, at such rate that its temperature is raised to the boiling point 212° in five minutes.
 In this time the water has received 212 — 32=180 heat units. Now, if the heat supply be
 
-Refrigeration 9,377
-
 : Ses ~
-"a as lip / Ny: Z A oe
-Ss SSN SE Majlis y '
 
 ### COOLING
 
 ### RE EVAPORATION
 
 VACUUM 6AUGE
-
-coe oS
-
-—
 
 | (ioe
 
@@ -16443,8 +12231,7 @@ Fics. 8,638 to 8,640.—Text continued.
 
 continued at the same rate, it will require (since the latent heat of steam at atmospheric
 pressure is 970.4 heat units) 970.4 +180=5.39 times as long, or 5.39 X5=26.95 minutes to
-convert the pound of water at 212° (fig. 8,639) into steam at the same temperature as indi-
-cated by the empty beaker in fig. 8,640. That is to say, tt takes over five times as much heat
+convert the pound of water at 212° (fig. 8,639) into steam at the same temperature as indicated by the empty beaker in fig. 8,640. That is to say, tt takes over five times as much heat
 to convert water at 212° into steam at the same temperature as tt does to raise the same amount
 of water from the freezing point 32° to 212°. In the well remembered naphtha launch and
 alco-vapor launch, naphtha and alcohol were used respectively in the boilers in the place of
@@ -16459,11 +12246,9 @@ PUMP
 j TOP OPEN
 : TO ATMOSPHERE
 
-29.74 IN
-VACUUM
+### VACUUM
 
 14.7 LBS.
-AB
 
 80.3 LBS.
 
@@ -16472,7 +12257,6 @@ Fics. 8,642 to 8,645.—Variation of the boiling point with change of pressure. 
 29.74 in. 14.7 lbs. 80.3 Ibs.
 vacuum absolute gauge
 the water will boil at a temperature (Fahr.) of
-32. 212° 324.1°
 
 Highly different values are obtained for other liquids.
 
@@ -16483,8 +12267,6 @@ liquids just mentioned than with water, because of their relative low latent hea
 585.3 Ibs.
 gauge
 
-486.6 °
-
 For instance, for alcohol the
 
 latent heat is 363.3 heat units or only a little over one-third of that of water. From experiments made by the Gas Engine and
@@ -16493,36 +12275,24 @@ water and naphtha, that is, the same quantity of heat was turned into nearly twi
 vapor as by the expansion of steam under the same conditions. Some of the results obtained during the tests were: J, with
 steam, mean pressure 37.99 lbs., 7.p.m., 312.6; 2, with naphtha, mean pressure 55.8, 7.p.m., 552.2.
 
-8LE's
-
-UOeIIDIIJIN
-
-Refrigeration 5,379
-
 The important fact to know is that 2" vaporizing or boiling,
 . the heat surrounding the vessel is carried away by the gas or vapor
 'which is formed.
 
 If the vessel of methyl chloride were placed in an ice box and means were
-provided for carrying the gas away, the liquid would continue to boil (draw-
-ing heat from the interior of the box) until the liquid was exhausted or
+provided for carrying the gas away, the liquid would continue to boil (drawing heat from the interior of the box) until the liquid was exhausted or
 
 ### CIRCULATING
 
 , COOLING
-os = iL SURFACE
 
 ### CONDENSER
 
-~ Pee
-we ed
 OS OF ay a oo a ie Ot ram
-a a ap
 
 Fic. 8,646.—Experiment illustrating condensation. If water for instance be boiled in a flask
 A, and the steam thus produced led off through pipe C, having a coiled section surrounded by
-cold water, it will here be cooled below the boiling point and will therefore condense, the con-
-densate passing out into the receptacle B, as water. The cooling or "'circulating'' water enters
+cold water, it will here be cooled below the boiling point and will therefore condense, the condensate passing out into the receptacle B, as water. The cooling or "'circulating'' water enters
 the condenser at the lowest point D, and leaving at the highest point E.
 
 until, if the box were perfectly insulated, the temperature of the surrounding
@@ -16531,25 +12301,18 @@ air was 11° below.
 The following are the approximate boiling points, Fahr., at
 atmospheric pressure of various liquids used as refrigerants.
 
-5,380 Refrigeration
-
 Ethyl Methyl Carbonicacid Sulphur Sulphuric
 Ammonia chloride chloride (carbon dioxide) dioxide ether
 
-—28 +55 —I11 —110 +14 +94.1
-
 Condensation.—By definition condensation is the change of
 state of a substance from the gaseous to the liquid form. It
-is caused by a reduction of temperature below that correspond-
-ing to the boiling point.
+is caused by a reduction of temperature below that corresponding to the boiling point.
 
 The boiling point as has been explained cepenes on the liquid and the
 pressure to which 1t ts subjected.
 
 Refrigerants.—The word refrigerant means a heat transfer
-medium, that is, a substance which removes heat from an en-
-closed space or substances to be cooled. The refrigerants com-
-monly used are .
+medium, that is, a substance which removes heat from an enclosed space or substances to be cooled. The refrigerants commonly used are .
 
 1. Ammonia; 5. Sulphur dioxide;
 2. Ethyl chloride; 6. Sulphuric ether;
@@ -16557,22 +12320,17 @@ monly used are .
 
 4. Carbonic acid (carbon dioxide); 8. Water.
 
-A refrigerant to be suitable for domestic or commercial re-
-frigeration should possess the following properties:
+A refrigerant to be suitable for domestic or commercial refrigeration should possess the following properties:
 
 1. High latent heat; 6. Non-corrosive on metals;
-2. Low boiling point; 7. Non-injurious and non-offen-
-3. Low condensing point; sive odor;
-4, Non-inflammable; 8. Easily detected in small quan-
-5. Non-explosive; tities;
+2. Low boiling point; 7. Non-injurious and non-offen3. Low condensing point; sive odor;
+4, Non-inflammable; 8. Easily detected in small quan5. Non-explosive; tities;
 
 9. Low cost.
 
 Adaptation of Refrigerants.—Each of the various refrigerants
 just mentioned is, on account of its characteristics, adapted to
 some particular service as follows:
-
-Refrigeration 5,381
 
 Ammonia.—More than 90% of the large commercial refrigerating plants
 use this refrigerant. 'It is not suitable, however, for use in the types of small
@@ -16585,14 +12343,11 @@ Ethyl chloride.—This is well adapted to household refrigerators. More
 than 75% of these refrigerators use ethy! chloride.
 
 Methyl chloride.—Being non-explosive, non-inflammable and having
-a low toxic hazard methyl] chloride is especially adapted to household ma-
-chines. Methyl] chloride can be breathed with no serious effects for an hour
+a low toxic hazard methyl] chloride is especially adapted to household machines. Methyl] chloride can be breathed with no serious effects for an hour
 in concentrations two-thirds as great as those of carbon dioxide, which gas:
 is thrown off from the lungs during respiration.
 
-Carbonic acid.—On account of safety, in case of accident or fire, car-
-bonic acid is extensively used in marine practice. Used in Europe for house-
-hold machines and in the United States for cooling theatres and public
+Carbonic acid.—On account of safety, in case of accident or fire, carbonic acid is extensively used in marine practice. Used in Europe for household machines and in the United States for cooling theatres and public
 buildings.
 
 Carbonic acid is also used to a considerable extent abroad, partly because:
@@ -16610,19 +12365,13 @@ machine and it is in use extensively for household and small plants where
 the service of a skilled engineer is not practicable.
 
 The main objection to its use is the great tendency of sulphurous acid to:
-take up moisture and change to sulphuric acid, consequently great precau-
-tions must be taken to avoid leaky joints.
+take up moisture and change to sulphuric acid, consequently great precautions must be taken to avoid leaky joints.
 
 A disadvantage is that a compressor of nearly three times the capacity of
-an ammonia compressor is required. Sulphur dioxide even in small concen-
-trations in air, is very unpleasant to breathe, but it is not considered poison-
-ous because its very presence is so suffocating that one will immediately
+an ammonia compressor is required. Sulphur dioxide even in small concentrations in air, is very unpleasant to breathe, but it is not considered poisonous because its very presence is so suffocating that one will immediately
 seek fresh air.
 
-Sulphuric ether.—On account of the relatively large compressor neces-
-sary and more especially the inflammability of ether and the great liability
-
-5,382 Refrigeration
+Sulphuric ether.—On account of the relatively large compressor necessary and more especially the inflammability of ether and the great liability
 
 to explosion, sulphuric ether (usually called just "'ether'') has not come into
 extensive use.
@@ -16652,8 +12401,7 @@ downward into the coil in the cistern, which would gradually collect a thicker a
 coating of ice. On warm days, the brine in the radiator would belighter than the brine in the
 cistern coil and there would be no tendency to circulate. Thus, during the winter each cold
 day would add to the layer of ice being gradually stored in the cistern. In the summer, a
-motor operated brine pump could be used to circulate the brine from the cistern to the refrig-
-erator box, and the heat abstracted from the box would be absorbed by the gradual melting
+motor operated brine pump could be used to circulate the brine from the cistern to the refrigerator box, and the heat abstracted from the box would be absorbed by the gradual melting
 of the accumulation of ice in the cistern.
 
 the simplicity of the working parts. Another important fact in connection
@@ -16662,25 +12410,18 @@ conditions of temperature and pressure, it can be drawn out of the plant at
 any time and stored in drums, thus making this type of machine easily and
 quickly portable.
 
-Refrigeration 5,383
-
-Properties of Refrigerants.—On account of the fact that dif-
-ferent refrigerants have different physical characteristics or
+Properties of Refrigerants.—On account of the fact that different refrigerants have different physical characteristics or
 '"'properties"' the selection of the type of machine to use and the
 design will depend largely on the properties of the refrigerant.
 
-The cylinder displacement of the compressor will depend on the refriger-
-ant. Those refrigerants which have high refrigerating effects with cor-
-responding low specific volumes of vapor, will require the minimum cylinder
-displacements, while those which have low refrigerating effects, and cor-
-respondingly large specific volumes of vapor, will require the maximum
+The cylinder displacement of the compressor will depend on the refrigerant. Those refrigerants which have high refrigerating effects with corresponding low specific volumes of vapor, will require the minimum cylinder
+displacements, while those which have low refrigerating effects, and correspondingly large specific volumes of vapor, will require the maximum
 cylinder displacements.
 
 The properties of the various refrigerants are here given as
 an aid to selection and design.
 
-Classification of Refrigeration Systems.—The numerous sys-
-tems of refrigeration may be classified according to several
+Classification of Refrigeration Systems.—The numerous systems of refrigeration may be classified according to several
 points of view as:
 
 1. With respect to the refrigerant as:
@@ -16696,8 +12437,6 @@ points of view as:
 
 Ether.
 
-> FS UA SA
-
 2. With respect to the working of the heat absorbing medium
 or cooling agent as:
 
@@ -16707,18 +12446,13 @@ a. Compression ire
 b. Absorption
 
 3. With respect to the manner of applying the refrigeration
-as: :
-
-5,384 Refrigeration
 
 . Direct expansion;
 
 . So called indirect expansion or brine circulating;
 Semi-indirect expansion or brine congealing;
 
-. Cold air; |
-
-eo anaes
+. Cold air;
 
 . Pipe line.
 
@@ -16749,8 +12483,7 @@ Refrigeration 5,385.
 
 under pressure and its revaporization will take place at a lower
 
-Under these conditions the revaporization will take place at a lower tem-
-perature than the condensation and heat will be extracted from surrounding
+Under these conditions the revaporization will take place at a lower temperature than the condensation and heat will be extracted from surrounding
 objects. »
 
 The object of compressing the vapor of the refrigerant is to
@@ -16758,37 +12491,21 @@ raise zis boiling point.
 
 Lon is eS ae Pe 7 ers, See A TS
 
-: ~—— SUCTION LINE TO COMPRESSOR
+~—— SUCTION LINE TO COMPRESSOR
 "¥) AMMONIA VAPOR FROM EXPANSION COILS
-
-os
-
-st
-as
-a
 
 wiih
 
 ### TO CONDENSER
 
-111A a wT
-"1 |
-
 Fic. 8,649.—How an ammonia compression system works, 1. : The compressor pumps
 the ammonia vapor from the expanston coils into the recezver compressing it to about 150 Ibs.
 
-Se
-
 Similarly, the reason for expanding the refrigerant is that
 when the pressure 1s reduced, the temperature of the boiling point
-1s also lowered. |
+1s also lowered.
 
-'
-
-5,386 Refrigeration
-
-The reduction of pressure on the refrigerant causes 1t to va-
-porize.
+The reduction of pressure on the refrigerant causes 1t to vaporize.
 
 In order to do so it must be supplied with a certain amount of heat known
 as its latent heat of vaporization or simply latent heat. This heat 1s absorbed
@@ -16807,23 +12524,15 @@ The compression system cycle is briefly as follows:
 FROM.
 WATER SUPPLY
 
-st ev
-a Se SBR ty,
-
 HOT
 
-TO
-EXPANSION
+### EXPANSION
+
 VALVE.
-
-te
-
-— te eee ee +
 
 heen CONDENSER
 
-Fic. 8,650.—How an ammonia compression system works, 2. The ammonia vapor com-
-pressed to 150 lbs. passes from the receiver to: the condenser which being cooled by a continu-
+Fic. 8,650.—How an ammonia compression system works, 2. The ammonia vapor compressed to 150 lbs. passes from the receiver to: the condenser which being cooled by a continu-
 
 ous supply of cooling water causes the ammonia to condense, the liquid falling to the lower
 part of the condenser.
@@ -16832,27 +12541,19 @@ Refrigerant subjected to maximum pressure.
 
 2. Condensation
 
-Refrigerant cooled and liquefied under pressure. |
+Refrigerant cooled and liquefied under pressure.
 
 3. Expansion
-
-Refrigeration 5,387
 
 Pressure greatly reduced causing vaporization and absorption of heat
 producing the ''refrigeration effect."
 
 Ammonia Compression System.—In this system anhydrous
-ammonia (ammonia containing no water) zs used as the re-
-frigerant.
-
-~~
+ammonia (ammonia containing no water) zs used as the refrigerant.
 
 TO COMPRESSOR ——— 2 )
 
 FROM RECEIVER ( (Cc cL be
-
-| ; % | ° 3 a
-AA A RAH Bp EXPANSION ) ))
 
 "COILS |
 
@@ -16862,28 +12563,24 @@ AA A RAH Bp EXPANSION ) ))
 
 ### COLD CONDENSER
 
-Sd
-LATENT HEAT SUPPLIED BY
+### LATENT HEAT SUPPLIED BY
+
 . ae ae CONDUCTION THROUGH METAL
 7 | OF COILS.
 
 Fic. 8,651.—How an ammonia compression system works, 3. Liquid ammonia at 150
 lbs. pressure passes from the condenser through the very small outlet of the expansion valve
 into the expansion coils. The liquid ammonia thusinjected into the expansion coils ''flashes''
-into vapor because the pressure in the expansion coils is much less than in the condenser. Dur-
-ing the change of state (liquid to gas) the temperature of the ammonia is greatly reduced thus
+into vapor because the pressure in the expansion coils is much less than in the condenser. During the change of state (liquid to gas) the temperature of the ammonia is greatly reduced thus
 giving the refrigerating effect. In passing through the expansion coils the vapor absorbs
 heat which it receives by conduction through the metal of the coils thus cooling the space
-surrounding the coils. Due to the operation of the compressor there is a continuous circula-
-tion of vapor through the expansion coils.
+surrounding the coils. Due to the operation of the compressor there is a continuous circulation of vapor through the expansion coils.
 
 At atmospheric pressure and ordinary temperatures, anhydrous ammonia
 isagas. Its adaptability to mechanical refrigeration is due to its high latent
-heat (heat absorbing quality) and also to the relatively low pressures re-
-quired for liquefaction after having been evaporated and compressed.
+heat (heat absorbing quality) and also to the relatively low pressures required for liquefaction after having been evaporated and compressed.
 
-Another factor favoring the use of anhydrous ammonia is its non-cor-
-rosive effect on ferrous metals.
+Another factor favoring the use of anhydrous ammonia is its non-corrosive effect on ferrous metals.
 
 ### SUCTION LINE TO COMPRESSOR
 
@@ -16893,23 +12590,12 @@ FROM é.
 WATER SUPPLY
 
 oN eae
-st Pa
+
 Mitt
-
-i
-
-1100 0 th
-
-oe TEA )
-i" ie N iy )
-
-ste i
 
 rectal (Coons
 
 "LIQUID "AMMONIA
-
-RECFIVER ~ -> CONDENSER -
 
 eee es
 
@@ -16925,9 +12611,7 @@ through a special valve (known as the expansion valve) to the ss cat piping.
 
 EXPAN s 10 ON y
 
-UQUi: AMMONIA ane er
 AT EXIT OF EXPANSION VALVE}?
-cori =i
 
 ### EXPANSION LATENT HEAT SUPPLIED BY
 
@@ -16936,19 +12620,11 @@ COMPRESSOR _— OF COILS.
 
 Fic. 8,652.—_How an ammonia compression system works; 5. Assembly of figs. 8,649 to 8,651 showing operation and
 
-S8E"S
-
-### UOIBIISIIJON
-
-Refri geration 5,389
-
 ### LATENT HEAT SUPPLIED BY
 
 ### CONDUCTION THROUGH
 
 (METAL OF COIL
-
-Btu. ,.'
 
 ### LIQUID AMMONIA
 
@@ -16957,11 +12633,7 @@ ISO LBS. PRESSURE
 HIGH |
 PRESSURE.
 
-|--
-
 ### LOW PRESSURE
-
-ie
 
 ### HANGE OF STATE
 
@@ -16991,37 +12663,7 @@ wale
 
 ### WIRE DRAWING
 
-a
-
-SMM Vi wT
-SSS
-
-Bt
-
-:
-i
-HOTS Da ee
 Ni) 0 Rae eee
-a! ,
-i ' : ir
-' 1
-t
-
-|
-\
-f
-i]
-:
-:
-'
-|
-
-HSS
-4 ad
-
-(a :
-$ GE NS 77; BLISS NOUR te =
-> : .
 
 Fics. 8,654 and 8,655.— Steam engine analogy illustrating effect of the expanston valve. The
 familiar '"D'' slide valve has an inherent defect of traveling slowly at and near the point of
@@ -17031,8 +12673,6 @@ chamber as indicated in fig. 8,654. Similarly, the refrigeration system expansio
 draws or chokes the supply of ammonia (steam) from the receiver (valve chamber) to the
 expansion coil (cylinder) thus causing a drop of pressure as the ammonia (steam) enters the
 expansion coil (cylinder).
-
-5,390 | Refrigeration
 
 The vaporization and expansion of the gas takes place inside
 the cooling pipes or coils and the absorbed heat is extracted
@@ -17066,81 +12706,54 @@ of the ammonia.
 
 The vaporized ammonia having absorbed its maximum amount of heat
 during its passage through the coils in the cold storage rooms, is drawn
-through a connecting pipe to the compressor. The function of the com-
-pressor is to circulate and apply pressure to the vaporized ammonia, com-
+through a connecting pipe to the compressor. The function of the compressor is to circulate and apply pressure to the vaporized ammonia, com-
 
 pressing and pumping it through the condenser through which water is also
 circulated.
 
-Refrigeration 5,391
-
 Here it is condensed and drains to a receiving tank, when it 1s again ready
-to repeat its cycle. As the ammonia passes through the water cooled con-
-denser, the heat extracted from the cold storage room, and generated during
+to repeat its cycle. As the ammonia passes through the water cooled condenser, the heat extracted from the cold storage room, and generated during
 
 compression, is absorbed by the circulating water which flows through the
 condenser tubes.
 
-|
-:
-
-1 Ps |
-
 327.8°
 50 LBS.
 
-ATL
-Nt as ar:
-
-|
-
 Fics. 8,658 and 8,659.—Steam engine analogy illustrating cooling due to expansion. As the
 piston moves from the point of cut off L, to the point F, the pressure falls as the steam expands
-as indicated by the card (fig. 8,658). During the expansion (L to F) heat in the steam is con-
-verted into work by the piston, the temperature falling as shown in fig. 8,659, which results
+as indicated by the card (fig. 8,658). During the expansion (L to F) heat in the steam is converted into work by the piston, the temperature falling as shown in fig. 8,659, which results
 in cooling the cylinder walls. Similarly, 1n the dense air type refrigerating machine the
 "'expander'' is similar to the familiar cut off steam engine. The expansion of the air lowers
 
 its temperature and cools the refrigerating pipes in the same way that expanded steam
 cools the cylinder walls.
 
-The extraction of heat in the cold storage room may be accom-
-plished either by
+The extraction of heat in the cold storage room may be accomplished either by
 
 1. Direct expansion method.
 2. Brine circulation method.
-
-5,392 Refrigeration
 
 In the direct expansion method the coils, in which the expansion of the
 refrigerant takes place, are placed in the room with the materials to be
 cooled as shown in fig. 8,660.
 
-{WATER OUTLET ~ ~~
+{WATER OUTLET ~
 
 CONDENSER _ EXPANSION VALVE E
 
 a=
 b 3} REFRIGERATOR
-| (OS)
-
-X
-
-(or) (cy)
-
-re)
 
 reo]
-fo)
-ro) >
+
 - ° ) OIL
 WATER 5 SEPARATOR
 INLET 0 9 =
 . °1 {COMPRESSOR f
-° ° ;
+
 AMMONIA ° o|
 RECEIVER : °
-ees ee
 
 Fic. 8,660—Ammonia compression system; 1, direct expansion method. In operation,
 liquid ammonia stored in receiver R, passes through expansion valve X, into coils or piping
@@ -17152,26 +12765,10 @@ by water circulation, the ammonia is condensed and drains in liquid form to rece
 
 CONDENSER -— <——
 Te WATER OUTLET
-)
 
-rt
-
-: LP WATER INLET
-W ft EXPANSION VALVE™
-
-it
-
-_/
-
-r ) ° 5. 8 °
-
-° 6 ° © o
-
-re) re) . -] o o
+### LP WATER INLET
 
 AMMONIA aes Ses
-
-RECEIVER Sg e io ce
 
 Rr, 7, eas ee
 | eeaenemnee |
@@ -17181,8 +12778,6 @@ ammonia is expanded through piping submerged in a brine tank, or through a speci
 or evaporator. The brine, after being reduced to a low temperature, is pumped through
 piping placed in the compartments to be chilled. C, compressor; E., refrigerator; R, receiver;
 S, oi! separator; T, brine tank; W, condenser; X, expansion valve.
-
-Refrigeration 5,393
 
 In the brine circulation method, the brine temperature is reduced by
 ammonia expansion coils placed in a tank filled with brine, or, where very
@@ -17216,16 +12811,14 @@ the solution causes the ice to melt at a low temperature, and absorbs the heat
 which enters through the refrigerator walls.
 
 In rooms where it is necessary to place the coils and tanks on the side
-walls, the tanks are flat; center flue tanks are used in rooms where the cool-
-ing chamber is overhead. These center flue tanks are built in various sizes
+walls, the tanks are flat; center flue tanks are used in rooms where the cooling chamber is overhead. These center flue tanks are built in various sizes
 and are designed to give the maximum amount of cooling surface without
 having a great mass of inefficient or inactive brine.
 
 In the brine system, the refrigerant absorbs the heat that the
 brine absorbs from the materials to be cooled.
 
-This is an indirect system and obviously it is not necessary for the ex-
-pansion coils to 'be in the cold storage room.
+This is an indirect system and obviously it is not necessary for the expansion coils to 'be in the cold storage room.
 
 ### EXPANSION COIL
 
@@ -17238,24 +12831,10 @@ Ye) aM RECEIVER
 
 ofi—
 
-4)
-
-4 — — py)
-
-.
-
-HARE
-
-ge TS - AE.
-SOR 4
-
 EXPANSION COIL |
 IN FREEZING TANK / —
 
 ### OIL AMMONIA ORUM
-
--&
-E>/
 
 Fic. 8,662.—Ammonia compression refrigeration plant employing both dtrect expansion and brine circulation methods.
 In operation, liquid ammonia in the ammonia receiver is permitted to escape through a very small opening (expansion valve)
@@ -17264,8 +12843,7 @@ It expands and vaporizes, absorbing heat from the metal which in turn absorbs he
 substance surrounds the coil. Thus refrigeration is produced. Having expanded in the coils and produced refrigeration, the
 ammonia gas must be removed either by allowing it to escape to the atmosphere, or by converting it againinto aliquid. As
 ammonia is rather expensive, the latter course is followed, hence the need for the compressor. The compressor is essentially a
-pump which draws ammonia gas from the expansion coils, compresses it and delivers high pressure gas to the ammonia con-
-densing coils. Here cool water passing over the coil takes up the excess heat and the ammonia again becomes a liquid and passes
+pump which draws ammonia gas from the expansion coils, compresses it and delivers high pressure gas to the ammonia condensing coils. Here cool water passing over the coil takes up the excess heat and the ammonia again becomes a liquid and passes
 to the receiver ready for use again. The working cycle consists of: 1, compression; 2, condensation; 3, expansion. In expansion,
 the ammonia takes up heat; in condensing, heat is taken from it. The system is roughly divided into two parts, the high pressure
 side consisting of compressor, oil trap, condenser and liquid receiver, being more or less standardized, while the low pressure side
@@ -17276,12 +12854,6 @@ pressure by pase; E, low pressure by pass; I, suction strainer (scale trap), J, 
 gauge; M, condenser valve; N, receiver inlet valve; O, room valves; P, air valve;'Q, crank case pump-out valve; R, charging valve;
 S, oil drain valve; T, drain valve; X, king valve.
 
-pOE'S
-
-UOMeIISIIJIN
-
-Refrigeration 5,395
-
 NOTE: COMPRESSOR "a
 BRINE AND WATER
 THRU TUBES | y,
@@ -17290,100 +12862,19 @@ LIQUID AND VAPOR Y/
 
 ### ON OUTSIDE OF TUBES
 
-.
-<<
-
 ### COOLED WARM
 
 ### BRINE OUT BRINE IN CONDENSING
 
 > WATER OUT
 
-"WeWBAAY
-
-Qvet ~
-
-<> NN
-S> :
-
-ad
-WARRVRBVRBVWABWRBVVVE
-
-.)
-*
-a®
-
-Decne re)
-
-;
-i
-@. . ey) Sf
-
-Var aA EK tf t 8!
-SSS SSS EES SSSA y) L008 T y - A cman |
-= N gf __pamPera 3 x hb ==
-
-©) exeerrererereccers errs 4 |_aP a
-
-SE A A Ae Wr NN ChAT TELE LAT hop
 oO 0 0 8 © 6.0.00 oe eye set
 
-'
-eo ete wi- @
-a
-.
-efefe'eleo,+ efeo,2e ete s
-
-[> €> CEG)
-o o,ee efoto oye, ee gee jee
-@,¢, eleie
-mADO sNsN\\\A' LIX SEIN UL SS eenscvoucecogoaccsms
-e,ereteoteo @
-
 ### CONDENSER
-
-Coe CC Oe ee Ce Ce
-a s %
-
-a i
-e@,e ee a ef:
-
-au
-SCIDOTAMMAOPDISIIPIIIEIMLIMG
-
-° . e
-BAVAUAVALSUVVAAAarBasag Ls
-
-'ee ek
-oa awe SITH IDOL Oy
-
-### EVACUATOR
 
 UQUID PUMP )
 
 WVWUVWWARAAVAUBWUBUVCw was
-.
-AWAARABVAAAVAAUVAABA
-
-(
-
-i
-
-'
-
-i]
-
-i]
-
-a
-
-S
-
-ha
-
-AA
-
-X
 
 ser
 
@@ -17397,8 +12888,7 @@ cooler is maintained, by the centrifugal compressor, at, say 26,ins. of-mercury 
 (—12.77\bs., per sq.in gauge). As the arrows indicate, the centrifugal liquid pump, enclosed
 within the base of the cooler, lifts the liquid to the space above the tubes from which, through:
 a distributer plate, it falls over the tubes. At the low pressure (¢.:e.,. high vacuum) the liquid
-boils or evaporates rapidly,.as in a flash boiler, quickly absorbing its latent heat of evapora-
-tion from the brine or water flowing through the tubes, thus performing the objective cooling
+boils or evaporates rapidly,.as in a flash boiler, quickly absorbing its latent heat of evaporation from the brine or water flowing through the tubes, thus performing the objective cooling
 thereof. Then the resulting vapor passes through the stationary eliminator plates, which
 remove any entrained liquid, enters the centrifugal compressor wherein the pressure is.
 increased (or, so to put it, the minus pressure is reduced) to, say 5 ins. of mercury vacuum:
@@ -17408,21 +12898,15 @@ minus, that is,.below atmospheric. At its relatively higher pressure, correspond
 5 ins. of mercury vacuum, the vapor enters the condenser and circulates about the tubes
 through which the condenser cooling water flows, as indicated. In the condénser the vapor,
 negligibly heated by its very slight compression, gives up to the cooling water this small
-quantity of compression heat and also its latent heat of liquefaction. Thus the vapor be-
-comes a liquid again, falls into the space beneath the condenser and from there it passes
+quantity of compression heat and also its latent heat of liquefaction. Thus the vapor becomes a liquid again, falls into the space beneath the condenser and from there it passes
 through an ordinary float trap back into the cooler, thus completing the very simple cycle.
 The trap serves merely to avoid short circuiting in case the liquid level in the condenser
 should fall below that required to seal the return riser. Note that there is no expansion
 valve. The control is automatic.
 
-5,396 Refrigeration
-
 Where the plant is designed for operation by day only, the brine tank is
-made large enough to afford ample storage of cold brine. When the com-
-pressor is shut down, the compartment temperature is maintained by con-
-tinuing the circulation of brine with the pump. The brine circulating
-method is recommended for large installations or where the various com-
-partments to be cooled are widely scattered.
+made large enough to afford ample storage of cold brine. When the compressor is shut down, the compartment temperature is maintained by continuing the circulation of brine with the pump. The brine circulating
+method is recommended for large installations or where the various compartments to be cooled are widely scattered.
 
 = COOL GAS — ss 10 ss CONDENSER
 ANHYDROUS
@@ -17430,7 +12914,7 @@ ANHYDROUS
 J LIQUID — EXCHANGER AMMONIA Z
 < OA / WEAK LIQUID x.
 i : oO | . SAFETY
-| a= —= ISy~ | WEAK! x. VALVE. TO
+a= —= ISy~ | WEAK! x. VALVE. TO
 Q SEPARATOR o_in QUI D @m. ATMOSPHERE
 =) | . STRONG .
 3 | cL STRONG | COOLER HO t
@@ -17440,15 +12924,15 @@ Z , @ } i aS RECEIVER
 v) FO AMMONIA
 WEAK | (Req
 yn Sle TB an eee] 4
-; 3 e ®&
+
 x —— PUMP SUCTION 3, 548 5 {BRINE a
-@ ® AQUA. ABSORBEF 270 COOL Ay
+
 L ox @ CHARGING
 TEST BUMP SAFETY VALVE: 45 - <a See O.. CONNECTION
 PRESSURE GAUGE LINE" PU ¢3 TEST
 
 Fic. 8,664.—Piping diagram of the absorption systern showing the flow of liquids and gases:
-| The valves are: 1, aqua charge; 2, weak liquid drain; 3, pump suction; 4, pump discharge; 5,
+The valves are: 1, aqua charge; 2, weak liquid drain; 3, pump suction; 4, pump discharge; 5,
 strong liquid to generator; 6, sample valve; 7, charging valve; 8, expansion valve; 9, gas from
 generator; 10, gas to condenser; 11, liquid to receiver; 12, safety valve from generator; 13,
 strong liquid 1o exchanger; 14, weak liquid from generator; 15, weak liquid to weak liquid
@@ -17458,7 +12942,7 @@ absorber (in pressure gauge line); 23, weak liquid by-pass around regulator; 24,
 condenser pump out; 25, purge valve from brine cooler; 26, drain from separator; 27, check
 valve in purge line; 28, safety valve from brine cooler; 29, drain or test valve from brine
 cooler; 30; equalizing line condenser and receiver; 31, safety valve on receiver; 32, safety
-valve oni absorber; 33, check valve in pump discharge line. |
+valve oni absorber; 33, check valve in pump discharge line.
 
 A combination of the two methods in one plant is shown in fig.
 8,662, and the accompanying description, although it contains
@@ -17467,42 +12951,26 @@ some repetition of principles will be found helpful.
 The diagram shows the simplest form of compression plant. The same
 elements are used in every plant regardless of size or capacity.
 
-Refrigeration 5,397
-
-Ammonia Absorption System.—The principle of the absorp-
-tion system may be stated as the alternate repulsion and absorp-
-lion of ammonia gas by the alternate heating and cooling of am-
-monia water.
+Ammonia Absorption System.—The principle of the absorption system may be stated as the alternate repulsion and absorplion of ammonia gas by the alternate heating and cooling of ammonia water.
 
 A system working on this principle takes advantage of the property of
 water or a weak ammoniacal liquor (called the ''weak liquor'') to dissolve
-ammonia gas. (At 59° Fahr. water absorbs 727 times its volume of am-
-monia gas.)
+ammonia gas. (At 59° Fahr. water absorbs 727 times its volume of ammonia gas.)
 
 AMMONIA _
 COMPRESSOR jo
 
 ### ABSORPTION SYSTEM
 
-— be A; ee
-
 ¥j} —«s DISCHARGE END ¥
 CONDENSER ae een
 
-a
-
 DISCHARGE} fw
-~yEND yy fT & =
-fo: ee
-oe ud : v9
-CQ ¥| #41 GENERATOR
+
 | = RECEIVER
 a. J x | Tr AMMONIA
 2 1 EXPANSION OLIN ey BUMP
-(Vv a)
-rf — = =<»
-, xo =
-SUCTION —<. —————— .
+
 s 4 ABSORBER
 
 END ¥ ~ SUCTION END
@@ -17527,59 +12995,26 @@ Oo. Receiver
 
 2. Condenser
 
-_
-
 - AMMONIA: CONDENSER t.
 AND WEAK LIQUID COOLER ae
 
-oe,
-——-
-ee
-fr . Cd
-ig .
-
 ### RICH LIQUID
-
-tit ————
 
 ### CONDENSER WEAK LIQUIDS
 
 or nap Low. pressure ff —_ .-
 
-HigH ate Automatic (
 PRESSURE. Yer
-
-mi BC)
-pe | :g 8
 
 he WEAK LIQUID "[tpes™
 
 He (X eae
 
-eh? tnd * Om
-
-ove z
 Geb...
-ene | -
 
 asi
 
-e 2'@
-Oe: Geeees
-fore LY
-
-POET
-
-e e o'a@
-'aeeru.e Zz;
-tHe' He ast
-
-P Ba abiacPiace
-e CIR UE oe Le Dee |
-© pS tS tenes" bed bn ed®
 e a =
-
-### ANALYZER
 
 ### STEAM
 
@@ -17588,30 +13023,19 @@ eee ADH
 
 ### EXPANSION
 
-GENERATOR" EXCHANGER - AMMONIA PUMP: ABSORBER ~ BRINE "TANK ~
+GENERATOR" EXCHANGER - AMMONIA PUMP: ABSORBER ~ BRINE "TANK
 
 Fic. 8,666 _—Large abeoepuion erm In this system the rich Higuoe is circulated through the rectifier before passing through
 the exchanger, thus some of the heat which would otherwise be carried off in the condensing water is saved,
-
-~
-
-86E°S
-
-UOe1LISIIJIN
-
-Refrigeration 5,399
 
 It is seen from the two lists that the condenser, receiver and expansion
 
 coils are common to both systems. This is further shown in fig. 8,665. The
 
-" figure further shows that the compressor is replaced by an absorber, am-
-monia pump and a generator.
+figure further shows that the compressor is replaced by an absorber, ammonia pump and a generator.
 
-In the absorption system the gas, returning from the expan-
-sion coils, enters the absorber (corresponding to the suction end
-of the compressor), is transferred to the generator (correspond-
-ing to the discharge end of the compressor) by a pump, through
+In the absorption system the gas, returning from the expansion coils, enters the absorber (corresponding to the suction end
+of the compressor), is transferred to the generator (corresponding to the discharge end of the compressor) by a pump, through
 the valves of which it passes just as 1t flows through the valves
 of the compression piston.
 
@@ -17646,45 +13070,36 @@ The strong liquor or strong aqua ammonia resulting from the absorption
 of the ammonia gas is pumped into the generator where it is again driven out
 of solution by the heating coils, thus completing the cycle.
 
-5,400 Refrigeration
-
 The elements necessary for performing this cycle are shown in
 fig. 8,667. |
 In modern practice various refinements (additional parts) are
-introduced and the description of the operation of the Carbon-
-dale ice machine accompanying the chart, fig. 8,676 will
+introduced and the description of the operation of the Carbondale ice machine accompanying the chart, fig. 8,676 will
 
 —TTTht) |! COOLING
 
 Calo WATER
-a ero LoD :
-CONDENSER. pill iy
-
-mm 5
 
 | THROTTLE
-
-—————) er
 
 ### GENERATOR ABSORBER
 
 PUMP EXHAUST =
-—_ =|
-a
-STRONG
+
+### STRONG
+
 LIQUOR TO |
 | GENERATOR —
 STEAM | |
-opp E> = =e
-WEAK LIQUOR COOLING
-TO ABSORBER INTERCOOLER WATER
+
+### WEAK LIQUOR COOLING
+
+### TO ABSORBER INTERCOOLER WATER
 
 Fic. 8,667.—Elementary ammonia absorption system; direct expansion cooling. The
 essential parts are: 1, generator; 2, condenser; 3, expansion coils; 4, absorber; 5, pump;
 6, exchanger. As compared with the compression system the absorber takes the place of the
 compressor. Cycle of operation: 1, the strong liquor vaporizes in generator; 2, ammonia
-gas produced in generator passes to condenser and condenses; 3, liquid ammonia from con-
-denser passes through expansion valve and vaporizes 1n the expansion coils which produces
+gas produced in generator passes to condenser and condenses; 3, liquid ammonia from condenser passes through expansion valve and vaporizes 1n the expansion coils which produces
 the cold or refrigerating effect; 4, ammomia gas from expansion coils is absorbed by the weak
 liquor in the absorber, producing strong liquor; 5, the strong liquor is pumped from the
 absorber to generator via the exchanger, where the hot weak liquor passing from generator
@@ -17698,110 +13113,35 @@ The ''Atmospheric" and ''Double Pipe'' types are shown in figs. 8.668 and
 
 ### ORY GAS TO CONDENSER
 
-—————
-
 = = CONDENSER = ,
 
-ed
-——
 ——- eae 2
-
-——_[_[_—_—__S_ ESSE
 
 \eoraren sent
 
 ane
 
-ra ° Ls H e
-: = = = 'e
-. perce
-\
-a oe P z ;
-WEY | RECTIFIER D | ;
-: . 7 . ReOnG = CO '
-i H ; * «
-; oe \ i A ve ey Mich ae ar | \
-' : h an of "ay te '
-: ei HAP ve eH. y '
-. rt me sa
-" . 4 '
-bo soe! ee ih wine y e =a . : p
-*, Fi 7 bees " - cas eel i Ramen cers a pte i »
-. ' WS Hi i 4
-2 "tea J ' Le y
-. . . Ah er yeh ae ' 7 ee . .
-= _ ; hi i A q nN PT ty '
-id ea Ef AER ee if 7 ty
-j ; ' ARLE aH: ty' . Ta
-= ti" Hike rea.
-jy p hi Pier, thet! : '
-' ' is H i ' '
-: 1
-: ' ! _
-| LIN ee .. | GE RL |
-al r) ; : =a :
-a, +
-' e ' i
-.2 - 9 an uw ' . '
-. : : LH :
-N TOR = =<
-: a ETS Aj
-iW
--: a - - 33 i u i
-: es oo — = - - ~ — -— —_ —_ eo - = a ee :
-Ny
-' -a ea ea es _o ey 7 i
+WEY | RECTIFIER D |
+. 7 . ReOnG = CO
+
 = s a
-i a ' ;
-: " 7 5 . a7. Ww .
-: : : ry
-; | FEED |
+
+| FEED
 H / > ' eee ahd ( 5
-| te : ry 2 ss ~ ee < én ; e
-s a :
-in 2 ac i " :
+
 1 a: aa ' "se are | sean. 4 i
-1 s e - '
-ve id
-; »
 
-H ol
-| —' = 9
-
-uUOIZeIISIIJIN
-
-ae is oe
-
-y Vd V4 V0 > MY, 7
 GENERATOR EXCHANGER AMMONIA . AQUA ANHYDROUS BRINE
 PUMP RECEIVER RECEIVER COOLER
 
 Fic. 8,668,—Carbondale atmospheric type absorption refrigeration machine, Se eee
 
-TOv'sS
-
-ZOb'S
-
 100008 R Baas.
-Nit seSSMasas::
-
-i
-
-] SecTIice ome TO
 
 — EE ——_ je pa Beamer a again
 
 EOx 1 =!
 CONDENSER
-
-### ANMVOROUS
-
-### FECO UNE
-
-MORHH A §
-EL
-
-UOIeIISIIJIN
 
 EXCHANGER AMMONIA PUMP 'AQUA RECEIVER « ANHYDROVS RECEIVER BRINE COOLER
 
@@ -17817,10 +13157,7 @@ generator.
 The cooling water enters the condenser, passes through it and goes to the absorber. After leaving the
 absorber, it divides, a portion of the water entering the rectifier and the rest going to the weak liquor
 
-cooler. In this way the water is used four times, each at a somewhat higher temperature than the pre-
-ceding. A great saving in water results.
-
-Refrigeration | 5,403
+cooler. In this way the water is used four times, each at a somewhat higher temperature than the preceding. A great saving in water results.
 
 Choice between the types of absorption machines must be
 governed by space and.the characteristics of cooling water
@@ -17836,8 +13173,7 @@ and absorber should be used. However, if the water be non-corrosive, but
 of high temperature, full weight pipe will be satisfactory and, if properly
 painted, will last for years.
 
-Carbon Dioxide System.—The chemical carbon dioxide, vari-
-ously called carbonic-anhydride, carbonic acid gas or simply
+Carbon Dioxide System.—The chemical carbon dioxide, variously called carbonic-anhydride, carbonic acid gas or simply
 CO., and used ds the refrigerant in this system, is made up of
 molecules containing one atom of carbon and two atoms of
 oxygen and has the chemical symbol CO..
@@ -17852,19 +13188,15 @@ Carbonic anhydride is supplied in steel cylinders and can be procured
 almost anywhere at a cost of a few cents per lb.
 
 Ether System.—This method of refrigeration has never come
-into extensive use owing to the relatively large compressor neces-
-sary, but more especially to the inflammability of ether and its
+into extensive use owing to the relatively large compressor necessary, but more especially to the inflammability of ether and its
 great liability to explosion.
 
 The great advantage of ether is that it requires only a low pressure in the
 condenser, which is of no little importance in warm climates. The low
-pressure is also favorable for the maintenance of tight joints, and the sim-
-plicity of the working parts.
+pressure is also favorable for the maintenance of tight joints, and the simplicity of the working parts.
 
 The compressor required is very much larger than} in an ammonia machine
-of like capacity, and its generally massive construction, and larger consump-
-tion of coal and water, added to the great fire risk, have seriously handi-
-capped the ether machine for ordinary commercial use.
+of like capacity, and its generally massive construction, and larger consumption of coal and water, added to the great fire risk, have seriously handicapped the ether machine for ordinary commercial use.
 
 ### SCOOP FOR SUPPLYING -
 
@@ -17876,14 +13208,8 @@ Sy. MAINTAINED BY
 Awe © A | RSS - 0, AND On
 CENTRIFUGAL
 
-\
-
-Z
-TALvE FoR SSDP Nee
-VALV g N
 AND STARTING — ii eR Acc FLOAT VALVE FOR
-: Al; zi ae es
-STATIONARY Alle Vans cy pe LEVEL,
+
 SEPARATOR PILLOW j zeal \ PILLOW BLOCK
 
 ### AND TUBE BLOCK
@@ -17892,46 +13218,21 @@ SEPARATOR PILLOW j zeal \ PILLOW BLOCK
 
 DO. RON AAAS
 
-—-- Podiaat ie
-S RASS
-
 50. CHARGED
 
-mF LESSULA
 il Me a GS =
 
-N | | is rT RNG waa pee |
-: OSCILLATING CYLINDER ; tee ' — tf K "SUCTION THROUGH THIS
+N | | is rT RNG waa pee
+OSCILLATING CYLINDER ; tee ' — tf K "SUCTION THROUGH THIS
 'SUBMERGED IN OIL ¥ Z ORY Gr mh PASSAGE HOLE BEFORE
 , | ms AG. Ss SEALING
 —— | . COMPRESSOR
-REFRIGERATING END ie Ge! uF sui Wy DISCHARGE VALVES
+
 (LZ. er we - MM aia
 
 ### PRESSURE WITHIN
 
 DEPENDS ON TEMPERATURE.
-
-S
-NS
-S
-
-e
-y
-\
-\
-\
-S
-\
-<
-g
->
-S
-S
-y
-=
-S$
-S
 
 sae
 =, "Rares CONDENSING END
@@ -17945,31 +13246,21 @@ and B, revolve with hollow shafts DE and C. Carrier F, is held stationary by cou
 Carrier supports two oscillating compressors G. Compressors are double acting and driven by eccentric F. Vapor is drawn
 by motion of piston H, through hollow shaft and port LL, into cylinder. Return stroke compresses vapor, expelling it through
 spring valves MM, into the surrounding space. Vapor condenses upon walls of A, and collects with surplus oil at im. Scoop
-W, carries mixture to decanting box X, oil overflows over bearing surfaces, and liquid SOs: is delivered to reservoir Y. Expan-
-sion valve admits liquid to central tube Q, which is stationary with carrier F. Liquid is delivered to interior of evaporator B,
+W, carries mixture to decanting box X, oil overflows over bearing surfaces, and liquid SOs: is delivered to reservoir Y. Expansion valve admits liquid to central tube Q, which is stationary with carrier F. Liquid is delivered to interior of evaporator B,
 Separator U and P,
 
 and expands again to vapor under suction of the compressors. Spent gas returns through hollow shaft.
 collects surplus oil carried over with liquid SO: and returns it in the stream of spent gas, to the condenser end. There is no
 chemical action, and no deterioration of the gas or oil.
-valve V, which closes by centrifugal force, isolating the condenser from the evaporator when running. Power required to com-
-press the gas is derived through the shaft and eccentric. Torque created is resisted by weight of carrier assembly and counter-
-weight, which rises about 15° from vertical. Variation in condenser pressure (and temperature) and variation of evaporator
+valve V, which closes by centrifugal force, isolating the condenser from the evaporator when running. Power required to compress the gas is derived through the shaft and eccentric. Torque created is resisted by weight of carrier assembly and counterweight, which rises about 15° from vertical. Variation in condenser pressure (and temperature) and variation of evaporator
 
 When machine is stationary, pressure in both bells is equalized through
-
-bOb's
-
-UdIe1ISIIJIN
-
-Refrigeration 5,405
 
 Compressed Air System.—lIn this system air is compressed to
 'a pressure of ten to fifteen atmospheres, and its temperature
 'raised from 75° to 500 or 600°.
 
-This heat is conducted off by the compressed air being held in a coil sur-
-rounded by water, or in long pipes passing through the atmosphere as when
+This heat is conducted off by the compressed air being held in a coil surrounded by water, or in long pipes passing through the atmosphere as when
 used for rock drilling machinery. The heat may be reduced by conduction
 to 75°, but the pressure is still, say, fifteen atmospheres. If this should be
 allowed to escape into the atmosphere a temperature of zero to 10° Fahr.
@@ -17990,7 +13281,7 @@ refrigerant is greatly in its favor'
 Water System.—Several. machines have been developed,
 using water as the refrigerant.
 
-: The boiling point of water depends on the pressure. Although it requires
+The boiling point of water depends on the pressure. Although it requires
 a temperature of 212° Fahr. to boil water at atmospheric pressure, water
 will boil at 32° under a 29.74 in. vacuum; at 40° for 29.67 in. vacuum, etc.
 
@@ -18007,8 +13298,6 @@ Fic. 8,670 —Text continued.
 'pressure (and temperature) directly affect torque required... If either brine temperature or
 condenser temperature become excessive counter-weight will revolve and automatically
 prevent building up of dangerous pressures.
-
-5,406 Refrigeration
 
 Mechanical Ice Making.—The term "mechanical ice making'"'
 as here used relates to the apparatus and methods employed in
@@ -18031,29 +13320,11 @@ ml COVERS _
 
 ### INSULATION
 
-—_ Zs) fy] Colts
-
-Ce ee — =.
-
-(a ;
-et mw
-
-|
-
 aul
 
 ie Pad
-= pe ~ oe ? <3
+
 = a oa los —~ - eae ee eee we
-- eee ———_—_——_ SS + SD
-= - =o —
-
-SJapa>
-Fg NN
-
-'S x Pamir PON A Se a,
-PS % Boe ae mS ' S aS Ya TaN PN Ni ios
-See 2: ee Ss ee 3 pee |; gu OS ume @
 
 Fic. 8,671 .—Detail of freezing tank of; an Eclipse ice plant, showing the arrangement of the
 cans with covers, also the brine agitator. The agitator is in the shape of a propeller which
@@ -18063,47 +13334,31 @@ keeps up a continuous circulation of brine between bottom and top of tank.
 
 Ans. Galvanized cans or moulds are filled with water, after
 they have been suspended the proper depth in a tank of brine,
-the brine being cooled by a direct expansion system in the freez-
-ing tank, as shown in fig. 8,671.
+the brine being cooled by a direct expansion system in the freezing tank, as shown in fig. 8,671.
 
 bas
 
-j ' : ' ]
 Ice Cake |; SS 1i_4_fi} }__ ——
 upply
-aste Water e |
+aste Water e
 
 from Condenser
-ate fy 2 ;
-
-|
 
 calberas
-83a3 63838035 5808F.
 
 inhrsirral
-bal COE A
+
 rials
 
 val
 
 nal Side View
 
-bie ae
-- me
-———_—
-
 => CF Ona : [Fatman pare Waste Cistern Sectio
 Fics. 8,672 and 8,673.—Sectional views of plate ice plant showing freezing plates and cells. The ice plates are hoisted by means of
 
 the traveling hoist after being thawed off the freezing plates by passing hot brine through the coils. The freezing plates with
 their coils are shown in fig. 8,673 in heavy black lines with the ice forming on both sides of them.
-
-uUoIe1asI1JaN
-
-LOv'S
-
-5,408 Refrigeration
 
 The time required for freezing varies from 40 to 60 hours, depending on
 the thickness of the cakes. The longer the time a given thickness is allowed
@@ -18114,8 +13369,7 @@ and sprayed with, or dipped into, warm water which loosens the ice so that
 when the can is inclined on its side the cake of ice slides out, the can being
 make tapering in shape so as to facilitate the movement.
 
-In domestic refrigeration the can method is used on a minia-
-ture scale in freezing ice cubes with the exception that the tray
+In domestic refrigeration the can method is used on a miniature scale in freezing ice cubes with the exception that the tray
 which corresponds to the can is not placed in brine, but is
 surrounded by a cooling coil.
 
@@ -18127,17 +13381,13 @@ walls are entirely submerged. The hollow iron walls are placed
 parallel with each other at a distance of from two to three feet.
 The freezing fluid, consisting either of cold brine or ammonia, is
 passed through the hollow walls, with the result that the water
-will freeze on the outside of the walls; the water is kept'in agita-
-tion either by means of a propeller or pump, or by compressed
+will freeze on the outside of the walls; the water is kept'in agitation either by means of a propeller or pump, or by compressed
 air, so that the water is kept continually on the move; carrying
 the air with it prevents it being frozen in the ice. After the ice
 is frozen on the walls to the required thickness the freezing fluid
-is shut off from the walls and a warm fluid passed through in-
-stead until the ice is loosened and taken out of the tank.
+is shut off from the walls and a warm fluid passed through instead until the ice is loosened and taken out of the tank.
 
 This method is shown in figs. 8,672 and 8,673.
-
-Refrigeration 5,409
 
 . What is the basic principle of refrigeration?
 
@@ -18159,7 +13409,7 @@ sible heat; 4, latent heat.
 
 . How is heat carried away in vaporizing?
 
-. Describe an experiment illustrating condensation. |
+. Describe an experiment illustrating condensation.
 . What is a refrigerant?
 
 . Name the various refrigerants used.
@@ -18184,10 +13434,6 @@ sion valve.
 
 and the brine circulation methods?
 
-5,410 Refrigeration
-
-é
-
 20. Describe in full detail the ammonia absorption
 System.
 
@@ -18198,122 +13444,71 @@ air; 4, water systems. ,
 
 H. IS 1 de by the pl nethod?
 23. How ts ice made by tne plate metnoa.
-' if : i
-' :
-5 ~,
-'..
-¥ ' 5 ; :
-: A , . oe ae '
-$ ' P : :
-t ' 1" es ' t ¢* as ' \¥
-! .y x .*
-id
-, {
-re. Ne ' 7 4 2 5 z ? f
-\ Ay ' Ta x
-(
-y o q ,
-g ~* (sy rj \ bs ;
-4 t ! se i Ya x 7 ' \ 2 4 v
-~~
-. $
-$ \ " \ N
-¥ t
-: tae t r t e { : ' \
-e
-4 2 : t Me '} '. \ )
-1 «
-. eo ee? ® ¢ t
-'y son \ Vy ae é
-. a ry 4 4 .
-,\ ' : VA } a .3.
-' \ ' i 1 \
-. ¥ 4 t
-i ( ' ' ; n f ne \" im ' Vi og x .
-f ae
-4 4 a ; F Y
-1 '
-4 : é t . \
 
-Refrigeration Machine Operation 5,411
+re. Ne ' 7 4 2 5 z ? f
 
 ## CHAPTER 222
 
 Refrigeration Machine
 Operation
 
-The following instructions for the operation and mainte-
-nance of refrigeration plants, will be found helpful to the prac-
-tical man who intends to be put in charge. Directions are given
+The following instructions for the operation and maintenance of refrigeration plants, will be found helpful to the practical man who intends to be put in charge. Directions are given
 in this chapter for the operation of plants of both the compres-
 
 sion and the absorption types.
 
 Small Compression Machine Operation.—To illustrate the
 running of a small refrigeration plant of the compression type,
-directions are here given for operating the Brunswick refrigerat-
-ing machine, as shown in figs. 8,674 and 8,675.
+directions are here given for operating the Brunswick refrigerating machine, as shown in figs. 8,674 and 8,675.
 
 To start machine.—1, Open water supply valve. Be sure water 1s
-running. 2, open wide by-pass valve A; 3, turn fly wheel back to com-
-pression point (opposite to operating direction); 4, turn on power; 5, open
+running. 2, open wide by-pass valve A; 3, turn fly wheel back to compression point (opposite to operating direction); 4, turn on power; 5, open
 discharge valve No. 2; 6, close by-pass valve A. (Never close by-pass valve
 A, until discharge valve No. 2 is open); 7, open suction valve No. 3 (Suction
 valve No. 3 should be open only one quarter turn and system pumped down
 until suction or low pressure gauge registers 25 lbs. pressure, then slowly
-open wide and run machine until low pressure gauge registers 10 lbs. pres-
-sure; 8, open liquid valve No. 4; 9, regulate expansion valve until low pres-
-sure gauge registers proper pressure.
+open wide and run machine until low pressure gauge registers 10 lbs. pressure; 8, open liquid valve No. 4; 9, regulate expansion valve until low pressure gauge registers proper pressure.
 
 To stop machine.—1, close liquid valve No. 4. (After liquid valve No.
 4 is closed, keep machine running until low pressure gauge registers between
-zero and 5 lbs.); 2, close suction valve No. 3; 3, turn off power; 4, close dis-
-charge valve No. 2. (Never close discharge valve No. 2 until machine is
+zero and 5 lbs.); 2, close suction valve No. 3; 3, turn off power; 4, close discharge valve No. 2. (Never close discharge valve No. 2 until machine is
 stopped); 5, close water supply valve.
 
 STOP VALVE FP @ PURGE_VALVE
 
 OOTY Ea aff CLEAN OUT PLUGS
-WATER OuTLeT AIR VENT. TOR CONDENSER _
+WATER OuTLeT AIR VENT. TOR CONDENSER
 a gear oy (ott —o
-; ant
+
 LOW ul t HIGH
 PRESSURE jt PRESSURE io"
 GAUGE n tt f GAUGE z
-sts cat
+
 nou 7 STOP VALVE
 SUCTION. Hou ie DRAIN VALVE | E | EXPANSION VALVE
-fr i oe | it
+
 = oy i a STOP og ; a
-s Te - ; a : e:. , es Hine, |
-SUCTION tt | DISCHARGE ~Y ch ge =...
+
 VALVE Oe, | VALVE 2 {~ cw
 rae ypass) | eae eR
-BY PASS Z CAE nN | ae:
+
 VALVERB a | SCALE. TRAP.
 WATER JACKET 24 a ce SE ee
 DRAIN GOCK He {| PURGE COCK L a
-SUCTION" "Wada ob, sh «=| AMMONIA 7 — ;
+SUCTION" "Wada ob, sh «=| AMMONIA 7 —
 SCALE TRAP RECEIVER ae fF es
 ly 50 CHARGING VALVE.
 PURGES I/O ee — OIL : a are
 10 [iP & SEPARATOR ; a ee
 bad a AMMONIA CHARGING
 OIL 44 GVLINDER
-— VEE GAUGES |
+— VEE GAUGES
 OIL , OIL PURGE , get
 CHARGING (eS y COCK
 
 OIL |
-= LRETURN VALVEG = 3
 
 Fics. 8,674 and 8,675,—Brunswick compressor type refrigeration machine. Its operation is explained in the-accompanying text.
-
-uoneIadO aulyoe yy uoeIaS11jJay
-
-CIS
-
-Refrigeration Machine Operation 5,413
 
 Expansion valve.—This valve controls the suction or as it is called low
 pressure. Suction pressure gauge should never register above 30 lbs. or below
@@ -18335,8 +13530,7 @@ usual until frost comes back to suction scale trap; then close slightly,
 operating at usual working suction pressure.
 
 Water.—There cannot be too much water used. This however does not
-mean that water should be wasted. The high or condensing pressure is con-
-trolled not only by the amount of condensing water that is used, but also by
+mean that water should be wasted. The high or condensing pressure is controlled not only by the amount of condensing water that is used, but also by
 the temperature of 1t. Therefore, if condensing water be 00h it is not
 necessary to use as much as when water 1s warm.
 
@@ -18347,10 +13541,8 @@ Ibs. unless water is exceptionally warm.
 
 With plenty of cool water, the condensing pressure may be lowered to
 150 or. even 125 lbs. with correspondingly lower power consumption and
-increased refrigerating effect, but there is little economy in carrying con-
-densing pressure much below 150 Ibs. since the gain in refrigerating effect
-and power saved by the compressor is offset by increased water con-
-sumption.
+increased refrigerating effect, but there is little economy in carrying condensing pressure much below 150 Ibs. since the gain in refrigerating effect
+and power saved by the compressor is offset by increased water consumption.
 
 Condenser.—In cold weather when machine 1s not running all water should
 be drained out of condenser and also water jacket on compressor, to prevent
@@ -18363,8 +13555,6 @@ pipe to purge valve C, and submerge end in pail of water. Slightly open
 purge valve C. Allow air to escape through water. When foul gas is
 purged out and ammonia appears causing a cracking noise, immediately
 close purge valve C.
-
-5,414 Refrigeration Machine Operation
 
 Never purge condenser unless machine has been stopped several hours.
 
@@ -18381,8 +13571,7 @@ separator shows a considerable quantity of oil in the separator it should be
 blown back into the case of the compressor as follows: First open gauge cocks
 on oil separator and compressor case, then slightly open oil return valve No.
 
-6, on bottom of compressor case, watching fall of oil in gauge glass on sep-
-arator.
+6, on bottom of compressor case, watching fall of oil in gauge glass on separator.
 
 When oil disappears from gauge glass on separator, close oil return valve
 No. 6 tight, at once. If valve No. 6 be not closed tight immediately after
@@ -18409,17 +13598,14 @@ case, since ordinary lubricating o1l will freeze and become sticky.
 
 General care of plant.—Keep all ammonia and oil gauge cocks closed,
 except when examining level of liquids. Gauge cocks on compressor case
-should be opened each day to make sure that there ts sufficient oil 1n the com-
-pressor.
+should be opened each day to make sure that there ts sufficient oil 1n the compressor.
 
 Always keep stuffing boxes on valves and compressor shaft just tight
 enough to prevent any leak of ammonia. When stuffing boxes are drawn up
 as far as possible, packing should be replaced with good grade of ammonia
 spiral packing. Shaft stuffing box is packed with special metallic packing.
 
-Refrigeration Machine Operation 5,415
-
-' All valves, except gauge cocks, expansion valve, purge valve C, oil return
+All valves, except gauge cocks, expansion valve, purge valve C, oil return
 valve No. 6, and charging valves No. 5 and No. 7, must be repacked when
 wide open in order not to lose ammonia.
 
@@ -18471,12 +13657,6 @@ Caution.—Never leave ammonia cylinder connected to system.
 
 . ae ae - a ; RECTIFIER GAS TO CONDENSER
 
-OLS
-
-ee gt GQ EE pp .
-
-G
-
 ! CONDENSER
 DRIP HEADER
 
@@ -18485,30 +13665,15 @@ BSORBER TO AQUA REC.
 
 ### TO GENERATOR
 
-GAS—GENERATOR TO RECTIFIER ~
-R aad
+GAS—GENERATOR TO RECTIFIER
 
-@ |
-GAS TO ABSORBER
+### GAS TO ABSORBER
 
 a a a RE RE - ) PUMP EXPANSION COILS A
-oe 2 = = <= 23 \ "aaa
-
-ES ieee a aa eS EE Se ED
-SS gy get Pee ye
 
 —nown Or ree 9 eee =
-a
-
-mee Yr Eyes fl cae i"
-
-a"
-, ee Se) ee EE GREEN ee >
-" : : >
 
 WK. LIQ. TO EXCHANGER
-
-uoijp13sdg auzryovyy u0}2 041981 1jay
 
 ### TRONG LIQUOR TO EXCHANGER GENERATOR
 
@@ -18517,21 +13682,16 @@ uoijp13sdg auzryovyy u0}2 041981 1jay
 Fic. 8,676.—Carbondale absorption type refrigerating machine.
 
 Absorption Machine Operation.—To illustrate the running of a refrigeration plant
-of the absorption type, directions are here given lor operating the Carbondale refriger-
-ating machine as shown in fig. 8,676.
-
-Refrigeration Machine Operation 5,417
+of the absorption type, directions are here given lor operating the Carbondale refrigerating machine as shown in fig. 8,676.
 
 1. The operation of the Carbondale Absorption Refrigerating Machine ts
-based on the fact that pure water readily absorbs ammonia gas. Pure anhy-
-drous liquid ammonia boils at 284% deg. below zero Fahr. under atmospheric
-pressure, while water boils at 212 deg. Fahr. above zero. A mixture of am-
-monia and water will have a boiling point somewhere between, depending on
+based on the fact that pure water readily absorbs ammonia gas. Pure anhydrous liquid ammonia boils at 284% deg. below zero Fahr. under atmospheric
+pressure, while water boils at 212 deg. Fahr. above zero. A mixture of ammonia and water will have a boiling point somewhere between, depending on
 the strength of the aqua ammonia solution.
 
 2. The quantity of ammonia that water will absorb depends on the pressure
 under which the absorption takes place, the temperature of the solution, and
-the efficiency of the absorber. :
+the efficiency of the absorber.
 
 3. A strong solution of aqua ammonia is pumped thru the Exchanger into
 
@@ -18548,8 +13708,7 @@ gathering the heat from, and thus cooling the objects to be refrigerated.
 the rate of about one half gallon per minute per ton of refrigeration, and the
 gas driven off from this aqua into the Condenser, a continuous supply of weak
 liquor. leaves the Generator thru the Exchanger and Weak Liquor Cooler to the
-Absorber, where it absorbs the ammonia gas liberated by the Cooler or Expan-
-sion Coils. The resultant strong aqua ammonia is taken from the absorber
+Absorber, where it absorbs the ammonia gas liberated by the Cooler or Expansion Coils. The resultant strong aqua ammonia is taken from the absorber
 by the aqua Ammonia Pump, forced thru the Exchanger into the Generator
 again, ready to repeat the cycle.
 
@@ -18565,7 +13724,7 @@ Refrigerating Machine. We build other types but the principle is the same.
 
 10. Mark the valves in your plant to correspond to the valves on the diagram.
 It will help the engineer in case of fire or accident to close the necessary ones
-promptly, minimizing ammonia loss and preventing other damage. |
+promptly, minimizing ammonia loss and preventing other damage.
 
 11. The following instructions, condensed from our Instruction Book, are for
 handy reference. |
@@ -18574,8 +13733,6 @@ handy reference. |
 charge, proceed as follows:—
 
 13. Start water circulating thru the machine.
-
-5,418 Refrigeration Machine Operation
 
 14, Start brine pump, making sure that the proper quantity of brine of the
 proper specific gravity is circulating.
@@ -18589,20 +13746,20 @@ proper specific gravity is circulating.
 18. Open and set the weak liquor valve (13).
 
 19. When the generator pressure. is raised to that usually carried, open the
-gas valve (1) and drip valve (2). |
+gas valve (1) and drip valve (2).
 
 20. Open and set the expansion valve (4). The machine is now.in regular
 operation.
 
 21...TO STOP THE MACHINE: Shut the steam off the generator. During
 Short shut downs leave a little steam on to prevent undue cooling, and leak-
-'age thru coil tail packing when starting up. . '
+'age thru coil tail packing when starting up. .
 
-22. Close the expansion valve (4). |
+22. Close the expansion valve (4).
 
 23. Stop the ammonia pump, closing suction valve (8),
 
-24. Close the weak liquor valve (13). :
+24. Close the weak liquor valve (13).
 
 25. Close the cooler gas valve (6).
 
@@ -18621,8 +13778,7 @@ Carbondale Machine Company to ascertain the correct amount of water.
 
 31. As a general rule the absorber outlet water should not exceed 95 deg.
 Sufficient water should be-used on the rectifier, to maintain the outlet gas
-from 20 deg. to 30 deg. F. warmer than the ammonia condensing tempera-
-ture due to the generator pressure.
+from 20 deg. to 30 deg. F. warmer than the ammonia condensing temperature due to the generator pressure.
 
 32. Under proper operating conditions, and water supply, the shortest drip
 pipe on the rectifier wilt be very hot, the intermediate pipes successively
@@ -18632,22 +13788,17 @@ cooler and the longest pipe fairly cool to the touch.
 employed. In general, the steam pressure must be increased if the brine
 temperature is lowered or the cooling water temperature raised
 
-wwe ns
-
 eel
 
 34. Ordinarily the steam pressure should not exceed one third of the
-
-Refrigeration Machine Operation 5,419
 
 generator pressure. Thus with 150 pounds generator pressure, 50 pounds
 steam pressure Is maximum.
 
 35. Keep the air cock on the lower generator header open slightly which frees
-the coils of air, and indicates if the trap is working properly. |
+the coils of air, and indicates if the trap is working properly.
 
-36. AMMONIA CHARGE: With the machine tn regular operation and a nor-
-mal charge the proper liquid levels, as indicated by gauge glasses on: the
+36. AMMONIA CHARGE: With the machine tn regular operation and a normal charge the proper liquid levels, as indicated by gauge glasses on: the
 various shells, will be as follows:
 
 37. The Generator liquor level will be from one to two inches above the coils.
@@ -18669,17 +13820,13 @@ out of the cooler.
 
 41. EVAPORATING OR COOLER PRESSURE: With a normal charge, the
 cooler gauge ressure should correspond to an ammonia temperature from
-© to 10 deg. lower than the temperature of the outgoing brine. The follow-
-ing table shows approximately the pressures corresponding to different outlet
+© to 10 deg. lower than the temperature of the outgoing brine. The following table shows approximately the pressures corresponding to different outlet
 brine temperatures.
 
 TEMP. OUTLET BRINE COOLER GAUGE PRESSURE .
 DEG. FAHR. LBS. PER SQ.-IN.
 —20 2%" vac. to QO Ibs.
 —10 3 lb. " 6 ".
-O 8 39 393 12 99
-10 15 " 'yyg "
-20 23 0
 
 42. \f Expansion Coils are used, instead of a Brine Cooler, the 'normal
 Evaporating Pressures will be slightly lower than those for a Brine Cooler.
@@ -18693,8 +13840,6 @@ corresponding temperature indicates:
 
 47. tf BRINE.COOLER PRESSURE IS TOO HIGH it.is probably due to one
 of two causes:—
-
-5,420 Refrigeration Machine Operation
 
 48. Feeding Anhydrous too heavily (see last two lines par 40).
 
@@ -18732,7 +13877,7 @@ three things:
 
 58. Insufficient steam pressure (see par. 33—34-—-35).
 
-59. Insufficient flow of brine (see specification). |
+59. Insufficient flow of brine (see specification).
 
 60. Insufficient ammonia charge (see par. 36 to 40 inc')
 
@@ -18745,16 +13890,12 @@ three things:
 is usually indicated as follows:—
 
 65. A lack of capacity not attributable to other causes, the gauge cocks on
-the Cooler being frosted as with a normal charge and the cooler pressure be-
-low that shown in table.
+the Cooler being frosted as with a normal charge and the cooler pressure below that shown in table.
 
-66. If on opening the Cooler gauge cocks the liquid looks watery and slug-
-gish, and the Cooler pressure is below normal.
+66. If on opening the Cooler gauge cocks the liquid looks watery and sluggish, and the Cooler pressure is below normal.
 
 67. To remove this aqua, or ''Purge'' the Cooler, close expansion valve (4)
 and in about 15 minutes close gas valve (6) and open purge valve (5).
-
-Refrigeration Machine Operation 5,421
 
 68. After thoroughly draining the Cooler open expansion valve (4) for about
 half a minute, repeat this several times and when the pressure drops to 5 to
@@ -18769,8 +13910,7 @@ Foul Gas in the high pressure side of the machine.
 Opening expansion valve (4) wide for 10 or 15 minutes at intervals of one or
 two hours. This empties the liquid receiver periodically and allows gas to
 blow thru. The rapid flow of gas thus induced carries the Air or Foul Gas to
-the low pressure side from which it can be removed thru valve (23) see para-
-graph 71. As soon as evidence of Air or Foul Gas disappears, this process
+the low pressure side from which it can be removed thru valve (23) see paragraph 71. As soon as evidence of Air or Foul Gas disappears, this process
 should be discontinued.
 
 71. To remove Air or Foul Gas from the Absorber blow it from valve (23)
@@ -18785,7 +13925,7 @@ water. When this occurs, close valve (23).
 or double pipe absorber coils in service to the smallest number required.
 
 74. In cutting out each coil, close the individual controlling valves in the
-following sequence. | |
+following sequence. |
 
 75. Close the weak liquor valve.
 
@@ -18796,36 +13936,24 @@ following sequence. | |
 78. In putting the coils back into service the procedure should be reversed.
 
 79. Keep a log of operation, coal, repairs and results. Keep the anhydrous
-receiver outlet sealed always. Keep the generator coils covered with aqua al-
-ways and the generator steam pressure as uniform as possible. Keep pipe
+receiver outlet sealed always. Keep the generator coils covered with aqua always and the generator steam pressure as uniform as possible. Keep pipe
 surfaces clean.
 
 80. For detailed instructions see the complete Instruction Book
 
-5,422 #£Refrigeration Machine Operation
-
-1. Describe in full detail the operation of a small com-
-pressor machine.
+1. Describe in full detail the operation of a small compressor machine.
 
 2. How is a machine re-charged with ammonia?
 
 3. What precautions should be taken in re-charging?
 
-4. Describe in full detail the operation of a large absorp-
-tion type machine.
+4. Describe in full detail the operation of a large absorption type machine.
 
-. e *
-Sas > ee Som
 Pa HG. Aaa ere
-; . Maat 55
-
-Domestic Refrigeration 5,423
 
 ## CHAPTER 223
 
-Domestic Refrigeration.—By definition, domestic refrigera-
-tion 1s refrigeration on a small scale as accompanied by a self-
-contained unit with automatic control, fool proof and of suttable
+Domestic Refrigeration.—By definition, domestic refrigeration 1s refrigeration on a small scale as accompanied by a selfcontained unit with automatic control, fool proof and of suttable
 size for household use.
 
 The term electric refrigeration 1s misleading.
@@ -18836,8 +13964,7 @@ furnish the power to perform the cycle, that is, to drive the compressor.
 Details of domestic refrigeration systems are given in the
 sections following.
 
-Compression Systems.—There are two general type of com-
-pressor apparatus classed according to the method of expanding
+Compression Systems.—There are two general type of compressor apparatus classed according to the method of expanding
 the refrigerant and known as
 
 1. Dry system.
@@ -18848,41 +13975,21 @@ b. Capillary tube.
 
 2. Flooded system.
 
-5,424
-
 7 to 8,679.—Various methods of expanding the liquid. Fig. 8,,677 by expansion valve; fig. 8,678, by combination
 
 float valve and adjustable orifice; fig. 8,679, by capillary tube.
 
 ### CAPILLARY
 
-_
-
-~—
-
-:
 <3] \_Till 2
-yj. — >
-2o i
+
 "IO Cae. y;
-a iO
-< a
-Si
-
-"
-
->
-
-Pg
 
 aceal
 
 ### EXPANSION VALVE
 
 Fics. 8,6
-
-f=
-é
 
 In the dry system, the refrigerant
 1s admitted into the expansion coils of
@@ -18906,8 +14013,7 @@ a cabinet to be cooled, namely,
 2. By brine circulation.
 
 These methods have been
-fully described and need no fur-
-ther explanation.
+fully described and need no further explanation.
 
 Compressors.— There are
 three types of compressors used:
@@ -18918,14 +14024,11 @@ three types of compressors used:
 
 Reciprocating type compressors
 are generally either of single cylinder
-or double cylinder construction, hav-
-ing discharge and intake valves of
+or double cylinder construction, having discharge and intake valves of
 varied differences of construction.
 The compressors may be belt driven,
 gear driven, or adtrecily connected to
 the motor.
-
-Domestic: Refrigeration 5,425
 
 Condensers.—The condensing element is usually one of three
 types:
@@ -18935,115 +14038,29 @@ types:
 
 3. Air cooled by means of a forced fan draft.
 
-EON
+### POIRIER RE I
 
-### SILILILISIMMMMMOMA
-
-\AXK KX AK KM XX KRAKAAARKMEM MMMM ee x OM KM x Mt
-POIRIER RE I
-
-x)
-
-oe
-© 02 0°e' @ 6°2'S'6 6°O'0"b"s 6° 6" 0" a" bn' bs" OO" 0% nA ey sn, 0 OO van © 0" "ae" O'O"a% sa a~m' ie' My*
 a IS a GG? 2% F000 0808555 a Maeno s,
-')
-
-Ahk MMMM MMM dha Ma hh Ahh hill ll tel.) 7 77777
-
-Ue
-
-SAANAAANAAAARARARR \\
 
 van!
-y |
 
 saete
-on beg Sunueeea _
-ih 5 dul | Ay' | ag tcacateiereoe, ae
-{ e .
-
-bre y
+on beg Sunueeea
 
 Oryx
 
-W\/
-x
-
-OY)
-
-o.®
-
-LA
-~
-
-c
-SOC SC eote%e
-QO
-
-)
-ROO)
-
-LAA
-OY
-
-oF
-%,
-
-e@
-
-er
-
 90056508. fatare
-
-os
-
-o,
-
-\)
-ef onete
 
 an aaa a
 
-scene OSORIO S058.
-
-O)
-
-Ox)
-
-OO
-% OO)
-
-C) 0S
-
-'
-@2
-
-### BOB A DOY A
-
-oh Ugh
-
->
-Om
-
-x )
-
-a ®
-
 22,2
 
-eg
-i. .
-
-ZHIGH PRESSURE S02 LIQUID |
-" " SO2 GAS |
+ZHIGH PRESSURE S02 LIQUID
+" SO2 GAS
 
 n v | S$Q2 GAS
 
-WH S02 OIL
 Fic. 8,680.—Kelvinator flooded system cycle.
-
-5,426 Domestic Refrigeration
 
 Motors, Control Mechanism, Valves, Stuffing Box, Ete.—
 Motors of fractional horse power capacities to 1 h.p. and over
@@ -19052,95 +14069,36 @@ of various industrial types are the prime movers of any electric
 refrigerator.
 Control mechanisms are either of the following types:
 
-es. a
-——
-
-wr Se
-ASE et
-acy, : da
 Ate
-
-Al
-
-Ta
-ys ;
-
-### AS -
-
-el ai a A eS A a ae oo
-- =
-
-. ee ee 0 ee es + oe eee ow eee
 
 SUS EEE. | IE ge
 
-ce Sm re ee we ce ee en
 SS TE tne eee 6 eet ee we
-a SA A ee er ce A i, ee LS "oe
-. ee ee oe eee ee awEreETe @ eure. © ese wes ewe coe
-Sonatas aintadllaenimeel °°: eee ewe oe een eee coe
-owe cae cungeceee @ cE «> eee wes «= eee Gh eee owe
-— ain ee ele © CE eee eee eee eee = ee ee
-— oe Cee oe cr eo oe ee
-—= ees ee eee emer ee ee i
-
-### MQM AMAA
-
-VJ
-|= : |
-aa RARER |
-
-mL LLL
-
-oe
-ee Ow ww ae oe OM Owe ec es Pee eet fe Oe ee
-
-@ oo"
-@
-e
-Sa ea oe eer er ae
-o'o #0 *efe, oe store, — wtelaletelt ee! elet ao 3
 
 ### HIGH PRESSURE SO, LIQUID
 
-eS
 HIGH { ee)
 =>, SIDE " " S02 GAS =
 E@Rg LOW PRESSURE SOp LIQUID AND Gé =
 
-WS " S02 GAS <
 WB KELVINATOR S02 OIL
 
 Fic. 8,681.—Kelvinator dry system cycle.
 
-Domestic Refrigeration 5,427
-
 1. Pressure type;
 2. Thermal type.
 
-Service and shut off valves are usually required on the average refriger-
-ating system. In many compression systems where the drive is by belt or
+Service and shut off valves are usually required on the average refrigerating system. In many compression systems where the drive is by belt or
 gear involving the use of a compressor drive shaft, a stuffing box is a primary
 element.
-
-as
 
 ### COMPRESSOR UNIT
 
 CONTROL : =
 
-: ne
-
 ### CABINET TOP
 
-}
-
-v
-
-SUPER FREEZER —> | rammemnee
-
-Fic. 8,682.—General electric domestic refrigerator unit. Exterior view showing general appear-
-ance. This unit fits on top of the refrigerator.
+Fic. 8,682.—General electric domestic refrigerator unit. Exterior view showing general appearance. This unit fits on top of the refrigerator.
 
 The function of the stuffing box is that of a packing gland to prevent
 leakage of the refrigerant by sealing the compressor drive shaft.
@@ -19150,48 +14108,29 @@ example of how the compression cycle is applied in a small unit
 for household duty the following brief description of the General
 Electric refrigerator is here given.
 
-5,428 Domestic Refrigeration
-
 Fic. 8,683.—Rice automatic control by temperature. The electric circuit to the motor is opened
 and closed by the tilting of the mercoid switch A, which causes the mercury to flow from one
-end to the other, making or breaking contact with the terminals. The power element B, con-
-sists of a metal bellows containing a gas which quickly expands with a slight rise in temper-
-ature. When temperature increases, the power element exerts an upward push on the stem
+end to the other, making or breaking contact with the terminals. The power element B, consists of a metal bellows containing a gas which quickly expands with a slight rise in temperature. When temperature increases, the power element exerts an upward push on the stem
 C, forcing up the lever D, which rocks the mercoid switch to the left closing the circuit. A
 decrease in temperature causes the power element to contract and the large adjusting spring
 at E, throws the switch back, opening the circuit. Spring F, gives the required snap action
-to the switch and is necessary for the proper operation of the control. _ :
+to the switch and is necessary for the proper operation of the control. _
 
-—_
-
-a
 Onn
-
-al
-
-ap ed
-Zz a
 
 Fic. 8,684.—Rice automatic control by pressure. The electric circuit to the motor is opened
 and closed by the tilting of the mercoid switch A, which causes the mercury to flow from one
 end to the other, making or breaking contact with the terminals. The power element B,
 consists of a metal bellows to which is attached a stem C. The bellows within B,1s connected
-direct to the refrigerant on the low pressure side. Experience has shown that there is a con-
-stant relation between the low side pressure and the temperature of the cooling unit. It is,
+direct to the refrigerant on the low pressure side. Experience has shown that there is a constant relation between the low side pressure and the temperature of the cooling unit. It is,
 therefore, possible to control temperature by controlling the low side pressure. As the low
-side pressure increases (unit closed down) the bellows power element expands pushing down-
-ward on stem C, and lever D, which rocks the mercoid switch to the right and closes the cir-
-cuit. Running of the unit causes a decrease in low side pressure allowing the bellows element
+side pressure increases (unit closed down) the bellows power element expands pushing downward on stem C, and lever D, which rocks the mercoid switch to the right and closes the circuit. Running of the unit causes a decrease in low side pressure allowing the bellows element
 to contract. The adjusting spring at E, then throws the switch back, breaking the circuit.
 
 Fic. 8,685.—Cutaway aan 3 al E relrigerator machine. The parts are: 1, main
 f-amc; 2, rotor; 3, maim shaf 4 bearing plate; 5, piston; 6, c) linder; 7, muffle box; 8, ol
 screen; 9, unloader; 10, surge chamber: 11. « k Valve plung ; 12, unloader tube; 13,
 suction tube; 14, supporting springs.
-
-5,430 Domestic Refrigeration
-
-'
 
 The General Electric compressor is of the oscillating type.
 
@@ -19208,42 +14147,21 @@ The refrigerating unit consists of five principal parts.
 
 alia ical sia?
 
-CLL Tf LILLE
-LULL LTT WWII IIT 01
-CLLR ULL LLL OO
-LUN
-CTL LLL OR
+### CLLR ULL LLL OO
 
-'TAL hii :
+### CTL LLL OR
+
 erent CLL ERI CON DENSING
 
-### LEM -CO ILS
-
-} | CLL gp LLL
-
-= ae LMM isp
-ch |
-
 SHAFT | CLEC
-nL
 
-LD
-cp, LE LLL ET
 Uk LOAD LUE FLOAT
-| CHL LL LLL
+CHL LL LLL
 , y VA VE. LMU aS CHAMBER
-. CLL LLL
-CHECK oe ts Dp 2 Ol FROM ells OME pp
-VALVE j= s+ man Llp Di 'Ui; Uy; Mati UU Mt MP CLT MMM
-MULT TT I7 —
-4 ———t y YLINDER CLL ILL
+
 iS pars one ei BC MULT) TTT)
-eA Fe A she A STON CLL ip LLL
+
 eat, Fee print LL || LLL
-
-MLL 7)
-
-GIITI re.
 
 -EVAPORATED GAS
 OUTLET TUBE
@@ -19252,26 +14170,20 @@ OUTLET TUBE
 
 ### CHILLING UNIT
 
-me r be oe ey See Te . TES Pay ae Bin,
 Sie races PES ARE cae = tvs sits ee at by
-Ses pre nee 2 RWIS 'aii "Vass tania Os ee wetive Ay
+
 ' : aie
 Canes
 
 FREEZ | NGO TR AYS neonate SS =F: we
 
-<=) au ee Glee aie Ge eee cee oe ewe ew ew ewes ase cop oo eh
-
-Pickcosmnnenscssasate BM \ LIQUID.
-' ! SUPPLY TUBE
+! SUPPLY TUBE
 
 ### FREEZING TRAY
 
 — sagen SUPPORT
 
 Fic. 8,686 —General Electric refrigerator unit. Diagram showing parts and cycle of operation.
-
-Domestic Refrigeration 5,431
 
 Compressor unit.—This unit consists of the motor and compressor,
 together with the main frame on. which they.are mounted. The assembly is
@@ -19283,20 +14195,7 @@ The motor is of the single phase induction type.
 The compressor is of the single oscillating cylinder type on the small
 units. As the piston 1s moved in and out by the action of the crank pin, the
 
-nr 0 SRR RO AOC nee ore wr tn
-
-Seek es SRS
-LER | BR Ne
-
 See
-
-SN oe
-
-ee an ates Ree Ses SR Le ee Soe ee sie aera sae ath eS ee
-
-Se oe
-
-ae 4
 
 Fics. 8,687 to 8,690.—General Electric bearing plate, crank shaft; piston and compressor of
 refrigerator. The parts are: 3, crank shaft; 4, bearing plate; 5, piston; 6, compressor; 15, oil
@@ -19310,8 +14209,6 @@ saben per minute, which is the rated speed of the motor.
 '. * The'base of the machine in whith the mechanism is mounted is shaped
 "like a bowl, which ds filled with d permanent: 'supply of: high grade mineral
 i. oil up to the level of-the bearing plate, thus forming an oil sump.
-
-5,432 Domestic. Refrigeration
 
 - we qween w+ or.
 
@@ -19335,28 +14232,26 @@ Float cham ber.—The fleat chamber is located:on the cabinet top to the
 right of the compressor. case. Its function is to accumulate liquefied
 refrigerant until there is a sufficient supply to raise the float valve, allowing
 
-' liquid, but no vapor to return to the evaporator as it is needed.
+liquid, but no vapor to return to the evaporator as it is needed.
 
 Evaporator.—This is located on the underside of the cabinet cover as an
 integral part of the whole refrigerating unit. Its function is to refrigerate
 
-_ the cabinet. It is made of two steel sheets, one of which is corrugated.
+the cabinet. It is made of two steel sheets, one of which is corrugated.
 . These are folded into shape, with the upper part of the inner and outer
 
-| sheets -forming a cylindrical header and are then electrically welded and
+sheets -forming a cylindrical header and are then electrically welded and
 
 AZ i tegether. .This construction gives in effect a series of parallel tubes
 RLE Aifing 'around the outer surface of the evaporator and opening into the
 header or refrigerant reservoir.
 
-The liquid refrigerant is admitted from the float chamber into the evap-
-orator where it evaporates, absorbing heat from the interior of the cabinet.
+The liquid refrigerant is admitted from the float chamber into the evaporator where it evaporates, absorbing heat from the interior of the cabinet.
 The interior of the evaporator is made to accommodate ice freezing trays,
 two of which are set side by side and in direct contact with the floor of the
 evaporator for fast freezing.
 
-The control.—This is located on the cabinet top at the left of the coni-
-pressor case and consists of
+The control.—This is located on the cabinet top at the left of the conipressor case and consists of
 
 1. A switch to throw the unit On or Off manually;
 
@@ -19368,54 +14263,37 @@ changes in the evaporator when the manually controlled switch is On.
 
 Temperature control is accomplished by a metallic bellows, t to which 3 1S
 
-Y
-
-- ds
-
 attached a copper tube, the end of which is fastened to the evaporator.. The
 
 bellows and tube contain a supply of sulphur dioxide to evaporate with a
 
-Domestic Refrigeration 5,433
-
-(EB viquio J
-
 4 w pressure ¢ ZZ
-Vill ae meal pon
+
 [MM 1c pressure
 ul GAS
 
-' C.
-
 AAAAAARAN AR RRR RRR RR REEL EAR RRRREE RAR RRR eeneenennennett
-
-Ss
 
 Fic. 8,691.—Operating cycle of Rice methyl chloride direct expansion refrigerating unit. The
 refrigerating effect is due to the latent heat of vaporization of the methyl chloride, that is,
 'the amount of heat taken out of the surrounding air when the methyl chloride boils. The
 'liquid methyl chloride starts vaporizing when released through the capillary tube O. It then
-boils or vaporizes in the cooling unit C, taking heat from the surrounding air inside the refrig-
-erator. This vapor is conducted to the suction side of the compressor S, usually reaching it
+boils or vaporizes in the cooling unit C, taking heat from the surrounding air inside the refrigerator. This vapor is conducted to the suction side of the compressor S, usually reaching it
 _in a slightly superheated condition. The compressor then forces the vapor or gas into the
 -condensing element K, where it is liquefied by cooling by a flow of air over the coils while
 _the vapor inside is under pressure. It collects in liquid form in the bottom of the coils K, and
 is then allowed to return to the cooling unit C, through the capillary tube O. It should be
 noted that the resistance due to the constricted opening in the capillary tube O, causes it to
 act as an expansion valve. The tube builds up a back pressure in liquid feed line or high
-' pressure side, and at the same time relieves it at low pressure into the low pressure side or
+pressure side, and at the same time relieves it at low pressure into the low pressure side or
 "cooling unit and suction pipe line.
-
-5,434 Domestic Refrigeration
 
 resultant increase in the pressure. This increase in pressure actuates,
 through the metallic bellows, a switch which starts the motor.
 
 Conversely, a decrease in temperature causes reduction in pressure,
 which opens the switch and stops the motor. The temperature may be
-adjusted by increasing or decreasing the tension on the temperature adjust-
-ing spring. This may be accomplished by means of the temperature adjust-
-ing dial which is on the front of the control. This allows the owner to adjust
+adjusted by increasing or decreasing the tension on the temperature adjusting spring. This may be accomplished by means of the temperature adjusting dial which is on the front of the control. This allows the owner to adjust
 the cabinet temperature by a simple movement of the dial.
 
 The motor is protected against overload by means of an overload trip
@@ -19429,17 +14307,14 @@ in circuit with the starting winding. In the larger units one point of a
 capacitor is in circuit with the starting winding. Then when the motor has
 come up to speed, the starting winding is connected to another point on the
 capacitor unit and thereafter the motor runs as a polyphase motor. The
-capacitor on the larger units serves the. purpose of increasing the power fac-
-tor and decreasing the starting and running current.
+capacitor on the larger units serves the. purpose of increasing the power factor and decreasing the starting and running current.
 
 Cycle of operation.—When the switch is closed and the motor is
-started, the pump begins to suck the sulphur dioxide vapor from the evapor-
-ator through the suction line. This reduces the pressure on the sulphur
+started, the pump begins to suck the sulphur dioxide vapor from the evaporator through the suction line. This reduces the pressure on the sulphur
 dioxide liquid and allows it to boil or evaporate freely.
 
 As the sulphur dioxide changes from a liquid to a vapor, it absorbs heat
-from the interior of the refrigerator. The function of the rest of the refriger-
-ator mechanism is then to reliquefy this vapor and. feed.it back to the
+from the interior of the refrigerator. The function of the rest of the refrigerator mechanism is then to reliquefy this vapor and. feed.it back to the
 evaporator. The pump, sucking the vapor from the evaporator, compresses
 it into the steel compressor case.. From there the compressed refrigerant gas
 
@@ -19458,8 +14333,6 @@ bearings, from whence it drips back into the sump.
 The oil pressure also operates an unloader, which equalizes the pressure
 on both sides of the main piston whenever the unit stops, thereby reducing
 
-Domestic Refrigeration 5,435
-
 the starting torque required and permitting the use of a smaller motor than
 would otherwise be required.
 
@@ -19467,7 +14340,7 @@ When the unit is running, the oil pressure forces the unloader plunger
 upward, thereby closing a small by-pass valve. As soon as the unit stops,
 the oil pressure decreases, allowing the unloader plunger to drop, and there-
 
-_ by opening the by-pass valve. This allows compressed vapor to enter the
+by opening the by-pass valve. This allows compressed vapor to enter the
 \suction side of the pump. The rush of compressed vapor also closes the
 check valve, preventing this vapor returning into the super-freezer.
 
@@ -19476,8 +14349,7 @@ the\check valve drops open and the unit resumes normal operation.
 
 Multiple Refrigerating System.—Some apartment buildings.
 have instead of individual refrigerating units, @ central plant
-located 1n the basement or other remote place, and furnishing refrig-
-eration to each apartment by pipe line. This is knownas a multiple
+located 1n the basement or other remote place, and furnishing refrigeration to each apartment by pipe line. This is knownas a multiple
 refrigeration system and it includes all systems in which the
 refrigerant is circulated from a common source to two or more
 separate refrigerator cabinets, each containing one or more
@@ -19485,33 +14357,25 @@ evaporators or chilling units.
 
 There are two general classes of these systems, namely
 
-_ l. Brine piping systems.
+l. Brine piping systems.
 2. Vapor piping systems.
 
 The brine piping system comprises one or more commercial compressors:
 placed in a machinery room which is generally located in the basement of the
 apartment building. A cold brine solution at a temperature of about 9°
-Fahr. is pumped through heavily insulated pipes into the refrigerator cab-
-inet of each apartment kitchen.
+Fahr. is pumped through heavily insulated pipes into the refrigerator cabinet of each apartment kitchen.
 
 The vapor piping system comprises one or more commercial compressors.
 installed in the basement and a cabinet containing a cooling coil placed in
 each apartment kitchen refrigerator box.
 
-Copper tubing and piping are used to connect the machines in the base-
-ment with the coils in the apartments. The refrigerant liquid is circulated
+Copper tubing and piping are used to connect the machines in the basement with the coils in the apartments. The refrigerant liquid is circulated
 through these tubes into the cooling coils of each cabinet, and the refrigerant
 gas returned to the compressor in the basement.
 
-5,436 Domestic Refrigeration
-
 Fic. 8,692.—Servel apartment house installation with header and. riser .piping system.
 
-Domestic . Refrigeration 5,437
-
 Fic. 8,693.—Servel apartment house installation using the manifold system.
-
-5,438 Domestic. Refrigeration
 
 There are two general methods of piping, known as
 1. Header and riser system.
@@ -19519,15 +14383,13 @@ There are two general methods of piping, known as
 
 These are shown in figs. 8,692 and 8,693.
 
-Typical Absorption type Domestic Refrigerator.—As an ex-
-ample of how the absorption cycle is applied in a small unit for
+Typical Absorption type Domestic Refrigerator.—As an example of how the absorption cycle is applied in a small unit for
 household duty, the following brief description of the Servel
 Electrolux refrigerator is here given.
 
 The strong liquid (distilled water and ammonia only slightly stronger
 than household ammonia) is heated by the gas flame in the generator. The
-ammonia vaporizes and passes into the rectifier, where a constant tempera-
-ture 1s maintained by the evaporation of ammonia from the previously
+ammonia vaporizes and passes into the rectifier, where a constant temperature 1s maintained by the evaporation of ammonia from the previously
 liquefied ammonia in the bottom of the U tube. The ammonia then passes
 from the rectifier through the water cooled condenser, where it is cooled and
 liquified, the liquid ammonia flowing back into one leg of the rectifier.
@@ -19548,9 +14410,7 @@ which has been cooled in its passage from the generator. The liquid readily
 absorbs practically all the ammonia in the gas mixture. Heat is given off
 when the ammonia dissolves in water, so the absorber must be cooled.
 
-The hydrogen being insoluble in water and being lighter than the incom-
-ing mixture of ammonia and hydrogen, rises and flows again to the evap-
-orator, which is at a slightly higher level than the absorber.
+The hydrogen being insoluble in water and being lighter than the incoming mixture of ammonia and hydrogen, rises and flows again to the evaporator, which is at a slightly higher level than the absorber.
 
 The mixture of water and ammonia sinks in the absorber and passes by
 gravity back to the lower section of the generator. It is lifted from this
@@ -19559,93 +14419,15 @@ applied at this point. The heat supplied not only lifts the liquid from the
 lower level in the generator to the higher level in the generator, but also
 releases ammonia from the strong liquid to repeat its cycle.
 
-9,439
-
-"3x97 SutAuedwod ©
--d8 94} UI poure/dxa si uoT}eIedo jo ajDAD asoym 'JOJelasUjel BYsawiop adA} uoNdiosqe xnjoOI}DaIq JO MILA [eUOIIIIS— PEQ'g "DIY
-
-rl
-
-### YIJONVHDXS
-
 Jaaas
 
-uYasYOSEY
-
-### LFINI
-
-### YALVM
-
-### ONITOOD
-
-(e
-: ral!
-fa am lnedel ifhlta bald iLeseILIb Ils VLLE TLE LILEILIELILILILILIITEYTSEGLIVITIVIDITITIIITILINT NY Lien >
-
 nF CE FL SEI PLEASES YUERALA IM CT PERN YO
-ESI EP 2
-
-Cd
-|
-an
-
-|
-
-Sus |x 0088
-x
-iat malta! YAONVHIDXS LVWSH SY
-
-GINdi4q
-YV4IM
-
-ON Ad 3SNS
 
 ainon
-2NOULS |
 
 TEEPE RPP OREOT MDE eee.
 
-### SSIS :
-
-Bare a PRP ee ae
-NNQAAAAAANAAANANMAAAAARARANAAAAINT
-
-SASVv9 z
-NA90HQAH Fog ef ER Dell ees
-ONV VINOWWY B76
-| Mw LV Ce ye
-svo  FAEK Bl PP f
-N3A9D0NGAH [Foc 5 oe .
-: Ye: a, y Z
-Y, VAS Z G
-Bee 47 AY
-andi YY Yj % AU
-
-Witty wm I\\ «5  -@: nano.
-
-|
-
-——=_
-
-ww
-wo oe ~ .
-
-iii Fs
-
-~~
-
-—
-"m= ©
-
-YOLVEOdWAa
-
-Va
-aa rw -
-LATLAO UBLYM ONINOOD-7 Eerste eg e
-
 ads
-
-5,440 Domestic Refrigeration
 
 Service Instructions.—First try to locate the source of trouble
 before tinkering with the plant. By doing this much time and
@@ -19658,8 +14440,7 @@ which frosts the suction line outside of the cabinet.
 There are three causes, and they should be checked in the following order
 to save time:
 
-First, the charge may be low allowing the float to stand in a half open posi-
-tion and a gas and liquid mixture blows through. This can be checked by
+First, the charge may be low allowing the float to stand in a half open position and a gas and liquid mixture blows through. This can be checked by
 opening the test cock on the receiver and bringing the reserve charge up to
 this point. This indicates a full charge and a reserve.
 
@@ -19689,11 +14470,8 @@ Dead Chilling Units.—If this occur on an installation having
 only one cabinet on one machine with pressure control, the
 machine will operate very little or not at all.
 
-Domestic Refrigeration 5,441
-
 If on a multiple system, it is possible to have one.or more dead chilling
-units and yet have the machine operating on the others. Proceed to elimi-
-nate' the possible causes in the following order:
+units and yet have the machine operating on the others. Proceed to eliminate' the possible causes in the following order:
 
 No current to machine:
 
@@ -19732,8 +14510,6 @@ This will occur only when the water supply is inadequate, or
 when the machine has an excess of reserve refrigerant in the
 'condenser.
 
-5,442 Domestic Refrigeration
-
 Incorrect Orifice Adjustment.—The smaller the gas orifice in
 the rear of the float shell body the more oil and refrigerant will
 be drawn through the oil return tube.
@@ -19744,8 +14520,7 @@ on the suction gauge, for methyl] chloride refrigerant, and one or two turns
 of the vaporizer should be frosting freely when the machine reaches cut off
 pressure. This means that some oil, methyl mixture will be drawn out all
 through the run, and under these circumstances, the float cannot oil bind.
-When near the correct adjustment a quarter turn left or right on the adjust-
-ment will make a great deal of difference in performance.
+When near the correct adjustment a quarter turn left or right on the adjustment will make a great deal of difference in performance.
 
 In domestic or apartment house chilling units, or submersion coils having
 the 7% in. fixed orifice the oil binding may be caused by too many chilling
@@ -19768,12 +14543,9 @@ The only remedy is to remove the float head and clear the strainer or tube.
 Plugged Line Filter.—In some cases it is remotely possible
 that the liquid line or the liquid filter may become plugged
 from an excess of dirt in the system. This will cause a dead
-chilling unit and the plug can be located by cracking connec-
-tions successively until the joint is found where the liquid
+chilling unit and the plug can be located by cracking connections successively until the joint is found where the liquid
 stops. Mashed or kinked tubing is the most frequent cause
 of this trouble.
-
-Domestic Refrigeration 5,443
 
 Continuous Operation.—This may simply be a symptom of
 some of the troubles previously considered.
@@ -19789,8 +14561,7 @@ Compressor Not Pumping Full Capacity.—This may be
 caused by bad suction or discharge valves, worn rings, etc.
 
 Chilling Unit Fails to Frost Fully During Run.—Sometimes
-on a chilling section installation, the first sections on the cir-
-cuit will frost freely during the run while the latter sections
+on a chilling section installation, the first sections on the circuit will frost freely during the run while the latter sections
 near the return connections to the float valve will not frost.
 
 Under these circumstances, the sections that do not film with frost are not
@@ -19801,8 +14572,7 @@ Under any circumstances, the section connected to the float outlet will be
 colder than the one at the opposite end of the circuit connected to the return
 inlet. This is true because the first section is fully flooded, and the last one
 carries a rather thin mixture of gas and liquid. It is not possible to have
-them at equal temperatures, but if properly regulated, all sections will oper-
-ate to film with frost and be effectual in cooling the cabinet.
+them at equal temperatures, but if properly regulated, all sections will operate to film with frost and be effectual in cooling the cabinet.
 
 On float valve systems the flow of refrigerant through the
 section is governed by the frequency of lowering of the float
@@ -19816,8 +14586,6 @@ take care of any normal set of sections.
 The further the orifice is reduced by adjustment the greater the quantity
 of liquid drawn out, and consequently the more active the sections will be.
 
-5,444 Domestic Refrigeration
-
 The best criterion for this adjustment is the condition of the line which
 returns gas and liquid from the sections to the float valve shell. If liquid
 be kept flowing in this line during the run the maximum effect will be
@@ -19828,9 +14596,7 @@ even surges, as the float opens and closes, but for maximum results a frost
 film should be apparent on this line, clear to the end of the run.
 
 If this line persist in defrosting near the end of the run, the sections are
-being starved, and the orifice must be run in further to increase the refrig-
-erant flow. If, when this adjustment is secured, the frost line on the vapor-
-izer has followed the suction line outside the cabinet or in extreme cases back
+being starved, and the orifice must be run in further to increase the refrigerant flow. If, when this adjustment is secured, the frost line on the vaporizer has followed the suction line outside the cabinet or in extreme cases back
 to the machine, the only remedy is to add extra vaporizer surface. In any
 case, an excess of vaporizer coil will not have any unfavorable effect if
 extremes are avoided.
@@ -19843,8 +14609,7 @@ The possibilities should be checked in the following order:
 
 1. Insufficient water flowing.
 
-This may be due to misadjustment of water valve, line pressure, or mineral sed-
-iment plugging lines or valve.
+This may be due to misadjustment of water valve, line pressure, or mineral sediment plugging lines or valve.
 
 2. Water supply warm.
 
@@ -19860,8 +14625,6 @@ the side of the condenser.
 Ice Collecting on or Below Sections.—This trouble is caused
 by too low a cut on pressure.
 
-Domestic Refrigeration 5,445
-
 The machine starts up before the last of the frost has melted off. It
 becomes harder to deal with when there is insufficient clearance between the
 bottom of the sections and the pan or deck. Keep the clearance wide and
@@ -19876,7 +14639,7 @@ and overestimated the demand on another.
 
 This results in equipment that gives temperatures below normal in one
 
-_ or above in another, with normal control settings. The best way to correct
+or above in another, with normal control settings. The best way to correct
 
 such a condition is to add one or more sections to the chilling unit whose
 
@@ -19884,8 +14647,7 @@ cabinet is too warm. It can sometimes be remedied by removing one or
 
 more sections from the cabinet that 1s too cold, but this should not be
 
-done unless the machine has sufficient capacity to take care of the equip-
-ment at lowered suction pressures.
+done unless the machine has sufficient capacity to take care of the equipment at lowered suction pressures.
 
 Chilling Units That Will Not Defrost During Idle Period.—
 This is caused by setting at too low a cut on pressure.
@@ -19900,15 +14662,12 @@ Float Valve Leaks (Mayflower).—If for some reason the float
 valve be prevented shutting off liquid supply at proper level,
 the refrigerant will be drawn through suction tube to crank
 case causing refrigeration and a formation of frost to take
-place at these points. |
+place at these points.
 
-Sometimes there is insufficient liquid reserve in the receiver under com-
-pressor base to permit the liquid level in cooling unit to rise to a point where
+Sometimes there is insufficient liquid reserve in the receiver under compressor base to permit the liquid level in cooling unit to rise to a point where
 back frost will occur, and in this case only compressed vapor will be forced
 through float valve, causing a gurgling sound in cooling unit like air being
 blown under water. If this condition exist, compressor will be running at
-
-5,446 Domestic Refrigeration
 
 short intervals or continually, also a very low reading will be noticed if
 pressure gauge be attached to condenser shut off valve. To remedy this
@@ -19918,8 +14677,7 @@ If during this process frost should appear on suction tube, it is a sure sign
 that the float valve is not seating properly. This condition while rare,
 occurs shortly after a machine has been installed and is largely caused by
 careless handling of cooling unit in transportation. The trouble can usually
-be rectified by allowing system to remain idle for about 12 hours. (Refrig-
-erator doors should be left open during this period.)
+be rectified by allowing system to remain idle for about 12 hours. (Refrigerator doors should be left open during this period.)
 
 The rise in temperature in cooling unit causes the liquid to expand and
 its level to rise, thus forcing the float valve needle firmly into its seat.
@@ -19938,12 +14696,10 @@ Stop compressor and apply blow torch to under side of receiver tank
 about 120 lbs. pressure.
 
 Open liquid valve on compressor and allow liquid to rush under great
-velocity, through now wide open float valve. The general effect of this pro-
-cedure is to wash out any foreign matter that may have become imbedded
+velocity, through now wide open float valve. The general effect of this procedure is to wash out any foreign matter that may have become imbedded
 in float valve seat.
 
-If, after all the methods just mentioned have been tried the system con-
-tinue to back frost, it will be necessary to replace cooling unit.
+If, after all the methods just mentioned have been tried the system continue to back frost, it will be necessary to replace cooling unit.
 
 Float Valve Stuck (Vay/flower).—If float valve do not open,
 all the refrigerant in cooling unit will be pumped into receiver,
@@ -19952,48 +14708,20 @@ causing little and eventually no refrigeration.
 When this condition occurs, it is sometimes traceable to the needle point
 being wedged into its seat. To loosen, take a small piece of wood and place
 with end of grain against body of cooling unit directly above the float shut
-off valve and strike with short, sharp blows with small hammer. This pro-
-cedure is usually successful in jarring needle out of its seat, permitting
+off valve and strike with short, sharp blows with small hammer. This procedure is usually successful in jarring needle out of its seat, permitting
 float ball to drop and liquid to flow into cooling unit until proper level is
 reached, at which point float valve will shut off.
 
-'jin UWONeIasUJaI SIYsoWIOp IdMOpARPY— 1.69'g 01 G69'g "SOIT
-AYOD NI-ONId
-
-JANA gy
-440 LMHS "208
 3 (2. = > ag
 
-INHS GOSS I8dN0)
-
-5,447
-
-340 LMHS
-YOSSIYdWOD
-
-Jo4puoD a4nzva\ diay,
-
-JNIVA 4450
-
-—— | |
-
-_LNHS Y3SNIONOD
-
-SAA
-d40-LNHG
 isvow
-
-—
-
-5,448 Domestic Refrigeration
 
 If the proper results be not obtained by this method, it is possible that
 some foreign substance is lodged against outer orifice of float valve. To
 remove this obstruction, proceed as follows:
 
 Remove plug from liquid valve and attach empty or partially empty
-service cylinder at B-3 (see fig. 8,695). Discharge liquid into service cyl-
-inder, thus relieving head pressure in compressor. Close valve on service
+service cylinder at B-3 (see fig. 8,695). Discharge liquid into service cylinder, thus relieving head pressure in compressor. Close valve on service
 cylinder.
 
 Apply blow torch to tubing, leading from service cylinder to liquid valve,
@@ -20015,13 +14743,11 @@ obstruction.
 During this procedure rap float shut off valve body above liquid valve
 with piece of wood and hammer.
 
-Leaky Crank Shaft Seal.—This trouble is detected by meth-
-ods depending on the kind of refrigerant employed. In an SO,
+Leaky Crank Shaft Seal.—This trouble is detected by methods depending on the kind of refrigerant employed. In an SO,
 machine a leak is detected by the smoke test.
 
 Air in System.—A defective crank shaft seal, flare nut or
-tubing will cause air to enter through the suction or low pres-
-sure side.
+tubing will cause air to enter through the suction or low pressure side.
 
 Air, being a non-condensable gas, will cause a high head pressure in the
 condenser coils.
@@ -20030,8 +14756,6 @@ High head pressure indicates air in system or too much refrigerant.
 
 If the compressor motor run in the wrong direction, the condenser will
 not get a sufficient blast of air. This results in overheating and high head
-
-Domestic Refrigeration 5,449
 
 Purging System of Air. (Mayflower).—Shut off compressor
 and allow to remain idle for ten minutes.
@@ -20046,19 +14770,13 @@ or in pail of lye water.
 
 VALVE f—
 
-ODiiitis
-
 ### FLOAT VALVE
 
 BODY
 
-ON Cn
 OFF VALE|3 C
 
-= SEILER CELIA OEE
 so... NEEDLE |
-
-7 '
 
 Fic. 8,698.—Mayflower float valve. The function of the float valve is to maintain a constant
 level of liquid sulphur dioxide in cooling unit, and if functioning properly, will shut off liquid
@@ -20072,20 +14790,16 @@ into the crank case, assuring lubrication of all moving parts.
 Moisture in System.—If moisture come in contact with SOs,
 sulphurous acid (H2SO3) will be formed.
 
-5,450 Domestic Refrigeration
-
 This acid has a corrosive effect on the highly polished cylinder walls and
 causes the piston to stick. In mild cases it is sometimes possible to break
 compressor loose by a rocking motion of fan wheel and by drawing a small
 amount of oil, about 14 pint in crank case.
 
-If above method be not successful, 1t will be necessary to dismantle com-
-pressor, thoroughly clean, dry and evacuate same. This is best done at the
+If above method be not successful, 1t will be necessary to dismantle compressor, thoroughly clean, dry and evacuate same. This is best done at the
 factory.
 
 This difficulty is rarely met with, but if it occur, it is invariably traceable
-to carelessness in installation, such as using tubing that has not been prop-
-erly dried or sealed after it 1s dried, or by allowing air to enter system,
+to carelessness in installation, such as using tubing that has not been properly dried or sealed after it 1s dried, or by allowing air to enter system,
 especially in humid or rainy weather.
 
 What is domestic refrigeration?
@@ -20101,28 +14815,22 @@ stuffing box, etc.
 7. What are the five principal parts of a refrigerating
 unit?
 
-Hm GW hs
-
 8. Give the cycle of operation.
 9, What is a multiple refrigeration system?
 
 10. Name two general piping methods used in multiple
-SySltEeMS .
 
 11. Describe in detail a typical absorption system.
 
 12. Give full instructions for operating and maintaining
 domestic refrigerators.
 
-Domestic Oil Burners _ 5,451
-
 ## CHAPTER 224
 
 Domestic Oil Burners
 
 Some knowledge of the fuel oils employed is essential to the
-intelligent operation of domestic oil burners. Fuels are de-
-rived from crude oils, obtained from different fields and vary
+intelligent operation of domestic oil burners. Fuels are derived from crude oils, obtained from different fields and vary
 considerably.
 
 Oil fuels are now commercially known as domestic fuel oils Nos. 1 ,2,
@@ -20131,9 +14839,7 @@ referred to as light, medium and heavy domestic oils; and light, medium
 and heavy industrial oils.
 
 For most of the domestic burners, the manufacturers recommend fuel
-oil No. 3, while many burn either Nos. 1 or 2 fuel. The No. 4, a light indus-
-trial oil, is recommended for a small number of domestic burners now man-
-ufactured.
+oil No. 3, while many burn either Nos. 1 or 2 fuel. The No. 4, a light industrial oil, is recommended for a small number of domestic burners now manufactured.
 
 Effect of Grade of Oil on Economy.—The grade of fuel that
 can be used is usually fixed by the design of the burner with
@@ -20158,132 +14864,49 @@ b. Automatic.
 
 2. Wit t to method of igniting, Pg
 . With respect to method of igniting, as. po. "8
-i] i : ' ni haw : ' ne rd uM i, ° 3 ae.
 
 a. Torch; :
 6. Pilot light.
 
 eoee
 
-@eereersceenecoe
-@veotsteresvneseeeseee
 eee eect eeeceeeveeees
-e@eees Caeeeeveereeeeeteeovensn
-eeee 8 +-@erereveseeceeverseaes
-a ee ee ee ee
 
 AIR HEATI NG fe EEE EE
 
-eee gj @@e@eceecreevesveeonene
-OR ee ee eS Pe
-
-Mie fe Es
-
 eeeceeoe see aeve
-@oecoeee og s¢eeeeee
-eevee éeéeeeceee
+
 oeeees jjjeescsvee
 eeeree Che ereereeeereeerereevneseeresr
-eeeee ééo-=ceseeeeseeseceerevreecereeseeeeeeenvneses
+
 eecees (eevee eevesvnesceeeceseeeneeceeeeres
-e@eeeee é-=§@eeeeeseeeeereerereevreeeceeereeceeveaeceees
-e@eceoee = jeececesveveeecsreevreeseeroveeeeeveecees
+
 eeeese 8 =ewe ee eres eser ere eereerecoeeevecarseesr
-meoeceeee q- -seeeeereeeeseveeeceesesneereseeeesaese
-eoeees jg. ~§ @e8eeserssevreecvsevenereceeceeceveveve
+
 cee e
 
 eee
-eee eeees eco ee Mm 0Utl elt
+
 eereeess eo ecee Me coce
-eoeeses 2c 0 0 0 0s Mm wee
-eee eee = woe ewe Fw we eee ee we oe wee Fant ee eee ee eec ve
+
 see eee = =—«»— wee eee we Rae e eet ace wae c coe Poorer eseecoeeeceen
-e-@ @ ee = tw we wee oe Me nee ee we eee wee Pee ereceeeteoeee sce
-Ce Ce ee RY ee ee ee
+
 Lie Seer ecco erocebheeeseeeerecercverpesecesneesereceedeves
 eoceoeaeeeeegenescamesteeceretsteorseoeene geese eeeeeereee eee
-SB@eeseséeeoeeeeeceoeGeceseeevvneveeeverv ese t¢eeveeeeeeeeeeeeeereee
-eeetCooeoeeeerscevneeeemesceseeeeeeceoeeortZF 2Oeeeeereewaneeeoeoaneeeen vee eo
-@ eos een eoescesee te wees eesteosesr e+ oO eeeeecesaereeesececsec es » oUiinse «
-ee CR a ee ey ee ee ee eS. «* Bey
-@eeeveeeeerereeseeceoeeoeseeMmeseo ete eeeveevse & 358} ee eee eeeaeeeesees eee © « oGe oe
-Cece eeeceeeeercceeccos Be fe eeeeeceee es +j~ = § "ee eeeesecesecceccec eo 0 Mie we
-@eeeeaecveeeGeoseeeeegevsoemeseoeevneeces oe -oe#- = qj "@s@@eeneerveveevecanevnee Pima eoe
-eoceceeecoereceoecor reece meeeeeoeee+ omy 8 =—=—=—=©=©=©=©=—= 6 weet te ee ee te eee 0 ome Be 0 ow
-@eceeeoeceooccseceeoosemeseeeeeesrece. = = j.j. """@eececeesevcocecnehe Mee
-Oe cee eee eaeeeveseeegoee Meeeceecaeesesee es - = j.|.- #$("@@ee2ceceeesces cf o oVip oe
-eeeees j= |. "@ ee eesesee
-e@eeeaeu i  — "9 @eeeeseee
-@eoeeuog i ——— ""@ e@ eeeeee
-CE ee, ns 3. i. ee Be be)
-ee wee he = = ee ee eee
-+ ee eee ner eeceerec eee etree ooo Meee eee ee eee ee = 6 —6—60606060UmUdlmldlmlUlUlUlUlUllll NO ee
-eee <s@#eeeeoeeeeeepeeeeeeceeaeeee Moeetoeeseeeesne Se eee. - = |. "ee @eseeee
-eee Ke eceeeeovesee eee tence rsec ees om ec eoeec esr eeee ceo beoeeseen
-5 ee SP Le CD
-ees e8 Cee eeeceeeeceeeereceeseocecer gp eceseecerserssecsKeovecese.
-e828 = <Se ere eee eroaeecareeoecarcecacMectev eco eses ea eBevcoveecsos
-eee ~~ eeeese eee eereeseeteseeereMeecsececceesereoes ehoescevecvce
-eee = Cee eereeeeeereeceosreesneee sc eo Meee eeconeconece esr ea eBeancesceve
-eee =— ew eee ee meee eo eee sees cee ec eo MM ee eee se Oe ete 0 oo eo ee woo oe
-e@eer ~@e@ ec eeeeeeeveeeeee eet eC epee care ve_erunrsereneec sc coc eMmeeveceove.
-eee = 6 0 0 0 0 0 0 8 8 0 0 0 6 6 0 0 0 0 6 0 e pe © 0 ee te ee ee eo we woe wt Me te core ee
-eco @e@eeseee¢eee00ees8 008 0 gg@igpewe ceeeceeee reer esee see es Mae ee 8 eee
-eee j -- @e@e¢eece eo eeeeeeee¢ « omer icc eseeeeeoe ese ese see ees 6 « SC Ue» sc oe oe
-eevee 8 ee @Geeegeersvreeeoevtasc sgpticeor ee -seevreetvensnerseservaeecs o Ue 2 0 oe
-eee #&= S8e te eereveeeenee ees epMmene ec ees eereveeeeeeeeseseenesevnseee PRO 8
-eee @&8 = = F¢e oO ewe woe eee wee eo 6 8 aM eo eo ee oe tres eeeeeeseeseeseeeoeseece se © oh ee Fe  j@840¢808
-oe ee wee eeeecneece seer ec ge Cee e - Ses ceoesereerserrteravreseoececencee Bee Joo | eeereac
-see 0 = tee oe 8 8 oe ee 0 0 eo em ee eee CC ee te ee eee eon e reer te secco ae he Poon 8 @esee
-7.8.8 = OO ee 0 eo oo oe 0 oe oe oe oe ee Oot ww ee we mee wee ee os eee eee eee em ove stove
-eeee 4g  @eee¢¢eeveeeeecneevneMeBeseenes eeeeeeesearereeneeerereeeeevr ee eveeeeoe Peeve + e@eeee
-eo e = =§_ Bo ww woe ee ee oot oe MM Be cee se. a esr ere eereesr ence eree ne ans eer e oe empeee ee © econ
-eee @  j«@@ @e@eeeeeeeveee MP eoMeseceeeveseaeeeeeeseerevseeeeeeeenses eee Meeese eeeee8
-@eoe 8 ,@e@ @e@eeeeeseeveoeve oc oe Geoeeeeevneees eee sees ee 8 aoe og pg pagan nanan & £2 ee © fe 8 ©
-ese @ @@e@eee@e@eeeeees¢ 0 0 Me onan 4 9 0444 oe eeeeeeeenmmngeerrmme ce ec ec elUC COC BCC 8
-eee = a ee oe eo oe wee 0 oo awe
-jeeeoeo 8 C8 w@eeaeeeeeevoevseee Mee EVES Cee eT he wwe ew 6—6—6hlhlCl OC OO 8
-kt PO, Ey Aan OO 0 Oe 0 ee Oe OO Be
-Ae © Oe ee Oe ee ee ee ee
-eeeere @ @e e080
 
-oeeee ~~ esses
+eee = 6 0 0 0 0 0 0 8 8 0 0 0 6 6 0 0 0 0 6 0 e pe © 0 ee te ee ee eo we woe wt Me te core ee
 
 ee ee — 'a 0 00 0 0 0 0 8 0 0 0 8 2 0 8
-© ee Cee sec ecesc eee ccs Meee ee ves
-i i ee ee ee) Cy On (ho Cal, Wy Ame COCO St Oe Oe ee Oe
-tt OO ey A SS Re ee Cy A CO Ce Oe ee ee | fe)
-PO et I, Se ee, - i rie ie © An COCO ee Be Re OS
-ey (Cy > ee ee Ce a We ee)
-a ee, Oe ys
-e
+
 Oe eo (0 00 0 0 0 0b 00 0.5 0 0-60 0 am 0 oe 'ees eee
-eae oe eeceeecceccceco ecco mete «eee ee
-ee eee ne ese eee es eee
-oe 0 0 6 8 8 oe ee oe ewe
-eeeee
-
-ee °
-escocecect Pee  4@e @esaeeo ee My —eceoe
-
-coc @8 = Feo =e eRe ene se SR RF 32zf eveee
-cee eee eo Mp MP 8 Re ee ee
 
 eeeee
-« Geececoees -B C Pee cece
 
-eee ee ¢
+eeeee
+
 eee 8 +e 2 se ee
-eee js eeesecececeeseecerecveeesevuesevsv ase ecensceoeene Gener veseceesc om
-eee i j§~*@ e @ es eeseseeceeeseecevsecesers eee oeeereceReveveves ene
-ee 6: <(s ese oe se eaeeveeeeevs ess cs eeesveece ees pec eeeceesaee
-2 eee 8 -~ ee eres eeeeeeronae see secscersreerseeess Bee oaesesen
-Cees ee eeeeec see eee eeesesetesneetoeeseeoeovsesMeoeteeeecoarn
-OR PE ee er,
-0 Oo
 
-SEES g pe no
+2 eee 8 -~ ee eres eeeeeeronae see secscersreerseeess Bee oaesesen
 
 sagt Ate OIL SUPPLY
 
@@ -20291,69 +14914,19 @@ Fic. 8,699.—Casting which constitutes a simple gravity feed, vaporizing type b
 
 3. With respect to the gasifying process, as
 
-a. Vuporizers;
-b. Atomizers.
-
 4. With respect to the method of oil feed, as
 
 a, Pressure;
 b. Gravity.
 
-Domestic Oil Burners 5,453
-
-UP
-
-yj!
-
-Wo Zips,
-
-Ye
-
-OH
-
-Ly,
-
-Ss
-
-S
-oN
-\
-
-Yili 4
-
-aS — ar
-YW,
-
-WY
-
-a . 7.
 12, fected =
 ere Be
-foe wf) GEES
-e x ip'. p Ky :
+
 i? eta cal SE AV aye a a mS .
-ae omar' Uy D)
-ve r ' . > J
-2! ' ' ' we \ : ~ a
-NS ' : (
-. o& 4
-id : o. :
-; 1 = awe 'mag /
-"a > 1 s -
-ter on A,
-: oo ye iat)
-Lp guid IR aoa
-E3
-
-Uz
-
-ae
 
 Yyyyiyfy
 
 guar
-] io pee : er i he a .
-WU
 
 Fic. 8,700.—Non-mixing gravity feed vaporizing or gas type burner and automatic control.
 It is designed for gasoline or other light hydrocarbons or ordinary headlight oil, of 150° test.
@@ -20372,8 +14945,7 @@ crank lever E*, connecting rod E5, to bell crank lever H, and toa hollow spring 
 outside of the furnace. The weight of these rods is counterbalanced by the rod and ball E*.
 The hollow spring is supplied with steam at boiler pressure through a small pipe at opening K.
 The saucer F, is for oil or alcohol used in raising the proper heat under vaporizer at starting,
-and until sufficient gas is generated for its own reproduction; a matter of three or four min-
-utes. The burner is furnished with removable plugs BB', to facilitate cleaning. Rock shaft
+and until sufficient gas is generated for its own reproduction; a matter of three or four minutes. The burner is furnished with removable plugs BB', to facilitate cleaning. Rock shaft
 E* is furnished with stuffing box G, to prevent leakage. In control, the straightening of
 the spring caused by an increase of pressure in the boiler, operates directly on the plunger by
 means of the adjusting screw I, bell crank lever H, and intermediate connections; thus
@@ -20382,8 +14954,6 @@ plunger would close off the flow of gas correspondingly, and vice versa, thereby
 the heat of the fire. The plunger cannot,-however, shut off the flow of gas entirely; a small
 orifice 1s always left, enough to keep the burner and boiler hot; and in this way the trouble and
 annoyance of having to relight the fire after every stop is avoided.
-
-5,454 Domestic Oil Burners
 
 Gravity Feed Vaporizing Burners.—This is the simplest
 type of burner, very often consisting merely of one or two
@@ -20401,21 +14971,11 @@ TANK
 
 Se, GAS
 
-ogmumzm@es j9@umirr=r 6«im===—= 4 o§ <HEEE===u=e j§ ¢sumeeu
-
 BOILING ~
 
 ### VAPORIZER OIL
 
 ### GRAVITY FEED
-
-|
-as
-al
-
-PAE |
-
-=
 
 Fic. 8,701.—Elementary gravity feed tnduction mixing vaporizing burner. In operation,
 oil flows from tank to vaporizer, regulated by the control valve. The flame from the burner
@@ -20427,12 +14987,6 @@ igniting at the top.
 ### CONTROL VALVE
 
 Aly
-{
-TANT
-
-———
-
-a
 
 In the cheapest burners of this class the control is entirely manual; the
 burner is started by hand, and the control of temperature is effected in like
@@ -20443,8 +14997,6 @@ SUCCESS.
 The gravity feed non-mixing vaporizing burner is limited to the use of
 the relatively high priced fuels. Fig. 8,700 shows the construction of a
 burner of this type arranged for automatic control.
-
-Domestic Oil Burners 5,455
 
 The principle upon which the non-mixing type operates is
 shown in fig. 8,700.
@@ -20465,9 +15017,7 @@ OIL
 
 ### FAN BLOWER
 
-a_i
-, ; A \ le as
-ERED er Maa EE Tease '
+ERED er Maa EE Tease
 AIR MIXING WITH GAS MOTOR
 
 Fic. 8,702.—Elementary gravity feed mixing, vaporizing burner. Connected to the burner
@@ -20489,7 +15039,6 @@ variety shown in fig. 8,714.
 
 ### FORMING PATH OF OIL THROUGH BLEEDER
 
-N e
 _— lt laa on een Merinte OIL AND AIR BEING
 CARBURETED FORCEO THROUGH
 BRICK MIXTURE. BY FAN
@@ -20498,12 +15047,8 @@ BRICK MIXTURE. BY FAN
 
 ### THIN, VAPOR
 
-y ;
-ve Llllinsen hes Za 7 AN
-
-ee ee ee ee MOTOR
 ren OG mama We
-AIR BEINGS! 47>
+
 DRAWN INN t/7
 BY EAM (UN ees.
 
@@ -20513,18 +15058,19 @@ BEING DRAWN IN | _fFF
 
 BY FAN aaa | i SR
 
-| PATH OF OIL
+### PATH OF OIL
 
 ### TO SAFETY
 
 ¥ . SWITCH IN
 a IS DRAWN THROUGH | rein
-| | TUBE AS SHOWN pee
+| TUBE AS SHOWN pee
 BY DIRECTION OF RETOR
 OVERFLOW
 
-OIL FLOWING TO |
-SAFETY SWITCH A'@, o  G _
+### OIL FLOWING TO
+
+SAFETY SWITCH A'@, o  G
 IN CASE PILOT a > >
 LIGHT GOES OUT oo fon -
 
@@ -20535,25 +15081,16 @@ WHEN SAFETY SWITCH tS
 AUTOMATICALLY SHUT OFF
 CURRENT AND BURNER
 
-n-.
-
 Fic. 8,703.—Crystal mixing vaporizing burner. Sectional view showing operation.
 
 gsy's
 
-siauing [IQ o1seu0g
-
-Domestic Oil Burners 5,457
-
 Fic. 8,704.—Oil-Electric draft tube, air diffuser and spray nozzle showing location of spark
 in relation to spray nozzle.
 
-.
 eee e Be
 eee wes amet eg tee eee
-eootdea cog Mm © Meee- ce
-coeoe we Fe Te tee ee ee ee wo ww ole wo oe me eet eee -
-"eo Meee ceeees
+
 eeoeoeeeeees
 eeewoveve
 evevee
@@ -20562,7 +15099,6 @@ eee eee Bees 2 e 8 0 6 8 8 6 6 6 8 ogee te eo et
 
 cece
 
-e @ ee
 eee we
 eovee
 
@@ -20570,14 +15106,12 @@ eevee
 enero ere
 
 IR GEE OI ear ht! 1. oy etter ery AG, IA OM FR. 2) oo Tot on i rer erers
-rw = =—C i NE eee tm, re i ray af OY MO A SED Se) Cie) od
 
 got?
 sro eee
 eee
 
 eoeee
-wo °s°ee
 
 eee
 eveecece
@@ -20585,28 +15119,22 @@ eevececeve
 eeerevreesecove
 eeeetoerenr
 e@eevnvee ice
-eoeeees UN
+
 eooee
 
-OD OOOO oe
-ee ce Me @oeee cece asecceScoeecacem CF g Becceevecefoeeeces coves
-o eco eM CS SOe rec eceereesresceseoesnem BF te cecece se soveess ae soe Becenr sere eece eb eee et ee 6 noe et Bee eee em eee eeeesne ce ces
-@ 0 0 0 0 0 6 0 0 oc e-occcesBbo-s © Do BoB eseeaeceevesccce © Mw eee eee a eeeceaepesecasne @ . GF Peececec.e eee ccc ce os « o oR 0 oe + 8 ooo 0 6 6 8 woo 8 Oo 8 6 oo coon she oo 0 0 0 oo oo eo we 8 ot oe oe
 © 2 0 0M © 0 0 © 0 6 0 6 8-0 © c-0-0 0 Om we CCCP Moereeecece eevee ec eoeMeesece ese eeerseceororoseces aed BB ~ Bee ceeevesceceoecs cose = Me eee 0 2 oo we 0 0 oo 4 5 w 1 0 0 0 0c ate be © © © © © 0 0 oo 8 oe 2 ow oe 8
-Oe 0c 6 0 0 0 o creer ccer mee ore 8 OO MR Coc e ase ee eer e ee Emp eaeecececeeeeseocerececneegm fF éBeecsceecevscceeeeceecce: «Bec oo 0 0 0 ¢ 8 0 0 0 © 00 00 0 0 © © o-c-e-8 ot 0 0 0 © 0 0 8 ow 6 eo wo oo oe oe
-0 0 0 2 O08 0 co © 6 0 0 0 b-cn0-s oregh-o-0 © ODOR OS ce eres eececs er ve eeesecece Seer eeevneesecnacee F g Br ccecececcec ces ce ee oe Bee + « 6 we 0 ce 0 es 0 oo 0 6 0 0 0 © o-cce-me-«she © 6 0 0 oo op wo 8 0 oo oo 6 0 0
+
 os c-0 © 0 Oe feomesseceececceces ceo G@wescevesereseecesnececoecceose @  § (fe-c ees eee ce cieces coe + os 0 oR eo 6 2 0 0 oc 8 0 6 0 0 6 8 0 8 0 6 oc oc ee RO 6 6 0 0 0 6 Woo 0 0 oo 8 oo ooo
 © 0 0 0 0 0 oe 8 2 0 0 0 0 6 G0 0 0 ow 6 8 6 0 © ere c 2 6 com 00-0 CO Me eS e eet eoseres coe SeececeeeeeceeseeereveccoomR pg § revere ecceesceovrececanas feos sce one rd voce ee 00 006 0 foo Mere hee ete eee ec eee cee ae es
 te ene ee atone ere eae nt en crete anne a7 28% %,° e228 8 0 OM © 0 0 6 0 wo 6 2 0 0 so so Ge ee se ee wee ce ee ee eeeesec @ 8 ° Fe cc oo 0 0 0 0 oo oo 0c 0 00 0 oD + wo 0 + 0 0 0 0 0 0 0 0 0 oo 0 0 0 0 os 0 0 Bo pwc 0 oo 0 0 0 oo ott et ee ee"
-le © 0 oo oo Be 2 0 0 0 © © Oo 0 tc 0 0 0 0 0 ow oc to oh ore te Come eee e MOC eee eee eer Tees se me seeceaeeecoecveceucR FG jjé=§ Precececvececcsececasevecene Ger eecreces eves ececec ccc 0 eo de Sade oo 0 0 6 0 oo 0 ooo we oo we
+
 ee eo oe we we cee were reer one Sea cee Boo COR Mee Coe OHHA TOTO SF Coe Mosse seeeesesececececoence @ ~~ — Fees sceevcerstecoece secs he ePoereveeceeseceseseeeceavo-wcee moe hovesecevevcavecs vaca
 eoeoeeestee eee cece
 eoeeer eres eceenece
 
 ### OIL THROWN OFF
 
-BY
-CENTRIFUGAL
+### CENTRIFUGAL
 
 ### REVOLVING
 
@@ -20614,10 +15142,6 @@ CENTRIFUGAL
 
 DISC
 
-ORIVE SsitZe ses
-;
-'
-TUFFIN Pil]
 —— Vy OIL PIPE
 
 Fic. 8,705.—Elementary centrifugal force atomizing burner. The oil flows through the hollow
@@ -20625,66 +15149,29 @@ spindle of a disc which is rotated at high speed by a motor. The oil overflowing
 the disc at its center is hurled off the disc by centrifugal force, and ignited by a torch or
 pilot light, produces a ring of flame.
 
-5,458 Domestic Oil Burners
-
 Here the vaporizer consists simply of a plate heated partly by a pilot
 flame as shown, ignition takes place at the plate, the plate being virtually
 a combined vaporizer and burner.
 
 Atomizing Burners.—In this class of burner various methods
 
-are used for breaking up or atomizing the fuel. This 1s accom-
-plished by:
+are used for breaking up or atomizing the fuel. This 1s accomplished by:
 
 1. Compressed air, or
 2. Centrifugal force.
 
 ### ATOMIZING CUP
 
-s aoe Paha oo 3
-%. e*feo .
-"oho Ocb ¢ PP ee* ie
-
-= ee iP a i one nan
-e 3s ee e,° o. Ce
-Re e ©... ote >
-
-eed tose tes e
-
 eis J Nee Cee
 
-o Be
-
-te SEF AY
-
-ie ei —— Soo see a3
-
-oo
 Pas
-e
 
-e
-ee
-e
-
-«
-e
-
-"eh
-eo on oP
-"Sar 2 Pr .
-° © lo '
-i n a. si
-, ve id
 yee
 nD Send con
 
 reese?
 
-er |e
 "oe DRIVEN |
-
-NF
 
 Fic. 8,706.—Motor driven centrifugal atomizing burner.
 
@@ -20700,8 +15187,6 @@ the method of lighting, as
 
 2. Gas;
 
-Domestic Oil Burners 5,459
-
 3. Electric;
 4. Electric-gas;
 5, Electric-oil.
@@ -20714,17 +15199,14 @@ STRAINER MOTOR. GAUGE
 
 ### BLOWER
 
-a
-
 PUMP |
 Ri AIR
-§ AQJUSTMENT
-PLATE
-ELECTRIC
-IGNITER
-STRAINER
 
-JET
+### PLATE
+
+### ELECTRIC
+
+### STRAINER
 
 Fic. 8,707.—Motor driven atomizer burner of the electric ignition type.
 
@@ -20732,11 +15214,8 @@ Fic. 8,707.—Motor driven atomizer burner of the electric ignition type.
 
 ### VALVE AIR
 
-TO.
 OIL SUPPLY ~
 Fic. 8,708.—Atomizing oil by air jet or spray.
-
-5,460 Domestic Oil | B urners
 
 The plate must be heated to a temperature sufficient to vaporize the oil
 falling upon it. The heat of combustion is supposed to do this once the
@@ -20745,27 +15224,23 @@ Fic. 8,709.—Method of commingling air and atomized oil by whirling each in eon
 in conical streams. The oil stream comprises the inner cone, while the air stream comprises
 the outer.
 
-' OPENING FOR en sad
+OPENING FOR en sad
 FILLING a ae
 
 =A AIR VENT
 
-. ?
-
 : DRAFT |
 a BURN ae J J REGULATOR,
-"SANB- a iu a Av F ETY ae
-DEVICE
+
+### DEVICE
 
 © eee 4)
 
 Fic. 8,710.—A simple manually controlled vaporizing burner installation in a warm air furnace.
 
-SS EBs taemmostar| 8 Se ee CUS
-ane 2 ee -W Ye = VENT TO TERMINATE = es
-: facil ABOVE GROUND a 2
-| '*PLOQR. LINE ee " 7
-is os "ae ELECTRIC :
+facil ABOVE GROUND a 2
+'*PLOQR. LINE ee " 7
+is os "ae ELECTRIC
 os oo. CUTOUT BOK 7
 
 : | BOILER.
@@ -20773,14 +15248,10 @@ os oo. CUTOUT BOK 7
 _ CONTROL :
 
 OIL
-_ GAL TANK 1S fy Eo Z MEASURE &
-
-_ ANTISYPHON :
+GAL TANK 1S fy Eo Z MEASURE &
 
 258371 PNOT LESS THAN
 SETS 25] 1% INCH VENT:
-
-oT PITCH DOWN
 
 ager TO TANK ae
 = SH B INCH FILL PIPE
@@ -20788,42 +15259,20 @@ ce ye 2 a [ * CH OOWN TO TANK
 ys : | 19 TERMINATE IN REACH OF
 Ott HOSE ON TRUCK -
 
-a
-dj. -
-
 A INCH sucioN pie "Se SWING JOINT
-- N >
+
 lore OIL GAUGE ol a aS .
 
-a Poi
-
-[yy jt te
-
-ey 4 A = nies en rn
 ram, Oy, .
-7 p us
-pe ee ; ; —
-ec J PLUG - Si
-i x b : id
-e's tae gf: oe) po, L' on
-4 BaP faire Py
-ead ~ R Oe H t> §
-A \ 3 FAD AOI STRAINER
-"t= a a.) . '
-pos oe Aodsucn sr here °
-oa, . Cer te . - f f . é..,
-Bi ABD ee % bo 4
-e ni = Op. Za lS
-i ax ee 4 7
-. Sh
 
-| de Sry tnt) NOT LESS: "1000 GAL.
-: a * : 98] THAN OFT: H TANK
+A \ 3 FAD AOI STRAINER
+
+de Sry tnt) NOT LESS: "1000 GAL.
+a * : 98] THAN OFT: H TANK
 \| (WITH LOCAL
-: ra "ORDINANCE |
-. - es Fos,
+
 8 S : : a 2S eek 'MAN-HOLE OR OVERFLOW PIPE
-: ' ne wa - IN TOP OF TANK IF. REQUIRED
+' ne wa - IN TOP OF TANK IF. REQUIRED
 
 } 3 BY LOCAL ORDINANCE
 Fis. 8, 711 -=Berynian atomzer oil .burner 'astallation" 'showing various connections, etc.
@@ -20835,29 +15284,24 @@ intensity and then completely shut off as the condition may demand. Whenever the
 
 few minutes, the hot plate must be preheated again before the oil can again be vaporized and ignited.
 
-SJauIng [IQ oseul0g
-
 Top'
-
-5,462 Domestic Oil Burners
 
 In some automatically controlled vaporizing burners a gas
 flame is used for heating the hot plate and as a pilot light for
 igniting the fuel.
 
-The gas flame burns continuously and keeps the hot plate at such a tem-
-perature as to cause the oil to vaporize when it is admitted to the apex of the
+The gas flame burns continuously and keeps the hot plate at such a temperature as to cause the oil to vaporize when it is admitted to the apex of the
 plate and trickles down over the corrugations, fig. 8,713. 'At the same time
 the pilot flame licks through holes drilled in the hot plate and ignites the
 mixture of vaporized oil and air. The automatic device in this case merely
 shuts off or opens a valve in the oil line to the burner.
 
 Solid Air Tube Gas Valve Ignition Transformer
-( Flexible Tube can be us : ;
+( Flexible Tube can be us :
 
 to conform mith poe ised ) 17
 tonal Gas Tube (FF
-Addi :
+
 Air Inlet . Relay Switch Box
 
 Firing Head
@@ -20866,8 +15310,8 @@ ance Set Screw
 
 Inspection Window » 4
 
-: a, se Oil Reservoir
-High Tension Ignifion . :
+a, se Oil Reservoir
+High Tension Ignifion .
 Wire from Transformer _ ))
 
 Nozzle Strainer \
@@ -20886,15 +15330,12 @@ The pilot flame is sometimes caused to expand at the time the burner
 comes on, and by this means the danger of extinguishing the pilot light is
 somewhat lessened and ignition is presumably hastened.
 
-With the atomizing type of burner it is necessary to intro-
-duce a flame or electric arc within a region which is filled with
+With the atomizing type of burner it is necessary to introduce a flame or electric arc within a region which is filled with
 an intimate mixture of oil and air in such proportions as to
 make it comparatively easy to ignite.
 
 In the electric gas type, a gas pilot is turned on, the gas being ignited
 by aspark. The pilot light then ignites the charge. Still another device
-
-Domestic Oil Burners 5,463
 
 is the electric-oil ignition in which an independent atomized mixture is
 ignited by an electric arc and is utilized as a source of heat energy to ignite
@@ -20906,41 +15347,16 @@ gas or electricity, or both.
 
 ### AIR HEATING
 
-### MANIFOLD
-
-' ty
-
 GAS = > ZA. HOT
 - PILOT Sj Ze PLATE
 
-if
-
-_*.
-
-ty
-ify !
-J
-rary \
-' < OF a8 \
-! / 90?
-. J . .
-7 ' : my
-; ; > :
-4 @
-}
 1% ; a ear?
-/ 4 Ac
-| }. 4
-
-—
-
-~~
 
 Fic. 8,713.—Casting of a vaporizing burner with which is incorporated the continuous burning
 gas pilot and plate heating flame. es
 
 — ft | VV) | OT PLATE
-OIL VAPOR may Ya ;
+OIL VAPOR may Ya
 
 LIQUID OIL iaul
 Fic. 8,/14.—Hot plate method of vaporiz- Yip
@@ -20961,10 +15377,8 @@ form of combustion is inefficient in that the fuel is not entirely consumed.
 An excess of air is essential to insure that each subdivided bit of oil is
 provided with the amount of air necessary,
 
-_ Furnace Design.—To obtain satisfactory results combustion
+Furnace Design.—To obtain satisfactory results combustion
 must take place in a region of high temperature.
-
-sp yanf
 
 Note the following points on furnace design;
 
@@ -20977,23 +15391,19 @@ CONTROL
 LOCKOUT caro ut So Lay
 
 Swi TeH. seus WATER
-" cprose
-|
+
 [ t ULTIMATE 1 apa ond - HOT
 | f SAFETY
 i | eEAT a ache We vauew
-J ' LEME VELLOW LIne GND
-| ' SWITCH .
-ty "| tt.
-; | at Th ey |
+
+' SWITCH .
+
 a | TO GREEN
-_ Ave ' Ub OatveL
-? S| | e {
+
 be od TR WUT Nor A
-luse Tos | L
+
 To RED we wo o TERMINAL Lat)
 GAS, ELECTRIC PULL COIL HOLD COIL MOTOR
-OR SOTH
 
 Fic. 8,715.—Time-O-Stat control system, 1. Start or cold position. In this position the
 mercury tubes are tipped downward toward the left. The current, therefore, cannot pass
@@ -21011,8 +15421,7 @@ starts at this time. Its return line leads back to the ground connection through
 terminal on the lower right hand board. Connected in series with the pull coil is the heat
 element of the lockout mechanism through which, in the starting cycle, the current of the
 pull coil passes. The return line from the heat element leads back to the ground connection
-on the lower right hand terminal board at the green terminal. Upon completion of the cur-
-rent flow through the paths as outlined, the oil burner begins to run. Assuming entirely
+on the lower right hand terminal board at the green terminal. Upon completion of the current flow through the paths as outlined, the oil burner begins to run. Assuming entirely
 normal conditions, flame will result and the stack ewitch will be moved to its hot position,
 that 1s, both tubes tipped downward to the right.
 
@@ -21032,26 +15441,8 @@ Automatic Control.—The oil flame is extremely rapid in
 heating and if not controlled in some manner will build up
 
 NO 48-4 - BULER
-TACKSWITCH waneace : THERMOSWITCH.
--° CONTROL ¢_'
 
 LocKouT -<S==2 v ==9
-
-Switcr ae etree oe
-[ NO 77 LOCKSWITCH CcyTrorEs ™
-7 ma. u | i
-. yurmare | ; [annie Oi
-- 7 =a a == aun ' . -~
-~ [ swiTcH
-
-WA re_enewy
-'ci | ro 'Green | |
-
-1 | Qvacvel
-
-ee eee eee Ge aay
-
-r
 
 ### IGNITION TO GREEN
 
@@ -21059,8 +15450,7 @@ r
 
 oR BOTH
 
-Fic. 8,716.—Time-O-Stat control system, 2. Running position. In this position the cur-
-rent enters as before through the line switch from the hot side of the line through the lockout
+Fic. 8,716.—Time-O-Stat control system, 2. Running position. In this position the current enters as before through the line switch from the hot side of the line through the lockout
 switch to the green terminal on the upper right hand terminal board, then through the
 
 hermo-switch and limit control to the white terminal on the lower left hand terminal board.
@@ -21079,8 +15469,6 @@ coil is de-energized and therefore the heat element cools off without opening th
 switch. As soon as the thermio-switch limit control or low water cut off opens the circuit,
 current can no longer flow through either of the coils of the lock switch, therefore the motor
 switch returns to its off position and the burner is shut down.
-
-5,466 Domestic Oil Burners
 
 temperatures and pressures in the heating system which may
 prove dangerous.
@@ -21108,8 +15496,7 @@ The boiler controls are termed hydrostats, if it be a hot water system,
 and pressurestats if it be a steam system.
 
 This boiler control is operated dually with the room auieeaiel and
-controls conditions at the boiler while the thermostat: controls tempera-
-tures in the room. By the use of the hydrostat the temperature of the
+controls conditions at the boiler while the thermostat: controls temperatures in the room. By the use of the hydrostat the temperature of the
 water in the boiler is kept within certain limits, and in the case of the
 pressurestat the steam pressure is kept within certain limits regardless of
 the temperature conditions in the rooms.
@@ -21120,14 +15507,10 @@ stack switch will not go to the hot position during the starting cycle and the c
 of heat through the heat element will warp the bimetal unit to which the lockout switch is
 attached and after a period of approximately a minute and a half the lock out switch will trip
 to the off position and shut down the oil burner by opening this switch. When this switch is
-open, current can no longer pass to any part of the lock switch system and in order to re-estab-
-lish any operation in the lock switch system or the oil burner, it is necessary to reset the lockout
+open, current can no longer pass to any part of the lock switch system and in order to re-establish any operation in the lock switch system or the oil burner, it is necessary to reset the lockout
 switch by means of the manual reset in the lock switch. It has been demonstrated that a failure
 of ignition as the oil burner starts usually requires that some attention be provided for correction
-of the trouble, hence the opening of the lockout switch is made so that it will not reclose auto-
-matically.
-
-Domestic Oil Burners 5,467
+of the trouble, hence the opening of the lockout switch is made so that it will not reclose automatically.
 
 In addition to the controls just mentioned, it is essential
 that precaution be taken to cut off the burner in the event that
@@ -21139,32 +15522,21 @@ when a certain quantity
 has been delivered to it
 and either cuts off the oil
 supply or breaks the power
-Circuit, in either case ren-
-dering the burner inopera-
-tive as to the generation of
+Circuit, in either case rendering the burner inoperative as to the generation of
 heat and flow of oil. The
 machine must then be
-reset by hand before oper-
-ation can be resumed.
+reset by hand before operation can be resumed.
 
-One of the chief objec-
-tions to this control is the
+One of the chief objections to this control is the
 clogging of the line which
 <a : delivers the unburned oil
 = :llC to the drip bucket orsump,
 
 oO owing to the accumulation
 of soot, scale, etc. Liberal
-passages offset this tend-
-ency to a great extent.
+passages offset this tendency to a great extent.
 
-a
-"i ote
-2 SM td A
-OL RE. re Hp eee I Ss ae atl
-
-ts oe SESE ES, Ve
-: ope LEE ESE DP ITE Se eet
+ope LEE ESE DP ITE Se eet
 LEE TELE OEE EE soli
 
 Fic. 8,717.—Time-O-Stat lock switch. This switch provides full automatic operation for oil
@@ -21177,8 +15549,6 @@ that so long as the pilot light burns, the charge will be ignited
 and accordingly a thermostatic member which is exposed to the
 heat of the pilot light breaks the power circuit when the pilot
 light is extinguished.
-
-5,468
 
 ### FILL WITH FELT
 
@@ -21200,16 +15570,12 @@ _OF SQUARE
 SWITCH - TiMirs
 OR BURNER "
 
-es
-DOTTED WO
+### DOTTED WO
 
-Fics. 8,718' and 8,719.—-Installation dia-
-gram showing thermostat and connec-
-tion. The thermostat or mechanical
+Fics. 8,718' and 8,719.—-Installation diagram showing thermostat and connection. The thermostat or mechanical
 thermometer is the part of the device
 placed in one of the céntral rooms which
-is set for the degree of temperature de-
-sired.
+is set for the degree of temperature desired.
 
 DEVICE."
 
@@ -21219,9 +15585,7 @@ When the general design of
 the burner is such as to make
 the catching of unburned oil and
 its subsequent delivery to a
-sump or drip bucket impractic-
-able, the stack control is util-
-ized.
+sump or drip bucket impracticable, the stack control is utilized.
 
 rad
 
@@ -21232,23 +15596,17 @@ in the stack and if, after a predeter-
 'mined period, it do not become
 heated, indicating that the burner
 
-has failed to function, the thermo-
-static member breaks the power
+has failed to function, the thermostatic member breaks the power
 
 circuit and. stops .the motor and
 
 supply of oil.
 
-Low water emergency con-
-trols are also apple 'in some
+Low water emergency controls are also apple 'in some
 installations and there ate other
 devices, such: 'as alatm bells,
-which are employed in conjunc-
-tion with these emergency con-
-trols. Doubtless even more in-
-genuity will be manifésted 'in
-this direction as design pro-
-gTesses.
+which are employed in conjunction with these emergency controls. Doubtless even more ingenuity will be manifésted 'in
+this direction as design progTesses.
 
 Operation of Control System.
 —As an example of the meth-
@@ -21261,69 +15619,33 @@ of the: Minneapolis-Honeywell
 
 system is here given.
 
-. Domestic Oil Burners © 5,469
-
 This system consists of three separate units, so designed that they are
 integral parts and will not operate the burner except as a whole. These
-units are the recycling motor switch, combustion safety control, or pro-
-tectostat with special relay, and room thermostat. A limiting device
+units are the recycling motor switch, combustion safety control, or protectostat with special relay, and room thermostat. A limiting device
 can be incorporated in the system and is highly desirable.
-
-### Y N NS
 
 ### NS: 'N BOLTS FOR FASTENING
 
 ### EN TO MOUNTING PLATE
 
-YN
-i | ts NINN
-\
-
 ### TENSION
 
 wm 28, SPRING
-: WW"
-
-a
-
-OSs
-
-### FORKED
 
 LEVER aoe]
-
-NIN
 
 ### POINTS
 
 ### ROLLER
 
-3!
-
-Lf" WINNIE
-
-al \ aS)
-
-A Mews cao
-
-B senaihaniaa, J), a
-- IN
 ASBESTOS INSULATION —
 
-=
-
-"me & ,
-
-aw Bette.
-
-WIRES TO NO2. AND ~ : :
+WIRES TO NO2. AND ~ :
 NO5 TERMINAL ON ne
-PROTECTORELAY
 
 Fic. 8,720 _—Minneapclis-Honeywell protectostat or semiucces safety device. Ft consists of
 a main casting supporting an annular ring 46, to which a diaphragm 33, is attached. The
-diaphragm 33, and ring 46, expand and contract equally when subjected to the same tem-
-perature. This is the reason why the protectostat is not affected by changes in basement
+diaphragm 33, and ring 46, expand and contract equally when subjected to the same temperature. This is the reason why the protectostat is not affected by changes in basement
 temperatures. If the diaphragm of the protectostat be subject to the radiant energy of an
 
 "on fire, the absorption of this energy will cause a temperature differerice between diaphragm
@@ -21332,15 +15654,11 @@ gn the one direction as governed by strap 27, and spring 28, thus rotating rolle
 Faising:arm 37, allowing contacts 25 and 26, to make. The closing of these contacts will
 
 . Close.relay No. 2 of. protectorelay. Evidently contacts 25 and 26; respond promptly. to
-exposure to flame; also that the flame must be continued, for.if it be not, the heat accumu-
-lated by the diaphragm is rapidly conducted to the ring 46 and housing, causing the dia-
-phragm to cool and straighten out, separating the contacts 25 and 26.
+exposure to flame; also that the flame must be continued, for.if it be not, the heat accumulated by the diaphragm is rapidly conducted to the ring 46 and housing, causing the diaphragm to cool and straighten out, separating the contacts 25 and 26.
 
 so 7 - e 2-0
--
 
-The recycling motor switch provides low voltage current for the opera-
-tion of the room thermostat and limiting device, and the low voltage side
+The recycling motor switch provides low voltage current for the operation of the room thermostat and limiting device, and the low voltage side
 of the combustion safety control.
 
 The mairitaining switch and rotary line switch are of the rotary type
@@ -21348,16 +15666,12 @@ and are always in definite relation to each othér. They are intégral parts
 
 5,470 Domestic O1l Burners
 
-of the motor switch, and in conjunction with the combustion safety con-
-trol switch provide the safety features of the system.
+of the motor switch, and in conjunction with the combustion safety control switch provide the safety features of the system.
 
-The combustion safety control consists essentially of a thermostatic ele-
-ment of high temperature metal which is installed in the boiler or furnace
+The combustion safety control consists essentially of a thermostatic element of high temperature metal which is installed in the boiler or furnace
 smoke pipe and to which are connected suitable switches for both the
 line and low voltage circuits. These two switches are actuated by the
-expansion or contraction of the thermostatic element and prevent the con-
-tinued operation of the oil burner under abnormal conditions. The com-
-bustion safety control closes the line circuit to the burner motor and opens
+expansion or contraction of the thermostatic element and prevent the continued operation of the oil burner under abnormal conditions. The combustion safety control closes the line circuit to the burner motor and opens
 the low voltage starting circuit as the burner goes into operation. When
 
 CIRCUIT co CIRCUIT
@@ -21367,13 +15681,9 @@ CLOSED 5 OPEN
 
 7°— PIVOT
 
-=<
-
 ### U DIAPHRAGM DIAPHRAGM
 
 ### LINK EXPANDED COMPRESSED
-
-> Tt /S} TUBE
 
 0" LOW HIGH
 BOILER STEAM STEAM
@@ -21382,32 +15692,23 @@ PRESSURE PRESSURE
 Fics. 8,721 and 8,722.—Elementary pressure switch illustrating principle. Zn operation,
 when the steam pressure is low the diaphragm or ''bellows"' will be expanded as in fig. 8,721,
 the link holding the mercury contact tube in horizontal position. In this position the mercury
-will cover both contacts closing the electric circuit which starts burner. As the steam pres-
-sure rises, the diaphragm is compressed which causes the mercury tube to tilt and open the
+will cover both contacts closing the electric circuit which starts burner. As the steam pressure rises, the diaphragm is compressed which causes the mercury tube to tilt and open the
 circuit thus shutting off the burner as in fig. 8,722.
 
-the burner is turned off by the motor switch these operations are re-
-versed, and the controls are ready for a restart.
+the burner is turned off by the motor switch these operations are reversed, and the controls are ready for a restart.
 
 'The system performs the following functions:
 
-1. Starts and stops the oil burner at the command of the room thermo-
-stat, or when the temperature of the boiler or furnace has reached the
+1. Starts and stops the oil burner at the command of the room thermostat, or when the temperature of the boiler or furnace has reached the
 predetermined maximum or minimum, if a limiting device be used.
 
 Domestic O1l Burners 5,471
 
-2. Provides safety in the event of failure of ignition and premature ex-
-tinguishment of the flame, thus preventing the abnormal discharge of oil
+2. Provides safety in the event of failure of ignition and premature extinguishment of the flame, thus preventing the abnormal discharge of oil
 in the fire box. It functions in from 15 to 45 seconds, depending upon
 local installation conditions.
 
-### SOROS
-
-ae" SSE
 Wwe
-
-RS
 
 Fic. 8,723.—Minneapolis Honeywell vacuumstat or pressure switch for pressures lower than
 atmospheric as used on vacuum and so-called vapor systems. It can be used with systems
@@ -21428,8 +15729,6 @@ recycle and start the burner again as current service is resumed.
 
 In operation, when the room thermostat signals for heat,
 
-5,472 Domestic Oil Burners
-
 circuit 1s made to the maintaining switch, causing the motor
 switch to operate.
 
@@ -21444,31 +15743,21 @@ thereof to continue the operation of the burner.
 
 ### PLACED IN RISER
 
-oe
-
-ys a:
-
-tm
-a
-
 ### LIMIT: CONTROL
 
 LOCATED IN.
 TOP SECTION
 
 Fic. 8,724.—Minneapolis Honeywell aquastat or limit control showing placement. It ts used
-to limit the water temperature in hot water heating plants. It may be used either inde-
-pendently to control the burner or in dual control with room thermostat. For example,
+to limit the water temperature in hot water heating plants. It may be used either independently to control the burner or in dual control with room thermostat. For example,
 with the room thermostat set at 70° and the aquastat at 160° the motor is shut off when the
 room. temperature reaches 70° regardless of water temperature. However, if the water
 temperature reach 160° before the room temperature reaches 70° as might be the case when
-the boiler is being forced, the aquastat shuts down the burner. As soon as the boiler temper-
-ature has dropped a few degrees and should the room temperature still be below 70°, the
+the boiler is being forced, the aquastat shuts down the burner. As soon as the boiler temperature has dropped a few degrees and should the room temperature still be below 70°, the
 aquastat will restart the motor. If the thermostat continue to call for heat, the aquastat
 will maintain the water temperature between 150° and 160° until the room temperature has
 reached 70°. This prevents overheating that at times may occur when only the room
-thermostat is used. Absolute control of the boiler at all times means more even and com-
-fortable heating with a greater saving in fuel,
+thermostat is used. Absolute control of the boiler at all times means more even and comfortable heating with a greater saving in fuel,
 
 If ignition fail, no heat will be transmitted to the stack and at the
 completion of the starting cycle of the motor switch, the line circuit to
@@ -21478,17 +15767,12 @@ open, and the burner motor stopped. Both the burner motor and motor
 switch has been manually operated, which necessitates someone going to
 the basement to determine and remedy the cause of failure.
 
-Domestic Oil Burners 9473
-
 Should the fire be extinguished prematurely there will be an immediate
 drop in stack temperature which will tilt the combustion safety control
 switch and break the circuit to the burner motor. At the same time the
 circuit to the burner motor is broken through the line voltage mercury
-switch, contact is made in the low voltage mercury switch of the com-
-bustion safety control which closes the circuit to the motor switch and
+switch, contact is made in the low voltage mercury switch of the combustion safety control which closes the circuit to the motor switch and
 causes it to recycle.
-
-### PYROSTAT
 
 ### LOCATION
 
@@ -21502,8 +15786,7 @@ ON PROTECTORELAY a
 Fics. 8,725 and 8,726.—Minneapolis Honeywell stack switch or pyrésiat. It is a combustion
 safety and operates on the change in stack temperatures. Its operation is caused by the
 tendency of the spirally wound bi-metallic strip to unwind with a rise\im temperature. The
-spiral is so mounted as to project into the stack; one end is attached t@ the body of the pyro-
-stat and the rotation of the free end as the temperature rises turns a shaft which passes back
+spiral is so mounted as to project into the stack; one end is attached t@ the body of the pyrostat and the rotation of the free end as the temperature rises turns a shaft which passes back
 through the center of the spiral and into the body of the instrument. A ratchet toothed
 wheel is mounted on this shaft and turns with it. As the temperature rises, the ratchet
 wheel turns, carrying with it a phosphor bronze spring. which allows twc contact points to
@@ -21521,8 +15804,6 @@ the burner can again be started. Ih the event of current failure when the
 burner 1s 1n the on position. the motor switch will automatically recycle
 and start the burner again as current service is resumed.
 
-9,474
-
 Domestic Oil Burners
 
 ### WIRE IN
@@ -21533,51 +15814,14 @@ Domestic Oil Burners
 
 ### DIRECT TO LINE
 
-V
-
-| i pam PIPE THREAD
+i pam PIPE THREAD
 
 ### REMOVE CAP TO
 
-"" ADJUST BY PASS
-
-ZA 5 Want . :
-
-ra
-
-¢) ) oe
-
-@
-
-a
-
-### A DA
-
-2'
-
-=
-Sj
+### ADJUST BY PASS
 
 0° 9 9. 9° O90 0 Of
-ie 0 oo oes %e! CAPA eo
 
-"4% e°
-
-aT
-_ Se
-
-i AA!
-KAOOD
-: ¢
-
-©
-
-v,
->
-
-*,
-
-° -e "9,@
 sere 92%
 
 ### GROUNDED SIDE
@@ -21586,24 +15830,16 @@ sere 92%
 
 LINES HOV. 60 CYC.
 
-@
 IGNITION —_
 co. =
 
-ee A
-
 Fic. 8,727. — Minneapolis - Honeywell
 
-magnetic oil valve with relay. It is de-
-signed to control the high-low fire type
-oil burner directly trom the room ther-
-mostat or limit control, or both. The
-valve is controlled by a small relay di-
-rectly attached as shown. By this ar-
-rangement it is possible to operate a 110
+magnetic oil valve with relay. It is designed to control the high-low fire type
+oil burner directly trom the room thermostat or limit control, or both. The
+valve is controlled by a small relay directly attached as shown. By this arrangement it is possible to operate a 110
 volt valve by means of a low voltage
-thermostat. When the room thermo-
-stat calls for heat, a circuit is completed
+thermostat. When the room thermostat calls for heat, a circuit is completed
 which energizes the valve, the plunger
 rises, allowing an increased amount of
 oil to flow and maintain the high fire.
@@ -21635,9 +15871,7 @@ Domestic O1l Burners 5,475
 
 Storage of Oil.—In contemplating the installation of an oil
 burner provision for storing fuel should be considered. For
-coal, the average home owner generally provides storage ca-
-pacity ample to contain all the coal used during the heating sea-
-son. With oil this is not usually the case. Aside from the
+coal, the average home owner generally provides storage capacity ample to contain all the coal used during the heating season. With oil this is not usually the case. Aside from the
 added convenience of having a large supply of oil on hand, a
 more attractive price scale is offered to those consumers who
 buy oil in relatively large quantities.
@@ -21646,8 +15880,7 @@ buy oil in relatively large quantities.
 
 ### RED WHITE BLUE
 
--ROOM —~
-THERMOSTAT
+### THERMOSTAT
 
 WHEN RELAY 15
 CONTROLLED BY
@@ -21655,28 +15888,20 @@ LIMIT DEVICE ONLY
 CONNECT TERMINALS
 ON THERMOSTAT SIDE
 TOGETHER
-™ a
 
 ### REGULATOR
 
-TO
-
 Fics. 8,729 to 8,731.—Diagram showing Minneapolis Honeywell thermostat and controls
-Minneapolis limiting devices were primarily designed for limiting the amount of heat gener-
-ated by the furnace or boiler in excess of that which could be absorbed by the system. Ordi-
-narily the limiting device is used in dual control with the thermostat, but it can be used as the
+Minneapolis limiting devices were primarily designed for limiting the amount of heat generated by the furnace or boiler in excess of that which could be absorbed by the system. Ordinarily the limiting device is used in dual control with the thermostat, but it can be used as the
 controlling means without a thermostat if that be desirable. Such a hook up is easily made
 with the six terminal post instrument by bridging or linking the three posts marked from
 thermostat, together and omitting the thermostat, wiring the balance of the circuit in the
 usual way.
 
-Large storage tanks are installed in various ways and usually must con-
-form to the ordinances which regulate such matters in the particular
+Large storage tanks are installed in various ways and usually must conform to the ordinances which regulate such matters in the particular
 locality. From this tank the oil must be fed to the burner by suitable
 means, since regulations restrict the quantity of oil which may be stored
 above the burner level.
-
-5,476 Domestic Oil Burners
 
 Installation Notes.—The following information will be found
 helpful:
@@ -21688,8 +15913,7 @@ be cleaned prior to the installation.
 3. All air leaks around the furnace, the ash pit opening, the stack and
 the chimney should be caulked with furnace cement.
 
-Fic. 8,732.—Minneapolis Honeywell thermal safety switch. Jt acts to provide a time ele-
-ment in the control system, allowing a sufficient ignition period, and affording a means of
+Fic. 8,732.—Minneapolis Honeywell thermal safety switch. Jt acts to provide a time element in the control system, allowing a sufficient ignition period, and affording a means of
 shutting down the burner as directed by the protectostat, preventing further operation until
 manually reset. Jt consists of the bimetallic strips 20 and 21, which when heated by the
 resistance wire grid 24, warp apart until the spring 23, is allowed to fall into the notched
@@ -21701,10 +15925,7 @@ required for the switch to operate can be varied by adjusting screw 31 to 30 sec
 minutes. Be very careful in making a change in adjustment, as a slight movement of screw
 will make a marked difference in time.
 
-Domestic Oil Burners 5,477
-
-4. Local ordinances must be followed implicitly in regard to the installa-
-tion of all electrical equipment.
+4. Local ordinances must be followed implicitly in regard to the installation of all electrical equipment.
 
 5. All connections must be made tight. Oil leaks never take up. Clean
 all threads before putting on pipe joint cement and use a suitable cement.
@@ -21716,8 +15937,7 @@ key pasie, or pro tar joint and gasket cement are best.
 7. Gasket unions must not be used. The brass seat ground joint type
 should be used.
 
-8. Keep pipe line running absolutely parallel when running close to-
-gether. All pipe must be straight without kinks and run in straight lines
+8. Keep pipe line running absolutely parallel when running close together. All pipe must be straight without kinks and run in straight lines
 to give neat mechanical appearances.
 
 9. Use all galvanized pipe and be sure it is clean inside. Rap and blow
@@ -21744,32 +15964,11 @@ What is an oil burner?
 Give full classification of oil burners.
 Describe a gravity feed vaporizing burner.
 
-What is the difference between a mixing and a non-
-mixing burner?
-
-Mm Bm Ww bh =
-
-5,478 Domestic Oil Burners
-
-10.
-i
-12.
-13.
-
-14.
-1%
-16.
-17.
-18.
-19.
-20.
+What is the difference between a mixing and a nonmixing burner?
 
 Dike
 
-Zo;
-Zo
-
-. Explain how a non-mixing burner operates. |
+. Explain how a non-mixing burner operates.
 . State the principle of the mixing type burner.
 
 How does a hot plate burner work?
@@ -21779,8 +15978,7 @@ How are burners classified with respect to ignition?
 Inahot plate burner how hot must the plate be heated?
 What must be provided for safety if ignition fail?
 
-What kind of a pilot flame is used in some automatic-
-ally controlled vaporizing burners?
+What kind of a pilot flame is used in some automatically controlled vaporizing burners?
 
 What are the conditions for proper ignition?
 What determines the type of burner to be used?
@@ -21800,40 +15998,31 @@ Honeywell control system.
 What are the points relating to the storage of oil?
 Give a few points on installation.
 
-Air Conditioning 5,479
-
 ## CHAPTER 225
 
 Air Conditioning
 
 Air is a mechanical mixture, chiefly of the gases, oxygen and
-nitrogen, about in the proportion of one to four. Air nearly al-
-ways contains certain impurities, such-as ammonia, sulphurous
+nitrogen, about in the proportion of one to four. Air nearly always contains certain impurities, such-as ammonia, sulphurous
 acid and carbon dioxide.
 
 The latter being a product of exhalation from the lungs and of complete
-combustion, is so universally present (about in the same proportion every-
-where, except where concentrated by some local a that it may be
+combustion, is so universally present (about in the same proportion everywhere, except where concentrated by some local a that it may be
 regarded as.a normal constituent of the air.
 
 Air Conditioning.—The term air conditioning, sometimes
 called manufactured weather, means in general the treatment to
-which atmospheric air 1s subjected in order to regulate its tem-
-perature and humidity, and to make 1t pure.
+which atmospheric air 1s subjected in order to regulate its temperature and humidity, and to make 1t pure.
 
 The effects of air upon comfort and health are due to the reactions of the
 human being to variations in air temperature, humidity and purity. The
 sense or feeling of warmth is dependent upon the moisture content of the
-air, and for this reason comfortable and healthful heating requires coinci-
-dent regulation of humidity.
+air, and for this reason comfortable and healthful heating requires coincident regulation of humidity.
 
 The purity of the air breathed by the human being is, of course, primarily
 important to his physical well being and personal efficiency is materially
 depressed by air that is contaminated with foreign matter, particularly in
 congested centers, manufacturing districts, or in proximity to any source
-of pollution.
-
-5480 §+~—«OAiir: Conditioning
 
 Air conditioning is a sure and sane means of eliminating the personal
 inefficiencies resulting from improper air qualities in spaces enclosing
@@ -21842,15 +16031,10 @@ human beings.
 Humidity.—By definition humidity of the air is the amount
 of water vapor it contains. Humidity is stated as:
 
-Le anes or
-
-| B roe
-"1 Pee : ai
-~~ i. ee ; co "et
 elative. 1, cee mac ts
 es vat . . 1k a 7 Ne
-* ae A J e: ae 1 ote * , led a
-. a R y ee red. my) ee :
+ae A J e: ae 1 ote * , led a
+. a R y ee red. my) ee
 
 =a , j
 
@@ -21858,8 +16042,6 @@ Fic. 8,733.-—Carrier spray nozzle. The water entering through the small circul
 tangentially, acquires a whirling motion and is discharged through a small arifice in the
 center of the cap. The approach to the orifice is coniéal in shape, so that the rotation, or
 whirling speed of the water is greatly increased at the.instant of discharge.
-
-¢
 
 Absolute humidity is the actual quantity of water in the atr,
 usually expressed as so many grains of motsture in a cubic foot
@@ -21870,18 +16052,8 @@ capable of holding is determined by the temperature. for the warmer the atr,
 the more moisture it can retain. At 80° it can hold nearly twice as much
 moisture as at 60°.
 
-Air Conditioning 5,481
-
 Relative humidity denotes the relation 'between the actual
-amount of water in the air and the maximum amount: At..1s 'pos-
-sible or the air to hold at the same lemperature expressed in a per
-
-'J aL gee
-
-( J eed < ewe ae ae Sa r + wats so, §' 68 uF
-Pa org
-
-top oo se we FPL : te erry
+amount of water in the air and the maximum amount: At..1s 'possible or the air to hold at the same lemperature expressed in a per
 
 Air which is saturated has a relative humidity of 100%, while the air at
 the same temperature and holding but one-half of the saturation amount
@@ -21889,14 +16061,10 @@ has a relative humidity of 50%.
 
 It is the relative humidity and not the absolute humidity, that
 
-ee
-
 Fic. 8,734.—€arrier huntidifier equipped with rotary strainer... In-operation, air enters at
 oe right, 'through the' baffle pilates. passes through the spray chamber. and leaves at the left
-| 'through thé 'washer elifinator plates. © The parts are, R, rotary ¢ strainer; 'E; ejector heater
-' P, pump; M. pump motor; S, pot strainers? <5 ie? ile ite
-
-482 Air..Conditioning
+'through thé 'washer elifinator plates. © The parts are, R, rotary ¢ strainer; 'E; ejector heater
+P, pump; M. pump motor; S, pot strainers? <5 ie? ile ite
 
 is important, for there exists a definite relation between the
 relative humidity and the moisture content of fibrous materials.
@@ -21904,35 +16072,12 @@ relative humidity and the moisture content of fibrous materials.
 The higher the temperature of the air, the greater is 1ts capacity to hold
 water. For example, air with a relative humidity of 70% at 90° contains
 
-Lene RELA Mrrt
-
-+
-
 treet
-;
-
-r 4
-aS |
 
 Hes |
 ree
-$
-
-:
-
-.
-
-+
-
-mt ote teen
-
-ee ae
 
 pee eee ere ehebtnae bie
-
-eS Se alae
-FAS ee oe Het
-3 Cre be ey nla te
 
 9A RE OER EERE TO EP ROOEP ITI TS Meee 1 TOIT Ht
 
@@ -21948,11 +16093,7 @@ tt eee
 
 Peeae ars Tews ee ate eleee
 
-'
-
 t. Sa =
-
-_ =——
 
 Fic. 8,735.—Carrier diffuser outlet (phantom view showing construction of the vanes).
 
@@ -21975,81 +16116,43 @@ humidity, this form of notation is the one mpst*commonly used, and
 humidity is generally understood to mean relative humidity, or percentage
 of saturation.
 
-Soretetovetaetererecevece:gimrerevereesrers
-Se Ie" Mme he)
-NOOO OOOO OI
-@®eeeeoe eee eoeeeoee
-
-~o%e%e Po% ee",
-Pe tet ee
-
-oe ott.0-0 0-am -o
-@ 8-0 8 0-8 © - Ome ©
-e e
+eee e
 
 eee e
-- peeee
-eee e
-eecesveceeoevceoec cs atin § © Oo
-oeeeee se eoeeee Dam fe oe e
+
 eeeeeereeeeoce
-je 0 © © 0 0 6 6 0 8 0 oo ome
-we |; ie Ce)
+
 eece
 
 eee
 eve
-ee
 
-e
 eeaee
 eeeece
-o°e° ee 0 00 0 00 8"
-°
+
 oeceecceoes
-eee ot vee 6 > ae OCF lf 8
-@ecesvveecse « agen hCUftl lf lel:
+
 eeeeeceeoes SF Wm iF eee
-ewerercceoceo SP i. Gm feees
-ecco enec es Sf am -
-ee ee eee
+
 eaeeeeee
-@eececeoe
+
 eeeeee
-oe oe eee
+
 eeesee
 
-eecee se
-oP ec eee
-
-ee
 eee rece
 eeeeeeeeoese
 eeeeartceeed
 eoeeceeeeseeve
 eeoeceeoeovesne
 @eeeceeovoee ones
-*0@-0@°'@ Dee eeerveeee
-28 o e@eese
-oo-8:O-8 6 6 2 6 ©
--@-@8 @@eeeeesvnoces Mm fe
+
 -0-0 9 @€ es ee eee o om le oo 8 SO 670
 eeceoesoes
-e@eeseovees
-woe @€ © eee ee
--@@eeeee ee
-e-- eee eoeee
-e-@eeeee oe
-@eceeooeeee
 
 eee
-eoeeecooeeeoeeseoeeeeoovese .
 
-o2 8 © 89 OOP ESCO CHOOReEecBeE-
-070708 e tw ea are eo otete ecto stotere"
-
-Fics. 8,736 and 8, 737 .—Carrier adjustable +S sostat with cover remaved to show the hygros-
-copic mechanism. This instrument varies the humidity m accordance with variations in
+Fics. 8,736 and 8, 737 .—Carrier adjustable +S sostat with cover remaved to show the hygroscopic mechanism. This instrument varies the humidity m accordance with variations in
 temperature, maintaining any desired relation between the two.
 
 Dew Point t-—By definition, this is the temperatura at which
@@ -22058,8 +16161,6 @@ air becomes saturated with water vapor..
 NOTE.—Relative humidity is little understood by the average person, as indicated by
 the widespread (though now decreasing) use of radiator pans, and mechanical or electrically
 heated devices for the evaporation of moisture in homes or offices.
-
-5,484 Air Conditioning
 
 Fic. 8,738.—Buffalo air washer; part of casing removed showing el¢minator in position. The
 eliminator which is integral with the scrubbing surface, is made up of a series of corrugated
@@ -22079,24 +16180,17 @@ is done by an independent set of nozzles across the top. These nozzles distribut
 are shut off, the increase in the humidity is so small that it practically amounts to nil.
 
 everse Act.
-over colo hd
 
-i
 a Y Girecr Acting
-L Corfro/
 
 ### FRONT ELEVATION END ELEVATION
-
-i ——
 
 Fics. 8,740 to 8,742.—Carrier
 dew point control applied toa
 humidifier. This diagram
 shows all of the apparatus and
-the connections. Jn opera-
-tion, the safety relay is held
-open by the pump water pres-
-sure, opening the reverse act-
+the connections. Jn operation, the safety relay is held
+open by the pump water pressure, opening the reverse act-
 
 ee ing diaphragm valve, in the
 
@@ -22105,66 +16199,31 @@ pump is operating properly. Thus steam cannot
 be blown through the ejector heater and into the
 air stream should the pump fail for any reason.
 
-IpuoD IV
-
 suluol
-
-c8r's
-
-5,486 Air Conditioning
 
 Since the capacity of air to hold water vapor decreases with
 lowering temperature, it is always possible by cooling the air to
 reduce its capacity to the point where the water vapor present
 Just equals this capacity. The air is then said to be saturated.
 
-. ——
-e , et
-. ; ha en Breas 3 = e
 SSN ' - \ x . SS ~ SS : Sor ~N SE SES ~ 6 4 . w 2
-QOH WS AE SS SS : N : ; : Oe SVE SS Ss ' fi -* :
-~ Ny >» . . . SN ~ ~ S Qe . SSN S SS aN SSS y Se -
-SQV QQAq 8S Fog Q S&S A Ss AST G WOH SY SY SSA Vy SA AVN Ree SS : ee . x : Ky Ss.
-SS RQQq0 WSVGA RG SSSA SAN SS RSS SSS : x ~ : ; s3 : : hy
-PQQ NOM nr M_°nwNN_aA AAA) OT DIMM AO WWW . OH MAM ROW SoM LEN . ~ WIS * Wr et Ne ro? .
-BS .
 
 RR dro CO RRA DERE RRO NAAT BR) RTE INNS
 OOS PAO ORE RN
 
-*
-7?
-q
-
-~~
-
-. = .
-N ; .
 > 2 eb a 8 oat he Fee, Fae - 4
 
-fas . oe bm tlw : > 's. } rev PR
-v¥ P< Se tee N J wi TPR © :
-N . > *
-
-3 : S
-
-N
-
-~ N . * SS
 WAVY SS SS . Ss . VSS SSS
 MAAR SSNS SS A OSS SSS
 
 2 ones \
 
 Fic. 8,743.—Buffalo eliminators; front view showing washing surface and narrow passages
-through which the air passes. The eliminators are so arranged that the first:four corruga-
-tions are kept constantly flooded with a sheet of water which catches any solid matter,. not
+through which the air passes. The eliminators are so arranged that the first:four corrugations are kept constantly flooded with a sheet of water which catches any solid matter,. not
 'already precipitated by the first set of sprays, and washes it to the settling tank. The wet
 surface exposed to the air thus obtained amounts to 19.5 sq. ft. of washing surface per 1,000
 cu. ft. of air per minute, counting only the side of the corrugation against which the air
 impinges.
-
-§
 
 Fic. 8,744.—Buffalo suction compartment with screen cover. The settling tank is divided into
 two compartments by a brass wire cloth strainer, through which the water passes before
@@ -22172,40 +16231,19 @@ entering the suction of the pump. This strainer offers a sutface of more than on
 each foot in width of the tank. The area of the strainer being many times the area of the
 suction pipe, provides a thorough filtering of the water at very low velocity.
 
-Air Conditioning 3,487
-
-If cooled below this saturation point, the capacity is still further de-
-creased, the air cannot hold as vapor all of the water present, and the excess
+If cooled below this saturation point, the capacity is still further decreased, the air cannot hold as vapor all of the water present, and the excess
 condenses into visible form as fog or dew. Accordingly, this condensation
 begins at the dew point.* When the relative humidity is 100%, the air is
-fully saturated, and no more invisible vapor can be added without precipi-
-tation as dew, fog, or rain.
+fully saturated, and no more invisible vapor can be added without precipitation as dew, fog, or rain.
 
-Wet and Dry Bulb ee is a device for meas-
-uring the relative hur 3 doty Orshygrometric state.
+Wet and Dry Bulb ee is a device for measuring the relative hur 3 doty Orshygrometric state.
 
 It consists of two thérmome b s mounted side by side, the
 bulb of one being k Dt moist by means of a loose cotton wick
 
-' ; L
-ia .
-[> vi a i. t e
 . ter:level in the tan
-' | ~—_, P : = . . -_ = a, i 2 - « aes we oye, Se es
-bs Pa: wae " y . - , Fort SOY ene Thess ry te ete Sh Cae CR SS ee: a ae e
-WN e a , - oP £ wen sae pe § ot ue by at ss od a > as Sah gets < ek eA > ox = Tae ee ny } OND ANS ee
-. ; > | ~ Tv wT . 3h st tas Tr , AKT ; Fs . ,
-' " f [= 9 & € 2 BF 7 r au — y ¢ Ld
-- ~~ n " > — af + = d Me . :' r 4 a " _ " ¢ eh an =" 7 = _
-icf : 'Pee 3 ae ee He Rs 5 4 Wan? oe ' 5 prey Fit ioc ae un
-~~ ~~ sh rr . tals le 7 - : " Ts
-JL pa TT au JO il ide Or rapl
-. = os 'ie
-Ty a
+
 anged pipe inlet,
-i <a) oe
-J! .
-i ie
 
 *NOTE FE eanipie of dew point.—A good illustration is the sweating of a vessel of ice
 water on a hot day. What really happens is that a thin film of air surrounding the vessel is
@@ -22215,10 +16253,7 @@ cubic foot. If the layer of air around thé vessel be cooled to 42°, the air at
 can hold only 3 grains per cubic foot when saturated; and the extra two grains per cubic foot
 is precipitated or deposited on the vessel as sweat. The same thing happens in the formation
 of dew out of doors when the lowering of temperature at night brings the air near the ground
-below the dew point. Frost is formed whenever the dew point 'is below 32° or freezing tem-
-perature. | - = .
-
-5,488 Air Conditioning
+below the dew point. Frost is formed whenever the dew point 'is below 32° or freezing temperature. | - = .
 
 tied around it, the lower end of which dips into a vessel of
 water.
@@ -22230,35 +16265,18 @@ Fic. 8,746.—Buffalo water sealed overflow and drain. ; 'si
 to the side of the tank. Hooded construction prevents wasté- of the spray water. A drain
 box connection which can be easily cleaned is provided under the oo
 
-5 ad, ,
-t 4 * < os cf hose -
-wT; Lew ies Om « 7 - - ' 2)
-é fat me la et 5 4 he Ne 5 ae vi ie ie
-at eT abe 89 Ges Yi ys US (eS ja egg Mtahes a
-> rUga " " tte ait es ane v2
-
-Ps ae - he A
-
 eet Ay AE
 Wee
-ee ee
-. \
 
-fic. 8,747.—Sectional view of Buffalo spray nozzle. In operation, water enters a small cir-
-cular chamber tangentially, which gives it a whirling or centrifugal action. The approach
+fic. 8,747.—Sectional view of Buffalo spray nozzle. In operation, water enters a small circular chamber tangentially, which gives it a whirling or centrifugal action. The approach
 to the discharge opening is conical in shape, so the rotation, or whirling speed of the water, is
 greatly increased as it approaches the discharge. The effect of this arrangement is to give a
 most minutely divided or atomized spray, which offers an enormous amount of surface for
-washing and evaporation. The construction of the nozzle is such as to make it free from clog-
-ging with foreign material. The area of orifice of the nozzle is ample. In order to provide,
+washing and evaporation. The construction of the nozzle is such as to make it free from clogging with foreign material. The area of orifice of the nozzle is ample. In order to provide,
 against clogging of the strainer, at least 12 sq. ins. of strainer screen is provided for each and
 every spray nozzle, giving a strainer surface 280 times the area of the nozzle orifice.
 
-5,489
-
 ioning.
-
-It
 
 Air Cond
 
@@ -22267,25 +16285,14 @@ pass
 , either by means of a fan, aspiration,
 The latter is the usual method, the instru-
 
-; ane
-
 eee
-SE
 
 Directions are given under
 
-~~
 Accurate readings can be obtained only when the air is caused to
 
 very rapidly over the moistened wick
 or by whirling the thermometer.
-
-aa Sa el mm
-PC LES
-
-ee)
-
-° i
 
 the rate of evaporation and hence upon the amount of aqueous vapor
 
@@ -22310,17 +16317,9 @@ handle or chain for whirling, being known as a sling psychrometer.
 WINE VA VA WE BOY Se Sema a BRR SOLER. Sn Bos Nee RO ere ; ee Met MO LIIGIESEEE ELLY. yt ite
 SE RRS AA Buses RES 3 . Coes RASS GOO pe OO tan RRL RL : PAN ONE Dey PLL IS EPID E SE Fe ys LEELA LALLA DAI phil lhe
 
-fice " af
-Ps : %, tt 3
-Ky Je Bo vo
-Z i
-
 Baars
-5 POS
 
 + PER, iS" a
-
-### LDPE CA ELE L IEP LLD AIL IOLD
 
 loning
 
@@ -22328,18 +16327,13 @@ te the true wet bulb temperature and
 
 1Ca
 
-ISR. RR SRI A
-
 her with side and distributing plate removed to show
 
 , air was
 
 Air Cond
 
-sith zt le en eae Lng BS cc ER ie
-SEMEL LOI DEE EEE ED BREE:
-
-### OIRO IIR
+### SEMEL LOI DEE EEE ED BREE:
 
 alterna
 
@@ -22347,7 +16341,6 @@ Sean
 
 AES. IEEE EEG: ELLE LEE, BEBE LIER ee
 
-o ; ~ a .
 ite, Sibaitipbtt aa as te, REBEL LE: LODE DIESE EEO EE. LIISA LIEELBLELA IDEALS SI LEROOE LOOSE, LOIS
 
 ion.
@@ -22355,61 +16348,17 @@ ion.
 trong air current) can ind
 such instruments are to be avoided.
 
-N
-NM
-®
-
-oS
-
-ry]
-eo)
-oO
-eB]
-E
-o
-=
 eng
-OD
-~
-E
-S
-Da oh
->>
-S
 
-=
-ce)
-Pr
-tng
-oO
-oO
-S
-9°)
-+~)
-oD)
-S
->>
 bed
-9°)
-&
-e)
-p
-ws
-+2
-MD
-'e)
-La
 
 inas
 terior construct
 
-in
+Lr 4 Se sf" ing kp OO , Pay
 
-; Lr 4 Se sf" ing kp OO , Pay
-es  o > AF ¥y ¥ ee Rae
 SIALETIA LSS ANIA A ALLS PAIS. Oo, TOC OO a ns nae
 
-ad > Z, ¥ " ; _
 errentssnntnninttrn yyititeemtt lose
 
 Fic. 8,749.—Buffalo type A
@@ -22422,18 +16371,9 @@ a) erence in Degrees Between Wet- I 3 ff | Difference in Degrees Between Wet-
 
 ua and Dry-Bulb T Thermometers: FF , Di an in Degrees Between Wet and Dry-Bulb Thermometers
 
-sR 9 | Se |
-
-3 BE | ee: :
-
-Ea Lololel fol [ola lefelefe8s-|. fo nef [ool feex] =|] = leon = fn =f] = 2
-
-ee ete a eS ee ee «| ne ee ee er ee me
-
-~ 60 1193|87|81|74|68]62/56|60/44]39|33|28|22|17]12| 7| 2]
+60 1193|87|81|74|68]62/56|60/44]39|33|28|22|17]12| 7| 2]
 51 (194/87|81175) GseaIeTIEIGE 40)
 
-35/29/24/19114] 9} 4]
 52 >A188181175169|63158152|4614 7186) 3012512) 15/10 6|
 58 |[94/88/82/75/70/64)58|53/47/42/37|32|27|22|17|12| 7
 
@@ -22447,26 +16387,18 @@ ee ete a eS ee ee «| ne ee ee er ee me
 190|79169]60/50/41/31/23(131 4];
 
 (90]80/7 1]61/52/42/33/24/16] 7]
-ry iota 72162153144|35|27
 
-fT tty? tT ttt? tee
 5 |[91[82/73|64]55/46|37\29|20112) 4]
 
-"on
-ve
-fe
-
 54 ||94 + 82|76|70|65/59|54/48|43/38]33/28]/23/ 18/14] 9| hy [Po St BS Be a8 iain Soy62 S 4 51|47|44 40/37 34
-6 joijs2|7ajs5[solasisoisijasiiat ok I) | 11 11T1tttittt om i
+
 $7 |[91]83|74/66]58]49]41/33/25/17| 9} 18 355 1194/88/82/76 49144/39|34/29/25/20]15'11 | 155|51|48|44/41/38/34
 
-75 15 91 ata astra 7 False ate
 56 |/94/88/82|77|71166/61|55|50/45/40/35/31|26/21j17|12] 76 1196|91 Hf Sere ea recteTleales ssa 42|38|35
 57 (194/838/8 83{r7}72166 61(56/51/46]/41|36/32/27/23]18]14 | vi ! 1196/91/87|83|79|75|71167|63/60| 49|46[42/39136
 58 |194/89/83|77|' r2t67|62 57|52|47|42|38|33/28/24120|15]| 78 ||96 nia Se 5 3150/46/43] 40/37
 
 59 1194/89 SY TEEiipe Sine 48 = aaa ke 30 oe 174 279 ||96|91|87 ee 71 SS ali 54|50|47/44 " 37
-| | | |
 
 21/92/8517 70}62/55]48|41/34]28|21/14]| 60 |[94/89 atte 73 aT GRITS ales 49 a Tolasiautat oa 22/18} 80 ipclale7ta3179176175 aaealeas7 salSi|aT HIS
 92|85|78|70|63|56/49|43/36|29|23|16]] 61 ||94|89|84|79|74|68|64|59|54 37 4{68|64[59|64)50|45|40/ 36) 82/28 24|20||~ $2 |[96|92|88|84|80|76|72|69|65/62|58|55/52/49/46|43]40
@@ -22476,25 +16408,20 @@ a ipsias 78\7 Flats tal eel 62: "ee aateotea 84/79/74 airaiesleaieoles eoltstaT 
 88 ||91|83|75|67|69|51|43|35|27|19|12| 4
 $9. |[92/84|76]68|60(52/44|37|29|21|14|;, 7
 
-| ey tt ttt tt kt
-_ 40 |[92184}76|68]61153/46/38|/31|23|16) 9
+40 |[92184}76|68]61153/46/38|/31|23|16) 9
 41 ||92|84177|69]62/54147|40(33|26]18111
 
 68 |/95/90|84179|74/70/65|60|56|51/47|42/38|34/30|26/22|| 86 aoe eso
 46 1193186 7971 65|58|52/45139/33|26|20]| 64 "95 5 85179 oe 61/5652 a8aa 39{35|su/27i28 88 |sein2(se|es)i|7elralraleriéa ee
 
 46 ||93/86|79|72|65|59|53|46/40|34|28|22
-47 saaatTalraiseisuletat 41(35|29|23l| 65 "aledarel rj ee cl an 90 Toeloatzalasteil7alrs|7ilesleslealSoISelea/SO|a7I
 
 48 |[93/87|80|73|67;60/54/48/42/36/31|25]| 66 195|90|85/80|76 71|66|62/58|53/49/45/41(37 33/99 |26| 92 ||96|92|89/85|82|78|75|72|69|65/62/59|57/54]51/48/45
-49 ||93/87}80|74,67|61/55/49|43/37[32/26| 67 |195/90|85|80|76|7 1|67|62/58/54/50|46/42/38|/34|/30|/27]) 94 "Sr Haelaataoleetaa 179 76 }72I68 6 IGSIG0IS7|EA162145|46 |
+49 ||93/87}80|74,67|61/55/49|43/37[32/26| 67 |195/90|85|80|76|7 1|67|62/58/54/50|46/42/38|/34|/30|/27]) 94 "Sr Haelaataoleetaa 179 76 }72I68 6 IGSIG0IS7|EA162145|46
 aff | 1 | ded ql 68 |195|90(85/81/76|72167|63|59/55/51]/47]43/39/35/31/28} 96 ||96193/89|86|82|79|76|73|70|67|64|61|58/55/53|50/ 47
 EL det | | |] 69 [195/90/86/81/77|72|68/64/59|55/51/47/44/40/36/32/29]| 98 |/96/93]/89|86/83|79|76|73|70|67164|61|59/56|53/51/48
 
-i-|- | | | | | i |
-
-| | fF
-| | | ft | | | a | | { | 1 fi 100 1196[93/90/86183/80177/74171168]65/62/59/57/54/52/49
+| | ft | | | a | | { | 1 fi 100 1196[93/90/86183/80177/74171168]65/62/59/57/54/52/49
 
 To use tables, find difference in reading between dry- and wet-bulb thermometers. Under that figure, opposite dry-bulb reading, find
 per cent of Relative Humidity. Example: Dry buth 75°, wet bulb 63°, difference 12, Under 12 and opposite 75 find 51% Relative Humidity,
@@ -22505,26 +16432,9 @@ humidity) exerts a greater moistening effect than air at lower relative humiditi
 The moistening effect of the air varies approximately with its relative humidity,
 without regard to the actual weight of water vapor present.
 
-|
-
-WpuoD IV
-
-SUIUO!I
-
-L69'S
-
-5,492 Air Conditioning
-
-In a textile mill, for instance, where one of the chief functions of air con-
-ditioning is to control the moisture in the yarns in course of manufacture,
+In a textile mill, for instance, where one of the chief functions of air conditioning is to control the moisture in the yarns in course of manufacture,
 it should now be obvious that temperature control is equally as important
 as moisture control, since it is upon the relative humidity (water vapor
-
-DER ¢ Sy . Sy . - Stay ae at > xs Ie el A oe
-
-Mtg
-
-. ™ et * » we ; = 5 . es
 
 Fic. 8,750.—Carrier a thermostat; sectional view showing UpEreting Srinciple.
 consists essentially of an outer expanding stem, usually of brass, and an ir 101 nc
@@ -22545,34 +16455,21 @@ the diaphragm valve, whereupon the pressure upon the diaphragm of the valve is r
 through the air leak, as shown in the figure, and the valve opens, admitting steam to the
 spray water heater.
 
-&
-
-Air Conditioning 3,493
-
 - content as, related to temperature) that the moistening effect of the air
 depends.
-
-a
-
-- — us ae Yaa
 
 Fic. 8,751.—Buffalo ejector type dew point humidity control. ks et ,e
 
 produced by heating the spray water. This water st lated
 
 era. on, satnebaares 1S
-Ak pas rel sa a
-
-tof ¢ vapore tion,
 
 and, in addition, raises the temperature of the incoming air t de déw* point; that is,
-to the temperature necessary to hold the required amount ve moisture The water tempera-
-ture is varied as may be necessary to maintain a constant dew point under variable conditions
+to the temperature necessary to hold the required amount ve moisture The water temperature is varied as may be necessary to maintain a constant dew point under variable conditions
 
 of entering air. The stem of a graduated thermostat A, is placed in the passage just beyond
 the eliminators, so that it is exposed to the temperature of the air leaving the washer. Any
-change in temperature causes a contraction or expansion of this thermostat and the tempera-
-ture regulation is accomplished by contraction and expansion. A water heater and mixing
+change in temperature causes a contraction or expansion of this thermostat and the temperature regulation is accomplished by contraction and expansion. A water heater and mixing
 _chamber B,.of the e jector type, is placed in the suction line to the pump. The diaphragm
 steam valve C, is placed in the steam line which supplies the water heater. This valve is
 operated by compressed air pressure from graduated thermostat A. The air compressor D,
@@ -22585,8 +16482,6 @@ fail the steam would immediately be shut off. To provide for further safety from
 humidification a safety relay vaive F, is placed on the air line to the steam valve. This relay
 allows air to pass to tne diaphragm steam valve C, only when the washer sprays are in opera~
 tion.
-
-5,494 Air Compressors
 
 Drying Effect of Air.—Bniefly, the drying effect of atr varies
 approximately inversely with tts relative humidity, the greater the
@@ -22604,15 +16499,10 @@ ul on-both these factors.
 
 ### FROM PUMP
 
-EN
-SASS SS
-
 <—= FROM
 
-. IAPHRAGM |
-TO D EN THERMOSTAT
+### TO D EN THERMOSTAT
 
-'"'e—-—_ VALVE
 Fic. 8,752.—Buffalo safety relay valve.
 
 Heating Effect of Air.—The
@@ -22623,15 +16513,12 @@ its specific heat is low, .2415
 means that one Ib. of air falling
 one degree in temperature
 (Fahr.) will yield but .2415 of
-the heat which would be avail-
-able from one lb. of water, re-
-duced 1° in temperature. The
+the heat which would be available from one lb. of water, reduced 1° in temperature. The
 
 presence of water vapor in the
 
 air materially increases the total
-heating capacity of the air be-
-cause of the latent heat of the
+heating capacity of the air because of the latent heat of the
 vapor itself.
 
 Moist hygroscopic materials in the presence of dry air, even at high dry
@@ -22641,34 +16528,11 @@ the material and in so doing removes from the material, as well as from the
 
 air, the latent heat of evaporation.
 
-Air Conditioning.—This operation (sometimes called "'manu-
-factured weather'') involves four distinct air conditions upon
-
-i
-OL ie
-
-### FLITE
-
-»
+Air Conditioning.—This operation (sometimes called "'manufactured weather'') involves four distinct air conditions upon
 
 <—FROM AIR COMPRESSOR 7
 
-. 2StOLspIOU gGNIE
-
-RN
-
 bey
-
-: YQ
-Lo)
-ea)
-a.
-i. S
-
-### SUTUOI
-
-~
-wo - et
 
 Fics. 8,753 and 8,754.——Buffalo closed heater type dew point humidity control. 'Where steals not available at a pressure of
 3 lbs. or over, that is, where a vacuum steam heating system or hot water heating system is installed, an ejector heater cannot
@@ -22677,8 +16541,6 @@ heater and safety device with the reverse acting diaphragm valve. The mixing val
 and is operated by the graduated action dew point thermostat. The seat of this valve takes intermediate positions to give
 
 the proper mixture of heated and by-passed water required.
-
-.!
 
 (5,496
 
@@ -22697,9 +16559,7 @@ fects of indoor air.. These are:
 
 4. Motion.
 
-Air conditioning ac-
-complishes the simulta-
-neous control of the four
+Air conditioning accomplishes the simultaneous control of the four
 conditions enumerated.
 
 ### RUBBER:
@@ -22708,14 +16568,11 @@ Be DIAPHRAGM
 
 sey
 
-Any system which neg-
-lects any one of these fac
-tors is not an air condi-
-tioning system. Hence a
+Any system which neglects any one of these fac
+tors is not an air conditioning system. Hence a
 ventilating system or a'fan
 heating system which
-merely moves. uncondi-
-tioned air, heated air,
+merely moves. unconditioned air, heated air,
 cooled air, filtered air or
 moistened air, 1s not an
 air conditioning system.
@@ -22728,8 +16585,7 @@ Such systems have their
 Fic. 8,755.—Carrier diaphragm valve. Jt is located in
 the steam line to the water heater, and is of the direct
 acting type, which means that it is held open by
-means of a spring, and closed when air pressure is ad-
-mitted 10 its diaphragm motor.
+means of a spring, and closed when air pressure is admitted 10 its diaphragm motor.
 
 legitimate applications, of
 course, but are too often
@@ -22738,8 +16594,7 @@ air conditioning systems,
 hence this distinction.
 
 Methods of Air Conditioning.—There are several methods
-employed for the automatic control of temperature and humid-
-ity and various standard forms of apparatus are used for ac-
+employed for the automatic control of temperature and humidity and various standard forms of apparatus are used for ac-
 
 complishing the required purposes.
 
@@ -22747,61 +16602,22 @@ The Carrier dew point
 control is here given as an illustration.
 
 With this control, the dew point, or saturation temperature of the air is
-automatically controlled by means of a simple expansion thermostat, ex-
-posed to the air at the instant of saturation in the air conditioning machine
-
-| 'patioltpudd oq 0} Siidds Sy} 0} Wdjshs JoNp dif} YRnOit{) pordaifap St Iie dj} Ue] oy} WIG *padhpd1 id pdsedarout 1dt{}19
-'paisn{pe }U9}U0D aIN}SIOUL S}I 'pasuBa[d Aja}a[CUIOD SI Ite 9Y} JaqUIeYD SIY} UIIIAA *Waj}SAS UOT}E[NIIIO JoyeM 94} Pue UB 94}
-'sraquieyo Aeids oy} 'Slodwiep pajjoquos Ajjestjewojne 34} SUIMOYS JUN BZUIUOIIPUOD Ie UOl}eyS [eIJUID JaLLWIeD—'9G/'8 "OI
+automatically controlled by means of a simple expansion thermostat, exposed to the air at the instant of saturation in the air conditioning machine
 
 eae eatihin inh nas anenel
 
-ip
-
 ing
-
-it
 
 ### LPI TROTO LILI LIE
 
-### DLDOOOON
-
-|
-;
-i
-:
-E
-|
-|
-E
-|
-
 Cond
-
-ir
-
-A
 
 Sean dha chonahh aia ah 0A TAA SISA A 8 ABA SA ths het Sibi tao neh Sot Onan aie nbtetintinn nate eneemeenns:
 
 wets
 
-= ee
-
-MALS 11701 aie a DA cs tah tian tnt lt» Bett Sac, be Mal ine Sing ye
-
-;
-
-' SOOO TECLA IDE OED sorte" <dmhahiddiatniunaitipbai siestsiabadatint-sntaiihvbidissinass tists shea dint binmpeainiariibtihictscibninsaaiinth hth tivinn ta tstchinitabdaianinah ttcctebichinincnesiliit tbat btimaes titi iat tehnerecencttsbiitahichhadidriaiinit tatiana mnt nna et ee aD ee 6 A ho ne bomen
-
-5,498 Air Conditioning
-
-I
-
-itself. Thus, the absolute humidity of the air is definitely fixed in the con-
-ditioning machine, because, as has been pointed out, where air is saturated
-at a given temperature, it contains a given quantity of water vapor cor-
-responding to that temperature.
+itself. Thus, the absolute humidity of the air is definitely fixed in the conditioning machine, because, as has been pointed out, where air is saturated
+at a given temperature, it contains a given quantity of water vapor corresponding to that temperature.
 
 Obviously, ary absolute humidity (2. e., the number of grains of water
 vapor per cu. ft. of air) can be established by adjusting the thermostat to
@@ -22811,48 +16627,23 @@ the corresponding temperature.
 
 FAN
 
-(mht
-STEAN HEATER ot:
-
-EUPINATORS —
-
-pi
-
-i
-il
-
 7-04
 QUADRANY TO OPERATE
-MIIXING DAMPER
 
-S70. A .ATMERMOMETER,
-
-iq
-MI
-q
-
-/4$* 22"- AIR
-WASHER DOOR
-
-BY
+### WASHER DOOR
 
 TEMPER. REGULATOR
 
-" v
 2C.W RETURN - 5
 BOX %
 
 sp / 7G. & STREET
-ELL BEM/NO- FOR
+
 OVER FLOW & ORA/N
 
 1. %,757,—Carrier unit air conditioner, showing in detail its construction and operation,
 
-Air Conditioning — 5,499
-
-The saturated air leaving the machine is heated by passage through suit-
-able heaters, and its dry bulb temperature is increased sufficiently to estab-
-lish the required dry bulb temperature in the space being conditioned.
+The saturated air leaving the machine is heated by passage through suitable heaters, and its dry bulb temperature is increased sufficiently to establish the required dry bulb temperature in the space being conditioned.
 
 The temperature of the air leaving the heaters is controlled by means of
 a second thermostat located in the room itself, and regulating the steam
@@ -22876,11 +16667,8 @@ The dew point temperature of the air leaving the humidifier then becomes
 the same as the wet bulb temperature of the outdoor air, the dew point
 thermostat being inoperative. .
 
-5,500 Air Conditioning
-
 The dry bulb temperature in the enclosure is regulated in accordance
-with the prevailing wet bulb temperature of the entering air and this regula-
-tion 1s accomplished by means of a hygrostat located within the enclosure,
+with the prevailing wet bulb temperature of the entering air and this regulation 1s accomplished by means of a hygrostat located within the enclosure,
 usually adjacent to the thermostat which is used for winter control. The
 shift from the room thermostat to the room hygrostat can be made either
 manual or automatic as required. In most cases it is automatic.
@@ -22888,8 +16676,6 @@ manual or automatic as required. In most cases it is automatic.
 The hygrostat, which is sensitive to relative humidity, controls the dry
 bulb temperature of the enclosure by regulating the volume of air admitted.
 'This avoids the use of heaters, and takes advantage of the available sun
-
-f,*
 
 Fic. 8,759.—Carrier fixed suction 'strainer, the cover open. 'The pump connection shows in
 the lower left corner.
@@ -22903,10 +16689,7 @@ of cooler air and permits the sun's heat, or the heat from sources within
 the enclosure, to restore the desired condition.
 
 If in summer, a dry bulb temperature lower than that of the atmosphere
-must be maintained, a dehumidifier is provided. In this case the dehumidi-
-fier acts, during the winter, as a humidifier, under dew point control, and,
-
-Air Conditioning 5,501
+must be maintained, a dehumidifier is provided. In this case the dehumidifier acts, during the winter, as a humidifier, under dew point control, and,
 
 during the summer, functions as a: dehumidifier under the same dew point
 control, except that the dew point thermostat at the dehumidifier, instead
@@ -22931,22 +16714,14 @@ return it to the settling tank.
 the volume dampers in the supply ducts, controlling the temperature of the
 room by means of the volume of cold, dehumidified air permitted to enter.
 
-The two control instruments , then, regulate the actual water vapor con-
-tent of the air and its dry bulb temperature, thereby fixing its relative
+The two control instruments , then, regulate the actual water vapor content of the air and its dry bulb temperature, thereby fixing its relative
 
 humidity.
 
-— BAUDELOTS
 i CHAMBER'
 
-A a in
-
-ee ee
 tower. OT.
 TAR a
-
-ay
-a 2
 
 Fic. 8,761.—Carrier aenumidifier. A, distributor plates; B, sprays; C, eliminator plates; D, outlet; E, fan connection; F, fan,
 G, fan motor; H, fan outlet connection to duct system: I, pump suction screen; J, pump suction line; K, three-way mixing
@@ -22955,20 +16730,11 @@ by-pass to upper tank for quick cooling at start; R, drip troughs over baudelot 
 connections; V, air compressor for automatic control; W, overflow from lower tank; X, upper tank drain; Y, lower tank drain
 to sewer, Z, fresh water.connections for make up and cleaning.
 
-cOS'sS
-
-upUoD ITV
-
 Suluor
 
-Air Conditioning 5,503
+There are many variations of this control, but to a general understanding of air conditioning practice, a knowledge of this control is sufficient.
 
-There are many variations of this control, but to a general understand-
-ing of air conditioning practice, a knowledge of this control is sufficient.
-
-In the complete conditioning of air, its purity must be main-
-tained. . Air conditioning machines, humidifiers and dehumidi-
-fiers, thoroughly wash and cleanse the air, removing practically
+In the complete conditioning of air, its purity must be maintained. . Air conditioning machines, humidifiers and dehumidifiers, thoroughly wash and cleanse the air, removing practically
 all of the solid or soluble gas impurities, and most of the aerobic
 organisms of disease and decay.
 
@@ -22990,11 +16756,8 @@ and then caused to mix with the air.
 
 In a humidifier, the water acts as the medium which conveys heat to the
 air, and as the source of the water vapor required to saturate the heated air.
-When the temperature of the spray water is above that at which the mois-
-ture in the air will condense, the conditioning machine is functioning as a
+When the temperature of the spray water is above that at which the moisture in the air will condense, the conditioning machine is functioning as a
 humidifier.
-
-5,504 Air Conditioning
 
 Removal of Moisture from Air.—When the conditioning
 machine is functioning to remove moisture from the air, it is
@@ -23007,8 +16770,7 @@ its dew point, thereby causing the excess water to condense
 and-fall into the tank of the conditioning machine.
 
 In this case the water acts solely as a conveyor of heat from the air
-(besides its cleansing action) and, as such, the finely divided mist is ex-
-traordinarily effective (practically 100%).
+(besides its cleansing action) and, as such, the finely divided mist is extraordinarily effective (practically 100%).
 
 In the Carrier system the dehumidifier functions either as a humidifier
 or as a dehumidifier, without alteration or rearrangement, except that the
@@ -23018,8 +16780,7 @@ connect the three way mixing valve for summer operation.
 
 Whether the requirement is humidification or dehumidification, the
 apparatus always operates under accurate automatic control, maintaining
-the required indoor conditions winter and summer, regardless of the out-
-door weather. |
+the required indoor conditions winter and summer, regardless of the outdoor weather.
 
 Air Movement.—tThe effectiveness of any air conditioning
 apparatus depends as much upon the proper distribution of
@@ -23027,16 +16788,12 @@ the air. as upon the efficiency of the conditioning machine
 itself.
 
 It may be said that an air conditioning installation is no better than its
-duct system. To be effective, the conditioned air must be uniformly dis-
-tributed over the entire area of the enclosure, and, especially in closed or
+duct system. To be effective, the conditioned air must be uniformly distributed over the entire area of the enclosure, and, especially in closed or
 dry rooms, processing rooms, the circulation must not only be uniform,
 but vigorous.
 
 Evaporative Cooling.—Since outdoor summer air is rarely
-fully saturated, there is usually a considerable difference be-
-tween its dry bulb and its wet bulb temperature.
-
-Air Conditioning 5,905
+fully saturated, there is usually a considerable difference between its dry bulb and its wet bulb temperature.
 
 This difference is called the wet bulb depression. Due to the higher
 dry bulb temperature of summer, the wet bulb depression is greatest during
@@ -23056,20 +16813,17 @@ water into water vapor, such. conversion occurring the instant the air is
 brought into contact with the mist in the spray chamber of the humidifier,
 the heat being taken from the air.
 
-The spray water in the humidifier 1s used over and over, only that quan-
-tity being added which is actually absorbed by the air. Thus, without any
+The spray water in the humidifier 1s used over and over, only that quantity being added which is actually absorbed by the air. Thus, without any
 additional operating expense, a humidifier will, in summer, perform the
 function of cooling the air through the wet bulb depression.
 
 The wet bulb depression is often, in some localities as much as 25° or
 even 30°, and quite commonly from 10° to 15°, even in localities adjacent
-to great bodies of water, where the humidity is high and the wet bulb de-
-pression, therefore, correspondingly low. In the vicinity of New York, for
+to great bodies of water, where the humidity is high and the wet bulb depression, therefore, correspondingly low. In the vicinity of New York, for
 instance, the maximum outdoor wet bulb temperature is about 78°.
 
 On such a day the dry bulb temperature would probably be about 90°,
-the wet bulb depression being 90°—78°=12°. In Denver, where the maxi-
-mum wet bulb is usually less than 78°, the coincident dry bulb is usually
+the wet bulb depression being 90°—78°=12°. In Denver, where the maximum wet bulb is usually less than 78°, the coincident dry bulb is usually
 much higher than 90°, resulting in a greater wet bulb depression, which
 means that more cooling can be accomplished by evaporation.
 
@@ -23077,27 +16831,18 @@ Precautions in Using the Sling Psychrometer.—This instru-
 
 ment, shown in fig. 8,772, consists of two accurately graduated
 mercury thermometers mounted on a metal strip and equipped
-with a swivel handle or a chain to permit whirling. The ther-
-mometers are known as the wet and dry bulb.
+with a swivel handle or a chain to permit whirling. The thermometers are known as the wet and dry bulb.
 
 The wet bulb is provided with a closely fitting fabric cover, usually silk,
 which serves to retain liquid and keep the bulb- wet during observations.
 The dry bulb is set somewhat higher on the metal strip than the wet bulb,
 to avoid: the influence of evaporative cooling.
 
-;
-
-Cc
-
 ic Preseure 28.92 ln. Mercury
 
 Psychrome
 
 Barometr
-
-J
-
-N
 
 Newark
 
@@ -23109,25 +16854,10 @@ Ing
 
 Air Conditioning
 
-TA ft 17
-
-tT i tt
-
-=
-
-QUarer a
-
-(a 40 .%90 OF
-
-7%
-
 Fic. 8,765.—Psychrometric chart.
 
-Air Conditioning 5,507
-
 To observe the wet and dry bulb temperatures of the air,
-the wet bulb is thoroughly saturated with clean water, prefer-
-ably distilled. The instrument is then whirled at a rate of
+the wet bulb is thoroughly saturated with clean water, preferably distilled. The instrument is then whirled at a rate of
 100 or more 7.p.m.
 
 The whirling should be continued fora half or three-quarters of a minute,
@@ -23139,7 +16869,7 @@ to check.
 The following precautions should be observed:
 
 1. The wet bulb covering should be of clean, closely fitting fabric free
-from sizing or other foreign matter. |
+from sizing or other foreign matter.
 
 2. Do not touch wet bulb covering with oily fingers.
 
@@ -23173,19 +16903,14 @@ point or saturation temperatures."
 NOTE.—The Draper recording hygrometer gives a permanent and continuous record
 of relative humidity over a period of one week.
 
-5,508 Air Conditioning
-
 The percentages of relative humidity are represented by converging
 curved lines with values indicated thereon.
 
 Any two of the above properties may be found, if the other
-two are known. The following examples and diagrams indi-
-cate the methods of using the chart.
+two are known. The following examples and diagrams indicate the methods of using the chart.
 
 Fics. 8,766 to 8,771.—Diagrams to accompany the examples illustrating methods of using the
 peychrometric chart.
-
-Air C onditioning 5,509
 
 Example 1.—Guiven: Dry bulb temperature, 70°; wet bulb temperature,
 60°. Find the percentage relative humidity and the dew point.
@@ -23198,23 +16923,16 @@ as 56% and by following the intersecting horizontal line to the left to its
 intersection with curve A, the dew point is indicated as 53.4°.
 
 wee eke
-penne OOOOe eS
-
-x o
-an
-f
 
 Fic. 8,772.—Two convenient forms of the siing psychrometer. The larger instrument has 12
 
 in. thermometers graduated in one degree divisions. The smailer instrument, lying on the
 
-' table, has a smailer temperature range and less open graduations, but is a convenient pocket
+table, has a smailer temperature range and less open graduations, but is a convenient pocket
 type. |
 
 Example 2.—Given: Dry bulb temperature, 80°; relative humidity,
 59%. Find the dew point and wet bulb temperature. —
-
-5,510 Air Conditioning
 
 Locate the point of intersection of the vertical line representing 80°
 dry bulb temperature with the interpolated position of the curved line
@@ -23223,85 +16941,40 @@ which would represent 59% relative humidity.
 Reading horizontally to the left from this point, to curve A, the dew
 point is indicated as 64° and reading obliquely upward to the left, be-
 
-S
-&
-
-bre'. 4
 be "EEE ARS
-fr VV NSK
 
-ttc Ae a pe
-Nar eS
-PEt ttt tet tt tT Tt AYA EOE
 7 TTT TT TRATES
-ARRAS
-INV OOAL YA IDK
-
-Bi
-an
-B
-J
-
-¥
-f\ @: . f
-
-' MG 5 Q an aa x Ne ox AS S r> ae >
-GT AR DT BR
 
 Grains of moisture per pound of dry air
 
-f
-~~ /%
-7 t3
-
-BO \
-; 2m.
-bing mM TATE NAN + eek
-4 : LAM | CaNA
-wCLLCCT Re SORT NIN
-4 we . i
 Hitt | lid ERE SOR STURN
-ap A | :} a , 4 > R
-SRR. :::. ERE SEN
-APH be ¥ . > "YD \>
-Es Beorrssshase PRC NT te
-ARI ited et : -.
-iz eQe gts aT - Lett . :
-40 SST HE Ee aS
-div Ie PTs . ~y >
-eRe ERED PRIS
-SEIT OPIN Lt Per :
-S. BRERREE REE tS wt
-o "7 *-e eee Tel mee | ee ayea~ ee)
-Lec" 7% TEERRERRC ERR RIO bie ee
-2 es Se eS LATS BBa wrt :
-47 - SS ee he =
-40 50 60 80 90 100
 
-_
+SRR. :::. ERE SEN
+
+40 SST HE Ee aS
+
+Lec" 7% TEERRERRC ERR RIO bie ee
+
+47 - SS ee he =
+
 Orv bulb temperature
 
 Fic. 8,773.—'Comfort Chart'' for air velocity of 100 ft. per min.
 
 tween the wet bulb lines, to curve A, the wet bulb temperature is indicated
-as 69.3°.
 
 Example 3.—Given: Dry bulb temperature, 75°; dew point temperature,
 55°. Find percentage relative humidity and wet bulb temperature.
 
-Air Conditioning 5,511
-
 Locate the point of intersection of the vertical line representing 75° dry
 bulb temperature with the horizontal dew point line intersecting curve A,
-at 55°. This point indicates the relative humidity as 50%, and by inter-
-polation the wet bulb temperature as 62.6°.
+at 55°. This point indicates the relative humidity as 50%, and by interpolation the wet bulb temperature as 62.6°.
 
 Example 4.—Guiven: Relative humidity 50%; wet bulb temperature,
 60°. Find dry bulb temperature and dew point.
 
 Locate the point of intersection of the curved line representing 50%
-relative humidity with the oblique line representing 60° wet bulb tempera-
-ture.
+relative humidity with the oblique line representing 60° wet bulb temperature.
 
 Reading vertically downward from this point to the dry bulb tempera-
 
@@ -23325,8 +16998,7 @@ Locate the point of intersection of the curved line representing 40%
 relative humidity with the horizontal line intersecting curve A at 40° dew
 point temperature.
 
-Reading vertically downward from this point to the dry bulb tempera-
-ture scale, the dry bulb temperature is indicated as 65°, and reading
+Reading vertically downward from this point to the dry bulb temperature scale, the dry bulb temperature is indicated as 65°, and reading
 obliquely upward to the left, along the wet bulb lines, to curve A, the
 wet bulb temperature is indicated as 52°.
 
@@ -23335,12 +17007,6 @@ wet bulb temperature is indicated as 52°.
 
 3. What is the difference between absolute and relative
 humidity?
-
-5,512 Air Conditioning
-
-4.
-
-in
 
 Which kind of humidity is important?
 Define the term dew point?
@@ -23369,7 +17035,7 @@ How does the drying effect of air vary?
 . What is a de-humidifier?
 
 . What name is given to the addition of moisture to air?
-_ Name an important item in air conditioning.
+Name an important item in air conditioning.
 
 . What is a sling psychrometer?
 
@@ -23381,13 +17047,7 @@ _ Name an important item in air conditioning.
 
 metric chart.
 
-:
-
-? "e
-' 4 3 ¢ i, tap ee ' 4 at rae .
-a 4 > h , F ' i' , s3 ee . , oe J 4 : ae
-
-Farm Lighting 5,913
+4 3 ¢ i, tap ee ' 4 at rae .
 
 ## CHAPTER 226
 
@@ -23458,35 +17118,17 @@ BEARING FUEL TANK
 Fic. 8,774 .—Delco single cylinder air cooled engine and direct connected dynamo. Sectional view showing parts. The fly wheel
 with its air vanes serves also as a blower to air cool the engine.
 
-SuUIvYSI'T WIe
-
-Farm Lighting 5,515
-
 To simplify the plant and prevent trouble in cold weather,
 air cooled engines are used.
 
 The method of cooling is shown in fig. 8,775. When this system is used
 it is necessary to have proper ventilation, in the room where the plant is
 
-=
-S
-=
-—
-=>
-=
-
-h
-
-a
-
-vn Pay FE '
-
 Fic. 8,775.—Delco air cooled engine showing ventilation. In construction, the fly wheel of the
 engine 1s built with a number of biades init. When the engine is running, the blades pull the
 cool air down through the top of the draft tube over the cylinder through the air pockets in the
 crank case and exhaust it through the fan blades. At the same time air is drawn through the
-louvres on the dynamo cover, through the dynamo into air pockets in the crank case and ex-
-hausted through the fan blades on the fly wheel. A continued circulation of air is kept going
+louvres on the dynamo cover, through the dynamo into air pockets in the crank case and exhausted through the fan blades on the fly wheel. A continued circulation of air is kept going
 between the fins on the engine and through the dynamo.
 
 installed. When making an installation, careful check should be taken that
@@ -23496,27 +17138,17 @@ cover has the louvres or slots pointing downward.
 
 When the plant is installed in the basement or in an out
 
-5,916 Farm. Lighting
-
 building near the residence, provision should be made to muffle
 the exhaust. One method of doing this is shown in fig. 8,776.
 
 If the exhaust gases be not properly disposed of after they leave the
 engine and are forced to go through a pipe that consists of sharp turns or a
-clogged muffler, back pressure will exist. This will cause the plant to over-
-heat, gradually burn the valves, causing them to stick, retarding the speed
+clogged muffler, back pressure will exist. This will cause the plant to overheat, gradually burn the valves, causing them to stick, retarding the speed
 of the plant, which will reduce the output.
 
-/ .-
-J' RIGHT ANGLE BEND
-me — YS
-[a
-
-ad
+### J' RIGHT ANGLE BEND
 
 TIN DISK ">= 3
-
-### SHAATATERATITAY
 
 Fic. 8,776.—Muffled exhaust. Bury a two ft. sewer tile in the ground so that the top will project
 slightly above the surface. The bottom of the tile should be open to allow water to drain out.
@@ -23529,8 +17161,6 @@ the top to allow the exhaust gases to escape from the tile. A concrete cover can
 in place of wood. This should be made so that it can be easily removed should it be necessary
 to clean the muffler. A 1 in. pipe should be cast in the concrete to allow the exhaust gases to
 escape from the tile.
-
-Farm Lighting 5,517
 
 Every serviceman should carefully plan his installations SO that the
 exhaust pipe runs straight and the use of bends should be avoided where
@@ -23545,8 +17175,7 @@ adjusting.
 
 must be charged at the proper rate and be protected against
 delivering a reverse current through the charging circuit, and
-too great overload on the lighting circuit. Accordingly pro-
-vision must be made:
+too great overload on the lighting circuit. Accordingly provision must be made:
 
 NOTE.—The most satisfactory way to install the exhaust is to run the pipe straight out
 without any bends or elbows. This will allow a free escape of the exhaust gases and prevent
@@ -23554,65 +17183,32 @@ back pressure. However, if it be absolutely impossible to do this, and it is nec
 bends, use only one inch sweeps or right angle bends, These bends are used by electricians for
 conduit work and can be obtained at an electrical supply store.
 
-NOTE.— Never install a muffler inside a building, as the exhaust gases will effect the ven-
-tilation of the plant, and the carbon monoxide gas exhausted by the plant is very injurious to
+NOTE.— Never install a muffler inside a building, as the exhaust gases will effect the ventilation of the plant, and the carbon monoxide gas exhausted by the plant is very injurious to
 any person who breathes it.
-
-5,518 Farm Lighting
 
 ### CAME RIDGE
 
 ### BY SISTAW CE
 
-$°7%6
-
-CRANRING , ake
-CUTOUT "ir Ld 7
-
-Coe as {
 SWITCH |
-
-ese :
-tt LTT PO ooveg
-
-wore tr ores,
 
 Wii
 
-|  f
-
-Ra
-
-i
-
 ### CARBCRETOR THROTTLE
 
-| coll 'oe CHOKE CONTROL
-R
-Ve af ae MODEL 15C3
+coll 'oe CHOKE CONTROL
+
 Conmansor [4 y T WIRING DIAGRAM
 Frost of
 SWITCHBOARD § GENERATOR
-
-SP) ps
 
 Fic. 8,778.-Wiring diagram for Dela
 MS battery lighting plant showing thi
 
 various control devicesand circuits
 
-D1StRIBuror, Fy
-
-ff:
-
-Farm Lighting 5,919
-
 1. For speed control of the engine;
 2. For battery cut out under abnormal conditions.
-
-%
-
-ed
 
 Fic. 8,779.—Delco automatic direct lighting plant control. 1. Master relay. Whenever a
 light or load is turned on the line, current from the 6 volt battery passes through the shunt or
@@ -23638,27 +17234,19 @@ battery varies within wide limits and ie some form of
 Fic. 8,780.—Delco oie dblkidicill thtettie Bains 9 In construction, the carburetor throttle lever
 is connected to the governor by a finger , Which is engaged in a grooved collar on governor.
 When the governor weights, undér spring tension, are not compressed, the collar forces the
-finger forward, opening the throttle: As the speed increases, the governor weights are gradu-
-ally forced away fromthe shaft\by. Centrifugal force, pulling the collar and finger back toward
+finger forward, opening the throttle: As the speed increases, the governor weights are gradually forced away fromthe shaft\by. Centrifugal force, pulling the collar and finger back toward
 the dynamo end of the«plaiut):closing off 'the carburetor throttle, which decreases the engine
 speed. The pre-determined speed limits are 1,100 and 1,200 7.p.m.
 
 termined limits. The governor varies the throttle opening to
 correspond with the load; that is, when the load on the dynamo
-increases, the speed of the engine decreases slightly and the gov-
-ernor causes the carburetor throttle to open, thus feeding more
+increases, the speed of the engine decreases slightly and the governor causes the carburetor throttle to open, thus feeding more
 fuel to the engine and holding the speed to the required limit.
 
 Farm Lighting OS 5,921
 
 Governors are of two kinds:
 '1. Mechanical; 2. Electro-magnetic.
-
-### SPRL LID
-
-nn TO OSCILLA ' RK
-
-ee ee
 
 Fic. 8,781.—Delco automatic direct lighting plant control. 2. Starting sivitch. When the
 ignition switch is closed on the master relay, current from the six volt battery passes through
@@ -23679,16 +17267,13 @@ Whenever the plant is called upon to deliver current to the line, this
 current passes through the solenoid. This creates a magnetic field: within
 the core which in turn acts against a weight and spring tension placed upon
 
-5,922 Farm Lighting
-
 the plunger in such a way as to move it up or down in the solenoid. The
 iron plunger upon being moved up or down causes the throttle to be opened
 or closed accordingly.
 
 As the load on the line is increased the additional current flowing
 through the solenoid or throttle control coil increases the strength of the
-magnetic field causing the throttle to be opened wider. A decrease in cur-
-rent similarly causes a closing of the throttle or butterfly valve.
+magnetic field causing the throttle to be opened wider. A decrease in current similarly causes a closing of the throttle or butterfly valve.
 
 Relays and Switches.—In
 es — addition to throttle control
@@ -23697,15 +17282,13 @@ ee - devices are necessary for the
 proper operation of the plant.
 These are shown in the wiring
 diagram, fig. 8,778, for a
-storage battery plant. Suit-
-able control is also made for
+storage battery plant. Suitable control is also made for
 plants in which the dynamo
 furnishes current direct to the
 line.
 
 Diesel Engine.—This type
-of oil engine differs from oth-
-ers, principally in that the fuel
+of oil engine differs from others, principally in that the fuel
 1s introduced directly into the
 cylinder in the form of a spray
 
@@ -23723,44 +17306,18 @@ plant is starting, it is very important that the adjustments be accurate and cor
 The parte are: A, required (.002) distance between armature and frame when armature
 is beld agairist pole face; C, contact; D, adjustable screws; F, bolt.
 
-Farm Lighting 5,523
-
 by an atomizer and due to the very high degree of compression ts
 
 ignited by the heat of compression.
 The Diesel cycle may be completed in either two or four
 
-SoS
-
-SB ye
-ct
->
-oe
-ee
-y
-He
 Ses
 pis
-es
-S31
-Ny '
-
-Me
-
-:
-: y
 
 SS OP ger
 
-ee eT ad ge
-
-RR
-
-Hey 1 aps
-
 Fic. 8,783.—Delco automatic direct lighting plant control. 4. Load switch. When the
-dynamo voltage has increased to approximately 22 to 28 volts, current from the dynamo pass-
-ing through the load switch winding magnetizes the iron core. The armature is attracted to
+dynamo voltage has increased to approximately 22 to 28 volts, current from the dynamo passing through the load switch winding magnetizes the iron core. The armature is attracted to
 the core and closes, first, the small or battery charging switch and then the large or load
 switch. While the battery charging switch is closed, it performs two duties, it allows current
 from the dynamo to charge the battery and it short circuits the shunt winding of the master
@@ -23780,16 +17337,13 @@ strokes, the latter being the prevailing practice. Briefly, the
 four stroke Diesel cycle is as follows:
 Suction Stroke.—Admission of air into the cylinder.
 
-5,924 Farm Lighting
-
 Compression Stroke.—Compression of the charge of air to about 500
 lbs. pressure which causes its temperature to nse to about 1,000° Fahr.
 
 As this pressure is reached gradually it does not cause a shock to the engine, such as an
 explosion to the same pressure would give.
 
-Power Stroke.—At the beginning of the stroke;. oil previously deliv-
-ered to the injection valve is blown into the cylinder in the forth of fine
+Power Stroke.—At the beginning of the stroke;. oil previously delivered to the injection valve is blown into the cylinder in the forth of fine
 spray by a small quantity of air compressed by a spécial compressor to
 700 or more lbs. pressure. The oil spray meeting the highly heated air
 in the cylinder ignites and burns, combustion continuing sdé/long as the
@@ -23798,20 +17352,16 @@ fuel is being injected, usually for about one tenth of the owe stroke.
 Fic. 8,784.—Delco automatic direct lighting plant controi.5. Stop charge switch. To allow
 the entire output of the dynamo to go out into the line when a heavy load is required, a switch
 is used to stop the dynamo from charging the battery. Current from the dynamo passing
-through the series winding of the master relay magnetizes the iron core and attracts the arma-
-ture of the stop charge switch to it. When the armature is drawn down, the contact points are
+through the series winding of the master relay magnetizes the iron core and attracts the armature of the stop charge switch to it. When the armature is drawn down, the contact points are
 opened and the battery receives no charge. The stop charge switch should open between 16
 and 19 amperes. A, screw to adjust the air gap S.
 
-Usually the heat generated by the combustion is not sufficient to pre-
-vent the pressure in the cylinder falling while admission is taking place,
+Usually the heat generated by the combustion is not sufficient to prevent the pressure in the cylinder falling while admission is taking place,
 so that the admission line on the indicator card falls below the constant
-pressure line as seen in the indicator card, fig. 8,785. |
+pressure line as seen in the indicator card, fig. 8,785.
 
 Exhaust Stroke.—Expulsion of the products of combustion from the
 cylinder, this completing the cycle.
-
-Farm Lighting 5,525
 
 'Notwithstanding the very high fuel economy of the Diesel
 
@@ -23823,38 +17373,14 @@ are such items as:
 2. High compression pressure required to ignite the charge, hence any
 .. leakage of the valves, piston rings will cause faulty ignition. This applies
 
-¢
-
-.
-.
-
-500 -
 a INJECTION ENDS
 jou | INJECTION BEGINS
-a
-ve peer
-ae) Y) {
-Yn '
-ul
-"yi ;
-; ]
-+ i
-L '
-D (
-COMPRESSION
+
+### COMPRESSION
+
 iGO ; BEGINS
-"+ CLEARANGE
-| EXHAUST, \ o>
-re) _
-ATMOSPHERIC LINE / UCTION |
 
-{
-
-1 (
-
-1 a:
-
-10 rw ae |
+ATMOSPHERIC LINE / UCTION
 
 Fics. 8,785 and 8,786.—Typical indicator card of Diesel four cycle engine. It will be noted from
 the diagram that the pressure range and mean effective pressure 1s much greater than 1n other
@@ -23867,22 +17393,9 @@ fails. 1, foreign matter in check valve; 2, air bound pump; 3, leaky stuffing bo
 compression. Leakage past. worn piston or past valves. Overloading. 'This injures the
 exhaust valves by too high exhaust temperature. Underloading. 'Too small fuel charge
 may cause ignition, fzilure. Jrregular running. Usually due to: 1, defective governor; 2,
-incorrect fuel timing; 3, incorrect charges. os :
-
-.
-. ow
-
-5,526 Farm Lighting
+incorrect fuel timing; 3, incorrect charges. os
 
 CMON IIR AIRE NE hbeaag
-
-GL
-
-### GOP GREELY
-
-ALIVE iy hy he bts I
-
-### PEELED
 
 Fic. 8,787.—Delco automatic direct lighting plant con- § AS
 trol. 6. Cranking cut out. While the engine is being & MOR
@@ -23894,57 +17407,39 @@ from its original shape and opens the cranking circuit. The cranking cut out sho
 the cranking circuit every time the plant is started, but only when the plant will not start
 after being cranked for 45 to 60seconds. After the cranking cut out has opened the cranking
 circuit and the trouble has been remedied, it is necessary to raise the lever momentarily to
-allow the thermostat to make contact again. If only one thermostat blade were used, vari-
-ations of atmospheric temperatures would have effect on it and while the engine was being
+allow the thermostat to make contact again. If only one thermostat blade were used, variations of atmospheric temperatures would have effect on it and while the engine was being
 cranked the thermostat would open the cranking circuit before the engine could start, or it
 would crank toolong. Therefore, another thermostat is used and mounted to repel the other
 under all atmospheric conditions, but when the resistance wire on the other is heated, enough
 energy is produced to open the circuit. A, is the distance required for the thermostat to
 travel before cranking circuit is opened.
 
-Farm Lighting 5,527
-
 to the compressor which furnishes the spraying air as well as to the power
 cylinder;
 
-3. Trouble likely with overload operation because the effect of over-
-loading is to increase the fuel charge so that the amount is greater than
+3. Trouble likely with overload operation because the effect of overloading is to increase the fuel charge so that the amount is greater than
 
 Fic. 8,788.—Delco automatic direct lighting plant control. 7. Fuse. If at any time the plant
 fail to start, examine the fuse which is mounted on the back of the switchboard. Do not use
 a larger ampere fuse than the one that comes with the plant or is recommended by the factory.
 
-¥
-. ,
-
 Fic. 8,789.—Delco automatic direct lighting plant control. 8. Service switch. The small knife
 switch that is located on the back of the switchboard should be opened only when cranking
 
 the plant by hand. When the plant is running, the switch must be closed. The plant will not
-start automatically while the switch is open. | |
+start automatically while the switch is open. |
 
-5,528 Farm Lighting
-
-can be burned with the air available. The result is that combustion con-
-tinues after expansion has begun, and if the overload be great it may
+can be burned with the air available. The result is that combustion continues after expansion has begun, and if the overload be great it may
 even be that the charge will still be burning when the exhaust valve is
 opened, which condition will quickly destroy the exhaust valve;
 
 4. Operation with leaky valve will result in both valve and seat being
 cut out by the hot gases blowing through at high velocities;
 
-s . STOP-CHARGE =. GRANKING CUTOUT |
-Mt. SWITCH cna Cale: RY |
+Mt. SWITCH cna Cale: RY
 
-N
 SIE were
 Ghee
-
-nw
-
-om a
-
-Ag
 
 Fic. 8,790.—Delco automatic direct lighting plant control. 9. Switchboard. This is the front
 view of the switchboard with cover removed, showing the location of the various relays and
@@ -23959,31 +17454,17 @@ cycle;
 8. Uncertainty as to future cost of fuel;
 9. Lubrication troubles.
 
-Farm Lighting 5,929
-
 ### PROPELLER
-
-——$__
 
 ### GEAR CASE
 
 ### GENERATOR
 
-COVER OVER COMUTATOR |
-an) . 1
-JERK CHAIN , ; :
+### COVER OVER COMUTATOR
 
-a
-Tl
+JERK CHAIN , ;
 
-3 | S-
-
-:
-
-L
 will (i
-a
-—_——
 
 ### GOVERNOR SPRING
 
@@ -23994,13 +17475,10 @@ a
 ### COLLECTOR BRUSH CASTING
 
 PULL. OUT BAR i ROW PANEL Boarp
-HL swiver ii |
-! Weizi, «|
-: las WIRES TO BATTERY
+
+las WIRES TO BATTERY
 
 sf AOC.
-
-v eG) saci i
 
 Fan
 
@@ -24009,10 +17487,6 @@ Fan
 ### GENERATOR
 
 ### INSULATOR
-
-i
-
-TT >
 
 ### PULL OUT WIRE
 
@@ -24031,16 +17505,11 @@ Air Shutter Lever
 
 —— _Union for
 ( A 1¢ Exhaust Pipe
-2, Co
 
 Crankcase
 Filling Plug
 
 Fics. 8,792 and 8,793.—Westinghouse 110 volt light and power plant for use with storage battery. Views showing :mportant
-
-OEs's
-
-SuUIYSI'T wie sy
 
 ### FUEL OIL
 
@@ -24061,11 +17530,11 @@ Ya FUEL OIL
 
 VALVE GEAR | =|
 ECCENTRIC e INTERCOOLER
-. —" way,
+
 AIR ; mn", SUPPLY PIPE zs
 INJECTION f} ——— [24 z2
-! re 28
-| e FUEL OIL 28
+
+e FUEL OIL 28
 
 PumMP CAM
 
@@ -24079,16 +17548,8 @@ viously deposited in the injection nozzle during the suction stroke is picked up
 _the combustion chamber, where combustion occurs at constant pressure during the period of injection. During the exhaust
 - stroke the: products of combustion are expelled from the cylinder, thus completing the cycle,
 
-SUILYSIT wie gy
-
-TEs's
-
-5,532 Farm Lighting
-
 Fic. 8,795.—Fitz Rualite
-turbo-generator set com-
-prising a completely self-
-contained hydro-electric
+turbo-generator set comprising a completely selfcontained hydro-electric
 power unit, including Fitz
 high speed water turbine
 direct connected to electric
@@ -24104,8 +17565,7 @@ capacity.
 Of what does a farm lighting plant consist?
 What kind of a cooling system is used on the engine?
 
-What provision should be made when | plant' is in-
-stalled in the basement? |
+What provision should be made when | plant' is installed in the basement?
 
 Make installation sketch showing muffled exhaust
 Name two general classes of lighting plants.
@@ -24115,53 +17575,40 @@ plant require?
 
 Describe the method of throttle control.
 
-Name two kinds of governors. |
+Name two kinds of governors.
 Describe the electro-magnetic governor control.
 What relays and switches are used?
 
 Describe the Delco automatic direct lighting plant
 control.
 
-_ Describe a lighting plant with wind mill drive.
+Describe a lighting plant with wind mill drive.
 
 Hydraulics a 5,933
-
-Na5 ae SS iy ri. aaa
-Pee ee eh " sae & a. <]:
 
 ## CHAPTER 227
 
 Hydraulics
 
-: | The term hydraulics is defined as the science which treats of
+| The term hydraulics is defined as the science which treats of
 \Mquids, at rest or in motion. This involves two divisions of the
 subject known technically as
-
-1. Hydro-statics;
-
-|
-
-2. Hydro-dynamics.
 
 Hydro-statics refers to liquids at rest, and hydro-dynamics to —
 in motion.
 
-: The treatment of these subjects here relates to water and
+The treatment of these subjects here relates to water and
 the entire chapter may be considered as an introduction to the
 chapters following on Pumps.
 
 Water.—Those who have had experience in the design or
 operation of pumps, including the author, have found that
 water is an unyielding substance when confined in pipes and
-pump passages, thus necessitating very substantial construc-
-tion to withstand the pressure, and periodic shocks or water
+pump passages, thus necessitating very substantial construction to withstand the pressure, and periodic shocks or water
 hammer. 3
 
-5,534 Hydraulics |
-
 The following table gives the relative volume of water at
-different temperatures compared with its volume at its tem-
-perature of maximum density or 39.1° Fahr.
+different temperatures compared with its volume at its temperature of maximum density or 39.1° Fahr.
 
 Relative Volumes of Water at Different Temperatures
 
@@ -24186,7 +17633,6 @@ Weight of Water per Cubic Foot at Different Temperatures
 
 Weight Temp.
 Ibs. per deg. F.
-cu. ft.
 
 61.56 180
 — 61.47 185
@@ -24200,17 +17646,15 @@ cu. ft.
 60.77 211
 60.66 212
 
-Some Properties of Water.—This remarkable liquid com-
-posed of two parts hydrogen and one part oxygen (H:0) at its
+Some Properties of Water.—This remarkable liquid composed of two parts hydrogen and one part oxygen (H:0) at its
 maximum density (39.1° Fahr.) will éxpand as heat is added,
 and it will also expand slightly as the temperature falls from
 this point, as shown in figs. 8,796 to 8,799.
 
 Hydraulics (5,535.
 
-_ The weight of one cu. ft. of water at its maximum density
+The weight of one cu. ft. of water at its maximum density
 3 generally taken at the figure given by Rankine, 62.425 lbs.
-ver cu. ft.*
 
 - The weight of one U. S. gallon or 231 cu. ins. is generally
 aken at 8% lbs.
@@ -24240,8 +17684,6 @@ rom 62,291 to 62.36. The figure 62.355 ts generally accepted as the most accurat
 rdinary calculations the figure 62.4 is generally taken, this.corresponding to the weight at
 3° Fahr. |
 
-9,936 Hydraulics
-
 feet.
 
 There are four kinds of head:
@@ -24250,16 +17692,12 @@ There are four kinds of head:
 
 level of water between two points, and it is usually expressed in
 
-I
-
-q
-
-Fics. 8,800 to 8,802.—Familiar occurrence illustrating the rupture of water pipes due to the |
+Fics. 8,800 to 8,802.—Familiar occurrence illustrating the rupture of water pipes due to the
 
 expansion of water in freezing.
 
 Static head 1s the height from a given point of a column, or body of water
-at rest, considered as causing or measuring pressure. |
+at rest, considered as causing or measuring pressure.
 
 Dynamic head is an equivalent or virtual head of water in motion which
 
@@ -24275,20 +17713,15 @@ of head. These terms are illustrated in fig. 8,805.
 The following table gives the loss of head due to friction of
 water in pipes of various sizes and for various rates of flow.
 
-Hydraulics 5,537
-
 Friction of Water in Pipes
 
 Loss of head In feet. due to Friction, per 100 tee. of smooth, straight cast fron pipe
 
 temo
 
--Inch % -Inch 1-Inch 1s-Inch | 1%-Inch . 2-Inch 2%-Inch | 3-Inch 4-Inch
 Pipe Pipe Pipe Pipe ipe Pipe' Pipe Pipe Pipe
 Vel. | Fric.| Vel. | Fric. | Vel. | Fric.| Vel. | Fric. } vel. | Fric.| Vel. | Fric.| Vet. | Fric.| Vel. | Fric..
-wee | oe eee | eee eee —— ede | eee [. enews ee co apes | geese | aomneeee «| ee exams Sone
-0.90].... eeceeleros safe vaes @ee -@ee eae res eee ere oeeeotosnn @
-1.52 0.86 0.40 0.63 0.187 ee ercete oo eto o°e -Te eo oFo eve ofa oe .|- -0¢e
+
 2.32} 1.07| 0.60] 0.79/ 0.283} .51) .09] 0.33) 0.05]... .]...-[... 200 2.
 8.40] 2.14] 2.18] 1.57] ©.02°| 1.02} ,36] 0.68] 0.12] 0.45) 0.05... .:3...
 18.90} 3.92| 4.65} 2.72) 2°25 } 1.53 0'811 0.98] 0.25] 0.68] 0.11): . i Paea:
@@ -24299,42 +17732,35 @@ wee | oe eee | eee eee —— ede | eee [. enews ee co apes | geese | aomneeee �
 8.58/28.50| 6.30/1:3.30°| 4.087 4.68] 2.62) 1.57} 1.82) 0.65) 1.02} 0.16
 .| 9.68/35.20! 7.08|16.60 | 4.60} 5.80} 2.95] 1.97} 2.02; 0.80} 1.17] 0.20
 ««. |10.72/43.20] 7.87|20.20 |-5.11] 7.10| 3.30] 2.38] .227| 0.98] 1.28} 0.24.
-» + {15.01}81.00)11.02/37.60 | 7.15)13.20] 4.60] 4.42) 3.18) 1.83] 1.79) 0.45. ;
++ {15.01}81.00)11.02/37.60 | 7.15)13.20] 4.60] 4.42) 3.18) 1.83] 1.79) 0.45.
 w}e ee sfeee {11.80/42.70:] 7.66 aes 4.93} 5.07| 3.41] 2.11) 1.92] 0.52
 s} oe de 3 ove (18.74'73.00 |10.21125.60] 6.54) 8.60) 4.54] 3.52} 2.55) 0.88
-ee eee a eae we efe.. ~~ J12,25)36.00] 7.84/12.00} 5.45) 4.97) 3.06} 1.22 |
+ee eee a eae we efe.. ~~ J12,25)36.00] 7.84/12.00} 5.45) 4.97) 3.06} 1.22
 8s ne a «s+ -112.75/38.90] 8.16/13.01) 5.68{ 5,40] 3.19] 1.33 ©
-os sae basgs . « .{15.30}54.00! 9.80/18.72| 6.80} 7.72] 3.84) 1.82 |
-ee ees re secede ce efeow © (11.43/23.70| 7.92} 9.75) 4.45) 2.40 :
+os sae basgs . « .{15.30}54.00! 9.80/18.72| 6.80} 7.72] 3.84) 1.82
+
 re eee se és «+ «{18.07/30.90) 9.08/12.80} 5.11] 3.12 ,
-' eat. ° ° @ « ee ceecefoee eo 10.42 6.00 6.32 4.72
-: eofow eseeheecoe eeesleedoe e@@e 11.28 9.70 6.40 4.80
-° ee e ee ee eoeeefeceo 12A5 22.70 6.90 5.50 A
+
+eofow eseeheecoe eeesleedoe e@@e 11.28 9.70 6.40 4.80
+
 es oe e e e¢ cecshtecn 12.70 23. 7.03 5.71 i
 < * ° ° de a eee) ee 13.62 27.10 7.66 6.70
-eceeoeles e ° é eo. e "ee eeectioeeefeoevce ose ne 8.90 8.80
-« e efees a+ eefae ee sacle ceefe ews) 10.20/11.30
-° oe ee ss r ee ° * ee ee e]s ea, 8 "oes, 11.50 14.10
-e o » ae ° ee ee e 6 eofe age "ee 6 16 16.06
-oo es toew eo ote & © ev ele ee fe . e ewe 3 aeoe ° ee ee o{12.30/16.40
-AL haneed ; ; Lares oWas Sr ee ee ee ee 2.77'17.20
+
+e efees a+ eefae ee sacle ceefe ews) 10.20/11.30
+
 inch 8-Inch 10-Inch | 12-Inch | 16-Inch | 20-Inch | 24-Inch | 30-Inch
 ipe Pive Pipe Pipe Pipe * Pipe Pipe Pipe Pi
 - Vel. | Fric. | Vel ric.| Vel. | Fric. | Vel. | Fric.| Vel. | Fric: | Vel. | Fric.| Vel. | Fric.| Vel. | Fric.| Vel.
-1.14 0.15 eeeefe eres eee oeo5 "owe ee 6's egeee eevee es ee ee ele cee ee
-1.637 0.29 | 1.14} 0.10 : ss ' oe oe seitgrele Wiel 4g-6 Lane: : |
-1.96 0.41 1.42 0.18 ee emer ferse °e ° wees ° e°9 *
-2.04 0.46 1.48 0.20 «. eoeed orpelesee e @oecee ee Fo °
+
 2.45 0.63 1.71 0.23 e e as oe ee e t eo @ a.° 6 0 i" ae 2 ee ©
-2.86 0.84 2.00 0.34 wees ale ycocee r] oe e eo aa A e
-8.27 1.06 |' 2.2 0.44 eoeoeeje ¢ ee a e e@e ae gee © ¢ 6 wee bd
+
 3.67 1.33 2.57 0.53 eeealte 'owe ete we = fi peeolebe 3 eelvog ee eetre 6
 4.08 1.60 .2.80 0.66 1.60 0.16 e ey eee es or er Co edove eferee a °
-4.42} 1.86} 3.03} 0.81) 1.70) 0:18 |....].0,.].-. er ees re :
-5 4.50 1.94 3.06 0.82 1.73 . 0.19 ee ee er @ ofesre 'e ey ee im € ®,
-! 4.90) 2.25} 3.40} 0.92] 1.90; 0.26 ee rae nn baw e a eee '
+4.42} 1.86} 3.03} 0.81) 1.70) 0:18 |....].0,.].-. er ees re
+
+4.90) 2.25} 3.40} 0.92] 1.90; 0.26 ee rae nn baw e a eee
 5.72 2.99 3.98 1.21 . 2.20 0.29 se eecleeeete o& Seefe sve 2 o> ad
-| 6.54] 3.81] 4.54] 1.58) 2.601 0.40 |... -[... 4. DIL Ia ek
+6.54] 3.81] 4.54] 1.58) 2.601 0.40 |... -[... 4. DIL Ia ek
 7.35) 4.75 | 5.12 pe 2.92] 0.46 | 1.80;0.150/.... : ie eta: oes
 { 7.78] 5.30|°5.49| 2.23] 3.07] 0:55 |'1.9210.170]..- |... lic tls: .
 8.17} 5.80 | 5.60} 2.33] 3.20] 0.58 | 2.04/0.200| 1.42] 0.08 "% ee 6%
@@ -24342,20 +17768,18 @@ ipe Pive Pipe Pipe Pipe * Pipe Pipe Pipe Pi
 9.80; 8.10] 6.72) 3.36} 3.84] 0.83 | 2.460.282) 1.71|0.106)],.. , °
 10.62/ 9.40] 7.28] 3.93] 4.16} 0.96 | 2.66/0.327! 1.85) 0.134}. . ' °
 ) 11.44} 10.80 | 7.84| 4.56) 4.46] 1.10 | 2.86/0.368} 2.00] 0.154]. . es °
-12.26] 12.30 | 8.50| 5.00| 4.80| 1.24 | 3.06|0.422| 2.13/0.170]. |. .|... :
-800 |....].....] 9:08 5.64] 5.12] 1.41 | 3.2810.476| 2.27/0.196|.... '
+12.26] 12.30 | 8.50| 5.00| 4.80| 1.24 | 3.06|0.422| 2.13/0.170]. |. .|...
+800 |....].....] 9:08 5.64] 5.12] 1.41 | 3.2810.476| 2.27/0.196|....
 850 eee]... oop 9.58) 6,25) 5.48] 1.63 | 3.48/0.534) 2.41)0.22 |... .)....]. ve
 900 ofeete ee ae (10.30) 7.22) 5.75) 1.76°] 3.68/0.592|. 2.56)}0.24 |}..../..., eos
-950 oe oboe 10.72 7.65 6.06 2.05. 3.88 0.653 2.70 0.25 opeets ae o. @efieeer-
-1000 ee ar a i er 11,32 8.60 6:40 2.16 4.08 0.718 72.84 -0.295 werd «| ose ew
-1100 <o « « -{12.50)10.22) 7.03} 2.51 {°4.50}0.860] 3.13}'0.35 |... °.]....]. .
-1200 te 'soo {13,52/21.02) 7.67} 3.04 | 4.91/1.040) 3.41/0.41 J... .f..-.]. :
+950 oe oboe 10.72 7.65 6.06 2.05. 3.88 0.653 2.70 0.25 opeets ae o. @efieeer1000 ee ar a i er 11,32 8.60 6:40 2.16 4.08 0.718 72.84 -0.295 werd «| ose ew
+
+1200 te 'soo {13,52/21.02) 7.67} 3.04 | 4.91/1.040) 3.41/0.41 J... .f..-.].
 1500 fosesdestacct ce sfesee 9.60] 4.48 | 6.10/1.490| 4.20) 0.61 -| 2.39/0.17 Svat
 2000 e r) efeeeee eee e©e% 12.70 7.65. 8.10 2.500 5.60 1.02 3.19 0.280 e@e@e
 2500 Jove fo cee foc dice elec s fis ss «410.10/3.810| 7.00] 1.56 | 3.99/0.39 on
 3000 |....].....f.. o. se epee © f12.10}5.300] 8.40! 2.42 | 4.79/0.56 <4
-3500 Peers er ave: oe ood. ae ee és ° 14.10 7.200 9.80 2.80 §.59 0.74 se 8
-4000 er ees Gee ee eeewefeoe e a a ec 'ee meee 11.35 3.80 6.3810.956 oe ste se weer e ee
+
 5000 [....f..... web dee bee cba e aleve a «114.201 5.82 | 7.9610.144! § 199] 2.2710.067.
 
 When pipe is slightly rough, add 15.per cent.
@@ -24366,73 +17790,44 @@ When pipe is slightly rough, add 15.per cent.
 
 When very rough, add &% per cent.
 
-5,538 Hydraulics
-
 ### IN LBS
 
 PER SQ.IN
 
-ce)
-
-a)
-
-|
-
-Hin Ht bite) belli
-
-|
-@)
-
 areas
-
-|
-
-Pi ty |!
-
-SO
 
 ### HEAD IN FEET
 
 Meta pati fie!
 
-| Qe
-
-90-L—_-———
-
 Fic. 8.803.—The pressure of water due to head increases with the depth.
-
-Hydraulics 5,539
 
 Friction of Water in Elbows
 Loss of head in feet, due to friction in various sizes of smaoth 90° elbows when discharging the given quantities of water
 
 i-Inch | 1}-Inch|1%-Inch| 2-Inch |2}4.Inch| 3-Inch | 4-Inch | 5-Inch {| 6-Inch | 8Inch 10-Inch | 12-Inc)
 
-3 | Sn eS ee ee
 s= : 7) g : 3) : J : a Q re v 3) :] 2
-Si slectslelvletlsrel slelsietias "3 slelsilelsl2eics
-é wl > pa] > > lero {e) > lal > [elo jal> [a l|>lmloelal>)s
-5| 2.0410.06] 1,30/0.14/. ..]... Per ne ere LE) Rr reioey eRe (UH AEREE! (nermam] [ORCI (UPGIE| [eeON
+
 10} 4.08/0.22| 2.60/0.21!... .}. ae ae sssthea fg Goad Rass bees Laces all rae touted deol Gentle ace nears coed
 15| 6.12|0.49| 3.90/0.20| 2.73/0.09]... . ; stleaa |a fate We erees Palarall weitere PG dares eens Laas boot tater tease
-320) 8.16/0.87 §.20/0.52 3.64 16 eo ee ef es e@ oe fe ee of eo ew of es oo eeee ee arene, Fes ea@ee eo é@lee e@eeleoeo|ts & e ° e
-25|10.20!1.35| 6.5010.80| 4.55!0.25 2.60/0.09)... .].. | ba collie eslerca ahs A echece | poate enata baacet ome ecaceencsaly te
+
 30|12.24|1.95] 7.80/1.15] 5.46/0.36/ 3.06'0.13]... |... 1: ? i Nata We Ls Soya foie (ee herded c eeoth La lates eck
-35|14.28/2.65| 9.10/1.60| 6.37/0.50| 3.57|0.18| 2.29]0.09/....]...}.... Sis licihes Glaus aleadlosta leas lew siaes logs tis
+
 40|16.32/3.46/10.40/2.05| 7.28|0.64| 4.05/0.23| 2.62/0.11]... fo. foe ef ope ce afew fee ede cope e cfe cede cele a elon fe us
 45|....|... 11.70/2.70} 8.19/0.81} 4.60,0.29] 2.95/0.14| 2.02/0.06)... J. .[.e. fee fewer epee fee ede eefe eae cafe ecfeee
-50 °° @e@ efe ec efo ee »- Fe @ © 9.10/0.99 §.11,0.35 3.30/0.18 2.27/0.08).... oe - sheaee ofleoewe fF 0 o 'eee e@eefeeaffe ee ve
+
 770i... .]...[eee-|.-- 12.74/1.98] 7.15]0.70! 4.60/0.34| 3.18/0.19] 1.79/0.05]. 5. [00 foc. few few fe cde ole wed w cdene
 100} . ... sf... .|10.2011.42] 6.5410.74| 4.5410.29| 2.55/0.10]....|...].0. cle. fe. ede ew ebe cele s cfe ee
 120)... ./...4.. ..|.. {12.25/2.24| 7.84/1.17| 5.45/0.46] 3.06/0.15| 1.96/0.06)... 2]. c.f. . den ede fee ede ede ce
 150). . 15.30|3.20! 9.89|1.58| 6.80/0.66| 3.8410.22] 2.4510.09]....]...].ccd... lee cde solic cde ce
 175}... vee e{... f12.43/2.16] 7.92/0.90! 4.45/0.30] 2.8610.12! 2.0010.06)...]...]...1...f. som
 200]. . . . . |13.07/2.06] 9.08/1.18| 5.1110.40| 3.2710.16] 2.28/0.07]...]...]...)..4...[.. 6
-250} . wo. |... 412.28/1.84] 6.40/0.62] 4.08/0.25] 2.8010.12/1.60/0.04)...f. 2... :
+250} . wo. |... 412.28/1.84] 6.40/0.62] 4.08/0.25] 2.8010.12/1.60/0.04)...f. 2...
 270). 12.45|2.35| 6.90/0.70} 4.42/0.25| 3.03/0.14/1.70/0.05]...]...].. 2
 300) . . .|13.62/2.63] 7.66'0.89| 4.90/0.36] 3.40/0.18]1.90/0.06;...].. .]. i
-; 350}... : . se ete. | 8.90/1.24] 6.7210.50} 3.9810.24/2.2010.00}...}...4. :
-' 400] . .. 4... , /10.20/2.59} 6.54/0.63] 4.5410.29/2.60/0.10]. ..}.. 21. :
+350}... : . se ete. | 8.90/1.24] 6.7210.50} 3.9810.24/2.2010.00}...}...4.
+400] . .. 4... , /10.20/2.59} 6.54/0.63] 4.5410.29/2.60/0.10]. ..}.. 21.
 4 450|....}...]....]... 11.5012.01| 7.35/0.81| 5.12/0.39/2.92/0.13]1.80/0.05].. .|.. %
 470). . : same 12.16}2.26| 7.7810.90| 5.4910.46/3.07|0.14/1.92|0.06]...]. .
 . 500}... .;...f.. 12.77|2.47| 8.17/1.01| 5.6010.48/3.20/0.16/2.00|0.07/1.4010.04
@@ -24440,34 +17835,14 @@ Si slectslelvletlsrel slelsietias "3 slelsilelsl2eics
 2 1050} . : ... ute » .412.5712.4117.0410.76/4.40/0.2013.08/0.14
 t 1250). . . .{14.1013.0218.00] 1 .0015.00/0.40/3.50/0.29
 y 1500] . . : . ea ete « » {9.60]1.44/6.1010.6814.20/0.5 3
-%:
-&:
 
 ent
-ae ae
-
-io aa
-
-: " : " PA a
-inge. Mes Reo pie
-
-oy
 
 When pipe is slightly rough. add 15 per cent. | When very rough, add 30. per cent.
-Vel.—Velocity in feet per second. Fric.—Friction head in feet. ;
+Vel.—Velocity in feet per second. Fric.—Friction head in feet.
 Table. shows loss for one elbow, and.is based on Weisbach's Formula for short radiue bends.
 
-ae
-( aN
-
-Wd
-
--o%
-
-MLL
-
-Fic. 8,804.—Pressure exerted by a liquid. The pressure exerted by a liquid on a surface ts pro-
-portional to the area of the surface. Two cylinders of different diameter are joined by a tube
+Fic. 8,804.—Pressure exerted by a liquid. The pressure exerted by a liquid on a surface ts proportional to the area of the surface. Two cylinders of different diameter are joined by a tube
 and filled with water. On the surface are two pistons M and S, which hermetically close the
 cylinders, but move without friction. Let the area of the large piston M be, say thirty times
 that of the smaller one S, and let a weight, say of two pounds, be placed upon the small piston.
@@ -24475,9 +17850,7 @@ The pressure will be transmitted to the water and to the large piston, and as th
 amounts to two pounds in each portion of its surface equal to that of the small piston, the
 large piston must be exposed to an upward pressure thirty times as much, or 60 lbs. Ifnowa
 60 lb. weight be placed upon the large piston, both pistons will remain in equilibrium, but if
-.the weight be greater or less, the equilibrium will be destroyed. ;
-
-9,940 Hydraulics
+.the weight be greater or less, the equilibrium will be destroyed.
 
 In any installation it is important to consider the friction of,
 water in elbows as the table on page 5,539 indicates.
@@ -24486,12 +17859,11 @@ Pressure.—The term pressure is used in its ordinary sense
 
 in terms of pounds per square inch.
 
-:
-At 62° Fahr. the pressure per square inch of a column of water of one foot |
+At 62° Fahr. the pressure per square inch of a column of water of one foot
 
-head is .43302. or .433 lbs. At this temperature one cubic foot of water |
+head is .43302. or .433 lbs. At this temperature one cubic foot of water
 would weigh .433 x 144 =62.352 Ibs. On this basis the pressure in pounds.
-per square inch for different heads of water is as given in the following table. |
+per square inch for different heads of water is as given in the following table.
 
 Pressure per Lb. per Sq. In. for Various Heads of Water j
 
@@ -24505,18 +17877,13 @@ Pressure per Lb. per Sq. In. for Various Heads of Water j
 26.413|26 845127 279/27 .7 12/28 145)28.578/29 .011/29.444|29 877
 130.743/31 .176[3 1 609/32 042/32 475/32 .908)/33 :341133 .774|34.207
 
-Pres-
-sure
+Pressure
 
 122.40 [124.71
-Q 145.50 [147.81
+
 168.59 1170.90 |
 
-### SESSSESSSO
-
 214°78 1217.09 1219. | 02 1226.33 1228.64
-
-Hydraulics 5,541
 
 In ordinary calculation, it 1s common practice to estimate that every
 foot head is equal to one-half pound pressure per square inch, as this
@@ -24529,8 +17896,6 @@ column of water 34.019 ft. high when the column is completely
 exhausted of air, and the water is at a temperature of 62° Fahr.
 
 ### OVNAMIC HEAD
-
-mm HYNAMIC HEAD
 
 Fic. 8,805.—View of elevated tank with pump in operation maintaining the supply which is
 being drawn upon as shown, illustrating the terms static lift, dynamic lift, static head, and
@@ -24545,49 +17910,25 @@ water from the level of the supply to the level of the pump.
 Lift as relating to pump operation may be defined as the
 height in feet from the surface of the intake supply to the pump.
 
-5,542 Hydraulics
-
 Strictly speaking, it is the height to which the water is elevated by
 atmospheric pressure, which 1n some pumps may be measured by the
 elevation of the inlet valves and in others by the elevation of the piston.
 
 In the case of pumps handling water at ordinary temperature
 (not hot water) the practical limit of lift is from 20 to 25 ft.
-when the barometer reads about 30 ins. In high altitudes it |
+when the barometer reads about 30 ins. In high altitudes it
 is less. Why?
 
-\/
-|
-{
-;
-{
-
 23! FT. HEAD
-
-Perr tliat al te
-
-=n
-
-_
-——————
-——
 
 ee, See =
 DIAM. OF PLUNGER : Soin. "Sarr TT TOTAL WEIGHT ON PLUNGER
 AREA * - — JOIT.9 sain. Mt @ 101790 LBS.
-a A
-
-x
-e
-
-°
-Whe = #2. "~=" 7 ee ee eee _ -_ mT fre
 
 a f——-— WATER PRESSURE, 100 LBS..
 
 Fic. 8,806.—Hydraulic principles: 3. Any quantity of water however small may be made
-to balance any weight however great. The figure shows a locomotive on a turn table bal-
-anced by a hydraulic pivot or plunger. Assuming no leakage or friction at the joint, and
+to balance any weight however great. The figure shows a locomotive on a turn table balanced by a hydraulic pivot or plunger. Assuming no leakage or friction at the joint, and
 that the vertical pipe leading to the plunger cylinder is very small,itisevident that it could
 be filled to the elevation shown with a very small quantity of water—say one quart. If
 the total weight of locomotive, turn table, etc., and the plunger be 101,709 Ibs., and the
@@ -24599,16 +17940,14 @@ For increasing temperature of the water the limit of lift 1s
 
 reduced because the boiling point of water corresponds to the
 
-Hydraulics 5,543
-
 Theoretically a perfect pump will draw water from a height of 34 ft.
 
 when the barometer reads 30 ins., but since.a perfect vacuum cannot
 
-_ be obtained on account of valve leakage, air contained in the water and
+be obtained on account of valve leakage, air contained in the water and
 
-| the vapor of the water itself, the actual height is generally less than 30 feet,
-' and for warm or hot water considerably less.
+the vapor of the water itself, the actual height is generally less than 30 feet,
+and for warm or hot water considerably less.
 
 The following table shows the theoretical maximum lift for
 (different temperatures, leakage not considered.
@@ -24631,13 +17970,8 @@ sq. ins. mercury
 17.70
 15.67
 
-D
-
-Ce
-
 NOTE.— Head. The head instead of being an actual distance between levels, may be caused
-by pressure, as by a pump, in which case the head is calculated as a vertical distance correspond-
-ing to the pressure, 1 1b. per sq.in. =2.309 ft. head or 1 ft. head = .4331b. persq.in. The total
+by pressure, as by a pump, in which case the head is calculated as a vertical distance corresponding to the pressure, 1 1b. per sq.in. =2.309 ft. head or 1 ft. head = .4331b. persq.in. The total
 head operating to cause flow is divided into three parts: 1, the veloctty head, which is the height
 through which a body must fallin a vacuum to acquire the velocity with which the water flows
 into the pipe = v? +2 g,in which v is the velocity in ft. per sec. and 2 g = 64.32; 2, the entry head,
@@ -24660,12 +17994,6 @@ The result is approximate because no correction has been made for the 34 which r
 a 34 foot column of water at 62°; of course, at 153° the length of such column would be slightly
 increased. It should be noted that the figure 24.68 ft. is the approximate theoretical lift for
 water at 153°; the practical lift would be considerably less.
-
-5,544 H ydraulics
-
-KO
-
-CDoO TA TN BB W
 
 . Define the term hydraulics.
 . What is the difference between hydrostatics and hydro-
@@ -24692,11 +18020,7 @@ How ts pressure measured?
 . What effect has temperature on lift?
 . What is the maximum possible lift?
 
-|
-
 Elementary Pumps' 5,945.
-
-a es
 
 ## CHAPTER 228
 
@@ -24705,11 +18029,11 @@ Elementary Pumps.
 'There are three elements necessary for the operation of a
 ump:
 
-: 1. Inlet or suction valve;
+1. Inlet or suction valve;
 
-| 2. Piston or plunger;
+2. Piston or plunger;
 
-: 3. Discharge valve.
+3. Discharge valve.
 
 - Simple pumps may be divided into two classes:
 
@@ -24758,45 +18082,13 @@ is SO small in comparison to the head against which a force pump works that it i
 
 Force Pumps.—There are two general classes of force pumps:
 
-OnS'S
-
-sdung Aiejuaual 7
-
-5,947
-
 Elementary Pumps
-
-QV3H
-
-'lasUuN I °g "rasuniq "9
--UOJSTG °D sUO SIG 'DO
--sul}Ov aIqnOG °Z <SUI}OV BIBUIG *T
-
-*JapuljAD pasofo Jo an}ea} SurysmMsunysip Surmoys duind 90103 Bure suis Areyusulay— 719g 0} OIE'8 "SOY
-
-a —— ed
-
-—L3it
-
-Q3SO19
-
-QASOT) ;
-
-qasoiD
-| xO"
-
--9g3s019 |
-ONISSNLS
-
-ON!
-
-5,948 Elementary Pumps
 
 Single Acting Force Pumps.—The essential feature of <¢
 force pump which distinguishes it from a lift pump is that the
 cylinder 1s always closed, whereas in a lift pump it 7s alternately
 closed and open when the piston 1s respectively at the upper
-and lower ends of its stroke. !
+and lower ends of its stroke.
 
 ~ OPEN
 
@@ -24818,12 +18110,10 @@ transferred from the lower to the upper side of the piston as in fig. 8,811
 during the next up stroke, the piston forces the water out of the cylinde
 through the head valve which closes when the piston reaches the end o
 
-Elementary Pumps 9,949
-
 , the stroke, as in fig. 8,812, and the cycle is repeated. The positions of the
 valve are shown in the cuts.
 
-: A simple form of force pump, is one known as a single acting plunger
+A simple form of force pump, is one known as a single acting plunger
 
 '{ pump, a type extensively used, its cycle of operation being shown in
 figs. 8,813 and 8,814. The figures show the distinguishing features, such
@@ -24832,21 +18122,13 @@ as Closed cylinder, plunger, and only two valves.
 i INLET
 VALVES
 
-a= —- =
-| =e rE
-RTE ET)
-|
-
-— a8
-
 Orureriauu
 
 | EEE
 
 Frcs. 8,815 and 8,816.—Elementary double acting force pump. It is a combination of two
 
-.. single acting pumps and gives a nearer uniform flow than the single acting pump. Zn opera-
-tion during the down stroke, water follows the upper face of the piston through valve A. At
+.. single acting pumps and gives a nearer uniform flow than the single acting pump. Zn operation during the down stroke, water follows the upper face of the piston through valve A. At
 the same time the previous charge is forced out of the cylinder through valve D, by the lower
 face of the piston. During these simultaneous operations, valves A, and D, remain open, and
 B, and C, closed, asin fig. 8,815. During the up stroke, water follows the lower face of the
@@ -24860,8 +18142,6 @@ stroke, the plunger '"'displaces" the water in the barrel, forcing it through
 the discharge valve against the pressure due to the head.
 
 The careless misuse of the term piston and plunger should be
-
-5,950 Elementary Pumps
 
 carefully avoided. The difference between a piston and a
 plunger is:
@@ -24877,8 +18157,7 @@ instead of every other stroke.
 With this arrangement the piston need have approximately only half
 the area of the single acting piston for equal displacement, and accordingly
 the maximum stresses brought on the reciprocating parts are reduced
-approximately one-half, thus permitting lighter and more compact con-
-struction.
+approximately one-half, thus permitting lighter and more compact construction.
 
 In the double acting pump there are no bucket valves, a solid piston
 being used. The essential features and operation are plainly shown in
@@ -24903,32 +18182,25 @@ Fig. 8,818 shows an air chamber.
 Air chambers are useless unless means be provided to keep
 air in them.
 
-Elementary Pumps 5,991
-
 In large pumping plants small air pumps are employed for keeping the air
 chambers properly charged. In smaller plants an ordinary bicycle pump
 and a piece of rubber tubing are used to good advantage.
 
 To avoid the air
-chamber and its de-
-fect just mentioned
-the author substi-
-tuted a spring
+chamber and its defect just mentioned
+the author substituted a spring
 cushion on the high
 a speed direct con-
 = | nected boiler feed
 cule h. pump of his marine
 , engine, as shown in
 
-LL fig. 8,819, and fur-
-r ther described in
+LL fig. 8,819, and furr ther described in
 > Chapter 52, Audels
 
 Engineers and
 
 s ' Mechanics Guide
-= -_ No. 4.
-Ce: TT iny
 
 ### VACUUM
 
@@ -24939,19 +18211,14 @@ flows through the valves. .
 This gives a positive cushion at any speed and does away with the air
 chamber.
 
-Vacuum Chamber.—Sometimes a vacuum chamber 1s at-
-tached to the suction pipe. When.the column of water in the
-suction pipe of a pump is once set in motion, it 1s quite 1m-
-portant, especially under high speeds and long intake lines, to
+Vacuum Chamber.—Sometimes a vacuum chamber 1s attached to the suction pipe. When.the column of water in the
+suction pipe of a pump is once set in motion, it 1s quite 1mportant, especially under high speeds and long intake lines, to
 keep the water in full motion, and when it 1s stopped, to stop
 it gradually and easily.
 
-5,992 Elementary Pumps
-
 This is accomplished by placing a vacuum chamber on the suction pipe,
 as shown. The action of the vacuum chamber 1s practically the reverse of that
-of the air chamber. The object of the vacuum chamber 1s to facilitate chang-
-ing continuous into intermittent motion. The moving column of water
+of the air chamber. The object of the vacuum chamber 1s to facilitate changing continuous into intermittent motion. The moving column of water
 compresses the air in the vacuum chamber at the ends of the stroke of the
 piston, and when the piston starts the air expands (thus creating a partial
 vacuum above the water) and aids the piston in setting the column of water
@@ -24965,12 +18232,8 @@ chambers.
 ### CUSHION
 
 WATER oo
-:
-i
-M
 
-Fic. 8,818.—Elementary boiler feed pump with air chamber. In small sizes these are some-
-times direct connected to the engine and often run at high speeds. Obviously some form of
+Fic. 8,818.—Elementary boiler feed pump with air chamber. In small sizes these are sometimes direct connected to the engine and often run at high speeds. Obviously some form of
 cushion against water hammer is necessary. Fig. 8,819 shows a better and more up to date
 method of cushioning water hammer.
 
@@ -24983,41 +18246,17 @@ There are two kinds of capacity:
 
 The theoretical capacity represents the pumping ability of a perfect
 
-Elementary Pumps 5,993
-
 .;.:,74,,, pump, and is expressed as the volume in cubic
 Oe BALL ° feet or gallons displaced by the pump per
 HARDENED minute. . ,
-
-at ..
-"18
-
-### CMM EL
-
-14 ba be
-
-Li
 
 Since it is impossible to construct a perfect
 pump, it is customary in computing capacity,
 to first calculate the theoretical capacity and
 
-yj
--
-
-LLL LL,
-
 Wut
-LL
-
-Kk
-IEAM
-
-Up
 
 hte
-
-Y
 
 u ns, N aN then make allowance for the various losses due
 ns Pins. j | to slip, leakage, etc.
@@ -25025,52 +18264,19 @@ ns Pins. j | to slip, leakage, etc.
 Bly Nea, These three factors are the causes which
 or | | U; prevent pumps operating up to theoret-
 
-SS
-
-WN
-
 ing box, valves, piston and joints and entrance
 of air on the suction side.
 
-### RX NN AMAA:
-
-SS
-
-| |
-
-| P C) e e e
 i We ay 4  icalcapacity. Note the following defini-
-| V 2? 9 — tions:
 
-| V da Slip.—The back flow of water through the
+V da Slip.—The back flow of water through the
 g Ww valves while they are in the act of closing.
 
-% 7e("|0.
-
-| Yin ; Leakage.—Loss of water through the stuff-
-|
-
-|
-
-|
-
-Sa as | Sas ag aeeneae emer
-
-i
-!
-' |
+Yin ; Leakage.—Loss of water through the stuff-
 
 Wwe
 
-—————————
-I
-
-NN
-
-NS
-
-Short Strokes.—The failure of direct act-
-ing steam pumps to operate at full stroke.
+Short Strokes.—The failure of direct acting steam pumps to operate at full stroke.
 
 (a 13, DRILL -_
 + How to Figure Capacity.— RULE
@@ -25092,8 +18298,6 @@ a spring cushion provided which is expected to absorb the shocks even at high sp
 . valves are built into the pump casting, a tee fitting and two check valves being used, connected
 with close nipples. See Audel's Engineers' and Mechanics' Guide No. 4, page 1,724.
 
-5,554 Elementary Pumps
-
 to obtain theorettcal capacity in U. S. gallons. The result thus
 obtained 1s to be multiplied by an assumed factor representing the
 hydraulic efficiency of the pump to obtain the approximate net
@@ -25101,12 +18305,8 @@ capacity.
 
 The rule expressed as a formula is
 
-.1854 D?XLXN
-1,728
-
 Approximate net capacity X(1—f) cu. ft., or
 
-__-(854 D?XLXN X(1—f) gallons
 231 |
 in which
 DP? = square of piston or plunger diameter in sq. ins.;
@@ -25124,16 +18324,11 @@ Example.—What is the approximate net capacity of a 3X5 double
 acting power pump running at 75 revolutions per minute with an assumec
 slip of 5 per cent, applying this formula?
 
-1854 X32 X5 & 150
-
 1.728 < (1 — .05) = 2.91 cu.ft.
 
 Approximate net capacity =
 
-_ (854 X37? X9 X 150
-
-1— .05) = 21.8 :
-53] x ( ) galls
+1— .05) = 21.8
 
 Horse Power of Pumps.—The power required to elevate
 water at a given rate to a given elevation 1s expressed in horse
@@ -25144,10 +18339,7 @@ not cease flowing when the bucket descends, that is, especially at high speeds t
 head valves remain open all the time, and the bucket valve accordingly under such cond:
 tions is the only valve essential to operation.
 
-Elementary Pumps 5,555
-
-power, as theoretical or actual, according to whether the vari-
-ous losses are considered. In a pump there is to be considered
+power, as theoretical or actual, according to whether the various losses are considered. In a pump there is to be considered
 the horse power at the water end, and also at the power end.
 The horse power at the power end represents the actual power
 to be applied and includes that lost by friction.
@@ -25156,10 +18348,6 @@ Theoretical Horse Power at the Water End.—The theoretical
 horse power required to raise water at a given rate to a given
 elevation is obtained by the following formula:
 
-Vx Wx (L+H)
-
-<<a 33,000
-
 in which
 V =volume in cu. ft. per minute;
 W =weight of one cu. ft. of water;
@@ -25167,33 +18355,22 @@ L =lift in ft.;
 H =head in ft.
 
 Example.— What is the theoretical horse power required to raise 100 cu.
-_ ft. of water 200 ft., with a 10 ft. lift when the water is at a temperature of
+ft. of water 200 ft., with a 10 ft. lift when the water is at a temperature of
 75° Fahr., and when at 35° Fahr.?
 
 For a temperature of 75°, one cu. ft. of water according to the table
 (page 5,534) weighs 62.28 lbs. Substituting this and the other data in the
 formula,
 
-100 X 62.28 X (10 +200)
-
-33,000 ane ee
-
-T.H.P.=
-
 Now if the water have a temperature of only 35°, as might be in very
 cold weather, the weight of one cu. ft. will increase to 62.42, and the horse
 power would accordingly increase in proportion to the ratio of the two
 weights, or
 
-62 .42
-
 T.H. P. (at 35° Fahr.) =39.63 69 98 = 39.7
 
 By observing the very slight difference in the two results it will be
-seen that, for ordinary calculation, the temperature need not be consid-
-ered, taking the usual value 62.4 lbs.
-
-5,556 Elementary Pumps
+seen that, for ordinary calculation, the temperature need not be considered, taking the usual value 62.4 lbs.
 
 Horse Power Absorbed at the Water End.—The actual horse
 power required at the water end of a pump (not including slip
@@ -25238,8 +18415,6 @@ efficiency, or efficiency of the system is .85x.88=.75. That is to say,
 NOTE.—If the quantity of water be given in gallons, W is taken as 81% Ibs., instead of
 62.4 Ibs.
 
-Elementary Pumps 5,557
-
 if the electrical power delivered to the motor be 100 horse power and
 the efficiency of the system be 75 per cent, then only
 
@@ -25256,11 +18431,8 @@ the power loss in the pumping unit. This is determined by
 dividing the theoretical horse power by the efficiency of the
 system expressed as a decimal, thus:
 
-WXH
-
 H. P. required by motor = 33 000XE" hae
 
-alate eereiede CL)
 in which
 W =weight of water pumped per minute in pounds;
 H =total dynamic head;
@@ -25275,20 +18447,14 @@ From the table showing friction of water in pipes (page 5 ,037), the
 friction loss in 100 ft. of 5 in. pipe, discharging 300 gals. per min. is 2.25 ft.
 Accordingly for 400 ft. itis 4X2.25=9 ft. From the table showing friction
 of water in elbows (page 5,539), one 5 in. 90° elbow, discharging 300 gals.
-per min. = .36 ft. Five elbows=5 xX .36=1.8 ft. |
+per min. = .36 ft. Five elbows=5 xX .36=1.8 ft.
 
 The total dynamic head is therefore, 200+9+1.8=210.8 ft. Now
 the weight of water pumped per minute is 814 X300 = 2,500 lbs.
 
 Assuming an efficiency of 75 per cent for the system, and substituting
-in (1)
 
-2 210.8
 ne cialis 21.3 horse power
-
-33,000 X .75
-
-5,958 Elementary Pumps
 
 Having determined the actual horse power to be delivered to the motor,
 
@@ -25297,8 +18463,6 @@ multiplying the horse power just obtained by .746 and by the central
 station charge per kw. hour. Thus, if the charge be 10c, then
 
 pouch,
-
-11.
 
 Cost of pumping = 21.3 X .746X .10=$1.59 per hour
 
@@ -25329,8 +18493,6 @@ electric drive?
 How is the cost of pumping figured?
 What is the difference between a plunger and a piston?
 
-Power Pumps 5,999
-
 ## CHAPTER 229
 
 Power Pumps
@@ -25342,10 +18504,8 @@ direct connected or geared, as by belt, chain or toothed gears.
 Briefly, any pump having a shaft to which the motive power
 is applied 1s a power pump.
 
-A power pump differs essentially from a steam pump in many of its oper-
-ating characteristics. These differences should be clearly understood, as
-often a power pump replacing a steam pump does not give complete satis-
-faction until the user becomes educated to the requirements for satisfactory
+A power pump differs essentially from a steam pump in many of its operating characteristics. These differences should be clearly understood, as
+often a power pump replacing a steam pump does not give complete satisfaction until the user becomes educated to the requirements for satisfactory
 power pump operation.
 
 A power pump Is essentially a constant speed machine.* It does not have
@@ -25362,16 +18522,13 @@ eventually breakage.
 
 If excess pressure be put on the discharge line, as may happen from a
 closed or partially closed valve, the steam pump automatically slows down
-and often stalls if the pressure become high enough. Under the same condi-
-tions the power pump goes right along at full speed until the motor burns
+and often stalls if the pressure become high enough. Under the same conditions the power pump goes right along at full speed until the motor burns
 out under overload, or until something breaks on the pump: Itis, therefore,
 essential that a power pump be protected by a spring relief valve to prevent
 the discharge pressure becoming too great.
 
 *NOTE.—An exception is the direct connected marine pump whose speed is governed by
-the main engine. a |
-
-5,960 .Power Pumps
+the main engine. a
 
 Classification.— Pumps may be classified:
 
@@ -25384,25 +18541,15 @@ a. Reciprocating {
 b. Rotary;
 single stage; ~. «5;
 
-C. saa a {ulate © Mg a 4 Mast See ae E ai ee 3 Bk
-
-as
 'eae
-ae
 
 2. With respect to the number of cylinders, as
-
-as
 
 . Single cylinder;
 . Duplex;
 . Triplex;
 
-Qo oa =~
-
 . Quadruplex, etc.
-
-ow
 
 3. With respect to the position of the cylinder, as
 
@@ -25421,8 +18568,6 @@ a. Inside packed;
 
 6. With respect to the valve arrangement, as
 
-|
-
 a. Single valve;
 
 b. Multi-valve;
@@ -25430,14 +18575,10 @@ b. Multi-valve;
 c. Bucket valve;
 d. Pot valve.
 
-Power Pumps 5,961
-
 7. With respect to the pressure, as
 a. Low pressure;
 b. Medium pressure;
 c. High pressure.
-
-f
 
 8. With respect to the velocity reduction of the drive, as
 
@@ -25445,12 +18586,7 @@ f
 
 | CHAMBER
 
-|
-
-: re DIS CHARGE
 | aoe VALVES
-
-| ZB RRL iver,
 
 Fic. 8,821.—Double acting piston pump, water end, showing sectional view of piston, cylinder,
 stuffing box, valves, and water passages. The lower row of valves are the inlet valves, and
@@ -25463,8 +18599,6 @@ c. Multi-reduction.
 9. With respect to the drive construction, as'-..
 a. Spur gear;
 8. Spiral gear;
-
-5,962 Power Pumps
 
 c. Worm gear;
 d. Combination silent chain and toothed gear;
@@ -25483,20 +18617,10 @@ saa VALVES
 
 ### INLET
 
-i | oer | N.. N
 ( 6 T y¥ WN INS 1708} SN
 tee he —— - N
-S
-Bees | \
-PLUNGER \
-LLLe Seaeeae N N
-eG N
-cts | erro Will, ' = \
-SS
-i SSN YL fp ZN |
 
-——— 24 oN
-SSK q -
+PLUNGER \
 
 Fic. 8,822.—Double acting inside packed plunger pump, water end showing sectional view of
 working parts.
@@ -25506,98 +18630,22 @@ working parts.
 
 These general types are shown 1n figs, 8,821 to 8,824.
 
-ye" Lod 5
-i Wilh WL i
-
-Wy
-
 WAX
-SESS =
-
-Nv
-
-LP
-Y
-
-= \sxt\
-
-CARMA" EGS TL SAL
-
-XX
 
 ### ANNIE RANA SR CO
 
-SS
-
-QANTAS aunsennene coc
-
-WY
-
 Vite
 
-ty
-
-4G '
-Y
-Ya
-Za
-Z My
-
-Z
-y
-
-"My
-
-Wh
-Ut
-or,
 Vit
 
-A
-fi
-A
-
-Wl
-
-Ll
-
-WSMWWNWw
 Wye
 
 MAE AP NAAR ES RR SERRE ESE EEE SEES
-Sy
-WS Ak AERA ELS
-
-X
-'
-
-N
-
-### ANANSAALY
-
-"a
-Zs
-
-GIDL
-AAAS
 
 ### REE PRA EE
 
-x
-
-\
-J x
-
-¥ 121 — TRS NS
-EN SS
-
-Ts Visit, mW) pe, - rns Sn
 cas OO ASSESS Ve 2
 eet | NZ
-
-e "N
-
-SO
 
 Fic. 8,823.—Single acting outside packed plunger pump. Jn construction, the moving parts consist of the plunger AB working
 in the stuffing box KL. There are two valves or sets of valve F and E. The stuffing box KL being on the outside can be kept
@@ -25611,10 +18659,6 @@ so connected as to give the equivalent of a double acting pump cycle.
 
 sduind 1amod
 
-€9S'¢
-
-5,964 Power Pumps
-
 Pump Valves.—The valve apparatus is perhaps the most
 important part of any form of pump and its design has a
 material bearing upon its efficiency.
@@ -25622,20 +18666,16 @@ material bearing upon its efficiency.
 Figs. 8,825 to 8,831 show ordinary types of large and small
 valve construction.
 
-The Drive or Transmission.—The reciprocating pump, be-
-cause of the necessarily low speed at which it must operate,
+The Drive or Transmission.—The reciprocating pump, because of the necessarily low speed at which it must operate,
 
 Fics. 8,825 to 8,829.— Metal valve with screw seat details. Fig. 8 825, screw seat; fig. 8,826,
 stud; fig. 8,827, metal valve; fig. 8,828, spring; fig. 8,829, assembly.
 
 requires a high velocity reduction between the power unit and
 pump, especially in the case of electric motors. Accordingly
-some form of gearing which constitutes the ''drive" or trans-
-mission must be interposed between the two machines.
+some form of gearing which constitutes the ''drive" or transmission must be interposed between the two machines.
 
 The various types of drive are
-
-Power Pumps — 5,965
 
 "1. Belt:
 
@@ -25649,10 +18689,7 @@ These drives are shown in figs..8,842 to 8,845."
 
 Belt drives are simple,, flexible inexpensive and quiet.
 
-a
-
 — a Bee ee eid ens
-eo lh
 
 "16S. 8,830 and 8,831.—Metal valve and seat as used on small units such as boiler feed pumps.
 
@@ -25660,18 +18697,8 @@ eo lh
 + diam. steam cylinder; 1144 inch water cylinder; 224 1n. stroke. Steam pipe, 34 in.; exhaust
 pipe, 14 inch; suction pipe, 1 inch;-discharge, 34 inch. Floor space occupied, 1' 9" X7" wide.
 
-5,966 Power Pumps
+Multi-Cylinder Pumps.—The following types, as here described, are in general use:
 
-Multi-Cylinder Pumps.—The following types, as here de-
-scribed, are in general use:
-
-"90° 120° 150° 18
-- "60° 2i a.
-g 0 | 246° 210° 300° 5 30° 360°
-
-Se 210k
-
-"oO 6330
 6° 50° é0° 120° iso '8 24@ 270° 90° *™ sE0¢
 
 O 30° 60° 90° 120° 150° 180° 210° 240° 270° 500° 330° 360°
@@ -25681,11 +18708,7 @@ Fic. 8,835.—Flow curve of triplex double acting power pump.
 
 Fic. 8,836.—Flow curve of triplex single acting power pump.
 
-Power Pumps 5,967
-
 MEAN VELOCITY IN PIPE LINE CENTER Of STROKE
-
-o8 SERB RSE
 
 PERCENTAGE VARIAT(ON OF
 VELOCITY ON DISCHARGE STROKE
@@ -25694,7 +18717,6 @@ VELOCITY ON DISCHARGE STROKE
 
 ### MEAN VELOCITY IN PIPE LINE CENTER OF STROKE
 
-(ee RSE SEE, ASE (AR Hs ean ag pas ee nee GS eG eee ee ee
 See ES RE a) (= coe Se
 
 16 'SECOND
@@ -25703,39 +18725,21 @@ ONE REVOLUTION 114 SECONDS
 DOUBLE-ACTING SINGLE CYLINDER PUMP
 
 'PERCENTAGE VARIATION OF
-' VELOCITY ON DISCHARGE STROKE
-
-/
-
-| Le 8
-fe ee ee ee te
-2 a a
-ck oS OO
+VELOCITY ON DISCHARGE STROKE
 
 » SACS CEE
 BA NL AON [eta vender) ned une | A | NI
-ge ZEEE ENN LENT LEER OTC
-> *7T TTP VPE LILLY
-eg a a On -
-eg
-. Pr rrerrreerererereeeeey
 
 f FP rrrrrererereeee eee
 
 eae a
-@ BOO
-i
-eg
 
 0° «61S 30 45° «60° «75° «90° 105° 120° 135° 150° 165° 180° 195° 210" 225° 240° 255° 270° 285° 300° 315° 330° 345° 360°
 
-ONE REVOLUTION 1 SECONDS | :
+ONE REVOLUTION 1 SECONDS |
 DOUBLE-ACTING DUPLEX PUMP —
 
-Frcs. 8,837 to 8,839.—Diagrams showing rate of delivery of single cylinder and duplex recipro-
-cating pumps expressed in percentage of mean velocity in pipe line.
-
-5,568 Power Pumps
+Frcs. 8,837 to 8,839.—Diagrams showing rate of delivery of single cylinder and duplex reciprocating pumps expressed in percentage of mean velocity in pipe line.
 
 1. Single power pump.—This type has one crank which op-
 
@@ -25747,43 +18751,21 @@ plungers.
 pistons (or plungers), or four single acting plungers operated
 by cranks 90° apart.
 
-' PERCENTAGE VARIATION OF VELOCITY
+### PERCENTAGE VARIATION OF VELOCITY
 
 ### PERCENTAGE VARIATION OF VELOCITY
 
 ### MEAN VELOCITY IN PIPE LINE
 
-Sn CSR Sm a ee RR) aR er 2 eae ae a a a eee) ce
-100 ee eee ee ee PP ase ne ee ee en 0 en ee ee ee 2 ee
 4 SN RENE RA LAE (SAR ASG Ee cA NECN CSS ETE GAA ca a
 °F SN A RS RS RE HE ER SEAR ME CSN A A NS TAN DN ENA] Pa OAS
-es] Ee Pe es ees eee eT RS es ae ee ee ee ee eee Te ee es ee eet ee ee
-60 ear; RS TSS ae ema) PT eee; eee ee a OE Pe ae ee ee ee ee ee) Me De es ees ee
-SO re Re, a) ae oe ae ee ee ee ee ee es ee eae ee ee ee eee ees ees eee Be ee ee
-Ory... |... |... -._ Lf Te Tf Td dt
+
 a A A aS (GT CAO (OST SE A aS eS EE CE Oe) ee
-ee ee a ed dl
 
 — lo' 415° 30° 45° 60° 75° 90° 105 120° 135° 150° 165° 180° 195° 210° 225° 240° 255 270 285 300 315° 330° MD" 960
 
-Jt
-
-a
-
-7)
-
-. 8
-O
-
-Z
-
 ONE REVOLUTION 1 SECONDS
 
-wo PANN heh located T_T]
-"LLL rau Ni
-
-N
-z Ls
 ene
 
 5° 30° 45° 75° 90° 105° 120° 135° 150° 165° 190° 195° 210° 225° 240° 255° 270° 285° 300 SIS 3 345 360
@@ -25798,13 +18780,11 @@ Fic. 8,841.—Diagram showing rate of delivery of double acting triplex pump exp
 
 percentage of mean velocity in pipe line.
 
-Power Pumps © 5,569
-
 3. Triplex power pump.—tIn this arrangement there are
 three pistons or plungers operated by cranks 120° apart. They
 'nay be either single or double acting type.
 
-_ The merits of the three types may be fully understood by a study of the
+The merits of the three types may be fully understood by a study of the
 flow curves shown in figs. 8,833 to 8,836. Fig. 8,833 shows that the flow
 from one single acting plunger is subject to considerable fluctuation in both
 suction and delivery lines. This led to the addition of two more plungers
@@ -25823,8 +18803,7 @@ imotor.
 If the motor be too small, it will be constantly overloaded, and if too
 large, the customer pays for power not used.
 
-Local conditions may govern to some extent the type of motor and con-
-trolling equipment to use for some specific installation. In the majority of
+Local conditions may govern to some extent the type of motor and controlling equipment to use for some specific installation. In the majority of
 cases, however, the selection will be governed by the characteristics of the
 pump, the variations in load during operation, the characteristics of the
 motor and the characteristics of the pump and motor as a whole.
@@ -25841,8 +18820,6 @@ Power Supply Type of Motor
 DECE CUITENT ine cccns cae eae beds seeeas Compound wound
 Alternating current..... ....Single phase commutator type
 
-5,970 Power Pumps
-
 Fics. 8,842 to 8,845.—Various forms of drive for power pumps. A, belt, single reduction; B,
 combined belt and toothed gear, double reduction; C, tooth gear, double reduction; D,
 chain, single reduction.
@@ -25851,9 +18828,7 @@ NOTE.— The method of driving any power pump can be varied to suit the conditio
 scribed by the purchaser. In hotels, office buildings, apartment houses, etc., where noise i8
 objectionable, the belt drive is recommended.
 
-NOTE .—Belt drives are simple, flexible, inexpensive and especially when compared to dou-
-ble reduction gear drives, the belt drive is quiet and easy to keep in order. The double reduc-
-tion gear drive gives noisy operation and with high speed gearing its operation is extremely
+NOTE .—Belt drives are simple, flexible, inexpensive and especially when compared to double reduction gear drives, the belt drive is quiet and easy to keep in order. The double reduction gear drive gives noisy operation and with high speed gearing its operation is extremely
 noisy. The double reduction gear drive is less efficient than the belt drive. Moreover, all
 shocks are transmitted directly from the pump through the gears to the motor.
 
@@ -25862,11 +18837,9 @@ reduction gears. Hence, the belt driven outfit is cheaper. The belt driven machi
 since the motor sub-base and motor gears are not required for the belt drive. Moreover, with
 large motors, double reduction gear drive requires an outboard bearing.
 
-Power Pumps 5,971
-
 . 5 h.p. and smaller squirrel cage
 A.c. two or three phase. . 40 h.p. and smaller wound rotor
-.c. two or three phase............... selfatartine |
+.c. two or three phase............... selfatartine
 
 All capacities slip ring motors
 
@@ -25874,19 +18847,13 @@ For Constant Speed Service, Centrifugal Pumps
 Direct current.............0 cece eee ..Compound wound
 A.c. single phase...... pea ka eee entees Commutator type
 
-SVC
-
 eee
-pe
+
 = 2
-'.
-f
 
 Fics! 8,846 to 8,849.—Various drives as used on Rumsey single acting triplex pumps. Fig.
 8,846, belt with idler; fig. 8,847, single reduction, toothed gear; fig. 8,848, double reduction
 - toothed gear; fig. 8,849, chain.
-
-x a
 
 Squirrel cage up to 500 h.p.
 a Slip ring, 550 h.p. and above
@@ -25894,23 +18861,18 @@ A.c. two or three phase.............+-4 75 h.p. and larger synchronous
 
 motors
 
-5,972 Power Pumps
-
-For Variable Speed Service, Centrifugal Pumps :
+For Variable Speed Service, Centrifugal Pumps
 and Positive Displacement Pumps
 
-DIreCE Cull Cnt 26 dvd ee nese ws eee hea aeeweses Compound wound
 AC SIMGIC DNAS Citic ay nary cudawayeure eh ssfurdeue Brush shifting motor
 Brush shifting motor
 A.c.two or three phase.................0.0000- 'sn ring when speed
 reducing is small
 
-The power driven positive displacement pump with tightly packed stuf-
-fing boxes and pistons and full discharge head may require a starting torque
+The power driven positive displacement pump with tightly packed stuffing boxes and pistons and full discharge head may require a starting torque
 equal to 125 to 250% of the normal full load torque, depending largely upon
 the care used in packing the pump. These starting requirements may be
-improved by the use of.a by-pass which circulates the liquid from the dis-
-charge back into the suction.
+improved by the use of.a by-pass which circulates the liquid from the discharge back into the suction.
 
 It will be found in nearly all cases that the starting duty of centrifugal
 pumps will permit the use of practically any type of motor. However,
@@ -25922,8 +18884,7 @@ The d.c. motor does not attain constant speed until it has
 run long enough to get thoroughly warmed up, which requires
 about two hours.
 
-At starting the speed may be 5% below normal, and will gradually in-
-crease as the motor warms up, until the normal speed is attained. During
+At starting the speed may be 5% below normal, and will gradually increase as the motor warms up, until the normal speed is attained. During
 this period the pump does not deliver its rated capacity, and if the service be
 intermittent, the pump may never deliver rated capacity as motor may not
 
@@ -25942,10 +18903,6 @@ always used.
 The features of synchronous motor drive, especially in large
 units, are:
 
-Power Pumps 5,973
-
-/
-
 Advantages.—1, Unvarying speed at all loads; 2, power factor variable at
 
 y will by change of the exciting current, can be made approximately unity at
@@ -25953,15 +18910,14 @@ y will by change of the exciting current, can be made approximately unity at
 any load; 3, cheaper than induction motor for large slow speed units; 4,
 efficiency is generally higher than that of the induction motor; 5, especially
 
-' adapted to high voltage winding; 6, when used in combination with induc-
+adapted to high voltage winding; 6, when used in combination with induc-
 . . tive loads the synchronous motor will improve the electrical efficiency of the
 
 system, since it can be built to operate at a leading power factor (leading
 magnetizing current) so as to counterbalance in whole, or in part, lagging
 magnetizing currents taken by induction motors.
 
-For slow speed centrifugal pumps, synchronous motors are doubly desir-
-able from the standpoint of both power factor and first cost.
+For slow speed centrifugal pumps, synchronous motors are doubly desirable from the standpoint of both power factor and first cost.
 
 Before purchasing a synchronous motor for driving a pump, the operating
 conditions must be carefully analyzed in order to determine if this type of
@@ -25972,15 +18928,11 @@ Unless all phases of the pump and motor characteristics are carefully
 investigated, a successful installation cannot be assured.
 
 Disadvantages.—1, It is not adapted to work requiring variable speed, as
-no independent speed regulation is possible; 2, the standard line of synchro-
-nous motors is designed for a starting torque of 50%, pull in torque of 50%
-with 70% voltage applied. Greater pull in torque will be obtained by apply-
-ing full voltage with the field switch open; 3, on a centrifugal pump load, a
-well designed synchronous motor will not hunt. When applied to a recipro-
-cating pump, however, great care must be used, for unless the design of the
+no independent speed regulation is possible; 2, the standard line of synchronous motors is designed for a starting torque of 50%, pull in torque of 50%
+with 70% voltage applied. Greater pull in torque will be obtained by applying full voltage with the field switch open; 3, on a centrifugal pump load, a
+well designed synchronous motor will not hunt. When applied to a reciprocating pump, however, great care must be used, for unless the design of the
 motor be carefully checked, it may tend to oscillate, causing pulsations
-injurious to the motor; 4, it requires an exciting current which must be sup-
-plied from an outside source; 5, it requires the most skillful and intelligent
+injurious to the motor; 4, it requires an exciting current which must be supplied from an outside source; 5, it requires the most skillful and intelligent
 attention; 6, the synchronous motor in starting must attain synchronous
 speed before it will lock into electrical step with the incoming current.
 
@@ -25998,11 +18950,8 @@ The Fynn-Weichsel motor is a general purpose motor that
 combines the operating characteristics of the synchronous
 motor and the slip ring motor.
 
-5,574 Power Pumps
-
 Advantages.—1, If a Fynn-Weichsel motor be paired with an induction.
-motor of the same horse power and speed, the power factor of the com-
-bined load will be substantially unity, irrespective of the loads on the two.
+motor of the same horse power and speed, the power factor of the combined load will be substantially unity, irrespective of the loads on the two.
 types of motors; 2, unvarying speed for loads up to 150% rating; 3, heavy:
 starting torque without excessive starting current; 4, pull in torque equal to
 starting torque; 5, overload capacity equal to that of the induction motor.
@@ -26012,15 +18961,13 @@ its cost is higher than induction motors; 3, maintenance is equal to that of
 d.c. motors.
 
 Induction motors are commonly divided into two types, the
-squirrel cage and the slip ring. |
+squirrel cage and the slip ring.
 
 When an induction motor is running without load, its speed is nearly'
-equal to the speed of the rotating magnetic field; namely, synchronous speed. |
+equal to the speed of the rotating magnetic field; namely, synchronous speed.
 
-When the motor is loaded, its speed decreases to about 98% of the syn-
-chronous speed in the case of large motors, and to about 92% of the syn-|
-chronous speed in small motors, at full load. The decrease in speed ex-
-pressed as a percentage of synchronous speed is called the slip of the motor.
+When the motor is loaded, its speed decreases to about 98% of the synchronous speed in the case of large motors, and to about 92% of the syn-|
+chronous speed in small motors, at full load. The decrease in speed expressed as a percentage of synchronous speed is called the slip of the motor.
 
 A squirrel cage motor will develop sufficient torque to start
 satisfactorily with from 40% to 60% of the rated voltage applied
@@ -26037,24 +18984,18 @@ This motor has the advantage of not taking excessive current at starting,
 and will start, therefore, without producing excessive drop of voltage in the
 system from which the motor receives its power.
 
-As the motor increases in speed the resistance is cut out in as many suc-
-cessive steps as there are contact points, allowing the pump to come up to
-speed more quickly and with more nearly uniform acceleration than is pos-
-sible with the squirrel cage motor. This is a very desirable feature in
+As the motor increases in speed the resistance is cut out in as many successive steps as there are contact points, allowing the pump to come up to
+speed more quickly and with more nearly uniform acceleration than is possible with the squirrel cage motor. This is a very desirable feature in
 centrifugal pump operation. Large size motors are always of the slip ring
 type except in mine installations.
 
-| Power Pumps 5,575
+The a.c. commutator motor is seldom required for driving
+ventrifugal pumps, but is sometimes desirable for driving positive displacement pumps.
 
-| The a.c. commutator motor is seldom required for driving
-ventrifugal pumps, but is sometimes desirable for driving posi-
-tive displacement pumps.
-
-| These commutator type motors should be considered for applications
-/ where the pumps run at greatly reduced speeds for considerable periods, as
-the efficiency and power factor are both higher than those of the correspond-
-ing slip ring induction motors under these conditions and a considerable
-| saving in power will result from the use of commutator motors.
+These commutator type motors should be considered for applications
+where the pumps run at greatly reduced speeds for considerable periods, as
+the efficiency and power factor are both higher than those of the corresponding slip ring induction motors under these conditions and a considerable
+saving in power will result from the use of commutator motors.
 
 (Fies. 8,850 and 8,851.—Deming single pole float switch, and diaphragm pressure regulator.
 Fig. 8,850, switch; fig. 81851, regulator. The switch is of the single pole sliding contact
@@ -26071,26 +19012,21 @@ Control Devices; Water End.—For the proper operation of
 pumps under different conditions various devices have been
 applied to effect the proper control.
 
-5,976 Power Pumps
-
 Hand operated control for starting or speed regulating should
 
-be used only when an operator is available. :
+be used only when an operator is available.
 Magnetic or remote controlmay beused withmotorsofany size. .
-
-°
 
 ### LINES
 
 ] FUSE
-if BLOCK ? : OF |
+if BLOCK ? : OF
 tt MAIN SWITCH [ > '4 SS nt
 
 Fic. 8,852.—Automatic controf for electric house pump, consisting of float switch, starter,
 and connection, as shown.
 
-Magnetic equipments are available for operation from push button sta-
-tions when it is desired to start or stop the pump from points remote from
+Magnetic equipments are available for operation from push button stations when it is desired to start or stop the pump from points remote from
 the starter. Push button control is suitable for all large and small motors.
 
 Automatic magnetic equipments are available for operation
@@ -26098,13 +19034,10 @@ by means of float switches, pressure switches, thermostats or
 
 pressure regulators.
 
-Power Pumps 5,977
-
 A float switch, pressure governor or thermostat is used for maintaining
 prescribed limits of liquid levels, pressures or temperatures.
 
-Pressure regulator controls are for pumps that run for com-
-aratively long periods and the speeds of which must. be
+Pressure regulator controls are for pumps that run for comaratively long periods and the speeds of which must. be
 changed to conform to rapidly fluctuating demands for the
 \iquid delivered by the pump.
 
@@ -26125,8 +19058,6 @@ used. Up to5h.p. they may be thrown directly across the line.
 
 For mine service or for service where excessive moisture 1s encountered,
 the squirrel cage induction motor is preferable to the slip ring or brush
-
-9,978 Power Pumps
 
 commutator type. It is best, however: to consult the manufacturer in all
 cases where excessive moisture is met.
@@ -26158,13 +19089,8 @@ Centrifugal pumps are divided into four classes:
 4. Screw;
 
 ° single stage;
-5. Turbine ah pao
-
-*
 
 _- REVOLVING
-
-Power Pumps 5,979
 
 The simple or ordinary type consists of a series of blades, which are rigidly
 fixed on a shaft and enclosed 1n what is called the whirlpool chamber. When
@@ -26177,10 +19103,6 @@ shaped impeller) is somewhat different from the ordinary centrifugal pump,
 ### SUPPLY TANK
 
 CAN <>
-
-. ee hh
-ne
-IOI
 
 Fic. 8,858.—How a centrifugal pump works 1. The theory of the centrifugal pump can best
 
@@ -26203,12 +19125,9 @@ vanes are cast or mounted. The peculiar shape of this core serves to modify
 geese the direction of the incoming current, thereby preventing waste
 of power.
 
-5,580 Power Pumps
-
 The pump chamber is divided into two parts by a radial partition, which
 extends entirely around the interior of the chambers and encloses the base of
-the conoidal impellers. This-partition prevents the impingement and con-
-sequent disturbance of the two entering columns of water.
+the conoidal impellers. This-partition prevents the impingement and consequent disturbance of the two entering columns of water.
 
 Conoidal pumps are especially suitable for 'supplying water to surface
 condensers; or for irrigation, pumping sewage, or purposes where the liquid
@@ -26217,8 +19136,6 @@ pumped is accompanied by sand, mud, silt, etc. They are comparatively
 ### CURVE
 
 ### SUPPLY TANK
-
-PRESSURE'AT B 7
 
 Fic. 8,859.—How a centrifugal pump works 2. Consider a cylindrical can similar to fig.
 8,858 but having a top. In rotating, the liquid level can no longer rise when it is rotated by
@@ -26239,20 +19156,11 @@ making all passages through the vanes and case to conform as nearly as possible 
 directions in which the liquid would most naturally follow, results in a modern, high efficiency
 centrifugal pump.
 
-5,981
-
 Power Pumps
 
-©
-a
-+
-t
-e
 oof
 
 Fics. 8,860 to 8,891.—Various patterns of centrifugal pumps.
-
-5,582 | Power Pumps
 
 inexpensive and the space required by them, relative to the quantity of
 water delivered, is claimed to be about one-half that of a centrifugal pump
@@ -26269,49 +19177,34 @@ between the periphery of the impeller and the case which take the place of
 the usual whirlpool chamber and assist in guiding the water to the outlet
 without internal shock or commotion.
 
-ed
-
-« i ei Ae
-
 Fic. 8,892.—Economy four stage cen pump, with cover lifted showing one me bronze
 diaphragm. f
 
 Jind antes
 
-'34
-
-NOTE.—How to determine right or left hand pumps. If when standing at the suc-
-tion end of pump, looking over the pump shell toward the pulley, the top of the shaft revolve
+NOTE.—How to determine right or left hand pumps. If when standing at the suction end of pump, looking over the pump shell toward the pulley, the top of the shaft revolve
 from right to left, or against the hands of clock, the pump is right hand, and from left to right,
 or with the hands of clock, it is left hand.
 
 Power Pumps
 
-### EVEC TOR
-
-### INCREASER
-
 ### CHECK VALVE
 
 | SETS 5
-[eece Fst BAR reat :
+
 STRAINER . a7.) a, ee .
 STRAINER
 
 Fics. 8,893 to 8,896.—Various methods for priming centrifugal pumps using a steam primer
 ejector. The best method to-adopt is governed by the conditions of each installation.
 
-5,284 Power Pumps
-
 Multi-Stage Centrifugal Pumps.—The very limited head at
-which it was possible to operate the earlier pumps with econ-
-omy has been overcome by connecting two or more units upon
+which it was possible to operate the earlier pumps with economy has been overcome by connecting two or more units upon
 one shaft and operating them in series, that is, passing the
 water through each unit in succession, thus the head is divided
 between the units by a multi-stage operation and by providing
 a sufficient number of units or stages, they may be operated
-with heads even exceeding two thousand feet without im-
-pairing the economy.
+with heads even exceeding two thousand feet without impairing the economy.
 
 Fics. 8,897 to 8,899.—Three forms of vane. Fig. 8,897, straight type; fig. 8,898, Francis
 mixed flow; fig. 8,899, impeller or screw, axial flow.
@@ -26325,66 +19218,22 @@ known as:
 
 Figs. 8,897 to 8,899 show these three classes.
 
-Rotary Pumps.—This type is defined as one having a Te-
-volving piston, or pistons which partake of the nature of cams,
-
-Power Pumps 5,985
+Rotary Pumps.—This type is defined as one having a Tevolving piston, or pistons which partake of the nature of cams,
 
 (rotating upon an axis and being in contact 'at one or 'more points
 \with the walls of the enclosing chamber. In.operation, a rotary
 
-ul
-HATED a
-MTA
-aA)!
-
-on '
-Cv . ¢¢q A411)
->
-
->
-' (PA
-} Hii Ty o Palit iit hh,
-atte ¥ Tren |
-st . ih LL pee
-{ = ".
-
-|
 HH} Wii) We 1
-ET ii} il
-MAU
 
-| MH Hitt ! {
-Wa a 5
-
-38 it | Pee lhewee ees - '
-CHa |
-
->
-
-ZLLULLIZT Es ¥
-
-Z
-Zo
-
-uk
-
-(ff) "
-a,
+38 it | Pee lhewee ees -
 
 = Li 4
-Le y
-_ tk . 7>
-ea
 
 Fics. 8,900 to 8,905.—Various types of rotary pump.
-
-5,086 Power Pumps
 
 pump continuously "'scoops'' the water from its chamber, the
 
 operation being somewhat similar to bailing a boat with a
-SCOOp.
 
 Rotary pumps may be divided into several classes according to the forms
 
@@ -26398,11 +19247,9 @@ In this pump there are two cams for gears, meshed together, and revolving in opp
 directions. The case surrounding these cams 1s a close fit on the ends.and also on the sides.
 Any liquid which fills the space A, between two teeth of the cams must follow along with
 them as they revolve. In the part where the two cams mesh B, there is but little space
-for liquid, and that which was drawn through in spaces like A must pass on into the dis-
-charge pipe C. As each space comes down the center and the cams separate, liquid flows
+for liquid, and that which was drawn through in spaces like A must pass on into the discharge pipe C. As each space comes down the center and the cams separate, liquid flows
 into it from the suction pipe D. With the number of teeth in the cams usually used, this
-sequence of operations is practically continuous, some spaces carrying liquid to the dis-
-charge pipe' and some spaces filling from the suction pipe. The action is positive; each
+sequence of operations is practically continuous, some spaces carrying liquid to the discharge pipe' and some spaces filling from the suction pipe. The action is positive; each
 revolution transfers a quantity of liquid from suction to discharge, which depends upon the
 size and shape of the cam teeth. In this respect it is like a reciprocating pump.
 
@@ -26413,8 +19260,6 @@ the cylinder, thus compelling it to enter the delivery pipe.
 In the construction of the impellers or pistons, and of the abutments,
 lie the principal differences 1n rotary pumps.
 
-Power Pumps 9,987
-
 In some pumps the abutments are movable, and are arranged to draw
 back, as shown in fig. 8,905, to allow the piston to pass. In others the
 pistons give way when passing fixed abutments, and in others the pistons
@@ -26422,32 +19267,16 @@ are fitted with a movable wing, as in fig. 8,904, which slides radially in and
 out when passing the abutment.
 
 Rotary pumps are especially suitable for low pressures, and the absence
-of close fitting parts renders it possible to handle water containing a consid-
-erable quantity of impurity, such as silt, grain and gravel. This type of
+of close fitting parts renders it possible to handle water containing a considerable quantity of impurity, such as silt, grain and gravel. This type of
 pump is compact and is generally self-contained, especially in the smaller
 sizes, and will deliver more water for a given weight and space occupied than
 the reciprocating types, while its simplicity of construction not only lessens
-the liability to derangement, but enables persons having a limited knowl-
-edge of machinery to set up and operate these pumps successfully.
-
-~
-tw
-
-ee
-
-—s
--_
-"4
+the liability to derangement, but enables persons having a limited knowledge of machinery to set up and operate these pumps successfully.
 
 Fic. 8,908.—Economy single stage centrifugal pump with cover raised asin bearings and
 rotor construction.
 
-5,988 Power Pumps
-
 jeu fom
-aN
-
-Coonan & WH NH =
 
 What is a power pump?
 
@@ -26468,15 +19297,6 @@ Name the different types of multi-cylinder pumps.
 
 . Draw curves showing delivery flow of various multi-
 
-bh emmk
-WwW NO
-
-a
-Gn
-
-16.
-17.
-
 cylinder. pumps.
 What precautions should be taken in selecting electric
 motor drive?
@@ -26486,14 +19306,12 @@ motor drive?
 motors. eh
 
 Descnibe the. control devices at the water end.
-; Draw a sketch showing automatic, control for electric
+Draw a sketch showing automatic, control for electric
 
 house pump.
 What is the adaptation of — regulated control?
 
 — nt diagrams for automatic pressure tank
-
-Water Supply 5,589
 
 CHAPT ER 230
 
@@ -26503,17 +19321,12 @@ For domestic use, water is usually Onan, from: 1, wells;
 2, springs; and 3, city mains.
 
 In some cases rain water is used by collecting the supply
-which falls on the roof. :
+which falls on the roof.
 
 Wells.—There are numerous kinds of wells and they may be
 classified as:
 
-a. i
-e y; 7 |
-ie Shallow; PhO -
 Ze Deep; a ae
-: : Panes ~
-ao qo:
 
 The chief advantages of a well of large diameter are the
 storage that it affords and the possibilities of placing the
@@ -26531,91 +19344,28 @@ by a hammer or by the use of a falling weight or with the aid of a jet of
 water carried through a small pipe to loosen the material in advance of
 the point.
 
-5,990 Water Supply
-
 Water Supply Systems.—There are numerous methods of
 water supply, due to the varied conditions met with. These
 
-|
-
-Hi
-
-CECE
-
 eae |
-ed
-eu?
-|
-—-!
-' |
-oe
-eo coum
-=
-pe SE BR
-= \
+
 = as '
-er
-—
-|
-a
-a
-QuawelwaD
-RSE
-= Bl
+
 emer |
-==
-'
+
 Sree
-eS
-————
-ad
-a
+
 emmeead
 mens
-=
-> SEED
-— }
-——=-F
-iF —— J |
+
 aan
-——ew
-———
-
-d
-
-Mt
 
 nia
-
-VS to
-o.
 
 ree
 Zee,
 
-il HINT
-
-Pa © 5)
-PERS
-A)
-
-Ne SS-
-
-=" ~s
-e
-ay ,,
-oe
-
-f
-
-+
 iinhifsys
-at ees
-if Ag Sok
-aT)
-
-il
-(AgYs"
 
 rae FURL TUiLtH TEE ES ——=
 
@@ -26631,8 +19381,6 @@ raising the water, as by:
 
 1. Hand pumps;
 
-Water Supply 5,991
-
 2. Wind mill; —
 
 3. Power pump;
@@ -26646,24 +19394,15 @@ Electric
 
 Waeeg
 
-—_————e
-—_
-
-LL fe Ty |) /y
-
-### LEADER
-
 Fic. 8,911.—Rainfall system of water supply showing attic tank receiving its supply of water
 from roof, a valve being interposed as shown so that when the tank is full, excess water
-may be carried off through a leader. |
+may be carried off through a leader.
 
 4, Hydraulic ram;
 5. Water wheel;
 
 6. Compressed air;
 7. Air lift.
-
-5,592 Water Supply
 
 Small Pumps.—The syphon type pump is used to force water
 from shallow wells to elevations.. The cylinder or barrel is
@@ -26684,26 +19423,9 @@ PUMP
 
 vay
 
-°«.% By
-et TI
-ive Rs ' :
-
-7 Mb le
-ry SKS
-Ne!
-|
-
 i'l Witt
 
-cf
-A a"
-a")/e
-
 FOOT .
-
-5B
-
-j
 
 ees]
 
@@ -26716,84 +19438,16 @@ have been installed, as shown in fig. 8,913.
 
 In cases where pump cannot be lowered conveniently, a deep well pump
 
-should be used. |
+should be used.
 Fig. 8,912 is an example where pump was lowered to bring lift within
 
 limit. In this case a deep well pump could not be used as the wind mill
 
-5,993
-
 Water Supply
 
-"S1ueYydaul Aeuipio Aue Aq pouljal oq ued 'ABME UMOIY} BUlaq JO peoysul 'ed 9} 'ZUIIIO JO JOa[BaU WIOIJ TEIM JO Vsed UT je
-Os 'TeJaW VIQGqGeg YIM pdsuUl] SAulJesq Ul YIOM 'TT puke OT "ON ueWw Id oyy *"AeMe UMOTG BUIOq II} JO Aj[Iqtssod ay} a}eI1AgGo.
-AjaINnusa 0} pue 'ouly ul yday Ajjenjoayo pue sulelj sues 9} Ul payJoddns Zutaq |[e 's19}U99 SNOLIVA 94} UO YULID 94} JO BUTHIOM.
-JO 'SpuIM 23/qGeLIeA UI jSBUI JO [IU oY} JO UOT}OU BuUIyDOI Aue BuljUsAoId Aqai9y} '> Swe 94} UOdN jYSNoOIqG UTeIs 94} YIM
-aBVlIVaAz[ Tenbod [[IW PULA JO JUIeIJ UTBUL 94} AIS OF SI 'Fy We [IW puIM ay} UO JUIOd 9U} SB Iej SB fF] JSeUI 94} UMOP ZSuIWOD Zuiqny
 SI} JO qOafqo BUT, "E "ON JO WO }0q 94} UO 'PF 'ON JeTj[oO9 Aq aed
-ul ATULIY play st pue Z "ON epins Ysno1y} UMOp sassed € "ON 9qn}
-dNeipAy sy} pue 'JoySeM UOTOLI-1jUe UB UO SUIN} pur s}seI § 'ON
-"Jl UOdN jsed BJeYS [904M PUIM 9} S}Joddns YoY suIeIy Sutsesq 9Y}
-UUM ZuIqn} dI]NeIpAy uO yY4SNoIM Jo soaId & SI YOY 'EF 'ON ouIeIy
-UIBU 94} Ul pdye1j}Ua0U0D Buleq HIOM UOI [e1}UI9 BJOYM 9} 'UOT aIqe
--3]JeUl pue UZNOIM '][39}S JO ATJSOUI BPeUI SI [IU 9} 'u40279N478U09
-Uy "SOUBA UIPOOA Y}IM [JIU PULM VYOI}S JIIIIP ULIOIIOD—'FI6''8 "Oly
 
-*SUOT}D9UTOD
 duind pue yueld osje pulm oO}
-Ppouf[oUl SouRA SUIMOYS UOT}e1ado 214M
-[far pul jo sfenusssy— S1I6'S "Sy ;
-GNIM OL
-
-### NOILVNITONI
-
-ee AC FL a es
-rr. : Tr. th
-
-if dWNd il
-
-. : ONIM
-
-### JIONY JNWA
-
-P N\
-
-x
-
-.
-oy
-Pa
-J
-iy
-®
-, #)
-
-SN
-@.
-
-~
-
-YNWL
-O31LVA313
-
-4 oo
-.
-
-aa ee
-
-### NOILDBYIO
-
-'
-"
-' yo
-ee Ae
-ff.
-
-### YNVYD
-
-ae™
-
-5,594 Water Supply
 
 tower could not be placed over the well. Where a deep well is located
 directly under a wind mill tower a deep well pump is used, as in fig. 8,913,
@@ -26817,14 +19471,11 @@ WITH. INCREASING AIR COMPRESSED,
 
 ### CHAMBER
 
-CLOSEQ \
-
-=
 MAKE DS |
 
 AIR ENTERS", SLVE
 
-: AIR CHAMBER CHECK VALVE
+### AIR CHAMBER CHECK VALVE
 
 WITH WATER EoRCED OPEN BY MOMENTUM
 | OF WATER
@@ -26836,40 +19487,24 @@ closes. Water continues to escape through the open impulse valve with increasing
 which finally causes the impulse valve to slam shut, thus suddenly stopping further flow of
 water through the impulse valve. Owing to the momentum of the long column of water, a
 sudden pressure is produced great enough to open the air chamber check valve thus forcing
-the water (and air) into air chamber. The inflow of water compresses the air in the air cham-
-ber which cushions impulse and forces water out to delivery pipe. Impulse valve again drops
-and the cycle begins again. |
+the water (and air) into air chamber. The inflow of water compresses the air in the air chamber which cushions impulse and forces water out to delivery pipe. Impulse valve again drops
+and the cycle begins again.
 
 Small Power Pumps.—The term power pump ordinarily
 signifies a pump driven by belt, gears or other transmission,
-receiving its power from some external source. They are usu-
-ally classified according to the number of cylinders, as:
+receiving its power from some external source. They are usually classified according to the number of cylinders, as:
 
 1. Single; ' 3. Triplex;-
 2. Duplex; 4. Quadruplex, etc.
 
 DISCHARGE IN CUBIC FEET PER. SECOND
 
-a VP wu Oo uMOS N Ul P UW OYNNWO >
-= = mM Or =~ ao ~ Ow
-OG ADWH ang Yi A\sJ/uUu @nqQwoao e) O02 oOo O00 oo
-Oo 0 OOO O O Of Oo O 0800 O re) OOo
+### DISCHARGE IN GALLONS PER MINUTE
 
-° O 6 60600 e) o 8 6 & 8O8
-DISCHARGE IN GALLONS PER MINUTE '
-/ - =- =~ = =~NNNMNHKU U DB PPUBDE
-N Ue & we' "4 @ OO mw PO MDONAGQMWO Qn OBOSN
-
-on '_—
 /OVAMETER OF PIPE IN INCHES
 
-Pw Nw = ; a
-OO oO OOD oe om. 1... : - O OOO?
-o.0 Oo oO O56 6 Oo O © ous Ww Ooo cum w nw =a@M aur W
 LOSS OF HEAD IN FEET PER 1000 FEET
 am ) / VELOCITY IN FEET PER SECOND
-; oj 6' yi e e @ e Os e e e e N e : @ e e e e e e
-o 0 '@ Oopn oa FN COMNEnDdUALT™ }D& BAN
 
 Fic. 8,918.—Diagram for calculating pipe sizes, discharge velocities and loss of head in water pipe. Lay a straight edge on scales
 at the points for any two known quantities and the unknown quantities will lie at the intersection of the straight edge with the
@@ -26878,30 +19513,16 @@ of head for 1,000 ft. of approximately 25 ft. head and a velocity of 5.8 ft. per
 
 Ajddng 121384
 
-S6S°S
-
-5,596 Water Supply
-
 ### STUFFING
 
-oa PITMAN
-
 AIR cE PISTON
-CHAMBER pa — POD
 
 ### BARREL
 
-|
-
-a
-Ni |
-
 ### HEAD VALVE FOOT VALVE
 
-BUCKET VALVE 7 :
-| PUMP ALWAYS PRIMEO
-
-### HWA EUCHRE
+BUCKET VALVE 7
+PUMP ALWAYS PRIMEO
 
 , OUTSIDE CYLINDER
 PISTON
@@ -26911,23 +19532,13 @@ a concentric or outside cylinder providing an annular space which traps water so
 pump is always primed. Anyone having any experience with pumps, especially old and
 worn pumps, . will appreciate this feature.
 
-4 AE
-
 'Us 5 It
 
-=} ry
-
-t ||
-TAL
 rai
-
-SFht $e A": oe cy ett
 
 N Gs CONDENSER a7 ere
 
 SEY Ne. . SS OL
-
--2e@r: =| 7° e@
 
 Fic. sail as Aeihiaes jacketted, transfer expansion oscillating engine, and Dunham power
 pump with belt transmission. J# must be evident that this arrangement permits the
@@ -26935,8 +19546,6 @@ engine and pump to work under the most favorable conditions for economy. Hence b
 proper proportion of pulleys, the engine may run at high speed, thus reducing the size
 of the cylinder and loss by condensation, leakage, etc., and the pump may be run at slow
 speed, thus eliminating water hammer, slamming of valves, etc.
-
-Water Supply 5,597
 
 Evidently, a belt or gear transmission between the pump and power unit
 will permit any velocity ratio; thus when the pump for instance is connected
@@ -26946,7 +19555,7 @@ high speed, which ts desirable for economy of steam. Moreover, any degree
 of economy may be obtained 'according to the type © . vayee selected.
 
 1G. 8,921.—View of driven well point f ghowatg conical ad 'and i perforation through which
-i -water enters the pipe. pets Bagg "*
+i -water enters the pipe. pets Bagg
 
 The accompanying Initiations show power DUNS operated.
 py various power drives; these illustrations also show the con-
@@ -26955,23 +19564,13 @@ py various power drives; these illustrations also show the con-
 With electric motor drive the necessary high reduction in
 cotative speed is easily obtained by belt or gear transmission.
 
-a
-.
-
-x as
-on,
-
 Points Relating to Pumps.—The following information will
 be found useful to those who have to install or service small
-IDUINps. , i at.
 
 arn
-J ted
-ot ! ". &
 
 1. The necessary parts of a pump are the cylinder, the plunger, or the
-'piston with its bucket valve, the lower check valve (or foot valve), the suc-
-tion pipe, and the piston rod and connecting rod. In order that the pump
+'piston with its bucket valve, the lower check valve (or foot valve), the suction pipe, and the piston rod and connecting rod. In order that the pump
 work properly, all of these parts should be in perfect condition. The
 
 NOTE.—A sucker rod coupling is used to connect ends of wooden sucker rods for deep well
@@ -26979,21 +19578,13 @@ pumps. Each half of coupling is secured to the end of wooden rods by three bolts
 'ends of the couplings are joined by male and female threads in the usual way. Either bolts or
 rivets may be used to attach the rods to the couplings.
 
-5,998 Water Supply
-
 Fic. 8,922.—Fitz overshoot water wheel direct coupled to Goulds triplex pump to supply wate;
 to country estates and villages. The pump should be housed over in cold climates. A dynam
 may be added to furnish light and power for farm purposes. The water to drive the wate
 
 wheel may be conveyed from the dam by an underground pipe or through an overhead flume
-as preferred. °
 
-—ge—
-
-PRT TLOe
 sui
-
-Tle i ,
 
 eerece
 
@@ -27006,12 +19597,10 @@ Sai Sey IMPULSE VALVE
 Fic. 8,923.—Columbiana hydraulic ram made in sizes ranging from \ to 2 gal., per minute, t
 6 to 14 gals. per minute.
 
-Water Supply 5,599
-
 cylinder should be true, the piston (or plunger) should fit the cylinder
 accurately, and the check valves should set square and tight.
 
-2. Do not place a pump more than 25 ft. above the water. _
+2. Do not place a pump more than 25 ft. above the water.
 
 3. Suction pipes should be short and as straight as possible, with few
 or no valves, elbows and fittings, and arranged to have no ''pockets"'
@@ -27022,17 +19611,14 @@ where air can collect. Long suctions or high lifts should always have a
 ### REGULATOR
 
 7 : GAUGE
-FAUCET
 
 ### SERVICE LINE
 
 ### TO HOUSE
 
-VALVI a oe ws
-xO} :
 J = AT, Switch NTO HOUSE
 é = 77 ete WIRING
-RELIEF = rs |
+RELIEF = rs
 VALVE 2 <s WIRING' FROM
 | PRESSURE
 DRAINAGE
@@ -27048,8 +19634,7 @@ there is limited space. Both the tank and pump should be installed in the baseme
 place where they will be protected from freezing temperature.
 
 vacuum chamber at the pump and a foot valve should be used, the area
-of which should be as great as the pipe. The suction pipe below the cyl-
-inder should not be longer than one length of pipe—from one to sixteen feet.
+of which should be as great as the pipe. The suction pipe below the cylinder should not be longer than one length of pipe—from one to sixteen feet.
 
 4. Every part of a pump and its suction line should be air tight.
 
@@ -27058,8 +19643,6 @@ other foreign matter.
 
 6. Discharge pipes should be amply large to reduce friction and avoid
 unnecessary loss of power.
-
-5,600 Water Supply
 
 Pneumatic System.—This system furnishes a supply of
 water for house requirements, forcing it to the upper floors
@@ -27074,42 +19657,17 @@ furnishes the power to distribute the water..
 
 AND. 'WATER
 
-}
-HA
-
-e - '
-
-of
-
-, a
-°
-
 ### COLUMN OF
 
-a
-ty |
-
-by
 Loa
 
-}
-il
-
 AIR
-
->
-
-ROT
 
 Fic. 8,925.—Principle of air lift. The injection of air at the point indicated produces a column
 of mixed air and water B, which has less weight than the solid column of water A. Thus
 the weight of the column A, causes the water to rise the distance C, and overflow.
 
-Water Supply 5,601
-
 ©. When the air is compressed to a predetermined certain number of pounds
-
-ae.
 
 pressure, the back pressure operates the diaphragm controller, which works
 the regulator, and the mill is pulled out of gear and stops pumping.
@@ -27123,26 +19681,13 @@ Electric motor or gas engine power may also be used instead of the
 wind mill. The pneumatic system should not be confused with the Pohle
 air lift method of pumping water.
 
-Soe |i
 RECEIVER ;
-bs |
+
 TT] COMPRESSOR LJ
 3 IN. PIPE om,
 TO TANKS 2 f
-a!
-ae | "
-oe ee ers T848 a 4 J er recgee y
+
 VANE 2
-SKOERNE hg AGW igs SISTING BOs ees
-
-e eee ese @
-
-Mot woe @ o eohs?
-
-<
-Lo
-ov
-"
 
 Fic. 8,926.—Pohle air lift plant showing compressor, air tank and connections.
 
@@ -27150,8 +19695,6 @@ Fic. 8,926.—Pohle air lift plant showing compressor, air tank and connections.
 2. What are the different kinds of wells?
 
 3. Name the various water supply systems.
-
-5,602 Water Supply
 
 What kind of pump is used to force the water from
 a shallow well?
@@ -27169,14 +19712,9 @@ What is the advantage of electric motor drive?
 . Describe an automatic pneumatic system.
 . Describe the Pohle air lift system.
 
-BSI te Ede a, a, oe oe ae oe. Ae Se RTC EO ee
-
-Air Compressors | 5,603
-
 eo CHAPTER 231
 
-Compressed air is air forced into a smaller space than it orig-
-wally occupied, thus increasing its pressure.
+Compressed air is air forced into a smaller space than it origwally occupied, thus increasing its pressure.
 
 Poy
 
@@ -27195,16 +19733,13 @@ ordinary steam engine returning an equivalent amount of work that was
 required to compress it, less the friction.
 
 The Compression of Air.—When the space occupied by a
-'given volume of air is changed, both its pressure and tempera-
-ture are changed in accordance with the following laws:
+'given volume of air is changed, both its pressure and temperature are changed in accordance with the following laws:
 
-| Boyle's law: At constant temperature, the absolute pressure
+Boyle's law: At constant temperature, the absolute pressure
 of a gas varies inversely as its volume.
 
 Charles' law: Ai constant pressure, the volume of @ gas is
 proportional to its absolute temperature.
-
-5,604 Air Compressors
 
 In the ordinary process of air compression, therefore, two}
 elements are at work toward the production of a higher pressure:}
@@ -27212,23 +19747,14 @@ elements are at work toward the production of a higher pressure:}
 1. The reduction of volume by the advancing piston;
 
 2. The increasing temperature due to the increasing pressure!
-corresponding to the reduced volume. :
+corresponding to the reduced volume.
 
-ec pind PRESSURE a4:
+117.6 LBS L 1
 
-117.6 LBS L 1 ~
-
-|
-|
-i
-Hl
-
-als R
 Ys VOLUME A
 
 a 58 8& LBS
-_-
-UNIT VOLUME
+_UNIT VOLUME
 — % VOLUME
 : 29.9 LBS.
 0 UNIT VOLUME | F
@@ -27242,20 +19768,9 @@ Boyle's law. As the piston travels from position F, toR,A,L, the pressuresare 14
 117. 6ibs absolute, respectively, being inversely proportional tothe volume. The points F, R,
 A_L. on the compression curve correspond to the piston positions F, R, A, L as shown.
 
-Air Compressors | 5,605
-
 The application of the two laws is illustrated in fig. 3,938,
 which shows a cylinder fitted with an air tight piston. If the
 cylinder be filled with air at atmospheric pressure (14.7 lbs
-
-in
-:
-
-|
-
-'a
-
-|
 
 Fics. 8,932 to 8,937.—Compression cycle illustrated by indicator diagrams and elementary
 compressor. A, beginning of intake stroke; B, intermediate position of intake stroke; C, end
@@ -27270,30 +19785,11 @@ B, then according to Boyle's law the pressure will be trebled or
 
 =14.7<3=44.1 lbs. absolute, or 44.1—14.7=29.4 gauge
 
-5,606 Air Compressors
-
 pressure. In reality, however, a pressure gauge on the cylinder
-would at this tume show a higher pressure than 14.7 gauge pres-
-sure because of the increase in temperature produced in com-
-pressing the air.
+would at this tume show a higher pressure than 14.7 gauge pressure because of the increase in temperature produced in compressing the air.
 
-Now, in the actual work of compressing air, 1t should be care-
-fully noted that the extra work which must be expended to over-
-come the excess pressure due to rise of temperature is lost, because
+Now, in the actual work of compressing air, 1t should be carefully noted that the extra work which must be expended to overcome the excess pressure due to rise of temperature is lost, because
 after the compressed atr leaves the cylinder it cools, and the pres-
-
-enon a
-
-B
-
-TE
-a ||
-
-|
-
-| TL
-
-/s, VOL:
 
 ### UNITY VOLUME
 
@@ -27308,18 +19804,13 @@ working efficiency is considered, some means of cooling the
 cylinder is provided, such as projecting fins, or jackets for the
 circulation of cooling water.
 
-ee
-
 NOTE.—ZJn air compressor problems careful distinction should be made between gauge
 pressure and absolute pressure, the former being the pressure as indicated by a pressure
 gauge, as distinguished from absolute pressure which is the gauge pressure plus 14.73 Ibs ,
 the weight of the atmosphere at sea level, when the barometer reads 30 ins. or, for ordinary
 calculations, 14.7 Ibs.
 
-Air Compressors 5,607
-
-Free Air.—By definition free air is air at ordinary atmos-
-ibheric pressure and temperature.
+Free Air.—By definition free air is air at ordinary atmosibheric pressure and temperature.
 
 Heat of Air Compression.—This subject has probably re-
 'ceived more consideration in air compressor design than any
@@ -27329,16 +19820,9 @@ heat of compression results in a loss.
 
 | Che
 
-Le
-&
-
 ### LOSS DUE TO
 
 ### HEAT OF COMPRESSION
-
-1 DTS ow a |
-1 ah
-~ Th
 
 Fics. 8,939 to 8,942.—Diagrams and elementary compressors illustrating loss due to heat of
 compression. If no means be provided to carry off this heat, compression will be adiabatic
@@ -27351,11 +19835,8 @@ It should be noted that the heat of compression, as already explained,
 represents work done upon the air for which there is usually no equivalent
 obtained, since the heat is all lost by radiation, before the air is used.
 
-The selection of an air cylinder lubricant is, of course, governed to a con-
-siderable extent by a knowledge of the cylinder temperature it must
+The selection of an air cylinder lubricant is, of course, governed to a considerable extent by a knowledge of the cylinder temperature it must
 withstand.
-
-5,608 Air Compressors
 
 Knowing the air pressures, the corresponding temperatures
 are ascertained fairly accurately, as shown in the following
@@ -27366,15 +19847,13 @@ Cylinder Temperatures at End of Compression
 Final Final
 Air Temperature Temperature
 Compressed to Single Stage T'wo Stage
-_ Lbs. Gauge . Deg. F. Deg. F.
+Lbs. Gauge . Deg. F. Deg. F.
 
 This table gives the final temperature in the cylinder at the end of the
-compression stroke, for single stage, also for two stage (or compound) com-
-pression, when the free air entering the cylinder is 60° Fahr.
+compression stroke, for single stage, also for two stage (or compound) compression, when the free air entering the cylinder is 60° Fahr.
 
 Variations from these temperatures will occur in actual practice due to
-water jacketed air cylinders and radiation, tending to lower the tempera-
-ture at the higher pressures. However, at say, 50 lbs. pressure and lower,
+water jacketed air cylinders and radiation, tending to lower the temperature at the higher pressures. However, at say, 50 lbs. pressure and lower,
 the heat is likely to be somewhat greater than given by the table, particu-!
 larly if the compressor be run at high speed and also if it be not water
 jacketed.
@@ -27395,8 +19874,6 @@ The two important methods are known as:
 In the earlier compressors, compression was accomplished in one stage
 or single cylinder machines, and the heat of compression was removed by
 
-"
-
 Fic. 8,943.—Sullivan angle-compound compressor direct connected to electric motor. Recent
 improvements in synchronous motors have made it possible to employ a simple and compact
 design of direct connected motor drive on angle-compound compressors. The rotor is
@@ -27405,8 +19882,6 @@ for getting at the bearing boxes.
 
 5, 6 10- Air. Compressors
 
-ee 0 ene me ee em eee ee
-
 injecting water into the cylinder in the form of a spray; or, in another type,
 the water was used as a piston for compressing.
 
@@ -27414,75 +19889,26 @@ The spray injection cylinder has now given way almost entirely in this
 country to the dry or jacketed cylinder.
 
 The advantage of spray injection is higher thermal efficiency but from a
-commercial point of view its efficiency is not so high .as with dry compres-
-sion, for the water in the cylinder prevents proper lubrication, and the
+commercial point of view its efficiency is not so high .as with dry compression, for the water in the cylinder prevents proper lubrication, and the
 impurities therein attack the cylinder walls.
 
-ye
--.  - LEB
-ee ws SSF oe
-=" "4 & & & e Neo
-- ng x . © * >» a
-ee Fas oe
-, ; > 5 < 3
-; ae ; Lae. S
-' : 5 lee he
+ae ; Lae. S
+: 5 lee he
 Pay oo Se Las. o &
-ae Bm Ess » a bing
-: * , mis ° _iee
+
 - > Ripe eet aenc a
-RE. % on i. ee ae
-=. \ ". is: ° .
-"SRS as ee =e <
-/ hb Sy Ae vet '- ~ ~
+
 ) ee! eee i Bs 34-43 a
-' AFL Nate § Cd BS RR
-eR Bore aes as. - ~
-ey. a 2s
-Al ¥ Dee. A ~ ¥ 2 P.7- 8 oF.
-; ae Tres ' of
-7 Nes +4 AP i
-: 15H tp Ory ' &. = S
-ote Xx
-"ae Sot e. >
+
 A "Ne oh Nags 2) 'i Eee g
-. ~ f Se - re ¥
-"og al DEcSecwr ee cu Ade yy . = '
-"28 'ay \
-|__k OSS NS VE he :
-f : .
-& ' oS Sei
-=
-aa
+
+|__k OSS NS VE he
+
 eae
-oe
-'
-AS
 
-C) os oe |
-ma i7 i ZV
-| Na 8
-
-.
-vate: § .
 (at Vee ba CARR mbes 6
-i Ae Wars PS.
-¥ : ae eis ye
-NE SOR ahr fl yy
-3 ANG Mlric _
-% is . 4 " -
-. Ny Tre -
-wale ER BA poagt (Se Tad
-vhs she fer re, m3
-4 Bs, pik: > a Le ye
-) Solas
-r. oaths
-"a ) %
-ae of
-ane A
 
-> Z S WF ¥ = —
-esta CRANES =>
+wale ER BA poagt (Se Tad
 
 Sullis 1: in "wafer" stbies. rics 8; O44 valvee and ei arrangement for
 sOrs ; fig. 8,945, cylinder head showing arrangement of wafer valves.
@@ -27493,30 +19919,25 @@ air pressure and are returned after opening by annular springs of the same size 
 as the valves themselves. One spring is used on each inlet valve and two springs nested
 together on the discharge valves.
 
-In dry compression a jacketed cylinder is provided and cold water cir-
-culated through the jacket which keeps the cylinder walls sufficiently
-cool so that proper lubrication is not interfered with and all other disad-
-vantages of the wet compressor are obviated.
+In dry compression a jacketed cylinder is provided and cold water circulated through the jacket which keeps the cylinder walls sufficiently
+cool so that proper lubrication is not interfered with and all other disadvantages of the wet compressor are obviated.
 
 Air Compressors. _—i5,611
 
-' Single Stage and Two Stage Compressors.—In a single stage
+Single Stage and Two Stage Compressors.—In a single stage
 'compressor the ; air is compressed to the desired pressure in one
 'operation; or, in other words, the air is taken into the air
 icylinder at zero gauge pressure (that is, atmospheric pressure
 'or 14.7 lbs. per sq. in.) and compressed with one stroke of the.
 'piston to the desired pressure. It is then discharged directly
-'into the air receiver. _
-
-oa
+'into the air receiver.
 
 Fics. 8,946 to 8,951.—Sullivan wafer air valves and parts. When placing these valves in the
 ..,heads, be sure that the inlet valves come up to the seats; to do this make sure that the cap
 'bolt heads on the inlet valve guards clear the ribs on the discharge ware seats; by turning
 the valve slightly this position can easily be found.
 
-te a two stage compressor the desired pressure is. reached i in two opera-
-tions, and two separate cylinders are required. The air is taken into the
+te a two stage compressor the desired pressure is. reached i in two operations, and two separate cylinders are required. The air is taken into the
 low pressure (large) cylinder and compressed to an intermediate pressure,
 whence it.is passed through an intercooler to the high. pressure (small)
 i . Cysincler, in which the compression to the desired pressure. is completed.
@@ -27524,8 +19945,6 @@ i . Cysincler, in which the compression to the desired pressure. is completed.
 The principal advantage of compound compression over
 simple compression is the reduction of the loss due to the heat
 of compression.
-
-5,612 Air Compressors
 
 This is due to the fact that more time is taken to compress a certain
 volume of air, and that this air while being compressed is brought into
@@ -27544,8 +19963,7 @@ enumerated as follows:
 
 The temperature -of air.leaving the intake cylinder being low, the cooling
 influence of the jacket 1s better, the cylinder walls are cooler between
-strokes, and the air enters the cylinder cooler than in a single stage com-
-pressor.
+strokes, and the air enters the cylinder cooler than in a single stage compressor.
 
 The lubricant for cylinders and valves is not subject to the pernicious
 influence of high temperatures; and the clearance losses, or losses due to
@@ -27555,8 +19973,7 @@ Clearance loss in an air compressor is principally a loss in capacity, and
 therefore affects only the intake cylinder; it increases with the terminal
 pressure, but since the terminal pressure of the intake or low pressure
 cylinder of a compound compressor is much less than the terminal pressure
-of a simple compressor, the volumetric efficiency of the compound com-
-pressor is greater than that of the simple compressor.
+of a simple compressor, the volumetric efficiency of the compound compressor is greater than that of the simple compressor.
 
 The life of a compound compressor is longer than that of a simple come
 pressor for like duty, due to better distribution of pressures.
@@ -27576,8 +19993,6 @@ parts. Air is a bad conductor of heat and takes time to change its temperature. 
 while pushing the air toward the head, rapidly drives it away from the jacketed surfaces so
 that little or no cooling takes place.
 
-Air Compressors 5,613
-
 Inter-coolers.—By definition an inter-cooler is @ species of
 surface condenser placed between the two stages of a compound air
 compressor so that the heat of compression liberated in the
@@ -27587,11 +20002,7 @@ second or high pressure compression cylinder.
 The cooling surface usually consists of nests of small brass or copper tubes
 through which water circulates.
 
-—— os ~ ox
-Re Nd
-
 Oey z Sea
-SS aRaRRRY
 
 Fic. 8,952.—Ingersoll-Rand horizontal after cooler. The arrows show the course of the air or
 gas. The moisture separator is in the base below the right hand end of the lower tube nest.
@@ -27605,23 +20016,18 @@ and other openings because of the sudden expansion of the air.
 It hastens corrosion of all metal that it reaches and hastens
 the decay of rubber hose.
 
-5,614 Air Compressors
-
 In the case of compressed gas for distribution, it is one of the leading
 causes of line and meter troubles.
 
 Removal of moisture before the air or gas is introduced into the lines is
-the best method of procedure. This can be done effectually by an after-
-cooler which cools the air (or gas) to a point where most of the moisture and
+the best method of procedure. This can be done effectually by an aftercooler which cools the air (or gas) to a point where most of the moisture and
 oil condense and can be removed.
 
 This is accomplished by bringing the air (or gas) into contact with pipes
-through which cooling water is constantly circulated. This not only elim-
-inates the difficulties which moisture causes at points where the air is used,
+through which cooling water is constantly circulated. This not only eliminates the difficulties which moisture causes at points where the air is used,
 but also insures more effective distribution.
 
-The air leaves the after-cooler at a. uniform and relatively low tempera-
-ture, thus obviating the alternate lengthening and contraction of lines
+The air leaves the after-cooler at a. uniform and relatively low temperature, thus obviating the alternate lengthening and contraction of lines
 previously referred to.
 
 With efficient after-coolers, sufficient moisture is removed to
@@ -27632,7 +20038,7 @@ Where the air is used for such purposes as paint spraying, enameling,
 food preparation, and the like, further drying of the air can be effected by
 passing it through special separators immediately before it is used. These
 remove the moisture which may condense due to further cooling of the air
-in pipe lines following the cooler. |
+in pipe lines following the cooler.
 
 Piston Displacement.—The displacement of a compressor is
 the volume displaced or swept through by the piston during the
@@ -27641,19 +20047,13 @@ which the compressor will actually deliver.
 
 Actual Air Delivered.—The amount of air actually delivered
 by the compressor is always less than the piston displacement
-and is the amount of air available for useful work. It is ex-
-pressed in cu. ft. per minute of free air.
+and is the amount of air available for useful work. It is expressed in cu. ft. per minute of free air.
 
 Volumetric Efficiency.—By definition, volumetric efficiency
 is the ratio of the actual air delivered to the piston displacement.
 
-Air Compressors 5,615
-
 For instance, if a compressor have a displacement of 20 cu. ft. per minute
 and the actual air delivered be 16 cu. ft. per minute, its volumetric efficiency
-
-. 16
-1S rT he 80%.
 
 Pressure Regulators.—Because of varying and intermittent
 demands for compressed air, some form of pressure regulator
@@ -27666,12 +20066,7 @@ COOLING © —" COOLING
 CRATER — WATER
 OUTLET _ Ee INLET
 
-os Pe ae
 INS
-my
-ER
-,
-=
 
 ### COMPRESSED
 
@@ -27688,42 +20083,11 @@ form of ''unloader'' is employed which closes the inlet pipe or connects the
 two ends of the cylinder when the receiver pressure reaches the maximum
 point desired.
 
-_ Duplex steam driven machines, which have a wider range of speed, may
+Duplex steam driven machines, which have a wider range of speed, may
 often obtain sufficient air regulation by simply varying the speed by means
 of a throttling or automatic governor attached to the engine.
 
-5,616
-
-"s][@j pue sast1 sinssoid JaAla001 Se pa}eadal SI a[DAD BY, °JOSSaIdWIOD peo] 0} adIAap
-Japeorun ul ainssald |ye s}sneyxs puke sinssald JaAtade1 JO syNys }I sinssaid JaA19001 WINUIIUIU PaulUlJe}apaid ye pue JossasduIOD
-peojun 0} ainsseld JaATIIa1 WINUITXBU PoUlWJe}apold je sdIAap Zurlpworun 9y} 0} aMssoid JaAIIIaI SIAAI[VP SATEA YOTId ayy 'wo72
--piado uy *ynu Buysn{pe 'TT 'yooy Zuuds 'oy 'duuds '¢ 'zapeojun puey yim Jag] *g {gnu HOO] '7 'maIDs BuNsn{pe '9 'wa8 'c
-Mai9s ZuNnsn{pe uA 'Pp 'ded "¢E 'uojsid '¢ 'Apoq '{[ satm Szipd ayy '"aAtea oTId *D "yz adA} UPAT]ING—'GcE'g puke FCG'g 'SDIy
-"HIANIDAD aoe
-YIGVOTINA
-
-il
-
-ANN
-
-|
-
-_——,.
-
-,
-
-"IANSSAZIAS
-r- 4
-
-———
-—_————
-
-### FAITITYA
-
-Air Compressors 5,617
-
-When the conditions are more exacting, as in mining operations, a com-
-bined speed governor and unloader is used.
+When the conditions are more exacting, as in mining operations, a combined speed governor and unloader is used.
 
 Among other methods of regulation may be mentioned the shifting of the
 driving belt in the case of small power machines; the starting and stopping
@@ -27756,14 +20120,13 @@ control valve on the high pressure cylinder provides that any air which may have
 the machine is exhausted. All.chances of building up excessive heat and pressure in a closed
 circuit in and on crosshead pins, crank pins, guides, etc., are eliminated.
 
-5,618
-
 ### PIPE TO AIR RECEIVER
 
-TIME DELAY RELAY |
+### TIME DELAY RELAY
+
 pea nd WHEN REGULAR
 PILOT VALVE peep air segel a TO aa er STARTER
-NLOAD
+
 WITH SOLENOID eens
 
 ### TO UNLOADING
@@ -27772,15 +20135,12 @@ WITH SOLENOID eens
 
 ### COMPRESSOR
 
-TO
-
 ### PILOT CIRCUIT
 
 HAND
 AUTOMATIC
 
-Fic. 8,958.—Sullivan diagram for automatic start and stop control of direct connected syn-
-chronous motors, when time delay relay is used.
+Fic. 8,958.—Sullivan diagram for automatic start and stop control of direct connected synchronous motors, when time delay relay is used.
 
 ### PIPE TO AIR RECEIVER
 
@@ -27793,14 +20153,13 @@ DEVICE ON
 
 ### COMPRESSOR
 
-TO
-PRESSURE WV PILOT CIRCUIT
+### PRESSURE WV PILOT CIRCUIT
+
 SWITCH |
 HAND
 AUTOMATIC
 
-Fic. 8,959.—Sullivan diagram for automatic start and stop control of direct connected syn-
-chronous motors, when time delay relay is not used.
+Fic. 8,959.—Sullivan diagram for automatic start and stop control of direct connected synchronous motors, when time delay relay is not used.
 
 ompressors 5,619
 
@@ -27808,22 +20167,10 @@ Prevailing types are shown in the accompanying illustrations.
 
 Automatic Start and Stop Control.—As an example of this
 method with direct connected synchronous motor drive , two
-diagrams are shown, figs. 8,958 and 8,959. |
+diagrams are shown, figs. 8,958 and 8,959.
 
 In the diagram 8,959, the control consists of the regular
 automatic starter operated by a start and stop push button.
-
-'
-
-ae
-
-iy eg tay
-te OOD A os orn = ties aaa
-LOW SG rt Ah KR ne, " L066 Pens easel SO a ald
-
-### ORNS SRS
-
-; i)
 
 G. 8,960.—Sullivan close connected belt driven air compressor showing idler pulley and air
 filter on air inlet.
@@ -27835,39 +20182,24 @@ in the diagram, an electric pressure switch, a definite time délay relay and
 another push button, which cuts in and out at will the automatic start and
 stop operation. Two types of pressure switches are available.
 
-5,620 Air Compressors
-
 AIR
 
 SS AIR SEALED i
 UNLOADERS
 
-en
-
-ol fel
-f fib. inl "
-°o
-
-—
-
-Ee
+f fib. inl
 
 INGERSELL= RAND
 NEW VORK
-IMPERIAL TYPERS
 
 ### DRAIN
 
 Fic. 8,961.—Piping diagram for Ingersoll-Rand stationney direct connected electric motor
 driven air compressor arranged for constant speed operation.
 
-ry be
-
 WATER WATER VALVE = AIR SEALED UNLOADERS
 
 ### CONNECT TO
-
-### EXHAUST-
 
 ### UNLOADER
 
@@ -27880,43 +20212,17 @@ CABINET O!L DRAIN
 Fic. 8,962.—Piping diagram for Ingersoll-Rand stationary direct connected electric motor
 driven compressor arranged for automatic start and stop control.
 
-Air Compressors — 5,621
-
-_ The diaphragm type is operated by a diaphragm and has a
+The diaphragm type is operated by a diaphragm and has a
 differential in pressure between stopping and starting.
 
 The gauge type 1s operated by a Bourdon tube and has a
 small differential pressure. They are interchangeable.
 
-NN
+### WX SSSA SS
 
-SSNS
-
-TAA
-7)
-
-BX.
-
->
-D
-n &
->
-Pp |
-z
-m
-WX SSSA SS
-
-g
-| i Y = J
-1o sana (wr J E ra
-ry N as tN
 VALVE Cet N=
 AIR INES WHS
 RECEIVER » f
-
-SSS
-
-SSNS
 
 Fic. 8,963.—Ingersoll-Rand unloader for stationary direct connected electric motor driven
 compressor arranged for constant speed operation. See fig. 8,964 for operation. —
@@ -27926,9 +20232,7 @@ before stopping or starting and is to be recommended in most cases. It is
 required with all short belt idler drives with multi-step control.
 
 When the definite time relay is omitted, the wiring is as in fig. 8,959.
-This equipment controls the pilot valve with solenoid. _
-
-5,622 Air Compressors
+This equipment controls the pilot valve with solenoid.
 
 The equipment will run by hand or automatic control, depending on the
 position of the maintaining contact push button station used as change over
@@ -27941,7 +20245,7 @@ and unload as governed by the setting of the unloader.
 
 When starting, the compressor will load after the motor is up to speed
 and will unload simultaneously with the power being thrown off the motor
-when the siop button is depressed. : |
+when the siop button is depressed. :
 
 When the automatic button of thé maintaining contact push button
 station is depressed, the regular start-stop push button station mentioned
@@ -27950,10 +20254,9 @@ ef | ~Fic..8,964.—Enlarged view of auxiliary valve
 
 . Shownin fig. 8,963. Constant speed controls
 
-: With the compressor operating under normal
+With the compressor operating under normal
 
-———=—$— 2 -conditions, it builds up pressure in the air re-
-XS SS - ceiver until maximum desired pressure is
+———=—$— 2 -conditions, it builds up pressure in the air reXS SS - ceiver until maximum desired pressure is
 
 reached. The auxiliary valve B, drops to the
 
@@ -27961,28 +20264,22 @@ lower seat, opening up the passage and ad-
 
 mitting receiver pressure to the air-sealed un-
 
-SCREEN loader. Receiver pressure applied to the un-
-__ loader overcomes the resistance of spring M,
+SCREEN loader. Receiver pressure applied to the un__ loader overcomes the resistance of spring M,
 Sine e AT and forces the plunger E, down, holding open
 the inlet valve H. Thus the compressor is
 
 E. unloaded, since no air can be compressed and
 
-discharged to the receiver. When the pres-
-D4
+discharged to the receiver. When the presD4
 
-aC
-
-sure in the air receiver has fallen approxi-
-mately 10 Ibs. the auxiliary valve B, is forced
+sure in the air receiver has fallen approximately 10 Ibs. the auxiliary valve B, is forced
 to its upper seat by the spring, closing the air
 passage between the receivér and unloader.
 This releases the pressure over the unloader
 bellows to atmosphere. The spring M, in the
 unloader now raises the plunger E, and the
 inlet valve is free to open and close. Thus
-the compressor is loaded and air is again com-
-pressed and discharged to the receiver. The
+the compressor is loaded and air is again compressed and discharged to the receiver. The
 sHims normal operating pressure between unloading
 and reloading points is usually 90 to 100 Ibs.
 giving a range of 10 lbs. This can be varied
@@ -27993,43 +20290,25 @@ piping A, passing through a strainer and
 screen. When the air pressure reaches say 100
 lbs. this pressure acting downward on the valve
 B, overcomes the upward push of the spring,
-> HAND UNLOADING NUT and the valve B, starts downward. In this posi-
-tion the additional surface at E, is momentarily
+> HAND UNLOADING NUT and the valve B, starts downward. In this position the additional surface at E, is momentarily
 exposed to receiver pressure, quickly forcing
-
-AN
-
-.
-
-SSS
 
 ### LOWER
 
 VALVE. SEAT
 
-J
-
 bas
 
-SSS
-LB
-
-i
 Lilli
 
 ### VALVE SPRING
-
-### ADJUSTER
 
 ### VALVE SPRING
 
 GUIDE ——_.
 
-Air Compressors 5,623
-
-before, is removed from the control circuit and the pressure governor sub-
-stituted. The equipment will then start and stop automatically, governed
-by the setting of the pressure governor. |
+before, is removed from the control circuit and the pressure governor substituted. The equipment will then start and stop automatically, governed
+by the setting of the pressure governor.
 
 A similar sequence of starting and stopping is obtained by the pressure
 governor control in that the compressor will load after the motor is up to
@@ -28038,21 +20317,7 @@ speed and unload when power is cut off from the motor.
 TO RECEIVER _ content
 PRESSURE Gif
 
-TO UNLOADERVZA Ef
-
-: in \ 'eo f
-EXHAUST a Ne rea |
-
-%,
-
-Se ote
-
-S| SGM,
-
-P
-aS
-
-7) 9 300000002:
+EXHAUST a Ne rea
 
 1G. 8,965.—Magnetic unloader for Ingersoll-Rand stationary direct connected electric motor
 "driven compressor arranged for start and stop control. The unloader is wired in parallel
@@ -28066,7 +20331,7 @@ aS
 Ic. 8 ,964.—Text continued.
 
 'valve B, to the lower valve seat. Receiver pressure against the larger area now exerts a
-» total force which more than makes up for the additional force exerted by the spring through
+total force which more than makes up for the additional force exerted by the spring through
 - being compressed. With the valve D, on the lower seat, pressure from the receiver passes
 'freely out piping D, to the unloaders. When the receiver pressure has dropped about 10 1bs.
 i then the force that the air is exerting downward on the valve is less than the spring is exert-
@@ -28075,11 +20340,7 @@ i there is an open passage from the unloaders to atmosphere. This passage is thr
 -D, past the slots F, and down the valve spring guide. With the escape of air from the
 i unloaders to atmosphere, the compressor resumes its load.
 
-5,624 Air Compressors
-
 ### TO VERTICAL
-
-. 5 a
 
 ### TO VERTICAL
 
@@ -28087,7 +20348,6 @@ i unloaders to atmosphere, the compressor resumes its load.
 
 GUIDES ft _F TO HORIZONTAL
 
-ele = CYLINOER
 TO VERTICAL |
 CROSS HEAD __ | FORCE —|-— - \ >
 
@@ -28097,12 +20357,12 @@ m(NSIDE: OUTSIDE A | a CROSS
 , TO MAIN at} HEAD
 BEARINGS A =
 GRAVITY _.
-TO HORIZ.
+
 enon | CROSS HEAD
 GUIDE
 CRANK
 CHAMBER
-Olu ~A_e.
+
 LEVEL = =4
 
 Fic. 8,966.—Sullivan oiling system for angle compound compressor. In operation the oil
@@ -28120,39 +20380,23 @@ Fic. 8,965.—TJext continued.
 drops down. .This moves the pin A, up, holding the ball: valve B, tight against its seat.
 This forces the pin C, up, unseating the upper ball D, Unseating the ball D. opens the passage
 so that the receiver pressure is admitted to the unloaders. When ball D, is seated this
-passage 1s closed off and ball B, is unseated, opening a passage from the unloaders to atmos-
-phere. When the receiver pressure rises above that for which the pressure switch is set,
-the switch cuts out and the motor and compressor stop. At the time the solenoid is de-
-energized, the weight drops and lever M, pushes up on pin A, until the ball valve B, is
+passage 1s closed off and ball B, is unseated, opening a passage from the unloaders to atmosphere. When the receiver pressure rises above that for which the pressure switch is set,
+the switch cuts out and the motor and compressor stop. At the time the solenoid is deenergized, the weight drops and lever M, pushes up on pin A, until the ball valve B, is
 seated. Discharge pressure is now admitted past ball D; going to the unloaders and acting
 through the bellows, it holds the inlet valves open. Thus the compressor stops in an unloaded
 condition. When the receiver pressure drops below that for which the pressure switch Is set,
 the switch cuts in and the motor and compressor are started up. When the last contactor in
 the controller is reached the solenoid is energized, lifting up the weight and moving lever M,
-so that the pin A, drops down and the ball valve B, is unseated. Until this time the com-
-pressor has been starting up unloaded; that is, with the inlet valves held open. With
+so that the pin A, drops down and the ball valve B, is unseated. Until this time the compressor has been starting up unloaded; that is, with the inlet valves held open. With
 the lower ball unseated and the upper one seated, receiver pressure is cut off and the air in the
-unloaders exhausts to atmosphere through the unloader, permitting the inlet valves to oper-
-ate and the compressor to discharge air. Pressure in the receiver now builds up until the
+unloaders exhausts to atmosphere through the unloader, permitting the inlet valves to operate and the compressor to discharge air. Pressure in the receiver now builds up until the
 pressure switch cuts out again, thus completing the cycle. By hooking the solenoid in
 with the last step in the controller, the compressor starts up unloaded, and remains unloaded
 until the motor has attained full speed.
 
-Air Compressors 5,625
-
 (Three Stage Air Compressors.—These are used for extra
-gh pressure air. Taking the Ingersoll-Rand three stage com-
-fessor as an example, the low pressure air cylinder of three
+gh pressure air. Taking the Ingersoll-Rand three stage comfessor as an example, the low pressure air cylinder of three
 'tage compressors is double acting, while the intermediate and
-
-URAToU
-
-me.
-
-ar es
-
-' «
--—
 
 POUNDS OF MOISTURE PER 1000 CU.FT OF SAI
 
@@ -28165,18 +20409,13 @@ rae Se
 PRESSURE -LBS, PER SQ.IN. GAUGE
 
 Fic. 8,967.—Curves showing moisture remaining in saturated air or gas when compressed to
-any pressure and cooled to temperature shown. Example: Saturated air at 80° at com-
-pressor intake (0 1b.) contains 1.57 lbs. of moisture per 1,000 cu. ft. Compressed to 100 Ibs.
+any pressure and cooled to temperature shown. Example: Saturated air at 80° at compressor intake (0 1b.) contains 1.57 lbs. of moisture per 1,000 cu. ft. Compressed to 100 Ibs.
 and cooled to 80° with 65 ° water the air contains only .20 1b. per 1,000 cu. ft. or 13% of the
-moisture originally taken into the compressor. The rest has been condensed in the inter-
-cooler (if used) and the after cooler. |
+moisture originally taken into the compressor. The rest has been condensed in the intercooler (if used) and the after cooler.
 
-high pressure air cylinders are single acting. The low pres-
-sure cylinder is supported by a foot piece. Inlet valves are
+high pressure air cylinders are single acting. The low pressure cylinder is supported by a foot piece. Inlet valves are
 of the direct lift, poppet type, and discharge valves are of the
 cushioned direct lift poppet type.
-
-5,626 Air Compressors
 
 All three air cylinders, as well as the steam cylinder of: steam driven
 units, are oiled by means of a force feed lubricator having separate feeds to
@@ -28186,10 +20425,7 @@ The standard construction on three stage compressors, both belt and
 steam driven, also includes a cast iron box type sub-base, which extends
 under the entire machine.
 
-An inter-cooler is located above and between the low pressure and inter-
-mediate air cylinders, while a second inter-cooler of coil construction is
-
-}
+An inter-cooler is located above and between the low pressure and intermediate air cylinders, while a second inter-cooler of coil construction is
 
 Fic. 8,968.—Sullivan unloading device with pilot valve on air intake conduit.
 
@@ -28211,11 +20447,8 @@ f making a portion of that displacement non-effective in the
 
 The following methods should be noted:
 
-First method.—This is really one of unloading, rather than of regu-
-lating. A pressure controlled mechanism is arranged so that when pressure
+First method.—This is really one of unloading, rather than of regulating. A pressure controlled mechanism is arranged so that when pressure
 exceeds normal, a communication 1s opened between the two sides of the com-
-
-4 IE Dh in er ap
 
 Fic. 8,970.—Sullivan straight line center crank, single stage belt driven compressor.
 
@@ -28233,15 +20466,9 @@ so that when the discharge valves suddenly close, the piston at orice
 encounters a full cylinder of air at maximum pressure. These facts limit
 regulators of this class to machines of comparatively small capacity.
 
-5,628 Air Compressors
-
 P CARDS . H.P CARDS
 
-eg Sw
-
 Full Load=10@% Capacity; '"iiiaiisG@dis. ° 8 Au Indicated Hp.
-
-(2S -
 
 Three-Quarter Load—75% Capacity; 76 to 77% 376to77%IndatedHp.  SOtStSC~S~S Hp.
 
@@ -28264,29 +20491,23 @@ heavy fly wheels required by other types of part load regulation where the crank
 not kept uniform. Each cylinder is equipped with four clearance pockets, two at each end.
 With a two stage machine the volume of the clearance pockets in the high pressure cylinder
 bears the same relation to the volume of the low pressure clearance pockets as the cylinder
-ratio. On the single stage machine with two cylinders, the clearance pockets in both cylin-
-ders have the same volume. Each of these pockets is equipped with a balanced clearance
+ratio. On the single stage machine with two cylinders, the clearance pockets in both cylinders have the same volume. Each of these pockets is equipped with a balanced clearance
 valve. The regulating device which is automatically controlled from receiver pressure is built
 with four pilot valves, which operate in succession to control the opening and closing of the
 clearance pocket valves in the proper sequence. If the compressor be running at full load
 and rated discharge pressure and the demand for air decreases, the receiver pressure will
 
-»
-cet ben pn ai ily! i an etl Se calor =» hs lamiaiatieleabadiatiin 0 of wollen
-
-Air Compressors 5,629
-
 Second method.—By means of a pressure operated device, the partial or
-\ total closing of the compressor intake under reduced load is accomplished. To
-; avoid the dangers attendant upon such an operation acting suddenly,
-| these devices are provided with some damping mechanism so that they are
-» compelled to operate slowly, making the release or resumption of the load
+total closing of the compressor intake under reduced load is accomplished. To
+avoid the dangers attendant upon such an operation acting suddenly,
+these devices are provided with some damping mechanism so that they are
+compelled to operate slowly, making the release or resumption of the load
 y gradual.
 
 Third method.—This is very similar to the first, except that here the
-; tnlet valves, instead of the discharge valves, are held open when the machine is
+tnlet valves, instead of the discharge valves, are held open when the machine is
 unloaded, the piston thus simply drawing in and forcing out air at atmos-
-| pheric pressure. It is open to the same criticism (though in somewhat less
+pheric pressure. It is open to the same criticism (though in somewhat less
 degree) as the first method, namely, undue shock and strain on release and
 resumption of load.
 
@@ -28296,7 +20517,7 @@ check valve to limit the escape of air from the receiver or air line. Excessive
 pressure blows the discharge to atmosphere, instead of into the line. This
 arrangement is also used on two stage machines by placing it on the low
 pressure discharge to the inter-cooler. Then, when thé governor valve is
-/ opened by excess pressure, the low pressure cylinder discharges to atmos-
+opened by excess pressure, the low pressure cylinder discharges to atmos-
 '... phere, and the high pressure cylinder acts simply as a low pressure cylinder
 
 with intake at atmospheric pressure.
@@ -28312,47 +20533,34 @@ the back stroke. The capacity of the cylinder is reduced without any
 appreciable waste of power; for the energy used in compressing the clearance
 air 1s given back by its expansion.
 
-aon «
-s _
-
-" —_— — ee
-e
-
 ~ NOTE.—Continued.
 
 tend to rise until, at a predetermined point the clearance regulator functions to open the first
-'set of clearance pockets; that is, one clearance pocket in each cylinder. In this manner ap-
-proximately 25% of the air being compressed will pass into the clearance pockets, cutting
+'set of clearance pockets; that is, one clearance pocket in each cylinder. In this manner approximately 25% of the air being compressed will pass into the clearance pockets, cutting
 the capacity of the machine to 75% of its full capacity rating. On the return stroke, the
 air thus trapped in the clearance pockets expands again, giving up its power to the pistons.
-Similarly, if the demand for air continues to decrease, the second set of pockets open, cut-
-ting the capacity of the compressor to 50%, etc., until, with-all the pockets open, the ma-
-chine is completely unloaded and no air is delivered to the receiver.
+Similarly, if the demand for air continues to decrease, the second set of pockets open, cutting the capacity of the compressor to 50%, etc., until, with-all the pockets open, the machine is completely unloaded and no air is delivered to the receiver.
 
 NOTE.—Three things are to be avoided in the successful unloader or regulator for
 power driven macliines; first, a sudden release or resumption of load, throwing heavy strains
-on the machine; second, undue rarefication of the intake air, resulting in a wide range of cylin-
-der pressures and temperatures; third, the blowing off of compressed air to the atmosphere
+on the machine; second, undue rarefication of the intake air, resulting in a wide range of cylinder pressures and temperatures; third, the blowing off of compressed air to the atmosphere
 with a waste of power.
 
-5,630 'Air Compressors
-
 . State Boyle's and Charles' Law. ,
-_ What is the difference between absolute and gauge
+What is the difference between absolute and gauge
 
 pressure? | |
 
-. What is free air? |
-. What happens when air is compressed? |
+. What is free air?
+. What happens when air is compressed?
 . Describe two methods of removing the heat of com-
 
 pression.
 
-|
-. What is the object of two stage compression? |
-. Describe the construction of compressor valves. |
-_ What are the advantages due to compounding? - |
-. What is an inter-cooler? |
+. What is the object of two stage compression?
+. Describe the construction of compressor valves.
+What are the advantages due to compounding? -
+. What is an inter-cooler?
 . What is the difference between an inter-cooler and ail
 
 after-cooler?
@@ -28382,18 +20590,13 @@ regulation.
 . Sketch indicator cards, illustrating clearance control.
 . Name three things to be avoided with unloaders.
 
-X-Rays 5,631
-
 ## CHAPTER 232
 
 X-Rays
 
-'These rays, discovered by Roentgen were called X-rays be-
-euse of their unknown real nature. They are useful in locat-
+'These rays, discovered by Roentgen were called X-rays beeuse of their unknown real nature. They are useful in locat-
 'x foreign objects in the human body, dislocations, fractures,
->. The rays are also useful in dentistry, and the metal in-
-istry. In boiler construction, welded seams which are re-
-racing riveted seams, are tested for flaws with X-rays.
+>. The rays are also useful in dentistry, and the metal inistry. In boiler construction, welded seams which are reracing riveted seams, are tested for flaws with X-rays.
 
 'Production of X-Rays.—The apparatus necessary for the
 "oduction of X-rays consists of:
@@ -28404,7 +20607,7 @@ racing riveted seams, are tested for flaws with X-rays.
 
 i4. Control devices.
 
-' X-Ray Tubes.—An X-ray tube consists of a thin walled
+X-Ray Tubes.—An X-ray tube consists of a thin walled
 ass tube from which the air has been exhausted, and into
 hich two electrodes or terminals have been sealed.
 
@@ -28414,19 +20617,15 @@ hich two electrodes or terminals have been sealed.
 een connected, minute electric particles are seen to fly off
 t right angles to the plane of the surface; these are cathode
 
-5,632 X-Rays |
-
-rays or electrons, and the electrode is called the cathode. If |
-the cathode surface be shaped like a concave mirror, these |
-particles will be focused at the center of the curvature. These |
+rays or electrons, and the electrode is called the cathode. If
+the cathode surface be shaped like a concave mirror, these
+particles will be focused at the center of the curvature. These
 conditions are shown in figs. 8,981 and 8,982.
 
-Fig. 8,982 shows cathode rays coming from a circular cathode and con-
-verging to a point. When the cathode rays strike the other or positive
+Fig. 8,982 shows cathode rays coming from a circular cathode and converging to a point. When the cathode rays strike the other or positive
 electrode of the X-ray tube, which electrode is called the target, a ray 1s
 emitted from the spot struck, and if a sufficient number strike, a luminous
-beam appears; this has the penetrating power and these rays are the un-
-known or X-rays.
+beam appears; this has the penetrating power and these rays are the unknown or X-rays.
 
 Fics. 8,981 and 8,982.—Flat and circular cathode or negative terminal showing direction of
 the cathode rays.
@@ -28434,15 +20633,12 @@ the cathode rays.
 In striking, it is as though a piece of metal were struck by a hammer
 rapidly until it became white hot and emitted light, as just described.
 
-The quality and intensity of X-rays depends upon the volt-
-age and current applied.
+The quality and intensity of X-rays depends upon the voltage and current applied.
 
 The voltage is measured by a spark gap and the current by
 a milli-ammeter as shown in fig. 8,984.
 
 There are numerous types of X-ray tubes designed to meet the
-
-X-Rays 5,633
 
 various conditions and requirements. These types are called:
 
@@ -28474,8 +20670,6 @@ and drives the electrons to the target.
 
 The cathode consists of a small spiral of tungsten wire.
 
-5,634 X-Rays
-
 This 1s heated to white heat by the external source, 10 to 12 volts
 and liberates the electrons. The high voltage then applied in the ordinary
 way, drives them to the target and produces the X-rays. It is pogsibk
@@ -28486,25 +20680,14 @@ The various types of tubes just listed are described in the
 accompanying illustrations and notes.
 
 Method of Heating the Cathode Filament.—The cathode
-filament may be heated by means of a storage battery or pref. :
+filament may be heated by means of a storage battery or pref.
 erably from the a.c. supply i available) using a smal
 
 ele
 
-"4
-ei
-*
-:
-e
-
 ### CONTROL
 
 ### MILLI-AMMETER
-
-. o
-
-ae . .
-.
 
 ### HIGH VOLTAGE
 
@@ -28513,7 +20696,6 @@ ae . .
 Fic. 8,984.—X-ray circuit diagram showing primary and secondary winding of induction cc ry
 spark gap for measuring voltage and milli-ammeter. 3
 
-am oo: '
 ox = oe
 
 step down insulation transformer. The battery is universall 4
@@ -28524,7 +20706,7 @@ to be recommended for radiographic work where there —
 much line drop or fluctuation in the current.supply.
 
 mit
-This transformer should have a low tension output of 10 to 12 |
+This transformer should have a low tension output of 10 to 12
 and not over 5 amperes. It should be capable of finely graduated cont d
 
 - by means of either a resistance or variable inductance device.
@@ -28536,42 +20718,34 @@ woltage of the tube, it is important that it be thoroughly insulated from
 the high tension side, the ground and the patient.
 
 The filament should never be subjected to' more than 5 am-
-"es.
 
 The best technique demands the use of an ammeter in the filament
 <ircuit in order that settings may be properly made. If the supply voltage
-spe fluctuating, a stabilizer can be used to maintain a constant high ten-
-y3i0n' a the tube.
+spe fluctuating, a stabilizer can be used to maintain a constant high teny3i0n' a the tube.
 
-su n vers iz: tybe t Tate Tanita forall ee of ey work, radio-
 'yyaphic, fluor ¢ and therapeutic, but should be used only Jo on yaeciped current and at
 joltages not exceedi 1¢-140 F kv. maximum.
 
 1 8,986.—Coolidge radiator type ie. The. physical characteristics of the radiator tube
 e, in general, the same as those. of the universal tube. There is this important difference,
 owever, that the radiator tube may be used to rectify its own current and may therefore
-2 operated directly from the terminals of a high tension transformer without the interposi-
-on of any auxiliary rectifying device. It will operate equally well on rectified current, but
+2 operated directly from the terminals of a high tension transformer without the interposion of any auxiliary rectifying device. It will operate equally well on rectified current, but
 as the same definite limitations in both cases. Designed solely for diagnostic purposes
 'ad should never be used for therapy. On account of the small diameter of the bulb and
-»rtain characteristics increasing the danger of puncture, the radiator type tubes should not _
+»rtain characteristics increasing the danger of puncture, the radiator type tubes should not
 2 used at voltages higher than 84 kv. maximum on either rectified or non-rectified current.
 4 kv. is approximately a 5 in. gap between points.
 
 TOTE.—Wheni a tube is operated self-rectifying, that is; with one-half of the complete
-re suppressed, the used or loaded half wave has a lower peak than the unused or inverse half. :
+re suppressed, the used or loaded half wave has a lower peak than the unused or inverse half.
 '$ difference between the inverse and useful -peak voltages will vary with the different trans ©
 mers and with different loads on the same ttansformer.' While it is theoretically possible to
 culate this difference, the most practical method is to detet'mine it ¢xperimeritally. -
-
-5,636 X-Rays
 
 It is very important that the whole filament circuit from thé
 filament transformer to the tube be made with good joints an
 contacts and with large conductors, since the voltage is only
 10 to 12, and the current may be as high as 5 amperes.
-
-a
 
 Poor or variable contacts in the filament circuit may frequently be th
 cause of damaged tubes or failure to get good results. g
@@ -28582,8 +20756,7 @@ a system which would maintain the cathode of the tube af
 
 Fic. 8,987 .—Coolidge radiator dental type tube. Adapted particularly for dental work and
 is used on only those types of apparatus which are specially designed for operating this tube;
-It is intended for making radiographs of the teeth and jaw only and not for general radio-
-graphic work. This tube 1s similar to the standard radiator tube in characteristics and con:
+It is intended for making radiographs of the teeth and jaw only and not for general radiographic work. This tube 1s similar to the standard radiator tube in characteristics and con:
 struction except that the cathode is mounted in the side of the bulb at right angles to the
 anode arm. The advantages claimed for this type are: 1, the useful X-rays are emitted ir
 line with the axis of the anode arm, thereby making it easy to manipulate the tube to the
@@ -28605,8 +20778,6 @@ extending out into the oil for cooling purposes and a very small cathode and is 
 be enclosed, with the transformer, in oil in a very small container which is mounted on an
 adjustable bracket for dental work.
 
-X-Rays 5,637
-
 (oper temperature and be safe in operation both for patient
 1d the tube.
 
@@ -28623,7 +20794,7 @@ TARGET
 ### CHAMBER
 
 3 CIRCULATING PUMP f
-. AND SAFETY DEVICES / \
+. AND SAFETY DEVICES /
 
 BREATHING SPACE.
 
@@ -28631,11 +20802,9 @@ BREATHING SPACE.
 
 1 TO CITY WATER
 SUPPLY
-' TO WASTE PIPE:
+TO WASTE PIPE:
 
 ### INSULATING GROUNDED
-
-### BARRIER
 
 ### METAL TANK
 
@@ -28645,8 +20814,7 @@ SUPPLY
 
 +, 8,988.—Acme-International water-oil-water cooling system. The anode water cooling
 »ucts are shown at the bottom and the ducts connected to the city water supply, at the top.
-"he top is filled with a high grade transformer oil. Between the two water circulating sys-
-efhs is an insulating barrier which directs the flow of the oil. The anode water ducts being at
+"he top is filled with a high grade transformer oil. Between the two water circulating sysefhs is an insulating barrier which directs the flow of the oil. The anode water ducts being at
 'he bottom of the tank, they heat the oil and the oil rises along the lines indicated by the
 'rrows. This hot oil rising to the top is replaced by cool oil that flows down past the city
 lvater ducts and is cooled thereby; thus forming a circulating medium between the two
@@ -28654,62 +20822,46 @@ lvater systems. The motor is connected by an insulated shaft to a small pump in 
 ond the terminals carried through insulated bushings.
 
 5,638 X-Rays I
-;
 
 It is essential that the cooling system be such that the water passiif
 through the tube and thereby charged with high tension current be safelgy
 conducted and disposed of; this prevents the use of direct connection to:
 the city water mains as the high voltage would make it dangerous wherever:
 
-sf
-
-the water might be conducted. |
+the water might be conducted.
 A method in use provides a reservoir of chemically pure water from:
 
 which water can be drawn and passed through the tube, cool the anode and}
 
-return. This reservoir has to be properly insulated and must be safe. |
-
-ao]
+return. This reservoir has to be properly insulated and must be safe.
 
 Fic. 8,989.—Coolidge wiring diagram of radiator, dental type tube circuit. The parts are
 A, auto transformer, 100 to 120 volts; B, X-ray transformer; C, filament transformer; D,
 X-ray switch with resistance; E, filament switch; F, ground. connection; G, milli-ammeter;
-H, filament control. |
+H, filament control.
 
-Proper cooling of the reservoir keeps the water at the proper tempera-
-ture. The apparatus is contained as shown in fig. 8,988 in a small grounded |
+Proper cooling of the reservoir keeps the water at the proper temperature. The apparatus is contained as shown in fig. 8,988 in a small grounded
 metallic tank.
 
 Method of Tube Operation.—The widely different saialon
-of various operators and the marked difference in equipment |
+of various operators and the marked difference in equipment
 
-X-Rays 5,639
+nake it difficult to give, in this limited space, detailed suggesions that will be universally applicable.
 
-nake it difficult to give, in this limited space, detailed sugges-
-ions that will be universally applicable.
-
-On account of the tube characteristics, the voltage and cur-
-ent may be controlled independently of each other, making
-t possible to get practically any settings desired if the ap-
-yaratus have sufficient range and flexibility.
+On account of the tube characteristics, the voltage and curent may be controlled independently of each other, making
+t possible to get practically any settings desired if the apyaratus have sufficient range and flexibility.
 
 ia HIGH VOLTAGE CIRCUIT =
-
-tAMMETER
-
-.
 
 —* FILAMENT TRANSFORMER |.
 
 —FILAMENT CONTROL
 
 '1G. 8,990.—Coolidge wiring diagram of cathode circuit showing filament heating circuit where
-! a transformer is used, and where control is obtained by the use of a variable inductance
-'| device placed in series with the primary coils of the filament transformer.
+a transformer is used, and where control is obtained by the use of a variable inductance
+device placed in series with the primary coils of the filament transformer.
 
-In order to save time, each outfit should be calibrated, making it pos-
-sible to duplicate any given condition and thus avoid the necessity of
+In order to save time, each outfit should be calibrated, making it possible to duplicate any given condition and thus avoid the necessity of
 wasting time and material in attempting to find the settings that will give
 satisfactory results for different parts of the body and different sizes of
 the individual. |
@@ -28720,23 +20872,19 @@ the tube is determined by means of a sphere gap. These readings,
 
 5,640 A-Rays
 
-; >|
-
 together with the auto-transformer settings and such other data as may bi
 desired, should be recorded on a chart for ready reference as a guide for
 all X-ray work.
 
 To measure the voltage across the tube with any degree of
-accuracy, a reliable sphere gap must be used in making a call-
-bration or in checking up the tube voltage later.
+accuracy, a reliable sphere gap must be used in making a callbration or in checking up the tube voltage later.
 
 —MAIN SUPPLY LINE SWITCH
 
 ### FILAMENT SWITCH
 
-z=
 X-RAY SWITCHN | AUTO -TRANSFORMER +
-.
+
 CONTROL te | 7piAMENT
 HIGH TENSION
 TRANSFORMER >
@@ -28745,18 +20893,12 @@ TRANSFORMER >
 
 ### AMMETER
 
-in
-
-FECTIFYING SWITCH~ oF |
-
 ia MILLI-AMMETER
 
 \ spark GAP
 
 COOLLOGE._ X-RAY TUBE
 Fic. 8,991.—Coolidge wiring diagram of universal type tube on rectified current.
-
-X-Rays 5,641
 
 Because of its inaccuracy, the old time point spark gap should never
 be used.
@@ -28773,32 +20915,16 @@ character.
 
 ### FILAMENT SWITCH
 
-—
 X-RAY SWITCH —\\ TRANSFORMER
 : FILAMENT
 $ CONTROL
-SHANSTORMER | elistten
 
 GROUNDED"
 SECONDARY
 
-EPpy
-of. | | ' at
-
-' i '
-D eple.e
-(Pa | |
-i "|: '
-
-VW
-
-[1
-
 ### RADIATOR TYPE TUBE
 
 1G. 8,992.—Coolidge wiring diagram of radiator type tube on unrectified current.
-
-5,642 X-Rays
 
 Capacity of Tubes.—The capacity of a tube refers to
 amount of energy that a tube will safely carry and not to th¢
@@ -28806,11 +20932,9 @@ voltage alone that it will stand. Energy may be considerec¢
 as the product of the voltage across the tube (r.m.s. value}
 multiplied by the miulli-amperage. 5
 
-A
-
 Fic. 8,993.—Cathode of Coolidge universal and therapy type tubes. Zt consists of a flat of
 slightly cone shaped spiral of tungsten wire A, mounted inside but close to the end of a metal
-tube B, to which It is electrically connected. The tungsten spiral or filament is heated |
+tube B, to which It is electrically connected. The tungsten spiral or filament is heated
 an external electrical circuit and becomes the source of cathode rays or electrons. The*focuss
 ing depends largely on the shape of the spiral and its position in the metal tube.
 
@@ -28827,9 +20951,7 @@ When it is desired to determine the energy input into the tube by muk i
 tiplying the voltage by the milli-amperage the peak voltage must first
 be converted into its 7.m.s. value by dividing it by 1.41.
 
-X-Rays 5,643
-
-: The allowable energy input is determined principally by:
+The allowable energy input is determined principally by:
 "1. Target material;
 
 _2. Area of the focal spot;
@@ -28840,8 +20962,7 @@ _asolid piece of wrought tungsten C, attached to a wrought molybdenum stem D, wh
 turn attached to a split metal tube E, for support in the glass bulb. Under certain normal
 
 'Operating conditions the anode may be run white hot without damage and the heat will be
-radiated through the vacuum and glass as rapidly as it is developed, after a certain tempera-
-ture has been reached. The focal spots of some tubes will be seriously damaged if run this
+radiated through the vacuum and glass as rapidly as it is developed, after a certain temperature has been reached. The focal spots of some tubes will be seriously damaged if run this
 way; this is further explained under "'Capacity of Tubes'' on page 5,642.
 
 1G. 8,996.—Anode of Coolidge radiator type tube. Zt consists of a tungsten button, on to
@@ -28854,15 +20975,12 @@ radiator.' The important difference between the radiator type anode and the univ
 
 3. Time during which energy is applied;
 
-4. Temperature of the target at the beginning of the ex-
-oOsure;
+4. Temperature of the target at the beginning of the exoOsure;
 
 5. Speed of dissipation of heat from the focal spot and tube.
 
 The metal at the focal spot is wrought tungsten, which has
 melting point of about 3,300° C.
-
-5,644 X-Rays
 
 Energy must never be applied in quantities sufficient to
 raise the focal spot to that temperature or the tube will be
@@ -28875,15 +20993,12 @@ When the focal spot becomes brightly incandescent it is an
 indication of danger, and the current should be turned off
 immediately.
 
-Fic. 8,997 .-—Coolidge air cooled deep baal type tube. This tube is similar to the uni-
-versal tube, but is larger and is designed to operate on rectified current at a voltage not |
-exceeding 200 kv. maximum at 5 milli-amperes and 8 milli-amperes continuously under |
+Fic. 8,997 .-—Coolidge air cooled deep baal type tube. This tube is similar to the universal tube, but is larger and is designed to operate on rectified current at a voltage not
+exceeding 200 kv. maximum at 5 milli-amperes and 8 milli-amperes continuously under
 proper cooling conditions.
 
-, er |
-
 In order that users may have a better idea of the limitations of tubes
-figures in the table page 5,645 are given, and it should be understood that '
+figures in the table page 5,645 are given, and it should be understood that
 these are the extreme safe limits when starting with cold targets. When
 
 targets are hot the limits are very much reduced.
@@ -28893,13 +21008,9 @@ table, there must be a time of rest to allow the heat to be con-|
 ducted away from the target before continuing to operate the
 tube. |
 
-:
-
 For instance, when a radiator tube is hot a safe maximum limit at
-30 m.a. is 5 seconds on and 40 seconds off, unless longer periods to cool |
-off are allowed. |
-
-X-Rays 5,645
+30 m.a. is 5 seconds on and 40 seconds off, unless longer periods to cool
+off are allowed.
 
 Capacity of Tubes
 
@@ -28908,11 +21019,11 @@ Diam. K. V. Inches,
 Kind of Tube Focal M. A. Max. Point Time
 - Spot Gap
 Therapy Water Cooled.. | he 30 200° Ndmeowees | Contin's.
-_ Therapy Air Cooled..... 15447 5 200. 14". | Contin's.
+Therapy Air Cooled..... 15447 5 200. 14". | Contin's.
 Therapy Air Cooled with} | | .
 Blower... cesses ecee 1540" 8 200 14" Contin's.
 Universal:
-" 5 140 10" Contin's.
+
 Broad POCUS.i.66i85058 1940 80 100 6" 5 sec.
 Medium Focus......--| 7364" 50 100 6" | 5 sec.
 . | f 25 100 6" 10 sec..
@@ -28933,25 +21044,14 @@ which makes it unnecessary to test the tube out to determine how much
 current is being used.
 
 The 100 m.a. technique should not be attempted without proper prep-
-'* aration and a thorough understanding of the conditions, or the tube may
-be ruined.
+aration and a thorough understanding of the conditions, or the tube may
 
 Because of its greater heat capacity, it takes, with a given
 lenergy input, much longer to heat the radiator type of target
 
 X-Rays
 
-Re Oe
-
-, .
-ODOT SON SSID NII TRI
-—— . — " sine aaa : ee
-~ wee
-SABRE RRL RT PRES 2 Oe RR se = Bsns PRS
-
 Fic. 8,998.—Coolidge water cooled deep therapy type tube. Except for the anode construction and mounting,
-
-1s
 
 this tube
 
@@ -28973,20 +21073,16 @@ is permissible with copper on
 account of the great difference
 in melting points.
 
-For radiographic work the impor-
-tant fact is that between exposures
-the radiator type target cools com-
-paratively rapidly owing to the large
+For radiographic work the important fact is that between exposures
+the radiator type target cools comparatively rapidly owing to the large
 stem and radiator. This condition
 makes it possible to apply for short
 periods a greater amount of energy
 to a given focal area than with the
 universal type tube.
 
-There is, however, one very de-
-cided limitation that has not been
-sufficiently recognized by many-
-users, namely, that it is very easy to
+There is, however, one very decided limitation that has not been
+sufficiently recognized by manyusers, namely, that it is very easy to
 apply energy much more rapidly
 than the heat can be conducted
 away through the copper and the
@@ -29000,10 +21096,7 @@ Frequent exposures of but
 slightly more than 10 m.a. may
 in a short time cause a slight but
 progressive melting around the
-target, eventually greatly re-
-ducing the life of the tube.
-
-X-Rays 5,647
+target, eventually greatly reducing the life of the tube.
 
 When a radiator tube 1s operated without a mechanical recti-
 
@@ -29012,15 +21105,8 @@ ithe useful voltage, which means that the voltage representing
 ithe penetration of the X-rays cannot be measured by means
 nf a spark gap unless a kenotron be used.
 
-RP
-"
-' 7
-bile a :
-J j
-
 If high current be used on a small line or if
-much resistance be in the line circuit, the i1n-
-verse voltage will be greatly increased, thus
+much resistance be in the line circuit, the i1nverse voltage will be greatly increased, thus
 increasing the danger of puncturing the tube.
 
 Focal Spot Pictures.—In case there be
@@ -29058,10 +21144,6 @@ The size of the focal spot picture may be varied by changing the distance.
 If it is to be the natural size the distance from the film to the pinhole
 should be equal to that from the pinhole to the focal spot.
 
-5,648
-
-mgmt mt ame om? oe hae! le!
-
 roe |
 rity
 
@@ -29072,8 +21154,7 @@ Collecting shoes of opposite polarity are amply insulated with glass barriers, t
 the space occupied by the rectifier to a minimum. On the lower side of the switch two
 adjacent shoes D and E, are connected to one high tension terminal of the transformer; the
 other two adjacent shoes A and H, are connected to the other high tension terminal of the
-transformer. On the upper side of the switch, the two outside shoes C and G, are con-
-nected together and thence to one side of the tube, and the two inside shoes F and B, to the
+transformer. On the upper side of the switch, the two outside shoes C and G, are connected together and thence to one side of the tube, and the two inside shoes F and B, to the
 other side of the tube. At the instant depicted when the left hand terminal of the transformer
 is positive and the right hand terminal is negative the cross arms will be in such a position
 that connection is made between shoes C to D, and B to A, and the connection between
@@ -29081,8 +21162,7 @@ shoes F toD, and GtoH, is broken. Atthisinstant the current may be said to flow 
 left hand or positive terminal through shoes D and C, to the anode of the tube, thence through
 the tube, and back through the shoes B and A, to the right hand high tension terminal.
 One-half cycle later the polarity of the high tension transformer will have reversed so that
-the left hand side is negative and the right hand side is positive. During this time the rec-
-tifying switch will have turned one-quarter of a revolution so that the connection between
+the left hand side is negative and the right hand side is positive. During this time the rectifying switch will have turned one-quarter of a revolution so that the connection between
 shoes C and D, and between shoes B and A, is broken, and a connection established between
 shoes F and E, and shoes G and H. Now the current flows from the right hand or positive
 terminal of the transformer through H to G, and thence to the anode of the tube, then
@@ -29090,17 +21170,12 @@ through the tube and back to the left hand or negative terminal of the transform
 F and E. Thus, regardless of the polarity of the high tension transformer the current will
 always flow through the tube in the same direction.
 
-X-Rays 5,649
-
-Tube Troubles and Their Detection.—The largest propor-
-ition of tube troubles is due to abuse or carelessness in operating
+Tube Troubles and Their Detection.—The largest proporition of tube troubles is due to abuse or carelessness in operating
 itubes.
 
 Among the troubles may be listed the following:
 
-Puncturing.—This is due to excessively high voltage or surges, accu-
-mulation of dust, accumulation of moisture, reverse polarity, poor insula-
-tion, poor filament circuit, poor line on synchronous motor causing reverse
+Puncturing.—This is due to excessively high voltage or surges, accumulation of dust, accumulation of moisture, reverse polarity, poor insulation, poor filament circuit, poor line on synchronous motor causing reverse
 polarity, and overloading.
 
 Overloading.—This results in damaged target, damaged bulb, gassy
@@ -29113,8 +21188,7 @@ Points Relating to Tubes.—1. When excessively high energy
 'Inputs are employed or the current is on too long continuously,
 ithe tungsten at the focal spot melts, volatilizes and is deposited
 'in a thin film over the active hemisphere of the tube, giving
-a mirror-like appearance. This film of tungsten exerts no ap-
-ipreciable filtering effect upon the X-rays, but it does disturb
+a mirror-like appearance. This film of tungsten exerts no apipreciable filtering effect upon the X-rays, but it does disturb
 lthe electrical conditions within the tube and makes the tube
 Imuch more subject to puncture and otherwise greatly reduces
 the life of the tube.
@@ -29131,11 +21205,9 @@ colors brown when used for any length of time.
 the target usually has a frosted area in the center of the face, due to the tube
 being operated up to a point that is just within the maximum limits of the
 
-_ tube during the exhaustion and testing processes. The frosted area is due
+tube during the exhaustion and testing processes. The frosted area is due
 to a crystallization of the tungsten at the high temperature and the size of
 it is not always an indication of the true size of the focal spot.
-
-5,650 X-Rays
 
 4, When a tube has become gassy it will not work steadily, and may show
 fluorescence of the glass and flashes of color in the bulb similar to small
@@ -29148,78 +21220,33 @@ the anode arm only, does not indicate anything wrong.
 fluorescence of the glass which appears first will give way to a pink glow
 within the tube which changes in extent and intensity as air enters the bulb,
 
-MILLIAMPERAGE _
-
-5 10 20 30 40 50 75
 KILOVOLTS [PEAK | VALUES! ALTITUDE 600 FT.
 
-5S 53: K Ae tah
 pee pay & : cy +5
-oe Ot ; ; Se
-
-L&
-
-Be
-
-OC
 
 mice
 
-© yy one
-.*
-tet Bs
-
-- 4"
 Boe
-;
-x
-ry :
-w. .
-se
-' ny
+
 eee
-ae
-+ MY
-i,
-oo
-va
-% GES
+
 ane
-es
-> a
-be
-Lae 4
-g, (ou
-eS
-& (og
-oY
+
 Fas
-. %
-ae
-x a
-.
-a Na
-ee
+
 woos
-eX
-PRS
-ya
-© OR
+
 anes
 are
-}
-oR N
+
 Lae
 me =
-N
 
-Ort peiiabeninaanans i ieditipeninmensenntinenpnn 2m enema Linshaaibiinieniibinesina bbs
 2 SRT EL PS FT ER SETI ATER EERE EES RES OY
 
 Fic. 9,001 .—General Electric Victor milli-ammeter chart as on 220 volt a.c. outfits. It makes
 possible a complete calibration of the machine over its entire range, so that a reading of the
-pre-reading volt meter indicates the number of kilovolts obtained under any given auto-
-transformer setting and milli-amperage, replacing spark gap in diagnostic work.
+pre-reading volt meter indicates the number of kilovolts obtained under any given autotransformer setting and milli-amperage, replacing spark gap in diagnostic work.
 
 If the filament be left on while much air enters the bulb, it will burn out
 quickly because hot tungsten oxidizes very rapidly in air, forming a white
@@ -29228,10 +21255,7 @@ bright hot when a puncture or crack occur, the whole inner surface of the
 bulb may be covered with white or brightly colored oxides of tungsten.
 
 Deep Therapy Tubes.—In operating therapy tubes, both air
-and water cooled, much more care is necessary than with diag-
-nostic tubes on account of the fact that they are run
-
-X-Rays 7 9,651
+and water cooled, much more care is necessary than with diagnostic tubes on account of the fact that they are run
 
 continuously for long periods of time at much higher voltages,
 and in the case of the air cooled tube, at almost the maximum
@@ -29249,7 +21273,7 @@ up gradually to avoid undue strains in the glass.
 In starting a cold air cooled tube it should be run at about 150 to 17 5
 k.v. and 5 m.a. for a few minutes before increasing the voltage to 200 k.v.
 
-_ If a tube be forced too much or overheated there is danger
+If a tube be forced too much or overheated there is danger
 of gas being liberated from the electrodes or glass, which will
 seriously interfere with proper operation of the tube.
 
@@ -29271,28 +21295,23 @@ Minute quantities of gas in a tube, insufficient to cause
 fluorescence of the glass, may change the sound and appearance
 of the sparking on the rectifying switch.
 
-5,652 X-Rays
-
 They may also cause the milli-ammeter to operate erratically, and the
 circuit breaker to open occasionally.
 
 There are other causes for unsteady operation of a tube
-which should always be carefully investigated before condemn-
-ing the tube.
+which should always be carefully investigated before condemning the tube.
 
 Some of these causes are:
 1. Bad line conditions;
 2. Fluctuating voltage or surges;
 
-3. Insufficient spacing or insulation in the high tension sys-
-tem, allowing leakage and setting up an unbalanced condition.
+3. Insufficient spacing or insulation in the high tension system, allowing leakage and setting up an unbalanced condition.
 
 The anode of the water cooled tube is intended to be operated cold and
 there should never be any visible heat at the focal spot. Do not confuse
 the light from the filament as heat on the anode. To properly cool the
 anode of the water cooled tube requires a continuous flow of 8 pints of
-water per minute. There is great danger of ruining the tube if it be oper-
-ated without sufficient water.
+water per minute. There is great danger of ruining the tube if it be operated without sufficient water.
 
 Protection Against X-Ray Burns.—Lead being extremely
 Opaque it is used as a shield for the X-rays and diagnostic
@@ -29303,14 +21322,10 @@ the form of a bowl with two slots on which the tube rests.
 Another form is a lead glass shield which is clamped over
 the tube.
 
-i
-
 Fluorescing Screens.—Examination of objects, such as the
 bones of the hand, foreign bodies in the system, etc., are made
 with the aid of a fluorescing screen or fluoroscope, as shown in
 fig. 9,002. —
-
-X-Rays 5,653
 
 If a hand, for instance, be placed between the screen and the tube, the
 X-rays will pass through the fleshy parts and impinging on the screen
@@ -29328,35 +21343,11 @@ of the handle, and the aperture B, pressed tightly around the eyes so as to excl
 light, and the screen placed near an active X-ray tube, the former will fluoresce with a
 greenish yellow light. Ss
 
-te a . ra 'y
-
-ie TERE SES ~ i
-
 sani
 
-ae ee yes
-
-oe Beate
-
-ace Eppes te
-
-peahaeie Sree mee OTS ly ti STS ay Vis aan Sete is Cr fe ; Sa, W ya ar Aero
-eg ye eo a
-
-Soe ae . pee "¢ on ome a
-SR be ee iF payee bo
-Fo, woh,
-
 0% "he =e,
-f ' image Pry - +. ae ee .* ae wees . ae KS : £G: + ant NIA y
-@ Whe PRE © ASE a wy Me's | COV R Wee hs Ck Some Ree meee 'b: NRE TZ
-~"RY
-
-ee
 
 Fic. 9,003.—X-ray fluorescent shadow of the bones of the hand and wrist.
-
-5,654 X-Rays
 
 The intensity of the illumination produced by the fluorescence on the
 
@@ -29367,8 +21358,7 @@ therefore, in order to obtain a maximum illumination and consequently
 a sharply defined shadow, the screen should be held close as possible to
 the source of X-ray, and the hand close to the screen.
 
-Radiographs.—A radiograph 1s @ picture taken upon a photo-
-graphic plate by means of X-rays.
+Radiographs.—A radiograph 1s @ picture taken upon a photographic plate by means of X-rays.
 
 In taking a radiograph replace the fluorescent screen of the
 fluoroscope by a suitable photographic plate, give it the proper
@@ -29391,17 +21381,13 @@ employed. ,
 11. What precaution is taken against X-ray burns?
 12. Describe a fluorescing screen.
 
-Electro-Therapeutics . 9,655
-
 ## CHAPTER 233
 
 Electro-Therapeutics
 
 By definition, electro-therapeutics is the treatment of disease
-by electricity. Electricity is of special importance in the treat-
-ment of maladies. The high frequency currents in various
-tmodulations are used for heating, cutting, preparation of sur-
-faces, examinations, etc.
+by electricity. Electricity is of special importance in the treatment of maladies. The high frequency currents in various
+tmodulations are used for heating, cutting, preparation of surfaces, examinations, etc.
 
 Kinds of Currents Employed.—The various kinds of electric
 current for therapeutic uses are:
@@ -29423,8 +21409,6 @@ engineers in experimental pursuit of something "'new'' but represents the
 embodiment of accumulated thought, medical, electrical and mechanical,
 over a period of years.
 
-5,656 Electro-T herapeutics
-
 Currents for Low Voltage Technique.— To illustrate the many
 kinds of current used, the following resumé of the modalittes.
 obtained from the McIntosh polysine generator is given. The
@@ -29436,10 +21420,8 @@ apparatus delivers three distinct types of modalities:
 
 The galvanic group, comprising Nos. 1, 2, 3, 4, 5, 6 and 7,
 constituting currents either with a definite polarity, such as
-Nos. 1 to 5; or currents which are derived from galvanic cur-
-rents, such as Nos. 6 and 7, and which possess certain ionizing
-properties and produce a negative wave of considerable dura-
-tion.
+Nos. 1 to 5; or currents which are derived from galvanic currents, such as Nos. 6 and 7, and which possess certain ionizing
+properties and produce a negative wave of considerable duration.
 
 All of these currents produce a pronounced skin effect.
 
@@ -29463,8 +21445,6 @@ from that obtained with any of the older type modalities.
 The oscillatory current as delivered by this polysine is a current in which
 the polarity reverses suddenly and the positive and negative impulses have
 
-Electro-T herapeutics 5,657
-
 a duration of only 1-1,360th of a second each, with an equal interval of rest
 between each impulse. This short duration at which the current is of a
 negative value, eliminates all irritation which is caused by this pole.
@@ -29472,37 +21452,26 @@ negative value, eliminates all irritation which is caused by this pole.
 The sudden rise and fall in voltage and the rapid reversal of the current
 produces the most powerful and deeply penetrating effects.
 
-In extensive clinical applications, the oscillatory wave cur-
-ents have proven the most desirable by the patients, and to be
+In extensive clinical applications, the oscillatory wave curents have proven the most desirable by the patients, and to be
 he most. efficient 1n results.
-
-q
 
 1G. 9,004.—Galvanic current. It is obtained from a copper-oxide rectifier which changes the
 a.c:to d.c. The galvanic current then passes to a choke coil and condenser, known as the
 filter circuit, where all ripples or pulsations are removed or filtered out.
 
-LAL
-
 1c. 9,005.—Interrupted galvanic. The motor and transformer switches must both be snapped
-on to obtain this modality, as well as the remainder, except Nos. 5 and 16. A special com-
-mutator affords a make and break in the current flow, which by means of a regulator may be
+on to obtain this modality, as well as the remainder, except Nos. 5 and 16. A special commutator affords a make and break in the current flow, which by means of a regulator may be
 timed for the proper duration.
 
 The oscillatory wave current can be used whenever the rapid sinusoidal
 wave currents are indicated.
 
-In the sections following are given the various mod-
-ities as produced with the McIntosh polysine gener-
-itor, their uses, etc.
+In the sections following are given the various modities as produced with the McIntosh polysine generitor, their uses, etc.
 
 Galvanic Current.—This is a smooth and even current of the form
 shown in fig. 9,004. On account of its polar effects, the galvanic current is
 
-5,658 Electro-T herapeutics
-
-indicated in ionization, electrolysis, etc. The positive pole is acid, vaso-
-constrictor, sedative and hardens tissue. The negative pole is alkaline,
+indicated in ionization, electrolysis, etc. The positive pole is acid, vasoconstrictor, sedative and hardens tissue. The negative pole is alkaline,
 vasodilator, irritating and softens tissue. In ionization, a simple rule to
 use is to consider what part of the solution it is desired to drive into the
 tissues, and put it on the pole corresponding to its own polarity.
@@ -29510,8 +21479,6 @@ tissues, and put it on the pole corresponding to its own polarity.
 Some authorities consider the galvanic to be the most useful current in
 physical therapy. It is also of great benefit in testing for nerve and muscle
 degeneration and in the successful treatment of same.
-
-a
 
 Fic. 9,006.—Galvanic wave. Five to forty-five pulsations per minute are available. The wave
 frequency regulator and the pilot light indicate the exact number of pulsations.
@@ -29538,28 +21505,19 @@ Galvanic Wave Sustained Peak.—Its greatest value lies in intestinal
 atony with muscular degeneration. A very good wave current with full
 polarity effect. See fig. 9,007.
 
-_Electro-Therapeutics 5,659
-
 Combined Galvanic and Sinusoidal.—Many gynecologists employ
 this particular modality to great advantage in female G.U. pathology, for
 short seances, to avoid fatigue. Many uses will be found by the practicing
 physician, in view of its massage and chemical action. See fig. 9,008.
 
 Super-Imposed Wave.—This current affords deep abdominal and
-__ pelvic contractions and hence is indicated in visceral or pelvic ptosis.
+pelvic contractions and hence is indicated in visceral or pelvic ptosis.
 Excellent results may be obtained by applying the current at the 7th and
 
 "1G. 9,008.—Combined galvanic and sinusoidal. This combines two valuable currents and
 gives the polarity effect of galvanism with the tonic effect of the rapid sinusoidal current.
 
-AN, AlN An
-V\/ \/V
-
-mi
-
-Fic. 9,009.—Super-imposed wave. 10 to 90 pulsations per minute. It consists of a com-
-pound wave formed by super-imposing a rapid sinusoidal on the galvanic current and retain-
-ing the valuable therapeutic properties of both.
+Fic. 9,009.—Super-imposed wave. 10 to 90 pulsations per minute. It consists of a compound wave formed by super-imposing a rapid sinusoidal on the galvanic current and retaining the valuable therapeutic properties of both.
 
 8th dorsal vertebrae. Many clinicians precede this current with diathermy
 to aid in breaking up and absorbing deep adhesions. This modality is also
@@ -29575,8 +21533,6 @@ a prostate with poor secretion."
 This. modality was formerly widely used for the treatment of many
 gastro-intestinal conditions, but owing to the duration of the negative
 
-5,660 Electro-T herapeutics
-
 impulse, it produces considerable skin sensation, consequently it is being
 rapidly displaced by No. 8, pulsating galvanic sinusoidal, in which sensory
 effect to the skin is practically eliminated. C.F. Voyles in "Archives of
@@ -29589,11 +21545,6 @@ ileo-cecal valve. See fig. 9,010.
 Fic. 9,010.—Galvanic sinusoidal. 10 to 90 pulsations per minute. This was formerly called
 the slow sinusoidal. It is an alternating galvanic current with slight polar effects and acts
 favorably on unstriated muscular tissues.
-
-¢
-
-"a N, _ A
-TTA
 
 Fic. 9,011.—Pulsating galvanic sinusoidal. In this modality only one-half of each oscillation
 produced by the penetrator is employed, consequently the frequency of the voltage change is
@@ -29615,8 +21566,6 @@ normal rate of contraction or muscular action of part of body being treated.
 The pulsating galvanic sinusoidal is especially indicated in intestinal
 stasis, constipation and splanchnoptosis, as well as other conditions where
 
-Electro-T herapeutics 5,661
-
 "leep massage is indicated. This current is rapidly replacing the galvanic
 "sinusoidal and super-imposed wave currents. See fig. 9,011.
 
@@ -29627,9 +21576,6 @@ with the most energetic effects and a minimum or no irritation. This
 "modality 1s now being employed for practically every condition for which
 No. 14 rapid sinusoidal wave has heretofore been used. See fig. 9,012.
 
-Alih IN lI al | Halll tH! ly
-"Oi il mn mii MTNA
-
 ', 9,012.—Oscillatory wave. In this modality the polarity reverses 680 times per second.
 'very reversal is accompanied by a rest period of the same duration as that of current
 cosure. In other words, the current is in a positive direction for 1-1,360th of a second;
@@ -29637,8 +21583,6 @@ cosure. In other words, the current is in a positive direction for 1-1,360th of 
 gain for 1-1,360th of a second, when the same cycle of events begins again. This short
 'aration, during which time the current is in a negative direction, reduces the usual irritation
 shich is caused by this pole.
-
-NG in i ah at
 
 . 9,013.—Oscillatory wave sustained peak. The curve shows the general form of the wave.
 
@@ -29653,8 +21597,6 @@ sudden shock and skin irritation; therefore it is frequently of very definite
 use for starting a new case when pronounced stimulation and severe muscle
 contractions are not desired. See fig. 9,014.
 
-5,662 Electro-T herapeutics
-
 Waveless Oscillatory Current.—Plank recommends that this modalit:
 be used at the end of each treatment for nerve stimulation, as it is waveles
 and gives a mild cell massage along the course of the nerve, thus increasin;
@@ -29662,8 +21604,6 @@ its blood supply and nutrition. See fig. 9,015.
 
 Interrupted Rapid Sinusoidal.—Neiswanger recommends it in nerv:
 degeneration. Waggoner states, "If we split the rapid sinusoidal curren
-
-"al ii on f — ~ Me
 
 Fic. 9,014.—Interrupted oscillatory wave. This form of wave has the same frequency and
 
@@ -29676,7 +21616,6 @@ Fic. 9,015.—Waveless oscillatory current. This modality is somewhat comparable
 (rapid sinusoidal), excepting that it does not follow the sine wave form and its frequency 1g
 higher, while the duration of each impulse is the same as with No. 9 (oscillatory wave).
 
-:
 into segments with an interrupter, we have one of the finest currents for'
 regeneration of nerve function.'' Eberhart writes: "It is a true tonic to the!
 nerves and it is the best form of sinusoidal current we have for regenerati
@@ -29690,31 +21629,20 @@ is usually low but is higher with the patient lying down. On nising the!
 blood pressure falls and the pulse rate increases. Vertigo and air hunger'
 are some of its symptoms. 4
 
-Electro-T herapeutics 5,663
-
 Physical therapy is indicated and especially the interrupted rapid sinu-
-» goldal current. The abdominal muscles are contracted at the rate of 16 to
+goldal current. The abdominal muscles are contracted at the rate of 16 to
 17 times per minute.'' See fig. 9,016.
 
-—-
-
 Rapid Sinusoidal Wave.—It has been much used in breaking up
-: adhesions and in the regeneration of impaired nerve function. Eberhart
+adhesions and in the regeneration of impaired nerve function. Eberhart
 likens the "'surge"' to a string that cannot be broken by a steady pull, but
 '< 1s easily broken by a sudden jerk.
 
-ped ; '
-it
-
 tia Cam
-
-4 S
 
 .G. 9,016.—Interrupted rapid sinusoidal. 10 to 90 interruptions per minute. This current
 igives the same number of alternations as No. 16, but mechanical means are provided to
 [interrupt the flow at definite time intervals. The period of rest prevents undue fatigue.
-
-t)
 
 AG. 9,017.—Rapid sinusoidal wave. This was formerly called the surging sinusoidal current.
 t It is produced by sending the rapid sinusoidal through the rotor, which forms and controls
@@ -29734,8 +21662,6 @@ In cases of intestinal stasis and where prolapsed colon exists and a more
 powerful stimulant is required to stir up the sluggish musculature into
 action, this current can be relied upon. However, much better results may
 
-5,664 Electro-T herapeutics
-
 be obtained by employing No. 10 (oscillatory wave sustained peak), which:
 embodies all of the good principles of this form of wave, with many addi-.
 tional refinements. See fig. 9,018.
@@ -29751,8 +21677,6 @@ prefers it in the treatment of peripheral nerve atonicity.
 Fic. 9,018.—Rapid sinusoidal wave sustained peak. This current is the same as No. 14).
 (rapid sinusoidal wave), except the sustained peak effect.
 
-"PULA AAA PU
-
 Fic. 9,019.—Rapid sinusoidal. 3,600 cycles per minute. This current is obtained from the
 ungrounded secondary of the transformer and hence is earth free.
 
@@ -29764,12 +21688,9 @@ Caution. It is of the utmost importance when using Kantbern pads that
 these electrodes be thoroughly saturated with a sodium chloride or sodium
 bicarbonate solution before starting treatment.
 
-Reasons for Oscillatory Wave Currents.—The effect pro-
-duced by an electric current in stimulating the nerve of a living
+Reasons for Oscillatory Wave Currents.—The effect produced by an electric current in stimulating the nerve of a living
 animal or producing an involuntary contraction of a muscle,
 was carefully studied by Professor Emil DuBois Reymond of
-
-Electro-T herapeutics 5,665
 
 erlin, as early as 1844. Professor DuBois Reymond found
 jiat these effects depended upon the following:
@@ -29778,8 +21699,7 @@ jiat these effects depended upon the following:
 {ae effects occur only when the current is turned on and when
 is turned off, or when the electrodes first touch the nerve and
 when they are separated
-from it. Subsequent in-
-vestigations further
+from it. Subsequent investigations further
 proved that in case of
 the human nerves only
 moderate currents would
@@ -29788,17 +21708,8 @@ strong currents pro-
 
 duced Tetanus.
 
-:
-
-My
-
-Ne ee
-
-OA OA RAI Aly wcll Me pt
-
 2. The effects were
-dependent upon the ra-
-pidity with which the
+dependent upon the rapidity with which the
 current used reached its.
 maximum value; that is,
 the rapidity of change
@@ -29807,19 +21718,14 @@ of current density.
 A RROICLR NDE DRE AD: TOS Th
 
 reese EP | 3. The effects were
-ae = 9) | dependent upon thesud-
-i eA | den reversal of the po-
-larity of the current
+ae = 9) | dependent upon thesudi eA | den reversal of the polarity of the current
 used and that the more
 sudden the reversal took
 place, themoreenergetic
 would be the effect.
 
 Fic. 9,020.—McIntosh new polysine generator. All polysine currents may be regulated to
-the finest gradations, for the physical and chemical properties of galvanism, the neuro-
-muscular stimulating properties of wave currents or any modification of these.
-
-5,666 Electro-T herapeutics
+the finest gradations, for the physical and chemical properties of galvanism, the neuromuscular stimulating properties of wave currents or any modification of these.
 
 Simple closures and completions of the circuit produced only a
 minimum effect.
@@ -29827,31 +21733,24 @@ minimum effect.
 The Term Pole in Medicine.—The term positive pole is
 applied to the circuit which leads from the current course to the
 receiver and the term negative pole is applied to the circuit
-which leads from the receiver to the current source. In medi-
-cine, the electrode where the current enters the patient is the.
+which leads from the receiver to the current source. In medicine, the electrode where the current enters the patient is the.
 positive pole and where the current leaves the patient is the
 negative pole.
 
-Sat? -
-
-Fic. 9,021.—MclIntosh high frequency handle made specially for use with the gallois, mer-
-cury vapor, quartz high frequency electrodes on the Tesla current, can also be utilized with
+Fic. 9,021.—MclIntosh high frequency handle made specially for use with the gallois, mercury vapor, quartz high frequency electrodes on the Tesla current, can also be utilized with
 the ordinary glass vacuum or non-vacuum electrodes.
 
 Irritation Caused by Prolonged Negative Impulse.—The
 sinusoidal current, although free of polar effects, will according
 to Pflueger, cause irritability at the negative pole and in order
-to overcome the irritability, it follows that the reversals of polar-
-ity must take place according to Prof. Emil DuBois Reymond's
+to overcome the irritability, it follows that the reversals of polarity must take place according to Prof. Emil DuBois Reymond's
 findings and that the current is reversed not only suddenly, but
 the reversals must also take place a larger number of times in a
 given period.
 
-Electro-T herapeutics 5,667
-
 'The larger the number of reversals per minute, the shorter the time of
 1 Tentabiliey. This fact is fully demonstrated by the diathermy currents,
-: where the reversal of polarity takes place many thousands or even millions
+where the reversal of polarity takes place many thousands or even millions
 (of times per second.
 
 «Slowly Reversing Currents Cause Irritation.—In the well
@@ -29863,12 +21762,11 @@ inder the term, "'rapid sinusoidal current."
 
 A.60 cycle current reverses in polarity 7,200 times per minute, this being
 fairly rapid. It has been found, however, to cause considerable irritation
-: when used for therapeutic purposes.
+when used for therapeutic purposes.
 
-' Oscillatory Currents Explained.—In the oscillatory current
+Oscillatory Currents Explained.—In the oscillatory current
 s produced by modern wave generators, the polarity of the
-'urrent reverses 40,800 times per minute. The current deliv-
-sred by a wave generator whose frequency is 180 cycles, how-
+'urrent reverses 40,800 times per minute. The current delivsred by a wave generator whose frequency is 180 cycles, how-
 "ver, reverses in polarity only 21,600 times per minute.
 
 Comparing these figures, it 1s found that the oscillatory current reverses
@@ -29878,8 +21776,7 @@ reversals of polarity take place 40,800 times per minute. The reversals are
 made suddenly.
 
 In the construction of the McIntosh frequency converter, or penetrator,
-as it is called, a neutral contact point is provided between every active con-
-tact point; thus in one complete reversal of the current, which occupies a
+as it is called, a neutral contact point is provided between every active contact point; thus in one complete reversal of the current, which occupies a
 space of time of 1-340th of a second, there is a positive value of a duration of
 1-1,360th of a second; a neutral point occupying a similar period of time; a
 
@@ -29889,10 +21786,7 @@ Short Negative Impulse Reduces Irritation.—Reducing the
 'ime during which the current is negative, also reduces the time
 luring which irritation may take place; and, therefore, the users
 
-5,668 Electro-T herapeutics
-
-of the oscillatory current report that this type of current pro-
-duces the desired effect without irritation.
+of the oscillatory current report that this type of current produces the desired effect without irritation.
 
 This type of current was considered the most efficient current by some of
 the pioneer investigators of the action of electric currents in therapeutics,
@@ -29901,12 +21795,7 @@ The apparatus for the production of the oscillatory current was, however, a
 stumbling block and was only made possible by the combined effort of the
 modern electrical and mechanical engineers.
 
-er Atte
-
 me. ANTO SH Be oO. 0.CO.
-
-a te ative samy ea
-Rye ET Oe ree Cs ha SR a eee Satea
 
 Fic. 9,022.—Erb's electrode. To be used with the faradic or rapid sinusoidal current to
 small muscles such as the eye, etc., and for testing for reaction of degeneration.
@@ -29924,15 +21813,12 @@ within the body by means of a diathermy apparatus 1s now a
 generally accepted and highly useful physio-therapeutic agent.
 
 To produce this effect, an apparatus is employed which produces high
-frequency oscillations, transforming the ordinary lighting current. The pass-
-ing of such oscillations through the human tissue produces inductive heat.
+frequency oscillations, transforming the ordinary lighting current. The passing of such oscillations through the human tissue produces inductive heat.
 
 This ability to generate heat or warmth within the tissues without shock
 in a definite measurable quantity, to any superficial area and to any
 required temperature makes diathermy technique of special importance and
 value to the progressive physician and surgeon.
-
-Electro-T herapeutics 5,669
 
 Surgical Diathermy.—This is the process of applying heat in
 isufficient quantities at a concentrated point to cut or perform
@@ -29944,8 +21830,7 @@ galvanic current for congestion and pain or with rapid or surging sinusoidal cur
 
 + deafness.
 
-'Fic. 9,026.—Eye cup electrode. To be filled with cotton and the necessary medicated solu-
-tion as conductor of the positive galvanic current for treatment of congestion.
+'Fic. 9,026.—Eye cup electrode. To be filled with cotton and the necessary medicated solution as conductor of the positive galvanic current for treatment of congestion.
 
 Fic. 9,027.—Eye electrode, double sponge, with handle. For the application of the faradic
 or rapid sinusoidal current in treatment of atony of the muscles of the eye or for treatment
@@ -29955,23 +21840,15 @@ iFic. 9,028.—Eye electrode, copper, small. For the treatment of trachoma with 
 galvanic current producing copper ionization.
 
 NOTE.—De Kraft in his studies of the physical effects of diathermy on the body says that
-:**congestion'' wherever present, 1s relieved because of the marked activity of the internal circu-
-fation. Anemia of the splanchnic area ensues. Visceral congestion is relieved. The liver, the
+:**congestion'' wherever present, 1s relieved because of the marked activity of the internal circufation. Anemia of the splanchnic area ensues. Visceral congestion is relieved. The liver, the
 'Intestines and other organs within the abdominal cavity are made to disgorge the stagnant pools
 of blood which bathe their structure. When the action of the diathermic current has subsided
 and the blcod stream returns again to its normal channels, freshly oxygenated arterial blood
-enters in great « bundince into the previously anemic and (before the heating) venously con-
-gested areas. The parts are placed in a better state of defense against the invasion of toxins
+enters in great « bundince into the previously anemic and (before the heating) venously congested areas. The parts are placed in a better state of defense against the invasion of toxins
 and bacterial colonies.
 
-5,670 Electro-Therapeutics
-
-t
-%
-
 This differs from electric cautery where the needle or knife is heated and.
-cuts by virtue of its heat, in that the needle or knife merely conveys cur-
-rent which heats the tissue and lays it open, at the same time sealing -
+cuts by virtue of its heat, in that the needle or knife merely conveys current which heats the tissue and lays it open, at the same time sealing -
 blood channels.
 
 It is important in all cases, that the operation of the electrical apparatus
@@ -29979,14 +21856,12 @@ be thoroughly understood and directions closely followed.
 
 Electrodes.—Good contact is very important, the metal must
 have a lesser resistance than the skin and must be so shaped
-that it will cover entirely and well the part desired to be cov-
-ered. Block tin 1s used extensively as 1t can be cut and shaped
+that it will cover entirely and well the part desired to be covered. Block tin 1s used extensively as 1t can be cut and shaped
 to the curvature desired. A poor contact will cause sparking
 between the electrodes and skin and burn or injure the skin.
 
 Vacuum and Non-Vacuum Glass Electrodes.—For surface
-treatments with the Tesla current, either vacuum or non-
-vacuum glass electrodes are used.
+treatments with the Tesla current, either vacuum or nonvacuum glass electrodes are used.
 
 A vacuum glass electrode is really a modified condenser, in that the
 vacuum within the electrode acts as a plate or conductor of the current,
@@ -29998,8 +21873,7 @@ vacuum being created, the inner side of the electrode is coated with a
 metallic substance, this substance acting as the plate and the glass as the
 dielectric.
 
-The general action of vacuum or non-vacuum glass elec-
-trodes, when applied to body surfaces, is to produce heat with
+The general action of vacuum or non-vacuum glass electrodes, when applied to body surfaces, is to produce heat with
 its sedative effect, when in actual contact with the skin and
 when a mild current is used.
 
@@ -30008,14 +21882,11 @@ by a hot knife or electrode heated by electricity; the current and
 therefore the temperature can be maintained as long as desired.
 This heating is done by a current being forced through a
 
-Electro-Therapeutics 5,671
-
 sresistance wire sharpened to cut. The wire, the same as the fila-
 'ment in a lamp, is heated white hot. Fig. 9,029 illustrates the
 electro-cautery method of cutting.
 
-Electric Driven Saw for Bone Cutting.—Saws driven by elec-
-ttric motors are used for amputations; the speed of the saws
+Electric Driven Saw for Bone Cutting.—Saws driven by electtric motors are used for amputations; the speed of the saws
 
 ¥'1c. 9,029.—Kny-Scheerer electro-sector or electric cautery knife. The electro-sector, in the
 ordinary sense of the word, does not cut, but through an electrode, when the current is
@@ -30032,19 +21903,11 @@ required to be under the anesthetic.
 The apparatus consists of a high speed motor, to which cutting edges can
 be attached.
 
-5,672 Electro-T herapeutics
-
 Ultra Violet Therapy.—Formerly it was thought various
-cures were due to the heat rays of the sun. Later it was estab-
-lished that the principal curative factor in the treatment of
+cures were due to the heat rays of the sun. Later it was established that the principal curative factor in the treatment of
 rickets and surgical tuberculosis was essentially the ultra violet
 
 energy contained in the sunlight.
-l 2 3 4 5
-
-16 i7 20
-
-12 13
 
 Fics. 9,030 to 9,049.—Kny-Scheerer cautery burners showing the numerous types.
 
@@ -30056,25 +21919,18 @@ The rays of very long wave length are called infra-red.
 
 The sun is composed of 57% infra-red rays, which are invisible to the eye,
 42% of visible rays and 1 or 2% ultra'violet which are also invisible. The
-mercury quartz lamp yields 21% infra-red, 50% visible and 29% ultra-
-violet rays.
+mercury quartz lamp yields 21% infra-red, 50% visible and 29% ultraviolet rays.
 
-NOTE .—Thermo-therapy. 'The high degree of heat which hyperaemic treatment ap-
-paratus produces, results in an exceedingly active circulation in the parts treated, which
-brings about a reduction of pain and the disappearance of exudates, adhesions, stiffness, sore-
-ness, etc. Further, the growth of bacteria is stopped or retarded and effusions are absorbed and
+NOTE .—Thermo-therapy. 'The high degree of heat which hyperaemic treatment apparatus produces, results in an exceedingly active circulation in the parts treated, which
+brings about a reduction of pain and the disappearance of exudates, adhesions, stiffness, soreness, etc. Further, the growth of bacteria is stopped or retarded and effusions are absorbed and
 dissolved through increased circulation. This method of treatment has proven of therapeutic
 value in lumbago, sciatica, brachial and trigeminal neuralgia, varices and their sequalae,
-inflammation of the uterus, chronic exudates, thrombosis and diabetic and arterio sclerotic con-
-ditions of the lower extermities. With the apparatus now available treatments may be given
+inflammation of the uterus, chronic exudates, thrombosis and diabetic and arterio sclerotic conditions of the lower extermities. With the apparatus now available treatments may be given
 to the hand, forearm, arm, shoulder, knee, foot, the entire leg, the back of the abdomen. It
 formerly was necessary to have a number of apparatus to administer in such a wide range of
 treatments.
 
-Electro-T herapeutics 5,673
-
-Reports are indicative that infra-red used preceding ultra-violet irradia-
-tion, works out advantageously. The better results obtained are ascribed
+Reports are indicative that infra-red used preceding ultra-violet irradiation, works out advantageously. The better results obtained are ascribed
 to the ability of the infra-red energy in increasing the amount of blood
 brought under the influence of the ultra-violet rays. Their effects in turn
 are thought to be carried to the deeper parts of the tissue, throughout the
@@ -30095,11 +21951,9 @@ This region 1s associated with and capable of producing and inciting
 chemical reactions in a substance when the rays are absorbed. Its action
 is thought to be that of a catalyzer. It may be thought of relatively as
 
-dominantly chemical in action. Because of its power to excite chemic re-
-action, it has been called actinic.
+dominantly chemical in action. Because of its power to excite chemic reaction, it has been called actinic.
 
-White Light and Infra-Red.—The luminous or visible spec-
-trum known as white light and employed extensively in clinical
+White Light and Infra-Red.—The luminous or visible spectrum known as white light and employed extensively in clinical
 practice 1s now being rapidly replaced by the use of infra-red
 radiation.
 
@@ -30108,18 +21962,15 @@ which as Steinmetz says, "Carries to the earth all the heat and
 energy effects of the sun."
 
 In this region are found the rays which are capable of producing and
-inducing heat in a substance when they are absorbed. It is true that infra-
-red rays represent a source of energy that may be converted into heat by
+inducing heat in a substance when they are absorbed. It is true that infrared rays represent a source of energy that may be converted into heat by
 absorption in a substance; although substances absorbing both infra-red
 and luminous rays may undergo a definite photo-chemical change, as
 
 recent studies infer that it seems certain that photo-chemical reactions can
 proceed in the infra-red region.
 
-pL9'S
-
 . C RAYS FRo.
-ANFRACEED INVISIBLE gxBLE_ Civ MERCURY TAME yLTRA-VIOLET INVISIBLE
+
 7700 «6000 3960 3000 20001660 1000 905 2012 2 eo
 
 chumann| Explored
@@ -30129,7 +21980,7 @@ Ultravidlet] and
 band e e
 
 Extreme Infra-red Region ' Plotted to || Extreme Ultra-violet ion
-oe oe — 190,000 SS ee ee
+
 of Luckiesh ! of Luckiesh
 
 ac0000- -m--—- Wave lengths from sunlight pei 2200
@@ -30138,34 +21989,20 @@ SCALE IN (A) ANGSTROM UNITS
 
 ### SPECTRUM FROM QUARTZ MERCURY LAMPS
 
-; VV. es Pe ad iat 4 * aS By). oe ots aa a, ae 63.43 ites gt : ae AY os PR SN ee Re EO ee ea aa ae - SHIR COSTS BRAS
-a aE cpp ce SR oS aR. BP A ee ey paste £- Be hee Se: BAe to Me Sed * Yat Se ae St < S er Ne eee
-ie i oe a et a. Lo <SeFSeS S. os A eee) a 2 Set 5 2 at ° ee, ee oh 7 wa 7 ie ae 8 abs Bae A RR a sna: RET REFERS ORR. a. Sf Yo Os St. OS Ret see Re, :
-
-é
-
-SoIjnadeiay J -01}939]q
-
 Fic. 9,050.—Diagrammatic spectrum analysis. The visible band of the spectrum is composed of the seven colors of the rainbow.
 The infra-red band of the spectrum is divided into three regions, near, middle and extreme. The extreme band extends over
 into the present well known radio or wireless waves which have been definitely demonstrated by Nichols and others, to be nothing
 more than light waves of great length, but not known to be part of the solar energy reaching the earth. The visible spectrum
 extends from about 3,600 A.U. to 8,000; and the infra-red spectrum extends from about 8,000 to the wave lengths discovered
 by Hertz and named atter him. In the solar spectrum infra-red rays have been demonstrated up to andincluding 180,000 A.U.
-The ultra-violet spectrum extends from about 3,600 A.U. to 1,000 A.U. in artificial sources. In sunlight the ultra-violet spec-
-trum ends almost abruptly at 2,900 A.U. Perhaps for this reason, shorter rays in artificial sources of radiation are termed
+The ultra-violet spectrum extends from about 3,600 A.U. to 1,000 A.U. in artificial sources. In sunlight the ultra-violet spectrum ends almost abruptly at 2,900 A.U. Perhaps for this reason, shorter rays in artificial sources of radiation are termed
 abiotic, while the band simulating the solar spectrum is called biologic. The short rays exert a superficial destruction of the
 tissue, not penetrating deeply, in comparison to the stimulating effect of the longer relatively more penetrating biologic rays.
-
-Electro-T herapeutics 5,675
 
 The generative processes within the quartz
 
 e and current is passed through a quartz container retaining
 
-d
-
-is ma
 By controlling the voltage with the rheostat on the ultra-violet
 
 mercury in a vacuum, the mercury vaporizes forming a central stream of luminescence from which a supply of ultra-violet energy
@@ -30194,8 +22031,7 @@ phosphorescent body, such as Balmain's paint, be exposed
 for a few seconds to ultra-violet radiation, a beautiful and
 prolonged phosphorescence results.
 
-Immediately upon subjecting the phosphorescent mate-
-rial to infra-red rays, the phosphorescence increases
+Immediately upon subjecting the phosphorescent material to infra-red rays, the phosphorescence increases
 markedly fora fraction of a second and is then extinguished
 almost instantaneously.
 
@@ -30204,10 +22040,7 @@ to correct pathology caused by the shorter wave lengths,
 
 Fic. 9,052.—Hanovia burner of McIntosh wanes sun sean
 
-5,676 Electro-T herapeutics
-
-as for instance, the treatment of radio-dermatitis by ultra-violet or infra-
-red irradiations.
+as for instance, the treatment of radio-dermatitis by ultra-violet or infrared irradiations.
 
 Biologic Phosphorescence as a Guide to Treatment.—The
 sunburn or erythema produced by ultra-violet irradiation of the
@@ -30215,17 +22048,14 @@ skin 1s thought of as a biologic phosphorescence; representing a
 mirrored reflection of internal reactions taking place.
 
 Incidentally the frequency for the applications of ultra-violet energy is
-guided by the length of time an erythema lasts. When the erythema dis-
-appears the physiological actions induced by exposure to the energy are
+guided by the length of time an erythema lasts. When the erythema disappears the physiological actions induced by exposure to the energy are
 spent. The patient is then due for another treatment. In other words, the
 initial reaction is maintained.
 
 Photo Chemical Reactions.—The term actinic rays has been
 erroneously bestowed on ultra-violet radiation. It is erroneous
-because actinic means having the power to excite chemic reac-
-tions, such as causing certain silver salts to darken. By using
-specially prepared silver emulsions it has been possible to pho-
-tograph far over into the infra-red region.
+because actinic means having the power to excite chemic reactions, such as causing certain silver salts to darken. By using
+specially prepared silver emulsions it has been possible to photograph far over into the infra-red region.
 
 All illuminants are more or less actinic. As the wave lengths become
 shorter their power to excite chemic reactions becomes greater and more
@@ -30238,25 +22068,19 @@ units used in the measurement of light wave lengths:
 
 Unit , Symbol Millimeters
 Angstrom A. U. ' One ten millionth
-Millimicron Mu or uu One millionth
+
 Micron u One thousandth.
 
 To convert millimicrons into Angstrom units multiply by 10; Angstrom units into millimicrons
 divide by 10. If adime, which is about a millimeter in thickness, be divided equally into ten
-million parts, one part would approximate the size of an Angstrom unit. For brevity and sim-
-plicity the Angstrom unit is most generally used. The Greek letter Lambda (A) is used to
+million parts, one part would approximate the size of an Angstrom unit. For brevity and simplicity the Angstrom unit is most generally used. The Greek letter Lambda (A) is used to
 represent wave lengths, thus 4 2,900 representg 2,900 Angstrom units.
 
-NOTE .—The spectrum. Sir Isaac Newton placed a triangular glass in the sunlight, stream-
-ing through a small hole in a curtain, and saw the display usually known as the rainbow to
-which he gave the name of spectrum. Upon close examination, it was found to be chiefly com-
-posed of seven colors, namely, red, orange, yellow, green, blue, indigo and violet. In experi-
-menting further, he found that he could place in these seven colors another prism and thus
+NOTE .—The spectrum. Sir Isaac Newton placed a triangular glass in the sunlight, streaming through a small hole in a curtain, and saw the display usually known as the rainbow to
+which he gave the name of spectrum. Upon close examination, it was found to be chiefly composed of seven colors, namely, red, orange, yellow, green, blue, indigo and violet. In experimenting further, he found that he could place in these seven colors another prism and thus
 reconstruct and recondense the seven spectral bands into what is known as white light or the
 visible spectrum. This was certain proof that the radiant energy of the sun could be analyzed
 and broken up into definite bands.
-
-Electro-T herapeutics 5,677
 
 Ultra-Violet a Stimulant.—Ultra-violet radiation bestows a
 rich coat of tan to the sun bather and pigments the patient
@@ -30275,9 +22099,6 @@ Pigmentation of the
 
 skin is a photo-chemical reaction or photo-adaptation.
 
-Oo CONT OA WH Fe WH LH =
-
-a oe oe ee
 Nm —& WH NO KF OO
 
 Define the term electro-therapeutics.
@@ -30297,24 +22118,14 @@ What is the effect of short negative impulses?
 
 . What is medical diathermy?
 
-_ Define surgical diathermy.
+Define surgical diathermy.
 
 . What are electrodes?
 
-_ Describe vacuum and non-vacuum electrodes.
+Describe vacuum and non-vacuum electrodes.
 . Define electro cautery.
 
 . How is bone cutting done?
-
-5,678 Electro-T herapeutics
-
-MF;
-18.
-19.
-20.
-21.
-22.
-23.
 
 Describe ultra-violet therapy.
 
@@ -30328,8 +22139,6 @@ What is the effect of wave length?
 
 What is the significance of biologic phosphorescence?
 Describe photo-chemical reactions.
-
-Resuscitation 5,679
 
 ## CHAPTER 234
 
@@ -30346,8 +22155,7 @@ cold very rapidly, and chilling means a further strain on a vital-
 
 Experience has shown that the cold to which the victims of gassing,
 electric shock, or drowning are often carelessly exposed, is probably the
-most important cause of pneumonia, and this disease is the most danger-
-ous after effect of all these accidents.
+most important cause of pneumonia, and this disease is the most dangerous after effect of all these accidents.
 
 As far as possible keep the patient covered and warm both during and
 after resuscitation. Use hot pads, hot water bottles, hot bricks, radiant
@@ -30363,17 +22171,12 @@ yscience knows no drug which of itself will start the breathing in.
 
 a patient whose breathing has ceased.
 
-.
-
 There is great danger of prematurely ceasing resuscitation. Breathing
-has been re-established after eight hours of resuscitation in cases of elec-
-tric shock and of gas asphyxiation. Therefore, the ordinary and general
+has been re-established after eight hours of resuscitation in cases of electric shock and of gas asphyxiation. Therefore, the ordinary and general
 tests for death should not be accepted, and any doctor should make several
 very careful examinations and be sure that specific evidence, such as the
 onset of rigor mortis, is present before the patient is pronounced dead
 and resuscitation is stopped.
-
-5,680 Resuscitation
 
 Considering the widespread use of electricity for light, power,
 heat and many other purposes, it 1s almost surprising how few
@@ -30411,14 +22214,12 @@ move either the victim'or the conductor. Beware of using metal or any
 moist material. If both of the victim's hands be grasping live conductors
 endeavor to free them one at a time. If necessary shut off current.
 
-Resuscitation 5,681
-
-Begin at once to get the subject to breathe (resuscitation), for a moment '
+Begin at once to get the subject to breathe (resuscitation), for a moment
 of delay is serious. Use 'Prone Pressure Method" for four (4) hours if
 necessary, or until a doctor has advised that rigor mortis has set in.
 
 2. Open the nearest switch, if that be the quickest way to
-: break the circuit.
+break the circuit.
 
 3. If necessary to cut a live wire, use an ax or a hatchet with
 :a dry wooden handle, turning your face away to protect it from
@@ -30427,7 +22228,7 @@ necessary, or until a doctor has advised that rigor mortis has set in.
 II. Attend Instantly to Victim's Breathing
 
 1. As soon as the victim is clear of the live conductor, quickly
-| feel with your finger in his mouth and throat and remove any
+feel with your finger in his mouth and throat and remove any
 1 foreign body (tobacco, false teeth, etc.).
 
 If the mouth be tight shut, pay no attention to the above-mentioned.
@@ -30438,7 +22239,7 @@ mouth can, then be removed. Do not stop to loosen the patient' s clothing;
 every moment of delay is serious.
 
 2. Lay the patient on his belly, one arm extended directly
-| overhead, the other arm bent at elbow and with the face resting
+overhead, the other arm bent at elbow and with the face resting
 
 NOTE .—Observe the Following Precautions: a. The wick' s loose <eloibiiog. if: dry,
 may be used to pull him away; do not touch the soles OF heels of his shoes while he remains
@@ -30457,8 +22258,6 @@ As soon as the rope is taut, free the Victitit's safety belt and spurs and desce
 the victim. When the victim is.about thréd-feet from the ground, lower rapidly so that the
 victim's feet hit the ground hard.
 
-5,682 Resuscitation
-
 'on hand or forearm so that the nose and mouth are free for
 breathing, as in fig. 9,053.
 
@@ -30466,19 +22265,11 @@ breathing, as in fig. 9,053.
 below the patient's hip bones or opening of pants pockets.
 Place the palms of the hands on the small of the back with fingers resting
 
-on the ribs, the little finger just touching the lowest nb, the thumb along-
-side of the fingers, the tips of the fingers just out of sight as in fig. 9,053.
+on the ribs, the little finger just touching the lowest nb, the thumb alongside of the fingers, the tips of the fingers just out of sight as in fig. 9,053.
 
 4. With arms held straight, swing forward slowly so that the
 weight of your body is gradually brought to bear upon the
 subject, as in fig. 9.054.
-
-< =f "3 7 < a Pare Ae Be ee ay =, io <
-- '. ote. Ret, aA. roy .- - wt deta <a . J x ' x
-ae: Ve Ng tn gt et wR Ia SS Oa See Shy yo
-ee ) a " ~ . Nea Ge '
-are s ' ; 2 Ra Ser ee ae
-hoe _~ acco mn ae . ek '
 
 Fic. 9,053.—Resuscitation from electrical shock by Prone pressure method. First Position.
 
@@ -30495,8 +22286,6 @@ fig. 9,055.
 _. Through their elasticity, the chest walls expand, and the pressure being
 removed the diaphragm descends, and the lungs are thus supplied with
 fresh air.
-
-Resuscitation 5,683
 
 6. After two seconds swing forward again.
 
@@ -30529,11 +22318,8 @@ Cases are on record of success after three and one-half hours of effort.
 The ordinary tests for death are not conclusive in cases of electric shock
 and doctors must be so advised by you, 1f necessary.
 
-5,684 Resuscitation
-
 9. When the patient revives, he should be kept prone (lying
-down)—and not allowed to get up or be raised under any con-
-sideration unless on the advice of a doctor.
+down)—and not allowed to get up or be raised under any consideration unless on the advice of a doctor.
 
 If the doctor has not arrived by the time the patient has revived, he
 should be given some stimulant, such as one teaspoonful of aromatic
@@ -30544,28 +22330,25 @@ be kept warm, being placed in the most comfortable position.
 Fic. 9,055 .—Resuscitation from electrical shock by Prone pressure method. Third position.
 
 10. Resuscitation should be carried on at the nearest possible
-point to where the patient received his injuries. |
+point to where the patient received his injuries.
 
 He should not be moved from this point until he is breathing normally
 of his own volition, and then moved only in a lying position. Should it be
 necessary, due to extreme weather conditions, etc., to move the patient
 before he' is breathing normally, he should be kept in a prone position
-and placed upon a hard surface (door or shutter) or on the floor of a con-
-veyance, resuscitation being carried on during the time that he is being
+and placed upon a hard surface (door or shutter) or on the floor of a conveyance, resuscitation being carried on during the time that he is being
 moved.
 
 11. A brief return of spontaneous respiration is not a certain
 indication for terminating the treatment.
 
-Resuscitation 5,685
-
 Not infrequently, the patient, after a temporary recovery of respiration,
 stops breathing again. The patient must be watched, and if normal
-' breathing stops, artificial respiration should be resumed at once.
+breathing stops, artificial respiration should be resumed at once.
 
 III.—Send for a Doctor
 
-' If other persons be present when an accident occurs, send one
+If other persons be present when an accident occurs, send one
 of them for a doctor without a moment's delay.
 
 If alone with the patient, do not neglect the immediate and continued
@@ -30578,13 +22361,11 @@ IV.—First Care of Burns
 
 'When natural respiration has been restored, burns, if serious,
 should be immediately attended to while waiting for the doctor
-to arrive.
 
 A raw or blistered surface should be protected from the air. If clothing
 stick, do not peel it off—cut around it. The adherent cloth, or a dressing
 of cotton or other soft material applied to the burned surface, should be
-saturated with picric acid (.5 per cent). If this be not at hand, use a solu-
-tion of baking soda (one teaspoonful to a pint cf water), or the wound may
+saturated with picric acid (.5 per cent). If this be not at hand, use a solution of baking soda (one teaspoonful to a pint cf water), or the wound may
 be coated with a paste of flour and water, or it may be protected with
 vaseline, carron oil, olive oil, castor oil or machine oil, if clean. Cover
 the dressing with cotton gauze, lint, clean waste, clean handkerchief, or
@@ -30598,8 +22379,6 @@ Treatment
 
 The reason that automobile exhaust gas, the gases from coal
 heating furnaces, the smoke from fires, producer gas, coke oven
-
-5,686 Resuscitation
 
 gas, blast furnace gas, carburetted water gas, coal gas and other
 manufactured gases are poisonous if actually breathed is that
@@ -30618,8 +22397,7 @@ carbon monoxide leaves the blood ina few hours. The quicker it is breathed
 out of the blood, the better are the chances of recovery.
 
 If the asphyxiation has not been too long or severe, and the first aid
-treatment has been prompt and correct, the patient will recover com-
-pletely.
+treatment has been prompt and correct, the patient will recover completely.
 
 2. Protect Yourself
 
@@ -30643,8 +22421,6 @@ or an oxygen breathing apparatus.
 When a man is overcome by gas, the first thing to do is to
 get him into fresh air quickly.
 
-Resuscitation 5,687
-
 Fresh air does not mean out of doors in cold weather. Many men have
 walked from a warm room containing gas to collapse in the cold outside air.
 Take the patient to a room free from gas and comfortably warm.
@@ -30659,7 +22435,7 @@ for an inhalator to be used in conjunction with artificial respiration.
 4. The use of Inhalation to drive Carbon Monoxide out of
 the Blood
 
-_ In gas poisoning oxygen used properly —: to drive the
+In gas poisoning oxygen used properly —: to drive the
 carbon monoxide from the blood.
 
 Sometimes the patients do not breathe well after they are brought out
@@ -30680,8 +22456,7 @@ It is useless to try to give an inhalation with a tank and funnel or any
 such makeshift. An approved inhalator, with its oxygen carbon dioxide
 tank and close fitting mask must be used.
 
-It should be distinctly understood that the inhalator is an aid to resuscl-
-tation and does not take the place of the Prone Pressure Method. The two
+It should be distinctly understood that the inhalator is an aid to resuscltation and does not take the place of the Prone Pressure Method. The two
 may be used simultaneously until the patient breathes without assistance
 after which the inhalation may be continued if necessary.
 
@@ -30690,8 +22465,6 @@ after which the inhalation may be continued if necessary.
 Without interrupting the rhythm of respiration, an assistant
 should put the mask over the patient's nose and mouth.
 
-5,688 Resuscitation
-
 The lower part should go well down on the chin. Press down firmly over
 the nose. Try to prevent leaks.
 
@@ -30699,8 +22472,7 @@ As soon as the mask is properly applied, adjust the apparatus to give the
 patient an ample supply of the oxygen carbon dioxide mixture. In any
 case continue the inhalation for at least twenty minutes.
 
-In severe cases the inhalation should be prolonged. In using the inhala-
-tion treatment, the patient should be kept in the prone position, and when
+In severe cases the inhalation should be prolonged. In using the inhalation treatment, the patient should be kept in the prone position, and when
 treatment is prolonged a better chance for recovery is given if the head is
 six or eight inches lower than the feet. This position promotes the flow of
 blood to the heart.
@@ -30731,26 +22503,9 @@ abruptly.
 
 If the shock has not been severe, after a time the breathing center recov-
 
-ers and resumes the vitally necessary duty of sending impulses to the mus-
-cles of breathing. In such cases the immediate use of the prone pressure
+ers and resumes the vitally necessary duty of sending impulses to the muscles of breathing. In such cases the immediate use of the prone pressure
 
-Resuscitation 5,689
-
-\,
-.
-~
-
-ry xd
 aie a
-
-+ rerene xo
-~
-
-FR y AO ORE Ak ie ee ee EPR ET RN OE a RT
-
-«
-
-ee i re ey eer
 
 Geary
 
@@ -30765,23 +22520,16 @@ Victims of electric shock of this sort are unconscious, but in them the
 
 respiration with the greatest possible promptness. The method for giving
 this and the general points for the care of such patients have been given.
-In some cases the electric current affects the heart. Under these circum-
-stances the heart suddenly ceases to pump blood. Many cases of electric
+In some cases the electric current affects the heart. Under these circumstances the heart suddenly ceases to pump blood. Many cases of electric
 shock escape this heart effect, and even an experienced examiner requires
 time to assure himself 1t has occurred. Consequently, it is the duty of those
 first reaching the shocked person to give artificial respiration by the prone
 method at once and to continue until natural breathing is restored or until
-the onset of rigor mortis. |
+the onset of rigor mortis.
 
-~~
 nord
 
 1G. 9,056.—Nature of high tension electricity.
-
-5,690 Resuscitation
-
-11.
-12.
 
 . What are the general points to be observed?
 . Describe in full prone pressure method of resuscita-.
@@ -30831,17 +22579,14 @@ reader will use the outline following each
 general chapter heading, he will readily find
 the information desired.
 
->
-
 Get the habit of using this Index—it will
-quickly reveal a vast mine of valuable in-
-formation.
+quickly reveal a vast mine of valuable information.
 
 Page Directory
 
 PAGE |.
-OF
-VOLUMES
+
+### VOLUMES
 
 Vol. ee ee ee ee Pages 1to 480
 Vol. Ul....... ere Pages 481 to 898
@@ -30856,12 +22601,7 @@ Vole KM...... ee. Pages 5,017 to 5,690
 
 NOTE
 
-### CONSULT THIS INDEX WHEN IN NEED OF IN-
-
-FORMATION ON ANY ELECTRICAL SUBJECT.
-ALSO SEE FINDER IN EACH VOLUME FOR RE-
-LATED SUBJECTS.
-
-wa ee
+CONSULT THIS INDEX WHEN IN NEED OF INFORMATION ON ANY ELECTRICAL SUBJECT.
+ALSO SEE FINDER IN EACH VOLUME FOR RELATED SUBJECTS.
 
 Index of Library
