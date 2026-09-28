@@ -6,6 +6,10 @@
 - **URL**: https://www.gutenberg.org/ebooks/3283
 - **Rights**: Public domain in the USA.
 
+## Author
+
+- **Name**: Various
+
 - **Gutenberg Published**: 2002-06-01
 
 ## Language

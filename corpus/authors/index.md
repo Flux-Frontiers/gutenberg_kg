@@ -45,6 +45,7 @@
 | [Emily Brontë](emily_brontë/author.md) | 1818 | 1848 | 1 |
 | [Epictetus](epictetus/author.md) | 55 | 135 | 4 |
 | [Euripides](euripides/author.md) | — | -406 | 1 |
+| [Frank D. Graham and Theo Audel & Company](frank_d_graham_and_theo_audel_company/author.md) | — | — | 8 |
 | [Franz Kafka](franz_kafka/author.md) | 1883 | 1924 | 2 |
 | [Frederick Douglass](frederick_douglass/author.md) | 1818 | 1895 | 1 |
 | [Friedrich Wilhelm Nietzsche](friedrich_wilhelm_nietzsche/author.md) | 1844 | 1900 | 5 |
@@ -137,6 +138,7 @@
 | [Titus Lucretius Carus](titus_lucretius_carus/author.md) | -95 | -55 | 1 |
 | [Ulysses S. Grant](ulysses_s_grant/author.md) | 1822 | 1885 | 1 |
 | [Upton Sinclair](upton_sinclair/author.md) | 1878 | 1968 | 1 |
+| [Various](various/author.md) | — | — | 5 |
 | [Vatsyayana](vatsyayana/author.md) | — | — | 1 |
 | [Victor Hugo](victor_hugo/author.md) | 1802 | 1885 | 2 |
 | [Virgil](virgil/author.md) | -70 | -19 | 1 |
