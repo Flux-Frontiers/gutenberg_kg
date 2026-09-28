@@ -1,5 +1,8 @@
 # corpus-gutenberg — build and run targets
 #
+# © 2026 Eric G. Suchanek, PhD <suchanek@flux-frontiers.com> -- Flux-Frontiers
+# SPDX-License-Identifier: Elastic-2.0. See LICENSE.
+#
 # Typical workflow:
 #   make init           — fetch local ML models (spaCy, embedder); run once after clone
 #   make chunk-diaries  — re-chunk .diary/ from committed .md (always --force)
