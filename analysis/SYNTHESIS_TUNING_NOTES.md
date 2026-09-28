@@ -24,7 +24,8 @@ xcrun devicectl device copy from --device <id> \
 ### On-device: reproducible from the terminal, byte for byte
 
 `/usr/bin/fm` ships with macOS 27 and is the same on-device model the app
-uses. `scripts/synth_replay.py TRACE --greedy` feeds a trace's instructions
+uses. `scripts/synth_replay.py TRACE --greedy`, in the knowledge_press repo
+since v1.26.0, feeds a trace's instructions
 and prompt through it. On this Mac, `--greedy` reproduced an iPhone 17 Pro
 trace **byte for byte**, so prompt experiments need no device at all:
 

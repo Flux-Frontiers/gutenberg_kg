@@ -119,4 +119,6 @@ similarity_edge_threshold=0.85
 | `analysis/similar_to_value_eval_20260521_024749.json` | Full JSON payload + recommendation block |
 
 Scripts: `scripts/run_similar_to_cap_sweep.py`, `scripts/run_retrieval_cap_ab.py`,
-`scripts/evaluate_similar_to_value.py`
+`scripts/evaluate_similar_to_value.py`. They were removed after v1.26.0, with the
+rest of this study's scripts, once the decision was settled; recover them from
+git history (`git log --diff-filter=D -- scripts/run_similar_to_cap_sweep.py`).
