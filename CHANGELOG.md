@@ -8,6 +8,19 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Changed
+
+- Three scripts are now `gutenkg` commands, so they work from an installed
+  package and share the CLI's corpus root:
+  - `gutenkg stale` (was `scripts/stale_books.py`) lists books whose text is
+    newer than their index; `make stale-books` and `make refresh-text` call it.
+  - `gutenkg export-web-catalog` (was `scripts/export_web_catalog.py`) writes
+    the web forest's catalog, next to `gutenkg export-swift`;
+    `make export-web-catalog` calls it.
+  - `gutenkg audit --sections` (was `scripts/check_sections.py`) adds the
+    oversized-section report to the audit, with `--baseline` and `--csv-out`.
+    It is advisory and does not change the audit's exit code.
+
 ### Removed
 
 - The SIMILAR_TO cap study's scripts: `setup_similar_to_analysis.py`,

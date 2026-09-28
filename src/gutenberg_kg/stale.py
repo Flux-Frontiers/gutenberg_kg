@@ -1,14 +1,12 @@
-#!/usr/bin/env python3
 # © 2026 Eric G. Suchanek, PhD -- Flux-Frontiers · SPDX-License-Identifier: Elastic-2.0
-"""
-List prose books whose index is older than their text, and a stale bundle.
+"""Find prose books whose index is older than their text, and a stale bundle.
 
 A book's text changes when it is downloaded again (``--force``), when its
 reference.md is rewritten (``gutenkg authors --refresh``), or when a pull
 brings in someone else's edit. Nothing downstream notices: the per-book
 ``.dockg/`` keeps the old chunks, and ``gutenkg build-corpus --update`` keeps
-the old vectors because it matches on node ids, not content. This script
-compares modification times so the stale surfaces can be named:
+the old vectors because it matches on node ids, not content. Comparing
+modification times names the stale surfaces:
 
 - a book whose ``*.md`` is newer than its ``.dockg/graph.sqlite``, or which
   has no index at all;
@@ -17,15 +15,10 @@ compares modification times so the stale surfaces can be named:
 
 Diaries are skipped: they are indexed into ``.diarykg/`` by
 ``make build-diaries``, which always rebuilds them.
-
-Exit status is 1 when anything is stale, so ``make refresh-text`` can use it
-as a gate. The last line prints the command that refreshes what it found.
 """
 
 from __future__ import annotations
 
-import argparse
-import sys
 from pathlib import Path
 
 SKIP_GENRES = {"authors", "diaries"}
@@ -65,39 +58,17 @@ def stale_books(corpus: Path) -> list[tuple[Path, str]]:
     return out
 
 
-def main() -> int:
-    ap = argparse.ArgumentParser(description=__doc__.splitlines()[1])
-    ap.add_argument("--corpus", type=Path, default=Path("corpus"))
-    ap.add_argument("--bundle", default="gutenberg-all")
-    args = ap.parse_args()
+def bundle_is_stale(corpus: Path, bundle: Path) -> bool:
+    """Return whether the bundle is missing or older than a per-book index.
 
-    stale = stale_books(args.corpus)
-    for d, reason in stale:
-        print(f"book    {d.relative_to(args.corpus)}  ({reason})")
-
-    bundle_graph = Path("bundles") / args.bundle / ".dockg" / "graph.sqlite"
+    :param corpus: The corpus root.
+    :param bundle: The bundle directory, e.g. ``bundles/gutenberg-all``.
+    :return: True when ``bundle/.dockg/graph.sqlite`` is missing or older than
+        the newest ``corpus/<genre>/<book>/.dockg/graph.sqlite``.
+    """
+    graph = bundle / ".dockg" / "graph.sqlite"
     newest = max(
-        (p.stat().st_mtime for p in args.corpus.glob("*/*/.dockg/graph.sqlite")),
+        (p.stat().st_mtime for p in corpus.glob("*/*/.dockg/graph.sqlite")),
         default=0.0,
     )
-    bundle_stale = not bundle_graph.exists() or bundle_graph.stat().st_mtime < newest
-    if bundle_stale:
-        print(f"bundle  bundles/{args.bundle}  (older than a per-book index)")
-
-    if not stale and not bundle_stale:
-        print("Nothing stale.")
-        return 0
-
-    genres = sorted({d.parent.name for d, _ in stale})
-    if genres:
-        print(f'\nRefresh with: make refresh-text GENRE="{" ".join(genres)}"')
-    else:
-        print(
-            "\nPer-book indices are current; rebuild the bundle and everything "
-            'after it with: make refresh-text GENRE=""'
-        )
-    return 1
-
-
-if __name__ == "__main__":
-    sys.exit(main())
+    return not graph.exists() or graph.stat().st_mtime < newest

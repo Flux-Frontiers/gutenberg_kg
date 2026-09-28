@@ -242,6 +242,18 @@ gutenkg export-embedder                                 # → the same directory
 Copy the whole directory into the app's `Application Support/Corpus`; Settings
 ▸ Corpus reports what it found.
 
+## Web Forest Catalog
+
+Write the Knowledge Press Forest's book catalog (`catalog.ts` and its parts)
+from the per-book graphs. Each book's chunk count sizes its tree. It does not
+re-chunk, so run `gutenkg ingest` first.
+
+```bash
+gutenkg export-web-catalog --dry-run       # counts only
+gutenkg export-web-catalog                 # -> ../knowledge_press/web/src/game/
+make export-web-catalog                    # the same; KNOWLEDGE_PRESS_DIR moves the checkout
+```
+
 ## Visualisation and Light-Field Rendering
 
 `viz3d` and `quilt` need the 3-D extra: `poetry install --extras viz3d`. The
@@ -575,7 +587,7 @@ book's text after it was indexed. `build-corpus --update` does not see this: it
 matches on node ids, so the edited book keeps its old vectors.
 
 ```bash
-make stale-books                              # names stale books and prints the next command
+make stale-books                              # gutenkg stale: names stale books, prints the next command
 make refresh-text GENRE="audel-electric"      # indices, full build-corpus, Swift packs, image, web catalog
 make publish-worker-image                     # only if Docker Hub needs the new image
 ```
@@ -648,6 +660,7 @@ gutenberg_kg/
 │   ├── build_corpus.py                     # Consolidated bundle build orchestration
 │   ├── build_diaries.py                    # Diary ingest + DiaryKG build
 │   ├── corpus.py                           # Corpus model
+│   ├── export_web.py                       # Web forest catalog (gutenkg export-web-catalog)
 │   ├── genres.py                           # Loads genres.json; exposes ALL_GENRES
 │   ├── gutenberg.py                        # Project Gutenberg download + RDF
 │   ├── ia.py                               # Internet Archive download
@@ -657,6 +670,8 @@ gutenberg_kg/
 │   ├── mcp_server.py                       # MCP server (gutenkg-mcp entry point)
 │   ├── model_setup.py                      # Local model download (gutenkg init)
 │   ├── scene.py                            # Qt-free scene builder + seasons
+│   ├── sections.py                         # Oversized-section report (gutenkg audit --sections)
+│   ├── stale.py                            # Books whose index predates their text (gutenkg stale)
 │   ├── vector_store.py                     # sqlite-vec / LanceDB store resolution
 │   ├── viz3d.py                            # 3-D KG visualisation (Qt viewer)
 │   ├── viz_timeline.py                     # 2-D timeline visualisation
@@ -679,6 +694,7 @@ gutenberg_kg/
 │       ├── cmd_chat.py                     # gutenkg chat
 │       ├── cmd_chunk_diaries.py            # gutenkg chunk-diaries
 │       ├── cmd_download.py                 # gutenkg download *
+│       ├── cmd_export_web_catalog.py       # gutenkg export-web-catalog
 │       ├── cmd_genres.py                   # gutenkg genres init/list/add
 │       ├── cmd_ia.py                       # gutenkg ia *
 │       ├── cmd_imagine.py                  # gutenkg imagine (corpus image generation)
@@ -689,6 +705,7 @@ gutenberg_kg/
 │       ├── cmd_rebuild.py                  # gutenkg rebuild-indices
 │       ├── cmd_reregister.py               # gutenkg reregister
 │       ├── cmd_snapshot.py                 # gutenkg snapshot
+│       ├── cmd_stale.py                    # gutenkg stale
 │       ├── cmd_status.py                   # gutenkg status
 │       ├── cmd_viz3d.py                    # gutenkg viz3d
 │       └── cmd_viz_timeline.py             # gutenkg viz-timeline

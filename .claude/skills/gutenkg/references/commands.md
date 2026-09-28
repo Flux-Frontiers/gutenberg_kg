@@ -335,6 +335,14 @@ diaries parse with their `.diary_format`; and that no Gutenberg ID appears under
 genres. Run it after moving a book between genres — a duplicate ID is the failure it
 exists to catch.
 
+```bash
+gutenkg audit --sections                     # also list books with >90% of text in one section
+gutenkg audit --sections --baseline analysis/monolithic_sections_20260903.csv
+```
+
+`--sections` is advisory: it never changes the exit code. `--baseline` names every
+book whose section count moved, which is how a heading-pattern change is checked.
+
 ---
 
 ## query
