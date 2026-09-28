@@ -1,6 +1,6 @@
 # GutenbergKG — Ingestion Pipeline
 
-> **Current corpus:** 253 books across 21 genres. The per-stage sizes below are
+> **Current corpus:** 253 books across 20 genres. The per-stage sizes below are
 > architecture examples from a reference build; consult the [corpus catalog](CORPUS.md)
 > for live coverage and [`gutenkg status`](CHEATSHEET.md#check-ingest-status-across-corpus)
 > for local index metrics.
@@ -15,7 +15,7 @@
         ▼
   ┌─────────────────────────────────────────────────────────────┐
   │                   CORPUS  (corpus/)                         │
-  │   21 genres · 253 books · Markdown + reference.md             │
+  │   20 genres · 253 books · Markdown + reference.md             │
   └─────────────────────────────────────────────────────────────┘
         │
         ├─── 19 prose / technical genres ─────────────────────────▶  Semantic Chunker

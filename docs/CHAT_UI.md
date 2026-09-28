@@ -16,7 +16,7 @@ worker must be running before the chat UI is useful.
 ## What it queries
 
 The UI searches the consolidated **DocKG** (249 books across 20 genres) plus the
-four **DiaryKG** temporal indices—**253 books across 21 genres** in all—baked into the Docker image. The sidebar
+four **DiaryKG** temporal indices—**253 books across 20 genres** in all—baked into the Docker image. The sidebar
 **Scope** selector controls which slice is searched:
 
 | Scope | Searches |
