@@ -11,7 +11,7 @@
 - **Name**: Aristotle
 - **Born**: -384
 - **Died**: -322
-- **Wikipedia**: https://el.wikipedia.org/wiki/%CE%91%CF%81%CE%B9%CF%83%CF%84%CE%BF%CF%84%CE%AD%CE%BB%CE%B7%CF%82
+- **Wikipedia**: https://en.wikipedia.org/wiki/Aristotle
 - **Gutenberg Agent ID**: 2747
 
 - **Gutenberg Published**: 2005-07-01

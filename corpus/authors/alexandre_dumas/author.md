@@ -1,12 +1,13 @@
 # Alexandre Dumas
 
-*1824 – 1895*
+*1802 – 1870*
 
-- **Wikipedia**: https://en.wikipedia.org/wiki/Alexandre_Dumas,_fils
-- **Gutenberg Agent ID**: 672
+- **Wikipedia**: https://en.wikipedia.org/wiki/Alexandre_Dumas,_père
+- **Gutenberg Agent ID**: 492
 
 ## Works in Corpus
 
 | Title | Genre |
 |-------|-------|
-| The Sea-Wolf (London) | american-literature |
+| The Count of Monte Cristo | french-literature |
+| The Three Musketeers | french-literature |

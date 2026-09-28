@@ -8,7 +8,7 @@
 
 ## Author
 
-- **Name**: M. R. (Montague Rhodes) James
+- **Name**: M. R. James
 - **Born**: 1862
 - **Died**: 1936
 - **Wikipedia**: https://en.wikipedia.org/wiki/M._R._James

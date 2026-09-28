@@ -2,7 +2,7 @@
 
 *1877 – 1962*
 
-- **Wikipedia**: https://de.wikipedia.org/wiki/Hermann_Hesse
+- **Wikipedia**: https://en.wikipedia.org/wiki/Hermann_Hesse
 - **Gutenberg Agent ID**: 941
 
 ## Works in Corpus

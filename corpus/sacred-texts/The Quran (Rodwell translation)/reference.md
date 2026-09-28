@@ -6,6 +6,10 @@
 - **URL**: https://www.gutenberg.org/ebooks/2800
 - **Rights**: Public domain in the USA.
 
+## Author
+
+- **Name**: Various
+
 - **Gutenberg Published**: 2001-09-01
 
 ## Language

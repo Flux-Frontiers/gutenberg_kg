@@ -8,7 +8,7 @@
 
 ## Author
 
-- **Name**: the Younger Pliny
+- **Name**: Pliny the Younger
 - **Born**: 61
 - **Wikipedia**: https://en.wikipedia.org/wiki/Pliny_the_Younger
 - **Gutenberg Agent ID**: 1036

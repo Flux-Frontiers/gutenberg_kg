@@ -8,7 +8,7 @@
 
 ## Author
 
-- **Name**: Robert W. (Robert William) Chambers
+- **Name**: Robert W. Chambers
 - **Born**: 1865
 - **Died**: 1933
 - **Wikipedia**: https://en.wikipedia.org/wiki/Robert_W._Chambers

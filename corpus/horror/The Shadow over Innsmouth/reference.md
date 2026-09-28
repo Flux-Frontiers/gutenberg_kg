@@ -8,7 +8,7 @@
 
 ## Author
 
-- **Name**: H. P. (Howard Phillips) Lovecraft
+- **Name**: H. P. Lovecraft
 - **Born**: 1890
 - **Died**: 1937
 - **Wikipedia**: https://en.wikipedia.org/wiki/H._P._Lovecraft

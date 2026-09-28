@@ -26,7 +26,7 @@ import urllib.request
 import xml.etree.ElementTree as ET
 from pathlib import Path
 
-from gutenberg_kg.authors import parse_reference
+from gutenberg_kg.authors import NO_AUTHOR, author_lines, credit, display_name, parse_reference
 from gutenberg_kg.genres import GUTENBERG_GENRES as ALL_GENRES
 from gutenberg_kg.headings import (
     bare_bible_title_lines as _bare_bible_title_lines,
@@ -77,6 +77,7 @@ NS = {
 RDF_NS = {
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "pgterms": "http://www.gutenberg.org/2009/pgterms/",
+    "dcterms": "http://purl.org/dc/terms/",
 }
 _RDF_ABOUT = "{http://www.w3.org/1999/02/22-rdf-syntax-ns#}about"
 _RDF_RESOURCE = "{http://www.w3.org/1999/02/22-rdf-syntax-ns#}resource"
@@ -145,13 +146,14 @@ def fetch_metadata(ebook_id: int) -> dict:
     if title_el is not None and title_el.text:
         meta["title"] = title_el.text.strip()
 
-    # Author
-    author_el = entry.find("atom:author/atom:name", NS)
-    if author_el is not None and author_el.text:
-        # Gutenberg uses "Last, First" — reverse it
-        name = author_el.text.strip()
-        parts = [p.strip() for p in name.split(",", 1)]
-        meta["author"] = " ".join(reversed(parts)) if len(parts) == 2 else name
+    # Authors: only a fallback. The feed lists co-authors in the reverse of
+    # the catalog's order, which is how Auguste Maquet came to be credited
+    # with The Count of Monte Cristo; the RDF creators below replace these.
+    meta["authors"] = [
+        display_name(el.text)
+        for el in entry.findall("atom:author/atom:name", NS)
+        if el.text and el.text.strip()
+    ]
 
     # Published date
     pub_el = entry.find("atom:published", NS)
@@ -192,52 +194,95 @@ def fetch_metadata(ebook_id: int) -> dict:
 
     meta["gutenberg_url"] = GUTENBERG_PAGE_URL.format(ebook_id=ebook_id)
 
-    # Enrich with author provenance from the RDF catalog (birth/death/Wikipedia)
+    # The RDF catalog's creators and the first creator's provenance
+    # (birth/death/Wikipedia) replace the feed's authors when it has any.
+    # A record with no creator at all (scripture, mostly) is credited to
+    # NO_AUTHOR rather than left blank.
     meta.update(_fetch_rdf_author(ebook_id))
+    if not meta["authors"]:
+        meta["authors"] = [NO_AUTHOR]
+    meta["author"] = credit(meta["authors"])
 
     return meta
 
 
-def _fetch_rdf_author(ebook_id: int) -> dict:
-    """Fetch author birth/death/Wikipedia from the Gutenberg RDF catalog.
+def rdf_authors(xml_text: str) -> dict:
+    """Read a book's authors from its Gutenberg RDF record.
 
-    Returns a (possibly empty) dict with keys:
-    ``author_birth``, ``author_death``, ``author_url``, ``author_agent_id``.
-    Failures are silently swallowed so the caller's download still succeeds.
+    The authors are the ``dcterms:creator`` agents, in the record's order,
+    which puts the primary author first: Dumas before Maquet, Polo before
+    Rusticiano. Translators and editors are recorded under relator terms, not
+    as creators, so they are never counted as authors.
+
+    Provenance describes the first creator only. It used to be read from the
+    first agent anywhere in the record, which could be a translator.
+
+    :param xml_text: The RDF document.
+    :return: ``authors`` (display names) plus whichever of ``author_birth``,
+        ``author_death``, ``author_url`` and ``author_agent_id`` the first
+        creator has. Empty when the record has no creator or does not parse.
     """
-    url = GUTENBERG_RDF_URL.format(ebook_id=ebook_id)
     try:
-        xml_text = fetch_url(url)
         root = ET.fromstring(xml_text)
-    except Exception:  # noqa: BLE001
+    except ET.ParseError:
         return {}
 
-    agent = root.find(".//pgterms:agent", RDF_NS)
-    if agent is None:
+    agents = [
+        agent
+        for creator in root.iter(f"{{{RDF_NS['dcterms']}}}creator")
+        if (agent := creator.find("pgterms:agent", RDF_NS)) is not None
+    ]
+    names = [
+        display_name(name.text)
+        for agent in agents
+        if (name := agent.find("pgterms:name", RDF_NS)) is not None
+        and name.text
+        and name.text.strip()
+    ]
+    if not names:
         return {}
 
-    result: dict[str, object] = {}
+    result: dict[str, object] = {"authors": names}
+    first = agents[0]
 
-    about = agent.get(_RDF_ABOUT, "")
-    m = re.search(r"/agents/(\d+)$", about)
+    m = re.search(r"/agents/(\d+)$", first.get(_RDF_ABOUT, ""))
     if m:
         result["author_agent_id"] = int(m.group(1))
 
-    birth = agent.find("pgterms:birthdate", RDF_NS)
+    birth = first.find("pgterms:birthdate", RDF_NS)
     if birth is not None and birth.text:
         result["author_birth"] = birth.text.strip()
 
-    death = agent.find("pgterms:deathdate", RDF_NS)
+    death = first.find("pgterms:deathdate", RDF_NS)
     if death is not None and death.text:
         result["author_death"] = death.text.strip()
 
-    for webpage in agent.findall("pgterms:webpage", RDF_NS):
-        href = webpage.get(_RDF_RESOURCE, "")
-        if "wikipedia.org" in href:
-            result["author_url"] = href
-            break
+    # English Wikipedia when the record has it, else whichever language it
+    # lists; the record's own order is not stable enough to choose by.
+    wikis = [
+        href
+        for webpage in first.findall("pgterms:webpage", RDF_NS)
+        if "wikipedia.org" in (href := webpage.get(_RDF_RESOURCE, ""))
+    ]
+    english = [href for href in wikis if "//en.wikipedia.org" in href]
+    if english or wikis:
+        result["author_url"] = (english or wikis)[0]
 
     return result
+
+
+def _fetch_rdf_author(ebook_id: int) -> dict:
+    """Fetch a book's authors and provenance from the Gutenberg RDF catalog.
+
+    Failures are swallowed so the caller's download still succeeds.
+
+    :param ebook_id: Gutenberg ebook number.
+    :return: What :func:`rdf_authors` returns; empty on any failure.
+    """
+    try:
+        return rdf_authors(fetch_url(GUTENBERG_RDF_URL.format(ebook_id=ebook_id)))
+    except Exception:  # noqa: BLE001
+        return {}
 
 
 def search_gutenberg(query: str, max_results: int = 25) -> list[dict]:
@@ -527,18 +572,9 @@ def write_reference(book_dir: str, meta: dict) -> str:
         "",
     ]
 
-    if meta.get("author"):
-        lines += ["## Author", ""]
-        lines.append(f"- **Name**: {meta['author']}")
-        if meta.get("author_birth"):
-            lines.append(f"- **Born**: {meta['author_birth']}")
-        if meta.get("author_death"):
-            lines.append(f"- **Died**: {meta['author_death']}")
-        if meta.get("author_url"):
-            lines.append(f"- **Wikipedia**: {meta['author_url']}")
-        if meta.get("author_agent_id"):
-            lines.append(f"- **Gutenberg Agent ID**: {meta['author_agent_id']}")
-        lines.append("")
+    authored = author_lines(meta)
+    if authored:
+        lines += ["## Author", "", *authored, ""]
 
     if meta.get("published"):
         lines += [f"- **Gutenberg Published**: {meta['published']}", ""]

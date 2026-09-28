@@ -11,7 +11,7 @@
 - **Name**: Hermann Hesse
 - **Born**: 1877
 - **Died**: 1962
-- **Wikipedia**: https://de.wikipedia.org/wiki/Hermann_Hesse
+- **Wikipedia**: https://en.wikipedia.org/wiki/Hermann_Hesse
 - **Gutenberg Agent ID**: 941
 
 - **Gutenberg Published**: 2001-02-01

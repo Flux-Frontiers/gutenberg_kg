@@ -1214,3 +1214,97 @@ def test_text_to_markdown_colon_subtitle_leaves_prose_alone():
     result = text_to_markdown(text, {"title": "T", "author": "A"})
     assert "*Bossuet muttered:*" in result
     assert "\nHe said nothing more that evening." in result
+
+
+# ---------------------------------------------------------------------------
+# Authors from the Gutenberg catalog
+#
+# The fixtures are Gutenberg's own records, saved as served, so these tests
+# read exactly what a download reads. Only the HTTP fetch is replaced.
+# ---------------------------------------------------------------------------
+
+_FIXTURES = Path(__file__).parent / "fixtures"
+
+
+def _rdf(ebook_id: int) -> str:
+    return (_FIXTURES / "rdf" / f"pg{ebook_id}.rdf").read_text(encoding="utf-8")
+
+
+def test_rdf_authors_lists_every_creator_primary_first():
+    assert dg.rdf_authors(_rdf(1184))["authors"] == ["Alexandre Dumas", "Auguste Maquet"]
+    assert dg.rdf_authors(_rdf(12410))["authors"] == ["Marco Polo", "Rusticiano da Pisa"]
+
+
+def test_rdf_authors_leaves_out_translators_and_editors():
+    # War and Peace: translated by the Maudes. Marco Polo: edited by Cordier,
+    # translated by Yule. None of them is an author.
+    assert dg.rdf_authors(_rdf(2600))["authors"] == ["Leo Tolstoy"]
+    assert "Henry Yule" not in dg.rdf_authors(_rdf(12410))["authors"]
+
+
+def test_rdf_authors_provenance_is_the_first_creators():
+    dumas = dg.rdf_authors(_rdf(1184))
+    assert dumas["author_birth"] == "1802"
+    assert dumas["author_death"] == "1870"
+    assert dumas["author_agent_id"] == 492
+    assert dumas["author_url"].startswith("https://en.wikipedia.org/")
+
+
+def test_rdf_authors_empty_for_a_record_with_no_creator():
+    assert dg.rdf_authors(_rdf(10)) == {}  # the King James Bible
+
+
+def test_rdf_authors_empty_for_an_unparseable_record():
+    assert dg.rdf_authors("") == {}
+    assert dg.rdf_authors("<html>Service Unavailable</html>") == {}
+
+
+def test_fetch_metadata_credits_the_catalogs_authors_not_the_feeds(monkeypatch):
+    """The feed lists Maquet before Dumas, which is how Maquet came to be
+    credited with The Count of Monte Cristo. The RDF order must win."""
+    opds = (_FIXTURES / "opds" / "1184.opds").read_text(encoding="utf-8")
+    monkeypatch.setattr(dg, "fetch_url", lambda url: opds if url.endswith(".opds") else _rdf(1184))
+
+    meta = dg.fetch_metadata(1184)
+
+    assert meta["authors"] == ["Alexandre Dumas", "Auguste Maquet"]
+    assert meta["author"] == "Alexandre Dumas and Auguste Maquet"
+    assert meta["author_birth"] == "1802"
+
+
+def test_fetch_metadata_falls_back_to_the_feed_when_the_rdf_fails(monkeypatch):
+    opds = (_FIXTURES / "opds" / "1184.opds").read_text(encoding="utf-8")
+
+    def _fetch(url: str) -> str:
+        if url.endswith(".opds"):
+            return opds
+        raise OSError("RDF unavailable")
+
+    monkeypatch.setattr(dg, "fetch_url", _fetch)
+
+    meta = dg.fetch_metadata(1184)
+
+    assert sorted(meta["authors"]) == ["Alexandre Dumas", "Auguste Maquet"]
+    assert "author_birth" not in meta
+
+
+def test_write_reference_round_trips_co_authors(tmp_path: Path):
+    from gutenberg_kg.authors import parse_reference
+
+    meta = {"title": "The Count of Monte Cristo", "ebook_id": 1184, **dg.rdf_authors(_rdf(1184))}
+    write_reference(str(tmp_path), meta)
+
+    parsed = parse_reference(tmp_path / "reference.md")
+    assert parsed["author"] == "Alexandre Dumas and Auguste Maquet"
+    assert parsed["author_birth"] == "1802"
+
+
+def test_fetch_metadata_credits_various_when_the_catalog_names_no_author(monkeypatch):
+    """The King James Bible has no creator in Gutenberg's feed or RDF."""
+    opds = (_FIXTURES / "opds" / "10.opds").read_text(encoding="utf-8")
+    monkeypatch.setattr(dg, "fetch_url", lambda url: opds if url.endswith(".opds") else _rdf(10))
+
+    meta = dg.fetch_metadata(10)
+
+    assert meta["authors"] == ["Various"]
+    assert meta["author"] == "Various"

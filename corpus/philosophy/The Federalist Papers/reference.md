@@ -8,11 +8,13 @@
 
 ## Author
 
-- **Name**: James Madison
+- **Name**: Alexander Hamilton
 - **Born**: 1757
 - **Died**: 1804
 - **Wikipedia**: https://en.wikipedia.org/wiki/Alexander_Hamilton
 - **Gutenberg Agent ID**: 13
+- **Co-author**: John Jay
+- **Co-author**: James Madison
 
 - **Gutenberg Published**: 1998-07-01
 

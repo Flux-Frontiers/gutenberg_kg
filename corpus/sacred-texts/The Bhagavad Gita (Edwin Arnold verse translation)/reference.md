@@ -6,6 +6,10 @@
 - **URL**: https://www.gutenberg.org/ebooks/2388
 - **Rights**: Public domain in the USA.
 
+## Author
+
+- **Name**: Various
+
 - **Gutenberg Published**: 2000-11-01
 
 ## Language

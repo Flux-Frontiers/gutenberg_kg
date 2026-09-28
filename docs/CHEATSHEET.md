@@ -158,7 +158,7 @@ one page per author.
 # Rebuild corpus/authors/ from existing reference.md files
 gutenkg authors
 
-# Also re-fetch RDF and patch reference.md files missing provenance
+# Also re-fetch the RDF and rewrite every reference.md Author section from it
 gutenkg authors --refresh
 
 # Preview
@@ -166,9 +166,9 @@ gutenkg authors --dry-run
 gutenkg authors --refresh --dry-run
 ```
 
-New downloads already land with full provenance in `reference.md` — use
-`--refresh` only for books that predate the RDF fetch or had a transient
-network failure.
+New downloads already land with full provenance in `reference.md`. Use
+`--refresh` for books that predate the RDF fetch, after a transient network
+failure, or after a change to how author names are parsed.
 
 ---
 

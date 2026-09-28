@@ -11,7 +11,7 @@
 - **Name**: Oscar Wilde
 - **Born**: 1854
 - **Died**: 1900
-- **Wikipedia**: https://fr.wikipedia.org/wiki/Oscar_Wilde
+- **Wikipedia**: https://en.wikipedia.org/wiki/Oscar_Wilde
 - **Gutenberg Agent ID**: 111
 
 - **Gutenberg Published**: 1994-10-01

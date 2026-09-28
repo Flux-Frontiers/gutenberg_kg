@@ -6,6 +6,10 @@
 - **URL**: https://www.gutenberg.org/ebooks/2017
 - **Rights**: Public domain in the USA.
 
+## Author
+
+- **Name**: Various
+
 - **Gutenberg Published**: 1999-12-01
 
 ## Language

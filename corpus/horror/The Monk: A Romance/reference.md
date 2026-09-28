@@ -8,7 +8,7 @@
 
 ## Author
 
-- **Name**: M. G. (Matthew Gregory) Lewis
+- **Name**: M. G. Lewis
 - **Born**: 1775
 - **Died**: 1818
 - **Wikipedia**: https://en.wikipedia.org/wiki/Matthew_Gregory_Lewis

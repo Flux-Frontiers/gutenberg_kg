@@ -8,7 +8,7 @@
 
 ## Author
 
-- **Name**: Leo, graf Tolstoy
+- **Name**: Leo Tolstoy
 - **Born**: 1828
 - **Died**: 1910
 - **Wikipedia**: https://en.wikipedia.org/wiki/Leo_Tolstoy

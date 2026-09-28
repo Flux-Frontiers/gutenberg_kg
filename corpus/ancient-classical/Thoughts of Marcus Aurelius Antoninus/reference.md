@@ -8,7 +8,7 @@
 
 ## Author
 
-- **Name**: Emperor of Rome Marcus Aurelius
+- **Name**: Marcus Aurelius
 - **Born**: 121
 - **Died**: 180
 - **Wikipedia**: https://en.wikipedia.org/wiki/Marcus_Aurelius

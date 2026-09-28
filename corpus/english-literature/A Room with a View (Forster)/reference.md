@@ -8,7 +8,7 @@
 
 ## Author
 
-- **Name**: E. M. (Edward Morgan) Forster
+- **Name**: E. M. Forster
 - **Born**: 1879
 - **Died**: 1970
 - **Wikipedia**: https://en.wikipedia.org/wiki/E._M._Forster

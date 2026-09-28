@@ -50,8 +50,8 @@ KGRAG registration) is described in [`README.md`](../README.md).
      ┌─────────────────────────────────────────────────────────────────┐
      │ gutenkg authors  (gutenberg_kg.authors.build)                    │
      │   ├─ parse every corpus/*/*/reference.md                        │
-     │   ├─ [--refresh] re-fetch RDF for books missing provenance       │
-     │   │             and patch their reference.md in place            │
+     │   ├─ [--refresh] re-fetch RDF for every book and rewrite the     │
+     │   │             Author section of its reference.md               │
      │   ├─ write corpus/authors/<slug>/author.md    (one per author)   │
      │   └─ write corpus/authors/index.md            (master table)     │
      └─────────────────────────────────────────────────────────────────┘
@@ -101,7 +101,9 @@ All four live in module-level constants at the top of
 Fetches the OPDS atom entry and extracts:
 
 - `title` — `<atom:title>`
-- `author` — `<atom:author><atom:name>`, reversed from `"Last, First"` → `"First Last"`
+- `authors` -- every `<atom:author><atom:name>`, as a fallback only: the feed
+  lists co-authors in the reverse of the catalog's order, so the RDF creators
+  (4.2) replace them whenever the RDF has any
 - `published` — `<atom:published>` (date Gutenberg added the ebook, not original publication)
 - `rights` — `<atom:rights>`
 - `subjects` — all `<atom:category term="...">`
@@ -110,20 +112,40 @@ Fetches the OPDS atom entry and extracts:
 - `gutenberg_url` — synthesized (`/ebooks/{id}`)
 
 Immediately after the OPDS parse, `fetch_metadata` calls `_fetch_rdf_author(id)`
-and merges the result into the same `meta` dict (silent failure — a missing
-RDF doesn't break the download).
+and merges the result into the same `meta` dict (silent failure -- a missing
+RDF doesn't break the download). It then sets `author`, the byline, from
+`authors` with `authors.credit`: "A", "A and B", or "A, B, and C". A book
+whose feed and RDF both name no author, such as the King James Bible, is
+credited to `authors.NO_AUTHOR`, "Various", rather than left blank.
 
 ### 4.2 RDF enrichment — `_fetch_rdf_author(ebook_id)`
 
-The RDF catalog exposes the data the OPDS feed omits. Parses the first
-`<pgterms:agent>` element and extracts:
+The RDF catalog exposes the data the OPDS feed omits. The parsing is in
+`rdf_authors(xml_text)`. The authors are the `<dcterms:creator>` agents, in
+the record's order, which puts the primary author first (Dumas before
+Maquet). Translators and editors sit under relator terms such as
+`marcrel:trl`, not `dcterms:creator`, so they are never authors. Each name
+goes through `authors.display_name`, which turns Gutenberg's
+`"Surname, Forenames, Title"` headings into reading order: "Tolstoy, Leo,
+graf" becomes "Leo Tolstoy", and "Wells, H. G. (Herbert George)" becomes
+"H. G. Wells". Its docstring lists every rule.
+
+The provenance fields describe the first creator:
 
 | Field | Source |
 |---|---|
+| `authors` | Every `<dcterms:creator>` agent's `<pgterms:name>`, as display names |
 | `author_birth` | `<pgterms:birthdate>` (year as string, may be negative for BCE) |
 | `author_death` | `<pgterms:deathdate>` |
-| `author_url` | First `<pgterms:webpage rdf:resource="…wikipedia.org…">` |
+| `author_url` | The English Wikipedia `<pgterms:webpage>`, else any Wikipedia one |
 | `author_agent_id` | Integer extracted from `rdf:about="2009/agents/N"` |
+
+In `reference.md` the first creator is the `**Name**` line, followed by that
+person's Born/Died/Wikipedia/Agent ID lines, and every further creator gets a
+`**Co-author**` line. `authors.parse_reference` rebuilds `authors` and the
+`author` byline from those lines. An Internet Archive reference has no Name
+line; it records the item's creator as `**Author**` under `## Publication`,
+and `parse_reference` falls back to that.
 
 BCE years are stored as negative integers (Homer: `-750 / -650`).
 
@@ -261,17 +283,22 @@ post-processor. It does not fetch anything on its own unless
 Steps (in order):
 
 1. **Scan** — glob `corpus/*/*/reference.md`
-2. **Parse** — `parse_reference(path)` extracts title, ebook_id, genre,
-   author, author_birth, author_death, author_url, author_agent_id by regex
-3. **Refresh** (only with `--refresh`) — for any book whose reference.md has
-   no Born/Died fields, call `download_gutenberg._fetch_rdf_author(ebook_id)`
-   and `patch_reference()` to insert the missing lines after `**Name**:`
-4. **Group** — books are grouped by the `author` string (the OPDS-reversed
-   display name) via a `defaultdict(list)`
-5. **Write per-author pages** — `corpus/authors/<slug>/author.md` with
-   `# Name`, era line (*born – died*), Wikipedia, agent ID, and a
+2. **Parse** -- `parse_reference(path)` extracts title, ebook_id, genre,
+   authors, the author byline, author_birth, author_death, author_url and
+   author_agent_id by regex
+3. **Refresh** (only with `--refresh`) -- for every book with a Gutenberg ID,
+   call `gutenberg._fetch_rdf_author(ebook_id)` and `rewrite_author_section()`
+   to replace the reference.md author lines with the RDF's. A failed fetch, or
+   an RDF with no creator, leaves the file untouched
+4. **Group** -- each person in `authors` gets the book, so a co-written book
+   is listed under every author. Born/Died/Wikipedia describe the first
+   author only, so a co-author's entry carries none of them
+5. **Write per-author pages** -- `corpus/authors/<slug>/author.md` with
+   `# Name`, era line (*born - died*), Wikipedia, agent ID, and a
    "Works in Corpus" table
-6. **Write index** — `corpus/authors/index.md` with a master table
+6. **Remove stale pages** -- a page directory whose author is no longer in
+   the corpus, and which holds nothing but a generated `author.md`, is removed
+7. **Write index** -- `corpus/authors/index.md` with a master table
 
 Rate-limiting: `--refresh` sleeps `0.3 s` between RDF fetches to be polite.
 
@@ -282,20 +309,40 @@ Rate-limiting: `--refresh` sleeps `0.3 s` between RDF fetches to be polite.
 When you add a book manually, the new `download_book()` call already fetches
 the RDF, so new books land with full provenance in `reference.md`.
 
-For any book whose `reference.md` predates the RDF fetch (or if a refresh has
-been skipped by network failure), run:
+For any book whose `reference.md` predates the RDF fetch, or after a change
+to how authors are parsed, run:
 
 ```bash
+gutenkg authors --refresh --dry-run   # list what would change
 gutenkg authors --refresh
 ```
 
 This:
-1. Finds all `reference.md` files missing Born/Died
-2. Re-fetches the RDF for each
-3. Inserts the missing lines into `reference.md` in place
-4. Regenerates `corpus/authors/` from the now-complete metadata
+1. Re-fetches the RDF for every book with a Gutenberg ID
+2. Rewrites the author lines of each `reference.md` whose authors or
+   provenance differ, and leaves every other line of the file as it was
+3. Regenerates `corpus/authors/` and removes pages for authors no longer in
+   the corpus
 
-Safe to run repeatedly — books that already have provenance are skipped.
+Safe to run repeatedly: a second run rewrites nothing. The book text files are
+never touched, since the index's character offsets depend on them.
+
+A bundle carries authors in its `catalog.json`, which `gutenkg build-corpus`
+writes at the end of a full build. To refresh only the catalog, for the same
+books, without rebuilding the index:
+
+```bash
+poetry run python -c '
+import json; from pathlib import Path
+from gutenberg_kg.build_corpus import build_catalog
+out = Path("bundles/gutenberg-all/.dockg")
+keys = frozenset(json.loads((out / "catalog.json").read_text()))
+build_catalog(sorted({k.split("/")[0] for k in keys}), out, catalog_keys=keys)'
+make export-swift
+```
+
+`export-swift` reads authors from that catalog, so the app's packs pick up the
+new names without re-embedding anything.
 
 ---
 

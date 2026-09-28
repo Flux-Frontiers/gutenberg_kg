@@ -8,7 +8,7 @@
 
 ## Author
 
-- **Name**: Adam, Captain Seaborn
+- **Name**: Adam Seaborn
 - **Gutenberg Agent ID**: 47897
 
 - **Gutenberg Published**: 2017-04-03

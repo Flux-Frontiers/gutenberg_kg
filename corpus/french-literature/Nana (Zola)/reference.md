@@ -11,7 +11,7 @@
 - **Name**: Émile Zola
 - **Born**: 1840
 - **Died**: 1902
-- **Wikipedia**: https://fr.wikipedia.org/wiki/%C3%89mile_Zola
+- **Wikipedia**: https://en.wikipedia.org/wiki/Émile_Zola
 - **Gutenberg Agent ID**: 528
 
 - **Gutenberg Published**: 2004-03-01

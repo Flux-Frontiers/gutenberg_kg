@@ -8,11 +8,12 @@
 
 ## Author
 
-- **Name**: Wilhelm Grimm
+- **Name**: Jacob Grimm
 - **Born**: 1785
 - **Died**: 1863
 - **Wikipedia**: https://en.wikipedia.org/wiki/Jacob_Grimm
 - **Gutenberg Agent ID**: 971
+- **Co-author**: Wilhelm Grimm
 
 - **Gutenberg Published**: 2001-04-01
 

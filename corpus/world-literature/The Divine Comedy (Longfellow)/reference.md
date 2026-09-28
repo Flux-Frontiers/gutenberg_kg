@@ -11,7 +11,7 @@
 - **Name**: Dante Alighieri
 - **Born**: 1265
 - **Died**: 1321
-- **Wikipedia**: https://it.wikipedia.org/wiki/Dante_Alighieri
+- **Wikipedia**: https://en.wikipedia.org/wiki/Dante_Alighieri
 - **Gutenberg Agent ID**: 507
 
 - **Gutenberg Published**: 1997-08-01

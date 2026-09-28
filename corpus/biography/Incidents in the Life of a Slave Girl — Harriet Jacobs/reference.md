@@ -8,7 +8,7 @@
 
 ## Author
 
-- **Name**: Harriet A. (Harriet Ann) Jacobs
+- **Name**: Harriet A. Jacobs
 - **Born**: 1813
 - **Died**: 1897
 - **Wikipedia**: https://en.wikipedia.org/wiki/Harriet_Jacobs

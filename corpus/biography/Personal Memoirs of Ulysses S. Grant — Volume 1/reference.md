@@ -8,7 +8,7 @@
 
 ## Author
 
-- **Name**: Ulysses S. (Ulysses Simpson) Grant
+- **Name**: Ulysses S. Grant
 - **Born**: 1822
 - **Died**: 1885
 - **Wikipedia**: https://en.wikipedia.org/wiki/Ulysses_S._Grant
