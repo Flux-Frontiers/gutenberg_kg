@@ -254,6 +254,16 @@ gutenkg export-web-catalog                 # -> ../knowledge_press/web/src/game/
 make export-web-catalog                    # the same; KNOWLEDGE_PRESS_DIR moves the checkout
 ```
 
+The forest's reader reads each book from a static `<slug>.json`, so the
+published site needs no worker. `export-web-books` writes them from the Swift
+packs, with chapters built as the worker's `get_chapter` builds them. Run
+`gutenkg export-swift` first.
+
+```bash
+gutenkg export-web-books                   # -> ../knowledge_press/web/public/books/
+make export-web-books                      # the same; KNOWLEDGE_PRESS_DIR moves the checkout
+```
+
 ## Visualisation and Light-Field Rendering
 
 `viz3d` and `quilt` need the 3-D extra: `poetry install --extras viz3d`. The

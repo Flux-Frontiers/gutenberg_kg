@@ -25,6 +25,7 @@ from gutenberg_kg.cli import (  # noqa: E402, F401
     cmd_download,
     cmd_export_embedder,
     cmd_export_swift,
+    cmd_export_web_books,
     cmd_export_web_catalog,
     cmd_genres,
     cmd_ia,
