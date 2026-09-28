@@ -4,6 +4,8 @@ from __future__ import annotations
 
 from pathlib import Path
 
+import pytest
+
 from gutenberg_kg.ia import (
     _coerce_list,
     _coerce_str,
@@ -747,3 +749,179 @@ def test_parse_reference_reads_the_ia_author(tmp_path: Path):
     meta = _parse_reference(book / "reference.md")
     assert meta["author"] == "Frank D. Graham and Theo Audel & Company"
     assert meta["authors"] == ["Frank D. Graham and Theo Audel & Company"]
+
+
+# ---------------------------------------------------------------------------
+# OCR cleanup on the Audel scans
+#
+# The fixture is pages 303-308 of Audels Electric Library Vol 1 exactly as the
+# Internet Archive serves its DjVu text, trailing spaces included. Every line
+# below is quoted from it or from the other Audel volumes.
+# ---------------------------------------------------------------------------
+
+from gutenberg_kg.ia import is_ocr_debris, recurring_words, text_notes  # noqa: E402
+
+_AUDEL_PAGES = (
+    Path(__file__).parent / "fixtures" / "ia" / "audels-vol-1-pp303-308_djvu.txt"
+).read_text(encoding="utf-8")
+
+
+def test_clean_ocr_joins_hyphens_before_a_trailing_space():
+    """Tesseract ends every line with a space, so "in- " never matched."""
+    assert "incredible" in clean_ocr("vibrating with in- \ncredible velocities. \n")
+
+
+def test_clean_ocr_strips_thousands_page_numbers():
+    lines = clean_ocr("Automatic train control.\n4.047\n4,048\nMore text.").split("\n")
+    assert "4.047" not in lines and "4,048" not in lines
+
+
+def test_clean_ocr_removes_page_numbered_running_headers():
+    report: dict = {}
+    result = clean_ocr(_AUDEL_PAGES, report=report)
+    assert "Dynamo and Motor Experiments" not in result
+    assert report["page_headers"] >= 6
+
+
+def test_clean_ocr_keeps_numbered_chapter_headings():
+    text = "\n\n".join(f"CHAPTER {n}\n\nText of chapter {n}." for n in range(1, 7))
+    assert clean_ocr(text).count("CHAPTER") == 6
+
+
+def test_clean_ocr_removes_the_figure_debris_and_keeps_the_text():
+    report: dict = {}
+    result = clean_ocr(_AUDEL_PAGES, report=report)
+    for debris in ("s Cs ve ig", "—t | x . Y", "7 ke } A -: AM"):
+        assert debris not in result
+    assert "The Miller-Cowen attachment is an outgrowth of the Gilley Gramm" in result
+    assert "holder. The instrument is readily dissected, as the illustrations show." in result
+    assert report["debris_lines"] > 0
+
+
+def test_clean_ocr_leaves_cut_words_alone():
+    """The scan itself lost "and"; nothing may invent it back."""
+    assert "requirements of Professors Miller anc" in clean_ocr(_AUDEL_PAGES)
+
+
+@pytest.mark.parametrize(
+    "line",
+    [
+        "s Cs ve ig",
+        "—t | x . Y \\ \\N —",
+        "7 ke } A -: AM \\ 7",
+        "eOIALOy opposing mpRESSED  CURRENT.PHASE mo OPPOSING",
+        "|",
+        "......",
+    ],
+)
+def test_is_ocr_debris_true_for_debris(line: str):
+    assert is_ocr_debris(line)
+
+
+@pytest.mark.parametrize(
+    "line",
+    [
+        "Ans. They are perpetually in motion, vibrating with in-",
+        "Ans. No.",
+        "E = I X R",
+        "Resistance R= W/I? Inductance L = o/i Capacitance C = y/E",
+        "which, Z=impedance; R =resistance: X,=inductance reactance; X, =capacity react-",
+        "Squirrel-Cage Wound-Rotor and High-Reactance",
+        "bo 3-I-watt lamps. | 3.5-watt lamps. : 4-watt lamps.",
+        "Buff limestone.................... 40-60 20 {2 7",
+        "3/0 ** |.0342 |.0381 |.0409 |.0447 |.0475 |.0496 :",
+        "CHAPTER 130",
+        "",
+    ],
+)
+def test_is_ocr_debris_false_for_text(line: str):
+    assert not is_ocr_debris(line)
+
+
+def test_recurring_words_needs_a_book_length_text():
+    assert recurring_words("the ohm and the volt") is None
+    vocab = recurring_words("the ohm and the volt " * 3000)
+    assert vocab is not None and {"the", "ohm", "and", "volt"} <= vocab
+
+
+def test_vocab_rejects_one_off_garbage_but_keeps_rare_word_prose():
+    vocab = frozenset({"and", "their", "the", "value"})
+    assert is_ocr_debris("Carmoog WZZLLLN Liseeee", vocab)
+    assert not is_ocr_debris(
+        "value in lumbago, sciatica, brachial and trigeminal neuralgia, varices and their sequalae,",
+        vocab,
+    )
+
+
+def test_clean_ocr_drops_a_mark_alone_at_the_margin():
+    report: dict = {}
+    result = clean_ocr(
+        "form and that cannot be affected by heat or cold or any known force; | \n", report=report
+    )
+    assert result.rstrip().endswith("force;")
+    assert report["margin_marks"] == 1
+
+
+def test_clean_ocr_report_counts_every_step():
+    report: dict = {}
+    clean_ocr(_AUDEL_PAGES, report=report)
+    assert set(report) == {
+        "hyphens_joined",
+        "page_numbers",
+        "page_headers",
+        "debris_lines",
+        "margin_marks",
+    }
+    # Five words break at a hyphen; "per-" is followed by a blank line, and a
+    # join never crosses one.
+    assert report["hyphens_joined"] == 4
+
+
+def test_text_notes_record_the_source_and_the_cleanup():
+    meta = {
+        "ocr": "tesseract 5.0.0-1-g862e",
+        "cleanup": {"debris_lines": 2386, "hyphens_joined": 632},
+    }
+    notes = "\n".join(text_notes(meta))
+    assert notes.startswith("## Text notes")
+    assert "tesseract 5.0.0-1-g862e" in notes
+    assert "2,386" in notes and "632" in notes
+    assert "cuts off at the page edge" in notes
+
+
+def test_text_notes_absent_without_a_cleanup_report():
+    assert text_notes({"ocr": "tesseract"}) == []
+
+
+def test_write_reference_includes_the_text_notes(tmp_path: Path):
+    book = tmp_path / "Audels Electric Library Vol 1"
+    book.mkdir()
+    meta = {"title": "Audels Electric Library Vol 1", "identifier": "audels-electric-library-vol-1"}
+    report: dict = {}
+    text_to_markdown(_AUDEL_PAGES, meta, report=report)
+    _ia.write_reference(book, {**meta, "ocr": "tesseract 5.0.0-1-g862e", "cleanup": report})
+    reference = (book / "reference.md").read_text(encoding="utf-8")
+    assert "## Text notes" in reference
+    assert f"**Lines of OCR debris removed**: {report['debris_lines']:,}" in reference
+
+
+def test_vocab_keeps_short_lines_of_ordinary_words():
+    """In one volume "thing" or "inductance" may never recur; the line stays."""
+    vocab = frozenset({"the", "and"})
+    assert not is_ocr_debris("thing seriously amiss.", vocab)
+    assert not is_ocr_debris("Inductance reactance.", vocab)
+    assert is_ocr_debris("WZZLLLN", vocab)
+
+
+def test_vocab_checks_hyphenated_words_part_by_part():
+    vocab = frozenset({"circuit", "breaker", "the", "and"})
+    assert not is_ocr_debris("CIRCUIT-BREAKER and the", vocab)
+
+
+def test_recurring_words_ignore_debris_that_repeats():
+    """ "eee" recurs across a book's drawings but never in its prose."""
+    prose = "The current flows through the coil and the armature turns. " * 1500
+    debris = "eee SSS eee nnn\n" * 50
+    vocab = recurring_words(prose + "\n" + debris)
+    assert vocab is not None
+    assert "current" in vocab and "eee" not in vocab

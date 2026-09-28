@@ -182,6 +182,8 @@ def fetch_ia_metadata(identifier: str) -> dict:
     meta["edition"] = _coerce_str(ia.get("edition", ""))
     meta["language"] = _coerce_str(ia.get("language", "eng")) or "eng"
     meta["subjects"] = _coerce_list(ia.get("subject", []))
+    # The engine the Archive ran over the scan, e.g. "tesseract 5.0.0-1-g862e".
+    meta["ocr"] = _coerce_str(ia.get("ocr", ""))
 
     # Date: keep only the year
     raw_date = _coerce_str(ia.get("date", ""))
@@ -265,20 +267,296 @@ def _detect_running_headers(lines: list[str]) -> frozenset[str]:
     )
 
 
-def clean_ocr(text: str) -> str:
+#: A page number alone on a line. Continuously paginated sets (the Audel
+#: volumes run to page 4,047) print thousands with a comma or a period.
+PAGE_NUMBER_RE = re.compile(r"^\s*(?:\d{1,4}|\d[.,]\d{3})\s*$", re.MULTILINE)
+
+#: A page header: a running title with the page number before or after it,
+#: "304 Dynamo and Motor Experiments" or "Automatic Train Control 4.047".
+_PAGE_NO = r"(?:\d{1,4}|\d[.,]\d{3})"
+_NUMBERED_HEADER_RE = re.compile(rf"^(?:{_PAGE_NO}\s+(\S.{{2,70}}?)|(\S.{{2,70}}?)\s+{_PAGE_NO})$")
+
+#: Headings that carry a number of their own and repeat by design, so a
+#: repeated "CHAPTER 130" is never mistaken for a page header.
+_NUMBERED_HEADING_RE = re.compile(
+    r"^(?:CHAPTER|SECTION|PART|DIVISION|VOLUME|BOOK|FIGS?\.?|TABLE)\b", re.IGNORECASE
+)
+
+
+def _header_key(text: str) -> str:
+    """Letters only, lowercased: "Dynamo and Motor Experiments" and an OCR
+    variant with different spacing or punctuation share a key."""
+    return re.sub(r"[^a-z]", "", text.lower())
+
+
+def _numbered_header_keys(lines: list[str]) -> frozenset[str]:
+    """Keys of running titles that appear with a page number 4+ times.
+
+    The plain running-header rule needs a line to repeat exactly, which a
+    header never does once its page number changes on every page.
+
+    :param lines: The text's lines, trailing whitespace already stripped.
+    :returns: Keys (see :func:`_header_key`) of the running titles.
+    """
+    keys = []
+    for line in lines:
+        m = _NUMBERED_HEADER_RE.match(line.strip())
+        if not m:
+            continue
+        title = m.group(1) or m.group(2)
+        if _NUMBERED_HEADING_RE.match(title) or len(_header_key(title)) < 4:
+            continue
+        keys.append(_header_key(title))
+    return frozenset(key for key, n in Counter(keys).items() if n >= 4)
+
+
+def _is_numbered_header(line: str, keys: frozenset[str]) -> bool:
+    m = _NUMBERED_HEADER_RE.match(line.strip())
+    return bool(m) and _header_key(m.group(1) or m.group(2)) in keys
+
+
+# --- Debris: diagrams, rotated text and specks read as text -----------------
+
+_EDGE_PUNCT = ".,;:!?()[]{}\"'`*\u201c\u201d\u2018\u2019\u00ab\u00bb"
+_WORD_RE = re.compile(r"^[A-Za-z]+(?:['-][A-Za-z]+)*$")
+_NUMBER_RE = re.compile(
+    r"^[+-]?(?:\d+(?:[.,/:]\d+)*(?:[-\u2013]\d+(?:[.,]\d+)*)?|\.\d+)(?:%|\u00b0|th|st|nd|rd)?$"
+)
+_ABBREV_RE = re.compile(r"^(?:[A-Za-z]{1,4}\.)+[A-Za-z]{0,3}$")
+#: A number with its unit: "1-Inch", "3.5-watt", "8Inch", "3-phase".
+_QUANTITY_RE = re.compile(r"^\d+(?:[.,/]\d+)?-?[A-Za-z]{1,10}$")
+#: What separates tokens when judging a line: space, and the rules, dashes and
+#: operators OCR runs words into ("Z=impedance", "fuel/consumption").
+_TOKEN_SPLIT_RE = re.compile(r"[\s|\u2014\u2013_=+/]+")
+_NEUTRAL_TOKENS = frozenset({"=", "+", "-", "\u00d7", "\u00f7", "&", "x", "X"})
+_TWO_LETTER_WORDS = frozenset(
+    "am an as at be by do go he if in is it me my no of oh on or ox so to up us we".split()
+)
+
+
+def _token_is_wordlike(token: str, vocab: frozenset[str] | None = None) -> bool | None:
+    """Whether an OCR token reads as a word, number or abbreviation.
+
+    :param token: One token of a line.
+    :param vocab: Words known to recur in this text (see :func:`recurring_words`).
+        When given, a word of three or more letters must be in it.
+    :returns: True or False; None for a token that says nothing either way
+        (punctuation alone, or an operator such as "=").
+    """
+    bare = token.strip(_EDGE_PUNCT)
+    if not bare or bare in _NEUTRAL_TOKENS:
+        return None
+    if (
+        _NUMBER_RE.match(bare)
+        or _QUANTITY_RE.match(bare)
+        or _ABBREV_RE.match(token.strip("(),;:\"'"))
+    ):
+        return True
+    if not _WORD_RE.match(bare):
+        return False
+    if len(bare) == 1:
+        # "a" and "I" are words; any other lone letter is as likely a formula
+        # variable (E = I X R) as a diagram label, so it decides nothing.
+        return True if bare in "aI" else None
+    if not re.search(r"[aeiouyAEIOUY]", bare) and not bare.isupper():
+        return False
+    if len(bare) == 2:
+        # "In" or "of" is a word; "Ae" or "dN" is noise. An all-caps pair is
+        # an abbreviation (DC, AC) only if prose uses it elsewhere.
+        if bare.lower() in _TWO_LETTER_WORDS:
+            return True
+        if not bare.isupper():
+            return False
+        return vocab is None or bare.lower() in vocab
+    # Hyphenated words are checked part by part, as the vocabulary holds
+    # plain words: "circuit-breaker" is known if "circuit" and "breaker" are.
+    if vocab is not None and any(
+        len(part) >= 3 and part.lower() not in vocab for part in re.split(r"['-]", bare)
+    ):
+        return False
+    # Case is judged per hyphenated part: "Squirrel-Cage" is ordinary type,
+    # "SeT" or "gOIALOy" is noise.
+    return all(
+        part.islower() or part.isupper() or part[1:].islower()
+        for part in re.split(r"['-]", bare)
+        if part
+    )
+
+
+#: Words a text needs before recurrence says anything: in a few lines nearly
+#: every word occurs once. The Audel volumes run 55,000 to 105,000.
+MIN_WORDS_FOR_VOCAB = 10_000
+
+
+def recurring_words(text: str, min_count: int = 2) -> frozenset[str] | None:
+    """Lowercased words that recur in the text's prose.
+
+    OCR garbage ("Carmoog", "WZZLLLN", mirrored "UOTYPOSOUAIP") almost never
+    repeats letter for letter, and real words, even technical ones, almost
+    always do somewhere in a book. Only prose-like lines are counted (six or
+    more tokens, nearly all well-formed, half of them lowercase words),
+    because debris does repeat within debris: "eee", "sss" and "nnn" recur
+    across a book's drawings, and so do capital pairs such as "SU" and "ES". It stands
+    in for a dictionary, which would also reject the book's own jargon.
+
+    :param text: The whole text.
+    :param min_count: Occurrences in prose needed to count as a word.
+    :returns: The recurring words, of two or more letters, or None for a text
+        with fewer than :data:`MIN_WORDS_FOR_VOCAB` words, where recurrence
+        means nothing.
+    """
+    if len(re.findall(r"[A-Za-z]{3,}", text)) < MIN_WORDS_FOR_VOCAB:
+        return None
+    counts: Counter[str] = Counter()
+    for line in text.split("\n"):
+        tokens = [t for t in _TOKEN_SPLIT_RE.split(line.strip()) if t]
+        shapes = [v for v in (_token_is_wordlike(t) for t in tokens) if v is not None]
+        lower_words = sum(1 for t in tokens if re.fullmatch(r"[a-z]{3,}", t.strip(_EDGE_PUNCT)))
+        if len(shapes) >= 6 and sum(shapes) >= 0.8 * len(shapes) and lower_words >= len(tokens) / 2:
+            counts.update(w.lower() for w in re.findall(r"[A-Za-z]{2,}", line))
+    return frozenset(w for w, n in counts.items() if n >= min_count)
+
+
+def is_ocr_debris(line: str, vocab: frozenset[str] | None = None) -> bool:
+    """Whether a line of OCR text is debris rather than text.
+
+    Drawings, rotated or mirrored captions, and specks come out of OCR as
+    lines like "s Cs ve ig" or "—t | x . Y \\N —". A line is debris when
+    fewer than half its characters are letters or digits, or fewer than half
+    its tokens read as words, numbers or abbreviations. Dot leaders, pipes,
+    dashes and underscores are ignored, so a table row such as
+    "Buff limestone........ 40-60 20" survives.
+
+    :param line: One line, any whitespace.
+    :param vocab: Words known to recur in the text, from :func:`recurring_words`.
+        Without it only the shape of each token is judged, which lets
+        garbage such as "Carmoog" pass as a word.
+    :returns: True for debris; False for text and for a blank line.
+    """
+    stripped = line.strip()
+    if not stripped:
+        return False
+    # A structural heading is text however rare its words ("CHAPTER XLII").
+    if _STRUCTURAL_HEADING_RE.match(stripped) or QUES_PATTERN.match(stripped):
+        return False
+    body = re.sub(r"\s|\.{3,}", "", stripped)
+    if not body or sum(c.isalnum() for c in body) < 0.5 * len(body):
+        return True
+    tokens = [t for t in _TOKEN_SPLIT_RE.split(stripped) if t]
+    verdicts = [v for v in (_token_is_wordlike(t, vocab) for t in tokens) if v is not None]
+    if not verdicts:
+        return True
+    if vocab is not None and len(tokens) <= 3:
+        # A short line of ordinary words ("thing seriously amiss.",
+        # "Inductance reactance.") can fail recurrence in one volume. Keeping
+        # an occasional stray word costs less than losing a sentence, so a
+        # short line survives when every token is a well-formed word of three
+        # or more letters in ordinary case. All-caps junk ("WZZLLLN") does not.
+        bares = [t.strip(_EDGE_PUNCT) for t in tokens]
+        if all(
+            len(b) >= 3 and not b.isupper() and _token_is_wordlike(t)
+            for b, t in zip(bares, tokens, strict=True)
+        ):
+            return False
+    if vocab is not None:
+        # Prose made of rare words ("lumbago, sciatica, brachial and
+        # trigeminal neuralgia") fails the recurrence test word by word, but
+        # reads as clean type. Keep a line whose tokens are four-fifths or
+        # more well-formed words, anchored by one word that does recur.
+        shapes = [v for v in (_token_is_wordlike(t) for t in tokens) if v is not None]
+        if (
+            len(shapes) >= 3
+            and sum(shapes) >= 0.8 * len(shapes)
+            and any(t.strip(_EDGE_PUNCT).lower() in vocab for t in tokens)
+        ):
+            return False
+    if sum(verdicts) < 0.5 * len(verdicts):
+        return True
+    # A short line needs one real word: "7 ke } A -: AM \\ 7" passes the
+    # ratio on its digits alone. A formula ("E = IR") is exempt.
+    if len(body) < 25 and "=" not in stripped:
+        return not any(
+            _token_is_wordlike(t, vocab)
+            and len(t.strip(_EDGE_PUNCT)) >= 3
+            and re.fullmatch(r"[A-Za-z]+(?:-[A-Za-z]+)*", t.strip(_EDGE_PUNCT))
+            for t in _TOKEN_SPLIT_RE.split(stripped)
+            if t
+        )
+    return False
+
+
+#: A mark alone at the edge of a line: rules, gutter shadows and specks at the
+#: margin, as in "any known force; |" or ": feeds E.P. valve".
+_MARGIN_MARK = r"[|!\u00a6'\"`\u2018\u2019\u201c\u201d:;~_\\/\u00bb\u00ab*]+"
+_LEADING_MARK_RE = re.compile(rf"^{_MARGIN_MARK}\s+")
+_TRAILING_MARK_RE = re.compile(rf"\s+{_MARGIN_MARK}$")
+
+
+def _strip_margin_marks(line: str) -> tuple[str, int]:
+    """Drop a mark standing alone at either end of a line of text.
+
+    Only a line of four or more tokens is touched, so a short line that is
+    nothing but a mark is left for the debris rule, and a mark attached to a
+    word ("force;") is punctuation, not a margin mark.
+
+    :param line: One line, trailing whitespace already stripped.
+    :returns: The line and how many marks were removed (0, 1 or 2).
+    """
+    if len(line.split()) < 4:
+        return line, 0
+    body = line.lstrip()
+    indent = line[: len(line) - len(body)]
+    removed = 0
+    for pattern in (_LEADING_MARK_RE, _TRAILING_MARK_RE):
+        trimmed = pattern.sub("", body, count=1)
+        if trimmed != body:
+            removed += 1
+            body = trimmed
+    return indent + body, removed
+
+
+def clean_ocr(text: str, report: dict | None = None) -> str:
     """Clean common OCR artifacts from Internet Archive DjVu text.
 
     Steps (in order):
-    1. Normalize unicode ligatures and common smart-quote variants
-    2. Join hyphenated line-breaks (OCR word-wrap artifact)
-    3. Strip bare page-number lines
-    4. Strip the back-of-book index section (must happen before running-header
+    1. Strip trailing whitespace from every line. The Archive's Tesseract
+       text ends each line with a space, which kept step 3 from ever joining
+       a hyphenated word.
+    2. Normalize unicode ligatures and common smart-quote variants
+    3. Join hyphenated line-breaks (OCR word-wrap artifact)
+    4. Strip bare page-number lines, including "4,047" / "4.047"
+    5. Strip the back-of-book index section (must happen before running-header
        removal so the threshold is measured against the original body length)
-    5. Remove running headers/footers (lines that repeat 4+ times)
-    6. Remove figure/illustration markers
-    7. Collapse excessive blank lines
+    6. Remove running headers/footers: lines that repeat 4+ times, and
+       running titles that repeat 4+ times with a changing page number
+    7. Remove figure/illustration markers
+    8. Blank lines of OCR debris (:func:`is_ocr_debris`): drawings and
+       rotated text read as characters. Blanked rather than deleted, so the
+       text either side of a figure is not run together.
+    9. Drop marks standing alone at the edge of a line of text
+    10. Collapse excessive blank lines
+
+    Nothing restores what the scan itself lacks: a word cut off at the page
+    edge stays cut off.
+
+    :param text: DjVu text as the Archive serves it.
+    :param report: Optional dict that receives a count per step:
+        ``hyphens_joined``, ``page_numbers``, ``page_headers``,
+        ``debris_lines`` and ``margin_marks``.
+    :returns: The cleaned text.
     """
-    # 1. Ligatures and smart quotes
+    counts = {
+        "hyphens_joined": 0,
+        "page_numbers": 0,
+        "page_headers": 0,
+        "debris_lines": 0,
+        "margin_marks": 0,
+    }
+
+    # 1. Trailing whitespace
+    text = "\n".join(line.rstrip() for line in text.replace("\r\n", "\n").split("\n"))
+
+    # 2. Ligatures and smart quotes
     for ligature, replacement in LIGATURES.items():
         text = text.replace(ligature, replacement)
     text = (
@@ -289,13 +567,13 @@ def clean_ocr(text: str) -> str:
         .replace("\u00ad", "")
     )  # soft hyphen (remove entirely)
 
-    # 2. Join hyphenated line-breaks: "mag-\nnetism" -> "magnetism"
-    text = re.sub(r"(\w)-\n(\w)", r"\1\2", text)
+    # 3. Join hyphenated line-breaks: "mag-\nnetism" -> "magnetism"
+    text, counts["hyphens_joined"] = re.subn(r"(\w)-\n(\w)", r"\1\2", text)
 
-    # 3. Bare page-number lines (1-4 digit number alone on a line)
-    text = re.sub(r"^\s*\d{1,4}\s*$", "", text, flags=re.MULTILINE)
+    # 4. Bare page-number lines
+    text, counts["page_numbers"] = PAGE_NUMBER_RE.subn("", text)
 
-    # 4. Strip the index section before running-header removal so the 70%
+    # 5. Strip the index section before running-header removal so the 70%
     #    threshold is measured against the full (uncollapsed) body.
     last_index_match: re.Match | None = None
     for m in INDEX_HEADING_RE.finditer(text):
@@ -303,19 +581,37 @@ def clean_ocr(text: str) -> str:
     if last_index_match and last_index_match.start() > len(text) * 0.70:
         text = text[: last_index_match.start()].rstrip() + "\n"
 
-    # 5. Running headers / footers
+    # 6. Running headers / footers, exact and page-numbered
     lines = text.split("\n")
     running = _detect_running_headers(lines)
-    if running:
-        lines = [ln for ln in lines if ln.strip() not in running]
-        text = "\n".join(lines)
+    numbered = _numbered_header_keys(lines)
+    kept = [
+        ln for ln in lines if ln.strip() not in running and not _is_numbered_header(ln, numbered)
+    ]
+    counts["page_headers"] = len(lines) - len(kept)
+    lines = kept
 
-    # 6. Figure / illustration markers
-    text = FIGURE_RE.sub("", text)
+    # 7. Figure / illustration markers
+    lines = [FIGURE_RE.sub("", ln) for ln in lines]
 
-    # 7. Collapse 3+ consecutive blank lines to 2
+    # 8-9. Debris lines and margin marks
+    vocab = recurring_words(text)
+    cleaned = []
+    for ln in lines:
+        if is_ocr_debris(ln, vocab):
+            counts["debris_lines"] += 1
+            cleaned.append("")
+            continue
+        ln, marks = _strip_margin_marks(ln)
+        counts["margin_marks"] += marks
+        cleaned.append(ln)
+    text = "\n".join(cleaned)
+
+    # 10. Collapse 3+ consecutive blank lines to 2
     text = re.sub(r"\n{4,}", "\n\n\n", text)
 
+    if report is not None:
+        report.update(counts)
     return text
 
 
@@ -378,7 +674,7 @@ def _find_toc_range(lines: list[str]) -> range:
     return range(0)
 
 
-def text_to_markdown(text: str, meta: dict) -> str:
+def text_to_markdown(text: str, meta: dict, report: dict | None = None) -> str:
     """Convert IA OCR text to structured Markdown.
 
     Pipeline:
@@ -388,8 +684,13 @@ def text_to_markdown(text: str, meta: dict) -> str:
     4. Detect headings (CHAPTER, PART, SECTION, ALL-CAPS, Ques.)
     5. For CHAPTER headings, absorb an ALL-CAPS subtitle on the next line
     6. Preserve paragraph structure; suppress extra blank lines
+
+    :param text: DjVu text as the Archive serves it.
+    :param meta: Item metadata, for the front matter.
+    :param report: Optional dict that receives :func:`clean_ocr`'s counts.
+    :returns: The Markdown.
     """
-    text = clean_ocr(text)
+    text = clean_ocr(text, report=report)
     lines = text.split("\n")
     total = len(lines)
 
@@ -497,6 +798,38 @@ def text_to_markdown(text: str, meta: dict) -> str:
 # ---------------------------------------------------------------------------
 
 
+def text_notes(meta: dict) -> list[str]:
+    """The ``## Text notes`` section of an IA ``reference.md``.
+
+    Says where the text came from and what cleaning did to it, so a reader
+    who meets a garbled line knows it is the scan's OCR and what was already
+    taken out. Written only when *meta* carries the counts from
+    :func:`clean_ocr`.
+
+    :param meta: Item metadata, with ``cleanup`` counts and the ``ocr`` engine.
+    :returns: The section's lines, or none.
+    """
+    cleanup = meta.get("cleanup")
+    if not cleanup:
+        return []
+    engine = meta.get("ocr") or "an unrecorded OCR engine"
+    return [
+        "## Text notes",
+        "",
+        f"- **Source**: the Internet Archive's DjVu text, OCR by {engine}. It has not been proofread.",
+        f"- **Hyphenated words rejoined**: {cleanup.get('hyphens_joined', 0):,}",
+        f"- **Page numbers removed**: {cleanup.get('page_numbers', 0):,}",
+        f"- **Page headers removed**: {cleanup.get('page_headers', 0):,}",
+        f"- **Lines of OCR debris removed**: {cleanup.get('debris_lines', 0):,}"
+        " (drawings, rotated or mirrored captions and specks read as text)",
+        f"- **Stray margin marks removed**: {cleanup.get('margin_marks', 0):,}",
+        "- **Not repaired**: words the scan cuts off at the page edge, misread words,"
+        " and tables, which OCR does not keep in columns. Figures are omitted;"
+        " their captions are kept where OCR read them as text.",
+        "",
+    ]
+
+
 def write_reference(book_dir: Path, meta: dict) -> Path:
     """Write a reference.md sidecar with Internet Archive metadata."""
     ref_path = book_dir / "reference.md"
@@ -553,6 +886,8 @@ def write_reference(book_dir: Path, meta: dict) -> Path:
     desc = meta.get("description", "")
     if desc:
         lines += ["## Summary", "", desc, ""]
+
+    lines += text_notes(meta)
 
     ref_path.write_text("\n".join(lines), encoding="utf-8")
     return ref_path
@@ -655,7 +990,8 @@ def download_book(
         return None
 
     print(f"  Converting {len(text):,} chars to Markdown...")
-    markdown = text_to_markdown(text, meta)
+    meta["cleanup"] = {}
+    markdown = text_to_markdown(text, meta, report=meta["cleanup"])
 
     # Write files
     book_dir.mkdir(parents=True, exist_ok=True)

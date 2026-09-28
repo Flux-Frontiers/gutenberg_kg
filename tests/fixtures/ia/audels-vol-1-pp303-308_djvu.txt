@@ -1,0 +1,309 @@
+For what service is the Dobrowolsri three wir 
+dynamo adapted? 
+
+
+Dynamo and Motor Experiments — 303 
+
+
+
+
+
+CHAPTER 16 
+
+
+
+
+
+Experiments Illustrating 
+Dynamo and Motor Principles 
+
+
+In this chapter a number of simple experiments are shown 
+vhich will be very helpful to the student in showing in a 
+
+
+E. KNOTT APPRS-V= 
+
+
+in 
+yo 
+: : u iS 
+Hue ; I: : 
+NG, L 
+
+
+tS 
+. SV SSSES 
+
+
+
+
+
+3. 448.—Gilley Gramme machine. Designed to show the lines of force in a working model 
+»f the dynamo and motor with the armature in position and in actual operation. Both the 
+jeld and armature are designed and made in flat form, so that the upper surfaces of both 
+ire level, permitting the paper or glass upon which the lines of force by the filings method 
+ire to be mapped, to take a smooth, horizontal position. The lines of force are thus per- 
+
+
+nitted to arrange themselves under no other influence than that of the magnetic force exist- 
+ng in the armature and field. 
+
+
+nple way “how it works.” The two elementary machines 
+ed in making the experiments are: 
+
+
+1. Gilley Gramme machine; 
+2. Miller-Cowen Dynamo. 
+
+
+NNN 
+
+
+
+
+
+304 Dynamo and Motor Experiments 
+
+
+
+
+
+The Gilley-Gramme machine is a modification of a type of machin 
+now generally used for large units for power and lighting stations, so worke 
+out that the lines of force may easily be plotted by the compass and filing 
+methods. 
+
+
+The Miller-Cowen attachment is an outgrowth of the Gilley Gramm 
+machine and was built meeting the requirements of Professors Miller anc 
+Cowen of Boston schools. Their purpose was to design a machine o 
+
+
+s Cs ve ig 
+. \ 4 -— 
+
+
+— 7 ‘ x \ 
+—t | x . Y \ \N — 
+—t IN 4 MM 2 
+7 ke } A -: AM \\ 7 
+ae N = NYAS 
+Ae EEE dN IN 
+SAS \\\ ‘ \ BS ; 
+ae \\\ YY \ No 
+—-s ey ' \ & 2. INNO 
+SA ZEA WO . @: / 
+NM ZO Ay, . pes? 
+ALE \\ a Mp Ny i} 
+rm tf \ WS Wy Y) - 
+BY, y Nn @O® } 
+SU KW ES 
+yy A . 
+LY) \ — re 
+2 Y \\ 
+tf, My We . SS r . 
+x Wy 
+YAH hh \ 
+Ml / Tif HT \\ » 
+PPE AD \ 
+What 
+] 
+
+
+‘aisle 
+
+
+i} 
+
+
+pas Se ee ES Sas 
+LIE I ———— 
+iy 
+SSoSTon — || MASS. — 
+
+
+
+
+
+Fias. 449 to 451.—Gilley Gramme machine disassembled showing the three basic parts of the 
+apparatus: 1, armature with the commutator; 2, the field magnet with base; 3, the brust 
+holder. The instrument is readily dissected, as the illustrations show. Each part can be 
+studied separately, as will be noted. The four part armature has four segment commutator 
+The connections of the coils to the commutator segments, being on the under side of the 
+armature, are not shown in the illustration. The field coil is easily removed from its basse 
+so designed that 6 in. permanent magnets can be substituted for the field coil, thus teaching 
+the fundamental principle of the magneto. 
+
+
+large open construction, using the same field magnets as are used in the 
+G lley Gramme machine, and by eliminating the feature of plotting the 
+lines of force by the iron filings method they were enabled to design a ma. 
+chine which could be used in lecture table demonstration and used tc 
+
+
+Dynamo and Motor Experiments 305 
+
+
+
+
+
+develop all of the fundamental principles of both direct and alternating 
+current machines. 
+
+
+Directions for Experiments with Gilley Gramme Ma- 
+ine.—Ihe following experiments are fundamental. | 
+1ey are the experiments usually selected for secondary 
+1001 work. Many modifications and additions to this 
+t will suggest themselves to the teacher. 
+
+
+a!" 
+
+
+ssit° 
+grist 
+
+
+Preis | 
+
+
+set 
+
+
+
+
+
+ih sotee 
+
+
+452.—DMiller-Cowen machine for study of both d.c. and a.c._ In order to enakle the student 
+see clearly the working of the essential parts of the instrument, the split commutator for 
+e direct current and the collecting rings for the alternating current are greatly enlarged 
+id separated from the armature winding. In order to make clear the effect of the iron core 
+the moving armature, the instrument is designed so that the iron core, which for the sake 
+efficiency is laminated, is made easily removable, so that the instrument may be used 
+cher with or without the core. The field magnet may be easily removed and small per- 
+anent magnets clamped under the same screws. The Miller-Cowen machine serves to 
+‘:monstrate; 1, use of commutator; 2, effect of speed of rotation; 3, separately and self 
+cited alternators; 4, series, shunt and compound dynamos. The galvanometer used should 
+t be of high sensibility. Any milli-ampere meter in good working order may be used to 
+vantage. 
+
+
+
+
+
+306 Dynamo and Motor Experiments 
+
+
+The experiments here described have been compiled by 
+teacher of long experience in one of the larger Middle We 
+High Schools, the selection and sequence of the work bet 
+such as he has found most helpful to his students in developi 
+a clear understanding of the principle and operation of tl] 
+dynamo and motor. 
+
+
+Exercise 1. Nature of the Field Magnet. 
+
+
+Part 1.—Remove the electromagnet (usually called the field magn 
+from the machine and lay it on a page of a note book (fig. 454). Mark 
+outline on the paper. Connect wires from the poles of a battery to t 
+binding posts and indicate on the paper the direction of the current 
+
+
+
+
+
+
+=n 
+
+
+Fias. 453 to 455.—Exercise 1. Gilley Gramme machine with field magnet removed tllust7 
+ing the nature of the field magnet. 
+
+
+the wires by arrows, remembering that the current is assumed to cor 
+from the copper or carbon pole of the battery. Show by an arrow t 
+direction of the current on the top side of the coil. From the direct 
+of the current in the coil determine the North and South poles of the me 
+net, using Ampere’s rule for the purpose. Mark large letters N and 
+on these poles in the diagram. 
+
+
+Now place a small compass between the poles and trace several lines 
+force in the following way: Place the compass near to one pole piece, a 
+directly under the compass mark the direction in which its North e 
+points. Move the compass ahead in that direction. Mark the directi 
+in which it now points, and so on until the line is traced. Several lir 
+traced in this way, each starting from a different point on the pole piet 
+will show the distribution of lines ir. the circular space between the pol 
+
+
+Dynamo and Motor Experiments 307 
+
+
+To get an idea of the strength of this field, which has just been mapped, 
+notice how fast the compass needle vibrates after being tipped or jarred 
+when it is between the pole pieces. The stronger the field, the more rap- 
+idly the needle vibrates. The field strength is proportional to the square 
+of the number of vibrations per minute. 
+
+
+Part 2.—With the compass still remaining between the poles disconnect. 
+the wires from the electromagnet. Notice how fast the compass needle 
+vibrates, and from this compare the strength of the magnetic field when 
+current is and is not flowing through the coil. Notice whether the needle 
+indicates that the iron has retained any of its magnetism. The small 
+amount of magnetism which remains in iron after the current stops flowing 
+is called “‘residual magnetism.”’ 
+
+
+Part 3.—Again connect the electromagnet with the cell, but this time 
+
+
+Ay 
+
+
+
+
+
+GS. 456 and 457.—Exercise 2. Gilley Gramme machine as connected to illustrate the effect of 
+tron ring of armature. 
+
+
+with the current in the coil reversed. ‘With the aid of the compass needle, 
+notice what change has been made in the lines of force. 
+
+
+Part 4.—Plot the lines of force by the iron filings method as follows: 
+Having the coil connected with the battery, lay a sheet of note book paper 
+over the pole pieces and sprinkle iron filings until, with gentle tapping, 
+the lines are distinctly formed. Draw a diagram showing the pole pieces 
+and these iron filing lines. 
+
+
+Exercise 2. Effect of Iron Ring of Armature. 
+
+
+Part 1.—Place the armature between the pole pieces of the field magnet 
+as shown in fig. 457. Send current from a cell through the field magnet 
+coil and with the compass needle find what alteration in the lines of force 
+of the field magnet has been made by the presence of the iron ring of the 
+armature. 
+
+
+308 Dynamo and Motor Experiments 
+
+
+Part 2.—Plot the lines of force under these new conditions by the 1 
+filings method and make a diagram of field magnet, iron ring and line 
+force as shown by the filings. The presence of this iron ring between 
+pole pieces has changed the shape of the lines of force. Notice : 
+whether the presence of the iron has increased or decreased the stren 
+of the magnetic field between the pole pieces. (Compare this diag 
+with the diagram in Part 4 of Exercise 1.) 

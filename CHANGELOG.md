@@ -10,6 +10,21 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Fixed
 
+- Internet Archive text is cleaned properly, and the eight Audel volumes are
+  regenerated with it. Hyphenated words were never rejoined, because the
+  Archive's OCR ends every line with a space; about 6,800 now are. Running
+  titles printed with a page number ("304 Dynamo and Motor Experiments") and
+  page numbers such as "4.047" are removed. Drawings and rotated captions
+  that OCR read as characters, about 34,000 lines across the set, are removed
+  by a new debris filter; lines of this kind fell from 22 to 4 percent, at a
+  cost of under 1 percent of real words, mostly labels inside drawings. Every
+  IA book's `reference.md` now ends with a Text notes section giving the OCR
+  engine, a count for each cleanup step, and what was not repaired. The
+  Audel scans are cropped into the binding, so letters are missing at line
+  starts and ends; that cannot be fixed from these scans, and
+  `docs/IA_OCR_TEXT.md` records the measurements and the other scans that
+  were considered. The Audel volumes need `gutenkg ingest --genre
+  audel-electric --force-build` and `gutenkg build-corpus --update`.
 - Books with more than one author are credited to all of them, primary
   author first. Only the first author in Gutenberg's OPDS feed was kept, and
   the feed lists co-authors in reverse, so The Count of Monte Cristo and The
