@@ -376,7 +376,7 @@ whether it concerns the things which are within our own power or those
 which are not; and if it concerns anything beyond our power, be prepared
 to say that it is nothing to you.
 
-II
+### II
 
 Remember that desire demands the attainment of that of which you are
 desirous; and aversion demands the avoidance of that to which you are
@@ -403,7 +403,7 @@ but a cup of which you are fond of—for thus, if it is broken, you can
 bear it; if you embrace your child or your wife, that you embrace a
 mortal—and thus, if either of them dies, you can bear it.
 
-IV
+### IV
 
 When you set about any action, remind yourself of what nature the action
 is. If you are going to bathe, represent to yourself the incidents usual
@@ -415,7 +415,7 @@ if any impediment arises in bathing, you will be able to say, “It was not
 only to bathe that I desired, but to keep my will in harmony with nature;
 and I shall not keep it thus if I am out of humor at things that happen.”
 
-V
+### V
 
 Men are disturbed not by things, but by the views which they take of
 things. Thus death is nothing terrible, else it would have appeared so to
@@ -426,7 +426,7 @@ It is the action of an uninstructed person to reproach others for his own
 misfortunes; of one entering upon instruction, to reproach himself; and
 one perfectly instructed, to reproach neither others nor himself.
 
-VI
+### VI
 
 Be not elated at any excellence not your own. If a horse should be
 elated, and say, “I am handsome,” it might be endurable. But when you are
@@ -454,14 +454,14 @@ from the ship, lest you should be missing when called for.
 Demand not that events should happen as you wish; but wish them to happen
 as they do happen, and you will go on well.
 
-IX
+### IX
 
 Sickness is an impediment to the body, but not to the will unless itself
 pleases. Lameness is an impediment to the leg, but not to the will; and
 say this to yourself with regard to everything that happens. For you will
 find it to be an impediment to something else, but not truly to yourself.
 
-X
+### X
 
 Upon every accident, remember to turn toward yourself and inquire what
 faculty you have for its use. If you encounter a handsome person, you
@@ -469,7 +469,7 @@ will find continence the faculty needed; if pain, then fortitude; if
 reviling, then patience. And when thus habituated, the phenomena of
 existence will not overwhelm you.
 
-XI
+### XI
 
 Never say of anything, “I have lost it,” but, “I have restored it.” Has
 your child died? It is restored. Has your wife died? She is restored. Has
@@ -517,7 +517,7 @@ that man seeks or shuns. Whoever then would be free, let him wish
 nothing, let him decline nothing, which depends on others; else he must
 necessarily be a slave.
 
-XV
+### XV
 
 Remember that you must behave as at a banquet. Is anything brought round
 to you? Put out your hand and take a moderate share. Does it pass by you?
@@ -568,7 +568,7 @@ room for envy or emulation. But, for your part, do not desire to be a
 general, or a senator, or a consul, but to be free; and the only way to
 this is a disregard of things which lie not within our own power.
 
-XX
+### XX
 
 Remember that it is not he who gives abuse or blows, who affronts, but
 the view we take of these things as insulting. When, therefore, anyone
@@ -927,7 +927,7 @@ its fitness to the foot, it comes first to be gilded, then purple, and
 then studded with jewels. For to that which once exceeds the fit measure
 there is no bound.
 
-XL
+### XL
 
 Women from fourteen years old are flattered by men with the title of
 mistresses. Therefore, perceiving that they are regarded only as
@@ -1044,7 +1044,7 @@ therefore, desires me to read Chrysippus to him, I rather blush when I
 cannot exhibit actions that are harmonious and consonant with his
 discourse.
 
-L
+### L
 
 Whatever rules you have adopted, abide by them as laws, and as if you
 would be impious to transgress them; and do not regard what anyone says
@@ -1067,7 +1067,7 @@ defeat honor may be lost or—won. Thus Socrates became perfect, improving
 himself by everything, following reason alone. And though you are not yet
 a Socrates, you ought, however, to live as one seeking to be a Socrates.
 
-LI
+### LI
 
 The first and most necessary topic in philosophy is the practical
 application of principles, as, _We ought not to lie_; the second is that

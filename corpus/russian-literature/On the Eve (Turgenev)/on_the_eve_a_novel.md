@@ -269,7 +269,7 @@ i,,.............ee. u,,............. oo. y is always consonantal except
 when it is the last letter of the word.
 g is always hard.
 
-I
+### I
 
 On one of the hottest days of the summer of 1853, in the shade of a tall
 lime-tree on the bank of the river Moskva, not far from Kuntsovo, two
@@ -625,7 +625,7 @@ shoulders high and his neck craned forward. Yet, he looked a man of
 finer breeding than Shubin; more of a gentleman, one might say, if that
 word had not been so vulgarised among us.
 
-II
+### II
 
 The young men went down to the river Moskva and walked along its bank.
 There was a breath of freshness from the water, and the soft plash of
@@ -835,7 +835,7 @@ her care. He was at that time twenty-one. Anna Vassilyevna carried out
 her last wish; a small room in the lodge of the country villa was given
 up to him.
 
-IV
+### IV
 
 ‘Come to dinner, come along,’ said the lady of the house in a plaintive
 voice, and they all went into the dining-room. ‘Sit beside me, _Zoé_,’
@@ -1034,7 +1034,7 @@ affectionate, though they avoided meeting her eyes. Her soul expanded;
 and something tender, holy, and good seemed half sinking into her heart,
 half springing up within it.
 
-V
+### V
 
 Shubin did not leave his room before night. It was already quite dark;
 the moon--not yet at the full--stood high in the sky, the milky way
@@ -1253,7 +1253,7 @@ took down from the bookshelf the second volume of Raumer’s _History of
 the Hohenstaufen_, and sighing twice, he set to work diligently to read
 it.
 
-VI
+### VI
 
 Meanwhile, Elena had gone to her room, and sat down at the open window,
 her head resting on her hands. To spend about a quarter of an hour every
@@ -1774,7 +1774,7 @@ hold the handkerchief before him in his opened fingers, and with the
 same intense attention gazed now at the window, now at the floor and
 walls.
 
-IX
+### IX
 
 Shubin went back to his room in the lodge and was just opening a book,
 when Nikolai Artemyevitch’s valet came cautiously into his room and
@@ -1941,7 +1941,7 @@ eyes and noses and cheeks, and then, directly they have passed one
 another, they resume their former indifferent, often cross, and
 generally sickly, expression.
 
-X
+### X
 
 Elena met Bersenyev cordially, though not in the garden, but the
 drawing-room, and at once, almost impatiently, renewed the conversation
@@ -2153,7 +2153,7 @@ sadness did not prevent him, however, from setting to work on the
 _History of the Hohenstaufen_, and beginning to read it at the very page
 at which he had left off the evening before.
 
-XI
+### XI
 
 Two days later, Insarov in accordance with his promise arrived at
 Bersenyev’s with his luggage. He had no servant; but without any
@@ -2778,7 +2778,7 @@ friends, of which they were both conscious, but to which they could
 not give a name, and which they feared to analyse. In this way a month
 passed.
 
-XV
+### XV
 
 Anna Vassilyevna, as the reader knows already, liked staying at home;
 but at times she manifested, quite unexpectedly, an irresistible longing
@@ -3919,7 +3919,7 @@ even children rarely sleep--the sleep of a child convalescent after
 sickness, when its mother sits near its cradle and watches it, and
 listens to its breathing.
 
-XX
+### XX
 
 ‘Come to my room for a minute,’ Shubin said to Bersenyev, directly the
 latter had taken leave of Anna Vassilyevna: ‘I have something to show

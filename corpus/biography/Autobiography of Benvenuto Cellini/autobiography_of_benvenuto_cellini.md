@@ -121,7 +121,7 @@ of the Annunziata in that city.
 
 Autobiography of Benvenuto Cellini
 
-I
+### I
 
 ALL men of whatsoever quality they be, who have done anything of
 excellence, or which may properly resemble excellence, ought, if they
@@ -139,7 +139,7 @@ terror in me, and astonishment that I should have reached this age of
 fifty-eight, wherein, thanks be to God, I am still travelling
 prosperously forward.
 
-II
+### II
 
 IT is true that men who have laboured with some show of excellence, have
 already given knowledge of themselves to the world; and this alone ought
@@ -308,7 +308,7 @@ sunset of one day to sunset of the next-twenty-four hours.
 
 Note 3. Benvenuto means Welcome.
 
-IV
+### IV
 
 ANDREA CELLINI was yet alive when I was about three years old, and he
 had passed his hundredth. One day they had been altering a certain
@@ -349,7 +349,7 @@ he kissed me and gave me some pieces of money.
 Note 1. The word is 'bocche,' so I have translated it by 'mouths.' But
 Cellini clearly meant the gaping claws of the scorpion.
 
-V
+### V
 
 MY father began teaching me to play upon the flute and sing by note; by
 notwithstanding I was of that tender age when little children are wont
@@ -406,7 +406,7 @@ industrial guilds called the Greater and the Lesser Arts. The former
 took precedence of the latter, both in political importance and in
 social esteem.
 
-VI
+### VI
 
 AS I have said, my father was the devoted servant and attached friend of
 the house of Medici; and when Piero was banished, he entrusted him with
@@ -575,7 +575,7 @@ Duke Alessandro, established the second Medicean dynasty in Florence.
 Note 2. The Eight, or Gli Otto, were a magistracy in Florence with
 cognizance of matters affecting the internal peace of the city.
 
-IX
+### IX
 
 THE CARDINAL DE’ MEDICI, who afterwards became Pope Clement VII., had us
 recalled to Florence at the entreaty of my father. [1] A certain pupil
@@ -680,7 +680,7 @@ V. at Bologna in 1529-30, which settled for three centuries the destiny
 of Italy. We shall hear much more of him from Cellini in the course of
 this narrative.
 
-X
+### X
 
 ALL this while I worked as a goldsmith, and was able to assist my good
 father. His other son, my brother Cecchino, had, as I said before, been
@@ -741,7 +741,7 @@ Steal not, and live honestly.”
 Note 1. The Fish-stone, or Pietra del Pesce, was the market on the quay
 where the fish brought from the sea up the Arno to Pisa used to be sold.
 
-XI
+### XI
 
 THIS letter fell into the hands of my master Ulivieri, and he read it
 unknown to me. Afterwards he avowed that he had read it, and added: “So
@@ -1022,7 +1022,7 @@ Note 2. The Italian is 'sobbillato,' which might be also translated
 gives this verb the force of using pressure and boring on until somebody
 is driven to do something.
 
-XV
+### XV
 
 I WENT on working with Pagolo Arsago, and earned a good deal of money,
 the greater part of which I always sent to my good father. At the end of
@@ -1329,7 +1329,7 @@ Farnesina in Trastevere, built by the Sienese banker, Agostino Chigi. It
 was here that Raphael painted his Galatea and the whole fable of Cupid
 and Psyche.
 
-XX
+### XX
 
 WHILE I was working at this piece, Lucagnolo, of whose ability I have
 before spoken, showed considerable discontent, telling me over and over
@@ -3129,7 +3129,7 @@ Signoria. He collected the remnants of the Bandle Nere, and gave them
 over to Orazio Baglioni, who contrived to escape from S. Angelo in
 safety to Perugia.
 
-XL
+### XL
 
 I HAD always taken pleasure in seeing the world; and having never been
 in Mantua, I went there very willingly. Of the money I had brought to
@@ -3971,7 +3971,7 @@ Note 2. Varchi, in his 'Storia Florentina,' lib. xi., gives a short
 account of Cecchino Cellini’s death in Rome, mentioning also Bertino
 Aldobrandi, in the attempt to revenge whom he lost his life.
 
-L
+### L
 
 RETURNING to the monument, I should relate that certain famous men of
 letters, who knew my brother, composed for me an epitaph, telling me
@@ -4017,7 +4017,7 @@ of four points, and three lilies gules.” He has tricked the arms thus in
 a MS. of the Palatine Library. See Leclanchè, p. 103; see also Piatti,
 vol. i. p. 233, and Plon, p. 2.
 
-LI
+### LI
 
 I WENT on applying myself with the utmost diligence upon the gold-work
 for Pope Clement’s button. He was very eager to have it, and used to
@@ -4286,7 +4286,7 @@ the Banchi opposite the Mint; his accomplice was sent to the galleys;
 the Genoese thief was hanged in the Campo di Fiore, while I remained in
 better repute as an honest man than I had enjoyed before.
 
-LV
+### LV
 
 WHEN I had nearly finished my piece, there happened that terrible
 inundation which flooded the whole of Rome. [1] I waited to see what
@@ -4599,7 +4599,7 @@ attention as was due to them and to myself.
 
 Note 1. That is, Guiacum, called by the Italians 'legno santo.'
 
-LX
+### LX
 
 IT happened that Cardinal Salviati, who, as I have related, entertained
 an old hostility against me, had been appointed Legate to Parma. In that
@@ -6883,7 +6883,7 @@ kicked down the ladder which had lifted him to sovereignty, and showed
 himself the absolute master of Florence. Cosimo was elected Duke upon
 the 9th of January 1537.
 
-XC
+### XC
 
 I NOW began to attend to my shop, and did some business, not however of
 much moment, because I had still to think about my health, which was not
@@ -7707,7 +7707,7 @@ months that I felt the power or will to eat.
 
 Note 1. Probably the Doveria in the Valdivedro.
 
-C
+### C
 
 LEAVING Ferrara in the morning, I went to Santa Maria at Loreto; and
 thence, having performed my devotions, pursued the journey to Rome.
@@ -7752,7 +7752,7 @@ Note 2. He was Duke of Bracciano, father of Duke Paolo, who married
 Isabella de’ Medici, and murdered her before his second marriage with
 Vittoria Accoramboni. See my 'Renaissance in Italy,' vol. vi.
 
-CI
+### CI
 
 WHILE I was engaged in prosecuting my affairs with so much vigour, there
 arrived a letter sent post-haste to me by the Cardinal of Ferrara, which
@@ -8056,7 +8056,7 @@ Note 3. Cellini means Pallavicini. Nothing seems to be known about him,
 except that his imprisonment is mentioned in a letter of Caro’s under
 date 1540.
 
-CV
+### CV
 
 THIS man had been arrested as a Lutheran. He was an excellent companion;
 but, from the point of view of his religion, I found him the biggest
@@ -8446,7 +8446,7 @@ did not appear to be very firmly fixed. This I attempted to dislodge;
 after setting my hands to it, and feeling it move, it easily gave way,
 and I drew it out. Through the gap thus made I crept into the town.
 
-CX
+### CX
 
 I HAD crawled more than five hundred paces from the place where I fell,
 to the gate by which I entered. No sooner had I got inside than some
@@ -9870,7 +9870,7 @@ End of Part One
 
 Autobiography of Benvenuto Cellini Part II
 
-I
+### I
 
 I REMAINED for some time in the Cardinal of Ferrara’s palace, very well
 regarded in general by everybody, and much more visited even than I had
@@ -9928,7 +9928,7 @@ of those times.
 
 Note 4. It will be remembered that the Cardinal was Archbishop of Milan.
 
-II
+### II
 
 IN addition to these things the Cardinal ordered me to make the model
 for a salt-cellar; but he said he should like me to leave the beaten
@@ -10069,7 +10069,7 @@ Note 4. 'Tenevano molto conto di me.' This is perhaps equivalent to
 'held me in high esteem.' But Cellini uses the same phrase with the
 meaning I have given above, in Book I, chap. lxxxvi.
 
-IV
+### IV
 
 I bought a new pair of stirrups, although I still hoped to regain my
 good pad by persuasion; and since I was very well mounted, and well
@@ -10163,7 +10163,7 @@ che non era isfandato.'
 
 Note 3. Staggia is the next post on the way to Florence.
 
-V
+### V
 
 WHILE we were making our escape, the sons of the dead man ran to the
 Duke of Melfi, and begged for some light horsemen to catch us up and
@@ -10239,7 +10239,7 @@ of Charles V.
 Note 2. 'Cognobbi.' The subject to this verb may be either Cellini or
 the doctor.
 
-VI
+### VI
 
 AT that period the Duke of Ferrara came to terms with Pope Paul about
 some old matters in dispute between them relating to Modena and certain
@@ -10440,7 +10440,7 @@ Benedetto Accolti, Archbishop of Ravenna, was then staying at Ferrara;
 the court was famous for its excellent orchestra and theatrical display
 of all kinds.
 
-IX
+### IX
 
 THAT evening I rode more than ten miles, always at a trot; and when,
 upon the next day, I found myself outside the Ferrarese domain, I felt
@@ -10485,7 +10485,7 @@ may have been the fear of plague, or perhaps of some enemy.
 
 Note 2. It is thus that Cellini always writes Fontainebleau.
 
-X
+### X
 
 THE CARDINAL OF FERRARA saw that the King had been vastly pleased by my
 arrival; he also judged that the trifles which I showed him of my
@@ -10550,7 +10550,7 @@ to the above effect, as I was afterwards informed. All this happened on
 the last day of October, in Dauphiné, at a castle the name of which I do
 not remember.
 
-XI
+### XI
 
 ON leaving the Cardinal I repaired to my lodging, which was three miles
 distant, in company with a secretary of the Cardinal returning to the
@@ -10790,7 +10790,7 @@ taken possession of the abbey.” He never gave me anything; and it would
 be tedious to relate all the knavish tricks of this prelate. I prefer to
 dwell on matters of greater moment.
 
-XV
+### XV
 
 WHEN I returned to Paris, the great favour shown me by the King made me
 a mark for all men’s admiration. I received the silver and began my
@@ -11134,7 +11134,7 @@ translated the 'Decameron' at her instance into French.
 Note 3. The letter of naturalisation exists. See 'Bianchi,' p. 583. For
 the grant of the castle, see 'ibid.,' p. 585.
 
-XX
+### XX
 
 I SHALL now proceed with the narration of my life. I had on hand the
 following works already mentioned, namely, the silver Jupiter, the
@@ -12263,7 +12263,7 @@ with his army on the way Flanders.
 Note 2. Claude d’ Annebault; captured at Pavia with François; Marshall
 in 1538; Admiral of France in 1543.
 
-XL
+### XL
 
 MADAME D’ETAMPES, when she heard how well my affairs were going,
 redoubled her spite against me, saying in her own heart: “It is I who
@@ -12808,7 +12808,7 @@ take this journey! May God grant only that the Cardinal is not of one
 mind with Madame d’Etampes, who has nothing else so much at heart as to
 make me lose the grace of that good King.”
 
-L
+### L
 
 WHILE I was thus dismally debating with myself, I heard Ascanio calling
 me. On the instant I jumped out of bed, and asked if he brought good or
@@ -12890,7 +12890,7 @@ vases: 'the silver and everything pertaining to them.'
 Note 2. 'E l’aria era bianchissima.' Perhaps this ought to be: 'and the
 air blazed with lightnings.' Goethe takes it as I do above.
 
-LI
+### LI
 
 AFTER we had been one day in Italy, the Count Galeotto della Mirandola
 joined us. He was travelling by post; and stopping where we were, he
@@ -13179,7 +13179,7 @@ Note 5. See p. 25. Vasari introduced him, together with Cosimo’s other
 favoured artists, in a fresco of the Palazzo Vecchio at Florence. See
 Plon, p. 124.
 
-LV
+### LV
 
 I HAD got all the above-mentioned things in order, and was making
 vigorous preparations for my great undertaking--indeed a portion of the
@@ -13422,7 +13422,7 @@ King’s attention, and proper to the preservation of my honour. Before
 despatching it, I took it to the Duke, who read it with interest; then I
 sent it into France, addressed to the Cardinal of Ferrara.
 
-LX
+### LX
 
 ABOUT this time Bernardone Baldini, [1] broker in jewels to the Duke,
 brought a big diamond from Venice, which weighed more than thirty-five
@@ -15223,7 +15223,7 @@ and his son Baccio. But by Buaccio he generally means Baccio Bandinelli.
 Note 3. To bite the thumb at any one was, as students of our old drama
 know, a sign of challenge or provocation.
 
-XC
+### XC
 
 WHEN the Duke was informed that the whole of my work for the Perseus
 could be exhibited as finished, he came one day to look at it. His
@@ -15880,7 +15880,7 @@ appears that Cellini ought to have written the Ombrone.
 Note 2. This sculptor was born in 1511, and died in 1592. He worked
 under Bandinelli and Sansovino.
 
-C
+### C
 
 WHEN the Duke came to Florence, he sought me at my house without giving
 me previous notice. I showed him two little models of different design.
@@ -15965,7 +15965,7 @@ decline.
 
 Note 1. Probably Girolamo Lucchesini.
 
-CI
+### CI
 
 BANDINELLO had received information of the crucifix which, as I have
 said above, I was now engaged upon. Accordingly he laid his hands at
@@ -16253,7 +16253,7 @@ Sbietta had teased me in a hundred ways to partake more freely of the
 sauce. On these accounts I felt absolutely certain that they had given
 me sublimate in that very dish.
 
-CV
+### CV
 
 ALBEIT I was suffering so severely, I forced myself to work upon my
 Colossus in the Loggia; but after a few days I succumbed to the malady
@@ -16446,7 +16446,7 @@ the term. He undertook to abide by his promise to renew, without raising
 further litigation. That rascal, the priest, his brother, entered into
 similar engagements; and so the lease was drawn for five years.
 
-CX
+### CX
 
 THOUGH I want to enter upon other topics, and to leave all this
 rascality alone awhile, I am forced to narrate what happened at the

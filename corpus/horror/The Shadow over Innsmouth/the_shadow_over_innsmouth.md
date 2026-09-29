@@ -1,6 +1,6 @@
 # The Shadow over Innsmouth
 
-**H. P. (Howard Phillips) Lovecraft**
+**H. P. Lovecraft**
 
 ---
 
@@ -273,7 +273,7 @@ shunning the ancient town of decay and desolation; but to me it was
 merely a fresh incentive; and I could scarcely sleep in my small room
 at the "Y" as the night wore away.
 
-II
+### II
 
 Shortly before ten the next morning I stood with my one small valise
 in front of Hammond's Drug Store in old Market Square waiting for
@@ -941,7 +941,7 @@ I glanced back at the sea, but there was nothing there. And when I
 reached Water Street and looked along it toward the north there was no
 remaining trace of Zadok Allen.
 
-IV
+### IV
 
 I can hardly describe the mood in which I was left by this harrowing
 episode--an episode at once mad and pitiful, grotesque and terrifying.
@@ -1467,7 +1467,7 @@ momentary glimpse could have shown only the least fraction. In another
 instant everything was blotted out by a merciful fit of fainting; the
 first I had ever had.
 
-V
+### V
 
 It was a gentle daylight rain that awaked me from my stupor in the
 brush-grown railway cut, and when I staggered out to the roadway ahead

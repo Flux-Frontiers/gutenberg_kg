@@ -118,7 +118,7 @@ Both children wanted to follow their father when they saw him starting
 out. He kissed them and promised to bring them back bonbons and
 peanuts.
 
-II
+### II
 
 Mrs. Pontellier’s eyes were quick and bright; they were a yellowish
 brown, about the color of her hair. She had a way of turning them
@@ -308,7 +308,7 @@ fingers and a little greedily, all declared that Mr. Pontellier was the
 best husband in the world. Mrs. Pontellier was forced to admit that she
 knew of none better.
 
-IV
+### IV
 
 It would have been a difficult matter for Mr. Pontellier to define to
 his own satisfaction or any one else’s wherein his wife failed in her
@@ -418,7 +418,7 @@ so,—to hide it from view at the sound of approaching footsteps. It was
 openly criticised and freely discussed at table. Mrs. Pontellier gave
 over being astonished, and concluded that wonders would never cease.
 
-V
+### V
 
 They formed a congenial group sitting there that summer
 afternoon—Madame Ratignolle sewing away, often stopping to relate a
@@ -560,7 +560,7 @@ the door, and put it on her head. They descended the steps, and walked
 away together toward the beach. The sun was low in the west and the
 breeze was soft and warm.
 
-VI
+### VI
 
 Edna Pontellier could not have told why, wishing to go to the beach
 with Robert, she should in the first place have declined, and in the
@@ -1031,7 +1031,7 @@ going?”
 
 “Where did you say the Goncourt was?”
 
-IX
+### IX
 
 Every light in the hall was ablaze; every lamp turned as high as it
 could be without smoking the chimney or threatening explosion. The
@@ -1214,7 +1214,7 @@ It was growing late, and there was a general disposition to disband.
 But some one, perhaps it was Robert, thought of a bath at that mystic
 hour and under that mystic moon.
 
-X
+### X
 
 At all events Robert proposed it, and there was not a dissenting voice.
 There was not one but was ready to follow when he led the way. He did
@@ -1425,7 +1425,7 @@ good-night. She did not answer him. He thought she was asleep. Again
 she watched his figure pass in and out of the strips of moonlight as he
 walked away.
 
-XI
+### XI
 
 “What are you doing out here, Edna? I thought I should find you in
 bed,” said her husband, when he discovered her lying there. He had
@@ -1936,7 +1936,7 @@ and every verse ended with “_si tu savais_.”
 Robert’s voice was not pretentious. It was musical and true. The voice,
 the notes, the whole refrain haunted her memory.
 
-XV
+### XV
 
 When Edna entered the dining-room one evening a little late, as was her
 habit, an unusually animated conversation seemed to be going on.
@@ -2809,7 +2809,7 @@ worms struggling blindly toward inevitable annihilation. She could not
 work on such a day, nor weave fancies to stir her pulses and warm her
 blood.
 
-XX
+### XX
 
 It was during such a mood that Edna hunted up Mademoiselle Reisz. She
 had not forgotten the rather disagreeable impression left upon her by
@@ -5954,7 +5954,7 @@ beyond the bayou.
 
 MA’AME PÉLAGIE
 
-I
+### I
 
 When the war began, there stood on Côte Joyeuse an imposing mansion of
 red brick, shaped like the Pantheon. A grove of majestic live-oaks
@@ -6040,7 +6040,7 @@ likeness of the past in the living present.
 
 And they made room between them for this young life.
 
-II
+### II
 
 La Petite had determined upon trying to fit herself to the strange,
 narrow existence which she knew awaited her at Côte Joyeuse. It went
@@ -6242,7 +6242,7 @@ face, walking on toward the cabin—toward Pauline. Not once did she look
 back upon the ruin that brooded like a huge monster—a black spot in the
 darkness that enveloped it.
 
-IV
+### IV
 
 Little more than a year later the transformation which the old Valmêt
 place had undergone was the talk and wonder of Côte Joyeuse. One would
@@ -7100,7 +7100,7 @@ The angelus was ringing half a mile away. The priest and the negro
 knelt and murmured together the evening benediction and a prayer for
 the dead.
 
-II
+### II
 
 The peace and beauty of a spring day had descended upon the earth like
 a benediction. Along the leafy road which skirted a narrow, tortuous

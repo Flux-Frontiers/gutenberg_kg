@@ -106,7 +106,7 @@ latter, now one means is employed, now another.
 Such, then, are the differences of the arts with respect to the medium
 of imitation.
 
-II
+### II
 
 Since the objects of imitation are men in action, and these men must be
 either of a higher or a lower type (for moral character mainly answers
@@ -163,7 +163,7 @@ Athenian, {pi rho alpha tau tau epsilon iota nu}.
 This may suffice as to the number and nature of the various modes of
 imitation.
 
-IV
+### IV
 
 Poetry in general seems to have sprung from two causes, each of them
 lying deep in our nature. First, the instinct of imitation is implanted
@@ -238,7 +238,7 @@ the number of 'episodes' or acts, and the other accessories of which
 tradition; tells, must be taken as already described; for to discuss
 them in detail would, doubtless, be a large undertaking.
 
-V
+### V
 
 Comedy is, as we have said, an imitation of characters of a lower type,
 not, however, in the full sense of the word bad, the Ludicrous being
@@ -272,7 +272,7 @@ also about Epic poetry. All the elements of an Epic poem are found in
 Tragedy, but the elements of a Tragedy are not all found in the Epic
 poem.
 
-VI
+### VI
 
 Of the poetry which imitates in hexameter verse, and of Comedy, we
 will speak hereafter. Let us now discuss Tragedy, resuming its formal
@@ -433,7 +433,7 @@ displaced or removed, the whole will be disjointed and disturbed. For a
 thing whose presence or absence makes no visible difference, is not an
 organic part of the whole.
 
-IX
+### IX
 
 It is, moreover, evident from what has been said, that it is not
 the function of the poet to relate what has happened, but what may
@@ -488,7 +488,7 @@ while he was a spectator at a festival, and killed him. Such events seem
 not to be due to mere chance. Plots, therefore, constructed on these
 principles are necessarily the best.
 
-X
+### X
 
 Plots are either Simple or Complex, for the actions in real life, of
 which the plots are an imitation, obviously show a similar distinction.
@@ -502,7 +502,7 @@ the internal structure of the plot, so that what follows should be the
 necessary or probable result of the preceding action. It makes all the
 difference whether any given event is a case of propter hoc or post hoc.
 
-XI
+### XI
 
 Reversal of the Situation is a change by which the action veers round
 to its opposite, subject always to our rule of probability or necessity.
@@ -680,7 +680,7 @@ these.
 Enough has now been said concerning the structure of the incidents, and
 the right kind of plot.
 
-XV
+### XV
 
 In respect of Character there are four things to be aimed at. First, and
 most important, it must be good. Now any speech or action that manifests
@@ -923,7 +923,7 @@ a prayer? For to tell some one to do a thing or not to do it is, he
 says, a command. We may, therefore, pass this over as an inquiry that
 belongs to another art, not to poetry.
 
-XX
+### XX
 
 [Language in general includes the following parts:--Letter, Syllable,
 Connecting word, Noun, Verb, Inflexion or Case, Sentence or Phrase.

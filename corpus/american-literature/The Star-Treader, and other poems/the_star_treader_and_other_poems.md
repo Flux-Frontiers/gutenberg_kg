@@ -169,7 +169,7 @@ A hand swings back the door of years;
 Now fall earth's bonds of gladness and of tears,
 And opens the strait dream to space sublime."
 
-II
+### II
 
 Who rides a dream, what hand shall stay!
 What eye shall note or measure mete
@@ -206,7 +206,7 @@ Again I wore mine ancient lives,
 And knew the freedom and the gyves
 That formed and marked my soul.
 
-IV
+### IV
 
 I delved in each forgotten mind,
 The units that had builded me,
@@ -227,9 +227,10 @@ Is strengthened Beauty's olden chain--
 Soft as a sound, and keen as fire--
 In light no darkness may depress.
 
-V
+### V
 
-Where no terrestrial dreams had trod
+*Where no terrestrial dreams had trod*
+
 My vision entered undismayed,
 And Life her hidden realms displayed
 To me as to a curious god.
@@ -255,7 +256,7 @@ O'er space no light has crossed,
 Diverse as Hell's mad antiphone uptossed
 To Heaven's angelic chant.
 
-VI
+### VI
 
 What vasts the dream went out to find!
 I seemed beyond the world's recall
@@ -563,7 +564,7 @@ A streamlet's purl, the ocean's roar
 From Nature's multitudinous store--
 Imperfect were the melody!
 
-II
+### II
 
 O Beauty, why so sad my heart?
 Why stirs in me a nameless pain
@@ -612,7 +613,7 @@ Of fair things gone beyond recall,
 The paling light of dawns, and all
 The flowers' vanished hues and breath.
 
-IV
+### IV
 
 From out the web of former lives,
 The ancient catenated chain
@@ -624,7 +625,7 @@ From Change and Death, this verity:
 Her spirit lives eternally--
 'Tis but her forms that come and go.
 
-V
+### V
 
 Lo! I am Beauty's constant thrall,
 Must ever on her voice await,

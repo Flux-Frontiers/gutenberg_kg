@@ -1,6 +1,6 @@
 # Ghost Stories of an Antiquary
 
-**M. R. (Montague Rhodes) James**
+**M. R. James**
 
 ---
 
@@ -3365,9 +3365,7 @@ The one read thus:
 
 ### FLA FUR BIS FLE
 
-*The other:*
-
-### QUIS EST ISTE QUI VENIT
+*The other: QUIS EST ISTE QUI VENIT*
 
 “I ought to be able to make it out,” he thought; “but I suppose I am a
 little rusty in my Latin. When I come to think of it, I don’t believe I
@@ -3986,7 +3984,7 @@ Somerton announced to his man that he must pack his own and his
 master’s things for a short journey abroad, whither for the moment we
 will not follow him.
 
-II
+### II
 
 Mr Gregory, the Rector of Parsbury, had strolled out before breakfast,
 it being a fine autumn morning, as far as the gate of his

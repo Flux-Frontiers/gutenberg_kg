@@ -1,6 +1,6 @@
 # The Upanishads (Max Müller translation)
 
-**Unknown**
+**Various**
 
 ---
 
@@ -274,7 +274,7 @@ All existence is in the Absolute; and whatever exists, must exist in It; hence
 all manifestation is merely a modification of the One Supreme Whole, and
 neither increases nor diminishes It.  The Whole therefore remains unaltered.
 
-I
+### I
 
 All this, whatsoever exists in the universe, should be covered by
 the Lord.  Having renounced (the unreal), enjoy (the Real).  Do
@@ -293,7 +293,7 @@ nothing on this external plane of phenomena is permanent or dependable.  He
 who is rich in the knowledge of the Self does not covet external power or
 possession.
 
-II
+### II
 
 If one should desire to live in this world a hundred years, one
 should live performing Karma (righteous deeds).  Thus thou mayest
@@ -335,7 +335,7 @@ the Sages declare that he destroys himself; because he who clings to the
 perishable body and regards it as his true Self must experience death many
 times.
 
-IV
+### IV
 
 That One, though motionless, is swifter than the mind.  The
 senses can never overtake It, for It ever goes before.  Though
@@ -352,7 +352,7 @@ Even the all-pervading air must be supported by this Self, since
 It is infinite; and as nothing can live without breathing air,
 all living things must draw their life from the Cosmic Self.
 
-V
+### V
 
 It moves and It moves not.  It is far and also It is near.  It is
 within and also It is without all this.
@@ -363,7 +363,7 @@ clouds of sensuality and self-delusion.  It is within, because It is the
 innermost Soul of all creatures; and It is without as the essence of the whole
 external universe, infilling it like the all-pervading ether.
 
-VI
+### VI
 
 He who sees all beings in the Self and the Self in all beings, he
 never turns away from It (the Self).
@@ -392,18 +392,18 @@ This text defines the real nature of the Self.  When our mind is cleansed from
 the dross of matter, then alone can we behold the vast, radiant, subtle,
 ever-pure and spotless Self, the true basis of our existence.
 
-IX
+### IX
 
 They enter into blind darkness who worship Avidya (ignorance and
 delusion); they fall, as it were, into greater darkness who
 worship Vidya (knowledge).
 
-X
+### X
 
 By Vidya one end is attained; by Avidya, another.  Thus we have
 heard from the wise men who taught this.
 
-XI
+### XI
 
 He who knows at the same time both Vidya and Avidya, crosses over
 death by Avidya and attains immortality through Vidya.
@@ -455,7 +455,7 @@ Therefore the wise man sees Him in every manifested form.  They who have a
 true conception of God are never separated from Him.  They exist in Him and He
 in them.
 
-XV
+### XV
 
 The face of Truth is hidden by a golden disk.  O Pushan
 (Effulgent Being)!  Uncover (Thy face) that I, the worshipper of
@@ -581,7 +581,7 @@ Vahasrava, being desirous of heavenly rewards (at the Viswajit
 sacrifice), made a gift of all that he possessed.  He had a son
 by the name of Nachiketas.
 
-II
+### II
 
 When the offerings were being distributed, faith (Shraddha)
 entered (the heart of) Nachiketas, who, though young, yet
@@ -612,7 +612,7 @@ give me.  Otherwise his sacrifice will not be complete and fruitful."
 Therefore, anxious for his father's welfare, he approached him gently and
 reverently.
 
-IV
+### IV
 
 He said to his father: Dear father, to whom wilt thou give me?
 He said it a second time, then a third time.  The father replied:
@@ -628,7 +628,7 @@ thee to Yama, the Lord of Death."  The fact that anger could so quickly rise
 in his heart proved that he had not the proper attitude of a sacrificer, who
 must always be tranquil, uplifted and free from egoism.
 
-V
+### V
 
 Nachiketas thought: Among many (of my father's pupils) I stand
 first; among many (others) I stand in the middle (but never
@@ -644,7 +644,7 @@ his father, if his word was not kept.  Therefore he sought to strengthen his
 father's resolution by reminding him of the transitory condition of life. He
 said:
 
-VI
+### VI
 
 Look back to those who lived before and look to those who live
 now.  Like grain the mortal decays and like grain again springs
@@ -678,13 +678,13 @@ the members of his household anxiously informed him of
 Nachiketas' presence and begged him to bring water to wash his
 feet, this being always the first service to an arriving guest.
 
-IX
+### IX
 
 Yama said: O Brahmana!  Revered guest!  My salutations to thee.
 As thou hast remained three nights in my house without food,
 therefore choose three boons, O Brahmana.
 
-X
+### X
 
 Nachiketas said: May Gautama, my father, be free from anxious
 thought (about me).  May he lose all anger (towards me) and be
@@ -692,7 +692,7 @@ pacified in heart.  May he know and welcome me when I am sent
 back by thee.  This, O Death, is the first of the three boons I
 choose.
 
-XI
+### XI
 
 Yama replied: Through my will Auddalaki Aruni (thy father) will
 know thee, and be again towards thee as before.  He will sleep in
@@ -720,7 +720,7 @@ heaven.  I shall tell it to thee.  Listen to me.  Know, O
 Nachiketas, that this is the means of attaining endless worlds
 and their support.  It is hidden in the heart of all beings.
 
-XV
+### XV
 
 Yama then told him that fire-sacrifice, the beginning of all the
 worlds; what bricks, how many and how laid for the altar.
@@ -777,7 +777,7 @@ and gave him a garland set with precious stones.
 Verses XVI-XVIII are regarded by many as an interpolation, which
 would account for certain obscurities and repetitions in them.
 
-XX
+### XX
 
 Nachiketas said: There is this doubt regarding what becomes of a
 man after death.  Some say he exists, others that he does not
@@ -859,7 +859,7 @@ two, having different ends, bind a man.  It is well with him who
 chooses the good.  He who chooses the pleasant misses the true
 end.
 
-II
+### II
 
 The good and the pleasant approach man; the wise examines both
 and discriminates between them; the wise prefers the good to the
@@ -872,7 +872,7 @@ O Nachiketas after wise reflection thou hast renounced the
 pleasant and all pleasing forms.  Thou hast not accepted this
 garland of great value for which many mortals perish.
 
-IV
+### IV
 
 Wide apart are these two,--ignorance and what is known as wisdom,
 leading in opposite directions.  I believe Nachiketas to be one
@@ -896,13 +896,13 @@ desirer of Truth.  I offered thee vast wealth, long life and every form of
 pleasure which tempts and deludes men; but thou hast proved thy worthiness by
 rejecting them all."
 
-V
+### V
 
 Fools dwelling in ignorance, yet imagining themselves wise and
 learned, go round and round in crooked ways, like the blind led
 by the blind.
 
-VI
+### VI
 
 The Hereafter never rises before the thoughtless child (the
 ignorant), deluded by the glamour of wealth.  "This world alone
@@ -953,7 +953,7 @@ be truly known, even though frequently thought upon.  There is no
 way (to know It) unless it is taught by another (an illumined
 teacher), for it is subtler than the subtle and beyond argument.
 
-IX
+### IX
 
 O Dearest, this Atman cannot be attained by argument; It is truly
 known only when taught by another (a wise teacher).  O
@@ -970,14 +970,14 @@ reached by argument.  This secret regarding the Hereafter cannot be known
 through reasoning or mere intellectual gymnastics.  It is to be attained only
 in a state of consciousness which transcends the boundary line of reason.
 
-X
+### X
 
 I know that (earthly) treasure is transitory, for the eternal can
 never be attained by things which are non-eternal.  Hence the
 Nachiketa fire (sacrifice) has been performed by me with
 perishable things and yet I have attained the eternal.
 
-XI
+### XI
 
 O Nachiketas, thou hast seen the fulfillment of all desires, the
 basis of the universe, the endless fruit of sacrificial rites,
@@ -1026,7 +1026,7 @@ Nachiketas said: That which thou seest, which is neither virtue
 nor vice, neither cause nor effect, neither past nor future (but
 beyond these), tell me That.
 
-XV
+### XV
 
 Yama replied: That goal which all the Vedas glorify, which all
 austerities proclaim, desiring which (people) practice
@@ -1076,7 +1076,7 @@ If the slayer thinks that he slays, or if the slain thinks that
 he is slain, both of these know not.  For It neither slays nor is
 It slain.
 
-XX
+### XX
 
 The Self is subtler than the subtle, greater than the great; It
 dwells in the heart of each living being.  He who is free from
@@ -1180,7 +1180,7 @@ of the knower, then he surmounts the apparent duality of his nature and
 becomes convinced that there is but One, and that all outer manifestations are
 nothing but reflections or projections of that One.
 
-II
+### II
 
 May we be able to learn that Nachiketa fire-sacrifice, which is a
 bridge for those who perform sacrifice.  May we also know the
@@ -1202,7 +1202,7 @@ Know the Atman (Self) as the lord of the chariot, and the body as
 the chariot.  Know also the intellect to be the driver and mind
 the reins.
 
-IV
+### IV
 
 The senses are called the horses; the sense objects are the
 roads; when the Atman is united with body, senses and mind, then
@@ -1225,13 +1225,13 @@ the Self is joined with body, mind and senses, It is called the intelligent
 enjoyer; because It is the one who wills, feels, perceives and does
 everything.
 
-V
+### V
 
 He who is without discrimination and whose mind is always
 uncontrolled, his senses are unmanageable, like the vicious
 horses of a driver.
 
-VI
+### VI
 
 But he who is full of discrimination and whose mind is always
 controlled, his senses are manageable, like the good horses of a
@@ -1257,7 +1257,7 @@ But he who possesses right discrimination, whose mind is under
 control and always pure, he reaches that goal, from which he is
 not born again.
 
-IX
+### IX
 
 The man who has a discriminative intellect for the driver, and a
 controlled mind for the reins, reaches the end of the journey,
@@ -1271,13 +1271,13 @@ senses must be wholly under the control of our higher discriminative faculty;
 for only when all our forces work in unison can we hope to reach the goal--the
 abode of Absolute Truth.
 
-X
+### X
 
 Beyond the senses are the objects, beyond the objects is the
 mind, beyond the mind is the intellect, beyond the intellect is
 the great Atman.
 
-XI
+### XI
 
 Beyond the great Atman is the Unmanifested; beyond the
 Unmanifested is the Purusha (the Cosmic Soul); beyond the Purusha
@@ -1336,7 +1336,7 @@ a humble spirit and seek to be instructed by them.  The path is very difficult
 to tread.  No thoughtless or lethargic person can safely travel on it.  One
 must be strong, wakeful and persevering.
 
-XV
+### XV
 
 Knowing That which is soundless, touchless, formless, undecaying;
 also tasteless, odorless, and eternal; beginningless, endless and
@@ -1385,7 +1385,7 @@ through the channels of his senses, and this prevents his seeing the inner
 Self (Pratyagatman); but now and then a seeker, wiser than others, goes within
 and attains the vision of the undying Self.
 
-II
+### II
 
 Children (the ignorant) pursue external pleasures; (thus) they
 fall into the wide- spread snare of death. But the wise, knowing
@@ -1407,7 +1407,7 @@ That by which one knows form, taste, smell, sound, touch and
 sense enjoyments, by That also one knows whatever remains (to be
 known).  This verily is That (which thou hast asked to know).
 
-IV
+### IV
 
 That by which a mortal perceives, both in dream and in waking, by
 knowing that great all-pervading Atman the wise man grieves no
@@ -1419,13 +1419,13 @@ waking--is possible only because the Self exists. There can be no knowledge or
 perception independent of the Self. Wise men, aware of this, identify
 themselves with their Higher Self and thus transcend the realm of grief.
 
-V
+### V
 
 He who knows this Atman, the honey-eater (perceiver and enjoyer
 of objects), ever near, as the lord of the past and future, fears
 no more. This verily is That.
 
-VI
+### VI
 
 He who sees Him seated in the five elements, born of Tapas (fire
 of Brahman), born before water; who, having entered the cave of
@@ -1463,19 +1463,19 @@ symbols of Divine wisdom, it was to be worshipped by all seekers
 after Truth, whether they followed the path of meditation or the
 path of rituals.
 
-IX
+### IX
 
 From whence the sun rises, and whither it goes at setting, upon
 That all the Devas depend.  No one goes beyond That. This verily
 is That.
 
-X
+### X
 
 What is here (in the visible world), that is there (in the
 invisible); he who sees difference (between visible and
 invisible) goes from death to death.
 
-XI
+### XI
 
 By mind alone this is to be realized.  There is no difference
 whatever (between visible and invisible).  He who sees difference
@@ -1523,7 +1523,7 @@ As rain water, (falling) on the mountain top, runs down over the
 rocks on all sides; similarly, he who sees difference (between
 visible forms) runs after them in various directions.
 
-XV
+### XV
 
 O Gautama (Nachiketas), as pure water poured into pure water
 becomes one, so also is it with the Self of an illumined Knower
@@ -1545,7 +1545,7 @@ the intelligent man through constant thought and meditation realizes the
 splendour of this Supreme Spirit, he becomes free from that part of his nature
 which grieves and suffers, and thus he attains liberation.
 
-II
+### II
 
 He is the sun dwelling in the bright heaven; He is the air
 dwelling in space; He is the fire burning on the altar; He is the
@@ -1561,18 +1561,18 @@ He it is who sends the (in-coming) Prana (life-breath) upward and
 throws the (out-going) breath downward. Him all the senses
 worship, the adorable Atman, seated in the centre (the heart).
 
-IV
+### IV
 
 When this Atman, which is seated in the body, goes out (from the
 body), what remains then?  This verily is That.
 
-V
+### V
 
 No mortal lives by the in-coming breath (Prana) or by the
 out-going breath (Apana), but he lives by another on which these
 two depend.
 
-VI
+### VI
 
 O Gautama (Nachiketas), I shall declare unto thee the secret of
 the eternal Brahman and what happens to the Self after death.
@@ -1593,14 +1593,14 @@ desires, That is pure, That is Brahman, That alone is said to be
 immortal.  On That all the worlds rest.  None goes beyond That.
 This verily is That.
 
-IX
+### IX
 
 As fire, though one, having entered the world, becomes various
 according to what it burns, so does the Atman (Self) within all
 living beings, though one, become various according to what it
 enters.  It also exists outside.
 
-X
+### X
 
 As air, though one, having entered the world, becomes various
 according to what it enters, so does the Atman within all living
@@ -1613,7 +1613,7 @@ and fire, yet assumes different shapes according to the form in which It
 dwells.  But, being all-pervading and unlimited, It cannot be confined to
 these forms; therefore it is said that It also exists outside all forms.
 
-XI
+### XI
 
 As the sun, the eye of the whole world, is not defiled by
 external impurities seen by the eyes, thus the one inner Self of
@@ -1645,7 +1645,7 @@ They (the wise) perceive that indescribable highest bliss,
 saying, This is That.  How am I to know It?  Does It shine (by
 Its own light) or does It shine (by reflected light)?
 
-XV
+### XV
 
 The sun does not shine there, nor the moon, nor the stars; nor do
 these lightnings shine there, much less this fire.  When He
@@ -1667,7 +1667,7 @@ and deathless.  From the highest angelic form to the minutest atom, all
 created things have their origin in Him.  He is the foundation of the
 universe.  There is nothing beyond Him.
 
-II
+### II
 
 Whatever there is in the universe is evolved from Prana and
 vibrates in Prana.  That is a mighty terror, like an upraised
@@ -1687,7 +1687,7 @@ moon, wind, rain, do His bidding. He is likened to an upraised
 thunderbolt, because of the impartial and inevitable nature of
 His law, which all powers, great or small, must obey absolutely.
 
-IV
+### IV
 
 If a man is not able to know Him before the dissolution of the
 body, then he becomes embodied again in the created worlds.
@@ -1698,7 +1698,7 @@ then he must take other bodies and return again and again to this realm of
 birth and death, until through varied experience he realizes the nature of the
 Supreme and his relation to Him.
 
-V
+### V
 
 As in a mirror, so is He seen within oneself; as in a dream, so
 (is He seen) in the world of the fathers (departed spirits); as
@@ -1712,7 +1712,7 @@ Supreme by attaining to the various realms known as heavens, where one reaps
 the fruit of his good deeds.  It is only by developing one's highest
 consciousness here in this life that perfect God-vision can be attained.
 
-VI
+### VI
 
 Knowing that the senses are distinct (from the Atman) and their
 rising and setting separate (from the Atman), a wise man grieves
@@ -1739,7 +1739,7 @@ This division of the individual into senses, mind, intellect,
 self-consciousness, undifferentiated creative energy and the Absolute Self is
 explained in the commentary of verse XI, Part Third.
 
-IX
+### IX
 
 His form is not to be seen.  No one can see Him with the eye.  He
 is perceived by the heart, by the intellect and by the mind.
@@ -1750,7 +1750,7 @@ knowledge of Him must be acquired by the subtler faculties of heart, intellect
 and mind, which are developed only through the purifying practice of
 meditation.
 
-X
+### X
 
 When the five organs of perception become still, together with
 the mind, and the intellect ceases to be active: that is called
@@ -1763,7 +1763,7 @@ and quieted.  The state of equilibrium thus attained is called the highest
 state, because all the forces of one's being become united and focused; and
 this inevitably leads to supersensuous vision.
 
-XI
+### XI
 
 This firm holding back of the senses is what is known as Yoga.
 Then one should become watchful, for Yoga comes and goes.
@@ -1798,7 +1798,7 @@ alone exists in both the visible and the invisible world.
 When all desires dwelling in the heart cease, then the mortal
 becomes immortal and attains Brahman here.
 
-XV
+### XV
 
 When all the ties of the heart are cut asunder here, then the
 mortal becomes immortal.  Such is the teaching.
@@ -1898,7 +1898,7 @@ which he was now only vaguely conscious.  Is mind all-pervading and
 all-powerful, or is it impelled by some other force, he asked.  Who sends
 forth the vital energy, without which nothing can exist?  The teacher replies:
 
-II
+### II
 
 It is the ear of the ear, the mind of the mind, the speech of the
 speech, the life of the life, the eye of the eye.  The wise,
@@ -1937,19 +1937,19 @@ say that He cannot be known.  He is unknowable to man's finite nature.  How
 can a finite mortal apprehend the Infinite Whole?  But He can be known by
 man's God-like nature.
 
-IV
+### IV
 
 That which speech does not illumine, but which illumines speech:
 know that alone to be the Brahman (the Supreme Being), not this
 which people worship here.
 
-V
+### V
 
 That which cannot be thought by mind, but by which, they say,
 mind is able to think: know that alone to be the Brahman, not
 this which people worship here.
 
-VI
+### VI
 
 That which is not seen by the eye, but by which the eye is able
 to see: know that alone to be the Brahman, not this which people
@@ -2010,7 +2010,7 @@ his own experience what he had heard.  Guided by the teacher, he sought within
 himself through meditation the meaning of Brahman; and having gained a new
 vision, he approached the teacher once more.
 
-II
+### II
 
 The disciple said: I do not think I know It well, nor do I think
 that I do not know It.  He among us who knows It truly, knows
@@ -2059,7 +2059,7 @@ the text, the teacher draws an impressive contrast between the attitude of the
 wise man who knows, but thinks he does not know; and that of the ignorant who
 does not know, but thinks he knows.
 
-IV
+### IV
 
 It (Brahman) is known, when It is known in every state of
 consciousness.  (Through such knowledge) one attains immortality.
@@ -2082,7 +2082,7 @@ gives, immortality is reached.  Whenever knowledge is based on
 direct perception of this undying essence, one transcends all
 fear of death and becomes immortal.
 
-V
+### V
 
 If one knows It here, that is Truth; if one knows It not here,
 then great is his loss.  The wise seeing the same Self in all
@@ -2107,7 +2107,7 @@ of its source, just as no wave, however mighty, can be independent of the
 ocean.  Nothing moves without that Power.  He is the only Doer.  But the Devas
 thought: "This victory is ours, this glory is ours."
 
-II
+### II
 
 The Brahman perceived this and appeared before them.  They did
 not know what mysterious form it was.
@@ -2117,17 +2117,17 @@ not know what mysterious form it was.
 They said to Fire: "O Jataveda (All-knowing)!  Find out what
 mysterious spirit this is."  He said: "Yes."
 
-IV
+### IV
 
 He ran towards it and He (Brahman) said to him: "Who art thou?"
 "I am Agni, I am Jataveda," he (the Fire-god) replied.
 
-V
+### V
 
 Brahman asked: "What power resides in thee?" Agni replied: "I can
 burn up all whatsoever exists on earth."
 
-VI
+### VI
 
 Brahman placed a straw before him and said: "Burn this."  He
 (Agni) rushed towards it with all speed, but was not able to burn
@@ -2145,19 +2145,19 @@ He ran towards it and He (Brahman) said to him: "Who art thou?"
 "I am Vayu, I am Matarisva (traveller of Heaven)," he (Vayu)
 said.
 
-IX
+### IX
 
 Then the Brahman said: "What power is in thee?"  Vayu replied: "I
 can blow away all whatsoever exists on earth."
 
-X
+### X
 
 Brahman placed a straw before him and said: "Blow this away."  He
 (Vayu) rushed towards it with all speed, but was not able to blow
 it away.  So he returned from there and said (to the Devas): "I
 was not able to find out what this great mystery is."
 
-XI
+### XI
 
 Then they said to Indra: "O Maghavan (Worshipful One)!  Find out
 what this mystery is."  He said: "Yes"; and ran towards it, but
@@ -2195,7 +2195,7 @@ The Devas, being puffed up with vanity, had thought they themselves had
 achieved the victory, whereas it was Brahman; for not even a blade of grass
 can move without His command.
 
-II
+### II
 
 Therefore these Devas,--Agni, Vayu and Indra--excel other Devas,
 because they came nearer to Brahman.  It was they who first knew
@@ -2213,7 +2213,7 @@ Indra stands as the head of the Devas, because he realized the Truth directly,
 he reached Brahman.  The significance of this is that whoever comes in direct
 touch with Brahman or the Supreme is glorified.
 
-IV
+### IV
 
 Thus the teaching of Brahman is here illustrated in regard to the
 Devas.  He dashed like lightning, and appeared and disappeared
@@ -2225,7 +2225,7 @@ Brahman could not be seen in any definite form; so at the moment of vanishing,
 He manifested more of His immeasurable glory and fleetness of action by a
 sudden dazzling flash of light.
 
-V
+### V
 
 Next (the teaching) is regarding Adhyatman (the embodied Soul).
 The mind seems to approach Him (Brahman).  By this mind (the
@@ -2238,7 +2238,7 @@ its nature, can follow Him.  It is through the help of this mind that we can
 think and meditate on Brahman; and when by constant thought of Him the mind
 becomes purified, then like a polished mirror it can reflect His Divine Glory.
 
-VI
+### VI
 
 That Brahman is called Tadvanam (object of adoration).  He is to
 be worshipped by the name Tadvanam.  He who knows Brahman thus,
@@ -2265,7 +2265,7 @@ mind and senses), dama (subjugation of the senses), karma (right
 performance of prescribed actions).  The Vedas are its limbs.
 Truth is its support.
 
-IX
+### IX
 
 He who knows this (wisdom of the Upanishad), having been cleansed
 of all sin, becomes established in the blissful, eternal and

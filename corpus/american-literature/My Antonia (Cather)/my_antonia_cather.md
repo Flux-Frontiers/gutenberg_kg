@@ -247,7 +247,7 @@ anywhere, it did not matter. Between that earth and that sky I felt
 erased, blotted out. I did not say my prayers that night: here, I felt,
 what would be would be.
 
-II
+### II
 
 I do not remember our arrival at my grandfather’s farm sometime before
 daybreak, after a drive of nearly twenty miles with heavy work-horses.
@@ -672,7 +672,7 @@ and the other Bohemian. He placed this book in my grandmother’s hands,
 looked at her entreatingly, and said, with an earnestness which I shall
 never forget, ‘Te-e-ach, te-e-ach my Ántonia!’
 
-IV
+### IV
 
 On the afternoon of that same Sunday I took my first long ride on my
 pony, under Otto’s direction. After that Dude and I went twice a week
@@ -765,7 +765,7 @@ in their hole and fed him for the same reason that the prairie-dogs and
 the brown owls house the rattlesnakes—because they did not know how to
 get rid of him.
 
-V
+### V
 
 We knew that things were hard for our Bohemian neighbours, but the two
 girls were lighthearted and never complained. They were always ready to
@@ -876,7 +876,7 @@ and gave us a lard-pail full of milk to cook them in. I had never heard
 of cooking cucumbers, but Ántonia assured me they were very good. We
 had to walk the pony all the way home to keep from spilling the milk.
 
-VI
+### VI
 
 One afternoon we were having our reading lesson on the warm, grassy
 bank where the badger lived. It was a day of amber sunlight, but there
@@ -1411,7 +1411,7 @@ sleep, I often found myself in a sledge drawn by three horses, dashing
 through a country that looked something like Nebraska and something
 like Virginia.
 
-IX
+### IX
 
 The first snowfall came early in December. I remember how the world
 looked from our sitting-room window as I dressed behind the stove that
@@ -1584,7 +1584,7 @@ Grandmother told him she was sure the Lord had remembered these things
 to his credit, and had helped him out of many a scrape when he didn’t
 realize that he was being protected by Providence.
 
-X
+### X
 
 For several weeks after my sleigh-ride, we heard nothing from the
 Shimerdas. My sore throat kept me indoors, and grandmother had a cold
@@ -1804,7 +1804,7 @@ little brown shavings, which the Shimerdas had brought so far and
 treasured so jealously, were dried mushrooms. They had been gathered,
 probably, in some deep Bohemian forest....
 
-XI
+### XI
 
 During the week before Christmas, Jake was the most important person of
 our household, for he was to go to town and do all our Christmas
@@ -2320,7 +2320,7 @@ Purgatory came back on me crushingly. I remembered the account of Dives
 in torment, and shuddered. But Mr. Shimerda had not been rich and
 selfish: he had only been so unhappy that he could not live any longer.
 
-XV
+### XV
 
 Otto Fuchs got back from Black Hawk at noon the next day. He reported
 that the coroner would reach the Shimerdas’ sometime that afternoon,
@@ -3228,7 +3228,7 @@ the neighbours until Christmas, as she had done the year before; but
 grandmother saved her from this by getting her a place to work with our
 neighbours, the Harlings.
 
-II
+### II
 
 Grandmother often said that if she had to live in town, she thanked God
 she lived next the Harlings. They had been farming people, like
@@ -3470,7 +3470,7 @@ her short, square person planted firmly on the stool, her little fat
 hands moving quickly and neatly over the keys, her eyes fixed on the
 music with intelligent concentration.
 
-IV
+### IV
 
 ‘I won’t have none of your weevily wheat,
 and I won’t have none of your barley,
@@ -3721,7 +3721,7 @@ Lena only smiled her sleepy smile. ‘I never made anything to him with
 my eyes. I can’t help it if he hangs around, and I can’t order him off.
 It ain’t my prairie.’
 
-V
+### V
 
 After Lena came To Black Hawk, I often met her downtown, where she
 would be matching sewing silk or buying ‘findings’ for Mrs. Thomas. If
@@ -3786,7 +3786,7 @@ windy street, Lena wiped her eyes with the back of her woollen glove.
 ‘I get awful homesick for them, all the same,’ she murmured, as if she
 were answering some remembered reproach.
 
-VI
+### VI
 
 Winter comes down savagely over a little town on the prairie. The wind
 that sweeps in from the open country strips away all the leafy screens
@@ -4325,7 +4325,7 @@ the Progressive Euchre Club used to drop in late and risk a tiff with
 their sweethearts and general condemnation for a waltz with ‘the hired
 girls.’
 
-IX
+### IX
 
 There was a curious social situation in Black Hawk. All the young men
 felt the attraction of the fine, well-set-up country girls who had come
@@ -4477,7 +4477,7 @@ high-collared clerks and bookkeepers! I used to glare at young Lovett
 from a distance and only wished I had some way of showing my contempt
 for him.
 
-X
+### X
 
 It was at the Vannis’ tent that Ántonia was discovered. Hitherto she
 had been looked upon more as a ward of the Harlings than as one of the
@@ -4574,7 +4574,7 @@ every pan and plate and cup on the shelves trembled when her mother
 walked out of the kitchen. Mrs. Harling declared bitterly that she
 wished she had never let herself get fond of Ántonia.
 
-XI
+### XI
 
 Wick Cutter was the money-lender who had fleeced poor Russian Peter.
 When a farmer once got into the habit of going to Cutter, it was like
@@ -5406,7 +5406,7 @@ dropped and dropped until the red tip went beneath the earth. The
 fields below us were dark, the sky was growing pale, and that forgotten
 plough had sunk back to its own littleness somewhere on the prairie.
 
-XV
+### XV
 
 Late in August the Cutters went to Omaha for a few days, leaving
 Ántonia in charge of the house. Since the scandal about the Swedish
@@ -5704,7 +5704,7 @@ accompanied me through all my new experiences. They were so much alive
 in me that I scarcely stopped to wonder whether they were alive
 anywhere else, or how.
 
-II
+### II
 
 One March evening in my sophomore year I was sitting alone in my room
 after supper. There had been a warm thaw all day, with mushy yards and
@@ -6040,7 +6040,7 @@ and several languages, through the person of an infirm old actress. The
 idea is one that no circumstances can frustrate. Wherever and whenever
 that piece is put on, it is April.
 
-IV
+### IV
 
 How well I remember the stiff little parlour where I used to wait for
 Lena: the hard horsehair furniture, bought at some auction sale, the
@@ -6535,7 +6535,7 @@ casually—didn’t seem sensitive about it. She was satisfied with her
 success, but not elated. She was like someone in whom the faculty of
 becoming interested is worn out.
 
-II
+### II
 
 Soon after I got home that summer, I persuaded my grandparents to have
 their photographs taken, and one morning I went into the photographer’s
@@ -6883,7 +6883,7 @@ the ripe fields. I lay awake and watched the moonlight shining over the
 barn and the stacks and the pond, and the windmill making its old dark
 shadow against the blue sky.
 
-IV
+### IV
 
 The next afternoon I walked over to the Shimerdas’. Yulka showed me the
 baby and told me that Ántonia was shocking wheat on the southwest
@@ -7595,7 +7595,7 @@ serving generous emotions.
 It was no wonder that her sons stood tall and straight. She was a rich
 mine of life, like the founders of early races.
 
-II
+### II
 
 When I awoke in the morning, long bands of sunshine were coming in at
 the window and reaching back under the eaves where the two boys lay.

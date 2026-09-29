@@ -4,7 +4,7 @@
 
 ---
 
-I
+### I
 
 One morning, when Gregor Samsa woke from troubled dreams, he found
 himself transformed in his bed into a horrible vermin. He lay on his
@@ -596,7 +596,7 @@ where he was held and sent him flying, and heavily bleeding, deep into
 his room. The door was slammed shut with the stick, then, finally, all
 was quiet.
 
-II
+### II
 
 It was not until it was getting dark that evening that Gregor awoke
 from his deep and coma-like sleep. He would have woken soon afterwards

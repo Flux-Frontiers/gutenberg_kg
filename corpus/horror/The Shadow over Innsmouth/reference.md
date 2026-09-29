@@ -36,4 +36,4 @@
 
 ## Notes
 
-Wikipedia page on this work: https://en.wikipedia.org/wiki/The_Shadow_over_Innsmouth
+Wikipedia page about this book: https://en.wikipedia.org/wiki/The_Shadow_over_Innsmouth

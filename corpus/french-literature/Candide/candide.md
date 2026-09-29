@@ -76,7 +76,7 @@ keep them in the misery they were born to.
 
 But such an account of Voltaire's procedure is as misleading as the
 plaster cast of a dance. Look at his procedure again. Mademoiselle
-Cunégonde, the illustrious Westphalian, sprung from a family that could
+Cunegonde, the illustrious Westphalian, sprung from a family that could
 prove seventy-one quarterings, descends and descends until we find her
 earning her keep by washing dishes in the Propontis. The aged faithful
 attendant, victim of a hundred acts of rape by negro pirates, remembers
@@ -228,9 +228,7 @@ Cunegonde fainted away; she was boxed on the ears by the Baroness, as
 soon as she came to herself; and all was consternation in this most
 magnificent and most agreeable of all possible castles.
 
-II
-
-WHAT BECAME OF CANDIDE AMONG THE BULGARIANS.
+### II WHAT BECAME OF CANDIDE AMONG THE BULGARIANS.
 
 Candide, driven from terrestrial paradise, walked a long while without
 knowing where, weeping, raising his eyes to heaven, turning them often
@@ -403,9 +401,7 @@ his eyes diseased, the end of his nose eaten away, his mouth distorted,
 his teeth black, choking in his throat, tormented with a violent cough,
 and spitting out a tooth at each effort.
 
-IV
-
-HOW CANDIDE FOUND HIS OLD MASTER PANGLOSS, AND WHAT HAPPENED TO THEM.
+### IV HOW CANDIDE FOUND HIS OLD MASTER PANGLOSS, AND WHAT HAPPENED TO THEM.
 
 Candide, yet more moved with compassion than with horror, gave to this
 shocking beggar the two florins which he had received from the honest
@@ -523,10 +519,7 @@ While he reasoned, the sky darkened, the winds blew from the four
 quarters, and the ship was assailed by a most terrible tempest within
 sight of the port of Lisbon.
 
-V
-
-TEMPEST, SHIPWRECK, EARTHQUAKE, AND WHAT BECAME OF DOCTOR PANGLOSS,
-CANDIDE, AND JAMES THE ANABAPTIST.
+### V TEMPEST, SHIPWRECK, EARTHQUAKE, AND WHAT BECAME OF DOCTOR PANGLOSS, CANDIDE, AND JAMES THE ANABAPTIST.
 
 Half dead of that inconceivable anguish which the rolling of a ship
 produces, one-half of the passengers were not even sensible of the
@@ -542,7 +535,7 @@ Candide drew near and saw his benefactor, who rose above the water one
 moment and was then swallowed up for ever. He was just going to jump
 after him, but was prevented by the philosopher Pangloss, who
 demonstrated to him that the Bay of Lisbon had been made on purpose for
-the Anabaptist to be drowned. While he was proving this _à priori_, the
+the Anabaptist to be drowned. While he was proving this _a priori_, the
 ship foundered; all perished except Pangloss, Candide, and that brutal
 sailor who had drowned the good Anabaptist. The villain swam safely to
 the shore, while Pangloss and Candide were borne thither upon a plank.
@@ -625,14 +618,11 @@ short, the determinate will----"
 Pangloss was in the middle of his sentence, when the Familiar beckoned
 to his footman, who gave him a glass of wine from Porto or Opporto.
 
-VI
-
-HOW THE PORTUGUESE MADE A BEAUTIFUL AUTO-DA-FÉ, TO PREVENT ANY FURTHER
-EARTHQUAKES; AND HOW CANDIDE WAS PUBLICLY WHIPPED.
+### VI HOW THE PORTUGUESE MADE A BEAUTIFUL AUTO-DA-FE, TO PREVENT ANY FURTHER EARTHQUAKES; AND HOW CANDIDE WAS PUBLICLY WHIPPED.
 
 After the earthquake had destroyed three-fourths of Lisbon, the sages of
 that country could think of no means more effectual to prevent utter
-ruin than to give the people a beautiful _auto-da-fé_[6]; for it had
+ruin than to give the people a beautiful _auto-da-fe_[6]; for it had
 been decided by the University of Coimbra, that the burning of a few
 people alive by a slow fire, and with great ceremony, is an infallible
 secret to hinder the earth from quaking.
@@ -801,7 +791,7 @@ family, and he represented to me how much it was beneath my rank to
 belong to an Israelite. A proposal was then made to Don Issachar that he
 should resign me to my lord. Don Issachar, being the court banker, and a
 man of credit, would hear nothing of it. The Inquisitor threatened him
-with an _auto-da-fé_. At last my Jew, intimidated, concluded a bargain,
+with an _auto-da-fe_. At last my Jew, intimidated, concluded a bargain,
 by which the house and myself should belong to both in common; the Jew
 should have for himself Monday, Wednesday, and Saturday, and the
 Inquisitor should have the rest of the week. It is now six months since
@@ -811,7 +801,7 @@ law or to the new. For my part, I have so far held out against both, and
 I verily believe that this is the reason why I am still beloved.
 
 "At length, to avert the scourge of earthquakes, and to intimidate Don
-Issachar, my Lord Inquisitor was pleased to celebrate an _auto-da-fé_.
+Issachar, my Lord Inquisitor was pleased to celebrate an _auto-da-fe_.
 He did me the honour to invite me to the ceremony. I had a very good
 seat, and the ladies were served with refreshments between Mass and the
 execution. I was in truth seized with horror at the burning of those two
@@ -851,9 +841,7 @@ themselves once more on the sofa; where they were when Signor Don
 Issachar arrived. It was the Jewish Sabbath, and Issachar had come to
 enjoy his rights, and to explain his tender love.
 
-IX
-
-WHAT BECAME OF CUNEGONDE, CANDIDE, THE GRAND INQUISITOR, AND THE JEW.
+### IX WHAT BECAME OF CUNEGONDE, CANDIDE, THE GRAND INQUISITOR, AND THE JEW.
 
 This Issachar was the most choleric Hebrew that had ever been seen in
 Israel since the Captivity in Babylon.
@@ -918,10 +906,7 @@ Candide, Cunegonde, and the old woman, had now reached the little town
 of Avacena in the midst of the mountains of the Sierra Morena, and were
 speaking as follows in a public inn.
 
-X
-
-IN WHAT DISTRESS CANDIDE, CUNEGONDE, AND THE OLD WOMAN ARRIVED AT CADIZ;
-AND OF THEIR EMBARKATION.
+### X IN WHAT DISTRESS CANDIDE, CUNEGONDE, AND THE OLD WOMAN ARRIVED AT CADIZ; AND OF THEIR EMBARKATION.
 
 "Who was it that robbed me of my money and jewels?" said Cunegonde, all
 bathed in tears. "How shall we live? What shall we do? Where find
@@ -988,7 +973,7 @@ amusing, for pretending to have been as unfortunate as she.
 "Alas!" said Cunegonde, "my good mother, unless you have been ravished
 by two Bulgarians, have received two deep wounds in your belly, have had
 two castles demolished, have had two mothers cut to pieces before your
-eyes, and two of your lovers whipped at an _auto-da-fé_, I do not
+eyes, and two of your lovers whipped at an _auto-da-fe_, I do not
 conceive how you could be more unfortunate than I. Add that I was born a
 baroness of seventy-two quarterings--and have been a cook!"
 
@@ -999,9 +984,7 @@ suspend your judgment."
 This speech having raised extreme curiosity in the minds of Cunegonde
 and Candide, the old woman spoke to them as follows.
 
-XI
-
-HISTORY OF THE OLD WOMAN.
+### XI HISTORY OF THE OLD WOMAN.
 
 "I had not always bleared eyes and red eyelids; neither did my nose
 always touch my chin; nor was I always a servant. I am the daughter of
@@ -1024,7 +1007,7 @@ for them!
 prince! as handsome as myself, sweet-tempered, agreeable, brilliantly
 witty, and sparkling with love. I loved him as one loves for the first
 time--with idolatry, with transport. The nuptials were prepared. There
-was surprising pomp and magnificence; there were _fêtes_, carousals,
+was surprising pomp and magnificence; there were _fetes_, carousals,
 continual _opera bouffe_; and all Italy composed sonnets in my praise,
 though not one of them was passable. I was just upon the point of
 reaching the summit of bliss, when an old marchioness who had been
@@ -1166,7 +1149,7 @@ became the property of an Aga of the Janissaries, who was soon ordered
 away to the defence of Azof, then besieged by the Russians.
 
 "The Aga, who was a very gallant man, took his whole seraglio with him,
-and lodged us in a small fort on the Palus Méotides, guarded by two
+and lodged us in a small fort on the Palus Meotides, guarded by two
 black eunuchs and twenty soldiers. The Turks killed prodigious numbers
 of the Russians, but the latter had their revenge. Azof was destroyed by
 fire, the inhabitants put to the sword, neither sex nor age was spared;
@@ -1240,7 +1223,7 @@ other, to relate their adventures; and then both she and Candide allowed
 that the old woman was in the right.
 
 "It is a great pity," said Candide, "that the sage Pangloss was hanged
-contrary to custom at an _auto-da-fé_; he would tell us most amazing
+contrary to custom at an _auto-da-fe_; he would tell us most amazing
 things in regard to the physical and moral evils that overspread earth
 and sea, and I should be able, with due respect, to make a few
 objections."
@@ -1453,9 +1436,7 @@ ears, and sparkled in their eyes. As they were Germans, they sat a good
 while at table, waiting for the reverend Father Provincial, and the
 Commandant spoke to his dear Candide as follows.
 
-XV
-
-HOW CANDIDE KILLED THE BROTHER OF HIS DEAR CUNEGONDE.
+### XV HOW CANDIDE KILLED THE BROTHER OF HIS DEAR CUNEGONDE.
 
 "I shall have ever present to my memory the dreadful day, on which I saw
 my father and mother killed, and my sister ravished. When the Bulgarians
@@ -2202,9 +2183,7 @@ entertain him during the voyage. All the other candidates complained
 that Candide had done them great injustice; but he appeased them by
 giving one hundred piastres to each.
 
-XX
-
-WHAT HAPPENED AT SEA TO CANDIDE AND MARTIN.
+### XX WHAT HAPPENED AT SEA TO CANDIDE AND MARTIN.
 
 The old philosopher, whose name was Martin, embarked then with Candide
 for Bordeaux. They had both seen and suffered a great deal; and if the
@@ -2385,7 +2364,7 @@ minus C divided by Z, that the sheep must be red, and die of the rot.
 Meanwhile, all the travellers whom Candide met in the inns along his
 route, said to him, "We go to Paris." This general eagerness at length
 gave him, too, a desire to see this capital; and it was not so very
-great a _détour_ from the road to Venice.
+great a _detour_ from the road to Venice.
 
 He entered Paris by the suburb of St. Marceau, and fancied that he was
 in the dirtiest village of Westphalia.
@@ -2416,12 +2395,12 @@ Candide got well again, and during his convalescence he had very good
 company to sup with him. They played high. Candide wondered why it was
 that the ace never came to him; but Martin was not at all astonished.
 
-Among those who did him the honours of the town was a little Abbé of
+Among those who did him the honours of the town was a little Abbe of
 Perigord, one of those busybodies who are ever alert, officious,
 forward, fawning, and complaisant; who watch for strangers in their
 passage through the capital, tell them the scandalous history of the
 town, and offer them pleasure at all prices. He first took Candide and
-Martin to La Comédie, where they played a new tragedy. Candide happened
+Martin to La Comedie, where they played a new tragedy. Candide happened
 to be seated near some of the fashionable wits. This did not prevent his
 shedding tears at the well-acted scenes. One of these critics at his
 side said to him between the acts:
@@ -2432,7 +2411,7 @@ actors. The author does not know a word of Arabic, yet the scene is in
 Arabia; moreover he is a man that does not believe in innate ideas; and
 I will bring you, to-morrow, twenty pamphlets written against him."[22]
 
-"How many dramas have you in France, sir?" said Candide to the Abbé.
+"How many dramas have you in France, sir?" said Candide to the Abbe.
 
 "Five or six thousand."
 
@@ -2448,17 +2427,17 @@ somewhat insipid tragedy[23] sometimes acted.
 "That actress," said he to Martin, "pleases me much; she has a likeness
 to Miss Cunegonde; I should be very glad to wait upon her."
 
-The Perigordian Abbé offered to introduce him. Candide, brought up in
+The Perigordian Abbe offered to introduce him. Candide, brought up in
 Germany, asked what was the etiquette, and how they treated queens of
 England in France.
 
-"It is necessary to make distinctions," said the Abbé. "In the provinces
+"It is necessary to make distinctions," said the Abbe. "In the provinces
 one takes them to the inn; in Paris, one respects them when they are
 beautiful, and throws them on the highway when they are dead."[24]
 
 "Queens on the highway!" said Candide.
 
-"Yes, truly," said Martin, "the Abbé is right. I was in Paris when Miss
+"Yes, truly," said Martin, "the Abbe is right. I was in Paris when Miss
 Monime passed, as the saying is, from this life to the other. She was
 refused what people call the _honours of sepulture_--that is to say, of
 rotting with all the beggars of the neighbourhood in an ugly cemetery;
@@ -2474,14 +2453,14 @@ shows of this droll nation."
 
 "Is it true that they always laugh in Paris?" said Candide.
 
-"Yes," said the Abbé, "but it means nothing, for they complain of
+"Yes," said the Abbe, "but it means nothing, for they complain of
 everything with great fits of laughter; they even do the most detestable
 things while laughing."
 
 "Who," said Candide, "is that great pig who spoke so ill of the piece at
 which I wept, and of the actors who gave me so much pleasure?"
 
-"He is a bad character," answered the Abbé, "who gains his livelihood by
+"He is a bad character," answered the Abbe, "who gains his livelihood by
 saying evil of all plays and of all books. He hates whatever succeeds,
 as the eunuchs hate those who enjoy; he is one of the serpents of
 literature who nourish themselves on dirt and spite; he is a
@@ -2489,7 +2468,7 @@ _folliculaire_."
 
 "What is a _folliculaire_?" said Candide.
 
-"It is," said the Abbé, "a pamphleteer--a Fréron."[25]
+"It is," said the Abbe, "a pamphleteer--a Freron."[25]
 
 Thus Candide, Martin, and the Perigordian conversed on the staircase,
 while watching every one go out after the performance.
@@ -2497,7 +2476,7 @@ while watching every one go out after the performance.
 "Although I am eager to see Cunegonde again," said Candide, "I should
 like to sup with Miss Clairon, for she appears to me admirable."
 
-The Abbé was not the man to approach Miss Clairon, who saw only good
+The Abbe was not the man to approach Miss Clairon, who saw only good
 company.
 
 "She is engaged for this evening," he said, "but I shall have the honour
@@ -2505,7 +2484,7 @@ to take you to the house of a lady of quality, and there you will know
 Paris as if you had lived in it for years."
 
 Candide, who was naturally curious, let himself be taken to this lady's
-house, at the end of the Faubourg St. Honoré. The company was occupied
+house, at the end of the Faubourg St. Honore. The company was occupied
 in playing faro; a dozen melancholy punters held each in his hand a
 little pack of cards; a bad record of his misfortunes. Profound silence
 reigned; pallor was on the faces of the punters, anxiety on that of the
@@ -2516,13 +2495,13 @@ severe, but polite attention; she showed no vexation for fear of losing
 her customers. The lady insisted upon being called the Marchioness of
 Parolignac. Her daughter, aged fifteen, was among the punters, and
 notified with a covert glance the cheatings of the poor people who
-tried to repair the cruelties of fate. The Perigordian Abbé, Candide and
+tried to repair the cruelties of fate. The Perigordian Abbe, Candide and
 Martin entered; no one rose, no one saluted them, no one looked at them;
 all were profoundly occupied with their cards.
 
 "The Baroness of Thunder-ten-Tronckh was more polite," said Candide.
 
-However, the Abbé whispered to the Marchioness, who half rose, honoured
+However, the Abbe whispered to the Marchioness, who half rose, honoured
 Candide with a gracious smile, and Martin with a condescending nod; she
 gave a seat and a pack of cards to Candide, who lost fifty thousand
 francs in two deals, after which they supped very gaily, and every one
@@ -2537,7 +2516,7 @@ pleasantries of which most were insipid, with false news, with bad
 reasoning, a little politics, and much evil speaking; they also
 discussed new books.
 
-"Have you seen," said the Perigordian Abbé, "the romance of Sieur
+"Have you seen," said the Perigordian Abbe, "the romance of Sieur
 Gauchat, doctor of divinity?"[26]
 
 "Yes," answered one of the guests, "but I have not been able to finish
@@ -2546,8 +2525,8 @@ the impertinence of 'Gauchat, Doctor of Divinity.' I am so satiated with
 the great number of detestable books with which we are inundated that I
 am reduced to punting at faro."
 
-"And the _Mélanges_ of Archdeacon Trublet,[27] what do you say of that?"
-said the Abbé.
+"And the _Melanges_ of Archdeacon Trublet,[27] what do you say of that?"
+said the Abbe.
 
 "Ah!" said the Marchioness of Parolignac, "the wearisome mortal! How
 curiously he repeats to you all that the world knows! How heavily he
@@ -2583,7 +2562,7 @@ idea of the speaker, and as the Marchioness had taken care to place him
 beside her, he leaned towards her and took the liberty of asking who was
 the man who had spoken so well.
 
-"He is a scholar," said the lady, "who does not play, whom the Abbé
+"He is a scholar," said the lady, "who does not play, whom the Abbe
 sometimes brings to supper; he is perfectly at home among tragedies and
 books, and he has written a tragedy which was hissed, and a book of
 which nothing has ever been seen outside his bookseller's shop
@@ -2656,8 +2635,8 @@ The lady having perceived two enormous diamonds upon the hands of the
 young foreigner praised them with such good faith that from Candide's
 fingers they passed to her own.
 
-Candide, returning with the Perigordian Abbé, felt some remorse in
-having been unfaithful to Miss Cunegonde. The Abbé sympathised in his
+Candide, returning with the Perigordian Abbe, felt some remorse in
+having been unfaithful to Miss Cunegonde. The Abbe sympathised in his
 trouble; he had had but a light part of the fifty thousand francs lost
 at play and of the value of the two brilliants, half given, half
 extorted. His design was to profit as much as he could by the advantages
@@ -2665,20 +2644,20 @@ which the acquaintance of Candide could procure for him. He spoke much
 of Cunegonde, and Candide told him that he should ask forgiveness of
 that beautiful one for his infidelity when he should see her in Venice.
 
-The Abbé redoubled his politeness and attentions, and took a tender
+The Abbe redoubled his politeness and attentions, and took a tender
 interest in all that Candide said, in all that he did, in all that he
 wished to do.
 
 "And so, sir, you have a rendezvous at Venice?"
 
-"Yes, monsieur Abbé," answered Candide. "It is absolutely necessary
+"Yes, monsieur Abbe," answered Candide. "It is absolutely necessary
 that I go to meet Miss Cunegonde."
 
 And then the pleasure of talking of that which he loved induced him to
 relate, according to his custom, part of his adventures with the fair
 Westphalian.
 
-"I believe," said the Abbé, "that Miss Cunegonde has a great deal of
+"I believe," said the Abbe, "that Miss Cunegonde has a great deal of
 wit, and that she writes charming letters?"
 
 "I have never received any from her," said Candide, "for being expelled
@@ -2687,7 +2666,7 @@ her. Soon after that I heard she was dead; then I found her alive; then
 I lost her again; and last of all, I sent an express to her two thousand
 five hundred leagues from here, and I wait for an answer."
 
-The Abbé listened attentively, and seemed to be in a brown study. He
+The Abbe listened attentively, and seemed to be in a brown study. He
 soon took his leave of the two foreigners after a most tender embrace.
 The following day Candide received, on awaking, a letter couched in
 these terms:
@@ -2720,7 +2699,7 @@ with his tears and afterwards filled it with diamonds, leaving a bag of
 gold upon the easy chair.
 
 In the midst of these transports in came an officer, followed by the
-Abbé and a file of soldiers.
+Abbe and a file of soldiers.
 
 "There," said he, "are the two suspected foreigners," and at the same
 time he ordered them to be seized and carried to prison.
@@ -2734,7 +2713,7 @@ time he ordered them to be seized and carried to prison.
 "To a dungeon," answered the officer.
 
 Martin, having recovered himself a little, judged that the lady who
-acted the part of Cunegonde was a cheat, that the Perigordian Abbé was a
+acted the part of Cunegonde was a cheat, that the Perigordian Abbe was a
 knave who had imposed upon the honest simplicity of Candide, and that
 the officer was another knave whom they might easily silence.
 
@@ -2753,14 +2732,14 @@ to give him he'll take as much care of you as I would."
 
 "And why," said Candide, "should all foreigners be arrested?"
 
-"It is," the Perigordian Abbé then made answer, "because a poor beggar
-of the country of Atrébatie[28] heard some foolish things said. This
+"It is," the Perigordian Abbe then made answer, "because a poor beggar
+of the country of Atrebatie[28] heard some foolish things said. This
 induced him to commit a parricide, not such as that of 1610 in the month
 of May,[29] but such as that of 1594 in the month of December,[30] and
 such as others which have been committed in other years and other months
 by other poor devils who had heard nonsense spoken."
 
-The officer then explained what the Abbé meant.
+The officer then explained what the Abbe meant.
 
 "Ah, the monsters!" cried Candide. "What horrors among a people who
 dance and sing! Is there no way of getting quickly out of this country
@@ -2838,7 +2817,7 @@ and entered the Mediterranean. At last they landed at Venice.
 shall see again my beautiful Cunegonde. I trust Cacambo as myself. All
 is well, all will be well, all goes as well as possible."
 
-### XXIV OF PAQUETTE AND FRIAR GIROFLÉE.
+### XXIV OF PAQUETTE AND FRIAR GIROFLEE.
 
 Upon their arrival at Venice, Candide went to search for Cacambo at
 every inn and coffee-house, and among all the ladies of pleasure, but to
@@ -2850,7 +2829,7 @@ Bordeaux, to go from Bordeaux to Paris, from Paris to Dieppe, from
 Dieppe to Portsmouth, to coast along Portugal and Spain, to cross the
 whole Mediterranean, to spend some months, and yet the beautiful
 Cunegonde has not arrived! Instead of her I have only met a Parisian
-wench and a Perigordian Abbé. Cunegonde is dead without doubt, and there
+wench and a Perigordian Abbe. Cunegonde is dead without doubt, and there
 is nothing for me but to die. Alas! how much better it would have been
 for me to have remained in the paradise of El Dorado than to come back
 to this cursed Europe! You are in the right, my dear Martin: all is
@@ -2891,7 +2870,7 @@ whether I am mistaken."
 
 Immediately he accosted them, presented his compliments, and invited
 them to his inn to eat some macaroni, with Lombard partridges, and
-caviare, and to drink some Montepulciano, Lachrymæ Christi, Cyprus and
+caviare, and to drink some Montepulciano, Lachrymae Christi, Cyprus and
 Samos wine. The girl blushed, the Theatin accepted the invitation and
 she followed him, casting her eyes on Candide with confusion and
 surprise, and dropping a few tears. No sooner had she set foot in
@@ -2929,7 +2908,7 @@ destitute, and obliged to continue this abominable trade, which appears
 so pleasant to you men, while to us women it is the utmost abyss of
 misery. I have come to exercise the profession at Venice. Ah! sir, if
 you could only imagine what it is to be obliged to caress indifferently
-an old merchant, a lawyer, a monk, a gondolier, an abbé, to be exposed
+an old merchant, a lawyer, a monk, a gondolier, an abbe, to be exposed
 to abuse and insults; to be often reduced to borrowing a petticoat, only
 to go and have it raised by a disagreeable man; to be robbed by one of
 what one has earned from another; to be subject to the extortions of the
@@ -2942,7 +2921,7 @@ Martin, who said to his friend:
 
 "You see that already I have won half the wager."
 
-Friar Giroflée stayed in the dining-room, and drank a glass or two of
+Friar Giroflee stayed in the dining-room, and drank a glass or two of
 wine while he was waiting for dinner.
 
 "But," said Candide to Paquette, "you looked so gay and content when I
@@ -2964,7 +2943,7 @@ your expression makes plain your happiness; you have a very pretty girl
 for your recreation, and you seem well satisfied with your state as a
 Theatin."
 
-"My faith, sir," said Friar Giroflée, "I wish that all the Theatins were
+"My faith, sir," said Friar Giroflee, "I wish that all the Theatins were
 at the bottom of the sea. I have been tempted a hundred times to set
 fire to the convent, and go and become a Turk. My parents forced me at
 the age of fifteen to put on this detestable habit, to increase the
@@ -2980,7 +2959,7 @@ Martin turned towards Candide with his usual coolness.
 "Well," said he, "have I not won the whole wager?"
 
 Candide gave two thousand piastres to Paquette, and one thousand to
-Friar Giroflée.
+Friar Giroflee.
 
 "I'll answer for it," said he, "that with this they will be happy."
 
@@ -3062,7 +3041,7 @@ of it a monster which shocks me. Let who will go to see bad tragedies
 set to music, where the scenes are contrived for no other end than to
 introduce two or three songs ridiculously out of place, to show off an
 actress's voice. Let who will, or who can, die away with pleasure at the
-sight of an eunuch quavering the _rôle_ of Cæsar, or of Cato, and
+sight of an eunuch quavering the _role_ of Caesar, or of Cato, and
 strutting awkwardly upon the stage. For my part I have long since
 renounced those paltry entertainments which constitute the glory of
 modern Italy, and are purchased so dearly by sovereigns."
@@ -3092,7 +3071,7 @@ medals which are no longer of use in commerce."
 "But your Excellency does not think thus of Virgil?" said Candide.
 
 "I grant," said the Senator, "that the second, fourth, and sixth books
-of his _Æneid_ are excellent, but as for his pious Æneas, his strong
+of his _AEneid_ are excellent, but as for his pious AEneas, his strong
 Cloanthus, his friend Achates, his little Ascanius, his silly King
 Latinus, his bourgeois Amata, his insipid Lavinia, I think there can be
 nothing more flat and disagreeable. I prefer Tasso a good deal, or even
@@ -3108,7 +3087,7 @@ for his journey to Brundusium, and his account of a bad dinner, or of
 his low quarrel between one Rupilius whose words he says were full of
 poisonous filth, and another whose language was imbued with vinegar. I
 have read with much distaste his indelicate verses against old women and
-witches; nor do I see any merit in telling his friend Mæcenas that if he
+witches; nor do I see any merit in telling his friend Maecenas that if he
 will but rank him in the choir of lyric poets, his lofty head shall
 touch the stars. Fools admire everything in an author of reputation. For
 my part, I read only to please myself. I like only that which serves my
@@ -3150,7 +3129,7 @@ with most of these books, which are written with a spirit of freedom."
 
 "Yes," answered Pococurante, "it is noble to write as one thinks; this
 is the privilege of humanity. In all our Italy we write only what we do
-not think; those who inhabit the country of the Cæsars and the
+not think; those who inhabit the country of the Caesars and the
 Antoninuses dare not acquire a single idea without the permission of a
 Dominican friar. I should be pleased with the liberty which inspires the
 English genius if passion and party spirit did not corrupt all that is
@@ -3219,7 +3198,7 @@ when I am blessed with the sight of my dear Cunegonde."
 
 However, the days and the weeks passed. Cacambo did not come, and
 Candide was so overwhelmed with grief that he did not even reflect that
-Paquette and Friar Giroflée did not return to thank him.
+Paquette and Friar Giroflee did not return to thank him.
 
 ### XXVI OF A SUPPER WHICH CANDIDE AND MARTIN TOOK WITH SIX STRANGERS, AND WHO THEY WERE.[34]
 
@@ -3681,7 +3660,7 @@ their hands, that one day the old woman ventured to say to them:
 
 "I want to know which is worse, to be ravished a hundred times by negro
 pirates, to have a buttock cut off, to run the gauntlet among the
-Bulgarians, to be whipped and hanged at an _auto-da-fé_, to be
+Bulgarians, to be whipped and hanged at an _auto-da-fe_, to be
 dissected, to row in the galleys--in short, to go through all the
 miseries we have undergone, or to stay here and have nothing to do?"
 
@@ -3696,16 +3675,16 @@ well, he asserted it still, though he no longer believed it.
 
 What helped to confirm Martin in his detestable principles, to stagger
 Candide more than ever, and to puzzle Pangloss, was that one day they
-saw Paquette and Friar Giroflée land at the farm in extreme misery. They
+saw Paquette and Friar Giroflee land at the farm in extreme misery. They
 had soon squandered their three thousand piastres, parted, were
 reconciled, quarrelled again, were thrown into gaol, had escaped, and
-Friar Giroflée had at length become Turk. Paquette continued her trade
+Friar Giroflee had at length become Turk. Paquette continued her trade
 wherever she went, but made nothing of it.
 
 "I foresaw," said Martin to Candide, "that your presents would soon be
 dissipated, and only make them the more miserable. You have rolled in
 millions of money, you and Cacambo; and yet you are not happier than
-Friar Giroflée and Paquette."
+Friar Giroflee and Paquette."
 
 "Ha!" said Pangloss to Paquette, "Providence has then brought you
 amongst us again, my poor child! Do you know that you cost me the tip of
@@ -3783,7 +3762,7 @@ three darts; King Nadab, the son of Jeroboam, was killed by Baasa; King
 Ela by Zimri; Ahaziah by Jehu; Athaliah by Jehoiada; the Kings
 Jehoiakim, Jeconiah, and Zedekiah, were led into captivity. You know how
 perished Croesus, Astyages, Darius, Dionysius of Syracuse, Pyrrhus,
-Perseus, Hannibal, Jugurtha, Ariovistus, Cæsar, Pompey, Nero, Otho,
+Perseus, Hannibal, Jugurtha, Ariovistus, Caesar, Pompey, Nero, Otho,
 Vitellius, Domitian, Richard II. of England, Edward II., Henry VI.,
 Richard III., Mary Stuart, Charles I., the three Henrys of France, the
 Emperor Henry IV.! You know----"
@@ -3801,7 +3780,7 @@ The whole little society entered into this laudable design, according to
 their different abilities. Their little plot of land produced plentiful
 crops. Cunegonde was, indeed, very ugly, but she became an excellent
 pastry cook; Paquette worked at embroidery; the old woman looked after
-the linen. They were all, not excepting Friar Giroflée, of some service
+the linen. They were all, not excepting Friar Giroflee, of some service
 or other; for he made a good joiner, and became a very honest man.
 
 Pangloss sometimes said to Candide:
@@ -3838,27 +3817,27 @@ the cross, renounce all marks of Christianity, and swear that it was not
 their religion. See chap. xi. of the voyage to Laputa in Swift's
 _Gulliver's Travels_.
 
-[6] P. 23. This _auto-da-fé_ actually took place, some months after the
+[6] P. 23. This _auto-da-fe_ actually took place, some months after the
 earthquake, on June 20, 1756.
 
 [7] P. 23. The rejection of bacon convicting them, of course, of being
-Jews, and therefore fitting victims for an _auto-da-fé_.
+Jews, and therefore fitting victims for an _auto-da-fe_.
 
 [8] P. 24. The _San-benito_ was a kind of loose over-garment painted
 with flames, figures of devils, the victim's own portrait, etc., worn by
 persons condemned to death by the Inquisition when going to the stake on
-the occasion of an _auto-da-fé_. Those who expressed repentance for
+the occasion of an _auto-da-fe_. Those who expressed repentance for
 their errors wore a garment of the same kind covered with flames
 directed downwards, while that worn by Jews, sorcerers, and renegades
 bore a St. Andrew's cross before and behind.
 
 [9] P. 26. "This Notre-Dame is of wood; every year she weeps on the day
-of her _fête_, and the people weep also. One day the preacher, seeing a
+of her _fete_, and the people weep also. One day the preacher, seeing a
 carpenter with dry eyes, asked him how it was that he did not dissolve
 in tears when the Holy Virgin wept. 'Ah, my reverend father,' replied
 he, 'it is I who refastened her in her niche yesterday. I drove three
 great nails through her behind; it is then she would have wept if she
-had been able.'"--Voltaire, _Mélanges_.
+had been able.'"--Voltaire, _Melanges_.
 
 [10] P. 42. The following posthumous note of Voltaire's was first added
 to M. Beuchot's edition of his works issued in 1829; "See the extreme
@@ -3878,7 +3857,7 @@ Ferdinand VI.; he died in 1782. He has been made one of the chief
 persons in one of the comic operas of MM. Auber and Scribe.
 
 [14] P. 53. Jean Robeck, a Swede, who was born in 1672, will be found
-mentioned in Rousseau's _Nouvelle Héloïse_. He drowned himself in the
+mentioned in Rousseau's _Nouvelle Heloise_. He drowned himself in the
 Weser at Bremen in 1729, and was the author of a Latin treatise on
 voluntary death, first printed in 1735.
 
@@ -3892,7 +3871,7 @@ that he was "the most brutal of the Society."
 
 [17] P. 68. By the _Journal of Trevoux_ Voltaire meant a critical
 periodical printed by the Jesuits at Trevoux under the title of
-_Mémoires pour servir à l'Historie des Sciences et des Beaux-Arts_. It
+_Memoires pour servir a l'Historie des Sciences et des Beaux-Arts_. It
 existed from 1701 until 1767, during which period its title underwent
 many changes.
 
@@ -3915,13 +3894,13 @@ Socinus (16th century), which denied the doctrine of the Trinity, the
 deity of Christ, the personality of the devil, the native and total
 depravity of man, the vicarious atonement and eternal punishment. The
 Socinians are now represented by the Unitarians. _Manicheans_; followers
-of Manes or Manichæus (3rd century), a Persian who maintained that there
+of Manes or Manichaeus (3rd century), a Persian who maintained that there
 are two principles, the one good and the other evil, each equally
 powerful in the government of the world.
 
 [22] P. 107. In the 1759 editions, in place of the long passage in
 brackets from here to page 215, there was only the following: "'Sir,'
-said the Perigordian Abbé to him, 'have you noticed that young person
+said the Perigordian Abbe to him, 'have you noticed that young person
 who has so roguish a face and so fine a figure? You may have her for ten
 thousand francs a month, and fifty thousand crowns in diamonds.' 'I have
 only a day or two to give her,' answered Candide, 'because I have a
@@ -3937,9 +3916,9 @@ Christian rites. In 1730 the "honours of sepulture" were refused to
 Mademoiselle Lecouvreur (doubtless the Miss Monime of this passage).
 Voltaire's miscellaneous works contain a paper on the matter.
 
-[25] P. 109. Élie-Catherine Fréron was a French critic (1719-1776) who
-incurred the enmity of Voltaire. In 1752 Fréron, in _Lettres sur
-quelques écrits du temps_, wrote pointedly of Voltaire as one who chose
+[25] P. 109. Elie-Catherine Freron was a French critic (1719-1776) who
+incurred the enmity of Voltaire. In 1752 Freron, in _Lettres sur
+quelques ecrits du temps_, wrote pointedly of Voltaire as one who chose
 to be all things to all men, and Voltaire retaliated by references such
 as these in _Candide_.
 
@@ -3950,21 +3929,21 @@ was author of a number of works on religious subjects.
 writer whose criticism of Voltaire was revenged in passages such as this
 one in _Candide_, and one in the _Pauvre Diable_ beginning:
 
-L'abbé Trublet avait alors le rage
-D'être à Paris un petit personage.
+L'abbe Trublet avait alors le rage
+D'etre a Paris un petit personage.
 
 [28] P. 120. Damiens, who attempted the life of Louis XV. in 1757, was
-born at Arras, capital of Artois (Atrébatie).
+born at Arras, capital of Artois (Atrebatie).
 
 [29] P. 120. On May 14, 1610, Ravaillac assassinated Henry VI.
 
-[30] P. 120. On December 27, 1594, Jean Châtel attempted to assassinate
+[30] P. 120. On December 27, 1594, Jean Chatel attempted to assassinate
 Henry IV.
 
 [31] P. 122. This same curiously inept criticism of the war which cost
 France her American provinces occurs in Voltaire's _Memoirs_, wherein he
 says, "In 1756 England made a piratical war upon France for some acres
-of snow." See also his _Précis du Siècle de Louis_ XV.
+of snow." See also his _Precis du Siecle de Louis_ XV.
 
 [32] P. 123. Admiral Byng was shot on March 14, 1757.
 
@@ -3986,7 +3965,7 @@ _d._ 1763). Stanislaus (_b._ 1682, _d._ 1766). Theodore (_b._ 1690, _d._
 kings ever to have met, five of them might have been made to do so
 without any anachronism.
 
-[35] P. 149. François Leopold Ragotsky (1676-1735).
+[35] P. 149. Francois Leopold Ragotsky (1676-1735).
 
 *       *       *       *       *
 
@@ -4020,7 +3999,7 @@ without any anachronism.
 | latter is in the Introduction, i.e. distinct from the book |
 | proper, it has been retained.                              |
 |                                                            |
-| The different spellings of Cunégonde (which occurs only    |
+| The different spellings of Cunegonde (which occurs only    |
 | in the Introduction) and Robeck (which occurs in the       |
 | Notes [p. 170]; spelt Robek in the text [p. 53]) have      |
 | been retained for the same reason.                         |
