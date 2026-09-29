@@ -8,7 +8,7 @@ Heart of Darkness
 
 by Joseph Conrad
 
-I
+### I
 
 The Nellie, a cruising yawl, swung to her anchor without a flutter of
 the sails, and was at rest. The flood had made, the wind was nearly
@@ -1251,7 +1251,7 @@ interested in him. No. Still, I was curious to see whether this man,
 who had come out equipped with moral ideas of some sort, would climb to
 the top after all and how he would set about his work when there.”
 
-II
+### II
 
 “One evening as I was lying flat on the deck of my steamboat, I heard
 voices approaching—and there were the nephew and the uncle strolling

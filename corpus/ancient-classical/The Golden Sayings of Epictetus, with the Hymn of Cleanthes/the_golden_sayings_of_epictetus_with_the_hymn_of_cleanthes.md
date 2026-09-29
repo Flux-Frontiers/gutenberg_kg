@@ -38,7 +38,7 @@ XXIV
 (APPENDIX B)
 The Hymn of Cleanthes
 
-I
+### I
 
 Are these the only works of Providence within us? What words suffice to
 praise or set them forth? Had we but understanding, should we ever
@@ -68,7 +68,7 @@ reasonable being, I must sing to God: that is my work: I do it, nor
 will I desert this my post, as long as it is granted me to hold it; and
 upon you too I call to join in this self-same hymn.
 
-II
+### II
 
 How then do men act? As though one returning to his country who had
 sojourned for the night in a fair inn, should be so captivated thereby
@@ -91,14 +91,14 @@ wert appointed to be a citizen.”
 
 Try to enjoy the great festival of life with other men.
 
-IV
+### IV
 
 But I have one whom I must please, to whom I must be subject, whom I
 must obey:—God, and those who come next to Him. He hath entrusted me
 with myself: He hath made my will subject to myself alone and given me
 rules for the right use thereof.
 
-V
+### V
 
 Rufus used to say, _If you have leisure to praise me, what I say is
 naught_. In truth he spoke in such wise, that each of us who sat there,
@@ -106,7 +106,7 @@ though that some one had accused him to Rufus:—so surely did he lay his
 finger on the very deeds we did: so surely display the faults of each
 before his very eyes.
 
-VI
+### VI
 
 But what saith God?—“Had it been possible, Epictetus, I would have made
 both that body of thine and thy possessions free and unimpeded, but as
@@ -157,7 +157,7 @@ purple—that small and shining part which makes the rest seem fair and
 beautiful. Why then do you bid me become even as the multitude? Then
 were I no longer the purple.”
 
-IX
+### IX
 
 If a man could be throughly penetrated, as he ought, with this thought,
 that we are all in an especial manner sprung from God, and that God is
@@ -178,11 +178,11 @@ this miserable flesh of mine. Miserable indeed! but you have something
 better than that paltry flesh of yours. Why then cling to the one, and
 neglect the other?
 
-X
+### X
 
 Thou art but a poor soul laden with a lifeless body.
 
-XI
+### XI
 
 The other day I had an iron lamp placed beside my household gods. I
 heard a noise at the door and on hastening down found my lamp carried
@@ -234,7 +234,7 @@ can come to pass? What shall cast me down or disturb me? What shall
 seem painful? Shall I not use the power to the end for which I received
 it, instead of moaning and wailing over what comes to pass?
 
-XV
+### XV
 
 If what philosophers say of the kinship of God and Man be true, what
 remains for men to do but as Socrates did:—never, when asked one’s
@@ -306,7 +306,7 @@ strong and passionate? Why, what should they do to us? What they can
 do, we will not regard: what does concern us, that they cannot do. Who
 then shall rule one that is thus minded?
 
-XX
+### XX
 
 Seeing this then, and noting well the faculties which you have, you
 should say,—“Send now, O God, any trial that Thou wilt; lo, I have
@@ -583,7 +583,7 @@ of the fig-tree reaches not maturity suddenly nor yet in a single hour,
 do you nevertheless desire so quickly, and easily to reap the fruit of
 the mind of man?—Nay, expect it not, even though I bade you!”
 
-XL
+### XL
 
 Epaphroditus had a shoemaker whom he sold as being good-for-nothing.
 This fellow, by some accident, was afterwards purchased by one of
@@ -718,13 +718,13 @@ wherewith He hath called thee, because He hath done thee so great
 honour, and deemed thee worthy of being summoned to bear witness in so
 great a cause?
 
-L
+### L
 
 Wouldst thou have men speak good of thee? speak good of them. And when
 thou hast learned to speak good of them, try to do good unto them, and
 thus thou wilt reap in return their speaking good of thee.
 
-LI
+### LI
 
 When thou goest in to any of the great, remember that Another from
 above sees what is passing, and that thou shouldst please Him rather
@@ -810,7 +810,7 @@ and then at the finish cried, “I will not entreat you: nor do I care
 what sentence you pass. It is you who are on your trial, not I!”—And so
 he ended the case.
 
-LV
+### LV
 
 As for us, we behave like a herd of deer. When they flee from the
 huntsman’s feathers in affright, which way do they turn? What haven of
@@ -879,7 +879,7 @@ Knowledge, Right Reason. Here then without more ado seek the real
 nature of the Good. For surely thou dost not seek it in a plant or in
 an animal that reasoneth not.
 
-LX
+### LX
 
 Seek then the real nature of the Good in that without whose presence
 thou wilt not admit the Good to exist in aught else.—What then? Are not
@@ -1426,9 +1426,9 @@ certain impression of the Good the Soul will never reject, any more
 than men do Cæsar’s coin. On this hangs every impulse alike of Man and
 God.
 
-XC
+### XC
 
-Asked what Common Sense was, Epictetus replied:—
+*Asked what Common Sense was, Epictetus replied:—*
 
 As that may be called a Common Ear which distinguishes only sounds,
 while that which distinguishes musical notes is not common but produced
@@ -1589,7 +1589,7 @@ miserable Virtue, that you prate of up and down. Thus it is that the
 Vulgar prove too strong for you. Everywhere strength, everywhere
 victory waits your conviction!
 
-C
+### C
 
 In general, any methods of discipline applied to the body which tend to
 modify its desires or repulsions, are good—for ascetic ends. But if
@@ -1600,7 +1600,7 @@ you are bent upon a little private discipline, wait till you are
 choking with heat some day—then take a mouthful of cold water, and spit
 it out again, and tell no man!”
 
-CI
+### CI
 
 Study how to give as one that is sick: that thou mayest hereafter give
 as one that is whole. Fast; drink water only; abstain altogether from
@@ -1663,7 +1663,7 @@ Weigh these things fully, and then, if you will, lay to your hand; if
 as the price of these things you would gain Freedom, Tranquillity, and
 passionless Serenity.
 
-CV
+### CV
 
 He that hath no musical instruction is a child in Music; he that hath
 no letters is a child in Learning; he that is untaught is a child in
@@ -1721,7 +1721,7 @@ error; for my desires, my impulses are unaltered. I give in my adhesion
 to what I did before; nor has my mode of dealing with the things of
 sense undergone any change.
 
-CX
+### CX
 
 When a friend inclined to Cynic views asked Epictetus, what sort of
 person a true Cynic should be, requesting a general sketch of the
@@ -2263,7 +2263,7 @@ If you seek Truth, you will not seek to gain a victory by every
 possible means; and when you have found Truth, you need not fear being
 defeated.
 
-CL
+### CL
 
 What foolish talk is this? how can I any longer lay claim to right
 principles, if I am not content with being what I am, but am all
@@ -2700,13 +2700,13 @@ end happier than his?
 
 Fragments Attributed to Epictetus
 
-I
+### I
 
 A life entangled with Fortune is like a torrent. It is turbulent and
 muddy; hard to pass and masterful of mood: noisy and of brief
 continuance.
 
-II
+### II
 
 The soul that companies with Virtue is like an ever-flowing source. It
 is a pure, clear, and wholesome draught; sweet, rich, and generous of
@@ -2717,17 +2717,17 @@ its store; that injures not, neither destroys.
 It is a shame that one who sweetens his drink with the gifts of the
 bee, should embitter God’s gift Reason with vice.
 
-IV
+### IV
 
 Crows pick out the eyes of the dead, when the dead have no longer need
 of them; but flatterers mar the soul of the living, and _her_ eyes they
 blind.
 
-V
+### V
 
 Keep neither a blunt knife nor an ill-disciplined looseness of tongue.
 
-VI
+### VI
 
 Nature hath given men one tongue but two ears, that we may hear from
 others twice as much as we speak.
@@ -2741,17 +2741,17 @@ judged in the tribunal of Justice.
 
 If is shameful for a Judge to be judged by others.
 
-IX
+### IX
 
 Give me by all means the shorter and nobler life, instead of one that
 is longer but of less account!
 
-X
+### X
 
 Freedom is the name of virtue: Slavery, of vice. . . . None is a slave
 whose acts are free.
 
-XI
+### XI
 
 Of pleasures, those which occur most rarely give the most delight.
 
@@ -2769,7 +2769,7 @@ regard.
 
 Chastise thy passions that they avenge not themselves upon thee.
 
-XV
+### XV
 
 No man is free who is not master of himself.
 
@@ -2791,7 +2791,7 @@ and good.
 
 Think of God more often than thou breathest.
 
-XX
+### XX
 
 Choose the life that is noblest, for custom can make it sweet to thee.
 

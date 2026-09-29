@@ -28,7 +28,7 @@ of this person concerning certain events in his life.—AUTHOR’S NOTE.
 
 *Underground*
 
-I
+### I
 
 I am a sick man.... I am a spiteful man. I am an unattractive man. I
 believe my liver is diseased. However, I know nothing at all about my
@@ -132,7 +132,7 @@ Answer: Of himself.
 
 Well, so I will talk about myself.
 
-II
+### II
 
 I want now to tell you, gentlemen, whether you care to hear it or not,
 why I could not even become an insect. I tell you solemnly, that I have
@@ -378,7 +378,7 @@ knowing who, but in spite of all these uncertainties and jugglings,
 still there is an ache in you, and the more you do not know, the worse
 the ache.
 
-IV
+### IV
 
 “Ha, ha, ha! You will be finding enjoyment in toothache next,” you cry,
 with a laugh.
@@ -434,7 +434,7 @@ in bad taste, jerky, involved, lacking self-confidence. But of course
 that is because I do not respect myself. Can a man of perception
 respect himself at all?
 
-V
+### V
 
 Come, can a man who attempts to find enjoyment in the very feeling of
 his own degradation possibly have a spark of respect for himself? I am
@@ -516,7 +516,7 @@ vexatious babbler, like all of us. But what is to be done if the direct
 and sole vocation of every intelligent man is babble, that is, the
 intentional pouring of water through a sieve?
 
-VI
+### VI
 
 Oh, if I had done nothing simply from laziness! Heavens, how I should
 have respected myself, then. I should have respected myself because I
@@ -905,7 +905,7 @@ Good heavens, gentlemen, what sort of free will is left when we come to
 tabulation and arithmetic, when it will all be a case of twice two make
 four? Twice two makes four without my will. As if free will meant that!
 
-IX
+### IX
 
 Gentlemen, I am joking, and I know myself that my jokes are not
 brilliant, but you know one can take everything as a joke. I am,
@@ -1006,7 +1006,7 @@ the same result is attained, you can at least flog yourself at times,
 and that will, at any rate, liven you up. Reactionary as it is,
 corporal punishment is better than nothing.
 
-X
+### X
 
 You believe in a palace of crystal that can never be destroyed—a palace
 at which one will not be able to put out one’s tongue or make a long
@@ -1063,7 +1063,7 @@ be kept on a curb. Though we may sit forty years underground without
 speaking, when we do come out into the light of day and break out we
 talk and talk and talk....
 
-XI
+### XI
 
 The long and the short of it is, gentlemen, that it is better to do
 nothing! Better conscious inertia! And so hurrah for underground!
@@ -1207,7 +1207,7 @@ Revolted, maddened, horror-stricken,
 At memories of foul disgrace.
 NEKRASSOV (_translated by Juliet Soskice_).
 
-I
+### I
 
 At that time I was only twenty-four. My life was even then gloomy,
 ill-regulated, and as solitary as that of a savage. I made friends with
@@ -1624,7 +1624,7 @@ read my first chapter you can guess for yourself. The officer was
 afterwards transferred; I have not seen him now for fourteen years.
 What is the dear fellow doing now? Whom is he walking over?
 
-II
+### II
 
 But the period of my dissipation would end and I always felt very sick
 afterwards. It was followed by remorse—I tried to drive it away; I felt
@@ -2111,7 +2111,7 @@ between him and the door and, jumping into a high-class sledge, on
 which I spent my last half rouble, I drove up in grand style to the
 Hôtel de Paris.
 
-IV
+### IV
 
 I had been certain the day before that I should be the first to arrive.
 But it was not a question of being the first to arrive. Not only were
@@ -2533,7 +2533,7 @@ inquisitively into my face.
 knees to beg for my friendship, or I will give Zverkov a slap in the
 face!”
 
-V
+### V
 
 “So this is it, this is it at last—contact with real life,” I muttered
 as I ran headlong downstairs. “This is very different from the Pope’s
@@ -2707,7 +2707,7 @@ revolting in the extreme, pale, angry, abject, with dishevelled hair.
 “No matter, I am glad of it,” I thought; “I am glad that I shall seem
 repulsive to her; I like that.”
 
-VI
+### VI
 
 ... Somewhere behind a screen a clock began wheezing, as though
 oppressed by something, as though someone were strangling it. After an
@@ -3806,7 +3806,7 @@ but stared at us sarcastically.
 “Go away, go away,” I commanded in desperation. At that moment my clock
 began whirring and wheezing and struck seven.
 
-IX
+### IX
 
 “Into my house come bold and free,
 Its rightful mistress there to be.”
@@ -4063,7 +4063,7 @@ intensified the other. It was almost like an act of vengeance. At first
 there was a look of amazement, even of terror on her face, but only for
 one instant. She warmly and rapturously embraced me.
 
-X
+### X
 
 A quarter of an hour later I was rushing up and down the room in
 frenzied impatience, from minute to minute I went up to the screen and

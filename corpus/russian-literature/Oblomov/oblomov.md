@@ -10,7 +10,7 @@ London: George Allen & Unwin, Ltd.
 
 ### OBLOMOV PART I
 
-I
+### I
 
 One morning, in a flat in one of the great buildings in Gorokliovaia
 Street, * the population of which was sufficient to constitute that of
@@ -357,7 +357,7 @@ slipped into his dressing-gown. “Who can it be?”
 
 Lying down again, he gazed furiously towards the door.
 
-II
+### II
 
 There entered a young fellow of about twenty-five. Beaming with health
 and irreproachably dressed to a degree which dazzled the eye with its
@@ -1191,7 +1191,7 @@ delaying the Ekaterinhov party. Good-bye!”
 Oblomov did not heed him, but, sinking back into a recumbent position in
 the armchair, relapsed into a state of meditative lethargy.
 
-IV
+### IV
 
 Zakhar, after closing the door successively behind Tarantiev and
 Alexiev, stood expecting to receive a summons from his master, inasmuch
@@ -1493,7 +1493,7 @@ Once again Oblomov sank asleep; and as he slept he dreamed of a
 different period, of different people, of a different place from the
 present. Let us follow him thither.
 
-V
+### V
 
 We find ourselves transported to a land where neither sea nor mountains
 nor crags nor precipices nor lonely forests exist--where, in short,
@@ -3549,7 +3549,7 @@ Recovering himself, he picked up his hat, and left the room. When he
 had gone she remained standing like a statue by the piano--her eyes cast
 down, and her breast rising and falling tumultuously.
 
-II
+### II
 
 From that time forth she lived in him alone, while he, for his part,
 racked his brains to avoid incurring the loss of her esteem. Whenever
@@ -4061,7 +4061,7 @@ move. Apparently she cares nothing about dreaming over the poetical
 phases of life, or losing herself in reveries. She is like Schtoltz. It
 would seem as though the two had conspired to live life at top speed.”
 
-II
+### II
 
 Late that August rain set in, and, one day, Oblomov saw a vanload of
 the Ilyinskis’ furniture come past his windows. To remain in his country
@@ -4580,7 +4580,7 @@ then----”
 
 He broke off with a sigh.
 
-IV
+### IV
 
 Are you certain that nothing remains to you of your properly--that
 there is no hope of anything?” asked Olga a few days later.
@@ -5156,7 +5156,7 @@ a difficult matter for her to evade the keen eyes of her husband. This
 she knew well, and therefore prepared herself for conversation with him
 as nervously as she would have done for confession to a priest.
 
-II
+### II
 
 One evening she and Schtoltz were pacing the poplar avenue in their
 garden. She was suffering from her usual inexplicable lack of energy,
@@ -5954,7 +5954,7 @@ footsteps approaching nearer and nearer! The door opens, and “Andrei!”
 he exclaims excitedly, for there, sure enough, stands his friend--but
 now grown to manhood, and no longer a little boy!...
 
-IV
+### IV
 
 Oblomov recovered consciousness. Before him Schtoltz _was_
 standing--but the Schtoltz of the present, not the Schtoltz of a
@@ -6202,7 +6202,7 @@ Schtoltz continued to say nothing.
 rest of the journey homeward Schtoltz refused to answer a single one of
 Olga’s questions.
 
-V
+### V
 
 Five years have passed, and more than one change has taken place in the
 Veaborg Quarter. The street which used to lead, unenclosed, to Oblomov’s
@@ -6350,7 +6350,7 @@ it by for the benefit of little Andrei.
 “’Tis his, not mine,” she said. “_He_ is the _barin_, and I will
 continue to live as I have always done.”
 
-VI
+### VI
 
 One day, about noon, two gentlemen were walking along a pavement in the
 Veaborg Quarter, while behind them a carriage quietly paced. One of

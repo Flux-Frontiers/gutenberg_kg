@@ -46,7 +46,7 @@ from gutenberg_kg.headings import (
 from gutenberg_kg.headings import (
     skip_title_page as _skip_title_page,
 )
-from gutenberg_kg.spine import contents_regions
+from gutenberg_kg.spine import bare_roman_heading_lines, contents_regions
 
 # ---------------------------------------------------------------------------
 # Constants
@@ -431,6 +431,7 @@ def text_to_markdown(text: str, meta: dict) -> str:
     # per-line _is_heading.
     title_lines = _repeated_title_lines(lines, start_idx, toc_range)
     title_lines |= _bare_bible_title_lines(lines, start_idx, toc_range)
+    roman_lines = bare_roman_heading_lines(lines, start_idx, toc_range)
 
     # Build the markdown
     md_lines = []
@@ -479,6 +480,9 @@ def text_to_markdown(text: str, meta: dict) -> str:
         heading = _is_heading(stripped)
         if heading is None and i in title_lines:
             heading = (2, stripped)
+        # Level 3, the level ALL-CAPS already gives III and XII in the same books.
+        if heading is None and i in roman_lines:
+            heading = (3, stripped)
         if heading and (prev_blank or _breaks_before_heading(prev_line)):
             level, heading_text = heading
 

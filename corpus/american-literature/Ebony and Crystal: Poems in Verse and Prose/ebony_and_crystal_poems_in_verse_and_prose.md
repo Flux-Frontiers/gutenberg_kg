@@ -3805,7 +3805,7 @@ found Cocaigne.
 I kiss thy hands—thy hands, whose fingers are delicate and pale as the
 petals of the white lotus.
 
-II
+### II
 
 I kiss thy hair, which has the lustre of black jewels, and is darker
 than Lethe, flowing by midnight through the moonless slumber of
@@ -3815,18 +3815,18 @@ poppy-scented lands.
 
 I kiss thy brow, which resembles the rising moon in a valley of cedars.
 
-IV
+### IV
 
 I kiss thy cheeks, where lingers a faint flush, like the reflection of
 a rose upheld to an urn of alabaster.
 
-V
+### V
 
 I kiss thine eyelids, and liken them to the purple-veinèd flowers that
 close beneath the oppression of a tropic evening, in a land where the
 sunsets are bright as the flames of burning amber.
 
-VI
+### VI
 
 I kiss thy throat, whose ardent pallor is the pallor of marble warmed
 by the autumn sun.

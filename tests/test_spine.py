@@ -5,6 +5,7 @@ from __future__ import annotations
 
 from gutenberg_kg.spine import (
     Hit,
+    bare_roman_heading_lines,
     cluster_hits,
     contents_regions,
     find_candidates,
@@ -409,3 +410,44 @@ def test_spine_hits_a_book_with_no_numbered_structure_at_all():
     assert profile(lines) == {}
     assert contents_regions(lines) == []
     assert spine_hits(lines) == {}
+
+
+# ---------------------------------------------------------------------------
+# bare_roman_heading_lines
+# ---------------------------------------------------------------------------
+
+
+def _numbered(numerals: list[str]) -> list[str]:
+    lines = []
+    for numeral in numerals:
+        lines += [numeral, "", PROSE, ""]
+    return lines
+
+
+def test_bare_roman_heading_lines_finds_a_periodless_sequence():
+    """Cellini numbers chapters "I", "II", "III" with no period."""
+    lines = _numbered(["I", "II", "III", "IV", "V"])
+    assert bare_roman_heading_lines(lines, 0, range(0)) == {0, 4, 8, 12, 16}
+
+
+def test_bare_roman_heading_lines_follows_a_restart_and_a_missing_chapter():
+    """Numbering restarts at each part, and a source can skip a chapter."""
+    lines = _numbered(["I", "II", "III", "I", "II", "IV"])
+    assert len(bare_roman_heading_lines(lines, 0, range(0))) == 6
+
+
+def test_bare_roman_heading_lines_ignores_stray_capitals():
+    """Speaker letters in a dialogue read 100, 1, 50, 5, 10: no sequence."""
+    lines = _numbered(["C", "I", "L", "V", "X"])
+    assert bare_roman_heading_lines(lines, 0, range(0)) == set()
+
+
+def test_bare_roman_heading_lines_needs_the_numeral_alone():
+    """A numeral with text directly above or below it is not a heading."""
+    lines = ["I", PROSE, "", "II", "", PROSE, "", "III", "", PROSE]
+    assert bare_roman_heading_lines(lines, 0, range(0)) == set()
+
+
+def test_bare_roman_heading_lines_skips_the_contents():
+    lines = _numbered(["I", "II", "III"])
+    assert bare_roman_heading_lines(lines, 0, range(0, 4)) == set()

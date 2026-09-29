@@ -63,7 +63,7 @@ Luke, ch. viii. 32-37.
 SOME DETAILS OF THE BIOGRAPHY OF THAT HIGHLY RESPECTED GENTLEMAN STEPAN
 TROFIMOVITCH VERHOVENSKY.
 
-I
+### I
 
 IN UNDERTAKING to describe the recent and strange incidents in our town,
 till lately wrapped in uneventful obscurity, I find myself forced in
@@ -216,7 +216,7 @@ his bed, and although he expected every day a telegram, he held his head
 high. No telegram came. Then he made friends with me again, which is a
 proof of the extreme kindness of his gentle and unresentful heart.
 
-II
+### II
 
 Of course I don't assert that he had never suffered for his convictions
 at all, but I am fully convinced that he might have gone on lecturing
@@ -394,7 +394,7 @@ return she exacted a great deal from him, sometimes even slavishness. It
 was incredible how long she harboured resentment. I have two anecdotes
 to tell about that.
 
-IV
+### IV
 
 On one occasion, just at the time when the first rumours of the
 emancipation of the serfs were in the air, when all Russia was exulting
@@ -526,7 +526,7 @@ all his life, to be expecting the continuation, and, so to say, the
 _dénouement_ of this affair. He could not believe that that was the end of
 it! And if so he must have looked strangely sometimes at his friend.
 
-V
+### V
 
 She had herself designed the costume for him which he wore for the rest
 of his life. It was elegant and characteristic; a long black frock-coat,
@@ -633,7 +633,7 @@ existence, or at any rate to make an attempt to do so. The ostensible
 object of the journey was to see her only son, who was just finishing
 his studies at a Petersburg lyceum.
 
-VI
+### VI
 
 They spent almost the whole winter season in Petersburg. But by Lent
 everything burst like a rainbow-coloured soap-bubble.
@@ -1082,7 +1082,7 @@ at one time, but he died. Liputin brought an exiled Polish priest called
 Slontsevsky, and for a time we received him on principle, but afterwards
 we didn't keep it up.
 
-IX
+### IX
 
 At one time it was reported about the town that our little circle was a
 hotbed of nihilism, profligacy, and godlessness, and the rumour gained
@@ -1491,7 +1491,7 @@ which she could not have put into words, and she often stole searching
 glances at "Nicolas," scrutinising him reflectively... and behold--the
 wild beast suddenly showed his claws.
 
-II
+### II
 
 Suddenly, apropos of nothing, our prince was guilty of incredible
 outrages upon various persons and, what was most striking these outrages
@@ -1847,7 +1847,7 @@ future member "of the universal human republic and social harmony."
 "God knows how these people come to exist!" Nikolay wondered, recalling
 sometimes the unlooked-for Fourierist.
 
-IV
+### IV
 
 Our prince travelled for over three years, so that he was almost
 forgotten in the town. We learned from Stepan Trofimovitch that he
@@ -2221,7 +2221,7 @@ mercy upon one!"
 
 Stepan Trofimovitch "had mercy," but he withdrew in great perturbation.
 
-V
+### V
 
 Our friend certainly had fallen into not a few bad habits, especially of
 late. He had obviously and rapidly deteriorated; and it was true that
@@ -2274,7 +2274,7 @@ and perhaps of all his convictions this was the hardest to part with.
 Had he any presentiment that evening of the colossal ordeal which was
 preparing for him in the immediate future?
 
-VI
+### VI
 
 I will now enter upon the description of that almost forgotten incident
 with which my story properly speaking begins.
@@ -3068,7 +3068,7 @@ days after that we did not say one word about Liputin; it was clear to
 me that Stepan Trofimovitch greatly regretted having let his tongue run
 away with him, and having revealed such suspicions before me.
 
-II
+### II
 
 One morning, on the seventh or eighth day after Stepan Trofimovitch had
 consented to become "engaged," about eleven o'clock, when I was hurrying
@@ -3323,7 +3323,7 @@ as though thunder-struck.
 
 At the same instant Liputin walked into the room.
 
-IV
+### IV
 
 Why he should be lost owing to Liputin I did not know, and indeed I
 did not attach much significance to the words; I put it all down to his
@@ -3548,7 +3548,7 @@ Trofimovitch's witty remark. I kept wondering to myself why Stepan
 Trofimovitch was so frightened of Liputin, and why he had cried out "I
 am lost" when he heard him coming.
 
-V
+### V
 
 We were all standing in the doorway. It was the moment when hosts and
 guests hurriedly exchange the last and most cordial words, and then
@@ -3683,7 +3683,7 @@ them with intense enjoyment,
 
 "How am I to begin?... I'm too overwhelmed...."
 
-VI
+### VI
 
 "The day before yesterday a servant was suddenly sent to me: 'You are
 asked to call at twelve o'clock,' said he. Can you fancy such a thing? I
@@ -4492,7 +4492,7 @@ flushing. "He has been dead seven years. He was older, very, very much."
 He saw me to the gate with a lantern, to lock it after me. "Of course
 he's mad," I decided. In the gateway I met with another encounter.
 
-IX
+### IX
 
 I had only just lifted my leg over the high barrier across the bottom of
 the gateway, when suddenly a strong hand clutched at my chest.
@@ -4585,7 +4585,7 @@ day, formerly of two hundred serfs; and as God's above, I'm not lying.
 I've only just heard it, but it was from a most reliable source. And now
 you can ferret it out for yourself; I'll say nothing more; good-bye."
 
-X
+### X
 
 Stepan Trofimovitch was awaiting me with hysterical impatience. It
 was an hour since he had returned. I found him in a state resembling
@@ -4909,7 +4909,7 @@ better," said Liza, and she gave a friendly smile to Mavriky
 Nikolaevitch, who beamed all over as she looked at him. There was no
 help for it, I remained to talk to Mavriky Nikolaevitch.
 
-II
+### II
 
 Lizaveta Nikolaevna's business with Shatov turned out, to my surprise,
 to be really only concerned with literature. I had imagined, I don't
@@ -5319,7 +5319,7 @@ of an interview? And how could I bring them together? My only hope was
 Shatov, though I could be sure that he wouldn't help me in any way. But
 all the same, I hurried to him.
 
-IV
+### IV
 
 I did not find him at home till past seven o'clock that evening. To my
 surprise he had visitors with him--Alexey Nilitch, and another gentleman
@@ -5852,7 +5852,7 @@ flat every time."
 
 We didn't get off without a scene, however.
 
-VI
+### VI
 
 Shatov stood at the closed door of his room and listened; suddenly he
 sprang back.
@@ -6449,7 +6449,7 @@ Varvara Petrovna looked at her from under her brows, half rose to meet
 her, and scarcely concealing her vexation brought out: "Good morning,
 Praskovya Ivanovna, please be seated, I knew you would come!"
 
-II
+### II
 
 There could be nothing surprising to Praskovya Ivanovna in such a
 reception. Varvara Petrovna had from childhood upwards treated her
@@ -6822,7 +6822,7 @@ possibility of admitting him, bring him up here."
 Mavriky Nikolaevitch bowed and went out. A moment later he brought in
 Mr. Lebyadkin.
 
-IV
+### IV
 
 I have said something of this gentleman's outward appearance. He was a
 tall, curly-haired, thick-set fellow about forty with a purplish, rather
@@ -7199,7 +7199,7 @@ steps; someone seemed to be running, and that someone suddenly flew
 into the drawing-room, not Nikolay Vsyevolodovitch, but a young man who
 was a complete stranger to all.
 
-V
+### V
 
 I will permit myself to halt here to sketch in a few hurried strokes
 this person who had so suddenly arrived on the scene.
@@ -7414,7 +7414,7 @@ Marya Timofyevna every one was speechless with amazement; one could have
 heard a fly; but as soon as they had gone out, every one began suddenly
 talking.
 
-VI
+### VI
 
 It was very little of it talk, however; it was mostly exclamation. I've
 forgotten a little the order in which things happened, for a scene of
@@ -8365,7 +8365,7 @@ day.
 
 ## PART II CHAPTER I. NIGHT
 
-I
+### I
 
 EIGHT DAYS HAD PASSED. Now that it is all over and I am writing a record
 of it, we know all about it; but at the time we knew nothing, and it was
@@ -8534,7 +8534,7 @@ revolutionary youth of Russia, and imagining, in his ignorance, that the
 future lay in their hands, fawned upon them in a despicable way, chiefly
 because they paid no attention to him whatever.
 
-II
+### II
 
 Pyotr Stepanovitch ran round to see his father twice, but unfortunately
 I was absent on both occasions. He visited him for the first time
@@ -9200,7 +9200,7 @@ head in at the door once more. "I mention that," he gabbled hurriedly,
 Sunday when he attacked you, had he? I should be glad if you would make
 a note of that." He disappeared again without waiting for an answer.
 
-IV
+### IV
 
 Perhaps he imagined, as he made his exit, that as soon as he was left
 alone, Nikolay Vsyevolodovitch would begin beating on the wall with his
@@ -9346,7 +9346,7 @@ Shatov slammed the window, went downstairs and opened the gate. Nikolay
 Vsyevolodovitch stepped over the high sill, and without a word passed by
 him straight into Kirillov's lodge.
 
-V
+### V
 
 There everything was unlocked and all the doors stood open. The passage
 and the first two rooms were dark, but there was a light shining in the
@@ -9714,7 +9714,7 @@ his pale face.
 
 "Ah, Shatov. Very well, good-bye."
 
-VI
+### VI
 
 The door of the empty house in which Shatov was lodging was not closed;
 but, making his way into the passage, Stavrogin found himself in utter
@@ -10657,7 +10657,7 @@ too, that the tramp had not been altogether lying, and had tried
 to force his services upon him on his own initiative, without Pyotr
 Stepanovitch's knowledge, and that would be more curious still.
 
-II
+### II
 
 The house which Nikolay Vsyevolodovitch had reached stood alone in a
 deserted lane between fences, beyond which market gardens stretched, at
@@ -11474,7 +11474,7 @@ laughing:
 
 "A curse on you, Grishka Otrepyev!"
 
-IV
+### IV
 
 "A knife, a knife," he repeated with uncontrollable anger, striding
 along through the mud and puddles, without picking his way. It is true
@@ -11672,7 +11672,7 @@ to conceal his ill-humour. But Gaganov was at this moment more worthy
 of mention than anyone, so that it is quite impossible not to say a few
 words about him in particular.
 
-II
+### II
 
 I have hitherto not had occasion to describe his appearance. He was a
 tall man of thirty-three, and well fed, as the common folk express it,
@@ -11967,7 +11967,7 @@ one."
 
 Nikolay Vsyevolodovitch went into the house, greatly perturbed.
 
-IV
+### IV
 
 He learned at once from Alexey Yegorytch that Varvara Petrovna had
 been very glad to hear that Nikolay Vsyevolodovitch had gone out for a
@@ -12479,7 +12479,7 @@ to him with a menacing scowl. Pyotr Stepanovitch looked at him with
 a strange, prolonged smile. It all lasted only one moment. Nikolay
 Vsyevolodovitch walked on.
 
-II
+### II
 
 He went to the "old man" straight from Varvara Petrovna's, and he was
 in such haste simply from spite, that he might revenge himself for an
@@ -13350,7 +13350,7 @@ was silent, expressing neither dissent nor approval.
 Liza got on her horse again, in her muddy riding-habit, and galloped
 away.
 
-II
+### II
 
 Two days after the incident I have described I met her in a numerous
 company, who were driving out on some expedition in three coaches,
@@ -14180,7 +14180,7 @@ It was some time since Pyotr Stepanovitch had been in Mr. von Lembke's
 study. He popped in on him just when the sufferer was in a most stubborn
 mood.
 
-II
+### II
 
 A combination of circumstances had arisen which Mr. von Lembke was quite
 unable to deal with. In the very district where Pyotr Stepanovitch had
@@ -14878,7 +14878,7 @@ yourself if people write like that to you. I know what women's logic is.
 Well, good-bye. I dare say I shall bring you the writer in a couple of
 days or so. Above all, our compact!"
 
-IV
+### IV
 
 Though Pyotr Stepanovitch was perhaps far from being a stupid man, Fedka
 the convict had said of him truly "that he would make up a man himself
@@ -15043,7 +15043,7 @@ amused many people, became public property, moved Yulia Mihailovna to
 fierce anger, utterly disconcerting Andrey Antonovitch and reducing him
 at the crucial moment to a state of deplorable indecision.
 
-V
+### V
 
 It was a busy day for Pyotr Stepanovitch. From Von Lembke he hastened to
 Bogoyavlensky Street, but as he went along Bykovy Street, past the house
@@ -15357,7 +15357,7 @@ simply a rat escaping; men like that don't tell tales!"
 
 He ran to Filipov's house in Bogoyavlensky Street.
 
-VI
+### VI
 
 Pyotr Stepanovitch went first to Kirillov's. He found him, as usual,
 alone, and at the moment practising gymnastics, that is, standing with
@@ -16274,7 +16274,7 @@ the first time after ten years. When Stavrogin and Verhovensky came in,
 her cheeks were as red as cranberries: she had just quarrelled with her
 uncle over his views on the woman question.
 
-II
+### II
 
 With conspicuous nonchalance Verhovensky lounged in the chair at the
 upper end of the table, almost without greeting anyone. His expression
@@ -18471,7 +18471,7 @@ corners--I nearer to the entrance, he at some distance facing me, with
 his head bent in thought, leaning lightly on his stick. He held his
 wide-brimmed hat in his left hand. We sat like that for ten minutes.
 
-II
+### II
 
 Lembke suddenly came in with rapid steps, accompanied by the chief of
 police, looked absent-mindedly at us and, taking no notice of us, was
@@ -18962,7 +18962,7 @@ not--but I've begun to move...."
 
 ## PART III CHAPTER I. THE FETE--FIRST PART
 
-I
+### I
 
 The fête took place in spite of all the perplexities of the preceding
 "Shpigulin" day. I believe that even if Lembke had died the previous
@@ -19063,7 +19063,7 @@ some special line of thought; and finally that "honest Russian thought"
 would dance in costume--which would certainly be a complete novelty in
 itself. Who could resist subscribing? Every one subscribed.
 
-II
+### II
 
 The programme of the fête was divided into two parts: the literary
 matinée from midday till four o'clock, and afterwards a ball from ten
@@ -19837,7 +19837,7 @@ into their places, but there was not the same good order as before.
 And it was into this incipient chaos that poor Stepan Trofimovitch was
 thrust.
 
-IV
+### IV
 
 I ran out to him behind the scenes once more, and had time to warn him
 excitedly that in my opinion the game was up, that he had better not
@@ -20221,7 +20221,7 @@ and shouting after him that I was sure he would send Nastasya for me
 three times that day, but I would not come, I gave him up and ran off to
 Yulia Mihailovna.
 
-II
+### II
 
 There I was the witness of a revolting scene: the poor woman was
 deceived to her face, and I could do nothing. Indeed, what could I say
@@ -21076,7 +21076,7 @@ to the velvet sofas and the floor. Next morning, at the earliest
 possibility, they were dragged out by their legs into the street. So
 ended the fête for the benefit of the governesses of our province.
 
-IV
+### IV
 
 The fire frightened the inhabitants of the riverside just because it
 was evidently a case of arson. It was curious that at the first cry of
@@ -21578,7 +21578,7 @@ it!"
 
 She started and looked at him in dismay; but he hurriedly went out.
 
-II
+### II
 
 The room from which Pyotr Stepanovitch had peeped in was a large
 oval vestibule. Alexey Yegorytch had been sitting there before Pyotr
@@ -22656,7 +22656,7 @@ where the printing press was hidden was announced and each was assigned
 his part and his duty. Liputin and Pyotr Stepanovitch promptly set off
 together to Kirillov.
 
-II
+### II
 
 All our fellows believed that Shatov was going to betray them; but they
 also believed that Pyotr Stepanovitch was playing with them like pawns.
@@ -23193,7 +23193,7 @@ hell; you are not wanted till to-morrow. But mind now, don't be a fool!"
 
 Liputin rushed home full speed.
 
-IV
+### IV
 
 He had long had a passport in readiness made out in a false name. It
 seems a wild idea that this prudent little man, the petty despot of
@@ -23713,7 +23713,7 @@ bow and walked deliberately downstairs.
 
 "I thought you said something."
 
-II
+### II
 
 Erkel was a "little fool" who was only lacking in the higher form
 of reason, the ruling power of the intellect; but of the lesser, the
@@ -24283,7 +24283,7 @@ that your wife has come back?"
 "Fool!" cried Shatov, with a gesture of disgust, and ran home as hard as
 he could.
 
-IV
+### IV
 
 I may mention that Anna Prohorovna knew nothing of the resolutions
 that had been taken at the meeting the day before. On returning home
@@ -24410,7 +24410,7 @@ blubber, I was laughing, you know."
 the streets with his tongue out and wouldn't have roused all the dogs in
 the town. He broke my window-frame."
 
-V
+### V
 
 He found Kirillov still pacing up and down his room so preoccupied that
 he had forgotten the arrival of Shatov's wife, and heard what he said
@@ -24468,7 +24468,7 @@ Mahomet was an epileptic. Be careful, Kirillov, it's epilepsy!"
 
 "It won't have time," Kirillov smiled gently.
 
-VI
+### VI
 
 The night was passing. Shatov was sent hither and thither, abused,
 called back. Marie was reduced to the most abject terror for life. She
@@ -25139,7 +25139,7 @@ Pyotr Stepanovitch pondered a little.
 group must remain a group and obey, or I'll... What a wretched set they
 are though!"
 
-II
+### II
 
 He first went home, and carefully, without haste, packed his trunk. At
 six o'clock in the morning there was a special train from the town.
@@ -26673,7 +26673,7 @@ trap, "it has been a treat to see you."
 
 "Yes, my friend, yes... Fyodor Petrovitch... only good-bye."
 
-II
+### II
 
 "You see, my friend... you'll allow me to call myself your friend,
 n'est-ce pas?" Stepan Trofimovitch began hurriedly as soon as the trap

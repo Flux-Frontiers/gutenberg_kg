@@ -18,7 +18,7 @@ Histoire naturelle et sociale d'une famille sous le second empire
 
 ### NANA ÉMILE ZOLA
 
-I
+### I
 
 A neuf heures, la salle du théâtre des Variétés était encore
 vide.  Quelques personnes, au balcon et à l'orchestre,
@@ -1232,7 +1232,7 @@ encore de la possession de Nana, cria avec violence:
 
 -- Dis donc à mon bordel, bougre d'entêté!
 
-II
+### II
 
 Le lendemain, à dix heures, Nana dormait encore.  Elle occupait,
 boulevard Haussmann, le second étage d'une grande maison neuve,
@@ -3320,7 +3320,7 @@ Et, sur le trottoir, en se séparant, on répéta encore:
 
 -- A demain, chez Nana.
 
-IV
+### IV
 
 Depuis le matin, Zoé avait livré l'appartement à un maître
 d'hôtel, venu de chez Brébant avec un personnel d'aides et de
@@ -4715,7 +4715,7 @@ femmes le tenaient déjà, répétant:
 
 -- Vous savez, nous voulons qu'on le tire devant nous.
 
-V
+### V
 
 On donnait, aux Variétés, la trente-quatrième représentation de
 la _Blonde Vénus_.  Le premier acte venait de finir.  Dans le foyer
@@ -6222,7 +6222,7 @@ C'était sa jeunesse qui s'éveillait enfin, une puberté goulue
 d'adolescent, brûlant tout à coup dans sa froideur de catholique
 et dans sa dignité d'homme mûr.
 
-VI
+### VI
 
 Le comte Muffat, accompagné de sa femme et de sa fille, était
 arrivé de la veille aux Fondettes, où madame Hugon, qui s'y
@@ -10480,7 +10480,7 @@ reprirent à la gorge et l'étranglèrent.
 -- Oh!  mon pauvre petit, mon pauvre petit!  bégaya-t-elle dans
 une dernière crise de sanglots.
 
-IX
+### IX
 
 On répétait aux Variétés la _Petite Duchesse_.  Le premier acte
 venait d'être débrouillé, et l'on allait commencer le second.  A
@@ -11676,7 +11676,7 @@ d'eux, maintenant!...  Tiens!  cent louis que tous ceux qui ont
 rigolé, je les amène là, à lécher la terre devant moi!...  Oui,
 je vais lui en donner de la grande dame, à ton Paris!
 
-X
+### X
 
 Alors, Nana devint une femme chic, rentière de la bêtise et de
 l'ordure des mâles, marquise des hauts trottoirs.  Ce fut un
@@ -13021,7 +13021,7 @@ et elle la secouait au-dessus de la cuvette d'argent, pendant
 qu'une grêle de longues épingles tombaient, sonnant un carillon
 sur le métal clair.
 
-XI
+### XI
 
 Ce dimanche-là, par un ciel orageux des premières chaleurs de
 juin, on courait le Grand Prix de Paris au bois de Boulogne.  Le

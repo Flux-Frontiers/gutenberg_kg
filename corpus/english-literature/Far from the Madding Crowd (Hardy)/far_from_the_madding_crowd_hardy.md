@@ -14360,7 +14360,7 @@ asked for—it ruffled our heroine all the afternoon.
 
 ## CHAPTER LII CONVERGING COURSES
 
-I
+### I
 
 Christmas-eve came, and a party that Boldwood was to give in the
 evening was the great subject of talk in Weatherbury. It was not that
@@ -14395,7 +14395,7 @@ seemed to move about the rooms, saying that the proceedings were
 unnatural to the place and the lone man who lived therein, and hence
 not good.
 
-II
+### II
 
 Bathsheba was at this time in her room, dressing for the event. She had
 called for candles, and Liddy entered and placed one on each side of
@@ -14530,7 +14530,7 @@ be good; but there—she’s young yet.”
 that first time, and hence she did not break her promise! If she
 promises me, she’ll marry me. Bathsheba is a woman to her word.”
 
-IV
+### IV
 
 Troy was sitting in a corner of The White Hart tavern at Casterbridge,
 smoking and drinking a steaming mixture from a glass. A knock was given
@@ -14613,7 +14613,7 @@ was a goddess, you know), nor anybody else shall hurt you. But all this
 wants looking into, I perceive. What with one thing and another, I see
 that my work is well cut out for me.”
 
-V
+### V
 
 “How do I look to-night, Liddy?” said Bathsheba, giving a final
 adjustment to her dress before leaving the glass.
@@ -14649,7 +14649,7 @@ said—however, I won’t speak of it again.”
 very, very different from those you think, or others will believe! Now
 get my cloak, for it is time to go.”
 
-VI
+### VI
 
 “Oak,” said Boldwood, “before you go I want to mention what has been
 passing in my mind lately—that little arrangement we made about your

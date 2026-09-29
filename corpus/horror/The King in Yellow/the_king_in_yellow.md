@@ -1,6 +1,6 @@
 # The King in Yellow
 
-**Robert W. (Robert William) Chambers**
+**Robert W. Chambers**
 
 ---
 
@@ -365,7 +365,7 @@ her voice was sweet and calm.
 “Let us agree, if you please, that in this one circumstance Mr. Wilde
 is wrong,” I said.
 
-II
+### II
 
 I climbed the three dilapidated flights of stairs, which I had so often
 climbed before, and knocked at a small door at the end of the corridor.
@@ -1412,7 +1412,7 @@ CAMILLA: (Terrified, aside to Cassilda.) No mask? No mask!
 
 _The King in Yellow, Act I, Scene 2_.
 
-I
+### I
 
 Although I knew nothing of chemistry, I listened fascinated. He picked
 up an Easter lily which Geneviève had brought that morning from
@@ -1599,7 +1599,7 @@ into the dining-room, scandalizing the servants. After all we were not
 so much to blame; Geneviève was eighteen, Boris was twenty-three, and I
 not quite twenty-one.
 
-II
+### II
 
 Some work that I was doing about this time on the decorations for
 Geneviève’s boudoir kept me constantly at the quaint little hotel in
@@ -1963,7 +1963,7 @@ that never would have been except for her.”
 His voice broke, but he grasped my hand, saying, “Courage, Alec.” Next
 morning he left for Ept to fulfil his trust.
 
-IV
+### IV
 
 The same evening I took the keys and went into the house I had known
 so well. Everything was in order, but the silence was terrible. Though
@@ -2442,7 +2442,7 @@ What we shall do,
 When this blue starlight dies
 And all is through.”
 
-I
+### I
 
 There are so many things which are impossible to explain! Why should
 certain chords in music make me think of the brown and golden tints of
@@ -2676,7 +2676,7 @@ from a knot in the hem, placed it in her mouth. Then drawing on her
 gloves she offered me her hand, with a frank, “Good-night, Mr. Scott,”
 and walked out.
 
-II
+### II
 
 The next morning, Thomas, the bell-boy, brought me the _Herald_ and a
 bit of news. The church next door had been sold. I thanked Heaven for
@@ -3273,7 +3273,7 @@ which I know not:
 the way of a ship in the midst of the sea; and the way of a man
 with a maid.”
 
-I
+### I
 
 The utter desolation of the scene began to have its effect; I sat down
 to face the situation and, if possible, recall to mind some landmark
@@ -3541,7 +3541,7 @@ and, taking my hand in hers, led me into the house, saying again and
 again: “You are very welcome, indeed you are welcome to the Château
 d’Ys.”
 
-II
+### II
 
 I awoke next morning with the music of the horn in my ears, and leaping
 out of the ancient bed, went to a curtained window where the sunlight
@@ -4108,7 +4108,7 @@ Les étoiles du soir, les larmes du matin,
 Les couchers de soleil à l’horizon lointain,
 Le ciel qui parle au cœur d’existence future!”
 
-I
+### I
 
 The animal paused on the threshold, interrogative, alert, ready for
 flight if necessary. Severn laid down his palette, and held out a hand
@@ -4229,7 +4229,7 @@ The words died on his lips and his eyelids drooped.
 The cat, too, was asleep, her cheek turned up upon her wasted flank,
 her paws relaxed and limp.
 
-II
+### II
 
 “It is fortunate,” said Severn, sitting up and stretching, “that we
 have tided over the dinner hour, for I have nothing to offer you for
@@ -5680,7 +5680,7 @@ For an instant, with an evil leer the sun peered through the naked
 woods of Vincennes, sank like a blood-clot in the battery smoke, lower,
 lower, into the blood-soaked plain.
 
-IV
+### IV
 
 When midnight sounded from the belfry of St. Sulpice the gates of Paris
 were still choked with fragments of what had once been an army.
@@ -5905,7 +5905,7 @@ Then from the stairs below came Braith’s anxious voice.
 “Et tout les jours passés dans la tristesse
 Nous sont comptés comme des jours heureux!”
 
-I
+### I
 
 The street is not fashionable, neither is it shabby. It is a pariah
 among streets—a street without a Quarter. It is generally understood
@@ -6024,7 +6024,7 @@ the same breath she cried, “À demain!”
 follow the Reverend Joel Byram, who was shuffling towards the nearest
 tramway station.
 
-II
+### II
 
 “An’ you are pleas wiz Paris, Monsieur’ Astang?” demanded Madame
 Marotte the next morning as Hastings came into the breakfast-room of
@@ -6569,7 +6569,7 @@ were seated.
 
 “Why, it’s Love,” he said.
 
-IV
+### IV
 
 “There is a nouveau here,” drawled Laffat, leaning around his easel and
 addressing his friend Bowles, “there is a nouveau here who is so tender
@@ -7223,7 +7223,7 @@ warn him!”
 
 “I shall trust your word,” he said pleasantly.
 
-V
+### V
 
 The month passed quickly for Hastings, and left few definite
 impressions after it. It did leave some, however. One was a painful
@@ -7394,7 +7394,7 @@ city, and stood so long that, when again he raised his eyes, the vast
 Boulevard was twinkling with gas-jets through which the electric lights
 stared like moons.
 
-VI
+### VI
 
 It was with another quick heart-beat that he awoke next morning, for
 his first thought was of Valentine.
@@ -7744,7 +7744,7 @@ Thy mouth of fire,
 Thy breasts, thy hands, thy hair upcurled
 And my desire.”
 
-I
+### I
 
 One morning at Julian’s, a student said to Selby, “That is Foxhall
 Clifford,” pointing with his brushes at a young man who sat before an
@@ -7934,7 +7934,7 @@ Elliott and Rowden, boiling with indignation, cried out, “And you!”
 
 “I,” said Clifford blandly, “do fear to tread where you rush in.”
 
-II
+### II
 
 Twenty-four hours later Selby had completely forgotten Rue Barrée.
 During the week he worked with might and main at the studio, and
@@ -8221,7 +8221,7 @@ detached a blossom, drew it through his buttonhole, and picking up
 hat and stick, smiled upon Clifford, at which the latter was mightily
 troubled.
 
-IV
+### IV
 
 Monday morning at Julian’s, students fought for places; students with
 prior claims drove away others who had been anxiously squatting on
@@ -8479,7 +8479,7 @@ him, then quietly—“I thank you, I am very grateful.” She opened the
 book and, plucking a petal from the rose, dropped it between the
 leaves. Then looking up she said gently, “I cannot accept.”
 
-V
+### V
 
 It took Clifford a month to entirely recover, although at the end of
 the first week he was pronounced convalescent by Elliott, who was an

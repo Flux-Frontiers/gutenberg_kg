@@ -19328,9 +19328,10 @@ The Love which moves the sun and the other stars.
 
 (1807-1882)
 
-I
+### I
 
-Oft have I seen at some cathedral door
+*Oft have I seen at some cathedral door*
+
 A laborer, pausing in the dust and heat,
 Lay down his burden, and with reverent feet
 Enter, and cross himself, and on the floor
@@ -19345,7 +19346,7 @@ The tumult of the time disconsolate
 To inarticulate murmurs dies away,
 While the eternal ages watch and wait.
 
-II
+### II
 
 How strange the sculptures that adorn these towers!
 This crowd of statues, in whose folded sleeves
@@ -19380,7 +19381,7 @@ And then a voice celestial that begins
 With the pathetic words, “Although your sins
 As scarlet be,” and ends with “as the snow.”
 
-IV
+### IV
 
 With snow-white veil, and garments as of flame,
 She stands before thee, who so long ago
@@ -19397,9 +19398,10 @@ Lethe and Eunoe—the remembered dream
 And the forgotten sorrow—bring at last
 That perfect pardon which is perfect peace.
 
-V
+### V
 
-I Lift mine eyes, and all the windows blaze
+*I Lift mine eyes, and all the windows blaze*
+
 With forms of saints and holy men who died,
 Here martyred and hereafter glorified;
 And the great Rose upon its leaves displays
@@ -19414,7 +19416,7 @@ And the melodious bells among the spires
 O’er all the house-tops and through heaven above
 Proclaim the elevation of the Host!
 
-VI
+### VI
 
 O star of morning and of liberty!
 O bringer of the light, whose splendor shines
