@@ -47,6 +47,19 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   `app/`. The app moved to knowledge_press, whose `make icons` renders the
   press-seal icon from SVG.
 
+### Fixed
+
+- Chapter numbers printed as a bare numeral with no period ("I", "II",
+  "IV") now become headings. Only three-character numerals such as III and
+  XII did before, by way of the ALL-CAPS rule, so chapters like I, II, IV,
+  V, X, XL and L merged into the chapter before them. A lone numeral counts
+  only as part of a sequence that counts up and may restart at I, so stray
+  capitals in plays and dialogues are left alone. Checked against the raw
+  text of all 245 Gutenberg books: 25 gain headings (Cellini, My Antonia,
+  Tess, The Possessed, the Upanishads and others), no words change in any
+  book, and the other 220 convert identically. The 25 books need
+  re-downloading and a full `gutenkg build-corpus`.
+
 ## [1.26.0] - 2026-09-28
 
 ### Added

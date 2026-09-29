@@ -500,6 +500,17 @@ def test_text_to_markdown_lone_all_caps_heading_is_preserved():
     assert "### INTRODUCTION" in result
 
 
+def test_text_to_markdown_periodless_roman_chapters_all_become_headings():
+    """Cellini (#4028): the ALL-CAPS rule caught III but never I, II, IV or V."""
+    body = "".join(
+        f"{n}\n\nThe chapter {n} text goes on for a while here.\n\n"
+        for n in ["I", "II", "III", "IV", "V"]
+    )
+    result = text_to_markdown(body, {"title": "T", "author": "A"})
+    for n in ["I", "II", "III", "IV", "V"]:
+        assert f"\n### {n}\n" in result
+
+
 # ---------------------------------------------------------------------------
 # write_reference
 # ---------------------------------------------------------------------------

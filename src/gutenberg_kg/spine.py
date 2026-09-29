@@ -466,3 +466,57 @@ def spine_hits(lines: list[str]) -> dict[str, list[Hit]]:
         if hits:
             result[template] = sorted(hits, key=lambda h: h.line)
     return result
+
+
+#: A roman numeral alone on a line, with no period. _BARE_ROMAN_PATTERN
+#: requires the period because a lone "I" collides with the pronoun; this
+#: shape is only trusted as a sequence (see bare_roman_heading_lines).
+_PERIODLESS_ROMAN_PATTERN = re.compile(r"^[IVXLC]{1,7}$")
+
+#: The fewest in-sequence periodless numerals that mark a book's chapters.
+#: Three, not MIN_RUN_LENGTH: Heart of Darkness and The Metamorphosis are
+#: divided I, II, III and nothing else, and the sequence test below is what
+#: rejects noise, not the count.
+_PERIODLESS_ROMAN_THRESHOLD = 3
+
+
+def bare_roman_heading_lines(lines: list[str], start: int, skip: range) -> set[int]:
+    """Find chapter numbers printed as a bare numeral with no period.
+
+    Cellini's Autobiography (#4028), My Antonia, Tess and a score of others
+    number chapters "I", "II", "III" on a line of their own. No per-line rule
+    matches that: the ALL-CAPS catch-all needs three characters, so it
+    promoted III, VII and XII while I, II, IV, V, IX, X, XL and L stayed in
+    the body and folded their chapter into the one before.
+
+    A lone numeral is honored only as part of a count: each must be 1 (a new
+    book or part restarting the numbering) or at most two past the last one
+    accepted (a gap tolerates one chapter missing from the source, as in the
+    Enchiridion's 28 then 30). Stray capitals such as the speaker letters C,
+    I, L, V, X in a dialogue read 100, 1, 50, 5, 10 and never form one.
+
+    :param lines: All source lines.
+    :param start: First line of the body.
+    :param skip: Line range already claimed by a table of contents.
+    :returns: Indices to treat as headings, empty when the book has no such
+        sequence.
+    """
+    found: set[int] = set()
+    prev = 0
+    for i in range(start, len(lines)):
+        if i in skip:
+            continue
+        stripped = lines[i].strip()
+        if not _PERIODLESS_ROMAN_PATTERN.match(stripped):
+            continue
+        if i and lines[i - 1].strip():
+            continue
+        if i + 1 < len(lines) and lines[i + 1].strip():
+            continue
+        value = _roman_value(stripped)
+        if value is None:
+            continue
+        if value == 1 or prev < value <= prev + 2:
+            found.add(i)
+            prev = value
+    return found if len(found) >= _PERIODLESS_ROMAN_THRESHOLD else set()
