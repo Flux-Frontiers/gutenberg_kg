@@ -1,7 +1,8 @@
 # On-device corpus packs
 
-The native app can write its answers with the language model built into
-iOS 26 / macOS 26, but an answer is only as good as the passages behind it —
+The [Knowledge Press app](KNOWLEDGE_PRESS.md#knowledge-press-app) for
+iPhone, iPad and Mac (in development for App Store deployment) can write its
+answers with the language model built into iOS 26 / macOS 26, but an answer is only as good as the passages behind it —
 and those live in a 5.7 GB bundle. `gutenkg export-swift` turns that bundle
 into three SQLite files a phone can hold, so retrieval stops being a network
 call.

@@ -41,7 +41,7 @@ Every book in the corpus is a tree, and the 253 trees stand in genre groves. You
 - Tap the clock to change the time: the live clock follows your local sun and moon phase, or pick dawn, day, dusk or night. At night the stars and the lantern carry the scene.
 - Seasons change the canopy; winter drops it so the wood shows. On a phone, use the on-screen stick.
 
-The public site shows the forest but cannot open a book: reading needs a local GutenbergKG worker (`make run`) behind the dev server. Controls, the local worker setup and a map from this repo's Python to the forest's TypeScript are in the forest's [README](https://github.com/Flux-Frontiers/knowledge_press/blob/main/web/README.md). The source lives in the [knowledge_press](https://github.com/Flux-Frontiers/knowledge_press) repo's `web/`, a React + Vite + [`@react-three/fiber`](https://github.com/pmndrs/react-three-fiber) app. To run it locally:
+The public site opens books from static chapter files, so reading needs no worker. Controls, the local worker setup and a map from this repo's Python to the forest's TypeScript are in the forest's [README](https://github.com/Flux-Frontiers/knowledge_press/blob/main/web/README.md). The source lives in the [knowledge_press](https://github.com/Flux-Frontiers/knowledge_press) repo's `web/`, a React + Vite + [`@react-three/fiber`](https://github.com/pmndrs/react-three-fiber) app. To run it locally:
 
 ```bash
 git clone https://github.com/Flux-Frontiers/knowledge_press
@@ -99,6 +99,7 @@ Under the hood, each work becomes a [DocKG](https://github.com/Flux-Frontiers/do
 | If you want to… | Start here |
 |---|---|
 | Walk the corpus as a forest | Open [Knowledge Press Forest](https://flux-frontiers.github.io/knowledge_press/). |
+| Ask the corpus on an iPhone, iPad or Mac | The Knowledge Press app is in development for App Store deployment. See [Knowledge Press apps](docs/KNOWLEDGE_PRESS.md). |
 | Explore the library in a browser | Build the local app below, then open the chat UI. |
 | Work from the terminal or add texts | Follow the [CLI installation guide](docs/INSTALLATION.md#cli-workflow). |
 | Understand a command or corpus-maintenance workflow | See the [cheatsheet](docs/CHEATSHEET.md). |

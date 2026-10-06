@@ -22,6 +22,7 @@ technical reference.
 | [Installation](INSTALLATION.md) | CLI, Docker, and Apple container setup |
 | [Cheatsheet](CHEATSHEET.md) | Every `gutenkg` command, quick reference |
 | [Chat UI](CHAT_UI.md) | The Streamlit reading-room interface |
+| [Knowledge Press apps](KNOWLEDGE_PRESS.md) | The web forest (live) and the iPhone, iPad and Mac app (in development for App Store deployment) |
 
 ## Corpus
 

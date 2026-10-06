@@ -4,6 +4,8 @@ This guide covers everything needed to install, build, and run GutenbergKG — b
 
 > **TL;DR** — For the CLI: install Poetry, `poetry install --extras "kgdeps viz viz3d mcp"`, `gutenkg ingest --force-build`. For Docker: `make build-corpus && make build && make run`. Querying needs no LLM; synthesis and image generation need a local LLM (oMLX or Ollama).
 
+> **Just want to read?** The [Knowledge Press Forest](https://flux-frontiers.github.io/knowledge_press/) runs in the browser with nothing to install. The Knowledge Press app for iPhone, iPad and Mac is in development for App Store deployment. Both live in the [knowledge_press](https://github.com/Flux-Frontiers/knowledge_press) repo; see [Knowledge Press apps](KNOWLEDGE_PRESS.md).
+
 ---
 
 ## Requirements

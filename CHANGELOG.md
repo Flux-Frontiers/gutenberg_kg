@@ -15,6 +15,16 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   `web/public/books/`, from the Swift packs, with chapters built the way the
   worker's `get_chapter` builds them. The published forest on GitHub Pages
   can then read books without a worker.
+- `docs/KNOWLEDGE_PRESS.md` describes the readers in the knowledge_press
+  repo: the web forest, live, and the iPhone, iPad and Mac app, in
+  development for App Store deployment. It lists what each needs from this
+  repo. The docs index, Installation, On-device packs, the site nav and the
+  README link to it.
+
+### Fixed (docs)
+
+- The README no longer says the published forest cannot open a book; it
+  reads static chapter files and needs no worker.
 
 ### Changed
 
