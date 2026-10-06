@@ -66,6 +66,7 @@ nav:
       - Selective bundles: BUNDLES.md
   - Interfaces:
       - Chat UI: CHAT_UI.md
+      - Knowledge Press apps: KNOWLEDGE_PRESS.md
       - On-device corpus packs: ON_DEVICE.md
       - RunPod deployment: RUNPOD.md
   - Visualization:
