@@ -4,7 +4,7 @@
 
 - **Internet Archive ID**: audels-electric-library-vol-1
 - **URL**: https://archive.org/details/audels-electric-library-vol-1
-- **Rights**: http://archive.org/details/audels-electric-library-vol-1
+- **Rights**: Public domain in the United States: published 1929 with notice (the scan's copyright page reads 1929), and the copyright was not renewed. No renewal by Theo. Audel & Co. or Frank D. Graham appears in the Copyright Office renewal records for 1956-1970, which cover books published 1928-1942 (searched 2026-10-19 in NYPL's cce-renewals transcription).
 
 ## Publication
 
