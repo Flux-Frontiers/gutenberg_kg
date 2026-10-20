@@ -1208,14 +1208,14 @@ word-list = ["pyahocorasick"]
 
 [[package]]
 name = "diary-kg"
-version = "0.100.0"
+version = "0.100.1"
 description = "A knowledge graph builder and semantic search engine for diaries and journals"
 optional = false
 python-versions = "<3.14,>=3.12"
 groups = ["main"]
 files = [
-    {file = "diary_kg-0.100.0-py3-none-any.whl", hash = "sha256:aa4ce8bc4088f97d793c6beea73b04a2607a620abc0417581345599a59bed877"},
-    {file = "diary_kg-0.100.0.tar.gz", hash = "sha256:47966a28ae61e802ca06b90a748374249391a205edb9e88faccd0100259321cf"},
+    {file = "diary_kg-0.100.1-py3-none-any.whl", hash = "sha256:e788a1257f3971cedd85ccd83d372b0ba085f1c10abee212c7b0f2ffd170c5e0"},
+    {file = "diary_kg-0.100.1.tar.gz", hash = "sha256:7f7af6fd16dd9bb95ab5cacd15ed4a59644a051ee2fc479d58ded36e0999eb97"},
 ]
 
 [package.dependencies]
@@ -2347,15 +2347,15 @@ type = ["pygobject-stubs", "pytest-mypy (>=1.0.1)", "shtab", "types-pywin32"]
 
 [[package]]
 name = "kg-rag"
-version = "0.17.1"
+version = "0.17.2"
 description = "Orchestration layer for the KGRAG(tm) components."
 optional = true
 python-versions = "<3.14,>=3.12"
 groups = ["main"]
 markers = "extra == \"kgdeps\""
 files = [
-    {file = "kg_rag-0.17.1-py3-none-any.whl", hash = "sha256:d76f795ca920e944568523de28b59af9c87e9f661613c39b1779a19840de9294"},
-    {file = "kg_rag-0.17.1.tar.gz", hash = "sha256:7a5418eaa203198d1ae19bef357cbbf0afc9f915512598daf205af8c7b3c9ad1"},
+    {file = "kg_rag-0.17.2-py3-none-any.whl", hash = "sha256:76b04155cc67158789d06ab7cb3b15491a02cd66cc19e5dd36c9a2b91f0f0e41"},
+    {file = "kg_rag-0.17.2.tar.gz", hash = "sha256:97b3a79e7565716903e2adf9531bdf1c6b354f4de258c2202a2a5d26348f77c6"},
 ]
 
 [package.dependencies]
@@ -2371,11 +2371,11 @@ torch = ">=2.5.1"
 transformers = ">=5.5.0,<6"
 
 [package.extras]
-all = ["PyQt5 (>=5.15.0)", "connectome-kg (>=0.8.1)", "diary-kg (>=0.100.0)", "doc-kg (>=0.27.0)", "firecrawl-anydoc (>=0.1.9)", "ftree-kg (>=0.17.0)", "markdown (>=3.6)", "memory-kg (>=0.12.0)", "param (>=2.0.0)", "plotly (>=5.14.0)", "pycode-kg (>=0.28.1)", "pymupdf4llm (>=1.28.2)", "pyvis (>=0.3.2)", "pyvista (>=0.44.0)", "pyvistaqt (>=0.11.0)", "streamlit (>=1.35.0)", "trame-vtk (>=2.0.0)", "vault-kg (>=0.3.0)"]
+all = ["PyQt5 (>=5.15.0)", "connectome-kg (>=0.8.1)", "diary-kg (>=0.100.0)", "doc-kg (>=0.27.0)", "firecrawl-anydoc (>=0.1.9)", "ftree-kg (>=0.17.0)", "markdown (>=3.6)", "memory-kg (>=0.12.0)", "param (>=2.0.0)", "plotly (>=5.14.0)", "pycode-kg (>=0.28.1)", "pymupdf (>=2.0)", "pyvis (>=0.3.2)", "pyvista (>=0.44.0)", "pyvistaqt (>=0.11.0)", "streamlit (>=1.35.0)", "trame-vtk (>=2.0.0)", "vault-kg (>=0.3.0)"]
 connectome = ["connectome-kg (>=0.8.1)"]
 diary = ["diary-kg (>=0.100.0)"]
 filetree = ["ftree-kg (>=0.17.0)"]
-ingest = ["kgmodule-utils[ingest] (>=0.27.0)"]
+ingest = ["kgmodule-utils[ingest] (>=0.27.1)"]
 kg = ["doc-kg (>=0.27.0)", "memory-kg (>=0.12.0)", "pycode-kg (>=0.28.1)"]
 qt = ["PyQt5 (>=5.15.0)"]
 vault = ["vault-kg (>=0.3.0)"]
@@ -7106,4 +7106,4 @@ viz3d = ["PyQt5", "kgmodule-utils", "markdown", "param", "pyvistaqt", "quiltwrig
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.12,<3.14"
-content-hash = "167f5be71e27171f50811ebcc7efa17c03baf595461fefda4ed5ad7121712c81"
+content-hash = "186c3823f66841155c96fd524f4ee4b0fe4e10e15d7c3ecec2e4b83c3ad7e771"
