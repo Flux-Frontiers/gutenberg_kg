@@ -41,9 +41,10 @@ git checkout main && git pull origin main
 git status --porcelain          # must be empty
 ```
 
-`main` must already carry the work being released. This repo develops on
-`develop` and promotes to `main` by PR, so the usual order is: land the work on
-`develop`, promote `develop` → `main`, then release from `main`.
+`main` must already carry the work being released. Work lands on `main` by
+PR from a feature branch, and the release is cut from `main`. There is no
+`develop` branch any more (checked 2026-10-20: `main` is the only branch on
+`origin`).
 
 Confirm `## [Unreleased]` in `CHANGELOG.md` has content. If it is empty there is
 nothing to release — stop.
@@ -252,16 +253,16 @@ and wheel packaging respectively. After Step 5c this run should be clean; a
 unreachable for one of the four) — that is informational, the KG pins move as
 a set, not per release, and is not a reason to hold the tag.
 
-CI note: `ci.yml` gates Lint, Type Check and Test to **pushes and PRs against
-`main`** only. They are skipped on `develop`, so a merge into `develop` proves
-much less than it appears to. `main` is where those three actually run.
+CI note: `ci.yml` runs Lint, Type Check and Test on pushes and PRs against
+`main`, so a PR's green checks are the same checks the release depends on.
 
 ## Step 7 — Commit and tag
 
 ```bash
 git add CHANGELOG.md release-notes.md README.md CITATION.cff \
         docs/CORPUS.md pyproject.toml src/gutenberg_kg/__init__.py \
-        docker/Dockerfile runpod/requirements.txt poetry.lock
+        docker/Dockerfile runpod/requirements.txt poetry.lock \
+        corpus/.snapshots/
 git commit -m "chore(release): v<version> release notes"
 git tag -a v<version> -m "v<version>"
 ```
@@ -283,20 +284,7 @@ git push origin v<version>
 Then watch the run: build → GitHub Release. Confirm the release body on GitHub
 is this version's notes and that the wheel and sdist are attached.
 
-## Step 9 — Put the release back on `develop`
-
-`main` now carries a release commit that `develop` does not, and the next
-promotion PR will conflict on `CHANGELOG.md` if it is left there.
-
-```bash
-git checkout develop && git pull origin develop
-git merge main            # or fast-forward if develop has not moved
-git push origin develop
-```
-
-Keep `develop`; it is the working branch, not a throwaway feature branch.
-
-## Step 10 — Publish the worker image (optional, ASK FIRST)
+## Step 9 — Publish the worker image (optional, ASK FIRST)
 
 Only when the corpus bundle or the served code changed in this release, and
 only with approval: it uploads several GB to Docker Hub under the user's
